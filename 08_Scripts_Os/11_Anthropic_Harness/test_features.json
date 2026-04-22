@@ -1,0 +1,55 @@
+{
+  "features": [
+    {
+      "id": "feat_001",
+      "category": "ui",
+      "description": "User authentication",
+      "steps": [],
+      "passes": true,
+      "priority": "medium",
+      "notes": null
+    },
+    {
+      "id": "feat_002",
+      "category": "ui",
+      "description": "Real-time messaging",
+      "steps": [],
+      "passes": false,
+      "priority": "medium",
+      "notes": null
+    },
+    {
+      "id": "feat_003",
+      "category": "ui",
+      "description": "File uploads",
+      "steps": [],
+      "passes": true,
+      "priority": "medium",
+      "notes": null
+    },
+    {
+      "id": "feat_004",
+      "category": "ui",
+      "description": "Theme switching",
+      "steps": [],
+      "passes": false,
+      "priority": "medium",
+      "notes": null
+    },
+    {
+      "id": "feat_005",
+      "category": "ui",
+      "description": "Message search",
+      "steps": [],
+      "passes": false,
+      "priority": "medium",
+      "notes": null
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "passed": 2,
+    "failed": 3,
+    "progress": "2/5 (40.0%)"
+  }
+}

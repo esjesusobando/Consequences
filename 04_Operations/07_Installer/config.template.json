@@ -1,0 +1,42 @@
+{
+  "mode": "new",
+  "version": "2.0.0",
+  "paths": {
+    "downloads": "",
+    "obsidian_vault": "",
+    "excalidraw": "",
+    "qmd_collection": "",
+    "projects_path": "",
+    "momentum_path": ""
+  },
+  "api_keys": {
+    "context7": "",
+    "exa": "",
+    "fireflies": "",
+    "github": "",
+    "notion": "",
+    "supabase": "",
+    "linear": "",
+    "amplitude": "",
+    "supadata": "",
+    "zai": "",
+    "brave": "",
+    "postgres": "",
+    "slack": "",
+    "sentry": "",
+    "atlassian": "",
+    "opencode": "",
+    "claude_code": ""
+  },
+  "aliases": {
+    "gr": "python 04_ENGINE/08_Scripts_Os/79_System_Guardian.py",
+    "gra": "python 04_ENGINE/08_Scripts_Os/79_System_Guardian.py --apply",
+    "gr-agents": "python 04_ENGINE/08_Scripts_Os/79_System_Guardian.py --agents"
+  },
+  "hooks": {
+    "stop": {
+      "enabled": true,
+      "run_guardian": true
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+    "niche": "IA Productivity",
+    "goal": "Education",
+    "slides": [
+        {
+            "id": 1,
+            "type": "Hook",
+            "title": "La verdad sobre IA Productivity",
+            "content": "Lo que nadie te dice pero todos necesitan saber.",
+            "design_prompt": "Minimalist clean background, high contrast typography, IA Productivity related icon, premium vibe."
+        },
+        {
+            "id": 2,
+            "type": "Context",
+            "title": "El Problema Real",
+            "content": "Estás atrapado en [PROBLEMA], y no es tu culpa.",
+            "design_prompt": "Dark empathetic aesthetic, subtle glow, centered focus."
+        },
+        {
+            "id": 3,
+            "type": "Value_1",
+            "title": "Paso 1: [SOLUCIÓN]",
+            "content": "Implementa esto hoy mismo para ver resultados.",
+            "design_prompt": "Clean informative layout, bold key points, white space."
+        },
+        {
+            "id": 4,
+            "type": "Value_2",
+            "title": "Paso 2: [ACCIÓN]",
+            "content": "El secreto está en la consistencia de [ACCIÓN].",
+            "design_prompt": "Dynamic progression visual, sleek lines, brand colors."
+        },
+        {
+            "id": 5,
+            "type": "CTA",
+            "title": "¿Listo para el cambio?",
+            "content": "Guarda este post si te sirvió. Únete a la comunidad.",
+            "design_prompt": "Magnetic final slide, clear call to action button visual, premium finish."
+        }
+    ]
+}

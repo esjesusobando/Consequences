@@ -1,0 +1,141 @@
+---
+description: Docs y Guías - Documentación, Workflows, Standards y Guías
+globs: **/*
+alwaysApply: true
+---
+
+# 📚 Docs y Guías
+
+<system_directives>
+  <fundamental_rule>
+    Documentación es conocimiento persistido. Toda guía debe ser clara y accionable.
+  </fundamental_rule>
+</system_directives>
+
+---
+
+## 📋 SECCIÓN 01: Documentación Estándar
+
+### README Template
+
+```markdown
+# [Nombre del proyecto]
+
+> Descripción corta (una línea)
+
+## 🚀 Quick Start
+[Setup mínimo]
+
+## 📋 Uso
+[Ejemplos básicos]
+
+## 📁 Estructura
+[Archivos principales]
+
+## 🤝 Contributing
+[Cómo contribuir]
+
+## 📄 Licencia
+[Licencia]
+```
+
+---
+
+## 📋 SECCIÓN 02: Workflow Standards
+
+### Workflow Template
+
+```markdown
+# [Nombre del Workflow]
+
+## Goal
+[Qué resuelve]
+
+## Instructions
+[Cómo ejecutarlo]
+
+## Steps
+1. [Paso 1]
+2. [Paso 2]
+
+## Notes
+[Notas importantes]
+```
+
+---
+
+## 📋 SECCIÓN 03: Guías Técnicas
+
+### Guía de Estilo
+
+| Área | Estándar |
+|------|---------|
+|命名 (Files) | PascalCase → snake_case |
+|命名 (Functions) | verbNoun (getUser, updateConfig) |
+|命名 (Classes) | PascalCase (UserService) |
+|命名 (Constants) | UPPER_SNAKE_CASE |
+
+### Code Style
+
+| Lenguaje | Estándar |
+|----------|---------|
+| Python | PEP 8, type hints |
+| TypeScript | strict mode |
+| CSS | BEM, CSS Variables |
+
+---
+
+## 📋 SECCIÓN 04: Templates Disponibles
+
+### Task Template
+
+```
+## Objetivo
+[Qué нужно hacer]
+
+## Pasos
+- [ ] 1. [Paso]
+- [ ] 2. [Paso]
+
+## Notes
+[Notas]
+```
+
+### PRD Template
+
+```markdown
+# [Feature Name]
+
+## Summary
+[Resumen ejecutivo]
+
+## User Stories
+- Como [usuario], quiero [acción] para [beneficio]
+
+## Technical Spec
+[Especificación técnica]
+
+## Risks
+[Riesgos identificados]
+```
+
+---
+
+## 📋 SECCIÓN 05: Resources
+
+### Reading List
+
+- `.agent/` → Reglas del agente
+- `01_Core/01_Rules/` → Reglasfuente
+- `00_Winter_is_Coming/` → Goals, Backlog
+
+---
+
+## 📋 CHECKLIST DOCS
+
+- [ ] README en cada proyecto?
+- [ ] Templates actualizados?
+- [ ] Estándares seguidos?
+- [ ] Docs sincronizados?
+
+*"Documentación clara, developer feliz."*

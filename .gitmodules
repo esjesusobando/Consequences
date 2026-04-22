@@ -1,0 +1,24 @@
+[submodule "05_Archive/07_Repos_Gentleman/gentle-ai"]
+	path = 05_Archive/07_Repos_Gentleman/gentle-ai
+	url = https://github.com/Gentleman-Programming/gentle-ai
+[submodule "05_Archive/07_Repos_Gentleman/Gentleman-Skills"]
+	path = 05_Archive/07_Repos_Gentleman/Gentleman-Skills
+	url = https://github.com/Gentleman-Programming/gentleman-skills
+[submodule "05_Archive/07_Repos_Gentleman/Gentleman.Dots"]
+	path = 05_Archive/07_Repos_Gentleman/Gentleman.Dots
+	url = https://github.com/Gentleman-Programming/gentleman.dots
+[submodule "05_Archive/07_Repos_Gentleman/agent-teams-lite"]
+	path = 05_Archive/07_Repos_Gentleman/agent-teams-lite
+	url = https://github.com/Gentleman-Programming/agent-teams-lite
+[submodule "05_Archive/07_Repos_Gentleman/engram"]
+	path = 05_Archive/07_Repos_Gentleman/engram
+	url = https://github.com/Gentleman-Programming/engram
+[submodule "05_Archive/07_Repos_Gentleman/gentleman-guardian-angel"]
+	path = 05_Archive/07_Repos_Gentleman/gentleman-guardian-angel
+	url = https://github.com/Gentleman-Programming/gentleman-guardian-angel
+[submodule "05_Archive/07_Repos_Gentleman/digitalgarden"]
+	path = 05_Archive/07_Repos_Gentleman/digitalgarden
+	url = https://github.com/Gentleman-Programming/digitalgarden
+[submodule "05_Archive/07_Repos_Gentleman/qmd"]
+	path = 05_Archive/07_Repos_Gentleman/qmd
+	url = https://github.com/Gentleman-Programming/qmd
