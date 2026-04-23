@@ -1,4 +1,4 @@
-# 🛡️ CLAUDE.md | PersonalOS v1.1 Alpha AI Context Harness
+# 🛡️ CLAUDE.md | PersonalOS v1.2 AI Context Harness
 
 <system_directives>
   <fundamental_rule>
@@ -136,37 +136,38 @@ La esencia de delegación en PersonalOS sigue el esquema de un **Equipo de Fútb
 
 ---
 
-## 🗺️ KNOWLEDGE MAPS & ARCHITECTURE (v1.1 Alpha Reference)
+## 🗺️ KNOWLEDGE MAPS & ARCHITECTURE (v1.2 Reference)
 <architecture_routing>
 
 ### 1. ESTRUCTURA BASE (Think_Different)
 ```text
 Think_Different/
-| --- 00_Winter_is_Coming/     # MATRIX: Goals, Backlog, AGENTS.md          |
-| --- 01_Core/                 # CORE: Skills, Agents, MCP, Rules           |
-|                                                                           | --- 01_Rules/           # 23 reglas del sistema       |
-|                                                                           | --- 03_Skills/          # 160+ skills (19 categorías) |
-|                                                                           | --- 05_Mcp/             # MCP servers config          |
-| +--- 07_Hooks/           # Hooks del sistema                              |
-|
-| --- 02_Knowledge/            # Documentación                              |
-| +--- 04_Docs/           # Docs del sistema, SDD Registry                  |
-|
-| --- 03_Tasks/                # Tareas activas                             |
-| --- 04_Operations/           # Auto Improvement, Scripts                  |
-| +--- 01_Auto_Improvement/ # Motor de automejora                           |
-| --- 05_Archive/              # Archivo: Repos, legacy                     |
-| --- 06_Playground/           # Area de pruebas                            |
-| --- 07_Projects/             # Proyectos activos                          |
-| --- 08_Scripts_Os/           # HUBs: Auditor, Git, AIPM, Ritual, etc.     |
-| +--- 03_Validator/       # skill_validator.py, skill_security_scan.py     |
-| --- .agent/                   # Backup estratégico                        |
-| --- .atl/                    # SDD Registry                               |
-| --- .gga                     # Guardian Angel (Code Review)               |
-| --- AGENTS.md                               # Root entry (GGA Pre-Commit) |
-| --- CLAUDE.md                # Config Oficial para IAs                    |
-| --- README.md                # Documentacion principal                    |
+├── 00_Winter_is_Coming/     ✅ MATRIX: Goals, Backlog, AGENTS.md
+├── 01_Core/                 ✅ CORE: Skills v2.0 (9 áreas), Rules (25), MCPs (33)
+│   ├── 01_Rules/           ✅ 25 reglas del sistema (.mdc)
+│   ├── 03_Skills/          ✅ 165+ skills - Sistema v2.0 (9 Áreas Funcionales)
+│   ├── 05_Mcp/             ✅ 33 MCP servers configurados
+│   └── 07_Hooks/           ✅ Hooks del sistema
+├── 02_Knowledge/            ✅ Documentación + Research + Docs
+│   └── 04_Docs/           ✅ Docs del sistema, SDD Registry
+├── 03_Tasks/                ✅ Tareas activas (YAML frontmatter)
+├── 04_Operations/           ✅ Auto Improvement Engine
+│   └── 01_Auto_Improvement/ ✅ Motor: detector→analyzer→executor→learner
+├── 05_Archive/              ✅ Archivo: Repos, legacy
+├── 06_Playground/           ✅ Area de pruebas
+├── 07_Projects/             ✅ Proyectos activos
+├── 08_Scripts_Os/           ✅ 14 HUBs + 92 scripts legacy
+│   └── 03_Validator/       ✅ skill_validator.py, skill_security_scan.py
+├── .agent/                  ✅ Backup estratégico (sincronizado con 01_Core/)
+├── .atl/                    ✅ SDD Registry + openspec
+├── .gga                     ✅ Guardian Angel (Code Review)
+├── .mcp.json               ✅ MCPs activos (33 servidores)
+├── AGENTS.md                ✅ Root entry (GGA Pre-Commit)
+├── CLAUDE.md                ✅ Config Oficial para IAs
+└── README.md                ✅ Documentación principal
 ```
+
+> **🟡 NOTA 2026-04-23:** Estructura reconciliada. Audit completed.
 
 ### 2. CONFIGURACIÓN IA (.agent/)
 ```text
@@ -282,7 +283,7 @@ Think_Different/
 <system_state_snapshot>
 | Categoria                                                    | Estado                                          | Notas                                                                                |
 |--------------------------------------------------------------|-------------------------------------------------|--------------------------------------------------------------------------------------|
-| **Overall Health**                                           | **100%** ✅                                      | PURE GREEN — v1.1 Alpha Pure Green State                                             |
+| **Overall Health**                                           | **100%** ✅                                      | PURE GREEN — v1.2 Pure Green State                                             |
 | Estructura (00-08)                                           | ✅ PASS                                          | 9 carpetas válidas                                                                   |
 | HUBs (00-13)                                                 | ✅ ACTIVE                                        | 14 HUBs funcionales + PYTHONPATH fix                                                 |
 | Skills (22 categorías)                                       | ✅ OPERATIONAL                                   | 160+ sub-skills — SKILL.md en categorías core                                        |
@@ -304,8 +305,10 @@ Think_Different/
 
 > ⚠️ Al modificar MCPs: actualizar SIEMPRE el source Y el config activo correspondiente.
 
-**Última actualización:** 2026-04-22
-**Versión:** v1.1 Alpha Pure Green State
+**Última actualización:** 2026-04-23
+**Versión:** v1.2 Pure Green State (post-auditoría)
 
-© 2026 PersonalOS v1.1 Alpha
+> 🟡 **Auditoría Integral 2026-04-23:** Correcciones aplicadas, estructura reconciliada.
+
+© 2026 PersonalOS v1.2
 </system_state_snapshot>

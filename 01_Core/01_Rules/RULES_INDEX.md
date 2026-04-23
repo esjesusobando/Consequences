@@ -1,7 +1,7 @@
-# 📋 Índice de Reglas — PersonalOS v1.0
+# 📋 Índice de Reglas — PersonalOS v1.2
 
-**Versión:** 1.0
-**Última actualización:** 2026-04-18
+**Versión:** 1.2
+**Última actualización:** 2026-04-23
 **Ubicación:** `01_Core/01_Rules/`
 **Framework:** Anthropic SOTA 2026 + PersonalOS
 
@@ -129,7 +129,7 @@ Think_Different/
 
 ---
 
-_Total Reglas: 25_
-_Total Skills: 160+_
-_Total Categorías: 22 (24 directorios)_
-_Framework: Anthropic SOTA 2026 + PersonalOS v1.0_
+_Total Reglas: 10 (.mdc files)_
+_Total Skills: 165+_
+_Total Categorías: 20 (carpetas en 03_Skills)_
+_Framework: Anthropic SOTA 2026 + PersonalOS v1.2_

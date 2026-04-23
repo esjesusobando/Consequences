@@ -1,0 +1,157 @@
+---
+description: Agent Teams Protocol — Protocolo de orquestación multi-agente para PersonalOS v1.0. Activo cuando se lanza el orquestador o se delega trabajo a sub-agentes. Define cómo se comunican, qué contexto comparten y cómo reportan.
+globs:
+alwaysApply: false
+---
+
+# Regla 25: Agent Teams Protocol — Super Campeones
+
+## Principio Fundamental
+
+**El Orquestador coordina, los Sub-Agentes ejecutan.** Ningún sub-agente trabaja sin contexto del proyecto. Todos los agentes comparten memoria vía Engram. La calidad del trabajo de un agente determina la calidad del siguiente.
+
+---
+
+## 1. Boot del Orquestador
+
+Al iniciar como orquestador, SIEMPRE ejecutar en este orden:
+
+```
+1. engram_mem_context(limit=10)           # Recuperar memoria persistente
+2. Leer 00_Winter_is_Coming/AGENTS.md     # Orchestrator Manifest completo
+3. Leer .atl/skill-registry.md            # Registry de 22 categorías de skills
+4. Leer 00_Winter_is_Coming/GOALS.md      # Objetivos actuales
+```
+
+**SIN este boot, PROHIBIDO chatear o proponer soluciones.**
+
+---
+
+## 2. Decisión de Delegación
+
+| Acción | Inline (orquestador) | Delegar (sub-agente) |
+|--------|---------------------|---------------------|
+| Leer 1-3 archivos para decidir | ✅ | — |
+| Explorar 4+ archivos | — | ✅ |
+| Escribir código en múltiples archivos | — | ✅ |
+| Operaciones git/gh de estado | ✅ | — |
+| Ejecutar tests o builds | — | ✅ |
+| Escribir un archivo simple y mecánico | ✅ | — |
+
+---
+
+## 3. Protocolo de Lanzamiento de Sub-Agente
+
+Al lanzar un sub-agente, el prompt DEBE incluir:
+
+```
+## Contexto del proyecto
+- Repo: Think_Different PersonalOS v1.0
+- Orquestador: [qué estamos haciendo]
+- Tu tarea específica: [qué hace este agente]
+
+## Project Standards (auto-resolved)
+[compact rules del skill-registry para los skills relevantes]
+
+## Memoria relevante
+[resultados de mem_search para el contexto de esta tarea]
+
+## Instrucción de cierre
+Antes de retornar, guarda descubrimientos clave en engram via mem_save
+con project: "Think_Different" y un topic_key estable.
+```
+
+---
+
+## 4. Protocolo de Comunicación Inter-Agente
+
+### Contexto Compartido (Engram)
+- **Todos los agentes** leen y escriben en Engram MCP
+- **Topic key format:** `sdd/{change-name}/{phase}` para SDD, `task/{task-name}` para tareas generales
+- **Project:** siempre `"Think_Different"`
+
+### Reglas de Escritura en Engram
+- Sub-agente DEBE llamar `mem_save` ANTES de retornar
+- Incluir: What (qué hice), Why (por qué), Where (archivos), Learned (gotchas)
+- Si encontró un bug y lo fixeó → `type: "bugfix"`
+- Si tomó una decisión arquitectónica → `type: "decision"`
+
+### Reglas de Lectura en Engram
+- Orquestador busca contexto previo con `mem_search` antes de delegar
+- Pasa el contexto encontrado en el prompt del sub-agente
+- Sub-agentes NO buscan en Engram por su cuenta — el orquestador ya filtra
+
+---
+
+## 5. Dream Team — Roles y Asignaciones
+
+| Agente | Rol | Cuándo invocarlo |
+|--------|-----|-----------------|
+| **Product Builder** | Features, UX, producto | Al construir features end-to-end |
+| **Data Engineer** | Datos, analytics, SQL | Al trabajar con bases de datos o analytics |
+| **Marketing Tech** | Growth, contenido, SEO | Al crear contenido o campañas |
+| **Design Ops** | Diseño, visual systems | Al trabajar con UI/UX o assets |
+| **Platform Engineer** | Infra, DevOps, CI/CD | Al deployar, configurar infra o pipelines |
+
+### Especialistas Compound
+
+Los 60+ especialistas en `.agent/01_Agents/02_Specialists_Compound/` se invocan para tareas específicas:
+- **Architecture-Strategist** → decisiones arquitectónicas
+- **Security-Sentinel** → code review de seguridad
+- **Performance-Oracle** → análisis de performance
+- **Data-Integrity-Guardian** → migraciones y datos
+
+---
+
+## 6. Flujo de Trabajo Super Campeones
+
+```
+USUARIO define objetivo
+      │
+      ▼
+ORQUESTADOR evalúa (lee AGENTS.md + skill-registry)
+      │
+      ├─ Tarea simple → ejecuta inline
+      │
+      └─ Tarea compleja → elige metodología:
+            │
+            ├── SDD → /sdd-new → explore → spec → design → tasks → apply → verify
+            ├── CE  → /ce:ideate → brainstorm → plan → work → review → compound
+            └── Híbrido → SDD para specs, CE para implementación
+                  │
+                  ▼
+            Delega a Dream Team o Especialista
+                  │
+                  ▼
+            Sub-agente guarda en Engram antes de retornar
+                  │
+                  ▼
+            Orquestador sintetiza y reporta al usuario
+```
+
+---
+
+## 7. Activación de Auto-Improvement
+
+Cuando el orquestador detecta issues estructurales en el OS:
+
+```bash
+# Ejecutar ciclo completo de auto-mejora
+python 04_Operations/01_Auto_Improvement/recursive_improvement_engine.py --full
+
+# Solo escaneo
+python 04_Operations/01_Auto_Improvement/recursive_improvement_engine.py --scan
+```
+
+El engine detecta → analiza → ejecuta fixes → aprende de ellos.
+
+---
+
+## 8. Criterio de Éxito del Protocolo
+
+El Agent Teams Protocol está funcionando correctamente cuando:
+- [ ] El orquestador inicia con boot completo (Engram + AGENTS.md + skill-registry)
+- [ ] Cada sub-agente recibe compact rules en su prompt
+- [ ] Cada sub-agente guarda en Engram antes de retornar
+- [ ] El orquestador puede continuar después de compactación sin perder contexto
+- [ ] Todos los agentes usan `project: "Think_Different"` en mem_save

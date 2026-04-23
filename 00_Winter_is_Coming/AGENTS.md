@@ -2,7 +2,7 @@
 
 **You are an Orchestrator Agent with a complete engineering stack.** You coordinate specialized sub-agents, keep backlog items organized, tie work to goals, execute technical workflows, and maintain system integrity. When you start, read this file completely — it is your Orchestrator Manifest.
 
-**Última actualización:** 2026-04-18
+**Última actualización:** 2026-04-23 (Auditoría Integral v1.2)
 
 ---
 
@@ -117,13 +117,18 @@ Ubicados en `.agent/01_Agents/02_Specialists_Compound/`. Cada especialista tiene
 
 | Herramienta              | Ubicación                                             | Función                                  |
 |--------------------------|-------------------------------------------------------|------------------------------------------|
-| **Tool Shed**            | `08_Scripts_Os/02_Tool/62_Tool_Shed.py`               | Auto-detecta contexto y sugiere MCPs     |
-| **Skill Harmonizer**     | `08_Scripts_Os/02_Tool/63_Skill_Harmonizer.py`        | Valida paridad de skills (20/20)         |
-| **Notifier**             | `08_Scripts_Os/02_Tool/00_Notifier.py`                | Sonido al completar tareas               |
+| **Tool Shed**            | `08_Scripts_Os/14_Otros/63_Skill_Harmonizer.py`       | Auto-detecta contexto y sugiere MCPs ⚠️ |
+| **Skill Harmonizer**     | `08_Scripts_Os/14_Otros/62_Tool_Shed.py`              | Valida paridad de skills (20/20) ⚠️     |
+| **Notifier**             | `08_Scripts_Os/00_Sound_Engine.py`                    | Sonido al completar tareas ✅            |
+
+> **⚠️ NOTA:** Los paths de Tool Shed y Skill Harmonizer fueron reubicados. Verificar ubicación exacta.
 
 ### Scripts Operativos (01_Ritual)
 
-- 08, 11, 12, 13, 16, 17, 19, 50, 57 — todos funcionando
+- Scripts 08, 11, 12, 13, 16, 17, 19, 50, 57 — migrados a skills en `01_Core/03_Skills/`
+- Los HUBs en `08_Scripts_Os/` ahora orquestan estos scripts
+
+> **NOTA:** La estructura migró a skills. Los HUBs usan `config_paths.py` para resolución dinámica de paths.
 
 ---
 
@@ -133,8 +138,10 @@ Ubicados en `.agent/01_Agents/02_Specialists_Compound/`. Cada especialista tiene
 After completing each task in TodoWrite, ALWAYS execute:
 
 ```bash
-python 01_Core/07_Hooks/04_Sound/notification.py --task-complete
+python 08_Scripts_Os/00_Sound_Engine.py --task-complete
 ```
+
+> **NOTA:** El script de sonido se migró a `08_Scripts_Os/00_Sound_Engine.py`. Si el path anterior no funciona, usar este.
 
 ### Progreso cada 15%
 When progress reaches 15%, 30%, 45%, 60%, 75%, execute:
@@ -174,33 +181,52 @@ After each task completion, save to Engram:
 
 ## 1. PERSONAL OS METHODOLOGY
 
-### Workspace Shape (ACTUAL - 2026-04-18 / v1.0)
+### Workspace Shape (ACTUAL - 2026-04-23 / v1.1)
 
 ```
 Think_Different/
 ├── 00_Winter_is_Coming/     # 🔮 ESTRATÉGICO: Goals, Backlog, Memoria
 ├── 01_Core/                 # 🧠 MOTOR: Skills, Agents, MCPs, Workflows (FUENTE DE VERDAD)
-│   ├── 00_Workflows/       # 26+ workflows
-│   ├── 01_Rules/           # 22+ reglas
-│   ├── 02_Dream_Team.md   # Equipo de agentes
-│   ├── 03_Skills/         # 160+ skills (FUENTE DE VERDAD)
+│   ├── 00_Workflows/       # ⚠️ DEPRECATED - Workflows ahora en 03_Skills/05_Workflows/
+│   ├── 01_Rules/           # 25 reglas (.mdc) — fuente de verdad
+│   ├── 02_Dream_Team.md   # ✅ Existe en 01_Core/
+│   ├── 03_Skills/         # 165+ skills (FUENTE DE VERDAD) - Sistema v2.0
 │   ├── 04_Agents/         # Agentes configurados
-│   ├── 05_Mcp/            # 20+ MCPs
-│   ├── 06_Integrations/
-│   ├── 07_Hooks/
-│   ├── 08_Plugins/
-│   ├── 09_Server/
-│   └── 10_Templates/
+│   ├── 05_Mcp/            # 33 MCPs configurados
+│   ├── 06_Integrations/    # ⚠️ Verificar contenido
+│   ├── 07_Hooks/          # Hooks del sistema
+│   ├── 08_Plugins/        # Plugins (Skill Creator, etc.)
+│   ├── 09_Server/         # ⚠️ Verificar contenido
+│   └── 10_Templates/     # ⚠️ Verificar contenido
 ├── 02_Evals/                # 📊 Métricas y evaluaciones
-├── 03_Knowledge/            # 📚 Documentación, Research
-├── 04_Docs/                 # 📋 Planes estratégicos
+├── 02_Knowledge/            # 📚 Documentación, Research (CORRECTO)
+├── 02_Knowledge/04_Docs/   # 📋 Planes estratégicos (CORRECTO)
+├── 03_Tasks/                # ✅ Tareas activas
+├── 04_Operations/          # ✅ Auto-Improvement Engine
+│   └── 01_Auto_Improvement/ # Motor: detector→analyzer→executor→learner
 ├── 05_Archive/              # 📦 Legacy archivado
-├── 08_Scripts_Os/           # 🔧 Scripts operativos
-│   ├── 01_Ritual/           # 12 scripts de rituales
-│   ├── 02_Tool/             # Herramientas (Tool Shed, Skill Harmonizer, Notifier)
-│   ├── 03_Validator/        # Validadores
-│   ├── 04_Workflow/         # Workflows
-│   └── 10_Legacy/           # Scripts legacy
+├── 06_Playground/          # ✅ Área de pruebas
+├── 07_Projects/            # ✅ Proyectos activos
+├── 08_Scripts_Os/          # 🔧 14 HUBs operativos
+│   ├── 00_Sound_Engine.py  # Motor de sonido
+│   ├── 01_Auditor_Hub.py   # Auditorías
+│   ├── 01_Ritual/          # Scripts de rituales (migrados a skills)
+│   ├── 02_Tool/            # Herramientas (Tool Shed, Skill Harmonizer)
+│   ├── 03_Validator/      # Validadores
+│   ├── 03_AIPM_Hub.py     # AI Performance Monitoring
+│   ├── 04_Ritual_Hub.py   # Rituales de sesión
+│   ├── 05_Validator_Hub.py # Validación código
+│   ├── 06_Tool_Hub.py     # Gestión herramientas
+│   ├── 07_Integration_Hub.py # MCP integrations
+│   ├── 08_Workflow_Hub.py # Workflow automation
+│   ├── 09_Data_Hub.py      # Data processing
+│   ├── 10_General_Hub.py   # Utilidades generales
+│   ├── 10_Legacy/          # 92 scripts legacy
+│   ├── 11_Auto_Learn_Hub.py # Auto-mejora
+│   ├── 11_Anthropic_Harness/ # Evaluators
+│   ├── 12_Context_Usage_Bar.py # Barra contexto
+│   ├── 13_Beautify_Tables.py # Formateo tablas
+│   └── 13_Auditors_Os/    # Auditores especializados
 └── .agent/                  # 💾 BACKUP ESTRATÉGICO (sincronizado con 01_Core/)
 ```
 
@@ -744,4 +770,4 @@ matplotlib, seaborn, plotly
 
 ---
 
-_Think Different PersonalOS v6.1 — Pure Green_
+_Think Different PersonalOS v1.1 — Pure Green State (Audit 2026-04-23)_
