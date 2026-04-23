@@ -62,43 +62,43 @@ El usuario define las reglas del juego. Es quien entrena al equipo y establece q
 ### WORKFLOW = Director Técnico
 Orquesta las jugadas. Define la estrategia completa del partido.
 
-| Workflow            | Analogía DT                           |
-|---------------------|---------------------------------------|
-| Iron Man Gen        | Generación de jugadas de ataque       |
-| Spider Brainstorm   | Análisis previo al partido            |
-| Professor X Plan    | Planificación estratégica             |
-| Vision Review       | Medio tiempo - revisión táctica       |
-| Thor Work           | Ejecución de jugadas                  |
-| Hulk Compound       | Post-partido - documentar lecciones   |
+| Workflow              | Analogía DT                             |
+|-----------------------|-----------------------------------------|
+| Iron Man Gen          | Generación de jugadas de ataque         |
+| Spider Brainstorm     | Análisis previo al partido              |
+| Professor X Plan      | Planificación estratégica               |
+| Vision Review         | Medio tiempo - revisión táctica         |
+| Thor Work             | Ejecución de jugadas                    |
+| Hulk Compound         | Post-partido - documentar lecciones     |
 
 ### AGENTES = Jugadores de Alto Rendimiento
 Cada agente es un jugador con posición, habilidades y rol específico.
 
-| Jugador                 | Posición         | Habilidades                        | Ruta                                 |
-|-------------------------|------------------|------------------------------------|--------------------------------------|
-| **Product Builder**     | Delantero        | PRD, Planning, React, TypeScript   | `01_Core/04_Agents/01_Dream_Team/`   |
-| **Data_Engineer**       | Centrocampista   | Python, Supabase, CSV, Analytics   | `01_Core/04_Agents/01_Dream_Team/`   |
-| **Marketing_Tech**      | Extremo          | Marketing, SEO, Firecrawl          | `01_Core/04_Agents/01_Dream_Team/`   |
-| **Design_Ops**          | Lateral          | Diseño, Vercel, Playwright         | `01_Core/04_Agents/01_Dream_Team/`   |
-| **Platform_Engineer**   | Portero          | DevOps, System Master, MCP         | `01_Core/04_Agents/01_Dream_Team/`   |
+| Jugador                   | Posición           | Habilidades                          | Ruta                                   |
+|---------------------------|--------------------|--------------------------------------|----------------------------------------|
+| **Product Builder**       | Delantero          | PRD, Planning, React, TypeScript     | `01_Core/04_Agents/01_Dream_Team/`     |
+| **Data_Engineer**         | Centrocampista     | Python, Supabase, CSV, Analytics     | `01_Core/04_Agents/01_Dream_Team/`     |
+| **Marketing_Tech**        | Extremo            | Marketing, SEO, Firecrawl            | `01_Core/04_Agents/01_Dream_Team/`     |
+| **Design_Ops**            | Lateral            | Diseño, Vercel, Playwright           | `01_Core/04_Agents/01_Dream_Team/`     |
+| **Platform_Engineer**     | Portero            | DevOps, System Master, MCP           | `01_Core/04_Agents/01_Dream_Team/`     |
 
 ### SKILLS/COMMANDS = Habilidades del Jugador
 Lo que cada jugador sabe hacer. Su kit de herramientas.
 
-| Herramienta     | Cantidad     | Función                 |
-|-----------------|--------------|-------------------------|
-| **Skills**      | 160+         | Patrones específicos    |
-| **Commands**    |--------------| Comandos slash          |
-| **MCPs**        | 27           | Herramientas externas   |
+| Herramienta       | Cantidad       | Función                   |
+|-------------------|----------------|---------------------------|
+| **Skills**        | 160+           | Patrones específicos      |
+| **Commands**      |----------------| Comandos slash            |
+| **MCPs**          | 27             | Herramientas externas     |
 
 ### HOOKS = Árbitro
 Está atento a todo lo que pasa en el campo. Valida y hace cumplir las reglas.
 
-| Hook             | Función                         |
-|------------------|---------------------------------|
-| Pre-Execution    | Verifica antes de jugar         |
-| Post-Execution   | Revisa después de cada Jugada   |
-| On-Error         | Cuando hay falta/falta          |
+| Hook               | Función                           |
+|--------------------|-----------------------------------|
+| Pre-Execution      | Verifica antes de jugar           |
+| Post-Execution     | Revisa después de cada Jugada     |
+| On-Error           | Cuando hay falta/falta            |
 
 ### EVALS = ScoreCard/Métricas
 El scoreboard del partido. Mide rendimiento, goles, posesión, calidad.
@@ -107,12 +107,12 @@ El scoreboard del partido. Mide rendimiento, goles, posesión, calidad.
 
 ## ⚽ MARCADORES — METRICAS DEL EQUIPO
 
-| Métrica         | Equivalente Fútbol      | Descripción                     |
-|-----------------|-------------------------|---------------------------------|
-| Quality Score   | Goles convertidos       | Código que funciona             |
-| Efficiency      | Posesión de balón       | Recursos usados vs resultados   |
-| Coverage        | Jugadas creadas         | Tests que cubren el juego       |
-| Latency         | Tiempo de juego         | Velocidad de ejecución          |
+| Métrica           | Equivalente Fútbol        | Descripción                       |
+|-------------------|---------------------------|-----------------------------------|
+| Quality Score     | Goles convertidos         | Código que funciona               |
+| Efficiency        | Posesión de balón         | Recursos usados vs resultados     |
+| Coverage          | Jugadas creadas           | Tests que cubren el juego         |
+| Latency           | Tiempo de juego           | Velocidad de ejecución            |
 
 ---
 
@@ -216,15 +216,15 @@ El scoreboard del partido. Mide rendimiento, goles, posesión, calidad.
 
 ## 📍 UBICACIONES — TERRENO DE JUEGO
 
-| Componente         | Ubicación (Campo)                             |
-|--------------------|-----------------------------------------------|
-| Winter is Coming   | `00_Winter_is_Coming/` — Goals, Backlog       |
-| Workflows          | `01_Core/00_Workflows/` — Director            |
-| Rules              | `01_Core/01_Rules/` — Reglas                  |
-| Agents             | `01_Core/04_Agents/` — Jugadores              |
-| **Skills**         | `01_Core/03_Skills/` — **FUENTE DE VERDAD**   |
-| Hooks              | `01_Core/07_Hooks/` — Árbitro                 |
-| Evals              | `01_Core/02_Evals/` — ScoreCard               |
+| Componente           | Ubicación (Campo)                               |
+|----------------------|-------------------------------------------------|
+| Winter is Coming     | `00_Winter_is_Coming/` — Goals, Backlog         |
+| Workflows            | `01_Core/00_Workflows/` — Director              |
+| Rules                | `01_Core/01_Rules/` — Reglas                    |
+| Agents               | `01_Core/04_Agents/` — Jugadores                |
+| **Skills**           | `01_Core/03_Skills/` — **FUENTE DE VERDAD**     |
+| Hooks                | `01_Core/07_Hooks/` — Árbitro                   |
+| Evals                | `01_Core/02_Evals/` — ScoreCard                 |
 
 ---
 
@@ -240,24 +240,24 @@ python skill_validator.py 06_Playground/Hillary_Life_OS/
 
 ## 📊 ESTADO ACTUAL
 
-| Componente             | Estado     | Cantidad         |
-|------------------------|------------|------------------|
-| Workflows (Director)   | ✅          | 26               |
-| Agents (Jugadores)     | ✅          | 12 + 2 equipos   |
-| Skills (Habilidades)   | ✅          | 160+             |
-| MCPs (Equipamiento)    | ✅          | 27               |
-| Rules (Reglas)         | ✅          | 22               |
-| Hooks (Árbitro)        | ✅          | 6                |
+| Componente               | Estado       | Cantidad           |
+|--------------------------|--------------|--------------------|
+| Workflows (Director)     | ✅            | 26                 |
+| Agents (Jugadores)       | ✅            | 12 + 2 equipos     |
+| Skills (Habilidades)     | ✅            | 160+               |
+| MCPs (Equipamiento)      | ✅            | 27                 |
+| Rules (Reglas)           | ✅            | 22                 |
+| Hooks (Árbitro)          | ✅            | 6                  |
 
 ---
 
 ## 🔐 GIT COMMITS — TEMPORADA ACTUAL
 
-| Hash      | Jugada             |
-|-----------|--------------------|
-| 82ad282   | Runbook agregado   |
-| 222bb34   | SDD artifacts      |
-| 4e2eed2   | 5 skills 100%      |
+| Hash        | Jugada               |
+|-------------|----------------------|
+| 82ad282     | Runbook agregado     |
+| 222bb34     | SDD artifacts        |
+| 4e2eed2     | 5 skills 100%        |
 
 ---
 

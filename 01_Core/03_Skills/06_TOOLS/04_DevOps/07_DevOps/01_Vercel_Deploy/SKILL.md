@@ -13,14 +13,14 @@ Skill para deployments en Vercel usando SOTA features 2025-2026
 ## SOTA Stack (2025-2026)
 
 ### Vercel Products
-| Feature                    | Use Case              | SOTA?           |
-|----------------------------|-----------------------|-----------------|
-| **Edge Functions**         | Low latency, global   | ✅ V8 isolates   |
-| **Serverless Functions**   | Complex logic         | ✅ Node 20+      |
-| **ISR**                    | Static + Dynamic      | ✅ On-demand     |
-| **Fluid Compute**          | Active CPU pricing    | ✅ 2025 new      |
-| **Preview Deployments**    | Per-branch URLs       | ✅ Built-in      |
-| **Monorepo**               | Multiple apps         | ✅ Turborepo     |
+| Feature                      | Use Case                | SOTA?             |
+|------------------------------|-------------------------|-------------------|
+| **Edge Functions**           | Low latency, global     | ✅ V8 isolates     |
+| **Serverless Functions**     | Complex logic           | ✅ Node 20+        |
+| **ISR**                      | Static + Dynamic        | ✅ On-demand       |
+| **Fluid Compute**            | Active CPU pricing      | ✅ 2025 new        |
+| **Preview Deployments**      | Per-branch URLs         | ✅ Built-in        |
+| **Monorepo**                 | Multiple apps           | ✅ Turborepo       |
 
 ### Runtimes
 - **Edge**: V8 isolates, TypeScript, 128MB, <1ms cold start

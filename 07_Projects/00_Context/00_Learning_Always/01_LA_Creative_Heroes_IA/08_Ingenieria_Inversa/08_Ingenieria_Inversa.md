@@ -4,24 +4,24 @@
 
 ### Tecnologías usadas
 
-| Tecnología         | Propósito            | Cuándo                    |
-|--------------------|----------------------|---------------------------|
-| **YouTube**        | Hosting del video    | 2024-presente             |
-| **Zoom/Streaming** | Clases en vivo       | Durante el workshop       |
-| **Midjourney**     | Demo de imágenes     | Ejemplos prácticos        |
-| **ChatGPT**        | Asistencia general   | Soporte                   |
-| **Leonardo.ai**    | Alternativa gratuita | Para usuarios sin Discord |
-| **Discord**        | Comunidad + soporte  | Feedback y comunidad      |
+| Tecnología           | Propósito              | Cuándo                      |
+|----------------------|------------------------|-----------------------------|
+| **YouTube**          | Hosting del video      | 2024-presente               |
+| **Zoom/Streaming**   | Clases en vivo         | Durante el workshop         |
+| **Midjourney**       | Demo de imágenes       | Ejemplos prácticos          |
+| **ChatGPT**          | Asistencia general     | Soporte                     |
+| **Leonardo.ai**      | Alternativa gratuita   | Para usuarios sin Discord   |
+| **Discord**          | Comunidad + soporte    | Feedback y comunidad        |
 
 ### Patrones de diseño del contenido
 
-| #   | Patrón                     | Descripción                            |
-|-----|----------------------------|----------------------------------------|
-| 1   | **Hook emocional**         | "La IA no va a reemplazarte"           |
-| 2   | **Demo primero**           | Ejemplos visuales antes de teoría      |
-| 3   | **Framework transferable** | De creativo → agencia                  |
-| 4   | **Escala social**          | "+600K estudiantes" como prueba social |
-| 5   | **CTA claro**              | "Regístrate gratis"                    |
+| #     | Patrón                       | Descripción                              |
+|-------|------------------------------|------------------------------------------|
+| 1     | **Hook emocional**           | "La IA no va a reemplazarte"             |
+| 2     | **Demo primero**             | Ejemplos visuales antes de teoría        |
+| 3     | **Framework transferable**   | De creativo → agencia                    |
+| 4     | **Escala social**            | "+600K estudiantes" como prueba social   |
+| 5     | **CTA claro**                | "Regístrate gratis"                      |
 
 ### Estructura del contenido
 
@@ -36,13 +36,13 @@
 
 ### Qué podemos aprender
 
-| #   | Learning                     | Aplicación                        |
-|-----|------------------------------|-----------------------------------|
-| 1   | Criterio > Herramienta       | Enfoque en visión, no en tool     |
-| 2   | Demo primero, teoría después | Siempre mostrar antes de explicar |
-| 3   | Escala social funciona       | "+X usuarios" genera confianza    |
-| 4   | Comunidad como asset         | Discord/grupos crean retention    |
-| 5   | De 0 a agency                | Modelo de negocio claro           |
+| #     | Learning                       | Aplicación                          |
+|-------|--------------------------------|-------------------------------------|
+| 1     | Criterio > Herramienta         | Enfoque en visión, no en tool       |
+| 2     | Demo primero, teoría después   | Siempre mostrar antes de explicar   |
+| 3     | Escala social funciona         | "+X usuarios" genera confianza      |
+| 4     | Comunidad como asset           | Discord/grupos crean retention      |
+| 5     | De 0 a agency                  | Modelo de negocio claro             |
 
 ### Cómo replicar enfoques similares
 

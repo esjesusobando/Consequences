@@ -20,12 +20,12 @@ end
 ```
 
 **Verb-to-noun conversion:**
-| Action           | Resource           |
-|------------------|--------------------|
-| close a card     | `card.closure`     |
-| watch a board    | `board.watching`   |
-| mark as golden   | `card.goldness`    |
-| archive a card   | `card.archival`    |
+| Action             | Resource             |
+|--------------------|----------------------|
+| close a card       | `card.closure`       |
+| watch a board      | `board.watching`     |
+| mark as golden     | `card.goldness`      |
+| archive a card     | `card.archival`      |
 
 **Shallow nesting** - avoid deep URLs:
 ```ruby

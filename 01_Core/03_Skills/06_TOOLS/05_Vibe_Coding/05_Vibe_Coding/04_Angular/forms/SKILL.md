@@ -10,11 +10,11 @@ metadata:
 
 ## When to Use What
 
-| Use Case              | Recommendation              |
-|-----------------------|-----------------------------|
-| New apps with signals | Signal Forms (experimental) |
-| Production apps       | Reactive Forms              |
-| Simple forms          | Template-driven             |
+| Use Case                | Recommendation                |
+|-------------------------|-------------------------------|
+| New apps with signals   | Signal Forms (experimental)   |
+| Production apps         | Reactive Forms                |
+| Simple forms            | Template-driven               |
 
 ---
 

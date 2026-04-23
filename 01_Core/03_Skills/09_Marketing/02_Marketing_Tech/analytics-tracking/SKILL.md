@@ -61,12 +61,12 @@ Event Name | Category | Properties | Trigger | Notes
 
 ### Event Types
 
-| Type                 | Examples                                           |
-|----------------------|----------------------------------------------------|
-| Pageviews            | Automatic, enhanced with metadata                  |
-| User Actions         | Button clicks, form submissions, feature usage     |
-| System Events        | Signup completed, purchase, subscription changed   |
-| Custom Conversions   | Goal completions, funnel stages                    |
+| Type                   | Examples                                             |
+|------------------------|------------------------------------------------------|
+| Pageviews              | Automatic, enhanced with metadata                    |
+| User Actions           | Button clicks, form submissions, feature usage       |
+| System Events          | Signup completed, purchase, subscription changed     |
+| Custom Conversions     | Goal completions, funnel stages                      |
 
 **For comprehensive event lists**: See [references/event-library.md](references/event-library.md)
 
@@ -97,21 +97,21 @@ checkout_payment_completed
 
 ### Marketing Site
 
-| Event              | Properties              |
-|--------------------|-------------------------|
-| cta_clicked        | button_text, location   |
-| form_submitted     | form_type               |
-| signup_completed   | method, source          |
-| demo_requested     |-------------------------|
+| Event                | Properties                |
+|----------------------|---------------------------|
+| cta_clicked          | button_text, location     |
+| form_submitted       | form_type                 |
+| signup_completed     | method, source            |
+| demo_requested       |---------------------------|
 
 ### Product/App
 
-| Event                       | Properties               |
-|-----------------------------|--------------------------|
-| onboarding_step_completed   | step_number, step_name   |
-| feature_used                | feature_name             |
-| purchase_completed          | plan, value              |
-| subscription_cancelled      | reason                   |
+| Event                         | Properties                 |
+|-------------------------------|----------------------------|
+| onboarding_step_completed     | step_number, step_name     |
+| feature_used                  | feature_name               |
+| purchase_completed            | plan, value                |
+| subscription_cancelled        | reason                     |
 
 **For full event library by business type**: See [references/event-library.md](references/event-library.md)
 
@@ -121,12 +121,12 @@ checkout_payment_completed
 
 ### Standard Properties
 
-| Category     | Properties                                  |
-|--------------|---------------------------------------------|
-| Page         | page_title, page_location, page_referrer    |
-| User         | user_id, user_type, account_id, plan_type   |
-| Campaign     | source, medium, campaign, content, term     |
-| Product      | product_id, product_name, category, price   |
+| Category       | Properties                                    |
+|----------------|-----------------------------------------------|
+| Page           | page_title, page_location, page_referrer      |
+| User           | user_id, user_type, account_id, plan_type     |
+| Campaign       | source, medium, campaign, content, term       |
+| Product        | product_id, product_name, category, price     |
 
 ### Best Practices
 - Use consistent property names
@@ -163,11 +163,11 @@ gtag('event', 'signup_completed', {
 
 ### Container Structure
 
-| Component     | Purpose                                   |
-|---------------|-------------------------------------------|
-| Tags          | Code that executes (GA4, pixels)          |
-| Triggers      | When tags fire (page view, click)         |
-| Variables     | Dynamic values (click text, data layer)   |
+| Component       | Purpose                                     |
+|-----------------|---------------------------------------------|
+| Tags            | Code that executes (GA4, pixels)            |
+| Triggers        | When tags fire (page view, click)           |
+| Variables       | Dynamic values (click text, data layer)     |
 
 ### Data Layer Pattern
 
@@ -187,13 +187,13 @@ dataLayer.push({
 
 ### Standard Parameters
 
-| Parameter      | Purpose                  | Example              |
-|----------------|--------------------------|----------------------|
-| utm_source     | Traffic source           | google, newsletter   |
-| utm_medium     | Marketing medium         | cpc, email, social   |
-| utm_campaign   | Campaign name            | spring_sale          |
-| utm_content    | Differentiate versions   | hero_cta             |
-| utm_term       | Paid search keywords     | running+shoes        |
+| Parameter        | Purpose                    | Example                |
+|------------------|----------------------------|------------------------|
+| utm_source       | Traffic source             | google, newsletter     |
+| utm_medium       | Marketing medium           | cpc, email, social     |
+| utm_campaign     | Campaign name              | spring_sale            |
+| utm_content      | Differentiate versions     | hero_cta               |
+| utm_term         | Paid search keywords       | running+shoes          |
 
 ### Naming Conventions
 - Lowercase everything
@@ -207,11 +207,11 @@ dataLayer.push({
 
 ### Testing Tools
 
-| Tool                 | Use For                              |
-|----------------------|--------------------------------------|
-| GA4 DebugView        | Real-time event monitoring           |
-| GTM Preview Mode     | Test triggers before publish         |
-| Browser Extensions   | Tag Assistant, dataLayer Inspector   |
+| Tool                   | Use For                                |
+|------------------------|----------------------------------------|
+| GA4 DebugView          | Real-time event monitoring             |
+| GTM Preview Mode       | Test triggers before publish           |
+| Browser Extensions     | Tag Assistant, dataLayer Inspector     |
 
 ### Validation Checklist
 
@@ -224,11 +224,11 @@ dataLayer.push({
 
 ### Common Issues
 
-| Issue               | Check                                       |
-|---------------------|---------------------------------------------|
-| Events not firing   | Trigger config, GTM loaded                  |
-| Wrong values        | Variable path, data layer structure         |
-| Duplicate events    | Multiple containers, trigger firing twice   |
+| Issue                 | Check                                         |
+|-----------------------|-----------------------------------------------|
+| Events not firing     | Trigger config, GTM loaded                    |
+| Wrong values          | Variable path, data layer structure           |
+| Duplicate events      | Multiple containers, trigger firing twice     |
 
 ---
 
@@ -261,21 +261,21 @@ dataLayer.push({
 
 ## Events
 
-| Event Name         | Description             | Properties     | Trigger        |
-|--------------------|-------------------------|----------------|----------------|
-| signup_completed   | User completes signup   | method, plan   | Success page   |
+| Event Name           | Description               | Properties       | Trigger          |
+|----------------------|---------------------------|------------------|------------------|
+| signup_completed     | User completes signup     | method, plan     | Success page     |
 
 ## Custom Dimensions
 
-| Name        | Scope     | Parameter     |
-|-------------|-----------|---------------|
-| user_type   | User      | user_type     |
+| Name          | Scope       | Parameter       |
+|---------------|-------------|-----------------|
+| user_type     | User        | user_type       |
 
 ## Conversions
 
-| Conversion     | Event              | Counting           |
-|----------------|--------------------|--------------------|
-| Signup         | signup_completed   | Once per session   |
+| Conversion       | Event                | Counting             |
+|------------------|----------------------|----------------------|
+| Signup           | signup_completed     | Once per session     |
 ```
 
 ---
@@ -295,13 +295,13 @@ dataLayer.push({
 
 For implementation, see the [tools registry](../../tools/REGISTRY.md). Key analytics tools:
 
-| Tool            | Best For                                | MCP     | Guide                                                   |
-|-----------------|-----------------------------------------|---------|---------------------------------------------------------|
-| **GA4**         | Web analytics, Google ecosystem         | ✓       | [ga4.md](../../tools/integrations/ga4.md)               |
-| **Mixpanel**    | Product analytics, event tracking       |---------| [mixpanel.md](../../tools/integrations/mixpanel.md)     |
-| **Amplitude**   | Product analytics, cohort analysis      |---------| [amplitude.md](../../tools/integrations/amplitude.md)   |
-| **PostHog**     | Open-source analytics, session replay   |---------| [posthog.md](../../tools/integrations/posthog.md)       |
-| **Segment**     | Customer data platform, routing         |---------| [segment.md](../../tools/integrations/segment.md)       |
+| Tool              | Best For                                  | MCP       | Guide                                                     |
+|-------------------|-------------------------------------------|-----------|-----------------------------------------------------------|
+| **GA4**           | Web analytics, Google ecosystem           | ✓         | [ga4.md](../../tools/integrations/ga4.md)                 |
+| **Mixpanel**      | Product analytics, event tracking         |-----------| [mixpanel.md](../../tools/integrations/mixpanel.md)       |
+| **Amplitude**     | Product analytics, cohort analysis        |-----------| [amplitude.md](../../tools/integrations/amplitude.md)     |
+| **PostHog**       | Open-source analytics, session replay     |-----------| [posthog.md](../../tools/integrations/posthog.md)         |
+| **Segment**       | Customer data platform, routing           |-----------| [segment.md](../../tools/integrations/segment.md)         |
 
 ---
 

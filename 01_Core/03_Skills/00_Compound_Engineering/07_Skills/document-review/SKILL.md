@@ -78,13 +78,13 @@ Add activated conditional personas:
 
 Dispatch all agents in **parallel** using the platform's task/agent tool (e.g., Agent tool in Claude Code, spawn in Codex). Each agent receives the prompt built from the [subagent template](./references/subagent-template.md) with these variables filled:
 
-| Variable               | Value                                                                  |
-|------------------------|------------------------------------------------------------------------|
-| `{persona_file}`       | Full content of the agent's markdown file                              |
-| `{schema}`             | Content of [findings-schema.json](./references/findings-schema.json)   |
-| `{document_type}`      | "requirements" or "plan" from Phase 1 classification                   |
-| `{document_path}`      | Path to the document                                                   |
-| `{document_content}`   | Full text of the document                                              |
+| Variable                 | Value                                                                    |
+|--------------------------|--------------------------------------------------------------------------|
+| `{persona_file}`         | Full content of the agent's markdown file                                |
+| `{schema}`               | Content of [findings-schema.json](./references/findings-schema.json)     |
+| `{document_type}`        | "requirements" or "plan" from Phase 1 classification                     |
+| `{document_path}`        | Path to the document                                                     |
+| `{document_content}`     | Full text of the document                                                |
 
 Pass each agent the **full document** -- do not split into sections.
 
@@ -135,10 +135,10 @@ Specific conflict patterns:
 
 ### 3.6 Route by Autofix Class
 
-| Autofix Class     | Route                                                                                        |
-|-------------------|----------------------------------------------------------------------------------------------|
-| `auto`            | Apply automatically -- local deterministic fix (terminology, formatting, cross-references)   |
-| `present`         | Present to user for judgment                                                                 |
+| Autofix Class       | Route                                                                                          |
+|---------------------|------------------------------------------------------------------------------------------------|
+| `auto`              | Apply automatically -- local deterministic fix (terminology, formatting, cross-references)     |
+| `present`           | Present to user for judgment                                                                   |
 
 Demote any `auto` finding that lacks a `suggested_fix` to `present` -- the orchestrator cannot apply a fix without concrete replacement text.
 

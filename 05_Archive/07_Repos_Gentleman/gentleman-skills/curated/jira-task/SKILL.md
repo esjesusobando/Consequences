@@ -206,12 +206,12 @@ Format: `[TYPE] Brief description (components)`
 
 ## Priority Guidelines
 
-| Priority     | Criteria                                           |
-|--------------|----------------------------------------------------|
-| **Critical** | Production down, data loss, security vulnerability |
-| **High**     | Blocks users, no workaround, affects paid features |
-| **Medium**   | Has workaround, affects subset of users            |
-| **Low**      | Nice to have, cosmetic, internal tooling           |
+| Priority       | Criteria                                             |
+|----------------|------------------------------------------------------|
+| **Critical**   | Production down, data loss, security vulnerability   |
+| **High**       | Blocks users, no workaround, affects paid features   |
+| **Medium**     | Has workaround, affects subset of users              |
+| **Low**        | Nice to have, cosmetic, internal tooling             |
 
 ## Affected Files Section
 
@@ -352,12 +352,12 @@ After creating the issue, update the description with:
 
 ### Common Epics
 
-| Epic                      | Key         | Use For                |
-|---------------------------|-------------|------------------------|
-| UI - Bugs & Improvements  | PROWLER-193 | UI bugs, enhancements  |
-| API - Bugs / Improvements | PROWLER-XXX | API bugs, enhancements |
-| LightHouse AI             | PROWLER-594 | AI features            |
-| Technical Debt - UI       | PROWLER-502 | Refactoring            |
+| Epic                        | Key           | Use For                  |
+|-----------------------------|---------------|--------------------------|
+| UI - Bugs & Improvements    | PROWLER-193   | UI bugs, enhancements    |
+| API - Bugs / Improvements   | PROWLER-XXX   | API bugs, enhancements   |
+| LightHouse AI               | PROWLER-594   | AI features              |
+| Technical Debt - UI         | PROWLER-502   | Refactoring              |
 
 ### Workflow Transitions
 

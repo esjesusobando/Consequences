@@ -442,11 +442,11 @@ After creating all todo files, present comprehensive summary:
 
 **First, detect the project type from PR files:**
 
-| Indicator                                               | Project Type         |
-|---------------------------------------------------------|----------------------|
-| `*.xcodeproj`, `*.xcworkspace`, `Package.swift` (iOS)   | iOS/macOS            |
-| `Gemfile`, `package.json`, `app/views/*`, `*.html.*`    | Web                  |
-| Both iOS files AND web files                            | Hybrid (test both)   |
+| Indicator                                                 | Project Type           |
+|-----------------------------------------------------------|------------------------|
+| `*.xcodeproj`, `*.xcworkspace`, `Package.swift` (iOS)     | iOS/macOS              |
+| `Gemfile`, `package.json`, `app/views/*`, `*.html.*`      | Web                    |
+| Both iOS files AND web files                              | Hybrid (test both)     |
 
 </detect_project_type>
 

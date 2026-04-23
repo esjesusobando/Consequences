@@ -27,13 +27,13 @@ spec/
 
 ## Running Tests
 
-| Command                                       | What It Does              |
-|-----------------------------------------------|---------------------------|
-| `make test`                                   | Run all tests             |
-| `shellspec spec/unit`                         | Unit tests only           |
-| `shellspec spec/integration/commands_spec.sh` | Integration tests only    |
-| `shellspec spec/unit/cache_spec.sh:65`        | Single test at line 65    |
-| `shellspec --format documentation`            | Verbose output with names |
+| Command                                         | What It Does                |
+|-------------------------------------------------|-----------------------------|
+| `make test`                                     | Run all tests               |
+| `shellspec spec/unit`                           | Unit tests only             |
+| `shellspec spec/integration/commands_spec.sh`   | Integration tests only      |
+| `shellspec spec/unit/cache_spec.sh:65`          | Single test at line 65      |
+| `shellspec --format documentation`              | Verbose output with names   |
 
 ## Critical Rules
 - Every feature or bug fix MUST include tests — no exceptions
@@ -79,10 +79,10 @@ skip_if_no_ollama() {
 
 ## Cookbook
 
-| If...                     | Then...                                        |
-|---------------------------|------------------------------------------------|
-| Adding a new lib function | Add unit test in `spec/unit/`                  |
-| Adding a new CLI flag     | Add integration test in `spec/integration/`    |
-| Fixing a cache bug        | Add regression test at the failing case        |
-| Changing hook behavior    | Add/update integration test for hook injection |
-| Adding a provider         | Add unit mock test + integration skip test     |
+| If...                       | Then...                                          |
+|-----------------------------|--------------------------------------------------|
+| Adding a new lib function   | Add unit test in `spec/unit/`                    |
+| Adding a new CLI flag       | Add integration test in `spec/integration/`      |
+| Fixing a cache bug          | Add regression test at the failing case          |
+| Changing hook behavior      | Add/update integration test for hook injection   |
+| Adding a provider           | Add unit mock test + integration skip test       |

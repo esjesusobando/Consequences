@@ -32,12 +32,12 @@ Midjourney es una herramienta de IA generativa que crea imágenes a partir de de
 
 ### Parámetros básicos
 
-| Parámetro   | Significado             | Ejemplo         |
-|-------------|-------------------------|-----------------|
-| `--ar 16:9` | Aspect ratio horizontal | 16:9, 1:1, 9:16 |
-| `--v 6`     | Versión del modelo      | 1-6             |
-| `--s 250`   | Stylize (estilo)        | 0-1000          |
-| `--q 1`     | Quality (calidad)       | 0.25-2          |
+| Parámetro     | Significado               | Ejemplo           |
+|---------------|---------------------------|-------------------|
+| `--ar 16:9`   | Aspect ratio horizontal   | 16:9, 1:1, 9:16   |
+| `--v 6`       | Versión del modelo        | 1-6               |
+| `--s 250`     | Stylize (estilo)          | 0-1000            |
+| `--q 1`       | Quality (calidad)         | 0.25-2            |
 
 ---
 
@@ -74,13 +74,13 @@ Midjourney devuelve 4 opciones:
 
 ### Tips para mejores resultados
 
-| #   | Tip                | Ejemplo                     |
-|-----|--------------------|-----------------------------|
-| 1   | Sé específico      | "gato" → "gato Maine Coon"  |
-| 2   | Agrega contexto    | "en una ventana victoriana" |
-| 3   | Define estilo      | "fotografía profesional"    |
-| 4   | Agrega iluminación | "luz golden hour"           |
-| 5   | Usa parámetros     | --ar 16:9 para Instagram    |
+| #     | Tip                  | Ejemplo                       |
+|-------|----------------------|-------------------------------|
+| 1     | Sé específico        | "gato" → "gato Maine Coon"    |
+| 2     | Agrega contexto      | "en una ventana victoriana"   |
+| 3     | Define estilo        | "fotografía profesional"      |
+| 4     | Agrega iluminación   | "luz golden hour"             |
+| 5     | Usa parámetros       | --ar 16:9 para Instagram      |
 
 ---
 
@@ -105,12 +105,12 @@ Usa V en tu mejor imagen para crear nuevas versiones
 
 ## Errores Comunes y Cómo Evitarlos
 
-| #   | Error                                    | Solución                              |
-|-----|------------------------------------------|---------------------------------------|
-| 1   | "La imagen no se parece a lo que quería" | Sé más específico en el prompt        |
-| 2   | "Parece AI"                              | Agrega "photorealistic" o "cinematic" |
-| 3   | "Calidad baja"                           | Usa --v 6 --q 1                       |
-| 4   | "Muy pequeño"                            | Usa --ar con proporción correcta      |
+| #     | Error                                      | Solución                                |
+|-------|--------------------------------------------|-----------------------------------------|
+| 1     | "La imagen no se parece a lo que quería"   | Sé más específico en el prompt          |
+| 2     | "Parece AI"                                | Agrega "photorealistic" o "cinematic"   |
+| 3     | "Calidad baja"                             | Usa --v 6 --q 1                         |
+| 4     | "Muy pequeño"                              | Usa --ar con proporción correcta        |
 
 ---
 

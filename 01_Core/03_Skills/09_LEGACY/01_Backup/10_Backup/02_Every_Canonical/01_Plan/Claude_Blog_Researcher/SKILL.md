@@ -33,9 +33,9 @@ Save to: `03_Knowledge/01_Research_Knowledge/Claude_AI_Announcements_2026.md`
 [Resumen de announcements]
 
 ## Timeline de Releases
-| Fecha     | Announcement    | Impacto         |
-|-----------|-----------------|-----------------|
-| YYYY-MM   | [título]        | [descripción]   |
+| Fecha       | Announcement      | Impacto           |
+|-------------|-------------------|-------------------|
+| YYYY-MM     | [título]          | [descripción]     |
 
 ## Features Anunciadas
 ### 2026

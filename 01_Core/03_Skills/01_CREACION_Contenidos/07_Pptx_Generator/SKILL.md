@@ -36,13 +36,13 @@ Generate professional, on-brand presentation slides using python-pptx. This skil
 
 **NEVER generate more than 5 slides at once.**
 
-| Rule                    | Details                                                      |
-|-------------------------|--------------------------------------------------------------|
-| Max slides per batch    | **5** (can be 1, 2, 3, 4, or 5)                              |
-| After each batch        | **STOP and validate output**                                 |
-| Validation required     | Check: no duplicate titles, proper spacing, correct colors   |
-| Continue when           | Validation passes                                            |
-| **After ALL batches**   | **COMBINE into single file and DELETE part files**           |
+| Rule                      | Details                                                        |
+|---------------------------|----------------------------------------------------------------|
+| Max slides per batch      | **5** (can be 1, 2, 3, 4, or 5)                                |
+| After each batch          | **STOP and validate output**                                   |
+| Validation required       | Check: no duplicate titles, proper spacing, correct colors     |
+| Continue when             | Validation passes                                              |
+| **After ALL batches**     | **COMBINE into single file and DELETE part files**             |
 
 This prevents token limit errors and catches quality issues early.
 
@@ -87,18 +87,18 @@ Read: 01_Core/03_Skills/pptx-generator/brands/template/config.json
 
 Ask the user for (or extract from provided materials):
 
-| Required         | Description                                   |
-|------------------|-----------------------------------------------|
-| **Brand name**   | Folder name (lowercase, no spaces)            |
-| **Colors**       | Background, text, accent colors (hex codes)   |
-| **Fonts**        | Heading font, body font, code font            |
+| Required           | Description                                     |
+|--------------------|-------------------------------------------------|
+| **Brand name**     | Folder name (lowercase, no spaces)              |
+| **Colors**         | Background, text, accent colors (hex codes)     |
+| **Fonts**          | Heading font, body font, code font              |
 
-| Optional           | Description                                                 |
-|--------------------|-------------------------------------------------------------|
-| Output directory   | Where to save generated files (default: `output/{brand}`)   |
-| Logo               | Path to logo file (PNG/SVG)                                 |
-| Brand guidelines   | Existing style guide or website to reference                |
-| Tone of voice      | Writing style, vocabulary preferences                       |
+| Optional             | Description                                                   |
+|----------------------|---------------------------------------------------------------|
+| Output directory     | Where to save generated files (default: `output/{brand}`)     |
+| Logo                 | Path to logo file (PNG/SVG)                                   |
+| Brand guidelines     | Existing style guide or website to reference                  |
+| Tone of voice        | Writing style, vocabulary preferences                         |
 
 ### Step 3: Create Brand Files
 
@@ -267,14 +267,14 @@ For each `.py` file found, read the first 40 lines to extract the `# /// layout`
 ```
 
 **Key frontmatter fields:**
-| Field               | Description                           |
-|---------------------|---------------------------------------|
-| `name`              | Layout identifier                     |
-| `purpose`           | What this layout is for               |
-| `best_for`          | Ideal use cases (array)               |
-| `avoid_when`        | When NOT to use this layout (array)   |
-| `max_*` / `min_*`   | Item limits (cards, bullets, stats)   |
-| `instructions`      | Specific tips for using this layout   |
+| Field                 | Description                             |
+|-----------------------|-----------------------------------------|
+| `name`                | Layout identifier                       |
+| `purpose`             | What this layout is for                 |
+| `best_for`            | Ideal use cases (array)                 |
+| `avoid_when`          | When NOT to use this layout (array)     |
+| `max_*` / `min_*`     | Item limits (cards, bullets, stats)     |
+| `instructions`        | Specific tips for using this layout     |
 
 **Step 2c: Select layouts** (only AFTER reading all frontmatters):
 
@@ -446,19 +446,19 @@ Use content-slide ONLY when:
 
 #### Quick Reference: Content Type → Best Layout
 
-| Content Type                    | Best Layout            | Why                                     |
-|---------------------------------|------------------------|-----------------------------------------|
-| 3-5 equal features/steps        | multi-card-slide       | Cards create visual hierarchy           |
-| Exactly 3 featured items        | floating-cards-slide   | Elevated cards add depth                |
-| 2-4 metrics/KPIs                | stats-slide            | Big numbers grab attention              |
-| Before/after comparison         | two-column-slide       | Side-by-side shows contrast             |
-| Hub concept with types          | circular-hero-slide    | Radiating pattern shows relationships   |
-| Dramatic emphasis (1-3 words)   | giant-focus-slide      | Scale creates impact                    |
-| High-energy warning             | bold-diagonal-slide    | Dynamic shapes convey urgency           |
-| Powerful quote/principle        | quote-slide            | Attribution adds authority              |
-| List of related items           | multi-card-slide       | Better than bullets                     |
-| Process with steps              | floating-cards-slide   | Visual flow beats text                  |
-| Technical comparison            | two-column-slide       | Structured comparison                   |
+| Content Type                      | Best Layout              | Why                                       |
+|-----------------------------------|--------------------------|-------------------------------------------|
+| 3-5 equal features/steps          | multi-card-slide         | Cards create visual hierarchy             |
+| Exactly 3 featured items          | floating-cards-slide     | Elevated cards add depth                  |
+| 2-4 metrics/KPIs                  | stats-slide              | Big numbers grab attention                |
+| Before/after comparison           | two-column-slide         | Side-by-side shows contrast               |
+| Hub concept with types            | circular-hero-slide      | Radiating pattern shows relationships     |
+| Dramatic emphasis (1-3 words)     | giant-focus-slide        | Scale creates impact                      |
+| High-energy warning               | bold-diagonal-slide      | Dynamic shapes convey urgency             |
+| Powerful quote/principle          | quote-slide              | Attribution adds authority                |
+| List of related items             | multi-card-slide         | Better than bullets                       |
+| Process with steps                | floating-cards-slide     | Visual flow beats text                    |
+| Technical comparison              | two-column-slide         | Structured comparison                     |
 
 **Only use content-slide when:**
 - None of the above fit
@@ -479,12 +479,12 @@ This applies to single slides, batches, and full presentations. Planning prevent
 **Create a slide plan table:**
 
 ```markdown
-| #     | Layout          | Title     | Key Content           | Notes           |
-|-------|-----------------|-----------|-----------------------|-----------------|
-| 1     | title-slide     | [Title]   | [Subtitle, author]    | Opening slide   |
-| 2     | content-slide   | [Title]   | [3-4 bullet points]   | Main concepts   |
-| 3     | stats-slide     | [Title]   | [2-3 metrics]         | Impact data     |
-| ...   | ...             | ...       | ...                   | ...             |
+| #       | Layout            | Title       | Key Content             | Notes             |
+|---------|-------------------|-------------|-------------------------|-------------------|
+| 1       | title-slide       | [Title]     | [Subtitle, author]      | Opening slide     |
+| 2       | content-slide     | [Title]     | [3-4 bullet points]     | Main concepts     |
+| 3       | stats-slide       | [Title]     | [2-3 metrics]           | Impact data       |
+| ...     | ...               | ...         | ...                     | ...               |
 ```
 
 **For each slide, specify:**
@@ -528,15 +528,15 @@ This applies to single slides, batches, and full presentations. Planning prevent
 
 **IMPORTANT: Follow these rules for ALL slide text.**
 
-| Element         | Rule                                          | Example                                              |
-|-----------------|-----------------------------------------------|------------------------------------------------------|
-| Titles          | No trailing periods or commas                 | "Why AI Matters" not "Why AI Matters."               |
-| Subtitles       | No trailing punctuation                       | "The future of coding" not "The future of coding."   |
-| Bullet points   | No trailing periods (unless full sentences)   | "Faster development" not "Faster development."       |
-| Headlines       | Minimal punctuation, no ellipsis              | "What's Next" not "What's Next..."                   |
-| Stats/Numbers   | Clean format, no trailing punctuation         | "50%" not "50%."                                     |
-| CTAs            | No trailing punctuation                       | "Get Started" not "Get Started."                     |
-| Labels          | Short, no punctuation                         | "Step 1" not "Step 1:"                               |
+| Element           | Rule                                            | Example                                                |
+|-------------------|-------------------------------------------------|--------------------------------------------------------|
+| Titles            | No trailing periods or commas                   | "Why AI Matters" not "Why AI Matters."                 |
+| Subtitles         | No trailing punctuation                         | "The future of coding" not "The future of coding."     |
+| Bullet points     | No trailing periods (unless full sentences)     | "Faster development" not "Faster development."         |
+| Headlines         | Minimal punctuation, no ellipsis                | "What's Next" not "What's Next..."                     |
+| Stats/Numbers     | Clean format, no trailing punctuation           | "50%" not "50%."                                       |
+| CTAs              | No trailing punctuation                         | "Get Started" not "Get Started."                       |
+| Labels            | Short, no punctuation                           | "Step 1" not "Step 1:"                                 |
 
 **Avoid:**
 - Trailing periods on titles, bullets, labels
@@ -551,21 +551,21 @@ This applies to single slides, batches, and full presentations. Planning prevent
 
 1. **Map brand.json values to layout placeholders:**
 
-| Layout Placeholder         | brand.json Path             |
-|----------------------------|-----------------------------|
-| `BRAND_BG`                 | `colors.background`         |
-| `BRAND_BG_ALT`             | `colors.background_alt`     |
-| `BRAND_TEXT`               | `colors.text`               |
-| `BRAND_TEXT_SECONDARY`     | `colors.text_secondary`     |
-| `BRAND_ACCENT`             | `colors.accent`             |
-| `BRAND_ACCENT_SECONDARY`   | `colors.accent_secondary`   |
-| `BRAND_ACCENT_TERTIARY`    | `colors.accent_tertiary`    |
-| `BRAND_CODE_BG`            | `colors.code_bg`            |
-| `BRAND_CARD_BG`            | `colors.card_bg`            |
-| `BRAND_CARD_BG_ALT`        | `colors.card_bg_alt`        |
-| `BRAND_HEADING_FONT`       | `fonts.heading`             |
-| `BRAND_BODY_FONT`          | `fonts.body`                |
-| `BRAND_CODE_FONT`          | `fonts.code`                |
+| Layout Placeholder           | brand.json Path               |
+|------------------------------|-------------------------------|
+| `BRAND_BG`                   | `colors.background`           |
+| `BRAND_BG_ALT`               | `colors.background_alt`       |
+| `BRAND_TEXT`                 | `colors.text`                 |
+| `BRAND_TEXT_SECONDARY`       | `colors.text_secondary`       |
+| `BRAND_ACCENT`               | `colors.accent`               |
+| `BRAND_ACCENT_SECONDARY`     | `colors.accent_secondary`     |
+| `BRAND_ACCENT_TERTIARY`      | `colors.accent_tertiary`      |
+| `BRAND_CODE_BG`              | `colors.code_bg`              |
+| `BRAND_CARD_BG`              | `colors.card_bg`              |
+| `BRAND_CARD_BG_ALT`          | `colors.card_bg_alt`          |
+| `BRAND_HEADING_FONT`         | `fonts.heading`               |
+| `BRAND_BODY_FONT`            | `fonts.body`                  |
+| `BRAND_CODE_FONT`            | `fonts.code`                  |
 
    **Note:** All color values in brand.json are hex WITHOUT the `#` prefix.
 
@@ -636,15 +636,15 @@ rm 01_Core/03_Skills/pptx-generator/.tmp/gen.py
 1. **Open the generated PPTX** and visually inspect it
 2. **Check for these common issues:**
 
-| Issue              | What to Look For                                    | Fix                                                        |
-|--------------------|-----------------------------------------------------|------------------------------------------------------------|
-| White background   | Slide has white background instead of brand color   | Add slide.background.fill.solid() and set fore_color.rgb   |
-| Duplicate titles   | Same title text appearing twice on a slide          | Remove duplicate text boxes                                |
-| Spacing problems   | Title too close to subtitle/content                 | Increase Y position of lower elements                      |
-| Text overflow      | Content extending beyond slide bounds               | Reduce font size or split content                          |
-| Missing elements   | Decorative elements not rendering                   | Check shape positions and colors                           |
-| Wrong colors       | Colors not matching brand                           | Verify hex values (no # prefix in code)                    |
-| Bad punctuation    | Trailing periods/commas on titles/bullets           | Remove unnecessary punctuation                             |
+| Issue                | What to Look For                                      | Fix                                                          |
+|----------------------|-------------------------------------------------------|--------------------------------------------------------------|
+| White background     | Slide has white background instead of brand color     | Add slide.background.fill.solid() and set fore_color.rgb     |
+| Duplicate titles     | Same title text appearing twice on a slide            | Remove duplicate text boxes                                  |
+| Spacing problems     | Title too close to subtitle/content                   | Increase Y position of lower elements                        |
+| Text overflow        | Content extending beyond slide bounds                 | Reduce font size or split content                            |
+| Missing elements     | Decorative elements not rendering                     | Check shape positions and colors                             |
+| Wrong colors         | Colors not matching brand                             | Verify hex values (no # prefix in code)                      |
+| Bad punctuation      | Trailing periods/commas on titles/bullets             | Remove unnecessary punctuation                               |
 
 3. **If issues found:**
    - Fix the current batch before continuing
@@ -657,11 +657,11 @@ rm 01_Core/03_Skills/pptx-generator/.tmp/gen.py
 
 **Use the output settings from config.json:**
 
-| Config Setting        | Default            | Description                       |
-|-----------------------|--------------------|-----------------------------------|
-| `output.directory`    | `output/{brand}`   | Where to save files               |
-| `output.naming`       | `{name}-{date}`    | File naming pattern               |
-| `output.keep_parts`   | `false`            | Keep part files after combining   |
+| Config Setting          | Default              | Description                         |
+|-------------------------|----------------------|-------------------------------------|
+| `output.directory`      | `output/{brand}`     | Where to save files                 |
+| `output.naming`         | `{name}-{date}`      | File naming pattern                 |
+| `output.keep_parts`     | `false`              | Keep part files after combining     |
 
 **Resolve placeholders:**
 - `{brand}` → Brand folder name
@@ -768,14 +768,14 @@ LinkedIn carousels are multi-page PDFs in square (1:1) format. Each page is a sw
 
 ### Carousel vs Presentation
 
-| Aspect       | Presentation            | Carousel                    |
-|--------------|-------------------------|-----------------------------|
-| Dimensions   | 16:9 (13.333" × 7.5")   | 1:1 (7.5" × 7.5")           |
-| Layouts      | `cookbook/*.py`         | `cookbook/carousels/*.py`   |
-| Output       | PPTX                    | PDF (via PPTX conversion)   |
-| Slides       | 10-50+ typical          | 5-10 optimal                |
-| Text size    | Standard                | Larger (mobile readable)    |
-| Content      | Detailed                | One idea per slide          |
+| Aspect         | Presentation              | Carousel                      |
+|----------------|---------------------------|-------------------------------|
+| Dimensions     | 16:9 (13.333" × 7.5")     | 1:1 (7.5" × 7.5")             |
+| Layouts        | `cookbook/*.py`           | `cookbook/carousels/*.py`     |
+| Output         | PPTX                      | PDF (via PPTX conversion)     |
+| Slides         | 10-50+ typical            | 5-10 optimal                  |
+| Text size      | Standard                  | Larger (mobile readable)      |
+| Content        | Detailed                  | One idea per slide            |
 
 ### Step 1: Brand Discovery
 
@@ -790,13 +790,13 @@ Glob: 01_Core/03_Skills/pptx-generator/cookbook/carousels/*.py
 
 **Available carousel layouts:**
 
-| Layout                   | Purpose                              | Best For                 |
-|--------------------------|--------------------------------------|--------------------------|
-| `hook-slide`             | Opening attention-grabber            | First slide only         |
-| `single-point-slide`     | One key point with explanation       | Body content             |
-| `numbered-point-slide`   | Numbered list item with big number   | Listicles, steps         |
-| `quote-slide`            | Quote with attribution               | Social proof, insights   |
-| `cta-slide`              | Call to action                       | Last slide only          |
+| Layout                     | Purpose                                | Best For                   |
+|----------------------------|----------------------------------------|----------------------------|
+| `hook-slide`               | Opening attention-grabber              | First slide only           |
+| `single-point-slide`       | One key point with explanation         | Body content               |
+| `numbered-point-slide`     | Numbered list item with big number     | Listicles, steps           |
+| `quote-slide`              | Quote with attribution                 | Social proof, insights     |
+| `cta-slide`                | Call to action                         | Last slide only            |
 
 Read frontmatters to understand limits and constraints for each.
 
@@ -805,11 +805,11 @@ Read frontmatters to understand limits and constraints for each.
 **Typical carousel structure (5-10 slides):**
 
 ```markdown
-| #      | Layout                           | Content                   |
-|--------|----------------------------------|---------------------------|
-| 1      | hook-slide                       | Attention-grabbing hook   |
-| 2-8    | single-point or numbered-point   | Body content              |
-| 9/10   | cta-slide                        | Call to action            |
+| #        | Layout                             | Content                     |
+|----------|------------------------------------|-----------------------------|
+| 1        | hook-slide                         | Attention-grabbing hook     |
+| 2-8      | single-point or numbered-point     | Body content                |
+| 9/10     | cta-slide                          | Call to action              |
 ```
 
 **Carousel content rules:**
@@ -959,19 +959,19 @@ When user requests a new layout type:
 
    **Required frontmatter fields (be DETAILED and SPECIFIC):**
 
-| Field            | Description                                 | Example                                                    |
-|------------------|---------------------------------------------|------------------------------------------------------------|
-| `name`           | Layout identifier (matches filename)        | `"multi-card-slide"`                                       |
-| `purpose`        | Clear one-line description                  | `"Multiple items as cards in a row, 3-5 cards"`            |
-| `best_for`       | **Detailed** array of ideal scenarios       | `["Exactly 3 related features", "Process with 3 steps"]`   |
-| `avoid_when`     | **Specific** situations with alternatives   | `["More than 3 items - use multi-card-slide instead"]`     |
-| `instructions`   | **Actionable** tips for correct usage       | `["Card titles must be SHORT: 1-2 words, max 15 chars"]`   |
+| Field              | Description                                   | Example                                                      |
+|--------------------|-----------------------------------------------|--------------------------------------------------------------|
+| `name`             | Layout identifier (matches filename)          | `"multi-card-slide"`                                         |
+| `purpose`          | Clear one-line description                    | `"Multiple items as cards in a row, 3-5 cards"`              |
+| `best_for`         | **Detailed** array of ideal scenarios         | `["Exactly 3 related features", "Process with 3 steps"]`     |
+| `avoid_when`       | **Specific** situations with alternatives     | `["More than 3 items - use multi-card-slide instead"]`       |
+| `instructions`     | **Actionable** tips for correct usage         | `["Card titles must be SHORT: 1-2 words, max 15 chars"]`     |
 
    **Optional but recommended fields:**
-| Field               | Description                 | Example                                        |
-|---------------------|-----------------------------|------------------------------------------------|
-| `max_*` / `min_*`   | Hard limits on items        | `max_cards = 3`, `min_surrounding_items = 4`   |
-| `*_max_chars`       | Character limits for text   | `card_title_max_chars = 15`                    |
+| Field                 | Description                   | Example                                          |
+|-----------------------|-------------------------------|--------------------------------------------------|
+| `max_*` / `min_*`     | Hard limits on items          | `max_cards = 3`, `min_surrounding_items = 4`     |
+| `*_max_chars`         | Character limits for text     | `card_title_max_chars = 15`                      |
 
    **Writing good frontmatter:**
 

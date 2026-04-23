@@ -41,11 +41,11 @@ For agent-native iOS apps, use iCloud Drive's Documents folder for your shared w
 
 ### Why iCloud Documents?
 
-| Approach                | Cost                    | Complexity     | Offline     | Multi-Device     |
-|-------------------------|-------------------------|----------------|-------------|------------------|
-| Custom backend + sync   | $$$                     | High           | Manual      | Yes              |
-| CloudKit database       | Free tier limits        | Medium         | Manual      | Yes              |
-| **iCloud Documents**    | Free (user's storage)   | Low            | Automatic   | Automatic        |
+| Approach                  | Cost                      | Complexity       | Offline       | Multi-Device       |
+|---------------------------|---------------------------|------------------|---------------|--------------------|
+| Custom backend + sync     | $$$                       | High             | Manual        | Yes                |
+| CloudKit database         | Free tier limits          | Medium           | Manual        | Yes                |
+| **iCloud Documents**      | Free (user's storage)     | Low              | Automatic     | Automatic          |
 
 iCloud Documents:
 - Uses user's existing iCloud storage (free 5GB, most users have more)
@@ -346,13 +346,13 @@ Mobile agents may need access to system resources. Handle permission requests gr
 
 ### Common Permissions
 
-| Resource        | iOS Permission      | Use Case                         |
-|-----------------|---------------------|----------------------------------|
-| Photo Library   | PHPhotoLibrary      | Profile generation from photos   |
-| Files           | Document picker     | Reading user documents           |
-| Camera          | AVCaptureDevice     | Scanning book covers             |
-| Location        | CLLocationManager   | Location-aware recommendations   |
-| Network         | (automatic)         | Web search, API calls            |
+| Resource          | iOS Permission        | Use Case                           |
+|-------------------|-----------------------|------------------------------------|
+| Photo Library     | PHPhotoLibrary        | Profile generation from photos     |
+| Files             | Document picker       | Reading user documents             |
+| Camera            | AVCaptureDevice       | Scanning book covers               |
+| Location          | CLLocationManager     | Location-aware recommendations     |
+| Network           | (automatic)           | Web search, API calls              |
 
 ### Permission-Aware Tools
 
@@ -806,13 +806,13 @@ class AgentOrchestrator {
 
 Understanding what runs where in a mobile agent-native app:
 
-| Component             | On-Device                               | Cloud                  |
-|-----------------------|-----------------------------------------|------------------------|
-| Orchestration         | ✅                                       |                        |
-| Tool execution        | ✅ (file ops, photo access, HealthKit)   |                        |
-| LLM calls             |                                         | ✅ (Anthropic API)      |
-| Checkpoints           | ✅ (local files)                         | Optional via iCloud    |
-| Long-running agents   | Limited by iOS                          | Possible with server   |
+| Component               | On-Device                                 | Cloud                    |
+|-------------------------|-------------------------------------------|--------------------------|
+| Orchestration           | ✅                                         |                          |
+| Tool execution          | ✅ (file ops, photo access, HealthKit)     |                          |
+| LLM calls               |                                           | ✅ (Anthropic API)        |
+| Checkpoints             | ✅ (local files)                           | Optional via iCloud      |
+| Long-running agents     | Limited by iOS                            | Possible with server     |
 
 ### Implications
 

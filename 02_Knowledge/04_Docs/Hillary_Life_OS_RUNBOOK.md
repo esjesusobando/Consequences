@@ -14,12 +14,12 @@
 
 ### Tags
 
-| Tag            | Uso                 |
-|----------------|---------------------|
-| `[trabajo]`    | Tareas laborales    |
-| `[personal]`   | Cosas personales    |
-| `[salud]`      | Salud y bienestar   |
-| `[ideas]`      | Ideas y insights    |
+| Tag              | Uso                   |
+|------------------|-----------------------|
+| `[trabajo]`      | Tareas laborales      |
+| `[personal]`     | Cosas personales      |
+| `[salud]`        | Salud y bienestar     |
+| `[ideas]`        | Ideas y insights      |
 
 ### Output Esperado
 
@@ -84,11 +84,11 @@ reunión con cliente 3pm
 
 ### Tipos de Logging
 
-| Tipo       | Trigger            | Descripción          |
-|------------|--------------------|----------------------|
-| Activity   | "Working on X"     | Estado de tarea      |
-| Energy     | "Energy is 4/5"    | Nivel de energía     |
-| Switch     | "Switching to Y"   | Cambio de contexto   |
+| Tipo         | Trigger              | Descripción            |
+|--------------|----------------------|------------------------|
+| Activity     | "Working on X"       | Estado de tarea        |
+| Energy       | "Energy is 4/5"      | Nivel de energía       |
+| Switch       | "Switching to Y"     | Cambio de contexto     |
 
 ### Output Esperado
 
@@ -156,9 +156,9 @@ privacy_level: strict
 ```markdown
 # Pattern Report
 
-| Pattern         | Frecuencia     | Confidence     | Acción          |
-|-----------------|----------------|----------------|-----------------|
-| daily-standup   | 30/30          | 92%            | Generar skill   |
+| Pattern           | Frecuencia       | Confidence       | Acción            |
+|-------------------|------------------|------------------|-------------------|
+| daily-standup     | 30/30            | 92%              | Generar skill     |
 ```
 
 ---
@@ -177,6 +177,6 @@ Expected: `Average Score: 100.0%`
 
 ## Changelog
 
-| Fecha        | Cambio                 |
-|--------------|------------------------|
-| 2026-03-31   | Initial runbook v1.0   |
+| Fecha          | Cambio                   |
+|----------------|--------------------------|
+| 2026-03-31     | Initial runbook v1.0     |

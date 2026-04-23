@@ -319,28 +319,28 @@ Real examples from actual content:
 
 ## What Cole Doesn't Sound Like
 
-| Avoid                       | Why                                          |
-|-----------------------------|----------------------------------------------|
-| Hype bro                    | Bullish but grounded - no empty excitement   |
-| Corporate speaker           | Talks like a developer, not a marketer       |
-| Overpromiser                | Admits limitations, shows iterations         |
-| Doom and gloom              | Focuses on possibilities, not fears          |
-| Condescending explainer     | Assumes intelligence, teaches with respect   |
-| Hedge-everything academic   | Takes positions and backs them up            |
+| Avoid                         | Why                                            |
+|-------------------------------|------------------------------------------------|
+| Hype bro                      | Bullish but grounded - no empty excitement     |
+| Corporate speaker             | Talks like a developer, not a marketer         |
+| Overpromiser                  | Admits limitations, shows iterations           |
+| Doom and gloom                | Focuses on possibilities, not fears            |
+| Condescending explainer       | Assumes intelligence, teaches with respect     |
+| Hedge-everything academic     | Takes positions and backs them up              |
 
 ---
 
 ## Cole vs Generic AI Creators
 
-| Cole Medin                          | Generic AI Creators                  |
-|-------------------------------------|--------------------------------------|
-| Admits limitations openly           | Overpromises capabilities            |
-| Shows iterations/versions           | Only shows final product             |
-| "Best tool for the job" mentality   | Pushes one solution for everything   |
-| Balances code + no-code             | Usually one or the other             |
-| Community-driven development        | Solo creator approach                |
-| Practical, immediately usable       | Theoretical, abstract                |
-| Humble about complexity             | Oversimplifies                       |
+| Cole Medin                            | Generic AI Creators                    |
+|---------------------------------------|----------------------------------------|
+| Admits limitations openly             | Overpromises capabilities              |
+| Shows iterations/versions             | Only shows final product               |
+| "Best tool for the job" mentality     | Pushes one solution for everything     |
+| Balances code + no-code               | Usually one or the other               |
+| Community-driven development          | Solo creator approach                  |
+| Practical, immediately usable         | Theoretical, abstract                  |
+| Humble about complexity               | Oversimplifies                         |
 
 ---
 
@@ -445,11 +445,11 @@ If AI assists with writing, catch and fix these patterns:
 
 When someone consumes Cole's content, they should feel:
 
-| Beginners                           | Experienced                               |
-|-------------------------------------|-------------------------------------------|
-| "This is actually doable"           | "Finally, someone who gets it"            |
-| "I know exactly what to focus on"   | "I can respect this approach"             |
-| "I'm excited to try this"           | "This confirms what I've been thinking"   |
+| Beginners                             | Experienced                                 |
+|---------------------------------------|---------------------------------------------|
+| "This is actually doable"             | "Finally, someone who gets it"              |
+| "I know exactly what to focus on"     | "I can respect this approach"               |
+| "I'm excited to try this"             | "This confirms what I've been thinking"     |
 
 ---
 
@@ -468,17 +468,17 @@ Before posting, ask:
 
 ## Quick Reference
 
-| Always                                    | Never                               |
-|-------------------------------------------|-------------------------------------|
-| Use "super", "honestly", "so" naturally   | Force vocabulary that doesn't fit   |
-| Be direct and confident                   | Hedge with qualifiers               |
-| Include specific numbers                  | Make vague claims                   |
-| Say what NOT to focus on                  | Only give the "to-do" list          |
-| Show iterations and admit limitations     | Only show polished results          |
-| Back claims with experience               | Cite theory without practice        |
-| Keep it practical                         | Over-intellectualize                |
-| Use "cuz", contractions, informal tone    | Sound corporate or stiff            |
-| Address hype honestly                     | Be purely negative or dismissive    |
+| Always                                      | Never                                 |
+|---------------------------------------------|---------------------------------------|
+| Use "super", "honestly", "so" naturally     | Force vocabulary that doesn't fit     |
+| Be direct and confident                     | Hedge with qualifiers                 |
+| Include specific numbers                    | Make vague claims                     |
+| Say what NOT to focus on                    | Only give the "to-do" list            |
+| Show iterations and admit limitations       | Only show polished results            |
+| Back claims with experience                 | Cite theory without practice          |
+| Keep it practical                           | Over-intellectualize                  |
+| Use "cuz", contractions, informal tone      | Sound corporate or stiff              |
+| Address hype honestly                       | Be purely negative or dismissive      |
 
 ---
 

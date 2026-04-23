@@ -277,14 +277,14 @@ Every flag in a `RED_PATTERNS` regex must have a corresponding entry in `GLOBAL_
 
 DCG is a Rust-based security hook with 49+ modular security packs that classify destructive commands. Its pack-based architecture maps well to the classifier's rule sections:
 
-| DCG Pack             | Classifier Section                                                 |
-|----------------------|--------------------------------------------------------------------|
-| `core/filesystem`    | RED_PATTERNS (rm, find -delete, chmod, chown)                      |
-| `core/git`           | RED_PATTERNS (force push, reset --hard, clean -f, filter-branch)   |
-| `strict_git`         | Additional git patterns (rebase, amend, worktree remove)           |
-| `package_managers`   | RED_PATTERNS (publish, unpublish, uninstall)                       |
-| `system`             | RED_PATTERNS (sudo, reboot, kill -9, dd, mkfs)                     |
-| `containers`         | RED_PATTERNS (--privileged, system prune, volume rm)               |
+| DCG Pack               | Classifier Section                                                   |
+|------------------------|----------------------------------------------------------------------|
+| `core/filesystem`      | RED_PATTERNS (rm, find -delete, chmod, chown)                        |
+| `core/git`             | RED_PATTERNS (force push, reset --hard, clean -f, filter-branch)     |
+| `strict_git`           | Additional git patterns (rebase, amend, worktree remove)             |
+| `package_managers`     | RED_PATTERNS (publish, unpublish, uninstall)                         |
+| `system`               | RED_PATTERNS (sudo, reboot, kill -9, dd, mkfs)                       |
+| `containers`           | RED_PATTERNS (--privileged, system prune, volume rm)                 |
 
 DCG's rule packs are a goldmine for validating classifier completeness. When adding new command categories or modifying rules, cross-reference the corresponding DCG pack. Key packs not yet fully cross-referenced: `database`, `kubernetes`, `cloud`, `infrastructure`, `secrets`.
 

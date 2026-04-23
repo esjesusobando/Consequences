@@ -31,11 +31,11 @@ When the change is archived, these deltas merge into the main specs automaticall
 
 Specs use standardized language for requirement strength:
 
-| Keyword          | Meaning                           |
-|------------------|-----------------------------------|
-| **MUST / SHALL** | Absolute requirement              |
-| **SHOULD**       | Recommended, exceptions may exist |
-| **MAY**          | Optional                          |
+| Keyword            | Meaning                             |
+|--------------------|-------------------------------------|
+| **MUST / SHALL**   | Absolute requirement                |
+| **SHOULD**         | Recommended, exceptions may exist   |
+| **MAY**            | Optional                            |
 
 ## Archive Cycle
 

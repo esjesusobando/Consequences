@@ -35,11 +35,11 @@ The Quick Capture skill transforms free-form user input into persistent markdown
 
 ### Components
 
-| Component     | Responsibility                                     | Public API                                   |
-|---------------|----------------------------------------------------|----------------------------------------------|
-| `Parser`      | Extract tags, clean content, detect markers        | `parse(input): {content, tags, markers}`     |
-| `Processor`   | Detect type (task/insight), slugify, validate      | `process(parsed): {slug, type, validated}`   |
-| `Saver`       | Generate filename, write file, handle collisions   | `save(processed, content): filePath`         |
+| Component       | Responsibility                                       | Public API                                     |
+|-----------------|------------------------------------------------------|------------------------------------------------|
+| `Parser`        | Extract tags, clean content, detect markers          | `parse(input): {content, tags, markers}`       |
+| `Processor`     | Detect type (task/insight), slugify, validate        | `process(parsed): {slug, type, validated}`     |
+| `Saver`         | Generate filename, write file, handle collisions     | `save(processed, content): filePath`           |
 
 ---
 
@@ -149,12 +149,12 @@ tags: []
 ---
 ```
 
-| Field       | Default                      | Source                                  |
-|-------------|------------------------------|-----------------------------------------|
-| `created`   | Current ISO 8601 timestamp   | System time at execution                |
-| `source`    | `text`                       | Input channel (text, voice, shortcut)   |
-| `type`      | `task`                       | Detected from content analysis          |
-| `tags`      | `[]`                         | Extracted from `[tag]` patterns         |
+| Field         | Default                        | Source                                    |
+|---------------|--------------------------------|-------------------------------------------|
+| `created`     | Current ISO 8601 timestamp     | System time at execution                  |
+| `source`      | `text`                         | Input channel (text, voice, shortcut)     |
+| `type`        | `task`                         | Detected from content analysis            |
+| `tags`        | `[]`                           | Extracted from `[tag]` patterns           |
 
 **Note**: `source` can be overridden by invoking context (voice input sets `source: voice`, keyboard shortcut sets `source: shortcut`). Default is `text` when invoked directly.
 
@@ -213,12 +213,12 @@ Pure file system operations only:
 
 ### Error Handling
 
-| Scenario                  | Behavior                         |
-|---------------------------|----------------------------------|
-| Inbox directory missing   | Create it automatically          |
-| Write permission denied   | Error message, no file created   |
-| Invalid YAML in body      | Wrap in code block or escape     |
-| Empty input               | Error: "Captura vacía"           |
+| Scenario                    | Behavior                           |
+|-----------------------------|------------------------------------|
+| Inbox directory missing     | Create it automatically            |
+| Write permission denied     | Error message, no file created     |
+| Invalid YAML in body        | Wrap in code block or escape       |
+| Empty input                 | Error: "Captura vacía"             |
 
 ### Logging
 
@@ -235,6 +235,6 @@ Minimal logging — only errors. No success messages (anti-system philosophy).
 
 ## Changelog
 
-| Date         | Change           | Author     |
-|--------------|------------------|------------|
-| 2026-03-31   | Initial design   | Hillary    |
+| Date           | Change             | Author       |
+|----------------|--------------------|--------------|
+| 2026-03-31     | Initial design     | Hillary      |

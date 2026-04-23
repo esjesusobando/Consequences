@@ -41,14 +41,14 @@ When the input begins with `Scope:` followed by a comma-separated list, run only
 
 Valid scopes and the phases they control:
 
-| Scope            | What runs                                                                                                                   | Output section                |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------|-------------------------------|
-| `technology`     | Phase 0 (full): manifest detection, monorepo scan, infrastructure, API surface, module structure                            | Technology & Infrastructure   |
-| `architecture`   | Architecture and Structure Analysis: key documentation files, directory mapping, architectural patterns, design decisions   | Architecture & Structure      |
-| `patterns`       | Codebase Pattern Search: implementation patterns, naming conventions, code organization                                     | Implementation Patterns       |
-| `conventions`    | Documentation and Guidelines Review: contribution guidelines, coding standards, review processes                            | Documentation Insights        |
-| `issues`         | GitHub Issue Pattern Analysis: formatting patterns, label conventions, issue structures                                     | Issue Conventions             |
-| `templates`      | Template Discovery: issue templates, PR templates, RFC templates                                                            | Templates Found               |
+| Scope              | What runs                                                                                                                     | Output section                  |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| `technology`       | Phase 0 (full): manifest detection, monorepo scan, infrastructure, API surface, module structure                              | Technology & Infrastructure     |
+| `architecture`     | Architecture and Structure Analysis: key documentation files, directory mapping, architectural patterns, design decisions     | Architecture & Structure        |
+| `patterns`         | Codebase Pattern Search: implementation patterns, naming conventions, code organization                                       | Implementation Patterns         |
+| `conventions`      | Documentation and Guidelines Review: contribution guidelines, coding standards, review processes                              | Documentation Insights          |
+| `issues`           | GitHub Issue Pattern Analysis: formatting patterns, label conventions, issue structures                                       | Issue Conventions               |
+| `templates`        | Template Discovery: issue templates, PR templates, RFC templates                                                              | Templates Found                 |
 
 **Scoping rules:**
 
@@ -76,38 +76,38 @@ When reading manifests, extract what matters for planning -- runtime/language ve
 
 Reference -- manifest-to-ecosystem mapping:
 
-| File                                              | Ecosystem                                                  |
-|---------------------------------------------------|------------------------------------------------------------|
-| `package.json`                                    | Node.js / JavaScript / TypeScript                          |
-| `tsconfig.json`                                   | TypeScript (confirms TS usage, captures compiler config)   |
-| `go.mod`                                          | Go                                                         |
-| `Cargo.toml`                                      | Rust                                                       |
-| `Gemfile`                                         | Ruby                                                       |
-| `requirements.txt`, `pyproject.toml`, `Pipfile`   | Python                                                     |
-| `Podfile`                                         | iOS / CocoaPods                                            |
-| `build.gradle`, `build.gradle.kts`                | JVM / Android                                              |
-| `pom.xml`                                         | Java / Maven                                               |
-| `mix.exs`                                         | Elixir                                                     |
-| `composer.json`                                   | PHP                                                        |
-| `pubspec.yaml`                                    | Dart / Flutter                                             |
-| `CMakeLists.txt`, `Makefile`                      | C / C++                                                    |
-| `Package.swift`                                   | Swift                                                      |
-| `*.csproj`, `*.sln`                               | C# / .NET                                                  |
-| `deno.json`, `deno.jsonc`                         | Deno                                                       |
+| File                                                | Ecosystem                                                    |
+|-----------------------------------------------------|--------------------------------------------------------------|
+| `package.json`                                      | Node.js / JavaScript / TypeScript                            |
+| `tsconfig.json`                                     | TypeScript (confirms TS usage, captures compiler config)     |
+| `go.mod`                                            | Go                                                           |
+| `Cargo.toml`                                        | Rust                                                         |
+| `Gemfile`                                           | Ruby                                                         |
+| `requirements.txt`, `pyproject.toml`, `Pipfile`     | Python                                                       |
+| `Podfile`                                           | iOS / CocoaPods                                              |
+| `build.gradle`, `build.gradle.kts`                  | JVM / Android                                                |
+| `pom.xml`                                           | Java / Maven                                                 |
+| `mix.exs`                                           | Elixir                                                       |
+| `composer.json`                                     | PHP                                                          |
+| `pubspec.yaml`                                      | Dart / Flutter                                               |
+| `CMakeLists.txt`, `Makefile`                        | C / C++                                                      |
+| `Package.swift`                                     | Swift                                                        |
+| `*.csproj`, `*.sln`                                 | C# / .NET                                                    |
+| `deno.json`, `deno.jsonc`                           | Deno                                                         |
 
 **0.1b Monorepo Detection**
 
 Check for monorepo signals in manifests already read in 0.1 and directories already visible from the root listing. If `pnpm-workspace.yaml`, `nx.json`, or `lerna.json` appeared in the root listing but were not read in 0.1, read them now -- they contain workspace paths needed for scoping:
 
-| Signal                                                                                                                                                | Indicator                   |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| `workspaces` field in root `package.json`                                                                                                             | npm/Yarn workspaces         |
-| `pnpm-workspace.yaml`                                                                                                                                 | pnpm workspaces             |
-| `nx.json`                                                                                                                                             | Nx monorepo                 |
-| `lerna.json`                                                                                                                                          | Lerna monorepo              |
-| `[workspace.members]` in root `Cargo.toml`                                                                                                            | Cargo workspace             |
-| `go.mod` files one level deep (`*/go.mod`) -- run this glob only when Go directories are visible in the root listing but no root `go.mod` was found   | Go multi-module             |
-| `apps/`, `packages/`, `services/` directories containing their own manifests                                                                          | Convention-based monorepo   |
+| Signal                                                                                                                                                  | Indicator                     |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
+| `workspaces` field in root `package.json`                                                                                                               | npm/Yarn workspaces           |
+| `pnpm-workspace.yaml`                                                                                                                                   | pnpm workspaces               |
+| `nx.json`                                                                                                                                               | Nx monorepo                   |
+| `lerna.json`                                                                                                                                            | Lerna monorepo                |
+| `[workspace.members]` in root `Cargo.toml`                                                                                                              | Cargo workspace               |
+| `go.mod` files one level deep (`*/go.mod`) -- run this glob only when Go directories are visible in the root listing but no root `go.mod` was found     | Go multi-module               |
+| `apps/`, `packages/`, `services/` directories containing their own manifests                                                                            | Convention-based monorepo     |
 
 If monorepo signals are detected:
 
@@ -130,31 +130,31 @@ For categories that remain relevant, use batch globs to check in parallel.
 
 Deployment architecture:
 
-| File / Pattern                                             | What it reveals                   |
-|------------------------------------------------------------|-----------------------------------|
-| `docker-compose.yml`, `Dockerfile`, `Procfile`             | Containerization, process types   |
-| `kubernetes/`, `k8s/`, YAML with `kind: Deployment`        | Orchestration                     |
-| `serverless.yml`, `sam-template.yaml`, `app.yaml`          | Serverless architecture           |
-| `terraform/`, `*.tf`, `pulumi/`                            | Infrastructure as code            |
-| `fly.toml`, `vercel.json`, `netlify.toml`, `render.yaml`   | Platform deployment               |
+| File / Pattern                                               | What it reveals                     |
+|--------------------------------------------------------------|-------------------------------------|
+| `docker-compose.yml`, `Dockerfile`, `Procfile`               | Containerization, process types     |
+| `kubernetes/`, `k8s/`, YAML with `kind: Deployment`          | Orchestration                       |
+| `serverless.yml`, `sam-template.yaml`, `app.yaml`            | Serverless architecture             |
+| `terraform/`, `*.tf`, `pulumi/`                              | Infrastructure as code              |
+| `fly.toml`, `vercel.json`, `netlify.toml`, `render.yaml`     | Platform deployment                 |
 
 API surface (skip if no web framework or server dependency in 0.1):
 
-| File / Pattern                                                                              | What it reveals         |
-|---------------------------------------------------------------------------------------------|-------------------------|
-| `*.proto`                                                                                   | gRPC services           |
-| `*.graphql`, `*.gql`                                                                        | GraphQL API             |
-| `openapi.yaml`, `swagger.json`                                                              | REST API specs          |
-| Route / controller directories (`routes/`, `app/controllers/`, `src/routes/`, `src/api/`)   | HTTP routing patterns   |
+| File / Pattern                                                                                | What it reveals           |
+|-----------------------------------------------------------------------------------------------|---------------------------|
+| `*.proto`                                                                                     | gRPC services             |
+| `*.graphql`, `*.gql`                                                                          | GraphQL API               |
+| `openapi.yaml`, `swagger.json`                                                                | REST API specs            |
+| Route / controller directories (`routes/`, `app/controllers/`, `src/routes/`, `src/api/`)     | HTTP routing patterns     |
 
 Data layer (skip if no database library, ORM, or migration tool in 0.1):
 
-| File / Pattern                                                                | What it reveals          |
-|-------------------------------------------------------------------------------|--------------------------|
-| Migration directories (`db/migrate/`, `migrations/`, `alembic/`, `prisma/`)   | Database structure       |
-| ORM model directories (`app/models/`, `src/models/`, `models/`)               | Data model patterns      |
-| Schema files (`prisma/schema.prisma`, `db/schema.rb`, `schema.sql`)           | Data model definitions   |
-| Queue / event config (Redis, Kafka, SQS references)                           | Async patterns           |
+| File / Pattern                                                                  | What it reveals            |
+|---------------------------------------------------------------------------------|----------------------------|
+| Migration directories (`db/migrate/`, `migrations/`, `alembic/`, `prisma/`)     | Database structure         |
+| ORM model directories (`app/models/`, `src/models/`, `models/`)                 | Data model patterns        |
+| Schema files (`prisma/schema.prisma`, `db/schema.rb`, `schema.sql`)             | Data model definitions     |
+| Queue / event config (Redis, Kafka, SQS references)                             | Async patterns             |
 
 **0.3 Module Structure -- Internal Boundaries**
 

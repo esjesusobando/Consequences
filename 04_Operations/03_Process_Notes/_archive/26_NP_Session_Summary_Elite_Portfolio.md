@@ -26,19 +26,19 @@ Building a premium personal portfolio website called "Elite Portfolio" for an el
 
 ## Acciones Realizadas
 
-| Acción                  | Archivos                                        | Notas                            |
-|-------------------------|-------------------------------------------------|----------------------------------|
-| Crear proyecto          | 07_Projects/01_Projects_Lab/08_Elite_Portfolio/ | Nuevo folder                     |
-| Crear contexto          | 07_Projects/00_Context/08_Elite_Portfolio.md    | Documentación                    |
-| Configurar package.json | package.json                                    | Dependencias                     |
-| Configurar Tailwind     | tailwind.config.ts                              | Sistema Zinc/Emerald             |
-| Crear layout            | src/app/layout.tsx                              | Geist/Outfit fonts               |
-| Crear CSS               | src/app/globals.css                             | Premium utilities, glassmorphism |
-| Crear utils             | src/lib/utils.ts                                | cn() helper                      |
-| Crear animaciones       | src/lib/animations.ts                           | Reveal, Stagger components       |
-| Crear Hero              | src/components/hero.tsx                         | Premium animations               |
-| Crear homepage          | src/app/page.tsx                                | Homepage                         |
-| Aplicar taste-skill     | layout.tsx, globals.css, tailwind.config.ts     | Diseño Zinc/Emerald, Geist       |
+| Acción                    | Archivos                                          | Notas                              |
+|---------------------------|---------------------------------------------------|------------------------------------|
+| Crear proyecto            | 07_Projects/01_Projects_Lab/08_Elite_Portfolio/   | Nuevo folder                       |
+| Crear contexto            | 07_Projects/00_Context/08_Elite_Portfolio.md      | Documentación                      |
+| Configurar package.json   | package.json                                      | Dependencias                       |
+| Configurar Tailwind       | tailwind.config.ts                                | Sistema Zinc/Emerald               |
+| Crear layout              | src/app/layout.tsx                                | Geist/Outfit fonts                 |
+| Crear CSS                 | src/app/globals.css                               | Premium utilities, glassmorphism   |
+| Crear utils               | src/lib/utils.ts                                  | cn() helper                        |
+| Crear animaciones         | src/lib/animations.ts                             | Reveal, Stagger components         |
+| Crear Hero                | src/components/hero.tsx                           | Premium animations                 |
+| Crear homepage            | src/app/page.tsx                                  | Homepage                           |
+| Aplicar taste-skill       | layout.tsx, globals.css, tailwind.config.ts       | Diseño Zinc/Emerald, Geist         |
 
 ---
 

@@ -253,13 +253,13 @@ Crea "mi-app" con auth, database y testing
 
 ## Ventajas vs Script Tradicional
 
-| Script Tradicional       | Advanced Skill              |
-|--------------------------|-----------------------------|
-| Una ejecución grande     | Múltiples tareas pequeñas   |
-| Contexto único           | Contexto fresco por tarea   |
-| Sin tracking             | Estado consultable          |
-| Coordinación implícita   | DAG explícito               |
-| Difícil parallelizar     | Waves naturales             |
+| Script Tradicional         | Advanced Skill                |
+|----------------------------|-------------------------------|
+| Una ejecución grande       | Múltiples tareas pequeñas     |
+| Contexto único             | Contexto fresco por tarea     |
+| Sin tracking               | Estado consultable            |
+| Coordinación implícita     | DAG explícito                 |
+| Difícil parallelizar       | Waves naturales               |
 
 ## Comandos Útiles
 

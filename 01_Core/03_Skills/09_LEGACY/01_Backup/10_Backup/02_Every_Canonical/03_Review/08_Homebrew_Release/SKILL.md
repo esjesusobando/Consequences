@@ -18,10 +18,10 @@ metadata:
 
 ## Supported Projects
 
-| Project          | Repo                         | Formula               | Tag Format                      | Type                           |
-|------------------|------------------------------|-----------------------|---------------------------------|--------------------------------|
-| GGA              | `gentleman-guardian-angel`   | `gga.rb`              | `V{version}` (e.g., `V2.6.2`)   | Tarball (builds from source)   |
-| Gentleman.Dots   | `Gentleman.Dots`             | `gentleman-dots.rb`   | `v{version}` (e.g., `v2.5.1`)   | Pre-built binaries             |
+| Project            | Repo                           | Formula                 | Tag Format                        | Type                             |
+|--------------------|--------------------------------|-------------------------|-----------------------------------|----------------------------------|
+| GGA                | `gentleman-guardian-angel`     | `gga.rb`                | `V{version}` (e.g., `V2.6.2`)     | Tarball (builds from source)     |
+| Gentleman.Dots     | `Gentleman.Dots`               | `gentleman-dots.rb`     | `v{version}` (e.g., `v2.5.1`)     | Pre-built binaries               |
 
 ---
 

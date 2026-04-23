@@ -74,12 +74,12 @@ The example is intentionally lean to avoid token bloat in always-loaded system p
 
 Both configs include the full 10-agent setup: `sdd-orchestrator` + 9 phase sub-agents, with `delegate` tool support for async background delegation. The only difference is their intended use:
 
-|                     | `opencode.single.json`        | `opencode.multi.json`                       |
-|---------------------|-------------------------------|---------------------------------------------|
-| **Use case**        | Ready to use as-is            | Template for per-agent model customization  |
-| **Agent structure** | Identical (10 agents)         | Identical (10 agents)                       |
-| **Models**          | All inherit the default model | Add `"model"` fields to customize per phase |
-| **delegate tool**   | ✅ Included                    | ✅ Included                                  |
+|                       | `opencode.single.json`          | `opencode.multi.json`                         |
+|-----------------------|---------------------------------|-----------------------------------------------|
+| **Use case**          | Ready to use as-is              | Template for per-agent model customization    |
+| **Agent structure**   | Identical (10 agents)           | Identical (10 agents)                         |
+| **Models**            | All inherit the default model   | Add `"model"` fields to customize per phase   |
+| **delegate tool**     | ✅ Included                      | ✅ Included                                    |
 
 ```bash
 ./scripts/setup.sh --agent opencode                        # Interactive (asks which mode)

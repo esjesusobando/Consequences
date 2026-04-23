@@ -31,11 +31,11 @@ Add to Knowledge folder?
 
 Use AskUserQuestion with these options:
 
-| Option                        | Description                                                 |
-|-------------------------------|-------------------------------------------------------------|
-| Sync all                      | Add all new meetings to Knowledge/Transcripts               |
-| Select specific               | Let user choose which meetings to sync                      |
-| Skip for now                  | Continue without syncing                                    |
+| Option                          | Description                                                   |
+|---------------------------------|---------------------------------------------------------------|
+| Sync all                        | Add all new meetings to Knowledge/Transcripts                 |
+| Select specific                 | Let user choose which meetings to sync                        |
+| Skip for now                    | Continue without syncing                                      |
 
 ### Step 4: Sync Selected Meetings
 

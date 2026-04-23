@@ -41,19 +41,19 @@ Use this skill when:
 
 ### Allowed Types
 
-| Type       | Purpose                               |
-|------------|---------------------------------------|
-| `feat`     | New feature                           |
-| `fix`      | Bug fix                               |
-| `docs`     | Documentation only                    |
-| `refactor` | Code refactoring (no behavior change) |
-| `chore`    | Maintenance, dependencies             |
-| `style`    | Formatting, whitespace                |
-| `perf`     | Performance improvement               |
-| `test`     | Adding or fixing tests                |
-| `build`    | Build system changes                  |
-| `ci`       | CI/CD pipeline changes                |
-| `revert`   | Revert a previous commit              |
+| Type         | Purpose                                 |
+|--------------|-----------------------------------------|
+| `feat`       | New feature                             |
+| `fix`        | Bug fix                                 |
+| `docs`       | Documentation only                      |
+| `refactor`   | Code refactoring (no behavior change)   |
+| `chore`      | Maintenance, dependencies               |
+| `style`      | Formatting, whitespace                  |
+| `perf`       | Performance improvement                 |
+| `test`       | Adding or fixing tests                  |
+| `build`      | Build system changes                    |
+| `ci`         | CI/CD pipeline changes                  |
+| `revert`     | Revert a previous commit                |
 
 ### Rules
 - Type MUST be lowercase, one of the listed values

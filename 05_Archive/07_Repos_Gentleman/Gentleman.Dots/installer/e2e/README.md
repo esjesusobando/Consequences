@@ -41,37 +41,37 @@ End-to-end tests that verify the installer works across different Linux environm
 
 ## Test Environments
 
-| Environment   | Shell          | Package Manager   | Purpose                     |
-|---------------|----------------|-------------------|-----------------------------|
-| Alpine        | ash (sh)       | apk               | BusyBox shell compatibility |
-| Debian        | sh (dash)      | apt               | POSIX sh fallback           |
-| Ubuntu        | bash           | apt               | Full E2E with backup tests  |
-| Fedora        | bash           | dnf               | RPM-based distro support    |
-| Termux        | sh (simulated) | pkg (simulated)   | Android/Termux environment  |
+| Environment     | Shell            | Package Manager     | Purpose                       |
+|-----------------|------------------|---------------------|-------------------------------|
+| Alpine          | ash (sh)         | apk                 | BusyBox shell compatibility   |
+| Debian          | sh (dash)        | apt                 | POSIX sh fallback             |
+| Ubuntu          | bash             | apt                 | Full E2E with backup tests    |
+| Fedora          | bash             | dnf                 | RPM-based distro support      |
+| Termux          | sh (simulated)   | pkg (simulated)     | Android/Termux environment    |
 
 ## Requirements
 
-| Requirement   | Version   |
-|---------------|-----------|
-| Docker        | Latest    |
-| Go            | 1.21+     |
+| Requirement     | Version     |
+|-----------------|-------------|
+| Docker          | Latest      |
+| Go              | 1.21+       |
 
 ## Test Scripts
 
-| File                 | Description                                |
-|----------------------|--------------------------------------------|
-| `docker-test.sh`     | Main test runner (interactive + CLI modes) |
-| `test-termux.sh`     | Standalone Termux compatibility test       |
-| `e2e_test.sh`        | Test cases run inside containers           |
-| `e2e_test_termux.sh` | Termux-specific test cases                 |
+| File                   | Description                                  |
+|------------------------|----------------------------------------------|
+| `docker-test.sh`       | Main test runner (interactive + CLI modes)   |
+| `test-termux.sh`       | Standalone Termux compatibility test         |
+| `e2e_test.sh`          | Test cases run inside containers             |
+| `e2e_test_termux.sh`   | Termux-specific test cases                   |
 
 ### Environment Variables
 
-| Variable              | Description                          |
-|-----------------------|--------------------------------------|
-| `RUN_FULL_E2E=1`      | Run installation tests (Ubuntu only) |
-| `RUN_BACKUP_TESTS=1`  | Run backup system tests              |
-| `GENTLEMAN_VERBOSE=1` | Enable verbose output                |
+| Variable                | Description                            |
+|-------------------------|----------------------------------------|
+| `RUN_FULL_E2E=1`        | Run installation tests (Ubuntu only)   |
+| `RUN_BACKUP_TESTS=1`    | Run backup system tests                |
+| `GENTLEMAN_VERBOSE=1`   | Enable verbose output                  |
 
 ## Adding New Tests
 

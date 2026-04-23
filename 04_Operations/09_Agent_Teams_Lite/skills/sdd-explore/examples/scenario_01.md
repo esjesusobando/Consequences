@@ -36,11 +36,11 @@ Usuario: "Quiero agregar analytics a mi dashboard de React. Cómo lo harías?"
 
 ## Opciones
 
-| Opción     | Pros            | Contras          | Tiempo      |
-|------------|-----------------|------------------|-------------|
-| GA4        | Free, easy      | Limited custom   | 2 días      |
-| Mixpanel   | Powerful        | Paid             | 5 días      |
-| Custom     | Total control   | Mucho tiempo     | 2 semanas   |
+| Opción       | Pros              | Contras            | Tiempo        |
+|--------------|-------------------|--------------------|---------------|
+| GA4          | Free, easy        | Limited custom     | 2 días        |
+| Mixpanel     | Powerful          | Paid               | 5 días        |
+| Custom       | Total control     | Mucho tiempo       | 2 semanas     |
 
 ## Recomendación
 GA4 como MVP, evolucionar a Mixpanel si se necesita más.

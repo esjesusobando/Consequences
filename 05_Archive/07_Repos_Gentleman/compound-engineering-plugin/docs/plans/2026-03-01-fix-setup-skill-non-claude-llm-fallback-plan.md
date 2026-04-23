@@ -40,13 +40,13 @@ The `setup` skill uses `AskUserQuestion` at 5 decision points. On non-Claude pla
 
 `plugins/compound-engineering/skills/setup/SKILL.md` has 5 `AskUserQuestion` blocks:
 
-| Line     | Decision Point                                       |
-|----------|------------------------------------------------------|
-| 13       | Check existing config: Reconfigure / View / Cancel   |
-| 44       | Stack detection: Auto-configure / Customize          |
-| 67       | Stack override (multi-option)                        |
-| 85       | Focus areas (multiSelect)                            |
-| 104      | Review depth: Thorough / Fast / Comprehensive        |
+| Line       | Decision Point                                         |
+|------------|--------------------------------------------------------|
+| 13         | Check existing config: Reconfigure / View / Cancel     |
+| 44         | Stack detection: Auto-configure / Customize            |
+| 67         | Stack override (multi-option)                          |
+| 85         | Focus areas (multiSelect)                              |
+| 104        | Review depth: Thorough / Fast / Comprehensive          |
 
 `plugins/compound-engineering/skills/create-agent-skills/workflows/create-new-skill.md` lines 22 and 45 also use `AskUserQuestion`.
 

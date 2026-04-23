@@ -26,11 +26,11 @@
 
 Windsurf provides three main customization mechanisms:
 
-| Feature         | Purpose                                              | Invocation                                                   |
-|-----------------|------------------------------------------------------|--------------------------------------------------------------|
-| **Skills**      | Complex multi-step tasks with supporting resources   | Automatic (progressive disclosure) or `@skill-name`          |
-| **Workflows**   | Reusable step-by-step procedures                     | Slash command `/workflow-name`                               |
-| **Rules**       | Behavioral guidelines and preferences                | Trigger-based (always-on, glob, manual, or model decision)   |
+| Feature           | Purpose                                                | Invocation                                                     |
+|-------------------|--------------------------------------------------------|----------------------------------------------------------------|
+| **Skills**        | Complex multi-step tasks with supporting resources     | Automatic (progressive disclosure) or `@skill-name`            |
+| **Workflows**     | Reusable step-by-step procedures                       | Slash command `/workflow-name`                                 |
+| **Rules**         | Behavioral guidelines and preferences                  | Trigger-based (always-on, glob, manual, or model decision)     |
 
 All three support both **workspace-level** (project-specific) and **global** (user-wide) scopes.
 
@@ -40,11 +40,11 @@ All three support both **workspace-level** (project-specific) and **global** (us
 
 ### Global Configuration Root
 
-| OS            | Path                                       |
-|---------------|--------------------------------------------|
-| **Windows**   | `C:\Users\{USERNAME}\.codeium\windsurf\`   |
-| **macOS**     | `~/.codeium/windsurf/`                     |
-| **Linux**     | `~/.codeium/windsurf/`                     |
+| OS              | Path                                         |
+|-----------------|----------------------------------------------|
+| **Windows**     | `C:\Users\{USERNAME}\.codeium\windsurf\`     |
+| **macOS**       | `~/.codeium/windsurf/`                       |
+| **Linux**       | `~/.codeium/windsurf/`                       |
 
 ### Directory Layout
 
@@ -72,10 +72,10 @@ Skills bundle instructions with supporting resources for complex, multi-step tas
 
 ### Storage Locations
 
-| Scope           | Location                                             |
-|-----------------|------------------------------------------------------|
-| **Global**      | `~/.codeium/windsurf/skills/{skill-name}/SKILL.md`   |
-| **Workspace**   | `.windsurf/skills/{skill-name}/SKILL.md`             |
+| Scope             | Location                                               |
+|-------------------|--------------------------------------------------------|
+| **Global**        | `~/.codeium/windsurf/skills/{skill-name}/SKILL.md`     |
+| **Workspace**     | `.windsurf/skills/{skill-name}/SKILL.md`               |
 
 ### Directory Structure
 
@@ -113,10 +113,10 @@ Reference supporting files using relative paths:
 
 ### Required YAML Frontmatter Fields
 
-| Field           | Required     | Description                                                                                |
-|-----------------|--------------|--------------------------------------------------------------------------------------------|
-| `name`          | **Yes**      | Unique identifier (lowercase letters, numbers, hyphens only). Must match directory name.   |
-| `description`   | **Yes**      | Explains what the skill does and when to use it. Critical for automatic invocation.        |
+| Field             | Required       | Description                                                                                  |
+|-------------------|----------------|----------------------------------------------------------------------------------------------|
+| `name`            | **Yes**        | Unique identifier (lowercase letters, numbers, hyphens only). Must match directory name.     |
+| `description`     | **Yes**        | Explains what the skill does and when to use it. Critical for automatic invocation.          |
 
 ### Naming Convention
 
@@ -165,10 +165,10 @@ Workflows define step-by-step procedures invoked via slash commands. They guide 
 
 ### Storage Locations
 
-| Scope           | Location                                                    |
-|-----------------|-------------------------------------------------------------|
-| **Global**      | `~/.codeium/windsurf/global_workflows/{workflow-name}.md`   |
-| **Workspace**   | `.windsurf/workflows/{workflow-name}.md`                    |
+| Scope             | Location                                                      |
+|-------------------|---------------------------------------------------------------|
+| **Global**        | `~/.codeium/windsurf/global_workflows/{workflow-name}.md`     |
+| **Workspace**     | `.windsurf/workflows/{workflow-name}.md`                      |
 
 ### File Format
 
@@ -192,9 +192,9 @@ Step-by-step instructions in markdown.
 
 ### Required YAML Frontmatter Fields
 
-| Field           | Required     | Description                           |
-|-----------------|--------------|---------------------------------------|
-| `description`   | **Yes**      | Short title/description shown in UI   |
+| Field             | Required       | Description                             |
+|-------------------|----------------|-----------------------------------------|
+| `description`     | **Yes**        | Short title/description shown in UI     |
 
 ### Invocation
 
@@ -243,10 +243,10 @@ Rules provide persistent behavioral guidelines that influence how Cascade respon
 
 ### Storage Locations
 
-| Scope           | Location                                     |
-|-----------------|----------------------------------------------|
-| **Global**      | `~/.codeium/windsurf/rules/{rule-name}.md`   |
-| **Workspace**   | `.windsurf/rules/{rule-name}.md`             |
+| Scope             | Location                                       |
+|-------------------|------------------------------------------------|
+| **Global**        | `~/.codeium/windsurf/rules/{rule-name}.md`     |
+| **Workspace**     | `.windsurf/rules/{rule-name}.md`               |
 
 ### File Format
 
@@ -268,20 +268,20 @@ Rule instructions in markdown format.
 
 ### YAML Frontmatter Fields
 
-| Field           | Required     | Description                      |
-|-----------------|--------------|----------------------------------|
-| `description`   | **Yes**      | Describes when to use the rule   |
-| `trigger`       | Optional     | Activation mode (see below)      |
-| `globs`         | Optional     | File patterns for glob trigger   |
+| Field             | Required       | Description                        |
+|-------------------|----------------|------------------------------------|
+| `description`     | **Yes**        | Describes when to use the rule     |
+| `trigger`         | Optional       | Activation mode (see below)        |
+| `globs`           | Optional       | File patterns for glob trigger     |
 
 ### Activation Modes (trigger field)
 
-| Mode                 | Value              | Description                                        |
-|----------------------|--------------------|----------------------------------------------------|
-| **Manual**           | `manual`           | Activated via `@mention` in Cascade input          |
-| **Always On**        | `always`           | Always applied to every conversation               |
-| **Model Decision**   | `model_decision`   | Model decides based on description                 |
-| **Glob**             | `glob`             | Applied when working with files matching pattern   |
+| Mode                   | Value                | Description                                          |
+|------------------------|----------------------|------------------------------------------------------|
+| **Manual**             | `manual`             | Activated via `@mention` in Cascade input            |
+| **Always On**          | `always`             | Always applied to every conversation                 |
+| **Model Decision**     | `model_decision`     | Model decides based on description                   |
+| **Glob**               | `glob`               | Applied when working with files matching pattern     |
 
 ### Constraints
 
@@ -343,10 +343,10 @@ Enterprise organizations can deploy system-level configurations that apply globa
 
 ### System-Level Paths
 
-| Type            | Windows                                    | macOS                                                    | Linux/WSL                        |
-|-----------------|--------------------------------------------|----------------------------------------------------------|----------------------------------|
-| **Rules**       | `C:\ProgramData\Windsurf\rules\*.md`       | `/Library/Application Support/Windsurf/rules/*.md`       | `/etc/windsurf/rules/*.md`       |
-| **Workflows**   | `C:\ProgramData\Windsurf\workflows\*.md`   | `/Library/Application Support/Windsurf/workflows/*.md`   | `/etc/windsurf/workflows/*.md`   |
+| Type              | Windows                                      | macOS                                                      | Linux/WSL                          |
+|-------------------|----------------------------------------------|------------------------------------------------------------|------------------------------------|
+| **Rules**         | `C:\ProgramData\Windsurf\rules\*.md`         | `/Library/Application Support/Windsurf/rules/*.md`         | `/etc/windsurf/rules/*.md`         |
+| **Workflows**     | `C:\ProgramData\Windsurf\workflows\*.md`     | `/Library/Application Support/Windsurf/workflows/*.md`     | `/etc/windsurf/workflows/*.md`     |
 
 ### Precedence Order
 
@@ -363,12 +363,12 @@ When items with the same name exist at multiple levels:
 
 ### Quick Reference Table
 
-| Type               | Path Pattern                                                                 | Format                        | Key Fields                          |
-|--------------------|------------------------------------------------------------------------------|-------------------------------|-------------------------------------|
-| **Skill**          | `skills/{name}/SKILL.md`                                                     | YAML frontmatter + markdown   | `name`, `description`               |
-| **Workflow**       | `global_workflows/{name}.md` (global) or `workflows/{name}.md` (workspace)   | YAML frontmatter + markdown   | `description`                       |
-| **Rule**           | `rules/{name}.md`                                                            | YAML frontmatter + markdown   | `description`, `trigger`, `globs`   |
-| **Global Rules**   | `memories/global_rules.md`                                                   | Plain text/markdown           | None                                |
+| Type                 | Path Pattern                                                                   | Format                          | Key Fields                            |
+|----------------------|--------------------------------------------------------------------------------|---------------------------------|---------------------------------------|
+| **Skill**            | `skills/{name}/SKILL.md`                                                       | YAML frontmatter + markdown     | `name`, `description`                 |
+| **Workflow**         | `global_workflows/{name}.md` (global) or `workflows/{name}.md` (workspace)     | YAML frontmatter + markdown     | `description`                         |
+| **Rule**             | `rules/{name}.md`                                                              | YAML frontmatter + markdown     | `description`, `trigger`, `globs`     |
+| **Global Rules**     | `memories/global_rules.md`                                                     | Plain text/markdown             | None                                  |
 
 ### Minimal Templates
 
@@ -459,14 +459,14 @@ XML tags can effectively group related rules:
 
 ### Skills vs Rules vs Workflows
 
-| Use Case                                     | Recommended                 |
-|----------------------------------------------|-----------------------------|
-| Multi-step procedure with supporting files   | **Skill**                   |
-| Repeatable CLI/automation sequence           | **Workflow**                |
-| Coding style preferences                     | **Rule**                    |
-| Project conventions                          | **Rule**                    |
-| Deployment procedure                         | **Skill** or **Workflow**   |
-| Code review checklist                        | **Skill**                   |
+| Use Case                                       | Recommended                   |
+|------------------------------------------------|-------------------------------|
+| Multi-step procedure with supporting files     | **Skill**                     |
+| Repeatable CLI/automation sequence             | **Workflow**                  |
+| Coding style preferences                       | **Rule**                      |
+| Project conventions                            | **Rule**                      |
+| Deployment procedure                           | **Skill** or **Workflow**     |
+| Code review checklist                          | **Skill**                     |
 
 ---
 

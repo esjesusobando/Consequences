@@ -296,14 +296,14 @@ browser-use install                       # Install Chromium and system dependen
 
 ## Global Options
 
-| Option             | Description                              |
-|--------------------|------------------------------------------|
-| `--session NAME`   | Use named session (default: "default")   |
-| `--browser MODE`   | Browser mode: chromium, real, remote     |
-| `--headed`         | Show browser window (chromium mode)      |
-| `--profile NAME`   | Chrome profile (real mode only)          |
-| `--json`           | Output as JSON                           |
-| `--api-key KEY`    | Override API key                         |
+| Option               | Description                                |
+|----------------------|--------------------------------------------|
+| `--session NAME`     | Use named session (default: "default")     |
+| `--browser MODE`     | Browser mode: chromium, real, remote       |
+| `--headed`           | Show browser window (chromium mode)        |
+| `--profile NAME`     | Chrome profile (real mode only)            |
+| `--json`             | Output as JSON                             |
+| `--api-key KEY`      | Override API key                           |
 
 **Session behavior**: All commands without `--session` use the same "default" session. The browser stays open and is reused across commands. Use `--session NAME` to run multiple browsers in parallel.
 

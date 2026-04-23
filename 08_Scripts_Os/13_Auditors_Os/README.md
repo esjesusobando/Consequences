@@ -14,14 +14,14 @@ Utilities para auditors: beautify, context usage, carousel engine.
 
 ## 📦 Scripts (1 + 6 en subcarpeta scripts/)
 
-| # | Script | Propósito |
-|---|--------|----------|
-| — | `scripts/12_Context_Usage_Bar.py` | Context usage bar |
-| — | `scripts/13_Beautify_Tables.py` | Embellecedor tablas |
-| — | `scripts/14_Beauty_Doc.py` | Embellecedor docs |
-| — | `scripts/15_SOTA_Integrity_Check.py` | Check integridad SOTA |
-| — | `scripts/16_Carousel_Engine.py` | Carousel engine |
-| — | `scripts/` | Subcarpeta con scripts |
+| #   | Script                               | Propósito              |
+|-----|--------------------------------------|------------------------|
+| —   | `scripts/12_Context_Usage_Bar.py`    | Context usage bar      |
+| —   | `scripts/13_Beautify_Tables.py`      | Embellecedor tablas    |
+| —   | `scripts/14_Beauty_Doc.py`           | Embellecedor docs      |
+| —   | `scripts/15_SOTA_Integrity_Check.py` | Check integridad SOTA  |
+| —   | `scripts/16_Carousel_Engine.py`      | Carousel engine        |
+| —   | `scripts/`                           | Subcarpeta con scripts |
 
 ---
 

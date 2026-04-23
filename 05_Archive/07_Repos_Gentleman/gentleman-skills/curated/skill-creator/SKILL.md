@@ -81,12 +81,12 @@ metadata:
 
 ## Naming Conventions
 
-| Type             | Pattern                    | Examples                                         |
-|------------------|----------------------------|--------------------------------------------------|
-| Generic skill    | `{technology}`             | `pytest`, `playwright`, `typescript`             |
-| Prowler-specific | `prowler-{component}`      | `prowler-api`, `prowler-ui`, `prowler-sdk-check` |
-| Testing skill    | `prowler-test-{component}` | `prowler-test-sdk`, `prowler-test-api`           |
-| Workflow skill   | `{action}-{target}`        | `skill-creator`, `jira-task`                     |
+| Type               | Pattern                      | Examples                                           |
+|--------------------|------------------------------|----------------------------------------------------|
+| Generic skill      | `{technology}`               | `pytest`, `playwright`, `typescript`               |
+| Prowler-specific   | `prowler-{component}`        | `prowler-api`, `prowler-ui`, `prowler-sdk-check`   |
+| Testing skill      | `prowler-test-{component}`   | `prowler-test-sdk`, `prowler-test-api`             |
+| Workflow skill     | `{action}-{target}`          | `skill-creator`, `jira-task`                       |
 
 ---
 
@@ -116,13 +116,13 @@ Generic skill needs Prowler info?  → Add references/ pointing to Prowler docs
 
 ## Frontmatter Fields
 
-| Field              | Required   | Description                           |
-|--------------------|------------|---------------------------------------|
-| `name`             | Yes        | Skill identifier (lowercase, hyphens) |
-| `description`      | Yes        | What + Trigger in one block           |
-| `license`          | Yes        | Always `Apache-2.0` for Prowler       |
-| `metadata.author`  | Yes        | `gentleman-programming`               |
-| `metadata.version` | Yes        | Semantic version as string            |
+| Field                | Required     | Description                             |
+|----------------------|--------------|-----------------------------------------|
+| `name`               | Yes          | Skill identifier (lowercase, hyphens)   |
+| `description`        | Yes          | What + Trigger in one block             |
+| `license`            | Yes          | Always `Apache-2.0` for Prowler         |
+| `metadata.author`    | Yes          | `gentleman-programming`                 |
+| `metadata.version`   | Yes          | Semantic version as string              |
 
 ---
 

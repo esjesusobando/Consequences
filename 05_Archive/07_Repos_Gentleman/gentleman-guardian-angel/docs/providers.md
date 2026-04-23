@@ -10,15 +10,15 @@ Detailed setup and configuration for all supported AI providers.
 
 Use whichever AI CLI you have installed:
 
-| Provider          | Config Value       | CLI Command Used                  | Installation                                                                       |
-|-------------------|--------------------|-----------------------------------|------------------------------------------------------------------------------------|
-| **Claude**        | `claude`           | `echo "prompt" \                  | claude --print`                                                                    | [claude.ai/code](https://claude.ai/code)                                           |
-| **Gemini**        | `gemini`           | `echo "prompt" \                  | gemini`                                                                            | [github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) |
-| **Codex**         | `codex`            | `codex exec "prompt"`             | `npm i -g @openai/codex`                                                           |
-| **OpenCode**      | `opencode`         | `echo "prompt" \                  | opencode run`                                                                      | [opencode.ai](https://opencode.ai)                                                 |
-| **Ollama**        | `ollama:<model>`   | `ollama run <model> "prompt"`     | [ollama.ai](https://ollama.ai)                                                     |
-| **LM Studio**     | `lmstudio[:model]` | HTTP API call to local server     | [lmstudio.ai](https://lmstudio.ai)                                                 |
-| **GitHub Models** | `github:<model>`   | HTTP API via `gh auth token`      | [github.com/marketplace/models](https://github.com/marketplace/models)             |
+| Provider            | Config Value         | CLI Command Used                    | Installation                                                                         |
+|---------------------|----------------------|-------------------------------------|--------------------------------------------------------------------------------------|
+| **Claude**          | `claude`             | `echo "prompt" \                    | claude --print`                                                                      | [claude.ai/code](https://claude.ai/code)                                           |
+| **Gemini**          | `gemini`             | `echo "prompt" \                    | gemini`                                                                              | [github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) |
+| **Codex**           | `codex`              | `codex exec "prompt"`               | `npm i -g @openai/codex`                                                             |
+| **OpenCode**        | `opencode`           | `echo "prompt" \                    | opencode run`                                                                        | [opencode.ai](https://opencode.ai)                                                 |
+| **Ollama**          | `ollama:<model>`     | `ollama run <model> "prompt"`       | [ollama.ai](https://ollama.ai)                                                       |
+| **LM Studio**       | `lmstudio[:model]`   | HTTP API call to local server       | [lmstudio.ai](https://lmstudio.ai)                                                   |
+| **GitHub Models**   | `github:<model>`     | HTTP API via `gh auth token`        | [github.com/marketplace/models](https://github.com/marketplace/models)               |
 
 ---
 

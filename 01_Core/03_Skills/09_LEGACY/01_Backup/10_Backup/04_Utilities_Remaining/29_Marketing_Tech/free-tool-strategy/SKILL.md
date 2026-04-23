@@ -47,14 +47,14 @@ Before designing a tool strategy, understand:
 
 ## Tool Types Overview
 
-| Type          | Examples                           | Best For                      |
-|---------------|------------------------------------|-------------------------------|
-| Calculators   | ROI, savings, pricing estimators   | Decisions involving numbers   |
-| Generators    | Templates, policies, names         | Creating something quickly    |
-| Analyzers     | Website graders, SEO auditors      | Evaluating existing work      |
-| Testers       | Meta tag preview, speed tests      | Checking if something works   |
-| Libraries     | Icon sets, templates, snippets     | Reference material            |
-| Interactive   | Tutorials, playgrounds, quizzes    | Learning/understanding        |
+| Type            | Examples                             | Best For                        |
+|-----------------|--------------------------------------|---------------------------------|
+| Calculators     | ROI, savings, pricing estimators     | Decisions involving numbers     |
+| Generators      | Templates, policies, names           | Creating something quickly      |
+| Analyzers       | Website graders, SEO auditors        | Evaluating existing work        |
+| Testers         | Meta tag preview, speed tests        | Checking if something works     |
+| Libraries       | Icon sets, templates, snippets       | Reference material              |
+| Interactive     | Tutorials, playgrounds, quizzes      | Learning/understanding          |
 
 **For detailed tool types and examples**: See [references/tool-types.md](references/tool-types.md)
 
@@ -85,12 +85,12 @@ Before designing a tool strategy, understand:
 
 ### Gating Options
 
-| Approach             | Pros              | Cons              |
-|----------------------|-------------------|-------------------|
-| Fully gated          | Maximum capture   | Lower usage       |
-| Partially gated      | Balance of both   | Common pattern    |
-| Ungated + optional   | Maximum reach     | Lower capture     |
-| Ungated entirely     | Pure SEO/brand    | No direct leads   |
+| Approach               | Pros                | Cons                |
+|------------------------|---------------------|---------------------|
+| Fully gated            | Maximum capture     | Lower usage         |
+| Partially gated        | Balance of both     | Common pattern      |
+| Ungated + optional     | Maximum reach       | Lower capture       |
+| Ungated entirely       | Pure SEO/brand      | No direct leads     |
 
 ### Lead Capture Best Practices
 - Value exchange clear: "Get your full report"
@@ -145,16 +145,16 @@ Account creation, saving results, advanced features, perfect design, every edge 
 
 Rate each factor 1-5:
 
-| Factor                         | Score     |
-|--------------------------------|-----------|
-| Search demand exists           | ___       |
-| Audience match to buyers       | ___       |
-| Uniqueness vs. existing        | ___       |
-| Natural path to product        | ___       |
-| Build feasibility              | ___       |
-| Maintenance burden (inverse)   | ___       |
-| Link-building potential        | ___       |
-| Share-worthiness               | ___       |
+| Factor                           | Score       |
+|----------------------------------|-------------|
+| Search demand exists             | ___         |
+| Audience match to buyers         | ___         |
+| Uniqueness vs. existing          | ___         |
+| Natural path to product          | ___         |
+| Build feasibility                | ___         |
+| Maintenance burden (inverse)     | ___         |
+| Link-building potential          | ___         |
+| Share-worthiness                 | ___         |
 
 **25+**: Strong candidate | **15-24**: Promising | **<15**: Reconsider
 

@@ -11,15 +11,15 @@
 
 ### ✅ Trabajo Realizado
 
-| #     | Tarea                          | Estado     | Detalle                                                                                                 |
-|-------|--------------------------------|------------|---------------------------------------------------------------------------------------------------------|
-| 1     | Recuperar archivos .claude     | ✅          | 920 archivos recuperados del commit 2ebca41                                                             |
-| 2     | Auditar estructura completa    | ✅          | Skills, Agents, MCPs, Rules, Hooks, Workflows, Evals                                                    |
-| 3     | Establecer fuente de verdad    | ✅          | `01_Core/03_Skills/` = fuente de verdad para OpenCode                                                   |
-| 4     | Actualizar 01_Personal_Os/11_AGENTS.md           | ✅          | Referencias actualizadas a 01_Core/                                                                     |
-| 5     | Actualizar Dream Team agents   | ✅          | 5 agents actualizados (Product_Builder, Data_Engineer, Marketing_Tech, Design_Ops, Platform_Engineer)   |
-| 6     | Crear Dream_Team.md            | ✅          | Analogía del sistema documentada                                                                        |
-| 7     | Commits realizados             | ✅          | e505e52, 5997bf3, a551975, a076a98                                                                      |
+| #       | Tarea                                  | Estado       | Detalle                                                                                                   |
+|---------|----------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------|
+| 1       | Recuperar archivos .claude             | ✅            | 920 archivos recuperados del commit 2ebca41                                                               |
+| 2       | Auditar estructura completa            | ✅            | Skills, Agents, MCPs, Rules, Hooks, Workflows, Evals                                                      |
+| 3       | Establecer fuente de verdad            | ✅            | `01_Core/03_Skills/` = fuente de verdad para OpenCode                                                     |
+| 4       | Actualizar 01_Personal_Os/11_AGENTS.md | ✅            | Referencias actualizadas a 01_Core/                                                                       |
+| 5       | Actualizar Dream Team agents           | ✅            | 5 agents actualizados (Product_Builder, Data_Engineer, Marketing_Tech, Design_Ops, Platform_Engineer)     |
+| 6       | Crear Dream_Team.md                    | ✅            | Analogía del sistema documentada                                                                          |
+| 7       | Commits realizados                     | ✅            | e505e52, 5997bf3, a551975, a076a98                                                                        |
 
 **Excelente trabajo!** 🚀
 
@@ -67,34 +67,34 @@
 ### 📋 El Director — Workflows
 Orquestan las jugadas. Definen el flujo de trabajo completo.
 
-| Workflow            | Función                      |
-|---------------------|------------------------------|
-| Iron Man Gen        | Generación de código         |
-| Spider Brainstorm   | Lluvia de ideas              |
-| Professor X Plan    | Planificación estratégica    |
-| Vision Review       | Revisión de calidad          |
-| Thor Work           | Ejecución de tareas          |
-| Hulk Compound       | Documentación de learnings   |
+| Workflow              | Función                        |
+|-----------------------|--------------------------------|
+| Iron Man Gen          | Generación de código           |
+| Spider Brainstorm     | Lluvia de ideas                |
+| Professor X Plan      | Planificación estratégica      |
+| Vision Review         | Revisión de calidad            |
+| Thor Work             | Ejecución de tareas            |
+| Hulk Compound         | Documentación de learnings     |
 
 ### 🤖 Los Jugadores — Dream Team (Agents)
 
-| Jugador                 | Posición         | Kit de Skills Principal             | Ruta                                                        |
-|-------------------------|------------------|-------------------------------------|-------------------------------------------------------------|
-| **Product Builder**     | Delantero        | PRD, Planning, React, TypeScript    | `01_Core/04_Agents/01_Dream_Team/01_Product_Builder.md`     |
-| **Data_Engineer**       | Centrocampista   | Python, Supabase, CSV, Analytics    | `01_Core/04_Agents/01_Dream_Team/02_Data_Engineer.md`       |
-| **Marketing_Tech**      | Extremo          | Marketing, SEO, Firecrawl           | `01_Core/04_Agents/01_Dream_Team/03_Marketing_Tech.md`      |
-| **Design_Ops**          | Lateral          | Diseño, Vercel, Playwright          | `01_Core/04_Agents/01_Dream_Team/04_Design_Ops.md`          |
-| **Platform_Engineer**   | Portero          | DevOps, System Master, MCP Client   | `01_Core/04_Agents/01_Dream_Team/05_Platform_Engineer.md`   |
+| Jugador                   | Posición           | Kit de Skills Principal               | Ruta                                                          |
+|---------------------------|--------------------|---------------------------------------|---------------------------------------------------------------|
+| **Product Builder**       | Delantero          | PRD, Planning, React, TypeScript      | `01_Core/04_Agents/01_Dream_Team/01_Product_Builder.md`       |
+| **Data_Engineer**         | Centrocampista     | Python, Supabase, CSV, Analytics      | `01_Core/04_Agents/01_Dream_Team/02_Data_Engineer.md`         |
+| **Marketing_Tech**        | Extremo            | Marketing, SEO, Firecrawl             | `01_Core/04_Agents/01_Dream_Team/03_Marketing_Tech.md`        |
+| **Design_Ops**            | Lateral            | Diseño, Vercel, Playwright            | `01_Core/04_Agents/01_Dream_Team/04_Design_Ops.md`            |
+| **Platform_Engineer**     | Portero            | DevOps, System Master, MCP Client     | `01_Core/04_Agents/01_Dream_Team/05_Platform_Engineer.md`     |
 
 ### 🛠️ El Kit — Skills, MCPs, Commands, Hooks, Rules
 
-| Herramienta     | Cantidad     | Función                            | Ubicación                        |
-|-----------------|--------------|------------------------------------|----------------------------------|
-| **Skills**      | 160+         | Patrones y workflows específicos   | `01_Core/03_Skills/`             |
-| **MCPs**        | 27           | Herramientas externas              | `01_Core/05_Mcp/opencode.json`   |
-| **Commands**    |--------------| Comandos slash (/sdd, /ce, etc.)   | `01_Core/06_Commands/`           |
-| **Hooks**       | 6            | Puntos de ejecución automática     | `01_Core/07_Hooks/`              |
-| **Rules**       | 22           | Reglas del juego                   | `01_Core/01_Rules/`              |
+| Herramienta       | Cantidad       | Función                              | Ubicación                          |
+|-------------------|----------------|--------------------------------------|------------------------------------|
+| **Skills**        | 160+           | Patrones y workflows específicos     | `01_Core/03_Skills/`               |
+| **MCPs**          | 27             | Herramientas externas                | `01_Core/05_Mcp/opencode.json`     |
+| **Commands**      |----------------| Comandos slash (/sdd, /ce, etc.)     | `01_Core/06_Commands/`             |
+| **Hooks**         | 6              | Puntos de ejecución automática       | `01_Core/07_Hooks/`                |
+| **Rules**         | 22             | Reglas del juego                     | `01_Core/01_Rules/`                |
 
 ### 📊 El Árbitro — Evals
 Evalúa el rendimiento del equipo. Mide calidad y eficiencia.
@@ -103,37 +103,37 @@ Evalúa el rendimiento del equipo. Mide calidad y eficiencia.
 
 ## 📍 UBICACIONES FÍSICAS (Fuente de Verdad)
 
-| Componente         | Ubicación                        | Estado                   |
-|--------------------|----------------------------------|--------------------------|
-| Winter is Coming   | `00_Winter_is_Coming/`           | ✅                        |
-| Workflows          | `01_Core/00_Workflows/`          | ✅                        |
-| Rules              | `01_Core/01_Rules/`              | ✅                        |
-| Evals              | `01_Core/02_Evals/`              | ✅                        |
-| Agents             | `01_Core/04_Agents/`             | ✅                        |
-| Skills             | `01_Core/03_Skills/`             | ✅ **FUENTE DE VERDAD**   |
-| Integrations       | `01_Core/06_Integrations/`       | ✅                        |
-| MCPs               | `01_Core/05_Mcp/opencode.json`   | ✅                        |
-| Commands           | `01_Core/06_Commands/`           | ✅                        |
-| Hooks              | `01_Core/07_Hooks/`              | ✅                        |
-| Plugins            | `01_Core/08_Plugings/`           | ✅                        |
-| Server             | `01_Core/09_Server/`             | ✅                        |
-| Templates          | `01_Core/10_Templates/`          | ✅                        |
+| Componente           | Ubicación                          | Estado                     |
+|----------------------|------------------------------------|----------------------------|
+| Winter is Coming     | `00_Winter_is_Coming/`             | ✅                          |
+| Workflows            | `01_Core/00_Workflows/`            | ✅                          |
+| Rules                | `01_Core/01_Rules/`                | ✅                          |
+| Evals                | `01_Core/02_Evals/`                | ✅                          |
+| Agents               | `01_Core/04_Agents/`               | ✅                          |
+| Skills               | `01_Core/03_Skills/`               | ✅ **FUENTE DE VERDAD**     |
+| Integrations         | `01_Core/06_Integrations/`         | ✅                          |
+| MCPs                 | `01_Core/05_Mcp/opencode.json`     | ✅                          |
+| Commands             | `01_Core/06_Commands/`             | ✅                          |
+| Hooks                | `01_Core/07_Hooks/`                | ✅                          |
+| Plugins              | `01_Core/08_Plugings/`             | ✅                          |
+| Server               | `01_Core/09_Server/`               | ✅                          |
+| Templates            | `01_Core/10_Templates/`            | ✅                          |
 
 ---
 
 ## 📊 ESTADO DEL EQUIPO — AUDITORÍA FINAL
 
-| Componente             | Estado     | Cantidad                | Verificado     |
-|------------------------|------------|-------------------------|----------------|
-| Workflows (Director)   | ✅          | 26 archivos             | ✅              |
-| Agents (Dream Team)    | ✅          | 12 agents + 2 equipos   | ✅              |
-| Skills (Kit)           | ✅          | 160+ skills             | ✅              |
-| MCPs (Equipamiento)    | ✅          | 27 configurados         | ✅              |
-| Rules (Reglas)         | ✅          | 22 rules                | ✅              |
-| Hooks (Árbitro)        | ✅          | 6 categorías            | ✅              |
-| Evals                  | ✅          | 1 evaluación            | ✅              |
-| Dream Team → Skills    | ✅          | Rutas actualizadas      | ✅              |
-| 01_Personal_Os/11_AGENTS.md → Skills     | ✅          | Rutas actualizadas      | ✅              |
+| Componente                           | Estado       | Cantidad                  | Verificado       |
+|--------------------------------------|--------------|---------------------------|------------------|
+| Workflows (Director)                 | ✅            | 26 archivos               | ✅                |
+| Agents (Dream Team)                  | ✅            | 12 agents + 2 equipos     | ✅                |
+| Skills (Kit)                         | ✅            | 160+ skills               | ✅                |
+| MCPs (Equipamiento)                  | ✅            | 27 configurados           | ✅                |
+| Rules (Reglas)                       | ✅            | 22 rules                  | ✅                |
+| Hooks (Árbitro)                      | ✅            | 6 categorías              | ✅                |
+| Evals                                | ✅            | 1 evaluación              | ✅                |
+| Dream Team → Skills                  | ✅            | Rutas actualizadas        | ✅                |
+| 01_Personal_Os/11_AGENTS.md → Skills | ✅            | Rutas actualizadas        | ✅                |
 
 ---
 
@@ -211,16 +211,16 @@ Evalúa el rendimiento del equipo. Mide calidad y eficiencia.
 
 ### Ejemplo real: Migración de Rutas v6.1
 
-| Fase     | Acción                      | Resultado                                 |
-|----------|-----------------------------|-------------------------------------------|
-| 1️⃣      | Agentes paralelos (swarm)   | ~10 carpetas procesadas                   |
-| 2️⃣      | Auditor Round 1             | Encontró +10 rutas en otros directorios   |
-| 3️⃣      | Agentes Round 2             | Corrigieron rutas encontradas             |
-| 4️⃣      | Auditor Round 2             | Encontró +30 rutas en .agent/02_Skills/   |
-| 5️⃣      | Agentes Round 3             | Corrigieron rutas finales                 |
-| 6️⃣      | Auditor FINAL               | ✅ PASS - 0 rutas obsoletas                |
-| 7️⃣      | Engram                      | Progreso guardado                         |
-| 8️⃣      | Dream_Team                  | Metodología documentada                   |
+| Fase       | Acción                        | Resultado                                   |
+|------------|-------------------------------|---------------------------------------------|
+| 1️⃣        | Agentes paralelos (swarm)     | ~10 carpetas procesadas                     |
+| 2️⃣        | Auditor Round 1               | Encontró +10 rutas en otros directorios     |
+| 3️⃣        | Agentes Round 2               | Corrigieron rutas encontradas               |
+| 4️⃣        | Auditor Round 2               | Encontró +30 rutas en .agent/02_Skills/     |
+| 5️⃣        | Agentes Round 3               | Corrigieron rutas finales                   |
+| 6️⃣        | Auditor FINAL                 | ✅ PASS - 0 rutas obsoletas                  |
+| 7️⃣        | Engram                        | Progreso guardado                           |
+| 8️⃣        | Dream_Team                    | Metodología documentada                     |
 
 #### Resultado Final Migración Rutas v6.1
 - **14 commits** de migración
@@ -231,36 +231,36 @@ Evalúa el rendimiento del equipo. Mide calidad y eficiencia.
 
 ## 📝 CAMBIOS REALIZADOS EN ESTA SESIÓN
 
-| #     | Cambio                         | Archivos       |
-|-------|--------------------------------|----------------|
-| 1     | Recuperar .claude              | 920 archivos   |
-| 2     | Actualizar Dream Team agents   | 5 archivos     |
-| 3     | Actualizar 01_Personal_Os/11_AGENTS.md           | 2 archivos     |
-| 4     | Crear Dream_Team.md            | 1 archivo      |
-| 5     | Crear reporte final            | Este archivo   |
+| #       | Cambio                                 | Archivos         |
+|---------|----------------------------------------|------------------|
+| 1       | Recuperar .claude                      | 920 archivos     |
+| 2       | Actualizar Dream Team agents           | 5 archivos       |
+| 3       | Actualizar 01_Personal_Os/11_AGENTS.md | 2 archivos       |
+| 4       | Crear Dream_Team.md                    | 1 archivo        |
+| 5       | Crear reporte final                    | Este archivo     |
 
 ---
 
 ## 🔐 GIT COMMITS
 
-| Hash      | Mensaje                                     |
-|-----------|---------------------------------------------|
-| a551975   | Agents_Skills                               |
-| 5997bf3   | Team                                        |
-| e505e52   | Dream                                       |
-| a076a98   | fix: migrate routes in 01_Core/04_Agents/   |
+| Hash        | Mensaje                                       |
+|-------------|-----------------------------------------------|
+| a551975     | Agents_Skills                                 |
+| 5997bf3     | Team                                          |
+| e505e52     | Dream                                         |
+| a076a98     | fix: migrate routes in 01_Core/04_Agents/     |
 
 ---
 
 ## ✅ VERIFICACIÓN FINAL
 
-| Check                                                | Estado     |
-|------------------------------------------------------|------------|
-| Dream Team → 01_Core/03_Skills/                      | ✅          |
-| 01_Personal_Os/11_AGENTS.md → 01_Core/03_Skills/                       | ✅          |
-| 00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md → 01_Core/03_Skills/   | ✅          |
-| 01_Core/03_Skills/README.md → Source of Truth        | ✅          |
-| Git status limpio                                    | ✅          |
+| Check                                                                | Estado       |
+|----------------------------------------------------------------------|--------------|
+| Dream Team → 01_Core/03_Skills/                                      | ✅            |
+| 01_Personal_Os/11_AGENTS.md → 01_Core/03_Skills/                     | ✅            |
+| 00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md → 01_Core/03_Skills/ | ✅            |
+| 01_Core/03_Skills/README.md → Source of Truth                        | ✅            |
+| Git status limpio                                                    | ✅            |
 
 ---
 

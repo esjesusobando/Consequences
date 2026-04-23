@@ -2,33 +2,33 @@
 
 ## Estado de Caja
 
-| Concepto        | Hoy     | Acumulado     |
-|-----------------|---------|---------------|
-| Saldo inicial   |         |               |
-| Ingresos        |         |               |
-| Egresos         |         |               |
-| Saldo final     |         |               |
+| Concepto          | Hoy       | Acumulado       |
+|-------------------|-----------|-----------------|
+| Saldo inicial     |           |                 |
+| Ingresos          |           |                 |
+| Egresos           |           |                 |
+| Saldo final       |           |                 |
 
 ---
 
 ## Movimientos del Día
 
-| #     | Hora     | Tipo      | Concepto     | Monto     |
-|-------|----------|-----------|--------------|-----------|
-| 1     |          | Ingreso   |              |           |
-| 2     |          | Egreso    |              |           |
+| #       | Hora       | Tipo        | Concepto       | Monto       |
+|---------|------------|-------------|----------------|-------------|
+| 1       |            | Ingreso     |                |             |
+| 2       |            | Egreso      |                |             |
 
 ---
 
 ## Resumen Métodos de Pago
 
-| Método          | Monto    | %     |
-|-----------------|----------|-------|
-| Efectivo        |          |       |
-| Débito          |          |       |
-| Crédito         |          |       |
-| Transferencia   |          |       |
-| WhatsApp Pay    |          |       |
+| Método            | Monto      | %       |
+|-------------------|------------|---------|
+| Efectivo          |            |         |
+| Débito            |            |         |
+| Crédito           |            |         |
+| Transferencia     |            |         |
+| WhatsApp Pay      |            |         |
 
 ---
 

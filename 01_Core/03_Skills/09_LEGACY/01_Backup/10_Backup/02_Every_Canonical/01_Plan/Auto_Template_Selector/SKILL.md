@@ -11,11 +11,11 @@ Use this skill to automatically detect which template to use for a task.
 
 Read task description and analyze:
 
-| Criterio     | SOTA           | MEDIO     | CORTO     |
-|--------------|----------------|-----------|-----------|
-| Esfuerzo     | 8h+            | 2-8h      | <2h       |
-| Archivos     | 10+            | 3-10      | 1-2       |
-| Scope        | Multi-modulo   | Modulo    | Archivo   |
+| Criterio       | SOTA             | MEDIO       | CORTO       |
+|----------------|------------------|-------------|-------------|
+| Esfuerzo       | 8h+              | 2-8h        | <2h         |
+| Archivos       | 10+              | 3-10        | 1-2         |
+| Scope          | Multi-modulo     | Modulo      | Archivo     |
 
 ## Keywords
 

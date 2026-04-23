@@ -8,14 +8,14 @@ Your AI-powered task management system that keeps you focused on what matters.
 
 Brain dump into `BACKLOG.md`, tell your AI assistant to process it, and get organized tasks automatically prioritized based on your goals.
 
-| Section                      | Status     |
-|------------------------------|------------|
-| Task Management              | ✅          |
-| Goal-driven Prioritization   | ✅          |
-| Knowledge Base               | ✅          |
-| Backlog Processing           | ✅          |
-| Session Evals                | ✅          |
-| MCP Server (optional)        | ✅          |
+| Section                        | Status       |
+|--------------------------------|--------------|
+| Task Management                | ✅            |
+| Goal-driven Prioritization     | ✅            |
+| Knowledge Base                 | ✅            |
+| Backlog Processing             | ✅            |
+| Session Evals                  | ✅            |
+| MCP Server (optional)          | ✅            |
 
 ---
 
@@ -69,12 +69,12 @@ The setup will:
 
 ### Priorities
 
-| Priority     | Meaning         | Limit     |
-|--------------|-----------------|-----------|
-| **P0**       | Do today        | max 3     |
-| **P1**       | This week       | max 7     |
-| **P2**       | Scheduled       |-----------|
-| **P3**       | Someday/maybe   |-----------|
+| Priority       | Meaning           | Limit       |
+|----------------|-------------------|-------------|
+| **P0**         | Do today          | max 3       |
+| **P1**         | This week         | max 7       |
+| **P2**         | Scheduled         |-------------|
+| **P3**         | Someday/maybe     |-------------|
 
 ## Directory Structure
 

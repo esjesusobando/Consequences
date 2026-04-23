@@ -10,14 +10,14 @@
 
 ### Matrix Recargado
 
-| Métrica                   | Cantidad       | Estado                   |
-|---------------------------|----------------|--------------------------|
-| **Skills Totales**        | ~440           | ✅                        |
-| **Skills Gentleman**      | 139+           | ✅                        |
-| **CE Componentes**        | 131            | ✅                        |
-| **Scripts Activos**       | 13             | ✅ (de 93 originales)     |
-| **MCPs Configurados**     | 35             | ✅                        |
-| **Hooks Activos**         | 7              | ✅                        |
+| Métrica                     | Cantidad         | Estado                     |
+|-----------------------------|------------------|----------------------------|
+| **Skills Totales**          | ~440             | ✅                          |
+| **Skills Gentleman**        | 139+             | ✅                          |
+| **CE Componentes**          | 131              | ✅                          |
+| **Scripts Activos**         | 13               | ✅ (de 93 originales)       |
+| **MCPs Configurados**       | 35               | ✅                          |
+| **Hooks Activos**           | 7                | ✅                          |
 
 - --
 
@@ -42,13 +42,13 @@ Al iniciar una nueva sesión, ejecutar esta secuencia **ANTES** de responder:
 
 * *YOU ARE A COORDINATOR, NOT AN EXECUTOR.**
 
-| Allowed Actions                     | NOT Allowed                                      |
-|-------------------------------------|--------------------------------------------------|
-| Short answers                       | Reading/writing code inline                      |
-| Coordinate phases                   | Analyzing code inline                            |
-| Show summaries                      | Writing specs/proposals inline                   |
-| Ask decisions                       | Doing "quick" analysis                           |
-| Track state                         | Any execution work                               |
+| Allowed Actions                       | NOT Allowed                                        |
+|---------------------------------------|----------------------------------------------------|
+| Short answers                         | Reading/writing code inline                        |
+| Coordinate phases                     | Analyzing code inline                              |
+| Show summaries                        | Writing specs/proposals inline                     |
+| Ask decisions                         | Doing "quick" analysis                             |
+| Track state                           | Any execution work                                 |
 
 * *Hard Stop Rule**: Antes de usar Read, Edit, Write, o Grep en archivos source/config/skill:
 1. **STOP** — ¿Es orquestación o ejecución?
@@ -76,11 +76,11 @@ Al iniciar una nueva sesión, ejecutar esta secuencia **ANTES** de responder:
 
 ### Task Types (SOTA / Media / Corta)
 
-| Tipo                        | Descripcion                                            | Tiempo Est.                     | Ejemplos                                                 |
-|-----------------------------|--------------------------------------------------------|---------------------------------|----------------------------------------------------------|
-| **SOTA**                    | Investigación profunda, arquitectura                   | 2-4 horas                       | Reorganizar sistema, nueva metodología                   |
-| **Media**                   | Features, refactoring                                  | 30-60 min                       | Agregar feature, refactorizar módulo                     |
-| **Corta**                   | Fixes, small changes                                   | 5-15 min                        | Bug fix, typo, small improvement                         |
+| Tipo                          | Descripcion                                              | Tiempo Est.                       | Ejemplos                                                   |
+|-------------------------------|----------------------------------------------------------|-----------------------------------|------------------------------------------------------------|
+| **SOTA**                      | Investigación profunda, arquitectura                     | 2-4 horas                         | Reorganizar sistema, nueva metodología                     |
+| **Media**                     | Features, refactoring                                    | 30-60 min                         | Agregar feature, refactorizar módulo                       |
+| **Corta**                     | Fixes, small changes                                     | 5-15 min                          | Bug fix, typo, small improvement                           |
 
 ### Task Template
 
@@ -122,13 +122,13 @@ Tie to goals and reference material.
 
 ### Convenciones Estrictas
 
-| Regla                                     | Correcto                               | Incorrecto                             |
-|-------------------------------------------|----------------------------------------|----------------------------------------|
-| 2 dígitos para números                    | `01_Project_Manager`                   | `1_Project_Manager`                    |
-| PascalCase                                | `01_Morning_Standup`                   | `01_morning_standup`                   |
-| Guion bajo para separar                   | `01_Brand_Identity`                    | `01-brand-identity`                    |
-| Secuencia PERFECTA                        | `01, 02, 03...`                        | `01, 03, 05...`                        |
-| Primera letra MAYÚSCULA                   | `01_Project_Manager`                   | `01_project_manager`                   |
+| Regla                                       | Correcto                                 | Incorrecto                               |
+|---------------------------------------------|------------------------------------------|------------------------------------------|
+| 2 dígitos para números                      | `01_Project_Manager`                     | `1_Project_Manager`                      |
+| PascalCase                                  | `01_Morning_Standup`                     | `01_morning_standup`                     |
+| Guion bajo para separar                     | `01_Brand_Identity`                      | `01-brand-identity`                      |
+| Secuencia PERFECTA                          | `01, 02, 03...`                          | `01, 03, 05...`                          |
+| Primera letra MAYÚSCULA                     | `01_Project_Manager`                     | `01_project_manager`                     |
 
 ### Estructura de Perfiles (Matrix Recargado)
 
@@ -168,14 +168,14 @@ Tie to goals and reference material.
 
 Llamar `mem_save` INMEDIATAMENTE después de:
 
-| Situación                                 | Ejemplo                                           |
-|-------------------------------------------|---------------------------------------------------|
-| Bug fix completado                        | "Fixed N+1 query in UserList"                     |
-| Decisión arquitectónica                   | "Chose Zustand over Redux"                        |
-| Descubrimiento no obvio                   | "FTS5 MATCH syntax is NOT LIKE"                   |
-| Cambio de configuración                   | "JWT auth added to middleware"                    |
-| Patrón establecido                        | "Naming convention: PascalCase"                   |
-| Preferencia descubierta                   | "User prefers morning sessions"                   |
+| Situación                                   | Ejemplo                                             |
+|---------------------------------------------|-----------------------------------------------------|
+| Bug fix completado                          | "Fixed N+1 query in UserList"                       |
+| Decisión arquitectónica                     | "Chose Zustand over Redux"                          |
+| Descubrimiento no obvio                     | "FTS5 MATCH syntax is NOT LIKE"                     |
+| Cambio de configuración                     | "JWT auth added to middleware"                      |
+| Patrón establecido                          | "Naming convention: PascalCase"                     |
+| Preferencia descubierta                     | "User prefers morning sessions"                     |
 
 ### Formato de mem_save
 
@@ -198,14 +198,14 @@ Llamar `mem_save` INMEDIATAMENTE después de:
 
 ### Sistema de Hooks (6 Activos)
 
-| Hook                                        | Trigger                                         | Función                                                             | Status                     |
-|---------------------------------------------|-------------------------------------------------|---------------------------------------------------------------------|----------------------------|
-| `pre_tool_use.py`                           | Antes de cada tool                              | Batería < 15%, rm -rf protection, .env protection                   | ✅                          |
-| `csv-single-validator.py`                   | Antes de CSV tools                              | Valida estructura CSV                                               | ✅                          |
-| `post_tool_use.py`                          | Después de modificar archivos                   | Backup, voz cada 2 archivos                                         | ✅                          |
-| `stop.py`                                   | Al cerrar sesión                                | "Sesión finalizada"                                                 | ✅                          |
-| `subagent_stop.py`                          | Al terminar sub-agente                          | "Subagente completado"                                              | ✅                          |
-| `notification.py`                           | User envía mensaje                              | Alerta + voz                                                        | ✅                          |
+| Hook                                          | Trigger                                           | Función                                                               | Status                       |
+|-----------------------------------------------|---------------------------------------------------|-----------------------------------------------------------------------|------------------------------|
+| `pre_tool_use.py`                             | Antes de cada tool                                | Batería < 15%, rm -rf protection, .env protection                     | ✅                            |
+| `csv-single-validator.py`                     | Antes de CSV tools                                | Valida estructura CSV                                                 | ✅                            |
+| `post_tool_use.py`                            | Después de modificar archivos                     | Backup, voz cada 2 archivos                                           | ✅                            |
+| `stop.py`                                     | Al cerrar sesión                                  | "Sesión finalizada"                                                   | ✅                            |
+| `subagent_stop.py`                            | Al terminar sub-agente                            | "Subagente completado"                                                | ✅                            |
+| `notification.py`                             | User envía mensaje                                | Alerta + voz                                                          | ✅                            |
 
 ### Hook de Naming (PENDIENTE)
 
@@ -278,23 +278,23 @@ Antes de cerrar sesión, verificar:
 
 ### System Guardian (gr, gra, gr-agents)
 
-| Alias                         | Type                       | Script                                                  |
-|-------------------------------|----------------------------|---------------------------------------------------------|
-| `gr`                          | dry-run                    | `79_System_Guardian.py --dry-run`                       |
-| `gra`                         | --apply                    | `79_System_Guardian.py --apply`                         |
-| `gr-agents`                   | --agents                   | `79_System_Guardian.py --agents-only`                   |
+| Alias                           | Type                         | Script                                                    |
+|---------------------------------|------------------------------|-----------------------------------------------------------|
+| `gr`                            | dry-run                      | `79_System_Guardian.py --dry-run`                         |
+| `gra`                           | --apply                      | `79_System_Guardian.py --apply`                           |
+| `gr-agents`                     | --agents                     | `79_System_Guardian.py --agents-only`                     |
 
 * *Location**: `~/gr`, `~/.bashrc` functions
 * *Source**: `08_Scripts_Os/79_System_Guardian.py`
 
 ### CE Commands (ce-*)
 
-| Alias                            | Description                                   | Source Script                                                   |
-|----------------------------------|-----------------------------------------------|-----------------------------------------------------------------|
-| `ce-commit`                      | Safe commit with validation                   | `08_Scripts_Os/52_Safe_Commit.py`                               |
-| `ce-guard`                       | Commit guardrails                             | `08_Scripts_Os/52_Commit_Guard.py`                              |
-| `ce-audit`                       | Engineering audit                             | `08_Scripts_Os/42_Audit_Engineering.py`                         |
-| `ce-structure`                   | Structure auditor                             | `08_Scripts_Os/53_Structure_Auditor.py`                         |
+| Alias                              | Description                                     | Source Script                                                     |
+|------------------------------------|-------------------------------------------------|-------------------------------------------------------------------|
+| `ce-commit`                        | Safe commit with validation                     | `08_Scripts_Os/52_Safe_Commit.py`                                 |
+| `ce-guard`                         | Commit guardrails                               | `08_Scripts_Os/52_Commit_Guard.py`                                |
+| `ce-audit`                         | Engineering audit                               | `08_Scripts_Os/42_Audit_Engineering.py`                           |
+| `ce-structure`                     | Structure auditor                               | `08_Scripts_Os/53_Structure_Auditor.py`                           |
 
 * *Location**: `08_Scripts_Os/00_Config/aliases.sh`
 

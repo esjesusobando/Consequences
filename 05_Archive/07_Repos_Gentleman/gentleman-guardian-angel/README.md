@@ -98,15 +98,15 @@ gga install             # Install git hook
 
 ## 🔌 Providers
 
-| Provider          | Config Value       | Installation                                                |
-|-------------------|--------------------|-------------------------------------------------------------|
-| **Claude**        | `claude`           | [claude.ai/code](https://claude.ai/code)                    |
-| **Gemini**        | `gemini`           | [gemini-cli](https://github.com/google-gemini/gemini-cli)   |
-| **Codex**         | `codex`            | `npm i -g @openai/codex`                                    |
-| **OpenCode**      | `opencode`         | [opencode.ai](https://opencode.ai)                          |
-| **Ollama**        | `ollama:<model>`   | [ollama.ai](https://ollama.ai)                              |
-| **LM Studio**     | `lmstudio[:model]` | [lmstudio.ai](https://lmstudio.ai)                          |
-| **GitHub Models** | `github:<model>`   | [marketplace/models](https://github.com/marketplace/models) |
+| Provider            | Config Value         | Installation                                                  |
+|---------------------|----------------------|---------------------------------------------------------------|
+| **Claude**          | `claude`             | [claude.ai/code](https://claude.ai/code)                      |
+| **Gemini**          | `gemini`             | [gemini-cli](https://github.com/google-gemini/gemini-cli)     |
+| **Codex**           | `codex`              | `npm i -g @openai/codex`                                      |
+| **OpenCode**        | `opencode`           | [opencode.ai](https://opencode.ai)                            |
+| **Ollama**          | `ollama:<model>`     | [ollama.ai](https://ollama.ai)                                |
+| **LM Studio**       | `lmstudio[:model]`   | [lmstudio.ai](https://lmstudio.ai)                            |
+| **GitHub Models**   | `github:<model>`     | [marketplace/models](https://github.com/marketplace/models)   |
 
 > 📖 See [docs/providers.md](docs/providers.md) for detailed examples and setup.
 
@@ -114,19 +114,19 @@ gga install             # Install git hook
 
 ## 📋 Commands
 
-| Command                    | Description                 |
-|----------------------------|-----------------------------|
-| `gga init`                 | Create sample `.gga` config |
-| `gga install`              | Install pre-commit hook     |
-| `gga install --commit-msg` | Install commit-msg hook     |
-| `gga uninstall`            | Remove hooks                |
-| `gga run`                  | Review staged files         |
-| `gga run --ci`             | Review last commit (CI/CD)  |
-| `gga run --pr-mode`        | Review full PR changes      |
-| `gga run --no-cache`       | Review ignoring cache       |
-| `gga config`               | Show configuration          |
-| `gga cache status`         | Show cache info             |
-| `gga version`              | Show version                |
+| Command                      | Description                   |
+|------------------------------|-------------------------------|
+| `gga init`                   | Create sample `.gga` config   |
+| `gga install`                | Install pre-commit hook       |
+| `gga install --commit-msg`   | Install commit-msg hook       |
+| `gga uninstall`              | Remove hooks                  |
+| `gga run`                    | Review staged files           |
+| `gga run --ci`               | Review last commit (CI/CD)    |
+| `gga run --pr-mode`          | Review full PR changes        |
+| `gga run --no-cache`         | Review ignoring cache         |
+| `gga config`                 | Show configuration            |
+| `gga cache status`           | Show cache info               |
+| `gga version`                | Show version                  |
 
 > 📖 See [docs/commands.md](docs/commands.md) for detailed usage.
 
@@ -134,18 +134,18 @@ gga install             # Install git hook
 
 ## 📚 Documentation
 
-| Topic                                      | Description                                                         |
-|--------------------------------------------|---------------------------------------------------------------------|
-| [Configuration](docs/configuration.md)     | `.gga` config file, options, hierarchy, env overrides               |
-| [Rules File](docs/rules-file.md)           | Writing effective `01_Personal_Os/11_AGENTS.md`, best practices, skill-based approach |
-| [Providers](docs/providers.md)             | Detailed setup for each AI provider                                 |
-| [Commands](docs/commands.md)               | Full command reference with examples                                |
-| [Caching](docs/caching.md)                 | How smart caching works, invalidation, commands                     |
-| [Integrations](docs/integrations.md)       | Husky, pre-commit, Lefthook, VS Code, CI/CD                         |
-| [Examples](docs/examples.md)               | Real-world walkthrough, project configs                             |
-| [Troubleshooting](docs/troubleshooting.md) | Common issues and fixes                                             |
-| [Changelog](docs/changelog.md)             | Version history                                                     |
-| [Contributing](CONTRIBUTING.md)            | How to contribute (issue-first workflow)                            |
+| Topic                                        | Description                                                                           |
+|----------------------------------------------|---------------------------------------------------------------------------------------|
+| [Configuration](docs/configuration.md)       | `.gga` config file, options, hierarchy, env overrides                                 |
+| [Rules File](docs/rules-file.md)             | Writing effective `01_Personal_Os/11_AGENTS.md`, best practices, skill-based approach |
+| [Providers](docs/providers.md)               | Detailed setup for each AI provider                                                   |
+| [Commands](docs/commands.md)                 | Full command reference with examples                                                  |
+| [Caching](docs/caching.md)                   | How smart caching works, invalidation, commands                                       |
+| [Integrations](docs/integrations.md)         | Husky, pre-commit, Lefthook, VS Code, CI/CD                                           |
+| [Examples](docs/examples.md)                 | Real-world walkthrough, project configs                                               |
+| [Troubleshooting](docs/troubleshooting.md)   | Common issues and fixes                                                               |
+| [Changelog](docs/changelog.md)               | Version history                                                                       |
+| [Contributing](CONTRIBUTING.md)              | How to contribute (issue-first workflow)                                              |
 
 ---
 

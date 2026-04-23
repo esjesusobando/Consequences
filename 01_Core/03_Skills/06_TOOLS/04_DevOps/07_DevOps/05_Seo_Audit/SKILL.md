@@ -16,14 +16,14 @@ Skill para auditorías SEO técnicas comprehensivas usando SOTA tools 2025-2026.
 ## SOTA Stack (2025-2026)
 
 ### Audit Tools
-| Tool                            | Purpose                             | Best For            |
-|---------------------------------|-------------------------------------|---------------------|
-| **Lighthouse CI**               | Core Web Vitals, Performance, PWA   | CI/CD pipelines     |
-| **Screaming Frog v21+**         | Crawling, SEO audit, AI analysis    | Large sites         |
-| **Google Search Console API**   | Métricas reales de búsqueda         | Rankings reales     |
-| **axe DevTools**                | Accesibilidad WCAG 2.2              | Compliance          |
-| **Schema Markup Validator**     | JSON-LD validation                  | Structured data     |
-| **PageSpeed Insights API**      | Field data + Lab data               | Real user metrics   |
+| Tool                              | Purpose                               | Best For              |
+|-----------------------------------|---------------------------------------|-----------------------|
+| **Lighthouse CI**                 | Core Web Vitals, Performance, PWA     | CI/CD pipelines       |
+| **Screaming Frog v21+**           | Crawling, SEO audit, AI analysis      | Large sites           |
+| **Google Search Console API**     | Métricas reales de búsqueda           | Rankings reales       |
+| **axe DevTools**                  | Accesibilidad WCAG 2.2                | Compliance            |
+| **Schema Markup Validator**       | JSON-LD validation                    | Structured data       |
+| **PageSpeed Insights API**        | Field data + Lab data                 | Real user metrics     |
 
 ### CLI Installation
 ```bash
@@ -44,11 +44,11 @@ npm install @axe-core/playwright
 
 ## Core Web Vitals (2025-2026)
 
-| Metric     | Full Name                   | Target     | What It Measures                     |
-|------------|-----------------------------|------------|--------------------------------------|
-| **LCP**    | Largest Contentful Paint    | < 2.5s     | Loading performance                  |
-| **INP**    | Interaction to Next Paint   | < 200ms    | Responsiveness (replaced FID 2024)   |
-| **CLS**    | Cumulative Layout Shift     | < 0.1      | Visual stability                     |
+| Metric       | Full Name                     | Target       | What It Measures                       |
+|--------------|-------------------------------|--------------|----------------------------------------|
+| **LCP**      | Largest Contentful Paint      | < 2.5s       | Loading performance                    |
+| **INP**      | Interaction to Next Paint     | < 200ms      | Responsiveness (replaced FID 2024)     |
+| **CLS**      | Cumulative Layout Shift       | < 0.1        | Visual stability                       |
 
 ### INP vs FID
 - **FID** (First Input Delay): Solo medía el primer input
@@ -624,34 +624,34 @@ curl "https://chromeuxreport.googleapis.com/v1/records:queryRecord?key=CrUX_API_
 
 ## Resources
 
-| Resource             | URL                                             | Purpose                   |
-|----------------------|-------------------------------------------------|---------------------------|
-| Web.dev              | https://web.dev                                 | Core Web Vitals guides    |
-| Lighthouse CI        | https://github.com/GoogleChrome/lighthouse-ci   | CI/CD integration         |
-| Schema.org           | https://schema.org                              | Structured data docs      |
-| Rich Results Test    | https://search.google.com/test/rich-results     | Validate schema           |
-| PageSpeed Insights   | https://pagespeed.web.dev                       | Real user metrics         |
-| Search Console       | https://search.google.com/search-console        | Site performance          |
-| Screaming Frog       | https://www.screamingfrog.co.uk/seo-spider      | Site crawling             |
-| GTmetrix             | https://gtmetrix.com                            | Performance analysis      |
-| WebPageTest          | https://webpagetest.org                         | Detailed page analysis    |
-| CrUX API             | https://developer.chrome.com/docs/crux          | Field data API            |
-| WCAG Guidelines      | https://www.w3.org/WAI/WCAG22/quickref          | Accessibility standards   |
+| Resource               | URL                                               | Purpose                     |
+|------------------------|---------------------------------------------------|-----------------------------|
+| Web.dev                | https://web.dev                                   | Core Web Vitals guides      |
+| Lighthouse CI          | https://github.com/GoogleChrome/lighthouse-ci     | CI/CD integration           |
+| Schema.org             | https://schema.org                                | Structured data docs        |
+| Rich Results Test      | https://search.google.com/test/rich-results       | Validate schema             |
+| PageSpeed Insights     | https://pagespeed.web.dev                         | Real user metrics           |
+| Search Console         | https://search.google.com/search-console          | Site performance            |
+| Screaming Frog         | https://www.screamingfrog.co.uk/seo-spider        | Site crawling               |
+| GTmetrix               | https://gtmetrix.com                              | Performance analysis        |
+| WebPageTest            | https://webpagetest.org                           | Detailed page analysis      |
+| CrUX API               | https://developer.chrome.com/docs/crux            | Field data API              |
+| WCAG Guidelines        | https://www.w3.org/WAI/WCAG22/quickref            | Accessibility standards     |
 
 ---
 
 ## Quick Reference - Common Fixes
 
-| Issue               | Quick Fix                                                                  |
-|---------------------|----------------------------------------------------------------------------|
-| LCP > 2.5s          | Preload hero image, optimize to WebP/AVIF, lazy load below-fold            |
-| INP > 200ms         | Break long tasks, defer non-critical JS, use web workers                   |
-| CLS > 0.1           | Set dimensions on images/video, reserve space for ads, avoid insertAfter   |
-| Missing meta        | Use Next.js Metadata API or react-helmet                                   |
-| No schema           | Add JSON-LD script tag en HEAD, usa Schema.org types                       |
-| Slow TTFB           | Enable CDN, caching, optimize server response                              |
-| Mixed content       | Force HTTPS, update all http:// links to https://                          |
-| Duplicate content   | Set canonical tags, fix URL parameters en Search Console                   |
+| Issue                 | Quick Fix                                                                    |
+|-----------------------|------------------------------------------------------------------------------|
+| LCP > 2.5s            | Preload hero image, optimize to WebP/AVIF, lazy load below-fold              |
+| INP > 200ms           | Break long tasks, defer non-critical JS, use web workers                     |
+| CLS > 0.1             | Set dimensions on images/video, reserve space for ads, avoid insertAfter     |
+| Missing meta          | Use Next.js Metadata API or react-helmet                                     |
+| No schema             | Add JSON-LD script tag en HEAD, usa Schema.org types                         |
+| Slow TTFB             | Enable CDN, caching, optimize server response                                |
+| Mixed content         | Force HTTPS, update all http:// links to https://                            |
+| Duplicate content     | Set canonical tags, fix URL parameters en Search Console                     |
 
 
 ## ⚠️ Gotchas

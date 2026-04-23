@@ -45,12 +45,12 @@ metadata:
 
 ### 2. Coverage Metrics
 
-| Metric                   | Definition                               | Target     | Tool          |
-|--------------------------|------------------------------------------|------------|---------------|
-| **Line Coverage**        | Executed lines / total lines             | 80%+       | Coverage.py   |
-| **Branch Coverage**      | Executed branches / total branches       | 70%+       | Coverage.py   |
-| **Function Coverage**    | Functions called / total functions       | 100%       | Coverage.py   |
-| **Statement Coverage**   | Statements executed / total statements   | 85%+       | Istanbul      |
+| Metric                     | Definition                                 | Target       | Tool            |
+|----------------------------|--------------------------------------------|--------------|-----------------|
+| **Line Coverage**          | Executed lines / total lines               | 80%+         | Coverage.py     |
+| **Branch Coverage**        | Executed branches / total branches         | 70%+         | Coverage.py     |
+| **Function Coverage**      | Functions called / total functions         | 100%         | Coverage.py     |
+| **Statement Coverage**     | Statements executed / total statements     | 85%+         | Istanbul        |
 
 ### 3. Coverage Ignorance Patterns
 

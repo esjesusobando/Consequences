@@ -103,16 +103,16 @@
 
 ## 🎯 Quick Reference
 
-| Qué necesitas | Ve a |
-|--------------|------|
+| Qué necesitas                     | Ve a                      |
+|-----------------------------------|---------------------------|
 | Contenido (Brand, YouTube, Posts) | `01_CREACION_Contenidos/` |
-| UI/UX Design | `02_DISENO_UI_UX/` |
-| Video | `03_VIDEO_MEDIA/` |
-| Automatización (N8N, Firecrawl) | `04_AUTOMATIZACION/` |
-| Workflows (Agent Teams, PM) | `05_WORKFLOWS/` |
-| Tools (Testing, DevOps) | `06_TOOLS/` |
-| Personal OS (Hillary, Life OS) | `07_PERSONAL_OS/` |
-| Legacy | `09_LEGACY/` |
+| UI/UX Design                      | `02_DISENO_UI_UX/`        |
+| Video                             | `03_VIDEO_MEDIA/`         |
+| Automatización (N8N, Firecrawl)   | `04_AUTOMATIZACION/`      |
+| Workflows (Agent Teams, PM)       | `05_WORKFLOWS/`           |
+| Tools (Testing, DevOps)           | `06_TOOLS/`               |
+| Personal OS (Hillary, Life OS)    | `07_PERSONAL_OS/`         |
+| Legacy                            | `09_LEGACY/`              |
 
 ---
 

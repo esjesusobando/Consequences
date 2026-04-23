@@ -2,15 +2,15 @@
 
 ## 📋 Datos del Proyecto
 
-| Item            | Valor                                     |
-|-----------------|-------------------------------------------|
-| **Nombre**      | Macano                                    |
-| **Ubicación**   | Margarita, Venezuela                      |
-| **Tipo**        | Mariscos, Carnes, Internacional, Fusión   |
-| **Equipo**      | 10 personas                               |
-| **Sistema**     | Desde cero                                |
-| **Alcance**     | Completo                                  |
-| **Deadline**    | 2 semanas                                 |
+| Item              | Valor                                       |
+|-------------------|---------------------------------------------|
+| **Nombre**        | Macano                                      |
+| **Ubicación**     | Margarita, Venezuela                        |
+| **Tipo**          | Mariscos, Carnes, Internacional, Fusión     |
+| **Equipo**        | 10 personas                                 |
+| **Sistema**       | Desde cero                                  |
+| **Alcance**       | Completo                                    |
+| **Deadline**      | 2 semanas                                   |
 
 ---
 

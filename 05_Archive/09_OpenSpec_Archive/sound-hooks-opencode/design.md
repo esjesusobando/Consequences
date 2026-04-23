@@ -69,9 +69,9 @@ OpenCode Runtime
 
 ## File Changes
 
-| File                                     | Action   | Description                                                  |
-|------------------------------------------|----------|--------------------------------------------------------------|
-| `.opencode/plugins/sound-on-complete.ts` | Modify   | Rewrite with correct signature + Bun.spawn + PowerShell beep |
+| File                                       | Action     | Description                                                    |
+|--------------------------------------------|------------|----------------------------------------------------------------|
+| `.opencode/plugins/sound-on-complete.ts`   | Modify     | Rewrite with correct signature + Bun.spawn + PowerShell beep   |
 
 ## Interfaces / Contracts
 
@@ -118,13 +118,13 @@ function playSound(): void {
 
 ## Testing Strategy
 
-| Layer   | What to Test             | Approach                                                   |
-|---------|--------------------------|------------------------------------------------------------|
-| Manual  | Plugin loads             | Look for `[SOUND-PLUGIN] Initialized!` in OpenCode log     |
-| Manual  | tool.execute.after fires | Run any OpenCode tool, check log for `[SOUND] Tool after:` |
-| Manual  | Sound plays              | Hear system beep after tool completes                      |
-| Manual  | session.idle fallback    | Wait for session to go idle, verify sound plays            |
-| Manual  | Windows compatibility    | Confirm sound plays on Windows 10/11                       |
+| Layer     | What to Test               | Approach                                                     |
+|-----------|----------------------------|--------------------------------------------------------------|
+| Manual    | Plugin loads               | Look for `[SOUND-PLUGIN] Initialized!` in OpenCode log       |
+| Manual    | tool.execute.after fires   | Run any OpenCode tool, check log for `[SOUND] Tool after:`   |
+| Manual    | Sound plays                | Hear system beep after tool completes                        |
+| Manual    | session.idle fallback      | Wait for session to go idle, verify sound plays              |
+| Manual    | Windows compatibility      | Confirm sound plays on Windows 10/11                         |
 
 ## Migration / Rollout
 

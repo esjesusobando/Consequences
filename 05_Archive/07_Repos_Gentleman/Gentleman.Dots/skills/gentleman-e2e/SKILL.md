@@ -277,11 +277,11 @@ docker run --rm -it gentleman-e2e-ubuntu /bin/bash
 
 ## Test Categories
 
-| Variable             | Tests Run               |
-|----------------------|-------------------------|
-| (default)            | Basic binary tests only |
-| `RUN_BACKUP_TESTS=1` | Backup system tests     |
-| `RUN_FULL_E2E=1`     | Full installation tests |
+| Variable               | Tests Run                 |
+|------------------------|---------------------------|
+| (default)              | Basic binary tests only   |
+| `RUN_BACKUP_TESTS=1`   | Backup system tests       |
+| `RUN_FULL_E2E=1`       | Full installation tests   |
 
 ---
 

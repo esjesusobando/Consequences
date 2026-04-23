@@ -24,21 +24,21 @@ Read `tasks.md`:
 
 Read `specs/authentication/spec.md`, search codebase:
 
-| Requirement            | Status          | Evidence                                              |
-|------------------------|-----------------|-------------------------------------------------------|
-| JWT Token Validation   | ✅ Implemented   | `src/middleware/auth.ts` has verifyAccessToken call   |
-| Token Refresh          | ✅ Implemented   | `src/routes/refresh.ts` has rotation logic            |
-| Secure Logout          | ✅ Implemented   | `src/routes/logout.ts` clears cookies                 |
+| Requirement              | Status            | Evidence                                                |
+|--------------------------|-------------------|---------------------------------------------------------|
+| JWT Token Validation     | ✅ Implemented     | `src/middleware/auth.ts` has verifyAccessToken call     |
+| Token Refresh            | ✅ Implemented     | `src/routes/refresh.ts` has rotation logic              |
+| Secure Logout            | ✅ Implemented     | `src/routes/logout.ts` clears cookies                   |
 
 #### Step 3: Check Coherence
 
 Read `design.md`, verify decisions followed:
 
-| Decision            | Followed?     | Notes                                 |
-|---------------------|---------------|---------------------------------------|
-| HTTP-only cookies   | ✅ Yes         | Cookie options set `httpOnly: true`   |
-| Refresh rotation    | ✅ Yes         | New token issued on each refresh      |
-| jsonwebtoken lib    | ✅ Yes         | Imported and used                     |
+| Decision              | Followed?       | Notes                                   |
+|-----------------------|-----------------|-----------------------------------------|
+| HTTP-only cookies     | ✅ Yes           | Cookie options set `httpOnly: true`     |
+| Refresh rotation      | ✅ Yes           | New token issued on each refresh        |
+| jsonwebtoken lib      | ✅ Yes           | Imported and used                       |
 
 #### Step 4: Run Tests (Real Execution)
 
@@ -68,14 +68,14 @@ Build time: 2.3s
 
 #### Step 5: Spec Compliance Matrix
 
-| Requirement            | Scenario            | Test                                     | Result        |
-|------------------------|---------------------|------------------------------------------|---------------|
-| JWT Token Validation   | Valid token         | `auth.test.ts > allows valid token`      | ✅ COMPLIANT   |
-| JWT Token Validation   | Expired → refresh   | `refresh.test.ts > refreshes expired`    | ✅ COMPLIANT   |
-| JWT Token Validation   | No token → 401      | `auth.test.ts > rejects missing token`   | ✅ COMPLIANT   |
-| Token Refresh          | Valid refresh       | `refresh.test.ts > issues new tokens`    | ✅ COMPLIANT   |
-| Token Refresh          | Invalid refresh     | `refresh.test.ts > rejects invalid`      | ✅ COMPLIANT   |
-| Secure Logout          | User logs out       | `auth.test.ts > clears cookies`          | ✅ COMPLIANT   |
+| Requirement              | Scenario              | Test                                       | Result          |
+|--------------------------|-----------------------|--------------------------------------------|-----------------|
+| JWT Token Validation     | Valid token           | `auth.test.ts > allows valid token`        | ✅ COMPLIANT     |
+| JWT Token Validation     | Expired → refresh     | `refresh.test.ts > refreshes expired`      | ✅ COMPLIANT     |
+| JWT Token Validation     | No token → 401        | `auth.test.ts > rejects missing token`     | ✅ COMPLIANT     |
+| Token Refresh            | Valid refresh         | `refresh.test.ts > issues new tokens`      | ✅ COMPLIANT     |
+| Token Refresh            | Invalid refresh       | `refresh.test.ts > rejects invalid`        | ✅ COMPLIANT     |
+| Secure Logout            | User logs out         | `auth.test.ts > clears cookies`            | ✅ COMPLIANT     |
 
 **Compliance: 6/6 scenarios compliant**
 
@@ -94,11 +94,11 @@ Writes to `.atl/openspec/changes/add-jwt-auth/verify-report.md`
 ---
 
 ### Completeness
-| Metric             | Value     |
-|--------------------|-----------|
-| Tasks total        | 20        |
-| Tasks complete     | 20        |
-| Tasks incomplete   | 0         |
+| Metric               | Value       |
+|----------------------|-------------|
+| Tasks total          | 20          |
+| Tasks complete       | 20          |
+| Tasks incomplete     | 0           |
 
 ---
 
@@ -117,34 +117,34 @@ Writes to `.atl/openspec/changes/add-jwt-auth/verify-report.md`
 
 ### Spec Compliance Matrix
 
-| Requirement            | Scenario            | Test                                     | Result        |
-|------------------------|---------------------|------------------------------------------|---------------|
-| JWT Token Validation   | Valid token         | `auth.test.ts > allows valid token`      | ✅ COMPLIANT   |
-| JWT Token Validation   | Expired → refresh   | `refresh.test.ts > refreshes expired`    | ✅ COMPLIANT   |
-| JWT Token Validation   | Missing token       | `auth.test.ts > rejects missing token`   | ✅ COMPLIANT   |
-| Token Refresh          | Valid refresh       | `refresh.test.ts > issues new tokens`    | ✅ COMPLIANT   |
-| Token Refresh          | Invalid refresh     | `refresh.test.ts > rejects invalid`      | ✅ COMPLIANT   |
-| Secure Logout          | User logs out       | `auth.test.ts > clears cookies`          | ✅ COMPLIANT   |
+| Requirement              | Scenario              | Test                                       | Result          |
+|--------------------------|-----------------------|--------------------------------------------|-----------------|
+| JWT Token Validation     | Valid token           | `auth.test.ts > allows valid token`        | ✅ COMPLIANT     |
+| JWT Token Validation     | Expired → refresh     | `refresh.test.ts > refreshes expired`      | ✅ COMPLIANT     |
+| JWT Token Validation     | Missing token         | `auth.test.ts > rejects missing token`     | ✅ COMPLIANT     |
+| Token Refresh            | Valid refresh         | `refresh.test.ts > issues new tokens`      | ✅ COMPLIANT     |
+| Token Refresh            | Invalid refresh       | `refresh.test.ts > rejects invalid`        | ✅ COMPLIANT     |
+| Secure Logout            | User logs out         | `auth.test.ts > clears cookies`            | ✅ COMPLIANT     |
 
 **Compliance summary**: 6/6 scenarios compliant
 
 ---
 
 ### Correctness (Static — Structural Evidence)
-| Requirement            | Status          | Notes                                  |
-|------------------------|-----------------|----------------------------------------|
-| JWT Token Validation   | ✅ Implemented   | Middleware validates on each request   |
-| Token Refresh          | ✅ Implemented   | Rotation logic in refresh endpoint     |
-| Secure Logout          | ✅ Implemented   | Cookie clearing on logout              |
+| Requirement              | Status            | Notes                                    |
+|--------------------------|-------------------|------------------------------------------|
+| JWT Token Validation     | ✅ Implemented     | Middleware validates on each request     |
+| Token Refresh            | ✅ Implemented     | Rotation logic in refresh endpoint       |
+| Secure Logout            | ✅ Implemented     | Cookie clearing on logout                |
 
 ---
 
 ### Coherence (Design)
-| Decision            | Followed?     | Notes                               |
-|---------------------|---------------|-------------------------------------|
-| HTTP-only cookies   | ✅ Yes         | httpOnly: true in all cookies       |
-| Refresh rotation    | ✅ Yes         | New token issued, old invalidated   |
-| jsonwebtoken        | ✅ Yes         | Used throughout                     |
+| Decision              | Followed?       | Notes                                 |
+|-----------------------|-----------------|---------------------------------------|
+| HTTP-only cookies     | ✅ Yes           | httpOnly: true in all cookies         |
+| Refresh rotation      | ✅ Yes           | New token issued, old invalidated     |
+| jsonwebtoken          | ✅ Yes           | Used throughout                       |
 
 ---
 

@@ -26,14 +26,14 @@ metadata:
 
 ## Evaluation Factors (Always These 6)
 
-| Factor                         | What to Look For                                                                | Red Flags                                             |
-|--------------------------------|---------------------------------------------------------------------------------|-------------------------------------------------------|
-| **Styling**                    | Consistent formatting, naming conventions, file organization, language idioms   | Mixed styles, inconsistent naming, messy structure    |
-| **Technical expertise**        | Correct use of primitives, sensible architecture, tradeoff awareness            | Cargo-cult patterns, overengineering, security gaps   |
-| **Code Quality**               | Maintainability, testability, small functions, error handling, tests            | Giant functions, tight coupling, no tests             |
-| **Go beyond what was asked**   | Useful additions: tests, validation, docs, UX improvements                      | Scope creep, unrelated features                       |
-| **Detailed explanations**      | README quality, design rationale, setup instructions                            | No context, missing setup instructions                |
-| **Other comments or notes**    | Security, operational concerns, collaboration signals                           | Leaked corporate data, hardcoded secrets              |
+| Factor                           | What to Look For                                                                  | Red Flags                                               |
+|----------------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+| **Styling**                      | Consistent formatting, naming conventions, file organization, language idioms     | Mixed styles, inconsistent naming, messy structure      |
+| **Technical expertise**          | Correct use of primitives, sensible architecture, tradeoff awareness              | Cargo-cult patterns, overengineering, security gaps     |
+| **Code Quality**                 | Maintainability, testability, small functions, error handling, tests              | Giant functions, tight coupling, no tests               |
+| **Go beyond what was asked**     | Useful additions: tests, validation, docs, UX improvements                        | Scope creep, unrelated features                         |
+| **Detailed explanations**        | README quality, design rationale, setup instructions                              | No context, missing setup instructions                  |
+| **Other comments or notes**      | Security, operational concerns, collaboration signals                             | Leaked corporate data, hardcoded secrets                |
 
 ## Red Flags Checklist
 
@@ -53,14 +53,14 @@ For each candidate, output a table with these columns:
 ```markdown
 # Review Candidato: {Name}
 
-| Factor                         | Guidance          | Scoring (0-10)     | Notes                                              |
-|--------------------------------|-------------------|--------------------|----------------------------------------------------|
-| **Styling**                    | {guidance text}   | {score}            | {specific observations}                            |
-| **Technical expertise**        | {guidance text}   | {score}            | {specific observations}                            |
-| **Code Quality**               | {guidance text}   | {score}            | {specific observations}                            |
-| **Go beyond what was asked**   | {guidance text}   | {score}            | {specific observations}                            |
-| **Detailed explanations**      | {guidance text}   | {score}            | {specific observations}                            |
-| **Other comments or notes**    | {guidance text}   |                    | {Strengths / Concerns / Questions for follow-up}   |
+| Factor                           | Guidance            | Scoring (0-10)       | Notes                                                |
+|----------------------------------|---------------------|----------------------|------------------------------------------------------|
+| **Styling**                      | {guidance text}     | {score}              | {specific observations}                              |
+| **Technical expertise**          | {guidance text}     | {score}              | {specific observations}                              |
+| **Code Quality**                 | {guidance text}     | {score}              | {specific observations}                              |
+| **Go beyond what was asked**     | {guidance text}     | {score}              | {specific observations}                              |
+| **Detailed explanations**        | {guidance text}     | {score}              | {specific observations}                              |
+| **Other comments or notes**      | {guidance text}     |                      | {Strengths / Concerns / Questions for follow-up}     |
 ```
 
 End with comparative summary if multiple candidates.
@@ -109,14 +109,14 @@ rg -i "arn:aws|account.*[0-9]{12}" --type py
 ```markdown
 ## Resumen Comparativo
 
-| Factor                     | {Candidate 1}     | {Candidate 2}     |
-|----------------------------|-------------------|-------------------|
-| Styling                    | {score}           | {score}           |
-| Technical expertise        | {score}           | {score}           |
-| Code Quality               | {score}           | {score}           |
-| Go beyond what was asked   | {score}           | {score}           |
-| Detailed explanations      | {score}           | {score}           |
-| **TOTAL**                  | **{total}**       | **{total}**       |
+| Factor                       | {Candidate 1}       | {Candidate 2}       |
+|------------------------------|---------------------|---------------------|
+| Styling                      | {score}             | {score}             |
+| Technical expertise          | {score}             | {score}             |
+| Code Quality                 | {score}             | {score}             |
+| Go beyond what was asked     | {score}             | {score}             |
+| Detailed explanations        | {score}             | {score}             |
+| **TOTAL**                    | **{total}**         | **{total}**         |
 
 **Recomendación:** {Clear recommendation with reasoning}
 ```

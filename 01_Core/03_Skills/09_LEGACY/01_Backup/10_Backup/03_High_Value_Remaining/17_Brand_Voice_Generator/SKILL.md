@@ -19,12 +19,12 @@ Generate complete brand configuration files for use with the PPTX Generator and 
 
 ## What This Creates
 
-| File                 | Purpose                          | Used By                      |
-|----------------------|----------------------------------|------------------------------|
-| `brand.json`         | Colors, fonts, assets            | PPTX Generator, Excalidraw   |
-| `config.json`        | Output settings                  | PPTX Generator               |
-| `brand-system.md`    | Design philosophy & guidelines   | All content skills           |
-| `tone-of-voice.md`   | Writing voice & personality      | LinkedIn, X, PPTX content    |
+| File                   | Purpose                            | Used By                        |
+|------------------------|------------------------------------|--------------------------------|
+| `brand.json`           | Colors, fonts, assets              | PPTX Generator, Excalidraw     |
+| `config.json`          | Output settings                    | PPTX Generator                 |
+| `brand-system.md`      | Design philosophy & guidelines     | All content skills             |
+| `tone-of-voice.md`     | Writing voice & personality        | LinkedIn, X, PPTX content      |
 
 ## Output Location
 
@@ -52,12 +52,12 @@ Files are created in:
 
 Ask the user for:
 
-| Field              | Description                                      | Example                                      |
-|--------------------|--------------------------------------------------|----------------------------------------------|
-| **Brand name**     | Folder name (lowercase, no spaces, hyphens OK)   | `my-brand`, `acme-corp`                      |
-| **Display name**   | Human-readable name                              | "My Brand", "ACME Corporation"               |
-| **Description**    | One-line brand description                       | "AI education content and community"         |
-| **Primary use**    | Main content type                                | presentations, social media, documentation   |
+| Field                | Description                                        | Example                                        |
+|----------------------|----------------------------------------------------|------------------------------------------------|
+| **Brand name**       | Folder name (lowercase, no spaces, hyphens OK)     | `my-brand`, `acme-corp`                        |
+| **Display name**     | Human-readable name                                | "My Brand", "ACME Corporation"                 |
+| **Description**      | One-line brand description                         | "AI education content and community"           |
+| **Primary use**      | Main content type                                  | presentations, social media, documentation     |
 
 **Suggested question:**
 > "Let's set up your brand. What's your brand name? (This will be the folder name - use lowercase with hyphens, like 'my-brand')"
@@ -70,18 +70,18 @@ Gather 10 color values. Colors should be hex codes WITHOUT the `#` prefix.
 
 ### Required Colors
 
-| Color                | Purpose                             | Guidance                                                 |
-|----------------------|-------------------------------------|----------------------------------------------------------|
-| `background`         | Main slide/page background          | Dark themes: near-black. Light themes: white/off-white   |
-| `background_alt`     | Alternate background for variety    | Slightly different shade of background                   |
-| `text`               | Primary text color                  | High contrast against background                         |
-| `text_secondary`     | Muted/secondary text                | Slightly lower contrast than primary                     |
-| `accent`             | Primary accent (CTAs, highlights)   | Your signature brand color                               |
-| `accent_secondary`   | Secondary accent                    | Complement to primary accent                             |
-| `accent_tertiary`    | Third accent (optional variety)     | Another complement, or same as secondary                 |
-| `code_bg`            | Code block background               | Darker than main background                              |
-| `card_bg`            | Card/surface background             | Between background and text                              |
-| `card_bg_alt`        | Alternate card background           | Slight variation of card_bg                              |
+| Color                  | Purpose                               | Guidance                                                   |
+|------------------------|---------------------------------------|------------------------------------------------------------|
+| `background`           | Main slide/page background            | Dark themes: near-black. Light themes: white/off-white     |
+| `background_alt`       | Alternate background for variety      | Slightly different shade of background                     |
+| `text`                 | Primary text color                    | High contrast against background                           |
+| `text_secondary`       | Muted/secondary text                  | Slightly lower contrast than primary                       |
+| `accent`               | Primary accent (CTAs, highlights)     | Your signature brand color                                 |
+| `accent_secondary`     | Secondary accent                      | Complement to primary accent                               |
+| `accent_tertiary`      | Third accent (optional variety)       | Another complement, or same as secondary                   |
+| `code_bg`              | Code block background                 | Darker than main background                                |
+| `card_bg`              | Card/surface background               | Between background and text                                |
+| `card_bg_alt`          | Alternate card background             | Slight variation of card_bg                                |
 
 ### Color Discovery Questions
 
@@ -113,11 +113,11 @@ card_bg: f0f0f0 to e8e8e8 range
 
 Gather 3 font names:
 
-| Font        | Purpose                      | Common Choices                                |
-|-------------|------------------------------|-----------------------------------------------|
-| `heading`   | Headlines, titles, buttons   | Inter, Montserrat, Poppins, Roboto            |
-| `body`      | Body text, descriptions      | Inter, Open Sans, Lato, Source Sans Pro       |
-| `code`      | Code blocks, terminal        | JetBrains Mono, Fira Code, Monaco, Consolas   |
+| Font          | Purpose                        | Common Choices                                  |
+|---------------|--------------------------------|-------------------------------------------------|
+| `heading`     | Headlines, titles, buttons     | Inter, Montserrat, Poppins, Roboto              |
+| `body`        | Body text, descriptions        | Inter, Open Sans, Lato, Source Sans Pro         |
+| `code`        | Code blocks, terminal          | JetBrains Mono, Fira Code, Monaco, Consolas     |
 
 **Question:**
 > "What fonts should we use? I need a heading font, body font, and code/monospace font. Common choices are Inter for both heading and body, and JetBrains Mono for code."
@@ -133,11 +133,11 @@ Gather 3 font names:
 
 Gather asset paths (relative to brand folder):
 
-| Asset         | Description                                    | Common                             |
-|---------------|------------------------------------------------|------------------------------------|
-| `logo`        | Primary logo file                              | `assets/logo.png`                  |
-| `logo_dark`   | Logo variant for dark backgrounds (optional)   | `null` or `assets/logo-dark.png`   |
-| `icon`        | Square icon (optional)                         | `null` or `assets/icon.png`        |
+| Asset           | Description                                      | Common                               |
+|-----------------|--------------------------------------------------|--------------------------------------|
+| `logo`          | Primary logo file                                | `assets/logo.png`                    |
+| `logo_dark`     | Logo variant for dark backgrounds (optional)     | `null` or `assets/logo-dark.png`     |
+| `icon`          | Square icon (optional)                           | `null` or `assets/icon.png`          |
 
 **Question:**
 > "Do you have a logo file? If so, you'll need to copy it to the brand folder. What's the filename? (e.g., 'logo.png')"

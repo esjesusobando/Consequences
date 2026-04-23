@@ -12,15 +12,15 @@ Your role: coordinate phases sequentially, maintain a thin working thread, apply
 
 Core principle: **does this inflate my context without need?** If yes → defer to a later phase or break the task. If no → do it inline.
 
-| Action                                                     | Inline   | Defer / Phase-Boundary     |
-|------------------------------------------------------------|----------|----------------------------|
-| Read to decide/verify (1-3 files)                          | ✅        | —                          |
-| Read to explore/understand (4+ files)                      | —        | ✅ run as sdd-explore phase |
-| Read as preparation for writing                            | —        | ✅ same phase as the write  |
-| Write atomic (one file, mechanical, you already know what) | ✅        | —                          |
-| Write with analysis (multiple files, new logic)            | —        | ✅ run as sdd-apply phase   |
-| Bash for state (git, gh)                                   | ✅        | —                          |
-| Bash for execution (test, build, install)                  | —        | ✅ run as sdd-verify phase  |
+| Action                                                       | Inline     | Defer / Phase-Boundary       |
+|--------------------------------------------------------------|------------|------------------------------|
+| Read to decide/verify (1-3 files)                            | ✅          | —                            |
+| Read to explore/understand (4+ files)                        | —          | ✅ run as sdd-explore phase   |
+| Read as preparation for writing                              | —          | ✅ same phase as the write    |
+| Write atomic (one file, mechanical, you already know what)   | ✅          | —                            |
+| Write with analysis (multiple files, new logic)              | —          | ✅ run as sdd-apply phase     |
+| Bash for state (git, gh)                                     | ✅          | —                            |
+| Bash for execution (test, build, install)                    | —          | ✅ run as sdd-verify phase    |
 
 All work runs inline — there are no sub-agents. "Defer" means complete the current phase, save artifacts, pause for user approval, then proceed.
 
@@ -122,18 +122,18 @@ Each phase returns: `status`, `executive_summary`, `artifacts`, `next_recommende
 
 Read this table at session start. Windsurf Cascade supports multiple models — if your current model matches a phase's recommended alias, proceed normally. If you cannot switch models mid-session, use the table as a reasoning-depth guide: phases assigned to `opus` require deeper architectural thinking, while `haiku` phases are mechanical.
 
-| Phase        | Default Model   | Reason                                     |
-|--------------|-----------------|--------------------------------------------|
-| orchestrator | opus            | Coordinates, makes decisions               |
-| sdd-explore  | sonnet          | Reads code, structural - not architectural |
-| sdd-propose  | opus            | Architectural decisions                    |
-| sdd-spec     | sonnet          | Structured writing                         |
-| sdd-design   | opus            | Architecture decisions                     |
-| sdd-tasks    | sonnet          | Mechanical breakdown                       |
-| sdd-apply    | sonnet          | Implementation                             |
-| sdd-verify   | sonnet          | Validation against spec                    |
-| sdd-archive  | haiku           | Copy and close                             |
-| default      | sonnet          | Non-SDD general delegation                 |
+| Phase          | Default Model     | Reason                                       |
+|----------------|-------------------|----------------------------------------------|
+| orchestrator   | opus              | Coordinates, makes decisions                 |
+| sdd-explore    | sonnet            | Reads code, structural - not architectural   |
+| sdd-propose    | opus              | Architectural decisions                      |
+| sdd-spec       | sonnet            | Structured writing                           |
+| sdd-design     | opus              | Architecture decisions                       |
+| sdd-tasks      | sonnet            | Mechanical breakdown                         |
+| sdd-apply      | sonnet            | Implementation                               |
+| sdd-verify     | sonnet            | Validation against spec                      |
+| sdd-archive    | haiku             | Copy and close                               |
+| default        | sonnet            | Non-SDD general delegation                   |
 
 <!-- /gentle-ai:sdd-model-assignments -->
 
@@ -143,12 +143,12 @@ Read this table at session start. Windsurf Cascade supports multiple models — 
 
 Use this decision tree BEFORE any SDD phase to determine scope:
 
-| User Request                                | Classification   | Workflow                                 |
-|---------------------------------------------|------------------|------------------------------------------|
-| Single file, bug fix, <50 lines             | **Small**        | Code Mode directly — no SDD, no approval |
-| Multiple files, 50-300 lines, new component | **Medium**       | Plan Mode → Approval → Code Mode         |
-| Multi-module, >300 lines, uncertain scope   | **Large**        | Full SDD with formal artifacts           |
-| User says "use SDD" or "hazlo con SDD"      | **Large**        | Full SDD regardless of size              |
+| User Request                                  | Classification     | Workflow                                   |
+|-----------------------------------------------|--------------------|--------------------------------------------|
+| Single file, bug fix, <50 lines               | **Small**          | Code Mode directly — no SDD, no approval   |
+| Multiple files, 50-300 lines, new component   | **Medium**         | Plan Mode → Approval → Code Mode           |
+| Multi-module, >300 lines, uncertain scope     | **Large**          | Full SDD with formal artifacts             |
+| User says "use SDD" or "hazlo con SDD"        | **Large**          | Full SDD regardless of size                |
 
 **When in doubt**: Ask the user. "This looks medium-sized. Want a quick plan, or full SDD with artifacts?"
 
@@ -238,16 +238,16 @@ This is a self-correction mechanism. Do NOT ignore fallback reports — they ind
 
 Since there are no sub-agents, YOU read and write all artifacts directly. Each phase has explicit read/write rules:
 
-| Phase         | Reads                                                  | Writes           |
-|---------------|--------------------------------------------------------|------------------|
-| `sdd-explore` | nothing                                                | `explore`        |
-| `sdd-propose` | exploration (optional)                                 | `proposal`       |
-| `sdd-spec`    | proposal (required)                                    | `spec`           |
-| `sdd-design`  | proposal (required)                                    | `design`         |
-| `sdd-tasks`   | spec + design (required)                               | `tasks`          |
-| `sdd-apply`   | tasks + spec + design + **apply-progress (if exists)** | `apply-progress` |
-| `sdd-verify`  | spec + tasks + **apply-progress**                      | `verify-report`  |
-| `sdd-archive` | all artifacts                                          | `archive-report` |
+| Phase           | Reads                                                    | Writes             |
+|-----------------|----------------------------------------------------------|--------------------|
+| `sdd-explore`   | nothing                                                  | `explore`          |
+| `sdd-propose`   | exploration (optional)                                   | `proposal`         |
+| `sdd-spec`      | proposal (required)                                      | `spec`             |
+| `sdd-design`    | proposal (required)                                      | `design`           |
+| `sdd-tasks`     | spec + design (required)                                 | `tasks`            |
+| `sdd-apply`     | tasks + spec + design + **apply-progress (if exists)**   | `apply-progress`   |
+| `sdd-verify`    | spec + tasks + **apply-progress**                        | `verify-report`    |
+| `sdd-archive`   | all artifacts                                            | `archive-report`   |
 
 For phases with required dependencies, retrieve artifacts from Engram using topic keys before starting the phase. Pass artifact references (topic keys), NOT full content. Retrieve full content only when actively working on that phase — do not inline entire specs or designs into conversation context. Do NOT rely on conversation history alone — conversation context is lossy across sessions.
 
@@ -284,18 +284,18 @@ When executing general (non-SDD) work:
 
 ## Engram Topic Key Format
 
-| Artifact        | Topic Key                          |
-|-----------------|------------------------------------|
-| Project context | `sdd-init/{project}`               |
-| Exploration     | `sdd/{change-name}/explore`        |
-| Proposal        | `sdd/{change-name}/proposal`       |
-| Spec            | `sdd/{change-name}/spec`           |
-| Design          | `sdd/{change-name}/design`         |
-| Tasks           | `sdd/{change-name}/tasks`          |
-| Apply progress  | `sdd/{change-name}/apply-progress` |
-| Verify report   | `sdd/{change-name}/verify-report`  |
-| Archive report  | `sdd/{change-name}/archive-report` |
-| DAG state       | `sdd/{change-name}/state`          |
+| Artifact          | Topic Key                            |
+|-------------------|--------------------------------------|
+| Project context   | `sdd-init/{project}`                 |
+| Exploration       | `sdd/{change-name}/explore`          |
+| Proposal          | `sdd/{change-name}/proposal`         |
+| Spec              | `sdd/{change-name}/spec`             |
+| Design            | `sdd/{change-name}/design`           |
+| Tasks             | `sdd/{change-name}/tasks`            |
+| Apply progress    | `sdd/{change-name}/apply-progress`   |
+| Verify report     | `sdd/{change-name}/verify-report`    |
+| Archive report    | `sdd/{change-name}/archive-report`   |
+| DAG state         | `sdd/{change-name}/state`            |
 
 Retrieve full content via two steps:
 1. `mem_search(query: "{topic_key}", project: "{project}")` → get observation ID

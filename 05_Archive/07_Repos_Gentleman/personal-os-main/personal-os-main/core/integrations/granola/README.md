@@ -110,16 +110,16 @@ cp -r core/integrations/granola/skills/meeting-sync 01_Core/03_Skills/
 
 ## Available Tools
 
-| Tool                         | Description                                 |
-|------------------------------|---------------------------------------------|
-| `search_meetings`            | Search by title, content, or participants   |
-| `get_meeting_details`        | Get full meeting metadata                   |
-| `get_meeting_transcript`     | Retrieve the transcript                     |
-| `check_new_meetings`         | List meetings not yet synced                |
-| `sync_meeting_to_local`      | Export meeting to Knowledge folder          |
-| `analyze_meeting_patterns`   | Analyze topics, frequency, participants     |
-| `get_last_sync_time`         | Check when you last synced                  |
-| `reset_sync`                 | Re-sync meetings from past N days           |
+| Tool                           | Description                                   |
+|--------------------------------|-----------------------------------------------|
+| `search_meetings`              | Search by title, content, or participants     |
+| `get_meeting_details`          | Get full meeting metadata                     |
+| `get_meeting_transcript`       | Retrieve the transcript                       |
+| `check_new_meetings`           | List meetings not yet synced                  |
+| `sync_meeting_to_local`        | Export meeting to Knowledge folder            |
+| `analyze_meeting_patterns`     | Analyze topics, frequency, participants       |
+| `get_last_sync_time`           | Check when you last synced                    |
+| `reset_sync`                   | Re-sync meetings from past N days             |
 
 ## Example Usage
 

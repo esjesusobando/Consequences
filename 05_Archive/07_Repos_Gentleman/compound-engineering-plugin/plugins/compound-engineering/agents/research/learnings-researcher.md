@@ -43,15 +43,15 @@ From the feature/task description, identify:
 
 If the feature type is clear, narrow the search to relevant category directories:
 
-| Feature Type       | Search Directory                                                   |
-|--------------------|--------------------------------------------------------------------|
-| Performance work   | `docs/solutions/performance-issues/`                               |
-| Database changes   | `docs/solutions/database-issues/`                                  |
-| Bug fix            | `docs/solutions/runtime-errors/`, `docs/solutions/logic-errors/`   |
-| Security           | `docs/solutions/security-issues/`                                  |
-| UI work            | `docs/solutions/ui-bugs/`                                          |
-| Integration        | `docs/solutions/integration-issues/`                               |
-| General/unclear    | `docs/solutions/` (all)                                            |
+| Feature Type         | Search Directory                                                     |
+|----------------------|----------------------------------------------------------------------|
+| Performance work     | `docs/solutions/performance-issues/`                                 |
+| Database changes     | `docs/solutions/database-issues/`                                    |
+| Bug fix              | `docs/solutions/runtime-errors/`, `docs/solutions/logic-errors/`     |
+| Security             | `docs/solutions/security-issues/`                                    |
+| UI work              | `docs/solutions/ui-bugs/`                                            |
+| Integration          | `docs/solutions/integration-issues/`                                 |
+| General/unclear      | `docs/solutions/` (all)                                              |
 
 ### Step 3: Content-Search Pre-Filter (Critical for Efficiency)
 

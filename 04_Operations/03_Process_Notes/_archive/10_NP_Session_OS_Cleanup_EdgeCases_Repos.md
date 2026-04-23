@@ -62,14 +62,14 @@ Limpiar y validar el PersonalOS después de semanas de desarrollo intensivo. Ide
 
 ### 4. EDGE CASES EC-01 a EC-06
 
-| EC                      | Descripción                                 | Acción                                  | Resultado                      |
-|-------------------------|---------------------------------------------|-----------------------------------------|--------------------------------|
-| EC-01                   | Proteger .env                               | Crear .env.example                      | ✅ Completado                   |
-| EC-02                   | 52_Safe_Commit ROOT_DIR                     | Ya estaba OK                            | ✅ Confirmado                   |
-| EC-03                   | 54_Commit_Guard docstring                   | Corregir header                         | ✅ Completado                   |
-| EC-04                   | Guardrails PII                              | Expandir +15 patterns                   | ✅ Completado                   |
-| EC-05                   | 00_Context_Reset mtime                      | Ya estaba OK                            | ✅ Confirmado                   |
-| EC-06                   | 13_Validate_Stack                           | Unificar ROOT_DIR                       | ✅ Completado                   |
+| EC                        | Descripción                                   | Acción                                    | Resultado                        |
+|---------------------------|-----------------------------------------------|-------------------------------------------|----------------------------------|
+| EC-01                     | Proteger .env                                 | Crear .env.example                        | ✅ Completado                     |
+| EC-02                     | 52_Safe_Commit ROOT_DIR                       | Ya estaba OK                              | ✅ Confirmado                     |
+| EC-03                     | 54_Commit_Guard docstring                     | Corregir header                           | ✅ Completado                     |
+| EC-04                     | Guardrails PII                                | Expandir +15 patterns                     | ✅ Completado                     |
+| EC-05                     | 00_Context_Reset mtime                        | Ya estaba OK                              | ✅ Confirmado                     |
+| EC-06                     | 13_Validate_Stack                             | Unificar ROOT_DIR                         | ✅ Completado                     |
 
 ### 5. REPARACIÓN config_paths.py
 
@@ -88,17 +88,17 @@ Limpiar y validar el PersonalOS después de semanas de desarrollo intensivo. Ide
 
 #### Repos Clonados → `03_Knowledge/10_Repos_Gentleman/`
 
-| Repo                                       | Stars                      | Estado                     |
-|--------------------------------------------|----------------------------|----------------------------|
-| qmd                                        | ⭐ 15,948                   | ✅                          |
-| taste-skill                                |----------------------------| ✅                          |
-| digitalgarden                              | ⭐ 443                      | ✅                          |
-| engram                                     |----------------------------| ✅                          |
-| gentle-ai                                  |----------------------------| ✅                          |
-| Gentleman-Skills                           |----------------------------| ✅                          |
-| Gentleman.Dots                             |----------------------------| ✅                          |
-| agent-teams-lite                           |----------------------------| ✅                          |
-| gentleman-guardian-angel                   |----------------------------| ✅                          |
+| Repo                                         | Stars                        | Estado                       |
+|----------------------------------------------|------------------------------|------------------------------|
+| qmd                                          | ⭐ 15,948                     | ✅                            |
+| taste-skill                                  |------------------------------| ✅                            |
+| digitalgarden                                | ⭐ 443                        | ✅                            |
+| engram                                       |------------------------------| ✅                            |
+| gentle-ai                                    |------------------------------| ✅                            |
+| Gentleman-Skills                             |------------------------------| ✅                            |
+| Gentleman.Dots                               |------------------------------| ✅                            |
+| agent-teams-lite                             |------------------------------| ✅                            |
+| gentleman-guardian-angel                     |------------------------------| ✅                            |
 
 #### Backups Mirror → `07_Projects/Safe_Backup/Repos_Gentleman_Backup/`
 
@@ -112,43 +112,43 @@ Limpiar y validar el PersonalOS después de semanas de desarrollo intensivo. Ide
 
 * *Ubicación:** `04_Operations/02_Evals/RTM_Engine_Scripts.md`
 
-| Métrica                                | Valor                      |
-|----------------------------------------|----------------------------|
-| Scripts documentados                   | 9                          |
-| Requisitos mapeados                    | 8                          |
-| Test cases                             | 23+                        |
-| Cobertura                              | **100%**                   |
+| Métrica                                  | Valor                        |
+|------------------------------------------|------------------------------|
+| Scripts documentados                     | 9                            |
+| Requisitos mapeados                      | 8                            |
+| Test cases                               | 23+                          |
+| Cobertura                                | **100%**                     |
 
 #### Edge Cases Documentation
 
 * *Ubicación:** `04_Operations/02_Evals/Edge_Cases_Documentation.md`
 
-| Categoría                        | Edge Cases                    |
-|----------------------------------|-------------------------------|
-| Paths/Rutas                      | 3                             |
-| Encoding                         | 2                             |
-| Timeout                          | 2                             |
-| Git                              | 3                             |
-| PII/Security                     | 3                             |
-| Data Integrity                   | 3                             |
-| Sync                             | 3                             |
-| **Total**                        | **30**                        |
+| Categoría                          | Edge Cases                      |
+|------------------------------------|---------------------------------|
+| Paths/Rutas                        | 3                               |
+| Encoding                           | 2                               |
+| Timeout                            | 2                               |
+| Git                                | 3                               |
+| PII/Security                       | 3                               |
+| Data Integrity                     | 3                               |
+| Sync                               | 3                               |
+| **Total**                          | **30**                          |
 
 ### 8. EVALS - Testing Completo
 
 #### Pytest Suite
 
-| Suite                                        | Tests                     | Resultado                     |
-|----------------------------------------------|---------------------------|-------------------------------|
-| test_safe_commit.py                          | 9                         | ✅                             |
-| test_audit_engineering.py                    | 9                         | ✅                             |
-| test_structure_auditor.py                    | 2                         | ✅                             |
-| test_context_switcher.py                     | 3                         | ✅                             |
-| test_benchmark_baseline.py                   | 3                         | ✅                             |
-| test_retry_decorator.py                      | 3                         | ✅                             |
-| test_alert_manager.py                        | 3                         | ✅                             |
-| test_audit_sync_master.py                    | 3                         | ✅                             |
-| **TOTAL**                                    | **35**                    | **✅ 100%**                    |
+| Suite                                          | Tests                       | Resultado                       |
+|------------------------------------------------|-----------------------------|---------------------------------|
+| test_safe_commit.py                            | 9                           | ✅                               |
+| test_audit_engineering.py                      | 9                           | ✅                               |
+| test_structure_auditor.py                      | 2                           | ✅                               |
+| test_context_switcher.py                       | 3                           | ✅                               |
+| test_benchmark_baseline.py                     | 3                           | ✅                               |
+| test_retry_decorator.py                        | 3                           | ✅                               |
+| test_alert_manager.py                          | 3                           | ✅                               |
+| test_audit_sync_master.py                      | 3                           | ✅                               |
+| **TOTAL**                                      | **35**                      | **✅ 100%**                      |
 
 #### Fix Aplicado
 
@@ -163,11 +163,11 @@ Limpiar y validar el PersonalOS después de semanas de desarrollo intensivo. Ide
 
 ### 9. COMMITS REALIZADOS
 
-| Commit                     | Hash                      | Descripción                                            |
-|----------------------------|---------------------------|--------------------------------------------------------|
-| feat                       | f3a1b81                   | RTM + Edge Cases + Alert_Manager fix                   |
-| test                       | 68179c0                   | Edge Cases findings + PII regex fix                    |
-| feat                       | 7808ef5                   | README update (sesión previa)                          |
+| Commit                       | Hash                        | Descripción                                              |
+|------------------------------|-----------------------------|----------------------------------------------------------|
+| feat                         | f3a1b81                     | RTM + Edge Cases + Alert_Manager fix                     |
+| test                         | 68179c0                     | Edge Cases findings + PII regex fix                      |
+| feat                         | 7808ef5                     | README update (sesión previa)                            |
 
 - --
 

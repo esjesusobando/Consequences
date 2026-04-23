@@ -135,61 +135,61 @@ Restart Claude Code to load the new MCP server. You should now be able to use Go
 
 ### Google Docs API
 
-| Tool                     | Description                                             |
-|--------------------------|---------------------------------------------------------|
-| `docs_get_document`      | Get document content by ID                              |
-| `docs_create_document`   | Create a new document                                   |
-| `docs_batch_update`      | Insert/update/delete text, formatting, images, tables   |
+| Tool                       | Description                                               |
+|----------------------------|-----------------------------------------------------------|
+| `docs_get_document`        | Get document content by ID                                |
+| `docs_create_document`     | Create a new document                                     |
+| `docs_batch_update`        | Insert/update/delete text, formatting, images, tables     |
 
 ### Google Sheets API
 
-| Tool                          | Description                              |
-|-------------------------------|------------------------------------------|
-| `sheets_get_spreadsheet`      | Get spreadsheet metadata                 |
-| `sheets_get_values`           | Read cell values from a range            |
-| `sheets_batch_get_values`     | Read from multiple ranges                |
-| `sheets_update_values`        | Write values to a range                  |
-| `sheets_append_values`        | Append rows to a table                   |
-| `sheets_create_spreadsheet`   | Create a new spreadsheet                 |
-| `sheets_batch_update`         | Apply formatting, charts, filters        |
-| `sheets_clear_values`         | Clear cell values from a range           |
-| `sheets_duplicate_sheet`      | Duplicate a sheet within a spreadsheet   |
+| Tool                            | Description                                |
+|---------------------------------|--------------------------------------------|
+| `sheets_get_spreadsheet`        | Get spreadsheet metadata                   |
+| `sheets_get_values`             | Read cell values from a range              |
+| `sheets_batch_get_values`       | Read from multiple ranges                  |
+| `sheets_update_values`          | Write values to a range                    |
+| `sheets_append_values`          | Append rows to a table                     |
+| `sheets_create_spreadsheet`     | Create a new spreadsheet                   |
+| `sheets_batch_update`           | Apply formatting, charts, filters          |
+| `sheets_clear_values`           | Clear cell values from a range             |
+| `sheets_duplicate_sheet`        | Duplicate a sheet within a spreadsheet     |
 
 ### Google Drive API
 
-| Tool                       | Description                                  |
-|----------------------------|----------------------------------------------|
-| `drive_get_file`           | Download file content (PDFs, images, etc.)   |
-| `drive_list_files`         | List files in your Drive                     |
-| `drive_search_files`       | Search for files by name or content          |
-| `drive_copy_file`          | Create a copy of a file                      |
-| `drive_list_comments`      | List comments on a document                  |
-| `drive_create_comment`     | Add a comment (anchored or unanchored)       |
-| `drive_reply_to_comment`   | Reply to an existing comment                 |
-| `drive_resolve_comment`    | Mark comment as resolved                     |
-| `drive_delete_comment`     | Delete a comment                             |
+| Tool                         | Description                                    |
+|------------------------------|------------------------------------------------|
+| `drive_get_file`             | Download file content (PDFs, images, etc.)     |
+| `drive_list_files`           | List files in your Drive                       |
+| `drive_search_files`         | Search for files by name or content            |
+| `drive_copy_file`            | Create a copy of a file                        |
+| `drive_list_comments`        | List comments on a document                    |
+| `drive_create_comment`       | Add a comment (anchored or unanchored)         |
+| `drive_reply_to_comment`     | Reply to an existing comment                   |
+| `drive_resolve_comment`      | Mark comment as resolved                       |
+| `drive_delete_comment`       | Delete a comment                               |
 
 ### Gmail API
 
-| Tool                       | Description                                      |
-|----------------------------|--------------------------------------------------|
-| `gmail_list_messages`      | List messages with optional search filters       |
-| `gmail_get_message`        | Get full content of a specific message           |
-| `gmail_list_threads`       | List conversation threads                        |
-| `gmail_get_thread`         | Get all messages in a thread                     |
-| `gmail_list_labels`        | List all Gmail labels (folders)                  |
-| `gmail_create_draft`       | Create an email draft (not sent automatically)   |
-| `gmail_list_attachments`   | List attachments in a message                    |
-| `gmail_get_attachment`     | Download an attachment                           |
+| Tool                         | Description                                        |
+|------------------------------|----------------------------------------------------|
+| `gmail_list_messages`        | List messages with optional search filters         |
+| `gmail_get_message`          | Get full content of a specific message             |
+| `gmail_list_threads`         | List conversation threads                          |
+| `gmail_get_thread`           | Get all messages in a thread                       |
+| `gmail_list_labels`          | List all Gmail labels (folders)                    |
+| `gmail_create_draft`         | Create an email draft (not sent automatically)     |
+| `gmail_list_attachments`     | List attachments in a message                      |
+| `gmail_get_attachment`       | Download an attachment                             |
 
 ### Google Calendar API (Read-Only)
 
-| Tool                        | Description                                      |
-|-----------------------------|--------------------------------------------------|
-| `calendar_list_calendars`   | List all accessible calendars                    |
-| `calendar_list_events`      | List events with time range and search filters   |
-| `calendar_get_event`        | Get detailed event information                   |
-| `calendar_freebusy_query`   | Check free/busy availability for calendars       |
+| Tool                          | Description                                        |
+|-------------------------------|----------------------------------------------------|
+| `calendar_list_calendars`     | List all accessible calendars                      |
+| `calendar_list_events`        | List events with time range and search filters     |
+| `calendar_get_event`          | Get detailed event information                     |
+| `calendar_freebusy_query`     | Check free/busy availability for calendars         |
 
 ## Usage Examples
 
@@ -221,11 +221,11 @@ Make sure you enabled all five APIs (Docs, Sheets, Drive, Gmail, Calendar) in St
 
 ## Environment Variables
 
-| Variable                 | Description                                     |
-|--------------------------|-------------------------------------------------|
-| `GOOGLE_CLIENT_ID`       | OAuth 2.0 Client ID from Google Cloud Console   |
-| `GOOGLE_CLIENT_SECRET`   | OAuth 2.0 Client Secret                         |
-| `GOOGLE_REFRESH_TOKEN`   | Refresh token from OAuth Playground             |
+| Variable                   | Description                                       |
+|----------------------------|---------------------------------------------------|
+| `GOOGLE_CLIENT_ID`         | OAuth 2.0 Client ID from Google Cloud Console     |
+| `GOOGLE_CLIENT_SECRET`     | OAuth 2.0 Client Secret                           |
+| `GOOGLE_REFRESH_TOKEN`     | Refresh token from OAuth Playground               |
 
 ## Development
 

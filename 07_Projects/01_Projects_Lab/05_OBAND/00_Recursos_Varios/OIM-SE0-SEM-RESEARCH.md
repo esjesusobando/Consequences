@@ -9,41 +9,41 @@
 
 ## 1. Competidores Atlanta (Análisis SEO)
 
-| Competidor                        | Dominio                      | Fortalezas SEO                      |
-|-----------------------------------|------------------------------|-------------------------------------|
-| **GFI Atlanta**                   | gfiatl.com                   | Local SEO fuerte, contenido extenso |
-| **Office Installation Solutions** | oisoffice.com                | GBP optimizado, reseñas             |
-| **Atlanta Office Interiors**      | atlantaofficeinteriors.com   | Portfolio visual, servicios claros  |
-| **OSI Atlanta**                   | osiatlanta.com               | Claims "#1 installer in Georgia"    |
-| **Workplace Installation Group**  | workplaceofficefurniture.com | Servicio en toda Southeast          |
+| Competidor                          | Dominio                        | Fortalezas SEO                        |
+|-------------------------------------|--------------------------------|---------------------------------------|
+| **GFI Atlanta**                     | gfiatl.com                     | Local SEO fuerte, contenido extenso   |
+| **Office Installation Solutions**   | oisoffice.com                  | GBP optimizado, reseñas               |
+| **Atlanta Office Interiors**        | atlantaofficeinteriors.com     | Portfolio visual, servicios claros    |
+| **OSI Atlanta**                     | osiatlanta.com                 | Claims "#1 installer in Georgia"      |
+| **Workplace Installation Group**    | workplaceofficefurniture.com   | Servicio en toda Southeast            |
 
 ---
 
 ## 2. Keywords Estratégicas
 
 ### Primary Keywords (Alto Volumen)
-| Keyword                                  | Intent    | Dificultad   |
-|------------------------------------------|-----------|--------------|
-| office furniture installation Atlanta    | Comercial | Media        |
-| corporate office relocation Atlanta      | Comercial | Media-Alta   |
-| office furniture reconfiguration Atlanta | Comercial | Baja         |
-| workspace installation services Atlanta  | Comercial | Baja         |
+| Keyword                                    | Intent      | Dificultad     |
+|--------------------------------------------|-------------|----------------|
+| office furniture installation Atlanta      | Comercial   | Media          |
+| corporate office relocation Atlanta        | Comercial   | Media-Alta     |
+| office furniture reconfiguration Atlanta   | Comercial   | Baja           |
+| workspace installation services Atlanta    | Comercial   | Baja           |
 
 ### Secondary Keywords (Nicho)
-| Keyword                                 | Intent    | Dificultad   |
-|-----------------------------------------|-----------|--------------|
-| cubicle installation Atlanta            | Comercial | Baja         |
-| conference room setup Atlanta           | Comercial | Baja         |
-| office furniture assembly Atlanta       | Comercial | Media        |
-| commercial furniture installers Atlanta | Comercial | Media        |
+| Keyword                                   | Intent      | Dificultad     |
+|-------------------------------------------|-------------|----------------|
+| cubicle installation Atlanta              | Comercial   | Baja           |
+| conference room setup Atlanta             | Comercial   | Baja           |
+| office furniture assembly Atlanta         | Comercial   | Media          |
+| commercial furniture installers Atlanta   | Comercial   | Media          |
 
 ### Long-tail Keywords (Alta Conversión)
-| Keyword                                       | Intent    |
-|-----------------------------------------------|-----------|
-| office furniture installation company Atlanta | Comercial |
-| corporate space management services Atlanta   | Comercial |
-| office relocation company Atlanta Georgia     | Comercial |
-| professional furniture installation Atlanta   | Comercial |
+| Keyword                                         | Intent      |
+|-------------------------------------------------|-------------|
+| office furniture installation company Atlanta   | Comercial   |
+| corporate space management services Atlanta     | Comercial   |
+| office relocation company Atlanta Georgia       | Comercial   |
+| professional furniture installation Atlanta     | Comercial   |
 
 ---
 
@@ -127,25 +127,25 @@
 ```
 
 ### 3.4 Keywords en Content
-| Página             | Keywords Primarias                                                       | Keywords Secundarias                                   |
-|--------------------|--------------------------------------------------------------------------|--------------------------------------------------------|
-| Home               | office furniture installation Atlanta, corporate space management        | workspace engineering, facility management             |
-| Installation       | workstation installation, cubicle setup, conference room assembly        | ergonomic furniture Atlanta, office furniture mounting |
-| Reconfiguration    | office redesign Atlanta, workspace optimization, furniture rearrangement | new office architecture, workspace redesign            |
-| Relocation         | office move Atlanta, corporate relocation, office transit                | safe disassembly, reinstallation services              |
-| Project Management | enterprise office installation, corporate project Atlanta                | fast turnaround, large scale office                    |
+| Página               | Keywords Primarias                                                         | Keywords Secundarias                                     |
+|----------------------|----------------------------------------------------------------------------|----------------------------------------------------------|
+| Home                 | office furniture installation Atlanta, corporate space management          | workspace engineering, facility management               |
+| Installation         | workstation installation, cubicle setup, conference room assembly          | ergonomic furniture Atlanta, office furniture mounting   |
+| Reconfiguration      | office redesign Atlanta, workspace optimization, furniture rearrangement   | new office architecture, workspace redesign              |
+| Relocation           | office move Atlanta, corporate relocation, office transit                  | safe disassembly, reinstallation services                |
+| Project Management   | enterprise office installation, corporate project Atlanta                  | fast turnaround, large scale office                      |
 
 ---
 
 ## 4. SEO Técnica
 
 ### 4.1 Performance (Core Web Vitals)
-| Métrica   | Target   | Implementación                        |
-|-----------|----------|---------------------------------------|
-| LCP       | < 2.5s   | Next.js Image optimization, lazy load |
-| FID       | < 100ms  | Framer Motion isolated components     |
-| CLS       | < 0.1    | min-h-[100dvh] en hero sections       |
-| TTFB      | < 600ms  | Vercel hosting, edge caching          |
+| Métrica     | Target     | Implementación                          |
+|-------------|------------|-----------------------------------------|
+| LCP         | < 2.5s     | Next.js Image optimization, lazy load   |
+| FID         | < 100ms    | Framer Motion isolated components       |
+| CLS         | < 0.1      | min-h-[100dvh] en hero sections         |
+| TTFB        | < 600ms    | Vercel hosting, edge caching            |
 
 ### 4.2 Mobile-First
 - Responsive design mandatory
@@ -167,18 +167,18 @@
 ## 5. Google Business Profile (GBP)
 
 ### 5.1 Optimización GBP
-| Campo                      | Contenido                                                                                                                                              |
-|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Nombre**                 | Office Installations Mayen                                                                                                                             |
-| **Categoría Principal**    | Office Furniture Store                                                                                                                                 |
-| **Categorías Secundarias** | Furniture Rental Service, Office Equipment Supplier                                                                                                    |
-| **Descripción**            | +8 years specializing in corporate space engineering. Installation, reconfiguration, relocation, and project management for workspaces in Atlanta, GA. |
-| **Dirección**              | Atlanta, GA (área de servicio)                                                                                                                         |
-| **Phone**                  | +1 (470) 595-0121                                                                                                                                      |
-| **Website**                | oimayen.com                                                                                                                                            |
-| **Email**                  | Oiminstalllc@gmail.com                                                                                                                                 |
-| **Horario**                | Mon-Fri 8am-6pm                                                                                                                                        |
-| **Servicios**              | Installation, Reconfiguration, Relocation, Project Management                                                                                          |
+| Campo                        | Contenido                                                                                                                                                |
+|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Nombre**                   | Office Installations Mayen                                                                                                                               |
+| **Categoría Principal**      | Office Furniture Store                                                                                                                                   |
+| **Categorías Secundarias**   | Furniture Rental Service, Office Equipment Supplier                                                                                                      |
+| **Descripción**              | +8 years specializing in corporate space engineering. Installation, reconfiguration, relocation, and project management for workspaces in Atlanta, GA.   |
+| **Dirección**                | Atlanta, GA (área de servicio)                                                                                                                           |
+| **Phone**                    | +1 (470) 595-0121                                                                                                                                        |
+| **Website**                  | oimayen.com                                                                                                                                              |
+| **Email**                    | Oiminstalllc@gmail.com                                                                                                                                   |
+| **Horario**                  | Mon-Fri 8am-6pm                                                                                                                                          |
+| **Servicios**                | Installation, Reconfiguration, Relocation, Project Management                                                                                            |
 
 ### 5.2 GBP Posts (Mensual)
 - Before/After proyectos
@@ -196,13 +196,13 @@
 ## 6. Link Building Strategy
 
 ### 6.1 Backlinks de Autoridad Local
-| Fuente                       | Tipo       | Prioridad   |
-|------------------------------|------------|-------------|
-| Atlanta Business Chronicle   | PR/News    | Alta        |
-| Atlanta Magazine             | Guest Post | Alta        |
-| Georgia Chamber of Commerce  | Directory  | Media       |
-| Better Business Bureau (BBB) | Listing    | Alta        |
-| Houzz / Yelp / Thumbtack     | Reviews    | Media       |
+| Fuente                         | Tipo         | Prioridad     |
+|--------------------------------|--------------|---------------|
+| Atlanta Business Chronicle     | PR/News      | Alta          |
+| Atlanta Magazine               | Guest Post   | Alta          |
+| Georgia Chamber of Commerce    | Directory    | Media         |
+| Better Business Bureau (BBB)   | Listing      | Alta          |
+| Houzz / Yelp / Thumbtack       | Reviews      | Media         |
 
 ### 6.2 Directorios Locales
 - [ ] Atlanta Business Directory
@@ -240,12 +240,12 @@ Campaign: Office Furniture Installation Atlanta
 ```
 
 ### 7.2 Keywords para PPC (Alto Intent)
-| Keyword                               | CPC Est.   | Conversión Est.  |
-|---------------------------------------|------------|------------------|
-| office furniture installation Atlanta | $8-15      | Alta             |
-| corporate office relocation Atlanta   | $12-20     | Alta             |
-| office furniture installer Atlanta    | $10-18     | Alta             |
-| office setup services Atlanta         | $6-12      | Media            |
+| Keyword                                 | CPC Est.     | Conversión Est.    |
+|-----------------------------------------|--------------|--------------------|
+| office furniture installation Atlanta   | $8-15        | Alta               |
+| corporate office relocation Atlanta     | $12-20       | Alta               |
+| office furniture installer Atlanta      | $10-18       | Alta               |
+| office setup services Atlanta           | $6-12        | Media              |
 
 ### 7.3 Remarketing
 - Display ads para visitantes del sitio
@@ -253,11 +253,11 @@ Campaign: Office Furniture Installation Atlanta
 - LinkedIn ads para decision-makers de empresas
 
 ### 7.4 Budget Suggestion
-| Fase        | Budget Mensual   | Duración   |
-|-------------|------------------|------------|
-| Setup       | $1,500-2,500     | 3 meses    |
-| Scaling     | $2,500-5,000     | 6 meses    |
-| Maintenance | $1,500-2,000     | Indefinido |
+| Fase          | Budget Mensual     | Duración     |
+|---------------|--------------------|--------------|
+| Setup         | $1,500-2,500       | 3 meses      |
+| Scaling       | $2,500-5,000       | 6 meses      |
+| Maintenance   | $1,500-2,000       | Indefinido   |
 
 ---
 
@@ -286,46 +286,46 @@ Campaign: Office Furniture Installation Atlanta
 ## 9. Analytics & Tracking
 
 ### 9.1 Google Stack
-| Herramienta            | Propósito                |
-|------------------------|--------------------------|
-| Google Analytics 4     | Tracking completo        |
-| Google Search Console  | SEO monitoring, keywords |
-| Google Tag Manager     | Eventos custom           |
-| Google Merchant Center | (si aplica e-commerce)   |
+| Herramienta              | Propósito                  |
+|--------------------------|----------------------------|
+| Google Analytics 4       | Tracking completo          |
+| Google Search Console    | SEO monitoring, keywords   |
+| Google Tag Manager       | Eventos custom             |
+| Google Merchant Center   | (si aplica e-commerce)     |
 
 ### 9.2 KPIs a Monitorear
-| Métrica                   | Target          |
-|---------------------------|-----------------|
-| Organic traffic growth    | +20% mensual    |
-| Keyword rankings (top 10) | 15+ keywords    |
-| Local pack visibility     | #1-3 en Atlanta |
-| GBP visibility            | Map pack #1     |
-| Conversion rate (web)     | > 3%            |
-| Phone calls from GBP      | > 50/month      |
-| CTR (ads)                 | > 4%            |
+| Métrica                     | Target            |
+|-----------------------------|-------------------|
+| Organic traffic growth      | +20% mensual      |
+| Keyword rankings (top 10)   | 15+ keywords      |
+| Local pack visibility       | #1-3 en Atlanta   |
+| GBP visibility              | Map pack #1       |
+| Conversion rate (web)       | > 3%              |
+| Phone calls from GBP        | > 50/month        |
+| CTR (ads)                   | > 4%              |
 
 ---
 
 ## 10. Timeline de Implementación
 
-| Mes          | Acciones SEO/SEM                                       |
-|--------------|--------------------------------------------------------|
-| **Mes 1**    | GBP setup, On-page SEO, Schema, Technical SEO          |
-| **Mes 2**    | Content marketing, link building inicial, social setup |
-| **Mes 3**    | Google Ads launch, remarketing setup                   |
-| **Mes 4-6**  | Optimización basada en datos, scaling PPC              |
-| **Mes 7-12** | Dominio local, expansión a surrounding areas           |
+| Mes            | Acciones SEO/SEM                                         |
+|----------------|----------------------------------------------------------|
+| **Mes 1**      | GBP setup, On-page SEO, Schema, Technical SEO            |
+| **Mes 2**      | Content marketing, link building inicial, social setup   |
+| **Mes 3**      | Google Ads launch, remarketing setup                     |
+| **Mes 4-6**    | Optimización basada en datos, scaling PPC                |
+| **Mes 7-12**   | Dominio local, expansión a surrounding areas             |
 
 ---
 
 ## 11. Diferenciación vs Competidores
 
-| Competidor   | Su SEO                     | Ours                                          |
-|--------------|----------------------------|-----------------------------------------------|
-| GFI          | Generic, no diferenciación | Engineering-focused copy                      |
-| OIS          | Productos primero          | Servicios primero, resultados después         |
-| OSI          | "#1" claim sin evidencia   | Métricas reales: +8 years, 200+ projects      |
-| Workplace    | Solo ventas                | Engineering approach, proposal de valor única |
+| Competidor     | Su SEO                       | Ours                                            |
+|----------------|------------------------------|-------------------------------------------------|
+| GFI            | Generic, no diferenciación   | Engineering-focused copy                        |
+| OIS            | Productos primero            | Servicios primero, resultados después           |
+| OSI            | "#1" claim sin evidencia     | Métricas reales: +8 years, 200+ projects        |
+| Workplace      | Solo ventas                  | Engineering approach, proposal de valor única   |
 
 ---
 

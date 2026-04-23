@@ -20,12 +20,12 @@ All new code must pass `make lint` before pushing.
 
 ## Accepted Exclusions
 
-| Code   | Rule                             | Why GGA Excludes It                                      |
-|--------|----------------------------------|----------------------------------------------------------|
-| SC1090 | Can't follow non-constant source | GGA uses dynamic paths for lib loading                   |
-| SC1091 | Not following sourced file       | Same — dynamic lib sourcing                              |
-| SC2162 | read without -r                  | GGA intentionally handles backslash input                |
-| SC2129 | Use { } >> file                  | Style preference — individual redirects are clearer here |
+| Code     | Rule                               | Why GGA Excludes It                                        |
+|----------|------------------------------------|------------------------------------------------------------|
+| SC1090   | Can't follow non-constant source   | GGA uses dynamic paths for lib loading                     |
+| SC1091   | Not following sourced file         | Same — dynamic lib sourcing                                |
+| SC2162   | read without -r                    | GGA intentionally handles backslash input                  |
+| SC2129   | Use { } >> file                    | Style preference — individual redirects are clearer here   |
 
 Do NOT add new exclusions without justification in a PR comment.
 
@@ -91,18 +91,18 @@ fi
 
 ## Common Fixes
 
-| ShellCheck warning       | Fix                                               |
-|--------------------------|---------------------------------------------------|
-| SC2086: double quote     | Add `"$var"` around the variable                  |
-| SC2181: check $?         | Replace `if [ $? -eq 0 ]` with `if command; then` |
-| SC2155: declare + assign | Split: `local var; var=$(cmd)`                    |
-| SC2206: word splitting   | Use `read -ra arr <<< "$str"`                     |
+| ShellCheck warning         | Fix                                                 |
+|----------------------------|-----------------------------------------------------|
+| SC2086: double quote       | Add `"$var"` around the variable                    |
+| SC2181: check $?           | Replace `if [ $? -eq 0 ]` with `if command; then`   |
+| SC2155: declare + assign   | Split: `local var; var=$(cmd)`                      |
+| SC2206: word splitting     | Use `read -ra arr <<< "$str"`                       |
 
 ## Cookbook
 
-| If...                     | Then...                                                |
-|---------------------------|--------------------------------------------------------|
-| Writing a new function    | Add `local` for every variable, quote every expansion  |
-| Using `sed -i`            | Add macOS/Linux compatibility check                    |
-| Reading user input        | Use `read -r` unless backslash handling is intentional |
-| Writing a loop over files | Use `while IFS= read -r line` or glob, never `ls`      |
+| If...                       | Then...                                                  |
+|-----------------------------|----------------------------------------------------------|
+| Writing a new function      | Add `local` for every variable, quote every expansion    |
+| Using `sed -i`              | Add macOS/Linux compatibility check                      |
+| Reading user input          | Use `read -r` unless backslash handling is intentional   |
+| Writing a loop over files   | Use `while IFS= read -r line` or glob, never `ls`        |

@@ -2,9 +2,9 @@
 
 ## Entregas del Día
 
-| #     | Proveedor     | Hora llegada     | Estado      | Revisado por     |
-|-------|---------------|------------------|-------------|------------------|
-| 1     |               |                  | Pendiente   |                  |
+| #       | Proveedor       | Hora llegada       | Estado        | Revisado por       |
+|---------|-----------------|--------------------|---------------|--------------------|
+| 1       |                 |                    | Pendiente     |                    |
 
 ---
 
@@ -22,9 +22,9 @@
 
 ## Problemas en Entregas
 
-| Fecha     | Proveedor     | Problema     | Solución     |
-|-----------|---------------|--------------|--------------|
-|           |               |              |              |
+| Fecha       | Proveedor       | Problema       | Solución       |
+|-------------|-----------------|----------------|----------------|
+|             |                 |                |                |
 
 ---
 

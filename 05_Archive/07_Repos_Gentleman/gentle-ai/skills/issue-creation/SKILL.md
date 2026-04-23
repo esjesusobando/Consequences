@@ -54,17 +54,17 @@ Load this skill whenever you need to:
 
 ### Required Fields
 
-| Field                | Description                                                     |
-|----------------------|-----------------------------------------------------------------|
-| Pre-flight Checklist | Confirm no duplicate exists; confirm PR-approval understanding  |
-| Bug Description      | Clear description of what the bug is                            |
-| Steps to Reproduce   | Numbered steps to reproduce the behavior                        |
-| Expected Behavior    | What should happen                                              |
-| Actual Behavior      | What actually happens                                           |
-| Gentle AI Version    | Output of `gga version`                                         |
-| Operating System     | macOS / Linux distro / Windows / WSL                            |
-| AI Agent / Client    | Claude Code / OpenCode / Gemini CLI / Cursor / Windsurf / Other |
-| Affected Area        | See area list below                                             |
+| Field                  | Description                                                       |
+|------------------------|-------------------------------------------------------------------|
+| Pre-flight Checklist   | Confirm no duplicate exists; confirm PR-approval understanding    |
+| Bug Description        | Clear description of what the bug is                              |
+| Steps to Reproduce     | Numbered steps to reproduce the behavior                          |
+| Expected Behavior      | What should happen                                                |
+| Actual Behavior        | What actually happens                                             |
+| Gentle AI Version      | Output of `gga version`                                           |
+| Operating System       | macOS / Linux distro / Windows / WSL                              |
+| AI Agent / Client      | Claude Code / OpenCode / Gemini CLI / Cursor / Windsurf / Other   |
+| Affected Area          | See area list below                                               |
 
 ### Affected Areas
 
@@ -93,14 +93,14 @@ https://github.com/Gentleman-Programming/gentle-ai/issues/new?template=bug_repor
 
 ### Required Fields
 
-| Field                   | Description                                                             |
-|-------------------------|-------------------------------------------------------------------------|
-| Pre-flight Checklist    | Confirm no duplicate exists; confirm PR-approval understanding          |
-| Affected Area           | Which area of `gga` this feature affects                                |
-| Problem Statement       | Describe the problem this feature solves                                |
-| Proposed Solution       | Specific description — include example `gga` command/output if relevant |
-| Alternatives Considered | (optional) Other approaches you thought about                           |
-| Additional Context      | (optional) Screenshots, config files, etc.                              |
+| Field                     | Description                                                               |
+|---------------------------|---------------------------------------------------------------------------|
+| Pre-flight Checklist      | Confirm no duplicate exists; confirm PR-approval understanding            |
+| Affected Area             | Which area of `gga` this feature affects                                  |
+| Problem Statement         | Describe the problem this feature solves                                  |
+| Proposed Solution         | Specific description — include example `gga` command/output if relevant   |
+| Alternatives Considered   | (optional) Other approaches you thought about                             |
+| Additional Context        | (optional) Screenshots, config files, etc.                                |
 
 ### Example CLI Command
 
@@ -122,35 +122,35 @@ https://github.com/Gentleman-Programming/gentle-ai/issues/new?template=feature_r
 
 ### Status Labels (applied to Issues)
 
-| Label                 | Description                                     | Who Applies              |
-|-----------------------|-------------------------------------------------|--------------------------|
-| `status:needs-review` | Newly opened, awaiting maintainer review        | **Auto** (template)      |
-| `status:approved`     | Approved — work can begin                       | Maintainer only          |
-| `status:in-progress`  | Being actively worked on                        | Contributor              |
-| `status:blocked`      | Blocked by another issue or external dependency | Maintainer / Contributor |
-| `status:wont-fix`     | Out of scope or won't be addressed              | Maintainer only          |
+| Label                   | Description                                       | Who Applies                |
+|-------------------------|---------------------------------------------------|----------------------------|
+| `status:needs-review`   | Newly opened, awaiting maintainer review          | **Auto** (template)        |
+| `status:approved`       | Approved — work can begin                         | Maintainer only            |
+| `status:in-progress`    | Being actively worked on                          | Contributor                |
+| `status:blocked`        | Blocked by another issue or external dependency   | Maintainer / Contributor   |
+| `status:wont-fix`       | Out of scope or won't be addressed                | Maintainer only            |
 
 ### Type Labels (applied to Issues and PRs)
 
-| Label                  | Description                                      |
-|------------------------|--------------------------------------------------|
-| `bug`                  | Defect report                                    |
-| `enhancement`          | Feature or improvement request                   |
-| `type:bug`             | Bug fix (used on PRs)                            |
-| `type:feature`         | New feature (used on PRs)                        |
-| `type:docs`            | Documentation only (used on PRs)                 |
-| `type:refactor`        | Refactoring, no functional changes (used on PRs) |
-| `type:chore`           | Build, CI, tooling (used on PRs)                 |
-| `type:breaking-change` | Breaking change (used on PRs)                    |
+| Label                    | Description                                        |
+|--------------------------|----------------------------------------------------|
+| `bug`                    | Defect report                                      |
+| `enhancement`            | Feature or improvement request                     |
+| `type:bug`               | Bug fix (used on PRs)                              |
+| `type:feature`           | New feature (used on PRs)                          |
+| `type:docs`              | Documentation only (used on PRs)                   |
+| `type:refactor`          | Refactoring, no functional changes (used on PRs)   |
+| `type:chore`             | Build, CI, tooling (used on PRs)                   |
+| `type:breaking-change`   | Breaking change (used on PRs)                      |
 
 ### Priority Labels
 
-| Label               | Description                               |
-|---------------------|-------------------------------------------|
-| `priority:critical` | Blocking issues, security vulnerabilities |
-| `priority:high`     | Important, affects many users             |
-| `priority:medium`   | Normal priority                           |
-| `priority:low`      | Nice to have                              |
+| Label                 | Description                                 |
+|-----------------------|---------------------------------------------|
+| `priority:critical`   | Blocking issues, security vulnerabilities   |
+| `priority:high`       | Important, affects many users               |
+| `priority:medium`     | Normal priority                             |
+| `priority:low`        | Nice to have                                |
 
 ---
 

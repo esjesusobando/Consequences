@@ -50,13 +50,13 @@ A stylized blue flame/droplet shape — fluid, dynamic, and modern. Represents e
 
 The signature brand color. Used for primary actions, links, highlights, and the logo.
 
-| Name             | Hex         | HSL            | Use                             |
-|------------------|-------------|----------------|---------------------------------|
-| Dynamous Blue    | `#3B82F6`   | 217° 91% 60%   | Primary buttons, links, logo    |
-| Dynamous Dark    | `#2563EB`   | 217° 91% 53%   | Hover states, outlines          |
-| Dynamous Light   | `#60A5FA`   | 217° 91% 67%   | Secondary accents, highlights   |
-| Dynamous Cyan    | `#0EA5E9`   | 199° 89% 48%   | Tertiary accents, variations    |
-| Dynamous Pale    | `#DBEAFE`   | 214° 95% 93%   | Light mode backgrounds, fills   |
+| Name               | Hex           | HSL              | Use                               |
+|--------------------|---------------|------------------|-----------------------------------|
+| Dynamous Blue      | `#3B82F6`     | 217° 91% 60%     | Primary buttons, links, logo      |
+| Dynamous Dark      | `#2563EB`     | 217° 91% 53%     | Hover states, outlines            |
+| Dynamous Light     | `#60A5FA`     | 217° 91% 67%     | Secondary accents, highlights     |
+| Dynamous Cyan      | `#0EA5E9`     | 199° 89% 48%     | Tertiary accents, variations      |
+| Dynamous Pale      | `#DBEAFE`     | 214° 95% 93%     | Light mode backgrounds, fills     |
 
 **Rule:** Dynamous Blue is the hero. Use it for actions and emphasis. Don't dilute it by overusing.
 
@@ -66,13 +66,13 @@ The signature brand color. Used for primary actions, links, highlights, and the 
 
 Used sparingly for specific semantic purposes.
 
-| Purpose            | Fill        | Stroke      | When to Use                                        |
-|--------------------|-------------|-------------|----------------------------------------------------|
-| AI/LLM             | `#DBEAFE`   | `#0EA5E9`   | Representing AI, agents, LLMs in diagrams          |
-| Success/Start      | `#A7F3D0`   | `#047857`   | Completed states, starting points, announcements   |
-| Warning/Decision   | `#FEF3C7`   | `#B45309`   | Decision points, caution, ratings                  |
-| Error/Stop         | `#FECACA`   | `#B91C1C`   | Errors, destructive actions, end states            |
-| Trigger/Input      | `#FED7AA`   | `#C2410C`   | Input points, triggers in workflows                |
+| Purpose              | Fill          | Stroke        | When to Use                                          |
+|----------------------|---------------|---------------|------------------------------------------------------|
+| AI/LLM               | `#DBEAFE`     | `#0EA5E9`     | Representing AI, agents, LLMs in diagrams            |
+| Success/Start        | `#A7F3D0`     | `#047857`     | Completed states, starting points, announcements     |
+| Warning/Decision     | `#FEF3C7`     | `#B45309`     | Decision points, caution, ratings                    |
+| Error/Stop           | `#FECACA`     | `#B91C1C`     | Errors, destructive actions, end states              |
+| Trigger/Input        | `#FED7AA`     | `#C2410C`     | Input points, triggers in workflows                  |
 
 **Rule:** These are semantic, not decorative. Use them to encode meaning in diagrams and UI states.
 
@@ -124,42 +124,42 @@ box-shadow: 0 0 15px rgba(59, 130, 246, 0.5), 0 0 30px rgba(59, 130, 246, 0.3);
 
 ### Type Scale
 
-| Token     | Size              | Use                            |
-|-----------|-------------------|--------------------------------|
-| `xs`      | 0.75rem (12px)    | Labels, badges, meta           |
-| `sm`      | 0.875rem (14px)   | Secondary text, descriptions   |
-| `base`    | 1rem (16px)       | Body text, paragraphs          |
-| `lg`      | 1.125rem (18px)   | Lead paragraphs, emphasis      |
-| `xl`      | 1.25rem (20px)    | Section headers                |
-| `2xl`     | 1.5rem (24px)     | Card titles                    |
-| `3xl`     | 1.875rem (30px)   | Page headers                   |
-| `4xl`     | 2.25rem (36px)    | Hero subheadings               |
-| `5xl`     | 3rem (48px)       | Hero headings (mobile)         |
-| `6xl`     | 3.75rem (60px)    | Hero headings (desktop)        |
+| Token       | Size                | Use                              |
+|-------------|---------------------|----------------------------------|
+| `xs`        | 0.75rem (12px)      | Labels, badges, meta             |
+| `sm`        | 0.875rem (14px)     | Secondary text, descriptions     |
+| `base`      | 1rem (16px)         | Body text, paragraphs            |
+| `lg`        | 1.125rem (18px)     | Lead paragraphs, emphasis        |
+| `xl`        | 1.25rem (20px)      | Section headers                  |
+| `2xl`       | 1.5rem (24px)       | Card titles                      |
+| `3xl`       | 1.875rem (30px)     | Page headers                     |
+| `4xl`       | 2.25rem (36px)      | Hero subheadings                 |
+| `5xl`       | 3rem (48px)         | Hero headings (mobile)           |
+| `6xl`       | 3.75rem (60px)      | Hero headings (desktop)          |
 
 ### Typography Rules
 
-| Element          | Font             | Weight       | Size      | Line Height     |
-|------------------|------------------|--------------|-----------|-----------------|
-| Display/Hero     | Inter            | 700 (Bold)   | 4xl-6xl   | 1.1             |
-| H1               | Inter            | 700          | 3xl       | 1.2             |
-| H2               | Inter            | 600          | 2xl       | 1.3             |
-| H3               | Inter            | 600          | xl        | 1.4             |
-| Body             | Inter            | 400          | base      | 1.6             |
-| Small            | Inter            | 400          | sm        | 1.5             |
-| Code             | JetBrains Mono   | 400          | sm        | 1.5             |
-| Buttons          | Inter            | 500          | sm-base   | 1               |
-| Thumbnail Text   | Montserrat       | 800          |-----------| 1.1             |
+| Element            | Font               | Weight         | Size        | Line Height       |
+|--------------------|--------------------|----------------|-------------|-------------------|
+| Display/Hero       | Inter              | 700 (Bold)     | 4xl-6xl     | 1.1               |
+| H1                 | Inter              | 700            | 3xl         | 1.2               |
+| H2                 | Inter              | 600            | 2xl         | 1.3               |
+| H3                 | Inter              | 600            | xl          | 1.4               |
+| Body               | Inter              | 400            | base        | 1.6               |
+| Small              | Inter              | 400            | sm          | 1.5               |
+| Code               | JetBrains Mono     | 400            | sm          | 1.5               |
+| Buttons            | Inter              | 500            | sm-base     | 1                 |
+| Thumbnail Text     | Montserrat         | 800            |-------------| 1.1               |
 
 ### Text Color Usage
 
-| Context        | Color           | Notes                        |
-|----------------|-----------------|------------------------------|
-| Headings       | white (98%)     | Full contrast for emphasis   |
-| Body content   | white/80        | Comfortable reading          |
-| Descriptions   | white/70        | Secondary information        |
-| Muted/meta     | white/60        | Timestamps, labels           |
-| Links          | Dynamous Blue   | `#3B82F6` with hover glow    |
+| Context          | Color             | Notes                          |
+|------------------|-------------------|--------------------------------|
+| Headings         | white (98%)       | Full contrast for emphasis     |
+| Body content     | white/80          | Comfortable reading            |
+| Descriptions     | white/70          | Secondary information          |
+| Muted/meta       | white/60          | Timestamps, labels             |
+| Links            | Dynamous Blue     | `#3B82F6` with hover glow      |
 
 ---
 
@@ -167,16 +167,16 @@ box-shadow: 0 0 15px rgba(59, 130, 246, 0.5), 0 0 30px rgba(59, 130, 246, 0.3);
 
 **Base unit:** 4px
 
-| Token     | Value     | Use                          |
-|-----------|-----------|------------------------------|
-| `xs`      | 4px       | Tight spacing, icon gaps     |
-| `sm`      | 8px       | Related elements             |
-| `md`      | 12px      | Form inputs internal         |
-| `base`    | 16px      | Standard component padding   |
-| `lg`      | 24px      | Section padding              |
-| `xl`      | 32px      | Card padding                 |
-| `2xl`     | 48px      | Section margins              |
-| `3xl`     | 64px      | Major section breaks         |
+| Token       | Value       | Use                            |
+|-------------|-------------|--------------------------------|
+| `xs`        | 4px         | Tight spacing, icon gaps       |
+| `sm`        | 8px         | Related elements               |
+| `md`        | 12px        | Form inputs internal           |
+| `base`      | 16px        | Standard component padding     |
+| `lg`        | 24px        | Section padding                |
+| `xl`        | 32px        | Card padding                   |
+| `2xl`       | 48px        | Section margins                |
+| `3xl`       | 64px        | Major section breaks           |
 
 **Rule:** When in doubt, use multiples of 8px.
 
@@ -186,12 +186,12 @@ box-shadow: 0 0 15px rgba(59, 130, 246, 0.5), 0 0 30px rgba(59, 130, 246, 0.3);
 
 ### Button Types
 
-| Type        | Background      | Text     | Use                             |
-|-------------|-----------------|----------|---------------------------------|
-| Primary     | Dynamous Blue   | White    | Main actions, CTAs              |
-| Secondary   | white/10        | White    | Secondary actions               |
-| Outline     | Transparent     | White    | Tertiary, paired with primary   |
-| Ghost       | Transparent     | White    | Navigation, subtle actions      |
+| Type          | Background        | Text       | Use                               |
+|---------------|-------------------|------------|-----------------------------------|
+| Primary       | Dynamous Blue     | White      | Main actions, CTAs                |
+| Secondary     | white/10          | White      | Secondary actions                 |
+| Outline       | Transparent       | White      | Tertiary, paired with primary     |
+| Ghost         | Transparent       | White      | Navigation, subtle actions        |
 
 ### Button Specs
 
@@ -220,12 +220,12 @@ Shimmer animation on hover:
 
 ### Timing
 
-| Type     | Duration     | Use                            |
-|----------|--------------|--------------------------------|
-| Micro    | 150ms        | Button states, toggles         |
-| Fast     | 200ms        | Dropdowns, small transitions   |
-| Normal   | 300ms        | Cards, modals                  |
-| Slow     | 600ms        | Page transitions, fade-ins     |
+| Type       | Duration       | Use                              |
+|------------|----------------|----------------------------------|
+| Micro      | 150ms          | Button states, toggles           |
+| Fast       | 200ms          | Dropdowns, small transitions     |
+| Normal     | 300ms          | Cards, modals                    |
+| Slow       | 600ms          | Page transitions, fade-ins       |
 
 **Rule:** Nothing should take longer than 600ms. Snappy > smooth.
 
@@ -284,15 +284,15 @@ animation: fade-in 0.6s ease-out forwards;
 
 ### Specifications
 
-| Property          | Value                          |
-|-------------------|--------------------------------|
-| Library           | Lucide React                   |
-| Style             | Outline, 2px stroke            |
-| Size (inline)     | 14-16px                        |
-| Size (UI)         | 18-20px                        |
-| Size (emphasis)   | 24px                           |
-| Default color     | currentColor (inherits text)   |
-| Interactive       | Opacity change on hover        |
+| Property            | Value                            |
+|---------------------|----------------------------------|
+| Library             | Lucide React                     |
+| Style               | Outline, 2px stroke              |
+| Size (inline)       | 14-16px                          |
+| Size (UI)           | 18-20px                          |
+| Size (emphasis)     | 24px                             |
+| Default color       | currentColor (inherits text)     |
+| Interactive         | Opacity change on hover          |
 
 ### Usage Rules
 
@@ -378,15 +378,15 @@ Subtle background texture that adds depth without distraction.
 
 ### Color Palette for Diagrams
 
-| Semantic Purpose     | Fill        | Stroke      |
-|----------------------|-------------|-------------|
-| Primary/Neutral      | `#3B82F6`   | `#1E3A5F`   |
-| Secondary            | `#60A5FA`   | `#1E3A5F`   |
-| Tertiary/AI          | `#DBEAFE`   | `#0EA5E9`   |
-| Start/Trigger        | `#FED7AA`   | `#C2410C`   |
-| End/Success          | `#A7F3D0`   | `#047857`   |
-| Warning/Reset        | `#FEE2E2`   | `#DC2626`   |
-| Decision             | `#FEF3C7`   | `#B45309`   |
+| Semantic Purpose       | Fill          | Stroke        |
+|------------------------|---------------|---------------|
+| Primary/Neutral        | `#3B82F6`     | `#1E3A5F`     |
+| Secondary              | `#60A5FA`     | `#1E3A5F`     |
+| Tertiary/AI            | `#DBEAFE`     | `#0EA5E9`     |
+| Start/Trigger          | `#FED7AA`     | `#C2410C`     |
+| End/Success            | `#A7F3D0`     | `#047857`     |
+| Warning/Reset          | `#FEE2E2`     | `#DC2626`     |
+| Decision               | `#FEF3C7`     | `#B45309`     |
 
 ### Diagram Rules
 
@@ -399,13 +399,13 @@ Subtle background texture that adds depth without distraction.
 
 ### Shape Meaning
 
-| Concept Type              | Shape                          |
-|---------------------------|--------------------------------|
-| Start, trigger, input     | Ellipse                        |
-| End, output, result       | Ellipse                        |
-| Decision, condition       | Diamond                        |
-| Process, action, step     | Rectangle                      |
-| Abstract state, context   | Overlapping ellipses (cloud)   |
+| Concept Type                | Shape                            |
+|-----------------------------|----------------------------------|
+| Start, trigger, input       | Ellipse                          |
+| End, output, result         | Ellipse                          |
+| Decision, condition         | Diamond                          |
+| Process, action, step       | Rectangle                        |
+| Abstract state, context     | Overlapping ellipses (cloud)     |
 
 ---
 
@@ -521,24 +521,24 @@ Subtle background texture that adds depth without distraction.
 
 ### Dynamous Blue vs Other Blues
 
-| Dynamous Blue       | Other Blues                             |
-|---------------------|-----------------------------------------|
-| Primary buttons     | Never                                   |
-| Links               |-----------------------------------------|
-| Logo                |-----------------------------------------|
-| Accent glows        | Secondary accents use semantic colors   |
-| Hero highlights     | Diagram fills use palette system        |
-| Featured elements   |-----------------------------------------|
+| Dynamous Blue         | Other Blues                               |
+|-----------------------|-------------------------------------------|
+| Primary buttons       | Never                                     |
+| Links                 |-------------------------------------------|
+| Logo                  |-------------------------------------------|
+| Accent glows          | Secondary accents use semantic colors     |
+| Hero highlights       | Diagram fills use palette system          |
+| Featured elements     |-------------------------------------------|
 
 ### Inter vs Montserrat
 
-| Inter             | Montserrat                        |
-|-------------------|-----------------------------------|
-| All UI text       | YouTube thumbnail text            |
-| Body copy         | Bold headlines (optional)         |
-| Buttons           |-----------------------------------|
-| Navigation        |-----------------------------------|
-| Everything else   | Only when maximum impact needed   |
+| Inter               | Montserrat                          |
+|---------------------|-------------------------------------|
+| All UI text         | YouTube thumbnail text              |
+| Body copy           | Bold headlines (optional)           |
+| Buttons             |-------------------------------------|
+| Navigation          |-------------------------------------|
+| Everything else     | Only when maximum impact needed     |
 
 ---
 

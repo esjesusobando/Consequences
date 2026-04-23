@@ -30,12 +30,12 @@
 
 **Qué:** Conectar apps existentes
 
-| App | Status |
-|-----|--------|
-| Notion | ✅ Ready to config |
-| Gmail | 🔜 Coming soon |
-| Calendar | 🔜 Coming soon |
-| Slack | 💡 Future |
+| App      | Status            |
+|----------|-------------------|
+| Notion   | ✅ Ready to config |
+| Gmail    | 🔜 Coming soon     |
+| Calendar | 🔜 Coming soon     |
+| Slack    | 💡 Future          |
 
 **Estado:** Notion = priority
 
@@ -69,13 +69,13 @@
 
 ## 📋 Prioridad
 
-| # | Mejora | Impacto | Prioridad |
-|---|-------|--------|----------|
-| 1 | Computer Use ON | High | 1 |
-| 2 | Dispatch | High | 2 |
-| 3 | Notion MCP | Medium | 3 |
-| 4 | Automation | Medium | 4 |
-| 5 | Skills | Low | 5 |
+| #   | Mejora          | Impacto  | Prioridad  |
+|-----|-----------------|----------|------------|
+| 1   | Computer Use ON | High     | 1          |
+| 2   | Dispatch        | High     | 2          |
+| 3   | Notion MCP      | Medium   | 3          |
+| 4   | Automation      | Medium   | 4          |
+| 5   | Skills          | Low      | 5          |
 
 ---
 

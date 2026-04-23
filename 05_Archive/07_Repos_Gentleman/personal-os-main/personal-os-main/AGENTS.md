@@ -72,12 +72,12 @@ Tie to goals and reference material.
 
 For complex tasks, delegate to workflow files in `examples/workflows/`. Read the workflow file and follow its instructions.
 
-| Trigger                                                   | Workflow File                                            | When to Use                                           |
-|-----------------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------|
-| Content generation, writing in user's voice               | `examples/workflows/content-generation.md`               | Any writing, marketing, or content task               |
-| Morning planning                                          | `examples/workflows/morning-standup.md`                  | "What should I work on today?"                        |
-| Processing backlog                                        | `examples/workflows/backlog-processing.md`               | Reference for backlog flow                            |
-| Weekly reflection                                         | `examples/workflows/weekly-review.md`                    | Weekly review prompts                                 |
+| Trigger                                                     | Workflow File                                              | When to Use                                             |
+|-------------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|
+| Content generation, writing in user's voice                 | `examples/workflows/content-generation.md`                 | Any writing, marketing, or content task                 |
+| Morning planning                                            | `examples/workflows/morning-standup.md`                    | "What should I work on today?"                          |
+| Processing backlog                                          | `examples/workflows/backlog-processing.md`                 | Reference for backlog flow                              |
+| Weekly reflection                                           | `examples/workflows/weekly-review.md`                      | Weekly review prompts                                   |
 
 **How to use workflows:**
 1. When a task matches a trigger, read the corresponding workflow file

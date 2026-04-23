@@ -54,15 +54,15 @@
 3. Seleccioná tipos de preguntas
 
 ### Paso 2: Tipos disponibles
-| Tipo | Ejemplo |
-|------|--------|
-| Multiple Choice | ¿Cuál es la función principal? |
-| True/False | recall guarda solo PDFs |
-| Fill in Blank | Recall fue fundado en ___ |
-| Short Answer | ¿Por qué importan los graphs? |
-| Matching | conecta concepto con definición |
-| Ordering | Pasos del workflow |
-| Flashcard | Definición de MCP |
+| Tipo            | Ejemplo                         |
+|-----------------|---------------------------------|
+| Multiple Choice | ¿Cuál es la función principal?  |
+| True/False      | recall guarda solo PDFs         |
+| Fill in Blank   | Recall fue fundado en ___       |
+| Short Answer    | ¿Por qué importan los graphs?   |
+| Matching        | conecta concepto con definición |
+| Ordering        | Pasos del workflow              |
+| Flashcard       | Definición de MCP               |
 
 ### Paso 3: Tomar el quiz
 1. Click "Start Quiz"

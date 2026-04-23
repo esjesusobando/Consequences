@@ -36,11 +36,11 @@ Agents still face challenges working across many context windows. Inspirado en i
 
 ### Failure Modes y Soluciones
 
-| Problema                                    | Solución                                |
-|---------------------------------------------|-----------------------------------------|
-| Declara victory muy temprano                | Feature list con todos los features     |
-| Ambiente con bugs                           | Git commits + progress updates          |
-| Marca features como done prematuramente     | Self-verify todos los features          |
+| Problema                                      | Solución                                  |
+|-----------------------------------------------|-------------------------------------------|
+| Declara victory muy temprano                  | Feature list con todos los features       |
+| Ambiente con bugs                             | Git commits + progress updates            |
+| Marca features como done prematuramente       | Self-verify todos los features            |
 
 ### Clave
 
@@ -140,18 +140,18 @@ Análisis de tres issues recientes en producción. Lecciones aprendidas.
 
 ### DEL ANÁLISIS DE LOS ARTÍCULOS, IMPLEMENTAR:
 
-| #       | Concepto del Artículo                           | Status en Nuestro OS          | Acción                                 |
-|---------|-------------------------------------------------|-------------------------------|----------------------------------------|
-| 1       | **Auto Mode Security** (Post 2)                 | ⏳ NO implementado             | Crear skill de security classifier     |
-| 2       | **Evaluator/Generator Separation** (Post 3)     | ✅ Ya en Anthropic Harness     | Nada                                   |
-| 3       | **Eval Awareness Detection** (Post 4)           | ⏳ NO implementado             | Hook para detectar                     |
-| 4       | **Agent Teams con Locks** (Post 5)              | ⏳ Parcial                     | Extender con git locks                 |
-| 5       | **Feature List como JSON** (Post 8)             | ⏳ NO implementado             | Nuevo script                           |
-| 6       | **Progress File** (Post 8)                      | ⏳ NO implementado             | Template + script                      |
-| 7       | **End-to-End Testing con Browser** (Post 8)     | ✅ Playwright ya               | Nada                                   |
-| 8       | **pass@k metrics** (Post 7)                     | ⏳ NO implementado             | Script de métricas                     |
-| 9       | **Graders (code/model/human)** (Post 7)         | ⏳ Parcial                     | Definir framework                      |
-| 10      | **Multi-agent con roles** (Post 5)              | ⏳ NO implementado             | Nuevo workflow                         |
+| #         | Concepto del Artículo                             | Status en Nuestro OS            | Acción                                   |
+|-----------|---------------------------------------------------|---------------------------------|------------------------------------------|
+| 1         | **Auto Mode Security** (Post 2)                   | ⏳ NO implementado               | Crear skill de security classifier       |
+| 2         | **Evaluator/Generator Separation** (Post 3)       | ✅ Ya en Anthropic Harness       | Nada                                     |
+| 3         | **Eval Awareness Detection** (Post 4)             | ⏳ NO implementado               | Hook para detectar                       |
+| 4         | **Agent Teams con Locks** (Post 5)                | ⏳ Parcial                       | Extender con git locks                   |
+| 5         | **Feature List como JSON** (Post 8)               | ⏳ NO implementado               | Nuevo script                             |
+| 6         | **Progress File** (Post 8)                        | ⏳ NO implementado               | Template + script                        |
+| 7         | **End-to-End Testing con Browser** (Post 8)       | ✅ Playwright ya                 | Nada                                     |
+| 8         | **pass@k metrics** (Post 7)                       | ⏳ NO implementado               | Script de métricas                       |
+| 9         | **Graders (code/model/human)** (Post 7)           | ⏳ Parcial                       | Definir framework                        |
+| 10        | **Multi-agent con roles** (Post 5)                | ⏳ NO implementado               | Nuevo workflow                           |
 
 ---
 

@@ -10,16 +10,16 @@ Los modelos de lenguaje fueron entrenados con millones de tutoriales de "landing
 
 ### Sesgos que la skill anula
 
-| Sesgo LLM por defecto | Por que es malo | Lo que impone la skill |
-|---|---|---|
-| Degradado **lila / purpura neon** | Grito universal de "hecho por IA", satura el mercado | Neutros puros (Zinc/Slate) + 1 acento unico (Esmeralda / Azul Electrico / Rosa Oscuro) |
-| Tipografia **Inter** en todo | Se ve a sistema, no a producto con personalidad | `Geist`, `Outfit`, `Cabinet Grotesk`, `Satoshi` |
-| **Cards genericas** con `shadow-md` en grid | Visualmente plano, sin jerarquia, sin autor | Separacion por espaciado y `border-t` sutiles |
-| **Contenido centrado** (hero 50% ancho, text-center) | Sesgo de simetria perfecta, denota pereza | Splits asimetricos 50/50, alineacion a izquierda, diseno editorial |
-| `h-screen` en mobile | Parpadeos por la barra del navegador | `min-h-[100dvh]` |
-| Emojis en UI "pro" | Rompe la coherencia visual | Iconos vectoriales de Lucide o Phosphor |
-| Nombres plantilla (`John Doe`, `Acme Inc`) | Se ve a demo, no a producto | `Olivia Sterling`, `Nexus Logistics` |
-| Copy cliche (`unleash`, `next-gen`, `revolutionary`) | Ruido puro, cero informacion | Verbos concretos, numeros reales |
+| Sesgo LLM por defecto                                | Por que es malo                                      | Lo que impone la skill                                                                 |
+|------------------------------------------------------|------------------------------------------------------|----------------------------------------------------------------------------------------|
+| Degradado **lila / purpura neon**                    | Grito universal de "hecho por IA", satura el mercado | Neutros puros (Zinc/Slate) + 1 acento unico (Esmeralda / Azul Electrico / Rosa Oscuro) |
+| Tipografia **Inter** en todo                         | Se ve a sistema, no a producto con personalidad      | `Geist`, `Outfit`, `Cabinet Grotesk`, `Satoshi`                                        |
+| **Cards genericas** con `shadow-md` en grid          | Visualmente plano, sin jerarquia, sin autor          | Separacion por espaciado y `border-t` sutiles                                          |
+| **Contenido centrado** (hero 50% ancho, text-center) | Sesgo de simetria perfecta, denota pereza            | Splits asimetricos 50/50, alineacion a izquierda, diseno editorial                     |
+| `h-screen` en mobile                                 | Parpadeos por la barra del navegador                 | `min-h-[100dvh]`                                                                       |
+| Emojis en UI "pro"                                   | Rompe la coherencia visual                           | Iconos vectoriales de Lucide o Phosphor                                                |
+| Nombres plantilla (`John Doe`, `Acme Inc`)           | Se ve a demo, no a producto                          | `Olivia Sterling`, `Nexus Logistics`                                                   |
+| Copy cliche (`unleash`, `next-gen`, `revolutionary`) | Ruido puro, cero informacion                         | Verbos concretos, numeros reales                                                       |
 
 ---
 
@@ -327,12 +327,12 @@ Abrirlo en el navegador muestra Geist + Zinc + Esmeralda + grid 12 cols asimetri
 
 **Helios Analytics** (SaaS de observabilidad B2B, seed stage) hizo rebrand completo con esta skill.
 
-| Metrica | Antes (Inter + lila + cards) | Despues (Geist + Zinc/Esmeralda + editorial) |
-|---|---|---|
-| Conversion landing -> trial | **1.2%** | **3.8%** |
-| Tiempo medio en pagina | 41s | 1m 54s |
-| Bounce rate | 68% | 39% |
-| CAC blended | $412 | $147 |
+| Metrica                     | Antes (Inter + lila + cards) | Despues (Geist + Zinc/Esmeralda + editorial) |
+|-----------------------------|------------------------------|----------------------------------------------|
+| Conversion landing -> trial | **1.2%**                     | **3.8%**                                     |
+| Tiempo medio en pagina      | 41s                          | 1m 54s                                       |
+| Bounce rate                 | 68%                          | 39%                                          |
+| CAC blended                 | $412                         | $147                                         |
 
 Que hicieron, en orden:
 1. Borraron todos los `shadow-*` del design system.

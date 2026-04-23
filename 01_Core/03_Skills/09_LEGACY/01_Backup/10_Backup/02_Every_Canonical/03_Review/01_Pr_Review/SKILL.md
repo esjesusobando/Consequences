@@ -47,15 +47,15 @@ Before reviewing ANY code, check if the repo has project-specific skills that de
 
 **For each PR, load the skills that match the changed files:**
 
-| Files Changed                         | Skills to Load                                               |
-|---------------------------------------|--------------------------------------------------------------|
-| `api/` (models, views, serializers)   | project API skill + `django-drf`                             |
-| `api/` (tests)                        | project API test skill + `pytest`                            |
-| `ui/` (components, pages)             | project UI skill + `react-19` + `nextjs-15` + `tailwind-4`   |
-| `ui/` (tests)                         | project UI test skill + `playwright`                         |
-| `ui/` (schemas)                       | `zod-4`                                                      |
-| `ui/` (stores)                        | `zustand-5`                                                  |
-| Types/interfaces                      | `typescript`                                                 |
+| Files Changed                           | Skills to Load                                                 |
+|-----------------------------------------|----------------------------------------------------------------|
+| `api/` (models, views, serializers)     | project API skill + `django-drf`                               |
+| `api/` (tests)                          | project API test skill + `pytest`                              |
+| `ui/` (components, pages)               | project UI skill + `react-19` + `nextjs-15` + `tailwind-4`     |
+| `ui/` (tests)                           | project UI test skill + `playwright`                           |
+| `ui/` (schemas)                         | `zod-4`                                                        |
+| `ui/` (stores)                          | `zustand-5`                                                    |
+| Types/interfaces                        | `typescript`                                                   |
 
 **Review against project conventions, not just general quality.** Check:
 - Does the file structure match what the project skill defines?
@@ -76,15 +76,15 @@ Before reviewing diffs, **always read the current code** to understand context:
 
 For each PR, evaluate these factors:
 
-| Factor                    | What to Check                                                    |
-|---------------------------|------------------------------------------------------------------|
-| **Project Conventions**   | Does it follow the project skills? Structure, naming, patterns   |
-| **Code Quality**          | Clean code, no duplication, proper error handling                |
-| **Tests**                 | Are there tests? Do they follow the project's test patterns?     |
-| **Breaking Changes**      | Does it break existing functionality?                            |
-| **Conflicts**             | Will it conflict with other open PRs?                            |
-| **Commit Hygiene**        | Clean history, no test files, proper messages                    |
-| **Documentation**         | README updated if needed, comments where necessary               |
+| Factor                      | What to Check                                                      |
+|-----------------------------|--------------------------------------------------------------------|
+| **Project Conventions**     | Does it follow the project skills? Structure, naming, patterns     |
+| **Code Quality**            | Clean code, no duplication, proper error handling                  |
+| **Tests**                   | Are there tests? Do they follow the project's test patterns?       |
+| **Breaking Changes**        | Does it break existing functionality?                              |
+| **Conflicts**               | Will it conflict with other open PRs?                              |
+| **Commit Hygiene**          | Clean history, no test files, proper messages                      |
+| **Documentation**           | README updated if needed, comments where necessary                 |
 
 ## Critical Patterns
 
@@ -131,19 +131,19 @@ All green?               → MERGE
 ## Issues Analysis
 
 ### Good Issues (Valid, should be addressed)
-| #         | Issue     | Analysis         |
-|-----------|-----------|------------------|
-| **#XX**   | Title     | Why it's valid   |
+| #           | Issue       | Analysis           |
+|-------------|-------------|--------------------|
+| **#XX**     | Title       | Why it's valid     |
 
 ### Questionable Issues
-| #         | Issue     | Analysis                   |
-|-----------|-----------|----------------------------|
-| **#XX**   | Title     | Problems with this issue   |
+| #           | Issue       | Analysis                     |
+|-------------|-------------|------------------------------|
+| **#XX**     | Title       | Problems with this issue     |
 
 ### Should Close
-| #         | Issue     | Reason                    |
-|-----------|-----------|---------------------------|
-| **#XX**   | Title     | Why it should be closed   |
+| #           | Issue       | Reason                      |
+|-------------|-------------|-----------------------------|
+| **#XX**     | Title       | Why it should be closed     |
 ```
 
 ### For PRs
@@ -152,19 +152,19 @@ All green?               → MERGE
 ## PR Analysis
 
 ### Ready to Merge
-| PR        | Author     | Why it's ready      |
-|-----------|------------|---------------------|
-| **#XX**   | @user      | Brief explanation   |
+| PR          | Author       | Why it's ready        |
+|-------------|--------------|-----------------------|
+| **#XX**     | @user        | Brief explanation     |
 
 ### Needs Work
-| PR        | Author     | What to fix      |
-|-----------|------------|------------------|
-| **#XX**   | @user      | List of issues   |
+| PR          | Author       | What to fix        |
+|-------------|--------------|--------------------|
+| **#XX**     | @user        | List of issues     |
 
 ### Do Not Merge
-| PR        | Author     | Critical problems        |
-|-----------|------------|--------------------------|
-| **#XX**   | @user      | Why it can't be merged   |
+| PR          | Author       | Critical problems          |
+|-------------|--------------|----------------------------|
+| **#XX**     | @user        | Why it can't be merged     |
 ```
 
 ## Review Comments

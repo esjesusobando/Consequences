@@ -17,14 +17,14 @@ Default (if user doesn't specify): if Engram is available → `engram`. Otherwis
 
 ### Mode Comparison
 
-| Capability             | `engram`              | `openspec`          | `hybrid`        | `none`   |
-|------------------------|-----------------------|---------------------|-----------------|----------|
-| Cross-session recovery | ✅                     | ❌ (needs git)       | ✅               | ❌        |
-| Compaction survival    | ✅                     | ❌                   | ✅               | ❌        |
-| Shareable with team    | ❌ (local DB)          | ✅ (committed files) | ✅ (files)       | ❌        |
-| Full iteration history | ❌ (upsert overwrites) | ✅ (git history)     | ✅ (files + git) | ❌        |
-| Audit trail (archive)  | Partial (report only) | ✅ (full folder)     | ✅ (both)        | ❌        |
-| Project files created  | Never                 | Yes                 | Yes             | Never    |
+| Capability               | `engram`                | `openspec`            | `hybrid`          | `none`     |
+|--------------------------|-------------------------|-----------------------|-------------------|------------|
+| Cross-session recovery   | ✅                       | ❌ (needs git)         | ✅                 | ❌          |
+| Compaction survival      | ✅                       | ❌                     | ✅                 | ❌          |
+| Shareable with team      | ❌ (local DB)            | ✅ (committed files)   | ✅ (files)         | ❌          |
+| Full iteration history   | ❌ (upsert overwrites)   | ✅ (git history)       | ✅ (files + git)   | ❌          |
+| Audit trail (archive)    | Partial (report only)   | ✅ (full folder)       | ✅ (both)          | ❌          |
+| Project files created    | Never                   | Yes                   | Yes               | Never      |
 
 ### `engram` mode limitation
 
@@ -32,12 +32,12 @@ Engram uses `topic_key`-based upserts. Re-running a phase for the same change **
 
 ## Behavior Per Mode
 
-| Mode       | Read from                                | Write to   | Project files   |
-|------------|------------------------------------------|------------|-----------------|
-| `engram`   | Engram                                   | Engram     | Never           |
-| `openspec` | Filesystem                               | Filesystem | Yes             |
-| `hybrid`   | Engram (primary) + Filesystem (fallback) | Both       | Yes             |
-| `none`     | Orchestrator prompt context              | Nowhere    | Never           |
+| Mode         | Read from                                  | Write to     | Project files     |
+|--------------|--------------------------------------------|--------------|-------------------|
+| `engram`     | Engram                                     | Engram       | Never             |
+| `openspec`   | Filesystem                                 | Filesystem   | Yes               |
+| `hybrid`     | Engram (primary) + Filesystem (fallback)   | Both         | Yes               |
+| `none`       | Orchestrator prompt context                | Nowhere      | Never             |
 
 ### Hybrid Mode
 
@@ -55,12 +55,12 @@ Token cost warning: hybrid consumes MORE tokens per operation. Use only when you
 
 The orchestrator persists DAG state after each phase transition to enable SDD recovery after compaction.
 
-| Mode       | Persist State                                     | Recover State                                           |
-|------------|---------------------------------------------------|---------------------------------------------------------|
-| `engram`   | `mem_save(topic_key: "sdd/{change-name}/state")`  | `mem_search("sdd/*/state")` → `mem_get_observation(id)` |
-| `openspec` | Write `openspec/changes/{change-name}/state.yaml` | Read `openspec/changes/{change-name}/state.yaml`        |
-| `hybrid`   | Both: `mem_save` AND write `state.yaml`           | Engram first; filesystem fallback                       |
-| `none`     | Not possible — warn user                          | Not possible                                            |
+| Mode         | Persist State                                       | Recover State                                             |
+|--------------|-----------------------------------------------------|-----------------------------------------------------------|
+| `engram`     | `mem_save(topic_key: "sdd/{change-name}/state")`    | `mem_search("sdd/*/state")` → `mem_get_observation(id)`   |
+| `openspec`   | Write `openspec/changes/{change-name}/state.yaml`   | Read `openspec/changes/{change-name}/state.yaml`          |
+| `hybrid`     | Both: `mem_save` AND write `state.yaml`             | Engram first; filesystem fallback                         |
+| `none`       | Not possible — warn user                            | Not possible                                              |
 
 ## Common Rules
 

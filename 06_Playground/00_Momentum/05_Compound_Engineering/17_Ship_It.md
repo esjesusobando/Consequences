@@ -19,12 +19,12 @@ El trabajo que nadie ve no existe. Este workflow convierte "está listo" en "est
 
 ## Los 4 niveles de Ship
 
-| Nivel                | Audiencia              | Ejemplos                              |
-|----------------------|------------------------|---------------------------------------|
-| **L1 — Interno**     | Solo tú                | Commit final, documentación interna   |
-| **L2 — Privado**     | Personas específicas   | Link directo, WhatsApp, email         |
-| **L3 — Comunidad**   | Tu red                 | Twitter/X, LinkedIn, grupos           |
-| **L4 — Público**     | El mundo               | GitHub público, Product Hunt, blog    |
+| Nivel                  | Audiencia                | Ejemplos                                |
+|------------------------|--------------------------|-----------------------------------------|
+| **L1 — Interno**       | Solo tú                  | Commit final, documentación interna     |
+| **L2 — Privado**       | Personas específicas     | Link directo, WhatsApp, email           |
+| **L3 — Comunidad**     | Tu red                   | Twitter/X, LinkedIn, grupos             |
+| **L4 — Público**       | El mundo                 | GitHub público, Product Hunt, blog      |
 
 ## Flujo completo
 

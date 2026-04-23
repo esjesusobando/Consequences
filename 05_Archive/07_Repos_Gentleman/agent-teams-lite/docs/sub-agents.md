@@ -6,37 +6,37 @@ Reference documentation for the SDD phase sub-agents and skill system. For quick
 
 Each sub-agent is a SKILL.md file — pure Markdown instructions that any AI assistant can follow. The preferred path is for the orchestrator to pre-resolve relevant skills from the registry and inject compact rules into each sub-agent prompt. Sub-agents still support registry/path fallback for backward compatibility.
 
-| Sub-Agent          | Skill File                | What It Does                                                                                  |
-|--------------------|---------------------------|-----------------------------------------------------------------------------------------------|
-| **Init**           | `sdd-init/SKILL.md`       | Detects project stack, bootstraps persistence, builds skill registry                          |
-| **Explorer**       | `sdd-explore/SKILL.md`    | Reads codebase, compares approaches, identifies risks                                         |
-| **Proposer**       | `sdd-propose/SKILL.md`    | Creates `proposal.md` with intent, scope, rollback plan                                       |
-| **Spec Writer**    | `sdd-spec/SKILL.md`       | Writes delta specs (ADDED/MODIFIED/REMOVED) with Given/When/Then                              |
-| **Designer**       | `sdd-design/SKILL.md`     | Creates `design.md` with architecture decisions and rationale                                 |
-| **Task Planner**   | `sdd-tasks/SKILL.md`      | Breaks down into phased, numbered task checklist                                              |
-| **Implementer**    | `sdd-apply/SKILL.md`      | Writes code following specs and design, marks tasks complete. v2.0: TDD workflow support      |
-| **Verifier**       | `sdd-verify/SKILL.md`     | Validates implementation against specs with real test execution. v2.0: spec compliance matrix |
-| **Archiver**       | `sdd-archive/SKILL.md`    | Merges delta specs into main specs, moves to archive                                          |
-| **Skill Registry** | `skill-registry/SKILL.md` | Scans user skills + project conventions, writes `.atl/skill-registry.md`                      |
-| **Judgment Day**   | `judgment-day/SKILL.md`   | Runs dual adversarial review with two blind judges and a fix loop                             |
-| **Go Testing**     | `go-testing/SKILL.md`     | Shared conventions for Go tests, including Bubbletea and teatest patterns                     |
-| **Skill Creator**  | `skill-creator/SKILL.md`  | Creates new reusable skills following the project skill spec                                  |
-| **Branch + PR**    | `branch-pr/SKILL.md`      | Branches changes and opens pull requests with repo conventions                                |
-| **Issue Creation** | `issue-creation/SKILL.md` | Creates GitHub issues with the repo's structured templates                                    |
+| Sub-Agent            | Skill File                  | What It Does                                                                                    |
+|----------------------|-----------------------------|-------------------------------------------------------------------------------------------------|
+| **Init**             | `sdd-init/SKILL.md`         | Detects project stack, bootstraps persistence, builds skill registry                            |
+| **Explorer**         | `sdd-explore/SKILL.md`      | Reads codebase, compares approaches, identifies risks                                           |
+| **Proposer**         | `sdd-propose/SKILL.md`      | Creates `proposal.md` with intent, scope, rollback plan                                         |
+| **Spec Writer**      | `sdd-spec/SKILL.md`         | Writes delta specs (ADDED/MODIFIED/REMOVED) with Given/When/Then                                |
+| **Designer**         | `sdd-design/SKILL.md`       | Creates `design.md` with architecture decisions and rationale                                   |
+| **Task Planner**     | `sdd-tasks/SKILL.md`        | Breaks down into phased, numbered task checklist                                                |
+| **Implementer**      | `sdd-apply/SKILL.md`        | Writes code following specs and design, marks tasks complete. v2.0: TDD workflow support        |
+| **Verifier**         | `sdd-verify/SKILL.md`       | Validates implementation against specs with real test execution. v2.0: spec compliance matrix   |
+| **Archiver**         | `sdd-archive/SKILL.md`      | Merges delta specs into main specs, moves to archive                                            |
+| **Skill Registry**   | `skill-registry/SKILL.md`   | Scans user skills + project conventions, writes `.atl/skill-registry.md`                        |
+| **Judgment Day**     | `judgment-day/SKILL.md`     | Runs dual adversarial review with two blind judges and a fix loop                               |
+| **Go Testing**       | `go-testing/SKILL.md`       | Shared conventions for Go tests, including Bubbletea and teatest patterns                       |
+| **Skill Creator**    | `skill-creator/SKILL.md`    | Creates new reusable skills following the project skill spec                                    |
+| **Branch + PR**      | `branch-pr/SKILL.md`        | Branches changes and opens pull requests with repo conventions                                  |
+| **Issue Creation**   | `issue-creation/SKILL.md`   | Creates GitHub issues with the repo's structured templates                                      |
 
 ### Sub-Agent Result Contract
 
 Each sub-agent must return a structured envelope with these fields:
 
-| Field               | Description                                                 |
-|---------------------|-------------------------------------------------------------|
-| `status`            | `success`, `partial`, or `blocked`                          |
-| `executive_summary` | 1-3 sentence summary of what was done                       |
-| `detailed_report`   | (optional) Full phase output, or omit if already inline     |
-| `artifacts`         | List of artifact keys/paths written                         |
-| `next_recommended`  | The next SDD phase to run, or "none"                        |
-| `risks`             | Risks discovered, or "None"                                 |
-| `skill_resolution`  | `injected`, `fallback-registry`, `fallback-path`, or `none` |
+| Field                 | Description                                                   |
+|-----------------------|---------------------------------------------------------------|
+| `status`              | `success`, `partial`, or `blocked`                            |
+| `executive_summary`   | 1-3 sentence summary of what was done                         |
+| `detailed_report`     | (optional) Full phase output, or omit if already inline       |
+| `artifacts`           | List of artifact keys/paths written                           |
+| `next_recommended`    | The next SDD phase to run, or "none"                          |
+| `risks`               | Risks discovered, or "None"                                   |
+| `skill_resolution`    | `injected`, `fallback-registry`, `fallback-path`, or `none`   |
 
 Example:
 
@@ -62,12 +62,12 @@ Sub-agents are also instructed to save discoveries, decisions, and bug fixes to 
 
 All skills reference three shared convention files in `skills/_shared/`. Critical engram calls (`mem_search`, `mem_save`, `mem_get_observation`) are also **inlined directly in each skill** so sub-agents don't need to follow multi-hop file references.
 
-| File                      | Purpose                                                                                                                                             |
-|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `persistence-contract.md` | Mode resolution rules, sub-agent context protocol, skill registry loading protocol                                                                  |
-| `engram-convention.md`    | Supplementary reference for deterministic naming (`sdd/{change-name}/{artifact-type}`) and two-step recovery. Critical calls are inlined in skills. |
-| `openspec-convention.md`  | Filesystem paths for each artifact, directory structure, config.yaml reference, and archive layout                                                  |
-| `skill-resolver.md`       | Universal protocol for delegators to inject compact rules from the skill registry                                                                   |
+| File                        | Purpose                                                                                                                                               |
+|-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `persistence-contract.md`   | Mode resolution rules, sub-agent context protocol, skill registry loading protocol                                                                    |
+| `engram-convention.md`      | Supplementary reference for deterministic naming (`sdd/{change-name}/{artifact-type}`) and two-step recovery. Critical calls are inlined in skills.   |
+| `openspec-convention.md`    | Filesystem paths for each artifact, directory structure, config.yaml reference, and archive layout                                                    |
+| `skill-resolver.md`         | Universal protocol for delegators to inject compact rules from the skill registry                                                                     |
 
 **Why inline + shared:**
 - **Sub-agents fail multi-hop chains** — A 3-hop read chain (skill → convention file → actual instructions) breaks non-Claude models. Inlining the critical calls eliminates this.

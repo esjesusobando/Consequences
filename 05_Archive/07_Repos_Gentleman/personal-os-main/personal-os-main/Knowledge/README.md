@@ -8,13 +8,13 @@ Store reference documents, research, specs, meeting notes, and any persistent in
 
 ## What Goes Here
 
-| Type             | Examples                                   |
-|------------------|--------------------------------------------|
-| Specs & briefs   | Project requirements, feature specs        |
-| Meeting notes    | Decisions, action items, attendees         |
-| Research         | Market analysis, technical findings        |
-| Process docs     | How-tos, checklists, runbooks              |
-| References       | Links, contacts, credentials (encrypted)   |
+| Type               | Examples                                     |
+|--------------------|----------------------------------------------|
+| Specs & briefs     | Project requirements, feature specs          |
+| Meeting notes      | Decisions, action items, attendees           |
+| Research           | Market analysis, technical findings          |
+| Process docs       | How-tos, checklists, runbooks                |
+| References         | Links, contacts, credentials (encrypted)     |
 
 ---
 

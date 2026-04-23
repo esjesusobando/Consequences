@@ -8,12 +8,12 @@
 
 ## 1. Skill Creator Official (Anthropic)
 
-| Dato                | Valor                                                     |
-|---------------------|-----------------------------------------------------------|
-| **URL**             | `https://github.com/anthropics/claude-plugins-official`   |
-| **Carpeta local**   | `claude-plugins-official/`                                |
-| **Propósito**       | Skill Creator v2.0 con sistema de evaluación              |
-| **Fecha clonado**   | 2026-03-27                                                |
+| Dato                  | Valor                                                       |
+|-----------------------|-------------------------------------------------------------|
+| **URL**               | `https://github.com/anthropics/claude-plugins-official`     |
+| **Carpeta local**     | `claude-plugins-official/`                                  |
+| **Propósito**         | Skill Creator v2.0 con sistema de evaluación                |
+| **Fecha clonado**     | 2026-03-27                                                  |
 
 ### Para clonar en otra máquina:
 

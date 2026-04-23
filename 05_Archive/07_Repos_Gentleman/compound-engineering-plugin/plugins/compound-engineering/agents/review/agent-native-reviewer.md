@@ -45,14 +45,14 @@ Before diving in, answer three questions:
 
 **Stack-specific search strategies:**
 
-| Stack                     | UI actions                                                                     | Agent tools                                                                |
-|---------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| Vercel AI SDK (Next.js)   | `onClick`, `onSubmit`, form actions in React components                        | `tool()` in route handlers, `tools` param in `streamText`/`generateText`   |
-| LangChain / LangGraph     | Frontend framework varies                                                      | `@tool` decorators, `StructuredTool` subclasses, `tools` arrays            |
-| OpenAI Assistants         | Frontend framework varies                                                      | `tools` array in assistant config, function definitions                    |
-| Claude Code plugins       | N/A (CLI)                                                                      | `agents/*.md`, `skills/*/SKILL.md`, tool lists in frontmatter              |
-| Rails + MCP               | `button_to`, `form_with`, Turbo/Stimulus actions                               | `tool()` in MCP server definitions, `.mcp.json`                            |
-| Generic                   | Grep for `onClick`, `onSubmit`, `onTap`, `Button`, `onPressed`, form actions   | Grep for `tool(`, `function_call`, `tools:`, tool registration patterns    |
+| Stack                       | UI actions                                                                       | Agent tools                                                                  |
+|-----------------------------|----------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| Vercel AI SDK (Next.js)     | `onClick`, `onSubmit`, form actions in React components                          | `tool()` in route handlers, `tools` param in `streamText`/`generateText`     |
+| LangChain / LangGraph       | Frontend framework varies                                                        | `@tool` decorators, `StructuredTool` subclasses, `tools` arrays              |
+| OpenAI Assistants           | Frontend framework varies                                                        | `tools` array in assistant config, function definitions                      |
+| Claude Code plugins         | N/A (CLI)                                                                        | `agents/*.md`, `skills/*/SKILL.md`, tool lists in frontmatter                |
+| Rails + MCP                 | `button_to`, `form_with`, Turbo/Stimulus actions                                 | `tool()` in MCP server definitions, `.mcp.json`                              |
+| Generic                     | Grep for `onClick`, `onSubmit`, `onTap`, `Button`, `onPressed`, form actions     | Grep for `tool(`, `function_call`, `tools:`, tool registration patterns      |
 
 ### 1. Map the Landscape
 
@@ -68,8 +68,8 @@ For **incremental reviews**, focus on new/changed files. Search outward from the
 
 Cross-reference UI actions against agent tools. Build a capability map:
 
-| UI Action     | Location     | Agent Tool     | In Prompt?     | Priority     | Status     |
-|---------------|--------------|----------------|----------------|--------------|------------|
+| UI Action       | Location       | Agent Tool       | In Prompt?       | Priority       | Status       |
+|-----------------|----------------|------------------|------------------|----------------|--------------|
 
 **Prioritize findings by impact:**
 - **Must have parity:** Core domain CRUD, primary user workflows, actions that modify user data
@@ -141,15 +141,15 @@ If an action looks like it belongs on this list but you are not sure, flag it as
 
 ## Anti-Patterns Reference
 
-| Anti-Pattern             | Signal                                                                     | Fix                                                                                                  |
-|--------------------------|----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| **Orphan Feature**       | UI action with no agent tool equivalent                                    | Add a corresponding tool and document it in the system prompt                                        |
-| **Context Starvation**   | Agent does not know what resources exist or what app-specific terms mean   | Inject available resources and domain vocabulary into the system prompt                              |
-| **Sandbox Isolation**    | Agent reads/writes a separate data space from the user                     | Use shared workspace architecture                                                                    |
-| **Silent Action**        | Agent mutates state but UI does not update                                 | Use a shared data store with reactive binding, or file-system watching                               |
-| **Capability Hiding**    | Users cannot discover what the agent can do                                | Surface capabilities in agent responses or onboarding                                                |
-| **Workflow Tool**        | Tool encodes business logic instead of being a composable primitive        | Extract primitives; move orchestration logic to the system prompt (unless justified -- see step 4)   |
-| **Decision Input**       | Tool accepts a decision enum instead of raw data the agent should choose   | Accept data; let the agent decide                                                                    |
+| Anti-Pattern               | Signal                                                                       | Fix                                                                                                    |
+|----------------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| **Orphan Feature**         | UI action with no agent tool equivalent                                      | Add a corresponding tool and document it in the system prompt                                          |
+| **Context Starvation**     | Agent does not know what resources exist or what app-specific terms mean     | Inject available resources and domain vocabulary into the system prompt                                |
+| **Sandbox Isolation**      | Agent reads/writes a separate data space from the user                       | Use shared workspace architecture                                                                      |
+| **Silent Action**          | Agent mutates state but UI does not update                                   | Use a shared data store with reactive binding, or file-system watching                                 |
+| **Capability Hiding**      | Users cannot discover what the agent can do                                  | Surface capabilities in agent responses or onboarding                                                  |
+| **Workflow Tool**          | Tool encodes business logic instead of being a composable primitive          | Extract primitives; move orchestration logic to the system prompt (unless justified -- see step 4)     |
+| **Decision Input**         | Tool accepts a decision enum instead of raw data the agent should choose     | Accept data; let the agent decide                                                                      |
 
 ## Confidence Calibration
 
@@ -169,8 +169,8 @@ If an action looks like it belongs on this list but you are not sure, flag it as
 
 ### Capability Map
 
-| UI Action     | Location     | Agent Tool     | In Prompt?     | Priority     | Status     |
-|---------------|--------------|----------------|----------------|--------------|------------|
+| UI Action       | Location       | Agent Tool       | In Prompt?       | Priority       | Status       |
+|-----------------|----------------|------------------|------------------|----------------|--------------|
 
 ### Findings
 

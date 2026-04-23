@@ -192,11 +192,11 @@ When Figma links are provided:
 
 Based on this epic, create the following tasks:
 
-| #   | Title               | Component   | Blocked By   |
-|-----|---------------------|-------------|--------------|
-| 1   | [FEATURE] Task name | API         |--------------|
-| 2   | [FEATURE] Task name | UI          | Task 1       |
-| 3   | [FEATURE] Task name | UI          | Task 2       |
+| #     | Title                 | Component     | Blocked By     |
+|-------|-----------------------|---------------|----------------|
+| 1     | [FEATURE] Task name   | API           |----------------|
+| 2     | [FEATURE] Task name   | UI            | Task 1         |
+| 3     | [FEATURE] Task name   | UI            | Task 2         |
 
 Would you like me to generate the full task descriptions?
 ```

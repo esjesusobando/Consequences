@@ -27,17 +27,17 @@ cp Think_Different_Backup_2026-04-21.zip ~/OneDrive/Backups/
 
 ## Archivos Modificados (sesión 2026-04-21)
 
-| Archivo | Cambio |
-|---------|--------|
-| `AGENTS.md` | Ruta corregida |
-| `.atl/skill-registry.md` | Referencias actualizadas |
-| `CLAUDE.md` | Boot protocol + nota repos |
-| `README.md` | Rutas corregidas |
-| `.agent/CLAUDE.md` | Sincronizado |
-| `Now/00_Recursos_Varios/` | Reorganizado |
-| `Now/01_Planes/` | Creado |
-| `Now/02_Revisar_Now/` | Creado |
-| `05_Archive/07_Repos_Gentleman/README.md` | Nota agregada |
+| Archivo                                   | Cambio                     |
+|-------------------------------------------|----------------------------|
+| `AGENTS.md`                               | Ruta corregida             |
+| `.atl/skill-registry.md`                  | Referencias actualizadas   |
+| `CLAUDE.md`                               | Boot protocol + nota repos |
+| `README.md`                               | Rutas corregidas           |
+| `.agent/CLAUDE.md`                        | Sincronizado               |
+| `Now/00_Recursos_Varios/`                 | Reorganizado               |
+| `Now/01_Planes/`                          | Creado                     |
+| `Now/02_Revisar_Now/`                     | Creado                     |
+| `05_Archive/07_Repos_Gentleman/README.md` | Nota agregada              |
 
 ---
 

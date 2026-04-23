@@ -4,11 +4,11 @@
 
 LLMs do not have emotions or understand monetary incentives. However, specific linguistic patterns in the prompt activate different quality distributions in the model's latent space. Research has documented measurable effects:
 
-| Technique                                                  | Documented Effect                                                 |
-|------------------------------------------------------------|-------------------------------------------------------------------|
-| "I will tip you $200 for a perfect solution"               | Up to 45% increase in output quality and length                   |
-| "Take a deep breath and solve step by step"                | Accuracy improvement from 34% to 80% on logic tasks               |
-| "This task is critical to my career"                       | Average 10% performance increase                                  |
+| Technique                                                    | Documented Effect                                                   |
+|--------------------------------------------------------------|---------------------------------------------------------------------|
+| "I will tip you $200 for a perfect solution"                 | Up to 45% increase in output quality and length                     |
+| "Take a deep breath and solve step by step"                  | Accuracy improvement from 34% to 80% on logic tasks                 |
+| "This task is critical to my career"                         | Average 10% performance increase                                    |
 
 These phrases work because they are statistically correlated with high-effort, rigorously reviewed content in the training data (academic papers, enterprise codebases, legal documents). The attention mechanism prioritizes the high-quality data distributions associated with these patterns.
 

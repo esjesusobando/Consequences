@@ -9,17 +9,17 @@
 
 ## 📊 Resumen Ejecutivo
 
-| Carpeta                  | Archivos/Total    | Estado Auditoría Previa                    | Prioridad     |
-|--------------------------|-------------------|--------------------------------------------|---------------|
-| `.agent/`                | 305 skills        | ✅ AUDITADO (hooks OK, GGA OK, skills OK)   | SKIP          |
-| `.claude/`               | Sincronizado      | ✅ AUDITADO                                 | SKIP          |
-| `08_Scripts_Os/`         | ~100+ scripts     | 🔴 NO AUDITADO                              | P0            |
-| `04_Operations/`         | ~90 archivos      | 🔴 NO AUDITADO                              | P0            |
-| `01_Core/`               | ~200+ archivos    | 🔴 NO AUDITADO                              | P0            |
-| `00_Winter_is_Coming/`   | 4 archivos        | 🔴 NO AUDITADO                              | P1            |
-| `02_Knowledge/`          | ~40 archivos      | 🔴 NO AUDITADO                              | P1            |
-| `03_Tasks/`              | ~30 tareas        | 🔴 NO AUDITADO                              | P1            |
-| `Maerks/`                | ~100+ archivos    | 🔴 NO AUDITADO                              | P2            |
+| Carpeta                    | Archivos/Total      | Estado Auditoría Previa                      | Prioridad       |
+|----------------------------|---------------------|----------------------------------------------|-----------------|
+| `.agent/`                  | 305 skills          | ✅ AUDITADO (hooks OK, GGA OK, skills OK)     | SKIP            |
+| `.claude/`                 | Sincronizado        | ✅ AUDITADO                                   | SKIP            |
+| `08_Scripts_Os/`           | ~100+ scripts       | 🔴 NO AUDITADO                                | P0              |
+| `04_Operations/`           | ~90 archivos        | 🔴 NO AUDITADO                                | P0              |
+| `01_Core/`                 | ~200+ archivos      | 🔴 NO AUDITADO                                | P0              |
+| `00_Winter_is_Coming/`     | 4 archivos          | 🔴 NO AUDITADO                                | P1              |
+| `02_Knowledge/`            | ~40 archivos        | 🔴 NO AUDITADO                                | P1              |
+| `03_Tasks/`                | ~30 tareas          | 🔴 NO AUDITADO                                | P1              |
+| `Maerks/`                  | ~100+ archivos      | 🔴 NO AUDITADO                                | P2              |
 
 ---
 
@@ -40,18 +40,18 @@
 
 #### ✅ Validaciones Requeridas
 
-| #      | Validación                    | Criterio de Éxito                                               |
-|--------|-------------------------------|-----------------------------------------------------------------|
-| 1.1    | **Enumeración correcta**      | Todos los scripts siguen `XX_Nombre.py` (2 dígitos)             |
-| 1.2    | **Dependencies válidas**      | `config_paths.py` existe y es importable                        |
-| 1.3    | **Imports funcionales**       | Sin errores de import al cargar scripts                         |
-| 1.4    | **SCRIPTS_INDEX.md**          | Existe y está actualizado                                       |
-| 1.5    | **Scripts duplicados**        | No existen scripts con mismo nombre en root y Legacy            |
-| 1.6    | **Python syntax**             | Sin errores de sintaxis (`python -m py_compile`)                |
-| 1.7    | **Docstrings**                | Scripts > 50 líneas tienen docstrings                           |
-| 1.8    | **Referencia en 01_Personal_Os/11_AGENTS.md**   | Todos los HUBs referenciados en 00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md   |
-| 1.9    | **Links internos**            | No hay broken links entre scripts                               |
-| 1.10   | **Testing coverage**          | Scripts críticos tienen tests en Maerks/05_Tests/               |
+| #        | Validación                                    | Criterio de Éxito                                                               |
+|----------|-----------------------------------------------|---------------------------------------------------------------------------------|
+| 1.1      | **Enumeración correcta**                      | Todos los scripts siguen `XX_Nombre.py` (2 dígitos)                             |
+| 1.2      | **Dependencies válidas**                      | `config_paths.py` existe y es importable                                        |
+| 1.3      | **Imports funcionales**                       | Sin errores de import al cargar scripts                                         |
+| 1.4      | **SCRIPTS_INDEX.md**                          | Existe y está actualizado                                                       |
+| 1.5      | **Scripts duplicados**                        | No existen scripts con mismo nombre en root y Legacy                            |
+| 1.6      | **Python syntax**                             | Sin errores de sintaxis (`python -m py_compile`)                                |
+| 1.7      | **Docstrings**                                | Scripts > 50 líneas tienen docstrings                                           |
+| 1.8      | **Referencia en 01_Personal_Os/11_AGENTS.md** | Todos los HUBs referenciados en 00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md |
+| 1.9      | **Links internos**                            | No hay broken links entre scripts                                               |
+| 1.10     | **Testing coverage**                          | Scripts críticos tienen tests en Maerks/05_Tests/                               |
 
 #### 🛠️ Scripts Críticos a Verificar
 - `01_Auditor_Hub.py` — Validador principal
@@ -80,18 +80,18 @@
 
 #### ✅ Validaciones Requeridas
 
-| #      | Validación                   | Criterio de Éxito                                  |
-|--------|------------------------------|----------------------------------------------------|
-| 2.1    | **Estructura numerada**      | Carpetas siguen `XX_Nombre/`                       |
-| 2.2    | **CTX files válidos**        | JSONs en 01_Context_Memory son parseables          |
-| 2.3    | **YAML frontmatter**         | Process Notes tienen frontmatter válido            |
-| 2.4    | **Inventario actualizado**   | 02_Knowledge_Brain/01_Inventario_Total.md existe   |
-| 2.5    | **Knowledge Brain**          | Referencias a skills/scripts están actualizadas    |
-| 2.6    | **Memory Brain**             | Mapeos reflejan estructura actual                  |
-| 2.7    | **Installer funcional**      | 07_Installer/installer.py es ejecutable            |
-| 2.8    | **Installer deps**           | requirements.txt existe y está actualizado         |
-| 2.9    | **Auditorías previas**       | 08_Auditorias/ contiene reportes                   |
-| 2.10   | **Cross-references**         | Links entre carpetas son válidos                   |
+| #        | Validación                     | Criterio de Éxito                                    |
+|----------|--------------------------------|------------------------------------------------------|
+| 2.1      | **Estructura numerada**        | Carpetas siguen `XX_Nombre/`                         |
+| 2.2      | **CTX files válidos**          | JSONs en 01_Context_Memory son parseables            |
+| 2.3      | **YAML frontmatter**           | Process Notes tienen frontmatter válido              |
+| 2.4      | **Inventario actualizado**     | 02_Knowledge_Brain/01_Inventario_Total.md existe     |
+| 2.5      | **Knowledge Brain**            | Referencias a skills/scripts están actualizadas      |
+| 2.6      | **Memory Brain**               | Mapeos reflejan estructura actual                    |
+| 2.7      | **Installer funcional**        | 07_Installer/installer.py es ejecutable              |
+| 2.8      | **Installer deps**             | requirements.txt existe y está actualizado           |
+| 2.9      | **Auditorías previas**         | 08_Auditorias/ contiene reportes                     |
+| 2.10     | **Cross-references**           | Links entre carpetas son válidos                     |
 
 #### 🔗 Cross-References a Verificar
 - 04_Operations → 00_Winter_is_Coming (GOALS.md, BACKLOG.md)
@@ -116,18 +116,18 @@
 
 #### ✅ Validaciones Requeridas
 
-| #      | Validación                | Criterio de Éxito                                        |
-|--------|---------------------------|----------------------------------------------------------|
-| 3.1    | **Estructura numerada**   | Subcarpetas siguen convención `XX_Nombre/`               |
-| 3.2    | **Skills locales**        | Skills en 03_Skills/ siguen estándar                     |
-| 3.3    | **Rules**                 | 01_Rules/ tiene reglas vigentes                          |
-| 3.4    | **Agents**                | 02_Agents/ tiene definiciones válidas                    |
-| 3.5    | **MCP Server**            | 09_Server funciona (syntax check)                        |
-| 3.6    | **Go tests**              | Engram tiene tests passing                               |
-| 3.7    | **Python deps**           | requirements.txt es instalable                           |
-| 3.8    | **Templates**             | 10_Templates/ tiene templates válidos                    |
-| 3.9    | **Workflows**             | 00_Workflows/ tiene workflows funcionales                |
-| 3.10   | **Sync con .agent/**      | Estructura 01_Core/03_Skills refleja .agent/02_Skills/   |
+| #        | Validación                  | Criterio de Éxito                                          |
+|----------|-----------------------------|------------------------------------------------------------|
+| 3.1      | **Estructura numerada**     | Subcarpetas siguen convención `XX_Nombre/`                 |
+| 3.2      | **Skills locales**          | Skills en 03_Skills/ siguen estándar                       |
+| 3.3      | **Rules**                   | 01_Rules/ tiene reglas vigentes                            |
+| 3.4      | **Agents**                  | 02_Agents/ tiene definiciones válidas                      |
+| 3.5      | **MCP Server**              | 09_Server funciona (syntax check)                          |
+| 3.6      | **Go tests**                | Engram tiene tests passing                                 |
+| 3.7      | **Python deps**             | requirements.txt es instalable                             |
+| 3.8      | **Templates**               | 10_Templates/ tiene templates válidos                      |
+| 3.9      | **Workflows**               | 00_Workflows/ tiene workflows funcionales                  |
+| 3.10     | **Sync con .agent/**        | Estructura 01_Core/03_Skills refleja .agent/02_Skills/     |
 
 #### 🧪 Tests a Verificar
 ```bash
@@ -153,16 +153,16 @@ python -m py_compile 01_Core/09_Server/mcp/Server.py
 
 #### ✅ Validaciones Requeridas
 
-| #     | Validación               | Criterio de Éxito                                |
-|-------|--------------------------|--------------------------------------------------|
-| 4.1   | **01_Personal_Os/11_AGENTS.md válido**     | Es la fuente de verdad (verificar duplicación)   |
-| 4.2   | **GOALS.md**             | Tiene goals con prioridad y status               |
-| 4.3   | **BACKLOG.md**           | Formato correcto, sin duplicados                 |
-| 4.4   | **Consistencia**         | 01_Personal_Os/11_AGENTS.md y CLAUDE.md no contradicen             |
-| 4.5   | **Slash commands**       | Comandos referenciados existen                   |
-| 4.6   | **Skills referencias**   | Skills mencionadas existen en .agent/            |
-| 4.7   | **HUBs referencias**     | HUBs en 01_Personal_Os/11_AGENTS.md existen en 08_Scripts_Os/      |
-| 4.8   | **Sistema Guardian**     | `/gr` command está configurado                   |
+| #       | Validación                             | Criterio de Éxito                                             |
+|---------|----------------------------------------|---------------------------------------------------------------|
+| 4.1     | **01_Personal_Os/11_AGENTS.md válido** | Es la fuente de verdad (verificar duplicación)                |
+| 4.2     | **GOALS.md**                           | Tiene goals con prioridad y status                            |
+| 4.3     | **BACKLOG.md**                         | Formato correcto, sin duplicados                              |
+| 4.4     | **Consistencia**                       | 01_Personal_Os/11_AGENTS.md y CLAUDE.md no contradicen        |
+| 4.5     | **Slash commands**                     | Comandos referenciados existen                                |
+| 4.6     | **Skills referencias**                 | Skills mencionadas existen en .agent/                         |
+| 4.7     | **HUBs referencias**                   | HUBs en 01_Personal_Os/11_AGENTS.md existen en 08_Scripts_Os/ |
+| 4.8     | **Sistema Guardian**                   | `/gr` command está configurado                                |
 
 ---
 
@@ -184,15 +184,15 @@ python -m py_compile 01_Core/09_Server/mcp/Server.py
 
 #### ✅ Validaciones Requeridas
 
-| #     | Validación                | Criterio de Éxito                          |
-|-------|---------------------------|--------------------------------------------|
-| 5.1   | **Estructura numerada**   | Carpetas siguen `XX_Nombre/`               |
-| 5.2   | **YAML frontmatter**      | Archivos .md tienen frontmatter válido     |
-| 5.3   | **Workflows**             | Templates en 00_Examples son funcionales   |
-| 5.4   | **Tutorials**             | Tutoriales están actualizados              |
-| 5.5   | **Research**              | Research引用 son relevantes                  |
-| 5.6   | **Links internos**        | No hay broken links                        |
-| 5.7   | **Cross-ref 01_Core**     | Referencias a skills/agents son válidas    |
+| #       | Validación                  | Criterio de Éxito                            |
+|---------|-----------------------------|----------------------------------------------|
+| 5.1     | **Estructura numerada**     | Carpetas siguen `XX_Nombre/`                 |
+| 5.2     | **YAML frontmatter**        | Archivos .md tienen frontmatter válido       |
+| 5.3     | **Workflows**               | Templates en 00_Examples son funcionales     |
+| 5.4     | **Tutorials**               | Tutoriales están actualizados                |
+| 5.5     | **Research**                | Research引用 son relevantes                    |
+| 5.6     | **Links internos**          | No hay broken links                          |
+| 5.7     | **Cross-ref 01_Core**       | Referencias a skills/agents son válidas      |
 
 ---
 
@@ -212,16 +212,16 @@ python -m py_compile 01_Core/09_Server/mcp/Server.py
 
 #### ✅ Validaciones Requeridas
 
-| #     | Validación              | Criterio de Éxito                            |
-|-------|-------------------------|----------------------------------------------|
-| 6.1   | **YAML frontmatter**    | Todas las tareas tienen frontmatter válido   |
-| 6.2   | **Campos requeridos**   | title, category, priority, status existen    |
-| 6.3   | **Enumeración**         | `XX_Priority_Nombre.md` correcto             |
-| 6.4   | **Status values**       | Solo `n`, `s`, `b`, `d`                      |
-| 6.5   | **Priority values**     | Solo P0, P1, P2, P3                          |
-| 6.6   | **Templates**           | 00_Templates/ tiene ejemplos correctos       |
-| 6.7   | **Tareas activas**      | linked a GOALS.md                            |
-| 6.8   | **Links**               | resource_refs son válidos                    |
+| #       | Validación                | Criterio de Éxito                              |
+|---------|---------------------------|------------------------------------------------|
+| 6.1     | **YAML frontmatter**      | Todas las tareas tienen frontmatter válido     |
+| 6.2     | **Campos requeridos**     | title, category, priority, status existen      |
+| 6.3     | **Enumeración**           | `XX_Priority_Nombre.md` correcto               |
+| 6.4     | **Status values**         | Solo `n`, `s`, `b`, `d`                        |
+| 6.5     | **Priority values**       | Solo P0, P1, P2, P3                            |
+| 6.6     | **Templates**             | 00_Templates/ tiene ejemplos correctos         |
+| 6.7     | **Tareas activas**        | linked a GOALS.md                              |
+| 6.8     | **Links**                 | resource_refs son válidos                      |
 
 ---
 
@@ -243,14 +243,14 @@ Maerks/
 
 #### ✅ Validaciones Requeridas
 
-| #     | Validación              | Criterio de Éxito                             |
-|-------|-------------------------|-----------------------------------------------|
-| 7.1   | **Tests ejecutables**   | pytest puede correr en 05_Tests/              |
-| 7.2   | **Reports**             | Guardian reports son recientes                |
-| 7.3   | **Skill Audit**         | 08_Skill_Audit.md existe y está actualizado   |
-| 7.4   | **Tools**               | Scripts en 07_Tools son funcionales           |
-| 7.5   | **Dependencies**        | Sin breaking changes                          |
-| 7.6   | **Python syntax**       | Todos los .py son parseables                  |
+| #       | Validación                | Criterio de Éxito                               |
+|---------|---------------------------|-------------------------------------------------|
+| 7.1     | **Tests ejecutables**     | pytest puede correr en 05_Tests/                |
+| 7.2     | **Reports**               | Guardian reports son recientes                  |
+| 7.3     | **Skill Audit**           | 08_Skill_Audit.md existe y está actualizado     |
+| 7.4     | **Tools**                 | Scripts en 07_Tools son funcionales             |
+| 7.5     | **Dependencies**          | Sin breaking changes                            |
+| 7.6     | **Python syntax**         | Todos los .py son parseables                    |
 
 ---
 
@@ -277,15 +277,15 @@ FASE 3: Documentación (P2)
 
 El Agente Work deberá generar para cada carpeta:
 
-| Carpeta                | Output                         |
-|------------------------|--------------------------------|
-| 08_Scripts_Os/         | `audit_scripts_report.md`      |
-| 04_Operations/         | `audit_operations_report.md`   |
-| 01_Core/               | `audit_core_report.md`         |
-| 00_Winter_is_Coming/   | `audit_matrix_report.md`       |
-| 02_Knowledge/          | `audit_knowledge_report.md`    |
-| 03_Tasks/              | `audit_tasks_report.md`        |
-| Maerks/                | `audit_maerks_report.md`       |
+| Carpeta                  | Output                           |
+|--------------------------|----------------------------------|
+| 08_Scripts_Os/           | `audit_scripts_report.md`        |
+| 04_Operations/           | `audit_operations_report.md`     |
+| 01_Core/                 | `audit_core_report.md`           |
+| 00_Winter_is_Coming/     | `audit_matrix_report.md`         |
+| 02_Knowledge/            | `audit_knowledge_report.md`      |
+| 03_Tasks/                | `audit_tasks_report.md`          |
+| Maerks/                  | `audit_maerks_report.md`         |
 
 **Consolidado Final**: `04_Operations/08_Auditorias/02_Super_Campeon_Audit_Report.md`
 

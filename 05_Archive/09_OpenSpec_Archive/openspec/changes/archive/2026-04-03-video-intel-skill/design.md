@@ -6,13 +6,13 @@ Build a modular Python skill with three core components: Video Analyzer (yt-dlp 
 
 ## Architecture Decisions
 
-| Decision           | Choice                | Rationale                                                                              |
-|--------------------|-----------------------|----------------------------------------------------------------------------------------|
-| **Language**       | Python                | yt-dlp, whisper, AST libraries have mature Python SDKs; aligns with existing OS skills |
-| **CLI Framework**  | Click                 | Lightweight, existing pattern in PersonalOS; supports subcommands and hooks            |
-| **Output Format**  | JSON + Markdown       | JSON for programmatic use; Markdown for human readability                              |
-| **Caching**        | File-based (temp dir) | Simple, no external DB; transcriptions cached as .txt files                            |
-| **Error Handling** | Graceful degradation  | Partial failures don't block entire pipeline; clear error messages                     |
+| Decision             | Choice                  | Rationale                                                                                |
+|----------------------|-------------------------|------------------------------------------------------------------------------------------|
+| **Language**         | Python                  | yt-dlp, whisper, AST libraries have mature Python SDKs; aligns with existing OS skills   |
+| **CLI Framework**    | Click                   | Lightweight, existing pattern in PersonalOS; supports subcommands and hooks              |
+| **Output Format**    | JSON + Markdown         | JSON for programmatic use; Markdown for human readability                                |
+| **Caching**          | File-based (temp dir)   | Simple, no external DB; transcriptions cached as .txt files                              |
+| **Error Handling**   | Graceful degradation    | Partial failures don't block entire pipeline; clear error messages                       |
 
 ## Data Flow
 
@@ -31,14 +31,14 @@ GitHub URL ──▶ Repo Scanner ──▶ Code Map      │  Synthesis Engine 
 
 ## File Changes
 
-| File                                                  | Action   | Description                                |
-|-------------------------------------------------------|----------|--------------------------------------------|
-| `.agent/03_Skills/00_Video_Intel/SKILL.md`            | Create   | Main skill definition and trigger patterns |
-| `.agent/03_Skills/00_Video_Intel/video_analyzer.py`   | Create   | yt-dlp + whisper transcription module      |
-| `.agent/03_Skills/00_Video_Intel/repo_scanner.py`     | Create   | Git clone + AST parsing module             |
-| `.agent/03_Skills/00_Video_Intel/synthesis_engine.py` | Create   | Plan generation + OS verification          |
-| `.agent/03_Skills/00_Video_Intel/cli.py`              | Create   | Click-based CLI entry point                |
-| `.agent/03_Skills/00_Video_Intel/__init__.py`         | Create   | Package init                               |
+| File                                                    | Action     | Description                                  |
+|---------------------------------------------------------|------------|----------------------------------------------|
+| `.agent/03_Skills/00_Video_Intel/SKILL.md`              | Create     | Main skill definition and trigger patterns   |
+| `.agent/03_Skills/00_Video_Intel/video_analyzer.py`     | Create     | yt-dlp + whisper transcription module        |
+| `.agent/03_Skills/00_Video_Intel/repo_scanner.py`       | Create     | Git clone + AST parsing module               |
+| `.agent/03_Skills/00_Video_Intel/synthesis_engine.py`   | Create     | Plan generation + OS verification            |
+| `.agent/03_Skills/00_Video_Intel/cli.py`                | Create     | Click-based CLI entry point                  |
+| `.agent/03_Skills/00_Video_Intel/__init__.py`           | Create     | Package init                                 |
 
 ## Interfaces / Contracts
 
@@ -67,11 +67,11 @@ def analyze(video_url, repo, output, format, verbose):
 
 ## Testing Strategy
 
-| Layer       | What to Test                                  | Approach                             |
-|-------------|-----------------------------------------------|--------------------------------------|
-| Unit        | VideoAnalyzer.download(), RepoScanner.clone() | Mock yt-dlp, git; assert calls       |
-| Integration | Full pipeline with test video                 | Use provided test URL                |
-| E2E         | CLI end-to-end                                | Verify output format, error handling |
+| Layer         | What to Test                                    | Approach                               |
+|---------------|-------------------------------------------------|----------------------------------------|
+| Unit          | VideoAnalyzer.download(), RepoScanner.clone()   | Mock yt-dlp, git; assert calls         |
+| Integration   | Full pipeline with test video                   | Use provided test URL                  |
+| E2E           | CLI end-to-end                                  | Verify output format, error handling   |
 
 ## Migration / Rollout
 

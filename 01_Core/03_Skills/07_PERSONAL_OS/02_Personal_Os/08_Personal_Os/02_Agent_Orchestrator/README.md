@@ -6,10 +6,10 @@ El skill está listo y funcional.
 
 ## Estructura
 
-| Directorio     | Propósito                                     |
-|----------------|-----------------------------------------------|
-| **tools/**     | Scripts de orquestación y logs de ejecución   |
-| **SKILL.md**   | Documentación completa                        |
+| Directorio       | Propósito                                       |
+|------------------|-------------------------------------------------|
+| **tools/**       | Scripts de orquestación y logs de ejecución     |
+| **SKILL.md**     | Documentación completa                          |
 
 ## 📚 Documentación Completa
 

@@ -12,12 +12,12 @@ Use this skill to access Claude AI research context.
 
 ## Quick Reference
 
-| Feature        | Status     | Impact                  |
-|----------------|------------|-------------------------|
-| 1M Context     | GA         | Research profundo       |
-| Code Review    | Preview    | Multi-agent PR review   |
-| Cowork         | Preview    | Agentic desktop         |
-| Agent Skills   | GA         | Modular skills          |
+| Feature          | Status       | Impact                    |
+|------------------|--------------|---------------------------|
+| 1M Context       | GA           | Research profundo         |
+| Code Review      | Preview      | Multi-agent PR review     |
+| Cowork           | Preview      | Agentic desktop           |
+| Agent Skills     | GA           | Modular skills            |
 
 ## Key Insights
 

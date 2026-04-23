@@ -234,13 +234,13 @@ Return a summary:
 
 ### Round {N} — Verdict
 
-| Finding                          | Judge A   | Judge B   | Severity              | Status           |
-|----------------------------------|-----------|-----------|-----------------------|------------------|
-| Missing null check in auth.go:42 | ✅         | ✅         | CRITICAL              | Confirmed        |
-| Race condition in worker.go:88   | ✅         | ❌         | WARNING (real)        | Suspect (A only) |
-| Windows volume root edge case    | ❌         | ✅         | WARNING (theoretical) | INFO — reported  |
-| Naming mismatch in handler.go:15 | ❌         | ✅         | SUGGESTION            | Suspect (B only) |
-| Error swallowed in db.go:201     | ✅         | ✅         | WARNING (real)        | Confirmed        |
+| Finding                            | Judge A     | Judge B     | Severity                | Status             |
+|------------------------------------|-------------|-------------|-------------------------|--------------------|
+| Missing null check in auth.go:42   | ✅           | ✅           | CRITICAL                | Confirmed          |
+| Race condition in worker.go:88     | ✅           | ❌           | WARNING (real)          | Suspect (A only)   |
+| Windows volume root edge case      | ❌           | ✅           | WARNING (theoretical)   | INFO — reported    |
+| Naming mismatch in handler.go:15   | ❌           | ✅           | SUGGESTION              | Suspect (B only)   |
+| Error swallowed in db.go:201       | ✅           | ✅           | WARNING (real)          | Confirmed          |
 
 **Confirmed issues**: 2 CRITICAL
 **Suspect issues**: 1 WARNING, 1 SUGGESTION
@@ -271,9 +271,9 @@ User chose to stop after {N} fix iterations. Issues remain.
 Manual review required before proceeding.
 
 ### Remaining Issues
-| Finding       | Judge A   | Judge B   | Severity   |
-|---------------|-----------|-----------|------------|
-| {description} | ✅         | ✅         | CRITICAL   |
+| Finding         | Judge A     | Judge B     | Severity     |
+|-----------------|-------------|-------------|--------------|
+| {description}   | ✅           | ✅           | CRITICAL     |
 
 ### History
 - Round 1: {N} confirmed issues found

@@ -23,13 +23,13 @@
 
 ## Stack Técnico
 
-| Component | Tecnología |
-|-----------|------------|
-| Frontend | Electron/React |
-| Vision | Anthropic (computer use model) |
-| Desktop | macOS native |
-| Mobile | Claude Mobile App |
-| MCP | Multiple servers |
+| Component   | Tecnología                     |
+|-------------|--------------------------------|
+| Frontend    | Electron/React                 |
+| Vision      | Anthropic (computer use model) |
+| Desktop     | macOS native                   |
+| Mobile      | Claude Mobile App              |
+| MCP         | Multiple servers               |
 
 ---
 
@@ -55,19 +55,19 @@
 
 ## Pricing Model (mcp: recall same)
 
-| Plan | Price | Features |
-|------|-------|----------|
-| Free | $0 | Chat only |
-| Pro | $20/mo | Computer Use, Dispatch |
-| Max | $100-200/mo | Advanced + priority |
+| Plan   | Price       | Features               |
+|--------|-------------|------------------------|
+| Free   | $0          | Chat only              |
+| Pro    | $20/mo      | Computer Use, Dispatch |
+| Max    | $100-200/mo | Advanced + priority    |
 
 ---
 
 ## Lecciones parabuild
 
-| Learn | Apply |
-|-------|-------|
-| Remote work needs dispatch | Add mobile trigger |
-| Vision = autonomy | Screen capture first |
-| MCP = extensibility | Open API from day 1 |
-| Preview = fast iteration | Ship early, iterate |
+| Learn                      | Apply                |
+|----------------------------|----------------------|
+| Remote work needs dispatch | Add mobile trigger   |
+| Vision = autonomy          | Screen capture first |
+| MCP = extensibility        | Open API from day 1  |
+| Preview = fast iteration   | Ship early, iterate  |

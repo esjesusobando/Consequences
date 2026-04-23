@@ -57,19 +57,19 @@ Branch names **must** match this pattern:
 ^(feat|fix|chore|docs|style|refactor|perf|test|build|ci|revert)\/[a-z0-9._-]+$
 ```
 
-| Type        | Example                            |
-|-------------|------------------------------------|
-| `feat/`     | `feat/user-login`                  |
-| `fix/`      | `fix/duplicate-observation-insert` |
-| `docs/`     | `docs/api-reference-update`        |
-| `refactor/` | `refactor/extract-query-sanitizer` |
-| `chore/`    | `chore/bump-bubbletea-v0.26`       |
-| `style/`    | `style/fix-linter-warnings`        |
-| `perf/`     | `perf/optimize-catalog-loading`    |
-| `test/`     | `test/add-pipeline-coverage`       |
-| `build/`    | `build/update-goreleaser-config`   |
-| `ci/`       | `ci/add-e2e-docker-job`            |
-| `revert/`   | `revert/undo-model-picker-change`  |
+| Type          | Example                              |
+|---------------|--------------------------------------|
+| `feat/`       | `feat/user-login`                    |
+| `fix/`        | `fix/duplicate-observation-insert`   |
+| `docs/`       | `docs/api-reference-update`          |
+| `refactor/`   | `refactor/extract-query-sanitizer`   |
+| `chore/`      | `chore/bump-bubbletea-v0.26`         |
+| `style/`      | `style/fix-linter-warnings`          |
+| `perf/`       | `perf/optimize-catalog-loading`      |
+| `test/`       | `test/add-pipeline-coverage`         |
+| `build/`      | `build/update-goreleaser-config`     |
+| `ci/`         | `ci/add-e2e-docker-job`              |
+| `revert/`     | `revert/undo-model-picker-change`    |
 
 **Rules:**
 - All lowercase
@@ -102,9 +102,9 @@ Closes #<N>
 
 ## 📂 Changes
 
-| File / Area    | What Changed      |
-|----------------|-------------------|
-| `path/to/file` | Brief description |
+| File / Area      | What Changed        |
+|------------------|---------------------|
+| `path/to/file`   | Brief description   |
 
 ## 🧪 Test Plan
 
@@ -139,13 +139,13 @@ cd e2e && ./docker-test.sh
 
 All 5 checks run on every PR and **all must pass** before merge:
 
-| Check                                 | What It Verifies                                | How to Fix                                                |
-|---------------------------------------|-------------------------------------------------|-----------------------------------------------------------|
-| **Check Issue Reference**             | PR body contains `Closes/Fixes/Resolves #N`     | Add `Closes #<N>` to the PR body                          |
-| **Check Issue Has `status:approved`** | Linked issue has been approved by a maintainer  | Wait for maintainer to add `status:approved` to the issue |
-| **Check PR Has `type:*` Label**       | Exactly one `type:*` label is applied to the PR | Ask a maintainer to add the correct label; remove extras  |
-| **Unit Tests**                        | `go test ./...` passes                          | Fix failing tests before pushing                          |
-| **E2E Tests**                         | `cd e2e && ./docker-test.sh` passes             | Fix failing E2E scenarios before pushing                  |
+| Check                                   | What It Verifies                                  | How to Fix                                                  |
+|-----------------------------------------|---------------------------------------------------|-------------------------------------------------------------|
+| **Check Issue Reference**               | PR body contains `Closes/Fixes/Resolves #N`       | Add `Closes #<N>` to the PR body                            |
+| **Check Issue Has `status:approved`**   | Linked issue has been approved by a maintainer    | Wait for maintainer to add `status:approved` to the issue   |
+| **Check PR Has `type:*` Label**         | Exactly one `type:*` label is applied to the PR   | Ask a maintainer to add the correct label; remove extras    |
+| **Unit Tests**                          | `go test ./...` passes                            | Fix failing tests before pushing                            |
+| **E2E Tests**                           | `cd e2e && ./docker-test.sh` passes               | Fix failing E2E scenarios before pushing                    |
 
 ---
 
@@ -169,19 +169,19 @@ Commit messages **must** match this pattern:
 
 ### Allowed Types
 
-| Type       | Purpose                               | PR Label              |
-|------------|---------------------------------------|-----------------------|
-| `feat`     | New feature                           | `type:feature`        |
-| `fix`      | Bug fix                               | `type:bug`            |
-| `docs`     | Documentation only                    | `type:docs`           |
-| `refactor` | Code change (no behavior change)      | `type:refactor`       |
-| `chore`    | Maintenance, dependencies, tooling    | `type:chore`          |
-| `style`    | Formatting, linting (no logic change) | `type:chore`          |
-| `perf`     | Performance improvement               | `type:feature`        |
-| `test`     | Adding or updating tests              | `type:chore`          |
-| `build`    | Build system or external deps         | `type:chore`          |
-| `ci`       | CI configuration                      | `type:chore`          |
-| `revert`   | Reverts a previous commit             | matches reverted type |
+| Type         | Purpose                                 | PR Label                |
+|--------------|-----------------------------------------|-------------------------|
+| `feat`       | New feature                             | `type:feature`          |
+| `fix`        | Bug fix                                 | `type:bug`              |
+| `docs`       | Documentation only                      | `type:docs`             |
+| `refactor`   | Code change (no behavior change)        | `type:refactor`         |
+| `chore`      | Maintenance, dependencies, tooling      | `type:chore`            |
+| `style`      | Formatting, linting (no logic change)   | `type:chore`            |
+| `perf`       | Performance improvement                 | `type:feature`          |
+| `test`       | Adding or updating tests                | `type:chore`            |
+| `build`      | Build system or external deps           | `type:chore`            |
+| `ci`         | CI configuration                        | `type:chore`            |
+| `revert`     | Reverts a previous commit               | matches reverted type   |
 
 ### Breaking Changes
 
@@ -264,9 +264,9 @@ Fixes Claude Code binary detection failing on Linux when HOME is not set.
 
 ## 📂 Changes
 
-| File / Area                   | What Changed                |
-|-------------------------------|-----------------------------|
-| \`internal/agents/claude.go\` | Added HOME env var fallback |
+| File / Area                     | What Changed                  |
+|---------------------------------|-------------------------------|
+| \`internal/agents/claude.go\`   | Added HOME env var fallback   |
 
 ## 🧪 Test Plan
 

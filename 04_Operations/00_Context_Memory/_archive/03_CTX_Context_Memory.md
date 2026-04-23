@@ -8,12 +8,12 @@
 
 ## 📊 Estado del Sistema
 
-| Métrica                                    | Valor                                        |
-|--------------------------------------------|----------------------------------------------|
-| Tareas Activas                             | 9 tareas activas                             |
-| Trazas AIPM                                | No hay trazas                                |
-| Evaluación                                 | Score: 9.94                                  |
-| Presupuesto                                | Sin datos                                    |
+| Métrica                                      | Valor                                          |
+|----------------------------------------------|------------------------------------------------|
+| Tareas Activas                               | 9 tareas activas                               |
+| Trazas AIPM                                  | No hay trazas                                  |
+| Evaluación                                   | Score: 9.94                                    |
+| Presupuesto                                  | Sin datos                                      |
 
 - --
 

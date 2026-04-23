@@ -87,12 +87,12 @@ readonly displayName = computed(() => this.user()?.name ?? 'Guest');
 
 ### When to Use What
 
-| Need                                   | Use                                  |
-|----------------------------------------|--------------------------------------|
-| React to input changes                 | `effect()` watching the input signal |
-| Derived/computed state                 | `computed()`                         |
-| Side effects (API calls, localStorage) | `effect()`                           |
-| Cleanup on destroy                     | `DestroyRef` + `inject()`            |
+| Need                                     | Use                                    |
+|------------------------------------------|----------------------------------------|
+| React to input changes                   | `effect()` watching the input signal   |
+| Derived/computed state                   | `computed()`                           |
+| Side effects (API calls, localStorage)   | `effect()`                             |
+| Cleanup on destroy                       | `DestroyRef` + `inject()`              |
 
 ```typescript
 // Cleanup example
@@ -143,13 +143,13 @@ constructor(private http: HttpClient) {}
 
 Signals are the default. Use RxJS ONLY for complex async operations.
 
-| Use Signals                    | Use RxJS                   |
-|--------------------------------|----------------------------|
-| Component state                | Combining multiple streams |
-| Derived values                 | Debounce/throttle          |
-| Simple async (single API call) | Race conditions            |
-| Input/Output                   | WebSockets, real-time      |
-|                                | Complex error retry logic  |
+| Use Signals                      | Use RxJS                     |
+|----------------------------------|------------------------------|
+| Component state                  | Combining multiple streams   |
+| Derived values                   | Debounce/throttle            |
+| Simple async (single API call)   | Race conditions              |
+| Input/Output                     | WebSockets, real-time        |
+|                                  | Complex error retry logic    |
 
 ```typescript
 // ✅ Simple API call - use signals

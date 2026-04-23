@@ -21,11 +21,11 @@ Este perfil orquesta el ciclo completo de desarrollo de una feature: desde la de
 
 ## 🏗️ Three-Agent Architecture (SOTA)
 
-| Agente          | Rol                                 | Input         | Output                   |
-|-----------------|-------------------------------------|---------------|--------------------------|
-| **Planner**     | 1-4 oraciones → spec completo       | User prompt   | Full spec con features   |
-| **Generator**   | Construye feature por feature       | Spec          | Código                   |
-| **Evaluator**   | QA separado (NO self-evaluation!)   | Running app   | Bugs + grading           |
+| Agente            | Rol                                   | Input           | Output                     |
+|-------------------|---------------------------------------|-----------------|----------------------------|
+| **Planner**       | 1-4 oraciones → spec completo         | User prompt     | Full spec con features     |
+| **Generator**     | Construye feature por feature         | Spec            | Código                     |
+| **Evaluator**     | QA separado (NO self-evaluation!)     | Running app     | Bugs + grading             |
 
 > **Pattern:** Inspired by Anthropic's [Harness Design](https://docs.anthropic.com)
 
@@ -34,33 +34,33 @@ Este perfil orquesta el ciclo completo de desarrollo de una feature: desde la de
 ## 📦 Skills que Carga Automáticamente
 
 ### Agente: Planner
-| Skill                  | Cuándo Usar                   | Output                          |
-|------------------------|-------------------------------|---------------------------------|
-| `Brainstorming`        | Necesidad de explorar ideas   | Opciones y tradeoffs            |
-| `PRD`                  | Context de nueva feature      | Requirements machine-readable   |
-| `Technical Planning`   | Feature definida              | Plan técnico                    |
+| Skill                    | Cuándo Usar                     | Output                            |
+|--------------------------|---------------------------------|-----------------------------------|
+| `Brainstorming`          | Necesidad de explorar ideas     | Opciones y tradeoffs              |
+| `PRD`                    | Context de nueva feature        | Requirements machine-readable     |
+| `Technical Planning`     | Feature definida                | Plan técnico                      |
 
 ### Agente: Generator
-| Skill                       | Cuándo Usar         | Output                  |
-|-----------------------------|---------------------|-------------------------|
-| `Taste_Skill`               | UI/UX needed        | Diseño premium          |
-| `shadcn`                    | Componentes UI      | Código de componentes   |
-| `React_19`                  | Frontend moderno    | Componentes React       |
-| `Nextjs_15`                 | App web fullstack   | Páginas y APIs          |
-| `TypeScript`                | Cualquier código    | Tipado estricto         |
-| `Django_Drf`                | Backend API         | Endpoints REST          |
-| `Zustand_5`                 | Estado global       | Store predecible        |
-| `Test_Driven_Development`   | Antes de código     | Tests que fallan        |
-| `E2E_Testing`               | Feature completa    | Tests end-to-end        |
+| Skill                         | Cuándo Usar           | Output                    |
+|-------------------------------|-----------------------|---------------------------|
+| `Taste_Skill`                 | UI/UX needed          | Diseño premium            |
+| `shadcn`                      | Componentes UI        | Código de componentes     |
+| `React_19`                    | Frontend moderno      | Componentes React         |
+| `Nextjs_15`                   | App web fullstack     | Páginas y APIs            |
+| `TypeScript`                  | Cualquier código      | Tipado estricto           |
+| `Django_Drf`                  | Backend API           | Endpoints REST            |
+| `Zustand_5`                   | Estado global         | Store predecible          |
+| `Test_Driven_Development`     | Antes de código       | Tests que fallan          |
+| `E2E_Testing`                 | Feature completa      | Tests end-to-end          |
 
 ### Agente: Evaluator (QA)
-| Skill                   | Cuándo Usar           | Output                  |
-|-------------------------|-----------------------|-------------------------|
-| `Playwright`            | Testing interactivo   | Navega y testa la app   |
-| `Integration_Testing`   | Verificarfeatures     | Bugs encontrados        |
-| `Edge_Case`             | Casos especiales      | Cobertura de bordes     |
-| `Test_Coverage`         | Coverage analysis     | Reporte de coverage     |
-| `Observability`         | Métricas              | Logs de testing         |
+| Skill                     | Cuándo Usar             | Output                    |
+|---------------------------|-------------------------|---------------------------|
+| `Playwright`              | Testing interactivo     | Navega y testa la app     |
+| `Integration_Testing`     | Verificarfeatures       | Bugs encontrados          |
+| `Edge_Case`               | Casos especiales        | Cobertura de bordes       |
+| `Test_Coverage`           | Coverage analysis       | Reporte de coverage       |
+| `Observability`           | Métricas                | Logs de testing           |
 
 ---
 
@@ -111,13 +111,13 @@ Este perfil orquesta el ciclo completo de desarrollo de una feature: desde la de
 
 ## 📊 Métricas que Trackea
 
-| Métrica                | Target        | Cómo se mide                      |
-|------------------------|---------------|-----------------------------------|
-| **Cycle Time**         | <4 horas      | Tiempo desde PRD hasta deploy     |
-| **Test Coverage**      | >80%          | `npm run test -- --coverage`      |
-| **Lighthouse Score**   | >90           | SEO + Performance                 |
-| **PR Size**            | <400 líneas   | `git diff --stat`                 |
-| **Escalations**        | 0             | Veces que necesita ayuda humana   |
+| Métrica                  | Target          | Cómo se mide                        |
+|--------------------------|-----------------|-------------------------------------|
+| **Cycle Time**           | <4 horas        | Tiempo desde PRD hasta deploy       |
+| **Test Coverage**        | >80%            | `npm run test -- --coverage`        |
+| **Lighthouse Score**     | >90             | SEO + Performance                   |
+| **PR Size**              | <400 líneas     | `git diff --stat`                   |
+| **Escalations**          | 0               | Veces que necesita ayuda humana     |
 
 ---
 
@@ -174,20 +174,20 @@ OUTPUT FINAL:
 ## 🔗 Referencias
 
 ### Anthropic Harness Components (Integración SOTA)
-| Componente             | Ubicación                                                     | Uso                           |
-|------------------------|---------------------------------------------------------------|-------------------------------|
-| **Safety Wrapper**     | `08_Scripts_Os/11_Anthropic_Harness/00_Safety_Wrapper.py`     | Pre-check antes de ejecutar   |
-| **Context Manager**    | `08_Scripts_Os/11_Anthropic_Harness/01_Context_Manager.py`    | Reset vs Compaction           |
-| **Evaluator Runner**   | `08_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner.py`   | QA separado (GAN pattern)     |
-| **Sprint Contract**    | `08_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract.py`    | Negocia "done"                |
-| **Playwright QA**      | `08_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py`      | Testing interactivo           |
+| Componente               | Ubicación                                                       | Uso                             |
+|--------------------------|-----------------------------------------------------------------|---------------------------------|
+| **Safety Wrapper**       | `08_Scripts_Os/11_Anthropic_Harness/00_Safety_Wrapper.py`       | Pre-check antes de ejecutar     |
+| **Context Manager**      | `08_Scripts_Os/11_Anthropic_Harness/01_Context_Manager.py`      | Reset vs Compaction             |
+| **Evaluator Runner**     | `08_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner.py`     | QA separado (GAN pattern)       |
+| **Sprint Contract**      | `08_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract.py`      | Negocia "done"                  |
+| **Playwright QA**        | `08_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py`        | Testing interactivo             |
 
 ### Skills Anthropic
-| Skill                    | Ubicación                                                         | Uso                           |
-|--------------------------|-------------------------------------------------------------------|-------------------------------|
-| **Evaluator Pattern**    | `01_Core/03_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`    | Cómo hacer adversarial eval   |
-| **Context Management**   | `01_Core/03_Skills/14_Anthropic_Harness/02_Context_Management/`   | Reset vs compaction           |
-| **Sprint Contract**      | `01_Core/03_Skills/14_Anthropic_Harness/03_Sprint_Contract/`      | Generator + Evaluator         |
+| Skill                      | Ubicación                                                           | Uso                             |
+|----------------------------|---------------------------------------------------------------------|---------------------------------|
+| **Evaluator Pattern**      | `01_Core/03_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`      | Cómo hacer adversarial eval     |
+| **Context Management**     | `01_Core/03_Skills/14_Anthropic_Harness/02_Context_Management/`     | Reset vs compaction             |
+| **Sprint Contract**        | `01_Core/03_Skills/14_Anthropic_Harness/03_Sprint_Contract/`        | Generator + Evaluator           |
 
 ### Workflow
 - **17_Anthropic_Harness**: `01_Core/00_Workflows/17_Anthropic_Harness.md` — Workflow completo de 3 agentes

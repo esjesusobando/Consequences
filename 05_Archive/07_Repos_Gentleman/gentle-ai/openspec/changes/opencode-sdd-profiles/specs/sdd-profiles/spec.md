@@ -17,11 +17,11 @@ orchestrator model and an optional per-phase model map. The profile name MUST
 be a non-empty slug (lowercase, alphanumeric, hyphens only). The default profile
 (name `""` or `"default"`) represents the existing `sdd-orchestrator` agent.
 
-| Field             | Type                       | Required   |
-|-------------------|----------------------------|------------|
-| Name              | string (slug)              | Yes        |
-| OrchestratorModel | ModelAssignment            | Yes        |
-| PhaseAssignments  | map[string]ModelAssignment | No         |
+| Field               | Type                         | Required     |
+|---------------------|------------------------------|--------------|
+| Name                | string (slug)                | Yes          |
+| OrchestratorModel   | ModelAssignment              | Yes          |
+| PhaseAssignments    | map[string]ModelAssignment   | No           |
 
 #### Scenario: Profile creation with explicit phase models
 
@@ -47,15 +47,15 @@ Input MUST be auto-lowercased. The name `default` MUST be rejected (reserved).
 Empty names MUST be rejected. The name `sdd-orchestrator` MUST be rejected
 (would produce an ambiguous agent key).
 
-| Input              | Valid?     | Action                     |
-|--------------------|------------|----------------------------|
-| `cheap`            | Yes        | Accept                     |
-| `premium-v2`       | Yes        | Accept                     |
-| `my profile`       | No         | Reject — spaces            |
-| `default`          | No         | Reject — reserved          |
-| `LOUD`             | Normalized | Auto-lowercase to `loud`   |
-| `sdd-orchestrator` | No         | Reject — reserved prefix   |
-| `` (empty)         | No         | Reject — must be non-empty |
+| Input                | Valid?       | Action                       |
+|----------------------|--------------|------------------------------|
+| `cheap`              | Yes          | Accept                       |
+| `premium-v2`         | Yes          | Accept                       |
+| `my profile`         | No           | Reject — spaces              |
+| `default`            | No           | Reject — reserved            |
+| `LOUD`               | Normalized   | Auto-lowercase to `loud`     |
+| `sdd-orchestrator`   | No           | Reject — reserved prefix     |
+| `` (empty)           | No           | Reject — must be non-empty   |
 
 #### Scenario: Spaces rejected during creation
 

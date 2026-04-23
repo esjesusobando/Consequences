@@ -28,28 +28,28 @@
 
 ## Scenarios
 
-| ID | Escenario | Input | Workflow | Output |
-|----|-----------|-------|----------|--------|
-| S1 | Homologar | Agents en .agent | Copiar a Core | 17 agents en 04_Agents |
-| S2 | Mapear | Todas las refs | Script grep | CSV con refs |
-| S3 | Mover | Por área | Mover + actualizar | Estructura nueva |
-| S4 | Validar | Post-move | QMD Auditor | 0 links rotos |
+| ID   | Escenario   | Input            | Workflow           | Output                 |
+|------|-------------|------------------|--------------------|------------------------|
+| S1   | Homologar   | Agents en .agent | Copiar a Core      | 17 agents en 04_Agents |
+| S2   | Mapear      | Todas las refs   | Script grep        | CSV con refs           |
+| S3   | Mover       | Por área         | Mover + actualizar | Estructura nueva       |
+| S4   | Validar     | Post-move        | QMD Auditor        | 0 links rotos          |
 
 ---
 
 ## Estructura Final (8 Áreas)
 
-| Área | Nombre | Skills Integradas |
-|------|--------|------------------|
-| 01 | CREACION_Contenidos | Marketing, YouTube, Carousel |
-| 02 | DISEÑO_UI_UX | Taste, Minimalist, UI/UX |
-| 03 | VIDEO_MEDIA | James Cameron, Video Intel |
-| 04 | AUTOMATIZACION | N8N, Firecrawl, GWS |
-| 05 | WORKFLOWS | PM, Brainstorming, Planning |
-| 06 | TOOLS | Skill Creator, Evaluators, Templates |
-| 07 | PERSONAL_OS | Life OS, Fantasticos, QMD |
-| 08 | INVICTUS_WEB | GWS, Playwright, Excalidraw |
-| 09 | LEGACY | Backup |
+| Área   | Nombre              | Skills Integradas                    |
+|--------|---------------------|--------------------------------------|
+| 01     | CREACION_Contenidos | Marketing, YouTube, Carousel         |
+| 02     | DISEÑO_UI_UX        | Taste, Minimalist, UI/UX             |
+| 03     | VIDEO_MEDIA         | James Cameron, Video Intel           |
+| 04     | AUTOMATIZACION      | N8N, Firecrawl, GWS                  |
+| 05     | WORKFLOWS           | PM, Brainstorming, Planning          |
+| 06     | TOOLS               | Skill Creator, Evaluators, Templates |
+| 07     | PERSONAL_OS         | Life OS, Fantasticos, QMD            |
+| 08     | INVICTUS_WEB        | GWS, Playwright, Excalidraw          |
+| 09     | LEGACY              | Backup                               |
 
 ---
 

@@ -96,10 +96,10 @@ src/
 
 ## Key Commands
 
-| Command            | Description              |
-|--------------------|--------------------------|
-| `npm run dev`      | Start development server |
-| `npm run build`    | Production build         |
-| `npm run test`     | Run tests in watch mode  |
-| `npm run test:run` | Run tests once           |
-| `npm run lint`     | Run ESLint               |
+| Command              | Description                |
+|----------------------|----------------------------|
+| `npm run dev`        | Start development server   |
+| `npm run build`      | Production build           |
+| `npm run test`       | Run tests in watch mode    |
+| `npm run test:run`   | Run tests once             |
+| `npm run lint`       | Run ESLint                 |

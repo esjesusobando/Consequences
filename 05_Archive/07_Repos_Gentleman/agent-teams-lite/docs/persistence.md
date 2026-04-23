@@ -4,12 +4,12 @@ Agent Teams Lite supports multiple artifact storage backends. For quick start, s
 
 ## Modes
 
-| Mode       | Description                                    |
-|------------|------------------------------------------------|
-| `engram`   | Default. Persistent memory across sessions.    |
-| `openspec` | File-based artifacts in `openspec/` directory. |
-| `hybrid`   | Both engram + openspec simultaneously.         |
-| `none`     | No persistence. Results inline only.           |
+| Mode         | Description                                      |
+|--------------|--------------------------------------------------|
+| `engram`     | Default. Persistent memory across sessions.      |
+| `openspec`   | File-based artifacts in `openspec/` directory.   |
+| `hybrid`     | Both engram + openspec simultaneously.           |
+| `none`       | No persistence. Results inline only.             |
 
 ## Configuration
 

@@ -115,14 +115,14 @@ go build -ldflags="-X main.version=local-$(git describe --tags --always)" -o eng
 
 Grab the latest release for your platform from [GitHub Releases](https://github.com/Gentleman-Programming/engram/releases).
 
-| Platform              | File                                   |
-|-----------------------|----------------------------------------|
-| macOS (Apple Silicon) | `engram_<version>_darwin_arm64.tar.gz` |
-| macOS (Intel)         | `engram_<version>_darwin_amd64.tar.gz` |
-| Linux (x86_64)        | `engram_<version>_linux_amd64.tar.gz`  |
-| Linux (ARM64)         | `engram_<version>_linux_arm64.tar.gz`  |
-| Windows (x86_64)      | `engram_<version>_windows_amd64.zip`   |
-| Windows (ARM64)       | `engram_<version>_windows_arm64.zip`   |
+| Platform                | File                                     |
+|-------------------------|------------------------------------------|
+| macOS (Apple Silicon)   | `engram_<version>_darwin_arm64.tar.gz`   |
+| macOS (Intel)           | `engram_<version>_darwin_amd64.tar.gz`   |
+| Linux (x86_64)          | `engram_<version>_linux_amd64.tar.gz`    |
+| Linux (ARM64)           | `engram_<version>_linux_arm64.tar.gz`    |
+| Windows (x86_64)        | `engram_<version>_windows_amd64.zip`     |
+| Windows (ARM64)         | `engram_<version>_windows_arm64.zip`     |
 
 ---
 
@@ -137,10 +137,10 @@ The binary includes SQLite (via [modernc.org/sqlite](https://pkg.go.dev/modernc.
 
 ## Environment Variables
 
-| Variable          | Description      | Default                                        |
-|-------------------|------------------|------------------------------------------------|
-| `ENGRAM_DATA_DIR` | Data directory   | `~/.engram` (Windows: `%USERPROFILE%\.engram`) |
-| `ENGRAM_PORT`     | HTTP server port | `7437`                                         |
+| Variable            | Description        | Default                                          |
+|---------------------|--------------------|--------------------------------------------------|
+| `ENGRAM_DATA_DIR`   | Data directory     | `~/.engram` (Windows: `%USERPROFILE%\.engram`)   |
+| `ENGRAM_PORT`       | HTTP server port   | `7437`                                           |
 
 ---
 
@@ -148,12 +148,12 @@ The binary includes SQLite (via [modernc.org/sqlite](https://pkg.go.dev/modernc.
 
 When using `engram setup`, config files are written to platform-appropriate locations:
 
-| Agent          | macOS / Linux                                                                               | Windows                                                                 |
-|----------------|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| OpenCode       | `~/.config/opencode/`                                                                       | `%APPDATA%\opencode\`                                                   |
-| Gemini CLI     | `~/.gemini/`                                                                                | `%APPDATA%\gemini\`                                                     |
-| Codex          | `~/.codex/`                                                                                 | `%APPDATA%\codex\`                                                      |
-| Claude Code    | Managed by `claude` CLI                                                                     | Managed by `claude` CLI                                                 |
-| VS Code        | `.vscode/mcp.json` (workspace) or `~/Library/Application Support/Code/User/mcp.json` (user) | `.vscode\mcp.json` (workspace) or `%APPDATA%\Code\User\mcp.json` (user) |
-| Antigravity    | `~/.gemini/antigravity/mcp_config.json`                                                     | `%USERPROFILE%\.gemini\antigravity\mcp_config.json`                     |
-| Data directory | `~/.engram/`                                                                                | `%USERPROFILE%\.engram\`                                                |
+| Agent            | macOS / Linux                                                                                 | Windows                                                                   |
+|------------------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| OpenCode         | `~/.config/opencode/`                                                                         | `%APPDATA%\opencode\`                                                     |
+| Gemini CLI       | `~/.gemini/`                                                                                  | `%APPDATA%\gemini\`                                                       |
+| Codex            | `~/.codex/`                                                                                   | `%APPDATA%\codex\`                                                        |
+| Claude Code      | Managed by `claude` CLI                                                                       | Managed by `claude` CLI                                                   |
+| VS Code          | `.vscode/mcp.json` (workspace) or `~/Library/Application Support/Code/User/mcp.json` (user)   | `.vscode\mcp.json` (workspace) or `%APPDATA%\Code\User\mcp.json` (user)   |
+| Antigravity      | `~/.gemini/antigravity/mcp_config.json`                                                       | `%USERPROFILE%\.gemini\antigravity\mcp_config.json`                       |
+| Data directory   | `~/.engram/`                                                                                  | `%USERPROFILE%\.engram\`                                                  |

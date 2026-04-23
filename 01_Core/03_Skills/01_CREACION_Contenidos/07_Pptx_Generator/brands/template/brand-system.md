@@ -23,11 +23,11 @@
 
 ### Primary Accent
 
-| Name           | Hex          | Use                                  |
-|----------------|--------------|--------------------------------------|
-| Accent         | `#REPLACE`   | Primary buttons, links, highlights   |
-| Accent Dark    | `#REPLACE`   | Hover states, outlines               |
-| Accent Light   | `#REPLACE`   | Secondary accents                    |
+| Name             | Hex            | Use                                    |
+|------------------|----------------|----------------------------------------|
+| Accent           | `#REPLACE`     | Primary buttons, links, highlights     |
+| Accent Dark      | `#REPLACE`     | Hover states, outlines                 |
+| Accent Light     | `#REPLACE`     | Secondary accents                      |
 
 ### Theme Base
 
@@ -51,13 +51,13 @@ Text Secondary: #REPLACE
 
 ### Usage Guidelines
 
-| Element     | Font      | Weight     | Size      |
-|-------------|-----------|------------|-----------|
-| Display     | Heading   | 700        | 36px+     |
-| H1          | Heading   | 700        | 30px      |
-| H2          | Heading   | 600        | 24px      |
-| Body        | Body      | 400        | 16-18px   |
-| Code        | Code      | 400        | 14px      |
+| Element       | Font        | Weight       | Size        |
+|---------------|-------------|--------------|-------------|
+| Display       | Heading     | 700          | 36px+       |
+| H1            | Heading     | 700          | 30px        |
+| H2            | Heading     | 600          | 24px        |
+| Body          | Body        | 400          | 16-18px     |
+| Code          | Code        | 400          | 14px        |
 
 ---
 

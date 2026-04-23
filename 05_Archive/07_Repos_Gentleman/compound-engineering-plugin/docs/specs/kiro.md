@@ -46,22 +46,22 @@ https://agentskills.io
 
 ### Agent config fields
 
-| Field                | Type                      | Used in conversion   | Notes                                               |
-|----------------------|---------------------------|----------------------|-----------------------------------------------------|
-| `name`               | string                    | Yes                  | Agent display name                                  |
-| `description`        | string                    | Yes                  | Human-readable description                          |
-| `prompt`             | string or `file://` URI   | Yes                  | System prompt or file reference                     |
-| `tools`              | string[]                  | Yes (`["*"]`)        | Available tools                                     |
-| `resources`          | string[]                  | Yes                  | `file://`, `skill://`, `knowledgeBase` URIs         |
-| `includeMcpJson`     | boolean                   | Yes (`true`)         | Inherit project MCP servers                         |
-| `welcomeMessage`     | string                    | Yes                  | Agent switch greeting                               |
-| `mcpServers`         | object                    | No                   | Per-agent MCP config (use includeMcpJson instead)   |
-| `toolAliases`        | Record                    | No                   | Tool name remapping                                 |
-| `allowedTools`       | string[]                  | No                   | Auto-approve patterns                               |
-| `toolsSettings`      | object                    | No                   | Per-tool configuration                              |
-| `hooks`              | object                    | No (future work)     | 5 trigger types                                     |
-| `model`              | string                    | No                   | Model selection                                     |
-| `keyboardShortcut`   | string                    | No                   | Quick-switch shortcut                               |
+| Field                  | Type                        | Used in conversion     | Notes                                                 |
+|------------------------|-----------------------------|------------------------|-------------------------------------------------------|
+| `name`                 | string                      | Yes                    | Agent display name                                    |
+| `description`          | string                      | Yes                    | Human-readable description                            |
+| `prompt`               | string or `file://` URI     | Yes                    | System prompt or file reference                       |
+| `tools`                | string[]                    | Yes (`["*"]`)          | Available tools                                       |
+| `resources`            | string[]                    | Yes                    | `file://`, `skill://`, `knowledgeBase` URIs           |
+| `includeMcpJson`       | boolean                     | Yes (`true`)           | Inherit project MCP servers                           |
+| `welcomeMessage`       | string                      | Yes                    | Agent switch greeting                                 |
+| `mcpServers`           | object                      | No                     | Per-agent MCP config (use includeMcpJson instead)     |
+| `toolAliases`          | Record                      | No                     | Tool name remapping                                   |
+| `allowedTools`         | string[]                    | No                     | Auto-approve patterns                                 |
+| `toolsSettings`        | object                      | No                     | Per-tool configuration                                |
+| `hooks`                | object                      | No (future work)       | 5 trigger types                                       |
+| `model`                | string                      | No                     | Model selection                                       |
+| `keyboardShortcut`     | string                      | No                     | Quick-switch shortcut                                 |
 
 ### Example agent config
 
@@ -148,24 +148,24 @@ Detailed instructions...
 
 ## Conversion lossy mappings
 
-| Claude Code Feature                  | Kiro Status                       | Notes                                          |
-|--------------------------------------|-----------------------------------|------------------------------------------------|
-| `Edit` tool (surgical replacement)   | Degraded -> `write` (full-file)   | Kiro write overwrites entire files             |
-| `context: fork`                      | Lost                              | No execution isolation control                 |
-| `!`command`` dynamic injection       | Lost                              | No pre-processing of markdown                  |
-| `disable-model-invocation`           | Lost                              | No invocation control                          |
-| `allowed-tools` per skill            | Lost                              | No tool permission scoping per skill           |
-| `$ARGUMENTS` interpolation           | Lost                              | No structured argument passing                 |
-| Claude hooks                         | Skipped                           | Future follow-up (near-1:1 for 3/5 triggers)   |
-| HTTP MCP servers                     | Skipped                           | Kiro only supports stdio transport             |
+| Claude Code Feature                    | Kiro Status                         | Notes                                            |
+|----------------------------------------|-------------------------------------|--------------------------------------------------|
+| `Edit` tool (surgical replacement)     | Degraded -> `write` (full-file)     | Kiro write overwrites entire files               |
+| `context: fork`                        | Lost                                | No execution isolation control                   |
+| `!`command`` dynamic injection         | Lost                                | No pre-processing of markdown                    |
+| `disable-model-invocation`             | Lost                                | No invocation control                            |
+| `allowed-tools` per skill              | Lost                                | No tool permission scoping per skill             |
+| `$ARGUMENTS` interpolation             | Lost                                | No structured argument passing                   |
+| Claude hooks                           | Skipped                             | Future follow-up (near-1:1 for 3/5 triggers)     |
+| HTTP MCP servers                       | Skipped                             | Kiro only supports stdio transport               |
 
 ## Overwrite behavior during conversion
 
-| Content Type                       | Strategy            | Rationale                                                        |
-|------------------------------------|---------------------|------------------------------------------------------------------|
-| Generated agents (JSON + prompt)   | Overwrite           | Generated, not user-authored                                     |
-| Generated skills (from commands)   | Overwrite           | Generated, not user-authored                                     |
-| Copied skills (pass-through)       | Overwrite           | Plugin is source of truth                                        |
-| Steering files                     | Overwrite           | Generated from `01_Personal_Os/11_AGENTS.md` when present, otherwise `CLAUDE.md`   |
-| `mcp.json`                         | Merge with backup   | User may have added their own servers                            |
-| User-created agents/skills         | Preserved           | Don't delete orphans                                             |
+| Content Type                         | Strategy              | Rationale                                                                        |
+|--------------------------------------|-----------------------|----------------------------------------------------------------------------------|
+| Generated agents (JSON + prompt)     | Overwrite             | Generated, not user-authored                                                     |
+| Generated skills (from commands)     | Overwrite             | Generated, not user-authored                                                     |
+| Copied skills (pass-through)         | Overwrite             | Plugin is source of truth                                                        |
+| Steering files                       | Overwrite             | Generated from `01_Personal_Os/11_AGENTS.md` when present, otherwise `CLAUDE.md` |
+| `mcp.json`                           | Merge with backup     | User may have added their own servers                                            |
+| User-created agents/skills           | Preserved             | Don't delete orphans                                                             |

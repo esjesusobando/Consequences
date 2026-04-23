@@ -85,12 +85,12 @@ Tie to goals and reference material.
 
 For complex tasks, delegate to workflow files in `.agent/03_Workflows/`. Read the workflow file and follow its instructions.
 
-| Trigger                                                       | Workflow File                                                          | When to Use                                               |
-|---------------------------------------------------------------|------------------------------------------------------------------------|-----------------------------------------------------------|
-| Content generation, writing in user's voice                   | `.agent/03_Workflows/00_Content_Generation.md`                         | Any writing, marketing, or content task                   |
-| Morning planning                                              | `.agent/03_Workflows/00_Morning_Standup.md`                            | "What should I work on today?"                            |
-| Processing backlog                                            | `.agent/03_Workflows/00_Backlog_Processing.md`                         | Reference for backlog flow                                |
-| Weekly reflection                                             | `.agent/03_Workflows/00_Weekly_Review.md`                              | Weekly review prompts                                     |
+| Trigger                                                         | Workflow File                                                            | When to Use                                                 |
+|-----------------------------------------------------------------|--------------------------------------------------------------------------|-------------------------------------------------------------|
+| Content generation, writing in user's voice                     | `.agent/03_Workflows/00_Content_Generation.md`                           | Any writing, marketing, or content task                     |
+| Morning planning                                                | `.agent/03_Workflows/00_Morning_Standup.md`                              | "What should I work on today?"                              |
+| Processing backlog                                              | `.agent/03_Workflows/00_Backlog_Processing.md`                           | Reference for backlog flow                                  |
+| Weekly reflection                                               | `.agent/03_Workflows/00_Weekly_Review.md`                                | Weekly review prompts                                       |
 
 
 **How to use workflows:**
@@ -102,17 +102,17 @@ For complex tasks, delegate to workflow files in `.agent/03_Workflows/`. Read th
 
 When the user wants structured development with specs, use the SDD methodology. Skills are located in `.agent/02_Skills/05_Gentleman/00_Core_Sdd/`.
 
-| Command                                  | Skill                              | Purpose                                        |
-|------------------------------------------|------------------------------------|------------------------------------------------|
-| `/sdd:init`                              | `01_Sdd_Init`                      | Initialize SDD context                         |
-| `/sdd:explore <topic>`                   | `02_Sdd_Explore`                   | Explore code and constraints                   |
-| `/sdd:new <name>`                        | `03_Sdd_Propose`                   | Create change proposal                         |
-| `/sdd:spec`                              | `04_Sdd_Spec`                      | Write specifications                           |
-| `/sdd:design`                            | `05_Sdd_Design`                    | Technical design                               |
-| `/sdd:tasks`                             | `06_Sdd_Tasks`                     | Break into tasks                               |
-| `/sdd:apply`                             | `07_Sdd_Apply`                     | Implement tasks                                |
-| `/sdd:verify`                            | `08_Sdd_Verify`                    | Verify against specs                           |
-| `/sdd:archive`                           | `09_Sdd_Archive`                   | Close and archive                              |
+| Command                                    | Skill                                | Purpose                                          |
+|--------------------------------------------|--------------------------------------|--------------------------------------------------|
+| `/sdd:init`                                | `01_Sdd_Init`                        | Initialize SDD context                           |
+| `/sdd:explore <topic>`                     | `02_Sdd_Explore`                     | Explore code and constraints                     |
+| `/sdd:new <name>`                          | `03_Sdd_Propose`                     | Create change proposal                           |
+| `/sdd:spec`                                | `04_Sdd_Spec`                        | Write specifications                             |
+| `/sdd:design`                              | `05_Sdd_Design`                      | Technical design                                 |
+| `/sdd:tasks`                               | `06_Sdd_Tasks`                       | Break into tasks                                 |
+| `/sdd:apply`                               | `07_Sdd_Apply`                       | Implement tasks                                  |
+| `/sdd:verify`                              | `08_Sdd_Verify`                      | Verify against specs                             |
+| `/sdd:archive`                             | `09_Sdd_Archive`                     | Close and archive                                |
 
 **Memory backend:** Engram MCP (configured in `.mcp.json`)
 
@@ -129,11 +129,11 @@ When the user wants structured development with specs, use the SDD methodology. 
 
 GGA is a code review assistant. Use it for quality checks.
 
-| Command                                        | Purpose                                           |
-|------------------------------------------------|---------------------------------------------------|
-| `.agent/05_GGA/bin/gga run`                    | Run code review on staged files                   |
-| `.agent/05_GGA/bin/gga install`                | Install git pre-commit hook                       |
-| `.agent/05_GGA/bin/gga --help`                 | Show all commands                                 |
+| Command                                          | Purpose                                             |
+|--------------------------------------------------|-----------------------------------------------------|
+| `.agent/05_GGA/bin/gga run`                      | Run code review on staged files                     |
+| `.agent/05_GGA/bin/gga install`                  | Install git pre-commit hook                         |
+| `.agent/05_GGA/bin/gga --help`                   | Show all commands                                   |
 
 **Location:** `.agent/05_GGA/bin/gga`
 
@@ -141,13 +141,13 @@ GGA is a code review assistant. Use it for quality checks.
 
 Engram provides long-term memory for AI agents via MCP.
 
-| Command                                                              | Purpose                                  |
-|----------------------------------------------------------------------|------------------------------------------|
-| `05_System/05_Core/Engram/engram.exe search <query>`                 | Search memories                          |
-| `05_System/05_Core/Engram/engram.exe save <title> <msg>`             | Save a memory                            |
-| `05_System/05_Core/Engram/engram.exe context`                        | Show recent context                      |
-| `05_System/05_Core/Engram/engram.exe tui`                            | Launch interactive TUI                   |
-| `05_System/05_Core/Engram/engram.exe --help`                         | Show all commands                        |
+| Command                                                                | Purpose                                    |
+|------------------------------------------------------------------------|--------------------------------------------|
+| `05_System/05_Core/Engram/engram.exe search <query>`                   | Search memories                            |
+| `05_System/05_Core/Engram/engram.exe save <title> <msg>`               | Save a memory                              |
+| `05_System/05_Core/Engram/engram.exe context`                          | Show recent context                        |
+| `05_System/05_Core/Engram/engram.exe tui`                              | Launch interactive TUI                     |
+| `05_System/05_Core/Engram/engram.exe --help`                           | Show all commands                          |
 
 **Location:** `05_System/05_Core/Engram/engram.exe`
 **MCP:** Configured in `.mcp.json`
@@ -156,43 +156,43 @@ Engram provides long-term memory for AI agents via MCP.
 
 Configurados en `.mcp.json`:
 
-| MCP                              | Herramientas                                      | Propósito                             |
-|----------------------------------|---------------------------------------------------|---------------------------------------|
-| **Engram**                       | search, save, timeline, context                   | Memoria persistente                   |
-| **Playwright**                   | Navegación web, screenshots                       | Automatización UI                     |
-| **Fireflies**                    | search_meetings, get_transcript                   | Reuniones                             |
-| **Notion**                       | Base de datos, notas                              | Integración                           |
-| **Exa**                          | Búsqueda web                                      | Investigación                         |
-| **context7**                     | Contexto enriquecido código                       | Code context                          |
-| **GGA**                          | Code review                                       | Calidad de código                     |
+| MCP                                | Herramientas                                        | Propósito                               |
+|------------------------------------|-----------------------------------------------------|-----------------------------------------|
+| **Engram**                         | search, save, timeline, context                     | Memoria persistente                     |
+| **Playwright**                     | Navegación web, screenshots                         | Automatización UI                       |
+| **Fireflies**                      | search_meetings, get_transcript                     | Reuniones                               |
+| **Notion**                         | Base de datos, notas                                | Integración                             |
+| **Exa**                            | Búsqueda web                                        | Investigación                           |
+| **context7**                       | Contexto enriquecido código                         | Code context                            |
+| **GGA**                            | Code review                                         | Calidad de código                       |
 
 ## 📚 Skills Disponibles
 
 ### Agent Teams Lite (SDD)
 `.agent/02_Skills/05_Gentleman/00_Core_Sdd/`
 
-| Phase                     | Skill                         | Purpose                              |
-|---------------------------|-------------------------------|--------------------------------------|
-| 01                        | sdd-init                      | Initialize context                   |
-| 02                        | sdd-explore                   | Explore code                         |
-| 03                        | sdd-propose                   | Propose change                       |
-| 04                        | sdd-spec                      | Write specs                          |
-| 05                        | sdd-design                    | Technical design                     |
-| 06                        | sdd-tasks                     | Break into tasks                     |
-| 07                        | sdd-apply                     | Implement                            |
-| 08                        | sdd-verify                    | Verify                               |
-| 09                        | sdd-archive                   | Archive                              |
+| Phase                       | Skill                           | Purpose                                |
+|-----------------------------|---------------------------------|----------------------------------------|
+| 01                          | sdd-init                        | Initialize context                     |
+| 02                          | sdd-explore                     | Explore code                           |
+| 03                          | sdd-propose                     | Propose change                         |
+| 04                          | sdd-spec                        | Write specs                            |
+| 05                          | sdd-design                      | Technical design                       |
+| 06                          | sdd-tasks                       | Break into tasks                       |
+| 07                          | sdd-apply                       | Implement                              |
+| 08                          | sdd-verify                      | Verify                                 |
+| 09                          | sdd-archive                     | Archive                                |
 
 ### Gentleman.Dots Skills
 Ubicación principal: `.agent/02_Skills/05_Gentleman/`
 
-| Category                       | Skills                                                                                                                                   |
-|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| **Core SDD**                   | sdd-flow, skill-registry, skill-creator                                                                                                  |
-| **Plan**                       | project-structure, docs-alignment, issue-creation, branch-pr                                                                             |
-| **Work**                       | react-19, nextjs-15, tailwind-4, zod-4, zustand-5, ai-sdk-5, angular, typescript, django-drf, pytest, playwright, server-api             |
-| **Review**                     | technical-review, pr-review, testing-coverage, commit-hygiene, tui-quality, ui-elements                                                  |
-| **Compound**                   | gentleman-trainer, gentleman-system, gentleman-installer, gentleman-e2e, gentleman-bubbletea, architecture-guardrails                    |
+| Category                         | Skills                                                                                                                                     |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| **Core SDD**                     | sdd-flow, skill-registry, skill-creator                                                                                                    |
+| **Plan**                         | project-structure, docs-alignment, issue-creation, branch-pr                                                                               |
+| **Work**                         | react-19, nextjs-15, tailwind-4, zod-4, zustand-5, ai-sdk-5, angular, typescript, django-drf, pytest, playwright, server-api               |
+| **Review**                       | technical-review, pr-review, testing-coverage, commit-hygiene, tui-quality, ui-elements                                                    |
+| **Compound**                     | gentleman-trainer, gentleman-system, gentleman-installer, gentleman-e2e, gentleman-bubbletea, architecture-guardrails                      |
 
 **Recursos externos:** `03_Knowledge/03_Resources/Gentleman.Dots/`
 
@@ -202,13 +202,13 @@ Ubicación principal: `.agent/02_Skills/05_Gentleman/`
 
 **IMPORTANTE:** Estas skills son OBLIGATORIAS para cualquier trabajo de frontend: webs, landing pages, invitaciones, formularios, dashboards, etc.
 
-| Skill                            | Propósito                                                                            | Cuándo Usar                                    |
-|----------------------------------|--------------------------------------------------------------------------------------|------------------------------------------------|
-| **taste-skill**                  | Diseño principal - frontend premium con animaciones, spacing, tipografía             | Siempre que crees algo desde cero              |
-| **soft-skill**                   | Look expensive - fuentes premium, whitespace, animaciones spring                     | Proyectos premium, invitaciones                |
-| **minimalist-skill**             | Estilo Notion/Linear, warm monochrome, bento grids                                   | Dashboards, interfaces clean                   |
-| **redesign-skill**               | Mejorar proyectos existentes                                                         | Actualizar proyectos legacy                    |
-| **output-skill**                 | Evita código incompleto/lazy                                                         | Siempre - fuerza outputs completos             |
+| Skill                              | Propósito                                                                              | Cuándo Usar                                      |
+|------------------------------------|----------------------------------------------------------------------------------------|--------------------------------------------------|
+| **taste-skill**                    | Diseño principal - frontend premium con animaciones, spacing, tipografía               | Siempre que crees algo desde cero                |
+| **soft-skill**                     | Look expensive - fuentes premium, whitespace, animaciones spring                       | Proyectos premium, invitaciones                  |
+| **minimalist-skill**               | Estilo Notion/Linear, warm monochrome, bento grids                                     | Dashboards, interfaces clean                     |
+| **redesign-skill**                 | Mejorar proyectos existentes                                                           | Actualizar proyectos legacy                      |
+| **output-skill**                   | Evita código incompleto/lazy                                                           | Siempre - fuerza outputs completos               |
 
 ### Configuración taste-skill
 ```markdown
@@ -244,12 +244,12 @@ Skills específicos disponibles:
 
 Scripts para auditar y validar la estructura del sistema:
 
-| Script                                | Función                                                |
-|---------------------------------------|--------------------------------------------------------|
-| `53_Structure_Auditor.py`             | Valida que existan las carpetas 00-06                  |
-| `13_Validate_Stack.py`                | Valida herramientas y dependencias                     |
-| `40_Validate_Rules.py`                | Valida reglas y configuración                          |
-| `55_Avengers_Workflow.py`             | Ejecuta ciclo completo: Review -> Compound             |
+| Script                                  | Función                                                  |
+|-----------------------------------------|----------------------------------------------------------|
+| `53_Structure_Auditor.py`               | Valida que existan las carpetas 00-06                    |
+| `13_Validate_Stack.py`                  | Valida herramientas y dependencias                       |
+| `40_Validate_Rules.py`                  | Valida reglas y configuración                            |
+| `55_Avengers_Workflow.py`               | Ejecuta ciclo completo: Review -> Compound               |
 
 ### Uso
 ```bash

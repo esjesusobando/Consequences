@@ -23,13 +23,13 @@ The `ce:` prefix is shorter, more memorable, and unambiguously identifies these 
 
 Create a `commands/ce/` directory with five new command files. Each file gets the full implementation content from the current `workflows:*` counterpart, with the `name:` frontmatter updated to the new name.
 
-| New Command       | Source Content                       |
-|-------------------|--------------------------------------|
-| `ce:plan`         | `commands/workflows/plan.md`         |
-| `ce:work`         | `commands/workflows/work.md`         |
-| `ce:review`       | `commands/workflows/review.md`       |
-| `ce:brainstorm`   | `commands/workflows/brainstorm.md`   |
-| `ce:compound`     | `commands/workflows/compound.md`     |
+| New Command         | Source Content                         |
+|---------------------|----------------------------------------|
+| `ce:plan`           | `commands/workflows/plan.md`           |
+| `ce:work`           | `commands/workflows/work.md`           |
+| `ce:review`         | `commands/workflows/review.md`         |
+| `ce:brainstorm`     | `commands/workflows/brainstorm.md`     |
+| `ce:compound`       | `commands/workflows/compound.md`       |
 
 ### 2. Convert `workflows:*` to Deprecation Wrappers (Backwards Compatibility)
 

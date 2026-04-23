@@ -69,14 +69,14 @@ Ya existe el plan. Antes de revisar, asegurar que:
 
 **Reviewer 1** usa 6 sombreros (metáforas de Edward de Bono):
 
-| Sombrero          | Color        | Pregunta                  | Foco                                           |
-|-------------------|--------------|---------------------------|------------------------------------------------|
-| **Information**   | 🔵 Azul       | ¿Qué sabemos?             | Facts, data, información disponible            |
-| **Emotions**      | 🔴 Rojo       | ¿Cómo nos sentimos?       | Intuitión, emociones, gut feeling              |
-| **Caution**       | 🟡 Amarillo   | ¿Qué podría salir bien?   | Beneficios, oportunidades, optimismos          |
-| **Caution**       | 🟢 Verde      | ¿Qué puede salir mal?     | Peligros, risks, problemas potenciales         |
-| **Creation**      | 🟣 Púrpura    | ¿Qué es esto realmente?   | Meta-view, qué estamos haciendo, big picture   |
-| **Process**       | ⚪ Blanco     | ¿Cómo llegamos aquí?      | Proceso, metodología, paso a paso              |
+| Sombrero            | Color          | Pregunta                    | Foco                                             |
+|---------------------|----------------|-----------------------------|--------------------------------------------------|
+| **Information**     | 🔵 Azul         | ¿Qué sabemos?               | Facts, data, información disponible              |
+| **Emotions**        | 🔴 Rojo         | ¿Cómo nos sentimos?         | Intuitión, emociones, gut feeling                |
+| **Caution**         | 🟡 Amarillo     | ¿Qué podría salir bien?     | Beneficios, oportunidades, optimismos            |
+| **Caution**         | 🟢 Verde        | ¿Qué puede salir mal?       | Peligros, risks, problemas potenciales           |
+| **Creation**        | 🟣 Púrpura      | ¿Qué es esto realmente?     | Meta-view, qué estamos haciendo, big picture     |
+| **Process**         | ⚪ Blanco       | ¿Cómo llegamos aquí?        | Proceso, metodología, paso a paso                |
 
 #### Checklist por Sombrero:
 
@@ -231,12 +231,12 @@ El review genera un documento estructurado:
 
 ## VERDICT
 
-| Aspecto         | Status     | Notes     |
-|-----------------|------------|-----------|
-| Planificación   | ✅/⚠️/❌     |           |
-| Ejecución       | ✅/⚠️/❌     |           |
-| Completitud     | ✅/⚠️/❌     |           |
-| Calidad         | ✅/⚠️/❌     |           |
+| Aspecto           | Status       | Notes       |
+|-------------------|--------------|-------------|
+| Planificación     | ✅/⚠️/❌       |             |
+| Ejecución         | ✅/⚠️/❌       |             |
+| Completitud       | ✅/⚠️/❌       |             |
+| Calidad           | ✅/⚠️/❌       |             |
 
 ## RECOMMENDATIONS
 
@@ -257,25 +257,25 @@ El review genera un documento estructurado:
 
 ## TRIGGERS — Cuándo usar esta skill
 
-| Trigger         | Descripción                                                  |
-|-----------------|--------------------------------------------------------------|
-| Plan creado     | Después de crear cualquier plan (01_Plan/, 04_Docs/plans/)   |
-| Sprint review   | Al cerrar un sprint o fase de trabajo                        |
-| Pre-commit      | Antes de commit final de una feature                         |
-| Post-mortem     | Después de incidentes o problemas                            |
-| Sesión cierra   | Al terminar sesión significativa                             |
-| Code review     | Cualquier revisión de código mayor                           |
+| Trigger           | Descripción                                                    |
+|-------------------|----------------------------------------------------------------|
+| Plan creado       | Después de crear cualquier plan (01_Plan/, 04_Docs/plans/)     |
+| Sprint review     | Al cerrar un sprint o fase de trabajo                          |
+| Pre-commit        | Antes de commit final de una feature                           |
+| Post-mortem       | Después de incidentes o problemas                              |
+| Sesión cierra     | Al terminar sesión significativa                               |
+| Code review       | Cualquier revisión de código mayor                             |
 
 ---
 
 ## INTEGRACIÓN CON OTROS SKILLS
 
-| Skill                              | Relación                              |
-|------------------------------------|---------------------------------------|
-| `systematic-debugging`             | Se usa ANTES si hay bugs activos      |
-| `verification-before-completion`   | Complemento — verifica output         |
-| `test-driven-development`          | Si hay bugs, aplica TDD post-review   |
-| `edge-case-skill`                  | Alimenta el 🟢 Sombrero Verde          |
+| Skill                                | Relación                                |
+|--------------------------------------|-----------------------------------------|
+| `systematic-debugging`               | Se usa ANTES si hay bugs activos        |
+| `verification-before-completion`     | Complemento — verifica output           |
+| `test-driven-development`            | Si hay bugs, aplica TDD post-review     |
+| `edge-case-skill`                    | Alimenta el 🟢 Sombrero Verde            |
 
 ---
 

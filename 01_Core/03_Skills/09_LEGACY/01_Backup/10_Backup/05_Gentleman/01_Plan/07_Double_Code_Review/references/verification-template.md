@@ -13,14 +13,14 @@
 
 ## Phase 2: 6 Hats Summary
 
-| Hat             | Status     | Notes     |
-|-----------------|------------|-----------|
-| 🔵 Information   | ✅/⚠️/❌     |           |
-| 🔴 Emotions      | ✅/⚠️/❌     |           |
-| 🟡 Benefits      | ✅/⚠️/❌     |           |
-| 🟢 Risks         | ✅/⚠️/❌     |           |
-| 🟣 Meta          | ✅/⚠️/❌     |           |
-| ⚪ Process       | ✅/⚠️/❌     |           |
+| Hat               | Status       | Notes       |
+|-------------------|--------------|-------------|
+| 🔵 Information     | ✅/⚠️/❌       |             |
+| 🔴 Emotions        | ✅/⚠️/❌       |             |
+| 🟡 Benefits        | ✅/⚠️/❌       |             |
+| 🟢 Risks           | ✅/⚠️/❌       |             |
+| 🟣 Meta            | ✅/⚠️/❌       |             |
+| ⚪ Process         | ✅/⚠️/❌       |             |
 
 ## Phase 3: Verification
 

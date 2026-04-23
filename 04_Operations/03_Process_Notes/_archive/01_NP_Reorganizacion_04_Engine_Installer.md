@@ -49,13 +49,13 @@ Reorganizar la estructura del 04_Operations y crear un installer para migrar Per
 
 ## Edge Cases Resueltos
 
-| Edge Case                             | Solución                              |
-|---------------------------------------|---------------------------------------|
-| Rutas hardcodeadas                    | Usar config.json                      |
-| API keys inválidas                    | Re-input automático                   |
-| .mcp.json existente                   | Merge inteligente                     |
-| Retry descargas                       | 3 intentos                            |
-| Validar rutas                         | Antes de escribir                     |
+| Edge Case                               | Solución                                |
+|-----------------------------------------|-----------------------------------------|
+| Rutas hardcodeadas                      | Usar config.json                        |
+| API keys inválidas                      | Re-input automático                     |
+| .mcp.json existente                     | Merge inteligente                       |
+| Retry descargas                         | 3 intentos                              |
+| Validar rutas                           | Antes de escribir                       |
 
 ## Resultados
 

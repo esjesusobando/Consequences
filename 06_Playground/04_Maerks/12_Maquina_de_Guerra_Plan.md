@@ -288,17 +288,17 @@ result = HumanGrader.evaluate(task)
 
 ## 📊 CRONOGRAMA
 
-| Semana               | Fase                            | Entregables                                | Estado               |
-|----------------------|---------------------------------|--------------------------------------------|----------------------|
-| 1                    | FASE 1: Fundamentos             | Auto Mode Security                         | ✅                    |
-| 1                    | FASE 1: Fundamentos             | Evaluator/Generator Separation             | ✅                    |
-| 2                    | FASE 2: Métricas                | pass@k Metrics                             | ✅                    |
-| 2                    | FASE 2: Métricas                | Eval Awareness                             | ✅                    |
-| 2                    | FASE 2: Métricas                | Feature List JSON                          | ✅                    |
-| 3                    | FASE 3: Paralelo                | Agent Teams + Git Locks                    | ✅                    |
-| 3                    | FASE 3: Paralelo                | Progress File Template                     | ✅                    |
-| 3                    | FASE 3: Paralelo                | Multi-Agent Roles                          | ✅                    |
-| 4                    | FASE 4: Evaluation              | Graders Framework                          | ✅                    |
+| Semana                 | Fase                              | Entregables                                  | Estado                 |
+|------------------------|-----------------------------------|----------------------------------------------|------------------------|
+| 1                      | FASE 1: Fundamentos               | Auto Mode Security                           | ✅                      |
+| 1                      | FASE 1: Fundamentos               | Evaluator/Generator Separation               | ✅                      |
+| 2                      | FASE 2: Métricas                  | pass@k Metrics                               | ✅                      |
+| 2                      | FASE 2: Métricas                  | Eval Awareness                               | ✅                      |
+| 2                      | FASE 2: Métricas                  | Feature List JSON                            | ✅                      |
+| 3                      | FASE 3: Paralelo                  | Agent Teams + Git Locks                      | ✅                      |
+| 3                      | FASE 3: Paralelo                  | Progress File Template                       | ✅                      |
+| 3                      | FASE 3: Paralelo                  | Multi-Agent Roles                            | ✅                      |
+| 4                      | FASE 4: Evaluation                | Graders Framework                            | ✅                      |
 
 ---
 
@@ -317,16 +317,16 @@ result = HumanGrader.evaluate(task)
 
 ## 🏆 METAS FINALES
 
-| Métrica                        | Target                                         |
-|--------------------------------|------------------------------------------------|
-| Auto Mode Security             | <50ms latencia, >83% reducción                 |
-| pass@k                         | Script funcionando con ejemplos                |
-| Eval Awareness                 | Hook bloqueando patrones conocidos             |
-| Feature List                   | Generator → JSON → Tracking                    |
-| Agent Teams                    | 16 agentes en paralelo                         |
-| Progress File                  | Template + script                              |
-| Multi-Agent Roles              | 5 roles especializados                         |
-| Graders                        | 3 tipos funcionando                            |
+| Métrica                          | Target                                           |
+|----------------------------------|--------------------------------------------------|
+| Auto Mode Security               | <50ms latencia, >83% reducción                   |
+| pass@k                           | Script funcionando con ejemplos                  |
+| Eval Awareness                   | Hook bloqueando patrones conocidos               |
+| Feature List                     | Generator → JSON → Tracking                      |
+| Agent Teams                      | 16 agentes en paralelo                           |
+| Progress File                    | Template + script                                |
+| Multi-Agent Roles                | 5 roles especializados                           |
+| Graders                          | 3 tipos funcionando                              |
 
 ---
 
