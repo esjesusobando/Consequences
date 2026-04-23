@@ -19,14 +19,11 @@ from enum import Enum
 sys.path.insert(0, str(Path(__file__).parent))
 from config_paths import PROJECT_ROOT, ENGINE_DIR
 
+# REQUIRED_DIRS - v1.1 Alpha structure
 REQUIRED_DIRS = [
-    "00_Core",
-    "01_Brain",
-    "02_Operations",
-    "03_Knowledge",
-    "04_Engine",
-    "05_System",
-    "06_Archive",
+    "01_Core",
+    "04_Operations",
+    "08_Scripts_Os",
 ]
 for d in REQUIRED_DIRS:
     if not (PROJECT_ROOT / d).exists():

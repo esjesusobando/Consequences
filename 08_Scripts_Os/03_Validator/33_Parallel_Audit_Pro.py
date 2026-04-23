@@ -1,5 +1,5 @@
 
-# === PROTOCOLO DE RUTA DINÁMICA (v6.1) ===
+# === PROTOCOLO DE RUTA DINÁMICA (v1.1 Alpha) ===
 _current = Path(__file__).resolve()
 _root = next((p for p in _current.parents if (p / "01_Core").exists()), None)
 if _root:
@@ -71,7 +71,7 @@ def main():
     dynamic_speak("Activando auditoría profunda con agentes paralelos")
 
     print(f"{Fore.RED}{'=' * 75}{Style.RESET_ALL}")
-    print("🚀 PARALLEL AUDIT - PERSONALOS v6.2")
+    print("🚀 PARALLEL AUDIT - PERSONALOS v1.1 Alpha")
     print(f"{Fore.RED}{'=' * 75}{Style.RESET_ALL}")
 
     # 1. Agente Estructural - usar config_paths con get_skill_script()
