@@ -1,8 +1,8 @@
-# 🔧 HUB_CATALOG — PersonalOS v1.0
+# 🔧 HUB_CATALOG — PersonalOS v2.0 Consequences
 
-**Versión:** 1.0
-**Última actualización:** 2026-04-18
-**Ubicación:** `08_Scripts_Os/`
+**Versión:** 2.0
+**Última actualización:** 2026-04-24
+**Ubicación:** `01_Personal_Os/04_Operations/03_Scripts_Os/`
 **PYTHONPATH:** Configurado vía `config_paths.py` en todos los HUBs
 
 ---
@@ -11,20 +11,20 @@
 
 | #         | HUB                    | Script                          | Propósito                                                    | Comando rápido                                       |
 |-----------|------------------------|---------------------------------|--------------------------------------------------------------|------------------------------------------------------|
-| 00        | **Sound Engine**       | `00_Sound_Engine.py`            | Motor de notificaciones sonoras del sistema                  | `python 08_Scripts_Os/00_Sound_Engine.py`            |
-| 01        | **Auditor**            | `01_Auditor_Hub.py`             | Validación completa: estructura, links, skills, health       | `python 08_Scripts_Os/01_Auditor_Hub.py`             |
-| 02        | **Git**                | `02_Git_Hub.py`                 | Operaciones Git + auditorías de estructura                   | `python 08_Scripts_Os/02_Git_Hub.py`                 |
-| 03        | **AIPM**               | `03_AIPM_Hub.py`                | AI Performance Monitoring                                    | `python 08_Scripts_Os/03_AIPM_Hub.py`                |
-| 04        | **Ritual**             | `04_Ritual_Hub.py`              | Rituales de sesión: open, close, recovery                    | `python 08_Scripts_Os/04_Ritual_Hub.py`              |
-| 05        | **Validator**          | `05_Validator_Hub.py`           | Validación de código: rules, stack, patterns                 | `python 08_Scripts_Os/05_Validator_Hub.py`           |
-| 06        | **Tool**               | `06_Tool_Hub.py`                | Integración y gestión de herramientas                        | `python 08_Scripts_Os/06_Tool_Hub.py`                |
-| 07        | **Integration**        | `07_Integration_Hub.py`         | Integraciones MCP y sistemas externos                        | `python 08_Scripts_Os/07_Integration_Hub.py`         |
-| 08        | **Workflow**           | `08_Workflow_Hub.py`            | Automatización de workflows                                  | `python 08_Scripts_Os/08_Workflow_Hub.py`            |
-| 09        | **Data**               | `09_Data_Hub.py`                | Procesamiento y analytics de datos                           | `python 08_Scripts_Os/09_Data_Hub.py`                |
-| 10        | **General**            | `10_General_Hub.py`             | Utilidades generales del sistema                             | `python 08_Scripts_Os/10_General_Hub.py`             |
-| 11        | **Auto Learn**         | `11_Auto_Learn_Hub.py`          | Motor de automejora y aprendizaje                            | `python 08_Scripts_Os/11_Auto_Learn_Hub.py`          |
-| 12        | **Context Bar**        | `12_Context_Usage_Bar.py`       | Barra visual de uso de contexto                              | `python 08_Scripts_Os/12_Context_Usage_Bar.py`       |
-| 13        | **Beautify**           | `13_Beautify_Tables.py`         | Formateo de tablas markdown                                  | `python 08_Scripts_Os/13_Beautify_Tables.py`         |
+| 00        | **Sound Engine**       | `00_Sound_Engine.py`            | Motor de notificaciones sonoras del sistema                  | `python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py`            |
+| 01        | **Auditor**            | `01_Auditor_Hub.py`             | Validación completa: estructura, links, skills, health       | `python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py`             |
+| 02        | **Git**                | `02_Git_Hub.py`                 | Operaciones Git + auditorías de estructura                   | `python 01_Personal_Os/04_Operations/03_Scripts_Os/02_Git_Hub.py`                 |
+| 03        | **AIPM**               | `03_AIPM_Hub.py`                | AI Performance Monitoring                                    | `python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM_Hub.py`                |
+| 04        | **Ritual**             | `04_Ritual_Hub.py`              | Rituales de sesión: open, close, recovery                    | `python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py`              |
+| 05        | **Validator**          | `05_Validator_Hub.py`           | Validación de código: rules, stack, patterns                 | `python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py`           |
+| 06        | **Tool**               | `06_Tool_Hub.py`                | Integración y gestión de herramientas                        | `python 01_Personal_Os/04_Operations/03_Scripts_Os/06_Tool_Hub.py`                |
+| 07        | **Integration**        | `07_Integration_Hub.py`         | Integraciones MCP y sistemas externos                        | `python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration_Hub.py`         |
+| 08        | **Workflow**           | `08_Workflow_Hub.py`            | Automatización de workflows                                  | `python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py`            |
+| 09        | **Data**               | `09_Data_Hub.py`                | Procesamiento y analytics de datos                           | `python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Data_Hub.py`                |
+| 10        | **General**            | `10_General_Hub.py`             | Utilidades generales del sistema                             | `python 01_Personal_Os/04_Operations/03_Scripts_Os/10_General_Hub.py`             |
+| 11        | **Auto Learn**         | `11_Auto_Learn_Hub.py`          | Motor de automejora y aprendizaje                            | `python 01_Personal_Os/04_Operations/03_Scripts_Os/11_Auto_Learn_Hub.py`          |
+| 12        | **Context Bar**        | `12_Context_Usage_Bar.py`       | Barra visual de uso de contexto                              | `python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Context_Usage_Bar.py`       |
+| 13        | **Beautify**           | `13_Beautify_Tables.py`         | Formateo de tablas markdown                                  | `python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Beautify_Tables.py`         |
 
 ---
 

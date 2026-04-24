@@ -1,7 +1,7 @@
-# Scripts Index — PersonalOS Think Different v6.1
+# Scripts Index — PersonalOS Think Different v2.0 Consequences
 
 > **Total Scripts:** 98+ (HUBs + módulos + utilities)
-> **Last Updated:** 2026-04-20
+> **Last Updated:** 2026-04-24
 > **Validation:** Auditorías PASANDO - Sistema PURE GREEN + SCRIPT MIGRATION COMPLETE
 > **Migration:** 12 scripts moved to skills using get_skill_script()
 > **New:** 13_Auditors_Os folder created
@@ -26,7 +26,7 @@
 
 ---
 
-## 🏗️ Orchestration HUBs (08_Scripts_Os/)
+## 🏗️ Orchestration HUBs (01_Personal_Os/04_Operations/03_Scripts_Os/)
 
 | #             | Script                         | Purpose                             | Status             |
 |---------------|--------------------------------|-------------------------------------|--------------------|
