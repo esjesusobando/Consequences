@@ -42,7 +42,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python \"c:/Users/sebas/Downloads/01 Revisar/09 Versiones/00 Respaldo PC Sebas/01 Github/personal-os/Think_Different/01_Core/07_Hooks/04_Sound/notification.py\" --task-complete"
+            "command": "python \"c:/Users/sebas/Downloads/01 Revisar/09 Versiones/00 Respaldo PC Sebas/01 Github/personal-os/Think_Different/01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/notification.py\" --task-complete"
           }
         ]
       }
@@ -72,7 +72,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python \"c:/Users/sebas/Downloads/01 Revisar/09 Versiones/00 Respaldo PC Sebas/01 Github/personal-os/Think_Different/01_Core/07_Hooks/04_Sound/notification.py\" --beep"
+            "command": "python \"c:/Users/sebas/Downloads/01 Revisar/09 Versiones/00 Respaldo PC Sebas/01 Github/personal-os/Think_Different/01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/notification.py\" --beep"
           }
         ]
       }
