@@ -23,14 +23,22 @@ if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
-# Add scripts_os to path for config_paths
-sys.path.insert(0, str(Path(__file__).parent.parent.parent / "08_Scripts_Os"))
+# Paths — v2.0 Consequences (post-consolidación)
+# Estructura: ROOT/01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/
+# _ENGINE_DIR.parent              = 01_Auto_Improvement/
+# _ENGINE_DIR.parent.parent       = 04_Operations/
+# _ENGINE_DIR.parent.parent.parent = 01_Personal_Os/
+# _ENGINE_DIR.parent.parent.parent.parent = ROOT/
+_ENGINE_DIR = Path(__file__).parent
+_SCRIPTS_OS = _ENGINE_DIR.parent.parent / "03_Scripts_Os"  # 04_Operations/03_Scripts_Os
+sys.path.insert(0, str(_ENGINE_DIR))   # para detector, analyzer, executor, learner
+sys.path.insert(0, str(_SCRIPTS_OS))   # para config_paths
 
 try:
     from config_paths import PROJECT_ROOT, SCRIPTS_OS_DIR
 except ImportError:
-    PROJECT_ROOT = Path(__file__).parent.parent.parent.parent
-    SCRIPTS_OS_DIR = PROJECT_ROOT / "08_Scripts_Os"
+    PROJECT_ROOT = _ENGINE_DIR.parent.parent.parent.parent  # ROOT
+    SCRIPTS_OS_DIR = _SCRIPTS_OS
 
 # Import modules
 from detector import Detector
