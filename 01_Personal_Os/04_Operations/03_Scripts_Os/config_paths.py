@@ -40,57 +40,57 @@ if not ROOT_DIR or not ROOT_DIR.exists():
         "Define la variable 'PERSONAL_OS_ROOT' o asegúrate de que existe 01_Core."
     )
 
-# 8 Dimensiones del OS (estructura v6.1)
-CORE_DIR       = ROOT_DIR / "01_Core"
-OPERATIONS_DIR = ROOT_DIR / "04_Operations"
-KNOWLEDGE_DIR  = ROOT_DIR / "02_Knowledge"
-ENGINE_DIR     = ROOT_DIR / "08_Scripts_Os"
+# 8 Dimensiones del OS (estructura v2.0 Consequences)
+CORE_DIR       = ROOT_DIR / "01_Personal_Os" / "01_Core"
+OPERATIONS_DIR = ROOT_DIR / "01_Personal_Os" / "04_Operations"
+KNOWLEDGE_DIR  = ROOT_DIR / "01_Personal_Os" / "02_Knowledge"
+ENGINE_DIR     = ROOT_DIR / "01_Personal_Os" / "04_Operations" / "03_Scripts_Os"
 
 # Aliases legacy — usar los canónicos de arriba
 BRAIN_DIR  = OPERATIONS_DIR   # alias legacy → OPERATIONS_DIR
 SYSTEM_DIR = CORE_DIR         # alias legacy → CORE_DIR
-ARCHIVE_DIR = ROOT_DIR / "05_Archive"
-PROJECTS_DIR = ROOT_DIR / "07_Projects"
-PLAYGROUND_DIR = ROOT_DIR / "06_Playground"
+ARCHIVE_DIR = ROOT_DIR / "01_Personal_Os" / "05_Archive"
+PROJECTS_DIR = ROOT_DIR / "01_Personal_Os" / "04_Operations" / "05_Projects"
+PLAYGROUND_DIR = ROOT_DIR / "02_Playground"
 HOOKS_DIR = ROOT_DIR / ".agent" / "04_Extensions" / "hooks"
-SOUND_DIR = CORE_DIR / "07_Hooks" / "04_Sound"   # fuente canónica
-MCP_CONFIG_FILE = ROOT_DIR / ".mcp.json"           # config activa v6.1
+SOUND_DIR = ENGINE_DIR / "00_Sound_Engine.py"   # fuente canónica
+MCP_CONFIG_FILE = ROOT_DIR / ".mcp.json"           # config activa v2.0
 
 # =============================================================================
-# SUBDIRECTORIOS BRAIN/OPERATIONS (v6.1)
+# SUBDIRECTORIOS BRAIN/OPERATIONS (v2.0 Consequences)
 # =============================================================================
 
-BRAIN_MEMORY_DIR = BRAIN_DIR / "00_Context_Memory"
-BRAIN_KNOWLEDGE_DIR = BRAIN_DIR / "02_Knowledge_Brain"
-BRAIN_NOTES_DIR = BRAIN_DIR / "03_Process_Notes"
-BRAIN_RULES_DIR = BRAIN_DIR / "04_Memory_Brain"
+BRAIN_MEMORY_DIR = OPERATIONS_DIR / "00_Context_LLM" / "00_Context_Memory"
+BRAIN_KNOWLEDGE_DIR = OPERATIONS_DIR / "00_Context_LLM" / "02_Knowledge_Brain"
+BRAIN_NOTES_DIR = OPERATIONS_DIR / "00_Context_LLM" / "01_Process_Notes"
+BRAIN_RULES_DIR = OPERATIONS_DIR / "00_Context_LLM" / "03_Memory_Brain"
 
 # =============================================================================
-# SUBDIRECTORIOS OPERATIONS (v6.1)
+# SUBDIRECTORIOS OPERATIONS (v2.0)
 # =============================================================================
 
-OPERATIONS_TASKS_DIR = ROOT_DIR / "03_Tasks"
-OPERATIONS_EVALS_DIR = ROOT_DIR / "01_Core" / "02_Evals"
-OPERATIONS_ANALYTICS_DIR = BRAIN_DIR / "03_Process_Notes"
+OPERATIONS_TASKS_DIR = ROOT_DIR / "01_Personal_Os" / "03_Task"
+OPERATIONS_EVALS_DIR = CORE_DIR / "02_Tools" / "08_Evals"
+OPERATIONS_ANALYTICS_DIR = OPERATIONS_DIR / "00_Context_LLM" / "01_Process_Notes"
 AUTO_IMPROVEMENT_DIR = OPERATIONS_DIR / "01_Auto_Improvement"
 
 # =============================================================================
-# SUBDIRECTORIOS ENGINE/SCRIPTS (v6.1)
+# SUBDIRECTORIOS ENGINE/SCRIPTS (v2.0)
 # =============================================================================
 
-ENGINE_SCRIPTS_DIR = ENGINE_DIR  # Ya está en 08_Scripts_Os
+ENGINE_SCRIPTS_DIR = ENGINE_DIR  # Ya está en 03_Scripts_Os
 ENGINE_TESTS_DIR = ENGINE_DIR / "Legacy_Backup"
-ENGINE_COMPOUND_DIR = ROOT_DIR / "01_Core" / "03_Skills" / "00_Compound_Engineering"
+ENGINE_COMPOUND_DIR = CORE_DIR / "02_Tools" / "02_Skills" / "00_Compound_Engineering"
 
 # =============================================================================
-# SUBDIRECTORIOS KNOWLEDGE (v6.1)
+# SUBDIRECTORIOS KNOWLEDGE (v2.0)
 # =============================================================================
 
 KNOWLEDGE_RESEARCH_DIR = KNOWLEDGE_DIR / "01_Research_Os"
-KNOWLEDGE_NOTES_DIR = BRAIN_DIR / "02_Knowledge_Brain"
+KNOWLEDGE_NOTES_DIR = OPERATIONS_DIR / "00_Context_LLM" / "02_Knowledge_Brain"
 KNOWLEDGE_RESOURCES_DIR = KNOWLEDGE_DIR / "03_Writing_Content"
 KNOWLEDGE_EXAMPLES_DIR = KNOWLEDGE_DIR / "00_Examples_Personal_Os"
-KNOWLEDGE_PLANS_DIR = BRAIN_DIR / "04_Memory_Brain"
+KNOWLEDGE_PLANS_DIR = OPERATIONS_DIR / "00_Context_LLM" / "04_Memory_Brain"
 
 # Alias para scripts que usan PLANS_DIR
 PLANS_DIR = KNOWLEDGE_PLANS_DIR
@@ -125,28 +125,28 @@ PROJECT_ROOT = ROOT_DIR  # Alias para scripts que usan PROJECT_ROOT
 SCRIPTS_OS_DIR = ENGINE_DIR  # Alias de compatibilidad para recursive_improvement_engine
 
 # =============================================================================
-# RUTAS REALES DEL SISTEMA (estructura actual)
+# RUTAS REALES DEL SISTEMA (estructura v2.0 Consequences)
 # =============================================================================
 
 # Matrix: Goals, Backlog, Agentes (ubicación central)
 MATRIX_DIR = ROOT_DIR / "00_Winter_is_Coming"
 
 # Tareas activas (directorio real)
-TASKS_DIR = ROOT_DIR / "03_Tasks"
+TASKS_DIR = ROOT_DIR / "01_Personal_Os" / "03_Task"
 
 # Evaluaciones (directorio real)
-EVALS_DIR = ROOT_DIR / "01_Core" / "02_Evals"
+EVALS_DIR = CORE_DIR / "02_Tools" / "08_Evals"
 
 # Skills y Reglas (Sistema central)
-SKILLS_DIR = CORE_DIR / "03_Skills"
+SKILLS_DIR = CORE_DIR / "02_Tools" / "02_Skills"
 RULES_DIR = CORE_DIR / "01_Rules"
-MCP_DIR = CORE_DIR / "05_Mcp"
-AGENTS_DIR = CORE_DIR / "04_Agents"
+MCP_DIR = CORE_DIR / "02_Tools" / "03_Mcp"
+AGENTS_DIR = CORE_DIR / "02_Tools" / "01_Agents"
 INVENTORY_FILE = CORE_DIR / "01_Inventario_Total.md"
-BRAIN_TEMPLATE_DIR = ROOT_DIR / "03_Tasks" / "00_Templates"
+BRAIN_TEMPLATE_DIR = ROOT_DIR / "01_Personal_Os" / "03_Task" / "00_Templates"
 
-# Workflows (Estructura Jerárquica v6.1)
-WORKFLOWS_DIR = CORE_DIR / "00_Workflows"
+# Workflows (Estructura Jerárquica v2.0)
+WORKFLOWS_DIR = CORE_DIR / "00_Workflows_Os"
 WORKFLOWS_PERSONAL_DIR = WORKFLOWS_DIR / "01_Personal_Os"
 WORKFLOWS_MARVEL_DIR = WORKFLOWS_DIR / "02_Marvel"
 WORKFLOWS_GENTLEMAN_DIR = WORKFLOWS_DIR / "03_Gentleman"
@@ -156,7 +156,7 @@ WORKFLOWS_COMPOUND_DIR = WORKFLOWS_DIR / "05_Compound_Engineering"
 
 # Auditoría y Conocimiento (Unicorn)
 AUDITOR_DIR = ENGINE_DIR / "06_Auditor"
-UNICORN_DIR = ROOT_DIR / "02_Knowledge"
+UNICORN_DIR = KNOWLEDGE_DIR
 
 # Server MCP
 SERVER_DIR = ROOT_DIR / "01_Core" / "09_Server"

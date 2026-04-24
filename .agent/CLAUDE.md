@@ -31,7 +31,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working in this
 ⏱️ **Tiempo estimado para terminar:** ~X minutos
 ```
 
-Ejecutar después: `python 01_Core/07_Hooks/04_Sound/notification.py --notify "Progreso: X%"`
+Ejecutar después: `python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --notify "Progreso: X%"`
 
 ---
 
@@ -42,7 +42,7 @@ Al iniciar una nueva sesion, ejecutar esta secuencia antes de responder:
 2. Leer `00_Winter_is_Coming/BACKLOG.md` — Bandeja de entrada
 3. Ejecutar `engram_mem_context(limit=10)` — Ultimas 10 sesiones de Engram
 4. Ejecutar `engram_mem_session_summary()` — Recuperar estado si hubo compaction
-5. Leer los recursos principales: `01_Core/`, `02_Knowledge/`, `04_Operations/`
+5. Leer los recursos principales: `01_Personal_Os/01_Core/`, `01_Personal_Os/02_Knowledge/`, `01_Personal_Os/04_Operations/`
 6. **Reportar en el chat** un resumen del contexto cargado antes de actuar
 
 ---

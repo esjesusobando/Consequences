@@ -1,4 +1,4 @@
-# 🛡️ CLAUDE.md | PersonalOS v1.2 AI Context Harness
+# 🛡️ CLAUDE.md | PersonalOS v2.0 — Consequences AI Context Harness
 
 <system_directives>
   <fundamental_rule>
@@ -27,7 +27,7 @@
 ⏱️ **Tiempo estimado para terminar:** ~X minutos
 ```
 
-      Y ejecutar: `python 01_Core/07_Hooks/04_Sound/notification.py --notify "Progreso: X%"`
+      Y ejecutar: `python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --notify "Progreso: X%"`
   </language_protocol>
 </system_directives>
 
@@ -36,12 +36,12 @@
 ## ⚙️ CORE: BOOT PROTOCOL
 <boot_sequence>
 Al iniciar sesión, la IA ejecuta EXACTAMENTE este bucle ANTES de actuar:
--0.5. Si es una sesión fría o nueva, LEER `05_Archive/07_Repos_Gentleman/README.md` para comprender los principios del OS y los repos upstream de referencia.
+-0.5. Si es una sesión fría o nueva, LEER `01_Personal_Os/05_Archive/07_Repos_Gentleman/README.md` para comprender los principios del OS y los repos upstream de referencia.
 0. Identificar el área de trabajo y leer `00_Winter_is_Coming/AGENTS.md` (Asignación del GGA).
 1. Leer `00_Winter_is_Coming/GOALS.md` y `BACKLOG.md`.
 2. Ejecutar `engram_mem_context(limit=10)` para recuperar trazas de contexto.
 3. Si la memoria ha sido compactada, usa `engram_mem_session_summary()`.
-4. Explora `01_Core/`, `02_Knowledge/` y `04_Operations/` si la tarea lo requiere.
+4. Explora `01_Personal_Os/01_Core/`, `01_Personal_Os/02_Knowledge/` y `01_Personal_Os/04_Operations/` si la tarea lo requiere.
 5. **[OUTPUT]**: Reporta en el chat un resumen limpio del contexto cargado.
 </boot_sequence>
 
