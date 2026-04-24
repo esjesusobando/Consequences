@@ -1,228 +1,199 @@
-# 📋 Plan de Migración del PersonalOS
+# 📋 Plan de Migración PersonalOS → Consequences v2.0
 
-> **Fecha de creación:** 2026-04-23  
-> **Estado:** PLANEADO - Pendiente de ejecución  
-> **Proyecto:** Think_Different → Nueva estructura reorganizada
+> **Fecha:** 2026-04-24
+> **Estado:** 🚀 EN EJECUCIÓN
+> **Versión destino:** v2.0 — Estructura Consequences
+> **Tiempo estimado total:** ~105 min
 
 ---
 
 ## 🎯 Objetivo
 
-Reorganizar la estructura del OS de `Think_Different` manteniendo compatibilidad hacia atrás (backwards), con múltiples backups antes de ejecutar cambios.
+Reorganizar `Think_Different/` de 9 carpetas raíz a 4 carpetas con propósito claro, siguiendo el blueprint de `Desktop/00_Consequences/`. Sin pérdida de información — solo reorganización y fixes de bugs.
+
+**Principio arquitectónico:**
+- `00_Winter_is_Coming/` → Reglas de Oro (inmutable, estratégico)
+- `01_Personal_Os/` → El Sistema Operativo (todo el motor)
+- `02_Playground/` → Zona de pruebas (no contamina el OS)
+- `03_Resultado/` → Outputs de proyectos (zona de entrega)
 
 ---
 
-## 📊 Estado Actual
+## 🗺️ Mapa de Migración
 
-### Estructura Actual
-```
-Think_Different/
-├── 00_Winter_is_Coming/     ← REGLAS (Goals, Backlog, AGENTS.md)
-├── 01_Core/                 ← CORE del sistema
-│   ├── 01_Rules/           ← 25 reglas del sistema
-│   ├── 03_Skills/         ← 22 categorías de skills (~15,844 archivos)
-│   ├── 05_Mcp/            ← Configuraciones MCP
-│   ├── 07_Hooks/          ← Hooks del sistema
-│   └── 04_Agents/         ← Agentes configurados
-├── 02_Knowledge/          ← Documentación
-├── 03_Tasks/              ← Tareas activas
-├── 04_Operations/          ← Auto-Improvement, Scripts
-├── 05_Archive/            ← Archivo
-├── 06_Playground/         ← Área de pruebas
-├── 07_Projects/           ← Proyectos activos
-├── 08_Scripts_Os/         ← HUBs y scripts principales
-├── AGENTS.md               ← Config de agentes
-├── CLAUDE.md              ← Config de Claude
-└── .mcp.json              ← MCP servers activos (27)
-```
+### Raíz
 
-### Problemas Identificados
-1. **Profundidad de carpetas:** Skills están en `01_Core/03_Skills/` (muy profundo)
-2. **Scripts en raíz:** `08_Scripts_Os/` en raíz, no agrupado con operaciones
-3. **Paths hardcodeados:** 89 scripts con `sys.path.insert` hardcodeado
-4. **Sin backup inmutable:** No hay backup físico reciente
+| Actual | Destino | Tipo |
+|--------|---------|------|
+| `00_Winter_is_Coming/` | `00_Winter_is_Coming/` | Sin cambio |
+| `01_Core/` | `01_Personal_Os/01_Core/` | Mover dentro de OS |
+| `02_Knowledge/` | `01_Personal_Os/02_Knowledge/` | Mover dentro de OS |
+| `03_Tasks/` | `01_Personal_Os/03_Task/` | Mover + rename (singular) |
+| `04_Operations/` | `01_Personal_Os/04_Operations/00_Context_LLM/` | Mover + restructurar |
+| `05_Archive/` | `01_Personal_Os/05_Archive/` | Mover dentro de OS |
+| `06_Playground/` | `02_Playground/` | Mover a raíz |
+| `07_Projects/` | `01_Personal_Os/04_Operations/05_Projects/` | Mover a Operations |
+| `08_Scripts_Os/` | `01_Personal_Os/04_Operations/03_Scripts_Os/` | Mover a Operations |
+| `Now/` | `03_Resultado/` | Renombrar |
 
----
+### `01_Core/` → `01_Personal_Os/01_Core/`
 
-## 🎯 Nueva Estructura Propuesta
+| Actual | Destino |
+|--------|---------|
+| `01_Core/00_Workflows/` | `01_Personal_Os/01_Core/00_Workflows_Os/` |
+| `01_Core/01_Rules/` | `01_Personal_Os/01_Core/01_Rules/` |
+| `01_Core/02_Evals/` | `01_Personal_Os/01_Core/02_Tools/08_Evals/` |
+| `01_Core/03_Skills/` | `01_Personal_Os/01_Core/02_Tools/02_Skills/` |
+| `01_Core/04_Agents/` | `01_Personal_Os/01_Core/02_Tools/01_Agents/` |
+| `01_Core/05_Mcp/` | `01_Personal_Os/01_Core/02_Tools/03_Mcp/` |
+| `01_Core/06_Integrations/` | `01_Personal_Os/01_Core/02_Tools/04_Integrations/` |
+| `01_Core/07_Hooks/` | `01_Personal_Os/01_Core/02_Tools/05_Hooks/` |
+| `01_Core/08_Plugins/` | `01_Personal_Os/01_Core/02_Tools/06_Plugins/` |
+| `01_Core/09_Server/` | `01_Personal_Os/01_Core/02_Tools/07_Server/` |
+| `01_Core/10_Templates/` | `01_Personal_Os/01_Core/02_Tools/09_Templates/` |
 
-```
-Think_Different/
-├── 00_Rules/              ← de 00_Winter_is_Coming/ (REGLAS)
-├── 01_Os/                 ← El OS reorganizado
-│   ├── 01_Core/          ← Skills, Rules, MCP, Agents (de 01_Core/)
-│   ├── 04_Operations/    ← Scripts, Auto-Improvement (de 04_Operations/ + 08_Scripts_Os/)
-│   ├── 02_Knowledge/    ← Documentación (de 02_Knowledge/)
-│   ├── 03_Task/         ← Tareas (de 03_Tasks/)
-│   ├── 05_Archive/      ← Archivo (de 05_Archive/)
-│   └── 06_Projects/     ← Proyectos (de 07_Projects/)
-├── 02_Playground/        ← Área de pruebas (de 06_Playground/)
-├── 03_Output/            ← Resultados de trabajos
-├── AGENTS.md             ← Redirige a 00_Rules/AGENTS.md
-├── CLAUDE.md             ← Actualizado con nuevos paths
-└── .mcp.json            ← MCP servers
-```
+### `04_Operations/` → `01_Personal_Os/04_Operations/00_Context_LLM/`
 
-### Convenciones
-- Prefijos numéricos: `00_`, `01_`, `02_`, `03_` para orden
-- Nombres en español claros
-- Backwards: alias/symlinks a paths viejos durante transición
+| Actual | Destino |
+|--------|---------|
+| `04_Operations/00_Context_Memory/` | `04_Operations/00_Context_LLM/00_Context_Memory/` |
+| `04_Operations/02_Knowledge_Brain/` | `04_Operations/00_Context_LLM/02_Knowledge_Brain/` |
+| `04_Operations/03_Process_Notes/` | `04_Operations/00_Context_LLM/01_Process_Notes/` |
+| `04_Operations/04_Memory_Brain/` | `04_Operations/00_Context_LLM/02_Memory_Brain/` |
+| `04_Operations/05_Plans/` | `04_Operations/00_Context_LLM/05_Plans/` |
+| `04_Operations/06_Solutions/` | `04_Operations/00_Context_LLM/06_Solutions/` |
+| `04_Operations/08_Auditorias/` | `04_Operations/00_Context_LLM/08_Auditorias/` |
+| `04_Operations/09_Agent_Teams_Lite/` | `04_Operations/02_Agent_Teams_Lite/` |
+| `04_Operations/11_Reports/` | `04_Operations/00_Context_LLM/11_Reports/` |
+| `04_Operations/01_Auto_Improvement/` | `04_Operations/01_Auto_Improvement/` (igual) |
 
 ---
 
-## 📋 Fases de Ejecución
+## 🏗️ Estructura Destino Final
 
-### ✅ Fase 0: Backups (COMPLETADOS)
+```
+PersonalOS/
+│
+├── 00_Winter_is_Coming/          ← REGLAS DE ORO (inmutable)
+│   ├── AGENTS.md
+│   ├── GOALS.md
+│   ├── BACKLOG.md
+│   ├── CHANGELOG.md
+│   └── README.md
+│
+├── 01_Personal_Os/               ← EL SISTEMA OPERATIVO
+│   ├── 01_Core/
+│   │   ├── 00_Workflows_Os/      ← Workflows (renombrado con _Os)
+│   │   ├── 01_Rules/             ← 10 reglas (.mdc)
+│   │   └── 02_Tools/             ← Todas las herramientas
+│   │       ├── 01_Agents/
+│   │       ├── 02_Skills/        ← 9 áreas funcionales (limpias)
+│   │       ├── 03_Mcp/
+│   │       ├── 04_Integrations/
+│   │       ├── 05_Hooks/
+│   │       ├── 06_Plugins/
+│   │       ├── 07_Server/
+│   │       ├── 08_Evals/
+│   │       └── 09_Templates/
+│   │
+│   ├── 02_Knowledge/
+│   ├── 03_Task/                  ← (singular, antes 03_Tasks)
+│   ├── 04_Operations/
+│   │   ├── 00_Context_LLM/       ← Memoria LLM
+│   │   ├── 01_Auto_Improvement/
+│   │   ├── 02_Agent_Teams_Lite/
+│   │   ├── 03_Scripts_Os/        ← 14 HUBs (antes 08_Scripts_Os/)
+│   │   ├── 04_Installer/
+│   │   └── 05_Projects/          ← (antes 07_Projects/)
+│   └── 05_Archive/
+│
+├── 02_Playground/                ← ZONA DE PRUEBAS
+│   └── 00_Momentum/
+│
+├── 03_Resultado/                 ← OUTPUTS
+│
+├── .agent/ | .atl/ | .claude/ | .mcp.json
+├── AGENTS.md | CLAUDE.md | README.md
+└── 00_Plan_Migración_Os.md      ← Este archivo
+```
 
-| Commit         | Descripción                            | Estado                              |
-|----------------|----------------------------------------|-------------------------------------|
-| 1              | Backup completo estado actual          | ✅ Completado (pendiente push)       |
-| 2              | config_paths.py y paths críticos       | ⏳ Pendiente                         |
-| 3              | Skills index y estructura              | ⏳ Pendiente                         |
+---
 
-**Backup físico:** Copia en `C:\Users\sebas\Desktop\00_Consequences\`
+## ✅ Fases de Ejecución
 
-### Fase 1: Hacer Dinámicos los 89 Scripts
+| Fase | Descripción | Estado | Tiempo |
+|------|-------------|--------|--------|
+| **FASE 0** | Git snapshot pre-migración | ✅ Listo (`2474f94`) | 5 min |
+| **FASE 1** | Fix Skills: rename UPPERCASE + absorber huérfanas | 🔄 En curso | 15 min |
+| **FASE 2** | Crear estructura destino (mkdir) | ⏳ Pendiente | 10 min |
+| **FASE 3** | Mover contenido (git mv) | ⏳ Pendiente | 30 min |
+| **FASE 4** | Actualizar config_paths.py | ⏳ Pendiente | 10 min |
+| **FASE 5** | Actualizar documentación | ⏳ Pendiente | 15 min |
+| **FASE 6** | Fix scripts auditores | ⏳ Pendiente | 10 min |
+| **FASE 7** | Verificación final | ⏳ Pendiente | 10 min |
 
-**Objetivo:** Reemplazar `sys.path.insert(0, str(_root / "08_Scripts_Os"))` por imports dinámicos
+---
 
-**Cambio tipo:**
+## 🔧 Skills: Fix Durante Migración
+
+### Rename UPPERCASE → Proper_Case
+
+| Actual | Destino |
+|--------|---------|
+| `01_CREACION_Contenidos/` | `01_Creacion_Contenidos/` |
+| `02_DISENO_UI_UX/` | `02_Diseno_Ui_Ux/` |
+| `03_VIDEO_MEDIA/` | `03_Video_Media/` |
+| `04_AUTOMATIZACION/` | `04_Automatizacion/` |
+| `05_WORKFLOWS/` | `05_Workflows/` |
+| `06_TOOLS/` | `06_Tools/` |
+| `07_PERSONAL_OS/` | `07_Personal_Os/` |
+| `08_INVICTUS_WEB/` | `08_Invictus_Web/` |
+
+### Absorber Huérfanas en 9 Áreas
+
+| Carpeta huérfana | Destino en área |
+|-----------------|----------------|
+| `20_James_Cameron/` | `03_Video_Media/` |
+| `28_Carousel_Master/` | `01_Creacion_Contenidos/` |
+| `17_SEO_SOTA_Master/` | `01_Creacion_Contenidos/` |
+| `11_Doc_Processing/` | `06_Tools/` |
+| `13_System_Master/` | `06_Tools/` |
+| `16_Silicon_Valley_Data_Analyst/` | `06_Tools/` |
+| `27_Qmd/` | `06_Tools/` |
+| `00_Gcierr/` | `00_Personal_Os_Stack/` |
+
+---
+
+## 🐛 Bugs Pendientes a Corregir (FASE 6)
+
+### `80_Edge_Case_Validator.py` — doble path nesting
 ```python
-# ANTES (hardcodeado)
-sys.path.insert(0, str(_root / "08_Scripts_Os"))
+# BUG (línea 33)
+SCRIPTS_DIR = ENGINE_DIR / "08_Scripts_Os"  # ENGINE_DIR YA ES 08_Scripts_Os
 
-# DESPUÉS (dinámico con backwards)
-from config_paths import SCRIPTS_OS_DIR
-sys.path.insert(0, str(SCRIPTS_OS_DIR))
+# FIX
+SCRIPTS_DIR = ENGINE_DIR
 ```
 
-**Scripts a modificar:**
-- 08_Scripts_Os/ (19 HUBs)
-- 08_Scripts_Os/05_AIPM/ (8 archivos)
-- 08_Scripts_Os/03_Validator/ (6 archivos)
-- 08_Scripts_Os/11_Anthropic_Harness/ (9 archivos)
-- 01_Core/03_Skills/*/scripts/ (18 archivos)
-- Otros (8 archivos)
-- Backup/Legacy (11 archivos)
-- Hooks/Operations (4 archivos)
+### `15_SOTA_Integrity_Check.py` — paths de SKILL.md post-migración
+- Actualizar referencia de directorio base al nuevo `02_Tools/02_Skills/`
 
-**Total:** 89 scripts
-
-### Fase 2: Migrar Estructura
-
-**Paso 2.1:** Crear carpetas nuevas
-```bash
-mkdir 00_Rules
-mkdir 01_Os
-mkdir 02_Playground
-mkdir 03_Output
-```
-
-**Paso 2.2:** Mover contenido
-
-| Origen                     | Destino                    |
-|----------------------------|----------------------------|
-| 00_Winter_is_Coming/       | 00_Rules/                  |
-| 01_Core/                   | 01_Os/01_Core/             |
-| 02_Knowledge/              | 01_Os/02_Knowledge/        |
-| 03_Tasks/                  | 01_Os/03_Task/             |
-| 04_Operations/             | 01_Os/04_Operations/       |
-| 05_Archive/                | 01_Os/05_Archive/          |
-| 07_Projects/               | 01_Os/06_Projects/         |
-| 06_Playground/             | 02_Playground/             |
-| (nuevo)                    | 03_Output/                 |
-
-**Paso 2.3:** Crear symlinks de backwards (opcional)
-```bash
-# En Windows (NTFS junction o symlink)
-mklink /D 01_Core 01_Os\01_Core
-mklink /D 08_Scripts_Os 01_Os\04_Operations\03_Scripts_Os
-```
-
-### Fase 3: Actualizar Configs
-
-**Archivos a actualizar:**
-- AGENTS.md — actualizar redirect
-- CLAUDE.md — actualizar boot sequence
-- .mcp.json — verificar paths
-- config_paths.py — añadir nuevos paths y backwards
-
-### Fase 4: Commit Final
-
-```
-refactor: nueva estructura OS con backwards support
-- 00_Rules/ <- 00_Winter_is_Coming/
-- 01_Os/ <- estructura reorganizada
-- 02_Playground/ <- playground
-- 03_Output/ <- resultados
-- backward paths en config_paths.py
-```
+### `33_Parallel_Audit_Pro.py` — `14_Otros` path
+- Ahora válido en `03_Scripts_Os/14_Otros/` — verificar y confirmar.
 
 ---
 
-## 📊 Métricas del Proyecto
+## 📊 Datos del Sistema (Verificados)
 
-| Métrica                                | Valor         |
-|----------------------------------------|---------------|
-| Archivos totales                       | ~15,844       |
-| Skills categorías                      | 22            |
-| MCP servers activos                    | 27            |
-| Scripts con sys.path hardcodeado       | 89            |
-| Scripts usando config_paths.py         | 302 ✅         |
-| HUBs principales                       | 12            |
-| Commits de backup                      | 3             |
-| Commits de migración                   | 1             |
+| Componente | Valor |
+|------------|-------|
+| MCPs activos | 33 |
+| Rules (fuente verdad) | 10 .mdc en `01_Core/01_Rules/` |
+| HUBs | 14 (→ `04_Operations/03_Scripts_Os/`) |
+| Skills | 165+ en 9 áreas funcionales |
+| `.mcp.json` | ✅ JSON válido |
+| `config_paths.py` | ✅ Auto-detección por `01_Core` (survives migration) |
 
 ---
 
-## ⚠️ Riscos y Mitigaciones
-
-| Riesgo                  | Probabilidad         | Impacto        | Mitigación                          |
-|-------------------------|----------------------|----------------|-------------------------------------|
-| Scripts rompen          | Alta                 | Alto           | Backwards via config_paths.py       |
-| Paths incorrectos       | Media                | Alto           | Test post-migración con HUBs        |
-| Pérdida de datos        | Baja                 | Crítico        | Backups múltiples                   |
-| Conflictos Git          | Media                | Bajo           | Commits atómicos                    |
-
----
-
-## 🧪 Tests Post-Migración
-
-```bash
-# Verificar que HUBs funcionan
-python 08_Scripts_Os/01_Auditor_Hub.py --dry-run
-python 08_Scripts_Os/04_Ritual_Hub.py --check
-
-# Verificar skills
-python 01_Core/03_Skills/00_Skill_Auditor/03_Scripts/34_Skill_Auditor.py --list
-
-# Verificar config_paths
-python 08_Scripts_Os/config_paths.py
-```
-
----
-
-## 📅 Cronograma Tentativo
-
-| Fase                             | Duración Estimada        | Estado            |
-|----------------------------------|--------------------------|-------------------|
-| Fase 0: Backups                  | ~15 min                  | ⏳ En curso        |
-| Fase 1: Scripts dinámicos        | ~30 min                  | ⏳ Pendiente       |
-| Fase 2: Migrar estructura        | ~20 min                  | ⏳ Pendiente       |
-| Fase 3: Actualizar configs       | ~10 min                  | ⏳ Pendiente       |
-| Fase 4: Commit final             | ~5 min                   | ⏳ Pendiente       |
-
-**Total estimado:** ~80 minutos
-
----
-
-## 📝 Changelog
-
-| Fecha            | Cambio                  | Autor                |
-|------------------|-------------------------|----------------------|
-| 2026-04-23       | Plan creado             | IA + Sebastián       |
-| 2026-04-23       | Backups iniciados       | IA + Sebastián       |
-
----
-
-*Plan generado por PersonalOS v1.0 | Think_Different*
+_PersonalOS v2.0 Migration Plan — 2026-04-24_
