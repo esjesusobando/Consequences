@@ -10,13 +10,13 @@
 
 ## 📊 Evaluación del Modelo
 
-| Métrica                   | Valor                 | Notas                              |
-|---------------------------|-----------------------|------------------------------------|
-| Contexto Inicio           | ~8k tokens            | Plan + archivos leídos             |
-| Contexto Fin              | ~180k tokens          | Sesión larga, múltiples re-inits   |
-| Estado Contexto           | SATURADO              | Varias compactaciones              |
-| Interrupciones            | ~12                   | Hooks fallando, MCPs cayendo       |
-| Archivos modificados      | 9                     | Todos los componentes OIM          |
+| Métrica                           | Valor                         | Notas                                      |
+|-----------------------------------|-------------------------------|--------------------------------------------|
+| Contexto Inicio                   | ~8k tokens                    | Plan + archivos leídos                     |
+| Contexto Fin                      | ~180k tokens                  | Sesión larga, múltiples re-inits           |
+| Estado Contexto                   | SATURADO                      | Varias compactaciones                      |
+| Interrupciones                    | ~12                           | Hooks fallando, MCPs cayendo               |
+| Archivos modificados              | 9                             | Todos los componentes OIM                  |
 
 ### Salud del Contexto
 
@@ -40,22 +40,22 @@ Resolver errores críticos del sitio OIM (pantalla en blanco, videos sin cargar)
 
 ## 🔧 Acciones Realizadas (Timeline)
 
-| Acción                                             | Archivos                                            | Notas                                                                |
-|----------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------------------|
-| Diagnóstico pantalla en blanco                     | page.tsx                                            | `if(!mounted) return null` bloqueaba render                          |
-| Fix rutas de videos                                | HeroSection.tsx, ScrollVideoServices.tsx            | Videos no existían en public/videos/                                 |
-| Copiar videos a public/                            | public/videos/                                      | Copiados desde 07_Projects/05_OBAND/                                 |
-| Aplicar taste-skill: tipografía                    | layout.tsx, globals.css, tailwind.config.ts         | Outfit font → luego Geist (usuario cambió stack)                     |
-| Reescribir HeroSection                             | HeroSection.tsx                                     | Asimétrico, min-h-[100dvh], overlay gradiente doble                  |
-| Reescribir ScrollVideoServices                     | ScrollVideoServices.tsx                             | RAF, glassmorphism real, nav dots, progress bar                      |
-| Reescribir AboutSection                            | AboutSection.tsx                                    | Split 2-col, stats 2x2, scroll-entry IntersectionObserver            |
-| Reescribir ProjectGallery                          | ProjectGallery.tsx                                  | Grid asimétrico 7+5+12, picsum placeholders                          |
-| Reescribir ContactForm                             | ContactForm.tsx                                     | Split layout, sent state, active states, scroll-entry                |
-| globals.css Tailwind v4                            | globals.css                                         | @import "tailwindcss" + @theme tokens OIM                            |
-| npm install                                        | node_modules/                                       | @types/react faltaba — errores TS7026                                |
-| SEO SOTA                                           | layout.tsx                                          | LocalBusiness JSON-LD, OG, Twitter, alternates                       |
-| page.tsx restaurado                                | page.tsx                                            | Nav glass, Hero + ScrollVideo + About + Gallery + Contact + Footer   |
-| Engram session summary                             | —                                                   | Guardado en proyecto OIM_Website                                     |
+| Acción                                                     | Archivos                                                    | Notas                                                                        |
+|------------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------------------------------|
+| Diagnóstico pantalla en blanco                             | page.tsx                                                    | `if(!mounted) return null` bloqueaba render                                  |
+| Fix rutas de videos                                        | HeroSection.tsx, ScrollVideoServices.tsx                    | Videos no existían en public/videos/                                         |
+| Copiar videos a public/                                    | public/videos/                                              | Copiados desde 07_Projects/05_OBAND/                                         |
+| Aplicar taste-skill: tipografía                            | layout.tsx, globals.css, tailwind.config.ts                 | Outfit font → luego Geist (usuario cambió stack)                             |
+| Reescribir HeroSection                                     | HeroSection.tsx                                             | Asimétrico, min-h-[100dvh], overlay gradiente doble                          |
+| Reescribir ScrollVideoServices                             | ScrollVideoServices.tsx                                     | RAF, glassmorphism real, nav dots, progress bar                              |
+| Reescribir AboutSection                                    | AboutSection.tsx                                            | Split 2-col, stats 2x2, scroll-entry IntersectionObserver                    |
+| Reescribir ProjectGallery                                  | ProjectGallery.tsx                                          | Grid asimétrico 7+5+12, picsum placeholders                                  |
+| Reescribir ContactForm                                     | ContactForm.tsx                                             | Split layout, sent state, active states, scroll-entry                        |
+| globals.css Tailwind v4                                    | globals.css                                                 | @import "tailwindcss" + @theme tokens OIM                                    |
+| npm install                                                | node_modules/                                               | @types/react faltaba — errores TS7026                                        |
+| SEO SOTA                                                   | layout.tsx                                                  | LocalBusiness JSON-LD, OG, Twitter, alternates                               |
+| page.tsx restaurado                                        | page.tsx                                                    | Nav glass, Hero + ScrollVideo + About + Gallery + Contact + Footer           |
+| Engram session summary                                     | —                                                           | Guardado en proyecto OIM_Website                                             |
 
 ---
 
@@ -111,15 +111,15 @@ Resolver errores críticos del sitio OIM (pantalla en blanco, videos sin cargar)
 
 ## ⚠️ Problemas Detectados
 
-| Problema                                           | Severidad     | Causa Raíz                                                 | Solución Aplicada                                  |
-|----------------------------------------------------|---------------|------------------------------------------------------------|----------------------------------------------------|
-| Pantalla en blanco                                 | ALTA          | `if(!mounted) return null` en page.tsx                     | Eliminado el mounted guard                         |
-| Videos 404                                         | ALTA          | Rutas incorrectas + archivos no copiados a public/         | Copiar videos + corregir paths                     |
-| TS7026 — JSX errors                                | ALTA          | `@types/react` no instalado                                | `npm install`                                      |
-| Hooks .agent/ fallando                             | MEDIA         | Workspace en oim-website, hooks en Think_Different         | Trabajar con paths absolutos, ignorar warnings     |
-| MCPs desconectándose                               | MEDIA         | Inestabilidad de conexión durante sesión larga             | Re-conectar según necesidad                        |
-| poster= apuntando a imágenes inexistentes          | BAJA          | /images/hero-poster.jpg y services-poster.jpg no existen   | Eliminados los atributos poster                    |
-| page.tsx simplificado (About/Gallery perdidos)     | ALTA          | Usuario reescribió page.tsx a versión mínima               | Restaurados en versión final de page.tsx           |
+| Problema                                                   | Severidad             | Causa Raíz                                                         | Solución Aplicada                                          |
+|------------------------------------------------------------|-----------------------|--------------------------------------------------------------------|------------------------------------------------------------|
+| Pantalla en blanco                                         | ALTA                  | `if(!mounted) return null` en page.tsx                             | Eliminado el mounted guard                                 |
+| Videos 404                                                 | ALTA                  | Rutas incorrectas + archivos no copiados a public/                 | Copiar videos + corregir paths                             |
+| TS7026 — JSX errors                                        | ALTA                  | `@types/react` no instalado                                        | `npm install`                                              |
+| Hooks .agent/ fallando                                     | MEDIA                 | Workspace en oim-website, hooks en Think_Different                 | Trabajar con paths absolutos, ignorar warnings             |
+| MCPs desconectándose                                       | MEDIA                 | Inestabilidad de conexión durante sesión larga                     | Re-conectar según necesidad                                |
+| poster= apuntando a imágenes inexistentes                  | BAJA                  | /images/hero-poster.jpg y services-poster.jpg no existen           | Eliminados los atributos poster                            |
+| page.tsx simplificado (About/Gallery perdidos)             | ALTA                  | Usuario reescribió page.tsx a versión mínima                       | Restaurados en versión final de page.tsx                   |
 
 ---
 

@@ -18,31 +18,31 @@ Validated by regex:
 
 ## Valid Types
 
-| Type       | Use For                                   |
-|------------|-------------------------------------------|
-| feat       | New feature or behavior                   |
-| fix        | Bug fix                                   |
-| docs       | Documentation only                        |
-| chore      | Maintenance, dependencies, tooling        |
-| refactor   | Restructuring without behavior change     |
-| test       | Adding or fixing tests                    |
-| ci         | CI/CD pipeline changes                    |
-| style      | Formatting, whitespace, no logic change   |
-| perf       | Performance improvement                   |
-| build      | Build system, Makefile changes            |
-| revert     | Reverting a previous commit               |
+| Type               | Use For                                           |
+|--------------------|---------------------------------------------------|
+| feat               | New feature or behavior                           |
+| fix                | Bug fix                                           |
+| docs               | Documentation only                                |
+| chore              | Maintenance, dependencies, tooling                |
+| refactor           | Restructuring without behavior change             |
+| test               | Adding or fixing tests                            |
+| ci                 | CI/CD pipeline changes                            |
+| style              | Formatting, whitespace, no logic change           |
+| perf               | Performance improvement                           |
+| build              | Build system, Makefile changes                    |
+| revert             | Reverting a previous commit                       |
 
 ## Valid Scopes for GGA
 
-| Scope       | Covers                                            |
-|-------------|---------------------------------------------------|
-| providers   | `lib/providers.sh`, any AI provider integration   |
-| hooks       | Hook system, marker injection, pre-commit logic   |
-| cache       | `lib/cache.sh`, hash logic                        |
-| cli         | `bin/gga` flags, argument parsing, output         |
-| ci          | GitHub Actions workflows                          |
-| config      | `.gga` config file parsing                        |
-| install     | `install.sh`, `uninstall.sh`                      |
+| Scope               | Covers                                                    |
+|---------------------|-----------------------------------------------------------|
+| providers           | `lib/providers.sh`, any AI provider integration           |
+| hooks               | Hook system, marker injection, pre-commit logic           |
+| cache               | `lib/cache.sh`, hash logic                                |
+| cli                 | `bin/gga` flags, argument parsing, output                 |
+| ci                  | GitHub Actions workflows                                  |
+| config              | `.gga` config file parsing                                |
+| install             | `install.sh`, `uninstall.sh`                              |
 
 ## Critical Rules
 - NEVER add `Co-Authored-By` or any AI attribution trailers

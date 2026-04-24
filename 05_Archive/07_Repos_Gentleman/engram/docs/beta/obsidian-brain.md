@@ -210,16 +210,16 @@ Slashes in topic keys become `--` in filenames for filesystem safety.
 engram-beta obsidian-export --vault <path> [flags]
 ```
 
-| Flag                      | Required     | Default        | Description                                                                                                   |
-|---------------------------|--------------|----------------|---------------------------------------------------------------------------------------------------------------|
-| `--vault <path>`          | ✅            | —              | Path to your Obsidian vault root. The exporter writes inside `{vault}/engram/` only.                          |
-| `--project <name>`        | No           | (all)          | Export only observations from this project.                                                                   |
-| `--limit <n>`             | No           | 0 (no limit)   | Maximum observations per source query.                                                                        |
-| `--since <date>`          | No           | (state file)   | Export only observations updated after this date. Format: RFC3339 (`2026-04-06T14:30:00Z`) or `YYYY-MM-DD`.   |
-| `--force`                 | No           | false          | Re-export everything, ignoring the incremental state file.                                                    |
-| `--graph-config <mode>`   | No           | `preserve`     | Bootstrap the Obsidian graph view config. See [Graph Config](#graph-config) below.                            |
-| `--watch`                 | No           | false          | Run as a daemon — exports on a fixed interval until interrupted.                                              |
-| `--interval <duration>`   | No           | `10m`          | Sync interval for `--watch` mode. Go duration format (`30s`, `5m`, `1h`). Minimum: `1m`.                      |
+| Flag                              | Required             | Default                | Description                                                                                                           |
+|-----------------------------------|----------------------|------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| `--vault <path>`                  | ✅                    | —                      | Path to your Obsidian vault root. The exporter writes inside `{vault}/engram/` only.                                  |
+| `--project <name>`                | No                   | (all)                  | Export only observations from this project.                                                                           |
+| `--limit <n>`                     | No                   | 0 (no limit)           | Maximum observations per source query.                                                                                |
+| `--since <date>`                  | No                   | (state file)           | Export only observations updated after this date. Format: RFC3339 (`2026-04-06T14:30:00Z`) or `YYYY-MM-DD`.           |
+| `--force`                         | No                   | false                  | Re-export everything, ignoring the incremental state file.                                                            |
+| `--graph-config <mode>`           | No                   | `preserve`             | Bootstrap the Obsidian graph view config. See [Graph Config](#graph-config) below.                                    |
+| `--watch`                         | No                   | false                  | Run as a daemon — exports on a fixed interval until interrupted.                                                      |
+| `--interval <duration>`           | No                   | `10m`                  | Sync interval for `--watch` mode. Go duration format (`30s`, `5m`, `1h`). Minimum: `1m`.                              |
 
 ### Examples
 
@@ -331,24 +331,24 @@ Obsidian's graph view config lives in `{vault}/.obsidian/graph.json`. Engram shi
 
 ### Modes
 
-| Mode                   | Behavior                                                                                                                |
-|------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| `preserve` (default)   | Writes the default config **only if `graph.json` doesn't exist**. Respects any custom layout you've created.            |
-| `force`                | **Always overwrites** `graph.json` with the engram-brain default. Use this to reset after experimenting.                |
-| `skip`                 | **Never touches** `graph.json`. Use this if you have a carefully curated layout you don't want any tooling to manage.   |
+| Mode                           | Behavior                                                                                                                        |
+|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| `preserve` (default)           | Writes the default config **only if `graph.json` doesn't exist**. Respects any custom layout you've created.                    |
+| `force`                        | **Always overwrites** `graph.json` with the engram-brain default. Use this to reset after experimenting.                        |
+| `skip`                         | **Never touches** `graph.json`. Use this if you have a carefully curated layout you don't want any tooling to manage.           |
 
 In `--watch` mode, the graph config is applied **only on the first cycle**. Subsequent cycles always skip it, so daemon mode never clobbers your manual tweaks.
 
 ### Color Group Reference
 
-| Query                     | Color           | Hex         |
-|---------------------------|-----------------|-------------|
-| `path:engram/_sessions`   | Soft pink       | `#E0CBD2`   |
-| `path:engram/_topics`     | Light cyan      | `#D3FFFF`   |
-| `tag:#architecture`       | Electric blue   | `#001EFF`   |
-| `tag:#bugfix`             | Pure red        | `#FF0000`   |
-| `tag:#decision`           | Bright green    | `#00FF2A`   |
-| `tag:#pattern`            | Orange          | `#FF6800`   |
+| Query                             | Color                   | Hex                 |
+|-----------------------------------|-------------------------|---------------------|
+| `path:engram/_sessions`           | Soft pink               | `#E0CBD2`           |
+| `path:engram/_topics`             | Light cyan              | `#D3FFFF`           |
+| `tag:#architecture`               | Electric blue           | `#001EFF`           |
+| `tag:#bugfix`                     | Pure red                | `#FF0000`           |
+| `tag:#decision`                   | Bright green            | `#00FF2A`           |
+| `tag:#pattern`                    | Orange                  | `#FF6800`           |
 
 ### Customizing the Graph
 
@@ -390,14 +390,14 @@ This is **lower priority than the CLI** — the CLI doesn't require `engram serv
 
 In the Filter panel of Graph View:
 
-| Query                                    | Shows                                            |
-|------------------------------------------|--------------------------------------------------|
-| `path:engram/engram`                     | Only your engram project's brain                 |
-| `tag:#bugfix`                            | Constellation of every bug you've ever fixed     |
-| `tag:#architecture path:engram/engram`   | Architectural decisions in this project only     |
-| `path:_topics`                           | Just the topic hubs — your "table of contents"   |
-| `path:_sessions sdd`                     | Sessions that involved SDD work                  |
-| `tag:#decision tag:#architecture`        | Big architectural decisions                      |
+| Query                                            | Shows                                                    |
+|--------------------------------------------------|----------------------------------------------------------|
+| `path:engram/engram`                             | Only your engram project's brain                         |
+| `tag:#bugfix`                                    | Constellation of every bug you've ever fixed             |
+| `tag:#architecture path:engram/engram`           | Architectural decisions in this project only             |
+| `path:_topics`                                   | Just the topic hubs — your "table of contents"           |
+| `path:_sessions sdd`                             | Sessions that involved SDD work                          |
+| `tag:#decision tag:#architecture`                | Big architectural decisions                              |
 
 ### Navigating
 

@@ -81,14 +81,14 @@ File: `extensions/pi-pi.ts`
 
 ### Differences from agent-team.ts
 
-| Feature                           | agent-team                          | pi-pi                                                                   |
-|-----------------------------------|-------------------------------------|-------------------------------------------------------------------------|
-| Primary tools                     | dispatch_agent ONLY                 | read,write,edit,bash,grep,find,ls + query_expert                        |
-| Subagent tools                    | varies per agent                    | read,grep,find,ls,bash (read-only + bash for firecrawl)                 |
-| Dispatch model                    | Sequential                          | Parallel (LLM calls query_expert N times)                               |
-| Subagent sessions                 | Persistent                          | Ephemeral (--no-session)                                                |
-| System prompt                     | Generic dispatcher                  | Specialized meta-agent builder                                          |
-| First prompt                      | None                                | Each expert fetches fresh docs on first query                           |
+| Feature                                   | agent-team                                  | pi-pi                                                                           |
+|-------------------------------------------|---------------------------------------------|---------------------------------------------------------------------------------|
+| Primary tools                             | dispatch_agent ONLY                         | read,write,edit,bash,grep,find,ls + query_expert                                |
+| Subagent tools                            | varies per agent                            | read,grep,find,ls,bash (read-only + bash for firecrawl)                         |
+| Dispatch model                            | Sequential                                  | Parallel (LLM calls query_expert N times)                                       |
+| Subagent sessions                         | Persistent                                  | Ephemeral (--no-session)                                                        |
+| System prompt                             | Generic dispatcher                          | Specialized meta-agent builder                                                  |
+| First prompt                              | None                                        | Each expert fetches fresh docs on first query                                   |
 
 ### Tool: query_expert
 

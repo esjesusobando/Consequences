@@ -16,22 +16,22 @@ The compound-engineering plugin is **overflowing the default context budget by ~
 
 Claude Code uses progressive disclosure for plugin content:
 
-| Level                     | What Loads                                                      | When                                                          |
-|---------------------------|-----------------------------------------------------------------|---------------------------------------------------------------|
-| **Always in context**     | `description` frontmatter from skills, commands, and agents     | Session startup (unless `disable-model-invocation: true`)     |
-| **On invocation**         | Full SKILL.md / command body / agent body                       | When triggered                                                |
-| **On demand**             | Reference files in skill directories                            | When Claude reads them                                        |
+| Level                             | What Loads                                                              | When                                                                  |
+|-----------------------------------|-------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| **Always in context**             | `description` frontmatter from skills, commands, and agents             | Session startup (unless `disable-model-invocation: true`)             |
+| **On invocation**                 | Full SKILL.md / command body / agent body                               | When triggered                                                        |
+| **On demand**                     | Reference files in skill directories                                    | When Claude reads them                                                |
 
 The total budget for ALL descriptions combined is **2% of context window** (~16,000 chars fallback). When exceeded, components are **silently excluded**.
 
 ### Current State: 316% of Budget
 
-| Component                | Count       | Always-Loaded Chars       | % of 16K Budget       |
-|--------------------------|-------------|---------------------------|-----------------------|
-| Agent descriptions       | 29          | ~41,400                   | 259%                  |
-| Skill descriptions       | 16          | ~5,450                    | 34%                   |
-| Command descriptions     | 24          | ~3,700                    | 23%                   |
-| **Total**                | **69**      | **~50,500**               | **316%**              |
+| Component                        | Count               | Always-Loaded Chars               | % of 16K Budget               |
+|----------------------------------|---------------------|-----------------------------------|-------------------------------|
+| Agent descriptions               | 29                  | ~41,400                           | 259%                          |
+| Skill descriptions               | 16                  | ~5,450                            | 34%                           |
+| Command descriptions             | 24                  | ~3,700                            | 23%                           |
+| **Total**                        | **69**              | **~50,500**                       | **316%**                      |
 
 ### Root Cause: Bloated Agent Descriptions
 
@@ -108,26 +108,26 @@ The examples move into the body (which only loads when the agent is actually inv
 
 Commands that should only run when explicitly invoked by the user:
 
-| Command                      | Reason                                |
-|------------------------------|---------------------------------------|
-| `/deploy-docs`               | Side effect: deploys                  |
-| `/release-docs`              | Side effect: regenerates docs         |
-| `/changelog`                 | Side effect: generates changelog      |
-| `/lfg`                       | Side effect: autonomous workflow      |
-| `/slfg`                      | Side effect: swarm workflow           |
-| `/triage`                    | Side effect: categorizes findings     |
-| `/resolve_parallel`          | Side effect: resolves TODOs           |
-| `/resolve_todo_parallel`     | Side effect: resolves todos           |
-| `/resolve_pr_parallel`       | Side effect: resolves PR comments     |
-| `/feature-video`             | Side effect: records video            |
-| `/test-browser`              | Side effect: runs browser tests       |
-| `/xcode-test`                | Side effect: builds/tests iOS         |
-| `/reproduce-bug`             | Side effect: runs reproduction        |
-| `/report-bug`                | Side effect: creates bug report       |
-| `/agent-native-audit`        | Side effect: runs audit               |
-| `/heal-skill`                | Side effect: modifies skill files     |
-| `/generate_command`          | Side effect: creates files            |
-| `/create-agent-skill`        | Side effect: creates files            |
+| Command                              | Reason                                        |
+|--------------------------------------|-----------------------------------------------|
+| `/deploy-docs`                       | Side effect: deploys                          |
+| `/release-docs`                      | Side effect: regenerates docs                 |
+| `/changelog`                         | Side effect: generates changelog              |
+| `/lfg`                               | Side effect: autonomous workflow              |
+| `/slfg`                              | Side effect: swarm workflow                   |
+| `/triage`                            | Side effect: categorizes findings             |
+| `/resolve_parallel`                  | Side effect: resolves TODOs                   |
+| `/resolve_todo_parallel`             | Side effect: resolves todos                   |
+| `/resolve_pr_parallel`               | Side effect: resolves PR comments             |
+| `/feature-video`                     | Side effect: records video                    |
+| `/test-browser`                      | Side effect: runs browser tests               |
+| `/xcode-test`                        | Side effect: builds/tests iOS                 |
+| `/reproduce-bug`                     | Side effect: runs reproduction                |
+| `/report-bug`                        | Side effect: creates bug report               |
+| `/agent-native-audit`                | Side effect: runs audit                       |
+| `/heal-skill`                        | Side effect: modifies skill files             |
+| `/generate_command`                  | Side effect: creates files                    |
+| `/create-agent-skill`                | Side effect: creates files                    |
 
 Keep these **without** the flag (Claude should know about them):
 - `/workflows:plan` — Claude might suggest planning
@@ -143,14 +143,14 @@ Keep these **without** the flag (Claude should know about them):
 
 Skills that are manual workflows:
 
-| Skill                      | Reason                    |
-|----------------------------|---------------------------|
-| `skill-creator`            | Only invoked manually     |
-| `orchestrating-swarms`     | Only invoked manually     |
-| `git-worktree`             | Only invoked manually     |
-| `resolve-pr-parallel`      | Side effect               |
-| `compound-docs`            | Only invoked manually     |
-| `file-todos`               | Only invoked manually     |
+| Skill                              | Reason                            |
+|------------------------------------|-----------------------------------|
+| `skill-creator`                    | Only invoked manually             |
+| `orchestrating-swarms`             | Only invoked manually             |
+| `git-worktree`                     | Only invoked manually             |
+| `resolve-pr-parallel`              | Side effect                       |
+| `compound-docs`                    | Only invoked manually             |
+| `file-todos`                       | Only invoked manually             |
 
 Keep without the flag (Claude should auto-invoke):
 - `dhh-rails-style` — Claude should use when writing Rails code
@@ -172,13 +172,13 @@ Keep without the flag (Claude should auto-invoke):
 
 ## Projected Result
 
-| Component                | Before (chars)       | After (chars)      | Reduction        |
-|--------------------------|----------------------|--------------------|------------------|
-| Agent descriptions       | ~41,400              | ~5,800             | -86%             |
-| Command descriptions     | ~3,700               | ~600               | -84%             |
-| Skill descriptions       | ~5,450               | ~4,000             | -27%             |
-| **Total**                | **~50,500**          | **~10,400**        | **-79%**         |
-| **% of 16K budget**      | **316%**             | **65%**            |------------------|
+| Component                        | Before (chars)               | After (chars)              | Reduction                |
+|----------------------------------|------------------------------|----------------------------|--------------------------|
+| Agent descriptions               | ~41,400                      | ~5,800                     | -86%                     |
+| Command descriptions             | ~3,700                       | ~600                       | -84%                     |
+| Skill descriptions               | ~5,450                       | ~4,000                     | -27%                     |
+| **Total**                        | **~50,500**                  | **~10,400**                | **-79%**                 |
+| **% of 16K budget**              | **316%**                     | **65%**                    |--------------------------|
 
 From 316% of budget (components silently dropped) to 65% of budget (room for growth).
 

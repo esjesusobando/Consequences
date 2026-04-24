@@ -2,21 +2,21 @@
 *Source of Truth - Project: Think Different*
 
 ## 1. Operational Protocols (Hooks)
-| Hook                       | Path                                                                     | Function                       |
-|----------------------------|--------------------------------------------------------------------------|--------------------------------|
-| PostToolUse                | `.agent/04_Extensions/hooks/02_Post_Tool/post_tool_use.py`               | Backup & Voice                 |
-| PreToolUse                 | `.agent/04_Extensions/hooks/01_Pre_Tool/pre_tool_use.py`                 | Battery/Security               |
-| SubagentStop               | `.agent/04_Extensions/hooks/03_Lifecycle/subagent_stop.py`               | Cleanup                        |
+| Hook                               | Path                                                                             | Function                               |
+|------------------------------------|----------------------------------------------------------------------------------|----------------------------------------|
+| PostToolUse                        | `.agent/04_Extensions/hooks/02_Post_Tool/post_tool_use.py`                       | Backup & Voice                         |
+| PreToolUse                         | `.agent/04_Extensions/hooks/01_Pre_Tool/pre_tool_use.py`                         | Battery/Security                       |
+| SubagentStop                       | `.agent/04_Extensions/hooks/03_Lifecycle/subagent_stop.py`                       | Cleanup                                |
 
 ## 2. Execution Engine (Scripts Registry - 08_Scripts_Os/)
 *Mapping de automatizaciones SOTA.*
 
-| Script                              | Path                                                             | Purpose                               |
-|-------------------------------------|------------------------------------------------------------------|---------------------------------------|
-| 14_Morning_Standup                  | `08_Scripts_Os/14_Morning_Standup.py`                            | Standup Standarizado                  |
-| 56_Organize_Solutions               | `08_Scripts_Os/56_Organize_Solutions.py`                         | Hulk Solutions                        |
-| 79_System_Guardian                  | `08_Scripts_Os/79_System_Guardian.py`                            | Validación del Sistema                |
-| 53_Structure_Auditor                | `08_Scripts_Os/53_Structure_Auditor.py`                          | Auditoría de Estructura               |
+| Script                                      | Path                                                                     | Purpose                                       |
+|---------------------------------------------|--------------------------------------------------------------------------|-----------------------------------------------|
+| 14_Morning_Standup                          | `08_Scripts_Os/14_Morning_Standup.py`                                    | Standup Standarizado                          |
+| 56_Organize_Solutions                       | `08_Scripts_Os/56_Organize_Solutions.py`                                 | Hulk Solutions                                |
+| 79_System_Guardian                          | `08_Scripts_Os/79_System_Guardian.py`                                    | Validación del Sistema                        |
+| 53_Structure_Auditor                        | `08_Scripts_Os/53_Structure_Auditor.py`                                  | Auditoría de Estructura                       |
 
 ## 3. Intelligence Layer (AI Tools & Workflow)
 *Transformación SOTA de 05_AI_Tools.md*

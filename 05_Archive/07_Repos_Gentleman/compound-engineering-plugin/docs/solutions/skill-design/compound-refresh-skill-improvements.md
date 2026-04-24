@@ -123,14 +123,14 @@ These five patterns should be checked during any skill review:
 
 ### Key anti-patterns
 
-| Anti-pattern                                                             | Better pattern                                                                                                        |
-|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| "Use the AskUserQuestion tool when available"                            | "Use the platform's interactive question tool (e.g. AskUserQuestion in Claude Code, request_user_input in Codex)"     |
-| Defining auto-archive conditions, then "always ask before archiving"     | Single-source-of-truth: define the rule once, reference it elsewhere                                                  |
-| "Which area should we review?" before any investigation                  | Triage first, recommend with evidence, let user confirm or redirect                                                   |
-| "Create a successor learning through ce:compound" during a refresh       | Replacement subagent writes directly using gathered evidence                                                          |
-| No tool guidance for subagents                                           | "Use dedicated file search and read tools, not shell commands"                                                        |
-| Auto-detecting "no question tool = headless"                             | Explicit `mode:autonomous` argument — interactive agents without question tools are still interactive                 |
+| Anti-pattern                                                                     | Better pattern                                                                                                                |
+|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| "Use the AskUserQuestion tool when available"                                    | "Use the platform's interactive question tool (e.g. AskUserQuestion in Claude Code, request_user_input in Codex)"             |
+| Defining auto-archive conditions, then "always ask before archiving"             | Single-source-of-truth: define the rule once, reference it elsewhere                                                          |
+| "Which area should we review?" before any investigation                          | Triage first, recommend with evidence, let user confirm or redirect                                                           |
+| "Create a successor learning through ce:compound" during a refresh               | Replacement subagent writes directly using gathered evidence                                                                  |
+| No tool guidance for subagents                                                   | "Use dedicated file search and read tools, not shell commands"                                                                |
+| Auto-detecting "no question tool = headless"                                     | Explicit `mode:autonomous` argument — interactive agents without question tools are still interactive                         |
 
 ## Cross-References
 

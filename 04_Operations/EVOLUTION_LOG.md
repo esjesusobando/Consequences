@@ -14,13 +14,13 @@ Este documento es el registro histórico de todas las mejoras, cambios y evoluci
 
 ## 📊 Resumen Ejecutivo
 
-| Métrica              | Valor                |
-|----------------------|----------------------|
-| Versión actual       | v6.1                 |
-| Fecha de inicio      | 2026-03-29           |
-| Total de mejoras     | 4                    |
-| Autonomía actual     | MANUAL (Nivel 0)     |
-| Health Score         | - (baseline)         |
+| Métrica                      | Valor                        |
+|------------------------------|------------------------------|
+| Versión actual               | v6.1                         |
+| Fecha de inicio              | 2026-03-29                   |
+| Total de mejoras             | 4                            |
+| Autonomía actual             | MANUAL (Nivel 0)             |
+| Health Score                 | - (baseline)                 |
 
 ---
 
@@ -250,28 +250,28 @@ improvement:
 
 ### Historial de Health Score
 
-| Fecha          | Score       | Ciclo        | Notas                    |
-|----------------|-------------|--------------|--------------------------|
-| 2026-03-29     |-------------| CREACIÓN     | Baseline establecido     |
+| Fecha                  | Score               | Ciclo                | Notas                            |
+|------------------------|---------------------|----------------------|----------------------------------|
+| 2026-03-29             |---------------------| CREACIÓN             | Baseline establecido             |
 
 ### Mejoras por Categoría
 
-| Categoría        | Cantidad       | Porcentaje        |
-|------------------|----------------|-------------------|
-| foundation       | 1              | 25%               |
-| resilience       | 1              | 25%               |
-| governance       | 1              | 25%               |
-| optimization     | 1              | 25%               |
-| automation       | 0              | 0%                |
+| Categoría                | Cantidad               | Porcentaje                |
+|--------------------------|------------------------|---------------------------|
+| foundation               | 1                      | 25%                       |
+| resilience               | 1                      | 25%                       |
+| governance               | 1                      | 25%                       |
+| optimization             | 1                      | 25%                       |
+| automation               | 0                      | 0%                        |
 
 ### Tasa de Éxito
 
-| Métrica                  | Valor       |
-|--------------------------|-------------|
-| Mejoras completadas      | 4           |
-| Mejoras revertidas       | 0           |
-| Rollbacks necesarios     | 0           |
-| Éxito overall            | 100%        |
+| Métrica                          | Valor               |
+|----------------------------------|---------------------|
+| Mejoras completadas              | 4                   |
+| Mejoras revertidas               | 0                   |
+| Rollbacks necesarios             | 0                   |
+| Éxito overall                    | 100%                |
 
 ---
 
@@ -340,13 +340,13 @@ improvement:
 
 ## 🏆 Hitos Alcanzados
 
-| Hito                           | Fecha          | Descripción                          |
-|--------------------------------|----------------|--------------------------------------|
-| 🟢 Sistema Creado               | 2026-03-29     | Base de automejora implementada      |
-| 🟢 Gobernanza Establecida       | 2026-03-29     | Niveles de autonomía definidos       |
-| 🟢 Resiliencia Implementada     | 2026-03-29     | Protocolos de emergencia activos     |
-| ⬜ 30 Días sin Incidentes       |----------------| Pendiente                            |
-| ⬜ Nivel 1 Alcanzado            |----------------| Pendiente                            |
+| Hito                                   | Fecha                  | Descripción                                  |
+|----------------------------------------|------------------------|----------------------------------------------|
+| 🟢 Sistema Creado                       | 2026-03-29             | Base de automejora implementada              |
+| 🟢 Gobernanza Establecida               | 2026-03-29             | Niveles de autonomía definidos               |
+| 🟢 Resiliencia Implementada             | 2026-03-29             | Protocolos de emergencia activos             |
+| ⬜ 30 Días sin Incidentes               |------------------------| Pendiente                                    |
+| ⬜ Nivel 1 Alcanzado                    |------------------------| Pendiente                                    |
 
 ---
 

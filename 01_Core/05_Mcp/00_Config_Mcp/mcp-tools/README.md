@@ -7,14 +7,14 @@
 
 ## 📊 Resumen
 
-| Tier       | Categoría                  | MCPs                             | Estado       |
-|------------|----------------------------|----------------------------------|--------------|
-| 01         | Core (siempre activas)     | context7, engram, github         | ⭐            |
-| 02         | Knowledge                  | obsidian, notion, aim-memory     |              |
-| 03         | Development                | playwright, docker, chrome       |              |
-| 04         | Research                   | firecrawl, exa, supabase         |              |
-| 05         | Visual                     | excalidraw, pencil               |              |
-| 06         | Productivity               | linear, slack, jira              |              |
+| Tier               | Categoría                          | MCPs                                     | Estado               |
+|--------------------|------------------------------------|------------------------------------------|----------------------|
+| 01                 | Core (siempre activas)             | context7, engram, github                 | ⭐                    |
+| 02                 | Knowledge                          | obsidian, notion, aim-memory             |                      |
+| 03                 | Development                        | playwright, docker, chrome               |                      |
+| 04                 | Research                           | firecrawl, exa, supabase                 |                      |
+| 05                 | Visual                             | excalidraw, pencil                       |                      |
+| 06                 | Productivity                       | linear, slack, jira                      |                      |
 
 ---
 
@@ -54,10 +54,10 @@ mcp-tools/
 
 ## 🔗 Archivo de Configuración
 
-| Herramienta        | Archivo activo                                            | Notas                                                |
-|--------------------|-----------------------------------------------------------|------------------------------------------------------|
-| **Claude Code**    | `.mcp.json` (raíz del proyecto)                           | Fuente: `01_Core/05_Mcp/01_Claude_Code/mcp.json`     |
-| **OpenCode**       | `C:\Users\sebas\.config\opencode\opencode.json`           | Fuente: `01_Core/05_Mcp/02_OpenCode/opencode.json`   |
+| Herramienta                | Archivo activo                                                    | Notas                                                        |
+|----------------------------|-------------------------------------------------------------------|--------------------------------------------------------------|
+| **Claude Code**            | `.mcp.json` (raíz del proyecto)                                   | Fuente: `01_Core/05_Mcp/01_Claude_Code/mcp.json`             |
+| **OpenCode**               | `C:\Users\sebas\.config\opencode\opencode.json`                   | Fuente: `01_Core/05_Mcp/02_OpenCode/opencode.json`           |
 
 ---
 

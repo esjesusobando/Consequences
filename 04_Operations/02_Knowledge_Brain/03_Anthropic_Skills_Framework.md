@@ -15,17 +15,17 @@ Skills no son solo atajos; son **funciones de fuerza** que sacan a Claude de la 
 
 ## 📚 9 Tipos de Skills (Categorización Anthropic)
 
-| #         | Tipo                                         | Descripción                              | Ejemplo PersonalOS                       |
-|-----------|----------------------------------------------|------------------------------------------|------------------------------------------|
-| 1         | **Library & API Reference**                  | Cómo usar libs/CLIs correctamente        | `skill-creator`, `sdd-*`                 |
-| 2         | **Product Verification**                     | Cómo testear/verificar código            | `playwright`, `e2e-testing`              |
-| 3         | **Data Fetching & Analysis**                 | Conectar a datos y monitoreo             | `analytics-tracking`                     |
-| 4         | **Business Process & Team Automation**       | Workflows repetitivos en 1 comando       | `weekly-review`, `morning-standup`       |
-| 5         | **Code Scaffolding & Templates**             | Generar boilerplate                      | `prd`, `jira-epic`                       |
-| 6         | **Code Quality & Review**                    | Enforzar quality inside org              | `technical-review`, `pr-review`          |
-| 7         | **CI/CD & Deployment**                       | Fetch, push, deploy código               | `github-pr`, `branch-pr`                 |
-| 8         | **Runbooks**                                 | Síntoma → Investigación → Reporte        | `oncall-runner`, `debug-*`               |
-| 9         | **Infrastructure Operations**                | Mantenimiento y operaciones              | `system-guardian`                        |
+| #                 | Tipo                                                 | Descripción                                      | Ejemplo PersonalOS                               |
+|-------------------|------------------------------------------------------|--------------------------------------------------|--------------------------------------------------|
+| 1                 | **Library & API Reference**                          | Cómo usar libs/CLIs correctamente                | `skill-creator`, `sdd-*`                         |
+| 2                 | **Product Verification**                             | Cómo testear/verificar código                    | `playwright`, `e2e-testing`                      |
+| 3                 | **Data Fetching & Analysis**                         | Conectar a datos y monitoreo                     | `analytics-tracking`                             |
+| 4                 | **Business Process & Team Automation**               | Workflows repetitivos en 1 comando               | `weekly-review`, `morning-standup`               |
+| 5                 | **Code Scaffolding & Templates**                     | Generar boilerplate                              | `prd`, `jira-epic`                               |
+| 6                 | **Code Quality & Review**                            | Enforzar quality inside org                      | `technical-review`, `pr-review`                  |
+| 7                 | **CI/CD & Deployment**                               | Fetch, push, deploy código                       | `github-pr`, `branch-pr`                         |
+| 8                 | **Runbooks**                                         | Síntoma → Investigación → Reporte                | `oncall-runner`, `debug-*`                       |
+| 9                 | **Infrastructure Operations**                        | Mantenimiento y operaciones                      | `system-guardian`                                |
 
 ---
 

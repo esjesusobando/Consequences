@@ -10,16 +10,16 @@
 
 ### Resumen Ejecutivo
 
-| Cambio                                          | Descripción                                                                        | Estado                           |
-|-------------------------------------------------|------------------------------------------------------------------------------------|----------------------------------|
-| Skills System v2.0 Complete                     | 99 skills en 9 perfiles + 10_Backup                                                | ✅ Completado                     |
-| Canonical Source                                | `.agent/02_Skills/` es fuente canónica                                             | ✅ Completado                     |
-| Cursor Mirror                                   | `.cursor/02_Skills/` es espejo (README only)                                       | ✅ Completado                     |
-| Context Memory Cleanup                          | 08_Context_Memory y Context_Memory eliminadas                                      | ✅ Completado                     |
-| Backup Central Created                          | 01_Core/06_Backup_Central/ creado                                                  | ✅ Completado                     |
-| Documentation Beautified                        | 85+ documentos beautificados con pixel-perfect tables                              | ✅ Completado                     |
-| Inventory Complete                              | 04_Inventario.md con inventario completo del sistema                               | ✅ Completado                     |
-| 01_Brain Sequence                               | Completo: 01, 02, 03, 04, 05, 06, 07, 09                                           | ✅ Completado                     |
+| Cambio                                                  | Descripción                                                                                | Estado                                   |
+|---------------------------------------------------------|--------------------------------------------------------------------------------------------|------------------------------------------|
+| Skills System v2.0 Complete                             | 99 skills en 9 perfiles + 10_Backup                                                        | ✅ Completado                             |
+| Canonical Source                                        | `.agent/02_Skills/` es fuente canónica                                                     | ✅ Completado                             |
+| Cursor Mirror                                           | `.cursor/02_Skills/` es espejo (README only)                                               | ✅ Completado                             |
+| Context Memory Cleanup                                  | 08_Context_Memory y Context_Memory eliminadas                                              | ✅ Completado                             |
+| Backup Central Created                                  | 01_Core/06_Backup_Central/ creado                                                          | ✅ Completado                             |
+| Documentation Beautified                                | 85+ documentos beautificados con pixel-perfect tables                                      | ✅ Completado                             |
+| Inventory Complete                                      | 04_Inventario.md con inventario completo del sistema                                       | ✅ Completado                             |
+| 01_Brain Sequence                                       | Completo: 01, 02, 03, 04, 05, 06, 07, 09                                                   | ✅ Completado                             |
 
 ### Skills System v2.0 - Detalles
 
@@ -152,12 +152,12 @@ Think Different AI es un **Personal Operating System (PersonalOS)** que integra 
 
 ### Convenciones de Nombrado (OBLIGATORIAS)
 
-| Regla                                           | Ejemplo                                      | Incorrecto                                   |
-|-------------------------------------------------|----------------------------------------------|----------------------------------------------|
-| 2 dígitos para números                          | `01_Project_Manager`                         | `1_Project_Manager`                          |
-| PascalCase                                      | `01_Morning_Standup`                         | `01_morning_standup`                         |
-| Guion bajo para separar                         | `01_Brand_Identity`                          | `01-brand-identity`                          |
-| Secuencia PERFECTA                              | `01, 02, 03...`                              | `01, 03, 05...`                              |
+| Regla                                                   | Ejemplo                                              | Incorrecto                                           |
+|---------------------------------------------------------|------------------------------------------------------|------------------------------------------------------|
+| 2 dígitos para números                                  | `01_Project_Manager`                                 | `1_Project_Manager`                                  |
+| PascalCase                                              | `01_Morning_Standup`                                 | `01_morning_standup`                                 |
+| Guion bajo para separar                                 | `01_Brand_Identity`                                  | `01-brand-identity`                                  |
+| Secuencia PERFECTA                                      | `01, 02, 03...`                                      | `01, 03, 05...`                                      |
 
 - --
 
@@ -191,11 +191,11 @@ Modo de coordinación que delega TODO el trabajo a sub-agentes:
 
 ### 4. Rituales (M/E/S)
 
-| Ritual                              | Descripcion                                              | Frecuencia                           |
-|-------------------------------------|----------------------------------------------------------|--------------------------------------|
-| **Morning**                         | Morning Standup - enfoque diario                         | Diario                               |
-| **Evening**                         | Evening Review - reflexion                               | Diario                               |
-| **Sunday**                          | Sunday Ritual - mantenimiento                            | Semanal                              |
+| Ritual                                      | Descripcion                                                      | Frecuencia                                   |
+|---------------------------------------------|------------------------------------------------------------------|----------------------------------------------|
+| **Morning**                                 | Morning Standup - enfoque diario                                 | Diario                                       |
+| **Evening**                                 | Evening Review - reflexion                                       | Diario                                       |
+| **Sunday**                                  | Sunday Ritual - mantenimiento                                    | Semanal                                      |
 
 - --
 
@@ -203,23 +203,23 @@ Modo de coordinación que delega TODO el trabajo a sub-agentes:
 
 ### Los 4 Fantásticos
 
-| Agente                                    | Purpose                                                  | Ubicacion                                             |
-|-------------------------------------------|----------------------------------------------------------|-------------------------------------------------------|
-| **Thork**                                 | Investigacion profunda, research                         | Skills                                                |
-| **Hulk Compound**                         | Hooks de seguridad, auditoria                            | `.agent/04_Extensions/hooks/`                         |
-| **Avengers**                              | Code review, calidad                                     | Skills                                                |
-| **Vision Review**                         | Revisión estratégica                                     | Skills                                                |
+| Agente                                            | Purpose                                                          | Ubicacion                                                     |
+|---------------------------------------------------|------------------------------------------------------------------|---------------------------------------------------------------|
+| **Thork**                                         | Investigacion profunda, research                                 | Skills                                                        |
+| **Hulk Compound**                                 | Hooks de seguridad, auditoria                                    | `.agent/04_Extensions/hooks/`                                 |
+| **Avengers**                                      | Code review, calidad                                             | Skills                                                        |
+| **Vision Review**                                 | Revisión estratégica                                             | Skills                                                        |
 
 ### Sistema de Hooks (6 activos)
 
-| Hook                                     | Trigger                                               | Script                                            | Función                                                                 |
-|------------------------------------------|-------------------------------------------------------|---------------------------------------------------|-------------------------------------------------------------------------|
-| PreToolUse                               | Antes de cada tool                                    | `pre_tool_use.py`                                 | Batería < 15%, bloquea `rm -rf`, protege `.env`                         |
-| PreToolUse                               | Antes de cada tool                                    | `csv-single-validator.py`                         | Valida estructura CSV                                                   |
-| PostToolUse                              | Después de modificar archivos                         | `post_tool_use.py`                                | Backup, voz cada 2 archivos                                             |
-| Stop                                     | Al cerrar sesión                                      | `stop.py`                                         | "Sesión finalizada"                                                     |
-| SubagentStop                             | Al terminar sub-agente                                | `subagent_stop.py`                                | "Subagente completado"                                                  |
-| UserPromptSubmit                         | Usuario envía mensaje                                 | `notification.py`                                 | Alerta + voz                                                            |
+| Hook                                             | Trigger                                                       | Script                                                    | Función                                                                         |
+|--------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------------------------------|
+| PreToolUse                                       | Antes de cada tool                                            | `pre_tool_use.py`                                         | Batería < 15%, bloquea `rm -rf`, protege `.env`                                 |
+| PreToolUse                                       | Antes de cada tool                                            | `csv-single-validator.py`                                 | Valida estructura CSV                                                           |
+| PostToolUse                                      | Después de modificar archivos                                 | `post_tool_use.py`                                        | Backup, voz cada 2 archivos                                                     |
+| Stop                                             | Al cerrar sesión                                              | `stop.py`                                                 | "Sesión finalizada"                                                             |
+| SubagentStop                                     | Al terminar sub-agente                                        | `subagent_stop.py`                                        | "Subagente completado"                                                          |
+| UserPromptSubmit                                 | Usuario envía mensaje                                         | `notification.py`                                         | Alerta + voz                                                                    |
 
 - --
 
@@ -272,15 +272,15 @@ python 08_Scripts_Os/08_Ritual_Cierre.py
 
 ### Commands
 
-| Alias                                | Type                             | Description                                             |
-|--------------------------------------|----------------------------------|---------------------------------------------------------|
-| gr                                   | dry-run                          | System Guardian validation only                         |
-| gra                                  | --apply                          | System Guardian + auto-fix                              |
-| gr-agents                            | --agents                         | 3 agents only (no validation)                           |
-| ce-commit                            | script                           | Safe commit with validation                             |
-| ce-guard                             | script                           | Commit guardrails                                       |
-| ce-audit                             | script                           | Engineering audit                                       |
-| ce-structure                         | script                           | Structure auditor                                       |
+| Alias                                        | Type                                     | Description                                                     |
+|----------------------------------------------|------------------------------------------|-----------------------------------------------------------------|
+| gr                                           | dry-run                                  | System Guardian validation only                                 |
+| gra                                          | --apply                                  | System Guardian + auto-fix                                      |
+| gr-agents                                    | --agents                                 | 3 agents only (no validation)                                   |
+| ce-commit                                    | script                                   | Safe commit with validation                                     |
+| ce-guard                                     | script                                   | Commit guardrails                                               |
+| ce-audit                                     | script                                   | Engineering audit                                               |
+| ce-structure                                 | script                                   | Structure auditor                                               |
 
 ### 3-Agents + Judge Methodology
 
@@ -321,11 +321,11 @@ PASO 9: 3 AGENTS + JUDGE
 
 ### Reglas de Tareas (SOTA/Media/Corta)
 
-| Tipo                              | Descripcion                                                                      | Tiempo                            |
-|-----------------------------------|----------------------------------------------------------------------------------|-----------------------------------|
-| **SOTA**                          | Investigación profunda, arquitectura, sistemas complejos                         | 2-4 horas                         |
-| **Media**                         | Features, refactoring, implementaciones                                          | 30-60 min                         |
-| **Corta**                         | Fixes, small changes                                                             | 5-15 min                          |
+| Tipo                                      | Descripcion                                                                              | Tiempo                                    |
+|-------------------------------------------|------------------------------------------------------------------------------------------|-------------------------------------------|
+| **SOTA**                                  | Investigación profunda, arquitectura, sistemas complejos                                 | 2-4 horas                                 |
+| **Media**                                 | Features, refactoring, implementaciones                                                  | 30-60 min                                 |
+| **Corta**                                 | Fixes, small changes                                                                     | 5-15 min                                  |
 
 - --
 
@@ -469,14 +469,14 @@ Think_Different/
 
 ## 📊 MÉTRICAS DEL SISTEMA
 
-| Métrica                                     | Valor                                            |
-|---------------------------------------------|--------------------------------------------------|
-| Skills Totales                              | 99 activas + ~200 backup                         |
-| Perfiles de Skills                          | 10                                               |
-| Hooks Activos                               | 6                                                |
-| Workflows                                   | 8+                                               |
-| MCPs Configurados                           | 35 servidores                                    |
-| Commit Más Reciente                         | `154ae06`                                        |
+| Métrica                                             | Valor                                                    |
+|-----------------------------------------------------|----------------------------------------------------------|
+| Skills Totales                                      | 99 activas + ~200 backup                                 |
+| Perfiles de Skills                                  | 10                                                       |
+| Hooks Activos                                       | 6                                                        |
+| Workflows                                           | 8+                                                       |
+| MCPs Configurados                                   | 35 servidores                                            |
+| Commit Más Reciente                                 | `154ae06`                                                |
 
 - --
 

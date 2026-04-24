@@ -47,13 +47,13 @@ Este documento establece las reglas de gobernanza, control de acceso y niveles d
 
 ### Matriz de Autonomía
 
-| Nivel       | Nombre         | Descripción              | Capacidad de Fix        | Requiere Confirmación        |
-|-------------|----------------|--------------------------|-------------------------|------------------------------|
-| **0**       | MANUAL         | Solo sugerencias         | NINGUNA                 | SIEMPRE                      |
-| **1**       | SUGGESTOR      | Sugiere y espera         | NINGUNA                 | SIEMPRE                      |
-| **2**       | ASSISTED       | Ejecuta si es seguro     | AUTO-FIX SÍ             | Si es riesgoso               |
-| **3**       | AUTONOMOUS     | Ejecuta con监督            | AUTO-FIX SÍ             | Solo críticos                |
-| **4**       | FULL           | Ejecución completa       | TODO                    | NUNCA*                       |
+| Nivel               | Nombre                 | Descripción                      | Capacidad de Fix                | Requiere Confirmación                |
+|---------------------|------------------------|----------------------------------|---------------------------------|--------------------------------------|
+| **0**               | MANUAL                 | Solo sugerencias                 | NINGUNA                         | SIEMPRE                              |
+| **1**               | SUGGESTOR              | Sugiere y espera                 | NINGUNA                         | SIEMPRE                              |
+| **2**               | ASSISTED               | Ejecuta si es seguro             | AUTO-FIX SÍ                     | Si es riesgoso                       |
+| **3**               | AUTONOMOUS             | Ejecuta con监督                    | AUTO-FIX SÍ                     | Solo críticos                        |
+| **4**               | FULL                   | Ejecución completa               | TODO                            | NUNCA*                               |
 
 > *Con limitaciones de seguridad activas
 
@@ -149,12 +149,12 @@ GUARDIAN:
 
 ### Clasificación de Archivos
 
-| Categoría                | Archivos                                                                         | Auto-Modificable        | Notas                            |
-|--------------------------|----------------------------------------------------------------------------------|-------------------------|----------------------------------|
-| 🔴 **PROTEGIDOS**         | `01_Personal_Os/11_AGENTS.md`, `00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md` | **NUNCA**               | Requiere intervención manual     |
-| 🟠 **RESTRINGIDOS**       | Configuraciones críticas, claves                                                 | Solo con aprobación     | Backup obligatorio               |
-| 🟡 **OPERACIONALES**      | Skills, scripts, docs                                                            | Nivel 2+ con backup     | Reversibles                      |
-| 🟢 **EVOLUCIONABLES**     | Logs, métricas, sugerencias                                                      | Nivel 3+                | Alta autonomía                   |
+| Categoría                        | Archivos                                                                                 | Auto-Modificable                | Notas                                    |
+|----------------------------------|------------------------------------------------------------------------------------------|---------------------------------|------------------------------------------|
+| 🔴 **PROTEGIDOS**                 | `01_Personal_Os/11_AGENTS.md`, `00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md`         | **NUNCA**                       | Requiere intervención manual             |
+| 🟠 **RESTRINGIDOS**               | Configuraciones críticas, claves                                                         | Solo con aprobación             | Backup obligatorio                       |
+| 🟡 **OPERACIONALES**              | Skills, scripts, docs                                                                    | Nivel 2+ con backup             | Reversibles                              |
+| 🟢 **EVOLUCIONABLES**             | Logs, métricas, sugerencias                                                              | Nivel 3+                        | Alta autonomía                           |
 
 ### Archivos Protegidos (Lista Explícita)
 
@@ -333,13 +333,13 @@ GOVERNANCE_CHANGE_PROCESS:
 
 ## 📈 Métricas de Gobernanza
 
-| Métrica                     | Target          | Medición       |
-|-----------------------------|-----------------|----------------|
-| Sugerencias aceptadas       | > 70%           | Sistema        |
-| Falsos positivos            | < 10%           | Usuario        |
-| Intervenciones manuales     | Decreciente     | Sistema        |
-| Time-to-approve             | < 24h           | Usuario        |
-| Incidentes de seguridad     | 0               | GGA            |
+| Métrica                             | Target                  | Medición               |
+|-------------------------------------|-------------------------|------------------------|
+| Sugerencias aceptadas               | > 70%                   | Sistema                |
+| Falsos positivos                    | < 10%                   | Usuario                |
+| Intervenciones manuales             | Decreciente             | Sistema                |
+| Time-to-approve                     | < 24h                   | Usuario                |
+| Incidentes de seguridad             | 0                       | GGA                    |
 
 ---
 

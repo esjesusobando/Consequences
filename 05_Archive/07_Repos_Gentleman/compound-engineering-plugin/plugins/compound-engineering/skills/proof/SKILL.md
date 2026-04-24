@@ -106,22 +106,22 @@ Requires Proof.app running. Bridge at `http://localhost:9847`.
 
 ### Key Endpoints
 
-| Method       | Endpoint                     | Purpose                                                                |
-|--------------|------------------------------|------------------------------------------------------------------------|
-| GET          | `/windows`                   | List open documents                                                    |
-| GET          | `/state`                     | Read markdown, cursor, word count                                      |
-| GET          | `/marks`                     | List all suggestions and comments                                      |
-| POST         | `/marks/suggest-replace`     | `{"quote":"old","by":"ai:<agent-name>","content":"new"}`               |
-| POST         | `/marks/suggest-insert`      | `{"quote":"after this","by":"ai:<agent-name>","content":"insert"}`     |
-| POST         | `/marks/suggest-delete`      | `{"quote":"delete this","by":"ai:<agent-name>"}`                       |
-| POST         | `/marks/comment`             | `{"quote":"text","by":"ai:<agent-name>","text":"comment"}`             |
-| POST         | `/marks/reply`               | `{"markId":"<id>","by":"ai:<agent-name>","text":"reply"}`              |
-| POST         | `/marks/resolve`             | `{"markId":"<id>","by":"ai:<agent-name>"}`                             |
-| POST         | `/marks/accept`              | `{"markId":"<id>"}`                                                    |
-| POST         | `/marks/reject`              | `{"markId":"<id>"}`                                                    |
-| POST         | `/rewrite`                   | `{"content":"full markdown","by":"ai:<agent-name>"}`                   |
-| POST         | `/presence`                  | `{"status":"reading","summary":"..."}`                                 |
-| GET          | `/events/pending`            | Poll for user actions                                                  |
+| Method               | Endpoint                             | Purpose                                                                        |
+|----------------------|--------------------------------------|--------------------------------------------------------------------------------|
+| GET                  | `/windows`                           | List open documents                                                            |
+| GET                  | `/state`                             | Read markdown, cursor, word count                                              |
+| GET                  | `/marks`                             | List all suggestions and comments                                              |
+| POST                 | `/marks/suggest-replace`             | `{"quote":"old","by":"ai:<agent-name>","content":"new"}`                       |
+| POST                 | `/marks/suggest-insert`              | `{"quote":"after this","by":"ai:<agent-name>","content":"insert"}`             |
+| POST                 | `/marks/suggest-delete`              | `{"quote":"delete this","by":"ai:<agent-name>"}`                               |
+| POST                 | `/marks/comment`                     | `{"quote":"text","by":"ai:<agent-name>","text":"comment"}`                     |
+| POST                 | `/marks/reply`                       | `{"markId":"<id>","by":"ai:<agent-name>","text":"reply"}`                      |
+| POST                 | `/marks/resolve`                     | `{"markId":"<id>","by":"ai:<agent-name>"}`                                     |
+| POST                 | `/marks/accept`                      | `{"markId":"<id>"}`                                                            |
+| POST                 | `/marks/reject`                      | `{"markId":"<id>"}`                                                            |
+| POST                 | `/rewrite`                           | `{"content":"full markdown","by":"ai:<agent-name>"}`                           |
+| POST                 | `/presence`                          | `{"status":"reading","summary":"..."}`                                         |
+| GET                  | `/events/pending`                    | Poll for user actions                                                          |
 
 ### Presence Statuses
 

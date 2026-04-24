@@ -31,14 +31,14 @@ Brainstorm -> Plan -> Work -> Review -> Compound -> Repeat
   Ideate (optional -- when you need ideas)
 ```
 
-| Command              | Purpose                                                                                            |
-|----------------------|----------------------------------------------------------------------------------------------------|
-| `/ce:ideate`         | Discover high-impact project improvements through divergent ideation and adversarial filtering     |
-| `/ce:brainstorm`     | Explore requirements and approaches before planning                                                |
-| `/ce:plan`           | Turn feature ideas into detailed implementation plans                                              |
-| `/ce:work`           | Execute plans with worktrees and task tracking                                                     |
-| `/ce:review`         | Multi-agent code review before merging                                                             |
-| `/ce:compound`       | Document learnings to make future work easier                                                      |
+| Command                      | Purpose                                                                                                    |
+|------------------------------|------------------------------------------------------------------------------------------------------------|
+| `/ce:ideate`                 | Discover high-impact project improvements through divergent ideation and adversarial filtering             |
+| `/ce:brainstorm`             | Explore requirements and approaches before planning                                                        |
+| `/ce:plan`                   | Turn feature ideas into detailed implementation plans                                                      |
+| `/ce:work`                   | Execute plans with worktrees and task tracking                                                             |
+| `/ce:review`                 | Multi-agent code review before merging                                                                     |
+| `/ce:compound`               | Document learnings to make future work easier                                                              |
 
 `/ce:brainstorm` is the main entry point -- it refines ideas into a requirements plan through interactive Q&A, and short-circuits automatically when ceremony isn't needed. `/ce:plan` takes either a requirements doc from brainstorming or a detailed idea and distills it into a technical plan that agents (or humans) can work from.
 
@@ -108,18 +108,18 @@ bunx @every-env/compound-plugin install compound-engineering --to all
 <details>
 <summary>Output format details per target</summary>
 
-| Target         | Output path                                                     | Notes                                                                                                                                                    |
-|----------------|-----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `opencode`     | `~/.config/opencode/`                                           | Commands as `.md` files; `opencode.json` MCP config deep-merged; backups made before overwriting                                                         |
-| `codex`        | `~/.codex/prompts` + `~/.codex/skills`                          | Claude commands become prompt + skill pairs; canonical `ce:*` workflow skills also get prompt wrappers; deprecated `workflows:*` aliases are omitted     |
-| `droid`        | `~/.factory/`                                                   | Tool names mapped (`Bash`->`Execute`, `Write`->`Create`); namespace prefixes stripped                                                                    |
-| `pi`           | `~/.pi/agent/`                                                  | Prompts, skills, extensions, and `mcporter.json` for MCPorter interoperability                                                                           |
-| `gemini`       | `.gemini/`                                                      | Skills from agents; commands as `.toml`; namespaced commands become directories (`workflows:plan` -> `commands/workflows/plan.toml`)                     |
-| `copilot`      | `.github/`                                                      | Agents as `.agent.md` with Copilot frontmatter; MCP env vars prefixed with `COPILOT_MCP_`                                                                |
-| `kiro`         | `.kiro/`                                                        | Agents as JSON configs + prompt `.md` files; only stdio MCP servers supported                                                                            |
-| `openclaw`     | `~/.openclaw/extensions/<plugin>/`                              | Entry-point TypeScript skill file; `openclaw-extension.json` for MCP servers                                                                             |
-| `windsurf`     | `~/.codeium/windsurf/` (global) or `.windsurf/` (workspace)     | Agents become skills; commands become flat workflows; `mcp_config.json` merged                                                                           |
-| `qwen`         | `~/.qwen/extensions/<plugin>/`                                  | Agents as `.yaml`; env vars with placeholders extracted as settings; colon separator for nested commands                                                 |
+| Target                 | Output path                                                             | Notes                                                                                                                                                            |
+|------------------------|-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `opencode`             | `~/.config/opencode/`                                                   | Commands as `.md` files; `opencode.json` MCP config deep-merged; backups made before overwriting                                                                 |
+| `codex`                | `~/.codex/prompts` + `~/.codex/skills`                                  | Claude commands become prompt + skill pairs; canonical `ce:*` workflow skills also get prompt wrappers; deprecated `workflows:*` aliases are omitted             |
+| `droid`                | `~/.factory/`                                                           | Tool names mapped (`Bash`->`Execute`, `Write`->`Create`); namespace prefixes stripped                                                                            |
+| `pi`                   | `~/.pi/agent/`                                                          | Prompts, skills, extensions, and `mcporter.json` for MCPorter interoperability                                                                                   |
+| `gemini`               | `.gemini/`                                                              | Skills from agents; commands as `.toml`; namespaced commands become directories (`workflows:plan` -> `commands/workflows/plan.toml`)                             |
+| `copilot`              | `.github/`                                                              | Agents as `.agent.md` with Copilot frontmatter; MCP env vars prefixed with `COPILOT_MCP_`                                                                        |
+| `kiro`                 | `.kiro/`                                                                | Agents as JSON configs + prompt `.md` files; only stdio MCP servers supported                                                                                    |
+| `openclaw`             | `~/.openclaw/extensions/<plugin>/`                                      | Entry-point TypeScript skill file; `openclaw-extension.json` for MCP servers                                                                                     |
+| `windsurf`             | `~/.codeium/windsurf/` (global) or `.windsurf/` (workspace)             | Agents become skills; commands become flat workflows; `mcp_config.json` merged                                                                                   |
+| `qwen`                 | `~/.qwen/extensions/<plugin>/`                                          | Agents as `.yaml`; env vars with placeholders extracted as settings; colon separator for nested commands                                                         |
 
 All provider targets are experimental and may change as the formats evolve.
 

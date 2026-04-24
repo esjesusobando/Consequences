@@ -54,25 +54,25 @@ Almacena **archivos obsoletos, repositorios de referencia legacy, y backups**. E
 
 ## 📚 Repositorios Clonados (18 total)
 
-| Repo                                    | Propósito                           | Estado          |
-|-----------------------------------------|-------------------------------------|-----------------|
-| **engram**                              | Memoria persistente (v1.10.4)       | ✅               |
-| **gentle-ai**                           | Ecosistema configurador (v1.7.18)   | ✅               |
-| **Gentleman.Dots**                      | Dotfiles + config (v2.9.2)          | ✅               |
-| **agent-teams-lite**                    | SDD workflow (v4.0.0+)              | ✅               |
-| **gentleman-guardian-angel**            | Code review AI (v2.7.3)             | ✅               |
-| **gentleman-skills**                    | Skills curadas                      | ✅               |
-| **taste-skill**                         | Diseño premium (Leonxlnx)           | ✅               |
-| **qmd**                                 | Búsqueda local híbrida              | ⚠️ NO clonado   |
-| **personal-os-main**                    | Original del fork                   | ✅               |
-| **n8n-skills-main**                     | Skills n8n                          | ✅               |
-| **compound-engineering-plugin**         | Compound Engineering                | ✅               |
-| **digitalgarden**                       | Obsidian Digital Garden             | ✅               |
-| **docling**                             | Document processing                 | ✅               |
-| **curso-ai-devs**                       | Curso AI Devs                       | ✅               |
-| **google-workspace-mcp-server-main**    | GCP MCP                             | ✅               |
-| **pi-vs-claude-code-main**              | Comparativa                         | ✅               |
-| **Kit Profesional Alto Impacto 2026**   | Material cursos                     | ✅               |
+| Repo                                            | Propósito                                   | Estado                  |
+|-------------------------------------------------|---------------------------------------------|-------------------------|
+| **engram**                                      | Memoria persistente (v1.10.4)               | ✅                       |
+| **gentle-ai**                                   | Ecosistema configurador (v1.7.18)           | ✅                       |
+| **Gentleman.Dots**                              | Dotfiles + config (v2.9.2)                  | ✅                       |
+| **agent-teams-lite**                            | SDD workflow (v4.0.0+)                      | ✅                       |
+| **gentleman-guardian-angel**                    | Code review AI (v2.7.3)                     | ✅                       |
+| **gentleman-skills**                            | Skills curadas                              | ✅                       |
+| **taste-skill**                                 | Diseño premium (Leonxlnx)                   | ✅                       |
+| **qmd**                                         | Búsqueda local híbrida                      | ⚠️ NO clonado           |
+| **personal-os-main**                            | Original del fork                           | ✅                       |
+| **n8n-skills-main**                             | Skills n8n                                  | ✅                       |
+| **compound-engineering-plugin**                 | Compound Engineering                        | ✅                       |
+| **digitalgarden**                               | Obsidian Digital Garden                     | ✅                       |
+| **docling**                                     | Document processing                         | ✅                       |
+| **curso-ai-devs**                               | Curso AI Devs                               | ✅                       |
+| **google-workspace-mcp-server-main**            | GCP MCP                                     | ✅                       |
+| **pi-vs-claude-code-main**                      | Comparativa                                 | ✅                       |
+| **Kit Profesional Alto Impacto 2026**           | Material cursos                             | ✅                       |
 
 ---
 

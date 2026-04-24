@@ -59,16 +59,16 @@ argument-hint: "[idea/tema del video - ej: cómo usar AI para marketing]"
 
 ## Skills Integradas
 
-| #   | Skill                              | Función          | Input          | Output                 |
-|-----|------------------------------------|------------------|----------------|------------------------|
-| 1   | Content Ideation                   | Generar ideas    | Tema           | 10 ideas con trending  |
-| 2   | Brand Voice Guardian               | Verificar brand  | Idea           | Aprobación de marca    |
-| 3   | Content Transformer                | Idea → Brief     | Idea aprobada  | Brief estructurado     |
-| 4   | Youtube Script Writer              | Brief → Guion    | Brief          | Guion + timestamps     |
-| 5   | Youtube Title Generator            | Guion → Títulos  | Guion          | 10+ títulos con scores |
-| 6   | Youtube Thumbnail Prompter         | Título → Prompts | Título + Guion | Prompts para AI        |
-| 7   | Nano Banana / Premium Image Studio | Generar imagen   | Prompt         | Imagen real            |
-| 8   | James Cameron (opcional)           | Video production | Guion          | Video completo         |
+| #           | Skill                                      | Función                  | Input                  | Output                         |
+|-------------|--------------------------------------------|--------------------------|------------------------|--------------------------------|
+| 1           | Content Ideation                           | Generar ideas            | Tema                   | 10 ideas con trending          |
+| 2           | Brand Voice Guardian                       | Verificar brand          | Idea                   | Aprobación de marca            |
+| 3           | Content Transformer                        | Idea → Brief             | Idea aprobada          | Brief estructurado             |
+| 4           | Youtube Script Writer                      | Brief → Guion            | Brief                  | Guion + timestamps             |
+| 5           | Youtube Title Generator                    | Guion → Títulos          | Guion                  | 10+ títulos con scores         |
+| 6           | Youtube Thumbnail Prompter                 | Título → Prompts         | Título + Guion         | Prompts para AI                |
+| 7           | Nano Banana / Premium Image Studio         | Generar imagen           | Prompt                 | Imagen real                    |
+| 8           | James Cameron (opcional)                   | Video production         | Guion                  | Video completo                 |
 
 ## Input Requerido
 

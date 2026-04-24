@@ -51,11 +51,11 @@ python 01_Core/03_Skills/mcp-client/scripts/mcp_client.py call <server> <tool> '
 
 ## Commands Reference
 
-| Command                             | Description                                |
-|-------------------------------------|--------------------------------------------|
-| `servers`                           | List all configured MCP servers            |
-| `tools <server>`                    | List tools with full parameter schemas     |
-| `call <server> <tool> '<json>'`     | Execute a tool with arguments              |
+| Command                                     | Description                                        |
+|---------------------------------------------|----------------------------------------------------|
+| `servers`                                   | List all configured MCP servers                    |
+| `tools <server>`                            | List tools with full parameter schemas             |
+| `call <server> <tool> '<json>'`             | Execute a tool with arguments                      |
 
 ## Example: Zapier
 

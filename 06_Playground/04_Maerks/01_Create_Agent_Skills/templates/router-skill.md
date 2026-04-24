@@ -30,11 +30,11 @@ What would you like to do?
 </intake>
 
 <routing>
-| Response              | Workflow                               |
-|-----------------------|----------------------------------------|
-| 1, "{{keywords}}"     | `workflows/{{first-workflow}}.md`      |
-| 2, "{{keywords}}"     | `workflows/{{second-workflow}}.md`     |
-| 3, "{{keywords}}"     | `workflows/{{third-workflow}}.md`      |
+| Response                      | Workflow                                       |
+|-------------------------------|------------------------------------------------|
+| 1, "{{keywords}}"             | `workflows/{{first-workflow}}.md`              |
+| 2, "{{keywords}}"             | `workflows/{{second-workflow}}.md`             |
+| 3, "{{keywords}}"             | `workflows/{{third-workflow}}.md`              |
 
 **After reading the workflow, follow it exactly.**
 </routing>
@@ -58,11 +58,11 @@ All in `references/`:
 
 All in `workflows/`:
 
-| Workflow                   | Purpose         |
-|----------------------------|-----------------|
-| {{first-workflow}}.md      | {{purpose}}     |
-| {{second-workflow}}.md     | {{purpose}}     |
-| {{third-workflow}}.md      | {{purpose}}     |
+| Workflow                           | Purpose                 |
+|------------------------------------|-------------------------|
+| {{first-workflow}}.md              | {{purpose}}             |
+| {{second-workflow}}.md             | {{purpose}}             |
+| {{third-workflow}}.md              | {{purpose}}             |
 </workflows_index>
 
 <success_criteria>

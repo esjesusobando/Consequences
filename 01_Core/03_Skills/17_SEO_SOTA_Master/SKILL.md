@@ -375,18 +375,18 @@ def predict_ranking_impact(changes: dict,
 ## 🔍 Technical SEO Audit: [Domain]
 
 ### Overall Health Score
-| Metric          | Score          | Status            |
-|-----------------|----------------|-------------------|
-| Technical       | 85/100         | ✅ Good            |
-| Content         | 72/100         | ⚠️ Needs Work     |
-| Authority       | 91/100         | ✅ Excellent       |
-| **Overall**     | **83/100**     | **✅ Pass**        |
+| Metric                  | Score                  | Status                    |
+|-------------------------|------------------------|---------------------------|
+| Technical               | 85/100                 | ✅ Good                    |
+| Content                 | 72/100                 | ⚠️ Needs Work             |
+| Authority               | 91/100                 | ✅ Excellent               |
+| **Overall**             | **83/100**             | **✅ Pass**                |
 
 ### Critical Issues (Fix First)
-| Issue         | Impact       | Effort       | Priority       |
-|---------------|--------------|--------------|----------------|
-| [Issue 1]     | High         | Low          | P0             |
-| [Issue 2]     | High         | Medium       | P0             |
+| Issue                 | Impact               | Effort               | Priority               |
+|-----------------------|----------------------|----------------------|------------------------|
+| [Issue 1]             | High                 | Low                  | P0                     |
+| [Issue 2]             | High                 | Medium               | P0                     |
 
 ### Quick Wins (This Week)
 - [ ] Optimize [X] title tags
@@ -408,11 +408,11 @@ def predict_ranking_impact(changes: dict,
 ## 📝 Content Strategy: [Domain]
 
 ### Content Gaps
-| Topic         | Search Volume      | Difficulty       | Opportunity       |
-|---------------|--------------------|------------------|-------------------|
-| [Topic 1]     | 10,000             | Low              | 🔥 Quick Win       |
-| [Topic 2]     | 5,000              | Medium           | 📅 Plan            |
-| [Topic 3]     | 2,000              | High             | 📅 Future          |
+| Topic                 | Search Volume              | Difficulty               | Opportunity               |
+|-----------------------|----------------------------|--------------------------|---------------------------|
+| [Topic 1]             | 10,000                     | Low                      | 🔥 Quick Win               |
+| [Topic 2]             | 5,000                      | Medium                   | 📅 Plan                    |
+| [Topic 3]             | 2,000                      | High                     | 📅 Future                  |
 
 ### Content Clusters to Build
 1. **[Core Topic]**
@@ -424,10 +424,10 @@ def predict_ranking_impact(changes: dict,
    - Supporting: ...
 
 ### Content Calendar
-| Week       | Topic       | Type       | Target Keywords       |
-|------------|-------------|------------|-----------------------|
-| 1          | [Topic]     | Guide      | [kw1], [kw2]          |
-| 2          | [Topic]     | FAQ        | [kw3]                 |
+| Week               | Topic               | Type               | Target Keywords               |
+|--------------------|---------------------|--------------------|-------------------------------|
+| 1                  | [Topic]             | Guide              | [kw1], [kw2]                  |
+| 2                  | [Topic]             | FAQ                | [kw3]                         |
 ```
 
 ### Template 3: Programmatic SEO Plan
@@ -473,12 +473,12 @@ def predict_ranking_impact(changes: dict,
 
 ### 2. Prioritize by Impact
 
-| Priority       | Impact       | Effort       | Example                        |
-|----------------|--------------|--------------|--------------------------------|
-| P0             | High         | Low          | Fix 404s, add meta tags        |
-| P1             | High         | Medium       | Content refresh, schema        |
-| P2             | Medium       | Medium       | New content, link building     |
-| P3             | Low          | High         | Site rebuild                   |
+| Priority               | Impact               | Effort               | Example                                |
+|------------------------|----------------------|----------------------|----------------------------------------|
+| P0                     | High                 | Low                  | Fix 404s, add meta tags                |
+| P1                     | High                 | Medium               | Content refresh, schema                |
+| P2                     | Medium               | Medium               | New content, link building             |
+| P3                     | Low                  | High                 | Site rebuild                           |
 
 ### 3. Track Everything
 
@@ -524,13 +524,13 @@ Always add:
 
 ## Common Pitfalls
 
-| Pitfall                  | Why It Fails                               | Fix                              |
-|--------------------------|--------------------------------------------|----------------------------------|
-| Ignoring technical       | Content can't rank if site can't crawl     | Audit technical first            |
-| No segmentation          | Aggregate data hides opportunities         | Segment by page type             |
-| No testing               | Assumptions aren't facts                   | A/B test everything              |
-| Programmatic spam        | Low quality at scale                       | Quality gates on generation      |
-| Ignoring user intent     | Ranking but no conversions                 | Match intent to content type     |
+| Pitfall                          | Why It Fails                                       | Fix                                      |
+|----------------------------------|----------------------------------------------------|------------------------------------------|
+| Ignoring technical               | Content can't rank if site can't crawl             | Audit technical first                    |
+| No segmentation                  | Aggregate data hides opportunities                 | Segment by page type                     |
+| No testing                       | Assumptions aren't facts                           | A/B test everything                      |
+| Programmatic spam                | Low quality at scale                               | Quality gates on generation              |
+| Ignoring user intent             | Ranking but no conversions                         | Match intent to content type             |
 
 ---
 

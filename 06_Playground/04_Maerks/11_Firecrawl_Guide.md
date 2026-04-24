@@ -8,11 +8,11 @@
 
 ## 🎯 El Problema: AI es CIEGO
 
-| Problema                                         | Solución                         |
-|--------------------------------------------------|----------------------------------|
-| AI es inteligente pero no puede ver internet     | Firecrawl le da ojos y manos     |
-| No puede ir a websites                           | Scraping con 1 línea de API      |
-| No puede obtener datos                           | Datos limpios en segundos        |
+| Problema                                                 | Solución                                 |
+|----------------------------------------------------------|------------------------------------------|
+| AI es inteligente pero no puede ver internet             | Firecrawl le da ojos y manos             |
+| No puede ir a websites                                   | Scraping con 1 línea de API              |
+| No puede obtener datos                                   | Datos limpios en segundos                |
 
 ---
 
@@ -29,14 +29,14 @@
 
 ## ⚡ Los 6 Superpoderes de Firecrawl
 
-| #       | Superpoder      | Descripción                               | Ejemplo                           |
-|---------|-----------------|-------------------------------------------|-----------------------------------|
-| 1       | **Scrape**      | 1 página → clean markdown                 | Blog post → markdown              |
-| 2       | **Crawl**       | Sitio completo automáticamente            | CNN.com → todos los artículos     |
-| 3       | **Map**         | Mapear todas las URLs de un dominio       | URLs con metadatos                |
-| 4       | **Search**      | Buscar en Google → contenido completo     | "Cuban restaurants Miami"         |
-| 5       | **Agent**       | Describir datos → encuentra               | "50 mejores restaurantes"         |
-| 6       | **Browser**     | Controla navegador real                   | Login, forms, paginación          |
+| #               | Superpoder              | Descripción                                       | Ejemplo                                   |
+|-----------------|-------------------------|---------------------------------------------------|-------------------------------------------|
+| 1               | **Scrape**              | 1 página → clean markdown                         | Blog post → markdown                      |
+| 2               | **Crawl**               | Sitio completo automáticamente                    | CNN.com → todos los artículos             |
+| 3               | **Map**                 | Mapear todas las URLs de un dominio               | URLs con metadatos                        |
+| 4               | **Search**              | Buscar en Google → contenido completo             | "Cuban restaurants Miami"                 |
+| 5               | **Agent**               | Describir datos → encuentra                       | "50 mejores restaurantes"                 |
+| 6               | **Browser**             | Controla navegador real                           | Login, forms, paginación                  |
 
 ---
 
@@ -64,14 +64,14 @@
 
 ## 💰 6 Ideas de NEGOCIO (Revenue Models)
 
-| #       | Idea                       | Nicho                    | Precio             | Costo       | Margen       |
-|---------|----------------------------|--------------------------|--------------------|-------------|--------------|
-| 1       | **Price Monitoring**       | Sneakers resell          | $50-500/mo         | ~$10        | 80-90%       |
-| 2       | **SEO Gap Finder**         | Dentists                 | $200-500/mo        | ~$20        | 90%          |
-| 3       | **Job Aggregation**        | Remote AI/ML             | $29/mo             | ~$5         | 80%          |
-| 4       | **Research Reports**       | Crypto due diligence     | $1k-5k/mo          | ~$50        | 95%          |
-| 5       | **Amazon FBA Tracker**     | Product gaps             | $99/mo             | ~$10        | 90%          |
-| 6       | **Lead Gen**               | Company enrichment       | $100-500/batch     | ~$2         | 98%          |
+| #               | Idea                               | Nicho                            | Precio                     | Costo               | Margen               |
+|-----------------|------------------------------------|----------------------------------|----------------------------|---------------------|----------------------|
+| 1               | **Price Monitoring**               | Sneakers resell                  | $50-500/mo                 | ~$10                | 80-90%               |
+| 2               | **SEO Gap Finder**                 | Dentists                         | $200-500/mo                | ~$20                | 90%                  |
+| 3               | **Job Aggregation**                | Remote AI/ML                     | $29/mo                     | ~$5                 | 80%                  |
+| 4               | **Research Reports**               | Crypto due diligence             | $1k-5k/mo                  | ~$50                | 95%                  |
+| 5               | **Amazon FBA Tracker**             | Product gaps                     | $99/mo                     | ~$10                | 90%                  |
+| 6               | **Lead Gen**                       | Company enrichment               | $100-500/batch             | ~$2                 | 98%                  |
 
 ---
 
@@ -124,24 +124,24 @@
 
 ## 🧠 AI Stack Personal (Del Video)
 
-| Capa                   | Herramienta                  |
-|------------------------|------------------------------|
-| Agent Harness          | Claude Code, Cursor, IDE     |
-| Search Layer           | Perplexity, Exa              |
-| **Web Data Layer**     | **Firecrawl**                |
-| Ops Brain              | Notion, Obsidian             |
-| Outbound               | Instantly, Apollo            |
+| Capa                           | Herramienta                          |
+|--------------------------------|--------------------------------------|
+| Agent Harness                  | Claude Code, Cursor, IDE             |
+| Search Layer                   | Perplexity, Exa                      |
+| **Web Data Layer**             | **Firecrawl**                        |
+| Ops Brain                      | Notion, Obsidian                     |
+| Outbound                       | Instantly, Apollo                    |
 
 ---
 
 ## 📊 Conceptos Clave
 
-| Término                   | Definición                                   |
-|---------------------------|----------------------------------------------|
-| Clean structured data     | El nuevo petróleo                            |
-| Vertical software         | Nichos específicos > horizontal genérico     |
-| 1 API call                | Reemplaza miles de líneas de código          |
-| Browser Sandbox           | Form fill, login, paginación, sesiones       |
+| Término                           | Definición                                           |
+|-----------------------------------|------------------------------------------------------|
+| Clean structured data             | El nuevo petróleo                                    |
+| Vertical software                 | Nichos específicos > horizontal genérico             |
+| 1 API call                        | Reemplaza miles de líneas de código                  |
+| Browser Sandbox                   | Form fill, login, paginación, sesiones               |
 
 ---
 

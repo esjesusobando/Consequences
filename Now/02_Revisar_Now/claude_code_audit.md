@@ -10,14 +10,14 @@
 
 ## 📊 Resumen Ejecutivo
 
-| Categoría                            | Issues   | Severidad   | Estado         |
-|--------------------------------------|----------|-------------|----------------|
-| 🔴 Git Submodule Fantasma             | 1        | **CRÍTICO** | ✅ RESUELTO     |
-| 🟠 Gitmodules → Paths Inexistentes    | 4        | **ALTO**    | ✅ YA ESTABA OK |
-| 🟡 Reglas Triplicadas (3 directorios) | 22+      | **MEDIO**   | ✅ RESpaldo OK  |
-| 🟡 Agentes Duplicados                 | 3        | **MEDIO**   | ⏸️ DEJADO      |
-| 🟡 Permisos Obsoletos                 | 6+       | **BAJO**    | ⏸️ DEJADO      |
-| 🟢 Docker MCP                         | 1        | **BAJO**    | ✅ YA ESTÁ OK   |
+| Categoría                                  | Issues         | Severidad         | Estado               |
+|--------------------------------------------|----------------|-------------------|----------------------|
+| 🔴 Git Submodule Fantasma                   | 1              | **CRÍTICO**       | ✅ RESUELTO           |
+| 🟠 Gitmodules → Paths Inexistentes          | 4              | **ALTO**          | ✅ YA ESTABA OK       |
+| 🟡 Reglas Triplicadas (3 directorios)       | 22+            | **MEDIO**         | ✅ RESpaldo OK        |
+| 🟡 Agentes Duplicados                       | 3              | **MEDIO**         | ⏸️ DEJADO            |
+| 🟡 Permisos Obsoletos                       | 6+             | **BAJO**          | ⏸️ DEJADO            |
+| 🟢 Docker MCP                               | 1              | **BAJO**          | ✅ YA ESTÁ OK         |
 
 **Todos los issues procesables: ✅ RESUELTOS**
 
@@ -51,12 +51,12 @@ git commit -m "fix: remove orphan submodule entry for 07_Backup_OIM"
 
 ### Paths en `.gitmodules` que NO existen en disco:
 
-| Submodule              | Path en `.gitmodules`                      | ¿Existe?   |
-|------------------------|--------------------------------------------|------------|
-| `gentle-ai`            | `03_Resources_External/External/gentle-ai` | ❌ **NO**   |
-| `cursor-ide`           | `Momentum_Os/cursor-ide`                   | ❌ **NO**   |
-| `claude-code`          | `Momentum_Os/claude-code`                  | ❌ **NO**   |
-| `compound-engineering` | `Every_Sync_Zone`                          | ❌ **NO**   |
+| Submodule                    | Path en `.gitmodules`                            | ¿Existe?         |
+|------------------------------|--------------------------------------------------|------------------|
+| `gentle-ai`                  | `03_Resources_External/External/gentle-ai`       | ❌ **NO**         |
+| `cursor-ide`                 | `Momentum_Os/cursor-ide`                         | ❌ **NO**         |
+| `claude-code`                | `Momentum_Os/claude-code`                        | ❌ **NO**         |
+| `compound-engineering`       | `Every_Sync_Zone`                                | ❌ **NO**         |
 
 ### Impacto
 - Claude Code / Git puede intentar resolver estos submodules al startup y fallar silenciosamente
@@ -83,16 +83,16 @@ git commit -m "fix: remove orphan submodule entries from .gitmodules"
 ### El Problema
 Las reglas `.mdc` existen en **tres** lugares con variaciones:
 
-| #      | `.claude/02_Rules/`       | `.agent/00_Rules/`           | `01_Core/01_Rules/`             | Estado                 |
-|--------|---------------------------|------------------------------|---------------------------------|------------------------|
-| 01-04  | ✅                         | ✅                            | ✅                               | Triple redundancia     |
-| **05** | `05_ritual-integrity.mdc` | `05_Ritual_Integrity.mdc`    | `05_ritual-integrity.mdc`       | ⚠️ **Naming mismatch** |
-| 06-11  | ✅                         | ✅                            | ✅                               | Triple redundancia     |
-| **12** | `12_Nexus-Routing.mdc`    | `12_Nexus_Routing.mdc`       | `12_Nexus-Routing.mdc`          | ⚠️ **Naming mismatch** |
-| 13-22  | ✅                         | ✅                            | ✅                               | Triple redundancia     |
-| **23** | ❌                         | ✅ `23_Skill_System_SOTA.mdc` | ✅ `23_Skill_System_SOTA.mdc`    | ⚠️ Falta en `.claude`  |
-| **24** | ❌                         | ❌                            | ✅ `24_Token_Economy.mdc`        | ⚠️ Solo en Core        |
-| **25** | ❌                         | ❌                            | ✅ `25_Agent_Teams_Protocol.mdc` | ⚠️ Solo en Core        |
+| #            | `.claude/02_Rules/`             | `.agent/00_Rules/`                 | `01_Core/01_Rules/`                   | Estado                       |
+|--------------|---------------------------------|------------------------------------|---------------------------------------|------------------------------|
+| 01-04        | ✅                               | ✅                                  | ✅                                     | Triple redundancia           |
+| **05**       | `05_ritual-integrity.mdc`       | `05_Ritual_Integrity.mdc`          | `05_ritual-integrity.mdc`             | ⚠️ **Naming mismatch**       |
+| 06-11        | ✅                               | ✅                                  | ✅                                     | Triple redundancia           |
+| **12**       | `12_Nexus-Routing.mdc`          | `12_Nexus_Routing.mdc`             | `12_Nexus-Routing.mdc`                | ⚠️ **Naming mismatch**       |
+| 13-22        | ✅                               | ✅                                  | ✅                                     | Triple redundancia           |
+| **23**       | ❌                               | ✅ `23_Skill_System_SOTA.mdc`       | ✅ `23_Skill_System_SOTA.mdc`          | ⚠️ Falta en `.claude`        |
+| **24**       | ❌                               | ❌                                  | ✅ `24_Token_Economy.mdc`              | ⚠️ Solo en Core              |
+| **25**       | ❌                               | ❌                                  | ✅ `25_Agent_Teams_Protocol.mdc`       | ⚠️ Solo en Core              |
 
 ### Issues Específicos
 1. **Naming inconsistente**: `.agent/` usa `Underscores` mientras `.claude/` y `01_Core/` usan `hyphens` para las reglas 05 y 12
@@ -108,11 +108,11 @@ Definir **un solo source of truth** (sugerido: `01_Core/01_Rules/`) y hacer que 
 
 ### Duplicados Encontrados en `.claude/03_Agents/`:
 
-| Archivo Numerado              | Archivo Sin Número         | ¿Contenido Idéntico?    |
-|-------------------------------|----------------------------|-------------------------|
-| `10_Workflow_Orchestrator.md` | `workflow-orchestrator.md` | ✅ **EXACTO**            |
-| `11_AIPM_Judge.md`            | `aipm-judge.md`            | ✅ **EXACTO**            |
-| `12_LFG_Autonomous_Engine.md` | `lfg.md`                   | ✅ **EXACTO**            |
+| Archivo Numerado                    | Archivo Sin Número               | ¿Contenido Idéntico?          |
+|-------------------------------------|----------------------------------|-------------------------------|
+| `10_Workflow_Orchestrator.md`       | `workflow-orchestrator.md`       | ✅ **EXACTO**                  |
+| `11_AIPM_Judge.md`                  | `aipm-judge.md`                  | ✅ **EXACTO**                  |
+| `12_LFG_Autonomous_Engine.md`       | `lfg.md`                         | ✅ **EXACTO**                  |
 
 ### Impacto
 - Claude Code puede cargar ambas versiones, duplicando tokens de contexto innecesariamente
@@ -132,14 +132,14 @@ rm .claude/03_Agents/lfg.md
 
 ### Paths Muertos en `permissions.allow`:
 
-| Permiso                                                       | Path Referenciado   | ¿Existe?                         |
-|---------------------------------------------------------------|---------------------|----------------------------------|
-| `Read(New_Skills/**)`                                         | `New_Skills/`       | ❌ **NO**                         |
-| `Bash(unzip ... New_Skills/content-ideation.skill)`           | `New_Skills/`       | ❌ **NO**                         |
-| `Bash(unzip ... New_Skills/video-prompt-builder.skill)`       | `New_Skills/`       | ❌ **NO**                         |
-| `Bash(unzip ... New_Skills/offer-and-bio-writer.skill)`       | `New_Skills/`       | ❌ **NO**                         |
-| `Read(/tmp/**)`                                               | temp paths          | ⚠️ Irrelevante en Windows        |
-| `additionalDirectories: \tmp\video_prompt_extract\references` | `/tmp/...`          | ❌ **NO** (Linux path en Windows) |
+| Permiso                                                             | Path Referenciado         | ¿Existe?                               |
+|---------------------------------------------------------------------|---------------------------|----------------------------------------|
+| `Read(New_Skills/**)`                                               | `New_Skills/`             | ❌ **NO**                               |
+| `Bash(unzip ... New_Skills/content-ideation.skill)`                 | `New_Skills/`             | ❌ **NO**                               |
+| `Bash(unzip ... New_Skills/video-prompt-builder.skill)`             | `New_Skills/`             | ❌ **NO**                               |
+| `Bash(unzip ... New_Skills/offer-and-bio-writer.skill)`             | `New_Skills/`             | ❌ **NO**                               |
+| `Read(/tmp/**)`                                                     | temp paths                | ⚠️ Irrelevante en Windows              |
+| `additionalDirectories: \tmp\video_prompt_extract\references`       | `/tmp/...`                | ❌ **NO** (Linux path en Windows)       |
 
 ### Impacto
 - Los permisos no causan errores de startup pero ensucian la config
@@ -206,16 +206,16 @@ Mover todas las keys a variables de entorno o a un `.env` file que esté en `.gi
 
 ## ✅ Lo que Funciona Correctamente
 
-| Componente                                      | Estado                                    |
-|-------------------------------------------------|-------------------------------------------|
-| Todos los Hook scripts                          | ✅ Existen y accesibles                    |
-| Documentos del sistema (GOALS, BACKLOG, AGENTS) | ✅ Completos                               |
-| Hub Scripts (00-05)                             | ✅ Todos presentes                         |
-| Skills del Core (01_Core/03_Skills)             | ✅ Operativos                              |
-| Submodules en `05_Archive/07_Repos_Gentleman/`  | ✅ Todos (8/8) presentes                   |
-| MCP binaries: engram, qmd, npx, openpencil      | ✅ Disponibles                             |
-| Obsidian & Excalidraw vaults                    | ✅ Accesibles                              |
-| Git status                                      | ✅ Limpio (solo `Plan_Rules.md` untracked) |
+| Componente                                            | Estado                                          |
+|-------------------------------------------------------|-------------------------------------------------|
+| Todos los Hook scripts                                | ✅ Existen y accesibles                          |
+| Documentos del sistema (GOALS, BACKLOG, AGENTS)       | ✅ Completos                                     |
+| Hub Scripts (00-05)                                   | ✅ Todos presentes                               |
+| Skills del Core (01_Core/03_Skills)                   | ✅ Operativos                                    |
+| Submodules en `05_Archive/07_Repos_Gentleman/`        | ✅ Todos (8/8) presentes                         |
+| MCP binaries: engram, qmd, npx, openpencil            | ✅ Disponibles                                   |
+| Obsidian & Excalidraw vaults                          | ✅ Accesibles                                    |
+| Git status                                            | ✅ Limpio (solo `Plan_Rules.md` untracked)       |
 
 ---
 
@@ -223,31 +223,31 @@ Mover todas las keys a variables de entorno o a un `.env` file que esté en `.gi
 
 ### ✅ COMPLETADO (v1.0 ALFA)
 
-| #   | Issue              | Estado   | Fix Aplicado                                         |
-|-----|--------------------|----------|------------------------------------------------------|
-| 1   | Submodule Fantasma | ✅ FIXED  | `git rm --cached 07_Projects/...` (pendiente commit) |
-| 3   | Reglas Triplicadas | ✅ FIXED  | Consolidado 23→8 archivos en ambas carpetas          |
+| #         | Issue                    | Estado         | Fix Aplicado                                               |
+|-----------|--------------------------|----------------|------------------------------------------------------------|
+| 1         | Submodule Fantasma       | ✅ FIXED        | `git rm --cached 07_Projects/...` (pendiente commit)       |
+| 3         | Reglas Triplicadas       | ✅ FIXED        | Consolidado 23→8 archivos en ambas carpetas                |
 
 ### ⏸️ PENDIENTE
 
-| #   | Issue              | Severidad   | Notas                               |
-|-----|--------------------|-------------|-------------------------------------|
-| 2   | Gitmodules paths   | ALTO        | 12 entries sin verificar            |
-| 4   | Agentes duplicados | MEDIO       | 18 archivos en `.claude/03_Agents/` |
-| 5   | Permisos obsoletos | BAJO        | `.claude/settings.json`             |
-| 6   | Docker MCP         | BAJO        | Deshabilitar si no se usa           |
-| 7   | API Keys           | SEGURIDAD   | Mover a entorno                     |
+| #         | Issue                    | Severidad         | Notas                                     |
+|-----------|--------------------------|-------------------|-------------------------------------------|
+| 2         | Gitmodules paths         | ALTO              | 12 entries sin verificar                  |
+| 4         | Agentes duplicados       | MEDIO             | 18 archivos en `.claude/03_Agents/`       |
+| 5         | Permisos obsoletos       | BAJO              | `.claude/settings.json`                   |
+| 6         | Docker MCP               | BAJO              | Deshabilitar si no se usa                 |
+| 7         | API Keys                 | SEGURIDAD         | Mover a entorno                           |
 
 ---
 
 ### 📦 v1.0 ALFA — Estado Final (2026-04-20)
 
-| Componente        | Antes    | Después             |
-|-------------------|----------|---------------------|
-| Reglas activas    | 23+      | **8**               |
-| Scripts en skills | 12       | **24**              |
-| Tests             | —        | **100%**            |
-| Git submodule     | Fantasma | ⏸️ Pendiente commit |
+| Componente              | Antes          | Después                   |
+|-------------------------|----------------|---------------------------|
+| Reglas activas          | 23+            | **8**                     |
+| Scripts en skills       | 12             | **24**                    |
+| Tests                   | —              | **100%**                  |
+| Git submodule           | Fantasma       | ⏸️ Pendiente commit       |
 
 ---
 

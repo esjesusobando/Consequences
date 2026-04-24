@@ -40,18 +40,18 @@ tags: []
 
 ## Affected Areas
 
-| Area                                                              | Impact       | Description                           |
-|-------------------------------------------------------------------|--------------|---------------------------------------|
-| `06_Playground/Hillary_Life_OS_Lab/01_Quick_Capture/SKILL.md`     | New          | Skill principal de captura            |
-| `06_Playground/Hillary_Life_OS_Lab/01_Quick_Capture/inbox/`       | New          | Directorio para tareas capturadas     |
-| `.atl/openspec/changes/quick-capture/proposal.md`                 | New          | Este documento                        |
+| Area                                                                      | Impact               | Description                                   |
+|---------------------------------------------------------------------------|----------------------|-----------------------------------------------|
+| `06_Playground/Hillary_Life_OS_Lab/01_Quick_Capture/SKILL.md`             | New                  | Skill principal de captura                    |
+| `06_Playground/Hillary_Life_OS_Lab/01_Quick_Capture/inbox/`               | New                  | Directorio para tareas capturadas             |
+| `.atl/openspec/changes/quick-capture/proposal.md`                         | New                  | Este documento                                |
 
 ## Risks
 
-| Risk                            | Likelihood       | Mitigation                                    |
-|---------------------------------|------------------|-----------------------------------------------|
-| Nombre de archivo duplicado     | Low              | Usar timestamp único en nombre de archivo     |
-| YAML inválido                   | Low              | Validar frontmatter antes de escribir         |
+| Risk                                    | Likelihood               | Mitigation                                            |
+|-----------------------------------------|--------------------------|-------------------------------------------------------|
+| Nombre de archivo duplicado             | Low                      | Usar timestamp único en nombre de archivo             |
+| YAML inválido                           | Low                      | Validar frontmatter antes de escribir                 |
 
 ## Rollback Plan
 

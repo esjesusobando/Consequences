@@ -23,12 +23,12 @@
 
 ### Auditores con Benchmarks Desactualizados ⚠️
 
-| Auditor | Problema | Prioridad |
-|---------|----------|-----------|
-| `15_SOTA_Integrity_Check.py` | Espera 25 rules (hay 10), busca SKILL.md en raíz wrong | P0 |
-| `33_Parallel_Audit_Pro.py` | Paths old hardcodeados a `.backup/` | P1 |
-| `80_Edge_Case_Validator.py` | REQUIRED_DIRS apunta estructura old (00_Core, 01_Brain) | P1 |
-| `34_Skill_Auditor.py` | Funciona OK, detecta conflictos N8N numeración | P2 |
+| Auditor                            | Problema                                                      | Prioridad         |
+|------------------------------------|---------------------------------------------------------------|-------------------|
+| `15_SOTA_Integrity_Check.py`       | Espera 25 rules (hay 10), busca SKILL.md en raíz wrong        | P0                |
+| `33_Parallel_Audit_Pro.py`         | Paths old hardcodeados a `.backup/`                           | P1                |
+| `80_Edge_Case_Validator.py`        | REQUIRED_DIRS apunta estructura old (00_Core, 01_Brain)       | P1                |
+| `34_Skill_Auditor.py`              | Funciona OK, detecta conflictos N8N numeración                | P2                |
 
 ### Bloqueos Activos
 

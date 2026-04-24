@@ -31,9 +31,9 @@ The practical difference is significant: the same model that produces truncated 
 
 Purpose-built CLI tools (Gemini CLI, Claude Code, third-party wrappers) offer additional advantages for avoiding truncation:
 
-| Access Method                                  | Context Handling                                | Truncation Risk                 | Parameter Control                 |
-|------------------------------------------------|-------------------------------------------------|---------------------------------|-----------------------------------|
-| Consumer web app                               | Aggressive pruning, 32K cap                     | High                            | Limited                           |
-| Developer platform (AI Studio)                 | Full context, no hidden slicing                 | Low                             | Full                              |
-| Direct API                                     | Full context, raw access                        | Minimal                         | Full                              |
-| CLI tools with local models                    | No corporate alignment filters                  | None                            | Full                              |
+| Access Method                                          | Context Handling                                        | Truncation Risk                         | Parameter Control                         |
+|--------------------------------------------------------|---------------------------------------------------------|-----------------------------------------|-------------------------------------------|
+| Consumer web app                                       | Aggressive pruning, 32K cap                             | High                                    | Limited                                   |
+| Developer platform (AI Studio)                         | Full context, no hidden slicing                         | Low                                     | Full                                      |
+| Direct API                                             | Full context, raw access                                | Minimal                                 | Full                                      |
+| CLI tools with local models                            | No corporate alignment filters                          | None                                    | Full                                      |

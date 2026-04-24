@@ -27,33 +27,33 @@
 ## STACK SOTA 2026
 
 ### Core
-| Tecnologia     | Version     | Por que                                         |
-|----------------|-------------|-------------------------------------------------|
-| Next.js        | 15          | App Router, PPR, Partial Pre-rendering          |
-| React          | 19          | Server Components, use() hook, Server Actions   |
-| TypeScript     | 5 strict    | Const types pattern, zero any                   |
-| Tailwind CSS   | 4           | CSS-first config, @theme directive              |
+| Tecnologia           | Version           | Por que                                               |
+|----------------------|-------------------|-------------------------------------------------------|
+| Next.js              | 15                | App Router, PPR, Partial Pre-rendering                |
+| React                | 19                | Server Components, use() hook, Server Actions         |
+| TypeScript           | 5 strict          | Const types pattern, zero any                         |
+| Tailwind CSS         | 4                 | CSS-first config, @theme directive                    |
 
 ### CMS + DB
-| Tecnologia       | Por que                                                |
-|------------------|--------------------------------------------------------|
-| Payload CMS v3   | TypeScript-native, panel cliente, sin vendor lock-in   |
-| Drizzle ORM      | TS-first, mas liviano que Prisma                       |
-| Neon             | PostgreSQL serverless, escala a cero                   |
+| Tecnologia             | Por que                                                      |
+|------------------------|--------------------------------------------------------------|
+| Payload CMS v3         | TypeScript-native, panel cliente, sin vendor lock-in         |
+| Drizzle ORM            | TS-first, mas liviano que Prisma                             |
+| Neon                   | PostgreSQL serverless, escala a cero                         |
 
 ### Features
-| Tecnologia                | Uso                                      |
-|---------------------------|------------------------------------------|
-| Better Auth               | Auth admin panel - reemplaza NextAuth    |
-| Resend + React Email      | Emails cotizacion, confirmaciones        |
-| Uploadthing               | Upload fotos inventario                  |
-| Cloudinary                | Optimizacion imagenes                    |
-| React Hook Form + Zod 4   | Validacion forms                         |
-| Meilisearch               | Busqueda inventario typo-tolerant        |
-| Claude API + AI SDK 5     | Asistente cotizacion conversacional IA   |
-| Vercel                    | Deploy + Edge Network + Analytics        |
-| Vitest + Playwright       | Unit + E2E testing                       |
-| Schema.org JSON-LD        | LocalBusiness + Product SEO              |
+| Tecnologia                      | Uso                                            |
+|---------------------------------|------------------------------------------------|
+| Better Auth                     | Auth admin panel - reemplaza NextAuth          |
+| Resend + React Email            | Emails cotizacion, confirmaciones              |
+| Uploadthing                     | Upload fotos inventario                        |
+| Cloudinary                      | Optimizacion imagenes                          |
+| React Hook Form + Zod 4         | Validacion forms                               |
+| Meilisearch                     | Busqueda inventario typo-tolerant              |
+| Claude API + AI SDK 5           | Asistente cotizacion conversacional IA         |
+| Vercel                          | Deploy + Edge Network + Analytics              |
+| Vitest + Playwright             | Unit + E2E testing                             |
+| Schema.org JSON-LD              | LocalBusiness + Product SEO                    |
 
 ---
 
@@ -71,19 +71,19 @@
 
 ## SKILLS PERSONALOS USADOS EN AOLI
 
-| Skill            | Path                            | Uso                    |
-|------------------|---------------------------------|------------------------|
-| Next.js 15       | 05_Vibe_Coding/02_Nextjs_15/    | Framework principal    |
-| React 19         | 05_Vibe_Coding/01_React_19/     | Server Components      |
-| TypeScript       | 05_Vibe_Coding/05_TypeScript/   | Todo el codebase       |
-| Tailwind 4       | 05_Vibe_Coding/03_Tailwind_4/   | Estilos                |
-| Zod 4            | 05_Vibe_Coding/07_Zod_4/        | Validacion forms       |
-| AI SDK 5         | 05_Vibe_Coding/08_Ai_Sdk_5/     | Asistente cotizacion   |
-| Playwright       | 06_Testing/08_E2e_Testing/      | E2E testing            |
-| DevOps           | 07_DevOps/                      | Deploy Vercel          |
-| SEO SOTA         | 17_SEO_SOTA_Master/             | SEO local Atlanta      |
-| Product Design   | 04_Product_Design/              | UI/UX premium          |
-| SDD              | 01_Agent_Teams_Lite/            | Gestion del proyecto   |
+| Skill                  | Path                                  | Uso                          |
+|------------------------|---------------------------------------|------------------------------|
+| Next.js 15             | 05_Vibe_Coding/02_Nextjs_15/          | Framework principal          |
+| React 19               | 05_Vibe_Coding/01_React_19/           | Server Components            |
+| TypeScript             | 05_Vibe_Coding/05_TypeScript/         | Todo el codebase             |
+| Tailwind 4             | 05_Vibe_Coding/03_Tailwind_4/         | Estilos                      |
+| Zod 4                  | 05_Vibe_Coding/07_Zod_4/              | Validacion forms             |
+| AI SDK 5               | 05_Vibe_Coding/08_Ai_Sdk_5/           | Asistente cotizacion         |
+| Playwright             | 06_Testing/08_E2e_Testing/            | E2E testing                  |
+| DevOps                 | 07_DevOps/                            | Deploy Vercel                |
+| SEO SOTA               | 17_SEO_SOTA_Master/                   | SEO local Atlanta            |
+| Product Design         | 04_Product_Design/                    | UI/UX premium                |
+| SDD                    | 01_Agent_Teams_Lite/                  | Gestion del proyecto         |
 
 ---
 
@@ -176,13 +176,13 @@ Severity: CRITICAL / WARNING / SUGGESTION
 
 ## PRIORIZACION CON LIMITE DE CREDITOS
 
-| Prioridad              | Fases                 | Tiempo     | Bloquea AOLI?     |
-|------------------------|-----------------------|------------|-------------------|
-| P0 - siempre           | Fase 0 + 3.1 + 3.2    | 30 min     | SI                |
-| P1 - si hay creditos   | Fases 1, 2, 3.3-3.8   | 60 min     | Parcialmente      |
-| P2 - nice to have      | Fases 3.9, 4          | 30 min     | NO                |
-| P3 - si sobra          | Fase 5                | 15 min     | NO                |
-| GOAL - el objetivo     | Fase 6 Bootstrap      | 45 min     | ES el proyecto    |
+| Prioridad                    | Fases                       | Tiempo           | Bloquea AOLI?           |
+|------------------------------|-----------------------------|------------------|-------------------------|
+| P0 - siempre                 | Fase 0 + 3.1 + 3.2          | 30 min           | SI                      |
+| P1 - si hay creditos         | Fases 1, 2, 3.3-3.8         | 60 min           | Parcialmente            |
+| P2 - nice to have            | Fases 3.9, 4                | 30 min           | NO                      |
+| P3 - si sobra                | Fase 5                      | 15 min           | NO                      |
+| GOAL - el objetivo           | Fase 6 Bootstrap            | 45 min           | ES el proyecto          |
 
 **Regla de oro:** Si hay que elegir entre documentar mas y arrancar Fase 6, arrancar Fase 6.
 

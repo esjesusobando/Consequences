@@ -55,12 +55,12 @@ MEASURE → Mide con KPIs reales
 
 ## Conexiones con Conocimiento Existente
 
-| Concepto ANTERIOR   | Conexión                                 |
-|---------------------|------------------------------------------|
-| Setup = Pre-work    | Custom Instructions = inversión de setup |
-| Iteration loops     | Regla 60-30-10 formalizada               |
-| Agent workflow      | Triage → Experiment → Automate → Measure |
-| Team dynamics       | Equipos híbridos con AI                  |
+| Concepto ANTERIOR         | Conexión                                       |
+|---------------------------|------------------------------------------------|
+| Setup = Pre-work          | Custom Instructions = inversión de setup       |
+| Iteration loops           | Regla 60-30-10 formalizada                     |
+| Agent workflow            | Triage → Experiment → Automate → Measure       |
+| Team dynamics             | Equipos híbridos con AI                        |
 
 ---
 

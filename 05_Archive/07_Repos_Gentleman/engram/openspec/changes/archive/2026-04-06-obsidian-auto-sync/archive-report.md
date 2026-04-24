@@ -16,22 +16,22 @@ Completed SDD cycle for the `obsidian-auto-sync` change, which extends `engram o
 
 ## Engram Observation IDs (Audit Trail)
 
-| Phase                     | Topic Key                                          | Observation ID            |
-|---------------------------|----------------------------------------------------|---------------------------|
-| Proposal                  | `sdd/obsidian-auto-sync/proposal`                  | #1742                     |
-| Spec                      | `sdd/obsidian-auto-sync/spec`                      | #1744                     |
-| Design                    | `sdd/obsidian-auto-sync/design`                    | #1745                     |
-| Tasks                     | `sdd/obsidian-auto-sync/tasks`                     | #1746                     |
-| Implementation Complete   | `sdd/obsidian-auto-sync/implementation-complete`   | #1748                     |
-| Archive Report            | `sdd/obsidian-auto-sync/archive-report`            | (saved at archive time)   |
+| Phase                             | Topic Key                                                  | Observation ID                    |
+|-----------------------------------|------------------------------------------------------------|-----------------------------------|
+| Proposal                          | `sdd/obsidian-auto-sync/proposal`                          | #1742                             |
+| Spec                              | `sdd/obsidian-auto-sync/spec`                              | #1744                             |
+| Design                            | `sdd/obsidian-auto-sync/design`                            | #1745                             |
+| Tasks                             | `sdd/obsidian-auto-sync/tasks`                             | #1746                             |
+| Implementation Complete           | `sdd/obsidian-auto-sync/implementation-complete`           | #1748                             |
+| Archive Report                    | `sdd/obsidian-auto-sync/archive-report`                    | (saved at archive time)           |
 
 ---
 
 ## Specs Synced
 
-| Domain              | Action             | Details                                                                                                |
-|---------------------|--------------------|--------------------------------------------------------------------------------------------------------|
-| `obsidian-export`   | Created (merged)   | REQ-EXPORT-01..09 from obsidian-plugin + REQ-GRAPH-01..06 + REQ-WATCH-01..07 = 16 requirements total   |
+| Domain                      | Action                     | Details                                                                                                        |
+|-----------------------------|----------------------------|----------------------------------------------------------------------------------------------------------------|
+| `obsidian-export`           | Created (merged)           | REQ-EXPORT-01..09 from obsidian-plugin + REQ-GRAPH-01..06 + REQ-WATCH-01..07 = 16 requirements total           |
 
 **Source of truth**: `openspec/specs/obsidian-export/spec.md`
 
@@ -41,13 +41,13 @@ Delta applied from: `openspec/changes/archive/2026-04-06-obsidian-auto-sync/spec
 
 ## Archive Contents
 
-| File                              | Status                     |
-|-----------------------------------|----------------------------|
-| `proposal.md`                     | ✅                          |
-| `design.md`                       | ✅                          |
-| `specs/obsidian-export/spec.md`   | ✅ (delta spec)             |
-| `tasks.md`                        | ✅ (21/21 tasks complete)   |
-| `archive-report.md`               | ✅ (this file)              |
+| File                                      | Status                             |
+|-------------------------------------------|------------------------------------|
+| `proposal.md`                             | ✅                                  |
+| `design.md`                               | ✅                                  |
+| `specs/obsidian-export/spec.md`           | ✅ (delta spec)                     |
+| `tasks.md`                                | ✅ (21/21 tasks complete)           |
+| `archive-report.md`                       | ✅ (this file)                      |
 
 ---
 
@@ -72,25 +72,25 @@ Delta applied from: `openspec/changes/archive/2026-04-06-obsidian-auto-sync/spec
 
 ## Live Smoke Test Results (2026-04-06)
 
-| Scenario                                                                                           | Result     |
-|----------------------------------------------------------------------------------------------------|------------|
-| `--graph-config force` overwrites `graph.json` with exact user values (6 groups, correct forces)   | ✅          |
-| `--interval 5m` without `--watch` → error + exit 1                                                 | ✅          |
-| `--watch --interval 30s` → error "must be at least 1m" + exit 1                                    | ✅          |
-| `--watch --interval 1m` → immediate first cycle, clean signal shutdown                             | ✅          |
+| Scenario                                                                                                   | Result             |
+|------------------------------------------------------------------------------------------------------------|--------------------|
+| `--graph-config force` overwrites `graph.json` with exact user values (6 groups, correct forces)           | ✅                  |
+| `--interval 5m` without `--watch` → error + exit 1                                                         | ✅                  |
+| `--watch --interval 30s` → error "must be at least 1m" + exit 1                                            | ✅                  |
+| `--watch --interval 1m` → immediate first cycle, clean signal shutdown                                     | ✅                  |
 
 ---
 
 ## Key Design Decisions
 
-| Decision                     | Choice                             | Rationale                                                                             |
-|------------------------------|------------------------------------|---------------------------------------------------------------------------------------|
-| Default graph-config mode    | `preserve`                         | Safe default; respects any existing user customization                                |
-| `GraphConfig` zero value     | `GraphConfigSkip` (not Preserve)   | Backward compat with existing exporter tests that have no `.obsidian/` expectations   |
-| Graph config in watch loop   | First cycle only                   | Prevents clobbering user mid-session customizations even in force mode                |
-| Embedded template            | `//go:embed graph.json`            | Versioned with binary; zero runtime deps; CGO_ENABLED=0 compatible                    |
-| Signal handling              | `signal.NotifyContext`             | Go 1.16+ idiom; context propagates naturally to select block                          |
-| Error handling in loop       | Log + continue                     | Transient store/FS errors shouldn't kill a long-running daemon                        |
+| Decision                             | Choice                                     | Rationale                                                                                     |
+|--------------------------------------|--------------------------------------------|-----------------------------------------------------------------------------------------------|
+| Default graph-config mode            | `preserve`                                 | Safe default; respects any existing user customization                                        |
+| `GraphConfig` zero value             | `GraphConfigSkip` (not Preserve)           | Backward compat with existing exporter tests that have no `.obsidian/` expectations           |
+| Graph config in watch loop           | First cycle only                           | Prevents clobbering user mid-session customizations even in force mode                        |
+| Embedded template                    | `//go:embed graph.json`                    | Versioned with binary; zero runtime deps; CGO_ENABLED=0 compatible                            |
+| Signal handling                      | `signal.NotifyContext`                     | Go 1.16+ idiom; context propagates naturally to select block                                  |
+| Error handling in loop               | Log + continue                             | Transient store/FS errors shouldn't kill a long-running daemon                                |
 
 ---
 

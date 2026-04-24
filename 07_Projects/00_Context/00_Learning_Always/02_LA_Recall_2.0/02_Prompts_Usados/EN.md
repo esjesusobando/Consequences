@@ -78,13 +78,13 @@
 
 ## 🎯 Best Generic Prompts
 
-| Prompt                                 | When to use           |
-|----------------------------------------|-----------------------|
-| "What did it say about [topic]?"       | Find specific concept |
-| "Connect this to [other]"              | Find relationships    |
-| "Generate a 5-question quiz"           | Active learning       |
-| "How does it compare to [other tool]?" | Competitive analysis  |
-| "Extract the action items"             | For implementation    |
+| Prompt                                         | When to use                   |
+|------------------------------------------------|-------------------------------|
+| "What did it say about [topic]?"               | Find specific concept         |
+| "Connect this to [other]"                      | Find relationships            |
+| "Generate a 5-question quiz"                   | Active learning               |
+| "How does it compare to [other tool]?"         | Competitive analysis          |
+| "Extract the action items"                     | For implementation            |
 
 ---
 

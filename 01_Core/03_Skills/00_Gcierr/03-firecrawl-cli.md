@@ -66,10 +66,10 @@ Today we are announcing Claude Opus 4, our most capable model...
 
 ## Benchmarks
 
-| Benchmark   | Opus 4 | GPT-4  | Gemini |
-|-------------|--------|--------|--------|
-| SWE-bench   | 72.5%  | 54.6%  | 51.2%  |
-| MMLU        | 88.7%  | 86.4%  | 85.9%  |
+| Benchmark           | Opus 4         | GPT-4          | Gemini         |
+|---------------------|----------------|----------------|----------------|
+| SWE-bench           | 72.5%          | 54.6%          | 51.2%          |
+| MMLU                | 88.7%          | 86.4%          | 85.9%          |
 
 ## Availability
 
@@ -212,19 +212,19 @@ Globant-like Co,https://globantlike.com,hello@globantlike.com,+54 11 4777-9999,3
 
 ## Firecrawl vs el resto
 
-| Feature                        | Firecrawl CLI | BeautifulSoup | Puppeteer    | Playwright   |
-|--------------------------------|---------------|---------------|--------------|--------------|
-| JS rendering                   | Si (auto)     | No            | Si           | Si           |
-| Markdown limpio para LLM       | Si (nativo)   | No (DIY)      | No (DIY)     | No (DIY)     |
-| Crawl recursivo + sitemap      | Si (flag)     | No            | Manual       | Manual       |
-| Extraccion con JSON schema     | Si (nativo)   | No            | No           | No           |
-| Anti-bot bypass                | Si            | No            | Parcial      | Parcial      |
-| Rate limiting built-in         | Si            | No            | Manual       | Manual       |
-| Concurrencia configurable      | Si (flag)     | Manual        | Manual       | Manual       |
-| Tiempo de setup                | 1 min         | 10 min        | 30 min       | 30 min       |
-| Mantenimiento cuando cambia UI | Bajo          | Alto          | Muy alto     | Muy alto     |
-| Curva de aprendizaje           | Zero-to-hero  | Media         | Alta         | Alta         |
-| Costo stack                    | API + free CLI| Gratis        | Infra headless| Infra headless|
+| Feature                                | Firecrawl CLI         | BeautifulSoup         | Puppeteer            | Playwright           |
+|----------------------------------------|-----------------------|-----------------------|----------------------|----------------------|
+| JS rendering                           | Si (auto)             | No                    | Si                   | Si                   |
+| Markdown limpio para LLM               | Si (nativo)           | No (DIY)              | No (DIY)             | No (DIY)             |
+| Crawl recursivo + sitemap              | Si (flag)             | No                    | Manual               | Manual               |
+| Extraccion con JSON schema             | Si (nativo)           | No                    | No                   | No                   |
+| Anti-bot bypass                        | Si                    | No                    | Parcial              | Parcial              |
+| Rate limiting built-in                 | Si                    | No                    | Manual               | Manual               |
+| Concurrencia configurable              | Si (flag)             | Manual                | Manual               | Manual               |
+| Tiempo de setup                        | 1 min                 | 10 min                | 30 min               | 30 min               |
+| Mantenimiento cuando cambia UI         | Bajo                  | Alto                  | Muy alto             | Muy alto             |
+| Curva de aprendizaje                   | Zero-to-hero          | Media                 | Alta                 | Alta                 |
+| Costo stack                            | API + free CLI        | Gratis                | Infra headless       | Infra headless       |
 
 Resumen: Firecrawl CLI es la opcion correcta cuando el objetivo es **alimentar un LLM**. Puppeteer/Playwright siguen ganando si lo que se necesita es simular interacciones complejas (form submits, login con 2FA, tests E2E).
 

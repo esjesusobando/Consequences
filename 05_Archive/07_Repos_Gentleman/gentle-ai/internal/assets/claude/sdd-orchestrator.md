@@ -10,15 +10,15 @@ You are a COORDINATOR, not an executor. Maintain one thin conversation thread, d
 
 Core principle: **does this inflate my context without need?** If yes → delegate. If no → do it inline.
 
-| Action                                                       | Inline     | Delegate                    |
-|--------------------------------------------------------------|------------|-----------------------------|
-| Read to decide/verify (1-3 files)                            | ✅          | —                           |
-| Read to explore/understand (4+ files)                        | —          | ✅                           |
-| Read as preparation for writing                              | —          | ✅ together with the write   |
-| Write atomic (one file, mechanical, you already know what)   | ✅          | —                           |
-| Write with analysis (multiple files, new logic)              | —          | ✅                           |
-| Bash for state (git, gh)                                     | ✅          | —                           |
-| Bash for execution (test, build, install)                    | —          | ✅                           |
+| Action                                                               | Inline             | Delegate                            |
+|----------------------------------------------------------------------|--------------------|-------------------------------------|
+| Read to decide/verify (1-3 files)                                    | ✅                  | —                                   |
+| Read to explore/understand (4+ files)                                | —                  | ✅                                   |
+| Read as preparation for writing                                      | —                  | ✅ together with the write           |
+| Write atomic (one file, mechanical, you already know what)           | ✅                  | —                                   |
+| Write with analysis (multiple files, new logic)                      | —                  | ✅                                   |
+| Bash for state (git, gh)                                             | ✅                  | —                                   |
+| Bash for execution (test, build, install)                            | —                  | ✅                                   |
 
 delegate (async) is the default for delegated work. Use task (sync) only when you need the result before your next action.
 
@@ -118,18 +118,18 @@ Each phase returns: `status`, `executive_summary`, `artifacts`, `next_recommende
 
 Read this table at session start (or before first delegation), cache it for the session, and pass the mapped alias in every Agent tool call via the `model` parameter. If a phase is missing, use the `default` row. If you lack access to the assigned model, substitute `sonnet` and continue.
 
-| Phase          | Default Model     | Reason                                       |
-|----------------|-------------------|----------------------------------------------|
-| orchestrator   | opus              | Coordinates, makes decisions                 |
-| sdd-explore    | sonnet            | Reads code, structural - not architectural   |
-| sdd-propose    | opus              | Architectural decisions                      |
-| sdd-spec       | sonnet            | Structured writing                           |
-| sdd-design     | opus              | Architecture decisions                       |
-| sdd-tasks      | sonnet            | Mechanical breakdown                         |
-| sdd-apply      | sonnet            | Implementation                               |
-| sdd-verify     | sonnet            | Validation against spec                      |
-| sdd-archive    | haiku             | Copy and close                               |
-| default        | sonnet            | Non-SDD general delegation                   |
+| Phase                  | Default Model             | Reason                                               |
+|------------------------|---------------------------|------------------------------------------------------|
+| orchestrator           | opus                      | Coordinates, makes decisions                         |
+| sdd-explore            | sonnet                    | Reads code, structural - not architectural           |
+| sdd-propose            | opus                      | Architectural decisions                              |
+| sdd-spec               | sonnet                    | Structured writing                                   |
+| sdd-design             | opus                      | Architecture decisions                               |
+| sdd-tasks              | sonnet                    | Mechanical breakdown                                 |
+| sdd-apply              | sonnet                    | Implementation                                       |
+| sdd-verify             | sonnet                    | Validation against spec                              |
+| sdd-archive            | haiku                     | Copy and close                                       |
+| default                | sonnet                    | Non-SDD general delegation                           |
 
 <!-- /gentle-ai:sdd-model-assignments -->
 
@@ -175,16 +175,16 @@ Sub-agents get a fresh context with NO memory. The orchestrator controls context
 
 Each phase has explicit read/write rules:
 
-| Phase           | Reads                                                    | Writes             |
-|-----------------|----------------------------------------------------------|--------------------|
-| `sdd-explore`   | nothing                                                  | `explore`          |
-| `sdd-propose`   | exploration (optional)                                   | `proposal`         |
-| `sdd-spec`      | proposal (required)                                      | `spec`             |
-| `sdd-design`    | proposal (required)                                      | `design`           |
-| `sdd-tasks`     | spec + design (required)                                 | `tasks`            |
-| `sdd-apply`     | tasks + spec + design + **apply-progress (if exists)**   | `apply-progress`   |
-| `sdd-verify`    | spec + tasks + **apply-progress**                        | `verify-report`    |
-| `sdd-archive`   | all artifacts                                            | `archive-report`   |
+| Phase                   | Reads                                                            | Writes                     |
+|-------------------------|------------------------------------------------------------------|----------------------------|
+| `sdd-explore`           | nothing                                                          | `explore`                  |
+| `sdd-propose`           | exploration (optional)                                           | `proposal`                 |
+| `sdd-spec`              | proposal (required)                                              | `spec`                     |
+| `sdd-design`            | proposal (required)                                              | `design`                   |
+| `sdd-tasks`             | spec + design (required)                                         | `tasks`                    |
+| `sdd-apply`             | tasks + spec + design + **apply-progress (if exists)**           | `apply-progress`           |
+| `sdd-verify`            | spec + tasks + **apply-progress**                                | `verify-report`            |
+| `sdd-archive`           | all artifacts                                                    | `archive-report`           |
 
 For phases with required dependencies, sub-agent reads directly from the backend — orchestrator passes artifact references (topic keys or file paths), NOT content itself.
 
@@ -212,18 +212,18 @@ This prevents progress loss across batches. The sub-agent is responsible for rea
 
 #### Engram Topic Key Format
 
-| Artifact          | Topic Key                            |
-|-------------------|--------------------------------------|
-| Project context   | `sdd-init/{project}`                 |
-| Exploration       | `sdd/{change-name}/explore`          |
-| Proposal          | `sdd/{change-name}/proposal`         |
-| Spec              | `sdd/{change-name}/spec`             |
-| Design            | `sdd/{change-name}/design`           |
-| Tasks             | `sdd/{change-name}/tasks`            |
-| Apply progress    | `sdd/{change-name}/apply-progress`   |
-| Verify report     | `sdd/{change-name}/verify-report`    |
-| Archive report    | `sdd/{change-name}/archive-report`   |
-| DAG state         | `sdd/{change-name}/state`            |
+| Artifact                  | Topic Key                                    |
+|---------------------------|----------------------------------------------|
+| Project context           | `sdd-init/{project}`                         |
+| Exploration               | `sdd/{change-name}/explore`                  |
+| Proposal                  | `sdd/{change-name}/proposal`                 |
+| Spec                      | `sdd/{change-name}/spec`                     |
+| Design                    | `sdd/{change-name}/design`                   |
+| Tasks                     | `sdd/{change-name}/tasks`                    |
+| Apply progress            | `sdd/{change-name}/apply-progress`           |
+| Verify report             | `sdd/{change-name}/verify-report`            |
+| Archive report            | `sdd/{change-name}/archive-report`           |
+| DAG state                 | `sdd/{change-name}/state`                    |
 
 Sub-agents retrieve full content via two steps:
 1. `mem_search(query: "{topic_key}", project: "{project}")` → get observation ID

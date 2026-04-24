@@ -8,21 +8,21 @@
 
 ## 📊 RESUMEN EJECUTIVO — Skills System
 
-| Categoría                  | Skills      | Estado                     | Notas                                     |
-|----------------------------|-------------|----------------------------|-------------------------------------------|
-| **Agent_Teams_Lite**       | 9           | ✅ No tocado                | Por instrucción del usuario               |
-| **Project_Manager**        | 9           | ✅ Esencias reales          | 100% auditado                             |
-| **Product_Manager**        | 7           | ✅ Esencias reales          | 100% auditado                             |
-| **Product_Design**         | 11          | ✅ Esencias reales          | 100% auditado (Taste Skills)              |
-| **Gentleman**              | 1           | ✅ Real                     | 07_Double_Code_Review                     |
-| **Vibe_Coding**            | 21          | ✅ Esencias reales          | 100% auditado                             |
-| **Testing**                | 13          | ✅ Esencias reales          | 100% auditado                             |
-| **DevOps**                 | 12          | ✅ Esencias reales          | 100% auditado                             |
-| **Personal_Os**            | 10          | ✅ Esencias reales          | 100% auditado                             |
-| **Marketing**              | 32          | ✅ Esencias reales          | 100% auditado (15+10+7)                   |
-| **Backup**                 | 177         | ⏭️ SKIPPED                 | Por instrucción del usuario               |
-| **Doc_Processing**         | 3           | ✅ Esencias reales          | 100% auditado                             |
-| **TOTAL**                  | **305**     | **99%**                    | **Auditado a estándar Anthropic**         |
+| Categoría                          | Skills              | Estado                             | Notas                                             |
+|------------------------------------|---------------------|------------------------------------|---------------------------------------------------|
+| **Agent_Teams_Lite**               | 9                   | ✅ No tocado                        | Por instrucción del usuario                       |
+| **Project_Manager**                | 9                   | ✅ Esencias reales                  | 100% auditado                                     |
+| **Product_Manager**                | 7                   | ✅ Esencias reales                  | 100% auditado                                     |
+| **Product_Design**                 | 11                  | ✅ Esencias reales                  | 100% auditado (Taste Skills)                      |
+| **Gentleman**                      | 1                   | ✅ Real                             | 07_Double_Code_Review                             |
+| **Vibe_Coding**                    | 21                  | ✅ Esencias reales                  | 100% auditado                                     |
+| **Testing**                        | 13                  | ✅ Esencias reales                  | 100% auditado                                     |
+| **DevOps**                         | 12                  | ✅ Esencias reales                  | 100% auditado                                     |
+| **Personal_Os**                    | 10                  | ✅ Esencias reales                  | 100% auditado                                     |
+| **Marketing**                      | 32                  | ✅ Esencias reales                  | 100% auditado (15+10+7)                           |
+| **Backup**                         | 177                 | ⏭️ SKIPPED                         | Por instrucción del usuario                       |
+| **Doc_Processing**                 | 3                   | ✅ Esencias reales                  | 100% auditado                                     |
+| **TOTAL**                          | **305**             | **99%**                            | **Auditado a estándar Anthropic**                 |
 
 ---
 
@@ -30,14 +30,14 @@
 
 Cada skill ahora tiene:
 
-| Componente                    | Descripción                            | Estado     |
-|-------------------------------|----------------------------------------|------------|
-| `## Esencia Original`         | Sección obligatoria                    | ✅          |
-| `> **Propósito:**`            | Descripción real (no genérica)         | ✅          |
-| `> **Flujo:`                  | Pasos del workflow                     | ✅          |
-| `## ⚠️ Gotchas`               | Errores comunes                        | ✅          |
-| `references/`                 | Documentación adicional                | ✅          |
-| `scripts/`                    | Scripts encapsulados por skill         | ✅          |
+| Componente                            | Descripción                                    | Estado             |
+|---------------------------------------|------------------------------------------------|--------------------|
+| `## Esencia Original`                 | Sección obligatoria                            | ✅                  |
+| `> **Propósito:**`                    | Descripción real (no genérica)                 | ✅                  |
+| `> **Flujo:`                          | Pasos del workflow                             | ✅                  |
+| `## ⚠️ Gotchas`                       | Errores comunes                                | ✅                  |
+| `references/`                         | Documentación adicional                        | ✅                  |
+| `scripts/`                            | Scripts encapsulados por skill                 | ✅                  |
 
 ---
 
@@ -96,74 +96,74 @@ Cada skill ahora tiene:
 
 ## 🔧 SCRIPTS UTILIZADOS EN AUDITORÍA
 
-| Script                                   | Función                                        | Estado     |
-|------------------------------------------|------------------------------------------------|------------|
-| `fix_duplicate_lines.py`                 | Limpiar líneas duplicadas en 07_DevOps         | ✅          |
-| `restore_essences.py`                    | Restaurar esencias eliminadas                  | ✅          |
-| `fix_personal_os_essences.py`            | Arreglar esencias placeholder                  | ✅          |
-| `fix_marketing_essences.py`              | Agregar esencias a Marketing                   | ✅          |
-| `fix_yaml_skills.py`                     | Arreglar skills solo YAML                      | ✅          |
-| `fix_doc_processing_essences.py`         | Agregar esencias Doc_Processing                | ✅          |
-| `02_Beautify_Tables.py`                  | Embellecer tablas                              | ✅          |
+| Script                                           | Función                                                | Estado             |
+|--------------------------------------------------|--------------------------------------------------------|--------------------|
+| `fix_duplicate_lines.py`                         | Limpiar líneas duplicadas en 07_DevOps                 | ✅                  |
+| `restore_essences.py`                            | Restaurar esencias eliminadas                          | ✅                  |
+| `fix_personal_os_essences.py`                    | Arreglar esencias placeholder                          | ✅                  |
+| `fix_marketing_essences.py`                      | Agregar esencias a Marketing                           | ✅                  |
+| `fix_yaml_skills.py`                             | Arreglar skills solo YAML                              | ✅                  |
+| `fix_doc_processing_essences.py`                 | Agregar esencias Doc_Processing                        | ✅                  |
+| `02_Beautify_Tables.py`                          | Embellecer tablas                                      | ✅                  |
 
 ---
 
 ## 🗂️ SCRIPTS ENCAPSULADOS POR SKILL (v6.2)
 
 ### Batch 1: Auditoría → Skills
-| Script                        | Skill Destino                  | Estado   |
-|-------------------------------|--------------------------------|----------|
-| `34_Skill_Auditor.py`         | `00_Skill_Auditor/scripts`     | ✅        |
-| `53_Structure_Auditor.py`     | `00_Personal_Os_Stack/scripts` | ✅        |
-| `50_System_Health_Monitor.py` | `08_Personal_Os/scripts`       | ✅        |
-| `33_Parallel_Audit_Pro.py`    | `06_Testing/scripts`           | ✅        |
-| `57_Repo_Sync_Auditor.py`     | `07_DevOps/scripts`            | ✅        |
+| Script                                | Skill Destino                          | Estado           |
+|---------------------------------------|----------------------------------------|------------------|
+| `34_Skill_Auditor.py`                 | `00_Skill_Auditor/scripts`             | ✅                |
+| `53_Structure_Auditor.py`             | `00_Personal_Os_Stack/scripts`         | ✅                |
+| `50_System_Health_Monitor.py`         | `08_Personal_Os/scripts`               | ✅                |
+| `33_Parallel_Audit_Pro.py`            | `06_Testing/scripts`                   | ✅                |
+| `57_Repo_Sync_Auditor.py`             | `07_DevOps/scripts`                    | ✅                |
 
 ### Batch 2: Rituales → Skills
-| Script                  | Skill Destino                 | Estado   |
-|-------------------------|-------------------------------|----------|
-| `08_Ritual_Cierre.py`   | `08_Personal_Os/scripts`      | ✅        |
-| `14_Morning_Standup.py` | `08_Personal_Os/scripts`      | ✅        |
-| `15_Weekly_Review.py`   | `08_Personal_Os/scripts`      | ✅        |
-| `09_Backlog_Triage.py`  | `02_Project_Manager/scripts`  | ✅        |
-| `11_Sync_Notes.py`      | `18_Personal_Life_OS/scripts` | ✅        |
-| `16_Clean_System.py`    | `13_System_Master/scripts`    | ✅        |
-| `00_Notifier.py`        | `13_System_Master/scripts`    | ✅        |
-| `87_Iron_Man_Gen.py`    | `08_Personal_Os/scripts`      | ✅        |
+| Script                          | Skill Destino                         | Estado           |
+|---------------------------------|---------------------------------------|------------------|
+| `08_Ritual_Cierre.py`           | `08_Personal_Os/scripts`              | ✅                |
+| `14_Morning_Standup.py`         | `08_Personal_Os/scripts`              | ✅                |
+| `15_Weekly_Review.py`           | `08_Personal_Os/scripts`              | ✅                |
+| `09_Backlog_Triage.py`          | `02_Project_Manager/scripts`          | ✅                |
+| `11_Sync_Notes.py`              | `18_Personal_Life_OS/scripts`         | ✅                |
+| `16_Clean_System.py`            | `13_System_Master/scripts`            | ✅                |
+| `00_Notifier.py`                | `13_System_Master/scripts`            | ✅                |
+| `87_Iron_Man_Gen.py`            | `08_Personal_Os/scripts`              | ✅                |
 
 ### Batch 3: Workflows → Skills
-| Script                    | Skill Destino                     | Estado   |
-|---------------------------|-----------------------------------|----------|
-| `01_Spider_Brainstorm.py` | `00_Compound_Engineering/scripts` | ✅        |
-| `02_Professor_X_Plan.py`  | `01_Agent_Teams_Lite/scripts`     | ✅        |
+| Script                            | Skill Destino                             | Estado           |
+|-----------------------------------|-------------------------------------------|------------------|
+| `01_Spider_Brainstorm.py`         | `00_Compound_Engineering/scripts`         | ✅                |
+| `02_Professor_X_Plan.py`          | `01_Agent_Teams_Lite/scripts`             | ✅                |
 
 ### Batch 4: Utilities → 13_Auditors_Os
-| Script                       | Skill Destino            | Estado   |
-|------------------------------|--------------------------|----------|
-| `12_Context_Usage_Bar.py`    | `13_Auditors_Os/scripts` | ✅        |
-| `13_Beautify_Tables.py`      | `13_Auditors_Os/scripts` | ✅        |
-| `14_Beauty_Doc.py`           | `13_Auditors_Os/scripts` | ✅        |
-| `15_SOTA_Integrity_Check.py` | `13_Auditors_Os/scripts` | ✅        |
-| `16_Carousel_Engine.py`      | `13_Auditors_Os/scripts` | ✅        |
+| Script                               | Skill Destino                    | Estado           |
+|--------------------------------------|----------------------------------|------------------|
+| `12_Context_Usage_Bar.py`            | `13_Auditors_Os/scripts`         | ✅                |
+| `13_Beautify_Tables.py`              | `13_Auditors_Os/scripts`         | ✅                |
+| `14_Beauty_Doc.py`                   | `13_Auditors_Os/scripts`         | ✅                |
+| `15_SOTA_Integrity_Check.py`         | `13_Auditors_Os/scripts`         | ✅                |
+| `16_Carousel_Engine.py`              | `13_Auditors_Os/scripts`         | ✅                |
 
 ### Legacy: Archivados
-| Script                     | Ubicación                           | Estado   |
-|----------------------------|-------------------------------------|----------|
-| `03_Thor_Work.py`          | `.backup/10_Legacy_backup_20260420` | ✅        |
-| `04_Vision_Review.py`      | `.backup/10_Legacy_backup_20260420` | ✅        |
-| `05_Hulk_Compound.py`      | `.backup/10_Legacy_backup_20260420` | ✅        |
-| `56_Organize_Solutions.py` | `.backup/10_Legacy_backup_20260420` | ✅        |
+| Script                             | Ubicación                                   | Estado           |
+|------------------------------------|---------------------------------------------|------------------|
+| `03_Thor_Work.py`                  | `.backup/10_Legacy_backup_20260420`         | ✅                |
+| `04_Vision_Review.py`              | `.backup/10_Legacy_backup_20260420`         | ✅                |
+| `05_Hulk_Compound.py`              | `.backup/10_Legacy_backup_20260420`         | ✅                |
+| `56_Organize_Solutions.py`         | `.backup/10_Legacy_backup_20260420`         | ✅                |
 
 ---
 
 ## 📚 ARCHIVOS ACTUALIZADOS EN ESTA SESIÓN
 
-| Archivo                                          | Cambio                                                    |
-|--------------------------------------------------|-----------------------------------------------------------|
-| `CLAUDE.md`                                      | Estructuras actualizadas, skill counts corregidos         |
-| `04_Inventario.md`                               | Estado actual del sistema                                 |
-| `12_Skills_Improvement_Plan.md`                  | Plan de mejoras post-audit                                |
-| `13_Anthropic_Skills_Implementation_Plan.md`     | Plan de implementación Anthropic                          |
+| Archivo                                                  | Cambio                                                            |
+|----------------------------------------------------------|-------------------------------------------------------------------|
+| `CLAUDE.md`                                              | Estructuras actualizadas, skill counts corregidos                 |
+| `04_Inventario.md`                                       | Estado actual del sistema                                         |
+| `12_Skills_Improvement_Plan.md`                          | Plan de mejoras post-audit                                        |
+| `13_Anthropic_Skills_Implementation_Plan.md`             | Plan de implementación Anthropic                                  |
 
 ---
 
@@ -176,11 +176,11 @@ Cada skill ahora tiene:
 
 ## 📋 HISTORIAL DE CAMBIOS
 
-| Fecha            | Versión             | Cambio                                                         |
-|------------------|---------------------|----------------------------------------------------------------|
-| 2026-03-21       | **v5.0 LEGACY**     | Marcado como deprecated                                        |
-| 2026-03-21       | **v4.0**            | Nuevo inventario en 04_Inventario.md                           |
-| 2026-03-20       | **v5.0**            | Última actualización antes de reorganización                   |
+| Fecha                    | Versión                     | Cambio                                                                 |
+|--------------------------|-----------------------------|------------------------------------------------------------------------|
+| 2026-03-21               | **v5.0 LEGACY**             | Marcado como deprecated                                                |
+| 2026-03-21               | **v4.0**                    | Nuevo inventario en 04_Inventario.md                                   |
+| 2026-03-20               | **v5.0**                    | Última actualización antes de reorganización                           |
 
 ---
 
@@ -206,10 +206,10 @@ Cada skill ahora tiene:
 
 ## 📁 INVENTARIOS DEL SISTEMA
 
-| Archivo                                  | Estado       | Ubicación                                        |
-|------------------------------------------|--------------|--------------------------------------------------|
-| **04_Inventario.md**                     | ✅ ACTIVO     | `04_Operations/04_Memory_Brain/`                 |
-| **01_Inventario_Total.md**               | ✅ ACTIVO     | `01_Core/02_Knowledge_Brain/`                    |
+| Archivo                                          | Estado               | Ubicación                                                |
+|--------------------------------------------------|----------------------|----------------------------------------------------------|
+| **04_Inventario.md**                             | ✅ ACTIVO             | `04_Operations/04_Memory_Brain/`                         |
+| **01_Inventario_Total.md**                       | ✅ ACTIVO             | `01_Core/02_Knowledge_Brain/`                            |
 
 ---
 
@@ -220,54 +220,54 @@ Cada skill ahora tiene:
 
 ## 🆕 CAMBIOS v6.1 (2026-04-17)
 
-| Fix                | Descripción                                                                |
-|--------------------|----------------------------------------------------------------------------|
-| **Tests P0**       | 5 tests corregidos — `SCRIPT_DIR` apunta a `Legacy_Backup/`                |
-| **Workflows**      | 5 workflows renombrados con IDs únicos (19-23)                             |
-| **Test zombie**    | `test_audit_engineering.py` archivado (módulo Oil Drilling ID 42)          |
-| **Armor Layer**    | `conftest.py` actualizado con `LEGACY_SCRIPTS_DIR` centralizado            |
-| **Este archivo**   | Auto-referencia LEGACY eliminada                                           |
-| **Style Guide**    | Chris Orwig Visual + Writing Guide creados (400+ líneas)                   |
-| **Docs**           | Landing template + Neural Networks example + Git session history ignored   |
+| Fix                        | Descripción                                                                        |
+|----------------------------|------------------------------------------------------------------------------------|
+| **Tests P0**               | 5 tests corregidos — `SCRIPT_DIR` apunta a `Legacy_Backup/`                        |
+| **Workflows**              | 5 workflows renombrados con IDs únicos (19-23)                                     |
+| **Test zombie**            | `test_audit_engineering.py` archivado (módulo Oil Drilling ID 42)                  |
+| **Armor Layer**            | `conftest.py` actualizado con `LEGACY_SCRIPTS_DIR` centralizado                    |
+| **Este archivo**           | Auto-referencia LEGACY eliminada                                                   |
+| **Style Guide**            | Chris Orwig Visual + Writing Guide creados (400+ líneas)                           |
+| **Docs**                   | Landing template + Neural Networks example + Git session history ignored           |
 
 ---
 
 ## 🆕 v1.0 ALFA (2026-04-20) — Script Migration COMPLETA
 
-| Cambio                      | Descripción                         |
-|-----------------------------|-------------------------------------|
-| **14 scripts migrados**     | 9 a skills + 5 a 14_Otros           |
-| **14_Otros creada**         | Nueva carpeta (secuencia 14)        |
-| **18_Generacion_Contenido** | → 09_Marketing (USUARIO LO QUIERE)  |
-| **22 scripts en skills**    | Sistema encapsulado completo        |
-| **Fallback inteligente**    | Busca en skills + 14_Otros + legacy |
+| Cambio                              | Descripción                                 |
+|-------------------------------------|---------------------------------------------|
+| **14 scripts migrados**             | 9 a skills + 5 a 14_Otros                   |
+| **14_Otros creada**                 | Nueva carpeta (secuencia 14)                |
+| **18_Generacion_Contenido**         | → 09_Marketing (USUARIO LO QUIERE)          |
+| **22 scripts en skills**            | Sistema encapsulado completo                |
+| **Fallback inteligente**            | Busca en skills + 14_Otros + legacy         |
 
 ---
 
 ## 🆕 v6.3 BETA (2026-04-20) — Script Migration v2
 
-| Cambio                      | Descripción                               |
-|-----------------------------|-------------------------------------------|
-| **14 scripts migrados**     | 9 a skills + 5 a 14_Otros                 |
-| **14_Otros creada**         | Nueva carpeta para scripts de valor medio |
-| **18_Generacion_Contenido** | → 09_Marketing (USUARIO LO QUIERE)        |
-| **62_Tool_Shed**            | → 07_DevOps (auto-detector MCPs)          |
-| **Workflows**               | 06, 07, 73 → 00_Compound_Engineering      |
-| **Inventario actualizado**  | 22 scripts en skills ahora                |
+| Cambio                              | Descripción                                       |
+|-------------------------------------|---------------------------------------------------|
+| **14 scripts migrados**             | 9 a skills + 5 a 14_Otros                         |
+| **14_Otros creada**                 | Nueva carpeta para scripts de valor medio         |
+| **18_Generacion_Contenido**         | → 09_Marketing (USUARIO LO QUIERE)                |
+| **62_Tool_Shed**                    | → 07_DevOps (auto-detector MCPs)                  |
+| **Workflows**                       | 06, 07, 73 → 00_Compound_Engineering              |
+| **Inventario actualizado**          | 22 scripts en skills ahora                        |
 
 ---
 
 ## 🆕 v6.2 BETA (2026-04-20) — Script Encapsulation
 
-| Cambio                  | Descripción                               |
-|-------------------------|-------------------------------------------|
-| **12 scripts → skills** | Migración completa via get_skill_script() |
-| **10_Legacy archivado** | → `.backup/10_Legacy_backup_20260420`     |
-| **13_Auditors_Os**      | Nueva carpeta para utilities              |
-| **get_skill_script()**  | Resolución dinámica de scripts            |
-| **Script resolution**   | 15/15 tests PASS                          |
-| **HUBs actualizados**   | 01_Auditor, 04_Ritual, 08_Workflow        |
-| **SOTA_Integrity**      | Ruta dinámica fijada                      |
+| Cambio                          | Descripción                                       |
+|---------------------------------|---------------------------------------------------|
+| **12 scripts → skills**         | Migración completa via get_skill_script()         |
+| **10_Legacy archivado**         | → `.backup/10_Legacy_backup_20260420`             |
+| **13_Auditors_Os**              | Nueva carpeta para utilities                      |
+| **get_skill_script()**          | Resolución dinámica de scripts                    |
+| **Script resolution**           | 15/15 tests PASS                                  |
+| **HUBs actualizados**           | 01_Auditor, 04_Ritual, 08_Workflow                |
+| **SOTA_Integrity**              | Ruta dinámica fijada                              |
 
 ---
 
@@ -275,14 +275,14 @@ Cada skill ahora tiene:
 
 ### Scripts Actualizados y Blindados
 
-| Script                     | Estado        | Blindos               | Problema Original                        |
-|----------------------------|---------------|-----------------------|------------------------------------------|
-| `33_Parallel_Audit_Pro.py` | ✅ ACTUALIZADO | Fallback dinámico     | 8 paths hardcodeados no existían         |
-| `01_Auditor_Hub.py`        | ✅ ACTUALIZADO | Fallback + try/except | AUDITOR_DIR fallback roto                |
-| `05_Validator_Hub.py`      | ✅ ACTUALIZADO | 3 fallback layers     | Sin validation de path                   |
-| `40_Validate_Rules.py`     | ✅ ACTUALIZADO | SKILLS_DIR dinámico   | Paths obsoletos (01_Core, 02_High_Value) |
-| `skill_validator.py`       | ✅ BLINDADO    | SafeLoader YAML       | YAML injection vulnerability             |
-| `skill_security_scan.py`   | ✅ BLINDADO    | Skip + try/except     | Regex bypass + falsos positivos          |
+| Script                             | Estado                | Blindos                       | Problema Original                                |
+|------------------------------------|-----------------------|-------------------------------|--------------------------------------------------|
+| `33_Parallel_Audit_Pro.py`         | ✅ ACTUALIZADO         | Fallback dinámico             | 8 paths hardcodeados no existían                 |
+| `01_Auditor_Hub.py`                | ✅ ACTUALIZADO         | Fallback + try/except         | AUDITOR_DIR fallback roto                        |
+| `05_Validator_Hub.py`              | ✅ ACTUALIZADO         | 3 fallback layers             | Sin validation de path                           |
+| `40_Validate_Rules.py`             | ✅ ACTUALIZADO         | SKILLS_DIR dinámico           | Paths obsoletos (01_Core, 02_High_Value)         |
+| `skill_validator.py`               | ✅ BLINDADO            | SafeLoader YAML               | YAML injection vulnerability                     |
+| `skill_security_scan.py`           | ✅ BLINDADO            | Skip + try/except             | Regex bypass + falsos positivos                  |
 
 ### Estructura de Carpetas de Auditoría
 
@@ -342,15 +342,15 @@ skill_security_scan   | 03_Validator/skill_security_scan.py
 
 ### Edge Cases Identificados y Solucionados
 
-| Edge Case             | Severidad | Solución                      |
-|-----------------------|-----------|-------------------------------|
-| Paths hardcodeados    | 🔴 CRÍTICO | get_skill_script() + fallback |
-| YAML injection        | 🔴 CRÍTICO | SafeLoader                    |
-| Circular dependencies | 🟡 MEDIO   | ✅ BLINDADO en todo-create     |
-| Deleted blocker       | 🟡 MEDIO   | ✅ WARN on delete              |
-| Duplicate IDs         | 🟡 MEDIO   | ✅ Search both paths           |
-| ID overflow           | 🟡 MEDIO   | ✅ Warn if > 999               |
-| Regex bypass          | 🟡 MEDIO   | ✅ try/except + skip comments  |
+| Edge Case                     | Severidad         | Solución                              |
+|-------------------------------|-------------------|---------------------------------------|
+| Paths hardcodeados            | 🔴 CRÍTICO         | get_skill_script() + fallback         |
+| YAML injection                | 🔴 CRÍTICO         | SafeLoader                            |
+| Circular dependencies         | 🟡 MEDIO           | ✅ BLINDADO en todo-create             |
+| Deleted blocker               | 🟡 MEDIO           | ✅ WARN on delete                      |
+| Duplicate IDs                 | 🟡 MEDIO           | ✅ Search both paths                   |
+| ID overflow                   | 🟡 MEDIO           | ✅ Warn if > 999                       |
+| Regex bypass                  | 🟡 MEDIO           | ✅ try/except + skip comments          |
 
 ### Edge Cases en todo-create — BLINDADOS
 

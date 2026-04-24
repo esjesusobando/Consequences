@@ -58,31 +58,31 @@ El archivo siempre fue `00_Winter_is_Coming/AGENTS.md`, nunca existió `00_Winte
 
 ### Tareas Completadas
 
-| #   | Tarea                        | Archivo                                                   | Estado     |
-|-----|------------------------------|-----------------------------------------------------------|------------|
-| 1   | Corregir AGENTS.md (root)    | `AGENTS.md`                                               | ✅ 2 líneas |
-| 2   | Corregir skill-registry      | `.atl/skill-registry.md`                                  | ✅ 3 líneas |
-| 3   | Corregir CLAUDE.md           | `CLAUDE.md`                                               | ✅ 3 líneas |
-| 4   | Actualizar README.md         | `README.md`                                               | ✅ 5 líneas |
-| 5   | Sincronizar .agent/CLAUDE.md | `.agent/CLAUDE.md`                                        | ✅ 3 líneas |
-| 6   | Crear reporte auditoría      | `08_Scripts_Os/12_Audits/REPORTE_AUDITORIA_2026-04-21.md` | ✅ CREADO   |
+| #           | Tarea                                | Archivo                                                           | Estado             |
+|-------------|--------------------------------------|-------------------------------------------------------------------|--------------------|
+| 1           | Corregir AGENTS.md (root)            | `AGENTS.md`                                                       | ✅ 2 líneas         |
+| 2           | Corregir skill-registry              | `.atl/skill-registry.md`                                          | ✅ 3 líneas         |
+| 3           | Corregir CLAUDE.md                   | `CLAUDE.md`                                                       | ✅ 3 líneas         |
+| 4           | Actualizar README.md                 | `README.md`                                                       | ✅ 5 líneas         |
+| 5           | Sincronizar .agent/CLAUDE.md         | `.agent/CLAUDE.md`                                                | ✅ 3 líneas         |
+| 6           | Crear reporte auditoría              | `08_Scripts_Os/12_Audits/REPORTE_AUDITORIA_2026-04-21.md`         | ✅ CREADO           |
 
 ### Métricas Finales
 
-| Métrica                  | Valor        |
-|--------------------------|--------------|
-| **Errores corregidos**   | 12           |
-| **Archivos modificados** | 5            |
-| **Estado**               | 🟢 PURE GREEN |
+| Métrica                          | Valor                |
+|----------------------------------|----------------------|
+| **Errores corregidos**           | 12                   |
+| **Archivos modificados**         | 5                    |
+| **Estado**                       | 🟢 PURE GREEN         |
 
 ---
 
 ## Next Steps
 
-| #   | Acción                             | Prioridad |
-|-----|------------------------------------|-----------|
-| 1   | Auditoría de dependencias skills   | BAJA      |
-| 2   | Verificar otras referencias legacy | BAJA      |
+| #           | Acción                                     | Prioridad         |
+|-------------|--------------------------------------------|-------------------|
+| 1           | Auditoría de dependencias skills           | BAJA              |
+| 2           | Verificar otras referencias legacy         | BAJA              |
 
 ---
 

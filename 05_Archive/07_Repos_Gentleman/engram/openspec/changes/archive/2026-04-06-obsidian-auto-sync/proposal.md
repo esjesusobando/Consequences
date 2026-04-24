@@ -41,23 +41,23 @@ After the `obsidian-plugin` smoke test (1731 obs + 277 hubs exported), two frict
 
 ## Affected Areas
 
-| Area                                | Impact     | Description                                            |
-|-------------------------------------|------------|--------------------------------------------------------|
-| `cmd/engram/main.go`                | Modified   | Parse 3 new flags, daemon loop, signal handling        |
-| `internal/obsidian/exporter.go`     | Modified   | Accept `GraphConfigMode`, invoke writer once per run   |
-| `internal/obsidian/graph.go`        | New        | Embedded `graph.json` + `WriteGraphConfig`             |
-| `internal/obsidian/graph.json`      | New        | Default graph view template                            |
-| `internal/obsidian/graph_test.go`   | New        | Unit tests for the three modes                         |
-| `README.md`                         | Modified   | Document new flags + watch-mode example                |
+| Area                                        | Impact             | Description                                                    |
+|---------------------------------------------|--------------------|----------------------------------------------------------------|
+| `cmd/engram/main.go`                        | Modified           | Parse 3 new flags, daemon loop, signal handling                |
+| `internal/obsidian/exporter.go`             | Modified           | Accept `GraphConfigMode`, invoke writer once per run           |
+| `internal/obsidian/graph.go`                | New                | Embedded `graph.json` + `WriteGraphConfig`                     |
+| `internal/obsidian/graph.json`              | New                | Default graph view template                                    |
+| `internal/obsidian/graph_test.go`           | New                | Unit tests for the three modes                                 |
+| `README.md`                                 | Modified           | Document new flags + watch-mode example                        |
 
 ## Risks
 
-| Risk                                                 | Likelihood     | Mitigation                                                                |
-|------------------------------------------------------|----------------|---------------------------------------------------------------------------|
-| Overwriting a user's customized `graph.json`         | Med            | Default mode `preserve`; `force` is explicit opt-in                       |
-| Watch loop leaks or hangs on shutdown                | Low            | `signal.NotifyContext` + `ticker.Stop()` + drain in-flight run            |
-| Too-frequent interval hammers SQLite                 | Low            | Enforce `interval >= 1m`; incremental sync skips unchanged observations   |
-| Embedded template drifts from real Obsidian schema   | Low            | Unit test validates JSON parses + has required top-level keys             |
+| Risk                                                         | Likelihood             | Mitigation                                                                        |
+|--------------------------------------------------------------|------------------------|-----------------------------------------------------------------------------------|
+| Overwriting a user's customized `graph.json`                 | Med                    | Default mode `preserve`; `force` is explicit opt-in                               |
+| Watch loop leaks or hangs on shutdown                        | Low                    | `signal.NotifyContext` + `ticker.Stop()` + drain in-flight run                    |
+| Too-frequent interval hammers SQLite                         | Low                    | Enforce `interval >= 1m`; incremental sync skips unchanged observations           |
+| Embedded template drifts from real Obsidian schema           | Low                    | Unit test validates JSON parses + has required top-level keys                     |
 
 ## Rollback Plan
 

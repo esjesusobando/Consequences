@@ -74,9 +74,9 @@ A template file contains:
 - [ ] {{Measurable criterion 2}}
 
 ## Risks
-| Risk         | Likelihood       | Impact        | Mitigation       |
-|--------------|------------------|---------------|------------------|
-| {{Risk}}     | {{H/M/L}}        | {{H/M/L}}     | {{Strategy}}     |
+| Risk                 | Likelihood               | Impact                | Mitigation               |
+|----------------------|--------------------------|-----------------------|--------------------------|
+| {{Risk}}             | {{H/M/L}}                | {{H/M/L}}             | {{Strategy}}             |
 ```
 </template_example>
 

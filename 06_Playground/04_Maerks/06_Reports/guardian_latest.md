@@ -8,14 +8,14 @@
 
 ## Summary
 
-| Metric              | Value       |
-|---------------------|-------------|
-| Steps Completed     | 7           |
-| Naming Issues       | 0           |
-| Orphan Files        | 9           |
-| Broken Links        | 39          |
-| Ghost Files         | 0           |
-| Auto-Fixes          | 8           |
+| Metric                      | Value               |
+|-----------------------------|---------------------|
+| Steps Completed             | 7                   |
+| Naming Issues               | 0                   |
+| Orphan Files                | 9                   |
+| Broken Links                | 39                  |
+| Ghost Files                 | 0                   |
+| Auto-Fixes                  | 8                   |
 
 ---
 

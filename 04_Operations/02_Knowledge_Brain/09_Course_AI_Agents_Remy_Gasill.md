@@ -10,11 +10,11 @@
 
 ### 1. Chat vs Agent
 
-| Chat                          | Agent                                       |
-|-------------------------------|---------------------------------------------|
-| Question → Answer             | Goal → Result                               |
-| Ping-pong (uno por uno)       | Loop continuo                               |
-| Termina en 1 respuesta        | Planifica, ejecuta, entrega resultado       |
+| Chat                                  | Agent                                               |
+|---------------------------------------|-----------------------------------------------------|
+| Question → Answer                     | Goal → Result                                       |
+| Ping-pong (uno por uno)               | Loop continuo                                       |
+| Termina en 1 respuesta                | Planifica, ejecuta, entrega resultado               |
 
 ### 2. Agent Loop (El corazón del agente)
 
@@ -29,12 +29,12 @@ Goal → Observe → Think → Act → Repeat → Complete
 
 ### 3. Componentes de un Agente
 
-| Componente          | Descripción                                             |
-|---------------------|---------------------------------------------------------|
-| **LLM**             | Cerebro: Claude, GPT, Gemini, etc.                      |
-| **Loop**            | Continúa hasta完成任务 (no se detiene en 1 respuesta)       |
-| **Tools**           | Conexiones MCP a herramientas externas                  |
-| **Context**         | Archivos .md con información del negocio                |
+| Componente                  | Descripción                                                     |
+|-----------------------------|-----------------------------------------------------------------|
+| **LLM**                     | Cerebro: Claude, GPT, Gemini, etc.                              |
+| **Loop**                    | Continúa hasta完成任务 (no se detiene en 1 respuesta)               |
+| **Tools**                   | Conexiones MCP a herramientas externas                          |
+| **Context**                 | Archivos .md con información del negocio                        |
 
 ---
 
@@ -119,17 +119,17 @@ Mi_Empresa/
 
 ## 🔗 Herramientas Mentionadas
 
-| Herramienta             | Tipo                 | Notas                             |
-|-------------------------|----------------------|-----------------------------------|
-| Claude Code             | Agent Harness        | Desktop app                       |
-| Co-Work                 | Agent Harness        | UI simple para beginners          |
-| Anti-Gravity            | Agent Harness        | Similar a Claude Code             |
-| OpenCode/OpenCore       | Agent Harness        | Más autonomía, más complejo       |
-| Perplexity              | Search + Agent       | Investigación automática          |
-| Granola                 | Tool                 | Meeting notes                     |
-| Notion                  | Tool                 | Project management                |
-| Stripe                  | Tool                 | Pagos                             |
-| Gmail                   | Tool                 | Email                             |
+| Herramienta                     | Tipo                         | Notas                                     |
+|---------------------------------|------------------------------|-------------------------------------------|
+| Claude Code                     | Agent Harness                | Desktop app                               |
+| Co-Work                         | Agent Harness                | UI simple para beginners                  |
+| Anti-Gravity                    | Agent Harness                | Similar a Claude Code                     |
+| OpenCode/OpenCore               | Agent Harness                | Más autonomía, más complejo               |
+| Perplexity                      | Search + Agent               | Investigación automática                  |
+| Granola                         | Tool                         | Meeting notes                             |
+| Notion                          | Tool                         | Project management                        |
+| Stripe                          | Tool                         | Pagos                                     |
+| Gmail                           | Tool                         | Email                                     |
 
 ---
 

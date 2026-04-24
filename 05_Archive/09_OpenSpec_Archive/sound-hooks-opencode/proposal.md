@@ -28,27 +28,27 @@ Fix sound automation so OpenCode plays sounds when tools complete. Current plugi
 
 **Alternative Approaches:**
 
-| Option     | Description                                        | Pros                             | Cons                                       |
-|------------|----------------------------------------------------|----------------------------------|--------------------------------------------|
-| A          | Fix plugin format + test tool hooks                | Native approach, no extra deps   | May not fire on every tool                 |
-| B          | Use session.idle event only                        | Reliable session events          | Only fires on session idle, not per-tool   |
-| C          | Custom tool wrapper (call sound after each tool)   | Full control                     | Requires user to call wrapper tool         |
-| D          | Polling approach (check active tools)              | Works always                     | Inefficient, complex                       |
+| Option             | Description                                                | Pros                                     | Cons                                               |
+|--------------------|------------------------------------------------------------|------------------------------------------|----------------------------------------------------|
+| A                  | Fix plugin format + test tool hooks                        | Native approach, no extra deps           | May not fire on every tool                         |
+| B                  | Use session.idle event only                                | Reliable session events                  | Only fires on session idle, not per-tool           |
+| C                  | Custom tool wrapper (call sound after each tool)           | Full control                             | Requires user to call wrapper tool                 |
+| D                  | Polling approach (check active tools)                      | Works always                             | Inefficient, complex                               |
 
 ## Affected Areas
 
-| Area                                       | Impact      | Description                            |
-|--------------------------------------------|-------------|----------------------------------------|
-| `.opencode/plugins/sound-on-complete.ts`   | Modified    | Rewrite with correct OpenCode format   |
-| `.opencode/opencode.jsonc`                 | No Change   | Already configured correctly           |
+| Area                                               | Impact              | Description                                    |
+|----------------------------------------------------|---------------------|------------------------------------------------|
+| `.opencode/plugins/sound-on-complete.ts`           | Modified            | Rewrite with correct OpenCode format           |
+| `.opencode/opencode.jsonc`                         | No Change           | Already configured correctly                   |
 
 ## Risks
 
-| Risk                                     | Likelihood     | Mitigation                                      |
-|------------------------------------------|----------------|-------------------------------------------------|
-| Tool hooks don't fire in all scenarios   | Medium         | Test with session.idle fallback                 |
-| Windows sound not playing                | Low            | Test multiple approaches (powershell, python)   |
-| Context params undefined                 | Medium         | Add logging to verify context received          |
+| Risk                                             | Likelihood             | Mitigation                                              |
+|--------------------------------------------------|------------------------|---------------------------------------------------------|
+| Tool hooks don't fire in all scenarios           | Medium                 | Test with session.idle fallback                         |
+| Windows sound not playing                        | Low                    | Test multiple approaches (powershell, python)           |
+| Context params undefined                         | Medium                 | Add logging to verify context received                  |
 
 ## Rollback Plan
 

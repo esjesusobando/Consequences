@@ -352,21 +352,21 @@ await context.tracing.stop({ path: 'trace.zip' });
 
 ## 5. Comparativa: Playwright vs Puppeteer vs Cypress
 
-| Criterio                      | Playwright                       | Puppeteer                           | Cypress                         |
-|-------------------------------|----------------------------------|-------------------------------------|---------------------------------|
-| Motor                         | Chromium + Firefox + WebKit      | Solo Chromium/Chrome                | Solo Chromium/Electron          |
-| Lenguajes                     | JS, TS, Python, Java, C#         | JS, TS                              | JS, TS                          |
-| Auto-wait                     | Si, nativo y robusto             | Manual, hay que escribir `waitFor*` | Si, pero con timeouts fijos     |
-| Multi-tab / multi-context     | Nativo (contextos aislados)      | Limitado                            | No soporta                      |
-| iFrames cross-origin          | Si                               | Parcial                             | No (limitacion de arquitectura) |
-| Ejecucion paralela            | Nativa (workers)                 | Manual                              | Requiere Dashboard pago         |
-| Intercepcion de red           | Completa (request/response/mock) | Basica                              | Solo XHR/fetch                  |
-| Mantenido por                 | Microsoft                        | Google (mantenimiento tibio)        | Cypress.io                      |
-| Curva de aprendizaje          | Media                            | Baja                                | Baja (DSL propio)               |
-| Headless + Headed             | Ambos, mismo API                 | Ambos                               | Headless limitado               |
-| Traces / Time travel debugger | `trace.zip` visual               | No                                  | Si, excelente                   |
-| Costo                         | Open source                      | Open source                         | Freemium (dashboard pago)       |
-| Velocidad relativa            | Muy rapido                       | Rapido                              | Lento (arquitectura)            |
+| Criterio                              | Playwright                               | Puppeteer                                   | Cypress                                 |
+|---------------------------------------|------------------------------------------|---------------------------------------------|-----------------------------------------|
+| Motor                                 | Chromium + Firefox + WebKit              | Solo Chromium/Chrome                        | Solo Chromium/Electron                  |
+| Lenguajes                             | JS, TS, Python, Java, C#                 | JS, TS                                      | JS, TS                                  |
+| Auto-wait                             | Si, nativo y robusto                     | Manual, hay que escribir `waitFor*`         | Si, pero con timeouts fijos             |
+| Multi-tab / multi-context             | Nativo (contextos aislados)              | Limitado                                    | No soporta                              |
+| iFrames cross-origin                  | Si                                       | Parcial                                     | No (limitacion de arquitectura)         |
+| Ejecucion paralela                    | Nativa (workers)                         | Manual                                      | Requiere Dashboard pago                 |
+| Intercepcion de red                   | Completa (request/response/mock)         | Basica                                      | Solo XHR/fetch                          |
+| Mantenido por                         | Microsoft                                | Google (mantenimiento tibio)                | Cypress.io                              |
+| Curva de aprendizaje                  | Media                                    | Baja                                        | Baja (DSL propio)                       |
+| Headless + Headed                     | Ambos, mismo API                         | Ambos                                       | Headless limitado                       |
+| Traces / Time travel debugger         | `trace.zip` visual                       | No                                          | Si, excelente                           |
+| Costo                                 | Open source                              | Open source                                 | Freemium (dashboard pago)               |
+| Velocidad relativa                    | Muy rapido                               | Rapido                                      | Lento (arquitectura)                    |
 
 **Veredicto para usar con Claude Code:**
 

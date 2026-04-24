@@ -45,11 +45,11 @@ REJECT if:
 
 Use `REJECT`, `REQUIRE`, `PREFER` to give the AI clear signals:
 
-| Keyword       | Meaning                | AI Action                             |
-|---------------|------------------------|---------------------------------------|
-| `REJECT if`   | Hard rule, must fail   | Returns `STATUS: FAILED`              |
-| `REQUIRE`     | Mandatory pattern      | Returns `STATUS: FAILED` if missing   |
-| `PREFER`      | Soft recommendation    | May note but won't fail               |
+| Keyword               | Meaning                        | AI Action                                     |
+|-----------------------|--------------------------------|-----------------------------------------------|
+| `REJECT if`           | Hard rule, must fail           | Returns `STATUS: FAILED`                      |
+| `REQUIRE`             | Mandatory pattern              | Returns `STATUS: FAILED` if missing           |
+| `PREFER`              | Soft recommendation            | May note but won't fail                       |
 
 ### 3. Use References for Complex Projects
 
@@ -190,15 +190,15 @@ Your `01_Personal_Os/11_AGENTS.md` has two parts:
 
 ## Skill Index
 
-| Trigger (file pattern)            | Skill            | Location                      |
-|-----------------------------------|------------------|-------------------------------|
-| `*.ts`, `*.tsx`                   | TypeScript       | `docs/skills/typescript.md`   |
-| `*.tsx`, `*.jsx`                  | React            | `docs/skills/react.md`        |
-| `*.css`, `*.scss`, `className=`   | Styling          | `docs/skills/tailwind.md`     |
-| `*.py`                            | Python           | `docs/skills/python.md`       |
-| `*.test.*`, `*.spec.*`            | Testing          | `docs/skills/testing.md`      |
-| `*.go`                            | Go               | `docs/skills/go.md`           |
-| `Dockerfile`, `*.yml`             | Infrastructure   | `docs/skills/infra.md`        |
+| Trigger (file pattern)                    | Skill                    | Location                              |
+|-------------------------------------------|--------------------------|---------------------------------------|
+| `*.ts`, `*.tsx`                           | TypeScript               | `docs/skills/typescript.md`           |
+| `*.tsx`, `*.jsx`                          | React                    | `docs/skills/react.md`                |
+| `*.css`, `*.scss`, `className=`           | Styling                  | `docs/skills/tailwind.md`             |
+| `*.py`                                    | Python                   | `docs/skills/python.md`               |
+| `*.test.*`, `*.spec.*`                    | Testing                  | `docs/skills/testing.md`              |
+| `*.go`                                    | Go                       | `docs/skills/go.md`                   |
+| `Dockerfile`, `*.yml`                     | Infrastructure           | `docs/skills/infra.md`                |
 
 ---
 

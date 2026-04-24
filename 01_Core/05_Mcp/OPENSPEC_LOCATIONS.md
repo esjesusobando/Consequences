@@ -9,18 +9,18 @@
 
 ### Activos (Usar estos)
 
-| Ubicación                          | Contenido                              | Uso                                |
-|------------------------------------|----------------------------------------|------------------------------------|
-| `.atl/.atl/openspec/`              | SDD activo - configs, changes, specs   | **PRINCIPAL** - Cambios actuales   |
-| `.atl/.atl/openspec/config.yaml`   | Configuración SDD del proyecto         | Referencia central                 |
-| `.atl/.atl/openspec/changes/`      | Cambios SDD en progreso                | Cambios activos                    |
-| `.atl/.atl/openspec/specs/`        | Specs principales                      | Specs merged                       |
+| Ubicación                                  | Contenido                                      | Uso                                        |
+|--------------------------------------------|------------------------------------------------|--------------------------------------------|
+| `.atl/.atl/openspec/`                      | SDD activo - configs, changes, specs           | **PRINCIPAL** - Cambios actuales           |
+| `.atl/.atl/openspec/config.yaml`           | Configuración SDD del proyecto                 | Referencia central                         |
+| `.atl/.atl/openspec/changes/`              | Cambios SDD en progreso                        | Cambios activos                            |
+| `.atl/.atl/openspec/specs/`                | Specs principales                              | Specs merged                               |
 
 ### Archivados
 
-| Ubicación                                         | Contenido     | Uso                                  |
-|---------------------------------------------------|---------------|--------------------------------------|
-| `05_Archive/09_OpenSpec_Archive/.atl/openspec/`   | Históricos    | Solo lectura, referencia histórica   |
+| Ubicación                                                 | Contenido             | Uso                                          |
+|-----------------------------------------------------------|-----------------------|----------------------------------------------|
+| `05_Archive/09_OpenSpec_Archive/.atl/openspec/`           | Históricos            | Solo lectura, referencia histórica           |
 
 ---
 

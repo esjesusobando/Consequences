@@ -74,11 +74,11 @@ Think_Different/
 
 ### ✅ Fase 0: Backups (COMPLETADOS)
 
-| Commit | Descripción | Estado |
-|--------|-------------|--------|
-| 1 | Backup completo estado actual | ✅ Completado (pendiente push) |
-| 2 | config_paths.py y paths críticos | ⏳ Pendiente |
-| 3 | Skills index y estructura | ⏳ Pendiente |
+| Commit         | Descripción                            | Estado                              |
+|----------------|----------------------------------------|-------------------------------------|
+| 1              | Backup completo estado actual          | ✅ Completado (pendiente push)       |
+| 2              | config_paths.py y paths críticos       | ⏳ Pendiente                         |
+| 3              | Skills index y estructura              | ⏳ Pendiente                         |
 
 **Backup físico:** Copia en `C:\Users\sebas\Desktop\00_Consequences\`
 
@@ -120,17 +120,17 @@ mkdir 03_Output
 
 **Paso 2.2:** Mover contenido
 
-| Origen | Destino |
-|--------|--------|
-| 00_Winter_is_Coming/ | 00_Rules/ |
-| 01_Core/ | 01_Os/01_Core/ |
-| 02_Knowledge/ | 01_Os/02_Knowledge/ |
-| 03_Tasks/ | 01_Os/03_Task/ |
-| 04_Operations/ | 01_Os/04_Operations/ |
-| 05_Archive/ | 01_Os/05_Archive/ |
-| 07_Projects/ | 01_Os/06_Projects/ |
-| 06_Playground/ | 02_Playground/ |
-| (nuevo) | 03_Output/ |
+| Origen                     | Destino                    |
+|----------------------------|----------------------------|
+| 00_Winter_is_Coming/       | 00_Rules/                  |
+| 01_Core/                   | 01_Os/01_Core/             |
+| 02_Knowledge/              | 01_Os/02_Knowledge/        |
+| 03_Tasks/                  | 01_Os/03_Task/             |
+| 04_Operations/             | 01_Os/04_Operations/       |
+| 05_Archive/                | 01_Os/05_Archive/          |
+| 07_Projects/               | 01_Os/06_Projects/         |
+| 06_Playground/             | 02_Playground/             |
+| (nuevo)                    | 03_Output/                 |
 
 **Paso 2.3:** Crear symlinks de backwards (opcional)
 ```bash
@@ -162,27 +162,27 @@ refactor: nueva estructura OS con backwards support
 
 ## 📊 Métricas del Proyecto
 
-| Métrica | Valor |
-|---------|-------|
-| Archivos totales | ~15,844 |
-| Skills categorías | 22 |
-| MCP servers activos | 27 |
-| Scripts con sys.path hardcodeado | 89 |
-| Scripts usando config_paths.py | 302 ✅ |
-| HUBs principales | 12 |
-| Commits de backup | 3 |
-| Commits de migración | 1 |
+| Métrica                                | Valor         |
+|----------------------------------------|---------------|
+| Archivos totales                       | ~15,844       |
+| Skills categorías                      | 22            |
+| MCP servers activos                    | 27            |
+| Scripts con sys.path hardcodeado       | 89            |
+| Scripts usando config_paths.py         | 302 ✅         |
+| HUBs principales                       | 12            |
+| Commits de backup                      | 3             |
+| Commits de migración                   | 1             |
 
 ---
 
 ## ⚠️ Riscos y Mitigaciones
 
-| Riesgo | Probabilidad | Impacto | Mitigación |
-|--------|--------------|--------|----------|
-| Scripts rompen | Alta | Alto | Backwards via config_paths.py |
-| Paths incorrectos | Media | Alto | Test post-migración con HUBs |
-| Pérdida de datos | Baja | Crítico | Backups múltiples |
-| Conflictos Git | Media | Bajo | Commits atómicos |
+| Riesgo                  | Probabilidad         | Impacto        | Mitigación                          |
+|-------------------------|----------------------|----------------|-------------------------------------|
+| Scripts rompen          | Alta                 | Alto           | Backwards via config_paths.py       |
+| Paths incorrectos       | Media                | Alto           | Test post-migración con HUBs        |
+| Pérdida de datos        | Baja                 | Crítico        | Backups múltiples                   |
+| Conflictos Git          | Media                | Bajo           | Commits atómicos                    |
 
 ---
 
@@ -204,13 +204,13 @@ python 08_Scripts_Os/config_paths.py
 
 ## 📅 Cronograma Tentativo
 
-| Fase | Duración Estimada | Estado |
-|------|------------------|--------|
-| Fase 0: Backups | ~15 min | ⏳ En curso |
-| Fase 1: Scripts dinámicos | ~30 min | ⏳ Pendiente |
-| Fase 2: Migrar estructura | ~20 min | ⏳ Pendiente |
-| Fase 3: Actualizar configs | ~10 min | ⏳ Pendiente |
-| Fase 4: Commit final | ~5 min | ⏳ Pendiente |
+| Fase                             | Duración Estimada        | Estado            |
+|----------------------------------|--------------------------|-------------------|
+| Fase 0: Backups                  | ~15 min                  | ⏳ En curso        |
+| Fase 1: Scripts dinámicos        | ~30 min                  | ⏳ Pendiente       |
+| Fase 2: Migrar estructura        | ~20 min                  | ⏳ Pendiente       |
+| Fase 3: Actualizar configs       | ~10 min                  | ⏳ Pendiente       |
+| Fase 4: Commit final             | ~5 min                   | ⏳ Pendiente       |
 
 **Total estimado:** ~80 minutos
 
@@ -218,10 +218,10 @@ python 08_Scripts_Os/config_paths.py
 
 ## 📝 Changelog
 
-| Fecha | Cambio | Autor |
-|-------|--------|-------|
-| 2026-04-23 | Plan creado | IA + Sebastián |
-| 2026-04-23 | Backups iniciados | IA + Sebastián |
+| Fecha            | Cambio                  | Autor                |
+|------------------|-------------------------|----------------------|
+| 2026-04-23       | Plan creado             | IA + Sebastián       |
+| 2026-04-23       | Backups iniciados       | IA + Sebastián       |
 
 ---
 

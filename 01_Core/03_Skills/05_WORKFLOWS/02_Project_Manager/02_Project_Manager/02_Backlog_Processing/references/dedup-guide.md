@@ -16,11 +16,11 @@ Before creating a new task, search `03_Tasks/` for:
 
 ### Step 2: Calculate Similarity
 
-| Similarity       | Action                             |
-|------------------|------------------------------------|
-| >80%             | Merge as sub-task                  |
-| 50-80%           | Add reference to existing task     |
-| <50%             | Create as new task                 |
+| Similarity               | Action                                     |
+|--------------------------|--------------------------------------------|
+| >80%                     | Merge as sub-task                          |
+| 50-80%                   | Add reference to existing task             |
+| <50%                     | Create as new task                         |
 
 ### Step 3: Mark Duplicates
 

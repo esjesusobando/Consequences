@@ -7,23 +7,23 @@
 
 ## Datos del Evento
 
-| Campo              | Valor                                       |
-|--------------------|---------------------------------------------|
-| Nombre             | Efraín cumple 7 🐻                           |
-| Fecha              | Sábado, 14 de Marzo 2026                    |
-| Hora               | 5:00 PM — 9:00 PM (UTC-4 Venezuela)         |
-| Lugar              | Play Land en The Land, Ciudad Ojeda         |
-| Creado por         | Claudia Farías 💜                            |
+| Campo                    | Valor                                             |
+|--------------------------|---------------------------------------------------|
+| Nombre                   | Efraín cumple 7 🐻                                 |
+| Fecha                    | Sábado, 14 de Marzo 2026                          |
+| Hora                     | 5:00 PM — 9:00 PM (UTC-4 Venezuela)               |
+| Lugar                    | Play Land en The Land, Ciudad Ojeda               |
+| Creado por               | Claudia Farías 💜                                  |
 
 - --
 
 ## Deploy
 
-| Recurso                    | URL                                                           |
-|----------------------------|---------------------------------------------------------------|
-| **Live**                   | `welcome-efrain-world.vercel.app`                             |
-| **Repo GitHub**            | `github.com/iastrongmagazine/Welcome_Efrain_World`            |
-| **Vercel project**         | `vercel.com/ai-strongs-projects/welcome-efrain-world`         |
+| Recurso                          | URL                                                                 |
+|----------------------------------|---------------------------------------------------------------------|
+| **Live**                         | `welcome-efrain-world.vercel.app`                                   |
+| **Repo GitHub**                  | `github.com/iastrongmagazine/Welcome_Efrain_World`                  |
+| **Vercel project**               | `vercel.com/ai-strongs-projects/welcome-efrain-world`               |
 
 ## Archivos en producción (3 archivos)
 
@@ -63,12 +63,12 @@ Abre tu invitación aquí 👇
 
 | # | Botón | Acción |
 
-|-------------|----------------------------------|---------------------------------------------------------|
-| 1           | 🐻 ¡Unirme al rescate!            | WhatsApp `584166629497` con mensaje pre-llenado         |
-| 2           | 🗺️ Ver misión en el mapa         | `maps.app.goo.gl/xjGzjnxjoWwSBeqe9`                     |
-| 3           | 📅 Añadir al Calendario           | GCal 14/03 5PM–9PM VE                                   |
-| 4           | 🪙 Baúl del Tesoro                | Modal con mensaje de obsequio en efectivo               |
-| 5           | 🎮 ¡Iniciar Misión!               | Game.html en iframe + pausa música                      |
+|-------------------|----------------------------------------|---------------------------------------------------------------|
+| 1                 | 🐻 ¡Unirme al rescate!                  | WhatsApp `584166629497` con mensaje pre-llenado               |
+| 2                 | 🗺️ Ver misión en el mapa               | `maps.app.goo.gl/xjGzjnxjoWwSBeqe9`                           |
+| 3                 | 📅 Añadir al Calendario                 | GCal 14/03 5PM–9PM VE                                         |
+| 4                 | 🪙 Baúl del Tesoro                      | Modal con mensaje de obsequio en efectivo                     |
+| 5                 | 🎮 ¡Iniciar Misión!                     | Game.html en iframe + pausa música                            |
 
 - --
 

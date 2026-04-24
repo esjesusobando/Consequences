@@ -166,11 +166,11 @@ Annotate directories with a brief comment explaining their role. Only include di
 When there are distinct modules or components with clear responsibilities, present them in a table:
 
 ```
-| Module              | Responsibility                        |
-|---------------------|---------------------------------------|
-| `src/routes/`       | HTTP request handling and routing     |
-| `src/services/`     | Core business logic                   |
-| `src/models/`       | Database models and queries           |
+| Module                      | Responsibility                                |
+|-----------------------------|-----------------------------------------------|
+| `src/routes/`               | HTTP request handling and routing             |
+| `src/services/`             | Core business logic                           |
+| `src/models/`               | Database models and queries                   |
 ```
 
 Describe how the modules connect -- what calls what, where data flows between them.
@@ -184,12 +184,12 @@ Describe how the modules connect -- what calls what, where data flows between th
 Present as a table when there are multiple dependencies:
 
 ```
-| Dependency      | What it's used for              | Configured via          |
-|-----------------|---------------------------------|-------------------------|
-| PostgreSQL      | Primary data store              | `DATABASE_URL`          |
-| Redis           | Session cache and job queue     | `REDIS_URL`             |
-| Stripe API      | Payment processing              | `STRIPE_SECRET_KEY`     |
-| S3              | File uploads                    | `AWS_*` env vars        |
+| Dependency              | What it's used for                      | Configured via                  |
+|-------------------------|-----------------------------------------|---------------------------------|
+| PostgreSQL              | Primary data store                      | `DATABASE_URL`                  |
+| Redis                   | Session cache and job queue             | `REDIS_URL`                     |
+| Stripe API              | Payment processing                      | `STRIPE_SECRET_KEY`             |
+| S3                      | File uploads                            | `AWS_*` env vars                |
 ```
 
 If no external dependencies are detected, state that: "This project appears self-contained with no external service dependencies."
@@ -213,12 +213,12 @@ Examples of architectural abstractions worth surfacing:
 Present both domain terms and abstractions in a single table:
 
 ```
-| Concept              | What it means in this codebase                              |
-|----------------------|-------------------------------------------------------------|
-| `Widget`             | The primary entity users create and manage                  |
-| `Pipeline`           | A sequence of processing steps applied to incoming data     |
-| Service layer        | Business logic in `src/services/`, not handlers             |
-| Middleware chain     | Requests flow through `src/middleware/` first               |
+| Concept                      | What it means in this codebase                                      |
+|------------------------------|---------------------------------------------------------------------|
+| `Widget`                     | The primary entity users create and manage                          |
+| `Pipeline`                   | A sequence of processing steps applied to incoming data             |
+| Service layer                | Business logic in `src/services/`, not handlers                     |
+| Middleware chain             | Requests flow through `src/middleware/` first                       |
 ```
 
 Aim for 5-15 entries. Include only concepts that would confuse a new reader or that represent non-obvious architectural decisions. Skip universally understood terms.
@@ -278,11 +278,11 @@ Cover three things:
 4. **Key files to start with** (for complex projects) -- A table mapping areas of the codebase to specific entry-point files with a brief "why start here" note. This gives a new contributor a concrete reading list instead of staring at a large directory tree. For example:
 
    ```
-| Area             | File                       | Why                                            |
-|------------------|----------------------------|------------------------------------------------|
-| Editor core      | `src/editor/index.ts`      | All editor wiring                              |
-| Data model       | `src/formats/marks.ts`     | The annotation system everything builds on     |
-| Server entry     | `server/index.ts`          | Express app setup and route mounting           |
+| Area                     | File                               | Why                                                    |
+|--------------------------|------------------------------------|--------------------------------------------------------|
+| Editor core              | `src/editor/index.ts`              | All editor wiring                                      |
+| Data model               | `src/formats/marks.ts`             | The annotation system everything builds on             |
+| Server entry             | `server/index.ts`                  | Express app setup and route mounting                   |
    ```
 
    Skip this for projects with fewer than ~10 source files where the directory tree is already a sufficient reading list.

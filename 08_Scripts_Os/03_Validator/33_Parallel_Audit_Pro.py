@@ -1,5 +1,8 @@
 
 # === PROTOCOLO DE RUTA DINÁMICA (v1.1 Alpha) ===
+from pathlib import Path
+import sys
+
 _current = Path(__file__).resolve()
 _root = next((p for p in _current.parents if (p / "01_Core").exists()), None)
 if _root:
@@ -88,7 +91,7 @@ def main():
 
     launch_agent(5, "BeautifierAGENTS", f'python "{ENGINE_DIR / "13_Auditors_Os" / "scripts" / "13_Beautify_Tables.py"}" --target=AGENTS.md')
 
-    launch_agent(6, "BeautifierINVENTORY", f'python "{ENGINE_DIR / "13_Auditors_Os" / "scripts" / "13_Beautify_Tables.py}" --target=01_Core/01_Inventario_Total.md')
+    launch_agent(6, "BeautifierINVENTORY", f'python "{ENGINE_DIR / "13_Auditors_Os" / "scripts" / "13_Beautify_Tables.py"}" --target="01_Core/01_Inventario_Total.md"')
 
     launch_agent(7, "BeautifierCLAUDE", f'python "{ENGINE_DIR / "13_Auditors_Os" / "scripts" / "13_Beautify_Tables.py"}" --target=CLAUDE.md')
 

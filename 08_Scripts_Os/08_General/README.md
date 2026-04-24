@@ -14,12 +14,12 @@ Utilidades generales del sistema: alertas, notificaciones, context reset.
 
 ## 📦 Scripts (4)
 
-| #   | Script                | Propósito                 |
-|-----|-----------------------|---------------------------|
-| 00  | `00_Context_Reset.py` | Reset de contexto         |
-| 64  | `64_Campanilla.py`    | Sistema de campanas       |
-| 66  | `66_Alert_Manager.py` | Gestor de alertas         |
-| 77  | `77_Notify_System.py` | Sistema de notificaciones |
+| #         | Script                      | Propósito                       |
+|-----------|-----------------------------|---------------------------------|
+| 00        | `00_Context_Reset.py`       | Reset de contexto               |
+| 64        | `64_Campanilla.py`          | Sistema de campanas             |
+| 66        | `66_Alert_Manager.py`       | Gestor de alertas               |
+| 77        | `77_Notify_System.py`       | Sistema de notificaciones       |
 
 ---
 

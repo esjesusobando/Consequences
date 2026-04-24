@@ -10,25 +10,25 @@
 
 ### ✅ Completed en Esta Sesión
 
-| #       | Item                                  | Ubicación                               | Estado       |
-|---------|---------------------------------------|-----------------------------------------|--------------|
-| 1       | Mapeo completo del sistema            | `11_System_Mapping.md`                  | ✅            |
-| 2       | Estado del Arte v6.0                  | `12_Estado_Del_Arte.md`                 | ✅            |
-| 3       | README.md actualizado                 | Raíz                                    | ✅            |
-| 4       | Perfiles 02-05 actualizados           | `.agent/01_Agents/Perfiles/`            | ✅            |
-| 5       | 6 posts de Anthropic documentados     | `13_Anthropic_Engineering_01_07.md`     | ✅            |
-| 6       | Feedback + gaps identificados         | `13_Anthropic_Engineering_02_03.md`     | ✅            |
+| #               | Item                                          | Ubicación                                       | Estado               |
+|-----------------|-----------------------------------------------|-------------------------------------------------|----------------------|
+| 1               | Mapeo completo del sistema                    | `11_System_Mapping.md`                          | ✅                    |
+| 2               | Estado del Arte v6.0                          | `12_Estado_Del_Arte.md`                         | ✅                    |
+| 3               | README.md actualizado                         | Raíz                                            | ✅                    |
+| 4               | Perfiles 02-05 actualizados                   | `.agent/01_Agents/Perfiles/`                    | ✅                    |
+| 5               | 6 posts de Anthropic documentados             | `13_Anthropic_Engineering_01_07.md`             | ✅                    |
+| 6               | Feedback + gaps identificados                 | `13_Anthropic_Engineering_02_03.md`             | ✅                    |
 
 ### ✅ Completed Sesión Anterior
 
-| #       | Item                             | Ubicación                                               | Estado       |
-|---------|----------------------------------|---------------------------------------------------------|--------------|
-| 1       | 5 perfiles de negocio            | `.agent/01_Agents/Perfiles/`                            | ✅            |
-| 2       | Scripts Anthropic Harness        | `04_Operations/08_Scripts_Os/11_Anthropic_Harness/`     | ✅            |
-| 3       | Skills Anthropic                 | `.agent/02_Skills/14_Anthropic_Harness/`                | ✅            |
-| 4       | Workflow Anthropic               | `.agent/03_Workflows/17_Anthropic_Harness.md`           | ✅            |
-| 5       | Hooks Harness                    | `.agent/04_Extensions/hooks/05_Harness/`                | ✅            |
-| 6       | Documento artículo Anthropic     | `10_Anthropic_Harness_Design.md`                        | ✅            |
+| #               | Item                                     | Ubicación                                                       | Estado               |
+|-----------------|------------------------------------------|-----------------------------------------------------------------|----------------------|
+| 1               | 5 perfiles de negocio                    | `.agent/01_Agents/Perfiles/`                                    | ✅                    |
+| 2               | Scripts Anthropic Harness                | `04_Operations/08_Scripts_Os/11_Anthropic_Harness/`             | ✅                    |
+| 3               | Skills Anthropic                         | `.agent/02_Skills/14_Anthropic_Harness/`                        | ✅                    |
+| 4               | Workflow Anthropic                       | `.agent/03_Workflows/17_Anthropic_Harness.md`                   | ✅                    |
+| 5               | Hooks Harness                            | `.agent/04_Extensions/hooks/05_Harness/`                        | ✅                    |
+| 6               | Documento artículo Anthropic             | `10_Anthropic_Harness_Design.md`                                | ✅                    |
 
 ---
 
@@ -198,11 +198,11 @@ Agente usa Playwright/Puppeteer para testar la app como usuario real — clickea
 **¿Qué hace?**
 Sistema de 3 tipos de graders:
 
-| Grader              | Cuándo usar                  | Ejemplo                             |
-|---------------------|------------------------------|-------------------------------------|
-| **Code-based**      | Verificaciones objetivas     | `assert response.status == 200`     |
-| **Model-based**     | Evaluaciones subjetivas      | "Does this design look good?"       |
-| **Human**           | Gold standard final          | SME review                          |
+| Grader                      | Cuándo usar                          | Ejemplo                                     |
+|-----------------------------|--------------------------------------|---------------------------------------------|
+| **Code-based**              | Verificaciones objetivas             | `assert response.status == 200`             |
+| **Model-based**             | Evaluaciones subjetivas              | "Does this design look good?"               |
+| **Human**                   | Gold standard final                  | SME review                                  |
 
 **Por qué es vital:**
 - Distintos problemas necesitan distintos graders
@@ -213,18 +213,18 @@ Sistema de 3 tipos de graders:
 
 ## 📊 RESUMEN DE PRIORIDADES
 
-| Prioridad      | #       | Concepto                      | Status                |
-|----------------|---------|-------------------------------|-----------------------|
-| 🔴 VITAL        | 1       | Auto Mode Security            | ⏳ NO implementado     |
-| 🔴 VITAL        | 2       | Eval/Generator Separation     | ✅ Listo               |
-| 🟠 ALTA         | 3       | pass@k Metrics                | ⏳ NO implementado     |
-| 🟠 ALTA         | 4       | Eval Awareness Detection      | ⏳ NO implementado     |
-| 🟠 ALTA         | 5       | Feature List JSON             | ⏳ NO implementado     |
-| 🟡 MEDIA        | 6       | Agent Teams Locks             | ⏳ Parcial             |
-| 🟡 MEDIA        | 7       | Progress File                 | ⏳ NO implementado     |
-| 🟡 MEDIA        | 8       | Multi-Agent Roles             | ⏳ NO implementado     |
-| 🟢 BAJA         | 9       | E2E Browser Testing           | ✅ Listo               |
-| 🟢 BAJA         | 10      | Graders Framework             | ⏳ Parcial             |
+| Prioridad              | #               | Concepto                              | Status                        |
+|------------------------|-----------------|---------------------------------------|-------------------------------|
+| 🔴 VITAL                | 1               | Auto Mode Security                    | ⏳ NO implementado             |
+| 🔴 VITAL                | 2               | Eval/Generator Separation             | ✅ Listo                       |
+| 🟠 ALTA                 | 3               | pass@k Metrics                        | ⏳ NO implementado             |
+| 🟠 ALTA                 | 4               | Eval Awareness Detection              | ⏳ NO implementado             |
+| 🟠 ALTA                 | 5               | Feature List JSON                     | ⏳ NO implementado             |
+| 🟡 MEDIA                | 6               | Agent Teams Locks                     | ⏳ Parcial                     |
+| 🟡 MEDIA                | 7               | Progress File                         | ⏳ NO implementado             |
+| 🟡 MEDIA                | 8               | Multi-Agent Roles                     | ⏳ NO implementado             |
+| 🟢 BAJA                 | 9               | E2E Browser Testing                   | ✅ Listo                       |
+| 🟢 BAJA                 | 10              | Graders Framework                     | ⏳ Parcial                     |
 
 ---
 
@@ -232,56 +232,56 @@ Sistema de 3 tipos de graders:
 
 ### Fase 1: Validación de Archivos Existentes
 
-| #       | Prueba                          | Expected        |
-|---------|---------------------------------|-----------------|
-| 1.1     | Verificar Perfiles 5/5          | 5 archivos      |
-| 1.2     | Verificar Anthropic scripts     | 5 archivos      |
-| 1.3     | Verificar Skills Anthropic      | 3 skills        |
-| 1.4     | Verificar Workflow              | Existe          |
-| 1.5     | Verificar Hooks                 | 2 hooks         |
+| #               | Prueba                                  | Expected                |
+|-----------------|-----------------------------------------|-------------------------|
+| 1.1             | Verificar Perfiles 5/5                  | 5 archivos              |
+| 1.2             | Verificar Anthropic scripts             | 5 archivos              |
+| 1.3             | Verificar Skills Anthropic              | 3 skills                |
+| 1.4             | Verificar Workflow                      | Existe                  |
+| 1.5             | Verificar Hooks                         | 2 hooks                 |
 
 ### Fase 2: Pruebas de Integración de Perfiles
 
-| #       | Prueba                                       | Expected                |
-|---------|----------------------------------------------|-------------------------|
-| 2.1     | Load Perfil 01 (Product Builder)             | Keywords detectados     |
-| 2.2     | Load Perfil 05 (Platform Engineer)           | Keywords detectados     |
-| 2.3     | Verificar referencias Anthropic en 01        | 5+ menciones            |
-| 2.4     | Verificar referencias Anthropic en 02-05     | Mismos componentes      |
+| #               | Prueba                                               | Expected                        |
+|-----------------|------------------------------------------------------|---------------------------------|
+| 2.1             | Load Perfil 01 (Product Builder)                     | Keywords detectados             |
+| 2.2             | Load Perfil 05 (Platform Engineer)                   | Keywords detectados             |
+| 2.3             | Verificar referencias Anthropic en 01                | 5+ menciones                    |
+| 2.4             | Verificar referencias Anthropic en 02-05             | Mismos componentes              |
 
 ### Fase 3: Pruebas de Scripts
 
-| #       | Prueba               | Expected           |
-|---------|----------------------|--------------------|
-| 3.1     | Safety Wrapper       | Output de test     |
-| 3.2     | Context Manager      | Output de test     |
-| 3.3     | Evaluator Runner     | Output de test     |
-| 3.4     | Sprint Contract      | Output de test     |
-| 3.5     | Playwright QA        | Output de test     |
+| #               | Prueba                       | Expected                   |
+|-----------------|------------------------------|----------------------------|
+| 3.1             | Safety Wrapper               | Output de test             |
+| 3.2             | Context Manager              | Output de test             |
+| 3.3             | Evaluator Runner             | Output de test             |
+| 3.4             | Sprint Contract              | Output de test             |
+| 3.5             | Playwright QA                | Output de test             |
 
 ### Fase 4-7: Documentación, Git, Workflow
 
-| #       | Prueba               | Expected               |
-|---------|----------------------|------------------------|
-| 4.1     | Hooks se activan     | Logs                   |
-| 5.1     | Workflow corre       | 3 fases                |
-| 6.1     | Docs completos       | >1000 líneas           |
-| 7.1     | Git clean            | Working tree clean     |
+| #               | Prueba                       | Expected                       |
+|-----------------|------------------------------|--------------------------------|
+| 4.1             | Hooks se activan             | Logs                           |
+| 5.1             | Workflow corre               | 3 fases                        |
+| 6.1             | Docs completos               | >1000 líneas                   |
+| 7.1             | Git clean                    | Working tree clean             |
 
 ---
 
 ## ✅ Checklist de Resultados Esperados
 
-| Fase          | Pruebas       | Estado Esperado       |
-|---------------|---------------|-----------------------|
-| 1             | 5/5           | ✅ Todas pasan         |
-| 2             | 4/4           | ✅ Todas pasan         |
-| 3             | 5/5           | ✅ Todas pasan         |
-| 4             | 2/2           | ✅ Todas pasan         |
-| 5             | 2/2           | ✅ Todas pasan         |
-| 6             | 3/3           | ✅ Todas pasan         |
-| 7             | 3/3           | ✅ Todas pasan         |
-| **TOTAL**     | **24/24**     | **100% PASS**         |
+| Fase                  | Pruebas               | Estado Esperado               |
+|-----------------------|-----------------------|-------------------------------|
+| 1                     | 5/5                   | ✅ Todas pasan                 |
+| 2                     | 4/4                   | ✅ Todas pasan                 |
+| 3                     | 5/5                   | ✅ Todas pasan                 |
+| 4                     | 2/2                   | ✅ Todas pasan                 |
+| 5                     | 2/2                   | ✅ Todas pasan                 |
+| 6                     | 3/3                   | ✅ Todas pasan                 |
+| 7                     | 3/3                   | ✅ Todas pasan                 |
+| **TOTAL**             | **24/24**             | **100% PASS**                 |
 
 ---
 

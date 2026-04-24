@@ -8,14 +8,14 @@
 
 ## 📊 Resumen Ejecutivo
 
-| Métrica               | Valor           |
-|-----------------------|-----------------|
-| **Total Skills**      | 4               |
-| **Score Overall**     | 95.2%           |
-| **Status**            | 🎉 EXCELLENT     |
-| **Skills 100%**       | 1               |
-| **Skills 90%+**       | 4               |
-| **Skills <90%**       | 0               |
+| Métrica                       | Valor                   |
+|-------------------------------|-------------------------|
+| **Total Skills**              | 4                       |
+| **Score Overall**             | 95.2%                   |
+| **Status**                    | 🎉 EXCELLENT             |
+| **Skills 100%**               | 1                       |
+| **Skills 90%+**               | 4                       |
+| **Skills <90%**               | 0                       |
 
 ---
 
@@ -23,15 +23,15 @@
 
 ### ✅ 00_Skill_Auditor — 100.0%
 
-| Check                         | Status       |
-|-------------------------------|--------------|
-| YAML frontmatter              | ✅            |
-| name: lowercase               | ✅            |
-| description: has triggers     | ✅            |
-| references/ folder            | ✅            |
-| scripts/ folder               | ✅            |
-| Gotchas section (3+)          | ✅            |
-| Esencia Original              | ✅            |
+| Check                                 | Status               |
+|---------------------------------------|----------------------|
+| YAML frontmatter                      | ✅                    |
+| name: lowercase                       | ✅                    |
+| description: has triggers             | ✅                    |
+| references/ folder                    | ✅                    |
+| scripts/ folder                       | ✅                    |
+| Gotchas section (3+)                  | ✅                    |
+| Esencia Original                      | ✅                    |
 
 **Warnings**: evals.json not found (v2.0 recommendation)
 
@@ -39,15 +39,15 @@
 
 ### ✅ 13_System_Master — 93.3%
 
-| Check                         | Status       |
-|-------------------------------|--------------|
-| YAML frontmatter              | ✅            |
-| name: lowercase               | ✅            |
-| description: has triggers     | ✅            |
-| references/ folder            | ✅            |
-| scripts/ folder               | ✅            |
-| Gotchas section (3+)          | ✅            |
-| Esencia Original              | ✅            |
+| Check                                 | Status               |
+|---------------------------------------|----------------------|
+| YAML frontmatter                      | ✅                    |
+| name: lowercase                       | ✅                    |
+| description: has triggers             | ✅                    |
+| references/ folder                    | ✅                    |
+| scripts/ folder                       | ✅                    |
+| Gotchas section (3+)                  | ✅                    |
+| Esencia Original                      | ✅                    |
 
 **Warnings**: State Persistence (recommended), evals.json (v2.0)
 
@@ -55,15 +55,15 @@
 
 ### ✅ 16_Silicon_Valley_Data_Analyst — 93.3%
 
-| Check                         | Status       |
-|-------------------------------|--------------|
-| YAML frontmatter              | ✅            |
-| name: lowercase               | ✅            |
-| description: has triggers     | ✅            |
-| references/ folder            | ✅            |
-| scripts/ folder               | ✅            |
-| Gotchas section (3+)          | ✅            |
-| Esencia Original              | ✅            |
+| Check                                 | Status               |
+|---------------------------------------|----------------------|
+| YAML frontmatter                      | ✅                    |
+| name: lowercase                       | ✅                    |
+| description: has triggers             | ✅                    |
+| references/ folder                    | ✅                    |
+| scripts/ folder                       | ✅                    |
+| Gotchas section (3+)                  | ✅                    |
+| Esencia Original                      | ✅                    |
 
 **Warnings**: SKILL.md has 402 lines (ideal: < 200), State Persistence (recommended)
 
@@ -71,15 +71,15 @@
 
 ### ✅ 17_SEO_SOTA_Master — 93.3%
 
-| Check                         | Status       |
-|-------------------------------|--------------|
-| YAML frontmatter              | ✅            |
-| name: lowercase               | ✅            |
-| description: has triggers     | ✅            |
-| references/ folder            | ✅            |
-| scripts/ folder               | ✅            |
-| Gotchas section (3+)          | ✅            |
-| Esencia Original              | ✅            |
+| Check                                 | Status               |
+|---------------------------------------|----------------------|
+| YAML frontmatter                      | ✅                    |
+| name: lowercase                       | ✅                    |
+| description: has triggers             | ✅                    |
+| references/ folder                    | ✅                    |
+| scripts/ folder                       | ✅                    |
+| Gotchas section (3+)                  | ✅                    |
+| Esencia Original                      | ✅                    |
 
 **Warnings**: SKILL.md has 547 lines (max: 500), State Persistence (recommended)
 
@@ -96,12 +96,12 @@
 
 ## 🎯 Scoring Criteria (SOTA v5.1)
 
-| Score       | Rating            | Color        |
-|-------------|-------------------|--------------|
-| 90-100%     | ✅ Excellent       | Verde        |
-| 70-89%      | 👍 Good            | Amarillo     |
-| 50-69%      | ⚠️ Needs Work     | Naranja      |
-| <50%        | ❌ Failed          | Rojo         |
+| Score               | Rating                    | Color                |
+|---------------------|---------------------------|----------------------|
+| 90-100%             | ✅ Excellent               | Verde                |
+| 70-89%              | 👍 Good                    | Amarillo             |
+| 50-69%              | ⚠️ Needs Work             | Naranja              |
+| <50%                | ❌ Failed                  | Rojo                 |
 
 ---
 

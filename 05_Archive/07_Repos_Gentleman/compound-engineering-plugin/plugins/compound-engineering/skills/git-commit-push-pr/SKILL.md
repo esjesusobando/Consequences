@@ -227,13 +227,13 @@ Assess the PR along two axes before writing, based on the full branch diff:
 
 Use this to select the right description depth:
 
-| Change profile                                               | Description approach                                                                                                                                                               |
-|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Small + simple (typo, config, dep bump)                      | 1-2 sentences, no headers. Total body under ~300 characters.                                                                                                                       |
-| Small + non-trivial (targeted bugfix, behavioral change)     | Short "Problem / Fix" narrative, ~3-5 sentences. Enough for a reviewer to understand *why* without reading the diff. No headers needed unless there are two distinct concerns.     |
-| Medium feature or refactor                                   | Summary paragraph, then a section explaining what changed and why. Call out design decisions.                                                                                      |
-| Large or architecturally significant                         | Full narrative: problem context, approach chosen (and why), key decisions, migration notes or rollback considerations if relevant.                                                 |
-| Performance improvement                                      | Include before/after measurements if available. A markdown table is effective here.                                                                                                |
+| Change profile                                                       | Description approach                                                                                                                                                                       |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Small + simple (typo, config, dep bump)                              | 1-2 sentences, no headers. Total body under ~300 characters.                                                                                                                               |
+| Small + non-trivial (targeted bugfix, behavioral change)             | Short "Problem / Fix" narrative, ~3-5 sentences. Enough for a reviewer to understand *why* without reading the diff. No headers needed unless there are two distinct concerns.             |
+| Medium feature or refactor                                           | Summary paragraph, then a section explaining what changed and why. Call out design decisions.                                                                                              |
+| Large or architecturally significant                                 | Full narrative: problem context, approach chosen (and why), key decisions, migration notes or rollback considerations if relevant.                                                         |
+| Performance improvement                                              | Include before/after measurements if available. A markdown table is effective here.                                                                                                        |
 
 **Brevity matters for small changes.** A 3-line bugfix with a 20-line PR description signals the author didn't calibrate. Match the weight of the description to the weight of the change. When in doubt, shorter is better -- reviewers can read the diff.
 
@@ -248,10 +248,10 @@ Use this to select the right description depth:
 - **Markdown tables for data**: When there are before/after comparisons, performance numbers, or option trade-offs, a table communicates density well. Example:
 
   ```markdown
-| Metric            | Before       | After       |
-|-------------------|--------------|-------------|
-| p95 latency       | 340ms        | 120ms       |
-| Memory (peak)     | 2.1GB        | 1.4GB       |
+| Metric                    | Before               | After               |
+|---------------------------|----------------------|---------------------|
+| p95 latency               | 340ms                | 120ms               |
+| Memory (peak)             | 2.1GB                | 1.4GB               |
   ```
 
 - **No empty sections**: If a section (like "Breaking Changes" or "Migration Guide") doesn't apply, omit it entirely. Do not include it with "N/A" or "None".
@@ -290,14 +290,14 @@ Append a badge footer to the PR description, separated by a `---` rule. Do not a
 
 Fill in at PR creation time:
 
-| Placeholder         | Value                          | Example                              |
-|---------------------|--------------------------------|--------------------------------------|
-| `[MODEL]`           | Model name                     | Claude Opus 4.6, GPT-5.4             |
-| `[CONTEXT]`         | Context window (if known)      | 200K, 1M                             |
-| `[THINKING]`        | Thinking level (if known)      | extended thinking                    |
-| `[HARNESS]`         | Tool running you               | Claude Code, Codex, Gemini CLI       |
-| `[HARNESS_URL]`     | Link to that tool              | `https://claude.com/claude-code`     |
-| `[VERSION]`         | `plugin.json` -> `version`     | 2.40.0                               |
+| Placeholder                 | Value                                  | Example                                      |
+|-----------------------------|----------------------------------------|----------------------------------------------|
+| `[MODEL]`                   | Model name                             | Claude Opus 4.6, GPT-5.4                     |
+| `[CONTEXT]`                 | Context window (if known)              | 200K, 1M                                     |
+| `[THINKING]`                | Thinking level (if known)              | extended thinking                            |
+| `[HARNESS]`                 | Tool running you                       | Claude Code, Codex, Gemini CLI               |
+| `[HARNESS_URL]`             | Link to that tool                      | `https://claude.com/claude-code`             |
+| `[VERSION]`                 | `plugin.json` -> `version`             | 2.40.0                                       |
 
 ### Step 7: Create or update the PR
 

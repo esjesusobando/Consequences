@@ -65,12 +65,12 @@ description: Helps with documents
 
 ### Required Frontmatter
 
-| Field               | Required       | Max Length       | Description                                  |
-|---------------------|----------------|------------------|----------------------------------------------|
-| `name`              | Yes            | 64 chars         | Lowercase letters, numbers, hyphens only     |
-| `description`       | Yes            | 1024 chars       | What it does AND when to use it              |
-| `allowed-tools`     | No             |------------------| Tools Claude can use without asking          |
-| `model`             | No             |------------------| Specific model to use                        |
+| Field                       | Required               | Max Length               | Description                                          |
+|-----------------------------|------------------------|--------------------------|------------------------------------------------------|
+| `name`                      | Yes                    | 64 chars                 | Lowercase letters, numbers, hyphens only             |
+| `description`               | Yes                    | 1024 chars               | What it does AND when to use it                      |
+| `allowed-tools`             | No                     |--------------------------| Tools Claude can use without asking                  |
+| `model`                     | No                     |--------------------------| Specific model to use                                |
 
 ### Naming Conventions
 

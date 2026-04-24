@@ -58,12 +58,12 @@
 
 ## Skills en 05_New_Skills
 
-| Skill                    | Estado            | Ubicacion en 01_Core                            |
-|--------------------------|-------------------|-------------------------------------------------|
-| brand-voice              | Integrado         | `09_Marketing/11_Brand_Voice_Guardian`          |
-| content-ideation         | Integrado         | `09_Marketing/12_Content_Ideation`              |
-| video-prompt-builder     | Integrado         | `20_James_Cameron/01_Video_Prompt_Builder`      |
-| offer-and-bio-writer     | Integrado         | `09_Marketing/13_Offer_And_Bio_Writer`          |
+| Skill                            | Estado                    | Ubicacion en 01_Core                                    |
+|----------------------------------|---------------------------|---------------------------------------------------------|
+| brand-voice                      | Integrado                 | `09_Marketing/11_Brand_Voice_Guardian`                  |
+| content-ideation                 | Integrado                 | `09_Marketing/12_Content_Ideation`                      |
+| video-prompt-builder             | Integrado                 | `20_James_Cameron/01_Video_Prompt_Builder`              |
+| offer-and-bio-writer             | Integrado                 | `09_Marketing/13_Offer_And_Bio_Writer`                  |
 
 ---
 

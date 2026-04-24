@@ -56,17 +56,17 @@
 
 ## Estado Post-Sesion
 
-| Area                      | Estado                                 |
-|---------------------------|----------------------------------------|
-| .mcp.json raiz            | OK 31 MCPs                             |
-| OpenCode config           | OK sin errores env                     |
-| Gentleman global skills   | OK 94/94                               |
-| Estructura 00-08          | OK sin archivos huerfanos en raiz      |
-| Skills README             | OK 21 categorias, nombres correctos    |
-| RULES_INDEX               | OK 23 reglas links correctos           |
-| LFG Agent                 | OK sin refs paths inexistentes         |
-| Hillary Life OS           | OK en produccion 18_Personal_Life_OS   |
-| Git                       | OK push master                         |
+| Area                              | Estado                                         |
+|-----------------------------------|------------------------------------------------|
+| .mcp.json raiz                    | OK 31 MCPs                                     |
+| OpenCode config                   | OK sin errores env                             |
+| Gentleman global skills           | OK 94/94                                       |
+| Estructura 00-08                  | OK sin archivos huerfanos en raiz              |
+| Skills README                     | OK 21 categorias, nombres correctos            |
+| RULES_INDEX                       | OK 23 reglas links correctos                   |
+| LFG Agent                         | OK sin refs paths inexistentes                 |
+| Hillary Life OS                   | OK en produccion 18_Personal_Life_OS           |
+| Git                               | OK push master                                 |
 
 ---
 

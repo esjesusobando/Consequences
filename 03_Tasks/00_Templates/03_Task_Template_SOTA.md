@@ -44,14 +44,14 @@ Resource_Refs:
 
 * *Tech Stack:**
 
-| Componente                          | Valor                                                 |
-|-------------------------------------|-------------------------------------------------------|
-| Framework                           | [Next.js 15]                                          |
-| Lenguaje                            | [TypeScript]                                          |
-| Base_Datos                          | [PostgreSQL]                                          |
-| UI                                  | [Tailwind CSS]                                        |
-| Autenticación                       | [Better Auth]                                         |
-| Arquitectura                        | [App Router, Server Components]                       |
+| Componente                                  | Valor                                                         |
+|---------------------------------------------|---------------------------------------------------------------|
+| Framework                                   | [Next.js 15]                                                  |
+| Lenguaje                                    | [TypeScript]                                                  |
+| Base_Datos                                  | [PostgreSQL]                                                  |
+| UI                                          | [Tailwind CSS]                                                |
+| Autenticación                               | [Better Auth]                                                 |
+| Arquitectura                                | [App Router, Server Components]                               |
 
 * *Current State:** [Estado actual del código]
 
@@ -66,13 +66,13 @@ Resource_Refs:
 
 ## 4. Development Mode
 
-| Aspecto                                | Valor                                       |
-|----------------------------------------|---------------------------------------------|
-| Project Stage                          | [New / Feature / Fix]                       |
-| Breaking Changes                       | [Acceptable / Avoid]                        |
-| Data Handling                          | [Preserve / Migrate]                        |
-| User Base                              | [Quién será afectado]                       |
-| Priority                               | [Speed vs Stability]                        |
+| Aspecto                                        | Valor                                               |
+|------------------------------------------------|-----------------------------------------------------|
+| Project Stage                                  | [New / Feature / Fix]                               |
+| Breaking Changes                               | [Acceptable / Avoid]                                |
+| Data Handling                                  | [Preserve / Migrate]                                |
+| User Base                                      | [Quién será afectado]                               |
+| Priority                                       | [Speed vs Stability]                                |
 
 ## 5. Requirements
 
@@ -84,12 +84,12 @@ Resource_Refs:
 
 * *Non-Functional Requirements:**
 
-| Aspecto                           | Requisito                                     |
-|-----------------------------------|-----------------------------------------------|
-| Performance                       | [<200ms]                                      |
-| Security                          | [Validaciones]                                |
-| Usability                         | [UX/Accessibility]                            |
-| Responsive                        | [Mobile/Tablet/Desktop]                       |
+| Aspecto                                   | Requisito                                             |
+|-------------------------------------------|-------------------------------------------------------|
+| Performance                               | [<200ms]                                              |
+| Security                                  | [Validaciones]                                        |
+| Usability                                 | [UX/Accessibility]                                    |
+| Responsive                                | [Mobile/Tablet/Desktop]                               |
 
 ## 6. Data & Database
 
@@ -116,32 +116,32 @@ Resource_Refs:
 
 * *Server Actions:**
 
-| Operación                        | Descripción                        |
-|----------------------------------|------------------------------------|
-| Create                           | [qué]                              |
-| Update                           | [qué]                              |
-| Delete                           | [qué]                              |
+| Operación                                | Descripción                                |
+|------------------------------------------|--------------------------------------------|
+| Create                                   | [qué]                                      |
+| Update                                   | [qué]                                      |
+| Delete                                   | [qué]                                      |
 
 * *Database Queries:**
 
-| Query                         | Descripción                         |
-|-------------------------------|-------------------------------------|
-| Fetch                         | [datos]                             |
-| Filter                        | [condiciones]                       |
+| Query                                 | Descripción                                 |
+|---------------------------------------|---------------------------------------------|
+| Fetch                                 | [datos]                                     |
+| Filter                                | [condiciones]                               |
 
 ## 8. Frontend
 
 * *New Components:**
 
-| Componente                        | Propósito                        |
-|-----------------------------------|----------------------------------|
-| [Nombre]                          | [qué]                            |
+| Componente                                | Propósito                                |
+|-------------------------------------------|------------------------------------------|
+| [Nombre]                                  | [qué]                                    |
 
 * *Page Updates:**
 
-| Página                         | Cambios                         |
-|--------------------------------|---------------------------------|
-| [Página]                       | [qué]                           |
+| Página                                 | Cambios                                 |
+|----------------------------------------|-----------------------------------------|
+| [Página]                               | [qué]                                   |
 
 * *State Management:** [Zustand/Context/Server State]
 
@@ -182,20 +182,20 @@ Resource_Refs:
 
 * *Second-Order Impact:**
 
-| Tipo                                       | Impacto                          |
-|--------------------------------------------|----------------------------------|
-| Posibles Regresiones                       | [lista]                          |
-| Performance                                | [concerns]                       |
-| User Workflow                              | [impacts]                        |
+| Tipo                                               | Impacto                                  |
+|----------------------------------------------------|------------------------------------------|
+| Posibles Regresiones                               | [lista]                                  |
+| Performance                                        | [concerns]                               |
+| User Workflow                                      | [impacts]                                |
 
 ## 14. Strategic Alignment
 
 * *Alineación GOALS.md:**
 
-| Métrica                                   | Descripción                                     |
-|-------------------------------------------|-------------------------------------------------|
-| North Star                                | [Cómo acerca a la visión]                       |
-| PersonalOS Priority                       | [P0/P1/P2/P3]                                   |
+| Métrica                                           | Descripción                                             |
+|---------------------------------------------------|---------------------------------------------------------|
+| North Star                                        | [Cómo acerca a la visión]                               |
+| PersonalOS Priority                               | [P0/P1/P2/P3]                                           |
 
 - --
 

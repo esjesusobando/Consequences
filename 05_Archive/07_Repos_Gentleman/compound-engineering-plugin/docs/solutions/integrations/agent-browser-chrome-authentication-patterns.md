@@ -26,13 +26,13 @@ before finding one that works reliably with 2FA, SSO, and OAuth.
 
 ## Investigation
 
-| Approach                                  | Result                                                                                                                                 |
-|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `--profile` flag                          | Lightpanda (default engine on some installs) throws "Profiles are not supported with Lightpanda". Must use `--engine chrome`.          |
-| Fresh Chrome profile                      | No GitHub cookies. Shows "Sign up for free" instead of comment form.                                                                   |
-| `--auto-connect`                          | Requires Chrome pre-launched with `--remote-debugging-port`. Error: "No running Chrome instance found" in normal use. Impractical.     |
-| Auth vault (`auth save`/`auth login`)     | Cannot handle 2FA, SSO, or OAuth redirects. Only works for simple username/password forms.                                             |
-| `--session-name` with Chrome engine       | Cookies auto-save/restore. One-time headed login handles any auth method. **This works.**                                              |
+| Approach                                          | Result                                                                                                                                         |
+|---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| `--profile` flag                                  | Lightpanda (default engine on some installs) throws "Profiles are not supported with Lightpanda". Must use `--engine chrome`.                  |
+| Fresh Chrome profile                              | No GitHub cookies. Shows "Sign up for free" instead of comment form.                                                                           |
+| `--auto-connect`                                  | Requires Chrome pre-launched with `--remote-debugging-port`. Error: "No running Chrome instance found" in normal use. Impractical.             |
+| Auth vault (`auth save`/`auth login`)             | Cannot handle 2FA, SSO, or OAuth redirects. Only works for simple username/password forms.                                                     |
+| `--session-name` with Chrome engine               | Cookies auto-save/restore. One-time headed login handles any auth method. **This works.**                                                      |
 
 ## Working Solution
 

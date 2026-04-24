@@ -23,12 +23,12 @@
 ## Tasks: Update Video_Intel SKILL.md
 
 ### Breakdown
-| Phase     | Tasks     | Focus                     |
-|-----------|-----------|---------------------------|
-| Phase 1   | 4         | Documentation Additions   |
-| Phase 2   | 2         | Section Modifications     |
-| Phase 3   | 3         | Verification              |
-| Total     | 9         |                           |
+| Phase             | Tasks             | Focus                             |
+|-------------------|-------------------|-----------------------------------|
+| Phase 1           | 4                 | Documentation Additions           |
+| Phase 2           | 2                 | Section Modifications             |
+| Phase 3           | 3                 | Verification                      |
+| Total             | 9                 |                                   |
 
 ### Implementation Order
 All tasks edit the same file (SKILL.md). Work sequentially: Phase 1 adds new sections first, Phase 2 modifies existing content, Phase 3 verifies completeness.

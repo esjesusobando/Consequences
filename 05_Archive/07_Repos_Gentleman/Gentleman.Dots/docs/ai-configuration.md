@@ -15,14 +15,14 @@ This configuration includes several AI assistants integrated with Neovim. By def
 
 ## Available AI Assistants
 
-| Plugin                   | Description                        | Status                 |
-|--------------------------|------------------------------------|------------------------|
-| **Claude Code.nvim**     | Claude AI integration (official)   | ✅ Enabled by default   |
-| **OpenCode.nvim**        | OpenCode AI integration            | Disabled               |
-| **Avante.nvim**          | AI-powered coding assistant        | Disabled               |
-| **CopilotChat.nvim**     | GitHub Copilot chat interface      | Disabled               |
-| **CodeCompanion.nvim**   | Multi-AI provider support          | Disabled               |
-| **Gemini.nvim**          | Google Gemini integration          | Disabled               |
+| Plugin                           | Description                                | Status                         |
+|----------------------------------|--------------------------------------------|--------------------------------|
+| **Claude Code.nvim**             | Claude AI integration (official)           | ✅ Enabled by default           |
+| **OpenCode.nvim**                | OpenCode AI integration                    | Disabled                       |
+| **Avante.nvim**                  | AI-powered coding assistant                | Disabled                       |
+| **CopilotChat.nvim**             | GitHub Copilot chat interface              | Disabled                       |
+| **CodeCompanion.nvim**           | Multi-AI provider support                  | Disabled                       |
+| **Gemini.nvim**                  | Google Gemini integration                  | Disabled                       |
 
 ## Switching AI Plugins
 
@@ -57,11 +57,11 @@ nvim ~/.config/nvim/lua/plugins/disabled.lua
 
 These CLI tools are automatically installed by the Gentleman.Dots installer:
 
-| Tool              | Installation Command                         |
-|-------------------|----------------------------------------------|
-| Claude Code CLI   | `curl -fsSL https://claude.ai/install.sh \   | bash` |
-| OpenCode CLI      | `curl -fsSL https://opencode.ai/install \    | bash` |
-| Gemini CLI        | `brew install gemini-cli`                    |
+| Tool                      | Installation Command                                 |
+|---------------------------|------------------------------------------------------|
+| Claude Code CLI           | `curl -fsSL https://claude.ai/install.sh \           | bash` |
+| OpenCode CLI              | `curl -fsSL https://opencode.ai/install \            | bash` |
+| Gemini CLI                | `brew install gemini-cli`                            |
 
 > Some services require API keys. Check each plugin's documentation for details.
 
@@ -74,10 +74,10 @@ gentle-ai
 
 ## Recommended by Use Case
 
-| Use Case                     | Recommended Plugin               |
-|------------------------------|----------------------------------|
-| Full Gentleman experience    | **Claude Code.nvim** (default)   |
-| OpenCode CLI in terminal     | **OpenCode.nvim**                |
-| GitHub Copilot users         | **CopilotChat.nvim**             |
-| Multi-provider flexibility   | **CodeCompanion.nvim**           |
-| Google Gemini users          | **Gemini.nvim**                  |
+| Use Case                             | Recommended Plugin                       |
+|--------------------------------------|------------------------------------------|
+| Full Gentleman experience            | **Claude Code.nvim** (default)           |
+| OpenCode CLI in terminal             | **OpenCode.nvim**                        |
+| GitHub Copilot users                 | **CopilotChat.nvim**                     |
+| Multi-provider flexibility           | **CodeCompanion.nvim**                   |
+| Google Gemini users                  | **Gemini.nvim**                          |

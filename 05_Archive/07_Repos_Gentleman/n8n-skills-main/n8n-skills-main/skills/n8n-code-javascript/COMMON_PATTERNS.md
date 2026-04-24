@@ -1049,18 +1049,18 @@ const summary = {
 
 ### Pattern Selection Guide
 
-| Your Goal                                      | Use Pattern                                          |
-|------------------------------------------------|------------------------------------------------------|
-| Combine multiple API responses                 | Pattern 1 (Multi-source Aggregation)                 |
-| Extract mentions or keywords                   | Pattern 2 (Regex Filtering)                          |
-| Parse formatted text                           | Pattern 3 (Markdown Parsing)                         |
-| Detect changes in data                         | Pattern 4 (JSON Comparison)                          |
-| Prepare form data for CRM                      | Pattern 5 (CRM Transformation)                       |
-| Process GitHub releases                        | Pattern 6 (Release Processing)                       |
-| Add computed fields                            | Pattern 7 (Array Transformation)                     |
-| Format Slack messages                          | Pattern 8 (Block Kit Formatting)                     |
-| Get top results                                | Pattern 9 (Top N Filtering)                          |
-| Create text reports                            | Pattern 10 (String Aggregation)                      |
+| Your Goal                                              | Use Pattern                                                  |
+|--------------------------------------------------------|--------------------------------------------------------------|
+| Combine multiple API responses                         | Pattern 1 (Multi-source Aggregation)                         |
+| Extract mentions or keywords                           | Pattern 2 (Regex Filtering)                                  |
+| Parse formatted text                                   | Pattern 3 (Markdown Parsing)                                 |
+| Detect changes in data                                 | Pattern 4 (JSON Comparison)                                  |
+| Prepare form data for CRM                              | Pattern 5 (CRM Transformation)                               |
+| Process GitHub releases                                | Pattern 6 (Release Processing)                               |
+| Add computed fields                                    | Pattern 7 (Array Transformation)                             |
+| Format Slack messages                                  | Pattern 8 (Block Kit Formatting)                             |
+| Get top results                                        | Pattern 9 (Top N Filtering)                                  |
+| Create text reports                                    | Pattern 10 (String Aggregation)                              |
 
 ### Combining Patterns
 

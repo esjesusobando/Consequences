@@ -14,23 +14,23 @@ La filosofia: **"Si hay 1% de chance de que una skill aplique, INVOCALA."** No e
 
 ## Tabla visual: las 14 sub-skills por categoria
 
-| Categoria | Sub-skill | Proposito | Cuando usarla |
-|-----------|-----------|-----------|---------------|
-| **Planning** | `brainstorming` | Explora intent, requirements y design antes de codear | Toda feature nueva, refactor no trivial |
-| **Planning** | `writing-plans` | Convierte spec en plan de implementacion con fases | Despues de brainstorming, antes de tocar codigo |
-| **Execution** | `executing-plans` | Ejecuta un plan escrito, fase por fase, con checkpoints | Cuando ya hay plan aprobado |
-| **Execution** | `test-driven-development` | Red-Green-Refactor riguroso | Nuevo codigo con logica testable |
-| **Execution** | `demo_tdd` | Demo interactiva del loop TDD | Aprender/mostrar TDD |
-| **Execution** | `subagent-driven-development` | Delega subtareas a subagents paralelos | Features con componentes independientes |
-| **Execution** | `dispatching-parallel-agents` | Lanza N agents en paralelo sobre el mismo codebase | Exploracion, migraciones masivas |
-| **Review** | `requesting-code-review` | Pide review estructurado a otro agent/humano | Antes de merge |
-| **Review** | `receiving-code-review` | Procesa feedback, prioriza fixes, responde comments | Cuando llegan comentarios |
-| **Review** | `finishing-a-development-branch` | Checklist final: tests, docs, changelog, merge | Antes de cerrar branch |
-| **Tooling** | `using-git-worktrees` | Trabajar en multiples branches aislados a la vez | Contexto paralelo sin stash hell |
-| **Tooling** | `systematic-debugging` | Debugging disciplinado (hipotesis -> verificar -> fix) | Bug reproducible no trivial |
-| **Tooling** | `verification-before-completion` | Valida que todo funciona antes de decir "listo" | Siempre, al final de cada task |
-| **Meta** | `writing-skills` | Como escribir nuevas skills siguiendo el formato | Expandir el sistema |
-| **Meta** | `using-superpowers` | Meta-skill: como detectar y invocar skills | Arranque de toda conversacion |
+| Categoria           | Sub-skill                              | Proposito                                                     | Cuando usarla                                         |
+|---------------------|----------------------------------------|---------------------------------------------------------------|-------------------------------------------------------|
+| **Planning**        | `brainstorming`                        | Explora intent, requirements y design antes de codear         | Toda feature nueva, refactor no trivial               |
+| **Planning**        | `writing-plans`                        | Convierte spec en plan de implementacion con fases            | Despues de brainstorming, antes de tocar codigo       |
+| **Execution**       | `executing-plans`                      | Ejecuta un plan escrito, fase por fase, con checkpoints       | Cuando ya hay plan aprobado                           |
+| **Execution**       | `test-driven-development`              | Red-Green-Refactor riguroso                                   | Nuevo codigo con logica testable                      |
+| **Execution**       | `demo_tdd`                             | Demo interactiva del loop TDD                                 | Aprender/mostrar TDD                                  |
+| **Execution**       | `subagent-driven-development`          | Delega subtareas a subagents paralelos                        | Features con componentes independientes               |
+| **Execution**       | `dispatching-parallel-agents`          | Lanza N agents en paralelo sobre el mismo codebase            | Exploracion, migraciones masivas                      |
+| **Review**          | `requesting-code-review`               | Pide review estructurado a otro agent/humano                  | Antes de merge                                        |
+| **Review**          | `receiving-code-review`                | Procesa feedback, prioriza fixes, responde comments           | Cuando llegan comentarios                             |
+| **Review**          | `finishing-a-development-branch`       | Checklist final: tests, docs, changelog, merge                | Antes de cerrar branch                                |
+| **Tooling**         | `using-git-worktrees`                  | Trabajar en multiples branches aislados a la vez              | Contexto paralelo sin stash hell                      |
+| **Tooling**         | `systematic-debugging`                 | Debugging disciplinado (hipotesis -> verificar -> fix)        | Bug reproducible no trivial                           |
+| **Tooling**         | `verification-before-completion`       | Valida que todo funciona antes de decir "listo"               | Siempre, al final de cada task                        |
+| **Meta**            | `writing-skills`                       | Como escribir nuevas skills siguiendo el formato              | Expandir el sistema                                   |
+| **Meta**            | `using-superpowers`                    | Meta-skill: como detectar y invocar skills                    | Arranque de toda conversacion                         |
 
 **Total: 15 sub-skills** (14 de dev + 1 meta para descubrirlas).
 
@@ -38,15 +38,15 @@ La filosofia: **"Si hay 1% de chance de que una skill aplique, INVOCALA."** No e
 
 ## Principios transversales: superpower vs prompt regular
 
-| Dimension | Prompt regular | Superpower |
-|-----------|---------------|------------|
-| **Trigger** | Claude decide improvisando | Checklist explicito + red flags |
-| **Proceso** | Linear, sin gates | Process flow con diamantes de decision |
-| **Validacion** | "Creo que funciona" | `verification-before-completion` obligatoria |
-| **Documentacion** | Opcional | Spec en `docs/superpowers/specs/` commiteada |
-| **Reintentos** | Improvisados | Back-to-loop definido en el flow |
-| **Anti-patterns** | Implicitos | "Red flags" explicitas ("This is too simple...") |
-| **Composicion** | Standalone | Skills encadenadas (brainstorming -> writing-plans -> executing-plans) |
+| Dimension               | Prompt regular                   | Superpower                                                                   |
+|-------------------------|----------------------------------|------------------------------------------------------------------------------|
+| **Trigger**             | Claude decide improvisando       | Checklist explicito + red flags                                              |
+| **Proceso**             | Linear, sin gates                | Process flow con diamantes de decision                                       |
+| **Validacion**          | "Creo que funciona"              | `verification-before-completion` obligatoria                                 |
+| **Documentacion**       | Opcional                         | Spec en `docs/superpowers/specs/` commiteada                                 |
+| **Reintentos**          | Improvisados                     | Back-to-loop definido en el flow                                             |
+| **Anti-patterns**       | Implicitos                       | "Red flags" explicitas ("This is too simple...")                             |
+| **Composicion**         | Standalone                       | Skills encadenadas (brainstorming -> writing-plans -> executing-plans)       |
 
 **La clave:** un superpower es un **contrato de disciplina**. Claude no puede racionalizar saltarselo.
 
@@ -362,25 +362,25 @@ Con superpowers: **1 dia, 1 PR, 0 rework**.
 
 ### Timeline real
 
-| Hora | Accion | Skill invocada |
-|------|--------|----------------|
-| 09:00 | Dev describe feature a Claude | `using-superpowers` (auto) |
-| 09:05 | 12 preguntas clarificadoras | `brainstorming` |
-| 09:30 | Design aprobado, spec commiteada | `brainstorming` |
-| 09:35 | Plan de 5 fases, 23 pasos | `writing-plans` |
-| 09:50 | Plan aprobado, crea 3 worktrees | `using-git-worktrees` |
-| 10:00 | Dispatch 3 subagents paralelos | `dispatching-parallel-agents` + `subagent-driven-development` |
-| 10:00-13:00 | Subagent A: UI filtros (TDD) | `test-driven-development` |
-| 10:00-13:00 | Subagent B: export engine (TDD) | `test-driven-development` |
-| 10:00-13:00 | Subagent C: link-share backend (TDD) | `test-driven-development` |
-| 13:00 | Integracion en branch principal | `executing-plans` |
-| 13:30 | Bug: PDF export rompe con >1000 rows | `systematic-debugging` |
-| 14:15 | Fix + regresion test | `systematic-debugging` |
-| 14:30 | Claude pide code review a otro agent | `requesting-code-review` |
-| 14:50 | Review llega, 4 comentarios | `receiving-code-review` |
-| 15:30 | Fixes aplicados, responde cada comment | `receiving-code-review` |
-| 15:45 | Checklist final | `verification-before-completion` |
-| 16:00 | Merge, cleanup worktrees, changelog | `finishing-a-development-branch` |
+| Hora              | Accion                                       | Skill invocada                                                      |
+|-------------------|----------------------------------------------|---------------------------------------------------------------------|
+| 09:00             | Dev describe feature a Claude                | `using-superpowers` (auto)                                          |
+| 09:05             | 12 preguntas clarificadoras                  | `brainstorming`                                                     |
+| 09:30             | Design aprobado, spec commiteada             | `brainstorming`                                                     |
+| 09:35             | Plan de 5 fases, 23 pasos                    | `writing-plans`                                                     |
+| 09:50             | Plan aprobado, crea 3 worktrees              | `using-git-worktrees`                                               |
+| 10:00             | Dispatch 3 subagents paralelos               | `dispatching-parallel-agents` + `subagent-driven-development`       |
+| 10:00-13:00       | Subagent A: UI filtros (TDD)                 | `test-driven-development`                                           |
+| 10:00-13:00       | Subagent B: export engine (TDD)              | `test-driven-development`                                           |
+| 10:00-13:00       | Subagent C: link-share backend (TDD)         | `test-driven-development`                                           |
+| 13:00             | Integracion en branch principal              | `executing-plans`                                                   |
+| 13:30             | Bug: PDF export rompe con >1000 rows         | `systematic-debugging`                                              |
+| 14:15             | Fix + regresion test                         | `systematic-debugging`                                              |
+| 14:30             | Claude pide code review a otro agent         | `requesting-code-review`                                            |
+| 14:50             | Review llega, 4 comentarios                  | `receiving-code-review`                                             |
+| 15:30             | Fixes aplicados, responde cada comment       | `receiving-code-review`                                             |
+| 15:45             | Checklist final                              | `verification-before-completion`                                    |
+| 16:00             | Merge, cleanup worktrees, changelog          | `finishing-a-development-branch`                                    |
 
 **Resultado:**
 - 1 feature shipped

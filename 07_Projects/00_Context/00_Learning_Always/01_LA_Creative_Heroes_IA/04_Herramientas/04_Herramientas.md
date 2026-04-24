@@ -2,15 +2,15 @@
 
 ## Herramientas Principales
 
-| #     | Herramienta         | Propósito                                       | Tipo            | Link                |
-|-------|---------------------|-------------------------------------------------|-----------------|---------------------|
-| 1     | **Midjourney**      | Generación de imágenes realistas y artísticas   | Web + Discord   | midjourney.com      |
-| 2     | **ChatGPT**         | Asistencia general + DALL-E integrado           | Web/App         | chatgpt.com         |
-| 3     | **DALL-E**          | Generación de imágenes simple                   | API             | openai.com          |
-| 4     | **Leonardo.ai**     | Generación artística gratuita                   | Web             | leonardo.ai         |
-| 5     | **Runway**          | Video generativo                                | Web             | runway.ml           |
-| 6     | **Adobe Firefly**   | Generación integrada en Adobe                   | Web/App         | firefly.adobe.com   |
-| 7     | **ElevenLabs**      | Audio/voces con IA                              | Web             | elevenlabs.io       |
+| #             | Herramienta                 | Propósito                                               | Tipo                    | Link                        |
+|---------------|-----------------------------|---------------------------------------------------------|-------------------------|-----------------------------|
+| 1             | **Midjourney**              | Generación de imágenes realistas y artísticas           | Web + Discord           | midjourney.com              |
+| 2             | **ChatGPT**                 | Asistencia general + DALL-E integrado                   | Web/App                 | chatgpt.com                 |
+| 3             | **DALL-E**                  | Generación de imágenes simple                           | API                     | openai.com                  |
+| 4             | **Leonardo.ai**             | Generación artística gratuita                           | Web                     | leonardo.ai                 |
+| 5             | **Runway**                  | Video generativo                                        | Web                     | runway.ml                   |
+| 6             | **Adobe Firefly**           | Generación integrada en Adobe                           | Web/App                 | firefly.adobe.com           |
+| 7             | **ElevenLabs**              | Audio/voces con IA                                      | Web                     | elevenlabs.io               |
 
 ## Detalles por Herramienta
 
@@ -42,23 +42,23 @@
 
 ## Para Integrar al OS
 
-| Herramienta     | ¿En contexto?   | Acción                       |
-|-----------------|-----------------|------------------------------|
-| Midjourney      | ⏳ Verificar     | Agregar skill si no existe   |
-| Leonardo.ai     | ⏳ Verificar     | Agregar skill si no existe   |
-| Runway          | ⏳ Verificar     | Agregar skill si no existe   |
-| Adobe Firefly   | ⏳ Verificar     | Agregar skill si no existe   |
+| Herramienta             | ¿En contexto?           | Acción                               |
+|-------------------------|-------------------------|--------------------------------------|
+| Midjourney              | ⏳ Verificar             | Agregar skill si no existe           |
+| Leonardo.ai             | ⏳ Verificar             | Agregar skill si no existe           |
+| Runway                  | ⏳ Verificar             | Agregar skill si no existe           |
+| Adobe Firefly           | ⏳ Verificar             | Agregar skill si no existe           |
 
 ---
 
 ## Stack Recomendado para Iniciar
 
-| Prioridad    | Herramienta      | Justificación                |
-|--------------|------------------|------------------------------|
-| 1            | Midjourney       | Mejor calidad artística      |
-| 2            | Leonardo.ai      | Alternativa gratuita daily   |
-| 3            | ChatGPT+DALL-E   | Todo-en-uno                  |
-| 4            | Runway           | Para video                   |
+| Prioridad            | Herramienta              | Justificación                        |
+|----------------------|--------------------------|--------------------------------------|
+| 1                    | Midjourney               | Mejor calidad artística              |
+| 2                    | Leonardo.ai              | Alternativa gratuita daily           |
+| 3                    | ChatGPT+DALL-E           | Todo-en-uno                          |
+| 4                    | Runway                   | Para video                           |
 
 ## Comandos Básicos Midjourney
 

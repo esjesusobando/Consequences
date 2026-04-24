@@ -365,18 +365,18 @@ Same algorithm as Go CLI but in TypeScript:
 
 ### Unit Tests (`internal/obsidian/`)
 
-| Test                          | What It Verifies                                             |
-|-------------------------------|--------------------------------------------------------------|
-| `TestSlugify`                 | Title → slug conversion, edge cases (empty, unicode, long)   |
-| `TestObservationToMarkdown`   | Frontmatter + body + wikilinks generation                    |
-| `TestSessionHub`              | Hub note with correct backlinks                              |
-| `TestTopicHub`                | Hub generated only when ≥2 obs share prefix                  |
-| `TestTopicHubSkipped`         | No hub when only 1 obs has a prefix                          |
-| `TestSyncStateRoundTrip`      | JSON marshal/unmarshal of state file                         |
-| `TestIncrementalExport`       | Only new/changed obs are exported                            |
-| `TestDeletedObsRemoved`       | Soft-deleted obs → file removed from vault                   |
-| `TestIdempotentExport`        | Re-run produces identical files                              |
-| `TestProjectFilter`           | Only matching project observations exported                  |
+| Test                                  | What It Verifies                                                     |
+|---------------------------------------|----------------------------------------------------------------------|
+| `TestSlugify`                         | Title → slug conversion, edge cases (empty, unicode, long)           |
+| `TestObservationToMarkdown`           | Frontmatter + body + wikilinks generation                            |
+| `TestSessionHub`                      | Hub note with correct backlinks                                      |
+| `TestTopicHub`                        | Hub generated only when ≥2 obs share prefix                          |
+| `TestTopicHubSkipped`                 | No hub when only 1 obs has a prefix                                  |
+| `TestSyncStateRoundTrip`              | JSON marshal/unmarshal of state file                                 |
+| `TestIncrementalExport`               | Only new/changed obs are exported                                    |
+| `TestDeletedObsRemoved`               | Soft-deleted obs → file removed from vault                           |
+| `TestIdempotentExport`                | Re-run produces identical files                                      |
+| `TestProjectFilter`                   | Only matching project observations exported                          |
 
 ### Integration Test
 
@@ -402,15 +402,15 @@ Use `store.New(cfg)` with temp dir (same pattern as `store_test.go`). Populate w
 
 ## 9. Key Decisions
 
-| Decision                  | Choice                           | Alternative                  | Why                                            |
-|---------------------------|----------------------------------|------------------------------|------------------------------------------------|
-| Store access              | `StoreReader` interface          | Direct `*store.Store`        | Testable without full DB; narrow dependency    |
-| Vault namespace           | `{vault}/engram/`                | `{vault}/` root              | Security boundary; never clobber user notes    |
-| File naming               | `{slug}-{id}.md`                 | UUID or hash                 | Human-readable + collision-safe                |
-| Hub threshold             | ≥2 observations                  | Always create                | Prevents orphan hub clutter                    |
-| Topic prefix extraction   | Split on last `/`                | Full topic_key               | Groups SDD phases: `sdd/change/*`              |
-| State file location       | Inside vault                     | `~/.engram/`                 | Portable with vault; Git-trackable             |
-| Conflict resolution       | Engram wins                      | Merge                        | One-way mirror = simple, predictable           |
-| Deleted obs               | Remove file                      | Mark with frontmatter flag   | Clean vault; deleted means deleted             |
-| Phase 2 transport         | HTTP API (`/export`)             | SQLite direct                | Clean separation; no WAL lock conflicts        |
-| No new Go deps            | String formatting for markdown   | goldmark/template            | Zero dependency increase; markdown is simple   |
+| Decision                          | Choice                                   | Alternative                          | Why                                                    |
+|-----------------------------------|------------------------------------------|--------------------------------------|--------------------------------------------------------|
+| Store access                      | `StoreReader` interface                  | Direct `*store.Store`                | Testable without full DB; narrow dependency            |
+| Vault namespace                   | `{vault}/engram/`                        | `{vault}/` root                      | Security boundary; never clobber user notes            |
+| File naming                       | `{slug}-{id}.md`                         | UUID or hash                         | Human-readable + collision-safe                        |
+| Hub threshold                     | ≥2 observations                          | Always create                        | Prevents orphan hub clutter                            |
+| Topic prefix extraction           | Split on last `/`                        | Full topic_key                       | Groups SDD phases: `sdd/change/*`                      |
+| State file location               | Inside vault                             | `~/.engram/`                         | Portable with vault; Git-trackable                     |
+| Conflict resolution               | Engram wins                              | Merge                                | One-way mirror = simple, predictable                   |
+| Deleted obs                       | Remove file                              | Mark with frontmatter flag           | Clean vault; deleted means deleted                     |
+| Phase 2 transport                 | HTTP API (`/export`)                     | SQLite direct                        | Clean separation; no WAL lock conflicts                |
+| No new Go deps                    | String formatting for markdown           | goldmark/template                    | Zero dependency increase; markdown is simple           |

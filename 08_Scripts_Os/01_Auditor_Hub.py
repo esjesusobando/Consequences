@@ -80,8 +80,8 @@ def audit_script_numbering():
     # Solo revisar scripts raíz, no subdirectorios
     for script in ENGINE_DIR.glob("*.py"):
         name = script.name
-        # Skip config y __init__
-        if name in ("config_paths.py", "__init__.py"):
+        # Skip config, __init__, and non-engine scripts
+        if name in ("config_paths.py", "__init__.py", "refactor_revert_id.py"):
             continue
         # Pattern: NN_ o NNN_ al inicio
         is_valid = name[:3].isdigit() and name[3] == "_" or name[:2].isdigit() and name[2] == "_"

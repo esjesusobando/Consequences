@@ -279,12 +279,12 @@ The Agent Builder uses **one of the user's installed AI agents** as the generati
 
 Each supported AI agent exposes a different CLI interface for non-interactive use:
 
-| Agent         | Command                          | Mode                           |
-|---------------|----------------------------------|--------------------------------|
-| Claude Code   | `claude --print -p "{prompt}"`   | Pipe prompt, get text output   |
-| OpenCode      | `opencode run "{prompt}"`        | Run mode, text output          |
-| Gemini CLI    | `gemini -p "{prompt}"`           | Pipe mode                      |
-| Codex         | `codex exec "{prompt}"`          | Exec mode                      |
+| Agent                 | Command                                  | Mode                                   |
+|-----------------------|------------------------------------------|----------------------------------------|
+| Claude Code           | `claude --print -p "{prompt}"`           | Pipe prompt, get text output           |
+| OpenCode              | `opencode run "{prompt}"`                | Run mode, text output                  |
+| Gemini CLI            | `gemini -p "{prompt}"`                   | Pipe mode                              |
+| Codex                 | `codex exec "{prompt}"`                  | Exec mode                              |
 
 The system needs a `GenerationEngine` interface:
 
@@ -408,16 +408,16 @@ const (
 
 Custom agent skills follow the SAME installation pattern as built-in skills. The existing `Adapter.SkillsDir()` method from the agent interface provides the correct path for each agent:
 
-| Agent         | Skill Directory                | File Path                                     |
-|---------------|--------------------------------|-----------------------------------------------|
-| Claude Code   | `~/.claude/skills/`            | `~/.claude/skills/{name}/SKILL.md`            |
-| OpenCode      | `~/.config/opencode/skills/`   | `~/.config/opencode/skills/{name}/SKILL.md`   |
-| Gemini CLI    | `~/.gemini/skills/`            | `~/.gemini/skills/{name}/SKILL.md`            |
-| Cursor        | `~/.cursor/skills/`            | `~/.cursor/skills/{name}/SKILL.md`            |
-| VSCode        | `~/.vscode/skills/`            | `~/.vscode/skills/{name}/SKILL.md`            |
-| Codex         | `~/.codex/skills/`             | `~/.codex/skills/{name}/SKILL.md`             |
-| Windsurf      | `~/.windsurf/skills/`          | `~/.windsurf/skills/{name}/SKILL.md`          |
-| Antigravity   | `~/.antigravity/skills/`       | `~/.antigravity/skills/{name}/SKILL.md`       |
+| Agent                 | Skill Directory                        | File Path                                             |
+|-----------------------|----------------------------------------|-------------------------------------------------------|
+| Claude Code           | `~/.claude/skills/`                    | `~/.claude/skills/{name}/SKILL.md`                    |
+| OpenCode              | `~/.config/opencode/skills/`           | `~/.config/opencode/skills/{name}/SKILL.md`           |
+| Gemini CLI            | `~/.gemini/skills/`                    | `~/.gemini/skills/{name}/SKILL.md`                    |
+| Cursor                | `~/.cursor/skills/`                    | `~/.cursor/skills/{name}/SKILL.md`                    |
+| VSCode                | `~/.vscode/skills/`                    | `~/.vscode/skills/{name}/SKILL.md`                    |
+| Codex                 | `~/.codex/skills/`                     | `~/.codex/skills/{name}/SKILL.md`                     |
+| Windsurf              | `~/.windsurf/skills/`                  | `~/.windsurf/skills/{name}/SKILL.md`                  |
+| Antigravity           | `~/.antigravity/skills/`               | `~/.antigravity/skills/{name}/SKILL.md`               |
 
 The installer writes the SAME `SKILL.md` to ALL agents that were configured during the initial setup (detected via the ecosystem's state file or by scanning which agent skill directories exist).
 
@@ -782,15 +782,15 @@ The custom agent becomes a **new phase** in the SDD pipeline. Example: an "a11y-
 
 The user selects where in the pipeline to insert the new phase:
 
-| Insert After     | Resulting Pipeline                                                                  |
-|------------------|-------------------------------------------------------------------------------------|
-| explore          | explore → **custom** → propose → spec → design → tasks → apply → verify → archive   |
-| propose          | explore → propose → **custom** → spec → design → tasks → apply → verify → archive   |
-| spec             | explore → propose → spec → **custom** → design → tasks → apply → verify → archive   |
-| design           | explore → propose → spec → design → **custom** → tasks → apply → verify → archive   |
-| tasks            | explore → propose → spec → design → tasks → **custom** → apply → verify → archive   |
-| apply            | explore → propose → spec → design → tasks → apply → **custom** → verify → archive   |
-| verify           | explore → propose → spec → design → tasks → apply → verify → **custom** → archive   |
+| Insert After             | Resulting Pipeline                                                                          |
+|--------------------------|---------------------------------------------------------------------------------------------|
+| explore                  | explore → **custom** → propose → spec → design → tasks → apply → verify → archive           |
+| propose                  | explore → propose → **custom** → spec → design → tasks → apply → verify → archive           |
+| spec                     | explore → propose → spec → **custom** → design → tasks → apply → verify → archive           |
+| design                   | explore → propose → spec → design → **custom** → tasks → apply → verify → archive           |
+| tasks                    | explore → propose → spec → design → tasks → **custom** → apply → verify → archive           |
+| apply                    | explore → propose → spec → design → tasks → apply → **custom** → verify → archive           |
+| verify                   | explore → propose → spec → design → tasks → apply → verify → **custom** → archive           |
 
 ---
 
@@ -798,97 +798,97 @@ The user selects where in the pipeline to insert the new phase:
 
 ### Functional Requirements
 
-| ID        | Requirement                                                                                                               | Priority     |
-|-----------|---------------------------------------------------------------------------------------------------------------------------|--------------|
-| R-AB-01   | The Agent Builder MUST be accessible from the Welcome screen as a top-level menu option                                   | P0           |
-| R-AB-02   | The Agent Builder MUST only show installed AI agents as generation engine options                                         | P0           |
-| R-AB-03   | The Agent Builder MUST accept free-form natural language description as input                                             | P0           |
-| R-AB-04   | The Agent Builder MUST generate a valid SKILL.md file using the selected AI engine                                        | P0           |
-| R-AB-05   | The Agent Builder MUST show a preview of the generated skill before installation                                          | P0           |
-| R-AB-06   | The Agent Builder MUST install the generated skill to ALL configured AI agents                                            | P0           |
-| R-AB-07   | The Agent Builder MUST support SDD integration in three modes: standalone, phase support, new phase                       | P0           |
-| R-AB-08   | The Agent Builder MUST maintain a local registry of custom agents at `~/.config/gentle-ai/custom-agents.json`             | P0           |
-| R-AB-09   | The Agent Builder MUST allow the user to edit the generated skill before installation (open in $EDITOR)                   | P1           |
-| R-AB-10   | The Agent Builder MUST allow the user to regenerate the skill with the same prompt                                        | P0           |
-| R-AB-11   | The Agent Builder MUST include Engram integration instructions in every generated skill                                   | P0           |
-| R-AB-12   | The Agent Builder MUST handle generation engine errors gracefully with clear error messages                               | P0           |
-| R-AB-13   | The Agent Builder MUST support generation timeouts (configurable, default 120s)                                           | P1           |
-| R-AB-14   | The generated skill MUST be a standalone SKILL.md file — no external dependencies                                         | P0           |
-| R-AB-15   | For SDD phase support mode, the agent's system prompt MUST be updated with a marker-based reference to the custom skill   | P0           |
-| R-AB-16   | For SDD new phase mode, the orchestrator's dependency graph in the system prompt MUST be updated                          | P0           |
-| R-AB-17   | The Agent Builder MUST detect which agents were configured by the installer (via existing config scan or state file)      | P0           |
-| R-AB-18   | The text input for the agent description MUST support multi-line input with scrolling                                     | P0           |
-| R-AB-19   | The preview screen MUST support scrolling for long skill definitions                                                      | P0           |
-| R-AB-20   | The Agent Builder flow MUST support Esc to go back at every step                                                          | P0           |
+| ID                | Requirement                                                                                                                       | Priority             |
+|-------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| R-AB-01           | The Agent Builder MUST be accessible from the Welcome screen as a top-level menu option                                           | P0                   |
+| R-AB-02           | The Agent Builder MUST only show installed AI agents as generation engine options                                                 | P0                   |
+| R-AB-03           | The Agent Builder MUST accept free-form natural language description as input                                                     | P0                   |
+| R-AB-04           | The Agent Builder MUST generate a valid SKILL.md file using the selected AI engine                                                | P0                   |
+| R-AB-05           | The Agent Builder MUST show a preview of the generated skill before installation                                                  | P0                   |
+| R-AB-06           | The Agent Builder MUST install the generated skill to ALL configured AI agents                                                    | P0                   |
+| R-AB-07           | The Agent Builder MUST support SDD integration in three modes: standalone, phase support, new phase                               | P0                   |
+| R-AB-08           | The Agent Builder MUST maintain a local registry of custom agents at `~/.config/gentle-ai/custom-agents.json`                     | P0                   |
+| R-AB-09           | The Agent Builder MUST allow the user to edit the generated skill before installation (open in $EDITOR)                           | P1                   |
+| R-AB-10           | The Agent Builder MUST allow the user to regenerate the skill with the same prompt                                                | P0                   |
+| R-AB-11           | The Agent Builder MUST include Engram integration instructions in every generated skill                                           | P0                   |
+| R-AB-12           | The Agent Builder MUST handle generation engine errors gracefully with clear error messages                                       | P0                   |
+| R-AB-13           | The Agent Builder MUST support generation timeouts (configurable, default 120s)                                                   | P1                   |
+| R-AB-14           | The generated skill MUST be a standalone SKILL.md file — no external dependencies                                                 | P0                   |
+| R-AB-15           | For SDD phase support mode, the agent's system prompt MUST be updated with a marker-based reference to the custom skill           | P0                   |
+| R-AB-16           | For SDD new phase mode, the orchestrator's dependency graph in the system prompt MUST be updated                                  | P0                   |
+| R-AB-17           | The Agent Builder MUST detect which agents were configured by the installer (via existing config scan or state file)              | P0                   |
+| R-AB-18           | The text input for the agent description MUST support multi-line input with scrolling                                             | P0                   |
+| R-AB-19           | The preview screen MUST support scrolling for long skill definitions                                                              | P0                   |
+| R-AB-20           | The Agent Builder flow MUST support Esc to go back at every step                                                                  | P0                   |
 
 ### Non-Functional Requirements
 
-| ID           | Requirement                                                                                                              | Priority     |
-|--------------|--------------------------------------------------------------------------------------------------------------------------|--------------|
-| R-AB-NF-01   | Generation MUST complete within 120 seconds or show a timeout error                                                      | P0           |
-| R-AB-NF-02   | The TUI MUST remain responsive during generation (spinner animation, ability to cancel)                                  | P0           |
-| R-AB-NF-03   | The Agent Builder MUST follow the same Bubbletea + Lipgloss styling as the rest of the TUI                               | P0           |
-| R-AB-NF-04   | The Agent Builder architecture MUST allow adding new generation engines by implementing the GenerationEngine interface   | P0           |
-| R-AB-NF-05   | The custom-agents.json registry format MUST be versioned for forward compatibility                                       | P1           |
-| R-AB-NF-06   | Skill installation MUST be atomic — if installation to any agent fails, already-installed copies are cleaned up          | P1           |
+| ID                   | Requirement                                                                                                                      | Priority             |
+|----------------------|----------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| R-AB-NF-01           | Generation MUST complete within 120 seconds or show a timeout error                                                              | P0                   |
+| R-AB-NF-02           | The TUI MUST remain responsive during generation (spinner animation, ability to cancel)                                          | P0                   |
+| R-AB-NF-03           | The Agent Builder MUST follow the same Bubbletea + Lipgloss styling as the rest of the TUI                                       | P0                   |
+| R-AB-NF-04           | The Agent Builder architecture MUST allow adding new generation engines by implementing the GenerationEngine interface           | P0                   |
+| R-AB-NF-05           | The custom-agents.json registry format MUST be versioned for forward compatibility                                               | P1                   |
+| R-AB-NF-06           | Skill installation MUST be atomic — if installation to any agent fails, already-installed copies are cleaned up                  | P1                   |
 
 ---
 
 ## 10. Screens
 
-| Screen                            | Purpose                                               | Key Actions                        |
-|-----------------------------------|-------------------------------------------------------|------------------------------------|
-| Agent Builder: Engine Selection   | Choose which installed AI agent generates the skill   | Select engine, Back                |
-| Agent Builder: Prompt Input       | Multi-line text input describing the desired agent    | Type description, Continue, Back   |
-| Agent Builder: SDD Integration    | Choose standalone, phase support, or new phase        | Select mode, Continue, Back        |
-| Agent Builder: SDD Phase Picker   | Select which SDD phase to support or insert after     | Select phase, Continue, Back       |
-| Agent Builder: Generating         | Show progress while AI generates the skill            | Spinner, cancel                    |
-| Agent Builder: Preview            | Show generated skill with metadata summary            | Install, Edit, Regenerate, Back    |
-| Agent Builder: Installing         | Show installation progress across agents              | Progress animation                 |
-| Agent Builder: Complete           | Success message with usage instructions               | Done (returns to Welcome)          |
+| Screen                                    | Purpose                                                       | Key Actions                                |
+|-------------------------------------------|---------------------------------------------------------------|--------------------------------------------|
+| Agent Builder: Engine Selection           | Choose which installed AI agent generates the skill           | Select engine, Back                        |
+| Agent Builder: Prompt Input               | Multi-line text input describing the desired agent            | Type description, Continue, Back           |
+| Agent Builder: SDD Integration            | Choose standalone, phase support, or new phase                | Select mode, Continue, Back                |
+| Agent Builder: SDD Phase Picker           | Select which SDD phase to support or insert after             | Select phase, Continue, Back               |
+| Agent Builder: Generating                 | Show progress while AI generates the skill                    | Spinner, cancel                            |
+| Agent Builder: Preview                    | Show generated skill with metadata summary                    | Install, Edit, Regenerate, Back            |
+| Agent Builder: Installing                 | Show installation progress across agents                      | Progress animation                         |
+| Agent Builder: Complete                   | Success message with usage instructions                       | Done (returns to Welcome)                  |
 
 ---
 
 ## 11. Edge Cases & Error Handling
 
-| Scenario                                             | Behavior                                                                                                           |
-|------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| No AI agents installed                               | "Create your own Agent" menu option is **disabled** with "(no agents)" suffix                                      |
-| Selected engine fails to generate                    | Show error message with the engine's stderr. Offer "Retry" or "Try different engine"                               |
-| Generated output doesn't contain required sections   | Show warning: "The generated skill is missing sections: {list}. Edit manually or regenerate."                      |
-| Skill name conflicts with built-in skill             | Append `-custom` suffix. Warn user: "Name '{name}' conflicts with built-in skill. Using '{name}-custom'."          |
-| Skill name conflicts with existing custom agent      | Ask user: "Agent '{name}' already exists. Replace it?"                                                             |
-| $EDITOR not set (Edit action)                        | Fall back to `vi`. If `vi` not available, show the raw content in a scrollable pane with copy-paste instructions   |
-| Agent skills directory doesn't exist                 | Create it (same behavior as the main installer)                                                                    |
-| Generation exceeds timeout                           | Show timeout error. Offer "Retry with longer timeout" (2x) or "Try different engine"                               |
-| User prompt is empty                                 | "Continue" button is disabled. Show helper text: "Describe what you want your agent to do"                         |
-| Network error during generation                      | Show clear error. Note: all engines run locally — network errors are unlikely but possible with API-based agents   |
+| Scenario                                                     | Behavior                                                                                                                   |
+|--------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| No AI agents installed                                       | "Create your own Agent" menu option is **disabled** with "(no agents)" suffix                                              |
+| Selected engine fails to generate                            | Show error message with the engine's stderr. Offer "Retry" or "Try different engine"                                       |
+| Generated output doesn't contain required sections           | Show warning: "The generated skill is missing sections: {list}. Edit manually or regenerate."                              |
+| Skill name conflicts with built-in skill                     | Append `-custom` suffix. Warn user: "Name '{name}' conflicts with built-in skill. Using '{name}-custom'."                  |
+| Skill name conflicts with existing custom agent              | Ask user: "Agent '{name}' already exists. Replace it?"                                                                     |
+| $EDITOR not set (Edit action)                                | Fall back to `vi`. If `vi` not available, show the raw content in a scrollable pane with copy-paste instructions           |
+| Agent skills directory doesn't exist                         | Create it (same behavior as the main installer)                                                                            |
+| Generation exceeds timeout                                   | Show timeout error. Offer "Retry with longer timeout" (2x) or "Try different engine"                                       |
+| User prompt is empty                                         | "Continue" button is disabled. Show helper text: "Describe what you want your agent to do"                                 |
+| Network error during generation                              | Show clear error. Note: all engines run locally — network errors are unlikely but possible with API-based agents           |
 
 ---
 
 ## 12. Future Considerations (Out of Scope for V1)
 
-| Feature                       | Description                                                                    | Why Later                                            |
-|-------------------------------|--------------------------------------------------------------------------------|------------------------------------------------------|
-| **Marketplace**               | Share and discover community-created agents                                    | Needs backend infrastructure, auth, trust model      |
-| **Templates**                 | Pre-built starting points (Code Reviewer, Doc Writer, Test Generator)          | Can be added once the core builder is solid          |
-| **Agent Management Screen**   | List, edit, delete, export custom agents from TUI                              | Registry is there; UI can come later                 |
-| **Team Sync**                 | Share custom agents across team members via git                                | Needs a convention for team-shared skills            |
-| **Multi-model Generation**    | Use multiple AI engines in sequence (e.g., Claude generates, Gemini refines)   | Complex orchestration, diminishing returns           |
-| **Knowledge Files**           | Attach reference documents to the custom agent                                 | File management UX is complex                        |
-| **Agent Testing**             | "Try your agent" sandbox before installing                                     | Would need a sandboxed agent execution environment   |
-| **Version Control**           | Track versions of custom agents, rollback                                      | Registry versioning is the foundation                |
+| Feature                               | Description                                                                            | Why Later                                                    |
+|---------------------------------------|----------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| **Marketplace**                       | Share and discover community-created agents                                            | Needs backend infrastructure, auth, trust model              |
+| **Templates**                         | Pre-built starting points (Code Reviewer, Doc Writer, Test Generator)                  | Can be added once the core builder is solid                  |
+| **Agent Management Screen**           | List, edit, delete, export custom agents from TUI                                      | Registry is there; UI can come later                         |
+| **Team Sync**                         | Share custom agents across team members via git                                        | Needs a convention for team-shared skills                    |
+| **Multi-model Generation**            | Use multiple AI engines in sequence (e.g., Claude generates, Gemini refines)           | Complex orchestration, diminishing returns                   |
+| **Knowledge Files**                   | Attach reference documents to the custom agent                                         | File management UX is complex                                |
+| **Agent Testing**                     | "Try your agent" sandbox before installing                                             | Would need a sandboxed agent execution environment           |
+| **Version Control**                   | Track versions of custom agents, rollback                                              | Registry versioning is the foundation                        |
 
 ---
 
 ## 13. Success Metrics
 
-| Metric                     | Target                                                         | How to Measure                                           |
-|----------------------------|----------------------------------------------------------------|----------------------------------------------------------|
-| Completion rate            | >80% of users who start the builder finish creating an agent   | Registry entries vs. builder starts (future telemetry)   |
-| Generation quality         | >70% of generated skills used without manual editing           | Track "Install" vs "Edit" actions (future telemetry)     |
-| Cross-agent installation   | 100% of configured agents receive the skill                    | Verified by installation step; logged in registry        |
-| SDD integration usage      | >30% of custom agents use SDD integration                      | Registry `sdd_integration.mode` distribution             |
+| Metric                             | Target                                                                 | How to Measure                                                   |
+|------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------|
+| Completion rate                    | >80% of users who start the builder finish creating an agent           | Registry entries vs. builder starts (future telemetry)           |
+| Generation quality                 | >70% of generated skills used without manual editing                   | Track "Install" vs "Edit" actions (future telemetry)             |
+| Cross-agent installation           | 100% of configured agents receive the skill                            | Verified by installation step; logged in registry                |
+| SDD integration usage              | >30% of custom agents use SDD integration                              | Registry `sdd_integration.mode` distribution                     |
 
 ---
 

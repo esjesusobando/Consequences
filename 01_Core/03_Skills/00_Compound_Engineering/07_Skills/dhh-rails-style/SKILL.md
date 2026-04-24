@@ -55,16 +55,16 @@ What are you working on?
 
 <routing>
 
-| Response                                       | Reference to Read                                   |
-|------------------------------------------------|-----------------------------------------------------|
-| 1, controller                                  | [controllers.md](./references/controllers.md)       |
-| 2, model                                       | [models.md](./references/models.md)                 |
-| 3, view, frontend, turbo, stimulus, css        | [frontend.md](./references/frontend.md)             |
-| 4, architecture, routing, auth, job, cache     | [architecture.md](./references/architecture.md)     |
-| 5, test, testing, minitest, fixture            | [testing.md](./references/testing.md)               |
-| 6, gem, dependency, library                    | [gems.md](./references/gems.md)                     |
-| 7, review                                      | Read all references, then review code               |
-| 8, general task                                | Read relevant references based on context           |
+| Response                                               | Reference to Read                                           |
+|--------------------------------------------------------|-------------------------------------------------------------|
+| 1, controller                                          | [controllers.md](./references/controllers.md)               |
+| 2, model                                               | [models.md](./references/models.md)                         |
+| 3, view, frontend, turbo, stimulus, css                | [frontend.md](./references/frontend.md)                     |
+| 4, architecture, routing, auth, job, cache             | [architecture.md](./references/architecture.md)             |
+| 5, test, testing, minitest, fixture                    | [testing.md](./references/testing.md)                       |
+| 6, gem, dependency, library                            | [gems.md](./references/gems.md)                             |
+| 7, review                                              | Read all references, then review code                       |
+| 8, general task                                        | Read relevant references based on context                   |
 
 **After reading relevant references, apply patterns to the user's code.**
 </routing>
@@ -151,14 +151,14 @@ end
 
 All detailed patterns in `references/`:
 
-| File                                                | Topics                                                                             |
-|-----------------------------------------------------|------------------------------------------------------------------------------------|
-| [controllers.md](./references/controllers.md)       | REST mapping, concerns, Turbo responses, API patterns, HTTP caching                |
-| [models.md](./references/models.md)                 | Concerns, state records, callbacks, scopes, POROs, authorization, broadcasting     |
-| [frontend.md](./references/frontend.md)             | Turbo Streams, Stimulus controllers, CSS layers, OKLCH colors, partials            |
-| [architecture.md](./references/architecture.md)     | Routing, authentication, jobs, Current attributes, caching, database patterns      |
-| [testing.md](./references/testing.md)               | Minitest, fixtures, unit/integration/system tests, testing patterns                |
-| [gems.md](./references/gems.md)                     | What they use vs avoid, decision framework, Gemfile examples                       |
+| File                                                        | Topics                                                                                     |
+|-------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| [controllers.md](./references/controllers.md)               | REST mapping, concerns, Turbo responses, API patterns, HTTP caching                        |
+| [models.md](./references/models.md)                         | Concerns, state records, callbacks, scopes, POROs, authorization, broadcasting             |
+| [frontend.md](./references/frontend.md)                     | Turbo Streams, Stimulus controllers, CSS layers, OKLCH colors, partials                    |
+| [architecture.md](./references/architecture.md)             | Routing, authentication, jobs, Current attributes, caching, database patterns              |
+| [testing.md](./references/testing.md)                       | Minitest, fixtures, unit/integration/system tests, testing patterns                        |
+| [gems.md](./references/gems.md)                             | What they use vs avoid, decision framework, Gemfile examples                               |
 </reference_index>
 
 <success_criteria>

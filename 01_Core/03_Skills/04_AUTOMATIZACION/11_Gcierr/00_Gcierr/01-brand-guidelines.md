@@ -40,15 +40,15 @@ La skill `brand-guidelines` toma **cualquier artefacto visual** que generes con 
 
 ### Visualización en bloques markdown
 
-| Token            | Hex       | Swatch                                                                                   | Rol          |
-|------------------|-----------|------------------------------------------------------------------------------------------|--------------|
-| `--brand-dark`   | `#141413` | <span style="background:#141413">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Base oscura  |
-| `--brand-light`  | `#faf9f5` | <span style="background:#faf9f5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Base clara   |
-| `--brand-orange` | `#d97757` | <span style="background:#d97757">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | CTA / acento |
-| `--brand-blue`   | `#6a9bcc` | <span style="background:#6a9bcc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Info / links |
-| `--brand-green`  | `#788c5d` | <span style="background:#788c5d">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Success      |
-| `--brand-mid`    | `#b0aea5` | <span style="background:#b0aea5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Secundario   |
-| `--brand-soft`   | `#e8e6dc` | <span style="background:#e8e6dc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> | Fondo sutil  |
+| Token                    | Hex               | Swatch                                                                                           | Rol                  |
+|--------------------------|-------------------|--------------------------------------------------------------------------------------------------|----------------------|
+| `--brand-dark`           | `#141413`         | <span style="background:#141413">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>         | Base oscura          |
+| `--brand-light`          | `#faf9f5`         | <span style="background:#faf9f5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>         | Base clara           |
+| `--brand-orange`         | `#d97757`         | <span style="background:#d97757">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>         | CTA / acento         |
+| `--brand-blue`           | `#6a9bcc`         | <span style="background:#6a9bcc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>         | Info / links         |
+| `--brand-green`          | `#788c5d`         | <span style="background:#788c5d">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>         | Success              |
+| `--brand-mid`            | `#b0aea5`         | <span style="background:#b0aea5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>         | Secundario           |
+| `--brand-soft`           | `#e8e6dc`         | <span style="background:#e8e6dc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>         | Fondo sutil          |
 
 ---
 
@@ -410,14 +410,14 @@ Valentina sonríe. No dice que fue Claude a las 2 AM.
 
 ## 7. Cuándo activarla
 
-| Situación                                       | Activar skill       | Por qué                                               |
-|-------------------------------------------------|---------------------|-------------------------------------------------------|
-| Usuario pide "landing page"                     | Opcional            | A menos que pida estilo Anthropic o corporativo serio |
-| Usuario dice "investor deck" / "pitch deck"     | **Sí**              | El branding sobrio diferencia en minutos              |
-| Usuario muestra PPTX/HTML feo y pide mejorarlo  | **Sí**              | Post-procesamiento clásico                            |
-| Usuario pide "dashboard ejecutivo"              | **Sí**              | Armonía cromática > Tailwind random                   |
-| Usuario pide wireframe rápido                   | No                  | El estilo final puede distraer                        |
-| Usuario pide "estilo Claude" o "look Anthropic" | **Sí, con énfasis** | Pedido explícito                                      |
+| Situación                                               | Activar skill               | Por qué                                                       |
+|---------------------------------------------------------|-----------------------------|---------------------------------------------------------------|
+| Usuario pide "landing page"                             | Opcional                    | A menos que pida estilo Anthropic o corporativo serio         |
+| Usuario dice "investor deck" / "pitch deck"             | **Sí**                      | El branding sobrio diferencia en minutos                      |
+| Usuario muestra PPTX/HTML feo y pide mejorarlo          | **Sí**                      | Post-procesamiento clásico                                    |
+| Usuario pide "dashboard ejecutivo"                      | **Sí**                      | Armonía cromática > Tailwind random                           |
+| Usuario pide wireframe rápido                           | No                          | El estilo final puede distraer                                |
+| Usuario pide "estilo Claude" o "look Anthropic"         | **Sí, con énfasis**         | Pedido explícito                                              |
 
 ---
 

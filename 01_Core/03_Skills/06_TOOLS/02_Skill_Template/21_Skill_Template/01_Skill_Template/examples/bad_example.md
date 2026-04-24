@@ -103,13 +103,13 @@ def process(data):
 
 ## Correcciones Necesarias
 
-| Problema              | Solución                                            |
-|-----------------------|-----------------------------------------------------|
-| Descripción vaga      | Seguir template de descripción específica           |
-| Sin categoría         | Añadir `category: 1-9`                              |
-| Código inseguro       | Usar variables de entorno, validar inputs           |
-| Sin examples/         | Crear examples/good_example.md y bad_example.md     |
-| Sin security scan     | Ejecutar skill_security_scan.py                     |
+| Problema                      | Solución                                                    |
+|-------------------------------|-------------------------------------------------------------|
+| Descripción vaga              | Seguir template de descripción específica                   |
+| Sin categoría                 | Añadir `category: 1-9`                                      |
+| Código inseguro               | Usar variables de entorno, validar inputs                   |
+| Sin examples/                 | Crear examples/good_example.md y bad_example.md             |
+| Sin security scan             | Ejecutar skill_security_scan.py                             |
 
 ---
 

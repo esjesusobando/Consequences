@@ -51,23 +51,23 @@ Next session starts → Previous session context is injected automatically
 
 ## MCP Tools
 
-| Tool                      | Purpose                                                                |
-|---------------------------|------------------------------------------------------------------------|
-| `mem_save`                | Save a structured observation (decision, bugfix, pattern, etc.)        |
-| `mem_update`              | Update an existing observation by ID                                   |
-| `mem_delete`              | Delete an observation (soft-delete by default, hard-delete optional)   |
-| `mem_suggest_topic_key`   | Suggest a stable `topic_key` for evolving topics before saving         |
-| `mem_search`              | Full-text search across all memories                                   |
-| `mem_session_summary`     | Save end-of-session summary                                            |
-| `mem_context`             | Get recent context from previous sessions                              |
-| `mem_timeline`            | Chronological context around a specific observation                    |
-| `mem_get_observation`     | Get full content of a specific memory                                  |
-| `mem_save_prompt`         | Save a user prompt for future context                                  |
-| `mem_stats`               | Memory system statistics                                               |
-| `mem_session_start`       | Register a session start                                               |
-| `mem_session_end`         | Mark a session as completed                                            |
-| `mem_capture_passive`     | Extract learnings from text output                                     |
-| `mem_merge_projects`      | Merge project name variants into canonical name (admin)                |
+| Tool                              | Purpose                                                                        |
+|-----------------------------------|--------------------------------------------------------------------------------|
+| `mem_save`                        | Save a structured observation (decision, bugfix, pattern, etc.)                |
+| `mem_update`                      | Update an existing observation by ID                                           |
+| `mem_delete`                      | Delete an observation (soft-delete by default, hard-delete optional)           |
+| `mem_suggest_topic_key`           | Suggest a stable `topic_key` for evolving topics before saving                 |
+| `mem_search`                      | Full-text search across all memories                                           |
+| `mem_session_summary`             | Save end-of-session summary                                                    |
+| `mem_context`                     | Get recent context from previous sessions                                      |
+| `mem_timeline`                    | Chronological context around a specific observation                            |
+| `mem_get_observation`             | Get full content of a specific memory                                          |
+| `mem_save_prompt`                 | Save a user prompt for future context                                          |
+| `mem_stats`                       | Memory system statistics                                                       |
+| `mem_session_start`               | Register a session start                                                       |
+| `mem_session_end`                 | Mark a session as completed                                                    |
+| `mem_capture_passive`             | Extract learnings from text output                                             |
+| `mem_merge_projects`              | Merge project name variants into canonical name (admin)                        |
 
 ---
 

@@ -16,11 +16,11 @@ Framework con 3 tipos de graders para diferentes tipos de evaluación.
 
 ## Los 3 Tipos de Graders
 
-| Grader              | Cuándo usar                  | Ejemplo                                       |
-|---------------------|------------------------------|-----------------------------------------------|
-| **Code-based**      | Verificaciones objetivas     | `assert response.status == 200`               |
-| **Model-based**     | Evaluaciones subjetivas      | "Does this design look good?" (LLM judge)     |
-| **Human**           | Gold standard final          | SME review                                    |
+| Grader                      | Cuándo usar                          | Ejemplo                                               |
+|-----------------------------|--------------------------------------|-------------------------------------------------------|
+| **Code-based**              | Verificaciones objetivas             | `assert response.status == 200`                       |
+| **Model-based**             | Evaluaciones subjetivas              | "Does this design look good?" (LLM judge)             |
+| **Human**                   | Gold standard final                  | SME review                                            |
 
 ---
 
@@ -28,12 +28,12 @@ Framework con 3 tipos de graders para diferentes tipos de evaluación.
 
 ### Scripts
 
-| Script                   | Función                                   |
-|--------------------------|-------------------------------------------|
-| `00_Code_Grader.py`      | Assertions, regex, binary tests           |
-| `01_Model_Grader.py`     | LLM-as-judge con rubrics                  |
-| `02_Human_Grader.py`     | Templates para SME review                 |
-| `03_Grader_Mux.py`       | Multiplexor que elige el mejor grader     |
+| Script                           | Función                                           |
+|----------------------------------|---------------------------------------------------|
+| `00_Code_Grader.py`              | Assertions, regex, binary tests                   |
+| `01_Model_Grader.py`             | LLM-as-judge con rubrics                          |
+| `02_Human_Grader.py`             | Templates para SME review                         |
+| `03_Grader_Mux.py`               | Multiplexor que elige el mejor grader             |
 
 ### Uso
 
@@ -107,13 +107,13 @@ class HumanGrader:
 
 ## Integración con Perfiles
 
-| Perfil                | Grader recomendado      |
-|-----------------------|-------------------------|
-| Product Builder       | Code + Model            |
-| Data Engineer         | Code                    |
-| Marketing Tech        | Model                   |
-| Design Ops            | Model + Human           |
-| Platform Engineer     | Code                    |
+| Perfil                        | Grader recomendado              |
+|-------------------------------|---------------------------------|
+| Product Builder               | Code + Model                    |
+| Data Engineer                 | Code                            |
+| Marketing Tech                | Model                           |
+| Design Ops                    | Model + Human                   |
+| Platform Engineer             | Code                            |
 
 ---
 

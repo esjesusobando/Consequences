@@ -6,13 +6,13 @@ Colección de 5 skills que mejoran radicalmente cómo la IA genera código front
 
 ## Las 5 Skills
 
-| Skill                                | Propósito                                      | Cuándo Usar                                         |
-|--------------------------------------|------------------------------------------------|-----------------------------------------------------|
-| **taste-skill**                      | Diseño principal premium                       | Proyectos desde cero                                |
-| **soft-skill**                       | Look & feel premium/lujoso                     | Invitaciones, landing pages premium                 |
-| **minimalist-skill**                 | Estilo Notion/Linear editorial                 | Dashboards limpios                                  |
-| **redesign-skill**                   | Mejorar proyectos existentes                   | Legacy, upgrades                                    |
-| **output-skill**                     | Código completo sin shortcuts                  | Siempre (evita código incompleto)                   |
+| Skill                                        | Propósito                                              | Cuándo Usar                                                 |
+|----------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------|
+| **taste-skill**                              | Diseño principal premium                               | Proyectos desde cero                                        |
+| **soft-skill**                               | Look & feel premium/lujoso                             | Invitaciones, landing pages premium                         |
+| **minimalist-skill**                         | Estilo Notion/Linear editorial                         | Dashboards limpios                                          |
+| **redesign-skill**                           | Mejorar proyectos existentes                           | Legacy, upgrades                                            |
+| **output-skill**                             | Código completo sin shortcuts                          | Siempre (evita código incompleto)                           |
 
 ## Configuración de Taste-Skills
 
@@ -22,11 +22,11 @@ MOTION_INTENSITY (1-10): 6 # 6=Fade-ins, smooth scrolling
 VISUAL_DENSITY (1-10): 4   # 4=Espaciado normal de app típica
 ```
 
-| Setting                              | 1-3                             | 4-7                                  | 8-10                                     |
-|--------------------------------------|---------------------------------|--------------------------------------|------------------------------------------|
-| **DESIGN_VARIANCE**                  | Limpio/centrado                 | Overlapping elements                 | Asimétrico/moderno                       |
-| **MOTION_INTENSITY**                 | Casi nada                       | Fade-ins, scroll                     | Magnetic, spring physics                 |
-| **VISUAL_DENSITY**                   | Airy/Lujo                       | Normal                               | Denso/Dashboard                          |
+| Setting                                      | 1-3                                     | 4-7                                          | 8-10                                             |
+|----------------------------------------------|-----------------------------------------|----------------------------------------------|--------------------------------------------------|
+| **DESIGN_VARIANCE**                          | Limpio/centrado                         | Overlapping elements                         | Asimétrico/moderno                               |
+| **MOTION_INTENSITY**                         | Casi nada                               | Fade-ins, scroll                             | Magnetic, spring physics                         |
+| **VISUAL_DENSITY**                           | Airy/Lujo                               | Normal                                       | Denso/Dashboard                                  |
 
 ## Ubicación de Skills (INSTALADAS)
 

@@ -44,14 +44,14 @@ Windows, Linux, and other install methods → [docs/INSTALLATION.md](docs/INSTAL
 
 ### Setup Your Agent
 
-| Agent                         | One-liner                                                                                      |
-|-------------------------------|------------------------------------------------------------------------------------------------|
-| Claude Code                   | `claude plugin marketplace add Gentleman-Programming/engram && claude plugin install engram`   |
-| OpenCode                      | `engram setup opencode`                                                                        |
-| Gemini CLI                    | `engram setup gemini-cli`                                                                      |
-| Codex                         | `engram setup codex`                                                                           |
-| VS Code                       | `code --add-mcp '{"name":"engram","command":"engram","args":["mcp"]}'`                         |
-| Cursor / Windsurf / Any MCP   | See [docs/AGENT-SETUP.md](docs/AGENT-SETUP.md)                                                 |
+| Agent                                 | One-liner                                                                                              |
+|---------------------------------------|--------------------------------------------------------------------------------------------------------|
+| Claude Code                           | `claude plugin marketplace add Gentleman-Programming/engram && claude plugin install engram`           |
+| OpenCode                              | `engram setup opencode`                                                                                |
+| Gemini CLI                            | `engram setup gemini-cli`                                                                              |
+| Codex                                 | `engram setup codex`                                                                                   |
+| VS Code                               | `code --add-mcp '{"name":"engram","command":"engram","args":["mcp"]}'`                                 |
+| Cursor / Windsurf / Any MCP           | See [docs/AGENT-SETUP.md](docs/AGENT-SETUP.md)                                                         |
 
 Full per-agent config, Memory Protocol, and compaction survival → [docs/AGENT-SETUP.md](docs/AGENT-SETUP.md)
 
@@ -70,12 +70,12 @@ Full details on session lifecycle, topic keys, and memory hygiene → [docs/ARCH
 
 ## MCP Tools (15)
 
-| Category                | Tools                                                                         |
-|-------------------------|-------------------------------------------------------------------------------|
-| **Save & Update**       | `mem_save`, `mem_update`, `mem_delete`, `mem_suggest_topic_key`               |
-| **Search & Retrieve**   | `mem_search`, `mem_context`, `mem_timeline`, `mem_get_observation`            |
-| **Session Lifecycle**   | `mem_session_start`, `mem_session_end`, `mem_session_summary`                 |
-| **Utilities**           | `mem_save_prompt`, `mem_stats`, `mem_capture_passive`, `mem_merge_projects`   |
+| Category                        | Tools                                                                                 |
+|---------------------------------|---------------------------------------------------------------------------------------|
+| **Save & Update**               | `mem_save`, `mem_update`, `mem_delete`, `mem_suggest_topic_key`                       |
+| **Search & Retrieve**           | `mem_search`, `mem_context`, `mem_timeline`, `mem_get_observation`                    |
+| **Session Lifecycle**           | `mem_session_start`, `mem_session_end`, `mem_session_summary`                         |
+| **Utilities**                   | `mem_save_prompt`, `mem_stats`, `mem_capture_passive`, `mem_merge_projects`           |
 
 Full tool reference with parameters → [DOCS.md#mcp-tools-15-tools](DOCS.md#mcp-tools-15-tools)
 
@@ -109,39 +109,39 @@ Full sync documentation → [DOCS.md](DOCS.md)
 
 ## CLI Reference
 
-| Command                       | Description                       |
-|-------------------------------|-----------------------------------|
-| `engram setup [agent]`        | Install agent integration         |
-| `engram serve [port]`         | Start HTTP API (default: 7437)    |
-| `engram mcp`                  | Start MCP server (stdio)          |
-| `engram tui`                  | Launch terminal UI                |
-| `engram search <query>`       | Search memories                   |
-| `engram save <title> <msg>`   | Save a memory                     |
-| `engram timeline <obs_id>`    | Chronological context             |
-| `engram context [project]`    | Recent session context            |
-| `engram stats`                | Memory statistics                 |
-| `engram export [file]`        | Export to JSON                    |
-| `engram import <file>`        | Import from JSON                  |
-| `engram sync`                 | Git sync export/import            |
-| `engram projects list\        | consolidate\                      | prune` | Manage project names |
-| `engram obsidian-export`      | Export to Obsidian vault (beta)   |
-| `engram version`              | Show version                      |
+| Command                               | Description                               |
+|---------------------------------------|-------------------------------------------|
+| `engram setup [agent]`                | Install agent integration                 |
+| `engram serve [port]`                 | Start HTTP API (default: 7437)            |
+| `engram mcp`                          | Start MCP server (stdio)                  |
+| `engram tui`                          | Launch terminal UI                        |
+| `engram search <query>`               | Search memories                           |
+| `engram save <title> <msg>`           | Save a memory                             |
+| `engram timeline <obs_id>`            | Chronological context                     |
+| `engram context [project]`            | Recent session context                    |
+| `engram stats`                        | Memory statistics                         |
+| `engram export [file]`                | Export to JSON                            |
+| `engram import <file>`                | Import from JSON                          |
+| `engram sync`                         | Git sync export/import                    |
+| `engram projects list\                | consolidate\                              | prune` | Manage project names |
+| `engram obsidian-export`              | Export to Obsidian vault (beta)           |
+| `engram version`                      | Show version                              |
 
 Full CLI with all flags → [docs/ARCHITECTURE.md#cli-reference](docs/ARCHITECTURE.md#cli-reference)
 
 ## Documentation
 
-| Doc                                             | Description                                          |
-|-------------------------------------------------|------------------------------------------------------|
-| [Installation](docs/INSTALLATION.md)            | All install methods + platform support               |
-| [Agent Setup](docs/AGENT-SETUP.md)              | Per-agent configuration + Memory Protocol            |
-| [Architecture](docs/ARCHITECTURE.md)            | How it works + MCP tools + project structure         |
-| [Plugins](docs/PLUGINS.md)                      | OpenCode & Claude Code plugin details                |
-| [Comparison](docs/COMPARISON.md)                | Why Engram vs claude-mem                             |
-| [Intended Usage](docs/intended-usage.md)        | Mental model — how Engram is meant to be used        |
-| [Obsidian Brain](docs/beta/obsidian-brain.md)   | Export memories as Obsidian knowledge graph (beta)   |
-| [Contributing](CONTRIBUTING.md)                 | Contribution workflow + standards                    |
-| [Full Docs](DOCS.md)                            | Complete technical reference                         |
+| Doc                                                     | Description                                                  |
+|---------------------------------------------------------|--------------------------------------------------------------|
+| [Installation](docs/INSTALLATION.md)                    | All install methods + platform support                       |
+| [Agent Setup](docs/AGENT-SETUP.md)                      | Per-agent configuration + Memory Protocol                    |
+| [Architecture](docs/ARCHITECTURE.md)                    | How it works + MCP tools + project structure                 |
+| [Plugins](docs/PLUGINS.md)                              | OpenCode & Claude Code plugin details                        |
+| [Comparison](docs/COMPARISON.md)                        | Why Engram vs claude-mem                                     |
+| [Intended Usage](docs/intended-usage.md)                | Mental model — how Engram is meant to be used                |
+| [Obsidian Brain](docs/beta/obsidian-brain.md)           | Export memories as Obsidian knowledge graph (beta)           |
+| [Contributing](CONTRIBUTING.md)                         | Contribution workflow + standards                            |
+| [Full Docs](DOCS.md)                                    | Complete technical reference                                 |
 
 ## License
 

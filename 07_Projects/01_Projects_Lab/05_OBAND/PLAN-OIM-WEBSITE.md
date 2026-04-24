@@ -11,14 +11,14 @@
 
 ## 1. Stack Tecnológico
 
-| Componente     | Tecnología            |
-|----------------|-----------------------|
-| Framework      | Next.js 16.2.2        |
-| UI             | React 19.2.4          |
-| Styling        | Tailwind CSS 4        |
-| Motion         | Framer Motion         |
-| Testing        | Vitest (TDD Strict)   |
-| Validación     | Zod                   |
+| Componente           | Tecnología                  |
+|----------------------|-----------------------------|
+| Framework            | Next.js 16.2.2              |
+| UI                   | React 19.2.4                |
+| Styling              | Tailwind CSS 4              |
+| Motion               | Framer Motion               |
+| Testing              | Vitest (TDD Strict)         |
+| Validación           | Zod                         |
 
 ---
 
@@ -43,34 +43,34 @@ Agregar reglas OIM:
 
 ## 3. Documentos a Crear
 
-| #     | Archivo                                         | Descripción                                            |
-|-------|-------------------------------------------------|--------------------------------------------------------|
-| 1     | `docs/OIM-COPY-MASTER.md`                       | Copy maestro por sección web                           |
-| 2     | `docs/OIM-DESIGN-SYSTEM.md`                     | Sistema de diseño (colores, tipografía, componentes)   |
-| 3     | `00_Recursos_Varios/OIM-VALUE-PROPOSITION.md`   | Propuesta de valor convertida del HTML                 |
+| #           | Archivo                                               | Descripción                                                  |
+|-------------|-------------------------------------------------------|--------------------------------------------------------------|
+| 1           | `docs/OIM-COPY-MASTER.md`                             | Copy maestro por sección web                                 |
+| 2           | `docs/OIM-DESIGN-SYSTEM.md`                           | Sistema de diseño (colores, tipografía, componentes)         |
+| 3           | `00_Recursos_Varios/OIM-VALUE-PROPOSITION.md`         | Propuesta de valor convertida del HTML                       |
 
 ---
 
 ## 4. Sistema de Diseño
 
 ### 4.1 Paleta de Colores
-| Role               | Color                | Hex         |
-|--------------------|----------------------|-------------|
-| Background         | Negro profundo       | `#0A0A0A`   |
-| Surface            | Gris oscuro          | `#141414`   |
-| Text Primary       | Blanco               | `#FFFFFF`   |
-| Text Secondary     | Gris medio           | `#A1A1A1`   |
-| Accent Primary     | Naranja industrial   | `#F97316`   |
-| Accent Secondary   | Verde lima           | `#84CC16`   |
+| Role                     | Color                      | Hex               |
+|--------------------------|----------------------------|-------------------|
+| Background               | Negro profundo             | `#0A0A0A`         |
+| Surface                  | Gris oscuro                | `#141414`         |
+| Text Primary             | Blanco                     | `#FFFFFF`         |
+| Text Secondary           | Gris medio                 | `#A1A1A1`         |
+| Accent Primary           | Naranja industrial         | `#F97316`         |
+| Accent Secondary         | Verde lima                 | `#84CC16`         |
 
 ### 4.2 Tipografía
-| Elemento       | Fuente     | Peso      | Tamaño             |
-|----------------|------------|-----------|--------------------|
-| Headlines      | Poppins    | 700-900   | 48-72px            |
-| Subheadlines   | Poppins    | 500       | 20-24px            |
-| Body           | DM Sans    | 400       | 16px               |
-| Labels         | Poppins    | 600       | 12px (uppercase)   |
-| Botones        | Poppins    | 600       | 14px               |
+| Elemento             | Fuente           | Peso            | Tamaño                   |
+|----------------------|------------------|-----------------|--------------------------|
+| Headlines            | Poppins          | 700-900         | 48-72px                  |
+| Subheadlines         | Poppins          | 500             | 20-24px                  |
+| Body                 | DM Sans          | 400             | 16px                     |
+| Labels               | Poppins          | 600             | 12px (uppercase)         |
+| Botones              | Poppins          | 600             | 14px                     |
 
 ### 4.3 Layout
 ```
@@ -126,12 +126,12 @@ Navbar (fixed, glass) → Hero → Services (4 cards) → Stats → Projects →
 - CTAs: `View Our Work` | `Get a Quote`
 
 ### 7.3 Services (4 cards)
-| #     | Label                | Title                             | Copy                                                                                                                                         |
-|-------|----------------------|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| 1     | INSTALLATION         | Workstations & Critical Assets    | High-fidelity integration of ergonomic stations, modular cubicles, and conference systems. We engineer for performance, not just assembly.   |
-| 2     | RECONFIGURATION      | Adaptive Space Engineering        | Evolutionary environment redesign based on human flow analysis. From ground-up implementation to strategic furniture rearrangement.          |
-| 3     | RELOCATION           | Precision Transit & Disassembly   | Technical disassembly preserving asset lifespan. Minimized risk, maximized uptime. Full reinstallation at new locations.                     |
-| 4     | PROJECT MANAGEMENT   | Enterprise-Scale Execution        | From boutique startups to multinational deployments. We deliver on time, on spec, with zero tolerance for downtime.                          |
+| #           | Label                      | Title                                   | Copy                                                                                                                                               |
+|-------------|----------------------------|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1           | INSTALLATION               | Workstations & Critical Assets          | High-fidelity integration of ergonomic stations, modular cubicles, and conference systems. We engineer for performance, not just assembly.         |
+| 2           | RECONFIGURATION            | Adaptive Space Engineering              | Evolutionary environment redesign based on human flow analysis. From ground-up implementation to strategic furniture rearrangement.                |
+| 3           | RELOCATION                 | Precision Transit & Disassembly         | Technical disassembly preserving asset lifespan. Minimized risk, maximized uptime. Full reinstallation at new locations.                           |
+| 4           | PROJECT MANAGEMENT         | Enterprise-Scale Execution              | From boutique startups to multinational deployments. We deliver on time, on spec, with zero tolerance for downtime.                                |
 
 ### 7.4 Stats
 `+8 YEARS — EXPERIENCE — IN ATLANTA`  
@@ -165,15 +165,15 @@ Social: Instagram, LinkedIn
 
 ## 8. UX Writing (Microcopy)
 
-| Contexto        | Antes (Genérico)     | Después (SOTA)                                           |
-|-----------------|----------------------|----------------------------------------------------------|
-| Primary CTA     | "Get Started"        | "View Our Work"                                          |
-| Secondary CTA   | "Contact Us"         | "Get a Quote"                                            |
-| Form Submit     | "Submit"             | "Send Message"                                           |
-| Form: Name      | "Name"               | "Your Name"                                              |
-| Form: Email     | "Email"              | "Work Email"                                             |
-| Form: Message   | "Message"            | "Tell Us About Your Project"                             |
-| Success         | "Thank you"          | "Message received. We'll be in touch within 24 hours."   |
+| Contexto              | Antes (Genérico)           | Después (SOTA)                                                 |
+|-----------------------|----------------------------|----------------------------------------------------------------|
+| Primary CTA           | "Get Started"              | "View Our Work"                                                |
+| Secondary CTA         | "Contact Us"               | "Get a Quote"                                                  |
+| Form Submit           | "Submit"                   | "Send Message"                                                 |
+| Form: Name            | "Name"                     | "Your Name"                                                    |
+| Form: Email           | "Email"                    | "Work Email"                                                   |
+| Form: Message         | "Message"                  | "Tell Us About Your Project"                                   |
+| Success               | "Thank you"                | "Message received. We'll be in touch within 24 hours."         |
 
 ---
 
@@ -188,25 +188,25 @@ Social: Instagram, LinkedIn
 
 ## 10. Assets Requeridos
 
-| Asset              | Estado        | Fuente                                         |
-|--------------------|---------------|------------------------------------------------|
-| Fotos proyectos    | ❌ Pendiente   | Instagram @oimayen                             |
-| Logo clientes      | ❌ Pendiente   | Pedir a Jose                                   |
-| Foto equipo/Jose   | ❌ Pendiente   | Pedir a Jose                                   |
-| Iconos servicios   | ✅ Listo       | Lucide React: HardHat, Move, Settings, Users   |
+| Asset                    | Estado              | Fuente                                               |
+|--------------------------|---------------------|------------------------------------------------------|
+| Fotos proyectos          | ❌ Pendiente         | Instagram @oimayen                                   |
+| Logo clientes            | ❌ Pendiente         | Pedir a Jose                                         |
+| Foto equipo/Jose         | ❌ Pendiente         | Pedir a Jose                                         |
+| Iconos servicios         | ✅ Listo             | Lucide React: HardHat, Move, Settings, Users         |
 
 ---
 
 ## 11. Inspiración Visual (Referencias Analizadas)
 
-| #     | ElementoTomado            | Fuente                          |
-|-------|---------------------------|---------------------------------|
-| 1     | Tipografía Poppins        | Imagen 3 (Brand Board)          |
-| 2     | Cards de Servicios        | Imagen 4, 5 (Visionary)         |
-| 3     | Sección Estadísticas      | Imagen 4                        |
-| 4     | Trust Bar (Logos)         | Imagen 2                        |
-| 5     | Subrayado/Trazo énfasis   | Imagen 1                        |
-| 6     | Estructura copy           | Imagen 6 (propuesta_de_valor)   |
+| #           | ElementoTomado                  | Fuente                                |
+|-------------|---------------------------------|---------------------------------------|
+| 1           | Tipografía Poppins              | Imagen 3 (Brand Board)                |
+| 2           | Cards de Servicios              | Imagen 4, 5 (Visionary)               |
+| 3           | Sección Estadísticas            | Imagen 4                              |
+| 4           | Trust Bar (Logos)               | Imagen 2                              |
+| 5           | Subrayado/Trazo énfasis         | Imagen 1                              |
+| 6           | Estructura copy                 | Imagen 6 (propuesta_de_valor)         |
 
 ---
 
@@ -232,12 +232,12 @@ Social: Instagram, LinkedIn
 
 ## 13. Diferenciación SOTA vs Competidores Atlanta
 
-| Competidor             | OIM                         |
-|------------------------|-----------------------------|
-| Stock photos           | Fotos reales de proyectos   |
-| "Best service" vacío   | Métricas + evidencia        |
-| Genérico               | Branding industrial único   |
-| Template básico        | Animaciones custom          |
+| Competidor                   | OIM                               |
+|------------------------------|-----------------------------------|
+| Stock photos                 | Fotos reales de proyectos         |
+| "Best service" vacío         | Métricas + evidencia              |
+| Genérico                     | Branding industrial único         |
+| Template básico              | Animaciones custom                |
 
 ---
 

@@ -16,11 +16,11 @@ Completar integración de System Guardian v1.0 con aliases, hooks, metodología 
 
 ### 1. Aliases Terminal ✅
 
-| Comando                     | Estado                     | Ubicación                             |
-|-----------------------------|----------------------------|---------------------------------------|
-| `gr`                        | ✅ Funciona                 | ~/.bashrc (funciones)                 |
-| `gra`                       | ✅ Funciona                 | ~/gr (script bash)                    |
-| `gr-agents`                 | ✅ Funciona                 | ~                                     |
+| Comando                             | Estado                             | Ubicación                                     |
+|-------------------------------------|------------------------------------|-----------------------------------------------|
+| `gr`                                | ✅ Funciona                         | ~/.bashrc (funciones)                         |
+| `gra`                               | ✅ Funciona                         | ~/gr (script bash)                            |
+| `gr-agents`                         | ✅ Funciona                         | ~                                             |
 
 * *Problema resuelto:** Aliases bash no funcionan en shells no-interactivos → Se usaron funciones bash.
 
@@ -61,13 +61,13 @@ Documentada en `00_Core/01_Personal_Os/11_AGENTS.md`:
 
 ### 5. Testing Completo ✅
 
-| Test                              | Resultado                      |
-|-----------------------------------|--------------------------------|
-| `gr`                              | ✅                              |
-| `gra`                             | ✅                              |
-| `gr-agents`                       | ✅                              |
-| Hook stop                         | ✅                              |
-| Trees regenerados                 | ✅ (8 carpetas)                 |
+| Test                                      | Resultado                              |
+|-------------------------------------------|----------------------------------------|
+| `gr`                                      | ✅                                      |
+| `gra`                                     | ✅                                      |
+| `gr-agents`                               | ✅                                      |
+| Hook stop                                 | ✅                                      |
+| Trees regenerados                         | ✅ (8 carpetas)                         |
 
 ### 6. Hulk Compound ✅
 
@@ -97,14 +97,14 @@ feat: context switcher
 
 ## 📁 Archivos Clave
 
-| Archivo                                                           | Descripción                                      |
-|-------------------------------------------------------------------|--------------------------------------------------|
-| `~/gr`                                                            | Script bash ejecutable                           |
-| `~/.bashrc`                                                       | Funciones gr, gra, gr-agents                     |
-| `08_Scripts_Os/79_System_Guardian.py`                             | System Guardian v1.0                             |
-| `.AGENT/04_EXTENSIONS/hooks/03_Lifecycle/stop.py`                 | Hook post-sesión                                 |
-| `00_Core/01_Personal_Os/11_AGENTS.md`                             | Metodología 3-Agents documentada                 |
-| `08_Scripts_Os/07_Installer/`                                     | Installer v2.0                                   |
+| Archivo                                                                   | Descripción                                              |
+|---------------------------------------------------------------------------|----------------------------------------------------------|
+| `~/gr`                                                                    | Script bash ejecutable                                   |
+| `~/.bashrc`                                                               | Funciones gr, gra, gr-agents                             |
+| `08_Scripts_Os/79_System_Guardian.py`                                     | System Guardian v1.0                                     |
+| `.AGENT/04_EXTENSIONS/hooks/03_Lifecycle/stop.py`                         | Hook post-sesión                                         |
+| `00_Core/01_Personal_Os/11_AGENTS.md`                                     | Metodología 3-Agents documentada                         |
+| `08_Scripts_Os/07_Installer/`                                             | Installer v2.0                                           |
 
 - --
 
@@ -125,13 +125,13 @@ gr-agents       # Solo 3 agents
 
 ## 📊 Stats Sesión
 
-| Métrica                                | Valor                   |
-|----------------------------------------|-------------------------|
-| Commits                                | 10                      |
-| Aliases funcionando                    | 3                       |
-| Pendientes completados                 | 4/4                     |
-| Trees regenerados                      | 8                       |
-| Memorias engram                        | 7                       |
+| Métrica                                        | Valor                           |
+|------------------------------------------------|---------------------------------|
+| Commits                                        | 10                              |
+| Aliases funcionando                            | 3                               |
+| Pendientes completados                         | 4/4                             |
+| Trees regenerados                              | 8                               |
+| Memorias engram                                | 7                               |
 
 - --
 

@@ -54,11 +54,11 @@ python 08_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py
 
 ## Reglas
 
-| Regla                       | Descripción            |
-|-----------------------------|------------------------|
-| Hacer viernes o domingo     | Fin de ciclo           |
-| Sin interrupciones          | 30-60 min de focus     |
-| Documentar insights         | Guardar en Engram      |
+| Regla                               | Descripción                    |
+|-------------------------------------|--------------------------------|
+| Hacer viernes o domingo             | Fin de ciclo                   |
+| Sin interrupciones                  | 30-60 min de focus             |
+| Documentar insights                 | Guardar en Engram              |
 
 ## Errores Comunes
 

@@ -202,25 +202,20 @@ if __name__ == "__main__":
 
 SCRIPT_LOCATION_MAP = {
     # === v6.2 AUDITORS Y VALIDATORS ===
-    "33_Parallel_Audit_Pro.py": ENGINE_DIR / "03_Validator" / "33_Parallel_Audit_Pro.py",
-    "34_Skill_Auditor.py": ENGINE_DIR / "03_Validator" / "34_Skill_Auditor.py",
-    "37_Linter_Autofix.py": ENGINE_DIR / "03_Validator" / "37_Linter_Autofix.py",
-    "40_Validate_Rules.py": ENGINE_DIR / "03_Validator" / "40_Validate_Rules.py",
-    "80_Edge_Case_Validator.py": ENGINE_DIR / "03_Validator" / "80_Edge_Case_Validator.py",
-    "skill_validator.py": ENGINE_DIR / "03_Validator" / "skill_validator.py",
-    "skill_security_scan.py": ENGINE_DIR / "03_Validator" / "skill_security_scan.py",
+    "33_Parallel_Audit_Pro.py": ENGINE_DIR / "03_Validator",  # directorio, script se agrega en get_skill_script
+    "34_Skill_Auditor.py": ENGINE_DIR / "03_Validator",
+    "37_Linter_Autofix.py": ENGINE_DIR / "03_Validator",
+    "40_Validate_Rules.py": ENGINE_DIR / "03_Validator",
+    "80_Edge_Case_Validator.py": ENGINE_DIR / "03_Validator",
+    "skill_validator.py": ENGINE_DIR / "03_Validator",
+    "skill_security_scan.py": ENGINE_DIR / "03_Validator",
     # HUBS
     "01_Auditor_Hub.py": ENGINE_DIR / "01_Auditor_Hub.py",
     "05_Validator_Hub.py": ENGINE_DIR / "05_Validator_Hub.py",
     # Batch 3: Workflows
     "01_Spider_Brainstorm.py": SKILLS_DIR / "00_Compound_Engineering" / "scripts",
     "02_Professor_X_Plan.py": SKILLS_DIR / "01_Agent_Teams_Lite" / "scripts",
-    # Batch 1: Auditor
-    "34_Skill_Auditor.py": SKILLS_DIR / "00_Skill_Auditor" / "scripts",
-    "53_Structure_Auditor.py": SKILLS_DIR / "00_Personal_Os_Stack" / "scripts",
-    "50_System_Health_Monitor.py": SKILLS_DIR / "08_Personal_Os" / "scripts",
-    "33_Parallel_Audit_Pro.py": SKILLS_DIR / "06_Testing" / "scripts",
-    "57_Repo_Sync_Auditor.py": SKILLS_DIR / "07_DevOps" / "scripts",
+    # Batch 1: Auditor (en ENGINE_DIR/03_Validator - ubicación real)
     # Batch 2: Rituales (skills)
     "08_Ritual_Cierre.py": SKILLS_DIR / "08_Personal_Os" / "scripts",
     "14_Morning_Standup.py": SKILLS_DIR / "08_Personal_Os" / "scripts",
@@ -275,7 +270,11 @@ def get_skill_script(script_name):
     
     if script_name in SCRIPT_LOCATION_MAP:
         script_dir = SCRIPT_LOCATION_MAP[script_name]
-        script_path = script_dir / script_name
+        # Si es archivo directo, usar ese; si es directorio, agregar script_name
+        if script_dir.is_file():
+            script_path = script_dir
+        else:
+            script_path = script_dir / script_name
         if script_path.exists():
             return script_path
     

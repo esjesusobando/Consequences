@@ -6,13 +6,13 @@ El skill está listo y funcional.
 
 ## estructura
 
-| Directorio                             | Propósito                                             |
-|----------------------------------------|-------------------------------------------------------|
-| **[cookbook/](cookbook/)**             | Recetas para usar Claude Code, Gemini, etc.           |
-| **[tools/](tools/)**                   | La herramienta principal (`fork_terminal.py`).        |
-| **[examples/](context/examples/)**     | Demos y scripts de prueba (en carpeta `context`).     |
-| **[docs/](context/docs/)**             | Documentación completa (en carpeta `context`).        |
-| **prompts/**                           | Templates para prompts de sistema.                    |
+| Directorio                                     | Propósito                                                     |
+|------------------------------------------------|---------------------------------------------------------------|
+| **[cookbook/](cookbook/)**                     | Recetas para usar Claude Code, Gemini, etc.                   |
+| **[tools/](tools/)**                           | La herramienta principal (`fork_terminal.py`).                |
+| **[examples/](context/examples/)**             | Demos y scripts de prueba (en carpeta `context`).             |
+| **[docs/](context/docs/)**                     | Documentación completa (en carpeta `context`).                |
+| **prompts/**                                   | Templates para prompts de sistema.                            |
 
 ## 📚 Documentación Completa
 

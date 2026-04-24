@@ -111,14 +111,14 @@ export async function getDetectedTargetNames(): Promise<string[]> {
 
 **Detection heuristics:**
 
-| Tool         | Check paths                             | Notes                           |
-|--------------|-----------------------------------------|---------------------------------|
-| OpenCode     | `~/.config/opencode/`, `.opencode/`     | XDG config or project-local     |
-| Codex        | `~/.codex/`                             | Global only                     |
-| Droid        | `~/.factory/`                           | Global only                     |
-| Cursor       | `.cursor/`, `~/.cursor/`                | Project-local or global         |
-| Pi           | `~/.pi/`                                | Global only                     |
-| Gemini       | `.gemini/`, `~/.gemini/`                | Project-local or global         |
+| Tool                 | Check paths                                     | Notes                                   |
+|----------------------|-------------------------------------------------|-----------------------------------------|
+| OpenCode             | `~/.config/opencode/`, `.opencode/`             | XDG config or project-local             |
+| Codex                | `~/.codex/`                                     | Global only                             |
+| Droid                | `~/.factory/`                                   | Global only                             |
+| Cursor               | `.cursor/`, `~/.cursor/`                        | Project-local or global                 |
+| Pi                   | `~/.pi/`                                        | Global only                             |
+| Gemini               | `.gemini/`, `~/.gemini/`                        | Project-local or global                 |
 
 ### Phase 2: Gemini Sync
 

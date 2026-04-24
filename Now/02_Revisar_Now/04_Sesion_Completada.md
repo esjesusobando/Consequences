@@ -6,13 +6,13 @@
 
 ## 📊 Resumen
 
-| Métrica                  | Valor                         |
-|--------------------------|-------------------------------|
-| **Errores corregidos**   | 12                            |
-| **Archivos modificados** | 5                             |
-| **Carpetas creadas**     | 3                             |
-| **Git**                  | ⚠️ Corrupto (previo a sesión) |
-| **Backup**               | Documentado                   |
+| Métrica                        | Valor                               |
+|--------------------------------|-------------------------------------|
+| **Errores corregidos**         | 12                                  |
+| **Archivos modificados**       | 5                                   |
+| **Carpetas creadas**           | 3                                   |
+| **Git**                        | ⚠️ Corrupto (previo a sesión)       |
+| **Backup**                     | Documentado                         |
 
 ---
 

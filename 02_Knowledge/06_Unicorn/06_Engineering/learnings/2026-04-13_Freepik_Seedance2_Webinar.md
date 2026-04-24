@@ -94,13 +94,13 @@ El proceso mostrado:
 
 ## 📊 Comparación con Versión Anterior (Seedance 1.5)
 
-| Aspecto            | 1.5                                        | 2.0                                                  |
-|--------------------|--------------------------------------------|------------------------------------------------------|
-| **Motion**         | Movimientos podían verse artificiales      | Motion físicamente realista de alto rango dinámico   |
-| **Consistencia**   | Inestable en escenas complejas             | Temporalmente consistente, sin jitter                |
-| **Cámara**         | Pans y zooms básicos, ejecución mecánica   | Movimientos cinematográficos intencionales           |
-| **Luz**            | handling básico                            | Reflexiones, luz direccional, mood realista          |
-| **Audio**          | Generado por separado                      | Nativo y sincronizado                                |
+| Aspecto                    | 1.5                                                | 2.0                                                          |
+|----------------------------|----------------------------------------------------|--------------------------------------------------------------|
+| **Motion**                 | Movimientos podían verse artificiales              | Motion físicamente realista de alto rango dinámico           |
+| **Consistencia**           | Inestable en escenas complejas                     | Temporalmente consistente, sin jitter                        |
+| **Cámara**                 | Pans y zooms básicos, ejecución mecánica           | Movimientos cinematográficos intencionales                   |
+| **Luz**                    | handling básico                                    | Reflexiones, luz direccional, mood realista                  |
+| **Audio**                  | Generado por separado                              | Nativo y sincronizado                                        |
 
 ---
 

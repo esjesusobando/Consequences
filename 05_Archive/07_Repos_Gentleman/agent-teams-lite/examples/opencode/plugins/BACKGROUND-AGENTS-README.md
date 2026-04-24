@@ -8,20 +8,20 @@ Adapted from [kdcokenny/opencode-background-agents](https://github.com/kdcokenny
 
 Adds 3 tools to OpenCode that let agents run sub-agents **in the background**:
 
-| Tool                        | What it does                                                   |
-|-----------------------------|----------------------------------------------------------------|
-| `delegate(prompt, agent)`   | Launch a sub-agent async. Returns a readable ID immediately.   |
-| `delegation_read(id)`       | Retrieve the full result of a completed delegation.            |
-| `delegation_list()`         | List all delegations (running + completed) for the session.    |
+| Tool                                | What it does                                                           |
+|-------------------------------------|------------------------------------------------------------------------|
+| `delegate(prompt, agent)`           | Launch a sub-agent async. Returns a readable ID immediately.           |
+| `delegation_read(id)`               | Retrieve the full result of a completed delegation.                    |
+| `delegation_list()`                 | List all delegations (running + completed) for the session.            |
 
 The agent keeps working while delegations run. When a delegation completes, a `<task-notification>` arrives with the full result. Results are persisted to disk as markdown files — they survive context compaction, session restarts, and process crashes.
 
 ## delegate vs task
 
-| Tool         | Behavior                               | Use When                                     |
-|--------------|----------------------------------------|----------------------------------------------|
-| `delegate`   | Async, background, persisted to disk   | You want to continue working while it runs   |
-| `task`       | Synchronous, blocks until complete     | You need the result before continuing        |
+| Tool                 | Behavior                                       | Use When                                             |
+|----------------------|------------------------------------------------|------------------------------------------------------|
+| `delegate`           | Async, background, persisted to disk           | You want to continue working while it runs           |
+| `task`               | Synchronous, blocks until complete             | You need the result before continuing                |
 
 The real value of `delegate` is **parallelization** — launch 2-3 sub-agents at once and keep chatting while they work.
 
@@ -106,12 +106,12 @@ This is a direct port of [kdcokenny/opencode-background-agents](https://github.c
 
 The original depends on shared utilities from the OCX ecosystem. Since we don't use OCX, these are inlined directly in the plugin file:
 
-| Module                | What it provides                                                      |
-|-----------------------|-----------------------------------------------------------------------|
-| `types.ts`            | `OpencodeClient` type alias                                           |
-| `with-timeout.ts`     | `TimeoutError` class + `withTimeout<T>()` function                    |
-| `log-warn.ts`         | `logWarn()` — logs via OpenCode API with console fallback             |
-| `get-project-id.ts`   | Stable project ID from git root commit hash (with worktree support)   |
+| Module                        | What it provides                                                              |
+|-------------------------------|-------------------------------------------------------------------------------|
+| `types.ts`                    | `OpencodeClient` type alias                                                   |
+| `with-timeout.ts`             | `TimeoutError` class + `withTimeout<T>()` function                            |
+| `log-warn.ts`                 | `logWarn()` — logs via OpenCode API with console fallback                     |
+| `get-project-id.ts`           | Stable project ID from git root commit hash (with worktree support)           |
 
 ### 2. Removed read-only agent restriction
 
@@ -185,11 +185,11 @@ background-agents.ts (1447 lines)
 
 Navigate background sessions in OpenCode's TUI:
 
-| Shortcut         | Action                       |
-|------------------|------------------------------|
-| `Ctrl+X Up`      | Jump to parent session       |
-| `Ctrl+X Left`    | Previous sub-agent session   |
-| `Ctrl+X Right`   | Next sub-agent session       |
+| Shortcut                 | Action                               |
+|--------------------------|--------------------------------------|
+| `Ctrl+X Up`              | Jump to parent session               |
+| `Ctrl+X Left`            | Previous sub-agent session           |
+| `Ctrl+X Right`           | Next sub-agent session               |
 
 ## Credits
 

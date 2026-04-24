@@ -18,13 +18,13 @@ Validate ideas in 5 days instead of weeks/months. Reduces risk by testing with r
 - High-risk decisions
 
 ### How It Works
-| Day         | Phase       | Focus                         |
-|-------------|-------------|-------------------------------|
-| Monday      | Map         | Define problem, map journey   |
-| Tuesday     | Sketch      | Ideate solutions (Crazy 8s)   |
-| Wednesday   | Decide      | Choose best solution          |
-| Thursday    | Prototype   | Build realistic mockup        |
-| Friday      | Test        | Validate with 5 users         |
+| Day                 | Phase               | Focus                                 |
+|---------------------|---------------------|---------------------------------------|
+| Monday              | Map                 | Define problem, map journey           |
+| Tuesday             | Sketch              | Ideate solutions (Crazy 8s)           |
+| Wednesday           | Decide              | Choose best solution                  |
+| Thursday            | Prototype           | Build realistic mockup                |
+| Friday              | Test                | Validate with 5 users                 |
 
 ### Example
 ```

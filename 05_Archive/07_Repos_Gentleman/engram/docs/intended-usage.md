@@ -36,9 +36,9 @@ If you're thinking about engram while working, something went wrong. It should b
 
 ## Quick Reference
 
-| Do                                                      | Don't                                                                     |
-|---------------------------------------------------------|---------------------------------------------------------------------------|
-| Install via gentle-ai, plugin, or preset                | Manually inspect or edit engram's storage                                 |
-| Trust that your agent is saving context for you         | Try to manage what the agent saves                                        |
-| Just start coding -- memory happens in the background   | Build custom memory protocols -- use the one that ships with the plugin   |
-| Re-run the installer to update                          | Worry about what's being saved or when                                    |
+| Do                                                              | Don't                                                                             |
+|-----------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| Install via gentle-ai, plugin, or preset                        | Manually inspect or edit engram's storage                                         |
+| Trust that your agent is saving context for you                 | Try to manage what the agent saves                                                |
+| Just start coding -- memory happens in the background           | Build custom memory protocols -- use the one that ships with the plugin           |
+| Re-run the installer to update                                  | Worry about what's being saved or when                                            |

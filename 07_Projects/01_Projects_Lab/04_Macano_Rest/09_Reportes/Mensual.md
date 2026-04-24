@@ -4,40 +4,40 @@
 
 ### Resumen Ejecutivo
 
-| Métrica                | Este Mes       | Mes Anterior       | Meta       | % Meta       |
-|------------------------|----------------|--------------------|------------|--------------|
-| Ingresos totales       |                |                    |            |              |
-| Gastos totales         |                |                    |            |              |  |
-| Ganancia neta          |                |                    |            |              |  |
-| Clientes atendidos     |                |                    |            |              |  |
-| Ticket promedio        |                |                    |            |              |  |
-| Clientes nuevos        |                |                    |            |              |  |
+| Métrica                      | Este Mes             | Mes Anterior             | Meta             | % Meta             |
+|------------------------------|----------------------|--------------------------|------------------|--------------------|
+| Ingresos totales             |                      |                          |                  |                    |
+| Gastos totales               |                      |                          |                  |                    |  |
+| Ganancia neta                |                      |                          |                  |                    |  |
+| Clientes atendidos           |                      |                          |                  |                    |  |
+| Ticket promedio              |                      |                          |                  |                    |  |
+| Clientes nuevos              |                      |                          |                  |                    |  |
 
 ---
 
 ## Análisis de Gastos
 
-| Categoría         | Este Mes       | % Total       | Mes Anterior       |
-|-------------------|----------------|---------------|--------------------|
-| Materia prima     |                |               |                    |
-| Personal          |                |               |                    |
-| Servicios         |                |               |                    |
-| Mantenimiento     |                |               |                    |
-| Marketing         |                |               |                    |
-| Otros             |                |               |                    |
+| Categoría               | Este Mes             | % Total             | Mes Anterior             |
+|-------------------------|----------------------|---------------------|--------------------------|
+| Materia prima           |                      |                     |                          |
+| Personal                |                      |                     |                          |
+| Servicios               |                      |                     |                          |
+| Mantenimiento           |                      |                     |                          |
+| Marketing               |                      |                     |                          |
+| Otros                   |                      |                     |                          |
 
 ---
 
 ## Comparativa Anual
 
-| Mes         | Ingresos       | Gastos       | Ganancia       |
-|-------------|----------------|--------------|----------------|
-| Enero       |                |              |                |
-| Febrero     |                |              |                |
-| Marzo       |                |              |                |
-| Abril       |                |              |                |
-| Mayo        |                |              |                |
-| Junio       |                |              |                |
+| Mes               | Ingresos             | Gastos             | Ganancia             |
+|-------------------|----------------------|--------------------|----------------------|
+| Enero             |                      |                    |                      |
+| Febrero           |                      |                    |                      |
+| Marzo             |                      |                    |                      |
+| Abril             |                      |                    |                      |
+| Mayo              |                      |                    |                      |
+| Junio             |                      |                    |                      |
 
 ---
 
