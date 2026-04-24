@@ -58,10 +58,10 @@ validate        # Validator_Hub.py
 
 # O directamente
 cd Think_Different
-python 08_Scripts_Os/01_Auditor_Hub.py estructura
-python 08_Scripts_Os/01_Auditor_Hub.py skills
-python 08_Scripts_Os/01_Auditor_Hub.py health
-python 08_Scripts_Os/01_Auditor_Hub.py profundo
+python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py estructura
+python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py skills
+python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py health
+python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py profundo
 ```
 
 ---
@@ -78,7 +78,7 @@ Think_Different/
 ├── 04_Operations/           ✅ Memoria, Brain, Notas
 ├── 05_Archive/              ✅ Repos, Legacy (v6.1: 01-09)
 ├── 07_Projects/             ✅ Proyectos
-├── 08_Scripts_Os/           ✅ 11 HUBs + Utilities
+├── 01_Personal_Os/04_Operations/03_Scripts_Os/           ✅ 11 HUBs + Utilities
 │   ├── 13_Auditors_Os/     ✅ Utilities (Beautify, Carousel, etc)
 │   └── .backup/            ✅ 10_Legacy_archive
 └── 13_Auditors_Os/          ✅ Utilidades OS (scripts orphans)
@@ -86,7 +86,7 @@ Think_Different/
 
 ---
 
-## 🎯 Skills (01_Core/03_Skills/)
+## 🎯 Skills (01_Personal_Os/01_Core/02_Tools/02_Skills/)
 
 | #             | Categoría                                  | Skills                       |
 |---------------|--------------------------------------------|------------------------------|
@@ -123,7 +123,7 @@ Think_Different/
 
 ## 🔧 Legacy Scripts (Legacy_Backup/)
 
-Scripts legacy en `08_Scripts_Os/Legacy_Backup/` — referensiados por números:
+Scripts legacy en `01_Personal_Os/04_Operations/03_Scripts_Os/Legacy_Backup/` — referensiados por números:
 
 | #               | Script                | Purpose                                  |
 |-----------------|-----------------------|------------------------------------------|
@@ -148,7 +148,7 @@ Scripts legacy en `08_Scripts_Os/Legacy_Backup/` — referensiados por números:
 
 ## 📝 Notas Importantes
 
-1. **Rutas v6.1**: Skills ahora en `01_Core/03_Skills/` (antes `.agent/02_Skills/`)
+1. **Rutas v6.1**: Skills ahora en `01_Personal_Os/01_Core/02_Tools/02_Skills/` (antes `.agent/02_Skills/`)
 2. **.bashrc**: Alias configurados con rutas absolutas
 3. **34_Skill_Auditor.py**: Corregido para auto-detectar categorías
 

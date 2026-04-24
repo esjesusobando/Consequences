@@ -127,7 +127,7 @@ Para la versión v1.1, hemos evolucionado hacia una organización por **Áreas M
 | **18_Personal_Life_OS**                                    | Life OS                               | Hillary integration                                        |
 | **19_Video_Intel**                                         | Video                                 | Video AI                                                   |
 
-### HUBs (08_Scripts_Os/) — 14 HUBs
+### HUBs (01_Personal_Os/04_Operations/03_Scripts_Os/) — 14 HUBs
 
 | Hub                                            | Script                                                  | Propósito                                                       |
 |------------------------------------------------|---------------------------------------------------------|-----------------------------------------------------------------|
@@ -150,8 +150,8 @@ Para la versión v1.1, hemos evolucionado hacia una organización por **Áreas M
 
 | Tool                                                     | Ubicación                                                   | Función                                              |
 |----------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------|
-| **skill_validator.py**                                   | `08_Scripts_Os/03_Validator/`                               | Valida estructura SOTA                               |
-| **skill_security_scan.py**                               | `08_Scripts_Os/03_Validator/`                               | Escaneo de seguridad                                 |
+| **skill_validator.py**                                   | `01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/`                               | Valida estructura SOTA                               |
+| **skill_security_scan.py**                               | `01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/`                               | Escaneo de seguridad                                 |
 
 ### MCPs (29 activos)
 
@@ -259,8 +259,8 @@ Code review automático integrado:
 |--------------------------------------------------------|---------------------------------------------------------------------------------------|
 | **AGENTS.md**                                          | `00_Winter_is_Coming/AGENTS.md`                                                       |
 | **RULES_INDEX**                                        | `01_Core/01_Rules/RULES_INDEX.md`                                                     |
-| **Skills README**                                      | `01_Core/03_Skills/README.md`                                                         |
-| **Scripts INDEX**                                      | `08_Scripts_Os/SCRIPTS_INDEX.md`                                                      |
+| **Skills README**                                      | `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                                                         |
+| **Scripts INDEX**                                      | `01_Personal_Os/04_Operations/03_Scripts_Os/SCRIPTS_INDEX.md`                                                      |
 | **OS Integration Audit**                               | `02_Knowledge/04_Docs/OS_Integration_Audit_v1.0.md`                                   |
 | **Edge Cases**                                         | `02_Knowledge/04_Docs/OS_Edge_Cases_Analysis.md`                                      |
 | **Chris Orwig Style**                                  | `02_Knowledge/03_Research/CHRIS_ORWIG_STYLE_GUIDE.md`                                 |

@@ -35,16 +35,16 @@ Motor centralizado de notificaciones sonoras. Invocado por hooks y otros HUBs.
 
 ### 01 — Auditor
 ```bash
-python 08_Scripts_Os/01_Auditor_Hub.py          # Dry-run
-python 08_Scripts_Os/01_Auditor_Hub.py --apply  # Con auto-fix
-python 08_Scripts_Os/01_Auditor_Hub.py --agents # Solo 3 agentes + Judge
+python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py          # Dry-run
+python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py --apply  # Con auto-fix
+python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py --agents # Solo 3 agentes + Judge
 ```
 Valida: estructura (00-08), naming convention, links rotos, archivos huérfanos, skills.
 
 ### 02 — Git
 ```bash
-python 08_Scripts_Os/02_Git_Hub.py --status    # Estado del repo
-python 08_Scripts_Os/02_Git_Hub.py --audit     # Auditoría de estructura git
+python 01_Personal_Os/04_Operations/03_Scripts_Os/02_Git_Hub.py --status    # Estado del repo
+python 01_Personal_Os/04_Operations/03_Scripts_Os/02_Git_Hub.py --audit     # Auditoría de estructura git
 ```
 
 ### 03 — AIPM
@@ -52,16 +52,16 @@ AI Performance Monitoring. Métricas de uso de agentes, velocidad, calidad de ou
 
 ### 04 — Ritual
 ```bash
-python 08_Scripts_Os/04_Ritual_Hub.py --open    # Ritual de apertura de sesión
-python 08_Scripts_Os/04_Ritual_Hub.py --close   # Ritual de cierre
-python 08_Scripts_Os/04_Ritual_Hub.py --recover # Recovery de sesión interrumpida
+python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --open    # Ritual de apertura de sesión
+python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --close   # Ritual de cierre
+python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --recover # Recovery de sesión interrumpida
 ```
 
 ### 05 — Validator
 ```bash
-python 08_Scripts_Os/05_Validator_Hub.py --rules   # Validar reglas
-python 08_Scripts_Os/05_Validator_Hub.py --stack    # Validar stack técnico
-python 08_Scripts_Os/05_Validator_Hub.py --patterns # Validar patrones
+python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py --rules   # Validar reglas
+python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py --stack    # Validar stack técnico
+python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py --patterns # Validar patrones
 ```
 
 ### 06 — Tool
@@ -84,13 +84,13 @@ Motor de automejora. Coordina con `04_Operations/01_Auto_Improvement/` para aná
 
 ### 12 — Context Bar
 ```bash
-python 08_Scripts_Os/12_Context_Usage_Bar.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Context_Usage_Bar.py
 ```
 Muestra visualmente el porcentaje de contexto utilizado en la sesión actual.
 
 ### 13 — Beautify
 ```bash
-python 08_Scripts_Os/13_Beautify_Tables.py --file archivo.md
+python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Beautify_Tables.py --file archivo.md
 ```
 Formatea y embellece tablas markdown.
 
@@ -107,7 +107,7 @@ from config_paths import TASKS_DIR, EVALS_DIR, SERVER_DIR, MATRIX_DIR
 Si un HUB falla con `ModuleNotFoundError`, ejecutar desde la raíz del repo:
 ```bash
 cd Think_Different/
-python 08_Scripts_Os/XX_Hub.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/XX_Hub.py
 ```
 
 ---
@@ -115,10 +115,10 @@ python 08_Scripts_Os/XX_Hub.py
 ## Alias Rápidos (bashrc/zshrc)
 
 ```bash
-alias audit="python 08_Scripts_Os/01_Auditor_Hub.py"
-alias audit-apply="python 08_Scripts_Os/01_Auditor_Hub.py --apply"
-alias git-hub="python 08_Scripts_Os/02_Git_Hub.py"
-alias aipm="python 08_Scripts_Os/03_AIPM_Hub.py"
-alias ritual="python 08_Scripts_Os/04_Ritual_Hub.py"
-alias validate="python 08_Scripts_Os/05_Validator_Hub.py"
+alias audit="python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py"
+alias audit-apply="python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py --apply"
+alias git-hub="python 01_Personal_Os/04_Operations/03_Scripts_Os/02_Git_Hub.py"
+alias aipm="python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM_Hub.py"
+alias ritual="python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py"
+alias validate="python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py"
 ```

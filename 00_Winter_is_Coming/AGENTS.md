@@ -174,7 +174,7 @@ After each task completion, save to Engram:
 |:----------------------|:----------------|
 | `.agent/00_Rules/` | `01_Core/01_Rules/` |
 | `.agent/01_Agents/` | `01_Core/04_Agents/` |
-| `.agent/02_Skills/` | `01_Core/03_Skills/` |
+| `.agent/02_Skills/` | `01_Personal_Os/01_Core/02_Tools/02_Skills/` |
 | `.agent/03_Workflows/`             | `01_Core/00_Workflows/`             |
 
 **Última sincronización:** 2026-04-18 (v1.0)
@@ -355,7 +355,7 @@ When the user wants structured development with specs, use the SDD methodology.
 ### SDD Skills Location
 
 - **Global:** `~/.config/opencode/skills/sdd-*`
-- **Local:** `01_Core/03_Skills/01_Agent_Teams_Lite/`
+- **Local:** `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/`
 - **Memory backend:** Engram MCP
 
 ---
@@ -414,7 +414,7 @@ Ideate → Brainstorm → Plan → Work → Review → Compound → Repeat
 ### CE Skills Location
 
 - **Global:** `~/.config/opencode/skills/gentleman/06_Compound_Engineering/`
-- **Local:** `01_Core/03_Skills/00_Compound_Engineering/`
+- **Local:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/`
 
 ---
 
@@ -657,7 +657,7 @@ python 01_Core/08_Plugins/Staff_Claude_Code/plugins/skill-creator/skills/skill-c
 > **Skill de análisis de datos de nivel Silicon Valley**
 
 **Estado**: ✅ Creado (2026-03-27)
-**Ubicación**: `01_Core/03_Skills/16_Silicon_Valley_Data_Analyst/`
+**Ubicación**: `01_Personal_Os/01_Core/02_Tools/02_Skills/16_Silicon_Valley_Data_Analyst/`
 
 ### Características
 
@@ -689,7 +689,7 @@ matplotlib, seaborn, plotly
 > **Skill de SEO nivel Silicon Valley**
 
 **Estado**: ✅ Creado (2026-03-27)
-**Ubicación**: `01_Core/03_Skills/17_SEO_SOTA_Master/`
+**Ubicación**: `01_Personal_Os/01_Core/02_Tools/02_Skills/17_SEO_SOTA_Master/`
 
 ### Características
 
@@ -755,7 +755,7 @@ matplotlib, seaborn, plotly
 | "auto-skill", "track returns", "create skill from" | `05_Returns_Tracker` | `24_Hillary_Life_OS.md` |
 | "/hillary", "life os", "personal productivity" | Orquestador | `24_Hillary_Life_OS.md` |
 
-**Skills location:** `01_Core/03_Skills/18_Personal_Life_OS/`
+**Skills location:** `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/`
 **Inbox:** `03_Tasks/02_Hillary_Inbox/`
 **RUNBOOK:** `02_Knowledge/04_Docs/Hillary_Life_OS_RUNBOOK.md`
 
