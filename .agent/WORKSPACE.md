@@ -1,107 +1,130 @@
-# Workspace Structure — Think Different v6.1
+# Workspace Structure — Think Different v2.0 Consequences
 
-> **Solo carpetas activas (00-08 + Maerks)**
+> **4 carpetas raíz con propósito claro — estructura limpia post-migración 2026-04-24**
 
 ---
 
-## 📂 Estructura Activa (Workspace)
+## 📂 Estructura Raíz (Workspace v2.0)
 
 ```
 Think_Different/
-├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria (ESTRATÉGICO)
-├── 01_Core/               # Motor: Skills, Agents, MCPs, Workflows 💾
-├── 02_Knowledge/          # Documentación, Research, Notas
-├── 03_Tasks/             # Tareas activas (YAML frontmatter)
-├── 04_Operations/        # Operaciones: Memory, Brain, Notes
-├── 05_Archive/            # Legacy archivado
-├── 06_Playground/        # Pruebas y experimentos
-├── 07_Projects/          # Proyectos activos
-├── 08_Scripts_Os/         # Scripts operativos
-│   ├── Ritual_Fixed/      # 12 scripts funcionando
-│   └── Tool_Fixed/        # Herramientas
-└── Maerks/               # Tests legacy, planes
+├── 00_Winter_is_Coming/    # ESTRATÉGICO: Goals, Backlog, AGENTS.md
+├── 01_Personal_Os/         # EL SISTEMA OPERATIVO (motor completo)
+├── 02_Playground/          # ZONA DE PRUEBAS (no contamina el OS)
+├── 03_Resultado/           # OUTPUTS DE PROYECTOS (zona de entrega)
+├── .agent/                 # Backup estratégico
+├── .atl/                   # SDD Registry + openspec
+├── .claude/                # Config Claude Code
+├── .mcp.json               # 33 MCPs activos
+├── AGENTS.md               # Entry point GGA (Pre-Commit)
+├── CLAUDE.md               # Config oficial para IAs
+└── README.md               # Documentación principal
 ```
 
 ---
 
-## 📂 Estructura 01_Core (15 Elementos)
+## 📂 Estructura 01_Personal_Os (Sistema Operativo)
 
 ```
-01_Core/
-├── 00_Workflows/              # 26+ workflows
-├── 01_Rules/                  # 22+ reglas del sistema
-├── 02_Evals/                  # Métricas y evaluaciones
-├── 03_Skills/                 # 18 carpetas de skills (FUENTE DE VERDAD)
-├── 04_Agents/                 # Agentes configurados
-├── 05_Mcp/                    # 20+ MCPs configurados
-├── 06_Integrations/           # Integraciones externas
-├── 07_Hooks/                  # Hooks del sistema
-├── 08_Plugins/                # Plugins
-├── 09_Server/                 # Servidor backend
-├── 10_Templates/              # Plantillas
-├── 00_Comandos_Workflows.md  # Comandos disponibles
-├── 02_Dream_Team.md          # Equipo de agentes
-├── 01_Inventario_Total.md    # Inventario completo
-└── Requirements.txt           # Dependencias Python
-```
-
----
-
-## 📋 Descripción de Carpetas (Workspace)
-
-| # | Carpeta | Contenido | Estado |
-|---|---------|-----------|--------|
-| 01 | **00_Winter_is_Coming/** | Goals, Backlog, Memoria | ✅ |
-| 02 | **01_Core/** | Skills (160+), Agents, MCPs (20+), Workflows (26+) | ✅ |
-| 03 | **02_Knowledge/** | Documentación, Research, Notas | ✅ |
-| 04 | **03_Tasks/** | Tareas activas (YAML frontmatter) | ✅ |
-| 05 | **04_Operations/** | Memory, Brain, Notes | ✅ |
-| 06 | **05_Archive/** | Legacy archivado | 📦 |
-| 07 | **06_Playground/** | Pruebas y experimentos | ✅ |
-| 08 | **07_Projects/** | Proyectos activos | ✅ |
-| 09 | **08_Scripts_Os/** | Scripts operativos | ✅ |
-| 10 | **Maerks/** | Tests legacy, planes | 📦 |
-
----
-
-## 🎯 Rutas Importantes
-
-| Recurso | Ruta |
-|---------|------|
-| **Fuente de Verdad** | `01_Core/03_Skills/` |
-| **Dream Team** | `01_Core/02_Dream_Team.md` |
-| **Comandos** | `01_Core/00_Comandos_Workflows.md` |
-| **Herramientas** | `08_Scripts_Os/Tool_Fixed/` |
-| **Scripts** | `08_Scripts_Os/Ritual_Fixed/` |
-
----
-
-## 📂 Estructura 08_Scripts_Os
-
-```
-08_Scripts_Os/
-├── Ritual_Fixed/              # Scripts funcionando (12)
-│   ├── 08_Ritual_Cierre.py
-│   ├── 09_Backlog_Triage.py
-│   ├── 11_Sync_Notes.py
-│   ├── 12_Update_Links.py
-│   ├── 13_Validate_Stack.py
-│   ├── 14_Morning_Standup.py
-│   ├── 15_Weekly_Review.py
-│   ├── 16_Clean_System.py
-│   ├── 17_Ritual_Dominical.py
-│   ├── 19_Generate_Progress.py
-│   ├── 50_System_Health_Monitor.py
-│   └── 57_Repo_Sync_Auditor.py
-└── Tool_Fixed/                # Herramientas (6)
-    ├── 00_Notifier.py         # Sonido al completar
-    ├── 39_Repair_Corruption.py
-    ├── 60_Fast_Vision.py
-    ├── 61_MCP_Health_Check.py
-    ├── 62_Tool_Shed.py        # Auto-detecta contexto
-    └── 63_Skill_Harmonizer.py # Valida skills
+01_Personal_Os/
+├── 01_Core/                         # Motor del OS
+│   ├── 00_Workflows_Os/             # Workflows (Personal, Marvel, Gentleman, Hillary, CE)
+│   ├── 01_Rules/                    # 10 reglas del sistema (.mdc)
+│   └── 02_Tools/                    # Todas las herramientas
+│       ├── 01_Agents/               # Dream Team + 23 Specialists
+│       ├── 02_Skills/               # 9 áreas funcionales (limpias)
+│       ├── 03_Mcp/                  # Config MCPs (33 activos)
+│       ├── 04_Integrations/         # Fireflies, Granola
+│       ├── 05_Hooks/                # Pre/Post/Lifecycle/Sound/Harness
+│       ├── 06_Plugins/              # Plugins OS
+│       ├── 07_Server/               # MCP Server
+│       ├── 08_Evals/                # Evaluadores
+│       └── 09_Templates/            # Templates
+│
+├── 02_Knowledge/                    # Base de conocimiento
+│   ├── 00_Examples_Personal_Os/
+│   ├── 01_Research_Os/
+│   └── 03_Writing_Content/
+│
+├── 03_Task/                         # Tareas activas (singular)
+│   ├── 00_Templates/
+│   ├── 01_Tasks_Done/
+│   └── 02_Hillary_Inbox/
+│
+├── 04_Operations/                   # TODO LO OPERATIVO
+│   ├── 00_Context_LLM/              # Memoria y contexto
+│   │   ├── 00_Context_Memory/
+│   │   ├── 01_Process_Notes/
+│   │   ├── 02_Knowledge_Brain/
+│   │   ├── 03_Memory_Brain/
+│   │   ├── 04_Memory_Brain/
+│   │   └── 05_Plans/
+│   ├── 01_Auto_Improvement/         # Motor auto-mejora
+│   ├── 02_Agent_Teams_Lite/         # SDD registry
+│   ├── 03_Scripts_Os/               # 14 HUBs + scripts
+│   ├── 04_Installer/                # Instalación
+│   └── 05_Projects/                 # Proyectos activos
+│
+└── 05_Archive/                      # Legacy y repos de referencia
+    ├── 01_Repos_Gentleman/
+    ├── 02_Raiz_Archive/
+    └── 03_Planes/
 ```
 
 ---
 
-*Generado: 2026-03-29 | Think Different v6.1*
+## 📋 Tabla de Carpetas (v2.0)
+
+| #     | Carpeta                    | Contenido                                                 | Estado          |
+|-------|----------------------------|-----------------------------------------------------------|-----------------|
+| 01    | **00_Winter_is_Coming/**   | Goals, Backlog, AGENTS.md                                 | ✅ ESTRATÉGICO   |
+| 02    | **01_Personal_Os/**        | Sistema completo (Core, Knowledge, Tasks, Ops, Archive)   | ✅ SISTEMA OS    |
+| 03    | **02_Playground/**         | Pruebas y experimentos (aislado)                          | ✅ TESTING       |
+| 04    | **03_Resultado/**          | Outputs de proyectos (entrega)                            | ✅ OUTPUTS       |
+
+---
+
+## 🎯 Rutas Importantes (v2.0)
+
+| Recurso                       | Ruta                                                           |
+|-------------------------------|----------------------------------------------------------------|
+| **Fuente de Verdad Skills**   | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                   |
+| **Rules (10 .mdc)**           | `01_Personal_Os/01_Core/01_Rules/`                             |
+| **Scripts (14 HUBs)**         | `01_Personal_Os/04_Operations/03_Scripts_Os/`                  |
+| **Workflows**                 | `01_Personal_Os/01_Core/00_Workflows_Os/`                      |
+| **Agents**                    | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                   |
+| **MCPs**                      | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`                      |
+| **Projects**                  | `01_Personal_Os/04_Operations/05_Projects/`                    |
+| **Context LLM**               | `01_Personal_Os/04_Operations/00_Context_LLM/`                 |
+| **Auto-Improvement**          | `01_Personal_Os/04_Operations/01_Auto_Improvement/`            |
+| **config_paths.py**           | `01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py`   |
+| **Sound Engine**              | `01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/`           |
+| **MCP Config Activo**         | `.mcp.json` (raíz)                                             |
+
+---
+
+## 📂 Estructura 03_Scripts_Os (14 HUBs)
+
+```
+03_Scripts_Os/
+├── 00_Sound_Engine.py         # Notificaciones sonoras
+├── 01_Auditor_Hub.py          # System validation
+├── 02_Git_Hub.py              # Git operations
+├── 03_AIPM_Hub.py             # AI Performance Monitoring
+├── 04_Ritual_Hub.py           # Session rituals
+├── 05_Validator_Hub.py        # Code validation
+├── 06_Tool_Hub.py             # Tool integration
+├── 07_Integration_Hub.py      # MCP integrations
+├── 08_Workflow_Hub.py         # Workflow automation
+├── 09_Data_Hub.py             # Data processing
+├── 10_General_Hub.py          # General utilities
+├── 11_Auto_Learn_Hub.py       # Motor de automejora
+├── 12_Context_Usage_Bar.py    # Barra de contexto
+├── 13_Beautify_Tables.py      # Formateo tablas
+├── config_paths.py            # Rutas centralizadas (auto-detección)
+└── 03_Validator/              # Scripts de validación avanzada
+```
+
+---
+
+*Generado: 2026-04-24 | PersonalOS v2.0 Consequences — 4 carpetas raíz*

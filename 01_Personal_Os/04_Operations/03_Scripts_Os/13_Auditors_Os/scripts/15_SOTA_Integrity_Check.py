@@ -78,7 +78,7 @@ def check_skills():
     print("CHECKING: Skills (25 categorías)")
     print("-" * 50)
 
-    skills_path = ROOT / "01_Core" / "03_Skills"
+    skills_path = ROOT / "01_Personal_Os" / "01_Core" / "02_Tools" / "02_Skills"
     if not skills_path.exists():
         print("Skills directory not found", "ERROR")
         return False
@@ -139,8 +139,8 @@ def check_agents():
         log(f"Agent workflows: {count}", "OK")
         count_total += count
 
-    # Verificar 01_Core/04_Agents/
-    core_agents = ROOT / "01_Core" / "04_Agents"
+    # Verificar 01_Personal_Os/01_Core/02_Tools/01_Agents/
+    core_agents = ROOT / "01_Personal_Os" / "01_Core" / "02_Tools" / "01_Agents"
     if core_agents.exists():
         count = sum(1 for _ in core_agents.rglob("*.md") if _.is_file())
         log(f"Core Agents: {count}", "OK")
@@ -154,7 +154,7 @@ def check_hooks():
     log("CHECKING: Hooks")
     log("=" * 50)
 
-    hooks_path = ROOT / "01_Core" / "07_Hooks"
+    hooks_path = ROOT / "01_Personal_Os" / "01_Core" / "02_Tools" / "05_Hooks"
     if not hooks_path.exists():
         log("Hooks directory not found", "ERROR")
         return False
@@ -173,7 +173,7 @@ def check_hubs():
     log("CHECKING: HUBs (11)")
     log("=" * 50)
 
-    hubs_path = ROOT / "08_Scripts_Os"
+    hubs_path = ROOT / "01_Personal_Os" / "04_Operations" / "03_Scripts_Os"
     if not hubs_path.exists():
         log("08_Scripts_Os not found", "ERROR")
         return False
@@ -197,7 +197,7 @@ def check_rules():
     log("CHECKING: Rules (10 consolidadas)")
     log("=" * 50)
 
-    rules_path = ROOT / "01_Core" / "01_Rules"
+    rules_path = ROOT / "01_Personal_Os" / "01_Core" / "01_Rules"
     if not rules_path.exists():
         log("Rules directory not found", "ERROR")
         return False

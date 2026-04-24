@@ -1,52 +1,105 @@
-# 📋 Índice de Reglas — PersonalOS (00_Rules)
+# 📋 Índice de Reglas — PersonalOS v2.0 Consequences
 
-Este archivo enumera y describe la función de cada regla activa en el sistema para facilitar la auditoría y el cumplimiento del protocolo.
-
-## 🔘 Pilares Fundamentales (The Core Triad)
-
-| Regla | Nombre | Función |
-| :--- | :--- | :--- |
-| [01_Context_Protocol.mdc](./01_Context_Protocol.mdc) | **Protocolo Génesis** | Protocolo obligatorio de inicio de sesión e idioma (Español). |
-| [02_Pilar_Base.mdc](./02_Pilar_Base.mdc) | **Pilar 0: Protocolo** | ADN operativo y bucle de evolución de reglas. |
-| [03_Pilar_Motor.mdc](./03_Pilar_Motor.mdc) | **Pilar 1: El Motor** | Estándares de ingeniería, Premium UI y Armor Layer. |
-| [04_Pilar_Estrategia.mdc](./04_Pilar_Estrategia.mdc) | **Pilar 2: La Estrategia** | Gestión de tareas y observabilidad AIPM. |
-
-## 🛠️ Reglas Operativas y de Integración
-
-| Regla | Nombre | Descripción |
-| :--- | :--- | :--- |
-| [05_ritual-integrity.mdc](./05_ritual-integrity.mdc) | Ritual Integrity | Asegura la integridad de los rituales de cierre y apertura. |
-| [06_Claude_Integration.mdc](./06_Claude_Integration.mdc) | Claude Integration | Estándares de comunicación con Claude Code. |
-| [07_Skill_Fusion.mdc](./07_Skill_Fusion.mdc) | Skill Fusion | Uso de habilidades instaladas en lugar de implementaciones manuales. |
-| [08_Observability.mdc](./08_Observability.mdc) | Observability | Métricas de salud del sistema y logs. |
-| [09_Elite_Reporting.mdc](./09_Elite_Reporting.mdc) | Elite Reporting | Estándares de reporte de alta calidad. |
-| [10_Context_Management.mdc](./10_Context_Management.mdc) | Context Management | Gestión de la ventana de contexto y sub-agentes. |
-| [11_Workflow_Standards.mdc](./11_Workflow_Standards.mdc) | Workflow Standards | Estándares para la creación y ejecución de workflows. |
-| [12_Nexus-Routing.mdc](./12_Nexus-Routing.mdc) | Nexus Routing | Lógica de enrutamiento entre componentes del sistema. |
-| [13_Testing_Resource.mdc](./13_Testing_Resource_Management.mdc) | Testing Resources | Gestión de recursos para pruebas automatizadas. |
-| [14_Invoice_Intelligence.mdc](./14_Invoice_Intelligence.mdc) | Invoice Intelligence | Lógica específica para procesamiento de inteligencia de facturas. |
-| [15_Backlog_Processing.mdc](./15_Backlog_Processing.mdc) | Backlog Processing | Triage y priorización del backlog. |
-| [16_Brainstorming.mdc](./16_Brainstorming.mdc) | Brainstorming | Fase de ideación y exploración libre. |
-
-## 🧬 Workflows Especializados
-
-| Regla | Nombre | Descripción |
-| :--- | :--- | :--- |
-| [17_Genesis.mdc](./17_Genesis.mdc) | Workflow Génesis | Paso a paso del inicio de sesión (Aterrizaje). |
-| [18_Morning_Standup.mdc](./18_Morning_Standup.mdc) | Morning Standup | Ritual de sincronización matutina. |
-| [19_Planning.mdc](./19_Planning.mdc) | Planning | Fase de planificación detallada de tareas. |
-| [20_Recap_Morning.mdc](./20_Recap_Morning.mdc) | Recap Morning | Resumen de lo planificado por la mañana. |
-| [21_Gentleman_Framework.mdc](./21_Gentleman_Framework.mdc) | Gentleman Framework | Marco de trabajo para desarrollo guiado por agentes. |
-
-## 🧬 Workflows Especializados
-
-| Regla | Nombre | Descripción |
-| :--- | :--- | :--- |
-| [17_Genesis.mdc](./17_Genesis.mdc) | Workflow Génesis | Paso a paso del inicio de sesión (Aterrizaje). |
-| [18_Morning_Standup.mdc](./18_Morning_Standup.mdc) | Morning Standup | Ritual de sincronización matutina. |
-| [19_Planning.mdc](./19_Planning.mdc) | Planning | Fase de planificación detallada de tareas. |
-| [20_Recap_Morning.mdc](./20_Recap_Morning.mdc) | Recap Morning | Resumen de lo planificado por la mañana. |
-| [21_Gentleman_Framework.mdc](./21_Gentleman_Framework.mdc) | Gentleman Framework | Marco de trabajo para desarrollo guiado por agentes. |
+**Versión:** 2.0
+**Última actualización:** 2026-04-24
+**Ubicación fuente:** `01_Personal_Os/01_Core/01_Rules/`
+**Backup aquí:** `.agent/00_Rules/`
+**Framework:** Anthropic SOTA 2026 + PersonalOS Consequences
 
 ---
-_Total Reglas: 21_
+
+## 📂 Estructura del Workspace (v2.0 — 4 carpetas raíz)
+
+```
+Think_Different/
+├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria (ESTRATÉGICO)
+├── 01_Personal_Os/         # El Sistema Operativo
+│   ├── 01_Core/01_Rules/   # ← FUENTE DE VERDAD: 10 reglas .mdc
+│   └── ...
+├── 02_Playground/          # Zona de pruebas
+└── 03_Resultado/           # Outputs de proyectos
+```
+
+---
+
+## 🔘 Reglas Activas (10 archivos .mdc)
+
+| #     | Archivo                                                        | Nombre                        | Función                                                      |
+|-------|----------------------------------------------------------------|-------------------------------|--------------------------------------------------------------|
+| 00    | [00_Core_Protocol.mdc](./00_Core_Protocol.mdc)                 | **Protocolo Core**            | Protocolo obligatorio de inicio de sesión + SOTA Anthropic   |
+| 01    | [01_Pilares_Sistema.mdc](./01_Pilares_Sistema.mdc)             | **Pilares del Sistema**       | ADN operativo: 12 Leyes Maestras, bucle de evolución         |
+| 02    | [02_Motor_Agent.mdc](./02_Motor_Agent.mdc)                     | **Motor Agente**              | Estándares de ingeniería, Premium UI, Armor Layer            |
+| 03    | [03_Protocolos_Ejecucion.mdc](./03_Protocolos_Ejecucion.mdc)   | **Protocolos de Ejecución**   | Gestión de tareas, observabilidad, AIPM                      |
+| 04    | [04_Observabilidad.mdc](./04_Observabilidad.mdc)               | **Observabilidad**            | Métricas de salud del sistema y logs                         |
+| 05    | [05_Reporting.mdc](./05_Reporting.mdc)                         | **Reporting Elite**           | Estándares de reporte de alta calidad                        |
+| 06    | [06_Contexto_Gestion.mdc](./06_Contexto_Gestion.mdc)           | **Gestión de Contexto**       | Ventana de contexto, sub-agentes, compaction                 |
+| 07    | [07_Docs_Guias.mdc](./07_Docs_Guias.mdc)                       | **Docs y Guías**              | Estándares de documentación, workflows                       |
+| 08    | [08_Token_Economy.mdc](./08_Token_Economy.mdc)                 | **Token Economy**             | 10 leyes para extender Claude Code hasta 10x                 |
+| 09    | [09_Agent_Teams_Protocol.mdc](./09_Agent_Teams_Protocol.mdc)   | **Agent Teams Protocol**      | Multi-agente: boot, delegación, Super Campeones              |
+
+---
+
+## 🚀 MEJORES PRÁCTICAS SOTA ANTHROPIC 2026
+
+### Las 7 Prácticas Fundamentales
+
+| #     | Práctica                    | Descripción                                        |
+|-------|-----------------------------|----------------------------------------------------|
+| 1     | **CLAUDE.md**               | Memoria de proyecto - cerebro permanente           |
+| 2     | **Plan then Execute**       | Planificar ANTES de ejecutar código                |
+| 3     | **Custom Tools**            | Comandos slash + MCP para automatización           |
+| 4     | **Git Workflows**           | Ramas seguras + worktrees para trabajo paralelo    |
+| 5     | **Specific Prompting**      | Prompts con archivos, URLs, imágenes específicas   |
+| 6     | **Context Management**      | Sub-agentes + /clear entre tareas                  |
+| 7     | **Headless Mode + Hooks**   | Automatización CI/CD                               |
+
+### Las 9 Categorías de Skills (Framework Anthropic)
+
+| #     | Categoría                 | Ejemplo                |
+|-------|---------------------------|------------------------|
+| 1     | Library / API Reference   | nextjs-15, react-19    |
+| 2     | Product Verification      | pr-review, testing     |
+| 3     | Data Fetching             | analytics-tracking     |
+| 4     | Business Process          | sdd-workflow           |
+| 5     | Code Scaffolding          | skill-creator          |
+| 6     | Code Quality              | security-review        |
+| 7     | CI/CD                     | devops scripts         |
+| 8     | Runbooks                  | systematic-debugging   |
+| 9     | Infrastructure Ops        | mcp-client             |
+
+---
+
+## 🗂️ Skills System (Referencia v2.0)
+
+**Ubicación fuente:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+
+### 9 Áreas Funcionales
+
+| Área                          | Contenido                              |
+|-------------------------------|----------------------------------------|
+| **00_Compound_Engineering**   | Core CE                                |
+| **00_Personal_Os_Stack**      | Stack base OS                          |
+| **00_Skill_Auditor**          | Auditor de skills                      |
+| **01_Creacion_Contenidos**    | Contenido + SEO + Carousel             |
+| **02_Diseno_Ui_Ux**           | Diseño UI/UX                           |
+| **03_Video_Media**            | Video + James Cameron                  |
+| **04_Automatizacion**         | Automatización                         |
+| **05_Workflows**              | Workflows + Agent Teams Lite           |
+| **06_Tools**                  | Tools + System Master + Data Analyst   |
+| **07_Personal_Os**            | Skills OS personal                     |
+| **08_Invictus_Web**           | Web development                        |
+
+### Sistema de Calidad
+
+| Herramienta         | Propósito                                        |
+|---------------------|--------------------------------------------------|
+| **Skill Auditor**   | Audita skills contra estándares Anthropic        |
+| **Skill Creator**   | Genera scaffolding automáticamente               |
+| **Scoring**         | 90%+ = Excellent, 70-89% = Good, <50% = Failed   |
+
+---
+
+_Total Reglas activas: 10 (.mdc files)_
+_Total Skills: 165+_
+_Total Áreas funcionales: 9 (post-migración v2.0)_
+_Framework: Anthropic SOTA 2026 + PersonalOS v2.0 Consequences_

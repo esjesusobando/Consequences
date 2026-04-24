@@ -19,18 +19,18 @@ from enum import Enum
 sys.path.insert(0, str(Path(__file__).parent))
 from config_paths import PROJECT_ROOT, ENGINE_DIR
 
-# REQUIRED_DIRS - v1.1 Alpha structure
+# REQUIRED_DIRS - v2.0 Consequences structure
 REQUIRED_DIRS = [
-    "01_Core",
-    "04_Operations",
-    "08_Scripts_Os",
+    "01_Personal_Os",
+    "00_Winter_is_Coming",
+    "02_Playground",
 ]
 for d in REQUIRED_DIRS:
     if not (PROJECT_ROOT / d).exists():
         print(f"[WARN] Required directory not found: {d}")
 
 BASE_DIR = PROJECT_ROOT
-SCRIPTS_DIR = ENGINE_DIR / "08_Scripts_Os"
+SCRIPTS_DIR = ENGINE_DIR
 
 
 class Severity(Enum):

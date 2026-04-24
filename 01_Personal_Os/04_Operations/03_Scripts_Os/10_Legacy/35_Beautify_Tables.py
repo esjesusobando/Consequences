@@ -118,13 +118,35 @@ def process_file(file_path):
         content = f.read()
     original_content = content
 
-    # Simple state machine parser
+    # State machine: skip code blocks (```) to avoid treating tree diagrams as tables
     new_lines = []
     current_table = []
     in_table = False
+    in_code_block = False
 
     for line in content.splitlines():
-        is_table_row = line.strip().startswith("|") and "|" in line
+        # Toggle code block state on triple-backtick lines
+        stripped = line.strip()
+        if stripped.startswith("```"):
+            if in_table:
+                # Flush any pending table before entering code block
+                table_block = "\n".join(current_table)
+                if len(current_table) >= 2 and any("---" in l for l in current_table):
+                    new_lines.append(align_table(table_block))
+                else:
+                    new_lines.extend(current_table)
+                current_table = []
+                in_table = False
+            in_code_block = not in_code_block
+            new_lines.append(line)
+            continue
+
+        # Inside a code block — pass through unchanged
+        if in_code_block:
+            new_lines.append(line)
+            continue
+
+        is_table_row = stripped.startswith("|") and "|" in line
 
         if is_table_row:
             current_table.append(line)

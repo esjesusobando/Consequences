@@ -18,10 +18,10 @@ import os
 
 
 def find_project_root():
-    """Detecta automáticamente la raíz buscando 01_Core, ascendiendo desde __file__."""
+    """Detecta automáticamente la raíz buscando 00_Winter_is_Coming, ascendiendo desde __file__."""
     current = Path(__file__).resolve().parent
     for candidate in [current, *current.parents]:
-        if (candidate / "01_Core").exists():
+        if (candidate / "00_Winter_is_Coming").exists():
             return candidate
     return None
 
@@ -37,7 +37,7 @@ else:
 if not ROOT_DIR or not ROOT_DIR.exists():
     raise RuntimeError(
         "No se pudo detectar la raíz del proyecto. "
-        "Define la variable 'PERSONAL_OS_ROOT' o asegúrate de que existe 01_Core."
+        "Define la variable 'PERSONAL_OS_ROOT' o asegúrate de que existe 00_Winter_is_Coming."
     )
 
 # 8 Dimensiones del OS (estructura v2.0 Consequences)
@@ -53,7 +53,7 @@ ARCHIVE_DIR = ROOT_DIR / "01_Personal_Os" / "05_Archive"
 PROJECTS_DIR = ROOT_DIR / "01_Personal_Os" / "04_Operations" / "05_Projects"
 PLAYGROUND_DIR = ROOT_DIR / "02_Playground"
 HOOKS_DIR = ROOT_DIR / ".agent" / "04_Extensions" / "hooks"
-SOUND_DIR = ENGINE_DIR / "00_Sound_Engine.py"   # fuente canónica
+SOUND_DIR = CORE_DIR / "02_Tools" / "05_Hooks" / "04_Sound"   # fuente canónica
 MCP_CONFIG_FILE = ROOT_DIR / ".mcp.json"           # config activa v2.0
 
 # =============================================================================
@@ -159,7 +159,7 @@ AUDITOR_DIR = ENGINE_DIR / "06_Auditor"
 UNICORN_DIR = KNOWLEDGE_DIR
 
 # Server MCP
-SERVER_DIR = ROOT_DIR / "01_Core" / "09_Server"
+SERVER_DIR = CORE_DIR / "02_Tools" / "07_Server"
 AIPM_ROOT = SERVER_DIR / "AIPM"
 
 # Archivos específicos
@@ -214,16 +214,16 @@ SCRIPT_LOCATION_MAP = {
     "05_Validator_Hub.py": ENGINE_DIR / "05_Validator_Hub.py",
     # Batch 3: Workflows
     "01_Spider_Brainstorm.py": SKILLS_DIR / "00_Compound_Engineering" / "scripts",
-    "02_Professor_X_Plan.py": SKILLS_DIR / "01_Agent_Teams_Lite" / "scripts",
+    "02_Professor_X_Plan.py": SKILLS_DIR / "05_Workflows" / "01_Agent_Teams_Lite" / "scripts",
     # Batch 1: Auditor (en ENGINE_DIR/03_Validator - ubicación real)
     # Batch 2: Rituales (skills)
-    "08_Ritual_Cierre.py": SKILLS_DIR / "08_Personal_Os" / "scripts",
-    "14_Morning_Standup.py": SKILLS_DIR / "08_Personal_Os" / "scripts",
-    "15_Weekly_Review.py": SKILLS_DIR / "08_Personal_Os" / "scripts",
-    "09_Backlog_Triage.py": SKILLS_DIR / "02_Project_Manager" / "scripts",
-    "11_Sync_Notes.py": SKILLS_DIR / "18_Personal_Life_OS" / "scripts",
-    "16_Clean_System.py": SKILLS_DIR / "13_System_Master" / "scripts",
-    "00_Notifier.py": SKILLS_DIR / "13_System_Master" / "scripts",
+    "08_Ritual_Cierre.py": SKILLS_DIR / "07_Personal_Os" / "scripts",
+    "14_Morning_Standup.py": SKILLS_DIR / "07_Personal_Os" / "scripts",
+    "15_Weekly_Review.py": SKILLS_DIR / "07_Personal_Os" / "scripts",
+    "09_Backlog_Triage.py": SKILLS_DIR / "05_Workflows" / "02_Project_Manager" / "scripts",
+    "11_Sync_Notes.py": SKILLS_DIR / "07_Personal_Os" / "scripts",
+    "16_Clean_System.py": SKILLS_DIR / "06_Tools" / "13_System_Master" / "scripts",
+    "00_Notifier.py": SKILLS_DIR / "06_Tools" / "13_System_Master" / "scripts",
     "87_Iron_Man_Gen.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
     "56_Organize_Solutions.py": ENGINE_DIR / ".backup" / "10_Legacy_backup_20260420",
     # Batch 4: Utilities (13_Auditors_Os)
@@ -233,12 +233,12 @@ SCRIPT_LOCATION_MAP = {
     "16_Carousel_Engine.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
     "12_Context_Usage_Bar.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
     # v2 Migration: Scripts Alto Valor → Skills
-    "13_Validate_Stack.py": SKILLS_DIR / "05_Vibe_Coding" / "scripts",
-    "17_Ritual_Dominical.py": SKILLS_DIR / "08_Personal_Os" / "scripts",
-    "18_Generacion_Contenido.py": SKILLS_DIR / "09_Marketing" / "scripts",
-    "19_Generate_Progress.py": SKILLS_DIR / "08_Personal_Os" / "scripts",
-    "39_Repair_Corruption.py": SKILLS_DIR / "13_System_Master" / "scripts",
-    "62_Tool_Shed.py": SKILLS_DIR / "07_DevOps" / "scripts",
+    "13_Validate_Stack.py": SKILLS_DIR / "06_Tools" / "05_Vibe_Coding" / "scripts",
+    "17_Ritual_Dominical.py": SKILLS_DIR / "07_Personal_Os" / "scripts",
+    "18_Generacion_Contenido.py": SKILLS_DIR / "01_Creacion_Contenidos" / "scripts",
+    "19_Generate_Progress.py": SKILLS_DIR / "07_Personal_Os" / "scripts",
+    "39_Repair_Corruption.py": SKILLS_DIR / "06_Tools" / "13_System_Master" / "scripts",
+    "62_Tool_Shed.py": SKILLS_DIR / "06_Tools" / "04_DevOps" / "scripts",
     "06_AntMan_Lfg_Lite.py": SKILLS_DIR / "00_Compound_Engineering" / "scripts",
     "07_Doc_Strange_Lfg.py": SKILLS_DIR / "00_Compound_Engineering" / "scripts",
     "73_Avengers_Workflow_v3.py": SKILLS_DIR / "00_Compound_Engineering" / "scripts",

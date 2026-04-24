@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working in this
 
 ---
 
-# Constitucion Think Different
+# Constitucion Think Different — PersonalOS v2.0 Consequences
 
 ## REGLA 00: Protocolo Genesis (OBLIGATORIO)
 
@@ -90,139 +90,128 @@ Al iniciar una nueva sesion, ejecutar esta secuencia antes de responder:
 
 ---
 
-# Arquitectura del Sistema (Estructura Real v6.1)
+# Arquitectura del Sistema (v2.0 Consequences — 4 carpetas raíz)
 
 ```
 Think_Different/
-|
-|--- 00_Winter_is_Coming/     # MATRIX: Goals, Backlog, AGENTS.md
-|--- 01_Core/                 # CORE: Skills, Agents, MCP, Server
-|    |--- 03_Skills/          # Skills numeradas (00-17)
-|    |--- 03_Agents/          # Agent definitions
-|    |--- 02_Evals/           # Evaluations
-|    |--- 05_Mcp/             # MCP servers config
-|    |--- 09_Server/          # Python MCP server
-|    |--- 10_Templates/       # Templates
-|    +--- 01_Rules/           # Rules del sistema
-|
-|--- 02_Knowledge/            # Base de conocimiento
-|--- 03_Tasks/               # Tareas con YAML frontmatter
-|--- 04_Operations/           # Memoria y contexto
-|    |--- 01_Auto_Improvement/ # Motor de automejora
-|    |--- 04_Memory_Brain/    # Mapeos y analisis
-|    |--- 05_Plans/           # Planes
-|    |--- 06_Solutions/        # Soluciones
-|    |--- 07_Installer/       # Instalador
-|    |--- 08_Auditorias/      # Auditorias
-|
-|--- 05_Archive/             # Archivo: Repos, legacy
-|    |--- 10_Repos_Gentleman/ # Repos Gentleman
-|
-|--- 06_Playground/          # Area de pruebas
-|--- 07_Projects/            # Proyectos activos
-|--- 08_Scripts_Os/          # HUBs: Auditor, Git, AIPM, Ritual, etc.
-|    |--- Auditor_Fixed/      # Scripts de auditoria
-|    |--- Ritual_Fixed/       # Scripts de rituales
-|    |--- Legacy_Backup/      # Scripts legacy
-|
-|--- Maerks/                  # Maerks workspace
-|--- Otros/                   # Otros recursos
-|
-|--- AGENTS.md                               # Root entry (GGA Pre-Commit)
-|--- CLAUDE.md                # Config para Claude Code
-|--- README.md                # Documentacion principal
-|--- Dream_Team.md           # Equipo de agentes
+├── 00_Winter_is_Coming/          # MATRIX: Goals, Backlog, AGENTS.md (ESTRATÉGICO)
+├── 01_Personal_Os/               # EL SISTEMA OPERATIVO
+│   ├── 01_Core/                  # Motor del OS
+│   │   ├── 00_Workflows_Os/      # Workflows (Personal, Marvel, Gentleman, Hillary, CE)
+│   │   ├── 01_Rules/             # 10 reglas del sistema (.mdc)
+│   │   └── 02_Tools/             # Todas las herramientas
+│   │       ├── 01_Agents/        # Dream Team + 23 Specialists
+│   │       ├── 02_Skills/        # 9 áreas funcionales (limpias)
+│   │       ├── 03_Mcp/           # Config MCPs (33 activos)
+│   │       ├── 04_Integrations/  # Fireflies, Granola
+│   │       ├── 05_Hooks/         # Pre/Post/Lifecycle/Sound/Harness
+│   │       ├── 06_Plugins/       # Plugins OS
+│   │       ├── 07_Server/        # MCP Server
+│   │       ├── 08_Evals/         # Evaluadores
+│   │       └── 09_Templates/     # Templates
+│   ├── 02_Knowledge/             # Base de conocimiento
+│   ├── 03_Task/                  # Tareas activas (singular)
+│   ├── 04_Operations/            # Todo lo operativo
+│   │   ├── 00_Context_LLM/       # Memoria, notas, knowledge brain
+│   │   ├── 01_Auto_Improvement/  # Motor de auto-mejora
+│   │   ├── 02_Agent_Teams_Lite/  # SDD skills registry
+│   │   ├── 03_Scripts_Os/        # 14 HUBs + scripts
+│   │   ├── 04_Installer/         # Scripts de instalación
+│   │   └── 05_Projects/          # Proyectos activos
+│   └── 05_Archive/               # Legacy y repos de referencia
+├── 02_Playground/                # ZONA DE PRUEBAS
+├── 03_Resultado/                 # OUTPUTS DE PROYECTOS
+├── .agent/                       # Backup estratégico
+├── .atl/                         # SDD Registry
+├── .claude/                      # Config Claude Code
+├── .mcp.json                     # 33 MCPs activos
+├── AGENTS.md                     # Entry point GGA
+├── CLAUDE.md                     # Config IA
+└── README.md                     # Documentación principal
 ```
 
 ---
 
-# Estructura .agent/ (Configuracion AI)
+# Estructura .agent/ (Configuracion AI — BACKUP ESTRATÉGICO)
 
 ```
 .agent/
-|--- 00_Rules/                # Reglas del agente
-|--- 01_Agents/               # Agentes externos configurados
-|--- 02_Skills/               # Skills organizadas (legacy backup)
-|--- 03_Skills/               # Skills PRINCIPALES (01_Core/03_Skills/)
-|--- 04_Extensions/          # Hooks del sistema
-|    +--- hooks/              # Hooks activos
-|        |--- 01_Pre_Tool/    # PreToolUse: battery, security
-|        |--- 02_Post_Tool/  # PostToolUse: backup, voice
-|        |--- 03_Lifecycle/   # Stop, SubagentStop
-|        +--- 04_Sound/      # Notifications, sounds
-|--- 05_GGA/                 # Gentleman Guardian Angel (Code Review)
+├── 00_Rules/            # Reglas del agente (10 .mdc activos)
+├── 01_Agents/           # Agentes externos configurados
+├── 02_Skills/           # Skills organizadas (backup)
+├── 03_Workflows/        # Workflows del sistema
+├── 04_Extensions/       # Hooks del sistema
+│   └── hooks/
+│       ├── 01_Pre_Tool/    # PreToolUse: battery, security
+│       ├── 02_Post_Tool/   # PostToolUse: backup, voice
+│       ├── 03_Lifecycle/   # Stop, SubagentStop
+│       └── 04_Sound/       # Notifications, sounds
+└── 05_GGA/              # Gentleman Guardian Angel (Code Review)
 ```
+
+**FUENTE DE VERDAD:** `01_Personal_Os/01_Core/` (no `.agent/`)
 
 ---
 
 # HUB Scripts
 
-Centralized HUBs in `08_Scripts_Os/`:
+Centralizados en `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 
-| Hub | Script | Proposito |
-|-----|--------|-----------|
-| **Auditor** | `01_Auditor_Hub.py` | System validation: structure, links, skills, health |
-| **Git** | `02_Git_Hub.py` | Git operations + structure audits |
-| **AIPM** | `03_AIPM_Hub.py` | AI Performance Monitoring |
-| **Ritual** | `04_Ritual_Hub.py` | Session rituals: open, close, recovery |
-| **Validator** | `05_Validator_Hub.py` | Code validation: rules, stack, patterns |
-| **Tool** | `06_Tool_Hub.py` | Tool integration and management |
-| **Integration** | `07_Integration_Hub.py` | MCP and external integrations |
-| **Workflow** | `08_Workflow_Hub.py` | Workflow automation |
-| **Data** | `09_Data_Hub.py` | Data processing and analytics |
-| **General** | `10_General_Hub.py` | General utilities |
+| Hub                  | Script                        | Proposito                                                |
+|----------------------|-------------------------------|----------------------------------------------------------|
+| **Sound Engine**     | `00_Sound_Engine.py`          | Notificaciones sonoras                                   |
+| **Auditor**          | `01_Auditor_Hub.py`           | System validation: estructura, links, skills, health     |
+| **Git**              | `02_Git_Hub.py`               | Git operations + structure audits                        |
+| **AIPM**             | `03_AIPM_Hub.py`              | AI Performance Monitoring                                |
+| **Ritual**           | `04_Ritual_Hub.py`            | Session rituals: open, close, recovery                   |
+| **Validator**        | `05_Validator_Hub.py`         | Code validation: rules, stack, patterns                  |
+| **Tool**             | `06_Tool_Hub.py`              | Tool integration and management                          |
+| **Integration**      | `07_Integration_Hub.py`       | MCP and external integrations                            |
+| **Workflow**         | `08_Workflow_Hub.py`          | Workflow automation                                      |
+| **Data**             | `09_Data_Hub.py`              | Data processing and analytics                            |
+| **General**          | `10_General_Hub.py`           | General utilities                                        |
+| **Auto Learn**       | `11_Auto_Learn_Hub.py`        | Motor de automejora                                      |
+| **Context Bar**      | `12_Context_Usage_Bar.py`     | Barra de uso de contexto                                 |
+| **Beautify**         | `13_Beautify_Tables.py`       | Formateo de tablas markdown                              |
 
 ---
 
-# Skills Disponibles
+# Skills Disponibles (9 áreas funcionales)
 
-## Skills por Categoria (`01_Core/03_Skills/`)
+## Skills por Categoria (`01_Personal_Os/01_Core/02_Tools/02_Skills/`)
 
-| Categoria | Skills | Ubicacion |
-|-----------|--------|-----------|
-| **00_Compound_Engineering** | 8 | `00_Compound_Engineering/` |
-| **00_Personal_Os_Stack** | Core OS | `00_Personal_Os_Stack/` |
-| **00_Skill_Auditor** | Auditor | `00_Skill_Auditor/` |
-| **01_Agent_Teams_Lite** | SDD Workflows | `01_Agent_Teams_Lite/` |
-| **02_Project_Manager** | Project management | `02_Project_Manager/` |
-| **03_Product_Manager** | Product management | `03_Product_Manager/` |
-| **04_Product_Design** | Design skills | `04_Product_Design/` |
-| **05_Vibe_Coding** | Framework skills | `05_Vibe_Coding/` |
-| **06_Testing** | Testing skills | `06_Testing/` |
-| **07_DevOps** | DevOps skills | `07_DevOps/` |
-| **08_Personal_Os** | Personal OS skills | `08_Personal_Os/` |
-| **09_Marketing** | Marketing skills | `09_Marketing/` |
-| **10_Backup** | Backup/Legacy | `10_Backup/` |
-| **11_Doc_Processing** | Document processing | `11_Doc_Processing/` |
-| **12_N8N** | N8N workflows | `12_N8N/` |
-| **13_System_Master** | Master skill | `13_System_Master/` |
-| **14_Anthropic_Harness** | Evaluators | `14_Anthropic_Harness/` |
-| **15_Skill_Creator_Oficial** | Skill Creator v2.0 | `15_Skill_Creator_Oficial/` |
-| **16_Silicon_Valley_Data_Analyst** | Data Analyst | `16_Silicon_Valley_Data_Analyst/` |
-| **17_SEO_SOTA_Master** | SEO Master | `17_SEO_SOTA_Master/` |
-
-**Total: 19 categorias de skills**
+| Categoria                       | Descripcion                              | Ubicacion                      |
+|---------------------------------|------------------------------------------|--------------------------------|
+| **00_Compound_Engineering**     | Core CE                                  | `00_Compound_Engineering/`     |
+| **00_Personal_Os_Stack**        | Stack base del OS                        | `00_Personal_Os_Stack/`        |
+| **00_Skill_Auditor**            | Auditor de skills                        | `00_Skill_Auditor/`            |
+| **01_Creacion_Contenidos**      | Contenido + SEO + Carousel               | `01_Creacion_Contenidos/`      |
+| **02_Diseno_Ui_Ux**             | Diseño UI/UX                             | `02_Diseno_Ui_Ux/`             |
+| **03_Video_Media**              | Video + James Cameron                    | `03_Video_Media/`              |
+| **04_Automatizacion**           | Automatización                           | `04_Automatizacion/`           |
+| **05_Workflows**                | Workflows + Agent Teams Lite             | `05_Workflows/`                |
+| **06_Tools**                    | Tools + System Master + Data Analyst     | `06_Tools/`                    |
+| **07_Personal_Os**              | Skills del OS personal                   | `07_Personal_Os/`              |
+| **08_Invictus_Web**             | Web development                          | `08_Invictus_Web/`             |
 
 ---
 
 # Sistema de Auto-Mejora Recursiva
 
-Ubicacion: `04_Operations/01_Auto_Improvement/`
+Ubicacion: `01_Personal_Os/04_Operations/01_Auto_Improvement/`
 
 ```
 01_Auto_Improvement/
-|--- 01_Engine/
-|    |--- detector.py         # Detecta issues criticos
-|    |--- analyzer.py        # Analiza y clasifica
-|    |--- executor.py        # Aplica fixes
-|    |--- learner.py         # Aprende de fixes
-|    +--- recursive_improvement_engine.py
-|
-|--- 02_Rules/
-|    +--- rules_engine.py    # Motor de reglas
-|
-|--- 04_Triggers/
-|    +--- manual_trigger.py  # Disparador manual
+├── 01_Engine/
+│   ├── detector.py         # Detecta issues criticos
+│   ├── analyzer.py         # Analiza y clasifica
+│   ├── executor.py         # Aplica fixes
+│   ├── learner.py          # Aprende de fixes
+│   └── recursive_improvement_engine.py
+├── 02_Rules/
+│   └── rules_engine.py     # Motor de reglas
+└── 04_Triggers/
+    └── manual_trigger.py   # Disparador manual
 ```
 
 ---
@@ -277,16 +266,21 @@ Code review con IA integrado.
 
 ---
 
-# Estado Actual del Sistema (2026-03-29)
+# Estado Actual del Sistema (2026-04-24)
 
-| Categoria | Estado |
-|-----------|--------|
-| Estructura (00-08) | ✅ PASS |
-| HUBs (01-10) | ✅ ACTIVE |
-| Skills (19 categorias) | ✅ OPERATIONAL |
-| Auto-Improvement Engine | ✅ OPERATIONAL |
-| Git Estado | ✅ CLEAN |
+| Categoria                             | Estado            | Notas                                      |
+|---------------------------------------|-------------------|--------------------------------------------|
+| Estructura v2.0 (4 carpetas raíz)     | ✅ PASS            | Migración Consequences completada          |
+| HUBs (00-13)                          | ✅ ACTIVE          | 14 HUBs en 03_Scripts_Os/                  |
+| Skills (9 áreas funcionales)          | ✅ OPERATIONAL     | Estructura limpia post-migración           |
+| Rules (10 .mdc)                       | ✅ DEFINED         | En 01_Personal_Os/01_Core/01_Rules/        |
+| MCPs (33 activos)                     | ✅ ACTIVE          | .mcp.json en raíz                          |
+| Auto-Improvement Engine               | ✅ OPERATIONAL     | En 04_Operations/01_Auto_Improvement/      |
+| Git Estado                            | ✅ CLEAN           | Post-migración                             |
+| Hooks Windows                         | ✅ FIXED           | Rutas actualizadas a v2.0                  |
+| GGA Code Review                       | ✅ ACTIVE          | Pre-commit hook instalado                  |
+| config_paths.py                       | ✅ VERIFIED        | Auto-detección por 00_Winter_is_Coming     |
 
 ---
 
-© 2026 PersonalOS v6.1
+© 2026 PersonalOS v2.0 Consequences
