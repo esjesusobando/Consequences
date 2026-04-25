@@ -2,9 +2,9 @@
 title: Crear primera tarea real en el sistema
 category: technical
 priority: P1
-status: n
+status: d
 created_date: 2026-03-27
-estimated_time: 30
+completed_date: 2026-04-25
 ---
 
 # Crear primera tarea real en el sistema
@@ -108,8 +108,9 @@ Documentar visión estratégica usando framework de memo.
 title: Probar workflow Morning Standup
 category: technical
 priority: P1
-status: n
+status: d
 created_date: 2026-03-27
+completed_date: 2026-04-25
 estimated_time: 15
 ---
 
