@@ -1,7 +1,7 @@
 # 🔍 Edge Case Validator Report
 
-**Archivos analizados:** 14
-**Edge cases encontrados:** 68
+**Archivos analizados:** 16
+**Edge cases encontrados:** 73
 
 ---
 
@@ -9,8 +9,8 @@
 
 | Categoría | Cantidad |
 |-----------|----------|
-| Boundary | 2 |
-| Empty/Null | 66 |
+| Boundary | 3 |
+| Empty/Null | 70 |
 | Invalid | 0 |
 | Temporal | 0 |
 | System | 0 |
@@ -20,6 +20,7 @@
 | Caso | Severidad | Archivo |
 |------|-----------|---------|
 | explicit_division_by_zero | 🔴 critical | 11_Auto_Learn_Hub.py |
+| explicit_division_by_zero | 🔴 critical | 15_Agent_Sync_Hub.py |
 | explicit_division_by_zero | 🔴 critical | config_paths.py |
 | text_empty | 🟡 high | 01_Auditor_Hub.py |
 | text_null | 🟡 high | 01_Auditor_Hub.py |
@@ -38,4 +39,3 @@
 | git_args_empty | 🟡 high | 02_Git_Hub.py |
 | git_args_null | 🟡 high | 02_Git_Hub.py |
 | text_empty | 🟡 high | 03_AIPM_Hub.py |
-| text_null | 🟡 high | 03_AIPM_Hub.py |
