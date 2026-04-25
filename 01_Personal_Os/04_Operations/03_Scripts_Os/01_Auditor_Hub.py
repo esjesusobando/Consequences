@@ -9,6 +9,7 @@ import os
 import sys
 import io
 import subprocess
+from datetime import datetime
 from pathlib import Path
 
 try:
@@ -24,15 +25,16 @@ except ImportError:
         RESET_ALL = ""
 
 
-# === PROTOCOLO DE RUTA DINÁMICA (v6.1) ===
+# === PROTOCOLO DE RUTA DINÁMICA (v6.2) ===
 _current = Path(__file__).resolve()
-_root = next((p for p in _current.parents if (p / "01_Core").exists()), None)
+_root = next((p for p in _current.parents if (p / "00_Winter_is_Coming").exists()), None)
 if _root:
-    sys.path.insert(0, str(_root / "08_Scripts_Os"))
+    sys.path.insert(0, str(_root / "01_Personal_Os" / "04_Operations" / "03_Scripts_Os"))
 from config_paths import *
 
 # PROJECT_ROOT ya viene de config_paths como ROOT_DIR
 PROJECT_ROOT = ROOT_DIR
+REPORTS_DIR = ROOT_DIR / "03_Resultado" / "04_Reportes"
 
 # DIMENSIONES v6.2 - usando config_paths
 DIMENSIONS = [
@@ -55,14 +57,14 @@ def audit_dimensions():
     # Usar las constantes de config_paths
     dims = [
         (MATRIX_DIR, "00_Winter_is_Coming"),
-        (CORE_DIR, "01_Core"),
-        (KNOWLEDGE_DIR, "02_Knowledge"),
-        (TASKS_DIR, "03_Tasks"),
-        (OPERATIONS_DIR, "04_Operations"),
-        (ARCHIVE_DIR, "05_Archive"),
-        (PLAYGROUND_DIR, "06_Playground"),
-        (PROJECTS_DIR, "07_Projects"),
-        (ENGINE_DIR, "08_Scripts_Os"),
+        (CORE_DIR, CORE_DIR.name),
+        (KNOWLEDGE_DIR, KNOWLEDGE_DIR.name),
+        (TASKS_DIR, TASKS_DIR.name),
+        (OPERATIONS_DIR, OPERATIONS_DIR.name),
+        (ARCHIVE_DIR, ARCHIVE_DIR.name),
+        (PLAYGROUND_DIR, PLAYGROUND_DIR.name),
+        (PROJECTS_DIR, PROJECTS_DIR.name),
+        (ENGINE_DIR, ENGINE_DIR.name),
     ]
     for path, name in dims:
         if path.exists() and path.is_dir():
@@ -130,38 +132,48 @@ def dynamic_speak(text):
             pass
 
 
-def run_script(script_name):
-    """Ejecuta un script usando get_skill_script() con fallback robusto."""
+def run_script(script_name, report_path=None):
+    """Ejecuta un script con fallback robusto. Guarda output en report_path si se provee."""
     try:
         from config_paths import get_skill_script
         script_path = get_skill_script(script_name)
     except ImportError:
         script_path = None
-    
-    # Fallback 1: buscar en 08_Scripts_Os raíz
+
+    # Fallback 1: buscar en ENGINE_DIR raíz
     if not script_path or not script_path.exists():
         script_path = ENGINE_DIR / script_name
-    
-    # Fallback 2: buscar en subdirectorios conocidos
+
+    # Fallback 2: subdirectorios conocidos
     if not script_path or not script_path.exists():
-        search_dirs = ["03_Validator", "13_Auditors_Os", "14_Otros", "11_Anthropic_Harness"]
-        for subdir in search_dirs:
+        for subdir in ["03_Validator", "13_Auditors_Os", "14_Otros", "11_Anthropic_Harness"]:
             candidate = ENGINE_DIR / subdir / script_name
             if candidate.exists():
                 script_path = candidate
                 break
-    
+
     if not script_path or not script_path.exists():
         print(f"{Fore.RED}[ERROR] Script no encontrado: {script_name}{Style.RESET_ALL}")
-        return
-    
+        return ""
+
     print(f"{Fore.YELLOW}[RUNNING] Ejecutando: {script_name}...{Style.RESET_ALL}")
     scripts_dir = str(ENGINE_DIR)
-    env = {**__import__("os").environ, "PYTHONPATH": scripts_dir}
+    env = {**os.environ, "PYTHONPATH": scripts_dir}
     try:
-        subprocess.run([sys.executable, str(script_path)], cwd=scripts_dir, env=env)
+        result = subprocess.run(
+            [sys.executable, str(script_path)], cwd=scripts_dir, env=env,
+            capture_output=True, text=True, encoding="utf-8", errors="replace", check=False
+        )
+        output = (result.stdout or "") + (result.stderr or "")
+        print(output, end="")
+        if report_path:
+            report_path.parent.mkdir(parents=True, exist_ok=True)
+            report_path.write_text(output, encoding="utf-8")
+            print(f"{Fore.CYAN}📄 Reporte: {report_path.relative_to(ROOT_DIR)}{Style.RESET_ALL}")
+        return output
     except Exception as e:
         print(f"{Fore.RED}[ERROR] Falló script: {e}{Style.RESET_ALL}")
+        return ""
 
 
 def main():
@@ -189,6 +201,9 @@ def main():
 
     args = parser.parse_args()
 
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    REPORTS_DIR.mkdir(parents=True, exist_ok=True)
+
     if args.command == "estructura":
         dynamic_speak("Iniciando auditoría de estructura")
         print(f"{Style.BRIGHT}--- Structure Auditor ---")
@@ -201,18 +216,27 @@ def main():
             print(
                 f"\n{Fore.RED}{Style.BRIGHT}✗ Se encontraron {total_errors} errores{Style.RESET_ALL}"
             )
+        report = REPORTS_DIR / f"audit_estructura_{ts}.txt"
+        report.write_text(
+            f"Audit estructura — {ts}\n"
+            f"Dimension errors: {errors_dim}\n"
+            f"Numbering errors: {errors_num}\n"
+            f"Total errors: {total_errors}\n",
+            encoding="utf-8",
+        )
+        print(f"{Fore.CYAN}📄 Reporte: 03_Resultado/04_Reportes/audit_estructura_{ts}.txt{Style.RESET_ALL}")
     elif args.command == "links":
         dynamic_speak("Iniciando auditoría de enlaces")
-        run_script("57_Repo_Sync_Auditor.py")
+        run_script("57_Repo_Sync_Auditor.py", REPORTS_DIR / f"audit_links_{ts}.txt")
     elif args.command == "skills":
         dynamic_speak("Iniciando auditoría de skills")
-        run_script("34_Skill_Auditor.py")
+        run_script("34_Skill_Auditor.py", REPORTS_DIR / f"audit_skills_{ts}.txt")
     elif args.command == "health":
         dynamic_speak("Iniciando monitoreo de salud")
-        run_script("50_System_Health_Monitor.py")
+        run_script("50_System_Health_Monitor.py", REPORTS_DIR / f"audit_health_{ts}.txt")
     elif args.command == "profundo":
         dynamic_speak("Iniciando auditoría profunda paralela")
-        run_script("33_Parallel_Audit_Pro.py")
+        run_script("33_Parallel_Audit_Pro.py", REPORTS_DIR / f"audit_profundo_{ts}.txt")
     else:
         parser.print_help()
 

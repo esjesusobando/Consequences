@@ -12,11 +12,11 @@ import subprocess
 from pathlib import Path
 
 
-# === PROTOCOLO DE RUTA DINÁMICA (v6.1) ===
+# === PROTOCOLO DE RUTA DINÁMICA (v6.2) ===
 _current = Path(__file__).resolve()
-_root = next((p for p in _current.parents if (p / "01_Core").exists()), None)
+_root = next((p for p in _current.parents if (p / "00_Winter_is_Coming").exists()), None)
 if _root:
-    sys.path.insert(0, str(_root / "08_Scripts_Os"))
+    sys.path.insert(0, str(_root / "01_Personal_Os" / "04_Operations" / "03_Scripts_Os"))
 from config_paths import *
 
 # === COLOR SETUP ===

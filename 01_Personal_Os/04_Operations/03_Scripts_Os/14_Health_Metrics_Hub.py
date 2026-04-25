@@ -102,26 +102,41 @@ def report():
         return 1
 
     rows = rows[-30:]  # Últimos 30
-    print("\n" + "=" * 70)
-    print("  HEALTH METRICS — Últimos 30 registros")
-    print("=" * 70)
-    print(f"\n  {'Fecha':<20} {'Struct':>8} {'Runtime':>8} {'Health %':>9}  Bar")
-    print("  " + "-" * 65)
+    lines = []
+    lines.append("\n" + "=" * 70 + "\n")
+    lines.append("  HEALTH METRICS — Últimos 30 registros\n")
+    lines.append("=" * 70 + "\n")
+    lines.append(f"\n  {'Fecha':<20} {'Struct':>8} {'Runtime':>8} {'Health %':>9}  Bar\n")
+    lines.append("  " + "-" * 65 + "\n")
 
     for row in rows:
         dt = row["timestamp"][:16].replace("T", " ")
         s = f"{row['structural_pass']}/{row['structural_total']}"
         r = f"{row['runtime_pass']}/{row['runtime_total']}"
         pct = float(row["overall_health_pct"])
-        bar_len = int(pct / 5)  # 0-20 chars
+        bar_len = int(pct / 5)
         bar = "█" * bar_len + "░" * (20 - bar_len)
-        print(f"  {dt:<20} {s:>8} {r:>8} {pct:>7.1f}%  {bar}")
+        lines.append(f"  {dt:<20} {s:>8} {r:>8} {pct:>7.1f}%  {bar}\n")
 
-    # Resumen
     pcts = [float(r["overall_health_pct"]) for r in rows]
     avg = sum(pcts) / len(pcts)
-    print(f"\n  Promedio: {avg:.1f}% | Min: {min(pcts):.1f}% | Max: {max(pcts):.1f}%")
-    print("=" * 70 + "\n")
+    lines.append(f"\n  Promedio: {avg:.1f}% | Min: {min(pcts):.1f}% | Max: {max(pcts):.1f}%\n")
+    lines.append("=" * 70 + "\n")
+
+    output = "".join(lines)
+    print(output, end="")
+
+    # Guardar en 03_Resultado/04_Reportes/
+    try:
+        reports_dir = PROJECT_ROOT / "03_Resultado" / "04_Reportes"
+        reports_dir.mkdir(parents=True, exist_ok=True)
+        ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+        report_path = reports_dir / f"health_metrics_{ts}.txt"
+        report_path.write_text(output, encoding="utf-8")
+        print(f"📄 Reporte: 03_Resultado/04_Reportes/health_metrics_{ts}.txt")
+    except Exception:
+        pass
+
     return 0
 
 

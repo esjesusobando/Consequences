@@ -273,7 +273,7 @@ def check_core_structure():
 def main():
     """Ejecutar todos los checks."""
     print("\n===========================================")
-    print(" SOTA INTEGRITY CHECK -- PersonalOS v1.1 Alpha")
+    print(" SOTA INTEGRITY CHECK -- PersonalOS v2.1 Hardened")
     print("===========================================\n")
 
     results = {
@@ -300,16 +300,29 @@ def main():
         log(f"{icon} {name}", "OK" if status else "ERROR")
 
     log("=" * 50)
-    if passed == total:
-        print(f"\n===========================================")
-        print(f" SOTA INTEGRITY: PASSED ({passed}/{total})")
-        print(f"===========================================\n")
-        return 0
-    else:
-        print(f"\n===========================================")
-        print(f" SOTA INTEGRITY: FAILED ({passed}/{total})")
-        print(f"===========================================\n")
-        return 1
+    verdict = "PASSED" if passed == total else "FAILED"
+    print(f"\n===========================================")
+    print(f" SOTA INTEGRITY: {verdict} ({passed}/{total})")
+    print(f"===========================================\n")
+
+    # Guardar reporte en 03_Resultado/04_Reportes/
+    try:
+        from datetime import datetime
+        reports_dir = ROOT / "03_Resultado" / "04_Reportes"
+        reports_dir.mkdir(parents=True, exist_ok=True)
+        ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+        report_path = reports_dir / f"sota_integrity_{ts}.txt"
+        lines = [f"SOTA INTEGRITY CHECK — PersonalOS v2.1 Hardened\n", f"Fecha: {ts}\n\n"]
+        for name, status in results.items():
+            icon = "[OK]" if status else "[FAIL]"
+            lines.append(f"{icon} {name}\n")
+        lines.append(f"\nResultado: {verdict} ({passed}/{total})\n")
+        report_path.write_text("".join(lines), encoding="utf-8")
+        print(f"📄 Reporte: 03_Resultado/04_Reportes/sota_integrity_{ts}.txt")
+    except Exception:
+        pass
+
+    return 0 if passed == total else 1
 
 if __name__ == "__main__":
     sys.exit(main())
