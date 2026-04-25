@@ -158,7 +158,7 @@ Este perfil construye la infraestructura y herramientas que hacen posible el des
 ### Skills Base (Platform)
 - `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/04_DevOps/` — 12 skills DevOps
 - `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/07_System_Master/` — Configuración sistema
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/06_Plugins/02_Mcp_Client/` — Integraciones MCP
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/10_Mcp_Client/` — Integraciones MCP
 
 ### Specialists
 - `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/Performance-Oracle.md`
