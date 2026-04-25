@@ -5,34 +5,34 @@
 ### Backlog Triage (pb / eb)
 | Comando                                                                        | Alias               | Descripción                                          |
 |--------------------------------------------------------------------------------|---------------------|------------------------------------------------------|
-| `python 08_Scripts_Os/Ritual_Fixed/09_Backlog_Triage.py`                       | **pb**              | Preview - ver tareas sin crear                       |
-| `python 08_Scripts_Os/Ritual_Fixed/09_Backlog_Triage.py --execute`             | **eb**              | Execute - crear tareas y limpiar backlog             |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/09_Backlog_Triage.py`                       | **pb**              | Preview - ver tareas sin crear                       |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/09_Backlog_Triage.py --execute`             | **eb**              | Execute - crear tareas y limpiar backlog             |
 
 ### Morning Standup
 | Comando                                                                       | Alias               | Descripción               |
 |-------------------------------------------------------------------------------|---------------------|---------------------------|
-| `python 08_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py`                     |---------------------| Full standup              |
-| `python 08_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py --tasks`             |---------------------| Solo tareas               |
-| `python 08_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py --goals`             |---------------------| Solo goals                |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py`                     |---------------------| Full standup              |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py --tasks`             |---------------------| Solo tareas               |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py --goals`             |---------------------| Solo goals                |
 
 ### Weekly Review
 | Comando                                                                      | Alias               | Descripción                       |
 |------------------------------------------------------------------------------|---------------------|-----------------------------------|
-| `python 08_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py`                      |---------------------| Full review (4 pasos)             |
-| `python 08_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py --quick`              |---------------------| Quick (5 min)                     |
-| `python 08_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py --step 1`             |---------------------| Completed                         |
-| `python 08_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py --step 2`             |---------------------| Goals                             |
-| `python 08_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py --step 3`             |---------------------| Blockers                          |
-| `python 08_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py --step 4`             |---------------------| Plan next                         |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py`                      |---------------------| Full review (4 pasos)             |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py --quick`              |---------------------| Quick (5 min)                     |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py --step 1`             |---------------------| Completed                         |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py --step 2`             |---------------------| Goals                             |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py --step 3`             |---------------------| Blockers                          |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py --step 4`             |---------------------| Plan next                         |
 
 ### Content Generation (✍️)
 | Comando                                                                                           | Alias               | Descripción                  |
 |---------------------------------------------------------------------------------------------------|---------------------|------------------------------|
-| `python 08_Scripts_Os/Ritual_Fixed/18_Generacion_Contenido.py`                                    |---------------------| Modo interactivo             |
-| `python 08_Scripts_Os/Ritual_Fixed/18_Generacion_Contenido.py --blog --topic "X"`                 |---------------------| Blog post                    |
-| `python 08_Scripts_Os/Ritual_Fixed/18_Generacion_Contenido.py --linkedin --topic "X"`             |---------------------| LinkedIn                     |
-| `python 08_Scripts_Os/Ritual_Fixed/18_Generacion_Contenido.py --email --topic "X"`                |---------------------| Email                        |
-| `python 08_Scripts_Os/Ritual_Fixed/18_Generacion_Contenido.py --twitter --topic "X"`              |---------------------| Twitter thread               |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/18_Generacion_Contenido.py`                                    |---------------------| Modo interactivo             |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/18_Generacion_Contenido.py --blog --topic "X"`                 |---------------------| Blog post                    |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/18_Generacion_Contenido.py --linkedin --topic "X"`             |---------------------| LinkedIn                     |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/18_Generacion_Contenido.py --email --topic "X"`                |---------------------| Email                        |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/18_Generacion_Contenido.py --twitter --topic "X"`              |---------------------| Twitter thread               |
 
 ---
 
@@ -52,8 +52,8 @@ Basado en: `05_Archive/10_Repos_Gentleman/personal-os-main/examples/workflows/`
 ## 🔧 Aliases (agregados a ~/.bashrc)
 
 ```bash
-alias pb="python 08_Scripts_Os/Ritual_Fixed/09_Backlog_Triage.py"
-alias eb="python 08_Scripts_Os/Ritual_Fixed/09_Backlog_Triage.py --execute"
+alias pb="python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/09_Backlog_Triage.py"
+alias eb="python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/09_Backlog_Triage.py --execute"
 ```
 
 ---
@@ -89,7 +89,7 @@ alias eb="python 08_Scripts_Os/Ritual_Fixed/09_Backlog_Triage.py --execute"
 
 | Comando                                                       | Descripción                                                   |
 |---------------------------------------------------------------|---------------------------------------------------------------|
-| `python 08_Scripts_Os/Tool_Fixed/62_Tool_Shed.py`             | Detecta contexto actual y sugiere MCPs relevantes             |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Tool_Fixed/62_Tool_Shed.py`             | Detecta contexto actual y sugiere MCPs relevantes             |
 
 **Features:**
 - Auto-detección de framework (React, Angular, Next.js, etc.)
@@ -100,7 +100,7 @@ alias eb="python 08_Scripts_Os/Ritual_Fixed/09_Backlog_Triage.py --execute"
 
 | Comando                                                              | Descripción                                                      |
 |----------------------------------------------------------------------|------------------------------------------------------------------|
-| `python 08_Scripts_Os/Tool_Fixed/63_Skill_Harmonizer.py`             | Valida paridad entre skills disponibles y ejecutados             |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Tool_Fixed/63_Skill_Harmonizer.py`             | Valida paridad entre skills disponibles y ejecutados             |
 
 **Features:**
 - 20/20 categorías pasando
@@ -111,12 +111,12 @@ alias eb="python 08_Scripts_Os/Ritual_Fixed/09_Backlog_Triage.py --execute"
 
 | Comando                                                      | Descripción                                      |
 |--------------------------------------------------------------|--------------------------------------------------|
-| `python 08_Scripts_Os/Tool_Fixed/00_Notifier.py`             | Reproduce sonido al completar tareas             |
+| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Tool_Fixed/00_Notifier.py`             | Reproduce sonido al completar tareas             |
 
 **Uso en scripts:**
 ```python
 import sys
-sys.path.insert(0, '08_Scripts_Os/Tool_Fixed')
+sys.path.insert(0, '01_Personal_Os/04_Operations/03_Scripts_Os/Tool_Fixed')
 from 00_Notifier import play_complete
 play_complete()
 ```
@@ -142,7 +142,7 @@ play_complete()
 
 ---
 
-## 📚 Skills PersonalOS (01_Core/03_Skills/08_Personal_Os/)
+## 📚 Skills PersonalOS (01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/)
 
 | #               | Skill                        | Script Asociado                     |
 |-----------------|------------------------------|-------------------------------------|

@@ -11,7 +11,7 @@ Ritual de fin de semana para revisión profunda.
 ## Usage
 
 ```bash
-python 08_Scripts_Os/Ritual_Fixed/17_Ritual_Dominical.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/17_Ritual_Dominical.py
 ```
 
 ---

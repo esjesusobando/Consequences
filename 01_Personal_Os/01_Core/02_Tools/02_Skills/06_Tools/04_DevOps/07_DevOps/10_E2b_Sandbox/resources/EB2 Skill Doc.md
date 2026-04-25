@@ -65,7 +65,7 @@ Para usar esta skill con Claude Code:
 
 1. **Coloca los archivos:**
 
-    - `01_Core/03_Skills/e2b_sandbox_orchestrator.md`
+    - `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/05_Vibe_Coding/e2b_sandbox_orchestrator.md`
     - `scripts/e2b_orchestrator.py` (o raíz del proyecto)
 2. **Instala dependencias:**
 

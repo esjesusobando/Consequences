@@ -58,7 +58,7 @@ No proceses ahora. El triage lo hace `09_Backlog_Triage.py` cuando toque.
 Cuando el backlog tenga 10+ items o al final del día:
 
 ```bash
-python 08_Scripts_Os/04_Ritual_Hub.py --triage
+python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --triage
 ```
 
 Convierte entradas brutas en tareas estructuradas con prioridad, categoría y vínculo a GOALS.

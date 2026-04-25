@@ -20,7 +20,7 @@ Auditoría proactiva del PersonalOS. Verificar que todo está en orden: scripts 
 ### 1. Auditoría Automatizada
 
 ```bash
-python 08_Scripts_Os/01_Auditor_Hub.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py
 ```
 
 Revisa: estructura de carpetas, scripts Python, referencias en `.md`, reglas `.mdc`.
@@ -41,13 +41,13 @@ Confirmar que las carpetas v6.1 existen:
 
 ```
 00_Winter_is_Coming / 01_Core / 02_Knowledge / 03_Tasks /
-04_Operations / 05_Archive / 08_Scripts_Os / .agent
+04_Operations / 05_Archive / 04_Operations/03_Scripts_Os / .agent
 ```
 
-### 4. Validar Scripts de 08_Scripts_Os
+### 4. Validar Scripts de 04_Operations/03_Scripts_Os
 
 ```bash
-python 08_Scripts_Os/05_Validator_Hub.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py
 ```
 
 Verifica dependencias y que los scripts están presentes.
@@ -55,7 +55,7 @@ Verifica dependencias y que los scripts están presentes.
 ### 5. Validar Reglas de Agent
 
 ```bash
-python 08_Scripts_Os/05_Validator_Hub.py --rules
+python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py --rules
 ```
 
 Confirma que todos los `.mdc` en `01_Core/01_Rules/` tienen estructura válida.
@@ -63,7 +63,7 @@ Confirma que todos los `.mdc` en `01_Core/01_Rules/` tienen estructura válida.
 ### 6. Revisar Inventario
 
 - Abrir `01_Core/01_Inventario_Total.md`
-- Confirmar que el número de scripts en `08_Scripts_Os/` coincide con el inventario
+- Confirmar que el número de scripts en `01_Personal_Os/04_Operations/03_Scripts_Os/` coincide con el inventario
 - Confirmar que nuevas Skills/Workflows están registradas
 
 ### 7. Estado Git

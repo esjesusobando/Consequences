@@ -1,7 +1,7 @@
-# 00_Winter_is_Coming — Think Different PersonalOS
+# 00_Winter_is_Coming — Think Different PersonalOS v2.0 Consequences
 
-**Versión:** 6.1  
-**Última actualización:** 2026-04-14  
+**Versión:** 2.0 Consequences
+**Última actualización:** 2026-04-24
 **Estado:** ✅ ESTRATÉGICO | ADN del Sistema
 
 ---
@@ -38,7 +38,7 @@ Esta carpeta contiene el **ADN estratégico** del PersonalOS:
 - **GGA Version**: v2.8.0 (disponible v2.8.1 - actualizar con `brew upgrade gga`)
 - **Agentes activos**: 18+
 - **MCPs**: 36 servidores configurados
-- **Skills**: 24 carpetas en 01_Core/03_Skills/
+- **Skills**: 12 áreas funcionales en `01_Personal_Os/01_Core/02_Tools/02_Skills/` (297 SKILL.md)
 
 ---
 

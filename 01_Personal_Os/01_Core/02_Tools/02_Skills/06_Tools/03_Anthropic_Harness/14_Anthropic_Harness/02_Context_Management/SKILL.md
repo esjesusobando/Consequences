@@ -45,7 +45,7 @@ Gestiona la decisión entre **Context Reset** vs **Context Compaction** según e
 Usa `01_Context_Manager.py`:
 
 ```python
-from 08_Scripts_Os/11_Anthropic_Harness/01_Context_Manager import run_context_manager
+from 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/01_Context_Manager import run_context_manager
 
 # Analizar contexto
 result = run_context_manager(token_count=150000)
@@ -113,7 +113,7 @@ elif result['action'] == 'compact':
 ## Referencias
 
 - Artículo: `01_Core/02_Knowledge_Brain/10_Anthropic_Harness_Design.md`
-- Script: `08_Scripts_Os/11_Anthropic_Harness/01_Context_Manager.py`
+- Script: `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/01_Context_Manager.py`
 
 ---
 

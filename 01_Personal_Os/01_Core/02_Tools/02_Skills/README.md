@@ -2,7 +2,7 @@
 
 **Versión:** 2.0 (Areas Funcionales)
 **Última actualización:** 2026-04-23
-**Source of Truth:** `01_Core/03_Skills/`
+**Source of Truth:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 **Framework:** Anthropic Skill Creator v2.0 + PersonalOS SOTA
 **Estado:** ✅ POST-AUDITORÍA 2026-04-23
 

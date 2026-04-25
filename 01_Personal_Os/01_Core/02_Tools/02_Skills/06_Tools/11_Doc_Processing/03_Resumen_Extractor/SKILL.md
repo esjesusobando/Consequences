@@ -27,13 +27,13 @@ Extrae contenido de documentos específicos para crear resúmenes estructurados.
 
 ```bash
 # Uso básico
-python 08_Scripts_Os/85_Resumen_Extractor.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/85_Resumen_Extractor.py
 
 # Directorio específico
-python 08_Scripts_Os/85_Resumen_Extractor.py --source ./documentos
+python 01_Personal_Os/04_Operations/03_Scripts_Os/85_Resumen_Extractor.py --source ./documentos
 
 # Output específico
-python 08_Scripts_Os/85_Resumen_Extractor.py -s ./docs -o mi_resumen.md
+python 01_Personal_Os/04_Operations/03_Scripts_Os/85_Resumen_Extractor.py -s ./docs -o mi_resumen.md
 ```
 
 ## 🤝 Integración con el Sistema

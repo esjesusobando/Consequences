@@ -66,7 +66,7 @@
 ### Sync Script
 
 ```bash
-python 08_Scripts_Os/fireflies_sync.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/fireflies_sync.py
 ```
 
 ---

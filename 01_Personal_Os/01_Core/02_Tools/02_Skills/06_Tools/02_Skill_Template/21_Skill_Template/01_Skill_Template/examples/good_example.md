@@ -21,7 +21,7 @@
 
 ```bash
 # Copiar template
-cp -r 01_Core/03_Skills/SKILL_TEMPLATE/ 01_Core/03_Skills/25_JWT_Auth/
+cp -r 01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/ 01_Personal_Os/01_Core/02_Tools/02_Skills/25_JWT_Auth/
 ```
 
 ### 3. Personalización del Frontmatter

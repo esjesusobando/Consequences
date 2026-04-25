@@ -33,7 +33,7 @@ Usuario → Detectar intención → Skill correcto → Ejecutar → Capturar res
 
 ```
 1. DETECTAR intención (tabla arriba)
-2. CARGAR skill: 01_Core/03_Skills/18_Personal_Life_OS/{skill}/SKILL.md
+2. CARGAR skill: 01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/{skill}/SKILL.md
 3. EJECUTAR según instrucciones del skill
 4. GUARDAR resultado en destino apropiado
 5. NOTIFICAR via notification.py si corresponde
@@ -49,7 +49,7 @@ Usuario → Detectar intención → Skill correcto → Ejecutar → Capturar res
 | Plan My Day               | respuesta inline + opcionalmente `04_Operations/`           |
 | Daily Notes               | `04_Operations/03_Process_Notes/` (si existe)               |
 | Recording Mode            | `02_Knowledge/` (transcripciones)                           |
-| Returns Tracker           | `01_Core/03_Skills/` (auto-generated skills)                |
+| Returns Tracker           | `01_Personal_Os/01_Core/02_Tools/02_Skills/` (auto-generated skills)                |
 
 ---
 

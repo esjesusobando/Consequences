@@ -1,376 +1,354 @@
-# 📦 INVENTARIO TOTAL — Think Different AI
+# 📦 INVENTARIO TOTAL — PersonalOS v2.0 Consequences
 
-> **Fecha**: 2026-04-20
-> **Versión**: v6.2 — Script Encapsulation + Skills Migration
-> **Estado**: ✅ ACTIVO — Documento de referencia principal
-
----
-
-## 📊 RESUMEN EJECUTIVO — Skills System
-
-| Categoría                          | Skills              | Estado                             | Notas                                             |
-|------------------------------------|---------------------|------------------------------------|---------------------------------------------------|
-| **Agent_Teams_Lite**               | 9                   | ✅ No tocado                        | Por instrucción del usuario                       |
-| **Project_Manager**                | 9                   | ✅ Esencias reales                  | 100% auditado                                     |
-| **Product_Manager**                | 7                   | ✅ Esencias reales                  | 100% auditado                                     |
-| **Product_Design**                 | 11                  | ✅ Esencias reales                  | 100% auditado (Taste Skills)                      |
-| **Gentleman**                      | 1                   | ✅ Real                             | 07_Double_Code_Review                             |
-| **Vibe_Coding**                    | 21                  | ✅ Esencias reales                  | 100% auditado                                     |
-| **Testing**                        | 13                  | ✅ Esencias reales                  | 100% auditado                                     |
-| **DevOps**                         | 12                  | ✅ Esencias reales                  | 100% auditado                                     |
-| **Personal_Os**                    | 10                  | ✅ Esencias reales                  | 100% auditado                                     |
-| **Marketing**                      | 32                  | ✅ Esencias reales                  | 100% auditado (15+10+7)                           |
-| **Backup**                         | 177                 | ⏭️ SKIPPED                         | Por instrucción del usuario                       |
-| **Doc_Processing**                 | 3                   | ✅ Esencias reales                  | 100% auditado                                     |
-| **TOTAL**                          | **305**             | **99%**                            | **Auditado a estándar Anthropic**                 |
+> **Fecha:** 2026-04-24
+> **Versión:** v2.0 Consequences
+> **Estado:** ✅ OPERATIVO — Documento de referencia principal
 
 ---
 
-## 🔍 ESTÁNDAR ANTHROPIC — Esencia Original
+## RESUMEN EJECUTIVO
 
-Cada skill ahora tiene:
-
-| Componente                            | Descripción                                    | Estado             |
-|---------------------------------------|------------------------------------------------|--------------------|
-| `## Esencia Original`                 | Sección obligatoria                            | ✅                  |
-| `> **Propósito:**`                    | Descripción real (no genérica)                 | ✅                  |
-| `> **Flujo:`                          | Pasos del workflow                             | ✅                  |
-| `## ⚠️ Gotchas`                       | Errores comunes                                | ✅                  |
-| `references/`                         | Documentación adicional                        | ✅                  |
-| `scripts/`                            | Scripts encapsulados por skill                 | ✅                  |
+| Componente | Cantidad | Estado |
+|:-----------|:--------:|:------:|
+| Workflows | 25 | ✅ |
+| Rules (.mdc) | 10 | ✅ |
+| Agents | 35+ | ✅ |
+| Skills (áreas) | 9 | ✅ |
+| Skills (Life OS) | 5 | ✅ |
+| Skills (Compound Eng) | 35+ | ✅ |
+| MCPs | 33 | ✅ |
+| Scripts (HUBs) | 14 | ✅ |
+| Sistema Recursivo | 4+ engines | ✅ |
 
 ---
 
-## 📁 ESTRUCTURA DE SKILLS (v6.2)
+## ESTRUCTURA PRINCIPAL v2.0
 
 ```
-01_Core/03_Skills/
-├── 00_Compound_Engineering/  # Scripts: 01_Spider_Brainstorm.py
-├── 00_Personal_Os_Stack/    # Scripts: 53_Structure_Auditor.py
-├── 00_Skill_Auditor/       # Scripts: 34_Skill_Auditor.py
-├── 01_Agent_Teams_Lite/     # Scripts: 02_Professor_X_Plan.py
-├── 02_Project_Manager/      # Scripts: 09_Backlog_Triage.py
-├── 03_Product_Manager/      # (sin scripts)
-├── 04_Product_Design/       # (sin scripts)
-├── 05_Vibe_Coding/          # (sin scripts)
-├── 06_Testing/              # Scripts: 33_Parallel_Audit_Pro.py
-├── 07_DevOps/               # Scripts: 57_Repo_Sync_Auditor.py
-├── 08_Personal_Os/          # Scripts: 08, 14, 15, 50, 87
-├── 09_Marketing/            # (sin scripts)
-├── 10_Backup/               # 177 skills — Legacy/backup (SKIPPED)
-├── 11_Doc_Processing/       # (sin scripts)
-├── 12_N8N/                 # (sin scripts)
-├── 13_System_Master/        # Scripts: 16, 00_Notifier
-├── 14_Anthropic_Harness/   # (sin scripts)
-├── 15_Skill_Creator_Oficial/ # (sin scripts)
-├── 16_Silicon_Valley_Data_Analyst/ # (sin scripts)
-├── 17_SEO_SOTA_Master/   # (sin scripts)
-├── 18_Personal_Life_OS/   # Scripts: 11_Sync_Notes.py
-├── 19_Video_Intel/       # (sin scripts)
-├── 20_James_Cameron/     # (sin scripts)
-├── 21_Skill_Template/    # (sin scripts)
-├── 25_Octopus/            # (sin scripts)
-├── 26_Fantasticos/       # (sin scripts)
-├── 27_Qmd/               # (sin scripts)
-└── 28_Carousel_Master/   # (sin scripts)
-
-08_Scripts_Os/
-├── 01_Auditor_Hub.py      # HUB principal
-├── 02_Git_Hub.py
-├── 03_AIPM_Hub.py
-├── 04_Ritual_Hub.py      # ⚠️ USANDO get_skill_script()
-├── 05_Validator_Hub.py
-├── 06_Tool_Hub.py
-├── 07_Integration_Hub.py
-├── 08_Workflow_Hub.py
-├── 09_Data_Hub.py
-├── 10_General_Hub.py
-├── 11_Auto_Learn_Hub.py
-├── 13_Auditors_Os/       # NUEVO— Utilities encapsuladas
-│   └── scripts/        # 12, 13, 14, 15, 16
-├── .backup/               # Archivo: 10_Legacy_backup_20260420
-└── config_paths.py      # ✅ get_skill_script() FUNCIONAL
+Think_Different/
+├── 00_Winter_is_Coming/           ← AGENTS.md, Goals, Memory
+├── 01_Personal_Os/
+│   ├── 01_Core/
+│   │   ├── 00_Workflows_Os/      ← 25 workflows en 5 categorías
+│   │   ├── 01_Rules/              ← 10 .mdc
+│   │   └── 02_Tools/
+│   │       ├── 01_Agents/          ← 35+ agents
+│   │       ├── 02_Skills/          ← 100+ skills
+│   │       ├── 03_Mcp/            ← MCP servers
+│   │       ├── 05_Hooks/          ← Hooks
+│   │       ├── 06_Plugins/        ← Plugins
+│   │       ├── 07_Server/          ← Engram
+│   │       └── 09_Templates/       ← Templates
+│   ├── 02_Knowledge/
+│   │   └── 01_Research/           ← SOTA, MCP Catalog, Inventarios
+│   ├── 03_Task/                   ← Hillary (Inbox, Templates)
+│   └── 04_Operations/
+│       ├── 01_Auto_Improvement/   ← Sistema Recursivo
+│       ├── 02_Agent_Teams_Lite/   ← SDD workflows
+│       └── 03_Scripts_Os/          ← 14 HUBs
+├── 02_Playground/
+└── 03_Resultado/
 ```
 
 ---
 
-## 🔧 SCRIPTS UTILIZADOS EN AUDITORÍA
+## WORKFLOWS — 25 archivos en 5 categorías
 
-| Script                                           | Función                                                | Estado             |
-|--------------------------------------------------|--------------------------------------------------------|--------------------|
-| `fix_duplicate_lines.py`                         | Limpiar líneas duplicadas en 07_DevOps                 | ✅                  |
-| `restore_essences.py`                            | Restaurar esencias eliminadas                          | ✅                  |
-| `fix_personal_os_essences.py`                    | Arreglar esencias placeholder                          | ✅                  |
-| `fix_marketing_essences.py`                      | Agregar esencias a Marketing                           | ✅                  |
-| `fix_yaml_skills.py`                             | Arreglar skills solo YAML                              | ✅                  |
-| `fix_doc_processing_essences.py`                 | Agregar esencias Doc_Processing                        | ✅                  |
-| `02_Beautify_Tables.py`                          | Embellecer tablas                                      | ✅                  |
+### 00_Workflows_Os/01_Personal_Os (11 workflows core)
 
----
-
-## 🗂️ SCRIPTS ENCAPSULADOS POR SKILL (v6.2)
-
-### Batch 1: Auditoría → Skills
-| Script                                | Skill Destino                          | Estado           |
-|---------------------------------------|----------------------------------------|------------------|
-| `34_Skill_Auditor.py`                 | `00_Skill_Auditor/scripts`             | ✅                |
-| `53_Structure_Auditor.py`             | `00_Personal_Os_Stack/scripts`         | ✅                |
-| `50_System_Health_Monitor.py`         | `08_Personal_Os/scripts`               | ✅                |
-| `33_Parallel_Audit_Pro.py`            | `06_Testing/scripts`                   | ✅                |
-| `57_Repo_Sync_Auditor.py`             | `07_DevOps/scripts`                    | ✅                |
-
-### Batch 2: Rituales → Skills
-| Script                          | Skill Destino                         | Estado           |
-|---------------------------------|---------------------------------------|------------------|
-| `08_Ritual_Cierre.py`           | `08_Personal_Os/scripts`              | ✅                |
-| `14_Morning_Standup.py`         | `08_Personal_Os/scripts`              | ✅                |
-| `15_Weekly_Review.py`           | `08_Personal_Os/scripts`              | ✅                |
-| `09_Backlog_Triage.py`          | `02_Project_Manager/scripts`          | ✅                |
-| `11_Sync_Notes.py`              | `18_Personal_Life_OS/scripts`         | ✅                |
-| `16_Clean_System.py`            | `13_System_Master/scripts`            | ✅                |
-| `00_Notifier.py`                | `13_System_Master/scripts`            | ✅                |
-| `87_Iron_Man_Gen.py`            | `08_Personal_Os/scripts`              | ✅                |
-
-### Batch 3: Workflows → Skills
-| Script                            | Skill Destino                             | Estado           |
-|-----------------------------------|-------------------------------------------|------------------|
-| `01_Spider_Brainstorm.py`         | `00_Compound_Engineering/scripts`         | ✅                |
-| `02_Professor_X_Plan.py`          | `01_Agent_Teams_Lite/scripts`             | ✅                |
-
-### Batch 4: Utilities → 13_Auditors_Os
-| Script                               | Skill Destino                    | Estado           |
-|--------------------------------------|----------------------------------|------------------|
-| `12_Context_Usage_Bar.py`            | `13_Auditors_Os/scripts`         | ✅                |
-| `13_Beautify_Tables.py`              | `13_Auditors_Os/scripts`         | ✅                |
-| `14_Beauty_Doc.py`                   | `13_Auditors_Os/scripts`         | ✅                |
-| `15_SOTA_Integrity_Check.py`         | `13_Auditors_Os/scripts`         | ✅                |
-| `16_Carousel_Engine.py`              | `13_Auditors_Os/scripts`         | ✅                |
-
-### Legacy: Archivados
-| Script                             | Ubicación                                   | Estado           |
-|------------------------------------|---------------------------------------------|------------------|
-| `03_Thor_Work.py`                  | `.backup/10_Legacy_backup_20260420`         | ✅                |
-| `04_Vision_Review.py`              | `.backup/10_Legacy_backup_20260420`         | ✅                |
-| `05_Hulk_Compound.py`              | `.backup/10_Legacy_backup_20260420`         | ✅                |
-| `56_Organize_Solutions.py`         | `.backup/10_Legacy_backup_20260420`         | ✅                |
+| # | Workflow | Función |
+|:---:|:---------|:---------|
+| 01 | Morning_Standup.md | Daily planning |
+| 02 | Backlog_Processing.md | Triage inbox |
+| 03 | Content_Generation.md | Create content |
+| 04 | Weekly_Review.md | Strategic review |
+| 05 | Ritual_Cierre_Protocol.md | End of day |
+| 06 | Validar_Reglas.md | Rules validation |
+| 07 | System_Health_Audit.md | System check |
+| 08 | Context_Recovery.md | Recover context |
+| 09 | AI_Task_Template.md | Task template |
+| 10 | Classify_Task.md | Auto-classify |
+| 11 | AGENTS.md | Agent system |
 
 ---
 
-## 📚 ARCHIVOS ACTUALIZADOS EN ESTA SESIÓN
+### 00_Workflows_Os/02_Marvel (8 Avengers workflows)
 
-| Archivo                                                  | Cambio                                                            |
-|----------------------------------------------------------|-------------------------------------------------------------------|
-| `CLAUDE.md`                                              | Estructuras actualizadas, skill counts corregidos                 |
-| `04_Inventario.md`                                       | Estado actual del sistema                                         |
-| `12_Skills_Improvement_Plan.md`                          | Plan de mejoras post-audit                                        |
-| `13_Anthropic_Skills_Implementation_Plan.md`             | Plan de implementación Anthropic                                  |
-
----
-
-**Última actualización**: 2026-03-31
-**Estado**: ✅ Post-Audit completado
-
-© 2026 PersonalOS | Inventario v6.0
+| # | Workflow | Función |
+|:---:|:---------|:---------|
+| 01 | Iron_Man_Gen.md | Bootstrap |
+| 02 | Spider_Brainstorm.md | Ideation |
+| 03 | Professor_X_Plan.md | Planning |
+| 04 | Vision_Review.md | Strategy review |
+| 05 | Thor_Work.md | Implementation |
+| 06 | Hulk_Compound.md | Compounding |
+| 07 | AntMan_Lfg_Lite.md | Lite autonomous |
+| 08 | Doc_Strange_Lfg.md | Full autonomous |
 
 ---
 
-## 📋 HISTORIAL DE CAMBIOS
+### 00_Workflows_Os/03_Gentleman (2 workflows)
 
-| Fecha                    | Versión                     | Cambio                                                                 |
-|--------------------------|-----------------------------|------------------------------------------------------------------------|
-| 2026-03-21               | **v5.0 LEGACY**             | Marcado como deprecated                                                |
-| 2026-03-21               | **v4.0**                    | Nuevo inventario en 04_Inventario.md                                   |
-| 2026-03-20               | **v5.0**                    | Última actualización antes de reorganización                           |
-
----
-
-## 🔄 QUÉ CAMBIÓ EN v4.0
-
-### Skills
-- Reorganización completa: 10 perfiles → 9 perfiles + 1 backup
-- Nombres: snake_case → PascalCase
-- Canonical source: `01_Core/03_Skills/`
-- Mirror: `.cursor/02_Skills/` (README only)
-
-### Scripts
-- Renombrados a PascalCase (NN_Script_Name.py)
-- ~84 scripts activos
-- Referencias cruzadas corregidas
-
-### Documentación
-- Super Reporte en `04_Operations/04_Memory_Brain/`
-- 85+ documentos beautificados
-- Inventarios duplicados eliminados
+| # | Workflow | Función |
+|:---:|:---------|:---------|
+| 10 | Frontend_Premium.md | Design system |
+| 20 | Redaccion_de_Docs.md | Technical writing |
 
 ---
 
-## 📁 INVENTARIOS DEL SISTEMA
+### 00_Workflows_Os/04_Hillary (2 workflows)
 
-| Archivo                                          | Estado               | Ubicación                                                |
-|--------------------------------------------------|----------------------|----------------------------------------------------------|
-| **04_Inventario.md**                             | ✅ ACTIVO             | `04_Operations/04_Memory_Brain/`                         |
-| **01_Inventario_Total.md**                       | ✅ ACTIVO             | `01_Core/02_Knowledge_Brain/`                            |
-
----
-
-**Última actualización**: 2026-03-31 *(Genesis Audit v6.1 — Bug #4 resuelto)*
-**Estado**: ✅ ACTIVO — Protocolo Genesis puede leer este documento con confianza
+| # | Workflow | Función |
+|:---:|:---------|:---------|
+| 15 | Captura_Rapida.md | Quick capture |
+| 25 | Hillary_Life_OS.md | Full life OS |
 
 ---
 
-## 🆕 CAMBIOS v6.1 (2026-04-17)
+### 00_Workflows_Os/05_Compound_Engineering (4 workflows)
 
-| Fix                        | Descripción                                                                        |
-|----------------------------|------------------------------------------------------------------------------------|
-| **Tests P0**               | 5 tests corregidos — `SCRIPT_DIR` apunta a `Legacy_Backup/`                        |
-| **Workflows**              | 5 workflows renombrados con IDs únicos (19-23)                                     |
-| **Test zombie**            | `test_audit_engineering.py` archivado (módulo Oil Drilling ID 42)                  |
-| **Armor Layer**            | `conftest.py` actualizado con `LEGACY_SCRIPTS_DIR` centralizado                    |
-| **Este archivo**           | Auto-referencia LEGACY eliminada                                                   |
-| **Style Guide**            | Chris Orwig Visual + Writing Guide creados (400+ líneas)                           |
-| **Docs**                   | Landing template + Neural Networks example + Git session history ignored           |
+| # | Workflow | Función |
+|:---:|:---------|:---------|
+| 16 | Deep_Work_Session.md | Focus work |
+| 17 | Ship_It.md | Shipping |
+| 18 | Anthropic_Harness.md | Eval harness |
+| 19 | Multi_Agent_Roles.md | Multi-agent |
 
 ---
 
-## 🆕 v1.0 ALFA (2026-04-20) — Script Migration COMPLETA
+## RULES — 10 archivos .mdc
 
-| Cambio                              | Descripción                                 |
-|-------------------------------------|---------------------------------------------|
-| **14 scripts migrados**             | 9 a skills + 5 a 14_Otros                   |
-| **14_Otros creada**                 | Nueva carpeta (secuencia 14)                |
-| **18_Generacion_Contenido**         | → 09_Marketing (USUARIO LO QUIERE)          |
-| **22 scripts en skills**            | Sistema encapsulado completo                |
-| **Fallback inteligente**            | Busca en skills + 14_Otros + legacy         |
+**Ubicación:** `01_Personal_Os/01_Core/01_Rules/`
 
----
-
-## 🆕 v6.3 BETA (2026-04-20) — Script Migration v2
-
-| Cambio                              | Descripción                                       |
-|-------------------------------------|---------------------------------------------------|
-| **14 scripts migrados**             | 9 a skills + 5 a 14_Otros                         |
-| **14_Otros creada**                 | Nueva carpeta para scripts de valor medio         |
-| **18_Generacion_Contenido**         | → 09_Marketing (USUARIO LO QUIERE)                |
-| **62_Tool_Shed**                    | → 07_DevOps (auto-detector MCPs)                  |
-| **Workflows**                       | 06, 07, 73 → 00_Compound_Engineering              |
-| **Inventario actualizado**          | 22 scripts en skills ahora                        |
+| # | Rule | Propósito |
+|:---:|:-----|:---------|
+| 00 | Core_Protocol.mdc | Protocolo central |
+| 01 | Pilares_Sistema.mdc | 4 pilares OS |
+| 02 | Motor_Agent.mdc | Motor agentic |
+| 03 | Protocolos_Ejecucion.mdc | Execution protocols |
+| 04 | Observabilidad.mdc | Logging y metrics |
+| 05 | Reporting.mdc | Reporting rules |
+| 06 | Contexto_Gestion.mdc | Context management |
+| 07 | Docs_Guias.mdc | Documentation |
+| 08 | Token_Economy.mdc | Token optimization |
+| 09 | Agent_Teams_Protocol.mdc | Multi-agent protocol |
 
 ---
 
-## 🆕 v6.2 BETA (2026-04-20) — Script Encapsulation
+## AGENTS — 35+ agents
 
-| Cambio                          | Descripción                                       |
-|---------------------------------|---------------------------------------------------|
-| **12 scripts → skills**         | Migración completa via get_skill_script()         |
-| **10_Legacy archivado**         | → `.backup/10_Legacy_backup_20260420`             |
-| **13_Auditors_Os**              | Nueva carpeta para utilities                      |
-| **get_skill_script()**          | Resolución dinámica de scripts                    |
-| **Script resolution**           | 15/15 tests PASS                                  |
-| **HUBs actualizados**           | 01_Auditor, 04_Ritual, 08_Workflow                |
-| **SOTA_Integrity**              | Ruta dinámica fijada                              |
+**Ubicación:** `01_Personal_Os/01_Core/02_Tools/01_Agents/`
+
+| Categoría | Agents |
+|:---------|:-------|
+| **Orchestrator** | 00_Orchestrator.md |
+| **Scope** | 01_Scope_Rule_Architect.md |
+| **Dream Team** | 01_Dream_Team/ (5 agents) |
+| **Specialists Compound** | 02_Specialists_Compound/ (23 agents) |
+| **Individuals** | TDD_Test_First, React_Test_Implementer, React_Mentor, Security_Auditor, Git_Workflow_Manager, Accessibility_Auditor, PRD_Dashboard_Template, Design_SOP_Document, AIPM_Judge, Carousel_Strategist |
 
 ---
 
-## 🛡️ AUDITORES Y VALIDATORS — v6.2 (2026-04-21)
+### Specialists Compound (23 Agents)
 
-### Scripts Actualizados y Blindados
+| Tipo | Agents |
+|:-----|:-------|
+| **Code Review** | correctness-reviewer, security-reviewer, performance-reviewer, code-simplicity-reviewer, maintainability-reviewer |
+| **Architecture** | pattern-recognition-specialist, architecture-strategist |
+| **Framework** | kieran-typescript-reviewer, kieran-python-reviewer, kieran-rails-reviewer, dhh-rails-reviewer, julik-frontend-races-reviewer |
+| **Data** | data-integrity-guardian, data-migrations-reviewer, schema-drift-detector |
+| **Quality** | testing-reviewer, reliability-reviewer, api-contract-reviewer, deployment-verification-agent |
+| **Security** | security-sentinel |
+| **Research** | best-practices-researcher, framework-docs-researcher, git-history-analyzer, issue-intelligence-analyst, learnings-researcher, repo-research-analyst |
+| **Design** | design-implementation-reviewer, design-iterator, figma-design-sync |
+| **Doc Review** | coherence-reviewer, design-lens-reviewer, feasibility-reviewer, product-lens-reviewer, scope-guardian-reviewer, security-lens-reviewer |
 
-| Script                             | Estado                | Blindos                       | Problema Original                                |
-|------------------------------------|-----------------------|-------------------------------|--------------------------------------------------|
-| `33_Parallel_Audit_Pro.py`         | ✅ ACTUALIZADO         | Fallback dinámico             | 8 paths hardcodeados no existían                 |
-| `01_Auditor_Hub.py`                | ✅ ACTUALIZADO         | Fallback + try/except         | AUDITOR_DIR fallback roto                        |
-| `05_Validator_Hub.py`              | ✅ ACTUALIZADO         | 3 fallback layers             | Sin validation de path                           |
-| `40_Validate_Rules.py`             | ✅ ACTUALIZADO         | SKILLS_DIR dinámico           | Paths obsoletos (01_Core, 02_High_Value)         |
-| `skill_validator.py`               | ✅ BLINDADO            | SafeLoader YAML               | YAML injection vulnerability                     |
-| `skill_security_scan.py`           | ✅ BLINDADO            | Skip + try/except             | Regex bypass + falsos positivos                  |
+---
 
-### Estructura de Carpetas de Auditoría
+## SKILLS — 100+ en 9 áreas
+
+**Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+
+| Área | Path | Skills | Propósito |
+|:-----|:-----|:------:|:----------|
+| 00_Compound_Engineering | `00_Compound_Engineering/` | 1 | SDD + Reviews |
+| 01_Creacion_Contenidos | `01_Creacion_Contenidos/` | 7 | Marketing, SEO |
+| 02_Diseno_Ui_Ux | `02_Diseno_Ui_Ux/` | 3 | Design, Taste |
+| 03_Video_Media | `03_Video_Media/` | 1 | James Cameron |
+| 04_Automatizacion | `04_Automatizacion/` | 4 | N8N, GWS |
+| 05_Workflows | `05_Workflows/` | 2 | Teams, PM |
+| 06_Tools | `06_Tools/` | 1 | MCP Client |
+| 07_Personal_Os | `07_Personal_Os/` | 1 | Life OS |
+| 08_Invictus_Web | `08_Invictus_Web/` | 1 | Superpowers |
+| 09_Legacy_Archive | `09_Legacy_Archive/` | 0 | - |
+
+---
+
+### Skills SDD (Spec-Driven Development)
+
+| Skill | Función |
+|:------|:-------|
+| sdd-explore | Explore |
+| sdd-propose | Propose |
+| sdd-spec | Spec |
+| sdd-design | Design |
+| sdd-tasks | Tasks |
+| sdd-apply | Implement |
+| sdd-verify | Verify |
+| sdd-archive | Archive |
+
+---
+
+### Life OS Skills (5)
+
+**Ubicación:** `07_Personal_Os/01_Life_OS/18_Personal_Life_OS/`
+
+| Skill | Trigger | Función |
+|:------|:--------|:---------|
+| Quick Capture | "capture", "quick add" | Capture ideas |
+| Plan My Day | "plan my day", "plan día" | Daily planning |
+| Daily Notes | "daily notes", "log this" | Activity log |
+| Recording Mode | "record", "transcribe" | Transcription |
+| Returns Tracker | "create skill from" | Pattern detection |
+
+---
+
+## MCPs — 33 servers
+
+**Ubicación:** `.mcp.json` (raíz)
+
+| Categoría | Count | Ejemplos |
+|:---------|:-----:|:--------|
+| Knowledge | 5 | context7, memories |
+| Dev | 8 | github, gitlab, filesystem |
+| Scraping | 3 | firecrawl, puppeteer |
+| Notes | 3 | evernote, onenote |
+| Productivity | 4 | slack, linear |
+| Media | 3 | image generation, video |
+| Data | 2 | postgres, mysql |
+| Security | 2 | stealth-dev, vault |
+| Testing | 1 | playwright-mcp |
+| Tools | 2 | magicui-design |
+
+---
+
+## SCRIPTS — 14 HUBs + utilities
+
+**Ubicación:** `01_Personal_Os/04_Operations/03_Scripts_Os/`
+
+| HUB | Función |
+|:---|:---------|
+| 00_Sound_Engine.py | Sound notifications |
+| 01_Auditor_Hub.py | Audit orchestration |
+| 02_Git_Hub.py | Git operations |
+| 03_AIPM_Hub.py | AI PM operations |
+| 04_Ritual_Hub.py | Rituals execution |
+| 05_Validator_Hub.py | Validation orchestration |
+| 06_Tool_Hub.py | Tool management |
+| 07_Integration_Hub.py | Integration management |
+| 08_Workflow_Hub.py | Workflow execution |
+| 09_Data_Hub.py | Data operations |
+| 10_General_Hub.py | General utilities |
+| 11_Auto_Learn_Hub.py | Auto-learning |
+| 03_Validator/ | Validators encapsulados |
+| 13_Auditors_Os/ | Auditor utilities |
+
+---
+
+## SISTEMA RECURSIVO DE AUTO-MEJORAMIENTO
+
+**Ubicación:** `01_Personal_Os/04_Operations/01_Auto_Improvement/`
+
+### Arquitectura
 
 ```
-08_Scripts_Os/
-├── 01_Auditor_Hub.py          ✅ Hub principal actualizado
-├── 02_Git_Hub.py
-├── 03_Validator/              # Validators encapsulated
-│   ├── 33_Parallel_Audit_Pro.py   ✅
-│   ├── 34_Skill_Auditor.py
-│   ├── 37_Linter_Autofix.py
-│   ├── 40_Validate_Rules.py      ✅
-│   ├── 80_Edge_Case_Validator.py
-│   ├── skill_validator.py       ✅ BLINDADO
-│   └── skill_security_scan.py   ✅ BLINDADO
-├── 05_Validator_Hub.py       ✅ Hub actualizado
-├── 13_Auditors_Os/scripts/   # Utilities
-├── 14_Otros/                # Scripts de utilidad
-│   └── 12_Update_Links.py
-└── config_paths.py           # ✅ get_skill_script() FUNCIONAL
+01_Auto_Improvement/01_Auto_Improvement/
+├── 01_Engine/
+│   ├── detector.py
+│   ├── analyzer.py
+│   ├── executor.py
+│   ├── learner.py
+│   └── recursive_improvement_engine.py
+├── 02_Rules/
+│   └── rules_engine.py
+├── 03_Metrics/
+│   └── metrics_tracker.py
+├── 04_Triggers/
+│   ├── manual_trigger.py
+│   └── cron_trigger.py
+└── 99_Utils/
+    └── [12+ utilities]
 ```
 
-### Blindos de Seguridad Aplicados
-
-1. **YAML Injection** → `yaml.SafeLoader` en vez de `safe_load` arbitrario
-2. **Regex DoS** → `try/except re.error` en cada búsqueda
-3. **False Positives** → Skip líneas que empiezan con `#` o `//`
-4. **Rutas dinámicas** → `get_skill_script()` con 4+ fallback layers
-5. **Fallback chains** → Múltiples directorios de búsqueda
-
-### Rutas de Scripts Resueltas
+### Ciclo Recursivo
 
 ```
-Script                    | Ruta v6.2
-------------------------|----------------------------------------
-33_Parallel_Audit_Pro   | 03_Validator/33_Parallel_Audit_Pro.py
-34_Skill_Auditor       | 03_Validator/34_Skill_Auditor.py
-40_Validate_Rules     | 03_Validator/40_Validate_Rules.py
-skill_validator       | 03_Validator/skill_validator.py
-skill_security_scan   | 03_Validator/skill_security_scan.py
-01_Auditor_Hub      | 01_Auditor_Hub.py (raíz)
-05_Validator_Hub     | 05_Validator_Hub.py (raíz)
-12_Update_Links      | 14_Otros/12_Update_Links.py
+Detect → Analyze → Execute → Learn (repite hasta max_iterations)
 ```
 
 ---
 
-## 📋 CHANGELOG v6.2
+## HILLARY — Task Management
 
-### 2026-04-21 — Auditoría y Blindaje
+**Ubicación:** `01_Personal_Os/03_Task/`
 
-- ✅ 6 scripts de auditoría actualizados con rutas correctas
-- ✅ BLINDADOS contra YAML injection y regex bypass
-- ✅ Fallback chains de 4+ directorios implementados
-- ✅ Documentación actualizada en Inventory
-- ✅ Aprendizajes guardados a Engram
+### Estructura
 
-### Edge Cases Identificados y Solucionados
+| Carpeta | Contenido |
+|:--------|:----------|
+| 00_Templates/ | 6 templates (SOTA, Medio, Corto, Routine, Skeleton, Process Note) |
+| 01_Tasks_Done/ | Tareas completadas |
+| 02_Hillary_Inbox/ | Inbox activo |
 
-| Edge Case                     | Severidad         | Solución                              |
-|-------------------------------|-------------------|---------------------------------------|
-| Paths hardcodeados            | 🔴 CRÍTICO         | get_skill_script() + fallback         |
-| YAML injection                | 🔴 CRÍTICO         | SafeLoader                            |
-| Circular dependencies         | 🟡 MEDIO           | ✅ BLINDADO en todo-create             |
-| Deleted blocker               | 🟡 MEDIO           | ✅ WARN on delete                      |
-| Duplicate IDs                 | 🟡 MEDIO           | ✅ Search both paths                   |
-| ID overflow                   | 🟡 MEDIO           | ✅ Warn if > 999                       |
-| Regex bypass                  | 🟡 MEDIO           | ✅ try/except + skip comments          |
+---
 
-### Edge Cases en todo-create — BLINDADOS
+### Templates
 
-```markdown
-1. **Circular Dependencies**
-   - Detection: Before adding dependency, search entire task directory
-   - If X→Y and Y→X → CIRCULAR ERROR
-   - Chain exceeds 5 levels → WARNING
+| Template | Uso | Duración |
+|:---------|:---|:---------|
+| SOTA | Problema complejo | +3 días |
+| Medio | Feature normal | 1-3 días |
+| Corto | Quick fix | <1 día |
+| Routine | Proceso repetitivo | Daily |
+| Skeleton | Blank start | Cualquiera |
 
-2. **Deleted Blocker**
-   - Before deleting, search for files with dependencies
-   - If found → WARN and require manual unblocking
-   - Recommend status: cancelled instead of delete
+---
 
-3. **Duplicate IDs**
-   - Search BOTH canonical + legacy paths
-   - If duplicate found → increment to next available
+## INTEGRACIÓN CON 6 METODOLOGÍAS
 
-4. **ID Overflow**
-   - If next ID > 999 → warn and require intervention
-```
+| # | Metodología | Skills | Workflows | Agents | Ubicación |
+|:---:|:------------|:------:|:---------:|:------:|:----------|
+| 1 | Personal OS | 6 | 11 | - | 01_Core/00_Workflows_Os/01_* |
+| 2 | Marvel | - | 8 | - | 01_Core/00_Workflows_Os/02_* |
+| 3 | Gentleman | 6 | 2 | - | 01_Core/00_Workflows_Os/03_* + Archive |
+| 4 | Hillary | 2 | 2 | - | 01_Core/00_Workflows_Os/04_* + 03_Task/ |
+| 5 | Compound Eng | 35+ | 4 | 35+ | 01_Core/00_Workflows_Os/05_* + 02_Tools/ |
+| 6 | Sistema Recursivo | - | 1 | - | 04_Operations/01_Auto_Improvement/ |
 
-© 2026 PersonalOS | Inventario v6.2 — Pure Green
+---
+
+## DOCUMENTACIÓN CLAVE
+
+| Documento | Ubicación |
+|:----------|:----------|
+| AGENTS.md principal | `00_Winter_is_Coming/AGENTS.md` |
+| Dream Team | `01_Personal_Os/01_Core/02_Dream_Team.md` |
+| Inventario Core | `01_Personal_Os/01_Core/INVENTARIO_CORE.md` |
+| Inventario Integrado | `01_Personal_Os/02_Knowledge/01_Research/04_INVENTARIO_INTEGRADO_SISTEMAS.md` |
+| SOTA 2026 Research | `01_Personal_Os/02_Knowledge/01_Research/01_SOTA_2026_Research.md` |
+| MCP Catalog | `01_Personal_Os/04_Operations/03_Scripts_Os/04_MCP_CATALOG.md` |
+
+---
+
+## CHANGELOG
+
+| Fecha | Versión | Cambio |
+|:------|:--------|:-------|
+| 2026-04-24 | **v2.0** | Estructura v2.0 Consequences |
+| 2026-04-20 | v6.3 Beta | Script Migration v2 |
+| 2026-04-20 | v6.2 Beta | Script Encapsulation |
+| 2026-04-17 | v6.1 | Auditoría y blindaje |
+
+---
+
+**PersonalOS v2.0 Consequences — 2026-04-24**

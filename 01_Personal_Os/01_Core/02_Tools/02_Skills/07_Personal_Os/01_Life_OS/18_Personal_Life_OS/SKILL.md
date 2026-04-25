@@ -82,4 +82,4 @@ Esta skill permite a cualquier agente (especialmente a @13_hillary) gestionar el
 
 ---
 
-*v6.1 | Source of Truth: 01_Core/03_Skills/18_Personal_Life_OS/README.md*
+*v6.1 | Source of Truth: 01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/01_Life_OS/18_Personal_Life_OS/README.md*

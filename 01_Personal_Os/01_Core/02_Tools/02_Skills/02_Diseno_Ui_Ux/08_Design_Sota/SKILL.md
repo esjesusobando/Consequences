@@ -319,8 +319,8 @@ useEffect(() => {
 
 ## 9. REFERENCIAS
 
-- **Demo frontend:** `01_Core/03_Skills/02_Diseno_Ui_Ux/03_Taste_Skills/1. TASTE SKILLS/demo_saas.html`
-- **Demo dashboard:** `01_Core/03_Skills/02_Diseno_Ui_Ux/04_Diseno_Minimalista/2. DISEÑO MINIMALISTA/demo_dashboard.html`
+- **Demo frontend:** `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/03_Taste_Skills/1. TASTE SKILLS/demo_saas.html`
+- **Demo dashboard:** `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/04_Diseno_Minimalista/2. DISEÑO MINIMALISTA/demo_dashboard.html`
 
 ---
 

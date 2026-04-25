@@ -35,14 +35,14 @@ Skills para automatización del PersonalOS - rituales diarios, productividad y w
 
 ```bash
 # Ejecutar scripts directamente
-python 08_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py
-python 08_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py
-python 08_Scripts_Os/Ritual_Fixed/08_Ritual_Cierre.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/08_Ritual_Cierre.py
 ```
 
 ## Integración
 
-- Scripts asociados: `08_Scripts_Os/Ritual_Fixed/`
+- Scripts asociados: `01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/`
 - Workflows: `01_Core/00_Workflows/`
 - Documentación: Cada skill tiene su SKILL.md
 

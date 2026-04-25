@@ -1,6 +1,6 @@
 # YAML Frontmatter Schema
 
-**See `01_Core/03_Skills/codify-docs/schema.yaml` for the complete schema specification.**
+**See `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/schema.yaml` for the complete schema specification.**
 
 ## Required Fields
 

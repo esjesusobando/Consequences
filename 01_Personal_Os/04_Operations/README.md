@@ -50,26 +50,26 @@ Think_Different/
 
 Esta carpeta contiene el **cerebro operativo** del sistema - memoria a largo plazo, notas de sesiones, y mapeos:
 
-| Subcarpeta                       | Contenido                                      |
-|----------------------------------|------------------------------------------------|
-| `00_Context_Memory/`             | CTX de sesiones, JSONs de validación           |
-| `02_Knowledge_Brain/`            | Research, PDFs, conocimiento técnico           |
-| `03_Process_Notes/`              | Notas de sesiones (21 archivos)                |
-| `04_Memory_Brain/`               | Mapas, code reviews, archivo                   |
-| `08_Auditorias/`                 | Auditorías de sistema y calidad                |
-| `09_Agent_Teams_Lite/`           | Orquestación y lógica de agentes               |
+| Subcarpeta | Contenido |
+|:-----------|:----------|
+| `00_Context_Memory/` | CTX de sesiones, JSONs de validación |
+| `02_Knowledge_Brain/` | Research, PDFs, conocimiento técnico |
+| `03_Process_Notes/` | Notas de sesiones (21 archivos) |
+| `04_Memory_Brain/` | Mapas, code reviews, archivo |
+| `08_Auditorias/` | Auditorías de sistema y calidad |
+| `09_Agent_Teams_Lite/` | Orquestación y lógica de agentes |
 
 ---
 
 ## 📊 Estadísticas
 
-| Área                         | Cantidad                    |
-|------------------------------|-----------------------------|
-| Context Memories             | ~12 archivos                |
-| Notas de Sesión              | 21 archivos                 |
-| PDFs de Referencia           | 14 archivos                 |
-| Code Reviews                 | Varios                      |
-| Mapeos                       | Activos + Archivo           |
+| Área | Cantidad |
+|:-----|:---------|
+| Context Memories | ~12 archivos |
+| Notas de Sesión | 21 archivos |
+| PDFs de Referencia | 14 archivos |
+| Code Reviews | Varios |
+| Mapeos | Activos + Archivo |
 
 ---
 

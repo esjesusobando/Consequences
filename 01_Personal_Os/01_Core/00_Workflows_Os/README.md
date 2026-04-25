@@ -32,4 +32,4 @@ Directorio centralizado de los flujos de trabajo operativos de PersonalOS. Los f
 ---
 
 > [!TIP]
-> Use el comando `python 08_Scripts_Os/08_Workflow_Hub.py run <name>` para ejecutar un flujo específico de forma automatizada.
+> Use el comando `python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py run <name>` para ejecutar un flujo específico de forma automatizada.

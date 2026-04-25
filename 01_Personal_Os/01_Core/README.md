@@ -1,199 +1,168 @@
-# 01_Core — Think Different PersonalOS
+# 01_Core — Think Different PersonalOS v2.0
 
-**Versión:** 6.1
-**Última actualización:** 2026-04-20
-**Estado:** ✅ Activo | 💾 FUENTE DE VERDAD
+> **Versión:** v2.0 Consequences
+> **Última actualización:** 2026-04-24
+> **Estado:** ✅ Activo | 💾 FUENTE DE VERDAD
 
 ---
 
-## 📂 Workspace Structure (00-08 + Maerks)
+## 📂 Estructura Principal v2.0
 
 ```
 Think_Different/
 ├── 00_Winter_is_Coming/    # Estrategia, Backlog y ADN (ESTRATÉGICO)
-├── 01_Core/               # Motor OS: Skills, Agents, MCPs (FUENTE DE VERDAD) 💾
-├── 02_Knowledge/          # Base de Conocimiento, Research y Documentación
-├── 03_Tasks/              # Gestión de Tareas Activas
-├── 04_Operations/         # Cerebro Operativo y Automatización
-├── 05_Archive/            # Repositorio de Proyectos Finalizados
-├── 06_Playground/         # Laboratorio de Pruebas y Experimentos
-├── 07_Projects/           # Desarrollo de Proyectos Activos
-├── 08_Scripts_Os/         # Scripts y HUBs Operativos del Sistema
-└── Maerks/               # Entorno de Testing y Validación
+├── 01_Personal_Os/
+│   └── 01_Core/          # Motor OS: Skills, Agents, MCPs (FUENTE DE VERDAD) 💾
+├── 02_Knowledge/         # Base de Conocimiento, Research y Documentación
+├── 03_Tasks/             # Gestión de Tareas Activas (Hillary)
+├── 04_Operations/        # Cerebro Operativo y Automatización
+├── 05_Archive/          # Repositorio de Proyectos Finalizados
+├── 02_Playground/       # Laboratorio de Pruebas y Experimentos
+└── 03_Resultado/       # Resultados de trabajo
 ```
 
 ---
 
-## 📂 Estructura 01_Core (24 carpetas de skills en 03_Skills)
+## 📂 Estructura 01_Core
 
-| #               | Carpeta                                | Contenido                           | Estado               |
-|-----------------|----------------------------------------|-------------------------------------|----------------------|
-| 01              | `00_Workflows/`                        | 26+ workflows                       | ✅                    |
-| 02              | `01_Rules/`                            | 23 reglas del sistema               | ✅                    |
-| 03              | `02_Evals/`                            | Métricas y evaluaciones             | ✅                    |
-| 04              | `03_Skills/`                           | 24 carpetas de skills               | ✅                    |
-| 05              | `04_Agents/`                           | Agentes configurados                | ✅                    |
-| 06              | `05_Mcp/`                              | 20+ MCPs configurados               | ✅                    |
-| 07              | `06_Integrations/`                     | Integraciones externas              | ✅                    |
-| 08              | `07_Hooks/`                            | Hooks del sistema                   | ✅                    |
-| 09              | `08_Plugins/`                          | Plugins                             | ✅                    |
-| 10              | `09_Server/`                           | Servidor backend                    | ✅                    |
-| 11              | `10_Templates/`                        | Plantillas                          | ✅                    |
-| 12              | `00_Comandos_Workflows.md`             | Comandos disponibles                | ✅                    |
-| 13              | `02_Dream_Team.md`                     | Equipo de agentes                   | ✅                    |
-| 14              | `01_Inventario_Total.md`               | Inventario completo                 | ✅                    |
-| 15              | `Requirements.txt`                     | Dependencias Python                 | ✅                    |
+| # | Carpeta | Contenido | Estado |
+|:---:|:--------|:----------|:-------:|
+| 01 | `00_Workflows_Os/` | 25 workflows (5 categorías) | ✅ |
+| 02 | `01_Rules/` | 10 reglas .mdc | ✅ |
+| 03 | `02_Tools/` | Skills, Agents, MCPs, Hooks, Plugins | ✅ |
 
 ---
 
-## 🛠️ Herramientas (Tool_Fixed)
+## 📂 Estructura 02_Tools
 
-| #               | Herramienta                                                 | Función                                          |
-|-----------------|-------------------------------------------------------------|--------------------------------------------------|
-| 01              | **Tool Shed** (62_Tool_Shed.py)                             | Auto-detecta contexto y sugiere MCPs             |
-| 02              | **Skill Harmonizer** (63_Skill_Harmonizer.py)               | Valida paridad de skills (20/20)                 |
-| 03              | **Notifier** (00_Notifier.py)                               | Sonido al completar tareas                       |
-| 04              | **Fast Vision** (60_Fast_Vision.py)                         | Revisión rápida de código                        |
-| 05              | **MCP Health Check** (61_MCP_Health_Check.py)               | Verifica estado de MCPs                          |
-| 06              | **Repair Corruption** (39_Repair_Corruption.py)             | Repara archivos corruptos                        |
-
----
-
-## ✅ Scripts (Ritual_Fixed) — Todos Funcionando
-
-| #               | Script                                  | Función                              |
-|-----------------|-----------------------------------------|--------------------------------------|
-| 01              | 08_Ritual_Cierre.py                     | Cierre de sesión                     |
-| 02              | 09_Backlog_Triage.py                    | Procesamiento de backlog             |
-| 03              | 11_Sync_Notes.py                        | Sincronización de notas              |
-| 04              | 12_Update_Links.py                      | Actualización de enlaces             |
-| 05              | 13_Validate_Stack.py                    | Validación del stack                 |
-| 06              | 14_Morning_Standup.py                   | Daily standup                        |
-| 07              | 15_Weekly_Review.py                     | Revisión semanal                     |
-| 08              | 16_Clean_System.py                      | Limpieza del sistema                 |
-| 09              | 17_Ritual_Dominical.py                  | Ritual dominical                     |
-| 10              | 19_Generate_Progress.py                 | Generación de progreso               |
-| 11              | 50_System_Health_Monitor.py             | Monitor de salud                     |
-| 12              | 57_Repo_Sync_Auditor.py                 | Auditor de sync                      |
+| # | Carpeta | Contenido | Estado |
+|:---:|:--------|:----------|:-------:|
+| 01 | `01_Agents/` | 35+ agents | ✅ |
+| 02 | `02_Skills/` | 100+ skills (9 áreas) | ✅ |
+| 03 | `03_Mcp/` | MCP servers | ✅ |
+| 04 | `05_Hooks/` | Hooks de calidad | ✅ |
+| 05 | `06_Plugins/` | Plugins | ✅ |
+| 06 | `07_Server/` | Engram server | ✅ |
+| 07 | `08_Evals/` | Evaluaciones | ✅ |
+| 08 | `09_Templates/` | Plantillas | ✅ |
 
 ---
 
-## 🎯 Componentes Principales
+## 🛠️ Herramientas Principales
 
-### Agentes Configurados (18 total)
-
-| Agente                            | Tipo                 | Propósito                           |
-|-----------------------------------|----------------------|-------------------------------------|
-| `gentleman`                       | Primary              | Mentor Senior Architect             |
-| `dangerous-gentleman`             | All                  | Permisos completos                  |
-| `sdd-orchestrator`                | All                  | SDD orchestrator                    |
-| `sdd-init`                        | Subagent             | Bootstrap SDD                       |
-| `sdd-explore`                     | Subagent             | Explorar código                     |
-| `sdd-propose`                     | Subagent             | Crear propuestas                    |
-| `sdd-spec`                        | Subagent             | Escribir specs                      |
-| `sdd-design`                      | Subagent             | Diseño técnico                      |
-| `sdd-tasks`                       | Subagent             | Descomponer tareas                  |
-| `sdd-apply`                       | Subagent             | Implementar                         |
-| `sdd-verify`                      | Subagent             | Verificar                           |
-| `sdd-archive`                     | Subagent             | Archivar                            |
-| `ce-work`                         | Subagent             | CE: Ejecutar planes                 |
-| `ce-review`                       | Subagent             | CE: Code review                     |
-| `ce-plan`                         | Subagent             | CE: Planificar                      |
-| `ce-ideate`                       | Subagent             | CE: Idear                           |
-| `ce-brainstorm`                   | Subagent             | CE: Brainstorming                   |
-
-### Especialistas (26 en 02_Specialists_Compound)
-
-Code review, arquitectura, seguridad, performance, etc.
-
-| #               | Carpeta                                    | Estado               |
-|-----------------|--------------------------------------------|----------------------|
-| 01              | 00_Compound_Engineering                    | ✅                    |
-| 02              | 00_Personal_Os_Stack                       | ✅                    |
-| 03              | 00_Skill_Auditor                           | ✅                    |
-| 04              | 01_Agent_Teams_Lite                        | ✅                    |
-| 05              | 02_Project_Manager                         | ✅                    |
-| 06              | 03_Product_Manager                         | ✅                    |
-| 07              | 04_Product_Design                          | ✅                    |
-| 08              | 05_Vibe_Coding                             | ✅                    |
-| 09              | 06_Testing                                 | ✅                    |
-| 10              | 07_DevOps                                  | ✅                    |
-| 11              | 08_Personal_Os                             | ✅                    |
-| 12              | 09_Marketing                               | ✅                    |
-| 13              | 10_Backup                                  | 📦                    |
-| 14              | 11_Doc_Processing                          | ✅                    |
-| 15              | 12_N8n                                     | ✅                    |
-| 16              | 13_System_Master                           | ✅                    |
-| 17              | 14_Anthropic_Harness                       | ✅                    |
-| 18              | 15_Skill_Creator_Oficial                   | ✅                    |
-| 19              | 16_Silicon_Valley_Data_Analyst             | ✅                    |
-| 20              | 17_SEO_SOTA_Master                         | ✅                    |
-| 21              | 18_Personal_Life_OS                        | ✅                    |
-| 22              | 19_Video_Intel                             | ✅                    |
-| 23              | 20_James_Cameron                           | ✅ 🆕                  |
-| 24              | 21_Skill_Template                          | ✅                    |
-
-### Workflows (26+ archivos)
-
-Iron Man Gen, Spider Brainstorm, Professor X Plan, Thor Work, Hulk Compound, Morning Standup, Weekly Review, Backlog Processing, Content Generation, etc.
+| # | Herramienta | Función |
+|:---:|:-----------|:--------|
+| 01 | **Tool Shed** | Auto-detecta contexto y sugiere MCPs |
+| 02 | **Skill Harmonizer** | Valida paridad de skills |
+| 03 | **Notifier** | Sonido al completar tareas |
+| 04 | **Fast Vision** | Revisión rápida de código |
+| 05 | **MCP Health Check** | Verifica estado de MCPs |
+| 06 | **Repair Corruption** | Repara archivos corruptos |
 
 ---
 
-## 🔧 Configuración
+## 📋 Workflows (25 en 5 categorías)
 
-### OpenCode
-
-```bash
-# Ubicación del config
-01_Core/05_Mcp/opencode.json
-```
-
-### Ejecución MCP Server
-
-```bash
-# Servidor principal
-python 01_Core/05_Mcp/server.py
-
-# Servidor alternativo
-python 01_Core/09_Server/mcp/Server.py
-```
+| Categoría | Workflows | Propósito |
+|:---------|:---------:|:----------|
+| 01_Personal_Os | 11 | Rituales core (Morning, Backlog, Weekly) |
+| 02_Marvel | 8 | Avengers workflows |
+| 03_Gentleman | 2 | UX Premium + Docs |
+| 04_Hillary | 2 | Life OS |
+| 05_Compound_Engineering | 4 | Deep Work, Ship It |
 
 ---
 
-## 📚 Documentación
+## 📋 Rules (10 archivos .mdc)
 
-- [Rules Index](./01_Rules/RULES_INDEX.md) — 23 reglas del sistema
-- [Dream Team](./02_Dream_Team.md) — Equipo de agentes
-- [Comandos y Workflows](./00_Comandos_Workflows.md) — Scripts y herramientas
-- [Agents README](./04_Agents/README.md) — Todos los agentes
-- [Integrations README](./06_Integrations/README.md) — Integraciones
-- [Workflows README](./00_Workflows/README.md) — 26+ workflows
-
----
-
-## 🔄 Actualización Reciente (2026-04-14)
-
-- ✅ Normalización de casing en Skills (Mcp, Typescript, N8n)
-- ✅ Reparación de Scripts de Auditoría (33, 34)
-- ✅ Plantilla de seguridad .mcp.json.template integrada en 05_Mcp/
-- ✅ 24 carpetas de skills verificadas (SOTA)
-- ✅ Engram memory activo y sincronizado
+| # | Rule | Propósito |
+|:---:|:-----|:----------|
+| 00 | Core_Protocol.mdc | Protocolo central |
+| 01 | Pilares_Sistema.mdc | 4 pilares OS |
+| 02 | Motor_Agent.mdc | Motor agentic |
+| 03 | Protocolos_Ejecucion.mdc | Execution protocols |
+| 04 | Observabilidad.mdc | Logging y metrics |
+| 05 | Reporting.mdc | Reporting rules |
+| 06 | Contexto_Gestion.mdc | Context management |
+| 07 | Docs_Guias.mdc | Documentation |
+| 08 | Token_Economy.mdc | Token optimization |
+| 09 | Agent_Teams_Protocol.mdc | Multi-agent protocol |
 
 ---
 
-## 💾 .agent — BACKUP ESTRATÉGICO
+## 📋 Skills (100+ en 9 áreas)
 
-> **.agent/** es el backup de 01_Core/. La fuente de verdad es **01_Core/**.
-
-| Contenido                          | Sincronizado desde                  |
-|------------------------------------|-------------------------------------|
-| `.agent/00_Rules/`                 | `01_Core/01_Rules/`                 |
-| `.agent/01_Agents/`                | `01_Core/04_Agents/`                |
-| `.agent/02_Skills/`                | `01_Core/03_Skills/`                |
-| `.agent/03_Workflows/`             | `01_Core/00_Workflows/`             |
-
-**Última sincronización:** 2026-03-29
+| Área | Skills | Propósito |
+|:-----|:------:|:----------|
+| 00_Compound_Engineering | 1+ | SDD + Reviews |
+| 01_Creacion_Contenidos | 7 | Marketing, SEO |
+| 02_Diseno_Ui_Ux | 3 | Design, Taste |
+| 03_Video_Media | 1 | James Cameron |
+| 04_Automatizacion | 4 | N8N, GWS |
+| 05_Workflows | 2 | Teams, PM |
+| 06_Tools | 1 | MCP Client |
+| 07_Personal_Os | 1 | Life OS |
+| 08_Invictus_Web | 1 | Superpowers |
 
 ---
 
-*Think Different PersonalOS v6.1 — Conectado y operando*
+## 📋 Agents (35+)
+
+| Categoría | Cantidad | Ubicación |
+|:---------|:--------:|:----------|
+| Dream Team | 5 | `01_Agents/01_Dream_Team/` |
+| Specialists Compound | 23 | `01_Agents/02_Specialists_Compound/` |
+| Individuals | 10+ | `01_Agents/` |
+
+---
+
+## 📋 MCPs
+
+| Categoría | Cantidad | Ejemplos |
+|:---------|:--------:|:--------|
+| Knowledge | 5 | context7, memories |
+| Dev | 8 | github, gitlab, filesystem |
+| Scraping | 3 | firecrawl, puppeteer |
+| Notes | 3 | evernote, onenote |
+| Productivity | 4 | slack, linear |
+| Media | 3 | image generation, video |
+| Data | 2 | postgres, mysql |
+| Security | 2 | stealth-dev, vault |
+| Testing | 1 | playwright-mcp |
+| Tools | 2 | magicui-design |
+
+**Total: 33 servers**
+
+---
+
+## 📋 HUBs (Scripts)
+
+| # | HUB | Función |
+|:---:|:---|:--------|
+| 00 | Sound_Engine.py | Sound notifications |
+| 01 | Auditor_Hub.py | Audit orchestration |
+| 02 | Git_Hub.py | Git operations |
+| 03 | AIPM_Hub.py | AI PM operations |
+| 04 | Ritual_Hub.py | Rituals execution |
+| 05 | Validator_Hub.py | Validation orchestration |
+| 06 | Tool_Hub.py | Tool management |
+| 07 | Integration_Hub.py | Integration management |
+| 08 | Workflow_Hub.py | Workflow execution |
+| 09 | Data_Hub.py | Data operations |
+| 10 | General_Hub.py | General utilities |
+| 11 | Auto_Learn_Hub.py | Auto-learning |
+
+---
+
+## 📂 Documentos Clave
+
+| Documento | Ubicación |
+|:----------|:----------|
+| Dream Team | `02_Dream_Team.md` |
+| Inventario Total | `01_Inventario_Total.md` |
+| Inventario Core | `INVENTARIO_CORE.md` |
+| Workflows | `00_Workflows_Os/README.md` |
+
+---
+
+**PersonalOS v2.0 Consequences — 2026-04-24**

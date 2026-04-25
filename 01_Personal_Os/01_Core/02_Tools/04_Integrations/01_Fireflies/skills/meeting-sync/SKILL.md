@@ -19,4 +19,4 @@ Para cada reunión encontrada:
 3. Si es relevante, llamar a `sync_meeting_to_local`.
 
 ### Step 3: Integración en Morning Planning
-Este proceso debe ser invocado por el script de `08_Scripts_Os/14_Morning_Standup.py`.
+Este proceso debe ser invocado por el script de `01_Personal_Os/04_Operations/03_Scripts_Os/14_Morning_Standup.py`.

@@ -17,15 +17,15 @@ El usuario quiere investigar y pensar a través de la creación de una skill "Vi
 
 ### Estructura de Skills en PersonalOS
 
-- **Ubicación**: `01_Core/03_Skills/` (numeradas 00-18)
-- **Template**: `01_Core/03_Skills/SKILL_TEMPLATE/SKILL.md`
+- **Ubicación**: `01_Personal_Os/01_Core/02_Tools/02_Skills/` (numeradas 00-18)
+- **Template**: `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/`
 - **Patrón de nomenclatura**: `XX_Nombre_Skill/SKILL.md`
 
 ## Affected Areas
 
 | Archivo/Directorio             | Por qué se afecta                   |
 |--------------------------------|-------------------------------------|
-| `01_Core/03_Skills/`           | Nueva skill agregado                |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/`           | Nueva skill agregado                |
 | `01_Core/05_Mcp/`              | Potencial integración MCP           |
 | `01_Core/09_Server/`           | Backend para análisis               |
 | `.agent/02_Skills/`            | Registro de skills                  |
@@ -125,7 +125,7 @@ Crear `/sdd-propose video-intel-skill` con:
 - Propósito claro: "Skill para extraer y analizar transcripts de YouTube"
 - Scope: MVP focalizado en YouTube transcript extraction
 - Approach: Script Python + skill wrapper
-- Integración: `01_Core/03_Skills/19_Video_Intel/`
+- Integración: `01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/01_Video_Intel/`
 
 ---
 

@@ -25,7 +25,7 @@ description: QUÉ HACE: Distribuye y supervisa el trabajo de múltiples agentes 
 
 ## Overview
 
-This skill ALWAYS activates when distributing work across multiple agents. It uses `01_Core/03_Skills/fork-terminal/tools/fork_terminal.py` to launch visible CMD terminals for each agent, allowing real-time monitoring and generating comprehensive reports.
+This skill ALWAYS activates when distributing work across multiple agents. It uses `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/tools/fork_terminal.py` to launch visible CMD terminals for each agent, allowing real-time monitoring and generating comprehensive reports.
 
 **Core Principle:** Visible execution + Consolidated reporting
 
@@ -41,11 +41,11 @@ ALWAYS use this when:
 
 ## Skill Priority
 
-**CRITICAL:** Always read from `01_Core/03_Skills/` FIRST, then `07_Skill/` as fallback.
+**CRITICAL:** Always read from `01_Personal_Os/01_Core/02_Tools/02_Skills/` FIRST, then `07_Skill/` as fallback.
 
 Priority order:
 
-1. `01_Core/03_Skills/` (Primary - user's custom skills)
+1. `01_Personal_Os/01_Core/02_Tools/02_Skills/` (Primary - user's custom skills)
 2. `07_Skill/` (Secondary - standard skills)
 
 ## The Pattern
@@ -64,7 +64,7 @@ Break work into parallel streams with no shared state:
 For each independent task:
 
 ```bash
-python "01_Core/03_Skills/fork-terminal/tools/fork_terminal.py" "
+python "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/tools/fork_terminal.py" "
   echo === AGENT N: TASK NAME === &&
   cd <working_directory> &&
   <commands> &&
@@ -122,7 +122,7 @@ After all agents execute, create `MULTI_AGENT_<TASK>_REPORT.md`:
 Open final terminal showing the consolidated report:
 
 ```bash
-python "01_Core/03_Skills/fork-terminal/tools/fork_terminal.py" "
+python "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/tools/fork_terminal.py" "
   cat <REPORT_FILE> &&
   pause
 "
@@ -132,31 +132,31 @@ python "01_Core/03_Skills/fork-terminal/tools/fork_terminal.py" "
 
 ```bash
 # Agent 1: Structure validation
-python "01_Core/03_Skills/fork-terminal/tools/fork_terminal.py" "
+python "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/tools/fork_terminal.py" "
   echo === AGENT 1: SKILL STRUCTURE === &&
-  cd 01_Core/03_Skills &&
+  cd 01_Personal_Os/01_Core/02_Tools/02_Skills/ &&
   bash validate-skills.sh &&
   pause
 "
 
 # Agent 2: Documentation check
-python "01_Core/03_Skills/fork-terminal/tools/fork_terminal.py" "
+python "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/tools/fork_terminal.py" "
   echo === AGENT 2: DOCUMENTATION === &&
-  cd 01_Core/03_Skills &&
+  cd 01_Personal_Os/01_Core/02_Tools/02_Skills/ &&
   ls -lh *.md &&
   pause
 "
 
 # Agent 3: Resources validation
-python "01_Core/03_Skills/fork-terminal/tools/fork_terminal.py" "
+python "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/tools/fork_terminal.py" "
   echo === AGENT 3: RESOURCES === &&
-  find 01_Core/03_Skills -name 'resources' -type d &&
+  find 01_Personal_Os/01_Core/02_Tools/02_Skills/ -name 'resources' -type d &&
   pause
 "
 
 # Final: Generate and show report
 # [Create MULTI_AGENT_VALIDATION_REPORT.md]
-python "01_Core/03_Skills/fork-terminal/tools/fork_terminal.py" "
+python "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/tools/fork_terminal.py" "
   cat MULTI_AGENT_VALIDATION_REPORT.md &&
   pause
 "
@@ -241,7 +241,7 @@ Use this skill in combination with:
 **CRITICAL:** When searching for skills or resources:
 
 ```
-1. Check 01_Core/03_Skills/<skill-name>/ FIRST
+1. Check 01_Personal_Os/01_Core/02_Tools/02_Skills/<skill-name>/ FIRST
 2. If not found, check 07_Skill/<skill-name>/
 3. If not found in either, notify user
 ```

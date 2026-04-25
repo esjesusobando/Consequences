@@ -13,7 +13,7 @@
 ## 📁 Estructura de Archivos
 
 ```
-01_Core/03_Skills/fork-terminal/
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/
 │
 ├── 📄 SKILL.md                    ⭐ Definición principal del skill
 ├── 📄 EXECUTIVE_REPORT.md         📊 Reporte ejecutivo completo

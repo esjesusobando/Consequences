@@ -25,16 +25,16 @@ Esta Skill permite realizar extracciones masivas de información de directorios 
 
 ```bash
 # Uso básico - directorio actual
-python 08_Scripts_Os/84_Batch_Parser.py <directorio>
+python 01_Personal_Os/04_Operations/03_Scripts_Os/84_Batch_Parser.py <directorio>
 
 # Con recursividad
-python 08_Scripts_Os/84_Batch_Parser.py <directorio> --recursive
+python 01_Personal_Os/04_Operations/03_Scripts_Os/84_Batch_Parser.py <directorio> --recursive
 
 # Con output específico
-python 08_Scripts_Os/84_Batch_Parser.py <directorio> -o reporte.md
+python 01_Personal_Os/04_Operations/03_Scripts_Os/84_Batch_Parser.py <directorio> -o reporte.md
 
 # Ejemplo completo
-python 08_Scripts_Os/84_Batch_Parser.py ./docs --recursive -o mi_reporte.md
+python 01_Personal_Os/04_Operations/03_Scripts_Os/84_Batch_Parser.py ./docs --recursive -o mi_reporte.md
 ```
 
 ## 🤝 Integración con el Sistema

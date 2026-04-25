@@ -31,7 +31,7 @@ Usar `fork_terminal` para lanzar el agente de marketing.
 **Sintaxis:**
 
 ```bash
-python 01_Core/03_Skills/fork-terminal/tools/fork_terminal.py "python 01_Core/03_Skills/fork-terminal/examples/marketing_agent_demo.py"
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/tools/fork_terminal.py "python 01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/examples/marketing_agent_demo.py"
 ```
 
 ### 3. Ejemplo de Prompt para el Usuario
