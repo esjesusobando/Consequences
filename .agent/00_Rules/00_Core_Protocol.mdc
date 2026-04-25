@@ -26,7 +26,7 @@ Think_Different/
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
 ├── 07_Projects/        
-├── 08_Scripts_Os/       # Scripts operativos
+├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
 └── Maerks/             
 ```
 
@@ -121,7 +121,7 @@ Antes de terminar sesión, DEBE llamar `mem_session_summary`:
 ```
 ROOT_DIR          → Raíz del proyecto
 CORE_DIR         → 01_Core
-SKILLS_DIR       → 01_Core/03_Skills
+SKILLS_DIR       → 01_Personal_Os/01_Core/02_Tools/02_Skills
 RULES_DIR        → 01_Core/01_Rules
 MCP_DIR          → 01_Core/05_Mcp
 AGENTS_DIR       → 01_Core/04_Agents

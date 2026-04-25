@@ -131,6 +131,39 @@ class Learner:
 
         return 0.5  # Default
 
+    def learn_from_cycle(self, cycle_data: Dict) -> List[Dict]:
+        """Procesa los resultados de un ciclo completo y devuelve lista de aprendizajes."""
+        learnings = []
+
+        for fix in cycle_data.get("fixed", []):
+            issue = fix if isinstance(fix, dict) else {}
+            self.record_fix(issue, success=True, method="auto")
+            learnings.append({"type": "fix_recorded", "issue": issue})
+
+        stats = self.get_stats()
+        learnings.append({"type": "cycle_stats", "stats": stats})
+        return learnings
+
+    def load_and_analyze_history(self) -> List[Dict]:
+        """Carga historial y retorna análisis de patrones."""
+        return [
+            {"pattern": p, "type": "pattern"} for p in self.learnings.get("patterns", [])
+        ] + [
+            {"record": r, "type": "fix_history"} for r in self.learnings.get("fixes_history", [])[-10:]
+        ]
+
+    def evolve_rules(self, learnings: List[Dict]) -> List[str]:
+        """Genera sugerencias de evolución basadas en patrones aprendidos."""
+        suggestions = []
+        patterns = self.learnings.get("patterns", [])
+        for pattern in patterns:
+            if pattern.get("times_applied", 0) > 2:
+                suggestions.append(
+                    f"Patrón frecuente [{pattern.get('severity')}/{pattern.get('category')}]"
+                    f" → considerar regla automática ({pattern.get('times_applied')} ocurrencias)"
+                )
+        return suggestions
+
     def get_stats(self) -> Dict:
         """Obtiene estadísticas de aprendizaje"""
         total_fixes = len(self.learnings["fixes_history"])

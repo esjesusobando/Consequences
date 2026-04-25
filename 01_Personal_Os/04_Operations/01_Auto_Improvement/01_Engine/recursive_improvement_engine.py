@@ -61,7 +61,7 @@ class RecursiveImprovementEngine:
 
         # Components
         self.detector = Detector(self.project_root)
-        self.analyzer = Analyzer(self.project_root)
+        self.analyzer = Analyzer()
         self.executor = Executor(self.project_root, dry_run)
         self.learner = Learner(self.auto_improve_dir)
 
@@ -75,33 +75,50 @@ class RecursiveImprovementEngine:
         print(f"   Project: {self.project_root.name}")
         print(f"   Mode: {'DRY RUN' if dry_run else 'APPLY'}")
 
+    def _issues_to_dicts(self, issues):
+        """Convierte Issue dataclasses a dicts para el Analyzer."""
+        result = []
+        for iss in issues:
+            if hasattr(iss, "__dict__"):
+                result.append(iss.__dict__)
+            elif isinstance(iss, dict):
+                result.append(iss)
+        return result
+
     def run_quick_scan(self):
         """Scan rápido - detección de issues críticos"""
         print("\n" + "=" * 60)
         print("🔍 QUICK SCAN - Detección de issues críticos")
         print("=" * 60)
 
-        # Phase 1: Detect
-        self.issues_detected = self.detector.scan_critical()
+        # Phase 1: Detect — scan() y filtrar críticos/altos
+        all_issues = self.detector.scan()
+        self.issues_detected = [
+            i for i in all_issues
+            if getattr(i, "severity", i.get("severity", "LOW") if isinstance(i, dict) else "LOW")
+            in ("CRITICAL", "HIGH")
+        ]
 
         print(f"\n✅ Detectados {len(self.issues_detected)} issues críticos")
 
-        # Phase 2: Quick analyze
-        for issue in self.issues_detected[:5]:  # Solo top 5
-            analysis = self.analyzer.quick_analyze(issue)
-            self.issues_analyzed.append(analysis)
+        # Phase 2: Quick analyze — batch call con top 5
+        top5 = self.issues_detected[:5]
+        if top5:
+            self.issues_analyzed = self.analyzer.analyze(self._issues_to_dicts(top5))
 
         # Phase 3: Auto-fix si es posible
         if not self.dry_run:
             for analysis in self.issues_analyzed:
-                if analysis.get("auto_fixable") and analysis.get("tier") == 1:
-                    result = self.executor.apply_fix(analysis)
+                auto_fix = getattr(analysis, "auto_fixable", False) if hasattr(analysis, "auto_fixable") else analysis.get("auto_fixable", False)
+                if auto_fix:
+                    issue_dict = analysis.__dict__ if hasattr(analysis, "__dict__") else analysis
+                    result = self.executor.apply_fix(issue_dict)
                     self.fixes_applied.append(result)
 
         # Phase 4: Learn
         self.learnings = self.learner.learn_from_cycle(
             {
-                "issues": self.issues_detected,
+                "issues": self._issues_to_dicts(self.issues_detected),
                 "analyzed": self.issues_analyzed,
                 "fixed": self.fixes_applied,
             }
@@ -117,21 +134,22 @@ class RecursiveImprovementEngine:
 
         # Phase 1: Detect
         print("\n📡 Phase 1: DETECT")
-        self.issues_detected = self.detector.scan_all()
+        self.issues_detected = self.detector.scan()
         print(f"   → {len(self.issues_detected)} issues detectados")
 
-        # Phase 2: Analyze
+        # Phase 2: Analyze — batch call
         print("\n📊 Phase 2: ANALYZE")
-        for issue in self.issues_detected:
-            analysis = self.analyzer.analyze(issue)
-            self.issues_analyzed.append(analysis)
+        if self.issues_detected:
+            self.issues_analyzed = self.analyzer.analyze(self._issues_to_dicts(self.issues_detected))
         print(f"   → {len(self.issues_analyzed)} issues analizados")
 
         # Phase 3: Execute
         print("\n⚡ Phase 3: EXECUTE")
         for analysis in self.issues_analyzed:
-            if analysis.get("should_fix"):
-                result = self.executor.apply_fix(analysis)
+            should_fix = getattr(analysis, "auto_fixable", False) if hasattr(analysis, "auto_fixable") else analysis.get("should_fix", False)
+            if should_fix and not self.dry_run:
+                issue_dict = analysis.__dict__ if hasattr(analysis, "__dict__") else analysis
+                result = self.executor.apply_fix(issue_dict)
                 self.fixes_applied.append(result)
         print(f"   → {len(self.fixes_applied)} fixes aplicados")
 
@@ -164,6 +182,14 @@ class RecursiveImprovementEngine:
 
         return {"learnings": self.learnings, "suggestions": suggestions}
 
+    def _to_serializable(self, obj):
+        """Convierte dataclasses e Issue objects a dicts JSON-serializable."""
+        if isinstance(obj, list):
+            return [self._to_serializable(i) for i in obj]
+        if hasattr(obj, "__dict__"):
+            return {k: self._to_serializable(v) for k, v in obj.__dict__.items()}
+        return obj
+
     def _generate_report(self):
         """Generar reporte del ciclo"""
         report = {
@@ -172,12 +198,12 @@ class RecursiveImprovementEngine:
             "issues_detected": len(self.issues_detected),
             "issues_analyzed": len(self.issues_analyzed),
             "fixes_applied": len(self.fixes_applied),
-            "learnings": self.learnings,
+            "learnings": self._to_serializable(self.learnings),
             "details": {
-                "issues": self.issues_detected,
-                "analyzed": self.issues_analyzed,
-                "fixed": self.fixes_applied,
-                "learnings": self.learnings,
+                "issues": self._to_serializable(self.issues_detected),
+                "analyzed": self._to_serializable(self.issues_analyzed),
+                "fixed": self._to_serializable(self.fixes_applied),
+                "learnings": self._to_serializable(self.learnings),
             },
         }
 
@@ -193,8 +219,11 @@ class RecursiveImprovementEngine:
 
         # Load existing
         if metrics_file.exists():
-            with open(metrics_file) as f:
-                metrics = json.load(f)
+            with open(metrics_file, encoding="utf-8") as f:
+                try:
+                    metrics = json.load(f)
+                except json.JSONDecodeError:
+                    metrics = {"cycles": []}
         else:
             metrics = {"cycles": []}
 
@@ -202,7 +231,7 @@ class RecursiveImprovementEngine:
         metrics["cycles"].append(report)
 
         # Save
-        with open(metrics_file, "w") as f:
+        with open(metrics_file, "w", encoding="utf-8") as f:
             json.dump(metrics, f, indent=2)
 
         print(f"\n[METRICS] Metricas guardadas en {metrics_file.name}")
