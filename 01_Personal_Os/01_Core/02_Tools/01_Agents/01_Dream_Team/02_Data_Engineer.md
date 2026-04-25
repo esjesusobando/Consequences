@@ -158,7 +158,7 @@ Este perfil construye pipelines de datos confiables: desde extracción hasta vis
 - `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/02_N8N_Python/` — Pipelines Python
 - `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/04_DevOps/02_Supabase_Integration/` — Database
 - `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/06_Testing/` — CSV Processing
-- `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/01_Analytics_Workflow/` — Analytics
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/12_Health_Data_Analyst/` — Analytics
 
 ### Specialists
 - `01_Core/04_Agents/02_Specialists_Compound/Data-Migration-Expert.md`
