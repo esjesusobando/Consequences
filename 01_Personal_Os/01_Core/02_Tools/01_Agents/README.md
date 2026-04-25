@@ -7,25 +7,34 @@ Este directorio contiene los agentes especializados del sistema Think Different 
 ## 📂 Estructura del Directorio
 
 ```
-01_Core/04_Agents/
-├── 00_Orchestrator.md          # Hub de Orquestación
-├── 01_Dream_Team/              # Marketing, Data, Platform
-├── 02_Specialists_Compound/    # Revisión y Arquitectura
-├── 03_Growth/                  # Carousel Strategist & Growth
-├── 01_Scope_Rule_Architect.md  # #01 Architect
-├── 02_TDD_Test_First.md        # #02 Tests (RED)
-├── 04_React_Mentor.md          # #04 Optimization
-├── 05_Security_Auditor.md      # #05 Safety Hub
-├── 06_Git_Workflow_Manager.md  # #06 PR/Git
-├── 07_Accessibility_Auditor.md  # #07 WCAG
-├── 08_PRD_Dashboard_Template.md # #08 Product
-├── 09_Design_SOP_Document.md    # #09 Layout
-├── 10_Workflow_Orchestrator.md  # #10 TDD Engine
-├── 11_AIPM_Judge.md            # #11 Evaluation
-├── 12_LFG_Autonomous_Engine.md  # #12 Autonomy
-├── 13_Hillary.md               # #13 Life OS
-├── 03_React_Test_Implementer.md # #14 Código (GREEN)
-└── README.md                   # Catálogo Maestro
+01_Personal_Os/01_Core/02_Tools/01_Agents/
+├── 00_Orchestrator.md              # Hub de Orquestación
+├── 01_Scope_Rule_Architect.md      # #01 Architect
+├── 02_TDD_Test_First.md            # #02 Tests (RED)
+├── 03_React_Test_Implementer.md    # #03 Código (GREEN)
+├── 04_React_Mentor.md              # #04 Optimization
+├── 05_Security_Auditor.md          # #05 Safety Hub
+├── 06_Git_Workflow_Manager.md      # #06 PR/Git
+├── 07_Accessibility_Auditor.md     # #07 WCAG
+├── 08_PRD_Dashboard_Template.md    # #08 Product
+├── 09_Design_SOP_Document.md       # #09 Layout
+├── 10_Workflow_Orchestrator.md     # #10 TDD Engine
+├── 11_AIPM_Judge.md                # #11 Evaluation
+├── 12_LFG_Autonomous_Engine.md     # #12 Autonomy
+├── 13_Hillary.md                   # #13 Life OS Specialist
+├── 01_Dream_Team/                  # Marketing, Data, Platform
+├── 02_Specialists_Compound/        # Revisión y Arquitectura
+├── 03_Growth/                      # Content + YouTube + Carousel
+│   ├── 01_Content_Transformer.md
+│   ├── 02_Youtube_Script_Writer.md
+│   ├── 03_Youtube_Thumbnail_Prompter.md
+│   ├── 04_Youtube_Title_Generator.md
+│   └── 05_Carousel_Strategist.md
+├── 04_Contexto/                    # Plantillas de contexto
+├── 05_Marca/                       # Brand assets
+├── 06_Plantillas/                  # Templates generales
+├── __Agent_Template.md             # Template base
+└── README.md                       # Este archivo (catálogo maestro)
 ```
 
 ---

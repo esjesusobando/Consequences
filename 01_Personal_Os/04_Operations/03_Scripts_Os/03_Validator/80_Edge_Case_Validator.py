@@ -16,8 +16,19 @@ from pathlib import Path
 from typing import Any, Callable, TypeVar
 from enum import Enum
 
-sys.path.insert(0, str(Path(__file__).parent))
-from config_paths import PROJECT_ROOT, ENGINE_DIR
+# Path resolution con fallback robusto (v2.0 Consequences)
+# Script en: ROOT/01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/
+_SCRIPT_DIR = Path(__file__).parent.resolve()
+_SCRIPTS_OS = _SCRIPT_DIR.parent  # 03_Scripts_Os/
+sys.path.insert(0, str(_SCRIPT_DIR))
+sys.path.insert(0, str(_SCRIPTS_OS))
+
+try:
+    from config_paths import PROJECT_ROOT, ENGINE_DIR
+except ImportError:
+    # Fallback si config_paths no está en sys.path
+    PROJECT_ROOT = _SCRIPTS_OS.parent.parent.parent  # ROOT
+    ENGINE_DIR = _SCRIPTS_OS
 
 # REQUIRED_DIRS - v2.0 Consequences structure
 REQUIRED_DIRS = [

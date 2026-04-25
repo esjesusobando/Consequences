@@ -220,7 +220,8 @@ def t06_auditor_hub():
         # Auditor Hub usa subcomandos: estructura, links, skills, health, profundo
         result = subprocess.run(
             [sys.executable, str(script), "health"],
-            capture_output=True, text=True, timeout=30, cwd=str(ROOT)
+            capture_output=True, text=True, timeout=30, cwd=str(ROOT),
+            encoding="utf-8", errors="replace"
         )
         if result.returncode not in (0, 1):
             return TestResult("T06", "Auditor Hub — health check", False,
@@ -242,7 +243,8 @@ def t07_edge_case_validator():
     try:
         result = subprocess.run(
             [sys.executable, str(script)],
-            capture_output=True, text=True, timeout=30, cwd=str(ROOT)
+            capture_output=True, text=True, timeout=30, cwd=str(ROOT),
+            encoding="utf-8", errors="replace"
         )
         if result.returncode not in (0, 1):
             return TestResult("T07", "Edge Case Validator — ejecución", False,
@@ -266,7 +268,8 @@ def t08_sota_integrity():
     try:
         result = subprocess.run(
             [sys.executable, str(script)],
-            capture_output=True, text=True, timeout=30, cwd=str(ROOT)
+            capture_output=True, text=True, timeout=30, cwd=str(ROOT),
+            encoding="utf-8", errors="replace"
         )
         output = result.stdout + result.stderr
         passed = "PASSED" in output or result.returncode == 0

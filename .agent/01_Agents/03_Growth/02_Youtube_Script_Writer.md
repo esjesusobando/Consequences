@@ -1,4 +1,4 @@
-# 14_Youtube_Script_Writer
+# 02_Youtube_Script_Writer
 
 > Escribe guiones de video para YouTube optimizados para retención.
 

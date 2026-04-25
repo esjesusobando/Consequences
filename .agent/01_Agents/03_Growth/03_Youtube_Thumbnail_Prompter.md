@@ -1,4 +1,4 @@
-# 15_Youtube_Thumbnail_Prompter
+# 03_Youtube_Thumbnail_Prompter
 
 > Genera prompts optimizados para crear miniaturas de YouTube con AI.
 
