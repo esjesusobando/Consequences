@@ -2,11 +2,17 @@
 import sys
 from pathlib import Path
 
-# === PROTOCOLO DE RUTA DINÁMICA (v6.1) ===
-_current = Path(__file__).resolve()
-_root = next((p for p in _current.parents if (p / "01_Core").exists()), None)
-if _root:
-    sys.path.insert(0, str(_root / "08_Scripts_Os"))
+# === PROTOCOLO DE RUTA v2.0 Consequences ===
+import sys
+from pathlib import Path
+
+SCRIPT_DIR = Path(__file__).parent.resolve()
+SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
+OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
+PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+ROOT = PERSONAL_OS.parent  # Project root
+
+sys.path.insert(0, str(SCRIPTS_OS))
 from config_paths import *
 
 """
@@ -16,7 +22,8 @@ Verifica estado de MCPs configurados
 Ejecuta checks en los MCPs del archivo .mcp.json
 
 Uso:
-  python 04_Engine/08_Scripts_Os/61_MCP_Health_Check.py
+  python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Otros/61_MCP_Health_Check.py
+  python 01_Personal_Os/04_Operations/03_Scripts_Os/61_MCP_Health_Check.py
 """
 
 import json

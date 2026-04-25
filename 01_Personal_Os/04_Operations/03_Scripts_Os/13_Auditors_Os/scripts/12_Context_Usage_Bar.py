@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Context Usage Progress Bar - OpenCode Integration
-=================================================
+================================================
 Muestra uso de contexto con barra de progreso bloque de 10 caracteres.
 Escala: 80% real = 100% (threshold de compaction de Claude)
 
@@ -15,13 +15,23 @@ Formato: model_name | folder_name | ██████░░░ | 100%
 """
 
 import sys
+import io
 from pathlib import Path
 
-# === PROTOCOLO DE RUTA DINÁMICA (v6.1) ===
-_current = Path(__file__).resolve()
-_root = next((p for p in _current.parents if (p / "01_Core").exists()), None)
-if _root:
-    sys.path.insert(0, str(_root / "08_Scripts_Os"))
+# === PROTOCOLO DE RUTA v2.0 Consequences ===
+# Script: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/
+# → scripts/ → 13_Auditors_Os/ → 03_Scripts_Os/ → 04_Operations/ → 01_Personal_Os/ → ROOT
+SCRIPT_DIR = Path(__file__).parent.resolve()
+SCRIPTS_OS = SCRIPT_DIR.parent.parent  # 03_Scripts_Os
+OPERATIONS = SCRIPTS_OS.parent          # 04_Operations
+PERSONAL_OS = OPERATIONS.parent         # 01_Personal_Os
+ROOT = PERSONAL_OS.parent               # Project root
+
+# Fix encoding for Windows
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+
+# Add Scripts_Os to path for config_paths
+sys.path.insert(0, str(SCRIPTS_OS))
 from config_paths import *
 
 import math

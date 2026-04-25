@@ -112,3 +112,63 @@ status: {active|deprecated}
 ---
 
 *Unicorn Engineering - Conocimiento nivel Silicon Valley*
+
+---
+
+## 🔄 Fase 5 — Sistema Auto-Mantenerse
+
+### Objetivo
+El conocimiento se actualiza automáticamente sin intervención manual.
+
+### Componente 1: Engram Auto-Save Hook
+
+**Trigger:** Cuando se guarda en Engram con `topic_key: unicorn/{area}`, automáticamente escribir a carpeta correspondiente.
+
+```python
+# Engram auto-save hook
+# Topic keys:
+# - unicorn/pm → 01_Pm/decisions/ | 01_Pm/lessons/ | 01_Pm/patterns/
+# - unicorn/pdm → 02_Pdm/decisions/ | 02_Pdm/patterns/
+# - unicorn/design → 03_Product_Design/decisions/ | 03_Product_Design/patterns/
+# - unicorn/art → 04_Art_Director/decisions/ | 04_Art_Director/patterns/
+# - unicorn/aipm → 05_Aipm/decisions/ | 05_Aipm/lessons/ | 05_Aipm/patterns/
+# - unicorn/engineering → 06_Engineering/decisions/ | 06_Engineering/learnings/ | 06_Engineering/patterns/
+```
+
+### Componente 2: Context Injection en CLAUDE.md
+
+```markdown
+## Unicorn Knowledge Base
+
+Cuando trabaje en un área específica, inyectar contexto de:
+- 01_Personal_Os/02_Knowledge/06_Unicorn/{area}/patterns/
+- 01_Personal_Os/02_Knowledge/06_Unicorn/{area}/decisions/
+- 01_Personal_Os/02_Knowledge/06_Unicorn/{area}/lessons/
+```
+
+### Componente 3: Deduplicación Automática
+
+**Script:** `07_Invictus/sync_unicorn_knowledge.py`
+- Lee topic_keys de Engram
+- Compara con archivos existentes
+- Marca duplicados con flag `duplicate_of: {id}`
+- Mantiene solo la versión más reciente
+
+### Hook: Session End Auto-Sync
+
+```bash
+# .claude/hooks/session_end.py
+python 07_Invictus/sync_unicorn_knowledge.py --auto-save
+```
+
+---
+
+### ✅ Implementado
+
+- [x] Estructura de carpetas 06_Unicorn/
+- [x] Template estándar por área
+- [x] Metodologías SOTA documentadas
+- [ ] Engram auto-save hook
+- [ ] Context injection en CLAUDE.md
+- [ ] Deduplicación automática
+- [ ] Session end hook

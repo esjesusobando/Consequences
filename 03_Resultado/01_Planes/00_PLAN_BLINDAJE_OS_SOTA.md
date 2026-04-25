@@ -321,3 +321,33 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA
 
 _PersonalOS v2.1 Hardened — Actualizado 2026-04-25_
 _Próximo milestone: FASE 3 P2 (~3h opcional) o Elite Portfolio_
+
+---
+
+## ✅ SESIÓN COMPACTACIÓN 2026-04-25 — FIXES ADICIONALES
+
+### Fix sys.path en legacy health monitor (50_System_Health_Monitor.py) ✅
+**Problema:** Script usaba `sys.path.append(os.path.join("..", ".."))` que desde `10_Legacy/` sube 2 niveles → cae en `04_Operations/` (no `03_Scripts_Os/`), causando que Python encontrará otro `config_paths.py` con paths v1.x.
+
+**Fix:** Cambiar a `sys.path.insert(0, os.path.join(".."))` (solo 1 nivel):
+```python
+# ANTES (bug)
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+
+# DESPUÉS (fix)
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+```
+
+**Archivo:** `01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/50_System_Health_Monitor.py`
+
+### 01_PLAN_VALIDACION_TOTAL_OS.md actualizado ✅
+**Cambios:**
+- Issues A1, A2, A3 marcados como **FIXED** (ya estaban corregidos en v6.2)
+- FASE A marcada como completada
+- Nota de Update 2026-04-25 agregada
+
+### Pendientes de FASE 3:
+- A4: Reports huérfanos en `02_Playground/reports/`
+- A5: `04_Engine` carpetas huérfanas (buscar en disco)
+- A6: Skills auto-loading por contexto
+- A7: skill-registry sync (80+/297)

@@ -15,8 +15,8 @@ except ImportError:
         pass
 
 
-# Add ROOT_DIR to path for imports
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
+# Add ENGINE_DIR to path for imports (v2.0 fix - was going up 2 levels which landed on 04_Operations, not 03_Scripts_Os)
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from config_paths import (
     CORE_DIR,
     BRAIN_DIR,

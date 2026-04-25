@@ -1,8 +1,8 @@
 # PLAN MAESTRO: Unicorn Engineering + Sistema de Conocimiento SOTA
 
-**Versión:** 4.0  
-**Fecha:** 2026-04-03  
-**Estado:** 🚧 En Construcción
+**Versión:** 4.1  
+**Fecha:** 2026-04-25  
+**Estado:** ✅ Fases 1-4 Completadas | Fase 5 Pendiente
 
 ---
 
@@ -23,49 +23,41 @@
 
 ---
 
-## 📁 Estructura de Carpetas
+## 📁 Estructura de Carpetas (v2.0 Consequences)
 
 ```
-02_Knowledge/
-└── 05_Unicorn/
+01_Personal_Os/02_Knowledge/
+└── 06_Unicorn/                    ← v2.0 path (era 02_Knowledge/05_Unicorn/ en v1.x)
     ├── README.md                    ✅ Índice maestro
     ├── 01_Pm/                       ✅ PM
     │   ├── decisions/
+    │   ├── discoveries/
     │   ├── lessons/
-    │   ├── patterns/
-    │   └── workflows/
+    │   └── patterns/
     ├── 02_Pdm/                     ✅ PdM
     │   ├── decisions/
-    │   ├── lessons/
     │   ├── patterns/
-    │   ├── user_research/
-    │   └── metrics/
+    │   └── user_research/
     ├── 03_Product_Design/          ✅ Product Design
     │   ├── decisions/
-    │   ├── lessons/
     │   ├── patterns/
-    │   ├── wireframes/
-    │   ├── user_research/
-    │   └── design_sprints/
+    │   └── wireframes/
     ├── 04_Art_Director/            ✅ Art Director
     │   ├── decisions/
-    │   ├── lessons/
     │   ├── patterns/
-    │   ├── design_system/
-    │   └── branding/
+    │   └── design_system/
     ├── 05_Aipm/                    ✅ AIPM
     │   ├── decisions/
     │   ├── lessons/
+    │   ├── logs/
     │   ├── patterns/
-    │   ├── prompts/
-    │   ├── agents/
-    │   └── workflows/
+    │   └── prompts/
     └── 06_Engineering/             ✅ Engineering
+        ├── bugfixes/
         ├── decisions/
+        ├── learnings/
         ├── lessons/
-        ├── patterns/
-        ├── code/
-        └── architecture/
+        └── patterns/
 ```
 
 ---
@@ -106,13 +98,19 @@
 
 ## 🔄 Fases de Ejecución
 
-| Fase           | Task                                                 | Output                                   |
-|----------------|------------------------------------------------------|------------------------------------------|
-| **1**          | Auditoría: 02_Knowledge actual                       | ✅ Completado - Mapa de contenido         |
-| **2**          | Crear estructura 05_Unicorn/                         | ✅ Completado - Carpetas por área         |
-| **3**          | ✅ En proceso → Migrar aprendizajes de Engram         | Decisions, lessons, patterns             |
-| **4**          | Integrar metodologías SOTA investigadas              | Skills + patterns por área               |
-| **5**          | Sistema auto-mantenerse                              | Context injection + dedup                |
+| Fase | Task | Estado |
+|------|------|--------|
+| **1** | Auditoría: estructura actual | ✅ COMPLETADO |
+| **2** | Crear estructura 06_Unicorn/ | ✅ COMPLETADO (v2.0 path) |
+| **3** | Poblar con conocimiento existente | ✅ COMPLETADO (~poblado) |
+| **4** | Integrar metodologías SOTA investigadas | ✅ COMPLETADO (tablas en plan) |
+| **5** | Sistema auto-mantenerse | 🔴 EN PROGRESO |
+
+> **2026-04-25:** Fase 5 iniciada. Agregado sistema en `01_Personal_Os/02_Knowledge/06_Unicorn/README.md`:
+> - Engram auto-save hook con topic_keys
+> - Context injection template
+> - Deduplicación automática
+> - Session end auto-sync
 
 ---
 
@@ -156,11 +154,24 @@ status: {active|deprecated}
 
 ---
 
-## 🎯 Próximo Paso
+## 🎯 Estado Actual
 
-**Poblar con conocimiento existente** - Migrar más aprendizajes de Engram a las carpetas correspondientes.
+**✅ Fases 1-4: COMPLETADAS**
+- Estructura poblada en `01_Personal_Os/02_Knowledge/06_Unicorn/`
+- 6 áreas con subcarpetas (decisions, lessons, patterns, etc.)
+
+**🔴 Fase 5: PENDIENTE - Sistema auto-mantenerse**
+
+Cómo hacer que el conocimiento se actualice automáticamente:
+- Hook en Engram para guardar a carpetas correctas
+- Context injection en CLAUDE.md
+- Deduplicación automática
+
+---
+
+**NOTA 2026-04-25:** Corregido path de v1.x (`02_Knowledge/05_Unicorn/`) a v2.0 (`01_Personal_Os/02_Knowledge/06_Unicorn/`)
 
 ---
 
 *Unicorn Engineering - Conocimiento nivel Silicon Valley*  
-*Think Different PersonalOS v6.1*
+*Think Different PersonalOS v2.0 Consequences*

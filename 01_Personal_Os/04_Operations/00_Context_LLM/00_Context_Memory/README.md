@@ -19,15 +19,16 @@ Los archivos originales (01-19) se encuentran en la carpeta `_archive/` para con
 
 ---
 
-## 📋 Sesión Actual (2026-04-21)
+## 📋 Sesión Actual (2026-04-25)
 
 | #           | Documento                                                                         | Estado             |
 |-------------|-----------------------------------------------------------------------------------|--------------------|
 | 04          | [Auditoría de Rutas y Corrección](./04_CTX_Auditoria_Rutas_2026-04-21.md)         | ✅ COMPLETO         |
+| 05          | [Session 2026-04-25 — SOTA Hardened + Deps Update](./05_CTX_Session_2026-04-25.md) | ✅ COMPLETO         |
 
 ---
 
-*Actualizado: 2026-04-21 | Think Different PersonalOS v1.1*
+*Actualizado: 2026-04-25 | Think Different PersonalOS v2.0 Consequences*
 
 ---
 

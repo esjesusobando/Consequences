@@ -1,18 +1,35 @@
 #!/usr/bin/env python3
 """
-16_Carousel_Engine.py — PersonalOS v1.0
+16_Carousel_Engine.py — PersonalOS v2.0 Consequences
 Motor central para la generación de carruseles estratégicos.
 """
 
 import os
+import sys
+import io
 import json
 import argparse
 from pathlib import Path
 
-# Configuración de Rutas
-from config_paths import ROOT_DIR, OPERATIONS_DIR
+# === PROTOCOLO DE RUTA v2.0 Consequences ===
+# Script: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/
+# → scripts/ → 13_Auditors_Os/ → 03_Scripts_Os/ → 04_Operations/ → 01_Personal_Os/ → ROOT
+SCRIPT_DIR = Path(__file__).parent.resolve()
+SCRIPTS_OS = SCRIPT_DIR.parent.parent  # 03_Scripts_Os
+OPERATIONS = SCRIPTS_OS.parent          # 04_Operations
+PERSONAL_OS = OPERATIONS.parent         # 01_Personal_Os
+ROOT = PERSONAL_OS.parent               # Project root
 
-OUTPUT_DIR = OPERATIONS_DIR / "03_Process_Notes" / "Carousel_Exports"
+# Fix encoding for Windows
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
+
+# Add Scripts_Os to path for config_paths
+sys.path.insert(0, str(SCRIPTS_OS))
+from config_paths import *
+
+# Output directory: v2.0 uses 01_Process_Notes inside Context_LLM
+OUTPUT_DIR = ROOT_DIR / "01_Personal_Os" / "04_Operations" / "00_Context_LLM" / "01_Process_Notes" / "Carousel_Exports"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 class CarouselEngine:

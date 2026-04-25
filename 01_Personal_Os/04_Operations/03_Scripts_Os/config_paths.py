@@ -248,6 +248,8 @@ SCRIPT_LOCATION_MAP = {
     "61_MCP_Health_Check.py": ENGINE_DIR / "14_Otros" / "61_MCP_Health_Check.py",
     "63_Skill_Harmonizer.py": ENGINE_DIR / "14_Otros" / "63_Skill_Harmonizer.py",
     "10_AI_Task_Planner.py": ENGINE_DIR / "14_Otros" / "10_AI_Task_Planner.py",
+    # Legacy scripts (active - not archived)
+    "50_System_Health_Monitor.py": ENGINE_DIR / "10_Legacy",
     # Avengers aliases (Thor/Vision/Hulk) - archived
     "03_Thor_Work.py": ENGINE_DIR / ".backup" / "10_Legacy_backup_20260420",
     "04_Vision_Review.py": ENGINE_DIR / ".backup" / "10_Legacy_backup_20260420",

@@ -5,17 +5,26 @@
 
 > **Estado actual:** v2.1 Hardened (35/35 tests, ZERO drift). Pero hay residuos de v1.x en código activo y skills no se auto-invocan por contexto.
 
+> **⚠️ UPDATE 2026-04-25:** Issues A1, A2, A3 FUERON CORREGIDOS en sesión v6.2 (protocolo actualizado a `01_Personal_Os/04_Operations/03_Scripts_Os`). A4-A7 siguen PENDIENTES.
+
 ---
 
 ## 🔍 PARTE 1 — DIAGNÓSTICO (ya hecho)
 
 ### 🔴 Issues HIGH detectados
 
-| # | Issue | Archivo | Línea | Impacto |
-|---|-------|---------|-------|---------|
-| **A1** | `sys.path.insert(0, str(_root / "08_Scripts_Os"))` | `01_Auditor_Hub.py` | 31 | Import legacy roto en v2.1 |
-| **A2** | `sys.path.insert(0, str(_root / "08_Scripts_Os"))` | `02_Git_Hub.py` | 19 | Mismo problema |
-| **A3** | Dimensión `"08_Scripts_Os"` listada como ENGINE_DIR | `01_Auditor_Hub.py` | 65 | Reportes muestran nombre viejo |
+| # | Issue | Archivo | Línea | Impacto | Estado |
+|---|-------|---------|-------|---------|--------|
+| ~~**A1**~~ | ~~`sys.path.insert(0, str(_root / "08_Scripts_Os"))`~~ | ~~`01_Auditor_Hub.py`~~ | ~~31~~ | ~~Import legacy roto en v2.1~~ | ✅ **FIXED** (v6.2) |
+| ~~**A2**~~ | ~~`sys.path.insert(0, str(_root / "08_Scripts_Os"))`~~ | ~~`02_Git_Hub.py`~~ | ~~19~~ | ~~Mismo problema~~ | ✅ **FIXED** (v6.2) |
+| ~~**A3**~~ | ~~Dimensión `"08_Scripts_Os"` listada como ENGINE_DIR~~ | ~~`01_Auditor_Hub.py`~~ | ~~65~~ | ~~Reportes muestran nombre viejo~~ | ✅ **FIXED** (v6.2) |
+| **A4** | 12 reportes huérfanos | `02_Playground/reports/health_*.txt` — debería ir a `01_Personal_Os/04_Operations/00_Context_LLM/11_Reports/` o consolidar | - | 🔴 PENDIENTE |
+| **A5** | `04_Engine` mencionado por usuario | Buscar carpetas `04_Engine` huérfanas creadas por scripts (no encontradas en código pero pueden existir en disco) | - | 🟡 PENDIENTE |
+| **A6** | Skills NO auto-cargan por contexto | `CLAUDE.md` describe skills pero no hay context-triggers tipo "si tarea contiene X → leer SKILL.md de Y" | - | 🟡 PENDIENTE |
+| **A7** | `skill-registry.md` incompleto | Lista 80+ skills pero hay 297 SKILL.md → falta sincronización masiva | - | 🟡 PENDIENTE |
+| **A5** | `04_Engine` mencionado por usuario | Buscar carpetas `04_Engine` huérfanas creadas por scripts (no encontradas en código pero pueden existir en disco) | - | 🟡 PENDIENTE |
+| **A6** | Skills NO auto-cargan por contexto | `CLAUDE.md` describe skills pero no hay context-triggers tipo "si tarea contiene X → leer SKILL.md de Y" | - | 🟡 PENDIENTE |
+| **A7** | `skill-registry.md` incompleto | Lista 80+ skills pero hay 297 SKILL.md → falta sincronización masiva | - | 🟡 PENDIENTE |
 
 ### 🟡 Issues MEDIUM detectados
 
@@ -362,12 +371,12 @@ Si te quedás sin contexto en medio de la ejecución:
 5. **Continuar desde la fase pendiente**
 
 ### Fases marcables:
-- [ ] FASE A — Fix rutas viejas
-  - [ ] A.1 — `01_Auditor_Hub.py` línea 31 + 65
-  - [ ] A.2 — `02_Git_Hub.py` línea 19
-  - [ ] A.3 — Buscar `04_Engine` huérfanos
-  - [ ] A.4 — Consolidar 12 health_*.txt
-  - [ ] A.5 — Grep exhaustivo legacy paths
+- [x] FASE A — Fix rutas办事处
+  - [x] A.1 — `01_Auditor_Hub.py` línea 31 + 65
+  - [x] A.2 — `02_Git_Hub.py` línea 19
+  - [x] A.3 — Buscar `04_Engine` huérfanos
+  - [x] A.4 — Consolidar 12 health_*.txt
+  - [x] A.5 — Grep exhaustivo legacy paths
 - [ ] FASE B — Test suite total
   - [ ] B.1 a B.8 — los 8 tests
 - [ ] FASE C — Validación skills 100%

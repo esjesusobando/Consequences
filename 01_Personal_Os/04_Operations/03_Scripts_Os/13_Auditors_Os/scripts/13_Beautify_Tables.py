@@ -1,22 +1,26 @@
 import os
 import sys
+import io
 from pathlib import Path
 
-# === PROTOCOLO DE RUTA DINÁMICA (v6.1) ===
-_current = Path(__file__).resolve()
-_root = next((p for p in _current.parents if (p / "01_Core").exists()), None)
-if _root:
-    sys.path.insert(0, str(_root / "08_Scripts_Os"))
-from config_paths import *
-
-import re
-import glob
-import io
+# === PROTOCOLO DE RUTA v2.0 Consequences ===
+# Script: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/
+# → scripts/ → 13_Auditors_Os/ → 03_Scripts_Os/ → 04_Operations/ → 01_Personal_Os/ → ROOT
+SCRIPT_DIR = Path(__file__).parent.resolve()
+SCRIPTS_OS = SCRIPT_DIR.parent.parent  # 03_Scripts_Os
+OPERATIONS = SCRIPTS_OS.parent          # 04_Operations
+PERSONAL_OS = OPERATIONS.parent         # 01_Personal_Os
+ROOT = PERSONAL_OS.parent               # Project root
 
 # Fix encoding (Standard block)
-if sys.platform == "win32":
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
-    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
+
+# Add Scripts_Os to path for config_paths
+sys.path.insert(0, str(SCRIPTS_OS))
+from config_paths import *
+import re
+import glob
 
 PROJECT_ROOT = ROOT_DIR
 

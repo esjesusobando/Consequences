@@ -33,10 +33,12 @@ if sys.stderr.encoding != "utf-8":
 # =============================================================================
 try:
     sys.path.insert(0, str(Path(__file__).parent))
-    from config_paths import ROOT_DIR, KNOWLEDGE_DIR
+    from config_paths import ROOT_DIR, KNOWLEDGE_DIR, SCRIPTS_OS_DIR, ENGINE_DIR
 except ImportError:
     ROOT_DIR = Path(__file__).resolve().parent.parent.parent
-    KNOWLEDGE_DIR = ROOT_DIR / "03_Knowledge"
+    KNOWLEDGE_DIR = ROOT_DIR / "02_Knowledge"
+    SCRIPTS_OS_DIR = ROOT_DIR / "01_Personal_Os" / "04_Operations" / "03_Scripts_Os"
+    ENGINE_DIR = SCRIPTS_OS_DIR
 
 # =============================================================================
 # CONSTANTES
@@ -77,15 +79,20 @@ def find_parser_script() -> Path:
     """Ubica 83_Universal_Parser.py."""
     script_dir = Path(__file__).parent
     parser_path = script_dir / "83_Universal_Parser.py"
-
     if parser_path.exists():
         return parser_path
 
-    alt_path = ROOT_DIR / "04_Engine" / "08_Scripts_Os" / "83_Universal_Parser.py"
+    # v2.0 fallback: buscar en SCRIPTS_OS root
+    alt_path = SCRIPTS_OS_DIR / "83_Universal_Parser.py"
     if alt_path.exists():
         return alt_path
 
-    print(f"ERROR: 83_Universal_Parser.py no encontrado")
+    # v2.0: también try en 01_Personal_Os/04_Operations/03_Scripts_Os/
+    alt_path2 = ENGINE_DIR / "83_Universal_Parser.py"
+    if alt_path2.exists():
+        return alt_path2
+
+    print(f"ERROR: 83_Universal_Parser.py no encontrado en ninguna ubicaciónknown")
     sys.exit(1)
 
 

@@ -1,12 +1,15 @@
 
-# === PROTOCOLO DE RUTA DINÁMICA (v1.1 Alpha) ===
+# === PROTOCOLO DE RUTA v2.0 Consequences ===
 from pathlib import Path
 import sys
 
-_current = Path(__file__).resolve()
-_root = next((p for p in _current.parents if (p / "01_Core").exists()), None)
-if _root:
-    sys.path.insert(0, str(_root / "08_Scripts_Os"))
+SCRIPT_DIR = Path(__file__).parent.resolve()
+SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
+OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
+PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+ROOT = PERSONAL_OS.parent  # Project root
+
+sys.path.insert(0, str(SCRIPTS_OS))
 from config_paths import *
 import os
 import sys

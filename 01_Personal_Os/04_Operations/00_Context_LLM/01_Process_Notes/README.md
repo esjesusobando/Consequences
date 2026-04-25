@@ -19,15 +19,16 @@ Los archivos originales (01-29) se encuentran en la carpeta `_archive/` para pre
 
 ---
 
-## 📋 Sesión Actual (2026-04-21)
+## 📋 Sesión Actual (2026-04-25)
 
 | #           | Documento                                                                                   | Estado             |
 |-------------|---------------------------------------------------------------------------------------------|--------------------|
-| 05          | [Auditoría de Rutas y Corrección](./05_NP_Auditoria_Rutas_Correccion_2026-04-21.md)         | ✅ COMPLETO         |
+| 07          | [Migración v2 Consequences — Cierre](./07_NP_Migracion_v2_Consequences_Cierre_2026-04-24.md) | ✅ COMPLETO         |
+| 08          | [Session Archive 2026-04-25 — SOTA Hardened](./08_NP_Session_Archive_2026-04-25.md)        | ✅ COMPLETO         |
 
 ---
 
-*Actualizado: 2026-04-21 | Think Different PersonalOS v1.1*
+*Actualizado: 2026-04-25 | Think Different PersonalOS v2.0 Consequences*
 
 ## ⚠️ IMPORTANTE: Este directorio es para EL USUARIO
 

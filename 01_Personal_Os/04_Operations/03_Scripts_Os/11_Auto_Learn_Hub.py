@@ -15,11 +15,14 @@ import argparse
 import sys
 from pathlib import Path
 
-# === PROTOCOLO DE RUTA DINÁMICA (v6.1) ===
-_current = Path(__file__).resolve()
-_root = next((p for p in _current.parents if (p / "01_Core").exists()), None)
-if _root:
-    sys.path.insert(0, str(_root / "08_Scripts_Os"))
+# === PROTOCOLO DE RUTA v2.0 Consequences ===
+SCRIPT_DIR = Path(__file__).parent.resolve()
+SCRIPTS_OS = SCRIPT_DIR.parent  # 03_Scripts_Os
+OPERATIONS = SCRIPTS_OS.parent  # 04_Operations
+PERSONAL_OS = OPERATIONS.parent  # 01_Personal_Os
+ROOT = PERSONAL_OS.parent  # Project root
+
+sys.path.insert(0, str(SCRIPTS_OS))
 from config_paths import *
 
 # Add engine to path (usando constants de config_paths)

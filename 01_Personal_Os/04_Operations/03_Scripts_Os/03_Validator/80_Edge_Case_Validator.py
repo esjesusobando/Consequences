@@ -308,8 +308,10 @@ def main():
     print(f"   - System: {len(report.system_cases)}")
 
     report_md = generate_report(report)
-    report_file = BASE_DIR / "04_Engine" / "06_Reports" / "edge_case_report.md"
-    report_file.parent.mkdir(parents=True, exist_ok=True)
+    # v2.0: Reports van a 01_Personal_Os/04_Operations/00_Context_LLM/11_Reports/ no a 04_Engine/06_Reports/
+    reports_dir = ENGINE_DIR / "00_Context_LLM" / "11_Reports" / "edge_cases"
+    reports_dir.mkdir(parents=True, exist_ok=True)
+    report_file = reports_dir / "edge_case_report.md"
     report_file.write_text(report_md, encoding="utf-8")
     print(f"\n📄 Reporte guardado: {report_file}")
 
