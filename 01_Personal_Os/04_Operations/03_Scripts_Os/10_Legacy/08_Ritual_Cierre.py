@@ -7,8 +7,13 @@ from config_paths import (
 )
 
 """
-RITUAL MAESTRO DE CIERRE - PersonalOS v1.0
+RITUAL MAESTRO DE CIERRE - PersonalOS v3.0 Consequences
 Este script orquesta el cierre seguro de la sesión de trabajo siguiendo estándares Silicon Valley.
+
+ACTUALIZADO: 2026-04-25 - Paths v3.0
+- Skills: 01_Personal_Os/01_Core/02_Tools/02_Skills/
+- HUBs: 01_Personal_Os/04_Operations/03_Scripts_Os/
+- Rules: 01_Personal_Os/01_Core/01_Rules/
 """
 
 import subprocess

@@ -1,0 +1,85 @@
+# Workflow Graph — PersonalOS v3.0
+
+**Version:** 3.0 | **Date:** 2026-04-25
+
+---
+
+## Graph de Workflows
+
+```
+                    ┌──────────────────────────┐
+                    │   ORCHESTRATOR          │
+                    │   (00_Orchestrator)     │
+                    └───────────┬──────────────┘
+                                │
+            ┌───────────────────┼───────────────────┐
+            │                   │                   │
+            ▼                   ▼                   ▼
+    ┌───────────────┐   ┌───────────────┐   ┌───────────────┐
+    │ TDD PHASE 1  │   │ DREAM TEAM  │   │ COMPOUND     │
+    │ Scope Rule   │   │ Pipeline    │   │ Review      │
+    └───────────────┘   └───────────────┘   └───────────────┘
+            │                   │                   │
+            ▼                   ▼                   ▼
+    ┌───────────────┐   ┌───────────────┐   ┌───────────────┐
+    │ TDD PHASE 2  │   │ Product     │   │ Security    │
+    │ Test First  │   │ Builder    │   │ Sentinel    │
+    └───────────────┘   └───────────────┘   └───────────────┘
+            │                   │                   │
+            ▼                   ▼                   ▼
+    ┌───────────────┐   ┌───────────────┐   ┌───────────────┐
+    │ TDD PHASE 3  │   │ Data        │   │ Performance │
+    │ Implement   │   │ Engineer   │   │ Oracle     │
+    └───────────────┘   └───────────────┘   └───────────────┘
+            │                   │                   │
+            ▼                   ▼                   ▼
+    ┌───────────────┐   ┌───────────────┐   ┌───────────────┐
+    │ TDD PHASE 4  │   │ Marketing  │   │ Design    │
+    │ Refactor   │   │ Tech     │   │ Iterator  │
+    └───────────────┘   └───────────────┘   └───────────────┘
+            │                   │                   │
+            ▼                   ▼                   ▼
+    ┌───────────────┐   ┌───────────────┐   ┌───────────────┐
+    │ TDD PHASE 5  │   │ Design     │   │ Git        │
+    │ Security   │   │ Ops       │   │ Workflow   │
+    └───────────────┘   └───────────────┘   └───────────────┘
+            │                   │                   │
+            ▼                   ▼                   ▼
+    ┌───────────────┐   ┌───────────────┐   ┌───────────────┐
+    │ TDD PHASE 6  │   │ Platform   │   │ LFG        │
+    │ Commit/PR  │   │ Engineer  │   │ Engine    │
+    └───────────────┘   └───────────────┘   └───────────────┘
+            │                   │
+            ▼                   ▼
+    ┌───────────────┐   ┌───────────────┐
+    │ TDD PHASE 7  │   │ GROWTH     │
+    │ A11Y      │   │ Pipeline  │
+    └───────────────┘   └───────────────┘
+```
+
+---
+
+## Precedencias
+
+| # | Workflow | Fases | Dependencias |
+|---|----------|------|-----------|
+| 1 | **TDD Pipeline** | 7 | Core Flow: 00→01→02→03→04→05→06→07 |
+| 2 | **Dream Team** | 5 | Paralelo: Product, Data, Marketing, Design, Platform |
+| 3 | **Compound Review** | N | Parall: Security → Performance → A11y |
+| 4 | **Growth** | 5 | Secuencial: Script → Thumbnail → Title → Content → Carousel |
+| 5 | **LFG Engine** |Autonomous| Full self-contained |
+
+---
+
+## HUBs Involved
+
+- 01_Auditor_Hub (todos los workflows de revision)
+- 02_Git_Hub (commits y PRs)
+- 03_AI_Task_Planner (planificacion)
+- 04_Ritual_Hub (routines)
+- 08_Workflow_Hub (orquestacion)
+- 11_Auto_Learn_Hub (learnings)
+
+---
+
+*Think Different PersonalOS v3.0 Consequences*

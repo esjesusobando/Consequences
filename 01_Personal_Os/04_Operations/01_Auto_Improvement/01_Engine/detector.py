@@ -8,7 +8,7 @@ import os
 import re
 from pathlib import Path
 from dataclasses import dataclass, field
-from typing import List
+from typing import List, Iterator
 
 @dataclass
 class Issue:
@@ -19,6 +19,13 @@ class Issue:
     suggestion: str = ""
 
 class Detector:
+    EXCLUDE_DIRS = {
+        ".git", ".venv", "venv", "node_modules", "__pycache__",
+        "05_Archive", "00_Respaldo PC Sebas", ".pytest_cache",
+        "OIM_Website", "OIM_Website_Backup", ".idea", ".vscode",
+        "dist", "build", ".next",
+    }
+
     def __init__(self, root_path: str):
         self.root = Path(root_path)
         self.issues: List[Issue] = []
@@ -28,6 +35,26 @@ class Detector:
             "by_severity": {"CRITICAL": 0, "HIGH": 0, "MEDIUM": 0, "LOW": 0},
             "by_category": {"structure": 0, "docs": 0, "code": 0, "deps": 0}
         }
+
+    def _should_skip(self, path: Path) -> bool:
+        """Salta paths irrelevantes (legacy, dependencies, archives)."""
+        parts = set(path.parts)
+        return bool(parts & self.EXCLUDE_DIRS)
+
+    def _walk_files(self, ext_filter: tuple = None) -> Iterator[Path]:
+        """os.walk con poda agresiva — 100x más rápido que rglob."""
+        for dirpath, dirnames, filenames in os.walk(self.root):
+            # Podar dirnames in-place — evita bajar a directorios excluidos
+            dirnames[:] = [
+                d for d in dirnames
+                if d not in self.EXCLUDE_DIRS and not d.startswith(".")
+            ]
+            for fname in filenames:
+                if fname.startswith("."):
+                    continue
+                if ext_filter and not fname.endswith(ext_filter):
+                    continue
+                yield Path(dirpath) / fname
 
     def scan(self) -> List[Issue]:
         """Ejecuta todas las detecciones"""
@@ -86,28 +113,17 @@ class Detector:
         dir_pattern = re.compile(r'^\d{2}_[A-Z].+$')
         file_pattern = re.compile(r'^\d{2}_.+\.(md|py|ts|tsx|js)$')
 
-        for item in self.root.rglob("*"):
-            if item.is_file():
-                self.stats["files_scanned"] += 1
-                name = item.name
-
-                # Skip .git and hidden
-                if ".git" in str(item) or item.name.startswith("."):
-                    continue
-
-                # Check files
-                if file_pattern.match(name):
-                    continue
+        for item in self._walk_files():
+            self.stats["files_scanned"] += 1
+            if file_pattern.match(item.name):
+                continue
 
     def _check_duplicate_scripts(self):
         """Detecta scripts duplicados"""
         print("  🔍 Verificando duplicados...")
 
         scripts = {}
-        for py_file in self.root.rglob("*.py"):
-            if ".git" in str(py_file) or "__pycache__" in str(py_file):
-                continue
-
+        for py_file in self._walk_files(ext_filter=(".py",)):
             name = py_file.name
             if name not in scripts:
                 scripts[name] = []

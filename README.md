@@ -1,69 +1,70 @@
-# Think Different PersonalOS v2.0 — Consequences
+# Think Different PersonalOS v3.0 — Consequences
 
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Version](https://img.shields.io/badge/Version-2.0-green)]()
-[![Status](https://img.shields.io/badge/Status-100%25%20--%20Production%20Ready-blue)]()
-[![Multi--User](https://img.shields.io/badge/Multi--User-Ready-brightgreen)]()
+[![Version](https://img.shields.io/badge/Version-3.0-green)]()
+[![Status](https://img.shields.io/badge/Status-PURE%20GREEN-00FF00)]()
+[![OS](https://img.shields.io/badge/Think%20Different-OS--3.0-7B68EE)]()
 
 > 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 165+ skills SOTA, metodologías integradas y automatización completa.
 
 ---
 
-## 📊 Estado del Sistema (v2.0 - 2026-04-24)
+## 📊 Estado del Sistema (v3.0 - 2026-04-25)
 
-> 🟢 **Migración Completada** - 100% Pure Green - Estructura Consequences
+> 🟢 **MODERNIZACIÓN COMPLETADA** - Pure Green - Estructura Consequences v3.0
 
 | Métrica                                             | Valor                                        |
 |-----------------------------------------------------|----------------------------------------------|
 | **Overall Health**                                  | **100%** 🟢                                 |
-| **Skills**                                          | 165+                                         |
-| **Rules**                                           | 25                                           |
-| **MCPs**                                            | 33 activos                                   |
-| **HUBs**                                            | 14                                           |
-| **Áreas Funcionales**                               | **9 Maestras** (22 categorías)               |
+| **Skills**                                          | 297 (9 áreas funcionales)                    |
+| **Rules**                                           | 10 (.mdc)                                   |
+| **MCPs**                                            | 33 Claude Code / 18 OpenCode                 |
+| **HUBs**                                            | 18 operativos                                |
+| **Agentes**                                         | 52 (source) + 52 mirror                     |
 
 ---
 
-## 📁 Estructura del Sistema (v2.0 — Consequences)
+## 📂 Estructura del Sistema (v3.0 — Consequences)
 
 ```
 Think_Different/
-├── 00_Winter_is_Coming/     ✅ Goals, Backlog, AGENTS.md (Orquestador)
+├── 00_Winter_is_Coming/     ✅ Goals, Backlog, AGENTS.md (MATRIX)
 ├── 01_Personal_Os/          ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/
-│   │   ├── 00_Workflows_Os/ ✅ Workflows del OS
-│   │   ├── 01_Rules/        ✅ 25 reglas (.mdc) del sistema
+│   │   ├── 00_Workflows_Os/ ✅ Workflows (Personal, CE, Gentleman)
+│   │   ├── 01_Rules/        ✅ 10 reglas (.mdc) - FUENTE DE VERDAD
 │   │   └── 02_Tools/        ✅ Todas las herramientas
-│   │       ├── 01_Agents/   ✅ Agentes del sistema
-│   │       ├── 02_Skills/   ✅ 165+ skills - Sistema v2.0 (9 Áreas)
-│   │       ├── 03_Mcp/      ✅ 33 MCPs configurados
+│   │       ├── 01_Agents/   ✅ 52 agentes (Dream Team + Specialists)
+│   │       ├── 02_Skills/   ✅ 297 skills - 9 áreas funcionales
+│   │       ├── 03_Mcp/      ✅ 33 Claude / 18 OpenCode
 │   │       ├── 04_Integrations/
-│   │       ├── 05_Hooks/    ✅ Sistema de hooks
-│   │       ├── 06_Plugins/
-│   │       ├── 07_Server/   ✅ Backend MCP
-│   │       ├── 08_Evals/
-│   │       └── 09_Templates/
+│   │       ├── 05_Hooks/    ✅ Pre/Post/Lifecycle/Sound
+│   │       ├── 06_Plugins/  ✅ Plugins OS
+│   │       ├── 07_Server/   ✅ MCP Server
+│   │       ├── 08_Evals/    ✅ Evaluadores
+│   │       └── 09_Templates/ ✅ Templates
 │   ├── 02_Knowledge/        ✅ Base de conocimiento + Docs
-│   ├── 03_Task/             ✅ Tareas activas (singular)
+│   ├── 03_Task/             ✅ Tareas activas
 │   ├── 04_Operations/       ✅ Motor operativo
-│   │   ├── 00_Context_LLM/  ✅ Memoria LLM
-│   │   ├── 01_Auto_Improvement/ # Motor: detector→analyzer→exec
-│   │   ├── 02_Agent_Teams_Lite/
-│   │   ├── 03_Scripts_Os/   ✅ 14 HUBs + scripts
-│   │   ├── 04_Installer/
-│   │   └── 05_Projects/
-│   └── 05_Archive/          ✅ Repos archivados, legacy
-├── 02_Playground/           ✅ Zona de pruebas y experimentos
-├── 03_Resultado/            ✅ Outputs de proyectos (antes Now/)
-├── .agent/                  ✅ Backup estratégico
+│   │   ├── 00_Context_LLM/  ✅ Memoria LLM (Engram, notes)
+│   │   ├── 01_Auto_Improvement/ ✅ Auto-mejora recursiva
+│   │   ├── 02_Agent_Teams_Lite/ ✅ SDD registry
+│   │   └── 03_Scripts_Os/   ✅ 18 HUBs + scripts
+│   └── 05_Archive/          ✅ Legacy, repos de referencia
+├── 02_Playground/           ✅ Zona de pruebas
+├── 03_Resultado/            ✅ Outputs de proyectos
+├── .agent/                  ✅ BACKUP ESTRATÉGICO
 ├── .atl/                    ✅ SDD Registry + openspec
-├── .mcp.json                ✅ MCPs activos (33 servidores)
+├── .claude/                 ✅ Config Claude Code
+├── .claude-plugin/          ✅ Plugin config
+├── OS_DIRECTORY.md          ✅ JARVIS discovery (<2KB)
+├── .mcp.json                ✅ 33 MCPs Claude Code activos
 ├── AGENTS.md                ✅ GGA Pre-Commit
-├── CLAUDE.md                ✅ Config para IAs
+├── CLAUDE.md                ✅ Config IAs
 └── README.md                ✅ Este archivo
 ```
 
-> **🟢 v2.0 2026-04-24:** Estructura Consequences migrada y operativa.
+> **📍 PATH CRITICAL:** Skills en `01_Personal_Os/01_Core/02_Tools/02_Skills/` — NO usar paths antiguos (`01_Core/03_Skills/`, `.agent/02_Skills/`)
 
 ---
 
@@ -127,7 +128,7 @@ Para la versión v1.1, hemos evolucionado hacia una organización por **Áreas M
 | **18_Personal_Life_OS**                                    | Life OS                               | Hillary integration                                        |
 | **19_Video_Intel**                                         | Video                                 | Video AI                                                   |
 
-### HUBs (01_Personal_Os/04_Operations/03_Scripts_Os/) — 14 HUBs
+### HUBs (01_Personal_Os/04_Operations/03_Scripts_Os/) — 18 HUBs
 
 | Hub                                            | Script                                                  | Propósito                                                       |
 |------------------------------------------------|---------------------------------------------------------|-----------------------------------------------------------------|
@@ -144,7 +145,12 @@ Para la versión v1.1, hemos evolucionado hacia una organización por **Áreas M
 | **General**                                    | `10_General_Hub.py`                                     | Utilidades generales                                            |
 | **Auto Learn**                                 | `11_Auto_Learn_Hub.py`                                  | Motor de automejora y aprendizaje                               |
 | **Context Bar**                                | `12_Context_Usage_Bar.py`                               | Barra de uso de contexto                                        |
-| **Beautify**                                   | `13_Beautify_Tables.py`                                 | Formateo de tablas markdown                                     |
+| **Beautify Tables**                            | `13_Beautify_Tables.py`                                 | Formateo de tablas markdown                                     |
+| **Beauty Doc**                                 | `14_Beauty_Doc.py`                                      | Documentos embellecidos                                         |
+| **MCP Sync**                                   | `15_MCP_Sync_Hub.py`                                    | Sync drift Claude ↔ OpenCode                                    |
+| **System Mapper**                              | `16_System_Mapper_Hub.py`                               | Genera manifest JARVIS (9s scan)                                |
+| **Watchdog**                                   | `17_Watchdog_Hub.py`                                    | Health check automático                                         |
+| **Telemetry**                                  | `18_Telemetry_Hub.py`                                   | Dashboard de uso y métricas                                     |
 
 ### Validators
 
@@ -153,7 +159,7 @@ Para la versión v1.1, hemos evolucionado hacia una organización por **Áreas M
 | **skill_validator.py**                                   | `01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/`                               | Valida estructura SOTA                               |
 | **skill_security_scan.py**                               | `01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/`                               | Escaneo de seguridad                                 |
 
-### MCPs (29 activos)
+### MCPs (33 Claude Code / 18 OpenCode)
 
 | Categoría                                      | Servidores                                                                                         |
 |------------------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -257,6 +263,7 @@ Code review automático integrado:
 
 | Documento                                              | Ubicación                                                                             |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------|
+| **OS_DIRECTORY.md**                                    | `OS_DIRECTORY.md` (raíz) — JARVIS discovery                                           |
 | **AGENTS.md**                                          | `00_Winter_is_Coming/AGENTS.md`                                                       |
 | **RULES_INDEX**                                        | `01_Core/01_Rules/RULES_INDEX.md`                                                     |
 | **Skills README**                                      | `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                                                         |
@@ -303,13 +310,16 @@ ORQUESTADOR (lee 00_Winter_is_Coming/AGENTS.md + skill-registry.md)
 # 1. Cargar contexto
 engram_mem_context(limit=10)
 
-# 2. Leer manifiesto
+# 2. Leer directorio JARVIS
+cat OS_DIRECTORY.md
+
+# 3. Leer manifiesto de agentes
 cat 00_Winter_is_Coming/AGENTS.md
 
-# 3. Leer skill registry
+# 4. Leer skill registry
 cat .atl/skill-registry.md
 
-# 4. Listo para orquestar
+# 5. Listo para orquestar
 ```
 
 ---
@@ -329,4 +339,4 @@ CC BY-NC-SA 4.0 - Uso no comercial permitido.
 
 ---
 
-_Think Different PersonalOS v1.2 — Multi-User Ready ✅ — Post-Auditoría 2026-04-23_
+_Think Different PersonalOS v3.0 — JARVIS Integrated ✅ — 2026-04-25_

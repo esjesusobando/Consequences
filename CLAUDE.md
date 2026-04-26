@@ -285,18 +285,64 @@ Think_Different/
 <system_state_snapshot>
 | Categoria                        | Estado                | Notas                                                                     |
 |----------------------------------|-----------------------|---------------------------------------------------------------------------|
-| **Overall Health**               | **✅ PURE GREEN**      | v2.0 Consequences — migración completada 2026-04-24                       |
+| **Overall Health**               | **✅ PURE GREEN**      | v3.0 Consequences — JARVIS integrated 2026-04-25                          |
 | Estructura (4 raíz)              | ✅ PASS                | Winter / Personal_Os / Playground / Resultado                             |
-| HUBs (00-13)                     | ✅ ACTIVE              | 14 HUBs en 03_Scripts_Os                                                  |
-| Skills (9 áreas)                 | ✅ OPERATIONAL         | 165+ skills — 9 áreas funcionales limpias en 02_Tools/02_Skills/          |
-| Rules (10)                       | ✅ DEFINED             | 10 .mdc en 01_Core/01_Rules/ (fuente de verdad)                           |
-| MCPs (33 activos)                | ✅ ACTIVE              | 33 verificados vs .mcp.json                                               |
-| Agentes (71)                     | ✅ ACTIVE              | Orchestrator + Dream Team + 60 Specialists                                |
-| config_paths.py                  | ✅ FIXED               | Auto-detección por 00_Winter_is_Coming — todas las rutas OK               |
-| Hooks settings.local.json        | ✅ FIXED               | notification.py apuntando a nueva ruta 05_Hooks/04_Sound                  |
+| HUBs (15-18)                    | ✅ ACTIVE              | 18 HUBs en 03_Scripts_Os                                                 |
+| Skills (12 áreas)                | ✅ OPERATIONAL         | 297 skills — 12 áreas funcionales                                        |
+| Agent Matrix                     | ✅ ACTIVE              | 52 agents en .atl/agent-skill-matrix.yaml                               |
+| Manifest (7 archivos)            | ✅ VALIDATED           | 00_Manifest/ actualizado                                                 |
+| MCPs (33 Claude / 18 OpenCode) | ✅ SYNCED              | Drift: 16 solo Claude, 1 solo OpenCode                                  |
+| Agent Mirror                     | ✅ SYNCED              | 54/54 agents sincronizados (source → backup)                             |
+| Watchdog                         | ✅ ACTIVE              | 17_Watchdog_Hub.py monitoreando                                           |
+| Telemetry                        | ✅ ACTIVE              | 18_Telemetry_Hub.py recolectando                                         |
+| OS_DIRECTORY.md                  | ✅ CREATED             | <2KB en raíz — JARVIS discovery                                          |
 | Agent Teams Protocol             | ✅ ACTIVE              | Super Campeones — comunicación inter-agente                               |
-| Auto-Improvement Engine          | ✅ OPERATIONAL         | En 04_Operations/01_Auto_Improvement                                      |
-| GGA Code Review                  | ✅ ACTIVE              | Pre-commit hook instalado                                                 |
+
+---
+
+## 🤖 JARVIS — CONSEQUENCES 3.0 (2026-04-25)
+<jarvis_3.0>
+
+El sistema tiene un **manifest central** que permite discovery automático de todos los componentes:
+
+### Quick Access
+```bash
+# OS Directory (raíz)
+cat OS_DIRECTORY.md
+
+# HUBs principales
+python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   # MCP drift
+python 01_Personal_Os/04_Operations/03_Scripts_Os/16_Agent_Mirror_Hub.py         # Agent sync
+python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py              # Health check
+python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard # Usage stats
+```
+
+### Manifest Registry
+```bash
+# 7 archivos del manifest en:
+01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
+├── 01_OS_Inventory.json      # Inventario OS
+├── 02_MCP_Registry.yaml      # 33 MCPs Claude / 18 OpenCode
+├── 03_Agent_Catalog.yaml    # 52 agentes
+├── 04_Skill_Index.json      # 297 skills
+├── 05_HUB_Catalog.yaml      # 15 HUBs
+├── 06_Workflow_Graph.yaml   # Workflows
+└── 07_Hook_Registry.yaml    # 10 hooks
+
+# Agent Skill Matrix
+cat .atl/agent-skill-matrix.yaml
+```
+
+### Ecosistemas Integrados
+| Ecosistema | Ubicación |
+|------------|-----------|
+| Personal OS Core | `00_Winter_is_Coming/AGENTS.md` |
+| Compound Engineering | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/` |
+| Dream Team | `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/` |
+| Specialists | `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/` |
+| Growth | `01_Personal_Os/01_Core/02_Tools/01_Agents/03_Growth/` |
+
+</jarvis_3.0>
 
 ### Configuración MCP (dual)
 

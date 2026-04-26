@@ -24,90 +24,114 @@
   "structure": {
     "dimensions": [
       "00_Winter_is_Coming",
-      "01_Core",
-      "02_Knowledge",
-      "03_Tasks",
-      "04_Operations",
-      "05_Archive",
-      "06_Playground",
-      "07_Projects",
-      "08_Scripts_Os"
+      "01_Personal_Os/01_Core",
+      "01_Personal_Os/02_Knowledge",
+      "01_Personal_Os/03_Task",
+      "01_Personal_Os/04_Operations",
+      "01_Personal_Os/05_Archive",
+      "02_Playground",
+      "03_Resultado"
     ],
     "core_folders": [
-      "01_Core/04_Agents",
-      "01_Core/03_Skills",
-      "01_Core/02_Evals",
-      "01_Core/05_Mcp"
+      "01_Personal_Os/01_Core/02_Tools/01_Agents",
+      "01_Personal_Os/01_Core/02_Tools/02_Skills",
+      "01_Personal_Os/01_Core/02_Tools/03_Mcp",
+      "01_Personal_Os/01_Core/02_Tools/07_Server"
     ]
   },
   "hubs": [
     {
       "name": "01_Auditor_Hub",
-      "path": "08_Scripts_Os/01_Auditor_Hub.py",
-      "scripts": "08_Scripts_Os/Auditor_Fixed/",
+      "path": "01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py",
+      "scripts": "01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/",
       "function": "Auditorías del sistema"
     },
     {
       "name": "02_Git_Hub",
-      "path": "08_Scripts_Os/02_Git_Hub.py",
+      "path": "01_Personal_Os/04_Operations/03_Scripts_Os/02_Git_Hub.py",
       "function": "Git operations (safe-commit, guard-commit)"
     },
     {
       "name": "03_AIPM_Hub",
-      "path": "08_Scripts_Os/03_AIPM_Hub.py",
-      "scripts": "08_Scripts_Os/AIPM_Fixed/",
+      "path": "01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM_Hub.py",
+      "scripts": "01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/",
       "function": "AI Project Management"
     },
     {
       "name": "04_Ritual_Hub",
-      "path": "08_Scripts_Os/04_Ritual_Hub.py",
-      "scripts": "08_Scripts_Os/Ritual_Fixed/",
+      "path": "01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py",
+      "scripts": "01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/",
       "function": "Rituales y standups"
     },
     {
       "name": "05_Validator_Hub",
-      "path": "08_Scripts_Os/05_Validator_Hub.py",
-      "scripts": "08_Scripts_Os/Validator_Fixed/",
+      "path": "01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py",
+      "scripts": "01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/",
       "function": "Validaciones del sistema"
     },
     {
       "name": "06_Tool_Hub",
-      "path": "08_Scripts_Os/06_Tool_Hub.py",
-      "scripts": "08_Scripts_Os/Tool_Fixed/",
+      "path": "01_Personal_Os/04_Operations/03_Scripts_Os/06_Tool_Hub.py",
+      "scripts": "01_Personal_Os/04_Operations/03_Scripts_Os/14_Otros/",
       "function": "Herramientas utilities"
     },
     {
       "name": "07_Integration_Hub",
-      "path": "08_Scripts_Os/07_Integration_Hub.py",
-      "scripts": "08_Scripts_Os/Integration_Fixed/",
+      "path": "01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration_Hub.py",
+      "scripts": "01_Personal_Os/04_Operations/03_Scripts_Os/09_Integration/",
       "function": "Integraciones externas"
     },
     {
       "name": "08_Workflow_Hub",
-      "path": "08_Scripts_Os/08_Workflow_Hub.py",
-      "scripts": "08_Scripts_Os/Workflow_Fixed/",
+      "path": "01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py",
+      "scripts": "01_Personal_Os/04_Operations/03_Scripts_Os/04_Workflow/",
       "function": "Workflows y procesos"
     },
     {
       "name": "09_Data_Hub",
-      "path": "08_Scripts_Os/09_Data_Hub.py",
-      "scripts": "08_Scripts_Os/Data_Fixed/",
+      "path": "01_Personal_Os/04_Operations/03_Scripts_Os/09_Data_Hub.py",
+      "scripts": "01_Personal_Os/04_Operations/03_Scripts_Os/05_Data/",
       "function": "Datos y reportes"
     },
     {
       "name": "10_General_Hub",
-      "path": "08_Scripts_Os/10_General_Hub.py",
-      "scripts": "08_Scripts_Os/General_Fixed/",
+      "path": "01_Personal_Os/04_Operations/03_Scripts_Os/10_General_Hub.py",
+      "scripts": "01_Personal_Os/04_Operations/03_Scripts_Os/06_General/",
       "function": "Utilidades generales"
     },
     {
       "name": "11_Auto_Learn_Hub",
-      "path": "08_Scripts_Os/11_Auto_Learn_Hub.py",
+      "path": "01_Personal_Os/04_Operations/03_Scripts_Os/11_Auto_Learn_Hub.py",
       "function": "Motor de automejora"
+    },
+    {
+      "name": "14_Health_Metrics_Hub",
+      "path": "01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py",
+      "function": "Health metrics y reportes del sistema"
+    },
+    {
+      "name": "15_MCP_Sync_Hub",
+      "path": "01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py",
+      "function": "Detecta y sincroniza drift MCPs Claude↔OpenCode"
+    },
+    {
+      "name": "16_System_Mapper_Hub",
+      "path": "01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py",
+      "function": "Genera 7 manifests JARVIS — ground truth del OS (9s scan)"
+    },
+    {
+      "name": "17_Watchdog_Hub",
+      "path": "01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py",
+      "function": "Health watchdog — integridad manifest, MCP drift, frontmatter"
+    },
+    {
+      "name": "18_Telemetry_Hub",
+      "path": "01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py",
+      "function": "Dashboard ASCII de métricas de uso por HUB"
     }
   ],
   "auto_improvement_engine": {
-    "path": "04_Operations/01_Auto_Improvement/",
+    "path": "01_Personal_Os/04_Operations/01_Auto_Improvement/",
     "modules": [
       "01_Engine/detector.py",
       "01_Engine/analyzer.py",
@@ -124,16 +148,15 @@
     ]
   },
   "skills": [
-    "01_Core/03_Skills/00_Compound_Engineering/*/SKILL.md",
-    "01_Core/03_Skills/01_Agent_Teams_Lite/*/SKILL.md",
-    "01_Core/03_Skills/02_Project_Manager/*/SKILL.md",
-    "01_Core/03_Skills/03_Product_Manager/*/SKILL.md",
-    "01_Core/03_Skills/04_Product_Design/*/SKILL.md",
-    "01_Core/03_Skills/05_Vibe_Coding/*/SKILL.md",
-    "01_Core/03_Skills/06_Testing/*/SKILL.md",
-    "01_Core/03_Skills/07_DevOps/*/SKILL.md",
-    "01_Core/03_Skills/08_Personal_Os/*/SKILL.md",
-    "01_Core/03_Skills/09_Marketing/*/SKILL.md"
+    "01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/*/SKILL.md",
+    "01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/*/SKILL.md",
+    "01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/*/SKILL.md",
+    "01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/*/SKILL.md",
+    "01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/*/SKILL.md",
+    "01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/*/SKILL.md",
+    "01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/*/SKILL.md",
+    "01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/*/SKILL.md",
+    "01_Personal_Os/01_Core/02_Tools/02_Skills/08_Invictus_Web/*/SKILL.md"
   ],
   "tests": {
     "path": "Maerks/05_Tests/",
@@ -150,7 +173,7 @@
     "CHANGELOG.md"
   ],
   "legacy": {
-    "path": "08_Scripts_Os/Legacy_Backup/",
+    "path": "01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/",
     "description": "Scripts legacy (no usar para nuevos desarrollos)"
   }
 }

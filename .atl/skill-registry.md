@@ -45,7 +45,7 @@ Think_Different/
 │   │   ├── 00_Context_LLM/       # Memoria, notas, knowledge brain
 │   │   ├── 01_Auto_Improvement/  # Motor auto-mejora
 │   │   ├── 02_Agent_Teams_Lite/  # SDD registry
-│   │   ├── 03_Scripts_Os/        # 14 HUBs + scripts
+│   │   ├── 03_Scripts_Os/        # 18 HUBs + scripts
 │   │   └── 05_Projects/          # Proyectos activos
 │   └── 05_Archive/               # Legacy, repos de referencia
 ├── 02_Playground/                # Zona de pruebas
@@ -58,9 +58,11 @@ Think_Different/
 
 | Item | Valor |
 |------|-------|
-| Modo | openspec |
-| Strict TDD | ❌ disabled |
+| Modo | hybrid (openspec + engram) |
+| Strict TDD | ❌ disabled (no test runner) |
 | Config | `.atl/openspec/config.yaml` |
+| Openspec root | `.atl/openspec/` |
+| Engram | ⚠️ MCP server not running in current session |
 
 ### Available Skills — Sistema v2.0 (9 Áreas Funcionales)
 
@@ -89,8 +91,11 @@ Think_Different/
 ### Skill Registry Sources
 
 - User-level: `~/.config/opencode/skills/`
-- Project-level: `.agent/02_Skills/`
+- **Project-level (FUENTE):** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+- **Backup (legacy):** `.agent/02_Skills/` (-sync, no usar para trabajo activo)
 - SDD Config: `.atl/openspec/config.yaml`
+
+> ⚠️ **CRITICAL:** Siempre usar `01_Personal_Os/01_Core/02_Tools/02_Skills/` como fuente de skills. NO usar `.agent/02_Skills/` ni paths antiguos (`01_Core/03_Skills/`).
 
 ---
 

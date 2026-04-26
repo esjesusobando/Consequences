@@ -1,0 +1,53 @@
+# HUB Catalog — generated 2026-04-25T13:55:58
+
+version: v3.0
+generated: "2026-04-25T13:55:58"
+base_path: 01_Personal_Os/04_Operations/03_Scripts_Os/
+totals:
+  hubs: 15
+hubs:
+  - name: 00_Sound_Engine
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py
+  - name: 01_Auditor_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py
+  - name: 02_Git_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/02_Git_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/02_Git_Hub.py
+  - name: 03_AIPM_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM_Hub.py
+  - name: 04_Ritual_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py
+  - name: 05_Validator_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py
+  - name: 06_Tool_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/06_Tool_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/06_Tool_Hub.py
+  - name: 07_Integration_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration_Hub.py
+  - name: 08_Workflow_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py
+  - name: 09_Data_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Data_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Data_Hub.py
+  - name: 10_General_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_General_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_General_Hub.py
+  - name: 11_Auto_Learn_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/11_Auto_Learn_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/11_Auto_Learn_Hub.py
+  - name: 14_Health_Metrics_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py
+  - name: 15_Agent_Sync_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py
+  - name: 16_System_Mapper_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py

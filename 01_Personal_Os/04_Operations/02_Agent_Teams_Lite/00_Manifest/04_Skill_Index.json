@@ -1,0 +1,1557 @@
+{
+  "version": "v3.0",
+  "generated": "2026-04-25T13:55:58",
+  "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
+  "totals": {
+    "areas": 12,
+    "skills": 297,
+    "without_frontmatter": 32
+  },
+  "by_area": {
+    "00_Compound_Engineering": {
+      "count": 63,
+      "skills": [
+        {
+          "name": "00_Compound_Engineering",
+          "path": "00_Compound_Engineering/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "agent-browser",
+          "path": "00_Compound_Engineering/07_Skills/agent-browser/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "agent-native-architecture",
+          "path": "00_Compound_Engineering/07_Skills/agent-native-architecture/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "agent-native-audit",
+          "path": "00_Compound_Engineering/07_Skills/agent-native-audit/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "andrew-kane-gem-writer",
+          "path": "00_Compound_Engineering/07_Skills/andrew-kane-gem-writer/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "architecture-guardrails",
+          "path": "00_Compound_Engineering/07_Skills/architecture-guardrails/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "backlog-triage",
+          "path": "00_Compound_Engineering/07_Skills/backlog-triage/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "business-rules",
+          "path": "00_Compound_Engineering/07_Skills/business-rules/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ce-brainstorm",
+          "path": "00_Compound_Engineering/07_Skills/ce-brainstorm/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ce-compound",
+          "path": "00_Compound_Engineering/07_Skills/ce-compound/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ce-compound-refresh",
+          "path": "00_Compound_Engineering/07_Skills/ce-compound-refresh/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ce-ideate",
+          "path": "00_Compound_Engineering/07_Skills/ce-ideate/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ce-plan",
+          "path": "00_Compound_Engineering/07_Skills/ce-plan/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ce-review",
+          "path": "00_Compound_Engineering/07_Skills/ce-review/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ce-setup",
+          "path": "00_Compound_Engineering/07_Skills/ce-setup/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ce-work",
+          "path": "00_Compound_Engineering/07_Skills/ce-work/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ce-work-beta",
+          "path": "00_Compound_Engineering/07_Skills/ce-work-beta/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "changelog",
+          "path": "00_Compound_Engineering/07_Skills/changelog/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "claude-permissions-optimizer",
+          "path": "00_Compound_Engineering/07_Skills/claude-permissions-optimizer/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "compound-docs",
+          "path": "00_Compound_Engineering/07_Skills/compound-docs/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "cultural-norms",
+          "path": "00_Compound_Engineering/07_Skills/cultural-norms/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "dashboard-htmx",
+          "path": "00_Compound_Engineering/07_Skills/dashboard-htmx/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "deepen-plan",
+          "path": "00_Compound_Engineering/07_Skills/deepen-plan/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "deploy-docs",
+          "path": "00_Compound_Engineering/07_Skills/deploy-docs/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "dhh-rails-style",
+          "path": "00_Compound_Engineering/07_Skills/dhh-rails-style/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "document-review",
+          "path": "00_Compound_Engineering/07_Skills/document-review/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "dspy-ruby",
+          "path": "00_Compound_Engineering/07_Skills/dspy-ruby/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "every-style-editor",
+          "path": "00_Compound_Engineering/07_Skills/every-style-editor/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "feature-video",
+          "path": "00_Compound_Engineering/07_Skills/feature-video/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "frontend-design",
+          "path": "00_Compound_Engineering/07_Skills/frontend-design/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "gemini-imagegen",
+          "path": "00_Compound_Engineering/07_Skills/gemini-imagegen/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "generate_command",
+          "path": "00_Compound_Engineering/07_Skills/generate_command/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "gentleman-compound-mastery",
+          "path": "00_Compound_Engineering/07_Skills/gentleman-compound-mastery/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "git-clean-gone-branches",
+          "path": "00_Compound_Engineering/07_Skills/git-clean-gone-branches/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "git-commit",
+          "path": "00_Compound_Engineering/07_Skills/git-commit/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "git-commit-push-pr",
+          "path": "00_Compound_Engineering/07_Skills/git-commit-push-pr/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "git-worktree",
+          "path": "00_Compound_Engineering/07_Skills/git-worktree/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "lfg",
+          "path": "00_Compound_Engineering/07_Skills/lfg/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "memory-protocol",
+          "path": "00_Compound_Engineering/07_Skills/memory-protocol/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "onboarding",
+          "path": "00_Compound_Engineering/07_Skills/onboarding/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "orchestrating-swarms",
+          "path": "00_Compound_Engineering/07_Skills/orchestrating-swarms/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "plugin-thin",
+          "path": "00_Compound_Engineering/07_Skills/plugin-thin/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "pr-review-deep",
+          "path": "00_Compound_Engineering/07_Skills/pr-review-deep/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "project-structure",
+          "path": "00_Compound_Engineering/07_Skills/project-structure/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "proof",
+          "path": "00_Compound_Engineering/07_Skills/proof/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "rclone",
+          "path": "00_Compound_Engineering/07_Skills/rclone/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "report-bug-ce",
+          "path": "00_Compound_Engineering/07_Skills/report-bug-ce/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "reproduce-bug",
+          "path": "00_Compound_Engineering/07_Skills/reproduce-bug/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "resolve-pr-feedback",
+          "path": "00_Compound_Engineering/07_Skills/resolve-pr-feedback/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "resolve-pr-parallel",
+          "path": "00_Compound_Engineering/07_Skills/resolve-pr-parallel/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "sdd-flow",
+          "path": "00_Compound_Engineering/07_Skills/sdd-flow/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "server-api",
+          "path": "00_Compound_Engineering/07_Skills/server-api/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "setup",
+          "path": "00_Compound_Engineering/07_Skills/setup/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "slfg",
+          "path": "00_Compound_Engineering/07_Skills/slfg/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "test-browser",
+          "path": "00_Compound_Engineering/07_Skills/test-browser/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "test-xcode",
+          "path": "00_Compound_Engineering/07_Skills/test-xcode/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "testing-coverage",
+          "path": "00_Compound_Engineering/07_Skills/testing-coverage/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "todo-create",
+          "path": "00_Compound_Engineering/07_Skills/todo-create/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "todo-resolve",
+          "path": "00_Compound_Engineering/07_Skills/todo-resolve/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "todo-triage",
+          "path": "00_Compound_Engineering/07_Skills/todo-triage/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "tui-quality",
+          "path": "00_Compound_Engineering/07_Skills/tui-quality/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ui-elements",
+          "path": "00_Compound_Engineering/07_Skills/ui-elements/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "visual-language",
+          "path": "00_Compound_Engineering/07_Skills/visual-language/SKILL.md",
+          "has_frontmatter": true
+        }
+      ]
+    },
+    "00_Personal_Os_Stack": {
+      "count": 1,
+      "skills": [
+        {
+          "name": "00_Personal_Os_Stack",
+          "path": "00_Personal_Os_Stack/SKILL.md",
+          "has_frontmatter": true
+        }
+      ]
+    },
+    "00_Skill_Auditor": {
+      "count": 1,
+      "skills": [
+        {
+          "name": "00_Skill_Auditor",
+          "path": "00_Skill_Auditor/SKILL.md",
+          "has_frontmatter": true
+        }
+      ]
+    },
+    "01_Creacion_Contenidos": {
+      "count": 37,
+      "skills": [
+        {
+          "name": "01_Brand_Voice",
+          "path": "01_Creacion_Contenidos/01_Brand_Voice/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "01_Agent_Onboarding",
+          "path": "01_Creacion_Contenidos/04_Ai_Agents/01_Agent_Onboarding/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "02_Executive_Assistant",
+          "path": "01_Creacion_Contenidos/04_Ai_Agents/02_Executive_Assistant/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Head_Of_Marketing",
+          "path": "01_Creacion_Contenidos/04_Ai_Agents/03_Head_Of_Marketing/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_Content_Ideation",
+          "path": "01_Creacion_Contenidos/05_Content_Ideation/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "06_Offer_And_Bio_Writer",
+          "path": "01_Creacion_Contenidos/06_Offer_And_Bio_Writer/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "content-strategy",
+          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/content-strategy/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "copy-editing",
+          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/copy-editing/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "copywriting",
+          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/copywriting/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "email-sequence",
+          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/email-sequence/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "form-cro",
+          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/form-cro/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "launch-strategy",
+          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/launch-strategy/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "marketing-ideas",
+          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/marketing-ideas/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "marketing-psychology",
+          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/marketing-psychology/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "onboarding-cro",
+          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/onboarding-cro/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "page-cro",
+          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/page-cro/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "paywall-upgrade-cro",
+          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/paywall-upgrade-cro/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "popup-cro",
+          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/popup-cro/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "pricing-strategy",
+          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/pricing-strategy/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "product-marketing-context",
+          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/product-marketing-context/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "signup-flow-cro",
+          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/signup-flow-cro/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ab-test-setup",
+          "path": "01_Creacion_Contenidos/08_Marketing_Tech/ab-test-setup/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "analytics-tracking",
+          "path": "01_Creacion_Contenidos/08_Marketing_Tech/analytics-tracking/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "competitor-alternatives",
+          "path": "01_Creacion_Contenidos/08_Marketing_Tech/competitor-alternatives/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "free-tool-strategy",
+          "path": "01_Creacion_Contenidos/08_Marketing_Tech/free-tool-strategy/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "paid-ads",
+          "path": "01_Creacion_Contenidos/08_Marketing_Tech/paid-ads/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "programmatic-seo",
+          "path": "01_Creacion_Contenidos/08_Marketing_Tech/programmatic-seo/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "referral-program",
+          "path": "01_Creacion_Contenidos/08_Marketing_Tech/referral-program/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "schema-markup",
+          "path": "01_Creacion_Contenidos/08_Marketing_Tech/schema-markup/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "seo-audit",
+          "path": "01_Creacion_Contenidos/08_Marketing_Tech/seo-audit/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "social-content",
+          "path": "01_Creacion_Contenidos/08_Marketing_Tech/social-content/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "09_Compound_Engine",
+          "path": "01_Creacion_Contenidos/09_Compound_Engine/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "10_Premium_Image_Studio",
+          "path": "01_Creacion_Contenidos/10_Premium_Image_Studio/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "11_Video_Visuals_Producer",
+          "path": "01_Creacion_Contenidos/11_Video_Visuals_Producer/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "13_Remotion_Best_Practices",
+          "path": "01_Creacion_Contenidos/13_Remotion_Best_Practices/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "17_SEO_SOTA_Master",
+          "path": "01_Creacion_Contenidos/17_SEO_SOTA_Master/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "28_Carousel_Master",
+          "path": "01_Creacion_Contenidos/28_Carousel_Master/SKILL.md",
+          "has_frontmatter": true
+        }
+      ]
+    },
+    "02_Diseno_Ui_Ux": {
+      "count": 19,
+      "skills": [
+        {
+          "name": "04_Product_Design",
+          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "01_Taste_Skill",
+          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/01_Taste_Skill/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "02_Soft_Skill",
+          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/02_Soft_Skill/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Minimalist_Skill",
+          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/03_Minimalist_Skill/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "04_Redesign_Skill",
+          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/04_Redesign_Skill/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_Output_Skill",
+          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/05_Output_Skill/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "06_Dieter_Rams_Design",
+          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/06_Dieter_Rams_Design/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "07_Brand_Identity",
+          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/07_Brand_Identity/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "08_Brand_Voice_Generator",
+          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/08_Brand_Voice_Generator/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "09_Canvas_Diagram_Studio",
+          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/09_Canvas_Diagram_Studio/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "10_Visual_Language",
+          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/10_Visual_Language/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "11_Pencil_Design_Studio",
+          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/11_Pencil_Design_Studio/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "12_Shadcn",
+          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/12_Shadcn/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "1. TASTE SKILLS",
+          "path": "02_Diseno_Ui_Ux/03_Taste_Skills/1. TASTE SKILLS/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "2. DISEÑO MINIMALISTA",
+          "path": "02_Diseno_Ui_Ux/04_Diseno_Minimalista/2. DISEÑO MINIMALISTA/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "3. DIRECTRICES DE MARCA",
+          "path": "02_Diseno_Ui_Ux/05_Directrices_Marca/3. DIRECTRICES DE MARCA/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "4. EXCALIDRAW FLOWCHART",
+          "path": "02_Diseno_Ui_Ux/06_Excalidraw_Flowchart/4. EXCALIDRAW FLOWCHART/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "08_Design_Sota",
+          "path": "02_Diseno_Ui_Ux/08_Design_Sota/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "09_Ui_Ux_Pro_Max",
+          "path": "02_Diseno_Ui_Ux/09_Ui_Ux_Pro_Max/SKILL.md",
+          "has_frontmatter": true
+        }
+      ]
+    },
+    "03_Video_Media": {
+      "count": 6,
+      "skills": [
+        {
+          "name": "19_Video_Intel",
+          "path": "03_Video_Media/01_Video_Intel/19_Video_Intel/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "20_James_Cameron",
+          "path": "03_Video_Media/20_James_Cameron/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "01_Video_Prompt_Builder",
+          "path": "03_Video_Media/20_James_Cameron/01_Video_Prompt_Builder/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "02_Remotion_Browser_Search",
+          "path": "03_Video_Media/20_James_Cameron/02_Remotion_Browser_Search/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Remotion_Cards_Showcase",
+          "path": "03_Video_Media/20_James_Cameron/03_Remotion_Cards_Showcase/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "04_Remotion_Audio_Engine",
+          "path": "03_Video_Media/20_James_Cameron/04_Remotion_Audio_Engine/SKILL.md",
+          "has_frontmatter": true
+        }
+      ]
+    },
+    "04_Automatizacion": {
+      "count": 16,
+      "skills": [
+        {
+          "name": "01_N8N_JS",
+          "path": "04_Automatizacion/01_N8N_JS/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "02_N8N_Python",
+          "path": "04_Automatizacion/02_N8N_Python/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_N8N_Expressions",
+          "path": "04_Automatizacion/03_N8N_Expressions/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "04_N8N_MCP",
+          "path": "04_Automatizacion/04_N8N_MCP/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_N8N_Nodes",
+          "path": "04_Automatizacion/05_N8N_Nodes/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "06_N8N_Validation",
+          "path": "04_Automatizacion/06_N8N_Validation/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "07_N8N_Workflows",
+          "path": "04_Automatizacion/07_N8N_Workflows/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "n8n-code-javascript",
+          "path": "04_Automatizacion/08_N8N_Invictus/n8n-code-javascript/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "n8n-code-python",
+          "path": "04_Automatizacion/08_N8N_Invictus/n8n-code-python/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "n8n-expression-syntax",
+          "path": "04_Automatizacion/08_N8N_Invictus/n8n-expression-syntax/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "n8n-mcp-tools-expert",
+          "path": "04_Automatizacion/08_N8N_Invictus/n8n-mcp-tools-expert/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "n8n-node-configuration",
+          "path": "04_Automatizacion/08_N8N_Invictus/n8n-node-configuration/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "n8n-validation-expert",
+          "path": "04_Automatizacion/08_N8N_Invictus/n8n-validation-expert/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "n8n-workflow-patterns",
+          "path": "04_Automatizacion/08_N8N_Invictus/n8n-workflow-patterns/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "10_GWS_Client",
+          "path": "04_Automatizacion/10_GWS_Client/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "12_N8N",
+          "path": "04_Automatizacion/12_N8N/SKILL.md",
+          "has_frontmatter": true
+        }
+      ]
+    },
+    "05_Workflows": {
+      "count": 33,
+      "skills": [
+        {
+          "name": "01_Agent_Teams_Lite",
+          "path": "05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "02_Sdd_Init",
+          "path": "05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/02_Sdd_Init/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Sdd_Explore",
+          "path": "05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/03_Sdd_Explore/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "04_Sdd_Propose",
+          "path": "05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/04_Sdd_Propose/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_Sdd_Spec",
+          "path": "05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/05_Sdd_Spec/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "06_Sdd_Design",
+          "path": "05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/06_Sdd_Design/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "07_Sdd_Tasks",
+          "path": "05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/07_Sdd_Tasks/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "08_Sdd_Apply",
+          "path": "05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/08_Sdd_Apply/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "09_Sdd_Verify",
+          "path": "05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/09_Sdd_Verify/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "10_Sdd_Archive",
+          "path": "05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/10_Sdd_Archive/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "11_Judgment_Day",
+          "path": "05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/11_Judgment_Day/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "12_Go_Testing",
+          "path": "05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/12_Go_Testing/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "13_Branch_Pr",
+          "path": "05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/13_Branch_Pr/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "14_Issue_Creation",
+          "path": "05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/14_Issue_Creation/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "02_Project_Manager",
+          "path": "05_Workflows/02_Project_Manager/02_Project_Manager/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "01_Morning_Standup",
+          "path": "05_Workflows/02_Project_Manager/02_Project_Manager/01_Morning_Standup/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "02_Backlog_Processing",
+          "path": "05_Workflows/02_Project_Manager/02_Project_Manager/02_Backlog_Processing/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Weekly_Review",
+          "path": "05_Workflows/02_Project_Manager/02_Project_Manager/03_Weekly_Review/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "04_Sunday_Ritual",
+          "path": "05_Workflows/02_Project_Manager/02_Project_Manager/04_Sunday_Ritual/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_Best_Practices",
+          "path": "05_Workflows/02_Project_Manager/02_Project_Manager/05_Best_Practices/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "06_Finishing_A_Development_Branch",
+          "path": "05_Workflows/02_Project_Manager/02_Project_Manager/06_Finishing_A_Development_Branch/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "07_Running_Tests",
+          "path": "05_Workflows/02_Project_Manager/02_Project_Manager/07_Running_Tests/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "08_Content_Generation",
+          "path": "05_Workflows/02_Project_Manager/02_Project_Manager/08_Content_Generation/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Product_Manager",
+          "path": "05_Workflows/03_Product_Manager/03_Product_Manager/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "01_Brainstorming",
+          "path": "05_Workflows/03_Product_Manager/03_Product_Manager/01_Brainstorming/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "02_Technical_Planning",
+          "path": "05_Workflows/03_Product_Manager/03_Product_Manager/02_Technical_Planning/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Executing_Plans",
+          "path": "05_Workflows/03_Product_Manager/03_Product_Manager/03_Executing_Plans/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "04_Jira_Epic",
+          "path": "05_Workflows/03_Product_Manager/03_Product_Manager/04_Jira_Epic/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_Jira_Task",
+          "path": "05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "06_Branch_Pr",
+          "path": "05_Workflows/03_Product_Manager/03_Product_Manager/06_Branch_Pr/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "07_Writing_Strategy_Memos",
+          "path": "05_Workflows/03_Product_Manager/03_Product_Manager/07_Writing_Strategy_Memos/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "08_Prd",
+          "path": "05_Workflows/03_Product_Manager/03_Product_Manager/08_Prd/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "24_PM_Agent_Orchestrator",
+          "path": "05_Workflows/04_PM_Orchestrator/24_PM_Agent_Orchestrator/SKILL.md",
+          "has_frontmatter": true
+        }
+      ]
+    },
+    "06_Tools": {
+      "count": 77,
+      "skills": [
+        {
+          "name": "15_Skill_Creator_Oficial",
+          "path": "06_Tools/01_Skill_Creator/15_Skill_Creator_Oficial/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "skill-creator",
+          "path": "06_Tools/01_Skill_Creator/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "21_Skill_Template",
+          "path": "06_Tools/02_Skill_Template/21_Skill_Template/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "01_Skill_Template",
+          "path": "06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "14_Anthropic_Harness",
+          "path": "06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "01_Evaluator_Pattern",
+          "path": "06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/01_Evaluator_Pattern/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "02_Context_Management",
+          "path": "06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/02_Context_Management/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "03_Sprint_Contract",
+          "path": "06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/03_Sprint_Contract/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "04_Auto_Mode_Security",
+          "path": "06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/04_Auto_Mode_Security/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "05_Pass_At_Metrics",
+          "path": "06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/05_Pass_At_Metrics/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "07_Feature_List_JSON",
+          "path": "06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/07_Feature_List_JSON/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "08_Graders_Framework",
+          "path": "06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/08_Graders_Framework/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "07_DevOps",
+          "path": "06_Tools/04_DevOps/07_DevOps/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "01_Vercel_Deploy",
+          "path": "06_Tools/04_DevOps/07_DevOps/01_Vercel_Deploy/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "02_Supabase_Integration",
+          "path": "06_Tools/04_DevOps/07_DevOps/02_Supabase_Integration/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "03_MCP_Integration",
+          "path": "06_Tools/04_DevOps/07_DevOps/03_MCP_Integration/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "04_Observability",
+          "path": "06_Tools/04_DevOps/07_DevOps/04_Observability/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_Seo_Audit",
+          "path": "06_Tools/04_DevOps/07_DevOps/05_Seo_Audit/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "06_Seo_Optimization",
+          "path": "06_Tools/04_DevOps/07_DevOps/06_Seo_Optimization/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "07_Data_Visualization",
+          "path": "06_Tools/04_DevOps/07_DevOps/07_Data_Visualization/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "08_Vercel_React_Best_Practices",
+          "path": "06_Tools/04_DevOps/07_DevOps/08_Vercel_React_Best_Practices/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "09_Using_Git_Worktrees",
+          "path": "06_Tools/04_DevOps/07_DevOps/09_Using_Git_Worktrees/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "10_E2b_Sandbox",
+          "path": "06_Tools/04_DevOps/07_DevOps/10_E2b_Sandbox/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "11_Error_Handling_Patterns",
+          "path": "06_Tools/04_DevOps/07_DevOps/11_Error_Handling_Patterns/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "12_RTM",
+          "path": "06_Tools/04_DevOps/07_DevOps/12_RTM/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_Vibe_Coding",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "01_React_19",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/01_React_19/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "02_Nextjs_15",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/02_Nextjs_15/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Tailwind_4",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/03_Tailwind_4/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "architecture",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/04_Angular/architecture/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "core",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/04_Angular/core/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "forms",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/04_Angular/forms/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "performance",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/04_Angular/performance/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_Typescript",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/05_Typescript/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "06_Zustand_5",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/06_Zustand_5/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "07_Zod_4",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/07_Zod_4/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "08_Ai_Sdk_5",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/08_Ai_Sdk_5/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "09_Skill_Architect",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/09_Skill_Architect/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "10_Mcp_Client",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/10_Mcp_Client/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "11_Invoice_Intelligence",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/11_Invoice_Intelligence/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "12_Health_Data_Analyst",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/12_Health_Data_Analyst/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "13_Django_Drf",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/13_Django_Drf/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "15_Server_Api",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/15_Server_Api/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "16_Pytest",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/16_Pytest/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "17_Playwright",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/17_Playwright/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "18_Firecrawl",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/18_Firecrawl/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "19_Payload_Cms",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/19_Payload_Cms/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "20_Meilisearch",
+          "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/20_Meilisearch/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "06_Testing",
+          "path": "06_Tools/06_Testing/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "01_Test_Driven_Development",
+          "path": "06_Tools/06_Testing/01_Test_Driven_Development/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "02_Systematic_Debugging",
+          "path": "06_Tools/06_Testing/02_Systematic_Debugging/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Verify_And_Commit",
+          "path": "06_Tools/06_Testing/03_Verify_And_Commit/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "04_Test_Resource_Management",
+          "path": "06_Tools/06_Testing/04_Test_Resource_Management/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "05_Testing_Coverage",
+          "path": "06_Tools/06_Testing/05_Testing_Coverage/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "06_Go_Testing",
+          "path": "06_Tools/06_Testing/06_Go_Testing/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "07_Tui_Quality",
+          "path": "06_Tools/06_Testing/07_Tui_Quality/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "08_E2e_Testing",
+          "path": "06_Tools/06_Testing/08_E2e_Testing/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "09_Integration_Testing",
+          "path": "06_Tools/06_Testing/09_Integration_Testing/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "10_Edge_Case",
+          "path": "06_Tools/06_Testing/10_Edge_Case/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "11_Test_Coverage",
+          "path": "06_Tools/06_Testing/11_Test_Coverage/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "12_Evaluation",
+          "path": "06_Tools/06_Testing/12_Evaluation/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "13_Skill_Testing_Automation",
+          "path": "06_Tools/06_Testing/13_Skill_Testing_Automation/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "14_Commit_Hygiene",
+          "path": "06_Tools/06_Testing/14_Commit_Hygiene/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "15_Shellcheck",
+          "path": "06_Tools/06_Testing/15_Shellcheck/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "16_Docs_Alignment",
+          "path": "06_Tools/06_Testing/16_Docs_Alignment/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "17_Testing_Coverage",
+          "path": "06_Tools/06_Testing/17_Testing_Coverage/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "25_Octopus",
+          "path": "06_Tools/08_Octopus/25_Octopus/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "11_Doc_Processing",
+          "path": "06_Tools/11_Doc_Processing/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "01_Universal_Doc_Reader",
+          "path": "06_Tools/11_Doc_Processing/01_Universal_Doc_Reader/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "02_Batch_Doc_Processor",
+          "path": "06_Tools/11_Doc_Processing/02_Batch_Doc_Processor/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "03_Resumen_Extractor",
+          "path": "06_Tools/11_Doc_Processing/03_Resumen_Extractor/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "13_System_Master",
+          "path": "06_Tools/13_System_Master/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Find_Skills",
+          "path": "06_Tools/13_System_Master/03_Find_Skills/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "04_Mcp_Builder",
+          "path": "06_Tools/13_System_Master/04_Mcp_Builder/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_Google_Stitch_MCP",
+          "path": "06_Tools/13_System_Master/05_Google_Stitch_MCP/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "16_Silicon_Valley_Data_Analyst",
+          "path": "06_Tools/16_Silicon_Valley_Data_Analyst/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "27_Qmd",
+          "path": "06_Tools/27_Qmd/SKILL.md",
+          "has_frontmatter": true
+        }
+      ]
+    },
+    "07_Personal_Os": {
+      "count": 29,
+      "skills": [
+        {
+          "name": "18_Personal_Life_OS",
+          "path": "07_Personal_Os/01_Life_OS/18_Personal_Life_OS/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "01_Quick_Capture",
+          "path": "07_Personal_Os/01_Life_OS/18_Personal_Life_OS/01_Quick_Capture/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "02_Plan_My_Day",
+          "path": "07_Personal_Os/01_Life_OS/18_Personal_Life_OS/02_Plan_My_Day/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Daily_Notes",
+          "path": "07_Personal_Os/01_Life_OS/18_Personal_Life_OS/03_Daily_Notes/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "04_Recording_Mode",
+          "path": "07_Personal_Os/01_Life_OS/18_Personal_Life_OS/04_Recording_Mode/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_Returns_Tracker",
+          "path": "07_Personal_Os/01_Life_OS/18_Personal_Life_OS/05_Returns_Tracker/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "08_Personal_Os",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "01_Fork_Terminal",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "fork-terminal",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "parallel-orchestration",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/skills/parallel-orchestration/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "02_Agent_Orchestrator",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/02_Agent_Orchestrator/SKILL.md",
+          "has_frontmatter": false
+        },
+        {
+          "name": "03_System_Guardian",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/03_System_Guardian/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "04_Premium_Git_Manager",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/04_Premium_Git_Manager/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_Subagent_Driven_Development",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/05_Subagent_Driven_Development/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "06_Browser_Use",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/06_Browser_Use/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "07_Csv_Management",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/07_Csv_Management/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "08_Managing_Image_Assets",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/08_Managing_Image_Assets/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "09_Frictionless_Capture",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/09_Frictionless_Capture/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "10_Morning_Standup",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/10_Morning_Standup/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "11_Token_Management",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/11_Token_Management/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "12_Weekly_Review",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/12_Weekly_Review/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "13_Ritual_Cierre",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/13_Ritual_Cierre/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "14_Sync_Notes",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/14_Sync_Notes/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "15_Validate_Stack",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/15_Validate_Stack/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "16_Update_Links",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/16_Update_Links/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "17_Clean_System",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/17_Clean_System/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "18_Ritual_Dominical",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/18_Ritual_Dominical/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "19_Repo_Sync",
+          "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/19_Repo_Sync/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "26_Fantasticos",
+          "path": "07_Personal_Os/03_Fantasticos/26_Fantasticos/SKILL.md",
+          "has_frontmatter": true
+        }
+      ]
+    },
+    "08_Invictus_Web": {
+      "count": 14,
+      "skills": [
+        {
+          "name": "brainstorming",
+          "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/brainstorming/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "dispatching-parallel-agents",
+          "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/dispatching-parallel-agents/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "executing-plans",
+          "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/executing-plans/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "finishing-a-development-branch",
+          "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/finishing-a-development-branch/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "receiving-code-review",
+          "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/receiving-code-review/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "requesting-code-review",
+          "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/requesting-code-review/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "subagent-driven-development",
+          "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/subagent-driven-development/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "systematic-debugging",
+          "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/systematic-debugging/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "test-driven-development",
+          "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/test-driven-development/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "using-git-worktrees",
+          "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/using-git-worktrees/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "using-superpowers",
+          "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/using-superpowers/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "verification-before-completion",
+          "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/verification-before-completion/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "writing-plans",
+          "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/writing-plans/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "writing-skills",
+          "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/writing-skills/SKILL.md",
+          "has_frontmatter": true
+        }
+      ]
+    },
+    "09_Legacy_Archive": {
+      "count": 1,
+      "skills": [
+        {
+          "name": "09_Legacy_Archive",
+          "path": "09_Legacy_Archive/SKILL.md",
+          "has_frontmatter": false
+        }
+      ]
+    }
+  }
+}

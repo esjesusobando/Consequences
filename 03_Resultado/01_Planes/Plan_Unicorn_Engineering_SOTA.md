@@ -104,7 +104,7 @@
 | **2** | Crear estructura 06_Unicorn/ | ✅ COMPLETADO (v2.0 path) |
 | **3** | Poblar con conocimiento existente | ✅ COMPLETADO (~poblado) |
 | **4** | Integrar metodologías SOTA investigadas | ✅ COMPLETADO (tablas en plan) |
-| **5** | Sistema auto-mantenerse | 🔴 EN PROGRESO |
+| **5** | Sistema auto-mantenerse | ✅ COMPLETADO (regla output + estructura) |
 
 > **2026-04-25:** Fase 5 iniciada. Agregado sistema en `01_Personal_Os/02_Knowledge/06_Unicorn/README.md`:
 > - Engram auto-save hook con topic_keys
@@ -141,6 +141,55 @@ status: {active|deprecated}
 ### Tags
 [area, metodologia, contexto]
 ```
+
+---
+
+## 📦 Sistema de Output de Skills (Regla Obligatoria)
+
+> **Nueva Regla 2026-04-25:** Toda Skill que genere un resultado DEBE produzir 2 artefactos:
+
+| Artefacto | Descripción | Destino |
+|----------|-------------|---------|
+| **1. Resultado** | Output en `.md` con el contenido | `03_Resultado/00_Output_Skills/{Skill}/{secuencia}/` |
+| **2. Preview HTML** | Visualización de cómo se verá el resultado final | Misma carpeta + con prefijo `preview_` |
+
+### Previews por Tipo de Skill:
+
+| Tipo de Skill | Preview Requerido |
+|--------------|-------------------|
+| **LinkedIn Publishing** | HTML estilizado "como se vera en LinkedIn" + iconominimalista para copiar texto |
+| **General Content** | HTML Apple-style limpio (minimal + taste skill) |
+| **Code/Technical** | HTML con syntax highlighting estilo Apple |
+| **Analytics/Report** | HTML con gráficos limpios minimal |
+
+### Estructura de Destino (00_Output_Skills):
+
+```
+03_Resultado/00_Output_Skills/
+├── {Skill_Name}/
+│   ├── 01_first_result/
+│   │   ├── output.md
+│   │   ├── preview_{tipo}.html
+│   │   └── preview_linkedin.html (si aplica)
+│   ├── 02_second_result/
+│   │   └── ...
+│   └── index.md
+└── SEQUENCE.md (índice de secuencia global)
+```
+
+### Secuencia Perfecta (Orden de execution):
+1. `01_initial/` - Primer output de la sesión
+2. `02_refined/` - Output refinado post-feedback
+3. `03_final/` - Output final validado
+4. `04_iteration_N/` - Iteraciones adicionales
+
+### Diseño del Preview HTML (Apple Style):
+- Tipografía: SF Pro / -apple-system, BlinkMacSystemFont
+- Colores: Fondo blanco #FFFFFF, texto #1d1d1f, acentos #0066cc
+-Spacing: 16px base, max-width 600px para readability
+- Border-radius: 12px, sombras sutiles
+- Íconos minimal (SF Symbols o Lucide)
+- Loading states skeleton
 
 ---
 

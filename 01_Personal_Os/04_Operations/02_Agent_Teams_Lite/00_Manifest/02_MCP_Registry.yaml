@@ -1,0 +1,148 @@
+# MCP Registry — updated by 15_MCP_Sync_Hub.py
+# Drift Claude<->OpenCode: claude_only=16, opencode_only=1
+
+version: v3.0
+generated: 2026-04-25T16:53:47.628975
+totals:
+  claude_code: 33
+  opencode: 18
+  both: 17
+  claude_only: 16
+  opencode_only: 1
+mcps:
+  - name: Linear
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: Notion
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: Playwright
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: chrome-devtools
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: context7
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: engram
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: exa
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: excalidraw-yctimlin
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: filesystem
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: firecrawl-mcp
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: fireflies
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: mcp-obsidian
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: recall
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: supabase
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: supadata
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: task-master-ai
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: vercel
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: @magicuidesign/mcp
+    availability: claude_only
+    claude_code: true
+    opencode: false
+  - name: Amplitude
+    availability: claude_only
+    claude_code: true
+    opencode: false
+  - name: TestSprite
+    availability: claude_only
+    claude_code: true
+    opencode: false
+  - name: aim-memory-bank
+    availability: claude_only
+    claude_code: true
+    opencode: false
+  - name: docker
+    availability: claude_only
+    claude_code: true
+    opencode: false
+  - name: eagle-mcp
+    availability: claude_only
+    claude_code: true
+    opencode: false
+  - name: github
+    availability: claude_only
+    claude_code: true
+    opencode: false
+  - name: google-workspace
+    availability: claude_only
+    claude_code: true
+    opencode: false
+  - name: n8n-mcp
+    availability: claude_only
+    claude_code: true
+    opencode: false
+  - name: nanobanana
+    availability: claude_only
+    claude_code: true
+    opencode: false
+  - name: notebooklm
+    availability: claude_only
+    claude_code: true
+    opencode: false
+  - name: obsidian-api
+    availability: claude_only
+    claude_code: true
+    opencode: false
+  - name: pencil
+    availability: claude_only
+    claude_code: true
+    opencode: false
+  - name: qmd
+    availability: claude_only
+    claude_code: true
+    opencode: false
+  - name: stackoverflow
+    availability: claude_only
+    claude_code: true
+    opencode: false
+  - name: zai-mcp-server
+    availability: claude_only
+    claude_code: true
+    opencode: false
+  - name: eagle
+    availability: opencode_only
+    claude_code: false
+    opencode: true

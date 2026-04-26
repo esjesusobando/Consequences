@@ -87,15 +87,15 @@ def run_structure_audit():
         f"{Fore.CYAN}[STRUCTURE] Validando estructura del proyecto...{Style.RESET_ALL}"
     )
 
-    # Dimensiones del proyecto (Pure Green v6.1)
+    # Dimensiones del proyecto (v3.0 Consequences - Pure Green)
     DIMENSIONS = [
         "00_Winter_is_Coming",
-        "01_Core",
-        "02_Knowledge",
-        "03_Tasks",
-        "04_Operations",
-        "05_Archive",
-        "08_Scripts_Os",
+        "01_Personal_Os",
+        "02_Playground",
+        "03_Resultado",
+        ".agent",
+        ".atl",
+        ".mcp.json",
     ]
 
     errors = 0

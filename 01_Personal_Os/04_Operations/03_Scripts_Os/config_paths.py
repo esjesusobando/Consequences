@@ -162,6 +162,26 @@ UNICORN_DIR = KNOWLEDGE_DIR
 SERVER_DIR = CORE_DIR / "02_Tools" / "07_Server"
 AIPM_ROOT = SERVER_DIR / "AIPM"
 
+# =============================================================================
+# JARVIS v3.0 — Manifest + HUBs nuevos (Consequences 3.0)
+# =============================================================================
+
+MANIFEST_DIR       = OPERATIONS_DIR / "02_Agent_Teams_Lite" / "00_Manifest"
+TELEMETRY_DIR      = OPERATIONS_DIR / "00_Context_LLM" / "12_Telemetry"
+OS_DIRECTORY_FILE  = ROOT_DIR / "OS_DIRECTORY.md"
+
+# HUB scripts (paths dinámicos vía ENGINE_DIR)
+HUB_AUDITOR        = ENGINE_DIR / "01_Auditor_Hub.py"
+HUB_GIT            = ENGINE_DIR / "02_Git_Hub.py"
+HUB_VALIDATOR      = ENGINE_DIR / "05_Validator_Hub.py"
+HUB_AUTO_LEARN     = ENGINE_DIR / "11_Auto_Learn_Hub.py"
+HUB_HEALTH_METRICS = ENGINE_DIR / "14_Health_Metrics_Hub.py"
+HUB_MCP_SYNC       = ENGINE_DIR / "15_MCP_Sync_Hub.py"
+HUB_SYSTEM_MAPPER  = ENGINE_DIR / "16_System_Mapper_Hub.py"
+HUB_WATCHDOG       = ENGINE_DIR / "17_Watchdog_Hub.py"
+HUB_TELEMETRY      = ENGINE_DIR / "18_Telemetry_Hub.py"
+HUB_VALIDATE_FM    = ENGINE_DIR / "18_Validate_Skill_Frontmatter.py"
+
 # Archivos específicos
 BACKLOG_FILE = MATRIX_DIR / "BACKLOG.md"
 
@@ -184,15 +204,15 @@ if __name__ == "__main__":
     print(f"  MATRIX_DIR: {MATRIX_DIR}")
     print()
     print("Verificando existencia de directorios...")
-    for name, path in [
+    for name, dir_path in [
         ("ROOT", ROOT_DIR),
         ("TASKS", TASKS_DIR),
         ("EVALS", EVALS_DIR),
         ("SERVER", SERVER_DIR),
         ("MATRIX", MATRIX_DIR),
     ]:
-        status = "[OK]" if path.exists() else "[FAIL]"
-        print(f"  [{status}] {name}: {path}")
+        status_str = "[OK]" if dir_path.exists() else "[FAIL]"
+        print(f"  {status_str} {name}: {dir_path}")
 
 
 # =============================================================================
@@ -202,7 +222,8 @@ if __name__ == "__main__":
 
 SCRIPT_LOCATION_MAP = {
     # === v6.2 AUDITORS Y VALIDATORS ===
-    "33_Parallel_Audit_Pro.py": ENGINE_DIR / "03_Validator",  # directorio, script se agrega en get_skill_script
+    # directorio — get_skill_script agrega el nombre del script al final
+    "33_Parallel_Audit_Pro.py": ENGINE_DIR / "03_Validator",
     "34_Skill_Auditor.py": ENGINE_DIR / "03_Validator",
     "37_Linter_Autofix.py": ENGINE_DIR / "03_Validator",
     "40_Validate_Rules.py": ENGINE_DIR / "03_Validator",
@@ -267,9 +288,9 @@ def get_skill_script(script_name):
     Retorna: Path al script o None si no se encuentra
     """
     # Edge case: empty or invalid name
-    if not script_name or not script_name.strip() or not script_name.endswith('.py'):
+    if not script_name or not script_name.strip() or not script_name.endswith(".py"):
         return None
-    
+
     if script_name in SCRIPT_LOCATION_MAP:
         script_dir = SCRIPT_LOCATION_MAP[script_name]
         # Si es archivo directo, usar ese; si es directorio, agregar script_name
@@ -279,20 +300,20 @@ def get_skill_script(script_name):
             script_path = script_dir / script_name
         if script_path.exists():
             return script_path
-    
-    # Fallback: buscar en ubicación legacy original + 14_Otros
+
+    # Fallback: buscar en ubicaciones legacy + 14_Otros
     legacy_paths = [
         ENGINE_DIR / "14_Otros" / script_name,
         ENGINE_DIR / "04_Workflow" / script_name,
         ENGINE_DIR / "06_Auditor" / script_name,
         ENGINE_DIR / "01_Ritual" / script_name,
         ENGINE_DIR / "02_Tool" / script_name,
-        ENGINE_DIR / ".backup" / "10_Legacy_backup_20260420" / script_name,  # Archived Avenger scripts
+        ENGINE_DIR / ".backup" / "10_Legacy_backup_20260420" / script_name,
     ]
-    for path in legacy_paths:
-        if path.exists():
-            return path
-    
+    for legacy_path in legacy_paths:
+        if legacy_path.exists():
+            return legacy_path
+
     # Fallback: buscar en skills folders directamente
     for skill_dir in SKILLS_DIR.iterdir():
         if skill_dir.is_dir():
@@ -301,5 +322,5 @@ def get_skill_script(script_name):
                 script_path = scripts_dir / script_name
                 if script_path.exists():
                     return script_path
-    
+
     return None

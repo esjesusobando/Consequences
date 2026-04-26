@@ -1,0 +1,37 @@
+{
+  "version": "v3.0",
+  "generated": "2026-04-25T13:55:58",
+  "personal_os": {
+    "name": "PersonalOS",
+    "version": "v2.1 -> v3.0 (in progress)",
+    "root": "Think_Different"
+  },
+  "totals": {
+    "mcps_claude": 33,
+    "mcps_opencode": 18,
+    "skills": 297,
+    "skill_areas": 12,
+    "agents_source": 52,
+    "agents_backup": 52,
+    "hubs": 15,
+    "workflows": 27,
+    "workflow_categories": 5,
+    "hooks": 10,
+    "hook_phases": 6,
+    "rules": 10,
+    "integrations": 2
+  },
+  "integrations": [
+    "01_Fireflies",
+    "02_Granola"
+  ],
+  "manifest_files": [
+    "01_OS_Inventory.json",
+    "02_MCP_Registry.yaml",
+    "03_Agent_Catalog.yaml",
+    "04_Skill_Index.json",
+    "05_HUB_Catalog.yaml",
+    "06_Workflow_Graph.yaml",
+    "07_Hook_Registry.yaml"
+  ]
+}

@@ -220,11 +220,15 @@ Think_Different/
 │   │   ├── 00_Context_LLM/  # Memoria, notas, knowledge brain
 │   │   ├── 01_Auto_Improvement/ # Motor auto-mejora
 │   │   ├── 02_Agent_Teams_Lite/ # SDD registry
-│   │   ├── 03_Scripts_Os/   # 🔧 14 HUBs operativos
-│   │   │   ├── 00_Sound_Engine.py  # Motor de sonido
-│   │   │   ├── 01_Auditor_Hub.py   # Auditorías
-│   │   │   ├── 03_Validator/       # Validadores
-│   │   │   └── 13_Auditors_Os/     # Auditores especializados
+│   │   ├── 03_Scripts_Os/   # 🔧 18 HUBs operativos
+│   │   │   ├── 00_Sound_Engine.py        # Motor de sonido
+│   │   │   ├── 01_Auditor_Hub.py         # Auditorías
+│   │   │   ├── 15_MCP_Sync_Hub.py        # Sync Claude↔OpenCode
+│   │   │   ├── 16_System_Mapper_Hub.py   # Manifest JARVIS
+│   │   │   ├── 17_Watchdog_Hub.py        # Health watchdog
+│   │   │   ├── 18_Telemetry_Hub.py       # Dashboard métricas
+│   │   │   ├── 03_Validator/             # Validadores
+│   │   │   └── 13_Auditors_Os/           # Auditores especializados
 │   │   └── 05_Projects/     # Proyectos activos
 │   └── 05_Archive/          # 📦 Legacy archivado
 └── .agent/                  # 💾 BACKUP ESTRATÉGICO (sincronizado con 01_Personal_Os/01_Core/)
@@ -508,6 +512,12 @@ Centralized HUBs in `01_Personal_Os/04_Operations/03_Scripts_Os/` (v2.0 Conseque
 | **08_Workflow_Hub.py** | Workflow automation |
 | **09_Data_Hub.py** | Data processing and analytics |
 | **10_General_Hub.py** | General utilities |
+| **11_Auto_Learn_Hub.py** | Motor de automejora y aprendizaje |
+| **14_Health_Metrics_Hub.py** | Health metrics y reportes |
+| **15_MCP_Sync_Hub.py** | Detecta y sincroniza drift Claude↔OpenCode |
+| **16_System_Mapper_Hub.py** | Genera 7 manifests JARVIS (9s scan) |
+| **17_Watchdog_Hub.py** | Health watchdog — integridad, drift, frontmatter |
+| **18_Telemetry_Hub.py** | Dashboard ASCII de métricas de uso |
 
 ### Dynamic Paths
 

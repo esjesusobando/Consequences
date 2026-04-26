@@ -53,25 +53,20 @@ function playSound(): void {
 }
 
 export const SoundOnCompletePlugin: Plugin = async (ctx) => {
-	console.log("[SOUND-PLUGIN] Initialized!")
-	
 	// Hook: fires after each tool completes
 	const handleToolAfter = async (input: ToolInput) => {
-		console.log("[SOUND] Tool after:", input.tool)
 		playSound()
 	}
-	
+
 	// Fallback: fires when session becomes idle
 	const handleEvent = async ({ event }: { event: Event }) => {
 		const runtimeEvent = event as SessionEvent
-		
+
 		if (runtimeEvent.type === "session.idle") {
-			const sessionID = runtimeEvent.properties.sessionID
-			console.log("[SOUND] Session idle:", sessionID)
 			playSound()
 		}
 	}
-	
+
 	return {
 		"tool.execute.after": handleToolAfter,
 		event: handleEvent,

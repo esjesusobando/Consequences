@@ -1,5 +1,45 @@
 # Changelog
 
+## 2.0.0 - 2026-04-25
+
+### Added — Consequences 3.0 JARVIS Integration
+
+- **`OS_DIRECTORY.md`** (raíz): Directorio JARVIS maestro <2KB — entry point para todos los agentes
+- **`16_System_Mapper_Hub.py`**: Genera 7 manifests del OS en 9s via `os.walk` + poda agresiva
+- **`15_MCP_Sync_Hub.py`**: Detecta y reporta drift entre Claude Code (33) y OpenCode (18)
+- **`17_Watchdog_Hub.py`**: Health watchdog — valida integridad del manifest, drift MCP, frontmatter
+- **`18_Telemetry_Hub.py`**: Dashboard ASCII de métricas de uso por HUB
+- **`18_Validate_Skill_Frontmatter.py`**: Detecta 32 skills sin frontmatter YAML
+- **`02_Agent_Teams_Lite/00_Manifest/`**: 7 manifests generados — OS_Inventory, MCP_Registry, Agent_Catalog, Skill_Index, HUB_Catalog, Workflow_Graph, Hook_Registry
+- **`.atl/agent-skill-matrix.yaml`**: Matrix de 52 agentes × skills × HUBs × MCPs
+- **`01_Core/01_Rules/09_Agent_Teams_Protocol.mdc`**: Protocolo Forked Subagents documentado
+
+### Changed
+
+- **`detector.py`**: Refactor `rglob("*")` → `os.walk` con poda. Performance: 1m51s → **1.5s** (100x)
+- **`CLAUDE.md`**: Sección JARVIS 3.0 + tabla de estado actualizada a Pure Green v3.0
+- **`README.md`**: Skills 165+ → 297, MCPs 36 → 33/18, HUBs 14 → 18, agentes 35+ → 52
+- **`README.md`** (Dream Team, Specialists, Compound): READMEs de ecosistemas creados
+
+### Tags
+
+- `v2.1-pre-consequences-3.0` — snapshot pre-migración
+- `v3.0-consequences-integrated` — cierre del plan
+
+### Ground Truth (manifest scan 2026-04-25)
+
+| Componente | Valor verificado |
+|-----------|-----------------|
+| MCPs Claude Code | 33 |
+| MCPs OpenCode | 18 (drift: 16 faltantes) |
+| Skills | 297 |
+| Agentes | 52 source + 52 mirror |
+| HUBs | 18 |
+| Workflows | 27 |
+| Hooks | 10 (6 fases) |
+
+---
+
 ## 1.9.0 - 2026-04-21
 
 ### Fixed — Full System Audit & Documentation Update

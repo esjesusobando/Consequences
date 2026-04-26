@@ -1,0 +1,39 @@
++==============================================================+
+|       LEGACY PATH CLEANUP -- SCAN REPORT                |
++==============================================================+
+|  Archivos con refs legacy: 128                        |
+|  Total refs legacy:         559                        |
++==============================================================+
+|  Por tipo de ref legacy:                                |
+|    01_Core/03_Skills    -> 169 refs en 169 files  |
+|    06_Playground        ->  38 refs en  38 files  |
+|    08_Scripts_Os        -> 352 refs en 352 files  |
++==============================================================+
+|  Archivos afectados (primeros 20):                       |
+|    1. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\01_Context_Protocol.mdc |
+|    2. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\02_Pilar_Base.mdc |
+|    3. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\03_Pilar_Motor.mdc |
+|    4. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\04_Pilar_Estrategia.mdc |
+|    5. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\05_ritual-integrity.mdc |
+|    6. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\06_Claude_Integration.mdc |
+|    7. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\07_Skill_Fusion.mdc |
+|    8. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\08_Observability.mdc |
+|    9. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\09_Elite_Reporting.mdc |
+|    10. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\10_Context_Management.mdc |
+|    11. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\11_Workflow_Standards.mdc |
+|    12. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\12_Nexus-Routing.mdc |
+|    13. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\13_Testing_Resource_Management.mdc |
+|    14. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\14_Invoice_Intelligence.mdc |
+|    15. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\15_Backlog_Processing.mdc |
+|    16. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\16_Brainstorming.mdc |
+|    17. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\17_Genesis.mdc |
+|    18. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\18_Morning_Standup.mdc |
+|    19. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\19_Planning.mdc |
+|    20. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\20_Recap_Morning.mdc |
+|    ... y 108 mas archivos                      |
++==============================================================+
+|  ESTRATEGIA:                                             |
+|    1. Archivos criticos -> fix MANUAL                     |
+|    2. Skills/Agentes -> script --dry-run primero          |
+|    3. Archive/Backup -> MARCAR con <!-- LEGACY-OK -->    |
++==============================================================+
