@@ -2,20 +2,31 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-/* Fonts - Apple/SOTA */
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+/* ============================================
+   ELITE PORTFOLIO — Exaggerated Minimalism v3
+   Design Tokens Unificados
+   ============================================ */
+
+/* Google Fonts - UNA sola familia para todo */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Core colors - Exaggerated Minimalism */
-  --ink: #09090B;
-  --paper: #FAFAFA;
-  --muted: #52525B;
-  --accent: #2563EB;
-  --line: rgba(9, 9, 11, 0.08);
+  /* ============================================
+     COLOR PALETTE - Exaggerated Minimalism
+     Monocromático + 1 accent
+     ============================================ */
+  --ink: #0A0A0A;        /* Negro absoluto */
+  --paper: #FAFAFA;        /* Blanco/off-white */
+  --muted: #6B6B6B;      /* Gris medio para texto secundario */
+  --subtle: #E5E5E5;      /* Bordes sutiles, backgrounds */
   
-  /* Glass effect support */
-  --glass-bg: rgb(250, 250, 250);
-  --glass-blur: 20px;
+  /* Accent ÚNICO — Emerald desaturado */
+  --accent: #059669;
+  --accent-subtle: #ECFDF5;
+  
+  /* Semantic colors */
+  --line: rgba(10, 10, 10, 0.08);
+  --glass-bg: rgba(250, 250, 250, 0.8);
 }
 
 html {
@@ -33,49 +44,122 @@ body {
   overflow-x: hidden;
 }
 
-/* Typography */
-.serif { font-family: 'Instrument Serif', Georgia, serif; }
+/* ============================================
+   TYPOGRAPHY - UNA sola fuente
+   ============================================ */
 
-/* Smooth images */
-img { display: block; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
 
-/* Custom scrollbar - thin minimal */
-::-webkit-scrollbar { width: 3px; }
-::-webkit-scrollbar-track { background: var(--paper); }
-::-webkit-scrollbar-thumb { 
-  background: var(--accent); 
-  border-radius: 9999px; 
+.display-xl {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.display-lg {
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  font-weight: 500;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.text-base {
+  font-size: 0.9375rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR - Minimal
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--subtle);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
 }
 
 /* Selection */
 ::selection {
   background: var(--accent);
-  color: var(--ink);
+  color: var(--paper);
 }
 
-/* Focus states */
+/* Focus */
 :focus-visible {
   outline: 2px solid var(--ink);
   outline-offset: 2px;
 }
 
-/* Hover reveal utility */
-.reveal-on-hover { opacity: 0; transition: opacity 0.3s ease; }
-.group:hover .reveal-on-hover { opacity: 1; }
+/* ============================================
+   ANIMATIONS - Stagger fade-up
+   ============================================ */
 
-/* Stagger fade-up - for CSS fallback */
 @keyframes fade-up {
-  from { opacity: 0; transform: translateY(28px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.anim-0 { animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.0s both; }
-.anim-1 { animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both; }
-.anim-2 { animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.22s both; }
-.anim-3 { animation: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.34s both; }
+.animate-fade-up {
+  animation: fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
 
-/* Smooth page transitions */
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: 0.4s;
+.delay-0 { animation-delay: 0s; }
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+
+/* ============================================
+   UTILITIES - Exaggerated Minimalism
+   ============================================ */
+
+.section-padding {
+  padding: clamp(4rem, 10vw, 8rem) 1.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Hover reveal */
+.hover-reveal {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.group:hover .hover-reveal {
+  opacity: 1;
 }

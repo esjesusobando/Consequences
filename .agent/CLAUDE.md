@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working in this
 
 ---
 
-# Constitucion Think Different — PersonalOS v2.0 Consequences
+# Constitucion Think Different — PersonalOS v3.0 Consequences
 
 ## REGLA 00: Protocolo Genesis (OBLIGATORIO)
 
@@ -90,7 +90,7 @@ Al iniciar una nueva sesion, ejecutar esta secuencia antes de responder:
 
 ---
 
-# Arquitectura del Sistema (v2.0 Consequences — 4 carpetas raíz)
+# Arquitectura del Sistema (v3.0 Consequences — 4 carpetas raíz)
 
 ```
 Think_Different/
@@ -100,8 +100,8 @@ Think_Different/
 │   │   ├── 00_Workflows_Os/      # Workflows (Personal, Marvel, Gentleman, Hillary, CE)
 │   │   ├── 01_Rules/             # 10 reglas del sistema (.mdc)
 │   │   └── 02_Tools/             # Todas las herramientas
-│   │       ├── 01_Agents/        # Dream Team + 23 Specialists
-│   │       ├── 02_Skills/        # 9 áreas funcionales (limpias)
+│   │       ├── 01_Agents/        # Dream Team + Specialists (52 agentes)
+│   │       ├── 02_Skills/        # 15 áreas funcionales
 │   │       ├── 03_Mcp/           # Config MCPs (33 activos)
 │   │       ├── 04_Integrations/  # Fireflies, Granola
 │   │       ├── 05_Hooks/         # Pre/Post/Lifecycle/Sound/Harness
@@ -115,7 +115,7 @@ Think_Different/
 │   │   ├── 00_Context_LLM/       # Memoria, notas, knowledge brain
 │   │   ├── 01_Auto_Improvement/  # Motor de auto-mejora
 │   │   ├── 02_Agent_Teams_Lite/  # SDD skills registry
-│   │   ├── 03_Scripts_Os/        # 14 HUBs + scripts
+│   │   ├── 03_Scripts_Os/        # 18 HUBs + scripts
 │   │   ├── 04_Installer/         # Scripts de instalación
 │   │   └── 05_Projects/          # Proyectos activos
 │   └── 05_Archive/               # Legacy y repos de referencia
