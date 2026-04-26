@@ -1,6 +1,5 @@
 "use client";
 
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { useRef } from "react";
 
 interface HeroProps {
@@ -10,119 +9,58 @@ interface HeroProps {
 }
 
 export function Hero({
-  name = "CREATOR",
-  role = "Product Designer",
+  name = "Sofía Mayen",
+  role = "Product Designer & Creative Director",
   tagline = "Crafting experiences that feel inevitable.",
 }: HeroProps) {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollY } = useScroll();
-  
-  // Parallax effects - subtle
-  const y = useTransform(scrollY, [0, 500], [0, 150]);
-  const opacity = useTransform(scrollY, [0, 400], [1, 0]);
-  
-  // Spring animation for smooth feel
-  const springY = useSpring(y, { stiffness: 80, damping: 25 });
-  const springOpacity = useSpring(opacity, { stiffness: 80, damping: 25 });
-
-  const currentYear = new Date().getFullYear();
-
   return (
-    <section 
-      ref={containerRef}
-      className="relative min-h-[100dvh] w-full flex flex-col justify-center px-6 md:px-12 lg:px-16 overflow-hidden"
-    >
-      {/* Background - clean minimal */}
-      <div 
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background: 'radial-gradient(ellipse 100% 80% at 50% 120%, rgba(9,9,11,0.03) 0%, transparent 50%)',
-        }}
-      />
-
-      {/* Main content */}
-      <motion.div 
-        style={{ y: springY, opacity: springOpacity }}
-        className="relative z-10 max-w-7xl"
-      >
+    <section className="min-h-[100dvh] flex flex-col justify-center section-padding">
+      {/* Main content - centered, simple */}
+      <div className="container">
         {/* Role - minimal, uppercase */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="text-xs uppercase tracking-[0.3em] mb-6 md:mb-10 text-[var(--muted)] font-medium"
-        >
+        <p className="text-sm uppercase tracking-widest text-muted mb-8 animate-fade-up delay-0">
           {role}
-        </motion.p>
+        </p>
 
-        {/* GIANT TYPOGRAPHY - Archivo 900 */}
-        <h1 
-          className="leading-[0.82] tracking-tight"
-          style={{
-            fontSize: 'clamp(3.5rem, 14vw, 13rem)',
-            fontWeight: 900,
-            letterSpacing: '-0.04em',
-            color: 'var(--ink)',
-            fontFamily: "'Archivo', sans-serif",
-          }}
-        >
-          <motion.span
-            initial={{ opacity: 0, y: 80 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-            className="block"
-          >
-            {name}
-          </motion.span>
+        {/* Giant typography - single line, centered */}
+        <h1 className="display-xl text-center text-ink animate-fade-up delay-1">
+          {name}
         </h1>
 
-        {/* Tagline - clean, minimal */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-8 md:mt-12 text-base md:text-lg max-w-lg text-[var(--muted)] font-normal"
-        >
+        {/* Tagline - clean, simple */}
+        <p className="text-lg text-muted text-center mt-8 max-w-xl mx-auto animate-fade-up delay-2">
           {tagline}
-        </motion.p>
-      </motion.div>
+        </p>
 
-      {/* Year - minimal, corners */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.1, duration: 0.6 }}
-        className="absolute top-8 right-6 md:right-16 text-xs tracking-[0.15em] uppercase text-[var(--muted)] font-medium"
-      >
-        {currentYear}
-      </motion.div>
+        {/* CTA - minimal button */}
+        <div className="flex justify-center mt-12 animate-fade-up delay-3">
+          <a
+            href="#projects"
+            className="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-ink hover:text-accent transition-colors duration-300"
+          >
+            View Work
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1.5}
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
 
-      {/* Scroll indicator - minimal line */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.3, duration: 0.6 }}
-        className="absolute bottom-10 left-6 md:left-16 flex items-center gap-4"
-      >
-        <span 
-          className="text-xs uppercase tracking-[0.2em] text-[var(--muted)]"
-        >
-          Scroll
-        </span>
-        <motion.div
-          animate={{ y: [0, 12, 0] }}
-          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-          className="w-px h-10"
-          style={{ 
-            background: 'var(--muted)',
-            opacity: 0.4
-          }}
-        />
-      </motion.div>
-
-      {/* Corner accents - subtle */}
-      <div className="absolute top-8 left-6 md:left-16 w-3 h-3 border-l border-t border-[var(--line)]" />
-      <div className="absolute bottom-10 right-6 md:right-16 w-3 h-3 border-r border-b border-[var(--line)]" />
+      {/* Corner accents - subtle lines */}
+      <div className="absolute top-6 left-6 w-8 h-px bg-subtle hidden lg:block" />
+      <div className="absolute top-6 left-6 w-px h-8 bg-subtle hidden lg:block" />
+      <div className="absolute bottom-6 right-6 w-8 h-px bg-subtle hidden lg:block" />
+      <div className="absolute bottom-6 right-6 w-px h-8 bg-subtle hidden lg:block" />
     </section>
   );
 }
