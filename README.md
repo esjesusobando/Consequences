@@ -82,7 +82,7 @@ Think_Different/
 
 ## 🛠️ Componentes Principales
 
-### Skills System (Consolidación v1.1 Alpha — 9 Áreas)
+### Skills System (v3.0 Consequences — 12 Áreas Funcionales)
 
 Para la versión v1.1, hemos evolucionado hacia una organización por **Áreas Maestras** para mejorar el discovery y la orquestación.
 
@@ -98,37 +98,28 @@ Para la versión v1.1, hemos evolucionado hacia una organización por **Áreas M
 | **08_Invictus_Web**                                  | Plugins, Taste, Search                               | Capacidades extendidas de navegación web.                                 |
 | **09_Legacy_Archive**                                | Backup, Historical                                   | Soporte histórico y archivo Octopus.                                      |
 
+### Skills Index (Referencia Completa)
+
+| Área                               | Descripción                                                          |
+|-------------------------------------|----------------------------------------------------------------------|
+| **00_Compound_Engineering**         | Core CE (Spider, Avengers)                                           |
+| **00_Personal_Os_Stack**            | Stack base OS + Gcierr                                               |
+| **00_Skill_Auditor**                | Auditoría de skills                                                  |
+| **01_Creacion_Contenidos**          | Brand, YouTube, SEO, Carousel                                        |
+| **02_Diseno_Ui_Ux**                 | Product Design, UI/UX, Taste                                         |
+| **03_Video_Media**                  | Video Intel, James Cameron                                           |
+| **04_Automatizacion**               | N8N, Firecrawl                                                       |
+| **05_Workflows**                    | Agent Teams, PM, Orchestrator                                        |
+| **06_Tools**                        | Skill Creator, Testing, DevOps, Data Analyst                         |
+| **07_Personal_Os**                  | Life OS, Hillary, Rituales                                           |
+| **08_Invictus_Web**                 | Playwright, Superpowers                                              |
+| **09_Legacy_Archive**               | Skills obsoletas                                                     |
+
+> Índice completo: `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
+
 ---
 
-### Detalle de Capacidades (Categorías Técnicas)
-*Este listado detalla las 22 categorías que alimentan las Áreas Maestras.*
-
-| Categoría                                                  | Skills                                | Propósito                                                  |
-|------------------------------------------------------------|---------------------------------------|------------------------------------------------------------|
-| **00_Compound_Engineering**                                | 8                                     | Compound Engineering (CE)                                  |
-| **00_Personal_Os_Stack**                                   | Core                                  | Stack del OS                                               |
-| **00_Skill_Auditor**                                       | Auditor                               | Validación de skills                                       |
-| **01_Agent_Teams_Lite**                                    | 9                                     | SDD Workflows (init→archive)                               |
-| **02_Project_Manager**                                     | 8                                     | Gestión de proyectos                                       |
-| **03_Product_Manager**                                     | 7                                     | Product management                                         |
-| **04_Product_Design**                                      | 11                                    | Diseño de producto                                         |
-| **05_Vibe_Coding**                                         | 17                                    | Frameworks modernos                                        |
-| **06_Testing**                                             | 17                                    | Testing estratégico                                        |
-| **07_DevOps**                                              | 12                                    | DevOps y deploy                                            |
-| **08_Personal_Os**                                         | 9                                     | OS personal workflows                                      |
-| **09_Marketing**                                           | 10                                    | Marketing y contenido                                      |
-| **10_Backup**                                              | 5                                     | Legacy support                                             |
-| **11_Doc_Processing**                                      | 3                                     | Procesamiento de docs                                      |
-| **12_N8N**                                                 | 7                                     | Automatizaciones N8N                                       |
-| **13_System_Master**                                       | Master                                | Skill maestro del sistema                                  |
-| **14_Anthropic_Harness**                                   | 8                                     | Evaluadores AI                                             |
-| **15_Skill_Creator_Oficial**                               | v2.0                                  | Creación de skills SOTA                                    |
-| **16_Silicon_Valley_Data**                                 | Analyst                               | Data analysis SOTA                                         |
-| **17_SEO_SOTA_Master**                                     | SEO                                   | Technical SEO                                              |
-| **18_Personal_Life_OS**                                    | Life OS                               | Hillary integration                                        |
-| **19_Video_Intel**                                         | Video                                 | Video AI                                                   |
-
-### HUBs (01_Personal_Os/04_Operations/03_Scripts_Os/) — 18 HUBs
+### HUBs v3.0 (19 HUBs)
 
 | Hub                                            | Script                                                  | Propósito                                                       |
 |------------------------------------------------|---------------------------------------------------------|-----------------------------------------------------------------|
@@ -147,10 +138,14 @@ Para la versión v1.1, hemos evolucionado hacia una organización por **Áreas M
 | **Context Bar**                                | `12_Context_Usage_Bar.py`                               | Barra de uso de contexto                                        |
 | **Beautify Tables**                            | `13_Beautify_Tables.py`                                 | Formateo de tablas markdown                                     |
 | **Beauty Doc**                                 | `14_Beauty_Doc.py`                                      | Documentos embellecidos                                         |
-| **MCP Sync**                                   | `15_MCP_Sync_Hub.py`                                    | Sync drift Claude ↔ OpenCode                                    |
-| **System Mapper**                              | `16_System_Mapper_Hub.py`                               | Genera manifest JARVIS (9s scan)                                |
-| **Watchdog**                                   | `17_Watchdog_Hub.py`                                    | Health check automático                                         |
-| **Telemetry**                                  | `18_Telemetry_Hub.py`                                   | Dashboard de uso y métricas                                     |
+| **MCP Sync** ★                                 | `15_MCP_Sync_Hub.py`                                    | Sync drift Claude ↔ OpenCode (JARVIS 3.0)                 |
+| **Agent Sync**                                 | `15_Agent_Sync_Hub.py`                                  | Sincronización de agentes                                 |
+| **System Mapper** ★                            | `16_System_Mapper_Hub.py`                               | Genera manifest JARVIS (JARVIS 3.0)                       |
+| **Agent Mirror**                               | `16_Agent_Mirror_Hub.py`                                | Mirror agentes source → backup                            |
+| **Watchdog** ★                                 | `17_Watchdog_Hub.py`                                    | Health check automático (JARVIS 3.0)                      |
+| **Telemetry** ★                                | `18_Telemetry_Hub.py`                                   | Dashboard de uso y métricas (JARVIS 3.0)                  |
+
+> ★ = HUB canónico JARVIS 3.0
 
 ### Validators
 

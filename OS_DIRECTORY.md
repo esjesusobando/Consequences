@@ -7,7 +7,7 @@
 | Componente | Total | Manifest |
 |-----------|-------|---------|
 | MCPs Claude Code | 33 | `00_Manifest/02_MCP_Registry.yaml` |
-| Skills | 297 (9 áreas) | `00_Manifest/04_Skill_Index.json` |
+| Skills | 297 (12 áreas) | `00_Manifest/04_Skill_Index.json` |
 | Agentes | 52 | `00_Manifest/03_Agent_Catalog.yaml` |
 | HUBs | 19 | `00_Manifest/05_HUB_Catalog.yaml` / `03_Scripts_Os/HUB_CATALOG.md` |
 | Workflows | 27 | `00_Manifest/06_Workflow_Graph.yaml` |
