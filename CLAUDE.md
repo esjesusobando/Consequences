@@ -1,4 +1,4 @@
-# 🛡️ CLAUDE.md | PersonalOS v2.0 — Consequences AI Context Harness
+# 🛡️ CLAUDE.md | PersonalOS v3.0 — Consequences AI Context Harness
 
 <system_directives>
   <fundamental_rule>

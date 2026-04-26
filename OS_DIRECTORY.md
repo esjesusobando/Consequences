@@ -28,17 +28,25 @@
 | Ecosistema | Ubicación |
 |-----------|-----------|
 | Personal OS Core | `00_Winter_is_Coming/AGENTS.md` |
-| Compound Engineering | `01_Core/02_Tools/02_Skills/00_Compound_Engineering/README.md` |
-| Dream Team | `01_Core/02_Tools/01_Agents/01_Dream_Team/README.md` |
-| Specialists | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/README.md` |
-| Agent Teams Protocol | `01_Core/01_Rules/09_Agent_Teams_Protocol.mdc` |
+| Compound Engineering | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/README.md` |
+| Dream Team | `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/README.md` |
+| Specialists | `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/README.md` |
+| Agent Teams Protocol | `01_Personal_Os/01_Core/01_Rules/09_Agent_Teams_Protocol.mdc` |
 | Gentleman GGA | `.agent/05_GGA/` |
 
-## HUBs JARVIS
+## HUBs JARVIS 3.0
 
 ```bash
-python ...03_Scripts_Os/16_System_Mapper_Hub.py --scan     # regenerar manifest
-python ...03_Scripts_Os/17_Watchdog_Hub.py --check         # health check
-python ...03_Scripts_Os/18_Telemetry_Hub.py --dashboard    # stats
-python ...03_Scripts_Os/15_MCP_Sync_Hub.py --report        # MCP drift
+# Canónicos JARVIS 3.0
+python 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py --scan     # regenerar manifest
+python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py --check         # health check
+python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard    # stats
+python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report        # MCP drift
+
+# HUBs adicionales
+python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py           # salud del OS
+python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py               # sync agentes
+python 01_Personal_Os/04_Operations/03_Scripts_Os/16_Agent_Mirror_Hub.py             # mirror agentes
 ```
+
+> Ver catálogo completo: `01_Personal_Os/04_Operations/03_Scripts_Os/HUB_CATALOG.md`

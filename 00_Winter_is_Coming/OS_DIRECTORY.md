@@ -11,7 +11,7 @@
 | **MCPs** | 33 | `00_Manifest/02_MCP_Registry.yaml` |
 | **Skills** | 297 | `00_Manifest/04_Skill_Index.json` |
 | **Agents** | 52 | `00_Manifest/03_Agent_Catalog.yaml` |
-| **HUBs** | 15 | `00_Manifest/05_HUB_Catalog.yaml` |
+| **HUBs** | 19 | `00_Manifest/05_HUB_Catalog.yaml` / `03_Scripts_Os/HUB_CATALOG.md` |
 | **Workflows** | 28 | `00_Manifest/06_Workflow_Graph.yaml` |
 | **Hooks** | 10 | `00_Manifest/07_Hook_Registry.yaml` |
 
@@ -48,7 +48,7 @@
 # Core HUBs
 python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py
 python 01_Personal_Os/04_Operations/03_Scripts_Os/02_Git_Hub.py
-python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AI_Task_Planner.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM_Hub.py
 python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 python 01_Personal_Os/04_Operations/03_Scripts_Os/16_Agent_Mirror_Hub.py
 python 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py --scan
@@ -68,7 +68,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboar
 | `02_MCP_Registry.yaml` | MCP Registry (33 Claude / 18 OpenCode) | ✅ |
 | `03_Agent_Catalog.yaml` | Agent Catalog (52 agents) | ✅ |
 | `04_Skill_Index.json` | Skill Index (297 skills) | ✅ |
-| `05_HUB_Catalog.yaml` | HUB Catalog (15 HUBs) | ✅ |
+| `05_HUB_Catalog.yaml` | HUB Catalog (19 HUBs) | ✅ |
 | `06_Workflow_Graph.yaml` | Workflow Graph | ✅ |
 | `07_Hook_Registry.yaml` | Hook Registry (10 hooks) | ✅ |
 
