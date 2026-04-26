@@ -9,7 +9,7 @@
 | MCPs Claude Code | 33 | `00_Manifest/02_MCP_Registry.yaml` |
 | Skills | 297 (9 áreas) | `00_Manifest/04_Skill_Index.json` |
 | Agentes | 52 | `00_Manifest/03_Agent_Catalog.yaml` |
-| HUBs | 15 | `00_Manifest/05_HUB_Catalog.yaml` |
+| HUBs | 19 | `00_Manifest/05_HUB_Catalog.yaml` / `03_Scripts_Os/HUB_CATALOG.md` |
 | Workflows | 27 | `00_Manifest/06_Workflow_Graph.yaml` |
 | Hooks | 10 | `00_Manifest/07_Hook_Registry.yaml` |
 | Rules | 10 | `01_Personal_Os/01_Core/01_Rules/` |
