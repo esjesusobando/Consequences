@@ -1,10 +1,11 @@
 # Scripts Index — PersonalOS Think Different v2.0 Consequences
 
 > **Total Scripts:** 98+ (HUBs + módulos + utilities)
-> **Last Updated:** 2026-04-24
-> **Validation:** Auditorías PASANDO - Sistema PURE GREEN + SCRIPT MIGRATION COMPLETE
+> **Total HUBs:** 19 (v2.0 + JARVIS 3.0)
+> **Last Updated:** 2026-04-26
+> **Validation:** Auditorías PASANDO - Sistema PURE GREEN + JARVIS 3.0 INTEGRADO
 > **Migration:** 12 scripts moved to skills using get_skill_script()
-> **New:** 13_Auditors_Os folder created
+> **New:** 13_Auditors_Os folder + HUBs 14-18 (JARVIS 3.0)
 
 ---
 
@@ -23,27 +24,39 @@
 | **Hooks Windows**             | ✅ FIXED            | WinError 5 + emoji encoding resueltos                  |
 | **Script Migration**          | ✅ DONE             | 12 scripts → skills using get_skill_script()           |
 | **10_Legacy**                 | ✅ ARCHIVED         | `.backup/10_Legacy_backup_20260420/`                   |
+| **HUBs 14-18**               | ✅ JARVIS 3.0       | Health Metrics, MCP Sync, Agent Mirror/Mapper, Watchdog, Telemetry |
 
 ---
 
 ## 🏗️ Orchestration HUBs (01_Personal_Os/04_Operations/03_Scripts_Os/)
 
-| #             | Script                         | Purpose                             | Status             |
-|---------------|--------------------------------|-------------------------------------|--------------------|
-| 01            | `Auditor_Hub.py`               | Orquestador de Auditorías           | ✅ ACTIVO           |
-| 02            | `Git_Hub.py`                   | Orquestador de Git/Repos            | ✅ ACTIVO           |
-| 03            | `AIPM_Hub.py`                  | Métricas AIPM                       | ✅ ACTIVO           |
-| 04            | `Ritual_Hub.py`                | Rituales (Start/End)                | ✅ ACTIVO           |
-| 05            | `Validator_Hub.py`             | Validaciones                        | ✅ ACTIVO           |
-| 06            | `Tool_Hub.py`                  | Herramientas                        | ✅ ACTIVO           |
-| 07            | `Integration_Hub.py`           | Integraciones MCP                   | ✅ ACTIVO           |
-| 08            | `Workflow_Hub.py`              | Workflows SOTA                      | ✅ ACTIVO           |
-| 09            | `Data_Hub.py`                  | Datos/Sync                          | ✅ ACTIVO           |
-| 10            | `General_Hub.py`               | Utilidades                          | ✅ ACTIVO           |
-| 11            | `Auto_Learn_Hub.py`            | Motor de automejora                 | ✅ ACTIVO           |
-| 12            | `Context_Usage_Bar.py`         | Barra de uso de contexto            | ✅ ACTIVO           |
-| 13            | `Beautify_Tables.py`           | Formateo de tablas                  | ✅ ACTIVO           |
-| 14            | `Beauty_Doc.py`                | Documentos embellecidos             | ✅ ACTIVO           |
+> **Total HUBs:** 19 (v2.0 Consequences + JARVIS 3.0) — Ver detalle completo en `HUB_CATALOG.md`
+
+| #             | Script                         | Purpose                                    | Status             |
+|---------------|--------------------------------|--------------------------------------------|--------------------|
+| 00            | `Sound_Engine.py`              | Motor de notificaciones sonoras            | ✅ ACTIVO           |
+| 01            | `Auditor_Hub.py`               | Orquestador de Auditorías                  | ✅ ACTIVO           |
+| 02            | `Git_Hub.py`                   | Orquestador de Git/Repos                   | ✅ ACTIVO           |
+| 03            | `AIPM_Hub.py`                  | Métricas AIPM                              | ✅ ACTIVO           |
+| 04            | `Ritual_Hub.py`                | Rituales (Start/End)                       | ✅ ACTIVO           |
+| 05            | `Validator_Hub.py`             | Validaciones                               | ✅ ACTIVO           |
+| 06            | `Tool_Hub.py`                  | Herramientas                               | ✅ ACTIVO           |
+| 07            | `Integration_Hub.py`           | Integraciones MCP                          | ✅ ACTIVO           |
+| 08            | `Workflow_Hub.py`              | Workflows SOTA                             | ✅ ACTIVO           |
+| 09            | `Data_Hub.py`                  | Datos/Sync                                 | ✅ ACTIVO           |
+| 10            | `General_Hub.py`               | Utilidades                                 | ✅ ACTIVO           |
+| 11            | `Auto_Learn_Hub.py`            | Motor de automejora                        | ✅ ACTIVO           |
+| 12            | `Context_Usage_Bar.py`         | Barra de uso de contexto (en 13_Auditors_Os/scripts/) | ✅ ACTIVO |
+| 13            | `Beautify_Tables.py`           | Formateo de tablas (en 13_Auditors_Os/scripts/)       | ✅ ACTIVO |
+| 14            | `Health_Metrics_Hub.py`        | Métricas de salud del sistema              | ✅ ACTIVO (JARVIS)  |
+| 15a ★         | `MCP_Sync_Hub.py`              | Sync + drift report MCPs (canónico)        | ✅ ACTIVO (JARVIS)  |
+| 15b           | `Agent_Sync_Hub.py`            | Sincronización de agentes                  | ✅ ACTIVO           |
+| 16a ★         | `System_Mapper_Hub.py`         | Regenera manifest JARVIS (canónico)        | ✅ ACTIVO (JARVIS)  |
+| 16b           | `Agent_Mirror_Hub.py`          | Mirror agentes source → backup             | ✅ ACTIVO           |
+| 17 ★          | `Watchdog_Hub.py`              | Health check activo del OS (canónico)      | ✅ ACTIVO (JARVIS)  |
+| 18 ★          | `Telemetry_Hub.py`             | Dashboard telemetría y stats (canónico)    | ✅ ACTIVO (JARVIS)  |
+
+> ★ = HUBs canónicos JARVIS 3.0. `Beauty_Doc.py` está en `13_Auditors_Os/scripts/`.
 
 ### Usage
 
@@ -66,55 +79,53 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py profundo
 
 ---
 
-## 📁 Estructura v6.1 (Confirmed)
+## 📁 Estructura v2.0 Consequences (Activo — 2026-04-24)
 
 ```
-Think_Different/
-├── 00_Winter_is_Coming/     ✅ Goals, Backlog, 01_Personal_Os/11_AGENTS.md
-├── 01_Core/                 ✅ Skills (19 cats), Agents, MCP, Server
-│   └── 03_Skills/          # Skills numeradas (00-17)
-├── 02_Knowledge/            ✅ Base de conocimiento
-├── 03_Tasks/                ✅ 17+ tareas activas
-├── 04_Operations/           ✅ Memoria, Brain, Notas
-├── 05_Archive/              ✅ Repos, Legacy (v6.1: 01-09)
-├── 07_Projects/             ✅ Proyectos
-├── 01_Personal_Os/04_Operations/03_Scripts_Os/           ✅ 11 HUBs + Utilities
-│   ├── 13_Auditors_Os/     ✅ Utilities (Beautify, Carousel, etc)
-│   └── .backup/            ✅ 10_Legacy_archive
-└── 13_Auditors_Os/          ✅ Utilidades OS (scripts orphans)
+Think_Different/                        ← Raíz del proyecto
+├── 00_Winter_is_Coming/                ✅ Goals, Backlog, AGENTS.md, OS_DIRECTORY.md
+├── 01_Personal_Os/                     ✅ Sistema Operativo completo
+│   ├── 01_Core/                        ✅ Motor del OS
+│   │   ├── 00_Workflows_Os/            ✅ 27 Workflows (Personal, Marvel, CE, Hillary)
+│   │   ├── 01_Rules/                   ✅ 10 reglas .mdc
+│   │   └── 02_Tools/                   ✅ Agentes, Skills, MCPs, Hooks, Evals
+│   │       ├── 01_Agents/              ✅ 52 agentes (Dream Team + Specialists)
+│   │       ├── 02_Skills/              ✅ 297 skills en 9 áreas funcionales
+│   │       └── 03_Mcp/ … 09_Templates ✅ MCPs, Hooks, Plugins, Server, Evals
+│   ├── 02_Knowledge/                   ✅ Base de conocimiento
+│   ├── 03_Task/                        ✅ Tareas activas
+│   ├── 04_Operations/                  ✅ Todo lo operativo
+│   │   ├── 03_Scripts_Os/              ✅ 19 HUBs + utilities
+│   │   │   ├── 13_Auditors_Os/         ✅ Utilities: Beautify, Carousel, SOTA, etc.
+│   │   │   └── .backup/                ✅ 10_Legacy_backup_20260420
+│   │   └── 02_Agent_Teams_Lite/00_Manifest/ ✅ 7 archivos JARVIS manifest
+│   └── 05_Archive/                     ✅ Legacy + repos de referencia
+├── 02_Playground/                      ✅ Zona de pruebas
+├── 03_Resultado/                       ✅ Outputs (OIM, Elite Portfolio, etc.)
+├── .agent/ .atl/ .claude/ .mcp.json   ✅ Config IA + GGA + SDD + 33 MCPs
+└── OS_DIRECTORY.md CLAUDE.md README.md ✅ Documentación raíz
 ```
 
 ---
 
-## 🎯 Skills (01_Personal_Os/01_Core/02_Tools/02_Skills/)
+## 🎯 Skills (01_Personal_Os/01_Core/02_Tools/02_Skills/) — v2.0 Consequences
 
-| #             | Categoría                                  | Skills                       |
-|---------------|--------------------------------------------|------------------------------|
-| #             | Categoría                                  | Sub-Skills                   | SKILL.md           |
-|---------------|--------------------------------------------|------------------------------|--------------------|
-| 00            | `00_Compound_Engineering`                  | 8                            | ✅                  |
-| 00            | `00_Personal_Os_Stack`                     | Core OS                      | ✅                  |
-| 00            | `00_Skill_Auditor`                         | Auditor                      | ✅                  |
-| 01            | `01_Agent_Teams_Lite`                      | 14                           | ✅                  |
-| 02            | `02_Project_Manager`                       | 8                            | ✅                  |
-| 03            | `03_Product_Manager`                       | 8                            | ✅                  |
-| 04            | `04_Product_Design`                        | 12                           | ✅                  |
-| 05            | `05_Vibe_Coding`                           | 20                           | ✅                  |
-| 06            | `06_Testing`                               | 17                           | ✅                  |
-| 07            | `07_DevOps`                                | 12                           | ✅                  |
-| 08            | `08_Personal_Os`                           | 18                           | ✅                  |
-| 09            | `09_Marketing`                             | 14                           | ✅                  |
-| 10            | `10_Backup`                                | 5                            | ✅                  |
-| 11            | `11_Doc_Processing`                        | 3                            | ✅                  |
-| 12            | `12_N8N`                                   | 7                            | ✅                  |
-| 13            | `13_System_Master`                         | Master                       | ✅                  |
-| 14            | `14_Anthropic_Harness`                     | 8                            | ✅                  |
-| 15            | `15_Skill_Creator_Oficial`                 | 1                            | ✅                  |
-| 16            | `16_Silicon_Valley_Data_Analyst`           | 3                            | ✅                  |
-| 17            | `17_SEO_SOTA_Master`                       | 3                            | ✅                  |
-| 18            | `18_Personal_Life_OS`                      | 5                            | ✅                  |
-| 19            | `19_Video_Intel`                           | 3                            | ✅                  |
-| 20            | `20_James_Cameron`                         | 4                            | ✅                  |
+> **Total:** 297 skills — 9+3 áreas funcionales | Índice completo: `INDEX_AREA_FUNCTIONAL.md`
+
+| Área          | Carpeta                     | Descripción                                  | SKILL.md |
+|---------------|-----------------------------|----------------------------------------------|----------|
+| 00a           | `00_Compound_Engineering`   | Core CE (Spider, Avengers, LFG)              | ✅       |
+| 00b           | `00_Personal_Os_Stack`      | Stack base OS + Gcierr                       | ✅       |
+| 00c           | `00_Skill_Auditor`          | Auditoría de skills                          | ✅       |
+| 01            | `01_Creacion_Contenidos`    | Brand, YouTube, SEO, Carruseles, Contenidos  | ✅       |
+| 02            | `02_Diseno_Ui_Ux`           | Product Design, UI/UX, Taste, Minimalismo    | ✅       |
+| 03            | `03_Video_Media`            | Video Intel, James Cameron (Remotion)        | ✅       |
+| 04            | `04_Automatizacion`         | N8N, Firecrawl, automación                   | ✅       |
+| 05            | `05_Workflows`              | Agent Teams, PM, Orchestrator                | ✅       |
+| 06            | `06_Tools`                  | Skill Creator, Testing, DevOps, System Master, Data Analyst | ✅ |
+| 07            | `07_Personal_Os`            | Life OS, Hillary, Rituales                   | ✅       |
+| 08            | `08_Invictus_Web`           | Playwright, Superpowers, Web automation      | ✅       |
+| 09            | `09_Legacy_Archive`         | Skills obsoletas (archivadas)                | -        |
 | 21            | `21_Skill_Template`                        | 1                            | ✅                  |
 
 **Total: 22 categorías de skills — 100% documentadas con SKILL.md**

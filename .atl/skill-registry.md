@@ -1,4 +1,4 @@
-# Skill Registry — Think Different PersonalOS v2.0 Consequences
+# Skill Registry — Think Different PersonalOS v3.0 Consequences
 
 > **FUENTE DE VERDAD**: Este archivo es el registry activo. Los sub-agentes leen de aquí para obtener compact rules.
 > La fuente de implementación de cada skill está en `01_Personal_Os/01_Core/02_Tools/02_Skills/`.
@@ -7,8 +7,8 @@
 
 ## Proyecto: Think_Different
 
-**Versión:** 2.0 (Post-Migración Consequences 2026-04-24)
-**Última actualización:** 2026-04-24
+**Versión:** 3.0 Consequences (2026-04-26)
+**Última actualización:** 2026-04-26
 
 ### Convenciones del Proyecto
 
@@ -20,7 +20,7 @@
 | Skills | `SKILL.md` en directorios de skills |
 | Backup | `.agent/` refleja `01_Personal_Os/01_Core/` |
 
-### Estructura del OS (v2.0 Consequences)
+### Estructura del OS (v3.0 Consequences)
 
 ```
 Think_Different/
@@ -30,8 +30,8 @@ Think_Different/
 │   │   ├── 00_Workflows_Os/      # Workflows (Personal, Marvel, Gentleman, Hillary, CE)
 │   │   ├── 01_Rules/             # 10 reglas (.mdc) — FUENTE DE VERDAD
 │   │   └── 02_Tools/             # Todas las herramientas
-│   │       ├── 01_Agents/        # Dream Team + Specialists
-│   │       ├── 02_Skills/        # 9 áreas funcionales (limpias)
+│   │       ├── 01_Agents/        # 52+ Dream Team + Specialists
+│   │       ├── 02_Skills/        # 9 áreas funcionales (297 skills)
 │   │       ├── 03_Mcp/           # Config MCPs (33)
 │   │       ├── 04_Integrations/  # Fireflies, Granola
 │   │       ├── 05_Hooks/         # Pre/Post/Lifecycle/Sound/Harness
@@ -44,7 +44,7 @@ Think_Different/
 │   ├── 04_Operations/            # Todo lo operativo
 │   │   ├── 00_Context_LLM/       # Memoria, notas, knowledge brain
 │   │   ├── 01_Auto_Improvement/  # Motor auto-mejora
-│   │   ├── 02_Agent_Teams_Lite/  # SDD registry
+│   │   ├── 02_Agent_Teams_Lite/  # SDD registry (10 skills)
 │   │   ├── 03_Scripts_Os/        # 18 HUBs + scripts
 │   │   └── 05_Projects/          # Proyectos activos
 │   └── 05_Archive/               # Legacy, repos de referencia
@@ -79,7 +79,7 @@ Think_Different/
 | **08** | 🌐 **Invictus Web** | Superpowers, Buscador_Skills, Playwright | browser-automation, search, scraping | Web | `01_Personal_Os/01_Core/02_Tools/02_Skills/08_Invictus_Web/` |
 | **09** | 📦 **Legacy Archive** | Skills obsoletas v1.x | Legacy support | Legacy | `01_Personal_Os/01_Core/02_Tools/02_Skills/09_Legacy_Archive/` |
 
-> **✅ v2.0 Consequences:** Migración completada 2026-04-24. 4 carpetas raíz. Pure Green State (15/15 tests).
+> **✅ v3.0 Consequences:** Audit-fix completada 2026-04-26. 4 carpetas raíz. Pure Green State (15/15 tests). 297 skills, 52 agents, 18 HUBs.
 
 ### Project Conventions (AGENTS.md)
 
