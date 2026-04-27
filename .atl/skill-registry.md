@@ -7,7 +7,7 @@
 
 ## Proyecto: Think_Different
 
-**Versión:** 3.0 Consequences (2026-04-26)
+**Versión:** 3.1 Consequences (2026-04-26)
 **Última actualización:** 2026-04-26
 
 ### Convenciones del Proyecto
@@ -31,7 +31,7 @@ Think_Different/
 │   │   ├── 01_Rules/             # 10 reglas (.mdc) — FUENTE DE VERDAD
 │   │   └── 02_Tools/             # Todas las herramientas
 │   │       ├── 01_Agents/        # 52+ Dream Team + Specialists
-│   │       ├── 02_Skills/        # 9 áreas funcionales (297 skills)
+│   │       ├── 02_Skills/        # 13 áreas funcionales (297+ skills)
 │   │       ├── 03_Mcp/           # Config MCPs (33)
 │   │       ├── 04_Integrations/  # Fireflies, Granola
 │   │       ├── 05_Hooks/         # Pre/Post/Lifecycle/Sound/Harness
@@ -45,7 +45,7 @@ Think_Different/
 │   │   ├── 00_Context_LLM/       # Memoria, notas, knowledge brain
 │   │   ├── 01_Auto_Improvement/  # Motor auto-mejora
 │   │   ├── 02_Agent_Teams_Lite/  # SDD registry (10 skills)
-│   │   ├── 03_Scripts_Os/        # 18 HUBs + scripts
+│   │   ├── 03_Scripts_Os/        # 19 HUBs + 4 scripts auxiliares (23 .py totales)
 │   │   └── 05_Projects/          # Proyectos activos
 │   └── 05_Archive/               # Legacy, repos de referencia
 ├── 02_Playground/                # Zona de pruebas
@@ -64,7 +64,7 @@ Think_Different/
 | Openspec root | `.atl/openspec/` |
 | Engram | ⚠️ MCP server not running in current session |
 
-### Available Skills — Sistema v2.0 (9 Áreas Funcionales)
+### Available Skills — Sistema v3.0 (13 Áreas Funcionales)
 
 | # | Área Funcional | Categorías | Skills principales | Metodología | Path |
 |---|---------------|------------|-------------------|-------------|------|
@@ -79,7 +79,7 @@ Think_Different/
 | **08** | 🌐 **Invictus Web** | Superpowers, Buscador_Skills, Playwright | browser-automation, search, scraping | Web | `01_Personal_Os/01_Core/02_Tools/02_Skills/08_Invictus_Web/` |
 | **09** | 📦 **Legacy Archive** | Skills obsoletas v1.x | Legacy support | Legacy | `01_Personal_Os/01_Core/02_Tools/02_Skills/09_Legacy_Archive/` |
 
-> **✅ v3.0 Consequences:** Audit-fix completada 2026-04-26. 4 carpetas raíz. Pure Green State (15/15 tests). 297 skills, 52 agents, 18 HUBs.
+> **✅ v3.1 Consequences:** Audit-fix completada 2026-04-26. 4 carpetas raíz. Pure Green State. 297+ skills, 52 agents, 19 HUBs (23 scripts totales), 13 áreas funcionales, 28 workflows.
 
 ### Project Conventions (AGENTS.md)
 
@@ -99,4 +99,4 @@ Think_Different/
 
 ---
 
-*PersonalOS v2.0 Consequences — 2026-04-24. Fuente de implementación: `01_Personal_Os/01_Core/02_Tools/02_Skills/`*
+*PersonalOS v3.1 Consequences — 2026-04-26. Fuente de implementación: `01_Personal_Os/01_Core/02_Tools/02_Skills/`*

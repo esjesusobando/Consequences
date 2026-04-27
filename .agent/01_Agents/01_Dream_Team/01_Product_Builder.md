@@ -199,5 +199,5 @@ OUTPUT FINAL:
 - `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/04_DevOps/` — Vercel, Deploy
 
 ### Pipeline TDD
-- Agentes #2-4 en `01_Core/04_Agents/`
+- Agentes #2-4 en `01_Personal_Os/01_Core/02_Tools/01_Agents/`
 - E2E Testing: `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/06_Testing/09_E2E_Testing/`

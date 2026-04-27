@@ -184,4 +184,4 @@ Este perfil construye estrategias de marketing técnico: SEO, paid ads, contenid
 - `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/09_Firecrawl/` — Web scraping
 
 ### Specialists
-- `01_Core/04_Agents/02_Specialists_Compound/Best-Practices-Researcher.md`
+- `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/Best-Practices-Researcher.md`

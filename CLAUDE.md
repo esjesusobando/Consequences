@@ -149,7 +149,7 @@ Think_Different/
 │   │   ├── 01_Rules/            ✅ 10 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/            ✅ Todas las herramientas
 │   │       ├── 01_Agents/       ✅ Dream Team + Specialists
-│   │       ├── 02_Skills/       ✅ 9 áreas funcionales (limpias)
+│   │       ├── 02_Skills/       ✅ 13 áreas funcionales (297+ skills)
 │   │       ├── 03_Mcp/          ✅ Config MCPs
 │   │       ├── 04_Integrations/ ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/        ✅ Pre/Post/Lifecycle/Sound/Harness
@@ -236,7 +236,7 @@ Think_Different/
 | **SDD Registry**                  | `.atl/skill-registry.md`                                                                     |
 | **Migration Plan**                | `00_Plan_Migración_Os.md` (raíz)                                                             |
 
-### 5. SKILLS DISPONIBLES (9 Áreas en 01_Personal_Os/01_Core/02_Tools/02_Skills/)
+### 5. SKILLS DISPONIBLES (13 Áreas en 01_Personal_Os/01_Core/02_Tools/02_Skills/)
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
@@ -246,14 +246,15 @@ Think_Different/
 | **00_Personal_Os_Stack**            | Stack base OS + Gcierr                                               | `00_Personal_Os_Stack/`                |
 | **00_Skill_Auditor**                | Auditoría de skills                                                  | `00_Skill_Auditor/`                    |
 | **01_Creacion_Contenidos**          | Brand, YouTube, SEO, Carruseles                                      | `01_Creacion_Contenidos/`              |
-| **02_Diseno_Ui_Ux**                 | Product Design, UI/UX                                                | `02_Diseno_Ui_Ux/`                     |
-| **03_Video_Media**                  | Video Intel, James Cameron                                           | `03_Video_Media/`                      |
+| **02_Diseno_Ui_Ux**                 | Product Design, UI/UX, Taste, Minimal                               | `02_Diseno_Ui_Ux/`                     |
+| **03_Video_Media**                  | Video Intel, James Cameron, Remotion, Audio                         | `03_Video_Media/`                      |
 | **04_Automatizacion**               | N8N, Firecrawl                                                       | `04_Automatizacion/`                   |
 | **05_Workflows**                    | Agent Teams, PM, Orchestrator                                        | `05_Workflows/`                        |
 | **06_Tools**                        | Skill Creator, Testing, DevOps, QMD, System Master, Data Analyst     | `06_Tools/`                            |
 | **07_Personal_Os**                  | Life OS, Hillary, Rituales                                           | `07_Personal_Os/`                      |
-| **08_Invictus_Web**                 | Playwright, Superpowers                                              | `08_Invictus_Web/`                     |
-| **09_Legacy_Archive**               | Skills obsoletas                                                     | `09_Legacy_Archive/`                   |
+| **08_Invictus_Web**                 | Playwright, Superpowers, Browser Automation                         | `08_Invictus_Web/`                     |
+| **09_Legacy_Archive**               | Skills obsoletas v1.x                                               | `09_Legacy_Archive/`                   |
+| **INDEX_AREA_FUNCTIONAL.md**        | Índice funcional de todas las áreas (meta-documento)                | `INDEX_AREA_FUNCTIONAL.md`             |
 </architecture_routing>
 
 ---
@@ -287,8 +288,8 @@ Think_Different/
 |----------------------------------|-----------------------|---------------------------------------------------------------------------|
 | **Overall Health**               | **✅ PURE GREEN**      | v3.0 Consequences — JARVIS integrated 2026-04-25                          |
 | Estructura (4 raíz)              | ✅ PASS                | Winter / Personal_Os / Playground / Resultado                             |
-| HUBs (00-18)                    | ✅ ACTIVE              | 19 HUBs en 03_Scripts_Os                                                 |
-| Skills (12 áreas)                | ✅ OPERATIONAL         | 297 skills — 12 áreas funcionales                                        |
+| HUBs (00-18)                    | ✅ ACTIVE              | 19 HUBs + 4 aux = 23 scripts en 03_Scripts_Os                           |
+| Skills (13 áreas)                | ✅ OPERATIONAL         | 297+ skills — 13 áreas funcionales                                       |
 | Agent Matrix                     | ✅ ACTIVE              | 52 agents en .atl/agent-skill-matrix.yaml                               |
 | Manifest (7 archivos)            | ✅ VALIDATED           | 00_Manifest/ actualizado                                                 |
 | MCPs (33 Claude / 18 OpenCode) | ✅ SYNCED              | Drift: 16 solo Claude, 1 solo OpenCode                                  |

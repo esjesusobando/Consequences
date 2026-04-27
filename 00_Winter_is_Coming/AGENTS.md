@@ -35,10 +35,10 @@ cat 03_Tasks/  # tareas activas
 
 | Recurso | Ubicación | Para qué usarlo |
 |:--------|:---------|:----------------|
-| **Skills** (15 áreas) | `01_Personal_Os/01_Core/02_Tools/02_Skills/` | Descubrir capabilities antes de delegar |
+| **Skills** (13 áreas, 297+) | `01_Personal_Os/01_Core/02_Tools/02_Skills/` | Descubrir capabilities antes de delegar |
 | **Reglas** (10) | `01_Personal_Os/01_Core/01_Rules/` | Governance y comportamiento del sistema |
 | **Agentes** (52) | `01_Personal_Os/01_Core/02_Tools/01_Agents/` | Delegar tareas a especialistas |
-| **HUBs** (18) | `01_Personal_Os/04_Operations/03_Scripts_Os/` | Operaciones de sistema (git, audit, ritual) |
+| **HUBs** (19 + 4 aux) | `01_Personal_Os/04_Operations/03_Scripts_Os/` | Operaciones de sistema (git, audit, ritual) |
 | **MCPs** (33) | `.mcp.json` | Herramientas externas disponibles |
 | **Hooks** | `01_Personal_Os/01_Core/02_Tools/05_Hooks/` | Automatizaciones pre/post tool |
 | **Memory** | Engram MCP | Contexto persistente entre sesiones |
@@ -183,55 +183,53 @@ After each task completion, save to Engram:
 
 ## 1. PERSONAL OS METHODOLOGY
 
-### Workspace Shape (ACTUAL - 2026-04-23 / v1.1)
+### Workspace Shape (ACTUAL - 2026-04-26 / v3.0 Consequences)
+
+> ⚠️ La estructura v1.x (01_Core/ en raíz, 03_Skills/) fue migrada a v2.0 Consequences.
+> La fuente de verdad ACTUAL es `01_Personal_Os/`. No usar paths v1.x.
 
 ```
-Think_Different/
-├── 00_Winter_is_Coming/     # 🔮 ESTRATÉGICO: Goals, Backlog, Memoria
-├── 01_Core/                 # 🧠 MOTOR: Skills, Agents, MCPs, Workflows (FUENTE DE VERDAD)
-│   ├── 00_Workflows/       # ⚠️ DEPRECATED - Workflows ahora en 03_Skills/05_Workflows/
-│   ├── 01_Rules/           # 25 reglas (.mdc) — fuente de verdad
-│   ├── 02_Dream_Team.md   # ✅ Existe en 01_Core/
-│   ├── 03_Skills/         # 165+ skills (FUENTE DE VERDAD) - Sistema v2.0
-│   ├── 04_Agents/         # Agentes configurados
-│   ├── 05_Mcp/            # 33 MCPs configurados
-│   ├── 06_Integrations/    # ⚠️ Verificar contenido
-│   ├── 07_Hooks/          # Hooks del sistema
-│   ├── 08_Plugins/        # Plugins (Skill Creator, etc.)
-│   ├── 09_Server/         # ⚠️ Verificar contenido
-│   └── 10_Templates/     # ⚠️ Verificar contenido
-├── 01_Personal_Os/          # ✅ EL SISTEMA OPERATIVO (v2.0 Consequences)
-│   ├── 01_Core/             # Motor del OS
-│   │   ├── 00_Workflows_Os/ # Workflows (Personal, Marvel, Gentleman, Hillary, CE)
-│   │   ├── 01_Rules/        # 10 reglas (.mdc) — fuente de verdad
-│   │   └── 02_Tools/        # Todas las herramientas
-│   │       ├── 01_Agents/   # Dream Team + Specialists
-│   │       ├── 02_Skills/   # 9 áreas funcionales
-│   │       ├── 03_Mcp/      # Config MCPs (33)
-│   │       ├── 04_Integrations/ # Fireflies, Granola
-│   │       ├── 05_Hooks/    # Pre/Post/Lifecycle/Sound/Harness
-│   │       ├── 06_Plugins/  # Plugins OS
-│   │       ├── 07_Server/   # MCP Server
-│   │       ├── 08_Evals/    # Evaluadores
-│   │       └── 09_Templates/ # Templates
-│   ├── 02_Knowledge/        # 📚 Base de conocimiento
-│   ├── 03_Task/             # ✅ Tareas activas (singular)
-│   ├── 04_Operations/       # ✅ Todo lo operativo
-│   │   ├── 00_Context_LLM/  # Memoria, notas, knowledge brain
-│   │   ├── 01_Auto_Improvement/ # Motor auto-mejora
-│   │   ├── 02_Agent_Teams_Lite/ # SDD registry
-│   │   ├── 03_Scripts_Os/   # 🔧 18 HUBs operativos
+Think_Different/                           # v3.0 Consequences — 4 carpetas raíz
+├── 00_Winter_is_Coming/                   # 🔮 ESTRATÉGICO: Goals, Backlog, AGENTS.md
+├── 01_Personal_Os/                        # ✅ EL SISTEMA OPERATIVO
+│   ├── 01_Core/                           # Motor del OS
+│   │   ├── 00_Workflows_Os/               # 28 Workflows (Personal, Marvel, Gentleman, Hillary, CE)
+│   │   ├── 01_Rules/                      # 10 reglas (.mdc) — fuente de verdad
+│   │   └── 02_Tools/                      # Todas las herramientas
+│   │       ├── 01_Agents/                 # 52+ Dream Team + Specialists
+│   │       ├── 02_Skills/                 # 13 áreas funcionales (297+ skills)
+│   │       ├── 03_Mcp/                    # Config MCPs (33 Claude / 18 OpenCode)
+│   │       ├── 04_Integrations/           # Fireflies, Granola
+│   │       ├── 05_Hooks/                  # Pre/Post/Lifecycle/Sound/Harness
+│   │       ├── 06_Plugins/               # Plugins OS
+│   │       ├── 07_Server/                # MCP Server
+│   │       ├── 08_Evals/                 # Evaluadores
+│   │       └── 09_Templates/             # Templates
+│   ├── 02_Knowledge/                      # 📚 Base de conocimiento
+│   ├── 03_Task/                           # Tareas activas
+│   ├── 04_Operations/                     # Todo lo operativo
+│   │   ├── 00_Context_LLM/               # Memoria, notas, knowledge brain
+│   │   ├── 01_Auto_Improvement/           # Motor auto-mejora
+│   │   ├── 02_Agent_Teams_Lite/           # SDD registry + 7 archivos Manifest
+│   │   │   └── 00_Manifest/              # Inventario, MCPs, Agentes, Skills, HUBs, WFs, Hooks
+│   │   ├── 03_Scripts_Os/                # 🔧 19 HUBs + 4 auxiliares (23 .py totales)
 │   │   │   ├── 00_Sound_Engine.py        # Motor de sonido
 │   │   │   ├── 01_Auditor_Hub.py         # Auditorías
 │   │   │   ├── 15_MCP_Sync_Hub.py        # Sync Claude↔OpenCode
+│   │   │   ├── 15_Agent_Sync_Hub.py      # Sync de agentes
 │   │   │   ├── 16_System_Mapper_Hub.py   # Manifest JARVIS
+│   │   │   ├── 16_Agent_Mirror_Hub.py    # Mirror de agentes
 │   │   │   ├── 17_Watchdog_Hub.py        # Health watchdog
 │   │   │   ├── 18_Telemetry_Hub.py       # Dashboard métricas
-│   │   │   ├── 03_Validator/             # Validadores
-│   │   │   └── 13_Auditors_Os/           # Auditores especializados
-│   │   └── 05_Projects/     # Proyectos activos
-│   └── 05_Archive/          # 📦 Legacy archivado
-└── .agent/                  # 💾 BACKUP ESTRATÉGICO (sincronizado con 01_Personal_Os/01_Core/)
+│   │   │   └── config_paths.py           # PYTHONPATH resolution
+│   │   ├── 04_Installer/                 # Scripts de instalación
+│   │   └── 05_Projects/                  # Proyectos activos
+│   └── 05_Archive/                        # 📦 Legacy archivado
+├── 02_Playground/                         # Zona de pruebas
+├── 03_Resultado/                          # Outputs (OIM Website, Elite Portfolio, etc.)
+├── .agent/                               # 💾 BACKUP ESTRATÉGICO (sincronizado con 01_Core/)
+├── .atl/                                 # SDD Registry + openspec
+└── .claude/                              # Config Claude Code
 ```
 
 ### Backlog Flow
@@ -302,10 +300,10 @@ For complex tasks, delegate to workflow files in `.agent/03_Workflows/`.
 
 | Trigger | Workflow | Cuándo usar |
 |:--------|:---------|:------------|
-| Content generation | `.agent/03_Workflows/21_Content_Generation.md` | Writing, marketing |
-| Morning planning | `.agent/03_Workflows/22_Morning_Standup.md` | Daily focus |
-| Processing backlog | `.agent/03_Workflows/20_Backlog_Processing.md` | Backlog flow |
-| Weekly reflection | `.agent/03_Workflows/23_Weekly_Review.md` | Weekly review |
+| Content generation | `.agent/03_Workflows/01_Personal_Os/03_Content_Generation.md` | Writing, marketing |
+| Morning planning | `.agent/03_Workflows/01_Personal_Os/01_Morning_Standup.md` | Daily focus |
+| Processing backlog | `.agent/03_Workflows/01_Personal_Os/02_Backlog_Processing.md` | Backlog flow |
+| Weekly reflection | `.agent/03_Workflows/01_Personal_Os/04_Weekly_Review.md` | Weekly review |
 
 **How to use:**
 

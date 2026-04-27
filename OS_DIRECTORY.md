@@ -1,16 +1,16 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v3.0 Consequences** | 2026-04-25
+**v3.0 Consequences** | 2026-04-26
 
 ## ¿Qué hay aquí?
 
 | Componente | Total | Manifest |
 |-----------|-------|---------|
 | MCPs Claude Code | 33 | `00_Manifest/02_MCP_Registry.yaml` |
-| Skills | 297 (12 áreas) | `00_Manifest/04_Skill_Index.json` |
+| Skills | 297 (13 áreas) | `00_Manifest/04_Skill_Index.json` |
 | Agentes | 52 | `00_Manifest/03_Agent_Catalog.yaml` |
-| HUBs | 19 | `00_Manifest/05_HUB_Catalog.yaml` / `03_Scripts_Os/HUB_CATALOG.md` |
-| Workflows | 27 | `00_Manifest/06_Workflow_Graph.yaml` |
+| HUBs | 19 (23 scripts totales) | `00_Manifest/05_HUB_Catalog.yaml` / `03_Scripts_Os/HUB_CATALOG.md` |
+| Workflows | 28 | `00_Manifest/06_Workflow_Graph.yaml` |
 | Hooks | 10 | `00_Manifest/07_Hook_Registry.yaml` |
 | Rules | 10 | `01_Personal_Os/01_Core/01_Rules/` |
 

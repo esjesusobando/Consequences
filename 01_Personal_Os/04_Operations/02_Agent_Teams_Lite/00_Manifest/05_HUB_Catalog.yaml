@@ -1,53 +1,101 @@
-# HUB Catalog — generated 2026-04-25T13:55:58
+# HUB Catalog — generated 2026-04-26T00:00:00 (auditado y corregido)
 
-version: v3.0
-generated: "2026-04-25T13:55:58"
+version: v3.1
+generated: "2026-04-26T00:00:00"
 base_path: 01_Personal_Os/04_Operations/03_Scripts_Os/
 totals:
-  hubs: 15
+  hubs: 19
+  scripts_auxiliares: 4
+  total_py: 23
+# Nota: slots 15 y 16 tienen variantes (a/b) por expansión JARVIS 3.0 — intencional
 hubs:
   - name: 00_Sound_Engine
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py
+    description: Motor de notificaciones sonoras del sistema
   - name: 01_Auditor_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py
+    description: System validation — estructura, links, skills, health
   - name: 02_Git_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/02_Git_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/02_Git_Hub.py
+    description: Git operations + structure audits
   - name: 03_AIPM_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM_Hub.py
+    description: AI Performance Monitoring
   - name: 04_Ritual_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py
+    description: Session rituals — open, close, recovery
   - name: 05_Validator_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py
+    description: Code validation — rules, stack, patterns
   - name: 06_Tool_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/06_Tool_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/06_Tool_Hub.py
+    description: Tool integration and management
   - name: 07_Integration_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration_Hub.py
+    description: MCP and external integrations
   - name: 08_Workflow_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py
+    description: Workflow automation
   - name: 09_Data_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Data_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Data_Hub.py
+    description: Data processing and analytics
   - name: 10_General_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_General_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_General_Hub.py
+    description: General utilities
   - name: 11_Auto_Learn_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/11_Auto_Learn_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/11_Auto_Learn_Hub.py
+    description: Motor de automejora y aprendizaje
   - name: 14_Health_Metrics_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py
-  - name: 15_Agent_Sync_Hub
+    description: Métricas de salud del OS
+  - name: 15a_Agent_Sync_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py
-  - name: 16_System_Mapper_Hub
+    description: Sincronización de agentes
+  - name: 15b_MCP_Sync_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
+    description: Sincronización MCP Claude↔OpenCode — detecta drift
+  - name: 16a_Agent_Mirror_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/16_Agent_Mirror_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/16_Agent_Mirror_Hub.py
+    description: Mirror de agentes (54/54 sincronizados)
+  - name: 16b_System_Mapper_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py --scan
+    description: Regenera manifest JARVIS completo
+  - name: 17_Watchdog_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py --check
+    description: Health check JARVIS 3.0 — monitoreo continuo
+  - name: 18_Telemetry_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard
+    description: Dashboard de telemetría y usage stats
+
+scripts_auxiliares:
+  - name: 17_Legacy_Path_Cleanup
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/17_Legacy_Path_Cleanup.py
+    description: Limpieza de paths legacy (08_Scripts_Os → 03_Scripts_Os)
+  - name: 18_Validate_Skill_Frontmatter
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/18_Validate_Skill_Frontmatter.py
+    description: Validador de frontmatter de skills
+  - name: config_paths
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py
+    description: Config de PYTHONPATH — resolución dinámica de paths
+  - name: refactor_revert_id
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/refactor_revert_id.py
+    description: Script de refactoring — reversión de IDs
