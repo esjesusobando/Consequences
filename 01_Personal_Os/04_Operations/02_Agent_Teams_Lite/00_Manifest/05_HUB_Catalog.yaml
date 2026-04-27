@@ -99,3 +99,17 @@ scripts_auxiliares:
   - name: refactor_revert_id
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/refactor_revert_id.py
     description: Script de refactoring — reversión de IDs
+
+# Sub-scripts del módulo 13_Auditors_Os (no son HUBs raíz — viven en subcarpeta)
+submodule_13_auditors_os:
+  base_path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/
+  note: "Estos scripts son parte del módulo 13_Auditors_Os. Invocar desde esa subcarpeta."
+  scripts:
+    - name: 12_Context_Usage_Bar
+      path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/12_Context_Usage_Bar.py
+      command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/12_Context_Usage_Bar.py
+      description: Barra de uso de contexto — muestra %contexto usado con colores ANSI, escala 80%=100% (threshold compaction Claude)
+    - name: 13_Beautify_Tables
+      path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/13_Beautify_Tables.py
+      command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/13_Beautify_Tables.py
+      description: Alineador de tablas markdown — reformatea columnas para legibilidad
