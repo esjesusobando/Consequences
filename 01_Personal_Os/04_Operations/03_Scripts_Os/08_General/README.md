@@ -32,7 +32,7 @@ Utilidades generales del sistema: alertas, notificaciones, context reset.
 ## 📍 Ubicación
 
 ```
-08_Scripts_Os/08_General/
+03_Scripts_Os/08_General/
 ```
 
 ---

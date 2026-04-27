@@ -152,7 +152,7 @@ Agente #07: "Audita accesibilidad de [feature]"
 | -------------------- | ------------------------------------- |
 | `01_Core/03_Skills/`  | 160+ skills que potencian a los agentes |
 | `01_Core/00_Workflows/` | 26 workflows que invocan agentes      |
-| `08_Scripts_Os/`     | Scripts de automatización             |
+| `03_Scripts_Os/`     | Scripts de automatización             |
 | `.claude/03_Agents/` | Agentes de Claude Code                |
 
 ---

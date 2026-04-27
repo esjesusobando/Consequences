@@ -55,7 +55,7 @@ Implementar los 10 gaps identificados desde los artículos de Anthropic Engineer
 ### FASE 2: MÉTRICAS Y DETECCIÓN (Próxima Semana)
 
 #### 2.1 pass@k Metrics Script 🟠
-**Ubicación:** `04_Operations/08_Scripts_Os/11_Anthropic_Harness/05_Pass_At_Metrics.py`
+**Ubicación:** `04_Operations/03_Scripts_Os/11_Anthropic_Harness/05_Pass_At_Metrics.py`
 
 ```python
 def pass_at_k(results: list, k: int) -> float:
@@ -100,7 +100,7 @@ TRIGGERS = [
 ---
 
 #### 2.3 Feature List JSON Generator 🟠
-**Ubicación:** `04_Operations/08_Scripts_Os/11_Anthropic_Harness/06_Feature_List_Generator.py`
+**Ubicación:** `04_Operations/03_Scripts_Os/11_Anthropic_Harness/06_Feature_List_Generator.py`
 
 ```json
 {
@@ -138,7 +138,7 @@ TRIGGERS = [
 ### FASE 3: TRABAJO PARALELO (Este Mes)
 
 #### 3.1 Agent Teams con Git Locks 🟡
-**Ubicación:** `04_Operations/08_Scripts_Os/11_Anthropic_Harness/07_Agent_Teams_Locks.py`
+**Ubicación:** `04_Operations/03_Scripts_Os/11_Anthropic_Harness/07_Agent_Teams_Locks.py`
 
 **Arquitectura:**
 ```python
@@ -174,7 +174,7 @@ def release_lock(task_name: str):
 ---
 
 #### 3.2 Progress File Template 🟡
-**Ubicación:** `04_Operations/08_Scripts_Os/11_Anthropic_Harness/08_Progress_Template.md`
+**Ubicación:** `04_Operations/03_Scripts_Os/11_Anthropic_Harness/08_Progress_Template.md`
 
 ```markdown
 # Claude Progress - [PROJECT NAME]

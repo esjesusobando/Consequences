@@ -31,7 +31,7 @@ Scripts de integración con herramientas externas: MCP, Obsidian, QMD.
 ## 📍 Ubicación
 
 ```
-08_Scripts_Os/09_Integration/
+03_Scripts_Os/09_Integration/
 ```
 
 ---

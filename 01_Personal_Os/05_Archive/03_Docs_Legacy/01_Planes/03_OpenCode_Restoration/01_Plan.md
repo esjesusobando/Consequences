@@ -26,14 +26,14 @@ Se han identificado y se preservarán los siguientes servidores activos:
 
 ### Integration Layer
 
-#### [EXECUTE] [46_Sync_MCP_OpenCode.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/08_Scripts_Os/09_Integration/46_Sync_MCP_OpenCode.py)
+#### [EXECUTE] [46_Sync_MCP_OpenCode.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/03_Scripts_Os/09_Integration/46_Sync_MCP_OpenCode.py)
 - Ejecutar el script oficial de sincronización para validar la integridad del ecosistema tras la reparación manual.
 
 ## 🧪 Plan de Verificación
 
 ### Pruebas de Sistema
 1. Ejecutar `opencode --help` para confirmar la recuperación del CLI.
-2. Ejecutar `python 08_Scripts_Os/07_Integration_Hub.py mcp-sync` para validar la coherencia global.
+2. Ejecutar `python 03_Scripts_Os/07_Integration_Hub.py mcp-sync` para validar la coherencia global.
 
 ## ❓ Preguntas Abiertas
 - ¿Hay algún token de `EXA_API_KEY` o `NOTION_TOKEN` que deba actualizarse durante esta restauración, o mantenemos los actuales detectados en el sistema?

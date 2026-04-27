@@ -1,3 +1,9 @@
+---
+description: 02_Supabase_Integration
+globs: **/*
+alwaysApply: true
+---
+
 # 23_Supabase Integration
 
 ## Esencia Original

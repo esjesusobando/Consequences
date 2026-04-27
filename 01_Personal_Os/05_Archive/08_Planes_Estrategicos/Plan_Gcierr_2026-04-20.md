@@ -11,9 +11,9 @@ Este plan describe las acciones finales para certificar el estado **Pure Green S
 ## Hallazgos de la Auditoría Actual
 
 ### ✅ 1. Fallos de Portabilidad (Hardcoded Paths)
-- `08_Scripts_Os/12_Audits/audit_skills_routes.ps1` — Sin rutas hardcodeadas
-- `08_Scripts_Os/10_Legacy/39_Repair_Corruption.py` — Sin rutas hardcodeadas
-- `08_Scripts_Os/10_Legacy/43_Marketing_Skills_Distributor.py` — Sin rutas hardcodeadas
+- `03_Scripts_Os/12_Audits/audit_skills_routes.ps1` — Sin rutas hardcodeadas
+- `03_Scripts_Os/10_Legacy/39_Repair_Corruption.py` — Sin rutas hardcodeadas
+- `03_Scripts_Os/10_Legacy/43_Marketing_Skills_Distributor.py` — Sin rutas hardcodeadas
 - **Estado:** ✅ RESUELTO
 
 ### ✅ 2. Redundancia Estructural
@@ -46,10 +46,10 @@ Este plan describe las acciones finales para certificar el estado **Pure Green S
 ### ✅ Pruebas Automatizadas
 ```bash
 # Auditor estructura
-python 08_Scripts_Os/01_Auditor_Hub.py estructura
+python 03_Scripts_Os/01_Auditor_Hub.py estructura
 
 # Auditor skills  
-python 08_Scripts_Os/06_Auditor/34_Skill_Auditor.py
+python 03_Scripts_Os/06_Auditor/34_Skill_Auditor.py
 
 # Resultado: 100% PASS
 ```

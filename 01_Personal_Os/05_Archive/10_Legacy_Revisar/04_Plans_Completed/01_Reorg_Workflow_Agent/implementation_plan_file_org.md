@@ -55,7 +55,7 @@ Este plan detalla la estructura final de los respaldos históricos y la organiza
 ## Verification Plan
 
 ### Automated Tests
-- `python 08_Scripts_Os/01_Auditor_Hub.py estructura`: Validar el árbol final de archivo.
+- `python 03_Scripts_Os/01_Auditor_Hub.py estructura`: Validar el árbol final de archivo.
 - `dir 05_Archive\plans_completed\01_Reorg_Workflow_Agent`: Validar la correcta migración de archivos.
 
 ### Manual Verification

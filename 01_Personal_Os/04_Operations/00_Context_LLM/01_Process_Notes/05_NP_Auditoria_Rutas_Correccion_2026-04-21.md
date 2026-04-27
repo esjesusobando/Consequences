@@ -65,7 +65,7 @@ El archivo siempre fue `00_Winter_is_Coming/AGENTS.md`, nunca existió `00_Winte
 | 3           | Corregir CLAUDE.md                   | `CLAUDE.md`                                                       | ✅ 3 líneas         |
 | 4           | Actualizar README.md                 | `README.md`                                                       | ✅ 5 líneas         |
 | 5           | Sincronizar .agent/CLAUDE.md         | `.agent/CLAUDE.md`                                                | ✅ 3 líneas         |
-| 6           | Crear reporte auditoría              | `08_Scripts_Os/12_Audits/REPORTE_AUDITORIA_2026-04-21.md`         | ✅ CREADO           |
+| 6           | Crear reporte auditoría              | `03_Scripts_Os/12_Audits/REPORTE_AUDITORIA_2026-04-21.md`         | ✅ CREADO           |
 
 ### Métricas Finales
 
@@ -94,7 +94,7 @@ El archivo siempre fue `00_Winter_is_Coming/AGENTS.md`, nunca existió `00_Winte
 - `CLAUDE.md` — AI Config principal
 - `README.md` — Documentación principal
 - `.agent/CLAUDE.md` — Backup estratégico sincronizado
-- `08_Scripts_Os/12_Audits/REPORTE_AUDITORIA_2026-04-21.md` — Reporte de auditoría
+- `03_Scripts_Os/12_Audits/REPORTE_AUDITORIA_2026-04-21.md` — Reporte de auditoría
 
 ---
 

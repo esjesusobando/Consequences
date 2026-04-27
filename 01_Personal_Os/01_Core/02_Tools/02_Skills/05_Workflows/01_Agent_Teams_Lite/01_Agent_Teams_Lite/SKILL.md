@@ -1,3 +1,9 @@
+---
+description: 01_Agent_Teams_Lite
+globs: **/*
+alwaysApply: true
+---
+
 # Agent Teams Lite — Skill Index
 
 ## Descripción

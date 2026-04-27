@@ -244,7 +244,7 @@ skill-name/
 
 ```bash
 # Sync .agent → .cursor (unidirectional)
-python 08_Scripts_Os/55_Sync_Skills.py --confirm
+python 03_Scripts_Os/55_Sync_Skills.py --confirm
 ```
 
 ### Flujo:

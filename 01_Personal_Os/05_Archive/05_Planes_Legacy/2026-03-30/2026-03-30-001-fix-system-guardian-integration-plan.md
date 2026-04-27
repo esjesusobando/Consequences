@@ -38,7 +38,7 @@ La integración con System Guardian está pendiente.
 
 ### Relevant Code and Patterns
 
-- `08_Scripts_Os/Legacy_Backup/79_System_Guardian.py` - System Guardian existente
+- `03_Scripts_Os/Legacy_Backup/79_System_Guardian.py` - System Guardian existente
 - `04_Operations/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py` - Auto Improvement
 - `01_Core/07_Hooks/03_Lifecycle/stop.py` - Hook con integración Guardian
 
@@ -84,7 +84,7 @@ La integración con System Guardian está pendiente.
 **Dependencies:** Unit 1
 
 **Files:**
-- Modify: `08_Scripts_Os/Legacy_Backup/79_System_Guardian.py`
+- Modify: `03_Scripts_Os/Legacy_Backup/79_System_Guardian.py`
 
 **Approach:**
 - Añadir opción en menú: "Auto Improvement Scan"

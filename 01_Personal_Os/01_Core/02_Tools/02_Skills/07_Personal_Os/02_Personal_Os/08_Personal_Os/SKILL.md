@@ -1,3 +1,9 @@
+---
+description: 08_Personal_Os
+globs: **/*
+alwaysApply: true
+---
+
 # Personal OS — Skill Index
 
 ## Descripción

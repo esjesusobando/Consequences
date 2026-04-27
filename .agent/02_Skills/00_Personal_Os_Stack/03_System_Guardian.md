@@ -42,4 +42,4 @@ El System Guardian se ejecuta:
 ## Personalización
 
 Para agregar más validaciones, editar:
-`08_Scripts_Os/01_Auditor_Hub.py`
+`03_Scripts_Os/01_Auditor_Hub.py`

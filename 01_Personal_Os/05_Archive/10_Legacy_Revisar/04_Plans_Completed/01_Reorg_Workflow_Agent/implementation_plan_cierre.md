@@ -24,7 +24,7 @@ Tras la exitosa refactorización masiva de workflows y agentes, procedemos a val
 ### [Componente] 06_Playground/00_Momentum (Ambiente Controlado)
 
 #### [VERIFY] Workflow Hub
-* Ejecutar `python 08_Scripts_Os/08_Workflow_Hub.py list` apuntando a las nuevas carpetas.
+* Ejecutar `python 03_Scripts_Os/08_Workflow_Hub.py list` apuntando a las nuevas carpetas.
 * Validar que los archivos en `00_Momentum` (si existen) puedan ser procesados individualmente.
 
 ---
@@ -43,7 +43,7 @@ Tras la exitosa refactorización masiva de workflows y agentes, procedemos a val
 ## Verification Plan
 
 ### Automated Tests
-- `python 08_Scripts_Os/01_Auditor_Hub.py estructura` (validación en raíz).
+- `python 03_Scripts_Os/01_Auditor_Hub.py estructura` (validación en raíz).
 - `python 01_Core/03_Skills/00_Personal_Os_Stack/scripts/53_Structure_Auditor.py` (validación profunda).
 
 ### Manual Verification

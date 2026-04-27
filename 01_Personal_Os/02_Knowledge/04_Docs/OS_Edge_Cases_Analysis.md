@@ -81,7 +81,7 @@ The Think_Different OS contains **60 edge cases** across 6 categories. The most 
 |----------------------------------------------------------------------------------------------------|----------------------|------------------------|------------------------------------------|---------------------------------|
 | `01_Core/03_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/...`             | BOUNDARY             | **LOW**                | Deep nesting (8+ levels)                 | Consider flattening             |
 | `Maerks/Otros/13_Strategic_Plans/2026-03-25-plan-fusion-hubs-01-10.md`                             | BOUNDARY             | **LOW**                | Very long filename                       | Use shorter names               |
-| Multiple scripts in `08_Scripts_Os/Legacy_Backup/`                                                 | DATA                 | **LOW**                | 70+ duplicate/legacy scripts             | Archive or delete               |
+| Multiple scripts in `03_Scripts_Os/Legacy_Backup/`                                                 | DATA                 | **LOW**                | 70+ duplicate/legacy scripts             | Archive or delete               |
 
 ### 2.6 TEMPORAL — Date/Version Patterns
 
@@ -94,7 +94,7 @@ The Think_Different OS contains **60 edge cases** across 6 categories. The most 
 
 | File/Location                                                    | Type               | Severity               | Description                            | Recommendation                               |
 |------------------------------------------------------------------|--------------------|------------------------|----------------------------------------|----------------------------------------------|
-| `08_Scripts_Os/__pycache__/`                                     | SYSTEM             | **LOW**                | Python cache files present             | Add to .gitignore if not already             |
+| `03_Scripts_Os/__pycache__/`                                     | SYSTEM             | **LOW**                | Python cache files present             | Add to .gitignore if not already             |
 | `04_Operations/01_Auto_Improvement/98_Backups/*.bak`             | SYSTEM             | **LOW**                | 10+ .bak backup files                  | Review and clean up                          |
 | `.ruff_cache/`                                                   | SYSTEM             | **LOW**                | Ruff linter cache                      | Add to .gitignore                            |
 
@@ -129,7 +129,7 @@ The Think_Different OS contains **60 edge cases** across 6 categories. The most 
 | Credentials present                  | ⚠️ MULTIPLE             | Many keys exposed or as placeholders                        |
 | Duplicate MCP entries                | ⚠️ 2 FOUND              | obsidian-mcp defined twice (primary + failover)             |
 
-### 3.4 08_Scripts_Os/ — Scripts Validation
+### 3.4 03_Scripts_Os/ — Scripts Validation
 
 | Check                                 | Status               | Notes                                             |
 |---------------------------------------|----------------------|---------------------------------------------------|

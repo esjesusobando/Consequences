@@ -14,7 +14,7 @@
 | **Especialistas**                     | 24                       | `.agent/01_Agents/Specialists/`               |
 | **Perfiles de Negocio**               | 5                        | `.agent/01_Agents/Perfiles/`                  |
 | **Skills**                            | 128+                     | `.agent/02_Skills/`                           |
-| **Scripts**                           | 86+                      | `08_Scripts_Os/`                              |
+| **Scripts**                           | 86+                      | `03_Scripts_Os/`                              |
 | **Workflows**                         | 24                       | `.agent/03_Workflows/`                        |
 | **Hooks**                             | 12                       | `.agent/04_Extensions/hooks/`                 |
 
@@ -132,7 +132,7 @@
 
 ## 📜 5. SCRIPTS (86+)
 
-**Ubicación:** `08_Scripts_Os/`
+**Ubicación:** `03_Scripts_Os/`
 
 ### Hubs (Arquitectura Modular)
 
@@ -161,7 +161,7 @@
 ### Scripts Antropomórficos (Hubs)
 
 ```
-08_Scripts_Os/
+03_Scripts_Os/
 ├── 01_Auditor_Hub.py      🤖 Iron Man - Auditor
 ├── 02_Git_Hub.py         🔧 Thor - Git
 ├── 03_AIPM_Hub.py        📊 JARVIS - AI PM
@@ -289,7 +289,7 @@
 
 | Componente                               | Ubicación                                                     | Propósito                            |
 |------------------------------------------|---------------------------------------------------------------|--------------------------------------|
-| **Scripts**                              | `08_Scripts_Os/11_Anthropic_Harness/`                         |                                      |
+| **Scripts**                              | `03_Scripts_Os/11_Anthropic_Harness/`                         |                                      |
 | - `00_Safety_Wrapper.py`                 |                                                               | Pre-check de seguridad               |
 | - `01_Context_Manager.py`                |                                                               | Reset vs Compaction                  |
 | - `02_Evaluator_Runner.py`               |                                                               | QA separado (GAN)                    |
@@ -340,8 +340,8 @@ Think_Different_AI/
 │   └── ...
 ├── 04_Operations/              # Tasks, Evals, Progress
 ├── 03_Knowledge/               # Research, Marketing, etc
-├── 08_Scripts_Os/                  # Scripts (86+)
-│   └── 08_Scripts_Os/         # Hubs + Anthropic
+├── 03_Scripts_Os/                  # Scripts (86+)
+│   └── 03_Scripts_Os/         # Hubs + Anthropic
 ├── 05_System/                  # MCP, Templates, Env
 ├── 06_Archive/                 # Backups
 └── 07_Projects/               # Labs

@@ -1,3 +1,9 @@
+---
+description: 03_Sprint_Contract
+globs: **/*
+alwaysApply: true
+---
+
 # Sprint Contract Skill
 
 **CATEGORÍA:** Anthropic Harness Patterns

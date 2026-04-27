@@ -1,3 +1,9 @@
+---
+description: 06_Seo_Optimization
+globs: **/*
+alwaysApply: true
+---
+
 ````
 ---
 name: seo-optimization Triggers on: devops, deployment, infrastructure.

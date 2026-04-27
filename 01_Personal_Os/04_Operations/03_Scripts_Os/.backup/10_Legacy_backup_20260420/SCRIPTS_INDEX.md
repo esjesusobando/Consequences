@@ -29,7 +29,7 @@
 | 42  | Oil drilling legacy (archivado)   |
 | 62  | Pollution placeholder (eliminado) |
 
-## 🏗️ Orchestration Hubs (Raíz 08_Scripts_Os)
+## 🏗️ Orchestration Hubs (Raíz 03_Scripts_Os)
 
 | #   | Script                  | Purpose                            | Category      |
 |-----|-------------------------|------------------------------------|---------------|
@@ -159,19 +159,19 @@
 
 ```bash
 # Ejecutar script
-python 04_Engine/08_Scripts_Os/14_Morning_Standup.py
+python 04_Engine/03_Scripts_Os/14_Morning_Standup.py
 
 # Con argumentos
-python 04_Engine/08_Scripts_Os/54_Commit_Guard.py --apply -m "feat: desc"
+python 04_Engine/03_Scripts_Os/54_Commit_Guard.py --apply -m "feat: desc"
 
 # Dry run
-python 04_Engine/08_Scripts_Os/55_Sync_Skills.py
+python 04_Engine/03_Scripts_Os/55_Sync_Skills.py
 ```
 
 ---
 
 ## Validación
 
-> ⚠️ SIEMPRE verificar con `ls -1 04_Engine/08_Scripts_Os/*.py | wc -l` antes de reportar números.
+> ⚠️ SIEMPRE verificar con `ls -1 04_Engine/03_Scripts_Os/*.py | wc -l` antes de reportar números.
 
 *Actualizado: 2026-03-26 — Pure Green Audit v6.1*

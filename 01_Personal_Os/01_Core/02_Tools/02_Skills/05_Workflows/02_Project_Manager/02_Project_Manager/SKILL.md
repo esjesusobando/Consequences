@@ -1,3 +1,9 @@
+---
+description: 02_Project_Manager
+globs: **/*
+alwaysApply: true
+---
+
 # Project Manager — Skill Index
 
 ## Descripción

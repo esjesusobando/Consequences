@@ -1,3 +1,9 @@
+---
+description: 03_MCP_Integration
+globs: **/*
+alwaysApply: true
+---
+
 # 05 MCP Integration
 
 ## Esencia Original

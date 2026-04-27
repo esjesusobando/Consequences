@@ -1,3 +1,9 @@
+---
+description: 02_Batch_Doc_Processor
+globs: **/*
+alwaysApply: true
+---
+
 # 🦾 Skill 11_02: Batch Doc Processor Elite
 
 ## Esencia Original

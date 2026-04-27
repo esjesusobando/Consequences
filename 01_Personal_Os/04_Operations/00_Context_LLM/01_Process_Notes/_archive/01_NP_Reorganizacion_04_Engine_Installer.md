@@ -29,9 +29,9 @@ Reorganizar la estructura del 04_Operations y crear un installer para migrar Per
 - `scripts/configure_paths.py` - Configura rutas y APIs
 - `scripts/validate.py` - Valida instalación
 
-### 3. Mover Scripts a 08_Scripts_Os
+### 3. Mover Scripts a 03_Scripts_Os
 
-- 65 scripts Python movidos de 04_Operations/ a 04_Operations/08_Scripts_Os/
+- 65 scripts Python movidos de 04_Operations/ a 04_Operations/03_Scripts_Os/
 - Actualizar rutas hardcodeadas en 58 y 59 para usar config.json
 
 ### 4. Actualizar Referencias

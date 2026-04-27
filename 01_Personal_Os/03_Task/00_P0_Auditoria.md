@@ -24,7 +24,7 @@ El usuario pidió auditar carpeta por carpeta (00 a 08) usando el framework "Sup
 6. **05_Archive/** - Legacy archivado
 7. **06_Playground/** - Pruebas y experimentos
 8. **07_Projects/** - Proyectos activos
-9. **08_Scripts_Os/** - Scripts operativos
+9. **03_Scripts_Os/** - Scripts operativos
 
 ## Criterios de Auditoría
 
@@ -50,7 +50,7 @@ El usuario pidió auditar carpeta por carpeta (00 a 08) usando el framework "Sup
 - [ ] 05_Archive - Legacy organizado, sin duplicados
 - [ ] 06_Playground - Experiments limpios, Hillary_Life_OS integrada
 - [ ] 07_Projects - Proyectos activos
-- [ ] 08_Scripts_Os - Scripts operativos numerados (01-10)
+- [ ] 03_Scripts_Os - Scripts operativos numerados (01-10)
 
 ## Progress Log
 
@@ -123,7 +123,7 @@ El usuario pidió auditar carpeta por carpeta (00 a 08) usando el framework "Sup
 - 01_Projects_Lab/
 - **Estado: OK**
 
-### 08_Scripts_Os ✅
+### 03_Scripts_Os ✅
 - Scripts principales: 00-07 + folders numerados (01-08)
 - Engine scripts numerados
 - **Estado: OK**

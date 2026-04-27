@@ -1,3 +1,9 @@
+---
+description: 05_Pass_At_Metrics
+globs: **/*
+alwaysApply: true
+---
+
 # Pass@k Metrics Skill
 
 **CATEGORÍA:** Anthropic Harness Patterns

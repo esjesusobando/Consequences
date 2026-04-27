@@ -82,7 +82,7 @@ Status: ✅ EXISTE y es válido (~18KB, 747 líneas)
 
 | Archivo                                                                                 | Descripción                          |
 |-----------------------------------------------------------------------------------------|--------------------------------------|
-| `08_Scripts_Os/12_Audits/REPORTE_AUDITORIA_2026-04-21.md`                               | Reporte de auditoría oficial         |
+| `03_Scripts_Os/12_Audits/REPORTE_AUDITORIA_2026-04-21.md`                               | Reporte de auditoría oficial         |
 | `04_Operations/03_Process_Notes/05_NP_Auditoria_Rutas_Correccion_2026-04-21.md`         | Process Notes                        |
 
 ---

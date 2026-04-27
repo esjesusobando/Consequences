@@ -60,9 +60,9 @@
 | **Status**                    | ⚠️ MEDIUM - Scripts still reference old path             |
 
 **Affected Scripts:**
-- `08_Scripts_Os/Validator_Fixed/40_Validate_Rules.py`
-- `08_Scripts_Os/Workflow_Fixed/73_Avengers_Workflow_v3.py`
-- `08_Scripts_Os/Tool_Fixed/61_MCP_Health_Check.py`
+- `03_Scripts_Os/Validator_Fixed/40_Validate_Rules.py`
+- `03_Scripts_Os/Workflow_Fixed/73_Avengers_Workflow_v3.py`
+- `03_Scripts_Os/Tool_Fixed/61_MCP_Health_Check.py`
 - Multiple legacy backup scripts
 
 ---
@@ -160,7 +160,7 @@
 |------------------------------|--------------------------------------------------|----------------------|
 | Skills                       | `01_Core/03_Skills/`                             | ✅ EXISTS             |
 | Auto-Improvement             | `04_Operations/01_Auto_Improvement/`             | ✅ EXISTS             |
-| Scripts OS                   | `08_Scripts_Os/`                                 | ✅ EXISTS             |
+| Scripts OS                   | `03_Scripts_Os/`                                 | ✅ EXISTS             |
 | Tasks                        | `03_Tasks/`                                      | ✅ EXISTS             |
 
 ---
@@ -168,7 +168,7 @@
 ## 4. AUTO-IMPROVEMENT SYSTEM TEST
 
 ```
-Command: python 08_Scripts_Os/11_Auto_Learn_Hub.py --scan
+Command: python 03_Scripts_Os/11_Auto_Learn_Hub.py --scan
 Result: ✅ OPERATIONAL
 
 Output:

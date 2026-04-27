@@ -38,7 +38,7 @@ El sistema Auto-Improvement detectaba **1,418 issues** (99% false positives).
    - Segunda iteración: 170 archivos, 770 reemplazos adicionales
 
 4. **Validación del sistema**
-   - Corrí Auto-Improvement: `python 08_Scripts_Os/11_Auto_Learn_Hub.py --scan`
+   - Corrí Auto-Improvement: `python 03_Scripts_Os/11_Auto_Learn_Hub.py --scan`
    - Resultado: 1 issue (normal, no false positives)
 
 ## Root Cause

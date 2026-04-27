@@ -5,7 +5,7 @@ Según el BACKLOG.md actualizado a 2026-04-01, las tareas pendientes son:
 
 1. [ ] Push a GitHub (Dream_Team) — verificar conectividad SSH/HTTPS
 2. [ ] Resolver scripts 21, 41, 42, 62, 70 en Legacy_Backup — decidir migración o deprecación formal
-3. [ ] Validar smoke test de hubs post-reparación: `python 08_Scripts_Os/01_Auditor_Hub.py health`
+3. [ ] Validar smoke test de hubs post-reparación: `python 03_Scripts_Os/01_Auditor_Hub.py health`
 4. [ ] Revisar/actualizar GOALS.md con estado actual Q1 2026
 
 ## Estado Actual de las Tareas
@@ -17,15 +17,15 @@ Según el BACKLOG.md actualizado a 2026-04-01, las tareas pendientes son:
 - **Branch local**: master está 13 commits adelante de origin/master
 
 ### Tarea 2: Scripts 21, 41, 42, 62, 70
-- **Script 21_Skill_Script_Mapper.py**: Existe en `08_Scripts_Os/10_Legacy/21_Skill_Script_Mapper.py`
+- **Script 21_Skill_Script_Mapper.py**: Existe en `03_Scripts_Os/10_Legacy/21_Skill_Script_Mapper.py`
 - **Script 41_Logic_Restorer.py**: NO existe en el sistema (solo referenciado en documentación)
 - **Script 42_Audit_Engineering.py**: NO existe en el sistema (solo referenciado en documentación y en mapeadores)
-- **Script 62_Tool_Shed.py**: Existe en `08_Scripts_Os/02_Tool/62_Tool_Shed.py`
-- **Script 70_Ship_It.py**: Existe en `08_Scripts_Os/10_Legacy/70_Ship_It.py`
+- **Script 62_Tool_Shed.py**: Existe en `03_Scripts_Os/02_Tool/62_Tool_Shed.py`
+- **Script 70_Ship_It.py**: Existe en `03_Scripts_Os/10_Legacy/70_Ship_It.py`
 - **Legacy_Backup directory**: NO existe (referencia obsoleta)
 
 ### Tarea 3: Smoke test de hubs
-- **Estado**: COMPLETADO - El comando `python 08_Scripts_Os/01_Auditor_Hub.py health` se ejecutó exitosamente y reportó "ESTATUS: SALUDABLE"
+- **Estado**: COMPLETADO - El comando `python 03_Scripts_Os/01_Auditor_Hub.py health` se ejecutó exitosamente y reportó "ESTATUS: SALUDABLE"
 
 ### Tarea 4: GOALS.md actualizado
 - **Estado**: COMPLETADO - El archivo `00_Winter_is_Coming/GOALS.md` muestra última actualización: March 31, 2026
@@ -76,7 +76,7 @@ Según el BACKLOG.md actualizado a 2026-04-01, las tareas pendientes son:
 4. **Acciones específicas**:
    ```bash
    # Verificar qué dice el mapeador sobre los scripts faltantes
-   grep -A5 -B5 "41_Logic_Restorer\|42_Audit_Engineering" 08_Scripts_Os/10_Legacy/21_Skill_Script_Mapper.py
+   grep -A5 -B5 "41_Logic_Restorer\|42_Audit_Engineering" 03_Scripts_Os/10_Legacy/21_Skill_Script_Mapper.py
    
    # Verificar referencias en documentación activa (no archivada)
    find 02_Knowledge/ 04_Operations/ -name "*.md" -exec grep -l "41_\|42_" {} \;

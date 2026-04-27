@@ -1,3 +1,9 @@
+---
+description: 01_Vercel_Deploy
+globs: **/*
+alwaysApply: true
+---
+
 # 26 Vercel Deploy
 
 ## Esencia Original

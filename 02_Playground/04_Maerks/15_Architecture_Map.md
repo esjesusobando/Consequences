@@ -6137,7 +6137,7 @@
     - setup_aliases.py
     - setup_dependencies.py
     - validate.py
-- 08_Scripts_Os/
+- 03_Scripts_Os/
   - 00_Context_Reset.py
   - 01_Spider_Brainstorm.py
   - 02_Professor_X_Plan.py

@@ -23,7 +23,7 @@
 - **Sistema Operativo:** PersonalOS (Think Different AI)
 - **Lenguaje:** Python 3.14+
 - **Estructura Actual:**
-  - `08_Scripts_Os/` - Scripts principales + Hubs 91-100
+  - `03_Scripts_Os/` - Scripts principales + Hubs 91-100
   - `Legacy_Backup/` - ~80 scripts individuales (backward compatibility)
   - `AIPM_Fixed/` - 5 scripts AIPM corregidos
 - **Patrón Arquitectónico:** Compound Hubs + Legacy Backup
@@ -182,7 +182,7 @@
 ## 9. Comando Final de Validación
 
 ```bash
-python 04_Operations/08_Scripts_Os/01_Auditor_Hub.py estructura
+python 04_Operations/03_Scripts_Os/01_Auditor_Hub.py estructura
 # Esperado: 0 errores
 ```
 

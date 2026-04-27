@@ -1,15 +1,23 @@
 # MCP Registry — updated by 15_MCP_Sync_Hub.py
-# Drift Claude<->OpenCode: claude_only=16, opencode_only=1
+# Drift Claude<->OpenCode: claude_only=0, opencode_only=0
 
 version: v3.0
-generated: 2026-04-25T16:53:47.628975
+generated: 2026-04-26T22:42:56.186880
 totals:
-  claude_code: 33
-  opencode: 18
-  both: 17
-  claude_only: 16
-  opencode_only: 1
+  claude_code: 34
+  opencode: 34
+  both: 34
+  claude_only: 0
+  opencode_only: 0
 mcps:
+  - name: @magicuidesign/mcp
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: Amplitude
+    availability: both
+    claude_code: true
+    opencode: true
   - name: Linear
     availability: both
     claude_code: true
@@ -22,11 +30,31 @@ mcps:
     availability: both
     claude_code: true
     opencode: true
+  - name: TestSprite
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: aim-memory-bank
+    availability: both
+    claude_code: true
+    opencode: true
   - name: chrome-devtools
     availability: both
     claude_code: true
     opencode: true
   - name: context7
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: docker
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: eagle
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: eagle-mcp
     availability: both
     claude_code: true
     opencode: true
@@ -54,11 +82,47 @@ mcps:
     availability: both
     claude_code: true
     opencode: true
+  - name: github
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: google-workspace
+    availability: both
+    claude_code: true
+    opencode: true
   - name: mcp-obsidian
     availability: both
     claude_code: true
     opencode: true
+  - name: n8n-mcp
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: nanobanana
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: notebooklm
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: obsidian-api
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: pencil
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: qmd
+    availability: both
+    claude_code: true
+    opencode: true
   - name: recall
+    availability: both
+    claude_code: true
+    opencode: true
+  - name: stackoverflow
     availability: both
     claude_code: true
     opencode: true
@@ -78,71 +142,7 @@ mcps:
     availability: both
     claude_code: true
     opencode: true
-  - name: @magicuidesign/mcp
-    availability: claude_only
-    claude_code: true
-    opencode: false
-  - name: Amplitude
-    availability: claude_only
-    claude_code: true
-    opencode: false
-  - name: TestSprite
-    availability: claude_only
-    claude_code: true
-    opencode: false
-  - name: aim-memory-bank
-    availability: claude_only
-    claude_code: true
-    opencode: false
-  - name: docker
-    availability: claude_only
-    claude_code: true
-    opencode: false
-  - name: eagle-mcp
-    availability: claude_only
-    claude_code: true
-    opencode: false
-  - name: github
-    availability: claude_only
-    claude_code: true
-    opencode: false
-  - name: google-workspace
-    availability: claude_only
-    claude_code: true
-    opencode: false
-  - name: n8n-mcp
-    availability: claude_only
-    claude_code: true
-    opencode: false
-  - name: nanobanana
-    availability: claude_only
-    claude_code: true
-    opencode: false
-  - name: notebooklm
-    availability: claude_only
-    claude_code: true
-    opencode: false
-  - name: obsidian-api
-    availability: claude_only
-    claude_code: true
-    opencode: false
-  - name: pencil
-    availability: claude_only
-    claude_code: true
-    opencode: false
-  - name: qmd
-    availability: claude_only
-    claude_code: true
-    opencode: false
-  - name: stackoverflow
-    availability: claude_only
-    claude_code: true
-    opencode: false
   - name: zai-mcp-server
-    availability: claude_only
+    availability: both
     claude_code: true
-    opencode: false
-  - name: eagle
-    availability: opencode_only
-    claude_code: false
     opencode: true

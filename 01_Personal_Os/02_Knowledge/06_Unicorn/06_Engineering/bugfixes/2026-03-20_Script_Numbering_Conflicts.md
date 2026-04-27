@@ -6,10 +6,10 @@ status: resolved
 tags: [scripts, numbering, conflicts, audit]
 ---
 
-## Critical: Script Numbering Conflicts in 08_Scripts_Os
+## Critical: Script Numbering Conflicts in 03_Scripts_Os
 
 ### Context
-Audit found 08_Scripts_Os has severe numbering conflicts. 75 scripts claimed but actually have duplicates, causing broken references.
+Audit found 03_Scripts_Os has severe numbering conflicts. 75 scripts claimed but actually have duplicates, causing broken references.
 
 ### Problem
 - Numbers 00, 55, 56, 57, 58, 59 have 2-3 files each
@@ -20,7 +20,7 @@ Audit found 08_Scripts_Os has severe numbering conflicts. 75 scripts claimed but
 Identify and resolve numbering conflicts. Scripts renumbered or removed as appropriate.
 
 ### Location
-`04_Engine/08_Scripts_Os/`
+`04_Engine/03_Scripts_Os/`
 
 ### Lesson
 Script numbering must be unique and verifiable. Use automatic validation.

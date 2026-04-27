@@ -48,7 +48,7 @@ Se crearon scripts para asegurar la escalabilidad:
 - `fix_marketing_essences.py`
 - `fix_yaml_skills.py`
 - `fix_doc_processing_essences.py`
-- `generate_skills_tree.py` (movido a `08_Scripts_Os/`)
+- `generate_skills_tree.py` (movido a `03_Scripts_Os/`)
 
 ---
 
@@ -95,7 +95,7 @@ Category
 - 06_Archive: Added 00_Backups, 13_Script_Aud_Perfiles/, cleaned tree.txt (1700→60 lines)
 ✅ Scripts Archived:
 - Created 06_Archive/13_Script_Aud_Perfiles/ with 6 automation scripts
-- Moved generate_skills_tree.py to 08_Scripts_Os/83_Generate_Skills_Tree.py
+- Moved generate_skills_tree.py to 03_Scripts_Os/83_Generate_Skills_Tree.py
 ✅ System Audits:
 - Structure Auditor: ✅ PASSED (7 dimensions, all scripts numbered)
 - HULK Compound Audit: ✅ PASSED
@@ -121,7 +121,7 @@ Documentation updated:
 - 04_Operations/07_Memory_Brain/14_Skills_Audit_Summary_2026-03-24.md - Created
 Scripts created:
 - 06_Archive/13_Script_Aud_Perfiles/ - 6 Python scripts
-- 08_Scripts_Os/83_Generate_Skills_Tree.py
+- 03_Scripts_Os/83_Generate_Skills_Tree.py
 Summary files created:
 - SESION_SUMMARY_2026-03-24_HIPERDETALLADO.md - Root level summary
 Engram memory saved:

@@ -62,7 +62,7 @@ En lugar de migrar por "uso", migramos por "valor":
 
 #### Paso 1: Crear carpeta 14_Otros
 ```bash
-mkdir -p 08_Scripts_Os/14_Otros
+mkdir -p 03_Scripts_Os/14_Otros
 ```
 
 #### Paso 2: Mover scripts de VALOR MEDIO a 14_Otros
@@ -261,18 +261,18 @@ tests = [
 
 | Archivo                                                                                         | Acción            |
 |-------------------------------------------------------------------------------------------------|-------------------|
-| 08_Scripts_Os/config_paths.py                                                                   | ✅ Editado         |
-| 08_Scripts_Os/README.md                                                                         | ✅ Creado          |
-| 08_Scripts_Os/03_Validator/README.md                                                            | ✅ Creado          |
-| 08_Scripts_Os/05_AIPM/README.md                                                                 | ✅ Creado          |
-| 08_Scripts_Os/07_Data/README.md                                                                 | ✅ Creado          |
-| 08_Scripts_Os/08_General/README.md                                                              | ✅ Creado          |
-| 08_Scripts_Os/09_Integration/README.md                                                          | ✅ Creado          |
-| 08_Scripts_Os/10_Legacy/README.md                                                               | ✅ Creado          |
-| 08_Scripts_Os/11_Anthropic_Harness/README.md                                                    | ✅ Creado          |
-| 08_Scripts_Os/12_Audits/README.md                                                               | ✅ Creado          |
-| 08_Scripts_Os/13_Auditors_Os/README.md                                                          | ✅ Creado          |
-| 08_Scripts_Os/14_Otros/README.md                                                                | ✅ Creado          |
+| 03_Scripts_Os/config_paths.py                                                                   | ✅ Editado         |
+| 03_Scripts_Os/README.md                                                                         | ✅ Creado          |
+| 03_Scripts_Os/03_Validator/README.md                                                            | ✅ Creado          |
+| 03_Scripts_Os/05_AIPM/README.md                                                                 | ✅ Creado          |
+| 03_Scripts_Os/07_Data/README.md                                                                 | ✅ Creado          |
+| 03_Scripts_Os/08_General/README.md                                                              | ✅ Creado          |
+| 03_Scripts_Os/09_Integration/README.md                                                          | ✅ Creado          |
+| 03_Scripts_Os/10_Legacy/README.md                                                               | ✅ Creado          |
+| 03_Scripts_Os/11_Anthropic_Harness/README.md                                                    | ✅ Creado          |
+| 03_Scripts_Os/12_Audits/README.md                                                               | ✅ Creado          |
+| 03_Scripts_Os/13_Auditors_Os/README.md                                                          | ✅ Creado          |
+| 03_Scripts_Os/14_Otros/README.md                                                                | ✅ Creado          |
 | 04_Operations/02_Knowledge_Brain/03_Process_Notes/Plan_Migracion_Scripts_v2_20260420.md         | ✅ Creado          |
 | 04_Operations/00_Context_Memory/Plan_Migracion_Scripts_v2_20260420.md                           | ✅ Creado          |
 

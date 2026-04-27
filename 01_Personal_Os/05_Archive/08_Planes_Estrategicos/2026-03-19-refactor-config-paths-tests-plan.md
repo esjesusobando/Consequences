@@ -19,7 +19,7 @@ Módulo crítico del sistema PersonalOS que centraliza todas las rutas. Tras la 
 
 ## Proposed Solution
 
-Crear suite de tests unitarios siguiendo los patrones existentes en `04_Operations/08_Scripts_Os/05_Tests/` que cubra:
+Crear suite de tests unitarios siguiendo los patrones existentes en `04_Operations/03_Scripts_Os/05_Tests/` que cubra:
 
 1. **Validación de entorno** (fail-fast)
 2. **Constantes exportadas** (7 Dimensiones)
@@ -85,7 +85,7 @@ def test_run_audit_success():
 
 ### Archivos Relacionados
 
-- `04_Operations/08_Scripts_Os/config_paths.py` — Módulo bajo test
+- `04_Operations/03_Scripts_Os/config_paths.py` — Módulo bajo test
 - `04_Operations/05_Tests/test_safe_commit.py` — Patrón de tests existente
 - `01_Core/02_Knowledge_Brain/01_Inventario_Total.md` — Referencia de estructura
 - Commit: `f6f1918` — Refactorización determinista

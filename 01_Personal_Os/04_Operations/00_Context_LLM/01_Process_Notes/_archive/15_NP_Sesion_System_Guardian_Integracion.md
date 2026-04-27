@@ -128,7 +128,7 @@ d78b624 fix: 79_System_Guardian - Windows encoding fix
 
 | Archivo                                                                       | Descripción                                              |
 |-------------------------------------------------------------------------------|----------------------------------------------------------|
-| `04_ENGINE/08_Scripts_Os/79_System_Guardian.py`                               | System Guardian principal                                |
+| `04_ENGINE/03_Scripts_Os/79_System_Guardian.py`                               | System Guardian principal                                |
 | `.AGENT/04_EXTENSIONS/hooks/03_Lifecycle/stop.py`                             | Hook post-sesión                                         |
 | `04_ENGINE/07_Installer/installer.py`                                         | Installer v2.0                                           |
 | `04_ENGINE/07_Installer/scripts/validate.py`                                  | Validación + tests                                       |
@@ -139,9 +139,9 @@ d78b624 fix: 79_System_Guardian - Windows encoding fix
 ## 🔗 Aliases Disponibles
 
 ```bash
-alias gr='cd "$(git rev-parse --show-toplevel 2>/dev/null || echo .)" && python 04_ENGINE/08_Scripts_Os/79_System_Guardian.py'
-alias gra='cd "$(git rev-parse --show-toplevel 2>/dev/null || echo .)" && python 04_ENGINE/08_Scripts_Os/79_System_Guardian.py --apply'
-alias gr-agents='cd "$(git rev-parse --show-toplevel 2>/dev/null || echo .)" && python 04_ENGINE/08_Scripts_Os/79_System_Guardian.py --agents'
+alias gr='cd "$(git rev-parse --show-toplevel 2>/dev/null || echo .)" && python 04_ENGINE/03_Scripts_Os/79_System_Guardian.py'
+alias gra='cd "$(git rev-parse --show-toplevel 2>/dev/null || echo .)" && python 04_ENGINE/03_Scripts_Os/79_System_Guardian.py --apply'
+alias gr-agents='cd "$(git rev-parse --show-toplevel 2>/dev/null || echo .)" && python 04_ENGINE/03_Scripts_Os/79_System_Guardian.py --agents'
 ```
 
 - --

@@ -37,7 +37,7 @@ Cerrar la sesión de trabajo de manera segura, persistiendo el progreso y sincro
 
 1. Ejecutar script de cierre:
    ```bash
-   python 08_Scripts_Os/Ritual_Fixed/08_Ritual_Cierre.py
+   python 03_Scripts_Os/Ritual_Fixed/08_Ritual_Cierre.py
    ```
 2. Git commit y push automático
 

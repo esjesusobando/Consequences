@@ -19,7 +19,7 @@ El PersonalOS tiene la siguiente estructura:
 ├── 04_Operations/         # Memoria, Brain, Notas
 ├── 05_Archive/           # Archive: Repos, legacy
 ├── 07_Projects/          # Proyectos
-└── 08_Scripts_Os/        # HUBs: Auditor, Git, AIPM, Ritual
+└── 03_Scripts_Os/        # HUBs: Auditor, Git, AIPM, Ritual
 ```
 
 ## Comandos Principales

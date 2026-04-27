@@ -42,7 +42,7 @@
 
 ## Propuesta de Renombramiento Seguro
 
-Se moverán las carpetas redundantes al final de la secuencia numérica de su padre para **no afectar las carpetas críticas intermedias** (ej. `08_Scripts_Os`).
+Se moverán las carpetas redundantes al final de la secuencia numérica de su padre para **no afectar las carpetas críticas intermedias** (ej. `03_Scripts_Os`).
 
 - Rename: `03_Knowledge/13_Strategic_Plans`  -->  `03_Knowledge/13_Strategic_Plans`
 - Rename: `04_Operations/11_Brain_Engine`  -->  `04_Operations/11_Brain_Engine`

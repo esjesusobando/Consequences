@@ -1,3 +1,9 @@
+---
+description: 04_Test_Resource_Management
+globs: **/*
+alwaysApply: true
+---
+
 # Skill 48: Test Resource Management
 
 ## 🎯 Objetivo Triggers on: testing, QA, quality, validation.

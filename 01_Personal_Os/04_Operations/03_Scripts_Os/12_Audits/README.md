@@ -25,7 +25,7 @@ Scripts de auditoría: routes audit, skills audit.
 ## 📍 Ubicación
 
 ```
-08_Scripts_Os/12_Audits/
+03_Scripts_Os/12_Audits/
 ```
 
 ---

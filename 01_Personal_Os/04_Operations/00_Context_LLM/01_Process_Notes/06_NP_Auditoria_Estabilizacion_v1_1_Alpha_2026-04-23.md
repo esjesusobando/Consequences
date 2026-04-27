@@ -25,7 +25,7 @@ Think_Different/                    # Root (detected by 01_Core presence)
 ├── 01_Core/
 │   ├── 01_Rules/                   # 10 rules (.mdc)
 │   └── 03_Skills/                  # 25 categorías, 504 SKILL.md en subcarpetas
-├── 08_Scripts_Os/                  # 11 HUBs + auditores + validators
+├── 03_Scripts_Os/                  # 11 HUBs + auditores + validators
 ├── 04_Operations/
 │   ├── 00_Context_Memory/          # 3 archivos CTX
 │   ├── 03_Process_Notes/           # 5+ archivos NP
@@ -39,11 +39,11 @@ Think_Different/                    # Root (detected by 01_Core presence)
 
 | Script                           | Ubicacion                                   | Estado                     |
 |----------------------------------|---------------------------------------------|----------------------------|
-| 01_Auditor_Hub.py                | 08_Scripts_Os/                              | ✅ Estructura OK            |
-| 15_SOTA_Integrity_Check.py       | 08_Scripts_Os/13_Auditors_Os/scripts/       | ⚠️ Benchmarks wrong        |
-| 33_Parallel_Audit_Pro.py         | 08_Scripts_Os/03_Validator/                 | ⚠️ Paths old               |
-| 34_Skill_Auditor.py              | 08_Scripts_Os/03_Validator/                 | ✅ Funcional                |
-| 80_Edge_Case_Validator.py        | 08_Scripts_Os/03_Validator/                 | ⚠️ REQUIRED_DIRS old       |
+| 01_Auditor_Hub.py                | 03_Scripts_Os/                              | ✅ Estructura OK            |
+| 15_SOTA_Integrity_Check.py       | 03_Scripts_Os/13_Auditors_Os/scripts/       | ⚠️ Benchmarks wrong        |
+| 33_Parallel_Audit_Pro.py         | 03_Scripts_Os/03_Validator/                 | ⚠️ Paths old               |
+| 34_Skill_Auditor.py              | 03_Scripts_Os/03_Validator/                 | ✅ Funcional                |
+| 80_Edge_Case_Validator.py        | 03_Scripts_Os/03_Validator/                 | ⚠️ REQUIRED_DIRS old       |
 
 ---
 

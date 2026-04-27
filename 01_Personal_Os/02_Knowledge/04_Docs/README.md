@@ -34,7 +34,7 @@
 - **01_Personal_Os/11_AGENTS.md** — `00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md`
 - **RULES_INDEX** — `01_Core/01_Rules/RULES_INDEX.md`
 - **Skills** — `01_Core/03_Skills/README.md`
-- **Scripts** — `08_Scripts_Os/SCRIPTS_INDEX.md`
+- **Scripts** — `03_Scripts_Os/SCRIPTS_INDEX.md`
 
 ---
 

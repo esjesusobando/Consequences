@@ -175,7 +175,7 @@ Think_Different_AI/
 2. Implementar validación Pydantic
 3. Agregar idempotency_key obligatorio
 4. Agregar modo dry-run
-5. Documentar en `08_Scripts_Os/`
+5. Documentar en `03_Scripts_Os/`
 
 ### Phase 2: Notion
 
@@ -204,7 +204,7 @@ Think_Different_AI/
 6. Preguntar: "¿Continuamos con el desarrollo de Stripe Schema?"
 
 # Script de validación
-python 08_Scripts_Os/53_Structure_Auditor.py
+python 03_Scripts_Os/53_Structure_Auditor.py
 ```
 
 ---
@@ -218,7 +218,7 @@ python 08_Scripts_Os/53_Structure_Auditor.py
 | `04_Operations/04_Memory_Brain/SESION_SUMMARY_2026-03-24_HIPERDETALLADO.md`             | Session summary                            |
 | `README.md`                                                                             | Estado del sistema                         |
 | `.agent/CLAUDE.md`                                                                      | Configuración del agente                   |
-| `08_Scripts_Os/SCRIPTS_INDEX.md`                                                        | Catálogo de scripts                        |
+| `03_Scripts_Os/SCRIPTS_INDEX.md`                                                        | Catálogo de scripts                        |
 
 ---
 

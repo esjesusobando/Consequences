@@ -1,4 +1,4 @@
-# 📁 08_Scripts_Os — Scripts del Sistema
+# 📁 03_Scripts_Os — Scripts del Sistema
 
 > **Versión**: v1.0 ALFA
 > **Fecha**: 2026-04-20
@@ -71,7 +71,7 @@
 ## 📍 Ubicación
 
 ```
-Think_Different/08_Scripts_Os/
+Think_Different/03_Scripts_Os/
 ```
 
 ---

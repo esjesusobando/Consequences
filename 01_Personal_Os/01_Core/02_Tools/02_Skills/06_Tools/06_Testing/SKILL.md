@@ -1,3 +1,9 @@
+---
+description: 06_Testing
+globs: **/*
+alwaysApply: true
+---
+
 # Testing — Skill Index
 
 ## Descripción

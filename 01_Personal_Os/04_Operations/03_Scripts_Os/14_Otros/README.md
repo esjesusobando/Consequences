@@ -27,7 +27,7 @@ Scripts de valor medio. Útiles pero no críticos. Respaldados por si se necesit
 ## 📍 Ubicación
 
 ```
-08_Scripts_Os/14_Otros/
+03_Scripts_Os/14_Otros/
 ```
 
 ---

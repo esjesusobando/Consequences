@@ -1,3 +1,9 @@
+---
+description: 17_Testing_Coverage
+globs: **/*
+alwaysApply: true
+---
+
 # Skill: gga-testing-coverage
 
 ## Purpose

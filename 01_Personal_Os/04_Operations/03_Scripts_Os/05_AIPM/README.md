@@ -31,7 +31,7 @@ Sistema de gestión de proyectos con IA. Scripts para evaluación, tracing, y co
 ## 📍 Ubicación
 
 ```
-08_Scripts_Os/05_AIPM/
+03_Scripts_Os/05_AIPM/
 ```
 
 ---

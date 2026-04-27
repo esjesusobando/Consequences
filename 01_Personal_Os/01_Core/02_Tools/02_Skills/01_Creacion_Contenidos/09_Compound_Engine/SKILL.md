@@ -1,3 +1,9 @@
+---
+description: 09_Compound_Engine
+globs: **/*
+alwaysApply: true
+---
+
 # ⚙️ Skill: Compound Engine Integration
 
 ## Esencia Original

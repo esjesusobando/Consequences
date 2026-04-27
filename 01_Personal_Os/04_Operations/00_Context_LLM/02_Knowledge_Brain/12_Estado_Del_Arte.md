@@ -37,11 +37,11 @@
 
 | Componente                         | Ubicación                                                                           | Propósito                            |
 |------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------|
-| **Safety Wrapper**                 | `08_Scripts_Os/11_Anthropic_Harness/00_Safety_Wrapper.py`                           | Pre-check de seguridad               |
-| **Context Manager**                | `08_Scripts_Os/11_Anthropic_Harness/01_Context_Manager.py`                          | Reset vs Compaction                  |
-| **Evaluator Runner**               | `08_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner.py`                         | QA separado (GAN)                    |
-| **Sprint Contract**                | `08_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract.py`                          | Negocia "done"                       |
-| **Playwright QA**                  | `08_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py`                            | Testing interactivo                  |
+| **Safety Wrapper**                 | `03_Scripts_Os/11_Anthropic_Harness/00_Safety_Wrapper.py`                           | Pre-check de seguridad               |
+| **Context Manager**                | `03_Scripts_Os/11_Anthropic_Harness/01_Context_Manager.py`                          | Reset vs Compaction                  |
+| **Evaluator Runner**               | `03_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner.py`                         | QA separado (GAN)                    |
+| **Sprint Contract**                | `03_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract.py`                          | Negocia "done"                       |
+| **Playwright QA**                  | `03_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py`                            | Testing interactivo                  |
 
 **Skills Anthropic:**
 - `01_Core/03_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`
@@ -93,7 +93,7 @@ Think_Different_AI/
 │
 ├── 04_Operations/            # Motor: Scripts (10 Hubs)
 │   ├── 00_Config/
-│   ├── 08_Scripts_Os/      # 86+ scripts
+│   ├── 03_Scripts_Os/      # 86+ scripts
 │   │   ├── 01_Auditor_Hub.py
 │   │   ├── 02_Git_Hub.py
 │   │   ├── 03_AIPM_Hub.py

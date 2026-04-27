@@ -23,7 +23,7 @@ Usar cuando el contexto de la sesión está degradado: respuestas incoherentes, 
 1. Ejecutar el script de reset:
 
    ```bash
-   python 08_Scripts_Os/04_Ritual_Hub.py --reset
+   python 03_Scripts_Os/04_Ritual_Hub.py --reset
    ```
 
 2. Iniciar nueva sesión ejecutando `01_Iron_Man_Gen` (Workflow Génesis)
@@ -67,7 +67,7 @@ Think_Different/
 ├── 03_Tasks/             # Tareas activas
 ├── 04_Operations/        # Context_Memory, Process_Notes, Memory_Brain, Plans, Solutions
 ├── 05_Archive/           # Legacy
-├── 08_Scripts_Os/        # HUBs y scripts Python
+├── 03_Scripts_Os/        # HUBs y scripts Python
 └── .agent/              # Skills, Workflows, Extensions
 ```
 

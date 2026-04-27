@@ -32,7 +32,7 @@ Scripts para analytics, parsing y procesamiento de datos.
 ## 📍 Ubicación
 
 ```
-08_Scripts_Os/07_Data/
+03_Scripts_Os/07_Data/
 ```
 
 ---

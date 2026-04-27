@@ -21,7 +21,7 @@ Contiene scripts de versiones anteriores del sistema.
 ## 📍 Ubicación
 
 ```
-08_Scripts_Os/10_Legacy/
+03_Scripts_Os/10_Legacy/
 ```
 
 ---

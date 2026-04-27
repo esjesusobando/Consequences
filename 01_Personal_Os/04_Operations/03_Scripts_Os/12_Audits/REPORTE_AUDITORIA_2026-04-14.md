@@ -21,16 +21,16 @@
 ## 🔍 ERRORES ENCONTRADOS Y CORREGIDOS
 
 ### 1. Bug de Sintaxis en 34_Skill_Auditor.py
-- **Ubicación:** `08_Scripts_Os/06_Auditor/34_Skill_Auditor.py:64`
+- **Ubicación:** `03_Scripts_Os/06_Auditor/34_Skill_Auditor.py:64`
 - **Problema:** Falta `else:` después de un bloque `if match:`
 - **Corrección:** Añadido `else:` para cerrar el bloque condicional
 - **Estado:** ✅ CORREGIDO
 
 ### 2. Rutas Obsoletas en 33_Parallel_Audit_Pro.py
-- **Ubicación:** `08_Scripts_Os/06_Auditor/33_Parallel_Audit_Pro.py`
+- **Ubicación:** `03_Scripts_Os/06_Auditor/33_Parallel_Audit_Pro.py`
 - **Problemas:**
   - Línea con ruta `.agent\02_Skills` → actualizada a `01_Core\03_Skills`
-  - Ruta de script inexistente `08_Scripts_Os/08_Scripts_Os/` → `03_AIPM_Hub.py`
+  - Ruta de script inexistente `03_Scripts_Os/03_Scripts_Os/` → `03_AIPM_Hub.py`
 - **Corrección:** Actualizadas rutas a formatos v6.1
 - **Estado:** ✅ CORREGIDO
 
@@ -82,7 +82,7 @@
 [OK] 03_Tasks
 [OK] 04_Operations
 [OK] 05_Archive
-[OK] 08_Scripts_Os
+[OK] 03_Scripts_Os
 ✓ Estructura válida
 ```
 

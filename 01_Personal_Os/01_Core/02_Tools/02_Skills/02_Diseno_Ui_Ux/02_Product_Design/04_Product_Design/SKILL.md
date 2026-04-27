@@ -1,3 +1,9 @@
+---
+description: 04_Product_Design
+globs: **/*
+alwaysApply: true
+---
+
 # Product Design — Skill Index
 
 ## Descripción

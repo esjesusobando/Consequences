@@ -27,14 +27,14 @@
 
 ### Issue 1: Professor X Plan (ALTA)
 
-- **Archivo:** `08_Scripts_Os/02_Professor_X_Plan.py`
+- **Archivo:** `03_Scripts_Os/02_Professor_X_Plan.py`
 - **Error:** `NameError: name 'BRAINSTORMS_DIR' is not defined`
 - **Causa:** Variable no definida en el script
 - **Fix:** Agregar `BRAINSTORMS_DIR = os.path.join(BRAIN_DIR, "Brainstorms")`
 
 ### Issue 2: Vision Review (MEDIA)
 
-- **Archivo:** `08_Scripts_Os/04_Vision_Review.py`
+- **Archivo:** `03_Scripts_Os/04_Vision_Review.py`
 - **Error:** gh/python no reconocidos
 - **Causa:** PATH de Windows no configurado correctamente en el script
 - **Fix:** Usar rutas absolutas o verificar PATH

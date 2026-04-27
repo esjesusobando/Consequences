@@ -28,13 +28,13 @@ El sistema "Carousel Master" permitirá al usuario generar carruseles completos 
 
 ### [Componente] Motor de Generación y Previsualización
 
-#### [NEW] [Carousel_Engine.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/08_Scripts_Os/16_Carousel_Engine.py)
+#### [NEW] [Carousel_Engine.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/03_Scripts_Os/16_Carousel_Engine.py)
 - Script Python para:
   - Generar metadatos de las slides.
   - Generar imágenes vía `generate_image`.
   - Crear el paquete de publicación (descripción + hashtags).
 
-#### [NEW] [Preview_Generator.js](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/08_Scripts_Os/17_Preview_Generator.js)
+#### [NEW] [Preview_Generator.js](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/03_Scripts_Os/17_Preview_Generator.js)
 - Componente para renderizar un carrusel interactivo en el navegador del usuario a través de un artefacto HTML.
 
 ---

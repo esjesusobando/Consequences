@@ -1,3 +1,9 @@
+---
+description: 01_Evaluator_Pattern
+globs: **/*
+alwaysApply: true
+---
+
 # Evaluator Pattern Skill
 
 **CATEGORÍA:** Anthropic Harness Patterns

@@ -1,3 +1,9 @@
+---
+description: 05_Seo_Audit
+globs: **/*
+alwaysApply: true
+---
+
 # 24 SEO Audit
 
 ## Esencia Original

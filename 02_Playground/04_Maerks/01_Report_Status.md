@@ -16,7 +16,7 @@ Se ha completado la reorganización física y lógica de la capa `05_Archive`, a
 
 ## 🛠️ Lista de Pendientes (Post-Lanzamiento)
 
-- [ ] **Auditoría de Scripts**: Validar que los 31 scripts restantes en `08_Scripts_Os` no tengan rutas hardcodeadas.
+- [ ] **Auditoría de Scripts**: Validar que los 31 scripts restantes en `03_Scripts_Os` no tengan rutas hardcodeadas.
 - [ ] **Limpieza de .bashrc**: Confirmar la resolución definitiva del alias `gr` (pendiente validación manual).
 - [ ] **Refactorización Core**: Mover los últimos remanentes de `.agent/` que no sean copias de seguridad a `01_Core/`.
 

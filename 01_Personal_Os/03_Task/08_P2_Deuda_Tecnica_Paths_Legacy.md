@@ -30,7 +30,7 @@ Esta deuda es de **bajo riesgo** y **bajo retorno inmediato** — no bloquea nad
 ## Paths obsoletos más comunes
 
 ```
-08_Scripts_Os/  →  01_Personal_Os/04_Operations/03_Scripts_Os/
+03_Scripts_Os/  →  01_Personal_Os/04_Operations/03_Scripts_Os/
 01_Core/03_Skills/  →  01_Personal_Os/01_Core/02_Tools/02_Skills/
 06_Playground/  →  02_Playground/
 ```

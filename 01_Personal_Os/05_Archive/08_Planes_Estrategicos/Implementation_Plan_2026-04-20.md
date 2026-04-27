@@ -38,7 +38,7 @@ Este documento integra el diagnóstico profundo del sistema más las metodologí
 | #           | Hallazgo                                    | Ubicación                | Estado                        |
 |-------------|---------------------------------------------|--------------------------|-------------------------------|
 | 1           | `.gitmodules` rutas desincronizadas         | Raíz                     | ✅ CORREGIDO                   |
-| 2           | Falta script de integridad                  | `08_Scripts_Os/`         | ✅ CREADO                      |
+| 2           | Falta script de integridad                  | `03_Scripts_Os/`         | ✅ CREADO                      |
 | 3           | Rutas hardcodeadas                          | Scripts varios           | ✅ NO CRÍTICO (Legacy)         |
 
 ### ✅ INTEGRADO

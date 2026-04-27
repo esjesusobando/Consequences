@@ -53,4 +53,4 @@ APROBADO / RECHAZADO / APROBADO CON OBSERVACIONES
 ## Contexto del Sistema
 - Reglas maestras: `01_Core/01_Rules/`
 - Inventario: `02_Knowledge/01_Inventario_Total.md`
-- Invocado por: `08_Scripts_Os/23_AIPM_Evaluator.py` (cuando esté activo)
+- Invocado por: `03_Scripts_Os/23_AIPM_Evaluator.py` (cuando esté activo)

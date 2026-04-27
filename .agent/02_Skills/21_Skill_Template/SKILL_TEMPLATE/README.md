@@ -32,10 +32,10 @@ Antes de integrar, ejecutar:
 
 ```bash
 # Security scan
-python 08_Scripts_Os\Validator_Fixed\skill_security_scan.py --skill 01_Core\03_Skills\NN_Skill\
+python 03_Scripts_Os\Validator_Fixed\skill_security_scan.py --skill 01_Core\03_Skills\NN_Skill\
 
 # Skill auditor
-python 08_Scripts_Os\Validator_Fixed\34_Skill_Auditor.py --skill 01_Core\03_Skills\NN_Skill\
+python 03_Scripts_Os\Validator_Fixed\34_Skill_Auditor.py --skill 01_Core\03_Skills\NN_Skill\
 ```
 
 ## Requisitos

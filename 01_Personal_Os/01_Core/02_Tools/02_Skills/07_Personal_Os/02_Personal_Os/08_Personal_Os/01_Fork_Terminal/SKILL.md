@@ -1,3 +1,9 @@
+---
+description: 01_Fork_Terminal
+globs: **/*
+alwaysApply: true
+---
+
 name: Fork Terminal Skill
 description: QUÉ HACE: Abre nuevas instancias de terminal para ejecutar comandos o agentes de forma independiente. CUÁNDO SE EJECUTA: Para ejecutar procesos largos o delegar subtareas sin bloquear la sesión actual.
  Triggers on: personalos, workflow, automation.

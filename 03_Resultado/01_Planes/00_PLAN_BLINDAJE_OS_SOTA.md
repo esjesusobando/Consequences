@@ -95,7 +95,7 @@ Subcarpetas creadas: `03_Growth/`, `04_Contexto/`, `05_Marca/`, `06_Plantillas/`
 | R17 | Auto-Improvement `--scan` ejecuta OK |
 | R18 | Agent sync: ZERO DRIFT entre live y backup |
 | R19 | Health test ejecuta y devuelve resultados parseable |
-| R20 | Docs activos sin refs v1.x (`01_Core/03_Skills`, `08_Scripts_Os`) |
+| R20 | Docs activos sin refs v1.x (`01_Core/03_Skills`, `03_Scripts_Os`) |
 
 ### G5 — Health Metrics Hub ✅
 **Archivo creado:** `01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py`

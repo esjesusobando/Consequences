@@ -1,3 +1,9 @@
+---
+description: 11_Pencil_Design_Studio
+globs: **/*
+alwaysApply: true
+---
+
 # 🎨 Skill 35: Pencil Design Studio (AI-Assisted Design & UI/UX Orchestra)
 
 ## Esencia Original

@@ -15,9 +15,9 @@
 
 | # | Issue | Archivo | Línea | Impacto | Estado |
 |---|-------|---------|-------|---------|--------|
-| ~~**A1**~~ | ~~`sys.path.insert(0, str(_root / "08_Scripts_Os"))`~~ | ~~`01_Auditor_Hub.py`~~ | ~~31~~ | ~~Import legacy roto en v2.1~~ | ✅ **FIXED** (v6.2) |
-| ~~**A2**~~ | ~~`sys.path.insert(0, str(_root / "08_Scripts_Os"))`~~ | ~~`02_Git_Hub.py`~~ | ~~19~~ | ~~Mismo problema~~ | ✅ **FIXED** (v6.2) |
-| ~~**A3**~~ | ~~Dimensión `"08_Scripts_Os"` listada como ENGINE_DIR~~ | ~~`01_Auditor_Hub.py`~~ | ~~65~~ | ~~Reportes muestran nombre viejo~~ | ✅ **FIXED** (v6.2) |
+| ~~**A1**~~ | ~~`sys.path.insert(0, str(_root / "03_Scripts_Os"))`~~ | ~~`01_Auditor_Hub.py`~~ | ~~31~~ | ~~Import legacy roto en v2.1~~ | ✅ **FIXED** (v6.2) |
+| ~~**A2**~~ | ~~`sys.path.insert(0, str(_root / "03_Scripts_Os"))`~~ | ~~`02_Git_Hub.py`~~ | ~~19~~ | ~~Mismo problema~~ | ✅ **FIXED** (v6.2) |
+| ~~**A3**~~ | ~~Dimensión `"03_Scripts_Os"` listada como ENGINE_DIR~~ | ~~`01_Auditor_Hub.py`~~ | ~~65~~ | ~~Reportes muestran nombre viejo~~ | ✅ **FIXED** (v6.2) |
 | **A4** | 12 reportes huérfanos | `02_Playground/reports/health_*.txt` — debería ir a `01_Personal_Os/04_Operations/00_Context_LLM/11_Reports/` o consolidar | - | 🔴 PENDIENTE |
 | **A5** | `04_Engine` mencionado por usuario | Buscar carpetas `04_Engine` huérfanas creadas por scripts (no encontradas en código pero pueden existir en disco) | - | 🟡 PENDIENTE |
 | **A6** | Skills NO auto-cargan por contexto | `CLAUDE.md` describe skills pero no hay context-triggers tipo "si tarea contiene X → leer SKILL.md de Y" | - | 🟡 PENDIENTE |
@@ -60,7 +60,7 @@
 **A.1 — Corregir `01_Auditor_Hub.py`**
 ```python
 # ANTES (línea 31)
-sys.path.insert(0, str(_root / "08_Scripts_Os"))
+sys.path.insert(0, str(_root / "03_Scripts_Os"))
 
 # DESPUÉS
 sys.path.insert(0, str(_root / "01_Personal_Os" / "04_Operations" / "03_Scripts_Os"))
@@ -87,7 +87,7 @@ Decidir si `02_Playground/reports/` debe seguir existiendo o eliminarse.
 
 **A.5 — Auditoría exhaustiva de paths legacy**
 Script grep en todo el repo (excluir `05_Archive`, `04_Maerks`):
-- `08_Scripts_Os` (sin prefijo correcto)
+- `03_Scripts_Os` (sin prefijo correcto)
 - `04_Engine` huérfano
 - `01_Core/03_Skills` (sin `02_Tools/`)
 - `06_Playground` → `02_Playground`
@@ -310,7 +310,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py --rec
 - ✅ 35/35 tests pasando
 - ✅ 297/297 skills validadas
 - ✅ ZERO drift live ↔ backup
-- ✅ ZERO refs `08_Scripts_Os` / `04_Engine` / `06_Playground` en código activo
+- ✅ ZERO refs `03_Scripts_Os` / `04_Engine` / `06_Playground` en código activo
 - ✅ Recursive engine ejecutable sin crash
 - ✅ Auto-Loading de skills documentado y operable
 - ✅ Outputs centralizados en `11_Reports/` o `03_Resultado/`
@@ -350,7 +350,7 @@ Antes de ejecutar, confirmá:
 | Métrica | Actual v2.1 | Objetivo v2.2 Integrated |
 |---------|-------------|--------------------------|
 | Tests pasando | 35/35 | **35/35 + 297 skills validadas** |
-| Refs `08_Scripts_Os` activas | 2 | **0** |
+| Refs `03_Scripts_Os` activas | 2 | **0** |
 | Carpetas `04_Engine` huérfanas | ¿? | **0** |
 | Reports en lugar correcto | parcial | **100%** |
 | Skills auto-loadeables por contexto | 0 | **≥ 30 críticas** |

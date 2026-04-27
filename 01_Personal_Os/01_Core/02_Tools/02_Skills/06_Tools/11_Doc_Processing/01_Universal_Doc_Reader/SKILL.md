@@ -1,3 +1,9 @@
+---
+description: 01_Universal_Doc_Reader
+globs: **/*
+alwaysApply: true
+---
+
 # 🦾 Skill 11_01: Universal Doc Reader Elite
 
 ## Esencia Original

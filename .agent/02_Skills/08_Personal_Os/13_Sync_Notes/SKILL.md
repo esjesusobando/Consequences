@@ -11,7 +11,7 @@ Sincroniza notas del Brain.
 ## Usage
 
 ```bash
-python 08_Scripts_Os/Ritual_Fixed/11_Sync_Notes.py
+python 03_Scripts_Os/Ritual_Fixed/11_Sync_Notes.py
 ```
 
 ---

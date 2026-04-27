@@ -37,7 +37,7 @@ Investigar si las reglas de `.cursor` deben añadirse a `.agent` y `.claude`.
 
 ### 4. Avengers Workflow
 
-- Ejecutado: `python 08_Scripts_Os/55_Avengers_Workflow.py`
+- Ejecutado: `python 03_Scripts_Os/55_Avengers_Workflow.py`
 - Resultado: 1 ciclo completado (Vision_Review → Hulk_Compound)
 
 ## Decisiones

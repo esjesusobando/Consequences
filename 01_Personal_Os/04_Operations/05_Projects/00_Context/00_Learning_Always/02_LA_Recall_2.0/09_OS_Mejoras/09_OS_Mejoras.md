@@ -72,7 +72,7 @@ URL input
 - 01_Core/03_Skills - todas las skill definitions
 - 02_Knowledge - toda la documentación
 - 03_Tasks - tareas activas
-- 08_Scripts_Os - todos los HUBs
+- 03_Scripts_Os - todos los HUBs
 
 **Estado:** Concepto — requiere graph library
 

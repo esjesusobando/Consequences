@@ -51,7 +51,7 @@ Condiciones que activan el motor de auto-mejora.
 python 01_Auto_Improvement/01_Engine/detector.py
 
 # Via HUB
-python 08_Scripts_Os/11_Auto_Learn_Hub.py
+python 03_Scripts_Os/11_Auto_Learn_Hub.py
 ```
 
 ---
@@ -67,7 +67,7 @@ python 08_Scripts_Os/11_Auto_Learn_Hub.py
 
 ## 🔗 Integración
 
-- **HUB:** `08_Scripts_Os/11_Auto_Learn_Hub.py`
+- **HUB:** `03_Scripts_Os/11_Auto_Learn_Hub.py`
 - **GGA:** Code review automático post-fixes
 - **Engram:** Guarda aprendizajes del motor
 

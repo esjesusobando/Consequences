@@ -13,7 +13,7 @@
 |------------------------------------|-----------------------------|------------------------------------------------------|-------------------------|
 | `.agent/`                          | 305 skills                  | ✅ AUDITADO (hooks OK, GGA OK, skills OK)             | SKIP                    |
 | `.claude/`                         | Sincronizado                | ✅ AUDITADO                                           | SKIP                    |
-| `08_Scripts_Os/`                   | ~100+ scripts               | 🔴 NO AUDITADO                                        | P0                      |
+| `03_Scripts_Os/`                   | ~100+ scripts               | 🔴 NO AUDITADO                                        | P0                      |
 | `04_Operations/`                   | ~90 archivos                | 🔴 NO AUDITADO                                        | P0                      |
 | `01_Core/`                         | ~200+ archivos              | 🔴 NO AUDITADO                                        | P0                      |
 | `00_Winter_is_Coming/`             | 4 archivos                  | 🔴 NO AUDITADO                                        | P1                      |
@@ -25,11 +25,11 @@
 
 ## 🎯 Checklist de Auditoría por Carpeta
 
-### 1️⃣ 08_Scripts_Os/ — HUBs y Scripts del Motor
+### 1️⃣ 03_Scripts_Os/ — HUBs y Scripts del Motor
 
 #### 📁 Estructura Detectada
 ```
-08_Scripts_Os/
+03_Scripts_Os/
 ├── Legacy_Backup/          # 70+ scripts legacy
 ├── __pycache__/
 ├── SCRIPTS_INDEX.md
@@ -161,7 +161,7 @@ python -m py_compile 01_Core/09_Server/mcp/Server.py
 | 4.4             | **Consistencia**                               | 01_Personal_Os/11_AGENTS.md y CLAUDE.md no contradicen                |
 | 4.5             | **Slash commands**                             | Comandos referenciados existen                                        |
 | 4.6             | **Skills referencias**                         | Skills mencionadas existen en .agent/                                 |
-| 4.7             | **HUBs referencias**                           | HUBs en 01_Personal_Os/11_AGENTS.md existen en 08_Scripts_Os/         |
+| 4.7             | **HUBs referencias**                           | HUBs en 01_Personal_Os/11_AGENTS.md existen en 03_Scripts_Os/         |
 | 4.8             | **Sistema Guardian**                           | `/gr` command está configurado                                        |
 
 ---
@@ -258,7 +258,7 @@ Maerks/
 
 ```
 FASE 1: Estructura Crítica (P0)
-├── 1️⃣ 08_Scripts_Os/
+├── 1️⃣ 03_Scripts_Os/
 ├── 2️⃣ 04_Operations/
 └── 3️⃣ 01_Core/
 
@@ -279,7 +279,7 @@ El Agente Work deberá generar para cada carpeta:
 
 | Carpeta                          | Output                                   |
 |----------------------------------|------------------------------------------|
-| 08_Scripts_Os/                   | `audit_scripts_report.md`                |
+| 03_Scripts_Os/                   | `audit_scripts_report.md`                |
 | 04_Operations/                   | `audit_operations_report.md`             |
 | 01_Core/                         | `audit_core_report.md`                   |
 | 00_Winter_is_Coming/             | `audit_matrix_report.md`                 |

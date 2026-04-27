@@ -31,7 +31,7 @@ Think_Different/ (RAÍZ)
 │   │   ├── 00_Context_LLM/       # 🆕 (antes 04_Operations subcarpetas)
 │   │   ├── 01_Auto_Improvement/
 │   │   ├── 02_Agent_Teams_Lite/
-│   │   ├── 03_Scripts_Os/        # 🆕 (antes 08_Scripts_Os)
+│   │   ├── 03_Scripts_Os/        # 🆕 (antes 03_Scripts_Os)
 │   │   ├── 04_Installer/
 │   │   └── 05_Projects/          # 🆕 (antes 07_Projects)
 │   └── 05_Archive/
@@ -57,7 +57,7 @@ Think_Different/ (RAÍZ)
 | `05_Archive/` | `01_Personal_Os/05_Archive/` |
 | `06_Playground/` | `02_Playground/` |
 | `07_Projects/` | `01_Personal_Os/04_Operations/05_Projects/` |
-| `08_Scripts_Os/` | `01_Personal_Os/04_Operations/03_Scripts_Os/` |
+| `03_Scripts_Os/` | `01_Personal_Os/04_Operations/03_Scripts_Os/` |
 | `Now/` | `03_Resultado/` |
 
 ### Subdirectorios Core
@@ -111,7 +111,7 @@ Think_Different/ (RAÍZ)
 | Buscar en docs: `02_Knowledge/` | Reemplazar por `01_Personal_Os/02_Knowledge/` | Pendiente |
 | Buscar en docs: `04_Operations/` | Reemplazar por `01_Personal_Os/04_Operations/` | Pendiente |
 | Buscar en docs: `06_Playground/` | Reemplazar por `02_Playground/` | Pendiente |
-| Buscar en docs: `08_Scripts_Os/` | Reemplazar por `01_Personal_Os/04_Operations/03_Scripts_Os/` | Pendiente |
+| Buscar en docs: `03_Scripts_Os/` | Reemplazar por `01_Personal_Os/04_Operations/03_Scripts_Os/` | Pendiente |
 
 ---
 
@@ -123,7 +123,7 @@ grep -r "01_Core/" --include="*.md" .
 grep -r "02_Knowledge/" --include="*.md" .
 grep -r "04_Operations/" --include="*.md" .
 grep -r "06_Playground/" --include="*.md" .
-grep -r "08_Scripts_Os/" --include="*.md" .
+grep -r "03_Scripts_Os/" --include="*.md" .
 ```
 
 ---

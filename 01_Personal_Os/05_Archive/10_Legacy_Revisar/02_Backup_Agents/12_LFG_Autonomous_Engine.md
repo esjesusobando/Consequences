@@ -32,9 +32,9 @@ Para features complejas, cambios arquitectónicos o sistemas críticos.
 ## Contexto del Sistema
 - Repo raíz: `Think_Different/`
 - Reglas: `01_Core/01_Rules/`
-- Scripts motor: `08_Scripts_Os/`
-- Infraestructura: `01_Core/05_Mcp/` + `08_Scripts_Os/`
-- Ritual de cierre: `python 08_Scripts_Os/08_Ritual_Cierre.py`
+- Scripts motor: `03_Scripts_Os/`
+- Infraestructura: `01_Core/05_Mcp/` + `03_Scripts_Os/`
+- Ritual de cierre: `python 03_Scripts_Os/08_Ritual_Cierre.py`
 
 ## Flujo LFG Lite (12 pasos)
 1. Leer CLAUDE.md + reglas relevantes

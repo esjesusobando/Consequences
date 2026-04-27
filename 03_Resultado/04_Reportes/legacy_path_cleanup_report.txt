@@ -1,13 +1,13 @@
 +==============================================================+
 |       LEGACY PATH CLEANUP -- SCAN REPORT                |
 +==============================================================+
-|  Archivos con refs legacy: 128                        |
-|  Total refs legacy:         559                        |
+|  Archivos con refs legacy: 130                        |
+|  Total refs legacy:         565                        |
 +==============================================================+
 |  Por tipo de ref legacy:                                |
-|    01_Core/03_Skills    -> 169 refs en 169 files  |
+|    01_Core/03_Skills    -> 174 refs en 174 files  |
 |    06_Playground        ->  38 refs en  38 files  |
-|    08_Scripts_Os        -> 352 refs en 352 files  |
+|    08_Scripts_Os        -> 353 refs en 353 files  |
 +==============================================================+
 |  Archivos afectados (primeros 20):                       |
 |    1. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\01_Context_Protocol.mdc |
@@ -30,7 +30,7 @@
 |    18. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\18_Morning_Standup.mdc |
 |    19. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\19_Planning.mdc |
 |    20. 01_Personal_Os\01_Core\01_Rules\.Backup\00_Rules_Backup\20_Recap_Morning.mdc |
-|    ... y 108 mas archivos                      |
+|    ... y 110 mas archivos                      |
 +==============================================================+
 |  ESTRATEGIA:                                             |
 |    1. Archivos criticos -> fix MANUAL                     |

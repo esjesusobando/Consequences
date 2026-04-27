@@ -119,7 +119,7 @@
       "transport": "stdio",
       "command": "bash",
       "args": [
-        "C:/Users/sebas/Downloads/01 Revisar/09 Versiones/00 Respaldo PC Sebas/01 Github/personal-os/Think_Different/08_Scripts_Os/testsprite_failover.sh"
+        "C:/Users/sebas/Downloads/01 Revisar/09 Versiones/00 Respaldo PC Sebas/01 Github/personal-os/Think_Different/03_Scripts_Os/testsprite_failover.sh"
       ],
       "env": {
         "TESTSPRITE_PRIMARY": "sk-user-kQ-VuVu0H01mJpA2bbzhnMb1dzukIQEaHaF8kr49X-nYJNdP_vCo9CYj1w1J03Vg48Zm5KsdrE9bY-ZEGjeJmQfQlAXRJ0rR92s1xNbOO7w0TVS-ui8RXaAB2djntZHjcRo"

@@ -11,6 +11,6 @@
 
 - `[ ]` **Fase 3: Sincronización y Validación Global**
   - `[ ]` Sobrescribir `01_Core/05_Mcp/02_OpenCode/opencode.json` con la versión limpia.
-  - `[ ]` Ejecutar `python 08_Scripts_Os/09_Integration/46_Sync_MCP_OpenCode.py`.
+  - `[ ]` Ejecutar `python 03_Scripts_Os/09_Integration/46_Sync_MCP_OpenCode.py`.
   - `[ ]` Verificar `opencode --help`.
   - `[ ]` Documentar el estado Pure Green en `walkthrough.md`.

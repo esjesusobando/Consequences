@@ -40,7 +40,7 @@ Inspirado en: [Anthropic Engineering Blog](https://docs.anthropic.com)
 
 ```bash
 # Verificar que no hay riesgos
-python 08_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/00_Safety_Wrapper.py
+python 03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/00_Safety_Wrapper.py
 ```
 
 **Validaciones:**
@@ -55,7 +55,7 @@ python 08_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/00_Safety_Wrapper.py
 
 ```bash
 # Analizar contexto y decidir reset vs compaction
-python 08_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/01_Context_Manager.py
+python 03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/01_Context_Manager.py
 ```
 
 **Decisiones:**
@@ -81,7 +81,7 @@ python 08_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/01_Context_Manager.py
 ### Paso 4: SPRINT CONTRACT (para cada sprint)
 
 ```bash
-python 08_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/03_Sprint_Contract.py
+python 03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/03_Sprint_Contract.py
 ```
 
 1. Generator propone qué va a build
@@ -102,7 +102,7 @@ python 08_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/03_Sprint_Contract.py
 ### Paso 6: EVALUATOR - QA
 
 ```bash
-python 08_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/02_Evaluator_Runner.py
+python 03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/02_Evaluator_Runner.py
 ```
 
 **Criterios de Grading:**
@@ -119,7 +119,7 @@ python 08_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/02_Evaluator_Runner.py
 ### Paso 7: PLAYWRIGHT QA (opcional)
 
 ```bash
-python 08_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/04_Playwright_QA.py
+python 03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/04_Playwright_QA.py
 ```
 
 Para diseño o features que requieren testing visual/interactivo.
@@ -170,7 +170,7 @@ Para diseño o features que requieren testing visual/interactivo.
 ## 📚 Referencia
 
 - Artículo: [Anthropic Engineering Blog](https://docs.anthropic.com)
-- Scripts: `08_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/` (legacy - verificar)
+- Scripts: `03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/` (legacy - verificar)
 - Skills: `01_Core/03_Skills/14_Anthropic_Harness/`
 
 ---

@@ -1,3 +1,9 @@
+---
+description: 02_Agent_Orchestrator
+globs: **/*
+alwaysApply: true
+---
+
 name: parallel-orchestration
 description: QUÉ HACE: Distribuye y supervisa el trabajo de múltiples agentes con terminales visibles y reportes consolidados. CUÁNDO SE EJECUTA: En tareas complejas que permiten ejecución paralela y requieren monitoreo en tiempo real.
  Triggers on: personalos, workflow, automation.

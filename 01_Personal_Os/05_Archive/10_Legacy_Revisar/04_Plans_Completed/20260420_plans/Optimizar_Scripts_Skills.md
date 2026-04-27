@@ -3,7 +3,7 @@
 Este plan detalla la reubicación física de los scripts modulares dentro de sus carpetas de Habilidades (`01_Core/03_Skills/`), siguiendo el principio de **"Encapsulación SOTA"**.
 
 ## Objetivo
-Reducir la carga cognitiva en `08_Scripts_Os`, centralizar la lógica operativa en las habilidades que la utilizan y asegurar que los HUBs orquestadores sigan funcionando sin fricción.
+Reducir la carga cognitiva en `03_Scripts_Os`, centralizar la lógica operativa en las habilidades que la utilizan y asegurar que los HUBs orquestadores sigan funcionando sin fricción.
 
 ## Mapeo Detallado ("MAPEA BIEN")
 
@@ -49,11 +49,11 @@ A continuación, se detalla el destino de cada script. Cada carpeta de Skill des
 > [!CAUTION]
 > **Riesgo de Rotura de Flujo**: Mover scripts rompe las importaciones si no se actualiza el `sys.path` o `config_paths.py`.
 
-### [MODIFY] [config_paths.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/08_Scripts_Os/config_paths.py)
+### [MODIFY] [config_paths.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/03_Scripts_Os/config_paths.py)
 Añadiremos una función `get_skill_script(skill_name, script_name)` que resuelva dinámicamente la ruta, permitiendo que los HUBs localicen sus módulos sin importar dónde se muevan.
 
 ### [MODIFY] Orquestadores (HUBs)
-Se actualizarán los HUBs para usar el nuevo buscador de scripts. Esto "liberará" visualmente las carpetas de `08_Scripts_Os` eliminando los subdirectorios `01_Ritual`, `02_Tool`, etc., una vez vaciados.
+Se actualizarán los HUBs para usar el nuevo buscador de scripts. Esto "liberará" visualmente las carpetas de `03_Scripts_Os` eliminando los subdirectorios `01_Ritual`, `02_Tool`, etc., una vez vaciados.
 
 ---
 
@@ -62,8 +62,8 @@ Se actualizarán los HUBs para usar el nuevo buscador de scripts. Esto "liberar�
 1. **Batch 1 (Auditoría)**: Mover módulos de `06_Auditor` -> Skills. Verificar con `Auditor_Hub.py`.
 2. **Batch 2 (Rituales)**: Mover módulos de `01_Ritual` -> Skills. Verificar con `Ritual_Hub.py`.
 3. **Batch 3 (Workflows)**: Mover módulos de `04_Workflow` -> Skills. Verificar con `Workflow_Hub.py`.
-4. **Cleanup**: Eliminar carpetas vacías en `08_Scripts_Os` y actualizar `SCRIPTS_INDEX.md`.
+4. **Cleanup**: Eliminar carpetas vacías en `03_Scripts_Os` y actualizar `SCRIPTS_INDEX.md`.
 
 ## Verificación
 - `/sdd:verify` sobre la nueva estructura.
-- Ejecución de auditoría completa: `python 08_Scripts_Os/15_SOTA_Integrity_Check.py`.
+- Ejecución de auditoría completa: `python 03_Scripts_Os/15_SOTA_Integrity_Check.py`.

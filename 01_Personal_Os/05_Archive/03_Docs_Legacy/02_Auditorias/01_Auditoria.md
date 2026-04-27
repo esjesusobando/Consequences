@@ -42,7 +42,7 @@ Este plan describe el proceso para auditar integralmente el sistema `Think_Diffe
 ## Verification Plan
 
 ### Automated Tests
-- `python 08_Scripts_Os/01_Auditor_Hub.py health` al finalizar.
+- `python 03_Scripts_Os/01_Auditor_Hub.py health` al finalizar.
 - Verificación manual de los archivos `tree.txt` generados.
 
 ### Manual Verification

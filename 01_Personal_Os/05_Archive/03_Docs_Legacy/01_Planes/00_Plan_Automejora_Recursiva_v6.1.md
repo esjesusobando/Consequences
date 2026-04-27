@@ -354,7 +354,7 @@ OPTIMIZATION_METRICS = {
 
 ## 🔧 COMPONENTES DEL SISTEMA
 
-### 1. DETECTOR (`08_Scripts_Os/Auto_Learn/01_Detector.py`)
+### 1. DETECTOR (`03_Scripts_Os/Auto_Learn/01_Detector.py`)
 
 ```python
 """
@@ -409,7 +409,7 @@ class SystemDetector:
         }
 ```
 
-### 2. DIAGNOSTIC (`08_Scripts_Os/Auto_Learn/02_Diagnostic.py`)
+### 2. DIAGNOSTIC (`03_Scripts_Os/Auto_Learn/02_Diagnostic.py`)
 
 ```python
 """
@@ -452,7 +452,7 @@ class SystemDiagnostic:
         }
 ```
 
-### 3. REPAIRER (`08_Scripts_Os/Auto_Learn/03_Repairer.py`)
+### 3. REPAIRER (`03_Scripts_Os/Auto_Learn/03_Repairer.py`)
 
 ```python
 """
@@ -495,7 +495,7 @@ class SystemRepairer:
         pass
 ```
 
-### 4. LEARNER (`08_Scripts_Os/Auto_Learn/04_Learner.py`)
+### 4. LEARNER (`03_Scripts_Os/Auto_Learn/04_Learner.py`)
 
 ```python
 """
@@ -538,7 +538,7 @@ class SystemLearner:
         pass
 ```
 
-### 5. RULES ENGINE (`08_Scripts_Os/Auto_Learn/05_Rules_Engine.py`)
+### 5. RULES ENGINE (`03_Scripts_Os/Auto_Learn/05_Rules_Engine.py`)
 
 ```python
 """
@@ -604,7 +604,7 @@ class RulesEngine:
         pass
 ```
 
-### 6. METRICS TRACKER (`08_Scripts_Os/Auto_Learn/06_Metrics_Tracker.py`)
+### 6. METRICS TRACKER (`03_Scripts_Os/Auto_Learn/06_Metrics_Tracker.py`)
 
 ```python
 """
@@ -646,7 +646,7 @@ class MetricsTracker:
         pass
 ```
 
-### 7. KNOWLEDGE BASE (`08_Scripts_Os/Auto_Learn/knowledge_base.json`)
+### 7. KNOWLEDGE BASE (`03_Scripts_Os/Auto_Learn/knowledge_base.json`)
 
 ```json
 {
@@ -689,7 +689,7 @@ class MetricsTracker:
 }
 ```
 
-### 8. AUTO LEARN HUB (`08_Scripts_Os/11_Auto_Learn_Hub.py`)
+### 8. AUTO LEARN HUB (`03_Scripts_Os/11_Auto_Learn_Hub.py`)
 
 ```python
 #!/usr/bin/env python3

@@ -1,7 +1,7 @@
 ---
 description: Carga el contexto completo del sistema (Iron Man Boot)
 argument-hint: "[tarea específica o contexto a priorizar]"
-allowed-tools: Bash(python 08_Scripts_Os/*.py), Read(*), Glob(*)
+allowed-tools: Bash(python 03_Scripts_Os/*.py), Read(*), Glob(*)
 ---
 
 # Genesis Command
@@ -18,7 +18,7 @@ Ejecuta el workflow de inicio de sesión para cargar el contexto completo del si
 Execute the Iron Man startup workflow:
 
 ```bash
-python 08_Scripts_Os/04_Ritual_Hub.py --mode genesis $ARGUMENTS
+python 03_Scripts_Os/04_Ritual_Hub.py --mode genesis $ARGUMENTS
 ```
 
 This loads:

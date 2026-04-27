@@ -48,7 +48,7 @@ First, I need to determine the review target type and set up the code for analys
 
 #### 🛡️ Pachamama Protocol (Backup Check)
 
-- [ ] Ejecutar `python 08_Scripts_Os/04_Ritual_Hub.py --backup-only` para asegurar un punto de restauración antes de iniciar la revisión profunda.
+- [ ] Ejecutar `python 03_Scripts_Os/04_Ritual_Hub.py --backup-only` para asegurar un punto de restauración antes de iniciar la revisión profunda.
 
 </task_list>
 

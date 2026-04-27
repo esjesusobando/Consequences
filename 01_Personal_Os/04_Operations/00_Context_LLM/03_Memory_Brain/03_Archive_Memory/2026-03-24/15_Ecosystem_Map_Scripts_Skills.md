@@ -2,7 +2,7 @@
 
 **Fecha:** 2026-03-25
 **Auditor:** Opencode Agent
-**Propósito:** Documentar la relación entre Skills (`.agent/02_Skills/08_Personal_Os/`) y Scripts (`08_Scripts_Os/`) con workflows correspondientes.
+**Propósito:** Documentar la relación entre Skills (`.agent/02_Skills/08_Personal_Os/`) y Scripts (`03_Scripts_Os/`) con workflows correspondientes.
 
 ---
 
@@ -23,7 +23,7 @@
 
 ---
 
-## 🔧 2. Scripts de PersonalOS (`08_Scripts_Os/`)
+## 🔧 2. Scripts de PersonalOS (`03_Scripts_Os/`)
 
 | #                   | Nombre                                         | Propósito                                                                                                                                                       | Referencia Workflow                            | Métricas/Trazas                  | Categoría                   |
 |---------------------|------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|----------------------------------|-----------------------------|
@@ -212,9 +212,9 @@
 | Ruta                                                    | Propósito                                    |
 |---------------------------------------------------------|----------------------------------------------|
 | `.agent/02_Skills/08_Personal_Os/`                      | Skills del sistema PersonalOS                |
-| `08_Scripts_Os/`                                        | Scripts de automatización                    |
+| `03_Scripts_Os/`                                        | Scripts de automatización                    |
 | `.agent/03_Workflows/`                                  | Workflows predefinidos                       |
-| `08_Scripts_Os/config_paths.py`                         | Configuración central de rutas               |
+| `03_Scripts_Os/config_paths.py`                         | Configuración central de rutas               |
 
 ---
 

@@ -1,3 +1,9 @@
+---
+description: 15_Shellcheck
+globs: **/*
+alwaysApply: true
+---
+
 # Skill: gga-shellcheck-standards
 
 ## Purpose

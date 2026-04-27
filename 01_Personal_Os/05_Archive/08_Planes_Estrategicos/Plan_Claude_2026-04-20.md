@@ -190,12 +190,12 @@ Orden secuencial — cada carpeta puede depender de la anterior.
 
 ---
 
-### 🔄 FASE 9 — Carpeta 08_Scripts_Os (HUBs)
+### 🔄 FASE 9 — Carpeta 03_Scripts_Os (HUBs)
 **Estado: PENDIENTE**
 
 **Acciones:**
 1. Agregar PYTHONPATH a HUBs 12 y 13
-2. Crear `08_Scripts_Os/HUB_CATALOG.md` con tabla de 14 HUBs
+2. Crear `03_Scripts_Os/HUB_CATALOG.md` con tabla de 14 HUBs
 3. Verificar que todos son ejecutables
 
 ---
@@ -229,7 +229,7 @@ Orden secuencial — cada carpeta puede depender de la anterior.
 ✅ FASE 6  (02_Knowledge)    — OS_Integration_Audit_v1.0.md creado
 ✅ FASE 7  (03_Tasks)        — Templates: estructura existente es válida, no requiere cambios urgentes
 ✅ FASE 8  (04_Operations)   — Auto-Improvement Engine: código funcional, NO BLOQUEANTE
-✅ FASE 9  (08_Scripts_Os)   — HUB_CATALOG.md creado (14 HUBs documentados)
+✅ FASE 9  (03_Scripts_Os)   — HUB_CATALOG.md creado (14 HUBs documentados)
 ✅ FASE 10 (Integration)     — Regla 25 creada + skill-registry actualizado a 28 cats
 ✅ MARKETING (2026-04-20)    — 4 Agents + 1 Workflow + 3 Folders creados
 ```
@@ -304,7 +304,7 @@ find 01_Core/03_Skills -maxdepth 2 -name "SKILL.md" | wc -l  # debe ser >= 22
 grep -c "category" .atl/skill-registry.md  # debe ser >= 22
 
 # Auditor completo del sistema
-python 08_Scripts_Os/01_Auditor_Hub.py
+python 03_Scripts_Os/01_Auditor_Hub.py
 
 # Verificar regla 25 existe
 ls 01_Core/01_Rules/25_Agent_Teams_Protocol.mdc

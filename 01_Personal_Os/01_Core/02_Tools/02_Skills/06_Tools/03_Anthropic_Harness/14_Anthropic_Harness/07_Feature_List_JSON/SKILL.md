@@ -1,3 +1,9 @@
+---
+description: 07_Feature_List_JSON
+globs: **/*
+alwaysApply: true
+---
+
 # Feature List JSON Generator Skill
 
 **CATEGORÍA:** Anthropic Harness Patterns

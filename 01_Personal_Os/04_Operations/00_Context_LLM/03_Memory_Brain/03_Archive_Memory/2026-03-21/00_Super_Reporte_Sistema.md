@@ -228,13 +228,13 @@ Modo de coordinación que delega TODO el trabajo a sub-agentes:
 ### Morning Standup
 
 ```bash
-python 08_Scripts_Os/14_Morning_Standup.py
+python 03_Scripts_Os/14_Morning_Standup.py
 ```
 
 ### Backlog Triage
 
 ```bash
-python 08_Scripts_Os/09_Backlog_Triage.py
+python 03_Scripts_Os/09_Backlog_Triage.py
 ```
 
 ### System Guardian (3-Agents + Judge)
@@ -263,7 +263,7 @@ python 08_Scripts_Os/09_Backlog_Triage.py
 ### Rituales
 
 ```bash
-python 08_Scripts_Os/08_Ritual_Cierre.py
+python 03_Scripts_Os/08_Ritual_Cierre.py
 ```
 
 - --

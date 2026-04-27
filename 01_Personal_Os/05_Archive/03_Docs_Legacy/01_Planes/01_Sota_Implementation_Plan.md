@@ -24,7 +24,7 @@ PersonalOS v6.1 tiene **22 reglas `.mdc`**, **19 categorías de skills** (~160+ 
 > **Cambio Estructural en Reglas**: Se propone crear una nueva regla maestra (`23_Skill_System_SOTA.mdc`) y modernizar `07_Skill_Fusion.mdc`. Esto afecta cómo todos los agentes interactúan con las skills.
 
 > [!WARNING]
-> **Nuevo Script de Validación**: Se creará `skill_validator.py` en `08_Scripts_Os/Validator_Fixed/`. Este script será ejecutable y verificará la integridad de todas las skills automáticamente. Requiere Python 3.8+.
+> **Nuevo Script de Validación**: Se creará `skill_validator.py` en `03_Scripts_Os/Validator_Fixed/`. Este script será ejecutable y verificará la integridad de todas las skills automáticamente. Requiere Python 3.8+.
 
 ---
 
@@ -119,7 +119,7 @@ Se crearán carpetas `examples/` con casos Good/Bad para cada fase SDD:
 
 ---
 
-#### [NEW] [skill_validator.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/08_Scripts_Os/Validator_Fixed/skill_validator.py)
+#### [NEW] [skill_validator.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/03_Scripts_Os/Validator_Fixed/skill_validator.py)
 
 Script Python que valida skills contra el estándar SOTA. Criterios:
 
@@ -146,7 +146,7 @@ Script Python que valida skills contra el estándar SOTA. Criterios:
 - Skill con description sin triggers → WARNING (MEDIUM)
 - Ruta relativa en script (`./data/`) → FAIL (HIGH)
 
-#### [NEW] [skill_security_scan.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/08_Scripts_Os/Validator_Fixed/skill_security_scan.py)
+#### [NEW] [skill_security_scan.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/03_Scripts_Os/Validator_Fixed/skill_security_scan.py)
 
 Scanner de ciberseguridad para scripts dentro de skills:
 
@@ -160,7 +160,7 @@ Scanner de ciberseguridad para scripts dentro de skills:
 | **File Permissions** | Scripts con `chmod 777` o `chmod +x` indiscriminado | HIGH |
 | **Import Validation** | Imports de módulos no-estándar sin `requirements.txt` | MEDIUM |
 
-#### [MODIFY] [05_Validator_Hub.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/08_Scripts_Os/05_Validator_Hub.py)
+#### [MODIFY] [05_Validator_Hub.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/03_Scripts_Os/05_Validator_Hub.py)
 
 - Añadir nuevo menú de opción: `skills` → Ejecuta `skill_validator.py`
 - Añadir nuevo menú de opción: `security` → Ejecuta `skill_security_scan.py`
@@ -193,8 +193,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python 08_Scripts_Os/Validator_Fixed/skill_validator.py --all
-      - run: python 08_Scripts_Os/Validator_Fixed/skill_security_scan.py --all
+      - run: python 03_Scripts_Os/Validator_Fixed/skill_validator.py --all
+      - run: python 03_Scripts_Os/Validator_Fixed/skill_security_scan.py --all
 ```
 
 ---
@@ -203,7 +203,7 @@ jobs:
 
 ---
 
-#### [NEW] [test_skill_lifecycle.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/08_Scripts_Os/Validator_Fixed/test_skill_lifecycle.py)
+#### [NEW] [test_skill_lifecycle.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/03_Scripts_Os/Validator_Fixed/test_skill_lifecycle.py)
 
 Test E2E que simula el ciclo de vida completo de una skill:
 
@@ -230,7 +230,7 @@ Test E2E que simula el ciclo de vida completo de una skill:
 
 ---
 
-#### [MODIFY] [SCRIPTS_INDEX.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/08_Scripts_Os/SCRIPTS_INDEX.md)
+#### [MODIFY] [SCRIPTS_INDEX.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/03_Scripts_Os/SCRIPTS_INDEX.md)
 
 - Añadir los nuevos scripts de validación y seguridad
 
@@ -284,16 +284,16 @@ Test E2E que simula el ciclo de vida completo de una skill:
 ### Automated Tests (skill_validator.py)
 ```bash
 # Validar una skill individual
-python 08_Scripts_Os/Validator_Fixed/skill_validator.py --path 01_Core/03_Skills/00_Skill_Auditor
+python 03_Scripts_Os/Validator_Fixed/skill_validator.py --path 01_Core/03_Skills/00_Skill_Auditor
 
 # Validar todas las skills
-python 08_Scripts_Os/Validator_Fixed/skill_validator.py --all
+python 03_Scripts_Os/Validator_Fixed/skill_validator.py --all
 
 # Scan de seguridad
-python 08_Scripts_Os/Validator_Fixed/skill_security_scan.py --all
+python 03_Scripts_Os/Validator_Fixed/skill_security_scan.py --all
 
 # E2E lifecycle test
-python 08_Scripts_Os/Validator_Fixed/test_skill_lifecycle.py
+python 03_Scripts_Os/Validator_Fixed/test_skill_lifecycle.py
 ```
 
 ### Manual Verification

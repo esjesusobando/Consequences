@@ -62,7 +62,7 @@ Think_Different/
 | Strict TDD | ❌ disabled (no test runner) |
 | Config | `.atl/openspec/config.yaml` |
 | Openspec root | `.atl/openspec/` |
-| Engram | ⚠️ MCP server not running in current session |
+| Engram | ✅ MCP server disponible (verificar con `engram tui`) |
 
 ### Available Skills — Sistema v3.0 (13 Áreas Funcionales)
 

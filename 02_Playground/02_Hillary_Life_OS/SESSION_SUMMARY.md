@@ -145,11 +145,11 @@ Swarm + Auditor + Engram + Docs pattern:
 
 | File                                                         | Descripción                       |
 |--------------------------------------------------------------|-----------------------------------|
-| `08_Scripts_Os/02_Beautify_Tables.py`                        | Table beautifier script           |
-| `08_Scripts_Os/03_Beauty_Doc.py`                             | Document beautifier               |
-| `08_Scripts_Os/01_Context_Usage_Bar.py`                      | Context progress bar              |
-| `08_Scripts_Os/00_Sound_Engine.py`                           | Sound notifications               |
-| `08_Scripts_Os/Validator_Fixed/skill_validator.py`           | Skill validation                  |
+| `03_Scripts_Os/02_Beautify_Tables.py`                        | Table beautifier script           |
+| `03_Scripts_Os/03_Beauty_Doc.py`                             | Document beautifier               |
+| `03_Scripts_Os/01_Context_Usage_Bar.py`                      | Context progress bar              |
+| `03_Scripts_Os/00_Sound_Engine.py`                           | Sound notifications               |
+| `03_Scripts_Os/Validator_Fixed/skill_validator.py`           | Skill validation                  |
 
 ---
 

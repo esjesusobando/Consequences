@@ -71,11 +71,11 @@ Complete Marketing Agents system based on YouTube video about Claude Code, bring
 | 4           | Scripts NO migration a skills               | ⚠️ PENDIENTE - CRÍTICO                            |
 
 **Pendiente de Optimizar_Scripts_Skills.md:**
-- [ ] Mover scripts de `08_Scripts_Os/01_Ritual/` → habilidades en `01_Core/03_Skills/`
-- [ ] Mover scripts de `08_Scripts_Os/04_Workflow/` → habilidades
-- [ ] Mover scripts de `08_Scripts_Os/06_Auditor/` → habilidades
+- [ ] Mover scripts de `03_Scripts_Os/01_Ritual/` → habilidades en `01_Core/03_Skills/`
+- [ ] Mover scripts de `03_Scripts_Os/04_Workflow/` → habilidades
+- [ ] Mover scripts de `03_Scripts_Os/06_Auditor/` → habilidades
 - [ ] Crear función `get_skill_script()` en `config_paths.py`
-- [ ] Vaciar carpetas vacías en 08_Scripts_Os
+- [ ] Vaciar carpetas vacías en 03_Scripts_Os
 
 ### 🔴 Avengers_Plan.md (PENDIENTE - TU VIDA GENTLEMAN DEPENDE DE ELLO)
 
@@ -97,7 +97,7 @@ Complete Marketing Agents system based on YouTube video about Claude Code, bring
 ## 📋 Estado Scripts vs Skills (VERIFICACIÓN)
 
 ```
-08_Scripts_Os/ estructura actual:
+03_Scripts_Os/ estructura actual:
 ├── 01_Ritual/       ⚠️ NO migrado a skills
 ├── 02_Tool/         ⚠️ NO migrado a skills
 ├── 04_Workflow/     ⚠️ NO migrado a skills

@@ -31,13 +31,13 @@
 ✅ 05_Archive           - Archivo
 ✅ 06_Playground        - Playground
 ✅ 07_Projects          - Proyectos
-✅ 08_Scripts_Os         - Motor de scripts
+✅ 03_Scripts_Os         - Motor de scripts
 ```
 
 ### Subdirectorios críticos verificados
 - ✅ `01_Core/03_Skills/` - Skills del sistema
 - ✅ `01_Core/02_Evals/` - Evaluaciones  
-- ✅ `08_Scripts_Os/*_Fixed/` - Versiones corregidas
+- ✅ `03_Scripts_Os/*_Fixed/` - Versiones corregidas
 - ✅ `04_Operations/01_Auto_Improvement/` - Motor de automejora
 
 ---
@@ -62,7 +62,7 @@
   - Archivos JSON de log (metadata, no paths)
 
 - **El sistema activo usa las rutas correctas:**
-  - `08_Scripts_Os/` (antes 04_Engine)
+  - `03_Scripts_Os/` (antes 04_Engine)
   - `04_Operations/` (antes 02_Operations)  
   - `01_Core/` (antes 00_Core)
 
@@ -112,7 +112,7 @@
 [OK] 04_Operations
 [OK] 05_Archive
 [OK] 07_Projects
-[OK] 08_Scripts_Os
+[OK] 03_Scripts_Os
 
 ✓ Estructura válida
 ```
@@ -130,13 +130,13 @@ El `40_Validate_Rules.py` en `Validator_Fixed/` todavía busca:
 **Esto es esperado** - el validator legacy sigue su propia lógica de validación old-school. El Auditor Hub (01) es el que valida correctamente la estructura v6.1.
 
 ### 2. Paths centralizados
-El archivo `08_Scripts_Os/config_paths.py` contiene TODAS las rutas del sistema:
+El archivo `03_Scripts_Os/config_paths.py` contiene TODAS las rutas del sistema:
 - ✅ Detección automática de raíz
 - ✅ Alias de compatibilidad (BASE_DIR, PROJECT_ROOT, etc)
 - ✅ Mapeo correcto de directorios v6.1
 
 ### 3. Legacy_Backup
-La carpeta `08_Scripts_Os/Legacy_Backup/` contiene scripts históricos con paths antiguos. NO deben ejecutarse - son referencia únicamente.
+La carpeta `03_Scripts_Os/Legacy_Backup/` contiene scripts históricos con paths antiguos. NO deben ejecutarse - son referencia únicamente.
 
 ---
 

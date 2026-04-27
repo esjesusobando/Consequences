@@ -1,3 +1,9 @@
+---
+description: 05_Vibe_Coding
+globs: **/*
+alwaysApply: true
+---
+
 # Vibe Coding — Skill Index
 
 ## Descripción

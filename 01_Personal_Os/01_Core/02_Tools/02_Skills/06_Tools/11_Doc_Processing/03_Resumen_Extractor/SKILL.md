@@ -1,3 +1,9 @@
+---
+description: 03_Resumen_Extractor
+globs: **/*
+alwaysApply: true
+---
+
 # 🦾 Skill 11_03: Resumen Extractor
 
 ## Esencia Original

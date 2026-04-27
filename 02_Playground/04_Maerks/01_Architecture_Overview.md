@@ -98,4 +98,4 @@ gra             # Con --apply
 gr-agents       # Solo 3 agents
 ```
 
-**Script:** `04_Operations/08_Scripts_Os/79_System_Guardian.py` |
+**Script:** `04_Operations/03_Scripts_Os/79_System_Guardian.py` |

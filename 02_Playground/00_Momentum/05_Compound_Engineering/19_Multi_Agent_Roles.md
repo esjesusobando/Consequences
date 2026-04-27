@@ -92,7 +92,7 @@ pipeline:
 
 ```python
 # Legacy - API anterior a v6.1
-# from 08_Scripts_Os.11_Anthropic_Harness.multi_agent_pipeline import (
+# from 03_Scripts_Os.11_Anthropic_Harness.multi_agent_pipeline import (
 #     PipelineBuilder, AgentRole
 # )
 
@@ -128,7 +128,7 @@ Este workflow se complementa con `07_Agent_Teams_Locks.py`:
 
 ```python
 # Legacy - API anterior a v6.1
-# from 08_Scripts_Os.11_Anthropic_Harness.07_Agent_Teams_Locks import AgentTeam, GitLockManager
+# from 03_Scripts_Os.11_Anthropic_Harness.07_Agent_Teams_Locks import AgentTeam, GitLockManager
 
 # Crear equipo con locks
 manager = GitLockManager()
@@ -153,6 +153,6 @@ team = AgentTeam("dev-team", num_agents=16, lock_manager=manager)
 
 ## Archivos Relacionados
 
-- `08_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/07_Agent_Teams_Locks.py` (legacy)
+- `03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/07_Agent_Teams_Locks.py` (legacy)
 - `01_Core/03_Skills/14_Anthropic_Harness/08_Graders_Framework/`
 - `01_Core/03_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`

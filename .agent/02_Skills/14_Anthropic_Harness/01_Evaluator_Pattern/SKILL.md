@@ -57,7 +57,7 @@ Implementa el patrón de Adversarial Evaluation (GAN-inspired) de Anthropic:
 Usa `02_Evaluator_Runner.py`:
 
 ```python
-from 08_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner import run_evaluator
+from 03_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner import run_evaluator
 
 # Evaluar código
 result = run_evaluator(
@@ -95,8 +95,8 @@ else:
 ## Referencias
 
 - Artículo: `01_Core/02_Knowledge_Brain/10_Anthropic_Harness_Design.md`
-- Script: `08_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner.py`
-- Playwright QA: `08_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py`
+- Script: `03_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner.py`
+- Playwright QA: `03_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py`
 
 ---
 

@@ -8,7 +8,7 @@
 
 ## Contexto
 
-Se realizó un análisis exhaustivo de todo el proyecto PersonalOS (Think Different AI) con el objetivo de identificar edge cases, riesgos silenciosos y deuda técnica que puedan provocar fallos inesperados o brechas de seguridad. Se leyeron los 67 scripts del motor (`08_Scripts_Os`), el Compound Engine (TypeScript/bun), el instalador, GGA, tests, config_paths, `.mcp.json`, `.env`, y toda la documentación.
+Se realizó un análisis exhaustivo de todo el proyecto PersonalOS (Think Different AI) con el objetivo de identificar edge cases, riesgos silenciosos y deuda técnica que puedan provocar fallos inesperados o brechas de seguridad. Se leyeron los 67 scripts del motor (`03_Scripts_Os`), el Compound Engine (TypeScript/bun), el instalador, GGA, tests, config_paths, `.mcp.json`, `.env`, y toda la documentación.
 
 - --
 

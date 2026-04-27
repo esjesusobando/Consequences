@@ -56,7 +56,7 @@ Convertir PersonalOS en un **JARVIS** — un sistema operativo donde:
 |--------------|-----------|--------|
 | `01_Core/03_Skills/` | `01_Personal_Os/01_Core/02_Tools/02_Skills/` | ✅ CORREGIDO |
 | `.agent/02_Skills/` | `01_Personal_Os/01_Core/02_Tools/02_Skills/` | ⚠️ Documentación actualizada |
-| `08_Scripts_Os/` | `01_Personal_Os/04_Operations/03_Scripts_Os/` | ✅ CORREGIDO en plugin.json |
+| `03_Scripts_Os/` | `01_Personal_Os/04_Operations/03_Scripts_Os/` | ✅ CORREGIDO en plugin.json |
 
 ### Archivos Actualizados
 - `.claude-plugin/plugin.json` — Struktura + HUBs + paths ✅
@@ -103,7 +103,7 @@ Convertir PersonalOS en un **JARVIS** — un sistema operativo donde:
 
 1. **MCP DRIFT** — Claude Code (33) vs OpenCode (18) → 16 MCPs faltan en OpenCode.
 2. **453+ refs legacy v1.x rastreros**:
-   - 223 archivos con `08_Scripts_Os/`
+   - 223 archivos con `03_Scripts_Os/`
    - 230 archivos con `01_Core/03_Skills/`
    - 34 archivos con `06_Playground/`
 3. **SPOF crítico** — `config_paths.py` tiene **207 scripts dependientes**. Sin backup automático.

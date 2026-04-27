@@ -1,3 +1,9 @@
+---
+description: 08_Graders_Framework
+globs: **/*
+alwaysApply: true
+---
+
 # Graders Framework Skill
 
 **CATEGORÍA:** Anthropic Harness Patterns

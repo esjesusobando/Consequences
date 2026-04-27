@@ -21,5 +21,5 @@ Cuando el usuario necesite crear charts, dashboards o reportes visuales a partir
 
 - [ ] Definir paleta de colores estándar (design tokens del sistema)
 - [ ] Templates para gráficos más usados (línea, barra, scatter, heatmap)
-- [ ] Integración con 08_Scripts_Os/20_Master_Analytics_Factory.py
+- [ ] Integración con 03_Scripts_Os/20_Master_Analytics_Factory.py
 - [ ] Exportación a PNG/SVG con calidad premium

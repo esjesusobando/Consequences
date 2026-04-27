@@ -30,4 +30,4 @@ Run Tool Shed before starting work to get contextual MCPs.
 Run Skill Harmonizer during audits to validate parity.
 
 ### Location
-`08_Scripts_Os/Tool_Fixed/`
+`03_Scripts_Os/Tool_Fixed/`

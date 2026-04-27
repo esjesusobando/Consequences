@@ -285,18 +285,18 @@ Antes de cerrar sesión, verificar:
 | `gr-agents`                             | --agents                             | `79_System_Guardian.py --agents-only`                             |
 
 * *Location**: `~/gr`, `~/.bashrc` functions
-* *Source**: `08_Scripts_Os/79_System_Guardian.py`
+* *Source**: `03_Scripts_Os/79_System_Guardian.py`
 
 ### CE Commands (ce-*)
 
 | Alias                                      | Description                                             | Source Script                                                             |
 |--------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------------------|
-| `ce-commit`                                | Safe commit with validation                             | `08_Scripts_Os/52_Safe_Commit.py`                                         |
-| `ce-guard`                                 | Commit guardrails                                       | `08_Scripts_Os/52_Commit_Guard.py`                                        |
-| `ce-audit`                                 | Engineering audit                                       | `08_Scripts_Os/42_Audit_Engineering.py`                                   |
-| `ce-structure`                             | Structure auditor                                       | `08_Scripts_Os/53_Structure_Auditor.py`                                   |
+| `ce-commit`                                | Safe commit with validation                             | `03_Scripts_Os/52_Safe_Commit.py`                                         |
+| `ce-guard`                                 | Commit guardrails                                       | `03_Scripts_Os/52_Commit_Guard.py`                                        |
+| `ce-audit`                                 | Engineering audit                                       | `03_Scripts_Os/42_Audit_Engineering.py`                                   |
+| `ce-structure`                             | Structure auditor                                       | `03_Scripts_Os/53_Structure_Auditor.py`                                   |
 
-* *Location**: `08_Scripts_Os/00_Config/aliases.sh`
+* *Location**: `03_Scripts_Os/00_Config/aliases.sh`
 
 - --
 

@@ -1,25 +1,25 @@
-# Think Different PersonalOS v3.0 — Consequences
+# Think Different PersonalOS v3.1 — Consequences
 
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Version](https://img.shields.io/badge/Version-3.0-green)]()
+[![Version](https://img.shields.io/badge/Version-3.1-green)]()
 [![Status](https://img.shields.io/badge/Status-PURE%20GREEN-00FF00)]()
-[![OS](https://img.shields.io/badge/Think%20Different-OS--3.0-7B68EE)]()
+[![OS](https://img.shields.io/badge/Think%20Different-OS--3.1-7B68EE)]()
 
 > 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 165+ skills SOTA, metodologías integradas y automatización completa.
 
 ---
 
-## 📊 Estado del Sistema (v3.0 - 2026-04-25)
+## 📊 Estado del Sistema (v3.1 - 2026-04-27)
 
-> 🟢 **MODERNIZACIÓN COMPLETADA** - Pure Green - Estructura Consequences v3.0
+> 🟢 **PURE GREEN** - Pure Green - Estructura Consequences v3.1
 
 | Métrica                                             | Valor                                        |
 |-----------------------------------------------------|----------------------------------------------|
 | **Overall Health**                                  | **100%** 🟢                                 |
-| **Skills**                                          | 297 (9 áreas funcionales)                    |
+| **Skills**                                          | 297+ (13 áreas funcionales)                  |
 | **Rules**                                           | 10 (.mdc)                                   |
-| **MCPs**                                            | 33 Claude Code / 18 OpenCode                 |
-| **HUBs**                                            | 18 operativos                                |
+| **MCPs**                                            | 35 Claude Code / 18 OpenCode                 |
+| **HUBs**                                            | 19 operativos (+ 4 auxiliares)              |
 | **Agentes**                                         | 52 (source) + 52 mirror                     |
 
 ---
@@ -154,23 +154,23 @@ Para la versión v1.1, hemos evolucionado hacia una organización por **Áreas M
 | **skill_validator.py**                                   | `01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/`                               | Valida estructura SOTA                               |
 | **skill_security_scan.py**                               | `01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/`                               | Escaneo de seguridad                                 |
 
-### MCPs (33 Claude Code / 18 OpenCode)
+### MCPs (34 Claude Code / 34 OpenCode)
 
 | Categoría                                      | Servidores                                                                                         |
 |------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| 🔍 Search                                       | exa, brave-search\*, stackoverflow                                                                 |
+| 🔍 Search                                       | exa, brave-search*, stackoverflow                                                                 |
 | 🧠 Memory                                       | engram, aim-memory-bank, notebooklm                                                                |
 | 📝 Notes                                        | mcp-obsidian, obsidian-api, Notion                                                                 |
 | 🌐 Browser                                      | Playwright, chrome-devtools, eagle-mcp                                                             |
 | 🤖 AI & Code                                    | context7, zai-mcp-server, github, task-master-ai, @magicuidesign/mcp                               |
-| 📊 Data                                         | supabase, supadata, sqlite*, postgres*                                                             |
-| 🔄 Workflow                                     | n8n-mcp, Linear, atlassian*, jira-extended*                                                        |
-| 💬 Communication                                | fireflies, slack\*, google-workspace                                                               |
+| 📊 Data                                         | supabase, Amplitude, supadata                                                                       |
+| 🔄 Workflow                                     | n8n-mcp, Linear                                                                                    |
+| 💬 Communication                                | fireflies, google-workspace                                                                        |
 | 📐 Design                                       | excalidraw-yctimlin, pencil                                                                        |
-| 🛠️ DevOps                                      | docker, sentry\*, filesystem                                                                       |
-| 🚀 Deploy                                       | vercel, TestSprite                                                                                 |
+| 🛠️ DevOps                                      | docker, filesystem                                                                                 |
+| 🚀 Deploy                                       | vercel, recall, TestSprite                                                                          |
 
-> `*` = requiere credenciales reales. Presentes como templates en `01_Core/05_Mcp/01_Claude_Code/mcp.json`.
+> Drift: 0 — Todos sincronizados bidireccionalmente. Verificar con `15_MCP_Sync_Hub.py --report`.
 
 **Configs activas:**
 
@@ -260,7 +260,7 @@ Code review automático integrado:
 |--------------------------------------------------------|---------------------------------------------------------------------------------------|
 | **OS_DIRECTORY.md**                                    | `OS_DIRECTORY.md` (raíz) — JARVIS discovery                                           |
 | **AGENTS.md**                                          | `00_Winter_is_Coming/AGENTS.md`                                                       |
-| **RULES_INDEX**                                        | `01_Core/01_Rules/RULES_INDEX.md`                                                     |
+| **RULES_INDEX**                                        | `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md`                                        |
 | **Skills README**                                      | `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                                                         |
 | **Scripts INDEX**                                      | `01_Personal_Os/04_Operations/03_Scripts_Os/SCRIPTS_INDEX.md`                                                      |
 | **OS Integration Audit**                               | `02_Knowledge/04_Docs/OS_Integration_Audit_v1.0.md`                                   |
@@ -334,4 +334,4 @@ CC BY-NC-SA 4.0 - Uso no comercial permitido.
 
 ---
 
-_Think Different PersonalOS v3.0 — JARVIS Integrated ✅ — 2026-04-25_
+_Think Different PersonalOS v3.1 — JARVIS Integrated ✅ — 2026-04-27_

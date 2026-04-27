@@ -40,7 +40,7 @@ Se utilizaron scripts de Python para realizar:
 Este método evitó el error humano y la orfandad de archivos.
 
 ## 🛡️ Estrategias de Prevención (Compounding)
-- **Centralización**: Se actualizaron las constantes en `08_Scripts_Os/config_paths.py`. Ahora el acceso a workflows debe ser vía `WORKFLOWS_PERSONAL_DIR`, etc.
+- **Centralización**: Se actualizaron las constantes en `03_Scripts_Os/config_paths.py`. Ahora el acceso a workflows debe ser vía `WORKFLOWS_PERSONAL_DIR`, etc.
 - **Validación Automática**: Se integró el escaneo recursivo en el `Auditor_Hub.py`.
 - **Doble Vínculo**: Sincronización obligatoria entre fuente y backup estratégico.
 

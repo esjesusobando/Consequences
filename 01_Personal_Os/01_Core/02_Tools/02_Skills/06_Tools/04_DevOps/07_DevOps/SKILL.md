@@ -1,3 +1,9 @@
+---
+description: 07_DevOps
+globs: **/*
+alwaysApply: true
+---
+
 # DevOps — Skill Index
 
 ## Descripción

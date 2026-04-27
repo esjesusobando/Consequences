@@ -79,7 +79,7 @@
 |-----------|------------|--------|
 | `01_Core/` | `01_Personal_Os/01_Core/` | ✅ FIXED |
 | `04_Engine/` | `EXCLUIDO` | ✅ LEGACY |
-| `08_Scripts_Os/` | `01_Personal_Os/04_Operations/03_Scripts_Os/` | ✅ FIXED |
+| `03_Scripts_Os/` | `01_Personal_Os/04_Operations/03_Scripts_Os/` | ✅ FIXED |
 
 ---
 

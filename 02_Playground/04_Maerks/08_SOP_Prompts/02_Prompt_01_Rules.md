@@ -104,7 +104,7 @@ Crear una regla para validar que todo código Python tenga type hints.
 
 Nombre: Python Type Hints Required
 Prioridad: 8
-Globs: ["01_Core/**/*.py", "08_Scripts_Os/**/*.py"]
+Globs: ["01_Core/**/*.py", "03_Scripts_Os/**/*.py"]
 ```
 
 ## ✅ Checklist de Calidad

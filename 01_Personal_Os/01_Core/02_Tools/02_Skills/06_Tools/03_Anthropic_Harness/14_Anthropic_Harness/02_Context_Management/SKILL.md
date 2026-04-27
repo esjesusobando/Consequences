@@ -1,3 +1,9 @@
+---
+description: 02_Context_Management
+globs: **/*
+alwaysApply: true
+---
+
 # Context Management Skill
 
 **CATEGORÍA:** Anthropic Harness Patterns

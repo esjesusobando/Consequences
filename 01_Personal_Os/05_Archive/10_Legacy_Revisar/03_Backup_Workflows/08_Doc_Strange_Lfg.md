@@ -32,9 +32,9 @@ Ejecutar en orden. No saltarse pasos.
 
 ### FASE 4 — Calidad y Seguridad
 
-1. **Linting**: `python 08_Scripts_Os/05_Validator_Hub.py --lint`
-2. **Validar reglas**: `python 08_Scripts_Os/05_Validator_Hub.py --rules`
-3. **Auditoría**: `python 08_Scripts_Os/01_Auditor_Hub.py` (si el cambio es mayor)
+1. **Linting**: `python 03_Scripts_Os/05_Validator_Hub.py --lint`
+2. **Validar reglas**: `python 03_Scripts_Os/05_Validator_Hub.py --rules`
+3. **Auditoría**: `python 03_Scripts_Os/01_Auditor_Hub.py` (si el cambio es mayor)
 4. **Checkpoint 3**: Revisión de seguridad — OWASP Top 10 si hay endpoints o inputs
 
 ### FASE 5 — Revisión y Cierre
@@ -42,7 +42,7 @@ Ejecutar en orden. No saltarse pasos.
 1. **Revisión completa**: Ejecutar `03_Vision_Review` — 13 agentes en paralelo
 2. **Browser test** *(si hay UI)*: Screenshot antes/después con MCP Playwright
 3. **Documentar**: Actualizar `01_Core/01_Inventario_Total.md` si hay nuevos scripts
-4. **Cierre ritual**: `python 08_Scripts_Os/04_Ritual_Hub.py` → commit final → reportar `✅ DONE`
+4. **Cierre ritual**: `python 03_Scripts_Os/04_Ritual_Hub.py` → commit final → reportar `✅ DONE`
 
 ## ⚡ Cuándo usar Pro vs Lite
 

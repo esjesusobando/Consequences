@@ -1,3 +1,9 @@
+---
+description: 07_Data_Visualization
+globs: **/*
+alwaysApply: true
+---
+
 # 25 Data Visualization
 
 ## Esencia Original

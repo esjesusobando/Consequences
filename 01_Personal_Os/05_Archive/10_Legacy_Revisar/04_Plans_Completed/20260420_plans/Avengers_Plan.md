@@ -9,7 +9,7 @@ Certificar la integridad del sistema, eliminar redundancias estructurales (espec
 
 Tras el análisis de los HUBs y scripts actuales, se identifican los siguientes patrones:
 - **Lógica Vengadores**: Los comandos `Review`, `Work` y `Compound` están vinculados a scripts como `Vision_Review`, `Thor_Work` y `Hulk_Compound`. Aunque potentes, sus nombres son ambiguos para un sistema SOTA profesional.
-- **Deuda de Fragmentación**: La separación entre `01_Core/03_Skills` y `08_Scripts_Os` genera fricción en el mantenimiento.
+- **Deuda de Fragmentación**: La separación entre `01_Core/03_Skills` y `03_Scripts_Os` genera fricción en el mantenimiento.
 - **Residuos de Legacy**: `10_Legacy` contiene scripts que colisionan en nombre con la versión activa, lo que puede inducir a error al asistente si no lee el contexto completo.
 
 ## Cambios Propuestos
@@ -18,7 +18,7 @@ Tras el análisis de los HUBs y scripts actuales, se identifican los siguientes 
 
 ### [Componente] Auditoría y Seguridad ECE
 
-#### [MODIFY] [config_paths.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/08_Scripts_Os/config_paths.py)
+#### [MODIFY] [config_paths.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/03_Scripts_Os/config_paths.py)
 - Refactorizar para usar **exclusivamente** `pathlib` (Estándar Kieran).
 - Eliminar cualquier referencia hardcodeada sobreviviente.
 
@@ -29,14 +29,14 @@ Tras el análisis de los HUBs y scripts actuales, se identifican los siguientes 
 
 ### [Componente] Reestructuración "Skills as Packages"
 
-Se realizará la migración física de los scripts activos desde `08_Scripts_Os` hacia sus carpetas locales en `01_Core/03_Skills/`.
+Se realizará la migración física de los scripts activos desde `03_Scripts_Os` hacia sus carpetas locales en `01_Core/03_Skills/`.
 
 #### [MODIFY] [01_Core/03_Skills/...]
 - Cada carpeta de Skill activa recibirá un directorio `scripts/`.
 - [NEW] `01_Core/03_Skills/08_Personal_Os/scripts/08_Ritual_Cierre.py`
 - [NEW] `01_Core/03_Skills/01_Agent_Teams_Lite/scripts/02_Professor_X_Plan.py`
 
-#### [DELETE] [08_Scripts_Os/...]
+#### [DELETE] [03_Scripts_Os/...]
 - Se eliminarán las subcarpetas `01_Ritual`, `02_Tool`, `04_Workflow`, etc., una vez migrados los scripts.
 
 ---

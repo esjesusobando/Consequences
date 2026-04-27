@@ -30,7 +30,7 @@ Iniciar el día con claridad y enfoque, siguiendo el flujo de PersonalOS.
 ### Paso 2: Ejecutar Script
 
 ```bash
-python 08_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py
+python 03_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py
 ```
 
 ### Paso 3: Identificar TOP 3 Prioridades

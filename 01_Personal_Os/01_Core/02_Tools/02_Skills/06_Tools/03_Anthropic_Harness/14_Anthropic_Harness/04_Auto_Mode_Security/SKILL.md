@@ -1,3 +1,9 @@
+---
+description: 04_Auto_Mode_Security
+globs: **/*
+alwaysApply: true
+---
+
 # Auto Mode Security Skill
 
 **CATEGORÍA:** Anthropic Harness Patterns

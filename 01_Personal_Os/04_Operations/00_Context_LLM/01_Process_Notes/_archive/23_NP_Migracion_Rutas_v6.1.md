@@ -18,7 +18,7 @@ Se está actualizando todas las referencias a carpetas obsoletas en el PersonalO
 - `00_Winter_is_Coming/`
 - `.agent/03_Workflows/`
 - `01_Core/00_Workflows/`
-- Scripts en `08_Scripts_Os/Legacy_Backup/`
+- Scripts en `03_Scripts_Os/Legacy_Backup/`
 - Hooks en `.agent/` y `01_Core/`
 
 ## 🔲 Pendiente
@@ -40,7 +40,7 @@ Se está actualizando todas las referencias a carpetas obsoletas en el PersonalO
 | `01_Core/07_Memory_Brain/`             | `04_Operations/04_Memory_Brain/` + Engram               |
 | `04_Operations/Tasks/`                 | `03_Tasks/`                                             |
 | `00_Core/GOALS.md`                     | `00_Winter_is_Coming/GOALS.md`                          |
-| `04_Operations/`                       | `08_Scripts_Os/`                                        |
+| `04_Operations/`                       | `03_Scripts_Os/`                                        |
 | `docs/brainstorms/`                    | `04_Operations/07_Brain_Storming/`                      |
 | `docs/plans/`                          | `04_Operations/05_Plans/`                               |
 | `docs/solutions/`                      | `04_Operations/06_Solutions/`                           |
@@ -55,7 +55,7 @@ Think_Different/
 ├── 03_Tasks/
 ├── 04_Operations/        # Context, Notes, Plans, Solutions
 ├── 05_Archive/
-├── 08_Scripts_Os/
+├── 03_Scripts_Os/
 └── .agent/
 ```
 

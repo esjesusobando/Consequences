@@ -39,7 +39,7 @@ El PersonalOS v1.0 está completamente operativo con todas las metodologías int
 | `05_Archive/`                  | ✅                | ✅ Legacy archivado                         | PASS             |
 | `06_Playground/`               | ✅                | ✅ Área experimental                        | PASS             |
 | `07_Projects/`                 | ✅                | ✅ 8 proyectos históricos                   | PASS             |
-| `08_Scripts_Os/`               | ✅                | ✅ 14 HUBs                                  | PASS             |
+| `03_Scripts_Os/`               | ✅                | ✅ 14 HUBs                                  | PASS             |
 
 ---
 
@@ -155,7 +155,7 @@ El PersonalOS v1.0 está completamente operativo con todas las metodologías int
 
 ---
 
-## 7. HUBs (08_Scripts_Os/)
+## 7. HUBs (03_Scripts_Os/)
 
 | #           | HUB                  | Script                            | Estado           |
 |-------------|----------------------|-----------------------------------|------------------|

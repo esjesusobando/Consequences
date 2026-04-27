@@ -11,7 +11,7 @@ Valida el stack tecnológico.
 ## Usage
 
 ```bash
-python 08_Scripts_Os/Ritual_Fixed/13_Validate_Stack.py
+python 03_Scripts_Os/Ritual_Fixed/13_Validate_Stack.py
 ```
 
 ---

@@ -17,11 +17,11 @@ Ciclo de ingeniería autónomo para tareas cotidianas. Completa desde análisis 
 5. **Planear**: Ejecutar `02_Professor_X_Plan` — crear plan en `03_Tasks/`
 6. **Implementar**: Ejecutar `04_Thor_Work` — cambios incrementales con commits atómicos
 7. **Resolver TODOs pendientes**: Revisar y cerrar cualquier TODO generado durante implementación
-8. **Calidad de código**: `python 08_Scripts_Os/05_Validator_Hub.py --lint` + verificar tests
-9. **Validar reglas**: `python 08_Scripts_Os/05_Validator_Hub.py --rules`
+8. **Calidad de código**: `python 03_Scripts_Os/05_Validator_Hub.py --lint` + verificar tests
+9. **Validar reglas**: `python 03_Scripts_Os/05_Validator_Hub.py --rules`
 10. **Revisar**: Ejecutar `03_Vision_Review` — revisión de código completa
 11. **Playwright** *(si hay UI)*: Screenshot antes/después con MCP Playwright
-12. **Cerrar**: Commit final + `python 08_Scripts_Os/04_Ritual_Hub.py` → reportar `✅ DONE`
+12. **Cerrar**: Commit final + `python 03_Scripts_Os/04_Ritual_Hub.py` → reportar `✅ DONE`
 
 ## ⚡ Cuándo usar Lite vs Pro
 

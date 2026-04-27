@@ -18,7 +18,7 @@
 - `CLAUDE.md` (múltiples) — En diagramas y texto
 - `README.md` — En tablas de documentación
 - `.atl/skill-registry.md` — Múltiples referencias
-- `08_Scripts_Os/SCRIPTS_INDEX.md` — En estructura
+- `03_Scripts_Os/SCRIPTS_INDEX.md` — En estructura
 - `Now/OIM_Website/README.md` — Configuración
 
 **Acción recomendada:** Actualizar referencias de `00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md` → `00_Winter_is_Coming/AGENTS.md`
@@ -105,7 +105,7 @@ El sistema muestra 29 categorías pero la numeración no es secuencial (ej: tien
 
 ---
 
-### 7. Scripts en 08_Scripts_Os/
+### 7. Scripts en 03_Scripts_Os/
 
 | Hub                | Script                          | Estado          |
 |--------------------|---------------------------------|-----------------|
@@ -158,7 +158,7 @@ El sistema muestra 29 categorías pero la numeración no es secuencial (ej: tien
    - [ ] `CLAUDE.md` (varios)
    - [ ] `README.md`
    - [ ] `.atl/skill-registry.md`
-   - [ ] `08_Scripts_Os/SCRIPTS_INDEX.md`
+   - [ ] `03_Scripts_Os/SCRIPTS_INDEX.md`
    - [ ] `Now/OIM_Website/README.md`
    - [ ] Documentación en `04_Operations/`
 
@@ -169,7 +169,7 @@ El sistema muestra 29 categorías pero la numeración no es secuencial (ej: tien
 ### Prioridad MEDIA (Actualizaciones)
 
 4. **Unificar versión** entre README.md y CLAUDE.md
-5. **Auditar** scripts legacy en `08_Scripts_Os/10_Legacy/`
+5. **Auditar** scripts legacy en `03_Scripts_Os/10_Legacy/`
 6. **Revisar** archivos .mdc en `01_Core/01_Rules/`
 
 ### Prioridad BAJA (Mejoras)

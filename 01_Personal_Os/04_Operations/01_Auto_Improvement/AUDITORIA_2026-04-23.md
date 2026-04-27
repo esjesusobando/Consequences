@@ -64,7 +64,7 @@
 - ├── 03_Knowledge/            # ❌ AHORA ES 02_Knowledge
 - ├── 04_Docs/                # ❌ AHORA ES 02_Knowledge/04_Docs
 - ├── 05_Archive/             # ✅ CORRECTO
-- ├── 08_Scripts_Os/          # ✅ CORRECTO
+- ├── 03_Scripts_Os/          # ✅ CORRECTO
 - └── .agent/                  # ✅ CORRECTO
 ```
 
@@ -143,10 +143,10 @@ ui-ux-pro-max/
 
 ```diff
 - python 01_Core/07_Hooks/04_Sound/notification.py --task-complete
-+ python 08_Scripts_Os/00_Sound_Engine.py --task-complete
++ python 03_Scripts_Os/00_Sound_Engine.py --task-complete
 ```
 
-El script de sonido está en `08_Scripts_Os/00_Sound_Engine.py` NO en `01_Core/07_Hooks/`.
+El script de sonido está en `03_Scripts_Os/00_Sound_Engine.py` NO en `01_Core/07_Hooks/`.
 
 ---
 
@@ -185,7 +185,7 @@ El script de sonido está en `08_Scripts_Os/00_Sound_Engine.py` NO en `01_Core/0
 1. **Core Structure** - Las carpetas principales (00-08) están correctas
 2. **MCPs** - 33 servidores bien configurados en `.mcp.json`
 3. **GGA** - Configuración correcta y funcional en `.gga`
-4. **HUBs** - 14 HUBs operativos en `08_Scripts_Os/`
+4. **HUBs** - 14 HUBs operativos en `03_Scripts_Os/`
 5. **Skills System** - Sistema v2.0 con áreas funcionales
 6. **Rules** - 25 reglas .mdc bien estructuradas
 7. **Git Status** - Estado limpio

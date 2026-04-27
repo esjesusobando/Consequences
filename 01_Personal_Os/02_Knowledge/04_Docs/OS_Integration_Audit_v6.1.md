@@ -144,7 +144,7 @@
 | `/sdd:*`              | SDD Workflow (init, explore, new, etc.)             | ✅                    |
 | `/ce:*`               | Compound Engineering                                | ✅                    |
 
-### ✅ 3.4 08_Scripts_Os/ Script Hub
+### ✅ 3.4 03_Scripts_Os/ Script Hub
 
 **10 HUBs - ALL ACTIVE:**
 
@@ -237,7 +237,7 @@
 
 ## 6. TOOLS & CAPABILITIES
 
-### ✅ 6.1 Validator Scripts (08_Scripts_Os/Validator_Fixed/)
+### ✅ 6.1 Validator Scripts (03_Scripts_Os/Validator_Fixed/)
 
 | Tool                            | File                               | Status               |
 |---------------------------------|------------------------------------|----------------------|
@@ -245,17 +245,17 @@
 | Skill Security Scan             | skill_security_scan.py             | ✅                    |
 | Rules Validator                 | 40_Validate_Rules.py               | ✅                    |
 
-### ✅ 6.2 Tool Shed (08_Scripts_Os/Tool_Fixed/62_Tool_Shed.py)
+### ✅ 6.2 Tool Shed (03_Scripts_Os/Tool_Fixed/62_Tool_Shed.py)
 
 - **Status:** ✅ OPERATIONAL
 - **Function:** Auto-detects context and suggests MCPs
 
-### ✅ 6.3 Skill Harmonizer (08_Scripts_Os/Tool_Fixed/63_Skill_Harmonizer.py)
+### ✅ 6.3 Skill Harmonizer (03_Scripts_Os/Tool_Fixed/63_Skill_Harmonizer.py)
 
 - **Status:** ✅ OPERATIONAL
 - **Function:** Validates skill parity (20/20)
 
-### ✅ 6.4 Notifier (08_Scripts_Os/Tool_Fixed/00_Notifier.py)
+### ✅ 6.4 Notifier (03_Scripts_Os/Tool_Fixed/00_Notifier.py)
 
 - **Status:** ✅ OPERATIONAL
 - **Function:** Sound on task completion

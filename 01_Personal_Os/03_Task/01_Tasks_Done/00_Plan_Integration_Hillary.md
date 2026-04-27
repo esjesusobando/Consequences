@@ -58,7 +58,7 @@
 
 **Total actual:** 27 archivos, 24 es el siguiente número disponible
 
-### Scripts (08_Scripts_Os/)
+### Scripts (03_Scripts_Os/)
 
 | #               | Carpeta                                     |
 |-----------------|---------------------------------------------|
@@ -237,7 +237,7 @@
 | Archivo                                                   | Cambio                                         |
 |-----------------------------------------------------------|------------------------------------------------|
 | `.atl/skill-registry.md`                                  | Agregar `18_Personal_Life_OS`                  |
-| `08_Scripts_Os/SCRIPTS_INDEX.md`                          | Agregar referencia a Hillary Life OS           |
+| `03_Scripts_Os/SCRIPTS_INDEX.md`                          | Agregar referencia a Hillary Life OS           |
 | `00_Winter_is_Coming/GOALS.md`                            | Agregar como objetivo Q2                       |
 | `00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md`         | Agregar triggers para Hillary                  |
 

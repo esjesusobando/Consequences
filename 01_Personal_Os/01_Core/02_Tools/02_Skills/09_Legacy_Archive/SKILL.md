@@ -1,3 +1,9 @@
+---
+description: 09_Legacy_Archive
+globs: **/*
+alwaysApply: true
+---
+
 # SKILL: Legacy Archive
 
 **Área:** 09_Legacy_Archive

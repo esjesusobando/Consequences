@@ -269,7 +269,7 @@ alwaysApply: true
 | §2 | **Armor Layer (Blindaje)** | 03 líneas 41-43 | Rutas absolutas obligatorias, validación proactiva de archivos |
 | §3 | **Design Tokens** | 03 líneas 64-73 | HSL Primary, Surface (glassmorphism), Radius, Lima, Azul Cobalto |
 | §4 | **Organización de Skills** | 03 líneas 44-47 | Formato NN_Nombre_Skill, regla de 3 repeticiones → crear Skill |
-| §5 | **Vitaminización de Scripts** | 03 línea 48 | Branding PersonalOS + notificaciones TTS en scripts de 08_Scripts_Os |
+| §5 | **Vitaminización de Scripts** | 03 línea 48 | Branding PersonalOS + notificaciones TTS en scripts de 03_Scripts_Os |
 | §6 | **Pure Green Standard** | 03 línea 49 | Métricas 100% en rutas, dependencias, hooks |
 | §7 | **Visibilidad de Progreso en Scripts** | 03 líneas 50-54 | Formato `[XX.X%] Paso N/Total`, TTS en hitos 25/50/75%, template disponible |
 | §8 | **Integridad Matemática** | 03 líneas 55-57 | Centralización de constantes físicas, validación de curvas vs datos reales |
@@ -341,7 +341,7 @@ alwaysApply: true
 ```yaml
 ---
 description: "REGLA 05: Elite Reporting Standard — Storytelling, Análisis Forense, Métricas Consolidadas (15-25) y Certificación de Estado"
-globs: ["**/*.py", "**/*.md", "08_Scripts_Os/**/*"]
+globs: ["**/*.py", "**/*.md", "03_Scripts_Os/**/*"]
 alwaysApply: true
 ---
 ```
@@ -500,9 +500,9 @@ alwaysApply: true
 
 | § | Título | Viene de... | Qué incluye |
 |:---:|:---|:---|:---|
-| §1 | **Morning Standup** | 18 líneas 36-50 | Ejecutar `python 08_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py`. El script lee inventario, CTX, Process Notes, tareas activas. Genera "The Big 3" |
+| §1 | **Morning Standup** | 18 líneas 36-50 | Ejecutar `python 03_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py`. El script lee inventario, CTX, Process Notes, tareas activas. Genera "The Big 3" |
 | §2 | **Presentar Reporte** | 18 líneas 51-71 | Formato: Fecha, Objetivo Principal, THE BIG 3 (3 tareas), Estado (P0/P1 activas, bloqueos), Recordatorio de 10% reporting |
-| §3 | **Recap & Planning Avanzado** | 20 líneas 36-43 | Sincronización Fireflies: `python 08_Scripts_Os/Ritual_Fixed/39_Recap_Planning.py`. Revisión de prioridades vía MCP. Análisis de bloqueos (status `b`). Victorias Rápidas (baja fricción) |
+| §3 | **Recap & Planning Avanzado** | 20 líneas 36-43 | Sincronización Fireflies: `python 03_Scripts_Os/Ritual_Fixed/39_Recap_Planning.py`. Revisión de prioridades vía MCP. Análisis de bloqueos (status `b`). Victorias Rápidas (baja fricción) |
 | §4 | **Salida Estructurada del Recap** | 20 líneas 49-57 | Formato: Resumen Fireflies, Objetivo Principal ("Norte"), Top 3 Tasks (con links), Victorias Rápidas, Housekeeping, ¿En qué trabajar primero? |
 | §5 | **Criterios de Priorización** | 18 líneas 84-93 | Tabla P0-P3: P0 (MUST DO THIS WEEK), P1 (THIS MONTH), P2 (SCHEDULED), P3 (BACKLOG) |
 | §6 | **Integración con Goals** | 18 líneas 98-104 | Cada tarea del Big 3 DEBE vincularse con GOALS.md, citar heading, medir contra métricas |
@@ -595,9 +595,9 @@ ARCHIVO 04 dice:                        ARCHIVO 08 dice:
 
 | Script | Línea | Qué dice ahora | Qué debe decir |
 |:---|:---:|:---|:---|
-| `08_Scripts_Os/15_SOTA_Integrity_Check.py` | 12 | `Rules (25)` | `Rules (10)` |
-| `08_Scripts_Os/15_SOTA_Integrity_Check.py` | 177 | `CHECKING: Rules (25)` | `CHECKING: Rules (10)` |
-| `08_Scripts_Os/15_SOTA_Integrity_Check.py` | 196 | `return len(mdc_files) >= 24` | `return len(mdc_files) >= 10` |
+| `03_Scripts_Os/15_SOTA_Integrity_Check.py` | 12 | `Rules (25)` | `Rules (10)` |
+| `03_Scripts_Os/15_SOTA_Integrity_Check.py` | 177 | `CHECKING: Rules (25)` | `CHECKING: Rules (10)` |
+| `03_Scripts_Os/15_SOTA_Integrity_Check.py` | 196 | `return len(mdc_files) >= 24` | `return len(mdc_files) >= 10` |
 
 ### Scripts LEGACY (NO necesitan actualización):
 

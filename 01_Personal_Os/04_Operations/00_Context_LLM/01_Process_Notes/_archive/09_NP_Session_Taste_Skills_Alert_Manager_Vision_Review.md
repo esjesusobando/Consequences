@@ -32,7 +32,7 @@ Sesión de trabajo enfocada en mejorar el sistema PersonalOS con:
 ### ✅ Creación Script 63 - Audit Sync Master
 
 - **Fecha:** 2026-03-18
-- **Archivo:** `08_Scripts_Os/63_Audit_Sync_Master.py`
+- **Archivo:** `03_Scripts_Os/63_Audit_Sync_Master.py`
 - **Función:** Escanear estructura y sincronizar auditores
 - **Detecta:**
   - Carpetas 00-06
@@ -43,7 +43,7 @@ Sesión de trabajo enfocada en mejorar el sistema PersonalOS con:
 ### ✅ Creación Script 66 - Alert Manager
 
 - **Fecha:** 2026-03-18
-- **Archivo:** `08_Scripts_Os/66_Alert_Manager.py`
+- **Archivo:** `03_Scripts_Os/66_Alert_Manager.py`
 - **Función:** Sistema centralizado de alertas
 - **Niveles:** INFO, WARNING, ERROR, CRITICAL
 - **Canales:** Console, Discord (webhook), Log
@@ -94,9 +94,9 @@ Sesión de trabajo enfocada en mejorar el sistema PersonalOS con:
 - `00_Core/01_Personal_Os/11_AGENTS.md` - Agregado Taste-Skills + scripts de validación
 - `CLAUDE.md` - Agregado Taste-Skills PRIORIDAD MAXIMA
 - `03_Knowledge/10_Repos_Gentleman/README.md` - Creado
-- `08_Scripts_Os/63_Audit_Sync_Master.py` - Creado
-- `08_Scripts_Os/66_Alert_Manager.py` - Creado
-- `08_Scripts_Os/04_Vision_Review.py` - Modificado (fix)
+- `03_Scripts_Os/63_Audit_Sync_Master.py` - Creado
+- `03_Scripts_Os/66_Alert_Manager.py` - Creado
+- `03_Scripts_Os/04_Vision_Review.py` - Modificado (fix)
 - `05_System/04_Env/alerts_config.json` - Creado
 
 ## Commits

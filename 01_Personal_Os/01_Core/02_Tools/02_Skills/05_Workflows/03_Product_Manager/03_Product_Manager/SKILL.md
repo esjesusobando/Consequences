@@ -1,3 +1,9 @@
+---
+description: 03_Product_Manager
+globs: **/*
+alwaysApply: true
+---
+
 # Product Manager — Skill Index
 
 ## Descripción

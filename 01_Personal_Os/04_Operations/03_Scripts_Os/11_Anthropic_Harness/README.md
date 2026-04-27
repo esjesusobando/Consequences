@@ -32,7 +32,7 @@ Sistema de harness para Anthropic: evaluación, context management, multi-agent.
 ## 📍 Ubicación
 
 ```
-08_Scripts_Os/11_Anthropic_Harness/
+03_Scripts_Os/11_Anthropic_Harness/
 ```
 
 ---

@@ -18,7 +18,7 @@
 | **05_Archive**                | ✅ PASS           | 10 subdirectorios, carpeta `10_To_Delete` pendiente                |
 | **06_Playground**             | ✅ PASS           | 7 directorios activos                                              |
 | **07_Projects**               | ✅ PASS           | 2 subdirectorios                                                   |
-| **08_Scripts_Os**             | 🟡 WARN           | Scripts migrados parcialmente, archivos sueltos                    |
+| **03_Scripts_Os**             | 🟡 WARN           | Scripts migrados parcialmente, archivos sueltos                    |
 | **Git**                       | 🔴 FAIL           | Submodule fantasma, scripts borrados, archivos untracked           |
 | **Raíz**                      | 🔴 FAIL           | 5 archivos huérfanos + directorio `Now/` fuera de estructura       |
 | **Seguridad**                 | 🔴 CRITICAL       | API keys expuestas en `.mcp.json` (commiteadas a Git)              |
@@ -144,8 +144,8 @@ Las skills van de `21_Skill_Template` a `25_Octopus`, saltando **22, 23, 24**:
 ### 8. Git Status — Archivos Borrados y Untracked
 
 ```
- D 08_Scripts_Os/04_Workflow/01_Spider_Brainstorm.py    # borrado del working tree
- D 08_Scripts_Os/04_Workflow/02_Professor_X_Plan.py     # borrado del working tree
+ D 03_Scripts_Os/04_Workflow/01_Spider_Brainstorm.py    # borrado del working tree
+ D 03_Scripts_Os/04_Workflow/02_Professor_X_Plan.py     # borrado del working tree
 ?? 01_Core/03_Skills/00_Compound_Engineering/scripts/    # nuevo, no tracked
 ?? 01_Core/03_Skills/01_Agent_Teams_Lite/scripts/        # nuevo, no tracked
 ```
@@ -158,7 +158,7 @@ Los scripts fueron migrados a Skills pero **sin hacer commit**. Hay que completa
 ENGINE_TESTS_DIR = ENGINE_DIR / "Legacy_Backup"   # línea 82
 ```
 
-La carpeta `08_Scripts_Os/Legacy_Backup` **no existe**. La carpeta real es `10_Legacy`.
+La carpeta `03_Scripts_Os/Legacy_Backup` **no existe**. La carpeta real es `10_Legacy`.
 
 ### 10. `Now/` — Directorio Desordenado
 

@@ -50,7 +50,7 @@ El objetivo es alinear la numeración de la carpeta de **Growth** con el estánd
 ## Verification Plan
 
 ### Automated Tests
-- `python 08_Scripts_Os/01_Auditor_Hub.py estructura`: Validar que no hay archivos huérfanos o colisiones de nombres.
+- `python 03_Scripts_Os/01_Auditor_Hub.py estructura`: Validar que no hay archivos huérfanos o colisiones de nombres.
 - `grep -r "05_Growth"`: Confirmar 0 resultados.
 
 ### Manual Verification

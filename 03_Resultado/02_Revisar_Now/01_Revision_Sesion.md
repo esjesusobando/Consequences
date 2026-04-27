@@ -39,7 +39,7 @@
 
 | #         | Archivo                                                                               | Descripción             |
 |-----------|---------------------------------------------------------------------------------------|-------------------------|
-| 1         | `08_Scripts_Os/12_Audits/REPORTE_AUDITORIA_2026-04-21.md`                             | Reporte auditoría       |
+| 1         | `03_Scripts_Os/12_Audits/REPORTE_AUDITORIA_2026-04-21.md`                             | Reporte auditoría       |
 | 2         | `04_Operations/03_Process_Notes/05_NP_Auditoria_Rutas_Correccion_2026-04-21.md`       | Process Notes           |
 | 3         | `04_Operations/00_Context_Memory/04_CTX_Auditoria_Rutas_2026-04-21.md`                | Context Memory          |
 | 4         | `Now/02_Revisar_Now/01_Revision_Sesion.md`                                            | Esta revisión           |

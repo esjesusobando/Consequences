@@ -33,7 +33,7 @@ Reorganizar `Think_Different/` de 9 carpetas raíz a 4 carpetas con propósito c
 | `05_Archive/` | `01_Personal_Os/05_Archive/` | Mover dentro de OS |
 | `06_Playground/` | `02_Playground/` | Mover a raíz |
 | `07_Projects/` | `01_Personal_Os/04_Operations/05_Projects/` | Mover a Operations |
-| `08_Scripts_Os/` | `01_Personal_Os/04_Operations/03_Scripts_Os/` | Mover a Operations |
+| `03_Scripts_Os/` | `01_Personal_Os/04_Operations/03_Scripts_Os/` | Mover a Operations |
 | `Now/` | `03_Resultado/` | Renombrar |
 
 ### `01_Core/` → `01_Personal_Os/01_Core/`
@@ -102,7 +102,7 @@ PersonalOS/
 │   │   ├── 00_Context_LLM/       ← Memoria LLM
 │   │   ├── 01_Auto_Improvement/
 │   │   ├── 02_Agent_Teams_Lite/
-│   │   ├── 03_Scripts_Os/        ← 14 HUBs (antes 08_Scripts_Os/)
+│   │   ├── 03_Scripts_Os/        ← 14 HUBs (antes 03_Scripts_Os/)
 │   │   ├── 04_Installer/
 │   │   └── 05_Projects/          ← (antes 07_Projects/)
 │   └── 05_Archive/
@@ -169,7 +169,7 @@ PersonalOS/
 ### `80_Edge_Case_Validator.py` — doble path nesting
 ```python
 # BUG (línea 33)
-SCRIPTS_DIR = ENGINE_DIR / "08_Scripts_Os"  # ENGINE_DIR YA ES 08_Scripts_Os
+SCRIPTS_DIR = ENGINE_DIR / "03_Scripts_Os"  # ENGINE_DIR YA ES 03_Scripts_Os
 
 # FIX
 SCRIPTS_DIR = ENGINE_DIR

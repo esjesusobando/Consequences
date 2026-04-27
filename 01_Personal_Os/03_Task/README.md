@@ -18,7 +18,7 @@ Think_Different/
 ├── 05_Archive/            # Repositorio de Proyectos Finalizados
 ├── 06_Playground/         # Laboratorio de Pruebas y Experimentos
 ├── 07_Projects/           # Desarrollo de Proyectos Activos
-├── 08_Scripts_Os/         # Scripts y HUBs Operativos del Sistema
+├── 03_Scripts_Os/         # Scripts y HUBs Operativos del Sistema
 └── Maerks/               # Entorno de Testing y Validación
 ```
 

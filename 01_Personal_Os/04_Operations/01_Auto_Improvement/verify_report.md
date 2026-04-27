@@ -29,7 +29,7 @@
 | Metrics Tracker             | `03_Metrics/metrics_tracker.py`                  | ✅ Implemented             |
 | Cron Trigger                | `04_Triggers/cron_trigger.py`                    | ✅ Implemented             |
 | Manual Trigger              | `04_Triggers/manual_trigger.py`                  | ✅ Implemented             |
-| Main Hub                    | `08_Scripts_Os/11_Auto_Learn_Hub.py`             | ✅ Implemented             |
+| Main Hub                    | `03_Scripts_Os/11_Auto_Learn_Hub.py`             | ✅ Implemented             |
 
 ### Incomplete Tasks
 **None** - All phases completed.

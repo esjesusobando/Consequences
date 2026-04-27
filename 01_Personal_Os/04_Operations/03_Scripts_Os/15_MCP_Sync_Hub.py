@@ -177,8 +177,30 @@ def main():
             return
 
         elif cmd == "--apply":
-            print("❌ Modo --apply no implementado aún.")
-            print("   Usa --report para ver drift nomas.")
+            diff = compare_mcps()
+            if not diff: return
+            
+            claude_config = load_json(MCP_CLAUDE)
+            opencode_config = load_json(OPENCODE_CONFIG)
+            
+            # Sync to OpenCode
+            if "mcp" not in opencode_config:
+                opencode_config["mcp"] = {}
+                
+            for mcp_name in diff["claude_only"]:
+                opencode_config["mcp"][mcp_name] = diff["claude_details"][mcp_name]
+                
+            # Sync to Claude
+            if "mcpServers" not in claude_config:
+                claude_config["mcpServers"] = {}
+                
+            for mcp_name in diff["opencode_only"]:
+                claude_config["mcpServers"][mcp_name] = diff["opencode_details"][mcp_name]
+                
+            save_json(OPENCODE_CONFIG, opencode_config)
+            save_json(MCP_CLAUDE, claude_config)
+            print("✅ MCPs sincronizados bidireccionalmente.")
+            update_registry(compare_mcps())
             return
 
         elif cmd == "--validate":

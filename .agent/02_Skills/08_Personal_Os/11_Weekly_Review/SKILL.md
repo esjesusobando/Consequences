@@ -37,7 +37,7 @@ Revisar qué se logró esta semana:
 ### Paso 3: Ejecutar Script
 
 ```bash
-python 08_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py
+python 03_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py
 ```
 
 ### Paso 4: Planificar Próxima Semana

@@ -24,7 +24,7 @@
 | #               | Item                                     | Ubicación                                                       | Estado               |
 |-----------------|------------------------------------------|-----------------------------------------------------------------|----------------------|
 | 1               | 5 perfiles de negocio                    | `.agent/01_Agents/Perfiles/`                                    | ✅                    |
-| 2               | Scripts Anthropic Harness                | `04_Operations/08_Scripts_Os/11_Anthropic_Harness/`             | ✅                    |
+| 2               | Scripts Anthropic Harness                | `04_Operations/03_Scripts_Os/11_Anthropic_Harness/`             | ✅                    |
 | 3               | Skills Anthropic                         | `.agent/02_Skills/14_Anthropic_Harness/`                        | ✅                    |
 | 4               | Workflow Anthropic                       | `.agent/03_Workflows/17_Anthropic_Harness.md`                   | ✅                    |
 | 5               | Hooks Harness                            | `.agent/04_Extensions/hooks/05_Harness/`                        | ✅                    |

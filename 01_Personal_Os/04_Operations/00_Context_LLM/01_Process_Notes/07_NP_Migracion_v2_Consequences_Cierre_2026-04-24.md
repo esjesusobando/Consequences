@@ -31,14 +31,14 @@ Todos los documentos del backup estratégico actualizados a v2.0:
 
 ### 3. Auditor Scripts — COMPLETADO (FASE 6)
 **`03_Validator/80_Edge_Case_Validator.py`:**
-- `REQUIRED_DIRS`: `["01_Core", "04_Operations", "08_Scripts_Os"]` → `["01_Personal_Os", "00_Winter_is_Coming", "02_Playground"]`
-- `SCRIPTS_DIR`: `ENGINE_DIR / "08_Scripts_Os"` → `ENGINE_DIR` (config_paths ya resuelve correctamente)
+- `REQUIRED_DIRS`: `["01_Core", "04_Operations", "03_Scripts_Os"]` → `["01_Personal_Os", "00_Winter_is_Coming", "02_Playground"]`
+- `SCRIPTS_DIR`: `ENGINE_DIR / "03_Scripts_Os"` → `ENGINE_DIR` (config_paths ya resuelve correctamente)
 
 **`13_Auditors_Os/scripts/15_SOTA_Integrity_Check.py`** — 5 rutas corregidas:
 - skills: `01_Core/03_Skills` → `01_Personal_Os/01_Core/02_Tools/02_Skills`
 - agents: `01_Core/04_Agents` → `01_Personal_Os/01_Core/02_Tools/01_Agents`
 - hooks: `01_Core/07_Hooks` → `01_Personal_Os/01_Core/02_Tools/05_Hooks`
-- hubs: `08_Scripts_Os` → `01_Personal_Os/04_Operations/03_Scripts_Os`
+- hubs: `03_Scripts_Os` → `01_Personal_Os/04_Operations/03_Scripts_Os`
 - rules: `01_Core/01_Rules` → `01_Personal_Os/01_Core/01_Rules`
 
 ### 4. Claude Code — COMPLETADO

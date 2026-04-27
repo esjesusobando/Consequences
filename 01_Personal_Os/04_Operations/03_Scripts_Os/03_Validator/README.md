@@ -36,7 +36,7 @@ Scripts de validación para skills, código y seguridad. Validan integridad del 
 ## 📍 Ubicación
 
 ```
-08_Scripts_Os/03_Validator/
+03_Scripts_Os/03_Validator/
 ```
 
 ---

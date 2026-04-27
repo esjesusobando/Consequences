@@ -12,7 +12,7 @@ PersonalOS v6.1 se rige por una estructura jerárquica modular diseñada para la
 1.  **01_Core**: El cerebro del sistema. Contiene Workflows, Agentes (#01-13) y Skills (#01-18+).
 2.  **03_Tasks**: Dimensión dinámica. Es la **única fuente de verdad** para tareas, proyectos activos y rutinas.
 3.  **04_Operations**: Dimensión de memoria y procesos (Context Memory, Process Notes).
-4.  **08_Scripts_Os**: Automatizaciones y herramientas de auditoría.
+4.  **03_Scripts_Os**: Automatizaciones y herramientas de auditoría.
 
 ## ⚖️ Reglas de Oro (Protocolo AI-Prime)
 - **Plan-First**: Nunca ejecutar código complejo sin un plan aprobado. 
