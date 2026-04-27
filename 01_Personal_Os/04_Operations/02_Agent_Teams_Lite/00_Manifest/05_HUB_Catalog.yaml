@@ -7,7 +7,7 @@ totals:
   hubs: 19
   scripts_auxiliares: 4
   total_py: 23
-# Nota: slots 15 y 16 tienen variantes (a/b) por expansión JARVIS 3.0 — intencional
+# Nota: slots 15 y 16 tienen dos scripts cada uno por expansión JARVIS 3.0 — intencional
 hubs:
   - name: 00_Sound_Engine
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py
@@ -61,19 +61,19 @@ hubs:
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py
     description: Métricas de salud del OS
-  - name: 15a_Agent_Sync_Hub
+  - name: 15_Agent_Sync_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py
     description: Sincronización de agentes
-  - name: 15b_MCP_Sync_Hub
+  - name: 15_MCP_Sync_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
     description: Sincronización MCP Claude↔OpenCode — detecta drift
-  - name: 16a_Agent_Mirror_Hub
+  - name: 16_Agent_Mirror_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/16_Agent_Mirror_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/16_Agent_Mirror_Hub.py
     description: Mirror de agentes (54/54 sincronizados)
-  - name: 16b_System_Mapper_Hub
+  - name: 16_System_Mapper_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py --scan
     description: Regenera manifest JARVIS completo
