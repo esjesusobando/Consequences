@@ -1,8 +1,9 @@
-# INVENTARIO CORE — PersonalOS v2.0 Consequences
+# INVENTARIO CORE — PersonalOS v3.1 Consequences
 
-> **Fecha:** 2026-04-24
+> **Fecha:** 2026-04-28
 > **Path:** `01_Personal_Os/01_Core/`
-> **Estado:** ✅ OPERATIVO
+> **Versión:** v3.1 Consequences — JARVIS 3.1 Integrated
+> **Estado:** ✅ PURE GREEN
 
 ---
 
@@ -12,40 +13,43 @@
 01_Core/
 ├── README.md                     ← Índice central
 ├── INVENTARIO_CORE.md           ← Este archivo
-├── Requirements.txt              ← Dependencias
-├── 00_Workflows_Os/            ← 5 categorías de workflows
-├── 01_Rules/                   ← 10 archivos .mdc
+├── 00_Comandos_Workflows.md     ← Comandos y HUBs (v3.1)
+├── 01_Inventario_Total.md       ← Inventario completo del OS
+├── 02_Dream_Team.md             ← Estructura del equipo
+├── Requirements.txt              ← Dependencias Python
+├── 00_Workflows_Os/            ← 5 categorías de workflows (27+ archivos)
+├── 01_Rules/                   ← 11 archivos .mdc (00-10)
 └── 02_Tools/
     ├── README.md
-    ├── 01_Agents/             ← 35+ agents
-    ├── 02_Skills/             ← 100+ skills (9 áreas)
-    ├── 03_Mcp/                ← MCP servers
-    ├── 05_Hooks/              ← Hooks calidad
-    ├── 06_Plugins/            ← Plugins
+    ├── 01_Agents/             ← 52+ agents (Dream Team + Specialists + Growth)
+    ├── 02_Skills/             ← 299 skills (11 áreas activas)
+    ├── 03_Mcp/                ← MCP servers (backup de config)
+    ├── 05_Hooks/              ← Hooks calidad (Pre/Post/Lifecycle/Sound)
+    ├── 06_Plugins/            ← Plugins del OS
     ├── 07_Server/             ← Engram server
-    ├── 08_Evals/              ← Evaluations
+    ├── 08_Evals/              ← Evaluaciones
     └── 09_Templates/          ← Templates
 ```
 
 ---
 
-## WORKFLOWS — 25 archivos en 5 categorías
+## WORKFLOWS — 27+ archivos en 5 categorías
 
 ### 01_Personal_Os — Ritmos Core (11 workflows)
 
 | # | Workflow | Función |
 |:---:|:---------|:---------|
-| 01 | Morning_Standup.md | Daily planning |
-| 02 | Backlog_Processing.md | Triage inbox |
-| 03 | Content_Generation.md | Create content |
-| 04 | Weekly_Review.md | Strategic review |
-| 05 | Ritual_Cierre_Protocol.md | End of day |
-| 06 | Validar_Reglas.md | Rules validation |
-| 07 | System_Health_Audit.md | System check |
-| 08 | Context_Recovery.md | Recover context |
-| 09 | AI_Task_Template.md | Task template |
-| 10 | Classify_Task.md | Auto-classify |
-| 11 | AGENTS.md | Agent system |
+| 01 | Morning_Standup.md | Planificación diaria |
+| 02 | Backlog_Processing.md | Triage del inbox |
+| 03 | Content_Generation.md | Creación de contenido |
+| 04 | Weekly_Review.md | Revisión estratégica semanal |
+| 05 | Ritual_Cierre_Protocol.md | Cierre del día |
+| 06 | Validar_Reglas.md | Validación de reglas |
+| 07 | System_Health_Audit.md | Check del sistema |
+| 08 | Context_Recovery.md | Recuperación de contexto |
+| 09 | AI_Task_Template.md | Template de tarea IA |
+| 10 | Classify_Task.md | Auto-clasificación |
+| 11 | AGENTS.md | Sistema de agentes |
 
 ---
 
@@ -93,62 +97,77 @@
 
 ---
 
-## RULES — 10 archivos .mdc
+## RULES — 11 archivos .mdc
+
+**Ubicación:** `01_Personal_Os/01_Core/01_Rules/`
 
 | # | Rule | Propósito |
 |:---:|:-----|:----------|
-| 00 | Core_Protocol.mdc | Protocolo central |
-| 01 | Pilares_Sistema.mdc | 4 pilares OS |
+| 00 | Core_Protocol.mdc | Protocolo central del OS |
+| 01 | Pilares_Sistema.mdc | 4 pilares del sistema |
 | 02 | Motor_Agent.mdc | Motor agentic |
-| 03 | Protocolos_Ejecucion.mdc | Execution protocols |
-| 04 | Observabilidad.mdc | Logging y metrics |
-| 05 | Reporting.mdc | Reporting rules |
-| 06 | Contexto_Gestion.mdc | Context management |
-| 07 | Docs_Guias.mdc | Documentation |
-| 08 | Token_Economy.mdc | Token optimization |
-| 09 | Agent_Teams_Protocol.mdc | Multi-agent |
+| 03 | Protocolos_Ejecucion.mdc | Protocolos de ejecución |
+| 04 | Observabilidad.mdc | Logging y métricas |
+| 05 | Reporting.mdc | Reglas de reporte |
+| 06 | Contexto_Gestion.mdc | Gestión de contexto |
+| 07 | Docs_Guias.mdc | Guías de documentación |
+| 08 | Token_Economy.mdc | Optimización de tokens |
+| 09 | Agent_Teams_Protocol.mdc | Protocolo multi-agente |
+| 10 | Git_Directions.mdc | Flujo y reglas Git ← NUEVO v3.1 |
 
 ---
 
 ## TOOLS — ESTRUCTURA
 
-### 01_Agents (35+ agents)
+### 01_Agents (52+ agents)
 
-| Categoría | Agents |
-|:---------|:-------|
-| **Orchestrator** | 00_Orchestrator.md |
-| **Scope** | 01_Scope_Rule_Architect.md |
-| **Dream Team** | 01_Dream_Team/ (5 agents) |
-| **Specialists Compound** | 02_Specialists_Compound/ (23 agents) |
-| **Individuals** | TDD_Test_First, React_Test_Implementer, React_Mentor, Security_Auditor, Git_Workflow_Manager, Accessibility_Auditor, PRD_Dashboard_Template, Design_SOP_Document, AIPM_Judge, Carousel_Strategist |
+**Ubicación:** `01_Personal_Os/01_Core/02_Tools/01_Agents/`
 
----
-
-### 02_Skills — 9 ÁREAS FUNCIONALES
-
-| Área | Skills | Propósito |
-|:-----|:------:|:----------|
-| 00_Compound_Engineering | 1+ | SDD + Reviews |
-| 01_Creacion_Contenidos | 7 | Marketing, SEO, Video |
-| 02_Diseno_Ui_Ux | 3 | Design, Taste |
-| 03_Video_Media | 1 | James Cameron |
-| 04_Automatizacion | 4 | N8N, GWS |
-| 05_Workflows | 2 | Teams, PM |
-| 06_Tools | 1 | MCP Client |
-| 07_Personal_Os | 1 | Life OS |
-| 08_Invictus_Web | 1 | Superpowers |
+| Categoría | Agents | Detalles |
+|:---------|:-------|:---------|
+| **Orchestrator** | 1 | `00_Orchestrator.md` |
+| **Scope Architect** | 1 | `01_Scope_Rule_Architect.md` |
+| **Dream Team** | 5 | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform) |
+| **Specialists Compound** | 24 | `02_Specialists_Compound/` (review, architecture, framework, data, quality, security, research) |
+| **Growth** | N | `03_Growth/` |
+| **Contexto** | N | `04_Contexto/` |
+| **Marca** | N | `05_Marca/` |
+| **Plantillas** | N | `06_Plantillas/` |
+| **Individuales** | 12 | TDD, React Test, React Mentor, Security Auditor, Git Workflow Manager, Accessibility, PRD, Design SOP, AIPM Judge, Carousel, Workflow Orchestrator, LFG Autonomous, Hillary |
 
 ---
 
-### Personal Life OS — 18_Personal_Life_OS
+### 02_Skills — 11 ÁREAS ACTIVAS (299 skills)
+
+**Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+
+| Área | Propósito |
+|:-----|:----------|
+| 00_Compound_Engineering | Core CE — SDD + Reviews |
+| 00_Personal_Os_Stack | Stack base del OS + Gcierr |
+| 00_Skill_Auditor | Auditoría de skills |
+| 01_Creacion_Contenidos | Brand, YouTube, SEO, Carruseles |
+| 02_Diseno_Ui_Ux | Product Design, UI/UX, Taste, Minimal |
+| 03_Video_Media | Video Intel, James Cameron, Remotion, Audio |
+| 04_Automatizacion | N8N, Firecrawl |
+| 05_Workflows | Agent Teams, PM, Orchestrator |
+| 06_Tools | Skill Creator, Testing, DevOps, Data Analyst |
+| 07_Personal_Os | Life OS, Hillary, Rituales |
+| 08_Invictus_Web | Playwright, Superpowers, Browser Automation |
+
+> ℹ️ `09_Legacy_Archive` → archivado en `01_Personal_Os/05_Archive/` (no es área activa)
+
+---
+
+### Personal Life OS — 07_Personal_Os/
 
 | Skill | Trigger | Función |
 |:------|:--------|:---------|
-| Quick Capture | "capture", "quick add" | Capture ideas |
-| Plan My Day | "plan my day", "plan día" | Daily planning |
-| Daily Notes | "daily notes", "log this" | Activity log |
-| Recording Mode | "record", "transcribe" | Transcription |
-| Returns Tracker | "create skill from" | Pattern detection |
+| Quick Capture | "capture", "quick add" | Captura de ideas |
+| Plan My Day | "plan my day", "plan día" | Planificación diaria |
+| Daily Notes | "daily notes", "log this" | Log de actividades |
+| Recording Mode | "record", "transcribe" | Transcripción |
+| Returns Tracker | "create skill from" | Detección de patrones |
 
 ---
 
@@ -156,20 +175,20 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                      01_Core                                │
+│                        01_Core                              │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
 │  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐  │
-│  │   Workflows  │───▶│    Rules    │───▶│    Tools    │  │
-│  │  (25 files)  │    │  (10 .mdc)  │    │ (100+ skills)│  │
+│  │   Workflows  │───▶│    Rules     │───▶│    Tools     │  │
+│  │  (27+ files) │    │  (11 .mdc)   │    │ (299 skills) │  │
 │  └──────────────┘    └──────────────┘    └──────────────┘  │
 │         │                   │                   │          │
 │         │                   │                   │          │
 │         ▼                   ▼                   ▼          │
 │  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐  │
-│  │   Personal   │    │  Compound   │    │   Hillary   │  │
-│  │     OS        │    │  Engineering │    │   (Tasks)   │  │
-│  │  (11 wf)     │    │  (35+ agents)│    │  (Life OS)  │  │
+│  │   Personal   │    │  Compound    │    │   Hillary    │  │
+│  │     OS       │    │  Engineering │    │   (Tasks)    │  │
+│  │  (11 wf)     │    │  (52+ agents)│    │  (Life OS)   │  │
 │  └──────────────┘    └──────────────┘    └──────────────┘  │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
@@ -185,22 +204,28 @@
 | Compound Engineering | `05_Compound_Engineering/` + `02_Tools/01_Agents/02_Specialists_Compound/` |
 | Hillary | `04_Hillary/` + `03_Task/` (fuera de 01_Core) |
 | Sistema Recursivo | `07_System_Health_Audit.md` en workflows |
-| Learning Always | Integrada en todos los workflows |
+| Learning Always | Integrada en todos los workflows via Engram |
+| JARVIS 3.1 | `04_Operations/02_Agent_Teams_Lite/00_Manifest/` (7 manifests) |
 
 ---
 
-## RESUMEN 01_Core
+## RESUMEN 01_Core — v3.1
 
-| Componente | Cantidad |
-|:-----------|:---------|
-| Workflows Totales | 25 |
-| Rules (.mdc) | 10 |
-| Agents | 35+ |
-| Skills (áreas) | 9 |
-| Skills (Life OS) | 5 |
+| Componente | Cantidad | Delta vs v2.0 |
+|:-----------|:---------|:--------------|
+| Workflows Totales | 27+ | +2 |
+| Rules (.mdc) | 11 | +1 (10_Git_Directions) |
+| Agents | 52+ | +17 |
+| Agents Dream Team | 5 | = |
+| Agents Specialists | 24 | +1 |
+| Skills (áreas activas) | 11 | +2 |
+| Skills (count total) | 299 | +199 |
+| MCPs Claude Code | 35 | +2 |
+| HUBs Scripts | 23 | +9 |
+| JARVIS Manifests | 7 | NEW |
 
-**Estado: ✅ TODO INTEGRADO Y OPERATIVO**
+**Estado: ✅ PURE GREEN — PersonalOS v3.1 JARVIS Integrated**
 
 ---
 
-*Generated: 2026-04-24*
+*PersonalOS v3.1 Consequences — PURE GREEN | 2026-04-28*

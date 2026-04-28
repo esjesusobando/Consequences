@@ -1,161 +1,177 @@
-# PersonalOS v6.1 - Comandos y Workflows
+# PersonalOS v3.1 — Comandos y Workflows
 
-## 📋 Comandos Disponibles
-
-### Backlog Triage (pb / eb)
-| Comando                                                                        | Alias               | Descripción                                          |
-|--------------------------------------------------------------------------------|---------------------|------------------------------------------------------|
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/09_Backlog_Triage.py`                       | **pb**              | Preview - ver tareas sin crear                       |
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/09_Backlog_Triage.py --execute`             | **eb**              | Execute - crear tareas y limpiar backlog             |
-
-### Morning Standup
-| Comando                                                                       | Alias               | Descripción               |
-|-------------------------------------------------------------------------------|---------------------|---------------------------|
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py`                     |---------------------| Full standup              |
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py --tasks`             |---------------------| Solo tareas               |
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py --goals`             |---------------------| Solo goals                |
-
-### Weekly Review
-| Comando                                                                      | Alias               | Descripción                       |
-|------------------------------------------------------------------------------|---------------------|-----------------------------------|
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py`                      |---------------------| Full review (4 pasos)             |
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py --quick`              |---------------------| Quick (5 min)                     |
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py --step 1`             |---------------------| Completed                         |
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py --step 2`             |---------------------| Goals                             |
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py --step 3`             |---------------------| Blockers                          |
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py --step 4`             |---------------------| Plan next                         |
-
-### Content Generation (✍️)
-| Comando                                                                                           | Alias               | Descripción                  |
-|---------------------------------------------------------------------------------------------------|---------------------|------------------------------|
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/18_Generacion_Contenido.py`                                    |---------------------| Modo interactivo             |
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/18_Generacion_Contenido.py --blog --topic "X"`                 |---------------------| Blog post                    |
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/18_Generacion_Contenido.py --linkedin --topic "X"`             |---------------------| LinkedIn                     |
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/18_Generacion_Contenido.py --email --topic "X"`                |---------------------| Email                        |
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/18_Generacion_Contenido.py --twitter --topic "X"`              |---------------------| Twitter thread               |
+> **Versión:** v3.1 Consequences | **Actualizado:** 2026-04-28 | **Estado:** ✅ OPERATIVO
 
 ---
 
-## 📖 Origen / Referencia
+## 🚀 HUBs PRINCIPALES (Punto de Entrada)
 
-Basado en: `05_Archive/10_Repos_Gentleman/personal-os-main/examples/workflows/`
+Los scripts individuales migraron a HUBs centralizados. Usar siempre los HUBs como punto de entrada.
 
-| Workflow Original                 | Script Actual                          |
-|-----------------------------------|----------------------------------------|
-| morning-standup.md                | 14_Morning_Standup.py                  |
-| weekly-review.md                  | 15_Weekly_Review.py                    |
-| backlog-processing.md             | 09_Backlog_Triage.py                   |
-| content-generation.md             | 18_Generacion_Contenido.py             | ✅ Actualizado |
+**Ruta base:** `01_Personal_Os/04_Operations/03_Scripts_Os/`
+
+| HUB | Script | Propósito |
+|-----|--------|-----------|
+| **Sound Engine** | `00_Sound_Engine.py` | Notificaciones sonoras |
+| **Auditor** | `01_Auditor_Hub.py` | Validación del sistema |
+| **Git** | `02_Git_Hub.py` | Operaciones Git |
+| **AIPM** | `03_AIPM_Hub.py` | AI Performance Monitoring |
+| **Ritual** | `04_Ritual_Hub.py` | Rituales (morning, cierre, weekly) |
+| **Validator** | `05_Validator_Hub.py` | Validación de código |
+| **Tool** | `06_Tool_Hub.py` | Integración de tools |
+| **Integration** | `07_Integration_Hub.py` | MCP e integraciones externas |
+| **Workflow** | `08_Workflow_Hub.py` | Automatización de workflows |
+| **Data** | `09_Data_Hub.py` | Procesamiento de datos |
+| **General** | `10_General_Hub.py` | Utilidades generales |
+| **Auto Learn** | `11_Auto_Learn_Hub.py` | Motor de auto-mejora |
+| **Health Metrics** | `14_Health_Metrics_Hub.py` | Métricas de salud del OS |
+| **MCP Sync** | `15_MCP_Sync_Hub.py` | Drift entre Claude Code y OpenCode |
+| **Agent Mirror** | `16_Agent_Mirror_Hub.py` | Sincroniza agents source → backup |
+| **Watchdog** | `17_Watchdog_Hub.py` | Health watchdog — integridad del manifest |
+| **Telemetry** | `18_Telemetry_Hub.py` | Dashboard ASCII de métricas por HUB |
+| **Agent Sync** | `19_Agent_Sync_Hub.py` | Sincroniza .agent/ con 01_Core/02_Tools/01_Agents/ |
+| **System Mapper** | `20_System_Mapper_Hub.py` | Genera 7 manifests del OS |
+| **Legacy Cleanup** | `21_Legacy_Path_Cleanup.py` | Limpia paths legacy de Consequences 2.x |
+| **Skill Frontmatter** | `22_Validate_Skill_Frontmatter.py` | Detecta skills sin frontmatter YAML |
+
+### Scripts Auxiliares (13_Auditors_Os/scripts/)
+
+| Script | Propósito |
+|--------|-----------|
+| `12_Context_Usage_Bar.py` | Barra de uso de contexto |
+| `13_Beautify_Tables.py` | Formateo de tablas markdown |
+| `15_SOTA_Integrity_Check.py` | Verificación integridad SOTA |
+| `16_Carousel_Engine.py` | Motor de carruseles |
+
+---
+
+## 📋 Comandos por Workflow
+
+### Morning Standup
+```bash
+python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --morning
+```
+
+### Backlog Triage
+```bash
+python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --backlog
+python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --backlog --execute
+```
+
+### Weekly Review
+```bash
+python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --weekly
+python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --weekly --quick
+```
+
+### Ritual Cierre
+```bash
+python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --cierre
+```
+
+### Auditoría del Sistema
+```bash
+python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py --apply
+```
+
+### Git Operations
+```bash
+python 01_Personal_Os/04_Operations/03_Scripts_Os/02_Git_Hub.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/02_Git_Hub.py --audit
+```
+
+### Health & Telemetry
+```bash
+python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard
+python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py
+```
+
+### MCP & Agent Sync
+```bash
+python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
+python 01_Personal_Os/04_Operations/03_Scripts_Os/16_Agent_Mirror_Hub.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
+```
+
+### System Manifest (JARVIS)
+```bash
+python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan
+```
 
 ---
 
 ## 🔧 Aliases (agregados a ~/.bashrc)
 
 ```bash
-alias pb="python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/09_Backlog_Triage.py"
-alias eb="python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/09_Backlog_Triage.py --execute"
+alias gr="python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py"
+alias audit="python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py"
+alias gr-apply="python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py --apply"
+alias git-hub="python 01_Personal_Os/04_Operations/03_Scripts_Os/02_Git_Hub.py"
+alias aipm="python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM_Hub.py"
+alias ritual="python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py"
+alias validate="python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator_Hub.py"
 ```
 
 ---
 
-## ✅ Estado de Documentación
+## 📚 Skills PersonalOS (01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/)
 
-| Repo Original                     | Script Actual                          | Estado                    |
-|-----------------------------------|----------------------------------------|---------------------------|
-| morning-standup.md                | 14_Morning_Standup.py                  | ✅ Actualizado             |
-| weekly-review.md                  | 15_Weekly_Review.py                    | ✅ Actualizado             |
-| backlog-processing.md             | 09_Backlog_Triage.py                   | ✅ Actualizado             |
-| content-generation.md             | 18_Generacion_Contenido.py             | ✅ Actualizado             |
-
-### Scripts en Ritual_Fixed/:
-- 08_Ritual_Cierre.py
-- 09_Backlog_Triage.py ✅
-- 11_Sync_Notes.py
-- 12_Update_Links.py
-- 13_Validate_Stack.py
-- 14_Morning_Standup.py ✅
-- 15_Weekly_Review.py ✅
-- 16_Clean_System.py
-- 17_Ritual_Dominical.py
-- 19_Generate_Progress.py
-- 50_System_Health_Monitor.py
-- 57_Repo_Sync_Auditor.py
+| # | Skill | Propósito |
+|---|-------|-----------|
+| 10 | Morning_Standup | Planificación diaria |
+| 11 | Weekly_Review | Revisión estratégica semanal |
+| 12 | Ritual_Cierre | Cierre de sesión de trabajo |
+| 13 | Sync_Notes | Sincronización de notas |
+| 14 | Validate_Stack | Validación del stack técnico |
+| 15 | Update_Links | Actualización de links |
+| 16 | Clean_System | Limpieza del sistema |
+| 17 | Ritual_Dominical | Revisión dominical |
+| 18 | Repo_Sync | Sincronización de repos |
 
 ---
 
-## 🛠️ Herramientas del Tool Shed
+## 📖 Scripts Legacy (solo referencia)
 
-### Tool Shed — Auto-detector de Contexto
+> ⚠️ **LEGACY** — Estos scripts están archivados en `03_Scripts_Os/10_Legacy/`. No usar directamente. Usar los HUBs.
 
-| Comando                                                       | Descripción                                                   |
-|---------------------------------------------------------------|---------------------------------------------------------------|
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Tool_Fixed/62_Tool_Shed.py`             | Detecta contexto actual y sugiere MCPs relevantes             |
-
-**Features:**
-- Auto-detección de framework (React, Angular, Next.js, etc.)
-- Sugerencia de skills según contexto
-- Detección de archivos y patrones
-
-### Skill Harmonizer — Validador de Skills
-
-| Comando                                                              | Descripción                                                      |
-|----------------------------------------------------------------------|------------------------------------------------------------------|
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Tool_Fixed/63_Skill_Harmonizer.py`             | Valida paridad entre skills disponibles y ejecutados             |
-
-**Features:**
-- 20/20 categorías pasando
-- Verifica que cada skill tenga ejecutable + SKILL.md
-- Reporte de coverage
-
-### Notifier — Sistema de Notificaciones
-
-| Comando                                                      | Descripción                                      |
-|--------------------------------------------------------------|--------------------------------------------------|
-| `python 01_Personal_Os/04_Operations/03_Scripts_Os/Tool_Fixed/00_Notifier.py`             | Reproduce sonido al completar tareas             |
-
-**Uso en scripts:**
-```python
-import sys
-sys.path.insert(0, '01_Personal_Os/04_Operations/03_Scripts_Os/Tool_Fixed')
-from 00_Notifier import play_complete
-play_complete()
-```
+| Script Legacy | HUB Equivalente |
+|---------------|-----------------|
+| `09_Backlog_Triage.py` | `04_Ritual_Hub.py --backlog` |
+| `14_Morning_Standup.py` | `04_Ritual_Hub.py --morning` |
+| `15_Weekly_Review.py` | `04_Ritual_Hub.py --weekly` |
+| `08_Ritual_Cierre.py` | `04_Ritual_Hub.py --cierre` |
+| `17_Ritual_Dominical.py` | `04_Ritual_Hub.py --dominical` |
 
 ---
 
-## ✅ Estado de Scripts (Ritual_Fixed)
+## 📖 Origen / Referencia
 
-| Script                                  | Estado                    | Notas                      |
-|-----------------------------------------|---------------------------|----------------------------|
-| 08_Ritual_Cierre.py                     | ✅ Funcionando             | sys.path fixed             |
-| 09_Backlog_Triage.py                    | ✅ Funcionando             | Alias: pb/eb               |
-| 11_Sync_Notes.py                        | ✅ Funcionando             |----------------------------|
-| 12_Update_Links.py                      | ✅ Funcionando             |----------------------------|
-| 13_Validate_Stack.py                    | ✅ Funcionando             |----------------------------|
-| 14_Morning_Standup.py                   | ✅ Funcionando             |----------------------------|
-| 15_Weekly_Review.py                     | ✅ Funcionando             |----------------------------|
-| 16_Clean_System.py                      | ✅ Funcionando             |----------------------------|
-| 17_Ritual_Dominical.py                  | ✅ Funcionando             |----------------------------|
-| 19_Generate_Progress.py                 | ✅ Funcionando             |----------------------------|
-| 50_System_Health_Monitor.py             | ✅ Funcionando             |----------------------------|
-| 57_Repo_Sync_Auditor.py                 | ✅ Funcionando             |----------------------------|
+Basado en: `01_Personal_Os/05_Archive/07_Repos_Gentleman/personal-os-main/examples/workflows/`
+
+| Workflow Original | Script v3.1 |
+|-------------------|-------------|
+| morning-standup.md | `04_Ritual_Hub.py --morning` |
+| weekly-review.md | `04_Ritual_Hub.py --weekly` |
+| backlog-processing.md | `04_Ritual_Hub.py --backlog` |
+| content-generation.md | `08_Workflow_Hub.py --content` |
 
 ---
 
-## 📚 Skills PersonalOS (01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/)
+## ✅ Estado de Scripts
 
-| #               | Skill                        | Script Asociado                     |
-|-----------------|------------------------------|-------------------------------------|
-| 10              | Morning_Standup              | 14_Morning_Standup.py               |
-| 11              | Weekly_Review                | 15_Weekly_Review.py                 |
-| 12              | Ritual_Cierre                | 08_Ritual_Cierre.py                 |
-| 13              | Sync_Notes                   | 11_Sync_Notes.py                    |
-| 14              | Validate_Stack               | 13_Validate_Stack.py                |
-| 15              | Update_Links                 | 12_Update_Links.py                  |
-| 16              | Clean_System                 | 16_Clean_System.py                  |
-| 17              | Ritual_Dominical             | 17_Ritual_Dominical.py              |
-| 18              | Repo_Sync                    | 57_Repo_Sync_Auditor.py             |
+| Script | Estado | Notas |
+|--------|--------|-------|
+| 04_Ritual_Hub.py | ✅ Activo | Punto de entrada para todos los rituales |
+| 01_Auditor_Hub.py | ✅ Activo | Auditor principal |
+| 02_Git_Hub.py | ✅ Activo | Git operations |
+| 03_AIPM_Hub.py | ✅ Activo | Performance monitoring |
+| 17_Watchdog_Hub.py | ✅ Activo | Health watchdog |
+| 18_Telemetry_Hub.py | ✅ Activo | Dashboard de métricas |
+| 20_System_Mapper_Hub.py | ✅ Activo | Genera manifests JARVIS |
+| 10_Legacy/*.py | ⚠️ Archivados | Referencia histórica — usar HUBs |
 
 ---
 
-*Generado: 2026-03-29 | Actualizado con Tool Shed + Skills v6.1*
+*PersonalOS v3.1 Consequences — Actualizado 2026-04-28*

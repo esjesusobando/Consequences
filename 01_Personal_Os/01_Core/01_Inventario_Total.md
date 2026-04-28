@@ -1,8 +1,8 @@
-# 📦 INVENTARIO TOTAL — PersonalOS v2.0 Consequences
+# 📦 INVENTARIO TOTAL — PersonalOS v3.1 Consequences
 
-> **Fecha:** 2026-04-24
-> **Versión:** v2.0 Consequences
-> **Estado:** ✅ OPERATIVO — Documento de referencia principal
+> **Fecha:** 2026-04-28
+> **Versión:** v3.1 Consequences — JARVIS 3.1 Integrated
+> **Estado:** ✅ PURE GREEN — Documento de referencia principal
 
 ---
 
@@ -10,51 +10,61 @@
 
 | Componente | Cantidad | Estado |
 |:-----------|:--------:|:------:|
-| Workflows | 25 | ✅ |
-| Rules (.mdc) | 10 | ✅ |
-| Agents | 35+ | ✅ |
-| Skills (áreas) | 9 | ✅ |
-| Skills (Life OS) | 5 | ✅ |
-| Skills (Compound Eng) | 35+ | ✅ |
-| MCPs | 33 | ✅ |
-| Scripts (HUBs) | 14 | ✅ |
+| Versión OS | v3.1 Consequences | ✅ |
+| Workflows | 27+ | ✅ |
+| Rules (.mdc) | 11 | ✅ |
+| Agents | 52+ | ✅ |
+| Dream Team | 5 | ✅ |
+| Specialists | 24 | ✅ |
+| Skills (áreas activas) | 11 | ✅ |
+| Skills (count total) | 299 | ✅ |
+| MCPs (Claude Code) | 35 | ✅ |
+| Scripts (HUBs) | 23 | ✅ |
+| HUBs principales | 19 | ✅ |
+| Scripts auxiliares | 4 | ✅ |
+| Manifests JARVIS | 7 | ✅ |
 | Sistema Recursivo | 4+ engines | ✅ |
 
 ---
 
-## ESTRUCTURA PRINCIPAL v2.0
+## ESTRUCTURA PRINCIPAL v3.1
 
 ```
 Think_Different/
-├── 00_Winter_is_Coming/           ← AGENTS.md, Goals, Memory
+├── 00_Winter_is_Coming/           ← AGENTS.md, Goals, Backlog, Memory
 ├── 01_Personal_Os/
 │   ├── 01_Core/
-│   │   ├── 00_Workflows_Os/      ← 25 workflows en 5 categorías
-│   │   ├── 01_Rules/              ← 10 .mdc
+│   │   ├── 00_Workflows_Os/      ← 27+ workflows en 5 categorías
+│   │   ├── 01_Rules/              ← 11 .mdc (00-10)
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/          ← 35+ agents
-│   │       ├── 02_Skills/          ← 100+ skills
-│   │       ├── 03_Mcp/            ← MCP servers
-│   │       ├── 05_Hooks/          ← Hooks
+│   │       ├── 01_Agents/          ← 52+ agents (Dream Team + Specialists + Growth)
+│   │       ├── 02_Skills/          ← 299 skills en 11 áreas activas
+│   │       ├── 03_Mcp/            ← MCP servers (35 Claude / 18 OpenCode)
+│   │       ├── 05_Hooks/          ← Hooks (Pre/Post/Lifecycle/Sound/Harness)
 │   │       ├── 06_Plugins/        ← Plugins
-│   │       ├── 07_Server/          ← Engram
+│   │       ├── 07_Server/          ← Engram server
+│   │       ├── 08_Evals/          ← Evaluaciones
 │   │       └── 09_Templates/       ← Templates
 │   ├── 02_Knowledge/
-│   │   └── 01_Research/           ← SOTA, MCP Catalog, Inventarios
+│   │   └── 02_Research/           ← SOTA, MCP Catalog, Inventarios
 │   ├── 03_Task/                   ← Hillary (Inbox, Templates)
-│   └── 04_Operations/
-│       ├── 01_Auto_Improvement/   ← Sistema Recursivo
-│       ├── 02_Agent_Teams_Lite/   ← SDD workflows
-│       └── 03_Scripts_Os/          ← 14 HUBs
+│   ├── 04_Operations/
+│   │   ├── 00_Context_LLM/        ← Memoria, notas, knowledge brain
+│   │   ├── 01_Auto_Improvement/   ← Sistema Recursivo
+│   │   ├── 02_Agent_Teams_Lite/   ← SDD workflows + 7 manifests JARVIS
+│   │   ├── 03_Scripts_Os/          ← 23 scripts (19 HUBs + 4 auxiliares)
+│   │   ├── 04_Installer/          ← Scripts de instalación
+│   │   └── 05_Projects/           ← Proyectos activos
+│   └── 05_Archive/               ← Legacy + repos + snapshots
 ├── 02_Playground/
 └── 03_Resultado/
 ```
 
 ---
 
-## WORKFLOWS — 25 archivos en 5 categorías
+## WORKFLOWS — 27+ archivos en 5 categorías
 
-### 00_Workflows_Os/01_Personal_Os (11 workflows core)
+### 00_Workflows_Os/01_Personal_Os (core)
 
 | # | Workflow | Función |
 |:---:|:---------|:---------|
@@ -72,7 +82,7 @@ Think_Different/
 
 ---
 
-### 00_Workflows_Os/02_Marvel (8 Avengers workflows)
+### 00_Workflows_Os/02_Marvel (Avengers)
 
 | # | Workflow | Función |
 |:---:|:---------|:---------|
@@ -87,7 +97,7 @@ Think_Different/
 
 ---
 
-### 00_Workflows_Os/03_Gentleman (2 workflows)
+### 00_Workflows_Os/03_Gentleman
 
 | # | Workflow | Función |
 |:---:|:---------|:---------|
@@ -96,7 +106,7 @@ Think_Different/
 
 ---
 
-### 00_Workflows_Os/04_Hillary (2 workflows)
+### 00_Workflows_Os/04_Hillary
 
 | # | Workflow | Función |
 |:---:|:---------|:---------|
@@ -105,7 +115,7 @@ Think_Different/
 
 ---
 
-### 00_Workflows_Os/05_Compound_Engineering (4 workflows)
+### 00_Workflows_Os/05_Compound_Engineering
 
 | # | Workflow | Función |
 |:---:|:---------|:---------|
@@ -116,110 +126,111 @@ Think_Different/
 
 ---
 
-## RULES — 10 archivos .mdc
+## RULES — 11 archivos .mdc
 
 **Ubicación:** `01_Personal_Os/01_Core/01_Rules/`
 
 | # | Rule | Propósito |
 |:---:|:-----|:---------|
-| 00 | Core_Protocol.mdc | Protocolo central |
-| 01 | Pilares_Sistema.mdc | 4 pilares OS |
+| 00 | Core_Protocol.mdc | Protocolo central del OS |
+| 01 | Pilares_Sistema.mdc | 4 pilares del sistema |
 | 02 | Motor_Agent.mdc | Motor agentic |
-| 03 | Protocolos_Ejecucion.mdc | Execution protocols |
-| 04 | Observabilidad.mdc | Logging y metrics |
-| 05 | Reporting.mdc | Reporting rules |
-| 06 | Contexto_Gestion.mdc | Context management |
-| 07 | Docs_Guias.mdc | Documentation |
-| 08 | Token_Economy.mdc | Token optimization |
-| 09 | Agent_Teams_Protocol.mdc | Multi-agent protocol |
+| 03 | Protocolos_Ejecucion.mdc | Protocolos de ejecución |
+| 04 | Observabilidad.mdc | Logging y métricas |
+| 05 | Reporting.mdc | Reglas de reporte |
+| 06 | Contexto_Gestion.mdc | Gestión de contexto |
+| 07 | Docs_Guias.mdc | Documentación |
+| 08 | Token_Economy.mdc | Optimización de tokens |
+| 09 | Agent_Teams_Protocol.mdc | Protocolo multi-agente |
+| 10 | Git_Directions.mdc | Reglas y flujo Git ← NUEVO v3.1 |
 
 ---
 
-## AGENTS — 35+ agents
+## AGENTS — 52+ agents
 
 **Ubicación:** `01_Personal_Os/01_Core/02_Tools/01_Agents/`
 
-| Categoría | Agents |
-|:---------|:-------|
-| **Orchestrator** | 00_Orchestrator.md |
-| **Scope** | 01_Scope_Rule_Architect.md |
-| **Dream Team** | 01_Dream_Team/ (5 agents) |
-| **Specialists Compound** | 02_Specialists_Compound/ (23 agents) |
-| **Individuals** | TDD_Test_First, React_Test_Implementer, React_Mentor, Security_Auditor, Git_Workflow_Manager, Accessibility_Auditor, PRD_Dashboard_Template, Design_SOP_Document, AIPM_Judge, Carousel_Strategist |
+| Categoría | Agents | Ubicación |
+|:---------|:-------|:----------|
+| **Orchestrator** | 00_Orchestrator.md | Raíz de Agents |
+| **Scope Architect** | 01_Scope_Rule_Architect.md | Raíz de Agents |
+| **Dream Team** | 5 agents | `01_Dream_Team/` |
+| **Specialists Compound** | 24 agents | `02_Specialists_Compound/` |
+| **Growth** | N agents | `03_Growth/` |
+| **Contexto** | N agents | `04_Contexto/` |
+| **Marca** | N agents | `05_Marca/` |
+| **Plantillas** | N agents | `06_Plantillas/` |
+| **Individuales** | 12 agents | TDD, React, Security, Git, Accessibility, PRD, Design, AIPM, Carousel, Workflow, LFG, Hillary |
 
 ---
 
-### Specialists Compound (23 Agents)
+### Dream Team (5 Agents — `01_Dream_Team/`)
+
+| Jugador | Posición | Especialidad |
+|:----------|:----------:|:------------|
+| 01_Product_Builder | Delantero | PRD, Planning, React, TypeScript |
+| 02_Data_Engineer | Centrocampista | Python, Supabase, CSV, Analytics |
+| 03_Marketing_Tech | Extremo | Marketing, SEO, Firecrawl |
+| 04_Design_Ops | Lateral | Diseño, Vercel, Playwright |
+| 05_Platform_Engineer | Portero | DevOps, System, MCP Client |
+
+---
+
+### Specialists Compound (24 Agents — `02_Specialists_Compound/`)
 
 | Tipo | Agents |
 |:-----|:-------|
-| **Code Review** | correctness-reviewer, security-reviewer, performance-reviewer, code-simplicity-reviewer, maintainability-reviewer |
-| **Architecture** | pattern-recognition-specialist, architecture-strategist |
-| **Framework** | kieran-typescript-reviewer, kieran-python-reviewer, kieran-rails-reviewer, dhh-rails-reviewer, julik-frontend-races-reviewer |
-| **Data** | data-integrity-guardian, data-migrations-reviewer, schema-drift-detector |
-| **Quality** | testing-reviewer, reliability-reviewer, api-contract-reviewer, deployment-verification-agent |
+| **Code Review** | correctness, security, performance, simplicity, maintainability |
+| **Architecture** | pattern-recognition, architecture-strategist |
+| **Framework** | kieran-typescript, kieran-python, kieran-rails, dhh-rails, julik-frontend |
+| **Data** | data-integrity, data-migrations, schema-drift |
+| **Quality** | testing, reliability, api-contract, deployment-verification |
 | **Security** | security-sentinel |
-| **Research** | best-practices-researcher, framework-docs-researcher, git-history-analyzer, issue-intelligence-analyst, learnings-researcher, repo-research-analyst |
-| **Design** | design-implementation-reviewer, design-iterator, figma-design-sync |
-| **Doc Review** | coherence-reviewer, design-lens-reviewer, feasibility-reviewer, product-lens-reviewer, scope-guardian-reviewer, security-lens-reviewer |
+| **Research** | best-practices, framework-docs, git-history, issue-intelligence, learnings, repo-research |
 
 ---
 
-## SKILLS — 100+ en 9 áreas
+## SKILLS — 299 en 11 áreas activas
 
 **Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
-| Área | Path | Skills | Propósito |
-|:-----|:-----|:------:|:----------|
-| 00_Compound_Engineering | `00_Compound_Engineering/` | 1 | SDD + Reviews |
-| 01_Creacion_Contenidos | `01_Creacion_Contenidos/` | 7 | Marketing, SEO |
-| 02_Diseno_Ui_Ux | `02_Diseno_Ui_Ux/` | 3 | Design, Taste |
-| 03_Video_Media | `03_Video_Media/` | 1 | James Cameron |
-| 04_Automatizacion | `04_Automatizacion/` | 4 | N8N, GWS |
-| 05_Workflows | `05_Workflows/` | 2 | Teams, PM |
-| 06_Tools | `06_Tools/` | 1 | MCP Client |
-| 07_Personal_Os | `07_Personal_Os/` | 1 | Life OS |
-| 08_Invictus_Web | `08_Invictus_Web/` | 1 | Superpowers |
-| 09_Legacy_Archive | `09_Legacy_Archive/` | 0 | - |
+| Área | Propósito |
+|:-----|:----------|
+| 00_Compound_Engineering | Core CE — SDD + Reviews |
+| 00_Personal_Os_Stack | Stack base del OS |
+| 00_Skill_Auditor | Auditoría de skills |
+| 01_Creacion_Contenidos | Marketing, SEO, Carruseles, YouTube |
+| 02_Diseno_Ui_Ux | Product Design, UI/UX, Taste, Minimal |
+| 03_Video_Media | Video Intel, James Cameron, Remotion, Audio |
+| 04_Automatizacion | N8N, Firecrawl |
+| 05_Workflows | Agent Teams, PM, Orchestrator |
+| 06_Tools | Skill Creator, Testing, DevOps, Data Analyst |
+| 07_Personal_Os | Life OS, Hillary, Rituales |
+| 08_Invictus_Web | Playwright, Superpowers, Browser Automation |
+
+> ℹ️ `09_Legacy_Archive` → movido a `01_Personal_Os/05_Archive/` (no es un área activa)
 
 ---
 
-### Skills SDD (Spec-Driven Development)
-
-| Skill | Función |
-|:------|:-------|
-| sdd-explore | Explore |
-| sdd-propose | Propose |
-| sdd-spec | Spec |
-| sdd-design | Design |
-| sdd-tasks | Tasks |
-| sdd-apply | Implement |
-| sdd-verify | Verify |
-| sdd-archive | Archive |
-
----
-
-### Life OS Skills (5)
-
-**Ubicación:** `07_Personal_Os/01_Life_OS/18_Personal_Life_OS/`
+### Life OS Skills (07_Personal_Os/)
 
 | Skill | Trigger | Función |
 |:------|:--------|:---------|
-| Quick Capture | "capture", "quick add" | Capture ideas |
-| Plan My Day | "plan my day", "plan día" | Daily planning |
-| Daily Notes | "daily notes", "log this" | Activity log |
-| Recording Mode | "record", "transcribe" | Transcription |
-| Returns Tracker | "create skill from" | Pattern detection |
+| Quick Capture | "capture", "quick add" | Captura de ideas |
+| Plan My Day | "plan my day", "plan día" | Planificación diaria |
+| Daily Notes | "daily notes", "log this" | Log de actividades |
+| Recording Mode | "record", "transcribe" | Transcripción |
+| Returns Tracker | "create skill from" | Detección de patrones |
 
 ---
 
-## MCPs — 33 servers
+## MCPs — 35 Claude Code / 18 OpenCode
 
 **Ubicación:** `.mcp.json` (raíz)
 
 | Categoría | Count | Ejemplos |
 |:---------|:-----:|:--------|
-| Knowledge | 5 | context7, memories |
+| Knowledge | 5 | context7, memories, engram |
 | Dev | 8 | github, gitlab, filesystem |
 | Scraping | 3 | firecrawl, puppeteer |
 | Notes | 3 | evernote, onenote |
@@ -228,30 +239,56 @@ Think_Different/
 | Data | 2 | postgres, mysql |
 | Security | 2 | stealth-dev, vault |
 | Testing | 1 | playwright-mcp |
-| Tools | 2 | magicui-design |
+| Tools | 4 | magicui-design, figma, gamma |
 
 ---
 
-## SCRIPTS — 14 HUBs + utilities
+## SCRIPTS — 23 (19 HUBs + 4 auxiliares)
 
 **Ubicación:** `01_Personal_Os/04_Operations/03_Scripts_Os/`
 
-| HUB | Función |
-|:---|:---------|
-| 00_Sound_Engine.py | Sound notifications |
-| 01_Auditor_Hub.py | Audit orchestration |
-| 02_Git_Hub.py | Git operations |
-| 03_AIPM_Hub.py | AI PM operations |
-| 04_Ritual_Hub.py | Rituals execution |
-| 05_Validator_Hub.py | Validation orchestration |
-| 06_Tool_Hub.py | Tool management |
-| 07_Integration_Hub.py | Integration management |
-| 08_Workflow_Hub.py | Workflow execution |
-| 09_Data_Hub.py | Data operations |
-| 10_General_Hub.py | General utilities |
-| 11_Auto_Learn_Hub.py | Auto-learning |
-| 03_Validator/ | Validators encapsulados |
-| 13_Auditors_Os/ | Auditor utilities |
+| HUB | Script | Función |
+|:---|:--------|:---------|
+| Sound Engine | `00_Sound_Engine.py` | Notificaciones sonoras |
+| Auditor | `01_Auditor_Hub.py` | Validación del sistema |
+| Git | `02_Git_Hub.py` | Git operations |
+| AIPM | `03_AIPM_Hub.py` | AI Performance Monitoring |
+| Ritual | `04_Ritual_Hub.py` | Rituales (morning, cierre, weekly) |
+| Validator | `05_Validator_Hub.py` | Validación de código |
+| Tool | `06_Tool_Hub.py` | Integración de tools |
+| Integration | `07_Integration_Hub.py` | MCP e integraciones |
+| Workflow | `08_Workflow_Hub.py` | Automatización de workflows |
+| Data | `09_Data_Hub.py` | Procesamiento de datos |
+| General | `10_General_Hub.py` | Utilidades generales |
+| Auto Learn | `11_Auto_Learn_Hub.py` | Motor de auto-aprendizaje |
+| Health Metrics | `14_Health_Metrics_Hub.py` | Métricas de salud |
+| MCP Sync | `15_MCP_Sync_Hub.py` | Drift MCP detection |
+| Agent Mirror | `16_Agent_Mirror_Hub.py` | Sync agents source → backup |
+| Watchdog | `17_Watchdog_Hub.py` | Health watchdog |
+| Telemetry | `18_Telemetry_Hub.py` | Dashboard ASCII métricas |
+| Agent Sync | `19_Agent_Sync_Hub.py` | Sync .agent/ ↔ 01_Core/ |
+| System Mapper | `20_System_Mapper_Hub.py` | Genera 7 manifests JARVIS |
+| **Auxiliares** | `13_Auditors_Os/scripts/` | |
+| Context Bar | `12_Context_Usage_Bar.py` | Uso de contexto |
+| Beautify | `13_Beautify_Tables.py` | Formateo de tablas |
+| SOTA Check | `15_SOTA_Integrity_Check.py` | Integridad SOTA |
+| Carousel | `16_Carousel_Engine.py` | Motor de carruseles |
+
+---
+
+## MANIFESTS JARVIS — 7 archivos
+
+**Ubicación:** `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/`
+
+| Manifest | Contenido |
+|:---------|:----------|
+| `01_OS_Inventory.json` | Inventario completo del OS |
+| `02_MCP_Registry.yaml` | 35 MCPs Claude / 18 OpenCode |
+| `03_Agent_Catalog.yaml` | 52+ agentes |
+| `04_Skill_Index.json` | 299 skills |
+| `05_HUB_Catalog.yaml` | 23 scripts |
+| `06_Workflow_Graph.yaml` | Workflows |
+| `07_Hook_Registry.yaml` | 10 hooks |
 
 ---
 
@@ -259,10 +296,8 @@ Think_Different/
 
 **Ubicación:** `01_Personal_Os/04_Operations/01_Auto_Improvement/`
 
-### Arquitectura
-
 ```
-01_Auto_Improvement/01_Auto_Improvement/
+01_Auto_Improvement/
 ├── 01_Engine/
 │   ├── detector.py
 │   ├── analyzer.py
@@ -277,14 +312,10 @@ Think_Different/
 │   ├── manual_trigger.py
 │   └── cron_trigger.py
 └── 99_Utils/
-    └── [12+ utilities]
+    └── [utilities]
 ```
 
-### Ciclo Recursivo
-
-```
-Detect → Analyze → Execute → Learn (repite hasta max_iterations)
-```
+**Ciclo:** `Detect → Analyze → Execute → Learn (repite hasta max_iterations)`
 
 ---
 
@@ -292,25 +323,11 @@ Detect → Analyze → Execute → Learn (repite hasta max_iterations)
 
 **Ubicación:** `01_Personal_Os/03_Task/`
 
-### Estructura
-
 | Carpeta | Contenido |
 |:--------|:----------|
-| 00_Templates/ | 6 templates (SOTA, Medio, Corto, Routine, Skeleton, Process Note) |
+| 00_Templates/ | Templates (SOTA, Medio, Corto, Routine, Skeleton) |
 | 01_Tasks_Done/ | Tareas completadas |
 | 02_Hillary_Inbox/ | Inbox activo |
-
----
-
-### Templates
-
-| Template | Uso | Duración |
-|:---------|:---|:---------|
-| SOTA | Problema complejo | +3 días |
-| Medio | Feature normal | 1-3 días |
-| Corto | Quick fix | <1 día |
-| Routine | Proceso repetitivo | Daily |
-| Skeleton | Blank start | Cualquiera |
 
 ---
 
@@ -318,12 +335,12 @@ Detect → Analyze → Execute → Learn (repite hasta max_iterations)
 
 | # | Metodología | Skills | Workflows | Agents | Ubicación |
 |:---:|:------------|:------:|:---------:|:------:|:----------|
-| 1 | Personal OS | 6 | 11 | - | 01_Core/00_Workflows_Os/01_* |
-| 2 | Marvel | - | 8 | - | 01_Core/00_Workflows_Os/02_* |
-| 3 | Gentleman | 6 | 2 | - | 01_Core/00_Workflows_Os/03_* + Archive |
-| 4 | Hillary | 2 | 2 | - | 01_Core/00_Workflows_Os/04_* + 03_Task/ |
-| 5 | Compound Eng | 35+ | 4 | 35+ | 01_Core/00_Workflows_Os/05_* + 02_Tools/ |
-| 6 | Sistema Recursivo | - | 1 | - | 04_Operations/01_Auto_Improvement/ |
+| 1 | Personal OS | 6 | 11 | - | `01_Core/00_Workflows_Os/01_*` |
+| 2 | Marvel | - | 8 | - | `01_Core/00_Workflows_Os/02_*` |
+| 3 | Gentleman | 6 | 2 | - | `01_Core/00_Workflows_Os/03_*` |
+| 4 | Hillary | 2 | 2 | - | `01_Core/00_Workflows_Os/04_*` + `03_Task/` |
+| 5 | Compound Eng | 35+ | 4 | 52+ | `01_Core/00_Workflows_Os/05_*` + `02_Tools/` |
+| 6 | Sistema Recursivo | - | 1 | - | `04_Operations/01_Auto_Improvement/` |
 
 ---
 
@@ -334,9 +351,12 @@ Detect → Analyze → Execute → Learn (repite hasta max_iterations)
 | AGENTS.md principal | `00_Winter_is_Coming/AGENTS.md` |
 | Dream Team | `01_Personal_Os/01_Core/02_Dream_Team.md` |
 | Inventario Core | `01_Personal_Os/01_Core/INVENTARIO_CORE.md` |
-| Inventario Integrado | `01_Personal_Os/02_Knowledge/01_Research/04_INVENTARIO_INTEGRADO_SISTEMAS.md` |
-| SOTA 2026 Research | `01_Personal_Os/02_Knowledge/01_Research/01_SOTA_2026_Research.md` |
-| MCP Catalog | `01_Personal_Os/04_Operations/03_Scripts_Os/04_MCP_CATALOG.md` |
+| OS Directory | `OS_DIRECTORY.md` (raíz — JARVIS discovery) |
+| CLAUDE.md | `CLAUDE.md` (raíz — config IA) |
+| README.md | `README.md` (raíz — documentación principal) |
+| Rules Index | `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md` |
+| Skills Index | `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md` |
+| SDD Registry | `.atl/skill-registry.md` |
 
 ---
 
@@ -344,11 +364,11 @@ Detect → Analyze → Execute → Learn (repite hasta max_iterations)
 
 | Fecha | Versión | Cambio |
 |:------|:--------|:-------|
-| 2026-04-24 | **v2.0** | Estructura v2.0 Consequences |
-| 2026-04-20 | v6.3 Beta | Script Migration v2 |
-| 2026-04-20 | v6.2 Beta | Script Encapsulation |
-| 2026-04-17 | v6.1 | Auditoría y blindaje |
+| 2026-04-28 | **v3.1** | Actualización JARVIS 3.1 — 11 áreas, 11 rules, 52+ agents, 23 HUBs |
+| 2026-04-25 | v3.0 | Plan Consequences 3.0 JARVIS Integration |
+| 2026-04-24 | v2.0 | Estructura v2.0 Consequences |
+| 2026-04-20 | v1.x | Script Migration |
 
 ---
 
-**PersonalOS v2.0 Consequences — 2026-04-24**
+**PersonalOS v3.1 Consequences — PURE GREEN | 2026-04-28**

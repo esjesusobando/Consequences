@@ -474,7 +474,7 @@ Code review con IA.
 
 ---
 
-## 6. MCP SERVERS — Active (36 Servers)
+## 6. MCP SERVERS — Active (34 Servers)
 
 Configured in `.mcp.json`:
 
@@ -490,7 +490,27 @@ Configured in `.mcp.json`:
 | 💬 Communication | fireflies, slack |
 | 📐 Design | excalidraw-yctimlin, pencil |
 | 🛠️ DevOps | docker, sentry |
-| 🎨 Others | magicuidesign, eagle-mcp, filesystem, TestSprite, google-workspace |
+| 🎨 Others | magicuidesign, eagle-mcp, filesystem, sequential-thinking |
+| 🧩 Chain | **Playwright** (browser) → **Sequential Thinking** (analysis) → **Context7** (research) — **USAR SIEMPRE ESTA COMBINACIÓN** |
+
+---
+
+> ⚠️ **RULE IMPERATIVA — MCP CHAIN PARA TAREAS COMPLEJAS:**
+>
+> Cuando enfrentes bugs, features, o problemas técnicos que requieren investigación + prueba:
+>
+> ```
+> 1. Playwright → Navegar sitios, capturar screenshots, verificar UI real
+> 2. Sequential Thinking → Analizar el problema paso a paso con pensamiento encadenado
+> 3. Context7 → Investigar código, documentación, mejores prácticas
+> ```
+>
+> **Esta cadena es la combinación oficial para resolver TODO.** Cada MCP potencia al siguiente:
+> - Playwright abre el mundo real (páginas, apps, browsers)
+> - Sequential Thinking estructura el análisis y encadena soluciones
+> - Context7 trae conocimiento de la comunidad y documentación actualizada
+>
+> **El orden es importante: Playwright primero para ver lo real, luego Sequential Thinking para pensar, luego Context7 para investigar.**
 
 ---
 
