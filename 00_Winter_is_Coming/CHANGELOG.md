@@ -23,15 +23,22 @@
 - 49 agentes en `01_Core/02_Tools/01_Agents/`
 - Hooks `04_Sound/notification.py` y `task-complete-sound.ps1` — existen
 
+- **Git reparado**: 52 tags corruptas eliminadas (SHAs de otro repo copiados por backup) — git gc, fsck y reflog 100% limpios
+- **gitignore corregido**: ruta `Side_Project_Backup` actualizada de `07_Projects/` → `01_Personal_Os/04_Operations/05_Projects/` (ruta Consequences v3.0 real)
+- **Repo embebido resuelto**: `03_Side_Project_Backup` (Obandrilling_calculator) removido del índice del OS — tiene su propio repo independiente, ahora correctamente ignorado
+
 ### Ground Truth (2026-04-27)
 
 | Componente | Valor verificado |
 |-----------|-----------------|
-| HUBs scripts | 19 numerados (00-18) + 5 aux (19-23) |
+| HUBs scripts | 22 scripts (00-22) sin duplicados |
 | SubagentStop | ✅ Wired |
 | Skills frontmatter | 298 válidas / 0 inválidas |
 | GGA pre-commit | ✅ Activo |
 | Secret scanner | ✅ Activo |
+| git fsck | ✅ Limpio |
+| git reflog | ✅ Limpio |
+| Working tree | ✅ Clean (nothing to commit) |
 
 ---
 
