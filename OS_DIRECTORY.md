@@ -1,17 +1,17 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v3.1 Consequences** | 2026-04-27
+**v3.1 Consequences** | 2026-04-28
 
 ## ¿Qué hay aquí?
 
 | Componente | Total | Manifest |
 |-----------|-------|---------|
-| MCPs Claude Code | 35 | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/02_MCP_Registry.yaml` |
-| Skills | 297+ (13 áreas) | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/04_Skill_Index.json` |
-| Agentes | 52 | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/03_Agent_Catalog.yaml` |
+| MCPs Claude Code | 33 | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/02_MCP_Registry.yaml` |
+| Skills | 299+ (12 áreas) | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/04_Skill_Index.json` |
+| Agentes | 52+ | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/03_Agent_Catalog.yaml` |
 | HUBs | 19 (23 scripts totales) | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/05_HUB_Catalog.yaml` / `03_Scripts_Os/HUB_CATALOG.md` |
-| Workflows | 28 | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/06_Workflow_Graph.yaml` |
-| Hooks | 10 | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/07_Hook_Registry.yaml` |
+| Workflows | 28+ | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/06_Workflow_Graph.yaml` |
+| Hooks | 10+ | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/07_Hook_Registry.yaml` |
 | Rules | 10 | `01_Personal_Os/01_Core/01_Rules/` |
 
 > Manifest base: `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/`

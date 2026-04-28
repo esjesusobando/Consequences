@@ -5,22 +5,22 @@
 [![Status](https://img.shields.io/badge/Status-PURE%20GREEN-00FF00)]()
 [![OS](https://img.shields.io/badge/Think%20Different-OS--3.1-7B68EE)]()
 
-> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 165+ skills SOTA, metodologías integradas y automatización completa.
+> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 299+ skills SOTA, metodologías integradas y automatización completa.
 
 ---
 
-## 📊 Estado del Sistema (v3.1 - 2026-04-27)
+## 📊 Estado del Sistema (v3.1 - 2026-04-28)
 
 > 🟢 **PURE GREEN** - Pure Green - Estructura Consequences v3.1
 
 | Métrica                                             | Valor                                        |
 |-----------------------------------------------------|----------------------------------------------|
 | **Overall Health**                                  | **100%** 🟢                                 |
-| **Skills**                                          | 297+ (13 áreas funcionales)                  |
+| **Skills**                                          | 299+ (12 áreas funcionales)                  |
 | **Rules**                                           | 10 (.mdc)                                   |
-| **MCPs**                                            | 35 Claude Code / 18 OpenCode                 |
+| **MCPs**                                            | 33 Claude Code                              |
 | **HUBs**                                            | 19 operativos (+ 4 auxiliares)              |
-| **Agentes**                                         | 52 (source) + 52 mirror                     |
+| **Agentes**                                         | 52+ (Dream Team + Specialists)              |
 
 ---
 
