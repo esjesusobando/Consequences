@@ -9,34 +9,25 @@
 ## Bugs a Resolver (en orden de ejecución)
 
 ### 1. SubagentStop — NO configurado 🔴
-- **Qué:** `SubagentStop` está documentado en el sistema pero no está wired en `.claude/settings.json`
-- **Dónde:** `.claude/settings.json` → sección `hooks`
-- **Fix:** Verificar si existe script en `.agent/04_Extensions/hooks/03_Lifecycle/subagent_stop.py` y agregar la entrada en settings.json
-- **Estado:** [ ] Pendiente
+- **Estado:** [x] ✅ RESUELTO 2026-04-27 — Wired en `.claude/settings.json`
 
 ### 2. Hooks sin wirear (5/8) 🔴
-- **Qué:** Los hooks `04_Sound`, `05_Harness`, `06_Post_Hulk_Compound` están documentados pero no configurados en settings.json
-- **Dónde:** `.agent/04_Extensions/hooks/` + `.claude/settings.json`
-- **Fix:** Auditar qué scripts existen, cuáles están wired, cuáles faltan → wirear los faltantes
-- **Estado:** [ ] Pendiente
+- **Estado:** [x] ✅ RESUELTO 2026-04-27
+- Solo existen 4 hooks reales: PreToolUse, PostToolUse, Stop, SubagentStop — todos wired
+- `04_Sound/notification.py` existe pero es un helper, no requiere wiring en settings.json
 
 ### 3. Skills sin frontmatter YAML (32 detectadas) 🟠
-- **Qué:** 32 archivos SKILL.md sin bloque frontmatter YAML válido — el `18_Validate_Skill_Frontmatter.py` los detectó
-- **Dónde:** `01_Personal_Os/01_Core/02_Tools/02_Skills/` (13 áreas)
-- **Fix:** Correr `18_Validate_Skill_Frontmatter.py` para obtener lista exacta → agregar frontmatter a cada SKILL.md
-- **Estado:** [ ] Pendiente
+- **Estado:** [x] ✅ YA ESTABA RESUELTO — `22_Validate_Skill_Frontmatter.py` reporta 298 válidas / 0 inválidas
 
 ### 4. Pre-commit hook detectar API keys 🟡
-- **Qué:** Hook de pre-commit que detecte API keys hardcodeadas en archivos staged antes de commitear
-- **Dónde:** `.git/hooks/pre-commit` o via GGA
-- **Fix:** Crear script de detección + instalar como pre-commit hook via GGA
-- **Estado:** [ ] Pendiente
+- **Estado:** [x] ✅ YA EXISTÍA — `secret_scanner.py` activo en `.git/hooks/pre-commit` (verificado 2026-04-27)
 
 ### 5. GGA — Verificar instalación real 🟡
-- **Qué:** Confirmar que GGA está instalado como git hook real (no solo documentado)
-- **Dónde:** `.agent/05_GGA/` + `.git/hooks/pre-commit`
-- **Fix:** Correr `.agent/05_GGA/bin/gga install` si no está activo
-- **Estado:** [ ] Pendiente
+- **Estado:** [x] ✅ ACTIVO — `.git/hooks/pre-commit` instalado y funcional
+
+### 6. Numeración HUBs duplicada 🔴 (nuevo — detectado en sesión)
+- **Estado:** [x] ✅ RESUELTO 2026-04-27
+- Renumerados: Agent_Sync→19, System_Mapper→20, Legacy_Cleanup→21, Validate_Frontmatter→22, Preview_Generator→23
 
 ---
 

@@ -1,5 +1,40 @@
 # Changelog
 
+## 3.2.0 - 2026-04-27
+
+### Fixed — Bug Fix Session (desviaciones CHANGELOG v1.9.0)
+
+- **SubagentStop wired**: Agregado hook `SubagentStop` a `.claude/settings.json` apuntando a `subagent_stop.py` — estaba documentado pero no configurado desde v1.9.0
+- **Numeración HUBs deduplicada**: Scripts 15/16/17/18 tenían duplicados de numeración tras integración JARVIS 3.0. Renumerados:
+  - `15_Agent_Sync_Hub.py` → `19_Agent_Sync_Hub.py`
+  - `16_System_Mapper_Hub.py` → `20_System_Mapper_Hub.py`
+  - `17_Legacy_Path_Cleanup.py` → `21_Legacy_Path_Cleanup.py`
+  - `18_Validate_Skill_Frontmatter.py` → `22_Validate_Skill_Frontmatter.py`
+  - `17_Preview_Generator.js` → `23_Preview_Generator.js`
+- **CLAUDE.md inventario actualizado**: Tabla de HUBs expandida a 15-23 con todos los scripts reales
+- **Skills frontmatter**: Verificado — 298 skills con frontmatter, 0 sin frontmatter (ya resuelto)
+- **GGA pre-commit**: Verificado instalado y activo en `.git/hooks/pre-commit` con secret scanner
+- **Secret scanner**: Verificado en `01_Core/02_Tools/05_Hooks/01_Pre_Tool/secret_scanner.py` (P2 BACKLOG resuelto)
+
+### Verified OK (no action needed)
+
+- 7 manifests JARVIS en `02_Agent_Teams_Lite/00_Manifest/` — todos presentes
+- 10 reglas `.mdc` en `01_Core/01_Rules/` — completas (+ 1 .md extra)
+- 49 agentes en `01_Core/02_Tools/01_Agents/`
+- Hooks `04_Sound/notification.py` y `task-complete-sound.ps1` — existen
+
+### Ground Truth (2026-04-27)
+
+| Componente | Valor verificado |
+|-----------|-----------------|
+| HUBs scripts | 19 numerados (00-18) + 5 aux (19-23) |
+| SubagentStop | ✅ Wired |
+| Skills frontmatter | 298 válidas / 0 inválidas |
+| GGA pre-commit | ✅ Activo |
+| Secret scanner | ✅ Activo |
+
+---
+
 ## 2.0.0 - 2026-04-25
 
 ### Added — Consequences 3.0 JARVIS Integration

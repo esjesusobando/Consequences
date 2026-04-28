@@ -226,6 +226,15 @@ Think_Different/
 | **Context Bar**    | `13_Auditors_Os/scripts/12_Context_Usage_Bar.py` | Barra de uso de contexto (sub-script de 13_Auditors_Os) |
 | **Beautify**       | `13_Auditors_Os/scripts/13_Beautify_Tables.py`   | Formateo de tablas markdown (sub-script de 13_Auditors_Os) |
 | **Health Metrics** | `14_Health_Metrics_Hub.py`  | Métricas de salud del OS                              |
+| **MCP Sync**       | `15_MCP_Sync_Hub.py`        | Detecta y reporta drift entre Claude Code y OpenCode  |
+| **Agent Mirror**   | `16_Agent_Mirror_Hub.py`    | Sincroniza agentes source → backup                    |
+| **Watchdog**       | `17_Watchdog_Hub.py`        | Health watchdog — valida integridad del manifest      |
+| **Telemetry**      | `18_Telemetry_Hub.py`       | Dashboard ASCII de métricas de uso por HUB            |
+| **Agent Sync**     | `19_Agent_Sync_Hub.py`      | Sincroniza .agent/01_Agents/ con 01_Core/02_Tools/01_Agents/ |
+| **System Mapper**  | `20_System_Mapper_Hub.py`   | Genera 7 manifests del OS via os.walk                 |
+| **Legacy Cleanup** | `21_Legacy_Path_Cleanup.py` | Escanea y limpia paths legacy de Consequences 2.x     |
+| **Skill Frontmatter** | `22_Validate_Skill_Frontmatter.py` | Detecta skills sin frontmatter YAML            |
+| **Preview Gen**    | `23_Preview_Generator.js`   | Generador de previews                                 |
 
 ### 📚 Documentación del Sistema
 
