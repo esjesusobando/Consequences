@@ -50,23 +50,23 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 
 ---
 
-## 🎯 Skills Disponibles (9 áreas funcionales)
+## 🎯 Skills Disponibles (11 áreas activas — 299 skills)
 
 ### Por Categoría (`01_Personal_Os/01_Core/02_Tools/02_Skills/`)
 
 | Categoría                 | Contenido                              | Estado     |
 |---------------------------|----------------------------------------|------------|
-| 00_Compound_Engineering   | Core CE                                | ✅          |
-| 00_Personal_Os_Stack      | Stack base OS                          | ✅          |
-| 00_Skill_Auditor          | Auditor                                | ✅          |
-| 01_Creacion_Contenidos    | Contenido + SEO + Carousel             | ✅          |
-| 02_Diseno_Ui_Ux           | Diseño UI/UX                           | ✅          |
-| 03_Video_Media            | Video + James Cameron                  | ✅          |
-| 04_Automatizacion         | Automatización                         | ✅          |
-| 05_Workflows              | Workflows + Agent Teams Lite           | ✅          |
-| 06_Tools                  | Tools + System Master + Data Analyst   | ✅          |
-| 07_Personal_Os            | Skills OS personal                     | ✅          |
-| 08_Invictus_Web           | Web development                        | ✅          |
+| 00_Compound_Engineering   | Core CE — SDD + Reviews                | ✅          |
+| 00_Personal_Os_Stack      | Stack base OS + Gcierr                 | ✅          |
+| 00_Skill_Auditor          | Auditoría y validación de skills       | ✅          |
+| 01_Creacion_Contenidos    | Brand, YouTube, SEO, Carruseles        | ✅          |
+| 02_Diseno_Ui_Ux           | Product Design, UI/UX, Taste, Minimal  | ✅          |
+| 03_Video_Media            | Video Intel, James Cameron, Remotion   | ✅          |
+| 04_Automatizacion         | N8N, Firecrawl                         | ✅          |
+| 05_Workflows              | Agent Teams, PM, Orchestrator          | ✅          |
+| 06_Tools                  | Skill Creator, Testing, DevOps, Data   | ✅          |
+| 07_Personal_Os            | Life OS, Hillary, Rituales             | ✅          |
+| 08_Invictus_Web           | Playwright, Superpowers, Browser Auto  | ✅          |
 
 ### TASTE-SKILLS (PRIORIDAD ALTA PARA FRONTEND)
 
@@ -87,7 +87,7 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 - **Rules:** See `01_Personal_Os/01_Core/01_Rules/` for active rules (10 .mdc)
 - **Skills:** See `01_Personal_Os/01_Core/02_Tools/02_Skills/` for all skills
 - **CLAUDE.md:** See `./CLAUDE.md` for agent instructions
-- **Scripts:** See `01_Personal_Os/04_Operations/03_Scripts_Os/` for 14 HUBs
+- **Scripts:** See `01_Personal_Os/04_Operations/03_Scripts_Os/` for 23 scripts (19 HUBs + 4 auxiliares)
 
 ---
 
@@ -102,4 +102,4 @@ Code Review con IA integrado.
 
 ---
 
-*Última actualización: 2026-04-24 | PersonalOS v2.0 Consequences | 9 áreas funcionales ✅*
+*Última actualización: 2026-04-28 | PersonalOS v3.1 Consequences | 11 áreas activas | 299 skills | 23 scripts ✅*

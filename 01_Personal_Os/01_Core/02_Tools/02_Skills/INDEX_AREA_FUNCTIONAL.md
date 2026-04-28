@@ -121,12 +121,8 @@
 
 ---
 
-## ÁREA 09: LEGACY ARCHIVE
-
-| Skill | Path | Descripción |
-|-------|------|-------------|
-| **Legacy Skills** | `09_Legacy_Archive/` | Skills obsoletas de v1.x — solo referencia |
-
 ---
 
-*PersonalOS v3.1 Consequences — 2026-04-28 | 9 áreas funcionales | 14 subcategorías activas*
+> ℹ️ **Legacy Archive** → movido a `01_Personal_Os/05_Archive/09_Legacy_Skills_Archive/` (no es área activa de skills)
+
+*PersonalOS v3.1 Consequences — 2026-04-28 | 11 áreas activas | Skills count: 299*
