@@ -1,4 +1,4 @@
----
+﻿---
 name: executing-plans
 description: Ejecuta un plan de acción previamente escrito, manteniendo la trazabilidad y el orden. Triggers on: execute plan, run plan, implement plan, follow plan, batch execution.
 ---
@@ -38,7 +38,7 @@ description: Ejecuta un plan de acción previamente escrito, manteniendo la traz
 ## 💾 State Persistence
 
 Seguimiento de ejecución en:
-- `03_Tasks/` — Tasks en progreso
+- `03_Task/` — Tasks en progreso
 - Checkpoint reports entre batches
 
 # Executing Plans
@@ -123,3 +123,4 @@ After all tasks complete and verified:
 - Reference skills when plan says to
 - Between batches: just report and wait
 - Stop when blocked, don't guess
+

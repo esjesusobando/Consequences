@@ -1,6 +1,6 @@
----
+﻿---
 description: PILAR 07: Estándares de Observabilidad, CoT y Eficiencia para el Desarrollo de Agentes (AIPM-Grade)
-globs: ["01_Core/04_Agents/**/*.md", ".claude/04_Agents/*.md", "08_Scripts_Os/**/*.py"]
+globs: ["01_Personal_Os/01_Core/02_Tools/01_Agents/**/*.md", ".claude/04_Agents/*.md", "01_Personal_Os/04_Operations/03_Scripts_Os/**/*.py"]
 alwaysApply: true
 ---
 
@@ -25,8 +25,8 @@ Think_Different/
 ├── 04_Operations/       # Memoria y Procesos
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
-├── 07_Projects/        
-├── 08_Scripts_Os/       # Scripts operativos
+├── 01_Personal_Os/04_Operations/05_Projects/        
+├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
 └── Maerks/             
 ```
 
@@ -120,3 +120,4 @@ Think_Different/
 ---
 
 Remember: Tomamos decisiones intencionadas. El razonamiento es tan importante como el resultado.
+

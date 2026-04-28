@@ -1,4 +1,4 @@
-# Receta: Auditoría SEO y de Contenido
+﻿# Receta: Auditoría SEO y de Contenido
 
 Este escenario permite delegar la auditoría SEO y de contenido de una página web a un agente aislado, evitando que el chat principal se sature con reportes técnicos extensos.
 
@@ -31,7 +31,7 @@ Usar `fork_terminal` para lanzar el agente de marketing.
 **Sintaxis:**
 
 ```bash
-python 01_Core/03_Skills/fork-terminal/tools/fork_terminal.py "python 01_Core/03_Skills/fork-terminal/05_Examples/marketing_agent_demo.py"
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/tools/fork_terminal.py "python 01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/05_Examples/marketing_agent_demo.py"
 ```
 
 ### 3. Ejemplo de Prompt para el Usuario
@@ -51,3 +51,4 @@ Puedes modificar `marketing_agent_demo.py` para incluir llamadas a APIs reales c
 ---
 
 **Nota:** Esta receta utiliza un script de demostración (`marketing_agent_demo.py`) que simula el proceso. Para uso en producción, reemplaza la simulación con lógica real de scraping y análisis.
+

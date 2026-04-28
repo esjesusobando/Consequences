@@ -1,4 +1,4 @@
----
+﻿---
 description: Gentleman Programming Framework Integration
 globs: **/*
 alwaysApply: true
@@ -25,8 +25,8 @@ Think_Different/
 ├── 04_Operations/       # Memoria y Procesos
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
-├── 07_Projects/        
-├── 08_Scripts_Os/       # Scripts operativos
+├── 01_Personal_Os/04_Operations/05_Projects/        
+├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
 └── Maerks/             
 ```
 
@@ -35,9 +35,10 @@ Think_Different/
 ## ✅ Requisitos del Framework
 <requirements>
 
-1. **Cargar Contexto**: Cargar contexto de `01_Core/04_Agents/` y `01_Core/03_Skills/`
+1. **Cargar Contexto**: Cargar contexto de `01_Personal_Os/01_Core/02_Tools/01_Agents/` y `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 2. **Utilizar Orquestador**: Usar `10_Workflow_Orchestrator.md` para flujos TDD complejos
 3. **Validar con GGA**: Validar todos los cambios de código usando GGA (pre-commit hook)
 4. **Memoria Persistente**: Utilizar Engram MCP para memoria persistente
 
 </requirements>
+

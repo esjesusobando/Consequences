@@ -1,4 +1,4 @@
----
+﻿---
 name: generate_command
 description: Create a new custom slash command following conventions and best practices
 argument-hint: "[command purpose and requirements]"
@@ -7,7 +7,7 @@ disable-model-invocation: true
 
 # Create a Custom Claude Code Command
 
-Create a new skill in `01_Core/03_Skills/` for the requested task.
+Create a new skill in `01_Personal_Os/01_Core/02_Tools/02_Skills/` for the requested task.
 
 ## Goal
 
@@ -128,7 +128,7 @@ Implement #$ARGUMENTS following these steps:
 
 ## Creating the Command File
 
-1. **Create the directory** at `01_Core/03_Skills/[name]/SKILL.md`
+1. **Create the directory** at `01_Personal_Os/01_Core/02_Tools/02_Skills/[name]/SKILL.md`
 2. **Start with YAML frontmatter** (see section above)
 3. **Structure the skill** using the template above
 4. **Test the skill** by using it with appropriate arguments
@@ -161,3 +161,4 @@ Details about what to do.
 - [ ] Expected outcome 1
 - [ ] Expected outcome 2
 ```
+

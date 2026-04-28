@@ -1,4 +1,4 @@
----
+﻿---
 name: "personal-os"
 description: "Activar el modo Think Different PersonalOS - Sistema completo de productividad con goals, backlog, tareas y workflows"
 ---
@@ -15,10 +15,10 @@ El PersonalOS tiene la siguiente estructura:
 ├── 00_Winter_is_Coming/    # Goals, Backlog, Agentes
 ├── 01_Core/               # Skills, Agents, Evals, MCP, Server
 ├── 02_Knowledge/          # Base de conocimiento
-├── 03_Tasks/              # Tareas activas (YAML frontmatter)
+├── 03_Task/              # Tareas activas (YAML frontmatter)
 ├── 04_Operations/         # Memoria, Brain, Notas
 ├── 05_Archive/           # Archive: Repos, legacy
-├── 07_Projects/          # Proyectos
+├── 01_Personal_Os/04_Operations/05_Projects/          # Proyectos
 └── 03_Scripts_Os/        # HUBs: Auditor, Git, AIPM, Ritual
 ```
 
@@ -78,3 +78,4 @@ Al iniciar una nueva sesión:
 1. NO actuar sin plan aprobado
 2. Enumeración correcta de archivos (XX_Nombre.ext)
 3. Corrección de errores - documentar antes de actuar
+

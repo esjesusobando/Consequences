@@ -1,4 +1,4 @@
----
+﻿---
 description: PILAR 05: Integración de comandos de barra diagonal (slash commands) de Claude Code en PersonalOS
 globs: 03_Tasks/**/*, **/*.md, .agent/workflows/*.md, .agent/workflows/*/*.md
 alwaysApply: true
@@ -25,8 +25,8 @@ Think_Different/
 ├── 04_Operations/       # Memoria y Procesos
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
-├── 07_Projects/        
-├── 08_Scripts_Os/       # Scripts operativos
+├── 01_Personal_Os/04_Operations/05_Projects/        
+├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
 └── Maerks/             
 ```
 
@@ -109,3 +109,4 @@ Think_Different/
 ---
 
 Remember: Claude Code no reemplaza a PersonalOS; lo vitamina. Los comandos se usan para ejecutar, el sistema se usa para orquestar y recordar.
+

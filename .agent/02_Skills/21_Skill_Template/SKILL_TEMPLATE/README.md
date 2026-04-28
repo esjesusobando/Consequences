@@ -1,4 +1,4 @@
-# Skill Template
+﻿# Skill Template
 
 Plantilla oficial para crear nuevas skills en PersonalOS.
 
@@ -6,10 +6,10 @@ Plantilla oficial para crear nuevas skills en PersonalOS.
 
 ```bash
 # Copiar el template
-cp -r 01_Core/03_Skills/SKILL_TEMPLATE/ 01_Core/03_Skills/NN_Nueva_Skill/
+cp -r 01_Personal_Os/01_Core/02_Tools/02_Skills/SKILL_TEMPLATE/ 01_Personal_Os/01_Core/02_Tools/02_Skills/NN_Nueva_Skill/
 
 # Renombrar y personalizar
-cd 01_Core/03_Skills/NN_Nueva_Skill/
+cd 01_Personal_Os/01_Core/02_Tools/02_Skills/NN_Nueva_Skill/
 mv SKILL.md NN_Nueva_Skill.md
 ```
 
@@ -47,3 +47,4 @@ python 03_Scripts_Os\Validator_Fixed\34_Skill_Auditor.py --skill 01_Core\03_Skil
 ---
 
 **Versión:** 2.0 (2026-03-30)
+

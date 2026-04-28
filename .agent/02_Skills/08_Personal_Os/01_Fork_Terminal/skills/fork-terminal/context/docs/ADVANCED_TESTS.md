@@ -1,4 +1,4 @@
-# Pruebas Avanzadas - Fork Terminal Skill
+﻿# Pruebas Avanzadas - Fork Terminal Skill
 
 ## 🎯 Objetivo
 
@@ -11,7 +11,7 @@ Validar la arquitectura de **Orquestación de Agentes con Aislamiento de Context
 **Comando:**
 
 ```bash
-python 01_Core/03_Skills/fork-terminal/tools/fork_terminal.py "echo TEST && pause"
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/tools/fork_terminal.py "echo TEST && pause"
 ```
 
 **Resultado:** Terminal forked exitosamente, comando ejecutado.
@@ -27,7 +27,7 @@ python 01_Core/03_Skills/fork-terminal/tools/fork_terminal.py "echo TEST && paus
 **Comando:**
 
 ```bash
-python 01_Core/03_Skills/fork-terminal/tools/fork_terminal.py "python 01_Core/03_Skills/fork-terminal/tools/demo_agent.py Revisar arquitectura del skill"
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/tools/fork_terminal.py "python 01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/tools/demo_agent.py Revisar arquitectura del skill"
 ```
 
 **Características:**
@@ -49,7 +49,7 @@ python 01_Core/03_Skills/fork-terminal/tools/fork_terminal.py "python 01_Core/03
 **Comando:**
 
 ```bash
-python 01_Core/03_Skills/fork-terminal/tools/fork_terminal.py "python 01_Core/03_Skills/fork-terminal/tools/orchestration_demo.py"
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/tools/fork_terminal.py "python 01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/tools/orchestration_demo.py"
 ```
 
 **Características:**
@@ -72,7 +72,7 @@ python 01_Core/03_Skills/fork-terminal/tools/fork_terminal.py "python 01_Core/03
 **Comando:**
 
 ```bash
-python 01_Core/03_Skills/fork-terminal/tools/fork_terminal.py "python 01_Core/03_Skills/fork-terminal/tools/claude_fork_demo.py"
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/tools/fork_terminal.py "python 01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/tools/claude_fork_demo.py"
 ```
 
 **Características:**
@@ -195,3 +195,4 @@ El Fork Terminal Skill está listo para:
 **Fecha de validación:** 2026-01-17
 **Plataforma:** Windows 11
 **Estado:** ✅ Todas las pruebas pasadas
+

@@ -1,4 +1,4 @@
----
+﻿---
 name: video-intel
 description: >
   Extrae conocimiento estructurado de videos de YouTube y repositorios de GitHub.
@@ -15,7 +15,7 @@ metadata:
 
 ## Estado
 
-Skill en PRODUCCION. Ubicacion: `01_Core/03_Skills/19_Video_Intel/`
+Skill en PRODUCCION. Ubicacion: `01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/`
 
 ## Engram Integration
 
@@ -91,13 +91,13 @@ Aprendizajes migran a la **Unicorn Engineering knowledge base** en `02_Knowledge
 
 ```bash
 # Analizar video
-python 01_Core/03_Skills/19_Video_Intel/scripts/cli.py analyze "https://www.youtube.com/watch?v=..."
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/scripts/cli.py analyze "https://www.youtube.com/watch?v=..."
 
 # Con repositorio
-python 01_Core/03_Skills/19_Video_Intel/scripts/cli.py analyze "VIDEO_URL" --repo "https://github.com/user/repo"
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/scripts/cli.py analyze "VIDEO_URL" --repo "https://github.com/user/repo"
 
 # Salida JSON
-python 01_Core/03_Skills/19_Video_Intel/scripts/cli.py analyze "VIDEO_URL" --format json -o plan.json
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/scripts/cli.py analyze "VIDEO_URL" --format json -o plan.json
 ```
 
 ### Como Modulo Python
@@ -179,3 +179,4 @@ tiktoken>=0.7.0
 - Categoria: 19_ provisional - evaluar si va a 11_Doc_Processing
 - Output en markdown generado en raíz del proyecto como `implementation_plan.md`
 - El workspace usa directorio temporal que se limpia automaticamente
+

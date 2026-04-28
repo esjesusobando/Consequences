@@ -1,4 +1,4 @@
-# 🚀 Fork Terminal Skill
+﻿# 🚀 Fork Terminal Skill
 
 > **Orquestación de Agentes con Aislamiento de Contexto**
 
@@ -35,19 +35,19 @@ Usuario ──► Agente Primario ──► Fork Terminal ──► Agente Secun
 ### 1. Primer Fork (30 segundos)
 
 ```bash
-python 01_Core/03_Skills/fork-terminal/tools/fork_terminal.py "echo Hola Mundo && pause"
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/tools/fork_terminal.py "echo Hola Mundo && pause"
 ```
 
 ### 2. Demo Completa (2 minutos)
 
 ```bash
-python 01_Core/03_Skills/fork-terminal/tools/run_all_tests.py
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/tools/run_all_tests.py
 ```
 
 ### 3. Uso Real con Claude Code
 
 ```bash
-python 01_Core/03_Skills/fork-terminal/tools/fork_terminal.py "claude --model claude-sonnet-4.5 --dangerously-skip-permissions 'analiza este código y sugiere mejoras'"
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/tools/fork_terminal.py "claude --model claude-sonnet-4.5 --dangerously-skip-permissions 'analiza este código y sugiere mejoras'"
 ```
 
 ---
@@ -252,3 +252,4 @@ Este skill es parte del proyecto AI Strong Bunker.
 [![Powered by AI](https://img.shields.io/badge/Powered%20by-AI-blue)]()
 
 </div>
+

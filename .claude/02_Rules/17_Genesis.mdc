@@ -1,4 +1,4 @@
----
+﻿---
 description: Workflow de INICIO DE SESIÓN (Génesis) para cargar reglas, memoria y contexto.
 globs: **/*
 alwaysApply: true
@@ -25,8 +25,8 @@ Think_Different/
 ├── 04_Operations/       # Memoria y Procesos
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
-├── 07_Projects/        
-├── 08_Scripts_Os/       # Scripts operativos
+├── 01_Personal_Os/04_Operations/05_Projects/        
+├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
 └── Maerks/             
 ```
 
@@ -54,7 +54,7 @@ Think_Different/
 
 ### FASE 3: Morning Standup
 
-9.  **Ejecutar Script**: `python 08_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py`
+9.  **Ejecutar Script**: `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/14_Morning_Standup.py`
     - Plan del día, prioridades P0/P1, bloqueos
     - Si es primera sesión del día → presentar "The Big 3"
 
@@ -122,3 +122,4 @@ Think_Different/
 ---
 
 _"Sin contexto no hay inteligencia. Sin claridad no hay avance. Protocolo de Génesis completado."_
+

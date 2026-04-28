@@ -1,4 +1,4 @@
-# Ejemplo INCORRECTO (Bad Example)
+﻿# Ejemplo INCORRECTO (Bad Example)
 
 ## Escenario
 
@@ -12,8 +12,8 @@
 
 ```bash
 # El agente crea la skill sin planificar
-mkdir 01_Core/03_Skills/25_Python_Helper
-touch 01_Core/03_Skills/25_Python_Helper/SKILL.md
+mkdir 01_Personal_Os/01_Core/02_Tools/02_Skills/25_Python_Helper
+touch 01_Personal_Os/01_Core/02_Tools/02_Skills/25_Python_Helper/SKILL.md
 ```
 
 ### 2. Frontmatter Incompleto
@@ -114,3 +114,4 @@ def process(data):
 ---
 
 **Key Takeaway:** El shortcut termina costando más. Siempre seguir el proceso completo.
+

@@ -1,4 +1,4 @@
-# 🎛️ Skill 18: Personal Life OS (Hillary Integration)
+﻿# 🎛️ Skill 18: Personal Life OS (Hillary Integration)
 
 > **Core Instructions for AI Agents**
 
@@ -23,7 +23,7 @@ Esta skill permite a cualquier agente (especialmente a @13_hillary) gestionar el
 
 ### 01. Quick Capture
 - **Input**: Cualquier pensamiento o tarea.
-- **Action**: Crear un archivo `.md` en `03_Tasks/02_Hillary_Inbox/` con el formato:
+- **Action**: Crear un archivo `.md` en `03_Task/02_Hillary_Inbox/` con el formato:
   ```markdown
   ---
   created: YYYY-MM-DD HH:MM
@@ -35,14 +35,14 @@ Esta skill permite a cualquier agente (especialmente a @13_hillary) gestionar el
   ```
 
 ### 02. Plan My Day
-- **Action**: Leer `03_Tasks/02_Hillary_Inbox/` y el backlog. Generar un bloque de rutina en `03_Tasks/Daily_Routine.md` usando la plantilla `03_Tasks/00_Templates/06_Routine_Master.md`.
+- **Action**: Leer `03_Task/02_Hillary_Inbox/` y el backlog. Generar un bloque de rutina en `03_Task/Daily_Routine.md` usando la plantilla `03_Task/00_Templates/06_Routine_Master.md`.
 - **Lógica de Energía**:
   - 🌅 Mañana: Alta energía (Focus Deep Work) -> Tareas P0/Exploración.
   - 🌞 Tarde: Media energía (Meetings/Admin) -> Tareas P1/E-mail.
   - 🌙 Noche: Baja energía (Review/Relax) -> Triage/Higiene.
 
 ### 03. Daily Notes
-- **Action**: Registrar eventos significativos durante la ejecución en `03_Tasks/Daily_Activity_Log.md`.
+- **Action**: Registrar eventos significativos durante la ejecución en `03_Task/Daily_Activity_Log.md`.
 
 ## 📜 Rules
 
@@ -51,4 +51,5 @@ Esta skill permite a cualquier agente (especialmente a @13_hillary) gestionar el
 3.  **Proactive Triage**: Hillary debe procesar el inbox al inicio de cada sesión de "Life OS".
 
 ---
-*v6.1 | Source of Truth: 01_Core/03_Skills/18_Personal_Life_OS/README.md*
+*v6.1 | Source of Truth: 01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/README.md*
+

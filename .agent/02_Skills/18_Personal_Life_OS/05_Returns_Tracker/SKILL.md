@@ -1,4 +1,4 @@
----
+﻿---
 name: returns-tracker
 description: "Use when user wants to track return patterns, create auto-generated skills, or build workflows from observed behaviors. Trigger: user says 'create skill from', 'build from pattern', 'auto-skill', or 'track returns'."
 ---
@@ -21,10 +21,10 @@ Observación → DETECTAR → PATRON → GENERAR → SKILL
 
 | Source         | Data                | Target Path      | Weight   |
 |----------------|---------------------|------------------|----------|
-| Quick Capture  | Frecuencia de tags  | `03_Tasks/02_Hillary_Inbox/` | Alta     |
-| Daily Notes    | Patrones temporales | `03_Tasks/Daily_Activity_Log.md` | Alta     |
-| Recording Mode | Temas recurrentes   | `03_Tasks/02_Hillary_Inbox/Transcripts/` | Media    |
-| Plan My Day    | Tareas repetitivas  | `03_Tasks/` (Backlog) | Alta     |
+| Quick Capture  | Frecuencia de tags  | `03_Task/02_Hillary_Inbox/` | Alta     |
+| Daily Notes    | Patrones temporales | `03_Task/Daily_Activity_Log.md` | Alta     |
+| Recording Mode | Temas recurrentes   | `03_Task/02_Hillary_Inbox/Transcripts/` | Media    |
+| Plan My Day    | Tareas repetitivas  | `03_Task/` (Backlog) | Alta     |
 
 ### Detectable Patterns
 
@@ -161,3 +161,4 @@ description: Auto-generated from pattern detection
 | Date       | Change       |
 |------------|--------------|
 | 2026-03-31 | Initial v1.0 |
+

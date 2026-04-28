@@ -1,4 +1,4 @@
----
+﻿---
 name: brand-voice-generator
 description: |
   Generate tone-of-voice and brand-system files for use with the PPTX Generator and other brand-aware skills.
@@ -30,7 +30,7 @@ Generate complete brand configuration files for use with the PPTX Generator and 
 
 Files are created in:
 ```
-01_Core/03_Skills/pptx-generator/brands/{brand-name}/
+01_Personal_Os/01_Core/02_Tools/02_Skills/pptx-generator/brands/{brand-name}/
 ```
 
 ---
@@ -272,11 +272,11 @@ After generating files:
 
 1. **List created files:**
    ```
-   Glob: 01_Core/03_Skills/pptx-generator/brands/{brand-name}/*
+   Glob: 01_Personal_Os/01_Core/02_Tools/02_Skills/pptx-generator/brands/{brand-name}/*
    ```
 
 2. **Remind about assets:**
-   > "Don't forget to copy your logo file to `01_Core/03_Skills/pptx-generator/brands/{brand-name}/assets/`"
+   > "Don't forget to copy your logo file to `01_Personal_Os/01_Core/02_Tools/02_Skills/pptx-generator/brands/{brand-name}/assets/`"
 
 3. **Suggest test:**
    > "Try generating a simple presentation with: 'Create a 3-slide presentation for {brand-name} about [topic]'"
@@ -330,3 +330,4 @@ If a brand already exists:
 - [ ] Verify all files created
 - [ ] Remind user about logo copying
 - [ ] Suggest test generation
+

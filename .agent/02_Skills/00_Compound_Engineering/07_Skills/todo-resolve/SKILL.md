@@ -1,4 +1,4 @@
----
+﻿---
 name: todo-resolve
 description: Use when batch-resolving approved todos, especially after code review or triage sessions
 argument-hint: "[optional: specific todo ID or pattern]"
@@ -12,7 +12,7 @@ Only `ready` todos are resolved. `pending` todos are skipped — they haven't be
 
 ### 1. Analyze
 
-Scan `.context/compound-engineering/03_Tasks/*.md` and legacy `03_Tasks/*.md`. Partition by status:
+Scan `.context/compound-engineering/03_Task/*.md` and legacy `03_Task/*.md`. Partition by status:
 
 - **`ready`** (status field or `-ready-` in filename): resolve these.
 - **`pending`**: skip. Report them at the end.
@@ -66,3 +66,4 @@ Skipped pending todos (run /todo-triage to approve):
   - 003-pending-p2-missing-index.md
   - 005-pending-p3-rename-variable.md
 ```
+

@@ -1,4 +1,4 @@
----
+﻿---
 description: SKILL 35: Pencil Design Studio (AI-Assisted Design & UI/UX Orchestra)
 globs: **/*.{html,css,js,ts,tsx,png,jpg,svg}
 alwaysApply: false
@@ -8,7 +8,7 @@ alwaysApply: false
 
 <system_directives>
   <fundamental_rule>
-    Esta regla activa el protocolo de diseño asistido por IA utilizando Pencil MCP. Se invoca cuando el usuario solicita rediseños, creación de componentes desde cero o auditorías estéticas de alto nivel. Homologado con 01_Core/03_Skills/04_Product_Design/
+    Esta regla activa el protocolo de diseño asistido por IA utilizando Pencil MCP. Se invoca cuando el usuario solicita rediseños, creación de componentes desde cero o auditorías estéticas de alto nivel. Homologado con 01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/
   </fundamental_rule>
 </system_directives>
 
@@ -25,8 +25,8 @@ Think_Different/
 ├── 04_Operations/       # Memoria y Procesos
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
-├── 07_Projects/        
-├── 08_Scripts_Os/       # Scripts operativos
+├── 01_Personal_Os/04_Operations/05_Projects/        
+├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
 └── Maerks/             
 ```
 
@@ -54,3 +54,4 @@ Think_Different/
 - "Aplica el estilo Pencil a..."
 
 </triggers>
+

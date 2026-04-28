@@ -1,4 +1,4 @@
----
+﻿---
 name: daily-notes
 description: "Use when user wants to record daily observations, log activities, or create daily summaries. Trigger: user says 'daily notes', 'log this', 'what did I do today', or 'record activity'."
 ---
@@ -163,9 +163,9 @@ Notes: Terminando script de bash
 
 ## Destinos (Single Source of Truth)
 
-- **Daily Log**: `03_Tasks/Daily_Activity_Log.md`
-- **Daily Summary**: `03_Tasks/Daily_Report.md` (Integrado en reporte de Hillary)
-- **Weekly Insight**: `03_Tasks/Weekly_Insights.md`
+- **Daily Log**: `03_Task/Daily_Activity_Log.md`
+- **Daily Summary**: `03_Task/Daily_Report.md` (Integrado en reporte de Hillary)
+- **Weekly Insight**: `03_Task/Weekly_Insights.md`
 
 ---
 
@@ -185,3 +185,4 @@ Notes: Terminando script de bash
 | Date       | Change         |
 |------------|----------------|
 | 2026-03-31 | Initial design |
+

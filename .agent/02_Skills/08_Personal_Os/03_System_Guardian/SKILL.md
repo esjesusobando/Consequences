@@ -1,4 +1,4 @@
----
+﻿---
 name: System Guardian - Recordatorio Crítico
 description: SKILL DE PROTECCIÓN - Se activa en cada tarea para recordarte las instrucciones críticas obligatorias
 version: 1.0.1
@@ -71,7 +71,7 @@ Al inicio de cada tarea, el usuario o el agente DEBE cargar esta skill para reco
 ## 🔗 Dependencias
 
 ### Skills a cargar después
-- `01_Core/03_Skills/00_Compound_Engineering/` - Si requiere compound engineering
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/` - Si requiere compound engineering
 - Skills específicas de la tarea
 
 ### Archivos de referencia
@@ -116,3 +116,4 @@ Para verificar que seguiste las instrucciones:
 | Versión   | Fecha      | Cambio           |
 |-----------|------------|------------------|
 | 1.0.0     | 2026-03-28 | Creación inicial |
+

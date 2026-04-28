@@ -1,4 +1,4 @@
----
+﻿---
 description: PILAR 12: Gestión de Recursos de Hardware durante Pruebas (Pure Green Standard)
 globs: */*.{test,spec}.{js,ts,jsx,tsx}
 alwaysApply: false
@@ -25,8 +25,8 @@ Think_Different/
 ├── 04_Operations/       # Memoria y Procesos
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
-├── 07_Projects/        
-├── 08_Scripts_Os/       # Scripts operativos
+├── 01_Personal_Os/04_Operations/05_Projects/        
+├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
 └── Maerks/             
 ```
 
@@ -115,3 +115,4 @@ npx vitest --maxWorkers=4
 ---
 
 Remember: La salud del hardware es prioritaria para la continuidad del desarrollo.
+

@@ -1,8 +1,8 @@
-# 🛠️ 03_Skills — Sistema SOTA de Skills
+﻿# 🛠️ 03_Skills — Sistema SOTA de Skills
 
 **Versión:** 6.1
 **Última actualización:** 2026-04-03
-**Source of Truth:** `01_Core/03_Skills/`
+**Source of Truth:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 **Framework:** Anthropic Skill Creator v2.0 + PersonalOS SOTA
 
 ---
@@ -332,3 +332,4 @@ python 03_Scripts_Os/55_Sync_Skills.py --confirm
 *"El poder sin control no sirve de nada. El poder con las skills correctas lo cambia todo."*
 
 © 2026 PersonalOS v6.1 — Powered by Anthropic Skill Framework
+

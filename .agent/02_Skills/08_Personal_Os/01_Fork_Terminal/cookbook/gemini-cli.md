@@ -1,4 +1,4 @@
-# Purpose
+﻿# Purpose
 
 Create a new Gemini agent to execute the command.
 
@@ -21,18 +21,19 @@ HEAVY_MODEL: gemini-3-deep-think
 
 1. Determine which model to use based on user request
 2. Construct the command: `gemini --model <MODEL> "<PROMPT>"`
-3. Execute: `python 01_Core/03_Skills/fork-terminal/tools/fork_terminal.py "gemini --model <MODEL> \"<PROMPT>\""`
+3. Execute: `python 01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/tools/fork_terminal.py "gemini --model <MODEL> \"<PROMPT>\""`
 
 ## Examples
 
 ### Without Summary
 
 ```bash
-python 01_Core/03_Skills/fork-terminal/tools/fork_terminal.py "gemini --model gemini-3-pro \"analyze SKILL.md and create a summary\""
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/tools/fork_terminal.py "gemini --model gemini-3-pro \"analyze SKILL.md and create a summary\""
 ```
 
 ### With Summary (context handoff)
 
 ```bash
-python 01_Core/03_Skills/fork-terminal/tools/fork_terminal.py "gemini --model gemini-3-pro \"<filled fork_summary_user_prompt content here>\""
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/tools/fork_terminal.py "gemini --model gemini-3-pro \"<filled fork_summary_user_prompt content here>\""
 ```
+

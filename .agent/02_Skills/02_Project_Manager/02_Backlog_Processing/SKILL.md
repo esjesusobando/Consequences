@@ -1,4 +1,4 @@
----
+﻿---
 name: backlog-processing
 description: Organizes notes into tasks. Triggers on: process backlog, triage notes, clear my backlog, organize notes, backlog cleanup.
 ---
@@ -21,8 +21,8 @@ description: Organizes notes into tasks. Triggers on: process backlog, triage no
 
 1. **Read Backlog**: Scan `00_Winter_is_Coming/BACKLOG.md` for new entries.
 2. **Categorize**: Assign items to categories (P0, P1, P2 or Archive).
-3. **Deduplicate**: Check for existing tasks in `03_Tasks/` to avoid redundancy.
-4. **Draft Tasks**: For P0 and P1 items, create task files in `03_Tasks/`.
+3. **Deduplicate**: Check for existing tasks in `03_Task/` to avoid redundancy.
+4. **Draft Tasks**: For P0 and P1 items, create task files in `03_Task/`.
 5. **Clean Up**: Clear the processed items from `00_Winter_is_Coming/BACKLOG.md`.
 
 ## ⚠️ Gotchas (Errores Comunes a Evitar)
@@ -99,3 +99,4 @@ Tie to goals and reference material.
 ## 💾 State Persistence
 
 Esta skill puede guardar un log deitems procesados para historial.
+

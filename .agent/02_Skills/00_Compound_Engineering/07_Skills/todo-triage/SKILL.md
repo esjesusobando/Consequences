@@ -1,4 +1,4 @@
----
+﻿---
 name: todo-triage
 description: Use when reviewing pending todos for approval, prioritizing code review findings, or interactively categorizing work items
 argument-hint: "[findings list or source type]"
@@ -12,7 +12,7 @@ Interactive workflow for reviewing pending todos one by one and deciding whether
 **Do not write code during triage.** This is purely for review and prioritization -- implementation happens in `/todo-resolve`.
 
 - First set the /model to Haiku
-- Read all pending todos from `.context/compound-engineering/03_Tasks/` and legacy `03_Tasks/` directories
+- Read all pending todos from `.context/compound-engineering/03_Task/` and legacy `03_Task/` directories
 
 ## Workflow
 
@@ -68,3 +68,4 @@ What would you like to do next?
 2. commit the todos
 3. nothing, go chill
 ```
+

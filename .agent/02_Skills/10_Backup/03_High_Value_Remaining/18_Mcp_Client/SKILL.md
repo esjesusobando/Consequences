@@ -1,4 +1,4 @@
----
+﻿---
 name: mcp-client
 description: Universal MCP client for connecting to any MCP server with progressive disclosure. Wraps MCP servers as skills to avoid context window bloat from tool definitions. Use when interacting with external MCP servers (Zapier, Sequential Thinking, GitHub, filesystem, etc.), listing available tools, or executing MCP tool calls. Triggers on requests like "connect to Zapier", "use MCP server", "list MCP tools", "call Zapier action", "use sequential thinking", or any MCP server interaction.
 ---
@@ -9,9 +9,9 @@ Connect to any MCP server with progressive disclosure - load tool schemas on-dem
 
 ## Skill Location
 
-This skill is located at: `01_Core/03_Skills/mcp-client/`
+This skill is located at: `01_Personal_Os/01_Core/02_Tools/02_Skills/mcp-client/`
 
-**Script path:** `01_Core/03_Skills/mcp-client/scripts/mcp_client.py`
+**Script path:** `01_Personal_Os/01_Core/02_Tools/02_Skills/mcp-client/scripts/mcp_client.py`
 
 ## Configuration
 
@@ -21,7 +21,7 @@ The script looks for config in this order:
 3. `.mcp.json` in project root
 4. `~/.claude.json`
 
-**Your config file:** `01_Core/03_Skills/mcp-client/references/mcp-config.json`
+**Your config file:** `01_Personal_Os/01_Core/02_Tools/02_Skills/mcp-client/references/mcp-config.json`
 
 Edit this file to add your API keys. The example file (`example-mcp-config.json`) is kept as a reference template.
 
@@ -29,17 +29,17 @@ Edit this file to add your API keys. The example file (`example-mcp-config.json`
 
 ## Running Commands
 
-All commands use the script at `01_Core/03_Skills/mcp-client/scripts/mcp_client.py`:
+All commands use the script at `01_Personal_Os/01_Core/02_Tools/02_Skills/mcp-client/scripts/mcp_client.py`:
 
 ```bash
 # List configured servers
-python 01_Core/03_Skills/mcp-client/scripts/mcp_client.py servers
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/mcp-client/scripts/mcp_client.py servers
 
 # List tools from a server
-python 01_Core/03_Skills/mcp-client/scripts/mcp_client.py tools <server_name>
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/mcp-client/scripts/mcp_client.py tools <server_name>
 
 # Call a tool
-python 01_Core/03_Skills/mcp-client/scripts/mcp_client.py call <server> <tool> '{"arg": "value"}'
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/mcp-client/scripts/mcp_client.py call <server> <tool> '{"arg": "value"}'
 ```
 
 ## Workflow
@@ -61,23 +61,23 @@ python 01_Core/03_Skills/mcp-client/scripts/mcp_client.py call <server> <tool> '
 
 ```bash
 # 1. List servers to confirm Zapier is configured
-python 01_Core/03_Skills/mcp-client/scripts/mcp_client.py servers
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/mcp-client/scripts/mcp_client.py servers
 
 # 2. List Zapier tools
-python 01_Core/03_Skills/mcp-client/scripts/mcp_client.py tools zapier
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/mcp-client/scripts/mcp_client.py tools zapier
 
 # 3. Call a Zapier tool
-python 01_Core/03_Skills/mcp-client/scripts/mcp_client.py call zapier <tool_name> '{"param": "value"}'
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/mcp-client/scripts/mcp_client.py call zapier <tool_name> '{"param": "value"}'
 ```
 
 ## Example: Sequential Thinking
 
 ```bash
 # 1. List tools
-python 01_Core/03_Skills/mcp-client/scripts/mcp_client.py tools sequential-thinking
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/mcp-client/scripts/mcp_client.py tools sequential-thinking
 
 # 2. Use sequential thinking
-python 01_Core/03_Skills/mcp-client/scripts/mcp_client.py call sequential-thinking sequentialthinking '{"thought": "Breaking down the problem...", "thoughtNumber": 1, "totalThoughts": 5, "nextThoughtNeeded": true}'
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/mcp-client/scripts/mcp_client.py call sequential-thinking sequentialthinking '{"thought": "Breaking down the problem...", "thoughtNumber": 1, "totalThoughts": 5, "nextThoughtNeeded": true}'
 ```
 
 ## Config Format
@@ -127,3 +127,4 @@ pip install mcp fastmcp
 - `references/example-mcp-config.json` - Template config file
 - `references/mcp-servers.md` - Common server configurations
 - `references/python-mcp-sdk.md` - Python SDK documentation
+

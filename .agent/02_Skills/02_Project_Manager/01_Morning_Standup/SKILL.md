@@ -1,4 +1,4 @@
----
+﻿---
 name: morning-standup
 description: Daily focus session. Triggers on: morning routine, daily priorities, what should I work on, start my day, daily standup, morning planning.
 ---
@@ -18,7 +18,7 @@ description: Daily focus session. Triggers on: morning routine, daily priorities
 
 ## Workflow (Original)
 
-1. **Read Context**: Read `GOALS.md`, `BACKLOG.md`, and active tasks in `03_Tasks/`.
+1. **Read Context**: Read `GOALS.md`, `BACKLOG.md`, and active tasks in `03_Task/`.
 2. **Analyze Priorities**: Identify top 3 priorities based on deadlines and alignment with goals.
 3. **Propose Schedule**: Suggest a realistic plan for the day, highlighting deep work vs. quick wins.
 4. **Check Blockers**: Identify any blocked tasks and propose next steps to unblock.
@@ -85,3 +85,4 @@ description: Daily focus session. Triggers on: morning routine, daily priorities
 ## 💾 State Persistence
 
 Esta skill puede guardar un log de sesiones anteriores para comparar días.
+

@@ -1,4 +1,4 @@
----
+﻿---
 name: Workflow Orchestrator
 description: Coordinador del flujo TDD completo en 7 fases. Orquesta agentes especializados secuencialmente con checkpoints de validación. Usar para desarrollo de features complejas que requieren arquitectura, tests, implementación, seguridad y PR.
 model: claude-opus-4-6
@@ -52,6 +52,7 @@ git commit -m "feat(a11y): improve WCAG compliance"     # FASE 7 (si aplica)
 - Rollback automático si refactor rompe tests
 
 ## Contexto del Sistema
-- Este orquestador coordina los agentes 01-07 de `01_Core/04_Agents/`
+- Este orquestador coordina los agentes 01-07 de `01_Personal_Os/01_Core/02_Tools/01_Agents/`
 - Reglas del proyecto: `01_Core/01_Rules/`
 - Ritual de validación: `python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py`
+

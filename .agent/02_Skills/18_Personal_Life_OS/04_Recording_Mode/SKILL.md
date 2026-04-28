@@ -1,4 +1,4 @@
----
+﻿---
 name: recording-mode
 description: "Use when user wants to record meetings, conversations, or voice notes with automatic anonymization. Trigger: user says 'record this', 'transcribe meeting', 'anonymize recording', or 'voice note'."
 ---
@@ -156,8 +156,8 @@ duration: 45min
 
 ## Destinos (Single Source of Truth)
 
-- **Transcripts**: `03_Tasks/02_Hillary_Inbox/Transcripts/`
-- **Audio Backup**: `03_Tasks/01_Tasks_Done/Audio_Vault/` (Si se requiere persistencia)
+- **Transcripts**: `03_Task/02_Hillary_Inbox/Transcripts/`
+- **Audio Backup**: `03_Task/01_Tasks_Done/Audio_Vault/` (Si se requiere persistencia)
 
 ---
 
@@ -178,3 +178,4 @@ duration: 45min
 | Date       | Change              |
 |------------|---------------------|
 | 2026-03-31 | Initial design v1.0 |
+

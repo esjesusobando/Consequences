@@ -1,4 +1,4 @@
----
+﻿---
 description: PILAR 03: Estándares de Ingeniería, Stack Tecnológico y Organización (Motor AI-Prime)
 globs: */*.{html,css,js,ts,tsx,py,md}
 alwaysApply: true
@@ -25,8 +25,8 @@ Think_Different/
 ├── 04_Operations/       # Memoria y Procesos
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
-├── 07_Projects/        
-├── 08_Scripts_Os/       # Scripts operativos
+├── 01_Personal_Os/04_Operations/05_Projects/        
+├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
 └── Maerks/             
 ```
 
@@ -51,7 +51,7 @@ Think_Different/
     - **Descripción**: Todo script en `08_Scripts_Os` que ejecute múltiples pasos (≥3) DEBE mostrar porcentaje de avance acumulado.
     - **Formato**: `[XX.X%] Paso N/Total: Descripción`
     - **Notificaciones de Voz**: Opcional en hitos clave (25%, 50%, 75%) para evitar saturación.
-    - **Template Disponible**: `08_Scripts_Os/templates/multi_step_script_template.py`
+    - **Template Disponible**: `01_Personal_Os/04_Operations/03_Scripts_Os/templates/multi_step_script_template.py`
 7.  **Integridad Matemática (Domain Logic)**:
     - **Centralización**: Todas las constantes físicas y fórmulas de dominio (ej. API RP 13B-1) DEBEN residir únicamente en el Engine.
     - **Validación de Curvas**: Toda visualización técnica DEBE ser validada contra los puntos de datos reales. Si la curva teórica no pasa por los puntos experimentales, el sistema NO está en PURE GREEN.
@@ -158,3 +158,4 @@ config_path = os.path.join(BASE_DIR, "data", "config.json")
 ---
 
 Remember: Indestructible por diseño, superior por estética. Alineado con el Motor PersonalOS.
+

@@ -1,4 +1,4 @@
-# 25 Data Visualization
+﻿# 25 Data Visualization
 
 ## Esencia Original
 > **Propósito:** Crear visualizaciones de datos interactivas con Chart.js, D3, Recharts
@@ -1302,7 +1302,7 @@ export function recommendChartType(data: {
 
 Reference implementations:
 - `.cursor/02_Skills/11_Taste_Skills/` - Dashboard patterns (minimalist-skill)
-- `07_Projects/*/dashboard/` - Production dashboards
+- `01_Personal_Os/04_Operations/05_Projects/*/dashboard/` - Production dashboards
 - `01_Core/04_Rules/00_Tech_Defaults.md` - Tech conventions
 
 
@@ -1314,3 +1314,4 @@ Reference implementations:
 ## 💾 State Persistence
 Guardar en:
 - `04_Operations/` — Estado activo
+

@@ -1,4 +1,4 @@
-# 📚 Fork Terminal Skill - Índice de Documentación
+﻿# 📚 Fork Terminal Skill - Índice de Documentación
 
 ## 🎯 Inicio Rápido
 
@@ -13,7 +13,7 @@
 ## 📁 Estructura de Archivos
 
 ```
-01_Core/03_Skills/fork-terminal/
+01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/
 │
 ├── 📄 SKILL.md                    ⭐ Definición principal del skill
 ├── 📄 EXECUTIVE_REPORT.md         📊 Reporte ejecutivo completo
@@ -219,3 +219,4 @@ Para preguntas o mejoras al skill:
 **Última actualización:** 2026-01-17
 **Versión:** 1.0.0
 **Estado:** 🟢 Producción Ready
+

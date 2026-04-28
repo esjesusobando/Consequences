@@ -1,4 +1,4 @@
----
+﻿---
 name: plan-my-day
 description: "Use when user wants to plan their day, organize tasks, or create a schedule. Trigger: user says 'plan my day', 'what should I do', 'organize my day', or 'create schedule'."
 ---
@@ -27,7 +27,7 @@ INBOX ──► ANALYZE ──► PRIORITIZE ──► SCHEDULE
 ## Inputs
 
 ### 1. Inbox (Fase 1)
-`03_Tasks/02_Hillary_Inbox/*.md` → extrae `created`, `type`, `tags`, body
+`03_Task/02_Hillary_Inbox/*.md` → extrae `created`, `type`, `tags`, body
 
 ### 2. Preferencias
 `templates/preferencias.md`: energía por horario, constraints, observaciones
@@ -170,3 +170,4 @@ calendar = read("templates/calendario_hoy.md")
 | Date       | Change       |
 |------------|--------------|
 | 2026-03-31 | Initial v1.0 |
+

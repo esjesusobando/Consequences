@@ -1,4 +1,4 @@
-# 25 Data Visualization
+﻿# 25 Data Visualization
 
 ## Trigger
 Cuando el usuario menciona: "chart", "dashboard", "visualization", "graphs", "metrics", "analytics", "gráfico", "tabla de datos", "kpi", "Reporting"
@@ -1297,5 +1297,6 @@ export function recommendChartType(data: {
 
 Reference implementations:
 - `.cursor/02_Skills/11_Taste_Skills/` - Dashboard patterns (minimalist-skill)
-- `07_Projects/*/dashboard/` - Production dashboards
+- `01_Personal_Os/04_Operations/05_Projects/*/dashboard/` - Production dashboards
 - `01_Core/04_Rules/00_Tech_Defaults.md` - Tech conventions
+

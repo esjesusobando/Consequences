@@ -1,4 +1,4 @@
----
+﻿---
 name: full-output-enforcement
 description: Forces complete output without truncation or placeholders. Triggers on: full output, complete code, no truncation, unabridged, exhaustive output, full file.
 ---
@@ -40,7 +40,7 @@ description: Forces complete output without truncation or placeholders. Triggers
 ## 💾 State Persistence
 
 Tracking de outputs en:
-- `03_Tasks/` — Tasks en progreso
+- `03_Task/` — Tasks en progreso
 
 ## Baseline
 
@@ -84,3 +84,4 @@ Before finalizing any response, verify:
 - Every item the user requested is present and finished
 - Code blocks contain actual runnable code, not descriptions of what code would do
 - Nothing was shortened to save space
+

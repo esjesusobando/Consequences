@@ -1,4 +1,4 @@
----
+﻿---
 description: PILAR 13: Regla de Sistema 13: Estándares de Procesamiento de Facturas (Invoice Intelligence)
 globs: **/02_skills/02_High_Value/49_Invoice_Intelligence/**/*
 alwaysApply: true
@@ -25,8 +25,8 @@ Think_Different/
 ├── 04_Operations/       # Memoria y Procesos
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
-├── 07_Projects/        
-├── 08_Scripts_Os/       # Scripts operativos
+├── 01_Personal_Os/04_Operations/05_Projects/        
+├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
 └── Maerks/             
 ```
 
@@ -112,3 +112,4 @@ Think_Different/
 ---
 
 Remember: Procesamos datos financieros con rigor absoluto. Ni un céntimo perdido, ni una ruta relativa.
+

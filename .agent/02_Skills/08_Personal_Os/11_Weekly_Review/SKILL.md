@@ -1,4 +1,4 @@
----
+﻿---
 name: weekly-review
 description: "Ritual de Weekly Review para reflexionar sobre la semana y planificar la siguiente. Ejecuta el script 15_Weekly_Review.py. Triggers: weekly review, revisión semanal, retrospective, fin de semana, planning semanal, qué logré esta semana."
 version: 1.0.0
@@ -24,7 +24,7 @@ Reflexionar sobre la semana pasada, celebrar logros, y planificar la siguiente s
 ### Paso 1: Celebrar wins
 
 Revisar qué se logró esta semana:
-- Tareas completadas en `03_Tasks/`
+- Tareas completadas en `03_Task/`
 - Commits realizados
 - Goals progresados
 
@@ -77,3 +77,4 @@ python 03_Scripts_Os/Ritual_Fixed/15_Weekly_Review.py
 
 *Skill Version: 1.0.0*
 *Script: 15_Weekly_Review.py*
+

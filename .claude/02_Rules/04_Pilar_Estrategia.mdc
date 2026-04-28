@@ -1,6 +1,6 @@
----
+﻿---
 description: PILAR 04: Gestión Estratégica, Flujos y Observabilidad (Mente AI-Prime)
-globs: **/*.md, 03_Tasks/**/_, 08_Scripts_Os/**/_
+globs: **/*.md, 03_Tasks/**/_, 01_Personal_Os/04_Operations/03_Scripts_Os/**/_
 alwaysApply: true
 ---
 
@@ -25,8 +25,8 @@ Think_Different/
 ├── 04_Operations/       # Memoria y Procesos
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
-├── 07_Projects/        
-├── 08_Scripts_Os/       # Scripts operativos
+├── 01_Personal_Os/04_Operations/05_Projects/        
+├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
 └── Maerks/             
 ```
 
@@ -136,3 +136,4 @@ Remember: El código es temporal, las reglas son eternas. Razonamos con incertid
 ---
 
 _Alineado con la Mente PersonalOS: "Razonamos con incertidumbre, decidedmos con intención."_
+

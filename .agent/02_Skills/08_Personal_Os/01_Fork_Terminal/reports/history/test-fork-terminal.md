@@ -1,4 +1,4 @@
-# Test del Fork Terminal Skill
+﻿# Test del Fork Terminal Skill
 
 Este archivo se creó para verificar que el skill funciona correctamente.
 
@@ -23,7 +23,7 @@ El skill está listo para ser usado en producción. La arquitectura de orquestac
 ## Estructura final:
 
 ```
-01_Core/03_Skills/fork-terminal/
+01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/
 ├── SKILL.md                              ✅ Actualizado
 ├── cookbook/
 │   ├── cli-command.md                    ✅ Completo
@@ -60,3 +60,4 @@ El skill está listo para ser usado en producción. La arquitectura de orquestac
 - ✅ `pause` para mantener ventana abierta
 - ✅ `dir` con flags de Windows
 - ✅ Navegación de directorios con `cd`
+

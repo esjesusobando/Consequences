@@ -1,4 +1,4 @@
----
+﻿---
 description: Workflow para el Recap y planificación del día.
 globs: **/*
 alwaysApply: false
@@ -25,8 +25,8 @@ Think_Different/
 ├── 04_Operations/       # Memoria y Procesos
 ├── 05_Archive/          # Legacy
 ├── 06_Playground/      
-├── 07_Projects/        
-├── 08_Scripts_Os/       # Scripts operativos
+├── 01_Personal_Os/04_Operations/05_Projects/        
+├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
 └── Maerks/             
 ```
 
@@ -35,7 +35,7 @@ Think_Different/
 ## 📋 Protocolo de Enfoque Avanzado
 <protocol>
 
-1.  **Sincronización Fireflies**: Ejecutar `python 08_Scripts_Os/Ritual_Fixed/39_Recap_Planning.py` para identificar reuniones recientes y alinear prioridades.
+1.  **Sincronización Fireflies**: Ejecutar `python 01_Personal_Os/04_Operations/03_Scripts_Os/Ritual_Fixed/39_Recap_Planning.py` para identificar reuniones recientes y alinear prioridades.
 2.  **Revisión de Prioridades**: Inspeccionar `00_Winter_is_Coming/GOALS.md` y `03_Tasks/` para identificar tareas P0 y P1 mediante MCP.
 3.  **Análisis de Bloqueos**: Identificar tareas con status `b` (blocked) y proponer soluciones inmediatas.
 4.  **Selección del Día (The Big 3)**: Sugerir exactamente 3 tareas para el día que maximicen el avance hacia los objetivos trimestrales.
@@ -60,3 +60,4 @@ Think_Different/
 ---
 
 _"Enfoque total en lo que importa. Menos, pero mejor."_
+

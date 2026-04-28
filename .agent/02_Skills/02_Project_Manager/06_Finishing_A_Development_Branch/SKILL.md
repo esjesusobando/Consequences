@@ -1,4 +1,4 @@
----
+﻿---
 name: finishing-a-development-branch
 description: Guía la finalización del trabajo verificando tests y ofreciendo opciones para merge o PR. Triggers on: finishing branch, merge pr, consolidate work, complete development, finish task, end branch, cleanup branch.
 ---
@@ -221,7 +221,7 @@ git worktree remove <worktree-path>
 ## 💾 State Persistence
 
 Guardar estado en:
-- `03_Tasks/` — Tasks completadas
+- `03_Task/` — Tasks completadas
 - Git log — Historial de merges/PRs
 
 ## ⚠️ Gotchas (Errores Comunes a Evitar)
@@ -231,3 +231,4 @@ Guardar estado en:
 - **[ERROR]**: Add common error here
   - **Por qué**: Explanation of why it's an error
   - **Solución**: How to fix or avoid it
+
