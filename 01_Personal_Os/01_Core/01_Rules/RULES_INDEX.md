@@ -67,6 +67,7 @@ Think_Different/
 | 07    | [07_Docs_Guias.mdc](./07_Docs_Guias.mdc)                       | **Docs y Guías**              | Estándares de documentación, workflows              |
 | 08    | [08_Token_Economy.mdc](./08_Token_Economy.mdc)                 | **Token Economy**             | 10 leyes para extender Claude Code hasta 10x        |
 | 09    | [09_Agent_Teams_Protocol.mdc](./09_Agent_Teams_Protocol.mdc)   | **Agent Teams Protocol**      | Multi-agente: boot, delegación, Super Campeones     |
+| 10    | [10_Git_Directions.mdc](./10_Git_Directions.mdc)                 | **Git Directions**            | URLs de repos y remotes actualizados               |
 
 ---
 
