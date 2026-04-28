@@ -68,7 +68,61 @@ npm install -g opencode-subagent-statusline
 
 ---
 
-## 3. TubeMaster (Gentleman-Programming) ✅ NUEVO
+## 4. Frontend Slides (zarazhangrui) ⭐ PREDETERMINADA PARA PRESENTACIONES
+
+| Dato                          | Valor                                                               |
+|-------------------------------|---------------------------------------------------------------------|
+| **URL**                       | `https://github.com/zarazhangrui/frontend-slides`                   |
+| **Carpeta local**             | `frontend-slides/`                                                  |
+| **Propósito**                 | HTML Presentations — Skill para crear presentaciones web de alto impacto |
+| **Stack**                     | Zero dependencies (HTML inline), CSS/JS embebido                   |
+| **Fecha clonado**             | 2026-04-28                                                          |
+| **Stars**                     | ⭐⭐⭐ Destacada                                                     |
+
+### ¿Por qué esta es la predeterminada?
+
+- **Zero dependencies** — Single HTML files que funcionan en 10 años
+- **Visual Style Discovery** — "Show, don't tell" — generas preview, el usuario elige
+- **Anti-AI-Slop** — 12 presets distintivos que evitan estética genérica
+- **PPT Conversion** — Convierte .pptx preservando imágenes y contenido
+- **Deploy to URL** — Vercel integration para compartir link permanente
+- **Export to PDF** — Playwright screenshot a 1920x1080
+
+### Estilos Disponibles:
+- **Dark:** Bold Signal, Electric Studio, Creative Voltage, Dark Botanical
+- **Light:** Notebook Tabs, Pastel Geometry, Split Pastel, Vintage Editorial
+- **Specialty:** Neon Cyber, Terminal Green, Swiss Modern, Paper & Ink
+
+### Para clonar en otra máquina:
+```bash
+git clone https://github.com/zarazhangrui/frontend-slides
+```
+
+### Archivos principales:
+- `SKILL.md` — Workflow completo (~320 líneas)
+- `STYLE_PRESETS.md` — 12 presets visuales con colores, fonts, elementos signature
+- `viewport-base.css` — CSS responsive obligatorio para cada slide (100vh)
+- `html-template.md` — Arquitectura HTML y features JS
+- `animation-patterns.md` — Snippets de animación CSS/JS
+- `scripts/extract-pptx.py` — Extracción de contenido desde PPT
+- `scripts/deploy.sh` — Deploy a Vercel
+- `scripts/export-pdf.sh` — Export a PDF
+
+### Uso:
+```
+/frontend-slides
+> "Create a pitch deck for my AI startup"
+```
+
+### Setup para PDF export:
+```bash
+pip install python-pptx  # Para conversión PPT
+npx playwright install chromium  # Para PDF export
+```
+
+---
+
+## 5. TubeMaster (Gentleman-Programming)
 
 | Dato                          | Valor                                                               |
 |-------------------------------|---------------------------------------------------------------------|
@@ -110,4 +164,4 @@ npm run dev
 
 ---
 
-*Última actualización: 2026-04-25*
+*Última actualización: 2026-04-28*

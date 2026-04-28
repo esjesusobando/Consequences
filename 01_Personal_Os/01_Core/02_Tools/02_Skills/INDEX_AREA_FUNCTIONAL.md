@@ -2,7 +2,7 @@
 
 > Índice navegable de todas las skills organizadas por área funcional.
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
-> **Actualizado:** 2026-04-24 (Migración v2.0 Consequences)
+> **Actualizado:** 2026-04-28 (Consecuences v3.1 + Dumbledor Design + Frontend Slides)
 
 ---
 
@@ -33,9 +33,18 @@
 
 | Skill | Path | Descripción |
 |-------|------|-------------|
-| **Taste Skill** | `02_Diseno_Ui_Ux/04_Product_Design/taste-skill/` | Diseño con gusto y criterio estético |
-| **Product Design** | `02_Diseno_Ui_Ux/04_Product_Design/` | Habilidades de diseño de producto |
+| **Taste Skill** | `02_Diseno_Ui_Ux/03_Taste_Skills/` | Diseño con gusto y criterio estético |
+| **Product Design** | `02_Diseno_Ui_Ux/01_Product_Design/` | Habilidades de diseño de producto |
 | **Exaggerated Minimalism** | `02_Diseno_Ui_Ux/` | Diseño minimalista exagerado |
+| **Excalidraw Flowchart** | `02_Diseno_Ui_Ux/06_Excalidraw_Flowchart/` | Diagramas y flowcharts en Excalidraw |
+| **Ui Ux Pro Max** | `02_Diseno_Ui_Ux/07_Ui_Ux_Pro_Max/` | Diseño UI/UX con base de datos |
+| **Design SOTA** | `02_Diseno_Ui_Ux/08_Design_Sota/` | Estado del arte en diseño |
+| **Ui Ux Pro Max (backup)** | `02_Diseno_Ui_Ux/09_Ui_Ux_Pro_Max/` | Backup de Ui Ux Pro Max |
+| **Huashu Design** | `02_Diseno_Ui_Ux/10_Huashu_Design/` | HTML prototipado de alta fidelidad |
+| **Dumbledor Design** | `02_Diseno_Ui_Ux/11_Dumbledor_Design/` | Diseño editorial de alto impacto — jerarquía 3 niveles, contraste binario |
+| **Frontend Slides** | `05_Archive/07_Repos_Gentleman/frontend-slides/` | HTML presentations — predeterminada para presentaciones |
+
+> **Skills en 03_Resultado:** `00_Output_Skills/` — Output de skills compiladas
 
 ---
 
@@ -120,4 +129,4 @@
 
 ---
 
-*PersonalOS v2.0 Consequences — 2026-04-24 | 9 áreas funcionales | 13 subcategorías activas*
+*PersonalOS v3.1 Consequences — 2026-04-28 | 9 áreas funcionales | 14 subcategorías activas*
