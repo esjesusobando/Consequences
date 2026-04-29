@@ -12,15 +12,15 @@ Your role: decide WHAT to do next, delegate to the correct phase subagent, synth
 
 Core principle: **does this inflate my context without need?** If yes → delegate. If no → do it inline.
 
-| Action                                                               | Inline             | Delegate                            |
-|----------------------------------------------------------------------|--------------------|-------------------------------------|
-| Read to decide/verify (1-3 files)                                    | ✅                  | —                                   |
-| Read to explore/understand (4+ files)                                | —                  | ✅ `/sdd-explore`                    |
-| Read as preparation for writing                                      | —                  | ✅ together with the write           |
-| Write atomic (one file, mechanical, you already know what)           | ✅                  | —                                   |
-| Write with analysis (multiple files, new logic)                      | —                  | ✅ `/sdd-apply`                      |
-| Bash for state (git, gh)                                             | ✅                  | —                                   |
-| Bash for execution (test, build, install)                            | —                  | ✅ `/sdd-verify`                     |
+| Action                                                                   | Inline                 | Delegate                                |
+|--------------------------------------------------------------------------|------------------------|-----------------------------------------|
+| Read to decide/verify (1-3 files)                                        | ✅                      | —                                       |
+| Read to explore/understand (4+ files)                                    | —                      | ✅ `/sdd-explore`                        |
+| Read as preparation for writing                                          | —                      | ✅ together with the write               |
+| Write atomic (one file, mechanical, you already know what)               | ✅                      | —                                       |
+| Write with analysis (multiple files, new logic)                          | —                      | ✅ `/sdd-apply`                          |
+| Bash for state (git, gh)                                                 | ✅                      | —                                       |
+| Bash for execution (test, build, install)                                | —                      | ✅ `/sdd-verify`                         |
 
 Anti-patterns — these ALWAYS inflate context without need:
 - Reading 4+ files to "understand" the codebase inline → delegate to `/sdd-explore`
@@ -41,12 +41,12 @@ Kiro IDE generates specs natively at `.kiro/specs/<feature>/`:
 
 Use this decision tree BEFORE any SDD phase to determine scope:
 
-| User Request                                          | Classification             | Workflow                                                          |
-|-------------------------------------------------------|----------------------------|-------------------------------------------------------------------|
-| Single file, bug fix, <50 lines                       | **Small**                  | Implement directly — no SDD, no artifacts                         |
-| Multiple files, 50-300 lines, new component           | **Medium**                 | Kiro native spec generation → approval → implement                |
-| Multi-module, >300 lines, uncertain scope             | **Large**                  | Full SDD: Kiro specs + Engram persistence + phase gates           |
-| User says "use SDD" or "hazlo con SDD"                | **Large**                  | Full SDD regardless of size                                       |
+| User Request                                              | Classification                 | Workflow                                                              |
+|-----------------------------------------------------------|--------------------------------|-----------------------------------------------------------------------|
+| Single file, bug fix, <50 lines                           | **Small**                      | Implement directly — no SDD, no artifacts                             |
+| Multiple files, 50-300 lines, new component               | **Medium**                     | Kiro native spec generation → approval → implement                    |
+| Multi-module, >300 lines, uncertain scope                 | **Large**                      | Full SDD: Kiro specs + Engram persistence + phase gates               |
+| User says "use SDD" or "hazlo con SDD"                    | **Large**                      | Full SDD regardless of size                                           |
 
 **When in doubt**: Ask the user. "This looks medium-sized. Want to use Kiro's native spec workflow, or full SDD with Engram artifacts?"
 
@@ -203,18 +203,18 @@ Each phase returns: `status`, `executive_summary`, `artifacts`, `next_recommende
 
 Read this table at session start. Kiro IDE is powered by Claude — use the table as a reasoning-depth guide: phases assigned to `opus` require deeper architectural thinking, while `haiku` phases are mechanical.
 
-| Phase                  | Default Model             | Reason                                               |
-|------------------------|---------------------------|------------------------------------------------------|
-| orchestrator           | opus                      | Coordinates, makes decisions                         |
-| sdd-explore            | sonnet                    | Reads code, structural - not architectural           |
-| sdd-propose            | opus                      | Architectural decisions                              |
-| sdd-spec               | sonnet                    | Structured writing                                   |
-| sdd-design             | opus                      | Architecture decisions                               |
-| sdd-tasks              | sonnet                    | Mechanical breakdown                                 |
-| sdd-apply              | sonnet                    | Implementation                                       |
-| sdd-verify             | sonnet                    | Validation against spec                              |
-| sdd-archive            | haiku                     | Copy and close                                       |
-| default                | sonnet                    | Non-SDD general delegation                           |
+| Phase                      | Default Model                 | Reason                                                   |
+|----------------------------|-------------------------------|----------------------------------------------------------|
+| orchestrator               | opus                          | Coordinates, makes decisions                             |
+| sdd-explore                | sonnet                        | Reads code, structural - not architectural               |
+| sdd-propose                | opus                          | Architectural decisions                                  |
+| sdd-spec                   | sonnet                        | Structured writing                                       |
+| sdd-design                 | opus                          | Architecture decisions                                   |
+| sdd-tasks                  | sonnet                        | Mechanical breakdown                                     |
+| sdd-apply                  | sonnet                        | Implementation                                           |
+| sdd-verify                 | sonnet                        | Validation against spec                                  |
+| sdd-archive                | haiku                         | Copy and close                                           |
+| default                    | sonnet                        | Non-SDD general delegation                               |
 
 <!-- /gentle-ai:sdd-model-assignments -->
 
@@ -257,16 +257,16 @@ Each SDD phase is delegated to its native Kiro subagent. Invoke with `/sdd-<phas
 
 Each phase has explicit read/write rules:
 
-| Phase                   | Reads                                                            | Writes                     |
-|-------------------------|------------------------------------------------------------------|----------------------------|
-| `sdd-explore`           | nothing                                                          | `explore`                  |
-| `sdd-propose`           | exploration (optional)                                           | `proposal`                 |
-| `sdd-spec`              | proposal (required)                                              | `spec`                     |
-| `sdd-design`            | proposal (required)                                              | `design`                   |
-| `sdd-tasks`             | spec + design (required)                                         | `tasks`                    |
-| `sdd-apply`             | tasks + spec + design + **apply-progress (if exists)**           | `apply-progress`           |
-| `sdd-verify`            | spec + tasks + **apply-progress**                                | `verify-report`            |
-| `sdd-archive`           | all artifacts                                                    | `archive-report`           |
+| Phase                       | Reads                                                                | Writes                         |
+|-----------------------------|----------------------------------------------------------------------|--------------------------------|
+| `sdd-explore`               | nothing                                                              | `explore`                      |
+| `sdd-propose`               | exploration (optional)                                               | `proposal`                     |
+| `sdd-spec`                  | proposal (required)                                                  | `spec`                         |
+| `sdd-design`                | proposal (required)                                                  | `design`                       |
+| `sdd-tasks`                 | spec + design (required)                                             | `tasks`                        |
+| `sdd-apply`                 | tasks + spec + design + **apply-progress (if exists)**               | `apply-progress`               |
+| `sdd-verify`                | spec + tasks + **apply-progress**                                    | `verify-report`                |
+| `sdd-archive`               | all artifacts                                                        | `archive-report`               |
 
 For phases with required dependencies, retrieve artifacts from Engram using topic keys before starting the phase. Do NOT rely on conversation history alone — conversation context is lossy across sessions.
 
@@ -279,18 +279,18 @@ When executing general (non-SDD) work:
 
 ## Engram Topic Key Format
 
-| Artifact                  | Topic Key                                    |
-|---------------------------|----------------------------------------------|
-| Project context           | `sdd-init/{project}`                         |
-| Exploration               | `sdd/{change-name}/explore`                  |
-| Proposal                  | `sdd/{change-name}/proposal`                 |
-| Spec                      | `sdd/{change-name}/spec`                     |
-| Design                    | `sdd/{change-name}/design`                   |
-| Tasks                     | `sdd/{change-name}/tasks`                    |
-| Apply progress            | `sdd/{change-name}/apply-progress`           |
-| Verify report             | `sdd/{change-name}/verify-report`            |
-| Archive report            | `sdd/{change-name}/archive-report`           |
-| DAG state                 | `sdd/{change-name}/state`                    |
+| Artifact                      | Topic Key                                        |
+|-------------------------------|--------------------------------------------------|
+| Project context               | `sdd-init/{project}`                             |
+| Exploration                   | `sdd/{change-name}/explore`                      |
+| Proposal                      | `sdd/{change-name}/proposal`                     |
+| Spec                          | `sdd/{change-name}/spec`                         |
+| Design                        | `sdd/{change-name}/design`                       |
+| Tasks                         | `sdd/{change-name}/tasks`                        |
+| Apply progress                | `sdd/{change-name}/apply-progress`               |
+| Verify report                 | `sdd/{change-name}/verify-report`                |
+| Archive report                | `sdd/{change-name}/archive-report`               |
+| DAG state                     | `sdd/{change-name}/state`                        |
 
 Retrieve full content via two steps:
 1. `mem_search(query: "{topic_key}", project: "{project}")` → get observation ID

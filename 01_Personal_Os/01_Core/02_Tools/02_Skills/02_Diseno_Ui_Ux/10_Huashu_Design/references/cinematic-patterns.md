@@ -9,10 +9,10 @@
 
 当你需要做「演示一个工作流的 demo 动画」时（典型场景：skill 工作流、产品 onboarding、API 调用流程、agent 任务执行），有两种常见做法：
 
-| 范式 | 长什么样 | 后果 |
-|---|---|---|
-| **PPT 动画**（差） | step 1 fade in → step 2 fade in → step 3 fade in，4 个 box 同屏排列 | 观众感觉「就是一个 PPT 加了 fade 效果」，没有 wow moment |
-| **Cinematic**（好） | scene-based，一次只 focus 一件事，scene 之间是 dissolve / focus pull / morph | 观众感觉「这是一个产品发布会片段」，会想截图分享 |
+| 范式                 | 长什么样                                                                | 后果                                        |
+|--------------------|---------------------------------------------------------------------|-------------------------------------------|
+| **PPT 动画**（差）      | step 1 fade in → step 2 fade in → step 3 fade in，4 个 box 同屏排列       | 观众感觉「就是一个 PPT 加了 fade 效果」，没有 wow moment   |
+| **Cinematic**（好）   | scene-based，一次只 focus 一件事，scene 之间是 dissolve / focus pull / morph   | 观众感觉「这是一个产品发布会片段」，会想截图分享                  |
 
 差异的根源**不是动画技术**，是**叙事范式**。本文档讲怎么从前者升级到后者。
 
@@ -50,13 +50,13 @@ POINT ▶ 触发 (overlay 浮上来)：22 秒 cinematic
 
 **解决**：拆成 5 个 scene，每个 scene 是**独立的镜头**，全屏只 focus 一件事：
 
-| Scene 类型 | 职责 | 时长 |
-|---|---|---|
-| 1 · Invoke | 用户输入触发（终端 typewriter）| 3-4s |
-| 2 · Process | 核心工作流的可视化（独特视觉语言）| 5-6s |
-| 3 · Result/Insight | 提炼出的关键产物（可视化）| 4-5s |
-| 4 · Output | 实际产物展示（文件 / diff / 数字）| 3-4s |
-| 5 · Hero Reveal | 收尾 hero moment（大字 + 价值主张）| 4-5s |
+| Scene 类型             | 职责                          | 时长     |
+|----------------------|-----------------------------|--------|
+| 1 · Invoke           | 用户输入触发（终端 typewriter）       | 3-4s   |
+| 2 · Process          | 核心工作流的可视化（独特视觉语言）           | 5-6s   |
+| 3 · Result/Insight   | 提炼出的关键产物（可视化）               | 4-5s   |
+| 4 · Output           | 实际产物展示（文件 / diff / 数字）      | 3-4s   |
+| 5 · Hero Reveal      | 收尾 hero moment（大字 + 价值主张）   | 4-5s   |
 
 **总时长 ≈ 22 秒**——这是经过测试的黄金长度：
 - 短于 18 秒：PM 还没进入状态就结束了
@@ -81,14 +81,14 @@ POINT ▶ 触发 (overlay 浮上来)：22 秒 cinematic
 
 **对照案例**：
 
-| 维度 | Nuwa（蒸馏人）| Darwin（优化 skill）|
-|---|---|---|
-| 核心隐喻 | 收集 → 提炼 → 写 | 循环 → 评估 → 棘轮 |
-| 视觉运动 | 漂浮 / 辐射 / pentagon | 循环 / 上升 / 对比 |
-| Scene 2 | 3D Orbit · 8 张档案在透视椭圆漂浮 | Spin Loop · token 沿 6 节点圆环跑 5 圈 |
-| Scene 3 | Pentagon · 5 token 从中央辐射 | v1 vs v5 · 并列 diff（红版 vs 金版） |
-| Scene 4 | SKILL.md typewriter | Hill-Climb · 全屏曲线绘制 |
-| Scene 5 hero | 「21 分钟」serif italic 大字 | 旋转齿轮 ⚙ + 「KEPT +1.1」金色 tag |
+| 维度             | Nuwa（蒸馏人）                  | Darwin（优化 skill）                  |
+|----------------|----------------------------|-----------------------------------|
+| 核心隐喻           | 收集 → 提炼 → 写                | 循环 → 评估 → 棘轮                      |
+| 视觉运动           | 漂浮 / 辐射 / pentagon         | 循环 / 上升 / 对比                      |
+| Scene 2        | 3D Orbit · 8 张档案在透视椭圆漂浮    | Spin Loop · token 沿 6 节点圆环跑 5 圈   |
+| Scene 3        | Pentagon · 5 token 从中央辐射   | v1 vs v5 · 并列 diff（红版 vs 金版）      |
+| Scene 4        | SKILL.md typewriter        | Hill-Climb · 全屏曲线绘制               |
+| Scene 5 hero   | 「21 分钟」serif italic 大字     | 旋转齿轮 ⚙ + 「KEPT +1.1」金色 tag        |
 
 **判断标准**：盖住文案，只看视觉，能不能区分这是哪个 demo？区分不了就是偷懒。
 
@@ -118,15 +118,15 @@ POINT ▶ 触发 (overlay 浮上来)：22 秒 cinematic
 
 **通用 SFX cue 配方**（适用于工作流 demo）：
 
-| 时点 | SFX | 触发场景 |
-|---|---|---|
-| 0.10s | whoosh | 终端从下方升起 |
-| 3.0s | enter | typewriter 完成、按 enter |
-| 4.0s | slide-in | scene 2 元素入场 |
-| 5-9s × 5 次 | sparkle | 关键过程节点（每代 / 每个 token / 每个数据点）|
-| 14s | click | 切换到 output scene |
-| 17.8s | logo-reveal | hero reveal 时刻 |
-| typewriter | type | 每 2 字符触发一次（密度别太高）|
+| 时点           | SFX           | 触发场景                            |
+|--------------|---------------|---------------------------------|
+| 0.10s        | whoosh        | 终端从下方升起                         |
+| 3.0s         | enter         | typewriter 完成、按 enter           |
+| 4.0s         | slide-in      | scene 2 元素入场                    |
+| 5-9s × 5 次   | sparkle       | 关键过程节点（每代 / 每个 token / 每个数据点）   |
+| 14s          | click         | 切换到 output scene                |
+| 17.8s        | logo-reveal   | hero reveal 时刻                  |
+| typewriter   | type          | 每 2 字符触发一次（密度别太高）               |
 
 **频段隔离**：BGM volume 0.32（低频底噪），SFX volume 0.55（中高频 punch），sparkle 0.7（要醒目），logo-reveal 0.85（最强 hero moment）。
 
@@ -143,13 +143,13 @@ Dashboard 是双层结构的 Layer 1，PM 不点 ▶ 也能看懂这个 skill。
 
 **布局**：3 列 grid（或 1 大 + 2 小），每个 panel 解决一个问题：
 
-| Panel 类型 | 解决什么问题 | 案例 |
-|---|---|---|
-| **Pipeline / Flow Diagram** | 「这个 skill 的工作流程是什么？」| Nuwa 4 阶段 pipeline · Darwin autoresearch loop |
-| **Snapshot / State** | 「跑出来的真实数据长什么样？」| Darwin 8 维 rubric snapshot |
-| **Trajectory / Evolution** | 「多次运行后怎么变化？」| Darwin 5 代 hill-climb 曲线 |
-| **Examples / Gallery** | 「已经产出过哪些东西？」| Nuwa 21 personas gallery |
-| **Strip · Example I/O** | 「输入什么 → 输出什么」| Nuwa example strip：`› nuwa 蒸馏 费曼 → feynman.skill (21 min)` |
+| Panel 类型                      | 解决什么问题                 | 案例                                                           |
+|-------------------------------|------------------------|--------------------------------------------------------------|
+| **Pipeline / Flow Diagram**   | 「这个 skill 的工作流程是什么？」   | Nuwa 4 阶段 pipeline · Darwin autoresearch loop                |
+| **Snapshot / State**          | 「跑出来的真实数据长什么样？」        | Darwin 8 维 rubric snapshot                                   |
+| **Trajectory / Evolution**    | 「多次运行后怎么变化？」           | Darwin 5 代 hill-climb 曲线                                     |
+| **Examples / Gallery**        | 「已经产出过哪些东西？」           | Nuwa 21 personas gallery                                     |
+| **Strip · Example I/O**       | 「输入什么 → 输出什么」          | Nuwa example strip：`› nuwa 蒸馏 费曼 → feynman.skill (21 min)`   |
 
 **关键约束**：
 - 信息密度要够（每个 panel 都要承载差异化信息）
@@ -234,17 +234,17 @@ iframe.addEventListener('load', () => {
 
 ## 5 · 反 pattern 速查表
 
-| ❌ 反 pattern | ✅ 正 pattern |
-|---|---|
-| 默认 = 黑屏 ▶ overlay | 默认 = 静态 dashboard，▶ 是辅助 |
-| 4 个 step 横排同屏 fade in | 5 个 scene 全屏切换，每场只 focus 一件事 |
-| 复用模板换文案做不同 demo | 每个 demo 独立视觉语言（盖文案能区分） |
-| emoji / SVG 手画当素材 | gpt-image-2 大图 + extract_grid 抠图 |
-| 无 BGM 无 SFX | BGM + 11 SFX cues 双轨制 |
-| 用 setTimeout 链 schedule | requestAnimationFrame + 全局时间轴 T 对象 |
-| linear 动画 | Expo / cubic-bezier easing |
-| 没有 dev 工具 | `?seek=N` + `?autoplay=1` + REPLAY 按钮 |
-| iframe 内的按钮被父 click zone 吞 | click zone 加 top/bottom margin 给按钮让位 |
+| ❌ 反 pattern                  | ✅ 正 pattern                             |
+|------------------------------|-----------------------------------------|
+| 默认 = 黑屏 ▶ overlay            | 默认 = 静态 dashboard，▶ 是辅助                 |
+| 4 个 step 横排同屏 fade in        | 5 个 scene 全屏切换，每场只 focus 一件事            |
+| 复用模板换文案做不同 demo              | 每个 demo 独立视觉语言（盖文案能区分）                  |
+| emoji / SVG 手画当素材            | gpt-image-2 大图 + extract_grid 抠图        |
+| 无 BGM 无 SFX                  | BGM + 11 SFX cues 双轨制                   |
+| 用 setTimeout 链 schedule      | requestAnimationFrame + 全局时间轴 T 对象      |
+| linear 动画                    | Expo / cubic-bezier easing              |
+| 没有 dev 工具                    | `?seek=N` + `?autoplay=1` + REPLAY 按钮   |
+| iframe 内的按钮被父 click zone 吞   | click zone 加 top/bottom margin 给按钮让位    |
 
 ---
 
@@ -252,13 +252,13 @@ iframe.addEventListener('load', () => {
 
 按这套 pattern，一个完整 cinematic demo（含 dashboard）：
 
-| 任务 | 时间 |
-|---|---|
-| 设计 5-scene narrative + 视觉语言 | 30 分钟（要慎重，决定独立性）|
-| Dashboard 静态布局 + 内容 | 1 小时 |
-| Cinematic 5 scenes 实现 | 1.5 小时 |
-| Audio cues 调时序 + replay 按钮 | 30 分钟 |
-| Playwright 截图验证 5 个关键时刻 | 15 分钟 |
-| **单个 demo 总计** | **3-4 小时** |
+| 任务                            | 时间                 |
+|-------------------------------|--------------------|
+| 设计 5-scene narrative + 视觉语言   | 30 分钟（要慎重，决定独立性）   |
+| Dashboard 静态布局 + 内容           | 1 小时               |
+| Cinematic 5 scenes 实现         | 1.5 小时             |
+| Audio cues 调时序 + replay 按钮    | 30 分钟              |
+| Playwright 截图验证 5 个关键时刻       | 15 分钟              |
+| **单个 demo 总计**                | **3-4 小时**         |
 
 第二个 demo 复用框架但**视觉语言必须独立**，时间约 2-3 小时。

@@ -20,13 +20,13 @@
 
 ## Checklist Diario
 
-| Área                   | Item                  | Estado             |
-|------------------------|-----------------------|--------------------|
-| Refrigerador           | Temperatura           | ⬜                  |
-| Congelador             | Temperatura           | ⬜                  |
-| Mesones                | Limpieza              | ⬜                  |
-| Pisos                  | Limpieza              | ⬜                  |
-| Basura                 | Eliminada             | ⬜                  |
+| Área                       | Item                      | Estado                 |
+|----------------------------|---------------------------|------------------------|
+| Refrigerador               | Temperatura               | ⬜                      |
+| Congelador                 | Temperatura               | ⬜                      |
+| Mesones                    | Limpieza                  | ⬜                      |
+| Pisos                      | Limpieza                  | ⬜                      |
+| Basura                     | Eliminada                 | ⬜                      |
 
 ---
 

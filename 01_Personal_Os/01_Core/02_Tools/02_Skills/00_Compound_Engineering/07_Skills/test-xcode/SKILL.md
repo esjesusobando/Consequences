@@ -98,13 +98,13 @@ Call `get_sim_logs` with the simulator UUID. Look for:
 
 Pause for human input when testing touches flows that require device interaction.
 
-| Flow Type                      | What to Ask                                                       |
-|--------------------------------|-------------------------------------------------------------------|
-| Sign in with Apple             | "Please complete Sign in with Apple on the simulator"             |
-| Push notifications             | "Send a test push and confirm it appears"                         |
-| In-app purchases               | "Complete a sandbox purchase"                                     |
-| Camera/Photos                  | "Grant permissions and verify camera works"                       |
-| Location                       | "Allow location access and verify map updates"                    |
+| Flow Type                          | What to Ask                                                           |
+|------------------------------------|-----------------------------------------------------------------------|
+| Sign in with Apple                 | "Please complete Sign in with Apple on the simulator"                 |
+| Push notifications                 | "Send a test push and confirm it appears"                             |
+| In-app purchases                   | "Complete a sandbox purchase"                                         |
+| Camera/Photos                      | "Grant permissions and verify camera works"                           |
+| Location                           | "Allow location access and verify map updates"                        |
 
 Ask the user (using the platform's question tool — e.g., `AskUserQuestion` in Claude Code, `request_user_input` in Codex, `ask_user` in Gemini — or present numbered options and wait):
 
@@ -162,12 +162,12 @@ After all tests complete, present a summary:
 
 ### Screens Tested: [count]
 
-| Screen               | Status               | Notes                      |
-|----------------------|----------------------|----------------------------|
-| Launch               | Pass                 |                            |
-| Home                 | Pass                 |                            |
-| Settings             | Fail                 | Crash on tap               |
-| Profile              | Skip                 | Requires login             |
+| Screen                   | Status                   | Notes                          |
+|--------------------------|--------------------------|--------------------------------|
+| Launch                   | Pass                     |                                |
+| Home                     | Pass                     |                                |
+| Settings                 | Fail                     | Crash on tap                   |
+| Profile                  | Skip                     | Requires login                 |
 
 ### Console Errors: [count]
 - [List any errors found]

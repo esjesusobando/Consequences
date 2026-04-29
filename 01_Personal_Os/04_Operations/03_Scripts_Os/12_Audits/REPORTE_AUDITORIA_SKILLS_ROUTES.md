@@ -8,12 +8,12 @@
 
 ## 📊 RESUMEN EJECUTIVO
 
-| Métrica                                       | Valor                              |
-|-----------------------------------------------|------------------------------------|
-| **Referencias totales encontradas**           | 195                                |
-| **Archivos únicos con referencias**           | ~50+                               |
-| **Archivos en `.agent/02_Skills/`**           | 1,434                              |
-| **Riesgo de rotura**                          | 🟡 BAJO (mayormente docs)           |
+| Métrica                                           | Valor                                  |
+|---------------------------------------------------|----------------------------------------|
+| **Referencias totales encontradas**               | 195                                    |
+| **Archivos únicos con referencias**               | ~50+                                   |
+| **Archivos en `.agent/02_Skills/`**               | 1,434                                  |
+| **Riesgo de rotura**                              | 🟡 BAJO (mayormente docs)               |
 
 ---
 
@@ -21,12 +21,12 @@
 
 ### Referencias por Categoría
 
-| Categoría                   | Cantidad             | Ejemplos                                                                    |
-|-----------------------------|----------------------|-----------------------------------------------------------------------------|
-| **Documentación**           | ~140                 | CLAUDE.md, README.md, 01_Personal_Os/11_AGENTS.md, 04_Operations/*.md       |
-| **Configs**                 | ~30                  | .agent/01_Agents/*, .agent/03_Workflows/*                                   |
-| **Scripts**                 | ~5                   | 03_Scripts_Os/*                                                             |
-| **Procesos**                | ~20                  | 04_Operations/03_Process_Notes/*                                            |
+| Categoría                       | Cantidad                 | Ejemplos                                                                        |
+|---------------------------------|--------------------------|---------------------------------------------------------------------------------|
+| **Documentación**               | ~140                     | CLAUDE.md, README.md, 01_Personal_Os/11_AGENTS.md, 04_Operations/*.md           |
+| **Configs**                     | ~30                      | .agent/01_Agents/*, .agent/03_Workflows/*                                       |
+| **Scripts**                     | ~5                       | 03_Scripts_Os/*                                                                 |
+| **Procesos**                    | ~20                      | 04_Operations/03_Process_Notes/*                                                |
 
 ### Archivos Principales Afectados
 
@@ -82,11 +82,11 @@ La migración es mayormente documentación. El código que busca skills por ruta
 
 ## 📁 SCRIPTS GENERADOS
 
-| Script                                | Ubicación                          | Función                                 |
-|---------------------------------------|------------------------------------|-----------------------------------------|
-| `audit_skills_routes.py`              | 03_Scripts_Os/12_Audits/           | Auditoría Python                        |
-| `audit_skills_routes.ps1`             | 03_Scripts_Os/12_Audits/           | Auditoría PowerShell                    |
-| `migrate_skills_routes.ps1`           | 03_Scripts_Os/12_Audits/           | Script de migración (dry-run)           |
+| Script                                    | Ubicación                              | Función                                     |
+|-------------------------------------------|----------------------------------------|---------------------------------------------|
+| `audit_skills_routes.py`                  | 03_Scripts_Os/12_Audits/               | Auditoría Python                            |
+| `audit_skills_routes.ps1`                 | 03_Scripts_Os/12_Audits/               | Auditoría PowerShell                        |
+| `migrate_skills_routes.ps1`               | 03_Scripts_Os/12_Audits/               | Script de migración (dry-run)               |
 
 ---
 

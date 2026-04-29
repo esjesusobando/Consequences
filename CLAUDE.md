@@ -209,61 +209,61 @@ Think_Different/
 ```
 
 ### 4. INVENTARIO HUB SCRIPTS (01_Personal_Os/04_Operations/03_Scripts_Os/)
-| Hub                | Script                      | Proposito                                             |
-|--------------------|-----------------------------|-------------------------------------------------------|
-| **Sound Engine**   | `00_Sound_Engine.py`        | Motor de notificaciones sonoras del sistema           |
-| **Auditor**        | `01_Auditor_Hub.py`         | System validation: structure, links, skills, health   |
-| **Git**            | `02_Git_Hub.py`             | Git operations + structure audits                     |
-| **AIPM**           | `03_AIPM_Hub.py`            | AI Performance Monitoring                             |
-| **Ritual**         | `04_Ritual_Hub.py`          | Session rituals: open, close, recovery                |
-| **Validator**      | `05_Validator_Hub.py`       | Code validation: rules, stack, patterns               |
-| **Tool**           | `06_Tool_Hub.py`            | Tool integration and management                       |
-| **Integration**    | `07_Integration_Hub.py`     | MCP and external integrations                         |
-| **Workflow**       | `08_Workflow_Hub.py`        | Workflow automation                                   |
-| **Data**           | `09_Data_Hub.py`            | Data processing and analytics                         |
-| **General**        | `10_General_Hub.py`         | General utilities                                     |
-| **Auto Learn**     | `11_Auto_Learn_Hub.py`      | Motor de automejora y aprendizaje                     |
-| **Context Bar**    | `13_Auditors_Os/scripts/12_Context_Usage_Bar.py` | Barra de uso de contexto (sub-script de 13_Auditors_Os) |
-| **Beautify**       | `13_Auditors_Os/scripts/13_Beautify_Tables.py`   | Formateo de tablas markdown (sub-script de 13_Auditors_Os) |
-| **Health Metrics** | `14_Health_Metrics_Hub.py`  | Métricas de salud del OS                              |
-| **MCP Sync**       | `15_MCP_Sync_Hub.py`        | Detecta y reporta drift entre Claude Code y OpenCode  |
-| **Agent Mirror**   | `16_Agent_Mirror_Hub.py`    | Sincroniza agentes source → backup                    |
-| **Watchdog**       | `17_Watchdog_Hub.py`        | Health watchdog — valida integridad del manifest      |
-| **Telemetry**      | `18_Telemetry_Hub.py`       | Dashboard ASCII de métricas de uso por HUB            |
-| **Agent Sync**     | `19_Agent_Sync_Hub.py`      | Sincroniza .agent/01_Agents/ con 01_Core/02_Tools/01_Agents/ |
-| **System Mapper**  | `20_System_Mapper_Hub.py`   | Genera 7 manifests del OS via os.walk                 |
-| **Legacy Cleanup** | `21_Legacy_Path_Cleanup.py` | Escanea y limpia paths legacy de Consequences 2.x     |
-| **Skill Frontmatter** | `22_Validate_Skill_Frontmatter.py` | Detecta skills sin frontmatter YAML            |
-| **Preview Gen**    | `23_Preview_Generator.js`   | Generador de previews                                 |
+| Hub                     | Script                                             | Proposito                                                      |
+|-------------------------|----------------------------------------------------|----------------------------------------------------------------|
+| **Sound Engine**        | `00_Sound_Engine.py`                               | Motor de notificaciones sonoras del sistema                    |
+| **Auditor**             | `01_Auditor_Hub.py`                                | System validation: structure, links, skills, health            |
+| **Git**                 | `02_Git_Hub.py`                                    | Git operations + structure audits                              |
+| **AIPM**                | `03_AIPM_Hub.py`                                   | AI Performance Monitoring                                      |
+| **Ritual**              | `04_Ritual_Hub.py`                                 | Session rituals: open, close, recovery                         |
+| **Validator**           | `05_Validator_Hub.py`                              | Code validation: rules, stack, patterns                        |
+| **Tool**                | `06_Tool_Hub.py`                                   | Tool integration and management                                |
+| **Integration**         | `07_Integration_Hub.py`                            | MCP and external integrations                                  |
+| **Workflow**            | `08_Workflow_Hub.py`                               | Workflow automation                                            |
+| **Data**                | `09_Data_Hub.py`                                   | Data processing and analytics                                  |
+| **General**             | `10_General_Hub.py`                                | General utilities                                              |
+| **Auto Learn**          | `11_Auto_Learn_Hub.py`                             | Motor de automejora y aprendizaje                              |
+| **Context Bar**         | `13_Auditors_Os/scripts/12_Context_Usage_Bar.py`   | Barra de uso de contexto (sub-script de 13_Auditors_Os)        |
+| **Beautify**            | `13_Auditors_Os/scripts/13_Beautify_Tables.py`     | Formateo de tablas markdown (sub-script de 13_Auditors_Os)     |
+| **Health Metrics**      | `14_Health_Metrics_Hub.py`                         | Métricas de salud del OS                                       |
+| **MCP Sync**            | `15_MCP_Sync_Hub.py`                               | Detecta y reporta drift entre Claude Code y OpenCode           |
+| **Agent Mirror**        | `16_Agent_Mirror_Hub.py`                           | Sincroniza agentes source → backup                             |
+| **Watchdog**            | `17_Watchdog_Hub.py`                               | Health watchdog — valida integridad del manifest               |
+| **Telemetry**           | `18_Telemetry_Hub.py`                              | Dashboard ASCII de métricas de uso por HUB                     |
+| **Agent Sync**          | `19_Agent_Sync_Hub.py`                             | Sincroniza .agent/01_Agents/ con 01_Core/02_Tools/01_Agents/   |
+| **System Mapper**       | `20_System_Mapper_Hub.py`                          | Genera 7 manifests del OS via os.walk                          |
+| **Legacy Cleanup**      | `21_Legacy_Path_Cleanup.py`                        | Escanea y limpia paths legacy de Consequences 2.x              |
+| **Skill Frontmatter**   | `22_Validate_Skill_Frontmatter.py`                 | Detecta skills sin frontmatter YAML                            |
+| **Preview Gen**         | `23_Preview_Generator.js`                          | Generador de previews                                          |
 
 ### 📚 Documentación del Sistema
 
-| Documento                         | Ubicación                                                                                    |
-|-----------------------------------|----------------------------------------------------------------------------------------------|
-| **Rules Index**                   | `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md`                                             |
-| **Skills Index**                  | `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                                        |
-| **SDD Registry**                  | `.atl/skill-registry.md`                                                                     |
-| **Migration Plan**                | `00_Plan_Migración_Os.md` (raíz)                                                             |
+| Documento                             | Ubicación                                                                                        |
+|---------------------------------------|--------------------------------------------------------------------------------------------------|
+| **Rules Index**                       | `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md`                                                 |
+| **Skills Index**                      | `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                                            |
+| **SDD Registry**                      | `.atl/skill-registry.md`                                                                         |
+| **Migration Plan**                    | `00_Plan_Migración_Os.md` (raíz)                                                                 |
 
 ### 5. SKILLS DISPONIBLES (13 Áreas en 01_Personal_Os/01_Core/02_Tools/02_Skills/)
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
-| Área                                | Descripción                                                          | Ubicación                              |
-|-------------------------------------|----------------------------------------------------------------------|----------------------------------------|
-| **00_Compound_Engineering**         | Core CE (Spider, Avengers)                                           | `00_Compound_Engineering/`             |
-| **00_Personal_Os_Stack**            | Stack base OS + Gcierr                                               | `00_Personal_Os_Stack/`                |
-| **00_Skill_Auditor**                | Auditoría de skills                                                  | `00_Skill_Auditor/`                    |
-| **01_Creacion_Contenidos**          | Brand, YouTube, SEO, Carruseles                                      | `01_Creacion_Contenidos/`              |
-| **02_Diseno_Ui_Ux**                 | Product Design, UI/UX, Taste, Minimal                               | `02_Diseno_Ui_Ux/`                     |
-| **03_Video_Media**                  | Video Intel, James Cameron, Remotion, Audio                         | `03_Video_Media/`                      |
-| **04_Automatizacion**               | N8N, Firecrawl                                                       | `04_Automatizacion/`                   |
-| **05_Workflows**                    | Agent Teams, PM, Orchestrator                                        | `05_Workflows/`                        |
-| **06_Tools**                        | Skill Creator, Testing, DevOps, QMD, System Master, Data Analyst     | `06_Tools/`                            |
-| **07_Personal_Os**                  | Life OS, Hillary, Rituales                                           | `07_Personal_Os/`                      |
-| **08_Invictus_Web**                 | Playwright, Superpowers, Browser Automation                         | `08_Invictus_Web/`                     |
-| **09_Legacy_Archive**               | Skills obsoletas v1.x                                               | `09_Legacy_Archive/`                   |
-| **INDEX_AREA_FUNCTIONAL.md**        | Índice funcional de todas las áreas (meta-documento)                | `INDEX_AREA_FUNCTIONAL.md`             |
+| Área                                    | Descripción                                                              | Ubicación                                  |
+|-----------------------------------------|--------------------------------------------------------------------------|--------------------------------------------|
+| **00_Compound_Engineering**             | Core CE (Spider, Avengers)                                               | `00_Compound_Engineering/`                 |
+| **00_Personal_Os_Stack**                | Stack base OS + Gcierr                                                   | `00_Personal_Os_Stack/`                    |
+| **00_Skill_Auditor**                    | Auditoría de skills                                                      | `00_Skill_Auditor/`                        |
+| **01_Creacion_Contenidos**              | Brand, YouTube, SEO, Carruseles                                          | `01_Creacion_Contenidos/`                  |
+| **02_Diseno_Ui_Ux**                     | Product Design, UI/UX, Taste, Minimal                                    | `02_Diseno_Ui_Ux/`                         |
+| **03_Video_Media**                      | Video Intel, James Cameron, Remotion, Audio                              | `03_Video_Media/`                          |
+| **04_Automatizacion**                   | N8N, Firecrawl                                                           | `04_Automatizacion/`                       |
+| **05_Workflows**                        | Agent Teams, PM, Orchestrator                                            | `05_Workflows/`                            |
+| **06_Tools**                            | Skill Creator, Testing, DevOps, QMD, System Master, Data Analyst         | `06_Tools/`                                |
+| **07_Personal_Os**                      | Life OS, Hillary, Rituales                                               | `07_Personal_Os/`                          |
+| **08_Invictus_Web**                     | Playwright, Superpowers, Browser Automation                              | `08_Invictus_Web/`                         |
+| **09_Legacy_Archive**                   | Skills obsoletas v1.x                                                    | `09_Legacy_Archive/`                       |
+| **INDEX_AREA_FUNCTIONAL.md**            | Índice funcional de todas las áreas (meta-documento)                     | `INDEX_AREA_FUNCTIONAL.md`                 |
 </architecture_routing>
 
 ---
@@ -293,20 +293,20 @@ Think_Different/
 
 ## 📊 ESTADO DEL SISTEMA
 <system_state_snapshot>
-| Categoria                        | Estado                | Notas                                                                     |
-|----------------------------------|-----------------------|---------------------------------------------------------------------------|
-| **Overall Health**               | **✅ PURE GREEN**      | v3.1 Consequences — JARVIS integrated 2026-04-27                          |
-| Estructura (4 raíz)              | ✅ PASS                | Winter / Personal_Os / Playground / Resultado                             |
-| HUBs (00-18)                    | ✅ ACTIVE              | 19 HUBs + 4 aux = 23 scripts en 03_Scripts_Os                           |
-| Skills (13 áreas)                | ✅ OPERATIONAL         | 297+ skills — 13 áreas funcionales                                       |
-| Agent Matrix                     | ✅ ACTIVE              | 52 agents en .atl/agent-skill-matrix.yaml                               |
-| Manifest (7 archivos)            | ✅ VALIDATED           | 00_Manifest/ en 02_Agent_Teams_Lite/                                    |
-| MCPs (35 Claude / 18 OpenCode) | ✅ SYNCED              | Drift: verificar con 15_MCP_Sync_Hub.py                                 |
-| Agent Mirror                     | ✅ SYNCED              | 54/54 agentes sincronizados (source → backup)                             |
-| Watchdog                         | ✅ ACTIVE              | 17_Watchdog_Hub.py monitoreando                                           |
-| Telemetry                        | ✅ ACTIVE              | 18_Telemetry_Hub.py recolectando                                         |
-| OS_DIRECTORY.md                  | ✅ CREATED             | <2KB en raíz — JARVIS discovery                                          |
-| Agent Teams Protocol             | ✅ ACTIVE              | Super Campeones — comunicación inter-agente                               |
+| Categoria                            | Estado                    | Notas                                                                         |
+|--------------------------------------|---------------------------|-------------------------------------------------------------------------------|
+| **Overall Health**                   | **✅ PURE GREEN**          | v3.1 Consequences — JARVIS integrated 2026-04-27                              |
+| Estructura (4 raíz)                  | ✅ PASS                    | Winter / Personal_Os / Playground / Resultado                                 |
+| HUBs (00-18)                         | ✅ ACTIVE                  | 19 HUBs + 4 aux = 23 scripts en 03_Scripts_Os                                 |
+| Skills (13 áreas)                    | ✅ OPERATIONAL             | 297+ skills — 13 áreas funcionales                                            |
+| Agent Matrix                         | ✅ ACTIVE                  | 52 agents en .atl/agent-skill-matrix.yaml                                     |
+| Manifest (7 archivos)                | ✅ VALIDATED               | 00_Manifest/ en 02_Agent_Teams_Lite/                                          |
+| MCPs (35 Claude / 18 OpenCode)       | ✅ SYNCED                  | Drift: verificar con 15_MCP_Sync_Hub.py                                       |
+| Agent Mirror                         | ✅ SYNCED                  | 54/54 agentes sincronizados (source → backup)                                 |
+| Watchdog                             | ✅ ACTIVE                  | 17_Watchdog_Hub.py monitoreando                                               |
+| Telemetry                            | ✅ ACTIVE                  | 18_Telemetry_Hub.py recolectando                                              |
+| OS_DIRECTORY.md                      | ✅ CREATED                 | <2KB en raíz — JARVIS discovery                                               |
+| Agent Teams Protocol                 | ✅ ACTIVE                  | Super Campeones — comunicación inter-agente                                   |
 
 ---
 
@@ -344,22 +344,22 @@ cat .atl/agent-skill-matrix.yaml
 ```
 
 ### Ecosistemas Integrados
-| Ecosistema | Ubicación |
-|------------|-----------|
-| Personal OS Core | `00_Winter_is_Coming/AGENTS.md` |
-| Compound Engineering | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/` |
-| Dream Team | `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/` |
-| Specialists | `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/` |
-| Growth | `01_Personal_Os/01_Core/02_Tools/01_Agents/03_Growth/` |
+| Ecosistema             | Ubicación                                                              |
+|------------------------|------------------------------------------------------------------------|
+| Personal OS Core       | `00_Winter_is_Coming/AGENTS.md`                                        |
+| Compound Engineering   | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/`   |
+| Dream Team             | `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/`             |
+| Specialists            | `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/`   |
+| Growth                 | `01_Personal_Os/01_Core/02_Tools/01_Agents/03_Growth/`                 |
 
 </jarvis_3.0>
 
 ### Configuración MCP (dual)
 
-| Herramienta       | Config activa                        | Source (backup)                                                      |
-|-------------------|--------------------------------------|----------------------------------------------------------------------|
-| **Claude Code**   | `.mcp.json` (raíz del proyecto)      | `01_Personal_Os/01_Core/02_Tools/03_Mcp/01_Claude_Code/mcp.json`     |
-| **OpenCode**      | `~/.config/opencode/opencode.json`   | `01_Personal_Os/01_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json`   |
+| Herramienta           | Config activa                            | Source (backup)                                                          |
+|-----------------------|------------------------------------------|--------------------------------------------------------------------------|
+| **Claude Code**       | `.mcp.json` (raíz del proyecto)          | `01_Personal_Os/01_Core/02_Tools/03_Mcp/01_Claude_Code/mcp.json`         |
+| **OpenCode**          | `~/.config/opencode/opencode.json`       | `01_Personal_Os/01_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json`       |
 
 > ⚠️ Al modificar MCPs: actualizar SIEMPRE el source Y el config activo correspondiente.
 

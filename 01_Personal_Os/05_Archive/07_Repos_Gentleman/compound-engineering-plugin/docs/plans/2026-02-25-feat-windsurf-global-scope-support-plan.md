@@ -21,14 +21,14 @@ After auditing the implementation against `docs/specs/windsurf.md`, two signific
 
 ### Final Component Mapping (per spec)
 
-| Claude Code                     | Windsurf                          | Output Path                                                                           | Invocation                             |
-|---------------------------------|-----------------------------------|---------------------------------------------------------------------------------------|----------------------------------------|
-| Agents (`.md`)                  | Skills                            | `skills/{name}/SKILL.md`                                                              | `@skill-name` or automatic             |
-| Commands (`.md`)                | Workflows (flat)                  | `global_workflows/{name}.md` (global) / `workflows/{name}.md` (workspace)             | `/{workflow-name}`                     |
-| Skills (`SKILL.md`)             | Skills (pass-through)             | `skills/{name}/SKILL.md`                                                              | `@skill-name`                          |
-| MCP servers                     | `mcp_config.json`                 | `mcp_config.json`                                                                     | N/A                                    |
-| Hooks                           | Skipped with warning              | N/A                                                                                   | N/A                                    |
-| CLAUDE.md                       | Skipped                           | N/A                                                                                   | N/A                                    |
+| Claude Code                         | Windsurf                              | Output Path                                                                               | Invocation                                 |
+|-------------------------------------|---------------------------------------|-------------------------------------------------------------------------------------------|--------------------------------------------|
+| Agents (`.md`)                      | Skills                                | `skills/{name}/SKILL.md`                                                                  | `@skill-name` or automatic                 |
+| Commands (`.md`)                    | Workflows (flat)                      | `global_workflows/{name}.md` (global) / `workflows/{name}.md` (workspace)                 | `/{workflow-name}`                         |
+| Skills (`SKILL.md`)                 | Skills (pass-through)                 | `skills/{name}/SKILL.md`                                                                  | `@skill-name`                              |
+| MCP servers                         | `mcp_config.json`                     | `mcp_config.json`                                                                         | N/A                                        |
+| Hooks                               | Skipped with warning                  | N/A                                                                                       | N/A                                        |
+| CLAUDE.md                           | Skipped                               | N/A                                                                                       | N/A                                        |
 
 ### Files Changed in Revision
 

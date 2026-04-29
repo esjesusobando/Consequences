@@ -7,15 +7,15 @@
 
 ## 🕵️ Catálogo de Agentes (SOP)
 
-| #               | Agente                 | Especialidad             | Responsabilidad                                              |
-|-----------------|------------------------|--------------------------|--------------------------------------------------------------|
-| 01              | Architect              | Arquitectura             | Diseño de sistemas y reglas SOTA.                            |
-| 02              | TDD Spec               | Testing                  | Fase RED (Tests fallando).                                   |
-| 03              | Implementer            | Codificación             | Fase GREEN (Código funcional).                               |
-| 06              | GP Manager             | Git/PR                   | Gestión de versiones y documentación de PRs.                 |
-| 10              | Orchestrator           | Orquestación             | Liderazgo de equipos y flujos TDD.                           |
-| 11              | AIPM Judge             | Calidad                  | Auditoría adversarial y métricas.                            |
-| 13              | Hillary                | Life OS                  | Proactividad, rutinas y bienestar (reporta a #10).           |
+| #                   | Agente                     | Especialidad                 | Responsabilidad                                                  |
+|---------------------|----------------------------|------------------------------|------------------------------------------------------------------|
+| 01                  | Architect                  | Arquitectura                 | Diseño de sistemas y reglas SOTA.                                |
+| 02                  | TDD Spec                   | Testing                      | Fase RED (Tests fallando).                                       |
+| 03                  | Implementer                | Codificación                 | Fase GREEN (Código funcional).                                   |
+| 06                  | GP Manager                 | Git/PR                       | Gestión de versiones y documentación de PRs.                     |
+| 10                  | Orchestrator               | Orquestación                 | Liderazgo de equipos y flujos TDD.                               |
+| 11                  | AIPM Judge                 | Calidad                      | Auditoría adversarial y métricas.                                |
+| 13                  | Hillary                    | Life OS                      | Proactividad, rutinas y bienestar (reporta a #10).               |
 
 ## 🤝 Protocolos de Colaboración
 - **Gentleman vs Hillary**: El "Orchestrator" (Gentleman) delega la gestión del backlog personal y los bloques de energía a **Hillary**. Ella filtra la información para que Gentleman se enfoque en la arquitectura.

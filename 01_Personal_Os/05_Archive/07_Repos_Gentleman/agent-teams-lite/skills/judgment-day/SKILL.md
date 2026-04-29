@@ -192,12 +192,12 @@ Return a summary:
 
 ### Round {N} — Verdict
 
-| Finding                                    | Judge A             | Judge B             | Severity             | Status                     |
-|--------------------------------------------|---------------------|---------------------|----------------------|----------------------------|
-| Missing null check in auth.go:42           | ✅                   | ✅                   | CRITICAL             | Confirmed                  |
-| Race condition in worker.go:88             | ✅                   | ❌                   | WARNING              | Suspect (A only)           |
-| Naming mismatch in handler.go:15           | ❌                   | ✅                   | SUGGESTION           | Suspect (B only)           |
-| Error swallowed in db.go:201               | ✅                   | ✅                   | CRITICAL             | Confirmed                  |
+| Finding                                        | Judge A                 | Judge B                 | Severity                 | Status                         |
+|------------------------------------------------|-------------------------|-------------------------|--------------------------|--------------------------------|
+| Missing null check in auth.go:42               | ✅                       | ✅                       | CRITICAL                 | Confirmed                      |
+| Race condition in worker.go:88                 | ✅                       | ❌                       | WARNING                  | Suspect (A only)               |
+| Naming mismatch in handler.go:15               | ❌                       | ✅                       | SUGGESTION               | Suspect (B only)               |
+| Error swallowed in db.go:201                   | ✅                       | ✅                       | CRITICAL                 | Confirmed                      |
 
 **Confirmed issues**: 2 CRITICAL
 **Suspect issues**: 1 WARNING, 1 SUGGESTION
@@ -228,9 +228,9 @@ After 2 fix iterations, both judges still report issues.
 Manual review required before proceeding.
 
 ### Remaining Issues
-| Finding                 | Judge A             | Judge B             | Severity             |
-|-------------------------|---------------------|---------------------|----------------------|
-| {description}           | ✅                   | ✅                   | CRITICAL             |
+| Finding                     | Judge A                 | Judge B                 | Severity                 |
+|-----------------------------|-------------------------|-------------------------|--------------------------|
+| {description}               | ✅                       | ✅                       | CRITICAL                 |
 
 ### History
 - Round 1: {N} confirmed issues found

@@ -88,14 +88,14 @@ return [{"json": data}]
 
 ### Common Library Replacements
 
-| Need                                     | ❌ External Library                            | ✅ Alternative                                               |
-|------------------------------------------|-----------------------------------------------|-------------------------------------------------------------|
-| HTTP requests                            | `requests`                                    | Use HTTP Request node or JavaScript                         |
-| Data analysis                            | `pandas`                                      | Use Python list comprehensions                              |
-| Database                                 | `psycopg2`, `pymongo`                         | Use n8n database nodes                                      |
-| Web scraping                             | `beautifulsoup4`                              | Use HTML Extract node                                       |
-| Excel                                    | `openpyxl`                                    | Use Spreadsheet File node                                   |
-| Image processing                         | `pillow`                                      | Use external API or node                                    |
+| Need                                         | ❌ External Library                                | ✅ Alternative                                                   |
+|----------------------------------------------|---------------------------------------------------|-----------------------------------------------------------------|
+| HTTP requests                                | `requests`                                        | Use HTTP Request node or JavaScript                             |
+| Data analysis                                | `pandas`                                          | Use Python list comprehensions                                  |
+| Database                                     | `psycopg2`, `pymongo`                             | Use n8n database nodes                                          |
+| Web scraping                                 | `beautifulsoup4`                                  | Use HTML Extract node                                           |
+| Excel                                        | `openpyxl`                                        | Use Spreadsheet File node                                       |
+| Image processing                             | `pillow`                                          | Use external API or node                                        |
 
 ### Available Standard Library Modules
 
@@ -513,15 +513,15 @@ Before running your Python Code node, verify:
 
 ## Quick Fix Reference
 
-| Error                                                         | Quick Fix                                                                      |
-|---------------------------------------------------------------|--------------------------------------------------------------------------------|
-| `ModuleNotFoundError`                                         | Use JavaScript or HTTP Request node instead                                    |
-| `KeyError: 'field'`                                           | Change `data["field"]` to `data.get("field", default)`                         |
-| `IndexError: list index out of range`                         | Check `if len(items) > 0:` before `items[0]`                                   |
-| Empty output                                                  | Add `return [{"json": {...}}]` at end                                          |
-| `AttributeError: 'NoneType'`                                  | Check mode setting or verify `_input.item` exists                              |
-| Wrong format error                                            | Wrap result: `return [{"json": result}]`                                       |
-| Webhook KeyError                                              | Access via `_json.get("body", {})`                                             |
+| Error                                                             | Quick Fix                                                                          |
+|-------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| `ModuleNotFoundError`                                             | Use JavaScript or HTTP Request node instead                                        |
+| `KeyError: 'field'`                                               | Change `data["field"]` to `data.get("field", default)`                             |
+| `IndexError: list index out of range`                             | Check `if len(items) > 0:` before `items[0]`                                       |
+| Empty output                                                      | Add `return [{"json": {...}}]` at end                                              |
+| `AttributeError: 'NoneType'`                                      | Check mode setting or verify `_input.item` exists                                  |
+| Wrong format error                                                | Wrap result: `return [{"json": result}]`                                           |
+| Webhook KeyError                                                  | Access via `_json.get("body", {})`                                                 |
 
 ---
 

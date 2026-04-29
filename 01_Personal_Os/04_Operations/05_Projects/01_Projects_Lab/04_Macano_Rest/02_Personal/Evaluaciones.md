@@ -4,31 +4,31 @@
 
 ### Criterios
 
-| Criterio                      | Peso             | Descripción                      |
-|-------------------------------|------------------|----------------------------------|
-| Calidad del trabajo           | 30%              | Precisión y excelencia           |
-| Puntualidad                   | 20%              | Llegar a tiempo                  |
-| Trabajo en equipo             | 20%              | Colaboración                     |
-| Actitud                       | 15%              | Profesionalismo                  |
-| Comunicación                  | 15%              | Claridad                         |
+| Criterio                          | Peso                 | Descripción                          |
+|-----------------------------------|----------------------|--------------------------------------|
+| Calidad del trabajo               | 30%                  | Precisión y excelencia               |
+| Puntualidad                       | 20%                  | Llegar a tiempo                      |
+| Trabajo en equipo                 | 20%                  | Colaboración                         |
+| Actitud                           | 15%                  | Profesionalismo                      |
+| Comunicación                      | 15%                  | Claridad                             |
 
 ---
 
 ## Evaluaciones Pendientes
 
-| Empleado             | Fecha evaluación            | Estado              |
-|----------------------|-----------------------------|---------------------|
-|                      |                             | Pendiente           |
-|                      |                             | Pendiente           |
-|                      |                             | Pendiente           |
+| Empleado                 | Fecha evaluación                | Estado                  |
+|--------------------------|---------------------------------|-------------------------|
+|                          |                                 | Pendiente               |
+|                          |                                 | Pendiente               |
+|                          |                                 | Pendiente               |
 
 ---
 
 ## Historial de Evaluaciones
 
-| Fecha             | Empleado             | Score             | Comentarios             |
-|-------------------|----------------------|-------------------|-------------------------|
-|                   |                      |                   |                         |
+| Fecha                 | Empleado                 | Score                 | Comentarios                 |
+|-----------------------|--------------------------|-----------------------|-----------------------------|
+|                       |                          |                       |                             |
 
 ---
 

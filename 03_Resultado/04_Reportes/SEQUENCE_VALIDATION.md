@@ -7,18 +7,18 @@
 
 ## VALIDATION SUMMARY
 
-| Location | Status | Notes |
-|:---------|:-------|:------|
-| `01_Personal_Os/` | ✅ OK | 01-05, sin gaps |
-| `01_Core/` | ✅ OK | 00_ fijo + 01-02 |
-| `02_Tools/` | ✅ OK | 01-09, sin gaps |
-| `02_Skills/ (areas)` | ⚠️ 00_ Multiple | Compound, Stack, Auditor = quemadas |
-| `03_Task/` | ✅ OK | 00_ fijo + 01-02 |
-| `04_Operations/` | ✅ OK | 00_ fijo + 01-05 |
-| `.agent/` | ✅ OK | 00_ fijo + 01-05 |
-| `.claude/` | 🔴 GAP | Falta 05 |
-| `02_Playground/` | ✅ OK | 00_ fijo + 01-06 |
-| `03_Resultado/` | ⚠️ 00_ x2 | Output_Skills + Recursos_Varios |
+| Location               | Status            | Notes                                 |
+|------------------------|-------------------|---------------------------------------|
+| `01_Personal_Os/`      | ✅ OK              | 01-05, sin gaps                       |
+| `01_Core/`             | ✅ OK              | 00_ fijo + 01-02                      |
+| `02_Tools/`            | ✅ OK              | 01-09, sin gaps                       |
+| `02_Skills/ (areas)`   | ⚠️ 00_ Multiple   | Compound, Stack, Auditor = quemadas   |
+| `03_Task/`             | ✅ OK              | 00_ fijo + 01-02                      |
+| `04_Operations/`       | ✅ OK              | 00_ fijo + 01-05                      |
+| `.agent/`              | ✅ OK              | 00_ fijo + 01-05                      |
+| `.claude/`             | 🔴 GAP             | Falta 05                              |
+| `02_Playground/`       | ✅ OK              | 00_ fijo + 01-06                      |
+| `03_Resultado/`        | ⚠️ 00_ x2         | Output_Skills + Recursos_Varios       |
 
 ---
 
@@ -64,25 +64,25 @@ Falta: 05_???
 
 ## CLEAN LOCATIONS (no action needed)
 
-| Location | Sequence | Status |
-|:---------|:---------|:-------|
-| `01_Personal_Os/` | 01-05 | ✅ PERFECTO |
-| `01_Core/02_Tools/` | 01-09 | ✅ PERFECTO |
-| `01_Personal_Os/03_Task/` | 00_, 01-02 | ✅ PERFECTO |
-| `01_Personal_Os/04_Operations/` | 00_, 01-05 | ✅ PERFECTO |
-| `.agent/01_Agents/` | 01-06 | ✅ PERFECTO |
-| `.agent/02_Skills/` | 01-05 (subárbol) | ✅ PERFECTO |
-| `02_Playground/` | 00_, 01-06 | ✅ PERFECTO |
-| `03_Resultado/01_Planes` | 01-04 | ✅ PERFECTO |
+| Location                          | Sequence           | Status       |
+|-----------------------------------|--------------------|--------------|
+| `01_Personal_Os/`                 | 01-05              | ✅ PERFECTO   |
+| `01_Core/02_Tools/`               | 01-09              | ✅ PERFECTO   |
+| `01_Personal_Os/03_Task/`         | 00_, 01-02         | ✅ PERFECTO   |
+| `01_Personal_Os/04_Operations/`   | 00_, 01-05         | ✅ PERFECTO   |
+| `.agent/01_Agents/`               | 01-06              | ✅ PERFECTO   |
+| `.agent/02_Skills/`               | 01-05 (subárbol)   | ✅ PERFECTO   |
+| `02_Playground/`                  | 00_, 01-06         | ✅ PERFECTO   |
+| `03_Resultado/01_Planes`          | 01-04              | ✅ PERFECTO   |
 
 ---
 
 ## ACTION ITEMS
 
-| Priority | Issue | Action |
-|:---------|:------|:-------|
-| 🟡 MED | `.claude/` gap 05 | Investigar carpeta faltante |
-| 🟢 LOW | `03_Resultado/` 2x 00_ | Confirmar si intencional |
+| Priority     | Issue                    | Action                        |
+|--------------|--------------------------|-------------------------------|
+| 🟡 MED        | `.claude/` gap 05        | Investigar carpeta faltante   |
+| 🟢 LOW        | `03_Resultado/` 2x 00_   | Confirmar si intencional      |
 
 **Total issues:** 2 (ninguno crítico)
 **Carpetas quemadas (00_):** 8 áreas en skills + 4 en operations + rules + templates + momentum

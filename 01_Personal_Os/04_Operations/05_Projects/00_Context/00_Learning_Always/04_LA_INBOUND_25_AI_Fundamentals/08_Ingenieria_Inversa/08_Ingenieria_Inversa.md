@@ -19,12 +19,12 @@ Dharmesh usa una metáfora efectiva:
 
 ### Por Qué Esta Metáfora Funciona
 
-| Elemento            | Equivalente LLM             | Por qué funciona               |
-|---------------------|-----------------------------|--------------------------------|
-| Knobs               | Parámetros (billones)       | Representan conocimiento       |
-| Turning knobs       | Training                    | Ajusta probabilidades          |
-| Stereo              | LLM                         | "Tuned" para una tarea         |
-| Music output        | Texto/respuesta             | Resultado final                |
+| Elemento                | Equivalente LLM                 | Por qué funciona                   |
+|-------------------------|---------------------------------|------------------------------------|
+| Knobs                   | Parámetros (billones)           | Representan conocimiento           |
+| Turning knobs           | Training                        | Ajusta probabilidades              |
+| Stereo                  | LLM                             | "Tuned" para una tarea             |
+| Music output            | Texto/respuesta                 | Resultado final                    |
 
 ---
 

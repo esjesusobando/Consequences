@@ -80,12 +80,12 @@ Mostrá la interfaz a alguien por 5 segundos. Preguntá: "¿Qué hacés para [ob
 
 Cuando el diseño se nota, hay un costo:
 
-| Costo                     | Ejemplo                                       |
-|---------------------------|-----------------------------------------------|
-| Cognitivo                 | "Dónde está el botón de guardar?"             |
-| Temporal                  | "Cómo vuelvo atrás?"                          |
-| Emocional                 | "Esto es confuse"                             |
-| De conversion             | Usuario abandona el proceso                   |
+| Costo                         | Ejemplo                                           |
+|-------------------------------|---------------------------------------------------|
+| Cognitivo                     | "Dónde está el botón de guardar?"                 |
+| Temporal                      | "Cómo vuelvo atrás?"                              |
+| Emocional                     | "Esto es confuse"                                 |
+| De conversion                 | Usuario abandona el proceso                       |
 
 Cada vez que el usuario nota el diseño, paga un peaje.
 
@@ -130,12 +130,12 @@ Diseñá para que nunca tengan que pensar en el diseño.
 
 ## Meta
 
-| Dato                         | Valor                                                          |
-|------------------------------|----------------------------------------------------------------|
-| **Origen**                   | 14 Reflexiones Rápidas — Insight #1                            |
-| **Desarrollado**             | 2026-03-27                                                     |
-| **Formato**                  | Blog post / LinkedIn article                                   |
-| **Tags**                     | `#diseño` `#ux` `#productdesign` `#designthinking`             |
+| Dato                             | Valor                                                              |
+|----------------------------------|--------------------------------------------------------------------|
+| **Origen**                       | 14 Reflexiones Rápidas — Insight #1                                |
+| **Desarrollado**                 | 2026-03-27                                                         |
+| **Formato**                      | Blog post / LinkedIn article                                       |
+| **Tags**                         | `#diseño` `#ux` `#productdesign` `#designthinking`                 |
 
 ---
 

@@ -8,23 +8,23 @@ Full command reference for Gentleman Guardian Angel.
 
 ## Commands Table
 
-| Command                               | Description                                                           | Example                                   |
-|---------------------------------------|-----------------------------------------------------------------------|-------------------------------------------|
-| `init`                                | Create sample `.gga` config file                                      | `gga init`                                |
-| `install`                             | Install git pre-commit hook (default)                                 | `gga install`                             |
-| `install --commit-msg`                | Install git commit-msg hook (for commit message validation)           | `gga install --commit-msg`                |
-| `uninstall`                           | Remove git hooks from current repo                                    | `gga uninstall`                           |
-| `run`                                 | Run code review on staged files                                       | `gga run`                                 |
-| `run --ci`                            | Run code review on last commit (for CI/CD)                            | `gga run --ci`                            |
-| `run --pr-mode`                       | Review all files changed in the full PR                               | `gga run --pr-mode`                       |
-| `run --pr-mode --diff-only`           | PR review with diffs only (faster, cheaper)                           | `gga run --pr-mode --diff-only`           |
-| `run --no-cache`                      | Run review ignoring cache                                             | `gga run --no-cache`                      |
-| `config`                              | Display current configuration and status                              | `gga config`                              |
-| `cache status`                        | Show cache status for current project                                 | `gga cache status`                        |
-| `cache clear`                         | Clear cache for current project                                       | `gga cache clear`                         |
-| `cache clear-all`                     | Clear all cached data                                                 | `gga cache clear-all`                     |
-| `help`                                | Show help message with all commands                                   | `gga help`                                |
-| `version`                             | Show installed version                                                | `gga version`                             |
+| Command                                   | Description                                                               | Example                                       |
+|-------------------------------------------|---------------------------------------------------------------------------|-----------------------------------------------|
+| `init`                                    | Create sample `.gga` config file                                          | `gga init`                                    |
+| `install`                                 | Install git pre-commit hook (default)                                     | `gga install`                                 |
+| `install --commit-msg`                    | Install git commit-msg hook (for commit message validation)               | `gga install --commit-msg`                    |
+| `uninstall`                               | Remove git hooks from current repo                                        | `gga uninstall`                               |
+| `run`                                     | Run code review on staged files                                           | `gga run`                                     |
+| `run --ci`                                | Run code review on last commit (for CI/CD)                                | `gga run --ci`                                |
+| `run --pr-mode`                           | Review all files changed in the full PR                                   | `gga run --pr-mode`                           |
+| `run --pr-mode --diff-only`               | PR review with diffs only (faster, cheaper)                               | `gga run --pr-mode --diff-only`               |
+| `run --no-cache`                          | Run review ignoring cache                                                 | `gga run --no-cache`                          |
+| `config`                                  | Display current configuration and status                                  | `gga config`                                  |
+| `cache status`                            | Show cache status for current project                                     | `gga cache status`                            |
+| `cache clear`                             | Clear cache for current project                                           | `gga cache clear`                             |
+| `cache clear-all`                         | Clear all cached data                                                     | `gga cache clear-all`                         |
+| `help`                                    | Show help message with all commands                                       | `gga help`                                    |
+| `version`                                 | Show installed version                                                    | `gga version`                                 |
 
 ---
 

@@ -25,14 +25,14 @@
 
 ## 2. Contact Information
 
-| Field                    | Value                                                                     |
-|--------------------------|---------------------------------------------------------------------------|
-| **Address**              | 3715 NORTHCREST RD SUITE 19, ATLANTA, GA 30340                            |
-| **Phone**                | [To be added]                                                             |
-| **Email**                | [To be added]                                                             |
-| **Service Area**         | Atlanta, Marietta, Alpharetta, Lawrenceville, Surrounding Suburbs         |
-| **Hours**                | Monday - Saturday [Hours TBD]                                             |
-| **WhatsApp**             | CTA Secondary                                                             |
+| Field                        | Value                                                                         |
+|------------------------------|-------------------------------------------------------------------------------|
+| **Address**                  | 3715 NORTHCREST RD SUITE 19, ATLANTA, GA 30340                                |
+| **Phone**                    | [To be added]                                                                 |
+| **Email**                    | [To be added]                                                                 |
+| **Service Area**             | Atlanta, Marietta, Alpharetta, Lawrenceville, Surrounding Suburbs             |
+| **Hours**                    | Monday - Saturday [Hours TBD]                                                 |
+| **WhatsApp**                 | CTA Secondary                                                                 |
 
 ---
 
@@ -66,13 +66,13 @@
 
 Presented as icon grid:
 
-| Service                                   | Description                                                                            |
-|-------------------------------------------|----------------------------------------------------------------------------------------|
-| **Cubicle Installation**                  | Expert assembly of modular office systems and workstations                             |
-| **Office Relocation**                     | Seamless disassembly, transport, and reinstallation of your existing furniture         |
-| **Executive Suites & Desks**              | Precision setup for high-end office furniture and conference rooms                     |
-| **Delivery & Assembly**                   | White-glove service from the warehouse to your final floor plan                        |
-| **Decommissioning & Liquidation**         | Professional removal and disposal of old office assets                                 |
+| Service                                       | Description                                                                                |
+|-----------------------------------------------|--------------------------------------------------------------------------------------------|
+| **Cubicle Installation**                      | Expert assembly of modular office systems and workstations                                 |
+| **Office Relocation**                         | Seamless disassembly, transport, and reinstallation of your existing furniture             |
+| **Executive Suites & Desks**                  | Precision setup for high-end office furniture and conference rooms                         |
+| **Delivery & Assembly**                       | White-glove service from the warehouse to your final floor plan                            |
+| **Decommissioning & Liquidation**             | Professional removal and disposal of old office assets                                     |
 
 ### 3.3 About Us
 
@@ -110,10 +110,10 @@ Based on the current production site (Guia_Design.png) and client preferences:
 
 ### 4.2 Video Assets
 
-| Video                                          | Location                | Settings                      |
-|------------------------------------------------|-------------------------|-------------------------------|
-| `Interior_Design.mp4`                          | Hero Background         | loop, muted, autoplay         |
-| `Home_exploding_view_202604041752.mp4`         | Scroll Effect           | Triggered on scroll           |
+| Video                                              | Location                    | Settings                          |
+|----------------------------------------------------|-----------------------------|-----------------------------------|
+| `Interior_Design.mp4`                              | Hero Background             | loop, muted, autoplay             |
+| `Home_exploding_view_202604041752.mp4`             | Scroll Effect               | Triggered on scroll               |
 
 ### 4.3 Effects (Cinematic)
 
@@ -143,13 +143,13 @@ From `leonxlnx/taste-skill` (6.8K stars):
 
 ### Top Office Furniture Brands
 
-| Brand                     | Key Strengths                                       |
-|---------------------------|-----------------------------------------------------|
-| **Steelcase**             | Smart ergonomics, sustainability                    |
-| **Herman Miller**         | Premium design, integrated technology               |
-| **Vitra**                 | European design, designer collaborations            |
-| **Knoll**                 | Art furniture, timeless design                      |
-| **Buro**                  | Educational ergonomics, modular flexibility         |
+| Brand                         | Key Strengths                                           |
+|-------------------------------|---------------------------------------------------------|
+| **Steelcase**                 | Smart ergonomics, sustainability                        |
+| **Herman Miller**             | Premium design, integrated technology                   |
+| **Vitra**                     | European design, designer collaborations                |
+| **Knoll**                     | Art furniture, timeless design                          |
+| **Buro**                      | Educational ergonomics, modular flexibility             |
 
 ### Key Trends 2025
 
@@ -199,12 +199,12 @@ From `leonxlnx/taste-skill` (6.8K stars):
 
 ## 8. SEO Recommendations
 
-| Element                   | Recommendation                                           |
-|---------------------------|----------------------------------------------------------|
-| Page Title                | Office Furniture Installation Atlanta                    |
-| Language Selector         | ES/EN toggle (competitive advantage in Atlanta)          |
-| Images                    | Real photos of team and work (no stock)                  |
-| Form Fields               | Keep minimal: Name, Company, Phone, Service Type         |
+| Element                       | Recommendation                                               |
+|-------------------------------|--------------------------------------------------------------|
+| Page Title                    | Office Furniture Installation Atlanta                        |
+| Language Selector             | ES/EN toggle (competitive advantage in Atlanta)              |
+| Images                        | Real photos of team and work (no stock)                      |
+| Form Fields                   | Keep minimal: Name, Company, Phone, Service Type             |
 
 ---
 

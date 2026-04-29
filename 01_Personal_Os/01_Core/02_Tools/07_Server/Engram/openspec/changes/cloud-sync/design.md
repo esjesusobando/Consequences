@@ -182,26 +182,26 @@ engram/
 
 ## File Changes
 
-| File                                                                   | Action                         | Description                                                                                                          |
-|------------------------------------------------------------------------|--------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| `cmd/engram/main.go`                                                   | Modify                         | Add `--mode cloud` flag to `serve`, add `ENGRAM_CLOUD_*` env parsing, import cloud packages                          |
-| `internal/sync/sync.go`                                                | Modify                         | Extract Transport interface, refactor Syncer to use Transport instead of direct filesystem I/O                       |
-| `internal/sync/transport.go`                                           | Create                         | `Transport` interface definition + `FileTransport` implementation (extracts current fs logic)                        |
-| `internal/sync/transport_test.go`                                      | Create                         | Unit tests for FileTransport                                                                                         |
-| `internal/cloud/cloudstore/cloudstore.go`                              | Create                         | Postgres-backed store: sessions, observations, prompts CRUD with `team_id` scoping                                   |
-| `internal/cloud/cloudstore/schema.go`                                  | Create                         | DDL for Postgres tables, indexes, tsvector columns, migration runner                                                 |
-| `internal/cloud/cloudstore/search.go`                                  | Create                         | FTS via `ts_rank_cd` + `plainto_tsquery`, weighted ranking                                                           |
-| `internal/cloud/cloudstore/cloudstore_test.go`                         | Create                         | Integration tests using `ory/dockertest` for real Postgres                                                           |
-| `internal/cloud/cloudserver/cloudserver.go`                            | Create                         | HTTP server for cloud mode: route registration, handler setup                                                        |
-| `internal/cloud/cloudserver/middleware.go`                             | Create                         | Auth middleware (JWT + API key), team_id injection, request logging                                                  |
-| `internal/cloud/cloudserver/push_pull.go`                              | Create                         | Handlers for `POST /cloud/push`, `GET /cloud/pull`, `GET /cloud/manifest`                                            |
-| `internal/cloud/cloudserver/cloudserver_test.go`                       | Create                         | httptest-based handler tests                                                                                         |
-| `internal/cloud/auth/auth.go`                                          | Create                         | JWT token generation/validation, claims struct, refresh flow                                                         |
-| `internal/cloud/auth/apikey.go`                                        | Create                         | API key generation (crypto/rand), bcrypt hashing, validation                                                         |
-| `internal/cloud/auth/auth_test.go`                                     | Create                         | Token lifecycle, expiry, refresh, API key validation tests                                                           |
-| `internal/cloud/remote/transport.go`                                   | Create                         | `RemoteTransport` implementing `sync.Transport` via HTTP                                                             |
-| `internal/cloud/remote/transport_test.go`                              | Create                         | RemoteTransport tests with httptest.Server                                                                           |
-| `go.mod`                                                               | Modify                         | Add `github.com/lib/pq`, `golang.org/x/crypto` (bcrypt), `github.com/ory/dockertest/v3` (test)                       |
+| File                                                                       | Action                             | Description                                                                                                              |
+|----------------------------------------------------------------------------|------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| `cmd/engram/main.go`                                                       | Modify                             | Add `--mode cloud` flag to `serve`, add `ENGRAM_CLOUD_*` env parsing, import cloud packages                              |
+| `internal/sync/sync.go`                                                    | Modify                             | Extract Transport interface, refactor Syncer to use Transport instead of direct filesystem I/O                           |
+| `internal/sync/transport.go`                                               | Create                             | `Transport` interface definition + `FileTransport` implementation (extracts current fs logic)                            |
+| `internal/sync/transport_test.go`                                          | Create                             | Unit tests for FileTransport                                                                                             |
+| `internal/cloud/cloudstore/cloudstore.go`                                  | Create                             | Postgres-backed store: sessions, observations, prompts CRUD with `team_id` scoping                                       |
+| `internal/cloud/cloudstore/schema.go`                                      | Create                             | DDL for Postgres tables, indexes, tsvector columns, migration runner                                                     |
+| `internal/cloud/cloudstore/search.go`                                      | Create                             | FTS via `ts_rank_cd` + `plainto_tsquery`, weighted ranking                                                               |
+| `internal/cloud/cloudstore/cloudstore_test.go`                             | Create                             | Integration tests using `ory/dockertest` for real Postgres                                                               |
+| `internal/cloud/cloudserver/cloudserver.go`                                | Create                             | HTTP server for cloud mode: route registration, handler setup                                                            |
+| `internal/cloud/cloudserver/middleware.go`                                 | Create                             | Auth middleware (JWT + API key), team_id injection, request logging                                                      |
+| `internal/cloud/cloudserver/push_pull.go`                                  | Create                             | Handlers for `POST /cloud/push`, `GET /cloud/pull`, `GET /cloud/manifest`                                                |
+| `internal/cloud/cloudserver/cloudserver_test.go`                           | Create                             | httptest-based handler tests                                                                                             |
+| `internal/cloud/auth/auth.go`                                              | Create                             | JWT token generation/validation, claims struct, refresh flow                                                             |
+| `internal/cloud/auth/apikey.go`                                            | Create                             | API key generation (crypto/rand), bcrypt hashing, validation                                                             |
+| `internal/cloud/auth/auth_test.go`                                         | Create                             | Token lifecycle, expiry, refresh, API key validation tests                                                               |
+| `internal/cloud/remote/transport.go`                                       | Create                             | `RemoteTransport` implementing `sync.Transport` via HTTP                                                                 |
+| `internal/cloud/remote/transport_test.go`                                  | Create                             | RemoteTransport tests with httptest.Server                                                                               |
+| `go.mod`                                                                   | Modify                             | Add `github.com/lib/pq`, `golang.org/x/crypto` (bcrypt), `github.com/ory/dockertest/v3` (test)                           |
 
 ---
 
@@ -708,13 +708,13 @@ func NewWithTransport(s *store.Store, transport Transport) *Syncer {
 
 ### Environment Variables (Cloud Mode)
 
-| Variable                                          | Description                                                               | Default                           |
-|---------------------------------------------------|---------------------------------------------------------------------------|-----------------------------------|
-| `ENGRAM_DATABASE_URL`                             | Postgres connection string for `engram cloud serve`                       | (required)                        |
-| `ENGRAM_JWT_SECRET`                               | HMAC secret for JWT signing (min 32 chars)                                | (required)                        |
-| `ENGRAM_CLOUD_CORS_ORIGINS`                       | Comma-separated allowed origins                                           | `*`                               |
-| `ENGRAM_PORT`                                     | HTTP server port                                                          | `7437`                            |
-| `ENGRAM_DATA_DIR`                                 | Local SQLite data directory                                               | `~/.engram`                       |
+| Variable                                              | Description                                                                   | Default                               |
+|-------------------------------------------------------|-------------------------------------------------------------------------------|---------------------------------------|
+| `ENGRAM_DATABASE_URL`                                 | Postgres connection string for `engram cloud serve`                           | (required)                            |
+| `ENGRAM_JWT_SECRET`                                   | HMAC secret for JWT signing (min 32 chars)                                    | (required)                            |
+| `ENGRAM_CLOUD_CORS_ORIGINS`                           | Comma-separated allowed origins                                               | `*`                                   |
+| `ENGRAM_PORT`                                         | HTTP server port                                                              | `7437`                                |
+| `ENGRAM_DATA_DIR`                                     | Local SQLite data directory                                                   | `~/.engram`                           |
 
 ### Cloud Config Struct
 
@@ -841,16 +841,16 @@ func (rt *RemoteTransport) doWithRetry(req *http.Request) (*http.Response, error
 
 ## Testing Strategy
 
-| Layer                             | What to Test                                                                          | Approach                                                                                                          |
-|-----------------------------------|---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Unit                              | JWT generation, validation, expiry                                                    | `internal/cloud/auth/auth_test.go` -- pure Go tests, no DB                                                        |
-| Unit                              | API key generation, bcrypt, prefix extraction                                         | `internal/cloud/auth/auth_test.go` -- pure Go tests                                                               |
-| Unit                              | Transport interface compliance                                                        | `internal/sync/transport_test.go` -- FileTransport with temp dirs                                                 |
-| Unit                              | RemoteTransport HTTP calls                                                            | `internal/cloud/remote/transport_test.go` -- `httptest.Server`                                                    |
-| Integration                       | CloudStore CRUD, search, FTS                                                          | `internal/cloud/cloudstore/cloudstore_test.go` -- `ory/dockertest` spinning real Postgres                         |
-| Integration                       | CloudServer routes, middleware, push/pull                                             | `internal/cloud/cloudserver/cloudserver_test.go` -- `httptest.Server` + dockertest Postgres                       |
-| Integration                       | End-to-end sync: local SQLite -> cloud Postgres -> local SQLite                       | Separate test file composing Syncer + RemoteTransport + httptest cloud server                                     |
-| Existing                          | Ensure zero regression on SQLite store                                                | Existing `store_test.go`, `sync_test.go`, `server_test.go` MUST pass unchanged                                    |
+| Layer                                 | What to Test                                                                              | Approach                                                                                                              |
+|---------------------------------------|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| Unit                                  | JWT generation, validation, expiry                                                        | `internal/cloud/auth/auth_test.go` -- pure Go tests, no DB                                                            |
+| Unit                                  | API key generation, bcrypt, prefix extraction                                             | `internal/cloud/auth/auth_test.go` -- pure Go tests                                                                   |
+| Unit                                  | Transport interface compliance                                                            | `internal/sync/transport_test.go` -- FileTransport with temp dirs                                                     |
+| Unit                                  | RemoteTransport HTTP calls                                                                | `internal/cloud/remote/transport_test.go` -- `httptest.Server`                                                        |
+| Integration                           | CloudStore CRUD, search, FTS                                                              | `internal/cloud/cloudstore/cloudstore_test.go` -- `ory/dockertest` spinning real Postgres                             |
+| Integration                           | CloudServer routes, middleware, push/pull                                                 | `internal/cloud/cloudserver/cloudserver_test.go` -- `httptest.Server` + dockertest Postgres                           |
+| Integration                           | End-to-end sync: local SQLite -> cloud Postgres -> local SQLite                           | Separate test file composing Syncer + RemoteTransport + httptest cloud server                                         |
+| Existing                              | Ensure zero regression on SQLite store                                                    | Existing `store_test.go`, `sync_test.go`, `server_test.go` MUST pass unchanged                                        |
 
 ### Test Seam Pattern
 

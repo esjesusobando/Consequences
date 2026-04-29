@@ -50,12 +50,12 @@ metadata:
 
 ### 2. RAGAS Metrics (RAG Evaluation)
 
-| Metric                            | Purpose                                 | Formula                                             |
-|-----------------------------------|-----------------------------------------|-----------------------------------------------------|
-| **Faithfulness**                  | Answer matches context                  | `correct_statements / total_statements`             |
-| **Answer Relevancy**              | Answer addresses question               | `semantic_similarity(question, answer)`             |
-| **Context Precision**             | Relevant chunks ranked high             | `Σ precision@k / total_relevant`                    |
-| **Context Recall**                | All relevant info retrieved             | `retrieved_relevant / total_relevant`               |
+| Metric                                | Purpose                                     | Formula                                                 |
+|---------------------------------------|---------------------------------------------|---------------------------------------------------------|
+| **Faithfulness**                      | Answer matches context                      | `correct_statements / total_statements`                 |
+| **Answer Relevancy**                  | Answer addresses question                   | `semantic_similarity(question, answer)`                 |
+| **Context Precision**                 | Relevant chunks ranked high                 | `Σ precision@k / total_relevant`                        |
+| **Context Recall**                    | All relevant info retrieved                 | `retrieved_relevant / total_relevant`                   |
 
 ### 3. LLM-as-Judge Evaluation
 

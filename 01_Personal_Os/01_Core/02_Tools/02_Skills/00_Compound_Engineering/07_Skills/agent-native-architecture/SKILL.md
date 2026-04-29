@@ -36,12 +36,12 @@ This isn't about creating a 1:1 mapping of UI buttons to tools. It's about ensur
 
 A capability map helps:
 
-| User Action                      | How Agent Achieves It                                              |
-|----------------------------------|--------------------------------------------------------------------|
-| Create a note                    | `write_file` to notes directory, or `create_note` tool             |
-| Tag a note as urgent             | `update_file` metadata, or `tag_note` tool                         |
-| Search notes                     | `search_files` or `search_notes` tool                              |
-| Delete a note                    | `delete_file` or `delete_note` tool                                |
+| User Action                          | How Agent Achieves It                                                  |
+|--------------------------------------|------------------------------------------------------------------------|
+| Create a note                        | `write_file` to notes directory, or `create_note` tool                 |
+| Tag a note as urgent                 | `update_file` metadata, or `tag_note` tool                             |
+| Search notes                         | `search_files` or `search_notes` tool                                  |
+| Delete a note                        | `delete_file` or `delete_note` tool                                    |
 
 **The test:** Pick any action a user can take in your UI. Describe it to the agent. Can it accomplish the outcome?
 
@@ -174,21 +174,21 @@ The improvement mechanisms are still being discovered. Context and prompt refine
 </intake>
 
 <routing>
-| Response                                                               | Action                                                                                                                                                                           |
-|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1, "design", "architecture", "plan"                                    | Read [architecture-patterns.md](./references/architecture-patterns.md), then apply Architecture Checklist below                                                                  |
-| 2, "files", "workspace", "filesystem"                                  | Read [files-universal-interface.md](./references/files-universal-interface.md) and [shared-workspace-architecture.md](./references/shared-workspace-architecture.md)             |
-| 3, "tool", "mcp", "primitive", "crud"                                  | Read [mcp-tool-design.md](./references/mcp-tool-design.md)                                                                                                                       |
-| 4, "domain tool", "when to add"                                        | Read [from-primitives-to-domain-tools.md](./references/from-primitives-to-domain-tools.md)                                                                                       |
-| 5, "execution", "completion", "loop"                                   | Read [agent-execution-patterns.md](./references/agent-execution-patterns.md)                                                                                                     |
-| 6, "prompt", "system prompt", "behavior"                               | Read [system-prompt-design.md](./references/system-prompt-design.md)                                                                                                             |
-| 7, "context", "inject", "runtime", "dynamic"                           | Read [dynamic-context-injection.md](./references/dynamic-context-injection.md)                                                                                                   |
-| 8, "parity", "ui action", "capability map"                             | Read [action-parity-discipline.md](./references/action-parity-discipline.md)                                                                                                     |
-| 9, "self-modify", "evolve", "git"                                      | Read [self-modification.md](./references/self-modification.md)                                                                                                                   |
-| 10, "product", "progressive", "approval", "latent demand"              | Read [product-implications.md](./references/product-implications.md)                                                                                                             |
-| 11, "mobile", "ios", "android", "background", "checkpoint"             | Read [mobile-patterns.md](./references/mobile-patterns.md)                                                                                                                       |
-| 12, "test", "testing", "verify", "validate"                            | Read [agent-native-testing.md](./references/agent-native-testing.md)                                                                                                             |
-| 13, "review", "refactor", "existing"                                   | Read [refactoring-to-prompt-native.md](./references/refactoring-to-prompt-native.md)                                                                                             |
+| Response                                                                   | Action                                                                                                                                                                               |
+|----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1, "design", "architecture", "plan"                                        | Read [architecture-patterns.md](./references/architecture-patterns.md), then apply Architecture Checklist below                                                                      |
+| 2, "files", "workspace", "filesystem"                                      | Read [files-universal-interface.md](./references/files-universal-interface.md) and [shared-workspace-architecture.md](./references/shared-workspace-architecture.md)                 |
+| 3, "tool", "mcp", "primitive", "crud"                                      | Read [mcp-tool-design.md](./references/mcp-tool-design.md)                                                                                                                           |
+| 4, "domain tool", "when to add"                                            | Read [from-primitives-to-domain-tools.md](./references/from-primitives-to-domain-tools.md)                                                                                           |
+| 5, "execution", "completion", "loop"                                       | Read [agent-execution-patterns.md](./references/agent-execution-patterns.md)                                                                                                         |
+| 6, "prompt", "system prompt", "behavior"                                   | Read [system-prompt-design.md](./references/system-prompt-design.md)                                                                                                                 |
+| 7, "context", "inject", "runtime", "dynamic"                               | Read [dynamic-context-injection.md](./references/dynamic-context-injection.md)                                                                                                       |
+| 8, "parity", "ui action", "capability map"                                 | Read [action-parity-discipline.md](./references/action-parity-discipline.md)                                                                                                         |
+| 9, "self-modify", "evolve", "git"                                          | Read [self-modification.md](./references/self-modification.md)                                                                                                                       |
+| 10, "product", "progressive", "approval", "latent demand"                  | Read [product-implications.md](./references/product-implications.md)                                                                                                                 |
+| 11, "mobile", "ios", "android", "background", "checkpoint"                 | Read [mobile-patterns.md](./references/mobile-patterns.md)                                                                                                                           |
+| 12, "test", "testing", "verify", "validate"                                | Read [agent-native-testing.md](./references/agent-native-testing.md)                                                                                                                 |
+| 13, "review", "refactor", "existing"                                       | Read [refactoring-to-prompt-native.md](./references/refactoring-to-prompt-native.md)                                                                                                 |
 
 **After reading the reference, apply those patterns to the user's specific context.**
 </routing>

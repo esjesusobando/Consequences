@@ -4,13 +4,13 @@ Extensions in this repo use a consistent color language mapped to Pi's theme tok
 
 ## Color Roles
 
-| Token                               | Role                                        | Used For                                                                |
-|-------------------------------------|---------------------------------------------|-------------------------------------------------------------------------|
-| `success`                           | Primary value                               | Token counts, hash fills, branch name, counts                           |
-| `accent`                            | Secondary value                             | Percentages, tool names, token out counts                               |
-| `warning`                           | Punctuation/frame                           | Brackets `[]`, parens `()`, pipes `                                     | `, cost |
-| `dim`                               | Filler/spacing                              | Dashes, labels ("in", "out"), separators                                |
-| `muted`                             | Subdued text                                | CWD name, fallback states                                               |
+| Token                                   | Role                                            | Used For                                                                    |
+|-----------------------------------------|-------------------------------------------------|-----------------------------------------------------------------------------|
+| `success`                               | Primary value                                   | Token counts, hash fills, branch name, counts                               |
+| `accent`                                | Secondary value                                 | Percentages, tool names, token out counts                                   |
+| `warning`                               | Punctuation/frame                               | Brackets `[]`, parens `()`, pipes `                                         | `, cost |
+| `dim`                                   | Filler/spacing                                  | Dashes, labels ("in", "out"), separators                                    |
+| `muted`                                 | Subdued text                                    | CWD name, fallback states                                                   |
 
 ## Examples
 

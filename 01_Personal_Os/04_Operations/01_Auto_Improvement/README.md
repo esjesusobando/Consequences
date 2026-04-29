@@ -27,12 +27,12 @@
 
 ### 01_Engine/
 
-| Script              | Propósito                                        | Estado                  |
-|---------------------|--------------------------------------------------|-------------------------|
-| `detector.py`       | Detecta issues en código, estructura, docs       | 🟡 Por implementar       |
-| `analyzer.py`       | Analiza y clasifica severidad/impacto            | 🟡 Por implementar       |
-| `executor.py`       | Aplica fixes automáticos                         | 🟡 Por implementar       |
-| `learner.py`        | Aprende de fixes aplicados                       | 🟡 Por implementar       |
+| Script                  | Propósito                                            | Estado                      |
+|-------------------------|------------------------------------------------------|-----------------------------|
+| `detector.py`           | Detecta issues en código, estructura, docs           | 🟡 Por implementar           |
+| `analyzer.py`           | Analiza y clasifica severidad/impacto                | 🟡 Por implementar           |
+| `executor.py`           | Aplica fixes automáticos                             | 🟡 Por implementar           |
+| `learner.py`            | Aprende de fixes aplicados                           | 🟡 Por implementar           |
 
 ### 02_Rules/
 

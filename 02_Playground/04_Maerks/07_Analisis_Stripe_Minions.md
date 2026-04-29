@@ -8,26 +8,26 @@
 
 ## 📊 Contexto
 
-| Métrica                                | Valor                                      |
-|----------------------------------------|--------------------------------------------|
-| PRs/semana                             | 1,300                                      |
-| Código sin escribir humano             | 100%                                       |
-| Volumen anual                          | $1.9T                                      |
-| Líneas de código                       | Millones                                   |
-| Stack                                  | Ruby + libraries proprietarias             |
+| Métrica                                    | Valor                                          |
+|--------------------------------------------|------------------------------------------------|
+| PRs/semana                                 | 1,300                                          |
+| Código sin escribir humano                 | 100%                                           |
+| Volumen anual                              | $1.9T                                          |
+| Líneas de código                           | Millones                                       |
+| Stack                                      | Ruby + libraries proprietarias                 |
 
 ---
 
 ## 🎯 Definiciones Clave
 
-| Término                             | Definición                                                                 |
-|-------------------------------------|----------------------------------------------------------------------------|
-| **Agentic Engineering**             | Saber qué pasará en tu sistema tan bien que no necesitas mirar             |
-| **Vibe Coding**                     | No saber y no mirar                                                        |
-| **Inloop Agentic**                  | Engineer sentado prompting back-and-forth                                  |
-| **Outloop Agentic**                 | Agente operando en sandbox paralelo                                        |
-| **Blueprint**                       | Combinación de código determinista + agentes                               |
-| **Tool Shed**                       | Meta-tool para seleccionar 500+ herramientas MCP                           |
+| Término                                 | Definición                                                                     |
+|-----------------------------------------|--------------------------------------------------------------------------------|
+| **Agentic Engineering**                 | Saber qué pasará en tu sistema tan bien que no necesitas mirar                 |
+| **Vibe Coding**                         | No saber y no mirar                                                            |
+| **Inloop Agentic**                      | Engineer sentado prompting back-and-forth                                      |
+| **Outloop Agentic**                     | Agente operando en sandbox paralelo                                            |
+| **Blueprint**                           | Combinación de código determinista + agentes                                   |
+| **Tool Shed**                           | Meta-tool para seleccionar 500+ herramientas MCP                               |
 
 ---
 
@@ -106,10 +106,10 @@
 
 ### 4. Outloop > Inloop
 
-| Tipo                | Uso                                                   | Costo                     |
-|---------------------|-------------------------------------------------------|---------------------------|
-| Inloop              | Build the system, work highly specialized             | Bajo leverage             |
-| Outloop             | Operar el sistema, tareas repetitivas                 | Alto leverage             |
+| Tipo                    | Uso                                                       | Costo                         |
+|-------------------------|-----------------------------------------------------------|-------------------------------|
+| Inloop                  | Build the system, work highly specialized                 | Bajo leverage                 |
+| Outloop                 | Operar el sistema, tareas repetitivas                     | Alto leverage                 |
 
 **Meta:** Pasar más tiempo construyendo el sistema de agentes que babysitting agentes.
 
@@ -140,14 +140,14 @@
 
 ## 🔧 Componentes que Faltan en Nuestro Sistema
 
-| Componente                   | Estado Actual              | Stripe                      | Acción                            |
-|------------------------------|----------------------------|-----------------------------|-----------------------------------|
-| Devbox/Sandbox               | ❌                          | ✅ EC2 pool                  | Investigar E2B, Modal             |
-| Blueprint Engine             | ⚠️ Parcial                 | ✅ Completo                  | Diseñar ADW pattern               |
-| Tool Shed                    | ❌                          | ✅ 500+ MCPs                 | Implementar meta-tool             |
-| Rules Files                  | ⚠️ Claude Code             | ✅ Custom + glob             | Expandir contexto                 |
-| Validation Layer             | ⚠️ Tests                   | ✅ 3M tests                  | Mejorar CI feedback               |
-| Outloop System               | ❌                          | ✅ Minions                   | Diseñar arquitectura              |
+| Componente                       | Estado Actual                  | Stripe                          | Acción                                |
+|----------------------------------|--------------------------------|---------------------------------|---------------------------------------|
+| Devbox/Sandbox                   | ❌                              | ✅ EC2 pool                      | Investigar E2B, Modal                 |
+| Blueprint Engine                 | ⚠️ Parcial                     | ✅ Completo                      | Diseñar ADW pattern                   |
+| Tool Shed                        | ❌                              | ✅ 500+ MCPs                     | Implementar meta-tool                 |
+| Rules Files                      | ⚠️ Claude Code                 | ✅ Custom + glob                 | Expandir contexto                     |
+| Validation Layer                 | ⚠️ Tests                       | ✅ 3M tests                      | Mejorar CI feedback                   |
+| Outloop System                   | ❌                              | ✅ Minions                       | Diseñar arquitectura                  |
 
 ---
 

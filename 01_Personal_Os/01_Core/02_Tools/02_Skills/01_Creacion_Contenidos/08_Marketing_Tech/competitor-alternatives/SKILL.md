@@ -212,12 +212,12 @@ For each competitor, gather:
 
 ### Keyword Targeting
 
-| Format                               | Primary Keywords                                                      |
-|--------------------------------------|-----------------------------------------------------------------------|
-| Alternative (singular)               | [Competitor] alternative, alternative to [Competitor]                 |
-| Alternatives (plural)                | [Competitor] alternatives, best [Competitor] alternatives             |
-| You vs Competitor                    | [You] vs [Competitor], [Competitor] vs [You]                          |
-| Competitor vs Competitor             | [A] vs [B], [B] vs [A]                                                |
+| Format                                   | Primary Keywords                                                          |
+|------------------------------------------|---------------------------------------------------------------------------|
+| Alternative (singular)                   | [Competitor] alternative, alternative to [Competitor]                     |
+| Alternatives (plural)                    | [Competitor] alternatives, best [Competitor] alternatives                 |
+| You vs Competitor                        | [You] vs [Competitor], [Competitor] vs [You]                              |
+| Competitor vs Competitor                 | [A] vs [B], [B] vs [A]                                                    |
 
 ### Internal Linking
 - Link between related competitor pages

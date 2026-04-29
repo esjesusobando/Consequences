@@ -31,13 +31,13 @@ cat ~/01_Core/03_Skills/{skill-name}/references/*.md 2>/dev/null
 
 Categorize by primary dependency type:
 
-| Type                         | Examples                                         | Verification Method               |
-|------------------------------|--------------------------------------------------|-----------------------------------|
-| **API/Service**              | manage-stripe, manage-gohighlevel                | Context7 + WebSearch              |
-| **CLI Tools**                | build-macos-apps (xcodebuild, swift)             | Run commands                      |
-| **Framework**                | build-iphone-apps (SwiftUI, UIKit)               | Context7 for docs                 |
-| **Integration**              | setup-stripe-payments                            | WebFetch + Context7               |
-| **Pure Process**             | create-agent-skills                              | No external deps                  |
+| Type                             | Examples                                             | Verification Method                   |
+|----------------------------------|------------------------------------------------------|---------------------------------------|
+| **API/Service**                  | manage-stripe, manage-gohighlevel                    | Context7 + WebSearch                  |
+| **CLI Tools**                    | build-macos-apps (xcodebuild, swift)                 | Run commands                          |
+| **Framework**                    | build-iphone-apps (SwiftUI, UIKit)                   | Context7 for docs                     |
+| **Integration**                  | setup-stripe-payments                                | WebFetch + Context7                   |
+| **Pure Process**                 | create-agent-skills                                  | No external deps                      |
 
 Report: "This skill is primarily [type]-based. I'll verify using [method]."
 
@@ -163,12 +163,12 @@ If updating:
 
 Based on skill type, recommend:
 
-| Skill Type               | Recommended Frequency              |
-|--------------------------|------------------------------------|
-| API/Service              | Every 1-2 months                   |
-| Framework                | Every 3-6 months                   |
-| CLI Tools                | Every 6 months                     |
-| Pure Process             | Annually                           |
+| Skill Type                   | Recommended Frequency                  |
+|------------------------------|----------------------------------------|
+| API/Service                  | Every 1-2 months                       |
+| Framework                    | Every 3-6 months                       |
+| CLI Tools                    | Every 6 months                         |
+| Pure Process                 | Annually                               |
 
 "This skill should be re-verified in approximately [timeframe]."
 </process>

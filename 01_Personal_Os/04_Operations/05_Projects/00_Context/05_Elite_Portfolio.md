@@ -8,14 +8,14 @@
 
 ## ⚡ Stack Recomendado (Estable)
 
-| Tecnología                  | Versión              | Estado                        | Uso                         |
-|-----------------------------|----------------------|-------------------------------|-----------------------------|
-| **Next.js**                 | **14.2.x**           | ✅ Más Estable                 | App Router                  |
-| **React**                   | **18.3.x**           | ✅ Máximo estável              | Server Components           |
-| **TypeScript**              | 5.4.x                | ✅ Estable                     | Strict mode                 |
-| **Tailwind CSS**            | **3.4.x**            | ✅ Ecosistema maduro           | Estilos                     |
-| **Framer Motion**           | 11.x                 | ✅ Estable                     | Animaciones                 |
-| **Vercel**                  | —                    | ✅ Estable                     | Deployment                  |
+| Tecnología                      | Versión                  | Estado                            | Uso                             |
+|---------------------------------|--------------------------|-----------------------------------|---------------------------------|
+| **Next.js**                     | **14.2.x**               | ✅ Más Estable                     | App Router                      |
+| **React**                       | **18.3.x**               | ✅ Máximo estável                  | Server Components               |
+| **TypeScript**                  | 5.4.x                    | ✅ Estable                         | Strict mode                     |
+| **Tailwind CSS**                | **3.4.x**                | ✅ Ecosistema maduro               | Estilos                         |
+| **Framer Motion**               | 11.x                     | ✅ Estable                         | Animaciones                     |
+| **Vercel**                      | —                        | ✅ Estable                         | Deployment                      |
 
 > **Decisión:** Next.js 14 + React 18 = Máxima estabilidad. Next.js 15 tiene breaking changes documentados (caching, async APIs).
 
@@ -260,10 +260,10 @@ body {
 
 #### Formato y Tamaño
 
-| Formato             | Resolución                | Duración            | Tamaño             | Bitrate              |
-|---------------------|---------------------------|---------------------|--------------------|----------------------|
-| **WebM**            | 720p (1280×720)           | 10-15s              | < 500 KB           | < 1 Mbps             |
-| **MP4**             | 720p fallback             | 10-15s              | < 1 MB             | < 1.5 Mbps           |
+| Formato                 | Resolución                    | Duración                | Tamaño                 | Bitrate                  |
+|-------------------------|-------------------------------|-------------------------|------------------------|--------------------------|
+| **WebM**                | 720p (1280×720)               | 10-15s                  | < 500 KB               | < 1 Mbps                 |
+| **MP4**                 | 720p fallback                 | 10-15s                  | < 1 MB                 | < 1.5 Mbps               |
 
 > **Meta:** LCP < 2.5s en 3G
 
@@ -414,12 +414,12 @@ ffmpeg -i hero.mp4 -vframes 1 -q:v 2 hero-poster.jpg
 
 ### 📁 Recursos Stock Video Gratuitos
 
-| Fuente             | URL                          | Calidad             |
-|--------------------|------------------------------|---------------------|
-| Pexels             | pexels.com                   | ⭐⭐⭐                 |
-| Coverr             | coverr.co                    | ⭐⭐⭐⭐                |
-| Mixkit             | mixkit.co                    | ⭐⭐⭐                 |
-| Pixabay            | pixabay.com/videos           | ⭐⭐⭐                 |
+| Fuente                 | URL                              | Calidad                 |
+|------------------------|----------------------------------|-------------------------|
+| Pexels                 | pexels.com                       | ⭐⭐⭐                     |
+| Coverr                 | coverr.co                        | ⭐⭐⭐⭐                    |
+| Mixkit                 | mixkit.co                        | ⭐⭐⭐                     |
+| Pixabay                | pixabay.com/videos               | ⭐⭐⭐                     |
 
 ---
 
@@ -530,16 +530,16 @@ body {
 
 ### Checklist Componentes
 
-| #             | Componente              | Archivo                                     | Prioridad            |
-|---------------|-------------------------|---------------------------------------------|----------------------|
-| 01            | Root Layout             | `src/app/layout.tsx`                        | 🔴 Alta               |
-| 02            | Navigation              | `src/components/navigation.tsx`             | 🔴 Alta               |
-| 03            | Hero (Texto)            | `src/components/hero.tsx`                   | 🔴 Alta               |
-| 04            | Projects Grid           | `src/components/projects.tsx`               | 🔴 Alta               |
-| 05            | About                   | `src/components/about.tsx`                  | 🟡 Media              |
-| 06            | Contact                 | `src/components/contact.tsx`                | 🟡 Media              |
-| 07            | Footer                  | `src/components/footer.tsx`                 | 🟡 Media              |
-| 08            | Theme Toggle            | `src/components/theme-toggle.tsx`           | 🟢 Baja               |
+| #                 | Componente                  | Archivo                                         | Prioridad                |
+|-------------------|-----------------------------|-------------------------------------------------|--------------------------|
+| 01                | Root Layout                 | `src/app/layout.tsx`                            | 🔴 Alta                   |
+| 02                | Navigation                  | `src/components/navigation.tsx`                 | 🔴 Alta                   |
+| 03                | Hero (Texto)                | `src/components/hero.tsx`                       | 🔴 Alta                   |
+| 04                | Projects Grid               | `src/components/projects.tsx`                   | 🔴 Alta                   |
+| 05                | About                       | `src/components/about.tsx`                      | 🟡 Media                  |
+| 06                | Contact                     | `src/components/contact.tsx`                    | 🟡 Media                  |
+| 07                | Footer                      | `src/components/footer.tsx`                     | 🟡 Media                  |
+| 08                | Theme Toggle                | `src/components/theme-toggle.tsx`               | 🟢 Baja                   |
 
 ---
 
@@ -661,12 +661,12 @@ npm run start
 
 ### Objetivos Lighthouse
 
-| Métrica                  | Target            | Mínimo             |
-|--------------------------|-------------------|--------------------|
-| Performance              | 90+               | 80+                |
-| SEO                      | 100               | 95+                |
-| Accessibility            | 100               | 90+                |
-| Best Practices           | 100               | 95+                |
+| Métrica                      | Target                | Mínimo                 |
+|------------------------------|-----------------------|------------------------|
+| Performance                  | 90+                   | 80+                    |
+| SEO                          | 100                   | 95+                    |
+| Accessibility                | 100                   | 90+                    |
+| Best Practices               | 100                   | 95+                    |
 
 ### Checklist Pre-Launch
 
@@ -704,16 +704,16 @@ npm run start
 
 ## ✅ VERIFICACIÓN INTEGRAL
 
-| Categoría                | Checkpoint                                    | Estado             |
-|--------------------------|-----------------------------------------------|--------------------|
-| **Setup**                | Proyecto creado + dependencias                | ⬜                  |
-| **Config**               | Tailwind + Fuentes working                    | ⬜                  |
-| **Components**           | Todos los componentes implementados           | ⬜                  |
-| **Video**                | Video Hero optimizado                         | ⬜                  |
-| **SEO**                  | Metadata + Sitemap + Robots                   | ⬜                  |
-| **Testing**              | Lighthouse ≥ 80                               | ⬜                  |
-| **Deploy**               | Production live                               | ⬜                  |
-| **Post**                 | Verificación final                            | ⬜                  |
+| Categoría                    | Checkpoint                                        | Estado                 |
+|------------------------------|---------------------------------------------------|------------------------|
+| **Setup**                    | Proyecto creado + dependencias                    | ⬜                      |
+| **Config**                   | Tailwind + Fuentes working                        | ⬜                      |
+| **Components**               | Todos los componentes implementados               | ⬜                      |
+| **Video**                    | Video Hero optimizado                             | ⬜                      |
+| **SEO**                      | Metadata + Sitemap + Robots                       | ⬜                      |
+| **Testing**                  | Lighthouse ≥ 80                                   | ⬜                      |
+| **Deploy**                   | Production live                                   | ⬜                      |
+| **Post**                     | Verificación final                                | ⬜                      |
 
 ---
 

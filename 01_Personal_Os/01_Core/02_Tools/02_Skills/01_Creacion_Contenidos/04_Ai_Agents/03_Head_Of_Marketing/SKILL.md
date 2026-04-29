@@ -182,10 +182,10 @@ Use the coaching framework:
 **Status**: [Live/Paused/Completed]
 
 ### Performance vs Goal
-| Metric                 | Target               | Actual               | Status               |
-|------------------------|----------------------|----------------------|----------------------|
-| [Metric 1]             | [X]                  | [Y]                  | [🟢/🟡/🔴]              |
-| [Metric 2]             | [X]                  | [Y]                  | [🟢/🟡/🔴]              |
+| Metric                     | Target                   | Actual                   | Status                   |
+|----------------------------|--------------------------|--------------------------|--------------------------|
+| [Metric 1]                 | [X]                      | [Y]                      | [🟢/🟡/🔴]                  |
+| [Metric 2]                 | [X]                      | [Y]                      | [🟢/🟡/🔴]                  |
 
 ### Budget Efficiency
 - Spent: $[X]
@@ -220,10 +220,10 @@ Use the coaching framework:
 - [Blocker 2]: [What we need]
 
 ### Metrics Snapshot
-| Metric               | Current               | Target               | Status               |
-|----------------------|-----------------------|----------------------|----------------------|
-| MQLs                 | [X]                   | [Y]                  | [🟢/🟡/🔴]              |
-| CAC                  | $[X]                  | $[Y]                 | [🟢/🟡/🔴]              |
+| Metric                   | Current                   | Target                   | Status                   |
+|--------------------------|---------------------------|--------------------------|--------------------------|
+| MQLs                     | [X]                       | [Y]                      | [🟢/🟡/🔴]                  |
+| CAC                      | $[X]                      | $[Y]                     | [🟢/🟡/🔴]                  |
 
 ### Next Week
 - [Priority 1]

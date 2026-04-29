@@ -8,12 +8,12 @@
 
 ## ✅ COMPLETADO ESTA SESIÓN
 
-| Item | Estado | Detalle |
-|------|--------|---------|
-| Revisión integral del sistema | ✅ DONE | Análisis completo de estructura, skills, HUBs, scripts |
-| Validación de refs desactualizadas | ✅ DONE | Mapeo de 2029 refs a paths old |
-| Clasificación por scope | ✅ DONE | 261 activos, ~1800 legacy/Archive (correctos) |
-| Identificación de issues críticos | ✅ DONE | 00_Winter/README.md, AGENTS.md, Dream_Team docs |
+| Item                                 | Estado     | Detalle                                                  |
+|--------------------------------------|------------|----------------------------------------------------------|
+| Revisión integral del sistema        | ✅ DONE     | Análisis completo de estructura, skills, HUBs, scripts   |
+| Validación de refs desactualizadas   | ✅ DONE     | Mapeo de 2029 refs a paths old                           |
+| Clasificación por scope              | ✅ DONE     | 261 activos, ~1800 legacy/Archive (correctos)            |
+| Identificación de issues críticos    | ✅ DONE     | 00_Winter/README.md, AGENTS.md, Dream_Team docs          |
 
 ---
 
@@ -34,12 +34,12 @@
 
 **Scope:** 261 refs en archivos activos (fuera de Archive/Playground)
 
-| # | Archivo | refs | Prioridad | Acción |
-|---|---------|------|-----------|--------|
-| 01 | `00_Winter_is_Coming/README.md` | 1 | ALTA | Línea 41: `01_Core/03_Skills/` → `01_Personal_Os/01_Core/02_Tools/02_Skills/` |
-| 02 | `00_Winter_is_Coming/AGENTS.md` | 6 | ALTA | Múltiples refs a `01_Core/03_Skills/` → mismo path |
-| 03 | `00_Winter_is_Coming/CHANGELOG.md` | 1 | BAJA | Histórico, aceptar o ignorar |
-| 04 | `01_Core/02_Tools/01_Agents/01_Dream_Team/*.md` | ~50 | MEDIA | Refs en documentación de agentes (referencia, no funcional) |
+| #     | Archivo                                           | refs     | Prioridad     | Acción                                                                          |
+|-------|---------------------------------------------------|----------|---------------|---------------------------------------------------------------------------------|
+| 01    | `00_Winter_is_Coming/README.md`                   | 1        | ALTA          | Línea 41: `01_Core/03_Skills/` → `01_Personal_Os/01_Core/02_Tools/02_Skills/`   |
+| 02    | `00_Winter_is_Coming/AGENTS.md`                   | 6        | ALTA          | Múltiples refs a `01_Core/03_Skills/` → mismo path                              |
+| 03    | `00_Winter_is_Coming/CHANGELOG.md`                | 1        | BAJA          | Histórico, aceptar o ignorar                                                    |
+| 04    | `01_Core/02_Tools/01_Agents/01_Dream_Team/*.md`   | ~50      | MEDIA         | Refs en documentación de agentes (referencia, no funcional)                     |
 
 **Nota:** Los archivos en `01_Core/02_Tools/02_Skills/` (skills internos) contienen refs a `01_Core/03_Skills/` referenciándose a sí mismos — verificar si son paths hardcodeados o documentación.
 
@@ -67,13 +67,13 @@
 
 ## 📊 SCORING ACTUAL
 
-| Área | Estado | Notas |
-|------|--------|-------|
-| Código / Estructura | ✅ 100% | Skills, HUBs, Rules, MCPs |
-| Docs Principales | ⚠️ 85% | 261 refs por corregir |
-| Legacy/Archive | ✅ 100% | Correcto que existan refs old |
-| Backlog | ⚠️ Desactualizado | Fecha 2026-04-17 |
-| Deploy OIM | ⏳ Esperando input | - |
+| Área                  | Estado              | Notas                           |
+|-----------------------|---------------------|---------------------------------|
+| Código / Estructura   | ✅ 100%              | Skills, HUBs, Rules, MCPs       |
+| Docs Principales      | ⚠️ 85%              | 261 refs por corregir           |
+| Legacy/Archive        | ✅ 100%              | Correcto que existan refs old   |
+| Backlog               | ⚠️ Desactualizado   | Fecha 2026-04-17                |
+| Deploy OIM            | ⏳ Esperando input   |---------------------------------|
 
 ---
 

@@ -15,11 +15,11 @@ Evaluate and fix PR review feedback, then reply and resolve threads. Spawns para
 
 ## Mode Detection
 
-| Argument                            | Mode                                                                      |
-|-------------------------------------|---------------------------------------------------------------------------|
-| No argument                         | **Full** -- all unresolved threads on the current branch's PR             |
-| PR number (e.g., `123`)             | **Full** -- all unresolved threads on that PR                             |
-| Comment/thread URL                  | **Targeted** -- only that specific thread                                 |
+| Argument                                | Mode                                                                          |
+|-----------------------------------------|-------------------------------------------------------------------------------|
+| No argument                             | **Full** -- all unresolved threads on the current branch's PR                 |
+| PR number (e.g., `123`)                 | **Full** -- all unresolved threads on that PR                                 |
+| Comment/thread URL                      | **Targeted** -- only that specific thread                                     |
 
 **Targeted mode**: When a URL is provided, ONLY address that feedback. Do not fetch or process other threads.
 
@@ -42,11 +42,11 @@ bash scripts/get-pr-comments PR_NUMBER
 
 Returns a JSON object with three keys:
 
-| Key                          | Contents                                                                      | Has file/line?              | Resolvable?               |
-|------------------------------|-------------------------------------------------------------------------------|-----------------------------|---------------------------|
-| `review_threads`             | Unresolved, non-outdated inline code review threads                           | Yes                         | Yes (GraphQL)             |
-| `pr_comments`                | Top-level PR conversation comments (excludes PR author)                       | No                          | No                        |
-| `review_bodies`              | Review submission bodies with non-empty text (excludes PR author)             | No                          | No                        |
+| Key                              | Contents                                                                          | Has file/line?                  | Resolvable?                   |
+|----------------------------------|-----------------------------------------------------------------------------------|---------------------------------|-------------------------------|
+| `review_threads`                 | Unresolved, non-outdated inline code review threads                               | Yes                             | Yes (GraphQL)                 |
+| `pr_comments`                    | Top-level PR conversation comments (excludes PR author)                           | No                              | No                            |
+| `review_bodies`                  | Review submission bodies with non-empty text (excludes PR author)                 | No                              | No                            |
 
 If the script fails, fall back to:
 ```bash

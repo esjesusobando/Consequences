@@ -13,14 +13,14 @@
 
 > 🟢 **PURE GREEN** - Pure Green - Estructura Consequences v3.1
 
-| Métrica                                             | Valor                                        |
-|-----------------------------------------------------|----------------------------------------------|
-| **Overall Health**                                  | **100%** 🟢                                 |
-| **Skills**                                          | 299+ (12 áreas funcionales)                  |
-| **Rules**                                           | 10 (.mdc)                                   |
-| **MCPs**                                            | 33 Claude Code                              |
-| **HUBs**                                            | 19 operativos (+ 4 auxiliares)              |
-| **Agentes**                                         | 52+ (Dream Team + Specialists)              |
+| Métrica                                                 | Valor                                            |
+|---------------------------------------------------------|--------------------------------------------------|
+| **Overall Health**                                      | **100%** 🟢                                       |
+| **Skills**                                              | 299+ (12 áreas funcionales)                      |
+| **Rules**                                               | 10 (.mdc)                                        |
+| **MCPs**                                                | 33 Claude Code                                   |
+| **HUBs**                                                | 19 operativos (+ 4 auxiliares)                   |
+| **Agentes**                                             | 52+ (Dream Team + Specialists)                   |
 
 ---
 
@@ -86,34 +86,34 @@ Think_Different/
 
 Para la versión v1.1, hemos evolucionado hacia una organización por **Áreas Maestras** para mejorar el discovery y la orquestación.
 
-| Área Maestras                                        | Categorías Integradas                                | Propósito SOTA                                                            |
-|------------------------------------------------------|------------------------------------------------------|---------------------------------------------------------------------------|
-| **01_Creacion_Contenidos**                           | Marketing, SEO, Carousel                             | Generación de valor y contenido transmedia.                               |
-| **02_Diseno_Ui_Ux**                                  | UI/UX, Product Design                                | Experiencia de usuario y estética premium.                                |
-| **03_Video_Media**                                   | Video Intel, James Cameron                           | Producción audiovisual e inteligencia de video.                           |
-| **04_Automatizacion**                                | N8N, Scraping, Doc Proc                              | Flujos autónomos y procesamiento de datos.                                |
-| **05_Workflows**                                     | Agent Teams, PM/PMO                                  | Orquestación de equipos y gestión SDD.                                    |
-| **06_Tools**                                         | DevOps, Testing, Data                                | Herramientas de ingeniería y QA avanzado.                                 |
-| **07_Personal_Os**                                   | Life OS, System Master                               | Núcleo operativo y gestión de vida (Hillary).                             |
-| **08_Invictus_Web**                                  | Plugins, Taste, Search                               | Capacidades extendidas de navegación web.                                 |
-| **09_Legacy_Archive**                                | Backup, Historical                                   | Soporte histórico y archivo Octopus.                                      |
+| Área Maestras                                            | Categorías Integradas                                    | Propósito SOTA                                                                |
+|----------------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------------------|
+| **01_Creacion_Contenidos**                               | Marketing, SEO, Carousel                                 | Generación de valor y contenido transmedia.                                   |
+| **02_Diseno_Ui_Ux**                                      | UI/UX, Product Design                                    | Experiencia de usuario y estética premium.                                    |
+| **03_Video_Media**                                       | Video Intel, James Cameron                               | Producción audiovisual e inteligencia de video.                               |
+| **04_Automatizacion**                                    | N8N, Scraping, Doc Proc                                  | Flujos autónomos y procesamiento de datos.                                    |
+| **05_Workflows**                                         | Agent Teams, PM/PMO                                      | Orquestación de equipos y gestión SDD.                                        |
+| **06_Tools**                                             | DevOps, Testing, Data                                    | Herramientas de ingeniería y QA avanzado.                                     |
+| **07_Personal_Os**                                       | Life OS, System Master                                   | Núcleo operativo y gestión de vida (Hillary).                                 |
+| **08_Invictus_Web**                                      | Plugins, Taste, Search                                   | Capacidades extendidas de navegación web.                                     |
+| **09_Legacy_Archive**                                    | Backup, Historical                                       | Soporte histórico y archivo Octopus.                                          |
 
 ### Skills Index (Referencia Completa)
 
-| Área                               | Descripción                                                          |
-|-------------------------------------|----------------------------------------------------------------------|
-| **00_Compound_Engineering**         | Core CE (Spider, Avengers)                                           |
-| **00_Personal_Os_Stack**            | Stack base OS + Gcierr                                               |
-| **00_Skill_Auditor**                | Auditoría de skills                                                  |
-| **01_Creacion_Contenidos**          | Brand, YouTube, SEO, Carousel                                        |
-| **02_Diseno_Ui_Ux**                 | Product Design, UI/UX, Taste                                         |
-| **03_Video_Media**                  | Video Intel, James Cameron                                           |
-| **04_Automatizacion**               | N8N, Firecrawl                                                       |
-| **05_Workflows**                    | Agent Teams, PM, Orchestrator                                        |
-| **06_Tools**                        | Skill Creator, Testing, DevOps, Data Analyst                         |
-| **07_Personal_Os**                  | Life OS, Hillary, Rituales                                           |
-| **08_Invictus_Web**                 | Playwright, Superpowers                                              |
-| **09_Legacy_Archive**               | Skills obsoletas                                                     |
+| Área                                    | Descripción                                                              |
+|-----------------------------------------|--------------------------------------------------------------------------|
+| **00_Compound_Engineering**             | Core CE (Spider, Avengers)                                               |
+| **00_Personal_Os_Stack**                | Stack base OS + Gcierr                                                   |
+| **00_Skill_Auditor**                    | Auditoría de skills                                                      |
+| **01_Creacion_Contenidos**              | Brand, YouTube, SEO, Carousel                                            |
+| **02_Diseno_Ui_Ux**                     | Product Design, UI/UX, Taste                                             |
+| **03_Video_Media**                      | Video Intel, James Cameron                                               |
+| **04_Automatizacion**                   | N8N, Firecrawl                                                           |
+| **05_Workflows**                        | Agent Teams, PM, Orchestrator                                            |
+| **06_Tools**                            | Skill Creator, Testing, DevOps, Data Analyst                             |
+| **07_Personal_Os**                      | Life OS, Hillary, Rituales                                               |
+| **08_Invictus_Web**                     | Playwright, Superpowers                                                  |
+| **09_Legacy_Archive**                   | Skills obsoletas                                                         |
 
 > Índice completo: `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
 
@@ -121,54 +121,54 @@ Para la versión v1.1, hemos evolucionado hacia una organización por **Áreas M
 
 ### HUBs v3.0 (19 HUBs)
 
-| Hub                                            | Script                                                  | Propósito                                                       |
-|------------------------------------------------|---------------------------------------------------------|-----------------------------------------------------------------|
-| **Sound Engine**                               | `00_Sound_Engine.py`                                    | Motor de notificaciones sonoras                                 |
-| **Auditor**                                    | `01_Auditor_Hub.py`                                     | Auditorías del sistema                                          |
-| **Git**                                        | `02_Git_Hub.py`                                         | Operaciones Git                                                 |
-| **AIPM**                                       | `03_AIPM_Hub.py`                                        | AI Performance Monitoring                                       |
-| **Ritual**                                     | `04_Ritual_Hub.py`                                      | Rituales de sesión: open/close                                  |
-| **Validator**                                  | `05_Validator_Hub.py`                                   | Validación de código                                            |
-| **Tool**                                       | `06_Tool_Hub.py`                                        | Gestión de herramientas                                         |
-| **Integration**                                | `07_Integration_Hub.py`                                 | Integraciones MCP                                               |
-| **Workflow**                                   | `08_Workflow_Hub.py`                                    | Automatización de workflows                                     |
-| **Data**                                       | `09_Data_Hub.py`                                        | Procesamiento de datos                                          |
-| **General**                                    | `10_General_Hub.py`                                     | Utilidades generales                                            |
-| **Auto Learn**                                 | `11_Auto_Learn_Hub.py`                                  | Motor de automejora y aprendizaje                               |
-| **Context Bar**                                | `12_Context_Usage_Bar.py`                               | Barra de uso de contexto                                        |
-| **Beautify Tables**                            | `13_Beautify_Tables.py`                                 | Formateo de tablas markdown                                     |
-| **Beauty Doc**                                 | `14_Beauty_Doc.py`                                      | Documentos embellecidos                                         |
-| **MCP Sync** ★                                 | `15_MCP_Sync_Hub.py`                                    | Sync drift Claude ↔ OpenCode (JARVIS 3.0)                 |
-| **Agent Sync**                                 | `15_Agent_Sync_Hub.py`                                  | Sincronización de agentes                                 |
-| **System Mapper** ★                            | `16_System_Mapper_Hub.py`                               | Genera manifest JARVIS (JARVIS 3.0)                       |
-| **Agent Mirror**                               | `16_Agent_Mirror_Hub.py`                                | Mirror agentes source → backup                            |
-| **Watchdog** ★                                 | `17_Watchdog_Hub.py`                                    | Health check automático (JARVIS 3.0)                      |
-| **Telemetry** ★                                | `18_Telemetry_Hub.py`                                   | Dashboard de uso y métricas (JARVIS 3.0)                  |
+| Hub                                                | Script                                                      | Propósito                                                           |
+|----------------------------------------------------|-------------------------------------------------------------|---------------------------------------------------------------------|
+| **Sound Engine**                                   | `00_Sound_Engine.py`                                        | Motor de notificaciones sonoras                                     |
+| **Auditor**                                        | `01_Auditor_Hub.py`                                         | Auditorías del sistema                                              |
+| **Git**                                            | `02_Git_Hub.py`                                             | Operaciones Git                                                     |
+| **AIPM**                                           | `03_AIPM_Hub.py`                                            | AI Performance Monitoring                                           |
+| **Ritual**                                         | `04_Ritual_Hub.py`                                          | Rituales de sesión: open/close                                      |
+| **Validator**                                      | `05_Validator_Hub.py`                                       | Validación de código                                                |
+| **Tool**                                           | `06_Tool_Hub.py`                                            | Gestión de herramientas                                             |
+| **Integration**                                    | `07_Integration_Hub.py`                                     | Integraciones MCP                                                   |
+| **Workflow**                                       | `08_Workflow_Hub.py`                                        | Automatización de workflows                                         |
+| **Data**                                           | `09_Data_Hub.py`                                            | Procesamiento de datos                                              |
+| **General**                                        | `10_General_Hub.py`                                         | Utilidades generales                                                |
+| **Auto Learn**                                     | `11_Auto_Learn_Hub.py`                                      | Motor de automejora y aprendizaje                                   |
+| **Context Bar**                                    | `12_Context_Usage_Bar.py`                                   | Barra de uso de contexto                                            |
+| **Beautify Tables**                                | `13_Beautify_Tables.py`                                     | Formateo de tablas markdown                                         |
+| **Beauty Doc**                                     | `14_Beauty_Doc.py`                                          | Documentos embellecidos                                             |
+| **MCP Sync** ★                                     | `15_MCP_Sync_Hub.py`                                        | Sync drift Claude ↔ OpenCode (JARVIS 3.0)                           |
+| **Agent Sync**                                     | `15_Agent_Sync_Hub.py`                                      | Sincronización de agentes                                           |
+| **System Mapper** ★                                | `16_System_Mapper_Hub.py`                                   | Genera manifest JARVIS (JARVIS 3.0)                                 |
+| **Agent Mirror**                                   | `16_Agent_Mirror_Hub.py`                                    | Mirror agentes source → backup                                      |
+| **Watchdog** ★                                     | `17_Watchdog_Hub.py`                                        | Health check automático (JARVIS 3.0)                                |
+| **Telemetry** ★                                    | `18_Telemetry_Hub.py`                                       | Dashboard de uso y métricas (JARVIS 3.0)                            |
 
 > ★ = HUB canónico JARVIS 3.0
 
 ### Validators
 
-| Tool                                                     | Ubicación                                                   | Función                                              |
-|----------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------|
-| **skill_validator.py**                                   | `01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/`                               | Valida estructura SOTA                               |
-| **skill_security_scan.py**                               | `01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/`                               | Escaneo de seguridad                                 |
+| Tool                                                         | Ubicación                                                       | Función                                                  |
+|--------------------------------------------------------------|-----------------------------------------------------------------|----------------------------------------------------------|
+| **skill_validator.py**                                       | `01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/`      | Valida estructura SOTA                                   |
+| **skill_security_scan.py**                                   | `01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/`      | Escaneo de seguridad                                     |
 
 ### MCPs (34 Claude Code / 34 OpenCode)
 
-| Categoría                                      | Servidores                                                                                         |
-|------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| 🔍 Search                                       | exa, brave-search*, stackoverflow                                                                 |
-| 🧠 Memory                                       | engram, aim-memory-bank, notebooklm                                                                |
-| 📝 Notes                                        | mcp-obsidian, obsidian-api, Notion                                                                 |
-| 🌐 Browser                                      | Playwright, chrome-devtools, eagle-mcp                                                             |
-| 🤖 AI & Code                                    | context7, zai-mcp-server, github, task-master-ai, @magicuidesign/mcp                               |
-| 📊 Data                                         | supabase, Amplitude, supadata                                                                       |
-| 🔄 Workflow                                     | n8n-mcp, Linear                                                                                    |
-| 💬 Communication                                | fireflies, google-workspace                                                                        |
-| 📐 Design                                       | excalidraw-yctimlin, pencil                                                                        |
-| 🛠️ DevOps                                      | docker, filesystem                                                                                 |
-| 🚀 Deploy                                       | vercel, recall, TestSprite                                                                          |
+| Categoría                                          | Servidores                                                                                             |
+|----------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| 🔍 Search                                           | exa, brave-search*, stackoverflow                                                                      |
+| 🧠 Memory                                           | engram, aim-memory-bank, notebooklm                                                                    |
+| 📝 Notes                                            | mcp-obsidian, obsidian-api, Notion                                                                     |
+| 🌐 Browser                                          | Playwright, chrome-devtools, eagle-mcp                                                                 |
+| 🤖 AI & Code                                        | context7, zai-mcp-server, github, task-master-ai, @magicuidesign/mcp                                   |
+| 📊 Data                                             | supabase, Amplitude, supadata                                                                          |
+| 🔄 Workflow                                         | n8n-mcp, Linear                                                                                        |
+| 💬 Communication                                    | fireflies, google-workspace                                                                            |
+| 📐 Design                                           | excalidraw-yctimlin, pencil                                                                            |
+| 🛠️ DevOps                                          | docker, filesystem                                                                                     |
+| 🚀 Deploy                                           | vercel, recall, TestSprite                                                                             |
 
 > Drift: 0 — Todos sincronizados bidireccionalmente. Verificar con `15_MCP_Sync_Hub.py --report`.
 
@@ -245,29 +245,29 @@ Code review automático integrado:
 
 ## 📁 Convenciones de Nombres
 
-| Tipo                                          | Patrón                                              | Ejemplo                                                    |
-|-----------------------------------------------|-----------------------------------------------------|------------------------------------------------------------|
-| **Directorios**                               | `XX_Nombre/`                                        | `01_Core/`, `04_Operations/`                               |
-| **Archivos**                                  | `XX_Nombre.ext`                                     | `01_Report_Status.md`                                      |
-| **Scripts**                                   | `##_Nombre_Script.py`                               | `01_Auditor_Hub.py`                                        |
-| **Skills**                                    | `SKILL.md`                                          | En cada skill                                              |
+| Tipo                                              | Patrón                                                  | Ejemplo                                                        |
+|---------------------------------------------------|---------------------------------------------------------|----------------------------------------------------------------|
+| **Directorios**                                   | `XX_Nombre/`                                            | `01_Core/`, `04_Operations/`                                   |
+| **Archivos**                                      | `XX_Nombre.ext`                                         | `01_Report_Status.md`                                          |
+| **Scripts**                                       | `##_Nombre_Script.py`                                   | `01_Auditor_Hub.py`                                            |
+| **Skills**                                        | `SKILL.md`                                              | En cada skill                                                  |
 
 ---
 
 ## 📚 Documentación
 
-| Documento                                              | Ubicación                                                                             |
-|--------------------------------------------------------|---------------------------------------------------------------------------------------|
-| **OS_DIRECTORY.md**                                    | `OS_DIRECTORY.md` (raíz) — JARVIS discovery                                           |
-| **AGENTS.md**                                          | `00_Winter_is_Coming/AGENTS.md`                                                       |
-| **RULES_INDEX**                                        | `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md`                                        |
-| **Skills README**                                      | `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                                                         |
-| **Scripts INDEX**                                      | `01_Personal_Os/04_Operations/03_Scripts_Os/SCRIPTS_INDEX.md`                                                      |
-| **OS Integration Audit**                               | `02_Knowledge/04_Docs/OS_Integration_Audit_v1.0.md`                                   |
-| **Edge Cases**                                         | `02_Knowledge/04_Docs/OS_Edge_Cases_Analysis.md`                                      |
-| **Chris Orwig Style**                                  | `02_Knowledge/03_Research/CHRIS_ORWIG_STYLE_GUIDE.md`                                 |
-| **Neural Networks Doc**                                | `REDES_NEURONALES_TOKENS_VECTORES_EMBEDDINGS.md`                                      |
-| **Landing Template**                                   | `02_Knowledge/04_Templates/LANDING_WEBINAR_TEMPLATE.md`                               |
+| Documento                                                  | Ubicación                                                                                 |
+|------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| **OS_DIRECTORY.md**                                        | `OS_DIRECTORY.md` (raíz) — JARVIS discovery                                               |
+| **AGENTS.md**                                              | `00_Winter_is_Coming/AGENTS.md`                                                           |
+| **RULES_INDEX**                                            | `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md`                                          |
+| **Skills README**                                          | `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                                     |
+| **Scripts INDEX**                                          | `01_Personal_Os/04_Operations/03_Scripts_Os/SCRIPTS_INDEX.md`                             |
+| **OS Integration Audit**                                   | `02_Knowledge/04_Docs/OS_Integration_Audit_v1.0.md`                                       |
+| **Edge Cases**                                             | `02_Knowledge/04_Docs/OS_Edge_Cases_Analysis.md`                                          |
+| **Chris Orwig Style**                                      | `02_Knowledge/03_Research/CHRIS_ORWIG_STYLE_GUIDE.md`                                     |
+| **Neural Networks Doc**                                    | `REDES_NEURONALES_TOKENS_VECTORES_EMBEDDINGS.md`                                          |
+| **Landing Template**                                       | `02_Knowledge/04_Templates/LANDING_WEBINAR_TEMPLATE.md`                                   |
 
 ---
 
@@ -275,13 +275,13 @@ Code review automático integrado:
 
 ### Metodologías Integradas
 
-| Metodología                                            | Propósito                                                                        | Comando                                               |
-|--------------------------------------------------------|----------------------------------------------------------------------------------|-------------------------------------------------------|
-| **SDD**                                                | Desarrollo guiado por specs (9 fases)                                            | `/sdd-*`                                              |
-| **Super Campeones**                                    | Orquestación de agentes en equipo                                                | Activado por defecto                                  |
-| **Compound Engineering**                               | Cada unidad de trabajo hace la siguiente más fácil                               | `/ce:*`                                               |
-| **GGA**                                                | Code review automático pre-commit                                                | `.agent/05_GGA/bin/gga`                               |
-| **Auto-Improvement**                                   | Detección y corrección recursiva de issues                                       | `04_Operations/`                                      |
+| Metodología                                                | Propósito                                                                            | Comando                                                   |
+|------------------------------------------------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------------|
+| **SDD**                                                    | Desarrollo guiado por specs (9 fases)                                                | `/sdd-*`                                                  |
+| **Super Campeones**                                        | Orquestación de agentes en equipo                                                    | Activado por defecto                                      |
+| **Compound Engineering**                                   | Cada unidad de trabajo hace la siguiente más fácil                                   | `/ce:*`                                                   |
+| **GGA**                                                    | Code review automático pre-commit                                                    | `.agent/05_GGA/bin/gga`                                   |
+| **Auto-Improvement**                                       | Detección y corrección recursiva de issues                                           | `04_Operations/`                                          |
 
 ### Cómo funciona la orquestación
 

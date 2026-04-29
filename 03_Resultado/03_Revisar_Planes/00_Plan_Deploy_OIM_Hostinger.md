@@ -7,14 +7,14 @@
 
 ## Diagnóstico del Proyecto
 
-| Item                | Valor                                   |
-|---------------------|-----------------------------------------|
-| Framework           | Next.js 16.2.2                          |
-| Lenguaje            | TypeScript                              |
-| Build               | `npm run build` (standard SSR)          |
-| Output mode         | SSR (sin `output: 'export'`)            |
-| Assets estáticos    | `public/` (imágenes, íconos, OG)        |
-| Security headers    | Configurados en `next.config.ts`        |
+| Item                    | Valor                                       |
+|-------------------------|---------------------------------------------|
+| Framework               | Next.js 16.2.2                              |
+| Lenguaje                | TypeScript                                  |
+| Build                   | `npm run build` (standard SSR)              |
+| Output mode             | SSR (sin `output: 'export'`)                |
+| Assets estáticos        | `public/` (imágenes, íconos, OG)            |
+| Security headers        | Configurados en `next.config.ts`            |
 
 > **Importante:** Este proyecto es SSR (Server-Side Rendering). Necesita Node.js en el servidor.
 > Hostinger Shared Hosting (Apache/PHP) NO puede correr Next.js directamente.

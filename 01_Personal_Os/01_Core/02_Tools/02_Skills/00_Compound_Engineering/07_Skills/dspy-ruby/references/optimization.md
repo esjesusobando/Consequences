@@ -24,11 +24,11 @@ medium = DSPy::Teleprompt::MIPROv2::AutoMode.medium(metric: metric)  # 12 trials
 heavy  = DSPy::Teleprompt::MIPROv2::AutoMode.heavy(metric: metric)   # 18 trials, Bayesian
 ```
 
-| Preset                 | Trials               | Strategy                 | Use case                                                          |
-|------------------------|----------------------|--------------------------|-------------------------------------------------------------------|
-| `light`                | 6                    | `:greedy`                | Quick wins on small datasets or during prototyping.               |
-| `medium`               | 12                   | `:adaptive`              | Balanced exploration vs. runtime for most pilots.                 |
-| `heavy`                | 18                   | `:bayesian`              | Highest accuracy targets or multi-stage programs.                 |
+| Preset                     | Trials                   | Strategy                     | Use case                                                              |
+|----------------------------|--------------------------|------------------------------|-----------------------------------------------------------------------|
+| `light`                    | 6                        | `:greedy`                    | Quick wins on small datasets or during prototyping.                   |
+| `medium`                   | 12                       | `:adaptive`                  | Balanced exploration vs. runtime for most pilots.                     |
+| `heavy`                    | 18                       | `:bayesian`                  | Highest accuracy targets or multi-stage programs.                     |
 
 ### Manual configuration with dry-configurable
 
@@ -191,19 +191,19 @@ teleprompter = DSPy::Teleprompt::GEPA.new(
 
 Key configuration knobs:
 
-| Knob                               | Purpose                                                                                                      |
-|------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| `max_metric_calls`                 | Hard budget on evaluation calls. Set to at least the validation set size plus a few minibatches.             |
-| `minibatch_size`                   | Examples per reflective replay batch. Smaller = cheaper iterations, noisier scores.                          |
-| `skip_perfect_score`               | Set `true` to stop early when a candidate reaches score `1.0`.                                               |
+| Knob                                   | Purpose                                                                                                          |
+|----------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| `max_metric_calls`                     | Hard budget on evaluation calls. Set to at least the validation set size plus a few minibatches.                 |
+| `minibatch_size`                       | Examples per reflective replay batch. Smaller = cheaper iterations, noisier scores.                              |
+| `skip_perfect_score`                   | Set `true` to stop early when a candidate reaches score `1.0`.                                                   |
 
 ### Minibatch sizing
 
-| Goal                                                          | Suggested size               | Rationale                                                                |
-|---------------------------------------------------------------|------------------------------|--------------------------------------------------------------------------|
-| Explore many candidates within a tight budget                 | 3--6                         | Cheap iterations, more prompt variants, noisier metrics.                 |
-| Stable metrics when each rollout is costly                    | 8--12                        | Smoother scores, fewer candidates unless budget is raised.               |
-| Investigate specific failure modes                            | 3--4 then 8+                 | Start with breadth, increase once patterns emerge.                       |
+| Goal                                                              | Suggested size                   | Rationale                                                                    |
+|-------------------------------------------------------------------|----------------------------------|------------------------------------------------------------------------------|
+| Explore many candidates within a tight budget                     | 3--6                             | Cheap iterations, more prompt variants, noisier metrics.                     |
+| Stable metrics when each rollout is costly                        | 8--12                            | Smoother scores, fewer candidates unless budget is raised.                   |
+| Investigate specific failure modes                                | 3--4 then 8+                     | Start with breadth, increase once patterns emerge.                           |
 
 ### Compile and evaluate
 

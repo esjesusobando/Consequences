@@ -32,11 +32,11 @@ Local search engine for markdown content.
 
 ### Query Types
 
-| Type               | Method               | Input                                                   |
-|--------------------|----------------------|---------------------------------------------------------|
-| `lex`              | BM25                 | Keywords — exact terms, names, code                     |
-| `vec`              | Vector               | Question — natural language                             |
-| `hyde`             | Vector               | Answer — hypothetical result (50-100 words)             |
+| Type                   | Method                   | Input                                                       |
+|------------------------|--------------------------|-------------------------------------------------------------|
+| `lex`                  | BM25                     | Keywords — exact terms, names, code                         |
+| `vec`                  | Vector                   | Question — natural language                                 |
+| `hyde`                 | Vector                   | Answer — hypothetical result (50-100 words)                 |
 
 ### Writing Good Queries
 
@@ -77,23 +77,23 @@ Intent affects expansion, reranking, chunk selection, and snippet extraction. It
 
 ### Combining Types
 
-| Goal                              | Approach                                                          |
-|-----------------------------------|-------------------------------------------------------------------|
-| Know exact terms                  | `lex` only                                                        |
-| Don't know vocabulary             | Use a single-line query (implicit `expand:`) or `vec`             |
-| Best recall                       | `lex` + `vec`                                                     |
-| Complex topic                     | `lex` + `vec` + `hyde`                                            |
-| Ambiguous query                   | Add `intent` to any combination above                             |
+| Goal                                  | Approach                                                              |
+|---------------------------------------|-----------------------------------------------------------------------|
+| Know exact terms                      | `lex` only                                                            |
+| Don't know vocabulary                 | Use a single-line query (implicit `expand:`) or `vec`                 |
+| Best recall                           | `lex` + `vec`                                                         |
+| Complex topic                         | `lex` + `vec` + `hyde`                                                |
+| Ambiguous query                       | Add `intent` to any combination above                                 |
 
 First query gets 2x weight in fusion — put your best guess first.
 
 ### Lex Query Syntax
 
-| Syntax                 | Meaning                  | Example                                  |
-|------------------------|--------------------------|------------------------------------------|
-| `term`                 | Prefix match             | `perf` matches "performance"             |
-| `"phrase"`             | Exact phrase             | `"rate limiter"`                         |
-| `-term`                | Exclude                  | `performance -sports`                    |
+| Syntax                     | Meaning                      | Example                                      |
+|----------------------------|------------------------------|----------------------------------------------|
+| `term`                     | Prefix match                 | `perf` matches "performance"                 |
+| `"phrase"`                 | Exact phrase                 | `"rate limiter"`                             |
+| `-term`                    | Exclude                      | `performance -sports`                        |
 
 Note: `-term` only works in lex queries, not vec/hyde.
 
@@ -108,11 +108,11 @@ Omit to search all collections.
 
 ## Other MCP Tools
 
-| Tool                    | Use                                          |
-|-------------------------|----------------------------------------------|
-| `get`                   | Retrieve doc by path or `#docid`             |
-| `multi_get`             | Retrieve multiple by glob/list               |
-| `status`                | Collections and health                       |
+| Tool                        | Use                                              |
+|-----------------------------|--------------------------------------------------|
+| `get`                       | Retrieve doc by path or `#docid`                 |
+| `multi_get`                 | Retrieve multiple by glob/list                   |
+| `status`                    | Collections and health                           |
 
 ## CLI
 

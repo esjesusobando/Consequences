@@ -20,55 +20,55 @@ Este perfil construye estrategias de marketing técnico: SEO, paid ads, contenid
 ## 📦 Skills que Carga Automáticamente
 
 ### SEO y Búsqueda
-| Skill                          | Cuándo Usar                       | Output                                 |
-|--------------------------------|-----------------------------------|----------------------------------------|
-| `SEO_Audit`                    | Analizar sitio actual             | Reporte de issues                      |
-| `SEO_Optimization`             | Optimizar contenido               | Keywords, meta, estructura             |
-| `Schema_Markup`                | Rich snippets                     | JSON-LD estructurado                   |
-| `Programmatic_SEO`             | Páginas a escala                  | Templates SEO                          |
+| Skill                              | Cuándo Usar                           | Output                                     |
+|------------------------------------|---------------------------------------|--------------------------------------------|
+| `SEO_Audit`                        | Analizar sitio actual                 | Reporte de issues                          |
+| `SEO_Optimization`                 | Optimizar contenido                   | Keywords, meta, estructura                 |
+| `Schema_Markup`                    | Rich snippets                         | JSON-LD estructurado                       |
+| `Programmatic_SEO`                 | Páginas a escala                      | Templates SEO                              |
 
 ### Paid Ads y Campaigns
-| Skill                            | Cuándo Usar                 | Output                               |
-|----------------------------------|-----------------------------|--------------------------------------|
-| `Paid_Ads`                       | Campañas paid               | Google/Meta/LinkedIn ads             |
-| `Free_Tool_Strategy`             | Lead generation             | Herramientas gratuitas               |
-| `Referral_Program`               | Viral loops                 | Programa de referidos                |
+| Skill                                | Cuándo Usar                     | Output                                   |
+|--------------------------------------|---------------------------------|------------------------------------------|
+| `Paid_Ads`                           | Campañas paid                   | Google/Meta/LinkedIn ads                 |
+| `Free_Tool_Strategy`                 | Lead generation                 | Herramientas gratuitas                   |
+| `Referral_Program`                   | Viral loops                     | Programa de referidos                    |
 
 ### Contenido y Copy
-| Skill                          | Cuándo Usar                  | Output                                   |
-|--------------------------------|------------------------------|------------------------------------------|
-| `Content_Creation`             | Copy estratégico             | Articles, posts, hilos                   |
-| `Social_Content`               | Redes sociales               | LinkedIn, Twitter, Instagram             |
+| Skill                              | Cuándo Usar                      | Output                                       |
+|------------------------------------|----------------------------------|----------------------------------------------|
+| `Content_Creation`                 | Copy estratégico                 | Articles, posts, hilos                       |
+| `Social_Content`                   | Redes sociales                   | LinkedIn, Twitter, Instagram                 |
 
 ### Video y Visual
-| Skill                                 | Cuándo Usar                  | Output                              |
-|---------------------------------------|------------------------------|-------------------------------------|
-| `Premium_Image_Studio`                | Imágenes IA                  | Assets visuales premium             |
-| `Video_Visuals_Producer`              | Videos marketing             | Videos cortos                       |
-| `Remotion_Video_Creator`              | Videos código                | Videos animados                     |
-| `Remotion_Best_Practices`             | Videos quality               | Videos profesionales                |
+| Skill                                     | Cuándo Usar                      | Output                                  |
+|-------------------------------------------|----------------------------------|-----------------------------------------|
+| `Premium_Image_Studio`                    | Imágenes IA                      | Assets visuales premium                 |
+| `Video_Visuals_Producer`                  | Videos marketing                 | Videos cortos                           |
+| `Remotion_Video_Creator`                  | Videos código                    | Videos animados                         |
+| `Remotion_Best_Practices`                 | Videos quality                   | Videos profesionales                    |
 
 ### Brand y Diseño
-| Skill                               | Cuándo Usar                    | Output                          |
-|-------------------------------------|--------------------------------|---------------------------------|
-| `Brand_Identity`                    | Identidad de marca             | Guidelines                      |
-| `Brand_Voice_Generator`             | Voz de marca                   | Tono y estilo                   |
-| `Taste_Skill`                       | Diseño premium                 | UI/UX de alto nivel             |
-| `shadcn`                            | Componentes UI                 | UI lista para usar              |
+| Skill                                   | Cuándo Usar                        | Output                              |
+|-----------------------------------------|------------------------------------|-------------------------------------|
+| `Brand_Identity`                        | Identidad de marca                 | Guidelines                          |
+| `Brand_Voice_Generator`                 | Voz de marca                       | Tono y estilo                       |
+| `Taste_Skill`                           | Diseño premium                     | UI/UX de alto nivel                 |
+| `shadcn`                                | Componentes UI                     | UI lista para usar                  |
 
 ### AI Agents (Marketing)
-| Skill                             | Cuándo Usar               | Output                            |
-|-----------------------------------|---------------------------|-----------------------------------|
-| `Head_Of_Marketing`               | Estrategia                | Plan de marketing                 |
-| `Executive_Assistant`             | Coordinación              | Rituales y follow-up              |
-| `Compound_Engine`                 | Optimización              | Workflows optimizados             |
+| Skill                                 | Cuándo Usar                   | Output                                |
+|---------------------------------------|-------------------------------|---------------------------------------|
+| `Head_Of_Marketing`                   | Estrategia                    | Plan de marketing                     |
+| `Executive_Assistant`                 | Coordinación                  | Rituales y follow-up                  |
+| `Compound_Engine`                     | Optimización                  | Workflows optimizados                 |
 
 ### Automation y Data
-| Skill                            | Cuándo Usar               | Output                            |
-|----------------------------------|---------------------------|-----------------------------------|
-| `Firecrawl`                      | Web scraping              | Datos de competidores             |
-| `Data_Visualization`             | Métricas                  | Dashboards de campaña             |
-| `N8N` workflows                  | Automation                | Automatizaciones                  |
+| Skill                                | Cuándo Usar                   | Output                                |
+|--------------------------------------|-------------------------------|---------------------------------------|
+| `Firecrawl`                          | Web scraping                  | Datos de competidores                 |
+| `Data_Visualization`                 | Métricas                      | Dashboards de campaña                 |
+| `N8N` workflows                      | Automation                    | Automatizaciones                      |
 
 ---
 
@@ -111,13 +111,13 @@ Este perfil construye estrategias de marketing técnico: SEO, paid ads, contenid
 
 ## 📊 Métricas que Trackea
 
-| Métrica                          | Target                     | Cómo se mide                       |
-|----------------------------------|----------------------------|------------------------------------|
-| **Organic Traffic**              | +30% mensual               | Google Analytics                   |
-| **Conversion Rate**              | >3%                        | Goal completions                   |
-| **CAC**                          | <$50                       | Ad spend / conversions             |
-| **Content Velocity**             | 4 posts/semana             | Calendar                           |
-| **Video Views**                  | >10K/month                 | YouTube/Social                     |
+| Métrica                              | Target                         | Cómo se mide                           |
+|--------------------------------------|--------------------------------|----------------------------------------|
+| **Organic Traffic**                  | +30% mensual                   | Google Analytics                       |
+| **Conversion Rate**                  | >3%                            | Goal completions                       |
+| **CAC**                              | <$50                           | Ad spend / conversions                 |
+| **Content Velocity**                 | 4 posts/semana                 | Calendar                               |
+| **Video Views**                      | >10K/month                     | YouTube/Social                         |
 
 ---
 
@@ -161,20 +161,20 @@ Este perfil construye estrategias de marketing técnico: SEO, paid ads, contenid
 ## 🔗 Referencias
 
 ### Anthropic Harness Components (Integración SOTA)
-| Componente                       | Ubicación                                                               | Uso                                     |
-|----------------------------------|-------------------------------------------------------------------------|-----------------------------------------|
-| **Safety Wrapper**               | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/00_Safety_Wrapper.py`               | Pre-check antes de ejecutar             |
-| **Context Manager**              | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/01_Context_Manager.py`              | Reset vs Compaction                     |
-| **Evaluator Runner**             | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner.py`             | QA separado (GAN pattern)               |
-| **Sprint Contract**              | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract.py`              | Negocia "done"                          |
-| **Playwright QA**                | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py`                | Testing interactivo                     |
+| Componente                           | Ubicación                                                                                  | Uso                                         |
+|--------------------------------------|--------------------------------------------------------------------------------------------|---------------------------------------------|
+| **Safety Wrapper**                   | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/00_Safety_Wrapper.py`     | Pre-check antes de ejecutar                 |
+| **Context Manager**                  | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/01_Context_Manager.py`    | Reset vs Compaction                         |
+| **Evaluator Runner**                 | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner.py`   | QA separado (GAN pattern)                   |
+| **Sprint Contract**                  | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract.py`    | Negocia "done"                              |
+| **Playwright QA**                    | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py`      | Testing interactivo                         |
 
 ### Skills Anthropic
-| Skill                              | Ubicación                                                                   | Uso                                     |
-|------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------|
-| **Evaluator Pattern**              | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/01_Evaluator_Pattern/`              | Cómo hacer adversarial eval             |
-| **Context Management**             | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/02_Context_Management/`             | Reset vs compaction                     |
-| **Sprint Contract**                | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/03_Sprint_Contract/`                | Generator + Evaluator                   |
+| Skill                                  | Ubicación                                                                                          | Uso                                         |
+|----------------------------------------|----------------------------------------------------------------------------------------------------|---------------------------------------------|
+| **Evaluator Pattern**                  | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/01_Evaluator_Pattern/`    | Cómo hacer adversarial eval                 |
+| **Context Management**                 | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/02_Context_Management/`   | Reset vs compaction                         |
+| **Sprint Contract**                    | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/03_Sprint_Contract/`      | Generator + Evaluator                       |
 
 ### Workflow
 - **17_Anthropic_Harness**: `01_Core/00_Workflows/17_Anthropic_Harness.md` — Workflow completo de 3 agentes

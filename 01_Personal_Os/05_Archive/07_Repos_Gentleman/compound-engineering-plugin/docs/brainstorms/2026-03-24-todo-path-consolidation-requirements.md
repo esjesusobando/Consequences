@@ -19,15 +19,15 @@ The file-based todo system currently stores todos in a top-level `03_Tasks/` dir
 
 ## Affected Skills
 
-| Skill                               | Changes needed                                                                                       |
-|-------------------------------------|------------------------------------------------------------------------------------------------------|
-| `file-todos`                        | Update canonical path, template copy target, all example commands. Add legacy read path.             |
-| `resolve-todo-parallel`             | Read from both paths, resolve/delete in-place.                                                       |
-| `triage`                            | Read from both paths, delete in-place.                                                               |
-| `ce-review`                         | Replace inline `03_Tasks/` paths with delegation to `file-todos` skill.                              |
-| `ce-review-beta`                    | Replace inline `03_Tasks/` paths with delegation to `file-todos` skill.                              |
-| `test-browser`                      | Replace inline `03_Tasks/` path with delegation to `file-todos` skill.                               |
-| `test-xcode`                        | Replace inline `03_Tasks/` path with delegation to `file-todos` skill.                               |
+| Skill                                   | Changes needed                                                                                           |
+|-----------------------------------------|----------------------------------------------------------------------------------------------------------|
+| `file-todos`                            | Update canonical path, template copy target, all example commands. Add legacy read path.                 |
+| `resolve-todo-parallel`                 | Read from both paths, resolve/delete in-place.                                                           |
+| `triage`                                | Read from both paths, delete in-place.                                                                   |
+| `ce-review`                             | Replace inline `03_Tasks/` paths with delegation to `file-todos` skill.                                  |
+| `ce-review-beta`                        | Replace inline `03_Tasks/` paths with delegation to `file-todos` skill.                                  |
+| `test-browser`                          | Replace inline `03_Tasks/` path with delegation to `file-todos` skill.                                   |
+| `test-xcode`                            | Replace inline `03_Tasks/` path with delegation to `file-todos` skill.                                   |
 
 ## Scope Boundaries
 

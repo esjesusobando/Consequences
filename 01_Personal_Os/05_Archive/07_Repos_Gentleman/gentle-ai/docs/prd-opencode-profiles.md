@@ -54,12 +54,12 @@ Hoy eso es un dolor de cabeza manual. Esta feature lo resuelve.
 
 ## 3. Target Users
 
-| User                                             | Pain Point                                                                      | How Profiles Help                                                   |
-|--------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| **Power user con múltiples providers**           | Quiere probar Anthropic vs Google vs OpenAI para SDD sin tocar config           | Crea un perfil por provider, cambia con Tab                         |
-| **Developer cost-conscious**                     | Quiere un modo "barato" para tareas simples                                     | Perfil "cheap" con Haiku/Flash, perfil "premium" con Opus           |
-| **Team lead**                                    | Quiere estandarizar perfiles para el equipo                                     | Los perfiles viven en `opencode.json`, synceables                   |
-| **Experimentador**                               | Quiere testear modelos nuevos sin romper su config default                      | Perfil experimental, el default intacto                             |
+| User                                                 | Pain Point                                                                          | How Profiles Help                                                       |
+|------------------------------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| **Power user con múltiples providers**               | Quiere probar Anthropic vs Google vs OpenAI para SDD sin tocar config               | Crea un perfil por provider, cambia con Tab                             |
+| **Developer cost-conscious**                         | Quiere un modo "barato" para tareas simples                                         | Perfil "cheap" con Haiku/Flash, perfil "premium" con Opus               |
+| **Team lead**                                        | Quiere estandarizar perfiles para el equipo                                         | Los perfiles viven en `opencode.json`, synceables                       |
+| **Experimentador**                                   | Quiere testear modelos nuevos sin romper su config default                          | Perfil experimental, el default intacto                                 |
 
 ---
 
@@ -374,23 +374,23 @@ Los sub-agent prompts SÍ se comparten como archivos `{file:...}` porque son id�
 
 ### 6.4 Affected Files (Implementation Map)
 
-| Area                          | File                                                        | Changes                                                                                                                  |
-|-------------------------------|-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| **Domain model**              | `internal/model/types.go`                                   | Add `Profile` struct                                                                                                     |
-| **Domain model**              | `internal/model/selection.go`                               | Add `Profiles []Profile` to `Selection` and `SyncOverrides`                                                              |
-| **TUI: screens**              | `internal/tui/screens/profiles.go`                          | NEW — profile list screen (list + edit + delete actions)                                                                 |
-| **TUI: screens**              | `internal/tui/screens/profile_create.go`                    | NEW — profile creation/edit flow (name → models → confirm)                                                               |
-| **TUI: screens**              | `internal/tui/screens/profile_delete.go`                    | NEW — profile delete confirmation screen                                                                                 |
-| **TUI: model**                | `internal/tui/model.go`                                     | Add `ScreenProfiles`, `ScreenProfileCreate`, `ScreenProfileEdit`, `ScreenProfileDelete`, `ScreenProfileResult`           |
-| **TUI: router**               | `internal/tui/router.go`                                    | Add routes for all profile screens                                                                                       |
-| **TUI: welcome**              | `internal/tui/screens/welcome.go`                           | Add "OpenCode SDD Profiles" option                                                                                       |
-| **SDD inject**                | `internal/components/sdd/inject.go`                         | Extract prompts to files, generate profile agents                                                                        |
-| **SDD inject**                | `internal/components/sdd/profiles.go`                       | NEW — profile CRUD: generate, detect, delete agents from JSON                                                            |
-| **SDD inject**                | `internal/components/sdd/prompts.go`                        | NEW — shared prompt file management                                                                                      |
-| **SDD inject**                | `internal/components/sdd/read_assignments.go`               | Add profile detection from opencode.json                                                                                 |
-| **Sync**                      | `internal/cli/sync.go`                                      | Update sync to handle profiles, add `--profile` flag                                                                     |
-| **Assets**                    | `internal/assets/opencode/sdd-overlay-multi.json`           | Refactor to use `{file:...}` references                                                                                  |
-| **OpenCode models**           | `internal/opencode/models.go`                               | No changes (reuse existing)                                                                                              |
+| Area                              | File                                                            | Changes                                                                                                                      |
+|-----------------------------------|-----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| **Domain model**                  | `internal/model/types.go`                                       | Add `Profile` struct                                                                                                         |
+| **Domain model**                  | `internal/model/selection.go`                                   | Add `Profiles []Profile` to `Selection` and `SyncOverrides`                                                                  |
+| **TUI: screens**                  | `internal/tui/screens/profiles.go`                              | NEW — profile list screen (list + edit + delete actions)                                                                     |
+| **TUI: screens**                  | `internal/tui/screens/profile_create.go`                        | NEW — profile creation/edit flow (name → models → confirm)                                                                   |
+| **TUI: screens**                  | `internal/tui/screens/profile_delete.go`                        | NEW — profile delete confirmation screen                                                                                     |
+| **TUI: model**                    | `internal/tui/model.go`                                         | Add `ScreenProfiles`, `ScreenProfileCreate`, `ScreenProfileEdit`, `ScreenProfileDelete`, `ScreenProfileResult`               |
+| **TUI: router**                   | `internal/tui/router.go`                                        | Add routes for all profile screens                                                                                           |
+| **TUI: welcome**                  | `internal/tui/screens/welcome.go`                               | Add "OpenCode SDD Profiles" option                                                                                           |
+| **SDD inject**                    | `internal/components/sdd/inject.go`                             | Extract prompts to files, generate profile agents                                                                            |
+| **SDD inject**                    | `internal/components/sdd/profiles.go`                           | NEW — profile CRUD: generate, detect, delete agents from JSON                                                                |
+| **SDD inject**                    | `internal/components/sdd/prompts.go`                            | NEW — shared prompt file management                                                                                          |
+| **SDD inject**                    | `internal/components/sdd/read_assignments.go`                   | Add profile detection from opencode.json                                                                                     |
+| **Sync**                          | `internal/cli/sync.go`                                          | Update sync to handle profiles, add `--profile` flag                                                                         |
+| **Assets**                        | `internal/assets/opencode/sdd-overlay-multi.json`               | Refactor to use `{file:...}` references                                                                                      |
+| **OpenCode models**               | `internal/opencode/models.go`                                   | No changes (reuse existing)                                                                                                  |
 
 ### 6.5 Sync Flow (Updated)
 
@@ -603,16 +603,16 @@ Si `~/.cache/opencode/models.json` no existe (OpenCode no se ejecutó nunca), el
 
 ### 8.2 Profile Name Validation
 
-| Input                        | Valid?             | Reason                                                                 |
-|------------------------------|--------------------|------------------------------------------------------------------------|
-| `cheap`                      | ✓                  | Simple slug                                                            |
-| `premium-v2`                 | ✓                  | Hyphens allowed                                                        |
-| `my profile`                 | ✗                  | Spaces not allowed                                                     |
-| `default`                    | ✗                  | Reserved                                                               |
-| `LOUD`                       | → `loud`           | Auto-lowercased                                                        |
-| `sdd-orchestrator`           | ✗                  | Would create `sdd-orchestrator-sdd-orchestrator` — confusing           |
-| `a`                          | ✓                  | Minimum 1 char                                                         |
-| (empty)                      | ✗                  | Must have a name                                                       |
+| Input                            | Valid?                 | Reason                                                                     |
+|----------------------------------|------------------------|----------------------------------------------------------------------------|
+| `cheap`                          | ✓                      | Simple slug                                                                |
+| `premium-v2`                     | ✓                      | Hyphens allowed                                                            |
+| `my profile`                     | ✗                      | Spaces not allowed                                                         |
+| `default`                        | ✗                      | Reserved                                                                   |
+| `LOUD`                           | → `loud`               | Auto-lowercased                                                            |
+| `sdd-orchestrator`               | ✗                      | Would create `sdd-orchestrator-sdd-orchestrator` — confusing               |
+| `a`                              | ✓                      | Minimum 1 char                                                             |
+| (empty)                          | ✗                      | Must have a name                                                           |
 
 ### 8.3 Model Inheritance for Sub-agents
 
@@ -640,13 +640,13 @@ El orchestrator prompt del default profile referencia sub-agentes como `sdd-appl
 
 ## 9. Success Metrics
 
-| Metric                                               | Target                             |
-|------------------------------------------------------|------------------------------------|
-| Profile creation time (TUI)                          | < 60 seconds                       |
-| Sync time with 3 profiles                            | < 5 seconds additional             |
-| Zero regression on users without profiles            | 100% backward compatible           |
-| Profile count supported                              | Tested up to 10                    |
-| Files changed per sync (no actual changes)           | 0 (idempotent)                     |
+| Metric                                                   | Target                                 |
+|----------------------------------------------------------|----------------------------------------|
+| Profile creation time (TUI)                              | < 60 seconds                           |
+| Sync time with 3 profiles                                | < 5 seconds additional                 |
+| Zero regression on users without profiles                | 100% backward compatible               |
+| Profile count supported                                  | Tested up to 10                        |
+| Files changed per sync (no actual changes)               | 0 (idempotent)                         |
 
 ---
 

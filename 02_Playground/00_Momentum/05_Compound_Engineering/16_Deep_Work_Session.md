@@ -18,13 +18,13 @@ Basado en el principio de Cal Newport: el trabajo profundo produce resultados ex
 
 ## Duración recomendada
 
-| Tipo de trabajo                          | Duración ideal               |
-|------------------------------------------|------------------------------|
-| Escritura / Documentación                | 45-60 min                    |
-| Diseño UX/UI                             | 60-90 min                    |
-| Programación / Scripts                   | 90-120 min                   |
-| Aprendizaje (Python/English)             | 45-60 min                    |
-| Review + Revisión                        | 30-45 min                    |
+| Tipo de trabajo                              | Duración ideal                   |
+|----------------------------------------------|----------------------------------|
+| Escritura / Documentación                    | 45-60 min                        |
+| Diseño UX/UI                                 | 60-90 min                        |
+| Programación / Scripts                       | 90-120 min                       |
+| Aprendizaje (Python/English)                 | 45-60 min                        |
+| Review + Revisión                            | 30-45 min                        |
 
 ## El protocolo (antes de empezar)
 

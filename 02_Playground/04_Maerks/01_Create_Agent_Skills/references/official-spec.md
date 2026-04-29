@@ -25,12 +25,12 @@ Show concrete examples of using this Skill.
 
 ## Required Frontmatter Fields
 
-| Field                       | Required               | Description                                                                                                                           |
-|-----------------------------|------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `name`                      | Yes                    | Skill name using lowercase letters, numbers, and hyphens only (max 64 characters). Should match the directory name.                   |
-| `description`               | Yes                    | What the Skill does and when to use it (max 1024 characters). Claude uses this to decide when to apply the Skill.                     |
-| `allowed-tools`             | No                     | Tools Claude can use without asking permission when this Skill is active. Example: `Read, Grep, Glob`                                 |
-| `model`                     | No                     | Specific model to use when this Skill is active (e.g., `claude-sonnet-4-20250514`). Defaults to the conversation's model.             |
+| Field                           | Required                   | Description                                                                                                                               |
+|---------------------------------|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| `name`                          | Yes                        | Skill name using lowercase letters, numbers, and hyphens only (max 64 characters). Should match the directory name.                       |
+| `description`                   | Yes                        | What the Skill does and when to use it (max 1024 characters). Claude uses this to decide when to apply the Skill.                         |
+| `allowed-tools`                 | No                         | Tools Claude can use without asking permission when this Skill is active. Example: `Read, Grep, Glob`                                     |
+| `model`                         | No                         | Specific model to use when this Skill is active (e.g., `claude-sonnet-4-20250514`). Defaults to the conversation's model.                 |
 
 ## Skill Locations & Priority
 
@@ -38,12 +38,12 @@ Show concrete examples of using this Skill.
 Enterprise (highest priority) → Personal → Project → Plugin (lowest priority)
 ```
 
-| Type                       | Path                               | Applies to                               |
-|----------------------------|------------------------------------|------------------------------------------|
-| **Enterprise**             | See managed settings               | All users in organization                |
-| **Personal**               | `~/01_Core/03_Skills/`             | You, across all projects                 |
-| **Project**                | `01_Core/03_Skills/`               | Anyone working in repository             |
-| **Plugin**                 | Bundled with plugins               | Anyone with plugin installed             |
+| Type                           | Path                                   | Applies to                                   |
+|--------------------------------|----------------------------------------|----------------------------------------------|
+| **Enterprise**                 | See managed settings                   | All users in organization                    |
+| **Personal**                   | `~/01_Core/03_Skills/`                 | You, across all projects                     |
+| **Project**                    | `01_Core/03_Skills/`                   | Anyone working in repository                 |
+| **Plugin**                     | Bundled with plugins                   | Anyone with plugin installed                 |
 
 ## How Skills Work
 

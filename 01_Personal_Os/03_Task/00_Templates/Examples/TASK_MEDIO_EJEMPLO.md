@@ -43,12 +43,12 @@ Agregar script de backup automático antes de sincronizar skills .agent → .cur
 
 **Tech Stack:**
 
-| Componente                              | Valor                                   |
-|-----------------------------------------|-----------------------------------------|
-| Framework                               | Python CLI                              |
-| Lenguaje                                | Python 3.12                             |
-| Base_Datos                              | N/A                                     |
-| UI                                      | Terminal                                |
+| Componente                                  | Valor                                       |
+|---------------------------------------------|---------------------------------------------|
+| Framework                                   | Python CLI                                  |
+| Lenguaje                                    | Python 3.12                                 |
+| Base_Datos                                  | N/A                                         |
+| UI                                          | Terminal                                    |
 
 **Current State:**
 - Sync Skills existe y funciona
@@ -69,13 +69,13 @@ No hay forma de rollback si la sincronización falla o borra archivos importante
 
 ## 4. Development Mode
 
-| Aspecto                                      | Valor                                         |
-|----------------------------------------------|-----------------------------------------------|
-| Project Stage                                | Feature                                       |
-| Breaking Changes                             | None                                          |
-| Data Handling                                | Preserve                                      |
-| User Base                                    | AI Agents                                     |
-| Priority                                     | Stability > Speed                             |
+| Aspecto                                          | Valor                                             |
+|--------------------------------------------------|---------------------------------------------------|
+| Project Stage                                    | Feature                                           |
+| Breaking Changes                                 | None                                              |
+| Data Handling                                    | Preserve                                          |
+| User Base                                        | AI Agents                                         |
+| Priority                                         | Stability > Speed                                 |
 
 ## 5. Requirements
 
@@ -87,10 +87,10 @@ No hay forma de rollback si la sincronización falla o borra archivos importante
 
 **Non-Functional Requirements:**
 
-| Aspecto                                 | Requisito                                                  |
-|-----------------------------------------|------------------------------------------------------------|
-| Performance                             | <10 segundos                                               |
-| Security                                | Solo copia, no modifica origen                             |
+| Aspecto                                     | Requisito                                                      |
+|---------------------------------------------|----------------------------------------------------------------|
+| Performance                                 | <10 segundos                                                   |
+| Security                                    | Solo copia, no modifica origen                                 |
 
 ## 6. Data & Database
 
@@ -135,17 +135,17 @@ No hay forma de rollback si la sincronización falla o borra archivos importante
 
 ## 11. Impact Analysis
 
-| Tipo                                             | Impacto                                            |
-|--------------------------------------------------|----------------------------------------------------|
-| Posibles Regresiones                             | Ninguna                                            |
-| Performance                                      | +5 segundos por backup                             |
+| Tipo                                                 | Impacto                                                |
+|------------------------------------------------------|--------------------------------------------------------|
+| Posibles Regresiones                                 | Ninguna                                                |
+| Performance                                          | +5 segundos por backup                                 |
 
 ## 12. Strategic Alignment
 
-| Métrica                                         | Descripción                              |
-|-------------------------------------------------|------------------------------------------|
-| North Star                                      | Safety first                             |
-| PersonalOS Priority                             | P1                                       |
+| Métrica                                             | Descripción                                  |
+|-----------------------------------------------------|----------------------------------------------|
+| North Star                                          | Safety first                                 |
+| PersonalOS Priority                                 | P1                                           |
 
 ---
 

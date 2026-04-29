@@ -12,13 +12,13 @@
 
 ### Convenciones del Proyecto
 
-| Convención | Patrón |
-|------------|--------|
-| Directorios | `XX_Nombre/` (numerados) |
-| Scripts | `##_Nombre_Script.py` |
-| Reportes | `01_Report_Status.md` |
-| Skills | `SKILL.md` en directorios de skills |
-| Backup | `.agent/` refleja `01_Personal_Os/01_Core/` |
+| Convención     | Patrón                                        |
+|----------------|-----------------------------------------------|
+| Directorios    | `XX_Nombre/` (numerados)                      |
+| Scripts        | `##_Nombre_Script.py`                         |
+| Reportes       | `01_Report_Status.md`                         |
+| Skills         | `SKILL.md` en directorios de skills           |
+| Backup         | `.agent/` refleja `01_Personal_Os/01_Core/`   |
 
 ### Estructura del OS (v2.0 Consequences)
 
@@ -56,26 +56,26 @@ Think_Different/
 
 ### SDD Configuration
 
-| Item | Valor |
-|------|-------|
-| Modo | openspec |
-| Strict TDD | ❌ disabled |
-| Config | `.atl/openspec/config.yaml` |
+| Item         | Valor                         |
+|--------------|-------------------------------|
+| Modo         | openspec                      |
+| Strict TDD   | ❌ disabled                    |
+| Config       | `.atl/openspec/config.yaml`   |
 
 ### Available Skills — Sistema v2.0 (9 Áreas Funcionales)
 
-| # | Área Funcional | Categorías | Skills principales | Metodología | Path |
-|---|---------------|------------|-------------------|-------------|------|
-| **00** | ⭐ **Core Engineering** | Compound_Engineering, Personal_Os_Stack, Skill_Auditor | ce:ideate, ce:brainstorm, ce:plan, /lfg, /slfg | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/` |
-| **01** | 🎨 **Creación Contenidos** | Brand_Voice, Content_Creation, SEO_SOTA_Master, Carousel_Master | social-content, paid-ads, brand-voice, content-ideation | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/` |
-| **02** | 🎨 **Diseño UI/UX** | Product_Design, Taste_Skills, Diseno_Minimalista, Marca, Excalidraw | taste-skill, soft-skill, minimalist-skill, redesign-skill | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/` |
-| **03** | 🎥 **Video Media** | Video_Intel, James_Cameron (Remotion, Audio) | youtube-analysis, video-prompt, seedance, remotion | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/` |
-| **04** | ⚙️ **Automatización** | N8N_JS, N8N_Python, Firecrawl, GWS_Client | workflow-builder, webhook, automation, scraping | Automation | `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/` |
-| **05** | 🔄 **Workflows** | Agent_Teams_Lite, Project_Manager, Product_Manager, PM_Orchestrator | sdd-*, /ce:*, issue-creation, jira-epic | SDD+CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/` |
-| **06** | 🛠️ **Tools** | Skill_Creator, Anthropic_Harness, DevOps, Testing, Doc_Processing, System_Master, Data_Analyst, Qmd | react-19, nextjs-15, pytest, playwright, docker | CE+GGA | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/` |
-| **07** | 🌱 **Personal OS** | Life_OS, Personal_Os, Hillary, Contexto, Rituales | quick-capture, plan-my-day, morning-standup, weekly-review | OS | `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/` |
-| **08** | 🌐 **Invictus Web** | Superpowers, Buscador_Skills, Playwright | browser-automation, search, scraping | Web | `01_Personal_Os/01_Core/02_Tools/02_Skills/08_Invictus_Web/` |
-| **09** | 📦 **Legacy Archive** | Skills obsoletas v1.x | Legacy support | Legacy | `01_Personal_Os/01_Core/02_Tools/02_Skills/09_Legacy_Archive/` |
+| #        | Área Funcional              | Categorías                                                                                            | Skills principales                                           | Metodología     | Path                                                                   |
+|----------|-----------------------------|-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------|------------------------------------------------------------------------|
+| **00**   | ⭐ **Core Engineering**      | Compound_Engineering, Personal_Os_Stack, Skill_Auditor                                                | ce:ideate, ce:brainstorm, ce:plan, /lfg, /slfg               | CE              | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/`   |
+| **01**   | 🎨 **Creación Contenidos**   | Brand_Voice, Content_Creation, SEO_SOTA_Master, Carousel_Master                                       | social-content, paid-ads, brand-voice, content-ideation      | CE              | `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/`    |
+| **02**   | 🎨 **Diseño UI/UX**          | Product_Design, Taste_Skills, Diseno_Minimalista, Marca, Excalidraw                                   | taste-skill, soft-skill, minimalist-skill, redesign-skill    | CE              | `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/`           |
+| **03**   | 🎥 **Video Media**           | Video_Intel, James_Cameron (Remotion, Audio)                                                          | youtube-analysis, video-prompt, seedance, remotion           | CE              | `01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/`            |
+| **04**   | ⚙️ **Automatización**       | N8N_JS, N8N_Python, Firecrawl, GWS_Client                                                             | workflow-builder, webhook, automation, scraping              | Automation      | `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/`         |
+| **05**   | 🔄 **Workflows**             | Agent_Teams_Lite, Project_Manager, Product_Manager, PM_Orchestrator                                   | sdd-*, /ce:*, issue-creation, jira-epic                      | SDD+CE          | `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/`              |
+| **06**   | 🛠️ **Tools**                | Skill_Creator, Anthropic_Harness, DevOps, Testing, Doc_Processing, System_Master, Data_Analyst, Qmd   | react-19, nextjs-15, pytest, playwright, docker              | CE+GGA          | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/`                  |
+| **07**   | 🌱 **Personal OS**           | Life_OS, Personal_Os, Hillary, Contexto, Rituales                                                     | quick-capture, plan-my-day, morning-standup, weekly-review   | OS              | `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/`            |
+| **08**   | 🌐 **Invictus Web**          | Superpowers, Buscador_Skills, Playwright                                                              | browser-automation, search, scraping                         | Web             | `01_Personal_Os/01_Core/02_Tools/02_Skills/08_Invictus_Web/`           |
+| **09**   | 📦 **Legacy Archive**        | Skills obsoletas v1.x                                                                                 | Legacy support                                               | Legacy          | `01_Personal_Os/01_Core/02_Tools/02_Skills/09_Legacy_Archive/`         |
 
 > **✅ v2.0 Consequences:** Migración completada 2026-04-24. 4 carpetas raíz. Pure Green State (15/15 tests).
 

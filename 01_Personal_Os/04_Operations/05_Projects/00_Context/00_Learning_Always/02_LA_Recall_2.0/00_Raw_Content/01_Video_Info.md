@@ -1,13 +1,13 @@
 # 📹 Recall 2.0 — Video Info
 
-| Campo                | Valor                                                          |
-|----------------------|----------------------------------------------------------------|
-| **URL**              | https://www.youtube.com/watch?v=UA5B4FKUViY                    |
-| **Título**           | I Tested Recall 2.0…It's Better Than Notion + Obsidian         |
-| **Autor**            | Blog With Ben                                                  |
-| **Duración**         | 13:52                                                          |
-| **Fecha**            | 2026-04-18                                                     |
-| **Tema**             | Knowledge AI — Second Brain                                    |
+| Campo                    | Valor                                                              |
+|--------------------------|--------------------------------------------------------------------|
+| **URL**                  | https://www.youtube.com/watch?v=UA5B4FKUViY                        |
+| **Título**               | I Tested Recall 2.0…It's Better Than Notion + Obsidian             |
+| **Autor**                | Blog With Ben                                                      |
+| **Duración**             | 13:52                                                              |
+| **Fecha**                | 2026-04-18                                                         |
+| **Tema**                 | Knowledge AI — Second Brain                                        |
 
 ---
 
@@ -19,16 +19,16 @@ Recall 2.0 es un "second brain" con IA integrada que transforma contenido pasivo
 
 ## 🛠️ Features Principales
 
-| #           | Feature                  | Descripción                                      |
-|-------------|--------------------------|--------------------------------------------------|
-| 1           | Save & Summarize         | YouTube, PDF, artículos, podcasts                |
-| 2           | Smart Notes              | Notas con IA que conecta contenido               |
-| 3           | Agentic Chat             | Chat con tu knowledge, internet, o ambos         |
-| 4           | Graph View 2.0           | Visual connections entre ideas                   |
-| 5           | Quiz 2.0                 | Spaced repetition — 7 tipos                      |
-| 6           | MCP Access               | Conecta con cualquier AI tool                    |
-| 7           | Text-to-Speech           | Audio de tu contenido                            |
-| 8           | API                      | Automatización                                   |
+| #               | Feature                      | Descripción                                          |
+|-----------------|------------------------------|------------------------------------------------------|
+| 1               | Save & Summarize             | YouTube, PDF, artículos, podcasts                    |
+| 2               | Smart Notes                  | Notas con IA que conecta contenido                   |
+| 3               | Agentic Chat                 | Chat con tu knowledge, internet, o ambos             |
+| 4               | Graph View 2.0               | Visual connections entre ideas                       |
+| 5               | Quiz 2.0                     | Spaced repetition — 7 tipos                          |
+| 6               | MCP Access                   | Conecta con cualquier AI tool                        |
+| 7               | Text-to-Speech               | Audio de tu contenido                                |
+| 8               | API                          | Automatización                                       |
 
 ---
 

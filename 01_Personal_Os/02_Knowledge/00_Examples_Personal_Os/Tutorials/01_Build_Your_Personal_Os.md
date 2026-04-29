@@ -159,12 +159,12 @@ Your Personal OS solves this through file structure:
 
 AI agents don't remember between sessions. Your Personal OS creates "memory" through files:
 
-| Type                     | File                                | Purpose                        |
-|--------------------------|-------------------------------------|--------------------------------|
-| Instructions             | 01_Personal_Os/11_AGENTS.md         | How to behave                  |
-| Priorities               | GOALS.md                            | What matters                   |
-| State                    | Tasks/*.md                          | Current work                   |
-| Context                  | Knowledge/*.md                      | Reference material             |
+| Type                         | File                                    | Purpose                            |
+|------------------------------|-----------------------------------------|------------------------------------|
+| Instructions                 | 01_Personal_Os/11_AGENTS.md             | How to behave                      |
+| Priorities                   | GOALS.md                                | What matters                       |
+| State                        | Tasks/*.md                              | Current work                       |
+| Context                      | Knowledge/*.md                          | Reference material                 |
 
 **The insight**: Memory isn't magic - it's just structured information the agent reads each time.
 
@@ -197,10 +197,10 @@ In 01_Personal_Os/11_AGENTS.md, you just reference them:
 ```markdown
 ## Specialized Workflows
 
-| Trigger                              | Workflow File                                        |
-|--------------------------------------|------------------------------------------------------|
-| Writing tasks                        | examples/workflows/content-generation.md             |
-| "What should I work on?"             | examples/workflows/morning-standup.md                |
+| Trigger                                  | Workflow File                                            |
+|------------------------------------------|----------------------------------------------------------|
+| Writing tasks                            | examples/workflows/content-generation.md                 |
+| "What should I work on?"                 | examples/workflows/morning-standup.md                    |
 ```
 
 **Why this matters**: It keeps your main instructions lightweight and makes workflows reusable and shareable.
@@ -323,14 +323,14 @@ After using your Personal OS daily, you'll develop intuition for how AI products
 
 ### You've Already Built These:
 
-| Concept                        | In Your Personal OS                 |
-|--------------------------------|-------------------------------------|
-| System prompt                  | 01_Personal_Os/11_AGENTS.md         |
-| RAG (retrieval)                | Knowledge/ folder                   |
-| Agent memory                   | Task files with status              |
-| Tool use                       | File read/write                     |
-| Multi-agent                    | Workflow delegation                 |
-| Few-shot prompting             | voice-samples/                      |
+| Concept                            | In Your Personal OS                     |
+|------------------------------------|-----------------------------------------|
+| System prompt                      | 01_Personal_Os/11_AGENTS.md             |
+| RAG (retrieval)                    | Knowledge/ folder                       |
+| Agent memory                       | Task files with status                  |
+| Tool use                           | File read/write                         |
+| Multi-agent                        | Workflow delegation                     |
+| Few-shot prompting                 | voice-samples/                          |
 
 ---
 

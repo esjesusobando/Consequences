@@ -9,16 +9,16 @@ Spec-Driven Development (SDD) es la metodología principal del PersonalOS.
 
 ## Fases del SDD
 
-| Fase                | Comando                    | Propósito                             |
-|---------------------|----------------------------|---------------------------------------|
-| Explore             | `/sdd:explore`             | Investigar código/ideas               |
-| Propose             | `/sdd:propose`             | Crear propuesta                       |
-| Spec                | `/sdd:spec`                | Escribir specs detalladas             |
-| Design              | `/sdd:design`              | Diseño técnico                        |
-| Tasks               | `/sdd:tasks`               | Descomponer en tareas                 |
-| Apply               | `/sdd:apply`               | Implementar código                    |
-| Verify              | `/sdd:verify`              | Verificar contra specs                |
-| Archive             | `/sdd:archive`             | Archivar y documentar                 |
+| Fase                    | Comando                        | Propósito                                 |
+|-------------------------|--------------------------------|-------------------------------------------|
+| Explore                 | `/sdd:explore`                 | Investigar código/ideas                   |
+| Propose                 | `/sdd:propose`                 | Crear propuesta                           |
+| Spec                    | `/sdd:spec`                    | Escribir specs detalladas                 |
+| Design                  | `/sdd:design`                  | Diseño técnico                            |
+| Tasks                   | `/sdd:tasks`                   | Descomponer en tareas                     |
+| Apply                   | `/sdd:apply`                   | Implementar código                        |
+| Verify                  | `/sdd:verify`                  | Verificar contra specs                    |
+| Archive                 | `/sdd:archive`                 | Archivar y documentar                     |
 
 ## Cuándo Usar SDD
 

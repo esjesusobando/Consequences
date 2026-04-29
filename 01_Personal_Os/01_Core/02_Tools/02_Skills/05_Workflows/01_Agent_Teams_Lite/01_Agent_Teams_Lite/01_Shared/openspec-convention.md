@@ -24,19 +24,19 @@
 
 ## Artifact File Paths
 
-| Skill                    | Creates / Reads                | Path                                                                                                                      |
-|--------------------------|--------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| orchestrator             | Creates/Updates                | `.atl/openspec/changes/{change-name}/state.yaml` (DAG state for compaction recovery)                                      |
-| sdd-init                 | Creates                        | `.atl/openspec/config.yaml`, `.atl/openspec/specs/`, `.atl/openspec/changes/`, `.atl/openspec/changes/archive/`           |
-| sdd-explore              | Creates (optional)             | `.atl/openspec/changes/{change-name}/exploration.md`                                                                      |
-| sdd-propose              | Creates                        | `.atl/openspec/changes/{change-name}/proposal.md`                                                                         |
-| sdd-spec                 | Creates                        | `.atl/openspec/changes/{change-name}/specs/{domain}/spec.md`                                                              |
-| sdd-design               | Creates                        | `.atl/openspec/changes/{change-name}/design.md`                                                                           |
-| sdd-tasks                | Creates                        | `.atl/openspec/changes/{change-name}/tasks.md`                                                                            |
-| sdd-apply                | Updates                        | `.atl/openspec/changes/{change-name}/tasks.md` (marks `[x]`)                                                              |
-| sdd-verify               | Creates                        | `.atl/openspec/changes/{change-name}/verify-report.md`                                                                    |
-| sdd-archive              | Moves                          | `.atl/openspec/changes/{change-name}/` → `.atl/openspec/changes/archive/YYYY-MM-DD-{change-name}/`                        |
-| sdd-archive              | Updates                        | `.atl/openspec/specs/{domain}/spec.md` (merges deltas into main specs)                                                    |
+| Skill                        | Creates / Reads                    | Path                                                                                                                          |
+|------------------------------|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| orchestrator                 | Creates/Updates                    | `.atl/openspec/changes/{change-name}/state.yaml` (DAG state for compaction recovery)                                          |
+| sdd-init                     | Creates                            | `.atl/openspec/config.yaml`, `.atl/openspec/specs/`, `.atl/openspec/changes/`, `.atl/openspec/changes/archive/`               |
+| sdd-explore                  | Creates (optional)                 | `.atl/openspec/changes/{change-name}/exploration.md`                                                                          |
+| sdd-propose                  | Creates                            | `.atl/openspec/changes/{change-name}/proposal.md`                                                                             |
+| sdd-spec                     | Creates                            | `.atl/openspec/changes/{change-name}/specs/{domain}/spec.md`                                                                  |
+| sdd-design                   | Creates                            | `.atl/openspec/changes/{change-name}/design.md`                                                                               |
+| sdd-tasks                    | Creates                            | `.atl/openspec/changes/{change-name}/tasks.md`                                                                                |
+| sdd-apply                    | Updates                            | `.atl/openspec/changes/{change-name}/tasks.md` (marks `[x]`)                                                                  |
+| sdd-verify                   | Creates                            | `.atl/openspec/changes/{change-name}/verify-report.md`                                                                        |
+| sdd-archive                  | Moves                              | `.atl/openspec/changes/{change-name}/` → `.atl/openspec/changes/archive/YYYY-MM-DD-{change-name}/`                            |
+| sdd-archive                  | Updates                            | `.atl/openspec/specs/{domain}/spec.md` (merges deltas into main specs)                                                        |
 
 ## Reading Artifacts
 

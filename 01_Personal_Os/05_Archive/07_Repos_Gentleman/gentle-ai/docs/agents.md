@@ -6,17 +6,17 @@
 
 ## Agent Matrix
 
-| Agent                     | ID                         | Skills                 | MCP             | Delegation                             | Output Styles             | Slash Commands             | Config Path                                   |
-|---------------------------|----------------------------|------------------------|-----------------|----------------------------------------|---------------------------|----------------------------|-----------------------------------------------|
-| Claude Code               | `claude-code`              | Yes                    | Yes             | Full (Task tool)                       | Yes                       | No                         | `~/.claude`                                   |
-| OpenCode                  | `opencode`                 | Yes                    | Yes             | Full (multi-mode overlay)              | No                        | Yes                        | `~/.config/opencode`                          |
-| Gemini CLI                | `gemini-cli`               | Yes                    | Yes             | Full (experimental)                    | No                        | No                         | `~/.gemini`                                   |
-| Cursor                    | `cursor`                   | Yes                    | Yes             | Full (native subagents)                | No                        | No                         | `~/.cursor`                                   |
-| VS Code Copilot           | `vscode-copilot`           | Yes                    | Yes             | Full (runSubagent)                     | No                        | No                         | `~/.copilot` + VS Code User profile           |
-| Codex                     | `codex`                    | Yes                    | Yes             | Solo-agent                             | No                        | No                         | `~/.codex`                                    |
-| Windsurf                  | `windsurf`                 | Yes (native)           | Yes             | Solo-agent                             | No                        | No                         | `~/.codeium/windsurf`                         |
-| Antigravity               | `antigravity`              | Yes (native)           | Yes             | Solo-agent + Mission Control           | No                        | No                         | `~/.gemini/antigravity`                       |
-| Kiro IDE                  | `kiro-ide`                 | Yes                    | Yes             | Full (native subagents)                | No                        | No                         | `~/.kiro`                                     |
+| Agent                         | ID                             | Skills                     | MCP                 | Delegation                                 | Output Styles                 | Slash Commands                 | Config Path                                       |
+|-------------------------------|--------------------------------|----------------------------|---------------------|--------------------------------------------|-------------------------------|--------------------------------|---------------------------------------------------|
+| Claude Code                   | `claude-code`                  | Yes                        | Yes                 | Full (Task tool)                           | Yes                           | No                             | `~/.claude`                                       |
+| OpenCode                      | `opencode`                     | Yes                        | Yes                 | Full (multi-mode overlay)                  | No                            | Yes                            | `~/.config/opencode`                              |
+| Gemini CLI                    | `gemini-cli`                   | Yes                        | Yes                 | Full (experimental)                        | No                            | No                             | `~/.gemini`                                       |
+| Cursor                        | `cursor`                       | Yes                        | Yes                 | Full (native subagents)                    | No                            | No                             | `~/.cursor`                                       |
+| VS Code Copilot               | `vscode-copilot`               | Yes                        | Yes                 | Full (runSubagent)                         | No                            | No                             | `~/.copilot` + VS Code User profile               |
+| Codex                         | `codex`                        | Yes                        | Yes                 | Solo-agent                                 | No                            | No                             | `~/.codex`                                        |
+| Windsurf                      | `windsurf`                     | Yes (native)               | Yes                 | Solo-agent                                 | No                            | No                             | `~/.codeium/windsurf`                             |
+| Antigravity                   | `antigravity`                  | Yes (native)               | Yes                 | Solo-agent + Mission Control               | No                            | No                             | `~/.gemini/antigravity`                           |
+| Kiro IDE                      | `kiro-ide`                     | Yes                        | Yes                 | Full (native subagents)                    | No                            | No                             | `~/.kiro`                                         |
 
 All agents receive the **full SDD orchestrator** injected into their system prompt, plus skill files written to their skills directory. The agent handles SDD automatically when the task is large enough, or when the user explicitly asks for it — no manual setup required.
 
@@ -24,10 +24,10 @@ All agents receive the **full SDD orchestrator** injected into their system prom
 
 ## Delegation Models
 
-| Model                           | How It Works                                                                                                                                   | Agents                                                               |
-|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| **Full (sub-agents)**           | Each SDD phase runs in an isolated context window via native sub-agent delegation. The orchestrator coordinates; sub-agents execute.           | Claude Code, OpenCode, Gemini CLI, Cursor, VS Code Copilot           |
-| **Solo-agent**                  | All SDD phases run inline in the same conversation. The orchestrator IS the executor. Engram provides cross-phase persistence.                 | Codex, Windsurf, Antigravity                                         |
+| Model                               | How It Works                                                                                                                                       | Agents                                                                   |
+|-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| **Full (sub-agents)**               | Each SDD phase runs in an isolated context window via native sub-agent delegation. The orchestrator coordinates; sub-agents execute.               | Claude Code, OpenCode, Gemini CLI, Cursor, VS Code Copilot               |
+| **Solo-agent**                      | All SDD phases run inline in the same conversation. The orchestrator IS the executor. Engram provides cross-phase persistence.                     | Codex, Windsurf, Antigravity                                             |
 
 ### Cursor Native Subagents
 
@@ -62,11 +62,11 @@ Kiro uses native custom agents in `~/.kiro/agents/`. `gentle-ai` writes 10 phase
 
 ## SDD Mode Support
 
-| Feature                    | Claude Code             | OpenCode             | Gemini CLI             | Cursor             | VS Code Copilot             | Codex             | Windsurf             | Antigravity             | Kiro IDE             |
-|----------------------------|-------------------------|----------------------|------------------------|--------------------|-----------------------------|-------------------|----------------------|-------------------------|----------------------|
-| SDD orchestrator           | Yes                     | Yes                  | Yes                    | Yes                | Yes                         | Yes               | Yes                  | Yes                     | Yes                  |
-| Single-mode SDD            | Yes                     | Yes                  | Yes                    | Yes                | Yes                         | Yes               | Yes                  | Yes                     | Yes                  |
-| Multi-mode SDD             | —                       | Yes                  | —                      | —                  | —                           | —                 | —                    | —                       | Yes*                 |
+| Feature                        | Claude Code                 | OpenCode                 | Gemini CLI                 | Cursor                 | VS Code Copilot                 | Codex                 | Windsurf                 | Antigravity                 | Kiro IDE                 |
+|--------------------------------|-----------------------------|--------------------------|----------------------------|------------------------|---------------------------------|-----------------------|--------------------------|-----------------------------|--------------------------|
+| SDD orchestrator               | Yes                         | Yes                      | Yes                        | Yes                    | Yes                             | Yes                   | Yes                      | Yes                         | Yes                      |
+| Single-mode SDD                | Yes                         | Yes                      | Yes                        | Yes                    | Yes                             | Yes                   | Yes                      | Yes                         | Yes                      |
+| Multi-mode SDD                 | —                           | Yes                      | —                          | —                      | —                               | —                     | —                        | —                           | Yes*                     |
 
 **Multi-mode** (assigning different AI models to each SDD phase) is natively supported by **OpenCode** (via its provider system) and **Kiro IDE** (via native subagent `model:` frontmatter — each phase agent runs with its own model ID). All other agents run in **single-mode** — the orchestrator manages everything using whatever model the agent is already running.
 

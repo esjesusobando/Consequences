@@ -54,18 +54,18 @@ Before implementing schema, understand:
 
 ## Common Schema Types
 
-| Type                            | Use For                               | Required Properties                                |
-|---------------------------------|---------------------------------------|----------------------------------------------------|
-| Organization                    | Company homepage/about                | name, url                                          |
-| WebSite                         | Homepage (search box)                 | name, url                                          |
-| Article                         | Blog posts, news                      | headline, image, datePublished, author             |
-| Product                         | Product pages                         | name, image, offers                                |
-| SoftwareApplication             | SaaS/app pages                        | name, offers                                       |
-| FAQPage                         | FAQ content                           | mainEntity (Q&A array)                             |
-| HowTo                           | Tutorials                             | name, step                                         |
-| BreadcrumbList                  | Any page with breadcrumbs             | itemListElement                                    |
-| LocalBusiness                   | Local business pages                  | name, address                                      |
-| Event                           | Events, webinars                      | name, startDate, location                          |
+| Type                                | Use For                                   | Required Properties                                    |
+|-------------------------------------|-------------------------------------------|--------------------------------------------------------|
+| Organization                        | Company homepage/about                    | name, url                                              |
+| WebSite                             | Homepage (search box)                     | name, url                                              |
+| Article                             | Blog posts, news                          | headline, image, datePublished, author                 |
+| Product                             | Product pages                             | name, image, offers                                    |
+| SoftwareApplication                 | SaaS/app pages                            | name, offers                                           |
+| FAQPage                             | FAQ content                               | mainEntity (Q&A array)                                 |
+| HowTo                               | Tutorials                                 | name, step                                             |
+| BreadcrumbList                      | Any page with breadcrumbs                 | itemListElement                                        |
+| LocalBusiness                       | Local business pages                      | name, address                                          |
+| Event                               | Events, webinars                          | name, startDate, location                              |
 
 **For complete JSON-LD examples**: See [references/schema-examples.md](references/schema-examples.md)
 

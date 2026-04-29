@@ -4,9 +4,9 @@ Optional integrations that extend Personal OS with external tools.
 
 ## Available Integrations
 
-| Integration                       | Description                                    | Setup                                    |
-|-----------------------------------|------------------------------------------------|------------------------------------------|
-| [Granola](./granola/)             | Sync meeting notes and transcripts             | `Set up Granola integration`             |
+| Integration                           | Description                                        | Setup                                        |
+|---------------------------------------|----------------------------------------------------|----------------------------------------------|
+| [Granola](./granola/)                 | Sync meeting notes and transcripts                 | `Set up Granola integration`                 |
 
 ## Adding Integrations
 

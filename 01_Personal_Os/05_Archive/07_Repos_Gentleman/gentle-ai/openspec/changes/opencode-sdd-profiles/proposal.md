@@ -49,31 +49,31 @@ Key architecture decisions:
 
 ## Affected Areas
 
-| Area                                                        | Impact             | Description                                                           |
-|-------------------------------------------------------------|--------------------|-----------------------------------------------------------------------|
-| `internal/model/types.go`                                   | Modified           | Add `Profile` struct                                                  |
-| `internal/model/selection.go`                               | Modified           | Add `Profiles []Profile` to `Selection` and `SyncOverrides`           |
-| `internal/tui/model.go`                                     | Modified           | Add profile screen constants + state fields                           |
-| `internal/tui/router.go`                                    | Modified           | Add routes for profile screens                                        |
-| `internal/tui/screens/welcome.go`                           | Modified           | Add "OpenCode SDD Profiles" option                                    |
-| `internal/tui/screens/profiles.go`                          | New                | Profile list screen                                                   |
-| `internal/tui/screens/profile_create.go`                    | New                | Profile creation/edit flow                                            |
-| `internal/tui/screens/profile_delete.go`                    | New                | Delete confirmation screen                                            |
-| `internal/components/sdd/inject.go`                         | Modified           | Extract prompts to files, handle profile generation                   |
-| `internal/components/sdd/profiles.go`                       | New                | Profile CRUD: generate, detect, delete agents                         |
-| `internal/components/sdd/prompts.go`                        | New                | Shared prompt file management                                         |
-| `internal/components/sdd/read_assignments.go`               | Modified           | Profile detection from opencode.json                                  |
-| `internal/cli/sync.go`                                      | Modified           | `--profile` flag, multi-profile sync                                  |
-| `internal/assets/opencode/sdd-overlay-multi.json`           | Modified           | Refactor to `{file:...}` references                                   |
+| Area                                                            | Impact                 | Description                                                               |
+|-----------------------------------------------------------------|------------------------|---------------------------------------------------------------------------|
+| `internal/model/types.go`                                       | Modified               | Add `Profile` struct                                                      |
+| `internal/model/selection.go`                                   | Modified               | Add `Profiles []Profile` to `Selection` and `SyncOverrides`               |
+| `internal/tui/model.go`                                         | Modified               | Add profile screen constants + state fields                               |
+| `internal/tui/router.go`                                        | Modified               | Add routes for profile screens                                            |
+| `internal/tui/screens/welcome.go`                               | Modified               | Add "OpenCode SDD Profiles" option                                        |
+| `internal/tui/screens/profiles.go`                              | New                    | Profile list screen                                                       |
+| `internal/tui/screens/profile_create.go`                        | New                    | Profile creation/edit flow                                                |
+| `internal/tui/screens/profile_delete.go`                        | New                    | Delete confirmation screen                                                |
+| `internal/components/sdd/inject.go`                             | Modified               | Extract prompts to files, handle profile generation                       |
+| `internal/components/sdd/profiles.go`                           | New                    | Profile CRUD: generate, detect, delete agents                             |
+| `internal/components/sdd/prompts.go`                            | New                    | Shared prompt file management                                             |
+| `internal/components/sdd/read_assignments.go`                   | Modified               | Profile detection from opencode.json                                      |
+| `internal/cli/sync.go`                                          | Modified               | `--profile` flag, multi-profile sync                                      |
+| `internal/assets/opencode/sdd-overlay-multi.json`               | Modified               | Refactor to `{file:...}` references                                       |
 
 ## Risks
 
-| Risk                                                                 | Likelihood             | Mitigation                                                                            |
-|----------------------------------------------------------------------|------------------------|---------------------------------------------------------------------------------------|
-| OpenCode `{file:...}` doesn't support `~` expansion                  | Med                    | Expand to absolute path during generation; validate early in Phase 1                  |
-| Large profile count degrades sync performance                        | Low                    | Test with 10 profiles; JSON merge is O(agents), already fast                          |
-| Breaking change to overlay format during prompt extraction           | Med                    | Phase 1 is zero-behavioral-change refactor; E2E tests validate before/after           |
-| Name collisions with user-defined agents in opencode.json            | Low                    | Prefix all profile agents with `sdd-`; deep merge preserves non-SDD keys              |
+| Risk                                                                     | Likelihood                 | Mitigation                                                                                |
+|--------------------------------------------------------------------------|----------------------------|-------------------------------------------------------------------------------------------|
+| OpenCode `{file:...}` doesn't support `~` expansion                      | Med                        | Expand to absolute path during generation; validate early in Phase 1                      |
+| Large profile count degrades sync performance                            | Low                        | Test with 10 profiles; JSON merge is O(agents), already fast                              |
+| Breaking change to overlay format during prompt extraction               | Med                        | Phase 1 is zero-behavioral-change refactor; E2E tests validate before/after               |
+| Name collisions with user-defined agents in opencode.json                | Low                        | Prefix all profile agents with `sdd-`; deep merge preserves non-SDD keys                  |
 
 ## Rollback Plan
 

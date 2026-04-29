@@ -6,39 +6,39 @@
 
 ## Que hay aqui?
 
-| Resource | Count | Location |
-|:---------|:------|:---------|
-| **MCPs** | 33 | `00_Manifest/02_MCP_Registry.yaml` |
-| **Skills** | 297 | `00_Manifest/04_Skill_Index.json` |
-| **Agents** | 52 | `00_Manifest/03_Agent_Catalog.yaml` |
-| **HUBs** | 19 | `00_Manifest/05_HUB_Catalog.yaml` / `03_Scripts_Os/HUB_CATALOG.md` |
-| **Workflows** | 28 | `00_Manifest/06_Workflow_Graph.yaml` |
-| **Hooks** | 10 | `00_Manifest/07_Hook_Registry.yaml` |
+| Resource        | Count     | Location                                                             |
+|-----------------|-----------|----------------------------------------------------------------------|
+| **MCPs**        | 33        | `00_Manifest/02_MCP_Registry.yaml`                                   |
+| **Skills**      | 297       | `00_Manifest/04_Skill_Index.json`                                    |
+| **Agents**      | 52        | `00_Manifest/03_Agent_Catalog.yaml`                                  |
+| **HUBs**        | 19        | `00_Manifest/05_HUB_Catalog.yaml` / `03_Scripts_Os/HUB_CATALOG.md`   |
+| **Workflows**   | 28        | `00_Manifest/06_Workflow_Graph.yaml`                                 |
+| **Hooks**       | 10        | `00_Manifest/07_Hook_Registry.yaml`                                  |
 
 ---
 
 ## Como invoco X?
 
-| Component | How to Invoke |
-|:----------|:-------------|
-| **MCP** | Use as tool in Claude Code / OpenCode |
-| **Skill** | Trigger with keyword in CLAUDE.md |
-| **HUB** | `python 01_Personal_Os/04_Operations/03_Scripts_Os/<NN>_<Name>_Hub.py` |
-| **Workflow** | See `Workflow_Graph.yaml` for precedence |
-| **Agent** | Invoke via Task tool with subagent_type |
+| Component      | How to Invoke                                                            |
+|----------------|--------------------------------------------------------------------------|
+| **MCP**        | Use as tool in Claude Code / OpenCode                                    |
+| **Skill**      | Trigger with keyword in CLAUDE.md                                        |
+| **HUB**        | `python 01_Personal_Os/04_Operations/03_Scripts_Os/<NN>_<Name>_Hub.py`   |
+| **Workflow**   | See `Workflow_Graph.yaml` for precedence                                 |
+| **Agent**      | Invoke via Task tool with subagent_type                                  |
 
 ---
 
 ## Ecosistemas integrados
 
-| Ecosystem | Location |
-|:----------|:---------|
-| **Personal OS Core** | `00_Winter_is_Coming/AGENTS.md` |
-| **Gentleman GGA** | `.agent/05_GGA/` |
-| **Compound Engineering** | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/` |
-| **Hillary** | Skills in `08_Personal_Os/` |
-| **Avengers** | Spider, Hulk, Thor in Compound |
-| **Dream Team / Super Cameroon** | `01_Dream_Team/` |
+| Ecosystem                         | Location                                                               |
+|-----------------------------------|------------------------------------------------------------------------|
+| **Personal OS Core**              | `00_Winter_is_Coming/AGENTS.md`                                        |
+| **Gentleman GGA**                 | `.agent/05_GGA/`                                                       |
+| **Compound Engineering**          | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/`   |
+| **Hillary**                       | Skills in `08_Personal_Os/`                                            |
+| **Avengers**                      | Spider, Hulk, Thor in Compound                                         |
+| **Dream Team / Super Cameroon**   | `01_Dream_Team/`                                                       |
 
 ---
 
@@ -62,15 +62,15 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboar
 
 `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/`
 
-| File | Description | Status |
-|:-----|:-----------|:-------|
-| `01_OS_Inventory.json` | OS Inventory | ✅ |
-| `02_MCP_Registry.yaml` | MCP Registry (33 Claude / 18 OpenCode) | ✅ |
-| `03_Agent_Catalog.yaml` | Agent Catalog (52 agents) | ✅ |
-| `04_Skill_Index.json` | Skill Index (297 skills) | ✅ |
-| `05_HUB_Catalog.yaml` | HUB Catalog (19 HUBs) | ✅ |
-| `06_Workflow_Graph.yaml` | Workflow Graph | ✅ |
-| `07_Hook_Registry.yaml` | Hook Registry (10 hooks) | ✅ |
+| File                       | Description                              | Status     |
+|----------------------------|------------------------------------------|------------|
+| `01_OS_Inventory.json`     | OS Inventory                             | ✅          |
+| `02_MCP_Registry.yaml`     | MCP Registry (33 Claude / 18 OpenCode)   | ✅          |
+| `03_Agent_Catalog.yaml`    | Agent Catalog (52 agents)                | ✅          |
+| `04_Skill_Index.json`      | Skill Index (297 skills)                 | ✅          |
+| `05_HUB_Catalog.yaml`      | HUB Catalog (19 HUBs)                    | ✅          |
+| `06_Workflow_Graph.yaml`   | Workflow Graph                           | ✅          |
+| `07_Hook_Registry.yaml`    | Hook Registry (10 hooks)                 | ✅          |
 
 ---
 

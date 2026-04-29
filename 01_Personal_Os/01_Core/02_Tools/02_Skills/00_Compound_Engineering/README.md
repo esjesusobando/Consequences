@@ -29,18 +29,18 @@ Compound Engineering es el nucleo de habilidades especializadas del sistema. Agr
 
 ## Agentes Principales
 
-| Agente | Rol | Especialidad |
-|--------|-----|-------------|
-| kieran-typescript-reviewer | TypeScript Expert | Type safety, patterns |
-| kieran-python-reviewer | Python Expert | Pythonic clarity |
-| kieran-rails-reviewer | Rails Expert | DHH style |
-| dhh-rails-reviewer | Rails Architect | 37signals style |
-| julik-frontend-races-reviewer | Frontend Races | Async/React timing |
-| security-sentinel | Security Audit | OWASP compliance |
-| performance-oracle | Performance | Bottlenecks, scalability |
-| best-practices-researcher | Research | Patterns, examples |
-| learnings-researcher | Learnings | Past solutions |
-| design-iterator | Design Iteration | Visual refinement |
+| Agente                          | Rol                 | Especialidad               |
+|---------------------------------|---------------------|----------------------------|
+| kieran-typescript-reviewer      | TypeScript Expert   | Type safety, patterns      |
+| kieran-python-reviewer          | Python Expert       | Pythonic clarity           |
+| kieran-rails-reviewer           | Rails Expert        | DHH style                  |
+| dhh-rails-reviewer              | Rails Architect     | 37signals style            |
+| julik-frontend-races-reviewer   | Frontend Races      | Async/React timing         |
+| security-sentinel               | Security Audit      | OWASP compliance           |
+| performance-oracle              | Performance         | Bottlenecks, scalability   |
+| best-practices-researcher       | Research            | Patterns, examples         |
+| learnings-researcher            | Learnings           | Past solutions             |
+| design-iterator                 | Design Iteration    | Visual refinement          |
 
 ---
 

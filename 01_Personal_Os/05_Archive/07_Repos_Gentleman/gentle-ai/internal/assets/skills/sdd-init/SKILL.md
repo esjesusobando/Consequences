@@ -199,22 +199,22 @@ mem_save(
 - Framework: {name}
 
 ### Test Layers
-| Layer                 | Available             | Tool                  |
-|-----------------------|-----------------------|-----------------------|
-| Unit                  | ✅ / ❌                 | {tool or —}           |
-| Integration           | ✅ / ❌                 | {tool or —}           |
-| E2E                   | ✅ / ❌                 | {tool or —}           |
+| Layer                     | Available                 | Tool                      |
+|---------------------------|---------------------------|---------------------------|
+| Unit                      | ✅ / ❌                     | {tool or —}               |
+| Integration               | ✅ / ❌                     | {tool or —}               |
+| E2E                       | ✅ / ❌                     | {tool or —}               |
 
 ### Coverage
 - Available: ✅ / ❌
 - Command: `{command or —}`
 
 ### Quality Tools
-| Tool                   | Available             | Command                  |
-|------------------------|-----------------------|--------------------------|
-| Linter                 | ✅ / ❌                 | {command or —}           |
-| Type checker           | ✅ / ❌                 | {command or —}           |
-| Formatter              | ✅ / ❌                 | {command or —}           |
+| Tool                       | Available                 | Command                      |
+|----------------------------|---------------------------|------------------------------|
+| Linter                     | ✅ / ❌                     | {command or —}               |
+| Type checker               | ✅ / ❌                     | {command or —}               |
+| Formatter                  | ✅ / ❌                     | {command or —}               |
 ```
 
 If mode is `openspec` or `hybrid`, also write this as a section in `openspec/config.yaml` under `testing:`.
@@ -267,15 +267,15 @@ Return:
 **Strict TDD Mode**: {enabled ✅ / disabled ❌ / unavailable (no test runner)}
 
 ### Testing Capabilities
-| Capability                  | Status                               |
-|-----------------------------|--------------------------------------|
-| Test Runner                 | {tool} ✅ / ❌ Not found               |
-| Unit Tests                  | ✅ / ❌                                |
-| Integration Tests           | {tool} ✅ / ❌ Not installed           |
-| E2E Tests                   | {tool} ✅ / ❌ Not installed           |
-| Coverage                    | ✅ / ❌                                |
-| Linter                      | {tool} ✅ / ❌                         |
-| Type Checker                | {tool} ✅ / ❌                         |
+| Capability                      | Status                                   |
+|---------------------------------|------------------------------------------|
+| Test Runner                     | {tool} ✅ / ❌ Not found                   |
+| Unit Tests                      | ✅ / ❌                                    |
+| Integration Tests               | {tool} ✅ / ❌ Not installed               |
+| E2E Tests                       | {tool} ✅ / ❌ Not installed               |
+| Coverage                        | ✅ / ❌                                    |
+| Linter                          | {tool} ✅ / ❌                             |
+| Type Checker                    | {tool} ✅ / ❌                             |
 
 ### Context Saved
 Project context persisted to Engram.

@@ -4,10 +4,10 @@
 
 Only the latest stable release receives security fixes.
 
-| Version             | Supported             |
-|---------------------|-----------------------|
-| latest              | ✅                     |
-| older               | ❌                     |
+| Version                 | Supported                 |
+|-------------------------|---------------------------|
+| latest                  | ✅                         |
+| older                   | ❌                         |
 
 ## Reporting a Vulnerability
 

@@ -43,14 +43,14 @@ rclone config
 
 **Common provider setup quick reference:**
 
-| Provider                        | Type                  | Key Settings                                                                                 |
-|---------------------------------|-----------------------|----------------------------------------------------------------------------------------------|
-| AWS S3                          | `s3`                  | access_key_id, secret_access_key, region                                                     |
-| Cloudflare R2                   | `s3`                  | access_key_id, secret_access_key, endpoint (account_id.r2.cloudflarestorage.com)             |
-| Backblaze B2                    | `b2`                  | account (keyID), key (applicationKey)                                                        |
-| DigitalOcean Spaces             | `s3`                  | access_key_id, secret_access_key, endpoint (region.digitaloceanspaces.com)                   |
-| Google Drive                    | `drive`               | OAuth flow (opens browser)                                                                   |
-| Dropbox                         | `dropbox`             | OAuth flow (opens browser)                                                                   |
+| Provider                            | Type                      | Key Settings                                                                                     |
+|-------------------------------------|---------------------------|--------------------------------------------------------------------------------------------------|
+| AWS S3                              | `s3`                      | access_key_id, secret_access_key, region                                                         |
+| Cloudflare R2                       | `s3`                      | access_key_id, secret_access_key, endpoint (account_id.r2.cloudflarestorage.com)                 |
+| Backblaze B2                        | `b2`                      | account (keyID), key (applicationKey)                                                            |
+| DigitalOcean Spaces                 | `s3`                      | access_key_id, secret_access_key, endpoint (region.digitaloceanspaces.com)                       |
+| Google Drive                        | `drive`                   | OAuth flow (opens browser)                                                                       |
+| Dropbox                             | `dropbox`                 | OAuth flow (opens browser)                                                                       |
 
 **Example: Configure Cloudflare R2**
 ```bash
@@ -101,18 +101,18 @@ rclone copy /path remote:bucket/ --dry-run
 
 ## Useful Flags
 
-| Flag                            | Purpose                                        |
-|---------------------------------|------------------------------------------------|
-| `--progress`                    | Show transfer progress                         |
-| `--dry-run`                     | Preview without transferring                   |
-| `-v`                            | Verbose output                                 |
-| `--transfers=N`                 | Parallel transfers (default 4)                 |
-| `--bwlimit=RATE`                | Bandwidth limit (e.g., `10M`)                  |
-| `--checksum`                    | Compare by checksum, not size/time             |
-| `--exclude="*.tmp"`             | Exclude patterns                               |
-| `--include="*.mp4"`             | Include only matching                          |
-| `--min-size=SIZE`               | Skip files smaller than SIZE                   |
-| `--max-size=SIZE`               | Skip files larger than SIZE                    |
+| Flag                                | Purpose                                            |
+|-------------------------------------|----------------------------------------------------|
+| `--progress`                        | Show transfer progress                             |
+| `--dry-run`                         | Preview without transferring                       |
+| `-v`                                | Verbose output                                     |
+| `--transfers=N`                     | Parallel transfers (default 4)                     |
+| `--bwlimit=RATE`                    | Bandwidth limit (e.g., `10M`)                      |
+| `--checksum`                        | Compare by checksum, not size/time                 |
+| `--exclude="*.tmp"`                 | Exclude patterns                                   |
+| `--include="*.mp4"`                 | Include only matching                              |
+| `--min-size=SIZE`                   | Skip files smaller than SIZE                       |
+| `--max-size=SIZE`                   | Skip files larger than SIZE                        |
 
 ## Large File Uploads
 

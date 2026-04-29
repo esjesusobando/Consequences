@@ -59,11 +59,11 @@ aggregateRating: {
 
 ### Accesibilidad WCAG AA
 
-| Fix                       | Antes                       | Después                        | Contraste                 |
-|---------------------------|-----------------------------|--------------------------------|---------------------------|
-| Nav subtitle              | `text-white/40`             | `text-white/60`                | 3.2:1 → 5.1:1 ✅           |
-| SVG decorativos           | sin `aria-hidden`           | `aria-hidden="true"`           | —                         |
-| Nav links                 | sin `aria-label`            | bilingual EN/ES                | —                         |
+| Fix                           | Antes                           | Después                            | Contraste                     |
+|-------------------------------|---------------------------------|------------------------------------|-------------------------------|
+| Nav subtitle                  | `text-white/40`                 | `text-white/60`                    | 3.2:1 → 5.1:1 ✅               |
+| SVG decorativos               | sin `aria-hidden`               | `aria-hidden="true"`               | —                             |
+| Nav links                     | sin `aria-label`                | bilingual EN/ES                    | —                             |
 
 ## Lecciones clave
 
@@ -75,17 +75,17 @@ aggregateRating: {
 
 ## Archivos creados/modificados
 
-| Archivo                                            | Acción                                            |
-|----------------------------------------------------|---------------------------------------------------|
-| `src/app/sitemap.ts`                               | Creado                                            |
-| `src/app/robots.ts`                                | Creado                                            |
-| `src/app/layout.tsx`                               | AggregateRating + BreadcrumbList                  |
-| `src/app/page.tsx`                                 | Contraste + aria-labels + lazy useState           |
-| `src/components/ContactForm.tsx`                   | aria-hidden SVGs                                  |
-| `src/components/ScrollVideoServices.tsx`           | unused var fix                                    |
-| `next.config.ts`                                   | Regex fix                                         |
-| `openspec/specs/seo/spec.md`                       | Source of truth SEO                               |
-| `openspec/specs/accessibility/spec.md`             | Source of truth A11y                              |
+| Archivo                                                | Acción                                                |
+|--------------------------------------------------------|-------------------------------------------------------|
+| `src/app/sitemap.ts`                                   | Creado                                                |
+| `src/app/robots.ts`                                    | Creado                                                |
+| `src/app/layout.tsx`                                   | AggregateRating + BreadcrumbList                      |
+| `src/app/page.tsx`                                     | Contraste + aria-labels + lazy useState               |
+| `src/components/ContactForm.tsx`                       | aria-hidden SVGs                                      |
+| `src/components/ScrollVideoServices.tsx`               | unused var fix                                        |
+| `next.config.ts`                                       | Regex fix                                             |
+| `openspec/specs/seo/spec.md`                           | Source of truth SEO                                   |
+| `openspec/specs/accessibility/spec.md`                 | Source of truth A11y                                  |
 
 ## Pendientes futuros
 

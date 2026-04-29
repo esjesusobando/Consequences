@@ -40,12 +40,12 @@ Laziness is not a failure of memory, context processing, or core model capabilit
 
 Controlled testing of psychological prompt stimuli documented in a Microsoft Research study:
 
-| Stimulus                                                                | Measured Effect                                             |
-|-------------------------------------------------------------------------|-------------------------------------------------------------|
-| Financial incentive framing ("$200 tip")                                | +45% output quality and length                              |
-| Step-by-step instruction ("take a deep breath")                         | Accuracy: 34% to 80% on logic tasks                         |
-| Stakes framing ("critical to my career")                                | +10% average performance                                    |
-| Combined (multiple stimuli)                                             | Up to +115% overall performance                             |
+| Stimulus                                                                    | Measured Effect                                                 |
+|-----------------------------------------------------------------------------|-----------------------------------------------------------------|
+| Financial incentive framing ("$200 tip")                                    | +45% output quality and length                                  |
+| Step-by-step instruction ("take a deep breath")                             | Accuracy: 34% to 80% on logic tasks                             |
+| Stakes framing ("critical to my career")                                    | +10% average performance                                        |
+| Combined (multiple stimuli)                                                 | Up to +115% overall performance                                 |
 
 These effects are reproducible and stem from statistical correlations in the training data between stakes language and high-effort human outputs.
 

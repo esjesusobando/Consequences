@@ -21,12 +21,12 @@ Legacy (pre-v1.16) backups use a `files/` directory with plain copies instead of
 
 ## Retention policy
 
-| Setting                  | Default                 | Behavior                                                     |
-|--------------------------|-------------------------|--------------------------------------------------------------|
-| Keep count               | 5                       | The 5 most recent unpinned backups are kept                  |
-| Pinned backups           | Never deleted           | Survive pruning regardless of count                          |
-| Duplicates               | Skipped                 | If config hasn't changed, no new backup is created           |
-| Compression              | Always                  | New backups use tar.gz (~75% smaller)                        |
+| Setting                      | Default                     | Behavior                                                         |
+|------------------------------|-----------------------------|------------------------------------------------------------------|
+| Keep count                   | 5                           | The 5 most recent unpinned backups are kept                      |
+| Pinned backups               | Never deleted               | Survive pruning regardless of count                              |
+| Duplicates                   | Skipped                     | If config hasn't changed, no new backup is created               |
+| Compression                  | Always                      | New backups use tar.gz (~75% smaller)                            |
 
 ## Pinning backups
 
@@ -41,14 +41,14 @@ Pinned backups are never automatically deleted, even when the retention limit is
 
 ## Managing backups (TUI)
 
-| Key                 | Action                                     |
-|---------------------|--------------------------------------------|
-| `j` / `k`           | Navigate up/down                           |
-| `Enter`             | Restore selected backup                    |
-| `p`                 | Pin/unpin (protect from pruning)           |
-| `r`                 | Rename (add a description)                 |
-| `d`                 | Delete                                     |
-| `Esc`               | Back                                       |
+| Key                     | Action                                         |
+|-------------------------|------------------------------------------------|
+| `j` / `k`               | Navigate up/down                               |
+| `Enter`                 | Restore selected backup                        |
+| `p`                     | Pin/unpin (protect from pruning)               |
+| `r`                     | Rename (add a description)                     |
+| `d`                     | Delete                                         |
+| `Esc`                   | Back                                           |
 
 ## Restore behavior
 

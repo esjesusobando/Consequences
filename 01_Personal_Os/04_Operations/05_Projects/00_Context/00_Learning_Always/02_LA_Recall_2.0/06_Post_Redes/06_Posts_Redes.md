@@ -117,12 +117,12 @@ Código de descuento para mi network: Ben25 (válido hasta June 2026)
 
 ## 🎯 best Practices por Plataforma
 
-| Plataforma           | Longitud            | Focus                         |
-|----------------------|---------------------|-------------------------------|
-| Facebook             | Medium              | Emocional + comunidad         |
-| Instagram            | Short               | Visual + hashtags             |
-| Twitter              | Ultra-short         | Hook + thread                 |
-| LinkedIn             | Long                | Profesional + value           |
+| Plataforma               | Longitud                | Focus                             |
+|--------------------------|-------------------------|-----------------------------------|
+| Facebook                 | Medium                  | Emocional + comunidad             |
+| Instagram                | Short                   | Visual + hashtags                 |
+| Twitter                  | Ultra-short             | Hook + thread                     |
+| LinkedIn                 | Long                    | Profesional + value               |
 
 ---
 

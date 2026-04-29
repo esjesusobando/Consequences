@@ -35,12 +35,12 @@ Framework for comprehensive problem-solving: discover → define → develop →
 
 ### Phases
 
-| Phase                  | Activities                                                      | Output                          |
-|------------------------|-----------------------------------------------------------------|---------------------------------|
-| **Discover**           | User research, interviews, observation, benchmarking            | Insights, pain points           |
-| **Define**             | Synthesis, personas, problem statements, journey maps           | Clear brief                     |
-| **Develop**            | Ideation, prototyping, testing iterations                       | Solutions                       |
-| **Deliver**            | Implementation, launch, monitoring                              | Live product                    |
+| Phase                      | Activities                                                          | Output                              |
+|----------------------------|---------------------------------------------------------------------|-------------------------------------|
+| **Discover**               | User research, interviews, observation, benchmarking                | Insights, pain points               |
+| **Define**                 | Synthesis, personas, problem statements, journey maps               | Clear brief                         |
+| **Develop**                | Ideation, prototyping, testing iterations                           | Solutions                           |
+| **Deliver**                | Implementation, launch, monitoring                                  | Live product                        |
 
 ### Example
 ```

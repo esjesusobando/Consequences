@@ -110,12 +110,12 @@ This command takes a work document (plan, specification, or todo file) and execu
 
    After completing each task, evaluate whether to create an incremental commit:
 
-| Commit when...                                                | Don't commit when...                            |
-|---------------------------------------------------------------|-------------------------------------------------|
-| Logical unit complete (model, service, component)             | Small part of a larger unit                     |
-| Tests pass + meaningful progress                              | Tests failing                                   |
-| About to switch contexts (backend → frontend)                 | Purely scaffolding with no behavior             |
-| About to attempt risky/uncertain changes                      | Would need a "WIP" commit message               |
+| Commit when...                                                    | Don't commit when...                                |
+|-------------------------------------------------------------------|-----------------------------------------------------|
+| Logical unit complete (model, service, component)                 | Small part of a larger unit                         |
+| Tests pass + meaningful progress                                  | Tests failing                                       |
+| About to switch contexts (backend → frontend)                     | Purely scaffolding with no behavior                 |
+| About to attempt risky/uncertain changes                          | Would need a "WIP" commit message                   |
 
    **Heuristic:** "Can I write a commit message that describes a complete, valuable change? If yes, commit. If the message would be 'WIP' or 'partial X', wait."
 
@@ -281,9 +281,9 @@ This command takes a work document (plan, specification, or todo file) and execu
 
    ## Before / After Screenshots
 
-| Before                     | After                     |
-|----------------------------|---------------------------|
-| ![before](URL)             | ![after](URL)             |
+| Before                         | After                         |
+|--------------------------------|-------------------------------|
+| ![before](URL)                 | ![after](URL)                 |
 
    ## Figma Design
 

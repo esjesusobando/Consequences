@@ -54,22 +54,22 @@ Rediseño completo SOTA del sitio OIM con paleta navy+yellow, copy exacto del cl
 - **Solución**: `devIndicators: false` en `next.config.ts`.
 
 #### 6. Copy exacto del cliente — Datos reales OIM
-| Campo                | Valor                                                   |
-|----------------------|---------------------------------------------------------|
-| Phone                | +1 (470) 595-0121                                       |
-| Email                | oiminstallllc@gmail.com                                 |
-| Address              | 3715 Northcrest Rd Suite 19, Atlanta GA 30340           |
-| Instagram            | @oimayen                                                |
-| Founded              | 2018                                                    |
-| Experience           | 15 years                                                |
+| Campo                    | Valor                                                       |
+|--------------------------|-------------------------------------------------------------|
+| Phone                    | +1 (470) 595-0121                                           |
+| Email                    | oiminstallllc@gmail.com                                     |
+| Address                  | 3715 Northcrest Rd Suite 19, Atlanta GA 30340               |
+| Instagram                | @oimayen                                                    |
+| Founded                  | 2018                                                        |
+| Experience               | 15 years                                                    |
 
 #### 7. ScrollVideoServices — Copy de servicios actualizado
-| Servicio                                 | Items EN                                                                                 |
-|------------------------------------------|------------------------------------------------------------------------------------------|
-| Office Furniture Installation            | Desks & workstations / Cubicles / Conference tables / Chairs & storage units             |
-| Office Setup & Reconfiguration           | New Office Set up / Workstation Reconfiguration / Full furniture rearrangement           |
-| Disassembly & Moving                     | Safe disassembly / Relocation / Reinstallation                                           |
-| Commercial Projects                      | Small & large offices / Corporate environments / Fast turnaround projects                |
+| Servicio                                     | Items EN                                                                                     |
+|----------------------------------------------|----------------------------------------------------------------------------------------------|
+| Office Furniture Installation                | Desks & workstations / Cubicles / Conference tables / Chairs & storage units                 |
+| Office Setup & Reconfiguration               | New Office Set up / Workstation Reconfiguration / Full furniture rearrangement               |
+| Disassembly & Moving                         | Safe disassembly / Relocation / Reinstallation                                               |
+| Commercial Projects                          | Small & large offices / Corporate environments / Fast turnaround projects                    |
 
 ### Skills aplicadas
 - **taste-skill**: DESIGN_VARIANCE:8, glassmorphism cards, gradientes cinematográficos, grid asimétrico.
@@ -77,20 +77,20 @@ Rediseño completo SOTA del sitio OIM con paleta navy+yellow, copy exacto del cl
 - **Apple HIG**: H1 58px/-0.022em, body 17px/1.47, labels 11px/0.08em tracking, min 44px touch targets.
 
 ### Archivos clave
-| Archivo                                            | Estado                                                              |
-|----------------------------------------------------|---------------------------------------------------------------------|
-| `src/app/layout.tsx`                               | suppressHydrationWarning en html, favicon drill, SEO SOTA           |
-| `src/app/page.tsx`                                 | Secciones completas, nav glass, footer 4-col                        |
-| `src/components/HeroSection.tsx`                   | Hydration fix via ref.style                                         |
-| `src/components/ScrollVideoServices.tsx`           | Copy actualizado, RAF intacto                                       |
-| `src/components/AboutSection.tsx`                  | Copy exacto, IntersectionObserver                                   |
-| `src/components/ProjectGallery.tsx`                | Grid asimétrico, yellow CTA                                         |
-| `src/components/ContactForm.tsx`                   | Split layout, SVG icons, Maps embed                                 |
-| `src/components/ServiceArea.tsx`                   | Dark navy, Maps Georgia, pulsing dot                                |
-| `src/components/ServicesSection.tsx`               | 2x2 grid cards                                                      |
-| `public/favicon-drill.png`                         | Ícono del taladro en pestaña                                        |
-| `next.config.ts`                                   | devIndicators: false                                                |
-| `Now/oim-website/CLAUDE.md`                        | Documentación del sub-proyecto                                      |
+| Archivo                                                | Estado                                                                  |
+|--------------------------------------------------------|-------------------------------------------------------------------------|
+| `src/app/layout.tsx`                                   | suppressHydrationWarning en html, favicon drill, SEO SOTA               |
+| `src/app/page.tsx`                                     | Secciones completas, nav glass, footer 4-col                            |
+| `src/components/HeroSection.tsx`                       | Hydration fix via ref.style                                             |
+| `src/components/ScrollVideoServices.tsx`               | Copy actualizado, RAF intacto                                           |
+| `src/components/AboutSection.tsx`                      | Copy exacto, IntersectionObserver                                       |
+| `src/components/ProjectGallery.tsx`                    | Grid asimétrico, yellow CTA                                             |
+| `src/components/ContactForm.tsx`                       | Split layout, SVG icons, Maps embed                                     |
+| `src/components/ServiceArea.tsx`                       | Dark navy, Maps Georgia, pulsing dot                                    |
+| `src/components/ServicesSection.tsx`                   | 2x2 grid cards                                                          |
+| `public/favicon-drill.png`                             | Ícono del taladro en pestaña                                            |
+| `next.config.ts`                                       | devIndicators: false                                                    |
+| `Now/oim-website/CLAUDE.md`                            | Documentación del sub-proyecto                                          |
 
 ---
 *Sesión 030–031 | OIM Website SOTA v2 | 2026-04-16*

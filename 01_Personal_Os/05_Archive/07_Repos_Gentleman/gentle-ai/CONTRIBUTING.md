@@ -37,34 +37,34 @@ PRs that are not linked to an approved issue will be **automatically rejected** 
 
 ### Type Labels (applied to PRs)
 
-| Label                     | Description                                       |
-|---------------------------|---------------------------------------------------|
-| `type:bug`                | Bug fix                                           |
-| `type:feature`            | New feature or enhancement                        |
-| `type:refactor`           | Code refactoring, no functional changes           |
-| `type:docs`               | Documentation only                                |
-| `type:test`               | Test coverage additions                           |
-| `type:chore`              | Build, CI, tooling changes                        |
-| `type:breaking`           | Breaking change                                   |
+| Label                         | Description                                           |
+|-------------------------------|-------------------------------------------------------|
+| `type:bug`                    | Bug fix                                               |
+| `type:feature`                | New feature or enhancement                            |
+| `type:refactor`               | Code refactoring, no functional changes               |
+| `type:docs`                   | Documentation only                                    |
+| `type:test`                   | Test coverage additions                               |
+| `type:chore`                  | Build, CI, tooling changes                            |
+| `type:breaking`               | Breaking change                                       |
 
 ### Status Labels (applied to Issues)
 
-| Label                           | Description                                               |
-|---------------------------------|-----------------------------------------------------------|
-| `status:needs-review`           | Newly opened, awaiting maintainer review                  |
-| `status:approved`               | Approved for implementation — work can begin              |
-| `status:in-progress`            | Being worked on                                           |
-| `status:blocked`                | Blocked by another issue or external dependency           |
-| `status:wont-fix`               | Out of scope or won't be addressed                        |
+| Label                               | Description                                                   |
+|-------------------------------------|---------------------------------------------------------------|
+| `status:needs-review`               | Newly opened, awaiting maintainer review                      |
+| `status:approved`                   | Approved for implementation — work can begin                  |
+| `status:in-progress`                | Being worked on                                               |
+| `status:blocked`                    | Blocked by another issue or external dependency               |
+| `status:wont-fix`                   | Out of scope or won't be addressed                            |
 
 ### Priority Labels
 
-| Label                         | Description                                         |
-|-------------------------------|-----------------------------------------------------|
-| `priority:critical`           | Blocking issues, security vulnerabilities           |
-| `priority:high`               | Important, affects many users                       |
-| `priority:medium`             | Normal priority                                     |
-| `priority:low`                | Nice to have                                        |
+| Label                             | Description                                             |
+|-----------------------------------|---------------------------------------------------------|
+| `priority:critical`               | Blocking issues, security vulnerabilities               |
+| `priority:high`                   | Important, affects many users                           |
+| `priority:medium`                 | Normal priority                                         |
+| `priority:low`                    | Nice to have                                            |
 
 ---
 
@@ -166,19 +166,19 @@ Commit messages **must** match this pattern:
 
 ### Allowed Types
 
-| Type                 | Purpose                                         |
-|----------------------|-------------------------------------------------|
-| `feat`               | New feature                                     |
-| `fix`                | Bug fix                                         |
-| `docs`               | Documentation only                              |
-| `refactor`           | Code change (no behavior change)                |
-| `chore`              | Maintenance, dependencies, tooling              |
-| `style`              | Formatting, linting (no logic change)           |
-| `perf`               | Performance improvement                         |
-| `test`               | Adding or updating tests                        |
-| `build`              | Build system or external deps                   |
-| `ci`                 | CI configuration                                |
-| `revert`             | Reverts a previous commit                       |
+| Type                     | Purpose                                             |
+|--------------------------|-----------------------------------------------------|
+| `feat`                   | New feature                                         |
+| `fix`                    | Bug fix                                             |
+| `docs`                   | Documentation only                                  |
+| `refactor`               | Code change (no behavior change)                    |
+| `chore`                  | Maintenance, dependencies, tooling                  |
+| `style`                  | Formatting, linting (no logic change)               |
+| `perf`                   | Performance improvement                             |
+| `test`                   | Adding or updating tests                            |
+| `build`                  | Build system or external deps                       |
+| `ci`                     | CI configuration                                    |
+| `revert`                 | Reverts a previous commit                           |
 
 ### Examples
 
@@ -251,13 +251,13 @@ fix(agent): handle missing HOME env var gracefully
 
 All PRs go through automated checks:
 
-| Check                                         | What It Verifies                                             |
-|-----------------------------------------------|--------------------------------------------------------------|
-| **Check Issue Reference**                     | PR body contains `Closes/Fixes/Resolves #N`                  |
-| **Check Issue Has status:approved**           | The linked issue has been approved by a maintainer           |
-| **Check PR Has type:* Label**                 | Exactly one `type:*` label is applied                        |
-| **Unit Tests**                                | `go test ./...` passes                                       |
-| **E2E Tests**                                 | `cd e2e && ./docker-test.sh` passes                          |
+| Check                                             | What It Verifies                                                 |
+|---------------------------------------------------|------------------------------------------------------------------|
+| **Check Issue Reference**                         | PR body contains `Closes/Fixes/Resolves #N`                      |
+| **Check Issue Has status:approved**               | The linked issue has been approved by a maintainer               |
+| **Check PR Has type:* Label**                     | Exactly one `type:*` label is applied                            |
+| **Unit Tests**                                    | `go test ./...` passes                                           |
+| **E2E Tests**                                     | `cd e2e && ./docker-test.sh` passes                              |
 
 **All checks must pass** before a PR can be merged.
 

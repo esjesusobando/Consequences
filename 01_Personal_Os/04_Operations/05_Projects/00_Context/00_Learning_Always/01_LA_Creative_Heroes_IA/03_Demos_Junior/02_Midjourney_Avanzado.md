@@ -28,10 +28,10 @@ Usa :: para dar peso a diferentes elementos
 /imagine prompt: cat::2 street::1 sunset::1 --iw 0.5
 ```
 
-| Peso              | Efecto                                          |
-|-------------------|-------------------------------------------------|
-| `::2`             | El elemento es 2x más importante                |
-| `::0.5`           | El elemento es la mitad de importante           |
+| Peso                  | Efecto                                              |
+|-----------------------|-----------------------------------------------------|
+| `::2`                 | El elemento es 2x más importante                    |
+| `::0.5`               | El elemento es la mitad de importante               |
 
 ### 2. Negative Weight (Peso Negativo)
 
@@ -69,16 +69,16 @@ Usa --tile para crear patrones repetibles
 
 ## Parámetros Avanzados
 
-| Parámetro            | Descripción                         | Rango                  |
-|----------------------|-------------------------------------|------------------------|
-| `--stop`             | Detiene en X%                       | 10-100                 |
-| `--video`            | Genera video del proceso            | true/false             |
-| `--tile`             | Crea patrón repetible               |------------------------|
-| `--no`               | Excluye elementos                   |------------------------|
-| `--iw`               | Peso de imagen                      | 0-1                    |
-| `--seed`             | Semilla de consistencia             | 0-4294967295           |
-| `--repeat`           | Genera X variaciones                | 1-40                   |
-| `--video`            | Guarda proceso como video           |------------------------|
+| Parámetro                | Descripción                             | Rango                      |
+|--------------------------|-----------------------------------------|----------------------------|
+| `--stop`                 | Detiene en X%                           | 10-100                     |
+| `--video`                | Genera video del proceso                | true/false                 |
+| `--tile`                 | Crea patrón repetible                   |----------------------------|
+| `--no`                   | Excluye elementos                       |----------------------------|
+| `--iw`                   | Peso de imagen                          | 0-1                        |
+| `--seed`                 | Semilla de consistencia                 | 0-4294967295               |
+| `--repeat`               | Genera X variaciones                    | 1-40                       |
+| `--video`                | Guarda proceso como video               |----------------------------|
 
 ---
 
@@ -86,24 +86,24 @@ Usa --tile para crear patrones repetibles
 
 ### Por Tipo de Salida
 
-| Estilo                    | Prompt adicional                                   |
-|---------------------------|----------------------------------------------------|
-| Fotografía                | `photorealistic, shot with Canon EOS R5`           |
-| Ilustración               | `illustration, watercolor, artstation`             |
-| 3D                        | `3d render, blender, octane render`                |
-| Arte conceptual           | `concept art, epic composition`                    |
-| Anime                     | `anime style, manga aesthetic`                     |
-| Logo                      | `logo design, minimalist, vector style`            |
+| Estilo                        | Prompt adicional                                       |
+|-------------------------------|--------------------------------------------------------|
+| Fotografía                    | `photorealistic, shot with Canon EOS R5`               |
+| Ilustración                   | `illustration, watercolor, artstation`                 |
+| 3D                            | `3d render, blender, octane render`                    |
+| Arte conceptual               | `concept art, epic composition`                        |
+| Anime                         | `anime style, manga aesthetic`                         |
+| Logo                          | `logo design, minimalist, vector style`                |
 
 ### Lighting (Iluminación)
 
-| Término                         | Efecto                         |
-|---------------------------------|--------------------------------|
-| `cinematic lighting`            | Iluminación de cine            |
-| `golden hour`                   | Luz de atardecer               |
-| `volumetric lighting`           | Luz volumétrica                |
-| `rim lighting`                  | Luz de borde                   |
-| `softbox lighting`              | Luz suave de estudio           |
+| Término                             | Efecto                             |
+|-------------------------------------|------------------------------------|
+| `cinematic lighting`                | Iluminación de cine                |
+| `golden hour`                       | Luz de atardecer                   |
+| `volumetric lighting`               | Luz volumétrica                    |
+| `rim lighting`                      | Luz de borde                       |
+| `softbox lighting`                  | Luz suave de estudio               |
 
 ---
 
@@ -124,12 +124,12 @@ Usa --tile para crear patrones repetibles
 
 ## Comandos Útiles
 
-| Comando               | Función                             |
-|-----------------------|-------------------------------------|
-| `/settings`           | Ver/configurar opciones             |
-| `/describe`           | Imagen a prompt (reverse)           |
-| `/blend`              | Mezclar 2-5 imágenes                |
-| `/prefer`             | Configuraciones favorito            |
+| Comando                   | Función                                 |
+|---------------------------|-----------------------------------------|
+| `/settings`               | Ver/configurar opciones                 |
+| `/describe`               | Imagen a prompt (reverse)               |
+| `/blend`                  | Mezclar 2-5 imágenes                    |
+| `/prefer`                 | Configuraciones favorito                |
 
 ---
 
@@ -151,12 +151,12 @@ Mezcla dos imágenes diferentes
 
 ## Errores Avanzados
 
-| #             | Error                    | Solución                           |
-|---------------|--------------------------|------------------------------------|
-| 1             | "Inconsistent"           | Usa --seed                         |
-| 2             | "Too similar"            | Usa V para variar                  |
-| 3             | "Low detail"             | Usa --q 2                          |
-| 4             | "Wrong style"            | Especifica más en prompt           |
+| #                 | Error                        | Solución                               |
+|-------------------|------------------------------|----------------------------------------|
+| 1                 | "Inconsistent"               | Usa --seed                             |
+| 2                 | "Too similar"                | Usa V para variar                      |
+| 3                 | "Low detail"                 | Usa --q 2                              |
+| 4                 | "Wrong style"                | Especifica más en prompt               |
 
 ---
 

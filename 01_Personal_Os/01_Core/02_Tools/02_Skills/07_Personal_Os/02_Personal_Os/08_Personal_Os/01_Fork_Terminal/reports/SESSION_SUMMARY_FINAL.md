@@ -50,11 +50,11 @@ Hemos diseñado, implementado y validado un **Sistema de Orquestación de Agente
 
 Se ejecutaron 3 niveles de pruebas intensivas:
 
-| Nivel             | Agentes             | Objetivo                                                | Resultado             |
-|-------------------|---------------------|---------------------------------------------------------|-----------------------|
-| **1**             | 5                   | Auditoría Básica (Estructura, Docs, Código)             | ✅ PASS                |
-| **2**             | 10                  | Stress Test (IO + Lectura Concurrente)                  | ✅ PASS                |
-| **3**             | 15                  | **Ultimate System Test** (Cobertura Total)              | ✅ PASS                |
+| Nivel                 | Agentes                 | Objetivo                                                    | Resultado                 |
+|-----------------------|-------------------------|-------------------------------------------------------------|---------------------------|
+| **1**                 | 5                       | Auditoría Básica (Estructura, Docs, Código)                 | ✅ PASS                    |
+| **2**                 | 10                      | Stress Test (IO + Lectura Concurrente)                      | ✅ PASS                    |
+| **3**                 | 15                      | **Ultimate System Test** (Cobertura Total)                  | ✅ PASS                    |
 
 **Métricas Finales (Ultimate Test):**
 

@@ -24,12 +24,12 @@
 
 Esta carpeta contiene el **ADN estratégico** del PersonalOS:
 
-| Archivo                               | Función                                                       |
-|---------------------------------------|---------------------------------------------------------------|
-| `01_Personal_Os/11_AGENTS.md`         | Configuración de agentes y reglas de comportamiento           |
-| `BACKLOG.md`                          | Tareas pendientes del sistema                                 |
-| `GOALS.md`                            | Metas y objetivos a largo plazo                               |
-| `Skills/`                             | Workflows legacy para referencia                              |
+| Archivo                                   | Función                                                           |
+|-------------------------------------------|-------------------------------------------------------------------|
+| `01_Personal_Os/11_AGENTS.md`             | Configuración de agentes y reglas de comportamiento               |
+| `BACKLOG.md`                              | Tareas pendientes del sistema                                     |
+| `GOALS.md`                                | Metas y objetivos a largo plazo                                   |
+| `Skills/`                                 | Workflows legacy para referencia                                  |
 
 ---
 
@@ -44,11 +44,11 @@ Esta carpeta contiene el **ADN estratégico** del PersonalOS:
 
 ## 🔄 Actualizaciones Recientes
 
-| Fecha                | Cambio                                                                      |
-|----------------------|-----------------------------------------------------------------------------|
-| 2026-04-14           | PM_Agent_Orchestrator.xml → PM_Agent_Orchestrator.md (convertido)           |
-| 2026-04-14           | BACKLOG.md actualizado                                                      |
-| 2026-04-14           | README.md actualizado                                                       |
+| Fecha                    | Cambio                                                                          |
+|--------------------------|---------------------------------------------------------------------------------|
+| 2026-04-14               | PM_Agent_Orchestrator.xml → PM_Agent_Orchestrator.md (convertido)               |
+| 2026-04-14               | BACKLOG.md actualizado                                                          |
+| 2026-04-14               | README.md actualizado                                                           |
 
 ---
 

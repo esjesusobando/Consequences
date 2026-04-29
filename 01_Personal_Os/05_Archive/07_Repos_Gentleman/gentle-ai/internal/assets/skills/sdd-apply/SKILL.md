@@ -146,10 +146,10 @@ Return to the orchestrator:
 - [x] {task 1.2 description}
 
 ### Files Changed
-| File                          | Action             | What Was Done                 |
-|-------------------------------|--------------------|-------------------------------|
-| `path/to/file.ext`            | Created            | {brief description}           |
-| `path/to/other.ext`           | Modified           | {brief description}           |
+| File                              | Action                 | What Was Done                     |
+|-----------------------------------|------------------------|-----------------------------------|
+| `path/to/file.ext`                | Created                | {brief description}               |
+| `path/to/other.ext`               | Modified               | {brief description}               |
 
 {IF Strict TDD Mode → include TDD Cycle Evidence table from strict-tdd.md}
 

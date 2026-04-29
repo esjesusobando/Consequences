@@ -126,9 +126,9 @@ The system SHALL issue access token (15 min) and refresh token (7 days) upon suc
 **Change**: add-jwt-auth
 
 ### Specs Written
-| Domain                     | Type               | Requirements                    | Scenarios               |
-|----------------------------|--------------------|---------------------------------|-------------------------|
-| authentication             | Delta              | 3 added, 1 modified             | 7 total                 |
+| Domain                         | Type                   | Requirements                        | Scenarios                   |
+|--------------------------------|------------------------|-------------------------------------|-----------------------------|
+| authentication                 | Delta                  | 3 added, 1 modified                 | 7 total                     |
 
 ### Coverage
 - Happy paths: ✅ Covered (valid token, successful login, successful refresh)

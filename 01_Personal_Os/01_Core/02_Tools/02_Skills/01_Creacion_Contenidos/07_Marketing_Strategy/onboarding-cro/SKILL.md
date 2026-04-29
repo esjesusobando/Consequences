@@ -68,11 +68,11 @@ The action that correlates most strongly with retention:
 
 ### Immediate Post-Signup (First 30 Seconds)
 
-| Approach                  | Best For                                     | Risk                                   |
-|---------------------------|----------------------------------------------|----------------------------------------|
-| Product-first             | Simple products, B2C, mobile                 | Blank slate overwhelm                  |
-| Guided setup              | Products needing personalization             | Adds friction before value             |
-| Value-first               | Products with demo data                      | May not feel "real"                    |
+| Approach                      | Best For                                         | Risk                                       |
+|-------------------------------|--------------------------------------------------|--------------------------------------------|
+| Product-first                 | Simple products, B2C, mobile                     | Blank slate overwhelm                      |
+| Guided setup                  | Products needing personalization                 | Adds friction before value                 |
+| Value-first                   | Products with demo data                          | May not feel "real"                        |
 
 **Whatever you choose:**
 - Clear single next action
@@ -149,12 +149,12 @@ Define "stalled" criteria (X days inactive, incomplete setup)
 
 ### Key Metrics
 
-| Metric                            | Description                             |
-|-----------------------------------|-----------------------------------------|
-| Activation rate                   | % reaching activation event             |
-| Time to activation                | How long to first value                 |
-| Onboarding completion             | % completing setup                      |
-| Day 1/7/30 retention              | Return rate by timeframe                |
+| Metric                                | Description                                 |
+|---------------------------------------|---------------------------------------------|
+| Activation rate                       | % reaching activation event                 |
+| Time to activation                    | How long to first value                     |
+| Onboarding completion                 | % completing setup                          |
+| Day 1/7/30 retention                  | Return rate by timeframe                    |
 
 ### Funnel Analysis
 
@@ -185,12 +185,12 @@ For each issue: Finding → Impact → Recommendation → Priority
 
 ## Common Patterns by Product Type
 
-| Product Type                 | Key Steps                                                                |
-|------------------------------|--------------------------------------------------------------------------|
-| B2B SaaS                     | Setup wizard → First value action → Team invite → Deep setup             |
-| Marketplace                  | Complete profile → Browse → First transaction → Repeat loop              |
-| Mobile App                   | Permissions → Quick win → Push setup → Habit loop                        |
-| Content Platform             | Follow/customize → Consume → Create → Engage                             |
+| Product Type                     | Key Steps                                                                    |
+|----------------------------------|------------------------------------------------------------------------------|
+| B2B SaaS                         | Setup wizard → First value action → Team invite → Deep setup                 |
+| Marketplace                      | Complete profile → Browse → First transaction → Repeat loop                  |
+| Mobile App                       | Permissions → Quick win → Push setup → Habit loop                            |
+| Content Platform                 | Follow/customize → Consume → Create → Engage                                 |
 
 ---
 

@@ -4,15 +4,15 @@
 
 ## ¿Qué hay aquí?
 
-| Componente | Total | Manifest |
-|-----------|-------|---------|
-| MCPs Claude Code | 35 | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/02_MCP_Registry.yaml` |
-| Skills | 299 (11 áreas activas) | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/04_Skill_Index.json` |
-| Agentes | 52+ | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/03_Agent_Catalog.yaml` |
-| HUBs | 19 (23 scripts totales) | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/05_HUB_Catalog.yaml` |
-| Workflows | 27+ | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/06_Workflow_Graph.yaml` |
-| Hooks | 10+ | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/07_Hook_Registry.yaml` |
-| Rules | 11 | `01_Personal_Os/01_Core/01_Rules/` (00_Core_Protocol → 10_Git_Directions) |
+| Componente         | Total                     | Manifest                                                                                |
+|--------------------|---------------------------|-----------------------------------------------------------------------------------------|
+| MCPs Claude Code   | 35                        | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/02_MCP_Registry.yaml`     |
+| Skills             | 299 (11 áreas activas)    | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/04_Skill_Index.json`      |
+| Agentes            | 52+                       | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/03_Agent_Catalog.yaml`    |
+| HUBs               | 19 (23 scripts totales)   | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/05_HUB_Catalog.yaml`      |
+| Workflows          | 27+                       | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/06_Workflow_Graph.yaml`   |
+| Hooks              | 10+                       | `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/07_Hook_Registry.yaml`    |
+| Rules              | 11                        | `01_Personal_Os/01_Core/01_Rules/` (00_Core_Protocol → 10_Git_Directions)               |
 
 > Manifest base: `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/`
 
@@ -25,14 +25,14 @@
 
 ## Ecosistemas
 
-| Ecosistema | Ubicación |
-|-----------|-----------|
-| Personal OS Core | `00_Winter_is_Coming/AGENTS.md` |
-| Compound Engineering | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/` |
-| Dream Team | `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/` |
-| Specialists | `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/` |
-| Agent Teams Protocol | `01_Personal_Os/01_Core/01_Rules/09_Agent_Teams_Protocol.mdc` |
-| Gentleman GGA | `.agent/05_GGA/` | |
+| Ecosistema             | Ubicación                                                              |
+|------------------------|------------------------------------------------------------------------|
+| Personal OS Core       | `00_Winter_is_Coming/AGENTS.md`                                        |
+| Compound Engineering   | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/`   |
+| Dream Team             | `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/`             |
+| Specialists            | `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/`   |
+| Agent Teams Protocol   | `01_Personal_Os/01_Core/01_Rules/09_Agent_Teams_Protocol.mdc`          |
+| Gentleman GGA          | `.agent/05_GGA/`                                                       |  |
 
 ## HUBs JARVIS 3.1
 

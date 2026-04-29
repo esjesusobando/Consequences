@@ -17,10 +17,10 @@ When creating a GitHub issue, reporting a bug, or requesting a feature.
 
 GGA has two templates — NEVER create blank issues (they are disabled):
 
-| Template                  | Command                                                    | Use When                       |
-|---------------------------|------------------------------------------------------------|--------------------------------|
-| Bug report                | `gh issue create --template bug_report.yml`                | Something is broken            |
-| Feature request           | `gh issue create --template feature_request.yml`           | Something is missing           |
+| Template                      | Command                                                        | Use When                           |
+|-------------------------------|----------------------------------------------------------------|------------------------------------|
+| Bug report                    | `gh issue create --template bug_report.yml`                    | Something is broken                |
+| Feature request               | `gh issue create --template feature_request.yml`               | Something is missing               |
 
 ## Bug Report Requirements
 Must include:
@@ -55,8 +55,8 @@ Never open a PR for an issue without `status:approved`.
 
 ## Cookbook
 
-| If...                           | Then...                                                        | Example                                       |
-|---------------------------------|----------------------------------------------------------------|-----------------------------------------------|
-| Reporting a bug                 | Use bug report template, include version + provider            | Hook marker injection fails on zsh            |
-| Requesting a feature            | Use feature request template, describe problem first           | Can't use gga in Docker without TTY           |
-| Unsure which template           | Default to feature request                                     | Improvement to existing behavior              |
+| If...                               | Then...                                                            | Example                                           |
+|-------------------------------------|--------------------------------------------------------------------|---------------------------------------------------|
+| Reporting a bug                     | Use bug report template, include version + provider                | Hook marker injection fails on zsh                |
+| Requesting a feature                | Use feature request template, describe problem first               | Can't use gga in Docker without TTY               |
+| Unsure which template               | Default to feature request                                         | Improvement to existing behavior                  |

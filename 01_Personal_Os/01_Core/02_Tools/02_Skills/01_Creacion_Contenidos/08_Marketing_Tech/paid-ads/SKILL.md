@@ -46,13 +46,13 @@ Gather this context (ask if not provided):
 
 ## Platform Selection Guide
 
-| Platform                   | Best For                                         | Use When                                                             |
-|----------------------------|--------------------------------------------------|----------------------------------------------------------------------|
-| **Google Ads**             | High-intent search traffic                       | People actively search for your solution                             |
-| **Meta**                   | Demand generation, visual products               | Creating demand, strong creative assets                              |
-| **LinkedIn**               | B2B, decision-makers                             | Job title/company targeting matters, higher price points             |
-| **Twitter/X**              | Tech audiences, thought leadership               | Audience is active on X, timely content                              |
-| **TikTok**                 | Younger demographics, viral creative             | Audience skews 18-34, video capacity                                 |
+| Platform                       | Best For                                             | Use When                                                                 |
+|--------------------------------|------------------------------------------------------|--------------------------------------------------------------------------|
+| **Google Ads**                 | High-intent search traffic                           | People actively search for your solution                                 |
+| **Meta**                       | Demand generation, visual products                   | Creating demand, strong creative assets                                  |
+| **LinkedIn**                   | B2B, decision-makers                                 | Job title/company targeting matters, higher price points                 |
+| **Twitter/X**                  | Tech audiences, thought leadership                   | Audience is active on X, timely content                                  |
+| **TikTok**                     | Younger demographics, viral creative                 | Audience skews 18-34, video capacity                                     |
 
 ---
 
@@ -116,11 +116,11 @@ LI_LeadGen_CMOs-SaaS_Whitepaper_Mar24
 
 ### Platform Strengths
 
-| Platform               | Key Targeting                                 | Best Signals                       |
-|------------------------|-----------------------------------------------|------------------------------------|
-| Google                 | Keywords, search intent                       | What they're searching             |
-| Meta                   | Interests, behaviors, lookalikes              | Engagement patterns                |
-| LinkedIn               | Job titles, companies, industries             | Professional identity              |
+| Platform                   | Key Targeting                                     | Best Signals                           |
+|----------------------------|---------------------------------------------------|----------------------------------------|
+| Google                     | Keywords, search intent                           | What they're searching                 |
+| Meta                       | Interests, behaviors, lookalikes                  | Engagement patterns                    |
+| LinkedIn                   | Job titles, companies, industries                 | Professional identity                  |
 
 ### Key Concepts
 
@@ -166,11 +166,11 @@ LI_LeadGen_CMOs-SaaS_Whitepaper_Mar24
 
 ### Key Metrics by Objective
 
-| Objective                 | Primary Metrics                         |
-|---------------------------|-----------------------------------------|
-| Awareness                 | CPM, Reach, Video view rate             |
-| Consideration             | CTR, CPC, Time on site                  |
-| Conversion                | CPA, ROAS, Conversion rate              |
+| Objective                     | Primary Metrics                             |
+|-------------------------------|---------------------------------------------|
+| Awareness                     | CPM, Reach, Video view rate                 |
+| Consideration                 | CTR, CPC, Time on site                      |
+| Conversion                    | CPA, ROAS, Conversion rate                  |
 
 ### Optimization Levers
 
@@ -203,19 +203,19 @@ LI_LeadGen_CMOs-SaaS_Whitepaper_Mar24
 
 ### Funnel-Based Approach
 
-| Funnel Stage               | Audience                                  | Message                                 | Goal                              |
-|----------------------------|-------------------------------------------|-----------------------------------------|-----------------------------------|
-| Top                        | Blog readers, video viewers               | Educational, social proof               | Move to consideration             |
-| Middle                     | Pricing/feature page visitors             | Case studies, demos                     | Move to decision                  |
-| Bottom                     | Cart abandoners, trial users              | Urgency, objection handling             | Convert                           |
+| Funnel Stage                   | Audience                                      | Message                                     | Goal                                  |
+|--------------------------------|-----------------------------------------------|---------------------------------------------|---------------------------------------|
+| Top                            | Blog readers, video viewers                   | Educational, social proof                   | Move to consideration                 |
+| Middle                         | Pricing/feature page visitors                 | Case studies, demos                         | Move to decision                      |
+| Bottom                         | Cart abandoners, trial users                  | Urgency, objection handling                 | Convert                               |
 
 ### Retargeting Windows
 
-| Stage                        | Window                 | Frequency Cap               |
-|------------------------------|------------------------|-----------------------------|
-| Hot (cart/trial)             | 1-7 days               | Higher OK                   |
-| Warm (key pages)             | 7-30 days              | 3-5x/week                   |
-| Cold (any visit)             | 30-90 days             | 1-2x/week                   |
+| Stage                            | Window                     | Frequency Cap                   |
+|----------------------------------|----------------------------|---------------------------------|
+| Hot (cart/trial)                 | 1-7 days                   | Higher OK                       |
+| Warm (key pages)                 | 7-30 days                  | 3-5x/week                       |
+| Cold (any visit)                 | 30-90 days                 | 1-2x/week                       |
 
 ### Exclusions to Set Up
 - Existing customers (unless upsell)
@@ -299,12 +299,12 @@ Before launching campaigns, ensure proper tracking and account setup.
 
 For implementation, see the [tools registry](../../tools/REGISTRY.md). Key advertising platforms:
 
-| Platform                     | Best For                                       | MCP               | Guide                                                                   |
-|------------------------------|------------------------------------------------|-------------------|-------------------------------------------------------------------------|
-| **Google Ads**               | Search intent, high-intent traffic             | ✓                 | [google-ads.md](../../tools/integrations/google-ads.md)                 |
-| **Meta Ads**                 | Demand gen, visual products, B2C               |-------------------| [meta-ads.md](../../tools/integrations/meta-ads.md)                     |
-| **LinkedIn Ads**             | B2B, job title targeting                       |-------------------| [linkedin-ads.md](../../tools/integrations/linkedin-ads.md)             |
-| **TikTok Ads**               | Younger demographics, video                    |-------------------| [tiktok-ads.md](../../tools/integrations/tiktok-ads.md)                 |
+| Platform                         | Best For                                           | MCP                   | Guide                                                                       |
+|----------------------------------|----------------------------------------------------|-----------------------|-----------------------------------------------------------------------------|
+| **Google Ads**                   | Search intent, high-intent traffic                 | ✓                     | [google-ads.md](../../tools/integrations/google-ads.md)                     |
+| **Meta Ads**                     | Demand gen, visual products, B2C                   |-----------------------| [meta-ads.md](../../tools/integrations/meta-ads.md)                         |
+| **LinkedIn Ads**                 | B2B, job title targeting                           |-----------------------| [linkedin-ads.md](../../tools/integrations/linkedin-ads.md)                 |
+| **TikTok Ads**                   | Younger demographics, video                        |-----------------------| [tiktok-ads.md](../../tools/integrations/tiktok-ads.md)                     |
 
 For tracking, see also: [ga4.md](../../tools/integrations/ga4.md), [segment.md](../../tools/integrations/segment.md)
 

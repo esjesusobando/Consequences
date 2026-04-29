@@ -243,13 +243,13 @@ This frame becomes the opening. For small+simple PRs, the "after" sentence alone
 
 Assess size (files, diff volume) and complexity (design decisions, trade-offs, cross-cutting concerns) to select description depth:
 
-| Change profile                                            | Description approach                                                                                          |
-|-----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Small + simple (typo, config, dep bump)                   | 1-2 sentences, no headers. Under ~300 characters.                                                             |
-| Small + non-trivial (bugfix, behavioral change)           | Short narrative, ~3-5 sentences. No headers unless two distinct concerns.                                     |
-| Medium feature or refactor                                | Narrative frame (before/after/scope), then what changed and why. Call out design decisions.                   |
-| Large or architecturally significant                      | Full narrative: problem context, approach (and why), key decisions, migration/rollback if relevant.           |
-| Performance improvement                                   | Include before/after measurements if available. Markdown table works well.                                    |
+| Change profile                                                | Description approach                                                                                              |
+|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| Small + simple (typo, config, dep bump)                       | 1-2 sentences, no headers. Under ~300 characters.                                                                 |
+| Small + non-trivial (bugfix, behavioral change)               | Short narrative, ~3-5 sentences. No headers unless two distinct concerns.                                         |
+| Medium feature or refactor                                    | Narrative frame (before/after/scope), then what changed and why. Call out design decisions.                       |
+| Large or architecturally significant                          | Full narrative: problem context, approach (and why), key decisions, migration/rollback if relevant.               |
+| Performance improvement                                       | Include before/after measurements if available. Markdown table works well.                                        |
 
 When in doubt, shorter is better. Match description weight to change weight.
 
@@ -282,13 +282,13 @@ Include a visual aid only when the change is structurally complex enough that a 
 
 **When to include:**
 
-| PR changes...                                                          | Visual aid                                         |
-|------------------------------------------------------------------------|----------------------------------------------------|
-| Architecture touching 3+ interacting components                        | Mermaid component or interaction diagram           |
-| Multi-step workflow or data flow with non-obvious sequencing           | Mermaid flow diagram                               |
-| 3+ behavioral modes, states, or variants                               | Markdown comparison table                          |
-| Before/after performance or behavioral data                            | Markdown table                                     |
-| Data model changes with 3+ related entities                            | Mermaid ERD                                        |
+| PR changes...                                                              | Visual aid                                             |
+|----------------------------------------------------------------------------|--------------------------------------------------------|
+| Architecture touching 3+ interacting components                            | Mermaid component or interaction diagram               |
+| Multi-step workflow or data flow with non-obvious sequencing               | Mermaid flow diagram                                   |
+| 3+ behavioral modes, states, or variants                                   | Markdown comparison table                              |
+| Before/after performance or behavioral data                                | Markdown table                                         |
+| Data model changes with 3+ related entities                                | Mermaid ERD                                            |
 
 **When to skip:**
 - Sizing routes to "1-2 sentences"
@@ -326,11 +326,11 @@ Append a badge footer separated by a `---` rule. Skip if a badge already exists.
 
 **Harness lookup:**
 
-| Harness               | `LOGO`                      | `COLOR`             |
-|-----------------------|-----------------------------|---------------------|
-| Claude Code           | `claude`                    | `D97757`            |
-| Codex                 | (omit logo param)           | `000000`            |
-| Gemini CLI            | `googlegemini`              | `4285F4`            |
+| Harness                   | `LOGO`                          | `COLOR`                 |
+|---------------------------|---------------------------------|-------------------------|
+| Claude Code               | `claude`                        | `D97757`                |
+| Codex                     | (omit logo param)               | `000000`                |
+| Gemini CLI                | `googlegemini`                  | `4285F4`                |
 
 **Model slug:** Replace spaces with underscores. Append context window and thinking level in parentheses if known. Examples: `Opus_4.6_(1M,_Extended_Thinking)`, `Sonnet_4.6_(200K)`, `Gemini_3.1_Pro`.
 
