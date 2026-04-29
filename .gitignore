@@ -167,3 +167,12 @@ Now/02_Videos_Finales/
 
 # JSON de métricas auto-generados (se regeneran solos)
 01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/03_Metrics/improvement_log.json
+
+# =============================================================================
+# EX-SUBMODULES — carpetas locales, no trackear
+# =============================================================================
+.agent/05_GGA/
+01_Personal_Os/05_Archive/07_Repos_Gentleman/sub-agent-statusline/
+01_Personal_Os/05_Archive/07_Repos_Gentleman/tubemaster/
+03_Resultado/OIM_Website/
+03_Resultado/OIM_Website_Backup/
