@@ -1,5 +1,34 @@
 # Changelog
 
+## 3.3.0 - 2026-04-29
+
+### Fixed — Git Cleanup & Disk Space Session
+
+- **Submodules removidos**: 5 entradas huérfanas eliminadas del índice git (`.agent/05_GGA`, `sub-agent-statusline`, `tubemaster`, `OIM_Website`, `OIM_Website_Backup`)
+- **`.gitmodules` vaciado**: repo sin dependencias externas — 0 submodules activos
+- **`.gitignore` hardened**: excluida `01_Original_Source_Backups/` (firecrawl + marketingskills ~1000 archivos) y 5 ex-submodule folders
+- **OS update masivo**: 1100+ archivos actualizados — workflows, skills, agents, rules, docs (v3.1 Consequences sync)
+- **Disco C: liberado ~40 GB**: npm cache 21GB, uv cache 12GB, Temp 10GB, Playwright browsers 1.9GB, Brave cache 1.1GB
+
+### Commits sesión
+
+| Commit     | Descripción                                                        |
+|------------|--------------------------------------------------------------------|
+| `92983546` | feat(os): v3.1 Consequences — OS update, skills, agents, workflows |
+| `750151c3` | chore(git): remove all submodules                                  |
+| `0426f884` | chore(gitignore): ignore ex-submodule folders                      |
+
+### Ground Truth (2026-04-29)
+
+| Componente      | Valor verificado                           |
+|-----------------|--------------------------------------------|
+| Submodules      | ✅ 0 activos                               |
+| Working tree    | ✅ Clean (nothing to commit)               |
+| Disco C libre   | ~28 GB (liberados ~40 GB)                  |
+| .git size       | ~392 MB ⚠️ (pendiente git filter-repo)    |
+
+---
+
 ## 3.2.0 - 2026-04-27
 
 ### Fixed — Bug Fix Session (desviaciones CHANGELOG v1.9.0)

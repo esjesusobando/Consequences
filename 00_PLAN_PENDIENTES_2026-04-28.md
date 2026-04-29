@@ -1,11 +1,11 @@
-# 📋 PLAN PENDIENTES — PersonalOS v3.1 | 2026-04-28
+# 📋 PLAN PENDIENTES — PersonalOS v3.1 | 2026-04-29
 
 > **Propósito:** Plan de continuación por si se acaban los tokens. Retomar desde aquí.
-> **Estado del sistema:** ✅ PURE GREEN (commit `0fe81612`)
+> **Estado del sistema:** ✅ PURE GREEN (commit `0426f884`)
 
 ---
 
-## ✅ YA HECHO EN ESTA SESIÓN
+## ✅ YA HECHO EN ESTA SESIÓN (2026-04-28 / 2026-04-29)
 
 | Tarea                                                                                  | Commit                         | Estado     |
 |----------------------------------------------------------------------------------------|--------------------------------|------------|
@@ -16,6 +16,13 @@
 | `09_Legacy_Archive` movido a `05_Archive/09_Legacy_Skills_Archive/`                    | `0fe81612`                     | ✅          |
 | `OS_DIRECTORY.md`: MCPs 33→35, Rules 10→11, HUB paths corregidos                       | `0fe81612`                     | ✅          |
 | OIM_Website_Backup: 8 commits pusheados a `Office_Installations_` via GitHub API       | externo                        | ✅          |
+| **Sesión 2026-04-29 — Limpieza disco + Git**                                           |                                |            |
+| Disco C: liberado ~40 GB (npm 21GB, uv 12GB, Temp 10GB, Playwright 1.9GB, Brave 1.1GB) | n/a                            | ✅          |
+| Update 1100+ archivos OS: workflows, skills, agents, rules, docs                       | `92983546`                     | ✅          |
+| Fix `.gitignore`: excluir `01_Original_Source_Backups/` (firecrawl + marketingskills)  | `92983546`                     | ✅          |
+| Removidos 5 submodules huérfanos del índice git                                        | `750151c3`                     | ✅          |
+| `.gitmodules` vaciado — repo sin dependencias externas                                 | `750151c3`                     | ✅          |
+| Ex-submodules agregados al `.gitignore` — working tree limpio                          | `0426f884`                     | ✅          |
 
 ---
 
@@ -33,7 +40,7 @@
   - `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`
   - `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md`
 
-### 2. Disco lleno — .git tiene 392MB
+### 2. Disco lleno — .git tiene 392MB ⚠️ (C: liberado ~40GB hoy, pero .git history pesa)
 
 **Root cause identificado:**
 | Archivo                                        | Tamaño en historia                 |
@@ -134,9 +141,11 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 | HUBs               | 23 scripts (19 + 4 auxiliares)                         |
 | MCPs Claude        | 35                                                     |
 | Manifests JARVIS   | 7                                                      |
-| .git size          | 392MB ⚠️ (requiere limpieza)                           |
+| .git size          | 392MB ⚠️ (requiere limpieza con git filter-repo)       |
+| Disco C libre      | ~28 GB ✅ (liberados ~40 GB hoy)                        |
+| Submodules         | ✅ Removidos (0 submodules activos)                     |
 | OIM Website        | ✅ Pusheado a Office_Installations_                     |
-| Último commit OS   | `0fe81612`                                             |
+| Último commit OS   | `0426f884`                                             |
 
 ---
 
