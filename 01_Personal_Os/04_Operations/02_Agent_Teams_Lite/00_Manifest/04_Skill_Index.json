@@ -1,11 +1,11 @@
 {
   "version": "v3.0",
-  "generated": "2026-04-25T13:55:58",
+  "generated": "2026-04-29T00:14:32",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
-    "areas": 12,
-    "skills": 297,
-    "without_frontmatter": 32
+    "areas": 11,
+    "skills": 298,
+    "without_frontmatter": 0
   },
   "by_area": {
     "00_Compound_Engineering": {
@@ -509,7 +509,7 @@
         {
           "name": "09_Compound_Engine",
           "path": "01_Creacion_Contenidos/09_Compound_Engine/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "10_Premium_Image_Studio",
@@ -539,12 +539,12 @@
       ]
     },
     "02_Diseno_Ui_Ux": {
-      "count": 19,
+      "count": 21,
       "skills": [
         {
           "name": "04_Product_Design",
           "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "01_Taste_Skill",
@@ -599,7 +599,7 @@
         {
           "name": "11_Pencil_Design_Studio",
           "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/11_Pencil_Design_Studio/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "12_Shadcn",
@@ -634,6 +634,16 @@
         {
           "name": "09_Ui_Ux_Pro_Max",
           "path": "02_Diseno_Ui_Ux/09_Ui_Ux_Pro_Max/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "10_Huashu_Design",
+          "path": "02_Diseno_Ui_Ux/10_Huashu_Design/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "11_Dumbledor_Design",
+          "path": "02_Diseno_Ui_Ux/11_Dumbledor_Design/SKILL.md",
           "has_frontmatter": true
         }
       ]
@@ -764,7 +774,7 @@
         {
           "name": "01_Agent_Teams_Lite",
           "path": "05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "02_Sdd_Init",
@@ -834,7 +844,7 @@
         {
           "name": "02_Project_Manager",
           "path": "05_Workflows/02_Project_Manager/02_Project_Manager/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "01_Morning_Standup",
@@ -879,7 +889,7 @@
         {
           "name": "03_Product_Manager",
           "path": "05_Workflows/03_Product_Manager/03_Product_Manager/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "01_Brainstorming",
@@ -959,57 +969,57 @@
         {
           "name": "01_Evaluator_Pattern",
           "path": "06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/01_Evaluator_Pattern/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "02_Context_Management",
           "path": "06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/02_Context_Management/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "03_Sprint_Contract",
           "path": "06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/03_Sprint_Contract/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "04_Auto_Mode_Security",
           "path": "06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/04_Auto_Mode_Security/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "05_Pass_At_Metrics",
           "path": "06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/05_Pass_At_Metrics/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "07_Feature_List_JSON",
           "path": "06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/07_Feature_List_JSON/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "08_Graders_Framework",
           "path": "06_Tools/03_Anthropic_Harness/14_Anthropic_Harness/08_Graders_Framework/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "07_DevOps",
           "path": "06_Tools/04_DevOps/07_DevOps/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "01_Vercel_Deploy",
           "path": "06_Tools/04_DevOps/07_DevOps/01_Vercel_Deploy/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "02_Supabase_Integration",
           "path": "06_Tools/04_DevOps/07_DevOps/02_Supabase_Integration/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "03_MCP_Integration",
           "path": "06_Tools/04_DevOps/07_DevOps/03_MCP_Integration/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "04_Observability",
@@ -1019,17 +1029,17 @@
         {
           "name": "05_Seo_Audit",
           "path": "06_Tools/04_DevOps/07_DevOps/05_Seo_Audit/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "06_Seo_Optimization",
           "path": "06_Tools/04_DevOps/07_DevOps/06_Seo_Optimization/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "07_Data_Visualization",
           "path": "06_Tools/04_DevOps/07_DevOps/07_Data_Visualization/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "08_Vercel_React_Best_Practices",
@@ -1059,7 +1069,7 @@
         {
           "name": "05_Vibe_Coding",
           "path": "06_Tools/05_Vibe_Coding/05_Vibe_Coding/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "01_React_19",
@@ -1174,7 +1184,7 @@
         {
           "name": "06_Testing",
           "path": "06_Tools/06_Testing/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "01_Test_Driven_Development",
@@ -1194,7 +1204,7 @@
         {
           "name": "04_Test_Resource_Management",
           "path": "06_Tools/06_Testing/04_Test_Resource_Management/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "05_Testing_Coverage",
@@ -1249,7 +1259,7 @@
         {
           "name": "15_Shellcheck",
           "path": "06_Tools/06_Testing/15_Shellcheck/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "16_Docs_Alignment",
@@ -1259,7 +1269,7 @@
         {
           "name": "17_Testing_Coverage",
           "path": "06_Tools/06_Testing/17_Testing_Coverage/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "25_Octopus",
@@ -1274,17 +1284,17 @@
         {
           "name": "01_Universal_Doc_Reader",
           "path": "06_Tools/11_Doc_Processing/01_Universal_Doc_Reader/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "02_Batch_Doc_Processor",
           "path": "06_Tools/11_Doc_Processing/02_Batch_Doc_Processor/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "03_Resumen_Extractor",
           "path": "06_Tools/11_Doc_Processing/03_Resumen_Extractor/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "13_System_Master",
@@ -1354,12 +1364,12 @@
         {
           "name": "08_Personal_Os",
           "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "01_Fork_Terminal",
           "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "fork-terminal",
@@ -1374,7 +1384,7 @@
         {
           "name": "02_Agent_Orchestrator",
           "path": "07_Personal_Os/02_Personal_Os/08_Personal_Os/02_Agent_Orchestrator/SKILL.md",
-          "has_frontmatter": false
+          "has_frontmatter": true
         },
         {
           "name": "03_System_Guardian",
@@ -1540,16 +1550,6 @@
           "name": "writing-skills",
           "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/writing-skills/SKILL.md",
           "has_frontmatter": true
-        }
-      ]
-    },
-    "09_Legacy_Archive": {
-      "count": 1,
-      "skills": [
-        {
-          "name": "09_Legacy_Archive",
-          "path": "09_Legacy_Archive/SKILL.md",
-          "has_frontmatter": false
         }
       ]
     }

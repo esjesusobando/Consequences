@@ -1,85 +1,51 @@
-# Workflow Graph — PersonalOS v3.0
+# Workflow Graph — generated 2026-04-29T00:14:32
 
-**Version:** 3.0 | **Date:** 2026-04-25
-
----
-
-## Graph de Workflows
-
-```
-                    ┌──────────────────────────┐
-                    │   ORCHESTRATOR          │
-                    │   (00_Orchestrator)     │
-                    └───────────┬──────────────┘
-                                │
-            ┌───────────────────┼───────────────────┐
-            │                   │                   │
-            ▼                   ▼                   ▼
-    ┌───────────────┐   ┌───────────────┐   ┌───────────────┐
-    │ TDD PHASE 1  │   │ DREAM TEAM  │   │ COMPOUND     │
-    │ Scope Rule   │   │ Pipeline    │   │ Review      │
-    └───────────────┘   └───────────────┘   └───────────────┘
-            │                   │                   │
-            ▼                   ▼                   ▼
-    ┌───────────────┐   ┌───────────────┐   ┌───────────────┐
-    │ TDD PHASE 2  │   │ Product     │   │ Security    │
-    │ Test First  │   │ Builder    │   │ Sentinel    │
-    └───────────────┘   └───────────────┘   └───────────────┘
-            │                   │                   │
-            ▼                   ▼                   ▼
-    ┌───────────────┐   ┌───────────────┐   ┌───────────────┐
-    │ TDD PHASE 3  │   │ Data        │   │ Performance │
-    │ Implement   │   │ Engineer   │   │ Oracle     │
-    └───────────────┘   └───────────────┘   └───────────────┘
-            │                   │                   │
-            ▼                   ▼                   ▼
-    ┌───────────────┐   ┌───────────────┐   ┌───────────────┐
-    │ TDD PHASE 4  │   │ Marketing  │   │ Design    │
-    │ Refactor   │   │ Tech     │   │ Iterator  │
-    └───────────────┘   └───────────────┘   └───────────────┘
-            │                   │                   │
-            ▼                   ▼                   ▼
-    ┌───────────────┐   ┌───────────────┐   ┌───────────────┐
-    │ TDD PHASE 5  │   │ Design     │   │ Git        │
-    │ Security   │   │ Ops       │   │ Workflow   │
-    └───────────────┘   └───────────────┘   └───────────────┘
-            │                   │                   │
-            ▼                   ▼                   ▼
-    ┌───────────────┐   ┌───────────────┐   ┌───────────────┐
-    │ TDD PHASE 6  │   │ Platform   │   │ LFG        │
-    │ Commit/PR  │   │ Engineer  │   │ Engine    │
-    └───────────────┘   └───────────────┘   └───────────────┘
-            │                   │
-            ▼                   ▼
-    ┌───────────────┐   ┌───────────────┐
-    │ TDD PHASE 7  │   │ GROWTH     │
-    │ A11Y      │   │ Pipeline  │
-    └───────────────┘   └───────────────┘
-```
-
----
-
-## Precedencias
-
-| # | Workflow | Fases | Dependencias |
-|---|----------|------|-----------|
-| 1 | **TDD Pipeline** | 7 | Core Flow: 00→01→02→03→04→05→06→07 |
-| 2 | **Dream Team** | 5 | Paralelo: Product, Data, Marketing, Design, Platform |
-| 3 | **Compound Review** | N | Parall: Security → Performance → A11y |
-| 4 | **Growth** | 5 | Secuencial: Script → Thumbnail → Title → Content → Carousel |
-| 5 | **LFG Engine** |Autonomous| Full self-contained |
-
----
-
-## HUBs Involved
-
-- 01_Auditor_Hub (todos los workflows de revision)
-- 02_Git_Hub (commits y PRs)
-- 03_AI_Task_Planner (planificacion)
-- 04_Ritual_Hub (routines)
-- 08_Workflow_Hub (orquestacion)
-- 11_Auto_Learn_Hub (learnings)
-
----
-
-*Think Different PersonalOS v3.0 Consequences*
+version: v3.0
+generated: "2026-04-29T00:14:32"
+base_path: 01_Personal_Os/01_Core/00_Workflows_Os/
+totals:
+  categories: 5
+  workflows: 27
+by_category:
+  01_Personal_Os:
+    count: 11
+    workflows:
+      - 01_Morning_Standup.md
+      - 02_Backlog_Processing.md
+      - 03_Content_Generation.md
+      - 04_Weekly_Review.md
+      - 05_Ritual_Cierre_Protocol.md
+      - 06_Validar_Reglas.md
+      - 07_System_Health_Audit.md
+      - 08_Context_Recovery.md
+      - 09_AI_Task_Template.md
+      - 10_Classify_Task.md
+      - 11_AGENTS.md
+  02_Marvel:
+    count: 8
+    workflows:
+      - 01_Iron_Man_Gen.md
+      - 02_Spider_Brainstorm.md
+      - 03_Professor_X_Plan.md
+      - 04_Vision_Review.md
+      - 05_Thor_Work.md
+      - 06_Hulk_Compound.md
+      - 07_AntMan_Lfg_Lite.md
+      - 08_Doc_Strange_Lfg.md
+  03_Gentleman:
+    count: 2
+    workflows:
+      - 10_Frontend_Premium.md
+      - 20_Redaccion_de_Docs.md
+  04_Hillary:
+    count: 2
+    workflows:
+      - 15_Captura_Rapida.md
+      - 25_Hillary_Life_OS.md
+  05_Compound_Engineering:
+    count: 4
+    workflows:
+      - 16_Deep_Work_Session.md
+      - 17_Ship_It.md
+      - 18_Anthropic_Harness.md
+      - 19_Multi_Agent_Roles.md

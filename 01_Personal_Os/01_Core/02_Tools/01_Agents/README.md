@@ -1,6 +1,8 @@
 # 🤖 01_Agents — Sistema de Agentes Especializados
 
-Este directorio contiene los agentes especializados del sistema Think Different AI. Cada agente tiene un dominio específico de responsabilidad.
+**Versión:** v3.3 | **Fecha:** 2026-04-29 | **Estado:** Pure Green
+
+Este directorio contiene todos los agentes especializados del PersonalOS. Cada agente tiene un dominio específico y se invoca desde workflows o directamente desde Claude Code.
 
 ---
 
@@ -8,38 +10,52 @@ Este directorio contiene los agentes especializados del sistema Think Different 
 
 ```
 01_Personal_Os/01_Core/02_Tools/01_Agents/
-├── 00_Orchestrator.md              # Hub de Orquestación
-├── 01_Scope_Rule_Architect.md      # #01 Architect
-├── 02_TDD_Test_First.md            # #02 Tests (RED)
-├── 03_React_Test_Implementer.md    # #03 Código (GREEN)
-├── 04_React_Mentor.md              # #04 Optimization
-├── 05_Security_Auditor.md          # #05 Safety Hub
-├── 06_Git_Workflow_Manager.md      # #06 PR/Git
-├── 07_Accessibility_Auditor.md     # #07 WCAG
-├── 08_PRD_Dashboard_Template.md    # #08 Product
-├── 09_Design_SOP_Document.md       # #09 Layout
-├── 10_Workflow_Orchestrator.md     # #10 TDD Engine
-├── 11_AIPM_Judge.md                # #11 Evaluation
-├── 12_LFG_Autonomous_Engine.md     # #12 Autonomy
-├── 13_Hillary.md                   # #13 Life OS Specialist
-├── 01_Dream_Team/                  # Marketing, Data, Platform
-├── 02_Specialists_Compound/        # Revisión y Arquitectura
-├── 03_Growth/                      # Content + YouTube + Carousel
+├── 00_Orchestrator.md              # Orquestador maestro del OS
+├── 01_Scope_Rule_Architect.md      # Arquitectura — Scope Rule
+├── 02_TDD_Test_First.md            # Tests RED phase
+├── 03_React_Test_Implementer.md    # Código GREEN phase
+├── 04_React_Mentor.md              # Refactor + optimización
+├── 05_Security_Auditor.md          # OWASP — seguridad
+├── 06_Git_Workflow_Manager.md      # PR + Git workflow
+├── 07_Accessibility_Auditor.md     # WCAG 2.1 AA
+├── 08_PRD_Dashboard_Template.md    # Product Requirements
+├── 09_Design_SOP_Document.md       # Layout + diseño
+├── 10_Workflow_Orchestrator.md     # TDD Engine orquestador
+├── 11_AIPM_Judge.md                # Evaluación + calidad
+├── 12_LFG_Autonomous_Engine.md     # Autonomía — LFG
+├── 13_Hillary.md                   # Life OS Specialist
+├── 01_Dream_Team/                  # 5 agentes: Product, Data, Marketing, Design, Platform
+│   ├── 01_Product_Builder.md
+│   ├── 02_Data_Engineer.md
+│   ├── 03_Marketing_Tech.md
+│   ├── 04_Design_Ops.md
+│   └── 05_Platform_Engineer.md
+├── 02_Specialists_Compound/        # 24 agentes revisores especializados
+│   ├── Agent-Native-Reviewer.md
+│   ├── Architecture-Strategist.md
+│   ├── Best-Practices-Researcher.md
+│   ├── Code-Simplicity-Reviewer.md
+│   ├── Deployment-Verification-Agent.md
+│   ├── Dhh-Rails-Reviewer.md
+│   ├── Learnings-Researcher.md
+│   ├── Security-Sentinel.md
+│   └── ... (24 total — ver README interno)
+├── 03_Growth/                      # 5 agentes de contenido + YouTube
 │   ├── 01_Content_Transformer.md
 │   ├── 02_Youtube_Script_Writer.md
 │   ├── 03_Youtube_Thumbnail_Prompter.md
 │   ├── 04_Youtube_Title_Generator.md
 │   └── 05_Carousel_Strategist.md
-├── 04_Contexto/                    # Plantillas de contexto
-├── 05_Marca/                       # Brand assets
-├── 06_Plantillas/                  # Templates generales
-├── __Agent_Template.md             # Template base
-└── README.md                       # Este archivo (catálogo maestro)
+├── 04_Contexto/                    # Contexto de proyecto para Marketing Agents
+├── 05_Marca/                       # Brand assets y voz de marca
+├── 06_Plantillas/                  # Templates generales reutilizables
+├── __Agent_Template.md             # Template base para nuevos agentes
+└── README.md                       # Este archivo
 ```
 
 ---
 
-## 🏆 Catálogo de Agentes (14 + Specialists Squad)
+## 🏆 Catálogo de Agentes (13 principales + 5 Dream Team + 24 Specialists + 5 Growth = 47+)
 
 ### Agentes Principales
 
@@ -136,4 +152,4 @@ Agente #05: "Audita seguridad de [feature]"
 
 ---
 
-_Think Different PersonalOS v6.1 — Pure Green_
+_PersonalOS v3.3 Consequences — Pure Green — 2026-04-29_
