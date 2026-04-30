@@ -1,4 +1,7 @@
-# 🛡️ CLAUDE.md | PersonalOS v3.0 — Consequences AI Context Harness
+# 🛡️ CLAUDE.md | PersonalOS v3.1 — Consequences AI Context Harness
+
+> **Última actualización:** 2026-04-29
+> **Versión:** v3.1 Consequences — JARVIS 3.1 Integrated
 
 <system_directives>
   <fundamental_rule>
@@ -59,7 +62,7 @@ TODO plan, propuesta o documento creado para mostrar al usuario → GUARDAR EN R
 
 ## ⚖️ LAS 12 LEYES MAESTRAS
 <behavioral_laws>
-1. **Piensa Primero, Investiga Después:** Lee antes de accionar.
+1. **Piensa Primero, Investiga Después:** Lee antes deacci.
 2. **Explica Cada Paso:** Transparencia algorítmica.
 3. **Simplicidad ante Todo:** Soluciones elegantes y funcionales.
 4. **Docs al Día:** Cualquier cambio estructural muta obligatoriamente la documentación.
@@ -70,7 +73,7 @@ TODO plan, propuesta o documento creado para mostrar al usuario → GUARDAR EN R
 9. **Respeto Estructural:** Respeta indexación de carpetas.
 10. **Procesos en Lista:** Presenta lógicas en listas numeradas.
 11. **Minimalismo en Carpetas:** Solo crealas si la arquitectura las exige.
-12. **Paths Absolutos:** Identifica el Repo y ruta antes de accionar.
+12. **Paths Absolutos:** Identifica el Repo y ruta antes deacci.
 </behavioral_laws>
 
 ---
@@ -94,7 +97,7 @@ TODO plan, propuesta o documento creado para mostrar al usuario → GUARDAR EN R
 La esencia de delegación en PersonalOS sigue el esquema de un **Equipo de Fútbol (El Dream Team)** para operar tareas con máximo paralelismo:
 
 - **EL DIRECTOR (Orquestador / Yo):** Soy el único punto de contacto con el humano. Evalúo el partido, paso el contexto a mis jugadores y superviso. No voy a correr por toda la cancha yo solo.
-- **LOS JUGADORES (Sub-Agentes de Especialidad):** 
+- **LOS JUGADORES (Sub-Agentes de Especialidad):**
   - *Delantero* (Product), *Centrocampista* (Data), *Portero* (Platform), etc.
   - A cada jugador se le asigna **UNA carpeta exclusiva**. Ejecutan el CE bop: `Plan -> Work -> Review -> Compound`.
 - **EL ÁRBITRO / VAR (Auditores y GGA):** Verifican en sistema paralelo que el trabajo de los agentes sea equivalente al Plan Aprobado.
@@ -105,30 +108,30 @@ La esencia de delegación en PersonalOS sigue el esquema de un **Equipo de Fútb
 │                     🎯 WINTER IS COMING (El Bar)               │
 │                     Goals, Backlog, Memoria                     │
 └─────────────────────────────────────────────────────────────────┘
-                               │
-                               ▼
+                                │
+                                ▼
 ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
 │   USUARIO   │────▶│  WORKFLOW   │────▶│    AGENT    │
 │(Entrenador) │     │ (Director)  │     │ (Jugador)   │
 └─────────────┘     └─────────────┘     └─────────────┘
-                           │                    │
-                           ▼                    ▼
-                    ┌─────────────┐     ┌─────────────┐
-                    │   RULES     │     │    SKILLS   │
-                    │ (Reglas)    │     │ (Kit)       │
-                    └─────────────┘     └─────────────┘
-                                            │
-                                            ▼
-                                     ┌─────────────┐
-                                     │    HOOKS    │
-                                     │ (Árbitro)   │
-                                     └─────────────┘
-                                            │
-                                            ▼
-                                     ┌─────────────┐
-                                     │    EVALS    │
-                                     │ (Scorecard) │
-                                     └─────────────┘
+                            │                    │
+                            ▼                    ▼
+                     ┌─────────────┐     ┌─────────────┐
+                     │   RULES     │     │    SKILLS   │
+                     │ (Reglas)    │     │ (Kit)       │
+                     └─────────────┘     └─────────────┘
+                                             │
+                                             ▼
+                                      ┌─────────────┐
+                                      │    HOOKS    │
+                                      │ (Árbitro)   │
+                                      └─────────────┘
+                                             │
+                                             ▼
+                                      ┌─────────────┐
+                                      │    EVALS    │
+                                      │ (Scorecard) │
+                                      └─────────────┘
 ```
 
 *📝 Trigger Activo:* Si se invoca **"Super Campeones"**, configuro este protocolo masivo de paralelismo guiado apoyándome 100% en esta Pizarra Táctica.
@@ -136,21 +139,21 @@ La esencia de delegación en PersonalOS sigue el esquema de un **Equipo de Fútb
 
 ---
 
-## 🗺️ KNOWLEDGE MAPS & ARCHITECTURE (v2.0 Consequences)
+## 🗺️ KNOWLEDGE MAPS & ARCHITECTURE (v3.1 Consequences)
 <architecture_routing>
 
-### 1. ESTRUCTURA BASE (Think_Different — v2.0 Consequences)
+### 1. ESTRUCTURA BASE (Think_Different — v3.1 Consequences)
 ```text
 Think_Different/
 ├── 00_Winter_is_Coming/          ✅ MATRIX: Goals, Backlog, AGENTS.md (INMUTABLE)
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
-│   ├── 01_Core/                  ✅ Motor del OS
-│   │   ├── 00_Workflows_Os/      ✅ Workflows (Personal, Marvel, Gentleman, Hillary, CE)
-│   │   ├── 01_Rules/            ✅ 10 reglas (.mdc) — fuente de verdad
+│   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD 💾)
+│   │   ├── 00_Workflows_Os/      ✅ 27 workflows (5 categorías)
+│   │   ├── 01_Rules/            ✅ 11 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/            ✅ Todas las herramientas
-│   │       ├── 01_Agents/       ✅ Dream Team + Specialists
-│   │       ├── 02_Skills/       ✅ 13 áreas funcionales (297+ skills)
-│   │       ├── 03_Mcp/          ✅ Config MCPs
+│   │       ├── 01_Agents/       ✅ 52+ agentes (Dream Team + Specialists)
+│   │       ├── 02_Skills/       ✅ 299 skills (11 áreas funcionales)
+│   │       ├── 03_Mcp/         ✅ Backup configs MCP
 │   │       ├── 04_Integrations/ ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/        ✅ Pre/Post/Lifecycle/Sound/Harness
 │   │       ├── 06_Plugins/      ✅ Plugins OS
@@ -162,36 +165,37 @@ Think_Different/
 │   ├── 04_Operations/           ✅ Todo lo operativo
 │   │   ├── 00_Context_LLM/      ✅ Memoria, notas, knowledge brain
 │   │   ├── 01_Auto_Improvement/ ✅ Motor auto-mejora
-│   │   ├── 02_Agent_Teams_Lite/ ✅ SDD registry
-│   │   ├── 03_Scripts_Os/       ✅ 19 HUBs + scripts
-│   │   └── 03_Validator/        ✅ skill_validator.py, skill_security_scan.py
-│   │   ├── 04_Installer/        ✅ Scripts de instalación
-│   │   └── 05_Projects/         ✅ Proyectos activos
-│   └── 05_Archive/              ✅ Legacy, repos de referencia
+│   │   ├── 02_Agent_Teams_Lite/ ✅ SDD registry + 7 JARVIS manifests
+│   │   └── 03_Scripts_Os/       ✅ 23 scripts (19 HUBs + 4 aux)
+│   └── 05_Archive/              ✅ Legacy archivado
 ├── 02_Playground/               ✅ Zona de pruebas (no contamina el OS)
 ├── 03_Resultado/                ✅ Outputs de proyectos (OIM, Elite Portfolio, etc.)
 ├── .agent/                      ✅ Backup estratégico
 ├── .atl/                        ✅ SDD Registry + openspec
-├── .claude/                     ✅ Config Claude Code
-├── .mcp.json                    ✅ MCPs activos (33 servidores)
+├── .claude/                     ✅ Config Claude Code + rules
+├── .opencode/                   ✅ Config OpenCode + skills locales
+├── .mcp.json                    ✅ MCPs activos (35 servidores)
+├── OS_DIRECTORY.md              ✅ JARVIS discovery (<2KB)
 ├── AGENTS.md                    ✅ Root entry (GGA Pre-Commit)
-├── CLAUDE.md                    ✅ Config Oficial para IAs
+├── CLAUDE.md                    ✅ Config Oficial para IAs (ESTE)
 └── README.md                    ✅ Documentación principal
 ```
 
-> **✅ MIGRACIÓN v3.0 — 2026-04-26:** Consequences architecture aplicada. 4 carpetas raíz.
+> **✅ MIGRACIÓN v3.1 — 2026-04-29:** Consequences architecture aplicada. 4 carpetas raíz.
 
 ### 2. CONFIGURACIÓN IA (.agent/)
 ```text
 .agent/
-├── 00_Rules/                # Reglas del agente
-├── 01_Agents/               # Agentes externos configurados
-├── 02_Skills/               # Skills (legacy backup)
+├── 00_Rules/                # Reglas del agente (11 .mdc)
+├── 01_Agents/               # Agentes externos configurados (52+)
+├── 02_Skills/               # Skills (backup de sistema)
+├── 03_Workflows/            # Workflows del sistema
 ├── 04_Extensions/           # Hooks del sistema
 │   └── hooks/
 │       ├── 01_Pre_Tool/     # PreToolUse: battery, security
 │       ├── 02_Post_Tool/    # PostToolUse: backup, voice
-│       └── 03_Lifecycle/    # Stop, SubagentStop
+│       ├── 03_Lifecycle/    # Stop, SubagentStop
+│       └── 04_Sound/        # Notifications, sounds
 └── 05_GGA/                  # Gentleman Guardian Angel (Code Review)
 ```
 
@@ -208,62 +212,48 @@ Think_Different/
 └── 04_Triggers/
 ```
 
-### 4. INVENTARIO HUB SCRIPTS (01_Personal_Os/04_Operations/03_Scripts_Os/)
-| Hub                     | Script                                             | Proposito                                                      |
-|-------------------------|----------------------------------------------------|----------------------------------------------------------------|
-| **Sound Engine**        | `00_Sound_Engine.py`                               | Motor de notificaciones sonoras del sistema                    |
-| **Auditor**             | `01_Auditor_Hub.py`                                | System validation: structure, links, skills, health            |
-| **Git**                 | `02_Git_Hub.py`                                    | Git operations + structure audits                              |
-| **AIPM**                | `03_AIPM_Hub.py`                                   | AI Performance Monitoring                                      |
-| **Ritual**              | `04_Ritual_Hub.py`                                 | Session rituals: open, close, recovery                         |
-| **Validator**           | `05_Validator_Hub.py`                              | Code validation: rules, stack, patterns                        |
-| **Tool**                | `06_Tool_Hub.py`                                   | Tool integration and management                                |
-| **Integration**         | `07_Integration_Hub.py`                            | MCP and external integrations                                  |
-| **Workflow**            | `08_Workflow_Hub.py`                               | Workflow automation                                            |
-| **Data**                | `09_Data_Hub.py`                                   | Data processing and analytics                                  |
-| **General**             | `10_General_Hub.py`                                | General utilities                                              |
-| **Auto Learn**          | `11_Auto_Learn_Hub.py`                             | Motor de automejora y aprendizaje                              |
-| **Context Bar**         | `13_Auditors_Os/scripts/12_Context_Usage_Bar.py`   | Barra de uso de contexto (sub-script de 13_Auditors_Os)        |
-| **Beautify**            | `13_Auditors_Os/scripts/13_Beautify_Tables.py`     | Formateo de tablas markdown (sub-script de 13_Auditors_Os)     |
-| **Health Metrics**      | `14_Health_Metrics_Hub.py`                         | Métricas de salud del OS                                       |
-| **MCP Sync**            | `15_MCP_Sync_Hub.py`                               | Detecta y reporta drift entre Claude Code y OpenCode           |
-| **Agent Mirror**        | `16_Agent_Mirror_Hub.py`                           | Sincroniza agentes source → backup                             |
-| **Watchdog**            | `17_Watchdog_Hub.py`                               | Health watchdog — valida integridad del manifest               |
-| **Telemetry**           | `18_Telemetry_Hub.py`                              | Dashboard ASCII de métricas de uso por HUB                     |
-| **Agent Sync**          | `19_Agent_Sync_Hub.py`                             | Sincroniza .agent/01_Agents/ con 01_Core/02_Tools/01_Agents/   |
-| **System Mapper**       | `20_System_Mapper_Hub.py`                          | Genera 7 manifests del OS via os.walk                          |
-| **Legacy Cleanup**      | `21_Legacy_Path_Cleanup.py`                        | Escanea y limpia paths legacy de Consequences 2.x              |
-| **Skill Frontmatter**   | `22_Validate_Skill_Frontmatter.py`                 | Detecta skills sin frontmatter YAML                            |
-| **Preview Gen**         | `23_Preview_Generator.js`                          | Generador de previews                                          |
+### 4. JARVIS 3.1 — MANIFEST SYSTEM
+```text
+01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
+├── 01_OS_Inventory.json      # Inventario OS
+├── 02_MCP_Registry.yaml     # 35 MCPs Claude / 18 OpenCode
+├── 03_Agent_Catalog.yaml    # 52+ agentes
+├── 04_Skill_Index.json      # 299 skills
+├── 05_HUB_Catalog.yaml     # 19+5 HUBs
+├── 06_Workflow_Graph.yaml   # 27+ workflows
+└── 07_Hook_Registry.yaml    # 10+ hooks
+```
 
-### 📚 Documentación del Sistema
-
-| Documento                             | Ubicación                                                                                        |
-|---------------------------------------|--------------------------------------------------------------------------------------------------|
-| **Rules Index**                       | `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md`                                                 |
-| **Skills Index**                      | `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                                            |
-| **SDD Registry**                      | `.atl/skill-registry.md`                                                                         |
-| **Migration Plan**                    | `00_Plan_Migración_Os.md` (raíz)                                                                 |
-
-### 5. SKILLS DISPONIBLES (13 Áreas en 01_Personal_Os/01_Core/02_Tools/02_Skills/)
+### 5. SKILLS DISPONIBLES (11 ÁREAS — 299 skills)
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
-| Área                                    | Descripción                                                              | Ubicación                                  |
-|-----------------------------------------|--------------------------------------------------------------------------|--------------------------------------------|
-| **00_Compound_Engineering**             | Core CE (Spider, Avengers)                                               | `00_Compound_Engineering/`                 |
-| **00_Personal_Os_Stack**                | Stack base OS + Gcierr                                                   | `00_Personal_Os_Stack/`                    |
-| **00_Skill_Auditor**                    | Auditoría de skills                                                      | `00_Skill_Auditor/`                        |
-| **01_Creacion_Contenidos**              | Brand, YouTube, SEO, Carruseles                                          | `01_Creacion_Contenidos/`                  |
-| **02_Diseno_Ui_Ux**                     | Product Design, UI/UX, Taste, Minimal                                    | `02_Diseno_Ui_Ux/`                         |
-| **03_Video_Media**                      | Video Intel, James Cameron, Remotion, Audio                              | `03_Video_Media/`                          |
-| **04_Automatizacion**                   | N8N, Firecrawl                                                           | `04_Automatizacion/`                       |
-| **05_Workflows**                        | Agent Teams, PM, Orchestrator                                            | `05_Workflows/`                            |
-| **06_Tools**                            | Skill Creator, Testing, DevOps, QMD, System Master, Data Analyst         | `06_Tools/`                                |
-| **07_Personal_Os**                      | Life OS, Hillary, Rituales                                               | `07_Personal_Os/`                          |
-| **08_Invictus_Web**                     | Playwright, Superpowers, Browser Automation                              | `08_Invictus_Web/`                         |
-| **09_Legacy_Archive**                   | Skills obsoletas v1.x                                                    | `09_Legacy_Archive/`                       |
-| **INDEX_AREA_FUNCTIONAL.md**            | Índice funcional de todas las áreas (meta-documento)                     | `INDEX_AREA_FUNCTIONAL.md`                 |
+| Área                                    | Descripción                                                              | Skills |
+|-----------------------------------------|--------------------------------------------------------------------------|--------|
+| **00_Compound_Engineering**             | Core CE (Spider, Avengers)                                               | 20+    |
+| **00_Personal_Os_Stack**                | Stack base OS + Gcierr                                                   | 5+     |
+| **00_Skill_Auditor**                    | Auditoría de skills                                                      | 3+     |
+| **01_Creacion_Contenidos**              | Brand, YouTube, SEO, Carruseles                                          | 15+    |
+| **02_Diseno_Ui_Ux**                     | Product Design, UI/UX, Taste, Minimal                                    | 12+    |
+| **03_Video_Media**                      | Video Intel, James Cameron, Remotion, Audio                              | 8+     |
+| **04_Automatizacion**                   | N8N, Firecrawl                                                           | 10+    |
+| **05_Workflows**                        | Agent Teams, PM, Orchestrator                                            | 15+    |
+| **06_Tools**                            | Skill Creator, Testing, DevOps, Data Analyst                             | 25+    |
+| **07_Personal_Os**                      | Life OS, Hillary, Rituales                                               | 10+    |
+| **08_Invictus_Web**                     | Playwright, Superpowers, Browser Automation                              | 15+    |
+
+> Índice completo: `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
+
+### 6. TOP 11 DESIGN SKILLS
+
+| Rank | Skill                  | Total | Descripción |
+|------|------------------------|-------|-------------|
+| 🥇 1 | **Dumbledor Design**   | **29** | Jerarquía Visual + Contraste Binario |
+| 🥈 2 | **Huashu Design**      | **29** | HTML Prototipado de Alta Fidelidad |
+| 🥉 3 | **Ui Ux Pro Max**      | **26** | UI/UX con Base de Datos Consultable |
+| 4    | **Frontend Slides**    | **26** | Presentaciones HTML Predeterminadas |
+| 5    | **Design SOTA**        | **25** | Estado del Arte en Diseño |
+
 </architecture_routing>
 
 ---
@@ -273,9 +263,9 @@ Think_Different/
 
 **Comandos Rápidos (Alias en bashrc):**
 - `gr` o `audit` : Corre el Auditor (Dry-run).
-- `gr-apply` : Aplica fixes automáticos.
+- `gr --apply` : Aplica fixes automáticos.
 - `git-hub`, `aipm`, `ritual`, `validate` : Operaciones rápidas directas estructuradas.
-- `gr-agents` : Evalúa review de agentes.
+- `gr --agents` : Evalúa review de agentes.
 
 **SDD Workflow (Spec-Driven Development):**
 - Comandos: `/sdd:init`, `/sdd:explore`, `/sdd:new`, `/sdd:spec`, `/sdd:design`, `/sdd:tasks`, `/sdd:apply`, `/sdd:verify`, `/sdd:archive`.
@@ -287,31 +277,37 @@ Think_Different/
 - `.agent/05_GGA/bin/gga run` (Revisar archivos staged).
 - `.agent/05_GGA/bin/gga install` (Instala pre-commit hook).
 
+**JARVIS 3.1 HUBs Canónicos:**
+```bash
+python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan     # regenerar 7 manifests
+python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py                   # health check
+python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard      # stats ASCII
+python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report         # MCP drift
+```
+
 </execution_harness>
 
 ---
 
-## 📊 ESTADO DEL SISTEMA
+## 📊 ESTADO DEL SISTEMA (v3.1 — 2026-04-29)
 <system_state_snapshot>
 | Categoria                            | Estado                    | Notas                                                                         |
 |--------------------------------------|---------------------------|-------------------------------------------------------------------------------|
-| **Overall Health**                   | **✅ PURE GREEN**          | v3.1 Consequences — JARVIS integrated 2026-04-27                              |
+| **Overall Health**                   | **✅ PURE GREEN**          | v3.1 Consequences — JARVIS integrated 2026-04-29                              |
 | Estructura (4 raíz)                  | ✅ PASS                    | Winter / Personal_Os / Playground / Resultado                                 |
-| HUBs (00-18)                         | ✅ ACTIVE                  | 19 HUBs + 4 aux = 23 scripts en 03_Scripts_Os                                 |
-| Skills (13 áreas)                    | ✅ OPERATIONAL             | 297+ skills — 13 áreas funcionales                                            |
-| Agent Matrix                         | ✅ ACTIVE                  | 52 agents en .atl/agent-skill-matrix.yaml                                     |
+| HUBs (19+4 aux)                      | ✅ ACTIVE                  | 23 scripts en 03_Scripts_Os                                                    |
+| Skills (11 áreas)                    | ✅ VERIFIED                | 299 skills — 11 áreas funcionales                                             |
+| Agent Matrix                         | ✅ ACTIVE                  | 52+ agentes                                                                   |
 | Manifest (7 archivos)                | ✅ VALIDATED               | 00_Manifest/ en 02_Agent_Teams_Lite/                                          |
-| MCPs (35 Claude / 18 OpenCode)       | ✅ SYNCED                  | Drift: verificar con 15_MCP_Sync_Hub.py                                       |
-| Agent Mirror                         | ✅ SYNCED                  | 54/54 agentes sincronizados (source → backup)                                 |
-| Watchdog                             | ✅ ACTIVE                  | 17_Watchdog_Hub.py monitoreando                                               |
-| Telemetry                            | ✅ ACTIVE                  | 18_Telemetry_Hub.py recolectando                                              |
-| OS_DIRECTORY.md                      | ✅ CREATED                 | <2KB en raíz — JARVIS discovery                                               |
-| Agent Teams Protocol                 | ✅ ACTIVE                  | Super Campeones — comunicación inter-agente                                   |
+| MCPs (35 Claude / 18 OpenCode)       | ✅ SYNCED                  | .mcp.json en raíz                                                             |
+| Rules (11 .mdc)                      | ✅ DEFINED                 | 01_Rules/                                                                     |
+| Workflows (27+)                      | ✅ ACTIVE                   | 5 categorías                                                                  |
+| Agent Teams Protocol                  | ✅ ACTIVE                  | Super Campeones — comunicación inter-agente                                     |
 
 ---
 
-## 🤖 JARVIS — CONSEQUENCES 3.0 (2026-04-25)
-<jarvis_3.0>
+## 🤖 JARVIS — CONSEQUENCES 3.1 (2026-04-29)
+<jarvis_3.1>
 
 El sistema tiene un **manifest central** que permite discovery automático de todos los componentes:
 
@@ -320,27 +316,11 @@ El sistema tiene un **manifest central** que permite discovery automático de to
 # OS Directory (raíz)
 cat OS_DIRECTORY.md
 
-# HUBs principales
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   # MCP drift
-python 01_Personal_Os/04_Operations/03_Scripts_Os/16_Agent_Mirror_Hub.py         # Agent sync
-python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py              # Health check
-python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard # Usage stats
-```
-
-### Manifest Registry
-```bash
-# 7 archivos del manifest en:
-01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
-├── 01_OS_Inventory.json      # Inventario OS
-├── 02_MCP_Registry.yaml      # 33 MCPs Claude / 18 OpenCode
-├── 03_Agent_Catalog.yaml    # 52 agentes
-├── 04_Skill_Index.json      # 297 skills
-├── 05_HUB_Catalog.yaml      # 19 HUBs
-├── 06_Workflow_Graph.yaml   # Workflows
-└── 07_Hook_Registry.yaml    # 10 hooks
-
-# Agent Skill Matrix
-cat .atl/agent-skill-matrix.yaml
+# HUBs principales JARVIS
+python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan     # regenerar 7 manifests
+python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py                 # health check
+python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard # usage stats
+python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report      # MCP drift
 ```
 
 ### Ecosistemas Integrados
@@ -350,9 +330,9 @@ cat .atl/agent-skill-matrix.yaml
 | Compound Engineering   | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/`   |
 | Dream Team             | `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/`             |
 | Specialists            | `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/`   |
-| Growth                 | `01_Personal_Os/01_Core/02_Tools/01_Agents/03_Growth/`                 |
+| Gentleman GGA          | `.agent/05_GGA/`                                                       |
 
-</jarvis_3.0>
+</jarvis_3.1>
 
 ### Configuración MCP (dual)
 
@@ -363,10 +343,28 @@ cat .atl/agent-skill-matrix.yaml
 
 > ⚠️ Al modificar MCPs: actualizar SIEMPRE el source Y el config activo correspondiente.
 
-**Última actualización:** 2026-04-27
-**Versión:** v3.1 Consequences — JARVIS 3.1 integrated
+---
 
-> ✅ **Migración v3.1 2026-04-27:** Consequences architecture aplicada. 4 carpetas raíz. Pure Green State.
+## 🚨 PROBLEMA DETECTADO: Claude Code no abre
 
-© 2026 PersonalOS v3.0 Consequences
+**Error:**
+```
+Error: claude native binary not installed.
+```
+
+**Solución:**
+```bash
+node node_modules/@anthropic-ai/claude-code/install.cjs
+```
+
+O reinstalar sin `--ignore-scripts` / `--omit=optional`.
+
+---
+
+**Última actualización:** 2026-04-29
+**Versión:** v3.1 Consequences — JARVIS 3.1 Integrated
+
+> ✅ **Migración v3.1 2026-04-29:** Consequences architecture aplicada. 4 carpetas raíz. Pure Green State.
+
+© 2026 PersonalOS v3.1 Consequences
 </system_state_snapshot>

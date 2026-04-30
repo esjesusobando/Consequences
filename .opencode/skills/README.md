@@ -1,8 +1,9 @@
 # .opencode/skills — Skills Locales del Proyecto
 
 > **Versión:** 1.0
-> **Fecha:** 2026-04-23
+> **Fecha:** 2026-04-29
 > **Estado:** ✅ Activo
+> **Proyecto:** Think Different PersonalOS v3.1 Consequences
 
 ---
 
@@ -14,26 +15,41 @@ Este directorio contiene **skills locales** específicas del proyecto Think Diff
 
 ## 🧠 Skills Disponibles
 
-| Skill | Descripción | Estado |
-|-------|-------------|--------|
-| **ui-ux-pro-max** | UI/UX design intelligence con searchable database | ✅ Activo |
+| Skill | Descripción | Estado | Ubicación |
+|-------|-------------|--------|-----------|
+| **ui-ux-pro-max** | UI/UX design intelligence con searchable database | ✅ Activo | `.opencode/skills/ui-ux-pro-max/` |
 
 ---
 
-## 🔗 Skills Globales vs Locales
+## 🔗 Skills Globales vs Locales vs Sistema
 
-| Tipo | Ubicación | Uso |
-|------|-----------|-----|
-| **Skills del Sistema** | `01_Core/03_Skills/` | Fuente de verdad - 165+ skills organizadas |
-| **Skills Globales** | `~/.config/opencode/skills/` | Skills instaladas globalmente |
-| **Skills Locales** | `.opencode/skills/` | Skills específicas del proyecto |
+| Tipo | Ubicación | Uso | Cantidad |
+|------|-----------|-----|----------|
+| **Skills del Sistema** | `01_Personal_Os/01_Core/02_Tools/02_Skills/` | FUENTE DE VERDAD - 299 skills en 11 áreas | 299 |
+| **Skills Globales** | `~/.config/opencode/skills/` | Skills instaladas globalmente (gentleman, etc) | Variable |
+| **Skills Locales** | `.opencode/skills/` | Skills específicas del proyecto | 1 |
 
 ---
 
 ## 📋 Integración con el Sistema
 
-Las skills del sistema en `01_Core/03_Skills/` están organizadas en 9 Áreas Funcionales y son accesibles vía:
+Las skills del sistema en `01_Personal_Os/01_Core/02_Tools/02_Skills/` están organizadas en 11 Áreas Funcionales:
 
+| Área | Descripción |
+|------|-------------|
+| 00_Compound_Engineering | Core CE — SDD + Reviews |
+| 00_Personal_Os_Stack | Stack base del OS + Gcierr |
+| 00_Skill_Auditor | Auditoría de skills |
+| 01_Creacion_Contenidos | Brand, YouTube, SEO, Carruseles |
+| 02_Diseno_Ui_Ux | Product Design, UI/UX, Taste, Minimal |
+| 03_Video_Media | Video Intel, James Cameron, Remotion, Audio |
+| 04_Automatizacion | N8N, Firecrawl |
+| 05_Workflows | Agent Teams, PM, Orchestrator |
+| 06_Tools | Skill Creator, Testing, DevOps, Data Analyst |
+| 07_Personal_Os | Life OS, Hillary, Rituales |
+| 08_Invictus_Web | Playwright, Superpowers, Browser Automation |
+
+Accesibles vía:
 - Commands SDD: `/sdd:init`, `/sdd:spec`, etc.
 - Commands CE: `/ce:ideate`, `/ce:plan`, etc.
 - Skills globales instaladas en `~/.config/opencode/skills/gentleman/`
@@ -50,4 +66,10 @@ Para agregar una skill local:
 
 ---
 
-_Creado: 2026-04-23 (Auditoría Integral)_
+## 📌 Nota sobre Paths
+
+> **⚠️ PATH CRITICAL:** Skills del sistema en `01_Personal_Os/01_Core/02_Tools/02_Skills/` — NO usar paths antiguos como `01_Core/03_Skills/` o `.agent/02_Skills/`
+
+---
+
+_Actualizado: 2026-04-29 (Auditoría Integral v3.1)_

@@ -1,12 +1,12 @@
-# 01_Core — Think Different PersonalOS v2.0
+# 01_Core — Think Different PersonalOS v3.1 Consequences
 
-> **Versión:** v2.0 Consequences
-> **Última actualización:** 2026-04-24
+> **Versión:** v3.1 Consequences — JARVIS 3.1 Integrated
+> **Última actualización:** 2026-04-29
 > **Estado:** ✅ Activo | 💾 FUENTE DE VERDAD
 
 ---
 
-## 📂 Estructura Principal v2.0
+## 📂 Estructura Principal v3.1
 
 ```
 Think_Different/
@@ -27,8 +27,8 @@ Think_Different/
 
 | #       | Carpeta              | Contenido                              | Estado      |
 |---------|----------------------|----------------------------------------|-------------|
-| 01      | `00_Workflows_Os/`   | 25 workflows (5 categorías)            | ✅           |
-| 02      | `01_Rules/`          | 10 reglas .mdc                         | ✅           |
+| 01      | `00_Workflows_Os/`   | 27 workflows (5 categorías)            | ✅           |
+| 02      | `01_Rules/`          | 11 reglas .mdc                         | ✅           |
 | 03      | `02_Tools/`          | Skills, Agents, MCPs, Hooks, Plugins   | ✅           |
 
 ---
@@ -37,8 +37,8 @@ Think_Different/
 
 | #       | Carpeta           | Contenido               | Estado      |
 |---------|-------------------|-------------------------|-------------|
-| 01      | `01_Agents/`      | 35+ agents              | ✅           |
-| 02      | `02_Skills/`      | 100+ skills (9 áreas)   | ✅           |
+| 01      | `01_Agents/`      | 52+ agents              | ✅           |
+| 02      | `02_Skills/`      | 299 skills (11 áreas)   | ✅           |
 | 03      | `03_Mcp/`         | MCP servers             | ✅           |
 | 04      | `05_Hooks/`       | Hooks de calidad        | ✅           |
 | 05      | `06_Plugins/`     | Plugins                 | ✅           |
@@ -61,7 +61,7 @@ Think_Different/
 
 ---
 
-## 📋 Workflows (25 en 5 categorías)
+## 📋 Workflows (27+ en 5 categorías)
 
 | Categoría                 | Workflows     | Propósito                                  |
 |---------------------------|---------------|--------------------------------------------|
@@ -73,7 +73,7 @@ Think_Different/
 
 ---
 
-## 📋 Rules (10 archivos .mdc)
+## 📋 Rules (11 archivos .mdc)
 
 | #       | Rule                       | Propósito              |
 |---------|----------------------------|------------------------|
@@ -87,55 +87,59 @@ Think_Different/
 | 07      | Docs_Guias.mdc             | Documentation          |
 | 08      | Token_Economy.mdc          | Token optimization     |
 | 09      | Agent_Teams_Protocol.mdc   | Multi-agent protocol   |
+| 10      | Git_Directions.mdc         | Git flow y reglas      |
 
 ---
 
-## 📋 Skills (100+ en 9 áreas)
+## 📋 Skills (299 en 11 áreas funcionales)
 
 | Área                      | Skills     | Propósito        |
 |---------------------------|------------|------------------|
-| 00_Compound_Engineering   | 1+         | SDD + Reviews    |
-| 01_Creacion_Contenidos    | 7          | Marketing, SEO   |
-| 02_Diseno_Ui_Ux           | 3          | Design, Taste    |
-| 03_Video_Media            | 1          | James Cameron    |
-| 04_Automatizacion         | 4          | N8N, GWS         |
-| 05_Workflows              | 2          | Teams, PM        |
-| 06_Tools                  | 1          | MCP Client       |
-| 07_Personal_Os            | 1          | Life OS          |
-| 08_Invictus_Web           | 1          | Superpowers      |
+| 00_Compound_Engineering   | 20+        | SDD + Reviews + CE |
+| 00_Personal_Os_Stack      | 5+         | Stack base OS    |
+| 00_Skill_Auditor          | 3+         | Auditoría skills |
+| 01_Creacion_Contenidos    | 15+        | Marketing, SEO   |
+| 02_Diseno_Ui_Ux           | 12+        | Design, Taste    |
+| 03_Video_Media            | 8+         | James Cameron    |
+| 04_Automatizacion         | 10+        | N8N, Firecrawl   |
+| 05_Workflows              | 15+        | Teams, PM        |
+| 06_Tools                  | 25+        | DevOps, Data     |
+| 07_Personal_Os            | 10+        | Life OS, Hillary |
+| 08_Invictus_Web           | 15+        | Playwright       |
 
 ---
 
-## 📋 Agents (35+)
+## 📋 Agents (52+)
 
 | Categoría              | Cantidad     | Ubicación                              |
 |------------------------|--------------|----------------------------------------|
 | Dream Team             | 5            | `01_Agents/01_Dream_Team/`             |
-| Specialists Compound   | 23           | `01_Agents/02_Specialists_Compound/`   |
-| Individuals            | 10+          | `01_Agents/`                           |
+| Specialists Compound   | 24           | `01_Agents/02_Specialists_Compound/`   |
+| Growth                 | N            | `01_Agents/03_Growth/`                 |
+| Individuals            | 12+          | `01_Agents/`                           |
 
 ---
 
-## 📋 MCPs
+## 📋 MCPs (35 Claude Code / 18 OpenCode)
 
 | Categoría      | Cantidad     | Ejemplos                     |
 |----------------|--------------|------------------------------|
-| Knowledge      | 5            | context7, memories           |
-| Dev            | 8            | github, gitlab, filesystem   |
-| Scraping       | 3            | firecrawl, puppeteer         |
-| Notes          | 3            | evernote, onenote            |
-| Productivity   | 4            | slack, linear                |
+| Knowledge      | 5            | context7, engram, notebooklm |
+| Dev            | 8            | github, filesystem           |
+| Scraping       | 3            | firecrawl, exa               |
+| Notes          | 3            | Notion, Obsidian             |
+| Productivity   | 4            | slack, Linear               |
 | Media          | 3            | image generation, video      |
-| Data           | 2            | postgres, mysql              |
+| Data           | 2            | supabase, Amplitude         |
 | Security       | 2            | stealth-dev, vault           |
 | Testing        | 1            | playwright-mcp               |
-| Tools          | 2            | magicui-design               |
+| Tools          | 2            | magicui-design, eagle-mcp   |
 
-**Total: 33 servers**
+**Total: 35 servers Claude Code**
 
 ---
 
-## 📋 HUBs (Scripts)
+## 📋 HUBs (23 scripts totales: 19 HUBs + 4 auxiliares)
 
 | #       | HUB                  | Función                    |
 |---------|----------------------|----------------------------|
@@ -147,10 +151,19 @@ Think_Different/
 | 05      | Validator_Hub.py     | Validation orchestration   |
 | 06      | Tool_Hub.py          | Tool management            |
 | 07      | Integration_Hub.py   | Integration management     |
-| 08      | Workflow_Hub.py      | Workflow execution         |
+| 08      | Workflow_Hub.py       | Workflow execution         |
 | 09      | Data_Hub.py          | Data operations            |
 | 10      | General_Hub.py       | General utilities          |
-| 11      | Auto_Learn_Hub.py    | Auto-learning              |
+| 11      | Auto_Learn_Hub.py    | Auto-learning             |
+| 14      | Health_Metrics_Hub.py| Health metrics             |
+| 15      | MCP_Sync_Hub.py      | MCP drift detection        |
+| 16      | Agent_Mirror_Hub.py  | Agent mirroring           |
+| 17      | Watchdog_Hub.py      | Health watchdog           |
+| 18      | Telemetry_Hub.py     | Dashboard metrics         |
+| 19      | Agent_Sync_Hub.py    | Agent sync                |
+| 20      | System_Mapper_Hub.py | JARVIS manifests          |
+| 21      | Legacy_Path_Cleanup.py | Legacy cleanup          |
+| 22      | Validate_Skill_Frontmatter.py | Skill validation    |
 
 ---
 
@@ -165,4 +178,18 @@ Think_Different/
 
 ---
 
-**PersonalOS v2.0 Consequences — 2026-04-24**
+## ⚡ JARVIS 3.1 — Manifest System
+
+El sistema cuenta con 7 manifests en `04_Operations/02_Agent_Teams_Lite/00_Manifest/`:
+
+- 01_OS_Inventory.json
+- 02_MCP_Registry.yaml
+- 03_Agent_Catalog.yaml
+- 04_Skill_Index.json
+- 05_HUB_Catalog.yaml
+- 06_Workflow_Graph.yaml
+- 07_Hook_Registry.yaml
+
+---
+
+**PersonalOS v3.1 Consequences — JARVIS 3.1 Integrated — 2026-04-29**
