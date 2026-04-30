@@ -127,9 +127,9 @@ claude-plugins-official/
 01_Core/05_Mcp/opencode.json
 01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/03_Side_Project_Backup/
 
-# Frontend Slides - Predeterminada para presentaciones HTML
+# Frontend Slides - Predeterminada para presentaciones HTML (TRACKED)
 # Clonar de: https://github.com/zarazhangrui/frontend-slides
-01_Personal_Os/05_Archive/07_Repos_Gentleman/frontend-slides/
+# 01_Personal_Os/05_Archive/07_Repos_Gentleman/frontend-slides/
 
 # Guardian Angel Entrypoint — keep tracked, needed for GGA hook
 # AGENTS.md
