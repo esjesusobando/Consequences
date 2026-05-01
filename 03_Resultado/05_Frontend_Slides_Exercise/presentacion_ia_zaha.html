@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA Moderna — Zaha Hadid Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===========================================
+       ZAHA HADID EDITION — Brutalist Futurism
+       Philosophy: Architectural brutalism + Titanium curves
+       =========================================== */
+
+    :root {
+      /* Titanium & Concrete palette */
+      --titanium: #E8E8E8;
+      --titanium-dark: #C4C4C4;
+      --concrete: #B5B5B5;
+      --charcoal: #2D2D2D;
+      --obsidian: #1A1A1A;
+      --zaha-accent: #00C2C7;
+      --zaha-accent-alt: #FF3D00;
+      --zaha-glow: rgba(0, 194, 199, 0.15);
+
+      /* Typography */
+      --display: 'Oxanium', sans-serif;
+      --body: 'Rajdhani', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: var(--body);
+      background: var(--obsidian);
+      color: var(--titanium);
+    }
+
+    /* ===========================================
+       DECK CONTAINER
+       =========================================== */
+    .deck {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: none;
+      flex-direction: column;
+      padding: 64px 80px;
+      opacity: 0;
+    }
+
+    .slide.active {
+      display: flex;
+      animation: brutalIn 0.6s ease-out forwards;
+    }
+
+    @keyframes brutalIn {
+      from {
+        opacity: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      }
+      to {
+        opacity: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+
+    /* ===========================================
+       ZAHA GEOMETRIC ELEMENTS
+       =========================================== */
+
+    /* Diagonal slash */
+    .zaha-slash {
+      position: absolute;
+      width: 200%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--zaha-accent), transparent);
+      transform: rotate(-15deg);
+      opacity: 0.3;
+      z-index: 0;
+    }
+
+    .zaha-slash.top {
+      top: 15%;
+      left: -50%;
+    }
+
+    .zaha-slash.bottom {
+      bottom: 20%;
+      right: -50%;
+      transform: rotate(-15deg) scaleX(-1);
+    }
+
+    /* Corner frame */
+    .zaha-frame {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border: 1px solid var(--zaha-accent);
+      opacity: 0.4;
+    }
+
+    .zaha-frame.top-left {
+      top: 32px;
+      left: 32px;
+      border-right: none;
+      border-bottom: none;
+    }
+
+    .zaha-frame.top-right {
+      top: 32px;
+      right: 32px;
+      border-left: none;
+      border-bottom: none;
+    }
+
+    .zaha-frame.bottom-left {
+      bottom: 32px;
+      left: 32px;
+      border-right: none;
+      border-top: none;
+    }
+
+    .zaha-frame.bottom-right {
+      bottom: 32px;
+      right: 32px;
+      border-left: none;
+      border-top: none;
+    }
+
+    /* Glow orb */
+    .zaha-orb {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: var(--zaha-glow);
+      filter: blur(80px);
+      z-index: 0;
+    }
+
+    /* Grid overlay */
+    .zaha-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--zaha-accent) 1px, transparent 1px),
+        linear-gradient(90deg, var(--zaha-accent) 1px, transparent 1px);
+      background-size: 80px 80px;
+      opacity: 0.03;
+      z-index: 0;
+    }
+
+    /* ===========================================
+       TYPOGRAPHY SYSTEM
+       =========================================== */
+
+    .display-xl {
+      font-family: var(--display);
+      font-size: clamp(56px, 8vw, 100px);
+      font-weight: 800;
+      line-height: 0.9;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: var(--titanium);
+    }
+
+    .display-xl .accent {
+      color: var(--zaha-accent);
+    }
+
+    .display-xl .accent-alt {
+      color: var(--zaha-accent-alt);
+    }
+
+    .display-lg {
+      font-family: var(--display);
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .display-md {
+      font-family: var(--display);
+      font-size: clamp(24px, 3vw, 32px);
+      font-weight: 600;
+      line-height: 1.2;
+      text-transform: uppercase;
+      color: var(--titanium-dark);
+    }
+
+    .body-text {
+      font-family: var(--body);
+      font-size: clamp(15px, 1.5vw, 18px);
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--concrete);
+    }
+
+    .label {
+      font-family: var(--display);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--zaha-accent);
+    }
+
+    /* ===========================================
+       LAYOUT COMPONENTS
+       =========================================== */
+
+    .slide-header {
+      margin-bottom: 40px;
+    }
+
+    .slide-footer {
+      margin-top: auto;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .slide-counter {
+      font-family: var(--display);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--zaha-accent);
+    }
+
+    .slide-meta {
+      font-family: var(--body);
+      font-size: 12px;
+      color: var(--concrete);
+    }
+
+    /* Rule */
+    .rule {
+      width: 60px;
+      height: 3px;
+      background: var(--zaha-accent);
+      margin: 20px 0;
+    }
+
+    .rule.alt {
+      background: var(--zaha-accent-alt);
+    }
+
+    /* Content block */
+    .content-block {
+      background: rgba(229, 229, 229, 0.03);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 28px 32px;
+      max-width: 640px;
+    }
+
+    .content-block p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.7;
+      color: var(--titanium);
+    }
+
+    .content-block strong {
+      color: var(--zaha-accent);
+      font-weight: 600;
+    }
+
+    /* Feature list */
+    .feature-list {
+      list-style: none;
+      margin-top: 24px;
+    }
+
+    .feature-list li {
+      font-family: var(--body);
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--titanium);
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .feature-list li:last-child {
+      border-bottom: none;
+    }
+
+    .feature-marker {
+      width: 8px;
+      height: 8px;
+      background: var(--zaha-accent);
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    /* Stats */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    .stat-item {
+      text-align: left;
+    }
+
+    .stat-value {
+      font-family: var(--display);
+      font-size: 48px;
+      font-weight: 800;
+      color: var(--zaha-accent);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-value.alt {
+      color: var(--zaha-accent-alt);
+    }
+
+    .stat-label {
+      font-family: var(--body);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--concrete);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Quote */
+    .quote-zaha {
+      border-left: 3px solid var(--zaha-accent-alt);
+      padding-left: 24px;
+      margin: 24px 0;
+    }
+
+    .quote-zaha p {
+      font-family: var(--display);
+      font-size: clamp(20px, 2vw, 26px);
+      font-weight: 500;
+      font-style: italic;
+      line-height: 1.4;
+      color: var(--titanium);
+    }
+
+    /* Visual element */
+    .zaha-visual {
+      width: 240px;
+      height: 240px;
+      border: 1px solid var(--zaha-accent);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.8;
+    }
+
+    .zaha-visual::before {
+      content: '';
+      position: absolute;
+      width: 60%;
+      height: 60%;
+      background: var(--zaha-glow);
+      border-radius: 50%;
+      filter: blur(40px);
+    }
+
+    .zaha-visual .icon {
+      font-size: 64px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .zaha-visual .label {
+      position: absolute;
+      bottom: -30px;
+      font-size: 10px;
+      letter-spacing: 0.15em;
+    }
+
+    /* Background number */
+    .num-bg {
+      position: absolute;
+      right: 32px;
+      bottom: 80px;
+      font-family: var(--display);
+      font-size: 280px;
+      font-weight: 800;
+      color: var(--titanium);
+      opacity: 0.03;
+      line-height: 1;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ===========================================
+       SLIDE VARIANTS
+       =========================================== */
+
+    .slide.centered {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .slide.centered .display-xl { max-width: 900px; }
+    .slide.centered .rule { margin: 0 auto 24px; }
+
+    .slide.split {
+      flex-direction: row;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .split-content { flex: 1; position: relative; z-index: 1; }
+    .split-visual {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ===========================================
+       NAVIGATION
+       =========================================== */
+    .nav-bar {
+      position: fixed;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 16px;
+      z-index: 100;
+    }
+
+    .nav-btn {
+      width: 48px;
+      height: 48px;
+      background: transparent;
+      border: 1px solid var(--zaha-accent);
+      color: var(--zaha-accent);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      clip-path: polygon(10% 0, 100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%);
+    }
+
+    .nav-btn:hover {
+      background: var(--zaha-accent);
+      color: var(--obsidian);
+    }
+
+    .nav-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Progress */
+    .progress-zaha {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 2px;
+      background: var(--zaha-accent);
+      z-index: 100;
+      transition: width 0.3s ease;
+      box-shadow: 0 0 10px var(--zaha-accent);
+    }
+
+    /* ===========================================
+       RESPONSIVE
+       =========================================== */
+    @media (max-width: 768px) {
+      .slide { padding: 48px 32px; }
+      .slide.split { flex-direction: column; }
+      .stats-grid { grid-template-columns: 1fr; gap: 24px; }
+      .zaha-visual { width: 160px; height: 160px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="progress-zaha" id="progress"></div>
+
+  <div class="deck" id="deck">
+
+    <!-- =============================================
+         SLIDE 01 — TITLE
+         ============================================= -->
+    <section class="slide centered active" data-slide="1">
+      <div class="zaha-grid"></div>
+      <div class="zaha-slash top"></div>
+      <div class="zaha-frame top-left"></div>
+      <div class="zaha-frame bottom-right"></div>
+      <div class="zaha-orb" style="top: 20%; right: 10%;"></div>
+
+      <span class="label" style="margin-bottom: 32px;">Jornada 3 · 2024</span>
+      <h1 class="display-xl">
+        INTELIGENCIA<br>
+        <span class="accent">ARTIFICIAL</span><br>
+        <span class="accent-alt">Zaha</span>
+      </h1>
+      <div class="rule"></div>
+      <p class="body-text">
+        Arquitectura del pensamiento inteligente
+      </p>
+
+      <div class="slide-footer" style="position: absolute; bottom: 48px; left: 80px; right: 80px;">
+        <span class="slide-counter">01</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">01</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 02 — PHILOSOPHY
+         ============================================= -->
+    <section class="slide" data-slide="2">
+      <div class="zaha-grid"></div>
+      <div class="zaha-slash bottom"></div>
+      <div class="zaha-frame top-right"></div>
+
+      <div class="slide-header">
+        <span class="label">Filosofía</span>
+      </div>
+      <h1 class="display-xl" style="font-size: clamp(40px, 5vw, 64px);">
+        NO USES LA IA.<br>
+        <span class="accent">DISEÑA</span><br>
+        CON ELLA.
+      </h1>
+      <div class="rule"></div>
+      <div class="quote-zaha">
+        <p>"La fluidez es la nueva precisión. La IA no es estática — es un flujo continuo de posibilidades."</p>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">02</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">02</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 03 — ECOSYSTEM
+         ============================================= -->
+    <section class="slide split" data-slide="3">
+      <div class="zaha-grid"></div>
+      <div class="zaha-orb" style="bottom: 10%; left: 20%;"></div>
+
+      <div class="split-content">
+        <span class="label">Ecosistema</span>
+        <h1 class="display-lg" style="margin-top: 12px;">
+          UNO NO,<br>
+          <span class="accent">TODOS</span>
+        </h1>
+        <div class="rule"></div>
+        <p class="body-text">
+          Las Big Tech construyen los cimientos. Las startups prueban lo nuevo. Vos elegís.
+        </p>
+        <div class="content-block" style="margin-top: 24px;">
+          <p><strong>Arquitectura sostenible:</strong> Cada herramienta tiene su momento y su lugar en el ecosistema.</p>
+        </div>
+      </div>
+
+      <div class="split-visual">
+        <div class="zaha-visual">
+          <span class="icon">🌐</span>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">03</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">03</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 04 — PERPLEXITY
+         ============================================= -->
+    <section class="slide" data-slide="4">
+      <div class="zaha-grid"></div>
+      <div class="zaha-slash top"></div>
+      <div class="zaha-frame bottom-left"></div>
+
+      <span class="label">Búsqueda</span>
+      <h1 class="display-lg" style="margin-top: 12px;">
+        <span class="accent">PERPLEXITY</span><br>
+        vs GOOGLE
+      </h1>
+      <div class="rule"></div>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">4</div>
+          <div class="stat-label">Modos</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value alt">∞</div>
+          <div class="stat-label">Citas</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">0</div>
+          <div class="stat-label">Ruido</div>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">04</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">04</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 05 — PROMPT
+         ============================================= -->
+    <section class="slide" data-slide="5">
+      <div class="zaha-grid"></div>
+      <div class="zaha-orb" style="top: 30%; right: 5%;"></div>
+
+      <span class="label">Crafting</span>
+      <h1 class="display-lg" style="margin-top: 12px;">
+        ANATOMÍA DEL<br>
+        <span class="accent-alt">PROMPT</span>
+      </h1>
+      <div class="rule"></div>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">ROL</div>
+          <div class="stat-label">Quién debe ser</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">TASK</div>
+          <div class="stat-label">Qué hacer</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value alt">CTX</div>
+          <div class="stat-label">Contexto</div>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">05</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">05</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 06 — TOKENS
+         ============================================= -->
+    <section class="slide split" data-slide="6">
+      <div class="zaha-grid"></div>
+
+      <div class="split-content">
+        <span class="label">Tecnología</span>
+        <h1 class="display-lg" style="margin-top: 12px;">
+          TOKENS &<br>
+          <span class="accent">TRANSFORMERS</span>
+        </h1>
+        <div class="rule"></div>
+        <div class="content-block">
+          <p><strong>Tokens:</strong> Unidades de procesamiento. La IA divide el texto para entendernos.</p>
+          <p style="margin-top: 16px;"><strong>Transformers:</strong> Creados por Google en 2016. Transmiten datos en significado.</p>
+        </div>
+      </div>
+
+      <div class="split-visual">
+        <div class="zaha-visual">
+          <span class="icon">⚡</span>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">06</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">06</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 07 — TEMPERATURE
+         ============================================= -->
+    <section class="slide" data-slide="7">
+      <div class="zaha-grid"></div>
+      <div class="zaha-slash bottom"></div>
+      <div class="zaha-frame top-left"></div>
+
+      <span class="label">Creatividad</span>
+      <h1 class="display-lg" style="margin-top: 12px;">
+        LA<br>
+        <span class="accent">TEMPERATURA</span>
+      </h1>
+      <div class="rule"></div>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">0.1</div>
+          <div class="stat-label">Objetivo</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value accent">0.7</div>
+          <div class="stat-label">Equilibrio</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value alt">1.0</div>
+          <div class="stat-label">Máxima creativa</div>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">07</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">07</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 08 — NOTEBOOKLM
+         ============================================= -->
+    <section class="slide" data-slide="8">
+      <div class="zaha-grid"></div>
+      <div class="zaha-orb" style="bottom: 20%; right: 15%;"></div>
+
+      <span class="label">Research</span>
+      <h1 class="display-lg" style="margin-top: 12px;">
+        <span class="accent">NOTEBOOK</span><br>
+        LM
+      </h1>
+      <div class="rule"></div>
+      <p class="body-text">
+        PDF, artículos, YouTube → material de estudio interactivo.
+      </p>
+      <ul class="feature-list">
+        <li><span class="feature-marker"></span>Resumen automático</li>
+        <li><span class="feature-marker"></span>FAQs por IA</li>
+        <li><span class="feature-marker"></span>Podcast conversacional</li>
+      </ul>
+
+      <div class="slide-footer">
+        <span class="slide-counter">08</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">08</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 09 — RECRAFT
+         ============================================= -->
+    <section class="slide split" data-slide="9">
+      <div class="zaha-grid"></div>
+      <div class="zaha-slash top"></div>
+
+      <div class="split-content">
+        <span class="label">Diseño</span>
+        <h1 class="display-lg" style="margin-top: 12px;">
+          <span class="accent-alt">RECRAFT</span><br>
+          IMAGES
+        </h1>
+        <div class="rule"></div>
+        <p class="body-text">
+          Describí → Recraft crea. Estilos artísticos, edición precisa, resolución 2K/4K.
+        </p>
+      </div>
+
+      <div class="split-visual">
+        <div class="zaha-visual">
+          <span class="icon">🎨</span>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">09</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">09</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 10 — GEMINI
+         ============================================= -->
+    <section class="slide" data-slide="10">
+      <div class="zaha-grid"></div>
+      <div class="zaha-frame bottom-right"></div>
+
+      <span class="label">Google</span>
+      <h1 class="display-lg" style="margin-top: 12px;">
+        <span class="accent">GEMINI</span><br>
+        APESTA
+      </h1>
+      <div class="rule alt"></div>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">📷</div>
+          <div class="stat-label">Imágenes</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">📊</div>
+          <div class="stat-label">Excel</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">🎤</div>
+          <div class="stat-label">Voz</div>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">10</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">10</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 11 — HALLUCINATIONS
+         ============================================= -->
+    <section class="slide centered" data-slide="11">
+      <div class="zaha-grid"></div>
+      <div class="zaha-orb" style="top: 30%; left: 20%;"></div>
+      <div class="zaha-slash top"></div>
+
+      <span class="label" style="margin-bottom: 32px;">⚠ Warning</span>
+      <h1 class="display-xl">
+        LA IA<br>
+        <span class="accent-alt">ALUCINA</span>
+      </h1>
+      <div class="rule"></div>
+      <p class="body-text" style="max-width: 500px;">
+        Se inventa respuestas con total seguridad. Siempre verificá.
+      </p>
+
+      <div class="slide-footer" style="position: absolute; bottom: 48px; left: 80px; right: 80px;">
+        <span class="slide-counter">11</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">11</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 12 — PRIVACY
+         ============================================= -->
+    <section class="slide" data-slide="12">
+      <div class="zaha-grid"></div>
+      <div class="zaha-slash bottom"></div>
+
+      <span class="label">Seguridad</span>
+      <h1 class="display-lg" style="margin-top: 12px;">
+        <span class="accent">PRIVACIDAD</span>
+      </h1>
+      <div class="rule"></div>
+
+      <ul class="feature-list">
+        <li><span class="feature-marker"></span>No subas datos sensibles a herramientas públicas</li>
+        <li><span class="feature-marker"></span>Verificá fuentes antes de compartir</li>
+        <li><span class="feature-marker"></span>Las respuestas pueden estar equivocadas</li>
+        <li><span class="feature-marker"></span>Tu historial puede entrenar modelos</li>
+      </ul>
+
+      <div class="slide-footer">
+        <span class="slide-counter">12</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">12</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 13 — FUTURE
+         ============================================= -->
+    <section class="slide" data-slide="13">
+      <div class="zaha-grid"></div>
+      <div class="zaha-orb" style="top: 15%; right: 10%;"></div>
+
+      <span class="label">Proyección</span>
+      <h1 class="display-lg" style="margin-top: 12px;">
+        DEL <span class="accent">SEARCH</span><br>
+        AL <em>ASK</em>
+      </h1>
+      <div class="rule"></div>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">2024</div>
+          <div class="stat-label">Voz normal</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value accent">2025</div>
+          <div class="stat-label">Conversacional</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value alt">2026</div>
+          <div class="stat-label">Neuronal</div>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">13</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">13</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 14 — WORKFLOW
+         ============================================= -->
+    <section class="slide split" data-slide="14">
+      <div class="zaha-grid"></div>
+
+      <div class="split-content">
+        <span class="label">Workflow</span>
+        <h1 class="display-lg" style="margin-top: 12px;">
+          RESEARCH<br>
+          <span class="accent">WORKFLOW</span>
+        </h1>
+        <div class="rule"></div>
+        <ul class="feature-list">
+          <li><span class="feature-marker"></span>Perplexity + fuente académica</li>
+          <li><span class="feature-marker"></span>Resumen en 5 bullets</li>
+          <li><span class="feature-marker"></span>3 ángulos de análisis</li>
+        </ul>
+      </div>
+
+      <div class="split-visual">
+        <div class="zaha-visual">
+          <span class="icon">🔍</span>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">14</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">14</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 15 — CONTEXT
+         ============================================= -->
+    <section class="slide centered" data-slide="15">
+      <div class="zaha-grid"></div>
+      <div class="zaha-orb" style="bottom: 30%; right: 20%;"></div>
+      <div class="zaha-frame top-left"></div>
+      <div class="zaha-frame bottom-right"></div>
+
+      <span class="label" style="margin-bottom: 32px;">Principio</span>
+      <h1 class="display-xl">
+        CONTEXTO<br>
+        = <span class="accent">CALIDAD</span>
+      </h1>
+      <div class="rule"></div>
+      <div class="quote-zaha">
+        <p>"Dame ejercicios" = genérico<br>
+        "5 ejercicios, español, intermedio, 15 min, feedback inmediato" = usable</p>
+      </div>
+
+      <div class="slide-footer" style="position: absolute; bottom: 48px; left: 80px; right: 80px;">
+        <span class="slide-counter">15</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">15</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 16 — COPILOT
+         ============================================= -->
+    <section class="slide" data-slide="16">
+      <div class="zaha-grid"></div>
+      <div class="zaha-slash bottom"></div>
+
+      <span class="label">Accesibilidad</span>
+      <h1 class="display-lg" style="margin-top: 12px;">
+        <span class="accent">COPILOT</span><br>
+        WHATSAPP
+      </h1>
+      <div class="rule"></div>
+
+      <div class="content-block" style="text-align: center; max-width: 400px; margin: 0 auto;">
+        <p style="font-size: 24px; font-weight: 700; color: var(--zaha-accent);">+1 877 224 1042</p>
+        <p class="body-text" style="margin-top: 12px;">La IA de Microsoft en tu bolsillo</p>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">16</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">16</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 17 — CLOSING
+         ============================================= -->
+    <section class="slide centered" data-slide="17">
+      <div class="zaha-grid"></div>
+      <div class="zaha-orb" style="top: 25%; left: 30%;"></div>
+      <div class="zaha-slash top"></div>
+      <div class="zaha-frame top-right"></div>
+      <div class="zaha-frame bottom-left"></div>
+
+      <span class="label" style="margin-bottom: 32px;">Cierre</span>
+      <h1 class="display-xl">
+        EMPEZÁ<br>
+        <span class="accent-alt">MAÑANA</span>
+      </h1>
+      <div class="rule"></div>
+      <p class="body-text" style="max-width: 500px;">
+        No esperes a dominarlo todo. Elegí una tarea, observá, iterá.
+      </p>
+
+      <div class="slide-footer" style="position: absolute; bottom: 48px; left: 80px; right: 80px;">
+        <span class="slide-counter">17</span>
+        <span class="slide-meta">Zaha Hadid Edition · IA Moderna</span>
+      </div>
+      <div class="num-bg">17</div>
+    </section>
+
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav-bar">
+    <button class="nav-btn" onclick="prevSlide()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+    <button class="nav-btn" onclick="nextSlide()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    let currentSlide = 1;
+
+    function updateSlide() {
+      slides.forEach((s, i) => {
+        s.classList.toggle('active', i === currentSlide - 1);
+      });
+      document.getElementById('progress').style.width =
+        ((currentSlide / totalSlides) * 100) + '%';
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) currentSlide++;
+      updateSlide();
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) currentSlide--;
+      updateSlide();
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    });
+
+    let touchStartX = 0;
+    document.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+    });
+    document.addEventListener('touchend', (e) => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) {
+        diff > 0 ? nextSlide() : prevSlide();
+      }
+    });
+  </script>
+
+</body>
+</html>
