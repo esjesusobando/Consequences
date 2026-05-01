@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IA: De la Teoría a la Acción — Jornada 3/5</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0d0d0d;
+  --surface: #151515;
+  --surface-2: #1c1c1c;
+  --text: #ffffff;
+  --text-dim: #888888;
+  --text-muted: #444444;
+  --accent: #ff3d00;
+  --accent-soft: rgba(255, 61, 0, 0.1);
+  --accent-border: rgba(255, 61, 0, 0.3);
+  --grid: rgba(255,255,255,0.025);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+}
+
+.slide {
+  width: 100%;
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: clamp(2rem, 5vw, 4rem);
+}
+
+.slide-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: clamp(2.5rem, 5vw, 4rem) clamp(2.5rem, 5vw, 4rem);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Typography */
+h1 {
+  font-weight: 900;
+  font-size: clamp(2.5rem, 7vw, 5.5rem);
+  line-height: 1.0;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: clamp(0.6rem, 0.85vw, 0.75rem);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+}
+
+h4 {
+  font-weight: 600;
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  margin-bottom: 0.3rem;
+}
+
+p {
+  font-size: clamp(0.8rem, 1.2vw, 0.95rem);
+  line-height: 1.7;
+  color: var(--text-dim);
+}
+
+/* Section header */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: clamp(0.5rem, 1vw, 0.75rem);
+}
+
+.section-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: white;
+  font-size: clamp(0.5rem, 0.7vw, 0.65rem);
+  font-weight: 700;
+  padding: 0.2em 0.5em;
+  border-radius: 2px;
+  letter-spacing: 0.08em;
+}
+
+/* Accent bar */
+.accent-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--accent);
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: clamp(1rem, 2vw, 1.5rem);
+  right: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(0.5rem, 0.7vw, 0.65rem);
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  z-index: 10;
+}
+
+/* Cards */
+.card {
+  background: var(--surface);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-top: 2px solid var(--accent);
+  padding: clamp(0.9rem, 1.8vw, 1.3rem);
+  border-radius: 3px;
+}
+
+.card-simple {
+  background: var(--surface);
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: clamp(0.9rem, 1.8vw, 1.3rem);
+  border-radius: 3px;
+}
+
+/* Quote */
+.quote {
+  font-size: clamp(1.2rem, 2.8vw, 2rem);
+  font-weight: 600;
+  line-height: 1.35;
+  border-left: 3px solid var(--accent);
+  padding-left: clamp(1rem, 2vw, 1.5rem);
+  font-style: italic;
+  color: var(--text);
+}
+
+.quote-author {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: clamp(0.6rem, 0.9vw, 0.75rem);
+  font-weight: 500;
+  color: var(--text-dim);
+  font-style: normal;
+}
+
+.quote-mark {
+  position: absolute;
+  font-size: clamp(5rem, 12vw, 9rem);
+  font-weight: 900;
+  color: var(--accent);
+  opacity: 0.15;
+  line-height: 1;
+  font-style: normal;
+}
+
+/* Prompt box */
+.prompt-box {
+  background: #0c0c0c;
+  border: 1px solid rgba(255,255,255,0.05);
+  border-left: 3px solid var(--accent);
+  padding: clamp(0.75rem, 1.3vw, 1rem);
+  border-radius: 0 3px 3px 0;
+  font-family: 'SF Mono', 'Consolas', monospace;
+  font-size: clamp(0.65rem, 0.9vw, 0.8rem);
+  line-height: 1.6;
+  color: #aaaaaa;
+}
+
+/* Stats */
+.stat-lg {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: clamp(0.55rem, 0.8vw, 0.7rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+}
+
+/* Tags */
+.tag {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 2px;
+  font-size: clamp(0.55rem, 0.75vw, 0.65rem);
+  font-weight: 600;
+}
+
+.tag-solid {
+  background: var(--accent);
+  color: white;
+}
+
+/* Grids */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(0.75rem, 1.8vw, 1.5rem); }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(0.6rem, 1.2vw, 1rem); }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(0.4rem, 0.9vw, 0.75rem); }
+
+/* Flex */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.gap-1 { gap: clamp(0.3rem, 0.6vw, 0.5rem); }
+.gap-2 { gap: clamp(0.5rem, 1vw, 0.75rem); }
+.gap-3 { gap: clamp(0.75rem, 1.5vw, 1.25rem); }
+
+/* Text */
+.text-center { text-align: center; }
+.text-accent { color: var(--accent); }
+.text-white { color: var(--text); }
+.text-muted { color: var(--text-muted); }
+.font-700 { font-weight: 700; }
+.font-mono { font-family: 'SF Mono', 'Consolas', monospace; }
+
+/* Divider */
+.divider {
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+  margin: clamp(0.5rem, 1vw, 0.75rem) 0;
+}
+
+/* Icon */
+.icon {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1;
+  opacity: 0.9;
+}
+
+.icon-lg {
+  font-size: clamp(3rem, 7vw, 4.5rem);
+  line-height: 1;
+  opacity: 0.85;
+}
+
+/* Spacing */
+.mt-1 { margin-top: clamp(0.3rem, 0.6vw, 0.5rem); }
+.mt-2 { margin-top: clamp(0.5rem, 1vw, 0.75rem); }
+.mt-3 { margin-top: clamp(0.75rem, 1.5vw, 1.25rem); }
+.mt-4 { margin-top: clamp(1rem, 2vw, 1.5rem); }
+.mb-2 { margin-bottom: clamp(0.5rem, 1vw, 0.75rem); }
+
+/* Nav dots */
+.nav {
+  position: fixed;
+  right: clamp(0.6rem, 1vw, 1rem);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 100;
+}
+
+.nav span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  opacity: 0.4;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav span.active {
+  opacity: 1;
+  background: var(--accent);
+  transform: scale(1.5);
+}
+
+.nav span:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .nav { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+<body>
+
+<!-- Slide 01: Portada -->
+<div class="slide" id="s01">
+  <div class="grid-overlay"></div>
+  <div class="slide-content" style="justify-content: flex-end; padding-bottom: clamp(2.5rem, 6vw, 4.5rem);">
+    <div class="section-header">
+      <span class="section-num">JORNADA 3/5</span>
+      <h3>Inteligencia Artificial</h3>
+    </div>
+    <div class="divider"></div>
+    <h1>De la Teoría<br>a la Acción</h1>
+    <p class="mt-3" style="font-size: clamp(0.85rem, 1.3vw, 1rem); max-width: 400px;">Herramientas y usos prácticos para transformar tu flujo de trabajo</p>
+  </div>
+  <div class="badge">01 / 25</div>
+</div>
+
+<!-- Slide 02: Contexto -->
+<div class="slide" id="s02">
+  <div class="grid-overlay"></div>
+  <div class="accent-bar"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h3>Bienvenida</h3>
+    </div>
+    <h2 class="mt-3" style="max-width: 800px;">Pasamos de la reflexión ética de <span class="text-accent">"¿Skynet nos destruirá?"</span> a la práctica real.</h2>
+    <div class="card mt-4" style="max-width: 550px; border-left: 3px solid var(--accent); border-top: none;">
+      <p style="font-size: clamp(0.95rem, 1.5vw, 1.15rem); color: var(--text);">No vamos a morir a manos de Terminator.</p>
+      <p class="mt-2" style="font-size: clamp(0.95rem, 1.5vw, 1.15rem); color: var(--text);">Vamos a <strong>aprender a usarlo</strong>.</p>
+    </div>
+  </div>
+  <div class="badge">02 / 25</div>
+</div>
+
+<!-- Slide 03: Ecosistema IA -->
+<div class="slide" id="s03">
+  <div class="grid-overlay"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h3>El Ecosistema</h3>
+    </div>
+    <h2 class="mt-3">La IA no es una sola herramienta.</h2>
+    <h2 class="text-accent mt-1">Es un ecosistema.</h2>
+    <div class="grid-4 mt-4">
+      <div class="card text-center">
+        <div class="icon mb-2">🎬</div>
+        <p class="font-700">Video</p>
+      </div>
+      <div class="card text-center">
+        <div class="icon mb-2">📝</div>
+        <p class="font-700">Texto</p>
+      </div>
+      <div class="card text-center">
+        <div class="icon mb-2">🖼️</div>
+        <p class="font-700">Imagen</p>
+      </div>
+      <div class="card text-center">
+        <div class="icon mb-2">🔊</div>
+        <p class="font-700">Audio</p>
+      </div>
+    </div>
+  </div>
+  <div class="badge">03 / 25</div>
+</div>
+
+<!-- Slide 04: Edgar Morin -->
+<div class="slide" id="s04">
+  <div class="grid-overlay"></div>
+  <div class="slide-content" style="justify-content: center;">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h3>El Reto</h3>
+    </div>
+    <div class="mt-4" style="position: relative; padding-left: clamp(1.5rem, 4vw, 3rem);">
+      <span class="quote-mark" style="left: 0; top: -0.5rem;">"</span>
+      <blockquote class="quote" style="position: relative; z-index: 1;">
+        Los analfabetos del siglo XXI no serán los que no sepan leer, sino los que no sepan <span class="text-accent">desaprender</span>.
+        <cite class="quote-author">— Edgar Morin, sociólogo</cite>
+      </blockquote>
+    </div>
+  </div>
+  <div class="badge">04 / 25</div>
+</div>
+
+<!-- Slide 05: Problema Actual -->
+<div class="slide" id="s05">
+  <div class="grid-overlay"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h3>El Problema</h3>
+    </div>
+    <div class="grid-2 mt-4" style="align-items: center;">
+      <div>
+        <div class="stat-lg" style="color: var(--text-muted);">90%</div>
+        <p class="stat-label">Cuota de Google en España</p>
+      </div>
+      <div>
+        <h2 style="margin-bottom: 0.75rem;">Infoxicación</h2>
+        <p>Cientos de enlaces, anuncios y artículos antes de encontrar lo que buscas. El tiempo perdido es tu recurso más valioso.</p>
+      </div>
+    </div>
+  </div>
+  <div class="badge">05 / 25</div>
+</div>
+
+<!-- Slide 06: Perplexity Intro -->
+<div class="slide" id="s06">
+  <div class="grid-overlay"></div>
+  <div class="slide-content text-center" style="justify-content: center;">
+    <div class="icon-lg mb-3">💊</div>
+    <div class="section-header" style="justify-content: center;">
+      <span class="section-num">PASTILLA ROJA</span>
+    </div>
+    <div class="divider" style="margin: 0.6rem auto;"></div>
+    <h2 style="font-size: clamp(1.8rem, 4.5vw, 3.5rem);">Perplexity AI</h2>
+    <p class="mt-3" style="max-width: 450px; margin-left: auto; margin-right: auto;">Una nueva forma de encontrar información. Sin navegar. Sin anuncios. Con fuentes verificables.</p>
+  </div>
+  <div class="badge">06 / 25</div>
+</div>
+
+<!-- Slide 07: Perplexity Detalle -->
+<div class="slide" id="s07">
+  <div class="grid-overlay"></div>
+  <div class="accent-bar"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h3>Perplexity AI</h3>
+    </div>
+    <h2 class="mt-3">Un motor de <span class="text-accent">respuestas</span>, no un buscador de enlaces.</h2>
+    <div class="card mt-3" style="border-left: 3px solid var(--accent); border-top: none;">
+      <h4 style="color: var(--text);">Ventaja principal</h4>
+      <p>Conexión en tiempo real a Internet con <strong>citas bibliográficas</strong>. Cada respuesta incluye las fuentes. Verificas al instante.</p>
+    </div>
+    <p class="mt-3"><strong>URL:</strong> <span class="font-mono text-accent">perplexity.ai</span></p>
+  </div>
+  <div class="badge">07 / 25</div>
+</div>
+
+<!-- Slide 08: Modos Perplexity -->
+<div class="slide" id="s08">
+  <div class="grid-overlay"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <h3>Modos de Enfoque</h3>
+    </div>
+    <div class="grid-3 mt-4">
+      <div class="card">
+        <div class="icon mb-2">🎓</div>
+        <h4>Académico</h4>
+        <p>Publicaciones científicas y Google Scholar. Ideal para investigaciones.</p>
+      </div>
+      <div class="card" style="border-top: 2px solid var(--accent);">
+        <div class="icon mb-2">✍️</div>
+        <h4>Escritura</h4>
+        <p>Generación de texto sin búsqueda web. Para copywriting y contenido.</p>
+      </div>
+      <div class="card">
+        <div class="icon mb-2">🌐</div>
+        <h4>Social</h4>
+        <p>Opiniones en tiempo real. Reddit, Discord, foros especializados.</p>
+      </div>
+    </div>
+  </div>
+  <div class="badge">08 / 25</div>
+</div>
+
+<!-- Slide 09: Fin SEO -->
+<div class="slide" id="s09">
+  <div class="grid-overlay"></div>
+  <div class="accent-bar"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">07</span>
+      <h3>El Fin del SEO Tradicional</h3>
+    </div>
+    <div class="grid-2 mt-4" style="align-items: center;">
+      <div class="card-simple">
+        <p class="font-700 text-white mb-2">Antes</p>
+        <p>Buscar → 100 enlaces → Anuncios → Click bait → Tiempo perdido</p>
+      </div>
+      <div class="card" style="border: 2px solid var(--accent);">
+        <p class="font-700 text-white mb-2">Ahora</p>
+        <p>Pregunta → Respuesta directa con fuentes verificables</p>
+      </div>
+    </div>
+    <p class="mt-4 text-center">La IA filtra el ruido. Tú recuperas el control.</p>
+  </div>
+  <div class="badge">09 / 25</div>
+</div>
+
+<!-- Slide 10: Anatomía Prompt -->
+<div class="slide" id="s10">
+  <div class="grid-overlay"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">08</span>
+      <h3>Anatomía de un Prompt</h3>
+    </div>
+    <h2 class="mt-3">La instrucción que le damos a la IA.</h2>
+    <div class="card mt-3" style="border-left: 3px solid var(--accent); border-top: none;">
+      <p style="font-size: clamp(0.9rem, 1.4vw, 1.1rem); color: var(--text);"><strong>Es el inicio de una conversación</strong>, no una búsqueda de palabras clave.</p>
+    </div>
+    <div class="prompt-box mt-3">
+      <p class="text-muted mb-2">❌ "IA resumen"</p>
+      <p class="text-white">✓ "Eres un profesor universitario. Resume este texto en 3 puntos clave para estudiantes de 18 años. Max 150 palabras."</p>
+    </div>
+  </div>
+  <div class="badge">10 / 25</div>
+</div>
+
+<!-- Slide 11: Tokens -->
+<div class="slide" id="s11">
+  <div class="grid-overlay"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">09</span>
+      <h3>El Concepto de Token</h3>
+    </div>
+    <h2 class="mt-3">La unidad básica de procesamiento.</h2>
+    <div class="grid-2 mt-4" style="align-items: center;">
+      <div>
+        <p>La máquina divide nuestras frases en <span class="text-accent">tokens</span> para "entendernos". Cada token es aproximadamente:</p>
+        <div class="tag mt-3">1 token ≈ 4 caracteres en español</div>
+        <div class="tag mt-2">1 token ≈ 0.75 palabras en inglés</div>
+      </div>
+      <div class="text-center">
+        <div class="icon-lg">🔤</div>
+        <p class="mt-2 text-muted" style="font-size: 0.75rem;">Fragmentos de texto</p>
+      </div>
+    </div>
+  </div>
+  <div class="badge">11 / 25</div>
+</div>
+
+<!-- Slide 12: Transformers -->
+<div class="slide" id="s12">
+  <div class="grid-overlay"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">10</span>
+      <h3>Transformers</h3>
+    </div>
+    <h2 class="mt-3">La arquitectura que hace posible ChatGPT, Gemini y más.</h2>
+    <div class="grid-2 mt-4">
+      <div class="card">
+        <h4>Origen</h4>
+        <p>Tecnología creada por <strong>Google Brain</strong> en 2017. Paper: "Attention Is All You Need".</p>
+      </div>
+      <div class="card" style="border-top: 2px solid var(--accent);">
+        <h4>Función</h4>
+        <p>Transformar datos en significado y <strong>recordar el contexto</strong> de toda la conversación.</p>
+      </div>
+    </div>
+  </div>
+  <div class="badge">12 / 25</div>
+</div>
+
+<!-- Slide 13: Modelo Atención -->
+<div class="slide" id="s13">
+  <div class="grid-overlay"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">11</span>
+      <h3>El Modelo de Atención</h3>
+    </div>
+    <h2 class="mt-3">Cómo la IA sabe qué palabra es más importante.</h2>
+    <div class="card-simple mt-3 text-center">
+      <p style="font-size: clamp(1rem, 1.8vw, 1.25rem); color: var(--text); font-style: italic;">"El perro corrió rápido por el parque"</p>
+    </div>
+    <div class="flex gap-2 mt-3" style="flex-wrap: wrap; justify-content: center;">
+      <span class="tag tag-solid">perro ← importante</span>
+      <span class="tag">corrió</span>
+      <span class="tag">rápido</span>
+      <span class="tag">parque</span>
+    </div>
+  </div>
+  <div class="badge">13 / 25</div>
+</div>
+
+<!-- Slide 14: Temperatura -->
+<div class="slide" id="s14">
+  <div class="grid-overlay"></div>
+  <div class="accent-bar"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">12</span>
+      <h3>La Temperatura</h3>
+    </div>
+    <h2 class="mt-3">Controla la <span class="text-accent">creatividad</span> de la IA.</h2>
+    <div class="grid-2 mt-4">
+      <div class="card">
+        <h4>Baja (0 - 0.3)</h4>
+        <p>Respuestas predecibles y precisas. Ideal para datos, resúmenes, hechos, código.</p>
+      </div>
+      <div class="card" style="border-top: 2px solid var(--accent);">
+        <h4>Alta (0.7 - 1.0)</h4>
+        <p>Respuestas creativas y diversas. Ideal para brainstorming, escritura artística, ideas.</p>
+      </div>
+    </div>
+  </div>
+  <div class="badge">14 / 25</div>
+</div>
+
+<!-- Slide 15: Alucinaciones -->
+<div class="slide" id="s15">
+  <div class="grid-overlay"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">13</span>
+      <h3>Alucinaciones</h3>
+    </div>
+    <h2 class="mt-3">Cuando la IA <span class="text-accent">inventa</span> información.</h2>
+    <div class="card mt-3">
+      <p style="font-size: clamp(0.85rem, 1.3vw, 1rem); color: var(--text);"><strong>El problema:</strong> La IA no sabe lo que no sabe. Genera texto que suena verdadero pero no lo es. No tiene conciencia de sus límites.</p>
+    </div>
+    <p class="mt-3"><strong>La solución:</strong> Siempre verificar con fuentes. Usar Perplexity o buscar después de preguntar. No confiar ciegamente.</p>
+  </div>
+  <div class="badge">15 / 25</div>
+</div>
+
+<!-- Slide 16: Copilot WhatsApp -->
+<div class="slide" id="s16">
+  <div class="grid-overlay"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">14</span>
+      <h3>IA en el Bolsillo</h3>
+    </div>
+    <h2 class="mt-3">Microsoft Copilot en <span class="text-accent">WhatsApp</span>.</h2>
+    <div class="grid-2 mt-4" style="align-items: center;">
+      <div class="card" style="border-left: 3px solid var(--accent); border-top: none;">
+        <h4>Ventaja</h4>
+        <p>Accesibilidad total. Sin instalar apps. Desde tu teléfono existente.</p>
+      </div>
+      <div class="text-center">
+        <div class="icon-lg mb-2">📱</div>
+        <p class="font-mono text-accent font-700" style="font-size: clamp(0.9rem, 1.5vw, 1.2rem);">+1 877 224 1042</p>
+        <p class="mt-1 text-muted" style="font-size: 0.7rem;">Guardar y enviar un mensaje</p>
+      </div>
+    </div>
+  </div>
+  <div class="badge">16 / 25</div>
+</div>
+
+<!-- Slide 17: NotebookLM -->
+<div class="slide" id="s17">
+  <div class="grid-overlay"></div>
+  <div class="accent-bar"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">15</span>
+      <h3>NotebookLM</h3>
+    </div>
+    <h2 class="mt-3">Tu IA sobre <span class="text-accent">tus</span> documentos.</h2>
+    <div class="grid-2 mt-4">
+      <div>
+        <p>Sube PDFs, artículos, libros. La IA responde solo sobre ese material. No inventa información de afuera.</p>
+        <div class="tag mt-3">Privacidad garantizada</div>
+        <p class="mt-2"><strong>URL:</strong> <span class="font-mono text-accent">notebooklm.google</span></p>
+      </div>
+      <div class="card">
+        <h4>Ideal para</h4>
+        <p>• Investigación académica</p>
+        <p>• Análisis de contratos</p>
+        <p>• Revisión de papers</p>
+        <p>• Estudio personalizado</p>
+      </div>
+    </div>
+  </div>
+  <div class="badge">17 / 25</div>
+</div>
+
+<!-- Slide 18: Plataformas IA -->
+<div class="slide" id="s18">
+  <div class="grid-overlay"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">16</span>
+      <h3>Plataformas IA</h3>
+    </div>
+    <h2 class="mt-3">El ecosistema de herramientas.</h2>
+    <div class="grid-3 mt-4">
+      <div class="card">
+        <h4>ChatGPT</h4>
+        <p>OpenAI. Conversaciones, código, análisis.</p>
+      </div>
+      <div class="card" style="border-top: 2px solid var(--accent);">
+        <h4>Claude</h4>
+        <p>Anthropic. Análisis profundo, escritura.</p>
+      </div>
+      <div class="card">
+        <h4>Gemini</h4>
+        <p>Google. Integración con Google Workspace.</p>
+      </div>
+    </div>
+  </div>
+  <div class="badge">18 / 25</div>
+</div>
+
+<!-- Slide 19: Generación Imágenes -->
+<div class="slide" id="s19">
+  <div class="grid-overlay"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">17</span>
+      <h3>Generación de Imágenes</h3>
+    </div>
+    <h2 class="mt-3">Crear visuales desde cero a partir de texto.</h2>
+    <div class="grid-2 mt-4">
+      <div class="card">
+        <h4>DALL-E 3</h4>
+        <p>OpenAI. Integración en ChatGPT. Imágenes fotorrealistas.</p>
+      </div>
+      <div class="card" style="border-top: 2px solid var(--accent);">
+        <h4>Microsoft Designer</h4>
+        <p>Gratis con cuenta Microsoft. Imágenes generadas por IA.</p>
+      </div>
+    </div>
+  </div>
+  <div class="badge">19 / 25</div>
+</div>
+
+<!-- Slide 20: Prompt Imagen -->
+<div class="slide" id="s20">
+  <div class="grid-overlay"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">18</span>
+      <h3>Anatomía del Prompt de Imagen</h3>
+    </div>
+    <div class="grid-4 mt-3">
+      <div class="card text-center">
+        <div class="icon mb-2">👤</div>
+        <p class="font-700">Sujeto</p>
+      </div>
+      <div class="card text-center" style="border-top: 2px solid var(--accent);">
+        <div class="icon mb-2">🎨</div>
+        <p class="font-700">Estilo</p>
+      </div>
+      <div class="card text-center">
+        <div class="icon mb-2">💡</div>
+        <p class="font-700">Iluminación</p>
+      </div>
+      <div class="card text-center" style="border-top: 2px solid var(--accent);">
+        <div class="icon mb-2">📐</div>
+        <p class="font-700">Composición</p>
+      </div>
+    </div>
+    <div class="prompt-box mt-3">
+      "Un astronauta de plasma, estilo cinematográfico, iluminación dramática, primer plano detallado"
+    </div>
+  </div>
+  <div class="badge">20 / 25</div>
+</div>
+
+<!-- Slide 21: IA Medicina -->
+<div class="slide" id="s21">
+  <div class="grid-overlay"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">19</span>
+      <h3>IA en Medicina</h3>
+    </div>
+    <h2 class="mt-3">Diagnósticos con <span class="text-accent">99%</span> de precisión.</h2>
+    <div class="grid-2 mt-4">
+      <div class="card">
+        <h4>Diagnósticos precoces</h4>
+        <p>Detección de cáncer antes de que sea visible al ojo humano. En años, no meses.</p>
+      </div>
+      <div class="card" style="border-top: 2px solid var(--accent);">
+        <h4>Análisis genómico</h4>
+        <p>Personalización de tratamientos según el ADN de cada paciente.</p>
+      </div>
+    </div>
+    <p class="mt-4 text-center"><strong>Médico + IA</strong> = Mejor que cualquiera por separado.</p>
+  </div>
+  <div class="badge">21 / 25</div>
+</div>
+
+<!-- Slide 22: IA Agricultura -->
+<div class="slide" id="s22">
+  <div class="grid-overlay"></div>
+  <div class="accent-bar"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">20</span>
+      <h3>IA en Agricultura</h3>
+    </div>
+    <h2 class="mt-3">La IA ya está en el <span class="text-accent">campo</span>.</h2>
+    <div class="grid-2 mt-4">
+      <div class="card">
+        <h4>Tractores autónomos</h4>
+        <p>Conducción automatizada 24/7. John Deere ya vende tractores sin conductor.</p>
+      </div>
+      <div class="card" style="border-top: 2px solid var(--accent);">
+        <h4>Cosecha inteligente</h4>
+        <p>Detección de madurez con Visión Artificial. Solo se cosecha lo óptimo.</p>
+      </div>
+    </div>
+  </div>
+  <div class="badge">22 / 25</div>
+</div>
+
+<!-- Slide 23: Ahorro Tiempo -->
+<div class="slide" id="s23">
+  <div class="grid-overlay"></div>
+  <div class="slide-content text-center" style="justify-content: center;">
+    <div class="section-header" style="justify-content: center;">
+      <span class="section-num">21</span>
+      <h3>El Ahorro de Tiempo</h3>
+    </div>
+    <div class="divider" style="margin: 0.6rem auto;"></div>
+    <div class="flex items-center justify-center gap-4 mt-4">
+      <div>
+        <div class="stat-lg" style="color: var(--text-muted); text-decoration: line-through;">2h</div>
+        <p class="stat-label">Antes</p>
+      </div>
+      <div style="font-size: clamp(1.2rem, 2.5vw, 2rem); color: var(--text-muted);">→</div>
+      <div>
+        <div class="stat-lg" style="color: var(--accent);">10min</div>
+        <p class="stat-label">Ahora</p>
+      </div>
+    </div>
+    <p class="mt-4" style="font-size: clamp(1rem, 1.5vw, 1.15rem); color: var(--text);">Ganar tiempo para tareas que requieren<br><strong class="text-accent">empatía humana</strong>.</p>
+  </div>
+  <div class="badge">23 / 25</div>
+</div>
+
+<!-- Slide 24: Creatividad -->
+<div class="slide" id="s24">
+  <div class="grid-overlay"></div>
+  <div class="slide-content">
+    <div class="section-header">
+      <span class="section-num">22</span>
+      <h3>Creatividad Aumentada</h3>
+    </div>
+    <h2 class="mt-3">La IA como <span class="text-accent">compañero</span> de brainstorming.</h2>
+    <div class="card mt-3" style="border-left: 3px solid var(--accent); border-top: none;">
+      <p style="font-size: clamp(0.95rem, 1.5vw, 1.15rem); color: var(--text);">"¿Qué 10 ideas se te ocurren para un evento de marketing de lanzamiento?"</p>
+    </div>
+    <div class="text-center mt-4">
+      <div class="icon-lg mb-2">💡</div>
+      <p style="font-size: clamp(0.85rem, 1.3vw, 1rem);"><strong>IA + Humano</strong> = Ideas que ninguno produciría solo</p>
+    </div>
+  </div>
+  <div class="badge">24 / 25</div>
+</div>
+
+<!-- Slide 25: Cierre -->
+<div class="slide" id="s25">
+  <div class="grid-overlay"></div>
+  <div class="slide-content text-center" style="justify-content: center;">
+    <div class="section-header" style="justify-content: center;">
+      <span class="section-num">PRÓXIMO MÓDULO</span>
+    </div>
+    <div class="divider" style="margin: 0.6rem auto;"></div>
+    <h2 class="mt-3" style="font-size: clamp(1.8rem, 4vw, 3rem);">De la Teoría a la Acción</h2>
+    <p class="mt-3" style="max-width: 380px; margin-left: auto; margin-right: auto;">El futuro no es quien tenga la mejor IA. Es quien sepa <strong>usarla mejor</strong>.</p>
+    <div class="tag tag-solid mt-4" style="font-size: 0.75rem; padding: 0.5em 1em;">Jornada 4/5 → Práctica</div>
+  </div>
+  <div class="badge">25 / 25</div>
+</div>
+
+<!-- Navigation dots -->
+<div class="nav">
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+const navDots = document.querySelectorAll('.nav span');
+
+// Track active slide
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      slides.forEach(s => s.classList.remove('active'));
+      entry.target.classList.add('active');
+      const id = entry.target.id;
+      const num = parseInt(id.replace('s', '')) - 1;
+      navDots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === num);
+      });
+    }
+  });
+}, { threshold: 0.5, rootMargin: '0px 0px -10% 0px' });
+
+slides.forEach(slide => observer.observe(slide));
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+  const current = document.querySelector('.slide.active') || slides[0];
+  const num = parseInt(current.id.replace('s', ''));
+
+  if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === ' ') {
+    e.preventDefault();
+    const next = document.getElementById('s' + Math.min(num + 1, 25));
+    if (next) next.scrollIntoView({ behavior: 'smooth' });
+  } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+    e.preventDefault();
+    const prev = document.getElementById('s' + Math.max(num - 1, 1));
+    if (prev) prev.scrollIntoView({ behavior: 'smooth' });
+  } else if (e.key === 'Home') {
+    e.preventDefault();
+    slides[0].scrollIntoView({ behavior: 'smooth' });
+  } else if (e.key === 'End') {
+    e.preventDefault();
+    slides[24].scrollIntoView({ behavior: 'smooth' });
+  }
+});
+
+// Nav dots click
+navDots.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+    const target = document.getElementById('s' + (i + 1));
+    if (target) target.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+</script>
+
+</body>
+</html>
