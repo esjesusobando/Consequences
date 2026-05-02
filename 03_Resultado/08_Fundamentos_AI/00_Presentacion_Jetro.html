@@ -13,16 +13,17 @@
   <link rel="preload" as="image" href="01_Imagenes/Workflow.jpg">
   <style>
     /* ===========================================
-       FUNDAMENTOS AI — Editorial Brutalist Design
-       Sistema: Knockout HTF · Mark Pro Black · Mark Pro Light
-       Paleta: Rojo intenso + Azul eléctrico + Negro + Grises
-       Dynamic Components: subtle ambient animations
+       PRESENTATION PREMIUM ENGINE
+       $100K Design System
+       Brutalist Editorial · Cinematic Depth · Motion Excellence
        =========================================== */
 
     :root {
-      /* Dominante + Acento */
+      /* Core Palette - Bold, High Contrast */
       --electric-blue: #0057FF;
+      --electric-blue-glow: rgba(0, 87, 255, 0.4);
       --intense-red: #FF2D00;
+      --intense-red-glow: rgba(255, 45, 0, 0.4);
       --obsidian: #0A0A0A;
       --charcoal: #1A1A1A;
       --graphite: #3A3A3A;
@@ -31,7 +32,23 @@
       --silver: #E0E0E0;
       --white: #FFFFFF;
 
-      /* Tipografía */
+      /* Semantic */
+      --bg-primary: var(--obsidian);
+      --bg-secondary: var(--charcoal);
+      --text-primary: var(--white);
+      --text-secondary: var(--titanium);
+      --text-muted: var(--graphite);
+      --accent-primary: var(--electric-blue);
+      --accent-secondary: var(--intense-red);
+
+      /* Spacing Scale */
+      --space-xs: 8px;
+      --space-sm: 16px;
+      --space-md: 24px;
+      --space-lg: 48px;
+      --space-xl: 96px;
+
+      /* Typography */
       --headline: 'Oswald', sans-serif;
       --statement: 'Inter', sans-serif;
       --body: 'Epilogue', sans-serif;
@@ -43,12 +60,48 @@
       height: 100%;
       overflow: hidden;
       font-family: var(--body);
-      background: var(--obsidian);
-      color: var(--white);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      cursor: crosshair;
     }
 
     /* ===========================================
-       DECK
+       PREMIUM BACKGROUND SYSTEM
+       Animated mesh gradient responding to mouse
+       =========================================== */
+    .premium-bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .mesh-gradient {
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse 80% 50% at 20% 40%, var(--electric-blue-glow) 0%, transparent 50%),
+        radial-gradient(ellipse 60% 40% at 80% 60%, var(--intense-red-glow) 0%, transparent 50%),
+        radial-gradient(ellipse 50% 30% at 50% 50%, rgba(0, 87, 255, 0.1) 0%, transparent 60%);
+      animation: meshPulse 15s ease-in-out infinite;
+    }
+
+    @keyframes meshPulse {
+      0%, 100% { opacity: 0.6; transform: scale(1); }
+      33% { opacity: 0.8; transform: scale(1.05) translate(-2%, 2%); }
+      66% { opacity: 0.5; transform: scale(1.02) translate(2%, -1%); }
+    }
+
+    .noise-overlay {
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    /* ===========================================
+       DECK SYSTEM
        =========================================== */
     .deck {
       position: relative;
@@ -62,92 +115,147 @@
       inset: 0;
       display: none;
       flex-direction: column;
-      padding: 72px 96px;
+      padding: var(--space-xl) calc(var(--space-xl) * 1.2);
       opacity: 0;
-      transform: translateY(20px);
+      z-index: 1;
     }
 
     .slide.active {
       display: flex;
-      animation: slideIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      animation: slideReveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     }
 
     .slide.exiting {
-      animation: slideOut 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      animation: slideHide 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
     }
 
-    @keyframes slideIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+    @keyframes slideReveal {
+      0% { opacity: 0; transform: translateY(40px) scale(0.96); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
     }
 
-    @keyframes slideOut {
-      from { opacity: 1; transform: translateY(0); }
-      to { opacity: 0; transform: translateY(-20px); }
+    @keyframes slideHide {
+      0% { opacity: 1; transform: translateY(0) scale(1); }
+      100% { opacity: 0; transform: translateY(-30px) scale(0.98); }
     }
 
     /* ===========================================
-       DYNAMIC — Ambient Floating Orbs
+       PREMIUM ORB SYSTEM
+       Glow orbs with interaction
        =========================================== */
     .orb {
       position: absolute;
       border-radius: 50%;
       pointer-events: none;
       z-index: 0;
+      will-change: transform, opacity;
     }
 
     .orb-1 {
-      width: 400px;
-      height: 400px;
-      background: radial-gradient(circle, rgba(0, 87, 255, 0.15) 0%, transparent 70%);
-      filter: blur(60px);
-      animation: float1 8s ease-in-out infinite;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, var(--electric-blue-glow) 0%, transparent 70%);
+      filter: blur(80px);
+      animation: orbFloat1 12s ease-in-out infinite;
     }
 
     .orb-2 {
-      width: 300px;
-      height: 300px;
-      background: radial-gradient(circle, rgba(255, 45, 0, 0.1) 0%, transparent 70%);
-      filter: blur(50px);
-      animation: float2 10s ease-in-out infinite;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, var(--intense-red-glow) 0%, transparent 70%);
+      filter: blur(70px);
+      animation: orbFloat2 15s ease-in-out infinite;
     }
 
     .orb-3 {
-      width: 200px;
-      height: 200px;
-      background: radial-gradient(circle, rgba(0, 87, 255, 0.08) 0%, transparent 70%);
-      filter: blur(40px);
-      animation: float3 12s ease-in-out infinite;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(0, 87, 255, 0.2) 0%, transparent 70%);
+      filter: blur(60px);
+      animation: orbFloat3 18s ease-in-out infinite;
     }
 
-    @keyframes float1 {
+    @keyframes orbFloat1 {
       0%, 100% { transform: translate(0, 0) scale(1); }
-      33% { transform: translate(30px, -20px) scale(1.05); }
-      66% { transform: translate(-20px, 20px) scale(0.95); }
+      25% { transform: translate(40px, -30px) scale(1.1); }
+      50% { transform: translate(-30px, 40px) scale(0.95); }
+      75% { transform: translate(20px, 20px) scale(1.05); }
     }
 
-    @keyframes float2 {
+    @keyframes orbFloat2 {
       0%, 100% { transform: translate(0, 0) scale(1); }
-      50% { transform: translate(-25px, 15px) scale(1.1); }
+      33% { transform: translate(-40px, 30px) scale(1.15); }
+      66% { transform: translate(30px, -20px) scale(0.9); }
     }
 
-    @keyframes float3 {
+    @keyframes orbFloat3 {
       0%, 100% { transform: translate(0, 0); }
-      25% { transform: translate(15px, -10px); }
-      50% { transform: translate(-10px, 15px); }
-      75% { transform: translate(20px, 5px); }
+      20% { transform: translate(20px, -15px); }
+      40% { transform: translate(-15px, 25px); }
+      60% { transform: translate(25px, 10px); }
+      80% { transform: translate(-10px, -20px); }
     }
 
-    /* ===========================================
-       DYNAMIC — Pulsing Glow
-       =========================================== */
     .glow-pulse {
-      animation: glowPulse 3s ease-in-out infinite;
+      animation: glowPulse 4s ease-in-out infinite;
     }
 
     @keyframes glowPulse {
-      0%, 100% { opacity: 0.6; filter: blur(60px); }
-      50% { opacity: 1; filter: blur(80px); }
+      0%, 100% { opacity: 0.7; filter: blur(80px); }
+      50% { opacity: 1; filter: blur(100px); }
+    }
+
+    /* ===========================================
+       AMBIENT PARTICLES
+       Elegant floating particles in background
+       =========================================== */
+    .ambient-container {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .ambient-particle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      opacity: 0;
+      animation: ambientFloat linear infinite;
+    }
+
+    .ambient-particle.blue {
+      background: var(--electric-blue);
+      box-shadow: 0 0 20px var(--electric-blue), 0 0 40px var(--electric-blue);
+    }
+
+    .ambient-particle.red {
+      background: var(--intense-red);
+      box-shadow: 0 0 15px var(--intense-red), 0 0 30px var(--intense-red);
+    }
+
+    .ambient-particle.white {
+      background: var(--white);
+      box-shadow: 0 0 10px var(--white);
+    }
+
+    @keyframes ambientFloat {
+      0% {
+        opacity: 0;
+        transform: translateY(100vh) rotate(0deg);
+      }
+      10% {
+        opacity: 0.4;
+      }
+      90% {
+        opacity: 0.3;
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-100vh) rotate(360deg);
+      }
     }
 
     /* ===========================================
@@ -353,17 +461,19 @@
 
     .ambient-particle {
       position: absolute;
-      width: 3px;
-      height: 3px;
+      width: 5px;
+      height: 5px;
       background: var(--electric-blue);
       border-radius: 50%;
-      opacity: 0.12;
+      opacity: 0.25;
       animation: ambientDrift 20s ease-in-out infinite;
+      box-shadow: 0 0 10px var(--electric-blue);
     }
 
     .ambient-particle:nth-child(odd) {
       background: var(--intense-red);
-      opacity: 0.08;
+      box-shadow: 0 0 8px var(--intense-red);
+      opacity: 0.2;
     }
 
     @keyframes ambientDrift {
@@ -401,23 +511,25 @@
 
     .trail-particle {
       position: absolute;
-      width: 4px;
-      height: 4px;
+      width: 8px;
+      height: 8px;
       background: var(--electric-blue);
       border-radius: 50%;
       pointer-events: none;
       opacity: 0;
       transform: scale(0);
-      transition: opacity 0.3s ease, transform 0.3s ease;
+      transition: opacity 0.4s ease, transform 0.3s ease;
+      box-shadow: 0 0 15px var(--electric-blue), 0 0 30px var(--electric-blue);
     }
 
     .trail-particle.active {
-      opacity: 0.6;
-      transform: scale(1);
+      opacity: 0.8;
+      transform: scale(1.2);
     }
 
     .trail-particle.red {
       background: var(--intense-red);
+      box-shadow: 0 0 12px var(--intense-red), 0 0 25px var(--intense-red);
     }
 
     /* ===========================================
@@ -425,14 +537,15 @@
        Los orbs reaccionan sutilmente al hover
        =========================================== */
     .orb-interactive {
-      transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), 
-                  filter 0.4s ease,
+      transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), 
+                  filter 0.5s ease,
                   opacity 0.4s ease;
     }
 
     .slide:hover .orb-interactive {
-      transform: scale(1.1) translate(5px, -5px);
-      filter: blur(50px);
+      transform: scale(1.15) translate(10px, -10px);
+      filter: blur(45px) brightness(1.2);
+      opacity: 0.8;
     }
 
     /* ===========================================
