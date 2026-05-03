@@ -1,8 +1,8 @@
-# INDEX ÁREAS FUNCIONALES — Skills v2.0 Consequences
+# INDEX ÁREAS FUNCIONALES — Skills v3.1 Consequences
 
 > Índice navegable de todas las skills organizadas por área funcional.
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
-> **Actualizado:** 2026-04-28 (Consecuences v3.1 + Dumbledor Design + Frontend Slides)
+> **Actualizado:** 2026-05-03 (Auditoría completa — Pure Green State)
 
 ---
 
