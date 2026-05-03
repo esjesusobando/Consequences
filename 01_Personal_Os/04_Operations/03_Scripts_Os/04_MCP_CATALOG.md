@@ -1,7 +1,8 @@
-# 🔌 MCP CATALOG — 2026-04-24
+# 🔌 MCP CATALOG — Think Different PersonalOS v3.1
 
-> **CATÁLOGO COMPLETO** de los 33 MCP servers disponibles  
+> **CATÁLOGO COMPLETO** de los 38 MCP servers activos en Claude Code
 > **Para qué sirve cada uno** + **Cuándo usarlo**
+> **Última actualización:** 2026-05-03
 
 ---
 
@@ -23,10 +24,11 @@
 | **E2E testing**             | `TestSprite`      | `When I need to run E2E tests`                      |
 | **Memoria persistente**     | `engram`          | `When I need persistent memory across sessions`     |
 | **Archivos locales**        | `filesystem`      | `When I need to read/write local files`             |
+| **Pensamiento encadenado**   | `sequential-thinking` | `When I need structured problem solving`         |
 
 ---
 
-## 📋 CATÁLOGO COMPLETO (33 MCPs)
+## 📋 CATÁLOGO COMPLETO (38 MCPs)
 
 ### 🧠 KNOWLEDGE (4)
 

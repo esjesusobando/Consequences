@@ -1,4 +1,4 @@
-# Skill Registry — Think Different PersonalOS v3.0 Consequences
+# Skill Registry — Think Different PersonalOS v3.1 Consequences
 
 > **FUENTE DE VERDAD**: Este archivo es el registry activo. Los sub-agentes leen de aquí para obtener compact rules.
 > La fuente de implementación de cada skill está en `01_Personal_Os/01_Core/02_Tools/02_Skills/`.
@@ -7,8 +7,8 @@
 
 ## Proyecto: Think_Different
 
-**Versión:** 3.1 Consequences (2026-04-26)
-**Última actualización:** 2026-04-26
+**Versión:** 3.1 Consequences (2026-05-03)
+**Última actualización:** 2026-05-03 (Auditoría completa aplicada)
 
 ### Convenciones del Proyecto
 
@@ -64,22 +64,21 @@ Think_Different/
 | Openspec root | `.atl/openspec/` |
 | Engram | ✅ MCP server disponible (verificar con `engram tui`) |
 
-### Available Skills — Sistema v3.0 (13 Áreas Funcionales)
+### Available Skills — Sistema v3.1 (11 Áreas Funcionales)
 
 | # | Área Funcional | Categorías | Skills principales | Metodología | Path |
 |---|---------------|------------|-------------------|-------------|------|
 | **00** | ⭐ **Core Engineering** | Compound_Engineering, Personal_Os_Stack, Skill_Auditor | ce:ideate, ce:brainstorm, ce:plan, /lfg, /slfg | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/` |
 | **01** | 🎨 **Creación Contenidos** | Brand_Voice, Content_Creation, SEO_SOTA_Master, Carousel_Master | social-content, paid-ads, brand-voice, content-ideation | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/` |
-| **02** | 🎨 **Diseño UI/UX** | Product_Design, Taste_Skills, Diseno_Minimalista, Marca, Excalidraw, **Huashu_Design** | taste-skill, soft-skill, minimalist-skill, redesign-skill, **huashu-design** | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/` |
+| **02** | 🎨 **Diseño UI/UX** | Product_Design, Taste_Skills, Diseno_Minimalista, Marca, Excalidraw, **Huashu_Design**, **Dumbledor_Design** | taste-skill, soft-skill, minimalist-skill, redesign-skill, **huashu-design**, **dumbledor-design** | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/` |
 | **03** | 🎥 **Video Media** | Video_Intel, James_Cameron (Remotion, Audio) | youtube-analysis, video-prompt, seedance, remotion | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/` |
 | **04** | ⚙️ **Automatización** | N8N_JS, N8N_Python, Firecrawl, GWS_Client | workflow-builder, webhook, automation, scraping | Automation | `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/` |
 | **05** | 🔄 **Workflows** | Agent_Teams_Lite, Project_Manager, Product_Manager, PM_Orchestrator | sdd-*, /ce:*, issue-creation, jira-epic | SDD+CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/` |
 | **06** | 🛠️ **Tools** | Skill_Creator, Anthropic_Harness, DevOps, Testing, Doc_Processing, System_Master, Data_Analyst, Qmd | react-19, nextjs-15, pytest, playwright, docker | CE+GGA | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/` |
 | **07** | 🌱 **Personal OS** | Life_OS, Personal_Os, Hillary, Contexto, Rituales | quick-capture, plan-my-day, morning-standup, weekly-review | OS | `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/` |
 | **08** | 🌐 **Invictus Web** | Superpowers, Buscador_Skills, Playwright | browser-automation, search, scraping | Web | `01_Personal_Os/01_Core/02_Tools/02_Skills/08_Invictus_Web/` |
-| **09** | 📦 **Legacy Archive** | Skills obsoletas v1.x | Legacy support | Legacy | `01_Personal_Os/01_Core/02_Tools/02_Skills/09_Legacy_Archive/` |
 
-> **✅ v3.1 Consequences:** Audit-fix completada 2026-04-26. 4 carpetas raíz. Pure Green State. 297+ skills, 52 agents, 19 HUBs (23 scripts totales), 13 áreas funcionales, 28 workflows.
+> **✅ v3.1 Consequences:** Auditoría completa aplicada 2026-05-03. 299+ skills, 52 agents, 23 HUBs (28 scripts totales), 11 áreas funcionales, 28 workflows. Pure Green State.
 
 ### Project Conventions (AGENTS.md)
 
@@ -90,13 +89,13 @@ Think_Different/
 
 ### Skill Registry Sources
 
-- User-level: `~/.config/opencode/skills/`
 - **Project-level (FUENTE):** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
-- **Backup (legacy):** `01_Personal_Os/01_Core/02_Tools/02_Skills/` (-sync, no usar para trabajo activo)
-- SDD Config: `.atl/openspec/config.yaml`
+- **User-level skills global:** `~/.config/opencode/skills/`
+- **Backup (legacy):** `.agent/02_Skills/` (estratégico, no para trabajo activo)
+- **SDD Config:** `.atl/openspec/config.yaml`
 
-> ⚠️ **CRITICAL:** Siempre usar `01_Personal_Os/01_Core/02_Tools/02_Skills/` como fuente de skills. NO usar `01_Personal_Os/01_Core/02_Tools/02_Skills/` ni paths antiguos (`01_Personal_Os/01_Core/02_Tools/02_Skills/`).
+> ⚠️ **CRITICAL:** Siempre usar `01_Personal_Os/01_Core/02_Tools/02_Skills/` como fuente de skills. NO usar paths antiguos como `01_Core/03_Skills/` o `.agent/02_Skills/`.
 
 ---
 
-*PersonalOS v3.1 Consequences — 2026-04-26. Fuente de implementación: `01_Personal_Os/01_Core/02_Tools/02_Skills/`*
+*PersonalOS v3.1 Consequences — 2026-05-03. Fuente de implementación: `01_Personal_Os/01_Core/02_Tools/02_Skills/`*

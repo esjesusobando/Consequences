@@ -1,7 +1,7 @@
 # Think Different PersonalOS v3.1 — Consequences
 
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Version](https://img.shields.io/badge/Version-3.1-green)]()
+[![Version](https://img.shields.io/badge/Version-3.1-00FF00)]()
 [![Status](https://img.shields.io/badge/Status-PURE%20GREEN-00FF00)]()
 [![OS](https://img.shields.io/badge/Think%20Different-OS--3.1-7B68EE)]()
 
@@ -9,22 +9,22 @@
 
 ---
 
-## 📊 Estado del Sistema (v3.1 - 2026-05-03)
+## 📊 Estado del Sistema (v3.1 — Consequences — 2026-05-03)
 
-> 🟢 **PURE GREEN** - Pure Green - Estructura Consequences v3.1
+> 🟢 **PURE GREEN** - Auditoría completa aplicada — 8 fixes realizados
 
 | Métrica                                                 | Valor                                            |
 |---------------------------------------------------------|--------------------------------------------------|
 | **Overall Health**                                      | **100%** 🟢                                       |
-| **Skills**                                              | 299+ (12 áreas funcionales)                      |
-| **Rules**                                               | 10 (.mdc)                                        |
-| **MCPs**                                                | 33 Claude Code                                   |
-| **HUBs**                                                | 19 operativos (+ 4 auxiliares)                   |
-| **Agentes**                                             | 52+ (Dream Team + Specialists)                   |
+| **Skills**                                              | 299+ (11 áreas funcionales)                      |
+| **Rules**                                               | 11 (.mdc)                                        |
+| **MCPs**                                                | 38 Claude Code / 34 OpenCode                     |
+| **HUBs**                                                | 23 scripts operativos (+ 5 auxiliares)          |
+| **Agentes**                                             | 52+ (Dream Team + Specialists)                  |
 
 ---
 
-## 📂 Estructura del Sistema (v3.0 — Consequences)
+## 📂 Estructura del Sistema (v3.1 — Consequences)
 
 ```
 Think_Different/
@@ -119,7 +119,7 @@ Para la versión v1.1, hemos evolucionado hacia una organización por **Áreas M
 
 ---
 
-### HUBs v3.0 (19 HUBs)
+### HUBs v3.1 (23 scripts operativos)
 
 | Hub                                                | Script                                                      | Propósito                                                           |
 |----------------------------------------------------|-------------------------------------------------------------|---------------------------------------------------------------------|
@@ -132,20 +132,24 @@ Para la versión v1.1, hemos evolucionado hacia una organización por **Áreas M
 | **Tool**                                           | `06_Tool_Hub.py`                                            | Gestión de herramientas                                             |
 | **Integration**                                    | `07_Integration_Hub.py`                                     | Integraciones MCP                                                   |
 | **Workflow**                                       | `08_Workflow_Hub.py`                                        | Automatización de workflows                                         |
-| **Data**                                           | `09_Data_Hub.py`                                            | Procesamiento de datos                                              |
+| **Data**                                           | `09_Data_Hub.py`                                            | Procesamiento de datos                                             |
 | **General**                                        | `10_General_Hub.py`                                         | Utilidades generales                                                |
 | **Auto Learn**                                     | `11_Auto_Learn_Hub.py`                                      | Motor de automejora y aprendizaje                                   |
-| **Context Bar**                                    | `12_Context_Usage_Bar.py`                                   | Barra de uso de contexto                                            |
-| **Beautify Tables**                                | `13_Beautify_Tables.py`                                     | Formateo de tablas markdown                                         |
-| **Beauty Doc**                                     | `14_Beauty_Doc.py`                                          | Documentos embellecidos                                             |
-| **MCP Sync** ★                                     | `15_MCP_Sync_Hub.py`                                        | Sync drift Claude ↔ OpenCode (JARVIS 3.0)                           |
-| **Agent Sync**                                     | `15_Agent_Sync_Hub.py`                                      | Sincronización de agentes                                           |
-| **System Mapper** ★                                | `16_System_Mapper_Hub.py`                                   | Genera manifest JARVIS (JARVIS 3.0)                                 |
+| **Health Metrics**                                 | `14_Health_Metrics_Hub.py`                                  | Métricas de salud del OS                                           |
+| **MCP Sync** ★                                     | `15_MCP_Sync_Hub.py`                                        | Sync drift Claude ↔ OpenCode (JARVIS 3.1)                          |
 | **Agent Mirror**                                   | `16_Agent_Mirror_Hub.py`                                    | Mirror agentes source → backup                                      |
-| **Watchdog** ★                                     | `17_Watchdog_Hub.py`                                        | Health check automático (JARVIS 3.0)                                |
-| **Telemetry** ★                                    | `18_Telemetry_Hub.py`                                       | Dashboard de uso y métricas (JARVIS 3.0)                            |
+| **Watchdog** ★                                     | `17_Watchdog_Hub.py`                                        | Health check automático (JARVIS 3.1)                                |
+| **Telemetry** ★                                    | `18_Telemetry_Hub.py`                                       | Dashboard de métricas (JARVIS 3.1)                                 |
+| **Agent Sync**                                     | `19_Agent_Sync_Hub.py`                                      | Sync .agent ↔ 01_Core                                              |
+| **System Mapper** ★                                | `20_System_Mapper_Hub.py`                                   | Genera 7 manifests JARVIS (JARVIS 3.1)                            |
+| **Legacy Cleanup**                                 | `21_Legacy_Path_Cleanup.py`                                 | Limpia paths legacy v2.x                                            |
+| **Skill Frontmatter**                              | `22_Validate_Skill_Frontmatter.py`                          | Detecta skills sin frontmatter YAML                                |
+| **Parallel Audit Pro**                             | `33_Parallel_Audit_Pro.py`                                  | Auditoría paralela avanzada                                         |
+| **Skill Auditor**                                  | `34_Skill_Auditor.py`                                       | Auditoría específica de skills                                     |
+| **System Health Monitor**                          | `50_System_Health_Monitor.py`                               | Monitor de salud del sistema                                        |
+| **Repo Sync Auditor**                              | `57_Repo_Sync_Auditor.py`                                   | Auditor de sincronización de repos                                 |
 
-> ★ = HUB canónico JARVIS 3.0
+> ★ = HUB canónico JARVIS 3.1 | Total: 23 HUBs + 5 auxiliares = 28 scripts en `03_Scripts_Os/`
 
 ### Validators
 
@@ -154,23 +158,24 @@ Para la versión v1.1, hemos evolucionado hacia una organización por **Áreas M
 | **skill_validator.py**                                       | `01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/`      | Valida estructura SOTA                                   |
 | **skill_security_scan.py**                                   | `01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/`      | Escaneo de seguridad                                     |
 
-### MCPs (34 Claude Code / 34 OpenCode)
+### MCPs (38 Claude Code / 34 OpenCode)
 
 | Categoría                                          | Servidores                                                                                             |
 |----------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| 🔍 Search                                           | exa, brave-search*, stackoverflow                                                                      |
-| 🧠 Memory                                           | engram, aim-memory-bank, notebooklm                                                                    |
-| 📝 Notes                                            | mcp-obsidian, obsidian-api, Notion                                                                     |
-| 🌐 Browser                                          | Playwright, chrome-devtools, eagle-mcp                                                                 |
-| 🤖 AI & Code                                        | context7, zai-mcp-server, github, task-master-ai, @magicuidesign/mcp                                   |
+| 🔍 Search                                           | exa, brave-search, stackoverflow                                                                       |
+| 🧠 Memory                                           | engram, aim-memory-bank, notebooklm                                                                   |
+| 📝 Notes                                            | mcp-obsidian, obsidian-api, Notion                                                                      |
+| 🌐 Browser                                          | Playwright, chrome-devtools, eagle-mcp                                                                |
+| 🤖 AI & Code                                        | context7, zai-mcp-server, github, task-master-ai, @magicuidesign/mcp                                  |
 | 📊 Data                                             | supabase, Amplitude, supadata                                                                          |
-| 🔄 Workflow                                         | n8n-mcp, Linear                                                                                        |
+| 🔄 Workflow                                         | n8n-mcp, Linear                                                                                         |
 | 💬 Communication                                    | fireflies, google-workspace                                                                            |
 | 📐 Design                                           | excalidraw-yctimlin, pencil                                                                            |
 | 🛠️ DevOps                                          | docker, filesystem                                                                                     |
 | 🚀 Deploy                                           | vercel, recall, TestSprite                                                                             |
+| 🧩 Chain                                            | sequential-thinking, nanobanana                                                                        |
 
-> Drift: 0 — Todos sincronizados bidireccionalmente. Verificar con `15_MCP_Sync_Hub.py --report`.
+> **Drift: 0** — Todos sincronizados bidireccionalmente. Verificar con `15_MCP_Sync_Hub.py --report`.
 
 **Configs activas:**
 
