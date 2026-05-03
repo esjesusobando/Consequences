@@ -1,11 +1,10 @@
-# HUB Catalog — generated 2026-04-29T00:14:32
+# HUB Catalog — generated 2026-05-03T00:49:07
 
 version: v3.0
-generated: "2026-04-29T00:14:32"
+generated: "2026-05-03T00:49:07"
 base_path: 01_Personal_Os/04_Operations/03_Scripts_Os/
 totals:
-  hubs: 19
-  utilities: 2
+  hubs: 25
 hubs:
   - name: 00_Sound_Engine
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py
@@ -67,8 +66,18 @@ hubs:
   - name: 21_Legacy_Path_Cleanup
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/21_Legacy_Path_Cleanup.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/21_Legacy_Path_Cleanup.py
-    category: utility
   - name: 22_Validate_Skill_Frontmatter
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/22_Validate_Skill_Frontmatter.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/22_Validate_Skill_Frontmatter.py
-    category: utility
+  - name: 33_Parallel_Audit_Pro
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/33_Parallel_Audit_Pro.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/33_Parallel_Audit_Pro.py
+  - name: 34_Skill_Auditor
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/34_Skill_Auditor.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/34_Skill_Auditor.py
+  - name: 50_System_Health_Monitor
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/50_System_Health_Monitor.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/50_System_Health_Monitor.py
+  - name: 57_Repo_Sync_Auditor
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/57_Repo_Sync_Auditor.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/57_Repo_Sync_Auditor.py

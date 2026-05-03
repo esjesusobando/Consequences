@@ -1,10 +1,10 @@
 {
   "version": "v3.0",
-  "generated": "2026-04-29T00:14:32",
+  "generated": "2026-05-03T00:49:07",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
     "areas": 11,
-    "skills": 298,
+    "skills": 300,
     "without_frontmatter": 0
   },
   "by_area": {
@@ -349,7 +349,7 @@
       ]
     },
     "01_Creacion_Contenidos": {
-      "count": 37,
+      "count": 38,
       "skills": [
         {
           "name": "01_Brand_Voice",
@@ -524,6 +524,11 @@
         {
           "name": "13_Remotion_Best_Practices",
           "path": "01_Creacion_Contenidos/13_Remotion_Best_Practices/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "16_Carousel_Master",
+          "path": "01_Creacion_Contenidos/16_Carousel_Master/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -939,7 +944,7 @@
       ]
     },
     "06_Tools": {
-      "count": 77,
+      "count": 78,
       "skills": [
         {
           "name": "15_Skill_Creator_Oficial",
@@ -1294,6 +1299,11 @@
         {
           "name": "03_Resumen_Extractor",
           "path": "06_Tools/11_Doc_Processing/03_Resumen_Extractor/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "12_Qmd",
+          "path": "06_Tools/12_Qmd/SKILL.md",
           "has_frontmatter": true
         },
         {
