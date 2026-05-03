@@ -1,6 +1,6 @@
 # Plan de Implementación: Mapeo y Cleanup Sistémico (Scripts ↔ Skills)
 
-Este plan detalla la reubicación física de los scripts modulares dentro de sus carpetas de Habilidades (`01_Core/03_Skills/`), siguiendo el principio de **"Encapsulación SOTA"**.
+Este plan detalla la reubicación física de los scripts modulares dentro de sus carpetas de Habilidades (`01_Personal_Os/01_Core/02_Tools/02_Skills/`), siguiendo el principio de **"Encapsulación SOTA"**.
 
 ## Objetivo
 Reducir la carga cognitiva en `03_Scripts_Os`, centralizar la lógica operativa en las habilidades que la utilizan y asegurar que los HUBs orquestadores sigan funcionando sin fricción.

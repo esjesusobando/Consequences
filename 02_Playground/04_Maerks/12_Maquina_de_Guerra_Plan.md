@@ -16,7 +16,7 @@ Implementar los 10 gaps identificados desde los artículos de Anthropic Engineer
 ### FASE 1: FUNDAMENTOS VITALES (Esta Semana)
 
 #### 1.1 Auto Mode Security Classifier 🔴
-**Ubicación:** `.agent/02_Skills/14_Anthropic_Harness/04_Auto_Mode_Security/`
+**Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/04_Auto_Mode_Security/`
 
 **Archivos a crear:**
 ```
@@ -44,7 +44,7 @@ Implementar los 10 gaps identificados desde los artículos de Anthropic Engineer
 ---
 
 #### 1.2 Evaluator/Generator Separation ✅
-**Ya implementado en:** `.agent/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`
+**Ya implementado en:** `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`
 
 **Verificar que esté funcionando:**
 - El workflow 17_Anthropic_Harness tiene las 3 fases separadas
@@ -253,7 +253,7 @@ pipeline:
 ### FASE 4: EVALUATION FRAMEWORK (Este Mes)
 
 #### 4.1 Graders Framework 🟢
-**Ubicación:** `.agent/02_Skills/14_Anthropic_Harness/05_Graders_Framework/`
+**Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/05_Graders_Framework/`
 
 ```
 05_Graders_Framework/

@@ -65,7 +65,7 @@ La **especificación técnica definitiva** del sistema de Skills. Incluirá:
 
 ---
 
-#### [NEW] [SKILL_TEMPLATE/](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/03_Skills/SKILL_TEMPLATE/)
+#### [NEW] [SKILL_TEMPLATE/](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/SKILL_TEMPLATE/)
 
 Carpeta-template con la estructura modelo:
 
@@ -82,7 +82,7 @@ SKILL_TEMPLATE/
 └── README.md             ← Overview público (para humanos)
 ```
 
-#### [MODIFY] [03_Skills/README.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/03_Skills/README.md)
+#### [MODIFY] [03_Skills/README.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/README.md)
 
 - Añadir sección "Estructura SOTA v2.0 (Claude Code 2026)"
 - Documentar el flujo de creación: Template → Auditor → Integración
@@ -173,18 +173,18 @@ Scanner de ciberseguridad para scripts dentro de skills:
 
 #### [MODIFY] [.gga](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/.gga)
 
-- Añadir regla de pre-commit: "Si se modifica un archivo dentro de `01_Core/03_Skills/`, ejecutar `skill_validator.py` sobre la skill modificada"
+- Añadir regla de pre-commit: "Si se modifica un archivo dentro de `01_Personal_Os/01_Core/02_Tools/02_Skills/`, ejecutar `skill_validator.py` sobre la skill modificada"
 - Bloquear commit si la skill tiene score < 50% (FAILED)
 
 #### [NEW] [.github/workflows/skill-validation.yml](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/.github/workflows/skill-validation.yml) *(Opcional)*
 
-GitHub Action que ejecuta la validación de skills en cada PR que toque `01_Core/03_Skills/`:
+GitHub Action que ejecuta la validación de skills en cada PR que toque `01_Personal_Os/01_Core/02_Tools/02_Skills/`:
 
 ```yaml
 name: Skill Validation
 on:
   pull_request:
-    paths: ['01_Core/03_Skills/**']
+    paths: ['01_Personal_Os/01_Core/02_Tools/02_Skills/**']
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -213,7 +213,7 @@ Test E2E que simula el ciclo de vida completo de una skill:
 3. AUDITAR: Ejecutar skill_security_scan.py → Debe pasar sin CRITICAL
 4. EDITAR: Inyectar un defecto (rm -rf en script) → Debe FALLAR
 5. CORREGIR: Remover el defecto → Debe PASAR de nuevo
-6. INTEGRAR: Mover a 01_Core/03_Skills/ → Verificar que el Auditor lo detecta
+6. INTEGRAR: Mover a 01_Personal_Os/01_Core/02_Tools/02_Skills/ → Verificar que el Auditor lo detecta
 7. LIMPIAR: Eliminar la skill de prueba
 ```
 
@@ -284,7 +284,7 @@ Test E2E que simula el ciclo de vida completo de una skill:
 ### Automated Tests (skill_validator.py)
 ```bash
 # Validar una skill individual
-python 03_Scripts_Os/Validator_Fixed/skill_validator.py --path 01_Core/03_Skills/00_Skill_Auditor
+python 03_Scripts_Os/Validator_Fixed/skill_validator.py --path 01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor
 
 # Validar todas las skills
 python 03_Scripts_Os/Validator_Fixed/skill_validator.py --all

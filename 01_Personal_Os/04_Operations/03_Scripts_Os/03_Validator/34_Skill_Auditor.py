@@ -15,7 +15,7 @@ from config_paths import *
 
 """
 SKILL AUDITOR & FIXER
-Audita la estructura de 01_Core/03_Skills y corrige la numeración.
+Audita la estructura de 01_Personal_Os/01_Core/02_Tools/02_Skills y corrige la numeración.
 """
 
 import os

@@ -12,7 +12,7 @@ Este plan describe la migración formal y activación de la suite **Hillary Life
 
 ### 01_Core (Fuente de Verdad)
 
-#### [NEW] [SKILL.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/03_Skills/18_Personal_Life_OS/SKILL.md)
+#### [NEW] [SKILL.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/SKILL.md)
 - Instrucciones operativas para el modelo sobre cómo usar los 5 módulos (Quick Capture, Plan My Day, Daily Notes, Recording Mode, Returns Tracker).
 
 #### [NEW] [11_Hillary.md](file:///c:/Users/sebas/Downloads/01/Revisar/09/Versiones/00/Respaldo/PC/Sebas/01/Github/personal-os/Think_Different/01_Core/04_Agents/11_Hillary.md)

@@ -144,7 +144,7 @@ def evaluate_action(tool_name, tool_input):
 ## Referencias
 
 - Artículo: `01_Core/02_Knowledge_Brain/13_Anthropic_Engineering_01_07.md` (Post 2)
-- Scripts: `.agent/02_Skills/14_Anthropic_Harness/04_Auto_Mode_Security/`
+- Scripts: `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/04_Auto_Mode_Security/`
 
 ---
 

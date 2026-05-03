@@ -54,8 +54,8 @@ Convertir PersonalOS en un **JARVIS** — un sistema operativo donde:
 
 | Path Obsoleto          | Nuevo Path                                      | Estado                         |
 |------------------------|-------------------------------------------------|--------------------------------|
-| `01_Core/03_Skills/`   | `01_Personal_Os/01_Core/02_Tools/02_Skills/`    | ✅ CORREGIDO                    |
-| `.agent/02_Skills/`    | `01_Personal_Os/01_Core/02_Tools/02_Skills/`    | ⚠️ Documentación actualizada   |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/`   | `01_Personal_Os/01_Core/02_Tools/02_Skills/`    | ✅ CORREGIDO                    |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/`    | `01_Personal_Os/01_Core/02_Tools/02_Skills/`    | ⚠️ Documentación actualizada   |
 | `03_Scripts_Os/`       | `01_Personal_Os/04_Operations/03_Scripts_Os/`   | ✅ CORREGIDO en plugin.json     |
 
 ### Archivos Actualizados
@@ -104,7 +104,7 @@ Convertir PersonalOS en un **JARVIS** — un sistema operativo donde:
 1. **MCP DRIFT** — Claude Code (33) vs OpenCode (18) → 16 MCPs faltan en OpenCode.
 2. **453+ refs legacy v1.x rastreros**:
    - 223 archivos con `03_Scripts_Os/`
-   - 230 archivos con `01_Core/03_Skills/`
+   - 230 archivos con `01_Personal_Os/01_Core/02_Tools/02_Skills/`
    - 34 archivos con `06_Playground/`
 3. **SPOF crítico** — `config_paths.py` tiene **207 scripts dependientes**. Sin backup automático.
 4. **Agentes ciegos** — 50/52 agentes (96%) NO saben que existen los 14 HUBs.

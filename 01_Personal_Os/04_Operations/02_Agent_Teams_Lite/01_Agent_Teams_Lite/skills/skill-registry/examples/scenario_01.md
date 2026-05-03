@@ -8,7 +8,7 @@ Nueva skill creada → "Actualicemos el registry"
 
 ```
 1. Escanear directorio:
-   - 01_Core/03_Skills/
+   - 01_Personal_Os/01_Core/02_Tools/02_Skills/
    
 2. Extraer metadata:
    - Parsear SKILL.md frontmatter
@@ -35,7 +35,7 @@ registry:
       description: Inicializa contexto SDD
       
     - name: react-19
-      path: 01_Core/03_Skills/gentleman/02_Work/01_React_19
+      path: 01_Personal_Os/01_Core/02_Tools/02_Skills/gentleman/02_Work/01_React_19
       category: 1
       tags: [react, frontend]
       triggers: ["react 19", "react compiler"]

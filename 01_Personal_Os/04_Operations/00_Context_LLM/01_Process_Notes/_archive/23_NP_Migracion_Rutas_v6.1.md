@@ -26,7 +26,7 @@ Se está actualizando todas las referencias a carpetas obsoletas en el PersonalO
 | Carpeta                                          | Estado                    | Rutas                   |
 |--------------------------------------------------|---------------------------|-------------------------|
 | `01_Core/03_Agents/`                             | Parcial                   | ~30                     |
-| `01_Core/03_Skills/`                             | Pendiente                 | ~600                    |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/`                             | Pendiente                 | ~600                    |
 | `01_Core/05_Mcp/`                                | Pendiente                 | ~10                     |
 | `01_Core/01_Inventario_Total.md`                 | Pendiente                 | ~20                     |
 

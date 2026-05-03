@@ -31,7 +31,7 @@ Skill para extraer conocimiento estructurado de YouTube/GitHub y actualizar el P
 PAN COMPLETO - Video_Intel Skill
 Guardé el plan en Engram con topic_key: unicorn/video-intel-skill.
 Estructura basada en Skill_Auditor:
-01_Core/03_Skills/XX_Video_Intel/
+01_Personal_Os/01_Core/02_Tools/02_Skills/XX_Video_Intel/
 ├── SKILL.md                    # < 200 líneas
 ├── scripts/
 │   ├── video_analyzer.py       # Core: extracción + análisis

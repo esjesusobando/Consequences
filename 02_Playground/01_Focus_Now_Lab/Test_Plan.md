@@ -25,7 +25,7 @@
 |---------------------|----------------------------------------------|---------------------------------------------------------------------|--------------------------|
 | 1                   | 5 perfiles de negocio                        | `.agent/01_Agents/Perfiles/`                                        | ✅                        |
 | 2                   | Scripts Anthropic Harness                    | `04_Operations/03_Scripts_Os/11_Anthropic_Harness/`                 | ✅                        |
-| 3                   | Skills Anthropic                             | `.agent/02_Skills/14_Anthropic_Harness/`                            | ✅                        |
+| 3                   | Skills Anthropic                             | `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/`                            | ✅                        |
 | 4                   | Workflow Anthropic                           | `.agent/03_Workflows/17_Anthropic_Harness.md`                       | ✅                        |
 | 5                   | Hooks Harness                                | `.agent/04_Extensions/hooks/05_Harness/`                            | ✅                        |
 | 6                   | Documento artículo Anthropic                 | `10_Anthropic_Harness_Design.md`                                    | ✅                        |
@@ -65,7 +65,7 @@ Separar el agente que HACE el trabajo del agente que EVALÚA el trabajo. El gene
 - Un generador NUNCA debe evaluarse a sí mismo — siempre será parcial
 - Tuning un evaluador externo es mucho más fácil que hacer un generador autocrítico
 
-**En nuestro OS:** Ya está en `.agent/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/` ✅
+**En nuestro OS:** Ya está en `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/` ✅
 
 ---
 

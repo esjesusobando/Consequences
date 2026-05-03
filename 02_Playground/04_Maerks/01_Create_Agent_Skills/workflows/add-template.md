@@ -24,7 +24,7 @@ If not a good fit, suggest alternatives (workflow guidance, reference examples).
 ## Step 3: Create Templates Directory
 
 ```bash
-mkdir -p ~/01_Core/03_Skills/{skill-name}/templates
+mkdir -p ~/01_Personal_Os/01_Core/02_Tools/02_Skills/{skill-name}/templates
 ```
 
 ## Step 4: Design Template Structure

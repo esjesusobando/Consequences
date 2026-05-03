@@ -174,7 +174,7 @@ After each task completion, save to Engram:
 |---------------------------|------------------------------------------------|
 | `.agent/00_Rules/`        | `01_Core/01_Rules/`                            |
 | `.agent/01_Agents/`       | `01_Core/04_Agents/`                           |
-| `.agent/02_Skills/`       | `01_Personal_Os/01_Core/02_Tools/02_Skills/`   |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/`       | `01_Personal_Os/01_Core/02_Tools/02_Skills/`   |
 | `.agent/03_Workflows/`    | `01_Core/00_Workflows/`                        |
 
 **Última sincronización:** 2026-04-18 (v1.0)

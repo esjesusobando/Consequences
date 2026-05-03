@@ -45,9 +45,9 @@ Este documento integra el diagnóstico profundo del sistema más las metodologí
 
 | #               | Metodología                   | Ubicación                                       | Estado                |
 |-----------------|-------------------------------|-------------------------------------------------|-----------------------|
-| 4               | **OCTOPUS**                   | `01_Core/03_Skills/25_Octopus/`                 | ✅ CREADO              |
-| 5               | **4 FANTÁSTICOS**             | `01_Core/03_Skills/26_Fantasticos/`             | ✅ CREADO              |
-| 6               | **QMD**                       | `01_Core/03_Skills/27_Qmd/`                     | ✅ CREADO              |
+| 4               | **OCTOPUS**                   | `01_Personal_Os/01_Core/02_Tools/02_Skills/25_Octopus/`                 | ✅ CREADO              |
+| 5               | **4 FANTÁSTICOS**             | `01_Personal_Os/01_Core/02_Tools/02_Skills/26_Fantasticos/`             | ✅ CREADO              |
+| 6               | **QMD**                       | `01_Personal_Os/01_Core/02_Tools/02_Skills/27_Qmd/`                     | ✅ CREADO              |
 
 ---
 

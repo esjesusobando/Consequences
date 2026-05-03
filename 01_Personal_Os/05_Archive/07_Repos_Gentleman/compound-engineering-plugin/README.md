@@ -264,7 +264,7 @@ bunx @every-env/compound-plugin sync --target all
 ```
 
 This syncs:
-- Personal skills from `~/01_Core/03_Skills/` (as symlinks)
+- Personal skills from `~/01_Personal_Os/01_Core/02_Tools/02_Skills/` (as symlinks)
 - Personal slash commands from `~/.claude/commands/` (as provider-native prompts, workflows, or converted skills where supported)
 - MCP servers from `~/.claude/settings.json`
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 55_Sync_Skills.py - Armor Layer Protected
-Sync .agent/02_Skills/ → .cursor/02_Skills/
+Sync 01_Personal_Os/01_Core/02_Tools/02_Skills/ → .cursor/02_Skills/
 
 Unidirectional sync: .agent/ is the Source of Truth.
 .cursor/ is a mirror that gets updated from .agent/.

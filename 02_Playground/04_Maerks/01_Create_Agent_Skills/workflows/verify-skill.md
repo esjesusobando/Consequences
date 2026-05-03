@@ -15,7 +15,7 @@ Skills contain claims about external things: APIs, CLI tools, frameworks, servic
 ## Step 1: Select the Skill
 
 ```bash
-ls ~/01_Core/03_Skills/
+ls ~/01_Personal_Os/01_Core/02_Tools/02_Skills/
 ```
 
 Present numbered list, ask: "Which skill should I verify for accuracy?"
@@ -24,9 +24,9 @@ Present numbered list, ask: "Which skill should I verify for accuracy?"
 
 Read the entire skill (SKILL.md + workflows/ + references/):
 ```bash
-cat ~/01_Core/03_Skills/{skill-name}/SKILL.md
-cat ~/01_Core/03_Skills/{skill-name}/workflows/*.md 2>/dev/null
-cat ~/01_Core/03_Skills/{skill-name}/references/*.md 2>/dev/null
+cat ~/01_Personal_Os/01_Core/02_Tools/02_Skills/{skill-name}/SKILL.md
+cat ~/01_Personal_Os/01_Core/02_Tools/02_Skills/{skill-name}/workflows/*.md 2>/dev/null
+cat ~/01_Personal_Os/01_Core/02_Tools/02_Skills/{skill-name}/references/*.md 2>/dev/null
 ```
 
 Categorize by primary dependency type:

@@ -78,7 +78,7 @@
 
 ---
 
-### 1.5 Path: `01_Core/03_Skills` (Should be `.agent/` or `01_Core/03_Skills/`)
+### 1.5 Path: `01_Core/03_Skills` (Should be `.agent/` or `01_Personal_Os/01_Core/02_Tools/02_Skills/`)
 
 | Metric                            | Value                                                      |
 |-----------------------------------|------------------------------------------------------------|
@@ -86,10 +86,10 @@
 | **Status**                        | ❌ CRITICAL - Old OpenCode/Cody skills path                 |
 
 **Common References:**
-- `01_Core/03_Skills/mcp-client/` → Should be in skills registry
-- `01_Core/03_Skills/fork-terminal/` → Needs migration
-- `01_Core/03_Skills/pptx-generator/` → Needs migration
-- Legacy backup skills in `.agent/02_Skills/` and `.agent/10_Backup/`
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/mcp-client/` → Should be in skills registry
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/fork-terminal/` → Needs migration
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/pptx-generator/` → Needs migration
+- Legacy backup skills in `01_Personal_Os/01_Core/02_Tools/02_Skills/` and `.agent/10_Backup/`
 
 ---
 
@@ -158,7 +158,7 @@
 
 | Directory                        | Expected Path                                        | Status                   |
 |----------------------------------|------------------------------------------------------|--------------------------|
-| Skills                           | `01_Core/03_Skills/`                                 | ✅ EXISTS                 |
+| Skills                           | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                                 | ✅ EXISTS                 |
 | Auto-Improvement                 | `04_Operations/01_Auto_Improvement/`                 | ✅ EXISTS                 |
 | Scripts OS                       | `03_Scripts_Os/`                                     | ✅ EXISTS                 |
 | Tasks                            | `03_Tasks/`                                          | ✅ EXISTS                 |
@@ -192,7 +192,7 @@ Output:
 2. **Skills Path Fragmentation: `01_Core/03_Skills`**
    - 881 references to old skills location
    - Risk: Skills not loading, broken tool references
-   - Recommendation: Migrate to `01_Core/03_Skills/`
+   - Recommendation: Migrate to `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
 ### ⚠️ MEDIUM ISSUES
 

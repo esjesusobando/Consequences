@@ -34,8 +34,8 @@ Actualización documentación de SKILL.md únicamente. Los scripts ya implementa
 
 | Area                                                                       | Impact                   | Description                                  |
 |----------------------------------------------------------------------------|--------------------------|----------------------------------------------|
-| `01_Core/03_Skills/19_Video_Intel/SKILL.md`                                | Modified                 | Actualización de documentación               |
-| `01_Core/03_Skills/19_Video_Intel/scripts/video_registry.py`               | Documented               | Aclarar propósito                            |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/SKILL.md`                                | Modified                 | Actualización de documentación               |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/scripts/video_registry.py`               | Documented               | Aclarar propósito                            |
 | `02_Knowledge/05_Unicorn/`                                                 | Referenced               | Destino de migración                         |
 
 ## Risks

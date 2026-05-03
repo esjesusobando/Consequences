@@ -60,7 +60,7 @@ cd n8n-skills
 **macOS/Linux**:
 ```bash
 mkdir -p ~/01_Core/03_Skills
-cp -r skills/* ~/01_Core/03_Skills/
+cp -r skills/* ~/01_Personal_Os/01_Core/02_Tools/02_Skills/
 ```
 
 **Windows**:
@@ -71,7 +71,7 @@ Copy-Item -Recurse skills\* "$env:USERPROFILE\.claude\skills\"
 
 **Step 3**: Verify installation
 ```bash
-ls ~/01_Core/03_Skills/
+ls ~/01_Personal_Os/01_Core/02_Tools/02_Skills/
 # Should show: n8n-expression-syntax, n8n-mcp-tools-expert, etc.
 ```
 
@@ -208,7 +208,7 @@ Expected: All 5 skills should activate and work together.
 
 **Solutions**:
 1. Verify skills are in correct directory:
-   - Claude Code: `~/01_Core/03_Skills/`
+   - Claude Code: `~/01_Personal_Os/01_Core/02_Tools/02_Skills/`
    - Check each skill has `SKILL.md` with frontmatter
 
 2. Check SKILL.md frontmatter format:
@@ -260,7 +260,7 @@ chmod -R 755 ~/01_Core/03_Skills
 
 **Claude Code**:
 ```bash
-rm -rf ~/01_Core/03_Skills/n8n-*
+rm -rf ~/01_Personal_Os/01_Core/02_Tools/02_Skills/n8n-*
 ```
 
 **Claude.ai**:
@@ -270,7 +270,7 @@ rm -rf ~/01_Core/03_Skills/n8n-*
 ### Remove Specific Skill
 
 ```bash
-rm -rf ~/01_Core/03_Skills/n8n-expression-syntax
+rm -rf ~/01_Personal_Os/01_Core/02_Tools/02_Skills/n8n-expression-syntax
 ```
 
 ---
@@ -282,13 +282,13 @@ rm -rf ~/01_Core/03_Skills/n8n-expression-syntax
 ```bash
 cd n8n-skills
 git pull origin main
-cp -r skills/* ~/01_Core/03_Skills/
+cp -r skills/* ~/01_Personal_Os/01_Core/02_Tools/02_Skills/
 ```
 
 ### Update Single Skill
 
 ```bash
-cp -r skills/n8n-expression-syntax ~/01_Core/03_Skills/
+cp -r skills/n8n-expression-syntax ~/01_Personal_Os/01_Core/02_Tools/02_Skills/
 ```
 
 ---
@@ -313,8 +313,8 @@ Install only specific skills:
 
 ```bash
 # Only expression syntax and MCP tools expert
-cp -r skills/n8n-expression-syntax ~/01_Core/03_Skills/
-cp -r skills/n8n-mcp-tools-expert ~/01_Core/03_Skills/
+cp -r skills/n8n-expression-syntax ~/01_Personal_Os/01_Core/02_Tools/02_Skills/
+cp -r skills/n8n-mcp-tools-expert ~/01_Personal_Os/01_Core/02_Tools/02_Skills/
 ```
 
 ---

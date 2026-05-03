@@ -4,7 +4,8 @@ version: v3.0
 generated: "2026-04-29T00:14:32"
 base_path: 01_Personal_Os/04_Operations/03_Scripts_Os/
 totals:
-  hubs: 21
+  hubs: 19
+  utilities: 2
 hubs:
   - name: 00_Sound_Engine
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py
@@ -66,6 +67,8 @@ hubs:
   - name: 21_Legacy_Path_Cleanup
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/21_Legacy_Path_Cleanup.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/21_Legacy_Path_Cleanup.py
+    category: utility
   - name: 22_Validate_Skill_Frontmatter
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/22_Validate_Skill_Frontmatter.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/22_Validate_Skill_Frontmatter.py
+    category: utility

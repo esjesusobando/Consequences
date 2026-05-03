@@ -22,7 +22,7 @@ tags: [audit, mcp, opencode, hillary, gentleman, structural-fix]
 - SIEMPRE actualizar ambos (activo + backup) al modificar MCPs
 
 ### Hillary Life OS en Produccion
-- Path: 01_Core/03_Skills/18_Personal_Life_OS/
+- Path: 01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/
 - Playground preservado como referencia en 06_Playground/Hillary_Life_OS/
 - Workflow orquestador en 01_Core/00_Workflows/24_Hillary_Life_OS.md
 

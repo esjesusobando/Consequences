@@ -34,15 +34,15 @@ Verification completed. The Video_Intel skill implementation is **COMPLETE** and
 
 | File | Status | Notes |
 |------|--------|-------|
-| `01_Core/03_Skills/19_Video_Intel/SKILL.md` | ✅ Created | Main skill definition with triggers |
-| `01_Core/03_Skills/19_Video_Intel/video_analyzer.py` | ✅ Created | yt-dlp + whisper transcription |
-| `01_Core/03_Skills/19_Video_Intel/repo_scanner.py` | ✅ Created | git clone + AST parsing |
-| `01_Core/03_Skills/19_Video_Intel/synthesis_engine.py` | ✅ Created | Plan generation + OS verification |
-| `01_Core/03_Skills/19_Video_Intel/cli.py` | ✅ Created | Click-based CLI entry point |
-| `01_Core/03_Skills/19_Video_Intel/__init__.py` | ✅ Created | Package init |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/SKILL.md` | ✅ Created | Main skill definition with triggers |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/video_analyzer.py` | ✅ Created | yt-dlp + whisper transcription |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/repo_scanner.py` | ✅ Created | git clone + AST parsing |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/synthesis_engine.py` | ✅ Created | Plan generation + OS verification |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/cli.py` | ✅ Created | Click-based CLI entry point |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/__init__.py` | ✅ Created | Package init |
 | `requirements.txt` | ✅ Created | Dependencies: yt-dlp, whisper, click, astor, tiktoken |
 
-**Location Note:** Design specified `.agent/03_Skills/00_Video_Intel/` but actual implementation is in `01_Core/03_Skills/19_Video_Intel/`. This is the correct location per PersonalOS structure.
+**Location Note:** Design specified `.agent/03_Skills/00_Video_Intel/` but actual implementation is in `01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/`. This is the correct location per PersonalOS structure.
 
 ---
 

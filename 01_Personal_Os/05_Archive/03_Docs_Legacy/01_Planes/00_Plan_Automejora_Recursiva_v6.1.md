@@ -991,7 +991,7 @@ AHORRO: 13h/mes = 156h/año = 6.5 días/año
 
 ### Documentación Relacionada
 - `00_Winter_is_Coming/GOALS.md` - Objetivos estratégicos
-- `01_Core/03_Skills/08_Personal_Os/02_System_Guardian/SKILL.md` - System Guardian
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/02_System_Guardian/SKILL.md` - System Guardian
 - `Maerks/18_Gap_Analysis_v5.2_to_v6.1.md` - Gap Analysis
 
 ---

@@ -1,7 +1,7 @@
 # 📝 SOP Prompt: 02_Evals
 
 > **Carpeta destino:** `01_Core/02_Evals/`
-> **Complementa:** `Maerks/00_Test_Anthropic_Harness/`, `01_Core/03_Skills/14_Anthropic_Harness/`
+> **Complementa:** `Maerks/00_Test_Anthropic_Harness/`, `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/`
 
 ---
 
@@ -67,8 +67,8 @@ type: [AGENT|WORKFLOW|SYSTEM]
 | [Métrica 2]                 | [valor]                  | [valor]                  |
 
 ## 🔧 Herramientas de Evaluación
-- Usar: `01_Core/03_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`
-- Para comparaciones: `01_Core/03_Skills/14_Anthropic_Harness/05_Pass_At_Metrics/`
+- Usar: `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`
+- Para comparaciones: `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/05_Pass_At_Metrics/`
 
 ## 📈 Resultados
 
@@ -84,9 +84,9 @@ type: [AGENT|WORKFLOW|SYSTEM]
 ## 🛠️ Integración con Anthropic Harness
 
 ### Patterns SOTA a Usar
-- **Evaluator Pattern:** `01_Core/03_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`
-- **Pass@K Metrics:** `01_Core/03_Skills/14_Anthropic_Harness/05_Pass_At_Metrics/`
-- **Context Management:** `01_Core/03_Skills/14_Anthropic_Harness/02_Context_Management/`
+- **Evaluator Pattern:** `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`
+- **Pass@K Metrics:** `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/05_Pass_At_Metrics/`
+- **Context Management:** `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/02_Context_Management/`
 
 ### Framework de Evaluación
 1. **Generator** → Produce output

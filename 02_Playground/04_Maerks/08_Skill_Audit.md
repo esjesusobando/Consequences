@@ -43,10 +43,10 @@
 
 ```bash
 # Auditar todas las skills
-python 01_Core/03_Skills/00_Skill_Auditor/scripts/audit-skills.py
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/scripts/audit-skills.py
 
 # Loop automático hasta 100%
-python 01_Core/03_Skills/00_Skill_Auditor/scripts/audit-loop.py
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/scripts/audit-loop.py
 ```
 
 ---

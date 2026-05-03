@@ -1,7 +1,7 @@
 # 📝 SOP Prompt: 03_Skills
 
-> **Carpeta destino:** `01_Core/03_Skills/` (FUENTE DE VERDAD)
-> **Complementa:** `.agent/02_Skills/`, `Maerks/06_Skill_Audit.md`, `Maerks/08_Skill_Audit.md`
+> **Carpeta destino:** `01_Personal_Os/01_Core/02_Tools/02_Skills/` (FUENTE DE VERDAD)
+> **Complementa:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`, `Maerks/06_Skill_Audit.md`, `Maerks/08_Skill_Audit.md`
 
 ---
 
@@ -19,11 +19,11 @@ Eres un Creador de Skills Expert. Crea una skill completa para PersonalOS.
 ## 📍 Contexto del Proyecto
 - **Nombre de la skill:** [NOMBRE_DE_LA_SKILL]
 - **Categoría:** [Vibe_Coding/Testing/DevOps/Marketing/Agent_Teams_Lite/etc.]
-- **Carpeta destino:** `01_Core/03_Skills/[CATEGORIA]/[SUBCATEGORIA]/`
+- **Carpeta destino:** `01_Personal_Os/01_Core/02_Tools/02_Skills/[CATEGORIA]/[SUBCATEGORIA]/`
 
 ## ⚠️ IMPORTANTE: Fuente de Verdad
-- **Skills activas:** `01_Core/03_Skills/`
-- **Alias en .agent:** `.agent/02_Skills/` (sincronizado)
+- **Skills activas:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+- **Alias en .agent:** `01_Personal_Os/01_Core/02_Tools/02_Skills/` (sincronizado)
 - **Skill Auditor:** `Maerks/06_Skill_Audit.md` y `Maerks/08_Skill_Audit.md`
 
 ## 📝 Estructura Requerida
@@ -80,7 +80,7 @@ harness_pattern: [planner, generator, evaluator]
 ## 🛠️ Implementación
 
 ### Dependencias
-- **Skills relacionadas:** `01_Core/03_Skills/[otra_skill]/`
+- **Skills relacionadas:** `01_Personal_Os/01_Core/02_Tools/02_Skills/[otra_skill]/`
 - **Scripts:** `[ruta a scripts si aplica]`
 - **Requirements:** `[requirements.txt si tiene]`
 
@@ -110,14 +110,14 @@ harness_pattern: [planner, generator, evaluator]
 ## 🛠️ Integración con Skills Existentes
 
 ### Skills Fundamentales
-- `01_Core/03_Skills/00_Compound_Engineering/` - Para compound engineering
-- `01_Core/03_Skills/01_Agent_Teams_Lite/` - Para agent teams
-- `01_Core/03_Skills/14_Anthropic_Harness/` - Para evaluation
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/` - Para compound engineering
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/` - Para agent teams
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/` - Para evaluation
 
 ### Validación de Esencia
 Antes de crear, verificar con:
 - `Maerks/06_Skill_Audit.md` - Auditor de skills
-- `01_Core/03_Skills/00_Skill_Auditor/` - Skill Auditor
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/` - Skill Auditor
 
 ## ⚡ Best Practices SOTA
 

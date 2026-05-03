@@ -33,7 +33,7 @@ Initial implementation: CLI-based with modular functions for easy integration in
 
 | Area                              | Impact                 | Description                                         |
 |-----------------------------------|------------------------|-----------------------------------------------------|
-| `.agent/02_Skills/`               | New                    | Create `Video_Intel/` skill directory               |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/`               | New                    | Create `Video_Intel/` skill directory               |
 | `skills/`                         | New                    | Core analysis scripts                               |
 
 ## Risks
@@ -46,7 +46,7 @@ Initial implementation: CLI-based with modular functions for easy integration in
 
 ## Rollback Plan
 
-- Remove `.agent/02_Skills/Video_Intel/` directory
+- Remove `01_Personal_Os/01_Core/02_Tools/02_Skills/Video_Intel/` directory
 - Delete any cached transcription files
 - No database or persistent state changes required
 

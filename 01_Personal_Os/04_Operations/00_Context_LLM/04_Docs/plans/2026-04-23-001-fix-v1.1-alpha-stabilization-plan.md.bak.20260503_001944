@@ -1,0 +1,192 @@
+---
+title: "fix: Complete v1.1 Alpha System Stabilization"
+type: fix
+status: completed
+date: 2026-04-23
+deepened: 2026-04-23
+---
+
+# Fix: Complete v1.1 Alpha System Stabilization
+
+## Overview
+
+Completar la estabilización del sistema PersonalOS Think Different v1.1 Alpha. Los auditores principales ya fueron actualizados y commitados (commit `0d0ca6a`), pero quedan issues residuales que necesitan resolverse para alcanzar **Pure Green State**.
+
+## Problem Frame
+
+El sistema fue migrado a v1.1 Alpha con:
+- 10 rules consolidadas (antes 25)
+- 25 categorías de skills con SKILL.md en subcarpetas (no en raíz)
+- 33 MCPs configurados
+- 12 HUBs
+
+Sin embargo, quedan **issues residuales** que impiden Pure Green:
+1. El auditor SOTA busca Design SOTA en path inexistente (`10_Design_SOTA/`)
+2. Carpeta `00_Gcierr` sin SKILL.md (válido — tiene archivos de referencia)
+3. Carpeta `09_Legacy_Archive` sin SKILL.md (válido — es archive)
+4. BACKLOG.md desactualizado (muestra items de versión anterior)
+5. Git working tree sucio con ~150+ archivos deleted sin commitear
+
+## Requirements Trace
+
+- R1. Sistema debe pasar SOTA Integrity Check 9/9 sin warnings
+- R2. BACKLOG.md debe reflejar estado actual v1.1 Alpha
+- R3. Git working tree limpio o cambios staged para commit
+- R4. Engram debe tener sesión actual guardada
+
+## Scope Boundaries
+
+- **No** reescribir skills existentes (ya están bien estructuradas)
+- **No** modificar paths de skills (son fuentes de verdad)
+- **No** crear nueva documentación (ya está feita)
+
+## Context & Research
+
+### Estado Actual
+
+| Componente                             | Estado                    | Detalle                           |
+|----------------------------------------|---------------------------|-----------------------------------|
+| `.mcp.json`                            | ✅ JSON válido             | Backslashes escapados             |
+| `AGENTS.md`                            | ✅ v1.1 Alpha              | Header actualizado                |
+| `15_SOTA_Integrity_Check.py`           | ✅ 9/9 PASSED              | Benchmarks corregidos             |
+| `33_Parallel_Audit_Pro.py`             | ✅ Actualizado             | v6.2 → v1.1 Alpha                 |
+| `80_Edge_Case_Validator.py`            | ✅ Fixed                   | REQUIRED_DIRS corregido           |
+| Engram                                 | ✅ #734 guardada           | 650 sessions, 733 obs             |
+
+### Issues Residuales
+
+1. **SOTA Check WARN**: Design SOTA no encontrado en `10_Design_SOTA/`
+   - El path correcto es: `01_Core/03_Skills/02_Diseno_Ui_Ux/08_Design_Sota/SKILL.md`
+   - La carpeta `08_Design_Sota/` existe y tiene SKILL.md
+
+2. **00_Gcierr** - Sin SKILL.md
+   - Tiene archivos de referencia (brand, diagrams, etc.)
+   - Es una categoría de transición/legado
+
+3. **09_Legacy_Archive** - Sin SKILL.md
+   - Solo contiene `01_Backup/`
+   - Es archive, no una categoría activa
+
+4. **BACKLOG.md** - Desactualizado
+   - Muestra versión "v7" cuando el sistema es v1.1 Alpha
+   - Items P1 de versión anterior
+
+## Key Technical Decisions
+
+- **Decision 1**: Actualizar el path de Design SOTA en `15_SOTA_Integrity_Check.py` para buscar en `08_Design_Sota/` en lugar de `10_Design_SOTA/`
+- **Decision 2**: Marcar `00_Gcierr` y `09_Legacy_Archive` como categorías "special case" en el auditor (no deben tener SKILL.md necesariamente)
+- **Decision 3**: Limpiar BACKLOG.md y actualizar a estado actual
+- **Decision 4**: Decidir si hacer cleanup de git (commits pendientes) o dejarlos staged
+
+## Open Questions
+
+### Resolved During Planning
+
+- **Design SOTA path**: Existe en `08_Design_Sota/`, no en `10_Design_SOTA/` — se actualiza el auditor
+
+### Deferred to Implementation
+
+- **Git cleanup**: ¿Limpiar los ~150 deleted files en git status o dejarlos? Requiere decisión del usuario
+- **00_Gcierr**: ¿Crear un SKILL.md de "referencia" o dejarlo como categoría especial?
+
+## Implementation Units
+
+- [ ] **Unit 1: Fix Design SOTA path in SOTA Integrity Check**
+
+**Goal:** El auditor debe buscar Design SOTA donde existe (`08_Design_Sota/`), no en path inexistente
+
+**Requirements:** R1
+
+**Dependencies:** Ninguno
+
+**Files:**
+- Modify: `03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA_Integrity_Check.py`
+
+**Approach:**
+- Cambiar el path hardcoded de `10_Design_SOTA` a `08_Design_Sota` en la función `check_methodologies()`
+
+**Patterns to follow:**
+- Seguir el patrón de verificación de paths con `path.exists()` y warnings en lugar de errors
+
+**Test scenarios:**
+- SOTA Integrity Check muestra [OK] para Design SOTA en lugar de [WARN]
+
+**Verification:**
+- `python 03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA_Integrity_Check.py` muestra 9/9 PASSED sin warnings
+
+---
+
+- [ ] **Unit 2: Update BACKLOG.md to v1.1 Alpha state**
+
+**Goal:** Limpiar y actualizar el BACKLOG.md para reflejar el estado actual
+
+**Requirements:** R3
+
+**Dependencies:** Ninguno
+
+**Files:**
+- Modify: `00_Winter_is_Coming/BACKLOG.md`
+
+**Approach:**
+- Actualizar header a v1.1 Alpha
+- Limpiar items completados
+- Agregar items pendientes de esta sesión
+- Mantener estructura P0/P1/P2/P3
+
+**Patterns to follow:**
+- Formato YAML frontmatter con checkboxes `- [ ]`
+
+**Test scenarios:**
+- BACKLOG.md se abre y muestra estado coherente
+
+**Verification:**
+- Archivo leído muestra v1.1 Alpha y items actuales
+
+---
+
+- [ ] **Unit 3: Commit final de estabilización**
+
+**Goal:** Crear commit final con todos los fixes de esta sesión
+
+**Requirements:** R2, R3
+
+**Dependencies:** Unit 1, Unit 2
+
+**Files:**
+- Modify: `15_SOTA_Integrity_Check.py` (si no fue commitado en Unit 1)
+- Modify: `00_Winter_is_Coming/BACKLOG.md`
+
+**Approach:**
+- Stagear archivos modificados
+- Crear commit con mensaje conventional
+- Verificar SOTA Integrity Check pasa 9/9
+
+**Test scenarios:**
+- `git log -1 --oneline` muestra el commit
+- SOTA Integrity Check pasa 9/9
+
+**Verification:**
+- Commit creado y verificado
+
+---
+
+## System-Wide Impact
+
+- **Auditor behavior**: El SOTA Integrity Check tendrá menos false positives
+- **BACKLOG clarity**: Items de backlog reflejarán trabajo real pendiente
+
+## Risks & Dependencies
+
+- **Risk**: Si el usuario quiere hacer cleanup de git de los archivos deleted, podría ser un commit grande con muchos archivos —mitigar haciendo commit atómico de fixes primero
+
+## Documentation / Operational Notes
+
+- Esta sesión produjo commit `0d0ca6a` con los fixes principales de auditores
+- Queda un commit menor para el path de Design SOTA y BACKLOG update
+
+## Sources & References
+
+- Engram: #734 — Session Compactada 2026-04-23
+- CTX: `04_Operations/00_Context_Memory/03_CTX_Session_Archive_2026-04-23.md`
+- NP: `04_Operations/03_Process_Notes/06_NP_Auditoria_Estabilizacion_v1_1_Alpha_2026-04-23.md`
+- Commit anterior: `0d0ca6a feat(system): update auditores to v1.1 Alpha benchmarks`

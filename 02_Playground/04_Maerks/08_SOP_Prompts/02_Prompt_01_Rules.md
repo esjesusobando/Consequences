@@ -66,7 +66,7 @@ priority: [1-10]
 
 ## 🔗 Dependencias
 - **Rules relacionadas:** `01_Core/01_Rules/[otras reglas]`
-- **Skills relacionadas:** `01_Core/03_Skills/[skill]`
+- **Skills relacionadas:** `01_Personal_Os/01_Core/02_Tools/02_Skills/[skill]`
 - **Workflows:** `01_Core/00_Workflows/[workflow]`
 
 ## 📊 Validación

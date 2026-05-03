@@ -29,12 +29,12 @@ Tras el análisis de los HUBs y scripts actuales, se identifican los siguientes 
 
 ### [Componente] Reestructuración "Skills as Packages"
 
-Se realizará la migración física de los scripts activos desde `03_Scripts_Os` hacia sus carpetas locales en `01_Core/03_Skills/`.
+Se realizará la migración física de los scripts activos desde `03_Scripts_Os` hacia sus carpetas locales en `01_Personal_Os/01_Core/02_Tools/02_Skills/`.
 
-#### [MODIFY] [01_Core/03_Skills/...]
+#### [MODIFY] [01_Personal_Os/01_Core/02_Tools/02_Skills/...]
 - Cada carpeta de Skill activa recibirá un directorio `scripts/`.
-- [NEW] `01_Core/03_Skills/08_Personal_Os/scripts/08_Ritual_Cierre.py`
-- [NEW] `01_Core/03_Skills/01_Agent_Teams_Lite/scripts/02_Professor_X_Plan.py`
+- [NEW] `01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/scripts/08_Ritual_Cierre.py`
+- [NEW] `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/scripts/02_Professor_X_Plan.py`
 
 #### [DELETE] [03_Scripts_Os/...]
 - Se eliminarán las subcarpetas `01_Ritual`, `02_Tool`, `04_Workflow`, etc., una vez migrados los scripts.

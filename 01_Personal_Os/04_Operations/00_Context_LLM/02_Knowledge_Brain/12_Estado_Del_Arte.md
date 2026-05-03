@@ -44,9 +44,9 @@
 | **Playwright QA**                      | `03_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py`                                | Testing interactivo                      |
 
 **Skills Anthropic:**
-- `01_Core/03_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`
-- `01_Core/03_Skills/14_Anthropic_Harness/02_Context_Management/`
-- `01_Core/03_Skills/14_Anthropic_Harness/03_Sprint_Contract/`
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/02_Context_Management/`
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/03_Sprint_Contract/`
 
 **Workflow:**
 - `.agent/03_Workflows/17_Anthropic_Harness.md`
@@ -181,7 +181,7 @@ Ubicación: `.agent/01_Agents/Perfiles/`
 
 ## 🛠️ SKILLS (128+)
 
-### Por Categoría (01_Core/03_Skills/)
+### Por Categoría (01_Personal_Os/01_Core/02_Tools/02_Skills/)
 
 | Categoría                              | Skills                     | Estado                         |
 |----------------------------------------|----------------------------|--------------------------------|

@@ -45,8 +45,8 @@ Update to Video_Intel SKILL.md adding:
 
 | File                                                         | Action                                              |
 |--------------------------------------------------------------|-----------------------------------------------------|
-| `01_Core/03_Skills/19_Video_Intel/SKILL.md`                  | Modified                                            |
-| `01_Core/03_Skills/19_Video_Intel/__init__.py`               | Modified (added VideoRegistry export)               |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/SKILL.md`                  | Modified                                            |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/__init__.py`               | Modified (added VideoRegistry export)               |
 
 ## Archive Location
 

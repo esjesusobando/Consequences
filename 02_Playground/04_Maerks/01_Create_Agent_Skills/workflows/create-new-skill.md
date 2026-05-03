@@ -90,13 +90,13 @@ See references/recommended-structure.md for templates.
 ## Step 4: Create Directory
 
 ```bash
-mkdir -p ~/01_Core/03_Skills/{skill-name}
+mkdir -p ~/01_Personal_Os/01_Core/02_Tools/02_Skills/{skill-name}
 # If complex:
-mkdir -p ~/01_Core/03_Skills/{skill-name}/workflows
-mkdir -p ~/01_Core/03_Skills/{skill-name}/references
+mkdir -p ~/01_Personal_Os/01_Core/02_Tools/02_Skills/{skill-name}/workflows
+mkdir -p ~/01_Personal_Os/01_Core/02_Tools/02_Skills/{skill-name}/references
 # If needed:
-mkdir -p ~/01_Core/03_Skills/{skill-name}/templates  # for output structures
-mkdir -p ~/01_Core/03_Skills/{skill-name}/scripts    # for reusable code
+mkdir -p ~/01_Personal_Os/01_Core/02_Tools/02_Skills/{skill-name}/templates  # for output structures
+mkdir -p ~/01_Personal_Os/01_Core/02_Tools/02_Skills/{skill-name}/scripts    # for reusable code
 ```
 
 ## Step 5: Write SKILL.md

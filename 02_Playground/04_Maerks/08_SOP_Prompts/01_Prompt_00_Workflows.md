@@ -19,7 +19,7 @@ Eres un Arquitecto de Sistemas AI. Crea un workflow completo para PersonalOS.
 ## 📍 Contexto del Proyecto
 - **Nombre:** [NOMBRE_DEL_WORKFLOW]
 - **Tipo:** Workflow de [PLANIFICACIÓN/EJECUCIÓN/REVISIÓN/AUDITORÍA/DOCUMENTACIÓN]
-- **Fuente de verdad:** `01_Core/03_Skills/` para skills, `01_Core/01_Rules/` para reglas
+- **Fuente de verdad:** `01_Personal_Os/01_Core/02_Tools/02_Skills/` para skills, `01_Core/01_Rules/` para reglas
 
 ## 📂 Estructura Requerida
 Guardar en: `01_Core/00_Workflows/NN_Nombre_Workflow.md`
@@ -80,8 +80,8 @@ always_apply: [true/false]
 - `Maerks/09_Dream_Team.md` - Metodología del equipo
 
 ### Skills Recomendadas
-- `01_Core/03_Skills/00_Compound_Engineering/` - Para compound engineering
-- `01_Core/03_Skills/01_Agent_Teams_Lite/` - Para agent teams
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/` - Para compound engineering
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/` - Para agent teams
 
 ## ⚡ Best Practices SOTA
 

@@ -28,9 +28,9 @@ Located: `~/.config/opencode/skills/`
 
 ## Project-Level Skills
 
-Located: `01_Core/03_Skills/`
+Located: `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
-> 170+ skills available (22 categorias, incl. 1 exploracion). Source of truth: `01_Core/03_Skills/`
+> 170+ skills available (22 categorias, incl. 1 exploracion). Source of truth: `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
 ### Key Skills
 

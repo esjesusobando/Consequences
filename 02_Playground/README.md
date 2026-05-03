@@ -71,7 +71,7 @@
 
 Espacio para **pruebas, experimentos y prototipos** sin afectar el sistema principal (`01_Core/`).
 
-**Regla de oro:** Todo lo que se valida aqui se integra a `01_Core/03_Skills/` o `07_Projects/`. Nada queda huerfano.
+**Regla de oro:** Todo lo que se valida aqui se integra a `01_Personal_Os/01_Core/02_Tools/02_Skills/` o `07_Projects/`. Nada queda huerfano.
 
 ---
 

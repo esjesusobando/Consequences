@@ -71,7 +71,7 @@ Falta: 05_???
 | `01_Personal_Os/03_Task/`         | 00_, 01-02         | ✅ PERFECTO   |
 | `01_Personal_Os/04_Operations/`   | 00_, 01-05         | ✅ PERFECTO   |
 | `.agent/01_Agents/`               | 01-06              | ✅ PERFECTO   |
-| `.agent/02_Skills/`               | 01-05 (subárbol)   | ✅ PERFECTO   |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/`               | 01-05 (subárbol)   | ✅ PERFECTO   |
 | `02_Playground/`                  | 00_, 01-06         | ✅ PERFECTO   |
 | `03_Resultado/01_Planes`          | 01-04              | ✅ PERFECTO   |
 

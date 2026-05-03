@@ -16,7 +16,7 @@ from config_paths import *
 """
 AUDITORÍA DE RUTAS DE SKILLS - DRY RUN
 =====================================
-Refactorizar: .agent/02_Skills/ -> 01_Core/03_Skills/
+Refactorizar: 01_Personal_Os/01_Core/02_Tools/02_Skills/ -> 01_Personal_Os/01_Core/02_Tools/02_Skills/
 
 Objetivo: Identificar TODAS las referencias que romperían al migrar.
 NO modifica archivos - solo lista lo que cambiaría.
@@ -31,14 +31,14 @@ from collections import defaultdict
 # ROOT ya viene de config_paths como ROOT_DIR
 ROOT = ROOT_DIR
 
-OLD_PATH = ".agent/02_Skills/"
-NEW_PATH = "01_Core/03_Skills/"
+OLD_PATH = "01_Personal_Os/01_Core/02_Tools/02_Skills/"
+NEW_PATH = "01_Personal_Os/01_Core/02_Tools/02_Skills/"
 
 EXTENSIONS = {".md", ".py", ".yaml", ".yml", ".json", ".txt", ".sh", ".bash", ".zsh"}
 
 
 def find_references():
-    """Encuentra todas las referencias a .agent/02_Skills/"""
+    """Encuentra todas las referencias a 01_Personal_Os/01_Core/02_Tools/02_Skills/"""
     refs = defaultdict(list)
 
     for ext in EXTENSIONS:
@@ -106,11 +106,11 @@ def generate_script(refs):
     script_path = ROOT / "08_Scripts_Os" / "12_Audits" / "migrate_skills_routes.ps1"
 
     script = f"""# Script de Migración de Rutas de Skills
-# Generated: Auto-refactor .agent/02_Skills/ -> 01_Core/03_Skills/
+# Generated: Auto-refactor 01_Personal_Os/01_Core/02_Tools/02_Skills/ -> 01_Personal_Os/01_Core/02_Tools/02_Skills/
 # DRY RUN - NOmodifica archivos
 
-$OLD_PATH = ".agent/02_Skills/"
-$NEW_PATH = "01_Core/03_Skills/"
+$OLD_PATH = "01_Personal_Os/01_Core/02_Tools/02_Skills/"
+$NEW_PATH = "01_Personal_Os/01_Core/02_Tools/02_Skills/"
 
 $files = @(
 """

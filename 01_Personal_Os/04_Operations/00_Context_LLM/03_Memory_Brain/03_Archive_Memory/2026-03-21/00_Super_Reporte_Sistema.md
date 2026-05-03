@@ -13,7 +13,7 @@
 | Cambio                                                      | Descripción                                                                                    | Estado                                       |
 |-------------------------------------------------------------|------------------------------------------------------------------------------------------------|----------------------------------------------|
 | Skills System v2.0 Complete                                 | 99 skills en 9 perfiles + 10_Backup                                                            | ✅ Completado                                 |
-| Canonical Source                                            | `.agent/02_Skills/` es fuente canónica                                                         | ✅ Completado                                 |
+| Canonical Source                                            | `01_Personal_Os/01_Core/02_Tools/02_Skills/` es fuente canónica                                                         | ✅ Completado                                 |
 | Cursor Mirror                                               | `.cursor/02_Skills/` es espejo (README only)                                                   | ✅ Completado                                 |
 | Context Memory Cleanup                                      | 08_Context_Memory y Context_Memory eliminadas                                                  | ✅ Completado                                 |
 | Backup Central Created                                      | 01_Core/06_Backup_Central/ creado                                                              | ✅ Completado                                 |
@@ -23,7 +23,7 @@
 
 ### Skills System v2.0 - Detalles
 
-- **Canonical Source**: `.agent/02_Skills/` (fuente oficial)
+- **Canonical Source**: `01_Personal_Os/01_Core/02_Tools/02_Skills/` (fuente oficial)
 - **Mirror**: `.cursor/02_Skills/` (README de solo lectura, sincronizado)
 - **99 skills activas** organizadas en 9 perfiles funcionales
 - **~200 skills en backup** en 10_Backup/
@@ -44,7 +44,7 @@
 
 - **99 skills organizadas** en 9 perfiles + 10_Backup
 - READMEs agregados a cada perfil
-- Canonical source: `.agent/02_Skills/`
+- Canonical source: `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 - Mirror: `.cursor/02_Skills/` (pendiente de sincronizar)
 
 ### 2. Context Memory Cleanup
@@ -135,7 +135,7 @@ Think Different AI es un **Personal Operating System (PersonalOS)** que integra 
 ### Estructura Final (Post-Migración SOTA)
 
 ```
-.agent/02_Skills/
+01_Personal_Os/01_Core/02_Tools/02_Skills/
 ├── 01_Agent_Teams_Lite/    (10 skills) ← SDD Workflow
 ├── 02_Project_Manager/      (8 skills) ← Rituales, tracking
 ├── 03_Product_Manager/      (8 skills) ← Estrategia, vision

@@ -34,7 +34,7 @@
 - Fix: Eliminadas duplicadas, agregada tabla triggers Hillary
 
 ### 5. Hillary Life OS integrado a produccion
-- 5 skills en 01_Core/03_Skills/18_Personal_Life_OS/
+- 5 skills en 01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/
 - Workflow orquestador: 01_Core/00_Workflows/24_Hillary_Life_OS.md
 - RUNBOOK: 02_Knowledge/04_Docs/Hillary_Life_OS_RUNBOOK.md
 - Inbox: 03_Tasks/02_Hillary_Inbox/README.md

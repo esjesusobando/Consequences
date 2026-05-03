@@ -35,7 +35,7 @@
 ```
 
 ### Subdirectorios críticos verificados
-- ✅ `01_Core/03_Skills/` - Skills del sistema
+- ✅ `01_Personal_Os/01_Core/02_Tools/02_Skills/` - Skills del sistema
 - ✅ `01_Core/02_Evals/` - Evaluaciones  
 - ✅ `03_Scripts_Os/*_Fixed/` - Versiones corregidas
 - ✅ `04_Operations/01_Auto_Improvement/` - Motor de automejora

@@ -39,7 +39,7 @@ VISUAL_DENSITY (1-10): 4   # 4=Espaciado normal de app típica
     ├── redesign-skill/SKILL.md         # Mejorar existentes
     └── output-skill/SKILL.md           # Código completo
 
-.agent/02_Skills/11_Taste_Skills/       # Para OpenCode
+01_Personal_Os/01_Core/02_Tools/02_Skills/11_Taste_Skills/       # Para OpenCode
 └── taste-skill/                         # Diseño principal
     ├── taste-skill/SKILL.md            # Premium desde cero
     ├── soft-skill/SKILL.md             # Lujoso/exclusivo

@@ -92,10 +92,10 @@ Think_Different/
 
 - User-level: `~/.config/opencode/skills/`
 - **Project-level (FUENTE):** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
-- **Backup (legacy):** `.agent/02_Skills/` (-sync, no usar para trabajo activo)
+- **Backup (legacy):** `01_Personal_Os/01_Core/02_Tools/02_Skills/` (-sync, no usar para trabajo activo)
 - SDD Config: `.atl/openspec/config.yaml`
 
-> ⚠️ **CRITICAL:** Siempre usar `01_Personal_Os/01_Core/02_Tools/02_Skills/` como fuente de skills. NO usar `.agent/02_Skills/` ni paths antiguos (`01_Core/03_Skills/`).
+> ⚠️ **CRITICAL:** Siempre usar `01_Personal_Os/01_Core/02_Tools/02_Skills/` como fuente de skills. NO usar `01_Personal_Os/01_Core/02_Tools/02_Skills/` ni paths antiguos (`01_Personal_Os/01_Core/02_Tools/02_Skills/`).
 
 ---
 

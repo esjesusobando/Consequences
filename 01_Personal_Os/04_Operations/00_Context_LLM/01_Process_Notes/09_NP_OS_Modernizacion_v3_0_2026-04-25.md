@@ -43,8 +43,8 @@ Think_Different/
 
 | Issue                                | Cantidad     | Severidad      | Estado                    |
 |--------------------------------------|--------------|----------------|---------------------------|
-| Referencias a `01_Core/03_Skills/`   | 911          | CRITICA        | Docs actualizadas         |
-| Referencias a `.agent/02_Skills/`    | 177          | ALTA           | Docs actualizadas         |
+| Referencias a `01_Personal_Os/01_Core/02_Tools/02_Skills/`   | 911          | CRITICA        | Docs actualizadas         |
+| Referencias a `01_Personal_Os/01_Core/02_Tools/02_Skills/`    | 177          | ALTA           | Docs actualizadas         |
 | Copias de config_paths.py            | 5            | MEDIA          | Consolidado logicamente   |
 | Multiples ubicaciones Rules          | 4            | MEDIA          | Fuente definida           |
 
@@ -85,12 +85,12 @@ OpenCode: 1.14.25 ✅
 ## 📝 Lecciones Aprendidas
 
 ### 1. Paths Obsoletos Persisten
-- **Problema:** 911 archivos referencian paths antigos (`01_Core/03_Skills/`)
+- **Problema:** 911 archivos referencian paths antigos (`01_Personal_Os/01_Core/02_Tools/02_Skills/`)
 - **Solucion:** No eliminar - actualizar documentacion y definir fuente unica
 - ** Lehns learned: Los paths antiguos son historicos, no criticos si la estructura actual funciona
 
 ### 2. Multiples Fuentes de Verdad
-- **Problema:** Skills en 3 ubicaciones (`.agent/02_Skills/`, `01_Core/03_Skills/`, `01_Personal_Os/01_Core/02_Tools/02_Skills/`)
+- **Problema:** Skills en 3 ubicaciones (`01_Personal_Os/01_Core/02_Tools/02_Skills/`, `01_Personal_Os/01_Core/02_Tools/02_Skills/`, `01_Personal_Os/01_Core/02_Tools/02_Skills/`)
 - **Solucion:** Definir `01_Personal_Os/01_Core/02_Tools/02_Skills/` como fuente oficial
 - ** Lehns learned: Clarificar fuente previene confusion y trabajo duplicado
 
@@ -128,13 +128,13 @@ OpenCode: 1.14.25 ✅
    - Rules: `01_Personal_Os/01_Core/01_Rules/`
 
 2. **Referencias obsoletas no eliminadas:**
-   - 911 refs a `01_Core/03_Skills/` — historico en archivos de resultado
-   - 177 refs a `.agent/02_Skills/` — docs anteriores
+   - 911 refs a `01_Personal_Os/01_Core/02_Tools/02_Skills/` — historico en archivos de resultado
+   - 177 refs a `01_Personal_Os/01_Core/02_Tools/02_Skills/` — docs anteriores
    - Son contexto historico, no bloquean el sistema
 
 3. **Backup estrategico:**
    - `.agent/` sincroniza con `01_Personal_Os/01_Core/`
-   - NO usar `.agent/02_Skills/` para trabajo activo
+   - NO usar `01_Personal_Os/01_Core/02_Tools/02_Skills/` para trabajo activo
 
 ---
 

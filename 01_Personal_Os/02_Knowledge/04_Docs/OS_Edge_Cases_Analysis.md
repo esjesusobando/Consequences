@@ -41,18 +41,18 @@ The Think_Different OS contains **60 edge cases** across 6 categories. The most 
 
 | File/Location                                             | Type                   | Severity                   | Description                                      | Recommendation                                                   |
 |-----------------------------------------------------------|------------------------|----------------------------|--------------------------------------------------|------------------------------------------------------------------|
-| `01_Core/03_Skills/01_Agent_Teams_Lite/`                  | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with SDD workflow definitions                    |
-| `01_Core/03_Skills/02_Project_Manager/`                   | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with project management patterns                 |
-| `01_Core/03_Skills/03_Product_Manager/`                   | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with product management rules                    |
-| `01_Core/03_Skills/04_Product_Design/`                    | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with design system patterns                      |
-| `01_Core/03_Skills/05_Vibe_Coding/`                       | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with framework-specific rules                    |
-| `01_Core/03_Skills/06_Testing/`                           | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with testing patterns                            |
-| `01_Core/03_Skills/07_DevOps/`                            | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with DevOps workflows                            |
-| `01_Core/03_Skills/08_Personal_Os/`                       | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with OS-specific rules                           |
-| `01_Core/03_Skills/09_Marketing/`                         | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with marketing patterns                          |
-| `01_Core/03_Skills/11_Doc_Processing/`                    | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with document processing rules                   |
-| `01_Core/03_Skills/12_N8N/`                               | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with N8N integration patterns                    |
-| `01_Core/03_Skills/14_Anthropic_Harness/`                 | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with evaluation frameworks                       |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/`                  | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with SDD workflow definitions                    |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/`                   | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with project management patterns                 |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/`                   | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with product management rules                    |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/`                    | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with design system patterns                      |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/`                       | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with framework-specific rules                    |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/`                           | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with testing patterns                            |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/`                            | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with DevOps workflows                            |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/`                       | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with OS-specific rules                           |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/`                         | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with marketing patterns                          |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/11_Doc_Processing/`                    | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with document processing rules                   |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/12_N8N/`                               | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with N8N integration patterns                    |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/`                 | EMPTY                  | **HIGH**                   | Skill directory without SKILL.md                 | Create SKILL.md with evaluation frameworks                       |
 
 ### 2.3 INVALID — Malformed Configuration
 
@@ -79,7 +79,7 @@ The Think_Different OS contains **60 edge cases** across 6 categories. The most 
 
 | File/Location                                                                                          | Type                     | Severity                   | Description                                  | Recommendation                      |
 |--------------------------------------------------------------------------------------------------------|--------------------------|----------------------------|----------------------------------------------|-------------------------------------|
-| `01_Core/03_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/...`                 | BOUNDARY                 | **LOW**                    | Deep nesting (8+ levels)                     | Consider flattening                 |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/...`                 | BOUNDARY                 | **LOW**                    | Deep nesting (8+ levels)                     | Consider flattening                 |
 | `Maerks/Otros/13_Strategic_Plans/2026-03-25-plan-fusion-hubs-01-10.md`                                 | BOUNDARY                 | **LOW**                    | Very long filename                           | Use shorter names                   |
 | Multiple scripts in `03_Scripts_Os/Legacy_Backup/`                                                     | DATA                     | **LOW**                    | 70+ duplicate/legacy scripts                 | Archive or delete                   |
 
@@ -111,7 +111,7 @@ The Think_Different OS contains **60 edge cases** across 6 categories. The most 
 | No empty rule files                           | ✅ PASS                   | All rules have content                 |
 | Required fields present                       | ✅ PASS                   | Rules are well-formed                  |
 
-### 3.2 01_Core/03_Skills/ — Skills Audit
+### 3.2 01_Personal_Os/01_Core/02_Tools/02_Skills/ — Skills Audit
 
 | Check                                           | Status                        | Notes                                             |
 |-------------------------------------------------|-------------------------------|---------------------------------------------------|

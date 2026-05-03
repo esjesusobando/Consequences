@@ -54,7 +54,7 @@ Cuando se delega trabajo a sub-agentes, el orquestador DEBE inyectar las compact
 ### Proceso de Resolución
 
 1. **Clasificar la tarea** según las 9 categorías de Anthropic
-2. **Identificar skills** en `01_Core/03_Skills/` que mapean a esa categoría
+2. **Identificar skills** en `01_Personal_Os/01_Core/02_Tools/02_Skills/` que mapean a esa categoría
 3. **Leer el `description`** del SKILL.md (no el cuerpo completo) para confirmar triggers
 4. **Inyectar compact rules** en el prompt del sub-agente como `## Project Standards (auto-resolved)`
 5. **Nunca cargar** el SKILL.md completo en el contexto del orquestador — solo el `description` para decidir

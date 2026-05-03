@@ -15,7 +15,7 @@
 |---------------------|----------------------------------------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | 1                   | Recuperar archivos .claude                         | ✅                        | 920 archivos recuperados del commit 2ebca41                                                                           |
 | 2                   | Auditar estructura completa                        | ✅                        | Skills, Agents, MCPs, Rules, Hooks, Workflows, Evals                                                                  |
-| 3                   | Establecer fuente de verdad                        | ✅                        | `01_Core/03_Skills/` = fuente de verdad para OpenCode                                                                 |
+| 3                   | Establecer fuente de verdad                        | ✅                        | `01_Personal_Os/01_Core/02_Tools/02_Skills/` = fuente de verdad para OpenCode                                                                 |
 | 4                   | Actualizar 01_Personal_Os/11_AGENTS.md             | ✅                        | Referencias actualizadas a 01_Core/                                                                                   |
 | 5                   | Actualizar Dream Team agents                       | ✅                        | 5 agents actualizados (Product_Builder, Data_Engineer, Marketing_Tech, Design_Ops, Platform_Engineer)                 |
 | 6                   | Crear Dream_Team.md                                | ✅                        | Analogía del sistema documentada                                                                                      |
@@ -90,7 +90,7 @@ Orquestan las jugadas. Definen el flujo de trabajo completo.
 
 | Herramienta                   | Cantidad                   | Función                                          | Ubicación                                      |
 |-------------------------------|----------------------------|--------------------------------------------------|------------------------------------------------|
-| **Skills**                    | 160+                       | Patrones y workflows específicos                 | `01_Core/03_Skills/`                           |
+| **Skills**                    | 160+                       | Patrones y workflows específicos                 | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                           |
 | **MCPs**                      | 27                         | Herramientas externas                            | `01_Core/05_Mcp/opencode.json`                 |
 | **Commands**                  |----------------------------| Comandos slash (/sdd, /ce, etc.)                 | `01_Core/06_Commands/`                         |
 | **Hooks**                     | 6                          | Puntos de ejecución automática                   | `01_Core/07_Hooks/`                            |
@@ -110,7 +110,7 @@ Evalúa el rendimiento del equipo. Mide calidad y eficiencia.
 | Rules                            | `01_Core/01_Rules/`                            | ✅                                      |
 | Evals                            | `01_Core/02_Evals/`                            | ✅                                      |
 | Agents                           | `01_Core/04_Agents/`                           | ✅                                      |
-| Skills                           | `01_Core/03_Skills/`                           | ✅ **FUENTE DE VERDAD**                 |
+| Skills                           | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                           | ✅ **FUENTE DE VERDAD**                 |
 | Integrations                     | `01_Core/06_Integrations/`                     | ✅                                      |
 | MCPs                             | `01_Core/05_Mcp/opencode.json`                 | ✅                                      |
 | Commands                         | `01_Core/06_Commands/`                         | ✅                                      |
@@ -216,7 +216,7 @@ Evalúa el rendimiento del equipo. Mide calidad y eficiencia.
 | 1️⃣                    | Agentes paralelos (swarm)                 | ~10 carpetas procesadas                                 |
 | 2️⃣                    | Auditor Round 1                           | Encontró +10 rutas en otros directorios                 |
 | 3️⃣                    | Agentes Round 2                           | Corrigieron rutas encontradas                           |
-| 4️⃣                    | Auditor Round 2                           | Encontró +30 rutas en .agent/02_Skills/                 |
+| 4️⃣                    | Auditor Round 2                           | Encontró +30 rutas en 01_Personal_Os/01_Core/02_Tools/02_Skills/                 |
 | 5️⃣                    | Agentes Round 3                           | Corrigieron rutas finales                               |
 | 6️⃣                    | Auditor FINAL                             | ✅ PASS - 0 rutas obsoletas                              |
 | 7️⃣                    | Engram                                    | Progreso guardado                                       |
@@ -256,10 +256,10 @@ Evalúa el rendimiento del equipo. Mide calidad y eficiencia.
 
 | Check                                                                            | Estado                   |
 |----------------------------------------------------------------------------------|--------------------------|
-| Dream Team → 01_Core/03_Skills/                                                  | ✅                        |
-| 01_Personal_Os/11_AGENTS.md → 01_Core/03_Skills/                                 | ✅                        |
-| 00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md → 01_Core/03_Skills/             | ✅                        |
-| 01_Core/03_Skills/README.md → Source of Truth                                    | ✅                        |
+| Dream Team → 01_Personal_Os/01_Core/02_Tools/02_Skills/                                                  | ✅                        |
+| 01_Personal_Os/11_AGENTS.md → 01_Personal_Os/01_Core/02_Tools/02_Skills/                                 | ✅                        |
+| 00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md → 01_Personal_Os/01_Core/02_Tools/02_Skills/             | ✅                        |
+| 01_Personal_Os/01_Core/02_Tools/02_Skills/README.md → Source of Truth                                    | ✅                        |
 | Git status limpio                                                                | ✅                        |
 
 ---
@@ -271,7 +271,7 @@ Evalúa el rendimiento del equipo. Mide calidad y eficiencia.
 El sistema PersonalOS v6.1 está completamente engranado y conectado:
 - Los agentes saben dónde están las skills
 - Las rutas están actualizadas
-- La fuente de verdad está clara: `01_Core/03_Skills/`
+- La fuente de verdad está clara: `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 - Todo está documentado en Dream_Team.md
 
 **El Dream Team está listo para jugar!** ⚽

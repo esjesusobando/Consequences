@@ -1,7 +1,7 @@
 # 02_Hillary_Inbox — Quick Capture Inbox
 
 > **Propósito:** Inbox de capturas del skill Quick Capture (Hillary Life OS)  
-> **Skill fuente:** `01_Core/03_Skills/18_Personal_Life_OS/01_Quick_Capture/`  
+> **Skill fuente:** `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/01_Quick_Capture/`  
 > **Workflow:** `01_Core/00_Workflows/24_Hillary_Life_OS.md`
 
 ---

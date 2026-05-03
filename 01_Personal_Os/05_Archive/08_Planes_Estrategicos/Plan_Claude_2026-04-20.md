@@ -127,7 +127,7 @@ Orden secuencial — cada carpeta puede depender de la anterior.
 
 **Acciones:**
 1. Crear cada SKILL.md con: descripción, sub-skills con triggers, cómo el orquestador los invoca, qué metodologías usan
-2. Actualizar `01_Core/03_Skills/README.md` con conteo real: 22 categorías
+2. Actualizar `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md` con conteo real: 22 categorías
 3. Actualizar `.atl/skill-registry.md` con las 22 categorías y sus compact rules
 
 **Criterio de éxito:** Cada categoría tiene SKILL.md. El skill-registry tiene las 22 categorías.
@@ -289,7 +289,7 @@ El PersonalOS v1.0 está listo para múltiples usuarios:
 | `.agent/01_Agents/16_Youtube_Title_Generator.md`                | Agent 16 creado                             |
 | `.agent/03_Workflows/27_Youtube_Full_Video.md`                  | Workflow 27 creado                          |
 | `02_Knowledge/03_Writing_Content/Skill_Carousel.md`             | Plan archived                               |
-| `01_Core/03_Skills/08_Personal_Os/`                             | Skills renombradas 11→19                    |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/`                             | Skills renombradas 11→19                    |
 | `Plan_Claude.md`                                                | Actualizado con 100% completado             |
 
 ---

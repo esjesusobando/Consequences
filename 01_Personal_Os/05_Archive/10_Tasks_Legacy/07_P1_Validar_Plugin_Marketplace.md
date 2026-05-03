@@ -31,4 +31,4 @@ Validar que el plugin creado funcione correctamente en Claude Code.
   - Plugin configurado en .claude-plugin/ (raíz), no en 01_Core/08_Plugins/02_Personal_Os/
   - 02_Personal_Os/ solo contiene skills sueltas (sin manifest)
   - 4 skills disponibles: personal-os, sdd-workflow, system-guardian, backlog-processing
-  - Plugin en raíz referencia skills de 01_Core/03_Skills/
+  - Plugin en raíz referencia skills de 01_Personal_Os/01_Core/02_Tools/02_Skills/

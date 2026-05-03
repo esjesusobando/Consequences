@@ -58,7 +58,7 @@ Completar la integración del ecosistema Gentleman Programming en el sistema Thi
 - gentleman-guardian-angel
 - gentle-ai
 
-✅ **Skills copiados al sistema (.agent/02_Skills/):**
+✅ **Skills copiados al sistema (01_Personal_Os/01_Core/02_Tools/02_Skills/):**
 - Total: 26 skills
 - Incluyendo: react-19, nextjs-15, typescript, tailwind-4, pytest, playwright, zod-4, zustand-5, ai-sdk-5, django-drf, skill-creator, angular, github-pr, jira-epic, jira-task
 - Skills Gentleman: gentleman-bubbletea, gentleman-e2e, gentleman-installer, gentleman-system, gentleman-trainer, go-testing
@@ -104,7 +104,7 @@ Engram es el cerebro del sistema. Debe estar en 05_System/05_Core/Engram/ (infra
 
 ### 3. Skills se copian, no se instalan
 
-Los skills de Gentleman-Skills se copian manualmente a .agent/02_Skills/ para tenerlos disponibles localmente.
+Los skills de Gentleman-Skills se copian manualmente a 01_Personal_Os/01_Core/02_Tools/02_Skills/ para tenerlos disponibles localmente.
 
 ### 4. Workflows de Compound Engineering
 
@@ -157,7 +157,7 @@ Los workflows como Vision Review (03_Vision_Review.md) forman parte de Compound 
 - **GGA:** gga v2.7.3
 - **Engram:** 05_System/05_Core/Engram/engram.exe
 - **Repositorios:** 03_Knowledge/Resources/Gentleman/Repos/
-- **Skills:** .agent/02_Skills/
+- **Skills:** 01_Personal_Os/01_Core/02_Tools/02_Skills/
 - **Agentes:** .agent/01_Agents/
 - **OpenCode Config:** ~/.config/opencode/
 

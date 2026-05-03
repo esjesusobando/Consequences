@@ -127,7 +127,7 @@
 | 3.7                  | **Python deps**                         | requirements.txt es instalable                                         |
 | 3.8                  | **Templates**                           | 10_Templates/ tiene templates válidos                                  |
 | 3.9                  | **Workflows**                           | 00_Workflows/ tiene workflows funcionales                              |
-| 3.10                 | **Sync con .agent/**                    | Estructura 01_Core/03_Skills refleja .agent/02_Skills/                 |
+| 3.10                 | **Sync con .agent/**                    | Estructura 01_Core/03_Skills refleja 01_Personal_Os/01_Core/02_Tools/02_Skills/                 |
 
 #### 🧪 Tests a Verificar
 ```bash

@@ -115,7 +115,7 @@
 
 ```
 Think_Different_AI/
-├── .agent/02_Skills/           # Skills canónicas (Claude Code)
+├── 01_Personal_Os/01_Core/02_Tools/02_Skills/           # Skills canónicas (Claude Code)
 │   ├── 00_Compound_Engineering/ # CE: 131 componentes
 │   ├── 01_Agent_Teams_Lite/     # SDD
 │   ├── 05_Vibe_Coding/         # Frameworks

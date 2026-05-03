@@ -21,7 +21,7 @@ Sesión de trabajo enfocada en mejorar el sistema PersonalOS con:
 
 - **Fecha:** 2026-03-18
 - **Acción:** Clonar repo https://github.com/Leonxlnx/taste-skill
-- **Ubicación:** `.cursor/02_Skills/11_Taste_Skills/` y `.agent/02_Skills/11_Taste_Skills/`
+- **Ubicación:** `.cursor/02_Skills/11_Taste_Skills/` y `01_Personal_Os/01_Core/02_Tools/02_Skills/11_Taste_Skills/`
 - **Skills integradas:**
   - taste-skill (diseño premium)
   - soft-skill (look expensive)

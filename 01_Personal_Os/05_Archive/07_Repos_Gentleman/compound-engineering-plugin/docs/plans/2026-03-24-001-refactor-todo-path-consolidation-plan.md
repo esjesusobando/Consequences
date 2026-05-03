@@ -45,7 +45,7 @@ Both `03_Tasks/` and `.context/` are gitignored. The `git add 03_Tasks/` command
 - [ ] Issue ID generation scans both directories to prevent collisions
 - [ ] Consumer skills (`ce-review`, `ce-review-beta`, `test-browser`, `test-xcode`) delegate to `file-todos` rather than encoding paths inline
 - [ ] `ce-review-beta` report-only prohibition uses path-agnostic language
-- [ ] Stale template paths in `ce-review` (`01_Core/03_Skills/...`) fixed to use correct relative path
+- [ ] Stale template paths in `ce-review` (`01_Personal_Os/01_Core/02_Tools/02_Skills/...`) fixed to use correct relative path
 - [ ] `bun run release:validate` passes
 
 ## Implementation Phases
@@ -80,7 +80,7 @@ These 4 skills only **create** todos. They should delegate to `file-todos` rathe
 
 Changes:
 1. **Line 244** (`<critical_requirement>`): Replace `03_Tasks/ directory` with `the todo directory defined by the file-todos skill`
-2. **Lines 275, 323, 343**: Fix stale template path `01_Core/03_Skills/file-03_Tasks/assets/todo-template.md` to correct relative reference (or delegate to "load the `file-todos` skill for the template location")
+2. **Lines 275, 323, 343**: Fix stale template path `01_Personal_Os/01_Core/02_Tools/02_Skills/file-03_Tasks/assets/todo-template.md` to correct relative reference (or delegate to "load the `file-todos` skill for the template location")
 3. **Line 435** (`ls 03_Tasks/*-pending-*.md`): Update to reference file-todos conventions
 4. **Line 448** (`git add 03_Tasks/`): Remove this dead code (both paths are gitignored)
 

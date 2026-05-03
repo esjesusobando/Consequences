@@ -93,7 +93,7 @@ VISUAL_DENSITY (1-10)
     ├── redesign-skill/SKILL.md         # Mejorar existentes
     └── output-skill/SKILL.md           # Código completo
 
-.agent/02_Skills/11_Taste_Skills/       # Para OpenCode
+01_Personal_Os/01_Core/02_Tools/02_Skills/11_Taste_Skills/       # Para OpenCode
 └── taste-skill/                        # Diseño principal
     ├── taste-skill/SKILL.md            # Diseño premium desde cero
     ├── soft-skill/SKILL.md             # Look premium/lujoso
@@ -123,10 +123,10 @@ VISUAL_DENSITY (1-10)
 @.cursor/02_Skills/11_Taste_Skills/output-skill/SKILL.md
 
 # Diseño principal (OpenCode):
-@.agent/02_Skills/11_Taste_Skills/taste-skill/SKILL.md
+@01_Personal_Os/01_Core/02_Tools/02_Skills/11_Taste_Skills/taste-skill/SKILL.md
 
 # Look expensive (OpenCode):
-@.agent/02_Skills/11_Taste_Skills/soft-skill/SKILL.md
+@01_Personal_Os/01_Core/02_Tools/02_Skills/11_Taste_Skills/soft-skill/SKILL.md
 ```
 
 ## Regla de Uso (OBLIGATORIO)

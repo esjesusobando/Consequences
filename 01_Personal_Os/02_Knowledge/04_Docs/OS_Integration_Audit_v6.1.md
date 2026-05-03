@@ -71,7 +71,7 @@
 
 ## 2. SKILLS SYSTEM
 
-### ✅ 2.1 01_Core/03_Skills/ Directory
+### ✅ 2.1 01_Personal_Os/01_Core/02_Tools/02_Skills/ Directory
 
 **19 Skill Categories:**
 

@@ -79,14 +79,14 @@
 
 **Archivo:** `.atl/skill-registry.md`
 
-El registry menciona 22 categorías pero la estructura real de `01_Core/03_Skills/` tiene 25 directorios:
+El registry menciona 22 categorías pero la estructura real de `01_Personal_Os/01_Core/02_Tools/02_Skills/` tiene 25 directorios:
 
 **Categorías en skill-registry.md:**
 ```
 00-21 (22 categorías)
 ```
 
-**Estructura real 01_Core/03_Skills/:**
+**Estructura real 01_Personal_Os/01_Core/02_Tools/02_Skills/:**
 ```
 00_Compound_Engineering/
 00_Gcierr/              ← No en registry
@@ -123,7 +123,7 @@ El registry menciona 22 categorías pero la estructura real de `01_Core/03_Skill
 ui-ux-pro-max/
 ```
 
-**Esperado:** Debería tener skills linkeadas desde `01_Core/03_Skills/` o al menos las skills globales como `gentleman/*`.
+**Esperado:** Debería tener skills linkeadas desde `01_Personal_Os/01_Core/02_Tools/02_Skills/` o al menos las skills globales como `gentleman/*`.
 
 **Impacto:** Las skills referenciadas en `~/.config/opencode/skills/` pueden no estar disponibles localmente.
 
@@ -156,13 +156,13 @@ El script de sonido está en `03_Scripts_Os/00_Sound_Engine.py` NO en `01_Core/0
 
 | Path en Docs                                   | Estado Real                                                                      |
 |------------------------------------------------|----------------------------------------------------------------------------------|
-| `01_Core/00_Workflows/`                        | ❌ NO EXISTE - Los workflows están en `01_Core/03_Skills/05_Workflows/`           |
+| `01_Core/00_Workflows/`                        | ❌ NO EXISTE - Los workflows están en `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/`           |
 | `01_Core/02_Dream_Team.md`                     | ❌ NO EXISTE como .md - Existe `01_Core/02_Dream_Team.md`?                        |
 | `03_Knowledge/`                                | ❌ NO EXISTE - Es `02_Knowledge/`                                                 |
 | `04_Docs/`                                     | ❌ DEPRECATED - Es `02_Knowledge/04_Docs/`                                        |
 | `04_Operations/01_Auto_Improvement/`           | ❌ NO EXISTE - Creado ahora                                                       |
 | `04_Operations/02_Knowledge_Brain/`            | ❌ NO EXISTE                                                                      |
-| `.agent/02_Skills/`                            | ✅ EXISTE - Es backup de `01_Core/03_Skills/`                                     |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/`                            | ✅ EXISTE - Es backup de `01_Personal_Os/01_Core/02_Tools/02_Skills/`                                     |
 | `.agent/03_Workflows/`                         | ⚠️ DUPLICADO - `01_Core/00_Workflows/` no existe                                 |
 
 ---

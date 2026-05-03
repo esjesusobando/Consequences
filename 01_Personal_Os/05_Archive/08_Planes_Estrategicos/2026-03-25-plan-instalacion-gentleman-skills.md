@@ -22,7 +22,7 @@
 
 ---
 
-## 📦 ESTRUCTURA FINAL .agent/02_Skills/
+## 📦 ESTRUCTURA FINAL 01_Personal_Os/01_Core/02_Tools/02_Skills/
 
 ```
 02_Skills/
@@ -113,7 +113,7 @@ feat: install n8n skills + GGA integration - 140 skills total
 
 ## 🔄 SINCRONIZACIÓN
 
-- ✅ .agent/02_Skills/ → .cursor/02_Skills/
+- ✅ 01_Personal_Os/01_Core/02_Tools/02_Skills/ → .cursor/02_Skills/
 - ✅ CLAUDE.md actualizado
 - ✅ README 02_Skills actualizado
 

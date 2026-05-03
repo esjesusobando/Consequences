@@ -159,7 +159,7 @@ Scripts legacy en `01_Personal_Os/04_Operations/03_Scripts_Os/Legacy_Backup/` �
 
 ## 📝 Notas Importantes
 
-1. **Rutas v6.1**: Skills ahora en `01_Personal_Os/01_Core/02_Tools/02_Skills/` (antes `.agent/02_Skills/`)
+1. **Rutas v6.1**: Skills ahora en `01_Personal_Os/01_Core/02_Tools/02_Skills/` (antes `01_Personal_Os/01_Core/02_Tools/02_Skills/`)
 2. **.bashrc**: Alias configurados con rutas absolutas
 3. **34_Skill_Auditor.py**: Corregido para auto-detectar categorías
 

@@ -25,7 +25,7 @@ Hillary escala a Gentleman cuando:
 
 ## 🗺️ Mapping de Componentes
 - **Agent File**: `01_Core/04_Agents/13_Hillary.md`
-- **Skill File**: `01_Core/03_Skills/18_Personal_Life_OS/SKILL.md`
+- **Skill File**: `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/SKILL.md`
 - **Workflow File**: `01_Core/00_Workflows/04_Hillary/04_Hillary/25_Hillary_Life_OS.md`
 
 ---

@@ -1,5 +1,5 @@
 # REPORTE DE AUDITORÍA: RUTAS DE SKILLS
-## Refactorización: .agent/02_Skills/ → 01_Core/03_Skills/
+## Refactorización: 01_Personal_Os/01_Core/02_Tools/02_Skills/ → 01_Personal_Os/01_Core/02_Tools/02_Skills/
 
 **Fecha:** 2026-03-28  
 **Estado:** ✅ AUDITORÍA COMPLETA (DRY RUN)
@@ -12,7 +12,7 @@
 |---------------------------------------------------|----------------------------------------|
 | **Referencias totales encontradas**               | 195                                    |
 | **Archivos únicos con referencias**               | ~50+                                   |
-| **Archivos en `.agent/02_Skills/`**               | 1,434                                  |
+| **Archivos en `01_Personal_Os/01_Core/02_Tools/02_Skills/`**               | 1,434                                  |
 | **Riesgo de rotura**                              | 🟡 BAJO (mayormente docs)               |
 
 ---
@@ -44,7 +44,7 @@
 ### Tipo de Referencias
 
 La MAYORÍA son:
-- ✅ **Textos en documentación** - "ubicación: .agent/02_Skills/05_Gentleman/"
+- ✅ **Textos en documentación** - "ubicación: 01_Personal_Os/01_Core/02_Tools/02_Skills/05_Gentleman/"
 - ✅ **Tablas de inventario** - listas de skills por categoría
 - ✅ **Links en README** - referencias a estructuras
 
@@ -62,8 +62,8 @@ La migración es mayormente documentación. El código que busca skills por ruta
 ## 🛠️ RECOMENDACIONES
 
 ### Opción 1: NO Migrar (Recomendado)
-- Mantener `.agent/02_Skills/` como está
-- La ruta nueva `01_Core/03_Skills/` coexiste
+- Mantener `01_Personal_Os/01_Core/02_Tools/02_Skills/` como está
+- La ruta nueva `01_Personal_Os/01_Core/02_Tools/02_Skills/` coexiste
 - **Ventaja:** Sin riesgo, sin trabajo
 - **Desventaja:** Duplicación menor
 

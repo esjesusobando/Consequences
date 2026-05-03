@@ -115,7 +115,7 @@
 
 ### Fixed — Full System Audit & Documentation Update
 
-- **`01_Core/03_Skills/README.md`**: Actualizado a v1.1
+- **`01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`**: Actualizado a v1.1
   - Agregadas carpetas 24-28 a estructura documentada: `24_PM_Agent_Orchestrator`, `25_Octopus`, `26_Fantasticos`, `27_Qmd`, `28_Carousel_Master`
   - Nota agregada: numeración no secuencial (22-23 no existen)
   - Total actualizado: 29 categorías (24 core + 5 extensiones)
@@ -141,14 +141,14 @@
 ## 1.8.0 - 2026-04-10
 
 ### Added — Skills & Video Intelligence
-- **`.agent/02_Skills/18_Personal_Life_OS/`**: 5 nuevos skills para productividad personal:
+- **`01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/`**: 5 nuevos skills para productividad personal:
   - Quick_Capture: Captura rápida de ideas y tareas
   - Plan_My_Day: Planificación diaria
   - Daily_Notes: Notas diarias estructuradas
   - Recording_Mode: Modo de grabación/transcripción
   - Returns_Tracker: Seguimiento de devoluciones
-- **`.agent/02_Skills/19_Video_Intel copy/`**: Sistema completo de análisis de video con IA
-- **`.agent/02_Skills/20_Skill_Template/`**: Template reusable para crear nuevos skills
+- **`01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel copy/`**: Sistema completo de análisis de video con IA
+- **`01_Personal_Os/01_Core/02_Tools/02_Skills/20_Skill_Template/`**: Template reusable para crear nuevos skills
 - **`05_Archive/03_Docs_Legacy/`**: Documentación legacy reorganizada
 
 ### Fixed — VPN & Network Investigation

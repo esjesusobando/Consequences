@@ -185,19 +185,19 @@ OUTPUT FINAL:
 ### Skills Anthropic
 | Skill                    | Ubicación                                                         | Uso                           |
 |--------------------------|-------------------------------------------------------------------|-------------------------------|
-| **Evaluator Pattern**    | `01_Core/03_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`    | Cómo hacer adversarial eval   |
-| **Context Management**   | `01_Core/03_Skills/14_Anthropic_Harness/02_Context_Management/`   | Reset vs compaction           |
-| **Sprint Contract**      | `01_Core/03_Skills/14_Anthropic_Harness/03_Sprint_Contract/`      | Generator + Evaluator         |
+| **Evaluator Pattern**    | `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`    | Cómo hacer adversarial eval   |
+| **Context Management**   | `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/02_Context_Management/`   | Reset vs compaction           |
+| **Sprint Contract**      | `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/03_Sprint_Contract/`      | Generator + Evaluator         |
 
 ### Workflow
 - **17_Anthropic_Harness**: `01_Core/00_Workflows/17_Anthropic_Harness.md` — Workflow completo de 3 agentes
 
 ### Skills Base
-- `01_Core/03_Skills/03_Product_Manager/` — PRD, Planning
-- `01_Core/03_Skills/05_Vibe_Coding/` — React, Next, TypeScript
-- `01_Core/03_Skills/06_Testing/` — TDD, E2E, Coverage
-- `01_Core/03_Skills/07_DevOps/` — Vercel, Deploy
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/` — PRD, Planning
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/` — React, Next, TypeScript
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/` — TDD, E2E, Coverage
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/` — Vercel, Deploy
 
 ### Pipeline TDD
 - Agentes #2-4 en `01_Core/04_Agents/`
-- E2E Testing: `01_Core/03_Skills/06_Testing/09_E2E_Testing/`
+- E2E Testing: `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/09_E2E_Testing/`

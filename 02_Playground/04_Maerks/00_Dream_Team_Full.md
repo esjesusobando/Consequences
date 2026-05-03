@@ -222,7 +222,7 @@ El scoreboard del partido. Mide rendimiento, goles, posesión, calidad.
 | Workflows                        | `01_Core/00_Workflows/` — Director                          |
 | Rules                            | `01_Core/01_Rules/` — Reglas                                |
 | Agents                           | `01_Core/04_Agents/` — Jugadores                            |
-| **Skills**                       | `01_Core/03_Skills/` — **FUENTE DE VERDAD**                 |
+| **Skills**                       | `01_Personal_Os/01_Core/02_Tools/02_Skills/` — **FUENTE DE VERDAD**                 |
 | Hooks                            | `01_Core/07_Hooks/` — Árbitro                               |
 | Evals                            | `01_Core/02_Evals/` — ScoreCard                             |
 

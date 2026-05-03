@@ -276,7 +276,7 @@ def r20_no_v1_paths_in_active_docs():
             continue
         with open(doc, encoding="utf-8") as f:
             content = f.read()
-        if "01_Core/03_Skills/" in content or "08_Scripts_Os/" in content:
+        if "01_Personal_Os/01_Core/02_Tools/02_Skills/" in content or "08_Scripts_Os/" in content:
             found_in.append(doc.name)
     if not found_in:
         return TestResult("R20", "Docs activos — sin v1.x paths", True, "Limpio")

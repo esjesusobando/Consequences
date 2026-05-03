@@ -146,8 +146,8 @@ Las skills van de `21_Skill_Template` a `25_Octopus`, saltando **22, 23, 24**:
 ```
  D 03_Scripts_Os/04_Workflow/01_Spider_Brainstorm.py    # borrado del working tree
  D 03_Scripts_Os/04_Workflow/02_Professor_X_Plan.py     # borrado del working tree
-?? 01_Core/03_Skills/00_Compound_Engineering/scripts/    # nuevo, no tracked
-?? 01_Core/03_Skills/01_Agent_Teams_Lite/scripts/        # nuevo, no tracked
+?? 01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/scripts/    # nuevo, no tracked
+?? 01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/scripts/        # nuevo, no tracked
 ```
 
 Los scripts fueron migrados a Skills pero **sin hacer commit**. Hay que completar la migración formalmente.
@@ -233,7 +233,7 @@ El directorio existe pero su contenido está marcado para eliminación. Verifica
 
 - [ ] Documentar el sistema de numeración de skills (política de gaps)
 - [ ] Agregar sección "CHANGELOG" al Skills README para nuevas skills
-- [ ] Verificar paridad `.agent/02_Skills/` ↔ `01_Core/03_Skills/`
+- [ ] Verificar paridad `01_Personal_Os/01_Core/02_Tools/02_Skills/` ↔ `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 - [ ] Auditar contenido real de 71 agentes declarados
 
 ---

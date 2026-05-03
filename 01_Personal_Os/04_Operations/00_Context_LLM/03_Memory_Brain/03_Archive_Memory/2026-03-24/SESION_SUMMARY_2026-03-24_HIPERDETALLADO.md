@@ -105,10 +105,10 @@ Category
 Relevant files / directories
 Project root: C:\Users\sebas\Downloads\01 Revisar\11_Personal_Os\Think_Different_AI-main\Think_Different_AI-main\
 Skills directories (audited):
-- .agent/02_Skills/07_DevOps/ - 12 skills fixed
-- .agent/02_Skills/08_Personal_Os/ - 10 skills fixed
-- .agent/02_Skills/09_Marketing/ - 32 skills fixed
-- .agent/02_Skills/11_Doc_Processing/ - 3 skills fixed
+- 01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/ - 12 skills fixed
+- 01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/ - 10 skills fixed
+- 01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/ - 32 skills fixed
+- 01_Personal_Os/01_Core/02_Tools/02_Skills/11_Doc_Processing/ - 3 skills fixed
 Documentation updated:
 - CLAUDE.md - Protocolo Génesis + architecture
 - 04_Operations/01_Context_Memory/ - Reenumerated

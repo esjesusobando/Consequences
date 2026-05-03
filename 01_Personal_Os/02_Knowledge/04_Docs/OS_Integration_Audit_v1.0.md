@@ -43,7 +43,7 @@ El PersonalOS v1.0 está completamente operativo con todas las metodologías int
 
 ---
 
-## 2. Sistema de Skills (01_Core/03_Skills/)
+## 2. Sistema de Skills (01_Personal_Os/01_Core/02_Tools/02_Skills/)
 
 **Total:** 24 directorios (22 categorías core + 2 sistema)
 **SKILL.md:** ✅ 100% — todos los directorios tienen SKILL.md
@@ -198,7 +198,7 @@ El PersonalOS v1.0 está completamente operativo con todas las metodologías int
 | `01_Personal_Os/11_AGENTS.md`                             | ✅ v1.0 + Orchestrator Manifest             | 2026-04-18             |
 | `Plan_Claude.md`                                          | ✅ Plan activo de auditoría                 | 2026-04-18             |
 | `01_Core/01_Rules/RULES_INDEX.md`                         | ✅ v1.0                                     | 2026-04-18             |
-| `01_Core/03_Skills/README.md`                             | ✅ v1.0                                     | 2026-04-18             |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                             | ✅ v1.0                                     | 2026-04-18             |
 | `01_Core/05_Mcp/00_Config_Mcp/MCP_CATALOG.md`             | ✅ Creado                                   | 2026-04-18             |
 | `01_Core/07_Hooks/README.md`                              | ✅ Creado                                   | 2026-04-18             |
 

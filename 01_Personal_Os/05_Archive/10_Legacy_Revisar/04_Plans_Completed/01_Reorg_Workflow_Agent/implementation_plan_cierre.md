@@ -44,7 +44,7 @@ Tras la exitosa refactorización masiva de workflows y agentes, procedemos a val
 
 ### Automated Tests
 - `python 03_Scripts_Os/01_Auditor_Hub.py estructura` (validación en raíz).
-- `python 01_Core/03_Skills/00_Personal_Os_Stack/scripts/53_Structure_Auditor.py` (validación profunda).
+- `python 01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os_Stack/scripts/53_Structure_Auditor.py` (validación profunda).
 
 ### Manual Verification
 - Carga de un workflow de la categoría `02_Marvel` para verificar que el path jerárquico es resuelto por los orquestadores.

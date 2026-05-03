@@ -24,7 +24,7 @@ Integrar un módulo de `Life_Admin` de forma modular y asincrónica al núcleo d
 
 **Alcance de la Integración (Scope):**
 1. **Infraestructura Life Admin:** Crear contenedor en `04_Operations/10_Life_Admin`.
-2. **Transferencia de Skills Mapeadas:** Mover los 5 skills desarrollados en Playgrounds hacia `01_Core/03_Skills/18_Life_Admin/`.
+2. **Transferencia de Skills Mapeadas:** Mover los 5 skills desarrollados en Playgrounds hacia `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Life_Admin/`.
 3. **Elevación Global:** Skills genéricos de altísimo valor (`recording_mode` y `returns_tracker`) se separan como herramientas "System Master" (Core) para que operen globalmente.
 4. **Acoplamiento con Workflows:** Conectar `plan-my-day` al ritual existente de `22_Morning_Standup.md`.
 
@@ -50,7 +50,7 @@ Integrar un módulo de `Life_Admin` de forma modular y asincrónica al núcleo d
 
 ```markdown
 Think_Different/
-├── 01_Core/03_Skills/
+├── 01_Personal_Os/01_Core/02_Tools/02_Skills/
 │   ├── 13_System_Master/
 │   │   ├── recording_mode.md      <- (Elevado desde Lab)
 │   │   └── pattern_tracker.md     <- (Evolución de Returns_Tracker)
@@ -81,10 +81,10 @@ Think_Different/
   - Crear carpeta `04_Operations/10_Life_Admin/`.
   - Crear `00_Preferences.md` y carpeta `01_Logistics_Inbox/`.
 - [ ] **T2. Reubicación de Skills Estratégicos:**
-  - Mover y renombrar `Recording_Mode/SKILL.md` a `01_Core/03_Skills/13_System_Master/recording_mode.md`.
+  - Mover y renombrar `Recording_Mode/SKILL.md` a `01_Personal_Os/01_Core/02_Tools/02_Skills/13_System_Master/recording_mode.md`.
   - Mover y refactorizar `Returns_Tracker` como `pattern_tracker.md` al mismo directorio.
 - [ ] **T3. Migrar Life Admin Skills:**
-  - Mover `Quick_Capture` y `Plan_My_Day` a `01_Core/03_Skills/18_Life_Admin/`.
+  - Mover `Quick_Capture` y `Plan_My_Day` a `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Life_Admin/`.
 - [ ] **T4. Acoplamiento de Standup:**
   - Editar `.agent/03_Workflows/22_Morning_Standup.md` para incluir la llamada al Skill `plan-my-day`.
 - [ ] **T5. Integración de Engram "Yappers":**

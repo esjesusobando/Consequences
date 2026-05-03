@@ -55,7 +55,7 @@
 
 | Componente                             | Descripción                                           | Dónde estaba en v5.2                                     | Acción necesaria                          |
 |----------------------------------------|-------------------------------------------------------|----------------------------------------------------------|-------------------------------------------|
-| **Anthropic Harness**                  | Eval/Gen separation, pass@k metrics                   | `.agent/02_Skills/14_Anthropic_Harness/`                 | Verificar integridad                      |
+| **Anthropic Harness**                  | Eval/Gen separation, pass@k metrics                   | `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/`                 | Verificar integridad                      |
 | **Auto Mode Security**                 | Prompt injection detector, classifier                 | Planificado en v5.2                                      | Implementar                               |
 | **Evaluator Pattern**                  | Generator + Evaluator separados                       | Implementado en Harness                                  | Verificar funcionamiento                  |
 | **Slash Commands**                     | `/gr`, `/gr --apply`, `/gr --agents`                  | Documentado                                              | Verificar todos funcionan                 |

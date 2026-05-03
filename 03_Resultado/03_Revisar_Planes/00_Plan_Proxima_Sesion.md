@@ -36,12 +36,12 @@
 
 | #     | Archivo                                           | refs     | Prioridad     | Acción                                                                          |
 |-------|---------------------------------------------------|----------|---------------|---------------------------------------------------------------------------------|
-| 01    | `00_Winter_is_Coming/README.md`                   | 1        | ALTA          | Línea 41: `01_Core/03_Skills/` → `01_Personal_Os/01_Core/02_Tools/02_Skills/`   |
-| 02    | `00_Winter_is_Coming/AGENTS.md`                   | 6        | ALTA          | Múltiples refs a `01_Core/03_Skills/` → mismo path                              |
+| 01    | `00_Winter_is_Coming/README.md`                   | 1        | ALTA          | Línea 41: `01_Personal_Os/01_Core/02_Tools/02_Skills/` → `01_Personal_Os/01_Core/02_Tools/02_Skills/`   |
+| 02    | `00_Winter_is_Coming/AGENTS.md`                   | 6        | ALTA          | Múltiples refs a `01_Personal_Os/01_Core/02_Tools/02_Skills/` → mismo path                              |
 | 03    | `00_Winter_is_Coming/CHANGELOG.md`                | 1        | BAJA          | Histórico, aceptar o ignorar                                                    |
 | 04    | `01_Core/02_Tools/01_Agents/01_Dream_Team/*.md`   | ~50      | MEDIA         | Refs en documentación de agentes (referencia, no funcional)                     |
 
-**Nota:** Los archivos en `01_Core/02_Tools/02_Skills/` (skills internos) contienen refs a `01_Core/03_Skills/` referenciándose a sí mismos — verificar si son paths hardcodeados o documentación.
+**Nota:** Los archivos en `01_Core/02_Tools/02_Skills/` (skills internos) contienen refs a `01_Personal_Os/01_Core/02_Tools/02_Skills/` referenciándose a sí mismos — verificar si son paths hardcodeados o documentación.
 
 ---
 
@@ -94,7 +94,7 @@
 ## 📝 NOTAS DE LA SESIÓN
 
 - La estructura real del sistema está **CORRECTA** (12 áreas de skills, 297 SKILL.md)
-- El problema es únicamente documentación con rutas old (`01_Core/03_Skills/` en vez de `01_Core/02_Tools/02_Skills/`)
+- El problema es únicamente documentación con rutas old (`01_Personal_Os/01_Core/02_Tools/02_Skills/` en vez de `01_Core/02_Tools/02_Skills/`)
 - Los archivos en Archive y Playground **NO necesitan corrección** — son históricos
 - El sistema usa `config_paths.py` para resolución dinámica de paths
 

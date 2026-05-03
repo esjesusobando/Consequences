@@ -133,7 +133,7 @@ def main():
     # Demo
     analyzer = Analyzer()
     demo_issues = [
-        {"severity": "HIGH", "category": "structure", "path": "01_Core/03_Skills/",
+        {"severity": "HIGH", "category": "structure", "path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
          "description": "Carpeta duplicada"},
         {"severity": "MEDIUM", "category": "docs", "path": "README.md",
          "description": "Versión desactualizada"}

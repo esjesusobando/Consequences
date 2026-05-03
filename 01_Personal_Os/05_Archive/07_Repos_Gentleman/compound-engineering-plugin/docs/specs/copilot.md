@@ -69,7 +69,7 @@ Agent body content is limited to **30,000 characters**.
 | Scope                                       | Path                                           |
 |---------------------------------------------|------------------------------------------------|
 | Project                                     | `.github/skills/*/SKILL.md`                    |
-| Project (Claude-compatible)                 | `01_Core/03_Skills/*/SKILL.md`                 |
+| Project (Claude-compatible)                 | `01_Personal_Os/01_Core/02_Tools/02_Skills/*/SKILL.md`                 |
 | Project (auto-discovery)                    | `.agents/skills/*/SKILL.md`                    |
 | Personal                                    | `~/.copilot/skills/*/SKILL.md`                 |
 

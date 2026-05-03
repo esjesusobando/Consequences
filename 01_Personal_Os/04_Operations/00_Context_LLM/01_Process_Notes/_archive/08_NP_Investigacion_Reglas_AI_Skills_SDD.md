@@ -22,7 +22,7 @@ Investigar si las reglas de `.cursor` deben añadirse a `.agent` y `.claude`.
 
 ### 3. Copia Skills SDD a `.agent`
 
-- Creado directorio: `.agent/02_Skills/04_Agent_Teams_Lite/`
+- Creado directorio: `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Agent_Teams_Lite/`
 - Copiados 9 skills SDD + 3 archivos shared:
   - 01_Sdd_Init
   - 02_Sdd_Explore
@@ -52,7 +52,7 @@ Investigar si las reglas de `.cursor` deben añadirse a `.agent` y `.claude`.
 
 ## Archivos Modificados
 
-- `.agent/02_Skills/04_Agent_Teams_Lite/*` (nuevo)
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Agent_Teams_Lite/*` (nuevo)
 
 - --
 * Sesión: 2026-03-17*

@@ -81,7 +81,7 @@ mkdir -p Knowledge/Transcripts
 Copy the included skills to your Claude skills folder:
 
 ```bash
-cp -r core/integrations/granola/skills/* 01_Core/03_Skills/
+cp -r core/integrations/granola/skills/* 01_Personal_Os/01_Core/02_Tools/02_Skills/
 ```
 
 This adds:
@@ -105,7 +105,7 @@ What it does:
 
 To install manually:
 ```bash
-cp -r core/integrations/granola/skills/meeting-sync 01_Core/03_Skills/
+cp -r core/integrations/granola/skills/meeting-sync 01_Personal_Os/01_Core/02_Tools/02_Skills/
 ```
 
 ## Available Tools

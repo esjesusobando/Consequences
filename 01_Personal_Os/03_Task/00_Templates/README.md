@@ -69,7 +69,7 @@ Resource_Refs:
 - **SDD Workflow:** `04_Agent_Teams_Lite/`
 - **Taste-Skills:** `06_Taste_Skills/`
 - **GGA Code Review:** `.agent/05_GGA/`
-- **Skills:** `.agent/02_Skills/`
+- **Skills:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
 ## Claude Context
 

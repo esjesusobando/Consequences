@@ -12,7 +12,7 @@
 
 | Aspecto                                                    | Detalle                                                                        |
 |------------------------------------------------------------|--------------------------------------------------------------------------------|
-| Canonical Source                                           | `.agent/02_Skills/` (fuente oficial)                                           |
+| Canonical Source                                           | `01_Personal_Os/01_Core/02_Tools/02_Skills/` (fuente oficial)                                           |
 | Mirror                                                     | `.cursor/02_Skills/` (README only, sincronizado)                               |
 | Total Active Skills                                        | 99 en 9 perfiles                                                               |
 | Backup Skills                                              | ~200 en 10_Backup/                                                             |
@@ -21,7 +21,7 @@
 ### Estructura de Carpetas Sincronizada
 
 ```
-.agent/02_Skills/     ← CANONICAL SOURCE (99 skills)
+01_Personal_Os/01_Core/02_Tools/02_Skills/     ← CANONICAL SOURCE (99 skills)
 .cursor/02_Skills/    ← MIRROR (README solo)
 ```
 

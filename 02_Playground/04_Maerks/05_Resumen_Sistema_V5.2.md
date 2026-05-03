@@ -67,10 +67,10 @@ Organización integral del sistema PersonalOS con focus en:
 
 | Skill                                | Ubicación                                                    | Origen                                  |
 |--------------------------------------|--------------------------------------------------------------|-----------------------------------------|
-| `find-skills`                        | `.agent/02_Skills/13_System_Master/`                         | Vercel AI SDK                           |
-| `shadcn`                             | `.agent/02_Skills/04_Product_Design/`                        | shadcn-ui                               |
-| `mcp-builder`                        | `.agent/02_Skills/13_System_Master/`                         | Anthropic                               |
-| `prd`                                | `.agent/02_Skills/03_Product_Manager/`                       | GitHub                                  |
+| `find-skills`                        | `01_Personal_Os/01_Core/02_Tools/02_Skills/13_System_Master/`                         | Vercel AI SDK                           |
+| `shadcn`                             | `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/`                        | shadcn-ui                               |
+| `mcp-builder`                        | `01_Personal_Os/01_Core/02_Tools/02_Skills/13_System_Master/`                         | Anthropic                               |
+| `prd`                                | `01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/`                       | GitHub                                  |
 
 ---
 

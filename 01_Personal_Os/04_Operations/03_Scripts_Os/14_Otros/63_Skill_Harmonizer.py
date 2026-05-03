@@ -26,7 +26,7 @@ import json
 
 
 def find_skills() -> dict:
-    """Encuentra todas las skills en 01_Core/03_Skills/."""
+    """Encuentra todas las skills en 01_Personal_Os/01_Core/02_Tools/02_Skills/."""
     skills = {}
 
     if not SKILLS_DIR.exists():

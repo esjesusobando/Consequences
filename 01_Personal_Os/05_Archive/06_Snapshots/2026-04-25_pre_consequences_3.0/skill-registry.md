@@ -89,7 +89,7 @@ Think_Different/
 ### Skill Registry Sources
 
 - User-level: `~/.config/opencode/skills/`
-- Project-level: `.agent/02_Skills/`
+- Project-level: `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 - SDD Config: `.atl/openspec/config.yaml`
 
 ---

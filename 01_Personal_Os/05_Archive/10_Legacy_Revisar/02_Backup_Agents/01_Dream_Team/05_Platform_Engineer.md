@@ -148,17 +148,17 @@ Este perfil construye la infraestructura y herramientas que hacen posible el des
 ### Skills Anthropic
 | Skill                    | Ubicación                                                         | Uso                           |
 |--------------------------|-------------------------------------------------------------------|-------------------------------|
-| **Evaluator Pattern**    | `01_Core/03_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`    | Cómo hacer adversarial eval   |
-| **Context Management**   | `01_Core/03_Skills/14_Anthropic_Harness/02_Context_Management/`   | Reset vs compaction           |
-| **Sprint Contract**      | `01_Core/03_Skills/14_Anthropic_Harness/03_Sprint_Contract/`      | Generator + Evaluator         |
+| **Evaluator Pattern**    | `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`    | Cómo hacer adversarial eval   |
+| **Context Management**   | `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/02_Context_Management/`   | Reset vs compaction           |
+| **Sprint Contract**      | `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/03_Sprint_Contract/`      | Generator + Evaluator         |
 
 ### Workflow
 - **17_Anthropic_Harness**: `01_Core/00_Workflows/17_Anthropic_Harness.md` — Workflow completo de 3 agentes
 
 ### Skills Base (Platform)
-- `01_Core/03_Skills/07_DevOps/` — 12 skills DevOps
-- `01_Core/03_Skills/13_System_Master/` — Configuración sistema
-- `01_Core/03_Skills/05_Vibe_Coding/16_MCP_Client/` — Integraciones MCP
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/` — 12 skills DevOps
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/13_System_Master/` — Configuración sistema
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/16_MCP_Client/` — Integraciones MCP
 
 ### Specialists
 - `01_Core/04_Agents/02_Specialists_Compound/Performance-Oracle.md`

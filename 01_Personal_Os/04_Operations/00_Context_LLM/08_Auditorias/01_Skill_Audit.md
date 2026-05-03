@@ -113,7 +113,7 @@
 
 1. **17_SEO_SOTA_Master** — Fix crítico:
    ```bash
-   python 01_Core/03_Skills/00_Skill_Auditor/scripts/fix-missing.py --skill 17_SEO_SOTA_Master
+   python 01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/scripts/fix-missing.py --skill 17_SEO_SOTA_Master
    ```
 
 ### Prioridad Media (Skills 70-89%)
@@ -144,7 +144,7 @@ Para ejecutar hasta obtener 100%:
 
 ```bash
 # Loop automático hasta 100%
-python 01_Core/03_Skills/00_Skill_Auditor/scripts/audit-loop.py
+python 01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/scripts/audit-loop.py
 ```
 
 Este script:
@@ -156,11 +156,11 @@ Este script:
 
 ## 📁 Archivos del Auditor
 
-- `01_Core/03_Skills/00_Skill_Auditor/SKILL.md` — Skill principal
-- `01_Core/03_Skills/00_Skill_Auditor/scripts/audit-skills.py` — Auditor
-- `01_Core/03_Skills/00_Skill_Auditor/scripts/validate-essence.py` — Validador de esencia
-- `01_Core/03_Skills/00_Skill_Auditor/scripts/fix-missing.py` — Auto-fixer
-- `01_Core/03_Skills/00_Skill_Auditor/references/` — Documentación
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/SKILL.md` — Skill principal
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/scripts/audit-skills.py` — Auditor
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/scripts/validate-essence.py` — Validador de esencia
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/scripts/fix-missing.py` — Auto-fixer
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/references/` — Documentación
 
 ---
 

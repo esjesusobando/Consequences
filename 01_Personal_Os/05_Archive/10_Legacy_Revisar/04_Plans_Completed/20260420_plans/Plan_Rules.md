@@ -430,7 +430,7 @@ alwaysApply: true
 | §6 | **Seguridad de Skills** | 23 líneas 110-136 | skill_security_scan.py. Niveles: CRITICAL (bloquear), HIGH (revisión manual), MEDIUM (corrección), LOW (informativo). 5 reglas de seguridad |
 | §7 | **Sistema de Scoring** | 23 líneas 139-190 | Modelo: 25% Completitud + 30% Calidad + 25% Seguridad + 20% Documentación. Rangos: Excellent (90+), Good (70-89), Needs Work (50-69), Failed (<50) |
 | §8 | **Ciclo de Vida** | 23 líneas 193-240 | 5 fases: Planning→Creation→Validation→Publication→Monitoring. Diagrama ASCII preservado |
-| §9 | **SKILL_TEMPLATE** | 23 líneas 243-273 | Template oficial en `01_Core/03_Skills/SKILL_TEMPLATE/`. Uso y estructura |
+| §9 | **SKILL_TEMPLATE** | 23 líneas 243-273 | Template oficial en `01_Personal_Os/01_Core/02_Tools/02_Skills/SKILL_TEMPLATE/`. Uso y estructura |
 | §10 | **Agent Teams Lite (Sub-Skills SDD)** | 23 líneas 277-302 | 10 sub-skills: sdd-init→sdd-archive. Tabla con función y requerimiento de examples/ |
 | §11 | **Ejemplos BAD/GOOD** | 06 líneas 49-60 + 07 líneas 62-76 + 23 líneas 306-354 | Fusión de ejemplos de los 3 archivos: comandos inventados, descripciones vagas, sin examples/, sin security scan |
 | §12 | **Checklist Consolidado** | 06 líneas 100-106 + 07 líneas 115-122 + 23 líneas 358-369 | Checklist unificado: slash commands + exoesqueletos + anatomía + seguridad + scoring |

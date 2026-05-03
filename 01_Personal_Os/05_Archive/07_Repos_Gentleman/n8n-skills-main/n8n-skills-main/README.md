@@ -155,7 +155,7 @@ Write Python code in n8n Code nodes with proper limitations awareness.
 git clone https://github.com/czlonkowski/n8n-skills.git
 
 # 2. Copy skills to your Claude Code skills directory
-cp -r n8n-skills/skills/* ~/01_Core/03_Skills/
+cp -r n8n-skills/skills/* ~/01_Personal_Os/01_Core/02_Tools/02_Skills/
 
 # 3. Reload Claude Code
 # Skills will activate automatically

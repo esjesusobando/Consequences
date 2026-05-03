@@ -450,7 +450,7 @@ Huge thanks to the community contributors who made this release possible! 🙌
 
 - **`design-iterator` agent** - Now auto-loads design skills at start of iterations
   - Added "Step 0: Discover and Load Design Skills (MANDATORY)" section
-  - Discovers skills from ~/01_Core/03_Skills/, 01_Core/03_Skills/, and plugin cache
+  - Discovers skills from ~/01_Personal_Os/01_Core/02_Tools/02_Skills/, 01_Personal_Os/01_Core/02_Tools/02_Skills/, and plugin cache
   - Maps user context to relevant skills (Swiss design → swiss-design skill, etc.)
   - Reads SKILL.md files to load principles into context before iterating
   - Extracts key principles: grid specs, typography rules, color philosophy, layout principles

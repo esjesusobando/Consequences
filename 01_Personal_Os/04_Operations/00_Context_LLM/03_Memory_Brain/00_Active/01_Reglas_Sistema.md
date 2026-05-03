@@ -133,7 +133,7 @@ Tie to goals and reference material.
 ### Estructura de Perfiles (Matrix Recargado)
 
 ```
-.agent/02_Skills/
+01_Personal_Os/01_Core/02_Tools/02_Skills/
 ├── 00_Compound_Engineering/  (131 componentes) 🔥 CE
 │   ├── 01_Agents_Review/     (23 agents)
 │   ├── 02_Agents_DocReview/  (6 agents)

@@ -7,7 +7,7 @@ _Last updated: March 20, 2026_
 ## Arquitectura del Sistema de Skills
 
 ```
-.agent/02_Skills/
+01_Personal_Os/01_Core/02_Tools/02_Skills/
 ├── 01_Core/              PRIORITY #1 (5 skills)
 ├── 02_High_Value/        PRIORITY #2 (46 skills)
 ├── 03_Utilities/         PRIORITY #3 (38 skills)
@@ -178,7 +178,7 @@ _Last updated: March 20, 2026_
 
 ## Reglas de Uso
 
-1. **Sincronización:** `.agent/02_Skills/07_Every/` → `.cursor/02_Skills/`
+1. **Sincronización:** `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Every/` → `.cursor/02_Skills/`
 2. **Taste-Skills:** Usar `06_Taste_Skills/` para TODO frontend
 3. **SDD:** Usar `04_Agent_Teams_Lite/` para desarrollo guiado por specs
 4. **Backup:** `05_Gentleman/` es referencia histórica — NO editar

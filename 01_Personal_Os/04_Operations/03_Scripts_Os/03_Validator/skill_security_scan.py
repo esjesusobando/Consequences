@@ -274,9 +274,9 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python skill_security_scan.py --skill 01_Core/03_Skills/25_Mi_Skill
-  python skill_security_scan.py --skill 01_Core/03_Skills/25_Mi_Skill --verbose
-  python skill_security_scan.py --skill 01_Core/03_Skills/25_Mi_Skill --output report.txt
+  python skill_security_scan.py --skill 01_Personal_Os/01_Core/02_Tools/02_Skills/25_Mi_Skill
+  python skill_security_scan.py --skill 01_Personal_Os/01_Core/02_Tools/02_Skills/25_Mi_Skill --verbose
+  python skill_security_scan.py --skill 01_Personal_Os/01_Core/02_Tools/02_Skills/25_Mi_Skill --output report.txt
         """,
     )
 

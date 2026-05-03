@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate accurate directory tree for .agent/02_Skills/ with skill counts.
+Generate accurate directory tree for 01_Personal_Os/01_Core/02_Tools/02_Skills/ with skill counts.
 """
 
 from pathlib import Path
@@ -60,8 +60,8 @@ def generate_tree(dir_path, prefix="", max_depth=3, current_depth=0):
 
 
 def main():
-    print("=== DIRECTORY TREE: .agent/02_Skills/ ===\n")
-    print(".agent/02_Skills/")
+    print("=== DIRECTORY TREE: 01_Personal_Os/01_Core/02_Tools/02_Skills/ ===\n")
+    print("01_Personal_Os/01_Core/02_Tools/02_Skills/")
 
     tree_lines = generate_tree(SKILLS_DIR, max_depth=3)
     for line in tree_lines:

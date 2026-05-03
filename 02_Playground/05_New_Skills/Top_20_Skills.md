@@ -73,20 +73,20 @@
 
 | Skill                            | Path                                                                                    |
 |----------------------------------|-----------------------------------------------------------------------------------------|
-| Ce-*                             | `01_Core/03_Skills/00_Compound_Engineering/07_Skills/`                                  |
-| Lfg                              | `01_Core/03_Skills/00_Compound_Engineering/07_Skills/lfg/`                              |
-| Frontend-Design                  | `01_Core/03_Skills/00_Compound_Engineering/07_Skills/frontend-design/`                  |
-| TypeScript                       | `01_Core/03_Skills/05_Vibe_Coding/05_Typescript/`                                       |
-| React-19                         | `01_Core/03_Skills/05_Vibe_Coding/01_React_19/`                                         |
-| Nextjs-15                        | `01_Core/03_Skills/05_Vibe_Coding/02_Nextjs_15/`                                        |
-| Tailwind-4                       | `01_Core/03_Skills/05_Vibe_Coding/03_Tailwind_4/`                                       |
-| Zod-4                            | `01_Core/03_Skills/05_Vibe_Coding/07_Zod_4/`                                            |
-| Mcp-Client                       | `01_Core/03_Skills/05_Vibe_Coding/10_Mcp_Client/`                                       |
-| Git-*                            | `01_Core/03_Skills/00_Compound_Engineering/07_Skills/`                                  |
-| Onboarding                       | `01_Core/03_Skills/00_Compound_Engineering/07_Skills/onboarding/`                       |
-| Every-Style-Editor               | `01_Core/03_Skills/00_Compound_Engineering/07_Skills/every-style-editor/`               |
-| Test-Browser                     | `01_Core/03_Skills/00_Compound_Engineering/07_Skills/test-browser/`                     |
-| Proof                            | `01_Core/03_Skills/00_Compound_Engineering/07_Skills/proof/`                            |
+| Ce-*                             | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/`                                  |
+| Lfg                              | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/lfg/`                              |
+| Frontend-Design                  | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/frontend-design/`                  |
+| TypeScript                       | `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/05_Typescript/`                                       |
+| React-19                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/01_React_19/`                                         |
+| Nextjs-15                        | `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/02_Nextjs_15/`                                        |
+| Tailwind-4                       | `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/03_Tailwind_4/`                                       |
+| Zod-4                            | `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/07_Zod_4/`                                            |
+| Mcp-Client                       | `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/10_Mcp_Client/`                                       |
+| Git-*                            | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/`                                  |
+| Onboarding                       | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/onboarding/`                       |
+| Every-Style-Editor               | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/every-style-editor/`               |
+| Test-Browser                     | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/test-browser/`                     |
+| Proof                            | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/proof/`                            |
 
 ---
 

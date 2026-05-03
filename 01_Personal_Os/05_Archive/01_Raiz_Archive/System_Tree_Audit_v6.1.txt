@@ -114,7 +114,7 @@ README.md
 README.md
 SKILL_TEMPLATE
 
-01_Core/03_Skills/00_Compound_Engineering:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering:
 01_Agents_Review
 02_Agents_DocReview
 03_Agents_Design
@@ -125,7 +125,7 @@ SKILL_TEMPLATE
 08_MCP
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/01_Agents_Review:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/01_Agents_Review:
 agent-native-reviewer.md
 api-contract-reviewer.md
 architecture-strategist.md
@@ -150,7 +150,7 @@ security-reviewer.md
 security-sentinel.md
 testing-reviewer.md
 
-01_Core/03_Skills/00_Compound_Engineering/02_Agents_DocReview:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/02_Agents_DocReview:
 coherence-reviewer.md
 design-lens-reviewer.md
 feasibility-reviewer.md
@@ -158,12 +158,12 @@ product-lens-reviewer.md
 scope-guardian-reviewer.md
 security-lens-reviewer.md
 
-01_Core/03_Skills/00_Compound_Engineering/03_Agents_Design:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/03_Agents_Design:
 design-implementation-reviewer.md
 design-iterator.md
 figma-design-sync.md
 
-01_Core/03_Skills/00_Compound_Engineering/04_Agents_Research:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/04_Agents_Research:
 best-practices-researcher.md
 framework-docs-researcher.md
 git-history-analyzer.md
@@ -171,16 +171,16 @@ issue-intelligence-analyst.md
 learnings-researcher.md
 repo-research-analyst.md
 
-01_Core/03_Skills/00_Compound_Engineering/05_Agents_Workflow:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/05_Agents_Workflow:
 bug-reproduction-validator.md
 lint.md
 pr-comment-resolver.md
 spec-flow-analyzer.md
 
-01_Core/03_Skills/00_Compound_Engineering/06_Agents_Docs:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/06_Agents_Docs:
 ankane-readme-writer.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills:
 agent-browser
 agent-native-architecture
 agent-native-audit
@@ -223,12 +223,12 @@ todo-create
 todo-resolve
 todo-triage
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/agent-browser:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/agent-browser:
 SKILL.md
 references
 templates
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/agent-browser/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/agent-browser/references:
 authentication.md
 commands.md
 profiling.md
@@ -237,16 +237,16 @@ session-management.md
 snapshot-refs.md
 video-recording.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/agent-browser/templates:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/agent-browser/templates:
 authenticated-session.sh
 capture-workflow.sh
 form-automation.sh
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/agent-native-architecture:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/agent-native-architecture:
 SKILL.md
 references
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/agent-native-architecture/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/agent-native-architecture/references:
 action-parity-discipline.md
 agent-execution-patterns.md
 agent-native-testing.md
@@ -262,86 +262,86 @@ self-modification.md
 shared-workspace-architecture.md
 system-prompt-design.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/agent-native-audit:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/agent-native-audit:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/andrew-kane-gem-writer:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/andrew-kane-gem-writer:
 SKILL.md
 references
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/andrew-kane-gem-writer/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/andrew-kane-gem-writer/references:
 database-adapters.md
 module-organization.md
 rails-integration.md
 resources.md
 testing-patterns.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/ce-brainstorm:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/ce-brainstorm:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/ce-compound:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/ce-compound:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/ce-compound-refresh:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/ce-compound-refresh:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/ce-ideate:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/ce-ideate:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/ce-plan:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/ce-plan:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/ce-review:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/ce-review:
 SKILL.md
 references
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/ce-review/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/ce-review/references:
 diff-scope.md
 findings-schema.json
 persona-catalog.md
 review-output-template.md
 subagent-template.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/ce-work:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/ce-work:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/ce-work-beta:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/ce-work-beta:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/changelog:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/changelog:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/claude-permissions-optimizer:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/claude-permissions-optimizer:
 SKILL.md
 scripts
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/claude-permissions-optimizer/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/claude-permissions-optimizer/scripts:
 extract-commands.mjs
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/compound-docs:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/compound-docs:
 SKILL.md
 assets
 references
 schema.yaml
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/compound-docs/assets:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/compound-docs/assets:
 critical-pattern-template.md
 resolution-template.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/compound-docs/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/compound-docs/references:
 yaml-schema.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/deepen-plan:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/deepen-plan:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/deploy-docs:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/deploy-docs:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/dhh-rails-style:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/dhh-rails-style:
 SKILL.md
 references
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/dhh-rails-style/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/dhh-rails-style/references:
 architecture.md
 controllers.md
 frontend.md
@@ -349,51 +349,51 @@ gems.md
 models.md
 testing.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/document-review:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/document-review:
 SKILL.md
 references
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/document-review/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/document-review/references:
 findings-schema.json
 review-output-template.md
 subagent-template.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/dspy-ruby:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/dspy-ruby:
 SKILL.md
 assets
 references
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/dspy-ruby/assets:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/dspy-ruby/assets:
 config-template.rb
 module-template.rb
 signature-template.rb
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/dspy-ruby/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/dspy-ruby/references:
 core-concepts.md
 observability.md
 optimization.md
 providers.md
 toolsets.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/every-style-editor:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/every-style-editor:
 SKILL.md
 references
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/every-style-editor/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/every-style-editor/references:
 EVERY_WRITE_STYLE.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/feature-video:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/feature-video:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/frontend-design:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/frontend-design:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/gemini-imagegen:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/gemini-imagegen:
 SKILL.md
 requirements.txt
 scripts
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/gemini-imagegen/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/gemini-imagegen/scripts:
 __pycache__
 compose_images.py
 edit_image.py
@@ -401,85 +401,85 @@ gemini_images.py
 generate_image.py
 multi_turn_chat.py
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/gemini-imagegen/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/gemini-imagegen/scripts/__pycache__:
 compose_images.cpython-314.pyc
 edit_image.cpython-314.pyc
 gemini_images.cpython-314.pyc
 generate_image.cpython-314.pyc
 multi_turn_chat.cpython-314.pyc
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/generate_command:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/generate_command:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/gentleman-compound-mastery:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/gentleman-compound-mastery:
 SKILL.md
 metadata.yaml
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/git-worktree:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/git-worktree:
 SKILL.md
 scripts
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/git-worktree/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/git-worktree/scripts:
 worktree-manager.sh
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/lfg:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/lfg:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/orchestrating-swarms:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/orchestrating-swarms:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/proof:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/proof:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/rclone:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/rclone:
 SKILL.md
 scripts
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/rclone/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/rclone/scripts:
 check_setup.sh
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/report-bug-ce:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/report-bug-ce:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/reproduce-bug:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/reproduce-bug:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/resolve-pr-parallel:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/resolve-pr-parallel:
 SKILL.md
 scripts
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/resolve-pr-parallel/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/resolve-pr-parallel/scripts:
 get-pr-comments
 resolve-pr-thread
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/setup:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/setup:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/slfg:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/slfg:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/test-browser:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/test-browser:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/test-xcode:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/test-xcode:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/todo-create:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/todo-create:
 SKILL.md
 assets
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/todo-create/assets:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/todo-create/assets:
 todo-template.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/todo-resolve:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/todo-resolve:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/07_Skills/todo-triage:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/todo-triage:
 SKILL.md
 
-01_Core/03_Skills/00_Compound_Engineering/08_MCP:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/08_MCP:
 
-01_Core/03_Skills/00_Personal_Os_Stack:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os_Stack:
 01_Hooks
 01_Personal_Os.md
 02_SDD_Workflow.md
@@ -489,37 +489,37 @@ SKILL.md
 04_Backlog_Processing.md
 SKILL.md
 
-01_Core/03_Skills/00_Personal_Os_Stack/01_Hooks:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os_Stack/01_Hooks:
 hooks.json
 task-complete-sound.sh
 
-01_Core/03_Skills/00_Personal_Os_Stack/02_Scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os_Stack/02_Scripts:
 
-01_Core/03_Skills/00_Personal_Os_Stack/03_References:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os_Stack/03_References:
 
-01_Core/03_Skills/00_Skill_Auditor:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor:
 01_Scripts
 02_References
 SKILL.md
 
-01_Core/03_Skills/00_Skill_Auditor/01_Scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/01_Scripts:
 __pycache__
 audit-loop.py
 audit-skills.py
 fix-missing.py
 validate-essence.py
 
-01_Core/03_Skills/00_Skill_Auditor/01_Scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/01_Scripts/__pycache__:
 audit-loop.cpython-314.pyc
 audit-skills.cpython-314.pyc
 fix-missing.cpython-314.pyc
 validate-essence.cpython-314.pyc
 
-01_Core/03_Skills/00_Skill_Auditor/02_References:
+01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/02_References:
 anthropic-standards.md
 audit-criteria.md
 
-01_Core/03_Skills/01_Agent_Teams_Lite:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite:
 01_Shared
 02_Sdd_Init
 03_Sdd_Explore
@@ -532,84 +532,84 @@ audit-criteria.md
 10_Sdd_Archive
 README.md
 
-01_Core/03_Skills/01_Agent_Teams_Lite/01_Shared:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/01_Shared:
 engram-convention.md
 openspec-convention.md
 persistence-contract.md
 
-01_Core/03_Skills/01_Agent_Teams_Lite/02_Sdd_Init:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/02_Sdd_Init:
 SKILL.md
 examples
 
-01_Core/03_Skills/01_Agent_Teams_Lite/02_Sdd_Init/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/02_Sdd_Init/examples:
 bad_example.md
 good_example.md
 
-01_Core/03_Skills/01_Agent_Teams_Lite/03_Sdd_Explore:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/03_Sdd_Explore:
 SKILL.md
 examples
 
-01_Core/03_Skills/01_Agent_Teams_Lite/03_Sdd_Explore/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/03_Sdd_Explore/examples:
 bad_example.md
 good_example.md
 
-01_Core/03_Skills/01_Agent_Teams_Lite/04_Sdd_Propose:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/04_Sdd_Propose:
 SKILL.md
 examples
 
-01_Core/03_Skills/01_Agent_Teams_Lite/04_Sdd_Propose/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/04_Sdd_Propose/examples:
 bad_example.md
 good_example.md
 
-01_Core/03_Skills/01_Agent_Teams_Lite/05_Sdd_Spec:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/05_Sdd_Spec:
 SKILL.md
 examples
 
-01_Core/03_Skills/01_Agent_Teams_Lite/05_Sdd_Spec/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/05_Sdd_Spec/examples:
 bad_example.md
 good_example.md
 
-01_Core/03_Skills/01_Agent_Teams_Lite/06_Sdd_Design:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/06_Sdd_Design:
 SKILL.md
 examples
 
-01_Core/03_Skills/01_Agent_Teams_Lite/06_Sdd_Design/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/06_Sdd_Design/examples:
 bad_example.md
 good_example.md
 
-01_Core/03_Skills/01_Agent_Teams_Lite/07_Sdd_Tasks:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/07_Sdd_Tasks:
 SKILL.md
 examples
 
-01_Core/03_Skills/01_Agent_Teams_Lite/07_Sdd_Tasks/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/07_Sdd_Tasks/examples:
 bad_example.md
 good_example.md
 
-01_Core/03_Skills/01_Agent_Teams_Lite/08_Sdd_Apply:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/08_Sdd_Apply:
 SKILL.md
 examples
 
-01_Core/03_Skills/01_Agent_Teams_Lite/08_Sdd_Apply/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/08_Sdd_Apply/examples:
 bad_example.md
 good_example.md
 
-01_Core/03_Skills/01_Agent_Teams_Lite/09_Sdd_Verify:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/09_Sdd_Verify:
 SKILL.md
 examples
 
-01_Core/03_Skills/01_Agent_Teams_Lite/09_Sdd_Verify/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/09_Sdd_Verify/examples:
 bad_example.md
 good_example.md
 
-01_Core/03_Skills/01_Agent_Teams_Lite/10_Sdd_Archive:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/10_Sdd_Archive:
 SKILL.md
 examples
 
-01_Core/03_Skills/01_Agent_Teams_Lite/10_Sdd_Archive/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/01_Agent_Teams_Lite/10_Sdd_Archive/examples:
 bad_example.md
 good_example.md
 
-01_Core/03_Skills/02_Project_Manager:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager:
 01_Morning_Standup
 02_Backlog_Processing
 03_Weekly_Review
@@ -620,149 +620,149 @@ good_example.md
 08_Content_Generation
 README.md
 
-01_Core/03_Skills/02_Project_Manager/01_Morning_Standup:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/01_Morning_Standup:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/02_Project_Manager/01_Morning_Standup/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/01_Morning_Standup/references:
 goals-alignment.md
 priority-guide.md
 workflow-examples.md
 
-01_Core/03_Skills/02_Project_Manager/01_Morning_Standup/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/01_Morning_Standup/scripts:
 __pycache__
 check-blockers.py
 format-standup.py
 
-01_Core/03_Skills/02_Project_Manager/01_Morning_Standup/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/01_Morning_Standup/scripts/__pycache__:
 check-blockers.cpython-314.pyc
 format-standup.cpython-314.pyc
 
-01_Core/03_Skills/02_Project_Manager/02_Backlog_Processing:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/02_Backlog_Processing:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/02_Project_Manager/02_Backlog_Processing/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/02_Backlog_Processing/references:
 dedup-guide.md
 priority-matrix.md
 
-01_Core/03_Skills/02_Project_Manager/02_Backlog_Processing/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/02_Backlog_Processing/scripts:
 __pycache__
 backlog-triage.py
 
-01_Core/03_Skills/02_Project_Manager/02_Backlog_Processing/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/02_Backlog_Processing/scripts/__pycache__:
 backlog-triage.cpython-314.pyc
 
-01_Core/03_Skills/02_Project_Manager/03_Weekly_Review:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/03_Weekly_Review:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/02_Project_Manager/03_Weekly_Review/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/03_Weekly_Review/references:
 progress-metrics.md
 reflection-guide.md
 
-01_Core/03_Skills/02_Project_Manager/03_Weekly_Review/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/03_Weekly_Review/scripts:
 __pycache__
 analyze-progress.py
 
-01_Core/03_Skills/02_Project_Manager/03_Weekly_Review/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/03_Weekly_Review/scripts/__pycache__:
 analyze-progress.cpython-314.pyc
 
-01_Core/03_Skills/02_Project_Manager/04_Sunday_Ritual:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/04_Sunday_Ritual:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/02_Project_Manager/04_Sunday_Ritual/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/04_Sunday_Ritual/references:
 ritual-guide.md
 weekly-metrics.md
 
-01_Core/03_Skills/02_Project_Manager/04_Sunday_Ritual/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/04_Sunday_Ritual/scripts:
 __pycache__
 archive-completed.py
 weekly-metrics.py
 
-01_Core/03_Skills/02_Project_Manager/04_Sunday_Ritual/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/04_Sunday_Ritual/scripts/__pycache__:
 archive-completed.cpython-314.pyc
 weekly-metrics.cpython-314.pyc
 
-01_Core/03_Skills/02_Project_Manager/05_Best_Practices:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/05_Best_Practices:
 README.md
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/02_Project_Manager/05_Best_Practices/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/05_Best_Practices/references:
 atomic-tasks.md
 dag-guide.md
 wave-execution.md
 
-01_Core/03_Skills/02_Project_Manager/05_Best_Practices/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/05_Best_Practices/scripts:
 __pycache__
 python_mcp_skill1.py
 python_setup_files1.py
 
-01_Core/03_Skills/02_Project_Manager/05_Best_Practices/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/05_Best_Practices/scripts/__pycache__:
 python_mcp_skill1.cpython-314.pyc
 python_setup_files1.cpython-314.pyc
 
-01_Core/03_Skills/02_Project_Manager/06_Finishing_A_Development_Branch:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/06_Finishing_A_Development_Branch:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/02_Project_Manager/06_Finishing_A_Development_Branch/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/06_Finishing_A_Development_Branch/references:
 README.md
 
-01_Core/03_Skills/02_Project_Manager/06_Finishing_A_Development_Branch/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/06_Finishing_A_Development_Branch/scripts:
 README.md
 __pycache__
 finish-branch.py
 
-01_Core/03_Skills/02_Project_Manager/06_Finishing_A_Development_Branch/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/06_Finishing_A_Development_Branch/scripts/__pycache__:
 finish-branch.cpython-314.pyc
 
-01_Core/03_Skills/02_Project_Manager/07_Running_Tests:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/07_Running_Tests:
 SKILL.md
 examples
 references
 scripts
 
-01_Core/03_Skills/02_Project_Manager/07_Running_Tests/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/07_Running_Tests/examples:
 phase_run_example.md
 quick_run_example.md
 
-01_Core/03_Skills/02_Project_Manager/07_Running_Tests/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/07_Running_Tests/references:
 README.md
 
-01_Core/03_Skills/02_Project_Manager/07_Running_Tests/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/07_Running_Tests/scripts:
 README.md
 __pycache__
 run-tests.py
 
-01_Core/03_Skills/02_Project_Manager/07_Running_Tests/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/07_Running_Tests/scripts/__pycache__:
 run-tests.cpython-314.pyc
 
-01_Core/03_Skills/02_Project_Manager/08_Content_Generation:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/08_Content_Generation:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/02_Project_Manager/08_Content_Generation/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/08_Content_Generation/references:
 README.md
 
-01_Core/03_Skills/02_Project_Manager/08_Content_Generation/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/08_Content_Generation/scripts:
 README.md
 __pycache__
 generate-content.py
 
-01_Core/03_Skills/02_Project_Manager/08_Content_Generation/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/08_Content_Generation/scripts/__pycache__:
 generate-content.cpython-314.pyc
 
-01_Core/03_Skills/03_Product_Manager:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager:
 01_Brainstorming
 02_Technical_Planning
 03_Executing_Plans
@@ -773,126 +773,126 @@ generate-content.cpython-314.pyc
 08_Prd
 README.md
 
-01_Core/03_Skills/03_Product_Manager/01_Brainstorming:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/01_Brainstorming:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/03_Product_Manager/01_Brainstorming/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/01_Brainstorming/references:
 brainstorm-templates.md
 tradeoffs-guide.md
 
-01_Core/03_Skills/03_Product_Manager/01_Brainstorming/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/01_Brainstorming/scripts:
 __pycache__
 brainstorm-helper.py
 
-01_Core/03_Skills/03_Product_Manager/01_Brainstorming/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/01_Brainstorming/scripts/__pycache__:
 brainstorm-helper.cpython-314.pyc
 
-01_Core/03_Skills/03_Product_Manager/02_Technical_Planning:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/02_Technical_Planning:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/03_Product_Manager/02_Technical_Planning/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/02_Technical_Planning/references:
 sop-templates
 task-structure.md
 
-01_Core/03_Skills/03_Product_Manager/02_Technical_Planning/references/sop-templates:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/02_Technical_Planning/references/sop-templates:
 runbook.md
 standard-sop.md
 
-01_Core/03_Skills/03_Product_Manager/02_Technical_Planning/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/02_Technical_Planning/scripts:
 __pycache__
 plan-generator.py
 
-01_Core/03_Skills/03_Product_Manager/02_Technical_Planning/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/02_Technical_Planning/scripts/__pycache__:
 plan-generator.cpython-314.pyc
 
-01_Core/03_Skills/03_Product_Manager/03_Executing_Plans:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/03_Executing_Plans:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/03_Product_Manager/03_Executing_Plans/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/03_Executing_Plans/references:
 batch-execution.md
 checkpoint-template.md
 
-01_Core/03_Skills/03_Product_Manager/03_Executing_Plans/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/03_Executing_Plans/scripts:
 __pycache__
 execute-plan.py
 
-01_Core/03_Skills/03_Product_Manager/03_Executing_Plans/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/03_Executing_Plans/scripts/__pycache__:
 execute-plan.cpython-314.pyc
 
-01_Core/03_Skills/03_Product_Manager/04_Jira_Epic:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/04_Jira_Epic:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/03_Product_Manager/04_Jira_Epic/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/04_Jira_Epic/references:
 epic-template.md
 mcp-commands.md
 
-01_Core/03_Skills/03_Product_Manager/04_Jira_Epic/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/04_Jira_Epic/scripts:
 __pycache__
 create-epic.py
 
-01_Core/03_Skills/03_Product_Manager/04_Jira_Epic/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/04_Jira_Epic/scripts/__pycache__:
 create-epic.cpython-314.pyc
 
-01_Core/03_Skills/03_Product_Manager/05_Jira_Task:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/05_Jira_Task:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/03_Product_Manager/05_Jira_Task/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/05_Jira_Task/references:
 task-template.md
 title-conventions.md
 
-01_Core/03_Skills/03_Product_Manager/05_Jira_Task/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/05_Jira_Task/scripts:
 __pycache__
 create-task.py
 
-01_Core/03_Skills/03_Product_Manager/05_Jira_Task/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/05_Jira_Task/scripts/__pycache__:
 create-task.cpython-314.pyc
 
-01_Core/03_Skills/03_Product_Manager/06_Branch_Pr:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/06_Branch_Pr:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/03_Product_Manager/06_Branch_Pr/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/06_Branch_Pr/references:
 branch-naming.md
 commit-format.md
 
-01_Core/03_Skills/03_Product_Manager/06_Branch_Pr/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/06_Branch_Pr/scripts:
 __pycache__
 create-pr.py
 
-01_Core/03_Skills/03_Product_Manager/06_Branch_Pr/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/06_Branch_Pr/scripts/__pycache__:
 create-pr.cpython-314.pyc
 
-01_Core/03_Skills/03_Product_Manager/07_Writing_Strategy_Memos:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/07_Writing_Strategy_Memos:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/03_Product_Manager/07_Writing_Strategy_Memos/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/07_Writing_Strategy_Memos/references:
 focusflow-framework.md
 memo-examples.md
 
-01_Core/03_Skills/03_Product_Manager/07_Writing_Strategy_Memos/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/07_Writing_Strategy_Memos/scripts:
 __pycache__
 generate-memo.py
 
-01_Core/03_Skills/03_Product_Manager/07_Writing_Strategy_Memos/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/07_Writing_Strategy_Memos/scripts/__pycache__:
 generate-memo.cpython-314.pyc
 
-01_Core/03_Skills/03_Product_Manager/08_Prd:
+01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/08_Prd:
 SKILL.md
 
-01_Core/03_Skills/04_Product_Design:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design:
 01_Taste_Skill
 02_Soft_Skill
 03_Minimalist_Skill
@@ -907,115 +907,115 @@ SKILL.md
 12_Shadcn
 README.md
 
-01_Core/03_Skills/04_Product_Design/01_Taste_Skill:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/01_Taste_Skill:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/04_Product_Design/01_Taste_Skill/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/01_Taste_Skill/references:
 color-system.md
 design-rules.md
 
-01_Core/03_Skills/04_Product_Design/01_Taste_Skill/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/01_Taste_Skill/scripts:
 __pycache__
 validate-design.py
 
-01_Core/03_Skills/04_Product_Design/01_Taste_Skill/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/01_Taste_Skill/scripts/__pycache__:
 validate-design.cpython-314.pyc
 
-01_Core/03_Skills/04_Product_Design/02_Soft_Skill:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/02_Soft_Skill:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/04_Product_Design/02_Soft_Skill/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/02_Soft_Skill/references:
 anti-patterns.md
 archetypes.md
 
-01_Core/03_Skills/04_Product_Design/02_Soft_Skill/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/02_Soft_Skill/scripts:
 __pycache__
 validate-premium.py
 
-01_Core/03_Skills/04_Product_Design/02_Soft_Skill/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/02_Soft_Skill/scripts/__pycache__:
 validate-premium.cpython-314.pyc
 
-01_Core/03_Skills/04_Product_Design/03_Minimalist_Skill:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/03_Minimalist_Skill:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/04_Product_Design/03_Minimalist_Skill/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/03_Minimalist_Skill/references:
 palette.md
 typography.md
 
-01_Core/03_Skills/04_Product_Design/03_Minimalist_Skill/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/03_Minimalist_Skill/scripts:
 __pycache__
 validate-minimal.py
 
-01_Core/03_Skills/04_Product_Design/03_Minimalist_Skill/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/03_Minimalist_Skill/scripts/__pycache__:
 validate-minimal.cpython-314.pyc
 
-01_Core/03_Skills/04_Product_Design/04_Redesign_Skill:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/04_Redesign_Skill:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/04_Product_Design/04_Redesign_Skill/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/04_Redesign_Skill/references:
 audit-checklist.md
 upgrade-patterns.md
 
-01_Core/03_Skills/04_Product_Design/04_Redesign_Skill/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/04_Redesign_Skill/scripts:
 __pycache__
 audit-design.py
 
-01_Core/03_Skills/04_Product_Design/04_Redesign_Skill/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/04_Redesign_Skill/scripts/__pycache__:
 audit-design.cpython-314.pyc
 
-01_Core/03_Skills/04_Product_Design/05_Output_Skill:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/05_Output_Skill:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/04_Product_Design/05_Output_Skill/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/05_Output_Skill/references:
 banned-patterns.md
 split-strategy.md
 
-01_Core/03_Skills/04_Product_Design/05_Output_Skill/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/05_Output_Skill/scripts:
 __pycache__
 validate-output.py
 
-01_Core/03_Skills/04_Product_Design/05_Output_Skill/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/05_Output_Skill/scripts/__pycache__:
 validate-output.cpython-314.pyc
 
-01_Core/03_Skills/04_Product_Design/06_Dieter_Rams_Design:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/06_Dieter_Rams_Design:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/04_Product_Design/06_Dieter_Rams_Design/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/06_Dieter_Rams_Design/references:
 10-principles.md
 audit-template.md
 
-01_Core/03_Skills/04_Product_Design/06_Dieter_Rams_Design/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/06_Dieter_Rams_Design/scripts:
 __pycache__
 audit-ram.py
 dieter_rams_design_skill.py
 
-01_Core/03_Skills/04_Product_Design/06_Dieter_Rams_Design/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/06_Dieter_Rams_Design/scripts/__pycache__:
 audit-ram.cpython-314.pyc
 dieter_rams_design_skill.cpython-314.pyc
 
-01_Core/03_Skills/04_Product_Design/07_Brand_Identity:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/07_Brand_Identity:
 SKILL.md
 references
 resources
 scripts
 
-01_Core/03_Skills/04_Product_Design/07_Brand_Identity/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/07_Brand_Identity/references:
 design-tokens.md
 voice-tone.md
 
-01_Core/03_Skills/04_Product_Design/07_Brand_Identity/resources:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/07_Brand_Identity/resources:
 assets.md
 design-tokens.json
 examples
@@ -1024,81 +1024,81 @@ tech-stack.md
 ux-trust-guidelines.md
 voice-tone.md
 
-01_Core/03_Skills/04_Product_Design/07_Brand_Identity/resources/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/07_Brand_Identity/resources/examples:
 homepage.html
 
-01_Core/03_Skills/04_Product_Design/07_Brand_Identity/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/07_Brand_Identity/scripts:
 __pycache__
 validate-brand.py
 
-01_Core/03_Skills/04_Product_Design/07_Brand_Identity/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/07_Brand_Identity/scripts/__pycache__:
 validate-brand.cpython-314.pyc
 
-01_Core/03_Skills/04_Product_Design/08_Brand_Voice_Generator:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/08_Brand_Voice_Generator:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/04_Product_Design/08_Brand_Voice_Generator/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/08_Brand_Voice_Generator/references:
 brand-schema.md
 voice-questions.md
 
-01_Core/03_Skills/04_Product_Design/08_Brand_Voice_Generator/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/08_Brand_Voice_Generator/scripts:
 __pycache__
 generate-brand.py
 
-01_Core/03_Skills/04_Product_Design/08_Brand_Voice_Generator/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/08_Brand_Voice_Generator/scripts/__pycache__:
 generate-brand.cpython-314.pyc
 
-01_Core/03_Skills/04_Product_Design/09_Canvas_Diagram_Studio:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/09_Canvas_Diagram_Studio:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/04_Product_Design/09_Canvas_Diagram_Studio/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/09_Canvas_Diagram_Studio/references:
 diagram-types.md
 excalidraw-tips.md
 
-01_Core/03_Skills/04_Product_Design/09_Canvas_Diagram_Studio/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/09_Canvas_Diagram_Studio/scripts:
 __pycache__
 create-diagram.py
 
-01_Core/03_Skills/04_Product_Design/09_Canvas_Diagram_Studio/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/09_Canvas_Diagram_Studio/scripts/__pycache__:
 create-diagram.cpython-314.pyc
 
-01_Core/03_Skills/04_Product_Design/10_Visual_Language:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/10_Visual_Language:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/04_Product_Design/10_Visual_Language/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/10_Visual_Language/references:
 palette-engram.md
 visual-rules.md
 
-01_Core/03_Skills/04_Product_Design/10_Visual_Language/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/10_Visual_Language/scripts:
 __pycache__
 validate-visual.py
 
-01_Core/03_Skills/04_Product_Design/10_Visual_Language/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/10_Visual_Language/scripts/__pycache__:
 validate-visual.cpython-314.pyc
 
-01_Core/03_Skills/04_Product_Design/11_Pencil_Design_Studio:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/11_Pencil_Design_Studio:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/04_Product_Design/11_Pencil_Design_Studio/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/11_Pencil_Design_Studio/references:
 design-workflow.md
 mcp-tools.md
 
-01_Core/03_Skills/04_Product_Design/11_Pencil_Design_Studio/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/11_Pencil_Design_Studio/scripts:
 __pycache__
 generate-screen.py
 
-01_Core/03_Skills/04_Product_Design/11_Pencil_Design_Studio/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/11_Pencil_Design_Studio/scripts/__pycache__:
 generate-screen.cpython-314.pyc
 
-01_Core/03_Skills/04_Product_Design/12_Shadcn:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/12_Shadcn:
 SKILL.md
 agents
 assets
@@ -1108,24 +1108,24 @@ evals
 mcp.md
 rules
 
-01_Core/03_Skills/04_Product_Design/12_Shadcn/agents:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/12_Shadcn/agents:
 openai.yml
 
-01_Core/03_Skills/04_Product_Design/12_Shadcn/assets:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/12_Shadcn/assets:
 shadcn-small.png
 shadcn.png
 
-01_Core/03_Skills/04_Product_Design/12_Shadcn/evals:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/12_Shadcn/evals:
 evals.json
 
-01_Core/03_Skills/04_Product_Design/12_Shadcn/rules:
+01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/12_Shadcn/rules:
 base-vs-radix.md
 composition.md
 forms.md
 icons.md
 styling.md
 
-01_Core/03_Skills/05_Vibe_Coding:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding:
 01_React_19
 02_Nextjs_15
 03_Tailwind_4
@@ -1147,52 +1147,52 @@ styling.md
 19_Meilisearch
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/01_React_19:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/01_React_19:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/01_React_19/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/01_React_19/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/01_React_19/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/01_React_19/scripts:
 __init__.py
 __pycache__
 
-01_Core/03_Skills/05_Vibe_Coding/01_React_19/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/01_React_19/scripts/__pycache__:
 __init__.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/02_Nextjs_15:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/02_Nextjs_15:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/02_Nextjs_15/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/02_Nextjs_15/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/02_Nextjs_15/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/02_Nextjs_15/scripts:
 __init__.py
 __pycache__
 
-01_Core/03_Skills/05_Vibe_Coding/02_Nextjs_15/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/02_Nextjs_15/scripts/__pycache__:
 __init__.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/03_Tailwind_4:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/03_Tailwind_4:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/03_Tailwind_4/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/03_Tailwind_4/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/03_Tailwind_4/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/03_Tailwind_4/scripts:
 __init__.py
 __pycache__
 
-01_Core/03_Skills/05_Vibe_Coding/03_Tailwind_4/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/03_Tailwind_4/scripts/__pycache__:
 __init__.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/04_Angular:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/04_Angular:
 SKILL.md
 architecture
 core
@@ -1201,135 +1201,135 @@ performance
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/04_Angular/architecture:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/04_Angular/architecture:
 SKILL.md
 
-01_Core/03_Skills/05_Vibe_Coding/04_Angular/core:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/04_Angular/core:
 SKILL.md
 
-01_Core/03_Skills/05_Vibe_Coding/04_Angular/forms:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/04_Angular/forms:
 SKILL.md
 
-01_Core/03_Skills/05_Vibe_Coding/04_Angular/performance:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/04_Angular/performance:
 SKILL.md
 
-01_Core/03_Skills/05_Vibe_Coding/04_Angular/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/04_Angular/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/04_Angular/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/04_Angular/scripts:
 __init__.py
 __pycache__
 
-01_Core/03_Skills/05_Vibe_Coding/04_Angular/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/04_Angular/scripts/__pycache__:
 __init__.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/05_TypeScript:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/05_TypeScript:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/05_TypeScript/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/05_TypeScript/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/05_TypeScript/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/05_TypeScript/scripts:
 __init__.py
 __pycache__
 
-01_Core/03_Skills/05_Vibe_Coding/05_TypeScript/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/05_TypeScript/scripts/__pycache__:
 __init__.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/06_Zustand_5:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/06_Zustand_5:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/06_Zustand_5/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/06_Zustand_5/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/06_Zustand_5/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/06_Zustand_5/scripts:
 __init__.py
 __pycache__
 
-01_Core/03_Skills/05_Vibe_Coding/06_Zustand_5/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/06_Zustand_5/scripts/__pycache__:
 __init__.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/07_Zod_4:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/07_Zod_4:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/07_Zod_4/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/07_Zod_4/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/07_Zod_4/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/07_Zod_4/scripts:
 __init__.py
 __pycache__
 
-01_Core/03_Skills/05_Vibe_Coding/07_Zod_4/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/07_Zod_4/scripts/__pycache__:
 __init__.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/08_Ai_Sdk_5:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/08_Ai_Sdk_5:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/08_Ai_Sdk_5/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/08_Ai_Sdk_5/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/08_Ai_Sdk_5/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/08_Ai_Sdk_5/scripts:
 __init__.py
 __pycache__
 
-01_Core/03_Skills/05_Vibe_Coding/08_Ai_Sdk_5/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/08_Ai_Sdk_5/scripts/__pycache__:
 __init__.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/09_Skill_Architect:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/09_Skill_Architect:
 LICENSE.txt
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/09_Skill_Architect/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/09_Skill_Architect/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/09_Skill_Architect/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/09_Skill_Architect/scripts:
 __init__.py
 __pycache__
 
-01_Core/03_Skills/05_Vibe_Coding/09_Skill_Architect/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/09_Skill_Architect/scripts/__pycache__:
 __init__.cpython-314.pyc
 init_skill.cpython-314.pyc
 package_skill.cpython-314.pyc
 quick_validate.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/10_Mcp_Client:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/10_Mcp_Client:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/10_Mcp_Client/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/10_Mcp_Client/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/10_Mcp_Client/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/10_Mcp_Client/scripts:
 __init__.py
 __pycache__
 mcp_client.py
 
-01_Core/03_Skills/05_Vibe_Coding/10_Mcp_Client/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/10_Mcp_Client/scripts/__pycache__:
 __init__.cpython-314.pyc
 mcp_client.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/11_Invoice_Intelligence:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/11_Invoice_Intelligence:
 LEGACY_README.md
 QUICKSTART.txt
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/11_Invoice_Intelligence/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/11_Invoice_Intelligence/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/11_Invoice_Intelligence/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/11_Invoice_Intelligence/scripts:
 __init__.py
 __pycache__
 advanced_examples.py
@@ -1338,25 +1338,25 @@ install.sh
 invoice_processor.py
 requirements.txt
 
-01_Core/03_Skills/05_Vibe_Coding/11_Invoice_Intelligence/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/11_Invoice_Intelligence/scripts/__pycache__:
 __init__.cpython-314.pyc
 advanced_examples.cpython-314.pyc
 dashboard.cpython-314.pyc
 invoice_processor.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/12_Health_Data_Analyst:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst:
 SKILL.md
 examples
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples:
 01_Salud
 02_Ventas
 03_Marketing
 04_General
 
-01_Core/03_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/01_Salud:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/01_Salud:
 01_correlation_heatmap.png
 02_numeric_distribution.png
 03_categorical_distribution.png
@@ -1376,10 +1376,10 @@ data_preview.md
 summary.json
 test_health_data.csv
 
-01_Core/03_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/01_Salud/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/01_Salud/__pycache__:
 analyze_salud.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/02_Ventas:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/02_Ventas:
 01_correlation_heatmap.png
 02_numeric_distribution.png
 03_categorical_distribution.png
@@ -1397,10 +1397,10 @@ data_preview.md
 summary.json
 test_sales_data.csv
 
-01_Core/03_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/02_Ventas/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/02_Ventas/__pycache__:
 analyze_ventas.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/03_Marketing:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/03_Marketing:
 01_correlation_heatmap.png
 02_numeric_distribution.png
 03_categorical_distribution.png
@@ -1418,123 +1418,123 @@ data_preview.md
 summary.json
 test_marketing_data.csv
 
-01_Core/03_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/03_Marketing/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/03_Marketing/__pycache__:
 analyze_marketing.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/04_General:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/04_General:
 __pycache__
 analyze_general.py
 business_insights.md
 
-01_Core/03_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/04_General/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst/examples/04_General/__pycache__:
 analyze_general.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/12_Health_Data_Analyst/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/12_Health_Data_Analyst/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst/scripts:
 __init__.py
 __pycache__
 calc_population_metrics.py
 clean_healthcare_data.py
 generate_health_dashboard.py
 
-01_Core/03_Skills/05_Vibe_Coding/12_Health_Data_Analyst/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/12_Health_Data_Analyst/scripts/__pycache__:
 __init__.cpython-314.pyc
 calc_population_metrics.cpython-314.pyc
 clean_healthcare_data.cpython-314.pyc
 generate_health_dashboard.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/13_Django_Drf:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/13_Django_Drf:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/13_Django_Drf/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/13_Django_Drf/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/13_Django_Drf/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/13_Django_Drf/scripts:
 __init__.py
 __pycache__
 
-01_Core/03_Skills/05_Vibe_Coding/13_Django_Drf/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/13_Django_Drf/scripts/__pycache__:
 __init__.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/14_Server_Api:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/14_Server_Api:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/14_Server_Api/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/14_Server_Api/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/14_Server_Api/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/14_Server_Api/scripts:
 __init__.py
 __pycache__
 
-01_Core/03_Skills/05_Vibe_Coding/14_Server_Api/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/14_Server_Api/scripts/__pycache__:
 __init__.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/15_Pytest:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/15_Pytest:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/15_Pytest/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/15_Pytest/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/15_Pytest/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/15_Pytest/scripts:
 __init__.py
 __pycache__
 
-01_Core/03_Skills/05_Vibe_Coding/15_Pytest/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/15_Pytest/scripts/__pycache__:
 __init__.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/16_Playwright:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/16_Playwright:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/16_Playwright/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/16_Playwright/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/16_Playwright/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/16_Playwright/scripts:
 __init__.py
 __pycache__
 
-01_Core/03_Skills/05_Vibe_Coding/16_Playwright/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/16_Playwright/scripts/__pycache__:
 __init__.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/17_Firecrawl:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/17_Firecrawl:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/05_Vibe_Coding/17_Firecrawl/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/17_Firecrawl/references:
 README.md
 
-01_Core/03_Skills/05_Vibe_Coding/17_Firecrawl/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/17_Firecrawl/scripts:
 __init__.py
 __pycache__
 
-01_Core/03_Skills/05_Vibe_Coding/17_Firecrawl/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/17_Firecrawl/scripts/__pycache__:
 __init__.cpython-314.pyc
 
-01_Core/03_Skills/05_Vibe_Coding/18_Payload_Cms:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/18_Payload_Cms:
 01_References
 SKILL.md
 
-01_Core/03_Skills/05_Vibe_Coding/18_Payload_Cms/01_References:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/18_Payload_Cms/01_References:
 advanced.md
 
-01_Core/03_Skills/05_Vibe_Coding/19_Meilisearch:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/19_Meilisearch:
 01_References
 SKILL.md
 
-01_Core/03_Skills/05_Vibe_Coding/19_Meilisearch/01_References:
+01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/19_Meilisearch/01_References:
 advanced.md
 
-01_Core/03_Skills/06_Testing:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing:
 01_Test_Driven_Development
 02_Systematic_Debugging
 03_Verify_And_Commit
@@ -1554,189 +1554,189 @@ advanced.md
 17_Testing_Coverage
 README.md
 
-01_Core/03_Skills/06_Testing/01_Test_Driven_Development:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/01_Test_Driven_Development:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/06_Testing/01_Test_Driven_Development/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/01_Test_Driven_Development/references:
 README.md
 
-01_Core/03_Skills/06_Testing/01_Test_Driven_Development/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/01_Test_Driven_Development/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/06_Testing/01_Test_Driven_Development/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/01_Test_Driven_Development/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/06_Testing/02_Systematic_Debugging:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/02_Systematic_Debugging:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/06_Testing/02_Systematic_Debugging/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/02_Systematic_Debugging/references:
 README.md
 
-01_Core/03_Skills/06_Testing/02_Systematic_Debugging/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/02_Systematic_Debugging/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/06_Testing/02_Systematic_Debugging/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/02_Systematic_Debugging/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/06_Testing/03_Verify_And_Commit:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/03_Verify_And_Commit:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/06_Testing/03_Verify_And_Commit/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/03_Verify_And_Commit/references:
 README.md
 
-01_Core/03_Skills/06_Testing/03_Verify_And_Commit/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/03_Verify_And_Commit/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/06_Testing/03_Verify_And_Commit/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/03_Verify_And_Commit/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/06_Testing/04_Test_Resource_Management:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/04_Test_Resource_Management:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/06_Testing/04_Test_Resource_Management/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/04_Test_Resource_Management/references:
 README.md
 
-01_Core/03_Skills/06_Testing/04_Test_Resource_Management/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/04_Test_Resource_Management/scripts:
 48_Resource_Guardian.py
 __pycache__
 run.py
 
-01_Core/03_Skills/06_Testing/04_Test_Resource_Management/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/04_Test_Resource_Management/scripts/__pycache__:
 48_Resource_Guardian.cpython-314.pyc
 run.cpython-314.pyc
 
-01_Core/03_Skills/06_Testing/05_Testing_Coverage:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/05_Testing_Coverage:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/06_Testing/05_Testing_Coverage/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/05_Testing_Coverage/references:
 README.md
 
-01_Core/03_Skills/06_Testing/05_Testing_Coverage/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/05_Testing_Coverage/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/06_Testing/05_Testing_Coverage/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/05_Testing_Coverage/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/06_Testing/06_Go_Testing:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/06_Go_Testing:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/06_Testing/06_Go_Testing/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/06_Go_Testing/references:
 README.md
 
-01_Core/03_Skills/06_Testing/06_Go_Testing/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/06_Go_Testing/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/06_Testing/06_Go_Testing/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/06_Go_Testing/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/06_Testing/07_Tui_Quality:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/07_Tui_Quality:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/06_Testing/07_Tui_Quality/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/07_Tui_Quality/references:
 README.md
 
-01_Core/03_Skills/06_Testing/07_Tui_Quality/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/07_Tui_Quality/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/06_Testing/07_Tui_Quality/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/07_Tui_Quality/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/06_Testing/08_E2e_Testing:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/08_E2e_Testing:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/06_Testing/08_E2e_Testing/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/08_E2e_Testing/references:
 README.md
 
-01_Core/03_Skills/06_Testing/08_E2e_Testing/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/08_E2e_Testing/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/06_Testing/08_E2e_Testing/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/08_E2e_Testing/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/06_Testing/09_Integration_Testing:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/09_Integration_Testing:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/06_Testing/09_Integration_Testing/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/09_Integration_Testing/references:
 README.md
 
-01_Core/03_Skills/06_Testing/09_Integration_Testing/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/09_Integration_Testing/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/06_Testing/09_Integration_Testing/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/09_Integration_Testing/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/06_Testing/10_Edge_Case:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/10_Edge_Case:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/06_Testing/10_Edge_Case/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/10_Edge_Case/references:
 README.md
 
-01_Core/03_Skills/06_Testing/10_Edge_Case/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/10_Edge_Case/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/06_Testing/10_Edge_Case/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/10_Edge_Case/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/06_Testing/11_Test_Coverage:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/11_Test_Coverage:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/06_Testing/11_Test_Coverage/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/11_Test_Coverage/references:
 README.md
 
-01_Core/03_Skills/06_Testing/11_Test_Coverage/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/11_Test_Coverage/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/06_Testing/11_Test_Coverage/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/11_Test_Coverage/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/06_Testing/12_Evaluation:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/12_Evaluation:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/06_Testing/12_Evaluation/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/12_Evaluation/references:
 README.md
 
-01_Core/03_Skills/06_Testing/12_Evaluation/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/12_Evaluation/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/06_Testing/12_Evaluation/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/12_Evaluation/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/06_Testing/13_Skill_Testing_Automation:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/13_Skill_Testing_Automation:
 README.md
 SKILL.md
 examples
@@ -1744,13 +1744,13 @@ references
 scripts
 tests
 
-01_Core/03_Skills/06_Testing/13_Skill_Testing_Automation/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/13_Skill_Testing_Automation/examples:
 quick_start_run.md
 
-01_Core/03_Skills/06_Testing/13_Skill_Testing_Automation/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/13_Skill_Testing_Automation/references:
 README.md
 
-01_Core/03_Skills/06_Testing/13_Skill_Testing_Automation/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/13_Skill_Testing_Automation/scripts:
 README.md
 __pycache__
 report_generator.py
@@ -1759,35 +1759,35 @@ run.py
 run_tests.py
 skill_validator.py
 
-01_Core/03_Skills/06_Testing/13_Skill_Testing_Automation/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/13_Skill_Testing_Automation/scripts/__pycache__:
 report_generator.cpython-314.pyc
 result_tracker.cpython-314.pyc
 run.cpython-314.pyc
 run_tests.cpython-314.pyc
 skill_validator.cpython-314.pyc
 
-01_Core/03_Skills/06_Testing/13_Skill_Testing_Automation/tests:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/13_Skill_Testing_Automation/tests:
 __pycache__
 debug_voice.py
 validate_system.py
 
-01_Core/03_Skills/06_Testing/13_Skill_Testing_Automation/tests/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/13_Skill_Testing_Automation/tests/__pycache__:
 debug_voice.cpython-314.pyc
 validate_system.cpython-314.pyc
 
-01_Core/03_Skills/06_Testing/14_Commit_Hygiene:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/14_Commit_Hygiene:
 SKILL.md
 
-01_Core/03_Skills/06_Testing/15_Shellcheck:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/15_Shellcheck:
 SKILL.md
 
-01_Core/03_Skills/06_Testing/16_Docs_Alignment:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/16_Docs_Alignment:
 SKILL.md
 
-01_Core/03_Skills/06_Testing/17_Testing_Coverage:
+01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/17_Testing_Coverage:
 SKILL.md
 
-01_Core/03_Skills/07_DevOps:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps:
 01_Vercel_Deploy
 02_Supabase_Integration
 03_MCP_Integration
@@ -1802,124 +1802,124 @@ SKILL.md
 12_RTM
 README.md
 
-01_Core/03_Skills/07_DevOps/01_Vercel_Deploy:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/01_Vercel_Deploy:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/07_DevOps/01_Vercel_Deploy/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/01_Vercel_Deploy/references:
 README.md
 
-01_Core/03_Skills/07_DevOps/01_Vercel_Deploy/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/01_Vercel_Deploy/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/07_DevOps/01_Vercel_Deploy/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/01_Vercel_Deploy/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/07_DevOps/02_Supabase_Integration:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/02_Supabase_Integration:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/07_DevOps/02_Supabase_Integration/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/02_Supabase_Integration/references:
 README.md
 
-01_Core/03_Skills/07_DevOps/02_Supabase_Integration/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/02_Supabase_Integration/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/07_DevOps/02_Supabase_Integration/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/02_Supabase_Integration/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/07_DevOps/03_MCP_Integration:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/03_MCP_Integration:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/07_DevOps/03_MCP_Integration/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/03_MCP_Integration/references:
 README.md
 
-01_Core/03_Skills/07_DevOps/03_MCP_Integration/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/03_MCP_Integration/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/07_DevOps/03_MCP_Integration/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/03_MCP_Integration/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/07_DevOps/04_Observability:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/04_Observability:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/07_DevOps/04_Observability/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/04_Observability/references:
 README.md
 
-01_Core/03_Skills/07_DevOps/04_Observability/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/04_Observability/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/07_DevOps/04_Observability/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/04_Observability/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/07_DevOps/05_Seo_Audit:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/05_Seo_Audit:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/07_DevOps/05_Seo_Audit/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/05_Seo_Audit/references:
 README.md
 
-01_Core/03_Skills/07_DevOps/05_Seo_Audit/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/05_Seo_Audit/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/07_DevOps/05_Seo_Audit/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/05_Seo_Audit/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/07_DevOps/06_Seo_Optimization:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/06_Seo_Optimization:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/07_DevOps/06_Seo_Optimization/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/06_Seo_Optimization/references:
 README.md
 
-01_Core/03_Skills/07_DevOps/06_Seo_Optimization/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/06_Seo_Optimization/scripts:
 __pycache__
 run.py
 seo_optimizer.py
 
-01_Core/03_Skills/07_DevOps/06_Seo_Optimization/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/06_Seo_Optimization/scripts/__pycache__:
 run.cpython-314.pyc
 seo_optimizer.cpython-314.pyc
 
-01_Core/03_Skills/07_DevOps/07_Data_Visualization:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/07_Data_Visualization:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/07_DevOps/07_Data_Visualization/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/07_Data_Visualization/references:
 README.md
 
-01_Core/03_Skills/07_DevOps/07_Data_Visualization/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/07_Data_Visualization/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/07_DevOps/07_Data_Visualization/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/07_Data_Visualization/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/07_DevOps/08_Vercel_React_Best_Practices:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/08_Vercel_React_Best_Practices:
 01_Personal_Os/11_AGENTS.md
 SKILL.md
 references
 rules
 scripts
 
-01_Core/03_Skills/07_DevOps/08_Vercel_React_Best_Practices/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/08_Vercel_React_Best_Practices/references:
 README.md
 
-01_Core/03_Skills/07_DevOps/08_Vercel_React_Best_Practices/rules:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/08_Vercel_React_Best_Practices/rules:
 advanced-event-handler-refs.md
 advanced-init-once.md
 advanced-use-latest.md
@@ -1978,78 +1978,78 @@ server-dedup-props.md
 server-parallel-fetching.md
 server-serialization.md
 
-01_Core/03_Skills/07_DevOps/08_Vercel_React_Best_Practices/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/08_Vercel_React_Best_Practices/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/07_DevOps/08_Vercel_React_Best_Practices/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/08_Vercel_React_Best_Practices/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/07_DevOps/09_Using_Git_Worktrees:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/09_Using_Git_Worktrees:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/07_DevOps/09_Using_Git_Worktrees/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/09_Using_Git_Worktrees/references:
 README.md
 
-01_Core/03_Skills/07_DevOps/09_Using_Git_Worktrees/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/09_Using_Git_Worktrees/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/07_DevOps/09_Using_Git_Worktrees/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/09_Using_Git_Worktrees/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/07_DevOps/10_E2b_Sandbox:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/10_E2b_Sandbox:
 SKILL.md
 references
 resources
 scripts
 
-01_Core/03_Skills/07_DevOps/10_E2b_Sandbox/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/10_E2b_Sandbox/references:
 README.md
 
-01_Core/03_Skills/07_DevOps/10_E2b_Sandbox/resources:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/10_E2b_Sandbox/resources:
 EB2 Skill Doc.md
 
-01_Core/03_Skills/07_DevOps/10_E2b_Sandbox/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/10_E2b_Sandbox/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/07_DevOps/10_E2b_Sandbox/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/10_E2b_Sandbox/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/07_DevOps/11_Error_Handling_Patterns:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/11_Error_Handling_Patterns:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/07_DevOps/11_Error_Handling_Patterns/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/11_Error_Handling_Patterns/references:
 README.md
 
-01_Core/03_Skills/07_DevOps/11_Error_Handling_Patterns/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/11_Error_Handling_Patterns/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/07_DevOps/11_Error_Handling_Patterns/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/11_Error_Handling_Patterns/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/07_DevOps/12_RTM:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/12_RTM:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/07_DevOps/12_RTM/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/12_RTM/references:
 README.md
 
-01_Core/03_Skills/07_DevOps/12_RTM/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/12_RTM/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/07_DevOps/12_RTM/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/12_RTM/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/08_Personal_Os:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os:
 01_Fork_Terminal
 02_Agent_Orchestrator
 03_System_Guardian
@@ -2070,7 +2070,7 @@ run.cpython-314.pyc
 18_Repo_Sync
 README.md
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal:
 README.md
 SKILL.md
 command
@@ -2084,16 +2084,16 @@ scripts
 skills
 tools
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/command:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/command:
 all_skills.md
 prime.md
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/context:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/context:
 docs
 examples
 scenarios
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/context/docs:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/context/docs:
 ADVANCED_TESTS.md
 COMPATIBILITY.md
 EXECUTIVE_REPORT.md
@@ -2101,7 +2101,7 @@ INDEX.md
 README.md
 implementations.md
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/context/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/context/examples:
 __pycache__
 claude_fork_demo.py
 demo_agent.py
@@ -2111,7 +2111,7 @@ run_all_tests.py
 stress_test_5_agents.py
 stress_test_5_distinct_agents.py
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/context/examples/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/context/examples/__pycache__:
 claude_fork_demo.cpython-314.pyc
 demo_agent.cpython-314.pyc
 marketing_agent_demo.cpython-314.pyc
@@ -2120,53 +2120,53 @@ run_all_tests.cpython-314.pyc
 stress_test_5_agents.cpython-314.pyc
 stress_test_5_distinct_agents.cpython-314.pyc
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/context/scenarios:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/context/scenarios:
 marketing-seo.md
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/cookbook:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/cookbook:
 claude-code.md
 cli-command.md
 codex-cli.md
 gemini-cli.md
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/documentation:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/documentation:
 claude_help.txt
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/prompts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/prompts:
 fork_summary_user_prompt.md
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/references:
 README.md
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/reports:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/reports:
 COMPATIBILITY_FIX_AND_TEST_REPORT.md
 FINAL_VALIDATION_REPORT.md
 SESSION_SUMMARY_FINAL.md
 history
 latest
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/reports/history:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/reports/history:
 MULTI_AGENT_ORCHESTRATION_REPORT.md
 MULTI_AGENT_VALIDATION_REPORT.md
 ORCHESTRATION_CONFIG_REPORT.md
 session_summary_v1.md
 test-fork-terminal.md
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/reports/latest:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/reports/latest:
 ULTIMATE_SYSTEM_REPORT.md
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/skills:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/skills:
 fork-terminal
 parallel-orchestration
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal:
 README.md
 SKILL.md
 context
@@ -2174,12 +2174,12 @@ cookbook
 prompts
 tools
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context:
 docs
 examples
 scenarios
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/docs:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/docs:
 ADVANCED_TESTS.md
 COMPATIBILITY.md
 EXECUTIVE_REPORT.md
@@ -2187,7 +2187,7 @@ INDEX.md
 README.md
 implementations.md
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/examples:
 __pycache__
 claude_fork_demo.py
 demo_agent.py
@@ -2197,7 +2197,7 @@ run_all_tests.py
 stress_test_5_agents.py
 stress_test_5_distinct_agents.py
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/examples/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/examples/__pycache__:
 claude_fork_demo.cpython-314.pyc
 demo_agent.cpython-314.pyc
 marketing_agent_demo.cpython-314.pyc
@@ -2206,30 +2206,30 @@ run_all_tests.cpython-314.pyc
 stress_test_5_agents.cpython-314.pyc
 stress_test_5_distinct_agents.cpython-314.pyc
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/scenarios:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context/scenarios:
 marketing-seo.md
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/cookbook:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/cookbook:
 claude-code.md
 cli-command.md
 codex-cli.md
 gemini-cli.md
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/prompts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/prompts:
 fork_summary_user_prompt.md
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/tools:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/tools:
 __pycache__
 fork_terminal.py
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/tools/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/tools/__pycache__:
 fork_terminal.cpython-314.pyc
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/skills/parallel-orchestration:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/parallel-orchestration:
 SKILL.md
 tools
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/skills/parallel-orchestration/tools:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/parallel-orchestration/tools:
 __pycache__
 agent_orchestrator.py
 run_20_agent_swarm.py
@@ -2239,7 +2239,7 @@ run_single_context_test.py
 run_stress_test.py
 run_ultimate_test.py
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/skills/parallel-orchestration/tools/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/skills/parallel-orchestration/tools/__pycache__:
 agent_orchestrator.cpython-314.pyc
 run_20_agent_swarm.cpython-314.pyc
 run_final_5_agent_test.cpython-314.pyc
@@ -2248,33 +2248,33 @@ run_single_context_test.cpython-314.pyc
 run_stress_test.cpython-314.pyc
 run_ultimate_test.cpython-314.pyc
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/tools:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/tools:
 __pycache__
 fork_terminal.py
 
-01_Core/03_Skills/08_Personal_Os/01_Fork_Terminal/tools/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/01_Fork_Terminal/tools/__pycache__:
 fork_terminal.cpython-314.pyc
 
-01_Core/03_Skills/08_Personal_Os/02_Agent_Orchestrator:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/02_Agent_Orchestrator:
 README.md
 SKILL.md
 references
 scripts
 tools
 
-01_Core/03_Skills/08_Personal_Os/02_Agent_Orchestrator/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/02_Agent_Orchestrator/references:
 README.md
 
-01_Core/03_Skills/08_Personal_Os/02_Agent_Orchestrator/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/02_Agent_Orchestrator/scripts:
 __pycache__
 enhanced_workflow_orchestrator.py
 run.py
 
-01_Core/03_Skills/08_Personal_Os/02_Agent_Orchestrator/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/02_Agent_Orchestrator/scripts/__pycache__:
 enhanced_workflow_orchestrator.cpython-314.pyc
 run.cpython-314.pyc
 
-01_Core/03_Skills/08_Personal_Os/02_Agent_Orchestrator/tools:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/02_Agent_Orchestrator/tools:
 __pycache__
 agent_orchestrator.py
 run_20_agent_swarm.py
@@ -2284,7 +2284,7 @@ run_single_context_test.py
 run_stress_test.py
 run_ultimate_test.py
 
-01_Core/03_Skills/08_Personal_Os/02_Agent_Orchestrator/tools/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/02_Agent_Orchestrator/tools/__pycache__:
 agent_orchestrator.cpython-314.pyc
 run_20_agent_swarm.cpython-314.pyc
 run_final_5_agent_test.cpython-314.pyc
@@ -2293,131 +2293,131 @@ run_single_context_test.cpython-314.pyc
 run_stress_test.cpython-314.pyc
 run_ultimate_test.cpython-314.pyc
 
-01_Core/03_Skills/08_Personal_Os/03_System_Guardian:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/03_System_Guardian:
 SKILL.md
 
-01_Core/03_Skills/08_Personal_Os/04_Premium_Git_Manager:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/04_Premium_Git_Manager:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/08_Personal_Os/04_Premium_Git_Manager/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/04_Premium_Git_Manager/references:
 README.md
 
-01_Core/03_Skills/08_Personal_Os/04_Premium_Git_Manager/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/04_Premium_Git_Manager/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/08_Personal_Os/04_Premium_Git_Manager/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/04_Premium_Git_Manager/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/08_Personal_Os/05_Subagent_Driven_Development:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/05_Subagent_Driven_Development:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/08_Personal_Os/05_Subagent_Driven_Development/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/05_Subagent_Driven_Development/references:
 README.md
 
-01_Core/03_Skills/08_Personal_Os/05_Subagent_Driven_Development/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/05_Subagent_Driven_Development/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/08_Personal_Os/05_Subagent_Driven_Development/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/05_Subagent_Driven_Development/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/08_Personal_Os/06_Browser_Use:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/06_Browser_Use:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/08_Personal_Os/06_Browser_Use/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/06_Browser_Use/references:
 README.md
 
-01_Core/03_Skills/08_Personal_Os/06_Browser_Use/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/06_Browser_Use/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/08_Personal_Os/06_Browser_Use/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/06_Browser_Use/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/08_Personal_Os/07_Csv_Management:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/07_Csv_Management:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/08_Personal_Os/07_Csv_Management/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/07_Csv_Management/references:
 README.md
 
-01_Core/03_Skills/08_Personal_Os/07_Csv_Management/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/07_Csv_Management/scripts:
 __pycache__
 csv_manager.py
 enrich_csv_skill.py
 run.py
 
-01_Core/03_Skills/08_Personal_Os/07_Csv_Management/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/07_Csv_Management/scripts/__pycache__:
 csv_manager.cpython-314.pyc
 enrich_csv_skill.cpython-314.pyc
 run.cpython-314.pyc
 
-01_Core/03_Skills/08_Personal_Os/08_Managing_Image_Assets:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/08_Managing_Image_Assets:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/08_Personal_Os/08_Managing_Image_Assets/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/08_Managing_Image_Assets/references:
 README.md
 
-01_Core/03_Skills/08_Personal_Os/08_Managing_Image_Assets/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/08_Managing_Image_Assets/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/08_Personal_Os/08_Managing_Image_Assets/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/08_Managing_Image_Assets/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/08_Personal_Os/09_Frictionless_Capture:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/09_Frictionless_Capture:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/08_Personal_Os/09_Frictionless_Capture/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/09_Frictionless_Capture/references:
 README.md
 
-01_Core/03_Skills/08_Personal_Os/09_Frictionless_Capture/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/09_Frictionless_Capture/scripts:
 __pycache__
 run.py
 
-01_Core/03_Skills/08_Personal_Os/09_Frictionless_Capture/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/09_Frictionless_Capture/scripts/__pycache__:
 run.cpython-314.pyc
 
-01_Core/03_Skills/08_Personal_Os/10_Morning_Standup:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/10_Morning_Standup:
 SKILL.md
 
-01_Core/03_Skills/08_Personal_Os/11_Weekly_Review:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/11_Weekly_Review:
 SKILL.md
 
-01_Core/03_Skills/08_Personal_Os/12_Ritual_Cierre:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/12_Ritual_Cierre:
 SKILL.md
 
-01_Core/03_Skills/08_Personal_Os/13_Sync_Notes:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/13_Sync_Notes:
 SKILL.md
 
-01_Core/03_Skills/08_Personal_Os/14_Validate_Stack:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/14_Validate_Stack:
 SKILL.md
 
-01_Core/03_Skills/08_Personal_Os/15_Update_Links:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/15_Update_Links:
 SKILL.md
 
-01_Core/03_Skills/08_Personal_Os/16_Clean_System:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/16_Clean_System:
 SKILL.md
 
-01_Core/03_Skills/08_Personal_Os/17_Ritual_Dominical:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/17_Ritual_Dominical:
 SKILL.md
 
-01_Core/03_Skills/08_Personal_Os/18_Repo_Sync:
+01_Personal_Os/01_Core/02_Tools/02_Skills/08_Personal_Os/18_Repo_Sync:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing:
 01_Marketing_Strategy
 02_Marketing_Tech
 03_Compound_Engine
@@ -2430,7 +2430,7 @@ SKILL.md
 10_AI_Agents
 README.md
 
-01_Core/03_Skills/09_Marketing/01_Marketing_Strategy:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/01_Marketing_Strategy:
 content-strategy
 copy-editing
 copywriting
@@ -2447,52 +2447,52 @@ pricing-strategy
 product-marketing-context
 signup-flow-cro
 
-01_Core/03_Skills/09_Marketing/01_Marketing_Strategy/content-strategy:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/01_Marketing_Strategy/content-strategy:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/01_Marketing_Strategy/copy-editing:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/01_Marketing_Strategy/copy-editing:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/01_Marketing_Strategy/copywriting:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/01_Marketing_Strategy/copywriting:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/01_Marketing_Strategy/email-sequence:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/01_Marketing_Strategy/email-sequence:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/01_Marketing_Strategy/form-cro:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/01_Marketing_Strategy/form-cro:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/01_Marketing_Strategy/launch-strategy:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/01_Marketing_Strategy/launch-strategy:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/01_Marketing_Strategy/marketing-ideas:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/01_Marketing_Strategy/marketing-ideas:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/01_Marketing_Strategy/marketing-psychology:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/01_Marketing_Strategy/marketing-psychology:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/01_Marketing_Strategy/onboarding-cro:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/01_Marketing_Strategy/onboarding-cro:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/01_Marketing_Strategy/page-cro:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/01_Marketing_Strategy/page-cro:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/01_Marketing_Strategy/paywall-upgrade-cro:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/01_Marketing_Strategy/paywall-upgrade-cro:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/01_Marketing_Strategy/popup-cro:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/01_Marketing_Strategy/popup-cro:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/01_Marketing_Strategy/pricing-strategy:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/01_Marketing_Strategy/pricing-strategy:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/01_Marketing_Strategy/product-marketing-context:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/01_Marketing_Strategy/product-marketing-context:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/01_Marketing_Strategy/signup-flow-cro:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/01_Marketing_Strategy/signup-flow-cro:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/02_Marketing_Tech:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/02_Marketing_Tech:
 ab-test-setup
 analytics-tracking
 competitor-alternatives
@@ -2504,57 +2504,57 @@ schema-markup
 seo-audit
 social-content
 
-01_Core/03_Skills/09_Marketing/02_Marketing_Tech/ab-test-setup:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/02_Marketing_Tech/ab-test-setup:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/02_Marketing_Tech/analytics-tracking:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/02_Marketing_Tech/analytics-tracking:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/02_Marketing_Tech/competitor-alternatives:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/02_Marketing_Tech/competitor-alternatives:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/02_Marketing_Tech/free-tool-strategy:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/02_Marketing_Tech/free-tool-strategy:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/02_Marketing_Tech/paid-ads:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/02_Marketing_Tech/paid-ads:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/02_Marketing_Tech/programmatic-seo:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/02_Marketing_Tech/programmatic-seo:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/02_Marketing_Tech/referral-program:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/02_Marketing_Tech/referral-program:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/02_Marketing_Tech/schema-markup:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/02_Marketing_Tech/schema-markup:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/02_Marketing_Tech/seo-audit:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/02_Marketing_Tech/seo-audit:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/02_Marketing_Tech/social-content:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/02_Marketing_Tech/social-content:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/03_Compound_Engine:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/03_Compound_Engine:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/04_Premium_Image_Studio:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/04_Premium_Image_Studio:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/05_Video_Visuals_Producer:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/05_Video_Visuals_Producer:
 SKILL.md
 
-01_Core/03_Skills/09_Marketing/06_Content_Creation:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/06_Content_Creation:
 SKILL.md
 scripts
 
-01_Core/03_Skills/09_Marketing/06_Content_Creation/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/06_Content_Creation/scripts:
 __pycache__
 content_creation_skills.py
 
-01_Core/03_Skills/09_Marketing/06_Content_Creation/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/06_Content_Creation/scripts/__pycache__:
 content_creation_skills.cpython-314.pyc
 
-01_Core/03_Skills/09_Marketing/07_Pptx_Generator:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/07_Pptx_Generator:
 SKILL.md
 __pycache__
 brands
@@ -2563,14 +2563,14 @@ cookbook-preview.pptx
 font-test.pptx
 generate-cookbook-preview.py
 
-01_Core/03_Skills/09_Marketing/07_Pptx_Generator/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/07_Pptx_Generator/__pycache__:
 generate-cookbook-preview.cpython-314.pyc
 
-01_Core/03_Skills/09_Marketing/07_Pptx_Generator/brands:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/07_Pptx_Generator/brands:
 dynamous
 template
 
-01_Core/03_Skills/09_Marketing/07_Pptx_Generator/brands/dynamous:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/07_Pptx_Generator/brands/dynamous:
 DynamousLogo.png
 brand-system.md
 brand.json
@@ -2578,7 +2578,7 @@ config.json
 design-system.html
 tone-of-voice.md
 
-01_Core/03_Skills/09_Marketing/07_Pptx_Generator/brands/template:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/07_Pptx_Generator/brands/template:
 README.md
 assets
 brand-system.md
@@ -2586,9 +2586,9 @@ brand.json
 config.json
 tone-of-voice.md
 
-01_Core/03_Skills/09_Marketing/07_Pptx_Generator/brands/template/assets:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/07_Pptx_Generator/brands/template/assets:
 
-01_Core/03_Skills/09_Marketing/07_Pptx_Generator/cookbook:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/07_Pptx_Generator/cookbook:
 __pycache__
 bold-diagonal-slide.py
 carousels
@@ -2607,7 +2607,7 @@ stats-slide.py
 title-slide.py
 two-column-slide.py
 
-01_Core/03_Skills/09_Marketing/07_Pptx_Generator/cookbook/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/07_Pptx_Generator/cookbook/__pycache__:
 bold-diagonal-slide.cpython-314.pyc
 chart-slide.cpython-314.pyc
 circular-hero-slide.cpython-314.pyc
@@ -2624,7 +2624,7 @@ stats-slide.cpython-314.pyc
 title-slide.cpython-314.pyc
 two-column-slide.cpython-314.pyc
 
-01_Core/03_Skills/09_Marketing/07_Pptx_Generator/cookbook/carousels:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/07_Pptx_Generator/cookbook/carousels:
 __pycache__
 cta-slide.py
 hook-slide.py
@@ -2632,18 +2632,18 @@ numbered-point-slide.py
 quote_slide.py
 single-point-slide.py
 
-01_Core/03_Skills/09_Marketing/07_Pptx_Generator/cookbook/carousels/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/07_Pptx_Generator/cookbook/carousels/__pycache__:
 cta-slide.cpython-314.pyc
 hook-slide.cpython-314.pyc
 numbered-point-slide.cpython-314.pyc
 quote_slide.cpython-314.pyc
 single-point-slide.cpython-314.pyc
 
-01_Core/03_Skills/09_Marketing/08_Remotion_Video_Creator:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/08_Remotion_Video_Creator:
 rules
 skill.md
 
-01_Core/03_Skills/09_Marketing/08_Remotion_Video_Creator/rules:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/08_Remotion_Video_Creator/rules:
 3d.md
 animations.md
 assets
@@ -2676,16 +2676,16 @@ transitions.md
 trimming.md
 videos.md
 
-01_Core/03_Skills/09_Marketing/08_Remotion_Video_Creator/rules/assets:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/08_Remotion_Video_Creator/rules/assets:
 charts-bar-chart.tsx
 text-animations-typewriter.tsx
 text-animations-word-highlight.tsx
 
-01_Core/03_Skills/09_Marketing/09_Remotion_Best_Practices:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/09_Remotion_Best_Practices:
 SKILL.md
 rules
 
-01_Core/03_Skills/09_Marketing/09_Remotion_Best_Practices/rules:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/09_Remotion_Best_Practices/rules:
 3d.md
 animations.md
 assets
@@ -2723,58 +2723,58 @@ transparent-videos.md
 trimming.md
 videos.md
 
-01_Core/03_Skills/09_Marketing/09_Remotion_Best_Practices/rules/assets:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/09_Remotion_Best_Practices/rules/assets:
 charts-bar-chart.tsx
 text-animations-typewriter.tsx
 text-animations-word-highlight.tsx
 
-01_Core/03_Skills/09_Marketing/10_AI_Agents:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/10_AI_Agents:
 01_Agent_Onboarding
 02_Executive_Assistant
 03_Head_Of_Marketing
 
-01_Core/03_Skills/09_Marketing/10_AI_Agents/01_Agent_Onboarding:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/10_AI_Agents/01_Agent_Onboarding:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/09_Marketing/10_AI_Agents/01_Agent_Onboarding/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/10_AI_Agents/01_Agent_Onboarding/references:
 example-contexts
 
-01_Core/03_Skills/09_Marketing/10_AI_Agents/01_Agent_Onboarding/references/example-contexts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/10_AI_Agents/01_Agent_Onboarding/references/example-contexts:
 contexts.md
 
-01_Core/03_Skills/09_Marketing/10_AI_Agents/01_Agent_Onboarding/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/10_AI_Agents/01_Agent_Onboarding/scripts:
 agent-types.md
 onboarding-workflow.md
 role-templates.md
 
-01_Core/03_Skills/09_Marketing/10_AI_Agents/02_Executive_Assistant:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/10_AI_Agents/02_Executive_Assistant:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/09_Marketing/10_AI_Agents/02_Executive_Assistant/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/10_AI_Agents/02_Executive_Assistant/references:
 priority-frameworks.md
 
-01_Core/03_Skills/09_Marketing/10_AI_Agents/02_Executive_Assistant/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/10_AI_Agents/02_Executive_Assistant/scripts:
 multi-team-coordination.md
 ritual-templates.md
 
-01_Core/03_Skills/09_Marketing/10_AI_Agents/03_Head_Of_Marketing:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/10_AI_Agents/03_Head_Of_Marketing:
 SKILL.md
 references
 scripts
 
-01_Core/03_Skills/09_Marketing/10_AI_Agents/03_Head_Of_Marketing/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/10_AI_Agents/03_Head_Of_Marketing/references:
 team-management.md
 
-01_Core/03_Skills/09_Marketing/10_AI_Agents/03_Head_Of_Marketing/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/10_AI_Agents/03_Head_Of_Marketing/scripts:
 channel-strategies.md
 competitor-analysis.md
 gtm-templates.md
 
-01_Core/03_Skills/10_Backup:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup:
 01_Gentleman_System_Legacy
 02_Every_Canonical
 03_High_Value_Remaining
@@ -2782,7 +2782,7 @@ gtm-templates.md
 05_Gentleman
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy:
 01_Plan
 02_Work
 03_Review
@@ -2790,7 +2790,7 @@ SKILL.md
 05_Utilities
 README.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan:
 00_Project_Structure
 01_Brainstorming
 01_Docs_Alignment
@@ -2805,58 +2805,58 @@ README.md
 06_Find_Skills
 07_Deep_Research
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/00_Project_Structure:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/00_Project_Structure:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/01_Brainstorming:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/01_Brainstorming:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/01_Docs_Alignment:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/01_Docs_Alignment:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/02_Issue_Creation:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/02_Issue_Creation:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/02_Writing_Plans:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/02_Writing_Plans:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/03_Branch_Pr:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/03_Branch_Pr:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/03_Executing_Plans:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/03_Executing_Plans:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/04_Jira_Epic:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/04_Jira_Epic:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/04_Writing_Strategy_Memos:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/04_Writing_Strategy_Memos:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/05_Jira_Task:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/05_Jira_Task:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/05_Planificacion_Tareas_Ai:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/05_Planificacion_Tareas_Ai:
 SKILL.md
 resources
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/05_Planificacion_Tareas_Ai/resources:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/05_Planificacion_Tareas_Ai/resources:
 task_template.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/06_Find_Skills:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/06_Find_Skills:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/07_Deep_Research:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/07_Deep_Research:
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/07_Deep_Research/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/07_Deep_Research/scripts:
 __pycache__
 deep_research.py
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/07_Deep_Research/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/01_Plan/07_Deep_Research/scripts/__pycache__:
 deep_research.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work:
 00_TypeScript
 01_Antigravity_Skill_Creator
 01_React_19
@@ -2876,56 +2876,56 @@ deep_research.cpython-314.pyc
 10_Ai_Sdk_5
 11_Server_Api
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/00_TypeScript:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/00_TypeScript:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/01_Antigravity_Skill_Creator:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/01_Antigravity_Skill_Creator:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/01_React_19:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/01_React_19:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Angular:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Angular:
 architecture
 core
 forms
 performance
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Angular/architecture:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Angular/architecture:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Angular/core:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Angular/core:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Angular/forms:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Angular/forms:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Angular/performance:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Angular/performance:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Mcp_Client:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Mcp_Client:
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Mcp_Client/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Mcp_Client/scripts:
 __pycache__
 mcp_client.py
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Mcp_Client/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/02_Mcp_Client/scripts/__pycache__:
 mcp_client.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst:
 SKILL.md
 examples
 scripts
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples:
 01_Salud
 02_Ventas
 03_Marketing
 04_General
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/01_Salud:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/01_Salud:
 01_correlation_heatmap.png
 02_numeric_distribution.png
 03_categorical_distribution.png
@@ -2945,10 +2945,10 @@ data_preview.md
 summary.json
 test_health_data.csv
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/01_Salud/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/01_Salud/__pycache__:
 analyze_salud.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/02_Ventas:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/02_Ventas:
 01_correlation_heatmap.png
 02_numeric_distribution.png
 03_categorical_distribution.png
@@ -2966,10 +2966,10 @@ data_preview.md
 summary.json
 test_sales_data.csv
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/02_Ventas/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/02_Ventas/__pycache__:
 analyze_ventas.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/03_Marketing:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/03_Marketing:
 01_correlation_heatmap.png
 02_numeric_distribution.png
 03_categorical_distribution.png
@@ -2987,57 +2987,57 @@ data_preview.md
 summary.json
 test_marketing_data.csv
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/03_Marketing/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/03_Marketing/__pycache__:
 analyze_marketing.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/04_General:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/04_General:
 __pycache__
 analyze_general.py
 business_insights.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/04_General/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/examples/04_General/__pycache__:
 analyze_general.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/scripts:
 __pycache__
 calc_population_metrics.py
 clean_healthcare_data.py
 generate_health_dashboard.py
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Health_Data_Analyst/scripts/__pycache__:
 calc_population_metrics.cpython-314.pyc
 clean_healthcare_data.cpython-314.pyc
 generate_health_dashboard.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Tailwind_4:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/03_Tailwind_4:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/04_Skill_Creator:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/04_Skill_Creator:
 LICENSE.txt
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/04_Skill_Creator/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/04_Skill_Creator/scripts:
 __pycache__
 init_skill.py
 package_skill.py
 quick_validate.py
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/04_Skill_Creator/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/04_Skill_Creator/scripts/__pycache__:
 init_skill.cpython-314.pyc
 package_skill.cpython-314.pyc
 quick_validate.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/04_Zod_4:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/04_Zod_4:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/05_Invoice_Intelligence:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/05_Invoice_Intelligence:
 LEGACY_README.md
 QUICKSTART.txt
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/05_Invoice_Intelligence/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/05_Invoice_Intelligence/scripts:
 __pycache__
 advanced_examples.py
 dashboard.py
@@ -3045,36 +3045,36 @@ install.sh
 invoice_processor.py
 requirements.txt
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/05_Invoice_Intelligence/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/05_Invoice_Intelligence/scripts/__pycache__:
 advanced_examples.cpython-314.pyc
 dashboard.cpython-314.pyc
 invoice_processor.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/05_Zustand_5:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/05_Zustand_5:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/06_Django_Drf:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/06_Django_Drf:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/06_Firecrawl:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/06_Firecrawl:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/07_Pytest:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/07_Pytest:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/08_Playwright:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/08_Playwright:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/09_Nextjs_15:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/09_Nextjs_15:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/10_Ai_Sdk_5:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/10_Ai_Sdk_5:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/11_Server_Api:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/02_Work/11_Server_Api:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review:
 00_Technical_Review
 01_Pr_Review
 01_Test_Driven_Development
@@ -3093,66 +3093,66 @@ SKILL.md
 07_Visual_Language
 08_Homebrew_Release
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/00_Technical_Review:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/00_Technical_Review:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/01_Pr_Review:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/01_Pr_Review:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/01_Test_Driven_Development:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/01_Test_Driven_Development:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/02_Pr_Review_Deep:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/02_Pr_Review_Deep:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/02_Systematic_Debugging:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/02_Systematic_Debugging:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/03_Testing_Coverage:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/03_Testing_Coverage:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/03_Verification_Before_Completion:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/03_Verification_Before_Completion:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/04_Commit_Hygiene:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/04_Commit_Hygiene:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/04_Github_Pr:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/04_Github_Pr:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/04_Verify_And_Commit:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/04_Verify_And_Commit:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/05_Go_Testing:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/05_Go_Testing:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/05_Test_Resource_Management:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/05_Test_Resource_Management:
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/05_Test_Resource_Management/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/05_Test_Resource_Management/scripts:
 48_Resource_Guardian.py
 __pycache__
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/05_Test_Resource_Management/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/05_Test_Resource_Management/scripts/__pycache__:
 48_Resource_Guardian.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/05_Tui_Quality:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/05_Tui_Quality:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/06_Elite_Agent_Auditor:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/06_Elite_Agent_Auditor:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/06_Ui_Elements:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/06_Ui_Elements:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/07_Visual_Language:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/07_Visual_Language:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/08_Homebrew_Release:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/03_Review/08_Homebrew_Release:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound:
 00_Gentleman_Trainer
 01_Gentleman_System
 01_Nos_Vamos_A_Casa
@@ -3180,41 +3180,41 @@ SKILL.md
 14_Canvas_Diagram_Studio
 15_Video_Visuals_Producer
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/00_Gentleman_Trainer:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/00_Gentleman_Trainer:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/01_Gentleman_System:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/01_Gentleman_System:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/01_Nos_Vamos_A_Casa:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/01_Nos_Vamos_A_Casa:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/02_Gentleman_Installer:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/02_Gentleman_Installer:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/02_Zinking_Transform:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/02_Zinking_Transform:
 SKILL.md
 resources
 scripts
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/02_Zinking_Transform/resources:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/02_Zinking_Transform/resources:
 ZinkingWriter.tsx
 zinking_writer.tsx
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/02_Zinking_Transform/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/02_Zinking_Transform/scripts:
 __pycache__
 zinking_transformer.py
 zinking_writer.py
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/02_Zinking_Transform/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/02_Zinking_Transform/scripts/__pycache__:
 zinking_transformer.cpython-314.pyc
 zinking_writer.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/03_Brand_Identity:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/03_Brand_Identity:
 SKILL.md
 resources
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/03_Brand_Identity/resources:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/03_Brand_Identity/resources:
 assets.md
 design-tokens.json
 examples
@@ -3223,86 +3223,86 @@ tech-stack.md
 ux-trust-guidelines.md
 voice-tone.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/03_Brand_Identity/resources/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/03_Brand_Identity/resources/examples:
 homepage.html
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/03_Gentleman_E2E:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/03_Gentleman_E2E:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/04_Gentleman_Bubbletea:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/04_Gentleman_Bubbletea:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/04_Subagent_Driven_Development:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/04_Subagent_Driven_Development:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/05_Analytics_Workflow:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/05_Analytics_Workflow:
 README.md
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/05_Analytics_Workflow/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/05_Analytics_Workflow/scripts:
 __pycache__
 data_analysis_skills.py
 data_visualization_flows.py
 detailed_cohort_analysis.py
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/05_Analytics_Workflow/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/05_Analytics_Workflow/scripts/__pycache__:
 data_analysis_skills.cpython-314.pyc
 data_visualization_flows.cpython-314.pyc
 detailed_cohort_analysis.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/05_Architecture_Guardrails:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/05_Architecture_Guardrails:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/06_Business_Rules:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/06_Business_Rules:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/06_Content_Creation:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/06_Content_Creation:
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/06_Content_Creation/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/06_Content_Creation/scripts:
 __pycache__
 content_creation_skills.py
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/06_Content_Creation/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/06_Content_Creation/scripts/__pycache__:
 content_creation_skills.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/07_Cultural_Norms:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/07_Cultural_Norms:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/07_Dieter_Rams_Design:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/07_Dieter_Rams_Design:
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/07_Dieter_Rams_Design/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/07_Dieter_Rams_Design/scripts:
 __pycache__
 dieter_rams_design_skill.py
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/07_Dieter_Rams_Design/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/07_Dieter_Rams_Design/scripts/__pycache__:
 dieter_rams_design_skill.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/08_Brand_Voice_Generator:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/08_Brand_Voice_Generator:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/08_Dashboard_Htmx:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/08_Dashboard_Htmx:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/09_Advanced_Context_Engineering:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/09_Advanced_Context_Engineering:
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/09_Advanced_Context_Engineering/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/09_Advanced_Context_Engineering/scripts:
 47_ACE_Activator.py
 __pycache__
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/09_Advanced_Context_Engineering/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/09_Advanced_Context_Engineering/scripts/__pycache__:
 47_ACE_Activator.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/09_Memory_Protocol:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/09_Memory_Protocol:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech:
 ab-test-setup
 analytics-tracking
 competitor-alternatives
@@ -3314,55 +3314,55 @@ schema-markup
 seo-audit
 social-content
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/ab-test-setup:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/ab-test-setup:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/analytics-tracking:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/analytics-tracking:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/competitor-alternatives:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/competitor-alternatives:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/free-tool-strategy:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/free-tool-strategy:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/paid-ads:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/paid-ads:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/programmatic-seo:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/programmatic-seo:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/referral-program:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/referral-program:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/schema-markup:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/schema-markup:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/seo-audit:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/seo-audit:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/social-content:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Marketing_Tech/social-content:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Plugin_Thin:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/10_Plugin_Thin:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/11_Compound_Engine:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/11_Compound_Engine:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/12_Premium_Image_Studio:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/12_Premium_Image_Studio:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/13_Silicon_Valley_Performance:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/13_Silicon_Valley_Performance:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/14_Canvas_Diagram_Studio:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/14_Canvas_Diagram_Studio:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/15_Video_Visuals_Producer:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/04_Compound/15_Video_Visuals_Producer:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities:
 01_Supabase_Integration
 02_Seo_Audit
 03_Data_Visualization
@@ -3376,48 +3376,48 @@ SKILL.md
 11_Edge_Case
 12_RTM
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/01_Supabase_Integration:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/01_Supabase_Integration:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/02_Seo_Audit:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/02_Seo_Audit:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/03_Data_Visualization:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/03_Data_Visualization:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/04_Vercel_Deploy:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/04_Vercel_Deploy:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/05_MCP_Integration:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/05_MCP_Integration:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/06_Observability:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/06_Observability:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/07_Evaluation:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/07_Evaluation:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/08_Test_Coverage:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/08_Test_Coverage:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/09_Integration_Testing:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/09_Integration_Testing:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/10_E2E_Testing:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/10_E2E_Testing:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/11_Edge_Case:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/11_Edge_Case:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/12_RTM:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/01_Gentleman_System_Legacy/05_Utilities/12_RTM:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical:
 01_Plan
 03_Review
 04_Compound
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/01_Plan:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/01_Plan:
 00_Project_Structure
 01_Docs_Alignment
 02_Issue_Creation
@@ -3427,39 +3427,39 @@ Auto_Template_Selector
 Claude_Blog_Context
 Claude_Blog_Researcher
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/01_Plan/00_Project_Structure:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/01_Plan/00_Project_Structure:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/01_Plan/01_Docs_Alignment:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/01_Plan/01_Docs_Alignment:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/01_Plan/02_Issue_Creation:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/01_Plan/02_Issue_Creation:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/01_Plan/06_Find_Skills:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/01_Plan/06_Find_Skills:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/01_Plan/07_Deep_Research:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/01_Plan/07_Deep_Research:
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/01_Plan/07_Deep_Research/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/01_Plan/07_Deep_Research/scripts:
 __pycache__
 deep_research.py
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/01_Plan/07_Deep_Research/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/01_Plan/07_Deep_Research/scripts/__pycache__:
 deep_research.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/01_Plan/Auto_Template_Selector:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/01_Plan/Auto_Template_Selector:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/01_Plan/Claude_Blog_Context:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/01_Plan/Claude_Blog_Context:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/01_Plan/Claude_Blog_Researcher:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/01_Plan/Claude_Blog_Researcher:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/03_Review:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/03_Review:
 00_Technical_Review
 01_Pr_Review
 02_Pr_Review_Deep
@@ -3469,31 +3469,31 @@ SKILL.md
 06_Ui_Elements
 08_Homebrew_Release
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/03_Review/00_Technical_Review:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/03_Review/00_Technical_Review:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/03_Review/01_Pr_Review:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/03_Review/01_Pr_Review:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/03_Review/02_Pr_Review_Deep:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/03_Review/02_Pr_Review_Deep:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/03_Review/04_Commit_Hygiene:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/03_Review/04_Commit_Hygiene:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/03_Review/04_Github_Pr:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/03_Review/04_Github_Pr:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/03_Review/06_Elite_Agent_Auditor:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/03_Review/06_Elite_Agent_Auditor:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/03_Review/06_Ui_Elements:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/03_Review/06_Ui_Elements:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/03_Review/08_Homebrew_Release:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/03_Review/08_Homebrew_Release:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound:
 00_Gentleman_Trainer
 01_Gentleman_System
 01_Nos_Vamos_A_Casa
@@ -3511,91 +3511,91 @@ SKILL.md
 10_Plugin_Thin
 13_Silicon_Valley_Performance
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/00_Gentleman_Trainer:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/00_Gentleman_Trainer:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/01_Gentleman_System:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/01_Gentleman_System:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/01_Nos_Vamos_A_Casa:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/01_Nos_Vamos_A_Casa:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/02_Gentleman_Installer:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/02_Gentleman_Installer:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/02_Zinking_Transform:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/02_Zinking_Transform:
 SKILL.md
 resources
 scripts
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/02_Zinking_Transform/resources:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/02_Zinking_Transform/resources:
 ZinkingWriter.tsx
 zinking_writer.tsx
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/02_Zinking_Transform/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/02_Zinking_Transform/scripts:
 __pycache__
 zinking_transformer.py
 zinking_writer.py
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/02_Zinking_Transform/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/02_Zinking_Transform/scripts/__pycache__:
 zinking_transformer.cpython-314.pyc
 zinking_writer.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/03_Gentleman_E2E:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/03_Gentleman_E2E:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/04_Gentleman_Bubbletea:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/04_Gentleman_Bubbletea:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/05_Analytics_Workflow:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/05_Analytics_Workflow:
 README.md
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/05_Analytics_Workflow/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/05_Analytics_Workflow/scripts:
 __pycache__
 data_analysis_skills.py
 data_visualization_flows.py
 detailed_cohort_analysis.py
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/05_Analytics_Workflow/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/05_Analytics_Workflow/scripts/__pycache__:
 data_analysis_skills.cpython-314.pyc
 data_visualization_flows.cpython-314.pyc
 detailed_cohort_analysis.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/05_Architecture_Guardrails:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/05_Architecture_Guardrails:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/06_Business_Rules:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/06_Business_Rules:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/07_Cultural_Norms:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/07_Cultural_Norms:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/08_Dashboard_Htmx:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/08_Dashboard_Htmx:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/09_Advanced_Context_Engineering:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/09_Advanced_Context_Engineering:
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/09_Advanced_Context_Engineering/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/09_Advanced_Context_Engineering/scripts:
 47_ACE_Activator.py
 __pycache__
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/09_Advanced_Context_Engineering/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/09_Advanced_Context_Engineering/scripts/__pycache__:
 47_ACE_Activator.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/09_Memory_Protocol:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/09_Memory_Protocol:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/10_Plugin_Thin:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/10_Plugin_Thin:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/02_Every_Canonical/04_Compound/13_Silicon_Valley_Performance:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/02_Every_Canonical/04_Compound/13_Silicon_Valley_Performance:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining:
 01_Brainstorming
 02_Writing_Plans
 03_Executing_Plans
@@ -3627,53 +3627,53 @@ SKILL.md
 33_Elite_Agent_Auditor
 34_Silicon_Valley_Performance
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/01_Brainstorming:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/01_Brainstorming:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/02_Writing_Plans:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/02_Writing_Plans:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/03_Executing_Plans:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/03_Executing_Plans:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/04_Test_Driven_Development:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/04_Test_Driven_Development:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/05_Systematic_Debugging:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/05_Systematic_Debugging:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/06_Verification_Before_Completion:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/06_Verification_Before_Completion:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/07_Verify_And_Commit:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/07_Verify_And_Commit:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/08_Nos_Vamos_A_Casa:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/08_Nos_Vamos_A_Casa:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/09_Zinking_Transform:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/09_Zinking_Transform:
 SKILL.md
 resources
 scripts
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/09_Zinking_Transform/resources:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/09_Zinking_Transform/resources:
 ZinkingWriter.tsx
 zinking_writer.tsx
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/09_Zinking_Transform/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/09_Zinking_Transform/scripts:
 __pycache__
 zinking_transformer.py
 zinking_writer.py
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/09_Zinking_Transform/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/09_Zinking_Transform/scripts/__pycache__:
 zinking_transformer.cpython-314.pyc
 zinking_writer.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/10_Brand_Identity:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/10_Brand_Identity:
 SKILL.md
 resources
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/10_Brand_Identity/resources:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/10_Brand_Identity/resources:
 assets.md
 design-tokens.json
 examples
@@ -3682,89 +3682,89 @@ tech-stack.md
 ux-trust-guidelines.md
 voice-tone.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/10_Brand_Identity/resources/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/10_Brand_Identity/resources/examples:
 homepage.html
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/11_Subagent_Driven_Development:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/11_Subagent_Driven_Development:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/12_Antigravity_Skill_Creator:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/12_Antigravity_Skill_Creator:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/13_Analytics_Workflow:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/13_Analytics_Workflow:
 README.md
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/13_Analytics_Workflow/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/13_Analytics_Workflow/scripts:
 __pycache__
 data_analysis_skills.py
 data_visualization_flows.py
 detailed_cohort_analysis.py
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/13_Analytics_Workflow/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/13_Analytics_Workflow/scripts/__pycache__:
 data_analysis_skills.cpython-314.pyc
 data_visualization_flows.cpython-314.pyc
 detailed_cohort_analysis.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/14_Content_Creation:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/14_Content_Creation:
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/14_Content_Creation/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/14_Content_Creation/scripts:
 __pycache__
 content_creation_skills.py
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/14_Content_Creation/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/14_Content_Creation/scripts/__pycache__:
 content_creation_skills.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/15_Dieter_Rams_Design:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/15_Dieter_Rams_Design:
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/15_Dieter_Rams_Design/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/15_Dieter_Rams_Design/scripts:
 __pycache__
 dieter_rams_design_skill.py
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/15_Dieter_Rams_Design/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/15_Dieter_Rams_Design/scripts/__pycache__:
 dieter_rams_design_skill.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/16_Writing_Strategy_Memos:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/16_Writing_Strategy_Memos:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/17_Brand_Voice_Generator:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/17_Brand_Voice_Generator:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/18_Mcp_Client:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/18_Mcp_Client:
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/18_Mcp_Client/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/18_Mcp_Client/scripts:
 __pycache__
 mcp_client.py
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/18_Mcp_Client/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/18_Mcp_Client/scripts/__pycache__:
 mcp_client.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/19_Planificacion_Tareas_Ai:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/19_Planificacion_Tareas_Ai:
 SKILL.md
 resources
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/19_Planificacion_Tareas_Ai/resources:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/19_Planificacion_Tareas_Ai/resources:
 task_template.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst:
 SKILL.md
 examples
 scripts
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples:
 01_Salud
 02_Ventas
 03_Marketing
 04_General
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/01_Salud:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/01_Salud:
 01_correlation_heatmap.png
 02_numeric_distribution.png
 03_categorical_distribution.png
@@ -3784,10 +3784,10 @@ data_preview.md
 summary.json
 test_health_data.csv
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/01_Salud/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/01_Salud/__pycache__:
 analyze_salud.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/02_Ventas:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/02_Ventas:
 01_correlation_heatmap.png
 02_numeric_distribution.png
 03_categorical_distribution.png
@@ -3805,10 +3805,10 @@ data_preview.md
 summary.json
 test_sales_data.csv
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/02_Ventas/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/02_Ventas/__pycache__:
 analyze_ventas.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/03_Marketing:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/03_Marketing:
 01_correlation_heatmap.png
 02_numeric_distribution.png
 03_categorical_distribution.png
@@ -3826,76 +3826,76 @@ data_preview.md
 summary.json
 test_marketing_data.csv
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/03_Marketing/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/03_Marketing/__pycache__:
 analyze_marketing.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/04_General:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/04_General:
 __pycache__
 analyze_general.py
 business_insights.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/04_General/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/examples/04_General/__pycache__:
 analyze_general.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/scripts:
 __pycache__
 calc_population_metrics.py
 clean_healthcare_data.py
 generate_health_dashboard.py
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/20_Health_Data_Analyst/scripts/__pycache__:
 calc_population_metrics.cpython-314.pyc
 clean_healthcare_data.cpython-314.pyc
 generate_health_dashboard.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/21_Find_Skills:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/21_Find_Skills:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/22_Skill_Creator:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/22_Skill_Creator:
 LICENSE.txt
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/22_Skill_Creator/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/22_Skill_Creator/scripts:
 __pycache__
 init_skill.py
 package_skill.py
 quick_validate.py
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/22_Skill_Creator/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/22_Skill_Creator/scripts/__pycache__:
 init_skill.cpython-314.pyc
 package_skill.cpython-314.pyc
 quick_validate.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/23_Advanced_Context_Engineering:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/23_Advanced_Context_Engineering:
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/23_Advanced_Context_Engineering/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/23_Advanced_Context_Engineering/scripts:
 47_ACE_Activator.py
 __pycache__
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/23_Advanced_Context_Engineering/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/23_Advanced_Context_Engineering/scripts/__pycache__:
 47_ACE_Activator.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/24_Test_Resource_Management:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/24_Test_Resource_Management:
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/24_Test_Resource_Management/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/24_Test_Resource_Management/scripts:
 48_Resource_Guardian.py
 __pycache__
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/24_Test_Resource_Management/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/24_Test_Resource_Management/scripts/__pycache__:
 48_Resource_Guardian.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/25_Invoice_Intelligence:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/25_Invoice_Intelligence:
 LEGACY_README.md
 QUICKSTART.txt
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/25_Invoice_Intelligence/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/25_Invoice_Intelligence/scripts:
 __pycache__
 advanced_examples.py
 dashboard.py
@@ -3903,35 +3903,35 @@ install.sh
 invoice_processor.py
 requirements.txt
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/25_Invoice_Intelligence/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/25_Invoice_Intelligence/scripts/__pycache__:
 advanced_examples.cpython-314.pyc
 dashboard.cpython-314.pyc
 invoice_processor.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/26_Deep_Research:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/26_Deep_Research:
 SKILL.md
 scripts
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/26_Deep_Research/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/26_Deep_Research/scripts:
 __pycache__
 deep_research.py
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/26_Deep_Research/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/26_Deep_Research/scripts/__pycache__:
 deep_research.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/31_Compound_Engine:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/31_Compound_Engine:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/32_Premium_Image_Studio:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/32_Premium_Image_Studio:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/33_Elite_Agent_Auditor:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/33_Elite_Agent_Auditor:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/03_High_Value_Remaining/34_Silicon_Valley_Performance:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/03_High_Value_Remaining/34_Silicon_Valley_Performance:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining:
 23_Supabase_Integration
 24_Seo_Audit
 25_Data_Visualization
@@ -3941,40 +3941,40 @@ SKILL.md
 29_Marketing_Tech
 30_Firecrawl
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/23_Supabase_Integration:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/23_Supabase_Integration:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/24_Seo_Audit:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/24_Seo_Audit:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/25_Data_Visualization:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/25_Data_Visualization:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/26_Vercel_Deploy:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/26_Vercel_Deploy:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/27_Nos_Vamos_A_Casa:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/27_Nos_Vamos_A_Casa:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/28_Zinking_Transform:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/28_Zinking_Transform:
 SKILL.md
 resources
 scripts
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/28_Zinking_Transform/resources:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/28_Zinking_Transform/resources:
 ZinkingWriter.tsx
 zinking_writer.tsx
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/28_Zinking_Transform/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/28_Zinking_Transform/scripts:
 __pycache__
 zinking_transformer.py
 zinking_writer.py
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/28_Zinking_Transform/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/28_Zinking_Transform/scripts/__pycache__:
 zinking_transformer.cpython-314.pyc
 zinking_writer.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech:
 ab-test-setup
 analytics-tracking
 competitor-alternatives
@@ -3986,82 +3986,82 @@ schema-markup
 seo-audit
 social-content
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/ab-test-setup:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/ab-test-setup:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/analytics-tracking:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/analytics-tracking:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/competitor-alternatives:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/competitor-alternatives:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/free-tool-strategy:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/free-tool-strategy:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/paid-ads:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/paid-ads:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/programmatic-seo:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/programmatic-seo:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/referral-program:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/referral-program:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/schema-markup:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/schema-markup:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/seo-audit:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/seo-audit:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/social-content:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/29_Marketing_Tech/social-content:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/04_Utilities_Remaining/30_Firecrawl:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/04_Utilities_Remaining/30_Firecrawl:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman:
 01_Plan
 02_Work
 03_Review
 04_Compound
 
-01_Core/03_Skills/10_Backup/05_Gentleman/01_Plan:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/01_Plan:
 07_Double_Code_Review
 08_Issue_Creation
 09_Branch_Pr
 10_Jira_Epic
 11_Jira_Task
 
-01_Core/03_Skills/10_Backup/05_Gentleman/01_Plan/07_Double_Code_Review:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/01_Plan/07_Double_Code_Review:
 SKILL.md
 metadata.yaml
 references
 scripts
 
-01_Core/03_Skills/10_Backup/05_Gentleman/01_Plan/07_Double_Code_Review/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/01_Plan/07_Double_Code_Review/references:
 hat-review.md
 verification-template.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/01_Plan/07_Double_Code_Review/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/01_Plan/07_Double_Code_Review/scripts:
 __pycache__
 run-review.py
 
-01_Core/03_Skills/10_Backup/05_Gentleman/01_Plan/07_Double_Code_Review/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/01_Plan/07_Double_Code_Review/scripts/__pycache__:
 run-review.cpython-314.pyc
 
-01_Core/03_Skills/10_Backup/05_Gentleman/01_Plan/08_Issue_Creation:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/01_Plan/08_Issue_Creation:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/01_Plan/09_Branch_Pr:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/01_Plan/09_Branch_Pr:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/01_Plan/10_Jira_Epic:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/01_Plan/10_Jira_Epic:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/01_Plan/11_Jira_Task:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/01_Plan/11_Jira_Task:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work:
 02_Angular
 03_React
 04_NextJS
@@ -4074,110 +4074,110 @@ SKILL.md
 11_Skill_Creator
 12_TypeScript
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work/02_Angular:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work/02_Angular:
 architecture
 core
 forms
 performance
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work/02_Angular/architecture:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work/02_Angular/architecture:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work/02_Angular/core:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work/02_Angular/core:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work/02_Angular/forms:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work/02_Angular/forms:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work/02_Angular/performance:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work/02_Angular/performance:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work/03_React:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work/03_React:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work/04_NextJS:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work/04_NextJS:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work/05_Tailwind:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work/05_Tailwind:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work/06_Zustand:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work/06_Zustand:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work/07_Zod:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work/07_Zod:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work/08_Ai_Sdk_5:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work/08_Ai_Sdk_5:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work/09_Django:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work/09_Django:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work/10_Github_Pr:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work/10_Github_Pr:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work/11_Skill_Creator:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work/11_Skill_Creator:
 SKILL.md
 assets
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work/11_Skill_Creator/assets:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work/11_Skill_Creator/assets:
 SKILL-TEMPLATE.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/02_Work/12_TypeScript:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/02_Work/12_TypeScript:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/03_Review:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/03_Review:
 07_Playwright
 08_Pytest
 09_Go_Testing
 
-01_Core/03_Skills/10_Backup/05_Gentleman/03_Review/07_Playwright:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/03_Review/07_Playwright:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/03_Review/08_Pytest:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/03_Review/08_Pytest:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/03_Review/09_Go_Testing:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/03_Review/09_Go_Testing:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/04_Compound:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/04_Compound:
 01_Gentleman_System
 02_Gentleman_Installer
 03_Gentleman_E2E
 04_Gentleman_Bubbletea
 05_Gentleman_Trainer
 
-01_Core/03_Skills/10_Backup/05_Gentleman/04_Compound/01_Gentleman_System:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/04_Compound/01_Gentleman_System:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/04_Compound/02_Gentleman_Installer:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/04_Compound/02_Gentleman_Installer:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/04_Compound/03_Gentleman_E2E:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/04_Compound/03_Gentleman_E2E:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/04_Compound/04_Gentleman_Bubbletea:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/04_Compound/04_Gentleman_Bubbletea:
 SKILL.md
 
-01_Core/03_Skills/10_Backup/05_Gentleman/04_Compound/05_Gentleman_Trainer:
+01_Personal_Os/01_Core/02_Tools/02_Skills/10_Backup/05_Gentleman/04_Compound/05_Gentleman_Trainer:
 SKILL.md
 
-01_Core/03_Skills/11_Doc_Processing:
+01_Personal_Os/01_Core/02_Tools/02_Skills/11_Doc_Processing:
 01_Universal_Doc_Reader
 02_Batch_Doc_Processor
 03_Resumen_Extractor
 README.md
 
-01_Core/03_Skills/11_Doc_Processing/01_Universal_Doc_Reader:
+01_Personal_Os/01_Core/02_Tools/02_Skills/11_Doc_Processing/01_Universal_Doc_Reader:
 SKILL.md
 
-01_Core/03_Skills/11_Doc_Processing/02_Batch_Doc_Processor:
+01_Personal_Os/01_Core/02_Tools/02_Skills/11_Doc_Processing/02_Batch_Doc_Processor:
 SKILL.md
 
-01_Core/03_Skills/11_Doc_Processing/03_Resumen_Extractor:
+01_Personal_Os/01_Core/02_Tools/02_Skills/11_Doc_Processing/03_Resumen_Extractor:
 SKILL.md
 
-01_Core/03_Skills/12_N8N:
+01_Personal_Os/01_Core/02_Tools/02_Skills/12_N8N:
 01_N8N_Code_Javascript
 02_N8N_Code_Python
 03_N8N_Expression_Syntax
@@ -4186,7 +4186,7 @@ SKILL.md
 06_N8N_Validation_Expert
 07_N8N_Workflow_Patterns
 
-01_Core/03_Skills/12_N8N/01_N8N_Code_Javascript:
+01_Personal_Os/01_Core/02_Tools/02_Skills/12_N8N/01_N8N_Code_Javascript:
 BUILTIN_FUNCTIONS.md
 COMMON_PATTERNS.md
 DATA_ACCESS.md
@@ -4194,7 +4194,7 @@ ERROR_PATTERNS.md
 README.md
 SKILL.md
 
-01_Core/03_Skills/12_N8N/02_N8N_Code_Python:
+01_Personal_Os/01_Core/02_Tools/02_Skills/12_N8N/02_N8N_Code_Python:
 COMMON_PATTERNS.md
 DATA_ACCESS.md
 ERROR_PATTERNS.md
@@ -4202,32 +4202,32 @@ README.md
 SKILL.md
 STANDARD_LIBRARY.md
 
-01_Core/03_Skills/12_N8N/03_N8N_Expression_Syntax:
+01_Personal_Os/01_Core/02_Tools/02_Skills/12_N8N/03_N8N_Expression_Syntax:
 COMMON_MISTAKES.md
 EXAMPLES.md
 README.md
 SKILL.md
 
-01_Core/03_Skills/12_N8N/04_N8N_Mcp_Tools_Expert:
+01_Personal_Os/01_Core/02_Tools/02_Skills/12_N8N/04_N8N_Mcp_Tools_Expert:
 README.md
 SEARCH_GUIDE.md
 SKILL.md
 VALIDATION_GUIDE.md
 WORKFLOW_GUIDE.md
 
-01_Core/03_Skills/12_N8N/05_N8N_Node_Configuration:
+01_Personal_Os/01_Core/02_Tools/02_Skills/12_N8N/05_N8N_Node_Configuration:
 DEPENDENCIES.md
 OPERATION_PATTERNS.md
 README.md
 SKILL.md
 
-01_Core/03_Skills/12_N8N/06_N8N_Validation_Expert:
+01_Personal_Os/01_Core/02_Tools/02_Skills/12_N8N/06_N8N_Validation_Expert:
 ERROR_CATALOG.md
 FALSE_POSITIVES.md
 README.md
 SKILL.md
 
-01_Core/03_Skills/12_N8N/07_N8N_Workflow_Patterns:
+01_Personal_Os/01_Core/02_Tools/02_Skills/12_N8N/07_N8N_Workflow_Patterns:
 README.md
 SKILL.md
 ai_agent_workflow.md
@@ -4236,46 +4236,46 @@ http_api_integration.md
 scheduled_tasks.md
 webhook_processing.md
 
-01_Core/03_Skills/13_System_Master:
+01_Personal_Os/01_Core/02_Tools/02_Skills/13_System_Master:
 01_Scripts
 02_References
 03_Find_Skills
 04_Mcp_Builder
 SKILL.md
 
-01_Core/03_Skills/13_System_Master/01_Scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/13_System_Master/01_Scripts:
 README.md
 
-01_Core/03_Skills/13_System_Master/02_References:
+01_Personal_Os/01_Core/02_Tools/02_Skills/13_System_Master/02_References:
 README.md
 
-01_Core/03_Skills/13_System_Master/03_Find_Skills:
+01_Personal_Os/01_Core/02_Tools/02_Skills/13_System_Master/03_Find_Skills:
 SKILL.md
 
-01_Core/03_Skills/13_System_Master/04_Mcp_Builder:
+01_Personal_Os/01_Core/02_Tools/02_Skills/13_System_Master/04_Mcp_Builder:
 LICENSE.txt
 SKILL.md
 reference
 scripts
 
-01_Core/03_Skills/13_System_Master/04_Mcp_Builder/reference:
+01_Personal_Os/01_Core/02_Tools/02_Skills/13_System_Master/04_Mcp_Builder/reference:
 evaluation.md
 mcp_best_practices.md
 node_mcp_server.md
 python_mcp_server.md
 
-01_Core/03_Skills/13_System_Master/04_Mcp_Builder/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/13_System_Master/04_Mcp_Builder/scripts:
 __pycache__
 connections.py
 evaluation.py
 example_evaluation.xml
 requirements.txt
 
-01_Core/03_Skills/13_System_Master/04_Mcp_Builder/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/13_System_Master/04_Mcp_Builder/scripts/__pycache__:
 connections.cpython-314.pyc
 evaluation.cpython-314.pyc
 
-01_Core/03_Skills/14_Anthropic_Harness:
+01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness:
 01_Evaluator_Pattern
 02_Context_Management
 03_Sprint_Contract
@@ -4286,16 +4286,16 @@ evaluation.cpython-314.pyc
 08_Graders_Framework
 README.md
 
-01_Core/03_Skills/14_Anthropic_Harness/01_Evaluator_Pattern:
+01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern:
 SKILL.md
 
-01_Core/03_Skills/14_Anthropic_Harness/02_Context_Management:
+01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/02_Context_Management:
 SKILL.md
 
-01_Core/03_Skills/14_Anthropic_Harness/03_Sprint_Contract:
+01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/03_Sprint_Contract:
 SKILL.md
 
-01_Core/03_Skills/14_Anthropic_Harness/04_Auto_Mode_Security:
+01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/04_Auto_Mode_Security:
 00_Prompt_Injection_Probe.py
 01_Transcript_Classifier.py
 02_Stage1_Fast_Filter.py
@@ -4304,59 +4304,59 @@ SKILL.md
 SKILL.md
 __pycache__
 
-01_Core/03_Skills/14_Anthropic_Harness/04_Auto_Mode_Security/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/04_Auto_Mode_Security/__pycache__:
 00_Prompt_Injection_Probe.cpython-314.pyc
 01_Transcript_Classifier.cpython-314.pyc
 02_Stage1_Fast_Filter.cpython-314.pyc
 03_Stage2_CoT_Reasoning.cpython-314.pyc
 04_Decision_Engine.cpython-314.pyc
 
-01_Core/03_Skills/14_Anthropic_Harness/05_Pass_At_Metrics:
+01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/05_Pass_At_Metrics:
 00_Pass_At_Metrics.py
 SKILL.md
 __pycache__
 
-01_Core/03_Skills/14_Anthropic_Harness/05_Pass_At_Metrics/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/05_Pass_At_Metrics/__pycache__:
 00_Pass_At_Metrics.cpython-314.pyc
 
-01_Core/03_Skills/14_Anthropic_Harness/06_Eval_Awareness:
+01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/06_Eval_Awareness:
 00_Eval_Awareness_Detector.py
 __pycache__
 
-01_Core/03_Skills/14_Anthropic_Harness/06_Eval_Awareness/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/06_Eval_Awareness/__pycache__:
 00_Eval_Awareness_Detector.cpython-314.pyc
 
-01_Core/03_Skills/14_Anthropic_Harness/07_Feature_List_JSON:
+01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/07_Feature_List_JSON:
 00_Feature_List_Generator.py
 SKILL.md
 __pycache__
 
-01_Core/03_Skills/14_Anthropic_Harness/07_Feature_List_JSON/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/07_Feature_List_JSON/__pycache__:
 00_Feature_List_Generator.cpython-314.pyc
 
-01_Core/03_Skills/14_Anthropic_Harness/08_Graders_Framework:
+01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/08_Graders_Framework:
 00_Code_Grader.py
 01_Model_Grader.py
 SKILL.md
 __pycache__
 
-01_Core/03_Skills/14_Anthropic_Harness/08_Graders_Framework/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/08_Graders_Framework/__pycache__:
 00_Code_Grader.cpython-314.pyc
 01_Model_Grader.cpython-314.pyc
 
-01_Core/03_Skills/15_Skill_Creator_Oficial:
+01_Personal_Os/01_Core/02_Tools/02_Skills/15_Skill_Creator_Oficial:
 01_Skill_Creator
 SKILL.md
 
-01_Core/03_Skills/15_Skill_Creator_Oficial/01_Skill_Creator:
+01_Personal_Os/01_Core/02_Tools/02_Skills/15_Skill_Creator_Oficial/01_Skill_Creator:
 LICENSE
 README.md
 skills
 
-01_Core/03_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills:
+01_Personal_Os/01_Core/02_Tools/02_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills:
 skill-creator
 
-01_Core/03_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator:
+01_Personal_Os/01_Core/02_Tools/02_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator:
 LICENSE.txt
 SKILL.md
 agents
@@ -4365,26 +4365,26 @@ eval-viewer
 references
 scripts
 
-01_Core/03_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/agents:
+01_Personal_Os/01_Core/02_Tools/02_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/agents:
 analyzer.md
 comparator.md
 grader.md
 
-01_Core/03_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/assets:
+01_Personal_Os/01_Core/02_Tools/02_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/assets:
 eval_review.html
 
-01_Core/03_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/eval-viewer:
+01_Personal_Os/01_Core/02_Tools/02_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/eval-viewer:
 __pycache__
 generate_review.py
 viewer.html
 
-01_Core/03_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/eval-viewer/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/eval-viewer/__pycache__:
 generate_review.cpython-314.pyc
 
-01_Core/03_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/references:
+01_Personal_Os/01_Core/02_Tools/02_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/references:
 schemas.md
 
-01_Core/03_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/scripts:
 __init__.py
 __pycache__
 aggregate_benchmark.py
@@ -4396,7 +4396,7 @@ run_eval.py
 run_loop.py
 utils.py
 
-01_Core/03_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/scripts/__pycache__:
 __init__.cpython-314.pyc
 aggregate_benchmark.cpython-314.pyc
 generate_report.cpython-314.pyc
@@ -4407,31 +4407,31 @@ run_eval.cpython-314.pyc
 run_loop.cpython-314.pyc
 utils.cpython-314.pyc
 
-01_Core/03_Skills/16_Silicon_Valley_Data_Analyst:
+01_Personal_Os/01_Core/02_Tools/02_Skills/16_Silicon_Valley_Data_Analyst:
 01_Scripts
 02_References
 README.md
 SKILL.md
 
-01_Core/03_Skills/16_Silicon_Valley_Data_Analyst/01_Scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/16_Silicon_Valley_Data_Analyst/01_Scripts:
 README.md
 
-01_Core/03_Skills/16_Silicon_Valley_Data_Analyst/02_References:
+01_Personal_Os/01_Core/02_Tools/02_Skills/16_Silicon_Valley_Data_Analyst/02_References:
 README.md
 
-01_Core/03_Skills/17_SEO_SOTA_Master:
+01_Personal_Os/01_Core/02_Tools/02_Skills/17_SEO_SOTA_Master:
 01_Scripts
 02_References
 README.md
 SKILL.md
 
-01_Core/03_Skills/17_SEO_SOTA_Master/01_Scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/17_SEO_SOTA_Master/01_Scripts:
 README.md
 
-01_Core/03_Skills/17_SEO_SOTA_Master/02_References:
+01_Personal_Os/01_Core/02_Tools/02_Skills/17_SEO_SOTA_Master/02_References:
 README.md
 
-01_Core/03_Skills/18_Personal_Life_OS:
+01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS:
 01_Quick_Capture
 02_Plan_My_Day
 03_Daily_Notes
@@ -4439,22 +4439,22 @@ README.md
 05_Returns_Tracker
 README.md
 
-01_Core/03_Skills/18_Personal_Life_OS/01_Quick_Capture:
+01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/01_Quick_Capture:
 SKILL.md
 
-01_Core/03_Skills/18_Personal_Life_OS/02_Plan_My_Day:
+01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/02_Plan_My_Day:
 SKILL.md
 
-01_Core/03_Skills/18_Personal_Life_OS/03_Daily_Notes:
+01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/03_Daily_Notes:
 SKILL.md
 
-01_Core/03_Skills/18_Personal_Life_OS/04_Recording_Mode:
+01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/04_Recording_Mode:
 SKILL.md
 
-01_Core/03_Skills/18_Personal_Life_OS/05_Returns_Tracker:
+01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/05_Returns_Tracker:
 SKILL.md
 
-01_Core/03_Skills/19_Video_Intel:
+01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel:
 01_Scripts
 02_References
 03___Pycache__
@@ -4464,7 +4464,7 @@ exploration.md
 implementation_plan.md
 requirements.txt
 
-01_Core/03_Skills/19_Video_Intel/01_Scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/01_Scripts:
 Video_Analysis_2026-04-03_PM_Agent_Teams_v2.md
 __pycache__
 cli.py
@@ -4479,7 +4479,7 @@ transcript_dump.txt
 video_analyzer.py
 video_registry.py
 
-01_Core/03_Skills/19_Video_Intel/01_Scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/01_Scripts/__pycache__:
 cli.cpython-314.pyc
 os_integration.cpython-314.pyc
 repo_scanner.cpython-314.pyc
@@ -4487,16 +4487,16 @@ synthesis_engine.cpython-314.pyc
 video_analyzer.cpython-314.pyc
 video_registry.cpython-314.pyc
 
-01_Core/03_Skills/19_Video_Intel/02_References:
+01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/02_References:
 implementation-templates.md
 methodology-mapping.md
 prompt-extraction.md
 technical.md
 
-01_Core/03_Skills/19_Video_Intel/03___Pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/03___Pycache__:
 __init__.cpython-314.pyc
 
-01_Core/03_Skills/SKILL_TEMPLATE:
+01_Personal_Os/01_Core/02_Tools/02_Skills/SKILL_TEMPLATE:
 01_Scripts
 02_Examples
 03_References
@@ -4504,18 +4504,18 @@ LICENSE
 README.md
 SKILL.md
 
-01_Core/03_Skills/SKILL_TEMPLATE/01_Scripts:
+01_Personal_Os/01_Core/02_Tools/02_Skills/SKILL_TEMPLATE/01_Scripts:
 TEMPLATE.py
 __pycache__
 
-01_Core/03_Skills/SKILL_TEMPLATE/01_Scripts/__pycache__:
+01_Personal_Os/01_Core/02_Tools/02_Skills/SKILL_TEMPLATE/01_Scripts/__pycache__:
 TEMPLATE.cpython-314.pyc
 
-01_Core/03_Skills/SKILL_TEMPLATE/02_Examples:
+01_Personal_Os/01_Core/02_Tools/02_Skills/SKILL_TEMPLATE/02_Examples:
 bad_example.md
 good_example.md
 
-01_Core/03_Skills/SKILL_TEMPLATE/03_References:
+01_Personal_Os/01_Core/02_Tools/02_Skills/SKILL_TEMPLATE/03_References:
 TEMPLATE.md
 
 01_Core/04_Agents:

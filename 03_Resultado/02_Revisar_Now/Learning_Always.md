@@ -75,13 +75,13 @@ OUTPUT: 8 deliverable por cada URL
 
 | #                | Perfil                      | Ubicación en Skills                                 |
 |------------------|-----------------------------|-----------------------------------------------------|
-| 01               | Project Manager             | `01_Core/03_Skills/02_Project_Manager/`             |
-| 02               | Product Manager             | `01_Core/03_Skills/03_Product_Manager/`             |
-| 03               | Product Design              | `01_Core/03_Skills/04_Product_Design/`              |
-| 04               | Vibe Coding                 | `01_Core/03_Skills/05_Vibe_Coding/`                 |
-| 05               | Testing                     | `01_Core/03_Skills/06_Testing/`                     |
-| 06               | DevOps                      | `01_Core/03_Skills/07_DevOps/`                      |
-| 07               | Marketing                   | `01_Core/03_Skills/09_Marketing/`                   |
+| 01               | Project Manager             | `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Project_Manager/`             |
+| 02               | Product Manager             | `01_Personal_Os/01_Core/02_Tools/02_Skills/03_Product_Manager/`             |
+| 03               | Product Design              | `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Product_Design/`              |
+| 04               | Vibe Coding                 | `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/`                 |
+| 05               | Testing                     | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Testing/`                     |
+| 06               | DevOps                      | `01_Personal_Os/01_Core/02_Tools/02_Skills/07_DevOps/`                      |
+| 07               | Marketing                   | `01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/`                   |
 
 ---
 

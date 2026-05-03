@@ -1,0 +1,137 @@
+# PLAN DE REPARACIÓN PersonalOS — 2026-04-27
+> Continuar desde aquí. Rama activa: `redesign/exaggerated-minimalism-v3`
+
+## ESTADO ACTUAL (al momento de cortar sesión)
+
+### ✅ YA HECHO (no repetir)
+1. **opencode.json corregido** — todos los MCPs con formato viejo (`transport/command/args`) migrados a formato nuevo (`type: local/remote`, `command: [array]`, `enabled: true`)
+2. **Auditoría completa del proyecto** — ver reporte en `03_Resultado/04_Reportes/AUDITORIA_COMPLETA_v3_0_2026-04-26.md`
+3. **HUB_Catalog.yaml corregido** — sufijos `15a/15b/16a/16b` cambiados a nombres reales `15_/16_` (sin sufijos). Archivo modificado pero NO commiteado.
+4. **Bulk replace parcial** — `08_Scripts_Os` → `03_Scripts_Os` en archivos `.md` de `.agent/02_Skills/` y `01_Personal_Os/01_Core/`. **Aún quedan ~120 archivos** en otras rutas (tasks, context_memory, hooks .py, scripts .py).
+
+### ❌ PENDIENTE — COMMITS POR FASES
+
+#### FASE 1 — Skill Huashu-Design (310 archivos staged, BLOQUEADOS)
+**Problema:** El GGA (pre-commit hook) falla con `Argument list too long` en Windows cuando hay muchos `.jsx/.js` en un commit. Exit code 126.
+**Solución:** El GGA tiene una variable `GGA_SKIP` o se puede deshabilitar temporalmente para este commit de assets. Revisar `.agent/05_GGA/bin/gga` — buscar si acepta `GGA_SKIP=1 git commit` o equivalente.
+**Archivos staged:** 310 archivos en `.agent/02_Skills/22_Huashu_Design/` y `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/10_Huashu_Design/` + `.atl/skill-registry.md` + reporte auditoría.
+**Mensaje de commit sugerido:**
+```
+feat(skills): add 花叔Design (Huashu-Design) skill v1.0
+
+- 01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/10_Huashu_Design/
+- .agent/02_Skills/22_Huashu_Design/ (backup estratégico)
+- .atl/skill-registry.md actualizado
+HTML prototipos alta fidelidad, slides, animaciones, diseño de marca.
+```
+
+#### FASE 2 — Fix HUB_Catalog (YA EDITADO, solo commitear)
+**Archivo modificado:** `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/05_HUB_Catalog.yaml`
+**Cambio:** nombres `15a_/15b_/16a_/16b_` → `15_/16_` para coincidir con archivos reales.
+**Mensaje de commit:**
+```
+fix(hub-catalog): correct hub names 15a/15b/16a/16b to real filenames
+
+Names 15a_Agent_Sync_Hub/15b_MCP_Sync_Hub/16a_Agent_Mirror_Hub/16b_System_Mapper_Hub
+did not match actual filenames on disk (no a/b suffix). Fixed to match reality.
+```
+
+#### FASE 3 — Bulk replace 08_Scripts_Os → 03_Scripts_Os (INCOMPLETO)
+**Estado:** El replace se hizo en `.agent/02_Skills/` y parte de `01_Personal_Os/` pero quedan ~120 archivos en:
+- `01_Personal_Os/03_Task/` (tasks activas)
+- `01_Personal_Os/04_Operations/00_Context_LLM/` (context memory)
+- `.agent/04_Extensions/hooks/` (hooks .py)
+- `01_Personal_Os/01_Core/02_Tools/02_Skills/` (scripts .py de skills)
+- `01_Personal_Os/02_Knowledge/` (lessons)
+
+**Comando para completar:**
+```bash
+find . -name "*.md" -name "*.py" -name "*.yaml" -name "*.yml" \
+  -not -path "./.backup/*" -not -path "./node_modules/*" \
+  -exec grep -l "08_Scripts_Os" {} \; | \
+  while read f; do sed -i 's|08_Scripts_Os|03_Scripts_Os|g' "$f"; done
+```
+NOTA: El find con múltiples `-name` no funciona así (OR logic). Usar:
+```bash
+find . \( -name "*.md" -o -name "*.py" -o -name "*.yaml" \) \
+  -not -path "./.backup/*" \
+  -exec grep -l "08_Scripts_Os" {} \; | \
+  while read f; do sed -i 's|08_Scripts_Os|03_Scripts_Os|g' "$f"; done
+```
+**Mensaje de commit:**
+```
+fix(paths): complete bulk replace 08_Scripts_Os → 03_Scripts_Os
+
+All .md, .py, .yaml files updated. 08_Scripts_Os was v2.0 path,
+now canonical path is 03_Scripts_Os in v3.0 Consequences architecture.
+```
+
+#### FASE 4 — Fix config_paths.py SCRIPT_LOCATION_MAP
+**Archivo:** `01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py`
+**Problema:** SCRIPT_LOCATION_MAP referencia directorios que NO existen:
+```python
+# Estos paths NO existen:
+SKILLS_DIR / "00_Compound_Engineering" / "scripts"
+SKILLS_DIR / "05_Workflows/01_Agent_Teams_Lite/scripts"
+SKILLS_DIR / "07_Personal_Os/scripts"
+SKILLS_DIR / "05_Workflows/02_Project_Manager/scripts"
+SKILLS_DIR / "06_Tools/13_System_Master/scripts"
+```
+**Solución:** Mapear a las rutas anidadas reales. Leer primero el archivo completo para entender la estructura actual, luego corregir los paths.
+
+#### FASE 5 — Merge a master + limpiar ramas
+**Ramas a evaluar para merge:**
+- `redesign/exaggerated-minimalism-v3` → **RAMA ACTIVA** — contiene todo el trabajo v3.0
+- `master` → rama principal
+- `backup-antes-redesign-v3` — solo backup, NO mergear
+- `backup-antes-revert-20260424-0041` — solo backup, NO mergear
+- `backup-post-migracion-20260424` — solo backup, NO mergear
+- `backup-pre-sequence-fix` — solo backup, NO mergear
+- `feat/OIM-Website-Mejoras-2026` — evaluar si tiene trabajo independiente
+
+**Proceso sugerido:**
+```bash
+# 1. Verificar que todas las fases anteriores estén commiteadas
+git log --oneline -10
+
+# 2. Ver diferencia con master
+git diff master...redesign/exaggerated-minimalism-v3 --stat
+
+# 3. Merge a master
+git checkout master
+git merge redesign/exaggerated-minimalism-v3
+
+# 4. Eliminar ramas backup (son snapshots, no trabajo)
+git branch -d backup-antes-redesign-v3
+git branch -d backup-antes-revert-20260424-0041
+git branch -d backup-post-migracion-20260424
+git branch -d backup-pre-sequence-fix
+```
+
+---
+
+## ERRORES CONOCIDOS QUE AÚN QUEDAN (post-fases)
+
+### config_paths.py legacy_paths (WARNING, no crítico)
+Las rutas de fallback en líneas ~305-312 referencian directorios que no existen:
+`14_Otros`, `04_Workflow`, `06_Auditor`, `01_Ritual`, `02_Tool` dentro de `03_Scripts_Os/`.
+No causa crash, solo búsquedas inútiles. Limpiar en Fase 4.
+
+### OS_Inventory.json conteos desactualizados (LEVE)
+**Archivo:** `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/01_OS_Inventory.json`
+Dice `skill_areas: 12, hubs: 15` — debería ser `13` y `19`. Actualizar al final.
+
+---
+
+## CONTEXTO TÉCNICO IMPORTANTE
+
+- **Rama activa:** `redesign/exaggerated-minimalism-v3`
+- **Remote:** `oim-web` (no `origin`)
+- **GGA (pre-commit hook):** `.agent/05_GGA/bin/gga` — revisar si soporta `GGA_SKIP=1` para commits de assets masivos
+- **Scripts reales en 03_Scripts_Os:** 00-11, 13_Auditors_Os/, 14-18 + config_paths.py + refactor_revert_id.py (23 total)
+- **Stash guardado:** `stash@{0}: On master: stash-cierre-v1.1` — no tocar
+
+## NOTAS DEL AUDITOR
+Los commits `28ddcf9` y `03e587e` fueron BUENOS. Sumaron. El único bug que introdujeron fue el nombre `15a/15b/16a/16b` en HUB_Catalog que no matcheaba los archivos reales (ya corregido en working tree, pendiente commit).
+
+Lo que "rompió cosas" no fue un commit específico sino que el migrate de `08_Scripts_Os` → `03_Scripts_Os` fue PARCIAL — actualizó config pero no los ~148 SKILL.md y scripts .py que referenciaban la ruta vieja.

@@ -100,7 +100,7 @@ For complex tasks, delegate to workflow files in `.agent/03_Workflows/`. Read th
 
 ## 🎯 Spec-Driven Development (SDD)
 
-When the user wants structured development with specs, use the SDD methodology. Skills are located in `.agent/02_Skills/05_Gentleman/00_Core_Sdd/`.
+When the user wants structured development with specs, use the SDD methodology. Skills are located in `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Gentleman/00_Core_Sdd/`.
 
 | Command                                                | Skill                                            | Purpose                                                      |
 |--------------------------------------------------------|--------------------------------------------------|--------------------------------------------------------------|
@@ -117,7 +117,7 @@ When the user wants structured development with specs, use the SDD methodology. 
 **Memory backend:** Engram MCP (configured in `.mcp.json`)
 
 **How to use SDD:**
-1. Read the skill file from `.agent/02_Skills/05_Gentleman/00_Core_Sdd/XX_Sdd_*/SKILL.md`
+1. Read the skill file from `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Gentleman/00_Core_Sdd/XX_Sdd_*/SKILL.md`
 2. Follow the skill's instructions for that phase
 3. Delegate to sub-agents as needed
 
@@ -169,7 +169,7 @@ Configurados en `.mcp.json`:
 ## 📚 Skills Disponibles
 
 ### Agent Teams Lite (SDD)
-`.agent/02_Skills/05_Gentleman/00_Core_Sdd/`
+`01_Personal_Os/01_Core/02_Tools/02_Skills/05_Gentleman/00_Core_Sdd/`
 
 | Phase                                   | Skill                                       | Purpose                                            |
 |-----------------------------------------|---------------------------------------------|----------------------------------------------------|
@@ -184,7 +184,7 @@ Configurados en `.mcp.json`:
 | 09                                      | sdd-archive                                 | Archive                                            |
 
 ### Gentleman.Dots Skills
-Ubicación principal: `.agent/02_Skills/05_Gentleman/`
+Ubicación principal: `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Gentleman/`
 
 | Category                                     | Skills                                                                                                                                                 |
 |----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -198,7 +198,7 @@ Ubicación principal: `.agent/02_Skills/05_Gentleman/`
 
 ## 🎨 TASTE-SKILLS (HIGH-AGENCY FRONTEND) - PRIORIDAD ALTA
 
-**Ubicación:** `.cursor/02_Skills/11_Taste_Skills/` y `.agent/02_Skills/11_Taste_Skills/`
+**Ubicación:** `.cursor/02_Skills/11_Taste_Skills/` y `01_Personal_Os/01_Core/02_Tools/02_Skills/11_Taste_Skills/`
 
 **IMPORTANTE:** Estas skills son OBLIGATORIAS para cualquier trabajo de frontend: webs, landing pages, invitaciones, formularios, dashboards, etc.
 
@@ -222,12 +222,12 @@ VISUAL_DENSITY (1-10): Densidad de contenido
 2. Referenciar con `@SKILL.md` en Cursor/Claude Code
 3. La IA sigue las reglas automáticamente
 
-**Recursos externos:** `.cursor/02_Skills/11_Taste_Skills/` y `.agent/02_Skills/11_Taste_Skills/`
+**Recursos externos:** `.cursor/02_Skills/11_Taste_Skills/` y `01_Personal_Os/01_Core/02_Tools/02_Skills/11_Taste_Skills/`
 
 ## 🧩 Integración con Gentleman.Dots
 
 Para usar skills de Gentleman.Dots:
-1. Leer el archivo SKILL.md correspondiente en `.agent/02_Skills/05_Gentleman/`
+1. Leer el archivo SKILL.md correspondiente en `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Gentleman/`
 2. Seguir las convenciones del skill
 3. Aplicar los patrones definidos
 

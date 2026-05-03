@@ -73,15 +73,15 @@
 
 ---
 
-### 3. .agent/02_Skills/ — Legacy Skills Path
+### 3. 01_Personal_Os/01_Core/02_Tools/02_Skills/ — Legacy Skills Path
 
 **Gravedad:** 🟢 INFO | **Tipo:** RUTA_LEGACY
 
-**Problema:** `18_Personal_Life_OS/README.md` referenciaba `01_Core/03_Skills/`
+**Problema:** `18_Personal_Life_OS/README.md` referenciaba `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
 **Fix aplicado:**
 ```diff
-- Returns Tracker → 01_Core/03_Skills/ (auto-generated skills)
+- Returns Tracker → 01_Personal_Os/01_Core/02_Tools/02_Skills/ (auto-generated skills)
 + Returns Tracker → 01_Personal_Os/01_Core/02_Tools/02_Skills/ (auto-generated skills)
 ```
 
@@ -172,7 +172,7 @@ Think_Different/
 | `.agent/01_Agents/01_Dream_Team/02_Data_Engineer.md`     | ✅ Legacy paths fixed                 |
 | `.agent/01_Agents/01_Dream_Team/03_Marketing_Tech.md`    | ✅ Legacy paths fixed                 |
 | `.agent/01_Agents/01_Dream_Team/04_Design_Ops.md`        | ✅ Legacy paths fixed                 |
-| `.agent/02_Skills/18_Personal_Life_OS/README.md`         | ✅ Legacy path fixed                  |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/README.md`         | ✅ Legacy path fixed                  |
 | `CLAUDE.md`                                              | ✅ v2.0→v3.0 sync                     |
 | `README.md`                                              | ✅ Removed 22-categories table        |
 | `OS_DIRECTORY.md`                                        | ✅ 9→12 areas                         |

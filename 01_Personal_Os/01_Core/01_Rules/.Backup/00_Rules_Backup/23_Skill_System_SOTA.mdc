@@ -21,7 +21,7 @@ Institucionalizar el sistema de skills como la capa fundamental de conocimiento 
 ## 📂 Estructura del Sistema de Skills
 
 ```
-01_Core/03_Skills/
+01_Personal_Os/01_Core/02_Tools/02_Skills/
 ├── SKILL_TEMPLATE/           # Template oficial para nuevas skills
 ├── 00_Skill_Auditor/        # Auditor de calidad
 ├── 15_Skill_Creator_Oficial/ # Creator oficial
@@ -242,16 +242,16 @@ W4 = 0.20  (Documentación)
 
 ## 📋 SKILL_TEMPLATE (v2.0)
 
-El template oficial está en: `01_Core/03_Skills/SKILL_TEMPLATE/`
+El template oficial está en: `01_Personal_Os/01_Core/02_Tools/02_Skills/SKILL_TEMPLATE/`
 
 ### Uso:
 
 ```bash
 # Copiar template
-cp -r 01_Core/03_Skills/SKILL_TEMPLATE/ 01_Core/03_Skills/NN_Nueva_Skill/
+cp -r 01_Personal_Os/01_Core/02_Tools/02_Skills/SKILL_TEMPLATE/ 01_Personal_Os/01_Core/02_Tools/02_Skills/NN_Nueva_Skill/
 
 # Editar SKILL.md
-nano 01_Core/03_Skills/NN_Nueva_Skill/SKILL.md
+nano 01_Personal_Os/01_Core/02_Tools/02_Skills/NN_Nueva_Skill/SKILL.md
 ```
 
 ### Contenido del Template:
@@ -349,7 +349,7 @@ nombre-skill/
 ### ✅ GOOD: Con security scan aprobado
 
 ```bash
-python 08_Scripts_Os\Validator_Fixed\skill_security_scan.py --skill 01_Core/03_Skills/NN_Skill/
+python 08_Scripts_Os\Validator_Fixed\skill_security_scan.py --skill 01_Personal_Os/01_Core/02_Tools/02_Skills/NN_Skill/
 # Score: 0 CRITICAL, 0 HIGH, 2 MEDIUM
 ```
 

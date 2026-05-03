@@ -29,7 +29,7 @@ El sistema Auto-Improvement detectaba **1,418 issues** (99% false positives).
 
 2. **Verificación de workflows**
    - Revisé `03_Vision_Review.md` manualmente
-   - Actualicé referencias a `.claude/skills` → `.agent/02_Skills/...`
+   - Actualicé referencias a `.claude/skills` → `01_Personal_Os/01_Core/02_Tools/02_Skills/...`
    - Actualicé referencias a `todos/` → `03_Tasks/`
 
 3. **Script de corrección masiva**
@@ -46,7 +46,7 @@ El sistema Auto-Improvement detectaba **1,418 issues** (99% false positives).
 El sistema había evolucionado a v6.1 pero la **documentación y referencias no se actualizaron**:
 
 1. Estructura de carpetas cambió de `04_Engine` → `04_Operations`
-2. Skills migraron de `.claude/skills` → `01_Core/03_Skills/`
+2. Skills migraron de `.claude/skills` → `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 3. Tasks migraron de `todos/` → `03_Tasks/`
 4. Los workflows seguían apuntando a rutas antiguas
 

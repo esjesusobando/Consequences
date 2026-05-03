@@ -208,7 +208,7 @@ improvement:
     - risk_reduction: "medio"
   
   artifacts:
-    - "01_Core/03_Skills/00_Personal_Os_Stack/SKILL.md"
+    - "01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os_Stack/SKILL.md"
   
   status: "✅ COMPLETADO"
 ```

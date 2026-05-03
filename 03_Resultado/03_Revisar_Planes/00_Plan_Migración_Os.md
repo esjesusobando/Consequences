@@ -43,7 +43,7 @@ Reorganizar `Think_Different/` de 9 carpetas raíz a 4 carpetas con propósito c
 | `01_Core/00_Workflows/`      | `01_Personal_Os/01_Core/00_Workflows_Os/`            |
 | `01_Core/01_Rules/`          | `01_Personal_Os/01_Core/01_Rules/`                   |
 | `01_Core/02_Evals/`          | `01_Personal_Os/01_Core/02_Tools/08_Evals/`          |
-| `01_Core/03_Skills/`         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`         |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/`         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`         |
 | `01_Core/04_Agents/`         | `01_Personal_Os/01_Core/02_Tools/01_Agents/`         |
 | `01_Core/05_Mcp/`            | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`            |
 | `01_Core/06_Integrations/`   | `01_Personal_Os/01_Core/02_Tools/04_Integrations/`   |

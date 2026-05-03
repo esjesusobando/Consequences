@@ -9,7 +9,7 @@ Hillary ha sido activada como agente proactiva especializada en la gestión de r
 
 ### 🧩 Mapping Arquitectónico
 - **Agente**: `01_Core/04_Agents/13_Hillary.md` -> Reporta a @gentleman.
-- **Instrucciones**: `01_Core/03_Skills/18_Personal_Life_OS/SKILL.md`.
+- **Instrucciones**: `01_Personal_Os/01_Core/02_Tools/02_Skills/18_Personal_Life_OS/SKILL.md`.
 - **Data Input**: `03_Tasks/02_Hillary_Inbox/`.
 - **Data Output**: `03_Tasks/` (Routine Master 06).
 

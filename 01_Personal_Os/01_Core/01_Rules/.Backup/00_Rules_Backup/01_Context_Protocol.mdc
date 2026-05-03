@@ -177,7 +177,7 @@ Crear comandos slash personalizados en `.claude/commands/` para automatizar work
     - **Claude Code nativo** (`.claude/.agents/`): `lfg`, `aipm-judge`, `workflow-orchestrator`
     - **Framework extendido** (`01_Core/04_Agents/`): 13 agentes especializados (TDD, Security, Git, etc.)
 
-2.  **BIBLIOTECA DE REGLAS**: Todo sub-agente o tarea delegada DEBE cargar y priorizar `01_Core/01_Rules/`, `01_Core/04_Agents/`, `01_Core/03_Skills/`, `01_Core/00_Workflows/`, `.agent/04_Extensions/`, `CLAUDE.md` y `00_Winter_is_Coming/AGENTS.md` para garantizar consistencia operativa.
+2.  **BIBLIOTECA DE REGLAS**: Todo sub-agente o tarea delegada DEBE cargar y priorizar `01_Core/01_Rules/`, `01_Core/04_Agents/`, `01_Personal_Os/01_Core/02_Tools/02_Skills/`, `01_Core/00_Workflows/`, `.agent/04_Extensions/`, `CLAUDE.md` y `00_Winter_is_Coming/AGENTS.md` para garantizar consistencia operativa.
 
 3.  **OBJETIVO DE VENTANA**: Reservar la ventana de contexto del agente principal para el razonamiento estratégico, dejando que el `agent-team` maneje la implementación táctica y el "trabajo pesado". Las acciones de todo los planificado lo realizaran los Subagentes, siempre repostando cada 10% Avance y cual es el siguiente paso (Indispensable)
 

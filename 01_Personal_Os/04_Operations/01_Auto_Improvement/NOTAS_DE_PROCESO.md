@@ -118,9 +118,9 @@ Reemplazadas referencias a paths obsoletos con estructura v2.0:
 - **20 carpetas** de skills
 - **296 archivos SKILL.md**
 
-### 5.2 Estructura de 01_Core/03_Skills/
+### 5.2 Estructura de 01_Personal_Os/01_Core/02_Tools/02_Skills/
 ```
-01_Core/03_Skills/
+01_Personal_Os/01_Core/02_Tools/02_Skills/
 ├── 00_TypeScript/          (13 archivos)
 ├── 01_React_19/            (4 archivos)
 ├── 02_Angular/            (7 archivos)

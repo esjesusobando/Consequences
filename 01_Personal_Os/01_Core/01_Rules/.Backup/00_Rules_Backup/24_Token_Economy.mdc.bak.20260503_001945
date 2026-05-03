@@ -1,0 +1,89 @@
+---
+description: Token Economy — Reglas de eficiencia para Claude Code. Activo en TODAS las sesiones. Previene gasto exponencial de tokens y degración de contexto.
+globs:
+alwaysApply: true
+---
+
+# Regla 24: Token Economy — Economía de Tokens Claude Code
+
+## Principio Fundamental
+
+Claude relee TODA la conversación desde cero en cada mensaje.
+**El gasto NO se suma, se MULTIPLICA.** El mensaje #30 cuesta ~30x más que el #1.
+
+---
+
+## LEYES ACTIVAS (se aplican siempre)
+
+### LEY 1 — Conversaciones nuevas entre tareas distintas
+- Usá `/clear` al cambiar de tema sin relación
+- Antes de limpiar: pedí un summary de max 4 párrafos y guardalo como `.md`
+- En la nueva sesión: arrastrá ese archivo como contexto inicial
+
+### LEY 2 — MCPs solo los que se usan
+- Cada MCP conectado agrega ~18.000 tokens a CADA mensaje
+- Al iniciar sesión: corrér `/mcp` y desactivar los no necesarios
+- Reactivar cuando se necesite, desactivar al terminar
+
+### LEY 3 — Un mensaje, no tres
+- Consolidar instrucciones relacionadas en UN solo mensaje
+- Si Claude falla: editar el mensaje original y regenerar (no añadir corrección encima)
+
+### LEY 4 — Plan Mode antes de tareas pesadas
+- Activar Plan Mode antes de crear arquitecturas o features desde cero
+- No proceder hasta tener 95% de certeza sobre lo que se pide
+
+### LEY 5 — CLAUDE.md como índice, no como enciclopedia
+- Cada línea de CLAUDE.md se recarga con CADA mensaje
+- Solo incluir: decisiones estables, reglas de arquitectura, comandos esenciales
+- Apuntar a otros archivos en lugar de copiar contenido ahí
+
+### LEY 6 — Referencias precisas de archivos
+- Usar `@archivo` o ruta exacta + nombre de función
+- Prohibido: "buscá en mi repo" o "explorá el folder"
+
+### LEY 7 — Compact proactivo al 60%
+- No esperar al autocompact del 95% (calidad ya degradada)
+- Correr `/compact` manualmente al ~60% de uso
+- Después de 3-4 compacts consecutivos: nueva conversación
+
+### LEY 8 — Descansos con compact
+- El caché dura solo ~5 minutos
+- Antes de alejarse 10+ minutos: correr `/compact`
+
+### LEY 9 — Modelo correcto para cada tarea
+- Opus → planeación, arquitectura, decisiones complejas (~20%)
+- Sonnet → implementación, código, tareas cotidianas (~80%)
+- Haiku → subagentes con tareas simples y bien definidas
+
+### LEY 10 — Supervisión activa en tareas importantes
+- En tareas arquitecturales: mantener un ojo en la sesión
+- Si Claude entra en loop (releyendo lo mismo): `Escape` inmediato
+- Un loop malo puede consumir el 80% de la sesión
+
+---
+
+## MÉTRICAS DE CONTROL
+
+| Herramienta | Uso |
+|-------------|-----|
+| `/context` | Ver qué está consumiendo tokens ahora mismo |
+| `/cost` | Costo estimado de la sesión actual |
+| `/status-line` | Barra en terminal con tokens en vivo |
+| `/compact` | Compactar contexto manualmente |
+| `/clear` | Nueva conversación limpia |
+| `/mcp` | Activar/desactivar MCPs |
+
+---
+
+## SEÑALES DE ALARMA
+
+- Sesión nueva sin escribir nada ya tiene 51.000+ tokens → demasiadas skills/MCPs cargados
+- Claude relee los mismos archivos 2+ veces → loop activo, interrumpir
+- Respuestas de calidad bajando hacia el final → compactar o nueva sesión
+- Calidad post-compact bajando → nueva conversación
+
+---
+
+*Skill detallada: `01_Core/03_Skills/08_Personal_Os/11_Token_Management/SKILL.md`*
+*Fuente: Video "13 trucos para que Claude Code te dure 10x más" — Nate HK / adaptado para PersonalOS v6.1*

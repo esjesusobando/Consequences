@@ -14,7 +14,7 @@
 
 Enumerate skills in chat as numbered list:
 ```bash
-ls ~/01_Core/03_Skills/
+ls ~/01_Personal_Os/01_Core/02_Tools/02_Skills/
 ```
 
 Present as:
@@ -33,12 +33,12 @@ Ask: "Which skill would you like to audit? (enter number or name)"
 After user selects, read the full skill structure:
 ```bash
 # Read main file
-cat ~/01_Core/03_Skills/{skill-name}/SKILL.md
+cat ~/01_Personal_Os/01_Core/02_Tools/02_Skills/{skill-name}/SKILL.md
 
 # Check for workflows and references
-ls ~/01_Core/03_Skills/{skill-name}/
-ls ~/01_Core/03_Skills/{skill-name}/workflows/ 2>/dev/null
-ls ~/01_Core/03_Skills/{skill-name}/references/ 2>/dev/null
+ls ~/01_Personal_Os/01_Core/02_Tools/02_Skills/{skill-name}/
+ls ~/01_Personal_Os/01_Core/02_Tools/02_Skills/{skill-name}/workflows/ 2>/dev/null
+ls ~/01_Personal_Os/01_Core/02_Tools/02_Skills/{skill-name}/references/ 2>/dev/null
 ```
 
 ## Step 3: Run Audit Checklist

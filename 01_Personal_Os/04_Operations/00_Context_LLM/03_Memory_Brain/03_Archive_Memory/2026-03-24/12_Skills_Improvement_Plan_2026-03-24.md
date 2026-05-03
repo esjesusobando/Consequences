@@ -16,7 +16,7 @@
 | **Progressive Disclosure**                       | Referencias a otros .md                     | Pocas                                   | 🟡                             |
 | **Memory/State**                                 | Logs, JSON en skill                         | No                                      | 🟡                             |
 | **TypeScript/Python Skills**                     | 9 tipos categorizados                       | 5 categorías                            | 🟢                             |
-| **Source-of-Truth**                              | `01_Core/03_Skills/`                        | `.agent/02_Skills/`                     | 🟢                             |
+| **Source-of-Truth**                              | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                        | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                     | 🟢                             |
 
 ---
 

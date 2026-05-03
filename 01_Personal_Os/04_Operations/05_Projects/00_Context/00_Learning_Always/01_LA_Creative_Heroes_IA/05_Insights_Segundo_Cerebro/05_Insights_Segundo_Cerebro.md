@@ -28,8 +28,8 @@
 
 ## Conexiones con Conocimiento Previo
 
-- **Connect to:** 01_Core/03_Skills/09_Marketing/ (prompt engineering)
-- **Connect to:** 01_Core/03_Skills/05_Vibe_Coding/ (AI tool stack)
+- **Connect to:** 01_Personal_Os/01_Core/02_Tools/02_Skills/09_Marketing/ (prompt engineering)
+- **Connect to:** 01_Personal_Os/01_Core/02_Tools/02_Skills/05_Vibe_Coding/ (AI tool stack)
 - **See also:** IA Agents workflow en 01_Core/
 
 ## Errores Comunes a Evitar
