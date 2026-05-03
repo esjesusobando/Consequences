@@ -82,39 +82,43 @@ Think_Different/
 
 ## 🛠️ Componentes Principales
 
-### Skills System (v3.0 Consequences — 12 Áreas Funcionales)
+### Skills System (v3.1 Consequences — 11 Áreas Funcionales)
 
-Para la versión v1.1, hemos evolucionado hacia una organización por **Áreas Maestras** para mejorar el discovery y la orquestación.
+Organización por **Áreas Maestras** para mejorar el discovery y la orquestación.
 
 | Área Maestras                                            | Categorías Integradas                                    | Propósito SOTA                                                                |
 |----------------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------------------|
-| **01_Creacion_Contenidos**                               | Marketing, SEO, Carousel                                 | Generación de valor y contenido transmedia.                                   |
-| **02_Diseno_Ui_Ux**                                      | UI/UX, Product Design                                    | Experiencia de usuario y estética premium.                                    |
-| **03_Video_Media**                                       | Video Intel, James Cameron                               | Producción audiovisual e inteligencia de video.                               |
-| **04_Automatizacion**                                    | N8N, Scraping, Doc Proc                                  | Flujos autónomos y procesamiento de datos.                                    |
-| **05_Workflows**                                         | Agent Teams, PM/PMO                                      | Orquestación de equipos y gestión SDD.                                        |
-| **06_Tools**                                             | DevOps, Testing, Data                                    | Herramientas de ingeniería y QA avanzado.                                     |
-| **07_Personal_Os**                                       | Life OS, System Master                                   | Núcleo operativo y gestión de vida (Hillary).                                 |
-| **08_Invictus_Web**                                      | Plugins, Taste, Search                                   | Capacidades extendidas de navegación web.                                     |
-| **09_Legacy_Archive**                                    | Backup, Historical                                       | Soporte histórico y archivo Octopus.                                          |
+| **00_Compound_Engineering**                             | CE Spider, Avengers, Compound Engineering                | Core de ingeniería compuesta                                                    |
+| **00_Personal_Os_Stack**                                | Stack base OS, System Guardian                          | Base del sistema operativo personal                                            |
+| **00_Skill_Auditor**                                    | Auditoría de skills                                    | Validación y auditoría del sistema de skills                                  |
+| **01_Creacion_Contenidos**                             | Brand, YouTube, SEO, Carousel, Marketing              | Generación de valor y contenido transmedia.                                   |
+| **02_Diseno_Ui_Ux**                                      | UI/UX, Product Design, Huashu, Dumbledor               | Experiencia de usuario y estética premium.                                    |
+| **03_Video_Media**                                       | Video Intel, James Cameron, Remotion                    | Producción audiovisual e inteligencia de video.                               |
+| **04_Automatizacion**                                    | N8N, Scraping, Firecrawl, GWS Client                  | Flujos autónomos y procesamiento de datos.                                    |
+| **05_Workflows**                                         | Agent Teams, PM/PMO, SDD, CE                          | Orquestación de equipos y gestión SDD.                                        |
+| **06_Tools**                                             | DevOps, Testing, Data Analyst, Skill Creator           | Herramientas de ingeniería y QA avanzado.                                     |
+| **07_Personal_Os**                                       | Life OS, Hillary, Rituales, Contexto                   | Núcleo operativo y gestión de vida personal.                                  |
+| **08_Invictus_Web**                                      | Playwright, Superpowers, Browser Automation            | Capacidades extendidas de navegación web.                                     |
 
-### Skills Index (Referencia Completa)
+### Skills Index (Referencia Completa — 11 Áreas)
+
+### Skills Index (Referencia Completa — 11 Áreas)
 
 | Área                                    | Descripción                                                              |
 |-----------------------------------------|--------------------------------------------------------------------------|
-| **00_Compound_Engineering**             | Core CE (Spider, Avengers)                                               |
-| **00_Personal_Os_Stack**                | Stack base OS + Gcierr                                                   |
-| **00_Skill_Auditor**                    | Auditoría de skills                                                      |
-| **01_Creacion_Contenidos**              | Brand, YouTube, SEO, Carousel                                            |
-| **02_Diseno_Ui_Ux**                     | Product Design, UI/UX, Taste                                             |
-| **03_Video_Media**                      | Video Intel, James Cameron                                               |
-| **04_Automatizacion**                   | N8N, Firecrawl                                                           |
-| **05_Workflows**                        | Agent Teams, PM, Orchestrator                                            |
-| **06_Tools**                            | Skill Creator, Testing, DevOps, Data Analyst                             |
-| **07_Personal_Os**                      | Life OS, Hillary, Rituales                                               |
-| **08_Invictus_Web**                     | Playwright, Superpowers                                                  |
-| **09_Legacy_Archive**                   | Skills obsoletas                                                         |
+| **00_Compound_Engineering**             | Core CE (Spider, Avengers) — SDD, Compound Engineering                 |
+| **00_Personal_Os_Stack**                | Stack base OS + System Guardian                                         |
+| **00_Skill_Auditor**                    | Auditoría y validación de skills                                        |
+| **01_Creacion_Contenidos**              | Brand, YouTube, SEO, Carousel, Marketing                                |
+| **02_Diseno_Ui_Ux**                     | Product Design, UI/UX, Huashu, Dumbledor, Taste                         |
+| **03_Video_Media**                      | Video Intel, James Cameron, Remotion                                     |
+| **04_Automatizacion**                   | N8N, Firecrawl, GWS Client                                              |
+| **05_Workflows**                        | Agent Teams, PM, Orchestrator, SDD                                       |
+| **06_Tools**                            | Skill Creator, Testing, DevOps, Data Analyst, Qmd                        |
+| **07_Personal_Os**                      | Life OS, Hillary, Rituales, Contexto                                     |
+| **08_Invictus_Web**                     | Playwright, Superpowers, Browser Automation                               |
 
+> ℹ️ **Legacy Archive:** Skills obsoletas movidas a `01_Personal_Os/05_Archive/09_Legacy_Skills_Archive/`
 > Índice completo: `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
 
 ---
