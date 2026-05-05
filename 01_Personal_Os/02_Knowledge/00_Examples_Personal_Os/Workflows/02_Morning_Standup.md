@@ -120,11 +120,11 @@ What action items did I commit to in my recent meetings?
 
 ## MCP Integration
 
-| MCP                           | Tool                                  | Purpose                                |
-|-------------------------------|---------------------------------------|----------------------------------------|
-| **Fireflies**                 | `search_meetings`                     | Find recent meetings                   |
-| **Fireflies**                 | `get_meeting_details`                 | Get action items                       |
-| **Engram**                    | `mem_context`                         | Recent session context                 |
+| MCP                             | Tool                                    | Purpose                                  |
+|---------------------------------|-----------------------------------------|------------------------------------------|
+| **Fireflies**                   | `search_meetings`                       | Find recent meetings                     |
+| **Fireflies**                   | `get_meeting_details`                   | Get action items                         |
+| **Engram**                      | `mem_context`                           | Recent session context                   |
 
 ---
 
@@ -139,12 +139,12 @@ What action items did I commit to in my recent meetings?
 
 ## Files Reference
 
-| File                                 | Location                                                                                 |
-|--------------------------------------|------------------------------------------------------------------------------------------|
-| Fireflies Tool Guide                 | `01_Core/05_Mcp/00_Config_Mcp/mcp-tools/06_productivity/02_fireflies.md`                 |
-| Goals                                | `00_Winter_is_Coming/GOALS.md`                                                           |
-| Tasks                                | `03_Tasks/*.md`                                                                          |
-| Meeting Transcripts                  | `03_Knowledge/Transcripts/`                                                              |
+| File                                   | Location                                                                                   |
+|----------------------------------------|--------------------------------------------------------------------------------------------|
+| Fireflies Tool Guide                   | `01_Core/05_Mcp/00_Config_Mcp/mcp-tools/06_productivity/02_fireflies.md`                   |
+| Goals                                  | `00_Winter_is_Coming/GOALS.md`                                                             |
+| Tasks                                  | `03_Tasks/*.md`                                                                            |
+| Meeting Transcripts                    | `03_Knowledge/Transcripts/`                                                                |
 
 ---
 

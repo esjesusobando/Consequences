@@ -20,11 +20,11 @@ Reviews code changes using dynamically selected reviewer personas. Spawns parall
 
 Check `$ARGUMENTS` for `mode:autofix` or `mode:report-only`. If either token is present, strip it from the remaining arguments before interpreting the rest as the PR number, GitHub URL, or branch name.
 
-| Mode                                      | When                                            | Behavior                                                                                                                                                                                   |
-|-------------------------------------------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Interactive** (default)                 | No mode token present                           | Review, present findings, ask for policy decisions when needed, and optionally continue into fix/push/PR next steps                                                                        |
-| **Autofix**                               | `mode:autofix` in arguments                     | No user interaction. Review, apply only policy-allowed `safe_auto` fixes, re-review in bounded rounds, write a run artifact, and emit residual downstream work when needed                 |
-| **Report-only**                           | `mode:report-only` in arguments                 | Strictly read-only. Review and report only, then stop with no edits, artifacts, todos, commits, pushes, or PR actions                                                                      |
+| Mode                                        | When                                              | Behavior                                                                                                                                                                                     |
+|---------------------------------------------|---------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Interactive** (default)                   | No mode token present                             | Review, present findings, ask for policy decisions when needed, and optionally continue into fix/push/PR next steps                                                                          |
+| **Autofix**                                 | `mode:autofix` in arguments                       | No user interaction. Review, apply only policy-allowed `safe_auto` fixes, re-review in bounded rounds, write a run artifact, and emit residual downstream work when needed                   |
+| **Report-only**                             | `mode:report-only` in arguments                   | Strictly read-only. Review and report only, then stop with no edits, artifacts, todos, commits, pushes, or PR actions                                                                        |
 
 ### Autofix mode rules
 
@@ -46,23 +46,23 @@ Check `$ARGUMENTS` for `mode:autofix` or `mode:report-only`. If either token is 
 
 All reviewers use P0-P3:
 
-| Level                   | Meaning                                                                                                    | Action                                 |
-|-------------------------|------------------------------------------------------------------------------------------------------------|----------------------------------------|
-| **P0**                  | Critical breakage, exploitable vulnerability, data loss/corruption                                         | Must fix before merge                  |
-| **P1**                  | High-impact defect likely hit in normal usage, breaking contract                                           | Should fix                             |
-| **P2**                  | Moderate issue with meaningful downside (edge case, perf regression, maintainability trap)                 | Fix if straightforward                 |
-| **P3**                  | Low-impact, narrow scope, minor improvement                                                                | User's discretion                      |
+| Level                     | Meaning                                                                                                      | Action                                   |
+|---------------------------|--------------------------------------------------------------------------------------------------------------|------------------------------------------|
+| **P0**                    | Critical breakage, exploitable vulnerability, data loss/corruption                                           | Must fix before merge                    |
+| **P1**                    | High-impact defect likely hit in normal usage, breaking contract                                             | Should fix                               |
+| **P2**                    | Moderate issue with meaningful downside (edge case, perf regression, maintainability trap)                   | Fix if straightforward                   |
+| **P3**                    | Low-impact, narrow scope, minor improvement                                                                  | User's discretion                        |
 
 ## Action Routing
 
 Severity answers **urgency**. Routing answers **who acts next** and **whether this skill may mutate the checkout**.
 
-| `autofix_class`                   | Default owner                                    | Meaning                                                                                                                                                        |
-|-----------------------------------|--------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `safe_auto`                       | `review-fixer`                                   | Local, deterministic fix suitable for the in-skill fixer when the current mode allows mutation                                                                 |
-| `gated_auto`                      | `downstream-resolver` or `human`                 | Concrete fix exists, but it changes behavior, contracts, permissions, or another sensitive boundary that should not be auto-applied by default                 |
-| `manual`                          | `downstream-resolver` or `human`                 | Actionable work that should be handed off rather than fixed in-skill                                                                                           |
-| `advisory`                        | `human` or `release`                             | Report-only output such as learnings, rollout notes, or residual risk                                                                                          |
+| `autofix_class`                     | Default owner                                      | Meaning                                                                                                                                                          |
+|-------------------------------------|----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `safe_auto`                         | `review-fixer`                                     | Local, deterministic fix suitable for the in-skill fixer when the current mode allows mutation                                                                   |
+| `gated_auto`                        | `downstream-resolver` or `human`                   | Concrete fix exists, but it changes behavior, contracts, permissions, or another sensitive boundary that should not be auto-applied by default                   |
+| `manual`                            | `downstream-resolver` or `human`                   | Actionable work that should be handed off rather than fixed in-skill                                                                                             |
+| `advisory`                          | `human` or `release`                               | Report-only output such as learnings, rollout notes, or residual risk                                                                                            |
 
 Routing rules:
 
@@ -77,42 +77,42 @@ Routing rules:
 
 **Always-on (every review):**
 
-| Agent                                                                    | Focus                                                                                                            |
-|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| `compound-engineering:review:correctness-reviewer`                       | Logic errors, edge cases, state bugs, error propagation                                                          |
-| `compound-engineering:review:testing-reviewer`                           | Coverage gaps, weak assertions, brittle tests                                                                    |
-| `compound-engineering:review:maintainability-reviewer`                   | Coupling, complexity, naming, dead code, abstraction debt                                                        |
-| `compound-engineering:review:project-standards-reviewer`                 | CLAUDE.md and 01_Personal_Os/11_AGENTS.md compliance -- frontmatter, references, naming, portability             |
-| `compound-engineering:review:agent-native-reviewer`                      | Verify new features are agent-accessible                                                                         |
-| `compound-engineering:research:learnings-researcher`                     | Search docs/solutions/ for past issues related to this PR                                                        |
+| Agent                                                                      | Focus                                                                                                              |
+|----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| `compound-engineering:review:correctness-reviewer`                         | Logic errors, edge cases, state bugs, error propagation                                                            |
+| `compound-engineering:review:testing-reviewer`                             | Coverage gaps, weak assertions, brittle tests                                                                      |
+| `compound-engineering:review:maintainability-reviewer`                     | Coupling, complexity, naming, dead code, abstraction debt                                                          |
+| `compound-engineering:review:project-standards-reviewer`                   | CLAUDE.md and 01_Personal_Os/11_AGENTS.md compliance -- frontmatter, references, naming, portability               |
+| `compound-engineering:review:agent-native-reviewer`                        | Verify new features are agent-accessible                                                                           |
+| `compound-engineering:research:learnings-researcher`                       | Search docs/solutions/ for past issues related to this PR                                                          |
 
 **Cross-cutting conditional (selected per diff):**
 
-| Agent                                                                  | Select when diff touches...                                                                                                   |
-|------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `compound-engineering:review:security-reviewer`                        | Auth, public endpoints, user input, permissions                                                                               |
-| `compound-engineering:review:performance-reviewer`                     | DB queries, data transforms, caching, async                                                                                   |
-| `compound-engineering:review:api-contract-reviewer`                    | Routes, serializers, type signatures, versioning                                                                              |
-| `compound-engineering:review:data-migrations-reviewer`                 | Migrations, schema changes, backfills                                                                                         |
-| `compound-engineering:review:reliability-reviewer`                     | Error handling, retries, timeouts, background jobs                                                                            |
-| `compound-engineering:review:adversarial-reviewer`                     | Diff >=50 changed non-test/non-generated/non-lockfile lines, or auth, payments, data mutations, external APIs                 |
+| Agent                                                                    | Select when diff touches...                                                                                                     |
+|--------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| `compound-engineering:review:security-reviewer`                          | Auth, public endpoints, user input, permissions                                                                                 |
+| `compound-engineering:review:performance-reviewer`                       | DB queries, data transforms, caching, async                                                                                     |
+| `compound-engineering:review:api-contract-reviewer`                      | Routes, serializers, type signatures, versioning                                                                                |
+| `compound-engineering:review:data-migrations-reviewer`                   | Migrations, schema changes, backfills                                                                                           |
+| `compound-engineering:review:reliability-reviewer`                       | Error handling, retries, timeouts, background jobs                                                                              |
+| `compound-engineering:review:adversarial-reviewer`                       | Diff >=50 changed non-test/non-generated/non-lockfile lines, or auth, payments, data mutations, external APIs                   |
 
 **Stack-specific conditional (selected per diff):**
 
-| Agent                                                                       | Select when diff touches...                                                                             |
-|-----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| `compound-engineering:review:dhh-rails-reviewer`                            | Rails architecture, service objects, session/auth choices, or Hotwire-vs-SPA boundaries                 |
-| `compound-engineering:review:kieran-rails-reviewer`                         | Rails application code where conventions, naming, and maintainability are in play                       |
-| `compound-engineering:review:kieran-python-reviewer`                        | Python modules, endpoints, scripts, or services                                                         |
-| `compound-engineering:review:kieran-typescript-reviewer`                    | TypeScript components, services, hooks, utilities, or shared types                                      |
-| `compound-engineering:review:julik-frontend-races-reviewer`                 | Stimulus/Turbo controllers, DOM events, timers, animations, or async UI flows                           |
+| Agent                                                                         | Select when diff touches...                                                                               |
+|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| `compound-engineering:review:dhh-rails-reviewer`                              | Rails architecture, service objects, session/auth choices, or Hotwire-vs-SPA boundaries                   |
+| `compound-engineering:review:kieran-rails-reviewer`                           | Rails application code where conventions, naming, and maintainability are in play                         |
+| `compound-engineering:review:kieran-python-reviewer`                          | Python modules, endpoints, scripts, or services                                                           |
+| `compound-engineering:review:kieran-typescript-reviewer`                      | TypeScript components, services, hooks, utilities, or shared types                                        |
+| `compound-engineering:review:julik-frontend-races-reviewer`                   | Stimulus/Turbo controllers, DOM events, timers, animations, or async UI flows                             |
 
 **CE conditional (migration-specific):**
 
-| Agent                                                                       | Select when diff includes migration files                                   |
-|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| `compound-engineering:review:schema-drift-detector`                         | Cross-references schema.rb against included migrations                      |
-| `compound-engineering:review:deployment-verification-agent`                 | Produces deployment checklist with SQL verification queries                 |
+| Agent                                                                         | Select when diff includes migration files                                     |
+|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| `compound-engineering:review:schema-drift-detector`                           | Cross-references schema.rb against included migrations                        |
+| `compound-engineering:review:deployment-verification-agent`                   | Produces deployment checklist with SQL verification queries                   |
 
 ## Review Scope
 

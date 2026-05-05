@@ -23,14 +23,14 @@ Extrae información estructurada y premium de archivos individuales en múltiple
 
 ## 🚀 Formatos Soportados
 
-| Categoría                          | Extensiones                                                      | Parser                              |
-|------------------------------------|------------------------------------------------------------------|-------------------------------------|
-| **Documentos**                     | `.pdf`, `.docx`, `.doc`                                          | PyPDF2, python-docx                 |
-| **Tablas**                         | `.xlsx`, `.xls`, `.csv`                                          | pandas                              |
-| **Presentaciones**                 | `.pptx`                                                          | python-pptx                         |
-| **Diseño**                         | `.psd`, `.psb`                                                   | psd-tools                           |
-| **Imágenes**                       | `.tiff`, `.tif`, `.jpg`, `.png`, `.webp`, `.gif`                 | Pillow                              |
-| **Texto**                          | `.md`, `.txt`                                                    | nativo                              |
+| Categoría                            | Extensiones                                                        | Parser                                |
+|--------------------------------------|--------------------------------------------------------------------|---------------------------------------|
+| **Documentos**                       | `.pdf`, `.docx`, `.doc`                                            | PyPDF2, python-docx                   |
+| **Tablas**                           | `.xlsx`, `.xls`, `.csv`                                            | pandas                                |
+| **Presentaciones**                   | `.pptx`                                                            | python-pptx                           |
+| **Diseño**                           | `.psd`, `.psb`                                                     | psd-tools                             |
+| **Imágenes**                         | `.tiff`, `.tif`, `.jpg`, `.png`, `.webp`, `.gif`                   | Pillow                                |
+| **Texto**                            | `.md`, `.txt`                                                      | nativo                                |
 
 ## 🛠️ Motor de Ejecución
 

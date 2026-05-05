@@ -79,21 +79,21 @@ print(results['summary'])
 
 ## Criterios del Contrato
 
-| Tipo                        | Descripción                              |
-|-----------------------------|------------------------------------------|
-| `manual`                    | Requiere revisión humana                 |
-| `automated`                 | Test automático pasa                     |
-| `test`                      | Unit/E2E test coverage                   |
+| Tipo                          | Descripción                                |
+|-------------------------------|--------------------------------------------|
+| `manual`                      | Requiere revisión humana                   |
+| `automated`                   | Test automático pasa                       |
+| `test`                        | Unit/E2E test coverage                     |
 
 ---
 
 ## Integración con Perfiles
 
-| Perfil                          | Cómo usa                                     |
-|---------------------------------|----------------------------------------------|
-| Product Builder                 | Antes de cada feature/sprint                 |
-| Design Ops                      | Antes de cada componente                     |
-| Data Engineer                   | Antes de cada pipeline                       |
+| Perfil                            | Cómo usa                                       |
+|-----------------------------------|------------------------------------------------|
+| Product Builder                   | Antes de cada feature/sprint                   |
+| Design Ops                        | Antes de cada componente                       |
+| Data Engineer                     | Antes de cada pipeline                         |
 
 ---
 

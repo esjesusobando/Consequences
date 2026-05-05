@@ -21,12 +21,12 @@ go run ./cmd/gentle-ai install [flags]
 
 The installer detects the platform automatically at runtime — there is no flag to override platform selection. The detected platform profile determines which package manager is used for install commands:
 
-| Platform                         | Package manager               | Example install command                             |
-|----------------------------------|-------------------------------|-----------------------------------------------------|
-| macOS                            | `brew`                        | `brew install anomalyco/tap/opencode`               |
-| Ubuntu/Debian                    | `apt`                         | `sudo npm install -g opencode-ai`                   |
-| Arch                             | `pacman`                      | `sudo npm install -g opencode-ai`                   |
-| Fedora/RHEL family               | `dnf`                         | `sudo npm install -g opencode-ai`                   |
+| Platform                           | Package manager                 | Example install command                               |
+|------------------------------------|---------------------------------|-------------------------------------------------------|
+| macOS                              | `brew`                          | `brew install anomalyco/tap/opencode`                 |
+| Ubuntu/Debian                      | `apt`                           | `sudo npm install -g opencode-ai`                     |
+| Arch                               | `pacman`                        | `sudo npm install -g opencode-ai`                     |
+| Fedora/RHEL family                 | `dnf`                           | `sudo npm install -g opencode-ai`                     |
 
 The `--dry-run` output includes a `Platform decision` line showing `os`, `distro`, `package-manager`, and `status`.
 

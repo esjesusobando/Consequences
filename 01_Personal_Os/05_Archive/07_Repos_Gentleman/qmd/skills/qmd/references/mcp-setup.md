@@ -66,30 +66,30 @@ Search with pre-expanded queries.
 }
 ```
 
-| Type                   | Method                   | Input                                         |
-|------------------------|--------------------------|-----------------------------------------------|
-| `lex`                  | BM25                     | Keywords (2-5 terms)                          |
-| `vec`                  | Vector                   | Question                                      |
-| `hyde`                 | Vector                   | Answer passage (50-100 words)                 |
+| Type                     | Method                     | Input                                           |
+|--------------------------|----------------------------|-------------------------------------------------|
+| `lex`                    | BM25                       | Keywords (2-5 terms)                            |
+| `vec`                    | Vector                     | Question                                        |
+| `hyde`                   | Vector                     | Answer passage (50-100 words)                   |
 
 ### get
 
 Retrieve document by path or `#docid`.
 
-| Param                         | Type                   | Description                           |
-|-------------------------------|------------------------|---------------------------------------|
-| `path`                        | string                 | File path or `#docid`                 |
-| `full`                        | bool?                  | Return full content                   |
-| `lineNumbers`                 | bool?                  | Add line numbers                      |
+| Param                           | Type                     | Description                             |
+|---------------------------------|--------------------------|-----------------------------------------|
+| `path`                          | string                   | File path or `#docid`                   |
+| `full`                          | bool?                    | Return full content                     |
+| `lineNumbers`                   | bool?                    | Add line numbers                        |
 
 ### multi_get
 
 Retrieve multiple documents.
 
-| Param                      | Type                    | Description                                     |
-|----------------------------|-------------------------|-------------------------------------------------|
-| `pattern`                  | string                  | Glob or comma-separated list                    |
-| `maxBytes`                 | number?                 | Skip large files (default 10KB)                 |
+| Param                        | Type                      | Description                                       |
+|------------------------------|---------------------------|---------------------------------------------------|
+| `pattern`                    | string                    | Glob or comma-separated list                      |
+| `maxBytes`                   | number?                   | Skip large files (default 10KB)                   |
 
 ### status
 

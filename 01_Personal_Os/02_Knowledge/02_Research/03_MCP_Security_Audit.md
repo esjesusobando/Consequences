@@ -9,16 +9,16 @@
 
 ### Por CATEGORÍA
 
-| Categoría          | MCPs                                    | Riesgo     | Issues             |
-|--------------------|-----------------------------------------|------------|--------------------|
-| **Knowledge**      | Context7, Eagle, Obsidian×2, Supabase   | 🟡 MEDIUM   | Duplicado          |
-| **Dev**            | GitHub, Vercel, Playwright, Supabase    | 🟡 MEDIUM   | Token exposure     |
-| **Scraping**       | Firecrawl, Exa, ChromeDevTools          | 🔴 HIGH     | No sandbox         |
-| **Productivity**   | Notion, Linear, N8n, Gmail              | 🟡 MEDIUM   | OAuth no forzado   |
-| **Media**          | Nanobanana, Fireflies                   | 🟢 LOW      | OK                 |
-| **Data**           | Amplitude, Supadata, NotebookLM         | 🟡 MEDIUM   | API keys           |
-| **Automation**     | Engram, Qmd, TestSprite                 | 🟡 MEDIUM   | Custom             |
-| **Tools**          | StackOverflow, Docker, Pencil           | 🟡 MEDIUM   | Permissions        |
+| Categoría            | MCPs                                      | Riesgo       | Issues               |
+|----------------------|-------------------------------------------|--------------|----------------------|
+| **Knowledge**        | Context7, Eagle, Obsidian×2, Supabase     | 🟡 MEDIUM     | Duplicado            |
+| **Dev**              | GitHub, Vercel, Playwright, Supabase      | 🟡 MEDIUM     | Token exposure       |
+| **Scraping**         | Firecrawl, Exa, ChromeDevTools            | 🔴 HIGH       | No sandbox           |
+| **Productivity**     | Notion, Linear, N8n, Gmail                | 🟡 MEDIUM     | OAuth no forzado     |
+| **Media**            | Nanobanana, Fireflies                     | 🟢 LOW        | OK                   |
+| **Data**             | Amplitude, Supadata, NotebookLM           | 🟡 MEDIUM     | API keys             |
+| **Automation**       | Engram, Qmd, TestSprite                   | 🟡 MEDIUM     | Custom               |
+| **Tools**            | StackOverflow, Docker, Pencil             | 🟡 MEDIUM     | Permissions          |
 
 ---
 
@@ -26,19 +26,19 @@
 
 ### 🔴 CRITICAL
 
-| #     | Issue                     | MCPs Afectados                    | Fix               |
-|-------|---------------------------|-----------------------------------|-------------------|
-| 1     | **Obsidian duplicado**    | `mcp-obsidian` + `obsidian-api`   | Eliminar uno      |
-| 2     | **@latest sin version**   | Todos                             | Fijar versiones   |
-| 3     | **Docker sin sandbox**    | `docker`                          | Read-only mode    |
+| #       | Issue                       | MCPs Afectados                      | Fix                 |
+|---------|-----------------------------|-------------------------------------|---------------------|
+| 1       | **Obsidian duplicado**      | `mcp-obsidian` + `obsidian-api`     | Eliminar uno        |
+| 2       | **@latest sin version**     | Todos                               | Fijar versiones     |
+| 3       | **Docker sin sandbox**      | `docker`                            | Read-only mode      |
 
 ### 🟡 HIGH
 
-| #     | Issue                   | MCPs Afectados            | Fix                 |
-|-------|-------------------------|---------------------------|---------------------|
-| 4     | **No OAuth 2.1**        | Todos HTTP                | Implementar         |
-| 5     | **Token exposure**      | `github`, `notion`, etc   | Env vars en vault   |
-| 6     | **Sin audit logging**   | Todos                     | Agregar logging     |
+| #       | Issue                     | MCPs Afectados              | Fix                   |
+|---------|---------------------------|-----------------------------|-----------------------|
+| 4       | **No OAuth 2.1**          | Todos HTTP                  | Implementar           |
+| 5       | **Token exposure**        | `github`, `notion`, etc     | Env vars en vault     |
+| 6       | **Sin audit logging**     | Todos                       | Agregar logging       |
 
 ---
 
@@ -130,16 +130,16 @@ def sanitize(args: dict) -> dict:
 
 ## 📋 RECOMENDACIONES POR MCP
 
-| MCP                 | Acción                 | Prioridad    |
-|---------------------|------------------------|--------------|
-| **obsidian-api**    | ELIMINAR (duplicado)   | 🔴 CRITICAL   |
-| **docker**          | Disable o read-only    | 🔴 CRITICAL   |
-| **github**          | Token en vault         | 🟡 HIGH       |
-| **notion**          | Read-only mode         | 🟡 HIGH       |
-| **filesystem**      | Restringir paths       | 🟡 HIGH       |
-| **n8n-mcp**         | Disable (no usa)       | 🟡 MEDIUM     |
-| **pencil**          | Disable (no usa)       | 🟡 MEDIUM     |
-| **StackOverflow**   | Disable (no usa)       | 🟡 MEDIUM     |
+| MCP                   | Acción                   | Prioridad      |
+|-----------------------|--------------------------|----------------|
+| **obsidian-api**      | ELIMINAR (duplicado)     | 🔴 CRITICAL     |
+| **docker**            | Disable o read-only      | 🔴 CRITICAL     |
+| **github**            | Token en vault           | 🟡 HIGH         |
+| **notion**            | Read-only mode           | 🟡 HIGH         |
+| **filesystem**        | Restringir paths         | 🟡 HIGH         |
+| **n8n-mcp**           | Disable (no usa)         | 🟡 MEDIUM       |
+| **pencil**            | Disable (no usa)         | 🟡 MEDIUM       |
+| **StackOverflow**     | Disable (no usa)         | 🟡 MEDIUM       |
 
 ---
 
@@ -147,20 +147,20 @@ def sanitize(args: dict) -> dict:
 
 ### Hoy (+1)
 
-| Task                  | Status      |
-|-----------------------|-------------|
-| аудит completo        | ✅ DONE      |
-| Eliminar duplicados   | 🔲 Pending   |
-| Fijar versiones       | 🔲 Pending   |
-| Agregar notes         | 🔲 Pending   |
+| Task                    | Status        |
+|-------------------------|---------------|
+| аудит completo          | ✅ DONE        |
+| Eliminar duplicados     | 🔲 Pending     |
+| Fijar versiones         | 🔲 Pending     |
+| Agregar notes           | 🔲 Pending     |
 
 ### Esta semana
 
-| Task                    | Status      |
-|-------------------------|-------------|
-| Setup audit logging     | 🔲 Pending   |
-| Implementar OAuth 2.1   | 🔲 Pending   |
-| Review tokens           | 🔲 Pending   |
+| Task                      | Status        |
+|---------------------------|---------------|
+| Setup audit logging       | 🔲 Pending     |
+| Implementar OAuth 2.1     | 🔲 Pending     |
+| Review tokens             | 🔲 Pending     |
 
 ---
 

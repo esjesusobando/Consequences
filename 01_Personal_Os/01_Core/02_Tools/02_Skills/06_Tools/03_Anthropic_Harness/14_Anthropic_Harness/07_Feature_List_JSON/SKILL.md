@@ -62,10 +62,10 @@ Genera un archivo JSON con TODAS las features que el usuario pidió, cada una in
 
 ### Scripts
 
-| Script                                         | Función                                          |
-|------------------------------------------------|--------------------------------------------------|
-| `00_Feature_List_Generator.py`                 | Genera feature list desde prompt                 |
-| `01_Feature_Tracker.py`                        | Tracking de progreso                             |
+| Script                                           | Función                                            |
+|--------------------------------------------------|----------------------------------------------------|
+| `00_Feature_List_Generator.py`                   | Genera feature list desde prompt                   |
+| `01_Feature_Tracker.py`                          | Tracking de progreso                               |
 
 ### Uso
 

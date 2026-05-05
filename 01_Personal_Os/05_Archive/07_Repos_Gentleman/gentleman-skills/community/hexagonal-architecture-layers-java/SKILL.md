@@ -152,11 +152,11 @@ public class Order {
 
 ## Quick Reference
 
-| Task                              | Pattern                                                                      |
-|-----------------------------------|------------------------------------------------------------------------------|
-| Persist domain data               | Define output port in application, implement in infrastructure               |
-| Expose use case                   | Define input port and service in application                                 |
-| Keep domain pure                  | No annotations, no I/O, no framework imports                                 |
+| Task                                | Pattern                                                                        |
+|-------------------------------------|--------------------------------------------------------------------------------|
+| Persist domain data                 | Define output port in application, implement in infrastructure                 |
+| Expose use case                     | Define input port and service in application                                   |
+| Keep domain pure                    | No annotations, no I/O, no framework imports                                   |
 
 ## Resources
 

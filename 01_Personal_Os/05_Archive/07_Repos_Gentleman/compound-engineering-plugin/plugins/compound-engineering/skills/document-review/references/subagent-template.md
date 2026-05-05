@@ -45,10 +45,10 @@ Document content:
 
 ## Variable Reference
 
-| Variable                             | Source                                                    | Description                                                                                                 |
-|--------------------------------------|-----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| `{persona_file}`                     | Agent markdown file content                               | The full persona definition (identity, analysis protocol, calibration, suppress conditions)                 |
-| `{schema}`                           | `references/findings-schema.json` content                 | The JSON schema reviewers must conform to                                                                   |
-| `{document_type}`                    | Orchestrator classification                               | Either "requirements" or "plan"                                                                             |
-| `{document_path}`                    | Skill input                                               | Path to the document being reviewed                                                                         |
-| `{document_content}`                 | File read                                                 | The full document text                                                                                      |
+| Variable                               | Source                                                      | Description                                                                                                   |
+|----------------------------------------|-------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| `{persona_file}`                       | Agent markdown file content                                 | The full persona definition (identity, analysis protocol, calibration, suppress conditions)                   |
+| `{schema}`                             | `references/findings-schema.json` content                   | The JSON schema reviewers must conform to                                                                     |
+| `{document_type}`                      | Orchestrator classification                                 | Either "requirements" or "plan"                                                                               |
+| `{document_path}`                      | Skill input                                                 | Path to the document being reviewed                                                                           |
+| `{document_content}`                   | File read                                                   | The full document text                                                                                        |

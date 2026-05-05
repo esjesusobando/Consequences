@@ -96,13 +96,13 @@ MEASURE → Mide con KPIs
 
 ## Métricas de Seguimiento
 
-| Métrica                                   | Target             | Actual             |
-|-------------------------------------------|--------------------|--------------------|
-| Custom Instructions configurado           | 1                  | 0                  |
-| Prompts en biblioteca                     | 20                 | 0                  |
-| Casos documentados                        | 10                 | 0                  |
-| Agentes activos                           | 3                  | 0                  |
-| Mejora en resultados                      | 30%                |--------------------|
+| Métrica                                     | Target               | Actual               |
+|---------------------------------------------|----------------------|----------------------|
+| Custom Instructions configurado             | 1                    | 0                    |
+| Prompts en biblioteca                       | 20                   | 0                    |
+| Casos documentados                          | 10                   | 0                    |
+| Agentes activos                             | 3                    | 0                    |
+| Mejora en resultados                        | 30%                  |----------------------|
 
 ---
 

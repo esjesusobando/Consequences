@@ -53,12 +53,12 @@ Allowed types: `feat`, `fix`, `chore`, `docs`, `style`, `refactor`, `perf`, `tes
 
 Checks run automatically on every PR:
 
-| Check                                             | What it verifies                                                         |
-|---------------------------------------------------|--------------------------------------------------------------------------|
-| **Check Issue Reference**                         | PR body contains `Closes #N`, `Fixes #N`, or `Resolves #N`               |
-| **Check Issue Has status:approved**               | The linked issue has the `status:approved` label                         |
-| **Check PR Has type:\* Label**                    | PR has exactly one `type:*` label                                        |
-| **Shellcheck**                                    | Shell scripts pass `shellcheck` linting                                  |
+| Check                                               | What it verifies                                                           |
+|-----------------------------------------------------|----------------------------------------------------------------------------|
+| **Check Issue Reference**                           | PR body contains `Closes #N`, `Fixes #N`, or `Resolves #N`                 |
+| **Check Issue Has status:approved**                 | The linked issue has the `status:approved` label                           |
+| **Check PR Has type:\* Label**                      | PR has exactly one `type:*` label                                          |
+| **Shellcheck**                                      | Shell scripts pass `shellcheck` linting                                    |
 
 All checks must pass before a PR can be merged.
 
@@ -68,21 +68,21 @@ All checks must pass before a PR can be merged.
 
 ### Type Labels (required on every PR — pick exactly one)
 
-| Label                                | Color                 | Use for                                                |
-|--------------------------------------|-----------------------|--------------------------------------------------------|
-| `type:bug`                           | 🔴                     | Bug fixes                                              |
-| `type:feature`                       | 🔵                     | New features                                           |
-| `type:docs`                          | 🔵                     | Documentation-only changes                             |
-| `type:refactor`                      | 🟣                     | Code refactoring with no behavior change               |
-| `type:chore`                         | ⚪                     | Maintenance, tooling, dependencies                     |
-| `type:breaking-change`               | 🔴                     | Breaking changes                                       |
+| Label                                  | Color                   | Use for                                                  |
+|----------------------------------------|-------------------------|----------------------------------------------------------|
+| `type:bug`                             | 🔴                       | Bug fixes                                                |
+| `type:feature`                         | 🔵                       | New features                                             |
+| `type:docs`                            | 🔵                       | Documentation-only changes                               |
+| `type:refactor`                        | 🟣                       | Code refactoring with no behavior change                 |
+| `type:chore`                           | ⚪                       | Maintenance, tooling, dependencies                       |
+| `type:breaking-change`                 | 🔴                       | Breaking changes                                         |
 
 ### Status Labels (set by maintainers)
 
-| Label                               | Meaning                                                               |
-|-------------------------------------|-----------------------------------------------------------------------|
-| `status:needs-review`               | Awaiting maintainer review (auto-applied to new issues)               |
-| `status:approved`                   | Approved for implementation — PRs can now be opened                   |
+| Label                                 | Meaning                                                                 |
+|---------------------------------------|-------------------------------------------------------------------------|
+| `status:needs-review`                 | Awaiting maintainer review (auto-applied to new issues)                 |
+| `status:approved`                     | Approved for implementation — PRs can now be opened                     |
 
 ### Priority Labels (set by maintainers)
 

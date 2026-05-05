@@ -15,31 +15,31 @@ Este documento consolida todos los announcements de Claude AI desde septiembre 2
 
 ## Timeline de Releases
 
-| Fecha                                  | Announcement                                                               | Impacto                                                                       |
-|----------------------------------------|----------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| 2026-03-18                             | Code with Claude: San Francisco, London, Tokyo                             | Dev conference expansion a 3 ciudades                                         |
-| 2026-03-13                             | 1M Context GA para Opus 4.6 y Sonnet 4.6                                   | CRITICO - Sin long-context premium, 600 imgs/PDFs                             |
-| 2026-03-12                             | Interactive Charts, Diagrams & Visualizations                              | Visualización inline en conversaciones                                        |
-| 2026-03-11                             | Advancing Claude for Excel and PowerPoint                                  | Shared context across Office apps + Skills                                    |
-| 2026-03-09                             | Code Review para Claude Code                                               | Multi-agent review system (resembles our GGA)                                 |
-| 2026-03-03                             | Improving skill-creator: Test, measure, refine                             | Evals, benchmarks, multi-agent testing                                        |
-| 2026-02-24                             | Cowork and plugins for teams                                               | Private plugin marketplaces, enterprise control                               |
-| 2026-02-20                             | Preview, Review, Merge en Desktop                                          | CI monitoring, auto-fix, auto-merge                                           |
-| 2026-02-17                             | Dynamic Filtering para Web Search                                          | 11% better accuracy, 24% less tokens                                          |
-| 2026-02-12                             | Claude Enterprise self-serve                                               | Purchase directly, no sales required                                          |
-| 2026-02-05                             | Advancing finance with Claude Opus 4.6                                     | 23% improvement en Real-World Finance eval                                    |
-| 2026-01-30                             | Cowork Plugins                                                             | Sistema de plugins personalizables                                            |
-| 2026-01-29                             | Contribution Metrics en Claude Code                                        | Tracking de impacto de contribuciones                                         |
-| 2026-01-28                             | Updates to Claude Team                                                     | Mejoras en planes Team                                                        |
-| 2026-01-26                             | Interactive Connectors (Figma, Canva, Slack)                               | Herramientas externas interactivas                                            |
-| 2026-01-12                             | Cowork: Claude Code power for knowledge work                               | Research preview - agentic capabilities desktop                               |
-| 2025-12-18                             | Skills for Organizations & Ecosystem                                       | Skills directory, organization skills                                         |
-| 2025-12-08                             | Claude Code and Slack                                                      | Integración Slack                                                             |
-| 2025-11-20                             | Your Thinking Partner                                                      | Mejoras en conversación/compartar archivos                                    |
-| 2025-11-14                             | Structured Outputs                                                         | Outputs estructurados en API                                                  |
-| 2025-10-20                             | Claude Code on the web                                                     | Web interface para Claude Code                                                |
-| 2025-10-16                             | Introducing Agent Skills                                                   | Skills architecture - modular, composable                                     |
-| 2025-09-29                             | Context Management                                                         | Context editing + Memory tool                                                 |
+| Fecha                                    | Announcement                                                                 | Impacto                                                                         |
+|------------------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| 2026-03-18                               | Code with Claude: San Francisco, London, Tokyo                               | Dev conference expansion a 3 ciudades                                           |
+| 2026-03-13                               | 1M Context GA para Opus 4.6 y Sonnet 4.6                                     | CRITICO - Sin long-context premium, 600 imgs/PDFs                               |
+| 2026-03-12                               | Interactive Charts, Diagrams & Visualizations                                | Visualización inline en conversaciones                                          |
+| 2026-03-11                               | Advancing Claude for Excel and PowerPoint                                    | Shared context across Office apps + Skills                                      |
+| 2026-03-09                               | Code Review para Claude Code                                                 | Multi-agent review system (resembles our GGA)                                   |
+| 2026-03-03                               | Improving skill-creator: Test, measure, refine                               | Evals, benchmarks, multi-agent testing                                          |
+| 2026-02-24                               | Cowork and plugins for teams                                                 | Private plugin marketplaces, enterprise control                                 |
+| 2026-02-20                               | Preview, Review, Merge en Desktop                                            | CI monitoring, auto-fix, auto-merge                                             |
+| 2026-02-17                               | Dynamic Filtering para Web Search                                            | 11% better accuracy, 24% less tokens                                            |
+| 2026-02-12                               | Claude Enterprise self-serve                                                 | Purchase directly, no sales required                                            |
+| 2026-02-05                               | Advancing finance with Claude Opus 4.6                                       | 23% improvement en Real-World Finance eval                                      |
+| 2026-01-30                               | Cowork Plugins                                                               | Sistema de plugins personalizables                                              |
+| 2026-01-29                               | Contribution Metrics en Claude Code                                          | Tracking de impacto de contribuciones                                           |
+| 2026-01-28                               | Updates to Claude Team                                                       | Mejoras en planes Team                                                          |
+| 2026-01-26                               | Interactive Connectors (Figma, Canva, Slack)                                 | Herramientas externas interactivas                                              |
+| 2026-01-12                               | Cowork: Claude Code power for knowledge work                                 | Research preview - agentic capabilities desktop                                 |
+| 2025-12-18                               | Skills for Organizations & Ecosystem                                         | Skills directory, organization skills                                           |
+| 2025-12-08                               | Claude Code and Slack                                                        | Integración Slack                                                               |
+| 2025-11-20                               | Your Thinking Partner                                                        | Mejoras en conversación/compartar archivos                                      |
+| 2025-11-14                               | Structured Outputs                                                           | Outputs estructurados en API                                                    |
+| 2025-10-20                               | Claude Code on the web                                                       | Web interface para Claude Code                                                  |
+| 2025-10-16                               | Introducing Agent Skills                                                     | Skills architecture - modular, composable                                       |
+| 2025-09-29                               | Context Management                                                           | Context editing + Memory tool                                                   |
 
 ## Features Anunciadas
 

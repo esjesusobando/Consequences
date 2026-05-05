@@ -40,21 +40,21 @@ argument-hint: "[what you want to accomplish]"
 **GENTLEMAN = MANOS** → Ejecutar código
 **CE = CEREBRO** → Inteligencia + Validación
 
-| ¿Qué querés hacer?                                   | Usá                                     |
-|------------------------------------------------------|-----------------------------------------|
-| Escribir código nuevo                                | Gentleman                               |
-| Framework (React, Angular, Tailwind)                 | Gentleman                               |
-| Testing (Playwright, Pytest)                         | Gentleman                               |
-| DevOps (Docker, Deploy)                              | Gentleman                               |
-| Diseño UI/UX                                         | Gentleman                               |
-| Marketing (SEO, Ads)                                 | Gentleman                               |
-| Code review                                          | CE → /ce:review                         |
-| Seguridad                                            | CE → security-sentinel                  |
-| Performance                                          | CE → performance-oracle                 |
-| Idear mejoras                                        | CE → /ce:ideate                         |
-| Explorar requisitos                                  | CE → /ce:brainstorm                     |
-| Planificar                                           | CE → /ce:plan                           |
-| Documentar                                           | CE → /ce:compound                       |
+| ¿Qué querés hacer?                                     | Usá                                       |
+|--------------------------------------------------------|-------------------------------------------|
+| Escribir código nuevo                                  | Gentleman                                 |
+| Framework (React, Angular, Tailwind)                   | Gentleman                                 |
+| Testing (Playwright, Pytest)                           | Gentleman                                 |
+| DevOps (Docker, Deploy)                                | Gentleman                                 |
+| Diseño UI/UX                                           | Gentleman                                 |
+| Marketing (SEO, Ads)                                   | Gentleman                                 |
+| Code review                                            | CE → /ce:review                           |
+| Seguridad                                              | CE → security-sentinel                    |
+| Performance                                            | CE → performance-oracle                   |
+| Idear mejoras                                          | CE → /ce:ideate                           |
+| Explorar requisitos                                    | CE → /ce:brainstorm                       |
+| Planificar                                             | CE → /ce:plan                             |
+| Documentar                                             | CE → /ce:compound                         |
 
 ## 🔄 Workflow Ideal: Matrix Recargado
 
@@ -68,14 +68,14 @@ argument-hint: "[what you want to accomplish]"
 ## 🚀 Commands Reference
 
 ### CE Commands
-| Comando                        | Triggers                                     | Propósito                         |
-|--------------------------------|----------------------------------------------|-----------------------------------|
-| /ce:ideate                     | "idear", "mejorar"                           | Descubrir mejoras                 |
-| /ce:brainstorm                 | "explorar", "requisitos"                     | Explorar enfoques                 |
-| /ce:plan                       | "planear", "plan"                            | Crear plan                        |
-| /ce:work                       | "ejecutar", "implementar"                    | Ejecutar plan                     |
-| /ce:review                     | "review", "revisar"                          | Code review                       |
-| /ce:compound                   | "documentar", "aprendizajes"                 | Documentar                        |
+| Comando                          | Triggers                                       | Propósito                           |
+|----------------------------------|------------------------------------------------|-------------------------------------|
+| /ce:ideate                       | "idear", "mejorar"                             | Descubrir mejoras                   |
+| /ce:brainstorm                   | "explorar", "requisitos"                       | Explorar enfoques                   |
+| /ce:plan                         | "planear", "plan"                              | Crear plan                          |
+| /ce:work                         | "ejecutar", "implementar"                      | Ejecutar plan                       |
+| /ce:review                       | "review", "revisar"                            | Code review                         |
+| /ce:compound                     | "documentar", "aprendizajes"                   | Documentar                          |
 
 ### Gentleman Categories
 - **Vibe Coding**: react-19, nextjs-15, tailwind-4, typescript

@@ -60,11 +60,11 @@ return [{
 
 ### Language Selection
 
-| Language                                        | Use Case                                                    | Performance                               | Built-ins                                          | Beta Status                               |
-|-------------------------------------------------|-------------------------------------------------------------|-------------------------------------------|----------------------------------------------------|-------------------------------------------|
-| **JavaScript**                                  | General purpose, web APIs, JSON                             | Fast                                      | Full n8n helpers                                   | Stable                                    |
-| **Python (Beta)**                               | Data science, ML, complex math                              | Slower                                    | `_` syntax helpers                                 | Beta                                      |
-| **Python (Native)**                             | Standard Python, no helpers                                 | Medium                                    | `_items`, `_item` only                             | Beta                                      |
+| Language                                          | Use Case                                                      | Performance                                 | Built-ins                                            | Beta Status                                 |
+|---------------------------------------------------|---------------------------------------------------------------|---------------------------------------------|------------------------------------------------------|---------------------------------------------|
+| **JavaScript**                                    | General purpose, web APIs, JSON                               | Fast                                        | Full n8n helpers                                     | Stable                                      |
+| **Python (Beta)**                                 | Data science, ML, complex math                                | Slower                                      | `_` syntax helpers                                   | Beta                                        |
+| **Python (Native)**                               | Standard Python, no helpers                                   | Medium                                      | `_items`, `_item` only                               | Beta                                        |
 
 **Recommendation:** Use JavaScript for 95% of use cases. Only use Python when you need specific libraries or data science capabilities.
 
@@ -390,14 +390,14 @@ return [{
 
 ### Python vs JavaScript: Key Differences
 
-| Feature                                   | JavaScript                                    | Python (Beta)                                 | Python (Native)                                 |
-|-------------------------------------------|-----------------------------------------------|-----------------------------------------------|-------------------------------------------------|
-| Input access                              | `$input.all()`                                | `_input.all()`                                | `_items`                                        |
-| Single item                               | `$input.first()`                              | `_input.first()`                              | `_items[0]`                                     |
-| Current item                              | `$input.item`                                 | `_input.item`                                 | `_item`                                         |
-| Return format                             | `[{json: {...}}]`                             | `[{json: {...}}]`                             | `[{"json": {...}}]`                             |
-| Date helper                               | `$now`                                        | `_now`                                        | Standard datetime                               |
-| JSON query                                | `$jmespath()`                                 | `_jmespath()`                                 | Not available                                   |
+| Feature                                     | JavaScript                                      | Python (Beta)                                   | Python (Native)                                   |
+|---------------------------------------------|-------------------------------------------------|-------------------------------------------------|---------------------------------------------------|
+| Input access                                | `$input.all()`                                  | `_input.all()`                                  | `_items`                                          |
+| Single item                                 | `$input.first()`                                | `_input.first()`                                | `_items[0]`                                       |
+| Current item                                | `$input.item`                                   | `_input.item`                                   | `_item`                                           |
+| Return format                               | `[{json: {...}}]`                               | `[{json: {...}}]`                               | `[{"json": {...}}]`                               |
+| Date helper                                 | `$now`                                          | `_now`                                          | Standard datetime                                 |
+| JSON query                                  | `$jmespath()`                                   | `_jmespath()`                                   | Not available                                     |
 
 ### Python Pattern 1: Data Transformation (Run Once for All Items)
 
@@ -582,16 +582,16 @@ return result
 ## 3. Common Data Access Patterns
 
 ### Usage Distribution
-| Pattern                                      | Usage %                               | Best For                                                             |
-|----------------------------------------------|---------------------------------------|----------------------------------------------------------------------|
-| `$input.all()`                               | 26%                                   | Processing arrays, batch operations                                  |
-| `$input.first()`                             | 25%                                   | Single item operations, first-last logic                             |
-| `$input.item`                                | 19%                                   | Item-by-item processing in loops                                     |
-| Other patterns                               | 16%                                   | Complex scenarios                                                    |
-| `$json`                                      | 11%                                   | Direct field access                                                  |
-| `$node`                                      | 1%                                    | Referencing other node outputs                                       |
-| `$env`                                       | 0.2%                                  | Environment variables                                                |
-| `$binary`                                    | 0.1%                                  | Binary data processing                                               |
+| Pattern                                        | Usage %                                 | Best For                                                               |
+|------------------------------------------------|-----------------------------------------|------------------------------------------------------------------------|
+| `$input.all()`                                 | 26%                                     | Processing arrays, batch operations                                    |
+| `$input.first()`                               | 25%                                     | Single item operations, first-last logic                               |
+| `$input.item`                                  | 19%                                     | Item-by-item processing in loops                                       |
+| Other patterns                                 | 16%                                     | Complex scenarios                                                      |
+| `$json`                                        | 11%                                     | Direct field access                                                    |
+| `$node`                                        | 1%                                      | Referencing other node outputs                                         |
+| `$env`                                         | 0.2%                                    | Environment variables                                                  |
+| `$binary`                                      | 0.1%                                    | Binary data processing                                                 |
 
 ### Key Recommendations
 1. **Use `$input.all()` when:** Processing multiple records, aggregating data, batch transformations
@@ -850,34 +850,34 @@ const data = $input.first().json.data;
 ### n8n Built-in Methods & Variables (JavaScript)
 
 #### Core Data Access
-| Method                                       | Description                                                    | Example                                                     |
-|----------------------------------------------|----------------------------------------------------------------|-------------------------------------------------------------|
-| `$input.all()`                               | Get all input items                                            | `const items = $input.all();`                               |
-| `$input.first()`                             | Get first input item                                           | `const first = $input.first();`                             |
-| `$input.last()`                              | Get last input item                                            | `const last = $input.last();`                               |
-| `$input.item`                                | Current item (Each Item mode)                                  | `const current = $input.item;`                              |
-| `items`                                      | Array of all items (legacy)                                    | `items[0].json.field`                                       |
-| `$json`                                      | Current item JSON (Each Item mode)                             | `const field = $json.field;`                                |
-| `$binary`                                    | Current item binary data                                       | `$binary.data`                                              |
+| Method                                         | Description                                                      | Example                                                       |
+|------------------------------------------------|------------------------------------------------------------------|---------------------------------------------------------------|
+| `$input.all()`                                 | Get all input items                                              | `const items = $input.all();`                                 |
+| `$input.first()`                               | Get first input item                                             | `const first = $input.first();`                               |
+| `$input.last()`                                | Get last input item                                              | `const last = $input.last();`                                 |
+| `$input.item`                                  | Current item (Each Item mode)                                    | `const current = $input.item;`                                |
+| `items`                                        | Array of all items (legacy)                                      | `items[0].json.field`                                         |
+| `$json`                                        | Current item JSON (Each Item mode)                               | `const field = $json.field;`                                  |
+| `$binary`                                      | Current item binary data                                         | `$binary.data`                                                |
 
 #### Node & Workflow Context
-| Method                                   | Description                                              | Example                                                        |
-|------------------------------------------|----------------------------------------------------------|----------------------------------------------------------------|
-| `$node`                                  | Reference other node outputs                             | `$node['HTTP Request'].json.data`                              |
-| `$prevNode`                              | Access previous node data                                | `$prevNode.name`                                               |
-| `$workflow`                              | Workflow metadata                                        | `$workflow.name`, `$workflow.id`                               |
-| `$execution`                             | Execution context                                        | `$execution.id`, `$execution.mode`                             |
-| `$env`                                   | Environment variables                                    | `$env.MY_VAR`                                                  |
+| Method                                     | Description                                                | Example                                                          |
+|--------------------------------------------|------------------------------------------------------------|------------------------------------------------------------------|
+| `$node`                                    | Reference other node outputs                               | `$node['HTTP Request'].json.data`                                |
+| `$prevNode`                                | Access previous node data                                  | `$prevNode.name`                                                 |
+| `$workflow`                                | Workflow metadata                                          | `$workflow.name`, `$workflow.id`                                 |
+| `$execution`                               | Execution context                                          | `$execution.id`, `$execution.mode`                               |
+| `$env`                                     | Environment variables                                      | `$env.MY_VAR`                                                    |
 
 #### Date & Time Helpers (Luxon-based)
-| Variable                                                  | Description                                         | Example Output                                           |
-|-----------------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------|
-| `$now`                                                    | Current datetime object                             | Luxon DateTime                                           |
-| `$today`                                                  | Today at midnight                                   | Luxon DateTime                                           |
-| `$now.toISO()`                                            | ISO 8601 format                                     | `"2025-01-20T10:30:00.000Z"`                             |
-| `$now.toFormat('yyyy-MM-dd')`                             | Custom format                                       | `"2025-01-20"`                                           |
-| `$now.plus({days: 7})`                                    | Date arithmetic                                     | 7 days from now                                          |
-| `$now.minus({hours: 2})`                                  | Subtract time                                       | 2 hours ago                                              |
+| Variable                                                    | Description                                           | Example Output                                             |
+|-------------------------------------------------------------|-------------------------------------------------------|------------------------------------------------------------|
+| `$now`                                                      | Current datetime object                               | Luxon DateTime                                             |
+| `$today`                                                    | Today at midnight                                     | Luxon DateTime                                             |
+| `$now.toISO()`                                              | ISO 8601 format                                       | `"2025-01-20T10:30:00.000Z"`                               |
+| `$now.toFormat('yyyy-MM-dd')`                               | Custom format                                         | `"2025-01-20"`                                             |
+| `$now.plus({days: 7})`                                      | Date arithmetic                                       | 7 days from now                                            |
+| `$now.minus({hours: 2})`                                    | Subtract time                                         | 2 hours ago                                                |
 
 ```javascript
 // Date examples
@@ -887,9 +887,9 @@ const isWeekend = $now.weekday > 5;  // 6 = Saturday, 7 = Sunday
 ```
 
 #### Data Querying with JMESPath
-| Method                                               | Description                                       | Example                                                                  |
-|------------------------------------------------------|---------------------------------------------------|--------------------------------------------------------------------------|
-| `$jmespath(data, query)`                             | Query JSON structures                             | `$jmespath(data, 'users[?age > `21`].name')`                             |
+| Method                                                 | Description                                         | Example                                                                    |
+|--------------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------------------------|
+| `$jmespath(data, query)`                               | Query JSON structures                               | `$jmespath(data, 'users[?age > `21`].name')`                               |
 
 ```javascript
 // JMESPath examples
@@ -906,24 +906,24 @@ const topScores = $jmespath(data, 'scores | sort_by(@, &value) | reverse(@) | [0
 ```
 
 #### Utility Methods
-| Method                                                             | Description                                          | Example                                                                         |
-|--------------------------------------------------------------------|------------------------------------------------------|---------------------------------------------------------------------------------|
-| `$getWorkflowStaticData()`                                         | Persistent workflow data                             | `const counter = $getWorkflowStaticData().counter \                             | \ | 0;` |
-| `$evaluateExpression(expr, itemIndex)`                             | Evaluate n8n expression                              | `$evaluateExpression('{{ $json.field }}', 0)`                                   |
+| Method                                                               | Description                                            | Example                                                                           |
+|----------------------------------------------------------------------|--------------------------------------------------------|-----------------------------------------------------------------------------------|
+| `$getWorkflowStaticData()`                                           | Persistent workflow data                               | `const counter = $getWorkflowStaticData().counter \                               | \ | 0;` |
+| `$evaluateExpression(expr, itemIndex)`                               | Evaluate n8n expression                                | `$evaluateExpression('{{ $json.field }}', 0)`                                     |
 
 ### Python Built-in Methods (Beta)
 
-| Python                                               | JavaScript                                   | Description                                          |
-|------------------------------------------------------|----------------------------------------------|------------------------------------------------------|
-| `_input.all()`                                       | `$input.all()`                               | Get all items                                        |
-| `_input.first()`                                     | `$input.first()`                             | Get first item                                       |
-| `_input.last()`                                      | `$input.last()`                              | Get last item                                        |
-| `_input.item`                                        | `$input.item`                                | Current item                                         |
-| `_items`                                             | `items`                                      | All items array (Native)                             |
-| `_item`                                              | `$item`                                      | Current item (Native)                                |
-| `_now`                                               | `$now`                                       | Current datetime                                     |
-| `_today`                                             | `$today`                                     | Today at midnight                                    |
-| `_jmespath(data, query)`                             | `$jmespath()`                                | Query JSON                                           |
+| Python                                                 | JavaScript                                     | Description                                            |
+|--------------------------------------------------------|------------------------------------------------|--------------------------------------------------------|
+| `_input.all()`                                         | `$input.all()`                                 | Get all items                                          |
+| `_input.first()`                                       | `$input.first()`                               | Get first item                                         |
+| `_input.last()`                                        | `$input.last()`                                | Get last item                                          |
+| `_input.item`                                          | `$input.item`                                  | Current item                                           |
+| `_items`                                               | `items`                                        | All items array (Native)                               |
+| `_item`                                                | `$item`                                        | Current item (Native)                                  |
+| `_now`                                                 | `$now`                                         | Current datetime                                       |
+| `_today`                                               | `$today`                                       | Today at midnight                                      |
+| `_jmespath(data, query)`                               | `$jmespath()`                                  | Query JSON                                             |
 
 ```python
 # Python (Beta) examples
@@ -1097,16 +1097,16 @@ Before deploying CODE nodes, verify:
 - **Real-world examples:** See Section 7 (Template examples)
 
 ### When to Use CODE Node vs Other Nodes
-| Scenario                                            | Use This                                   | Not CODE Node                                   |
-|-----------------------------------------------------|--------------------------------------------|-------------------------------------------------|
-| Simple field mapping                                | Set node                                   | ✓ Simpler UI                                    |
-| Basic filtering                                     | Filter node                                | ✓ Visual interface                              |
-| Conditional routing                                 | If/Switch node                             | ✓ Better clarity                                |
-| Complex transformations                             | **CODE node**                              | ✗ Too limited                                   |
-| Multi-step logic                                    | **CODE node**                              | ✗ Needs chaining                                |
-| Custom calculations                                 | **CODE node**                              | ✗ No built-in                                   |
-| API response parsing                                | **CODE node**                              | ✗ Complex structure                             |
-| Recursive operations                                | **CODE node**                              | ✗ Not possible                                  |
+| Scenario                                              | Use This                                     | Not CODE Node                                     |
+|-------------------------------------------------------|----------------------------------------------|---------------------------------------------------|
+| Simple field mapping                                  | Set node                                     | ✓ Simpler UI                                      |
+| Basic filtering                                       | Filter node                                  | ✓ Visual interface                                |
+| Conditional routing                                   | If/Switch node                               | ✓ Better clarity                                  |
+| Complex transformations                               | **CODE node**                                | ✗ Too limited                                     |
+| Multi-step logic                                      | **CODE node**                                | ✗ Needs chaining                                  |
+| Custom calculations                                   | **CODE node**                                | ✗ No built-in                                     |
+| API response parsing                                  | **CODE node**                                | ✗ Complex structure                               |
+| Recursive operations                                  | **CODE node**                                | ✗ Not possible                                    |
 
 ### Related n8n Nodes
 - **If/Switch:** Conditional logic (use CODE for complex conditions with multiple criteria)

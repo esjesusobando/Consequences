@@ -101,11 +101,11 @@ Updates `tasks.md`:
 - [x] 1.4 Add `AuthConfig` type to `src/types/auth.ts`
 
 ### Files Changed
-| File                                | Action                   | What Was Done                                         |
-|-------------------------------------|--------------------------|-------------------------------------------------------|
-| `package.json`                      | Modified                 | Added jsonwebtoken dependencies                       |
-| `src/utils/jwt.ts`                  | Created                  | JWT creation and validation utilities                 |
-| `src/types/auth.ts`                 | Modified                 | Added AuthConfig interface                            |
+| File                                  | Action                     | What Was Done                                           |
+|---------------------------------------|----------------------------|---------------------------------------------------------|
+| `package.json`                        | Modified                   | Added jsonwebtoken dependencies                         |
+| `src/utils/jwt.ts`                    | Created                    | JWT creation and validation utilities                   |
+| `src/types/auth.ts`                   | Modified                   | Added AuthConfig interface                              |
 
 ### Deviations from Design
 None — implementation matches design.

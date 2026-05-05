@@ -37,12 +37,12 @@ User → AI Agent → Stitch MCP → Stitch API → Design + Code → AI Agent �
 
 ## Prerequisites
 
-| Requirement                        | Description                                    |
-|------------------------------------|------------------------------------------------|
-| Node.js 18+                        | Runtime for npx                                |
-| Google Cloud Project               | With billing enabled                           |
-| gcloud CLI                         | Google Cloud command line tool                 |
-| Stitch Project                     | Created at stitch.withgoogle.com               |
+| Requirement                          | Description                                      |
+|--------------------------------------|--------------------------------------------------|
+| Node.js 18+                          | Runtime for npx                                  |
+| Google Cloud Project                 | With billing enabled                             |
+| gcloud CLI                           | Google Cloud command line tool                   |
+| Stitch Project                       | Created at stitch.withgoogle.com                 |
 
 ---
 
@@ -148,15 +148,15 @@ Add to `claude_desktop_config.json`:
 
 ## Available Tools
 
-| Tool                                      | Description                                              |
-|-------------------------------------------|----------------------------------------------------------|
-| `build_site`                              | Map screens to routes, get per-page HTML                 |
-| `get_screen_code`                         | Fetch raw HTML/CSS of a specific screen                  |
-| `get_screen_image`                        | Get screen screenshot (base64)                           |
-| `generate_screen_from_text`               | Generate a new screen from a text prompt                 |
-| `list_projects`                           | List Stitch projects                                     |
-| `list_screens`                            | List screens in a project                                |
-| `extract_design_context`                  | Extract design DNA (colors, fonts, layout)               |
+| Tool                                        | Description                                                |
+|---------------------------------------------|------------------------------------------------------------|
+| `build_site`                                | Map screens to routes, get per-page HTML                   |
+| `get_screen_code`                           | Fetch raw HTML/CSS of a specific screen                    |
+| `get_screen_image`                          | Get screen screenshot (base64)                             |
+| `generate_screen_from_text`                 | Generate a new screen from a text prompt                   |
+| `list_projects`                             | List Stitch projects                                       |
+| `list_screens`                              | List screens in a project                                  |
+| `extract_design_context`                    | Extract design DNA (colors, fonts, layout)                 |
 
 ---
 
@@ -211,11 +211,11 @@ npx @_davideast/stitch-mcp view --projects
 
 ## Prompt Best Practices
 
-| ❌ Bad                             | ✅ Good                                                                       |
-|-----------------------------------|------------------------------------------------------------------------------|
-| "make it look good"               | "Dark mode, card-based, minimal"                                             |
-| "modern website"                  | "SaaS landing page with hero, features, pricing, CTA sections"               |
-| "nice colors"                     | "Orange (#F97316) accent on dark (#0A0A0A) background"                       |
+| ❌ Bad                               | ✅ Good                                                                         |
+|-------------------------------------|--------------------------------------------------------------------------------|
+| "make it look good"                 | "Dark mode, card-based, minimal"                                               |
+| "modern website"                    | "SaaS landing page with hero, features, pricing, CTA sections"                 |
+| "nice colors"                       | "Orange (#F97316) accent on dark (#0A0A0A) background"                         |
 
 **Tips**:
 - Be specific with prompts

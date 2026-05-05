@@ -21,11 +21,11 @@
 
 ## 🛠️ Technical Dominance (The Hybrid Edge)
 
-| **Artificial Intelligence & Data**                                                                              | **Industrial Engineering (Oil & Gas)**                                                                             | **Strategic Governance (PM)**                                                             |
-|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| **Generative AI:** LLM Orchestration, n8n Automation, Prompt Engineering (SOTA).                                | **Drilling & Workover:** Applied Engineering, Sidetracks, Well Planning & Optimization.                            | **Frameworks:** Agile, Scrum, Business Analysis (Domestika Certified).                    |
-| **Data Science:** Python Fundamentals, Google Data Analytics, SQL, RAG Systems.                                 | **Directional Design:** Complex Trajectories, BHA Selection, Bit Optimization (Halliburton/PDVSA).                 | **Security:** Cybersecurity for Enterprises, Risk Analysis (Fire School).                 |
-| **Agentic Coding:** Claude Code, Windsurf, PersonalOS Skill Development, AI Agent Architecture.                 | **Well Control:** IADC WellCAP Certified, Pressure Management, Blowout Prevention.                                 | **Design:** Photoshop, Illustrator, Phocus, Creative AI Workflows.                        |
+| **Artificial Intelligence & Data**                                                                                | **Industrial Engineering (Oil & Gas)**                                                                               | **Strategic Governance (PM)**                                                               |
+|-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| **Generative AI:** LLM Orchestration, n8n Automation, Prompt Engineering (SOTA).                                  | **Drilling & Workover:** Applied Engineering, Sidetracks, Well Planning & Optimization.                              | **Frameworks:** Agile, Scrum, Business Analysis (Domestika Certified).                      |
+| **Data Science:** Python Fundamentals, Google Data Analytics, SQL, RAG Systems.                                   | **Directional Design:** Complex Trajectories, BHA Selection, Bit Optimization (Halliburton/PDVSA).                   | **Security:** Cybersecurity for Enterprises, Risk Analysis (Fire School).                   |
+| **Agentic Coding:** Claude Code, Windsurf, PersonalOS Skill Development, AI Agent Architecture.                   | **Well Control:** IADC WellCAP Certified, Pressure Management, Blowout Prevention.                                   | **Design:** Photoshop, Illustrator, Phocus, Creative AI Workflows.                          |
 
 ---
 
@@ -70,46 +70,46 @@
 
 ### Formal Education
 
-| Degree                                         | Institution                                      | Period                      |
-|------------------------------------------------|--------------------------------------------------|-----------------------------|
-| **B.S. Petroleum Engineering**                 | Universidad del Zulia (LUZ)                      | 2003 – 2009                 |
-| **Petrochemical Technician**                   | Escuela Técnica Industrial (ETI)                 | 2000 – 2003                 |
+| Degree                                           | Institution                                        | Period                        |
+|--------------------------------------------------|----------------------------------------------------|-------------------------------|
+| **B.S. Petroleum Engineering**                   | Universidad del Zulia (LUZ)                        | 2003 – 2009                   |
+| **Petrochemical Technician**                     | Escuela Técnica Industrial (ETI)                   | 2000 – 2003                   |
 
 ### Industrial Certifications (Oil & Gas)
 
-| Certification                                                 | Issuer                                  | Year                      |
-|---------------------------------------------------------------|-----------------------------------------|---------------------------|
-| **IADC WellCAP** - International Well Control                 | IADC                                    | 2014                      |
-| **Stuck Pipe Prevention**                                     | Schlumberger IPM                        | 2012                      |
-| **Applied Drilling Engineering**                              | Mannyron Consultores                    | 2014                      |
-| **Well Cementing & Sand Control**                             | Jairo Molero Consulting                 | 2013                      |
-| **Directional Design & BHA Selection**                        | Jairo Molero Consulting                 | 2012-2013                 |
-| **Rig Mathematics for Supervisors**                           | Mannyron Consultores                    | 2013                      |
+| Certification                                                   | Issuer                                    | Year                        |
+|-----------------------------------------------------------------|-------------------------------------------|-----------------------------|
+| **IADC WellCAP** - International Well Control                   | IADC                                      | 2014                        |
+| **Stuck Pipe Prevention**                                       | Schlumberger IPM                          | 2012                        |
+| **Applied Drilling Engineering**                                | Mannyron Consultores                      | 2014                        |
+| **Well Cementing & Sand Control**                               | Jairo Molero Consulting                   | 2013                        |
+| **Directional Design & BHA Selection**                          | Jairo Molero Consulting                   | 2012-2013                   |
+| **Rig Mathematics for Supervisors**                             | Mannyron Consultores                      | 2013                        |
 
 ### Digital & AI Certifications
 
-| Certification                                            | Platform                                     | Year                   |
-|----------------------------------------------------------|----------------------------------------------|------------------------|
-| **AI Day - Generative AI Mastery**                       | Webpositer                                   | 2025                   |
-| **Big School AI**                                        | Big School                                   | 2025                   |
-| **Google Data Analytics Specialization**                 | Coursera (Google Authorized)                 | 2022                   |
-| **Python Fundamentals**                                  | Platzi                                       | 2024                   |
-| **Growth AI Marketing**                                  | Platzi                                       | 2024                   |
-| **Web Development with AI**                              | Platzi                                       | 2024                   |
-| **ChatGPT Advanced**                                     | Platzi                                       | 2024                   |
-| **Claude Code Pro Tips**                                 | Personal Study                               | 2025                   |
-| **Project Manager & Business Analyst**                   | Domestika                                    | 2024                   |
-| **Cybersecurity for Enterprises**                        | Fire School                                  | 2013                   |
-| **Risk Analysis (ART)**                                  | Fire School                                  | 2013                   |
+| Certification                                              | Platform                                       | Year                     |
+|------------------------------------------------------------|------------------------------------------------|--------------------------|
+| **AI Day - Generative AI Mastery**                         | Webpositer                                     | 2025                     |
+| **Big School AI**                                          | Big School                                     | 2025                     |
+| **Google Data Analytics Specialization**                   | Coursera (Google Authorized)                   | 2022                     |
+| **Python Fundamentals**                                    | Platzi                                         | 2024                     |
+| **Growth AI Marketing**                                    | Platzi                                         | 2024                     |
+| **Web Development with AI**                                | Platzi                                         | 2024                     |
+| **ChatGPT Advanced**                                       | Platzi                                         | 2024                     |
+| **Claude Code Pro Tips**                                   | Personal Study                                 | 2025                     |
+| **Project Manager & Business Analyst**                     | Domestika                                      | 2024                     |
+| **Cybersecurity for Enterprises**                          | Fire School                                    | 2013                     |
+| **Risk Analysis (ART)**                                    | Fire School                                    | 2013                     |
 
 ### Technical & Safety Certifications
 
-| Certification                                           | Issuer                                | Year                   |
-|---------------------------------------------------------|---------------------------------------|------------------------|
-| **HSE & Personal Protective Equipment**                 | Enelco                                | 2007                   |
-| **Fire Prevention & Control**                           | firefighters Training                 | 2007                   |
-| **Industrial Safety & Regulations**                     | Fire School                           | 2013                   |
-| **Research & Accident Reporting**                       | Enelco                                | 2007                   |
+| Certification                                             | Issuer                                  | Year                     |
+|-----------------------------------------------------------|-----------------------------------------|--------------------------|
+| **HSE & Personal Protective Equipment**                   | Enelco                                  | 2007                     |
+| **Fire Prevention & Control**                             | firefighters Training                   | 2007                     |
+| **Industrial Safety & Regulations**                       | Fire School                             | 2013                     |
+| **Research & Accident Reporting**                         | Enelco                                  | 2007                     |
 
 ---
 
@@ -144,13 +144,13 @@ Comprehensive AI-powered productivity system with 11+ specialized skills, automa
 
 Demonstrated ability to process and extract value from:
 
-| Category                                    | Count                   | Examples                                                                  |
-|---------------------------------------------|-------------------------|---------------------------------------------------------------------------|
-| **Industrial Certificates**                 | 9+                      | Well Control, Cementing, Sand Control, Directional Design                 |
-| **Digital/AI Courses**                      | 8+                      | Python, Data Analytics, ChatGPT, Growth AI                                |
-| **Technical Reports**                       | 20+                     | Drilling Engineering, Well Planning, Safety Protocols                     |
-| **Academic Documents**                      | 10+                     | University Degrees, Technical Certificates                                |
-| **Multimedia Guides**                       | 5+                      | Claude Code, Windsurf, Web Development                                    |
+| Category                                      | Count                     | Examples                                                                    |
+|-----------------------------------------------|---------------------------|-----------------------------------------------------------------------------|
+| **Industrial Certificates**                   | 9+                        | Well Control, Cementing, Sand Control, Directional Design                   |
+| **Digital/AI Courses**                        | 8+                        | Python, Data Analytics, ChatGPT, Growth AI                                  |
+| **Technical Reports**                         | 20+                       | Drilling Engineering, Well Planning, Safety Protocols                       |
+| **Academic Documents**                        | 10+                       | University Degrees, Technical Certificates                                  |
+| **Multimedia Guides**                         | 5+                        | Claude Code, Windsurf, Web Development                                      |
 
 ---
 

@@ -150,9 +150,9 @@ grep -E '^description:' skills/*/SKILL.md
 
 Some skills are exact copies from external upstream repositories, vendored locally so the plugin is self-contained. Prefer syncing from upstream, but apply the reference file inclusion rules from the skill compliance checklist after each sync -- upstream skills often use markdown links for references which break in plugin contexts.
 
-| Skill                           | Upstream                                                                                 | Local deviations                                                                                 |
-|---------------------------------|------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| `agent-browser`                 | `github.com/vercel-labs/agent-browser` (`skills/agent-browser/SKILL.md`)                 | Markdown link refs replaced with backtick paths to fix CWD resolution bug (#374)                 |
+| Skill                             | Upstream                                                                                   | Local deviations                                                                                   |
+|-----------------------------------|--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| `agent-browser`                   | `github.com/vercel-labs/agent-browser` (`skills/agent-browser/SKILL.md`)                   | Markdown link refs replaced with backtick paths to fix CWD resolution bug (#374)                   |
 
 ## Beta Skills
 

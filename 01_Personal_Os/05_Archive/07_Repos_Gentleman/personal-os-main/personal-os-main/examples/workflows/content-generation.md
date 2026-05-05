@@ -52,11 +52,11 @@ If it exists, read and apply those patterns. If not, extract patterns from sampl
 
 Read relevant context based on content type:
 
-| Content Type                               | Context to Read                                                                               |
-|--------------------------------------------|-----------------------------------------------------------------------------------------------|
-| Blog post                                  | `Knowledge/` docs related to topic, `GOALS.md` for positioning                                |
-| Email/outreach                             | Task file for recipient context, any related `Knowledge/` files                               |
-| Social media                               | Recent posts in `Knowledge/voice-samples/`, `GOALS.md` for themes                             |
+| Content Type                                 | Context to Read                                                                                 |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------|
+| Blog post                                    | `Knowledge/` docs related to topic, `GOALS.md` for positioning                                  |
+| Email/outreach                               | Task file for recipient context, any related `Knowledge/` files                                 |
+| Social media                                 | Recent posts in `Knowledge/voice-samples/`, `GOALS.md` for themes                               |
 
 ### Step 4: Draft Content
 

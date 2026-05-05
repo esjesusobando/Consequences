@@ -13,34 +13,34 @@
 
 ### 🔴 Issues HIGH detectados
 
-| #            | Issue                                                     | Archivo                                                                                                                      | Línea     | Impacto                              | Estado               |
-|--------------|-----------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------|----------------------|
-| ~~**A1**~~   | ~~`sys.path.insert(0, str(_root / "03_Scripts_Os"))`~~    | ~~`01_Auditor_Hub.py`~~                                                                                                      | ~~31~~    | ~~Import legacy roto en v2.1~~       | ✅ **FIXED** (v6.2)   |
-| ~~**A2**~~   | ~~`sys.path.insert(0, str(_root / "03_Scripts_Os"))`~~    | ~~`02_Git_Hub.py`~~                                                                                                          | ~~19~~    | ~~Mismo problema~~                   | ✅ **FIXED** (v6.2)   |
-| ~~**A3**~~   | ~~Dimensión `"03_Scripts_Os"` listada como ENGINE_DIR~~   | ~~`01_Auditor_Hub.py`~~                                                                                                      | ~~65~~    | ~~Reportes muestran nombre viejo~~   | ✅ **FIXED** (v6.2)   |
-| **A4**       | 12 reportes huérfanos                                     | `02_Playground/reports/health_*.txt` — debería ir a `01_Personal_Os/04_Operations/00_Context_LLM/11_Reports/` o consolidar   |-----------| 🔴 PENDIENTE                          |
-| **A5**       | `04_Engine` mencionado por usuario                        | Buscar carpetas `04_Engine` huérfanas creadas por scripts (no encontradas en código pero pueden existir en disco)            |-----------| 🟡 PENDIENTE                          |
-| **A6**       | Skills NO auto-cargan por contexto                        | `CLAUDE.md` describe skills pero no hay context-triggers tipo "si tarea contiene X → leer SKILL.md de Y"                     |-----------| 🟡 PENDIENTE                          |
-| **A7**       | `skill-registry.md` incompleto                            | Lista 80+ skills pero hay 297 SKILL.md → falta sincronización masiva                                                         |-----------| 🟡 PENDIENTE                          |
-| **A5**       | `04_Engine` mencionado por usuario                        | Buscar carpetas `04_Engine` huérfanas creadas por scripts (no encontradas en código pero pueden existir en disco)            |-----------| 🟡 PENDIENTE                          |
-| **A6**       | Skills NO auto-cargan por contexto                        | `CLAUDE.md` describe skills pero no hay context-triggers tipo "si tarea contiene X → leer SKILL.md de Y"                     |-----------| 🟡 PENDIENTE                          |
-| **A7**       | `skill-registry.md` incompleto                            | Lista 80+ skills pero hay 297 SKILL.md → falta sincronización masiva                                                         |-----------| 🟡 PENDIENTE                          |
+| #              | Issue                                                       | Archivo                                                                                                                        | Línea       | Impacto                                | Estado                 |
+|----------------|-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|-------------|----------------------------------------|------------------------|
+| ~~**A1**~~     | ~~`sys.path.insert(0, str(_root / "03_Scripts_Os"))`~~      | ~~`01_Auditor_Hub.py`~~                                                                                                        | ~~31~~      | ~~Import legacy roto en v2.1~~         | ✅ **FIXED** (v6.2)     |
+| ~~**A2**~~     | ~~`sys.path.insert(0, str(_root / "03_Scripts_Os"))`~~      | ~~`02_Git_Hub.py`~~                                                                                                            | ~~19~~      | ~~Mismo problema~~                     | ✅ **FIXED** (v6.2)     |
+| ~~**A3**~~     | ~~Dimensión `"03_Scripts_Os"` listada como ENGINE_DIR~~     | ~~`01_Auditor_Hub.py`~~                                                                                                        | ~~65~~      | ~~Reportes muestran nombre viejo~~     | ✅ **FIXED** (v6.2)     |
+| **A4**         | 12 reportes huérfanos                                       | `02_Playground/reports/health_*.txt` — debería ir a `01_Personal_Os/04_Operations/00_Context_LLM/11_Reports/` o consolidar     |-------------| 🔴 PENDIENTE                            |
+| **A5**         | `04_Engine` mencionado por usuario                          | Buscar carpetas `04_Engine` huérfanas creadas por scripts (no encontradas en código pero pueden existir en disco)              |-------------| 🟡 PENDIENTE                            |
+| **A6**         | Skills NO auto-cargan por contexto                          | `CLAUDE.md` describe skills pero no hay context-triggers tipo "si tarea contiene X → leer SKILL.md de Y"                       |-------------| 🟡 PENDIENTE                            |
+| **A7**         | `skill-registry.md` incompleto                              | Lista 80+ skills pero hay 297 SKILL.md → falta sincronización masiva                                                           |-------------| 🟡 PENDIENTE                            |
+| **A5**         | `04_Engine` mencionado por usuario                          | Buscar carpetas `04_Engine` huérfanas creadas por scripts (no encontradas en código pero pueden existir en disco)              |-------------| 🟡 PENDIENTE                            |
+| **A6**         | Skills NO auto-cargan por contexto                          | `CLAUDE.md` describe skills pero no hay context-triggers tipo "si tarea contiene X → leer SKILL.md de Y"                       |-------------| 🟡 PENDIENTE                            |
+| **A7**         | `skill-registry.md` incompleto                              | Lista 80+ skills pero hay 297 SKILL.md → falta sincronización masiva                                                           |-------------| 🟡 PENDIENTE                            |
 
 ### 🟡 Issues MEDIUM detectados
 
-| #        | Issue                                | Detalle                                                                                                                      |
-|----------|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| **A4**   | 12 reportes huérfanos                | `02_Playground/reports/health_*.txt` — debería ir a `01_Personal_Os/04_Operations/00_Context_LLM/11_Reports/` o consolidar   |
-| **A5**   | `04_Engine` mencionado por usuario   | Buscar carpetas `04_Engine` huérfanas creadas por scripts (no encontradas en código pero pueden existir en disco)            |
-| **A6**   | Skills NO auto-cargan por contexto   | `CLAUDE.md` describe skills pero no hay context-triggers tipo "si tarea contiene X → leer SKILL.md de Y"                     |
-| **A7**   | `skill-registry.md` incompleto       | Lista 80+ skills pero hay 297 SKILL.md → falta sincronización masiva                                                         |
+| #          | Issue                                  | Detalle                                                                                                                        |
+|------------|----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| **A4**     | 12 reportes huérfanos                  | `02_Playground/reports/health_*.txt` — debería ir a `01_Personal_Os/04_Operations/00_Context_LLM/11_Reports/` o consolidar     |
+| **A5**     | `04_Engine` mencionado por usuario     | Buscar carpetas `04_Engine` huérfanas creadas por scripts (no encontradas en código pero pueden existir en disco)              |
+| **A6**     | Skills NO auto-cargan por contexto     | `CLAUDE.md` describe skills pero no hay context-triggers tipo "si tarea contiene X → leer SKILL.md de Y"                       |
+| **A7**     | `skill-registry.md` incompleto         | Lista 80+ skills pero hay 297 SKILL.md → falta sincronización masiva                                                           |
 
 ### 🟢 Issues LOW
 
-| #        | Issue                                                         | Detalle                         |
-|----------|---------------------------------------------------------------|---------------------------------|
-| **A8**   | `13_Beautify_Tables.py` muta archivos en lugar de outputear   | Diseño OK pero no documentado   |
-| **A9**   | `14_Beauty_Doc.py` igual                                      | Mismo patrón                    |
+| #          | Issue                                                           | Detalle                           |
+|------------|-----------------------------------------------------------------|-----------------------------------|
+| **A8**     | `13_Beautify_Tables.py` muta archivos en lugar de outputear     | Diseño OK pero no documentado     |
+| **A9**     | `14_Beauty_Doc.py` igual                                        | Mismo patrón                      |
 
 ### ✅ Lo que YA está OK
 
@@ -232,15 +232,15 @@ Agregar sección al `CLAUDE.md` raíz:
 
 Cuando detecto cualquiera de estos contextos, leo INMEDIATAMENTE el SKILL.md ANTES de escribir código:
 
-| Contexto detectado                           | Skill a cargar                                              |
-|----------------------------------------------|-------------------------------------------------------------|
-| Diseño web, UI, frontend visual, landing     | `02_Diseno_Ui_Ux/00_Taste_Skill/SKILL.md`                   |
-| Brand voice, voz de marca                    | `01_Creacion_Contenidos/11_Brand_Voice_Guardian/SKILL.md`   |
-| Carrusel, contenido visual                   | `01_Creacion_Contenidos/28_Carousel_Master/SKILL.md`        |
-| Video prompt, shot list                      | `03_Video_Media/01_Video_Prompt_Builder/SKILL.md`           |
-| Testing TDD                                  | `06_Tools/05_Testing/SKILL.md`                              |
-| Skill creation                               | `06_Tools/01_Skill_Creator/SKILL.md`                        |
-| ... (extender a todas las skills críticas)   |
+| Contexto detectado                             | Skill a cargar                                                |
+|------------------------------------------------|---------------------------------------------------------------|
+| Diseño web, UI, frontend visual, landing       | `02_Diseno_Ui_Ux/00_Taste_Skill/SKILL.md`                     |
+| Brand voice, voz de marca                      | `01_Creacion_Contenidos/11_Brand_Voice_Guardian/SKILL.md`     |
+| Carrusel, contenido visual                     | `01_Creacion_Contenidos/28_Carousel_Master/SKILL.md`          |
+| Video prompt, shot list                        | `03_Video_Media/01_Video_Prompt_Builder/SKILL.md`             |
+| Testing TDD                                    | `06_Tools/05_Testing/SKILL.md`                                |
+| Skill creation                                 | `06_Tools/01_Skill_Creator/SKILL.md`                          |
+| ... (extender a todas las skills críticas)     |
 ```
 
 **E.2 — Generar tabla automática**
@@ -319,17 +319,17 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py --rec
 
 ## ⏱️ PARTE 3 — CRONOGRAMA
 
-| Fase                                 | Duración        | Bloqueante      |
-|--------------------------------------|-----------------|-----------------|
-| FASE A — Fix rutas viejas            | 30 min          | ✅ Sí            |
-| FASE B — Test suite total            | 45 min          | ✅ Sí            |
-| FASE C — Validación skills           | 1 h             | ✅ Sí            |
-| FASE D — Validar recursivo           | 30 min          | ✅ Sí            |
-| FASE E — Optimización auto-loading   | 1 h             | ❌ No (mejora)   |
-| FASE F — Outputs cleanup             | 30 min          | ✅ Sí            |
-| FASE G — Validation gate             | 15 min          | ✅ Sí            |
-| **TOTAL**                            | **~4h 30min**   | —               |
-| **Mínimo (sin E)**                   | **~3h 30min**   | —               |
+| Fase                                   | Duración          | Bloqueante        |
+|----------------------------------------|-------------------|-------------------|
+| FASE A — Fix rutas viejas              | 30 min            | ✅ Sí              |
+| FASE B — Test suite total              | 45 min            | ✅ Sí              |
+| FASE C — Validación skills             | 1 h               | ✅ Sí              |
+| FASE D — Validar recursivo             | 30 min            | ✅ Sí              |
+| FASE E — Optimización auto-loading     | 1 h               | ❌ No (mejora)     |
+| FASE F — Outputs cleanup               | 30 min            | ✅ Sí              |
+| FASE G — Validation gate               | 15 min            | ✅ Sí              |
+| **TOTAL**                              | **~4h 30min**     | —                 |
+| **Mínimo (sin E)**                     | **~3h 30min**     | —                 |
 
 ---
 
@@ -347,16 +347,16 @@ Antes de ejecutar, confirmá:
 
 ## 📊 PARTE 5 — MÉTRICAS OBJETIVO
 
-| Métrica                               | Actual v2.1     | Objetivo v2.2 Integrated           |
-|---------------------------------------|-----------------|------------------------------------|
-| Tests pasando                         | 35/35           | **35/35 + 297 skills validadas**   |
-| Refs `03_Scripts_Os` activas          | 2               | **0**                              |
-| Carpetas `04_Engine` huérfanas        | ¿?              | **0**                              |
-| Reports en lugar correcto             | parcial         | **100%**                           |
-| Skills auto-loadeables por contexto   | 0               | **≥ 30 críticas**                  |
-| Skill-registry sync                   | 80+/297         | **297/297**                        |
-| Recursive engine ejecutable           | ✅               | ✅ + scheduled                      |
-| Outputs centralizados                 | parcial         | **convención documentada**         |
+| Métrica                                 | Actual v2.1       | Objetivo v2.2 Integrated             |
+|-----------------------------------------|-------------------|--------------------------------------|
+| Tests pasando                           | 35/35             | **35/35 + 297 skills validadas**     |
+| Refs `03_Scripts_Os` activas            | 2                 | **0**                                |
+| Carpetas `04_Engine` huérfanas          | ¿?                | **0**                                |
+| Reports en lugar correcto               | parcial           | **100%**                             |
+| Skills auto-loadeables por contexto     | 0                 | **≥ 30 críticas**                    |
+| Skill-registry sync                     | 80+/297           | **297/297**                          |
+| Recursive engine ejecutable             | ✅                 | ✅ + scheduled                        |
+| Outputs centralizados                   | parcial           | **convención documentada**           |
 
 ---
 

@@ -23,15 +23,15 @@ Coordinar el flujo completo de desarrollo TDD orquestando agentes especializados
 
 ## Checkpoints por Fase
 
-| Fase     | Checkpoint              | Validación                      | Si Falla                 |
-|----------|-------------------------|---------------------------------|--------------------------|
-| 1        | Arquitectura aprobada   | Pregunta al usuario             | Iterar FASE 1            |
-| 2        | Tests FALLAN            | Ejecutar suite → 0 passing      | ERROR — revisar tests    |
-| 3        | Tests PASAN             | Ejecutar suite → 100% passing   | Iterar FASE 3 (máx 3x)   |
-| 4        | Tests siguen pasando    | Ejecutar suite post-refactor    | Revertir refactor        |
-| 5        | 0 vulns HIGH/CRITICAL   | Parser de reporte seguridad     | Iterar FASE 5 (máx 2x)   |
-| 6        | PR válido               | Validar estructura + docs       | Regenerar PR             |
-| 7        | WCAG compliance         | Reporte a11y                    | Iterar FASE 7            |
+| Fase       | Checkpoint                | Validación                        | Si Falla                   |
+|------------|---------------------------|-----------------------------------|----------------------------|
+| 1          | Arquitectura aprobada     | Pregunta al usuario               | Iterar FASE 1              |
+| 2          | Tests FALLAN              | Ejecutar suite → 0 passing        | ERROR — revisar tests      |
+| 3          | Tests PASAN               | Ejecutar suite → 100% passing     | Iterar FASE 3 (máx 3x)     |
+| 4          | Tests siguen pasando      | Ejecutar suite post-refactor      | Revertir refactor          |
+| 5          | 0 vulns HIGH/CRITICAL     | Parser de reporte seguridad       | Iterar FASE 5 (máx 2x)     |
+| 6          | PR válido                 | Validar estructura + docs         | Regenerar PR               |
+| 7          | WCAG compliance           | Reporte a11y                      | Iterar FASE 7              |
 
 ## Commits Atómicos
 

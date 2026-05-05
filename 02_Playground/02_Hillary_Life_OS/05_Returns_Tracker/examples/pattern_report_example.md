@@ -12,13 +12,13 @@ monitoring: 3
 
 ## Detected Patterns
 
-| Pattern ID                            | Type                           | Frequency                   | Confidence                   | Action                         |
-|---------------------------------------|--------------------------------|-----------------------------|------------------------------|--------------------------------|
-| daily-standup                         | tag_recurrence                 | 30/30 days                  | 92%                          | Generate skill                 |
-| bug-investigation                     | workflow_chain                 | 15/30 days                  | 65%                          | Monitor                        |
-| code-review-session                   | time_pattern                   | 45/30 days                  | 85%                          | Generate skill                 |
-| weekly-planning                       | temporal                       | 4/4 weeks                   | 78%                          | Monitor                        |
-| meeting-transcription                 | tag_recurrence                 | 20/30 days                  | 71%                          | Needs review                   |
+| Pattern ID                              | Type                             | Frequency                     | Confidence                     | Action                           |
+|-----------------------------------------|----------------------------------|-------------------------------|--------------------------------|----------------------------------|
+| daily-standup                           | tag_recurrence                   | 30/30 days                    | 92%                            | Generate skill                   |
+| bug-investigation                       | workflow_chain                   | 15/30 days                    | 65%                            | Monitor                          |
+| code-review-session                     | time_pattern                     | 45/30 days                    | 85%                            | Generate skill                   |
+| weekly-planning                         | temporal                         | 4/4 weeks                     | 78%                            | Monitor                          |
+| meeting-transcription                   | tag_recurrence                   | 20/30 days                    | 71%                            | Needs review                     |
 
 ## Top Recommendation
 

@@ -14,13 +14,13 @@ Adjusting the temperature parameter changes how the softmax function distributes
 
 Example probability distribution shift for a single token position:
 
-| Token Candidate                             | Probability at Temp 1.5                             | Probability at Temp ~0.0                             | Raw Logit                             |
-|---------------------------------------------|-----------------------------------------------------|------------------------------------------------------|---------------------------------------|
-| lazy                                        | 0.4875                                              | 0.9933                                               | 2.0                                   |
-| quick                                       | 0.2503                                              | 0.0067                                               | 1.0                                   |
-| tired                                       | 0.1285                                              | 0.0000                                               | 0.0                                   |
-| slow                                        | 0.0660                                              | 0.0000                                               | -1.0                                  |
-| clumsy                                      | 0.0339                                              | 0.0000                                               | -2.0                                  |
+| Token Candidate                               | Probability at Temp 1.5                               | Probability at Temp ~0.0                               | Raw Logit                               |
+|-----------------------------------------------|-------------------------------------------------------|--------------------------------------------------------|-----------------------------------------|
+| lazy                                          | 0.4875                                                | 0.9933                                                 | 2.0                                     |
+| quick                                         | 0.2503                                                | 0.0067                                                 | 1.0                                     |
+| tired                                         | 0.1285                                                | 0.0000                                                 | 0.0                                     |
+| slow                                          | 0.0660                                                | 0.0000                                                 | -1.0                                    |
+| clumsy                                        | 0.0339                                                | 0.0000                                                 | -2.0                                    |
 
 ### Top-p (Nucleus Sampling)
 
@@ -30,12 +30,12 @@ Top-p truncates the probability distribution by only considering the smallest se
 
 Google Gemini 3 models replaced the legacy `thinking_budget` (a hard token count cap on internal reasoning) with a `thinking_level` parameter that provides relative guidance on computational depth.
 
-| Setting                               | Flash Support                             | Pro Support                               | Use Case                                                                   |
-|---------------------------------------|-------------------------------------------|-------------------------------------------|----------------------------------------------------------------------------|
-| `minimal`                             | Yes                                       | No                                        | High-throughput, low-latency tasks                                         |
-| `low`                                 | Yes                                       | Yes                                       | Simple instruction following, data extraction                              |
-| `medium`                              | Yes                                       | Yes (3.1 Pro)                             | Moderate complexity tasks                                                  |
-| `high`                                | Yes (Default)                             | Yes (Default)                             | Complex analysis, code generation, mathematics                             |
+| Setting                                 | Flash Support                               | Pro Support                                 | Use Case                                                                     |
+|-----------------------------------------|---------------------------------------------|---------------------------------------------|------------------------------------------------------------------------------|
+| `minimal`                               | Yes                                         | No                                          | High-throughput, low-latency tasks                                           |
+| `low`                                   | Yes                                         | Yes                                         | Simple instruction following, data extraction                                |
+| `medium`                                | Yes                                         | Yes (3.1 Pro)                               | Moderate complexity tasks                                                    |
+| `high`                                  | Yes (Default)                               | Yes (Default)                               | Complex analysis, code generation, mathematics                               |
 
 Important constraints:
 - `thinking_level` and `thinking_budget` are mutually exclusive. Using both in one API call triggers an HTTP 400 error.

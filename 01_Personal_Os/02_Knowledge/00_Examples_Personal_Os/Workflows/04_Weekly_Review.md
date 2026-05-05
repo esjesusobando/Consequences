@@ -45,11 +45,11 @@ How am I tracking against my quarterly goals?
 
 **Q1 Goals Progress (Week 3 of 12):**
 
-| Goal                                      | Status                            | Notes                                                    |
-|-------------------------------------------|-----------------------------------|----------------------------------------------------------|
-| Ship Q1 roadmap                           | 🟢 On track                        | Presentation done, specs 60% complete                    |
-| Improve activation by 20%                 | 🟡 Needs attention                 | Research done, no implementation started                 |
-| Build thought leadership                  | 🟢 On track                        | 1 of 4 planned posts published                           |
+| Goal                                        | Status                              | Notes                                                      |
+|---------------------------------------------|-------------------------------------|------------------------------------------------------------|
+| Ship Q1 roadmap                             | 🟢 On track                          | Presentation done, specs 60% complete                      |
+| Improve activation by 20%                   | 🟡 Needs attention                   | Research done, no implementation started                   |
+| Build thought leadership                    | 🟢 On track                          | 1 of 4 planned posts published                             |
 
 **Recommendations:**
 - Activation goal needs more focus next week

@@ -95,13 +95,13 @@ URL input
 
 ## 📋 Priorización
 
-| #               | Mejora                               | Impacto              | Difficulty             | Prioridad             |
-|-----------------|--------------------------------------|----------------------|------------------------|-----------------------|
-| 1               | Knowledge MCP                        | High                 | Low                    | 1                     |
-| 2               | Learning Workflow                    | High                 | Medium                 | 2                     |
-| 3               | Spaced Repetition                    | Medium               | High                   | 4                     |
-| 4               | Graph View                           | High                 | High                   | 3                     |
-| 5               | Active Learning Protocol             | Medium               | Low                    | 3                     |
+| #                 | Mejora                                 | Impacto                | Difficulty               | Prioridad               |
+|-------------------|----------------------------------------|------------------------|--------------------------|-------------------------|
+| 1                 | Knowledge MCP                          | High                   | Low                      | 1                       |
+| 2                 | Learning Workflow                      | High                   | Medium                   | 2                       |
+| 3                 | Spaced Repetition                      | Medium                 | High                     | 4                       |
+| 4                 | Graph View                             | High                   | High                     | 3                       |
+| 5                 | Active Learning Protocol               | Medium                 | Low                      | 3                       |
 
 ---
 

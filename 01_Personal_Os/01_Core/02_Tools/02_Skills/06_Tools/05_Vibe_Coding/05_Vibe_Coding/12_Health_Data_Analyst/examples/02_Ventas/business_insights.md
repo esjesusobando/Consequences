@@ -7,17 +7,17 @@ Este análisis de **Standard v4.0 (Value First)** trasciende la visualización d
 > [!IMPORTANT]
 > Los ratios calculados son el pulso real de la eficiencia operativa.
 
-| 🏷️ KPI / Ratio                    | 🔢 Valor                       | 💡 Relevancia de Negocio                 |
-|-----------------------------------|-------------------------------|-----------------------------------------|
-| **Volumen Total**                 | N/A registros                 | Masa crítica de datos                   |
+| 🏷️ KPI / Ratio                      | 🔢 Valor                         | 💡 Relevancia de Negocio                   |
+|-------------------------------------|---------------------------------|-------------------------------------------|
+| **Volumen Total**                   | N/A registros                   | Masa crítica de datos                     |
 
 ### 📈 Profundización Estadística (Auditoría de Lógica)
-| 📉 Variable                  | 🧮 Media                 | 📉 Estabilidad                 | 📊 Status                         |
-|-----------------------------|-------------------------|-------------------------------|----------------------------------|
-| **Units**                   | 11.00                   | Volátil                       | 🟡 En Observación                 |
-| **Price**                   | 420.00                  | Volátil                       | 🟡 En Observación                 |
-| **Revenue**                 | 3360.00                 | Alta                          | 🟢 Estable                        |
-| **Profit**                  | 740.00                  | Alta                          | 🟢 Estable                        |
+| 📉 Variable                    | 🧮 Media                   | 📉 Estabilidad                   | 📊 Status                           |
+|-------------------------------|---------------------------|---------------------------------|------------------------------------|
+| **Units**                     | 11.00                     | Volátil                         | 🟡 En Observación                   |
+| **Price**                     | 420.00                    | Volátil                         | 🟡 En Observación                   |
+| **Revenue**                   | 3360.00                   | Alta                            | 🟢 Estable                          |
+| **Profit**                    | 740.00                    | Alta                            | 🟢 Estable                          |
 
 ## 🧠 3. Strategic Analysis Matrix (The 'Why' Layer)
 > [!TIP]

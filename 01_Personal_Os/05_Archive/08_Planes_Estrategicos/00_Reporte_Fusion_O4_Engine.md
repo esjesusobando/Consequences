@@ -60,47 +60,47 @@ Esta es la lista completa de **Comandos Maestros** disponibles en `04_Operations
 
 ### 🔧 Hubs de Desarrollo y Gestión
 
-| Hub                                | Comando                    | Función Principal                                | Ejemplo de Uso                                      |
-|------------------------------------|----------------------------|--------------------------------------------------|-----------------------------------------------------|
-| **91_Auditor_Hub**                 | `estructura`               | Verifica carpetas y archivos.                    | `python 91_Auditor_Hub.py estructura`               |
-|                                    | `links`                    | Valida URLs y referencias.                       | `python 91_Auditor_Hub.py links`                    |
-|                                    | `skills`                   | Audita skills del sistema.                       | `python 91_Auditor_Hub.py skills`                   |
-|                                    | `health`                   | Monitor de salud general.                        | `python 91_Auditor_Hub.py health`                   |
-|                                    | `profundo`                 | Auditoría paralela completa.                     | `python 91_Auditor_Hub.py profundo`                 |
-| **92_Git_Hub**                     | `commit`                   | Realiza commit seguro.                           | `python 92_Git_Hub.py commit`                       |
-|                                    | `lint`                     | Valida mensaje de commit.                        | `python 92_Git_Hub.py lint`                         |
-| **95_Validator_Hub**               | `stack`                    | Verifica dependencias (pip, node).               | `python 95_Validator_Hub.py stack`                  |
-|                                    | `rules`                    | Valida reglas de negocio.                        | `python 95_Validator_Hub.py rules`                  |
-| **96_Tool_Hub**                    | `tree`                     | Genera mapa de archivos.                         | `python 96_Tool_Hub.py tree`                        |
-|                                    | `cleanup`                  | Limpia archivos temporales.                      | `python 96_Tool_Hub.py cleanup`                     |
-| **100_General_Hub**                | `notify`                   | Sistema de notificaciones.                       | `python 100_General_Hub.py notify`                  |
+| Hub                                  | Comando                      | Función Principal                                  | Ejemplo de Uso                                        |
+|--------------------------------------|------------------------------|----------------------------------------------------|-------------------------------------------------------|
+| **91_Auditor_Hub**                   | `estructura`                 | Verifica carpetas y archivos.                      | `python 91_Auditor_Hub.py estructura`                 |
+|                                      | `links`                      | Valida URLs y referencias.                         | `python 91_Auditor_Hub.py links`                      |
+|                                      | `skills`                     | Audita skills del sistema.                         | `python 91_Auditor_Hub.py skills`                     |
+|                                      | `health`                     | Monitor de salud general.                          | `python 91_Auditor_Hub.py health`                     |
+|                                      | `profundo`                   | Auditoría paralela completa.                       | `python 91_Auditor_Hub.py profundo`                   |
+| **92_Git_Hub**                       | `commit`                     | Realiza commit seguro.                             | `python 92_Git_Hub.py commit`                         |
+|                                      | `lint`                       | Valida mensaje de commit.                          | `python 92_Git_Hub.py lint`                           |
+| **95_Validator_Hub**                 | `stack`                      | Verifica dependencias (pip, node).                 | `python 95_Validator_Hub.py stack`                    |
+|                                      | `rules`                      | Valida reglas de negocio.                          | `python 95_Validator_Hub.py rules`                    |
+| **96_Tool_Hub**                      | `tree`                       | Genera mapa de archivos.                           | `python 96_Tool_Hub.py tree`                          |
+|                                      | `cleanup`                    | Limpia archivos temporales.                        | `python 96_Tool_Hub.py cleanup`                       |
+| **100_General_Hub**                  | `notify`                     | Sistema de notificaciones.                         | `python 100_General_Hub.py notify`                    |
 
 ### 🧠 Hubs de IA y Análisis (AIPM)
 
-| Hub                           | Comando                   | Función Principal                           | Ejemplo de Uso                                  |
-|-------------------------------|---------------------------|---------------------------------------------|-------------------------------------------------|
-| **93_AIPM_Hub**               | `log`                     | Registra trazas de ejecución.               | `python 93_AIPM_Hub.py log`                     |
-|                               | `eval`                    | Evalúa calidad de salida IA.                | `python 93_AIPM_Hub.py eval`                    |
-|                               | `interview`               | Simula entrevistas.                         | `python 93_AIPM_Hub.py interview`               |
+| Hub                             | Comando                     | Función Principal                             | Ejemplo de Uso                                    |
+|---------------------------------|-----------------------------|-----------------------------------------------|---------------------------------------------------|
+| **93_AIPM_Hub**                 | `log`                       | Registra trazas de ejecución.                 | `python 93_AIPM_Hub.py log`                       |
+|                                 | `eval`                      | Evalúa calidad de salida IA.                  | `python 93_AIPM_Hub.py eval`                      |
+|                                 | `interview`                 | Simula entrevistas.                           | `python 93_AIPM_Hub.py interview`                 |
 
 ### ⏰ Hubs de Flujo de Trabajo
 
-| Hub                               | Comando                 | Función Principal                              | Ejemplo de Uso                                   |
-|-----------------------------------|-------------------------|------------------------------------------------|--------------------------------------------------|
-| **94_Ritual_Hub**                 | `morning`               | Standup matutino.                              | `python 94_Ritual_Hub.py morning`                |
-|                                   | `closing`               | Ritual de cierre diario.                       | `python 94_Ritual_Hub.py closing`                |
-|                                   | `weekly`                | Revisión semanal.                              | `python 94_Ritual_Hub.py weekly`                 |
-| **98_Workflow_Hub**               | `ship`                  | Valida si se puede hacer deploy.               | `python 98_Workflow_Hub.py ship`                 |
-|                                   | `review`                | Revisión de código profunda.                   | `python 98_Workflow_Hub.py review`               |
+| Hub                                 | Comando                   | Función Principal                                | Ejemplo de Uso                                     |
+|-------------------------------------|---------------------------|--------------------------------------------------|----------------------------------------------------|
+| **94_Ritual_Hub**                   | `morning`                 | Standup matutino.                                | `python 94_Ritual_Hub.py morning`                  |
+|                                     | `closing`                 | Ritual de cierre diario.                         | `python 94_Ritual_Hub.py closing`                  |
+|                                     | `weekly`                  | Revisión semanal.                                | `python 94_Ritual_Hub.py weekly`                   |
+| **98_Workflow_Hub**                 | `ship`                    | Valida si se puede hacer deploy.                 | `python 98_Workflow_Hub.py ship`                   |
+|                                     | `review`                  | Revisión de código profunda.                     | `python 98_Workflow_Hub.py review`                 |
 
 ### 📊 Hubs de Integración y Datos
 
-| Hub                                  | Comando                  | Función Principal                           | Ejemplo de Uso                                        |
-|--------------------------------------|--------------------------|---------------------------------------------|-------------------------------------------------------|
-| **97_Integration_Hub**               | `obsidian`               | Exporta a Obsidian.                         | `python 97_Integration_Hub.py obsidian`               |
-|                                      | `qmd`                    | Sincroniza índice QMD.                      | `python 97_Integration_Hub.py qmd`                    |
-| **99_Data_Hub**                      | `parse`                  | Parseo masivo de datos.                     | `python 99_Data_Hub.py parse`                         |
-|                                      | `report`                 | Genera reportes consolidados.               | `python 99_Data_Hub.py report`                        |
+| Hub                                    | Comando                    | Función Principal                             | Ejemplo de Uso                                          |
+|----------------------------------------|----------------------------|-----------------------------------------------|---------------------------------------------------------|
+| **97_Integration_Hub**                 | `obsidian`                 | Exporta a Obsidian.                           | `python 97_Integration_Hub.py obsidian`                 |
+|                                        | `qmd`                      | Sincroniza índice QMD.                        | `python 97_Integration_Hub.py qmd`                      |
+| **99_Data_Hub**                        | `parse`                    | Parseo masivo de datos.                       | `python 99_Data_Hub.py parse`                           |
+|                                        | `report`                   | Genera reportes consolidados.                 | `python 99_Data_Hub.py report`                          |
 
 ---
 

@@ -12,16 +12,16 @@ https://docs.github.com/en/copilot/concepts/agents/coding-agent/mcp-and-coding-a
 
 ## Config locations
 
-| Scope                                      | Path                                                              |
-|--------------------------------------------|-------------------------------------------------------------------|
-| Project agents                             | `.github/agents/*.agent.md`                                       |
-| Project skills                             | `.github/skills/*/SKILL.md`                                       |
-| Project instructions                       | `.github/copilot-instructions.md`                                 |
-| Path-specific instructions                 | `.github/instructions/*.instructions.md`                          |
-| Project prompts                            | `.github/prompts/*.prompt.md`                                     |
-| Org/enterprise agents                      | `.github-private/agents/*.agent.md`                               |
-| Personal skills                            | `~/.copilot/skills/*/SKILL.md`                                    |
-| Directory instructions                     | `01_Personal_Os/11_AGENTS.md` (nearest ancestor wins)             |
+| Scope                                        | Path                                                                |
+|----------------------------------------------|---------------------------------------------------------------------|
+| Project agents                               | `.github/agents/*.agent.md`                                         |
+| Project skills                               | `.github/skills/*/SKILL.md`                                         |
+| Project instructions                         | `.github/copilot-instructions.md`                                   |
+| Path-specific instructions                   | `.github/instructions/*.instructions.md`                            |
+| Project prompts                              | `.github/prompts/*.prompt.md`                                       |
+| Org/enterprise agents                        | `.github-private/agents/*.agent.md`                                 |
+| Personal skills                              | `~/.copilot/skills/*/SKILL.md`                                      |
+| Directory instructions                       | `01_Personal_Os/11_AGENTS.md` (nearest ancestor wins)               |
 
 ## Agents (.agent.md files)
 
@@ -31,16 +31,16 @@ https://docs.github.com/en/copilot/concepts/agents/coding-agent/mcp-and-coding-a
 
 ### Frontmatter fields
 
-| Field                         | Required                   | Default                               | Description                                                           |
-|-------------------------------|----------------------------|---------------------------------------|-----------------------------------------------------------------------|
-| `name`                        | No                         | Derived from filename                 | Display name                                                          |
-| `description`                 | **Yes**                    | —                                     | What the agent does                                                   |
-| `tools`                       | No                         | `["*"]`                               | Tool access list. `[]` disables all tools.                            |
-| `target`                      | No                         | both                                  | `vscode`, `github-copilot`, or omit for both                          |
-| `infer`                       | No                         | `true`                                | Auto-select based on task context                                     |
-| `model`                       | No                         | Platform default                      | AI model (works in IDE, may be ignored on github.com)                 |
-| `mcp-servers`                 | No                         | —                                     | MCP config (org/enterprise agents only)                               |
-| `metadata`                    | No                         | —                                     | Arbitrary key-value annotations                                       |
+| Field                           | Required                     | Default                                 | Description                                                             |
+|---------------------------------|------------------------------|-----------------------------------------|-------------------------------------------------------------------------|
+| `name`                          | No                           | Derived from filename                   | Display name                                                            |
+| `description`                   | **Yes**                      | —                                       | What the agent does                                                     |
+| `tools`                         | No                           | `["*"]`                                 | Tool access list. `[]` disables all tools.                              |
+| `target`                        | No                           | both                                    | `vscode`, `github-copilot`, or omit for both                            |
+| `infer`                         | No                           | `true`                                  | Auto-select based on task context                                       |
+| `model`                         | No                           | Platform default                        | AI model (works in IDE, may be ignored on github.com)                   |
+| `mcp-servers`                   | No                           | —                                       | MCP config (org/enterprise agents only)                                 |
+| `metadata`                      | No                           | —                                       | Arbitrary key-value annotations                                         |
 
 ### Character limit
 
@@ -48,14 +48,14 @@ Agent body content is limited to **30,000 characters**.
 
 ### Tool names
 
-| Name                      | Aliases                                 | Purpose                             |
-|---------------------------|-----------------------------------------|-------------------------------------|
-| `execute`                 | `shell`, `Bash`                         | Run shell commands                  |
-| `read`                    | `Read`                                  | Read files                          |
-| `edit`                    | `Edit`, `Write`                         | Modify files                        |
-| `search`                  | `Grep`, `Glob`                          | Search files                        |
-| `agent`                   | `Task`                                  | Invoke other agents                 |
-| `web`                     | `WebSearch`, `WebFetch`                 | Web access                          |
+| Name                        | Aliases                                   | Purpose                               |
+|-----------------------------|-------------------------------------------|---------------------------------------|
+| `execute`                   | `shell`, `Bash`                           | Run shell commands                    |
+| `read`                      | `Read`                                    | Read files                            |
+| `edit`                      | `Edit`, `Write`                           | Modify files                          |
+| `search`                    | `Grep`, `Glob`                            | Search files                          |
+| `agent`                     | `Task`                                    | Invoke other agents                   |
+| `web`                       | `WebSearch`, `WebFetch`                   | Web access                            |
 
 ## Skills (SKILL.md)
 
@@ -66,12 +66,12 @@ Agent body content is limited to **30,000 characters**.
 
 ### Discovery locations
 
-| Scope                                       | Path                                           |
-|---------------------------------------------|------------------------------------------------|
-| Project                                     | `.github/skills/*/SKILL.md`                    |
-| Project (Claude-compatible)                 | `01_Personal_Os/01_Core/02_Tools/02_Skills/*/SKILL.md`                 |
-| Project (auto-discovery)                    | `.agents/skills/*/SKILL.md`                    |
-| Personal                                    | `~/.copilot/skills/*/SKILL.md`                 |
+| Scope                                         | Path                                                   |
+|-----------------------------------------------|--------------------------------------------------------|
+| Project                                       | `.github/skills/*/SKILL.md`                            |
+| Project (Claude-compatible)                   | `01_Personal_Os/01_Core/02_Tools/02_Skills/*/SKILL.md` |
+| Project (auto-discovery)                      | `.agents/skills/*/SKILL.md`                            |
+| Personal                                      | `~/.copilot/skills/*/SKILL.md`                         |
 
 ## MCP (Model Context Protocol)
 
@@ -101,10 +101,10 @@ Agent body content is limited to **30,000 characters**.
 
 ### Server types
 
-| Type                        | Fields                                                             |
-|-----------------------------|--------------------------------------------------------------------|
-| Local/stdio                 | `type: "local"`, `command`, `args`, `tools`, `env`                 |
-| Remote/SSE                  | `type: "sse"`, `url`, `tools`, `headers`                           |
+| Type                          | Fields                                                               |
+|-------------------------------|----------------------------------------------------------------------|
+| Local/stdio                   | `type: "local"`, `command`, `args`, `tools`, `env`                   |
+| Remote/SSE                    | `type: "sse"`, `url`, `tools`, `headers`                             |
 
 ## Prompts (.prompt.md)
 

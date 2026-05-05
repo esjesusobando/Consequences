@@ -39,17 +39,17 @@ VISUAL_DENSITY    [====------]  4/10   (1=galería de arte, 10=panel de avión)
 - **Iconos:** Phosphor (thin) — NUNCA Lucide/Heroicons por defecto
 
 ### Prohibiciones absolutas
-| Categoría            | PROHIBIDO                                       | Alternativa SOTA                                          |
-|----------------------|-------------------------------------------------|-----------------------------------------------------------|
-| Tipografía           | `Inter`, `Roboto`, `Open Sans`                  | `Geist`, `Outfit`, `Cabinet Grotesk`, `Satoshi`           |
-| Color                | Lila/violeta/neón, degradados marca             | Neutros Zinc/Slate + 1 acento funcional                   |
-| Sombras              | `shadow-md`, `shadow-lg`, `shadow-xl`           | `border-t` sutil o espaciado puro                         |
-| Cards                | Cards genéricas flotantes                       | Separación por `border-t` o grid sin bordes               |
-| Layout               | Centrado simétrico                              | Split asimétrico 7/5 o 8/4                                |
-| Mobile               | `h-screen` (parpadeos)                          | `min-h-[100dvh]`                                          |
-| Contenido            | Emojis, "John Doe", "Acme Corp"                 | Nombres reales, números concretos                         |
-| Copy                 | "Eleva", "Impulsa", "Game-changer"              | Verbos concretos, datos reales                            |
-| Texto                | `#000000` puro                                  | `#111111` (negro apagado)                                 |
+| Categoría              | PROHIBIDO                                         | Alternativa SOTA                                            |
+|------------------------|---------------------------------------------------|-------------------------------------------------------------|
+| Tipografía             | `Inter`, `Roboto`, `Open Sans`                    | `Geist`, `Outfit`, `Cabinet Grotesk`, `Satoshi`             |
+| Color                  | Lila/violeta/neón, degradados marca               | Neutros Zinc/Slate + 1 acento funcional                     |
+| Sombras                | `shadow-md`, `shadow-lg`, `shadow-xl`             | `border-t` sutil o espaciado puro                           |
+| Cards                  | Cards genéricas flotantes                         | Separación por `border-t` o grid sin bordes                 |
+| Layout                 | Centrado simétrico                                | Split asimétrico 7/5 o 8/4                                  |
+| Mobile                 | `h-screen` (parpadeos)                            | `min-h-[100dvh]`                                            |
+| Contenido              | Emojis, "John Doe", "Acme Corp"                   | Nombres reales, números concretos                           |
+| Copy                   | "Eleva", "Impulsa", "Game-changer"                | Verbos concretos, datos reales                              |
+| Texto                  | `#000000` puro                                    | `#111111` (negro apagado)                                   |
 
 ---
 
@@ -301,13 +301,13 @@ useEffect(() => {
 
 ## 8. COPY EDITORIAL (Reglas)
 
-| ❌ Cliche                                  | ✅ Concreto                                              |
-|-------------------------------------------|---------------------------------------------------------|
-| "Eleva tu negocio"                        | "Clasifica 840k docs en 11 min"                         |
-| "Next-gen AI revolution"                  | "Redujo revisión de 14 días a 1 tarde"                  |
-| "Get Started Today"                       | "Ver caso completo" / "Probar 50 docs gratis"           |
-| "AI-Powered. Enterprise-Ready."           | "Registro 024 — Indexación semántica"                   |
-| John Doe, Acme Corp                       | Olivia Sterling, Nexus Logistics                        |
+| ❌ Cliche                                    | ✅ Concreto                                                |
+|---------------------------------------------|-----------------------------------------------------------|
+| "Eleva tu negocio"                          | "Clasifica 840k docs en 11 min"                           |
+| "Next-gen AI revolution"                    | "Redujo revisión de 14 días a 1 tarde"                    |
+| "Get Started Today"                         | "Ver caso completo" / "Probar 50 docs gratis"             |
+| "AI-Powered. Enterprise-Ready."             | "Registro 024 — Indexación semántica"                     |
+| John Doe, Acme Corp                         | Olivia Sterling, Nexus Logistics                          |
 
 **4 reglas de copy:**
 1. Un número concreto en el headline

@@ -31,18 +31,18 @@ Initial implementation: CLI-based with modular functions for easy integration in
 
 ## Affected Areas
 
-| Area                              | Impact                 | Description                                         |
-|-----------------------------------|------------------------|-----------------------------------------------------|
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/`               | New                    | Create `Video_Intel/` skill directory               |
-| `skills/`                         | New                    | Core analysis scripts                               |
+| Area                                         | Impact                   | Description                                           |
+|----------------------------------------------|--------------------------|-------------------------------------------------------|
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/` | New                      | Create `Video_Intel/` skill directory                 |
+| `skills/`                                    | New                      | Core analysis scripts                                 |
 
 ## Risks
 
-| Risk                                   | Likelihood                 | Mitigation                                              |
-|----------------------------------------|----------------------------|---------------------------------------------------------|
-| Video API rate limits                  | Medium                     | Cache transcriptions, use existing yt-dlp               |
-| Whisper accuracy                       | Medium                     | Validate with manual spot-check                         |
-| OS verification failures               | Low                        | Graceful degradation, user override                     |
+| Risk                                     | Likelihood                   | Mitigation                                                |
+|------------------------------------------|------------------------------|-----------------------------------------------------------|
+| Video API rate limits                    | Medium                       | Cache transcriptions, use existing yt-dlp                 |
+| Whisper accuracy                         | Medium                       | Validate with manual spot-check                           |
+| OS verification failures                 | Low                          | Graceful degradation, user override                       |
 
 ## Rollback Plan
 

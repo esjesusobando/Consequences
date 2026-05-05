@@ -76,10 +76,10 @@ When designing orchestrator skills that invoke sub-agents needing repo reference
 
 Empirical testing showed that how the skill phrases a search instruction has a dramatic effect on tool call count. For the same task (find ancestor CLAUDE.md/01_Personal_Os/11_AGENTS.md files for changed paths):
 
-| Instruction phrasing                                                                                 | Claude Code tool calls                 | Codex shell commands                 |
-|------------------------------------------------------------------------------------------------------|----------------------------------------|--------------------------------------|
-| "for each changed file, walk its ancestor directories and check for X at each level"                 | 14                                     | 2                                    |
-| "find all X in the repo, then filter to ancestors of changed files"                                  | 2                                      | 2                                    |
+| Instruction phrasing                                                                                   | Claude Code tool calls                   | Codex shell commands                   |
+|--------------------------------------------------------------------------------------------------------|------------------------------------------|----------------------------------------|
+| "for each changed file, walk its ancestor directories and check for X at each level"                   | 14                                       | 2                                      |
+| "find all X in the repo, then filter to ancestors of changed files"                                    | 2                                        | 2                                      |
 
 The "per-item walk" phrasing caused Claude Code to glob each directory level individually. The "bulk find, then filter" phrasing produced two globs total. Codex was resilient to both phrasings (it wrote a Python script to batch the work either way).
 

@@ -61,21 +61,21 @@ Framework operativo personal que integra agents, skills, workflows, y automatiza
 ```
 
 ### Skills Propias
-| Skill                   | Path                                            | Propósito            |
-|-------------------------|-------------------------------------------------|----------------------|
-| Agent Teams Lite        | `02_Skills/05_Workflows/01_Agent_Teams_Lite/`   | SDD orchestration    |
-| PM Agent Orchestrator   | `02_Skills/05_Workflows/04_PM_Orchestrator/`    | Project management   |
-| Personal Life OS        | `02_Skills/07_Personal_Os/01_Life_OS/`          | Life optimization    |
-| Hillary Integration     | `03_Task/02_Hillary_Inbox/`                     | Task capture         |
+| Skill                     | Path                                              | Propósito              |
+|---------------------------|---------------------------------------------------|------------------------|
+| Agent Teams Lite          | `02_Skills/05_Workflows/01_Agent_Teams_Lite/`     | SDD orchestration      |
+| PM Agent Orchestrator     | `02_Skills/05_Workflows/04_PM_Orchestrator/`      | Project management     |
+| Personal Life OS          | `02_Skills/07_Personal_Os/01_Life_OS/`            | Life optimization      |
+| Hillary Integration       | `03_Task/02_Hillary_Inbox/`                       | Task capture           |
 
 ### Workflows
-| Workflow              | File                                     | Invoca                  |
-|-----------------------|------------------------------------------|-------------------------|
-| Morning Standup       | `01_Personal_Os/01_Morning_Standup.md`   | Hillary, Auto-Improve   |
-| Backlog Processing    | `02_Backlog_Processing.md`               | Hillary, Classify       |
-| Content Generation    | `03_Content_Generation.md`               | Compound, Marketing     |
-| Weekly Review         | `04_Weekly_Review.md`                    | Learning, Compound      |
-| System Health Audit   | `07_System_Health_Audit.md`              | Auto-Improve, All       |
+| Workflow                | File                                       | Invoca                    |
+|-------------------------|--------------------------------------------|---------------------------|
+| Morning Standup         | `01_Personal_Os/01_Morning_Standup.md`     | Hillary, Auto-Improve     |
+| Backlog Processing      | `02_Backlog_Processing.md`                 | Hillary, Classify         |
+| Content Generation      | `03_Content_Generation.md`                 | Compound, Marketing       |
+| Weekly Review           | `04_Weekly_Review.md`                      | Learning, Compound        |
+| System Health Audit     | `07_System_Health_Audit.md`                | Auto-Improve, All         |
 
 ### Conexiones
 - **Usa** → Compound Engineering para reviews
@@ -100,14 +100,14 @@ Sistema de instalación y configuración automatizada con TUI interactiva (Bubbl
 ```
 
 ### Skills Integradas en PersonalOS
-| Skill                   | Status        | Propósito             |
-|-------------------------|---------------|-----------------------|
-| `gentleman-bubbletea`   | ✅ Integrada   | TUI patterns          |
-| `gentleman-e2e`         | ✅ Integrada   | Docker E2E            |
-| `gentleman-installer`   | ✅ Integrada   | Install flow          |
-| `gentleman-system`      | ✅ Integrada   | System detection      |
-| `gentleman-trainer`     | ✅ Integrada   | Vim training RPG      |
-| `go-testing`            | ✅ Integrada   | Go testing patterns   |
+| Skill                     | Status          | Propósito               |
+|---------------------------|-----------------|-------------------------|
+| `gentleman-bubbletea`     | ✅ Integrada     | TUI patterns            |
+| `gentleman-e2e`           | ✅ Integrada     | Docker E2E              |
+| `gentleman-installer`     | ✅ Integrada     | Install flow            |
+| `gentleman-system`        | ✅ Integrada     | System detection        |
+| `gentleman-trainer`       | ✅ Integrada     | Vim training RPG        |
+| `go-testing`              | ✅ Integrada     | Go testing patterns     |
 
 ### Skills Base (Gentleman.Skills repo)
 ```
@@ -131,20 +131,20 @@ Sistema de instalación y configuración automatizada con TUI interactiva (Bubbl
 ```
 
 ### Componentes Go (Installer)
-| Componente     | Path                                 | Propósito      |
-|----------------|--------------------------------------|----------------|
-| Model          | `installer/internal/tui/model.go`    | TUI state      |
-| View           | `installer/internal/tui/view.go`     | Render         |
-| Update         | `installer/internal/tui/update.go`   | Events         |
-| Trainer        | `installer/internal/tui/trainer/`    | Vim RPG        |
-| System         | `installer/internal/system/`         | OS detection   |
+| Componente       | Path                                   | Propósito        |
+|------------------|----------------------------------------|------------------|
+| Model            | `installer/internal/tui/model.go`      | TUI state        |
+| View             | `installer/internal/tui/view.go`       | Render           |
+| Update           | `installer/internal/tui/update.go`     | Events           |
+| Trainer          | `installer/internal/tui/trainer/`      | Vim RPG          |
+| System           | `installer/internal/system/`           | OS detection     |
 
 ### Workflows que lo usan
-| Workflow                 | Invoca                |
-|--------------------------|-----------------------|
-| 10_Frontend_Premium.md   | Gentleman-bubbletea   |
-| System Health Audit      | gentleman-e2e         |
-| Installer validation     | gentleman-installer   |
+| Workflow                   | Invoca                  |
+|----------------------------|-------------------------|
+| 10_Frontend_Premium.md     | Gentleman-bubbletea     |
+| System Health Audit        | gentleman-e2e           |
+| Installer validation       | gentleman-installer     |
 
 ### Conexiones
 - **Usa** → Personal OS Rules para calidad
@@ -182,85 +182,85 @@ Sistema de ingeniería compuesta con agents especializados para reviews, archite
 ### Agents (35+ total)
 
 #### Code Review Agents (23)
-| Agent                            | Specialty                  |
-|----------------------------------|----------------------------|
-| correctness-reviewer             | Logic errors, edge cases   |
-| security-reviewer                | Vulnerabilities, auth      |
-| performance-reviewer             | Bottlenecks, scaling       |
-| code-simplicity-reviewer         | YAGNI, cleverness          |
-| maintainability-reviewer         | Coupling, dead code        |
-| pattern-recognition-specialist   | Design patterns            |
-| architecture-strategist          | System design              |
-| kieran-typescript-reviewer       | TypeScript strict          |
-| kieran-python-reviewer           | Pythonic clarity           |
-| kieran-rails-reviewer            | Rails conventions          |
-| dhh-rails-reviewer               | 37signals style            |
-| julik-frontend-races-reviewer    | Async races                |
-| security-sentinel                | OWASP compliance           |
-| data-integrity-guardian          | DB safety                  |
-| data-migrations-reviewer         | Migration safety           |
-| deployment-verification-agent    | Deploy checklists          |
-| reliability-reviewer             | Error handling             |
-| testing-reviewer                 | Test coverage              |
-| api-contract-reviewer            | API breaking changes       |
-| performance-oracle               | Performance metrics        |
-| schema-drift-detector            | Schema changes             |
-| agent-native-reviewer            | AI parity                  |
-| best-practices-researcher        | Industry standards         |
+| Agent                              | Specialty                    |
+|------------------------------------|------------------------------|
+| correctness-reviewer               | Logic errors, edge cases     |
+| security-reviewer                  | Vulnerabilities, auth        |
+| performance-reviewer               | Bottlenecks, scaling         |
+| code-simplicity-reviewer           | YAGNI, cleverness            |
+| maintainability-reviewer           | Coupling, dead code          |
+| pattern-recognition-specialist     | Design patterns              |
+| architecture-strategist            | System design                |
+| kieran-typescript-reviewer         | TypeScript strict            |
+| kieran-python-reviewer             | Pythonic clarity             |
+| kieran-rails-reviewer              | Rails conventions            |
+| dhh-rails-reviewer                 | 37signals style              |
+| julik-frontend-races-reviewer      | Async races                  |
+| security-sentinel                  | OWASP compliance             |
+| data-integrity-guardian            | DB safety                    |
+| data-migrations-reviewer           | Migration safety             |
+| deployment-verification-agent      | Deploy checklists            |
+| reliability-reviewer               | Error handling               |
+| testing-reviewer                   | Test coverage                |
+| api-contract-reviewer              | API breaking changes         |
+| performance-oracle                 | Performance metrics          |
+| schema-drift-detector              | Schema changes               |
+| agent-native-reviewer              | AI parity                    |
+| best-practices-researcher          | Industry standards           |
 
 #### Doc Review Agents (6)
-| Agent                     | Specialty              |
-|---------------------------|------------------------|
-| coherence-reviewer        | Internal consistency   |
-| design-lens-reviewer      | Missing decisions      |
-| feasibility-reviewer      | Real-world viability   |
-| product-lens-reviewer     | Strategic alignment    |
-| scope-guardian-reviewer   | Scope creep            |
-| security-lens-reviewer    | Security gaps          |
+| Agent                       | Specialty                |
+|-----------------------------|--------------------------|
+| coherence-reviewer          | Internal consistency     |
+| design-lens-reviewer        | Missing decisions        |
+| feasibility-reviewer        | Real-world viability     |
+| product-lens-reviewer       | Strategic alignment      |
+| scope-guardian-reviewer     | Scope creep              |
+| security-lens-reviewer      | Security gaps            |
 
 #### Design Agents (3)
-| Agent                            | Specialty              |
-|----------------------------------|------------------------|
-| design-implementation-reviewer   | Figma parity           |
-| design-iterator                  | Iterative refinement   |
-| figma-design-sync                | Figma sync             |
+| Agent                              | Specialty                |
+|------------------------------------|--------------------------|
+| design-implementation-reviewer     | Figma parity             |
+| design-iterator                    | Iterative refinement     |
+| figma-design-sync                  | Figma sync               |
 
 #### Research Agents (5)
-| Agent                        | Specialty            |
-|------------------------------|----------------------|
-| best-practices-researcher    | External standards   |
-| framework-docs-researcher    | Official docs        |
-| git-history-analyzer         | Code archaeology     |
-| issue-intelligence-analyst   | Issue patterns       |
-| learnings-researcher         | Past solutions       |
+| Agent                          | Specialty              |
+|--------------------------------|------------------------|
+| best-practices-researcher      | External standards     |
+| framework-docs-researcher      | Official docs          |
+| git-history-analyzer           | Code archaeology       |
+| issue-intelligence-analyst     | Issue patterns         |
+| learnings-researcher           | Past solutions         |
 
 ### Skills SDD (Spec-Driven Development)
-| Skill         | Path                                    | Ciclo       |
-|---------------|-----------------------------------------|-------------|
-| sdd-explore   | `01_Agent_Teams_Lite/03_Sdd_Explore/`   | Explore     |
-| sdd-propose   | `04_Sdd_Propose/`                       | Propose     |
-| sdd-spec      | `05_Sdd_Spec/`                          | Spec        |
-| sdd-design    | `06_Sdd_Design/`                        | Design      |
-| sdd-tasks     | `07_Sdd_Tasks/`                         | Tasks       |
-| sdd-apply     | `08_Sdd_Apply/`                         | Implement   |
-| sdd-verify    | `09_Sdd_Verify/`                        | Verify      |
-| sdd-archive   | `10_Sdd_Archive/`                       | Archive     |
+| Skill           | Path                                      | Ciclo         |
+|-----------------|-------------------------------------------|---------------|
+| sdd-explore     | `01_Agent_Teams_Lite/03_Sdd_Explore/`     | Explore       |
+| sdd-propose     | `04_Sdd_Propose/`                         | Propose       |
+| sdd-spec        | `05_Sdd_Spec/`                            | Spec          |
+| sdd-design      | `06_Sdd_Design/`                          | Design        |
+| sdd-tasks       | `07_Sdd_Tasks/`                           | Tasks         |
+| sdd-apply       | `08_Sdd_Apply/`                           | Implement     |
+| sdd-verify      | `09_Sdd_Verify/`                          | Verify        |
+| sdd-archive     | `10_Sdd_Archive/`                         | Archive       |
 
 ### Workflows Compound
-| Workflow            | File                           | Función              |
-|---------------------|--------------------------------|----------------------|
-| Iron Man Gen        | `01_Iron_Man_Gen.md`           | Project bootstrap    |
-| Spider Brainstorm   | `02_Spider_Brainstorm.md`      | Ideation             |
-| Professor X Plan    | `03_Professor_X_Plan.md`       | Planning             |
-| Vision Review       | `04_Vision_Review.md`          | Strategy review      |
-| Thor Work           | `05_Thor_Work.md`              | Implementation       |
-| Hulk Compound       | `06_Hulk_Compound.md`          | Compounding          |
-| Doc Strange LFG     | `08_Doc_Strange_Lfg.md`        | Autonomous           |
-| AntMan LFG Lite     | `07_AntMan_Lfg_Lite.md`        | Lite autonomous      |
-| Avengers Workflow   | `73_Avengers_Workflow_v3.py`   | Full orchestration   |
-| Ship It             | `17_Ship_It.md`                | Shipping             |
-| Deep Work Session   | `16_Deep_Work_Session.md`      | Focus                |
-| Anthropic Harness   | `18_Anthropic_Harness.md`      | Eval harness         |
+| Workflow              | File                             | Función                |
+|-----------------------|----------------------------------|------------------------|
+| Iron Man Gen          | `01_Iron_Man_Gen.md`             | Project bootstrap      |
+| Spider Brainstorm     | `02_Spider_Brainstorm.md`        | Ideation               |
+| Professor X Plan      | `03_Professor_X_Plan.md`         | Planning               |
+| Vision Review         | `04_Vision_Review.md`            | Strategy review        |
+| Thor Work             | `05_Thor_Work.md`                | Implementation         |
+| Hulk Compound         | `06_Hulk_Compound.md`            | Compounding            |
+| Doc Strange LFG       | `08_Doc_Strange_Lfg.md`          | Autonomous             |
+| AntMan LFG Lite       | `07_AntMan_Lfg_Lite.md`          | Lite autonomous        |
+| Avengers Workflow     | `73_Avengers_Workflow_v3.py`     | Full orchestration     |
+| Ship It               | `17_Ship_It.md`                  | Shipping               |
+| Deep Work Session     | `16_Deep_Work_Session.md`        | Focus                  |
+| Anthropic Harness     | `18_Anthropic_Harness.md`        | Eval harness           |
 
 ### Conexiones
 - **Usa** → Personal OS Rules para estándares
@@ -301,28 +301,28 @@ Sistema de captura, clasificación y procesamiento de tareas con inbox y templat
 ```
 
 ### Templates Disponibles
-| Template     | Uso                  | Cuándo                        |
-|--------------|----------------------|-------------------------------|
-| SOTA         | Problema complejo    | +3 días, múltiples técnicas   |
-| Medio        | Feature normal       | 1-3 días                      |
-| Corto        | Quick fix            | <1 día                        |
-| Routine      | Proceso repetitivo   | Daily/weekly                  |
-| Skeleton     | Blank start          | Cualquiera                    |
+| Template       | Uso                    | Cuándo                          |
+|----------------|------------------------|---------------------------------|
+| SOTA           | Problema complejo      | +3 días, múltiples técnicas     |
+| Medio          | Feature normal         | 1-3 días                        |
+| Corto          | Quick fix              | <1 día                          |
+| Routine        | Proceso repetitivo     | Daily/weekly                    |
+| Skeleton       | Blank start            | Cualquiera                      |
 
 ### Skills Hillary
-| Skill                | Path                                                                                                                 | Función              |
-|----------------------|----------------------------------------------------------------------------------------------------------------------|----------------------|
-| Task Classifier      | `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/10_Classify_Task/`   | Clasifica incoming   |
-| Backlog Processing   | `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/02_Backlog_Processing.md`                                     | Process inbox        |
+| Skill                  | Path                                                                                                                   | Función                |
+|------------------------|------------------------------------------------------------------------------------------------------------------------|------------------------|
+| Task Classifier        | `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/10_Classify_Task/`     | Clasifica incoming     |
+| Backlog Processing     | `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/02_Backlog_Processing.md`                                       | Process inbox          |
 
 ### Workflows Hillary
-| Workflow             | File                         | Función            |
-|----------------------|------------------------------|--------------------|
-| Morning Standup      | `01_Morning_Standup.md`      | Daily review       |
-| Backlog Processing   | `02_Backlog_Processing.md`   | Inbox → Done       |
-| Hillary Life OS      | `25_Hillary_Life_OS.md`      | Life integration   |
-| Captura Rapida       | `15_Captura_Rapida.md`       | Quick capture      |
-| Classify Task        | `10_Classify_Task.md`        | Auto-classify      |
+| Workflow               | File                           | Función              |
+|------------------------|--------------------------------|----------------------|
+| Morning Standup        | `01_Morning_Standup.md`        | Daily review         |
+| Backlog Processing     | `02_Backlog_Processing.md`     | Inbox → Done         |
+| Hillary Life OS        | `25_Hillary_Life_OS.md`        | Life integration     |
+| Captura Rapida         | `15_Captura_Rapida.md`         | Quick capture        |
+| Classify Task          | `10_Classify_Task.md`          | Auto-classify        |
 
 ### Conexiones
 - **Usa** → Personal OS Rules para context
@@ -406,11 +406,11 @@ Motor de mejora recursiva que ejecuta ciclos Detect → Analyze → Execute → 
 - Persiste learnings
 
 ### Workflows Auto-Improve
-| Workflow              | File                                         | Función      |
-|-----------------------|----------------------------------------------|--------------|
-| System Health Audit   | `01_Personal_Os/07_System_Health_Audit.md`   | Full audit   |
-| Manual Trigger        | `04_Triggers/manual_trigger.py`              | On-demand    |
-| Cron Trigger          | `04_Triggers/cron_trigger.py`                | Scheduled    |
+| Workflow                | File                                           | Función        |
+|-------------------------|------------------------------------------------|----------------|
+| System Health Audit     | `01_Personal_Os/07_System_Health_Audit.md`     | Full audit     |
+| Manual Trigger          | `04_Triggers/manual_trigger.py`                | On-demand      |
+| Cron Trigger            | `04_Triggers/cron_trigger.py`                  | Scheduled      |
 
 ### Conexiones
 - **Lee** → Todos los componentes del OS
@@ -433,11 +433,11 @@ Sistema de persistencia de aprendizajes y memoria que sobrevive entre sesiones.
 ```
 
 ### Skills Learning
-| Skill                    | Path                                                                             | Función                   |
-|--------------------------|----------------------------------------------------------------------------------|---------------------------|
-| learnings-researcher     | `00_Compound_Engineering/04_Agents_Research/`                                    | Busca en docs/solutions   |
-| engram-memory-protocol   | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/`   | Engram protocol           |
-| Auto-Learn Hub           | `03_Scripts_Os/11_Auto_Learn_Hub.py`                                             | Orchestrator              |
+| Skill                      | Path                                                                               | Función                     |
+|----------------------------|------------------------------------------------------------------------------------|-----------------------------|
+| learnings-researcher       | `00_Compound_Engineering/04_Agents_Research/`                                      | Busca en docs/solutions     |
+| engram-memory-protocol     | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/07_Skills/`     | Engram protocol             |
+| Auto-Learn Hub             | `03_Scripts_Os/11_Auto_Learn_Hub.py`                                               | Orchestrator                |
 
 ### Componentes Engram (Integrados)
 ```
@@ -460,11 +460,11 @@ Sistema de persistencia de aprendizajes y memoria que sobrevive entre sesiones.
 ```
 
 ### Workflows Learning
-| Workflow              | File                                   | Función           |
-|-----------------------|----------------------------------------|-------------------|
-| Weekly Review         | `01_Personal_Os/04_Weekly_Review.md`   | Learn from week   |
-| System Health Audit   | `07_System_Health_Audit.md`            | Full learning     |
-| Context Recovery      | `08_Context_Recovery.md`               | Recover context   |
+| Workflow                | File                                     | Función             |
+|-------------------------|------------------------------------------|---------------------|
+| Weekly Review           | `01_Personal_Os/04_Weekly_Review.md`     | Learn from week     |
+| System Health Audit     | `07_System_Health_Audit.md`              | Full learning       |
+| Context Recovery        | `08_Context_Recovery.md`                 | Recover context     |
 
 ### Protocolo Learning
 1. **Save** → Cada decisión/fix se guarda en memory
@@ -561,29 +561,29 @@ Sistema de persistencia de aprendizajes y memoria que sobrevive entre sesiones.
 
 ### Por Área (01_Personal_Os/01_Core/02_Tools/02_Skills/)
 
-| Área                      | Count     | Skills                         |
-|---------------------------|-----------|--------------------------------|
-| 00_Compound_Engineering   | 1         | Main skill                     |
-| 01_Creacion_Contenidos    | 7         | SEO, Marketing, Video, Image   |
-| 02_Diseno_Ui_Ux           | 3         | Taste, Design, Excalidraw      |
-| 03_Video_Media            | 1         | James Cameron                  |
-| 04_Automatizacion         | 4         | N8N, GWS                       |
-| 05_Workflows              | 2         | Agent Teams, PM, Product       |
-| 06_Tools                  | 1         | MCP Client                     |
-| 07_Personal_Os            | 1         | Life OS                        |
-| 08_Invictus_Web           | 1         | Superpowers                    |
-| 09_Legacy_Archive         | 0         |--------------------------------|
+| Área                        | Count       | Skills                           |
+|-----------------------------|-------------|----------------------------------|
+| 00_Compound_Engineering     | 1           | Main skill                       |
+| 01_Creacion_Contenidos      | 7           | SEO, Marketing, Video, Image     |
+| 02_Diseno_Ui_Ux             | 3           | Taste, Design, Excalidraw        |
+| 03_Video_Media              | 1           | James Cameron                    |
+| 04_Automatizacion           | 4           | N8N, GWS                         |
+| 05_Workflows                | 2           | Agent Teams, PM, Product         |
+| 06_Tools                    | 1           | MCP Client                       |
+| 07_Personal_Os              | 1           | Life OS                          |
+| 08_Invictus_Web             | 1           | Superpowers                      |
+| 09_Legacy_Archive           | 0           |----------------------------------|
 
 ### Por Metodología
 
-| Metodología            | Skills     | Ubicación                                    |
-|------------------------|------------|----------------------------------------------|
-| Personal OS Core       | 6          | 01_Core/02_Tools/02_Skills/*                 |
-| Compound Engineering   | 35+        | 00_Compound_Engineering/*_Agents_*           |
-| SDD Workflow           | 14         | 05_Workflows/01_Agent_Teams_Lite/*           |
-| Hillary                | 2          | 05_Workflows, 03_Task                        |
-| Gentleman              | 6          | Archive + 02_Skills/*gentleman*              |
-| Learning               | 2          | 00_Compound_Engineering/04_Agents_Research   |
+| Metodología              | Skills       | Ubicación                                      |
+|--------------------------|--------------|------------------------------------------------|
+| Personal OS Core         | 6            | 01_Core/02_Tools/02_Skills/*                   |
+| Compound Engineering     | 35+          | 00_Compound_Engineering/*_Agents_*             |
+| SDD Workflow             | 14           | 05_Workflows/01_Agent_Teams_Lite/*             |
+| Hillary                  | 2            | 05_Workflows, 03_Task                          |
+| Gentleman                | 6            | Archive + 02_Skills/*gentleman*                |
+| Learning                 | 2            | 00_Compound_Engineering/04_Agents_Research     |
 
 ---
 
@@ -591,29 +591,29 @@ Sistema de persistencia de aprendizajes y memoria que sobrevive entre sesiones.
 
 ### ✅ OPERATIVO — 100%
 
-| Componente             | Status     | Verificación               |
-|------------------------|------------|----------------------------|
-| Skills (100+)          | ✅          | Todas con SKILL.md         |
-| Agents (35+)           | ✅          | Todos documentados         |
-| Workflows (20+)        | ✅          | Todos en 00_Workflows_Os   |
-| Compound Engineering   | ✅          | 6 sub-árboles activos      |
-| Gentleman              | ✅          | 6 skills integradas        |
-| Hillary                | ✅          | 6 templates + inbox        |
-| Sistema Recursivo      | ✅          | 4 engines + triggers       |
-| Learning Always        | ✅          | Engram + protocols         |
+| Componente               | Status       | Verificación                 |
+|--------------------------|--------------|------------------------------|
+| Skills (100+)            | ✅            | Todas con SKILL.md           |
+| Agents (35+)             | ✅            | Todos documentados           |
+| Workflows (20+)          | ✅            | Todos en 00_Workflows_Os     |
+| Compound Engineering     | ✅            | 6 sub-árboles activos        |
+| Gentleman                | ✅            | 6 skills integradas          |
+| Hillary                  | ✅            | 6 templates + inbox          |
+| Sistema Recursivo        | ✅            | 4 engines + triggers         |
+| Learning Always          | ✅            | Engram + protocols           |
 
 ---
 
 ## ARCHIVOS CLAVE DE REFERENCIA
 
-| Archivo                                                                              | Contenido                     |
-|--------------------------------------------------------------------------------------|-------------------------------|
-| `00_Winter_is_Coming/AGENTS.md`                                                      | Sistema operativo principal   |
-| `01_Personal_Os/01_Core/01_Rules/*.mdc`                                              | 10 rules de calidad           |
-| `01_Personal_Os/04_Operations/01_Auto_Improvement/recursive_improvement_engine.py`   | Motor recursivo               |
-| `01_Personal_Os/03_Task/README.md`                                                   | Sistema Hillary               |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/SKILL.md`         | Compound main                 |
-| `01_Personal_Os/05_Archive/07_Repos_Gentleman/`                                      | Bases originales              |
+| Archivo                                                                                | Contenido                       |
+|----------------------------------------------------------------------------------------|---------------------------------|
+| `00_Winter_is_Coming/AGENTS.md`                                                        | Sistema operativo principal     |
+| `01_Personal_Os/01_Core/01_Rules/*.mdc`                                                | 10 rules de calidad             |
+| `01_Personal_Os/04_Operations/01_Auto_Improvement/recursive_improvement_engine.py`     | Motor recursivo                 |
+| `01_Personal_Os/03_Task/README.md`                                                     | Sistema Hillary                 |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/SKILL.md`           | Compound main                   |
+| `01_Personal_Os/05_Archive/07_Repos_Gentleman/`                                        | Bases originales                |
 
 ---
 

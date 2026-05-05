@@ -25,25 +25,25 @@ The repository already has a robust multi-target converter infrastructure with a
 
 ### Component Mapping
 
-| Claude Code Component                   | Copilot Equivalent                              | Notes                                                                                                                    |
-|-----------------------------------------|-------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| **Agents** (`.md`)                      | **Custom Agents** (`.agent.md`)                 | Full frontmatter mapping: description, tools, target, infer                                                              |
-| **Commands** (`.md`)                    | **Agent Skills** (`SKILL.md`)                   | Commands become skills since Copilot has no direct command equivalent. `allowed-tools` dropped silently.                 |
-| **Skills** (`SKILL.md`)                 | **Agent Skills** (`SKILL.md`)                   | Copy as-is — format is already cross-compatible                                                                          |
-| **MCP Servers**                         | **Repo settings JSON**                          | Generate a `copilot-mcp-config.json` users paste into GitHub repo settings                                               |
-| **Hooks**                               | **Skipped with warning**                        | Copilot doesn't have a hooks equivalent                                                                                  |
+| Claude Code Component                     | Copilot Equivalent                                | Notes                                                                                                                      |
+|-------------------------------------------|---------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| **Agents** (`.md`)                        | **Custom Agents** (`.agent.md`)                   | Full frontmatter mapping: description, tools, target, infer                                                                |
+| **Commands** (`.md`)                      | **Agent Skills** (`SKILL.md`)                     | Commands become skills since Copilot has no direct command equivalent. `allowed-tools` dropped silently.                   |
+| **Skills** (`SKILL.md`)                   | **Agent Skills** (`SKILL.md`)                     | Copy as-is — format is already cross-compatible                                                                            |
+| **MCP Servers**                           | **Repo settings JSON**                            | Generate a `copilot-mcp-config.json` users paste into GitHub repo settings                                                 |
+| **Hooks**                                 | **Skipped with warning**                          | Copilot doesn't have a hooks equivalent                                                                                    |
 
 ### Agent Frontmatter Mapping
 
-| Claude Field                   | Copilot Field                            | Mapping                                                                                                                    |
-|--------------------------------|------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| `name`                         | `name`                                   | Direct pass-through                                                                                                        |
-| `description`                  | `description` (required)                 | Direct pass-through, generate fallback if missing                                                                          |
-| `capabilities`                 | Body text                                | Fold into body as "## Capabilities" section (like Cursor)                                                                  |
-| `model`                        | `model`                                  | Pass through (works in IDE, may be ignored on github.com)                                                                  |
-| —                              | `tools`                                  | Default to `["*"]` (all tools). Claude agents have unrestricted tool access, so Copilot agents should too.                 |
-| —                              | `target`                                 | Omit (defaults to `both` — IDE + github.com)                                                                               |
-| —                              | `infer`                                  | Set to `true` (auto-selection enabled)                                                                                     |
+| Claude Field                     | Copilot Field                              | Mapping                                                                                                                      |
+|----------------------------------|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| `name`                           | `name`                                     | Direct pass-through                                                                                                          |
+| `description`                    | `description` (required)                   | Direct pass-through, generate fallback if missing                                                                            |
+| `capabilities`                   | Body text                                  | Fold into body as "## Capabilities" section (like Cursor)                                                                    |
+| `model`                          | `model`                                    | Pass through (works in IDE, may be ignored on github.com)                                                                    |
+| —                                | `tools`                                    | Default to `["*"]` (all tools). Claude agents have unrestricted tool access, so Copilot agents should too.                   |
+| —                                | `target`                                   | Omit (defaults to `both` — IDE + github.com)                                                                                 |
+| —                                | `infer`                                    | Set to `true` (auto-selection enabled)                                                                                       |
 
 ### Output Directories
 

@@ -9,14 +9,14 @@
 
 ## 📊 Resumen Ejecutivo
 
-| Métrica                               | Valor                                       |
-|---------------------------------------|---------------------------------------------|
-| **Overall Health**                    | 100% ✅                                      |
-| **Commits**                           | 4 (Desde el inicio del feature)             |
-| **Componentes modificados**           | 2 (page.tsx, ServicesSection.tsx)           |
-| **Nuevos archivos**                   | 9 (imágenes + docs)                         |
-| **Skills Applied**                    | 4 (Motion, Lucide, Grid, Images)            |
-| **SEO Status**                        | 100% (ya estaba implementado)               |
+| Métrica                                 | Valor                                         |
+|-----------------------------------------|-----------------------------------------------|
+| **Overall Health**                      | 100% ✅                                        |
+| **Commits**                             | 4 (Desde el inicio del feature)               |
+| **Componentes modificados**             | 2 (page.tsx, ServicesSection.tsx)             |
+| **Nuevos archivos**                     | 9 (imágenes + docs)                           |
+| **Skills Applied**                      | 4 (Motion, Lucide, Grid, Images)              |
+| **SEO Status**                          | 100% (ya estaba implementado)                 |
 
 ---
 
@@ -24,12 +24,12 @@
 
 ### 1. Taste Skills Aplicados
 
-| Skill                         | Descripción                                               | Archivo                         |
-|-------------------------------|-----------------------------------------------------------|---------------------------------|
-| **Framer Motion**             | Spring animations (stiffness: 100, damping: 20)           | `page.tsx`                      |
-| **Lucide Icons**              | Reemplazó SVGs inline                                     | `page.tsx`                      |
-| **Grid Asimétrico**           | 7/5 split en stats (antes 4-col symmetric)                | `page.tsx`                      |
-| **Service Images**            | 4 imágenes con fallback a gradiente                       | `ServicesSection.tsx`           |
+| Skill                           | Descripción                                                 | Archivo                           |
+|---------------------------------|-------------------------------------------------------------|-----------------------------------|
+| **Framer Motion**               | Spring animations (stiffness: 100, damping: 20)             | `page.tsx`                        |
+| **Lucide Icons**                | Reemplazó SVGs inline                                       | `page.tsx`                        |
+| **Grid Asimétrico**             | 7/5 split en stats (antes 4-col symmetric)                  | `page.tsx`                        |
+| **Service Images**              | 4 imágenes con fallback a gradiente                         | `ServicesSection.tsx`             |
 
 ### 2. Dependencias Instaladas
 
@@ -39,12 +39,12 @@ npm install lucide-react framer-motion
 
 ### 3. Imágenes Agregadas
 
-| Imagen                 | Servicio                                 | Archivo             |
-|------------------------|------------------------------------------|---------------------|
-| service1.jpg           | Office Furniture Installation            | public/             |
-| service2.jpg           | Office Setup & Reconfiguration           | public/             |
-| service3.jpg           | Disassembly & Moving                     | public/             |
-| service4.jpg           | Commercial Projects                      | public/             |
+| Imagen                   | Servicio                                   | Archivo               |
+|--------------------------|--------------------------------------------|-----------------------|
+| service1.jpg             | Office Furniture Installation              | public/               |
+| service2.jpg             | Office Setup & Reconfiguration             | public/               |
+| service3.jpg             | Disassembly & Moving                       | public/               |
+| service4.jpg             | Commercial Projects                        | public/               |
 
 ### 4. SEO (YA ESTABA 100%)
 
@@ -65,12 +65,12 @@ npm install lucide-react framer-motion
 
 ### Phase 5: Mejoras Futuras
 
-| #             | Tarea                                                        | Prioridad             | Esfuerzo              |
-|---------------|--------------------------------------------------------------|-----------------------|-----------------------|
-| 1             | Agregar 3 fotos más (About, Gallery, Service Area)           | Media                 | Bajo                  |
-| 2             | Configurar Resend para emails del formulario                 | Media                 | Medio                 |
-| 3             | Agregar error messages específicos en formulario             | Baja                  | Bajo                  |
-| 4             | Deploy a Vercel/Netlify                                      | Alta                  | Medio                 |
+| #               | Tarea                                                          | Prioridad               | Esfuerzo                |
+|-----------------|----------------------------------------------------------------|-------------------------|-------------------------|
+| 1               | Agregar 3 fotos más (About, Gallery, Service Area)             | Media                   | Bajo                    |
+| 2               | Configurar Resend para emails del formulario                   | Media                   | Medio                   |
+| 3               | Agregar error messages específicos en formulario               | Baja                    | Bajo                    |
+| 4               | Deploy a Vercel/Netlify                                        | Alta                    | Medio                   |
 
 ---
 
@@ -87,13 +87,13 @@ npm run dev
 
 ### 2. Verificar Taste Skills
 
-| Elemento                | Qué buscar                                     |
-|-------------------------|------------------------------------------------|
-| Badges Lucide           | Icono MapPin en Location                       |
-| WhatsApp CTA            | MessageCircle icon (no SVG giant)              |
-| Stats Grid              | Asimétrico 7 columnas izq / 5 der              |
-| Servicios               | Imágenes en las 4 cards                        |
-| Animaciones             | fade-up con Spring en badges y stats           |
+| Elemento                  | Qué buscar                                       |
+|---------------------------|--------------------------------------------------|
+| Badges Lucide             | Icono MapPin en Location                         |
+| WhatsApp CTA              | MessageCircle icon (no SVG giant)                |
+| Stats Grid                | Asimétrico 7 columnas izq / 5 der                |
+| Servicios                 | Imágenes en las 4 cards                          |
+| Animaciones               | fade-up con Spring en badges y stats             |
 
 ### 3. Verificar SEO (Search Console)
 
@@ -203,38 +203,38 @@ netlify deploy --prod --dir=.next
 
 ## 🏆 Métricas de Éxito Esperadas
 
-| Métrica                | Target                                            | Cómo medir                 |
-|------------------------|---------------------------------------------------|----------------------------|
-| **LCP**                | < 2.5s                                            | Lighthouse                 |
-| **CLS**                | < 0.1                                             | Lighthouse                 |
-| **SEO Rank**           | Top 10 "Atlanta furniture installation"           | Google                     |
-| **Schema**             | ⚠️ Valid                                          | Schema Validator           |
-| **Mobile**             | 100% responsive                                   | Chrome DevTools            |
+| Métrica                  | Target                                              | Cómo medir                   |
+|--------------------------|-----------------------------------------------------|------------------------------|
+| **LCP**                  | < 2.5s                                              | Lighthouse                   |
+| **CLS**                  | < 0.1                                               | Lighthouse                   |
+| **SEO Rank**             | Top 10 "Atlanta furniture installation"             | Google                       |
+| **Schema**               | ⚠️ Valid                                            | Schema Validator             |
+| **Mobile**               | 100% responsive                                     | Chrome DevTools              |
 
 ---
 
 ## 🤝 Contacto
 
-| Medio                   | Info                                                     |
-|-------------------------|----------------------------------------------------------|
-| **Web**                 | https://oimatlanta.com                                   |
-| **Phone**               | +1 (470) 595-0121                                        |
-| **Email**               | oiminstallllc@gmail.com                                  |
-| **Instagram**           | @oimayen                                                 |
-| **WhatsApp**            | wa.me/14705950121                                        |
-| **Dirección**           | 3715 Northcrest Rd Suite 19, Atlanta, GA 30340           |
+| Medio                     | Info                                                       |
+|---------------------------|------------------------------------------------------------|
+| **Web**                   | https://oimatlanta.com                                     |
+| **Phone**                 | +1 (470) 595-0121                                          |
+| **Email**                 | oiminstallllc@gmail.com                                    |
+| **Instagram**             | @oimayen                                                   |
+| **WhatsApp**              | wa.me/14705950121                                          |
+| **Dirección**             | 3715 Northcrest Rd Suite 19, Atlanta, GA 30340             |
 
 ---
 
 ## 📝 Changelog
 
-| Fecha                | Commit             | Descripción                                                         |
-|----------------------|--------------------|---------------------------------------------------------------------|
-| 2026-04-22           | bc09fa7            | docs: add Resend research                                           |
-| 2026-04-22           | f1851fb            | docs: add backlog                                                   |
-| 2026-04-22           | 836e082            | **feat(design): apply taste skills + add service images**           |
-| 2026-04-22           | a5f0e93            | fix(docs): update AGENTS.md path                                    |
-| 2026-04-22           | 6b160a3            | fix: remove opacity:0 from video                                    |
+| Fecha                  | Commit               | Descripción                                                           |
+|------------------------|----------------------|-----------------------------------------------------------------------|
+| 2026-04-22             | bc09fa7              | docs: add Resend research                                             |
+| 2026-04-22             | f1851fb              | docs: add backlog                                                     |
+| 2026-04-22             | 836e082              | **feat(design): apply taste skills + add service images**             |
+| 2026-04-22             | a5f0e93              | fix(docs): update AGENTS.md path                                      |
+| 2026-04-22             | 6b160a3              | fix: remove opacity:0 from video                                      |
 
 ---
 

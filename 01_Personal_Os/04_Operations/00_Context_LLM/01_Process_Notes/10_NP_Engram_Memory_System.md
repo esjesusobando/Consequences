@@ -7,12 +7,12 @@
 
 ## 📍 Ubicación de Datos
 
-| Tipo                  | Ruta                                     |
-|-----------------------|------------------------------------------|
-| **Binario**           | `C:/Users/sebas/go/bin/engram`           |
-| **Base de datos**     | `C:/Users/sebas/.engram/engram.db`       |
-| **Shared memory**     | `C:/Users/sebas/.engram/engram.db-shm`   |
-| **Write-Ahead Log**   | `C:/Users/sebas/.engram/engram.db-wal`   |
+| Tipo                    | Ruta                                       |
+|-------------------------|--------------------------------------------|
+| **Binario**             | `C:/Users/sebas/go/bin/engram`             |
+| **Base de datos**       | `C:/Users/sebas/.engram/engram.db`         |
+| **Shared memory**       | `C:/Users/sebas/.engram/engram.db-shm`     |
+| **Write-Ahead Log**     | `C:/Users/sebas/.engram/engram.db-wal`     |
 
 ---
 
@@ -72,11 +72,11 @@ engram serve 7437
 
 ## 💾 Tamaño de la Base
 
-| Archivo           | Propósito              | Tamaño típico        |
-|-------------------|------------------------|----------------------|
-| `engram.db`       | Datos principales      | Varía según память   |
-| `engram.db-shm`   | Shared memory SQLite   | Pequeño              |
-| `engram.db-wal`   | Write-Ahead Log        | Temporal             |
+| Archivo             | Propósito                | Tamaño típico          |
+|---------------------|--------------------------|------------------------|
+| `engram.db`         | Datos principales        | Varía según память     |
+| `engram.db-shm`     | Shared memory SQLite     | Pequeño                |
+| `engram.db-wal`     | Write-Ahead Log          | Temporal               |
 
 ---
 

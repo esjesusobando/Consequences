@@ -38,14 +38,14 @@
 
 ## 🔧 Stack Técnico (estimado)
 
-| Componente               | Tecnología                               | Evidencia                        |
-|--------------------------|------------------------------------------|----------------------------------|
-| Frontend                 | React/Next.js                            | UI patterns modernos             |
-| Backend                  | Python/Node                              | API flexibility                  |
-| Database                 | PostgreSQL + Vector                      | Semantic search                  |
-| AI                       | Multiple (GPT, Claude, etc.)             | Plugged LLMs                     |
-| Storage                  | S3/Cloudflare                            | Media files                      |
-| Auth                     | Clerk/Firebase                           | Social login                     |
+| Componente                 | Tecnología                                 | Evidencia                          |
+|----------------------------|--------------------------------------------|------------------------------------|
+| Frontend                   | React/Next.js                              | UI patterns modernos               |
+| Backend                    | Python/Node                                | API flexibility                    |
+| Database                   | PostgreSQL + Vector                        | Semantic search                    |
+| AI                         | Multiple (GPT, Claude, etc.)               | Plugged LLMs                       |
+| Storage                    | S3/Cloudflare                              | Media files                        |
+| Auth                       | Clerk/Firebase                             | Social login                       |
 
 ---
 
@@ -93,13 +93,13 @@
 
 ## 🔑 Lecciones para Construir
 
-| Learn                                                     | Aplicación                                                               |
-|-----------------------------------------------------------|--------------------------------------------------------------------------|
-| AI niveló el campo → knowledge como advantage             | No competir en features, competir en contexto                            |
-| MCP early = developer adoption                            | Expón tu herramienta lo antes posible                                    |
-| Graph como discovery, no como display                     | Features que sorprenden > features que simplemente funcionan             |
-| Quiz spaced repetition es real learning                   | No half-measures — implementá bien o no个省                                |
-| Discount code = viral                                     | Referral loop integrado en launch                                        |
+| Learn                                                       | Aplicación                                                                 |
+|-------------------------------------------------------------|----------------------------------------------------------------------------|
+| AI niveló el campo → knowledge como advantage               | No competir en features, competir en contexto                              |
+| MCP early = developer adoption                              | Expón tu herramienta lo antes posible                                      |
+| Graph como discovery, no como display                       | Features que sorprenden > features que simplemente funcionan               |
+| Quiz spaced repetition es real learning                     | No half-measures — implementá bien o no个省                                  |
+| Discount code = viral                                       | Referral loop integrado en launch                                          |
 
 ---
 

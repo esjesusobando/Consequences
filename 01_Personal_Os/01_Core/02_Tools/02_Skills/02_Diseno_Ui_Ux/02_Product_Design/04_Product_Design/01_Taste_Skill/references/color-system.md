@@ -8,19 +8,19 @@
 ## Allowed Palettes
 
 ### Neutral Bases
-| Name                   | Hex                     | Use For                          |
-|------------------------|-------------------------|----------------------------------|
-| Zinc                   | #18181b                 | Dark backgrounds                 |
-| Slate                  | #0f172a                 | Alternative dark                 |
-| Gray                   | #6b7280                 | Text secondary                   |
+| Name                     | Hex                       | Use For                            |
+|--------------------------|---------------------------|------------------------------------|
+| Zinc                     | #18181b                   | Dark backgrounds                   |
+| Slate                    | #0f172a                   | Alternative dark                   |
+| Gray                     | #6b7280                   | Text secondary                     |
 
 ### Accent Colors (Pick ONE)
-| Name                          | Hex                     | Mood                            |
-|-------------------------------|-------------------------|---------------------------------|
-| Emerald                       | #10b981                 | Success, growth                 |
-| Electric Blue                 | #3b82f6                 | Tech, trust                     |
-| Deep Rose                     | #e11d48                 | Bold, attention                 |
-| Amber                         | #f59e0b                 | Warm, warning                   |
+| Name                            | Hex                       | Mood                              |
+|---------------------------------|---------------------------|-----------------------------------|
+| Emerald                         | #10b981                   | Success, growth                   |
+| Electric Blue                   | #3b82f6                   | Tech, trust                       |
+| Deep Rose                       | #e11d48                   | Bold, attention                   |
+| Amber                           | #f59e0b                   | Warm, warning                     |
 
 ## Rules
 1. One palette per project

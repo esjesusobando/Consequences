@@ -101,13 +101,13 @@ If no → clarify and iterate
 <decision_framework>
 ## Quick Decision Framework
 
-| Situation                                     | Recommendation                                  |
-|-----------------------------------------------|-------------------------------------------------|
-| Single task, repeat often                     | Simple skill                                    |
-| Multiple related tasks                        | Router + workflows                              |
-| Complex domain, many patterns                 | Router + workflows + references                 |
-| User-triggered, fresh context                 | Slash command, not skill                        |
-| One-off task                                  | No skill needed                                 |
+| Situation                                       | Recommendation                                    |
+|-------------------------------------------------|---------------------------------------------------|
+| Single task, repeat often                       | Simple skill                                      |
+| Multiple related tasks                          | Router + workflows                                |
+| Complex domain, many patterns                   | Router + workflows + references                   |
+| User-triggered, fresh context                   | Slash command, not skill                          |
+| One-off task                                    | No skill needed                                   |
 </decision_framework>
 
 <success_criteria>

@@ -46,14 +46,14 @@ Reorganizar estructura de Skills en .agent/ para eliminar 89 duplicados entre 05
 
 **Tech Stack:**
 
-| Componente                                    | Valor                                             |
-|-----------------------------------------------|---------------------------------------------------|
-| Framework                                     | PersonalOS CLI                                    |
-| Lenguaje                                      | Python 3.12                                       |
-| Base_Datos                                    | N/A                                               |
-| UI                                            | Terminal/Markdown                                 |
-| Autenticación                                 | N/A                                               |
-| Arquitectura                                  | Scripts + Skills                                  |
+| Componente                                      | Valor                                               |
+|-------------------------------------------------|-----------------------------------------------------|
+| Framework                                       | PersonalOS CLI                                      |
+| Lenguaje                                        | Python 3.12                                         |
+| Base_Datos                                      | N/A                                                 |
+| UI                                              | Terminal/Markdown                                   |
+| Autenticación                                   | N/A                                                 |
+| Arquitectura                                    | Scripts + Skills                                    |
 
 **Current State:**
 - 05_Gentleman: 98 skills (Mar 3-18)
@@ -76,13 +76,13 @@ Skills duplicadas en dos carpetas causando confusión sobre cuál usar.
 
 ## 4. Development Mode
 
-| Aspecto                                          | Valor                                               |
-|--------------------------------------------------|-----------------------------------------------------|
-| Project Stage                                    | Feature / Refactor                                  |
-| Breaking Changes                                 | Avoid (naming only)                                 |
-| Data Handling                                    | Preserve (no loss)                                  |
-| User Base                                        | AI Agents                                           |
-| Priority                                         | Speed > Stability                                   |
+| Aspecto                                            | Valor                                                 |
+|----------------------------------------------------|-------------------------------------------------------|
+| Project Stage                                      | Feature / Refactor                                    |
+| Breaking Changes                                   | Avoid (naming only)                                   |
+| Data Handling                                      | Preserve (no loss)                                    |
+| User Base                                          | AI Agents                                             |
+| Priority                                           | Speed > Stability                                     |
 
 ## 5. Requirements
 
@@ -95,11 +95,11 @@ Skills duplicadas en dos carpetas causando confusión sobre cuál usar.
 
 **Non-Functional Requirements:**
 
-| Aspecto                                     | Requisito                                             |
-|---------------------------------------------|-------------------------------------------------------|
-| Performance                                 | <5 segundos                                           |
-| Security                                    | Solo lectura                                          |
-| Usability                                   | Output markdown claro                                 |
+| Aspecto                                       | Requisito                                               |
+|-----------------------------------------------|---------------------------------------------------------|
+| Performance                                   | <5 segundos                                             |
+| Security                                      | Solo lectura                                            |
+| Usability                                     | Output markdown claro                                   |
 
 ## 6. Data & Database
 
@@ -169,20 +169,20 @@ Skills duplicadas en dos carpetas causando confusión sobre cuál usar.
 
 **Second-Order Impact:**
 
-| Tipo                                                 | Impacto                                                       |
-|------------------------------------------------------|---------------------------------------------------------------|
-| Posibles Regresiones                                 | Scripts con rutas antiguas                                    |
-| Performance                                          | N/A                                                           |
-| User Workflow                                        | Ninguno (backward compatible)                                 |
+| Tipo                                                   | Impacto                                                         |
+|--------------------------------------------------------|-----------------------------------------------------------------|
+| Posibles Regresiones                                   | Scripts con rutas antiguas                                      |
+| Performance                                            | N/A                                                             |
+| User Workflow                                          | Ninguno (backward compatible)                                   |
 
 ## 14. Strategic Alignment
 
 **Alineación GOALS.md:**
 
-| Métrica                                             | Descripción                                                            |
-|-----------------------------------------------------|------------------------------------------------------------------------|
-| North Star                                          | Sistema organizado = mejor contexto IA                                 |
-| PersonalOS Priority                                 | P0                                                                     |
+| Métrica                                               | Descripción                                                              |
+|-------------------------------------------------------|--------------------------------------------------------------------------|
+| North Star                                            | Sistema organizado = mejor contexto IA                                   |
+| PersonalOS Priority                                   | P0                                                                       |
 
 ---
 

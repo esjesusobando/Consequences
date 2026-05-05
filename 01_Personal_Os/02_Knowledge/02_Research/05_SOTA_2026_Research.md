@@ -8,18 +8,18 @@
 
 ## 📊 PRIORIDADES — Orden de Implementación
 
-| #     | Área                       | Prioridad   | Status                                        |
-|-------|----------------------------|-------------|-----------------------------------------------|
-| 1     | **AGENTIC AI**             | CRITICAL    | ✅ Researched + LangGraph installed            |
-| 2     | **HARNESS / EVALUATION**   | CRITICAL    | ✅ Researched + agent-eval-harness installed   |
-| 3     | **SKILLS**                 | CRITICAL    | 🟡 229+ skills, refactor pending               |
-| 4     | **MCP**                    | HIGH        | ✅ Researched + Catalog done                   |
-| 5     | **UX/UI**                  | HIGH        | ✅ Researched                                  |
-| 6     | **COPY**                   | HIGH        | ✅ Researched                                  |
-| 7     | **SECURITY**               | MEDIUM      | ✅ Researched + Audit done                     |
-| 8     | **DESIGN**                 | MEDIUM      | ✅ Researched                                  |
-| 9     | **PRODUCT**                | MEDIUM      | ✅ Researched                                  |
-| 10    | **WORKFLOW/AUTOMATION**    | MEDIUM      | ✅ Researched                                  |
+| #       | Área                         | Prioridad     | Status                                          |
+|---------|------------------------------|---------------|-------------------------------------------------|
+| 1       | **AGENTIC AI**               | CRITICAL      | ✅ Researched + LangGraph installed              |
+| 2       | **HARNESS / EVALUATION**     | CRITICAL      | ✅ Researched + agent-eval-harness installed     |
+| 3       | **SKILLS**                   | CRITICAL      | 🟡 229+ skills, refactor pending                 |
+| 4       | **MCP**                      | HIGH          | ✅ Researched + Catalog done                     |
+| 5       | **UX/UI**                    | HIGH          | ✅ Researched                                    |
+| 6       | **COPY**                     | HIGH          | ✅ Researched                                    |
+| 7       | **SECURITY**                 | MEDIUM        | ✅ Researched + Audit done                       |
+| 8       | **DESIGN**                   | MEDIUM        | ✅ Researched                                    |
+| 9       | **PRODUCT**                  | MEDIUM        | ✅ Researched                                    |
+| 10      | **WORKFLOW/AUTOMATION**      | MEDIUM        | ✅ Researched                                    |
 
 ---
 
@@ -27,25 +27,25 @@
 
 ### Los 6 Patrones Canonical (SitePoint, 2026)
 
-| Pattern             | Propósito              | Cuándo Usarlo                      |
-|---------------------|------------------------|------------------------------------|
-| **Reflection**      | Auto-corrección        | Tareas donde el error es costoso   |
-| **Tool Use**        | Extender capacidades   | Necesita datos externos            |
-| **Planning**        | Descomponer tareas     | Multi-step workflows               |
-| **Multi-Agent**     | Especialización        | Sistemas complejos                 |
-| **Memory**          | Persistencia           | Sesiones largas                    |
-| **Orchestration**   | Coordinación           | Múltiples agentes                  |
+| Pattern               | Propósito                | Cuándo Usarlo                        |
+|-----------------------|--------------------------|--------------------------------------|
+| **Reflection**        | Auto-corrección          | Tareas donde el error es costoso     |
+| **Tool Use**          | Extender capacidades     | Necesita datos externos              |
+| **Planning**          | Descomponer tareas       | Multi-step workflows                 |
+| **Multi-Agent**       | Especialización          | Sistemas complejos                   |
+| **Memory**            | Persistencia             | Sesiones largas                      |
+| **Orchestration**     | Coordinación             | Múltiples agentes                    |
 
 ### Frameworks que importan (vs. Popularidad)
 
-| Framework                       | Cuándo Usarlo                   | Porqué                                          |
-|---------------------------------|---------------------------------|-------------------------------------------------|
-| **LangGraph**                   | Production stateful workflows   | 126k stars, stable semver                       |
-| **CrewAI**                      | Fast multi-agent prototyping    | 60% Fortune 500                                 |
-| **Microsoft Agent Framework**   | .NET/Azure enterprise           | AutoGen + Semantic Kernel merged                |
-| **OpenAI Agents SDK**           | GPT-centric + sandbox tools     | Nuevo entrant fuerte                            |
-| **Google ADK**                  | Multimodal agents on GCP        | Gemini-native                                   |
-| **Mastra** (TS)                 | TypeScript-first                | Observational Memory SOTA (94.9% LongMemEval)   |
+| Framework                         | Cuándo Usarlo                     | Porqué                                            |
+|-----------------------------------|-----------------------------------|---------------------------------------------------|
+| **LangGraph**                     | Production stateful workflows     | 126k stars, stable semver                         |
+| **CrewAI**                        | Fast multi-agent prototyping      | 60% Fortune 500                                   |
+| **Microsoft Agent Framework**     | .NET/Azure enterprise             | AutoGen + Semantic Kernel merged                  |
+| **OpenAI Agents SDK**             | GPT-centric + sandbox tools       | Nuevo entrant fuerte                              |
+| **Google ADK**                    | Multimodal agents on GCP          | Gemini-native                                     |
+| **Mastra** (TS)                   | TypeScript-first                  | Observational Memory SOTA (94.9% LongMemEval)     |
 
 ### Las 4 Orchestration Styles que Shipean
 
@@ -70,23 +70,23 @@
 
 ### Frameworks Recomendados
 
-| Tool                     | Best For                             | Precio        |
-|--------------------------|--------------------------------------|---------------|
-| **agent-eval-harness**   | Local-first, agent behavior eval     | Free (OSS)    |
-| **MASEval**              | Multi-agent, benchmark unification   | Free (OSS)    |
-| **Braintrust**           | CI/CD + RAG metrics                  | $249/mo       |
-| **LangSmith**            | LangGraph multi-turn                 | $39/seat      |
-| **Arize Phoenix**        | OTel-native observability            | Free/$50      |
-| **DeepEval**             | DAG metric evaluation                | Free/$19.99   |
+| Tool                       | Best For                               | Precio          |
+|----------------------------|----------------------------------------|-----------------|
+| **agent-eval-harness**     | Local-first, agent behavior eval       | Free (OSS)      |
+| **MASEval**                | Multi-agent, benchmark unification     | Free (OSS)      |
+| **Braintrust**             | CI/CD + RAG metrics                    | $249/mo         |
+| **LangSmith**              | LangGraph multi-turn                   | $39/seat        |
+| **Arize Phoenix**          | OTel-native observability              | Free/$50        |
+| **DeepEval**               | DAG metric evaluation                  | Free/$19.99     |
 
 ### Benchmarks Clave
 
-| Benchmark            | Qué Evalúa              | Modo          |
-|----------------------|-------------------------|---------------|
-| **GAIA**             | General AI assistants   | DIRECT        |
-| **Terminal-Bench**   | CLI agents              | INTERACTIVE   |
-| **ARC-AGI**          | Abstract reasoning      | DIRECT        |
-| **EClaw Arena**      | 12 dimensiones          | Multi         |
+| Benchmark              | Qué Evalúa                | Modo            |
+|------------------------|---------------------------|-----------------|
+| **GAIA**               | General AI assistants     | DIRECT          |
+| **Terminal-Bench**     | CLI agents                | INTERACTIVE     |
+| **ARC-AGI**            | Abstract reasoning        | DIRECT          |
+| **EClaw Arena**        | 12 dimensiones            | Multi           |
 
 ### Métricas que Importan
 
@@ -115,11 +115,11 @@
 
 ### Niveles de Carga (Progressive Disclosure)
 
-| Nivel              | Cuándo Carga     | Tamaño               |
-|--------------------|------------------|----------------------|
-| **L1** Metadata    | Startup          | 50-100 tokens        |
-| **L2** Body        | Skill triggers   | 1,000-5,000 tokens   |
-| **L3** Resources   | Agent necesita   | On-demand            |
+| Nivel                | Cuándo Carga       | Tamaño                 |
+|----------------------|--------------------|------------------------|
+| **L1** Metadata      | Startup            | 50-100 tokens          |
+| **L2** Body          | Skill triggers     | 1,000-5,000 tokens     |
+| **L3** Resources     | Agent necesita     | On-demand              |
 
 ### Estructura de Skill (YAML Frontmatter)
 
@@ -139,14 +139,14 @@ author: tu-nombre
 
 ### Best Practices para MCP Servers
 
-| Práctica                    | Porqué                                    |
-|-----------------------------|-------------------------------------------|
-| **Single responsibility**   | Un server = un dominio claro              |
-| **Bounded toolsets**        | Herramientas enfocadas, no kitchen-sink   |
-| **Contracts first**         | Input/output schemas explícitos           |
-| **Stateless by default**    | Escalabilidad                             |
-| **Security by design**      | Identity, auth, audit inside              |
-| **Controlled autonomy**     | Least privilege tools                     |
+| Práctica                      | Porqué                                      |
+|-------------------------------|---------------------------------------------|
+| **Single responsibility**     | Un server = un dominio claro                |
+| **Bounded toolsets**          | Herramientas enfocadas, no kitchen-sink     |
+| **Contracts first**           | Input/output schemas explícitos             |
+| **Stateless by default**      | Escalabilidad                               |
+| **Security by design**        | Identity, auth, audit inside                |
+| **Controlled autonomy**       | Least privilege tools                       |
 
 ### Patrones de Naming
 
@@ -182,14 +182,14 @@ Ejemplos:
 
 ### Principios de AI UX (2026)
 
-| Principio                     | Ejemplo                                     |
-|-------------------------------|---------------------------------------------|
-| **Transparency inmediata**    | "I can help with..." en primer mensaje      |
-| **Chain of Thought visual**   | Muestra reasoning steps                     |
-| **Confidence indicators**     | Niveles de certeza visible                  |
-| **Graceful failure**          | "No estoy seguro" > "Error"                 |
-| **Human escape**              | Botón "hablar con humano" siempre visible   |
-| **Progressive disclosure**    | 3 opciones máx por paso                     |
+| Principio                       | Ejemplo                                       |
+|---------------------------------|-----------------------------------------------|
+| **Transparency inmediata**      | "I can help with..." en primer mensaje        |
+| **Chain of Thought visual**     | Muestra reasoning steps                       |
+| **Confidence indicators**       | Niveles de certeza visible                    |
+| **Graceful failure**            | "No estoy seguro" > "Error"                   |
+| **Human escape**                | Botón "hablar con humano" siempre visible     |
+| **Progressive disclosure**      | 3 opciones máx por paso                       |
 
 ### Componentes AI-Specific
 
@@ -208,21 +208,21 @@ AI Components:
 
 ### Tokens de Diseño AI
 
-| Category            | Ejemplo                     |
-|---------------------|-----------------------------|
-| **Confidence**      | `--ai-confidence-high`      |
-| **Streaming**       | `--ai-streaming-gradient`   |
-| **Explanation**     | `--ai-reasoning-bg`         |
-| **Trust signals**   | `--ai-transparent-bg`       |
+| Category              | Ejemplo                       |
+|-----------------------|-------------------------------|
+| **Confidence**        | `--ai-confidence-high`        |
+| **Streaming**         | `--ai-streaming-gradient`     |
+| **Explanation**       | `--ai-reasoning-bg`           |
+| **Trust signals**     | `--ai-transparent-bg`         |
 
 ### Herramientas Recomendadas
 
-| Tool                        | Use Case                           |
-|-----------------------------|------------------------------------|
-| **Figma** + AI plugins      | Design system master               |
-| **Storybook** + Chromatic   | Component library + visual tests   |
-| **Tokens Studio**           | AI-enhanced tokens                 |
-| **Galileo AI**              | UI generación from prompts         |
+| Tool                          | Use Case                             |
+|-------------------------------|--------------------------------------|
+| **Figma** + AI plugins        | Design system master                 |
+| **Storybook** + Chromatic     | Component library + visual tests     |
+| **Tokens Studio**             | AI-enhanced tokens                   |
+| **Galileo AI**                | UI generación from prompts           |
 
 ---
 
@@ -230,12 +230,12 @@ AI Components:
 
 ### Frameworks de Copy que Convierten
 
-| Framework                  | Cuándo Usarlo                      |
-|----------------------------|------------------------------------|
-| **PAS**                    | Problem-Agitate-Solution           |
-| **AIDA**                   | Attention-Interest-Desire-Action   |
-| **Before-After-Bridge**    | Transformation                     |
-| **The Golden Framework**   | Context + Intent + Formula         |
+| Framework                    | Cuándo Usarlo                        |
+|------------------------------|--------------------------------------|
+| **PAS**                      | Problem-Agitate-Solution             |
+| **AIDA**                     | Attention-Interest-Desire-Action     |
+| **Before-After-Bridge**      | Transformation                       |
+| **The Golden Framework**     | Context + Intent + Formula           |
 
 ### Estructura de Prompt de Copy
 
@@ -268,18 +268,18 @@ AI Components:
 
 ### OWASP AI Top 10 (2025-2026)
 
-| #     | Amenaza                     | Mitigación                      |
-|-------|-----------------------------|---------------------------------|
-| 1     | Prompt Injection            | Input validation, sandboxing    |
-| 2     | Model Inversion             | Rate limiting, access control   |
-| 3     | Training Data Poisoning     | Data validation pipeline        |
-| 4     | Model Denial of Service     | Resource limits                 |
-| 5     | Supply Chain                | Vendor audit                    |
-| 6     | Sensitive Data Disclosure   | Encryption, access control      |
-| 7     | Model Theft                 | Watermarking                    |
-| 8     | Inference API Abuse         | Rate limiting                   |
-| 9     | Misaligned Output           | Human oversight                 |
-| 10    | Overreliance                | Transparency, uncertainty       |
+| #       | Amenaza                       | Mitigación                        |
+|---------|-------------------------------|-----------------------------------|
+| 1       | Prompt Injection              | Input validation, sandboxing      |
+| 2       | Model Inversion               | Rate limiting, access control     |
+| 3       | Training Data Poisoning       | Data validation pipeline          |
+| 4       | Model Denial of Service       | Resource limits                   |
+| 5       | Supply Chain                  | Vendor audit                      |
+| 6       | Sensitive Data Disclosure     | Encryption, access control        |
+| 7       | Model Theft                   | Watermarking                      |
+| 8       | Inference API Abuse           | Rate limiting                     |
+| 9       | Misaligned Output             | Human oversight                   |
+| 10      | Overreliance                  | Transparency, uncertainty         |
 
 ### MCP Security Checklist
 
@@ -298,12 +298,12 @@ AI Components:
 
 ### Reference Systems
 
-| Sistema                    | Especialidad           |
-|----------------------------|------------------------|
-| **Salesforce Lightning**   | Einstein AI patterns   |
-| **IBM Carbon**             | AI Explainability      |
-| **Microsoft Fluent**       | Copilot patterns       |
-| **Material Design 3**      | Google AI              |
+| Sistema                      | Especialidad             |
+|------------------------------|--------------------------|
+| **Salesforce Lightning**     | Einstein AI patterns     |
+| **IBM Carbon**               | AI Explainability        |
+| **Microsoft Fluent**         | Copilot patterns         |
+| **Material Design 3**        | Google AI                |
 
 ### Tokens AI-Emergent
 
@@ -336,14 +336,14 @@ AI Components:
 
 ### Métricas Clave para AI Products
 
-| Métrica                    | Porqué               |
-|----------------------------|----------------------|
-| **Task Completion Rate**   | Outcomes efectivos   |
-| **Human Handoff Rate**     | Límites del AI       |
-| **Time to Resolution**     | Eficiencia           |
-| **Cost per Interaction**   | Unit economics       |
-| **Hallucination Rate**     | Calidad              |
-| **User Trust Score**       | Retention            |
+| Métrica                      | Porqué                 |
+|------------------------------|------------------------|
+| **Task Completion Rate**     | Outcomes efectivos     |
+| **Human Handoff Rate**       | Límites del AI         |
+| **Time to Resolution**       | Eficiencia             |
+| **Cost per Interaction**     | Unit economics         |
+| **Hallucination Rate**       | Calidad                |
+| **User Trust Score**         | Retention              |
 
 ### Frameworks de Prioritization
 
@@ -357,21 +357,21 @@ AI Components:
 
 ### Patterns de Orchestration
 
-| Pattern            | Frameworks            | Cuándo                |
-|--------------------|-----------------------|-----------------------|
-| **Graph-based**    | LangGraph, MS Agent   | Stateful workflows    |
-| **Role-based**     | CrewAI, Agno          | Fast prototyping      |
-| **Handoff**        | OpenAI Agents         | Simple flows          |
-| **Hierarchical**   | Google ADK            | Complex multi-agent   |
+| Pattern              | Frameworks              | Cuándo                  |
+|----------------------|-------------------------|-------------------------|
+| **Graph-based**      | LangGraph, MS Agent     | Stateful workflows      |
+| **Role-based**       | CrewAI, Agno            | Fast prototyping        |
+| **Handoff**          | OpenAI Agents           | Simple flows            |
+| **Hierarchical**     | Google ADK              | Complex multi-agent     |
 
 ### Herramientas de Automation
 
-| Herramienta    | Specialties            |
-|----------------|------------------------|
-| **Make.com**   | Visual automation      |
-| **Zapier**     | SaaS integration       |
-| **n8n**        | Self-hosted, OSS       |
-| **Pipefy**     | AI-powered workflows   |
+| Herramienta      | Specialties              |
+|------------------|--------------------------|
+| **Make.com**     | Visual automation        |
+| **Zapier**       | SaaS integration         |
+| **n8n**          | Self-hosted, OSS         |
+| **Pipefy**       | AI-powered workflows     |
 
 ---
 

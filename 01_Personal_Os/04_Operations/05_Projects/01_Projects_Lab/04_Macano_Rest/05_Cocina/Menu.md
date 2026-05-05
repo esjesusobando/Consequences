@@ -28,12 +28,12 @@
 
 ## Precios
 
-| Categoría                 | Rango                   |
-|---------------------------|-------------------------|
-| Entrantes                 | Bs. X - X               |
-| Principales               | Bs. X - X               |
-| Postres                   | Bs. X - X               |
-| Bebidas                   | Bs. X - X               |
+| Categoría                   | Rango                     |
+|-----------------------------|---------------------------|
+| Entrantes                   | Bs. X - X                 |
+| Principales                 | Bs. X - X                 |
+| Postres                     | Bs. X - X                 |
+| Bebidas                     | Bs. X - X                 |
 
 ---
 

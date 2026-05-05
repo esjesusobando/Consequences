@@ -102,14 +102,14 @@ Por cada contenido guardado → generar quiz + crear conexión.
 
 ## 📊 Matriz de Aplicación
 
-| Insight                        | Action                                  | Frecuencia                      |
-|--------------------------------|-----------------------------------------|---------------------------------|
-| AI niveló campo                | Usar knowledge como ventaja             | Siempre                         |
-| Chat dual mode                 | Elegir modo correcto                    | Por query                       |
-| Spaced repetition              | Generar quiz inmediatamente             | Por contenido clave             |
-| Graph discovery                | Revisar graph semanal                   | Semanal                         |
-| MCP extensibilidad             | Configurar integra                      | Una vez                         |
-| Aprendizaje activo             | Aplicar workflow completo               | Por URL                         |
+| Insight                          | Action                                    | Frecuencia                        |
+|----------------------------------|-------------------------------------------|-----------------------------------|
+| AI niveló campo                  | Usar knowledge como ventaja               | Siempre                           |
+| Chat dual mode                   | Elegir modo correcto                      | Por query                         |
+| Spaced repetition                | Generar quiz inmediatamente               | Por contenido clave               |
+| Graph discovery                  | Revisar graph semanal                     | Semanal                           |
+| MCP extensibilidad               | Configurar integra                        | Una vez                           |
+| Aprendizaje activo               | Aplicar workflow completo                 | Por URL                           |
 
 ---
 

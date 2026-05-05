@@ -16,21 +16,21 @@ This guide is intentionally opinionated, but it is **not pass/fail**.
 
 Use each finding to classify the CLI along three levels:
 
-| Level                        | Meaning                                                            | Typical impact on agents                                                                 |
-|------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Blocker                      | Prevents reliable agent use                                        | Hangs, requires human intervention, or makes output hard to recover from                 |
-| Friction                     | Agents can use it, but inefficiently or unreliably                 | More retries, wasted tokens, brittle parsing, extra tool calls                           |
-| Optimization                 | Improves speed, cost, and robustness                               | Better agent throughput, lower token cost, fewer corrective loops                        |
+| Level                          | Meaning                                                              | Typical impact on agents                                                                   |
+|--------------------------------|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| Blocker                        | Prevents reliable agent use                                          | Hangs, requires human intervention, or makes output hard to recover from                   |
+| Friction                       | Agents can use it, but inefficiently or unreliably                   | More retries, wasted tokens, brittle parsing, extra tool calls                             |
+| Optimization                   | Improves speed, cost, and robustness                                 | Better agent throughput, lower token cost, fewer corrective loops                          |
 
 In practice, you should evaluate commands by **command type**, not only at the CLI level:
 
-| Command type                                   | Most important principles                                                                        |
-|------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| Read/query commands                            | Structured output, bounded output, composability                                                 |
-| Mutating commands                              | Non-interactive execution, actionable errors, safety, idempotence where feasible                 |
-| Streaming/logging commands                     | Filtering, truncation controls, clean stderr/stdout behavior                                     |
-| Interactive/bootstrap commands                 | Automation escape hatch, `--no-input`, scriptable alternatives                                   |
-| Bulk/export commands                           | Pagination, range selection, machine-readable output                                             |
+| Command type                                     | Most important principles                                                                          |
+|--------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| Read/query commands                              | Structured output, bounded output, composability                                                   |
+| Mutating commands                                | Non-interactive execution, actionable errors, safety, idempotence where feasible                   |
+| Streaming/logging commands                       | Filtering, truncation controls, clean stderr/stdout behavior                                       |
+| Interactive/bootstrap commands                   | Automation escape hatch, `--no-input`, scriptable alternatives                                     |
+| Bulk/export commands                             | Pagination, range selection, machine-readable output                                               |
 
 This keeps the rubric practical. For example, idempotence is critical for many mutating commands, but not every `tail -f`-style command needs to satisfy it.
 
@@ -38,15 +38,15 @@ This keeps the rubric practical. For example, idempotence is critical for many m
 
 ## The 7 Principles
 
-| #                   | Principle                                                       | Why it matters                                                                           |
-|---------------------|-----------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| 1                   | Non-interactive by default for automation paths                 | Agents cannot reliably answer prompts or navigate TUI flows                              |
-| 2                   | Structured, parseable output                                    | Agents need stable data contracts, not presentation formatting                           |
-| 3                   | Progressive help discovery                                      | Agents explore tools incrementally and benefit from concrete examples                    |
-| 4                   | Fail fast with actionable errors                                | Agents recover well when errors tell them exactly how to correct course                  |
-| 5                   | Safe retries and explicit mutation boundaries                   | Agents retry, resume, and recover; commands must not make that dangerous                 |
-| 6                   | Composable and predictable command structure                    | Agents chain commands and depend on consistent affordances                               |
-| 7                   | Bounded, high-signal responses                                  | Extra output consumes context, time, and tool budget                                     |
+| #                     | Principle                                                         | Why it matters                                                                             |
+|-----------------------|-------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| 1                     | Non-interactive by default for automation paths                   | Agents cannot reliably answer prompts or navigate TUI flows                                |
+| 2                     | Structured, parseable output                                      | Agents need stable data contracts, not presentation formatting                             |
+| 3                     | Progressive help discovery                                        | Agents explore tools incrementally and benefit from concrete examples                      |
+| 4                     | Fail fast with actionable errors                                  | Agents recover well when errors tell them exactly how to correct course                    |
+| 5                     | Safe retries and explicit mutation boundaries                     | Agents retry, resume, and recover; commands must not make that dangerous                   |
+| 6                     | Composable and predictable command structure                      | Agents chain commands and depend on consistent affordances                                 |
+| 7                     | Bounded, high-signal responses                                    | Extra output consumes context, time, and tool budget                                       |
 
 ---
 
@@ -413,15 +413,15 @@ As a heuristic, treat a default output above roughly 500 lines as a likely `Fric
 
 Use this to evaluate a CLI quickly without pretending every issue is binary:
 
-| #                   | Check                                    | What you are testing                                                               | Typical severity if missing                   |
-|---------------------|------------------------------------------|------------------------------------------------------------------------------------|-----------------------------------------------|
-| 1                   | Non-interactive path                     | Can the command run with stdin detached and no prompt?                             | `Blocker`                                     |
-| 2                   | Structured output                        | Can agents get machine-readable output without scraping prose?                     | `Blocker` or `Friction`                       |
-| 3                   | Discoverable help                        | Can an agent find the invocation shape from `--help` alone?                        | `Friction`                                    |
-| 4                   | Actionable errors                        | Does failure teach the next correct invocation?                                    | `Friction`                                    |
-| 5                   | Safe mutation boundaries                 | Are retries, destructive actions, and previews handled explicitly?                 | `Blocker` or `Friction`                       |
-| 6                   | Composition                              | Can the command participate in pipelines cleanly?                                  | `Friction`                                    |
-| 7                   | Bounded output                           | Are defaults reasonably scoped for common agent tasks?                             | `Friction` or `Optimization`                  |
+| #                     | Check                                      | What you are testing                                                                 | Typical severity if missing                     |
+|-----------------------|--------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------|
+| 1                     | Non-interactive path                       | Can the command run with stdin detached and no prompt?                               | `Blocker`                                       |
+| 2                     | Structured output                          | Can agents get machine-readable output without scraping prose?                       | `Blocker` or `Friction`                         |
+| 3                     | Discoverable help                          | Can an agent find the invocation shape from `--help` alone?                          | `Friction`                                      |
+| 4                     | Actionable errors                          | Does failure teach the next correct invocation?                                      | `Friction`                                      |
+| 5                     | Safe mutation boundaries                   | Are retries, destructive actions, and previews handled explicitly?                   | `Blocker` or `Friction`                         |
+| 6                     | Composition                                | Can the command participate in pipelines cleanly?                                    | `Friction`                                      |
+| 7                     | Bounded output                             | Are defaults reasonably scoped for common agent tasks?                               | `Friction` or `Optimization`                    |
 
 ---
 

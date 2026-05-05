@@ -27,22 +27,22 @@ Artículo que describe cómo Anthropic construyó un sistema de tres agentes (Pl
 
 ## Three-Agent Architecture
 
-| Agente                          | Rol                                              | Output                            |
-|---------------------------------|--------------------------------------------------|-----------------------------------|
-| **Planner**                     | 1-4 oraciones → spec completo                    | 16-feature spec                   |
-| **Generator**                   | Feature por feature (sprints)                    | Código                            |
-| **Evaluator**                   | QA separado con Playwright MCP                   | Bugs + grading                    |
+| Agente                            | Rol                                                | Output                              |
+|-----------------------------------|----------------------------------------------------|-------------------------------------|
+| **Planner**                       | 1-4 oraciones → spec completo                      | 16-feature spec                     |
+| **Generator**                     | Feature por feature (sprints)                      | Código                              |
+| **Evaluator**                     | QA separado con Playwright MCP                     | Bugs + grading                      |
 
 ---
 
 ## Criterios de Evaluación (Frontend Design)
 
-| Criterio                             | Descripción                                               | Peso                      |
-|--------------------------------------|-----------------------------------------------------------|---------------------------|
-| **Design Quality**                   | Coherencia visual, mood, identidad                        | 🔴 ALTO                    |
-| **Originalidad**                     | Custom vs AI slop patterns                                | 🔴 ALTO                    |
-| **Craft**                            | Ejecución técnica (typography, spacing)                   | default                   |
-| **Funcionalidad**                    | Usabilidad, tareas completas                              | default                   |
+| Criterio                               | Descripción                                                 | Peso                        |
+|----------------------------------------|-------------------------------------------------------------|-----------------------------|
+| **Design Quality**                     | Coherencia visual, mood, identidad                          | 🔴 ALTO                      |
+| **Originalidad**                       | Custom vs AI slop patterns                                  | 🔴 ALTO                      |
+| **Craft**                              | Ejecución técnica (typography, spacing)                     | default                     |
+| **Funcionalidad**                      | Usabilidad, tareas completas                                | default                     |
 
 ### Peso Aplicado
 - Design quality y Originalidad > Craft y Funcionalidad
@@ -53,31 +53,31 @@ Artículo que describe cómo Anthropic construyó un sistema de tres agentes (Pl
 ## Resultados Experimentales
 
 ### Retro Game Maker
-| Harness                      | Duration                      | Cost                     | Result                          |
-|------------------------------|-------------------------------|--------------------------|---------------------------------|
-| Solo                         | 20 min                        | $9                       | App rotas                       |
-| Full                         | 6 hr                          | $200                     | App funcional                   |
+| Harness                        | Duration                        | Cost                       | Result                            |
+|--------------------------------|---------------------------------|----------------------------|-----------------------------------|
+| Solo                           | 20 min                          | $9                         | App rotas                         |
+| Full                           | 6 hr                            | $200                       | App funcional                     |
 
 ### Digital Audio Workstation (DAW)
-| Phase                       | Duration                          | Cost                          |
-|-----------------------------|-----------------------------------|-------------------------------|
-| Planner                     | 4.7 min                           | $0.46                         |
-| Build R1                    | 2 hr 7 min                        | $71.08                        |
-| QA R1                       | 8.8 min                           | $3.24                         |
-| Build R2                    | 1 hr 2 min                        | $36.89                        |
-| QA R2                       | 6.8 min                           | $3.09                         |
-| Build R3                    | 10.9 min                          | $5.88                         |
-| QA R3                       | 9.6 min                           | $4.06                         |
-| **Total**                   | **3 hr 50 min**                   | **$124.70**                   |
+| Phase                         | Duration                            | Cost                            |
+|-------------------------------|-------------------------------------|---------------------------------|
+| Planner                       | 4.7 min                             | $0.46                           |
+| Build R1                      | 2 hr 7 min                          | $71.08                          |
+| QA R1                         | 8.8 min                             | $3.24                           |
+| Build R2                      | 1 hr 2 min                          | $36.89                          |
+| QA R2                         | 6.8 min                             | $3.09                           |
+| Build R3                      | 10.9 min                            | $5.88                           |
+| QA R3                         | 9.6 min                             | $4.06                           |
+| **Total**                     | **3 hr 50 min**                     | **$124.70**                     |
 
 ---
 
 ## Context Reset vs Compaction
 
-| Método                           | Descripción                                                  | Cuándo Usar                                    |
-|----------------------------------|--------------------------------------------------------------|------------------------------------------------|
-| **Reset**                        | Limpia ventana completamente, nuevo agente                   | Sonnet 4.5 (context anxiety)                   |
-| **Compaction**                   | Resume misma sesión, historia acortada                       | Opus 4.6+                                      |
+| Método                             | Descripción                                                    | Cuándo Usar                                      |
+|------------------------------------|----------------------------------------------------------------|--------------------------------------------------|
+| **Reset**                          | Limpia ventana completamente, nuevo agente                     | Sonnet 4.5 (context anxiety)                     |
+| **Compaction**                     | Resume misma sesión, historia acortada                         | Opus 4.6+                                        |
 
 ### Hallazgo
 - Opus 4.6 NO necesita context reset, solo compaction
@@ -125,11 +125,11 @@ Antes de cada sprint, generator + evaluator negocian "done":
 
 ## Ejemplo: Contract Criterion
 
-| Criterion                                                   | Evaluator Finding                                                                 |
-|-------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| Rectangle fill tool allows click-drag                       | **FAIL** - only places tiles at start/end, not filling region                     |
-| User can select and delete spawn points                     | **FAIL** - handler requires both selection AND selectedEntityId                   |
-| User can reorder animation frames via API                   | **FAIL** - route defined after `/{frame_id}`, returns 422                         |
+| Criterion                                                     | Evaluator Finding                                                                   |
+|---------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Rectangle fill tool allows click-drag                         | **FAIL** - only places tiles at start/end, not filling region                       |
+| User can select and delete spawn points                       | **FAIL** - handler requires both selection AND selectedEntityId                     |
+| User can reorder animation frames via API                     | **FAIL** - route defined after `/{frame_id}`, returns 422                           |
 
 ---
 

@@ -13,12 +13,12 @@ tags: [reunion, equipo, planning]
 
 ## Metadata
 
-| Campo                         | Valor                                                    |
-|-------------------------------|----------------------------------------------------------|
-| Fecha                         | 2026-03-31                                               |
-| Duración                      | 45min                                                    |
-| Participantes                 | [HABLANTE_1], [HABLANTE_2], [HABLANTE_3]                 |
-| Anonimizado                   | ✅ Sí                                                     |
+| Campo                           | Valor                                                      |
+|---------------------------------|------------------------------------------------------------|
+| Fecha                           | 2026-03-31                                                 |
+| Duración                        | 45min                                                      |
+| Participantes                   | [HABLANTE_1], [HABLANTE_2], [HABLANTE_3]                   |
+| Anonimizado                     | ✅ Sí                                                       |
 
 ## Transcripción
 
@@ -48,11 +48,11 @@ tags: [reunion, equipo, planning]
 
 ## Action Items
 
-| Task                                 | Owner                     | Due                        |
-|--------------------------------------|---------------------------|----------------------------|
-| Crear tareas en Jira                 | [PERSONA]                 | 2026-04-01                 |
-| Review PR #45                        | [PERSONA]                 | 2026-04-02                 |
-| Update timeline                      | [PERSONA]                 | 2026-04-01                 |
+| Task                                   | Owner                       | Due                          |
+|----------------------------------------|-----------------------------|------------------------------|
+| Crear tareas en Jira                   | [PERSONA]                   | 2026-04-01                   |
+| Review PR #45                          | [PERSONA]                   | 2026-04-02                   |
+| Update timeline                        | [PERSONA]                   | 2026-04-01                   |
 
 ## Notas Técnicas
 

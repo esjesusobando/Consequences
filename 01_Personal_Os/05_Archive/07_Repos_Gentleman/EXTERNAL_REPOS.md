@@ -8,12 +8,12 @@
 
 ## 1. Skill Creator Official (Anthropic)
 
-| Dato                              | Valor                                                                   |
-|-----------------------------------|-------------------------------------------------------------------------|
-| **URL**                           | `https://github.com/anthropics/claude-plugins-official`                 |
-| **Carpeta local**                 | `claude-plugins-official/`                                              |
-| **Propósito**                     | Skill Creator v2.0 con sistema de evaluación                            |
-| **Fecha clonado**                 | 2026-03-27                                                              |
+| Dato                                | Valor                                                                     |
+|-------------------------------------|---------------------------------------------------------------------------|
+| **URL**                             | `https://github.com/anthropics/claude-plugins-official`                   |
+| **Carpeta local**                   | `claude-plugins-official/`                                                |
+| **Propósito**                       | Skill Creator v2.0 con sistema de evaluación                              |
+| **Fecha clonado**                   | 2026-03-27                                                                |
 
 ### Para clonar en otra máquina:
 
@@ -31,14 +31,14 @@ git clone https://github.com/anthropics/claude-plugins-official
 
 ## 2. Sub-Agent Statusline (Joaquinvesapa)
 
-| Dato                              | Valor                                                                   |
-|-----------------------------------|-------------------------------------------------------------------------|
-| **URL**                           | `https://github.com/Joaquinvesapa/sub-agent-statusline`                 |
-| **Carpeta local**                 | `sub-agent-statusline/`                                                 |
-| **Propósito**                     | Monitor Sidebar para OpenCode — tracking de subagentes en tiempo real   |
-| **npm**                           | `opencode-subagent-statusline` (instalado globalmente)                  |
-| **Fecha clonado**                 | 2026-04-25                                                              |
-| **Stars**                         | 32 ⭐                                                                    | **Forks** | 6 |
+| Dato                                | Valor                                                                     |
+|-------------------------------------|---------------------------------------------------------------------------|
+| **URL**                             | `https://github.com/Joaquinvesapa/sub-agent-statusline`                   |
+| **Carpeta local**                   | `sub-agent-statusline/`                                                   |
+| **Propósito**                       | Monitor Sidebar para OpenCode — tracking de subagentes en tiempo real     |
+| **npm**                             | `opencode-subagent-statusline` (instalado globalmente)                    |
+| **Fecha clonado**                   | 2026-04-25                                                                |
+| **Stars**                           | 32 ⭐                                                                      | **Forks** | 6 |
 
 ### Para clonar en otra máquina:
 
@@ -70,14 +70,14 @@ npm install -g opencode-subagent-statusline
 
 ## 4. Frontend Slides (zarazhangrui) ⭐ PREDETERMINADA PARA PRESENTACIONES
 
-| Dato                              | Valor                                                                      |
-|-----------------------------------|----------------------------------------------------------------------------|
-| **URL**                           | `https://github.com/zarazhangrui/frontend-slides`                          |
-| **Carpeta local**                 | `frontend-slides/`                                                         |
-| **Propósito**                     | HTML Presentations — Skill para crear presentaciones web de alto impacto   |
-| **Stack**                         | Zero dependencies (HTML inline), CSS/JS embebido                           |
-| **Fecha clonado**                 | 2026-04-28                                                                 |
-| **Stars**                         | ⭐⭐⭐ Destacada                                                              |
+| Dato                                | Valor                                                                        |
+|-------------------------------------|------------------------------------------------------------------------------|
+| **URL**                             | `https://github.com/zarazhangrui/frontend-slides`                            |
+| **Carpeta local**                   | `frontend-slides/`                                                           |
+| **Propósito**                       | HTML Presentations — Skill para crear presentaciones web de alto impacto     |
+| **Stack**                           | Zero dependencies (HTML inline), CSS/JS embebido                             |
+| **Fecha clonado**                   | 2026-04-28                                                                   |
+| **Stars**                           | ⭐⭐⭐ Destacada                                                                |
 
 ### ¿Por qué esta es la predeterminada?
 
@@ -124,14 +124,14 @@ npx playwright install chromium  # Para PDF export
 
 ## 5. TubeMaster (Gentleman-Programming)
 
-| Dato                              | Valor                                                                   |
-|-----------------------------------|-------------------------------------------------------------------------|
-| **URL**                           | `https://github.com/Gentleman-Programming/tubemaster`                   |
-| **Carpeta local**                 | `tubemaster/`                                                           |
-| **Propósito**                     | YouTube Channel Operations Manager — Web UI, CLI, MCP, API              |
-| **Stack**                         | TypeScript, Next.js 15, Tailwind CSS                                    |
-| **Fecha clonado**                 | 2026-04-25                                                              |
-| **Stars**                         | 9 ⭐                                                                     | **Forks** | 2 |
+| Dato                                | Valor                                                                     |
+|-------------------------------------|---------------------------------------------------------------------------|
+| **URL**                             | `https://github.com/Gentleman-Programming/tubemaster`                     |
+| **Carpeta local**                   | `tubemaster/`                                                             |
+| **Propósito**                       | YouTube Channel Operations Manager — Web UI, CLI, MCP, API                |
+| **Stack**                           | TypeScript, Next.js 15, Tailwind CSS                                      |
+| **Fecha clonado**                   | 2026-04-25                                                                |
+| **Stars**                           | 9 ⭐                                                                       | **Forks** | 2 |
 
 ### Funcionalidades:
 - Auth once → operate end-to-end: videos, metadata, transcripts, playlists, rules

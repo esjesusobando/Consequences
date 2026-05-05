@@ -37,12 +37,12 @@ Diseño editorial de alto impacto basado en la metodología de contraste binario
 
 ### Paleta Base
 
-| Color                | Rol           | Uso Estratégico                                |
-|----------------------|---------------|------------------------------------------------|
-| **Rojo intenso**     | Acento        | Energía, urgencia, decisión. Call to action.   |
-| **Azul eléctrico**   | Base sólida   | Profundidad, contraste, confianza              |
-| **Negro**            | Ancla         | Control, elegancia, control visual             |
-| **Grises**           | Respiro       | Evitan que todo grite al mismo tiempo          |
+| Color                  | Rol             | Uso Estratégico                                  |
+|------------------------|-----------------|--------------------------------------------------|
+| **Rojo intenso**       | Acento          | Energía, urgencia, decisión. Call to action.     |
+| **Azul eléctrico**     | Base sólida     | Profundidad, contraste, confianza                |
+| **Negro**              | Ancla           | Control, elegancia, control visual               |
+| **Grises**             | Respiro         | Evitan que todo grite al mismo tiempo            |
 
 ### Reglas de Aplicación
 
@@ -160,11 +160,11 @@ O es color vibrante (Rojo/Azul) O es neutro (Negro/Blanco)
 
 Si las fuentes originales no están disponibles:
 
-| Original         | Fallback 1             | Fallback 2     |
-|------------------|------------------------|----------------|
-| Knockout HTF     | Bebas Neue             | Impact         |
-| Mark Pro Black   | Helvetica Neue Bold    | Arial Black    |
-| Mark Pro Light   | Helvetica Neue Light   | Arial          |
+| Original           | Fallback 1               | Fallback 2       |
+|--------------------|--------------------------|------------------|
+| Knockout HTF       | Bebas Neue               | Impact           |
+| Mark Pro Black     | Helvetica Neue Bold      | Arial Black      |
+| Mark Pro Light     | Helvetica Neue Light     | Arial            |
 
 ---
 

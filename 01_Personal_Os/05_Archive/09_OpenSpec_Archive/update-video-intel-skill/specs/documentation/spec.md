@@ -128,10 +128,10 @@ None.
 
 ## Spec Metadata
 
-| Field                      | Value                                        |
-|----------------------------|----------------------------------------------|
-| Change                     | update-video-intel-skill                     |
-| Domain                     | documentation                                |
-| Type                       | Delta                                        |
-| Requirements               | 5 added, 2 modified, 0 removed               |
-| Scenarios                  | 12                                           |
+| Field                        | Value                                          |
+|------------------------------|------------------------------------------------|
+| Change                       | update-video-intel-skill                       |
+| Domain                       | documentation                                  |
+| Type                         | Delta                                          |
+| Requirements                 | 5 added, 2 modified, 0 removed                 |
+| Scenarios                    | 12                                             |

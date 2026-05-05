@@ -221,14 +221,14 @@ Pasos concretos que Claude debe seguir.
 
 ## 7. Tips: que hace una skill *excelsa*
 
-| Dimension                 | Skill pobre                  | Skill excelsa                                       |
-|---------------------------|------------------------------|-----------------------------------------------------|
-| **Trigger**               | "ayuda con codigo"           | "auditar WCAG 2.2 AA de componente React"           |
-| **Scope**                 | hace 10 cosas                | hace 1 cosa muy bien                                |
-| **Evidence**              | "yo creo que..."             | cita archivo, linea, regla WCAG                     |
-| **Frontmatter**           | roto, sin triggers           | YAML valido + triggers literales                    |
-| **Ejemplos**              | cero                         | 3+ input/output reales                              |
-| **Auxiliares**            | todo inline                  | scripts/templates en archivos separados             |
+| Dimension                   | Skill pobre                    | Skill excelsa                                         |
+|-----------------------------|--------------------------------|-------------------------------------------------------|
+| **Trigger**                 | "ayuda con codigo"             | "auditar WCAG 2.2 AA de componente React"             |
+| **Scope**                   | hace 10 cosas                  | hace 1 cosa muy bien                                  |
+| **Evidence**                | "yo creo que..."               | cita archivo, linea, regla WCAG                       |
+| **Frontmatter**             | roto, sin triggers             | YAML valido + triggers literales                      |
+| **Ejemplos**                | cero                           | 3+ input/output reales                                |
+| **Auxiliares**              | todo inline                    | scripts/templates en archivos separados               |
 
 **Regla de oro:** si el trigger es ambiguo, la skill nunca se activa cuando debe. Skill Creator te **obliga** a pulir el trigger antes de guardar.
 

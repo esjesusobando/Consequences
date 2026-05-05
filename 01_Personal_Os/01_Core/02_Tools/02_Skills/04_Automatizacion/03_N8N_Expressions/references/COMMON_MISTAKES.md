@@ -356,23 +356,23 @@ Hello {{$json.name}}!           // n8n expressions auto-concatenate
 
 ## Quick Reference Table
 
-| Error                                          | Symptom                                    | Fix                                              |
-|------------------------------------------------|--------------------------------------------|--------------------------------------------------|
-| No {{ }}                                       | Literal text                               | Add {{ }}                                        |
-| Webhook data                                   | Undefined                                  | Add `.body`                                      |
-| Space in field                                 | Syntax error                               | Use `['field name']`                             |
-| Space in node                                  | Undefined                                  | Use `["Node Name"]`                              |
-| Wrong case                                     | Undefined                                  | Match exact case                                 |
-| Double {{ }}                                   | Literal braces                             | Remove extra {{ }}                               |
-| .0 array                                       | Syntax error                               | Use [0]                                          |
-| {{ }} in Code                                  | Literal string                             | Remove {{ }}                                     |
-| No quotes in $node                             | Syntax error                               | Add quotes                                       |
-| Wrong path                                     | Undefined                                  | Check data structure                             |
-| = in text                                      | Literal =                                  | Remove = prefix                                  |
-| Dynamic path                                   | Doesn't work                               | Use static path                                  |
-| Missing .json                                  | Undefined                                  | Add .json                                        |
-| Template literals                              | Literal text                               | Use {{ }}                                        |
-| Empty {{ }}                                    | Literal braces                             | Add expression                                   |
+| Error                                            | Symptom                                      | Fix                                                |
+|--------------------------------------------------|----------------------------------------------|----------------------------------------------------|
+| No {{ }}                                         | Literal text                                 | Add {{ }}                                          |
+| Webhook data                                     | Undefined                                    | Add `.body`                                        |
+| Space in field                                   | Syntax error                                 | Use `['field name']`                               |
+| Space in node                                    | Undefined                                    | Use `["Node Name"]`                                |
+| Wrong case                                       | Undefined                                    | Match exact case                                   |
+| Double {{ }}                                     | Literal braces                               | Remove extra {{ }}                                 |
+| .0 array                                         | Syntax error                                 | Use [0]                                            |
+| {{ }} in Code                                    | Literal string                               | Remove {{ }}                                       |
+| No quotes in $node                               | Syntax error                                 | Add quotes                                         |
+| Wrong path                                       | Undefined                                    | Check data structure                               |
+| = in text                                        | Literal =                                    | Remove = prefix                                    |
+| Dynamic path                                     | Doesn't work                                 | Use static path                                    |
+| Missing .json                                    | Undefined                                    | Add .json                                          |
+| Template literals                                | Literal text                                 | Use {{ }}                                          |
+| Empty {{ }}                                      | Literal braces                               | Add expression                                     |
 
 ---
 

@@ -292,12 +292,12 @@ Notar:
 
 ## 4. Las 4 pruebas que un diagrama DEBE pasar
 
-| #             | Prueba                 | Pregunta                                                                               | Falla tipica                                        |
-|---------------|------------------------|----------------------------------------------------------------------------------------|-----------------------------------------------------|
-| 1             | Isomorfa               | Si borro TODO el texto, se sigue entendiendo la estructura mental?                     | Fila de cajas identicas                             |
-| 2             | Ensenanza              | Alguien puede APRENDER algo concreto leyendo las partes, o solo hay rotulos?           | Cajas con la palabra "API" y nada adentro           |
-| 3             | Patron unico           | Hay una unica geometria dominante (abanico O embudo O arbol O nubes)?                  | Mezcla desordenada de formas                        |
-| 4             | Multi-zoom             | Hay al menos 3 niveles (macro flujo / zonas / detalle con evidencia)?                  | Todo al mismo nivel de abstraccion                  |
+| #               | Prueba                   | Pregunta                                                                                 | Falla tipica                                          |
+|-----------------|--------------------------|------------------------------------------------------------------------------------------|-------------------------------------------------------|
+| 1               | Isomorfa                 | Si borro TODO el texto, se sigue entendiendo la estructura mental?                       | Fila de cajas identicas                               |
+| 2               | Ensenanza                | Alguien puede APRENDER algo concreto leyendo las partes, o solo hay rotulos?             | Cajas con la palabra "API" y nada adentro             |
+| 3               | Patron unico             | Hay una unica geometria dominante (abanico O embudo O arbol O nubes)?                    | Mezcla desordenada de formas                          |
+| 4               | Multi-zoom               | Hay al menos 3 niveles (macro flujo / zonas / detalle con evidencia)?                    | Todo al mismo nivel de abstraccion                    |
 
 Si un diagrama falla cualquiera, la skill lo re-disena antes de guardar.
 

@@ -19,24 +19,24 @@
 
 ### 3. Analysis Dimensions
 
-| Dimension                    | What to Look For                                 |
-|------------------------------|--------------------------------------------------|
-| Positioning                  | How do they position themselves?                 |
-| Product                      | Features, UX, quality                            |
-| Pricing                      | Model, tiers, discounts                          |
-| Go-to-market                 | Channels, messages, campaigns                    |
-| Customers                    | Who do they serve?                               |
-| Strengths                    | What do they do well?                            |
-| Weaknesses                   | Where are they vulnerable?                       |
+| Dimension                      | What to Look For                                   |
+|--------------------------------|----------------------------------------------------|
+| Positioning                    | How do they position themselves?                   |
+| Product                        | Features, UX, quality                              |
+| Pricing                        | Model, tiers, discounts                            |
+| Go-to-market                   | Channels, messages, campaigns                      |
+| Customers                      | Who do they serve?                                 |
+| Strengths                      | What do they do well?                              |
+| Weaknesses                     | Where are they vulnerable?                         |
 
 ### 4. Competitive Matrix
 
 ```
-| Feature                             | Us                      | Comp A                   | Comp B                   |
-|-------------------------------------|-------------------------|--------------------------|--------------------------|
-| Feature 1                           | ✅                       | ✅                        | ❌                        |
-| Feature 2                           | ✅                       | ❌                        | ✅                        |
-| Price                               | $$                      | $$$                      | $                        |
+| Feature                               | Us                        | Comp A                     | Comp B                     |
+|---------------------------------------|---------------------------|----------------------------|----------------------------|
+| Feature 1                             | ✅                         | ✅                          | ❌                          |
+| Feature 2                             | ✅                         | ❌                          | ✅                          |
+| Price                                 | $$                        | $$$                        | $                          |
 ```
 
 ## Competitive Response

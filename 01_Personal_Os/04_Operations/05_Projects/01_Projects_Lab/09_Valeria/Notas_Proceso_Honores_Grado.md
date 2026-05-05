@@ -49,15 +49,15 @@ Crear invitación HTML interactiva nivel SOTA para "Honores de Grado" — imagen
 
 ## Datos del Evento
 
-| Campo          | Valor                                          |
-|----------------|------------------------------------------------|
-| Nombre         | Honores de Grado — Valeria                     |
-| Fecha          | 09 Mayo 2026                                   |
-| Hora           | 7:30 PM                                        |
-| Lugar          | Summerfield Community                          |
-| Contacto RSVP  | Yanth Reyes (WhatsApp +1 786 622 3908)         |
-| Dirección      | 6542 SE Twin Oaks Circle, Stuart, FL 34997     |
-| Gate Code      | #2424                                          |
+| Campo            | Valor                                            |
+|------------------|--------------------------------------------------|
+| Nombre           | Honores de Grado — Valeria                       |
+| Fecha            | 09 Mayo 2026                                     |
+| Hora             | 7:30 PM                                          |
+| Lugar            | Summerfield Community                            |
+| Contacto RSVP    | Yanth Reyes (WhatsApp +1 786 622 3908)           |
+| Dirección        | 6542 SE Twin Oaks Circle, Stuart, FL 34997       |
+| Gate Code        | #2424                                            |
 
 ---
 
@@ -92,13 +92,13 @@ Crear invitación HTML interactiva nivel SOTA para "Honores de Grado" — imagen
 
 ## Decisiones Técnicas
 
-| Decisión | Razón |
-|-----------|-------|
-| `object-position: center 60%` | Mostra imagen desde area de manos hacia arriba |
-| Gradient negro 65% | Cubre texto "Ingeniería Eléctrica" de la imagen |
-| `margin-top: -25vh` | Posiciona título sobre imagen |
-| `::before` en botones | Efecto glass sutil en hover |
-| Scroll hint fijo | Guía UX para scroll |
+| Decisión                      | Razón                                           |
+|-------------------------------|-------------------------------------------------|
+| `object-position: center 60%` | Mostra imagen desde area de manos hacia arriba  |
+| Gradient negro 65%            | Cubre texto "Ingeniería Eléctrica" de la imagen |
+| `margin-top: -25vh`           | Posiciona título sobre imagen                   |
+| `::before` en botones         | Efecto glass sutil en hover                     |
+| Scroll hint fijo              | Guía UX para scroll                             |
 
 ---
 
@@ -121,13 +121,13 @@ Crear invitación HTML interactiva nivel SOTA para "Honores de Grado" — imagen
 - **Text gradient** — rojo gradient en "GRADO" y gate code
 
 ### Decisiones Técnicas v2
-| Decisión | Razón |
-|---------|-------|
+| Decisión                            | Razón                                          |
+|-------------------------------------|------------------------------------------------|
 | `cubic-bezier(0.34, 1.56, 0.64, 1)` | Spring bounce physics para hover/active states |
-| `scale(0.965) translateY(2px)` | Press effect más natural |
-| `backdrop-filter: saturate(180%)` | Glass más vivo, menos plano |
-| Canvas particles con `globalAlpha` | Alpha por partícula para fade suave |
-| Burst particles con gravity | `speedY += 0.05` hace caída natural |
+| `scale(0.965) translateY(2px)`      | Press effect más natural                       |
+| `backdrop-filter: saturate(180%)`   | Glass más vivo, menos plano                    |
+| Canvas particles con `globalAlpha`  | Alpha por partícula para fade suave            |
+| Burst particles con gravity         | `speedY += 0.05` hace caída natural            |
 
 ---
 

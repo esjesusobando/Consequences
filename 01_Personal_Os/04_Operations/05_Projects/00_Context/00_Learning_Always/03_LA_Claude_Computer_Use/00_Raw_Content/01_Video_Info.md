@@ -1,13 +1,13 @@
 # 📹 Claude Computer Use — Video Info
 
-| Campo                    | Valor                                                    |
-|--------------------------|----------------------------------------------------------|
-| **URL**                  | https://www.youtube.com/watch?v=N9RhW5pexrs              |
-| **Título**               | [Tutorial]                                               |
-| **Autor**                | [ Productive Dude ]                                      |
-| **Duración**             | ~01:52:38                                                |
-| **Fecha**                | 2026-04-13                                               |
-| **Tema**                 | Claude Computer Use — AI que controla tu Mac             |
+| Campo                      | Valor                                                      |
+|----------------------------|------------------------------------------------------------|
+| **URL**                    | https://www.youtube.com/watch?v=N9RhW5pexrs                |
+| **Título**                 | [Tutorial]                                                 |
+| **Autor**                  | [ Productive Dude ]                                        |
+| **Duración**               | ~01:52:38                                                  |
+| **Fecha**                  | 2026-04-13                                                 |
+| **Tema**                   | Claude Computer Use — AI que controla tu Mac               |
 
 ---
 
@@ -23,16 +23,16 @@ Claude Computer Use es una feature de Anthropic que permite a Claude controlar t
 
 ## 🛠️ Features Principales
 
-| #               | Feature                            | Descripción                                         |
-|-----------------|------------------------------------|-----------------------------------------------------|
-| 1               | **Computer Use**                   | Claude controla mouse, keyboard, clicks             |
-| 2               | **Browser Use**                    | Claude navega websites en Chrome                    |
-| 3               | **Claude Dispatch**                | Enviar tareas desde tu phone                        |
-| 4               | **Vision-Action Loop**             | Screenshot → analiza → actúa                        |
-| 5               | **Cowork Mode**                    | Trabaja con archivos y web                          |
-| 6               | **Scheduled Tasks**                | Tareas programadas                                  |
-| 7               | **Connectors**                     | Integración con Notion, Gmail, Calendar             |
-| 8               | **Skills**                         | Custom skills                                       |
+| #                 | Feature                              | Descripción                                           |
+|-------------------|--------------------------------------|-------------------------------------------------------|
+| 1                 | **Computer Use**                     | Claude controla mouse, keyboard, clicks               |
+| 2                 | **Browser Use**                      | Claude navega websites en Chrome                      |
+| 3                 | **Claude Dispatch**                  | Enviar tareas desde tu phone                          |
+| 4                 | **Vision-Action Loop**               | Screenshot → analiza → actúa                          |
+| 5                 | **Cowork Mode**                      | Trabaja con archivos y web                            |
+| 6                 | **Scheduled Tasks**                  | Tareas programadas                                    |
+| 7                 | **Connectors**                       | Integración con Notion, Gmail, Calendar               |
+| 8                 | **Skills**                           | Custom skills                                         |
 
 ---
 

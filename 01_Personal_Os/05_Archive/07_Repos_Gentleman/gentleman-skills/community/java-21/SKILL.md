@@ -109,11 +109,11 @@ new Thread(() -> blockingFetch("https://api" )).start();
 
 ## Quick Reference
 
-| Task                             | Pattern                                      |
-|----------------------------------|----------------------------------------------|
-| Immutable DTOs                   | Use records with validation                  |
-| Closed hierarchies               | Use sealed interfaces + switch               |
-| Blocking I/O scale               | Use virtual threads executor                 |
+| Task                               | Pattern                                        |
+|------------------------------------|------------------------------------------------|
+| Immutable DTOs                     | Use records with validation                    |
+| Closed hierarchies                 | Use sealed interfaces + switch                 |
+| Blocking I/O scale                 | Use virtual threads executor                   |
 
 ## Resources
 

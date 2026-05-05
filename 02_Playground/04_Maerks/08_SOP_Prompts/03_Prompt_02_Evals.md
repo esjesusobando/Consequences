@@ -61,10 +61,10 @@ type: [AGENT|WORKFLOW|SYSTEM]
 
 ## 📊 Métricas
 
-| Métrica                     | Target                   | Actual                   |
-|-----------------------------|--------------------------|--------------------------|
-| [Métrica 1]                 | [valor]                  | [valor]                  |
-| [Métrica 2]                 | [valor]                  | [valor]                  |
+| Métrica                       | Target                     | Actual                     |
+|-------------------------------|----------------------------|----------------------------|
+| [Métrica 1]                   | [valor]                    | [valor]                    |
+| [Métrica 2]                   | [valor]                    | [valor]                    |
 
 ## 🔧 Herramientas de Evaluación
 - Usar: `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`

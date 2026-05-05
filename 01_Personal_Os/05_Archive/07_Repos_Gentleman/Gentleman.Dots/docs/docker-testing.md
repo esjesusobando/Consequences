@@ -24,13 +24,13 @@ docker run -it --rm gentleman-test
 
 ## Container Environment
 
-| Setting                      | Value                                         |
-|------------------------------|-----------------------------------------------|
-| Base Image                   | Ubuntu 22.04                                  |
-| Username                     | `testuser`                                    |
-| Password                     | `test`                                        |
-| Sudo                         | Passwordless (NOPASSWD)                       |
-| Installer Path               | `/usr/local/bin/gentleman.dots`               |
+| Setting                        | Value                                           |
+|--------------------------------|-------------------------------------------------|
+| Base Image                     | Ubuntu 22.04                                    |
+| Username                       | `testuser`                                      |
+| Password                       | `test`                                          |
+| Sudo                           | Passwordless (NOPASSWD)                         |
+| Installer Path                 | `/usr/local/bin/gentleman.dots`                 |
 
 > **Note**: The user has passwordless sudo, so you won't need the password for most operations.
 

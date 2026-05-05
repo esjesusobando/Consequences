@@ -114,11 +114,11 @@ const badExample = () => {
 
 ## Quick Reference
 
-| Task                   | Pattern                      |
-|------------------------|------------------------------|
-| [Task 1]               | `code snippet`               |
-| [Task 2]               | `code snippet`               |
-| [Task 3]               | `code snippet`               |
+| Task                     | Pattern                        |
+|--------------------------|--------------------------------|
+| [Task 1]                 | `code snippet`                 |
+| [Task 2]                 | `code snippet`                 |
+| [Task 3]                 | `code snippet`                 |
 
 ## Resources
 

@@ -42,20 +42,20 @@ Complete Marketing Agents system based on YouTube video about Claude Code, bring
 
 ## Files Creados/Modificados
 
-| Archivo                                                                           | Cambio                                                   |
-|-----------------------------------------------------------------------------------|----------------------------------------------------------|
-| `.agent/01_Agents/13_Content_Transformer.md`                                      | NEW - Raw content multi-channel transformer              |
-| `.agent/01_Agents/14_Youtube_Script_Writer.md`                                    | NEW - Topic → YouTube script with timestamps             |
-| `.agent/01_Agents/15_Youtube_Thumbnail_Prompter.md`                               | NEW - Script → AI image prompts                          |
-| `.agent/01_Agents/16_Youtube_Title_Generator.md`                                  | NEW - Script → 10+ titles with scoring                   |
-| `.agent/01_Agents/03_Contexto/`                                                   | NEW - Context folder                                     |
-| `.agent/01_Agents/04_Marca/`                                                      | NEW - Brand manual folder                                |
-| `.agent/01_Agents/05_Plantillas/`                                                 | NEW - Templates folder                                   |
-| `.agent/03_Workflows/27_Youtube_Full_Video.md`                                    | NEW - Orchestrator workflow                              |
-| `02_Knowledge/03_Writing_Content/Skill_Carousel.md`                               | MOVED                                                    |
-| `05_Archive/08_Planes_Estrategicos/Plan_Claude_2026-04-20.md`                     | ARCHIVED (100%)                                          |
-| `05_Archive/08_Planes_Estrategicos/Plan_Gcierr_2026-04-20.md`                     | ARCHIVED (100%)                                          |
-| `05_Archive/08_Planes_Estrategicos/Implementation_Plan_2026-04-20.md`             | ARCHIVED (100%)                                          |
+| Archivo                                                                             | Cambio                                                     |
+|-------------------------------------------------------------------------------------|------------------------------------------------------------|
+| `.agent/01_Agents/13_Content_Transformer.md`                                        | NEW - Raw content multi-channel transformer                |
+| `.agent/01_Agents/14_Youtube_Script_Writer.md`                                      | NEW - Topic → YouTube script with timestamps               |
+| `.agent/01_Agents/15_Youtube_Thumbnail_Prompter.md`                                 | NEW - Script → AI image prompts                            |
+| `.agent/01_Agents/16_Youtube_Title_Generator.md`                                    | NEW - Script → 10+ titles with scoring                     |
+| `.agent/01_Agents/03_Contexto/`                                                     | NEW - Context folder                                       |
+| `.agent/01_Agents/04_Marca/`                                                        | NEW - Brand manual folder                                  |
+| `.agent/01_Agents/05_Plantillas/`                                                   | NEW - Templates folder                                     |
+| `.agent/03_Workflows/27_Youtube_Full_Video.md`                                      | NEW - Orchestrator workflow                                |
+| `02_Knowledge/03_Writing_Content/Skill_Carousel.md`                                 | MOVED                                                      |
+| `05_Archive/08_Planes_Estrategicos/Plan_Claude_2026-04-20.md`                       | ARCHIVED (100%)                                            |
+| `05_Archive/08_Planes_Estrategicos/Plan_Gcierr_2026-04-20.md`                       | ARCHIVED (100%)                                            |
+| `05_Archive/08_Planes_Estrategicos/Implementation_Plan_2026-04-20.md`               | ARCHIVED (100%)                                            |
 
 ---
 
@@ -63,12 +63,12 @@ Complete Marketing Agents system based on YouTube video about Claude Code, bring
 
 ### 🔴 Optimizar_Scripts_Skills.md (PENDIENTE - TU VIDA GENTLEMAN DEPENDE DE ELLO)
 
-| #               | Hallazgo                                        | Estado                                                | Notes               |
-|-----------------|-------------------------------------------------|-------------------------------------------------------|---------------------|
-| 1               | `.gitmodules` rutas desincronizadas             | ✅ RESUELTO anteriormente                              |
-| 2               | Falta script de integridad                      | ✅ RESUELTO (`15_SOTA_Integrity_Check.py`)             |
-| 3               | Rutas hardcodeadas en scripts                   | ⚠️ PENDIENTE                                          |
-| 4               | Scripts NO migration a skills                   | ⚠️ PENDIENTE - CRÍTICO                                |
+| #                 | Hallazgo                                          | Estado                                                  | Notes                 |
+|-------------------|---------------------------------------------------|---------------------------------------------------------|-----------------------|
+| 1                 | `.gitmodules` rutas desincronizadas               | ✅ RESUELTO anteriormente                                |
+| 2                 | Falta script de integridad                        | ✅ RESUELTO (`15_SOTA_Integrity_Check.py`)               |
+| 3                 | Rutas hardcodeadas en scripts                     | ⚠️ PENDIENTE                                            |
+| 4                 | Scripts NO migration a skills                     | ⚠️ PENDIENTE - CRÍTICO                                  |
 
 **Pendiente de Optimizar_Scripts_Skills.md:**
 - [ ] Mover scripts de `03_Scripts_Os/01_Ritual/` → habilidades en `01_Personal_Os/01_Core/02_Tools/02_Skills/`
@@ -79,12 +79,12 @@ Complete Marketing Agents system based on YouTube video about Claude Code, bring
 
 ### 🔴 Avengers_Plan.md (PENDIENTE - TU VIDA GENTLEMAN DEPENDE DE ELLO)
 
-| #               | Hallazgo                                       | Estado                                           | Notes               |
-|-----------------|------------------------------------------------|--------------------------------------------------|---------------------|
-| 1               | Nombres Avenger (Thor/Hulk/Vision)             | ⚠️ PENDIENTE - necesito tu respuesta             |
-| 2               | 10_Legacy folder existe?                       | ⚠️ VERIFICAR                                     |
-| 3               | Migración Scripts → Skills                     | ⚠️ PENDIENTE                                     |
-| 4               | SOTA Security Report                           | ⚠️ PENDIENTE                                     |
+| #                 | Hallazgo                                         | Estado                                             | Notes                 |
+|-------------------|--------------------------------------------------|----------------------------------------------------|-----------------------|
+| 1                 | Nombres Avenger (Thor/Hulk/Vision)               | ⚠️ PENDIENTE - necesito tu respuesta               |
+| 2                 | 10_Legacy folder existe?                         | ⚠️ VERIFICAR                                       |
+| 3                 | Migración Scripts → Skills                       | ⚠️ PENDIENTE                                       |
+| 4                 | SOTA Security Report                             | ⚠️ PENDIENTE                                       |
 
 **Pendiente de Avengers_Plan.md:**
 - [ ] Decide: ¿mantener nombres Avenger o renombrar a términos SOTA?

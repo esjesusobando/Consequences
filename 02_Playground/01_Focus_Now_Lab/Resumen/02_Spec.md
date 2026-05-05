@@ -158,13 +158,13 @@ max-width: 900px
 
 ### Motion Philosophy
 
-| Element                          | Animation                            | Duration                   | Easing                                       |
-|----------------------------------|--------------------------------------|----------------------------|----------------------------------------------|
-| Page transitions                 | Fade out/in                          | 180ms                      | ease-out                                     |
-| Theme toggle                     | Slide + color change                 | 400ms                      | cubic-bezier(0.4, 0, 0.2, 1)                 |
-| Hover effects                    | Scale + glow                         | 300ms                      | ease                                         |
-| Scroll progress                  | Width %                              | 100ms                      | linear                                       |
-| Card entrance                    | Fade + translateY                    | 500ms                      | ease-out                                     |
+| Element                            | Animation                              | Duration                     | Easing                                         |
+|------------------------------------|----------------------------------------|------------------------------|------------------------------------------------|
+| Page transitions                   | Fade out/in                            | 180ms                        | ease-out                                       |
+| Theme toggle                       | Slide + color change                   | 400ms                        | cubic-bezier(0.4, 0, 0.2, 1)                   |
+| Hover effects                      | Scale + glow                           | 300ms                        | ease                                           |
+| Scroll progress                    | Width %                                | 100ms                        | linear                                         |
+| Card entrance                      | Fade + translateY                      | 500ms                        | ease-out                                       |
 
 ### Visual Assets
 - **Icons:** Lucide React (consistent, minimal)
@@ -337,14 +337,14 @@ jesus-obando-cv/
 
 ### Interactions
 
-| Element                      | Action                      | Result                                         |
-|------------------------------|-----------------------------|------------------------------------------------|
-| Theme toggle                 | Click                       | Theme cambia + animación slide                 |
-| Scroll                       | Scroll down                 | Progress bar crece                             |
-| Link                         | Hover                       | Glow + underline shimmer                       |
-| Icon                         | Hover                       | Scale + lift                                   |
-| Button                       | Hover                       | Background change                              |
-| Card                         | Hover                       | Shadow intensifies                             |
+| Element                        | Action                        | Result                                           |
+|--------------------------------|-------------------------------|--------------------------------------------------|
+| Theme toggle                   | Click                         | Theme cambia + animación slide                   |
+| Scroll                         | Scroll down                   | Progress bar crece                               |
+| Link                           | Hover                         | Glow + underline shimmer                         |
+| Icon                           | Hover                         | Scale + lift                                     |
+| Button                         | Hover                         | Background change                                |
+| Card                           | Hover                         | Shadow intensifies                               |
 
 ### Edge Cases
 - **No JS:** Contenido visible, sin animaciones
@@ -560,16 +560,16 @@ export default function RootLayout({ children }) {
 
 ### Framework & Tools (Stack SOTA 2026)
 
-| Component                     | Choice                               | Reason                                                            |
-|-------------------------------|--------------------------------------|-------------------------------------------------------------------|
-| Framework                     | Next.js 15                           | App Router, Turbopack (10x faster), typed routes                  |
-| Language                      | TypeScript 5.5                       | Inferred type predicates, satisfies, const params                 |
-| Styling                       | Tailwind CSS v4                      | Oxide engine (7x faster), CSS-first config                        |
-| Animation                     | Motion + AutoAnimate                 | Motion: gestures, transitions; AutoAnimate: lists                 |
-| UI Components                 | shadcn/ui                            | Radix primitives, owned code, no dependencies                     |
-| Theme                         | next-themes                          | Dark/light con CSS variables                                      |
-| Icons                         | Lucide React                         | Consistent, tree-shakeable                                        |
-| Deploy                        | Vercel                               | Zero config, Edge, CDN                                            |
+| Component                       | Choice                                 | Reason                                                              |
+|---------------------------------|----------------------------------------|---------------------------------------------------------------------|
+| Framework                       | Next.js 15                             | App Router, Turbopack (10x faster), typed routes                    |
+| Language                        | TypeScript 5.5                         | Inferred type predicates, satisfies, const params                   |
+| Styling                         | Tailwind CSS v4                        | Oxide engine (7x faster), CSS-first config                          |
+| Animation                       | Motion + AutoAnimate                   | Motion: gestures, transitions; AutoAnimate: lists                   |
+| UI Components                   | shadcn/ui                              | Radix primitives, owned code, no dependencies                       |
+| Theme                           | next-themes                            | Dark/light con CSS variables                                        |
+| Icons                           | Lucide React                           | Consistent, tree-shakeable                                          |
+| Deploy                          | Vercel                                 | Zero config, Edge, CDN                                              |
 
 ### Architecture (SOTA 2026)
 
@@ -676,13 +676,13 @@ export const metadata = {
 
 ### Performance Targets
 
-| Metric                      | Target                   |
-|-----------------------------|--------------------------|
-| LCP                         | < 2.5s                   |
-| FID                         | < 100ms                  |
-| CLS                         | < 0.1                    |
-| Bundle size                 | < 100kb                  |
-| Lighthouse                  | > 90                     |
+| Metric                        | Target                     |
+|-------------------------------|----------------------------|
+| LCP                           | < 2.5s                     |
+| FID                           | < 100ms                    |
+| CLS                           | < 0.1                      |
+| Bundle size                   | < 100kb                    |
+| Lighthouse                    | > 90                       |
 
 ---
 
@@ -816,25 +816,25 @@ const projects = [
 
 ### FelixStyle vs SOTA
 
-| Aspect                   | FelixStyle                             | SOTA                                |
-|--------------------------|----------------------------------------|-------------------------------------|
-| Purpose                  | Impression/branding                    | Application/ATS                     |
-| Design                   | Visual, creative                       | Professional, clean                 |
-| Content                  | Narrative/storytelling                 | Metrics/direct                      |
-| Format                   | Multi-section                          | Classic CV                          |
-| Keywords                 | Embedded                               | Prominent                           |
-| CTA                      | Social links                           | Download PDF                        |
-| Length                   | 1-2 pages                              | 1 page                              |
+| Aspect                     | FelixStyle                               | SOTA                                  |
+|----------------------------|------------------------------------------|---------------------------------------|
+| Purpose                    | Impression/branding                      | Application/ATS                       |
+| Design                     | Visual, creative                         | Professional, clean                   |
+| Content                    | Narrative/storytelling                   | Metrics/direct                        |
+| Format                     | Multi-section                            | Classic CV                            |
+| Keywords                   | Embedded                                 | Prominent                             |
+| CTA                        | Social links                             | Download PDF                          |
+| Length                     | 1-2 pages                                | 1 page                                |
 
 ### When to Use Each
 
-| Situation                         | Use                        |
-|-----------------------------------|----------------------------|
-| Networking                        | FelixStyle                 |
-| Applying to jobs                  | SOTA                       |
-| LinkedIn bio link                 | Either                     |
-| Recruiter meeting                 | FelixStyle                 |
-| ATS submission                    | SOTA                       |
+| Situation                           | Use                          |
+|-------------------------------------|------------------------------|
+| Networking                          | FelixStyle                   |
+| Applying to jobs                    | SOTA                         |
+| LinkedIn bio link                   | Either                       |
+| Recruiter meeting                   | FelixStyle                   |
+| ATS submission                      | SOTA                         |
 
 ---
 

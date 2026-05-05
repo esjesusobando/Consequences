@@ -47,19 +47,19 @@ Branch names are validated by a GitHub ruleset. Pushes that don't match **will b
 
 **Pattern:** `^(feat|fix|chore|docs|style|refactor|perf|test|build|ci|revert)\/[a-z0-9._-]+$`
 
-| Type                      | Branch pattern                         | Example                                          |
-|---------------------------|----------------------------------------|--------------------------------------------------|
-| Feature                   | `feat/<description>`                   | `feat/json-export-command`                       |
-| Bug fix                   | `fix/<description>`                    | `fix/duplicate-observation-insert`               |
-| Chore                     | `chore/<description>`                  | `chore/bump-bubbletea-v0.26`                     |
-| Docs                      | `docs/<description>`                   | `docs/api-reference-update`                      |
-| Style                     | `style/<description>`                  | `style/fix-tui-alignment`                        |
-| Refactor                  | `refactor/<description>`               | `refactor/extract-query-sanitizer`               |
-| Performance               | `perf/<description>`                   | `perf/optimize-fts5-queries`                     |
-| Test                      | `test/<description>`                   | `test/add-sync-coverage`                         |
-| Build                     | `build/<description>`                  | `build/update-go-toolchain`                      |
-| CI                        | `ci/<description>`                     | `ci/split-e2e-job`                               |
-| Revert                    | `revert/<description>`                 | `revert/broken-migration`                        |
+| Type                        | Branch pattern                           | Example                                            |
+|-----------------------------|------------------------------------------|----------------------------------------------------|
+| Feature                     | `feat/<description>`                     | `feat/json-export-command`                         |
+| Bug fix                     | `fix/<description>`                      | `fix/duplicate-observation-insert`                 |
+| Chore                       | `chore/<description>`                    | `chore/bump-bubbletea-v0.26`                       |
+| Docs                        | `docs/<description>`                     | `docs/api-reference-update`                        |
+| Style                       | `style/<description>`                    | `style/fix-tui-alignment`                          |
+| Refactor                    | `refactor/<description>`                 | `refactor/extract-query-sanitizer`                 |
+| Performance                 | `perf/<description>`                     | `perf/optimize-fts5-queries`                       |
+| Test                        | `test/<description>`                     | `test/add-sync-coverage`                           |
+| Build                       | `build/<description>`                    | `build/update-go-toolchain`                        |
+| CI                          | `ci/<description>`                       | `ci/split-e2e-job`                                 |
+| Revert                      | `revert/<description>`                   | `revert/broken-migration`                          |
 
 **Rules:**
 - Description MUST be lowercase
@@ -85,14 +85,14 @@ The linked issue MUST have the `status:approved` label.
 
 Check exactly ONE in the template and add the matching label:
 
-| Checkbox                          | Label to add                         |
-|-----------------------------------|--------------------------------------|
-| Bug fix                           | `type:bug`                           |
-| New feature                       | `type:feature`                       |
-| Documentation only                | `type:docs`                          |
-| Code refactoring                  | `type:refactor`                      |
-| Maintenance/tooling               | `type:chore`                         |
-| Breaking change                   | `type:breaking-change`               |
+| Checkbox                            | Label to add                           |
+|-------------------------------------|----------------------------------------|
+| Bug fix                             | `type:bug`                             |
+| New feature                         | `type:feature`                         |
+| Documentation only                  | `type:docs`                            |
+| Code refactoring                    | `type:refactor`                        |
+| Maintenance/tooling                 | `type:chore`                           |
+| Breaking change                     | `type:breaking-change`                 |
 
 ### 3. Summary
 
@@ -101,9 +101,9 @@ Check exactly ONE in the template and add the matching label:
 ### 4. Changes Table
 
 ```markdown
-| File                         | Change                     |
-|------------------------------|----------------------------|
-| `path/to/file`               | What changed               |
+| File                           | Change                       |
+|--------------------------------|------------------------------|
+| `path/to/file`                 | What changed                 |
 ```
 
 ### 5. Test Plan
@@ -129,13 +129,13 @@ All boxes must be checked:
 
 ## Automated Checks (all 5 must pass)
 
-| Check                       | Job name                                        | What it verifies                                               |
-|-----------------------------|-------------------------------------------------|----------------------------------------------------------------|
-| PR Validation               | `Check Issue Reference`                         | Body contains `Closes/Fixes/Resolves #N`                       |
-| PR Validation               | `Check Issue Has status:approved`               | Linked issue has `status:approved`                             |
-| PR Validation               | `Check PR Has type:* Label`                     | PR has exactly one `type:*` label                              |
-| CI                          | `Unit Tests`                                    | `go test ./...` passes                                         |
-| CI                          | `E2E Tests`                                     | `go test -tags e2e ./internal/server/...` passes               |
+| Check                         | Job name                                          | What it verifies                                                 |
+|-------------------------------|---------------------------------------------------|------------------------------------------------------------------|
+| PR Validation                 | `Check Issue Reference`                           | Body contains `Closes/Fixes/Resolves #N`                         |
+| PR Validation                 | `Check Issue Has status:approved`                 | Linked issue has `status:approved`                               |
+| PR Validation                 | `Check PR Has type:* Label`                       | PR has exactly one `type:*` label                                |
+| CI                            | `Unit Tests`                                      | `go test ./...` passes                                           |
+| CI                            | `E2E Tests`                                       | `go test -tags e2e ./internal/server/...` passes                 |
 
 ---
 
@@ -153,20 +153,20 @@ Commit messages are validated by a GitHub ruleset. Commits that don't match **wi
 
 ### Allowed types
 
-| Type                           | Purpose                               | PR label                              |
-|--------------------------------|---------------------------------------|---------------------------------------|
-| `feat`                         | New feature                           | `type:feature`                        |
-| `fix`                          | Bug fix                               | `type:bug`                            |
-| `docs`                         | Documentation only                    | `type:docs`                           |
-| `refactor`                     | Code refactoring                      | `type:refactor`                       |
-| `chore`                        | Maintenance, deps                     | `type:chore`                          |
-| `style`                        | Formatting, whitespace                | `type:chore`                          |
-| `perf`                         | Performance improvement               | `type:refactor`                       |
-| `test`                         | Adding/fixing tests                   | `type:chore`                          |
-| `build`                        | Build system changes                  | `type:chore`                          |
-| `ci`                           | CI/CD changes                         | `type:chore`                          |
-| `revert`                       | Revert previous commit                | *(match original type)*               |
-| `feat!` / `fix!`               | Breaking change                       | `type:breaking-change`                |
+| Type                             | Purpose                                 | PR label                                |
+|----------------------------------|-----------------------------------------|-----------------------------------------|
+| `feat`                           | New feature                             | `type:feature`                          |
+| `fix`                            | Bug fix                                 | `type:bug`                              |
+| `docs`                           | Documentation only                      | `type:docs`                             |
+| `refactor`                       | Code refactoring                        | `type:refactor`                         |
+| `chore`                          | Maintenance, deps                       | `type:chore`                            |
+| `style`                          | Formatting, whitespace                  | `type:chore`                            |
+| `perf`                           | Performance improvement                 | `type:refactor`                         |
+| `test`                           | Adding/fixing tests                     | `type:chore`                            |
+| `build`                          | Build system changes                    | `type:chore`                            |
+| `ci`                             | CI/CD changes                           | `type:chore`                            |
+| `revert`                         | Revert previous commit                  | *(match original type)*                 |
+| `feat!` / `fix!`                 | Breaking change                         | `type:breaking-change`                  |
 
 ### Rules
 - Type MUST be one of the listed values

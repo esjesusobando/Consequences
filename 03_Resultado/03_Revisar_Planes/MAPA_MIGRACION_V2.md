@@ -48,33 +48,33 @@ Think_Different/ (RAÍZ)
 
 ## 🔄 MAPA DE RUTAS ANTIGUAS → NUEVAS
 
-| ANTIGUO (v1.x)     | NUEVO (v2.0)                                    |
-|--------------------|-------------------------------------------------|
-| `01_Core/`         | `01_Personal_Os/01_Core/`                       |
-| `02_Knowledge/`    | `01_Personal_Os/02_Knowledge/`                  |
-| `03_Tasks/`        | `01_Personal_Os/03_Task/`                       |
-| `04_Operations/`   | `01_Personal_Os/04_Operations/`                 |
-| `05_Archive/`      | `01_Personal_Os/05_Archive/`                    |
-| `06_Playground/`   | `02_Playground/`                                |
-| `07_Projects/`     | `01_Personal_Os/04_Operations/05_Projects/`     |
-| `03_Scripts_Os/`   | `01_Personal_Os/04_Operations/03_Scripts_Os/`   |
-| `Now/`             | `03_Resultado/`                                 |
+| ANTIGUO (v1.x)       | NUEVO (v2.0)                                      |
+|----------------------|---------------------------------------------------|
+| `01_Core/`           | `01_Personal_Os/01_Core/`                         |
+| `02_Knowledge/`      | `01_Personal_Os/02_Knowledge/`                    |
+| `03_Tasks/`          | `01_Personal_Os/03_Task/`                         |
+| `04_Operations/`     | `01_Personal_Os/04_Operations/`                   |
+| `05_Archive/`        | `01_Personal_Os/05_Archive/`                      |
+| `06_Playground/`     | `02_Playground/`                                  |
+| `07_Projects/`       | `01_Personal_Os/04_Operations/05_Projects/`       |
+| `03_Scripts_Os/`     | `01_Personal_Os/04_Operations/03_Scripts_Os/`     |
+| `Now/`               | `03_Resultado/`                                   |
 
 ### Subdirectorios Core
 
-| ANTIGUO                      | NUEVO                                                |
-|------------------------------|------------------------------------------------------|
-| `01_Core/00_Workflows/`      | `01_Personal_Os/01_Core/00_Workflows_Os/`            |
-| `01_Core/01_Rules/`          | `01_Personal_Os/01_Core/01_Rules/`                   |
-| `01_Core/02_Evals/`          | `01_Personal_Os/01_Core/02_Tools/08_Evals/`          |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/`         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`         |
-| `01_Core/04_Agents/`         | `01_Personal_Os/01_Core/02_Tools/01_Agents/`         |
-| `01_Core/05_Mcp/`            | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`            |
-| `01_Core/06_Integrations/`   | `01_Personal_Os/01_Core/02_Tools/04_Integrations/`   |
-| `01_Core/07_Hooks/`          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`          |
-| `01_Core/08_Plugins/`        | `01_Personal_Os/01_Core/02_Tools/06_Plugins/`        |
-| `01_Core/09_Server/`         | `01_Personal_Os/01_Core/02_Tools/07_Server/`         |
-| `01_Core/10_Templates/`      | `01_Personal_Os/01_Core/02_Tools/09_Templates/`      |
+| ANTIGUO                                      | NUEVO                                                  |
+|----------------------------------------------|--------------------------------------------------------|
+| `01_Core/00_Workflows/`                      | `01_Personal_Os/01_Core/00_Workflows_Os/`              |
+| `01_Core/01_Rules/`                          | `01_Personal_Os/01_Core/01_Rules/`                     |
+| `01_Core/02_Evals/`                          | `01_Personal_Os/01_Core/02_Tools/08_Evals/`            |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/` | `01_Personal_Os/01_Core/02_Tools/02_Skills/`           |
+| `01_Core/04_Agents/`                         | `01_Personal_Os/01_Core/02_Tools/01_Agents/`           |
+| `01_Core/05_Mcp/`                            | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`              |
+| `01_Core/06_Integrations/`                   | `01_Personal_Os/01_Core/02_Tools/04_Integrations/`     |
+| `01_Core/07_Hooks/`                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`            |
+| `01_Core/08_Plugins/`                        | `01_Personal_Os/01_Core/02_Tools/06_Plugins/`          |
+| `01_Core/09_Server/`                         | `01_Personal_Os/01_Core/02_Tools/07_Server/`           |
+| `01_Core/10_Templates/`                      | `01_Personal_Os/01_Core/02_Tools/09_Templates/`        |
 
 ---
 
@@ -104,14 +104,14 @@ Think_Different/ (RAÍZ)
 
 ## 🐛 SCRIPTS CON PATHS HARDCODED
 
-| Script                             | Path a Buscar                                                  | Acción      |
-|------------------------------------|----------------------------------------------------------------|-------------|
-| `config_paths.py`                  | ✅ YA ACTUALIZADO                                               | Listo       |
-| Buscar en docs: `01_Core/`         | Reemplazar por `01_Personal_Os/01_Core/`                       | Pendiente   |
-| Buscar en docs: `02_Knowledge/`    | Reemplazar por `01_Personal_Os/02_Knowledge/`                  | Pendiente   |
-| Buscar en docs: `04_Operations/`   | Reemplazar por `01_Personal_Os/04_Operations/`                 | Pendiente   |
-| Buscar en docs: `06_Playground/`   | Reemplazar por `02_Playground/`                                | Pendiente   |
-| Buscar en docs: `03_Scripts_Os/`   | Reemplazar por `01_Personal_Os/04_Operations/03_Scripts_Os/`   | Pendiente   |
+| Script                               | Path a Buscar                                                    | Acción        |
+|--------------------------------------|------------------------------------------------------------------|---------------|
+| `config_paths.py`                    | ✅ YA ACTUALIZADO                                                 | Listo         |
+| Buscar en docs: `01_Core/`           | Reemplazar por `01_Personal_Os/01_Core/`                         | Pendiente     |
+| Buscar en docs: `02_Knowledge/`      | Reemplazar por `01_Personal_Os/02_Knowledge/`                    | Pendiente     |
+| Buscar en docs: `04_Operations/`     | Reemplazar por `01_Personal_Os/04_Operations/`                   | Pendiente     |
+| Buscar en docs: `06_Playground/`     | Reemplazar por `02_Playground/`                                  | Pendiente     |
+| Buscar en docs: `03_Scripts_Os/`     | Reemplazar por `01_Personal_Os/04_Operations/03_Scripts_Os/`     | Pendiente     |
 
 ---
 

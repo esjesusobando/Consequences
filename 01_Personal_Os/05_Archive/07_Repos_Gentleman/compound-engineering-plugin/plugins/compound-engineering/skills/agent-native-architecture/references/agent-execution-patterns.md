@@ -214,15 +214,15 @@ Different agents need different intelligence levels. Use the cheapest model that
 
 ### Tier Guidelines
 
-| Agent Type                            | Recommended Tier                  | Reasoning                                                   |
-|---------------------------------------|-----------------------------------|-------------------------------------------------------------|
-| Chat/Conversation                     | Balanced (Sonnet)                 | Fast responses, good reasoning                              |
-| Research                              | Balanced (Sonnet)                 | Tool loops, not ultra-complex synthesis                     |
-| Content Generation                    | Balanced (Sonnet)                 | Creative but not synthesis-heavy                            |
-| Complex Analysis                      | Powerful (Opus)                   | Multi-document synthesis, nuanced judgment                  |
-| Profile Generation                    | Powerful (Opus)                   | Photo analysis, complex pattern recognition                 |
-| Quick Queries                         | Fast (Haiku)                      | Simple lookups, quick transformations                       |
-| Simple Classification                 | Fast (Haiku)                      | High volume, simple decisions                               |
+| Agent Type                              | Recommended Tier                    | Reasoning                                                     |
+|-----------------------------------------|-------------------------------------|---------------------------------------------------------------|
+| Chat/Conversation                       | Balanced (Sonnet)                   | Fast responses, good reasoning                                |
+| Research                                | Balanced (Sonnet)                   | Tool loops, not ultra-complex synthesis                       |
+| Content Generation                      | Balanced (Sonnet)                   | Creative but not synthesis-heavy                              |
+| Complex Analysis                        | Powerful (Opus)                     | Multi-document synthesis, nuanced judgment                    |
+| Profile Generation                      | Powerful (Opus)                     | Photo analysis, complex pattern recognition                   |
+| Quick Queries                           | Fast (Haiku)                        | Simple lookups, quick transformations                         |
+| Simple Classification                   | Fast (Haiku)                        | High volume, simple decisions                                 |
 
 ### Implementation
 

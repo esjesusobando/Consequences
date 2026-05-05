@@ -74,17 +74,17 @@ graph TB
 
 ## Capability Comparison
 
-| Capability                                           | Basic Subagents               | Agent Teams Lite               | Full Agent Teams               |
-|------------------------------------------------------|-------------------------------|--------------------------------|--------------------------------|
-| Delegate-only lead                                   | —                             | ✅                              | ✅                              |
-| DAG-based phase orchestration                        | —                             | ✅                              | ✅                              |
-| Parallel phases (spec ∥ design)                      | —                             | ✅                              | ✅                              |
-| Structured result envelope                           | —                             | ✅                              | ✅                              |
-| Pluggable artifact store                             | —                             | ✅                              | ✅                              |
-| **Skill auto-discovery**                             | —                             | ✅                              | ✅                              |
-| Shared task queue with claim/heartbeat               | —                             | —                              | ✅                              |
-| Teammate ↔ teammate communication                    | —                             | —                              | ✅                              |
-| Dynamic work stealing                                | —                             | —                              | ✅                              |
+| Capability                                             | Basic Subagents                 | Agent Teams Lite                 | Full Agent Teams                 |
+|--------------------------------------------------------|---------------------------------|----------------------------------|----------------------------------|
+| Delegate-only lead                                     | —                               | ✅                                | ✅                                |
+| DAG-based phase orchestration                          | —                               | ✅                                | ✅                                |
+| Parallel phases (spec ∥ design)                        | —                               | ✅                                | ✅                                |
+| Structured result envelope                             | —                               | ✅                                | ✅                                |
+| Pluggable artifact store                               | —                               | ✅                                | ✅                                |
+| **Skill auto-discovery**                               | —                               | ✅                                | ✅                                |
+| Shared task queue with claim/heartbeat                 | —                               | —                                | ✅                                |
+| Teammate ↔ teammate communication                      | —                               | —                                | ✅                                |
+| Dynamic work stealing                                  | —                               | —                                | ✅                                |
 
 ---
 
@@ -175,14 +175,14 @@ graph TB
 
 Each sub-agent must return a structured envelope with these fields:
 
-| Field                             | Description                                                           |
-|-----------------------------------|-----------------------------------------------------------------------|
-| `status`                          | `success`, `partial`, or `blocked`                                    |
-| `executive_summary`               | 1-3 sentence summary of what was done                                 |
-| `detailed_report`                 | (optional) Full phase output, or omit if already inline               |
-| `artifacts`                       | List of artifact keys/paths written                                   |
-| `next_recommended`                | The next SDD phase to run, or "none"                                  |
-| `risks`                           | Risks discovered, or "None"                                           |
+| Field                               | Description                                                             |
+|-------------------------------------|-------------------------------------------------------------------------|
+| `status`                            | `success`, `partial`, or `blocked`                                      |
+| `executive_summary`                 | 1-3 sentence summary of what was done                                   |
+| `detailed_report`                   | (optional) Full phase output, or omit if already inline                 |
+| `artifacts`                         | List of artifact keys/paths written                                     |
+| `next_recommended`                  | The next SDD phase to run, or "none"                                    |
+| `risks`                             | Risks discovered, or "None"                                             |
 
 Example:
 

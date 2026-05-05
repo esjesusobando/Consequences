@@ -18,11 +18,11 @@
 
 ### 🛠️ Technical Dominance (The Hybrid Edge)
 
-| **Artificial Intelligence & Data**                                                               | **Industrial Engineering (Oil & Gas)**                                                                             | **Strategic Governance (PM)**                                                             |
-|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| **Generative AI:** LLM Orchestration, n8n Automation, Prompt Engineering (SOTA).                 | **Drilling & Workover:** Applied Engineering, Sidetracks, Well Planning & Optimization.                            | **Frameworks:** Agile, Scrum, Business Analysis (Domestika Certified).                    |
-| **Data Science:** Python Fundamentals, Google Data Analytics, SQL.                               | **Directional Design:** Complex Trajectories, BHA Selection, Bit Optimization (Halliburton/PDVSA).                 | **Security:** Cybersecurity for Enterprises, Risk Analysis (Fire School).                 |
-| **Agentic Coding:** Claude Code, Windsurf, PersonalOS Skill Development.                         | **Well Control:** IADC WellCAP Certified, Pressure Management, Blowout Prevention.                                 | **Design:** Photoshop, Illustrator, Phocus, Creative AI Workflows.                        |
+| **Artificial Intelligence & Data**                                                                 | **Industrial Engineering (Oil & Gas)**                                                                               | **Strategic Governance (PM)**                                                               |
+|----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| **Generative AI:** LLM Orchestration, n8n Automation, Prompt Engineering (SOTA).                   | **Drilling & Workover:** Applied Engineering, Sidetracks, Well Planning & Optimization.                              | **Frameworks:** Agile, Scrum, Business Analysis (Domestika Certified).                      |
+| **Data Science:** Python Fundamentals, Google Data Analytics, SQL.                                 | **Directional Design:** Complex Trajectories, BHA Selection, Bit Optimization (Halliburton/PDVSA).                   | **Security:** Cybersecurity for Enterprises, Risk Analysis (Fire School).                   |
+| **Agentic Coding:** Claude Code, Windsurf, PersonalOS Skill Development.                           | **Well Control:** IADC WellCAP Certified, Pressure Management, Blowout Prevention.                                   | **Design:** Photoshop, Illustrator, Phocus, Creative AI Workflows.                          |
 
 ---
 

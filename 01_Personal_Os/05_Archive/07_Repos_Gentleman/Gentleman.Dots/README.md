@@ -83,15 +83,15 @@ The TUI guides you through selecting your preferred tools and handles all the co
 
 ## Supported Platforms
 
-| Platform                            | Architecture                        | Install Method                           | Package Manager                 |
-|-------------------------------------|-------------------------------------|------------------------------------------|---------------------------------|
-| macOS                               | Apple Silicon (ARM64)               | Homebrew, Direct Download                | Homebrew                        |
-| macOS                               | Intel (x86_64)                      | Homebrew, Direct Download                | Homebrew                        |
-| Linux (Ubuntu/Debian)               | x86_64, ARM64                       | Homebrew, Direct Download                | Homebrew                        |
-| Linux (Fedora/RHEL)                 | x86_64, ARM64                       | Direct Download                          | dnf                             |
-| Linux (Arch)                        | x86_64                              | Homebrew, Direct Download                | Homebrew                        |
-| Windows                             | WSL                                 | Direct Download (see docs)               | Homebrew                        |
-| Android                             | Termux (ARM64)                      | Build locally (see above)                | pkg                             |
+| Platform                              | Architecture                          | Install Method                             | Package Manager                   |
+|---------------------------------------|---------------------------------------|--------------------------------------------|-----------------------------------|
+| macOS                                 | Apple Silicon (ARM64)                 | Homebrew, Direct Download                  | Homebrew                          |
+| macOS                                 | Intel (x86_64)                        | Homebrew, Direct Download                  | Homebrew                          |
+| Linux (Ubuntu/Debian)                 | x86_64, ARM64                         | Homebrew, Direct Download                  | Homebrew                          |
+| Linux (Fedora/RHEL)                   | x86_64, ARM64                         | Direct Download                            | dnf                               |
+| Linux (Arch)                          | x86_64                                | Homebrew, Direct Download                  | Homebrew                          |
+| Windows                               | WSL                                   | Direct Download (see docs)                 | Homebrew                          |
+| Android                               | Termux (ARM64)                        | Build locally (see above)                  | pkg                               |
 
 ---
 
@@ -108,35 +108,35 @@ gentle-ai
 
 It configures your AI coding agents with everything they need:
 
-| Component                      | What it does                                                                                   |
-|--------------------------------|------------------------------------------------------------------------------------------------|
-| **Engram**                     | Persistent memory across sessions (MCP server)                                                 |
-| **SDD Workflow**               | Spec-Driven Development with orchestrated sub-agents                                           |
-| **Skills**                     | 24 coding pattern libraries (React 19, Next.js 15, TypeScript, Tailwind 4, etc.)               |
-| **Context7**                   | Up-to-date library documentation via MCP                                                       |
-| **Persona**                    | Gentleman teaching style for AI responses                                                      |
-| **Permissions**                | Security-first defaults for all agents                                                         |
+| Component                        | What it does                                                                                     |
+|----------------------------------|--------------------------------------------------------------------------------------------------|
+| **Engram**                       | Persistent memory across sessions (MCP server)                                                   |
+| **SDD Workflow**                 | Spec-Driven Development with orchestrated sub-agents                                             |
+| **Skills**                       | 24 coding pattern libraries (React 19, Next.js 15, TypeScript, Tailwind 4, etc.)                 |
+| **Context7**                     | Up-to-date library documentation via MCP                                                         |
+| **Persona**                      | Gentleman teaching style for AI responses                                                        |
+| **Permissions**                  | Security-first defaults for all agents                                                           |
 
 ### Supported Agents
 
-| Agent                             | Single Agent               | Multi Agent                 |
-|-----------------------------------|----------------------------|-----------------------------|
-| **Claude Code**                   | ✅                          | ✅                           |
-| **OpenCode**                      | ✅                          | ✅                           |
-| **Gemini CLI**                    | ✅                          | ✅                           |
-| **Cursor**                        | ✅                          | —                           |
-| **VS Code Copilot**               | ✅                          | —                           |
+| Agent                               | Single Agent                 | Multi Agent                   |
+|-------------------------------------|------------------------------|-------------------------------|
+| **Claude Code**                     | ✅                            | ✅                             |
+| **OpenCode**                        | ✅                            | ✅                             |
+| **Gemini CLI**                      | ✅                            | ✅                             |
+| **Cursor**                          | ✅                            | —                             |
+| **VS Code Copilot**                 | ✅                            | —                             |
 
 > **Single agent**: One orchestrator handles all SDD phases.
 > **Multi agent**: Dedicated sub-agent per phase with individual model routing (e.g., Claude Opus for design, Gemini for specs, GPT for verification).
 
 ### What lives where
 
-|                              | This repo (Gentleman.Dots)                                 | gentle-ai                                                                           |
-|------------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| **Purpose**                  | Dev environment (editors, shells, terminals)               | AI development layer (agents, memory, skills)                                       |
-| **Installs**                 | Neovim, Fish/Zsh, Tmux/Zellij, Ghostty                     | Configures Claude Code, OpenCode, Gemini CLI, Cursor, VS Code Copilot               |
-| **AI configs**               | CLI tools only (Claude Code, OpenCode)                     | Full config: persona, skills, themes, MCP                                           |
+|                                | This repo (Gentleman.Dots)                                   | gentle-ai                                                                             |
+|--------------------------------|--------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| **Purpose**                    | Dev environment (editors, shells, terminals)                 | AI development layer (agents, memory, skills)                                         |
+| **Installs**                   | Neovim, Fish/Zsh, Tmux/Zellij, Ghostty                       | Configures Claude Code, OpenCode, Gemini CLI, Cursor, VS Code Copilot                 |
+| **AI configs**                 | CLI tools only (Claude Code, OpenCode)                       | Full config: persona, skills, themes, MCP                                             |
 
 Install Gentleman.Dots first for your dev environment, then `gentle-ai` for the AI layer on top.
 
@@ -146,15 +146,15 @@ Install Gentleman.Dots first for your dev environment, then `gentle-ai` for the 
 
 Learn Vim the fun way! The installer includes an interactive RPG-style trainer with:
 
-| Module                              | Keys Covered                                           |
-|-------------------------------------|--------------------------------------------------------|
-| 🔤 Horizontal Movement               | `w`, `e`, `b`, `f`, `t`, `0`, `$`, `^`                 |
-| ↕️ Vertical Movement                | `j`, `k`, `G`, `gg`, `{`, `}`                          |
-| 📦 Text Objects                      | `iw`, `aw`, `i"`, `a(`, `it`, `at`                     |
-| ✂️ Change & Repeat                  | `d`, `c`, `dd`, `cc`, `D`, `C`, `x`                    |
-| 🔄 Substitution                      | `r`, `R`, `s`, `S`, `~`, `gu`, `gU`, `J`               |
-| 🎬 Macros & Registers                | `qa`, `@a`, `@@`, `"ay`, `"+p`                         |
-| 🔍 Regex/Search                      | `/`, `?`, `n`, `N`, `*`, `#`, `\v`                     |
+| Module                                | Keys Covered                                             |
+|---------------------------------------|----------------------------------------------------------|
+| 🔤 Horizontal Movement                 | `w`, `e`, `b`, `f`, `t`, `0`, `$`, `^`                   |
+| ↕️ Vertical Movement                  | `j`, `k`, `G`, `gg`, `{`, `}`                            |
+| 📦 Text Objects                        | `iw`, `aw`, `i"`, `a(`, `it`, `at`                       |
+| ✂️ Change & Repeat                    | `d`, `c`, `dd`, `cc`, `D`, `C`, `x`                      |
+| 🔄 Substitution                        | `r`, `R`, `s`, `S`, `~`, `gu`, `gU`, `J`                 |
+| 🎬 Macros & Registers                  | `qa`, `@a`, `@@`, `"ay`, `"+p`                           |
+| 🔍 Regex/Search                        | `/`, `?`, `n`, `N`, `*`, `#`, `\v`                       |
 
 Each module includes 15 progressive lessons, practice mode with intelligent exercise selection, boss fights, and XP tracking.
 
@@ -164,16 +164,16 @@ Launch it from the main menu: **Vim Mastery Trainer**
 
 ## Documentation
 
-| Document                                                                            | Description                                                                     |
-|-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [TUI Installer Guide](docs/tui-installer.md)                                        | Interactive installer features, navigation, backup/restore                      |
-| [Manual Installation](docs/manual-installation.md)                                  | Step-by-step manual setup for all platforms                                     |
-| [Neovim Keymaps](docs/neovim-keymaps.md)                                            | Complete reference of all keybindings                                           |
-| [AI Configuration](docs/ai-configuration.md)                                        | Claude Code, OpenCode, Copilot, and other AI assistants                         |
-| [AI Gentle Stack](https://github.com/Gentleman-Programming/gentle-ai)               | AI layer installer — Engram, SDD, Skills, Persona (separate repo)               |
-| [Vim Trainer Spec](docs/vim-trainer-spec.md)                                        | Technical specification for the Vim Mastery Trainer                             |
-| [Docker Testing](docs/docker-testing.md)                                            | E2E testing with Docker containers                                              |
-| [Contributing](docs/contributing.md)                                                | Development setup, skills system, E2E tests, release process                    |
+| Document                                                                              | Description                                                                       |
+|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| [TUI Installer Guide](docs/tui-installer.md)                                          | Interactive installer features, navigation, backup/restore                        |
+| [Manual Installation](docs/manual-installation.md)                                    | Step-by-step manual setup for all platforms                                       |
+| [Neovim Keymaps](docs/neovim-keymaps.md)                                              | Complete reference of all keybindings                                             |
+| [AI Configuration](docs/ai-configuration.md)                                          | Claude Code, OpenCode, Copilot, and other AI assistants                           |
+| [AI Gentle Stack](https://github.com/Gentleman-Programming/gentle-ai)                 | AI layer installer — Engram, SDD, Skills, Persona (separate repo)                 |
+| [Vim Trainer Spec](docs/vim-trainer-spec.md)                                          | Technical specification for the Vim Mastery Trainer                               |
+| [Docker Testing](docs/docker-testing.md)                                              | E2E testing with Docker containers                                                |
+| [Contributing](docs/contributing.md)                                                  | Development setup, skills system, E2E tests, release process                      |
 
 ---
 

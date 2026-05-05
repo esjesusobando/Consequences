@@ -437,11 +437,11 @@ The SDK requires explicit `dbPath` — no defaults are assumed. This makes it sa
 
 ### Search Backends
 
-| Backend                        | Raw Score                        | Conversion                           | Range                      |
-|--------------------------------|----------------------------------|--------------------------------------|----------------------------|
-| **FTS (BM25)**                 | SQLite FTS5 BM25                 | `Math.abs(score)`                    | 0 to ~25+                  |
-| **Vector**                     | Cosine distance                  | `1 / (1 + distance)`                 | 0.0 to 1.0                 |
-| **Reranker**                   | LLM 0-10 rating                  | `score / 10`                         | 0.0 to 1.0                 |
+| Backend                          | Raw Score                          | Conversion                             | Range                        |
+|----------------------------------|------------------------------------|----------------------------------------|------------------------------|
+| **FTS (BM25)**                   | SQLite FTS5 BM25                   | `Math.abs(score)`                      | 0 to ~25+                    |
+| **Vector**                       | Cosine distance                    | `1 / (1 + distance)`                   | 0.0 to 1.0                   |
+| **Reranker**                     | LLM 0-10 rating                    | `score / 10`                           | 0.0 to 1.0                   |
 
 ### Fusion Strategy
 
@@ -462,12 +462,12 @@ The `query` command uses **Reciprocal Rank Fusion (RRF)** with position-aware bl
 
 ### Score Interpretation
 
-| Score                     | Meaning                             |
-|---------------------------|-------------------------------------|
-| 0.8 - 1.0                 | Highly relevant                     |
-| 0.5 - 0.8                 | Moderately relevant                 |
-| 0.2 - 0.5                 | Somewhat relevant                   |
-| 0.0 - 0.2                 | Low relevance                       |
+| Score                       | Meaning                               |
+|-----------------------------|---------------------------------------|
+| 0.8 - 1.0                   | Highly relevant                       |
+| 0.5 - 0.8                   | Moderately relevant                   |
+| 0.2 - 0.5                   | Somewhat relevant                     |
+| 0.0 - 0.2                   | Low relevance                         |
 
 ## Requirements
 
@@ -484,11 +484,11 @@ The `query` command uses **Reciprocal Rank Fusion (RRF)** with position-aware bl
 
 QMD uses three local GGUF models (auto-downloaded on first use):
 
-| Model                                             | Purpose                                      | Size                   |
-|---------------------------------------------------|----------------------------------------------|------------------------|
-| `embeddinggemma-300M-Q8_0`                        | Vector embeddings (default)                  | ~300MB                 |
-| `qwen3-reranker-0.6b-q8_0`                        | Re-ranking                                   | ~640MB                 |
-| `qmd-query-expansion-1.7B-q4_k_m`                 | Query expansion (fine-tuned)                 | ~1.1GB                 |
+| Model                                               | Purpose                                        | Size                     |
+|-----------------------------------------------------|------------------------------------------------|--------------------------|
+| `embeddinggemma-300M-Q8_0`                          | Vector embeddings (default)                    | ~300MB                   |
+| `qwen3-reranker-0.6b-q8_0`                          | Re-ranking                                     | ~640MB                   |
+| `qmd-query-expansion-1.7B-q4_k_m`                   | Query expansion (fine-tuned)                   | ~1.1GB                   |
 
 Models are downloaded from HuggingFace and cached in `~/.cache/qmd/models/`.
 
@@ -747,9 +747,9 @@ llm_cache       -- Cached LLM responses (query expansion, rerank scores)
 
 ## Environment Variables
 
-| Variable                         | Default                    | Description                              |
-|----------------------------------|----------------------------|------------------------------------------|
-| `XDG_CACHE_HOME`                 | `~/.cache`                 | Cache directory location                 |
+| Variable                           | Default                      | Description                                |
+|------------------------------------|------------------------------|--------------------------------------------|
+| `XDG_CACHE_HOME`                   | `~/.cache`                   | Cache directory location                   |
 
 ## How It Works
 
@@ -788,19 +788,19 @@ Instead of cutting at hard token boundaries, QMD uses a scoring algorithm to fin
 
 **Break Point Scores:**
 
-| Pattern                              | Score                   | Description                         |
-|--------------------------------------|-------------------------|-------------------------------------|
-| `# Heading`                          | 100                     | H1 - major section                  |
-| `## Heading`                         | 90                      | H2 - subsection                     |
-| `### Heading`                        | 80                      | H3                                  |
-| `#### Heading`                       | 70                      | H4                                  |
-| `##### Heading`                      | 60                      | H5                                  |
-| `###### Heading`                     | 50                      | H6                                  |
-| ` ``` `                              | 80                      | Code block boundary                 |
-| `---` / `***`                        | 60                      | Horizontal rule                     |
-| Blank line                           | 20                      | Paragraph boundary                  |
-| `- item` / `1. item`                 | 5                       | List item                           |
-| Line break                           | 1                       | Minimal break                       |
+| Pattern                                | Score                     | Description                           |
+|----------------------------------------|---------------------------|---------------------------------------|
+| `# Heading`                            | 100                       | H1 - major section                    |
+| `## Heading`                           | 90                        | H2 - subsection                       |
+| `### Heading`                          | 80                        | H3                                    |
+| `#### Heading`                         | 70                        | H4                                    |
+| `##### Heading`                        | 60                        | H5                                    |
+| `###### Heading`                       | 50                        | H6                                    |
+| ` ``` `                                | 80                        | Code block boundary                   |
+| `---` / `***`                          | 60                        | Horizontal rule                       |
+| Blank line                             | 20                        | Paragraph boundary                    |
+| `- item` / `1. item`                   | 5                         | List item                             |
+| Line break                             | 1                         | Minimal break                         |
 
 **Algorithm:**
 

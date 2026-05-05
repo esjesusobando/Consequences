@@ -24,14 +24,14 @@ Engram is persistent memory for your AI agent. It saves decisions, discoveries, 
 
 **But engram has useful tools when you need them:**
 
-| Command                                     | When to use                                                                                               |
-|---------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| `engram tui`                                | Browse your memories visually -- search, filter, drill into observations                                  |
-| `engram sync`                               | Export project memories to `.engram/` for git tracking. Run after significant work sessions               |
-| `engram sync --import`                      | Import memories on another machine after cloning a repo with `.engram/`                                   |
-| `engram projects list`                      | See all projects with observation counts                                                                  |
-| `engram projects consolidate`               | Fix project name drift (e.g., "my-app" vs "My-App" vs "my-app-frontend")                                  |
-| `engram search <query>`                     | Quick memory search from the terminal                                                                     |
+| Command                                       | When to use                                                                                                 |
+|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| `engram tui`                                  | Browse your memories visually -- search, filter, drill into observations                                    |
+| `engram sync`                                 | Export project memories to `.engram/` for git tracking. Run after significant work sessions                 |
+| `engram sync --import`                        | Import memories on another machine after cloning a repo with `.engram/`                                     |
+| `engram projects list`                        | See all projects with observation counts                                                                    |
+| `engram projects consolidate`                 | Fix project name drift (e.g., "my-app" vs "My-App" vs "my-app-frontend")                                    |
+| `engram search <query>`                       | Quick memory search from the terminal                                                                       |
 
 Since v1.11.0, engram auto-detects the project name from git remote at startup, normalizes to lowercase, and warns if it finds similar existing project names. This prevents the name drift issue where the same project ends up with multiple name variants.
 
@@ -86,11 +86,11 @@ What makes them "super sub-agents":
 
 This pattern works today on:
 
-| Agent                         | How sub-agents run                                                                                                                            |
-|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| **OpenCode**                  | Native sub-agent system — each phase is a dedicated agent with its own model, tools, and permissions defined in `opencode.json`               |
-| **Claude Code**               | Via the Agent tool — the orchestrator spawns sub-agents that self-discover skills from the registry                                           |
-| **Others**                    | SDD runs inline (single session) — the model follows the orchestrator instructions without spawning separate agents                           |
+| Agent                           | How sub-agents run                                                                                                                              |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| **OpenCode**                    | Native sub-agent system — each phase is a dedicated agent with its own model, tools, and permissions defined in `opencode.json`                 |
+| **Claude Code**                 | Via the Agent tool — the orchestrator spawns sub-agents that self-discover skills from the registry                                             |
+| **Others**                      | SDD runs inline (single session) — the model follows the orchestrator instructions without spawning separate agents                             |
 
 You don't need to configure any of this. The installer sets it up, and the orchestrator manages delegation automatically.
 
@@ -135,12 +135,12 @@ The less you think about gentle-ai after installing, the better it's working.
 
 ## Quick Reference
 
-| Do                                                                      | Don't                                                                                 |
-|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| Run the installer, pick your agents and preset                          | Manually edit the generated config files                                              |
-| Just start coding with your AI agent                                    | Memorize SDD phases or commands                                                       |
-| Let the agent suggest SDD when a task is big enough                     | Force SDD on every small task                                                         |
-| Trust that engram is saving context for you                             | Dig into engram's storage unless you need `engram sync` or `engram tui`               |
-| Run `/skill-registry` after installing or changing skills               | Forget to update the registry after adding new skills                                 |
-| Say "use sdd" if you know you want structured planning                  | Worry about which SDD phase comes next                                                |
-| Re-run the installer to update or change your setup                     | Manually patch skill files or persona instructions                                    |
+| Do                                                                        | Don't                                                                                   |
+|---------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| Run the installer, pick your agents and preset                            | Manually edit the generated config files                                                |
+| Just start coding with your AI agent                                      | Memorize SDD phases or commands                                                         |
+| Let the agent suggest SDD when a task is big enough                       | Force SDD on every small task                                                           |
+| Trust that engram is saving context for you                               | Dig into engram's storage unless you need `engram sync` or `engram tui`                 |
+| Run `/skill-registry` after installing or changing skills                 | Forget to update the registry after adding new skills                                   |
+| Say "use sdd" if you know you want structured planning                    | Worry about which SDD phase comes next                                                  |
+| Re-run the installer to update or change your setup                       | Manually patch skill files or persona instructions                                      |

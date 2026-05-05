@@ -10,13 +10,13 @@
 
 ### Skills System v2.0 Completado
 
-| Aspecto                                                    | Antes                                                          | Después                                                      |
-|------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------------|
-| Canonical Source                                           | Confuso (múltiples ubicaciones)                                | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                                          |
-| Cursor Skills                                              | Sincronizado manualmente                                       | README only (espejo)                                         |
-| Context Memory                                             | Duplicado (08_Context_Memory)                                  | Solo 01_Context_Memory/                                      |
-| Numeración                                                 | Rotas (huecos, duplicados)                                     | PERFECTA (01-09 secuencial)                                  |
-| Backup Central                                             | No existía                                                     | 05_Archive/06_Backup_Central/                                |
+| Aspecto                                                      | Antes                                                            | Después                                                        |
+|--------------------------------------------------------------|------------------------------------------------------------------|----------------------------------------------------------------|
+| Canonical Source                                             | Confuso (múltiples ubicaciones)                                  | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                   |
+| Cursor Skills                                                | Sincronizado manualmente                                         | README only (espejo)                                           |
+| Context Memory                                               | Duplicado (08_Context_Memory)                                    | Solo 01_Context_Memory/                                        |
+| Numeración                                                   | Rotas (huecos, duplicados)                                       | PERFECTA (01-09 secuencial)                                    |
+| Backup Central                                               | No existía                                                       | 05_Archive/06_Backup_Central/                                  |
 
 ### QMD MCP Integration (PENDIENTE)
 
@@ -151,15 +151,15 @@ Mismas skills en hasta 4 ubicaciones:
 
 * *Skills Duplicadas Detectadas**:
 
-| Skill                                                   | Ubicaciones                                   | Canonical                                   |
-|---------------------------------------------------------|-----------------------------------------------|---------------------------------------------|
-| Brainstorming                                           | 3                                             | `07_Every/`                                 |
-| Writing_Plans                                           | 3                                             | `07_Every/`                                 |
-| Executing_Plans                                         | 3                                             | `07_Every/`                                 |
-| Test_Driven_Development                                 | 4                                             | `07_Every/`                                 |
-| Systematic_Debugging                                    | 3                                             | `07_Every/`                                 |
-| Skill_Creator                                           | 6                                             | `07_Every/`                                 |
-| Mqp_Client                                              | 3                                             | `07_Every/`                                 |
+| Skill                                                     | Ubicaciones                                     | Canonical                                     |
+|-----------------------------------------------------------|-------------------------------------------------|-----------------------------------------------|
+| Brainstorming                                             | 3                                               | `07_Every/`                                   |
+| Writing_Plans                                             | 3                                               | `07_Every/`                                   |
+| Executing_Plans                                           | 3                                               | `07_Every/`                                   |
+| Test_Driven_Development                                   | 4                                               | `07_Every/`                                   |
+| Systematic_Debugging                                      | 3                                               | `07_Every/`                                   |
+| Skill_Creator                                             | 6                                               | `07_Every/`                                   |
+| Mqp_Client                                                | 3                                               | `07_Every/`                                   |
 
 * *Solución**:
 - Canonical version: `07_Every/`
@@ -292,13 +292,13 @@ Duplicar skills causa:
 
 ## 📊 MÉTRICAS DE ERRORES
 
-| Error                                              | Severidad                                   | Status                                      | Prevention                                            |
-|----------------------------------------------------|---------------------------------------------|---------------------------------------------|-------------------------------------------------------|
-| Migración sin plan                                 | 🔴 CRÍTICA                                   | ✅ FIXED                                     | Protocolo plan mode                                   |
-| Numeración rota                                    | 🟠 ALTA                                      | ✅ FIXED                                     | Convenciones strictas                                 |
-| Duplicación skills                                 | 🟠 ALTA                                      | ✅ FIXED                                     | Canonical version                                     |
-| Context perdido                                    | 🟡 MEDIA                                     | ✅ MITIGATED                                 | mem_save protocol                                     |
-| CRLF warnings                                      | 🟢 BAJA                                      | ✅ FIXED                                     | git config                                            |
+| Error                                                | Severidad                                     | Status                                        | Prevention                                              |
+|------------------------------------------------------|-----------------------------------------------|-----------------------------------------------|---------------------------------------------------------|
+| Migración sin plan                                   | 🔴 CRÍTICA                                     | ✅ FIXED                                       | Protocolo plan mode                                     |
+| Numeración rota                                      | 🟠 ALTA                                        | ✅ FIXED                                       | Convenciones strictas                                   |
+| Duplicación skills                                   | 🟠 ALTA                                        | ✅ FIXED                                       | Canonical version                                       |
+| Context perdido                                      | 🟡 MEDIA                                       | ✅ MITIGATED                                   | mem_save protocol                                       |
+| CRLF warnings                                        | 🟢 BAJA                                        | ✅ FIXED                                       | git config                                              |
 
 - --
 

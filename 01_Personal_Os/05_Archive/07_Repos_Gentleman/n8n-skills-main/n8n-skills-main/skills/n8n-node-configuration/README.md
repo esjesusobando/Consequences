@@ -106,12 +106,12 @@ n8n-node-configuration/
 
 Configuration metrics:
 
-| Metric                                     | Value                        | Insight                                        |
-|--------------------------------------------|------------------------------|------------------------------------------------|
-| get_node_essentials                        | Primary tool                 | Most popular discovery pattern                 |
-| Success rate (essentials)                  | 91.7%                        | Essentials sufficient for most                 |
-| Avg time search→essentials                 | 18 seconds                   | Fast discovery workflow                        |
-| Avg time between edits                     | 56 seconds                   | Iterative configuration                        |
+| Metric                                       | Value                          | Insight                                          |
+|----------------------------------------------|--------------------------------|--------------------------------------------------|
+| get_node_essentials                          | Primary tool                   | Most popular discovery pattern                   |
+| Success rate (essentials)                    | 91.7%                          | Essentials sufficient for most                   |
+| Avg time search→essentials                   | 18 seconds                     | Fast discovery workflow                          |
+| Avg time between edits                       | 56 seconds                     | Iterative configuration                          |
 
 ## Tool Usage Pattern
 
@@ -333,15 +333,15 @@ get_node_essentials({nodeType: "nodes-base.slack"});
 
 **Node types covered**: Top 20 most-used nodes
 
-| Category                      | Nodes                                 | Coverage                           |
-|-------------------------------|---------------------------------------|------------------------------------|
-| HTTP/API                      | HTTP Request, Webhook                 | Complete                           |
-| Communication                 | Slack, Gmail                          | Common operations                  |
-| Database                      | Postgres, MySQL                       | CRUD operations                    |
-| Transform                     | Set, Code                             | All modes                          |
-| Conditional                   | IF, Switch                            | All operator types                 |
-| AI                            | OpenAI                                | Chat completion                    |
-| Schedule                      | Schedule Trigger                      | All modes                          |
+| Category                        | Nodes                                   | Coverage                             |
+|---------------------------------|-----------------------------------------|--------------------------------------|
+| HTTP/API                        | HTTP Request, Webhook                   | Complete                             |
+| Communication                   | Slack, Gmail                            | Common operations                    |
+| Database                        | Postgres, MySQL                         | CRUD operations                      |
+| Transform                       | Set, Code                               | All modes                            |
+| Conditional                     | IF, Switch                              | All operator types                   |
+| AI                              | OpenAI                                  | Chat completion                      |
+| Schedule                        | Schedule Trigger                        | All modes                            |
 
 ## Related Documentation
 

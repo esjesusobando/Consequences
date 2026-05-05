@@ -63,12 +63,12 @@ The setup command should:
 
 **Default agents by project type:**
 
-| Type                       | review_agents                                                                                                              | plan_review_agents                                                   |
-|----------------------------|----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| Rails                      | kieran-rails-reviewer, dhh-rails-reviewer, code-simplicity-reviewer, security-sentinel, performance-oracle                 | kieran-rails-reviewer, code-simplicity-reviewer                      |
-| Python                     | kieran-python-reviewer, code-simplicity-reviewer, security-sentinel, performance-oracle                                    | kieran-python-reviewer, code-simplicity-reviewer                     |
-| TypeScript                 | kieran-typescript-reviewer, code-simplicity-reviewer, security-sentinel, performance-oracle                                | kieran-typescript-reviewer, code-simplicity-reviewer                 |
-| General                    | code-simplicity-reviewer, security-sentinel, performance-oracle                                                            | code-simplicity-reviewer, architecture-strategist                    |
+| Type                         | review_agents                                                                                                                | plan_review_agents                                                     |
+|------------------------------|------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
+| Rails                        | kieran-rails-reviewer, dhh-rails-reviewer, code-simplicity-reviewer, security-sentinel, performance-oracle                   | kieran-rails-reviewer, code-simplicity-reviewer                        |
+| Python                       | kieran-python-reviewer, code-simplicity-reviewer, security-sentinel, performance-oracle                                      | kieran-python-reviewer, code-simplicity-reviewer                       |
+| TypeScript                   | kieran-typescript-reviewer, code-simplicity-reviewer, security-sentinel, performance-oracle                                  | kieran-typescript-reviewer, code-simplicity-reviewer                   |
+| General                      | code-simplicity-reviewer, security-sentinel, performance-oracle                                                              | code-simplicity-reviewer, architecture-strategist                      |
 
 ### Phase 2: Update review.md
 
