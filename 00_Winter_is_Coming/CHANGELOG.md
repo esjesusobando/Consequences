@@ -1,5 +1,28 @@
 # Changelog
 
+## 3.4.0 - 2026-05-05
+
+### Fixed — Beautify Tables + Metrics Update + v3.1 Sync
+
+- **BEAUTIFY TABLES**: Aplicado `13_Beautify_Tables.py` a 2,880 archivos markdown — todas las tablas pixel-perfect
+- **Kit_Diseño_Top_11.md**: Fecha actualizada 2026-05-04, TOP 12→TOP 13, estado Open Design
+- **README.md**: Corregido 9→11 áreas funcionales, 297→300 skills, 18→28 HUBs
+- **OS_DIRECTORY.md**: Skills 299→300, TOP 11→TOP 13, fecha actualizada
+- **AGENTS.md (00_Winter)**: v3.0→v3.1, métricas actualizadas
+- **OS_DIRECTORY.md (00_Winter)**: v3.0→v3.1, métricas actualizadas
+- **JARVIS manifests**: Regenerados 8 archivos (7 + README)
+- **Archivos restaurados**: 8 archivos SDD de OIM Website eliminados accidentalmente
+- **RULES_INDEX.md**: Beautified tables
+
+### Commits sesión
+
+| Commit       | Descripción                                                          |
+|--------------|----------------------------------------------------------------------|
+| `b2e100e5`   | docs: apply Beautify Tables to 2880 files — pixel perfect alignment |
+| `e095e10a`   | docs: update metrics + dates + JARVIS manifests regeneration         |
+
+---
+
 ## 3.3.0 - 2026-04-29
 
 ### Fixed — Git Cleanup & Disk Space Session

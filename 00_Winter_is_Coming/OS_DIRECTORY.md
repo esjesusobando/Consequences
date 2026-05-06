@@ -1,17 +1,17 @@
-# Think Different PersonalOS — DIRECTORY MAESTRO (JARVIS)
+# 🤖 Think Different PersonalOS — DIRECTORIO MAESTRO (JARVIS)
 
-**Version:** v3.0 | **Date:** 2026-04-25
+**v3.1 Consequences** | 2026-05-05
 
 ---
 
-## Que hay aqui?
+## 🚨 ESTADO DEL SISTEMA
 
 | Resource          | Count       | Location                                                               |
 |-------------------|-------------|------------------------------------------------------------------------|
-| **MCPs**          | 33          | `00_Manifest/02_MCP_Registry.yaml`                                     |
-| **Skills**        | 297         | `00_Manifest/04_Skill_Index.json`                                      |
+| **MCPs**          | 38          | `00_Manifest/02_MCP_Registry.yaml`                                     |
+| **Skills**        | 300         | `00_Manifest/04_Skill_Index.json`                                      |
 | **Agents**        | 52          | `00_Manifest/03_Agent_Catalog.yaml`                                    |
-| **HUBs**          | 19          | `00_Manifest/05_HUB_Catalog.yaml` / `03_Scripts_Os/HUB_CATALOG.md`     |
+| **HUBs**          | 28          | `00_Manifest/05_HUB_Catalog.yaml` / `03_Scripts_Os/HUB_CATALOG.md`     |
 | **Workflows**     | 28          | `00_Manifest/06_Workflow_Graph.yaml`                                   |
 | **Hooks**         | 10          | `00_Manifest/07_Hook_Registry.yaml`                                    |
 
@@ -65,13 +65,13 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboar
 | File                         | Description                                | Status       |
 |------------------------------|--------------------------------------------|--------------|
 | `01_OS_Inventory.json`       | OS Inventory                               | ✅            |
-| `02_MCP_Registry.yaml`       | MCP Registry (33 Claude / 18 OpenCode)     | ✅            |
+| `02_MCP_Registry.yaml`       | MCP Registry (38 Claude / 34 OpenCode)     | ✅            |
 | `03_Agent_Catalog.yaml`      | Agent Catalog (52 agents)                  | ✅            |
-| `04_Skill_Index.json`        | Skill Index (297 skills)                   | ✅            |
-| `05_HUB_Catalog.yaml`        | HUB Catalog (19 HUBs)                      | ✅            |
+| `04_Skill_Index.json`        | Skill Index (300 skills)                    | ✅            |
+| `05_HUB_Catalog.yaml`        | HUB Catalog (28 scripts)                    | ✅            |
 | `06_Workflow_Graph.yaml`     | Workflow Graph                             | ✅            |
 | `07_Hook_Registry.yaml`      | Hook Registry (10 hooks)                   | ✅            |
 
 ---
 
-*Think Different PersonalOS v3.0 Consequences — JARVIS Integrated*
+*Think Different PersonalOS v3.1 Consequences — JARVIS Integrated | 2026-05-05*

@@ -1,44 +1,32 @@
-# 00_Winter_is_Coming — Think Different PersonalOS v2.0 Consequences
+# 00_Winter_is_Coming — Think Different PersonalOS v3.1 Consequences
 
-**Versión:** 2.0 Consequences
-**Última actualización:** 2026-04-24
+**Versión:** 3.1 Consequences
+**Última actualización:** 2026-05-05
 **Estado:** ✅ ESTRATÉGICO | ADN del Sistema
 
 ---
 
-## 📂 Contenido (2026-04-14)
+## 📂 Contenido (2026-05-05)
 
 ```
 00_Winter_is_Coming/
-├── 01_Personal_Os/11_AGENTS.md         # 🔐 Core - Reglas del sistema (26KB)
-├── BACKLOG.md        # 📝 Activo - Tareas pendientes (2.9KB)
-├── GOALS.md          # 🎯 Metas estratégicas (13KB)
-├── README.md         # 📖 Entry point (1.8KB)
-└── Skills/           # Workflows legacy
-    └── PM_Agent_Orchestrator.md  # Convertido de XML
+├── AGENTS.md            # 🔐 Core - Reglas del sistema (40KB)
+├── BACKLOG.md          # 📝 Activo - Tareas pendientes
+├── GOALS.md            # 🎯 Metas estratégicas
+├── CHANGELOG.md        # 📋 Historial de cambios
+├── OS_DIRECTORY.md     # 🤖 Directorio JARVIS
+└── README.md           # 📖 Entry point (este archivo)
 ```
 
 ---
 
-## 🎯 Propósito
+## 📊 Estado Actual (v3.1 — 2026-05-05)
 
-Esta carpeta contiene el **ADN estratégico** del PersonalOS:
-
-| Archivo                                     | Función                                                             |
-|---------------------------------------------|---------------------------------------------------------------------|
-| `01_Personal_Os/11_AGENTS.md`               | Configuración de agentes y reglas de comportamiento                 |
-| `BACKLOG.md`                                | Tareas pendientes del sistema                                       |
-| `GOALS.md`                                  | Metas y objetivos a largo plazo                                     |
-| `Skills/`                                   | Workflows legacy para referencia                                    |
-
----
-
-## 📊 Estado Actual (2026-04-14)
-
-- **GGA Version**: v2.8.0 (disponible v2.8.1 - actualizar con `brew upgrade gga`)
-- **Agentes activos**: 18+
-- **MCPs**: 36 servidores configurados
-- **Skills**: 12 áreas funcionales en `01_Personal_Os/01_Core/02_Tools/02_Skills/` (297 SKILL.md)
+- **GGA Version**: v2.8.1
+- **Agentes activos**: 52+
+- **MCPs**: 38 servidores activos (Claude Code)
+- **Skills**: 11 áreas funcionales (300 SKILL.md)
+- **HUBs**: 28 scripts operativos
 
 ---
 
@@ -46,17 +34,10 @@ Esta carpeta contiene el **ADN estratégico** del PersonalOS:
 
 | Fecha                      | Cambio                                                                            |
 |----------------------------|-----------------------------------------------------------------------------------|
-| 2026-04-14                 | PM_Agent_Orchestrator.xml → PM_Agent_Orchestrator.md (convertido)                 |
-| 2026-04-14                 | BACKLOG.md actualizado                                                            |
-| 2026-04-14                 | README.md actualizado                                                             |
+| 2026-05-05                | v3.1 Consequences — Beautify Tables, métricas actualizadas, JARVIS manifests    |
+| 2026-04-29                | Git cleanup session — submodules removidos                                         |
+| 2026-04-25                | v3.1 Consequences — JARVIS 3.1 integrated                                       |
 
 ---
 
-## ⚙️ Integración con 01_Personal_Os/11_AGENTS.md Principal
-
-El archivo `01_Personal_Os/11_AGENTS.md` de esta carpeta es una versión específica para este contexto. 
-El archivo raíz `01_Personal_Os/11_AGENTS.md` contiene la configuración completa del sistema.
-
----
-
-*Think Different PersonalOS v6.1 — Estrategia y ADN*
+*Think Different PersonalOS v3.1 Consequences — Estrategia y ADN*

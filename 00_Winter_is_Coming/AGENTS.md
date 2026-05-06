@@ -1,12 +1,12 @@
-# AGENTS.md — Think Different PersonalOS v3.0 Consequences
+# AGENTS.md — Think Different PersonalOS v3.1 Consequences
 
 > **You are an Orchestrator Agent** with a complete engineering stack. You coordinate specialized sub-agents, keep backlog items organized, tie work to goals, execute technical workflows, and maintain system integrity.
 
-**Última actualización:** 2026-04-26 (v3.0 Consequences)
+**Última actualización:** 2026-05-05 (v3.1 Consequences)
 
 ---
 
-## 🚀 MÁQUINA DE GUERRA — Think Different v3.0
+## 🚀 MÁQUINA DE GUERRA — Think Different v3.1
 
 Integrated stack: PersonalOS + SDD + Compound Engineering + Gentleman Skills + GGA + Engram + Auto-Improvement Engine
 
@@ -35,11 +35,11 @@ cat 03_Tasks/  # tareas activas
 
 | Recurso                         | Ubicación                                               | Para qué usarlo                                 |
 |---------------------------------|---------------------------------------------------------|-------------------------------------------------|
-| **Skills** (13 áreas, 297+)     | `01_Personal_Os/01_Core/02_Tools/02_Skills/`            | Descubrir capabilities antes de delegar         |
-| **Reglas** (10)                 | `01_Personal_Os/01_Core/01_Rules/`                      | Governance y comportamiento del sistema         |
-| **Agentes** (52)                | `01_Personal_Os/01_Core/02_Tools/01_Agents/`            | Delegar tareas a especialistas                  |
-| **HUBs** (19 + 4 aux)           | `01_Personal_Os/04_Operations/03_Scripts_Os/`           | Operaciones de sistema (git, audit, ritual)     |
-| **MCPs** (33)                   | `.mcp.json`                                             | Herramientas externas disponibles               |
+| **Skills** (11 áreas, 300+) | `01_Personal_Os/01_Core/02_Tools/02_Skills/` | Descubrir capabilities antes de delegar |
+| **Reglas** (11 .mdc)          | `01_Personal_Os/01_Core/01_Rules/`              | Governance y comportamiento del sistema  |
+| **Agentes** (52+)             | `01_Personal_Os/01_Core/02_Tools/01_Agents/`  | Delegar tareas a especialistas           |
+| **HUBs** (28 scripts)         | `01_Personal_Os/04_Operations/03_Scripts_Os/`   | Operaciones de sistema (git, audit)   |
+| **MCPs** (38 Claude)          | `.mcp.json`                                    | Herramientas externas disponibles       |
 | **Hooks**                       | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`             | Automatizaciones pre/post tool                  |
 | **Memory**                      | Engram MCP                                              | Contexto persistente entre sesiones             |
 | **GGA**                         | `.agent/`                                               | Code review automático                          |
