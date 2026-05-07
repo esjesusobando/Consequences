@@ -237,44 +237,60 @@ SCRIPT_LOCATION_MAP = {
     "01_Spider_Brainstorm.py": SKILLS_DIR / "00_Compound_Engineering" / "scripts",
     "02_Professor_X_Plan.py": SKILLS_DIR / "05_Workflows" / "01_Agent_Teams_Lite" / "scripts",
     # Batch 1: Auditor (en ENGINE_DIR/03_Validator - ubicación real)
-    # Batch 2: Rituales (skills)
-    "08_Ritual_Cierre.py": SKILLS_DIR / "07_Personal_Os" / "scripts",
-    "14_Morning_Standup.py": SKILLS_DIR / "07_Personal_Os" / "scripts",
-    "15_Weekly_Review.py": SKILLS_DIR / "07_Personal_Os" / "scripts",
-    "09_Backlog_Triage.py": SKILLS_DIR / "05_Workflows" / "02_Project_Manager" / "scripts",
-    "11_Sync_Notes.py": SKILLS_DIR / "07_Personal_Os" / "scripts",
-    "16_Clean_System.py": SKILLS_DIR / "06_Tools" / "13_System_Master" / "scripts",
-    "00_Notifier.py": SKILLS_DIR / "06_Tools" / "13_System_Master" / "scripts",
+    # === v6.2 RITUALS y WORKFLOWS (scripts reales en 10_Legacy) ===
+    "08_Ritual_Cierre.py": ENGINE_DIR / "10_Legacy",
+    "14_Morning_Standup.py": ENGINE_DIR / "10_Legacy",
+    "15_Weekly_Review.py": ENGINE_DIR / "10_Legacy",
+    "09_Backlog_Triage.py": ENGINE_DIR / "10_Legacy",
+    "11_Sync_Notes.py": ENGINE_DIR / "10_Legacy",
+    "16_Clean_System.py": ENGINE_DIR / "10_Legacy",
+    "00_Notifier.py": ENGINE_DIR / "10_Legacy",
+    "17_Ritual_Dominical.py": ENGINE_DIR / "10_Legacy",
+    # === Compound Engineering Scripts ===
+    "06_AntMan_Lfg_Lite.py": ENGINE_DIR / "10_Legacy",
+    "07_Doc_Strange_Lfg.py": ENGINE_DIR / "10_Legacy",
+    "73_Avengers_Workflow_v3.py": ENGINE_DIR / "10_Legacy",
+    # === Workflow Scripts ===
+    "01_Spider_Brainstorm.py": ENGINE_DIR / "10_Legacy",
+    "02_Professor_X_Plan.py": ENGINE_DIR / "10_Legacy",
+    "13_Validate_Stack.py": ENGINE_DIR / "10_Legacy",
+    "18_Generacion_Contenido.py": ENGINE_DIR / "10_Legacy",
+    "19_Generate_Progress.py": ENGINE_DIR / "10_Legacy",
+    # === v6.2 Legacy Scripts (10_Legacy) ===
+    "10_AI_Task_Planner.py": ENGINE_DIR / "10_Legacy",
+    "12_Update_Links.py": ENGINE_DIR / "10_Legacy",
+    "50_System_Health_Monitor.py": ENGINE_DIR / "50_System_Health_Monitor.py",
+    # === Avengers Workflow Scripts ===
+    "03_Thor_Work.py": ENGINE_DIR / "10_Legacy",
+    "04_Vision_Review.py": ENGINE_DIR / "10_Legacy",
+    "05_Hulk_Compound.py": ENGINE_DIR / "10_Legacy",
+    # === Others ===
+    "56_Organize_Solutions.py": ENGINE_DIR / "10_Legacy",
     "87_Iron_Man_Gen.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
-    "56_Organize_Solutions.py": ENGINE_DIR / ".backup" / "10_Legacy_backup_20260420",
-    # Batch 4: Utilities (13_Auditors_Os)
+    # === Batch 4: Utilities (13_Auditors_Os) ===
     "13_Beautify_Tables.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
     "14_Beauty_Doc.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
     "15_SOTA_Integrity_Check.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
     "16_Carousel_Engine.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
     "12_Context_Usage_Bar.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
-    # v2 Migration: Scripts Alto Valor → Skills
-    "13_Validate_Stack.py": SKILLS_DIR / "06_Tools" / "05_Vibe_Coding" / "scripts",
-    "17_Ritual_Dominical.py": SKILLS_DIR / "07_Personal_Os" / "scripts",
-    "18_Generacion_Contenido.py": SKILLS_DIR / "01_Creacion_Contenidos" / "scripts",
-    "19_Generate_Progress.py": SKILLS_DIR / "07_Personal_Os" / "scripts",
-    "39_Repair_Corruption.py": SKILLS_DIR / "06_Tools" / "13_System_Master" / "scripts",
+    # === Scripts that moved to skills/scripts/ ===
+    "39_Repair_Corruption.py": SKILLS_DIR / "06_Tools" / "11_System_Master" / "06_Scripts",
     "62_Tool_Shed.py": SKILLS_DIR / "06_Tools" / "04_DevOps" / "scripts",
-    "06_AntMan_Lfg_Lite.py": SKILLS_DIR / "00_Compound_Engineering" / "scripts",
-    "07_Doc_Strange_Lfg.py": SKILLS_DIR / "00_Compound_Engineering" / "scripts",
-    "73_Avengers_Workflow_v3.py": SKILLS_DIR / "00_Compound_Engineering" / "scripts",
-    # v2: Scripts Medio Valor → 14_Otros
-    "12_Update_Links.py": ENGINE_DIR / "14_Otros" / "12_Update_Links.py",
+    # === v6.2 AUDITORS Y VALIDATORS ===
+    "33_Parallel_Audit_Pro.py": ENGINE_DIR / "03_Validator",
+    "34_Skill_Auditor.py": ENGINE_DIR / "03_Validator",
+    "37_Linter_Autofix.py": ENGINE_DIR / "03_Validator",
+    "40_Validate_Rules.py": ENGINE_DIR / "03_Validator",
+    "80_Edge_Case_Validator.py": ENGINE_DIR / "03_Validator",
+    "skill_validator.py": ENGINE_DIR / "03_Validator",
+    "skill_security_scan.py": ENGINE_DIR / "03_Validator",
+    # === HUBS ===
+    "01_Auditor_Hub.py": ENGINE_DIR / "01_Auditor_Hub.py",
+    "05_Validator_Hub.py": ENGINE_DIR / "05_Validator_Hub.py",
+    # === Scripts Medio Valor → 14_Otros ===
     "60_Fast_Vision.py": ENGINE_DIR / "14_Otros" / "60_Fast_Vision.py",
     "61_MCP_Health_Check.py": ENGINE_DIR / "14_Otros" / "61_MCP_Health_Check.py",
     "63_Skill_Harmonizer.py": ENGINE_DIR / "14_Otros" / "63_Skill_Harmonizer.py",
-    "10_AI_Task_Planner.py": ENGINE_DIR / "14_Otros" / "10_AI_Task_Planner.py",
-    # Legacy scripts (active - not archived)
-    "50_System_Health_Monitor.py": ENGINE_DIR / "10_Legacy",
-    # Avengers aliases (Thor/Vision/Hulk) - archived
-    "03_Thor_Work.py": ENGINE_DIR / ".backup" / "10_Legacy_backup_20260420",
-    "04_Vision_Review.py": ENGINE_DIR / ".backup" / "10_Legacy_backup_20260420",
-    "05_Hulk_Compound.py": ENGINE_DIR / ".backup" / "10_Legacy_backup_20260420",
 }
 
 
