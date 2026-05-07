@@ -1,6 +1,6 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-04T23:07:43",
+  "generated": "2026-05-06T15:19:39",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
     "areas": 11,
@@ -527,18 +527,18 @@
           "has_frontmatter": true
         },
         {
-          "name": "16_Carousel_Master",
-          "path": "01_Creacion_Contenidos/16_Carousel_Master/SKILL.md",
+          "name": "15_Carousel_Master",
+          "path": "01_Creacion_Contenidos/15_Carousel_Master/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "17_SEO_SOTA_Master",
-          "path": "01_Creacion_Contenidos/17_SEO_SOTA_Master/SKILL.md",
+          "name": "16_Seo_Sota_Master",
+          "path": "01_Creacion_Contenidos/16_Seo_Sota_Master/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "28_Carousel_Master",
-          "path": "01_Creacion_Contenidos/28_Carousel_Master/SKILL.md",
+          "name": "17_Carousel_Master",
+          "path": "01_Creacion_Contenidos/17_Carousel_Master/SKILL.md",
           "has_frontmatter": true
         }
       ]
@@ -662,28 +662,28 @@
           "has_frontmatter": true
         },
         {
-          "name": "20_James_Cameron",
-          "path": "03_Video_Media/20_James_Cameron/SKILL.md",
+          "name": "02_James_Cameron",
+          "path": "03_Video_Media/02_James_Cameron/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "01_Video_Prompt_Builder",
-          "path": "03_Video_Media/20_James_Cameron/01_Video_Prompt_Builder/SKILL.md",
+          "path": "03_Video_Media/02_James_Cameron/01_Video_Prompt_Builder/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "02_Remotion_Browser_Search",
-          "path": "03_Video_Media/20_James_Cameron/02_Remotion_Browser_Search/SKILL.md",
+          "path": "03_Video_Media/02_James_Cameron/02_Remotion_Browser_Search/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "03_Remotion_Cards_Showcase",
-          "path": "03_Video_Media/20_James_Cameron/03_Remotion_Cards_Showcase/SKILL.md",
+          "path": "03_Video_Media/02_James_Cameron/03_Remotion_Cards_Showcase/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "04_Remotion_Audio_Engine",
-          "path": "03_Video_Media/20_James_Cameron/04_Remotion_Audio_Engine/SKILL.md",
+          "path": "03_Video_Media/02_James_Cameron/04_Remotion_Audio_Engine/SKILL.md",
           "has_frontmatter": true
         }
       ]
@@ -1282,58 +1282,58 @@
           "has_frontmatter": true
         },
         {
-          "name": "11_Doc_Processing",
-          "path": "06_Tools/11_Doc_Processing/SKILL.md",
+          "name": "09_Doc_Processing",
+          "path": "06_Tools/09_Doc_Processing/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "01_Universal_Doc_Reader",
-          "path": "06_Tools/11_Doc_Processing/01_Universal_Doc_Reader/SKILL.md",
+          "path": "06_Tools/09_Doc_Processing/01_Universal_Doc_Reader/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "02_Batch_Doc_Processor",
-          "path": "06_Tools/11_Doc_Processing/02_Batch_Doc_Processor/SKILL.md",
+          "path": "06_Tools/09_Doc_Processing/02_Batch_Doc_Processor/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "03_Resumen_Extractor",
-          "path": "06_Tools/11_Doc_Processing/03_Resumen_Extractor/SKILL.md",
+          "path": "06_Tools/09_Doc_Processing/03_Resumen_Extractor/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "12_Qmd",
-          "path": "06_Tools/12_Qmd/SKILL.md",
+          "name": "10_Qmd",
+          "path": "06_Tools/10_Qmd/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "13_System_Master",
-          "path": "06_Tools/13_System_Master/SKILL.md",
+          "name": "11_System_Master",
+          "path": "06_Tools/11_System_Master/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "03_Find_Skills",
-          "path": "06_Tools/13_System_Master/03_Find_Skills/SKILL.md",
+          "path": "06_Tools/11_System_Master/03_Find_Skills/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "04_Mcp_Builder",
-          "path": "06_Tools/13_System_Master/04_Mcp_Builder/SKILL.md",
+          "path": "06_Tools/11_System_Master/04_Mcp_Builder/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "05_Google_Stitch_MCP",
-          "path": "06_Tools/13_System_Master/05_Google_Stitch_MCP/SKILL.md",
+          "path": "06_Tools/11_System_Master/05_Google_Stitch_MCP/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "16_Silicon_Valley_Data_Analyst",
-          "path": "06_Tools/16_Silicon_Valley_Data_Analyst/SKILL.md",
+          "name": "12_Silicon_Valley_Data_Analyst",
+          "path": "06_Tools/12_Silicon_Valley_Data_Analyst/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "27_Qmd",
-          "path": "06_Tools/27_Qmd/SKILL.md",
+          "name": "13_Qmd",
+          "path": "06_Tools/13_Qmd/SKILL.md",
           "has_frontmatter": true
         }
       ]
