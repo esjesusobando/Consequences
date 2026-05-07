@@ -42,6 +42,24 @@ Limpiar pendientes del proyecto Think Different + auditoría interna de auditore
 
 ---
 
+## Nueva Sesión (2026-05-07 - Continued)
+
+### OIM Website v2 Updates
+- ✅ Video `3D_interior_design.mp4` agregado a `public/videos/`
+- ✅ HeroSection actualizado para usar el nuevo video
+- ✅ OIM repo push: `15ed42c`
+- ✅ `.gitmodules` creado con 6 submodules:
+  - `design-system` → robonuggets/design-system
+  - `frontend-slides` → zarazhangrui/frontend-slides
+  - `open-design` → nexu-io/open-design
+  - `OIM_Website_Backup copy` → esjesusobando/Office_Installations_
+  - `OIM_Website_Backup copy 2` → esjesusobando/Office_Installations_
+  - `OIM_Website_v2` → esjesusobando/OIM
+- ✅ Main repo push: `c9d63f4e` (gitignore + .gitmodules)
+- ✅ `.codex/` agregado a gitignore
+
+---
+
 ## Key Decisions
 
 | Decisión | Razón |
