@@ -176,3 +176,8 @@ Now/02_Videos_Finales/
 01_Personal_Os/05_Archive/07_Repos_Gentleman/tubemaster/
 03_Resultado/OIM_Website/
 03_Resultado/OIM_Website_Backup/
+
+# =============================================================================
+# AGENT TOOLS — config directories
+# =============================================================================
+.codex/
