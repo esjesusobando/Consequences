@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <title>U.E.P. Marian Diamond · Inscripciones Maternal 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #8B5CF6;
+            --primary-hover: #7C3AED;
+            --primary-glow: rgba(139, 92, 246, 0.4);
+            --secondary: #06B6D4;
+            --secondary-hover: #0891B2;
+            --accent: #F472B6;
+            --negro: #0A0A0A;
+            --blanco: #F5F5F5;
+            --blanco-dim: rgba(245, 245, 245, 0.7);
+            --gris: #888888;
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.12);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--negro);
+            color: var(--blanco);
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ========== PARTICLE CANVAS ========== */
+        #particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        #particles.visible {
+            opacity: 1;
+        }
+
+        /* ========== HERO FIJO ========== */
+        .hero {
+            position: relative;
+            width: 100%;
+        }
+
+        /* Imagen FIJA - se queda en su lugar mientras scrollea */
+        .hero-image-wrapper {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            transform: scale(1.05);
+            transition: transform 8s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        .hero-image.loaded {
+            transform: scale(1);
+        }
+
+        /* Glow orbs */
+        .glow-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.35;
+            pointer-events: none;
+            animation: float 6s ease-in-out infinite;
+            z-index: 2;
+        }
+
+        .glow-orb-1 {
+            width: 350px;
+            height: 350px;
+            background: var(--primary);
+            top: -10%;
+            left: -15%;
+        }
+
+        .glow-orb-2 {
+            width: 300px;
+            height: 300px;
+            background: var(--secondary);
+            top: 20%;
+            right: -10%;
+            animation-delay: -2s;
+        }
+
+        .glow-orb-3 {
+            width: 250px;
+            height: 250px;
+            background: var(--accent);
+            bottom: 10%;
+            left: 30%;
+            animation-delay: -4s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(20px, -20px) scale(1.05); }
+            66% { transform: translate(-10px, 15px) scale(0.95); }
+        }
+
+        /* Gradient mask */
+        .hero-gradient {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 70%;
+            background: linear-gradient(
+                to top,
+                var(--negro) 0%,
+                rgba(10, 10, 10, 0.98) 15%,
+                rgba(10, 10, 10, 0.85) 30%,
+                rgba(10, 10, 10, 0.5) 50%,
+                transparent 75%
+            );
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        /* ========== CONTENT - SCROLLEA SOBRE LA IMAGEN ========== */
+        .content {
+            position: relative;
+            z-index: 10;
+            padding: 0 1.25rem 4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 600px;
+            margin: -30vh auto 0;
+        }
+
+        /* ========== BADGE ========== */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+            color: white;
+            padding: 0.55rem 1.1rem;
+            border-radius: 2rem;
+            font-size: 0.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            box-shadow: 0 4px 20px var(--primary-glow);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.2s;
+            width: fit-content;
+        }
+
+        .badge svg {
+            width: 11px;
+            height: 11px;
+            animation: sparkle 1.5s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.2) rotate(10deg); }
+        }
+
+        /* ========== HEADLINE ========== */
+        .headline {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.35s;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.5rem, 12vw, 6rem);
+            font-weight: 400;
+            line-height: 0.95;
+            letter-spacing: 0.04em;
+            color: var(--blanco);
+        }
+
+        h1 span {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1rem, 3vw, 1.4rem);
+            color: var(--blanco-dim);
+            margin-top: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ========== INFO CARD ========== */
+        .info-card {
+            background: var(--glass);
+            backdrop-filter: blur(24px) saturate(180%);
+            -webkit-backdrop-filter: blur(24px) saturate(180%);
+            border: 1px solid var(--glass-border);
+            border-radius: 1.25rem;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.5s;
+            box-shadow:
+                0 8px 32px rgba(0, 0, 0, 0.3),
+                inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        }
+
+        .info-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            transition: background 0.3s ease;
+        }
+
+        .info-row:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .info-icon {
+            width: 20px;
+            height: 20px;
+            color: var(--primary);
+            flex-shrink: 0;
+            filter: drop-shadow(0 0 6px var(--primary-glow));
+        }
+
+        .info-content {
+            flex: 1;
+        }
+
+        .info-label {
+            font-size: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--gris);
+            margin-bottom: 0.2rem;
+            font-weight: 600;
+        }
+
+        .info-value {
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        /* ========== BUTTONS ========== */
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.875rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.65s;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.65rem;
+            padding: 1rem 1.5rem;
+            border-radius: 14px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border: none;
+            text-decoration: none;
+            letter-spacing: -0.01em;
+            min-height: 54px;
+            position: relative;
+            overflow: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.2) 0%,
+                rgba(255, 255, 255, 0.05) 50%,
+                transparent 100%
+            );
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        .btn:hover::before {
+            opacity: 1;
+        }
+
+        .btn:active {
+            transform: scale(0.965) translateY(2px);
+        }
+
+        .btn svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .btn:hover svg {
+            transform: scale(1.1);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+            color: white;
+            box-shadow:
+                0 4px 20px var(--primary-glow),
+                0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary:hover {
+            box-shadow:
+                0 8px 30px var(--primary-glow),
+                0 4px 12px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .btn-primary:active {
+            transform: scale(0.965) translateY(1px);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.08);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ========== SOCIAL BUTTON ========== */
+        .btn-social {
+            background: linear-gradient(135deg, var(--secondary) 0%, #0E7490 100%);
+            color: white;
+            box-shadow:
+                0 4px 20px rgba(6, 182, 212, 0.35),
+                0 2px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .btn-social:hover {
+            box-shadow:
+                0 8px 30px rgba(6, 182, 212, 0.45),
+                0 4px 12px rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .btn-social:active {
+            transform: scale(0.965) translateY(1px);
+        }
+
+        .btn-social .social-icon-tiktok {
+            width: 22px;
+            height: 22px;
+            flex-shrink: 0;
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .btn-social:hover .social-icon-tiktok {
+            transform: scale(1.15) rotate(-5deg);
+        }
+
+        .btn-social .social-label {
+            margin-left: 0.5rem;
+            font-weight: 700;
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            text-align: center;
+            font-size: 0.65rem;
+            color: var(--blanco-dim);
+            letter-spacing: 0.1em;
+            padding-bottom: 2rem;
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+            animation-delay: 0.8s;
+            line-height: 1.6;
+        }
+
+        .footer .slogan {
+            display: block;
+            margin-top: 0.5rem;
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        /* ========== SCROLL INDICATOR ========== */
+        .scroll-hint {
+            position: fixed;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--gris);
+            font-size: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            z-index: 100;
+            opacity: 1;
+            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .scroll-hint.hidden {
+            opacity: 0;
+            transform: translateX(-50%) translateY(20px);
+            pointer-events: none;
+        }
+
+        .scroll-hint .mouse {
+            width: 20px;
+            height: 32px;
+            border: 1.5px solid var(--gris);
+            border-radius: 10px;
+            position: relative;
+            opacity: 0.6;
+        }
+
+        .scroll-hint .wheel {
+            width: 3px;
+            height: 6px;
+            background: var(--gris);
+            border-radius: 2px;
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: scrollWheel 2s ease-in-out infinite;
+        }
+
+        @keyframes scrollWheel {
+            0%, 100% {
+                transform: translateX(-50%) translateY(0);
+                opacity: 1;
+            }
+            50% {
+                transform: translateX(-50%) translateY(8px);
+                opacity: 0.3;
+            }
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (min-width: 768px) {
+            .content {
+                padding: 0 2.5rem 5rem;
+                gap: 2rem;
+            }
+
+            .hero-image-wrapper {
+                height: 100vh;
+            }
+
+            .buttons {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .buttons .btn {
+                flex: 1;
+                min-width: 180px;
+            }
+
+            .btn {
+                min-height: 58px;
+                font-size: 1rem;
+            }
+
+            .info-card {
+                border-radius: 1.5rem;
+            }
+
+            .info-row {
+                padding: 1.1rem 1.4rem;
+                gap: 1.25rem;
+            }
+
+            .info-icon {
+                width: 22px;
+                height: 22px;
+            }
+
+            .info-value {
+                font-size: 1rem;
+            }
+
+            h1 {
+                font-size: clamp(3.5rem, 10vw, 6rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-image {
+                object-position: center top;
+            }
+
+            .content {
+                margin-top: -35vh;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .content {
+                padding: 0 1rem 3rem;
+                gap: 1.25rem;
+            }
+
+            h1 {
+                font-size: clamp(2.5rem, 14vw, 4rem);
+            }
+
+            .btn {
+                padding: 0.9rem 1.25rem;
+                min-height: 50px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Safe area insets for notched devices */
+        @supports (padding: env(safe-area-inset-top)) {
+            .content {
+                padding-left: calc(1.25rem + env(safe-area-inset-left));
+                padding-right: calc(1.25rem + env(safe-area-inset-right));
+                padding-bottom: calc(4rem + env(safe-area-inset-bottom));
+            }
+
+            .scroll-hint {
+                bottom: calc(1.5rem + env(safe-area-inset-bottom));
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- PARTICLE CANVAS -->
+    <canvas id="particles"></canvas>
+
+    <!-- HERO - IMAGEN FIJA MIENTRAS SCROLLEA -->
+    <div class="hero">
+        <div class="hero-image-wrapper">
+            <div class="glow-orb glow-orb-1"></div>
+            <div class="glow-orb glow-orb-2"></div>
+            <div class="glow-orb glow-orb-3"></div>
+            <img src="01_Image_Clinica.jpg" alt="Marian Diamond" class="hero-image" id="heroImg">
+            <div class="hero-gradient"></div>
+        </div>
+
+        <div class="content">
+            <div class="badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                Inscripciones Abiertas
+            </div>
+
+            <div class="headline">
+                <h1>MARIAN<br><span>DIAMOND</span></h1>
+                <p class="subtitle">Programa Maternal · 2026-2027</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-row">
+                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                    <div class="info-content">
+                        <div class="info-label">Ubicación</div>
+                        <div class="info-value">Calle Campo Elías, Ciudad Ojeda</div>
+                    </div>
+                </div>
+                <div class="info-row">
+                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <div class="info-content">
+                        <div class="info-label">Teléfono</div>
+                        <div class="info-value">+58 0414 062 1217</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a href="https://wa.me/5804140621217?text=%F0%9F%91%8D%F0%9F%91%8EHola!.%20te%20saluda%20la%20Familia%20Diamond%20kids%F0%9F%A7%A0.%20*Por%20favor%20me%20indica:*%0A*%20Nombre%20y%20apellido%20del%20representante.%0A*%20Nombre%20y%20apellido%20del%20ni%C3%B1o%20(a).%0A*%20Fecha%20de%20nacimiento.%0A%0A%E2%8F%B3En%20breve%20ser%C3%A1%20atendido!%20%F0%9F%AA%84%0A%0A%C2%A1%20%F0%9F%9C%88En%20Diamond%20kids%20creemos%20que%20todos%20los%20ni%C3%B1os%20...%20Merecen%20Brillar%E2%9C%A8!." target="_blank" class="btn btn-primary" id="whatsappBtn">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Reserva tu Cupo
+                </a>
+
+                <a href="https://www.tiktok.com/@diamond.kids80" target="_blank" class="btn btn-social" id="socialBtn" aria-label="Síguenos en TikTok">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="social-icon-tiktok">
+                        <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 3.66V9.57a8.26 8.26 0 004.58 0 6.34 6.34 0 10-9.8 3.91 6.3 6.3 0 002.41-4.73V6.19a4.85 4.85 0 013.77 4.25"/>
+                    </svg>
+                    <span class="social-label">Síguenos</span>
+                </a>
+
+                <a href="https://maps.apple.com/?address=Calle%20Campo%20El%C3%ADas,%20Ciudad%20Ojeda,%20Zulia,%20Venezuela&ll=10.204611,-71.313629&q=Calle%20Campo%20El%C3%ADas&t=m" target="_blank" class="btn btn-secondary" id="mapsBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+                    </svg>
+                    Ver Ubicación
+                </a>
+            </div>
+
+            <p class="footer">
+                U.E.P. Marian Diamond
+                <span class="slogan">¡ 🌈En Diamond kids creemos que todos los niños ... Merecen Brillar✨!.</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- SCROLL HINT -->
+    <div class="scroll-hint" id="scrollHint">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <span>Scroll</span>
+    </div>
+
+    <script>
+        // ========== HERO IMAGE LOAD ==========
+        const heroImg = document.getElementById('heroImg');
+        heroImg.addEventListener('load', () => {
+            heroImg.classList.add('loaded');
+        });
+
+        // ========== PARTICLE SYSTEM ==========
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let particlesStarted = false;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        // Kids-friendly colors: purple, cyan, pink
+        const kidsColors = ['#8B5CF6', '#06B6D4', '#F472B6', '#A78BFA', '#22D3EE', '#FB7185'];
+
+        class Particle {
+            constructor(x, y, burst = false) {
+                this.x = x || Math.random() * canvas.width;
+                this.y = y || Math.random() * canvas.height;
+                this.size = Math.random() * 3 + 1;
+                this.color = kidsColors[Math.floor(Math.random() * kidsColors.length)];
+                this.speedX = (Math.random() - 0.5) * 0.4;
+                this.speedY = (Math.random() - 0.5) * 0.4;
+                this.opacity = Math.random() * 0.3 + 0.1;
+                this.life = 1;
+                this.decay = burst ? 0.012 : 0.001;
+                this.isBurst = burst;
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                this.life -= this.decay;
+
+                if (this.isBurst) {
+                    this.speedY += 0.05;
+                }
+            }
+
+            draw() {
+                ctx.save();
+                ctx.globalAlpha = this.opacity * this.life;
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.restore();
+            }
+        }
+
+        function createAmbientParticles() {
+            if (particlesStarted) return;
+            particlesStarted = true;
+            particles = [];
+            for (let i = 0; i < 30; i++) {
+                particles.push(new Particle());
+            }
+            animateParticles();
+            canvas.classList.add('visible');
+        }
+
+        function burstParticles(x, y) {
+            for (let i = 0; i < 20; i++) {
+                particles.push(new Particle(x, y, true));
+            }
+            if (!particlesStarted) {
+                createAmbientParticles();
+            }
+        }
+
+        function animateParticles() {
+            if (particles.length === 0) return;
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles = particles.filter(p => p.life > 0);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+
+        // ========== PARTICLES ON INTERACTION ==========
+        const whatsappBtn = document.getElementById('whatsappBtn');
+        const mapsBtn = document.getElementById('mapsBtn');
+        const hint = document.getElementById('scrollHint');
+
+        whatsappBtn.addEventListener('click', () => {
+            const rect = whatsappBtn.getBoundingClientRect();
+            burstParticles(rect.left + rect.width / 2, rect.top + rect.height / 2);
+        });
+
+        mapsBtn.addEventListener('click', () => {
+            const rect = mapsBtn.getBoundingClientRect();
+            burstParticles(rect.left + rect.width / 2, rect.top + rect.height / 2);
+        });
+
+        const socialBtn = document.getElementById('socialBtn');
+        if (socialBtn) {
+            socialBtn.addEventListener('click', () => {
+                const rect = socialBtn.getBoundingClientRect();
+                burstParticles(rect.left + rect.width / 2, rect.top + rect.height / 2);
+            });
+        }
+
+        // Activar partículas al hacer scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                hint.classList.add('hidden');
+                createAmbientParticles();
+            }
+        });
+
+        // Activar partículas en cualquier click inicial
+        document.addEventListener('click', function initParticlesOnClick() {
+            createAmbientParticles();
+            document.removeEventListener('click', initParticlesOnClick);
+        }, { once: true });
+
+        // Timeout como backup
+        setTimeout(() => {
+            createAmbientParticles();
+        }, 3000);
+    </script>
+</body>
+</html>
