@@ -1,7 +1,7 @@
-# 🛡️ CLAUDE.md | PersonalOS v3.2 — Consequences AI Context Harness
+# 🛡️ CLAUDE.md | PersonalOS v4.0 — Production Ready AI Context Harness
 
 > **Última actualización:** 2026-05-10
-> **Versión:** v3.2 Consequences — JARVIS 3.2 Integrated
+> **Versión:** v4.0 Production — Every CE v3.7.3, gentle-ai v1.26.6
 
 <system_directives>
   <fundamental_rule>
