@@ -1,14 +1,10 @@
 # 📁 13_Auditors_Os — Auditors Utilities
 
-> **Versión**: v2.0 Consequences
-> **Fecha**: 2026-04-25
-> **Estado**: ✅ ACTUALIZADO
+> **Versión**: v4.0 Consequences
 
----
+Utilities para auditors del PersonalOS v4.0 Consequences:
 
-## 📋 Descripción
-
-Utilities para auditors del PersonalOS v2.0 Consequences:
+> **⚠️ NOTE:** These utilities are used by Auditor_Hub.py for systematic project auditing.
 - Beautify tables y documentos
 - Context usage bar para OpenCode
 - SOTA Integrity Check
@@ -28,7 +24,7 @@ Utilities para auditors del PersonalOS v2.0 Consequences:
 
 ---
 
-## 📍 Ubicación en v2.0 Consequences
+## 📍 Ubicación en v4.0 Consequences
 
 ```
 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/
@@ -82,4 +78,4 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA
 ---
 
 **Última actualización**: 2026-04-25
-**Estado**: ✅ ACTUALIZADO — v2.0 Consequences
+**Estado**: ✅ ACTUALIZADO — v4.0 Consequences

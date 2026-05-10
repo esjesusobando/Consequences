@@ -1,13 +1,13 @@
-# 📋 Índice de Reglas — PersonalOS v3.2 Consequences
+# 📋 Índice de Reglas — PersonalOS v4.0 Consequences
 
-**Versión:** 3.2
+**Versión:** 4.0
 **Última actualización:** 2026-05-10
 **Ubicación:** `01_Personal_Os/01_Core/01_Rules/`
-**Framework:** Anthropic SOTA 2026 + PersonalOS Consequences
+**Framework:** Anthropic SOTA 2026 + PersonalOS v4.0 Consequences
 
 ---
 
-## 📂 Estructura del Workspace (v3.2 — 4 carpetas raíz)
+## 📂 Estructura del Workspace (v4.0 — 4 carpetas raíz)
 
 ```
 Think_Different/
@@ -18,13 +18,6 @@ Think_Different/
 ├── 02_Playground/         # Zona de pruebas
 └── 03_Resultado/          # Outputs de proyectos
 ```
-Think_Different/
-├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria (ESTRATÉGICO)
-├── 01_Personal_Os/         # El Sistema Operativo
-│   ├── 01_Core/01_Rules/   # ← AQUÍ: 10 reglas .mdc
-│   └── ...
-├── 02_Playground/          # Zona de pruebas
-└── 03_Resultado/           # Outputs de proyectos
 ```
 
 ---
@@ -79,7 +72,7 @@ Think_Different/
 
 ---
 
-## 🗂️ Skills System (Referencia v3.2)
+## 🗂️ Skills System (Referencia v4.0)
 
 **Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
@@ -112,6 +105,6 @@ Think_Different/
 
 _Total Reglas activas: 11 (.mdc files)_
 _Total Skills: 300+_
-_Total Áreas funcionales: 11 (v3.2 Consequences)_
-_Framework: Anthropic SOTA 2026 + PersonalOS v3.2 Consequences_
+_Total Áreas funcionales: 11 (v4.0 Consequences)_
+_Framework: Anthropic SOTA 2026 + PersonalOS v4.0 Consequences_
 _Open Design: 62 skills + 138 design systems integrados_

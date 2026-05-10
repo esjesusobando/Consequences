@@ -1,4 +1,4 @@
-# 🔄 PersonalOS Workflows v6.1 — Think Different
+# 🔄 PersonalOS Workflows v4.0 Consequences — Think Different
 
 Directorio centralizado de los flujos de trabajo operativos de PersonalOS. Los flujos están organizados temáticamente para maximizar la eficiencia y la capitalización de conocimiento.
 

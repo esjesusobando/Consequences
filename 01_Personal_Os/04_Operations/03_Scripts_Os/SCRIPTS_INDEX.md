@@ -1,9 +1,11 @@
-# Scripts Index — PersonalOS Think Different v2.0 Consequences
+# Scripts Index — PersonalOS Think Different v4.0 Consequences
 
 > **Total Scripts:** 98+ (HUBs + módulos + utilities)
-> **Total HUBs:** 19 (v2.0 + JARVIS 3.0)
-> **Last Updated:** 2026-04-26
-> **Validation:** Auditorías PASANDO - Sistema PURE GREEN + JARVIS 3.0 INTEGRADO
+> **Total HUBs:** 23 (v4.0 + JARVIS 3.1)
+> **Last Updated:** 2026-05-10
+> **Validation:** Production Ready — Sistema PURE GREEN v4.0 Consequences
+> **Migration:** 12 scripts moved to skills using get_skill_script()
+> **New:** 13_Auditors_Os folder + HUBs 14-23 (JARVIS 3.1)
 > **Migration:** 12 scripts moved to skills using get_skill_script()
 > **New:** 13_Auditors_Os folder + HUBs 14-18 (JARVIS 3.0)
 
@@ -30,7 +32,7 @@
 
 ## 🏗️ Orchestration HUBs (01_Personal_Os/04_Operations/03_Scripts_Os/)
 
-> **Total HUBs:** 19 (v2.0 Consequences + JARVIS 3.0) — Ver detalle completo en `HUB_CATALOG.md`
+> **Total HUBs:** 23 (v4.0 Consequences + JARVIS 3.1) — Ver detalle completo en `HUB_CATALOG.md`
 
 | #                   | Script                               | Purpose                                                   | Status                   |
 |---------------------|--------------------------------------|-----------------------------------------------------------|--------------------------|
@@ -79,38 +81,38 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py profundo
 
 ---
 
-## 📁 Estructura v2.0 Consequences (Activo — 2026-04-24)
+## 📁 Estructura v4.0 Consequences (Activo — 2026-05-10)
 
 ```
 Think_Different/                        ← Raíz del proyecto
 ├── 00_Winter_is_Coming/                ✅ Goals, Backlog, AGENTS.md, OS_DIRECTORY.md
 ├── 01_Personal_Os/                     ✅ Sistema Operativo completo
 │   ├── 01_Core/                        ✅ Motor del OS
-│   │   ├── 00_Workflows_Os/            ✅ 27 Workflows (Personal, Marvel, CE, Hillary)
-│   │   ├── 01_Rules/                   ✅ 10 reglas .mdc
+│   │   ├── 00_Workflows_Os/            ✅ 28 Workflows (Personal, Marvel, CE, Hillary)
+│   │   ├── 01_Rules/                   ✅ 11 reglas .mdc
 │   │   └── 02_Tools/                   ✅ Agentes, Skills, MCPs, Hooks, Evals
-│   │       ├── 01_Agents/              ✅ 52 agentes (Dream Team + Specialists)
-│   │       ├── 02_Skills/              ✅ 297 skills en 9 áreas funcionales
+│   │       ├── 01_Agents/              ✅ 52+ agentes (Dream Team + Specialists)
+│   │       ├── 02_Skills/               ✅ 300+ skills en 11 áreas funcionales
 │   │       └── 03_Mcp/ … 09_Templates ✅ MCPs, Hooks, Plugins, Server, Evals
 │   ├── 02_Knowledge/                   ✅ Base de conocimiento
 │   ├── 03_Task/                        ✅ Tareas activas
 │   ├── 04_Operations/                  ✅ Todo lo operativo
-│   │   ├── 03_Scripts_Os/              ✅ 19 HUBs + utilities
+│   │   ├── 03_Scripts_Os/              ✅ 23 HUBs + utilities (JARVIS 3.1)
 │   │   │   ├── 13_Auditors_Os/         ✅ Utilities: Beautify, Carousel, SOTA, etc.
-│   │   │   └── .backup/                ✅ 10_Legacy_backup_20260420
+│   │   │   └── .backup/               ✅ 10_Legacy_backup_20260420
 │   │   └── 02_Agent_Teams_Lite/00_Manifest/ ✅ 7 archivos JARVIS manifest
 │   └── 05_Archive/                     ✅ Legacy + repos de referencia
 ├── 02_Playground/                      ✅ Zona de pruebas
 ├── 03_Resultado/                       ✅ Outputs (OIM, Elite Portfolio, etc.)
-├── .agent/ .atl/ .claude/ .mcp.json   ✅ Config IA + GGA + SDD + 33 MCPs
+├── .agent/ .atl/ .claude/ .mcp.json   ✅ Config IA + GGA + SDD + 35 MCPs
 └── OS_DIRECTORY.md CLAUDE.md README.md ✅ Documentación raíz
 ```
 
 ---
 
-## 🎯 Skills (01_Personal_Os/01_Core/02_Tools/02_Skills/) — v2.0 Consequences
+## 🎯 Skills (01_Personal_Os/01_Core/02_Tools/02_Skills/) — v4.0 Consequences
 
-> **Total:** 297 skills — 9+3 áreas funcionales | Índice completo: `INDEX_AREA_FUNCTIONAL.md`
+> **Total:** 300+ skills — 11 áreas funcionales | Índice completo: `INDEX_AREA_FUNCTIONAL.md`
 
 | Área                | Carpeta                           | Descripción                                                     | SKILL.md       |
 |---------------------|-----------------------------------|-----------------------------------------------------------------|----------------|
@@ -159,7 +161,7 @@ Scripts legacy en `01_Personal_Os/04_Operations/03_Scripts_Os/Legacy_Backup/` �
 
 ## 📝 Notas Importantes
 
-1. **Rutas v6.1**: Skills ahora en `01_Personal_Os/01_Core/02_Tools/02_Skills/` (antes `01_Personal_Os/01_Core/02_Tools/02_Skills/`)
+1. **Rutas v4.0**: Skills ahora en `01_Personal_Os/01_Core/02_Tools/02_Skills/` (estructura v4.0 Consequences)
 2. **.bashrc**: Alias configurados con rutas absolutas
 3. **34_Skill_Auditor.py**: Corregido para auto-detectar categorías
 

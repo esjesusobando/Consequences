@@ -1,6 +1,6 @@
 # 🤖 01_Agents — Sistema de Agentes Especializados
 
-**Versión:** v3.3 | **Fecha:** 2026-04-29 | **Estado:** Pure Green
+**Versión:** v4.0 | **Fecha:** 2026-05-10 | **Estado:** Pure Green Production
 
 Este directorio contiene todos los agentes especializados del PersonalOS. Cada agente tiene un dominio específico y se invoca desde workflows o directamente desde Claude Code.
 
@@ -152,4 +152,4 @@ Agente #05: "Audita seguridad de [feature]"
 
 ---
 
-_PersonalOS v3.3 Consequences — Pure Green — 2026-04-29_
+_PersonalOS v4.0 Consequences — Pure Green Production — 2026-05-10_

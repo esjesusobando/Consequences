@@ -1,8 +1,8 @@
-# INDEX ÁREAS FUNCIONALES — Skills v3.1 Consequences
+# INDEX ÁREAS FUNCIONALES — Skills v4.0 Consequences
 
 > Índice navegable de todas las skills organizadas por área funcional.
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
-> **Actualizado:** 2026-05-03 (Auditoría completa — Pure Green State)
+> **Actualizado:** 2026-05-10 (v4.0 Consequences — Production Ready)
 
 ---
 
@@ -125,4 +125,4 @@
 
 > ℹ️ **Legacy Archive** → movido a `01_Personal_Os/05_Archive/09_Legacy_Skills_Archive/` (no es área activa de skills)
 
-*PersonalOS v3.1 Consequences — 2026-04-28 | 11 áreas activas | Skills count: 299*
+*PersonalOS v4.0 Consequences — 2026-05-10 | 11 áreas activas | Skills count: 300+*
