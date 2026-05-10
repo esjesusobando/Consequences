@@ -1,4 +1,4 @@
-# Skill Registry — Think Different PersonalOS v3.2 Consequences
+# Skill Registry — Think Different PersonalOS v4.0 Production Ready
 
 > **FUENTE DE VERDAD**: Este archivo es el registry activo. Los sub-agentes leen de aquí para obtener compact rules.
 > La fuente de implementación de cada skill está en `01_Personal_Os/01_Core/02_Tools/02_Skills/`.
@@ -7,8 +7,8 @@
 
 ## Proyecto: Think_Different
 
-**Versión:** 3.2 Consequences (2026-05-10)
-**Última actualización:** 2026-05-10 (State of the Art Review + Open Design Integration)
+**Versión:** 4.0 Production Ready (2026-05-10)
+**Última actualización:** 2026-05-10 (v4.0 Production Ready + gentle-ai v1.26.6 + Every CE v3.7.3)
 
 ### Convenciones del Proyecto
 
@@ -20,7 +20,7 @@
 | Skills | `SKILL.md` en directorios de skills |
 | Backup | `.agent/` refleja `01_Personal_Os/01_Core/` |
 
-### Estructura del OS (v3.0 Consequences)
+### Estructura del OS (v4.0 Production Ready)
 
 ```
 Think_Different/
@@ -64,7 +64,7 @@ Think_Different/
 | Openspec root | `.atl/openspec/` |
 | Engram | ✅ MCP server disponible (verificar con `engram tui`) |
 
-### Available Skills — Sistema v3.2 (11 Áreas Funcionales + Open Design)
+### Available Skills — Sistema v4.0 (11 Áreas Funcionales + Open Design)
 
 | # | Área Funcional | Categorías | Skills principales | Metodología | Path |
 |---|---------------|------------|-------------------|-------------|------|
@@ -80,7 +80,7 @@ Think_Different/
 | **09** | 📦 **Legacy Archive** | Skills obsoletas | — | Archive | `01_Personal_Os/01_Core/02_Tools/02_Skills/09_Legacy_Archive/` |
 | **10** | 🏆 **Open Design** (external) | Multi-Agent Design Framework | critique, tweaks, design-brief | Design OS | `05_Archive/07_Repos_Gentleman/open-design/` |
 
-> **✅ v3.2 Consequences:** State of the Art Review 2026-05-10. 300+ skills, 52 agents, 28 HUBs (scripts totales), 11 áreas funcionales, 28 workflows. Open Design: 62 skills + 138 design systems. Pure Green State.
+> **✅ v4.0 Production Ready:** Every CE v3.7.3 + gentle-ai v1.26.6. 300+ skills, 52 agents, 28 HUBs, 11 áreas funcionales, 28 workflows. Open Design: 62 skills + 138 design systems. Pure Green State.
 
 ### Project Conventions (AGENTS.md)
 
@@ -100,5 +100,5 @@ Think_Different/
 
 ---
 
-*PersonalOS v3.2 Consequences — 2026-05-10. State of the Art Review + Open Design Integration*
+*PersonalOS v4.0 Production Ready — 2026-05-10. Every CE v3.7.3 + gentle-ai v1.26.6*
 *Fuente de implementación: `01_Personal_Os/01_Core/02_Tools/02_Skills/`*

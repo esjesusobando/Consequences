@@ -21,7 +21,7 @@
 | Commit       | Descripción |
 |--------------|-------------|
 | `484dc2ca`   | feat(os): Think_Different v4.0 preparation — audit, cleanup, ecosystem sync |
-| [pending]    | feat: v4.0 production ready — docs updated, naming fixed, reports consolidated |
+| `8750740b`   | feat: Think_Different v4.0 — reports archive + gentle-ai v1.26.6 |
 
 ---
 
