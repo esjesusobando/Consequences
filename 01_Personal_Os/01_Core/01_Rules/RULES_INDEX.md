@@ -1,14 +1,22 @@
-# 📋 Índice de Reglas — PersonalOS v2.0 Consequences
+# 📋 Índice de Reglas — PersonalOS v3.2 Consequences
 
-**Versión:** 2.0
-**Última actualización:** 2026-04-24
+**Versión:** 3.2
+**Última actualización:** 2026-05-10
 **Ubicación:** `01_Personal_Os/01_Core/01_Rules/`
 **Framework:** Anthropic SOTA 2026 + PersonalOS Consequences
 
 ---
 
-## 📂 Estructura del Workspace (v2.0 — 4 carpetas raíz)
+## 📂 Estructura del Workspace (v3.2 — 4 carpetas raíz)
 
+```
+Think_Different/
+├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria (ESTRATÉGICO)
+├── 01_Personal_Os/         # El Sistema Operativo
+│   ├── 01_Core/01_Rules/  # ← AQUÍ: 11 reglas .mdc
+│   └── ...
+├── 02_Playground/         # Zona de pruebas
+└── 03_Resultado/          # Outputs de proyectos
 ```
 Think_Different/
 ├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria (ESTRATÉGICO)
@@ -53,7 +61,7 @@ Think_Different/
 
 ---
 
-## 🔘 Reglas Activas (10 archivos .mdc)
+## 🔘 Reglas Activas (11 archivos .mdc)
 
 | #           | Regla                                                                | Nombre                              | Función                                                   |
 |-------------|----------------------------------------------------------------------|-------------------------------------|-----------------------------------------------------------|
@@ -71,25 +79,26 @@ Think_Different/
 
 ---
 
-## 🗂️ Skills System (Referencia v2.0)
+## 🗂️ Skills System (Referencia v3.2)
 
 **Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
-### 9 Áreas Funcionales
+### 11 Áreas Funcionales
 
-| Área                                | Contenido                                    |
-|-------------------------------------|----------------------------------------------|
-| **00_Compound_Engineering**         | Core CE                                      |
-| **00_Personal_Os_Stack**            | Stack base OS                                |
-| **00_Skill_Auditor**                | Auditor de skills                            |
-| **01_Creacion_Contenidos**          | Contenido + SEO + Carousel                   |
-| **02_Diseno_Ui_Ux**                 | Diseño UI/UX                                 |
-| **03_Video_Media**                  | Video + James Cameron                        |
-| **04_Automatizacion**               | Automatización                               |
-| **05_Workflows**                    | Workflows + Agent Teams Lite                 |
-| **06_Tools**                        | Tools + System Master + Data Analyst         |
-| **07_Personal_Os**                  | Skills OS personal                           |
-| **08_Invictus_Web**                 | Web development                              |
+| Área                                | Contenido                                               |
+|-------------------------------------|----------------------------------------------------------|
+| **00_Compound_Engineering**         | Core CE + Avengers + Spider                             |
+| **00_Personal_Os_Stack**           | Stack base OS + System Guardian                        |
+| **00_Skill_Auditor**               | Auditor de skills                                      |
+| **01_Creacion_Contenidos**         | Brand, YouTube, SEO, Carousel                         |
+| **02_Diseno_Ui_Ux**               | UI/UX, Huashu, Dumbledor, Taste, Design SOTA          |
+| **03_Video_Media**                 | Video Intel, James Cameron (Remotion)                   |
+| **04_Automatizacion**             | N8N, Firecrawl, GWS Client                          |
+| **05_Workflows**                   | Agent Teams Lite, PM, Orchestrator                    |
+| **06_Tools**                       | Skill Creator, Testing, DevOps, Data Analyst          |
+| **07_Personal_Os**                 | Hillary, Life OS, Rituales                            |
+| **08_Invictus_Web**               | Playwright, Superpowers, Browser Automation            |
+| **Open Design** (external)         | 62 skills + 138 design systems (en 05_Archive)         |
 
 ### Sistema de Calidad
 
@@ -101,7 +110,8 @@ Think_Different/
 
 ---
 
-_Total Reglas activas: 10 (.mdc files)_
-_Total Skills: 165+_
-_Total Áreas funcionales: 9 (post-migración v2.0)_
-_Framework: Anthropic SOTA 2026 + PersonalOS v2.0 Consequences_
+_Total Reglas activas: 11 (.mdc files)_
+_Total Skills: 300+_
+_Total Áreas funcionales: 11 (v3.2 Consequences)_
+_Framework: Anthropic SOTA 2026 + PersonalOS v3.2 Consequences_
+_Open Design: 62 skills + 138 design systems integrados_

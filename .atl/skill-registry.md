@@ -1,4 +1,4 @@
-# Skill Registry — Think Different PersonalOS v3.1 Consequences
+# Skill Registry — Think Different PersonalOS v3.2 Consequences
 
 > **FUENTE DE VERDAD**: Este archivo es el registry activo. Los sub-agentes leen de aquí para obtener compact rules.
 > La fuente de implementación de cada skill está en `01_Personal_Os/01_Core/02_Tools/02_Skills/`.
@@ -7,8 +7,8 @@
 
 ## Proyecto: Think_Different
 
-**Versión:** 3.1 Consequences (2026-05-03)
-**Última actualización:** 2026-05-03 (Auditoría completa aplicada)
+**Versión:** 3.2 Consequences (2026-05-10)
+**Última actualización:** 2026-05-10 (State of the Art Review + Open Design Integration)
 
 ### Convenciones del Proyecto
 
@@ -64,7 +64,7 @@ Think_Different/
 | Openspec root | `.atl/openspec/` |
 | Engram | ✅ MCP server disponible (verificar con `engram tui`) |
 
-### Available Skills — Sistema v3.1 (11 Áreas Funcionales)
+### Available Skills — Sistema v3.2 (11 Áreas Funcionales + Open Design)
 
 | # | Área Funcional | Categorías | Skills principales | Metodología | Path |
 |---|---------------|------------|-------------------|-------------|------|
@@ -77,8 +77,10 @@ Think_Different/
 | **06** | 🛠️ **Tools** | Skill_Creator, Anthropic_Harness, DevOps, Testing, Doc_Processing, System_Master, Data_Analyst, Qmd | react-19, nextjs-15, pytest, playwright, docker | CE+GGA | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/` |
 | **07** | 🌱 **Personal OS** | Life_OS, Personal_Os, Hillary, Contexto, Rituales | quick-capture, plan-my-day, morning-standup, weekly-review | OS | `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/` |
 | **08** | 🌐 **Invictus Web** | Superpowers, Buscador_Skills, Playwright | browser-automation, search, scraping | Web | `01_Personal_Os/01_Core/02_Tools/02_Skills/08_Invictus_Web/` |
+| **09** | 📦 **Legacy Archive** | Skills obsoletas | — | Archive | `01_Personal_Os/01_Core/02_Tools/02_Skills/09_Legacy_Archive/` |
+| **10** | 🏆 **Open Design** (external) | Multi-Agent Design Framework | critique, tweaks, design-brief | Design OS | `05_Archive/07_Repos_Gentleman/open-design/` |
 
-> **✅ v3.1 Consequences:** Auditoría completa aplicada 2026-05-03. 299+ skills, 52 agents, 23 HUBs (28 scripts totales), 11 áreas funcionales, 28 workflows. Pure Green State.
+> **✅ v3.2 Consequences:** State of the Art Review 2026-05-10. 300+ skills, 52 agents, 28 HUBs (scripts totales), 11 áreas funcionales, 28 workflows. Open Design: 62 skills + 138 design systems. Pure Green State.
 
 ### Project Conventions (AGENTS.md)
 
@@ -98,4 +100,5 @@ Think_Different/
 
 ---
 
-*PersonalOS v3.1 Consequences — 2026-05-03. Fuente de implementación: `01_Personal_Os/01_Core/02_Tools/02_Skills/`*
+*PersonalOS v3.2 Consequences — 2026-05-10. State of the Art Review + Open Design Integration*
+*Fuente de implementación: `01_Personal_Os/01_Core/02_Tools/02_Skills/`*

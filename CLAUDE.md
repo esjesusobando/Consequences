@@ -1,7 +1,7 @@
-# 🛡️ CLAUDE.md | PersonalOS v3.1 — Consequences AI Context Harness
+# 🛡️ CLAUDE.md | PersonalOS v3.2 — Consequences AI Context Harness
 
-> **Última actualización:** 2026-04-29
-> **Versión:** v3.1 Consequences — JARVIS 3.1 Integrated
+> **Última actualización:** 2026-05-10
+> **Versión:** v3.2 Consequences — JARVIS 3.2 Integrated
 
 <system_directives>
   <fundamental_rule>

@@ -1,6 +1,6 @@
 # 🤖 Think Different PersonalOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v3.1 Consequences** | 2026-05-05
+**v3.2 Consequences** | 2026-05-10
 
 ---
 
@@ -9,11 +9,12 @@
 | Resource          | Count       | Location                                                               |
 |-------------------|-------------|------------------------------------------------------------------------|
 | **MCPs**          | 38          | `00_Manifest/02_MCP_Registry.yaml`                                     |
-| **Skills**        | 300         | `00_Manifest/04_Skill_Index.json`                                      |
-| **Agents**        | 52          | `00_Manifest/03_Agent_Catalog.yaml`                                    |
-| **HUBs**          | 28          | `00_Manifest/05_HUB_Catalog.yaml` / `03_Scripts_Os/HUB_CATALOG.md`     |
-| **Workflows**     | 28          | `00_Manifest/06_Workflow_Graph.yaml`                                   |
-| **Hooks**         | 10          | `00_Manifest/07_Hook_Registry.yaml`                                    |
+| **Skills**        | 300+        | `00_Manifest/04_Skill_Index.json`                                      |
+| **Agents**        | 52+         | `00_Manifest/03_Agent_Catalog.yaml`                                    |
+| **HUBs**          | 28          | `00_Manifest/05_HUB_Catalog.yaml` / `03_Scripts_Os/HUB_CATALOG.md`   |
+| **Workflows**     | 28+         | `00_Manifest/06_Workflow_Graph.yaml`                                   |
+| **Hooks**         | 10+         | `00_Manifest/07_Hook_Registry.yaml`                                    |
+| **Open Design**   | 62 + 138    | `05_Archive/07_Repos_Gentleman/open-design/`                          |
 
 ---
 
@@ -74,4 +75,4 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboar
 
 ---
 
-*Think Different PersonalOS v3.1 Consequences — JARVIS Integrated | 2026-05-05*
+*Think Different PersonalOS v3.2 Consequences — JARVIS 3.2 Integrated | Open Design + TOP 13 Design Skills | 2026-05-10*

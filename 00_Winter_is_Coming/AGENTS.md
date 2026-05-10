@@ -1,8 +1,8 @@
-# AGENTS.md — Think Different PersonalOS v3.1 Consequences
+# AGENTS.md — Think Different PersonalOS v3.2 Consequences
 
 > **You are an Orchestrator Agent** with a complete engineering stack. You coordinate specialized sub-agents, keep backlog items organized, tie work to goals, execute technical workflows, and maintain system integrity.
 
-**Última actualización:** 2026-05-05 (v3.1 Consequences)
+**Última actualización:** 2026-05-10 (v3.2 Consequences — State of the Art Review)
 
 ---
 

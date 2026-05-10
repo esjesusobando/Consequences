@@ -1,0 +1,76 @@
+# 10_Git_Directions — Regla de Configuracion de Remotes
+
+> Evita confusiones entre proyectos verificando siempre el remote antes de hacer push.
+
+## Los 3 Repos Principales
+
+### 1. Think Different OS (este proyecto)
+- **Remote**: `origin`
+- **URL**: `https://github.com/esjesusobando/Think_Different_AI.git`
+- **Rama**: `master`
+- **Path local**: `personal-os/Think_Different`
+- **Push command**: `git push origin master`
+
+### 2. OIM Website / Office Installations
+- **Remote**: `origin` (desde OIM_Website_Backup folder)
+- **URL**: `https://github.com/esjesusobando/Office_Installations_.git`
+- **Rama**: `feature/improve-design-add-images`
+- **Path local**: `personal-os/Think_Different/03_Resultado/OIM_Website_Backup`
+
+### 3. Proyecto Honores de Grado - Valeria
+- **Remote**: SEPARADO (NO es parte de Think Different)
+- **URL**: `https://github.com/esjesusobando/invitacion_honores_de_grado.git`
+- **Rama**: `master`
+- **Path local**: `personal-os/Think_Different/01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/09_Valeria`
+- **Push command**: `git push origin master` (desde el folder de Valeria)
+
+## Antes de Hacer Push - Checklist
+
+1. **Estoy en el proyecto correcto?**
+   - `git remote -v` -> verificar que el remote apunta al repo correcto
+
+2. **Cual es mi remote?**
+   - `origin` = Think Different OS (Think_Different_AI)
+   - `origin` = OIM Website (Office_Installations_)
+   - Valeria tiene SU PROPIO remote (invitacion_honores_de_grado)
+
+3. **El remote existe?**
+   - `esjesusobando/Think_Different_AI` (existe)
+   - `esjesusobando/Office_Installations_` (existe)
+   - `esjesusobando/invitacion_honores_de_grado` (existe)
+
+## Si Te Pierdes
+
+```bash
+# Ver remotes configurados
+git remote -v
+
+# Ver rama actual y tracking
+git branch -vv
+
+# Ver commits recientes
+git log --oneline -3
+```
+
+## Configuracion Guardada
+
+Ver archivo: `01_Personal_Os/04_Operations/01_Auto_Improvement/REPO_CONFIG.md`
+
+## Simbolos de Warning
+
+⚠️ **"Repository not found"** -> Verificaste mal el remote, checkea `git remote -v`
+⚠️ **"Permission denied"** -> Estas en el repo equivocado o no tienes acceso
+⚠️ **"fetch first"** -> Hacele `git pull --rebase` antes de fazer push
+
+## REGLA DE ORO
+
+**VALERIA NUNCA VA EN EL REPO DE THINK DIFFERENT**
+
+El archivo `Honores_Grado_Noel.html` y todo lo relacionado con Valeria
+pertenece EXCLUSIVAMENTE al repo `invitacion_honores_de_grado.git`.
+
+Si ves archivos de Valeria en este repo, son CONTAMINACION y deben ser removidos.
+
+---
+
+*Ultima actualizacion: 2026-04-30*
