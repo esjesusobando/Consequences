@@ -43,19 +43,19 @@ metadata:
 
 ### 2. RED Method (Request Metrics)
 
-| Metric                         | Question                                    | Implementation                                    |
-|--------------------------------|---------------------------------------------|---------------------------------------------------|
-| **Rate**                       | How many requests/second?                   | `requests_total / second`                         |
-| **Errors**                     | How many failures?                          | `errors_total / requests_total`                   |
-| **Duration**                   | How slow are they?                          | `p50, p95, p99 latency`                           |
+| Metric                           | Question                                      | Implementation                                      |
+|----------------------------------|-----------------------------------------------|-----------------------------------------------------|
+| **Rate**                         | How many requests/second?                     | `requests_total / second`                           |
+| **Errors**                       | How many failures?                            | `errors_total / requests_total`                     |
+| **Duration**                     | How slow are they?                            | `p50, p95, p99 latency`                             |
 
 ### 3. USE Method (Resource Metrics)
 
-| Metric                            | Question                              | Implementation                      |
-|-----------------------------------|---------------------------------------|-------------------------------------|
-| **Utilization**                   | Is resource busy?                     | CPU %, Memory %                     |
-| **Saturation**                    | Is resource queued?                   | Queue depth, Load                   |
-| **Errors**                        | Are there failures?                   | Error rate                          |
+| Metric                              | Question                                | Implementation                        |
+|-------------------------------------|-----------------------------------------|---------------------------------------|
+| **Utilization**                     | Is resource busy?                       | CPU %, Memory %                       |
+| **Saturation**                      | Is resource queued?                     | Queue depth, Load                     |
+| **Errors**                          | Are there failures?                     | Error rate                            |
 
 ## Code Examples
 

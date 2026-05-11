@@ -8,19 +8,19 @@
 
 ## Navegación Rápida
 
-| #         | Skill                            | Descripción                               | Estado         |
-|-----------|----------------------------------|-------------------------------------------|----------------|
-| 01        | `01_Product_Design/`             | Fundamentos de diseño de producto         | ✅              |
-| 02        | `02_Product_Design/`             | Diseño de producto (backup)               | 🟡              |
-| 03        | `03_Taste_Skills/`               | Criterio estético y buen diseño           | ✅              |
-| 04        | `04_Diseno_Minimalista/`         | Diseño minimalista exagerado              | ✅              |
-| 05        | `05_Directrices_Marca/`          | Guías de marca y consistencia             | ✅              |
-| 06        | `06_Excalidraw_Flowchart/`       | Diagramas y flowcharts                    | ✅              |
-| 07        | `07_Ui_Ux_Pro_Max/`              | UI/UX con base de datos consultable       | ✅              |
-| 08        | `08_Design_Sota/`                | Estado del arte en diseño                 | ✅              |
-| 09        | `09_Ui_Ux_Pro_Max/`              | Backup Ui Ux Pro Max                      | 🟡              |
-| 10        | `10_Huashu_Design/`              | HTML prototipado de alta fidelidad        | ✅              |
-| 11        | `11_Dumbledor_Design/`           | Diseño editorial de alto impacto          | 🆕              |
+| #           | Skill                              | Descripción                                 | Estado           |
+|-------------|------------------------------------|---------------------------------------------|------------------|
+| 01          | `01_Product_Design/`               | Fundamentos de diseño de producto           | ✅                |
+| 02          | `02_Product_Design/`               | Diseño de producto (backup)                 | 🟡                |
+| 03          | `03_Taste_Skills/`                 | Criterio estético y buen diseño             | ✅                |
+| 04          | `04_Diseno_Minimalista/`           | Diseño minimalista exagerado                | ✅                |
+| 05          | `05_Directrices_Marca/`            | Guías de marca y consistencia               | ✅                |
+| 06          | `06_Excalidraw_Flowchart/`         | Diagramas y flowcharts                      | ✅                |
+| 07          | `07_Ui_Ux_Pro_Max/`                | UI/UX con base de datos consultable         | ✅                |
+| 08          | `08_Design_Sota/`                  | Estado del arte en diseño                   | ✅                |
+| 09          | `09_Ui_Ux_Pro_Max/`                | Backup Ui Ux Pro Max                        | 🟡                |
+| 10          | `10_Huashu_Design/`                | HTML prototipado de alta fidelidad          | ✅                |
+| 11          | `11_Dumbledor_Design/`             | Diseño editorial de alto impacto            | 🆕                |
 
 ---
 
@@ -87,15 +87,15 @@
 
 ## Selección de Skill por Caso
 
-| Caso                          | Skill Recomendada               |
-|-------------------------------|---------------------------------|
-| Landing page impactante       | `11_Dumbledor_Design`           |
-| Presentación de pitch         | `Frontend Slides`               |
-| Prototipo clickeable          | `10_Huashu_Design`              |
-| Diagrama de flujo             | `06_Excalidraw_Flowchart`       |
-| Sistema de diseño             | `07_Ui_Ux_Pro_Max`              |
-| Diseño minimalista            | `04_Diseno_Minimalista`         |
-| Marca coherente               | `05_Directrices_Marca`          |
+| Caso                            | Skill Recomendada                 |
+|---------------------------------|-----------------------------------|
+| Landing page impactante         | `11_Dumbledor_Design`             |
+| Presentación de pitch           | `Frontend Slides`                 |
+| Prototipo clickeable            | `10_Huashu_Design`                |
+| Diagrama de flujo               | `06_Excalidraw_Flowchart`         |
+| Sistema de diseño               | `07_Ui_Ux_Pro_Max`                |
+| Diseño minimalista              | `04_Diseno_Minimalista`           |
+| Marca coherente                 | `05_Directrices_Marca`            |
 
 ---
 

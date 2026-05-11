@@ -44,13 +44,13 @@ Gather this context (ask if not provided):
 
 ## Platform Quick Reference
 
-| Platform                       | Best For                                               | Frequency                                     | Key Format                               |
-|--------------------------------|--------------------------------------------------------|-----------------------------------------------|------------------------------------------|
-| LinkedIn                       | B2B, thought leadership                                | 3-5x/week                                     | Carousels, stories                       |
-| Twitter/X                      | Tech, real-time, community                             | 3-10x/day                                     | Threads, hot takes                       |
-| Instagram                      | Visual brands, lifestyle                               | 1-2 posts + Stories daily                     | Reels, carousels                         |
-| TikTok                         | Brand awareness, younger audiences                     | 1-4x/day                                      | Short-form video                         |
-| Facebook                       | Communities, local businesses                          | 1-2x/day                                      | Groups, native video                     |
+| Platform                         | Best For                                                 | Frequency                                       | Key Format                                 |
+|----------------------------------|----------------------------------------------------------|-------------------------------------------------|--------------------------------------------|
+| LinkedIn                         | B2B, thought leadership                                  | 3-5x/week                                       | Carousels, stories                         |
+| Twitter/X                        | Tech, real-time, community                               | 3-10x/day                                       | Threads, hot takes                         |
+| Instagram                        | Visual brands, lifestyle                                 | 1-2 posts + Stories daily                       | Reels, carousels                           |
+| TikTok                           | Brand awareness, younger audiences                       | 1-4x/day                                        | Short-form video                           |
+| Facebook                         | Communities, local businesses                            | 1-2x/day                                        | Groups, native video                       |
 
 **For detailed platform strategies**: See [references/platforms.md](references/platforms.md)
 
@@ -62,13 +62,13 @@ Build your content around 3-5 pillars that align with your expertise and audienc
 
 ### Example for a SaaS Founder
 
-| Pillar                                | % of Content                       | Topics                                                    |
-|---------------------------------------|------------------------------------|-----------------------------------------------------------|
-| Industry insights                     | 30%                                | Trends, data, predictions                                 |
-| Behind-the-scenes                     | 25%                                | Building the company, lessons learned                     |
-| Educational                           | 25%                                | How-tos, frameworks, tips                                 |
-| Personal                              | 15%                                | Stories, values, hot takes                                |
-| Promotional                           | 5%                                 | Product updates, offers                                   |
+| Pillar                                  | % of Content                         | Topics                                                      |
+|-----------------------------------------|--------------------------------------|-------------------------------------------------------------|
+| Industry insights                       | 30%                                  | Trends, data, predictions                                   |
+| Behind-the-scenes                       | 25%                                  | Building the company, lessons learned                       |
+| Educational                             | 25%                                  | How-tos, frameworks, tips                                   |
+| Personal                                | 15%                                  | Stories, values, hot takes                                  |
+| Promotional                             | 5%                                   | Product updates, offers                                     |
 
 ### Pillar Development Questions
 
@@ -115,13 +115,13 @@ Turn one piece of content into many:
 
 ### Blog Post → Social Content
 
-| Platform                       | Format                                             |
-|--------------------------------|----------------------------------------------------|
-| LinkedIn                       | Key insight + link in comments                     |
-| LinkedIn                       | Carousel of main points                            |
-| Twitter/X                      | Thread of key takeaways                            |
-| Instagram                      | Carousel with visuals                              |
-| Instagram                      | Reel summarizing the post                          |
+| Platform                         | Format                                               |
+|----------------------------------|------------------------------------------------------|
+| LinkedIn                         | Key insight + link in comments                       |
+| LinkedIn                         | Carousel of main points                              |
+| Twitter/X                        | Thread of key takeaways                              |
+| Instagram                        | Carousel with visuals                                |
+| Instagram                        | Reel summarizing the post                            |
 
 ### Repurposing Workflow
 
@@ -137,13 +137,13 @@ Turn one piece of content into many:
 
 ### Weekly Planning Template
 
-| Day                       | LinkedIn                             | Twitter/X                       | Instagram                       |
-|---------------------------|--------------------------------------|---------------------------------|---------------------------------|
-| Mon                       | Industry insight                     | Thread                          | Carousel                        |
-| Tue                       | Behind-scenes                        | Engagement                      | Story                           |
-| Wed                       | Educational                          | Tips tweet                      | Reel                            |
-| Thu                       | Story post                           | Thread                          | Educational                     |
-| Fri                       | Hot take                             | Engagement                      | Story                           |
+| Day                         | LinkedIn                               | Twitter/X                         | Instagram                         |
+|-----------------------------|----------------------------------------|-----------------------------------|-----------------------------------|
+| Mon                         | Industry insight                       | Thread                            | Carousel                          |
+| Tue                         | Behind-scenes                          | Engagement                        | Story                             |
+| Wed                         | Educational                            | Tips tweet                        | Reel                              |
+| Thu                         | Story post                             | Thread                            | Educational                       |
+| Fri                         | Hot take                               | Engagement                        | Story                             |
 
 ### Batching Strategy (2-3 hours weekly)
 

@@ -44,9 +44,9 @@ Backlog (10037) → To Do (14) → In Progress (11) → Done (21)
 
 ## Wiki Markup Cheat Sheet
 
-| Markdown                       | Jira Wiki                      |
-|--------------------------------|--------------------------------|
-| `## Header`                    | `h2. Header`                   |
-| `**bold**`                     | `*bold*`                       |
-| `- item`                       | `* item`                       |
-| `- [ ] task`                   | `* [ ] task`                   |
+| Markdown                         | Jira Wiki                        |
+|----------------------------------|----------------------------------|
+| `## Header`                      | `h2. Header`                     |
+| `**bold**`                       | `*bold*`                         |
+| `- item`                         | `* item`                         |
+| `- [ ] task`                     | `* [ ] task`                     |

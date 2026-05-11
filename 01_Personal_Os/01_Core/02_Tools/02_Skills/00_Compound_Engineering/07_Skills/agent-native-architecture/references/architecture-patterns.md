@@ -113,12 +113,12 @@ main                        # Shared features, bug fixes
 ```
 
 **Change flow:**
-| Change Type                         | Work On                             | Then                                           |
-|-------------------------------------|-------------------------------------|------------------------------------------------|
-| Core features                       | main                                | Merge to instance branches                     |
-| Bug fixes                           | main                                | Merge to instance branches                     |
-| Instance config                     | instance branch                     | Done                                           |
-| Instance data                       | instance branch                     | Done                                           |
+| Change Type                           | Work On                               | Then                                             |
+|---------------------------------------|---------------------------------------|--------------------------------------------------|
+| Core features                         | main                                  | Merge to instance branches                       |
+| Bug fixes                             | main                                  | Merge to instance branches                       |
+| Instance config                       | instance branch                       | Done                                             |
+| Instance data                         | instance branch                       | Done                                             |
 
 **Sync tools:**
 ```typescript
@@ -410,14 +410,14 @@ struct FeedView: View {
 
 Different agents need different intelligence levels. Use the cheapest model that achieves the outcome.
 
-| Agent Type                             | Recommended Tier                      | Reasoning                                                       |
-|----------------------------------------|---------------------------------------|-----------------------------------------------------------------|
-| Chat/Conversation                      | Balanced                              | Fast responses, good reasoning                                  |
-| Research                               | Balanced                              | Tool loops, not ultra-complex synthesis                         |
-| Content Generation                     | Balanced                              | Creative but not synthesis-heavy                                |
-| Complex Analysis                       | Powerful                              | Multi-document synthesis, nuanced judgment                      |
-| Profile/Onboarding                     | Powerful                              | Photo analysis, complex pattern recognition                     |
-| Simple Queries                         | Fast/Haiku                            | Quick lookups, simple transformations                           |
+| Agent Type                               | Recommended Tier                        | Reasoning                                                         |
+|------------------------------------------|-----------------------------------------|-------------------------------------------------------------------|
+| Chat/Conversation                        | Balanced                                | Fast responses, good reasoning                                    |
+| Research                                 | Balanced                                | Tool loops, not ultra-complex synthesis                           |
+| Content Generation                       | Balanced                                | Creative but not synthesis-heavy                                  |
+| Complex Analysis                         | Powerful                                | Multi-document synthesis, nuanced judgment                        |
+| Profile/Onboarding                       | Powerful                                | Photo analysis, complex pattern recognition                       |
+| Simple Queries                           | Fast/Haiku                              | Quick lookups, simple transformations                             |
 
 **Implementation:**
 

@@ -24,18 +24,18 @@ end
 
 ### Supported Types
 
-| Type                                | JSON Schema                             | Notes                                    |
-|-------------------------------------|-----------------------------------------|------------------------------------------|
-| `String`                            | `string`                                | Required string                          |
-| `Integer`                           | `integer`                               | Whole numbers                            |
-| `Float`                             | `number`                                | Decimal numbers                          |
-| `T::Boolean`                        | `boolean`                               | true/false                               |
-| `T::Array[X]`                       | `array`                                 | Typed arrays                             |
-| `T::Hash[K, V]`                     | `object`                                | Typed key-value maps                     |
-| `T.nilable(X)`                      | nullable                                | Optional fields                          |
-| `Date`                              | `string` (ISO 8601)                     | Auto-converted                           |
-| `DateTime`                          | `string` (ISO 8601)                     | Preserves timezone                       |
-| `Time`                              | `string` (ISO 8601)                     | Converted to UTC                         |
+| Type                                  | JSON Schema                               | Notes                                      |
+|---------------------------------------|-------------------------------------------|--------------------------------------------|
+| `String`                              | `string`                                  | Required string                            |
+| `Integer`                             | `integer`                                 | Whole numbers                              |
+| `Float`                               | `number`                                  | Decimal numbers                            |
+| `T::Boolean`                          | `boolean`                                 | true/false                                 |
+| `T::Array[X]`                         | `array`                                   | Typed arrays                               |
+| `T::Hash[K, V]`                       | `object`                                  | Typed key-value maps                       |
+| `T.nilable(X)`                        | nullable                                  | Optional fields                            |
+| `Date`                                | `string` (ISO 8601)                       | Auto-converted                             |
+| `DateTime`                            | `string` (ISO 8601)                       | Preserves timezone                         |
+| `Time`                                | `string` (ISO 8601)                       | Converted to UTC                           |
 
 ### Date and Time Types
 
@@ -559,12 +559,12 @@ result = programmer.call(task: "Calculate the factorial of 20")
 
 ### Predictor Comparison
 
-| Predictor                          | Speed                        | Token Usage                       | Best For                                              |
-|------------------------------------|------------------------------|-----------------------------------|-------------------------------------------------------|
-| Predict                            | Fastest                      | Low                               | Classification, extraction                            |
-| ChainOfThought                     | Moderate                     | Medium-High                       | Complex reasoning, analysis                           |
-| ReAct                              | Slower                       | High                              | Multi-step tasks with tools                           |
-| CodeAct                            | Slowest                      | Very High                         | Dynamic programming, calculations                     |
+| Predictor                            | Speed                          | Token Usage                         | Best For                                                |
+|--------------------------------------|--------------------------------|-------------------------------------|---------------------------------------------------------|
+| Predict                              | Fastest                        | Low                                 | Classification, extraction                              |
+| ChainOfThought                       | Moderate                       | Medium-High                         | Complex reasoning, analysis                             |
+| ReAct                                | Slower                         | High                                | Multi-step tasks with tools                             |
+| CodeAct                              | Slowest                        | Very High                           | Dynamic programming, calculations                       |
 
 ### Concurrent Predictions
 

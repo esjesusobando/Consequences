@@ -71,12 +71,12 @@ We'll know this is true when [metrics].
 
 ## Test Types
 
-| Type                          | Description                                          | Traffic Needed                       |
-|-------------------------------|------------------------------------------------------|--------------------------------------|
-| A/B                           | Two versions, single change                          | Moderate                             |
-| A/B/n                         | Multiple variants                                    | Higher                               |
-| MVT                           | Multiple changes in combinations                     | Very high                            |
-| Split URL                     | Different URLs for variants                          | Moderate                             |
+| Type                            | Description                                            | Traffic Needed                         |
+|---------------------------------|--------------------------------------------------------|----------------------------------------|
+| A/B                             | Two versions, single change                            | Moderate                               |
+| A/B/n                           | Multiple variants                                      | Higher                                 |
+| MVT                             | Multiple changes in combinations                       | Very high                              |
+| Split URL                       | Different URLs for variants                            | Moderate                               |
 
 ---
 
@@ -84,12 +84,12 @@ We'll know this is true when [metrics].
 
 ### Quick Reference
 
-| Baseline                       | 10% Lift                         | 20% Lift                        | 50% Lift                         |
-|--------------------------------|----------------------------------|---------------------------------|----------------------------------|
-| 1%                             | 150k/variant                     | 39k/variant                     | 6k/variant                       |
-| 3%                             | 47k/variant                      | 12k/variant                     | 2k/variant                       |
-| 5%                             | 27k/variant                      | 7k/variant                      | 1.2k/variant                     |
-| 10%                            | 12k/variant                      | 3k/variant                      | 550/variant                      |
+| Baseline                         | 10% Lift                           | 20% Lift                          | 50% Lift                           |
+|----------------------------------|------------------------------------|-----------------------------------|------------------------------------|
+| 1%                               | 150k/variant                       | 39k/variant                       | 6k/variant                         |
+| 3%                               | 47k/variant                        | 12k/variant                       | 2k/variant                         |
+| 5%                               | 27k/variant                        | 7k/variant                        | 1.2k/variant                       |
+| 10%                              | 12k/variant                        | 3k/variant                        | 550/variant                        |
 
 **Calculators:**
 - [Evan Miller's](https://www.evanmiller.org/ab-testing/sample-size.html)
@@ -125,12 +125,12 @@ We'll know this is true when [metrics].
 
 ### What to Vary
 
-| Category                           | Examples                                                              |
-|------------------------------------|-----------------------------------------------------------------------|
-| Headlines/Copy                     | Message angle, value prop, specificity, tone                          |
-| Visual Design                      | Layout, color, images, hierarchy                                      |
-| CTA                                | Button copy, size, placement, number                                  |
-| Content                            | Information included, order, amount, social proof                     |
+| Category                             | Examples                                                                |
+|--------------------------------------|-------------------------------------------------------------------------|
+| Headlines/Copy                       | Message angle, value prop, specificity, tone                            |
+| Visual Design                        | Layout, color, images, hierarchy                                        |
+| CTA                                  | Button copy, size, placement, number                                    |
+| Content                              | Information included, order, amount, social proof                       |
 
 ### Best Practices
 - Single, meaningful change
@@ -141,11 +141,11 @@ We'll know this is true when [metrics].
 
 ## Traffic Allocation
 
-| Approach                         | Split                                     | When to Use                                   |
-|----------------------------------|-------------------------------------------|-----------------------------------------------|
-| Standard                         | 50/50                                     | Default for A/B                               |
-| Conservative                     | 90/10, 80/20                              | Limit risk of bad variant                     |
-| Ramping                          | Start small, increase                     | Technical risk mitigation                     |
+| Approach                           | Split                                       | When to Use                                     |
+|------------------------------------|---------------------------------------------|-------------------------------------------------|
+| Standard                           | 50/50                                       | Default for A/B                                 |
+| Conservative                       | 90/10, 80/20                                | Limit risk of bad variant                       |
+| Ramping                            | Start small, increase                       | Technical risk mitigation                       |
 
 **Considerations:**
 - Consistency: Users see same variant on return
@@ -212,12 +212,12 @@ Looking at results before reaching sample size and stopping early leads to false
 
 ### Interpreting Results
 
-| Result                                        | Conclusion                                           |
-|-----------------------------------------------|------------------------------------------------------|
-| Significant winner                            | Implement variant                                    |
-| Significant loser                             | Keep control, learn why                              |
-| No significant difference                     | Need more traffic or bolder test                     |
-| Mixed signals                                 | Dig deeper, maybe segment                            |
+| Result                                          | Conclusion                                             |
+|-------------------------------------------------|--------------------------------------------------------|
+| Significant winner                              | Implement variant                                      |
+| Significant loser                               | Keep control, learn why                                |
+| No significant difference                       | Need more traffic or bolder test                       |
+| Mixed signals                                   | Dig deeper, maybe segment                              |
 
 ---
 

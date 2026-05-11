@@ -37,12 +37,12 @@ Gestiona la decisión entre **Context Reset** vs **Context Compaction** según e
 
 ## Model Behavior
 
-| Modelo                           | Context Anxiety                     | Recomendación                     |
-|----------------------------------|-------------------------------------|-----------------------------------|
-| **Opus 4.6**                     | ❌ NONE                              | Compaction OK                     |
-| **Opus 4.5**                     | ⚠️ LOW                              | Compaction OK                     |
-| **Sonnet 4.5**                   | 🔴 HIGH                              | Reset required                    |
-| **Sonnet**                       | 🔴 HIGH                              | Reset required                    |
+| Modelo                             | Context Anxiety                       | Recomendación                       |
+|------------------------------------|---------------------------------------|-------------------------------------|
+| **Opus 4.6**                       | ❌ NONE                                | Compaction OK                       |
+| **Opus 4.5**                       | ⚠️ LOW                                | Compaction OK                       |
+| **Sonnet 4.5**                     | 🔴 HIGH                                | Reset required                      |
+| **Sonnet**                         | 🔴 HIGH                                | Reset required                      |
 
 ---
 
@@ -73,12 +73,12 @@ elif result['action'] == 'compact':
 
 ## Integración con Perfiles
 
-| Perfil                              | Cómo usa                                          |
-|-------------------------------------|---------------------------------------------------|
-| Product Builder                     | Check antes de cada sprint                        |
-| Data Engineer                       | Check antes de pipelines largos                   |
-| Marketing Tech                      | Check antes de campañas grandes                   |
-| Platform Engineer                   | Check antes de builds complejos                   |
+| Perfil                                | Cómo usa                                            |
+|---------------------------------------|-----------------------------------------------------|
+| Product Builder                       | Check antes de cada sprint                          |
+| Data Engineer                         | Check antes de pipelines largos                     |
+| Marketing Tech                        | Check antes de campañas grandes                     |
+| Platform Engineer                     | Check antes de builds complejos                     |
 
 ---
 

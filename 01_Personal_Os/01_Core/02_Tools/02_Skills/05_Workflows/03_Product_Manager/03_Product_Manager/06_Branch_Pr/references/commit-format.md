@@ -10,20 +10,20 @@
 
 ## Types
 
-| Type                             | Use For                            | PR Label                                 |
-|----------------------------------|------------------------------------|------------------------------------------|
-| `feat`                           | New feature                        | `type:feature`                           |
-| `fix`                            | Bug fix                            | `type:bug`                               |
-| `docs`                           | Documentation                      | `type:docs`                              |
-| `refactor`                       | Code restructure                   | `type:refactor`                          |
-| `chore`                          | Maintenance                        | `type:chore`                             |
-| `style`                          | Formatting                         | `type:chore`                             |
-| `perf`                           | Performance                        | `type:feature`                           |
-| `test`                           | Tests                              | `type:chore`                             |
-| `build`                          | Build system                       | `type:chore`                             |
-| `ci`                             | CI/CD                              | `type:chore`                             |
-| `revert`                         | Undo change                        | `type:bug`                               |
-| `feat!`/`fix!`                   | Breaking                           | `type:breaking-change`                   |
+| Type                               | Use For                              | PR Label                                   |
+|------------------------------------|--------------------------------------|--------------------------------------------|
+| `feat`                             | New feature                          | `type:feature`                             |
+| `fix`                              | Bug fix                              | `type:bug`                                 |
+| `docs`                             | Documentation                        | `type:docs`                                |
+| `refactor`                         | Code restructure                     | `type:refactor`                            |
+| `chore`                            | Maintenance                          | `type:chore`                               |
+| `style`                            | Formatting                           | `type:chore`                               |
+| `perf`                             | Performance                          | `type:feature`                             |
+| `test`                             | Tests                                | `type:chore`                               |
+| `build`                            | Build system                         | `type:chore`                               |
+| `ci`                               | CI/CD                                | `type:chore`                               |
+| `revert`                           | Undo change                          | `type:bug`                                 |
+| `feat!`/`fix!`                     | Breaking                             | `type:breaking-change`                     |
 
 ## Examples
 

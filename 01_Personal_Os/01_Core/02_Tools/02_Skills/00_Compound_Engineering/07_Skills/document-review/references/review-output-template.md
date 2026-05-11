@@ -22,51 +22,51 @@ Use this **exact format** when presenting synthesized review findings. Findings 
 
 ### P0 -- Must Fix
 
-| #                       | Section                                | Issue                                                                                                    | Reviewer                       | Confidence                       | Route                         |
-|-------------------------|----------------------------------------|----------------------------------------------------------------------------------------------------------|--------------------------------|----------------------------------|-------------------------------|
-| 1                       | Requirements Trace                     | Goal states "offline support" but technical approach assumes persistent connectivity                     | coherence                      | 0.92                             | `present`                     |
+| #                         | Section                                  | Issue                                                                                                      | Reviewer                         | Confidence                         | Route                           |
+|---------------------------|------------------------------------------|------------------------------------------------------------------------------------------------------------|----------------------------------|------------------------------------|---------------------------------|
+| 1                         | Requirements Trace                       | Goal states "offline support" but technical approach assumes persistent connectivity                       | coherence                        | 0.92                               | `present`                       |
 
 ### P1 -- Should Fix
 
-| #                       | Section                                   | Issue                                                                                  | Reviewer                           | Confidence                       | Route                         |
-|-------------------------|-------------------------------------------|----------------------------------------------------------------------------------------|------------------------------------|----------------------------------|-------------------------------|
-| 2                       | Implementation Unit 3                     | Plan proposes custom auth when codebase already uses Devise                            | feasibility                        | 0.85                             | `present`                     |
-| 3                       | Scope Boundaries                          | 8 of 12 units build admin infrastructure; only 2 touch stated goal                     | scope-guardian                     | 0.80                             | `present`                     |
+| #                         | Section                                     | Issue                                                                                    | Reviewer                             | Confidence                         | Route                           |
+|---------------------------|---------------------------------------------|------------------------------------------------------------------------------------------|--------------------------------------|------------------------------------|---------------------------------|
+| 2                         | Implementation Unit 3                       | Plan proposes custom auth when codebase already uses Devise                              | feasibility                          | 0.85                               | `present`                       |
+| 3                         | Scope Boundaries                            | 8 of 12 units build admin infrastructure; only 2 touch stated goal                       | scope-guardian                       | 0.80                               | `present`                       |
 
 ### P2 -- Consider Fixing
 
-| #                       | Section                        | Issue                                                                      | Reviewer                          | Confidence                       | Route                         |
-|-------------------------|--------------------------------|----------------------------------------------------------------------------|-----------------------------------|----------------------------------|-------------------------------|
-| 4                       | API Design                     | Public webhook endpoint has no rate limiting mentioned                     | security-lens                     | 0.75                             | `present`                     |
+| #                         | Section                          | Issue                                                                        | Reviewer                            | Confidence                         | Route                           |
+|---------------------------|----------------------------------|------------------------------------------------------------------------------|-------------------------------------|------------------------------------|---------------------------------|
+| 4                         | API Design                       | Public webhook endpoint has no rate limiting mentioned                       | security-lens                       | 0.75                               | `present`                       |
 
 ### P3 -- Minor
 
-| #                       | Section                       | Issue                                                                           | Reviewer                       | Confidence                       | Route                       |
-|-------------------------|-------------------------------|---------------------------------------------------------------------------------|--------------------------------|----------------------------------|-----------------------------|
-| 5                       | Overview                      | "Service" used to mean both microservice and business class                     | coherence                      | 0.65                             | `auto`                      |
+| #                         | Section                         | Issue                                                                             | Reviewer                         | Confidence                         | Route                         |
+|---------------------------|---------------------------------|-----------------------------------------------------------------------------------|----------------------------------|------------------------------------|-------------------------------|
+| 5                         | Overview                        | "Service" used to mean both microservice and business class                       | coherence                        | 0.65                               | `auto`                        |
 
 ### Residual Concerns
 
-| #                       | Concern                                                                                | Source                          |
-|-------------------------|----------------------------------------------------------------------------------------|---------------------------------|
-| 1                       | Migration rollback strategy not addressed for Phase 2 data changes                     | feasibility                     |
+| #                         | Concern                                                                                  | Source                            |
+|---------------------------|------------------------------------------------------------------------------------------|-----------------------------------|
+| 1                         | Migration rollback strategy not addressed for Phase 2 data changes                       | feasibility                       |
 
 ### Deferred Questions
 
-| #                       | Question                                                                | Source                                         |
-|-------------------------|-------------------------------------------------------------------------|------------------------------------------------|
-| 1                       | Should the API use versioned endpoints from launch?                     | feasibility, security-lens                     |
+| #                         | Question                                                                  | Source                                           |
+|---------------------------|---------------------------------------------------------------------------|--------------------------------------------------|
+| 1                         | Should the API use versioned endpoints from launch?                       | feasibility, security-lens                       |
 
 ### Coverage
 
-| Persona                            | Status                            | Findings                       | Residual                       |
-|------------------------------------|-----------------------------------|--------------------------------|--------------------------------|
-| coherence                          | completed                         | 2                              | 0                              |
-| feasibility                        | completed                         | 1                              | 1                              |
-| security-lens                      | completed                         | 1                              | 0                              |
-| scope-guardian                     | completed                         | 1                              | 0                              |
-| product-lens                       | not activated                     |--------------------------------|--------------------------------|
-| design-lens                        | not activated                     |--------------------------------|--------------------------------|
+| Persona                              | Status                              | Findings                         | Residual                         |
+|--------------------------------------|-------------------------------------|----------------------------------|----------------------------------|
+| coherence                            | completed                           | 2                                | 0                                |
+| feasibility                          | completed                           | 1                                | 1                                |
+| security-lens                        | completed                           | 1                                | 0                                |
+| scope-guardian                       | completed                           | 1                                | 0                                |
+| product-lens                         | not activated                       |----------------------------------|----------------------------------|
+| design-lens                          | not activated                       |----------------------------------|----------------------------------|
 ```
 
 ## Section Rules

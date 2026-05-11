@@ -54,11 +54,11 @@ The `get_node` tool provides all node information with different detail levels a
 
 ### Detail Levels (mode="info")
 
-| Detail                                   | Tokens                                 | Use When                                                   |
-|------------------------------------------|----------------------------------------|------------------------------------------------------------|
-| `minimal`                                | ~200                                   | Quick metadata check                                       |
-| `standard`                               | ~1-2K                                  | **Most use cases (DEFAULT)**                               |
-| `full`                                   | ~3-8K                                  | Complex debugging only                                     |
+| Detail                                     | Tokens                                   | Use When                                                     |
+|--------------------------------------------|------------------------------------------|--------------------------------------------------------------|
+| `minimal`                                  | ~200                                     | Quick metadata check                                         |
+| `standard`                                 | ~1-2K                                    | **Most use cases (DEFAULT)**                                 |
+| `full`                                     | ~3-8K                                    | Complex debugging only                                       |
 
 ### Standard Detail (RECOMMENDED)
 
@@ -270,15 +270,15 @@ Step 4: Use in Workflow
 
 ## Quick Comparison
 
-| Tool/Mode                                                    | When to Use                                            | Speed                                 | Size                                 |
-|--------------------------------------------------------------|--------------------------------------------------------|---------------------------------------|--------------------------------------|
-| `search_nodes`                                               | Find by keyword                                        | <20ms                                 | Small                                |
-| `get_node (standard)`                                        | **Get config (DEFAULT)**                               | <10ms                                 | 1-2K                                 |
-| `get_node (minimal)`                                         | Quick metadata                                         | <5ms                                  | 200                                  |
-| `get_node (full)`                                            | Complex debugging                                      | <100ms                                | 3-8K                                 |
-| `get_node (docs)`                                            | Learn usage                                            | Fast                                  | Medium                               |
-| `get_node (search_properties)`                               | Find specific field                                    | Fast                                  | Small                                |
-| `get_node (versions)`                                        | Check versions                                         | Fast                                  | Small                                |
+| Tool/Mode                                                      | When to Use                                              | Speed                                   | Size                                   |
+|----------------------------------------------------------------|----------------------------------------------------------|-----------------------------------------|----------------------------------------|
+| `search_nodes`                                                 | Find by keyword                                          | <20ms                                   | Small                                  |
+| `get_node (standard)`                                          | **Get config (DEFAULT)**                                 | <10ms                                   | 1-2K                                   |
+| `get_node (minimal)`                                           | Quick metadata                                           | <5ms                                    | 200                                    |
+| `get_node (full)`                                              | Complex debugging                                        | <100ms                                  | 3-8K                                   |
+| `get_node (docs)`                                              | Learn usage                                              | Fast                                    | Medium                                 |
+| `get_node (search_properties)`                                 | Find specific field                                      | Fast                                    | Small                                  |
+| `get_node (versions)`                                          | Check versions                                           | Fast                                    | Small                                  |
 
 **Best Practice**: search → get_node(standard) → validate
 

@@ -50,16 +50,16 @@ Organize files around entities, not actors or file types:
 
 ### Naming Conventions
 
-| File Type                                  | Naming Pattern                               | Example                                             |
-|--------------------------------------------|----------------------------------------------|-----------------------------------------------------|
-| Entity data                                | `{entity}.json`                              | `library.json`, `status.json`                       |
-| Human-readable content                     | `{content_type}.md`                          | `introduction.md`, `profile.md`                     |
-| Agent reasoning                            | `agent_log.md`                               | Per-entity agent history                            |
-| Primary content                            | `full_text.txt`                              | Downloaded/extracted text                           |
-| Multi-volume                               | `volume{N}.txt`                              | `volume1.txt`, `volume2.txt`                        |
-| External sources                           | `{source_name}.md`                           | `wikipedia.md`, `sparknotes.md`                     |
-| Checkpoints                                | `{sessionId}.checkpoint`                     | UUID-based                                          |
-| Configuration                              | `config.json`                                | Feature settings                                    |
+| File Type                                    | Naming Pattern                                 | Example                                               |
+|----------------------------------------------|------------------------------------------------|-------------------------------------------------------|
+| Entity data                                  | `{entity}.json`                                | `library.json`, `status.json`                         |
+| Human-readable content                       | `{content_type}.md`                            | `introduction.md`, `profile.md`                       |
+| Agent reasoning                              | `agent_log.md`                                 | Per-entity agent history                              |
+| Primary content                              | `full_text.txt`                                | Downloaded/extracted text                             |
+| Multi-volume                                 | `volume{N}.txt`                                | `volume1.txt`, `volume2.txt`                          |
+| External sources                             | `{source_name}.md`                             | `wikipedia.md`, `sparknotes.md`                       |
+| Checkpoints                                  | `{sessionId}.checkpoint`                       | UUID-based                                            |
+| Configuration                                | `config.json`                                  | Feature settings                                      |
 
 ### Directory Naming
 
@@ -137,14 +137,14 @@ Reading assistant for the Every app.
 
 ### What to Include
 
-| Section                                         | Purpose                                            |
-|-------------------------------------------------|----------------------------------------------------|
-| Who I Am                                        | Agent identity and role                            |
-| What I Know About This User                     | Learned preferences, interests                     |
-| What Exists                                     | Available resources, data                          |
-| Recent Activity                                 | Context for continuity                             |
-| My Guidelines                                   | Learned rules and constraints                      |
-| Current State                                   | Session status, pending items                      |
+| Section                                           | Purpose                                              |
+|---------------------------------------------------|------------------------------------------------------|
+| Who I Am                                          | Agent identity and role                              |
+| What I Know About This User                       | Learned preferences, interests                       |
+| What Exists                                       | Available resources, data                            |
+| Recent Activity                                   | Context for continuity                               |
+| My Guidelines                                     | Learned rules and constraints                        |
+| Current State                                     | Session status, pending items                        |
 </context_md_pattern>
 
 <files_vs_database>
@@ -152,13 +152,13 @@ Reading assistant for the Every app.
 
 > **Needs validation:** This framing is informed by mobile development. For web apps, the tradeoffs are different.
 
-| Use files for...                                                     | Use database for...                                    |
-|----------------------------------------------------------------------|--------------------------------------------------------|
-| Content users should read/edit                                       | High-volume structured data                            |
-| Configuration that benefits from version control                     | Data that needs complex queries                        |
-| Agent-generated content                                              | Ephemeral state (sessions, caches)                     |
-| Anything that benefits from transparency                             | Data with relationships                                |
-| Large text content                                                   | Data that needs indexing                               |
+| Use files for...                                                       | Use database for...                                      |
+|------------------------------------------------------------------------|----------------------------------------------------------|
+| Content users should read/edit                                         | High-volume structured data                              |
+| Configuration that benefits from version control                       | Data that needs complex queries                          |
+| Agent-generated content                                                | Ephemeral state (sessions, caches)                       |
+| Anything that benefits from transparency                               | Data with relationships                                  |
+| Large text content                                                     | Data that needs indexing                                 |
 
 **The principle:** Files for legibility, databases for structure. When in doubt, files—they're more transparent and users can always inspect them.
 
@@ -198,13 +198,13 @@ This is simple but can lose changes.
 
 ### Options
 
-| Strategy                                            | Pros                                       | Cons                                      |
-|-----------------------------------------------------|--------------------------------------------|-------------------------------------------|
-| **Last write wins**                                 | Simple                                     | Changes can be lost                       |
-| **Agent checks before writing**                     | Preserves user edits                       | More complexity                           |
-| **Separate spaces**                                 | No conflicts                               | Less collaboration                        |
-| **Append-only logs**                                | Never overwrites                           | Files grow forever                        |
-| **File locking**                                    | Safe concurrent access                     | Complexity, can block                     |
+| Strategy                                              | Pros                                         | Cons                                        |
+|-------------------------------------------------------|----------------------------------------------|---------------------------------------------|
+| **Last write wins**                                   | Simple                                       | Changes can be lost                         |
+| **Agent checks before writing**                       | Preserves user edits                         | More complexity                             |
+| **Separate spaces**                                   | No conflicts                                 | Less collaboration                          |
+| **Append-only logs**                                  | Never overwrites                             | Files grow forever                          |
+| **File locking**                                      | Safe concurrent access                       | Complexity, can block                       |
 
 ### Recommended Approaches
 

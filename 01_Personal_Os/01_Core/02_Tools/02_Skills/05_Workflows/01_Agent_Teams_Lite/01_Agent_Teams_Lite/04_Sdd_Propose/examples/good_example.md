@@ -42,22 +42,22 @@ Use access token + refresh token with rotation:
 
 ## Affected Areas
 
-| Area                                       | Impact                     | Description                                                 |
-|--------------------------------------------|----------------------------|-------------------------------------------------------------|
-| `src/middleware/auth.ts`                   | Modified                   | Replace session check with JWT validation                   |
-| `src/routes/login.ts`                      | Modified                   | Return JWT tokens instead of session                        |
-| `src/routes/logout.ts`                     | Modified                   | Handle token blacklisting                                   |
-| `src/utils/jwt.ts`                         | New                        | JWT creation and validation utilities                       |
-| `src/types/auth.ts`                        | Modified                   | Add token payload types                                     |
+| Area                                         | Impact                       | Description                                                   |
+|----------------------------------------------|------------------------------|---------------------------------------------------------------|
+| `src/middleware/auth.ts`                     | Modified                     | Replace session check with JWT validation                     |
+| `src/routes/login.ts`                        | Modified                     | Return JWT tokens instead of session                          |
+| `src/routes/logout.ts`                       | Modified                     | Handle token blacklisting                                     |
+| `src/utils/jwt.ts`                           | New                          | JWT creation and validation utilities                         |
+| `src/types/auth.ts`                          | Modified                     | Add token payload types                                       |
 
 ## Risks
 
-| Risk                                   | Likelihood                     | Mitigation                                                    |
-|----------------------------------------|--------------------------------|---------------------------------------------------------------|
-| XSS via cookie                         | Low                            | HTTP-only + secure flags on cookies                           |
-| Token theft                            | Low                            | Short-lived access tokens, refresh rotation                   |
-| Logout not immediate                   | Medium                         | Implement denylist for access tokens                          |
-| CSRF                                   | Low                            | SameSite=strict cookie attribute                              |
+| Risk                                     | Likelihood                       | Mitigation                                                      |
+|------------------------------------------|----------------------------------|-----------------------------------------------------------------|
+| XSS via cookie                           | Low                              | HTTP-only + secure flags on cookies                             |
+| Token theft                              | Low                              | Short-lived access tokens, refresh rotation                     |
+| Logout not immediate                     | Medium                           | Implement denylist for access tokens                            |
+| CSRF                                     | Low                              | SameSite=strict cookie attribute                                |
 
 ## Rollback Plan
 
