@@ -12,6 +12,15 @@
 - **BACKLOG.md**: Actualizado a v4.0 Consequences
 - **README.md**: Fecha actualizada a 2026-05-11
 
+### Added — System Audit & Updates (2026-05-11)
+
+- **AGENTS.md**: Corregido `file:///` path hardcoded → path relativo (`00_Winter_is_Coming/AGENTS.md`)
+- **CLAUDE.md**: Fecha actualizada 2026-05-10 → 2026-05-11, áreas 09+21 agregadas
+- **HUB_CATALOG.md**: Versión 2.0 → 4.0, fecha actualizada
+- **SCRIPTS_INDEX.md**: Removidas filas duplicadas en mapping table
+- **skill-registry.md**: Fecha actualizada, áreas 10+11 agregadas, Frontend_Slides agregado
+- **SCRIPTS_INDEX.md**: Filas duplicadas removidas, información redundante limpia
+
 ### Commits sesión
 
 | Commit | Descripción |
