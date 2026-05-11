@@ -7,10 +7,10 @@
 [submodule "01_Personal_Os/05_Archive/07_Repos_Gentleman/open-design"]
 	path = 01_Personal_Os/05_Archive/07_Repos_Gentleman/open-design
 	url = https://github.com/nexu-io/open-design.git
-[submodule "03_Resultado/OIM_Website_Backup copy"]
+[submodule "01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy"]
 	path = 01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy
 	url = https://github.com/esjesusobando/Office_Installations_.git
-[submodule "03_Resultado/OIM_Website_Backup copy 2"]
+[submodule "01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy_2"]
 	path = 01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy_2
 	url = https://github.com/esjesusobando/Office_Installations_.git
 [submodule "03_Resultado/OIM_Website_v2"]
