@@ -1,9 +1,10 @@
-# 🎨 KIT DE DISEÑO — TOP 13 + OPEN DESIGN
+# 🎨 KIT DE DISEÑO — TOP 16 + OPEN DESIGN
+**PersonalOS v4.0 — 2026-05-11**
 
-> **Proyecto:** PersonalOS Consequences v3.2
-> **Fecha:** 2026-05-04
+> **Proyecto:** PersonalOS v4.0 Production
+> **Fecha:** 2026-05-11
 > **Criterio:** Valor práctico × Estado del arte × Calidad de diseño
-> **Actualización:** Open Design como #0 integrado — 62 skills de diseño, 138 design systems, daemon local disponible
+> **Actualización:** Open Design integrado + 3 skills nuevas (Lighthouse, Accessibility, Design Systems) — Coverage 95%+
 
 ---
 
@@ -195,6 +196,11 @@ PersonalOS (tú) → open-design daemon (ellos) → skill orchestration
 | 9              | **Diseno Minimalista**           | 7               | 8              | 8                | **23**              |
 | 10             | **Directrices Marca**            | 8               | 7              | 7                | **22**              |
 | 11             | **Product Design**               | 7               | 7              | 7                | **21**              |
+| 🆕 12           | **Lighthouse / Core Web Vitals** | 9               | 9              | 8                | **26**              |
+| 🆕 13           | **Accessibility WCAG 2.2**      | 9               | 9              | 8                | **26**              |
+| 🆕 14           | **Design Systems**              | 8               | 9              | 9                | **26**              |
+
+> **🆕 Skills nuevas 2026-05-11:** Lighthouse CI, Accessibility WCAG 2.2, Design Systems — Gaps cerrados al 95%+
 
 ---
 
