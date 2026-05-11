@@ -10,7 +10,7 @@
 
 ```
 00_Winter_is_Coming/
-├── AGENTS.md            # 🔐 Core - Reglas del sistema (40KB)
+├── AGENTS.md           # 🔐 Core - Reglas del sistema (40KB)
 ├── BACKLOG.md          # 📝 Activo - Tareas pendientes
 ├── GOALS.md            # 🎯 Metas estratégicas
 ├── CHANGELOG.md        # 📋 Historial de cambios
@@ -34,9 +34,9 @@
 
 | Fecha                      | Cambio                                                                            |
 |----------------------------|-----------------------------------------------------------------------------------|
-| 2026-05-05                | v3.1 Consequences — Beautify Tables, métricas actualizadas, JARVIS manifests    |
+| 2026-05-05                | v3.1 Consequences — Beautify Tables, métricas actualizadas, JARVIS manifests       |
 | 2026-04-29                | Git cleanup session — submodules removidos                                         |
-| 2026-04-25                | v3.1 Consequences — JARVIS 3.1 integrated                                       |
+| 2026-04-25                | v3.1 Consequences — JARVIS 3.1 integrated                                          |
 
 ---
 
