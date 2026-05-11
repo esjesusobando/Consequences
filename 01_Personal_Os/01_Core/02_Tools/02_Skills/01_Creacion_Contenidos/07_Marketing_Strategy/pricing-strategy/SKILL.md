@@ -85,14 +85,14 @@ The value metric is what you charge for—it should scale with the value custome
 
 ### Common Value Metrics
 
-| Metric                               | Best For                                 | Example                           |
-|--------------------------------------|------------------------------------------|-----------------------------------|
-| Per user/seat                        | Collaboration tools                      | Slack, Notion                     |
-| Per usage                            | Variable consumption                     | AWS, Twilio                       |
-| Per feature                          | Modular products                         | HubSpot add-ons                   |
-| Per contact/record                   | CRM, email tools                         | Mailchimp                         |
-| Per transaction                      | Payments, marketplaces                   | Stripe                            |
-| Flat fee                             | Simple products                          | Basecamp                          |
+| Metric                                 | Best For                                   | Example                             |
+|----------------------------------------|--------------------------------------------|-------------------------------------|
+| Per user/seat                          | Collaboration tools                        | Slack, Notion                       |
+| Per usage                              | Variable consumption                       | AWS, Twilio                         |
+| Per feature                            | Modular products                           | HubSpot add-ons                     |
+| Per contact/record                     | CRM, email tools                           | Mailchimp                           |
+| Per transaction                        | Payments, marketplaces                     | Stripe                              |
+| Flat fee                               | Simple products                            | Basecamp                            |
 
 ### Choosing Your Value Metric
 

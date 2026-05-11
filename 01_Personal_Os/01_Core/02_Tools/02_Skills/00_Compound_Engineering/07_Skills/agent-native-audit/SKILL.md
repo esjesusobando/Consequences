@@ -227,16 +227,16 @@ After all agents complete, compile a summary with:
 
 ### Overall Score Summary
 
-| Core Principle                           | Score                     | Percentage                     | Status                     |
-|------------------------------------------|---------------------------|--------------------------------|----------------------------|
-| Action Parity                            | X/Y                       | Z%                             | ✅/⚠️/❌                     |
-| Tools as Primitives                      | X/Y                       | Z%                             | ✅/⚠️/❌                     |
-| Context Injection                        | X/Y                       | Z%                             | ✅/⚠️/❌                     |
-| Shared Workspace                         | X/Y                       | Z%                             | ✅/⚠️/❌                     |
-| CRUD Completeness                        | X/Y                       | Z%                             | ✅/⚠️/❌                     |
-| UI Integration                           | X/Y                       | Z%                             | ✅/⚠️/❌                     |
-| Capability Discovery                     | X/Y                       | Z%                             | ✅/⚠️/❌                     |
-| Prompt-Native Features                   | X/Y                       | Z%                             | ✅/⚠️/❌                     |
+| Core Principle                             | Score                       | Percentage                       | Status                       |
+|--------------------------------------------|-----------------------------|----------------------------------|------------------------------|
+| Action Parity                              | X/Y                         | Z%                               | ✅/⚠️/❌                       |
+| Tools as Primitives                        | X/Y                         | Z%                               | ✅/⚠️/❌                       |
+| Context Injection                          | X/Y                         | Z%                               | ✅/⚠️/❌                       |
+| Shared Workspace                           | X/Y                         | Z%                               | ✅/⚠️/❌                       |
+| CRUD Completeness                          | X/Y                         | Z%                               | ✅/⚠️/❌                       |
+| UI Integration                             | X/Y                         | Z%                               | ✅/⚠️/❌                       |
+| Capability Discovery                       | X/Y                         | Z%                               | ✅/⚠️/❌                       |
+| Prompt-Native Features                     | X/Y                         | Z%                               | ✅/⚠️/❌                       |
 
 **Overall Agent-Native Score: X%**
 
@@ -247,8 +247,8 @@ After all agents complete, compile a summary with:
 
 ### Top 10 Recommendations by Impact
 
-| Priority                     | Action                     | Principle                     | Effort                     |
-|------------------------------|----------------------------|-------------------------------|----------------------------|
+| Priority                       | Action                       | Principle                       | Effort                       |
+|--------------------------------|------------------------------|---------------------------------|------------------------------|
 
 ### What's Working Excellently
 

@@ -427,16 +427,16 @@ Focusing on successes while ignoring failures that aren't visible.
 
 When facing a marketing challenge, consider:
 
-| Challenge                            | Relevant Models                                                              |
-|--------------------------------------|------------------------------------------------------------------------------|
-| Low conversions                      | Hick's Law, Activation Energy, BJ Fogg, Friction                             |
-| Price objections                     | Anchoring, Framing, Mental Accounting, Loss Aversion                         |
-| Building trust                       | Authority, Social Proof, Reciprocity, Pratfall Effect                        |
-| Increasing urgency                   | Scarcity, Loss Aversion, Zeigarnik Effect                                    |
-| Retention/churn                      | Endowment Effect, Switching Costs, Status-Quo Bias                           |
-| Growth stalling                      | Theory of Constraints, Local vs Global Optima, Compounding                   |
-| Decision paralysis                   | Paradox of Choice, Default Effect, Nudge Theory                              |
-| Onboarding                           | Goal-Gradient, IKEA Effect, Commitment & Consistency                         |
+| Challenge                              | Relevant Models                                                                |
+|----------------------------------------|--------------------------------------------------------------------------------|
+| Low conversions                        | Hick's Law, Activation Energy, BJ Fogg, Friction                               |
+| Price objections                       | Anchoring, Framing, Mental Accounting, Loss Aversion                           |
+| Building trust                         | Authority, Social Proof, Reciprocity, Pratfall Effect                          |
+| Increasing urgency                     | Scarcity, Loss Aversion, Zeigarnik Effect                                      |
+| Retention/churn                        | Endowment Effect, Switching Costs, Status-Quo Bias                             |
+| Growth stalling                        | Theory of Constraints, Local vs Global Optima, Compounding                     |
+| Decision paralysis                     | Paradox of Choice, Default Effect, Nudge Theory                                |
+| Onboarding                             | Goal-Gradient, IKEA Effect, Commitment & Consistency                           |
 
 ---
 

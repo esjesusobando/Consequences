@@ -54,12 +54,12 @@
 
 ## Scoring
 
-| Score                     | Criteria                            |
-|---------------------------|-------------------------------------|
-| 90-100%                   | Excellent                           |
-| 70-89%                    | Good                                |
-| 50-69%                    | Needs Improvement                   |
-| < 50%                     | Failed                              |
+| Score                       | Criteria                              |
+|-----------------------------|---------------------------------------|
+| 90-100%                     | Excellent                             |
+| 70-89%                      | Good                                  |
+| 50-69%                      | Needs Improvement                     |
+| < 50%                       | Failed                                |
 
 ## Audit Process
 

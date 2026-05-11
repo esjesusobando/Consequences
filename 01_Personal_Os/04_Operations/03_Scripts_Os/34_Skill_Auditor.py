@@ -10,8 +10,8 @@ from pathlib import Path
 
 # Usar ruta absoluta basada en la ubicación del script
 SCRIPT_DIR = Path(__file__).resolve().parent
-ROOT_DIR = SCRIPT_DIR.parent.parent  # Legacy_Backup -> 08_Scripts_Os -> raíz
-Skills_ROOT = ROOT_DIR / "01_Core" / "03_Skills"
+ROOT_DIR = SCRIPT_DIR.parent.parent.parent  # 34_Skill_Auditor -> 03_Scripts_Os -> 04_Operations -> raíz
+Skills_ROOT = ROOT_DIR / "01_Personal_Os" / "01_Core" / "02_Tools" / "02_Skills"
 
 # Las categorías son los directorios dentro de Skills_ROOT
 CATEGORIES = []  # Se llenará automáticamente

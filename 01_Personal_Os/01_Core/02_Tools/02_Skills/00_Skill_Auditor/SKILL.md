@@ -34,54 +34,54 @@ Esta skill es el **guardián de calidad** del PersonalOS. Sin ella, skills de ba
 
 ### 1. YAML Frontmatter (REQUIRED)
 
-| Campo                           | Requisito                                                   | Validación                                                  |
-|---------------------------------|-------------------------------------------------------------|-------------------------------------------------------------|
-| `name`                          | Max 64 chars, lowercase, números, guiones                   | Regex: `^[a-z0-9-]+$`                                       |
-| `name`                          | Formato gerund (verb + -ing)                                | Ej: `processing-pdfs`, `onboarding-agent`                   |
-| `name`                          | PROHIBIDO: "claude", "anthropic"                            | No puede contener estas palabras                            |
-| `description`                   | Max 1024 caracteres                                         | Longitud válida                                             |
-| `description`                   | Debe incluir triggers semánticos                            | "triggers on:" presente                                     |
+| Campo                             | Requisito                                                     | Validación                                                    |
+|-----------------------------------|---------------------------------------------------------------|---------------------------------------------------------------|
+| `name`                            | Max 64 chars, lowercase, números, guiones                     | Regex: `^[a-z0-9-]+$`                                         |
+| `name`                            | Formato gerund (verb + -ing)                                  | Ej: `processing-pdfs`, `onboarding-agent`                     |
+| `name`                            | PROHIBIDO: "claude", "anthropic"                              | No puede contener estas palabras                              |
+| `description`                     | Max 1024 caracteres                                           | Longitud válida                                               |
+| `description`                     | Debe incluir triggers semánticos                              | "triggers on:" presente                                       |
 
 ### 2. Progressive Disclosure
 
-| Criterio                             | Límite                                               | Notas                                        |
-|--------------------------------------|------------------------------------------------------|----------------------------------------------|
-| SKILL.md líneas                      | < 200 ideal, < 500 max                               | Contar líneas reales                         |
-| references/ existe                   | Requerido si SKILL.md > 200 líneas                   | Para docs pesadas                            |
-| scripts/ existe                      | Opcional                                             | Si hay código reutilizable                   |
-| assets/ existe                       | Opcional                                             | Si hay templates                             |
+| Criterio                               | Límite                                                 | Notas                                          |
+|----------------------------------------|--------------------------------------------------------|------------------------------------------------|
+| SKILL.md líneas                        | < 200 ideal, < 500 max                                 | Contar líneas reales                           |
+| references/ existe                     | Requerido si SKILL.md > 200 líneas                     | Para docs pesadas                              |
+| scripts/ existe                        | Opcional                                               | Si hay código reutilizable                     |
+| assets/ existe                         | Opcional                                               | Si hay templates                               |
 
 ### 3. Gotchas Section (REQUIRED)
 
-| Criterio                           | Requisito                                                  |
-|------------------------------------|------------------------------------------------------------|
-| Sección presente                   | "## ⚠️ Gotchas" o "## Gotchas"                             |
-| Mínimo errors                      | 3 errores documentados                                     |
-| Estructura                         | Cada gotcha tiene "Por qué" + "Solución"                   |
-| Específicos                        | No genéricos, específicos a esta skill                     |
+| Criterio                             | Requisito                                                    |
+|--------------------------------------|--------------------------------------------------------------|
+| Sección presente                     | "## ⚠️ Gotchas" o "## Gotchas"                               |
+| Mínimo errors                        | 3 errores documentados                                       |
+| Estructura                           | Cada gotcha tiene "Por qué" + "Solución"                     |
+| Específicos                          | No genéricos, específicos a esta skill                       |
 
 ### 4. Esencia Original (REQUIRED)
 
-| Criterio                                | Requisito                                                  |
-|-----------------------------------------|------------------------------------------------------------|
-| Sección presente                        | "## Esencia Original"                                      |
-| Propósito claro                         | Define el propósito original de la skill                   |
-| Metaskill documentada                   | Explica qué problema resuelve                              |
+| Criterio                                  | Requisito                                                    |
+|-------------------------------------------|--------------------------------------------------------------|
+| Sección presente                          | "## Esencia Original"                                        |
+| Propósito claro                           | Define el propósito original de la skill                     |
+| Metaskill documentada                     | Explica qué problema resuelve                                |
 
 ### 5. State Persistence (RECOMMENDED)
 
-| Criterio                              | Requisito                                               |
-|---------------------------------------|---------------------------------------------------------|
-| Mentioned                             | Referencia a dónde guardar estado                       |
-| Location específica                   | `${CLAUDE_PLUGIN_DATA}` o ruta válida                   |
+| Criterio                                | Requisito                                                 |
+|-----------------------------------------|-----------------------------------------------------------|
+| Mentioned                               | Referencia a dónde guardar estado                         |
+| Location específica                     | `${CLAUDE_PLUGIN_DATA}` o ruta válida                     |
 
 ### 6. v2.0 Features (OPTIONAL para SOTA)
 
-| Feature                             | Cuando aplica                                        |
-|-------------------------------------|------------------------------------------------------|
-| evals.json                          | Skills que usan Skill Creator v2.0                   |
-| Benchmark results                   | Skills críticas del OS                               |
-| agents/ folder                      | Si tiene subagentes                                  |
+| Feature                               | Cuando aplica                                          |
+|---------------------------------------|--------------------------------------------------------|
+| evals.json                            | Skills que usan Skill Creator v2.0                     |
+| Benchmark results                     | Skills críticas del OS                                 |
+| agents/ folder                        | Si tiene subagentes                                    |
 
 ---
 
@@ -125,11 +125,11 @@ Esta skill es el **guardián de calidad** del PersonalOS. Sin ella, skills de ba
 
 ## 🛠️ Scripts de Auditoría
 
-| Script                                                                       | Propósito                                                    |
-|------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [scripts/audit-skills.py](scripts/audit-skills.py)                           | Analiza todas las skills en un directorio                    |
-| [scripts/validate-essence.py](scripts/validate-essence.py)                   | Verifica esencia original preservada                         |
-| [scripts/fix-missing.py](scripts/fix-missing.py)                             | Corrige archivos faltantes automáticamente                   |
+| Script                                                                         | Propósito                                                      |
+|--------------------------------------------------------------------------------|----------------------------------------------------------------|
+| [scripts/audit-skills.py](scripts/audit-skills.py)                             | Analiza todas las skills en un directorio                      |
+| [scripts/validate-essence.py](scripts/validate-essence.py)                     | Verifica esencia original preservada                           |
+| [scripts/fix-missing.py](scripts/fix-missing.py)                               | Corrige archivos faltantes automáticamente                     |
 
 ---
 
@@ -182,12 +182,12 @@ Reportes de auditoría se guardan en:
 
 ## Scoring
 
-| Score                     | Rating                          | Acción                                       |
-|---------------------------|---------------------------------|----------------------------------------------|
-| 90-100%                   | ✅ Excellent                     | Ready for production                         |
-| 70-89%                    | 👍 Good                          | Minor improvements needed                    |
-| 50-69%                    | ⚠️ Needs Work                   | Significant fixes required                   |
-| <50%                      | ❌ Failed                        | Do not integrate                             |
+| Score                       | Rating                            | Acción                                         |
+|-----------------------------|-----------------------------------|------------------------------------------------|
+| 90-100%                     | ✅ Excellent                       | Ready for production                           |
+| 70-89%                      | 👍 Good                            | Minor improvements needed                      |
+| 50-69%                      | ⚠️ Needs Work                     | Significant fixes required                     |
+| <50%                        | ❌ Failed                          | Do not integrate                               |
 
 ## ⚠️ Gotchas
 

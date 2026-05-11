@@ -132,13 +132,13 @@ Trigger Moment → Share Action → Convert Referred → Reward → (Loop)
 
 ### Common Problems & Fixes
 
-| Problem                              | Fix                                                 |
-|--------------------------------------|-----------------------------------------------------|
-| Low awareness                        | Add prominent in-app prompts                        |
-| Low share rate                       | Simplify to one click                               |
-| Low conversion                       | Optimize referred user experience                   |
-| Fraud/abuse                          | Add verification, limits                            |
-| One-time referrers                   | Add tiered/gamified rewards                         |
+| Problem                                | Fix                                                   |
+|----------------------------------------|-------------------------------------------------------|
+| Low awareness                          | Add prominent in-app prompts                          |
+| Low share rate                         | Simplify to one click                                 |
+| Low conversion                         | Optimize referred user experience                     |
+| Fraud/abuse                            | Add verification, limits                              |
+| One-time referrers                     | Add tiered/gamified rewards                           |
 
 ---
 
@@ -241,13 +241,13 @@ They get [their reward] too.
 
 For implementation, see the [tools registry](../../tools/REGISTRY.md). Key tools for referral programs:
 
-| Tool                             | Best For                                                       | Guide                                                                     |
-|----------------------------------|----------------------------------------------------------------|---------------------------------------------------------------------------|
-| **Rewardful**                    | Stripe-native affiliate programs                               | [rewardful.md](../../tools/integrations/rewardful.md)                     |
-| **Tolt**                         | SaaS affiliate programs                                        | [tolt.md](../../tools/integrations/tolt.md)                               |
-| **Mention Me**                   | Enterprise referral programs                                   | [mention-me.md](../../tools/integrations/mention-me.md)                   |
-| **Dub.co**                       | Link tracking and attribution                                  | [dub-co.md](../../tools/integrations/dub-co.md)                           |
-| **Stripe**                       | Payment processing (for commission tracking)                   | [stripe.md](../../tools/integrations/stripe.md)                           |
+| Tool                               | Best For                                                         | Guide                                                                       |
+|------------------------------------|------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| **Rewardful**                      | Stripe-native affiliate programs                                 | [rewardful.md](../../tools/integrations/rewardful.md)                       |
+| **Tolt**                           | SaaS affiliate programs                                          | [tolt.md](../../tools/integrations/tolt.md)                                 |
+| **Mention Me**                     | Enterprise referral programs                                     | [mention-me.md](../../tools/integrations/mention-me.md)                     |
+| **Dub.co**                         | Link tracking and attribution                                    | [dub-co.md](../../tools/integrations/dub-co.md)                             |
+| **Stripe**                         | Payment processing (for commission tracking)                     | [stripe.md](../../tools/integrations/stripe.md)                             |
 
 ---
 

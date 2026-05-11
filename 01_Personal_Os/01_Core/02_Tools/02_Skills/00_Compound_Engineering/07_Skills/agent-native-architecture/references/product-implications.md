@@ -188,12 +188,12 @@ Consider two dimensions:
 - **Stakes:** How much does it matter if this goes wrong?
 - **Reversibility:** How easy is it to undo?
 
-| Stakes                     | Reversibility                     | Pattern                                 | Example                                        |
-|----------------------------|-----------------------------------|-----------------------------------------|------------------------------------------------|
-| Low                        | Easy                              | **Auto-apply**                          | Organizing files                               |
-| Low                        | Hard                              | **Quick confirm**                       | Publishing to a private feed                   |
-| High                       | Easy                              | **Suggest + apply**                     | Code changes with undo                         |
-| High                       | Hard                              | **Explicit approval**                   | Sending emails, payments                       |
+| Stakes                       | Reversibility                       | Pattern                                   | Example                                          |
+|------------------------------|-------------------------------------|-------------------------------------------|--------------------------------------------------|
+| Low                          | Easy                                | **Auto-apply**                            | Organizing files                                 |
+| Low                          | Hard                                | **Quick confirm**                         | Publishing to a private feed                     |
+| High                         | Easy                                | **Suggest + apply**                       | Code changes with undo                           |
+| High                         | Hard                                | **Explicit approval**                     | Sending emails, payments                         |
 
 ### Patterns in Detail
 

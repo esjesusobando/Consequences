@@ -43,15 +43,15 @@ From the feature/task description, identify:
 
 If the feature type is clear, narrow the search to relevant category directories:
 
-| Feature Type                       | Search Directory                                                                                           |
-|------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Performance work                   | `04_Operations/06_Solutions/performance-issues/`                                                           |
-| Database changes                   | `04_Operations/06_Solutions/database-issues/`                                                              |
-| Bug fix                            | `04_Operations/06_Solutions/runtime-errors/`, `04_Operations/06_Solutions/logic-errors/`                   |
-| Security                           | `04_Operations/06_Solutions/security-issues/`                                                              |
-| UI work                            | `04_Operations/06_Solutions/ui-bugs/`                                                                      |
-| Integration                        | `04_Operations/06_Solutions/integration-issues/`                                                           |
-| General/unclear                    | `04_Operations/06_Solutions/` (all)                                                                        |
+| Feature Type                         | Search Directory                                                                                             |
+|--------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Performance work                     | `04_Operations/06_Solutions/performance-issues/`                                                             |
+| Database changes                     | `04_Operations/06_Solutions/database-issues/`                                                                |
+| Bug fix                              | `04_Operations/06_Solutions/runtime-errors/`, `04_Operations/06_Solutions/logic-errors/`                     |
+| Security                             | `04_Operations/06_Solutions/security-issues/`                                                                |
+| UI work                              | `04_Operations/06_Solutions/ui-bugs/`                                                                        |
+| Integration                          | `04_Operations/06_Solutions/integration-issues/`                                                             |
+| General/unclear                      | `04_Operations/06_Solutions/` (all)                                                                          |
 
 ### Step 3: Content-Search Pre-Filter (Critical for Efficiency)
 

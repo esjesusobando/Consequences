@@ -18,10 +18,10 @@
 
 ### Commits sesión
 
-| Commit       | Descripción |
-|--------------|-------------|
-| `484dc2ca`   | feat(os): Think_Different v4.0 preparation — audit, cleanup, ecosystem sync |
-| `8750740b`   | feat: Think_Different v4.0 — reports archive + gentle-ai v1.26.6 |
+| Commit         | Descripción                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| `484dc2ca`     | feat(os): Think_Different v4.0 preparation — audit, cleanup, ecosystem sync |
+| `8750740b`     | feat: Think_Different v4.0 — reports archive + gentle-ai v1.26.6            |
 
 ---
 
@@ -41,10 +41,10 @@
 
 ### Commits sesión
 
-| Commit       | Descripción                                                          |
-|--------------|----------------------------------------------------------------------|
-| `b2e100e5`   | docs: apply Beautify Tables to 2880 files — pixel perfect alignment |
-| `e095e10a`   | docs: update metrics + dates + JARVIS manifests regeneration         |
+| Commit         | Descripción                                                            |
+|----------------|------------------------------------------------------------------------|
+| `b2e100e5`     | docs: apply Beautify Tables to 2880 files — pixel perfect alignment    |
+| `e095e10a`     | docs: update metrics + dates + JARVIS manifests regeneration           |
 
 ---
 
@@ -60,20 +60,20 @@
 
 ### Commits sesión
 
-| Commit       | Descripción                                                          |
-|--------------|----------------------------------------------------------------------|
-| `92983546`   | feat(os): v3.1 Consequences — OS update, skills, agents, workflows   |
-| `750151c3`   | chore(git): remove all submodules                                    |
-| `0426f884`   | chore(gitignore): ignore ex-submodule folders                        |
+| Commit         | Descripción                                                            |
+|----------------|------------------------------------------------------------------------|
+| `92983546`     | feat(os): v3.1 Consequences — OS update, skills, agents, workflows     |
+| `750151c3`     | chore(git): remove all submodules                                      |
+| `0426f884`     | chore(gitignore): ignore ex-submodule folders                          |
 
 ### Ground Truth (2026-04-29)
 
-| Componente        | Valor verificado                             |
-|-------------------|----------------------------------------------|
-| Submodules        | ✅ 0 activos                                  |
-| Working tree      | ✅ Clean (nothing to commit)                  |
-| Disco C libre     | ~28 GB (liberados ~40 GB)                    |
-| .git size         | ~392 MB ⚠️ (pendiente git filter-repo)       |
+| Componente          | Valor verificado                               |
+|---------------------|------------------------------------------------|
+| Submodules          | ✅ 0 activos                                    |
+| Working tree        | ✅ Clean (nothing to commit)                    |
+| Disco C libre       | ~28 GB (liberados ~40 GB)                      |
+| .git size           | ~392 MB ⚠️ (pendiente git filter-repo)         |
 
 ---
 
@@ -106,16 +106,16 @@
 
 ### Ground Truth (2026-04-27)
 
-| Componente             | Valor verificado                      |
-|------------------------|---------------------------------------|
-| HUBs scripts           | 22 scripts (00-22) sin duplicados     |
-| SubagentStop           | ✅ Wired                               |
-| Skills frontmatter     | 298 válidas / 0 inválidas             |
-| GGA pre-commit         | ✅ Activo                              |
-| Secret scanner         | ✅ Activo                              |
-| git fsck               | ✅ Limpio                              |
-| git reflog             | ✅ Limpio                              |
-| Working tree           | ✅ Clean (nothing to commit)           |
+| Componente               | Valor verificado                        |
+|--------------------------|-----------------------------------------|
+| HUBs scripts             | 22 scripts (00-22) sin duplicados       |
+| SubagentStop             | ✅ Wired                                 |
+| Skills frontmatter       | 298 válidas / 0 inválidas               |
+| GGA pre-commit           | ✅ Activo                                |
+| Secret scanner           | ✅ Activo                                |
+| git fsck                 | ✅ Limpio                                |
+| git reflog               | ✅ Limpio                                |
+| Working tree             | ✅ Clean (nothing to commit)             |
 
 ---
 
@@ -147,15 +147,15 @@
 
 ### Ground Truth (manifest scan 2026-04-25)
 
-| Componente           | Valor verificado             |
-|----------------------|------------------------------|
-| MCPs Claude Code     | 33                           |
-| MCPs OpenCode        | 18 (drift: 16 faltantes)     |
-| Skills               | 297                          |
-| Agentes              | 52 source + 52 mirror        |
-| HUBs                 | 18                           |
-| Workflows            | 27                           |
-| Hooks                | 10 (6 fases)                 |
+| Componente             | Valor verificado               |
+|------------------------|--------------------------------|
+| MCPs Claude Code       | 33                             |
+| MCPs OpenCode          | 18 (drift: 16 faltantes)       |
+| Skills                 | 297                            |
+| Agentes                | 52 source + 52 mirror          |
+| HUBs                   | 18                             |
+| Workflows              | 27                             |
+| Hooks                  | 10 (6 fases)                   |
 
 ---
 
@@ -170,14 +170,14 @@
 
 ### Audit Findings — Issues Identificados (pending fix)
 
-| Área                      | Issue                                                                                         | Estado                    |
-|---------------------------|-----------------------------------------------------------------------------------------------|---------------------------|
-| **Hooks**                 | settings.json usa `.agent/04_Extensions/hooks/` vs docs `01_Core/07_Hooks/`                   | 🔴 Pendiente               |
-| **Hooks**                 | SubagentStop documentado pero NO configurado                                                  | 🔴 Pendiente               |
-| **Hooks**                 | 5/8 hooks documentados sin wirear (04_Sound, 05_Harness, 06_Post_Hulk_Compound)               | 🟠 Pendiente               |
-| **Agentes**               | Contaje inconsistente: docs dicen 14/18/71, real son 48                                       | 🟡 Pendiente               |
-| **MCPs**                  | Docs dicen 27/29, real son 36 servidores                                                      | 🟡 Pendiente               |
-| **Naming**                | GGA/Gentleman/Guardian Angel sin estandarizar                                                 | 🟡 Pendiente               |
+| Área                        | Issue                                                                                           | Estado                      |
+|-----------------------------|-------------------------------------------------------------------------------------------------|-----------------------------|
+| **Hooks**                   | settings.json usa `.agent/04_Extensions/hooks/` vs docs `01_Core/07_Hooks/`                     | 🔴 Pendiente                 |
+| **Hooks**                   | SubagentStop documentado pero NO configurado                                                    | 🔴 Pendiente                 |
+| **Hooks**                   | 5/8 hooks documentados sin wirear (04_Sound, 05_Harness, 06_Post_Hulk_Compound)                 | 🟠 Pendiente                 |
+| **Agentes**                 | Contaje inconsistente: docs dicen 14/18/71, real son 48                                         | 🟡 Pendiente                 |
+| **MCPs**                    | Docs dicen 27/29, real son 36 servidores                                                        | 🟡 Pendiente                 |
+| **Naming**                  | GGA/Gentleman/Guardian Angel sin estandarizar                                                   | 🟡 Pendiente                 |
 
 ### Notes
 - Auditoría completa ejecutada: estructura, skills, hooks, agentes, MCPs, scripts

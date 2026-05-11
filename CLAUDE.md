@@ -228,31 +228,31 @@ Think_Different/
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
-| Área                                      | Descripción                                                                | Skills   |
-|-------------------------------------------|----------------------------------------------------------------------------|----------|
-| **00_Compound_Engineering**               | Core CE (Spider, Avengers)                                                 | 20+      |
-| **00_Personal_Os_Stack**                  | Stack base OS + Gcierr                                                     | 5+       |
-| **00_Skill_Auditor**                      | Auditoría de skills                                                        | 3+       |
-| **01_Creacion_Contenidos**                | Brand, YouTube, SEO, Carruseles                                            | 15+      |
-| **02_Diseno_Ui_Ux**                       | Product Design, UI/UX, Taste, Minimal                                      | 12+      |
-| **03_Video_Media**                        | Video Intel, James Cameron, Remotion, Audio                                | 8+       |
-| **04_Automatizacion**                     | N8N, Firecrawl                                                             | 10+      |
-| **05_Workflows**                          | Agent Teams, PM, Orchestrator                                              | 15+      |
-| **06_Tools**                              | Skill Creator, Testing, DevOps, Data Analyst                               | 25+      |
-| **07_Personal_Os**                        | Life OS, Hillary, Rituales                                                 | 10+      |
-| **08_Invictus_Web**                       | Playwright, Superpowers, Browser Automation                                | 15+      |
+| Área                                        | Descripción                                                                  | Skills     |
+|---------------------------------------------|------------------------------------------------------------------------------|------------|
+| **00_Compound_Engineering**                 | Core CE (Spider, Avengers)                                                   | 20+        |
+| **00_Personal_Os_Stack**                    | Stack base OS + Gcierr                                                       | 5+         |
+| **00_Skill_Auditor**                        | Auditoría de skills                                                          | 3+         |
+| **01_Creacion_Contenidos**                  | Brand, YouTube, SEO, Carruseles                                              | 15+        |
+| **02_Diseno_Ui_Ux**                         | Product Design, UI/UX, Taste, Minimal                                        | 12+        |
+| **03_Video_Media**                          | Video Intel, James Cameron, Remotion, Audio                                  | 8+         |
+| **04_Automatizacion**                       | N8N, Firecrawl                                                               | 10+        |
+| **05_Workflows**                            | Agent Teams, PM, Orchestrator                                                | 15+        |
+| **06_Tools**                                | Skill Creator, Testing, DevOps, Data Analyst                                 | 25+        |
+| **07_Personal_Os**                          | Life OS, Hillary, Rituales                                                   | 10+        |
+| **08_Invictus_Web**                         | Playwright, Superpowers, Browser Automation                                  | 15+        |
 
 > Índice completo: `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
 
 ### 6. TOP 11 DESIGN SKILLS
 
-| Rank   | Skill                    | Total   | Descripción                          |
-|--------|--------------------------|---------|--------------------------------------|
-| 🥇 1    | **Dumbledor Design**     | **29**  | Jerarquía Visual + Contraste Binario |
-| 🥈 2    | **Huashu Design**        | **29**  | HTML Prototipado de Alta Fidelidad   |
-| 🥉 3    | **Ui Ux Pro Max**        | **26**  | UI/UX con Base de Datos Consultable  |
-| 4      | **Frontend Slides**      | **26**  | Presentaciones HTML Predeterminadas  |
-| 5      | **Design SOTA**          | **25**  | Estado del Arte en Diseño            |
+| Rank     | Skill                      | Total     | Descripción                            |
+|----------|----------------------------|-----------|----------------------------------------|
+| 🥇 1      | **Dumbledor Design**       | **29**    | Jerarquía Visual + Contraste Binario   |
+| 🥈 2      | **Huashu Design**          | **29**    | HTML Prototipado de Alta Fidelidad     |
+| 🥉 3      | **Ui Ux Pro Max**          | **26**    | UI/UX con Base de Datos Consultable    |
+| 4        | **Frontend Slides**        | **26**    | Presentaciones HTML Predeterminadas    |
+| 5        | **Design SOTA**            | **25**    | Estado del Arte en Diseño              |
 
 </architecture_routing>
 
@@ -291,18 +291,18 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 
 ## 📊 ESTADO DEL SISTEMA (v3.1 — 2026-04-29)
 <system_state_snapshot>
-| Categoria                              | Estado                      | Notas                                                                           |
-|----------------------------------------|-----------------------------|---------------------------------------------------------------------------------|
-| **Overall Health**                     | **✅ PURE GREEN**            | v3.1 Consequences — JARVIS integrated 2026-04-29                                |
-| Estructura (4 raíz)                    | ✅ PASS                      | Winter / Personal_Os / Playground / Resultado                                   |
-| HUBs (19+4 aux)                        | ✅ ACTIVE                    | 23 scripts en 03_Scripts_Os                                                     |
-| Skills (11 áreas)                      | ✅ VERIFIED                  | 299 skills — 11 áreas funcionales                                               |
-| Agent Matrix                           | ✅ ACTIVE                    | 52+ agentes                                                                     |
-| Manifest (7 archivos)                  | ✅ VALIDATED                 | 00_Manifest/ en 02_Agent_Teams_Lite/                                            |
-| MCPs (35 Claude / 18 OpenCode)         | ✅ SYNCED                    | .mcp.json en raíz                                                               |
-| Rules (11 .mdc)                        | ✅ DEFINED                   | 01_Rules/                                                                       |
-| Workflows (27+)                        | ✅ ACTIVE                    | 5 categorías                                                                    |
-| Agent Teams Protocol                   | ✅ ACTIVE                    | Super Campeones — comunicación inter-agente                                     |
+| Categoria                                | Estado                        | Notas                                                                             |
+|------------------------------------------|-------------------------------|-----------------------------------------------------------------------------------|
+| **Overall Health**                       | **✅ PURE GREEN**              | v3.1 Consequences — JARVIS integrated 2026-04-29                                  |
+| Estructura (4 raíz)                      | ✅ PASS                        | Winter / Personal_Os / Playground / Resultado                                     |
+| HUBs (19+4 aux)                          | ✅ ACTIVE                      | 23 scripts en 03_Scripts_Os                                                       |
+| Skills (11 áreas)                        | ✅ VERIFIED                    | 299 skills — 11 áreas funcionales                                                 |
+| Agent Matrix                             | ✅ ACTIVE                      | 52+ agentes                                                                       |
+| Manifest (7 archivos)                    | ✅ VALIDATED                   | 00_Manifest/ en 02_Agent_Teams_Lite/                                              |
+| MCPs (35 Claude / 18 OpenCode)           | ✅ SYNCED                      | .mcp.json en raíz                                                                 |
+| Rules (11 .mdc)                          | ✅ DEFINED                     | 01_Rules/                                                                         |
+| Workflows (27+)                          | ✅ ACTIVE                      | 5 categorías                                                                      |
+| Agent Teams Protocol                     | ✅ ACTIVE                      | Super Campeones — comunicación inter-agente                                       |
 
 ---
 
@@ -324,22 +324,22 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 ```
 
 ### Ecosistemas Integrados
-| Ecosistema               | Ubicación                                                                |
-|--------------------------|--------------------------------------------------------------------------|
-| Personal OS Core         | `00_Winter_is_Coming/AGENTS.md`                                          |
-| Compound Engineering     | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/`     |
-| Dream Team               | `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/`               |
-| Specialists              | `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/`     |
-| Gentleman GGA            | `.agent/05_GGA/`                                                         |
+| Ecosistema                 | Ubicación                                                                  |
+|----------------------------|----------------------------------------------------------------------------|
+| Personal OS Core           | `00_Winter_is_Coming/AGENTS.md`                                            |
+| Compound Engineering       | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/`       |
+| Dream Team                 | `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/`                 |
+| Specialists                | `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/`       |
+| Gentleman GGA              | `.agent/05_GGA/`                                                           |
 
 </jarvis_3.1>
 
 ### Configuración MCP (dual)
 
-| Herramienta             | Config activa                              | Source (backup)                                                            |
-|-------------------------|--------------------------------------------|----------------------------------------------------------------------------|
-| **Claude Code**         | `.mcp.json` (raíz del proyecto)            | `01_Personal_Os/01_Core/02_Tools/03_Mcp/01_Claude_Code/mcp.json`           |
-| **OpenCode**            | `~/.config/opencode/opencode.json`         | `01_Personal_Os/01_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json`         |
+| Herramienta               | Config activa                                | Source (backup)                                                              |
+|---------------------------|----------------------------------------------|------------------------------------------------------------------------------|
+| **Claude Code**           | `.mcp.json` (raíz del proyecto)              | `01_Personal_Os/01_Core/02_Tools/03_Mcp/01_Claude_Code/mcp.json`             |
+| **OpenCode**              | `~/.config/opencode/opencode.json`           | `01_Personal_Os/01_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json`           |
 
 > ⚠️ Al modificar MCPs: actualizar SIEMPRE el source Y el config activo correspondiente.
 

@@ -87,11 +87,11 @@ Vinculado a: Meta "[nombre de meta]"
 
 ### Paso 5: Templates por Complejidad
 
-| Complejidad                         | Template                    | Ubicación                                                           |
-|-------------------------------------|-----------------------------|---------------------------------------------------------------------|
-| Alta (1-8 horas)                    | SOTA                        | `03_Tasks/00_Templates/03_Task_Template_SOTA.md`                    |
-| Media (1-4 horas)                   | Medio                       | `03_Tasks/00_Templates/04_Task_Template_Medio.md`                   |
-| Baja (30min-2h)                     | Corto                       | `03_Tasks/00_Templates/05_Task_Template_Corto.md`                   |
+| Complejidad                           | Template                      | Ubicación                                                             |
+|---------------------------------------|-------------------------------|-----------------------------------------------------------------------|
+| Alta (1-8 horas)                      | SOTA                          | `03_Tasks/00_Templates/03_Task_Template_SOTA.md`                      |
+| Media (1-4 horas)                     | Medio                         | `03_Tasks/00_Templates/04_Task_Template_Medio.md`                     |
+| Baja (30min-2h)                       | Corto                         | `03_Tasks/00_Templates/05_Task_Template_Corto.md`                     |
 
 ### Paso 6: Limpiar BACKLOG.md
 
@@ -115,27 +115,27 @@ engram mem_save: "Backlog Processing - [fecha]"
 
 ## Categorías de Tareas
 
-| Categoría                       | Descripción                                      |
-|---------------------------------|--------------------------------------------------|
-| **technical**                   | build, fix, configure                            |
-| **outreach**                    | communicate, meet                                |
-| **research**                    | learn, analyze                                   |
-| **writing**                     | draft, document                                  |
-| **content**                     | blog posts, social media                         |
-| **admin**                       | operations, finance, logistics                   |
-| **personal**                    | health, routines                                 |
-| **other**                       | everything else                                  |
+| Categoría                         | Descripción                                        |
+|-----------------------------------|----------------------------------------------------|
+| **technical**                     | build, fix, configure                              |
+| **outreach**                      | communicate, meet                                  |
+| **research**                      | learn, analyze                                     |
+| **writing**                       | draft, document                                    |
+| **content**                       | blog posts, social media                           |
+| **admin**                         | operations, finance, logistics                     |
+| **personal**                      | health, routines                                   |
+| **other**                         | everything else                                    |
 
 ---
 
 ## Reglas de Prioridad
 
-| Priority                     | Significado                            | Límite                       |
-|------------------------------|----------------------------------------|------------------------------|
-| **P0**                       | Esta semana, crítico                   | max 3                        |
-| **P1**                       | Este mes, importante                   | max 7                        |
-| **P2**                       | Programado                             | sin límite                   |
-| **P3**                       | Algún día                              | sin límite                   |
+| Priority                       | Significado                              | Límite                         |
+|--------------------------------|------------------------------------------|--------------------------------|
+| **P0**                         | Esta semana, crítico                     | max 3                          |
+| **P1**                         | Este mes, importante                     | max 7                          |
+| **P2**                         | Programado                               | sin límite                     |
+| **P3**                         | Algún día                                | sin límite                     |
 
 ---
 
