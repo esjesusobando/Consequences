@@ -1,6 +1,6 @@
 # 🛡️ CLAUDE.md | PersonalOS v4.0 — Production Ready AI Context Harness
 
-> **Última actualización:** 2026-05-10
+> **Última actualización:** 2026-05-11
 > **Versión:** v4.0 Production — Every CE v3.7.3, gentle-ai v1.26.6
 
 <system_directives>
@@ -241,6 +241,8 @@ Think_Different/
 | **06_Tools**                                  | Skill Creator, Testing, DevOps, Data Analyst                                   | 25+          |
 | **07_Personal_Os**                            | Life OS, Hillary, Rituales                                                     | 10+          |
 | **08_Invictus_Web**                           | Playwright, Superpowers, Browser Automation                                    | 15+          |
+| **09_Legacy_Archive**                        | Skills obsoletas (archivadas)                                                  | 20+          |
+| **21_Skill_Template**                         | Template para nuevas skills                                                   | 1            |
 
 > Índice completo: `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
 

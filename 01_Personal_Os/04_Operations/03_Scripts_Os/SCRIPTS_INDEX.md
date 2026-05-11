@@ -187,12 +187,6 @@ Scripts migrados a skills usando `get_skill_script()`:
 | `16_Clean_System.py`                      | 13_System_Master/scripts                    | ✅                        |
 
 **Total: 12 scripts migrados — Todos resolviendo con get_skill_script()**
-| `13_Validate_Stack.py`          | validate-stack       | ✅ Creado   |
-| `12_Update_Links.py`            | update-links         | ✅ Creado   |
-| `16_Clean_System.py`            | clean-system         | ✅ Creado   |
-| `17_Ritual_Dominical.py`        | ritual-dominical     | ✅ Creado   |
-| `57_Repo_Sync_Auditor.py`       | repo-sync            | ✅ Creado   |
-| `50_System_Health_Monitor.py`   | system-guardian      | ✅ Existe   |
 
 ---
 

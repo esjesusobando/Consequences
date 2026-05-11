@@ -1,7 +1,7 @@
-# 🔧 HUB_CATALOG — PersonalOS v2.0 Consequences
+# 🔧 HUB_CATALOG — PersonalOS v4.0 Consequences
 
-**Versión:** 2.0
-**Última actualización:** 2026-04-24
+**Versión:** 4.0
+**Última actualización:** 2026-05-11
 **Ubicación:** `01_Personal_Os/04_Operations/03_Scripts_Os/`
 **PYTHONPATH:** Configurado vía `config_paths.py` en todos los HUBs
 

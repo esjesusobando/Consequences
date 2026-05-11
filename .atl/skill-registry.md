@@ -2,13 +2,14 @@
 
 > **FUENTE DE VERDAD**: Este archivo es el registry activo. Los sub-agentes leen de aquí para obtener compact rules.
 > La fuente de implementación de cada skill está en `01_Personal_Os/01_Core/02_Tools/02_Skills/`.
+> **Última actualización:** 2026-05-11 (v4.0 Production Ready + gentle-ai v1.26.6 + Every CE v3.7.3)
 
 ---
 
 ## Proyecto: Think_Different
 
-**Versión:** 4.0 Production Ready (2026-05-10)
-**Última actualización:** 2026-05-10 (v4.0 Production Ready + gentle-ai v1.26.6 + Every CE v3.7.3)
+**Versión:** 4.0 Production Ready (2026-05-11)
+**Última actualización:** 2026-05-11 (v4.0 Production Ready + gentle-ai v1.26.6 + Every CE v3.7.3 + gitmodules fix)
 
 ### Convenciones del Proyecto
 
@@ -70,7 +71,7 @@ Think_Different/
 |---|---------------|------------|-------------------|-------------|------|
 | **00** | ⭐ **Core Engineering** | Compound_Engineering, Personal_Os_Stack, Skill_Auditor | ce:ideate, ce:brainstorm, ce:plan, /lfg, /slfg | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/` |
 | **01** | 🎨 **Creación Contenidos** | Brand_Voice, Content_Creation, SEO_SOTA_Master, Carousel_Master | social-content, paid-ads, brand-voice, content-ideation | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/` |
-| **02** | 🎨 **Diseño UI/UX** | Product_Design, Taste_Skills, Diseno_Minimalista, Marca, Excalidraw, **Huashu_Design**, **Dumbledor_Design** | taste-skill, soft-skill, minimalist-skill, redesign-skill, **huashu-design**, **dumbledor-design** | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/` |
+| **02** | 🎨 **Diseño UI/UX** | Product_Design, Taste_Skills, Diseno_Minimalista, Marca, Excalidraw, **Huashu_Design**, **Dumbledor_Design**, **Frontend_Slides** | taste-skill, soft-skill, minimalist-skill, redesign-skill, **huashu-design**, **dumbledor-design** | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/` |
 | **03** | 🎥 **Video Media** | Video_Intel, James_Cameron (Remotion, Audio) | youtube-analysis, video-prompt, seedance, remotion | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/` |
 | **04** | ⚙️ **Automatización** | N8N_JS, N8N_Python, Firecrawl, GWS_Client | workflow-builder, webhook, automation, scraping | Automation | `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/` |
 | **05** | 🔄 **Workflows** | Agent_Teams_Lite, Project_Manager, Product_Manager, PM_Orchestrator | sdd-*, /ce:*, issue-creation, jira-epic | SDD+CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/` |
@@ -78,6 +79,7 @@ Think_Different/
 | **07** | 🌱 **Personal OS** | Life_OS, Personal_Os, Hillary, Contexto, Rituales | quick-capture, plan-my-day, morning-standup, weekly-review | OS | `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/` |
 | **08** | 🌐 **Invictus Web** | Superpowers, Buscador_Skills, Playwright | browser-automation, search, scraping | Web | `01_Personal_Os/01_Core/02_Tools/02_Skills/08_Invictus_Web/` |
 | **09** | 📦 **Legacy Archive** | Skills obsoletas | — | Archive | `01_Personal_Os/01_Core/02_Tools/02_Skills/09_Legacy_Archive/` |
+| **10** | 🧪 **Skill Template** | Template para nuevas skills | — | Template | `01_Personal_Os/01_Core/02_Tools/02_Skills/21_Skill_Template/` |
 | **10** | 🏆 **Open Design** (external) | Multi-Agent Design Framework | critique, tweaks, design-brief | Design OS | `05_Archive/07_Repos_Gentleman/open-design/` |
 
 > **✅ v4.0 Production Ready:** Every CE v3.7.3 + gentle-ai v1.26.6. 300+ skills, 52 agents, 28 HUBs, 11 áreas funcionales, 28 workflows. Open Design: 62 skills + 138 design systems. Pure Green State.
