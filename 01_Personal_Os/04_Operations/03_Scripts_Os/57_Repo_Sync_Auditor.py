@@ -33,7 +33,7 @@ def sync_repo(repo_path):
 
 
 def main():
-    base_dir = "03_Knowledge/10_Repos_Gentleman"
+    base_dir = "05_Archive/07_Repos_Gentleman"
     if not os.path.exists(base_dir):
         print(f"Directorio de respaldo no encontrado: {base_dir}")
         sys.exit(0)
