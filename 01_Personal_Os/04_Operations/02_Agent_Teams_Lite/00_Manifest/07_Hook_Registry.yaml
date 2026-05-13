@@ -1,7 +1,7 @@
-# Hook Registry — generated 2026-05-06T15:19:39
+# Hook Registry — generated 2026-05-12T00:42:12
 
 version: v3.0
-generated: "2026-05-06T15:19:39"
+generated: "2026-05-12T00:42:12"
 base_path: 01_Personal_Os/01_Core/02_Tools/05_Hooks/
 totals:
   phases: 6

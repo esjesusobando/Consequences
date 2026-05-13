@@ -1,10 +1,10 @@
-# HUB Catalog — generated 2026-05-06T15:19:39
+# HUB Catalog — generated 2026-05-12T00:42:12
 
 version: v3.0
-generated: "2026-05-06T15:19:39"
+generated: "2026-05-12T00:42:12"
 base_path: 01_Personal_Os/04_Operations/03_Scripts_Os/
 totals:
-  hubs: 25
+  hubs: 26
 hubs:
   - name: 00_Sound_Engine
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py
@@ -69,6 +69,9 @@ hubs:
   - name: 22_Validate_Skill_Frontmatter
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/22_Validate_Skill_Frontmatter.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/22_Validate_Skill_Frontmatter.py
+  - name: 23_path_replacement
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/23_path_replacement.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/23_path_replacement.py
   - name: 33_Parallel_Audit_Pro
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/33_Parallel_Audit_Pro.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/33_Parallel_Audit_Pro.py

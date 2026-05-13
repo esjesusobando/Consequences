@@ -1,0 +1,17 @@
+=== Sistema de Monitoreo de Salud ===
+--- Verificando Estructura de Directorios ---
+[OK] 01_Core: 01_Core
+[OK] 04_Operations: 04_Operations
+[OK] 02_Knowledge: 02_Knowledge
+[OK] 03_Scripts_Os: 03_Scripts_Os
+[OK] 00_Winter_is_Coming: 00_Winter_is_Coming
+[OK] 05_Archive: 05_Archive
+--- Verificando Contaminaci�n ---
+[OK] No se detect� contaminaci�n obvia.
+
+--- Verificando Archivos Maestros ---
+[OK] CLAUDE.md (ra�z) encontrado.
+[OK] README.md (00_Winter_is_Coming) encontrado.
+[OK] Verificaci�n de archivos maestros completada.
+
+=== ESTATUS: SALUDABLE ===

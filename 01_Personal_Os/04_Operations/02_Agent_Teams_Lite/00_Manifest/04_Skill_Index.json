@@ -1,11 +1,11 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-06T15:19:39",
+  "generated": "2026-05-12T00:42:12",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
     "areas": 11,
-    "skills": 300,
-    "without_frontmatter": 0
+    "skills": 303,
+    "without_frontmatter": 2
   },
   "by_area": {
     "00_Compound_Engineering": {
@@ -544,7 +544,7 @@
       ]
     },
     "02_Diseno_Ui_Ux": {
-      "count": 21,
+      "count": 22,
       "skills": [
         {
           "name": "04_Product_Design",
@@ -650,6 +650,11 @@
           "name": "11_Dumbledor_Design",
           "path": "02_Diseno_Ui_Ux/11_Dumbledor_Design/SKILL.md",
           "has_frontmatter": true
+        },
+        {
+          "name": "14_Design_Systems",
+          "path": "02_Diseno_Ui_Ux/14_Design_Systems/SKILL.md",
+          "has_frontmatter": false
         }
       ]
     },
@@ -944,7 +949,7 @@
       ]
     },
     "06_Tools": {
-      "count": 78,
+      "count": 80,
       "skills": [
         {
           "name": "15_Skill_Creator_Oficial",
@@ -1275,6 +1280,16 @@
           "name": "17_Testing_Coverage",
           "path": "06_Tools/06_Testing/17_Testing_Coverage/SKILL.md",
           "has_frontmatter": true
+        },
+        {
+          "name": "01_Lighthouse_Core_Web_Vitals",
+          "path": "06_Tools/07_Performance/01_Lighthouse_Core_Web_Vitals/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "01_Accessibility_WCAG_Testing",
+          "path": "06_Tools/08_Accessibility/01_Accessibility_WCAG_Testing/SKILL.md",
+          "has_frontmatter": false
         },
         {
           "name": "25_Octopus",
