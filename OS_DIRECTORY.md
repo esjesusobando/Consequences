@@ -16,7 +16,7 @@
 | HUBs                         | **21 scripts principales + 5 aux** (+ 12 subdirectorios)   | ✅ VERIFIED                            |
 | Workflows                    | **28+** (5 categorías en 00_Workflows_Os)                  | ✅ ACTIVE                              |
 | Hooks                        | 10+                                                        | ✅ ACTIVE                              |
-| Rules                        | **11 (.mdc)** en 01_Rules                                  | ✅ DEFINED                             |
+| Rules                        | **12 (.mdc)** en 01_Rules                                  | ✅ DEFINED                             |
 | JARVIS Manifests             | 7 en 00_Manifest/                                          | ✅ VALIDATED                           |
 | Open Design                  | 62 skills + 138 design systems                             | ✅ INTEGRATED                          |
 

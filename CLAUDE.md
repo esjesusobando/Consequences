@@ -147,7 +147,7 @@ Think_Different/                           # RAÍZ
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD 💾)
 │   │   ├── 00_Workflows_Os/     ✅ 28 workflows (5 categorías)
-│   │   ├── 01_Rules/            ✅ 11 reglas (.mdc) — fuente de verdad
+│   │   ├── 01_Rules/            ✅ 12 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/            ✅ Todas las herramientas
 │   │       ├── 01_Agents/       ✅ 52+ agentes (Dream Team + Specialists)
 │   │       ├── 02_Skills/       ✅ 300+ skills (11 áreas funcionales)
