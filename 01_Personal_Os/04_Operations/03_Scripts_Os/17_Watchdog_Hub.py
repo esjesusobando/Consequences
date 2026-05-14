@@ -65,9 +65,9 @@ def check_mcp_sync() -> dict:
         claude = opencode = 0
         for line in output.split("\n"):
             if "Claude Code MCPs:" in line:
-                claude = int(line.split(":")[-1].strip())
+                claude = int(line.split(":")[-1].strip().replace("|", "").strip())
             if "OpenCode MCPs:" in line:
-                opencode = int(line.split(":")[-1].strip())
+                opencode = int(line.split(":")[-1].strip().replace("|", "").strip())
         
         return {"status": "ok", "claude": claude, "opencode": opencode}
     except Exception as e:
