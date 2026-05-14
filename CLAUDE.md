@@ -1,7 +1,7 @@
 # 🛡️ CLAUDE.md | PersonalOS v4.0 — Production Ready AI Context Harness
 
-> **Última actualización:** 2026-05-11
-> **Versión:** v4.0 Production — Every CE v3.7.3, gentle-ai v1.26.6
+> **Última actualización:** 2026-05-13
+> **Versión:** v4.0 Production — Every CE v2.55.0 (local repo), gentle-ai v1.26.6
 
 <system_directives>
   <fundamental_rule>
@@ -41,7 +41,7 @@
 Al iniciar sesión, la IA ejecuta EXACTAMENTE este bucle ANTES de actuar:
 -0.5. Si es una sesión fría o nueva, LEER `01_Personal_Os/05_Archive/07_Repos_Gentleman/README.md` para comprender los principios del OS y los repos upstream de referencia.
 0. Identificar el área de trabajo y leer `00_Winter_is_Coming/AGENTS.md` (Asignación del GGA).
-1. Leer `00_Winter_is_Coming/GOALS.md` y `BACKLOG.md`.
+1. Leer `00_Winter_is_Coming/GOALS.md` y `00_Winter_is_Coming/BACKLOG.md`.
 2. Ejecutar `engram_mem_context(limit=10)` para recuperar trazas de contexto.
 3. Si la memoria ha sido compactada, usa `engram_mem_session_summary()`.
 4. Explora `01_Personal_Os/01_Core/`, `01_Personal_Os/02_Knowledge/` y `01_Personal_Os/04_Operations/` si la tarea lo requiere.
@@ -62,7 +62,7 @@ TODO plan, propuesta o documento creado para mostrar al usuario → GUARDAR EN R
 
 ## ⚖️ LAS 12 LEYES MAESTRAS
 <behavioral_laws>
-1. **Piensa Primero, Investiga Después:** Lee antes deacci.
+1. **Piensa Primero, Investiga Después:** Lee antes de actuar.
 2. **Explica Cada Paso:** Transparencia algorítmica.
 3. **Simplicidad ante Todo:** Soluciones elegantes y funcionales.
 4. **Docs al Día:** Cualquier cambio estructural muta obligatoriamente la documentación.
@@ -73,7 +73,7 @@ TODO plan, propuesta o documento creado para mostrar al usuario → GUARDAR EN R
 9. **Respeto Estructural:** Respeta indexación de carpetas.
 10. **Procesos en Lista:** Presenta lógicas en listas numeradas.
 11. **Minimalismo en Carpetas:** Solo crealas si la arquitectura las exige.
-12. **Paths Absolutos:** Identifica el Repo y ruta antes deacci.
+12. **Paths Absolutos:** Identifica el Repo y ruta antes de actuar.
 </behavioral_laws>
 
 ---
@@ -133,26 +133,24 @@ La esencia de delegación en PersonalOS sigue el esquema de un **Equipo de Fútb
                                       │ (Scorecard) │
                                       └─────────────┘
 ```
-
-*📝 Trigger Activo:* Si se invoca **"Super Campeones"**, configuro este protocolo masivo de paralelismo guiado apoyándome 100% en esta Pizarra Táctica.
 </dream_team_analogy>
 
 ---
 
-## 🗺️ KNOWLEDGE MAPS & ARCHITECTURE (v3.1 Consequences)
-<architecture_routing>
+## 🗺️ KNOWLEDGE MAPS & ARCHITECTURE (v4.0)
 
-### 1. ESTRUCTURA BASE (Think_Different — v3.1 Consequences)
-```text
-Think_Different/
-├── 00_Winter_is_Coming/          ✅ MATRIX: Goals, Backlog, AGENTS.md (INMUTABLE)
+### 1. ESTRUCTURA BASE (Think_Different — v4.0)
+
+```
+Think_Different/                           # RAÍZ
+├── 00_Winter_is_Coming/          ✅ MATRIX: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD 💾)
-│   │   ├── 00_Workflows_Os/      ✅ 27 workflows (5 categorías)
+│   │   ├── 00_Workflows_Os/     ✅ 28 workflows (5 categorías)
 │   │   ├── 01_Rules/            ✅ 11 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/            ✅ Todas las herramientas
 │   │       ├── 01_Agents/       ✅ 52+ agentes (Dream Team + Specialists)
-│   │       ├── 02_Skills/       ✅ 299 skills (11 áreas funcionales)
+│   │       ├── 02_Skills/       ✅ 300+ skills (11 áreas funcionales)
 │   │       ├── 03_Mcp/         ✅ Backup configs MCP
 │   │       ├── 04_Integrations/ ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/        ✅ Pre/Post/Lifecycle/Sound/Harness
@@ -161,107 +159,67 @@ Think_Different/
 │   │       ├── 08_Evals/        ✅ Evaluadores
 │   │       └── 09_Templates/    ✅ Templates
 │   ├── 02_Knowledge/            ✅ Base de conocimiento
-│   ├── 03_Task/                 ✅ Tareas activas (singular)
-│   ├── 04_Operations/           ✅ Todo lo operativo
-│   │   ├── 00_Context_LLM/      ✅ Memoria, notas, knowledge brain
-│   │   ├── 01_Auto_Improvement/ ✅ Motor auto-mejora
-│   │   ├── 02_Agent_Teams_Lite/ ✅ SDD registry + 7 JARVIS manifests
-│   │   └── 03_Scripts_Os/       ✅ 23 scripts (19 HUBs + 4 aux)
-│   └── 05_Archive/              ✅ Legacy archivado
+│   ├── 03_Task/                 ✅ Tareas activas
+│   └── 04_Operations/           ✅ Todo lo operativo
+│       ├── 00_Context_LLM/      ✅ Memoria, notas, knowledge brain
+│       ├── 01_Auto_Improvement/ ✅ Motor auto-mejora
+│       ├── 02_Agent_Teams_Lite/ ✅ SDD registry + 7 JARVIS manifests
+│       └── 03_Scripts_Os/       ✅ 26 scripts (21 HUBs + 5 aux)
 ├── 02_Playground/               ✅ Zona de pruebas (no contamina el OS)
 ├── 03_Resultado/                ✅ Outputs de proyectos (OIM, Elite Portfolio, etc.)
 ├── .agent/                      ✅ Backup estratégico
 ├── .atl/                        ✅ SDD Registry + openspec
 ├── .claude/                     ✅ Config Claude Code + rules
 ├── .opencode/                   ✅ Config OpenCode + skills locales
-├── .mcp.json                    ✅ MCPs activos (35 servidores)
-├── OS_DIRECTORY.md              ✅ JARVIS discovery (<2KB)
+├── .mcp.json                    ✅ MCPs activos (36 servidores)
+├── OS_DIRECTORY.md              ✅ JARVIS discovery
 ├── AGENTS.md                    ✅ Root entry (GGA Pre-Commit)
 ├── CLAUDE.md                    ✅ Config Oficial para IAs (ESTE)
 └── README.md                    ✅ Documentación principal
 ```
 
-> **✅ MIGRACIÓN v3.1 — 2026-04-29:** Consequences architecture aplicada. 4 carpetas raíz.
+### 2. AGENTS (52+)
 
-### 2. CONFIGURACIÓN IA (.agent/)
-```text
-.agent/
-├── 00_Rules/                # Reglas del agente (11 .mdc)
-├── 01_Agents/               # Agentes externos configurados (52+)
-├── 02_Skills/               # Skills (backup de sistema)
-├── 03_Workflows/            # Workflows del sistema
-├── 04_Extensions/           # Hooks del sistema
-│   └── hooks/
-│       ├── 01_Pre_Tool/     # PreToolUse: battery, security
-│       ├── 02_Post_Tool/    # PostToolUse: backup, voice
-│       ├── 03_Lifecycle/    # Stop, SubagentStop
-│       └── 04_Sound/        # Notifications, sounds
-└── 05_GGA/                  # Gentleman Guardian Angel (Code Review)
-```
+| Categoría                        | Ubicación                                                             |
+|----------------------------------|-----------------------------------------------------------------------|
+| Dream Team (5)                   | `01_Core/02_Tools/01_Agents/01_Dream_Team/`                           |
+| Specialists (24)                 | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                 |
+| Individuales (22)                | `01_Core/02_Tools/01_Agents/`                                         |
 
-### 3. SISTEMA AUTO-MEJORA (01_Personal_Os/04_Operations/01_Auto_Improvement)
-```text
-01_Auto_Improvement/
-├── 01_Engine/
-│   ├── detector.py                    # Detecta issues criticos
-│   ├── analyzer.py                    # Analiza y clasifica
-│   ├── executor.py                    # Aplica fixes
-│   ├── learner.py                     # Aprende de fixes
-│   └── recursive_improvement_engine.py
-├── 02_Rules/
-└── 04_Triggers/
-```
-
-### 4. JARVIS 3.1 — MANIFEST SYSTEM
-```text
-01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
-├── 01_OS_Inventory.json      # Inventario OS
-├── 02_MCP_Registry.yaml     # 35 MCPs Claude / 18 OpenCode
-├── 03_Agent_Catalog.yaml    # 52+ agentes
-├── 04_Skill_Index.json      # 299 skills
-├── 05_HUB_Catalog.yaml     # 19+5 HUBs
-├── 06_Workflow_Graph.yaml   # 27+ workflows
-└── 07_Hook_Registry.yaml    # 10+ hooks
-```
-
-### 5. SKILLS DISPONIBLES (11 ÁREAS — 299 skills)
+### 3. SKILLS (300+ — 11 áreas funcionales)
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
-| Área                                          | Descripción                                                                    | Skills       |
-|-----------------------------------------------|--------------------------------------------------------------------------------|--------------|
-| **00_Compound_Engineering**                   | Core CE (Spider, Avengers)                                                     | 20+          |
-| **00_Personal_Os_Stack**                      | Stack base OS + Gcierr                                                         | 5+           |
-| **00_Skill_Auditor**                          | Auditoría de skills                                                            | 3+           |
-| **01_Creacion_Contenidos**                    | Brand, YouTube, SEO, Carruseles                                                | 15+          |
-| **02_Diseno_Ui_Ux**                           | Product Design, UI/UX, Taste, Minimal                                          | 12+          |
-| **03_Video_Media**                            | Video Intel, James Cameron, Remotion, Audio                                    | 8+           |
-| **04_Automatizacion**                         | N8N, Firecrawl                                                                 | 10+          |
-| **05_Workflows**                              | Agent Teams, PM, Orchestrator                                                  | 15+          |
-| **06_Tools**                                  | Skill Creator, Testing, DevOps, Data Analyst                                   | 25+          |
-| **07_Personal_Os**                            | Life OS, Hillary, Rituales                                                     | 10+          |
-| **08_Invictus_Web**                           | Playwright, Superpowers, Browser Automation                                    | 15+          |
-| **09_Legacy_Archive**                        | Skills obsoletas (archivadas)                                                  | 20+          |
-| **21_Skill_Template**                         | Template para nuevas skills                                                   | 1            |
+| Área                                  | Items           | Descripción                                        |
+|---------------------------------------|-----------------|----------------------------------------------------|
+| 00_Compound_Engineering               | 11              | Core CE — SDD + Compound Engineering               |
+| 00_Personal_Os_Stack                  | 11              | Stack base OS + Gcierr                             |
+| 00_Skill_Auditor                      | 4               | Auditoría de skills                                |
+| 01_Creacion_Contenidos                | 22              | Brand, YouTube, SEO, Carruseles                    |
+| 02_Diseno_Ui_Ux                       | 14              | Product Design, UI/UX, Taste, Minimal              |
+| 03_Video_Media                        | 2               | Video Intel, James Cameron                         |
+| 04_Automatizacion                     | 12              | N8N, Firecrawl, GWS Client                         |
+| 05_Workflows                          | 6               | Agent Teams, PM, Orchestrator                      |
+| 06_Tools                              | 14              | Skill Creator, Testing, DevOps, Data               |
+| 07_Personal_Os                        | 8               | Life OS, Hillary, Rituales                         |
+| 08_Invictus_Web                       | 3               | Playwright, Superpowers, Browser Auto              |
 
-> Índice completo: `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
+### 4. JARVIS 4.0 — MANIFEST SYSTEM
 
-### 6. TOP 11 DESIGN SKILLS
-
-| Rank       | Skill                        | Total       | Descripción                              |
-|------------|------------------------------|-------------|------------------------------------------|
-| 🥇 1        | **Dumbledor Design**         | **29**      | Jerarquía Visual + Contraste Binario     |
-| 🥈 2        | **Huashu Design**            | **29**      | HTML Prototipado de Alta Fidelidad       |
-| 🥉 3        | **Ui Ux Pro Max**            | **26**      | UI/UX con Base de Datos Consultable      |
-| 4          | **Frontend Slides**          | **26**      | Presentaciones HTML Predeterminadas      |
-| 5          | **Design SOTA**              | **25**      | Estado del Arte en Diseño                |
-
-</architecture_routing>
+```text
+01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
+├── 01_OS_Inventory.json      # Inventario OS
+├── 02_MCP_Registry.yaml     # 36 MCPs
+├── 03_Agent_Catalog.yaml    # 52+ agentes
+├── 04_Skill_Index.json      # 300+ skills
+├── 05_HUB_Catalog.yaml     # 26 scripts
+├── 06_Workflow_Graph.yaml   # 28+ workflows
+└── 07_Hook_Registry.yaml    # 10+ hooks
+```
 
 ---
 
 ## ⚡ AUTOMATION HARNESS Y COMANDOS
-<execution_harness>
 
 **Comandos Rápidos (Alias en bashrc):**
 - `gr` o `audit` : Corre el Auditor (Dry-run).
@@ -279,39 +237,34 @@ Think_Different/
 - `.agent/05_GGA/bin/gga run` (Revisar archivos staged).
 - `.agent/05_GGA/bin/gga install` (Instala pre-commit hook).
 
-**JARVIS 3.1 HUBs Canónicos:**
+**JARVIS 4.0 HUBs Canónicos:**
 ```bash
 python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan     # regenerar 7 manifests
-python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py                   # health check
-python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard      # stats ASCII
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report         # MCP drift
+python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py               # health check
+python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard   # stats ASCII
+python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report      # MCP drift
 ```
 
-</execution_harness>
+---
+
+## 📊 ESTADO DEL SISTEMA (v4.0 — 2026-05-13)
+
+| Categoria                                      | Estado                              | Notas                                                                     |
+|------------------------------------------------|-------------------------------------|---------------------------------------------------------------------------|
+| **Overall Health**                             | **✅ PURE GREEN**                    | v4.0 Production — JARVIS 4.0 integrated 2026-05-13                        |
+| Estructura (4 raíz)                            | ✅ PASS                              | Winter / Personal_Os / Playground / Resultado                             |
+| HUBs (26 scripts)                              | ✅ ACTIVE                            | 21 HUBs + 5 aux en 03_Scripts_Os                                          |
+| Skills (11 áreas)                              | ✅ VERIFIED                          | 300+ skills — 11 áreas funcionales                                        |
+| Agent Matrix                                   | ✅ ACTIVE                            | 52+ agentes                                                               |
+| Manifest (7 archivos)                          | ✅ VALIDATED                         | 00_Manifest/ en 02_Agent_Teams_Lite/                                      |
+| MCPs (36 Claude Code)                          | ✅ SYNCED                            | .mcp.json en raíz                                                         |
+| Rules (11 .mdc)                                | ✅ DEFINED                           | 01_Rules/                                                                 |
+| Workflows (28+)                                | ✅ ACTIVE                            | 5 categorías en 00_Workflows_Os                                           |
+| Agent Teams Protocol                           | ✅ ACTIVE                            | Super Campeones                                                           |
 
 ---
 
-## 📊 ESTADO DEL SISTEMA (v3.1 — 2026-04-29)
-<system_state_snapshot>
-| Categoria                                  | Estado                          | Notas                                                                               |
-|--------------------------------------------|---------------------------------|-------------------------------------------------------------------------------------|
-| **Overall Health**                         | **✅ PURE GREEN**                | v3.1 Consequences — JARVIS integrated 2026-04-29                                    |
-| Estructura (4 raíz)                        | ✅ PASS                          | Winter / Personal_Os / Playground / Resultado                                       |
-| HUBs (19+4 aux)                            | ✅ ACTIVE                        | 23 scripts en 03_Scripts_Os                                                         |
-| Skills (11 áreas)                          | ✅ VERIFIED                      | 299 skills — 11 áreas funcionales                                                   |
-| Agent Matrix                               | ✅ ACTIVE                        | 52+ agentes                                                                         |
-| Manifest (7 archivos)                      | ✅ VALIDATED                     | 00_Manifest/ en 02_Agent_Teams_Lite/                                                |
-| MCPs (35 Claude / 18 OpenCode)             | ✅ SYNCED                        | .mcp.json en raíz                                                                   |
-| Rules (11 .mdc)                            | ✅ DEFINED                       | 01_Rules/                                                                           |
-| Workflows (27+)                            | ✅ ACTIVE                        | 5 categorías                                                                        |
-| Agent Teams Protocol                       | ✅ ACTIVE                        | Super Campeones — comunicación inter-agente                                         |
-
----
-
-## 🤖 JARVIS — CONSEQUENCES 3.1 (2026-04-29)
-<jarvis_3.1>
-
-El sistema tiene un **manifest central** que permite discovery automático de todos los componentes:
+## 🤖 JARVIS — 4.0 (2026-05-13)
 
 ### Quick Access
 ```bash
@@ -319,29 +272,28 @@ El sistema tiene un **manifest central** que permite discovery automático de to
 cat OS_DIRECTORY.md
 
 # HUBs principales JARVIS
-python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan     # regenerar 7 manifests
-python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py                 # health check
-python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard # usage stats
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report      # MCP drift
+python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan
+python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard
+python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 ```
 
 ### Ecosistemas Integrados
-| Ecosistema                   | Ubicación                                                                    |
-|------------------------------|------------------------------------------------------------------------------|
-| Personal OS Core             | `00_Winter_is_Coming/AGENTS.md`                                              |
-| Compound Engineering         | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/`         |
-| Dream Team                   | `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/`                   |
-| Specialists                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/`         |
-| Gentleman GGA                | `.agent/05_GGA/`                                                             |
 
-</jarvis_3.1>
+| Ecosistema                       | Ubicación                                                                        |
+|----------------------------------|----------------------------------------------------------------------------------|
+| Personal OS Core                 | `00_Winter_is_Coming/AGENTS.md`                                                  |
+| Compound Engineering             | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/`             |
+| Dream Team                       | `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/`                       |
+| Specialists                      | `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/`             |
+| Gentleman GGA                    | `.agent/05_GGA/`                                                                 |
 
 ### Configuración MCP (dual)
 
-| Herramienta                 | Config activa                                  | Source (backup)                                                                |
-|-----------------------------|------------------------------------------------|--------------------------------------------------------------------------------|
-| **Claude Code**             | `.mcp.json` (raíz del proyecto)                | `01_Personal_Os/01_Core/02_Tools/03_Mcp/01_Claude_Code/mcp.json`               |
-| **OpenCode**                | `~/.config/opencode/opencode.json`             | `01_Personal_Os/01_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json`             |
+| Herramienta                     | Config activa                                      | Source (backup)                                  |
+|---------------------------------|----------------------------------------------------|--------------------------------------------------|
+| **Claude Code**                 | `.mcp.json` (raíz del proyecto)                    | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`        |
+| **OpenCode**                    | `~/.config/opencode/opencode.json`                 | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`        |
 
 > ⚠️ Al modificar MCPs: actualizar SIEMPRE el source Y el config activo correspondiente.
 
@@ -363,10 +315,26 @@ O reinstalar sin `--ignore-scripts` / `--omit=optional`.
 
 ---
 
-**Última actualización:** 2026-04-29
-**Versión:** v3.1 Consequences — JARVIS 3.1 Integrated
+## 📍 PATHS CRÍTICOS (v4.0)
 
-> ✅ **Migración v3.1 2026-04-29:** Consequences architecture aplicada. 4 carpetas raíz. Pure Green State.
+| Recurso                        | Path CORRECTO                                                       |
+|--------------------------------|---------------------------------------------------------------------|
+| Skills                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                        |
+| Agents                         | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                        |
+| Rules                          | `01_Personal_Os/01_Core/01_Rules/`                                  |
+| HUBs                           | `01_Personal_Os/04_Operations/03_Scripts_Os/`                       |
+| Workflows                      | `01_Personal_Os/01_Core/00_Workflows_Os/`                           |
+| Tasks                          | `01_Personal_Os/03_Task/`                                           |
+| Knowledge                      | `01_Personal_Os/02_Knowledge/`                                      |
+| Context LLM                    | `01_Personal_Os/04_Operations/00_Context_LLM/`                      |
 
-© 2026 PersonalOS v3.1 Consequences
-</system_state_snapshot>
+> ⚠️ NO usar paths v1.x (01_Core/, 03_Skills/, 03_Tasks/)
+
+---
+
+**Última actualización:** 2026-05-13
+**Versión:** v4.0 Production Ready — JARVIS 4.0 Integrated
+
+> ✅ **Migración v4.0 2026-05-13:** Production Ready. Pure Green State. Paths corregidos.
+
+© 2026 PersonalOS v4.0 Production Ready
