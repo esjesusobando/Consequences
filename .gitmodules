@@ -1,12 +1,3 @@
-[submodule "01_Personal_Os/05_Archive/07_Repos_Gentleman/design-system"]
-	path = 01_Personal_Os/05_Archive/07_Repos_Gentleman/design-system
-	url = https://github.com/robonuggets/design-system.git
-[submodule "01_Personal_Os/05_Archive/07_Repos_Gentleman/frontend-slides"]
-	path = 01_Personal_Os/05_Archive/07_Repos_Gentleman/frontend-slides
-	url = https://github.com/zarazhangrui/frontend-slides.git
-[submodule "01_Personal_Os/05_Archive/07_Repos_Gentleman/open-design"]
-	path = 01_Personal_Os/05_Archive/07_Repos_Gentleman/open-design
-	url = https://github.com/nexu-io/open-design.git
 [submodule "01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy"]
 	path = 01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy
 	url = https://github.com/esjesusobando/Office_Installations_.git
@@ -16,3 +7,12 @@
 [submodule "03_Resultado/OIM_Website_v2"]
 	path = 03_Resultado/OIM_Website_v2
 	url = https://github.com/esjesusobando/OIM.git
+[submodule "01_Personal_Os/05_Archive/07_Repos_Gentleman/06_Design_System"]
+	path = 01_Personal_Os/05_Archive/07_Repos_Gentleman/06_Design_System
+	url = https://github.com/robonuggets/design-system.git
+[submodule "01_Personal_Os/05_Archive/07_Repos_Gentleman/09_Frontend_Slides"]
+	path = 01_Personal_Os/05_Archive/07_Repos_Gentleman/09_Frontend_Slides
+	url = https://github.com/zarazhangrui/frontend-slides.git
+[submodule "01_Personal_Os/05_Archive/07_Repos_Gentleman/17_Open_Design"]
+	path = 01_Personal_Os/05_Archive/07_Repos_Gentleman/17_Open_Design
+	url = https://github.com/nexu-io/open-design.git

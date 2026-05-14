@@ -2,14 +2,14 @@
 
 > **FUENTE DE VERDAD**: Este archivo es el registry activo. Los sub-agentes leen de aquí para obtener compact rules.
 > La fuente de implementación de cada skill está en `01_Personal_Os/01_Core/02_Tools/02_Skills/`.
-> **Última actualización:** 2026-05-11 (v4.0 Production Ready + gentle-ai v1.26.6 + Every CE v3.7.3)
+> **Última actualización:** 2026-05-14 (v4.0 Production Ready + gentle-ai v1.26.6 + Every CE v2.55.0)
 
 ---
 
 ## Proyecto: Think_Different
 
-**Versión:** 4.0 Production Ready (2026-05-11)
-**Última actualización:** 2026-05-11 (v4.0 Production Ready + gentle-ai v1.26.6 + Every CE v3.7.3 + gitmodules fix)
+**Versión:** 4.0 Production Ready (2026-05-14)
+**Última actualización:** 2026-05-14 (v4.0 Production Ready + gentle-ai v1.26.6 + Every CE v2.55.0)
 
 ### Convenciones del Proyecto
 
@@ -78,11 +78,11 @@ Think_Different/
 | **06** | 🛠️ **Tools** | Skill_Creator, Anthropic_Harness, DevOps, Testing, Doc_Processing, System_Master, Data_Analyst, Qmd | react-19, nextjs-15, pytest, playwright, docker | CE+GGA | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/` |
 | **07** | 🌱 **Personal OS** | Life_OS, Personal_Os, Hillary, Contexto, Rituales | quick-capture, plan-my-day, morning-standup, weekly-review | OS | `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/` |
 | **08** | 🌐 **Invictus Web** | Superpowers, Buscador_Skills, Playwright | browser-automation, search, scraping | Web | `01_Personal_Os/01_Core/02_Tools/02_Skills/08_Invictus_Web/` |
-| **09** | 📦 **Legacy Archive** | Skills obsoletas | — | Archive | `01_Personal_Os/01_Core/02_Tools/02_Skills/09_Legacy_Archive/` |
-| **10** | 🧪 **Skill Template** | Template para nuevas skills | — | Template | `01_Personal_Os/01_Core/02_Tools/02_Skills/21_Skill_Template/` |
-| **10** | 🏆 **Open Design** (external) | Multi-Agent Design Framework | critique, tweaks, design-brief | Design OS | `05_Archive/07_Repos_Gentleman/open-design/` |
+| **09** | 📦 **Legacy Archive** | Skills obsoletas (en 05_Archive/09_Legacy_Skills_Archive/) | — | Archive | `01_Personal_Os/01_Core/02_Tools/02_Skills/` |
+| **10** | 🧪 **Skill Template** | Template para nuevas skills (en 21_Skill_Template/) | — | Template | `01_Personal_Os/01_Core/02_Tools/02_Skills/` |
+| **11** | 🏆 **Open Design** (external) | Multi-Agent Design Framework | critique, tweaks, design-brief | Design OS | `05_Archive/07_Repos_Gentleman/open-design/` |
 
-> **✅ v4.0 Production Ready:** Every CE v3.7.3 + gentle-ai v1.26.6. 300+ skills, 52 agents, 28 HUBs, 11 áreas funcionales, 28 workflows. Open Design: 62 skills + 138 design systems. Pure Green State.
+> **✅ v4.0 Production Ready:** Every CE v2.55.0 (local repo) + gentle-ai v1.26.6. 300+ skills, 52 agents, 28 HUBs, 11 áreas funcionales, 28 workflows. Open Design: 62 skills + 138 design systems. Pure Green State.
 
 ### Project Conventions (AGENTS.md)
 

@@ -1,13 +1,13 @@
 # 🔧 HUB_CATALOG — PersonalOS v4.0 Consequences
 
 **Versión:** 4.0
-**Última actualización:** 2026-05-11
+**Última actualización:** 2026-05-14
 **Ubicación:** `01_Personal_Os/04_Operations/03_Scripts_Os/`
 **PYTHONPATH:** Configurado vía `config_paths.py` en todos los HUBs
 
 ---
 
-## Catálogo de HUBs (19 total — v2.0 Consequences + JARVIS 3.0)
+## Catálogo de HUBs (21 HUBs principales + 5 auxiliares = 26 scripts totales — v4.0 + JARVIS 3.1)
 
 | #               | HUB                          | Script                                | Propósito                                                           | Comando rápido                                                                                         |
 |-----------------|------------------------------|---------------------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
