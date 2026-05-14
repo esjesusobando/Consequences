@@ -193,14 +193,14 @@ Use SOP creation when you need to:
 
 Available templates in `references/sop-templates/`:
 
-| Template                                  | Use For                                             |
-|-------------------------------------------|-----------------------------------------------------|
-| `runbook.md`                              | Incidents, emergencies, on-call                     |
-| `standard-sop.md`                         | Any repeatable process                              |
-| `how-to-guide.md`                         | One-off tasks, setup                                |
-| `onboarding-guide.md`                     | New person ramping up                               |
-| `decision-tree.md`                        | Complex if/then flows                               |
-| `checklist.md`                            | QC, verification                                    |
+| Template                                    | Use For                                               |
+|---------------------------------------------|-------------------------------------------------------|
+| `runbook.md`                                | Incidents, emergencies, on-call                       |
+| `standard-sop.md`                           | Any repeatable process                                |
+| `how-to-guide.md`                           | One-off tasks, setup                                  |
+| `onboarding-guide.md`                       | New person ramping up                                 |
+| `decision-tree.md`                          | Complex if/then flows                                 |
+| `checklist.md`                              | QC, verification                                      |
 
 ### SOP Writing Principles
 

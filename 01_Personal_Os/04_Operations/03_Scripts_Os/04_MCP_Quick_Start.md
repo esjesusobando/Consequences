@@ -46,20 +46,20 @@ use: Read/write files in your project
 
 ## 📋 COMMANDS RÁPIDOS
 
-| Para...              | Usá...              | Ejemplo                             |
-|----------------------|---------------------|-------------------------------------|
-| Leer docs de lib     | `context7`          | "How does langgraph work?"          |
-| Buscar mis notas     | `obsidian`          | "What did I learn about X?"         |
-| Buscar en web        | `exa`               | "Latest news about AI agents"       |
-| Scraping             | `firecrawl-mcp`     | "Extract all Blog posts from X"     |
-| Imágenes IA          | `nanobanana`        | "Generate a logo for X"             |
-| Diagramas            | `excalidraw`        | "Create flow diagram for X"         |
-| Issues/PRs           | `github`            | "Create issue about X"              |
-| Browser              | `Playwright`        | "Click button on X"                 |
-| Database             | `supabase`          | "Query table X"                     |
-| Workflows            | `n8n-mcp`           | "Run workflow X"                    |
-| Testing              | `TestSprite`        | "Run E2E test for X"                |
-| Notes rápido         | `qmd`               | "Save quick note X"                 |
+| Para...                | Usá...                | Ejemplo                               |
+|------------------------|-----------------------|---------------------------------------|
+| Leer docs de lib       | `context7`            | "How does langgraph work?"            |
+| Buscar mis notas       | `obsidian`            | "What did I learn about X?"           |
+| Buscar en web          | `exa`                 | "Latest news about AI agents"         |
+| Scraping               | `firecrawl-mcp`       | "Extract all Blog posts from X"       |
+| Imágenes IA            | `nanobanana`          | "Generate a logo for X"               |
+| Diagramas              | `excalidraw`          | "Create flow diagram for X"           |
+| Issues/PRs             | `github`              | "Create issue about X"                |
+| Browser                | `Playwright`          | "Click button on X"                   |
+| Database               | `supabase`            | "Query table X"                       |
+| Workflows              | `n8n-mcp`             | "Run workflow X"                      |
+| Testing                | `TestSprite`          | "Run E2E test for X"                  |
+| Notes rápido           | `qmd`                 | "Save quick note X"                   |
 
 ---
 
@@ -114,12 +114,12 @@ NOTION_API_KEY=your_key_here
 
 ## 🎯 ERROR COMMONES
 
-| Error                   | Fix                                  |
-|-------------------------|--------------------------------------|
-| "MCP not found"         | Restart AI tool, check .mcp.json     |
-| "API key missing"       | Check .env file                      |
-| "Timeout"               | Some MCPs are slow, be patient       |
-| "Permission denied"     | Check token permissions              |
+| Error                     | Fix                                    |
+|---------------------------|----------------------------------------|
+| "MCP not found"           | Restart AI tool, check .mcp.json       |
+| "API key missing"         | Check .env file                        |
+| "Timeout"                 | Some MCPs are slow, be patient         |
+| "Permission denied"       | Check token permissions                |
 
 ---
 

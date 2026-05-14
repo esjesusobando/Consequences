@@ -25,12 +25,12 @@ Dharmesh Shah (CTO de HubSpot) dio una masterclass en INBOUND '25 sobre los fund
 
 Todo lo que quieres que AI sepa tiene que entrar en el **context window**. El truco es poner las cosas correctas:
 
-| Letra               | Significa               | Ejemplo                                   |
-|---------------------|-------------------------|-------------------------------------------|
-| **P**               | Prompt                  | Lo que le escribes                        |
-| **A**               | Archive                 | Historial del chat                        |
-| **R**               | Resources               | PDFs, imágenes, datos                     |
-| **T**               | Tools                   | Browser, APIs, bases de datos             |
+| Letra                 | Significa                 | Ejemplo                                     |
+|-----------------------|---------------------------|---------------------------------------------|
+| **P**                 | Prompt                    | Lo que le escribes                          |
+| **A**                 | Archive                   | Historial del chat                          |
+| **R**                 | Resources                 | PDFs, imágenes, datos                       |
+| **T**                 | Tools                     | Browser, APIs, bases de datos               |
 
 **Metafora**: El context window es como los Notes que le dejas a tu yo del futuro en "Memento".
 

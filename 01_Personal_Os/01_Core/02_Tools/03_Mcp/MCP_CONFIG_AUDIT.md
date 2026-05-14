@@ -14,12 +14,12 @@ Este documento audita y documenta el estado de las configuraciones MCP en el pro
 
 ## 🔍 Configs Analizadas
 
-| ID    | Config             | Path                                                | Servers   | Auth Type             | Status   |
-|-------|--------------------|-----------------------------------------------------|-----------|-----------------------|----------|
-| **A** | Root               | `.mcp.json`                                         | 38        | `${VAR}` placeholders | ✅ ACTIVO |
-| **B** | Backup Claude Code | `01_Core/02_Tools/03_Mcp/01_Claude_Code/mcp.json`   | 30        | HARDCODED             | 🔴 BACKUP |
-| **C** | OpenCode Global    | `~/.config/opencode/opencode.json`                  | 36        | HARDCODED             | 🔴 BACKUP |
-| **D** | OpenCode Project   | `01_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json` | 36        | HARDCODED             | 🔴 BACKUP |
+| ID      | Config               | Path                                                  | Servers     | Auth Type               | Status     |
+|---------|----------------------|-------------------------------------------------------|-------------|-------------------------|------------|
+| **A**   | Root                 | `.mcp.json`                                           | 38          | `${VAR}` placeholders   | ✅ ACTIVO   |
+| **B**   | Backup Claude Code   | `01_Core/02_Tools/03_Mcp/01_Claude_Code/mcp.json`     | 30          | HARDCODED               | 🔴 BACKUP   |
+| **C**   | OpenCode Global      | `~/.config/opencode/opencode.json`                    | 36          | HARDCODED               | 🔴 BACKUP   |
+| **D**   | OpenCode Project     | `01_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json`   | 36          | HARDCODED               | 🔴 BACKUP   |
 
 ---
 
@@ -27,11 +27,11 @@ Este documento audita y documenta el estado de las configuraciones MCP en el pro
 
 ### 🔴 Credenciales Hardcodeadas
 
-| Config   | Severity   | Issue                            |
-|----------|------------|----------------------------------|
-| **B**    | 🔴 CRITICAL | API keys visibles en texto plano |
-| **C**    | 🔴 CRITICAL | API keys visibles en texto plano |
-| **D**    | 🔴 CRITICAL | API keys visibles en texto plano |
+| Config     | Severity     | Issue                              |
+|------------|--------------|------------------------------------|
+| **B**      | 🔴 CRITICAL   | API keys visibles en texto plano   |
+| **C**      | 🔴 CRITICAL   | API keys visibles en texto plano   |
+| **D**      | 🔴 CRITICAL   | API keys visibles en texto plano   |
 
 **Recomendación:** Usar `.mcp.json` (root) como config activa. Las otras son backups.
 
@@ -41,12 +41,12 @@ Este documento audita y documenta el estado de las configuraciones MCP en el pro
 
 ### Server Count Discrepancy
 
-| Config             | Servers   | Delta vs Root   |
-|--------------------|-----------|-----------------|
-| Root (`.mcp.json`) | 38        | —               |
-| Backup Claude Code | 30        | -8              |
-| OpenCode Global    | 36        | -2              |
-| OpenCode Project   | 36        | -2              |
+| Config               | Servers     | Delta vs Root     |
+|----------------------|-------------|-------------------|
+| Root (`.mcp.json`)   | 38          | —                 |
+| Backup Claude Code   | 30          | -8                |
+| OpenCode Global      | 36          | -2                |
+| OpenCode Project     | 36          | -2                |
 
 ### Servers Únicos por Config
 
@@ -79,10 +79,10 @@ Este documento audita y documenta el estado de las configuraciones MCP en el pro
 
 ### 1. Naming Mismatch: `@magicuidesign/mcp`
 
-| Config   | Nombre                            | Transport   |
-|----------|-----------------------------------|-------------|
-| Root     | `@magicuidesign/mcp` (slash)      | stdio       |
-| OpenCode | `@magicuidesign_mcp` (underscore) | stdio       |
+| Config     | Nombre                              | Transport     |
+|------------|-------------------------------------|---------------|
+| Root       | `@magicuidesign/mcp` (slash)        | stdio         |
+| OpenCode   | `@magicuidesign_mcp` (underscore)   | stdio         |
 
 **Impacto:** Puede causar que uno de los dos no cargue correctamente.
 
@@ -90,9 +90,9 @@ Este documento audita y documenta el estado de las configuraciones MCP en el pro
 
 ### 2. Duplicate Entry: `eagle-mcp`
 
-| Config   | Entry 1                       | Entry 2                   |
-|----------|-------------------------------|---------------------------|
-| Root     | `eagle-mcp` (localhost:41596) | `eagle` (localhost:41596) |
+| Config     | Entry 1                         | Entry 2                     |
+|------------|---------------------------------|-----------------------------|
+| Root       | `eagle-mcp` (localhost:41596)   | `eagle` (localhost:41596)   |
 
 **Impacto:** Entry duplicada apuntando al mismo servidor.
 
@@ -100,10 +100,10 @@ Este documento audita y documenta el estado de las configuraciones MCP en el pro
 
 ### 3. Obsidian Duplicado
 
-| Config   | Entry                     | Vault              |
-|----------|---------------------------|--------------------|
-| Root     | `mcp-obsidian`            | `AI Strong Bunker` |
-| Root     | `obsidian-api` (failover) | `AI Strong Bunker` |
+| Config     | Entry                       | Vault                |
+|------------|-----------------------------|----------------------|
+| Root       | `mcp-obsidian`              | `AI Strong Bunker`   |
+| Root       | `obsidian-api` (failover)   | `AI Strong Bunker`   |
 
 **Impacto:** Dos entries para el mismo vault.
 
@@ -111,10 +111,10 @@ Este documento audita y documenta el estado de las configuraciones MCP en el pro
 
 ### 4. Engram Path Difference
 
-| Config   | Command                            | Args                       |
-|----------|------------------------------------|----------------------------|
-| Root     | `engram`                           | `["mcp"]`                  |
-| OpenCode | `C:\Users\sebas\go\bin\engram.exe` | `["mcp", "--tools=agent"]` |
+| Config     | Command                              | Args                         |
+|------------|--------------------------------------|------------------------------|
+| Root       | `engram`                             | `["mcp"]`                    |
+| OpenCode   | `C:\Users\sebas\go\bin\engram.exe`   | `["mcp", "--tools=agent"]`   |
 
 **Impacto:** Comportamiento diferenciado entre herramientas.
 
@@ -126,11 +126,11 @@ Este documento audita y documenta el estado de las configuraciones MCP en el pro
 
 ### Duplicados Identificados
 
-| Location                                 | Content                                          | Status   |
-|------------------------------------------|--------------------------------------------------|----------|
-| `.claude/skills-lock.json`               | 4 skills (find-skills, mcp-builder, prd, shadcn) | ✅        |
-| `03_Mcp/skills-lock.json`                | **IDENTICAL** — mismo contenido                  | ✅        |
-| `Archive/curso-ai-devs/skills-lock.json` | **DIFFERENT** — skills diferentes                | ✅        |
+| Location                                   | Content                                            | Status     |
+|--------------------------------------------|----------------------------------------------------|------------|
+| `.claude/skills-lock.json`                 | 4 skills (find-skills, mcp-builder, prd, shadcn)   | ✅          |
+| `03_Mcp/skills-lock.json`                  | **IDENTICAL** — mismo contenido                    | ✅          |
+| `Archive/curso-ai-devs/skills-lock.json`   | **DIFFERENT** — skills diferentes                  | ✅          |
 
 **Nota:** Los dos primeros son idénticos. El tercero es de un contexto diferente.
 
@@ -157,13 +157,13 @@ Este documento audita y documenta el estado de las configuraciones MCP en el pro
 
 ## 📊 Matrix de Compatibilidad
 
-| Feature            | Root   | Backup CC   | OpenCode   | Compatibilidad   |
-|--------------------|--------|-------------|------------|------------------|
-| Placeholder vars   | ✅      | ❌           | ❌          | —                |
-| 38 servers         | ✅      | ❌           | ❌          | —                |
-| @magicuidesign/mcp | ✅      | ❌           | ❌          | ⚠️               |
-| eagle single entry | ❌      | ✅           | ❌          | ⚠️               |
-| engram path        | ⚠️     | ⚠️          | ⚠️         | ⚠️               |
+| Feature              | Root     | Backup CC     | OpenCode     | Compatibilidad     |
+|----------------------|----------|---------------|--------------|--------------------|
+| Placeholder vars     | ✅        | ❌             | ❌            | —                  |
+| 38 servers           | ✅        | ❌             | ❌            | —                  |
+| @magicuidesign/mcp   | ✅        | ❌             | ❌            | ⚠️                 |
+| eagle single entry   | ❌        | ✅             | ❌            | ⚠️                 |
+| engram path          | ⚠️       | ⚠️            | ⚠️           | ⚠️                 |
 
 ---
 

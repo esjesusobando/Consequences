@@ -44,9 +44,9 @@ NO → P2/P3
 
 ## Standup Rules
 
-| Priority                       | Include in Standup?                       | Frequency                          |
-|--------------------------------|-------------------------------------------|------------------------------------|
-| P0                             | ✅ ALWAYS                                  | Daily                              |
-| P1                             | ✅ Max 3                                   | Daily                              |
-| P2                             | ❌ NO                                      | Weekly review                      |
-| P3                             | ❌ NO                                      | Monthly review                     |
+| Priority                         | Include in Standup?                         | Frequency                            |
+|----------------------------------|---------------------------------------------|--------------------------------------|
+| P0                               | ✅ ALWAYS                                    | Daily                                |
+| P1                               | ✅ Max 3                                     | Daily                                |
+| P2                               | ❌ NO                                        | Weekly review                        |
+| P3                               | ❌ NO                                        | Monthly review                       |

@@ -108,12 +108,12 @@ Monthly:
 
 ## 🎯 Uso Directo
 
-| Tool                     | Prompt                                                  |
-|--------------------------|---------------------------------------------------------|
-| GPT                      | Copiar sección "GPT System Prompt"                      |
-| Claude                   | Copiar sección "Claude System Prompt"                   |
-| Custom                   | Usar sección "通用 Mega Prompt"                           |
-| Automation               | Usar sección "Prompt para Autómatization"               |
+| Tool                       | Prompt                                                    |
+|----------------------------|-----------------------------------------------------------|
+| GPT                        | Copiar sección "GPT System Prompt"                        |
+| Claude                     | Copiar sección "Claude System Prompt"                     |
+| Custom                     | Usar sección "通用 Mega Prompt"                             |
+| Automation                 | Usar sección "Prompt para Autómatization"                 |
 
 ---
 

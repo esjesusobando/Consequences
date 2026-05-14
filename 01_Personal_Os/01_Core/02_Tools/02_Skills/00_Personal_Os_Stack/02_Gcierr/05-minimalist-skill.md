@@ -32,44 +32,44 @@ VISUAL_DENSITY [===-------]  3/10    (1=galería de arte, 10=panel de avión)
 
 ### Variante A: Editorial Cálida (Default) 🍎
 
-| Elemento                              | Valor                                  | Uso                                                       |
-|---------------------------------------|----------------------------------------|-----------------------------------------------------------|
-| Bg principal                          | `#F7F6F3`                              | crema tibia, base de página                               |
-| Bg alterno                            | `#FBFBFA`                              | off-white para secciones contiguas                        |
-| Card/panel                            | `#FFFFFF`                              | o `#F9F9F8` para variación                                |
-| Hairline                              | `#EAEAEA`                              | la única estructura visible                               |
-| Texto principal                       | `#111111`                              | negro apagado, nunca #000                                 |
-| Texto sec.                            | `#6B6B6B`                              | gris medio templado                                       |
+| Elemento                                | Valor                                    | Uso                                                         |
+|-----------------------------------------|------------------------------------------|-------------------------------------------------------------|
+| Bg principal                            | `#F7F6F3`                                | crema tibia, base de página                                 |
+| Bg alterno                              | `#FBFBFA`                                | off-white para secciones contiguas                          |
+| Card/panel                              | `#FFFFFF`                                | o `#F9F9F8` para variación                                  |
+| Hairline                                | `#EAEAEA`                                | la única estructura visible                                 |
+| Texto principal                         | `#111111`                                | negro apagado, nunca #000                                   |
+| Texto sec.                              | `#6B6B6B`                                | gris medio templado                                         |
 
 **Acentos pastel ultra-desaturados:**
 
-| Estado                            | Fondo                           | Texto                            |
-|-----------------------------------|---------------------------------|----------------------------------|
-| Error                             | `#FDEBEC`                       | `#D32F2F`                        |
-| Info                              | `#E1F3FE`                       | `#1976D2`                        |
-| Éxito                             | `#EDF3EC`                       | `#388E3C`                        |
-| Pending                           | `#FBF3DB`                       | `#F57C00`                        |
+| Estado                              | Fondo                             | Texto                              |
+|-------------------------------------|-----------------------------------|------------------------------------|
+| Error                               | `#FDEBEC`                         | `#D32F2F`                          |
+| Info                                | `#E1F3FE`                         | `#1976D2`                          |
+| Éxito                               | `#EDF3EC`                         | `#388E3C`                          |
+| Pending                             | `#FBF3DB`                         | `#F57C00`                          |
 
 ---
 
 ### Variante B: Zinc Frío (SaaS / Framer)
 
-| Elemento                              | Valor Light                             | Valor Dark                              |
-|---------------------------------------|-----------------------------------------|-----------------------------------------|
-| Bg principal                          | `bg-zinc-50`                            | `bg-zinc-950`                           |
-| Bg alterno                            | `bg-zinc-100`                           | `bg-zinc-900`                           |
-| Card/panel                            | `bg-white`                              | `bg-zinc-900`                           |
-| Hairline                              | `border-zinc-200`                       | `border-zinc-800`                       |
-| Texto principal                       | `text-zinc-900`                         | `text-zinc-100`                         |
-| Texto sec.                            | `text-zinc-500`                         | `text-zinc-400`                         |
+| Elemento                                | Valor Light                               | Valor Dark                                |
+|-----------------------------------------|-------------------------------------------|-------------------------------------------|
+| Bg principal                            | `bg-zinc-50`                              | `bg-zinc-950`                             |
+| Bg alterno                              | `bg-zinc-100`                             | `bg-zinc-900`                             |
+| Card/panel                              | `bg-white`                                | `bg-zinc-900`                             |
+| Hairline                                | `border-zinc-200`                         | `border-zinc-800`                         |
+| Texto principal                         | `text-zinc-900`                           | `text-zinc-100`                           |
+| Texto sec.                              | `text-zinc-500`                           | `text-zinc-400`                           |
 
 **Acentos:**
 
-| Estado                            | Light                             | Dark                              |
-|-----------------------------------|-----------------------------------|-----------------------------------|
-| Éxito                             | `emerald-500`                     | `emerald-400`                     |
-| Error                             | `rose-500`                        | `rose-400`                        |
-| Info                              | `sky-500`                         | `sky-400`                         |
+| Estado                              | Light                               | Dark                                |
+|-------------------------------------|-------------------------------------|-------------------------------------|
+| Éxito                               | `emerald-500`                       | `emerald-400`                       |
+| Error                               | `rose-500`                          | `rose-400`                          |
+| Info                                | `sky-500`                           | `sky-400`                           |
 
 ---
 
@@ -77,22 +77,22 @@ VISUAL_DENSITY [===-------]  3/10    (1=galería de arte, 10=panel de avión)
 
 > **Regla especial:** No usar Serif. 100% San Francisco. Solo Serif permitted en **hero/headlines** si el usuario lo pide explícitamente.
 
-| Elemento                              | Valor Light                             | Valor Dark                              |
-|---------------------------------------|-----------------------------------------|-----------------------------------------|
-| Bg principal                          | `#FFFFFF`                               | `#000000`                               |
-| Bg alterno                            | `#F5F5F5`                               | `#0A0A0A`                               |
-| Card/panel                            | `#FFFFFF`                               | `#1A1A1A`                               |
-| Hairline                              | `#E5E5E5`                               | `#333333`                               |
-| Texto principal                       | `#000000`                               | `#FFFFFF`                               |
-| Texto sec.                            | `#6E6E6E`                               | `#8E8E8E`                               |
+| Elemento                                | Valor Light                               | Valor Dark                                |
+|-----------------------------------------|-------------------------------------------|-------------------------------------------|
+| Bg principal                            | `#FFFFFF`                                 | `#000000`                                 |
+| Bg alterno                              | `#F5F5F5`                                 | `#0A0A0A`                                 |
+| Card/panel                              | `#FFFFFF`                                 | `#1A1A1A`                                 |
+| Hairline                                | `#E5E5E5`                                 | `#333333`                                 |
+| Texto principal                         | `#000000`                                 | `#FFFFFF`                                 |
+| Texto sec.                              | `#6E6E6E`                                 | `#8E8E8E`                                 |
 
 **Acentos Apple:**
 
-| Estado                            | Light                          | Dark                           |
-|-----------------------------------|--------------------------------|--------------------------------|
-| Éxito                             | `#34C759`                      | `#30D158`                      |
-| Error                             | `#FF3B30`                      | `#FF453A`                      |
-| Info                              | `#007AFF`                      | `#0A84FF`                      |
+| Estado                              | Light                            | Dark                             |
+|-------------------------------------|----------------------------------|----------------------------------|
+| Éxito                               | `#34C759`                        | `#30D158`                        |
+| Error                               | `#FF3B30`                        | `#FF453A`                        |
+| Info                                | `#007AFF`                        | `#0A84FF`                        |
 
 ---
 
@@ -172,22 +172,22 @@ El mono hace de "kicker" editorial, el serif carga el drama, el sans acompaña s
 
 > Esta tabla consolida todos los elementos prohibited. **Variante A (Editorial)** aplica por defecto. Las variantes B y C tienen reglas adicionales.
 
-| #                       | Categoría                             | Prohibido                                                                         | Razón                                                           | Variante affected                     |
-|-------------------------|---------------------------------------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------|---------------------------------------|
-| 1                       | Tipografía                            | Inter, Roboto, Open Sans                                                          | Identidad SaaS genérica, ya quemadas                            | A, B                                  |
-| 2                       | Sombras                               | `shadow-md`, `shadow-lg`, `shadow-xl`                                             | Ruido visual, estética "bootstrap 2016"                         | Todas                                 |
-| 3                       | Color de fondo                        | Hero azul, verde o rojo saturado                                                  | Estampa de plantilla de Webflow                                 | A                                     |
-| 4                       | Gradientes                            | Neón, glassmorphism fuerte, degradados marca                                      | Tendencia corto-placista                                        | Todas                                 |
-| 5                       | Radios                                | `rounded-full` en cards y contenedores grandes                                    | Lee como "pastilla de farmacia"                                 | A, B                                  |
-| 6                       | Iconografía                           | Lucide / Feather / Heroicons por defecto                                          | Demasiado vistos, restan carácter                               | A                                     |
-| 7                       | Contenido                             | Emojis, lorem ipsum, "John Doe", "Acme Corp"                                      | Maqueta sin contexto, descartable                               | Todas                                 |
-| 8                       | Copywriting                           | "Eleva", "Impulsa", "Desata", "Game-changer"                                      | Clichés IA, lenguaje de landing mediocre                        | Todas                                 |
-| 9                       | Negros                                | `#000000` puro en texto                                                           | Corta los ojos, rompe la calidez del lienzo                     | A                                     |
-| 10                      | Frivolar                              | Sombras proyectadas, degradados, bordes redondeados excesivos                     | UI plana/neo-flat                                               | B, C                                  |
-| 11                      | Colores vibrantes                     | Botones coloridos, elementos de UI saturados                                      | Botones deben ser negros o grises neutros                       | B, C                                  |
-| 12                      | Serif en UI                           | Cualquier uso de Serif fuera del hero/headlines                                   | Apple Pure no permite Serif                                     | C                                     |
-| 13                      | Decoración                            | Iconos decorativos, solo wireframe para acciones esenciales                       | Solo iconos de trazo fino                                       | B, C                                  |
-| 14                      | Varianza alta                         | Bordes complejos, backgrounds múltiples                                           | Orden casi absoluto                                             | C                                     |
+| #                         | Categoría                               | Prohibido                                                                           | Razón                                                             | Variante affected                       |
+|---------------------------|-----------------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------|
+| 1                         | Tipografía                              | Inter, Roboto, Open Sans                                                            | Identidad SaaS genérica, ya quemadas                              | A, B                                    |
+| 2                         | Sombras                                 | `shadow-md`, `shadow-lg`, `shadow-xl`                                               | Ruido visual, estética "bootstrap 2016"                           | Todas                                   |
+| 3                         | Color de fondo                          | Hero azul, verde o rojo saturado                                                    | Estampa de plantilla de Webflow                                   | A                                       |
+| 4                         | Gradientes                              | Neón, glassmorphism fuerte, degradados marca                                        | Tendencia corto-placista                                          | Todas                                   |
+| 5                         | Radios                                  | `rounded-full` en cards y contenedores grandes                                      | Lee como "pastilla de farmacia"                                   | A, B                                    |
+| 6                         | Iconografía                             | Lucide / Feather / Heroicons por defecto                                            | Demasiado vistos, restan carácter                                 | A                                       |
+| 7                         | Contenido                               | Emojis, lorem ipsum, "John Doe", "Acme Corp"                                        | Maqueta sin contexto, descartable                                 | Todas                                   |
+| 8                         | Copywriting                             | "Eleva", "Impulsa", "Desata", "Game-changer"                                        | Clichés IA, lenguaje de landing mediocre                          | Todas                                   |
+| 9                         | Negros                                  | `#000000` puro en texto                                                             | Corta los ojos, rompe la calidez del lienzo                       | A                                       |
+| 10                        | Frivolar                                | Sombras proyectadas, degradados, bordes redondeados excesivos                       | UI plana/neo-flat                                                 | B, C                                    |
+| 11                        | Colores vibrantes                       | Botones coloridos, elementos de UI saturados                                        | Botones deben ser negros o grises neutros                         | B, C                                    |
+| 12                        | Serif en UI                             | Cualquier uso de Serif fuera del hero/headlines                                     | Apple Pure no permite Serif                                       | C                                       |
+| 13                        | Decoración                              | Iconos decorativos, solo wireframe para acciones esenciales                         | Solo iconos de trazo fino                                         | B, C                                    |
+| 14                        | Varianza alta                           | Bordes complejos, backgrounds múltiples                                             | Orden casi absoluto                                               | C                                       |
 
 **Regla de oro (Variante A):** nunca más del 5% de la pantalla cubierta por acento. El acento se reserva para un badge, una celda de tabla, una etiqueta. El resto respira en crema.
 

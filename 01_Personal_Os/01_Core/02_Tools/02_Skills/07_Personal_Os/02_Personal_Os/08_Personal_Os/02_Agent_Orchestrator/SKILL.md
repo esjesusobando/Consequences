@@ -108,9 +108,9 @@ After all agents execute, create `MULTI_AGENT_<TASK>_REPORT.md`:
 
 ## Agent Tasks
 
-| Agent                     | Task                     | Status                   | Terminal                       |
-|---------------------------|--------------------------|--------------------------|--------------------------------|
-| Agent 1                   | <Task>                   | ✅                        | CMD Window 1                   |
+| Agent                       | Task                       | Status                     | Terminal                         |
+|-----------------------------|----------------------------|----------------------------|----------------------------------|
+| Agent 1                     | <Task>                     | ✅                          | CMD Window 1                     |
 
 ...
 

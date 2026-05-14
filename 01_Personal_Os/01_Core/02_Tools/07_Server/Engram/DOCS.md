@@ -151,18 +151,18 @@ engram help               Show help
 
 ### Environment Variables
 
-| Variable                                                | Description                                                                                      | Default                                                                                                |
-|---------------------------------------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| `ENGRAM_DATA_DIR`                                       | Override data directory                                                                          | `~/.engram`                                                                                            |
-| `ENGRAM_PORT`                                           | Override HTTP server port                                                                        | `7437`                                                                                                 |
-| `ENGRAM_REMOTE_URL`                                     | Cloud server URL for `--remote` flag                                                             | (none)                                                                                                 |
-| `ENGRAM_TOKEN`                                          | Cloud auth token for `--token` flag                                                              | (none)                                                                                                 |
-| `ENGRAM_DATABASE_URL`                                   | Postgres DSN for `engram cloud serve` (preferred)                                                | (none)                                                                                                 |
-| `ENGRAM_JWT_SECRET`                                     | JWT signing secret for `engram cloud serve` (preferred, >= 32 chars)                             | (none)                                                                                                 |
-| `ENGRAM_CLOUD_DSN`                                      | Legacy alias for `ENGRAM_DATABASE_URL`                                                           | `postgres://engram:engram_dev@localhost:5433/engram_cloud?sslmode=disable`                             |
-| `ENGRAM_CLOUD_JWT_SECRET`                               | Legacy alias for `ENGRAM_JWT_SECRET`                                                             | (none)                                                                                                 |
-| `ENGRAM_CLOUD_CORS_ORIGINS`                             | Comma-separated CORS origins                                                                     | `*`                                                                                                    |
-| `ENGRAM_CLOUD_MAX_POOL`                                 | Max Postgres connection pool size                                                                | `10`                                                                                                   |
+| Variable                                                  | Description                                                                                        | Default                                                                                                  |
+|-----------------------------------------------------------|----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| `ENGRAM_DATA_DIR`                                         | Override data directory                                                                            | `~/.engram`                                                                                              |
+| `ENGRAM_PORT`                                             | Override HTTP server port                                                                          | `7437`                                                                                                   |
+| `ENGRAM_REMOTE_URL`                                       | Cloud server URL for `--remote` flag                                                               | (none)                                                                                                   |
+| `ENGRAM_TOKEN`                                            | Cloud auth token for `--token` flag                                                                | (none)                                                                                                   |
+| `ENGRAM_DATABASE_URL`                                     | Postgres DSN for `engram cloud serve` (preferred)                                                  | (none)                                                                                                   |
+| `ENGRAM_JWT_SECRET`                                       | JWT signing secret for `engram cloud serve` (preferred, >= 32 chars)                               | (none)                                                                                                   |
+| `ENGRAM_CLOUD_DSN`                                        | Legacy alias for `ENGRAM_DATABASE_URL`                                                             | `postgres://engram:engram_dev@localhost:5433/engram_cloud?sslmode=disable`                               |
+| `ENGRAM_CLOUD_JWT_SECRET`                                 | Legacy alias for `ENGRAM_JWT_SECRET`                                                               | (none)                                                                                                   |
+| `ENGRAM_CLOUD_CORS_ORIGINS`                               | Comma-separated CORS origins                                                                       | `*`                                                                                                      |
+| `ENGRAM_CLOUD_MAX_POOL`                                   | Max Postgres connection pool size                                                                  | `10`                                                                                                     |
 
 ---
 
@@ -174,16 +174,16 @@ Built with [Bubbletea](https://github.com/charmbracelet/bubbletea) v1, [Lipgloss
 
 ### Screens
 
-| Screen                                              | Description                                                                                   |
-|-----------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| **Dashboard**                                       | Stats overview (sessions, observations, prompts, projects) + menu                             |
-| **Search**                                          | FTS5 text search with text input                                                              |
-| **Search Results**                                  | Browsable results list from search                                                            |
-| **Recent Observations**                             | Browse all observations, newest first                                                         |
-| **Observation Detail**                              | Full content of a single observation, scrollable                                              |
-| **Timeline**                                        | Chronological context around an observation (before/after)                                    |
-| **Sessions**                                        | Browse all sessions                                                                           |
-| **Session Detail**                                  | Observations within a specific session                                                        |
+| Screen                                                | Description                                                                                     |
+|-------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| **Dashboard**                                         | Stats overview (sessions, observations, prompts, projects) + menu                               |
+| **Search**                                            | FTS5 text search with text input                                                                |
+| **Search Results**                                    | Browsable results list from search                                                              |
+| **Recent Observations**                               | Browse all observations, newest first                                                           |
+| **Observation Detail**                                | Full content of a single observation, scrollable                                                |
+| **Timeline**                                          | Chronological context around an observation (before/after)                                      |
+| **Sessions**                                          | Browse all sessions                                                                             |
+| **Session Detail**                                    | Observations within a specific session                                                          |
 
 ### Navigation
 
@@ -749,43 +749,43 @@ services:
 
 **Cloud HTTP API Endpoints**:
 
-| Method                               | Path                                                | Auth                               | Description                                                                            |
-|--------------------------------------|-----------------------------------------------------|------------------------------------|----------------------------------------------------------------------------------------|
-| `GET`                                | `/health`                                           | No                                 | Health check (`{"status":"ok","service":"engram-cloud"}`)                              |
-| `POST`                               | `/auth/register`                                    | No                                 | Register new user (username, email, password)                                          |
-| `POST`                               | `/auth/login`                                       | No                                 | Login (username or email, password) -> JWT tokens                                      |
-| `POST`                               | `/auth/refresh`                                     | No                                 | Refresh access token                                                                   |
-| `POST`                               | `/auth/api-key`                                     | Yes                                | Generate API key (`eng_`-prefixed)                                                     |
-| `DELETE`                             | `/auth/api-key`                                     | Yes                                | Revoke API key                                                                         |
-| `POST`                               | `/sync/mutations/push`                              | Yes                                | Push local mutations (array of entity/op/payload)                                      |
-| `GET`                                | `/sync/mutations/pull`                              | Yes                                | Pull remote mutations (`?since_seq=N&limit=M`)                                         |
-| `POST`                               | `/sync/push`                                        | Yes                                | Push a chunk — legacy (sessions, observations, prompts)                                |
-| `GET`                                | `/sync/pull`                                        | Yes                                | Get chunk manifest — legacy                                                            |
-| `GET`                                | `/sync/pull/{chunk_id}`                             | Yes                                | Download a specific chunk — legacy                                                     |
-| `GET`                                | `/sync/search`                                      | Yes                                | Full-text search (`?q=QUERY&type=&project=&scope=&limit=`)                             |
-| `GET`                                | `/sync/context`                                     | Yes                                | Formatted context (`?project=&scope=`)                                                 |
+| Method                                 | Path                                                  | Auth                                 | Description                                                                              |
+|----------------------------------------|-------------------------------------------------------|--------------------------------------|------------------------------------------------------------------------------------------|
+| `GET`                                  | `/health`                                             | No                                   | Health check (`{"status":"ok","service":"engram-cloud"}`)                                |
+| `POST`                                 | `/auth/register`                                      | No                                   | Register new user (username, email, password)                                            |
+| `POST`                                 | `/auth/login`                                         | No                                   | Login (username or email, password) -> JWT tokens                                        |
+| `POST`                                 | `/auth/refresh`                                       | No                                   | Refresh access token                                                                     |
+| `POST`                                 | `/auth/api-key`                                       | Yes                                  | Generate API key (`eng_`-prefixed)                                                       |
+| `DELETE`                               | `/auth/api-key`                                       | Yes                                  | Revoke API key                                                                           |
+| `POST`                                 | `/sync/mutations/push`                                | Yes                                  | Push local mutations (array of entity/op/payload)                                        |
+| `GET`                                  | `/sync/mutations/pull`                                | Yes                                  | Pull remote mutations (`?since_seq=N&limit=M`)                                           |
+| `POST`                                 | `/sync/push`                                          | Yes                                  | Push a chunk — legacy (sessions, observations, prompts)                                  |
+| `GET`                                  | `/sync/pull`                                          | Yes                                  | Get chunk manifest — legacy                                                              |
+| `GET`                                  | `/sync/pull/{chunk_id}`                               | Yes                                  | Download a specific chunk — legacy                                                       |
+| `GET`                                  | `/sync/search`                                        | Yes                                  | Full-text search (`?q=QUERY&type=&project=&scope=&limit=`)                               |
+| `GET`                                  | `/sync/context`                                       | Yes                                  | Formatted context (`?project=&scope=`)                                                   |
 
 **Dashboard Routes** (browser, served from `engram cloud serve`):
 
-| Method                               | Path                                                          | Auth                                     | Description                                                                                    |
-|--------------------------------------|---------------------------------------------------------------|------------------------------------------|------------------------------------------------------------------------------------------------|
-| `GET`                                | `/dashboard/health`                                           | No                                       | Dashboard health check (`{"status":"ok","subsystem":"dashboard"}`)                             |
-| `GET`                                | `/dashboard/login`                                            | No                                       | Login page (HTML form)                                                                         |
-| `POST`                               | `/dashboard/login`                                            | No                                       | Submit login (sets `engram_session` cookie)                                                    |
-| `POST`                               | `/dashboard/logout`                                           | No                                       | Clear session cookie, redirect to login                                                        |
-| `GET`                                | `/dashboard/static/*`                                         | No                                       | Embedded static assets (htmx.min.js, CSS)                                                      |
-| `GET`                                | `/dashboard/`                                                 | Cookie                                   | Dashboard overview (project stats, enrolled projects)                                          |
-| `GET`                                | `/dashboard/stats`                                            | Cookie                                   | Project stats partial (htmx)                                                                   |
-| `GET`                                | `/dashboard/browser`                                          | Cookie                                   | Knowledge browser (observations, sessions, prompts)                                            |
-| `GET`                                | `/dashboard/browser/observations`                             | Cookie                                   | Observations partial (htmx, `?project=&q=`)                                                    |
-| `GET`                                | `/dashboard/browser/sessions`                                 | Cookie                                   | Sessions partial (htmx, `?project=`)                                                           |
-| `GET`                                | `/dashboard/browser/prompts`                                  | Cookie                                   | Prompts partial (htmx, `?project=&q=`)                                                         |
-| `GET`                                | `/dashboard/projects`                                         | Cookie                                   | Projects list with stats                                                                       |
-| `GET`                                | `/dashboard/projects/{name}`                                  | Cookie                                   | Project detail (sessions, observations, prompts)                                               |
-| `GET`                                | `/dashboard/contributors`                                     | Cookie                                   | Contributors list with per-user stats                                                          |
-| `GET`                                | `/dashboard/admin`                                            | Cookie+Admin                             | Admin overview (system health, user count)                                                     |
-| `GET`                                | `/dashboard/admin/users`                                      | Cookie+Admin                             | User management (list all users, API key status)                                               |
-| `GET`                                | `/dashboard/admin/health`                                     | Cookie+Admin                             | System health detail (DB version, table counts)                                                |
+| Method                                 | Path                                                            | Auth                                       | Description                                                                                      |
+|----------------------------------------|-----------------------------------------------------------------|--------------------------------------------|--------------------------------------------------------------------------------------------------|
+| `GET`                                  | `/dashboard/health`                                             | No                                         | Dashboard health check (`{"status":"ok","subsystem":"dashboard"}`)                               |
+| `GET`                                  | `/dashboard/login`                                              | No                                         | Login page (HTML form)                                                                           |
+| `POST`                                 | `/dashboard/login`                                              | No                                         | Submit login (sets `engram_session` cookie)                                                      |
+| `POST`                                 | `/dashboard/logout`                                             | No                                         | Clear session cookie, redirect to login                                                          |
+| `GET`                                  | `/dashboard/static/*`                                           | No                                         | Embedded static assets (htmx.min.js, CSS)                                                        |
+| `GET`                                  | `/dashboard/`                                                   | Cookie                                     | Dashboard overview (project stats, enrolled projects)                                            |
+| `GET`                                  | `/dashboard/stats`                                              | Cookie                                     | Project stats partial (htmx)                                                                     |
+| `GET`                                  | `/dashboard/browser`                                            | Cookie                                     | Knowledge browser (observations, sessions, prompts)                                              |
+| `GET`                                  | `/dashboard/browser/observations`                               | Cookie                                     | Observations partial (htmx, `?project=&q=`)                                                      |
+| `GET`                                  | `/dashboard/browser/sessions`                                   | Cookie                                     | Sessions partial (htmx, `?project=`)                                                             |
+| `GET`                                  | `/dashboard/browser/prompts`                                    | Cookie                                     | Prompts partial (htmx, `?project=&q=`)                                                           |
+| `GET`                                  | `/dashboard/projects`                                           | Cookie                                     | Projects list with stats                                                                         |
+| `GET`                                  | `/dashboard/projects/{name}`                                    | Cookie                                     | Project detail (sessions, observations, prompts)                                                 |
+| `GET`                                  | `/dashboard/contributors`                                       | Cookie                                     | Contributors list with per-user stats                                                            |
+| `GET`                                  | `/dashboard/admin`                                              | Cookie+Admin                               | Admin overview (system health, user count)                                                       |
+| `GET`                                  | `/dashboard/admin/users`                                        | Cookie+Admin                               | User management (list all users, API key status)                                                 |
+| `GET`                                  | `/dashboard/admin/health`                                       | Cookie+Admin                               | System health detail (DB version, table counts)                                                  |
 
 **Security Notes**:
 - `ENGRAM_JWT_SECRET` must be at least 32 characters. Use a cryptographically random string in production.

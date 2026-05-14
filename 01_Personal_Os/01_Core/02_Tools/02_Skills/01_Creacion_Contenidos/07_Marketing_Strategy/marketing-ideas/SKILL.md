@@ -28,25 +28,25 @@ When asked for marketing ideas:
 
 ## Ideas by Category (Quick Reference)
 
-| Category                                 | Ideas                         | Examples                                                                          |
-|------------------------------------------|-------------------------------|-----------------------------------------------------------------------------------|
-| Content & SEO                            | 1-10                          | Programmatic SEO, Glossary marketing, Content repurposing                         |
-| Competitor                               | 11-13                         | Comparison pages, Marketing jiu-jitsu                                             |
-| Free Tools                               | 14-22                         | Calculators, Generators, Chrome extensions                                        |
-| Paid Ads                                 | 23-34                         | LinkedIn, Google, Retargeting, Podcast ads                                        |
-| Social & Community                       | 35-44                         | LinkedIn audience, Reddit marketing, Short-form video                             |
-| Email                                    | 45-53                         | Founder emails, Onboarding sequences, Win-back                                    |
-| Partnerships                             | 54-64                         | Affiliate programs, Integration marketing, Newsletter swaps                       |
-| Events                                   | 65-72                         | Webinars, Conference speaking, Virtual summits                                    |
-| PR & Media                               | 73-76                         | Press coverage, Documentaries                                                     |
-| Launches                                 | 77-86                         | Product Hunt, Lifetime deals, Giveaways                                           |
-| Product-Led                              | 87-96                         | Viral loops, Powered-by marketing, Free migrations                                |
-| Content Formats                          | 97-109                        | Podcasts, Courses, Annual reports, Year wraps                                     |
-| Unconventional                           | 110-122                       | Awards, Challenges, Guerrilla marketing                                           |
-| Platforms                                | 123-130                       | App marketplaces, Review sites, YouTube                                           |
-| International                            | 131-132                       | Expansion, Price localization                                                     |
-| Developer                                | 133-136                       | DevRel, Certifications                                                            |
-| Audience-Specific                        | 137-139                       | Referrals, Podcast tours, Customer language                                       |
+| Category                                   | Ideas                           | Examples                                                                            |
+|--------------------------------------------|---------------------------------|-------------------------------------------------------------------------------------|
+| Content & SEO                              | 1-10                            | Programmatic SEO, Glossary marketing, Content repurposing                           |
+| Competitor                                 | 11-13                           | Comparison pages, Marketing jiu-jitsu                                               |
+| Free Tools                                 | 14-22                           | Calculators, Generators, Chrome extensions                                          |
+| Paid Ads                                   | 23-34                           | LinkedIn, Google, Retargeting, Podcast ads                                          |
+| Social & Community                         | 35-44                           | LinkedIn audience, Reddit marketing, Short-form video                               |
+| Email                                      | 45-53                           | Founder emails, Onboarding sequences, Win-back                                      |
+| Partnerships                               | 54-64                           | Affiliate programs, Integration marketing, Newsletter swaps                         |
+| Events                                     | 65-72                           | Webinars, Conference speaking, Virtual summits                                      |
+| PR & Media                                 | 73-76                           | Press coverage, Documentaries                                                       |
+| Launches                                   | 77-86                           | Product Hunt, Lifetime deals, Giveaways                                             |
+| Product-Led                                | 87-96                           | Viral loops, Powered-by marketing, Free migrations                                  |
+| Content Formats                            | 97-109                          | Podcasts, Courses, Annual reports, Year wraps                                       |
+| Unconventional                             | 110-122                         | Awards, Challenges, Guerrilla marketing                                             |
+| Platforms                                  | 123-130                         | App marketplaces, Review sites, YouTube                                             |
+| International                              | 131-132                         | Expansion, Price localization                                                       |
+| Developer                                  | 133-136                         | DevRel, Certifications                                                              |
+| Audience-Specific                          | 137-139                         | Referrals, Podcast tours, Customer language                                         |
 
 **For the complete list with descriptions**: See [references/ideas-by-category.md](references/ideas-by-category.md)
 

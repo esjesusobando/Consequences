@@ -85,12 +85,12 @@ Usa: initial image + prompt + settings.
 
 ## Variables para customize
 
-| Variable                      | Descripción                      | Ejemplo                                  |
-|-------------------------------|----------------------------------|------------------------------------------|
-| {HERRAMienta}                 | Tool a usar                      | Midjourney                               |
-| {NIVEL}                       | Nivel de usuario                 | Beginner/Advanced                        |
-| {ESTILO}                      | Estilo visual                    | Photography/Illustration                 |
-| {PROPOSITO}                   | Uso final                        | Social/Print/Web                         |
+| Variable                        | Descripción                        | Ejemplo                                    |
+|---------------------------------|------------------------------------|--------------------------------------------|
+| {HERRAMienta}                   | Tool a usar                        | Midjourney                                 |
+| {NIVEL}                         | Nivel de usuario                   | Beginner/Advanced                          |
+| {ESTILO}                        | Estilo visual                      | Photography/Illustration                   |
+| {PROPOSITO}                     | Uso final                          | Social/Print/Web                           |
 
 ## Examples de uso
 

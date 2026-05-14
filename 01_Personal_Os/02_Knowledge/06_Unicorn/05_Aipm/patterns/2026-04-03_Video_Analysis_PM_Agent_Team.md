@@ -120,12 +120,12 @@ One correction to one agent propagates to rest:
 
 ## Why PMs Are Built for This
 
-| Traditional PM Skill                   | Agent Management Equivalent                                                             |
-|----------------------------------------|-----------------------------------------------------------------------------------------|
-| Problem shaping                        | Agent scoping - define each role through personality file                               |
-| Context curation                       | File engineering - agents build/maintain their own file stacks                          |
-| Stakeholder management                 | Agent coordination - order matters, downstream uses upstream output                     |
-| Feedback                               | Permanent - correction written to files, never give same feedback twice                 |
+| Traditional PM Skill                     | Agent Management Equivalent                                                               |
+|------------------------------------------|-------------------------------------------------------------------------------------------|
+| Problem shaping                          | Agent scoping - define each role through personality file                                 |
+| Context curation                         | File engineering - agents build/maintain their own file stacks                            |
+| Stakeholder management                   | Agent coordination - order matters, downstream uses upstream output                       |
+| Feedback                                 | Permanent - correction written to files, never give same feedback twice                   |
 
 ### Key Insight
 
@@ -137,12 +137,12 @@ One correction to one agent propagates to rest:
 
 ## The Compounding Curve
 
-| Phase                   | Output Quality                    | Time Spent                        |
-|-------------------------|-----------------------------------|-----------------------------------|
-| Day 1                   | Mediocre                          | Fixing everything                 |
-| Day 10                  | Improving                         | Fixing edge cases                 |
-| Day 30                  | 90% ready to ship                 | Reviewing                         |
-| Day 50                  | Mostly done                       | Strategy time                     |
+| Phase                     | Output Quality                      | Time Spent                          |
+|---------------------------|-------------------------------------|-------------------------------------|
+| Day 1                     | Mediocre                            | Fixing everything                   |
+| Day 10                    | Improving                           | Fixing edge cases                   |
+| Day 30                    | 90% ready to ship                   | Reviewing                           |
+| Day 50                    | Mostly done                         | Strategy time                       |
 
 **This is identical to onboarding a human hire:**
 - First month: net negative

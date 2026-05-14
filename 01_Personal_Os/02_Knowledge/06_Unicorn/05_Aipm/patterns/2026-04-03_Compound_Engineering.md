@@ -52,14 +52,14 @@ Multi-agent orchestration pattern where different specialized agents collaborate
 
 ### Compound Skills Available
 
-| Skill                         | Purpose                                                   | Trigger                         |
-|-------------------------------|-----------------------------------------------------------|---------------------------------|
-| ce:brainstorm                 | Collaborative idea generation                             | "brainstorm"                    |
-| ce:plan                       | Transform specs into implementation plans                 | "plan this"                     |
-| ce:work                       | Execute work plans efficiently                            | "work on this"                  |
-| ce:review                     | Code review with multiple personas                        | "review this"                   |
-| ce:compound                   | Document solved problems                                  | "compound this"                 |
-| ce:ideate                     | Generate improvement ideas                                | "improve this"                  |
+| Skill                           | Purpose                                                     | Trigger                           |
+|---------------------------------|-------------------------------------------------------------|-----------------------------------|
+| ce:brainstorm                   | Collaborative idea generation                               | "brainstorm"                      |
+| ce:plan                         | Transform specs into implementation plans                   | "plan this"                       |
+| ce:work                         | Execute work plans efficiently                              | "work on this"                    |
+| ce:review                       | Code review with multiple personas                          | "review this"                     |
+| ce:compound                     | Document solved problems                                    | "compound this"                   |
+| ce:ideate                       | Generate improvement ideas                                  | "improve this"                    |
 
 ### Workflow
 

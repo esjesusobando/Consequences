@@ -8,16 +8,16 @@
 
 ## 🚀 RESUMEN EJECUTIVO
 
-| Métrica                                     | Valor                                          |
-|---------------------------------------------|------------------------------------------------|
-| **Agentes Principales**                     | 12 (Pipeline TDD)                              |
-| **Especialistas**                           | 24                                             |
-| **Perfiles de Negocio**                     | 5 (SOTA: Anthropic)                            |
-| **Skills**                                  | 128+ en 15 categorías                          |
-| **Scripts**                                 | 86+ en 10 Hubs                                 |
-| **Workflows**                               | 24                                             |
-| **Hooks**                                   | 12 (7 activos + Anthropic)                     |
-| **MCPs**                                    | 36 servidores                                  |
+| Métrica                                       | Valor                                            |
+|-----------------------------------------------|--------------------------------------------------|
+| **Agentes Principales**                       | 12 (Pipeline TDD)                                |
+| **Especialistas**                             | 24                                               |
+| **Perfiles de Negocio**                       | 5 (SOTA: Anthropic)                              |
+| **Skills**                                    | 128+ en 15 categorías                            |
+| **Scripts**                                   | 86+ en 10 Hubs                                   |
+| **Workflows**                                 | 24                                               |
+| **Hooks**                                     | 12 (7 activos + Anthropic)                       |
+| **MCPs**                                      | 36 servidores                                    |
 
 ---
 
@@ -27,21 +27,21 @@
 
 > Inspirado en el artículo de Anthropic sobre Harness Design.
 
-| Agente                            | Rol                                                   | Input                           | Output                             |
-|-----------------------------------|-------------------------------------------------------|---------------------------------|------------------------------------|
-| **Planner**                       | 1-4 oraciones → spec completo                         | User prompt                     | Full spec                          |
-| **Generator**                     | Construye feature por feature                         | Spec                            | Código                             |
-| **Evaluator**                     | QA separado (NO self-evaluation!)                     | Running app                     | Bugs + grading                     |
+| Agente                              | Rol                                                     | Input                             | Output                               |
+|-------------------------------------|---------------------------------------------------------|-----------------------------------|--------------------------------------|
+| **Planner**                         | 1-4 oraciones → spec completo                           | User prompt                       | Full spec                            |
+| **Generator**                       | Construye feature por feature                           | Spec                              | Código                               |
+| **Evaluator**                       | QA separado (NO self-evaluation!)                       | Running app                       | Bugs + grading                       |
 
 **Componentes nuevos:**
 
-| Componente                               | Ubicación                                                                                 | Propósito                                  |
-|------------------------------------------|-------------------------------------------------------------------------------------------|--------------------------------------------|
-| **Safety Wrapper**                       | `03_Scripts_Os/11_Anthropic_Harness/00_Safety_Wrapper.py`                                 | Pre-check de seguridad                     |
-| **Context Manager**                      | `03_Scripts_Os/11_Anthropic_Harness/01_Context_Manager.py`                                | Reset vs Compaction                        |
-| **Evaluator Runner**                     | `03_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner.py`                               | QA separado (GAN)                          |
-| **Sprint Contract**                      | `03_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract.py`                                | Negocia "done"                             |
-| **Playwright QA**                        | `03_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py`                                  | Testing interactivo                        |
+| Componente                                 | Ubicación                                                                                   | Propósito                                    |
+|--------------------------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------|
+| **Safety Wrapper**                         | `03_Scripts_Os/11_Anthropic_Harness/00_Safety_Wrapper.py`                                   | Pre-check de seguridad                       |
+| **Context Manager**                        | `03_Scripts_Os/11_Anthropic_Harness/01_Context_Manager.py`                                  | Reset vs Compaction                          |
+| **Evaluator Runner**                       | `03_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner.py`                                 | QA separado (GAN)                            |
+| **Sprint Contract**                        | `03_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract.py`                                  | Negocia "done"                               |
+| **Playwright QA**                          | `03_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py`                                    | Testing interactivo                          |
 
 **Skills Anthropic:**
 - `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`
@@ -139,21 +139,21 @@ Think_Different_AI/
 
 ### 12 Agentes Principales (Pipeline TDD)
 
-| #                       | Archivo                                            | Propósito                                |
-|-------------------------|----------------------------------------------------|------------------------------------------|
-| 00                      | `00_Orchestrator.md`                               | Orquestador maestro                      |
-| 01                      | `01_Scope_Rule_Architect.md`                       | Define alcance                           |
-| 02                      | `02_TDD_Test_First.md`                             | Tests primero (Rojo)                     |
-| 03                      | `03_React_Test_Implementer.md`                     | Implementa (Verde)                       |
-| 04                      | `04_React_Mentor.md`                               | Refactor (Azul)                          |
-| 05                      | `05_Security_Auditor.md`                           | Seguridad                                |
-| 06                      | `06_Git_Workflow_Manager.md`                       | Git                                      |
-| 07                      | `07_Accessibility_Auditor.md`                      | Accesibilidad                            |
-| 08                      | `08_PRD_Dashboard_Template.md`                     | Templates PRD                            |
-| 09                      | `09_Design_SOP_Document.md`                        | Docs diseño                              |
-| 10                      | `10_Workflow_Orchestrator.md`                      | Workflows                                |
-| 11                      | `11_AIPM_Judge.md`                                 | Evaluación AI                            |
-| 12                      | `12_LFG_Autonomous_Engine.md`                      | Motor autónomo                           |
+| #                         | Archivo                                              | Propósito                                  |
+|---------------------------|------------------------------------------------------|--------------------------------------------|
+| 00                        | `00_Orchestrator.md`                                 | Orquestador maestro                        |
+| 01                        | `01_Scope_Rule_Architect.md`                         | Define alcance                             |
+| 02                        | `02_TDD_Test_First.md`                               | Tests primero (Rojo)                       |
+| 03                        | `03_React_Test_Implementer.md`                       | Implementa (Verde)                         |
+| 04                        | `04_React_Mentor.md`                                 | Refactor (Azul)                            |
+| 05                        | `05_Security_Auditor.md`                             | Seguridad                                  |
+| 06                        | `06_Git_Workflow_Manager.md`                         | Git                                        |
+| 07                        | `07_Accessibility_Auditor.md`                        | Accesibilidad                              |
+| 08                        | `08_PRD_Dashboard_Template.md`                       | Templates PRD                              |
+| 09                        | `09_Design_SOP_Document.md`                          | Docs diseño                                |
+| 10                        | `10_Workflow_Orchestrator.md`                        | Workflows                                  |
+| 11                        | `11_AIPM_Judge.md`                                   | Evaluación AI                              |
+| 12                        | `12_LFG_Autonomous_Engine.md`                        | Motor autónomo                             |
 
 ### 24 Especialistas
 
@@ -169,13 +169,13 @@ Ubicación: `.agent/01_Agents/Specialists/`
 
 Ubicación: `.agent/01_Agents/Perfiles/`
 
-| #                       | Perfil                                        | Propósito                                         | Anthropic                       |
-|-------------------------|-----------------------------------------------|---------------------------------------------------|---------------------------------|
-| 01                      | `01_Product_Builder.md`                       | Features completas PRD→deploy                     | ✅                               |
-| 02                      | `02_Data_Engineer.md`                         | Pipelines datos, ETL                              | ✅                               |
-| 03                      | `03_Marketing_Tech.md`                        | SEO, ads, contenido                               | ✅                               |
-| 04                      | `04_Design_Ops.md`                            | Design systems                                    | ✅                               |
-| 05                      | `05_Platform_Engineer.md`                     | Infraestructura, MCPs                             | ✅                               |
+| #                         | Perfil                                          | Propósito                                           | Anthropic                         |
+|---------------------------|-------------------------------------------------|-----------------------------------------------------|-----------------------------------|
+| 01                        | `01_Product_Builder.md`                         | Features completas PRD→deploy                       | ✅                                 |
+| 02                        | `02_Data_Engineer.md`                           | Pipelines datos, ETL                                | ✅                                 |
+| 03                        | `03_Marketing_Tech.md`                          | SEO, ads, contenido                                 | ✅                                 |
+| 04                        | `04_Design_Ops.md`                              | Design systems                                      | ✅                                 |
+| 05                        | `05_Platform_Engineer.md`                       | Infraestructura, MCPs                               | ✅                                 |
 
 ---
 
@@ -183,32 +183,32 @@ Ubicación: `.agent/01_Agents/Perfiles/`
 
 ### Por Categoría (01_Personal_Os/01_Core/02_Tools/02_Skills/)
 
-| Categoría                                | Skills                       | Estado                           |
-|------------------------------------------|------------------------------|----------------------------------|
-| 01_Agent_Teams_Lite                      | 9                            | ⏭️ Sin tocar                     |
-| 02_Project_Manager                       | 9                            | ✅ 100%                           |
-| 03_Product_Manager                       | 7                            | ✅ 100%                           |
-| 04_Product_Design                        | 11                           | ✅ 100%                           |
-| 05_Vibe_Coding                           | 21                           | ✅ 100%                           |
-| 06_Testing                               | 13                           | ✅ 100%                           |
-| 07_DevOps                                | 12                           | ✅ 100%                           |
-| 08_Personal_Os                           | 10                           | ✅ 100%                           |
-| 09_Marketing                             | 32                           | ✅ 100%                           |
-| 10_Backup                                | 177                          | 📦 Legacy                         |
-| 11_Doc_Processing                        | 3                            | ✅ 100%                           |
-| 12_N8N                                   | 7                            | ✅ 100%                           |
-| 13_System_Master                         | 1                            | ✅ 100%                           |
-| 14_Anthropic_Harness                     | 3                            | ⭐ NUEVO                          |
+| Categoría                                  | Skills                         | Estado                             |
+|--------------------------------------------|--------------------------------|------------------------------------|
+| 01_Agent_Teams_Lite                        | 9                              | ⏭️ Sin tocar                       |
+| 02_Project_Manager                         | 9                              | ✅ 100%                             |
+| 03_Product_Manager                         | 7                              | ✅ 100%                             |
+| 04_Product_Design                          | 11                             | ✅ 100%                             |
+| 05_Vibe_Coding                             | 21                             | ✅ 100%                             |
+| 06_Testing                                 | 13                             | ✅ 100%                             |
+| 07_DevOps                                  | 12                             | ✅ 100%                             |
+| 08_Personal_Os                             | 10                             | ✅ 100%                             |
+| 09_Marketing                               | 32                             | ✅ 100%                             |
+| 10_Backup                                  | 177                            | 📦 Legacy                           |
+| 11_Doc_Processing                          | 3                              | ✅ 100%                             |
+| 12_N8N                                     | 7                              | ✅ 100%                             |
+| 13_System_Master                           | 1                              | ✅ 100%                             |
+| 14_Anthropic_Harness                       | 3                              | ⭐ NUEVO                            |
 
 ### TASTE-SKILLS (Frontend Premium)
 
-| Skill                                    | Uso                                                 |
-|------------------------------------------|-----------------------------------------------------|
-| **taste-skill**                          | Diseño desde cero - premium                         |
-| **soft-skill**                           | Proyectos premium, invitaciones                     |
-| **minimalist-skill**                     | Estilo Notion/Linear                                |
-| **redesign-skill**                       | Mejorar proyectos existentes                        |
-| **output-skill**                         | Código completo                                     |
+| Skill                                      | Uso                                                   |
+|--------------------------------------------|-------------------------------------------------------|
+| **taste-skill**                            | Diseño desde cero - premium                           |
+| **soft-skill**                             | Proyectos premium, invitaciones                       |
+| **minimalist-skill**                       | Estilo Notion/Linear                                  |
+| **redesign-skill**                         | Mejorar proyectos existentes                          |
+| **output-skill**                           | Código completo                                       |
 
 ---
 
@@ -216,18 +216,18 @@ Ubicación: `.agent/01_Agents/Perfiles/`
 
 ### 10 Hubs Maestros
 
-| Hub                       | Script                                      | Función                            |
-|---------------------------|---------------------------------------------|------------------------------------|
-| 01                        | `01_Auditor_Hub.py`                         | Auditorías                         |
-| 02                        | `02_Git_Hub.py`                             | Git operations                     |
-| 03                        | `03_AIPM_Hub.py`                            | AI PM                              |
-| 04                        | `04_Ritual_Hub.py`                          | Rituales                           |
-| 05                        | `05_Validator_Hub.py`                       | Validación                         |
-| 06                        | `06_Tool_Hub.py`                            | Herramientas                       |
-| 07                        | `07_Integration_Hub.py`                     | Integraciones                      |
-| 08                        | `08_Workflow_Hub.py`                        | Workflows                          |
-| 09                        | `09_Data_Hub.py`                            | Datos                              |
-| 10                        | `10_General_Hub.py`                         | Generales                          |
+| Hub                         | Script                                        | Función                              |
+|-----------------------------|-----------------------------------------------|--------------------------------------|
+| 01                          | `01_Auditor_Hub.py`                           | Auditorías                           |
+| 02                          | `02_Git_Hub.py`                               | Git operations                       |
+| 03                          | `03_AIPM_Hub.py`                              | AI PM                                |
+| 04                          | `04_Ritual_Hub.py`                            | Rituales                             |
+| 05                          | `05_Validator_Hub.py`                         | Validación                           |
+| 06                          | `06_Tool_Hub.py`                              | Herramientas                         |
+| 07                          | `07_Integration_Hub.py`                       | Integraciones                        |
+| 08                          | `08_Workflow_Hub.py`                          | Workflows                            |
+| 09                          | `09_Data_Hub.py`                              | Datos                                |
+| 10                          | `10_General_Hub.py`                           | Generales                            |
 
 ### Scripts Antropomórficos
 
@@ -250,10 +250,10 @@ Ubicación: `.agent/01_Agents/Perfiles/`
 
 Ubicación: `.agent/03_Workflows/`
 
-| #                         | Workflow                                      | Tipo                                      |
-|---------------------------|-----------------------------------------------|-------------------------------------------|
-| 00-16                     | Workflows clásicos                            | Varios                                    |
-| 17                        | `17_Anthropic_Harness.md`                     | ⭐ NUEVO - Three-Agent                     |
+| #                           | Workflow                                        | Tipo                                        |
+|-----------------------------|-------------------------------------------------|---------------------------------------------|
+| 00-16                       | Workflows clásicos                              | Varios                                      |
+| 17                          | `17_Anthropic_Harness.md`                       | ⭐ NUEVO - Three-Agent                       |
 
 ---
 
@@ -261,49 +261,49 @@ Ubicación: `.agent/03_Workflows/`
 
 Ubicación: `.agent/04_Extensions/hooks/`
 
-| #                                   | Hook                                          | Trigger                              | Función                                 |
-|-------------------------------------|-----------------------------------------------|--------------------------------------|-----------------------------------------|
-| 01                                  | `pre_tool_use.py`                             | PreToolUse                           | Batería + seguridad                     |
-| 02                                  | `csv-single-validator.py`                     | PreToolUse                           | Validación CSV                          |
-| 03                                  | `post_tool_use.py`                            | PostToolUse                          | Backup + voz                            |
-| 04                                  | `stop.py`                                     | Stop                                 | Fin de sesión                           |
-| 05                                  | `subagent_stop.py`                            | SubagentStop                         | Fin de subagente                        |
-| 06                                  | `notification.py`                             | UserPromptSubmit                     | Notificaciones                          |
-| 07                                  | `task-complete-sound.ps1`                     | TodoWrite                            | Sonidos                                 |
-| **05_Harness/**                     |                                               |                                      |                                         |
-| 08                                  | `context_monitor.py`                          | **NUEVO**                            | Monitoreo contexto                      |
-| 09                                  | `eval_trigger.py`                             | **NUEVO**                            | Evaluación                              |
+| #                                     | Hook                                            | Trigger                                | Función                                   |
+|---------------------------------------|-------------------------------------------------|----------------------------------------|-------------------------------------------|
+| 01                                    | `pre_tool_use.py`                               | PreToolUse                             | Batería + seguridad                       |
+| 02                                    | `csv-single-validator.py`                       | PreToolUse                             | Validación CSV                            |
+| 03                                    | `post_tool_use.py`                              | PostToolUse                            | Backup + voz                              |
+| 04                                    | `stop.py`                                       | Stop                                   | Fin de sesión                             |
+| 05                                    | `subagent_stop.py`                              | SubagentStop                           | Fin de subagente                          |
+| 06                                    | `notification.py`                               | UserPromptSubmit                       | Notificaciones                            |
+| 07                                    | `task-complete-sound.ps1`                       | TodoWrite                              | Sonidos                                   |
+| **05_Harness/**                       |                                                 |                                        |                                           |
+| 08                                    | `context_monitor.py`                            | **NUEVO**                              | Monitoreo contexto                        |
+| 09                                    | `eval_trigger.py`                               | **NUEVO**                              | Evaluación                                |
 
 ---
 
 ## 🔌 MCPs (36 servidores)
 
-| Categoría                       | MCPs                                                    |
-|---------------------------------|---------------------------------------------------------|
-| Búsqueda                        | exa, brave-search, stackoverflow                        |
-| Memoria                         | engram, aim-memory-bank, notebooklm                     |
-| Notas                           | Notion, mcp-obsidian, obsidian-api                      |
-| Browser                         | Playwright, chrome-devtools                             |
-| AI & Código                     | context7, zai-mcp-server, github                        |
-| Datos                           | supabase, postgres, sqlite                              |
-| Workflow                        | n8n-mcp, Linear, jira-extended                          |
-| Diseño                          | excalidraw-yctimlin, pencil                             |
+| Categoría                         | MCPs                                                      |
+|-----------------------------------|-----------------------------------------------------------|
+| Búsqueda                          | exa, brave-search, stackoverflow                          |
+| Memoria                           | engram, aim-memory-bank, notebooklm                       |
+| Notas                             | Notion, mcp-obsidian, obsidian-api                        |
+| Browser                           | Playwright, chrome-devtools                               |
+| AI & Código                       | context7, zai-mcp-server, github                          |
+| Datos                             | supabase, postgres, sqlite                                |
+| Workflow                          | n8n-mcp, Linear, jira-extended                            |
+| Diseño                            | excalidraw-yctimlin, pencil                               |
 
 ---
 
 ## 📋 COMANDOS SDD
 
-| Comando                                    | Propósito                           |
-|--------------------------------------------|-------------------------------------|
-| `/sdd-init`                                | Inicializar SDD                     |
-| `/sdd-explore <topic>`                     | Explorar idea                       |
-| `/sdd-new <change>`                        | Nueva cambio                        |
-| `/sdd-spec`                                | Especificar                         |
-| `/sdd-design`                              | Diseñar                             |
-| `/sdd-tasks`                               | Crear tareas                        |
-| `/sdd-apply`                               | Implementar                         |
-| `/sdd-verify`                              | Verificar                           |
-| `/sdd-archive`                             | Archivar                            |
+| Comando                                      | Propósito                             |
+|----------------------------------------------|---------------------------------------|
+| `/sdd-init`                                  | Inicializar SDD                       |
+| `/sdd-explore <topic>`                       | Explorar idea                         |
+| `/sdd-new <change>`                          | Nueva cambio                          |
+| `/sdd-spec`                                  | Especificar                           |
+| `/sdd-design`                                | Diseñar                               |
+| `/sdd-tasks`                                 | Crear tareas                          |
+| `/sdd-apply`                                 | Implementar                           |
+| `/sdd-verify`                                | Verificar                             |
+| `/sdd-archive`                               | Archivar                              |
 
 ---
 

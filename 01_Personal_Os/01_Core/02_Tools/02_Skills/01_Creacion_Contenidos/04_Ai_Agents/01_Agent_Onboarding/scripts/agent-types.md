@@ -58,12 +58,12 @@ Coordinate other agents or tools, manage workflows.
 
 ## Choosing the Right Level
 
-| Use Case                                             | Recommended Level                         |
-|------------------------------------------------------|-------------------------------------------|
-| Repetitive, well-defined tasks                       | Level 1                                   |
-| Domain expertise needed                              | Level 2                                   |
-| Strategic decisions                                  | Level 3                                   |
-| Multi-agent coordination                             | Level 4                                   |
+| Use Case                                               | Recommended Level                           |
+|--------------------------------------------------------|---------------------------------------------|
+| Repetitive, well-defined tasks                         | Level 1                                     |
+| Domain expertise needed                                | Level 2                                     |
+| Strategic decisions                                    | Level 3                                     |
+| Multi-agent coordination                               | Level 4                                     |
 
 **Start simple**: Always begin with Level 1. Move up only when complexity demands it.
 

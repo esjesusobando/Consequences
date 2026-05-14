@@ -19,19 +19,19 @@
 
 ### Software Requerido
 
-| Software        | Versión Mínima      | Propósito                           | Instalador                             |
-|-----------------|---------------------|-------------------------------------|----------------------------------------|
-| **Python**      | 3.10+               | Motor del OS y scripts              | [python.org](https://python.org)       |
-| **Git**         | 2.30+               | Control de versiones                | [git-scm.com](https://git-scm.com)     |
-| **Node.js**     | 18+                 | MCPs y herramientas de frontend     | [nodejs.org](https://nodejs.org)       |
+| Software          | Versión Mínima        | Propósito                             | Instalador                               |
+|-------------------|-----------------------|---------------------------------------|------------------------------------------|
+| **Python**        | 3.10+                 | Motor del OS y scripts                | [python.org](https://python.org)         |
+| **Git**           | 2.30+                 | Control de versiones                  | [git-scm.com](https://git-scm.com)       |
+| **Node.js**       | 18+                   | MCPs y herramientas de frontend       | [nodejs.org](https://nodejs.org)         |
 
 ### Recomendado
 
-| Software            | Propósito                                             |
-|---------------------|-------------------------------------------------------|
-| **uv**              | Gestor de paquetes Python rápido (fallback a pip)     |
-| **Claude Code**     | Agente principal del OS                               |
-| **OpenCode**        | Agente secundario                                     |
+| Software              | Propósito                                               |
+|-----------------------|---------------------------------------------------------|
+| **uv**                | Gestor de paquetes Python rápido (fallback a pip)       |
+| **Claude Code**       | Agente principal del OS                                 |
+| **OpenCode**          | Agente secundario                                       |
 
 ### Verificar Instalación
 
@@ -109,16 +109,16 @@ GitHub PAT: [tu-key]
 
 #### Keys Requeridas vs Opcionales
 
-| API Key            | Requerida          | Notas                            |
-|--------------------|--------------------|----------------------------------|
-| **GitHub PAT**     | ⚠️ Recomendada     | Para git operations              |
-| **Context7**       | ⚠️ Recomendada     | Investigación de código          |
-| **Exa**            | ⚠️ Recomendada     | Búsqueda web                     |
-| Fireflies          | 🔄 Opcional         | Transcripciones de reuniones     |
-| Notion             | 🔄 Opcional         | Notas conectadas                 |
-| Supabase           | 🔄 Opcional         | Base de datos                    |
-| Linear             | 🔄 Opcional         | Gestión de tareas                |
-| Others             | 🔄 Opcional         | Otros MCPs                       |
+| API Key              | Requerida            | Notas                              |
+|----------------------|----------------------|------------------------------------|
+| **GitHub PAT**       | ⚠️ Recomendada       | Para git operations                |
+| **Context7**         | ⚠️ Recomendada       | Investigación de código            |
+| **Exa**              | ⚠️ Recomendada       | Búsqueda web                       |
+| Fireflies            | 🔄 Opcional           | Transcripciones de reuniones       |
+| Notion               | 🔄 Opcional           | Notas conectadas                   |
+| Supabase             | 🔄 Opcional           | Base de datos                      |
+| Linear               | 🔄 Opcional           | Gestión de tareas                  |
+| Others               | 🔄 Opcional           | Otros MCPs                         |
 
 ### Paso 4 — Configurar AI Assistants
 
@@ -149,11 +149,11 @@ GitHub PAT: [tu-key]
 
 El instalador intenta configurar estos aliases automáticamente:
 
-| Alias           | Comando                       | Propósito                         |
-|-----------------|-------------------------------|-----------------------------------|
-| `gr`            | System Guardian dry-run       | Validar estructura                |
-| `gra`           | System Guardian con fixes     | Validar y auto-arreglar           |
-| `gr-agents`     | System Guardian agents        | Solo validación con 3 agentes     |
+| Alias             | Comando                         | Propósito                           |
+|-------------------|---------------------------------|-------------------------------------|
+| `gr`              | System Guardian dry-run         | Validar estructura                  |
+| `gra`             | System Guardian con fixes       | Validar y auto-arreglar             |
+| `gr-agents`       | System Guardian agents          | Solo validación con 3 agentes       |
 
 #### Configuración Manual (si el installer falló)
 
@@ -196,11 +196,11 @@ Este hook ejecuta System Guardian al cerrar una sesión.
 
 El installer reemplaza placeholders en `.mcp.json`:
 
-| Placeholder               | Se Reemplaza Con                 |
-|---------------------------|----------------------------------|
-| `{{USER_DOWNLOADS}}`      | Tu carpeta de Downloads          |
-| `{{USER_OBSIDIAN}}`       | Ruta del vault de Obsidian       |
-| `{{USER_EXCALIDRAW}}`     | Ruta de diagramas Excalidraw     |
+| Placeholder                 | Se Reemplaza Con                   |
+|-----------------------------|------------------------------------|
+| `{{USER_DOWNLOADS}}`        | Tu carpeta de Downloads            |
+| `{{USER_OBSIDIAN}}`         | Ruta del vault de Obsidian         |
+| `{{USER_EXCALIDRAW}}`       | Ruta de diagramas Excalidraw       |
 
 ---
 
@@ -226,15 +226,15 @@ python scripts/setup_dependencies.py
 
 ### Checklist de Verificación
 
-| Componente         | Verificación                             | Esperado              |
-|--------------------|------------------------------------------|-----------------------|
-| **Python**         | `python --version`                       | Python 3.10+          |
-| **Git**            | `git --version`                          | git version 2.30+     |
-| **Node**           | `node --version`                         | v18+                  |
-| **Estructura**     | `gr` (System Guardian)                   | 0 issues              |
-| **Hooks**          | `.claude/settings.local.json` existe     | JSON válido           |
-| **.mcp.json**      | Existe en `.claude/` o raíz              | Configurado           |
-| **Aliases**        | `gr` en terminal                         | Funciona              |
+| Componente           | Verificación                               | Esperado                |
+|----------------------|--------------------------------------------|-------------------------|
+| **Python**           | `python --version`                         | Python 3.10+            |
+| **Git**              | `git --version`                            | git version 2.30+       |
+| **Node**             | `node --version`                           | v18+                    |
+| **Estructura**       | `gr` (System Guardian)                     | 0 issues                |
+| **Hooks**            | `.claude/settings.local.json` existe       | JSON válido             |
+| **.mcp.json**        | Existe en `.claude/` o raíz                | Configurado             |
+| **Aliases**          | `gr` en terminal                           | Funciona                |
 
 ---
 
@@ -315,14 +315,14 @@ gra
 
 ## 📚 Recursos Adicionales
 
-| Recurso                 | Ubicación                                       | Propósito                    |
-|-------------------------|-------------------------------------------------|------------------------------|
-| **README.md**           | Raíz del proyecto                               | Overview del sistema         |
-| **AGENTS.md**           | 00_Winter_is_Coming/                            | Configuración de agentes     |
-| **CLAUDE.md**           | Raíz del proyecto                               | Reglas del sistema           |
-| **OS_DIRECTORY.md**     | Raíz del proyecto                               | JARVIS discovery             |
-| **HUBs**                | 01_Personal_Os/04_Operations/03_Scripts_Os/     | Automatizaciones             |
-| **Skills**              | 01_Personal_Os/01_Core/02_Tools/02_Skills/      | 299+ skills (12 áreas)       |
+| Recurso                   | Ubicación                                         | Propósito                      |
+|---------------------------|---------------------------------------------------|--------------------------------|
+| **README.md**             | Raíz del proyecto                                 | Overview del sistema           |
+| **AGENTS.md**             | 00_Winter_is_Coming/                              | Configuración de agentes       |
+| **CLAUDE.md**             | Raíz del proyecto                                 | Reglas del sistema             |
+| **OS_DIRECTORY.md**       | Raíz del proyecto                                 | JARVIS discovery               |
+| **HUBs**                  | 01_Personal_Os/04_Operations/03_Scripts_Os/       | Automatizaciones               |
+| **Skills**                | 01_Personal_Os/01_Core/02_Tools/02_Skills/        | 299+ skills (12 áreas)         |
 
 ---
 

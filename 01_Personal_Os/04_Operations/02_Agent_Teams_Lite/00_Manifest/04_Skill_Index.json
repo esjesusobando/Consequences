@@ -1,11 +1,11 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-12T00:42:12",
+  "generated": "2026-05-14T12:41:02",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
     "areas": 11,
-    "skills": 303,
-    "without_frontmatter": 2
+    "skills": 316,
+    "without_frontmatter": 0
   },
   "by_area": {
     "00_Compound_Engineering": {
@@ -544,7 +544,7 @@
       ]
     },
     "02_Diseno_Ui_Ux": {
-      "count": 22,
+      "count": 23,
       "skills": [
         {
           "name": "04_Product_Design",
@@ -652,9 +652,14 @@
           "has_frontmatter": true
         },
         {
-          "name": "14_Design_Systems",
-          "path": "02_Diseno_Ui_Ux/14_Design_Systems/SKILL.md",
-          "has_frontmatter": false
+          "name": "12_Design_Systems",
+          "path": "02_Diseno_Ui_Ux/12_Design_Systems/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "13_Design_Systems",
+          "path": "02_Diseno_Ui_Ux/13_Design_Systems/SKILL.md",
+          "has_frontmatter": true
         }
       ]
     },
@@ -949,7 +954,7 @@
       ]
     },
     "06_Tools": {
-      "count": 80,
+      "count": 92,
       "skills": [
         {
           "name": "15_Skill_Creator_Oficial",
@@ -1288,67 +1293,127 @@
         },
         {
           "name": "01_Accessibility_WCAG_Testing",
-          "path": "06_Tools/08_Accessibility/01_Accessibility_WCAG_Testing/SKILL.md",
-          "has_frontmatter": false
-        },
-        {
-          "name": "25_Octopus",
-          "path": "06_Tools/08_Octopus/25_Octopus/SKILL.md",
+          "path": "06_Tools/09_Accessibility/01_Accessibility_WCAG_Testing/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "09_Doc_Processing",
-          "path": "06_Tools/09_Doc_Processing/SKILL.md",
+          "name": "25_Octopus",
+          "path": "06_Tools/10_Octopus/25_Octopus/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "01_Accessibility_WCAG_Testing",
+          "path": "06_Tools/12_Accessibility/01_Accessibility_WCAG_Testing/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "13_Doc_Processing",
+          "path": "06_Tools/13_Doc_Processing/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "01_Universal_Doc_Reader",
-          "path": "06_Tools/09_Doc_Processing/01_Universal_Doc_Reader/SKILL.md",
+          "path": "06_Tools/13_Doc_Processing/01_Universal_Doc_Reader/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "02_Batch_Doc_Processor",
-          "path": "06_Tools/09_Doc_Processing/02_Batch_Doc_Processor/SKILL.md",
+          "path": "06_Tools/13_Doc_Processing/02_Batch_Doc_Processor/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "03_Resumen_Extractor",
-          "path": "06_Tools/09_Doc_Processing/03_Resumen_Extractor/SKILL.md",
+          "path": "06_Tools/13_Doc_Processing/03_Resumen_Extractor/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "10_Qmd",
-          "path": "06_Tools/10_Qmd/SKILL.md",
+          "name": "25_Octopus",
+          "path": "06_Tools/14_Octopus/25_Octopus/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "11_System_Master",
-          "path": "06_Tools/11_System_Master/SKILL.md",
+          "name": "15_Qmd",
+          "path": "06_Tools/15_Qmd/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "16_Doc_Processing",
+          "path": "06_Tools/16_Doc_Processing/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "01_Universal_Doc_Reader",
+          "path": "06_Tools/16_Doc_Processing/01_Universal_Doc_Reader/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "02_Batch_Doc_Processor",
+          "path": "06_Tools/16_Doc_Processing/02_Batch_Doc_Processor/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Resumen_Extractor",
+          "path": "06_Tools/16_Doc_Processing/03_Resumen_Extractor/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "17_System_Master",
+          "path": "06_Tools/17_System_Master/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "03_Find_Skills",
-          "path": "06_Tools/11_System_Master/03_Find_Skills/SKILL.md",
+          "path": "06_Tools/17_System_Master/03_Find_Skills/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "04_Mcp_Builder",
-          "path": "06_Tools/11_System_Master/04_Mcp_Builder/SKILL.md",
+          "path": "06_Tools/17_System_Master/04_Mcp_Builder/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "05_Google_Stitch_MCP",
-          "path": "06_Tools/11_System_Master/05_Google_Stitch_MCP/SKILL.md",
+          "path": "06_Tools/17_System_Master/05_Google_Stitch_MCP/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "12_Silicon_Valley_Data_Analyst",
-          "path": "06_Tools/12_Silicon_Valley_Data_Analyst/SKILL.md",
+          "name": "18_Qmd",
+          "path": "06_Tools/18_Qmd/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "13_Qmd",
-          "path": "06_Tools/13_Qmd/SKILL.md",
+          "name": "19_Silicon_Valley_Data_Analyst",
+          "path": "06_Tools/19_Silicon_Valley_Data_Analyst/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "20_Qmd",
+          "path": "06_Tools/20_Qmd/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "21_System_Master",
+          "path": "06_Tools/21_System_Master/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Find_Skills",
+          "path": "06_Tools/21_System_Master/03_Find_Skills/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "04_Mcp_Builder",
+          "path": "06_Tools/21_System_Master/04_Mcp_Builder/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_Google_Stitch_MCP",
+          "path": "06_Tools/21_System_Master/05_Google_Stitch_MCP/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "22_Silicon_Valley_Data_Analyst",
+          "path": "06_Tools/22_Silicon_Valley_Data_Analyst/SKILL.md",
           "has_frontmatter": true
         }
       ]

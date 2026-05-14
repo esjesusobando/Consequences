@@ -20,44 +20,44 @@ Este perfil construye la infraestructura y herramientas que hacen posible el des
 ## 📦 Skills que Carga Automáticamente
 
 ### Deploy y Hosting
-| Skill                                               | Cuándo Usar                              | Output                                     |
-|-----------------------------------------------------|------------------------------------------|--------------------------------------------|
-| `Vercel_Deploy`                                     | Frontend/Fullstack                       | Deploy automático                          |
-| `Vercel_React_Best_Practices`                       | React patterns                           | Patterns optimizados                       |
-| `Supabase_Integration`                              | Backend/DB                               | Setup completo                             |
+| Skill                                                 | Cuándo Usar                                | Output                                       |
+|-------------------------------------------------------|--------------------------------------------|----------------------------------------------|
+| `Vercel_Deploy`                                       | Frontend/Fullstack                         | Deploy automático                            |
+| `Vercel_React_Best_Practices`                         | React patterns                             | Patterns optimizados                         |
+| `Supabase_Integration`                                | Backend/DB                                 | Setup completo                               |
 
 ### MCPs y Herramientas
-| Skill                                   | Cuándo Usar                                 | Output                                   |
-|-----------------------------------------|---------------------------------------------|------------------------------------------|
-| `MCP_Client`                            | Integrar herramientas                       | Clientes MCP                             |
-| `Mcp_Builder`                           | Crear MCPs                                  | Nuevos servers MCP                       |
-| `Skill_Architect`                       | Crear skills                                | Skills custom                            |
+| Skill                                     | Cuándo Usar                                   | Output                                     |
+|-------------------------------------------|-----------------------------------------------|--------------------------------------------|
+| `MCP_Client`                              | Integrar herramientas                         | Clientes MCP                               |
+| `Mcp_Builder`                             | Crear MCPs                                    | Nuevos servers MCP                         |
+| `Skill_Architect`                         | Crear skills                                  | Skills custom                              |
 
 ### Infrastructure y DevOps
-| Skill                                       | Cuándo Usar                           | Output                                     |
-|---------------------------------------------|---------------------------------------|--------------------------------------------|
-| `E2b_Sandbox`                               | Sandbox cloud                         | Ambiente remoto                            |
-| `Using_Git_Worktrees`                       | Multi-branch                          | Workflows parallelos                       |
-| `Git_Worktrees`                             | Repos múltiples                       | Working trees                              |
+| Skill                                         | Cuándo Usar                             | Output                                       |
+|-----------------------------------------------|-----------------------------------------|----------------------------------------------|
+| `E2b_Sandbox`                                 | Sandbox cloud                           | Ambiente remoto                              |
+| `Using_Git_Worktrees`                         | Multi-branch                            | Workflows parallelos                         |
+| `Git_Worktrees`                               | Repos múltiples                         | Working trees                                |
 
 ### Observabilidad
-| Skill                                           | Cuándo Usar                           | Output                                   |
-|-------------------------------------------------|---------------------------------------|------------------------------------------|
-| `Observability`                                 | Métricas y logs                       | Dashboard completo                       |
-| `Error_Handling_Patterns`                       | Errores                               | Patrones robustos                        |
+| Skill                                             | Cuándo Usar                             | Output                                     |
+|---------------------------------------------------|-----------------------------------------|--------------------------------------------|
+| `Observability`                                   | Métricas y logs                         | Dashboard completo                         |
+| `Error_Handling_Patterns`                         | Errores                                 | Patrones robustos                          |
 
 ### Automation
-| Skill                                   | Cuándo Usar                         | Output                          |
-|-----------------------------------------|-------------------------------------|---------------------------------|
-| `N8N` workflows                         | Automation                          | Workflows                       |
-| `MCP_Integration`                       | Conectar MCPs                       | Setup                           |
+| Skill                                     | Cuándo Usar                           | Output                            |
+|-------------------------------------------|---------------------------------------|-----------------------------------|
+| `N8N` workflows                           | Automation                            | Workflows                         |
+| `MCP_Integration`                         | Conectar MCPs                         | Setup                             |
 
 ### Testing Infrastructure
-| Skill                                       | Cuándo Usar                             | Output                                  |
-|---------------------------------------------|-----------------------------------------|-----------------------------------------|
-| `E2E_Testing`                               | Playwright                              | Tests automáticos                       |
-| `Integration_Testing`                       | Tests integración                       | Pipeline de tests                       |
-| `Testing_Coverage`                          | Coverage                                | Reports                                 |
+| Skill                                         | Cuándo Usar                               | Output                                    |
+|-----------------------------------------------|-------------------------------------------|-------------------------------------------|
+| `E2E_Testing`                                 | Playwright                                | Tests automáticos                         |
+| `Integration_Testing`                         | Tests integración                         | Pipeline de tests                         |
+| `Testing_Coverage`                            | Coverage                                  | Reports                                   |
 
 ---
 
@@ -100,12 +100,12 @@ Este perfil construye la infraestructura y herramientas que hacen posible el des
 
 ## 📊 Métricas que Trackea
 
-| Métrica                                 | Target                         | Cómo se mide                            |
-|-----------------------------------------|--------------------------------|-----------------------------------------|
-| **Deploy Time**                         | <5 min                         | CI/CD                                   |
-| **MCP Uptime**                          | >99.9%                         | Health checks                           |
-| **Build Success**                       | >95%                           | CI/CD                                   |
-| **MTTR**                                | <15 min                        | Incident response                       |
+| Métrica                                   | Target                           | Cómo se mide                              |
+|-------------------------------------------|----------------------------------|-------------------------------------------|
+| **Deploy Time**                           | <5 min                           | CI/CD                                     |
+| **MCP Uptime**                            | >99.9%                           | Health checks                             |
+| **Build Success**                         | >95%                             | CI/CD                                     |
+| **MTTR**                                  | <15 min                          | Incident response                         |
 
 ---
 
@@ -137,20 +137,20 @@ Este perfil construye la infraestructura y herramientas que hacen posible el des
 ## 🔗 Referencias
 
 ### Anthropic Harness Components (Integración SOTA)
-| Componente                                 | Ubicación                                                                                        | Uso                                               |
-|--------------------------------------------|--------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| **Safety Wrapper**                         | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/00_Safety_Wrapper.py`           | Pre-check antes de ejecutar                       |
-| **Context Manager**                        | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/01_Context_Manager.py`          | Reset vs Compaction                               |
-| **Evaluator Runner**                       | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner.py`         | QA separado (GAN pattern)                         |
-| **Sprint Contract**                        | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract.py`          | Negocia "done"                                    |
-| **Playwright QA**                          | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py`            | Testing interactivo                               |
+| Componente                                   | Ubicación                                                                                          | Uso                                                 |
+|----------------------------------------------|----------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| **Safety Wrapper**                           | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/00_Safety_Wrapper.py`             | Pre-check antes de ejecutar                         |
+| **Context Manager**                          | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/01_Context_Manager.py`            | Reset vs Compaction                                 |
+| **Evaluator Runner**                         | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner.py`           | QA separado (GAN pattern)                           |
+| **Sprint Contract**                          | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract.py`            | Negocia "done"                                      |
+| **Playwright QA**                            | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py`              | Testing interactivo                                 |
 
 ### Skills Anthropic
-| Skill                                        | Ubicación                                                                                                | Uso                                               |
-|----------------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| **Evaluator Pattern**                        | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/01_Evaluator_Pattern/`          | Cómo hacer adversarial eval                       |
-| **Context Management**                       | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/02_Context_Management/`         | Reset vs compaction                               |
-| **Sprint Contract**                          | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/03_Sprint_Contract/`            | Generator + Evaluator                             |
+| Skill                                          | Ubicación                                                                                                  | Uso                                                 |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| **Evaluator Pattern**                          | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/01_Evaluator_Pattern/`            | Cómo hacer adversarial eval                         |
+| **Context Management**                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/02_Context_Management/`           | Reset vs compaction                                 |
+| **Sprint Contract**                            | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/03_Sprint_Contract/`              | Generator + Evaluator                               |
 
 ### Workflow
 - `01_Personal_Os/01_Core/00_Workflows_Os/05_Compound_Engineering/17_Anthropic_Harness.md` — Workflow completo de 3 agentes

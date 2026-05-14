@@ -1,10 +1,10 @@
-# HUB Catalog — generated 2026-05-12T00:42:12
+# HUB Catalog — generated 2026-05-14T12:41:02
 
 version: v3.0
-generated: "2026-05-12T00:42:12"
+generated: "2026-05-14T12:41:02"
 base_path: 01_Personal_Os/04_Operations/03_Scripts_Os/
 totals:
-  hubs: 26
+  hubs: 29
 hubs:
   - name: 00_Sound_Engine
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py
@@ -72,6 +72,15 @@ hubs:
   - name: 23_path_replacement
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/23_path_replacement.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/23_path_replacement.py
+  - name: 24_mass_path_migration
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/24_mass_path_migration.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/24_mass_path_migration.py
+  - name: 25_Minimax_Optimizer_Hub
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/25_Minimax_Optimizer_Hub.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/25_Minimax_Optimizer_Hub.py
+  - name: 26_path_replacement
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/26_path_replacement.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/26_path_replacement.py
   - name: 33_Parallel_Audit_Pro
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/33_Parallel_Audit_Pro.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/33_Parallel_Audit_Pro.py

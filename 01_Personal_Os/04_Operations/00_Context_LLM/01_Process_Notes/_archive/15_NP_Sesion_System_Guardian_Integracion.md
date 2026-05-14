@@ -88,13 +88,13 @@ d78b624 fix: 79_System_Guardian - Windows encoding fix
 
 | #     | Pendiente                                      | Prioridad     | Acción                                  |
 
-|---------------------------------------|--------------------------------------------------------------------------------|-----------------------------------------------|-------------------------------------------------------------------------|
-| 1                                     | **Testear `gr` en terminal**                                                   | Alta                                          | Ejecutar alias en bash/powershell                                       |
-| 2                                     | **Probar hook stop al cerrar sesión Claude**                                   | Alta                                          | Cerrar sesión y verificar                                               |
-| 3                                     | **Guardar metodología en 01_Personal_Os/11_AGENTS.md**                         | Alta                                          | Documentar en constitución                                              |
-| 4                                     | **Regenerar trees**                                                            | Media                                         | `python 04_Tools/02_Generate_Tree.py`                                   |
-| 5                                     | **Testear installer completo**                                                 | Media                                         | Ejecutar installer.py                                                   |
-| 6                                     | **Migrate QMD**                                                                | Baja                                          | 2GB - GPU lento                                                         |
+|-----------------------------------------|----------------------------------------------------------------------------------|-------------------------------------------------|---------------------------------------------------------------------------|
+| 1                                       | **Testear `gr` en terminal**                                                     | Alta                                            | Ejecutar alias en bash/powershell                                         |
+| 2                                       | **Probar hook stop al cerrar sesión Claude**                                     | Alta                                            | Cerrar sesión y verificar                                                 |
+| 3                                       | **Guardar metodología en 01_Personal_Os/11_AGENTS.md**                           | Alta                                            | Documentar en constitución                                                |
+| 4                                       | **Regenerar trees**                                                              | Media                                           | `python 04_Tools/02_Generate_Tree.py`                                     |
+| 5                                       | **Testear installer completo**                                                   | Media                                           | Ejecutar installer.py                                                     |
+| 6                                       | **Migrate QMD**                                                                  | Baja                                            | 2GB - GPU lento                                                           |
 
 - --
 
@@ -126,13 +126,13 @@ d78b624 fix: 79_System_Guardian - Windows encoding fix
 
 ## 📁 Archivos Clave
 
-| Archivo                                                                             | Descripción                                                    |
-|-------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| `04_ENGINE/03_Scripts_Os/79_System_Guardian.py`                                     | System Guardian principal                                      |
-| `.AGENT/04_EXTENSIONS/hooks/03_Lifecycle/stop.py`                                   | Hook post-sesión                                               |
-| `04_ENGINE/07_Installer/installer.py`                                               | Installer v2.0                                                 |
-| `04_ENGINE/07_Installer/scripts/validate.py`                                        | Validación + tests                                             |
-| `.claude/mcp.json`                                                                  | Configuración MCP (relocado)                                   |
+| Archivo                                                                               | Descripción                                                      |
+|---------------------------------------------------------------------------------------|------------------------------------------------------------------|
+| `04_ENGINE/03_Scripts_Os/79_System_Guardian.py`                                       | System Guardian principal                                        |
+| `.AGENT/04_EXTENSIONS/hooks/03_Lifecycle/stop.py`                                     | Hook post-sesión                                                 |
+| `04_ENGINE/07_Installer/installer.py`                                                 | Installer v2.0                                                   |
+| `04_ENGINE/07_Installer/scripts/validate.py`                                          | Validación + tests                                               |
+| `.claude/mcp.json`                                                                    | Configuración MCP (relocado)                                     |
 
 - --
 

@@ -31,10 +31,10 @@ Skills no son "atajos" — son **funciones de fuerza** que sacan al agente de su
 
 ### Los 2 Pilares
 
-| Pilar                                          | Descripción                                                            |
-|------------------------------------------------|------------------------------------------------------------------------|
-| **Goal-Oriented**                              | Dar información + flexibilidad, NO recetas rígidas                     |
-| **Progressive Disclosure**                     | Cargar contexto en etapas, no saturar de entrada                       |
+| Pilar                                            | Descripción                                                              |
+|--------------------------------------------------|--------------------------------------------------------------------------|
+| **Goal-Oriented**                                | Dar información + flexibilidad, NO recetas rígidas                       |
+| **Progressive Disclosure**                       | Cargar contexto en etapas, no saturar de entrada                         |
 
 ---
 
@@ -164,11 +164,11 @@ Si metés todo en SKILL.md:
 
 ### La Solución: 3 Niveles de Carga
 
-| Nivel                                                 | Cuándo                                     | Tamaño                          |
-|-------------------------------------------------------|--------------------------------------------|---------------------------------|
-| **Metadata** (name + description)                     | Siempre en context                         | ~100 words                      |
-| **SKILL.md body**                                     | Cuando skill triggerea                     | <500 líneas                     |
-| **Bundled resources**                                 | Cuando necesita                            | Ilimitado                       |
+| Nivel                                                   | Cuándo                                       | Tamaño                            |
+|---------------------------------------------------------|----------------------------------------------|-----------------------------------|
+| **Metadata** (name + description)                       | Siempre en context                           | ~100 words                        |
+| **SKILL.md body**                                       | Cuando skill triggerea                       | <500 líneas                       |
+| **Bundled resources**                                   | Cuando necesita                              | Ilimitado                         |
 
 ### Patrones de Progressive Disclosure
 
@@ -242,11 +242,11 @@ skill-name/
 
 ### Cuándo usar cada nivel
 
-| Nivel                                               | Uso                                                                              | Ejemplo                                                                          |
-|-----------------------------------------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| **HIGH** (text-based)                               | Múltiples enfoques válidos, decisiones dependen del contexto                     | "Analyze the code and suggest improvements"                                      |
-| **MEDIUM** (pseudocode/scripts)                     | Patrón preferido existe, algo de variación aceptable                             | "Use the template in scripts/template.py and customize X, Y"                     |
-| **LOW** (specific commands)                         | Operaciones frágiles, consistencia crítica                                       | "Run `npm install` then `npm run build`"                                         |
+| Nivel                                                 | Uso                                                                                | Ejemplo                                                                            |
+|-------------------------------------------------------|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| **HIGH** (text-based)                                 | Múltiples enfoques válidos, decisiones dependen del contexto                       | "Analyze the code and suggest improvements"                                        |
+| **MEDIUM** (pseudocode/scripts)                       | Patrón preferido existe, algo de variación aceptable                               | "Use the template in scripts/template.py and customize X, Y"                       |
+| **LOW** (specific commands)                           | Operaciones frágiles, consistencia crítica                                         | "Run `npm install` then `npm run build`"                                           |
 
 ### Ejemplos Prácticos
 
@@ -280,11 +280,11 @@ Run: `npm install && npm run build`
 
 ### Cuándo incluir scripts
 
-| Cuándo                                                       | Ejemplo                                       |
-|--------------------------------------------------------------|-----------------------------------------------|
-| Mismo código se reescribe frecuentemente                     | `rotate_pdf.py`                               |
-| Se necesita confiabilidad determinística                     | Validación de archivos                        |
-| Automatización repetitiva                                    | Generación de boilerplate                     |
+| Cuándo                                                         | Ejemplo                                         |
+|----------------------------------------------------------------|-------------------------------------------------|
+| Mismo código se reescribe frecuentemente                       | `rotate_pdf.py`                                 |
+| Se necesita confiabilidad determinística                       | Validación de archivos                          |
+| Automatización repetitiva                                      | Generación de boilerplate                       |
 
 ### Estructura de scripts/
 
@@ -345,15 +345,15 @@ skill-name/
 
 ## 10. Errores Comunes a Evitar
 
-| Error                                      | Por qué                                                 | Solución                                                  |
-|--------------------------------------------|---------------------------------------------------------|-----------------------------------------------------------|
-| Description marketing                      | No le dice al modelo cuándo activar                     | Incluir triggers semánticos                               |
-| Todo en SKILL.md                           | Satura context window                                   | Usar references/                                          |
-| Sin Gotchas                                | Skill no aprende de errores                             | Documentar 3+ errores                                     |
-| Recipes rígidos                            | No permite adaptación                                   | Goal-oriented, no pasos fijos                             |
-| Paths Windows                              | Rompe en Linux/Mac                                      | Usar forward slashes                                      |
-| Nombre con mayúsculas                      | Rompe YAML                                              | lowercase siempre                                         |
-| Sin ejemplos concretos                     | Ambigüedad                                              | Incluir ejemplos en scripts/templates                     |
+| Error                                        | Por qué                                                   | Solución                                                    |
+|----------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------------|
+| Description marketing                        | No le dice al modelo cuándo activar                       | Incluir triggers semánticos                                 |
+| Todo en SKILL.md                             | Satura context window                                     | Usar references/                                            |
+| Sin Gotchas                                  | Skill no aprende de errores                               | Documentar 3+ errores                                       |
+| Recipes rígidos                              | No permite adaptación                                     | Goal-oriented, no pasos fijos                               |
+| Paths Windows                                | Rompe en Linux/Mac                                        | Usar forward slashes                                        |
+| Nombre con mayúsculas                        | Rompe YAML                                                | lowercase siempre                                           |
+| Sin ejemplos concretos                       | Ambigüedad                                                | Incluir ejemplos en scripts/templates                       |
 
 ---
 
@@ -379,11 +379,11 @@ Preguntar:
 
 ### Paso 2: Planear Contenidos
 
-| Si...                                      | Entonces incluir...                       |
-|--------------------------------------------|-------------------------------------------|
-| Mismo código reescrito                     | scripts/rotar_pdf.py                      |
-| Docs pesadas                               | references/schema.md                      |
-| Templates reuse                            | assets/template.html                      |
+| Si...                                        | Entonces incluir...                         |
+|----------------------------------------------|---------------------------------------------|
+| Mismo código reescrito                       | scripts/rotar_pdf.py                        |
+| Docs pesadas                                 | references/schema.md                        |
+| Templates reuse                              | assets/template.html                        |
 
 ### Paso 3: Implementar SKILL.md
 
@@ -436,15 +436,15 @@ Verificar contra el checklist de sección 9.
 
 **Fecha**: 3 de marzo 2026 — Blog oficial: "Improving skill-creator: Test, measure, and refine Agent Skills"
 
-| Característica                                 | Descripción                                                                   | Script/Herramienta                                 |
-|------------------------------------------------|-------------------------------------------------------------------------------|----------------------------------------------------|
-| **评测系统 (Evals)**                               | Tests cuantitativos para verificar que las skills funcionan                   | `scripts/run_eval.py`                              |
-| **Benchmarks**                                 | Medición de rendimiento con/sin skill                                         | `scripts/aggregate_benchmark.py`                   |
-| **Multi-agent Support**                        | Ejecución paralela de pruebas en contexto limpio                              | Subagentes independientes                          |
-| **Description Optimization**                   | Optimización automática de triggers                                           | `scripts/improve_description.py`                   |
-| **Viewer de Resultados**                       | Interfaz web para revisar outputs cualitativos                                | `eval-viewer/generate_review.py`                   |
-| **Blind Comparison**                           | Comparación A/B ciega entre versiones                                         | `agents/comparator.md`                             |
-| **Post-hoc Analysis**                          | Análisis de por qué ganó una versión                                          | `agents/analyzer.md`                               |
+| Característica                                   | Descripción                                                                     | Script/Herramienta                                   |
+|--------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------|
+| **评测系统 (Evals)**                                 | Tests cuantitativos para verificar que las skills funcionan                     | `scripts/run_eval.py`                                |
+| **Benchmarks**                                   | Medición de rendimiento con/sin skill                                           | `scripts/aggregate_benchmark.py`                     |
+| **Multi-agent Support**                          | Ejecución paralela de pruebas en contexto limpio                                | Subagentes independientes                            |
+| **Description Optimization**                     | Optimización automática de triggers                                             | `scripts/improve_description.py`                     |
+| **Viewer de Resultados**                         | Interfaz web para revisar outputs cualitativos                                  | `eval-viewer/generate_review.py`                     |
+| **Blind Comparison**                             | Comparación A/B ciega entre versiones                                           | `agents/comparator.md`                               |
+| **Post-hoc Analysis**                            | Análisis de por qué ganó una versión                                            | `agents/analyzer.md`                                 |
 
 ### Estructura del Skill Creator Oficial
 
@@ -487,13 +487,13 @@ skill-creator/
 
 ### Diferencias con Skill Creator v1
 
-| Aspecto                            | v1 (Original)                             | v2.0 (Skills 2.0)                                 |
-|------------------------------------|-------------------------------------------|---------------------------------------------------|
-| **Testing**                        | Manual, subjetivo                         | Cuantitativo, automatizado                        |
-| **Benchmarks**                     | No existían                               | Pass rate, tiempo, tokens                         |
-| **Comparación**                    | Visual, no estructurada                   | Blind A/B con análisis post-hoc                   |
-| **Optimización**                   | Manual                                    | Automática con train/test split                   |
-| **Multi-agent**                    | No                                        | Ejecución paralela limpia                         |
+| Aspecto                              | v1 (Original)                               | v2.0 (Skills 2.0)                                   |
+|--------------------------------------|---------------------------------------------|-----------------------------------------------------|
+| **Testing**                          | Manual, subjetivo                           | Cuantitativo, automatizado                          |
+| **Benchmarks**                       | No existían                                 | Pass rate, tiempo, tokens                           |
+| **Comparación**                      | Visual, no estructurada                     | Blind A/B con análisis post-hoc                     |
+| **Optimización**                     | Manual                                      | Automática con train/test split                     |
+| **Multi-agent**                      | No                                          | Ejecución paralela limpia                           |
 
 ### Implementación en PersonalOS
 

@@ -17,34 +17,34 @@ El sistema de Steve Arneson es un **prospect intelligence workflow** que usa Cla
 
 ## 🔧 Stack Tecnológico
 
-| Herramienta                                | Función                                                                        |
-|--------------------------------------------|--------------------------------------------------------------------------------|
-| **Claude Code**                            | Agente de IA local que ejecuta todo el análisis y genera outputs               |
-| **LinkedIn Connections.csv**               | Datos de contactos-exportados                                                  |
-| **Facebook friends.json**                  | Datos de contactos-exportados                                                  |
-| **Instagram followers.json**               | Datos de contactos-exportados                                                  |
-| **Gmail contacts.csv**                     | Datos de contactos-exportados                                                  |
-| **HTML/CSS**                               | Dashboard visual generado por Claude                                           |
+| Herramienta                                  | Función                                                                          |
+|----------------------------------------------|----------------------------------------------------------------------------------|
+| **Claude Code**                              | Agente de IA local que ejecuta todo el análisis y genera outputs                 |
+| **LinkedIn Connections.csv**                 | Datos de contactos-exportados                                                    |
+| **Facebook friends.json**                    | Datos de contactos-exportados                                                    |
+| **Instagram followers.json**                 | Datos de contactos-exportados                                                    |
+| **Gmail contacts.csv**                       | Datos de contactos-exportados                                                    |
+| **HTML/CSS**                                 | Dashboard visual generado por Claude                                             |
 
 ---
 
 ## 📊 Sistema de Scoring (5 Dimensiones)
 
-| Dimensión                   | Puntos                 | Descripción                                                                    |
-|-----------------------------|------------------------|--------------------------------------------------------------------------------|
-| **Authority**               | 30 pts                 | ¿Es un comprador? CEO/Founder = máximo, Manager = mínimo                       |
-| **Scale**                   | 20 pts                 | Tamaño de empresa = más presupuesto/complejidad                                |
-| **Network**                 | 25 pts                 | Señales públicas de influencia (board seats, speaking, podcasts)               |
-| **Proximity**               | 15 pts                 | Qué tan cerca está su industria de lo que ofreces                              |
-| **Warmth**                  | 10 pts                 | ¿Tienes su email? ¿Cuánto tiempo conectados?                                   |
+| Dimensión                     | Puntos                   | Descripción                                                                      |
+|-------------------------------|--------------------------|----------------------------------------------------------------------------------|
+| **Authority**                 | 30 pts                   | ¿Es un comprador? CEO/Founder = máximo, Manager = mínimo                         |
+| **Scale**                     | 20 pts                   | Tamaño de empresa = más presupuesto/complejidad                                  |
+| **Network**                   | 25 pts                   | Señales públicas de influencia (board seats, speaking, podcasts)                 |
+| **Proximity**                 | 15 pts                   | Qué tan cerca está su industria de lo que ofreces                                |
+| **Warmth**                    | 10 pts                   | ¿Tienes su email? ¿Cuánto tiempo conectados?                                     |
 
 ### Rangos de Prioridad
 
-| Score                    | Acción                                                          |
-|--------------------------|-----------------------------------------------------------------|
-| **70–100**               | "INVEST NOW" — Reach out esta semana                            |
-| **50–69**                | "WARM UP" — Engagement en 30 días                               |
-| **30–49**                | "WATCH LIST" — Monitorear y re-visitar en 90 días               |
+| Score                      | Acción                                                            |
+|----------------------------|-------------------------------------------------------------------|
+| **70–100**                 | "INVEST NOW" — Reach out esta semana                              |
+| **50–69**                  | "WARM UP" — Engagement en 30 días                                 |
+| **30–49**                  | "WATCH LIST" — Monitorear y re-visitar en 90 días                 |
 
 **Nota:** Los pesos son ajustables según el modelo de negocio del usuario.
 
@@ -113,11 +113,11 @@ Claude hace 4 preguntas una por una:
 
 ## ⏱️ Métricas de Tiempo
 
-| Actor                     | Tiempo                                                                       |
-|---------------------------|------------------------------------------------------------------------------|
-| **Usuario**               | ~15 min (export, 4 respuestas, revisar, enviar)                              |
-| **Claude**                | ~45 min (filtrar, investigar 25, scorear, escribir, construir)               |
-| **Total**                 | ~1 hora                                                                      |
+| Actor                       | Tiempo                                                                         |
+|-----------------------------|--------------------------------------------------------------------------------|
+| **Usuario**                 | ~15 min (export, 4 respuestas, revisar, enviar)                                |
+| **Claude**                  | ~45 min (filtrar, investigar 25, scorear, escribir, construir)                 |
+| **Total**                   | ~1 hora                                                                        |
 
 ---
 

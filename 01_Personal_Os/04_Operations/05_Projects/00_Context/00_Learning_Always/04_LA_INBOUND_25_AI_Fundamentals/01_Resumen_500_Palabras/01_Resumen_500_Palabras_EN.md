@@ -25,12 +25,12 @@ Dharmesh Shah (CTO of HubSpot) gave a masterclass at INBOUND '25 on AI fundament
 
 Everything you want AI to know must go into the **context window**. The trick is putting the right stuff in:
 
-| Letter               | Means                 | Example                              |
-|----------------------|-----------------------|--------------------------------------|
-| **P**                | Prompt                | What you type                        |
-| **A**                | Archive               | Chat history                         |
-| **R**                | Resources             | PDFs, images, data                   |
-| **T**                | Tools                 | Browser, APIs, databases             |
+| Letter                 | Means                   | Example                                |
+|------------------------|-------------------------|----------------------------------------|
+| **P**                  | Prompt                  | What you type                          |
+| **A**                  | Archive                 | Chat history                           |
+| **R**                  | Resources               | PDFs, images, data                     |
+| **T**                  | Tools                   | Browser, APIs, databases               |
 
 **Metaphor**: The context window is like the notes you leave your future self in "Memento".
 

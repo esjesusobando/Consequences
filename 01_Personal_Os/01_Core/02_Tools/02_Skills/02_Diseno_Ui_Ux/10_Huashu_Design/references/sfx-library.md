@@ -31,85 +31,85 @@ assets/sfx/
 
 ### ⌨️ Keyboard（键盘输入）
 
-| 文件                                  | 时长         | 用途                                         | Prompt 要点                                                 |
-|-------------------------------------|------------|--------------------------------------------|-----------------------------------------------------------|
-| `sfx/keyboard/type.mp3`             | 0.5s       | 单键敲击（mechanical keyboard single key）       | mechanical keyboard single key press                      |
-| `sfx/keyboard/type-fast.mp3`        | 1.5s       | 连续快速打字（演示输入提示词）                            | fast continuous typing rhythm, apple magic keyboard       |
-| `sfx/keyboard/delete-key.mp3`       | 0.5s       | backspace 回删                               | single backspace key, low pitched thud                    |
-| `sfx/keyboard/space-tap.mp3`        | 0.5s       | 空格键轻击                                      | soft spacebar tap, wide flat                              |
-| `sfx/keyboard/enter.mp3`            | 0.5s       | 回车确认（v7b 保留）                               | enter key press, crisp tactile                            |
+| 文件                                    | 时长           | 用途                                           | Prompt 要点                                                   |
+|---------------------------------------|--------------|----------------------------------------------|-------------------------------------------------------------|
+| `sfx/keyboard/type.mp3`               | 0.5s         | 单键敲击（mechanical keyboard single key）         | mechanical keyboard single key press                        |
+| `sfx/keyboard/type-fast.mp3`          | 1.5s         | 连续快速打字（演示输入提示词）                              | fast continuous typing rhythm, apple magic keyboard         |
+| `sfx/keyboard/delete-key.mp3`         | 0.5s         | backspace 回删                                 | single backspace key, low pitched thud                      |
+| `sfx/keyboard/space-tap.mp3`          | 0.5s         | 空格键轻击                                        | soft spacebar tap, wide flat                                |
+| `sfx/keyboard/enter.mp3`              | 0.5s         | 回车确认（v7b 保留）                                 | enter key press, crisp tactile                              |
 
 ### 🎯 UI（界面交互）
 
-| 文件                              | 时长         | 用途                         | Prompt 要点                                      |
-|---------------------------------|------------|----------------------------|------------------------------------------------|
-| `sfx/ui/click.mp3`              | 0.5s       | 标准 UI 点击（v7b 保留）           | crisp modern interface click                   |
-| `sfx/ui/click-soft.mp3`         | 0.5s       | 柔和 UI click（次要按钮/链接）       | soft gentle button click, mid pitched          |
-| `sfx/ui/focus.mp3`              | 0.5s       | 元素聚焦/选中（v7b 保留）            | subtle focus tone, element highlight           |
-| `sfx/ui/hover-subtle.mp3`       | 0.5s       | 悬停提示（微秒级反馈）                | barely audible tick, air whisper               |
-| `sfx/ui/tap-finger.mp3`         | 0.5s       | 移动端 tap（iOS 界面）            | finger tap on touchscreen, muted thud          |
-| `sfx/ui/toggle-on.mp3`          | 0.5s       | 开关打开                       | ios toggle switch flip, satisfying click       |
+| 文件                                | 时长           | 用途                           | Prompt 要点                                        |
+|-----------------------------------|--------------|------------------------------|--------------------------------------------------|
+| `sfx/ui/click.mp3`                | 0.5s         | 标准 UI 点击（v7b 保留）             | crisp modern interface click                     |
+| `sfx/ui/click-soft.mp3`           | 0.5s         | 柔和 UI click（次要按钮/链接）         | soft gentle button click, mid pitched            |
+| `sfx/ui/focus.mp3`                | 0.5s         | 元素聚焦/选中（v7b 保留）              | subtle focus tone, element highlight             |
+| `sfx/ui/hover-subtle.mp3`         | 0.5s         | 悬停提示（微秒级反馈）                  | barely audible tick, air whisper                 |
+| `sfx/ui/tap-finger.mp3`           | 0.5s         | 移动端 tap（iOS 界面）              | finger tap on touchscreen, muted thud            |
+| `sfx/ui/toggle-on.mp3`            | 0.5s         | 开关打开                         | ios toggle switch flip, satisfying click         |
 
 ### 🌊 Transition（过渡）
 
-| 文件                                          | 时长         | 用途                         | Prompt 要点                               |
-|---------------------------------------------|------------|----------------------------|-----------------------------------------|
-| `sfx/transition/whoosh.mp3`                 | 0.5s       | 标准 whoosh（v7b 保留）          | air whoosh transition                   |
-| `sfx/transition/whoosh-fast.mp3`            | 0.6s       | 快速 whoosh（标题闪入、标签切换）       | quick fast air whoosh, cinematic        |
-| `sfx/transition/swipe-horizontal.mp3`       | 0.7s       | 横向滑动（轮播、tab 切换）            | smooth left-to-right air movement       |
-| `sfx/transition/slide-in.mp3`               | 0.6s       | 元素滑入（side panel、抽屉）        | smooth soft whoosh with arrival         |
-| `sfx/transition/dissolve.mp3`               | 0.8s       | 柔化融化（图片淡出淡入）               | soft dissolve, airy shimmer             |
+| 文件                                            | 时长           | 用途                           | Prompt 要点                                 |
+|-----------------------------------------------|--------------|------------------------------|-------------------------------------------|
+| `sfx/transition/whoosh.mp3`                   | 0.5s         | 标准 whoosh（v7b 保留）            | air whoosh transition                     |
+| `sfx/transition/whoosh-fast.mp3`              | 0.6s         | 快速 whoosh（标题闪入、标签切换）         | quick fast air whoosh, cinematic          |
+| `sfx/transition/swipe-horizontal.mp3`         | 0.7s         | 横向滑动（轮播、tab 切换）              | smooth left-to-right air movement         |
+| `sfx/transition/slide-in.mp3`                 | 0.6s         | 元素滑入（side panel、抽屉）          | smooth soft whoosh with arrival           |
+| `sfx/transition/dissolve.mp3`                 | 0.8s         | 柔化融化（图片淡出淡入）                 | soft dissolve, airy shimmer               |
 
 ### 🃏 Container（卡片/容器）
 
-| 文件                                       | 时长         | 用途                    | Prompt 要点                                   |
-|------------------------------------------|------------|-----------------------|---------------------------------------------|
-| `sfx/container/card-snap.mp3`            | 0.5s       | 卡片吸附/定位（v7b 保留）       | card snap into place                        |
-| `sfx/container/card-flip.mp3`            | 0.7s       | 卡片翻转（前后面切换）           | playing card flip, crisp snap               |
-| `sfx/container/stack-collapse.mp3`       | 0.8s       | 堆叠合拢（列表聚合）            | cards stacking, paper taps collapsing       |
-| `sfx/container/modal-open.mp3`           | 0.6s       | 模态框打开                 | modal popping open, whoosh + thud           |
+| 文件                                         | 时长           | 用途                      | Prompt 要点                                     |
+|--------------------------------------------|--------------|-------------------------|-----------------------------------------------|
+| `sfx/container/card-snap.mp3`              | 0.5s         | 卡片吸附/定位（v7b 保留）         | card snap into place                          |
+| `sfx/container/card-flip.mp3`              | 0.7s         | 卡片翻转（前后面切换）             | playing card flip, crisp snap                 |
+| `sfx/container/stack-collapse.mp3`         | 0.8s         | 堆叠合拢（列表聚合）              | cards stacking, paper taps collapsing         |
+| `sfx/container/modal-open.mp3`             | 0.6s         | 模态框打开                   | modal popping open, whoosh + thud             |
 
 ### 🔔 Feedback（通知/反馈）
 
-| 文件                                        | 时长         | 用途                    | Prompt 要点                                    |
-|-------------------------------------------|------------|-----------------------|----------------------------------------------|
-| `sfx/feedback/success-chime.mp3`          | 1.0s       | 成功提示（支付成功、任务完成）       | two ascending bell tones, ios-style          |
-| `sfx/feedback/error-tone.mp3`             | 0.7s       | 错误提示（警告、失败）           | descending two-note warning, soft            |
-| `sfx/feedback/notification-pop.mp3`       | 0.6s       | 消息弹出（toast、通知）        | notification bloop, ios message alert        |
-| `sfx/feedback/achievement.mp3`            | 1.5s       | 成就达成（里程碑、徽章）          | triumphant rising arpeggio, game-style       |
+| 文件                                          | 时长           | 用途                      | Prompt 要点                                      |
+|---------------------------------------------|--------------|-------------------------|------------------------------------------------|
+| `sfx/feedback/success-chime.mp3`            | 1.0s         | 成功提示（支付成功、任务完成）         | two ascending bell tones, ios-style            |
+| `sfx/feedback/error-tone.mp3`               | 0.7s         | 错误提示（警告、失败）             | descending two-note warning, soft              |
+| `sfx/feedback/notification-pop.mp3`         | 0.6s         | 消息弹出（toast、通知）          | notification bloop, ios message alert          |
+| `sfx/feedback/achievement.mp3`              | 1.5s         | 成就达成（里程碑、徽章）            | triumphant rising arpeggio, game-style         |
 
 ### ⏳ Progress（进度/状态）
 
-| 文件                                      | 时长         | 用途                  | Prompt 要点                                 |
-|-----------------------------------------|------------|---------------------|-------------------------------------------|
-| `sfx/progress/loading-tick.mp3`         | 0.5s       | 加载计时（进度条节拍）         | soft short pulse, minimal ambient         |
-| `sfx/progress/complete-done.mp3`        | 0.8s       | 完成确认（step 完成）       | two ascending satisfying tones            |
-| `sfx/progress/generate-start.mp3`       | 0.8s       | AI 开始生成             | soft rising shimmer, magical whoosh       |
+| 文件                                        | 时长           | 用途                    | Prompt 要点                                   |
+|-------------------------------------------|--------------|-----------------------|---------------------------------------------|
+| `sfx/progress/loading-tick.mp3`           | 0.5s         | 加载计时（进度条节拍）           | soft short pulse, minimal ambient           |
+| `sfx/progress/complete-done.mp3`          | 0.8s         | 完成确认（step 完成）         | two ascending satisfying tones              |
+| `sfx/progress/generate-start.mp3`         | 0.8s         | AI 开始生成               | soft rising shimmer, magical whoosh         |
 
 ### 💥 Impact（品牌/冲击）
 
-| 文件                                    | 时长         | 用途                         | Prompt 要点                                  |
-|---------------------------------------|------------|----------------------------|--------------------------------------------|
-| `sfx/impact/logo-reveal.mp3`          | 0.7s       | Logo impact（v7b 保留）        | logo reveal thud                           |
-| `sfx/impact/logo-reveal-v2.mp3`       | 1.5s       | 更长的 Logo impact（电影感）       | cinematic bass hit with shimmer tail       |
-| `sfx/impact/brand-stamp.mp3`          | 1.0s       | 印章重击（认证、盖章）                | rubber stamp thud, paper contact           |
-| `sfx/impact/drop-thud.mp3`            | 0.7s       | 物件落地（插入、放置）                | heavy thud, wood surface contact           |
+| 文件                                      | 时长           | 用途                           | Prompt 要点                                    |
+|-----------------------------------------|--------------|------------------------------|----------------------------------------------|
+| `sfx/impact/logo-reveal.mp3`            | 0.7s         | Logo impact（v7b 保留）          | logo reveal thud                             |
+| `sfx/impact/logo-reveal-v2.mp3`         | 1.5s         | 更长的 Logo impact（电影感）         | cinematic bass hit with shimmer tail         |
+| `sfx/impact/brand-stamp.mp3`            | 1.0s         | 印章重击（认证、盖章）                  | rubber stamp thud, paper contact             |
+| `sfx/impact/drop-thud.mp3`              | 0.7s         | 物件落地（插入、放置）                  | heavy thud, wood surface contact             |
 
 ### ✨ Magic（AI 变换）
 
-| 文件                               | 时长         | 用途                        | Prompt 要点                                     |
-|----------------------------------|------------|---------------------------|-----------------------------------------------|
-| `sfx/magic/sparkle.mp3`          | 0.8s       | 魔法闪光（AI 高亮、惊喜）            | bright twinkling stars, fairy dust            |
-| `sfx/magic/ai-process.mp3`       | 1.2s       | AI 处理音（thinking 状态）       | modulating digital hum with shimmer           |
-| `sfx/magic/transform.mp3`        | 1.0s       | 变换过渡（morph 效果）            | rising shimmer whoosh with sparkle tail       |
+| 文件                                 | 时长           | 用途                          | Prompt 要点                                       |
+|------------------------------------|--------------|-----------------------------|-------------------------------------------------|
+| `sfx/magic/sparkle.mp3`            | 0.8s         | 魔法闪光（AI 高亮、惊喜）              | bright twinkling stars, fairy dust              |
+| `sfx/magic/ai-process.mp3`         | 1.2s         | AI 处理音（thinking 状态）         | modulating digital hum with shimmer             |
+| `sfx/magic/transform.mp3`          | 1.0s         | 变换过渡（morph 效果）              | rising shimmer whoosh with sparkle tail         |
 
 ### 💻 Terminal（命令行）
 
-| 文件                                       | 时长         | 用途         | Prompt 要点                                     |
-|------------------------------------------|------------|------------|-----------------------------------------------|
-| `sfx/terminal/command-execute.mp3`       | 0.5s       | 命令执行       | crisp digital beep with tick, hacker ui       |
-| `sfx/terminal/output-appear.mp3`         | 0.6s       | 输出出现       | rapid digital ticks, retro printout           |
-| `sfx/terminal/cursor-blink.mp3`          | 0.5s       | 光标闪烁       | subtle soft digital pulse, rhythmic           |
+| 文件                                         | 时长           | 用途           | Prompt 要点                                       |
+|--------------------------------------------|--------------|--------------|-------------------------------------------------|
+| `sfx/terminal/command-execute.mp3`         | 0.5s         | 命令执行         | crisp digital beep with tick, hacker ui         |
+| `sfx/terminal/output-appear.mp3`           | 0.6s         | 输出出现         | rapid digital ticks, retro printout             |
+| `sfx/terminal/cursor-blink.mp3`            | 0.5s         | 光标闪烁         | subtle soft digital pulse, rhythmic             |
 
 ---
 

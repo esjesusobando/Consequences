@@ -91,11 +91,11 @@ Redefinir tu workflow: "¿Qué puedo delegar a Claude?"
 
 ## 🎯 Matriz
 
-| Capability                 | Status                   | Cuándo Usar                 |
-|----------------------------|--------------------------|-----------------------------|
-| Open apps                  | ✅                        | Siempre                     |
-| File ops                   | ✅                        | Organizar                   |
-| Web browse                 | ✅                        | Research                    |
-| Notion write               | ✅ (MCP)                  | Documentation               |
-| Email                      | 🔜 Soon                   | Communication               |
-| Windows                    | ❌ Until Q3               | Waiting                     |
+| Capability                   | Status                     | Cuándo Usar                   |
+|------------------------------|----------------------------|-------------------------------|
+| Open apps                    | ✅                          | Siempre                       |
+| File ops                     | ✅                          | Organizar                     |
+| Web browse                   | ✅                          | Research                      |
+| Notion write                 | ✅ (MCP)                    | Documentation                 |
+| Email                        | 🔜 Soon                     | Communication                 |
+| Windows                      | ❌ Until Q3                 | Waiting                       |

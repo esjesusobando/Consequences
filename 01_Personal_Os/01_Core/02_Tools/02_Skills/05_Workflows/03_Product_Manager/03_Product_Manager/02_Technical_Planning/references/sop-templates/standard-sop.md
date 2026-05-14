@@ -29,10 +29,10 @@ Return to Definition of Done, confirm all checked.
 
 ## When Things Go Wrong
 
-| Issue                                | Fix                            |
-|--------------------------------------|--------------------------------|
-| [Common issue 1]                     | [Solution]                     |
-| [Common issue 2]                     | [Solution]                     |
+| Issue                                  | Fix                              |
+|----------------------------------------|----------------------------------|
+| [Common issue 1]                       | [Solution]                       |
+| [Common issue 2]                       | [Solution]                       |
 
 ## Questions?
 

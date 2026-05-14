@@ -165,13 +165,13 @@ For every statement, ask "Okay, so what?" If the copy doesn't answer that questi
 
 **Specificity upgrades:**
 
-| Vague                                       | Specific                                              |
-|---------------------------------------------|-------------------------------------------------------|
-| Save time                                   | Save 4 hours every week                               |
-| Many customers                              | 2,847 teams                                           |
-| Fast results                                | Results in 14 days                                    |
-| Improve your workflow                       | Cut your reporting time in half                       |
-| Great support                               | Response within 2 hours                               |
+| Vague                                         | Specific                                                |
+|-----------------------------------------------|---------------------------------------------------------|
+| Save time                                     | Save 4 hours every week                                 |
+| Many customers                                | 2,847 teams                                             |
+| Fast results                                  | Results in 14 days                                      |
+| Improve your workflow                         | Cut your reporting time in half                         |
+| Great support                                 | Response within 2 hours                                 |
 
 **Common specificity issues:**
 - Adjectives doing the work nouns should do
@@ -275,16 +275,16 @@ Use these for faster reviews when a full seven-sweep process isn't needed.
 
 **Replace these:**
 
-| Weak                               | Strong                           |
-|------------------------------------|----------------------------------|
-| Utilize                            | Use                              |
-| Implement                          | Set up                           |
-| Leverage                           | Use                              |
-| Facilitate                         | Help                             |
-| Innovative                         | New                              |
-| Robust                             | Strong                           |
-| Seamless                           | Smooth                           |
-| Cutting-edge                       | New/Modern                       |
+| Weak                                 | Strong                             |
+|--------------------------------------|------------------------------------|
+| Utilize                              | Use                                |
+| Implement                            | Set up                             |
+| Leverage                             | Use                                |
+| Facilitate                           | Help                               |
+| Innovative                           | New                                |
+| Robust                               | Strong                             |
+| Seamless                             | Smooth                             |
+| Cutting-edge                         | New/Modern                         |
 
 **Watch for:**
 - Adverbs (usually unnecessary)
@@ -443,9 +443,9 @@ This iterative process ensures each edit doesn't create new problems while respe
 
 ## When to Use Each Skill
 
-| Task                                                        | Skill to Use                                    |
-|-------------------------------------------------------------|-------------------------------------------------|
-| Writing new page copy from scratch                          | copywriting                                     |
-| Reviewing and improving existing copy                       | copy-editing (this skill)                       |
-| Editing copy you just wrote                                 | copy-editing (this skill)                       |
-| Structural or strategic page changes                        | page-cro                                        |
+| Task                                                          | Skill to Use                                      |
+|---------------------------------------------------------------|---------------------------------------------------|
+| Writing new page copy from scratch                            | copywriting                                       |
+| Reviewing and improving existing copy                         | copy-editing (this skill)                         |
+| Editing copy you just wrote                                   | copy-editing (this skill)                         |
+| Structural or strategic page changes                          | page-cro                                          |

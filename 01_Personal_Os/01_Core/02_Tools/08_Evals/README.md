@@ -46,13 +46,13 @@ Each eval includes:
 
 Tag patterns for analysis:
 
-| Code                                       | Meaning                                       |
-|--------------------------------------------|-----------------------------------------------|
-| `good-context-gathering`                   | Read/explored before acting                   |
-| `efficient-tool-use`                       | Minimal tool calls                            |
-| `iterative-refinement`                     | Improved based on feedback                    |
-| `task-tracking`                            | Used TodoWrite                                |
-| `incomplete`                               | Stopped before done                           |
+| Code                                         | Meaning                                         |
+|----------------------------------------------|-------------------------------------------------|
+| `good-context-gathering`                     | Read/explored before acting                     |
+| `efficient-tool-use`                         | Minimal tool calls                              |
+| `iterative-refinement`                       | Improved based on feedback                      |
+| `task-tracking`                              | Used TodoWrite                                  |
+| `incomplete`                                 | Stopped before done                             |
 
 ## CLI Reference
 

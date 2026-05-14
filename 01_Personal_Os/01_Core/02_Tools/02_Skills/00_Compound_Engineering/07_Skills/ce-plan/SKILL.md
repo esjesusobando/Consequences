@@ -285,14 +285,14 @@ Before detailing implementation units, decide whether an overview would help a r
 
 **When to include it:**
 
-| Work involves...                                              | Best overview form                                           |
-|---------------------------------------------------------------|--------------------------------------------------------------|
-| DSL or API surface design                                     | Pseudo-code grammar or contract sketch                       |
-| Multi-component integration                                   | Mermaid sequence or component diagram                        |
-| Data pipeline or transformation                               | Data flow sketch                                             |
-| State-heavy lifecycle                                         | State diagram                                                |
-| Complex branching logic                                       | Flowchart                                                    |
-| Single-component with non-obvious shape                       | Pseudo-code sketch                                           |
+| Work involves...                                                | Best overview form                                             |
+|-----------------------------------------------------------------|----------------------------------------------------------------|
+| DSL or API surface design                                       | Pseudo-code grammar or contract sketch                         |
+| Multi-component integration                                     | Mermaid sequence or component diagram                          |
+| Data pipeline or transformation                                 | Data flow sketch                                               |
+| State-heavy lifecycle                                           | State diagram                                                  |
+| Complex branching logic                                         | Flowchart                                                      |
+| Single-component with non-obvious shape                         | Pseudo-code sketch                                             |
 
 **When to skip it:**
 - Well-patterned work where prose and file paths tell the whole story

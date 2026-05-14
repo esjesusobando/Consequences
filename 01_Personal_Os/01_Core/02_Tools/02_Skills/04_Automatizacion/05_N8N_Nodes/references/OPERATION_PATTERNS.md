@@ -890,16 +890,16 @@ Time-based workflows - 28% have schedule triggers
 
 **Key Patterns by Category**:
 
-| Category                                      | Most Common                                        | Key Gotcha                                                |
-|-----------------------------------------------|----------------------------------------------------|-----------------------------------------------------------|
-| HTTP/API                                      | GET, POST JSON                                     | Remember sendBody: true                                   |
-| Webhooks                                      | POST receiver                                      | Data under $json.body                                     |
-| Communication                                 | Slack post                                         | Channel format (#name)                                    |
-| Database                                      | SELECT with params                                 | Use parameterized queries                                 |
-| Transform                                     | Set assignments                                    | Correct type per field                                    |
-| Conditional                                   | IF string equals                                   | Unary vs binary operators                                 |
-| AI                                            | OpenAI chat                                        | System + user messages                                    |
-| Schedule                                      | Daily at time                                      | Set timezone explicitly                                   |
+| Category                                        | Most Common                                          | Key Gotcha                                                  |
+|-------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|
+| HTTP/API                                        | GET, POST JSON                                       | Remember sendBody: true                                     |
+| Webhooks                                        | POST receiver                                        | Data under $json.body                                       |
+| Communication                                   | Slack post                                           | Channel format (#name)                                      |
+| Database                                        | SELECT with params                                   | Use parameterized queries                                   |
+| Transform                                       | Set assignments                                      | Correct type per field                                      |
+| Conditional                                     | IF string equals                                     | Unary vs binary operators                                   |
+| AI                                              | OpenAI chat                                          | System + user messages                                      |
+| Schedule                                        | Daily at time                                        | Set timezone explicitly                                     |
 
 **Configuration Approach**:
 1. Use patterns as starting point

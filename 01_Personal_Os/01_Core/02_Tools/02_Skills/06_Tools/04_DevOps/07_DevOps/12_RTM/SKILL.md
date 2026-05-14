@@ -60,12 +60,12 @@ metadata:
 
 ### 2. RTM Matrix Template
 
-| Requirement ID                     | Description                                      | Priority                     | Test Cases                               | Code Coverage                     | Status                      |
-|------------------------------------|--------------------------------------------------|------------------------------|------------------------------------------|-----------------------------------|-----------------------------|
-| REQ-001                            | User authentication via OAuth2                   | P0                           | TC-001, TC-002, TC-003                   | 95%                               | ✅ Done                      |
-| REQ-002                            | Session management with JWT                      | P0                           | TC-004, TC-005                           | 100%                              | ✅ Done                      |
-| REQ-003                            | Password reset flow                              | P1                           | TC-006, TC-007                           | 80%                               | 🔄 WIP                       |
-| REQ-004                            | MFA support                                      | P2                           | TC-008                                   | 0%                                | 📋 Planned                   |
+| Requirement ID                       | Description                                        | Priority                       | Test Cases                                 | Code Coverage                       | Status                        |
+|--------------------------------------|----------------------------------------------------|--------------------------------|--------------------------------------------|-------------------------------------|-------------------------------|
+| REQ-001                              | User authentication via OAuth2                     | P0                             | TC-001, TC-002, TC-003                     | 95%                                 | ✅ Done                        |
+| REQ-002                              | Session management with JWT                        | P0                             | TC-004, TC-005                             | 100%                                | ✅ Done                        |
+| REQ-003                              | Password reset flow                                | P1                             | TC-006, TC-007                             | 80%                                 | 🔄 WIP                         |
+| REQ-004                              | MFA support                                        | P2                             | TC-008                                     | 0%                                  | 📋 Planned                     |
 
 ### 3. RTM Data Model
 

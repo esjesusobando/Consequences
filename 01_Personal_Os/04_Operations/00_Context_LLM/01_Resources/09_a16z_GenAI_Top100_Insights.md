@@ -53,16 +53,16 @@
 
 ## 📊 Data Points to Remember
 
-| Metric | Value |
-|--------|-------|
-| ChatGPT weekly users | 900M (10% of global population) |
-| Claude subscriber growth | 200%+ YoY |
-| Gemini subscriber growth | 258% YoY |
-| OpenClaw GitHub stars | 68k in weeks, #1 on GitHub March 2026 |
-| Claude Code ARR | $1B in 6 months |
-| ChatGPT vs Gemini web traffic ratio | 2.7x |
-| ChatGPT vs Claude subscription ratio | 8x |
-| ChatGPT connector ecosystem | 220 apps across 13 categories |
+| Metric                               | Value                                 |
+|--------------------------------------|---------------------------------------|
+| ChatGPT weekly users                 | 900M (10% of global population)       |
+| Claude subscriber growth             | 200%+ YoY                             |
+| Gemini subscriber growth             | 258% YoY                              |
+| OpenClaw GitHub stars                | 68k in weeks, #1 on GitHub March 2026 |
+| Claude Code ARR                      | $1B in 6 months                       |
+| ChatGPT vs Gemini web traffic ratio  | 2.7x                                  |
+| ChatGPT vs Claude subscription ratio | 8x                                    |
+| ChatGPT connector ecosystem          | 220 apps across 13 categories         |
 
 ---
 

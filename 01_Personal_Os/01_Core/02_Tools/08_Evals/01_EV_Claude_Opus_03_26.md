@@ -51,11 +51,11 @@ run evals
 
 ## Tool Usage Summary
 
-| Tool                                                  | Count                     |
-|-------------------------------------------------------|---------------------------|
-| `mcp__manager-ai__get_eval_summary`                   | 1                         |
-| `mcp__manager-ai__list_evals`                         | 1                         |
-| `mcp__manager-ai__generate_eval`                      | 1                         |
+| Tool                                                    | Count                       |
+|---------------------------------------------------------|-----------------------------|
+| `mcp__manager-ai__get_eval_summary`                     | 1                           |
+| `mcp__manager-ai__list_evals`                           | 1                           |
+| `mcp__manager-ai__generate_eval`                        | 1                           |
 
 ---
 

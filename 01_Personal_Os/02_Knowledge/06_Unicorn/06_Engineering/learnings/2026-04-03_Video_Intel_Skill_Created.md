@@ -18,12 +18,12 @@ Transform audiovisual content (YouTube) and code (GitHub) into actionable implem
 
 ## Components
 
-| Component                           | Purpose                                                         |
-|-------------------------------------|-----------------------------------------------------------------|
-| video_analyzer.py                   | yt-dlp + whisper for metadata and transcription                 |
-| repo_scanner.py                     | git clone + AST parsing for code analysis                       |
-| synthesis_engine.py                 | Combines data and generates plan                                |
-| cli.py                              | Click CLI interface                                             |
+| Component                             | Purpose                                                           |
+|---------------------------------------|-------------------------------------------------------------------|
+| video_analyzer.py                     | yt-dlp + whisper for metadata and transcription                   |
+| repo_scanner.py                       | git clone + AST parsing for code analysis                         |
+| synthesis_engine.py                   | Combines data and generates plan                                  |
+| cli.py                                | Click CLI interface                                               |
 
 ## Usage
 

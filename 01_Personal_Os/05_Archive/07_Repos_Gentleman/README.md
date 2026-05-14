@@ -1,154 +1,106 @@
-# 07_Repos_Gentleman
+# 📂 07_Repos_Gentleman — Índice de Repositorios Externos
 
----
-### ⚙️ Gentleman README Template
-- **Propósito:** Repositorios externos de referencia (Gentleman.Dots, recursos externos) integrados al PersonalOS para desarrollo frontend de calidad premium.
-- **Estado:** Archivados (Legacy)
-- **Dependencias:** Ninguna (recursos externos clonados/añadidos)
-- **Dueño/Agente:** AI Agent (Think Different)
-- **Ref:** Ver `00_Winter_is_Coming/AGENTS.md` para configuración de skills.
-- **Nota importante:** Estos son **copias locales**, NO submodules de git.
-- **⚠️ IMPORTANTE:** LEER al inicio de cada sesión para comprender los principios del OS.
+> **Última actualización:** 2026-05-14 · **Versión:** v4.1 · **Numeración:** `XX_Pascal_Case`
 
 ---
 
-## 📚 Repositorios Oficiales Gentleman-Programming
+## 📋 ÍNDICE COMPLETO (23 repos + 3 submodules)
 
-> **NOTA:** Estos repos se actualizan frecuentemente. Verificar versiones antes de clonar.
-
-| Repo                                       | Stars                 | URL GitHub                                                                      | Última Versión GitHub               | Actualizado                 | Notas                                         |
-|--------------------------------------------|-----------------------|---------------------------------------------------------------------------------|-------------------------------------|-----------------------------|-----------------------------------------------|
-| **gentle-ai**                              | 2.2k ⭐                | https://github.com/Gentleman-Programming/gentle-ai                              | **v1.21.0**                         | 2026-04-17                  | AI Gentle Stack (reemplaza ATL)               |
-| **engram**                                 | 2.7k ⭐                | https://github.com/Gentleman-Programming/engram                                 | **v2.10+**                          | 2026-04-12                  | Memoria persistente                           |
-| **Gentleman.Dots**                         | 1.7k ⭐                | https://github.com/Gentleman-Programming/Gentleman.Dots                         | **v2.9.10**                         | 2026-04-12                  | LazyVim config                                |
-| **gentleman-guardian-angel**               | 961 ⭐                 | https://github.com/Gentleman-Programming/gentleman-guardian-angel               | **v2.8+**                           | 2026-03-29                  | GGA code review                               |
-| **gentleman-skills**                       | 462 ⭐                 | https://github.com/Gentleman-Programming/Gentleman-Skills                       | —                                   | 2026-03-28                  | Skills curadas                                |
-| **agent-teams-lite**                       | 1.2k ⭐                | https://github.com/Gentleman-Programming/agent-teams-lite                       | **ARCHIVED**                        | 2026-03-26                  | ⚠️ Migrado a gentle-ai                        |
-
-### Repositorios Adicionales
-
-| Repo                                              | URL GitHub                                                                | Notas                                          |
-|---------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------|
-| **taste-skill**                                   | https://github.com/Leonxlnx/taste-skill                                   | Diseño premium                                 |
-| **obsidian-digital-garden**                       | https://github.com/oleeskild/obsidian-digital-garden                      | Publicación notas                              |
-| **compound-engineering-plugin**                   | https://github.com/EveryInc/compound-engineering-plugin                   | Compound Engineering (NUEVO)                   |
-
----
-
-## 📦 Estado de Clonación (2026-04-01)
-
-| Repo                                       | Clonado                     | Ubicación                                                       |
-|--------------------------------------------|-----------------------------|-----------------------------------------------------------------|
-| agent-teams-lite                           | ✅                           | `07_Repos_Gentleman/agent-teams-lite/`                          |
-| Gentleman.Dots                             | ✅                           | `07_Repos_Gentleman/Gentleman.Dots/`                            |
-| engram                                     | ✅                           | `07_Repos_Gentleman/engram/`                                    |
-| gentle-ai                                  | ✅                           | `07_Repos_Gentleman/gentle-ai/`                                 |
-| gentleman-guardian-angel                   | ✅                           | `.agent/05_GGA/` (local)                                        |
-| gentleman-skills                           | ✅                           | `07_Repos_Gentleman/gentleman-skills/`                          |
-| obsidian-digital-garden                    | ✅                           | `07_Repos_Gentleman/obsidian-digital-garden/`                   |
-| qmd                                        | ⚠️                          | NO clonado - usar `bun add -g @tobilu/qmd`                      |
-
-### Taste-Skills (Leonxlnx)
-
-> **Repo Original:** https://github.com/Leonxlnx/taste-skill
-> **⭐ Stars:** 3.9k | **🍴 Forks:** 314
-
-> **IMPORTANTE:** Las Taste-Skills están instaladas en `.cursor/` y `.agent/`, NO en este directorio.
-
-| Skill                                | Propósito                                      | Cuándo Usar                                       |
-|--------------------------------------|------------------------------------------------|---------------------------------------------------|
-| `taste-skill`                        | Diseño premium desde cero                      | Webs, landing pages                               |
-| `soft-skill`                         | Look expensive                                 | Proyectos premium, invitaciones                   |
-| `minimalist-skill`                   | Estilo Notion/Linear                           | Dashboards, interfaces clean                      |
-| `redesign-skill`                     | Mejorar proyectos existentes                   | Actualizar proyectos legacy                       |
-| `output-skill`                       | Evita código incompleto                        | SIEMPRE                                           |
-
-### Configuración (Taste-Skills)
-
-```markdown
-DESIGN_VARIANCE (1-10)
-├── 1-3: Clean, centered, standard grids
-├── 4-7: Overlapping elements, varied sizes
-└── 8-10: Asymmetric, lots of whitespace
-
-MOTION_INTENSITY (1-10)
-├── 1-3: Almost none, simple hover
-├── 4-7: Fade-ins, smooth scrolling
-└── 8-10: Magnetic effects, spring physics
-
-VISUAL_DENSITY (1-10)
-├── 1-3: Big and spacious, luxury feel
-├── 4-7: Normal spacing, typical app
-└── 8-10: Dense and compact, dashboards
-```
-
-## Estructura
-
-```
-.cursor/02_Skills/11_Taste_Skills/     # Para Cursor IDE
-└── taste-skill/                        # Diseño principal
-    ├── taste-skill/SKILL.md            # Diseño premium desde cero
-    ├── soft-skill/SKILL.md             # Look premium/lujoso
-    ├── minimalist-skill/SKILL.md       # Estilo Notion/Linear
-    ├── redesign-skill/SKILL.md         # Mejorar existentes
-    └── output-skill/SKILL.md           # Código completo
-
-01_Personal_Os/01_Core/02_Tools/02_Skills/11_Taste_Skills/       # Para OpenCode
-└── taste-skill/                        # Diseño principal
-    ├── taste-skill/SKILL.md            # Diseño premium desde cero
-    ├── soft-skill/SKILL.md             # Look premium/lujoso
-    ├── minimalist-skill/SKILL.md       # Estilo Notion/Linear
-    ├── redesign-skill/SKILL.md         # Mejorar existentes
-    └── output-skill/SKILL.md           # Código completo
-```
-
-## Uso
-
-### Referencia Directa (Cursor/Claude Code)
-
-```markdown
-# Diseño principal (Cursor):
-@.cursor/02_Skills/11_Taste_Skills/taste-skill/SKILL.md
-
-# Look expensive (Cursor):
-@.cursor/02_Skills/11_Taste_Skills/soft-skill/SKILL.md
-
-# Minimalist Notion/Linear (Cursor):
-@.cursor/02_Skills/11_Taste_Skills/minimalist-skill/SKILL.md
-
-# Mejorar proyectos (Cursor):
-@.cursor/02_Skills/11_Taste_Skills/redesign-skill/SKILL.md
-
-# Output completo (Cursor):
-@.cursor/02_Skills/11_Taste_Skills/output-skill/SKILL.md
-
-# Diseño principal (OpenCode):
-@01_Personal_Os/01_Core/02_Tools/02_Skills/11_Taste_Skills/taste-skill/SKILL.md
-
-# Look expensive (OpenCode):
-@01_Personal_Os/01_Core/02_Tools/02_Skills/11_Taste_Skills/soft-skill/SKILL.md
-```
-
-## Regla de Uso (OBLIGATORIO)
-
-> **Para TODO trabajo frontend, USAR SIEMPRE las Taste-Skills:**
-> - ✅ Webs
-> - ✅ Landing pages
-> - ✅ Invitaciones
-> - ✅ Formularios
-> - ✅ Dashboards
-> - ✅ Cualquier proyecto UI/UX
-
-## Integración PersonalOS
-
-| Archivo                                       | Estado                                                          |
-|-----------------------------------------------|-----------------------------------------------------------------|
-| `00_Winter_is_Coming/AGENTS.md`               | ✅ Actualizado con Taste-Skills PRIORIDAD ALTA                   |
-| `CLAUDE.md`                                   | ✅ Actualizado con PRIORIDAD MAXIMA                              |
-| `.cursor/CLAUDE.md`                           | ✅ Actualizado con ubicación correcta                            |
-| `README.md`                                   | ✅ Highlights + Ubicación correcta                               |
-| `README_DRAFT.md`                             | ✅ Metodología documentada                                       |
+| # | Repositorio                         | Fuente                               | Estado       | Uso                               |
+|:-:|-------------------------------------|--------------------------------------|:------------:|-----------------------------------|
+| 01 | `01_Claude_Ads`                    | AgriciDaniel/claude-ads               | ✅ Activo    | Claude Ads integration            |
+| 02 | `02_Agent_Teams_Lite`              | Gentleman-Programming/agent-teams      | ⚠️ Archive   | Agent Teams (legacy)              |
+| 03 | `03_Claude_Code_Learn`             | Gentleman-Programming/claude-code     | ✅ Activo    | Learning resources                |
+| 04 | `04_Compound_Engineering_Plugin`   | EveryInc/compound-engineering        | ✅ Activo    | **CE Philosophy** ⭐ PRIORIDAD    |
+| 05 | `05_Curso_Ai_Devs`                 | Curso AI Devs                        | ✅ Activo    | Curso desarrollo AI               |
+| 06 | `06_Design_System`                 | robonuggets/design-system             | ✅ Submodule | Design system components          |
+| 07 | `07_Digital_Garden`                | Obsidian Digital Garden               | ✅ Activo    | Publicación notas                 |
+| 08 | `08_Engram`                        | Gentleman-Programming/engram          | ✅ Activo    | **Memoria persistente** v2.10+   |
+| 09 | `09_Frontend_Slides`               | zarazhangrui/frontend-slides          | ✅ Submodule | **Presentaciones HTML** v2.0.0   |
+| 10 | `10_Gentle_AI`                     | Gentleman-Programming/gentle-ai       | ✅ Activo    | **AI Gentle Stack** v1.21.0        |
+| 11 | `11_Gentleman_Dots`                | Gentleman-Programming/Gentleman.Dots  | ✅ Activo    | **LazyVim config** v2.9.10         |
+| 12 | `12_Gentleman_Guardian_Angel`      | Gentleman-Programming/gga             | ✅ Activo    | **GGA Code Review** v2.8+         |
+| 13 | `13_Gentleman_Skills`             | Gentleman-Programming/gentleman-skills | ✅ Activo  | Skills curadas                   |
+| 14 | `14_Google_Workspace_Mcp_Server`  | Google Workspace MCP                  | ✅ Activo    | GCP integrations                  |
+| 15 | `15_Kit_Profesional_Alto_Impacto_2026` | Curso Premium                    | ✅ Activo    | Formación profesional             |
+| 16 | `16_N8n_Skills`                    | N8N skills                           | ✅ Activo    | N8N workflows                    |
+| 17 | `17_Open_Design`                    | nexu-io/open-design                   | ✅ Submodule | Open design system                |
+| 18 | `18_Personal_Os_Main`              | Gentleman-Programming/personal-os     | ✅ Activo    | Reference PersonalOS              |
+| 19 | `19_Pi_Vs_Claude_Code`             | PI vs Claude Code                     | ✅ Activo    | Comparative analysis              |
+| 20 | `20_Qmd`                           | QMD project                           | ✅ Clonado    | Quick notes terminal + MCP server (instalado globalmente) |
+| 21 | `21_Sub_Agent_Statusline`          | Joaquinvesapa/sub-agent-statusline    | ✅ Activo    | OpenCode sidebar agents           |
+| 22 | `22_Taste_Skill`                   | Leonxlnx/taste-skill                  | ✅ Activo    | **Diseño premium** ⭐ 3.9k stars  |
+| 23 | `23_Tubemaster`                    | Gentleman-Programming/tubemaster      | ✅ Activo    | YouTube operations                |
 
 ---
 
-*Última actualización: 2026-03-19*
+## ⭐ REPOS PRINCIPALES
+
+| Repositorio                    | Stars   | Versión    | Carpeta                     | Propósito                                    |
+|:-------------------------------|:-------:|:----------:|:---------------------------:|:--------------------------------------------|
+| **engram**                     | 2.7k ⭐  | v2.10+     | `08_Engram/`                | Memoria persistente (backbone del OS)        |
+| **gentle-ai**                  | 2.2k ⭐  | v1.21.0    | `10_Gentle_AI/`             | AI Gentle Stack (reemplaza ATL)              |
+| **taste-skill**                | 3.9k ⭐  | —          | `22_Taste_Skill/`          | **Diseño premium** UI/UX de alto impacto     |
+| **Gentleman.Dots**             | 1.7k ⭐  | v2.9.10    | `11_Gentleman_Dots/`       | Configuración LazyVim premium               |
+| **gentleman-guardian-angel**   | 961 ⭐   | v2.8+      | `12_Gentleman_Guardian_Angel/` | **GGA Code Review** automático            |
+| **frontend-slides**           | ⭐⭐⭐     | v2.0.0     | `09_Frontend_Slides/`      | **Presentaciones HTML** (predeterminada)     |
+| **compound-engineering-plugin**| —       | v2.55.0    | `04_Compound_Engineering_Plugin/` | **CE Philosophy** — hacer cada tarea más fácil |
+| **tubemaster**                | 9 ⭐     | v0.1.1     | `23_Tubemaster/`           | YouTube Operations (Web+CLI+MCP+API)         |
+
+---
+
+## 📦 ESTADO DE CLONACIÓN
+
+| # | Repositorio                 | Clonado | Ubicación                                  | Submodule |
+|:-:|----------------------------|:-------:|-------------------------------------------|:---------:|
+| 01 | Claude_Ads                |    ✅    | `01_Claude_Ads/`                           |           |
+| 02 | Agent_Teams_Lite          |    ✅    | `02_Agent_Teams_Lite/`                     |           |
+| 03 | Claude_Code_Learn          |    ✅    | `03_Claude_Code_Learn/`                    |           |
+| 04 | Compound_Engineering_Plugin | ✅    | `04_Compound_Engineering_Plugin/`         |           |
+| 05 | Curso_Ai_Devs              |    ✅    | `05_Curso_Ai_Devs/`                        |           |
+| 06 | Design_System              |    ✅    | `06_Design_System/`                        |    ✅     |
+| 07 | Digital_Garden             |    ✅    | `07_Digital_Garden/`                       |           |
+| 08 | Engram                     |    ✅    | `08_Engram/`                               |           |
+| 09 | Frontend_Slides            |    ✅    | `09_Frontend_Slides/`                      |    ✅     |
+| 10 | Gentle_AI                  |    ✅    | `10_Gentle_AI/`                            |           |
+| 11 | Gentleman_Dots             |    ✅    | `11_Gentleman_Dots/`                       |           |
+| 12 | Gentleman_Guardian_Angel   |    ✅    | `12_Gentleman_Guardian_Angel/`             |           |
+| 13 | Gentleman_Skills           |    ✅    | `13_Gentleman_Skills/`                     |           |
+| 14 | Google_Workspace_Mcp_Server | ✅    | `14_Google_Workspace_Mcp_Server/`          |           |
+| 15 | Kit_Profesional_Alto_Impacto_2026` | ✅ | `15_Kit_Profesional_Alto_Impacto_2026/`    |           |
+| 16 | N8n_Skills                 |    ✅    | `16_N8n_Skills/`                           |           |
+| 17 | Open_Design                |    ✅    | `17_Open_Design/`                          |    ✅     |
+| 18 | Personal_Os_Main           |    ✅    | `18_Personal_Os_Main/`                     |           |
+| 19 | Pi_Vs_Claude_Code          |    ✅    | `19_Pi_Vs_Claude_Code/`                    |           |
+| 20 | Qmd                        |    ✅    | `20_Qmd/` + global `qmd` installed         |           |
+| 21 | Sub_Agent_Statusline       |    ✅    | `21_Sub_Agent_Statusline/`                  |           |
+| 22 | Taste_Skill               |    ✅    | `22_Taste_Skill/`                          |           |
+| 23 | Tubemaster                 |    ✅    | `23_Tubemaster/`                           |           |
+
+---
+
+## 🔗 INTEGRACIONES ACTIVAS
+
+| Herramienta     | Config                               | Skills                                             |
+|:---------------|:-------------------------------------|:---------------------------------------------------|
+| **Claude Code**  | `.mcp.json` (raíz)                  | `01_Personal_Os/01_Core/02_Tools/02_Skills/`      |
+| **OpenCode**      | `~/.config/opencode/opencode.json`    | Skills locales en `.codex/`                       |
+| **GGA**           | `.agent/05_GGA/`                     | `.agent/05_GGA/bin/gga run`                        |
+| **Taste-Skills**  | Cursor IDE                           | `.cursor/02_Skills/11_Taste_Skills/`               |
+| **Taste-Skills**  | OpenCode                             | `01_Personal_Os/01_Core/02_Tools/02_Skills/11_Taste_Skills/` |
+
+---
+
+## 📝 NOTAS
+
+- 20 repos son **copias locales** (NO submodules)
+- 3 repos son **git submodules** ✅ correctamente numerados:
+  - `06_Design_System/`
+  - `09_Frontend_Slides/`
+  - `17_Open_Design/`
+- Para clonar en otra máquina, ejecutar los comandos listados en cada repositorio
+- ⚠️ **IMPORTANTE:** Leer `README.md` al inicio de cada sesión para comprender los principios del OS
+
+---
+
+*Última actualización: 2026-05-14 — v4.1*

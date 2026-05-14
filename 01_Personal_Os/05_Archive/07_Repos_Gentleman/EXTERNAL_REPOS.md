@@ -1,112 +1,89 @@
 # 📦 REPOS EXTERNOS CLONADOS
 
-> **Lista de repos clonados que NO están en git (agregados a .gitignore)**
+> **Lista de repos clonados localmente (no son parte del git principal)**
 >
 > Para clonar en otra máquina, ejecutar los comandos desde la raíz del proyecto.
+>
+> **Última actualización:** 2026-05-14 · **v4.1**
 
 ---
 
-## 1. Skill Creator Official (Anthropic)
+## 01 — Skill Creator Official (Anthropic)
 
-| Dato                                | Valor                                                                     |
-|-------------------------------------|---------------------------------------------------------------------------|
-| **URL**                             | `https://github.com/anthropics/claude-plugins-official`                   |
-| **Carpeta local**                   | `claude-plugins-official/`                                                |
-| **Propósito**                       | Skill Creator v2.0 con sistema de evaluación                              |
-| **Fecha clonado**                   | 2026-03-27                                                                |
-
-### Para clonar en otra máquina:
+| Dato           | Valor                                               |
+|:---------------|:----------------------------------------------------|
+| **URL**        | `https://github.com/anthropics/claude-plugins-official` |
+| **Carpeta**    | `01_Claude_Ads/` (referencia)                      |
+| **Propósito**  | Skill Creator v2.0 con sistema de evaluación         |
+| **Fecha**      | 2026-03-27                                          |
 
 ```bash
-# Desde la raíz del proyecto (Think_Different/)
 git clone https://github.com/anthropics/claude-plugins-official
 ```
 
-### Contenido:
-- `plugins/skill-creator/` — Plugin principal
-- `scripts/` — Scripts de evaluación y benchmarking
-- `eval-viewer/` — Visor web de resultados
+**Contenido:** `plugins/skill-creator/`, `scripts/`, `eval-viewer/`
 
 ---
 
-## 2. Sub-Agent Statusline (Joaquinvesapa)
+## 02 — Sub-Agent Statusline
 
-| Dato                                | Valor                                                                     |
-|-------------------------------------|---------------------------------------------------------------------------|
-| **URL**                             | `https://github.com/Joaquinvesapa/sub-agent-statusline`                   |
-| **Carpeta local**                   | `sub-agent-statusline/`                                                   |
-| **Propósito**                       | Monitor Sidebar para OpenCode — tracking de subagentes en tiempo real     |
-| **npm**                             | `opencode-subagent-statusline` (instalado globalmente)                    |
-| **Fecha clonado**                   | 2026-04-25                                                                |
-| **Stars**                           | 32 ⭐                                                                      | **Forks** | 6 |
-
-### Para clonar en otra máquina:
+| Dato           | Valor                                               |
+|:---------------|:----------------------------------------------------|
+| **URL**        | `https://github.com/Joaquinvesapa/sub-agent-statusline` |
+| **Carpeta**    | `21_Sub_Agent_Statusline/`                          |
+| **npm**        | `opencode-subagent-statusline` (instalado globalmente) |
+| **Stars**      | 32 ⭐ · **Forks:** 6                                |
+| **Fecha**      | 2026-04-25                                          |
 
 ```bash
-# Desde esta carpeta
-git clone https://github.com/Joaquinvesapa/sub-agent-statusline
-```
-
-### Para instalar como plugin de OpenCode:
-
-```bash
-# Opción A: npm global
+# Instalación
 npm install -g opencode-subagent-statusline
 
-# Configurar en ~/.config/opencode/tui.json
+# Configuración ~/.config/opencode/tui.json
 {
   "$schema": "https://opencode.ai/tui.json",
   "plugin": ["opencode-subagent-statusline"]
 }
 ```
 
-### Funcionalidades:
-- Sidebar TUI con subagentes running/done/failed
-- Tiempo elapsed por subagente
-- Token/context usage (cuando OpenCode lo expone)
-- Runtime mode: file output para statuslines custom (`state.json`, `status.txt`)
+**Funcionalidades:** Sidebar TUI con subagentes, tiempo elapsed, token/context usage
 
 ---
 
-## 4. Frontend Slides (zarazhangrui) ⭐ PREDETERMINADA PARA PRESENTACIONES
+## 03 — Frontend Slides ⭐ PREDETERMINADA
 
-| Dato                                | Valor                                                                        |
-|-------------------------------------|------------------------------------------------------------------------------|
-| **URL**                             | `https://github.com/zarazhangrui/frontend-slides`                            |
-| **Carpeta local**                   | `frontend-slides/`                                                           |
-| **Propósito**                       | HTML Presentations — Skill para crear presentaciones web de alto impacto     |
-| **Stack**                           | Zero dependencies (HTML inline), CSS/JS embebido                             |
-| **Fecha clonado**                   | 2026-04-28                                                                   |
-| **Stars**                           | ⭐⭐⭐ Destacada                                                                |
+| Dato           | Valor                                               |
+|:---------------|:----------------------------------------------------|
+| **URL**        | `https://github.com/zarazhangrui/frontend-slides`   |
+| **Carpeta**    | `09_Frontend_Slides/` **(Submodule)**              |
+| **Propósito**  | HTML Presentations — Presentaciones web de alto impacto |
+| **Stars**      | ⭐⭐⭐ Destacada                                      |
+| **Fecha**      | 2026-04-28                                          |
 
-### ¿Por qué esta es la predeterminada?
-
-- **Zero dependencies** — Single HTML files que funcionan en 10 años
-- **Visual Style Discovery** — "Show, don't tell" — generas preview, el usuario elige
-- **Anti-AI-Slop** — 12 presets distintivos que evitan estética genérica
-- **PPT Conversion** — Convierte .pptx preservando imágenes y contenido
-- **Deploy to URL** — Vercel integration para compartir link permanente
-- **Export to PDF** — Playwright screenshot a 1920x1080
-
-### Estilos Disponibles:
-- **Dark:** Bold Signal, Electric Studio, Creative Voltage, Dark Botanical
-- **Light:** Notebook Tabs, Pastel Geometry, Split Pastel, Vintage Editorial
-- **Specialty:** Neon Cyber, Terminal Green, Swiss Modern, Paper & Ink
-
-### Para clonar en otra máquina:
 ```bash
 git clone https://github.com/zarazhangrui/frontend-slides
 ```
 
+**Stack:** Zero dependencies (HTML inline), CSS/JS embebido
+
+### Estilos Disponibles:
+| Categoría  | Presets                                                   |
+|:-----------|:----------------------------------------------------------|
+| **Dark**   | Bold Signal, Electric Studio, Creative Voltage, Dark Botanical |
+| **Light**  | Notebook Tabs, Pastel Geometry, Split Pastel, Vintage Editorial |
+| **Special**| Neon Cyber, Terminal Green, Swiss Modern, Paper & Ink    |
+
 ### Archivos principales:
-- `SKILL.md` — Workflow completo (~320 líneas)
-- `STYLE_PRESETS.md` — 12 presets visuales con colores, fonts, elementos signature
-- `viewport-base.css` — CSS responsive obligatorio para cada slide (100vh)
-- `html-template.md` — Arquitectura HTML y features JS
-- `animation-patterns.md` — Snippets de animación CSS/JS
-- `scripts/extract-pptx.py` — Extracción de contenido desde PPT
-- `scripts/deploy.sh` — Deploy a Vercel
-- `scripts/export-pdf.sh` — Export a PDF
+| Archivo                    | Descripción                        |
+|:---------------------------|:-----------------------------------|
+| `SKILL.md`                 | Workflow completo (~320 líneas)    |
+| `STYLE_PRESETS.md`         | 12 presets visuales                |
+| `viewport-base.css`       | CSS responsive (100vh/slide)        |
+| `html-template.md`        | Arquitectura HTML + features JS     |
+| `animation-patterns.md`   | Snippets animación CSS/JS          |
+| `scripts/extract-pptx.py` | Extracción contenido PPT           |
+| `scripts/deploy.sh`       | Deploy a Vercel                    |
+| `scripts/export-pdf.sh`   | Export a PDF (Playwright)           |
 
 ### Uso:
 ```
@@ -114,54 +91,120 @@ git clone https://github.com/zarazhangrui/frontend-slides
 > "Create a pitch deck for my AI startup"
 ```
 
-### Setup para PDF export:
-```bash
-pip install python-pptx  # Para conversión PPT
-npx playwright install chromium  # Para PDF export
-```
-
 ---
 
-## 5. TubeMaster (Gentleman-Programming)
+## 04 — TubeMaster
 
-| Dato                                | Valor                                                                     |
-|-------------------------------------|---------------------------------------------------------------------------|
-| **URL**                             | `https://github.com/Gentleman-Programming/tubemaster`                     |
-| **Carpeta local**                   | `tubemaster/`                                                             |
-| **Propósito**                       | YouTube Channel Operations Manager — Web UI, CLI, MCP, API                |
-| **Stack**                           | TypeScript, Next.js 15, Tailwind CSS                                      |
-| **Fecha clonado**                   | 2026-04-25                                                                |
-| **Stars**                           | 9 ⭐                                                                       | **Forks** | 2 |
+| Dato           | Valor                                               |
+|:---------------|:----------------------------------------------------|
+| **URL**        | `https://github.com/Gentleman-Programming/tubemaster` |
+| **Carpeta**    | `23_Tubemaster/`                                   |
+| **Propósito**  | YouTube Channel Operations Manager                   |
+| **Stars**      | 9 ⭐ · **Forks:** 2                                 |
+| **Fecha**      | 2026-04-25                                          |
 
-### Funcionalidades:
-- Auth once → operate end-to-end: videos, metadata, transcripts, playlists, rules
-- 4 interfaces: Web UI, CLI, MCP Server (stdio), API Route Handlers
-- Agent integrations via MCP
-- Transcript compatibility contract
-- Fail-closed write operations con expectedChannelId
-
-### Para clonar en otra máquina:
 ```bash
 git clone https://github.com/Gentleman-Programming/tubemaster
+cd tubemaster && npm install && npm run dev
 ```
 
-### Setup local:
+**Funcionalidades:** Auth once → operate end-to-end, 4 interfaces (Web UI, CLI, MCP, API), Agent integrations via MCP
+
+---
+
+## 05 — Personal OS Main
+
+| Dato           | Valor                                               |
+|:---------------|:----------------------------------------------------|
+| **URL**        | `https://github.com/Gentleman-Programming/personal-os-main` |
+| **Carpeta**    | `18_Personal_Os_Main/`                               |
+| **Propósito**  | Reference PersonalOS (base para el OS)               |
+| **Fecha**      | 2026-04-25                                          |
+
 ```bash
-cd tubemaster
-npm install
-npm run dev
-# Seguir docs/getting-started.md para OAuth + YouTube API
+git clone https://github.com/Gentleman-Programming/personal-os-main
 ```
 
 ---
 
-## Notas
+## 06 — Open Design
+
+| Dato           | Valor                                               |
+|:---------------|:----------------------------------------------------|
+| **URL**        | `https://github.com/nexu-io/open-design`            |
+| **Carpeta**    | `17_Open_Design/` **(Submodule)**                   |
+| **Propósito**  | Open design system collaboratively                  |
+| **Fecha**      | 2026-04-28                                          |
+
+```bash
+git clone https://github.com/nexu-io/open-design
+```
+
+---
+
+## 07 — QMD (No clonado)
+
+| Dato           | Valor                                               |
+|:---------------|:----------------------------------------------------|
+| **URL**        | `https://github.com/qmd/qmd`                         |
+| **Propósito**  | Quick notes from terminal                           |
+| **Instalación**| `bun add -g @tobilu/qmd`                           |
+
+```bash
+bun add -g @tobilu/qmd
+```
+
+---
+
+## 08 — Taste-Skill
+
+| Dato           | Valor                                               |
+|:---------------|:----------------------------------------------------|
+| **URL**        | `https://github.com/Leonxlnx/taste-skill`          |
+| **Carpeta**    | `22_Taste_Skill/`                                  |
+| **Stars**      | **3.9k ⭐** · **Forks:** 314 — Más popular         |
+| **Propósito**  | **Diseño premium** UI/UX                            |
+
+```bash
+git clone https://github.com/Leonxlnx/taste-skill
+```
+
+### Skills incluidas:
+| Skill              | Propósito                    |
+|:-------------------|:-----------------------------|
+| `taste-skill`      | Diseño premium desde cero    |
+| `soft-skill`       | Look expensive               |
+| `minimalist-skill` | Estilo Notion/Linear        |
+| `redesign-skill`   | Mejorar proyectos existentes |
+| `output-skill`     | Evita código incompleto      |
+
+### Configuración:
+```markdown
+DESIGN_VARIANCE (1-10)
+├── 1-3: Clean, centered, standard grids
+├── 4-7: Overlapping elements, varied sizes
+└── 8-10: Asymmetric, lots of whitespace
+
+MOTION_INTENSITY (1-10)
+├── 1-3: Almost none, simple hover
+├── 4-7: Fade-ins, smooth scrolling
+└── 8-10: Magnetic effects, spring physics
+
+VISUAL_DENSITY (1-10)
+├── 1-3: Big and spacious, luxury feel
+├── 4-7: Normal spacing, typical app
+└── 8-10: Dense and compact, dashboards
+```
+
+---
+
+## 📝 NOTAS
 
 - Estos repos se clonan localmente para uso en el proyecto
-- NO se commitean (están en .gitignore)
-- Solo se guarda la URL para clonar después en otra máquina
+- NO se commitean (están en `.gitignore`)
+- Solo se guarda la URL para clonar en otra máquina
 - La estructura del proyecto es portable así
 
 ---
 
-*Última actualización: 2026-04-28*
+*Última actualización: 2026-05-14 — v4.1*

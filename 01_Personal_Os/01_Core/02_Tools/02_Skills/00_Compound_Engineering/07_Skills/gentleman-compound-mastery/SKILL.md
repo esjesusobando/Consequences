@@ -62,48 +62,48 @@ ce:compound       # Documentar aprendizajes
 
 ### Frameworks (05_Vibe_Coding)
 
-| Framework                         | Skill                                                | Cuándo Usar                                    |
-|-----------------------------------|------------------------------------------------------|------------------------------------------------|
-| React 19                          | `05_Vibe_Coding/01_React_19`                         | Proyectos React modernos                       |
-| Next.js 15                        | `05_Vibe_Coding/02_Nextjs_15`                        | Apps con SSR/SSG                               |
-| Tailwind 4                        | `05_Vibe_Coding/03_Tailwind_4`                       | Estilos                                        |
-| Angular                           | `05_Vinge_Coding/04_Angular/*`                       | Enterprise apps                                |
-| TypeScript                        | `05_Vibe_Coding/05_TypeScript`                       | Tipado                                         |
-| Zustand 5                         | `05_Vibe_Coding/06_Zustand_5`                        | Estado                                         |
-| Zod 4                             | `05_Vibe_Coding/07_Zod_4`                            | Validación                                     |
-| AI SDK 5                          | `05_Vibe_Coding/08_Ai_Sdk_5`                         | AI integration                                 |
-| Django DRF                        | `05_Vibe_Coding/14_Django_Drf`                       | Backend Python                                 |
-| Playwright                        | `05_Vibe_Coding/17_Playwright`                       | E2E Testing                                    |
+| Framework                           | Skill                                                  | Cuándo Usar                                      |
+|-------------------------------------|--------------------------------------------------------|--------------------------------------------------|
+| React 19                            | `05_Vibe_Coding/01_React_19`                           | Proyectos React modernos                         |
+| Next.js 15                          | `05_Vibe_Coding/02_Nextjs_15`                          | Apps con SSR/SSG                                 |
+| Tailwind 4                          | `05_Vibe_Coding/03_Tailwind_4`                         | Estilos                                          |
+| Angular                             | `05_Vinge_Coding/04_Angular/*`                         | Enterprise apps                                  |
+| TypeScript                          | `05_Vibe_Coding/05_TypeScript`                         | Tipado                                           |
+| Zustand 5                           | `05_Vibe_Coding/06_Zustand_5`                          | Estado                                           |
+| Zod 4                               | `05_Vibe_Coding/07_Zod_4`                              | Validación                                       |
+| AI SDK 5                            | `05_Vibe_Coding/08_Ai_Sdk_5`                           | AI integration                                   |
+| Django DRF                          | `05_Vibe_Coding/14_Django_Drf`                         | Backend Python                                   |
+| Playwright                          | `05_Vibe_Coding/17_Playwright`                         | E2E Testing                                      |
 
 ### Testing (06_Testing)
 
-| Skill                                                         | Propósito                                   |
-|---------------------------------------------------------------|---------------------------------------------|
-| `06_Testing/01_Test_Driven_Development`                       | TDD workflow                                |
-| `06_Testing/02_Systematic_Debugging`                          | Debugging sistemático                       |
-| `06_Testing/05_Testing_Coverage`                              | Coverage optimization                       |
-| `06_Testing/09_E2E_Testing`                                   | E2E tests                                   |
-| `06_Testing/10_Integration_Testing`                           | Integration tests                           |
+| Skill                                                           | Propósito                                     |
+|-----------------------------------------------------------------|-----------------------------------------------|
+| `06_Testing/01_Test_Driven_Development`                         | TDD workflow                                  |
+| `06_Testing/02_Systematic_Debugging`                            | Debugging sistemático                         |
+| `06_Testing/05_Testing_Coverage`                                | Coverage optimization                         |
+| `06_Testing/09_E2E_Testing`                                     | E2E tests                                     |
+| `06_Testing/10_Integration_Testing`                             | Integration tests                             |
 
 ### DevOps (07_DevOps)
 
-| Skill                                                     | Propósito                                |
-|-----------------------------------------------------------|------------------------------------------|
-| `07_DevOps/01_Vercel_Deploy`                              | Deploy a Vercel                          |
-| `07_DevOps/02_Supabase_Integration`                       | Supabase                                 |
-| `07_DevOps/03_MCP_Integration`                            | MCP servers                              |
-| `07_DevOps/04_Observability`                              | Métricas y logging                       |
-| `07_DevOps/05_Seo_Audit`                                  | SEO                                      |
+| Skill                                                       | Propósito                                  |
+|-------------------------------------------------------------|--------------------------------------------|
+| `07_DevOps/01_Vercel_Deploy`                                | Deploy a Vercel                            |
+| `07_DevOps/02_Supabase_Integration`                         | Supabase                                   |
+| `07_DevOps/03_MCP_Integration`                              | MCP servers                                |
+| `07_DevOps/04_Observability`                                | Métricas y logging                         |
+| `07_DevOps/05_Seo_Audit`                                    | SEO                                        |
 
 ### Diseño (04_Product_Design)
 
-| Skill                                                         | Propósito                                  |
-|---------------------------------------------------------------|--------------------------------------------|
-| `04_Product_Design/01_Taste_Skill`                            | Diseño premium                             |
-| `04_Product_Design/02_Soft_Skill`                             | Look expensive                             |
-| `04_Product_Design/03_Minimalist_Skill`                       | Estilo Notion/Linear                       |
-| `04_Product_Design/04_Redesign_Skill`                         | Mejorar proyectos                          |
-| `04_Product_Design/05_Output_Skill`                           | Código completo                            |
+| Skill                                                           | Propósito                                    |
+|-----------------------------------------------------------------|----------------------------------------------|
+| `04_Product_Design/01_Taste_Skill`                              | Diseño premium                               |
+| `04_Product_Design/02_Soft_Skill`                               | Look expensive                               |
+| `04_Product_Design/03_Minimalist_Skill`                         | Estilo Notion/Linear                         |
+| `04_Product_Design/04_Redesign_Skill`                           | Mejorar proyectos                            |
+| `04_Product_Design/05_Output_Skill`                             | Código completo                              |
 
 ---
 
@@ -111,45 +111,45 @@ ce:compound       # Documentar aprendizajes
 
 ### Code Review (00_Compound_Engineering/01_Agents_Review)
 
-| Agent                                              | Propósito                                        |
-|----------------------------------------------------|--------------------------------------------------|
-| `security-sentinel`                                | Auditorías de seguridad                          |
-| `performance-oracle`                               | Análisis de performance                          |
-| `architecture-strategist`                          | Decisiones arquitectónicas                       |
-| `kieran-typescript-reviewer`                       | TypeScript estricto                              |
-| `kieran-python-reviewer`                           | Python estricto                                  |
-| `kieran-rails-reviewer`                            | Rails estricto                                   |
-| `data-migration-expert`                            | Migraciones de datos                             |
-| `maintainability-reviewer`                         | Acoplamiento, complejidad                        |
+| Agent                                                | Propósito                                          |
+|------------------------------------------------------|----------------------------------------------------|
+| `security-sentinel`                                  | Auditorías de seguridad                            |
+| `performance-oracle`                                 | Análisis de performance                            |
+| `architecture-strategist`                            | Decisiones arquitectónicas                         |
+| `kieran-typescript-reviewer`                         | TypeScript estricto                                |
+| `kieran-python-reviewer`                             | Python estricto                                    |
+| `kieran-rails-reviewer`                              | Rails estricto                                     |
+| `data-migration-expert`                              | Migraciones de datos                               |
+| `maintainability-reviewer`                           | Acoplamiento, complejidad                          |
 
 ### Document Review (00_Compound_Engineering/02_Agents_DocReview)
 
-| Agent                                           | Propósito                                  |
-|-------------------------------------------------|--------------------------------------------|
-| `coherence-reviewer`                            | Coherencia interna                         |
-| `feasibility-reviewer`                          | Viabilidad técnica                         |
-| `scope-guardian-reviewer`                       | Scope creep                                |
-| `design-lens-reviewer`                          | Decisiones de diseño                       |
+| Agent                                             | Propósito                                    |
+|---------------------------------------------------|----------------------------------------------|
+| `coherence-reviewer`                              | Coherencia interna                           |
+| `feasibility-reviewer`                            | Viabilidad técnica                           |
+| `scope-guardian-reviewer`                         | Scope creep                                  |
+| `design-lens-reviewer`                            | Decisiones de diseño                         |
 
 ### Research (00_Compound_Engineering/04_Agents_Research)
 
-| Agent                                             | Propósito                                     |
-|---------------------------------------------------|-----------------------------------------------|
-| `best-practices-researcher`                       | Best practices externas                       |
-| `framework-docs-researcher`                       | Docs de frameworks                            |
-| `learnings-researcher`                            | Aprendizajes pasados                          |
-| `repo-research-analyst`                           | Estructura del repo                           |
+| Agent                                               | Propósito                                       |
+|-----------------------------------------------------|-------------------------------------------------|
+| `best-practices-researcher`                         | Best practices externas                         |
+| `framework-docs-researcher`                         | Docs de frameworks                              |
+| `learnings-researcher`                              | Aprendizajes pasados                            |
+| `repo-research-analyst`                             | Estructura del repo                             |
 
 ### Workflow Commands (CE)
 
-| Command                                | Propósito                                      |
-|----------------------------------------|------------------------------------------------|
-| `/ce:ideate`                           | Ideación de mejoras                            |
-| `/ce:brainstorm`                       | Explorar requisitos                            |
-| `/ce:plan`                             | Planes de implementación                       |
-| `/ce:work`                             | Ejecución sistemática                          |
-| `/ce:review`                           | Code review multi-agente                       |
-| `/ce:compound`                         | Documentar aprendizajes                        |
+| Command                                  | Propósito                                        |
+|------------------------------------------|--------------------------------------------------|
+| `/ce:ideate`                             | Ideación de mejoras                              |
+| `/ce:brainstorm`                         | Explorar requisitos                              |
+| `/ce:plan`                               | Planes de implementación                         |
+| `/ce:work`                               | Ejecución sistemática                            |
+| `/ce:review`                             | Code review multi-agente                         |
+| `/ce:compound`                           | Documentar aprendizajes                          |
 
 ---
 

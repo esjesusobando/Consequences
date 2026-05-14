@@ -6,14 +6,14 @@
 
 ## Metadata
 
-| Campo                        | Valor                                                  |
-|------------------------------|--------------------------------------------------------|
-| **Speaker**                  | Dharmesh Shah                                          |
-| **Evento**                   | INBOUND '25, San Francisco                             |
-| **Fecha**                    | Abril 2025                                             |
-| **Role**                     | Co-founder & CTO, HubSpot                              |
-| **Newsletter**               | simple.AI                                              |
-| **Tema**                     | AI Fundamentals + How to Win with AI                   |
+| Campo                          | Valor                                                    |
+|--------------------------------|----------------------------------------------------------|
+| **Speaker**                    | Dharmesh Shah                                            |
+| **Evento**                     | INBOUND '25, San Francisco                               |
+| **Fecha**                      | Abril 2025                                               |
+| **Role**                       | Co-founder & CTO, HubSpot                                |
+| **Newsletter**                 | simple.AI                                                |
+| **Tema**                       | AI Fundamentals + How to Win with AI                     |
 
 ---
 
@@ -34,16 +34,16 @@ Key insight: "Use AI to test/clarify/elevate your thinking, don't use it to repl
 
 ## timestamps Clave
 
-| Tiempo               | Sección                                                    |
-|----------------------|------------------------------------------------------------|
-| 00:00                | Introducción personal                                      |
-| 05:00                | Cómo funciona AI (fundamentos)                             |
-| 15:00                | Marco PART (Prompt, Archive, Resources, Tools)             |
-| 25:00                | 60-30-10 Rule                                              |
-| 35:00                | Meta prompting                                             |
-| 45:00                | AI Agents y agent.ai                                       |
-| 55:00                | Estrategia de equipo                                       |
-| 65:00                | Cierre: IA + EQ                                            |
+| Tiempo                 | Sección                                                      |
+|------------------------|--------------------------------------------------------------|
+| 00:00                  | Introducción personal                                        |
+| 05:00                  | Cómo funciona AI (fundamentos)                               |
+| 15:00                  | Marco PART (Prompt, Archive, Resources, Tools)               |
+| 25:00                  | 60-30-10 Rule                                                |
+| 35:00                  | Meta prompting                                               |
+| 45:00                  | AI Agents y agent.ai                                         |
+| 55:00                  | Estrategia de equipo                                         |
+| 65:00                  | Cierre: IA + EQ                                              |
 
 ---
 

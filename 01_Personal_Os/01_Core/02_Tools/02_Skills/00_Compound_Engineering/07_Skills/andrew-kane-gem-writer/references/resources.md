@@ -10,47 +10,47 @@
 
 ### Search & Data
 
-| Gem                                  | Stars                         | Description                                        | Source                                                     |
-|--------------------------------------|-------------------------------|----------------------------------------------------|------------------------------------------------------------|
-| **Searchkick**                       | 6.6k+                         | Intelligent search for Rails                       | https://github.com/ankane/searchkick                       |
-| **Chartkick**                        | 6.4k+                         | Beautiful charts in Ruby                           | https://github.com/ankane/chartkick                        |
-| **Groupdate**                        | 3.8k+                         | Group by day, week, month                          | https://github.com/ankane/groupdate                        |
-| **Blazer**                           | 4.6k+                         | SQL dashboard for Rails                            | https://github.com/ankane/blazer                           |
+| Gem                                    | Stars                           | Description                                          | Source                                                       |
+|----------------------------------------|---------------------------------|------------------------------------------------------|--------------------------------------------------------------|
+| **Searchkick**                         | 6.6k+                           | Intelligent search for Rails                         | https://github.com/ankane/searchkick                         |
+| **Chartkick**                          | 6.4k+                           | Beautiful charts in Ruby                             | https://github.com/ankane/chartkick                          |
+| **Groupdate**                          | 3.8k+                           | Group by day, week, month                            | https://github.com/ankane/groupdate                          |
+| **Blazer**                             | 4.6k+                           | SQL dashboard for Rails                              | https://github.com/ankane/blazer                             |
 
 ### Database & Migrations
 
-| Gem                                         | Stars                         | Description                                 | Source                                                            |
-|---------------------------------------------|-------------------------------|---------------------------------------------|-------------------------------------------------------------------|
-| **PgHero**                                  | 8.2k+                         | PostgreSQL insights                         | https://github.com/ankane/pghero                                  |
-| **Strong Migrations**                       | 4.1k+                         | Safe migration checks                       | https://github.com/ankane/strong_migrations                       |
-| **Dexter**                                  | 1.8k+                         | Auto index advisor                          | https://github.com/ankane/dexter                                  |
-| **PgSync**                                  | 1.5k+                         | Sync Postgres data                          | https://github.com/ankane/pgsync                                  |
+| Gem                                           | Stars                           | Description                                   | Source                                                              |
+|-----------------------------------------------|---------------------------------|-----------------------------------------------|---------------------------------------------------------------------|
+| **PgHero**                                    | 8.2k+                           | PostgreSQL insights                           | https://github.com/ankane/pghero                                    |
+| **Strong Migrations**                         | 4.1k+                           | Safe migration checks                         | https://github.com/ankane/strong_migrations                         |
+| **Dexter**                                    | 1.8k+                           | Auto index advisor                            | https://github.com/ankane/dexter                                    |
+| **PgSync**                                    | 1.5k+                           | Sync Postgres data                            | https://github.com/ankane/pgsync                                    |
 
 ### Security & Encryption
 
-| Gem                                      | Stars                         | Description                                        | Source                                                      |
-|------------------------------------------|-------------------------------|----------------------------------------------------|-------------------------------------------------------------|
-| **Lockbox**                              | 1.5k+                         | Application-level encryption                       | https://github.com/ankane/lockbox                           |
-| **Blind Index**                          | 1.0k+                         | Encrypted search                                   | https://github.com/ankane/blind_index                       |
-| **Secure Headers**                       | —                             | Contributed patterns                               | Referenced in gems                                          |
+| Gem                                        | Stars                           | Description                                          | Source                                                        |
+|--------------------------------------------|---------------------------------|------------------------------------------------------|---------------------------------------------------------------|
+| **Lockbox**                                | 1.5k+                           | Application-level encryption                         | https://github.com/ankane/lockbox                             |
+| **Blind Index**                            | 1.0k+                           | Encrypted search                                     | https://github.com/ankane/blind_index                         |
+| **Secure Headers**                         | —                               | Contributed patterns                                 | Referenced in gems                                            |
 
 ### Analytics & ML
 
-| Gem                                | Stars                         | Description                                   | Source                                                      |
-|------------------------------------|-------------------------------|-----------------------------------------------|-------------------------------------------------------------|
-| **Ahoy**                           | 4.2k+                         | Analytics for Rails                           | https://github.com/ankane/ahoy                              |
-| **Neighbor**                       | 1.1k+                         | Vector search for Rails                       | https://github.com/ankane/neighbor                          |
-| **Rover**                          | 700+                          | DataFrames for Ruby                           | https://github.com/ankane/rover                             |
-| **Tomoto**                         | 200+                          | Topic modeling                                | https://github.com/ankane/tomoto-ruby                       |
+| Gem                                  | Stars                           | Description                                     | Source                                                        |
+|--------------------------------------|---------------------------------|-------------------------------------------------|---------------------------------------------------------------|
+| **Ahoy**                             | 4.2k+                           | Analytics for Rails                             | https://github.com/ankane/ahoy                                |
+| **Neighbor**                         | 1.1k+                           | Vector search for Rails                         | https://github.com/ankane/neighbor                            |
+| **Rover**                            | 700+                            | DataFrames for Ruby                             | https://github.com/ankane/rover                               |
+| **Tomoto**                           | 200+                            | Topic modeling                                  | https://github.com/ankane/tomoto-ruby                         |
 
 ### Utilities
 
-| Gem                                 | Stars                         | Description                                   | Source                                                    |
-|-------------------------------------|-------------------------------|-----------------------------------------------|-----------------------------------------------------------|
-| **Pretender**                       | 2.0k+                         | Login as another user                         | https://github.com/ankane/pretender                       |
-| **Authtrail**                       | 900+                          | Login activity tracking                       | https://github.com/ankane/authtrail                       |
-| **Notable**                         | 200+                          | Track notable requests                        | https://github.com/ankane/notable                         |
-| **Logstop**                         | 200+                          | Filter sensitive logs                         | https://github.com/ankane/logstop                         |
+| Gem                                   | Stars                           | Description                                     | Source                                                      |
+|---------------------------------------|---------------------------------|-------------------------------------------------|-------------------------------------------------------------|
+| **Pretender**                         | 2.0k+                           | Login as another user                           | https://github.com/ankane/pretender                         |
+| **Authtrail**                         | 900+                            | Login activity tracking                         | https://github.com/ankane/authtrail                         |
+| **Notable**                           | 200+                            | Track notable requests                          | https://github.com/ankane/notable                           |
+| **Logstop**                           | 200+                            | Filter sensitive logs                           | https://github.com/ankane/logstop                           |
 
 ## Key Source Files to Study
 

@@ -41,33 +41,33 @@ Think_Different/
 
 ## 🎯 Sistema de Prioridades
 
-| Prioridad                    | Significado                     | Límite                     |
-|------------------------------|---------------------------------|----------------------------|
-| **P0**                       | Hacer hoy                       | max 3                      |
-| **P1**                       | Esta semana                     | max 7                      |
-| **P2**                       | Programado                      |----------------------------|
-| **P3**                       | Algún día                       |----------------------------|
+| Prioridad                      | Significado                       | Límite                       |
+|--------------------------------|-----------------------------------|------------------------------|
+| **P0**                         | Hacer hoy                         | max 3                        |
+| **P1**                         | Esta semana                       | max 7                        |
+| **P2**                         | Programado                        |------------------------------|
+| **P3**                         | Algún día                         |------------------------------|
 
 ### Estados de Tarea
 
-| Estado                     | Significado                     |
-|----------------------------|---------------------------------|
-| `n`                        | not started                     |
-| `s`                        | started                         |
-| `b`                        | blocked                         |
-| `d`                        | done                            |
+| Estado                       | Significado                       |
+|------------------------------|-----------------------------------|
+| `n`                          | not started                       |
+| `s`                          | started                           |
+| `b`                          | blocked                           |
+| `d`                          | done                              |
 
 ### Categorías
 
-| Categoría                     | Descripción                                      |
-|-------------------------------|--------------------------------------------------|
-| `technical`                   | build, fix, configure                            |
-| `outreach`                    | communicate, meet                                |
-| `research`                    | learn, analyze                                   |
-| `writing`                     | draft, document                                  |
-| `admin`                       | operations, finance, logistics                   |
-| `personal`                    | health, routines                                 |
-| `other`                       | everything else                                  |
+| Categoría                       | Descripción                                        |
+|---------------------------------|----------------------------------------------------|
+| `technical`                     | build, fix, configure                              |
+| `outreach`                      | communicate, meet                                  |
+| `research`                      | learn, analyze                                     |
+| `writing`                       | draft, document                                    |
+| `admin`                         | operations, finance, logistics                     |
+| `personal`                      | health, routines                                   |
+| `other`                         | everything else                                    |
 
 ---
 

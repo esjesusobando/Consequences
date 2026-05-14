@@ -20,11 +20,11 @@ Skill para gestión completa del ecosistema MCP (Model Context Protocol): discov
 
 ### Server Types
 
-| Type                                   | Transport                              | Ejemplo                                        |
-|----------------------------------------|----------------------------------------|------------------------------------------------|
-| **stdio**                              | Standard I/O                           | filesystem, notion, exa                        |
-| **streamableHttp**                     | HTTP Streaming                         | context7, github, supabase                     |
-| **sse**                                | Server-Sent Events                     | legacy servers                                 |
+| Type                                     | Transport                                | Ejemplo                                          |
+|------------------------------------------|------------------------------------------|--------------------------------------------------|
+| **stdio**                                | Standard I/O                             | filesystem, notion, exa                          |
+| **streamableHttp**                       | HTTP Streaming                           | context7, github, supabase                       |
+| **sse**                                  | Server-Sent Events                       | legacy servers                                   |
 
 ### Transport Patterns
 
@@ -100,74 +100,74 @@ echo '{"jsonrpc":"2.0","id":1,"method":"tools/list"}' | npx -y @package/mcp-serv
 ## MCP Servers en PersonalOS
 
 ### Core Servers (Siempre activos)
-| Server                                | Transport                          | Propósito                                        |
-|---------------------------------------|------------------------------------|--------------------------------------------------|
-| **engram**                            | stdio                              | Memoria persistente                              |
-| **context7**                          | streamableHttp                     | Docs de frameworks (100+)                        |
-| **exa**                               | stdio                              | Búsqueda web + código                            |
-| **github**                            | streamableHttp                     | GitHub API                                       |
-| **firecrawl-mcp**                     | stdio                              | Web scraping + deep research                     |
+| Server                                  | Transport                            | Propósito                                          |
+|-----------------------------------------|--------------------------------------|----------------------------------------------------|
+| **engram**                              | stdio                                | Memoria persistente                                |
+| **context7**                            | streamableHttp                       | Docs de frameworks (100+)                          |
+| **exa**                                 | stdio                                | Búsqueda web + código                              |
+| **github**                              | streamableHttp                       | GitHub API                                         |
+| **firecrawl-mcp**                       | stdio                                | Web scraping + deep research                       |
 
 ### Productivity Servers
-| Server                                | Transport                          | Propósito                                  |
-|---------------------------------------|------------------------------------|--------------------------------------------|
-| **Notion**                            | stdio                              | Base de datos                              |
-| **mcp-obsidian**                      | stdio                              | Obsidian vault primary                     |
-| **obsidian-api**                      | stdio                              | Obsidian failover                          |
-| **Linear**                            | streamableHttp                     | Issue tracking                             |
-| **jira-extended**                     | stdio                              | Jira extended                              |
-| **atlassian**                         | streamableHttp                     | Atlassian suite                            |
-| **slack**                             | stdio                              | Slack messaging                            |
+| Server                                  | Transport                            | Propósito                                    |
+|-----------------------------------------|--------------------------------------|----------------------------------------------|
+| **Notion**                              | stdio                                | Base de datos                                |
+| **mcp-obsidian**                        | stdio                                | Obsidian vault primary                       |
+| **obsidian-api**                        | stdio                                | Obsidian failover                            |
+| **Linear**                              | streamableHttp                       | Issue tracking                               |
+| **jira-extended**                       | stdio                                | Jira extended                                |
+| **atlassian**                           | streamableHttp                       | Atlassian suite                              |
+| **slack**                               | stdio                                | Slack messaging                              |
 
 ### Database & Deployment
-| Server                           | Transport                          | Propósito                                |
-|----------------------------------|------------------------------------|------------------------------------------|
-| **supabase**                     | streamableHttp                     | Database                                 |
-| **postgres**                     | stdio                              | PostgreSQL client                        |
-| **sqlite**                       | stdio                              | SQLite client                            |
-| **vercel**                       | streamableHttp                     | Vercel deployment                        |
-| **docker**                       | docker                             | Container management                     |
+| Server                             | Transport                            | Propósito                                  |
+|------------------------------------|--------------------------------------|--------------------------------------------|
+| **supabase**                       | streamableHttp                       | Database                                   |
+| **postgres**                       | stdio                                | PostgreSQL client                          |
+| **sqlite**                         | stdio                                | SQLite client                              |
+| **vercel**                         | streamableHttp                       | Vercel deployment                          |
+| **docker**                         | docker                               | Container management                       |
 
 ### Testing & Development
-| Server                                  | Transport                       | Propósito                              |
-|-----------------------------------------|---------------------------------|----------------------------------------|
-| **Playwright**                          | stdio                           | Browser automation                     |
-| **chrome-devtools**                     | stdio                           | Chrome automation                      |
+| Server                                    | Transport                         | Propósito                                |
+|-------------------------------------------|-----------------------------------|------------------------------------------|
+| **Playwright**                            | stdio                             | Browser automation                       |
+| **chrome-devtools**                       | stdio                             | Chrome automation                        |
 
 ### Research & AI
-| Server                                 | Transport                          | Propósito                                 |
-|----------------------------------------|------------------------------------|-------------------------------------------|
-| **brave-search**                       | stdio                              | Brave search                              |
-| **supadata**                           | stdio                              | Superdata research                        |
-| **zai-mcp-server**                     | stdio                              | ZAI server                                |
-| **task-master-ai**                     | stdio                              | Task master AI                            |
-| **notebooklm**                         | stdio                              | NotebookLM                                |
-| **fireflies**                          | stdio                              | Meeting transcription                     |
-| **amplitude**                          | streamableHttp                     | Analytics                                 |
+| Server                                   | Transport                            | Propósito                                   |
+|------------------------------------------|--------------------------------------|---------------------------------------------|
+| **brave-search**                         | stdio                                | Brave search                                |
+| **supadata**                             | stdio                                | Superdata research                          |
+| **zai-mcp-server**                       | stdio                                | ZAI server                                  |
+| **task-master-ai**                       | stdio                                | Task master AI                              |
+| **notebooklm**                           | stdio                                | NotebookLM                                  |
+| **fireflies**                            | stdio                                | Meeting transcription                       |
+| **amplitude**                            | streamableHttp                       | Analytics                                   |
 
 ### Design & Creative
-| Server                                      | Transport                       | Propósito                               |
-|---------------------------------------------|---------------------------------|-----------------------------------------|
-| **excalidraw-yctimlin**                     | stdio                           | Excalidraw diagrams                     |
-| **magicuidesign/mcp**                       | stdio                           | Magic UI design                         |
+| Server                                        | Transport                         | Propósito                                 |
+|-----------------------------------------------|-----------------------------------|-------------------------------------------|
+| **excalidraw-yctimlin**                       | stdio                             | Excalidraw diagrams                       |
+| **magicuidesign/mcp**                         | stdio                             | Magic UI design                           |
 
 ### File & System
-| Server                                   | Transport                       | Propósito                             |
-|------------------------------------------|---------------------------------|---------------------------------------|
-| **filesystem**                           | stdio                           | File operations                       |
-| **google-workspace**                     | stdio                           | Google workspace                      |
-| **stackoverflow**                        | stdio                           | StackOverflow API                     |
-| **sentry**                               | stdio                           | Error tracking                        |
+| Server                                     | Transport                         | Propósito                               |
+|--------------------------------------------|-----------------------------------|-----------------------------------------|
+| **filesystem**                             | stdio                             | File operations                         |
+| **google-workspace**                       | stdio                             | Google workspace                        |
+| **stackoverflow**                          | stdio                             | StackOverflow API                       |
+| **sentry**                                 | stdio                             | Error tracking                          |
 
 ### Special & Legacy
-| Server                                  | Transport                          | Propósito                                 |
-|-----------------------------------------|------------------------------------|-------------------------------------------|
-| **n8n-mcp**                             | docker                             | n8n automation                            |
-| **eagle-mcp**                           | streamableHttp                     | Eagle file management                     |
-| **aim-memory-bank**                     | stdio                              | AIM knowledge graph                       |
-| **TestSprite**                          | stdio                              | TestSprite testing                        |
-| **qmd**                                 | stdio                              | QMD integration                           |
-| **pencil**                              | stdio                              | Pencil design                             |
+| Server                                    | Transport                            | Propósito                                   |
+|-------------------------------------------|--------------------------------------|---------------------------------------------|
+| **n8n-mcp**                               | docker                               | n8n automation                              |
+| **eagle-mcp**                             | streamableHttp                       | Eagle file management                       |
+| **aim-memory-bank**                       | stdio                                | AIM knowledge graph                         |
+| **TestSprite**                            | stdio                                | TestSprite testing                          |
+| **qmd**                                   | stdio                                | QMD integration                             |
+| **pencil**                                | stdio                                | Pencil design                               |
 
 ### Total: 35 MCPs configurados |
 
@@ -216,13 +216,13 @@ jq '.' .mcp.json > .mcp.json.tmp && mv .mcp.json.tmp .mcp.json
 
 ## RTM (Requirements Traceability Matrix)
 
-| Req ID                       | Requirement                                   | Validation                              | Priority                       |
-|------------------------------|-----------------------------------------------|-----------------------------------------|--------------------------------|
-| MCP-01                       | `.mcp.json` válido                            | `jq . .mcp.json`                        | P0                             |
-| MCP-02                       | Servers stdio ejecutables                     | Test manual                             | P0                             |
-| MCP-03                       | Servers HTTP respondiendo                     | `curl` health check                     | P1                             |
-| MCP-04                       | API keys configuradas                         | Review `.env`                           | P1                             |
-| MCP-05                       | Logs de errores                               | Revisión periódica                      | P2                             |
+| Req ID                         | Requirement                                     | Validation                                | Priority                         |
+|--------------------------------|-------------------------------------------------|-------------------------------------------|----------------------------------|
+| MCP-01                         | `.mcp.json` válido                              | `jq . .mcp.json`                          | P0                               |
+| MCP-02                         | Servers stdio ejecutables                       | Test manual                               | P0                               |
+| MCP-03                         | Servers HTTP respondiendo                       | `curl` health check                       | P1                               |
+| MCP-04                         | API keys configuradas                           | Review `.env`                             | P1                               |
+| MCP-05                         | Logs de errores                                 | Revisión periódica                        | P2                               |
 
 ## Evals
 

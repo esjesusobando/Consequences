@@ -309,7 +309,7 @@ alwaysApply: true
 | §3 | **Las 4 C del Prompting** | 08 líneas 39-43 | Claro, Contexto, Constraints, Correctness/Examples | ❌ Contenido único del 08 |
 | §4 | **Eficiencia de Tokens** | 04 líneas 43-45 + 08 líneas 44-47 **FUSIONADOS** | Ratio CoT/Response: objetivo 20%-50%. Over-thinking (>100%): simplificar. Superficialidad (<15%): profundizar. Registro granular `tokens_cot` vs `tokens_response` | ✅ Se eliminan las DOS versiones redundantes y se crea UNA definitiva con todo el detalle de ambas |
 | §5 | **Latencia** | 04 línea 47 + 08 línea 48 **FUSIONADOS** | Umbral crítico 2000ms. Reportar proactivamente. Si recurrente → modelo más ligero o fragmentar tarea | ✅ Se eliminan DOS versiones, queda UNA |
-| §6 | **Auditoría AIPM** | 08 líneas 49-51 | Pasar `16_aipm_evaluator.py`. Feedback debe explicar el "Por Qué" | ❌ Contenido único del 08 |
+| §6 | **Auditoría AIPM** | 08 líneas 49-51 | Pasar `23_AIPM_Evaluator.py`. Feedback debe explicar el "Por Qué" | ❌ Contenido único del 08 |
 | §7 | **Perfección Geométrica** | 04 líneas 91-105 | Markdown: columnas fijas, columna ST aislada para emojis. Ejemplo BAD/GOOD con tabla | ❌ Contenido único del 04 |
 | §8 | **Analítica de Dominio** | 04 línea 48 | Identificar dominio (Marketing, Salud, etc.), mostrar muestra real (Stripplot) | ❌ Contenido único del 04 |
 | §9 | **Ejemplos BAD/GOOD** | 04 líneas 57-71 + 08 líneas 60-69 | BAD: Resultados mágicos, omitir CoT, ignorar latencia. GOOD: AIPM Senior execution con métricas y guardrails | ✅ Se fusionan ejemplos de ambos en una sola sección |
@@ -356,10 +356,10 @@ alwaysApply: true
 | §4 | **Problemas & Soluciones** | 09 líneas 88-96 | Formato: Concepto, Problema, Severidad (ALTA/MEDIA/BAJA), Solución |
 | §5 | **Certificación de Estado** | 09 líneas 97-104 | ELITE GRADE (≥8.0), PRODUCTION READY (≥7.0), NEEDS IMPROVEMENT (<7.0) |
 | §6 | **Estructura de Reporte Elite** | 09 líneas 110-187 | Template completo con todos los campos: ID, Timestamp, Métricas, Estado |
-| §7 | **Ritual de Cierre** | 09 líneas 192-201 | Integración con `01_ritual_cierre.py`: generar reporte, certificar, actualizar notas |
+| §7 | **Ritual de Cierre** | 09 líneas 192-201 | Integración con `01_Ritual_Cierre.py`: generar reporte, certificar, actualizar notas |
 | §8 | **Voz Activa Elite** | 09 líneas 206-214 | Declaración final en voz activa con emojis 🔱🏆🔋 |
 | §9 | **Reglas de Oro** | 09 líneas 253-261 | 6 reglas: Narrativa > Métricas Secas, Forense Siempre, etc. |
-| §10 | **Integración con Herramientas** | 09 líneas 267-288 | Scripts: `24_aipm_consolidated_report.py`, `01_ritual_cierre.py`, Process Notes |
+| §10 | **Integración con Herramientas** | 09 líneas 267-288 | Scripts: `30_AIPM_Consolidated_Report.py`, `01_Ritual_Cierre.py`, Process Notes |
 | §11 | **Ejemplos CORRECTO/INCORRECTO** | 09 líneas 219-248 | Ejemplo completo de storytelling bueno vs resumen vacío |
 
 #### ¿Qué se ELIMINA?

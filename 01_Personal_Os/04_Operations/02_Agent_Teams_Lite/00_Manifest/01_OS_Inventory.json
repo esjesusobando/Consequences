@@ -1,24 +1,24 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-12T00:42:11",
+  "generated": "2026-05-14T12:41:02",
   "personal_os": {
     "name": "PersonalOS",
     "version": "v2.1 -> v3.0 (in progress)",
     "root": "Think_Different"
   },
   "totals": {
-    "mcps_claude": 36,
+    "mcps_claude": 37,
     "mcps_opencode": 34,
-    "skills": 303,
+    "skills": 316,
     "skill_areas": 11,
     "agents_source": 58,
-    "agents_backup": 54,
-    "hubs": 26,
+    "agents_backup": 58,
+    "hubs": 29,
     "workflows": 27,
     "workflow_categories": 5,
     "hooks": 10,
     "hook_phases": 6,
-    "rules": 11,
+    "rules": 12,
     "integrations": 2
   },
   "integrations": [

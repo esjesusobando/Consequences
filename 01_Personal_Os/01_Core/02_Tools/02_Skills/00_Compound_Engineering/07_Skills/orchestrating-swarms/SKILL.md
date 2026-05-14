@@ -12,16 +12,16 @@ Master multi-agent orchestration using Claude Code's TeammateTool and Task syste
 
 ## Primitives
 
-| Primitive                          | What It Is                                                                                                                                                                                                 | File Location                                                       |
-|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| **Agent**                          | A Claude instance that can use tools. You are an agent. Subagents are agents you spawn.                                                                                                                    | N/A (process)                                                       |
-| **Team**                           | A named group of agents working together. One leader, multiple teammates.                                                                                                                                  | `~/.claude/teams/{name}/config.json`                                |
-| **Teammate**                       | An agent that joined a team. Has a name, color, inbox. Spawned via Task with `team_name` + `name`.                                                                                                         | Listed in team config                                               |
-| **Leader**                         | The agent that created the team. Receives teammate messages, approves plans/shutdowns.                                                                                                                     | First member in config                                              |
-| **Task**                           | A work item with subject, description, status, owner, and dependencies.                                                                                                                                    | `~/.claude/tasks/{team}/N.json`                                     |
-| **Inbox**                          | JSON file where an agent receives messages from teammates.                                                                                                                                                 | `~/.claude/teams/{name}/inboxes/{agent}.json`                       |
-| **Message**                        | A JSON object sent between agents. Can be text or structured (shutdown_request, idle_notification, etc).                                                                                                   | Stored in inbox files                                               |
-| **Backend**                        | How teammates run. Auto-detected: `in-process` (same Node.js, invisible), `tmux` (separate panes, visible), `iterm2` (split panes in iTerm2). See [Spawn Backends](#spawn-backends).                       | Auto-detected based on environment                                  |
+| Primitive                            | What It Is                                                                                                                                                                                                   | File Location                                                         |
+|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| **Agent**                            | A Claude instance that can use tools. You are an agent. Subagents are agents you spawn.                                                                                                                      | N/A (process)                                                         |
+| **Team**                             | A named group of agents working together. One leader, multiple teammates.                                                                                                                                    | `~/.claude/teams/{name}/config.json`                                  |
+| **Teammate**                         | An agent that joined a team. Has a name, color, inbox. Spawned via Task with `team_name` + `name`.                                                                                                           | Listed in team config                                                 |
+| **Leader**                           | The agent that created the team. Receives teammate messages, approves plans/shutdowns.                                                                                                                       | First member in config                                                |
+| **Task**                             | A work item with subject, description, status, owner, and dependencies.                                                                                                                                      | `~/.claude/tasks/{team}/N.json`                                       |
+| **Inbox**                            | JSON file where an agent receives messages from teammates.                                                                                                                                                   | `~/.claude/teams/{name}/inboxes/{agent}.json`                         |
+| **Message**                          | A JSON object sent between agents. Can be text or structured (shutdown_request, idle_notification, etc).                                                                                                     | Stored in inbox files                                                 |
+| **Backend**                          | How teammates run. Auto-detected: `in-process` (same Node.js, invisible), `tmux` (separate panes, visible), `iterm2` (split panes in iTerm2). See [Spawn Backends](#spawn-backends).                         | Auto-detected based on environment                                    |
 
 ### How They Connect
 
@@ -221,13 +221,13 @@ Task({
 
 ### Key Difference
 
-| Aspect                                | Task (subagent)                           | Task + team_name + name (teammate)                        |
-|---------------------------------------|-------------------------------------------|-----------------------------------------------------------|
-| Lifespan                              | Until task complete                       | Until shutdown requested                                  |
-| Communication                         | Return value                              | Inbox messages                                            |
-| Task access                           | None                                      | Shared task list                                          |
-| Team membership                       | No                                        | Yes                                                       |
-| Coordination                          | One-off                                   | Ongoing                                                   |
+| Aspect                                  | Task (subagent)                             | Task + team_name + name (teammate)                          |
+|-----------------------------------------|---------------------------------------------|-------------------------------------------------------------|
+| Lifespan                                | Until task complete                         | Until shutdown requested                                    |
+| Communication                           | Return value                                | Inbox messages                                              |
+| Task access                             | None                                        | Shared task list                                            |
+| Team membership                         | No                                          | Yes                                                         |
+| Coordination                            | One-off                                     | Ongoing                                                     |
 
 ---
 
@@ -1074,11 +1074,11 @@ A **backend** determines how teammate Claude instances actually run. Claude Code
 
 ### Backend Comparison
 
-| Backend                              | How It Works                                            | Visibility                                 | Persistence                                | Speed                         |
-|--------------------------------------|---------------------------------------------------------|--------------------------------------------|--------------------------------------------|-------------------------------|
-| **in-process**                       | Same Node.js process as leader                          | Hidden (background)                        | Dies with leader                           | Fastest                       |
-| **tmux**                             | Separate terminal in tmux session                       | Visible in tmux                            | Survives leader exit                       | Medium                        |
-| **iterm2**                           | Split panes in iTerm2 window                            | Visible side-by-side                       | Dies with window                           | Medium                        |
+| Backend                                | How It Works                                              | Visibility                                   | Persistence                                  | Speed                           |
+|----------------------------------------|-----------------------------------------------------------|----------------------------------------------|----------------------------------------------|---------------------------------|
+| **in-process**                         | Same Node.js process as leader                            | Hidden (background)                          | Dies with leader                             | Fastest                         |
+| **tmux**                               | Separate terminal in tmux session                         | Visible in tmux                              | Survives leader exit                         | Medium                          |
+| **iterm2**                             | Split panes in iTerm2 window                              | Visible side-by-side                         | Dies with window                             | Medium                          |
 
 ### Auto-Detection Logic
 
@@ -1327,13 +1327,13 @@ The backend type is recorded per-teammate in `config.json`:
 
 ### Troubleshooting Backends
 
-| Issue                                             | Cause                                                   | Solution                                                          |
-|---------------------------------------------------|---------------------------------------------------------|-------------------------------------------------------------------|
-| "No pane backend available"                       | Neither tmux nor iTerm2 available                       | Install tmux: `brew install tmux`                                 |
-| "it2 CLI not installed"                           | In iTerm2 but missing it2                               | Run `uv tool install it2`                                         |
-| "Python API not enabled"                          | it2 can't communicate with iTerm2                       | Enable in iTerm2 Settings → General → Magic                       |
-| Workers not visible                               | Using in-process backend                                | Start inside tmux or iTerm2                                       |
-| Workers dying unexpectedly                        | Outside tmux, leader exited                             | Use tmux for persistence                                          |
+| Issue                                               | Cause                                                     | Solution                                                            |
+|-----------------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------------------|
+| "No pane backend available"                         | Neither tmux nor iTerm2 available                         | Install tmux: `brew install tmux`                                   |
+| "it2 CLI not installed"                             | In iTerm2 but missing it2                                 | Run `uv tool install it2`                                           |
+| "Python API not enabled"                            | it2 can't communicate with iTerm2                         | Enable in iTerm2 Settings → General → Magic                         |
+| Workers not visible                                 | Using in-process backend                                  | Start inside tmux or iTerm2                                         |
+| Workers dying unexpectedly                          | Outside tmux, leader exited                               | Use tmux for persistence                                            |
 
 ### Checking Current Backend
 
@@ -1360,14 +1360,14 @@ which it2
 
 ### Common Errors
 
-| Error                                                      | Cause                                         | Solution                                                                       |
-|------------------------------------------------------------|-----------------------------------------------|--------------------------------------------------------------------------------|
-| "Cannot cleanup with active members"                       | Teammates still running                       | `requestShutdown` all teammates first, wait for approval                       |
-| "Already leading a team"                                   | Team already exists                           | `cleanup` first, or use different team name                                    |
-| "Agent not found"                                          | Wrong teammate name                           | Check `config.json` for actual names                                           |
-| "Team does not exist"                                      | No team created                               | Call `spawnTeam` first                                                         |
-| "team_name is required"                                    | Missing team context                          | Provide `team_name` parameter                                                  |
-| "Agent type not found"                                     | Invalid subagent_type                         | Check available agents with proper prefix                                      |
+| Error                                                        | Cause                                           | Solution                                                                         |
+|--------------------------------------------------------------|-------------------------------------------------|----------------------------------------------------------------------------------|
+| "Cannot cleanup with active members"                         | Teammates still running                         | `requestShutdown` all teammates first, wait for approval                         |
+| "Already leading a team"                                     | Team already exists                             | `cleanup` first, or use different team name                                      |
+| "Agent not found"                                            | Wrong teammate name                             | Check `config.json` for actual names                                             |
+| "Team does not exist"                                        | No team created                                 | Call `spawnTeam` first                                                           |
+| "team_name is required"                                      | Missing team context                            | Provide `team_name` parameter                                                    |
+| "Agent type not found"                                       | Invalid subagent_type                           | Check available agents with proper prefix                                        |
 
 ### Graceful Shutdown Sequence
 
