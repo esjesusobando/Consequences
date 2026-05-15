@@ -4,9 +4,6 @@
 [submodule "01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy_2"]
 	path = 01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy_2
 	url = https://github.com/esjesusobando/Office_Installations_.git
-[submodule "03_Resultado/OIM_Website_v2"]
-	path = 03_Resultado/OIM_Website_v2
-	url = https://github.com/esjesusobando/OIM.git
 [submodule "01_Personal_Os/05_Archive/07_Repos_Gentleman/06_Design_System"]
 	path = 01_Personal_Os/05_Archive/07_Repos_Gentleman/06_Design_System
 	url = https://github.com/robonuggets/design-system.git
