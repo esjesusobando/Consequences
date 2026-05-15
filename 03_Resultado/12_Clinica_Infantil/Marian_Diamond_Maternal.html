@@ -22,11 +22,11 @@
             --secondary-hover: #0891B2;
             --accent: #F472B6;
             --negro: #0A0A0A;
-            --blanco: #F5F5F5;
-            --blanco-dim: rgba(245, 245, 245, 0.7);
-            --gris: #888888;
-            --glass: rgba(255, 255, 255, 0.05);
-            --glass-border: rgba(255, 255, 255, 0.12);
+            --blanco: #1A1A1A;
+            --blanco-dim: #4A4A4A;
+            --gris: #6B6B6B;
+            --glass: rgba(255, 255, 255, 0.85);
+            --glass-border: rgba(139, 92, 246, 0.2);
         }
 
         html {
@@ -35,7 +35,7 @@
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--negro);
+            background-color: #FAFAFA;
             color: var(--blanco);
             min-height: 100vh;
             overflow-x: hidden;
@@ -79,14 +79,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center;
+            object-position: center top;
             display: block;
-            transform: scale(1.05);
-            transition: transform 8s cubic-bezier(0.25, 0.1, 0.25, 1);
-        }
-
-        .hero-image.loaded {
-            transform: scale(1);
         }
 
         /* Glow orbs */
@@ -141,10 +135,10 @@
             height: 70%;
             background: linear-gradient(
                 to top,
-                var(--negro) 0%,
-                rgba(10, 10, 10, 0.98) 15%,
-                rgba(10, 10, 10, 0.85) 30%,
-                rgba(10, 10, 10, 0.5) 50%,
+                #FAFAFA 0%,
+                rgba(250, 250, 250, 0.98) 15%,
+                rgba(250, 250, 250, 0.85) 30%,
+                rgba(250, 250, 250, 0.5) 50%,
                 transparent 75%
             );
             pointer-events: none;
@@ -209,7 +203,7 @@
             font-weight: 400;
             line-height: 0.95;
             letter-spacing: 0.04em;
-            color: var(--blanco);
+            color: #1A1A1A;
         }
 
         h1 span {
@@ -222,7 +216,7 @@
         .subtitle {
             font-family: 'Playfair Display', serif;
             font-size: clamp(1rem, 3vw, 1.4rem);
-            color: var(--blanco-dim);
+            color: #6B6B6B;
             margin-top: 0.6rem;
             font-weight: 700;
             letter-spacing: 0.02em;
@@ -269,7 +263,6 @@
             height: 20px;
             color: var(--primary);
             flex-shrink: 0;
-            filter: drop-shadow(0 0 6px var(--primary-glow));
         }
 
         .info-content {
@@ -280,7 +273,7 @@
             font-size: 0.5rem;
             text-transform: uppercase;
             letter-spacing: 0.2em;
-            color: var(--gris);
+            color: #888888;
             margin-bottom: 0.2rem;
             font-weight: 600;
         }
@@ -288,6 +281,7 @@
         .info-value {
             font-size: 0.95rem;
             font-weight: 600;
+            color: #4A4A4A;
             letter-spacing: -0.01em;
         }
 
@@ -320,6 +314,7 @@
             position: relative;
             overflow: hidden;
             -webkit-tap-highlight-color: transparent;
+            color: white;
         }
 
         .btn::before {
@@ -376,24 +371,17 @@
         }
 
         .btn-secondary {
-            background: rgba(255, 255, 255, 0.08);
-            color: white;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.08);
-            color: white;
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+            background: rgba(139, 92, 246, 0.08);
+            color: #4A4A4A;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            box-shadow: 0 2px 12px rgba(139, 92, 246, 0.08);
         }
 
         .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.12);
-            border-color: rgba(255, 255, 255, 0.25);
+            background: rgba(139, 92, 246, 0.12);
+            border-color: rgba(139, 92, 246, 0.35);
             transform: translateY(-2px);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 20px rgba(139, 92, 246, 0.12);
         }
 
         /* ========== SOCIAL BUTTON ========== */
@@ -437,7 +425,7 @@
         .footer {
             text-align: center;
             font-size: 0.65rem;
-            color: var(--blanco-dim);
+            color: #6B6B6B;
             letter-spacing: 0.1em;
             padding-bottom: 2rem;
             opacity: 0;
@@ -519,10 +507,16 @@
             .content {
                 padding: 0 2.5rem 5rem;
                 gap: 2rem;
+                max-width: 700px;
             }
 
             .hero-image-wrapper {
                 height: 100vh;
+            }
+
+            .hero-image {
+                object-fit: contain;
+                object-position: center;
             }
 
             .buttons {
@@ -563,13 +557,25 @@
             }
         }
 
+        @media (min-width: 1024px) {
+            .content {
+                margin-top: -20vh;
+            }
+        }
+
         @media (max-width: 480px) {
             .hero-image {
                 object-position: center top;
+                object-fit: contain;
             }
 
             .content {
-                margin-top: -35vh;
+                margin-top: -25vh;
+                padding: 0 1rem 3rem;
+            }
+
+            .glow-orb {
+                display: none;
             }
         }
 
@@ -614,7 +620,7 @@
             <div class="glow-orb glow-orb-1"></div>
             <div class="glow-orb glow-orb-2"></div>
             <div class="glow-orb glow-orb-3"></div>
-            <img src="01_Image_Clinica.jpg" alt="Marian Diamond" class="hero-image" id="heroImg">
+            <img src="03_Fondo.png" alt="Marian Diamond" class="hero-image" id="heroImg">
             <div class="hero-gradient"></div>
         </div>
 
@@ -629,33 +635,33 @@
 
             <div class="headline">
                 <h1>MARIAN<br><span>DIAMOND</span></h1>
-                <p class="subtitle">Programa Maternal · 2026-2027</p>
+                <p class="subtitle">Metodología Montessori</p>
             </div>
 
             <div class="info-card">
                 <div class="info-row">
-                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
                         <polyline points="9 22 9 12 15 12 15 22"/>
                     </svg>
                     <div class="info-content">
                         <div class="info-label">Ubicación</div>
-                        <div class="info-value">Calle Campo Elías, Ciudad Ojeda</div>
+                        <div class="info-value" style="color: #4A4A4A;">Calle Campo Elías, Ciudad Ojeda</div>
                     </div>
                 </div>
                 <div class="info-row">
-                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                     </svg>
                     <div class="info-content">
                         <div class="info-label">Teléfono</div>
-                        <div class="info-value">+58 0414 062 1217</div>
+                        <div class="info-value" style="color: #4A4A4A;">+58 0414 062 1217</div>
                     </div>
                 </div>
             </div>
 
             <div class="buttons">
-                <a href="https://wa.me/5804140621217?text=%F0%9F%91%8D%F0%9F%91%8EHola!.%20te%20saluda%20la%20Familia%20Diamond%20kids%F0%9F%A7%A0.%20*Por%20favor%20me%20indica:*%0A*%20Nombre%20y%20apellido%20del%20representante.%0A*%20Nombre%20y%20apellido%20del%20ni%C3%B1o%20(a).%0A*%20Fecha%20de%20nacimiento.%0A%0A%E2%8F%B3En%20breve%20ser%C3%A1%20atendido!%20%F0%9F%AA%84%0A%0A%C2%A1%20%F0%9F%9C%88En%20Diamond%20kids%20creemos%20que%20todos%20los%20ni%C3%B1os%20...%20Merecen%20Brillar%E2%9C%A8!." target="_blank" class="btn btn-primary" id="whatsappBtn">
+                <a href="https://wa.me/5804140621217?text=%F0%9F%91%8B%F0%9F%91%8B%F0%9F%91%8AU.E.P.%20MARIAN%20DIAMOND%0A%0AINSCRIPCIONES%20ABIERTAS%20Metodología Montessori%202026-2027%0A%0A%F0%9F%91%8BHola!.%20te%20saluda%20la%20Familia%20Diamond%20kids%F0%9F%A7%A0.%20*Por%20favor%20me%20indica:*%0A*%20Nombre%20y%20apellido%20del%20representante.%0A*%20Nombre%20y%20apellido%20del%20ni%C3%B1o(a).%0A*%20Fecha%20de%20nacimiento.%0A%0A%E2%8F%B3En%20breve%20ser%C3%A1%20atendido!%20%F0%9F%AA%84%0A%0A%C2%A1%20%F0%9F%9C%88En%20Diamond%20kids%20creemos%20que%20todos%20los%20ni%C3%B1os%20...%20Merecen%20Brillar%E2%9C%A8!." target="_blank" class="btn btn-primary" id="whatsappBtn">
                     <svg viewBox="0 0 24 24" fill="currentColor">
                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                     </svg>
@@ -670,10 +676,19 @@
                 </a>
 
                 <a href="https://maps.apple.com/?address=Calle%20Campo%20El%C3%ADas,%20Ciudad%20Ojeda,%20Zulia,%20Venezuela&ll=10.204611,-71.313629&q=Calle%20Campo%20El%C3%ADas&t=m" target="_blank" class="btn btn-secondary" id="mapsBtn">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polygon points="3 11 22 2 13 21 11 13 3 11"/>
                     </svg>
                     Ver Ubicación
+                </a>
+
+                <a href="https://uepdiamondkids.com/" target="_blank" class="btn btn-secondary" id="webBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                    Website
                 </a>
             </div>
 
@@ -693,12 +708,6 @@
     </div>
 
     <script>
-        // ========== HERO IMAGE LOAD ==========
-        const heroImg = document.getElementById('heroImg');
-        heroImg.addEventListener('load', () => {
-            heroImg.classList.add('loaded');
-        });
-
         // ========== PARTICLE SYSTEM ==========
         const canvas = document.getElementById('particles');
         const ctx = canvas.getContext('2d');
@@ -802,6 +811,14 @@
         if (socialBtn) {
             socialBtn.addEventListener('click', () => {
                 const rect = socialBtn.getBoundingClientRect();
+                burstParticles(rect.left + rect.width / 2, rect.top + rect.height / 2);
+            });
+        }
+
+        const webBtn = document.getElementById('webBtn');
+        if (webBtn) {
+            webBtn.addEventListener('click', () => {
+                const rect = webBtn.getBoundingClientRect();
                 burstParticles(rect.left + rect.width / 2, rect.top + rect.height / 2);
             });
         }
