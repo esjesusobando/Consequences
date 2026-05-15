@@ -75,7 +75,7 @@ Almacena **archivos obsoletos, repositorios de referencia, y backups**. Es el "b
 
 ---
 
-## 📚 Repositorios Clonados (23 repos)
+## 📚 Repositorios Clonados (25 repos)
 
 | Repo                                        | Fuente                                        | Propósito                                        | Estado              |
 |---------------------------------------------|-----------------------------------------------|--------------------------------------------------|---------------------|
@@ -170,4 +170,4 @@ Almacena **archivos obsoletos, repositorios de referencia, y backups**. Es el "b
 
 ---
 
-_Think Different PersonalOS v7.2 — Archivo activo_
+_Think Different PersonalOS v7.5 — Archivo activo_

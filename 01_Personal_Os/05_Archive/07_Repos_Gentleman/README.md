@@ -1,6 +1,6 @@
 # 07_Repos_Gentleman — Índice de Repositorios Externos
 
-> **Última actualización:** 2026-05-15 · **Versión:** v5.3
+> **Última actualización:** 2026-05-15 · **Versión:** v5.5
 
 ---
 
