@@ -1,8 +1,12 @@
 # 05_Archive — Legacy y Repositorios
 
-**Versión:** 7.2
+**Versión:** 7.3
 **Última actualización:** 2026-05-15
 **Estado:** 📦 Legacy
+
+---
+
+> ⚠️ **AVISO DE CORRECCIÓN:** Secuencia de carpetas 06, 09, 10 tenía duplicados. Algunos renombrados completados, otros pendientes de lock.
 
 ---
 
@@ -19,26 +23,33 @@ Think_Different/
 
 ---
 
-## 📂 Estructura 05_Archive
+## 📂 Estructura 05_Archive (Secuencia corregida 01-14)
 
 ```
 05_Archive/
-├── README.md                         # Este archivo
-├── 01_Raiz_Archive/                  # Archivos de raíz archivados
-├── 02_Rules_Legacy/                  # Reglas y Pilares antiguos
-├── 03_Docs_Legacy/                   # Documentación legacy
-├── 04_Backups_AutoMejora/            # Backups del sistema de auto-mejora
-├── 05_Planes_Legacy/                  # Planes de acción archivados
-├── 06_Docs_All/                       # Documentos variados
-├── 06a_Snapshots/                     # Snapshots del sistema
-├── 07_Repos_Gentleman/                # Repositorios externos (23 repos)
-├── 08_Planes_Estrategicos/             # Planes estratégicos legacy
-├── 09_Legacy_Skills_Archive/          # Archive de skills legacy
-├── 09b_OpenSpec_Archive/             # Archivo de especificaciones OpenSpec
-├── 10_Legacy_Revisar/                # Legacy para revisión
-├── 11_Legacy_Scripts_Backup/         # Scripts de backup legacy
-└── 12_Tasks_Legacy/                  # Tasks legacy archivadas
+├── 01_Raiz_Archive/                      # Archivos de raíz archivados
+├── 02_Rules_Legacy/                      # Reglas y Pilares antiguos
+├── 03_Docs_Legacy/                       # Documentación legacy
+├── 04_Backups_AutoMejora/                # Backups del sistema de auto-mejora
+├── 05_Planes_Legacy/                     # Planes de acción archivados
+├── 06_Docs_All/                          # Documentos variados
+├── 07_Repos_Gentleman/                   # Repositorios externos (23 repos)
+├── 08_Planes_Estrategicos/               # Planes estratégicos legacy
+├── 09_Legacy_Skills_Archive/             # Archive de skills legacy
+├── 10_Legacy_Revisar/                    # Legacy para revisión
+├── 11_Snapshots/                         # Snapshots del sistema (era 06_Snapshots)
+├── 12_OpenSpec_Archive/                  # Archivo de especificaciones OpenSpec (era 09_OpenSpec_Archive)
+├── 13_Legacy_Scripts_Backup_20260420/   # Scripts de backup legacy (era 10_Legacy_Scripts_Backup_20260420)
+├── 14_Tasks_Legacy/                      # Tasks legacy archivadas (era 10_Tasks_Legacy)
+└── README.md                             # Este archivo
 ```
+
+> ⚠️ **Nota de secuencia:** Originalmente había duplicados en 06, 09 y 10. La corrección lógica es:
+> - `06_Snapshots` → `11_Snapshots`
+> - `09_OpenSpec_Archive` → `12_OpenSpec_Archive`
+> - `10_Legacy_Scripts_Backup_20260420` → `13_Legacy_Scripts_Backup_20260420`
+> - `10_Tasks_Legacy` → `14_Tasks_Legacy`
+> Algunos archivos aún tienen lock de sistema y requieren cierre de apps que los tengan abiertos.
 
 ---
 

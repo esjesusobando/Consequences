@@ -37,16 +37,10 @@ Este archivo enumera y describe la función de cada regla activa en el sistema p
 | [19_Planning.mdc](./19_Planning.mdc) | Planning | Fase de planificación detallada de tareas. |
 | [20_Recap_Morning.mdc](./20_Recap_Morning.mdc) | Recap Morning | Resumen de lo planificado por la mañana. |
 | [21_Gentleman_Framework.mdc](./21_Gentleman_Framework.mdc) | Gentleman Framework | Marco de trabajo para desarrollo guiado por agentes. |
+| [22_Pencil_Design_Studio.mdc](./22_Pencil_Design_Studio.mdc) | Pencil Design Studio | Workflow de diseño de alto nivel. |
+| [35_Pencil_Design_Studio.mdc](./35_Pencil_Design_Studio.mdc) | Pencil Design Studio (Legacy) | Versión legacy del workflow de diseño. |
 
-## 🧬 Workflows Especializados
-
-| Regla | Nombre | Descripción |
-| :--- | :--- | :--- |
-| [17_Genesis.mdc](./17_Genesis.mdc) | Workflow Génesis | Paso a paso del inicio de sesión (Aterrizaje). |
-| [18_Morning_Standup.mdc](./18_Morning_Standup.mdc) | Morning Standup | Ritual de sincronización matutina. |
-| [19_Planning.mdc](./19_Planning.mdc) | Planning | Fase de planificación detallada de tareas. |
-| [20_Recap_Morning.mdc](./20_Recap_Morning.mdc) | Recap Morning | Resumen de lo planificado por la mañana. |
-| [21_Gentleman_Framework.mdc](./21_Gentleman_Framework.mdc) | Gentleman Framework | Marco de trabajo para desarrollo guiado por agentes. |
+> ⚠️ **Nota sobre numeración:** Los archivos 23-34 fueron deprecados/absorbidos. La secuencia activa es 01-22 + Cursor_Rule_Skeleton + 35_legacy.
 
 ---
-_Total Reglas: 21_
+_Total Reglas: 22 numeradas + 1 skeleton + 1 legacy_

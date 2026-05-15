@@ -4,36 +4,26 @@ Este directorio contiene la inteligencia operativa de **PersonalOS**, consolidad
 
 ## 🏛️ Estructura de Poder
 
-1.  **[🔘 Pilar 0: Protocolo](02_Pilar_Base.mdc):** ADN operativo, estándares de idioma (Español) y bucle de evolución de reglas.
-2.  **[🛠️ Pilar 1: Motor](03_Pilar_Motor.mdc):** Ingeniería profunda, Armor Layer, Premium UI y organización de Skills.
-3.  **[🧠 Pilar 2: Estrategia](04_Pilar_Estrategia.mdc):** Gestión de tareas, contexto atómico y observabilidad AIPM (2026 Grade).
+1.  **[🔘 Pilar 0: Protocolo](01_Pilares_Sistema.mdc):** Pilares fundamentales del sistema
+2.  **[🛠️ Pilar 1: Motor](02_Motor_Agent.mdc):** Motor y stack técnico, Agent Integration
+3.  **[🧠 Pilar 2: Estrategia](03_Protocolos_Ejecucion.mdc):** Protocolos de ejecución y gestión
 
-## 📋 Índice de Reglas (25 archivos)
+## 📋 Índice de Reglas (12 archivos)
 
-| #                           | Regla                                                        | Propósito                                                           |
-|-----------------------------|--------------------------------------------------------------|---------------------------------------------------------------------|
-| 01                          | `01_Context_Protocol.mdc`                                    | Protocolo de contexto obligatorio (Génesis)                         |
-| 02                          | `02_Pilar_Base.mdc`                                          | Pilares fundamentales del sistema                                   |
-| 03                          | `03_Pilar_Motor.mdc`                                         | Motor y stack técnico                                               |
-| 04                          | `04_Pilar_Estrategia.mdc`                                    | Estrategia y AIPM                                                   |
-| 05                          | `05_ritual-integrity.mdc`                                    | Integridad de ritus                                                 |
-| 06                          | `06_Claude_Integration.mdc`                                  | Integración Claude                                                  |
-| 07                          | `07_Skill_Fusion.mdc`                                        | Fusión de skills                                                    |
-| 08                          | `08_Observability.mdc`                                       | Observabilidad                                                      |
-| 09                          | `09_Elite_Reporting.mdc`                                     | Reporting de élite                                                  |
-| 10                          | `10_Context_Management.mdc`                                  | Gestión de contexto                                                 |
-| 11                          | `11_Workflow_Standards.mdc`                                  | Estándares de workflow                                              |
-| 12                          | `12_Nexus-Routing.mdc`                                       | Enrutamiento Nexus                                                  |
-| 13                          | `13_Testing_Resource_Management.mdc`                         | Testing y recursos                                                  |
-| 14                          | `14_Invoice_Intelligence.mdc`                                | Inteligencia de facturas                                            |
-| 15                          | `15_Backlog_Processing.mdc`                                  | Procesamiento de backlog                                            |
-| 16                          | `16_Brainstorming.mdc`                                       | Brainstorming                                                       |
-| 17                          | `17_Genesis.mdc`                                             | Protocolo de inicio de sesión                                       |
-| 18                          | `18_Morning_Standup.mdc`                                     | Standup matutino                                                    |
-| 19                          | `19_Planning.mdc`                                            | Planificación                                                       |
-| 20                          | `20_Recap_Morning.mdc`                                       | Recap matutino                                                      |
-| 21                          | `21_Gentleman_Framework.mdc`                                 | Framework Gentleman                                                 |
-| 35                          | `35_Pencil_Design_Studio.mdc`                                | Estudio de diseño Pencil                                            |
+| #  | Regla                        | Propósito                                        |
+|----|------------------------------|--------------------------------------------------|
+| 00 | `00_Core_Protocol.mdc`        | Protocolo core — ADN operativo                    |
+| 01 | `01_Pilares_Sistema.mdc`     | Pilares fundamentales del sistema                |
+| 02 | `02_Motor_Agent.mdc`         | Motor, Agent Integration y Stack Técnico         |
+| 03 | `03_Protocolos_Ejecucion.mdc`| Protocolos de ejecución                          |
+| 04 | `04_Observabilidad.mdc`      | Observabilidad y monitoreo                       |
+| 05 | `05_Reporting.mdc`           | Reporting de élite                               |
+| 06 | `06_Contexto_Gestion.mdc`    | Gestión de contexto                              |
+| 07 | `07_Docs_Guias.mdc`          | Documentación y guías                           |
+| 08 | `08_Token_Economy.mdc`       | Economía de tokens                               |
+| 09 | `09_Agent_Teams_Protocol.mdc` | Protocolo de Agent Teams                        |
+| 10 | `10_Git_Directions.mdc`       | Direcciones Git y flujo de trabajo               |
+| 11 | `11_Minimax.mdc`             | Configuración Minimax                            |
 
 ## 🔄 El Bucle de Oro (The Golden Loop)
 
@@ -50,6 +40,8 @@ graph TD
     S2 --> S3["S3: Aprendizaje & Evolución"]
     S3 --> S0
 ```
+
+> ⚠️ **Nota:** Este es el stack LEGACY de `.agent/00_Rules/`. El stack activo actual vive en `.claude/02_Rules/` con 22 archivos numerados (01-22 + Cursor_Rule_Skeleton).
 
 ---
 

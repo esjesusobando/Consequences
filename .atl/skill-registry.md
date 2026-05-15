@@ -29,7 +29,7 @@ Think_Different/
 ├── 01_Personal_Os/               # EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  # Motor del OS
 │   │   ├── 00_Workflows_Os/      # Workflows (Personal, Marvel, Gentleman, Hillary, CE)
-│   │   ├── 01_Rules/             # 10 reglas (.mdc) — FUENTE DE VERDAD
+│   │   ├── 01_Rules/             # 12 reglas 00-11 (.mdc) — FUENTE DE VERDAD
 │   │   └── 02_Tools/             # Todas las herramientas
 │   │       ├── 01_Agents/        # 52+ Dream Team + Specialists
 │   │       ├── 02_Skills/        # 13 áreas funcionales (297+ skills)
