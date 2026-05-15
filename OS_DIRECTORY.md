@@ -1,6 +1,6 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.0 Production** | 2026-05-13
+**v4.0 Production** | 2026-05-15
 
 ---
 
@@ -8,10 +8,10 @@
 
 | Componente                     | Total                                                        | Estado                                  |
 |--------------------------------|--------------------------------------------------------------|-----------------------------------------|
-| MCPs Claude Code               | **36**                                                       | ✅ OPERATIONAL                           |
+| MCPs Claude Code               | **37**                                                       | ✅ OPERATIONAL                           |
 | Every CE                       | v2.55.0 (local repo) ✅                                       | ✅ ACTIVE — Local version                |
 | gentle-ai                      | v1.26.6                                                      | ✅ AVAILABLE                             |
-| Skills                         | **300+** (11 áreas activas)                                  | ✅ VERIFIED                              |
+| Skills                         | **317** (11 áreas activas)                                  | ✅ VERIFIED                              |
 | Agentes                        | **52+** (22 archivos en 01_Agents + subdirs)                 | ✅ ACTIVE                                |
 | HUBs                           | **21 scripts principales + 5 aux** (+ 12 subdirectorios)     | ✅ VERIFIED                              |
 | Workflows                      | **28+** (5 categorías en 00_Workflows_Os)                    | ✅ ACTIVE                                |
