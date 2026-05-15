@@ -19,7 +19,7 @@
 | **Every CE**                        | v2.55.0 ✅ (local repo)                          |
 | **gentle-ai**                       | v1.26.6 ✅                                       |
 | **Skills**                          | 317 (11 áreas funcionales)                      |
-| **Rules**                           | 11 (.mdc)                                       |
+| **Rules**                           | 12 (.mdc)                                       |
 | **MCPs**                            | 37 Claude Code                                  |
 | **HUBs**                            | 26 scripts (21 + 5 aux)                         |
 | **Agentes**                         | 52+ (Dream Team + Specialists)                  |
@@ -34,7 +34,7 @@ Think_Different/                           # RAÍZ
 ├── 01_Personal_Os/                ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                   ✅ Motor del OS (FUENTE DE VERDAD)
 │   │   ├── 00_Workflows_Os/       ✅ 28 workflows (5 categorías)
-│   │   ├── 01_Rules/              ✅ 11 reglas .mdc — FUENTE DE VERDAD
+│   │   ├── 01_Rules/              ✅ 12 reglas .mdc — FUENTE DE VERDAD
 │   │   └── 02_Tools/              ✅ Todas las herramientas
 │   │       ├── 01_Agents/         ✅ 52+ agentes
 │   │       ├── 02_Skills/         ✅ 300+ skills — 11 áreas funcionales
@@ -66,7 +66,7 @@ Think_Different/                           # RAÍZ
 │   ├── 02_Hillary_Life_OS/
 │   └── más...
 ├── 03_Resultado/                  ✅ Outputs de proyectos
-│   ├── OIM_Website/ (y variantes)
+│   ├── 09_World_OIM/              ✅ OIM websites organizados por calidad
 │   ├── 05_Frontend_Slides_Exercise/
 │   └── más...
 ├── .agent/                       ✅ BACKUP ESTRATÉGICO
