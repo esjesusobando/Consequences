@@ -1,6 +1,6 @@
-# 🧠 LearningAlways Methodology
+# 🧠 LearningAlways Methodology [ARCHIVED]
 
-> ⚠️ **DOCUMENTO LEGACY (v1.1):** Este doc describe la estructura v1.0/v1.1. Los paths de Skills y estructura de carpetas fueron actualizados en v4.0. Verificar referencias antes de usar.
+> ⚠️ **DOCUMENTO ARCHIVADO (v1.1):** Este doc fue reemplazado por el workflow oficial en `01_Personal_Os/01_Core/00_Workflows_Os/00_Learning_Always/00_Learning_Always.md`. La estructura de carpetas vigente es `03_Resultado/10_Contenido_Learning/XX_LA_[Nombre]/`.
 
 ---
 
@@ -34,39 +34,24 @@ OUTPUT: 8 deliverable por cada URL
 
 ---
 
-## 📂 Estructura de Carpetas
+## 📂 Estructura de Carpetas (OBSOLETA - Ver workflow activo)
+
+> ⚠️ **ESTA ESTRUCTURA YA NO SE USA.** Desde v4.0 la estructura activa es:
+> `03_Resultado/10_Contenido_Learning/XX_LA_[Nombre]/`
 
 ```
-07_Projects/00_Context/
-├── 00_Learning_Always/
-│   ├── 01_LA_[Descripcion]/
-│   │   ├── 00_Raw_Content/
-│   │   │   └── 01_Video_Info.md
-│   │   ├── 01_Resumen_500_Palabras/
-│   │   │   └── 01_Resumen_500_Palabras.md
-│   │   ├── 02_Prompts_Usados/
-│   │   │   ├── ES.md
-│   │   │   └── EN.md
-│   │   ├── 03_Demos_Junior/
-│   │   │   ├── 01_Midjourney_Basico.md
-│   │   │   ├── 02_Midjourney_Avanzado.md
-│   │   │   └── 03_Midjourney_Marketing.md
-│   │   ├── 04_Herramientas/
-│   │   │   └── 04_Herramientas.md
-│   │   ├── 05_Insights_Segundo_Cerebro/
-│   │   │   └── 05_Insights_Segundo_Cerebro.md
-│   │   ├── 06_Post_Redes/
-│   │   │   ├── Facebook.md
-│   │   │   ├── Instagram.md
-│   │   │   ├── X_Twitter.md
-│   │   │   └── LinkedIn.md
-│   │   ├── 07_Mega_Prompt/
-│   │   │   └── 07_Mega_Prompt_Gems_GPTs.md
-│   │   ├── 08_Ingenieria_Inversa/
-│   │   │   └── 08_Ingenieria_Inversa.md
-│   │   └── 09_OS_Mejoras/
-│   │       └── 09_OS_Mejoras.md
-│   └── 00_Index_Learnings.md
+03_Resultado/10_Contenido_Learning/
+├── XX_LA_[Descripcion]/
+│   ├── 00_Raw_Content/
+│   ├── 01_Resumen_500_Palabras/
+│   ├── 02_Prompts_Usados/
+│   ├── 03_Demos_Junior/
+│   ├── 04_Herramientas/
+│   ├── 05_Insights_Segundo_Cerebro/
+│   ├── 06_Post_Redes/
+│   ├── 07_Mega_Prompt/
+│   ├── 08_Ingenieria_Inversa/
+│   └── 09_OS_Mejoras/
 ```
 
 ---
@@ -154,9 +139,11 @@ URL_N → Conocimiento_N + OS_Mejor + Red_Conocimiento
 
 ---
 
-## 🔗 Conexiones
+## 🔗 Conexiones (OBSOLETO)
 
-Los insights de cada análisis van a **06_Unicorn/** según la disciplina:
+> ⚠️ **Las conexiones ahora van a `03_Resultado/10_Contenido_Learning/`**
+
+Los insights de cada análisis van a **03_Resultado/10_Contenido_Learning/** según la disciplina:
 
 | Disciplina                            | Ubicación                                                          |
 |---------------------------------------|--------------------------------------------------------------------|
@@ -230,9 +217,11 @@ Basado en eldoc, estos topics generarían skills de alto valor:
 
 > 📝 **Nota:** Estos skills no existen aún — son ideas para desarrollar con la metodología Learning Always.
 
-## 📌 Próximos pasos recomendados
+## 📌 Próximos pasos recomendados (OBSOLETOS)
 
-1. **Procesar URLs pendientes** (03-06) para generar conocimiento
-2. **Crear skill `/learning`** en `04_Automatizacion/` basadowe en este doc
-3. **Integrar con Engram** para persistencia de insights
-4. **Automatizar el pipeline** con n8n o similar
+> ⚠️ **Estas recomendaciones están obsoletas.** El workflow Learning Always ya existe en:
+> `01_Personal_Os/01_Core/00_Workflows_Os/00_Learning_Always/00_Learning_Always.md`
+
+1. El skill `/learning` ya está implementado como workflow activo ✅
+2. La integración con Engram ya está configurada ✅
+3. El pipeline está operativo en `03_Resultado/10_Contenido_Learning/` ✅
