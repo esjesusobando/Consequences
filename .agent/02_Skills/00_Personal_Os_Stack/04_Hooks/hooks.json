@@ -1,0 +1,12 @@
+{
+  "hooks": [
+    {
+      "event": "PostToolUse",
+      "matcher": {
+        "tool_name": "TodoWrite"
+      },
+      "command": "${CLAUDE_PLUGIN_ROOT}/hooks/task-complete-sound.sh",
+      "description": "Play sound when TodoWrite marks task as done"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-﻿---
+---
 name: todo-create
 description: Use when creating durable work items, managing todo lifecycle, or tracking findings across sessions in the file-based todo system
 disable-model-invocation: true
@@ -8,16 +8,16 @@ disable-model-invocation: true
 
 ## Overview
 
-The `.context/compound-engineering/03_Task/` directory is a file-based tracking system for code review feedback, technical debt, feature requests, and work items. Each todo is a markdown file with YAML frontmatter.
+The `.context/compound-engineering/03_Tasks/` directory is a file-based tracking system for code review feedback, technical debt, feature requests, and work items. Each todo is a markdown file with YAML frontmatter.
 
-> **Legacy support:** Always check both `.context/compound-engineering/03_Task/` (canonical) and `03_Task/` (legacy) when reading. Write new todos only to the canonical path. This directory has a multi-session lifecycle -- do not clean it up as scratch.
+> **Legacy support:** Always check both `.context/compound-engineering/03_Tasks/` (canonical) and `03_Tasks/` (legacy) when reading. Write new todos only to the canonical path. This directory has a multi-session lifecycle -- do not clean it up as scratch.
 
 ## Directory Paths
 
-| Purpose                    | Path                                      |
-|----------------------------|-------------------------------------------|
-| **Canonical (write here)** | `.context/compound-engineering/03_Task/` |
-| **Legacy (read-only)**     | `03_Task/`                               |
+| Purpose                                            | Path                                                              |
+|----------------------------------------------------|-------------------------------------------------------------------|
+| **Canonical (write here)**                         | `.context/compound-engineering/03_Tasks/`                         |
+| **Legacy (read-only)**                             | `03_Tasks/`                                                       |
 
 ## File Naming Convention
 
@@ -56,7 +56,7 @@ dependencies: ["001"]     # Issue IDs this is blocked by
 
 ### Creating a New Todo
 
-1. `mkdir -p .context/compound-engineering/03_Task/`
+1. `mkdir -p .context/compound-engineering/03_Tasks/`
 2. Search both paths for `[0-9]*-*.md`, find the highest numeric prefix, increment, zero-pad to 3 digits.
 3. Read [todo-template.md](./assets/todo-template.md), write to canonical path as `{NEXT_ID}-pending-{priority}-{description}.md`.
 4. Fill Problem Statement, Findings, Proposed Solutions, Acceptance Criteria, and initial Work Log entry.
@@ -88,25 +88,36 @@ To check blockers: search for `{dep_id}-complete-*.md` in both paths. Missing ma
 **Problem:** A → B → C → A (loop infinito)
 
 **Detection:**
+```
 1. Before adding dependency, search entire task directory
 2. If task X depends on Y, and Y depends on X → CIRCULAR ERROR
-
-#### 2. Deleted Blocker
-**Problem:** Delete a todo that is blocker of others → quedan bloqueados para siempre
+3. Recursive check: follow all dependency chains before approving
+```
 
 **Prevention:**
-1. Before deleting, search for files with `dependencies:.*"{todo_id}"`
-2. If found → WARN and require manual unblocking
-3. Recommend `status: cancelled` instead of deleting
+- Search `dependencies:` field in ALL todo files when adding new dependency
+- If new_todo depends on X, and X depends on new_todo → ERROR
+- If chain exceeds 5 levels → WARNING (possible circular)
+
+#### 2. Deleted Blocker
+**Problem:** Delete a todo that is blocker of others → esos otros quedan bloqueados para siempre
+
+**Prevention:**
+```
+1. Before deleting any todo, search for files with dependencies:.*"{todo_id}"
+2. If found → WARN and require manual unblocking before delete
+3. Recommend changing status to "cancelled" instead of deleting
+```
 
 #### 3. Duplicate IDs
 **Problem:** Same ID in both canonical + legacy paths
 
 **Prevention:**
 - Search BOTH paths for existing ID before creating
+- If duplicate found → increment to next available
 
 #### 4. ID Overflow
-**Problem:** Zero-pad a 3 dígitos > 999
+**Problem:** Zero-pad a 3 dígitos pero no maneja overflow > 999
 
 **Prevention:**
 - If next ID > 999 → warn and require manual intervention
@@ -114,21 +125,20 @@ To check blockers: search for `{dep_id}-complete-*.md` in both paths. Missing ma
 ### Completing a Todo
 
 1. Verify all acceptance criteria.
-2. **Pre-rename check:** Search for todos that depend on this one.
-3. Update Work Log with final session.
+2. Update Work Log with final session.
+3. **Pre-rename check:** Search for todos that depend on this one.
 4. Rename `ready` -> `complete` in filename and frontmatter.
 5. Check for unblocked work: search for files containing `dependencies:.*"{issue_id}"`.
 
 ## Integration with Workflows
 
-| Trigger           | Flow                                                           |
-|-------------------|----------------------------------------------------------------|
-| Code review       | `/ce:review` -> Findings -> `/todo-triage` -> Todos            |
-| Autonomous review | `/ce:review mode:autofix` -> Residual todos -> `/todo-resolve` |
-| Code TODOs        | `/todo-resolve` -> Fixes + Complex todos                       |
-| Planning          | Brainstorm -> Create todo -> Work -> Complete                  |
+| Trigger                                   | Flow                                                                                   |
+|-------------------------------------------|----------------------------------------------------------------------------------------|
+| Code review                               | `/ce:review` -> Findings -> `/todo-triage` -> Todos                                    |
+| Autonomous review                         | `/ce:review mode:autofix` -> Residual todos -> `/todo-resolve`                         |
+| Code TODOs                                | `/todo-resolve` -> Fixes + Complex todos                                               |
+| Planning                                  | Brainstorm -> Create todo -> Work -> Complete                                          |
 
 ## Key Distinction
 
 This skill manages **durable, cross-session work items** persisted as markdown files. For temporary in-session step tracking, use platform task tools (`TaskCreate`/`TaskUpdate` in Claude Code, `update_plan` in Codex) instead.
-

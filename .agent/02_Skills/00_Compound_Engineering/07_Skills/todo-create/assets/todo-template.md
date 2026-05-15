@@ -4,11 +4,17 @@ priority: p2
 issue_id: "XXX"
 tags: []
 dependencies: []
+created_date: "YYYY-MM-DD"
 ---
 
 # Brief Task Title
 
 Replace with a concise title describing what needs to be done.
+
+> ⚠️ **VALIDATION: Before creating, verify:**
+> - Issue ID is unique in BOTH canonical and legacy paths
+> - No circular dependencies (search for dependencies in all todos)
+> - If adding dependencies, check they exist as complete
 
 ## Problem Statement
 

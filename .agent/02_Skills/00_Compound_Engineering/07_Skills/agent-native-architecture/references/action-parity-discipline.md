@@ -29,15 +29,15 @@ Without this parity:
 
 Maintain a structured map of UI actions to agent tools:
 
-| UI Action       | UI Location   | Agent Tool               | System Prompt Reference         |
-|-----------------|---------------|--------------------------|---------------------------------|
-| View library    | Library tab   | `read_library`           | "View books and highlights"     |
-| Add book        | Library → Add | `add_book`               | "Add books to library"          |
-| Publish insight | Analysis view | `publish_to_feed`        | "Create insights for Feed tab"  |
-| Start research  | Book detail   | `start_research`         | "Research books via web search" |
-| Edit profile    | Settings      | `write_file(profile.md)` | "Update reading profile"        |
-| Take screenshot | Camera        | N/A (user action)        | —                               |
-| Search web      | Chat          | `web_search`             | "Search the internet"           |
+| UI Action                               | UI Location                           | Agent Tool                                       | System Prompt Reference                                 |
+|-----------------------------------------|---------------------------------------|--------------------------------------------------|---------------------------------------------------------|
+| View library                            | Library tab                           | `read_library`                                   | "View books and highlights"                             |
+| Add book                                | Library → Add                         | `add_book`                                       | "Add books to library"                                  |
+| Publish insight                         | Analysis view                         | `publish_to_feed`                                | "Create insights for Feed tab"                          |
+| Start research                          | Book detail                           | `start_research`                                 | "Research books via web search"                         |
+| Edit profile                            | Settings                              | `write_file(profile.md)`                         | "Update reading profile"                                |
+| Take screenshot                         | Camera                                | N/A (user action)                                | —                                                       |
+| Search web                              | Chat                                  | `web_search`                                     | "Search the internet"                                   |
 
 **Update this table whenever adding features.**
 
@@ -46,11 +46,11 @@ Maintain a structured map of UI actions to agent tools:
 ```markdown
 # Capability Map - [Your App Name]
 
-| UI Action   | UI Location   | Agent Tool   | System Prompt   | Status     |
-|-------------|---------------|--------------|-----------------|------------|
-|             |               |              |                 | ⚠️ Missing |
-|             |               |              |                 | ✅ Done     |
-|             |               |              |                 | 🚫 N/A      |
+| UI Action                           | UI Location                           | Agent Tool                           | System Prompt                           | Status                             |
+|-------------------------------------|---------------------------------------|--------------------------------------|-----------------------------------------|------------------------------------|
+|                                     |                                       |                                      |                                         | ⚠️ Missing                         |
+|                                     |                                       |                                      |                                         | ✅ Done                             |
+|                                     |                                       |                                      |                                         | 🚫 N/A                              |
 ```
 
 Status meanings:

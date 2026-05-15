@@ -1,4 +1,4 @@
-﻿---
+---
 name: compound-docs
 description: Capture solved problems as categorized documentation with YAML frontmatter for fast lookup
 disable-model-invocation: true
@@ -327,7 +327,7 @@ User selects this when the solution represents the start of a new learning domai
 
 Action:
 1. Prompt: "What should the new skill be called? (e.g., stripe-billing, email-processing)"
-2. Run `python3 01_Personal_Os/01_Core/02_Tools/02_Skills/skill-creator/scripts/init_skill.py [skill-name]`
+2. Run `python3 01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/scripts/init_skill.py [skill-name]`
 3. Create initial reference files with this solution as first example
 4. Confirm: "✓ Created new [skill-name] skill with this solution as first example"
 
@@ -509,4 +509,3 @@ What's next?
 - Metrics (most common issues, resolution time)
 - Export to shareable format (community knowledge sharing)
 - Import community solutions
-

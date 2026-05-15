@@ -33,7 +33,7 @@ Para features complejas, cambios arquitectónicos o sistemas críticos.
 - Repo raíz: `Think_Different/`
 - Reglas: `01_Core/01_Rules/`
 - Scripts motor: `01_Personal_Os/04_Operations/03_Scripts_Os/`
-- Infraestructura: `05_System/`
+- Infraestructura: `01_Personal_Os/05_System/`
 - Ritual de cierre: `python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Ritual_Cierre.py`
 
 ## Flujo LFG Lite (12 pasos)

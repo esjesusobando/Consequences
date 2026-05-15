@@ -1,12 +1,16 @@
-# Workflow Graph — generated 2026-05-14T12:41:02
+# Workflow Graph — generated 2026-05-15T03:53:47
 
 version: v3.0
-generated: "2026-05-14T12:41:02"
+generated: "2026-05-15T03:53:47"
 base_path: 01_Personal_Os/01_Core/00_Workflows_Os/
 totals:
-  categories: 5
-  workflows: 27
+  categories: 7
+  workflows: 29
 by_category:
+  00_Learning_Always:
+    count: 1
+    workflows:
+      - 00_Learning_Always.md
   01_Personal_Os:
     count: 11
     workflows:
@@ -49,3 +53,7 @@ by_category:
       - 17_Ship_It.md
       - 18_Anthropic_Harness.md
       - 19_Multi_Agent_Roles.md
+  __Youtube_Full_Video:
+    count: 1
+    workflows:
+      - __Youtube_Full_Video.md

@@ -1,4 +1,4 @@
-﻿---
+---
 description: Core Protocol + Genesis - Inicio de sesión y contexto obligatorio
 globs: **/*
 alwaysApply: true
@@ -14,20 +14,20 @@ alwaysApply: true
 
 ---
 
-## 📂 Workspace Structure (v6.1)
+## 📂 Workspace Structure (v2.0 Consequences)
 
 ```
 Think_Different/
-├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria
-├── 01_Core/               # Motor: Skills, Agents, MCPs
-├── 02_Knowledge/          # Documentación
-├── 03_Task/            # Tareas activas
-├── 04_Operations/       # Memoria y Procesos
-├── 05_Archive/          # Legacy
-├── 06_Playground/      
-├── 01_Personal_Os/04_Operations/05_Projects/        
-├── 01_Personal_Os/04_Operations/03_Scripts_Os/       # Scripts operativos
-└── Maerks/             
+├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria (ESTRATEGICO)
+├── 01_Personal_Os/      # El Sistema Operativo
+│   ├── 01_Core/01_Rules/ # <- DONDE ESTAMOS: 10 reglas .mdc
+│   ├── 01_Core/02_Tools/ # Skills, Agents, MCPs, Hooks
+│   ├── 02_Knowledge/    # Base de conocimiento
+│   ├── 03_Task/         # Tareas activas
+│   ├── 04_Operations/   # Scripts HUBs, Auto-Improvement
+│   └── 05_Archive/      # Legados
+├── 02_Playground/       # Zona de pruebas
+└── 03_Resultado/       # Outputs, Planes, Reportes
 ```
 
 ---
@@ -116,18 +116,23 @@ Antes de terminar sesión, DEBE llamar `mem_session_summary`:
 
 ---
 
-## 📋 SECCIÓN 05: Aliases de Rutas
+## 📋 SECCIÓN 05: Aliases de Rutas (v2.0 Consequences)
 
 ```
-ROOT_DIR          → Raíz del proyecto
-CORE_DIR         → 01_Core
-SKILLS_DIR       → 01_Personal_Os/01_Core/02_Tools/02_Skills
-RULES_DIR        → 01_Core/01_Rules
-MCP_DIR          → 01_Core/05_Mcp
-AGENTS_DIR       → 01_Core/04_Agents
-INVENTORY_FILE   → 01_Core/01_Inventario_Total.md
-BRAIN_DIR       → 04_Operations
-MEMORY_DIR      → 04_Operations/00_Context_Memory
+ROOT_DIR              → Think_Different/ (raíz)
+PERSONAL_OS_DIR      → 01_Personal_Os/
+CORE_DIR             → 01_Personal_Os/01_Core/
+RULES_DIR           → 01_Personal_Os/01_Core/01_Rules/
+SKILLS_DIR          → 01_Personal_Os/01_Core/02_Tools/02_Skills/
+AGENTS_DIR          → 01_Personal_Os/01_Core/02_Tools/01_Agents/
+MCP_DIR             → 01_Personal_Os/01_Core/02_Tools/03_Mcp/
+HOOKS_DIR           → 01_Personal_Os/01_Core/02_Tools/05_Hooks/
+ENGINE_DIR          → 01_Personal_Os/04_Operations/03_Scripts_Os/
+OPERATIONS_DIR     → 01_Personal_Os/04_Operations/
+KNOWLEDGE_DIR       → 01_Personal_Os/02_Knowledge/
+TASKS_DIR           → 01_Personal_Os/03_Task/
+MEMORY_DIR         → 01_Personal_Os/04_Operations/00_Context_LLM/
+BRAIN_DIR          → 01_Personal_Os/04_Operations/00_Context_LLM/
 ```
 
 ---

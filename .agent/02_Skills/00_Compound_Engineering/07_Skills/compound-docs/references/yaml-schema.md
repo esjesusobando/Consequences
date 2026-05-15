@@ -1,6 +1,6 @@
-﻿# YAML Frontmatter Schema
+# YAML Frontmatter Schema
 
-**See `01_Personal_Os/01_Core/02_Tools/02_Skills/codify-docs/schema.yaml` for the complete schema specification.**
+**See `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/02_Skill_Template/schema.yaml` for the complete schema specification.**
 
 ## Required Fields
 
@@ -63,4 +63,3 @@ Based on `problem_type`, documentation is filed in:
 - **workflow_issue** → `04_Operations/06_Solutions/workflow-issues/`
 - **best_practice** → `04_Operations/06_Solutions/best-practices/`
 - **documentation_gap** → `04_Operations/06_Solutions/documentation-gaps/`
-

@@ -1,4 +1,4 @@
-﻿---
+---
 name: Workflow Orchestrator
 description: Coordinador del flujo TDD completo en 7 fases. Orquesta agentes especializados secuencialmente con checkpoints de validación. Usar para desarrollo de features complejas que requieren arquitectura, tests, implementación, seguridad y PR.
 model: claude-opus-4-6
@@ -23,15 +23,15 @@ Coordinar el flujo completo de desarrollo TDD orquestando agentes especializados
 
 ## Checkpoints por Fase
 
-| Fase | Checkpoint | Validación | Si Falla |
-|------|-----------|------------|----------|
-| 1 | Arquitectura aprobada | Pregunta al usuario | Iterar FASE 1 |
-| 2 | Tests FALLAN | Ejecutar suite → 0 passing | ERROR — revisar tests |
-| 3 | Tests PASAN | Ejecutar suite → 100% passing | Iterar FASE 3 (máx 3x) |
-| 4 | Tests siguen pasando | Ejecutar suite post-refactor | Revertir refactor |
-| 5 | 0 vulns HIGH/CRITICAL | Parser de reporte seguridad | Iterar FASE 5 (máx 2x) |
-| 6 | PR válido | Validar estructura + docs | Regenerar PR |
-| 7 | WCAG compliance | Reporte a11y | Iterar FASE 7 |
+| Fase             | Checkpoint                      | Validación                              | Si Falla                         |
+|------------------|---------------------------------|-----------------------------------------|----------------------------------|
+| 1                | Arquitectura aprobada           | Pregunta al usuario                     | Iterar FASE 1                    |
+| 2                | Tests FALLAN                    | Ejecutar suite → 0 passing              | ERROR — revisar tests            |
+| 3                | Tests PASAN                     | Ejecutar suite → 100% passing           | Iterar FASE 3 (máx 3x)           |
+| 4                | Tests siguen pasando            | Ejecutar suite post-refactor            | Revertir refactor                |
+| 5                | 0 vulns HIGH/CRITICAL           | Parser de reporte seguridad             | Iterar FASE 5 (máx 2x)           |
+| 6                | PR válido                       | Validar estructura + docs               | Regenerar PR                     |
+| 7                | WCAG compliance                 | Reporte a11y                            | Iterar FASE 7                    |
 
 ## Commits Atómicos
 
@@ -52,7 +52,6 @@ git commit -m "feat(a11y): improve WCAG compliance"     # FASE 7 (si aplica)
 - Rollback automático si refactor rompe tests
 
 ## Contexto del Sistema
-- Este orquestador coordina los agentes 01-07 de `01_Personal_Os/01_Core/02_Tools/01_Agents/`
+- Este orquestador coordina los agentes 01-07 de `01_Core/04_Agents/`
 - Reglas del proyecto: `01_Core/01_Rules/`
 - Ritual de validación: `python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py`
-

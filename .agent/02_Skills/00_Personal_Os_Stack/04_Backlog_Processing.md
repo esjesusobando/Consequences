@@ -1,4 +1,4 @@
-﻿---
+---
 name: "backlog-processing"
 description: "Procesar backlog y mantener el sistema PersonalOS - Flujo completo para limpiar, priorizar y crear tareas"
 ---
@@ -53,7 +53,7 @@ Para cada ítem:
 - Verificar si ya existe tarea similar (dedup)
 - Vincular con objetivos en GOALS.md
 
-### Paso 4: Crear Tareas en 03_Task/
+### Paso 4: Crear Tareas en 03_Tasks/
 
 **Template básico (usar según complejidad):**
 
@@ -87,11 +87,11 @@ Vinculado a: Meta "[nombre de meta]"
 
 ### Paso 5: Templates por Complejidad
 
-| Complejidad       | Template  | Ubicación                                         |
-|-------------------|-----------|---------------------------------------------------|
-| Alta (1-8 horas)  | SOTA      | `03_Task/00_Templates/03_Task_Template_SOTA.md`  |
-| Media (1-4 horas) | Medio     | `03_Task/00_Templates/04_Task_Template_Medio.md` |
-| Baja (30min-2h)   | Corto     | `03_Task/00_Templates/05_Task_Template_Corto.md` |
+| Complejidad                               | Template                          | Ubicación                                                                 |
+|-------------------------------------------|-----------------------------------|---------------------------------------------------------------------------|
+| Alta (1-8 horas)                          | SOTA                              | `03_Tasks/00_Templates/03_Task_Template_SOTA.md`                          |
+| Media (1-4 horas)                         | Medio                             | `03_Tasks/00_Templates/04_Task_Template_Medio.md`                         |
+| Baja (30min-2h)                           | Corto                             | `03_Tasks/00_Templates/05_Task_Template_Corto.md`                         |
 
 ### Paso 6: Limpiar BACKLOG.md
 
@@ -115,34 +115,34 @@ engram mem_save: "Backlog Processing - [fecha]"
 
 ## Categorías de Tareas
 
-| Categoría     | Descripción                    |
-|---------------|--------------------------------|
-| **technical** | build, fix, configure          |
-| **outreach**  | communicate, meet              |
-| **research**  | learn, analyze                 |
-| **writing**   | draft, document                |
-| **content**   | blog posts, social media       |
-| **admin**     | operations, finance, logistics |
-| **personal**  | health, routines               |
-| **other**     | everything else                |
+| Categoría                             | Descripción                                            |
+|---------------------------------------|--------------------------------------------------------|
+| **technical**                         | build, fix, configure                                  |
+| **outreach**                          | communicate, meet                                      |
+| **research**                          | learn, analyze                                         |
+| **writing**                           | draft, document                                        |
+| **content**                           | blog posts, social media                               |
+| **admin**                             | operations, finance, logistics                         |
+| **personal**                          | health, routines                                       |
+| **other**                             | everything else                                        |
 
 ---
 
 ## Reglas de Prioridad
 
-| Priority   | Significado          | Límite     |
-|------------|----------------------|------------|
-| **P0**     | Esta semana, crítico | max 3      |
-| **P1**     | Este mes, importante | max 7      |
-| **P2**     | Programado           | sin límite |
-| **P3**     | Algún día            | sin límite |
+| Priority                           | Significado                                  | Límite                             |
+|------------------------------------|----------------------------------------------|------------------------------------|
+| **P0**                             | Esta semana, crítico                         | max 3                              |
+| **P1**                             | Este mes, importante                         | max 7                              |
+| **P2**                             | Programado                                   | sin límite                         |
+| **P3**                             | Algún día                                    | sin límite                         |
 
 ---
 
 ## Deduplicación
 
 Antes de crear tarea, verificar:
-1. Buscar en `03_Task/` por título similar
+1. Buscar en `03_Tasks/` por título similar
 2. Usar script de dedup si existe
 3. Si existe相近 → actualizar en vez de crear nueva
 
@@ -180,16 +180,16 @@ Antes de crear tarea, verificar:
 
 ```bash
 # Ver tareas activas
-ls 03_Task/*.md
+ls 03_Tasks/*.md
 
 # Buscar tarea específica
-grep -r "title:" 03_Task/
+grep -r "title:" 03_Tasks/
 
 # Ver estado de prioridades
-grep "priority:" 03_Task/*.md
+grep "priority:" 03_Tasks/*.md
 
 # Contar tareas por estado
-grep "status:" 03_Task/*.md | sort | uniq -c
+grep "status:" 03_Tasks/*.md | sort | uniq -c
 ```
 
 ---
@@ -200,4 +200,3 @@ Esta skill funciona con:
 - **personal-os**: Skill principal del sistema
 - **sdd-workflow**: Para tareas que necesitan specs
 - **system-guardian**: Para validar estructura después de cambios
-

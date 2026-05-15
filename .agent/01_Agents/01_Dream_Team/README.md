@@ -12,24 +12,24 @@ El Dream Team son los 5 agentes especializados que trabajaban juntos como un equ
 
 ## Los 5 Jugadores
 
-| # | Agente | Rol | Especialidad |
-|---|-------|-----|------------|
-| 01 | **Product_Builder** | DELANTERO | Construye features completos PRD→deploy |
-| 02 | **Data_Engineer** | MEDIO | ETL, pipelines, analytics |
-| 03 | **Marketing_Tech** | EXTREMO | Growth, SEO, contenido |
-| 04 | **Design_Ops** | DEFENSA | UI/UX, design system |
-| 05 | **Platform_Engineer** | ARQUITECTO | Infra, MCPs, DevOps |
+| #             | Agente                          | Rol                  | Especialidad                                      |
+|---------------|---------------------------------|----------------------|---------------------------------------------------|
+| 01            | **Product_Builder**             | DELANTERO            | Construye features completos PRD→deploy           |
+| 02            | **Data_Engineer**               | MEDIO                | ETL, pipelines, analytics                         |
+| 03            | **Marketing_Tech**              | EXTREMO              | Growth, SEO, contenido                            |
+| 04            | **Design_Ops**                  | DEFENSA              | UI/UX, design system                              |
+| 05            | **Platform_Engineer**           | ARQUITECTO           | Infra, MCPs, DevOps                               |
 
 ---
 
 ## Workflow Principal
 
 ```
-Product_Builder → (PRD + implementación)
+Product_Builder → (PRD + implementacion)
     ↓
-Data_Engineer → (analytics si需要 data)
+Data_Engineer → (analytics si necesita data)
     ↓
-Marketing_Tech → (si需要 growth)
+Marketing_Tech → (si necesita growth)
     ↓
 Design_Ops → (si UI/UX)
     ↓

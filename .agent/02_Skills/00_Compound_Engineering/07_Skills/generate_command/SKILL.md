@@ -1,4 +1,4 @@
-﻿---
+---
 name: generate_command
 description: Create a new custom slash command following conventions and best practices
 argument-hint: "[command purpose and requirements]"
@@ -161,4 +161,3 @@ Details about what to do.
 - [ ] Expected outcome 1
 - [ ] Expected outcome 2
 ```
-
