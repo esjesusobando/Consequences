@@ -12,14 +12,14 @@
 
 ### Las 6 Áreas del Unicorn (UNA persona - nivel SOTA en todas)
 
-| #                 | Área                             | Focus                                                           |
-|-------------------|----------------------------------|-----------------------------------------------------------------|
-| 1                 | **PM**                           | Project Management - Delivery, timeline, recursos               |
-| 2                 | **PdM**                          | Product Management - Estrategia, users, metrics                 |
-| 3                 | **Product Design**               | UX, wireframes, research, Design Sprint                         |
-| 4                 | **Art Director**                 | Visual, branding, design system                                 |
-| 5                 | **AIPM**                         | AI, prompts, agents, context engineering                        |
-| 6                 | **Engineering**                  | Full-stack, arquitectura, código                                |
+| #                         | Área                                     | Focus                                                                   |
+|---------------------------|------------------------------------------|-------------------------------------------------------------------------|
+| 1                         | **PM**                                   | Project Management - Delivery, timeline, recursos                       |
+| 2                         | **PdM**                                  | Product Management - Estrategia, users, metrics                         |
+| 3                         | **Product Design**                       | UX, wireframes, research, Design Sprint                                 |
+| 4                         | **Art Director**                         | Visual, branding, design system                                         |
+| 5                         | **AIPM**                                 | AI, prompts, agents, context engineering                                |
+| 6                         | **Engineering**                          | Full-stack, arquitectura, código                                        |
 
 ---
 
@@ -66,45 +66,45 @@
 
 ### 03_Product_Design - Design Patterns SOTA
 
-| #                 | Metodología                         | Descripción                                                   |
-|-------------------|-------------------------------------|---------------------------------------------------------------|
-| 1                 | **Design Sprint**                   | 5 días para validar ideas                                     |
-| 2                 | **Double Diamond**                  | Discovery → Definition → Development → Delivery               |
-| 3                 | **Lean UX**                         | Build → Measure → Learn                                       |
-| 4                 | **Jobs-to-be-Done**                 | Entender el "trabajo" del usuario                             |
-| 5                 | **Design System 4.0**               | Componentes, tokens, atomic design                            |
+| #                         | Metodología                                 | Descripción                                                           |
+|---------------------------|---------------------------------------------|-----------------------------------------------------------------------|
+| 1                         | **Design Sprint**                           | 5 días para validar ideas                                             |
+| 2                         | **Double Diamond**                          | Discovery → Definition → Development → Delivery                       |
+| 3                         | **Lean UX**                                 | Build → Measure → Learn                                               |
+| 4                         | **Jobs-to-be-Done**                         | Entender el "trabajo" del usuario                                     |
+| 5                         | **Design System 4.0**                       | Componentes, tokens, atomic design                                    |
 
 ### 05_Aipm - AI Patterns SOTA
 
-| #                 | Metodología                             | Descripción                                      |
-|-------------------|-----------------------------------------|--------------------------------------------------|
-| 1                 | **Agent Orchestration**                 | Multi-agent coordination                         |
-| 2                 | **Prompt Patterns (10+)**               | Patterns que funcionan en 2026                   |
-| 3                 | **Skills System**                       | AI skills como SOPs reutilizables                |
-| 4                 | **Human-in-the-loop**                   | IA con supervisión humana                        |
-| 5                 | **Context Engineering**                 | Optimización de contexto para LLMs               |
+| #                         | Metodología                                     | Descripción                                              |
+|---------------------------|-------------------------------------------------|----------------------------------------------------------|
+| 1                         | **Agent Orchestration**                         | Multi-agent coordination                                 |
+| 2                         | **Prompt Patterns (10+)**                       | Patterns que funcionan en 2026                           |
+| 3                         | **Skills System**                               | AI skills como SOPs reutilizables                        |
+| 4                         | **Human-in-the-loop**                           | IA con supervisión humana                                |
+| 5                         | **Context Engineering**                         | Optimización de contexto para LLMs                       |
 
 ### 06_Engineering - Architecture Patterns SOTA
 
-| #                 | Metodología                               | Descripción                         |
-|-------------------|-------------------------------------------|-------------------------------------|
-| 1                 | **Serverless + Edge**                     | Functions en edge                   |
-| 2                 | **React Server Components**               | SSR con client/server               |
-| 3                 | **Micro-frontends**                       | Arquitectura modular                |
-| 4                 | **AI-Native SaaS**                        | SaaS con IA integrada               |
-| 5                 | **Component-driven**                      | Todo es componente                  |
+| #                         | Metodología                                       | Descripción                                 |
+|---------------------------|---------------------------------------------------|---------------------------------------------|
+| 1                         | **Serverless + Edge**                             | Functions en edge                           |
+| 2                         | **React Server Components**                       | SSR con client/server                       |
+| 3                         | **Micro-frontends**                               | Arquitectura modular                        |
+| 4                         | **AI-Native SaaS**                                | SaaS con IA integrada                       |
+| 5                         | **Component-driven**                              | Todo es componente                          |
 
 ---
 
 ## 🔄 Fases de Ejecución
 
-| Fase       | Task                                        | Estado                                       |
-|------------|---------------------------------------------|----------------------------------------------|
-| **1**      | Auditoría: estructura actual                | ✅ COMPLETADO                                 |
-| **2**      | Crear estructura 06_Unicorn/                | ✅ COMPLETADO (v2.0 path)                     |
-| **3**      | Poblar con conocimiento existente           | ✅ COMPLETADO (~poblado)                      |
-| **4**      | Integrar metodologías SOTA investigadas     | ✅ COMPLETADO (tablas en plan)                |
-| **5**      | Sistema auto-mantenerse                     | ✅ COMPLETADO (regla output + estructura)     |
+| Fase               | Task                                                | Estado                                               |
+|--------------------|-----------------------------------------------------|------------------------------------------------------|
+| **1**              | Auditoría: estructura actual                        | ✅ COMPLETADO                                         |
+| **2**              | Crear estructura 06_Unicorn/                        | ✅ COMPLETADO (v2.0 path)                             |
+| **3**              | Poblar con conocimiento existente                   | ✅ COMPLETADO (~poblado)                              |
+| **4**              | Integrar metodologías SOTA investigadas             | ✅ COMPLETADO (tablas en plan)                        |
+| **5**              | Sistema auto-mantenerse                             | ✅ COMPLETADO (regla output + estructura)             |
 
 > **2026-04-25:** Fase 5 iniciada. Agregado sistema en `01_Personal_Os/02_Knowledge/06_Unicorn/README.md`:
 > - Engram auto-save hook con topic_keys
@@ -148,19 +148,19 @@ status: {active|deprecated}
 
 > **Nueva Regla 2026-04-25:** Toda Skill que genere un resultado DEBE produzir 2 artefactos:
 
-| Artefacto               | Descripción                                          | Destino                                                  |
-|-------------------------|------------------------------------------------------|----------------------------------------------------------|
-| **1. Resultado**        | Output en `.md` con el contenido                     | `03_Resultado/00_Output_Skills/{Skill}/{secuencia}/`     |
-| **2. Preview HTML**     | Visualización de cómo se verá el resultado final     | Misma carpeta + con prefijo `preview_`                   |
+| Artefacto                       | Descripción                                                  | Destino                                                          |
+|---------------------------------|--------------------------------------------------------------|------------------------------------------------------------------|
+| **1. Resultado**                | Output en `.md` con el contenido                             | `03_Resultado/00_Output_Skills/{Skill}/{secuencia}/`             |
+| **2. Preview HTML**             | Visualización de cómo se verá el resultado final             | Misma carpeta + con prefijo `preview_`                           |
 
 ### Previews por Tipo de Skill:
 
-| Tipo de Skill               | Preview Requerido                                                                   |
-|-----------------------------|-------------------------------------------------------------------------------------|
-| **LinkedIn Publishing**     | HTML estilizado "como se vera en LinkedIn" + iconominimalista para copiar texto     |
-| **General Content**         | HTML Apple-style limpio (minimal + taste skill)                                     |
-| **Code/Technical**          | HTML con syntax highlighting estilo Apple                                           |
-| **Analytics/Report**        | HTML con gráficos limpios minimal                                                   |
+| Tipo de Skill                       | Preview Requerido                                                                           |
+|-------------------------------------|---------------------------------------------------------------------------------------------|
+| **LinkedIn Publishing**             | HTML estilizado "como se vera en LinkedIn" + iconominimalista para copiar texto             |
+| **General Content**                 | HTML Apple-style limpio (minimal + taste skill)                                             |
+| **Code/Technical**                  | HTML con syntax highlighting estilo Apple                                                   |
+| **Analytics/Report**                | HTML con gráficos limpios minimal                                                           |
 
 ### Estructura de Destino (00_Output_Skills):
 

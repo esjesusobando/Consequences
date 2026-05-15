@@ -2,10 +2,10 @@
 
 ## Eisenhower Matrix
 
-|                                           | Urgent                                | Not Urgent                            |
-|-------------------------------------------|---------------------------------------|---------------------------------------|
-| **Important**                             | Do First (P0)                         | Schedule (P2)                         |
-| **Not Important**                         | Delegate (P3)                         | Eliminate                             |
+|                                                   | Urgent                                        | Not Urgent                                    |
+|---------------------------------------------------|-----------------------------------------------|-----------------------------------------------|
+| **Important**                                     | Do First (P0)                                 | Schedule (P2)                                 |
+| **Not Important**                                 | Delegate (P3)                                 | Eliminate                                     |
 
 **When to use**: General prioritization, especially when overwhelmed.
 
@@ -21,11 +21,11 @@
 
 ## ICE Scoring
 
-| Factor                                 | Question                                                     |
-|----------------------------------------|--------------------------------------------------------------|
-| **I**mpact                             | How much will this help? (1-10)                              |
-| **C**onfidence                         | How sure are we it will work? (1-10)                         |
-| **E**ase                               | How easy to implement? (1-10)                                |
+| Factor                                         | Question                                                             |
+|------------------------------------------------|----------------------------------------------------------------------|
+| **I**mpact                                     | How much will this help? (1-10)                                      |
+| **C**onfidence                                 | How sure are we it will work? (1-10)                                 |
+| **E**ase                                       | How easy to implement? (1-10)                                        |
 
 Score = (I + C + E) / 3
 
@@ -33,12 +33,12 @@ Score = (I + C + E) / 3
 
 ## RICE Scoring
 
-| Factor                                 | Description                                                     |
-|----------------------------------------|-----------------------------------------------------------------|
-| **R**each                              | How many people will this affect?                               |
-| **I**mpact                             | How much will it help? (0.25/0.5/1/2/3)                         |
-| **C**onfidence                         | How sure are we? (50%/80%/100%)                                 |
-| **E**ffort                             | Person-weeks to implement                                       |
+| Factor                                         | Description                                                             |
+|------------------------------------------------|-------------------------------------------------------------------------|
+| **R**each                                      | How many people will this affect?                                       |
+| **I**mpact                                     | How much will it help? (0.25/0.5/1/2/3)                                 |
+| **C**onfidence                                 | How sure are we? (50%/80%/100%)                                         |
+| **E**ffort                                     | Person-weeks to implement                                               |
 
 Score = (R × I × C) / E
 
@@ -63,13 +63,13 @@ WSJF = (User Business Value + Time Criticality + Job Size Reduction) / Job Size
 
 ## Applying Frameworks
 
-| Situation                                         | Recommended Framework                          |
-|---------------------------------------------------|------------------------------------------------|
-| Overwhelmed, need clarity                         | Eisenhower                                     |
-| Simple task list                                  | ABCDE                                          |
-| Feature prioritization                            | ICE or RICE                                    |
-| Release planning                                  | MoSCoW or WSJF                                 |
-| Sprint planning                                   | WSJF                                           |
+| Situation                                                 | Recommended Framework                                  |
+|-----------------------------------------------------------|--------------------------------------------------------|
+| Overwhelmed, need clarity                                 | Eisenhower                                             |
+| Simple task list                                          | ABCDE                                                  |
+| Feature prioritization                                    | ICE or RICE                                            |
+| Release planning                                          | MoSCoW or WSJF                                         |
+| Sprint planning                                           | WSJF                                                   |
 
 ---
 

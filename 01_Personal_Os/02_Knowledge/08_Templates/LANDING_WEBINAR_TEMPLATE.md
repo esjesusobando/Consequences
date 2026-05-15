@@ -69,12 +69,12 @@ Basado en análisis de Founderz (2026-04-16)
 
 ### Conoce a los ponentes
 
-| Speaker                     | Foto                     | Nombre                     | Rol                                 |
-|-----------------------------|--------------------------|----------------------------|-------------------------------------|
-| 1                           | [IMG]                    | [Nombre]                   | [Rol profesional]                   |
-| 2                           | [IMG]                    | [Nombre]                   | [Rol]                               |
-| 3                           | [IMG]                    | [Nombre]                   | [Rol]                               |
-| 4                           | [IMG]                    | [Nombre]                   | [Rol]                               |
+| Speaker                             | Foto                             | Nombre                             | Rol                                         |
+|-------------------------------------|----------------------------------|------------------------------------|---------------------------------------------|
+| 1                                   | [IMG]                            | [Nombre]                           | [Rol profesional]                           |
+| 2                                   | [IMG]                            | [Nombre]                           | [Rol]                                       |
+| 3                                   | [IMG]                            | [Nombre]                           | [Rol]                                       |
+| 4                                   | [IMG]                            | [Nombre]                           | [Rol]                                       |
 
 ---
 
@@ -113,19 +113,19 @@ Basado en análisis de Founderz (2026-04-16)
 
 ## 🎨 Best Practices Checklist
 
-| Elemento                       | Requirement                                      |
-|--------------------------------|--------------------------------------------------|
-| Badge                          | "Workshop gratuito" visible                      |
-| Partner                        | Logo de empresa colaboradora                     |
-| Headline                       | Max 10 palabras, específico                      |
-| Social Proof                   | Número grande de attendees                       |
-| CTA                            | Botón prominente,多次出现                            |
-| Benefits                       | 4 puntos con icons distintivos                   |
-| Módulos                        | 3-4 con descripciones claras                     |
-| Speakers                       | Foto + Nombre + Rol                              |
-| FAQ                            | 5-6 preguntas respondidas                        |
-| Color                          | Dark theme (profesional)                         |
-| Lang                           | Según mercado (ES-MX)                            |
+| Elemento                               | Requirement                                              |
+|----------------------------------------|----------------------------------------------------------|
+| Badge                                  | "Workshop gratuito" visible                              |
+| Partner                                | Logo de empresa colaboradora                             |
+| Headline                               | Max 10 palabras, específico                              |
+| Social Proof                           | Número grande de attendees                               |
+| CTA                                    | Botón prominente,多次出现                                    |
+| Benefits                               | 4 puntos con icons distintivos                           |
+| Módulos                                | 3-4 con descripciones claras                             |
+| Speakers                               | Foto + Nombre + Rol                                      |
+| FAQ                                    | 5-6 preguntas respondidas                                |
+| Color                                  | Dark theme (profesional)                                 |
+| Lang                                   | Según mercado (ES-MX)                                    |
 
 ---
 

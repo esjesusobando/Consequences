@@ -14,11 +14,11 @@ Scripts de integración con herramientas externas: MCP, Obsidian, QMD.
 
 ## 📦 Scripts (3)
 
-| #                 | Script                                  | Propósito                             |
-|-------------------|-----------------------------------------|---------------------------------------|
-| 46                | `46_Sync_MCP_OpenCode.py`               | Sync con OpenCode MCP                 |
-| 75                | `75_Update_QMD_Index.py`                | Actualizador índice QMD               |
-| 76                | `76_Obsidian_Exporter.py`               | Exportador a Obsidian                 |
+| #                         | Script                                          | Propósito                                     |
+|---------------------------|-------------------------------------------------|-----------------------------------------------|
+| 46                        | `46_Sync_MCP_OpenCode.py`                       | Sync con OpenCode MCP                         |
+| 75                        | `75_Update_QMD_Index.py`                        | Actualizador índice QMD                       |
+| 76                        | `76_Obsidian_Exporter.py`                       | Exportador a Obsidian                         |
 
 ---
 

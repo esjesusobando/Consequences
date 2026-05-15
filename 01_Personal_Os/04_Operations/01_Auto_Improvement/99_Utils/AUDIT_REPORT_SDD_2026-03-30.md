@@ -8,13 +8,13 @@
 
 ## 📊 Executive Summary
 
-| Metric                                             | Value                                             |
-|----------------------------------------------------|---------------------------------------------------|
-| **Total Outdated Paths Found**                     | 5,330+                                            |
-| **Critical Issues**                                | 1 (Auto-Improvement detected)                     |
-| **Directories Verified**                           | ✅ All 4 exist                                     |
-| **Config Files Status**                            | ⚠️ Needs update                                   |
-| **Auto-Improvement System**                        | ✅ OPERATIONAL                                     |
+| Metric                                                     | Value                                                     |
+|------------------------------------------------------------|-----------------------------------------------------------|
+| **Total Outdated Paths Found**                             | 5,330+                                                    |
+| **Critical Issues**                                        | 1 (Auto-Improvement detected)                             |
+| **Directories Verified**                                   | ✅ All 4 exist                                             |
+| **Config Files Status**                                    | ⚠️ Needs update                                           |
+| **Auto-Improvement System**                                | ✅ OPERATIONAL                                             |
 
 ---
 
@@ -22,11 +22,11 @@
 
 ### 1.1 Path: `04_Operations` (Should be `04_Operations`)
 
-| Metric                                | Value                                                            |
-|---------------------------------------|------------------------------------------------------------------|
-| **Matches Found**                     | 3,644                                                            |
-| **Status**                            | ❌ CRITICAL - Multiple broken references                          |
-| **Main Issue**                        | Old path still referenced in 3600+ locations                     |
+| Metric                                        | Value                                                                    |
+|-----------------------------------------------|--------------------------------------------------------------------------|
+| **Matches Found**                             | 3,644                                                                    |
+| **Status**                                    | ❌ CRITICAL - Multiple broken references                                  |
+| **Main Issue**                                | Old path still referenced in 3600+ locations                             |
 
 **Primary Source of Truth File:**
 - `04_Operations/01_Auto_Improvement/99_Utils/update_workflows.py` - Contains the migration logic
@@ -40,10 +40,10 @@
 
 ### 1.2 Path: `01_Brain` (Should be `01_Core`)
 
-| Metric                                | Value                                                    |
-|---------------------------------------|----------------------------------------------------------|
-| **Matches Found**                     | 620                                                      |
-| **Status**                            | ⚠️ MEDIUM - Legacy references remain                     |
+| Metric                                        | Value                                                            |
+|-----------------------------------------------|------------------------------------------------------------------|
+| **Matches Found**                             | 620                                                              |
+| **Status**                                    | ⚠️ MEDIUM - Legacy references remain                             |
 
 **Common References:**
 - `01_Core\03_Skills\03_Product_Manager\01_Brainstorming\` (valid path but contains "Brain" in name)
@@ -54,10 +54,10 @@
 
 ### 1.3 Path: `04_Operations` (Should be `04_Operations`)
 
-| Metric                                | Value                                                            |
-|---------------------------------------|------------------------------------------------------------------|
-| **Matches Found**                     | 580                                                              |
-| **Status**                            | ⚠️ MEDIUM - Scripts still reference old path                     |
+| Metric                                        | Value                                                                    |
+|-----------------------------------------------|--------------------------------------------------------------------------|
+| **Matches Found**                             | 580                                                                      |
+| **Status**                                    | ⚠️ MEDIUM - Scripts still reference old path                             |
 
 **Affected Scripts:**
 - `03_Scripts_Os/Validator_Fixed/40_Validate_Rules.py`
@@ -69,10 +69,10 @@
 
 ### 1.4 Path: `03_Tasks/` (Should be `.context/compound-engineering/03_Tasks/`)
 
-| Metric                                | Value                                                  |
-|---------------------------------------|--------------------------------------------------------|
-| **Matches Found**                     | 125                                                    |
-| **Status**                            | ⚠️ MEDIUM - Legacy todo references                     |
+| Metric                                        | Value                                                          |
+|-----------------------------------------------|----------------------------------------------------------------|
+| **Matches Found**                             | 125                                                            |
+| **Status**                                    | ⚠️ MEDIUM - Legacy todo references                             |
 
 **Note:** New canonical path is `.context/compound-engineering/03_Tasks/` but legacy `03_Tasks/` still referenced in documentation and some skills.
 
@@ -80,10 +80,10 @@
 
 ### 1.5 Path: `01_Core/03_Skills` (Should be `.agent/` or `01_Personal_Os/01_Core/02_Tools/02_Skills/`)
 
-| Metric                                | Value                                                          |
-|---------------------------------------|----------------------------------------------------------------|
-| **Matches Found**                     | 881                                                            |
-| **Status**                            | ❌ CRITICAL - Old OpenCode/Cody skills path                     |
+| Metric                                        | Value                                                                  |
+|-----------------------------------------------|------------------------------------------------------------------------|
+| **Matches Found**                             | 881                                                                    |
+| **Status**                                    | ❌ CRITICAL - Old OpenCode/Cody skills path                             |
 
 **Common References:**
 - `01_Personal_Os/01_Core/02_Tools/02_Skills/mcp-client/` → Should be in skills registry
@@ -95,10 +95,10 @@
 
 ### 1.6 Path: `.agent/01_Agents` (Should be `.agent/01_Agents/` or `01_Core/04_Agents/`)
 
-| Metric                                | Value                                              |
-|---------------------------------------|----------------------------------------------------|
-| **Matches Found**                     | 14                                                 |
-| **Status**                            | ⚠️ LOW - Few legacy references                     |
+| Metric                                        | Value                                                      |
+|-----------------------------------------------|------------------------------------------------------------|
+| **Matches Found**                             | 14                                                         |
+| **Status**                                    | ⚠️ LOW - Few legacy references                             |
 
 **Note:** References mostly in archived documentation and tutorials.
 
@@ -108,12 +108,12 @@
 
 ### 2.1 `.agent/CLAUDE.md`
 
-| Check                                        | Status                                                   |
-|----------------------------------------------|----------------------------------------------------------|
-| File exists                                  | ✅ YES                                                    |
-| Last updated                                 | 2026-03-29                                               |
-| References correct paths                     | ⚠️ Contains outdated path references                     |
-| **Overall**                                  | ⚠️ NEEDS UPDATE                                          |
+| Check                                                | Status                                                           |
+|------------------------------------------------------|------------------------------------------------------------------|
+| File exists                                          | ✅ YES                                                            |
+| Last updated                                         | 2026-03-29                                                       |
+| References correct paths                             | ⚠️ Contains outdated path references                             |
+| **Overall**                                          | ⚠️ NEEDS UPDATE                                                  |
 
 **Issues Found:**
 - Contains references to old directory structure
@@ -123,45 +123,45 @@
 
 ### 2.2 `01_Personal_Os/11_AGENTS.md` (Root)
 
-| Check                                                                          | Status                                                |
-|--------------------------------------------------------------------------------|-------------------------------------------------------|
-| File exists                                                                    | ✅ YES                                                 |
-| Purpose                                                                        | ✅ GGA Pre-Commit Hook entry point                     |
-| Redirects to `00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md`                 | ✅ YES                                                 |
-| **Overall**                                                                    | ✅ OK                                                  |
+| Check                                                                                  | Status                                                        |
+|----------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| File exists                                                                            | ✅ YES                                                         |
+| Purpose                                                                                | ✅ GGA Pre-Commit Hook entry point                             |
+| Redirects to `00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md`                         | ✅ YES                                                         |
+| **Overall**                                                                            | ✅ OK                                                          |
 
 ---
 
 ### 2.3 `README.md`
 
-| Check                                          | Status                            |
-|------------------------------------------------|-----------------------------------|
-| File exists                                    | ✅ YES                             |
-| Contains correct structure                     | ✅ YES (00-08)                     |
-| Hub documentation                              | ✅ ACCURATE                        |
-| **Overall**                                    | ✅ OK                              |
+| Check                                                  | Status                                    |
+|--------------------------------------------------------|-------------------------------------------|
+| File exists                                            | ✅ YES                                     |
+| Contains correct structure                             | ✅ YES (00-08)                             |
+| Hub documentation                                      | ✅ ACCURATE                                |
+| **Overall**                                            | ✅ OK                                      |
 
 ---
 
 ### 2.4 `00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md`
 
-| Check                                         | Status                                |
-|-----------------------------------------------|---------------------------------------|
-| File exists                                   | ✅ YES                                 |
-| Full system documentation                     | ✅ YES (671 lines)                     |
-| Contains v6.1 tools                           | ✅ YES                                 |
-| **Overall**                                   | ✅ OK                                  |
+| Check                                                 | Status                                        |
+|-------------------------------------------------------|-----------------------------------------------|
+| File exists                                           | ✅ YES                                         |
+| Full system documentation                             | ✅ YES (671 lines)                             |
+| Contains v6.1 tools                                   | ✅ YES                                         |
+| **Overall**                                           | ✅ OK                                          |
 
 ---
 
 ## 3. DIRECTORY STRUCTURE VERIFICATION
 
-| Directory                            | Expected Path                                            | Status                       |
-|--------------------------------------|----------------------------------------------------------|------------------------------|
-| Skills                               | `01_Personal_Os/01_Core/02_Tools/02_Skills/`             | ✅ EXISTS                     |
-| Auto-Improvement                     | `04_Operations/01_Auto_Improvement/`                     | ✅ EXISTS                     |
-| Scripts OS                           | `03_Scripts_Os/`                                         | ✅ EXISTS                     |
-| Tasks                                | `03_Tasks/`                                              | ✅ EXISTS                     |
+| Directory                                    | Expected Path                                                    | Status                               |
+|----------------------------------------------|------------------------------------------------------------------|--------------------------------------|
+| Skills                                       | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                     | ✅ EXISTS                             |
+| Auto-Improvement                             | `04_Operations/01_Auto_Improvement/`                             | ✅ EXISTS                             |
+| Scripts OS                                   | `03_Scripts_Os/`                                                 | ✅ EXISTS                             |
+| Tasks                                        | `03_Tasks/`                                                      | ✅ EXISTS                             |
 
 ---
 
@@ -224,12 +224,12 @@ Output:
 
 ## 7. SYSTEM HEALTH SCORE
 
-| Component                               | Score                       |
-|-----------------------------------------|-----------------------------|
-| Directory Structure                     | ✅ 100%                      |
-| Core Config Files                       | ⚠️ 75%                      |
-| Path Consistency                        | ❌ 40%                       |
-| Auto-Improvement                        | ✅ 100%                      |
+| Component                                       | Score                               |
+|-------------------------------------------------|-------------------------------------|
+| Directory Structure                             | ✅ 100%                              |
+| Core Config Files                               | ⚠️ 75%                              |
+| Path Consistency                                | ❌ 40%                               |
+| Auto-Improvement                                | ✅ 100%                              |
 
 **OVERALL HEALTH: 78%** — Needs path consolidation
 

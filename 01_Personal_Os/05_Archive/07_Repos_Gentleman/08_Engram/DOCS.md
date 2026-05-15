@@ -10,27 +10,27 @@ This is the complete technical reference for Engram. For getting started, see th
 
 ## Quick Navigation
 
-| Section                                                                   | What you'll find                                                        |
-|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [Database Schema](#database-schema)                                       | Tables, FTS5, SQLite config                                             |
-| [HTTP API](#http-api-endpoints)                                           | All REST endpoints with request/response details                        |
-| [MCP Tools](#mcp-tools-15-tools)                                          | Detailed reference for all 15 memory tools                              |
-| [Memory Protocol](#memory-protocol)                                       | When/how agents should use the tools                                    |
-| [Project Name Normalization](#project-name-normalization)                 | Auto-detection, normalization, similar-project warnings                 |
-| [Features](#features)                                                     | FTS5 search, timeline, privacy, git sync, compression                   |
-| [TUI](#terminal-ui-tui)                                                   | Screens, navigation, architecture                                       |
-| [Running as a Service](#running-as-a-service)                             | systemd setup                                                           |
-| [Design Decisions](#design-decisions)                                     | Why Go, why SQLite, why no auto-capture                                 |
+| Section                                                                           | What you'll find                                                                |
+|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| [Database Schema](#database-schema)                                               | Tables, FTS5, SQLite config                                                     |
+| [HTTP API](#http-api-endpoints)                                                   | All REST endpoints with request/response details                                |
+| [MCP Tools](#mcp-tools-15-tools)                                                  | Detailed reference for all 15 memory tools                                      |
+| [Memory Protocol](#memory-protocol)                                               | When/how agents should use the tools                                            |
+| [Project Name Normalization](#project-name-normalization)                         | Auto-detection, normalization, similar-project warnings                         |
+| [Features](#features)                                                             | FTS5 search, timeline, privacy, git sync, compression                           |
+| [TUI](#terminal-ui-tui)                                                           | Screens, navigation, architecture                                               |
+| [Running as a Service](#running-as-a-service)                                     | systemd setup                                                                   |
+| [Design Decisions](#design-decisions)                                             | Why Go, why SQLite, why no auto-capture                                         |
 
 For other docs:
 
-| Doc                                                  | Description                                                                       |
-|------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [Installation](docs/INSTALLATION.md)                 | All install methods + platform support                                            |
-| [Agent Setup](docs/AGENT-SETUP.md)                   | Per-agent configuration + compaction survival                                     |
-| [Architecture](docs/ARCHITECTURE.md)                 | How it works, session lifecycle, CLI reference, project structure                 |
-| [Plugins](docs/PLUGINS.md)                           | OpenCode & Claude Code plugin details                                             |
-| [Comparison](docs/COMPARISON.md)                     | Why Engram vs claude-mem                                                          |
+| Doc                                                          | Description                                                                               |
+|--------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| [Installation](docs/INSTALLATION.md)                         | All install methods + platform support                                                    |
+| [Agent Setup](docs/AGENT-SETUP.md)                           | Per-agent configuration + compaction survival                                             |
+| [Architecture](docs/ARCHITECTURE.md)                         | How it works, session lifecycle, CLI reference, project structure                         |
+| [Plugins](docs/PLUGINS.md)                                   | OpenCode & Claude Code plugin details                                                     |
+| [Comparison](docs/COMPARISON.md)                             | Why Engram vs claude-mem                                                                  |
 
 ---
 
@@ -117,11 +117,11 @@ All endpoints return JSON. Server listens on `127.0.0.1:7437`.
 
 ### Environment Variables
 
-| Variable                          | Description                                          | Default                               |
-|-----------------------------------|------------------------------------------------------|---------------------------------------|
-| `ENGRAM_DATA_DIR`                 | Override data directory                              | `~/.engram`                           |
-| `ENGRAM_PORT`                     | Override HTTP server port                            | `7437`                                |
-| `ENGRAM_PROJECT`                  | Override project name for MCP server                 | auto-detected via git                 |
+| Variable                                  | Description                                                  | Default                                       |
+|-------------------------------------------|--------------------------------------------------------------|-----------------------------------------------|
+| `ENGRAM_DATA_DIR`                         | Override data directory                                      | `~/.engram`                                   |
+| `ENGRAM_PORT`                             | Override HTTP server port                                    | `7437`                                        |
+| `ENGRAM_PROJECT`                          | Override project name for MCP server                         | auto-detected via git                         |
 
 ---
 
@@ -413,16 +413,16 @@ Interactive Bubbletea-based terminal UI. Launch with `engram tui`.
 
 ### Screens
 
-| Screen                                  | Description                                                                       |
-|-----------------------------------------|-----------------------------------------------------------------------------------|
-| **Dashboard**                           | Stats overview (sessions, observations, prompts, projects) + menu                 |
-| **Search**                              | FTS5 text search with text input                                                  |
-| **Search Results**                      | Browsable results list from search                                                |
-| **Recent Observations**                 | Browse all observations, newest first                                             |
-| **Observation Detail**                  | Full content of a single observation, scrollable                                  |
-| **Timeline**                            | Chronological context around an observation (before/after)                        |
-| **Sessions**                            | Browse all sessions                                                               |
-| **Session Detail**                      | Observations within a specific session                                            |
+| Screen                                          | Description                                                                               |
+|-------------------------------------------------|-------------------------------------------------------------------------------------------|
+| **Dashboard**                                   | Stats overview (sessions, observations, prompts, projects) + menu                         |
+| **Search**                                      | FTS5 text search with text input                                                          |
+| **Search Results**                              | Browsable results list from search                                                        |
+| **Recent Observations**                         | Browse all observations, newest first                                                     |
+| **Observation Detail**                          | Full content of a single observation, scrollable                                          |
+| **Timeline**                                    | Chronological context around an observation (before/after)                                |
+| **Sessions**                                    | Browse all sessions                                                                       |
+| **Session Detail**                              | Observations within a specific session                                                    |
 
 ### Navigation
 
@@ -489,13 +489,13 @@ WantedBy=default.target
 
 ### Go
 
-| Package                                              | Version                   | Purpose                                        |
-|------------------------------------------------------|---------------------------|------------------------------------------------|
-| `github.com/mark3labs/mcp-go`                        | v0.44.0                   | MCP protocol implementation                    |
-| `modernc.org/sqlite`                                 | v1.45.0                   | Pure Go SQLite driver (no CGO)                 |
-| `github.com/charmbracelet/bubbletea`                 | v1.3.10                   | Terminal UI framework                          |
-| `github.com/charmbracelet/lipgloss`                  | v1.1.0                    | Terminal styling                               |
-| `github.com/charmbracelet/bubbles`                   | v1.0.0                    | TUI components                                 |
+| Package                                                      | Version                           | Purpose                                                |
+|--------------------------------------------------------------|-----------------------------------|--------------------------------------------------------|
+| `github.com/mark3labs/mcp-go`                                | v0.44.0                           | MCP protocol implementation                            |
+| `modernc.org/sqlite`                                         | v1.45.0                           | Pure Go SQLite driver (no CGO)                         |
+| `github.com/charmbracelet/bubbletea`                         | v1.3.10                           | Terminal UI framework                                  |
+| `github.com/charmbracelet/lipgloss`                          | v1.1.0                            | Terminal styling                                       |
+| `github.com/charmbracelet/bubbles`                           | v1.0.0                            | TUI components                                         |
 
 ### OpenCode Plugin
 

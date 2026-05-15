@@ -619,15 +619,15 @@ Do you need ALL items from previous node?
 
 ### Quick Reference Table
 
-| Scenario                                                 | Use This                                       | Example                                                                             |
-|----------------------------------------------------------|------------------------------------------------|-------------------------------------------------------------------------------------|
-| Sum all amounts                                          | `$input.all()`                                 | `allItems.reduce((sum, i) => sum + i.json.amount, 0)`                               |
-| Get API response                                         | `$input.first()`                               | `$input.first().json.data`                                                          |
-| Process each independently                               | `$input.item`                                  | `$input.item.json` (Each Item mode)                                                 |
-| Combine two nodes                                        | `$node["Name"]`                                | `$node["API"].json`                                                                 |
-| Filter array                                             | `$input.all()`                                 | `allItems.filter(i => i.json.active)`                                               |
-| Transform single object                                  | `$input.first()`                               | `{...input.first().json, new: true}`                                                |
-| Webhook data                                             | `$input.first()`                               | `$input.first().json.body`                                                          |
+| Scenario                                                         | Use This                                               | Example                                                                                     |
+|------------------------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| Sum all amounts                                                  | `$input.all()`                                         | `allItems.reduce((sum, i) => sum + i.json.amount, 0)`                                       |
+| Get API response                                                 | `$input.first()`                                       | `$input.first().json.data`                                                                  |
+| Process each independently                                       | `$input.item`                                          | `$input.item.json` (Each Item mode)                                                         |
+| Combine two nodes                                                | `$node["Name"]`                                        | `$node["API"].json`                                                                         |
+| Filter array                                                     | `$input.all()`                                         | `allItems.filter(i => i.json.active)`                                                       |
+| Transform single object                                          | `$input.first()`                                       | `{...input.first().json, new: true}`                                                        |
+| Webhook data                                                     | `$input.first()`                                       | `$input.first().json.body`                                                                  |
 
 ---
 

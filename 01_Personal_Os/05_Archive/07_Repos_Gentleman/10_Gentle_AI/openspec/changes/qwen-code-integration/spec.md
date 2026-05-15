@@ -164,14 +164,14 @@ The adapter MUST return the correct npm install command based on platform profil
 
 ### Requirement: Capability Values
 
-| Method                                    | Returns                   | Rationale                                                                       |
-|-------------------------------------------|---------------------------|---------------------------------------------------------------------------------|
-| `SupportsOutputStyles()`                  | `false`                   | Qwen CLI does not expose configurable output styles                             |
-| `OutputStyleDir()`                        | `""`                      | No output style directory                                                       |
-| `SupportsSlashCommands()`                 | `true`                    | Qwen supports custom slash commands via `~/.qwen/commands/*.md`                 |
-| `SupportsSkills()`                        | `true`                    | Skills directory exists and is used                                             |
-| `SupportsSystemPrompt()`                  | `true`                    | QWEN.md is the system prompt file                                               |
-| `SupportsMCP()`                           | `true`                    | settings.json supports mcpServers                                               |
+| Method                                            | Returns                           | Rationale                                                                               |
+|---------------------------------------------------|-----------------------------------|-----------------------------------------------------------------------------------------|
+| `SupportsOutputStyles()`                          | `false`                           | Qwen CLI does not expose configurable output styles                                     |
+| `OutputStyleDir()`                                | `""`                              | No output style directory                                                               |
+| `SupportsSlashCommands()`                         | `true`                            | Qwen supports custom slash commands via `~/.qwen/commands/*.md`                         |
+| `SupportsSkills()`                                | `true`                            | Skills directory exists and is used                                                     |
+| `SupportsSystemPrompt()`                          | `true`                            | QWEN.md is the system prompt file                                                       |
+| `SupportsMCP()`                                   | `true`                            | settings.json supports mcpServers                                                       |
 
 ---
 

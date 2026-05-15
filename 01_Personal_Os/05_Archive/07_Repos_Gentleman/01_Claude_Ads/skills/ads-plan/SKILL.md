@@ -70,11 +70,11 @@ Account
 #### Monthly Budget Distribution
 Read `ads/references/budget-allocation.md` for the 70/20/10 framework.
 
-| Tier | Allocation | Purpose |
-|------|-----------|---------|
-| Proven (70%) | Primary platforms with proven ROI | Revenue engine |
-| Scaling (20%) | Platforms showing promise | Growth engine |
-| Testing (10%) | New platforms or strategies | Innovation |
+| Tier                | Allocation                              | Purpose              |
+|---------------------|-----------------------------------------|----------------------|
+| Proven (70%)        | Primary platforms with proven ROI       | Revenue engine       |
+| Scaling (20%)       | Platforms showing promise               | Growth engine        |
+| Testing (10%)       | New platforms or strategies             | Innovation           |
 
 #### Budget Pacing
 - Month 1-2: heavy testing, expect higher CPA (learning)
@@ -92,25 +92,25 @@ Read `ads/references/budget-allocation.md` for the 70/20/10 framework.
 - **Education**: teach something valuable related to your product
 
 #### Creative Production Plan
-| Priority | Asset Type | Platforms | Quantity |
-|----------|-----------|-----------|----------|
-| P1 | Product/service videos (15-30s) | Meta, TikTok, YouTube | 5-10 |
-| P2 | Static images with copy | Google, Meta, LinkedIn | 10-15 |
-| P3 | Carousel/collection | Meta, LinkedIn | 3-5 |
-| P4 | UGC/testimonial video | TikTok, Meta | 3-5 |
-| P5 | Long-form video (1-3 min) | YouTube | 2-3 |
+| Priority         | Asset Type                            | Platforms                    | Quantity         |
+|------------------|---------------------------------------|------------------------------|------------------|
+| P1               | Product/service videos (15-30s)       | Meta, TikTok, YouTube        | 5-10             |
+| P2               | Static images with copy               | Google, Meta, LinkedIn       | 10-15            |
+| P3               | Carousel/collection                   | Meta, LinkedIn               | 3-5              |
+| P4               | UGC/testimonial video                 | TikTok, Meta                 | 3-5              |
+| P5               | Long-form video (1-3 min)             | YouTube                      | 2-3              |
 
 ### 7. Tracking Setup Plan
 
 Before launching any ads, ensure tracking is configured:
 
-| Platform | Client-Side | Server-Side | Priority |
-|----------|------------|-------------|----------|
-| Google | gtag.js | Enhanced Conversions, GTM SS | P1 |
-| Meta | Pixel | CAPI | P1 |
-| LinkedIn | Insight Tag | CAPI (2025) | P2 |
-| TikTok | Pixel | Events API + ttclid | P2 |
-| Microsoft | UET Tag | Enhanced Conversions | P2 |
+| Platform         | Client-Side        | Server-Side                        | Priority         |
+|------------------|--------------------|------------------------------------|------------------|
+| Google           | gtag.js            | Enhanced Conversions, GTM SS       | P1               |
+| Meta             | Pixel              | CAPI                               | P1               |
+| LinkedIn         | Insight Tag        | CAPI (2025)                        | P2               |
+| TikTok           | Pixel              | Events API + ttclid                | P2               |
+| Microsoft        | UET Tag            | Enhanced Conversions               | P2               |
 
 ### 8. Implementation Roadmap
 
@@ -166,10 +166,10 @@ Load from `assets/` directory based on detected or specified business type:
 - `IMPLEMENTATION-ROADMAP.md`: Phased rollout timeline
 
 ### KPI Targets
-| Metric | Month 1 | Month 3 | Month 6 | Month 12 |
-|--------|---------|---------|---------|----------|
-| ROAS | Baseline | Target -20% | Target | Target +20% |
-| CPA | Baseline | Target +30% | Target | Target -10% |
-| CVR | Baseline | +10% | +20% | +30% |
-| CTR | Baseline | +15% | +25% | +30% |
-| Budget | Testing | Optimizing | Scaling | Maintaining |
+| Metric         | Month 1         | Month 3           | Month 6         | Month 12          |
+|----------------|-----------------|-------------------|-----------------|-------------------|
+| ROAS           | Baseline        | Target -20%       | Target          | Target +20%       |
+| CPA            | Baseline        | Target +30%       | Target          | Target -10%       |
+| CVR            | Baseline        | +10%              | +20%            | +30%              |
+| CTR            | Baseline        | +15%              | +25%            | +30%              |
+| Budget         | Testing         | Optimizing        | Scaling         | Maintaining       |

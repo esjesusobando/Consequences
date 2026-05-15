@@ -236,15 +236,15 @@ What would you like to do?
 </intake>
 
 <routing>
-| Response                                                       | Workflow                                                      |
-|----------------------------------------------------------------|---------------------------------------------------------------|
-| 1, "new", "create", "build", "start"                           | `workflows/build-new-{thing}.md`                              |
-| 2, "broken", "fix", "debug", "crash", "bug"                    | `workflows/debug-{thing}.md`                                  |
-| 3, "add", "feature", "implement", "change"                     | `workflows/add-feature.md`                                    |
-| 4, "test", "tests", "TDD", "coverage"                          | `workflows/write-tests.md`                                    |
-| 5, "slow", "optimize", "performance", "fast"                   | `workflows/optimize-performance.md`                           |
-| 6, "ship", "release", "deploy", "publish"                      | `workflows/ship-{thing}.md`                                   |
-| 7, other                                                       | Clarify, then select workflow or references                   |
+| Response                                                               | Workflow                                                              |
+|------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| 1, "new", "create", "build", "start"                                   | `workflows/build-new-{thing}.md`                                      |
+| 2, "broken", "fix", "debug", "crash", "bug"                            | `workflows/debug-{thing}.md`                                          |
+| 3, "add", "feature", "implement", "change"                             | `workflows/add-feature.md`                                            |
+| 4, "test", "tests", "TDD", "coverage"                                  | `workflows/write-tests.md`                                            |
+| 5, "slow", "optimize", "performance", "fast"                           | `workflows/optimize-performance.md`                                   |
+| 6, "ship", "release", "deploy", "publish"                              | `workflows/ship-{thing}.md`                                           |
+| 7, other                                                               | Clarify, then select workflow or references                           |
 </routing>
 
 <verification_loop>
@@ -287,14 +287,14 @@ All in `references/`:
 
 All in `workflows/`:
 
-| File                                      | Purpose                                           |
-|-------------------------------------------|---------------------------------------------------|
-| build-new-{thing}.md                      | Create new {thing} from scratch                   |
-| debug-{thing}.md                          | Find and fix bugs                                 |
-| add-feature.md                            | Add to existing {thing}                           |
-| write-tests.md                            | Write and run tests                               |
-| optimize-performance.md                   | Profile and speed up                              |
-| ship-{thing}.md                           | Deploy/distribute                                 |
+| File                                              | Purpose                                                   |
+|---------------------------------------------------|-----------------------------------------------------------|
+| build-new-{thing}.md                              | Create new {thing} from scratch                           |
+| debug-{thing}.md                                  | Find and fix bugs                                         |
+| add-feature.md                                    | Add to existing {thing}                                   |
+| write-tests.md                                    | Write and run tests                                       |
+| optimize-performance.md                           | Profile and speed up                                      |
+| ship-{thing}.md                                   | Deploy/distribute                                         |
 </workflows_index>
 ```
 

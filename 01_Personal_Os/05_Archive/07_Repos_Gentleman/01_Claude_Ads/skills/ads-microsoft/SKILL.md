@@ -94,16 +94,16 @@ Microsoft's AI assistant creates unique ad opportunities:
 
 These features are exclusive to Microsoft Ads; evaluate adoption:
 
-| Feature | Description | Priority |
-|---------|-------------|----------|
-| CTV Ads | Netflix, Max, Hulu, Roku, discovery+. 30-second non-skippable. | Medium |
-| Multimedia Ads | Image-rich search ads with visual elements | Medium |
-| Action Extension | CTA button directly in search ad | Medium |
-| Filter Link Extension | Filterable category links in ad | Low |
-| LinkedIn Profile Targeting | Target by company, industry, job function | High (B2B) |
-| Copilot Chat Placement | Ads within Copilot conversations | High |
-| Auto-generated RSA | Enabled by default Jan 2026, 5% CTR increase | Medium |
-| 9:16 Vertical Video | Vertical video ads (Apr 2025), 90-second max duration | Medium |
+| Feature                          | Description                                                          | Priority         |
+|----------------------------------|----------------------------------------------------------------------|------------------|
+| CTV Ads                          | Netflix, Max, Hulu, Roku, discovery+. 30-second non-skippable.       | Medium           |
+| Multimedia Ads                   | Image-rich search ads with visual elements                           | Medium           |
+| Action Extension                 | CTA button directly in search ad                                     | Medium           |
+| Filter Link Extension            | Filterable category links in ad                                      | Low              |
+| LinkedIn Profile Targeting       | Target by company, industry, job function                            | High (B2B)       |
+| Copilot Chat Placement           | Ads within Copilot conversations                                     | High             |
+| Auto-generated RSA               | Enabled by default Jan 2026, 5% CTR increase                         | Medium           |
+| 9:16 Vertical Video              | Vertical video ads (Apr 2025), 90-second max duration                | Medium           |
 
 ## Bing Demographic Context
 
@@ -121,13 +121,13 @@ Ad copy optimization for this audience:
 
 ## Key Thresholds
 
-| Metric | Pass | Warning | Fail |
-|--------|------|---------|------|
-| CTR (Search) | ≥2.83% | 1.5-2.83% | <1.5% |
-| CPC (Search) | ≤$1.55 | $1.55-2.50 | >$2.50 |
-| CPC vs Google | 20-40% lower | 10-20% lower | Same or higher |
-| CVR vs Google | Within 20% | 20-50% lower | >50% lower |
-| Impression share (brand) | ≥80% | 60-80% | <60% |
+| Metric                         | Pass               | Warning            | Fail                 |
+|--------------------------------|--------------------|--------------------|----------------------|
+| CTR (Search)                   | ≥2.83%             | 1.5-2.83%          | <1.5%                |
+| CPC (Search)                   | ≤$1.55             | $1.55-2.50         | >$2.50               |
+| CPC vs Google                  | 20-40% lower       | 10-20% lower       | Same or higher       |
+| CVR vs Google                  | Within 20%         | 20-50% lower       | >50% lower           |
+| Impression share (brand)       | ≥80%               | 60-80%             | <60%                 |
 
 ## Output
 

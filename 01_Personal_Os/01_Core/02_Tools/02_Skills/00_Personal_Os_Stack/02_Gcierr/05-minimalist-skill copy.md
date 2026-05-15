@@ -9,17 +9,17 @@
 
 ## 1. Lo que este skill NO hace (tabla de prohibiciones)
 
-| Categoria                              | Prohibido                                                                    | Razón                                                             |
-|----------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| Tipografía                             | Inter, Roboto, Open Sans                                                     | Identidad SaaS genérica, ya quemadas                              |
-| Sombras                                | `shadow-md`, `shadow-lg`, `shadow-xl`                                        | Ruido visual, estética "bootstrap 2016"                           |
-| Color de fondo                         | Hero azul, verde o rojo saturado                                             | Estampa de plantilla de Webflow                                   |
-| Gradientes                             | Neón, glassmorphism fuerte, degradados marca                                 | Tendencia corto-placista                                          |
-| Radios                                 | `rounded-full` en cards y contenedores grandes                               | Lee como "pastilla de farmacia"                                   |
-| Iconografía                            | Lucide / Feather / Heroicons por defecto                                     | Demasiado vistos, restan carácter                                 |
-| Contenido                              | Emojis, lorem ipsum, "John Doe", "Acme Corp"                                 | Maqueta sin contexto, descartable                                 |
-| Copywriting                            | "Eleva", "Impulsa", "Desata", "Game-changer"                                 | Clichés IA, lenguaje de landing mediocre                          |
-| Negros                                 | `#000000` puro en texto                                                      | Corta los ojos, rompe la calidez del lienzo                       |
+| Categoria                                      | Prohibido                                                                            | Razón                                                                     |
+|------------------------------------------------|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| Tipografía                                     | Inter, Roboto, Open Sans                                                             | Identidad SaaS genérica, ya quemadas                                      |
+| Sombras                                        | `shadow-md`, `shadow-lg`, `shadow-xl`                                                | Ruido visual, estética "bootstrap 2016"                                   |
+| Color de fondo                                 | Hero azul, verde o rojo saturado                                                     | Estampa de plantilla de Webflow                                           |
+| Gradientes                                     | Neón, glassmorphism fuerte, degradados marca                                         | Tendencia corto-placista                                                  |
+| Radios                                         | `rounded-full` en cards y contenedores grandes                                       | Lee como "pastilla de farmacia"                                           |
+| Iconografía                                    | Lucide / Feather / Heroicons por defecto                                             | Demasiado vistos, restan carácter                                         |
+| Contenido                                      | Emojis, lorem ipsum, "John Doe", "Acme Corp"                                         | Maqueta sin contexto, descartable                                         |
+| Copywriting                                    | "Eleva", "Impulsa", "Desata", "Game-changer"                                         | Clichés IA, lenguaje de landing mediocre                                  |
+| Negros                                         | `#000000` puro en texto                                                              | Corta los ojos, rompe la calidez del lienzo                               |
 
 ---
 

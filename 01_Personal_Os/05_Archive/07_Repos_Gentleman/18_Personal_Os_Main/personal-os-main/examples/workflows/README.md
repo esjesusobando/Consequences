@@ -6,22 +6,22 @@ Reusable workflows that your AI agent invokes on demand. These are referenced fr
 
 These workflows are automatically invoked by your agent when a matching task is detected.
 
-| Workflow                                                      | Triggers On                                                   | Description                                                |
-|---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------------------------------|
-| [Content Generation](content-generation.md)                   | writing, content, outreach, marketing tasks                   | Generate content in your authentic voice                   |
+| Workflow                                                              | Triggers On                                                           | Description                                                        |
+|-----------------------------------------------------------------------|-----------------------------------------------------------------------|--------------------------------------------------------------------|
+| [Content Generation](content-generation.md)                           | writing, content, outreach, marketing tasks                           | Generate content in your authentic voice                           |
 
 ## Daily Workflows
 
-| Workflow                                                      | Time                       | When to Use                                            |
-|---------------------------------------------------------------|----------------------------|--------------------------------------------------------|
-| [Morning Standup](morning-standup.md)                         | 2 min                      | Start of day - pick your focus                         |
-| [Backlog Processing](backlog-processing.md)                   | 5-10 min                   | End of day or when backlog builds up                   |
+| Workflow                                                              | Time                               | When to Use                                                    |
+|-----------------------------------------------------------------------|------------------------------------|----------------------------------------------------------------|
+| [Morning Standup](morning-standup.md)                                 | 2 min                              | Start of day - pick your focus                                 |
+| [Backlog Processing](backlog-processing.md)                           | 5-10 min                           | End of day or when backlog builds up                           |
 
 ## Weekly Workflows
 
-| Workflow                                            | Time                        | When to Use                                  |
-|-----------------------------------------------------|-----------------------------|----------------------------------------------|
-| [Weekly Review](weekly-review.md)                   | 15-30 min                   | Friday PM or Sunday/Monday                   |
+| Workflow                                                    | Time                                | When to Use                                          |
+|-------------------------------------------------------------|-------------------------------------|------------------------------------------------------|
+| [Weekly Review](weekly-review.md)                           | 15-30 min                           | Friday PM or Sunday/Monday                           |
 
 ## Quick Reference: Common Prompts
 

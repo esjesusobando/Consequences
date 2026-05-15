@@ -19,28 +19,28 @@ Use this **exact format** when presenting synthesized review findings. Findings 
 
 ### P0 -- Critical
 
-| #                     | File                                        | Issue                                                                        | Reviewer                     | Confidence                     | Route                                                 |
-|-----------------------|---------------------------------------------|------------------------------------------------------------------------------|------------------------------|--------------------------------|-------------------------------------------------------|
-| 1                     | `orders_controller.rb:42`                   | User-supplied ID in account lookup without ownership check                   | security                     | 0.92                           | `gated_auto -> downstream-resolver`                   |
+| #                             | File                                                | Issue                                                                                | Reviewer                             | Confidence                             | Route                                                         |
+|-------------------------------|-----------------------------------------------------|--------------------------------------------------------------------------------------|--------------------------------------|----------------------------------------|---------------------------------------------------------------|
+| 1                             | `orders_controller.rb:42`                           | User-supplied ID in account lookup without ownership check                           | security                             | 0.92                                   | `gated_auto -> downstream-resolver`                           |
 
 ### P1 -- High
 
-| #                     | File                                     | Issue                                                                            | Reviewer                                    | Confidence                     | Route                                             |
-|-----------------------|------------------------------------------|----------------------------------------------------------------------------------|---------------------------------------------|--------------------------------|---------------------------------------------------|
-| 2                     | `export_service.rb:87`                   | Loads all orders into memory -- unbounded for large accounts                     | performance                                 | 0.85                           | `safe_auto -> review-fixer`                       |
-| 3                     | `export_service.rb:91`                   | No pagination -- response size grows linearly with order count                   | api-contract, performance                   | 0.80                           | `manual -> downstream-resolver`                   |
+| #                             | File                                             | Issue                                                                                    | Reviewer                                            | Confidence                             | Route                                                     |
+|-------------------------------|--------------------------------------------------|------------------------------------------------------------------------------------------|-----------------------------------------------------|----------------------------------------|-----------------------------------------------------------|
+| 2                             | `export_service.rb:87`                           | Loads all orders into memory -- unbounded for large accounts                             | performance                                         | 0.85                                   | `safe_auto -> review-fixer`                               |
+| 3                             | `export_service.rb:91`                           | No pagination -- response size grows linearly with order count                           | api-contract, performance                           | 0.80                                   | `manual -> downstream-resolver`                           |
 
 ### P2 -- Moderate
 
-| #                     | File                                     | Issue                                                                  | Reviewer                      | Confidence                     | Route                                         |
-|-----------------------|------------------------------------------|------------------------------------------------------------------------|-------------------------------|--------------------------------|-----------------------------------------------|
-| 4                     | `export_service.rb:45`                   | Missing error handling for CSV serialization failure                   | correctness                   | 0.75                           | `safe_auto -> review-fixer`                   |
+| #                             | File                                             | Issue                                                                          | Reviewer                              | Confidence                             | Route                                                 |
+|-------------------------------|--------------------------------------------------|--------------------------------------------------------------------------------|---------------------------------------|----------------------------------------|-------------------------------------------------------|
+| 4                             | `export_service.rb:45`                           | Missing error handling for CSV serialization failure                           | correctness                           | 0.75                                   | `safe_auto -> review-fixer`                           |
 
 ### P3 -- Low
 
-| #                     | File                                    | Issue                                                                                   | Reviewer                          | Confidence                     | Route                                 |
-|-----------------------|-----------------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------|--------------------------------|---------------------------------------|
-| 5                     | `export_helper.rb:12`                   | Format detection could use early return instead of nested conditional                   | maintainability                   | 0.70                           | `advisory -> human`                   |
+| #                             | File                                            | Issue                                                                                           | Reviewer                                  | Confidence                             | Route                                         |
+|-------------------------------|-------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------|----------------------------------------|-----------------------------------------------|
+| 5                             | `export_helper.rb:12`                           | Format detection could use early return instead of nested conditional                           | maintainability                           | 0.70                                   | `advisory -> human`                           |
 
 ### Applied Fixes
 
@@ -48,16 +48,16 @@ Use this **exact format** when presenting synthesized review findings. Findings 
 
 ### Residual Actionable Work
 
-| #                     | File                                        | Issue                                                              | Route                                                 | Next Step                                                                                   |
-|-----------------------|---------------------------------------------|--------------------------------------------------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| 1                     | `orders_controller.rb:42`                   | Ownership check missing on export lookup                           | `gated_auto -> downstream-resolver`                   | Create residual todo and require explicit approval before behavior change                   |
-| 2                     | `export_service.rb:91`                      | Pagination contract needs a broader API decision                   | `manual -> downstream-resolver`                       | Create residual todo with contract and client impact details                                |
+| #                             | File                                                | Issue                                                                      | Route                                                         | Next Step                                                                                           |
+|-------------------------------|-----------------------------------------------------|----------------------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| 1                             | `orders_controller.rb:42`                           | Ownership check missing on export lookup                                   | `gated_auto -> downstream-resolver`                           | Create residual todo and require explicit approval before behavior change                           |
+| 2                             | `export_service.rb:91`                              | Pagination contract needs a broader API decision                           | `manual -> downstream-resolver`                               | Create residual todo with contract and client impact details                                        |
 
 ### Pre-existing Issues
 
-| #                     | File                                        | Issue                                                          | Reviewer                      |
-|-----------------------|---------------------------------------------|----------------------------------------------------------------|-------------------------------|
-| 1                     | `orders_controller.rb:12`                   | Broad rescue masking failed permission check                   | correctness                   |
+| #                             | File                                                | Issue                                                                  | Reviewer                              |
+|-------------------------------|-----------------------------------------------------|------------------------------------------------------------------------|---------------------------------------|
+| 1                             | `orders_controller.rb:12`                           | Broad rescue masking failed permission check                           | correctness                           |
 
 ### Learnings & Past Solutions
 

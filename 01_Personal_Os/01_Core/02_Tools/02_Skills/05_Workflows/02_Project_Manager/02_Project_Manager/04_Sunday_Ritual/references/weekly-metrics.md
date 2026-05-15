@@ -4,27 +4,27 @@
 
 ### Completion Metrics
 
-| Metric                                | Formula                                  | Target                         |
-|---------------------------------------|------------------------------------------|--------------------------------|
-| Completion Rate                       | Done / Total                             | > 70%                          |
-| P0 Completion                         | P0 Done / P0 Total                       | > 80%                          |
-| Blocked Rate                          | Blocked / Total                          | < 10%                          |
+| Metric                                        | Formula                                          | Target                                 |
+|-----------------------------------------------|--------------------------------------------------|----------------------------------------|
+| Completion Rate                               | Done / Total                                     | > 70%                                  |
+| P0 Completion                                 | P0 Done / P0 Total                               | > 80%                                  |
+| Blocked Rate                                  | Blocked / Total                                  | < 10%                                  |
 
 ### Time Metrics
 
-| Metric                             | Formula                                 | Target                         |
-|------------------------------------|-----------------------------------------|--------------------------------|
-| Deep Work                          | Hours on P0/P1                          | > 15 hrs                       |
-| Meeting Time                       | Hours in meetings                       | < 10 hrs                       |
-| Buffer                             | Unplanned time                          | > 5 hrs                        |
+| Metric                                     | Formula                                         | Target                                 |
+|--------------------------------------------|-------------------------------------------------|----------------------------------------|
+| Deep Work                                  | Hours on P0/P1                                  | > 15 hrs                               |
+| Meeting Time                               | Hours in meetings                               | < 10 hrs                               |
+| Buffer                                     | Unplanned time                                  | > 5 hrs                                |
 
 ### Health Metrics
 
-| Metric                                      | Target                           |
-|---------------------------------------------|----------------------------------|
-| Backlog Size                                | < 20 items                       |
-| Blocked Tasks                               | < 3                              |
-| Old Tasks (> 2 weeks)                       | 0                                |
+| Metric                                              | Target                                   |
+|-----------------------------------------------------|------------------------------------------|
+| Backlog Size                                        | < 20 items                               |
+| Blocked Tasks                                       | < 3                                      |
+| Old Tasks (> 2 weeks)                               | 0                                        |
 
 ## How to Measure
 

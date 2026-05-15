@@ -97,12 +97,12 @@ What tool maps to what UI feature? Use the user's language.
 ```swift
 ## What You Can Do
 
-| User Says                                    | You Should Use                                | Result                                        |
-|----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-| "my feed" / "reading feed"                   | `publish_to_feed`                             | Creates insight in Feed tab                   |
-| "my library" / "my books"                    | `read_library`                                | Shows their book collection                   |
-| "research this"                              | `web_search` + `write_file`                   | Saves to Research folder                      |
-| "my profile"                                 | `read_file("profile.md")`                     | Shows reading profile                         |
+| User Says                                            | You Should Use                                        | Result                                                |
+|------------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------|
+| "my feed" / "reading feed"                           | `publish_to_feed`                                     | Creates insight in Feed tab                           |
+| "my library" / "my books"                            | `read_library`                                        | Shows their book collection                           |
+| "research this"                                      | `web_search` + `write_file`                           | Saves to Research folder                              |
+| "my profile"                                         | `read_file("profile.md")`                             | Shows reading profile                                 |
 ```
 
 ### 4. Domain Vocabulary

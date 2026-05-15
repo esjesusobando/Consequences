@@ -16,13 +16,13 @@ and YouTube thumbnails.
 
 ### Image Assets (required for full coverage)
 
-| Asset Type | Dimensions | Ratio | Priority |
-|-----------|-----------|-------|----------|
-| Marketing image (landscape) | 1200×628 | 1.91:1 | **Required** |
-| Square image | 1200×1200 | 1:1 | **Required** |
-| Portrait image | 960×1200 | 4:5 | High |
-| Logo (landscape) | 1200×300 | 4:1 | Required |
-| Logo (square) | 1200×1200 | 1:1 | Required |
+| Asset Type                        | Dimensions        | Ratio         | Priority           |
+|-----------------------------------|-------------------|---------------|--------------------|
+| Marketing image (landscape)       | 1200×628          | 1.91:1        | **Required**       |
+| Square image                      | 1200×1200         | 1:1           | **Required**       |
+| Portrait image                    | 960×1200          | 4:5           | High               |
+| Logo (landscape)                  | 1200×300          | 4:1           | Required           |
+| Logo (square)                     | 1200×1200         | 1:1           | Required           |
 
 **Max per asset group:** 20 images total across marketing + square + portrait.
 **File requirements:** JPG or PNG, max 5MB, min 128×128.
@@ -40,12 +40,12 @@ Full coverage set (5 images): add `1080×1920` vertical for YouTube Shorts place
 
 ## Demand Gen (formerly Discovery)
 
-| Placement | Ratio | Recommended Size |
-|-----------|-------|-----------------|
-| Google Discover | 1:1 | 1080×1080 |
-| Google Discover | 4:5 | 1080×1350 |
-| Gmail Promotions | 1.91:1 | 1200×628 |
-| YouTube In-Feed | 1:1 | 1080×1080 |
+| Placement              | Ratio         | Recommended Size        |
+|------------------------|---------------|-------------------------|
+| Google Discover        | 1:1           | 1080×1080               |
+| Google Discover        | 4:5           | 1080×1350               |
+| Gmail Promotions       | 1.91:1        | 1200×628                |
+| YouTube In-Feed        | 1:1           | 1080×1080               |
 
 Generate both 1:1 and 4:5 variants for maximum placement coverage.
 
@@ -53,10 +53,10 @@ Generate both 1:1 and 4:5 variants for maximum placement coverage.
 
 ## YouTube Thumbnails
 
-| Type | Dimensions | Notes |
-|------|-----------|-------|
-| Standard thumbnail | 1280×720 (16:9) | Used for in-feed, search results |
-| Square thumbnail | 1080×1080 (1:1) | Shorts feed |
+| Type                     | Dimensions            | Notes                                  |
+|--------------------------|-----------------------|----------------------------------------|
+| Standard thumbnail       | 1280×720 (16:9)       | Used for in-feed, search results       |
+| Square thumbnail         | 1080×1080 (1:1)       | Shorts feed                            |
 
 **Thumbnail generation guidelines:**
 - High contrast between subject and background
@@ -69,11 +69,11 @@ Generate both 1:1 and 4:5 variants for maximum placement coverage.
 
 ## RSA Copy Limits (for copy-writer agent)
 
-| Component | Min | Max | Character Limit |
-|-----------|-----|-----|-----------------|
-| Headlines | 3 | 15 | 30 chars each |
-| Descriptions | 2 | 4 | 90 chars each |
-| Display paths | N/A | 2 | 15 chars each |
+| Component           | Min         | Max         | Character Limit         |
+|---------------------|-------------|-------------|-------------------------|
+| Headlines           | 3           | 15          | 30 chars each           |
+| Descriptions        | 2           | 4           | 90 chars each           |
+| Display paths       | N/A         | 2           | 15 chars each           |
 
 Best practice: 8+ headlines, 2+ descriptions.
 

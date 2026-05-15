@@ -107,12 +107,12 @@ interface ImplementationPlan {
 
 ## Error Handling
 
-| Error                                          | Cause                                   | Solution                                       |
-|------------------------------------------------|-----------------------------------------|------------------------------------------------|
-| "Video is private"                             | Video no es público                     | Proporcionar video público                     |
-| "yt-dlp not installed"                         | Falta dependencia                       | `pip install yt-dlp`                           |
-| "Repository requires auth"                     | Repo privado                            | `gh auth login`                                |
-| "Failed to clone"                              | URL inválida                            | Verificar URL de repo                          |
+| Error                                                  | Cause                                           | Solution                                               |
+|--------------------------------------------------------|-------------------------------------------------|--------------------------------------------------------|
+| "Video is private"                                     | Video no es público                             | Proporcionar video público                             |
+| "yt-dlp not installed"                                 | Falta dependencia                               | `pip install yt-dlp`                                   |
+| "Repository requires auth"                             | Repo privado                                    | `gh auth login`                                        |
+| "Failed to clone"                                      | URL inválida                                    | Verificar URL de repo                                  |
 
 ## OS Verification
 

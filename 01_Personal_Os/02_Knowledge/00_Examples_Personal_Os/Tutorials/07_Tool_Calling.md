@@ -10,12 +10,12 @@ Claude Code can do more than chat - it can take actions through "tools." These l
 
 Claude Code comes with tools for:
 
-| Tool                             | What it does                                  |
-|----------------------------------|-----------------------------------------------|
-| Read files                       | View contents of any file                     |
-| Write files                      | Create or edit files                          |
-| Run commands                     | Execute shell commands                        |
-| Search                           | Find files and content                        |
+| Tool                                     | What it does                                          |
+|------------------------------------------|-------------------------------------------------------|
+| Read files                               | View contents of any file                             |
+| Write files                              | Create or edit files                                  |
+| Run commands                             | Execute shell commands                                |
+| Search                                   | Find files and content                                |
 
 **Example:**
 ```
@@ -133,12 +133,12 @@ System Status:
 
 ## With vs Without MCP
 
-| Scenario                            | Without MCP                                         | With MCP                                                 |
-|-------------------------------------|-----------------------------------------------------|----------------------------------------------------------|
-| List tasks                          | Claude reads all .md files                          | `list_tasks` returns structured data                     |
-| Create task                         | Claude writes markdown                              | `create_task` with validation                            |
-| Find duplicates                     | Claude compares titles manually                     | `process_backlog_with_dedup`                             |
-| System overview                     | Claude reads multiple files                         | `get_system_status`                                      |
+| Scenario                                    | Without MCP                                                 | With MCP                                                         |
+|---------------------------------------------|-------------------------------------------------------------|------------------------------------------------------------------|
+| List tasks                                  | Claude reads all .md files                                  | `list_tasks` returns structured data                             |
+| Create task                                 | Claude writes markdown                                      | `create_task` with validation                                    |
+| Find duplicates                             | Claude compares titles manually                             | `process_backlog_with_dedup`                                     |
+| System overview                             | Claude reads multiple files                                 | `get_system_status`                                              |
 
 ## Tips
 

@@ -47,23 +47,23 @@ When given ad account data:
 ## Check Assignment (8+ Checks)
 
 ### LinkedIn Tracking (2 checks)
-| ID | Check | Severity |
-|----|-------|----------|
-| L01 | Insight Tag installed and firing on all pages | Critical |
-| L02 | Conversions API (CAPI) active (launched 2025) | High |
+| ID         | Check                                               | Severity         |
+|------------|-----------------------------------------------------|------------------|
+| L01        | Insight Tag installed and firing on all pages       | Critical         |
+| L02        | Conversions API (CAPI) active (launched 2025)       | High             |
 
 ### TikTok Tracking (2 checks)
-| ID | Check | Severity |
-|----|-------|----------|
-| T01 | TikTok Pixel installed and firing on all pages | Critical |
-| T02 | Events API + ttclid passback active | High |
+| ID         | Check                                                | Severity         |
+|------------|------------------------------------------------------|------------------|
+| T01        | TikTok Pixel installed and firing on all pages       | Critical         |
+| T02        | Events API + ttclid passback active                  | High             |
 
 ### Microsoft Tracking (3 checks)
-| ID | Check | Severity |
-|----|-------|----------|
-| MS01 | UET tag installed and firing on all pages | Critical |
-| MS02 | Enhanced conversions enabled | High |
-| MS03 | Google Ads import validated (URLs, extensions, bids, goals) | High |
+| ID         | Check                                                             | Severity         |
+|------------|-------------------------------------------------------------------|------------------|
+| MS01       | UET tag installed and firing on all pages                         | Critical         |
+| MS02       | Enhanced conversions enabled                                      | High             |
+| MS03       | Google Ads import validated (URLs, extensions, bids, goals)       | High             |
 
 ## Cross-Platform Privacy Infrastructure (X-PI1)
 
@@ -96,20 +96,20 @@ Beyond individual checks, evaluate:
 - Is there risk of double-counting conversions across platforms?
 
 ### Server-Side Tracking Status
-| Platform | Client-Side | Server-Side | Best Practice |
-|----------|-------------|-------------|---------------|
-| LinkedIn | Insight Tag | CAPI (2025) | Both required |
-| TikTok | Pixel | Events API | Both + ttclid |
-| Microsoft | UET Tag | Enhanced Conv | UET + Enhanced |
+| Platform         | Client-Side         | Server-Side         | Best Practice         |
+|------------------|---------------------|---------------------|-----------------------|
+| LinkedIn         | Insight Tag         | CAPI (2025)         | Both required         |
+| TikTok           | Pixel               | Events API          | Both + ttclid         |
+| Microsoft        | UET Tag             | Enhanced Conv       | UET + Enhanced        |
 
 ### Attribution Window Comparison
-| Platform | Recommended Click | Recommended View |
-|----------|------------------|-----------------|
-| Google | 30-90 days (varies) | 1 day |
-| Meta | 7 days | 1 day |
-| LinkedIn | 30 days | 7 days |
-| TikTok | 7-28 days | 1 day |
-| Microsoft | 30 days | 1 day |
+| Platform         | Recommended Click         | Recommended View        |
+|------------------|---------------------------|-------------------------|
+| Google           | 30-90 days (varies)       | 1 day                   |
+| Meta             | 7 days                    | 1 day                   |
+| LinkedIn         | 30 days                   | 7 days                  |
+| TikTok           | 7-28 days                 | 1 day                   |
+| Microsoft        | 30 days                   | 1 day                   |
 
 ## Output Format
 

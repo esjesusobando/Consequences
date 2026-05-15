@@ -11,10 +11,10 @@ A skill is a folder containing a `SKILL.md` file with:
 
 This architecture yields a documented 35% reduction in average context usage and prevents context dilution. However, discovery reliability depends on the specificity of the YAML description:
 
-| Description Quality                                                                                                                                     | Discovery Success Rate                               |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| Vague ("Helps with designing APIs")                                                                                                                     | ~68%                                                 |
-| Specific ("Design RESTful HTTP APIs with OpenAPI specs, focusing on versioning, error codes, and backward compatibility")                               | ~90%                                                 |
+| Description Quality                                                                                                                                             | Discovery Success Rate                                       |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| Vague ("Helps with designing APIs")                                                                                                                             | ~68%                                                         |
+| Specific ("Design RESTful HTTP APIs with OpenAPI specs, focusing on versioning, error codes, and backward compatibility")                                       | ~90%                                                         |
 
 ## Model Context Protocol (MCP)
 

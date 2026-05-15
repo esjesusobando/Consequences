@@ -54,29 +54,29 @@ Add Qwen Code (by Alibaba/Alibaba Cloud) as a fully supported AI coding agent in
 
 ## Affected Areas
 
-| Area                                                        | Impact                   | Description                                                   |
-|-------------------------------------------------------------|--------------------------|---------------------------------------------------------------|
-| `internal/agents/qwen/`                                     | New                      | Adapter package (adapter.go, adapter_test.go)                 |
-| `internal/assets/qwen/`                                     | New                      | SDD orchestrator asset (sdd-orchestrator.md)                  |
-| `internal/model/types.go`                                   | Modified                 | `AgentQwenCode` constant                                      |
-| `internal/agents/factory.go`                                | Modified                 | Registration in factory and default registry                  |
-| `internal/catalog/agents.go`                                | Modified                 | Catalog entry                                                 |
-| `internal/assets/assets.go`                                 | Modified                 | Embed directive                                               |
-| `internal/components/sdd/inject.go`                         | Modified                 | `sddOrchestratorAsset()` switch                               |
-| `internal/components/permissions/inject.go`                 | Modified                 | `qwenCodeOverlayJSON` + switch case                           |
-| `internal/components/engram/setup.go`                       | Modified                 | `"qwen-code"` slug                                            |
-| `internal/system/config_scan.go`                            | Modified                 | `knownAgentConfigDirs()` entry                                |
-| `internal/cli/validate.go`                                  | Modified                 | Agent validation case                                         |
-| `internal/tui/model.go`                                     | Modified                 | TUI agent selection case                                      |
+| Area                                                                | Impact                           | Description                                                           |
+|---------------------------------------------------------------------|----------------------------------|-----------------------------------------------------------------------|
+| `internal/agents/qwen/`                                             | New                              | Adapter package (adapter.go, adapter_test.go)                         |
+| `internal/assets/qwen/`                                             | New                              | SDD orchestrator asset (sdd-orchestrator.md)                          |
+| `internal/model/types.go`                                           | Modified                         | `AgentQwenCode` constant                                              |
+| `internal/agents/factory.go`                                        | Modified                         | Registration in factory and default registry                          |
+| `internal/catalog/agents.go`                                        | Modified                         | Catalog entry                                                         |
+| `internal/assets/assets.go`                                         | Modified                         | Embed directive                                                       |
+| `internal/components/sdd/inject.go`                                 | Modified                         | `sddOrchestratorAsset()` switch                                       |
+| `internal/components/permissions/inject.go`                         | Modified                         | `qwenCodeOverlayJSON` + switch case                                   |
+| `internal/components/engram/setup.go`                               | Modified                         | `"qwen-code"` slug                                                    |
+| `internal/system/config_scan.go`                                    | Modified                         | `knownAgentConfigDirs()` entry                                        |
+| `internal/cli/validate.go`                                          | Modified                         | Agent validation case                                                 |
+| `internal/tui/model.go`                                             | Modified                         | TUI agent selection case                                              |
 
 ## Risks
 
-| Risk                                                                       | Likelihood                   | Mitigation                                                                                         |
-|----------------------------------------------------------------------------|------------------------------|----------------------------------------------------------------------------------------------------|
-| Qwen Code npm package name changes                                         | Low                          | Pinned to `@qwen-code/qwen-code@latest`; can be updated via single constant change                 |
-| Config paths differ across OSes                                            | Med                          | Uses `~/.qwen/` consistently (Qwen's documented cross-platform config root)                        |
-| Qwen Code adds/removes features between versions                           | Med                          | Adapter declares capabilities at integration time; future updates may adjust flags                 |
-| Engram `engram setup` may not recognize `"qwen-code"` slug                 | Low                          | Slug follows established convention; engram component updated in same change                       |
+| Risk                                                                               | Likelihood                           | Mitigation                                                                                                 |
+|------------------------------------------------------------------------------------|--------------------------------------|------------------------------------------------------------------------------------------------------------|
+| Qwen Code npm package name changes                                                 | Low                                  | Pinned to `@qwen-code/qwen-code@latest`; can be updated via single constant change                         |
+| Config paths differ across OSes                                                    | Med                                  | Uses `~/.qwen/` consistently (Qwen's documented cross-platform config root)                                |
+| Qwen Code adds/removes features between versions                                   | Med                                  | Adapter declares capabilities at integration time; future updates may adjust flags                         |
+| Engram `engram setup` may not recognize `"qwen-code"` slug                         | Low                                  | Slug follows established convention; engram component updated in same change                               |
 
 ## Rollback Plan
 

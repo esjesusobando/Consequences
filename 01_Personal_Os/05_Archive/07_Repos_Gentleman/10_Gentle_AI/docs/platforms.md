@@ -4,13 +4,13 @@
 
 ---
 
-| Platform                                      | Package Manager                  | Status                    |
-|-----------------------------------------------|----------------------------------|---------------------------|
-| macOS (Apple Silicon + Intel)                 | Homebrew                         | Supported                 |
-| Linux (Ubuntu/Debian)                         | apt                              | Supported                 |
-| Linux (Arch)                                  | pacman                           | Supported                 |
-| Linux (Fedora/RHEL family)                    | dnf                              | Supported                 |
-| Windows 10/11                                 | winget                           | Supported                 |
+| Platform                                              | Package Manager                          | Status                            |
+|-------------------------------------------------------|------------------------------------------|-----------------------------------|
+| macOS (Apple Silicon + Intel)                         | Homebrew                                 | Supported                         |
+| Linux (Ubuntu/Debian)                                 | apt                                      | Supported                         |
+| Linux (Arch)                                          | pacman                                   | Supported                         |
+| Linux (Fedora/RHEL family)                            | dnf                                      | Supported                         |
+| Windows 10/11                                         | winget                                   | Supported                         |
 
 Derivatives are detected via `ID_LIKE` in `/etc/os-release` (Linux Mint, Pop!_OS, Manjaro, EndeavourOS, CentOS Stream, Rocky Linux, AlmaLinux, etc.).
 
@@ -49,14 +49,14 @@ If the hash matches `checksums.txt`, the file is authentic for that release.
 
 ## Windows Config Paths
 
-| Agent                           | Windows Config Path                                                                                                                                                                                                                              |
-|---------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Claude Code                     | `%USERPROFILE%\.claude\`                                                                                                                                                                                                                         |
-| OpenCode                        | `%USERPROFILE%\.config\opencode\`                                                                                                                                                                                                                |
-| Gemini CLI                      | `%USERPROFILE%\.gemini\`                                                                                                                                                                                                                         |
-| Cursor                          | `%USERPROFILE%\.cursor\`                                                                                                                                                                                                                         |
-| VS Code Copilot                 | `%APPDATA%\Code\User\` (settings, MCP, prompts) + `%USERPROFILE%\.copilot\` (skills)                                                                                                                                                             |
-| Codex                           | `%USERPROFILE%\.codex\`                                                                                                                                                                                                                          |
-| Windsurf                        | `%USERPROFILE%\.codeium\windsurf\` (skills, MCP, rules) + `%APPDATA%\Windsurf\User\` (settings)                                                                                                                                                  |
-| Antigravity                     | `%USERPROFILE%\.gemini\antigravity\`                                                                                                                                                                                                             |
-| Kiro IDE                        | `%USERPROFILE%\.kiro\steering\` (prompts) + `%USERPROFILE%\.kiro\skills\` (skills) + `%USERPROFILE%\.kiro\agents\` (SDD agents) + `%APPDATA%\kiro\User\settings.json` (settings) + `%USERPROFILE%\.kiro\settings\mcp.json` (MCP)                 |
+| Agent                                   | Windows Config Path                                                                                                                                                                                                                                      |
+|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Claude Code                             | `%USERPROFILE%\.claude\`                                                                                                                                                                                                                                 |
+| OpenCode                                | `%USERPROFILE%\.config\opencode\`                                                                                                                                                                                                                        |
+| Gemini CLI                              | `%USERPROFILE%\.gemini\`                                                                                                                                                                                                                                 |
+| Cursor                                  | `%USERPROFILE%\.cursor\`                                                                                                                                                                                                                                 |
+| VS Code Copilot                         | `%APPDATA%\Code\User\` (settings, MCP, prompts) + `%USERPROFILE%\.copilot\` (skills)                                                                                                                                                                     |
+| Codex                                   | `%USERPROFILE%\.codex\`                                                                                                                                                                                                                                  |
+| Windsurf                                | `%USERPROFILE%\.codeium\windsurf\` (skills, MCP, rules) + `%APPDATA%\Windsurf\User\` (settings)                                                                                                                                                          |
+| Antigravity                             | `%USERPROFILE%\.gemini\antigravity\`                                                                                                                                                                                                                     |
+| Kiro IDE                                | `%USERPROFILE%\.kiro\steering\` (prompts) + `%USERPROFILE%\.kiro\skills\` (skills) + `%USERPROFILE%\.kiro\agents\` (SDD agents) + `%APPDATA%\kiro\User\settings.json` (settings) + `%USERPROFILE%\.kiro\settings\mcp.json` (MCP)                         |

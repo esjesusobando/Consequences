@@ -192,11 +192,11 @@ Return to the orchestrator the same content you wrote to `verify-report.md`:
 ---
 
 ### Completeness
-| Metric                               | Value                       |
-|--------------------------------------|-----------------------------|
-| Tasks total                          | {N}                         |
-| Tasks complete                       | {N}                         |
-| Tasks incomplete                     | {N}                         |
+| Metric                                       | Value                               |
+|----------------------------------------------|-------------------------------------|
+| Tasks total                                  | {N}                                 |
+| Tasks complete                               | {N}                                 |
+| Tasks incomplete                             | {N}                                 |
 
 {List incomplete tasks if any}
 
@@ -220,31 +220,31 @@ Return to the orchestrator the same content you wrote to `verify-report.md`:
 
 ### Spec Compliance Matrix
 
-| Requirement                        | Scenario                            | Test                                            | Result                          |
-|------------------------------------|-------------------------------------|-------------------------------------------------|---------------------------------|
-| {REQ-01: name}                     | {Scenario name}                     | `{test file} > {test name}`                     | ✅ COMPLIANT                     |
-| {REQ-01: name}                     | {Scenario name}                     | `{test file} > {test name}`                     | ❌ FAILING                       |
-| {REQ-02: name}                     | {Scenario name}                     | (none found)                                    | ❌ UNTESTED                      |
-| {REQ-02: name}                     | {Scenario name}                     | `{test file} > {test name}`                     | ⚠️ PARTIAL                      |
+| Requirement                                | Scenario                                    | Test                                                    | Result                                  |
+|--------------------------------------------|---------------------------------------------|---------------------------------------------------------|-----------------------------------------|
+| {REQ-01: name}                             | {Scenario name}                             | `{test file} > {test name}`                             | ✅ COMPLIANT                             |
+| {REQ-01: name}                             | {Scenario name}                             | `{test file} > {test name}`                             | ❌ FAILING                               |
+| {REQ-02: name}                             | {Scenario name}                             | (none found)                                            | ❌ UNTESTED                              |
+| {REQ-02: name}                             | {Scenario name}                             | `{test file} > {test name}`                             | ⚠️ PARTIAL                              |
 
 **Compliance summary**: {N}/{total} scenarios compliant
 
 ---
 
 ### Correctness (Static — Structural Evidence)
-| Requirement                      | Status                            | Notes                                 |
-|----------------------------------|-----------------------------------|---------------------------------------|
-| {Req name}                       | ✅ Implemented                     | {brief note}                          |
-| {Req name}                       | ⚠️ Partial                        | {what's missing}                      |
-| {Req name}                       | ❌ Missing                         | {not implemented}                     |
+| Requirement                              | Status                                    | Notes                                         |
+|------------------------------------------|-------------------------------------------|-----------------------------------------------|
+| {Req name}                               | ✅ Implemented                             | {brief note}                                  |
+| {Req name}                               | ⚠️ Partial                                | {what's missing}                              |
+| {Req name}                               | ❌ Missing                                 | {not implemented}                             |
 
 ---
 
 ### Coherence (Design)
-| Decision                            | Followed?                       | Notes                             |
-|-------------------------------------|---------------------------------|-----------------------------------|
-| {Decision name}                     | ✅ Yes                           |                                   |
-| {Decision name}                     | ⚠️ Deviated                     | {how and why}                     |
+| Decision                                    | Followed?                               | Notes                                     |
+|---------------------------------------------|-----------------------------------------|-------------------------------------------|
+| {Decision name}                             | ✅ Yes                                   |                                           |
+| {Decision name}                             | ⚠️ Deviated                             | {how and why}                             |
 
 ---
 

@@ -87,21 +87,21 @@ Evals create a feedback loop. Without them, you repeat the same mistakes. With t
 
 ## Tools Available
 
-| Tool                                             | Purpose                                                | Key Parameters                                                       |
-|--------------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------------|
-| `generate_eval`                                  | Create eval from session                               | `session_id` (or `'recent'`)                                         |
-| `list_evals`                                     | View all evals                                         | `limit`, `judgement` filter                                          |
-| `annotate_eval`                                  | Add judgement/notes                                    | `eval_file`, `judgement`, `annotation`                               |
-| `get_eval_summary`                               | Aggregate stats                                        | none                                                                 |
+| Tool                                                     | Purpose                                                        | Key Parameters                                                               |
+|----------------------------------------------------------|----------------------------------------------------------------|------------------------------------------------------------------------------|
+| `generate_eval`                                          | Create eval from session                                       | `session_id` (or `'recent'`)                                                 |
+| `list_evals`                                             | View all evals                                                 | `limit`, `judgement` filter                                                  |
+| `annotate_eval`                                          | Add judgement/notes                                            | `eval_file`, `judgement`, `annotation`                                       |
+| `get_eval_summary`                                       | Aggregate stats                                                | none                                                                         |
 
 ### Judgement Values
 
-| Value                                   | When to Use                                                    |
-|-----------------------------------------|----------------------------------------------------------------|
-| `success`                               | Task completed as expected                                     |
-| `partial`                               | Some progress, but gaps remain                                 |
-| `failure`                               | Task not completed or went wrong                               |
-| `pending`                               | Not yet reviewed (default)                                     |
+| Value                                           | When to Use                                                            |
+|-------------------------------------------------|------------------------------------------------------------------------|
+| `success`                                       | Task completed as expected                                             |
+| `partial`                                       | Some progress, but gaps remain                                         |
+| `failure`                                       | Task not completed or went wrong                                       |
+| `pending`                                       | Not yet reviewed (default)                                             |
 
 ---
 
@@ -206,12 +206,12 @@ Table of tools and counts
 
 ## Common Patterns to Look For
 
-| Pattern                                              | Signal                                               | Action                                                     |
-|------------------------------------------------------|------------------------------------------------------|------------------------------------------------------------|
-| Repeated clarification                               | Prompts are unclear                                  | Improve 01_Personal_Os/11_AGENTS.md examples               |
-| Tool call failures                                   | Missing context                                      | Add tool usage hints                                       |
-| Successful shortcuts                                 | Agent found efficiency                               | Document in workflows                                      |
-| Consistent partial                                   | Scope too large                                      | Break tasks smaller                                        |
+| Pattern                                                      | Signal                                                       | Action                                                             |
+|--------------------------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------------|
+| Repeated clarification                                       | Prompts are unclear                                          | Improve 01_Personal_Os/11_AGENTS.md examples                       |
+| Tool call failures                                           | Missing context                                              | Add tool usage hints                                               |
+| Successful shortcuts                                         | Agent found efficiency                                       | Document in workflows                                              |
+| Consistent partial                                           | Scope too large                                              | Break tasks smaller                                                |
 
 ---
 

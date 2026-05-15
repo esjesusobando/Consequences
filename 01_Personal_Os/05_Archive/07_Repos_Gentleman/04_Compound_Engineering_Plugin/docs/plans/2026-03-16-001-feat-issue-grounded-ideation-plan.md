@@ -190,13 +190,13 @@ When checking for recent ideation documents, treat issue-grounded and non-issue 
 
 ### Files Changed
 
-| File                                                              | Change                                                                                        |
-|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| `agents/research/issue-intelligence-analyst.md`                   | **New file** — the agent                                                                      |
-| `skills/ce-ideate/SKILL.md`                                       | **Modified** — 4 targeted modifications (Phase 0.1, 0.2, 1, 2)                                |
-| `.claude-plugin/plugin.json`                                      | **Modified** — increment agent count, add agent to list, update description                   |
-| `../../.claude-plugin/marketplace.json`                           | **Modified** — update description with new agent count                                        |
-| `README.md`                                                       | **Modified** — add agent to research agents table                                             |
+| File                                                                      | Change                                                                                                |
+|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| `agents/research/issue-intelligence-analyst.md`                           | **New file** — the agent                                                                              |
+| `skills/ce-ideate/SKILL.md`                                               | **Modified** — 4 targeted modifications (Phase 0.1, 0.2, 1, 2)                                        |
+| `.claude-plugin/plugin.json`                                              | **Modified** — increment agent count, add agent to list, update description                           |
+| `../../.claude-plugin/marketplace.json`                                   | **Modified** — update description with new agent count                                                |
+| `README.md`                                                               | **Modified** — add agent to research agents table                                                     |
 
 ### Not Changed
 

@@ -24,19 +24,19 @@ El repo tenía **12 submodules** pero:
 
 | #     | Path                                            | Repo                       | Commit Original   | Problema    |
 
-|-----------------------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------|-----------------------------------------------------|-----------------------------------------------|
-| 1                                       | `10_Repos_Gentleman/gentle-ai`                                                    | gentle-ai                                                    | `c7e96c1`                                           | VACÍO                                         |
-| 2                                       | `10_Repos_Gentleman/Gentleman-Skills`                                             | gentleman-skills                                             | `ac0dc7d`                                           | VACÍO                                         |
-| 3                                       | `10_Repos_Gentleman/Gentleman.Dots`                                               | gentleman.dots                                               | `12566aa`                                           | VACÍO                                         |
-| 4                                       | `10_Repos_Gentleman/agent-teams-lite`                                             | agent-teams-lite                                             | `d2015b4`                                           | VACÍO                                         |
-| 5                                       | `10_Repos_Gentleman/engram`                                                       | engram                                                       | `8556e1b`                                           | VACÍO                                         |
-| 6                                       | `10_Repos_Gentleman/gentleman-guardian-angel`                                     | gentleman-guardian-angel                                     | `6ab5373`                                           | VACÍO                                         |
-| 7                                       | `10_Repos_Gentleman/digitalgarden`                                                | digitalgarden                                                | `90df1ca`                                           | VACÍO                                         |
-| 8                                       | `10_Repos_Gentleman/qmd`                                                          | qmd                                                          | `2b8f329`                                           | VACÍO                                         |
-| 9                                       | `03_Resources_External/External/gentle-ai`                                        | gentle-ai                                                    | `9ec14c8`                                           | MISMATCH                                      |
-| 10                                      | `Momentum_Os/cursor-ide`                                                          | cursor-ide                                                   | `6ad44ab`                                           | OK                                            |
-| 11                                      | `Momentum_Os/claude-code`                                                         | claude-code                                                  | `80cae8e`                                           | OK                                            |
-| 12                                      | `Every_Sync_Zone`                                                                 | compound-engineering                                         | `8cbb28f`                                           | OK                                            |
+|-------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------------------|
+| 1                                               | `10_Repos_Gentleman/gentle-ai`                                                            | gentle-ai                                                            | `c7e96c1`                                                   | VACÍO                                                 |
+| 2                                               | `10_Repos_Gentleman/Gentleman-Skills`                                                     | gentleman-skills                                                     | `ac0dc7d`                                                   | VACÍO                                                 |
+| 3                                               | `10_Repos_Gentleman/Gentleman.Dots`                                                       | gentleman.dots                                                       | `12566aa`                                                   | VACÍO                                                 |
+| 4                                               | `10_Repos_Gentleman/agent-teams-lite`                                                     | agent-teams-lite                                                     | `d2015b4`                                                   | VACÍO                                                 |
+| 5                                               | `10_Repos_Gentleman/engram`                                                               | engram                                                               | `8556e1b`                                                   | VACÍO                                                 |
+| 6                                               | `10_Repos_Gentleman/gentleman-guardian-angel`                                             | gentleman-guardian-angel                                             | `6ab5373`                                                   | VACÍO                                                 |
+| 7                                               | `10_Repos_Gentleman/digitalgarden`                                                        | digitalgarden                                                        | `90df1ca`                                                   | VACÍO                                                 |
+| 8                                               | `10_Repos_Gentleman/qmd`                                                                  | qmd                                                                  | `2b8f329`                                                   | VACÍO                                                 |
+| 9                                               | `03_Resources_External/External/gentle-ai`                                                | gentle-ai                                                            | `9ec14c8`                                                   | MISMATCH                                              |
+| 10                                              | `Momentum_Os/cursor-ide`                                                                  | cursor-ide                                                           | `6ad44ab`                                                   | OK                                                    |
+| 11                                              | `Momentum_Os/claude-code`                                                                 | claude-code                                                          | `80cae8e`                                                   | OK                                                    |
+| 12                                              | `Every_Sync_Zone`                                                                         | compound-engineering                                                 | `8cbb28f`                                                   | OK                                                    |
 
 ### Acciones Realizadas
 
@@ -62,13 +62,13 @@ El repo tenía **12 submodules** pero:
 
 ### Commits de Actualización de Repos
 
-| Repo                                                         | Antes                                         | Después                                       | Cambios                                                                   |
-|--------------------------------------------------------------|-----------------------------------------------|-----------------------------------------------|---------------------------------------------------------------------------|
-| gentle-ai                                                    | `c7e96c1`                                     | `3bcc908`                                     | v1.2.1-56, cursor recovery                                                |
-| gentleman.dots                                               | `12566aa`                                     | `30a8fc4`                                     | v2.9.3, better markdown                                                   |
-| agent-teams-lite                                             | `d2015b4`                                     | `a54af76`                                     | v4.1.0, docs split, background-agents                                     |
-| engram                                                       | `8556e1b`                                     | `4f40089`                                     | v1.7.0, docs split                                                        |
-| gentleman-guardian-angel                                     | `6ab5373`                                     | `28f44d7`                                     | v2.8.0, Windows MINGW64 support                                           |
+| Repo                                                                 | Antes                                                 | Después                                               | Cambios                                                                           |
+|----------------------------------------------------------------------|-------------------------------------------------------|-------------------------------------------------------|-----------------------------------------------------------------------------------|
+| gentle-ai                                                            | `c7e96c1`                                             | `3bcc908`                                             | v1.2.1-56, cursor recovery                                                        |
+| gentleman.dots                                                       | `12566aa`                                             | `30a8fc4`                                             | v2.9.3, better markdown                                                           |
+| agent-teams-lite                                                     | `d2015b4`                                             | `a54af76`                                             | v4.1.0, docs split, background-agents                                             |
+| engram                                                               | `8556e1b`                                             | `4f40089`                                             | v1.7.0, docs split                                                                |
+| gentleman-guardian-angel                                             | `6ab5373`                                             | `28f44d7`                                             | v2.8.0, Windows MINGW64 support                                                   |
 
 ### Resultado: Commit `d155ba5`
 
@@ -109,13 +109,13 @@ bun "C:/Users/sebas/AppData/Roaming/npm/node_modules/@tobilu/qmd/dist/cli/qmd.js
 
 ### Colecciones Configuradas
 
-| Colección                                         | Archivos                                       | Descripción                                                         |
-|---------------------------------------------------|------------------------------------------------|---------------------------------------------------------------------|
-| `personal-os`                                     | 1531                                           | Todo el repositorio                                                 |
-| `core`                                            | 7                                              | 01_Personal_Os/11_AGENTS.md, GOALS.md, BACKLOG.md                   |
-| `brain`                                           | 33                                             | Memoria, conocimiento, reglas                                       |
-| `knowledge`                                       | 480                                            | Investigación, notas, recursos                                      |
-| **Total**                                         | **2051**                                       |                                                                     |
+| Colección                                                 | Archivos                                               | Descripción                                                                 |
+|-----------------------------------------------------------|--------------------------------------------------------|-----------------------------------------------------------------------------|
+| `personal-os`                                             | 1531                                                   | Todo el repositorio                                                         |
+| `core`                                                    | 7                                                      | 01_Personal_Os/11_AGENTS.md, GOALS.md, BACKLOG.md                           |
+| `brain`                                                   | 33                                                     | Memoria, conocimiento, reglas                                               |
+| `knowledge`                                               | 480                                                    | Investigación, notas, recursos                                              |
+| **Total**                                                 | **2051**                                               |                                                                             |
 
 ### Contextos Agregados
 
@@ -207,13 +207,13 @@ Colección de **5 skills** que mejoran cómo la IA genera código frontend. En v
 
 ### Las 5 Skills
 
-| Skill                                                  | Propósito                                                          | Cuándo Usar                                                               |
-|--------------------------------------------------------|--------------------------------------------------------------------|---------------------------------------------------------------------------|
-| `taste-skill`                                          | Diseño principal premium                                           | Proyectos desde cero                                                      |
-| `soft-skill`                                           | Look & feel premium/lujoso                                         | Invitaciones, landing pages premium                                       |
-| `minimalist-skill`                                     | Estilo Notion/Linear editorial                                     | Dashboards limpios                                                        |
-| `redesign-skill`                                       | Mejorar proyectos existentes                                       | Legacy, upgrades                                                          |
-| `output-skill`                                         | Código completo sin shortcuts                                      | **SIEMPRE** (evita código incompleto)                                     |
+| Skill                                                          | Propósito                                                                  | Cuándo Usar                                                                       |
+|----------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| `taste-skill`                                                  | Diseño principal premium                                                   | Proyectos desde cero                                                              |
+| `soft-skill`                                                   | Look & feel premium/lujoso                                                 | Invitaciones, landing pages premium                                               |
+| `minimalist-skill`                                             | Estilo Notion/Linear editorial                                             | Dashboards limpios                                                                |
+| `redesign-skill`                                               | Mejorar proyectos existentes                                               | Legacy, upgrades                                                                  |
+| `output-skill`                                                 | Código completo sin shortcuts                                              | **SIEMPRE** (evita código incompleto)                                             |
 
 ### Ubicaciones Copiadas
 
@@ -238,11 +238,11 @@ VISUAL_DENSITY (1-10): 4    # 4=Espaciado normal de app típica
 
 ```
 
-| Setting                                              | 1-3                                                 | 4-7                                                  | 8-10                                                         |
-|------------------------------------------------------|-----------------------------------------------------|------------------------------------------------------|--------------------------------------------------------------|
-| DESIGN_VARIANCE                                      | Limpio/centrado                                     | Overlapping                                          | Asimétrico/moderno                                           |
-| MOTION_INTENSITY                                     | Casi nada                                           | Fade-ins, scroll                                     | Magnetic, spring physics                                     |
-| VISUAL_DENSITY                                       | Airy/Lujo                                           | Normal                                               | Denso/Dashboard                                              |
+| Setting                                                      | 1-3                                                         | 4-7                                                          | 8-10                                                                 |
+|--------------------------------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|----------------------------------------------------------------------|
+| DESIGN_VARIANCE                                              | Limpio/centrado                                             | Overlapping                                                  | Asimétrico/moderno                                                   |
+| MOTION_INTENSITY                                             | Casi nada                                                   | Fade-ins, scroll                                             | Magnetic, spring physics                                             |
+| VISUAL_DENSITY                                               | Airy/Lujo                                                   | Normal                                                       | Denso/Dashboard                                                      |
 
 ### Reglas Clave
 
@@ -477,45 +477,45 @@ npm run build  # deploy
 
 ## 12. ARCHIVOS IMPORTANTES CREADOS/MODIFICADOS
 
-| Archivo                                                                              | Acción                                          | Descripción                                                                   |
-|--------------------------------------------------------------------------------------|-------------------------------------------------|-------------------------------------------------------------------------------|
-| `.gitmodules`                                                                        | Creado                                          | 12 submodules registrados                                                     |
-| `README.md`                                                                          | Actualizado                                     | Agregado QMD, Taste-Skills, DigitalGarden                                     |
-| `00_Core/01_Personal_Os/11_AGENTS.md`                                                | Actualizado                                     | Secciones 2.7 QMD, 2.8 DigitalGarden                                          |
-| `03_Scripts_Os/qmd.sh`                                                               | Creado                                          | Wrapper para QMD                                                              |
-| `03_Scripts_Os/56_Update_QMD_Index.py`                                               | Creado                                          | Script de update QMD                                                          |
-| `.cursor/02_Skills/11_Taste_Skills/`                                                 | Creado                                          | 5 taste-skills                                                                |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/11_Taste_Skills/`                         | Creado                                          | 5 taste-skills                                                                |
-| `.agent/03_Workflows/09_Frontend_Premium.md`                                         | Creado                                          | Workflow frontend                                                             |
-| `06_Archive/05_Digital_Garden/`                                                      | Creado                                          | Vault DigitalGarden                                                           |
-| `Reporte_Submodules_2026-03-19.md`                                                   | Creado                                          | Reporte de submodules                                                         |
+| Archivo                                                                                      | Acción                                                  | Descripción                                                                           |
+|----------------------------------------------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------------------------------|
+| `.gitmodules`                                                                                | Creado                                                  | 12 submodules registrados                                                             |
+| `README.md`                                                                                  | Actualizado                                             | Agregado QMD, Taste-Skills, DigitalGarden                                             |
+| `00_Core/01_Personal_Os/11_AGENTS.md`                                                        | Actualizado                                             | Secciones 2.7 QMD, 2.8 DigitalGarden                                                  |
+| `03_Scripts_Os/qmd.sh`                                                                       | Creado                                                  | Wrapper para QMD                                                                      |
+| `03_Scripts_Os/56_Update_QMD_Index.py`                                                       | Creado                                                  | Script de update QMD                                                                  |
+| `.cursor/02_Skills/11_Taste_Skills/`                                                         | Creado                                                  | 5 taste-skills                                                                        |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/11_Taste_Skills/`                                 | Creado                                                  | 5 taste-skills                                                                        |
+| `.agent/03_Workflows/09_Frontend_Premium.md`                                                 | Creado                                                  | Workflow frontend                                                                     |
+| `06_Archive/05_Digital_Garden/`                                                              | Creado                                                  | Vault DigitalGarden                                                                   |
+| `Reporte_Submodules_2026-03-19.md`                                                           | Creado                                                  | Reporte de submodules                                                                 |
 
 - --
 
 ## 13. METRICAS DE LA SESIÓN
 
-| Métrica                                                     | Valor                                       |
-|-------------------------------------------------------------|---------------------------------------------|
-| Submodules reparados                                        | 12                                          |
-| Repos clonados                                              | 5                                           |
-| Colecciones QMD creadas                                     | 4                                           |
-| Archivos QMD indexados                                      | 2051                                        |
-| Taste-Skills integradas                                     | 5                                           |
-| Scripts creados                                             | 2                                           |
-| Commits                                                     | 2                                           |
-| Líneas cambiadas                                            | ~32000                                      |
+| Métrica                                                             | Valor                                               |
+|---------------------------------------------------------------------|-----------------------------------------------------|
+| Submodules reparados                                                | 12                                                  |
+| Repos clonados                                                      | 5                                                   |
+| Colecciones QMD creadas                                             | 4                                                   |
+| Archivos QMD indexados                                              | 2051                                                |
+| Taste-Skills integradas                                             | 5                                                   |
+| Scripts creados                                                     | 2                                                   |
+| Commits                                                             | 2                                                   |
+| Líneas cambiadas                                                    | ~32000                                              |
 
 - --
 
 ## 14. STACK TÉCNICO
 
-| Componente                                       | Versión                                           |
-|--------------------------------------------------|---------------------------------------------------|
-| Node.js                                          | v24.12.0                                          |
-| Bun                                              | 1.3.10                                            |
-| Python                                           | 3.14                                              |
-| QMD                                              | v2.0.1                                            |
-| Git                                              | (Windows git)                                     |
+| Componente                                               | Versión                                                   |
+|----------------------------------------------------------|-----------------------------------------------------------|
+| Node.js                                                  | v24.12.0                                                  |
+| Bun                                                      | 1.3.10                                                    |
+| Python                                                   | 3.14                                                      |
+| QMD                                                      | v2.0.1                                                    |
+| Git                                                      | (Windows git)                                             |
 
 - --
 

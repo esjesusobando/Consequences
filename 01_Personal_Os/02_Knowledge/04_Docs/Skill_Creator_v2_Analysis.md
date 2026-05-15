@@ -79,16 +79,16 @@ El **Skill Creator v2.0** representa una evolución significativa en la creació
 
 ## 🔄 Comparación v1 vs v2.0
 
-| Aspecto                              | Skill Creator v1                          | Skill Creator v2.0                             |
-|--------------------------------------|-------------------------------------------|------------------------------------------------|
-| **Philosophy**                       | "Parece que funciona"                     | "SABEMOS que funciona"                         |
-| **Testing**                          | Manual, ad-hoc                            | Cuantitativo, automatizado                     |
-| **Metrics**                          | Subjetivas                                | Pass rate, tiempo, tokens                      |
-| **Feedback**                         | Humano, lento                             | Grader agent + humano                          |
-| **Optimización**                     | Manual                                    | Automática con ML                              |
-| **Multi-agent**                      | No                                        | Sí, ejecución paralela                         |
-| **Regressions**                      | No detectadas                             | Detectadas por benchmarks                      |
-| **Comparación**                      | Visual                                    | Blind A/B con análisis                         |
+| Aspecto                                      | Skill Creator v1                                  | Skill Creator v2.0                                     |
+|----------------------------------------------|---------------------------------------------------|--------------------------------------------------------|
+| **Philosophy**                               | "Parece que funciona"                             | "SABEMOS que funciona"                                 |
+| **Testing**                                  | Manual, ad-hoc                                    | Cuantitativo, automatizado                             |
+| **Metrics**                                  | Subjetivas                                        | Pass rate, tiempo, tokens                              |
+| **Feedback**                                 | Humano, lento                                     | Grader agent + humano                                  |
+| **Optimización**                             | Manual                                            | Automática con ML                                      |
+| **Multi-agent**                              | No                                                | Sí, ejecución paralela                                 |
+| **Regressions**                              | No detectadas                                     | Detectadas por benchmarks                              |
+| **Comparación**                              | Visual                                            | Blind A/B con análisis                                 |
 
 ---
 
@@ -96,20 +96,20 @@ El **Skill Creator v2.0** representa una evolución significativa en la creació
 
 ### Scripts Clave (en `scripts/`)
 
-| Script                                       | Propósito                                              | Uso                                 |
-|----------------------------------------------|--------------------------------------------------------|-------------------------------------|
-| `aggregate_benchmark.py`                     | Agregar resultados de评测                                | Post-ejecución                      |
-| `run_eval.py`                                | Ejecutar评测 en paralelo                                 | Durante testing                     |
-| `improve_description.py`                     | Optimizar triggers de skill                            | Post-creación                       |
-| `package_skill.py`                           | Empaquetar skill para distribución                     | Finalización                        |
+| Script                                               | Propósito                                                      | Uso                                         |
+|------------------------------------------------------|----------------------------------------------------------------|---------------------------------------------|
+| `aggregate_benchmark.py`                             | Agregar resultados de评测                                        | Post-ejecución                              |
+| `run_eval.py`                                        | Ejecutar评测 en paralelo                                         | Durante testing                             |
+| `improve_description.py`                             | Optimizar triggers de skill                                    | Post-creación                               |
+| `package_skill.py`                                   | Empaquetar skill para distribución                             | Finalización                                |
 
 ### Agentes Especializados (en `agents/`)
 
-| Agente                             | Rol                                           | Output                                |
-|------------------------------------|-----------------------------------------------|---------------------------------------|
-| **Grader**                         | Evaluar expectativas                          | `grading.json`                        |
-| **Comparator**                     | Comparación A/B ciega                         | `comparison.json`                     |
-| **Analyzer**                       | Análisis post-comparación                     | `analysis.json`                       |
+| Agente                                     | Rol                                                   | Output                                        |
+|--------------------------------------------|-------------------------------------------------------|-----------------------------------------------|
+| **Grader**                                 | Evaluar expectativas                                  | `grading.json`                                |
+| **Comparator**                             | Comparación A/B ciega                                 | `comparison.json`                             |
+| **Analyzer**                               | Análisis post-comparación                             | `analysis.json`                               |
 
 ### Visor de Resultados (en `eval-viewer/`)
 
@@ -215,12 +215,12 @@ Estadísticas finales:
 
 ### Errores Comunes a Evitar
 
-| Error                                   | Consecuencia                                       | Solución                                                             |
-|-----------------------------------------|----------------------------------------------------|----------------------------------------------------------------------|
-| Evals superficiales                     | Falsa confianza                                    | Evals que verifican sustancia, no solo presencia                     |
-| Pocos runs                              | Estadísticas poco confiables                       | Mínimo 3 runs por configuración                                      |
-| Sin baseline                            | No se mide valor real                              | Siempre comparar con/sin skill                                       |
-| Ignorar timing                          | Skills lentas sin darse cuenta                     | Incluir métricas de tiempo                                           |
+| Error                                           | Consecuencia                                               | Solución                                                                     |
+|-------------------------------------------------|------------------------------------------------------------|------------------------------------------------------------------------------|
+| Evals superficiales                             | Falsa confianza                                            | Evals que verifican sustancia, no solo presencia                             |
+| Pocos runs                                      | Estadísticas poco confiables                               | Mínimo 3 runs por configuración                                              |
+| Sin baseline                                    | No se mide valor real                                      | Siempre comparar con/sin skill                                               |
+| Ignorar timing                                  | Skills lentas sin darse cuenta                             | Incluir métricas de tiempo                                                   |
 
 ---
 

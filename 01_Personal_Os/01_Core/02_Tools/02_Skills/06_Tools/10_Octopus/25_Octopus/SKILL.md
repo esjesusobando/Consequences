@@ -21,12 +21,12 @@ Cada brazo es independiente y ejecuta su tarea sin depender de los otros.
 
 ## Cuándo Usar OCTOPUS
 
-| Scenario                                        | Ejemplo                                                                             |
-|-------------------------------------------------|-------------------------------------------------------------------------------------|
-| Múltiples tareas independientes                 | "Procesa estos 10 PDFs", "Genera imágenes para estas descripciones"                 |
-| Trabajo paralelo                                | "Descarga estos archivos", "Ejecuta estos tests"                                    |
-| Análisis paralelo                               | "Audita estas 5 carpetas"                                                           |
-| Generación batch                                | "Crea versiones de este componente para 3 temas"                                    |
+| Scenario                                                | Ejemplo                                                                                     |
+|---------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| Múltiples tareas independientes                         | "Procesa estos 10 PDFs", "Genera imágenes para estas descripciones"                         |
+| Trabajo paralelo                                        | "Descarga estos archivos", "Ejecuta estos tests"                                            |
+| Análisis paralelo                                       | "Audita estas 5 carpetas"                                                                   |
+| Generación batch                                        | "Crea versiones de este componente para 3 temas"                                            |
 
 ## Formación OCTOPUS
 
@@ -83,11 +83,11 @@ Usuario: "Genera thumbnails para todas las imágenes en esta carpeta"
 
 ## Integración con Otras Metodologías
 
-| Metodología                         | Relación                                                          |
-|-------------------------------------|-------------------------------------------------------------------|
-| **Super Campeones**                 | OCTOPUS es más simple, sin reviewers                              |
-| **4 FANTÁSTICOS**                   | 4F tiene verificación + docs + Engram                             |
-| **SDD**                             | OCTOPUS puede ejecutar tareas del SDD en paralelo                 |
+| Metodología                                 | Relación                                                                  |
+|---------------------------------------------|---------------------------------------------------------------------------|
+| **Super Campeones**                         | OCTOPUS es más simple, sin reviewers                                      |
+| **4 FANTÁSTICOS**                           | 4F tiene verificación + docs + Engram                                     |
+| **SDD**                                     | OCTOPUS puede ejecutar tareas del SDD en paralelo                         |
 
 ## Gotchas
 

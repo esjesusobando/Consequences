@@ -20,38 +20,38 @@ Este perfil construye pipelines de datos confiables: desde extracción hasta vis
 ## 📦 Skills que Carga Automáticamente
 
 ### Base de Datos y Storage
-| Skill                                          | Cuándo Usar                               | Output                                      |
-|------------------------------------------------|-------------------------------------------|---------------------------------------------|
-| `Supabase_Integration`                         | PostgreSQL needed                         | Schema + queries                            |
-| `Server_Api`                                   | API de datos                              | Endpoints REST                              |
-| `Django_Drf`                                   | Backend + ORM                             | API completa con DB                         |
+| Skill                                                  | Cuándo Usar                                       | Output                                              |
+|--------------------------------------------------------|---------------------------------------------------|-----------------------------------------------------|
+| `Supabase_Integration`                                 | PostgreSQL needed                                 | Schema + queries                                    |
+| `Server_Api`                                           | API de datos                                      | Endpoints REST                                      |
+| `Django_Drf`                                           | Backend + ORM                                     | API completa con DB                                 |
 
 ### Processing y ETL
-| Skill                                          | Cuándo Usar                                   | Output                                   |
-|------------------------------------------------|-----------------------------------------------|------------------------------------------|
-| `Python` + `Pytest`                            | Scripts de processing                         | Pipelines Python                         |
-| `Csv_Management`                               | CSV processing                                | Enrich + clean                           |
-| `Invoice_Intelligence`                         | Facturas/PDFs                                 | OCR + extracción                         |
+| Skill                                                  | Cuándo Usar                                           | Output                                           |
+|--------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------|
+| `Python` + `Pytest`                                    | Scripts de processing                                 | Pipelines Python                                 |
+| `Csv_Management`                                       | CSV processing                                        | Enrich + clean                                   |
+| `Invoice_Intelligence`                                 | Facturas/PDFs                                         | OCR + extracción                                 |
 
 ### Analytics y Visualización
-| Skill                                         | Cuándo Usar                            | Output                                       |
-|-----------------------------------------------|----------------------------------------|----------------------------------------------|
-| `Data_Visualization`                          | Dashboards                             | Gráficos y tablas                            |
-| `Health_Data_Analyst`                         | Datos de salud                         | Análisis poblacional                         |
-| `Observability`                               | Métricas                               | Logs y métricas                              |
+| Skill                                                 | Cuándo Usar                                    | Output                                               |
+|-------------------------------------------------------|------------------------------------------------|------------------------------------------------------|
+| `Data_Visualization`                                  | Dashboards                                     | Gráficos y tablas                                    |
+| `Health_Data_Analyst`                                 | Datos de salud                                 | Análisis poblacional                                 |
+| `Observability`                                       | Métricas                                       | Logs y métricas                                      |
 
 ### Calidad de Datos
-| Skill                                             | Cuándo Usar                                | Output                                           |
-|---------------------------------------------------|--------------------------------------------|--------------------------------------------------|
-| `Edge_Case`                                       | Datos edge cases                           | Manejo de nulos, errores                         |
-| `Test_Driven_Development`                         | Pipelines críticos                         | Tests que fallan primero                         |
-| `Data_Integrity_Guardian`                         | Validación                                 | Checks de integridad                             |
+| Skill                                                     | Cuándo Usar                                        | Output                                                   |
+|-----------------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|
+| `Edge_Case`                                               | Datos edge cases                                   | Manejo de nulos, errores                                 |
+| `Test_Driven_Development`                                 | Pipelines críticos                                 | Tests que fallan primero                                 |
+| `Data_Integrity_Guardian`                                 | Validación                                         | Checks de integridad                                     |
 
 ### Workflow y Automation
-| Skill                                     | Cuándo Usar                            | Output                                     |
-|-------------------------------------------|----------------------------------------|--------------------------------------------|
-| `N8N` workflows                           | Automatización                         | Workflows de datos                         |
-| `MCP_Integration`                         | Tools externos                         | Conexiones MCP                             |
+| Skill                                             | Cuándo Usar                                    | Output                                             |
+|---------------------------------------------------|------------------------------------------------|----------------------------------------------------|
+| `N8N` workflows                                   | Automatización                                 | Workflows de datos                                 |
+| `MCP_Integration`                                 | Tools externos                                 | Conexiones MCP                                     |
 
 ---
 
@@ -93,12 +93,12 @@ Este perfil construye pipelines de datos confiables: desde extracción hasta vis
 
 ## 📊 Métricas que Trackea
 
-| Métrica                                           | Target                           | Cómo se mide                                    |
-|---------------------------------------------------|----------------------------------|-------------------------------------------------|
-| **Pipeline Success Rate**                         | >99%                             | Ejecuciones exitosas                            |
-| **Data Freshness**                                | <1 hora                          | Tiempo desde última run                         |
-| **Error Rate**                                    | <1%                              | Filas con errores                               |
-| **Query Performance**                             | <200ms                           | P95 latency                                     |
+| Métrica                                                   | Target                                   | Cómo se mide                                            |
+|-----------------------------------------------------------|------------------------------------------|---------------------------------------------------------|
+| **Pipeline Success Rate**                                 | >99%                                     | Ejecuciones exitosas                                    |
+| **Data Freshness**                                        | <1 hora                                  | Tiempo desde última run                                 |
+| **Error Rate**                                            | <1%                                      | Filas con errores                                       |
+| **Query Performance**                                     | <200ms                                   | P95 latency                                             |
 
 ---
 
@@ -136,20 +136,20 @@ Este perfil construye pipelines de datos confiables: desde extracción hasta vis
 ## 🔗 Referencias
 
 ### Anthropic Harness Components (Integración SOTA)
-| Componente                                   | Ubicación                                                                                          | Uso                                                 |
-|----------------------------------------------|----------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| **Safety Wrapper**                           | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/00_Safety_Wrapper.py`             | Pre-check antes de ejecutar                         |
-| **Context Manager**                          | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/01_Context_Manager.py`            | Reset vs Compaction                                 |
-| **Evaluator Runner**                         | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner.py`           | QA separado (GAN pattern)                           |
-| **Sprint Contract**                          | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract.py`            | Negocia "done"                                      |
-| **Playwright QA**                            | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py`              | Testing interactivo                                 |
+| Componente                                           | Ubicación                                                                                                  | Uso                                                         |
+|------------------------------------------------------|------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| **Safety Wrapper**                                   | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/00_Safety_Wrapper.py`                     | Pre-check antes de ejecutar                                 |
+| **Context Manager**                                  | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/01_Context_Manager.py`                    | Reset vs Compaction                                         |
+| **Evaluator Runner**                                 | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner.py`                   | QA separado (GAN pattern)                                   |
+| **Sprint Contract**                                  | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract.py`                    | Negocia "done"                                              |
+| **Playwright QA**                                    | `01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py`                      | Testing interactivo                                         |
 
 ### Skills Anthropic
-| Skill                                          | Ubicación                                                                                                  | Uso                                                 |
-|------------------------------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| **Evaluator Pattern**                          | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/01_Evaluator_Pattern/`            | Cómo hacer adversarial eval                         |
-| **Context Management**                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/02_Context_Management/`           | Reset vs compaction                                 |
-| **Sprint Contract**                            | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/03_Sprint_Contract/`              | Generator + Evaluator                               |
+| Skill                                                  | Ubicación                                                                                                          | Uso                                                         |
+|--------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| **Evaluator Pattern**                                  | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/01_Evaluator_Pattern/`                    | Cómo hacer adversarial eval                                 |
+| **Context Management**                                 | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/02_Context_Management/`                   | Reset vs compaction                                         |
+| **Sprint Contract**                                    | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/03_Anthropic_Harness/03_Sprint_Contract/`                      | Generator + Evaluator                                       |
 
 ### Workflow
 - **17_Anthropic_Harness**: `01_Core/00_Workflows/17_Anthropic_Harness.md` — Workflow completo de 3 agentes

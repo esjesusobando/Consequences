@@ -51,21 +51,21 @@ Users have no way to visualize how their AI agent's memories connect. Engram sto
 
 ## Affected Areas
 
-| Area                                                 | Impact                   | Description                                                                                          |
-|------------------------------------------------------|--------------------------|------------------------------------------------------------------------------------------------------|
-| `cmd/engram/main.go`                                 | Modified                 | Add `obsidian-export` case + `cmdObsidianExport()` function                                          |
-| `internal/obsidian/`                                 | New                      | Export logic: `Exporter`, markdown rendering, wikilink generation, incremental state                 |
-| `internal/obsidian/exporter_test.go`                 | New                      | Unit tests for markdown generation, wikilink extraction, incremental logic                           |
-| `plugin/obsidian/`                                   | New                      | TypeScript Obsidian community plugin (Phase 2)                                                       |
+| Area                                                         | Impact                           | Description                                                                                                  |
+|--------------------------------------------------------------|----------------------------------|--------------------------------------------------------------------------------------------------------------|
+| `cmd/engram/main.go`                                         | Modified                         | Add `obsidian-export` case + `cmdObsidianExport()` function                                                  |
+| `internal/obsidian/`                                         | New                              | Export logic: `Exporter`, markdown rendering, wikilink generation, incremental state                         |
+| `internal/obsidian/exporter_test.go`                         | New                              | Unit tests for markdown generation, wikilink extraction, incremental logic                                   |
+| `plugin/obsidian/`                                           | New                              | TypeScript Obsidian community plugin (Phase 2)                                                               |
 
 ## Risks
 
-| Risk                                                           | Likelihood                   | Mitigation                                                                                  |
-|----------------------------------------------------------------|------------------------------|---------------------------------------------------------------------------------------------|
-| Large vaults (10k+ observations) slow Obsidian                 | Medium                       | Folder-per-project isolation, incremental sync, configurable project filter                 |
-| Topic-key wikilinks create orphan hub pages                    | Low                          | Only generate hub notes when ≥2 observations share a prefix                                 |
-| Filename collisions from title slugification                   | Low                          | Append observation ID to slug: `{slug}-{id}.md`                                             |
-| Obsidian plugin API breaking changes                           | Low                          | Pin API version in manifest.json, Phase 2 is optional                                       |
+| Risk                                                                   | Likelihood                           | Mitigation                                                                                          |
+|------------------------------------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Large vaults (10k+ observations) slow Obsidian                         | Medium                               | Folder-per-project isolation, incremental sync, configurable project filter                         |
+| Topic-key wikilinks create orphan hub pages                            | Low                                  | Only generate hub notes when ≥2 observations share a prefix                                         |
+| Filename collisions from title slugification                           | Low                                  | Append observation ID to slug: `{slug}-{id}.md`                                                     |
+| Obsidian plugin API breaking changes                                   | Low                                  | Pin API version in manifest.json, Phase 2 is optional                                               |
 
 ## Rollback Plan
 

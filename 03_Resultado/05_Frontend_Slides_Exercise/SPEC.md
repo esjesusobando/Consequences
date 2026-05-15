@@ -13,18 +13,18 @@ Dark, sophisticated, high-contrast. Inspirado en:
 - Apple Keynote dark mode
 
 ### Color Palette
-| Token             | Hex                       | Uso                                 |
-|-------------------|---------------------------|-------------------------------------|
-| `--bg`            | `#0d0d0d`                 | Background principal                |
-| `--surface`       | `#151515`                 | Cards, containers                   |
-| `--surface-2`     | `#1c1c1c`                 | Containers secundarios              |
-| `--text`          | `#ffffff`                 | Texto principal                     |
-| `--text-dim`      | `#888888`                 | Texto secundario                    |
-| `--text-muted`    | `#444444`                 | Texto terciario                     |
-| `--accent`        | `#ff3d00`                 | Acento principal (naranja vibrante) |
-| `--accent-soft`   | `rgba(255,61,0,0.1)`      | Fondos accent                       |
-| `--accent-border` | `rgba(255,61,0,0.3)`      | Bordes accent                       |
-| `--grid`          | `rgba(255,255,255,0.025)` | Grid overlay                        |
+| Token                     | Hex                               | Uso                                         |
+|---------------------------|-----------------------------------|---------------------------------------------|
+| `--bg`                    | `#0d0d0d`                         | Background principal                        |
+| `--surface`               | `#151515`                         | Cards, containers                           |
+| `--surface-2`             | `#1c1c1c`                         | Containers secundarios                      |
+| `--text`                  | `#ffffff`                         | Texto principal                             |
+| `--text-dim`              | `#888888`                         | Texto secundario                            |
+| `--text-muted`            | `#444444`                         | Texto terciario                             |
+| `--accent`                | `#ff3d00`                         | Acento principal (naranja vibrante)         |
+| `--accent-soft`           | `rgba(255,61,0,0.1)`              | Fondos accent                               |
+| `--accent-border`         | `rgba(255,61,0,0.3)`              | Bordes accent                               |
+| `--grid`                  | `rgba(255,255,255,0.025)`         | Grid overlay                                |
 
 ### Typography
 - **Display/H1**: Inter 900, `clamp(2.5rem, 7vw, 5.5rem)`, letter-spacing -0.03em

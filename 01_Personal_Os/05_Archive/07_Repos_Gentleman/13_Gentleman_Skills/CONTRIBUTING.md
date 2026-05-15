@@ -13,11 +13,11 @@ Community skills go through a democratic approval process:
 
 ### Timeline
 
-| Phase                    | Duration                   | What Happens                                               |
-|--------------------------|----------------------------|------------------------------------------------------------|
-| Review                   | Days 1-7                   | Community reviews and discusses the skill                  |
-| Voting                   | Days 1-7                   | Members vote using GitHub reactions                        |
-| Decision                 | Day 8                      | Maintainers count votes and merge or close                 |
+| Phase                            | Duration                           | What Happens                                                       |
+|----------------------------------|------------------------------------|--------------------------------------------------------------------|
+| Review                           | Days 1-7                           | Community reviews and discusses the skill                          |
+| Voting                           | Days 1-7                           | Members vote using GitHub reactions                                |
+| Decision                         | Day 8                              | Maintainers count votes and merge or close                         |
 
 ### Voting Rules
 

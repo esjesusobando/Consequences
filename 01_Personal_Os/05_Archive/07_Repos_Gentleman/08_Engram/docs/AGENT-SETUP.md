@@ -6,17 +6,17 @@ Engram works with **any MCP-compatible agent**. Pick your agent below.
 
 ## Quick Reference
 
-| Agent                         | One-liner                                                                                                    | Manual Config                                                      |
-|-------------------------------|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| Claude Code                   | `claude plugin marketplace add Gentleman-Programming/engram && claude plugin install engram`                 | [Details](#claude-code)                                            |
-| OpenCode                      | `engram setup opencode`                                                                                      | [Details](#opencode)                                               |
-| Gemini CLI                    | `engram setup gemini-cli`                                                                                    | [Details](#gemini-cli)                                             |
-| Codex                         | `engram setup codex`                                                                                         | [Details](#codex)                                                  |
-| VS Code                       | `code --add-mcp '{"name":"engram","command":"engram","args":["mcp"]}'`                                       | [Details](#vs-code-copilot--claude-code-extension)                 |
-| Antigravity                   | Manual JSON config                                                                                           | [Details](#antigravity)                                            |
-| Cursor                        | Manual JSON config                                                                                           | [Details](#cursor)                                                 |
-| Windsurf                      | Manual JSON config                                                                                           | [Details](#windsurf)                                               |
-| Any MCP agent                 | `engram mcp` (stdio)                                                                                         | [Details](#any-other-mcp-agent)                                    |
+| Agent                                 | One-liner                                                                                                            | Manual Config                                                              |
+|---------------------------------------|----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| Claude Code                           | `claude plugin marketplace add Gentleman-Programming/engram && claude plugin install engram`                         | [Details](#claude-code)                                                    |
+| OpenCode                              | `engram setup opencode`                                                                                              | [Details](#opencode)                                                       |
+| Gemini CLI                            | `engram setup gemini-cli`                                                                                            | [Details](#gemini-cli)                                                     |
+| Codex                                 | `engram setup codex`                                                                                                 | [Details](#codex)                                                          |
+| VS Code                               | `code --add-mcp '{"name":"engram","command":"engram","args":["mcp"]}'`                                               | [Details](#vs-code-copilot--claude-code-extension)                         |
+| Antigravity                           | Manual JSON config                                                                                                   | [Details](#antigravity)                                                    |
+| Cursor                                | Manual JSON config                                                                                                   | [Details](#cursor)                                                         |
+| Windsurf                              | Manual JSON config                                                                                                   | [Details](#windsurf)                                                       |
+| Any MCP agent                         | `engram mcp` (stdio)                                                                                                 | [Details](#any-other-mcp-agent)                                            |
 
 ---
 

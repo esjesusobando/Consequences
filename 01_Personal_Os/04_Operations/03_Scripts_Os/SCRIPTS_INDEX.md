@@ -11,20 +11,20 @@
 
 ## 📊 Estado del Sistema (Post-Migration 2026-04-20)
 
-| Auditoría                             | Estado                     | Notas                                                                    |
-|---------------------------------------|----------------------------|--------------------------------------------------------------------------|
-| **Estructura**                        | ✅ PASS                     | 10 carpetas (00-13) válidas                                              |
-| **Health**                            | ✅ PASS                     | SALUDABLE                                                                |
-| **Skills**                            | ✅ FIXED                    | 22 categorías — 100% con SKILL.md                                        |
-| **13_Auditors_Os**                    | ✅ NEW                      | Utilities + Beautify scripts                                             |
-| **Hub 07 rutas**                      | ✅ FIXED                    | `09_Integration/` (antes `Integration_Fixed`)                            |
-| **Hub 08 rutas**                      | ✅ FIXED                    | `04_Workflow/` (antes `Workflow_Fixed`)                                  |
-| **PYTHONPATH**                        | ✅ FIXED                    | Todos los hubs pasan PYTHONPATH a sub-scripts                            |
-| **Scripts legacy**                    | ✅ MOVED                    | 9 scripts migrados de 10_Legacy a módulos                                |
-| **Hooks Windows**                     | ✅ FIXED                    | WinError 5 + emoji encoding resueltos                                    |
-| **Script Migration**                  | ✅ DONE                     | 12 scripts → skills using get_skill_script()                             |
-| **10_Legacy**                         | ✅ ARCHIVED                 | `.backup/10_Legacy_backup_20260420/`                                     |
-| **HUBs 14-18**                        | ✅ JARVIS 3.0               | Health Metrics, MCP Sync, Agent Mirror/Mapper, Watchdog, Telemetry       |
+| Auditoría                                     | Estado                             | Notas                                                                            |
+|-----------------------------------------------|------------------------------------|----------------------------------------------------------------------------------|
+| **Estructura**                                | ✅ PASS                             | 10 carpetas (00-13) válidas                                                      |
+| **Health**                                    | ✅ PASS                             | SALUDABLE                                                                        |
+| **Skills**                                    | ✅ FIXED                            | 22 categorías — 100% con SKILL.md                                                |
+| **13_Auditors_Os**                            | ✅ NEW                              | Utilities + Beautify scripts                                                     |
+| **Hub 07 rutas**                              | ✅ FIXED                            | `09_Integration/` (antes `Integration_Fixed`)                                    |
+| **Hub 08 rutas**                              | ✅ FIXED                            | `04_Workflow/` (antes `Workflow_Fixed`)                                          |
+| **PYTHONPATH**                                | ✅ FIXED                            | Todos los hubs pasan PYTHONPATH a sub-scripts                                    |
+| **Scripts legacy**                            | ✅ MOVED                            | 9 scripts migrados de 10_Legacy a módulos                                        |
+| **Hooks Windows**                             | ✅ FIXED                            | WinError 5 + emoji encoding resueltos                                            |
+| **Script Migration**                          | ✅ DONE                             | 12 scripts → skills using get_skill_script()                                     |
+| **10_Legacy**                                 | ✅ ARCHIVED                         | `.backup/10_Legacy_backup_20260420/`                                             |
+| **HUBs 14-18**                                | ✅ JARVIS 3.0                       | Health Metrics, MCP Sync, Agent Mirror/Mapper, Watchdog, Telemetry               |
 
 ---
 
@@ -32,29 +32,29 @@
 
 > **Total HUBs:** 23 (v4.0 Consequences + JARVIS 3.1) — Ver detalle completo en `HUB_CATALOG.md`
 
-| #                     | Script                                 | Purpose                                                     | Status                     |
-|-----------------------|----------------------------------------|-------------------------------------------------------------|----------------------------|
-| 00                    | `Sound_Engine.py`                      | Motor de notificaciones sonoras                             | ✅ ACTIVO                   |
-| 01                    | `Auditor_Hub.py`                       | Orquestador de Auditorías                                   | ✅ ACTIVO                   |
-| 02                    | `Git_Hub.py`                           | Orquestador de Git/Repos                                    | ✅ ACTIVO                   |
-| 03                    | `AIPM_Hub.py`                          | Métricas AIPM                                               | ✅ ACTIVO                   |
-| 04                    | `Ritual_Hub.py`                        | Rituales (Start/End)                                        | ✅ ACTIVO                   |
-| 05                    | `Validator_Hub.py`                     | Validaciones                                                | ✅ ACTIVO                   |
-| 06                    | `Tool_Hub.py`                          | Herramientas                                                | ✅ ACTIVO                   |
-| 07                    | `Integration_Hub.py`                   | Integraciones MCP                                           | ✅ ACTIVO                   |
-| 08                    | `Workflow_Hub.py`                      | Workflows SOTA                                              | ✅ ACTIVO                   |
-| 09                    | `Data_Hub.py`                          | Datos/Sync                                                  | ✅ ACTIVO                   |
-| 10                    | `General_Hub.py`                       | Utilidades                                                  | ✅ ACTIVO                   |
-| 11                    | `Auto_Learn_Hub.py`                    | Motor de automejora                                         | ✅ ACTIVO                   |
-| 12                    | `Context_Usage_Bar.py`                 | Barra de uso de contexto (en 13_Auditors_Os/scripts/)       | ✅ ACTIVO                   |
-| 13                    | `Beautify_Tables.py`                   | Formateo de tablas (en 13_Auditors_Os/scripts/)             | ✅ ACTIVO                   |
-| 14                    | `Health_Metrics_Hub.py`                | Métricas de salud del sistema                               | ✅ ACTIVO (JARVIS)          |
-| 15a ★                 | `MCP_Sync_Hub.py`                      | Sync + drift report MCPs (canónico)                         | ✅ ACTIVO (JARVIS)          |
-| 15b                   | `Agent_Sync_Hub.py`                    | Sincronización de agentes                                   | ✅ ACTIVO                   |
-| 16a ★                 | `System_Mapper_Hub.py`                 | Regenera manifest JARVIS (canónico)                         | ✅ ACTIVO (JARVIS)          |
-| 16b                   | `Agent_Mirror_Hub.py`                  | Mirror agentes source → backup                              | ✅ ACTIVO                   |
-| 17 ★                  | `Watchdog_Hub.py`                      | Health check activo del OS (canónico)                       | ✅ ACTIVO (JARVIS)          |
-| 18 ★                  | `Telemetry_Hub.py`                     | Dashboard telemetría y stats (canónico)                     | ✅ ACTIVO (JARVIS)          |
+| #                             | Script                                         | Purpose                                                             | Status                             |
+|-------------------------------|------------------------------------------------|---------------------------------------------------------------------|------------------------------------|
+| 00                            | `Sound_Engine.py`                              | Motor de notificaciones sonoras                                     | ✅ ACTIVO                           |
+| 01                            | `Auditor_Hub.py`                               | Orquestador de Auditorías                                           | ✅ ACTIVO                           |
+| 02                            | `Git_Hub.py`                                   | Orquestador de Git/Repos                                            | ✅ ACTIVO                           |
+| 03                            | `AIPM_Hub.py`                                  | Métricas AIPM                                                       | ✅ ACTIVO                           |
+| 04                            | `Ritual_Hub.py`                                | Rituales (Start/End)                                                | ✅ ACTIVO                           |
+| 05                            | `Validator_Hub.py`                             | Validaciones                                                        | ✅ ACTIVO                           |
+| 06                            | `Tool_Hub.py`                                  | Herramientas                                                        | ✅ ACTIVO                           |
+| 07                            | `Integration_Hub.py`                           | Integraciones MCP                                                   | ✅ ACTIVO                           |
+| 08                            | `Workflow_Hub.py`                              | Workflows SOTA                                                      | ✅ ACTIVO                           |
+| 09                            | `Data_Hub.py`                                  | Datos/Sync                                                          | ✅ ACTIVO                           |
+| 10                            | `General_Hub.py`                               | Utilidades                                                          | ✅ ACTIVO                           |
+| 11                            | `Auto_Learn_Hub.py`                            | Motor de automejora                                                 | ✅ ACTIVO                           |
+| 12                            | `Context_Usage_Bar.py`                         | Barra de uso de contexto (en 13_Auditors_Os/scripts/)               | ✅ ACTIVO                           |
+| 13                            | `Beautify_Tables.py`                           | Formateo de tablas (en 13_Auditors_Os/scripts/)                     | ✅ ACTIVO                           |
+| 14                            | `Health_Metrics_Hub.py`                        | Métricas de salud del sistema                                       | ✅ ACTIVO (JARVIS)                  |
+| 15a ★                         | `MCP_Sync_Hub.py`                              | Sync + drift report MCPs (canónico)                                 | ✅ ACTIVO (JARVIS)                  |
+| 15b                           | `Agent_Sync_Hub.py`                            | Sincronización de agentes                                           | ✅ ACTIVO                           |
+| 16a ★                         | `System_Mapper_Hub.py`                         | Regenera manifest JARVIS (canónico)                                 | ✅ ACTIVO (JARVIS)                  |
+| 16b                           | `Agent_Mirror_Hub.py`                          | Mirror agentes source → backup                                      | ✅ ACTIVO                           |
+| 17 ★                          | `Watchdog_Hub.py`                              | Health check activo del OS (canónico)                               | ✅ ACTIVO (JARVIS)                  |
+| 18 ★                          | `Telemetry_Hub.py`                             | Dashboard telemetría y stats (canónico)                             | ✅ ACTIVO (JARVIS)                  |
 
 > ★ = HUBs canónicos JARVIS 3.0. `Beauty_Doc.py` está en `13_Auditors_Os/scripts/`.
 
@@ -112,21 +112,21 @@ Think_Different/                        ← Raíz del proyecto
 
 > **Total:** 300+ skills — 11 áreas funcionales | Índice completo: `INDEX_AREA_FUNCTIONAL.md`
 
-| Área                  | Carpeta                             | Descripción                                                       | SKILL.md         |
-|-----------------------|-------------------------------------|-------------------------------------------------------------------|------------------|
-| 00a                   | `00_Compound_Engineering`           | Core CE (Spider, Avengers, LFG)                                   | ✅                |
-| 00b                   | `00_Personal_Os_Stack`              | Stack base OS + Gcierr                                            | ✅                |
-| 00c                   | `00_Skill_Auditor`                  | Auditoría de skills                                               | ✅                |
-| 01                    | `01_Creacion_Contenidos`            | Brand, YouTube, SEO, Carruseles, Contenidos                       | ✅                |
-| 02                    | `02_Diseno_Ui_Ux`                   | Product Design, UI/UX, Taste, Minimalismo                         | ✅                |
-| 03                    | `03_Video_Media`                    | Video Intel, James Cameron (Remotion)                             | ✅                |
-| 04                    | `04_Automatizacion`                 | N8N, Firecrawl, automación                                        | ✅                |
-| 05                    | `05_Workflows`                      | Agent Teams, PM, Orchestrator                                     | ✅                |
-| 06                    | `06_Tools`                          | Skill Creator, Testing, DevOps, System Master, Data Analyst       | ✅                |
-| 07                    | `07_Personal_Os`                    | Life OS, Hillary, Rituales                                        | ✅                |
-| 08                    | `08_Invictus_Web`                   | Playwright, Superpowers, Web automation                           | ✅                |
-| 09                    | `09_Legacy_Archive`                 | Skills obsoletas (archivadas en 05_Archive/)                      | N/A (archivado)  |
-| 21                    | `21_Skill_Template`                 | Template para nuevas skills (pendiente verificar)                 | ⚠️               |
+| Área                          | Carpeta                                     | Descripción                                                               | SKILL.md                 |
+|-------------------------------|---------------------------------------------|---------------------------------------------------------------------------|--------------------------|
+| 00a                           | `00_Compound_Engineering`                   | Core CE (Spider, Avengers, LFG)                                           | ✅                        |
+| 00b                           | `00_Personal_Os_Stack`                      | Stack base OS + Gcierr                                                    | ✅                        |
+| 00c                           | `00_Skill_Auditor`                          | Auditoría de skills                                                       | ✅                        |
+| 01                            | `01_Creacion_Contenidos`                    | Brand, YouTube, SEO, Carruseles, Contenidos                               | ✅                        |
+| 02                            | `02_Diseno_Ui_Ux`                           | Product Design, UI/UX, Taste, Minimalismo                                 | ✅                        |
+| 03                            | `03_Video_Media`                            | Video Intel, James Cameron (Remotion)                                     | ✅                        |
+| 04                            | `04_Automatizacion`                         | N8N, Firecrawl, automación                                                | ✅                        |
+| 05                            | `05_Workflows`                              | Agent Teams, PM, Orchestrator                                             | ✅                        |
+| 06                            | `06_Tools`                                  | Skill Creator, Testing, DevOps, System Master, Data Analyst               | ✅                        |
+| 07                            | `07_Personal_Os`                            | Life OS, Hillary, Rituales                                                | ✅                        |
+| 08                            | `08_Invictus_Web`                           | Playwright, Superpowers, Web automation                                   | ✅                        |
+| 09                            | `09_Legacy_Archive`                         | Skills obsoletas (archivadas en 05_Archive/)                              | N/A (archivado)          |
+| 21                            | `21_Skill_Template`                         | Template para nuevas skills (pendiente verificar)                         | ⚠️                       |
 
 **Total: 22 categorías de skills documentadas (09 y 21 no verificadas en este scan)**
 
@@ -136,9 +136,9 @@ Think_Different/                        ← Raíz del proyecto
 
 Scripts legacy en `01_Personal_Os/04_Operations/03_Scripts_Os/Legacy_Backup/` — referensiados por números:
 
-| #                       | Script                        | Purpose                                          |
-|-------------------------|-------------------------------|--------------------------------------------------|
-| 00-90                   | +80 scripts                   | Workflows, AIPM, Quality, etc.                   |
+| #                               | Script                                | Purpose                                                  |
+|---------------------------------|---------------------------------------|----------------------------------------------------------|
+| 00-90                           | +80 scripts                           | Workflows, AIPM, Quality, etc.                           |
 
 > ⚠️ Algunos scripts legacy pueden tener rutas obsoletas (`.agent/02_Skills`). Auditoría en progreso.
 
@@ -146,14 +146,14 @@ Scripts legacy en `01_Personal_Os/04_Operations/03_Scripts_Os/Legacy_Backup/` �
 
 ## ✅ Comandos del Sistema
 
-| Comando                         | Función                                     |
-|---------------------------------|---------------------------------------------|
-| `gr`                            | System Guardian (dry-run)                   |
-| `gr --apply`                    | Aplicar fixes                               |
-| `gr --agents`                   | Agentes de revisión                         |
-| `/sdd:*`                        | SDD Workflow                                |
-| `/ce:*`                         | Compound Engineering                        |
-| `engram`                        | Memoria persistente                         |
+| Comando                                 | Función                                             |
+|-----------------------------------------|-----------------------------------------------------|
+| `gr`                                    | System Guardian (dry-run)                           |
+| `gr --apply`                            | Aplicar fixes                                       |
+| `gr --agents`                           | Agentes de revisión                                 |
+| `/sdd:*`                                | SDD Workflow                                        |
+| `/ce:*`                                 | Compound Engineering                                |
+| `engram`                                | Memoria persistente                                 |
 
 ---
 
@@ -169,20 +169,20 @@ Scripts legacy en `01_Personal_Os/04_Operations/03_Scripts_Os/Legacy_Backup/` �
 
 Scripts migrados a skills usando `get_skill_script()`:
 
-| Script                                      | Skill Destino                                 | Estado                     |
-|---------------------------------------------|-----------------------------------------------|----------------------------|
-| `01_Spider_Brainstorm.py`                   | 00_Compound_Engineering/scripts               | ✅                          |
-| `02_Professor_X_Plan.py`                    | 01_Agent_Teams_Lite/scripts                   | ✅                          |
-| `34_Skill_Auditor.py`                       | 00_Skill_Auditor/scripts                      | ✅                          |
-| `53_Structure_Auditor.py`                   | 00_Personal_Os_Stack/scripts                  | ✅                          |
-| `50_System_Health_Monitor.py`               | 08_Personal_Os/scripts                        | ✅                          |
-| `33_Parallel_Audit_Pro.py`                  | 06_Testing/scripts                            | ✅                          |
-| `57_Repo_Sync_Auditor.py`                   | 07_DevOps/scripts                             | ✅                          |
-| `08_Ritual_Cierre.py`                       | 08_Personal_Os/scripts                        | ✅                          |
-| `14_Morning_Standup.py`                     | 08_Personal_Os/scripts                        | ✅                          |
-| `09_Backlog_Triage.py`                      | 02_Project_Manager/scripts                    | ✅                          |
-| `11_Sync_Notes.py`                          | 18_Personal_Life_OS/scripts                   | ✅                          |
-| `16_Clean_System.py`                        | 13_System_Master/scripts                      | ✅                          |
+| Script                                              | Skill Destino                                         | Estado                             |
+|-----------------------------------------------------|-------------------------------------------------------|------------------------------------|
+| `01_Spider_Brainstorm.py`                           | 00_Compound_Engineering/scripts                       | ✅                                  |
+| `02_Professor_X_Plan.py`                            | 01_Agent_Teams_Lite/scripts                           | ✅                                  |
+| `34_Skill_Auditor.py`                               | 00_Skill_Auditor/scripts                              | ✅                                  |
+| `53_Structure_Auditor.py`                           | 00_Personal_Os_Stack/scripts                          | ✅                                  |
+| `50_System_Health_Monitor.py`                       | 08_Personal_Os/scripts                                | ✅                                  |
+| `33_Parallel_Audit_Pro.py`                          | 06_Testing/scripts                                    | ✅                                  |
+| `57_Repo_Sync_Auditor.py`                           | 07_DevOps/scripts                                     | ✅                                  |
+| `08_Ritual_Cierre.py`                               | 08_Personal_Os/scripts                                | ✅                                  |
+| `14_Morning_Standup.py`                             | 08_Personal_Os/scripts                                | ✅                                  |
+| `09_Backlog_Triage.py`                              | 02_Project_Manager/scripts                            | ✅                                  |
+| `11_Sync_Notes.py`                                  | 18_Personal_Life_OS/scripts                           | ✅                                  |
+| `16_Clean_System.py`                                | 13_System_Master/scripts                              | ✅                                  |
 
 **Total: 12 scripts migrados — Todos resolviendo con get_skill_script()**
 
@@ -190,21 +190,21 @@ Scripts migrados a skills usando `get_skill_script()`:
 
 ## 📁 Scripts por Carpeta (01_Ritual)
 
-| Script                                          | Función                                |
-|-------------------------------------------------|----------------------------------------|
-| `08_Ritual_Cierre.py`                           | Cierre de sesión                       |
-| `09_Backlog_Triage.py`                          | Procesa backlog                        |
-| `11_Sync_Notes.py`                              | Sincroniza notas                       |
-| `12_Update_Links.py`                            | Actualiza enlaces                      |
-| `13_Validate_Stack.py`                          | Valida stack tech                      |
-| `14_Morning_Standup.py`                         | Daily standup                          |
-| `15_Weekly_Review.py`                           | Weekly review                          |
-| `16_Clean_System.py`                            | Limpia sistema                         |
-| `17_Ritual_Dominical.py`                        | Ritual dominical                       |
-| `18_Generacion_Contenido.py`                    | Generación contenido                   |
-| `19_Generate_Progress.py`                       | Dashboard progreso                     |
-| `50_System_Health_Monitor.py`                   | Health monitor                         |
-| `57_Repo_Sync_Auditor.py`                       | Repo sync                              |
+| Script                                                  | Función                                        |
+|---------------------------------------------------------|------------------------------------------------|
+| `08_Ritual_Cierre.py`                                   | Cierre de sesión                               |
+| `09_Backlog_Triage.py`                                  | Procesa backlog                                |
+| `11_Sync_Notes.py`                                      | Sincroniza notas                               |
+| `12_Update_Links.py`                                    | Actualiza enlaces                              |
+| `13_Validate_Stack.py`                                  | Valida stack tech                              |
+| `14_Morning_Standup.py`                                 | Daily standup                                  |
+| `15_Weekly_Review.py`                                   | Weekly review                                  |
+| `16_Clean_System.py`                                    | Limpia sistema                                 |
+| `17_Ritual_Dominical.py`                                | Ritual dominical                               |
+| `18_Generacion_Contenido.py`                            | Generación contenido                           |
+| `19_Generate_Progress.py`                               | Dashboard progreso                             |
+| `50_System_Health_Monitor.py`                           | Health monitor                                 |
+| `57_Repo_Sync_Auditor.py`                               | Repo sync                                      |
 
 ---
 

@@ -49,29 +49,29 @@
 
 Map each client to the appropriate industry template:
 
-| Client Type | Template | Key Considerations |
-|------------|----------|-------------------|
-| SaaS | `saas.md` | Long sales cycle, demo/trial conversions |
-| E-commerce | `ecommerce.md` | Product feed, ROAS focus, seasonal |
-| Local Service | `local-service.md` | Call tracking, LSA, geo targeting |
-| B2B Enterprise | `b2b-enterprise.md` | ABM, LinkedIn, long attribution |
-| Info Products | `info-products.md` | Funnel-based, Meta/YouTube primary |
-| Mobile App | `mobile-app.md` | MMP required, LTV optimization |
-| Real Estate | `real-estate.md` | Special Ad Category, dual audience |
-| Healthcare | `healthcare.md` | HIPAA, LegitScript, compliance |
-| Finance | `finance.md` | Special Ad Category, disclosures |
-| Other | `generic.md` | Adapt based on specifics |
+| Client Type          | Template                  | Key Considerations                             |
+|----------------------|---------------------------|------------------------------------------------|
+| SaaS                 | `saas.md`                 | Long sales cycle, demo/trial conversions       |
+| E-commerce           | `ecommerce.md`            | Product feed, ROAS focus, seasonal             |
+| Local Service        | `local-service.md`        | Call tracking, LSA, geo targeting              |
+| B2B Enterprise       | `b2b-enterprise.md`       | ABM, LinkedIn, long attribution                |
+| Info Products        | `info-products.md`        | Funnel-based, Meta/YouTube primary             |
+| Mobile App           | `mobile-app.md`           | MMP required, LTV optimization                 |
+| Real Estate          | `real-estate.md`          | Special Ad Category, dual audience             |
+| Healthcare           | `healthcare.md`           | HIPAA, LegitScript, compliance                 |
+| Finance              | `finance.md`              | Special Ad Category, disclosures               |
+| Other                | `generic.md`              | Adapt based on specifics                       |
 
 ## Agency Platform Selection Matrix
 
 ### Client Budget → Platform Recommendations
-| Monthly Budget | Recommended Platforms | Reasoning |
-|---------------|----------------------|-----------|
-| $1,000-$3,000 | Google Search only | Focus on highest-intent channel |
-| $3,000-$5,000 | Google + Meta | Add prospecting/retargeting |
-| $5,000-$10,000 | Google + Meta + 1 secondary | Based on industry fit |
-| $10,000-$25,000 | 3-4 platforms | Full funnel coverage |
-| $25,000+ | Full platform mix | Platform-specific optimization |
+| Monthly Budget        | Recommended Platforms             | Reasoning                             |
+|-----------------------|-----------------------------------|---------------------------------------|
+| $1,000-$3,000         | Google Search only                | Focus on highest-intent channel       |
+| $3,000-$5,000         | Google + Meta                     | Add prospecting/retargeting           |
+| $5,000-$10,000        | Google + Meta + 1 secondary       | Based on industry fit                 |
+| $10,000-$25,000       | 3-4 platforms                     | Full funnel coverage                  |
+| $25,000+              | Full platform mix                 | Platform-specific optimization        |
 
 ## Reporting Framework
 
@@ -98,13 +98,13 @@ Map each client to the appropriate industry template:
 - Next quarter strategy and goals
 
 ### Key Metrics by Client Type
-| Client Type | Primary KPI | Secondary KPIs |
-|------------|-------------|----------------|
-| E-commerce | ROAS, MER | AOV, New Customer %, CVR |
-| SaaS | Pipeline, CPA | MQL→SQL rate, Demo bookings |
-| Lead Gen | CPL, Lead Quality | Show rate, Close rate |
-| Local Service | Cost/Booked Job | Call volume, Map actions |
-| Brand Awareness | Reach, Frequency | Brand lift, Search volume |
+| Client Type           | Primary KPI             | Secondary KPIs                    |
+|-----------------------|-------------------------|-----------------------------------|
+| E-commerce            | ROAS, MER               | AOV, New Customer %, CVR          |
+| SaaS                  | Pipeline, CPA           | MQL→SQL rate, Demo bookings       |
+| Lead Gen              | CPL, Lead Quality       | Show rate, Close rate             |
+| Local Service         | Cost/Booked Job         | Call volume, Map actions          |
+| Brand Awareness       | Reach, Frequency        | Brand lift, Search volume         |
 
 ## Agency Operations
 
@@ -127,14 +127,14 @@ Example: `ACME_META_CONV_Lookalike1pct_US_2026Q1`
 - [ ] Client approval documented
 
 ### Optimization Cadence
-| Frequency | Action |
-|-----------|--------|
-| Daily | Spend pacing check, anomaly detection |
-| 2x/week | Bid adjustments, creative performance review |
-| Weekly | Search term review, negative keyword updates |
-| Bi-weekly | Creative refresh assessment, audience review |
-| Monthly | Full performance analysis, budget reallocation |
-| Quarterly | Strategy review, platform mix evaluation, QBR |
+| Frequency         | Action                                               |
+|-------------------|------------------------------------------------------|
+| Daily             | Spend pacing check, anomaly detection                |
+| 2x/week           | Bid adjustments, creative performance review         |
+| Weekly            | Search term review, negative keyword updates         |
+| Bi-weekly         | Creative refresh assessment, audience review         |
+| Monthly           | Full performance analysis, budget reallocation       |
+| Quarterly         | Strategy review, platform mix evaluation, QBR        |
 
 ### LinkedIn Accelerate (for B2B Clients)
 - Auto-optimized campaigns with 42% lower CPA and 21% lower CPL (LinkedIn benchmarks)

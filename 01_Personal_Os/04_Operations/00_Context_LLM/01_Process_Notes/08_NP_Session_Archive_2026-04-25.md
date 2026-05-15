@@ -50,32 +50,32 @@ R20 — Agent sync — drift ZERO            ✅ PASS
 
 ### 1. Dependencias Actualizadas
 
-| Dependencia         | Versión Anterior        | Versión Nueva         | Estado              |
-|---------------------|-------------------------|-----------------------|---------------------|
-| gga                 | v2.8.1                  | v2.8.1                | ✅ YA ESTABA         |
-| engram              | 1.12.0                  | 1.13.1                | ✅ ACTUALIZADO       |
-| gentle-ai           | 1.21.0                  | 1.23.0                | ✅ ACTUALIZADO       |
+| Dependencia                 | Versión Anterior                | Versión Nueva                 | Estado                      |
+|-----------------------------|---------------------------------|-------------------------------|-----------------------------|
+| gga                         | v2.8.1                          | v2.8.1                        | ✅ YA ESTABA                 |
+| engram                      | 1.12.0                          | 1.13.1                        | ✅ ACTUALIZADO               |
+| gentle-ai                   | 1.21.0                          | 1.23.0                        | ✅ ACTUALIZADO               |
 
 ### 2. opencode-subagent-statusline (G8) — INSTALADO
 
-| Paso                          | Estado                                                  |
-|-------------------------------|---------------------------------------------------------|
-| npm install global            | ✅ Completado                                            |
-| Repo clonado en Archive       | ✅ `07_Repos_Gentleman/sub-agent-statusline/`            |
-| Config tui.json               | ✅ Plugin agregado a `~/.config/opencode/tui.json`       |
+| Paso                                  | Estado                                                          |
+|---------------------------------------|-----------------------------------------------------------------|
+| npm install global                    | ✅ Completado                                                    |
+| Repo clonado en Archive               | ✅ `07_Repos_Gentleman/sub-agent-statusline/`                    |
+| Config tui.json                       | ✅ Plugin agregado a `~/.config/opencode/tui.json`               |
 
 **Repo:** `Joaquinvesapa/sub-agent-statusline` — 32 stars, 6 forks
 **Funcionalidad:** Monitor Sidebar en OpenCode para tracking de subagentes (running, done, failed, elapsed, tokens)
 
 ### 3. TubeMaster — REPO CLONADO
 
-| Dato                | Valor                                      |
-|---------------------|--------------------------------------------|
-| **Repo**            | `Gentleman-Programming/tubemaster`         |
-| **Ubicación**       | `07_Repos_Gentleman/tubemaster/`           |
-| **Stars**           | 9 ⭐                                        |
-| **License**         | MIT                                        |
-| **Stack**           | TypeScript, Next.js 15, Tailwind CSS       |
+| Dato                        | Valor                                              |
+|-----------------------------|----------------------------------------------------|
+| **Repo**                    | `Gentleman-Programming/tubemaster`                 |
+| **Ubicación**               | `07_Repos_Gentleman/tubemaster/`                   |
+| **Stars**                   | 9 ⭐                                                |
+| **License**                 | MIT                                                |
+| **Stack**                   | TypeScript, Next.js 15, Tailwind CSS               |
 
 **Funcionalidades:**
 - Auth once → operate end-to-end: videos, metadata, transcripts, playlists, rules
@@ -101,14 +101,14 @@ Cloud status: not configured
 
 ## 📊 Métricas Finales
 
-| Métrica                            | Antes         | Ahora                          |
-|------------------------------------|---------------|--------------------------------|
-| Health Test                        | 15/15         | ✅ 15/15                        |
-| Runtime Test                       | 20/20         | ✅ 20/20                        |
-| Deps actualizadas                  | parcial       | ✅ gga, engram, gentle-ai       |
-| opencode-subagent-statusline       | no            | ✅ instalado                    |
-| TubeMaster repo                    | no            | ✅ clonado                      |
-| Engram Cloud                       | no            | ⚠️ not configured              |
+| Métrica                                    | Antes                 | Ahora                                  |
+|--------------------------------------------|-----------------------|----------------------------------------|
+| Health Test                                | 15/15                 | ✅ 15/15                                |
+| Runtime Test                               | 20/20                 | ✅ 20/20                                |
+| Deps actualizadas                          | parcial               | ✅ gga, engram, gentle-ai               |
+| opencode-subagent-statusline               | no                    | ✅ instalado                            |
+| TubeMaster repo                            | no                    | ✅ clonado                              |
+| Engram Cloud                               | no                    | ⚠️ not configured                      |
 
 ---
 
@@ -153,12 +153,12 @@ Cloud status: not configured
 
 ## 📁 Archivos Modificados/Actualizados
 
-| Archivo                                                                | Cambio                                                  |
-|------------------------------------------------------------------------|---------------------------------------------------------|
-| `00_PLAN_BLINDAJE_OS_SOTA.md`                                          | Actualizado con estado actual y nuevos pendientes       |
-| `01_Personal_Os/05_Archive/07_Repos_Gentleman/EXTERNAL_REPOS.md`       | Agregado TubeMaster y sub-agent-statusline              |
-| `~/.config/opencode/tui.json`                                          | Agregado plugin opencode-subagent-statusline            |
-| `.git/hooks/pre-commit`                                                | Verificado — Secret Scanner → GGA funcionando           |
+| Archivo                                                                        | Cambio                                                          |
+|--------------------------------------------------------------------------------|-----------------------------------------------------------------|
+| `00_PLAN_BLINDAJE_OS_SOTA.md`                                                  | Actualizado con estado actual y nuevos pendientes               |
+| `01_Personal_Os/05_Archive/07_Repos_Gentleman/EXTERNAL_REPOS.md`               | Agregado TubeMaster y sub-agent-statusline                      |
+| `~/.config/opencode/tui.json`                                                  | Agregado plugin opencode-subagent-statusline                    |
+| `.git/hooks/pre-commit`                                                        | Verificado — Secret Scanner → GGA funcionando                   |
 
 ---
 

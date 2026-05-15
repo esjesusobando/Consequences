@@ -14,11 +14,11 @@ Guide for contributors and developers working on Gentleman.Dots.
 
 ### Requirements
 
-| Tool                   | Version                   | Purpose                             |
-|------------------------|---------------------------|-------------------------------------|
-| Go                     | 1.21+                     | Build the installer                 |
-| Docker                 | Latest                    | Run E2E tests                       |
-| Git                    | Latest                    | Version control                     |
+| Tool                           | Version                           | Purpose                                     |
+|--------------------------------|-----------------------------------|---------------------------------------------|
+| Go                             | 1.21+                             | Build the installer                         |
+| Docker                         | Latest                            | Run E2E tests                               |
+| Git                            | Latest                            | Version control                             |
 
 ### Build from Source
 
@@ -87,9 +87,9 @@ The repository uses a skills system to provide context to AI assistants (Claude,
 
 ### Skill Types
 
-| Type                              | Location                   | Purpose                                                      |
-|-----------------------------------|----------------------------|--------------------------------------------------------------|
-| Repository skills                 | `skills/`                  | For this codebase (bubbletea, trainer, etc.)                 |
+| Type                                      | Location                           | Purpose                                                              |
+|-------------------------------------------|------------------------------------|----------------------------------------------------------------------|
+| Repository skills                         | `skills/`                          | For this codebase (bubbletea, trainer, etc.)                         |
 
 ### Creating a New Skill
 
@@ -127,13 +127,13 @@ cd installer/e2e
 
 ### Test Environments
 
-| Environment                   | Shell                   | Package Manager                   | Tests                                   |
-|-------------------------------|-------------------------|-----------------------------------|-----------------------------------------|
-| Ubuntu                        | bash                    | apt + Homebrew                    | Full E2E + backup                       |
-| Debian                        | dash                    | apt + Homebrew                    | Basic + shell detection                 |
-| Fedora                        | bash                    | dnf                               | Full E2E                                |
-| Alpine                        | ash                     | apk                               | POSIX compatibility                     |
-| Termux                        | sh                      | pkg (simulated)                   | Android/Termux specific                 |
+| Environment                           | Shell                           | Package Manager                           | Tests                                           |
+|---------------------------------------|---------------------------------|-------------------------------------------|-------------------------------------------------|
+| Ubuntu                                | bash                            | apt + Homebrew                            | Full E2E + backup                               |
+| Debian                                | dash                            | apt + Homebrew                            | Basic + shell detection                         |
+| Fedora                                | bash                            | dnf                                       | Full E2E                                        |
+| Alpine                                | ash                             | apk                                       | POSIX compatibility                             |
+| Termux                                | sh                              | pkg (simulated)                           | Android/Termux specific                         |
 
 ### Adding Tests
 
@@ -192,11 +192,11 @@ shasum -a 256 installer/gentleman-installer-*
 
 ### Version Guidelines
 
-| Change Type                                | Version Bump                   | Example                   |
-|--------------------------------------------|--------------------------------|---------------------------|
-| New platform/major feature                 | Minor (x.Y.0)                  | v2.7.0                    |
-| Bug fixes, improvements                    | Patch (x.y.Z)                  | v2.6.2                    |
-| Breaking changes                           | Major (X.0.0)                  | v3.0.0                    |
+| Change Type                                        | Version Bump                           | Example                           |
+|----------------------------------------------------|----------------------------------------|-----------------------------------|
+| New platform/major feature                         | Minor (x.Y.0)                          | v2.7.0                            |
+| Bug fixes, improvements                            | Patch (x.y.Z)                          | v2.6.2                            |
+| Breaking changes                                   | Major (X.0.0)                          | v3.0.0                            |
 
 ## Code Style
 

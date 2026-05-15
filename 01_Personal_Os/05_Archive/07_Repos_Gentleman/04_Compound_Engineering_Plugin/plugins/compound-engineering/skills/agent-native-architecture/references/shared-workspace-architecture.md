@@ -511,11 +511,11 @@ For agent-native iOS apps, use iCloud Drive's Documents folder for your shared w
 
 ### Why iCloud Documents?
 
-| Approach                                | Cost                                    | Complexity                     | Offline                     | Multi-Device                     |
-|-----------------------------------------|-----------------------------------------|--------------------------------|-----------------------------|----------------------------------|
-| Custom backend + sync                   | $$$                                     | High                           | Manual                      | Yes                              |
-| CloudKit database                       | Free tier limits                        | Medium                         | Manual                      | Yes                              |
-| **iCloud Documents**                    | Free (user's storage)                   | Low                            | Automatic                   | Automatic                        |
+| Approach                                        | Cost                                            | Complexity                             | Offline                             | Multi-Device                             |
+|-------------------------------------------------|-------------------------------------------------|----------------------------------------|-------------------------------------|------------------------------------------|
+| Custom backend + sync                           | $$$                                             | High                                   | Manual                              | Yes                                      |
+| CloudKit database                               | Free tier limits                                | Medium                                 | Manual                              | Yes                                      |
+| **iCloud Documents**                            | Free (user's storage)                           | Low                                    | Automatic                           | Automatic                                |
 
 iCloud Documents:
 - Uses user's existing iCloud storage (free 5GB, most users have more)

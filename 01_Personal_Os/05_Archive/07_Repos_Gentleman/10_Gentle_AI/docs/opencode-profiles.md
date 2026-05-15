@@ -52,11 +52,11 @@ This creates a "cheap" profile where everything runs on Haiku except `sdd-apply`
 
 After creating profiles, each one appears as a selectable orchestrator in OpenCode:
 
-| What you see in Tab                        | What it runs                                           |
-|--------------------------------------------|--------------------------------------------------------|
-| `sdd-orchestrator`                         | Default profile (your original config)                 |
-| `sdd-orchestrator-cheap`                   | "cheap" profile -- Haiku everywhere                    |
-| `sdd-orchestrator-premium`                 | "premium" profile -- Opus everywhere                   |
+| What you see in Tab                                | What it runs                                                   |
+|----------------------------------------------------|----------------------------------------------------------------|
+| `sdd-orchestrator`                                 | Default profile (your original config)                         |
+| `sdd-orchestrator-cheap`                           | "cheap" profile -- Haiku everywhere                            |
+| `sdd-orchestrator-premium`                         | "premium" profile -- Opus everywhere                           |
 
 Press **Tab** to cycle between orchestrators. All SDD slash commands (`/sdd-new`, `/sdd-ff`, `/sdd-explore`, etc.) run against whichever orchestrator is currently selected. The orchestrator delegates to its own suffixed sub-agents (e.g., `sdd-apply-cheap`), so profiles never interfere with each other.
 
@@ -64,23 +64,23 @@ Press **Tab** to cycle between orchestrators. All SDD slash commands (`/sdd-new`
 
 From the TUI profile list screen:
 
-| Action                               | Key                                                  | Notes                                                           |
-|--------------------------------------|------------------------------------------------------|-----------------------------------------------------------------|
-| Edit a profile                       | `Enter` on the profile                               | Change models, then sync                                        |
-| Delete a profile                     | `d` on the profile                                   | Removes orchestrator + all sub-agents from JSON                 |
-| Create a new profile                 | `n` (or select "Create new profile")                 | Full creation flow                                              |
+| Action                                       | Key                                                          | Notes                                                                   |
+|----------------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------------------|
+| Edit a profile                               | `Enter` on the profile                                       | Change models, then sync                                                |
+| Delete a profile                             | `d` on the profile                                           | Removes orchestrator + all sub-agents from JSON                         |
+| Create a new profile                         | `n` (or select "Create new profile")                         | Full creation flow                                                      |
 
 The `default` profile (the unsuffixed `sdd-orchestrator`) can be edited but not deleted -- it always exists when SDD is configured.
 
 ### Profile name rules
 
-| Input                        | Valid?                         | Reason                                             |
-|------------------------------|--------------------------------|----------------------------------------------------|
-| `cheap`                      | Yes                            | Simple slug                                        |
-| `premium-v2`                 | Yes                            | Hyphens allowed                                    |
-| `my profile`                 | No                             | Spaces not allowed                                 |
-| `default`                    | No                             | Reserved for the base orchestrator                 |
-| `LOUD`                       | Becomes `loud`                 | Auto-lowercased                                    |
+| Input                                | Valid?                                 | Reason                                                     |
+|--------------------------------------|----------------------------------------|------------------------------------------------------------|
+| `cheap`                              | Yes                                    | Simple slug                                                |
+| `premium-v2`                         | Yes                                    | Hyphens allowed                                            |
+| `my profile`                         | No                                     | Spaces not allowed                                         |
+| `default`                            | No                                     | Reserved for the base orchestrator                         |
+| `LOUD`                               | Becomes `loud`                         | Auto-lowercased                                            |
 
 ---
 

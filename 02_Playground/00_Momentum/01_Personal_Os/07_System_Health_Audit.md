@@ -78,14 +78,14 @@ git log --oneline -5
 
 ## Criterios de Pure Green
 
-| Check                                   | Estado esperado                      |
-|-----------------------------------------|--------------------------------------|
-| Referencias rotas                       | 0                                    |
-| Scripts en inventario                   | 38 (o actualizado)                   |
-| Carpetas 00-06                          | Todas presentes                      |
-| Reglas `.mdc` válidas                   | 100%                                 |
-| Git status                              | Clean                                |
-| Dependencias Python                     | OK                                   |
+| Check                                           | Estado esperado                              |
+|-------------------------------------------------|----------------------------------------------|
+| Referencias rotas                               | 0                                            |
+| Scripts en inventario                           | 38 (o actualizado)                           |
+| Carpetas 00-06                                  | Todas presentes                              |
+| Reglas `.mdc` válidas                           | 100%                                         |
+| Git status                                      | Clean                                        |
+| Dependencias Python                             | OK                                           |
 
 ## Frecuencia recomendada
 

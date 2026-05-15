@@ -318,14 +318,14 @@ requestAnimationFrame(function tick(now) {
 
 ## 常见失败模式
 
-| 症状                  | 原因                                       | 解法                                      |
-|---------------------|------------------------------------------|-----------------------------------------|
-| 看起来像 PPT 模板         | 卡片没有 shadow / hairline                   | 加上两层 box-shadow + 1px border            |
-| 倾斜感廉价               | 只用了 rotateY 没加 rotateZ                   | 加 ±2-3deg rotateZ 打破工整                  |
-| Pan 感觉「卡顿」          | 用了 setTimeout 或 CSS keyframes 循环         | 用 rAF + sin/cos 连续函数                    |
-| Focus 时字看不清         | 复用了 gallery 瓦片的低分图                       | 独立 overlay + 原图 src 直连                  |
-| 背景太空                | 纯色 `#F5F5F7`                             | 叠加 SVG fractalNoise 0.5 opacity         |
-| 字体太"互联网"            | 只有 Inter                                 | 加 Serif（中英各一）+ mono 三栈                  |
+| 症状                          | 原因                                               | 解法                                              |
+|-----------------------------|--------------------------------------------------|-------------------------------------------------|
+| 看起来像 PPT 模板                 | 卡片没有 shadow / hairline                           | 加上两层 box-shadow + 1px border                    |
+| 倾斜感廉价                       | 只用了 rotateY 没加 rotateZ                           | 加 ±2-3deg rotateZ 打破工整                          |
+| Pan 感觉「卡顿」                  | 用了 setTimeout 或 CSS keyframes 循环                 | 用 rAF + sin/cos 连续函数                            |
+| Focus 时字看不清                 | 复用了 gallery 瓦片的低分图                               | 独立 overlay + 原图 src 直连                          |
+| 背景太空                        | 纯色 `#F5F5F7`                                     | 叠加 SVG fractalNoise 0.5 opacity                 |
+| 字体太"互联网"                    | 只有 Inter                                         | 加 Serif（中英各一）+ mono 三栈                          |
 
 ---
 

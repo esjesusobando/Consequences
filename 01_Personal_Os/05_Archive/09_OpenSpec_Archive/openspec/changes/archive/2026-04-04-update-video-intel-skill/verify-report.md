@@ -17,17 +17,17 @@ Update to Video_Intel SKILL.md adding:
 
 ## Verification Status
 
-| Requirement                         | Status                   | Notes                                           |
-|-------------------------------------|--------------------------|-------------------------------------------------|
-| Engram Integration                  | ✅ PASS                   | topic_key: video-intel-skill                    |
-| 9-Step Workflow                     | ✅ PASS                   | All 9 steps documented                          |
-| Video Registry API                  | ✅ PASS                   | Corrected to use actual methods                 |
-| Knowledge Migration                 | ✅ PASS                   | Unicorn Engineering path                        |
-| Gotchas (12 items)                  | ✅ PASS                   | Lines 147-160                                   |
-| Components (5)                      | ✅ PASS                   | video_registry.py added                         |
-| CLI path fixed                      | ✅ PASS                   | Direct path to cli.py                           |
-| __init__.py export                  | ✅ PASS                   | VideoRegistry exported                          |
-| Line count                          | ✅ PASS                   | 181 lines (under 200)                           |
+| Requirement                                 | Status                           | Notes                                                   |
+|---------------------------------------------|----------------------------------|---------------------------------------------------------|
+| Engram Integration                          | ✅ PASS                           | topic_key: video-intel-skill                            |
+| 9-Step Workflow                             | ✅ PASS                           | All 9 steps documented                                  |
+| Video Registry API                          | ✅ PASS                           | Corrected to use actual methods                         |
+| Knowledge Migration                         | ✅ PASS                           | Unicorn Engineering path                                |
+| Gotchas (12 items)                          | ✅ PASS                           | Lines 147-160                                           |
+| Components (5)                              | ✅ PASS                           | video_registry.py added                                 |
+| CLI path fixed                              | ✅ PASS                           | Direct path to cli.py                                   |
+| __init__.py export                          | ✅ PASS                           | VideoRegistry exported                                  |
+| Line count                                  | ✅ PASS                           | 181 lines (under 200)                                   |
 
 ## Issues Found & Fixed
 
@@ -43,10 +43,10 @@ Update to Video_Intel SKILL.md adding:
 
 ## Files Changed
 
-| File                                                                   | Action                                                |
-|------------------------------------------------------------------------|-------------------------------------------------------|
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/SKILL.md`    | Modified                                              |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/__init__.py` | Modified (added VideoRegistry export)                 |
+| File                                                                           | Action                                                        |
+|--------------------------------------------------------------------------------|---------------------------------------------------------------|
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/SKILL.md`            | Modified                                                      |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/19_Video_Intel/__init__.py`         | Modified (added VideoRegistry export)                         |
 
 ## Archive Location
 

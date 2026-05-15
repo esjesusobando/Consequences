@@ -78,12 +78,12 @@ Update Template:
 
 ## Common Coordination Tools
 
-| Tool                                    | Use Case                                                    |
-|-----------------------------------------|-------------------------------------------------------------|
-| Async standups                          | Remote teams, time zone differences                         |
-| Weekly syncs                            | Team alignment                                              |
-| Monthly reviews                         | Retrospective and planning                                  |
-| All-hands                               | Company-wide communication                                  |
+| Tool                                            | Use Case                                                            |
+|-------------------------------------------------|---------------------------------------------------------------------|
+| Async standups                                  | Remote teams, time zone differences                                 |
+| Weekly syncs                                    | Team alignment                                                      |
+| Monthly reviews                                 | Retrospective and planning                                          |
+| All-hands                                       | Company-wide communication                                          |
 
 ---
 

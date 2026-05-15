@@ -8,16 +8,16 @@ Este documento contiene el reporte completo del webinar impartido por **Laya Gra
 
 ## Informacion del Video
 
-| Campo                              | Detalle                                                                                                 |
-|------------------------------------|---------------------------------------------------------------------------------------------------------|
-| **Titulo**                         | Creative Heroes Workshop — "Haz que tus ideas cobren vida gracias a la IA Generativa"                   |
-| **Presentadora**                   | Laya Grasi                                                                                              |
-| **Cargo**                          | Diretora Creativa en Inteligencia Artificial Generativa                                                 |
-| **Organizacion**                   | Learning Heroes (Academia de IA para industrias creativas)                                              |
-| **Duracion**                       | ~1 hora                                                                                                 |
-| **Fecha**                          | Febrero 2025                                                                                            |
-| **Idioma**                         | Espanol                                                                                                 |
-| **URL**                            | https://www.youtube.com/watch?v=5v0Jj6s3DdA                                                             |
+| Campo                                      | Detalle                                                                                                         |
+|--------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| **Titulo**                                 | Creative Heroes Workshop — "Haz que tus ideas cobren vida gracias a la IA Generativa"                           |
+| **Presentadora**                           | Laya Grasi                                                                                                      |
+| **Cargo**                                  | Diretora Creativa en Inteligencia Artificial Generativa                                                         |
+| **Organizacion**                           | Learning Heroes (Academia de IA para industrias creativas)                                                      |
+| **Duracion**                               | ~1 hora                                                                                                         |
+| **Fecha**                                  | Febrero 2025                                                                                                    |
+| **Idioma**                                 | Espanol                                                                                                         |
+| **URL**                                    | https://www.youtube.com/watch?v=5v0Jj6s3DdA                                                                     |
 
 ---
 

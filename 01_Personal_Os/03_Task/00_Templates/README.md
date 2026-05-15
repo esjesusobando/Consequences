@@ -8,14 +8,14 @@
 
 ## 📋 Plantillas Disponibles
 
-| Plantilla                                                | Uso                                                  | Secciones                              | Esfuerzo                           |
-|----------------------------------------------------------|------------------------------------------------------|----------------------------------------|------------------------------------|
-| **03_Task_Template_SOTA.md**                             | Tareas complejas, producción                         | 14 + SDD + GGA                         | 1-8 horas                          |
-| **04_Task_Template_Medio.md**                            | Features estándar                                    | 12                                     | 1-4 horas                          |
-| **05_Task_Template_Corto.md**                            | Quick fixes, tareas simples                          | 5                                      | 30min-2h                           |
-| **00_Task_Template_Skeleton.md**                         | Referencia completa                                  | 13                                     | —                                  |
-| **01_ai_task_template.md**                               | ShipKit Original                                     | 14                                     | —                                  |
-| **02_process_note_template.md**                          | Session Notes                                        | 6                                      | —                                  |
+| Plantilla                                                        | Uso                                                          | Secciones                                      | Esfuerzo                                   |
+|------------------------------------------------------------------|--------------------------------------------------------------|------------------------------------------------|--------------------------------------------|
+| **03_Task_Template_SOTA.md**                                     | Tareas complejas, producción                                 | 14 + SDD + GGA                                 | 1-8 horas                                  |
+| **04_Task_Template_Medio.md**                                    | Features estándar                                            | 12                                             | 1-4 horas                                  |
+| **05_Task_Template_Corto.md**                                    | Quick fixes, tareas simples                                  | 5                                              | 30min-2h                                   |
+| **00_Task_Template_Skeleton.md**                                 | Referencia completa                                          | 13                                             | —                                          |
+| **01_ai_task_template.md**                                       | ShipKit Original                                             | 14                                             | —                                          |
+| **02_process_note_template.md**                                  | Session Notes                                                | 6                                              | —                                          |
 
 - --
 
@@ -23,12 +23,12 @@
 
 ### ¿Cuál usar?
 
-| Situación                                        | Plantilla                                |
-|--------------------------------------------------|------------------------------------------|
-| Nuevo feature grande                             | **SOTA**                                 |
-| Feature medio                                    | **Medio**                                |
-| Bug fix, refactor rápido                         | **Corto**                                |
-| Documentar sesión                                | **process_note**                         |
+| Situación                                                | Plantilla                                        |
+|----------------------------------------------------------|--------------------------------------------------|
+| Nuevo feature grande                                     | **SOTA**                                         |
+| Feature medio                                            | **Medio**                                        |
+| Bug fix, refactor rápido                                 | **Corto**                                        |
+| Documentar sesión                                        | **process_note**                                 |
 
 ### Flujo Recomendado
 

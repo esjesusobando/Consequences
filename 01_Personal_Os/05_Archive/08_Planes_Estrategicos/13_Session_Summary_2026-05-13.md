@@ -9,11 +9,11 @@ Auditoría completa del proyecto, corrección de drifts, configuración MiniMax,
 
 ### 1. Configuración MiniMax (OpenCode + Claude Code)
 
-| Entorno | Config | Estado |
-|---------|--------|--------|
-| **OpenCode** | `~/.config/opencode/opencode.json` con provider minimax | ✅ Listo |
-| **Claude Code** | `~/.claude/settings.json` con ANTHROPIC_BASE_URL | ✅ Listo |
-| **Regla 11_Minimax** | Creada en `01_Personal_Os/01_Core/01_Rules/11_Minimax.mdc` | ✅ Documentada |
+| Entorno                    | Config                                                           | Estado              |
+|----------------------------|------------------------------------------------------------------|---------------------|
+| **OpenCode**               | `~/.config/opencode/opencode.json` con provider minimax          | ✅ Listo             |
+| **Claude Code**            | `~/.claude/settings.json` con ANTHROPIC_BASE_URL                 | ✅ Listo             |
+| **Regla 11_Minimax**       | Creada en `01_Personal_Os/01_Core/01_Rules/11_Minimax.mdc`       | ✅ Documentada       |
 
 ### 2. Actualización de Engram
 
@@ -23,20 +23,20 @@ Auditoría completa del proyecto, corrección de drifts, configuración MiniMax,
 
 ### 3. OpenCode Plugins
 
-| Plugin | Estado |
-|--------|--------|
-| **subagent-statusline** | ✅ Instalado globalmente (`npm list -g` = 0.3.0) |
-| **tui.json config** | ✅ Configurado con plugin |
+| Plugin                        | Estado                                                |
+|-------------------------------|-------------------------------------------------------|
+| **subagent-statusline**       | ✅ Instalado globalmente (`npm list -g` = 0.3.0)       |
+| **tui.json config**           | ✅ Configurado con plugin                              |
 
 ### 4. Correcciones de Documentación
 
-| Archivo | Cambio | Estado |
-|---------|--------|--------|
-| `OS_DIRECTORY.md` | Rules: 11 → 12 | ✅ Corregido |
-| `CLAUDE.md` | Rules: 11 → 12 | ✅ Corregido |
-| `RULES_INDEX.md` | Agregada regla 11_Minimax, total: 12 | ✅ Corregido |
-| `00_Winter_is_Coming/AGENTS.md` | MCP count: 38 → 36 | ✅ Corregido |
-| `README.md` | Rules: 11 → 12 | ✅ Corregido |
+| Archivo                               | Cambio                                     | Estado            |
+|---------------------------------------|--------------------------------------------|-------------------|
+| `OS_DIRECTORY.md`                     | Rules: 11 → 12                             | ✅ Corregido       |
+| `CLAUDE.md`                           | Rules: 11 → 12                             | ✅ Corregido       |
+| `RULES_INDEX.md`                      | Agregada regla 11_Minimax, total: 12       | ✅ Corregido       |
+| `00_Winter_is_Coming/AGENTS.md`       | MCP count: 38 → 36                         | ✅ Corregido       |
+| `README.md`                           | Rules: 11 → 12                             | ✅ Corregido       |
 
 ### 5. Proceso de Notas
 
@@ -44,11 +44,11 @@ Auditoría completa del proyecto, corrección de drifts, configuración MiniMax,
 
 ### 6. Git Commits
 
-| Commit | Descripción |
-|--------|-------------|
-| `3089bb2f` | feat: add 11_Minimax rule and fix rules count across docs |
-| `dc54b37f` | Sync from Desktop Think_Different - 2026-05-13 |
-| `bba978cf` | Claude I (manifests audit) |
+| Commit           | Descripción                                                     |
+|------------------|-----------------------------------------------------------------|
+| `3089bb2f`       | feat: add 11_Minimax rule and fix rules count across docs       |
+| `dc54b37f`       | Sync from Desktop Think_Different - 2026-05-13                  |
+| `bba978cf`       | Claude I (manifests audit)                                      |
 
 ### 7. Git Push
 
@@ -66,10 +66,10 @@ sk-cp-V_qGs0y5PwxDimHzxkaf62oEYq40x7otToq_e-_kNV7n1bgP21SMYRvS17E3ZEgxdJvVGwUl1l
 - **Status:** ✅ Validada con curl test
 
 ### Endpoints
-| Entorno | Endpoint |
-|---------|----------|
-| OpenCode | `https://api.minimaxi.com/anthropic` |
-| Claude Code | `https://api.minimax.io/anthropic` (internacional) |
+| Entorno           | Endpoint                                                 |
+|-------------------|----------------------------------------------------------|
+| OpenCode          | `https://api.minimaxi.com/anthropic`                     |
+| Claude Code       | `https://api.minimax.io/anthropic` (internacional)       |
 
 ### Error 401 Resuelto
 - **Causa:** Endpoint equivocado para región

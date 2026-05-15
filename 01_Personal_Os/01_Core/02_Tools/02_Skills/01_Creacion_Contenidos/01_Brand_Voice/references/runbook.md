@@ -2,13 +2,13 @@
 
 ## Cuándo Usar Esta Skill
 
-| Situación                                                           | Trigger                                            | Acción                                                                                   |
-|---------------------------------------------------------------------|----------------------------------------------------|------------------------------------------------------------------------------------------|
-| Usuario pide revisar si suena a él                                  | "¿esto suena como yo?"                             | Paso 3: Aplicar filtro de voz                                                            |
-| Usuario quiere que agent escriba en su estilo                       | "escribe en mi estilo"                             | Paso 1: Extraer voz (si hay contenido) o Paso 2: Construir tarjeta                       |
-| Usuario pega contenido para análisis                                | [pega posts/captions]                              | Paso 1: Extraer las 6 dimensiones                                                        |
-| Usuario dice que suene muy a IA                                     | "suena a IA", "muy genérico"                       | Paso 3: Revisión Aprobado/Rechazado                                                      |
-| Usuario lanza contenido nuevo                                       | [entrega contenido nuevo]                          | Paso 4: Verificación de consistencia                                                     |
+| Situación                                                                   | Trigger                                                    | Acción                                                                                           |
+|-----------------------------------------------------------------------------|------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| Usuario pide revisar si suena a él                                          | "¿esto suena como yo?"                                     | Paso 3: Aplicar filtro de voz                                                                    |
+| Usuario quiere que agent escriba en su estilo                               | "escribe en mi estilo"                                     | Paso 1: Extraer voz (si hay contenido) o Paso 2: Construir tarjeta                               |
+| Usuario pega contenido para análisis                                        | [pega posts/captions]                                      | Paso 1: Extraer las 6 dimensiones                                                                |
+| Usuario dice que suene muy a IA                                             | "suena a IA", "muy genérico"                               | Paso 3: Revisión Aprobado/Rechazado                                                              |
+| Usuario lanza contenido nuevo                                               | [entrega contenido nuevo]                                  | Paso 4: Verificación de consistencia                                                             |
 
 ---
 
@@ -76,11 +76,11 @@ Para reutilizar en futuras sesiones.
 
 ## Integración con Otras Skills
 
-| Skill                                       | Cómo se complementan                                            |
-|---------------------------------------------|-----------------------------------------------------------------|
-| offer-and-bio-writer                        | Usar tarjeta de voz antes de escribir bio                       |
-| content-ideation                            | Aplicar voz al generar ideas                                    |
-| brand-voice-generator                       | Si no hay voz, usar generator para crear                        |
+| Skill                                               | Cómo se complementan                                                    |
+|-----------------------------------------------------|-------------------------------------------------------------------------|
+| offer-and-bio-writer                                | Usar tarjeta de voz antes de escribir bio                               |
+| content-ideation                                    | Aplicar voz al generar ideas                                            |
+| brand-voice-generator                               | Si no hay voz, usar generator para crear                                |
 
 ## Quick Reference
 

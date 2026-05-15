@@ -51,13 +51,13 @@ document.addEventListener("turbo:morph-element", (event) => {
 
 **Common issues and solutions:**
 
-| Problem                                 | Solution                                                         |
-|-----------------------------------------|------------------------------------------------------------------|
-| Timers not updating                     | Clear/restart in morph event listener                            |
-| Forms resetting                         | Wrap form sections in turbo frames                               |
-| Pagination breaking                     | Use turbo frames with `refresh: :morph`                          |
-| Flickering on replace                   | Switch to morph instead of replace                               |
-| localStorage loss                       | Listen to `turbo:morph-element`, restore state                   |
+| Problem                                         | Solution                                                                 |
+|-------------------------------------------------|--------------------------------------------------------------------------|
+| Timers not updating                             | Clear/restart in morph event listener                                    |
+| Forms resetting                                 | Wrap form sections in turbo frames                                       |
+| Pagination breaking                             | Use turbo frames with `refresh: :morph`                                  |
+| Flickering on replace                           | Switch to morph instead of replace                                       |
+| localStorage loss                               | Listen to `turbo:morph-element`, restore state                           |
 </turbo_morphing>
 
 <turbo_frames>

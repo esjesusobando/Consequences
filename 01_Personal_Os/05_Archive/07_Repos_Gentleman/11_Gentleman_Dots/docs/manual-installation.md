@@ -83,11 +83,11 @@ sudo apt-get upgrade
 
 Choose one of the following:
 
-| Terminal                      | Download                                                                           | Notes                                                            |
-|-------------------------------|------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| **Alacritty**                 | [GitHub Releases](https://github.com/alacritty/alacritty/releases)                 | Lightweight, GPU-accelerated                                     |
-| **WezTerm**                   | [Official Site](https://wezfurlong.org/wezterm/installation.html)                  | Create `HOME` env var → `C:\Users\your-username`                 |
-| **Kitty**                     | [Official Site](https://sw.kovidgoyal.net/kitty/#get-the-app)                      | Feature-rich, GPU-based                                          |
+| Terminal                              | Download                                                                                   | Notes                                                                    |
+|---------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| **Alacritty**                         | [GitHub Releases](https://github.com/alacritty/alacritty/releases)                         | Lightweight, GPU-accelerated                                             |
+| **WezTerm**                           | [Official Site](https://wezfurlong.org/wezterm/installation.html)                          | Create `HOME` env var → `C:\Users\your-username`                         |
+| **Kitty**                             | [Official Site](https://sw.kovidgoyal.net/kitty/#get-the-app)                              | Feature-rich, GPU-based                                                  |
 
 ### 6. Configure Terminal Emulator
 
@@ -347,12 +347,12 @@ cp -r GentlemanZellij/zellij/* ~/.config/zellij/
 
 If you chose Zellij instead of Tmux, update your shell configuration:
 
-| Shell                           | Config File                                                       | Change                                                                  |
-|---------------------------------|-------------------------------------------------------------------|-------------------------------------------------------------------------|
-| Zsh                             | `~/.zshrc`                                                        | Replace `TMUX` → `ZELLIJ` and `tmux` → `zellij`                         |
-| Fish                            | `~/.config/fish/config.fish`                                      | Replace `TMUX` → `ZELLIJ` and `tmux` → `zellij`                         |
-| Nushell (Linux)                 | `~/.config/nushell/config.nu`                                     | Replace `"tmux"` → `"zellij"` and `"TMUX"` → `"ZELLIJ"`                 |
-| Nushell (macOS)                 | `~/Library/Application Support/nushell/config.nu`                 | Same as above                                                           |
+| Shell                                   | Config File                                                               | Change                                                                          |
+|-----------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| Zsh                                     | `~/.zshrc`                                                                | Replace `TMUX` → `ZELLIJ` and `tmux` → `zellij`                                 |
+| Fish                                    | `~/.config/fish/config.fish`                                              | Replace `TMUX` → `ZELLIJ` and `tmux` → `zellij`                                 |
+| Nushell (Linux)                         | `~/.config/nushell/config.nu`                                             | Replace `"tmux"` → `"zellij"` and `"TMUX"` → `"ZELLIJ"`                         |
+| Nushell (macOS)                         | `~/Library/Application Support/nushell/config.nu`                         | Same as above                                                                   |
 
 ### 6. Install Neovim
 

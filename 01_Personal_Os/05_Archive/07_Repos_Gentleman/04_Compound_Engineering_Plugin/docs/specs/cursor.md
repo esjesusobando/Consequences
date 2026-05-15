@@ -12,16 +12,16 @@ https://docs.cursor.com/customize/model-context-protocol
 
 ## Config locations
 
-| Scope                                     | Path                                          |
-|-------------------------------------------|-----------------------------------------------|
-| Project rules                             | `.cursor/rules/*.mdc`                         |
-| Project commands                          | `.cursor/commands/*.md`                       |
-| Project skills                            | `.cursor/skills/*/SKILL.md`                   |
-| Project MCP                               | `.cursor/mcp.json`                            |
-| Project CLI permissions                   | `.cursor/cli.json`                            |
-| Global MCP                                | `~/.cursor/mcp.json`                          |
-| Global CLI config                         | `~/.cursor/cli-config.json`                   |
-| Legacy rules                              | `.cursorrules` (deprecated)                   |
+| Scope                                             | Path                                                  |
+|---------------------------------------------------|-------------------------------------------------------|
+| Project rules                                     | `.cursor/rules/*.mdc`                                 |
+| Project commands                                  | `.cursor/commands/*.md`                               |
+| Project skills                                    | `.cursor/skills/*/SKILL.md`                           |
+| Project MCP                                       | `.cursor/mcp.json`                                    |
+| Project CLI permissions                           | `.cursor/cli.json`                                    |
+| Global MCP                                        | `~/.cursor/mcp.json`                                  |
+| Global CLI config                                 | `~/.cursor/cli-config.json`                           |
+| Legacy rules                                      | `.cursorrules` (deprecated)                           |
 
 ## Rules (.mdc files)
 
@@ -29,12 +29,12 @@ https://docs.cursor.com/customize/model-context-protocol
 - Each rule has YAML frontmatter with three fields: `description`, `globs`, `alwaysApply`.
 - Rules have four activation types based on frontmatter configuration:
 
-| Type                              | `alwaysApply`                   | `globs`                   | `description`                   | Behavior                                                      |
-|-----------------------------------|---------------------------------|---------------------------|---------------------------------|---------------------------------------------------------------|
-| Always                            | `true`                          | ignored                   | optional                        | Included in every conversation                                |
-| Auto Attached                     | `false`                         | set                       | optional                        | Included when matching files are in context                   |
-| Agent Requested                   | `false`                         | empty                     | set                             | AI decides based on description relevance                     |
-| Manual                            | `false`                         | empty                     | empty                           | Only included via `@rule-name` mention                        |
+| Type                                      | `alwaysApply`                           | `globs`                           | `description`                           | Behavior                                                              |
+|-------------------------------------------|-----------------------------------------|-----------------------------------|-----------------------------------------|-----------------------------------------------------------------------|
+| Always                                    | `true`                                  | ignored                           | optional                                | Included in every conversation                                        |
+| Auto Attached                             | `false`                                 | set                               | optional                                | Included when matching files are in context                           |
+| Agent Requested                           | `false`                                 | empty                             | set                                     | AI decides based on description relevance                             |
+| Manual                                    | `false`                                 | empty                             | empty                                   | Only included via `@rule-name` mention                                |
 
 - Precedence: Team Rules > Project Rules > User Rules > Legacy `.cursorrules` > `01_Personal_Os/11_AGENTS.md`.
 

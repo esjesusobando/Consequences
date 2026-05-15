@@ -52,49 +52,49 @@ pnpm web-dev
 ## 🔗 Skills Disponibles en Open Design
 
 ### 🎴 Presentaciones HTML
-| Skill                     | Descripción                 |
-|---------------------------|-----------------------------|
-| `html-ppt`                | Base de presentaciones HTML |
-| `html-ppt-pitch-deck`     | Pitch deck preset           |
-| `html-ppt-product-launch` | Product launch deck         |
-| `html-ppt-tech-sharing`   | Tech sharing                |
-| `html-ppt-weekly-report`  | Weekly report               |
-| `guizang-ppt`             | Magazine style              |
-| `simple-deck`             | Simple deck builder         |
+| Skill                             | Descripción                         |
+|-----------------------------------|-------------------------------------|
+| `html-ppt`                        | Base de presentaciones HTML         |
+| `html-ppt-pitch-deck`             | Pitch deck preset                   |
+| `html-ppt-product-launch`         | Product launch deck                 |
+| `html-ppt-tech-sharing`           | Tech sharing                        |
+| `html-ppt-weekly-report`          | Weekly report                       |
+| `guizang-ppt`                     | Magazine style                      |
+| `simple-deck`                     | Simple deck builder                 |
 
 ### 🌐 Prototipado Web
-| Skill                           | Descripción          |
-|---------------------------------|----------------------|
-| `web-prototype`                 | Prototipado web base |
-| `web-prototype-taste-brutalist` | Brutalist taste      |
-| `web-prototype-taste-editorial` | Editorial taste      |
-| `saas-landing`                  | SaaS landing page    |
-| `pricing-page`                  | Pricing page         |
-| `dashboard`                     | Dashboard layout     |
-| `mobile-app`                    | Mobile app prototype |
+| Skill                                   | Descripción                  |
+|-----------------------------------------|------------------------------|
+| `web-prototype`                         | Prototipado web base         |
+| `web-prototype-taste-brutalist`         | Brutalist taste              |
+| `web-prototype-taste-editorial`         | Editorial taste              |
+| `saas-landing`                          | SaaS landing page            |
+| `pricing-page`                          | Pricing page                 |
+| `dashboard`                             | Dashboard layout             |
+| `mobile-app`                            | Mobile app prototype         |
 
 ### 📝 Contenido & Docs
-| Skill             | Descripción          |
-|-------------------|----------------------|
-| `blog-post`       | Blog post generator  |
-| `docs-page`       | Documentation page   |
-| `pm-spec`         | PM specs / PRD       |
-| `eng-runbook`     | Engineering runbooks |
-| `email-marketing` | Email campaigns      |
+| Skill                     | Descripción                  |
+|---------------------------|------------------------------|
+| `blog-post`               | Blog post generator          |
+| `docs-page`               | Documentation page           |
+| `pm-spec`                 | PM specs / PRD               |
+| `eng-runbook`             | Engineering runbooks         |
+| `email-marketing`         | Email campaigns              |
 
 ### 🖼️ Imagen & Video
-| Skill              | Descripción       |
-|--------------------|-------------------|
-| `image-poster`     | Poster generation |
-| `motion-frames`    | Motion graphics   |
-| `sprite-animation` | Sprite animation  |
+| Skill                      | Descripción               |
+|----------------------------|---------------------------|
+| `image-poster`             | Poster generation         |
+| `motion-frames`            | Motion graphics           |
+| `sprite-animation`         | Sprite animation          |
 
 ### 🔍 Review & Critique
-| Skill                      | Descripción             |
-|----------------------------|-------------------------|
-| `critique`                 | Design critique         |
-| `tweaks`                   | Design tweaks iteration |
-| `pptx-html-fidelity-audit` | PPTX vs HTML audit      |
+| Skill                              | Descripción                     |
+|------------------------------------|---------------------------------|
+| `critique`                         | Design critique                 |
+| `tweaks`                           | Design tweaks iteration         |
+| `pptx-html-fidelity-audit`         | PPTX vs HTML audit              |
 
 ---
 
@@ -180,26 +180,26 @@ cd open-design && pnpm build
 
 ## 🔗 Integración con Tus Skills Existentes
 
-| Tu Skill             | Se Complementa Con Open Design        |
-|----------------------|---------------------------------------|
-| **Huashu Design**    | `web-prototype-*` para más prototipos |
-| **Dumbledor Design** | `critique`, `tweaks` para validación  |
-| **Frontend Slides**  | `html-ppt-*` para más presets         |
-| **Ui Ux Pro Max**    | `design-brief` para nuevos proyectos  |
-| **Taste Skill**      | `critique` para validación de diseño  |
+| Tu Skill                     | Se Complementa Con Open Design                |
+|------------------------------|-----------------------------------------------|
+| **Huashu Design**            | `web-prototype-*` para más prototipos         |
+| **Dumbledor Design**         | `critique`, `tweaks` para validación          |
+| **Frontend Slides**          | `html-ppt-*` para más presets                 |
+| **Ui Ux Pro Max**            | `design-brief` para nuevos proyectos          |
+| **Taste Skill**              | `critique` para validación de diseño          |
 
 ---
 
 ## 📊 Estado de Integración
 
-| Componente              | Estado   | Notas                             |
-|-------------------------|----------|-----------------------------------|
-| Submodule clonado       | ✅        | 2026-05-03                        |
-| Skills disponibles      | ✅        | 62 skills                         |
-| Design systems          | ✅        | 138 sistemas                      |
-| Daemon configurado      | ⏳        | Requiere `pnpm tools-dev`         |
-| Web UI deployada        | ⏳        | Requiere `pnpm web-dev`           |
-| Skills integradas al OS | ✅        | Ahora disponibles como referencia |
+| Componente                      | Estado           | Notas                                     |
+|---------------------------------|------------------|-------------------------------------------|
+| Submodule clonado               | ✅                | 2026-05-03                                |
+| Skills disponibles              | ✅                | 62 skills                                 |
+| Design systems                  | ✅                | 138 sistemas                              |
+| Daemon configurado              | ⏳                | Requiere `pnpm tools-dev`                 |
+| Web UI deployada                | ⏳                | Requiere `pnpm web-dev`                   |
+| Skills integradas al OS         | ✅                | Ahora disponibles como referencia         |
 
 ---
 

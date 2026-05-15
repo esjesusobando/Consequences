@@ -11,11 +11,11 @@ profile. Uses banana-claude as the image generation provider.
 
 ## Quick Reference
 
-| Command | What it does |
-|---------|-------------|
-| `/ads generate` | Generate all images from campaign-brief.md |
-| `/ads generate --platform meta` | Generate Meta assets only |
-| `/ads generate --prompt "text" --ratio 9:16` | Standalone generation without brief |
+| Command                                            | What it does                                     |
+|----------------------------------------------------|--------------------------------------------------|
+| `/ads generate`                                    | Generate all images from campaign-brief.md       |
+| `/ads generate --platform meta`                    | Generate Meta assets only                        |
+| `/ads generate --prompt "text" --ratio 9:16`       | Standalone generation without brief              |
 
 ## Environment Setup
 

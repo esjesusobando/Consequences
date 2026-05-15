@@ -8,14 +8,14 @@ Comprehensive catalog of n8n validation errors with real examples and fixes.
 
 Common validation errors by priority:
 
-| Error Type                                           | Priority                                   | Severity                                   | Auto-Fix                                   |
-|------------------------------------------------------|--------------------------------------------|--------------------------------------------|--------------------------------------------|
-| missing_required                                     | Highest                                    | Error                                      | ❌                                          |
-| invalid_value                                        | High                                       | Error                                      | ❌                                          |
-| type_mismatch                                        | Medium                                     | Error                                      | ❌                                          |
-| invalid_expression                                   | Medium                                     | Error                                      | ❌                                          |
-| invalid_reference                                    | Low                                        | Error                                      | ❌                                          |
-| operator_structure                                   | Lowest                                     | Warning                                    | ✅                                          |
+| Error Type                                                   | Priority                                           | Severity                                           | Auto-Fix                                           |
+|--------------------------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------------------------------------------|
+| missing_required                                             | Highest                                            | Error                                              | ❌                                                  |
+| invalid_value                                                | High                                               | Error                                              | ❌                                                  |
+| type_mismatch                                                | Medium                                             | Error                                              | ❌                                                  |
+| invalid_expression                                           | Medium                                             | Error                                              | ❌                                                  |
+| invalid_reference                                            | Low                                                | Error                                              | ❌                                                  |
+| operator_structure                                           | Lowest                                             | Warning                                            | ✅                                                  |
 
 ---
 

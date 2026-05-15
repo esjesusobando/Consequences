@@ -49,11 +49,11 @@ The plugin injects a strict protocol into every agent message:
 
 The OpenCode plugin uses a defense-in-depth strategy to ensure memories survive compaction:
 
-| Layer                               | Mechanism                                                                                                  | Survives Compaction?                    |
-|-------------------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| **System Prompt**                   | `MEMORY_INSTRUCTIONS` concatenated into existing system prompt via `chat.system.transform`                 | Always present                          |
-| **Compaction Hook**                 | Auto-saves checkpoint + injects context + reminds compressor                                               | Fires during compaction                 |
-| **Agent Config**                    | "After compaction, call `mem_context`" in agent prompt                                                     | Always present                          |
+| Layer                                       | Mechanism                                                                                                          | Survives Compaction?                            |
+|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
+| **System Prompt**                           | `MEMORY_INSTRUCTIONS` concatenated into existing system prompt via `chat.system.transform`                         | Always present                                  |
+| **Compaction Hook**                         | Auto-saves checkpoint + injects context + reminds compressor                                                       | Fires during compaction                         |
+| **Agent Config**                            | "After compaction, call `mem_context`" in agent prompt                                                             | Always present                                  |
 
 ---
 
@@ -75,14 +75,14 @@ claude --plugin-dir ./plugin/claude-code
 
 ### What the Plugin Provides (vs bare MCP)
 
-| Feature                                            | Bare MCP                   | Plugin                   |
-|----------------------------------------------------|----------------------------|--------------------------|
-| 13 memory tools                                    | ✓                          | ✓                        |
-| Session tracking (auto-start)                      | ✗                          | ✓                        |
-| Auto-import git-synced memories                    | ✗                          | ✓                        |
-| Compaction recovery                                | ✗                          | ✓                        |
-| Memory Protocol skill                              | ✗                          | ✓                        |
-| Previous session context injection                 | ✗                          | ✓                        |
+| Feature                                                    | Bare MCP                           | Plugin                           |
+|------------------------------------------------------------|------------------------------------|----------------------------------|
+| 13 memory tools                                            | ✓                                  | ✓                                |
+| Session tracking (auto-start)                              | ✗                                  | ✓                                |
+| Auto-import git-synced memories                            | ✗                                  | ✓                                |
+| Compaction recovery                                        | ✗                                  | ✓                                |
+| Memory Protocol skill                                      | ✗                                  | ✓                                |
+| Previous session context injection                         | ✗                                  | ✓                                |
 
 ### Plugin Structure
 

@@ -144,11 +144,11 @@ The orchestrating agent (main conversation) performs these steps:
 1. Collect all text results from Phase 1 subagents
 2. **Check the overlap assessment** from the Related Docs Finder before deciding what to write:
 
-| Overlap                                                                                         | Action                                                                                                                                                                                                                        |
-|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **High** — existing doc covers the same problem, root cause, and solution                       | **Update the existing doc** with fresher context (new code examples, updated references, additional prevention tips) rather than creating a duplicate. The existing doc's path and structure stay the same.                   |
-| **Moderate** — same problem area but different angle, root cause, or solution                   | **Create the new doc** normally. Flag the overlap for Phase 2.5 to recommend consolidation review.                                                                                                                            |
-| **Low or none**                                                                                 | **Create the new doc** normally.                                                                                                                                                                                              |
+| Overlap                                                                                                 | Action                                                                                                                                                                                                                                |
+|---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **High** — existing doc covers the same problem, root cause, and solution                               | **Update the existing doc** with fresher context (new code examples, updated references, additional prevention tips) rather than creating a duplicate. The existing doc's path and structure stay the same.                           |
+| **Moderate** — same problem area but different angle, root cause, or solution                           | **Create the new doc** normally. Flag the overlap for Phase 2.5 to recommend consolidation review.                                                                                                                                    |
+| **Low or none**                                                                                         | **Create the new doc** normally.                                                                                                                                                                                                      |
 
    The reason to update rather than create: two docs describing the same problem and solution will inevitably drift apart. The newer context is fresher and more trustworthy, so fold it into the existing doc rather than creating a second one that immediately needs consolidation.
 
@@ -310,12 +310,12 @@ In compact-safe mode, the overlap check is skipped (no Related Docs Finder subag
 
 ## Common Mistakes to Avoid
 
-| ❌ Wrong                                                                                 | ✅ Correct                                                                                |
-|-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Subagents write files like `context-analysis.md`, `solution-draft.md`                   | Subagents return text data; orchestrator writes one final file                           |
-| Research and assembly run in parallel                                                   | Research completes → then assembly runs                                                  |
-| Multiple files created during workflow                                                  | One file written or updated: `docs/solutions/[category]/[filename].md`                   |
-| Creating a new doc when an existing doc covers the same problem                         | Check overlap assessment; update the existing doc when overlap is high                   |
+| ❌ Wrong                                                                                         | ✅ Correct                                                                                        |
+|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| Subagents write files like `context-analysis.md`, `solution-draft.md`                           | Subagents return text data; orchestrator writes one final file                                   |
+| Research and assembly run in parallel                                                           | Research completes → then assembly runs                                                          |
+| Multiple files created during workflow                                                          | One file written or updated: `docs/solutions/[category]/[filename].md`                           |
+| Creating a new doc when an existing doc covers the same problem                                 | Check overlap assessment; update the existing doc when overlap is high                           |
 
 ## Success Output
 

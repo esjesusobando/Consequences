@@ -50,23 +50,23 @@ Auto-labels: `bug`, `status:needs-review`
 
 #### Required Fields
 
-| Field                                  | Description                                                                          |
-|----------------------------------------|--------------------------------------------------------------------------------------|
-| **Pre-flight Checks**                  | Checkboxes: no duplicate + understands approval workflow                             |
-| **Bug Description**                    | Clear description of the bug                                                         |
-| **Steps to Reproduce**                 | Numbered steps to reproduce                                                          |
-| **Expected Behavior**                  | What should have happened                                                            |
-| **Actual Behavior**                    | What happened instead (include errors/logs)                                          |
-| **Operating System**                   | Dropdown: macOS, Linux variants, Windows, WSL                                        |
-| **Engram Version**                     | Output of `engram version`                                                           |
-| **Agent / Client**                     | Dropdown: Claude Code, OpenCode, Gemini CLI, Cursor, Windsurf, Other                 |
+| Field                                          | Description                                                                                  |
+|------------------------------------------------|----------------------------------------------------------------------------------------------|
+| **Pre-flight Checks**                          | Checkboxes: no duplicate + understands approval workflow                                     |
+| **Bug Description**                            | Clear description of the bug                                                                 |
+| **Steps to Reproduce**                         | Numbered steps to reproduce                                                                  |
+| **Expected Behavior**                          | What should have happened                                                                    |
+| **Actual Behavior**                            | What happened instead (include errors/logs)                                                  |
+| **Operating System**                           | Dropdown: macOS, Linux variants, Windows, WSL                                                |
+| **Engram Version**                             | Output of `engram version`                                                                   |
+| **Agent / Client**                             | Dropdown: Claude Code, OpenCode, Gemini CLI, Cursor, Windsurf, Other                         |
 
 #### Optional Fields
 
-| Field                                  | Description                                               |
-|----------------------------------------|-----------------------------------------------------------|
-| **Relevant Logs**                      | Log output (auto-formatted as code block)                 |
-| **Additional Context**                 | Screenshots, workarounds, extra info                      |
+| Field                                          | Description                                                       |
+|------------------------------------------------|-------------------------------------------------------------------|
+| **Relevant Logs**                              | Log output (auto-formatted as code block)                         |
+| **Additional Context**                         | Screenshots, workarounds, extra info                              |
 
 #### Example — Bug Report via CLI
 
@@ -117,19 +117,19 @@ Auto-labels: `enhancement`, `status:needs-review`
 
 #### Required Fields
 
-| Field                                   | Description                                                                               |
-|-----------------------------------------|-------------------------------------------------------------------------------------------|
-| **Pre-flight Checks**                   | Checkboxes: no duplicate + understands approval workflow                                  |
-| **Problem Description**                 | The pain point this feature solves                                                        |
-| **Proposed Solution**                   | How it should work from the user's perspective                                            |
-| **Affected Area**                       | Dropdown: CLI, MCP Server, TUI, Store, Sync, Skills, Documentation, Other                 |
+| Field                                           | Description                                                                                       |
+|-------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| **Pre-flight Checks**                           | Checkboxes: no duplicate + understands approval workflow                                          |
+| **Problem Description**                         | The pain point this feature solves                                                                |
+| **Proposed Solution**                           | How it should work from the user's perspective                                                    |
+| **Affected Area**                               | Dropdown: CLI, MCP Server, TUI, Store, Sync, Skills, Documentation, Other                         |
 
 #### Optional Fields
 
-| Field                                       | Description                                     |
-|---------------------------------------------|-------------------------------------------------|
-| **Alternatives Considered**                 | Other approaches or workarounds                 |
-| **Additional Context**                      | Mockups, examples, references                   |
+| Field                                               | Description                                             |
+|-----------------------------------------------------|---------------------------------------------------------|
+| **Alternatives Considered**                         | Other approaches or workarounds                         |
+| **Additional Context**                              | Mockups, examples, references                           |
 
 #### Example — Feature Request via CLI
 
@@ -171,19 +171,19 @@ Using \`jq\` to parse the current output, but it's unreliable since the format i
 
 ### Applied Automatically on Issue Creation
 
-| Template                        | Labels added                                         |
-|---------------------------------|------------------------------------------------------|
-| Bug Report                      | `bug`, `status:needs-review`                         |
-| Feature Request                 | `enhancement`, `status:needs-review`                 |
+| Template                                | Labels added                                                 |
+|-----------------------------------------|--------------------------------------------------------------|
+| Bug Report                              | `bug`, `status:needs-review`                                 |
+| Feature Request                         | `enhancement`, `status:needs-review`                         |
 
 ### Applied by Maintainers
 
-| Label                             | When to apply                                                             |
-|-----------------------------------|---------------------------------------------------------------------------|
-| `status:approved`                 | Issue accepted for implementation — PRs can now be opened                 |
-| `priority:high`                   | Critical bug or urgent feature                                            |
-| `priority:medium`                 | Important but not blocking                                                |
-| `priority:low`                    | Nice to have                                                              |
+| Label                                     | When to apply                                                                     |
+|-------------------------------------------|-----------------------------------------------------------------------------------|
+| `status:approved`                         | Issue accepted for implementation — PRs can now be opened                         |
+| `priority:high`                           | Critical bug or urgent feature                                                    |
+| `priority:medium`                         | Important but not blocking                                                        |
+| `priority:low`                            | Nice to have                                                                      |
 
 ---
 

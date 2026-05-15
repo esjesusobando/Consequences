@@ -68,11 +68,11 @@ SELECT id, name, type FROM lookup_table ORDER BY id;
 
 For each destructive step:
 
-| Step                                      | Command                                      | Estimated Runtime                           | Batching                           | Rollback                                    |
-|-------------------------------------------|----------------------------------------------|---------------------------------------------|------------------------------------|---------------------------------------------|
-| 1. Add column                             | `rails db:migrate`                           | < 1 min                                     | N/A                                | Drop column                                 |
-| 2. Backfill data                          | `rake data:backfill`                         | ~10 min                                     | 1000 rows                          | Restore from backup                         |
-| 3. Enable feature                         | Set flag                                     | Instant                                     | N/A                                | Disable flag                                |
+| Step                                              | Command                                              | Estimated Runtime                                   | Batching                                   | Rollback                                            |
+|---------------------------------------------------|------------------------------------------------------|-----------------------------------------------------|--------------------------------------------|-----------------------------------------------------|
+| 1. Add column                                     | `rails db:migrate`                                   | < 1 min                                             | N/A                                        | Drop column                                         |
+| 2. Backfill data                                  | `rake data:backfill`                                 | ~10 min                                             | 1000 rows                                  | Restore from backup                                 |
+| 3. Enable feature                                 | Set flag                                             | Instant                                             | N/A                                        | Disable flag                                        |
 
 ### 4. Post-Deploy Verification (Within 5 Minutes)
 
@@ -109,11 +109,11 @@ SELECT status, COUNT(*) FROM records GROUP BY status;
 
 ### 6. Post-Deploy Monitoring (First 24 Hours)
 
-| Metric/Log                                 | Alert Condition                           | Dashboard Link                            |
-|--------------------------------------------|-------------------------------------------|-------------------------------------------|
-| Error rate                                 | > 1% for 5 min                            | /dashboard/errors                         |
-| Missing data count                         | > 0 for 5 min                             | /dashboard/data                           |
-| User reports                               | Any report                                | Support queue                             |
+| Metric/Log                                         | Alert Condition                                   | Dashboard Link                                    |
+|----------------------------------------------------|---------------------------------------------------|---------------------------------------------------|
+| Error rate                                         | > 1% for 5 min                                    | /dashboard/errors                                 |
+| Missing data count                                 | > 0 for 5 min                                     | /dashboard/data                                   |
+| User reports                                       | Any report                                        | Support queue                                     |
 
 **Sample console verification (run 1 hour after deploy):**
 ```ruby

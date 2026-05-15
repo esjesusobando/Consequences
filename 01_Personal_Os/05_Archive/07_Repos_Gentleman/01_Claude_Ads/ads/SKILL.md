@@ -13,28 +13,28 @@ LinkedIn, TikTok, Microsoft). Orchestrates 17 specialized sub-skills and
 
 ## Quick Reference
 
-| Command | What it does |
-|---------|-------------|
-| `/ads audit` | Full multi-platform audit with parallel subagent delegation |
-| `/ads google` | Google Ads deep analysis (Search, PMax, YouTube) |
-| `/ads meta` | Meta Ads deep analysis (FB, IG, Advantage+) |
-| `/ads youtube` | YouTube Ads specific analysis |
-| `/ads linkedin` | LinkedIn Ads deep analysis (B2B, Lead Gen) |
-| `/ads tiktok` | TikTok Ads deep analysis (Creative, Shop, Smart+) |
-| `/ads microsoft` | Microsoft/Bing Ads deep analysis (Copilot, Import) |
-| `/ads creative` | Cross-platform creative quality audit |
-| `/ads landing` | Landing page quality assessment for ad campaigns |
-| `/ads budget` | Budget allocation and bidding strategy review |
-| `/ads plan <business-type>` | Strategic ad plan with industry templates |
-| `/ads apple` | Apple Ads deep analysis |
-| `/ads competitor` | Competitor ad intelligence analysis |
-| `/ads math` | PPC financial calculator (CPA, ROAS, break-even, budget forecasting) |
-| `/ads test` | A/B test design (hypothesis, significance, duration, sample size) |
-| `/ads report` | PDF audit report generation for client deliverables |
-| `/ads dna <url>` | Extract brand DNA from website, outputs `brand-profile.json` |
-| `/ads create` | Generate campaign concepts + copy briefs, outputs `campaign-brief.md` |
-| `/ads generate` | Generate AI ad images from brief, outputs to `ad-assets/` |
-| `/ads photoshoot` | Product photography in 5 styles (Studio, Floating, Ingredient, In Use, Lifestyle) |
+| Command                           | What it does                                                                            |
+|-----------------------------------|-----------------------------------------------------------------------------------------|
+| `/ads audit`                      | Full multi-platform audit with parallel subagent delegation                             |
+| `/ads google`                     | Google Ads deep analysis (Search, PMax, YouTube)                                        |
+| `/ads meta`                       | Meta Ads deep analysis (FB, IG, Advantage+)                                             |
+| `/ads youtube`                    | YouTube Ads specific analysis                                                           |
+| `/ads linkedin`                   | LinkedIn Ads deep analysis (B2B, Lead Gen)                                              |
+| `/ads tiktok`                     | TikTok Ads deep analysis (Creative, Shop, Smart+)                                       |
+| `/ads microsoft`                  | Microsoft/Bing Ads deep analysis (Copilot, Import)                                      |
+| `/ads creative`                   | Cross-platform creative quality audit                                                   |
+| `/ads landing`                    | Landing page quality assessment for ad campaigns                                        |
+| `/ads budget`                     | Budget allocation and bidding strategy review                                           |
+| `/ads plan <business-type>`       | Strategic ad plan with industry templates                                               |
+| `/ads apple`                      | Apple Ads deep analysis                                                                 |
+| `/ads competitor`                 | Competitor ad intelligence analysis                                                     |
+| `/ads math`                       | PPC financial calculator (CPA, ROAS, break-even, budget forecasting)                    |
+| `/ads test`                       | A/B test design (hypothesis, significance, duration, sample size)                       |
+| `/ads report`                     | PDF audit report generation for client deliverables                                     |
+| `/ads dna <url>`                  | Extract brand DNA from website, outputs `brand-profile.json`                            |
+| `/ads create`                     | Generate campaign concepts + copy briefs, outputs `campaign-brief.md`                   |
+| `/ads generate`                   | Generate AI ad images from brief, outputs to `ad-assets/`                               |
+| `/ads photoshoot`                 | Product photography in 5 styles (Studio, Floating, Ingredient, In Use, Lifestyle)       |
 
 ## Context Intake (Required: Always Do This First)
 
@@ -193,13 +193,13 @@ Aggregate = Sum(Platform_Score x Platform_Budget_Share)
 
 ### Grading
 
-| Grade | Score | Action Required |
-|-------|-------|-----------------|
-| A | 90-100 | Minor optimizations only |
-| B | 75-89 | Some improvement opportunities |
-| C | 60-74 | Notable issues need attention |
-| D | 40-59 | Significant problems present |
-| F | <40 | Urgent intervention required |
+| Grade         | Score         | Action Required                      |
+|---------------|---------------|--------------------------------------|
+| A             | 90-100        | Minor optimizations only             |
+| B             | 75-89         | Some improvement opportunities       |
+| C             | 60-74         | Notable issues need attention        |
+| D             | 40-59         | Significant problems present         |
+| F             | <40           | Urgent intervention required         |
 
 ### Priority Levels
 

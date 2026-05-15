@@ -13,19 +13,19 @@ Format: `type/description` — validated by regex:
 ^(feat|fix|chore|docs|style|refactor|perf|test|build|ci|revert)\/[a-z0-9._-]+$
 ```
 
-| Type                     | Example                                     |
-|--------------------------|---------------------------------------------|
-| feat                     | `feat/ollama-streaming`                     |
-| fix                      | `fix/hook-marker-injection`                 |
-| docs                     | `docs/contributing-labels`                  |
-| chore                    | `chore/update-shellspec`                    |
-| refactor                 | `refactor/cache-lookup`                     |
-| test                     | `test/integration-ci-mode`                  |
-| ci                       | `ci/split-test-jobs`                        |
-| style                    | `style/output-formatting`                   |
-| perf                     | `perf/cache-lookup-speed`                   |
-| build                    | `build/makefile-targets`                    |
-| revert                   | `revert/broken-hook-change`                 |
+| Type                             | Example                                             |
+|----------------------------------|-----------------------------------------------------|
+| feat                             | `feat/ollama-streaming`                             |
+| fix                              | `fix/hook-marker-injection`                         |
+| docs                             | `docs/contributing-labels`                          |
+| chore                            | `chore/update-shellspec`                            |
+| refactor                         | `refactor/cache-lookup`                             |
+| test                             | `test/integration-ci-mode`                          |
+| ci                               | `ci/split-test-jobs`                                |
+| style                            | `style/output-formatting`                           |
+| perf                             | `perf/cache-lookup-speed`                           |
+| build                            | `build/makefile-targets`                            |
+| revert                           | `revert/broken-hook-change`                         |
 
 **Rules**: description must be lowercase, only `a-z`, `0-9`, `.`, `_`, `-`.
 
@@ -75,10 +75,10 @@ Closes #N
 
 ## Cookbook
 
-| If...                                  | Then...                                                                | Example                                          |
-|----------------------------------------|------------------------------------------------------------------------|--------------------------------------------------|
-| Creating a bug fix PR                  | branch: `fix/description`, label: `type:bug`                           | `fix/cache-hash-collision`                       |
-| Creating a feature PR                  | branch: `feat/description`, label: `type:feature`                      | `feat/github-models-provider`                    |
-| Creating a docs PR                     | branch: `docs/description`, label: `type:docs`                         | `docs/installation-windows`                      |
-| Creating a refactor PR                 | branch: `refactor/description`, label: `type:refactor`                 | `refactor/provider-dispatch`                     |
-| Creating a test PR                     | branch: `test/description`, label: `type:test`                         | `test/hook-injection-edge-cases`                 |
+| If...                                          | Then...                                                                        | Example                                                  |
+|------------------------------------------------|--------------------------------------------------------------------------------|----------------------------------------------------------|
+| Creating a bug fix PR                          | branch: `fix/description`, label: `type:bug`                                   | `fix/cache-hash-collision`                               |
+| Creating a feature PR                          | branch: `feat/description`, label: `type:feature`                              | `feat/github-models-provider`                            |
+| Creating a docs PR                             | branch: `docs/description`, label: `type:docs`                                 | `docs/installation-windows`                              |
+| Creating a refactor PR                         | branch: `refactor/description`, label: `type:refactor`                         | `refactor/provider-dispatch`                             |
+| Creating a test PR                             | branch: `test/description`, label: `type:test`                                 | `test/hook-injection-edge-cases`                         |

@@ -80,33 +80,33 @@ When `--graph-config=skip`, the system MUST NOT read, write, or create `{vault}/
 The embedded default `graph.json` MUST be stored as a file in `internal/obsidian/` and included via `//go:embed`.
 It MUST contain EXACTLY the following values (no deviation):
 
-| Key                                     | Value                               |
-|-----------------------------------------|-------------------------------------|
-| `collapse-filter`                       | `false`                             |
-| `collapse-color-groups`                 | `true`                              |
-| `collapse-display`                      | `true`                              |
-| `collapse-forces`                       | `false`                             |
-| `showArrow`                             | `false`                             |
-| `textFadeMultiplier`                    | `0`                                 |
-| `nodeSizeMultiplier`                    | `1`                                 |
-| `lineSizeMultiplier`                    | `1`                                 |
-| `centerStrength`                        | `0.515147569444444`                 |
-| `repelStrength`                         | `12.7118055555556`                  |
-| `linkStrength`                          | `0.729210069444444`                 |
-| `linkDistance`                          | `207`                               |
-| `scale`                                 | `0.1`                               |
-| `showOrphans`                           | `true`                              |
+| Key                                             | Value                                       |
+|-------------------------------------------------|---------------------------------------------|
+| `collapse-filter`                               | `false`                                     |
+| `collapse-color-groups`                         | `true`                                      |
+| `collapse-display`                              | `true`                                      |
+| `collapse-forces`                               | `false`                                     |
+| `showArrow`                                     | `false`                                     |
+| `textFadeMultiplier`                            | `0`                                         |
+| `nodeSizeMultiplier`                            | `1`                                         |
+| `lineSizeMultiplier`                            | `1`                                         |
+| `centerStrength`                                | `0.515147569444444`                         |
+| `repelStrength`                                 | `12.7118055555556`                          |
+| `linkStrength`                                  | `0.729210069444444`                         |
+| `linkDistance`                                  | `207`                                       |
+| `scale`                                         | `0.1`                                       |
+| `showOrphans`                                   | `true`                                      |
 
 Color groups (MUST be EXACTLY these 6, in this order):
 
-| #                   | query                                   | rgb                      |
-|---------------------|-----------------------------------------|--------------------------|
-| 1                   | `path:engram/_sessions`                 | 14736466                 |
-| 2                   | `path:engram/_topics`                   | 13893887                 |
-| 3                   | `tag:#architecture`                     | 7935                     |
-| 4                   | `tag:#bugfix`                           | 16711680                 |
-| 5                   | `tag:#decision`                         | 65322                    |
-| 6                   | `tag:#pattern`                          | 16741120                 |
+| #                           | query                                           | rgb                              |
+|-----------------------------|-------------------------------------------------|----------------------------------|
+| 1                           | `path:engram/_sessions`                         | 14736466                         |
+| 2                           | `path:engram/_topics`                           | 13893887                         |
+| 3                           | `tag:#architecture`                             | 7935                             |
+| 4                           | `tag:#bugfix`                                   | 16711680                         |
+| 5                           | `tag:#decision`                                 | 65322                            |
+| 6                           | `tag:#pattern`                                  | 16741120                         |
 
 All color group entries MUST have `"a": 1`. No discovery group. No additional groups.
 

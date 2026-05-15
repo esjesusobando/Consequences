@@ -13,12 +13,12 @@ El núcleo del sistema, diseñado para una autonomía extrema mediante flujos de
 
 ## Skills Incluidas
 
-| #                           | Skill                                      | Descripción                                                    |
-|-----------------------------|--------------------------------------------|----------------------------------------------------------------|
-| 01                          | Personal OS                                | Sistema principal de productividad                             |
-| 02                          | SDD Workflow                               | Metodología de desarrollo estructurado                         |
-| 03                          | System Guardian                            | Validación automática                                          |
-| 04                          | Backlog Processing                         | Flujo completo de backlog                                      |
+| #                                   | Skill                                              | Descripción                                                            |
+|-------------------------------------|----------------------------------------------------|------------------------------------------------------------------------|
+| 01                                  | Personal OS                                        | Sistema principal de productividad                                     |
+| 02                                  | SDD Workflow                                       | Metodología de desarrollo estructurado                                 |
+| 03                                  | System Guardian                                    | Validación automática                                                  |
+| 04                                  | Backlog Processing                                 | Flujo completo de backlog                                              |
 
 ## ⚠️ Gotchas
 - No ignores las advertencias del System Guardian: el sistema de validación no es opcional.

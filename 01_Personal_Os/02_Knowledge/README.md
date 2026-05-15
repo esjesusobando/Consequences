@@ -39,12 +39,12 @@
 
 Almacena **documentacion de referencia, investigacion, specs y notas** que las tareas y skills necesitan.
 
-| Tipo                               | Ejemplos                                                         |
-|------------------------------------|------------------------------------------------------------------|
-| Specs                              | Requisitos de proyecto, specs de features                        |
-| Research                           | Analisis de mercado, hallazgos tecnicos                          |
-| Process docs                       | How-tos, checklists, runbooks                                    |
-| Unicorn KB                         | Decisions, lessons, patterns por area                            |
+| Tipo                                       | Ejemplos                                                                 |
+|--------------------------------------------|--------------------------------------------------------------------------|
+| Specs                                      | Requisitos de proyecto, specs de features                                |
+| Research                                   | Analisis de mercado, hallazgos tecnicos                                  |
+| Process docs                               | How-tos, checklists, runbooks                                            |
+| Unicorn KB                                 | Decisions, lessons, patterns por area                                    |
 
 ---
 

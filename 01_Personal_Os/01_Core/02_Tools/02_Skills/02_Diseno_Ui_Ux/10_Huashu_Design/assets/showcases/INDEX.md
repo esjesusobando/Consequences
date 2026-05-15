@@ -5,31 +5,31 @@
 
 ## 风格说明
 
-| 代号                    | 流派             | 风格名称                               | 视觉气质                                            |
-|-----------------------|----------------|------------------------------------|-------------------------------------------------|
-| **Pentagram**         | 信息建筑派          | Pentagram / Michael Bierut         | 黑白克制、瑞士网格、强字体层级、#E63946红色强调                     |
-| **Build**             | 极简主义派          | Build Studio                       | 奢侈品级留白(70%+)、微妙字重(200-600)、#D4A574暖金、精致         |
-| **Takram**            | 东方哲学派          | Takram                             | 柔和科技感、自然色(米色/灰/绿)、圆角、图表如艺术                      |
+| 代号                            | 流派                     | 风格名称                                       | 视觉气质                                                    |
+|-------------------------------|------------------------|--------------------------------------------|---------------------------------------------------------|
+| **Pentagram**                 | 信息建筑派                  | Pentagram / Michael Bierut                 | 黑白克制、瑞士网格、强字体层级、#E63946红色强调                             |
+| **Build**                     | 极简主义派                  | Build Studio                               | 奢侈品级留白(70%+)、微妙字重(200-600)、#D4A574暖金、精致                 |
+| **Takram**                    | 东方哲学派                  | Takram                                     | 柔和科技感、自然色(米色/灰/绿)、圆角、图表如艺术                              |
 
 ## 场景速查表
 
 ### 内容设计场景
 
-| #           | 场景             | 规格                | Pentagram                                   | Build                                   | Takram                                   |
-|-------------|----------------|-------------------|---------------------------------------------|-----------------------------------------|------------------------------------------|
-| 1           | 公众号封面          | 1200×510          | `cover/cover-pentagram`                     | `cover/cover-build`                     | `cover/cover-takram`                     |
-| 2           | PPT数据页         | 1920×1080         | `ppt/ppt-pentagram`                         | `ppt/ppt-build`                         | `ppt/ppt-takram`                         |
-| 3           | 竖版信息图          | 1080×1920         | `infographic/infographic-pentagram`         | `infographic/infographic-build`         | `infographic/infographic-takram`         |
+| #                   | 场景                     | 规格                        | Pentagram                                           | Build                                           | Takram                                           |
+|---------------------|------------------------|---------------------------|-----------------------------------------------------|-------------------------------------------------|--------------------------------------------------|
+| 1                   | 公众号封面                  | 1200×510                  | `cover/cover-pentagram`                             | `cover/cover-build`                             | `cover/cover-takram`                             |
+| 2                   | PPT数据页                 | 1920×1080                 | `ppt/ppt-pentagram`                                 | `ppt/ppt-build`                                 | `ppt/ppt-takram`                                 |
+| 3                   | 竖版信息图                  | 1080×1920                 | `infographic/infographic-pentagram`                 | `infographic/infographic-build`                 | `infographic/infographic-takram`                 |
 
 ### 网站设计场景
 
-| #           | 场景              | 规格               | Pentagram                                        | Build                                        | Takram                                        |
-|-------------|-----------------|------------------|--------------------------------------------------|----------------------------------------------|-----------------------------------------------|
-| 4           | 个人主页            | 1440×900         | `website-homepage/homepage-pentagram`            | `website-homepage/homepage-build`            | `website-homepage/homepage-takram`            |
-| 5           | AI导航站           | 1440×900         | `website-ai-nav/ainav-pentagram`                 | `website-ai-nav/ainav-build`                 | `website-ai-nav/ainav-takram`                 |
-| 6           | AI写作工具          | 1440×900         | `website-ai-writing/aiwriting-pentagram`         | `website-ai-writing/aiwriting-build`         | `website-ai-writing/aiwriting-takram`         |
-| 7           | SaaS落地页         | 1440×900         | `website-saas/saas-pentagram`                    | `website-saas/saas-build`                    | `website-saas/saas-takram`                    |
-| 8           | 开发者文档           | 1440×900         | `website-devdocs/devdocs-pentagram`              | `website-devdocs/devdocs-build`              | `website-devdocs/devdocs-takram`              |
+| #                   | 场景                      | 规格                       | Pentagram                                                | Build                                                | Takram                                                |
+|---------------------|-------------------------|--------------------------|----------------------------------------------------------|------------------------------------------------------|-------------------------------------------------------|
+| 4                   | 个人主页                    | 1440×900                 | `website-homepage/homepage-pentagram`                    | `website-homepage/homepage-build`                    | `website-homepage/homepage-takram`                    |
+| 5                   | AI导航站                   | 1440×900                 | `website-ai-nav/ainav-pentagram`                         | `website-ai-nav/ainav-build`                         | `website-ai-nav/ainav-takram`                         |
+| 6                   | AI写作工具                  | 1440×900                 | `website-ai-writing/aiwriting-pentagram`                 | `website-ai-writing/aiwriting-build`                 | `website-ai-writing/aiwriting-takram`                 |
+| 7                   | SaaS落地页                 | 1440×900                 | `website-saas/saas-pentagram`                            | `website-saas/saas-build`                            | `website-saas/saas-takram`                            |
+| 8                   | 开发者文档                   | 1440×900                 | `website-devdocs/devdocs-pentagram`                      | `website-devdocs/devdocs-build`                      | `website-devdocs/devdocs-takram`                      |
 
 > 每个条目同时有 `.html`（源码）和 `.png`（截图）两个文件
 

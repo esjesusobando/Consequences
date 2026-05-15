@@ -67,45 +67,45 @@ user-invokable: false
 ## Creative Fatigue Detection
 
 ### Signals of Fatigue
-| Signal | Threshold | Action |
-|--------|-----------|--------|
-| CTR declining | >20% over 14 days | Refresh creative |
-| Frequency (Meta) | >5.0 prospecting, >12.0 retargeting | New audience or creative |
-| Watch time declining (TikTok) | <3s average | New hook needed |
-| QS declining (Google) | Drop of 2+ points | Refresh ad copy |
-| Engagement rate drop | >30% decline | Full creative overhaul |
+| Signal                              | Threshold                                 | Action                         |
+|-------------------------------------|-------------------------------------------|--------------------------------|
+| CTR declining                       | >20% over 14 days                         | Refresh creative               |
+| Frequency (Meta)                    | >5.0 prospecting, >12.0 retargeting       | New audience or creative       |
+| Watch time declining (TikTok)       | <3s average                               | New hook needed                |
+| QS declining (Google)               | Drop of 2+ points                         | Refresh ad copy                |
+| Engagement rate drop                | >30% decline                              | Full creative overhaul         |
 
 ### Refresh Cadence by Platform
-| Platform | Recommended Refresh |
-|----------|-------------------|
-| TikTok | Every 7-10 days (fastest fatigue) |
-| Meta | Every 14-21 days |
-| LinkedIn | Every 4-6 weeks |
-| Google Search | Every 8-12 weeks |
-| Microsoft | Every 8-12 weeks |
-| YouTube | Every 4-8 weeks |
+| Platform            | Recommended Refresh                     |
+|---------------------|-----------------------------------------|
+| TikTok              | Every 7-10 days (fastest fatigue)       |
+| Meta                | Every 14-21 days                        |
+| LinkedIn            | Every 4-6 weeks                         |
+| Google Search       | Every 8-12 weeks                        |
+| Microsoft           | Every 8-12 weeks                        |
+| YouTube             | Every 4-8 weeks                         |
 
 ## Format Diversity Matrix
 
 Evaluate which formats are active per platform:
 
-| Format | Google | Meta | LinkedIn | TikTok | Microsoft |
-|--------|--------|------|----------|--------|-----------|
-| Static Image | RSA image ext | ✅ | ✅ | ❌ | Multimedia |
-| Video | YouTube, PMax | ✅ | ✅ | ✅ (required) | ✅ (9:16 vertical, April 2025) |
-| Carousel | ❌ | ✅ | ✅ | ❌ | ❌ |
-| Collection | ❌ | ✅ | ❌ | ❌ | ❌ |
-| Document | ❌ | ❌ | ✅ | ❌ | ❌ |
-| Shopping | PMax, Shopping | Catalog | ❌ | Shop | Shopping |
+| Format             | Google               | Meta          | LinkedIn         | TikTok             | Microsoft                           |
+|--------------------|----------------------|---------------|------------------|--------------------|-------------------------------------|
+| Static Image       | RSA image ext        | ✅             | ✅                | ❌                  | Multimedia                          |
+| Video              | YouTube, PMax        | ✅             | ✅                | ✅ (required)       | ✅ (9:16 vertical, April 2025)       |
+| Carousel           | ❌                    | ✅             | ✅                | ❌                  | ❌                                   |
+| Collection         | ❌                    | ✅             | ❌                | ❌                  | ❌                                   |
+| Document           | ❌                    | ❌             | ✅                | ❌                  | ❌                                   |
+| Shopping           | PMax, Shopping       | Catalog       | ❌                | Shop               | Shopping                            |
 
 **Apple Ads Format Support:**
 
-| Format | Apple Ads |
-|--------|-----------|
-| Static Image | ✅ (Custom Product Pages) |
-| Video | ✅ (App preview videos) |
-| Search Tab | ✅ (banner) |
-| Today Tab | ✅ (editorial-style) |
+| Format             | Apple Ads                      |
+|--------------------|--------------------------------|
+| Static Image       | ✅ (Custom Product Pages)       |
+| Video              | ✅ (App preview videos)         |
+| Search Tab         | ✅ (banner)                     |
+| Today Tab          | ✅ (editorial-style)            |
 
 ## Andromeda Creative Similarity Score (Meta)
 
@@ -137,18 +137,18 @@ Grade: A (90-100), B (75-89), C (60-74), D (40-59), F (<40).
 
 ## Creative Check IDs
 
-| ID | Check | Severity |
-|----|-------|----------|
-| CR-01 | Format diversity: >=3 formats per platform | High |
-| CR-02 | Creative volume: meets platform minimums | High |
-| CR-03 | Fatigue detection: CTR/engagement declining past thresholds | Critical |
-| CR-04 | Refresh cadence: within platform-recommended cycle | High |
-| CR-05 | Platform compliance: specs, safe zones, text limits | Critical |
-| CR-06 | Hook quality: first 1-5s engagement (video) or headline impact (static) | High |
-| CR-07 | UGC ratio: UGC/testimonial content tested on Meta and TikTok | Medium |
-| CR-08 | Video specs: codec, resolution, aspect ratio per platform | Medium |
-| CR-09 | Safe zone compliance: critical elements within 900x1000px usable area | Medium |
-| CR-10 | Andromeda diversity: genuinely distinct concepts, not iterative variations (Meta) | High |
+| ID          | Check                                                                                   | Severity         |
+|-------------|-----------------------------------------------------------------------------------------|------------------|
+| CR-01       | Format diversity: >=3 formats per platform                                              | High             |
+| CR-02       | Creative volume: meets platform minimums                                                | High             |
+| CR-03       | Fatigue detection: CTR/engagement declining past thresholds                             | Critical         |
+| CR-04       | Refresh cadence: within platform-recommended cycle                                      | High             |
+| CR-05       | Platform compliance: specs, safe zones, text limits                                     | Critical         |
+| CR-06       | Hook quality: first 1-5s engagement (video) or headline impact (static)                 | High             |
+| CR-07       | UGC ratio: UGC/testimonial content tested on Meta and TikTok                            | Medium           |
+| CR-08       | Video specs: codec, resolution, aspect ratio per platform                               | Medium           |
+| CR-09       | Safe zone compliance: critical elements within 900x1000px usable area                   | Medium           |
+| CR-10       | Andromeda diversity: genuinely distinct concepts, not iterative variations (Meta)       | High             |
 
 ## Universal Creative Best Practices
 

@@ -249,16 +249,16 @@ Ejecutable desde cron, GitHub Actions o un boton de Raycast.
 
 ## 4. Comparativa: CLI vs UI vs Zapier/Make
 
-| Tarea                                                          | UI web (manual)                              | Zapier / Make                                                  | gws-cli                                 |
-|----------------------------------------------------------------|----------------------------------------------|----------------------------------------------------------------|-----------------------------------------|
-| Marcar 50 emails de un remitente como leidos                   | ~3 min de clicks                             | Zap limitado en free tier, latencia 1-15 min                   | 1 comando, <1s                          |
-| Crear evento con 5 invitados + Meet                            | ~90s                                         | Scenario con 4 modulos                                         | 1 comando, 2s                           |
-| Subir carpeta de 42 archivos                                   | Drag & drop, 2-5 min                         | No soportado directo                                           | 1 comando, 14s                          |
-| Append a Sheet desde un pipeline                               | Copy/paste o script custom                   | 1 zap por fila (caro)                                          | 1 comando, gratis                       |
-| Versionable en git                                             | No                                           | No (JSON exportable pero rigido)                               | Si (script .sh)                         |
-| Costo                                                          | Incluido                                     | USD 20-100+/mes por volumen                                    | Gratis                                  |
-| Latencia                                                       | Humana                                       | 1-15 min por trigger                                           | Milisegundos                            |
-| Auditable en CI                                                | No                                           | Parcial                                                        | Si (logs, exit codes)                   |
+| Tarea                                                                  | UI web (manual)                                      | Zapier / Make                                                          | gws-cli                                         |
+|------------------------------------------------------------------------|------------------------------------------------------|------------------------------------------------------------------------|-------------------------------------------------|
+| Marcar 50 emails de un remitente como leidos                           | ~3 min de clicks                                     | Zap limitado en free tier, latencia 1-15 min                           | 1 comando, <1s                                  |
+| Crear evento con 5 invitados + Meet                                    | ~90s                                                 | Scenario con 4 modulos                                                 | 1 comando, 2s                                   |
+| Subir carpeta de 42 archivos                                           | Drag & drop, 2-5 min                                 | No soportado directo                                                   | 1 comando, 14s                                  |
+| Append a Sheet desde un pipeline                                       | Copy/paste o script custom                           | 1 zap por fila (caro)                                                  | 1 comando, gratis                               |
+| Versionable en git                                                     | No                                                   | No (JSON exportable pero rigido)                                       | Si (script .sh)                                 |
+| Costo                                                                  | Incluido                                             | USD 20-100+/mes por volumen                                            | Gratis                                          |
+| Latencia                                                               | Humana                                               | 1-15 min por trigger                                                   | Milisegundos                                    |
+| Auditable en CI                                                        | No                                                   | Parcial                                                                | Si (logs, exit codes)                           |
 
 ---
 

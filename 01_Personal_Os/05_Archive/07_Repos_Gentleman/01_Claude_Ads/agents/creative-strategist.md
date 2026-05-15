@@ -163,13 +163,13 @@ The `## Image Generation Briefs` section is parsed programmatically by the visua
 
 **Always specify a copy zone** (where the ad headline/CTA will be placed):
 
-| Platform        | Copy zone statement to include in prompt                              |
-|-----------------|-----------------------------------------------------------------------|
-| TikTok (9:16)   | `"top 15% and bottom 20% minimal, active visual centered"`           |
-| Meta Feed (4:5) | `"lower 30% minimal and uncluttered for copy overlay"`               |
-| LinkedIn (1:1)  | `"generous margin all sides, centered composition"`                  |
-| Google PMax     | `"right third lighter and open for Google's text overlay"`           |
-| YouTube (16:9)  | `"right 40% minimal for caption/copy overlay"`                       |
+| Platform                | Copy zone statement to include in prompt                                      |
+|-------------------------|-------------------------------------------------------------------------------|
+| TikTok (9:16)           | `"top 15% and bottom 20% minimal, active visual centered"`                    |
+| Meta Feed (4:5)         | `"lower 30% minimal and uncluttered for copy overlay"`                        |
+| LinkedIn (1:1)          | `"generous margin all sides, centered composition"`                           |
+| Google PMax             | `"right third lighter and open for Google's text overlay"`                    |
+| YouTube (16:9)          | `"right 40% minimal for caption/copy overlay"`                                |
 
 ### Examples
 

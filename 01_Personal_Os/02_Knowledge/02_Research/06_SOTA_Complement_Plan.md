@@ -10,31 +10,31 @@
 
 ### Skills por Área (229+ total)
 
-| Área                           | Cantidad         | Uso Real        | Status                  |
-|--------------------------------|------------------|-----------------|-------------------------|
-| **01_Compound** (CE)           | ~60              | HIGH            | 🟢 Activas               |
-| **02_Work** (Frameworks)       | ~50              | MEDIUM          | 🟡 Parcial               |
-| **03_Review** (QA)             | ~25              | MEDIUM          | 🟡 Parcial               |
-| **04_Marketing**               | ~30              | MEDIUM          | 🟢 Activas               |
-| **05_Analytics**               | ~10              | LOW             | 🔴 Bajar prioridad       |
-| **06_Utilities**               | ~15              | LOW             | 🔴 Bajar prioridad       |
-| **07_Tools**                   | ~10              | LOW             | 🔴 Legacy                |
-| **08_Brand**                   | ~8               | MEDIUM          | 🟡 Parcial               |
-| **09_Advanced**                | ~10              | LOW             | 🔴 Legacy                |
-| Legacy/Backup                  | ~20              | 🔴 NO USAR       | Archivar                |
+| Área                                   | Cantidad                 | Uso Real                | Status                          |
+|----------------------------------------|--------------------------|-------------------------|---------------------------------|
+| **01_Compound** (CE)                   | ~60                      | HIGH                    | 🟢 Activas                       |
+| **02_Work** (Frameworks)               | ~50                      | MEDIUM                  | 🟡 Parcial                       |
+| **03_Review** (QA)                     | ~25                      | MEDIUM                  | 🟡 Parcial                       |
+| **04_Marketing**                       | ~30                      | MEDIUM                  | 🟢 Activas                       |
+| **05_Analytics**                       | ~10                      | LOW                     | 🔴 Bajar prioridad               |
+| **06_Utilities**                       | ~15                      | LOW                     | 🔴 Bajar prioridad               |
+| **07_Tools**                           | ~10                      | LOW                     | 🔴 Legacy                        |
+| **08_Brand**                           | ~8                       | MEDIUM                  | 🟡 Parcial                       |
+| **09_Advanced**                        | ~10                      | LOW                     | 🔴 Legacy                        |
+| Legacy/Backup                          | ~20                      | 🔴 NO USAR               | Archivar                        |
 
 ### MCPs Configurados (33 total)
 
-| Categoría              | MCPs                                          | Estado                      |
-|------------------------|-----------------------------------------------|-----------------------------|
-| **Knowledge**          | Context7, Eagle, Obsidian (2), Supabase       | 🟢 Activos                   |
-| **Dev**                | GitHub, Vercel, Playwright, Supabase          | 🟢 Activos                   |
-| **Scraping**           | Firecrawl, Exa, Chrome DevTools               | 🟢 Activos                   |
-| **Productivity**       | Notion, Linear, N8n, Gmail                    | 🟡 Algunos inactivos         |
-| **Media**              | Nanobanana (images), Fireflies                | 🟢 Activos                   |
-| **Data**               | Amplitude, Supadata, NotebookLM               | 🟡 Algunos inactivos         |
-| **Automation**         | Engram, Qmd, TestSprite                       | 🟢 Activos                   |
-| **Failover**           | Obsidian (2), multiple                        | 🔴 Eliminar duplicados       |
+| Categoría                      | MCPs                                                  | Estado                              |
+|--------------------------------|-------------------------------------------------------|-------------------------------------|
+| **Knowledge**                  | Context7, Eagle, Obsidian (2), Supabase               | 🟢 Activos                           |
+| **Dev**                        | GitHub, Vercel, Playwright, Supabase                  | 🟢 Activos                           |
+| **Scraping**                   | Firecrawl, Exa, Chrome DevTools                       | 🟢 Activos                           |
+| **Productivity**               | Notion, Linear, N8n, Gmail                            | 🟡 Algunos inactivos                 |
+| **Media**                      | Nanobanana (images), Fireflies                        | 🟢 Activos                           |
+| **Data**                       | Amplitude, Supadata, NotebookLM                       | 🟡 Algunos inactivos                 |
+| **Automation**                 | Engram, Qmd, TestSprite                               | 🟢 Activos                           |
+| **Failover**                   | Obsidian (2), multiple                                | 🔴 Eliminar duplicados               |
 
 ---
 
@@ -42,17 +42,17 @@
 
 ### CRITICAL GAPS — Lo que FALTA para estar SOTA
 
-| Área               | Gap                           | Qué Hay                               | Qué Falta (SOTA)                  | Prioridad        |
-|--------------------|-------------------------------|---------------------------------------|-----------------------------------|------------------|
-| **AGENTIC**        | Evaluation                    | No hay agent harness local            | agent-eval-harness setup          | 🔴 CRITICAL       |
-| **AGENTIC**        | Multi-agent patterns          | Skills sueltos                        | LangGraph/CrewAI full setup       | 🔴 CRITICAL       |
-| **HARNESS**        | Benchmarking                  | MASEval, DeepEval configurados?       | Validar installation              | 🔴 CRITICAL       |
-| **SKILLS**         | Progressive disclosure        | No implementado                       | Level-based loading               | 🟡 HIGH           |
-| **SKILLS**         | Skill design principles       | Skills legacy                         | 10 principios SOTA                | 🟡 HIGH           |
-| **MCP**            | Security                      | OAuth no implementado                 | OAuth 2.1 + PKCE                  | 🟡 HIGH           |
-| **UX/UI**          | Design tokens                 | No hay tokens AI                      | Tokens específicos AI             | 🟡 HIGH           |
-| **COPY**           | Templates                     | Templates sueltos                     | Framework sistemático             | 🟡 HIGH           |
-| **WORKFLOW**       | Orchestration                 | N8n configurado                       | LangGraph integration             | 🟡 MEDIUM         |
+| Área                       | Gap                                   | Qué Hay                                       | Qué Falta (SOTA)                          | Prioridad                |
+|----------------------------|---------------------------------------|-----------------------------------------------|-------------------------------------------|--------------------------|
+| **AGENTIC**                | Evaluation                            | No hay agent harness local                    | agent-eval-harness setup                  | 🔴 CRITICAL               |
+| **AGENTIC**                | Multi-agent patterns                  | Skills sueltos                                | LangGraph/CrewAI full setup               | 🔴 CRITICAL               |
+| **HARNESS**                | Benchmarking                          | MASEval, DeepEval configurados?               | Validar installation                      | 🔴 CRITICAL               |
+| **SKILLS**                 | Progressive disclosure                | No implementado                               | Level-based loading                       | 🟡 HIGH                   |
+| **SKILLS**                 | Skill design principles               | Skills legacy                                 | 10 principios SOTA                        | 🟡 HIGH                   |
+| **MCP**                    | Security                              | OAuth no implementado                         | OAuth 2.1 + PKCE                          | 🟡 HIGH                   |
+| **UX/UI**                  | Design tokens                         | No hay tokens AI                              | Tokens específicos AI                     | 🟡 HIGH                   |
+| **COPY**                   | Templates                             | Templates sueltos                             | Framework sistemático                     | 🟡 HIGH                   |
+| **WORKFLOW**               | Orchestration                         | N8n configurado                               | LangGraph integration                     | 🟡 MEDIUM                 |
 
 ---
 
@@ -149,15 +149,15 @@ levels:
 
 ### Semana 1 (Hoy → 2026-04-30)
 
-| Día               | Task                             | Entregable                                |
-|-------------------|----------------------------------|-------------------------------------------|
-| **Hoy**           | Agent eval harness install       | `agent-eval-harness` working              |
-| **Hoy**           | LangGraph patterns setup         | 3 patrones listos                         |
-| **+1 day**        | MCP security audit               | Security checklist done                   |
-| **+2 days**       | AI design tokens                 | Tokens definidos                          |
-| **+3 days**       | Copy framework system            | 5 frameworks documentados                 |
-| **+4 days**       | Skills refactor (sample)         | 3 skills con progressive disclosure       |
-| **+5 days**       | Testing & validation             | Todo validado                             |
+| Día                       | Task                                     | Entregable                                        |
+|---------------------------|------------------------------------------|---------------------------------------------------|
+| **Hoy**                   | Agent eval harness install               | `agent-eval-harness` working                      |
+| **Hoy**                   | LangGraph patterns setup                 | 3 patrones listos                                 |
+| **+1 day**                | MCP security audit                       | Security checklist done                           |
+| **+2 days**               | AI design tokens                         | Tokens definidos                                  |
+| **+3 days**               | Copy framework system                    | 5 frameworks documentados                         |
+| **+4 days**               | Skills refactor (sample)                 | 3 skills con progressive disclosure               |
+| **+5 days**               | Testing & validation                     | Todo validado                                     |
 
 ### Semana 2 (2026-05-01 → 2026-05-07)
 

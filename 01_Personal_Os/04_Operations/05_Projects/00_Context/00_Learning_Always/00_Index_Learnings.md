@@ -6,21 +6,21 @@
 
 ## Aprendizajes Completados
 
-| #                    | Fecha                       | Tema                                                      | Source                               | Deliverables                  |
-|----------------------|-----------------------------|-----------------------------------------------------------|--------------------------------------|-------------------------------|
-| 01                   | 2026-04-x                   | Creative Heroes — IA Generativa                           | YouTube (Midjourney)                 | 8/8 ✅                         |
-| 02                   | 2026-04-x                   | Recall 2.0 — Knowledge + AI                               | YouTube (Tana)                       | 8/8 ✅                         |
-| 03                   | 2026-04-x                   | Claude Computer Use — AI Control Mac                      | YouTube (Anthropic)                  | 8/8 ✅                         |
-| 04                   | 2026-04-20                  | INBOUND '25 — AI Fundamentals                             | Transcripción                        | 10/10 ✅                       |
+| #                            | Fecha                               | Tema                                                              | Source                                       | Deliverables                          |
+|------------------------------|-------------------------------------|-------------------------------------------------------------------|----------------------------------------------|---------------------------------------|
+| 01                           | 2026-04-x                           | Creative Heroes — IA Generativa                                   | YouTube (Midjourney)                         | 8/8 ✅                                 |
+| 02                           | 2026-04-x                           | Recall 2.0 — Knowledge + AI                                       | YouTube (Tana)                               | 8/8 ✅                                 |
+| 03                           | 2026-04-x                           | Claude Computer Use — AI Control Mac                              | YouTube (Anthropic)                          | 8/8 ✅                                 |
+| 04                           | 2026-04-20                          | INBOUND '25 — AI Fundamentals                                     | Transcripción                                | 10/10 ✅                               |
 
 ---
 
 ## Próximos Aprendizajes
 
-| #                    | Fuente                                                   | Tema                                   |
-|----------------------|----------------------------------------------------------|----------------------------------------|
-| 05                   | YouTube / Article / Curso                                | [Por definir]                          |
-| 06                   | YouTube / Article / Curso                                | [Por definir]                          |
+| #                            | Fuente                                                           | Tema                                           |
+|------------------------------|------------------------------------------------------------------|------------------------------------------------|
+| 05                           | YouTube / Article / Curso                                        | [Por definir]                                  |
+| 06                           | YouTube / Article / Curso                                        | [Por definir]                                  |
 
 ---
 
@@ -34,10 +34,10 @@
 
 ## Changelog
 
-| Versión                   | Fecha                        | Cambios                                     |
-|---------------------------|------------------------------|---------------------------------------------|
-| v1.0                      | 2026-04-18                   | Initial setup                               |
-| v1.1                      | 2026-04-20                   | INBOUND '25 agregado                        |
+| Versión                           | Fecha                                | Cambios                                             |
+|-----------------------------------|--------------------------------------|-----------------------------------------------------|
+| v1.0                              | 2026-04-18                           | Initial setup                                       |
+| v1.1                              | 2026-04-20                           | INBOUND '25 agregado                                |
 
 ---
 

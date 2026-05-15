@@ -37,12 +37,12 @@ gentleman-dots
 
 ### Option 2: Download Pre-built Binary
 
-| Platform                            | Command                                                                                                                                         |
-|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| macOS Apple Silicon                 | `curl -sL https://github.com/Gentleman-Programming/Gentleman.Dots/releases/latest/download/gentleman-dots-darwin-arm64.tar.gz \                 | tar xz && ./gentleman-dots` |
-| macOS Intel                         | `curl -sL https://github.com/Gentleman-Programming/Gentleman.Dots/releases/latest/download/gentleman-dots-darwin-amd64.tar.gz \                 | tar xz && ./gentleman-dots` |
-| Linux x86_64                        | `curl -sL https://github.com/Gentleman-Programming/Gentleman.Dots/releases/latest/download/gentleman-dots-linux-amd64.tar.gz \                  | tar xz && ./gentleman-dots` |
-| Linux ARM64                         | `curl -sL https://github.com/Gentleman-Programming/Gentleman.Dots/releases/latest/download/gentleman-dots-linux-arm64.tar.gz \                  | tar xz && ./gentleman-dots` |
+| Platform                                    | Command                                                                                                                                                 |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| macOS Apple Silicon                         | `curl -sL https://github.com/Gentleman-Programming/Gentleman.Dots/releases/latest/download/gentleman-dots-darwin-arm64.tar.gz \                         | tar xz && ./gentleman-dots` |
+| macOS Intel                                 | `curl -sL https://github.com/Gentleman-Programming/Gentleman.Dots/releases/latest/download/gentleman-dots-darwin-amd64.tar.gz \                         | tar xz && ./gentleman-dots` |
+| Linux x86_64                                | `curl -sL https://github.com/Gentleman-Programming/Gentleman.Dots/releases/latest/download/gentleman-dots-linux-amd64.tar.gz \                          | tar xz && ./gentleman-dots` |
+| Linux ARM64                                 | `curl -sL https://github.com/Gentleman-Programming/Gentleman.Dots/releases/latest/download/gentleman-dots-linux-arm64.tar.gz \                          | tar xz && ./gentleman-dots` |
 
 ### Option 3: Build from Source
 
@@ -80,15 +80,15 @@ From the main menu you can access:
 
 ### Keyboard Shortcuts
 
-| Key                               | Action                                               |
-|-----------------------------------|------------------------------------------------------|
-| `↑` / `k`                         | Move up                                              |
-| `↓` / `j`                         | Move down                                            |
-| `Enter` / `Space`                 | Select option                                        |
-| `Esc`                             | Go back                                              |
-| `q`                               | Quit (when not installing)                           |
-| `d`                               | Toggle details (during installation)                 |
-| `Ctrl+C`                          | Force quit                                           |
+| Key                                       | Action                                                       |
+|-------------------------------------------|--------------------------------------------------------------|
+| `↑` / `k`                                 | Move up                                                      |
+| `↓` / `j`                                 | Move down                                                    |
+| `Enter` / `Space`                         | Select option                                                |
+| `Esc`                                     | Go back                                                      |
+| `q`                                       | Quit (when not installing)                                   |
+| `d`                                       | Toggle details (during installation)                         |
+| `Ctrl+C`                                  | Force quit                                                   |
 
 ## Command Line Interface
 
@@ -98,13 +98,13 @@ From the main menu you can access:
 gentleman.dots [flags]
 ```
 
-| Flag                                | Shorthand                   | Description                                                   |
-|-------------------------------------|-----------------------------|---------------------------------------------------------------|
-| `--help`                            | `-h`                        | Show help message                                             |
-| `--version`                         | `-v`                        | Show version information                                      |
-| `--test`                            | `-t`                        | Run in test mode (uses temporary directory)                   |
-| `--dry-run`                         |                             | Show what would be installed without doing it                 |
-| `--non-interactive`                 |                             | Run without TUI, use CLI flags instead                        |
+| Flag                                        | Shorthand                           | Description                                                           |
+|---------------------------------------------|-------------------------------------|-----------------------------------------------------------------------|
+| `--help`                                    | `-h`                                | Show help message                                                     |
+| `--version`                                 | `-v`                                | Show version information                                              |
+| `--test`                                    | `-t`                                | Run in test mode (uses temporary directory)                           |
+| `--dry-run`                                 |                                     | Show what would be installed without doing it                         |
+| `--non-interactive`                         |                                     | Run without TUI, use CLI flags instead                                |
 
 ### Non-Interactive Mode
 
@@ -114,14 +114,14 @@ For CI/CD or scripted installations:
 gentleman.dots --non-interactive --shell=<shell> [options]
 ```
 
-| Flag                         | Values                                                             | Description                                             |
-|------------------------------|--------------------------------------------------------------------|---------------------------------------------------------|
-| `--shell`                    | `fish`, `zsh`, `nushell`                                           | Shell to install (required)                             |
-| `--terminal`                 | `alacritty`, `wezterm`, `kitty`, `ghostty`, `none`                 | Terminal emulator                                       |
-| `--wm`                       | `tmux`, `zellij`, `none`                                           | Window manager                                          |
-| `--nvim`                     |                                                                    | Install Neovim configuration                            |
-| `--font`                     |                                                                    | Install Nerd Font                                       |
-| `--backup`                   | `true`/`false`                                                     | Backup existing configs (default: true)                 |
+| Flag                                 | Values                                                                     | Description                                                     |
+|--------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------|
+| `--shell`                            | `fish`, `zsh`, `nushell`                                                   | Shell to install (required)                                     |
+| `--terminal`                         | `alacritty`, `wezterm`, `kitty`, `ghostty`, `none`                         | Terminal emulator                                               |
+| `--wm`                               | `tmux`, `zellij`, `none`                                                   | Window manager                                                  |
+| `--nvim`                             |                                                                            | Install Neovim configuration                                    |
+| `--font`                             |                                                                            | Install Nerd Font                                               |
+| `--backup`                           | `true`/`false`                                                             | Backup existing configs (default: true)                         |
 
 ### Examples
 
@@ -148,19 +148,19 @@ GENTLEMAN_VERBOSE=1 gentleman.dots --non-interactive --shell=fish --nvim
 
 The installer automatically detects existing configurations for:
 
-| Tool                      | Paths                                                                        |
-|---------------------------|------------------------------------------------------------------------------|
-| Neovim                    | `~/.config/nvim`                                                             |
-| Fish                      | `~/.config/fish`                                                             |
-| Zsh                       | `~/.zshrc`, `~/.oh-my-zsh`                                                   |
-| Nushell                   | `~/.config/nushell`, `~/Library/Application Support/nushell`                 |
-| Tmux                      | `~/.tmux.conf`, `~/.tmux`                                                    |
-| Zellij                    | `~/.config/zellij`                                                           |
-| Alacritty                 | `~/.config/alacritty`                                                        |
-| WezTerm                   | `~/.config/wezterm`, `~/.wezterm.lua`                                        |
-| Kitty                     | `~/.config/kitty`                                                            |
-| Ghostty                   | `~/.config/ghostty`                                                          |
-| Starship                  | `~/.config/starship.toml`                                                    |
+| Tool                              | Paths                                                                                |
+|-----------------------------------|--------------------------------------------------------------------------------------|
+| Neovim                            | `~/.config/nvim`                                                                     |
+| Fish                              | `~/.config/fish`                                                                     |
+| Zsh                               | `~/.zshrc`, `~/.oh-my-zsh`                                                           |
+| Nushell                           | `~/.config/nushell`, `~/Library/Application Support/nushell`                         |
+| Tmux                              | `~/.tmux.conf`, `~/.tmux`                                                            |
+| Zellij                            | `~/.config/zellij`                                                                   |
+| Alacritty                         | `~/.config/alacritty`                                                                |
+| WezTerm                           | `~/.config/wezterm`, `~/.wezterm.lua`                                                |
+| Kitty                             | `~/.config/kitty`                                                                    |
+| Ghostty                           | `~/.config/ghostty`                                                                  |
+| Starship                          | `~/.config/starship.toml`                                                            |
 
 ### Backup Location
 
@@ -185,27 +185,27 @@ The installer includes educational content to help you understand each tool:
 
 ### Terminals
 
-| Terminal                   | Description                                      |
-|----------------------------|--------------------------------------------------|
-| Ghostty                    | GPU-accelerated, native, fast                    |
-| Kitty                      | Feature-rich, GPU-based                          |
-| WezTerm                    | Lua-configurable, cross-platform                 |
-| Alacritty                  | Minimal, Rust-based                              |
+| Terminal                           | Description                                              |
+|------------------------------------|----------------------------------------------------------|
+| Ghostty                            | GPU-accelerated, native, fast                            |
+| Kitty                              | Feature-rich, GPU-based                                  |
+| WezTerm                            | Lua-configurable, cross-platform                         |
+| Alacritty                          | Minimal, Rust-based                                      |
 
 ### Shells
 
-| Shell                   | Description                                           |
-|-------------------------|-------------------------------------------------------|
-| Nushell                 | Structured data, modern syntax                        |
-| Fish                    | User-friendly, great defaults                         |
-| Zsh                     | Highly customizable, POSIX-compatible                 |
+| Shell                           | Description                                                   |
+|---------------------------------|---------------------------------------------------------------|
+| Nushell                         | Structured data, modern syntax                                |
+| Fish                            | User-friendly, great defaults                                 |
+| Zsh                             | Highly customizable, POSIX-compatible                         |
 
 ### Multiplexers
 
-| Multiplexer                   | Description                                 |
-|-------------------------------|---------------------------------------------|
-| Tmux                          | Battle-tested, widely used                  |
-| Zellij                        | Modern, WebAssembly plugins                 |
+| Multiplexer                           | Description                                         |
+|---------------------------------------|-----------------------------------------------------|
+| Tmux                                  | Battle-tested, widely used                          |
+| Zellij                                | Modern, WebAssembly plugins                         |
 
 ### Neovim
 
@@ -215,14 +215,14 @@ The installer includes educational content to help you understand each tool:
 
 ## Requirements
 
-| Requirement                   | Details                                                                   |
-|-------------------------------|---------------------------------------------------------------------------|
-| **macOS**                     | 10.15+                                                                    |
-| **Linux**                     | Ubuntu 20.04+, Debian, Fedora/RHEL, Arch                                  |
-| **Termux**                    | Android terminal emulator                                                 |
-| **Homebrew**                  | Will be installed if missing (macOS/Linux, except Fedora)                 |
-| **Git**                       | For cloning the repository                                                |
-| **Internet**                  | For downloading packages                                                  |
+| Requirement                           | Details                                                                           |
+|---------------------------------------|-----------------------------------------------------------------------------------|
+| **macOS**                             | 10.15+                                                                            |
+| **Linux**                             | Ubuntu 20.04+, Debian, Fedora/RHEL, Arch                                          |
+| **Termux**                            | Android terminal emulator                                                         |
+| **Homebrew**                          | Will be installed if missing (macOS/Linux, except Fedora)                         |
+| **Git**                               | For cloning the repository                                                        |
+| **Internet**                          | For downloading packages                                                          |
 
 ## Troubleshooting
 
@@ -280,12 +280,12 @@ end
 
 The TUI installer is built with:
 
-| Component                     | Description                           |
-|-------------------------------|---------------------------------------|
-| **Go 1.25+**                  | Programming language                  |
-| **Bubbletea**                 | Terminal UI framework                 |
-| **Lipgloss**                  | Styling library                       |
-| **Teatest**                   | Golden file testing                   |
+| Component                             | Description                                   |
+|---------------------------------------|-----------------------------------------------|
+| **Go 1.25+**                          | Programming language                          |
+| **Bubbletea**                         | Terminal UI framework                         |
+| **Lipgloss**                          | Styling library                               |
+| **Teatest**                           | Golden file testing                           |
 
 ### Running Tests
 

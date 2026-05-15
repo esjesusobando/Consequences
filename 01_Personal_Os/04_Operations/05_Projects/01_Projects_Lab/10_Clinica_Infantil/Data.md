@@ -8,12 +8,12 @@
 
 ## Datos del Evento
 
-| Campo | Valor |
-|-------|-------|
-| Institución | U.E.P. MARIAN DIAMOND |
-| Programa | Maternal — Inscripciones Abiertas |
-| CTA | "Reserva tu cupo" |
-| Slogan | "¡ 🌈En Diamond kids creemos que todos los niños ... Merecen Brillar✨!." |
+| Campo             | Valor                                                                         |
+|-------------------|-------------------------------------------------------------------------------|
+| Institución       | U.E.P. MARIAN DIAMOND                                                         |
+| Programa          | Maternal — Inscripciones Abiertas                                             |
+| CTA               | "Reserva tu cupo"                                                             |
+| Slogan            | "¡ 🌈En Diamond kids creemos que todos los niños ... Merecen Brillar✨!."       |
 
 ---
 

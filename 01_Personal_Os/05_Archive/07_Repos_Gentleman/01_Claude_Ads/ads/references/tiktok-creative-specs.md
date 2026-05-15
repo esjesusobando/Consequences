@@ -14,9 +14,9 @@ compliance is critical; UI elements cover significant portions of the frame.
 
 ## Required Format
 
-| Ratio | Dimensions | Notes |
-|-------|-----------|-------|
-| **9:16 (ONLY)** | **1080×1920** | **Only accepted format for In-Feed and TopView** |
+| Ratio                 | Dimensions          | Notes                                                  |
+|-----------------------|---------------------|--------------------------------------------------------|
+| **9:16 (ONLY)**       | **1080×1920**       | **Only accepted format for In-Feed and TopView**       |
 
 **There is no alternative.** Horizontal (16:9) or square (1:1) compositions are
 rejected by TikTok Ads Manager. Always generate vertically.
@@ -56,12 +56,12 @@ the safe box. Anything outside this zone will be hidden behind UI overlays.
 
 ## Content Area Guidelines
 
-| Zone | Y Range | X Range | Action |
-|------|---------|---------|--------|
-| Status bar | 0-150 | full | Keep clear |
-| Right side icons | 150-1470 | 940-1080 | Keep clear |
-| Caption/CTA bar | 1470-1920 | full | Keep clear |
-| **Safe content zone** | **150-1470** | **40-940** | **Place all key content here** |
+| Zone                        | Y Range            | X Range          | Action                               |
+|-----------------------------|--------------------|------------------|--------------------------------------|
+| Status bar                  | 0-150              | full             | Keep clear                           |
+| Right side icons            | 150-1470           | 940-1080         | Keep clear                           |
+| Caption/CTA bar             | 1470-1920          | full             | Keep clear                           |
+| **Safe content zone**       | **150-1470**       | **40-940**       | **Place all key content here**       |
 
 **Subject placement rule:** Main subject (person, product) should be centered in the
 upper 60% of the safe zone (Y:150-900). This ensures visibility even on smaller screens.
@@ -70,11 +70,11 @@ upper 60% of the safe zone (Y:150-900). This ensures visibility even on smaller 
 
 ## Copy Limits
 
-| Component | Max | Notes |
-|-----------|-----|-------|
-| Ad text | 100 chars | Appears below video |
-| Display name | 25 chars | Brand name shown |
-| CTA button | Predefined list | Auto-placed in safe zone |
+| Component          | Max                   | Notes                          |
+|--------------------|-----------------------|--------------------------------|
+| Ad text            | 100 chars             | Appears below video            |
+| Display name       | 25 chars              | Brand name shown               |
+| CTA button         | Predefined list       | Auto-placed in safe zone       |
 
 ---
 

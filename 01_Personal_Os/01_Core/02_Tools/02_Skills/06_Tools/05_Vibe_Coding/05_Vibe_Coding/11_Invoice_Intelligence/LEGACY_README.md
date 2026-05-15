@@ -97,23 +97,23 @@ processed_invoices/
 
 El sistema extrae automáticamente:
 
-| Campo                                 | Descripción                                           |
-|---------------------------------------|-------------------------------------------------------|
-| `filename`                            | Nombre del archivo PDF                                |
-| `invoice_number`                      | Número de factura                                     |
-| `invoice_date`                        | Fecha de emisión                                      |
-| `due_date`                            | Fecha de vencimiento                                  |
-| `vendor_name`                         | Nombre del proveedor                                  |
-| `customer_name`                       | Nombre del cliente                                    |
-| `total_amount`                        | Monto total                                           |
-| `tax_amount`                          | Monto de impuestos                                    |
-| `subtotal`                            | Subtotal                                              |
-| `currency`                            | Moneda (USD, EUR, MXN, etc)                           |
-| `items`                               | Items/líneas de la factura (JSON)                     |
-| `payment_terms`                       | Términos de pago                                      |
-| `status`                              | Estado del procesamiento                              |
-| `processing_time`                     | Tiempo de procesamiento                               |
-| `ocr_confidence`                      | Confianza del OCR (%)                                 |
+| Campo                                         | Descripción                                                   |
+|-----------------------------------------------|---------------------------------------------------------------|
+| `filename`                                    | Nombre del archivo PDF                                        |
+| `invoice_number`                              | Número de factura                                             |
+| `invoice_date`                                | Fecha de emisión                                              |
+| `due_date`                                    | Fecha de vencimiento                                          |
+| `vendor_name`                                 | Nombre del proveedor                                          |
+| `customer_name`                               | Nombre del cliente                                            |
+| `total_amount`                                | Monto total                                                   |
+| `tax_amount`                                  | Monto de impuestos                                            |
+| `subtotal`                                    | Subtotal                                                      |
+| `currency`                                    | Moneda (USD, EUR, MXN, etc)                                   |
+| `items`                                       | Items/líneas de la factura (JSON)                             |
+| `payment_terms`                               | Términos de pago                                              |
+| `status`                                      | Estado del procesamiento                                      |
+| `processing_time`                             | Tiempo de procesamiento                                       |
+| `ocr_confidence`                              | Confianza del OCR (%)                                         |
 
 ## 🎯 Ejemplo de Ejecución
 
@@ -341,13 +341,13 @@ def _parse_invoice_data(self, invoice_data: InvoiceData, text: str, tables: List
 
 **Benchmarks en laptop estándar (8 CPUs):**
 
-| Facturas                       | Workers                       | OCR                       | Tiempo                       | Facturas/seg                       |
-|--------------------------------|-------------------------------|---------------------------|------------------------------|------------------------------------|
-| 10                             | 4                             | No                        | 15s                          | 0.67                               |
-| 10                             | 4                             | Sí                        | 32s                          | 0.31                               |
-| 50                             | 8                             | No                        | 68s                          | 0.74                               |
-| 50                             | 8                             | Sí                        | 142s                         | 0.35                               |
-| 100                            | 8                             | Sí                        | 285s                         | 0.35                               |
+| Facturas                               | Workers                               | OCR                               | Tiempo                               | Facturas/seg                               |
+|----------------------------------------|---------------------------------------|-----------------------------------|--------------------------------------|--------------------------------------------|
+| 10                                     | 4                                     | No                                | 15s                                  | 0.67                                       |
+| 10                                     | 4                                     | Sí                                | 32s                                  | 0.31                                       |
+| 50                                     | 8                                     | No                                | 68s                                  | 0.74                                       |
+| 50                                     | 8                                     | Sí                                | 142s                                 | 0.35                                       |
+| 100                                    | 8                                     | Sí                                | 285s                                 | 0.35                                       |
 
 *Nota: Tiempos con OCR varían según calidad y tamaño de PDFs*
 

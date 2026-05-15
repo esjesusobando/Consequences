@@ -43,9 +43,9 @@ When identifying content as **Personal** or related to **Jesus Obando**, use the
 
 ## Terminology Guide
 
-| Do Not Use                               | Use Instead                                  |
-|------------------------------------------|----------------------------------------------|
-| "Utilize"                                | "Use"                                        |
-| "In order to..."                         | "To..."                                      |
-| "Expertly"                               | [Show through story]                         |
-| "Should/Must"                            | "I invite you to..."                         |
+| Do Not Use                                       | Use Instead                                          |
+|--------------------------------------------------|------------------------------------------------------|
+| "Utilize"                                        | "Use"                                                |
+| "In order to..."                                 | "To..."                                              |
+| "Expertly"                                       | [Show through story]                                 |
+| "Should/Must"                                    | "I invite you to..."                                 |

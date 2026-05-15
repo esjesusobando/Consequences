@@ -94,13 +94,13 @@ Apply these rules after constructing the 5-component prompt:
 - **Append no-text constraint**: `", no text, no labels, no readable words, no UI text, no data labels anywhere in image"`
 - **Append platform copy zone**:
 
-| Platform        | Append to prompt                                                          |
-|-----------------|---------------------------------------------------------------------------|
-| TikTok (9:16)   | `", active visual centered in middle 70%, top 15% and bottom 20% minimal"` |
-| Meta Feed (4:5) | `", primary visual in upper 65%, bottom 30% minimal for copy overlay"`     |
-| LinkedIn (1:1)  | `", centered composition with generous 20% margin all sides"`              |
-| Google PMax     | `", focal point left-center, right third lighter for text overlay"`        |
-| YouTube (16:9)  | `", main subject left-center, right 40% clean for copy overlay"`           |
+| Platform                | Append to prompt                                                                  |
+|-------------------------|-----------------------------------------------------------------------------------|
+| TikTok (9:16)           | `", active visual centered in middle 70%, top 15% and bottom 20% minimal"`        |
+| Meta Feed (4:5)         | `", primary visual in upper 65%, bottom 30% minimal for copy overlay"`            |
+| LinkedIn (1:1)          | `", centered composition with generous 20% margin all sides"`                     |
+| Google PMax             | `", focal point left-center, right third lighter for text overlay"`               |
+| YouTube (16:9)          | `", main subject left-center, right 40% clean for copy overlay"`                  |
 
 - **Append mood**: `", [mood_keywords] atmosphere, no [forbidden joined by comma]"`
 - **Cap at 80 words**: condense if needed; keep composition, colors, shapes, mood; drop redundant adjectives

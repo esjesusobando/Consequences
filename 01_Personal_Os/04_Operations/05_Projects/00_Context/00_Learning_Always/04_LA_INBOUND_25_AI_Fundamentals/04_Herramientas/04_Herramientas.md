@@ -6,30 +6,30 @@
 
 ## AI Models (Frontier Models)
 
-| Herramienta                          | Descripción                              | Mejor Para                          |
-|--------------------------------------|------------------------------------------|-------------------------------------|
-| **ChatGPT (OpenAI)**                 | GPT-5, multimodal                        | General purpose, code               |
-| **Claude (Anthropic)**               | Claude 3.5/4                             | Writing, analysis                   |
-| **Google Gemini**                    | Multimodal, context grande               | Research, multimodal                |
+| Herramienta                                  | Descripción                                      | Mejor Para                                  |
+|----------------------------------------------|--------------------------------------------------|---------------------------------------------|
+| **ChatGPT (OpenAI)**                         | GPT-5, multimodal                                | General purpose, code                       |
+| **Claude (Anthropic)**                       | Claude 3.5/4                                     | Writing, analysis                           |
+| **Google Gemini**                            | Multimodal, context grande                       | Research, multimodal                        |
 
 ---
 
 ## MCP (Model Context Protocol)
 
-| Herramienta                         | Descripción                   | Link                      |
-|-------------------------------------|-------------------------------|---------------------------|
-| **HubSpot MCP**                     | CRM integration               | agent.ai                  |
-| **ChatGPT Plugins**                 | Extensions                    | chatgpt.com               |
-| **Claude Extensions**               | Tools                         | claude.ai                 |
+| Herramienta                                 | Descripción                           | Link                              |
+|---------------------------------------------|---------------------------------------|-----------------------------------|
+| **HubSpot MCP**                             | CRM integration                       | agent.ai                          |
+| **ChatGPT Plugins**                         | Extensions                            | chatgpt.com                       |
+| **Claude Extensions**                       | Tools                                 | claude.ai                         |
 
 ---
 
 ## Herramientas de Personalización
 
-| Herramienta                           | Función                       | Ubicación                          |
-|---------------------------------------|-------------------------------|------------------------------------|
-| **Custom Instructions**               | Personalizar AI               | Settings de cada app               |
-| **System Prompts**                    | Set behavior                  | En el prompt inicial               |
+| Herramienta                                   | Función                               | Ubicación                                  |
+|-----------------------------------------------|---------------------------------------|--------------------------------------------|
+| **Custom Instructions**                       | Personalizar AI                       | Settings de cada app                       |
+| **System Prompts**                            | Set behavior                          | En el prompt inicial                       |
 
 ---
 

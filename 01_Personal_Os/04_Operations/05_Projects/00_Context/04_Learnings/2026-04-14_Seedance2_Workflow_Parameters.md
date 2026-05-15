@@ -8,13 +8,13 @@
 
 ## 📊 Parámetros de Entrada (Input Specifications)
 
-| Tipo                       | Formato                                    | Límites                                             | Notas                                                      |
-|----------------------------|--------------------------------------------|-----------------------------------------------------|------------------------------------------------------------|
-| **Imagen**                 | JPEG/PNG/WebP/BMP/TIFF/GIF                 | Max 9 archivos, <30MB cada uno                      | Composición, estilo, personaje                             |
-| **Video**                  | MP4/MOV                                    | Max 3 clips, 2-15 segundos, <50MB                   | Movimiento y ritmo de cámara                               |
-| **Audio**                  | MP3/WAV                                    | Max 3 archivos, <15 segundos, <15MB                 | Ritmo, timing, mood                                        |
-| **Texto**                  | Natural language prompts                   | 60-100 palabras recomendadas                        | Acciones, cámara, emoción                                  |
-| **Total**                  | Todos los tipos                            | Max 12 archivos combinados                          | Priorizar lo que más afecta visuals/rhythm                 |
+| Tipo                               | Formato                                            | Límites                                                     | Notas                                                              |
+|------------------------------------|----------------------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------------|
+| **Imagen**                         | JPEG/PNG/WebP/BMP/TIFF/GIF                         | Max 9 archivos, <30MB cada uno                              | Composición, estilo, personaje                                     |
+| **Video**                          | MP4/MOV                                            | Max 3 clips, 2-15 segundos, <50MB                           | Movimiento y ritmo de cámara                                       |
+| **Audio**                          | MP3/WAV                                            | Max 3 archivos, <15 segundos, <15MB                         | Ritmo, timing, mood                                                |
+| **Texto**                          | Natural language prompts                           | 60-100 palabras recomendadas                                | Acciones, cámara, emoción                                          |
+| **Total**                          | Todos los tipos                                    | Max 12 archivos combinados                                  | Priorizar lo que más afecta visuals/rhythm                         |
 
 ---
 
@@ -22,32 +22,32 @@
 
 ### Resolución
 
-| Resolución                   | Uso                                                                    | Notas                                           |
-|------------------------------|------------------------------------------------------------------------|-------------------------------------------------|
-| **480p**                     | Testing rápido, brainstorming                                          | Solo para iteración early                       |
-| **720p**                     | **PRODUCTION DEFAULT** — Social content, testing final                 | Mejor balance calidad/velocidad                 |
-| **1080p**                    | Final delivery, client deliverables                                    | Más costo, mejor textura                        |
+| Resolución                           | Uso                                                                            | Notas                                                   |
+|--------------------------------------|--------------------------------------------------------------------------------|---------------------------------------------------------|
+| **480p**                             | Testing rápido, brainstorming                                                  | Solo para iteración early                               |
+| **720p**                             | **PRODUCTION DEFAULT** — Social content, testing final                         | Mejor balance calidad/velocidad                         |
+| **1080p**                            | Final delivery, client deliverables                                            | Más costo, mejor textura                                |
 
 > **Regla:** "480p for testing, 720p for production, 1080p only when you've validated the motion"
 
 ### Duración
 
-| Duración                     | Uso                                                  | Notas                                               |
-|------------------------------|------------------------------------------------------|-----------------------------------------------------|
-| **4-6 seg**                  | Simple actions, product rotation                     | Evita drift                                         |
-| **8-12 seg**                 | **SWEET SPOT** — Producción estándar                 | Room para story sin quality drift                   |
-| **15 seg**                   | Solo si el prompt lo justifica                       | Mayor riesgo de drift en personajes                 |
+| Duración                             | Uso                                                          | Notas                                                       |
+|--------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------|
+| **4-6 seg**                          | Simple actions, product rotation                             | Evita drift                                                 |
+| **8-12 seg**                         | **SWEET SPOT** — Producción estándar                         | Room para story sin quality drift                           |
+| **15 seg**                           | Solo si el prompt lo justifica                               | Mayor riesgo de drift en personajes                         |
 
 > **Regla:** "6-8 seconds is the safe zone. Past 12 seconds, you start seeing costume changes mid-shot."
 
 ### Aspect Ratio
 
-| Ratio                    | Plataforma                            | Notas                                               |
-|--------------------------|---------------------------------------|-----------------------------------------------------|
-| **9:16**                 | TikTok, Reels, Shorts                 | Pulls faces/text forward                            |
-| **16:9**                 | YouTube, desktop, ads                 | Más contexto, detalles más frágiles                 |
-| **1:1**                  | Instagram posts                       | Balanceado                                          |
-| **21:9**                 | Cinematic, trailers                   | Widescreen                                          |
+| Ratio                            | Plataforma                                    | Notas                                                       |
+|----------------------------------|-----------------------------------------------|-------------------------------------------------------------|
+| **9:16**                         | TikTok, Reels, Shorts                         | Pulls faces/text forward                                    |
+| **16:9**                         | YouTube, desktop, ads                         | Más contexto, detalles más frágiles                         |
+| **1:1**                          | Instagram posts                               | Balanceado                                                  |
+| **21:9**                         | Cinematic, trailers                           | Widescreen                                                  |
 
 > **Regla:** "Commit to aspect ratio FIRST, then prompt. If vertical, write for single strong subject."
 
@@ -75,15 +75,15 @@
 
 ### Los 7 elementos del prompt completo:
 
-| Elemento                           | Descripción                          | Ejemplo                                                |
-|------------------------------------|--------------------------------------|--------------------------------------------------------|
-| **1. Subject**                     | El sujeto principal                  | "A woman in her 30s"                                   |
-| **2. Action**                      | Qué hace                             | "gracefully hangs laundry"                             |
-| **3. Environment**                 | Dónde está                           | "in a sunlit courtyard"                                |
-| **4. Camera**                      | Movimiento de cámara                 | "tracking shot, slow dolly in"                         |
-| **5. Style**                       | Estilo visual                        | "cinematic, warm lighting, film grain"                 |
-| **6. Duration**                    | Extensión si aplica                  | "extend @video1 by 5 seconds"                          |
-| **7. Constraints**                 | Negatives                            | "- No text, no watermark, no logo"                     |
+| Elemento                                   | Descripción                                  | Ejemplo                                                        |
+|--------------------------------------------|----------------------------------------------|----------------------------------------------------------------|
+| **1. Subject**                             | El sujeto principal                          | "A woman in her 30s"                                           |
+| **2. Action**                              | Qué hace                                     | "gracefully hangs laundry"                                     |
+| **3. Environment**                         | Dónde está                                   | "in a sunlit courtyard"                                        |
+| **4. Camera**                              | Movimiento de cámara                         | "tracking shot, slow dolly in"                                 |
+| **5. Style**                               | Estilo visual                                | "cinematic, warm lighting, film grain"                         |
+| **6. Duration**                            | Extensión si aplica                          | "extend @video1 by 5 seconds"                                  |
+| **7. Constraints**                         | Negatives                                    | "- No text, no watermark, no logo"                             |
 
 ### Negative Cue Estándar
 ```
@@ -133,13 +133,13 @@
 4. **Final Selection** — Elegir la mejor versión
 
 ### Settings Sweep Test (5 runs):
-| Run                   | Variable                      | Propósito                                                         |
-|-----------------------|-------------------------------|-------------------------------------------------------------------|
-| A                     | 6s duration                   | Check drift en faces/props/lighting                               |
-| B                     | 10s duration                  | Comparar con A                                                    |
-| C                     | Target ratio                  | Same as A pero en ratio objetivo                                  |
-| D                     | High quality                  | Si flaws se sharpening → no es calidad, es intent                 |
-| E                     | Guidance/seed                 | Ajustar strength si colors slip                                   |
+| Run                           | Variable                              | Propósito                                                                 |
+|-------------------------------|---------------------------------------|---------------------------------------------------------------------------|
+| A                             | 6s duration                           | Check drift en faces/props/lighting                                       |
+| B                             | 10s duration                          | Comparar con A                                                            |
+| C                             | Target ratio                          | Same as A pero en ratio objetivo                                          |
+| D                             | High quality                          | Si flaws se sharpening → no es calidad, es intent                         |
+| E                             | Guidance/seed                         | Ajustar strength si colors slip                                           |
 
 ---
 
@@ -230,13 +230,13 @@ Reference: Character consistency priority
 
 ## 🔗 Errores Comunes y Fixes
 
-| Error                                                      | Causa                                                  | Fix                                                                          |
-|------------------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------|
-| **Early instability** (primeros 2s wobble)                 | Duration muy largo para la acción                      | Trim scope, shorter shots                                                    |
-| **Character drift**                                        | Prompt conflicting con image reference                 | "If image 1 already shows X, don't describe X in prompt"                     |
-| **Colors shifting**                                        | Guidance strength muy alto/bajo                        | Ajustar guidance: up if colors slip, down if too rigid                       |
-| **Crowded frames**                                         | Too many subjects, no anchor                           | Pick ONE strong subject, simplify                                            |
-| **Texture brittleness**                                    | Resolution upscale sin intent                          | Draft at speed, lock with reference frame, THEN bump quality                 |
+| Error                                                              | Causa                                                          | Fix                                                                                  |
+|--------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| **Early instability** (primeros 2s wobble)                         | Duration muy largo para la acción                              | Trim scope, shorter shots                                                            |
+| **Character drift**                                                | Prompt conflicting con image reference                         | "If image 1 already shows X, don't describe X in prompt"                             |
+| **Colors shifting**                                                | Guidance strength muy alto/bajo                                | Ajustar guidance: up if colors slip, down if too rigid                               |
+| **Crowded frames**                                                 | Too many subjects, no anchor                                   | Pick ONE strong subject, simplify                                                    |
+| **Texture brittleness**                                            | Resolution upscale sin intent                                  | Draft at speed, lock with reference frame, THEN bump quality                         |
 
 ---
 

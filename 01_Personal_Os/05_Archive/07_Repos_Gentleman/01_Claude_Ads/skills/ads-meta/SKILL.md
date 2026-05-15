@@ -87,12 +87,12 @@ If ads are in restricted categories:
 
 ## EMQ Optimization Guide
 
-| EMQ Score | Status | Action |
-|-----------|--------|--------|
-| 8.0-10.0 | Excellent | Maintain current setup |
-| 6.0-7.9 | Good | Add more customer_information parameters |
-| 4.0-5.9 | Fair | Implement CAPI, improve data quality |
-| <4.0 | Poor | Critical: CAPI + Enhanced Matching required |
+| EMQ Score         | Status          | Action                                            |
+|-------------------|-----------------|---------------------------------------------------|
+| 8.0-10.0          | Excellent       | Maintain current setup                            |
+| 6.0-7.9           | Good            | Add more customer_information parameters          |
+| 4.0-5.9           | Fair            | Implement CAPI, improve data quality              |
+| <4.0              | Poor            | Critical: CAPI + Enhanced Matching required       |
 
 Key parameters to maximize EMQ:
 - `em` (email): highest match rate signal
@@ -103,15 +103,15 @@ Key parameters to maximize EMQ:
 
 ## Key Thresholds
 
-| Metric | Pass | Warning | Fail |
-|--------|------|---------|------|
-| EMQ (Purchase) | ≥8.0 | 6.0-7.9 | <6.0 |
-| Dedup rate | ≥90% | 70-90% | <70% |
-| CTR | ≥1.0% | 0.5-1.0% | <0.5% |
-| Creative formats | ≥3 | 2 | 1 |
-| Creatives per ad set | ≥5 | 3-4 | <3 |
-| Learning Limited | <30% | 30-50% | >50% |
-| Budget per ad set | ≥5x CPA | 2-5x CPA | <2x CPA |
+| Metric                     | Pass          | Warning         | Fail          |
+|----------------------------|---------------|-----------------|---------------|
+| EMQ (Purchase)             | ≥8.0          | 6.0-7.9         | <6.0          |
+| Dedup rate                 | ≥90%          | 70-90%          | <70%          |
+| CTR                        | ≥1.0%         | 0.5-1.0%        | <0.5%         |
+| Creative formats           | ≥3            | 2               | 1             |
+| Creatives per ad set       | ≥5            | 3-4             | <3            |
+| Learning Limited           | <30%          | 30-50%          | >50%          |
+| Budget per ad set          | ≥5x CPA       | 2-5x CPA        | <2x CPA       |
 
 ## Output
 

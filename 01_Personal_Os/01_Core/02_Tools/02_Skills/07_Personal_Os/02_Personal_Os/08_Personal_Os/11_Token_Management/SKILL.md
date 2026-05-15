@@ -89,11 +89,11 @@ Más del 98% de los tokens se gastan releyendo historial viejo.
 ## Bonus
 
 ### Elegí el modelo correcto
-| Tarea                                                            | Modelo recomendado                              |
-|------------------------------------------------------------------|-------------------------------------------------|
-| Planeación, arquitectura, decisiones pesadas                     | **Opus** (~20% del trabajo)                     |
-| Implementación, código, tareas cotidianas                        | **Sonnet** (~80% del trabajo)                   |
-| Subagentes con tareas simples y bien definidas                   | **Haiku**                                       |
+| Tarea                                                                    | Modelo recomendado                                      |
+|--------------------------------------------------------------------------|---------------------------------------------------------|
+| Planeación, arquitectura, decisiones pesadas                             | **Opus** (~20% del trabajo)                             |
+| Implementación, código, tareas cotidianas                                | **Sonnet** (~80% del trabajo)                           |
+| Subagentes con tareas simples y bien definidas                           | **Haiku**                                               |
 
 ### Trabajá fuera de horas pico
 - Horas pico Anthropic: **8am–2pm EST** (hora Nueva York)

@@ -757,18 +757,18 @@ import numpy as np  # ModuleNotFoundError!
 
 ## When to Use Each Pattern
 
-| Pattern                                                | When to Use                                                                  |
-|--------------------------------------------------------|------------------------------------------------------------------------------|
-| Multi-Source Aggregation                               | Combining data from different nodes/sources                                  |
-| Regex Filtering                                        | Text pattern matching, validation, extraction                                |
-| Markdown Parsing                                       | Processing formatted text into structured data                               |
-| JSON Comparison                                        | Detecting changes between objects                                            |
-| CRM Transformation                                     | Normalizing data from different systems                                      |
-| Release Notes                                          | Categorizing text by keywords                                                |
-| Array Transformation                                   | Reshaping data, extracting fields                                            |
-| Dictionary Lookup                                      | Fast ID-based lookups                                                        |
-| Top N Filtering                                        | Getting best/worst items by criteria                                         |
-| String Aggregation                                     | Creating formatted text summaries                                            |
+| Pattern                                                        | When to Use                                                                          |
+|----------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| Multi-Source Aggregation                                       | Combining data from different nodes/sources                                          |
+| Regex Filtering                                                | Text pattern matching, validation, extraction                                        |
+| Markdown Parsing                                               | Processing formatted text into structured data                                       |
+| JSON Comparison                                                | Detecting changes between objects                                                    |
+| CRM Transformation                                             | Normalizing data from different systems                                              |
+| Release Notes                                                  | Categorizing text by keywords                                                        |
+| Array Transformation                                           | Reshaping data, extracting fields                                                    |
+| Dictionary Lookup                                              | Fast ID-based lookups                                                                |
+| Top N Filtering                                                | Getting best/worst items by criteria                                                 |
+| String Aggregation                                             | Creating formatted text summaries                                                    |
 
 ---
 

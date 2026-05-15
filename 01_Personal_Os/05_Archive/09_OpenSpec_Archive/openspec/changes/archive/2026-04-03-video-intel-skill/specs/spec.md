@@ -160,12 +160,12 @@ No existing requirements removed.
 
 ## Coverage Summary
 
-| Category                     | Coverage                                                                                                    |
-|------------------------------|-------------------------------------------------------------------------------------------------------------|
-| Happy Paths                  | ✅ Video transcription, repo clone, methodology extraction, OS verification, plan generation                 |
-| Edge Cases                   | ✅ Invalid URLs, private repos, missing tools, partial failures                                              |
-| Error States                 | ✅ API failures, auth requirements, network errors, malformed inputs                                         |
-| Testable                     | ✅ Each scenario has clear Given/When/Then for automated testing                                             |
+| Category                             | Coverage                                                                                                            |
+|--------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| Happy Paths                          | ✅ Video transcription, repo clone, methodology extraction, OS verification, plan generation                         |
+| Edge Cases                           | ✅ Invalid URLs, private repos, missing tools, partial failures                                                      |
+| Error States                         | ✅ API failures, auth requirements, network errors, malformed inputs                                                 |
+| Testable                             | ✅ Each scenario has clear Given/When/Then for automated testing                                                     |
 
 ---
 

@@ -25,16 +25,16 @@ Audio → TRANSCRIBE → ANONYMIZE → STORE → INDEX
 
 ```markdown
 ## PII a Anonimizar
-| Tipo                          | Pattern                                                           | Token                         |
-|-------------------------------|-------------------------------------------------------------------|-------------------------------|
-| Email                         | r'\b[\w.-]+@[\w.-]+\.\w+\b'                                       | [EMAIL]                       |
-| Teléfono                      | r'\b\d{3}[-.]?\d{3}[-.]?\d{4}\b'                                  | [TEL]                         |
-| Nombre                        | r'\b[A-Z][a-z]+\s[A-Z][a-z]+\b'                                   | [PERSONA]                     |
-| SSN                           | r'\b\d{3}-\d{2}-\d{4}\b'                                          | [SSN]                         |
-| Tarjeta                       | r'\b\d{4}[\s-]?\d{4}[\s-]?\d{4}[\s-]?\d{4}\b'                     | [TARJETA]                     |
-| Dirección                     | r'\b\d+\s[\w\s]+\s(st                                             | av                            | calle)\b'          | [DIRECCION] |
-| IP                            | r'\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b'                         | [IP]                          |
-| Password                      | r'\b(pass                                                         | password                      | pwd)\s*[:=]\s*\S+' | [PASSWORD]  |
+| Tipo                                  | Pattern                                                                   | Token                                 |
+|---------------------------------------|---------------------------------------------------------------------------|---------------------------------------|
+| Email                                 | r'\b[\w.-]+@[\w.-]+\.\w+\b'                                               | [EMAIL]                               |
+| Teléfono                              | r'\b\d{3}[-.]?\d{3}[-.]?\d{4}\b'                                          | [TEL]                                 |
+| Nombre                                | r'\b[A-Z][a-z]+\s[A-Z][a-z]+\b'                                           | [PERSONA]                             |
+| SSN                                   | r'\b\d{3}-\d{2}-\d{4}\b'                                                  | [SSN]                                 |
+| Tarjeta                               | r'\b\d{4}[\s-]?\d{4}[\s-]?\d{4}[\s-]?\d{4}\b'                             | [TARJETA]                             |
+| Dirección                             | r'\b\d+\s[\w\s]+\s(st                                                     | av                                    | calle)\b'          | [DIRECCION] |
+| IP                                    | r'\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b'                                 | [IP]                                  |
+| Password                              | r'\b(pass                                                                 | password                              | pwd)\s*[:=]\s*\S+' | [PASSWORD]  |
 
 ## Niveles: basic (2), standard (5), strict (8)
 ## Retención: Audio 30d, Transcript 90d, Anonimized indefinite
@@ -49,13 +49,13 @@ Audio → TRANSCRIBE → ANONYMIZE → STORE → INDEX
 model = load_whisper_model('small')  # Recommended
 result = model.transcribe(audio, word_timestamps=True)
 ```
-| Model                         | Speed                       | Accuracy                       |
-|-------------------------------|-----------------------------|--------------------------------|
-| tiny                          | ~10x                        | Basic                          |
-| base                          | ~7x                         | Good                           |
-| **small**                     | ~4x                         | Very Good                      |
-| medium                        | ~2x                         | Excellent                      |
-| large                         | 1x                          | Best                           |
+| Model                                 | Speed                               | Accuracy                               |
+|---------------------------------------|-------------------------------------|----------------------------------------|
+| tiny                                  | ~10x                                | Basic                                  |
+| base                                  | ~7x                                 | Good                                   |
+| **small**                             | ~4x                                 | Very Good                              |
+| medium                                | ~2x                                 | Excellent                              |
+| large                                 | 1x                                  | Best                                   |
 
 ### 2. Detección PII
 ```python
@@ -163,18 +163,18 @@ duration: 45min
 
 ## Implementation
 
-| Scenario                                     | Behavior                             |
-|----------------------------------------------|--------------------------------------|
-| Audio format unsupported                     | Fail                                 |
-| PII detection timeout                        | Warning                              |
-| Storage full                                 | Fail                                 |
-| Model load fail                              | Fallback smaller                     |
-| Network offline                              | Queue/local                          |
+| Scenario                                             | Behavior                                     |
+|------------------------------------------------------|----------------------------------------------|
+| Audio format unsupported                             | Fail                                         |
+| PII detection timeout                                | Warning                                      |
+| Storage full                                         | Fail                                         |
+| Model load fail                                      | Fallback smaller                             |
+| Network offline                                      | Queue/local                                  |
 
 ---
 
 ## Changelog
 
-| Date                           | Change                                  |
-|--------------------------------|-----------------------------------------|
-| 2026-03-31                     | Initial design v1.0                     |
+| Date                                   | Change                                          |
+|----------------------------------------|-------------------------------------------------|
+| 2026-03-31                             | Initial design v1.0                             |

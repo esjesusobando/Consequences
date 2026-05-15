@@ -23,27 +23,27 @@ Se está actualizando todas las referencias a carpetas obsoletas en el PersonalO
 
 ## 🔲 Pendiente
 
-| Carpeta                                              | Estado                        | Rutas                       |
-|------------------------------------------------------|-------------------------------|-----------------------------|
-| `01_Core/03_Agents/`                                 | Parcial                       | ~30                         |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/`         | Pendiente                     | ~600                        |
-| `01_Core/05_Mcp/`                                    | Pendiente                     | ~10                         |
-| `01_Core/01_Inventario_Total.md`                     | Pendiente                     | ~20                         |
+| Carpeta                                                      | Estado                                | Rutas                               |
+|--------------------------------------------------------------|---------------------------------------|-------------------------------------|
+| `01_Core/03_Agents/`                                         | Parcial                               | ~30                                 |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/`                 | Pendiente                             | ~600                                |
+| `01_Core/05_Mcp/`                                            | Pendiente                             | ~10                                 |
+| `01_Core/01_Inventario_Total.md`                             | Pendiente                             | ~20                                 |
 
 ## Mapa de Reemplazos
 
-| Vieja                                          | Nueva                                                           |
-|------------------------------------------------|-----------------------------------------------------------------|
-| `.cursor/00_Rules/`                            | `01_Core/01_Rules/`                                             |
-| `01_Core/Context_Memory/`                      | `04_Operations/00_Context_Memory/` + Engram                     |
-| `01_Core/Process_Notes/`                       | `04_Operations/03_Process_Notes/` + Engram                      |
-| `01_Core/07_Memory_Brain/`                     | `04_Operations/04_Memory_Brain/` + Engram                       |
-| `04_Operations/Tasks/`                         | `03_Tasks/`                                                     |
-| `00_Core/GOALS.md`                             | `00_Winter_is_Coming/GOALS.md`                                  |
-| `04_Operations/`                               | `03_Scripts_Os/`                                                |
-| `docs/brainstorms/`                            | `04_Operations/07_Brain_Storming/`                              |
-| `docs/plans/`                                  | `04_Operations/05_Plans/`                                       |
-| `docs/solutions/`                              | `04_Operations/06_Solutions/`                                   |
+| Vieja                                                  | Nueva                                                                   |
+|--------------------------------------------------------|-------------------------------------------------------------------------|
+| `.cursor/00_Rules/`                                    | `01_Core/01_Rules/`                                                     |
+| `01_Core/Context_Memory/`                              | `04_Operations/00_Context_Memory/` + Engram                             |
+| `01_Core/Process_Notes/`                               | `04_Operations/03_Process_Notes/` + Engram                              |
+| `01_Core/07_Memory_Brain/`                             | `04_Operations/04_Memory_Brain/` + Engram                               |
+| `04_Operations/Tasks/`                                 | `03_Tasks/`                                                             |
+| `00_Core/GOALS.md`                                     | `00_Winter_is_Coming/GOALS.md`                                          |
+| `04_Operations/`                                       | `03_Scripts_Os/`                                                        |
+| `docs/brainstorms/`                                    | `04_Operations/07_Brain_Storming/`                                      |
+| `docs/plans/`                                          | `04_Operations/05_Plans/`                                               |
+| `docs/solutions/`                                      | `04_Operations/06_Solutions/`                                           |
 
 ## Estructura v6.1
 

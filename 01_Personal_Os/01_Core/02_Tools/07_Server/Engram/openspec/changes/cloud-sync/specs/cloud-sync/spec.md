@@ -6,14 +6,14 @@ This specification defines the behavior for Engram's cloud synchronization featu
 
 The feature introduces six new packages/domains and modifies one existing domain:
 
-| Domain                                               | Package                                                      | Status                                 |
-|------------------------------------------------------|--------------------------------------------------------------|----------------------------------------|
-| Postgres Store                                       | `internal/cloud/pgstore`                                     | NEW                                    |
-| JWT Authentication                                   | `internal/cloud/auth`                                        | NEW                                    |
-| Cloud Server                                         | `internal/cloud/server`                                      | NEW                                    |
-| Remote Sync Transport                                | `internal/cloud/sync`                                        | NEW                                    |
-| CLI Integration                                      | `cmd/engram`                                                 | MODIFIED                               |
-| Cloud Full-Text Search                               | `internal/cloud/pgstore` (FTS)                               | NEW                                    |
+| Domain                                                       | Package                                                              | Status                                         |
+|--------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------|
+| Postgres Store                                               | `internal/cloud/pgstore`                                             | NEW                                            |
+| JWT Authentication                                           | `internal/cloud/auth`                                                | NEW                                            |
+| Cloud Server                                                 | `internal/cloud/server`                                              | NEW                                            |
+| Remote Sync Transport                                        | `internal/cloud/sync`                                                | NEW                                            |
+| CLI Integration                                              | `cmd/engram`                                                         | MODIFIED                                       |
+| Cloud Full-Text Search                                       | `internal/cloud/pgstore` (FTS)                                       | NEW                                            |
 
 ---
 
@@ -432,13 +432,13 @@ The system MUST provide HTTP middleware that validates JWT tokens or API keys on
 
 The JWT access token MUST contain the following claims:
 
-| Claim                                    | Type                                        | Description                                                     |
-|------------------------------------------|---------------------------------------------|-----------------------------------------------------------------|
-| `sub`                                    | string (UUID)                               | User ID                                                         |
-| `username`                               | string                                      | Username                                                        |
-| `exp`                                    | number                                      | Expiration time (Unix timestamp)                                |
-| `iat`                                    | number                                      | Issued-at time (Unix timestamp)                                 |
-| `type`                                   | string                                      | Token type: "access" or "refresh"                               |
+| Claim                                            | Type                                                | Description                                                             |
+|--------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------------------|
+| `sub`                                            | string (UUID)                                       | User ID                                                                 |
+| `username`                                       | string                                              | Username                                                                |
+| `exp`                                            | number                                              | Expiration time (Unix timestamp)                                        |
+| `iat`                                            | number                                              | Issued-at time (Unix timestamp)                                         |
+| `type`                                           | string                                              | Token type: "access" or "refresh"                                       |
 
 The system MUST use HMAC-SHA256 (HS256) for signing. The signing secret MUST be configurable via environment variable (`ENGRAM_JWT_SECRET`). The secret MUST be at least 32 bytes.
 
@@ -465,12 +465,12 @@ An HTTP server that exposes the cloud Engram API, handling authentication, memor
 
 The cloud server MUST be configurable via environment variables:
 
-| Variable                                            | Required                                 | Default                                 | Description                                                    |
-|-----------------------------------------------------|------------------------------------------|-----------------------------------------|----------------------------------------------------------------|
-| `ENGRAM_CLOUD_PORT`                                 | No                                       | 8080                                    | Server listen port                                             |
-| `ENGRAM_DATABASE_URL`                               | Yes                                      |-----------------------------------------| PostgreSQL connection string                                   |
-| `ENGRAM_JWT_SECRET`                                 | Yes                                      |-----------------------------------------| JWT signing secret (>= 32 bytes)                               |
-| `ENGRAM_BCRYPT_COST`                                | No                                       | 12                                      | bcrypt hashing cost                                            |
+| Variable                                                    | Required                                         | Default                                         | Description                                                            |
+|-------------------------------------------------------------|--------------------------------------------------|-------------------------------------------------|------------------------------------------------------------------------|
+| `ENGRAM_CLOUD_PORT`                                         | No                                               | 8080                                            | Server listen port                                                     |
+| `ENGRAM_DATABASE_URL`                                       | Yes                                              |-------------------------------------------------| PostgreSQL connection string                                           |
+| `ENGRAM_JWT_SECRET`                                         | Yes                                              |-------------------------------------------------| JWT signing secret (>= 32 bytes)                                       |
+| `ENGRAM_BCRYPT_COST`                                        | No                                               | 12                                              | bcrypt hashing cost                                                    |
 
 The server MUST fail to start if required environment variables are missing.
 
@@ -708,13 +708,13 @@ The system MUST expose `GET /sync/search` (authenticated) for full-text search o
 
 **Query Parameters:**
 
-| Parameter                                 | Required                                 | Default                                 | Description                                              |
-|-------------------------------------------|------------------------------------------|-----------------------------------------|----------------------------------------------------------|
-| `q`                                       | Yes                                      |-----------------------------------------| Search query string                                      |
-| `type`                                    | No                                       |-----------------------------------------| Filter by observation type                               |
-| `project`                                 | No                                       |-----------------------------------------| Filter by project                                        |
-| `scope`                                   | No                                       |-----------------------------------------| Filter by scope                                          |
-| `limit`                                   | No                                       | 10                                      | Maximum results                                          |
+| Parameter                                         | Required                                         | Default                                         | Description                                                      |
+|---------------------------------------------------|--------------------------------------------------|-------------------------------------------------|------------------------------------------------------------------|
+| `q`                                               | Yes                                              |-------------------------------------------------| Search query string                                              |
+| `type`                                            | No                                               |-------------------------------------------------| Filter by observation type                                       |
+| `project`                                         | No                                               |-------------------------------------------------| Filter by project                                                |
+| `scope`                                           | No                                               |-------------------------------------------------| Filter by scope                                                  |
+| `limit`                                           | No                                               | 10                                              | Maximum results                                                  |
 
 **Response (200 OK):**
 ```json
@@ -767,10 +767,10 @@ The system MUST expose `GET /sync/context` (authenticated) that returns a format
 
 **Query Parameters:**
 
-| Parameter                                 | Required                                 | Default                                 | Description                                     |
-|-------------------------------------------|------------------------------------------|-----------------------------------------|-------------------------------------------------|
-| `project`                                 | No                                       |-----------------------------------------| Filter by project                               |
-| `scope`                                   | No                                       |-----------------------------------------| Filter by scope                                 |
+| Parameter                                         | Required                                         | Default                                         | Description                                             |
+|---------------------------------------------------|--------------------------------------------------|-------------------------------------------------|---------------------------------------------------------|
+| `project`                                         | No                                               |-------------------------------------------------| Filter by project                                       |
+| `scope`                                           | No                                               |-------------------------------------------------| Filter by scope                                         |
 
 **Response (200 OK):**
 ```json
@@ -927,10 +927,10 @@ The system MUST track which chunks have been synced to/from the cloud to avoid r
 
 The system MUST accept cloud connection configuration:
 
-| Field                                      | Required                                 | Description                                                                              |
-|--------------------------------------------|------------------------------------------|------------------------------------------------------------------------------------------|
-| `server_url`                               | Yes                                      | Cloud server base URL (e.g., `https://engram.example.com`)                               |
-| `token`                                    | Yes                                      | JWT access token or API key (`eng_` prefixed)                                            |
+| Field                                              | Required                                         | Description                                                                                      |
+|----------------------------------------------------|--------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| `server_url`                                       | Yes                                              | Cloud server base URL (e.g., `https://engram.example.com`)                                       |
+| `token`                                            | Yes                                              | JWT access token or API key (`eng_` prefixed)                                                    |
 
 The system MUST validate the URL format. The system MUST support both HTTPS and HTTP (for local development). The system SHOULD warn when using HTTP in non-localhost contexts.
 
@@ -961,10 +961,10 @@ Extends the existing CLI with flags and subcommands for cloud sync operations. T
 
 The system MUST add the following global flags to the CLI:
 
-| Flag                                     | Short                                 | Env Var                                           | Description                                        |
-|------------------------------------------|---------------------------------------|---------------------------------------------------|----------------------------------------------------|
-| `--remote`                               | `-r`                                  | `ENGRAM_REMOTE_URL`                               | Cloud server URL                                   |
-| `--token`                                | `-t`                                  | `ENGRAM_TOKEN`                                    | Authentication token                               |
+| Flag                                             | Short                                         | Env Var                                                   | Description                                                |
+|--------------------------------------------------|-----------------------------------------------|-----------------------------------------------------------|------------------------------------------------------------|
+| `--remote`                                       | `-r`                                          | `ENGRAM_REMOTE_URL`                                       | Cloud server URL                                           |
+| `--token`                                        | `-t`                                          | `ENGRAM_TOKEN`                                            | Authentication token                                       |
 
 When `--remote` is provided, applicable commands (search, context, sync) MUST operate against the cloud server instead of the local SQLite store. The token MAY also be read from a config file at `~/.engram/cloud.json`.
 
@@ -988,13 +988,13 @@ When `--remote` is provided, applicable commands (search, context, sync) MUST op
 
 The system MUST add an `engram cloud` subcommand group:
 
-| Subcommand                                            | Description                                          |
-|-------------------------------------------------------|------------------------------------------------------|
-| `engram cloud register`                               | Register a new account                               |
-| `engram cloud login`                                  | Login and save token                                 |
-| `engram cloud sync`                                   | Push and pull chunks                                 |
-| `engram cloud status`                                 | Show sync status                                     |
-| `engram cloud api-key`                                | Generate/show API key                                |
+| Subcommand                                                    | Description                                                  |
+|---------------------------------------------------------------|--------------------------------------------------------------|
+| `engram cloud register`                                       | Register a new account                                       |
+| `engram cloud login`                                          | Login and save token                                         |
+| `engram cloud sync`                                           | Push and pull chunks                                         |
+| `engram cloud status`                                         | Show sync status                                             |
+| `engram cloud api-key`                                        | Generate/show API key                                        |
 
 #### Scenario: Cloud register
 
@@ -1424,24 +1424,24 @@ CREATE INDEX IF NOT EXISTS idx_cloud_sync_user ON cloud_sync_chunks(user_id);
 
 ### Unauthenticated Routes
 
-| Method                                 | Path                                           | Description                                     |
-|----------------------------------------|------------------------------------------------|-------------------------------------------------|
-| GET                                    | `/health`                                      | Health check                                    |
-| POST                                   | `/auth/register`                               | User registration                               |
-| POST                                   | `/auth/login`                                  | User login                                      |
-| POST                                   | `/auth/refresh`                                | Token refresh                                   |
+| Method                                         | Path                                                   | Description                                             |
+|------------------------------------------------|--------------------------------------------------------|---------------------------------------------------------|
+| GET                                            | `/health`                                              | Health check                                            |
+| POST                                           | `/auth/register`                                       | User registration                                       |
+| POST                                           | `/auth/login`                                          | User login                                              |
+| POST                                           | `/auth/refresh`                                        | Token refresh                                           |
 
 ### Authenticated Routes (JWT or API Key required)
 
-| Method                                 | Path                                                  | Description                                                 |
-|----------------------------------------|-------------------------------------------------------|-------------------------------------------------------------|
-| POST                                   | `/sync/push`                                          | Push a sync chunk                                           |
-| GET                                    | `/sync/pull`                                          | Get chunk manifest                                          |
-| GET                                    | `/sync/pull/{chunk_id}`                               | Download a specific chunk                                   |
-| GET                                    | `/sync/search`                                        | Full-text search observations                               |
-| GET                                    | `/sync/context`                                       | Get formatted context                                       |
-| POST                                   | `/auth/api-key`                                       | Generate/rotate API key                                     |
-| DELETE                                 | `/auth/api-key`                                       | Revoke API key                                              |
+| Method                                         | Path                                                          | Description                                                         |
+|------------------------------------------------|---------------------------------------------------------------|---------------------------------------------------------------------|
+| POST                                           | `/sync/push`                                                  | Push a sync chunk                                                   |
+| GET                                            | `/sync/pull`                                                  | Get chunk manifest                                                  |
+| GET                                            | `/sync/pull/{chunk_id}`                                       | Download a specific chunk                                           |
+| GET                                            | `/sync/search`                                                | Full-text search observations                                       |
+| GET                                            | `/sync/context`                                               | Get formatted context                                               |
+| POST                                           | `/auth/api-key`                                               | Generate/rotate API key                                             |
+| DELETE                                         | `/auth/api-key`                                               | Revoke API key                                                      |
 
 ### Standard Error Response Format
 
@@ -1460,15 +1460,15 @@ This matches the existing local server error format (see `jsonError` in `interna
 
 The cloud models mirror the local SQLite models with these differences:
 
-| Local (SQLite)                                          | Cloud (PostgreSQL)                                   | Difference                                                                                   |
-|---------------------------------------------------------|------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| `sessions`                                              | `cloud_sessions`                                     | Added `user_id UUID` column                                                                  |
-| `observations`                                          | `cloud_observations`                                 | Added `user_id UUID` column, `BIGSERIAL` id, `tsvector` column                               |
-| `user_prompts`                                          | `cloud_prompts`                                      | Added `user_id UUID` column, `BIGSERIAL` id, `tsvector` column                               |
-| `sync_chunks`                                           | `cloud_sync_chunks`                                  | Added `user_id UUID` column                                                                  |
-| N/A                                                     | `cloud_users`                                        | New table                                                                                    |
-| N/A                                                     | `cloud_chunks`                                       | New table (stores chunk JSONB data)                                                          |
-| `observations_fts` (FTS5)                               | `search_vector` column                               | PostgreSQL native tsvector replaces SQLite FTS5                                              |
-| `prompts_fts` (FTS5)                                    | `search_vector` column                               | PostgreSQL native tsvector replaces SQLite FTS5                                              |
+| Local (SQLite)                                                  | Cloud (PostgreSQL)                                           | Difference                                                                                           |
+|-----------------------------------------------------------------|--------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| `sessions`                                                      | `cloud_sessions`                                             | Added `user_id UUID` column                                                                          |
+| `observations`                                                  | `cloud_observations`                                         | Added `user_id UUID` column, `BIGSERIAL` id, `tsvector` column                                       |
+| `user_prompts`                                                  | `cloud_prompts`                                              | Added `user_id UUID` column, `BIGSERIAL` id, `tsvector` column                                       |
+| `sync_chunks`                                                   | `cloud_sync_chunks`                                          | Added `user_id UUID` column                                                                          |
+| N/A                                                             | `cloud_users`                                                | New table                                                                                            |
+| N/A                                                             | `cloud_chunks`                                               | New table (stores chunk JSONB data)                                                                  |
+| `observations_fts` (FTS5)                                       | `search_vector` column                                       | PostgreSQL native tsvector replaces SQLite FTS5                                                      |
+| `prompts_fts` (FTS5)                                            | `search_vector` column                                       | PostgreSQL native tsvector replaces SQLite FTS5                                                      |
 
 The `ChunkData` struct from `internal/sync` (sessions, observations, prompts) is the canonical wire format for both local and cloud sync.

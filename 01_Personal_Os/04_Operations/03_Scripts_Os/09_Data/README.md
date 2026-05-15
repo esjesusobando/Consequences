@@ -14,12 +14,12 @@ Scripts para analytics, parsing y procesamiento de datos.
 
 ## 📦 Scripts (4)
 
-| #                     | Script                                             | Propósito                                 |
-|-----------------------|----------------------------------------------------|-------------------------------------------|
-| 20                    | `20_Master_Analytics_Factory.py`                   | Factory de analytics                      |
-| 84                    | `84_Batch_Parser.py`                               | Parsing por lotes                         |
-| 85                    | `85_Resumen_Extractor.py`                          | Extracción de resúmenes                   |
-| 86                    | `86_Universal_Parser.py`                           | Parser universal                          |
+| #                             | Script                                                     | Propósito                                         |
+|-------------------------------|------------------------------------------------------------|---------------------------------------------------|
+| 20                            | `20_Master_Analytics_Factory.py`                           | Factory de analytics                              |
+| 84                            | `84_Batch_Parser.py`                                       | Parsing por lotes                                 |
+| 85                            | `85_Resumen_Extractor.py`                                  | Extracción de resúmenes                           |
+| 86                            | `86_Universal_Parser.py`                                   | Parser universal                                  |
 
 ---
 

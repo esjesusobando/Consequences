@@ -3,17 +3,17 @@
 ## 1. Estado Actual
 
 ### Documentación Existente (30 archivos)
-| Módulo                         | Archivos                                                      | Estado                        |
-|--------------------------------|---------------------------------------------------------------|-------------------------------|
-| 01_Gestion                     | Dashboard, Objetivos                                          | ✅ Documentado                 |
-| 02_Personal                    | Organigrama, Horarios, Evaluaciones, Training                 | ✅ Documentado                 |
-| 03_Proveedores                 | Directorio, Pedidos, Entregas, Calidad                        | ✅ Documentado                 |
-| 04_Logistica                   | Inventario, Compras, Caja                                     | ✅ Documentado                 |
-| 05_Cocina                      | Menú, Recetas, Higiene                                        | ✅ Documentado                 |
-| 06_Comando                     | Tickets Activos, Tiempos                                      | ✅ Documentado                 |
-| 07_Clientes                    | Base, Reservas, Fidelización, Feedback                        | ✅ Documentado                 |
-| 08_Marketing                   | Redes Sociales, Calendario                                    | ✅ Documentado                 |
-| 09_Reportes                    | Diario, Semanal, Mensual                                      | ✅ Documentado                 |
+| Módulo                                 | Archivos                                                              | Estado                                |
+|----------------------------------------|-----------------------------------------------------------------------|---------------------------------------|
+| 01_Gestion                             | Dashboard, Objetivos                                                  | ✅ Documentado                         |
+| 02_Personal                            | Organigrama, Horarios, Evaluaciones, Training                         | ✅ Documentado                         |
+| 03_Proveedores                         | Directorio, Pedidos, Entregas, Calidad                                | ✅ Documentado                         |
+| 04_Logistica                           | Inventario, Compras, Caja                                             | ✅ Documentado                         |
+| 05_Cocina                              | Menú, Recetas, Higiene                                                | ✅ Documentado                         |
+| 06_Comando                             | Tickets Activos, Tiempos                                              | ✅ Documentado                         |
+| 07_Clientes                            | Base, Reservas, Fidelización, Feedback                                | ✅ Documentado                         |
+| 08_Marketing                           | Redes Sociales, Calendario                                            | ✅ Documentado                         |
+| 09_Reportes                            | Diario, Semanal, Mensual                                              | ✅ Documentado                         |
 
 ### SPEC.md
 - ✅ UI/UX Spec completo
@@ -26,31 +26,31 @@
 ## 2. Gaps Identificados
 
 ### Gap 1: Código
-| Componente                     | Estado                        |
-|--------------------------------|-------------------------------|
-| Frontend React                 | ❌ No iniciado                 |
-| Backend Django                 | ❌ No iniciado                 |
-| Base de datos                  | ❌ No iniciada                 |
+| Componente                             | Estado                                |
+|----------------------------------------|---------------------------------------|
+| Frontend React                         | ❌ No iniciado                         |
+| Backend Django                         | ❌ No iniciado                         |
+| Base de datos                          | ❌ No iniciada                         |
 
 ### Gap 2: Testing
-| Tipo                       | Estado                        |
-|----------------------------|-------------------------------|
-| Unit Tests                 | ❌ No iniciado                 |
-| E2E Tests                  | ❌ No iniciado                 |
+| Tipo                               | Estado                                |
+|------------------------------------|---------------------------------------|
+| Unit Tests                         | ❌ No iniciado                         |
+| E2E Tests                          | ❌ No iniciado                         |
 
 ### Gap 3: DevOps
-| Componente                   | Estado                           |
-|------------------------------|----------------------------------|
-| Docker                       | ❌ No configurado                 |
-| CI/CD                        | ❌ No configurado                 |
-| Deploy                       | ❌ No configurado                 |
+| Componente                           | Estado                                   |
+|--------------------------------------|------------------------------------------|
+| Docker                               | ❌ No configurado                         |
+| CI/CD                                | ❌ No configurado                         |
+| Deploy                               | ❌ No configurado                         |
 
 ### Gap 4: Documentación Técnica
-| Tipo                              | Estado                   |
-|-----------------------------------|--------------------------|
-| API Spec                          | ❌ Falta                  |
-| Database Schema                   | ❌ Falta                  |
-| Component Library                 | ❌ Falta                  |
+| Tipo                                      | Estado                           |
+|-------------------------------------------|----------------------------------|
+| API Spec                                  | ❌ Falta                          |
+| Database Schema                           | ❌ Falta                          |
+| Component Library                         | ❌ Falta                          |
 
 ---
 
@@ -58,16 +58,16 @@
 
 ### Tech Stack Elite (Silicon Valley)
 
-| Capa                           | Tecnología                   | Versión                   |
-|--------------------------------|------------------------------|---------------------------|
-| **Frontend**                   | React                        | 19.x                      |
-| **Styling**                    | Tailwind CSS                 | 4.x                       |
-| **State**                      | Zustand                      | 5.x                       |
-| **Backend**                    | Django DRF                   | 5.x                       |
-| **Database**                   | PostgreSQL                   | 16.x                      |
-| **API Client**                 | AI SDK                       | 5.x                       |
-| **Testing**                    | Playwright                   | Latest                    |
-| **Container**                  | Docker                       | Latest                    |
+| Capa                                   | Tecnología                           | Versión                           |
+|----------------------------------------|--------------------------------------|-----------------------------------|
+| **Frontend**                           | React                                | 19.x                              |
+| **Styling**                            | Tailwind CSS                         | 4.x                               |
+| **State**                              | Zustand                              | 5.x                               |
+| **Backend**                            | Django DRF                           | 5.x                               |
+| **Database**                           | PostgreSQL                           | 16.x                              |
+| **API Client**                         | AI SDK                               | 5.x                               |
+| **Testing**                            | Playwright                           | Latest                            |
+| **Container**                          | Docker                               | Latest                            |
 
 ### Arquitectura Propuesta
 
@@ -104,31 +104,31 @@ macano-app/
 ## 4. Roadmap Propuesto
 
 ### Semana 1: Fundamentos
-| Día                   | Tarea                                          |
-|-----------------------|------------------------------------------------|
-| 1                     | Setup proyecto + Docker                        |
-| 2                     | Backend: Modelos DB + API base                 |
-| 3                     | Frontend: Setup + Dashboard                    |
-| 4                     | Frontend: Autenticación                        |
-| 5                     | Testing: E2E setup                             |
+| Día                           | Tarea                                                  |
+|-------------------------------|--------------------------------------------------------|
+| 1                             | Setup proyecto + Docker                                |
+| 2                             | Backend: Modelos DB + API base                         |
+| 3                             | Frontend: Setup + Dashboard                            |
+| 4                             | Frontend: Autenticación                                |
+| 5                             | Testing: E2E setup                                     |
 
 ### Semana 2: Módulos Core
-| Día                   | Tarea                                                          |
-|-----------------------|----------------------------------------------------------------|
-| 6                     | Módulos 01-03 (Gestión, Personal, Proveedores)                 |
-| 7                     | Módulos 04-05 (Logística, Cocina)                              |
-| 8                     | Módulo 06 (Comando - Tiempo Real)                              |
-| 9                     | Módulos 07-09 (Clientes, Marketing, Reportes)                  |
-| 10                    | Testing + Bug fixing                                           |
+| Día                           | Tarea                                                                  |
+|-------------------------------|------------------------------------------------------------------------|
+| 6                             | Módulos 01-03 (Gestión, Personal, Proveedores)                         |
+| 7                             | Módulos 04-05 (Logística, Cocina)                                      |
+| 8                             | Módulo 06 (Comando - Tiempo Real)                                      |
+| 9                             | Módulos 07-09 (Clientes, Marketing, Reportes)                          |
+| 10                            | Testing + Bug fixing                                                   |
 
 ### Semana 3: polish
-| Día                   | Tarea                                    |
-|-----------------------|------------------------------------------|
-| 11                    | UI/UX refinamiento                       |
-| 12                    | Performance optimization                 |
-| 13                    | Security audit                           |
-| 14                    | Deploy producción                        |
-| 15                    | Documentación final                      |
+| Día                           | Tarea                                            |
+|-------------------------------|--------------------------------------------------|
+| 11                            | UI/UX refinamiento                               |
+| 12                            | Performance optimization                         |
+| 13                            | Security audit                                   |
+| 14                            | Deploy producción                                |
+| 15                            | Documentación final                              |
 
 ---
 

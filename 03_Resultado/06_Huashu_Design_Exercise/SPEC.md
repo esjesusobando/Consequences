@@ -12,14 +12,14 @@ Presentación de 6 slides sobre cómo integrar IA en workflows diarios. Sigue la
 **Kenya Hara + Japanese Editorial**: Tono cálido (paper white), tipografía serif para display + sans-serif para body, detalles en terracota. La克制 transmite profesionalismo sin frialdad.
 
 ### Color Palette
-| Token      | Hex                   | Usage                   |
-|------------|-----------------------|-------------------------|
-| ink        | `#1A1A1A`             | Text principal          |
-| paper      | `#FAF8F5`             | Fondo                   |
-| paper-warm | `#F5F0E8`             | Cards, containers       |
-| accent     | `#C4563A`             | Énfasis, números, rules |
-| muted      | `#6B6560`             | Text secundario         |
-| line       | `rgba(26,26,26,0.12)` | Borders, dividers       |
+| Token              | Hex                           | Usage                           |
+|--------------------|-------------------------------|---------------------------------|
+| ink                | `#1A1A1A`                     | Text principal                  |
+| paper              | `#FAF8F5`                     | Fondo                           |
+| paper-warm         | `#F5F0E8`                     | Cards, containers               |
+| accent             | `#C4563A`                     | Énfasis, números, rules         |
+| muted              | `#6B6560`                     | Text secundario                 |
+| line               | `rgba(26,26,26,0.12)`         | Borders, dividers               |
 
 ### Typography
 - **Display**: Cormorant Garamond (serif, 400/600) — títulos y citas
@@ -115,14 +115,14 @@ Presentación de 6 slides sobre cómo integrar IA en workflows diarios. Sigue la
 
 ## Slides Content
 
-| #   | Título                     | Tipo     | Contenido                                      |
-|-----|----------------------------|----------|------------------------------------------------|
-| 01  | De la Herramienta al Flujo | Title    | Subtítulo sobre integrar IA sin perder control |
-| 02  | Diseñar con IA             | Grid     | Antes/ahora对比                                  |
-| 03  | El Ciclo                   | Split    | Input → Contexto → Output → Feedback           |
-| 04  | 3 Workflows                | Cards    | Research, Writing, Learning, Creation          |
-| 05  | Contexto = Calidad         | Centered | Quote sobre specificity                        |
-| 06  | Empezá Mañana              | CTA      | Próximo paso concreto                          |
+| #           | Título                             | Tipo             | Contenido                                              |
+|-------------|------------------------------------|------------------|--------------------------------------------------------|
+| 01          | De la Herramienta al Flujo         | Title            | Subtítulo sobre integrar IA sin perder control         |
+| 02          | Diseñar con IA                     | Grid             | Antes/ahora对比                                          |
+| 03          | El Ciclo                           | Split            | Input → Contexto → Output → Feedback                   |
+| 04          | 3 Workflows                        | Cards            | Research, Writing, Learning, Creation                  |
+| 05          | Contexto = Calidad                 | Centered         | Quote sobre specificity                                |
+| 06          | Empezá Mañana                      | CTA              | Próximo paso concreto                                  |
 
 ## Assumptions
 

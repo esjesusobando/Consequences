@@ -13,13 +13,13 @@
 
 ## Recommended Platform Mix
 
-| Platform | Role | Budget % | Why |
-|----------|------|----------|-----|
-| Meta (FB/IG) | Primary | 35-40% | Precise interest targeting, video-heavy, retargeting |
-| YouTube | Primary | 35-40% | Long-form content, VSL pre-rolls, intent-based audiences |
-| Email | Supporting | 15-20% | Nurture sequences, launch campaigns, repeat buyers |
-| TikTok | Testing | 5-10% | Education content, organic-to-paid amplification (min $50/day campaign) |
-| Google Search | Testing | 5% | High-intent "best [topic] course" queries |
+| Platform            | Role             | Budget %         | Why                                                                           |
+|---------------------|------------------|------------------|-------------------------------------------------------------------------------|
+| Meta (FB/IG)        | Primary          | 35-40%           | Precise interest targeting, video-heavy, retargeting                          |
+| YouTube             | Primary          | 35-40%           | Long-form content, VSL pre-rolls, intent-based audiences                      |
+| Email               | Supporting       | 15-20%           | Nurture sequences, launch campaigns, repeat buyers                            |
+| TikTok              | Testing          | 5-10%            | Education content, organic-to-paid amplification (min $50/day campaign)       |
+| Google Search       | Testing          | 5%               | High-intent "best [topic] course" queries                                     |
 
 ## Campaign Architecture
 
@@ -71,14 +71,14 @@ Account; YouTube
 - **UGC-style**: casual, phone-recorded testimonials (TikTok/Reels)
 
 ### Funnel-Specific Creative
-| Funnel Stage | Creative Type | CTA |
-|-------------|--------------|-----|
-| Lead magnet | Free guide/checklist ad | "Download Free" |
-| Webinar | Founder video, value preview | "Save My Spot" |
-| VSL/Sales page | Problem-agitation-solution video | "Watch Free Training" |
-| Tripwire ($7-$27) | Quick value pitch, urgency | "Get It Now" |
-| Core offer ($97-$997) | Testimonial, transformation | "Enroll Now" |
-| High-ticket ($1K+) | Case study, founder credibility | "Apply Now" |
+| Funnel Stage                | Creative Type                          | CTA                         |
+|-----------------------------|----------------------------------------|-----------------------------|
+| Lead magnet                 | Free guide/checklist ad                | "Download Free"             |
+| Webinar                     | Founder video, value preview           | "Save My Spot"              |
+| VSL/Sales page              | Problem-agitation-solution video       | "Watch Free Training"       |
+| Tripwire ($7-$27)           | Quick value pitch, urgency             | "Get It Now"                |
+| Core offer ($97-$997)       | Testimonial, transformation            | "Enroll Now"                |
+| High-ticket ($1K+)          | Case study, founder credibility        | "Apply Now"                 |
 
 ### Video Ad Structure (Meta/YouTube)
 1. **Hook** (0-3s): pattern interrupt, bold claim, or question
@@ -110,49 +110,49 @@ Account; YouTube
 
 ## Budget Guidelines
 
-| Metric | Info Products Benchmark |
-|--------|----------------------|
-| Meta CPC | $0.50-$2.00 |
-| Meta CPL (lead magnet) | $2-$8 |
-| Meta CPA (tripwire $7-$27) | $5-$15 |
-| Meta CPA (core offer $97-$997) | $30-$100 |
-| YouTube CPC | $0.10-$0.30 (in-stream) |
-| YouTube CPV | $0.02-$0.10 |
-| Google CPC (course keywords) | $2-$6 |
-| Funnel ROAS target | 3-5x (blended across funnel) |
-| Min monthly budget | $2,000+ (Meta-first approach) |
+| Metric                               | Info Products Benchmark             |
+|--------------------------------------|-------------------------------------|
+| Meta CPC                             | $0.50-$2.00                         |
+| Meta CPL (lead magnet)               | $2-$8                               |
+| Meta CPA (tripwire $7-$27)           | $5-$15                              |
+| Meta CPA (core offer $97-$997)       | $30-$100                            |
+| YouTube CPC                          | $0.10-$0.30 (in-stream)             |
+| YouTube CPV                          | $0.02-$0.10                         |
+| Google CPC (course keywords)         | $2-$6                               |
+| Funnel ROAS target                   | 3-5x (blended across funnel)        |
+| Min monthly budget                   | $2,000+ (Meta-first approach)       |
 
 ### Budget by Funnel Type
-| Funnel Type | Cold Traffic % | Retargeting % | Buyer % |
-|------------|---------------|---------------|---------|
-| Lead magnet → email nurture | 60% | 30% | 10% |
-| Webinar funnel | 50% | 35% | 15% |
-| Direct-to-offer (low ticket) | 70% | 20% | 10% |
-| Application funnel (high ticket) | 40% | 40% | 20% |
+| Funnel Type                            | Cold Traffic %        | Retargeting %         | Buyer %         |
+|----------------------------------------|-----------------------|-----------------------|-----------------|
+| Lead magnet → email nurture            | 60%                   | 30%                   | 10%             |
+| Webinar funnel                         | 50%                   | 35%                   | 15%             |
+| Direct-to-offer (low ticket)           | 70%                   | 20%                   | 10%             |
+| Application funnel (high ticket)       | 40%                   | 40%                   | 20%             |
 
 ## Bidding Strategy Selection
 
-| Platform | Monthly Conversions | Recommended Strategy |
-|----------|--------------------|--------------------|
-| Meta | Default | Lowest Cost (volume during launch) |
-| Meta | Efficiency priority | Cost Cap at target CPA |
-| Meta | Revenue tracking | ROAS Goal (3-5x blended target) |
-| YouTube | Default | Maximum CPV |
-| YouTube | 15-29 conversions | Maximize Conversions |
-| YouTube | 30+ conversions | Target CPA |
-| Google | <15 | Maximize Clicks (cap CPC) |
-| Google | 15-29 | Maximize Conversions |
-| Google | 30+ | Target CPA |
+| Platform         | Monthly Conversions        | Recommended Strategy                     |
+|------------------|----------------------------|------------------------------------------|
+| Meta             | Default                    | Lowest Cost (volume during launch)       |
+| Meta             | Efficiency priority        | Cost Cap at target CPA                   |
+| Meta             | Revenue tracking           | ROAS Goal (3-5x blended target)          |
+| YouTube          | Default                    | Maximum CPV                              |
+| YouTube          | 15-29 conversions          | Maximize Conversions                     |
+| YouTube          | 30+ conversions            | Target CPA                               |
+| Google           | <15                        | Maximize Clicks (cap CPC)                |
+| Google           | 15-29                      | Maximize Conversions                     |
+| Google           | 30+                        | Target CPA                               |
 
 ## KPI Targets
 
-| Metric | Month 1 | Month 3 | Month 6 |
-|--------|---------|---------|---------|
-| CPL (lead magnet) | <$8 | <$5 | <$4 |
-| Webinar registration CPA | <$15 | <$10 | <$8 |
-| Front-end ROAS | 1.0 (break even) | 1.5 | 2.0+ |
-| Blended ROAS (with backend) | Track | 3.0 | 5.0+ |
-| Email list growth | Track | 1,000+/mo | 3,000+/mo |
+| Metric                            | Month 1                | Month 3         | Month 6         |
+|-----------------------------------|------------------------|-----------------|-----------------|
+| CPL (lead magnet)                 | <$8                    | <$5             | <$4             |
+| Webinar registration CPA          | <$15                   | <$10            | <$8             |
+| Front-end ROAS                    | 1.0 (break even)       | 1.5             | 2.0+            |
+| Blended ROAS (with backend)       | Track                  | 3.0             | 5.0+            |
+| Email list growth                 | Track                  | 1,000+/mo       | 3,000+/mo       |
 
 ## Common Pitfalls
 

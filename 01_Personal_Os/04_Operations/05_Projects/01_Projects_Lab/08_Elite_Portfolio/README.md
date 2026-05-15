@@ -19,14 +19,14 @@
 
 ### Stack Tecnológico
 
-| Tecnología                  | Versión                 | Propósito                         |
-|-----------------------------|-------------------------|-----------------------------------|
-| Next.js                     | 14.2.25                 | App Router, SSR                   |
-| React                       | 18.3.1                  | Server Components                 |
-| Framer Motion               | 11.18.2                 | Animaciones premium               |
-| Tailwind CSS                | 3.4.17                  | Estilos                           |
-| TypeScript                  | 5.4.5                   | Type safety                       |
-| Lucide React                | 0.468.0                 | Iconos                            |
+| Tecnología                          | Versión                         | Propósito                                 |
+|-------------------------------------|---------------------------------|-------------------------------------------|
+| Next.js                             | 14.2.25                         | App Router, SSR                           |
+| React                               | 18.3.1                          | Server Components                         |
+| Framer Motion                       | 11.18.2                         | Animaciones premium                       |
+| Tailwind CSS                        | 3.4.17                          | Estilos                                   |
+| TypeScript                          | 5.4.5                           | Type safety                               |
+| Lucide React                        | 0.468.0                         | Iconos                                    |
 
 ---
 

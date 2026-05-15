@@ -5,14 +5,14 @@
 
 ## Overview
 
-| Framework          | Expansion                        | Best For              | Platform Fit         |
-|--------------------|----------------------------------|-----------------------|----------------------|
-| AIDA               | Attention, Interest, Desire, Action | Cold audiences       | Meta, Google, YouTube |
-| PAS                | Problem, Agitate, Solution       | Pain-point products   | Meta, LinkedIn, Google |
-| BAB                | Before, After, Bridge            | Transformation offers | Meta, TikTok, YouTube |
-| 4P                 | Promise, Picture, Proof, Push    | High-ticket items     | LinkedIn, Google      |
-| FAB                | Features, Advantages, Benefits   | Technical products    | Google, LinkedIn      |
-| Star-Story-Solution| Star, Story, Solution            | Brand storytelling    | Meta, TikTok, YouTube |
+| Framework                  | Expansion                                 | Best For                      | Platform Fit                 |
+|----------------------------|-------------------------------------------|-------------------------------|------------------------------|
+| AIDA                       | Attention, Interest, Desire, Action       | Cold audiences                | Meta, Google, YouTube        |
+| PAS                        | Problem, Agitate, Solution                | Pain-point products           | Meta, LinkedIn, Google       |
+| BAB                        | Before, After, Bridge                     | Transformation offers         | Meta, TikTok, YouTube        |
+| 4P                         | Promise, Picture, Proof, Push             | High-ticket items             | LinkedIn, Google             |
+| FAB                        | Features, Advantages, Benefits            | Technical products            | Google, LinkedIn             |
+| Star-Story-Solution        | Star, Story, Solution                     | Brand storytelling            | Meta, TikTok, YouTube        |
 
 ## AIDA
 

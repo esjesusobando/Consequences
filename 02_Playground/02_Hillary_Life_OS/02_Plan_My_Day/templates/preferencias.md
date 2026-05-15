@@ -6,11 +6,11 @@
 
 ## Energía por Horario
 
-| Horario                       | Energía                     | Mejor Para                                    |
-|-------------------------------|-----------------------------|-----------------------------------------------|
-| 09:00-12:00                   | 🔴 Alta                      | Deep work, tareas complejas                   |
-| 14:00-17:00                   | 🟡 Media                     | Reuniones, tareas中等                           |
-| 19:00-22:00                   | 🟢 Baja                      | Admin, tareas simples                         |
+| Horario                               | Energía                             | Mejor Para                                            |
+|---------------------------------------|-------------------------------------|-------------------------------------------------------|
+| 09:00-12:00                           | 🔴 Alta                              | Deep work, tareas complejas                           |
+| 14:00-17:00                           | 🟡 Media                             | Reuniones, tareas中等                                   |
+| 19:00-22:00                           | 🟢 Baja                              | Admin, tareas simples                                 |
 
 ---
 
@@ -36,25 +36,25 @@
 
 ## Priorities Test (10x Impact)
 
-| Prioridad                    | Criterio                                    |
-|------------------------------|---------------------------------------------|
-| **P0**                       | Hacer hoy, alto impacto                     |
-| **P1**                       | Esta semana, buen impacto                   |
-| **P2**                       | Este mes, algo de impacto                   |
-| **P3**                       | Someday, bajo impacto                       |
+| Prioridad                            | Criterio                                            |
+|--------------------------------------|-----------------------------------------------------|
+| **P0**                               | Hacer hoy, alto impacto                             |
+| **P1**                               | Esta semana, buen impacto                           |
+| **P2**                               | Este mes, algo de impacto                           |
+| **P3**                               | Someday, bajo impacto                               |
 
 ---
 
 ## Tags Preferidos
 
-| Tag                           | Significado                              |
-|-------------------------------|------------------------------------------|
-| trabajo                       | Tareas profesionales                     |
-| personal                      | Vida personal                            |
-| familia                       | Familia/niños                            |
-| salud                         | Salud/ejercicio                          |
-| aprendizaje                   | Estudio/mejora                           |
-| admin                         | Tareas administrativas                   |
+| Tag                                   | Significado                                      |
+|---------------------------------------|--------------------------------------------------|
+| trabajo                               | Tareas profesionales                             |
+| personal                              | Vida personal                                    |
+| familia                               | Familia/niños                                    |
+| salud                                 | Salud/ejercicio                                  |
+| aprendizaje                           | Estudio/mejora                                   |
+| admin                                 | Tareas administrativas                           |
 
 ---
 

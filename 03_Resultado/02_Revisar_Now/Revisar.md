@@ -8,20 +8,20 @@
 
 ## 📊 Resumen Ejecutivo
 
-| Dimensión                           | Estado                 | Issues                                                                   |
-|-------------------------------------|------------------------|--------------------------------------------------------------------------|
-| **00_Winter_is_Coming**             | 🟡 WARN                 | GOALS.md desactualizado (Q1 2026 en abril)                               |
-| **01_Core**                         | 🟡 WARN                 | Skills sin numerar (gap 22→25), README desactualizado                    |
-| **02_Knowledge**                    | ✅ PASS                 | Estructura limpia                                                        |
-| **03_Tasks**                        | 🟡 WARN                 | Tareas sin limpiar (P0 test, consolidated)                               |
-| **04_Operations**                   | ✅ PASS                 | 12 subdirectorios, gap en #10 (no `10_*`)                                |
-| **05_Archive**                      | ✅ PASS                 | 10 subdirectorios, carpeta `10_To_Delete` pendiente                      |
-| **06_Playground**                   | ✅ PASS                 | 7 directorios activos                                                    |
-| **07_Projects**                     | ✅ PASS                 | 2 subdirectorios                                                         |
-| **03_Scripts_Os**                   | 🟡 WARN                 | Scripts migrados parcialmente, archivos sueltos                          |
-| **Git**                             | 🔴 FAIL                 | Submodule fantasma, scripts borrados, archivos untracked                 |
-| **Raíz**                            | 🔴 FAIL                 | 5 archivos huérfanos + directorio `Now/` fuera de estructura             |
-| **Seguridad**                       | 🔴 CRITICAL             | API keys expuestas en `.mcp.json` (commiteadas a Git)                    |
+| Dimensión                                   | Estado                         | Issues                                                                           |
+|---------------------------------------------|--------------------------------|----------------------------------------------------------------------------------|
+| **00_Winter_is_Coming**                     | 🟡 WARN                         | GOALS.md desactualizado (Q1 2026 en abril)                                       |
+| **01_Core**                                 | 🟡 WARN                         | Skills sin numerar (gap 22→25), README desactualizado                            |
+| **02_Knowledge**                            | ✅ PASS                         | Estructura limpia                                                                |
+| **03_Tasks**                                | 🟡 WARN                         | Tareas sin limpiar (P0 test, consolidated)                                       |
+| **04_Operations**                           | ✅ PASS                         | 12 subdirectorios, gap en #10 (no `10_*`)                                        |
+| **05_Archive**                              | ✅ PASS                         | 10 subdirectorios, carpeta `10_To_Delete` pendiente                              |
+| **06_Playground**                           | ✅ PASS                         | 7 directorios activos                                                            |
+| **07_Projects**                             | ✅ PASS                         | 2 subdirectorios                                                                 |
+| **03_Scripts_Os**                           | 🟡 WARN                         | Scripts migrados parcialmente, archivos sueltos                                  |
+| **Git**                                     | 🔴 FAIL                         | Submodule fantasma, scripts borrados, archivos untracked                         |
+| **Raíz**                                    | 🔴 FAIL                         | 5 archivos huérfanos + directorio `Now/` fuera de estructura                     |
+| **Seguridad**                               | 🔴 CRITICAL                     | API keys expuestas en `.mcp.json` (commiteadas a Git)                            |
 
 ### Veredicto: 🟡 **AMBER** — No está en Pure Green
 
@@ -65,12 +65,12 @@ El directorio `07_Projects/01_Projects_Lab/07_Backup_OIM` está registrado como 
 
 Tres submodules apuntan a paths que **no existen** en la estructura actual:
 
-| Submodule                                              | Path esperado                                          | ¿Existe?                                         |
-|--------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------|
-| `03_Resources_External/External/gentle-ai`             | `03_Resources_External/External/gentle-ai`             | ❌ No existe `03_Resources_External/`             |
-| `Momentum_Os/cursor-ide`                               | `Momentum_Os/cursor-ide`                               | ❌ No existe `Momentum_Os/`                       |
-| `Momentum_Os/claude-code`                              | `Momentum_Os/claude-code`                              | ❌ No existe `Momentum_Os/`                       |
-| `Every_Sync_Zone`                                      | `Every_Sync_Zone`                                      | ❌ No existe en raíz                              |
+| Submodule                                                      | Path esperado                                                  | ¿Existe?                                                 |
+|----------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------|
+| `03_Resources_External/External/gentle-ai`                     | `03_Resources_External/External/gentle-ai`                     | ❌ No existe `03_Resources_External/`                     |
+| `Momentum_Os/cursor-ide`                                       | `Momentum_Os/cursor-ide`                                       | ❌ No existe `Momentum_Os/`                               |
+| `Momentum_Os/claude-code`                                      | `Momentum_Os/claude-code`                                      | ❌ No existe `Momentum_Os/`                               |
+| `Every_Sync_Zone`                                              | `Every_Sync_Zone`                                              | ❌ No existe en raíz                                      |
 
 **Fix:** Limpiar `.gitmodules` eliminando los 4 submodules huérfanos.
 
@@ -82,13 +82,13 @@ Tres submodules apuntan a paths que **no existen** en la estructura actual:
 
 5 archivos markdown + 1 directorio **no pertenecen** a ninguna dimensión (00-08):
 
-| Archivo                                                                                                                                                                                                | Debería estar en                                 |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| [Avengers_Plan.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/Avengers_Plan.md)                                   | `04_Operations/05_Plans/` o archivar             |
-| [Learning_Always.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/Learning_Always.md)                               | `02_Knowledge/04_Docs/`                          |
-| [Optimizar_Scripts_Skills.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/Optimizar_Scripts_Skills.md)             | `04_Operations/05_Plans/` o archivar             |
-| [excalidraw.log](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/excalidraw.log)                                       | Añadir a `.gitignore`                            |
-| `Now/` (directorio)                                                                                                                                                                                    | `06_Playground/` o `07_Projects/`                |
+| Archivo                                                                                                                                                                                                        | Debería estar en                                         |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+| [Avengers_Plan.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/Avengers_Plan.md)                                           | `04_Operations/05_Plans/` o archivar                     |
+| [Learning_Always.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/Learning_Always.md)                                       | `02_Knowledge/04_Docs/`                                  |
+| [Optimizar_Scripts_Skills.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/Optimizar_Scripts_Skills.md)                     | `04_Operations/05_Plans/` o archivar                     |
+| [excalidraw.log](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/excalidraw.log)                                               | Añadir a `.gitignore`                                    |
+| `Now/` (directorio)                                                                                                                                                                                            | `06_Playground/` o `07_Projects/`                        |
 
 **Regla violada:** Naming convention (`XX_Nombre/`) y principio de "no archivos huérfanos en raíz".
 
@@ -115,18 +115,18 @@ Las skills van de `21_Skill_Template` a `25_Octopus`, saltando **22, 23, 24**:
 
 ### 6. Documentación Desactualizada
 
-| Documento                                   | Dice                                                                  | Realidad                                                       |
-|---------------------------------------------|-----------------------------------------------------------------------|----------------------------------------------------------------|
-| **README.md** (raíz)                        | "22 Skill Categorías"                                                 | 28 directorios (25 categorías numeradas)                       |
-| **README.md** (raíz)                        | "MCPs: 29 activos" (sección MCPs) vs "36 activos" (tabla)             | `.mcp.json` tiene **29 servers** reales                        |
-| **CLAUDE.md**                               | "MCPs (36 activos)"                                                   | 29 en `.mcp.json`                                              |
-| **01_Personal_Os/11_AGENTS.md**             | "36 Servers" en la tabla MCP                                          | 29 en `.mcp.json`                                              |
-| **01_Personal_Os/11_AGENTS.md**             | "Skills: 22 cats"                                                     | 28 directorios                                                 |
-| **01_Personal_Os/11_AGENTS.md**             | "Agentes: 71"                                                         | `04_Agents/` tiene ~16 archivos + 2 subdirectorios             |
-| **Skills README**                           | "20_Skill_Template" como última                                       | 25-28 no listados                                              |
-| **GOALS.md**                                | "Q1 2026 PROGRESS" como foco                                          | Estamos en Q2 (abril 2026)                                     |
-| **GOALS.md**                                | "38 scripts, 13 agents, 16 workflows"                                 | Estructura ha crecido significativamente                       |
-| **CHANGELOG.md**                            | Última entrada "1.8.0 - 2026-04-10"                                   | El sistema dice ser v1.0 (no 1.8.0)                            |
+| Documento                                           | Dice                                                                          | Realidad                                                               |
+|-----------------------------------------------------|-------------------------------------------------------------------------------|------------------------------------------------------------------------|
+| **README.md** (raíz)                                | "22 Skill Categorías"                                                         | 28 directorios (25 categorías numeradas)                               |
+| **README.md** (raíz)                                | "MCPs: 29 activos" (sección MCPs) vs "36 activos" (tabla)                     | `.mcp.json` tiene **29 servers** reales                                |
+| **CLAUDE.md**                                       | "MCPs (36 activos)"                                                           | 29 en `.mcp.json`                                                      |
+| **01_Personal_Os/11_AGENTS.md**                     | "36 Servers" en la tabla MCP                                                  | 29 en `.mcp.json`                                                      |
+| **01_Personal_Os/11_AGENTS.md**                     | "Skills: 22 cats"                                                             | 28 directorios                                                         |
+| **01_Personal_Os/11_AGENTS.md**                     | "Agentes: 71"                                                                 | `04_Agents/` tiene ~16 archivos + 2 subdirectorios                     |
+| **Skills README**                                   | "20_Skill_Template" como última                                               | 25-28 no listados                                                      |
+| **GOALS.md**                                        | "Q1 2026 PROGRESS" como foco                                                  | Estamos en Q2 (abril 2026)                                             |
+| **GOALS.md**                                        | "38 scripts, 13 agents, 16 workflows"                                         | Estructura ha crecido significativamente                               |
+| **CHANGELOG.md**                                    | Última entrada "1.8.0 - 2026-04-10"                                           | El sistema dice ser v1.0 (no 1.8.0)                                    |
 
 ### 7. Versionado Inconsistente
 
@@ -181,19 +181,19 @@ El directorio existe pero su contenido está marcado para eliminación. Verifica
 
 ## ✅ LO QUE ESTÁ BIEN
 
-| Área                                         | Estado             | Nota                                                       |
-|----------------------------------------------|--------------------|------------------------------------------------------------|
-| Estructura base (00-08)                      | ✅                  | Las 9 dimensiones existen                                  |
-| Naming convention en directorios             | ✅                  | Consistente (`XX_Nombre`)                                  |
-| Skills con SKILL.md                          | ✅                  | 100% de cobertura en skills existentes                     |
-| HUBs (00-16)                                 | ✅                  | Todos los HUBs existen y tienen código                     |
-| config_paths.py                              | ✅                  | Auto-detección de raíz funcional                           |
-| Hooks (6 dirs)                               | ✅                  | Pre, Post, Lifecycle, Sound, Harness, Compound             |
-| Workflows (25 archivos)                      | ✅                  | Completos y numerados                                      |
-| Rules (25 archivos)                          | ✅                  | Todas con `.mdc`                                           |
-| `.agent/` backup                             | ✅                  | 6 subdirectorios sincronizados                             |
-| `.atl/` SDD                                  | ✅                  | Registry + openspec presentes                              |
-| Backlog                                      | ✅                  | Organizado por prioridad                                   |
+| Área                                                 | Estado                     | Nota                                                               |
+|------------------------------------------------------|----------------------------|--------------------------------------------------------------------|
+| Estructura base (00-08)                              | ✅                          | Las 9 dimensiones existen                                          |
+| Naming convention en directorios                     | ✅                          | Consistente (`XX_Nombre`)                                          |
+| Skills con SKILL.md                                  | ✅                          | 100% de cobertura en skills existentes                             |
+| HUBs (00-16)                                         | ✅                          | Todos los HUBs existen y tienen código                             |
+| config_paths.py                                      | ✅                          | Auto-detección de raíz funcional                                   |
+| Hooks (6 dirs)                                       | ✅                          | Pre, Post, Lifecycle, Sound, Harness, Compound                     |
+| Workflows (25 archivos)                              | ✅                          | Completos y numerados                                              |
+| Rules (25 archivos)                                  | ✅                          | Todas con `.mdc`                                                   |
+| `.agent/` backup                                     | ✅                          | 6 subdirectorios sincronizados                                     |
+| `.atl/` SDD                                          | ✅                          | Registry + openspec presentes                                      |
+| Backlog                                              | ✅                          | Organizado por prioridad                                           |
 
 ---
 

@@ -28,15 +28,15 @@ La solución: **Un solo lienzo con nodos conectados**
 
 ### 2. Tipos de Nodos en Freepik Spaces
 
-| Nodo                                          | Función                                                                          |
-|-----------------------------------------------|----------------------------------------------------------------------------------|
-| **Texto**                                     | Escribir prompts, notas, comentarios                                             |
-| **Imagen**                                    | Importar imágenes como referencia base                                           |
-| **Video**                                     | Importar vídeos como referencia                                                  |
-| **Asistente**                                 | Usar IA para expandir ideas, generar texto o transformar prompts                 |
-| **Generador de Imagen**                       | Convierte texto/referencias en imágenes usando modelos de IA                     |
-| **Generador de Video**                        | Crea vídeos a partir de prompts o imágenes                                       |
-| **Mejorar Calidad (Upscale)**                 | Aumenta resolución con tecnología Magnific                                       |
+| Nodo                                                  | Función                                                                                  |
+|-------------------------------------------------------|------------------------------------------------------------------------------------------|
+| **Texto**                                             | Escribir prompts, notas, comentarios                                                     |
+| **Imagen**                                            | Importar imágenes como referencia base                                                   |
+| **Video**                                             | Importar vídeos como referencia                                                          |
+| **Asistente**                                         | Usar IA para expandir ideas, generar texto o transformar prompts                         |
+| **Generador de Imagen**                               | Convierte texto/referencias en imágenes usando modelos de IA                             |
+| **Generador de Video**                                | Crea vídeos a partir de prompts o imágenes                                               |
+| **Mejorar Calidad (Upscale)**                         | Aumenta resolución con tecnología Magnific                                               |
 
 ### 3. Cómo funcionan los nodos (analogía)
 
@@ -121,11 +121,11 @@ La solución: **Un solo lienzo con nodos conectados**
 
 ### 8. Comparativa de Herramientas
 
-| Herramienta                   | Pros                                          | Contras                                       | Mejor Uso                                    |
-|-------------------------------|-----------------------------------------------|-----------------------------------------------|----------------------------------------------|
-| **Spaces**                    | Visual, simple, IA integrada                  | Es de pago, requiere créditos                 | Marketing visual, prototipos                 |
-| **N8N**                       | Automatización sin límites                    | Técnica, no visual                            | Backend, APIs, integraciones                 |
-| **ComfyUI**                   | Control absoluto sobre imagen                 | Curva compleja                                | Power users y VFX                            |
+| Herramienta                           | Pros                                                  | Contras                                               | Mejor Uso                                            |
+|---------------------------------------|-------------------------------------------------------|-------------------------------------------------------|------------------------------------------------------|
+| **Spaces**                            | Visual, simple, IA integrada                          | Es de pago, requiere créditos                         | Marketing visual, prototipos                         |
+| **N8N**                               | Automatización sin límites                            | Técnica, no visual                                    | Backend, APIs, integraciones                         |
+| **ComfyUI**                           | Control absoluto sobre imagen                         | Curva compleja                                        | Power users y VFX                                    |
 
 ---
 

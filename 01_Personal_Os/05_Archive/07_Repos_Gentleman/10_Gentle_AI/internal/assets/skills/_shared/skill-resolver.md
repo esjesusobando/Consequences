@@ -41,14 +41,14 @@ Use the `Trigger` field in the registry's User Skills table to match. Skills who
 
 **B. Task Context** — what ACTIONS will the sub-agent perform?
 
-| Sub-agent action                    | Match skills with triggers mentioning...                   |
-|-------------------------------------|------------------------------------------------------------|
-| Create a PR                         | "PR", "pull request"                                       |
-| Write/review code                   | The specific framework/language                            |
-| Create Jira tickets                 | "Jira", "epic", "task"                                     |
-| Write Notion docs                   | "Notion", "RFC", "PRD"                                     |
-| Write comments                      | "comment"                                                  |
-| Run tests                           | "test", "vitest", "pytest", "playwright"                   |
+| Sub-agent action                            | Match skills with triggers mentioning...                           |
+|---------------------------------------------|--------------------------------------------------------------------|
+| Create a PR                                 | "PR", "pull request"                                               |
+| Write/review code                           | The specific framework/language                                    |
+| Create Jira tickets                         | "Jira", "epic", "task"                                             |
+| Write Notion docs                           | "Notion", "RFC", "PRD"                                             |
+| Write comments                              | "comment"                                                          |
+| Run tests                                   | "test", "vitest", "pytest", "playwright"                           |
 
 ### Step 3: Inject into Sub-Agent Prompt
 

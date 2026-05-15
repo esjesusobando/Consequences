@@ -2,15 +2,15 @@
 
 ## Tech Stack
 
-| Layer                     | Technology                      |
-|---------------------------|---------------------------------|
-| Frontend                  | React 19 + Vite                 |
-| Styling                   | Tailwind CSS 4                  |
-| State                     | Zustand 5                       |
-| Backend                   | Django DRF 5.x                  |
-| Database                  | PostgreSQL                      |
-| Testing                   | Playwright                      |
-| Container                 | Docker                          |
+| Layer                             | Technology                              |
+|-----------------------------------|-----------------------------------------|
+| Frontend                          | React 19 + Vite                         |
+| Styling                           | Tailwind CSS 4                          |
+| State                             | Zustand 5                               |
+| Backend                           | Django DRF 5.x                          |
+| Database                          | PostgreSQL                              |
+| Testing                           | Playwright                              |
+| Container                         | Docker                                  |
 
 ---
 

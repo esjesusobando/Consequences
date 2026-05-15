@@ -9,11 +9,11 @@
 
 ## Completeness
 
-| Metric                           | Value                   |
-|----------------------------------|-------------------------|
-| Tasks total                      | 30                      |
-| Tasks complete                   | 30                      |
-| Tasks incomplete                 | 0                       |
+| Metric                                   | Value                           |
+|------------------------------------------|---------------------------------|
+| Tasks total                              | 30                              |
+| Tasks complete                           | 30                              |
+| Tasks incomplete                         | 0                               |
 
 All 30 tasks verified complete:
 - T-01 to T-13: Implementation tasks — all PASS (static evidence confirmed)
@@ -64,119 +64,119 @@ ok  internal/system               0.008s
 
 ### REQ-01: Agent Identity
 
-| Scenario                                     | Evidence                                                                    | Result                      |
-|----------------------------------------------|-----------------------------------------------------------------------------|-----------------------------|
-| Constant value = "qwen-code"                 | `model/types.go:14` — `AgentQwenCode AgentID = "qwen-code"`                 | ✅ COMPLIANT                 |
-| Tier returns TierFull                        | `adapter.go` — `Tier()` returns `model.TierFull`                            | ✅ COMPLIANT                 |
+| Scenario                                             | Evidence                                                                            | Result                              |
+|------------------------------------------------------|-------------------------------------------------------------------------------------|-------------------------------------|
+| Constant value = "qwen-code"                         | `model/types.go:14` — `AgentQwenCode AgentID = "qwen-code"`                         | ✅ COMPLIANT                         |
+| Tier returns TierFull                                | `adapter.go` — `Tier()` returns `model.TierFull`                                    | ✅ COMPLIANT                         |
 
 ### REQ-02: Detection
 
-| Scenario                                 | Test                                                                  | Result                      |
-|------------------------------------------|-----------------------------------------------------------------------|-----------------------------|
-| Binary found                             | `TestDetect/binary_and_config_directory_found` → PASS                 | ✅ COMPLIANT                 |
-| Binary not found                         | `TestDetect/binary_missing_and_config_missing` → PASS                 | ✅ COMPLIANT                 |
-| Config directory exists                  | `TestDetect/binary_and_config_directory_found` → PASS                 | ✅ COMPLIANT                 |
-| Config directory missing                 | `TestDetect/binary_missing_and_config_missing` → PASS                 | ✅ COMPLIANT                 |
-| Stat error propagates                    | `TestDetect/stat_error_bubbles_up` → PASS                             | ✅ COMPLIANT                 |
+| Scenario                                         | Test                                                                          | Result                              |
+|--------------------------------------------------|-------------------------------------------------------------------------------|-------------------------------------|
+| Binary found                                     | `TestDetect/binary_and_config_directory_found` → PASS                         | ✅ COMPLIANT                         |
+| Binary not found                                 | `TestDetect/binary_missing_and_config_missing` → PASS                         | ✅ COMPLIANT                         |
+| Config directory exists                          | `TestDetect/binary_and_config_directory_found` → PASS                         | ✅ COMPLIANT                         |
+| Config directory missing                         | `TestDetect/binary_missing_and_config_missing` → PASS                         | ✅ COMPLIANT                         |
+| Stat error propagates                            | `TestDetect/stat_error_bubbles_up` → PASS                                     | ✅ COMPLIANT                         |
 
 ### REQ-03: Installation
 
-| Scenario                                      | Test                                                                      | Result                      |
-|-----------------------------------------------|---------------------------------------------------------------------------|-----------------------------|
-| Auto-install enabled                          | `TestCapabilities/SupportsAutoInstall` → PASS                             | ✅ COMPLIANT                 |
-| Darwin uses npm without sudo                  | `TestInstallCommand/darwin_uses_npm_without_sudo` → PASS                  | ✅ COMPLIANT                 |
-| Linux system npm uses sudo                    | `TestInstallCommand/linux_system_npm_uses_sudo` → PASS                    | ✅ COMPLIANT                 |
-| Linux nvm skips sudo                          | `TestInstallCommand/linux_nvm_skips_sudo` → PASS                          | ✅ COMPLIANT                 |
-| Windows uses npm without sudo                 | `TestInstallCommand/windows_uses_npm_without_sudo` → PASS                 | ✅ COMPLIANT                 |
+| Scenario                                              | Test                                                                              | Result                              |
+|-------------------------------------------------------|-----------------------------------------------------------------------------------|-------------------------------------|
+| Auto-install enabled                                  | `TestCapabilities/SupportsAutoInstall` → PASS                                     | ✅ COMPLIANT                         |
+| Darwin uses npm without sudo                          | `TestInstallCommand/darwin_uses_npm_without_sudo` → PASS                          | ✅ COMPLIANT                         |
+| Linux system npm uses sudo                            | `TestInstallCommand/linux_system_npm_uses_sudo` → PASS                            | ✅ COMPLIANT                         |
+| Linux nvm skips sudo                                  | `TestInstallCommand/linux_nvm_skips_sudo` → PASS                                  | ✅ COMPLIANT                         |
+| Windows uses npm without sudo                         | `TestInstallCommand/windows_uses_npm_without_sudo` → PASS                         | ✅ COMPLIANT                         |
 
 ### REQ-04: Config Paths
 
-| Scenario                                       | Test                                                                   | Result                      |
-|------------------------------------------------|------------------------------------------------------------------------|-----------------------------|
-| GlobalConfigDir = ~/.qwen                      | `TestConfigPathsCrossPlatform/GlobalConfigDir` → PASS                  | ✅ COMPLIANT                 |
-| SystemPromptDir = ~/.qwen                      | adapter.go returns `~/.qwen`                                           | ✅ COMPLIANT                 |
-| SystemPromptFile = QWEN.md                     | `TestConfigPathsCrossPlatform/SystemPromptFile` → PASS                 | ✅ COMPLIANT                 |
-| SkillsDir = ~/.qwen/skills                     | `TestConfigPathsCrossPlatform/SkillsDir` → PASS                        | ✅ COMPLIANT                 |
-| SettingsPath = settings.json                   | `TestConfigPathsCrossPlatform/SettingsPath` → PASS                     | ✅ COMPLIANT                 |
-| MCPConfigPath = settings.json                  | `TestConfigPathsCrossPlatform/MCPConfigPath` → PASS                    | ✅ COMPLIANT                 |
-| CommandsDir = ~/.qwen/commands                 | `TestConfigPathsCrossPlatform/CommandsDir` → PASS                      | ✅ COMPLIANT                 |
+| Scenario                                               | Test                                                                           | Result                              |
+|--------------------------------------------------------|--------------------------------------------------------------------------------|-------------------------------------|
+| GlobalConfigDir = ~/.qwen                              | `TestConfigPathsCrossPlatform/GlobalConfigDir` → PASS                          | ✅ COMPLIANT                         |
+| SystemPromptDir = ~/.qwen                              | adapter.go returns `~/.qwen`                                                   | ✅ COMPLIANT                         |
+| SystemPromptFile = QWEN.md                             | `TestConfigPathsCrossPlatform/SystemPromptFile` → PASS                         | ✅ COMPLIANT                         |
+| SkillsDir = ~/.qwen/skills                             | `TestConfigPathsCrossPlatform/SkillsDir` → PASS                                | ✅ COMPLIANT                         |
+| SettingsPath = settings.json                           | `TestConfigPathsCrossPlatform/SettingsPath` → PASS                             | ✅ COMPLIANT                         |
+| MCPConfigPath = settings.json                          | `TestConfigPathsCrossPlatform/MCPConfigPath` → PASS                            | ✅ COMPLIANT                         |
+| CommandsDir = ~/.qwen/commands                         | `TestConfigPathsCrossPlatform/CommandsDir` → PASS                              | ✅ COMPLIANT                         |
 
 ### REQ-05: Strategy Assignments
 
-| Scenario                                           | Test                                                                | Result                      |
-|----------------------------------------------------|---------------------------------------------------------------------|-----------------------------|
-| SystemPromptStrategy = FileReplace                 | `TestAdapterStrategies/SystemPromptStrategy` → PASS                 | ✅ COMPLIANT                 |
-| MCPStrategy = MergeIntoSettings                    | `TestAdapterStrategies/MCPStrategy` → PASS                          | ✅ COMPLIANT                 |
+| Scenario                                                   | Test                                                                        | Result                              |
+|------------------------------------------------------------|-----------------------------------------------------------------------------|-------------------------------------|
+| SystemPromptStrategy = FileReplace                         | `TestAdapterStrategies/SystemPromptStrategy` → PASS                         | ✅ COMPLIANT                         |
+| MCPStrategy = MergeIntoSettings                            | `TestAdapterStrategies/MCPStrategy` → PASS                                  | ✅ COMPLIANT                         |
 
 ### REQ-06: Capability Flags
 
-| Scenario                                     | Test                                                            | Result                      |
-|----------------------------------------------|-----------------------------------------------------------------|-----------------------------|
-| SupportsOutputStyles = false                 | `TestCapabilities/SupportsOutputStyles` → PASS                  | ✅ COMPLIANT                 |
-| SupportsSlashCommands = true                 | `TestCapabilities/SupportsSlashCommands` → PASS                 | ✅ COMPLIANT                 |
-| SupportsSkills = true                        | `TestCapabilities/SupportsSkills` → PASS                        | ✅ COMPLIANT                 |
-| SupportsSystemPrompt = true                  | `TestCapabilities/SupportsSystemPrompt` → PASS                  | ✅ COMPLIANT                 |
-| SupportsMCP = true                           | `TestCapabilities/SupportsMCP` → PASS                           | ✅ COMPLIANT                 |
+| Scenario                                             | Test                                                                    | Result                              |
+|------------------------------------------------------|-------------------------------------------------------------------------|-------------------------------------|
+| SupportsOutputStyles = false                         | `TestCapabilities/SupportsOutputStyles` → PASS                          | ✅ COMPLIANT                         |
+| SupportsSlashCommands = true                         | `TestCapabilities/SupportsSlashCommands` → PASS                         | ✅ COMPLIANT                         |
+| SupportsSkills = true                                | `TestCapabilities/SupportsSkills` → PASS                                | ✅ COMPLIANT                         |
+| SupportsSystemPrompt = true                          | `TestCapabilities/SupportsSystemPrompt` → PASS                          | ✅ COMPLIANT                         |
+| SupportsMCP = true                                   | `TestCapabilities/SupportsMCP` → PASS                                   | ✅ COMPLIANT                         |
 
 ### REQ-07: SDD Orchestrator
 
-| Scenario                                                 | Test                                                                 | Result                      |
-|----------------------------------------------------------|----------------------------------------------------------------------|-----------------------------|
-| Asset returns qwen/sdd-orchestrator.md                   | `TestSDDOrchestratorAssetSelection/qwen-code` → PASS                 | ✅ COMPLIANT                 |
-| Asset content references ~/.qwen/skills/                 | Static check: file contains `~/.qwen/skills/`                        | ✅ COMPLIANT                 |
+| Scenario                                                         | Test                                                                         | Result                              |
+|------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------|
+| Asset returns qwen/sdd-orchestrator.md                           | `TestSDDOrchestratorAssetSelection/qwen-code` → PASS                         | ✅ COMPLIANT                         |
+| Asset content references ~/.qwen/skills/                         | Static check: file contains `~/.qwen/skills/`                                | ✅ COMPLIANT                         |
 
 ### REQ-08: Permissions
 
-| Scenario                                                 | Test                                                                                                | Result                      |
-|----------------------------------------------------------|-----------------------------------------------------------------------------------------------------|-----------------------------|
-| Overlay has auto_edit mode                               | Static check: `qwenCodeOverlayJSON` = `{"permissions":{"defaultMode":"auto_edit"}}`                 | ✅ COMPLIANT                 |
-| agentOverlay returns qwenCodeOverlayJSON                 | Static check: `case AgentQwenCode` returns correct var                                              | ✅ COMPLIANT                 |
+| Scenario                                                         | Test                                                                                                        | Result                              |
+|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| Overlay has auto_edit mode                                       | Static check: `qwenCodeOverlayJSON` = `{"permissions":{"defaultMode":"auto_edit"}}`                         | ✅ COMPLIANT                         |
+| agentOverlay returns qwenCodeOverlayJSON                         | Static check: `case AgentQwenCode` returns correct var                                                      | ✅ COMPLIANT                         |
 
 ### REQ-09: Engram Setup
 
-| Scenario                                        | Test                                                                 | Result                      |
-|-------------------------------------------------|----------------------------------------------------------------------|-----------------------------|
-| Slug = "qwen-code", ok = true                   | `TestSetupAgentSlug` → PASS                                          | ✅ COMPLIANT                 |
-| ShouldAttemptSetup returns true                 | Static check: slug maps to ok=true in supported mode                 | ✅ COMPLIANT                 |
+| Scenario                                                | Test                                                                         | Result                              |
+|---------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------|
+| Slug = "qwen-code", ok = true                           | `TestSetupAgentSlug` → PASS                                                  | ✅ COMPLIANT                         |
+| ShouldAttemptSetup returns true                         | Static check: slug maps to ok=true in supported mode                         | ✅ COMPLIANT                         |
 
 ### REQ-10: Config Scan
 
-| Scenario                                     | Evidence                                                                  | Result                      |
-|----------------------------------------------|---------------------------------------------------------------------------|-----------------------------|
-| Entry with Agent="qwen-code"                 | `config_scan.go:36` — present in `knownAgentConfigDirs()`                 | ✅ COMPLIANT                 |
+| Scenario                                             | Evidence                                                                          | Result                              |
+|------------------------------------------------------|-----------------------------------------------------------------------------------|-------------------------------------|
+| Entry with Agent="qwen-code"                         | `config_scan.go:36` — present in `knownAgentConfigDirs()`                         | ✅ COMPLIANT                         |
 
 ### REQ-11: CLI Validation
 
-| Scenario                               | Evidence                                                                                   | Result                      |
-|----------------------------------------|--------------------------------------------------------------------------------------------|-----------------------------|
-| Case in validate.go                    | `validate.go:187-188` — case for AgentQwenCode                                             | ✅ COMPLIANT                 |
-| Detection mapping test                 | `TestDefaultAgentsFromDetection_AllAgentsMappedCorrectly/qwen-code` → PASS                 | ✅ COMPLIANT                 |
+| Scenario                                       | Evidence                                                                                           | Result                              |
+|------------------------------------------------|----------------------------------------------------------------------------------------------------|-------------------------------------|
+| Case in validate.go                            | `validate.go:187-188` — case for AgentQwenCode                                                     | ✅ COMPLIANT                         |
+| Detection mapping test                         | `TestDefaultAgentsFromDetection_AllAgentsMappedCorrectly/qwen-code` → PASS                         | ✅ COMPLIANT                         |
 
 ### REQ-12: TUI Agent Selection
 
-| Scenario                                            | Evidence                                                      | Result                      |
-|-----------------------------------------------------|---------------------------------------------------------------|-----------------------------|
-| loadSelection case                                  | `model.go:2238-2239` — case for AgentQwenCode                 | ✅ COMPLIANT                 |
-| Detection helper includes qwen-code                 | `model_test.go:961` — in known agents                         | ✅ COMPLIANT                 |
+| Scenario                                                    | Evidence                                                              | Result                              |
+|-------------------------------------------------------------|-----------------------------------------------------------------------|-------------------------------------|
+| loadSelection case                                          | `model.go:2238-2239` — case for AgentQwenCode                         | ✅ COMPLIANT                         |
+| Detection helper includes qwen-code                         | `model_test.go:961` — in known agents                                 | ✅ COMPLIANT                         |
 
 ### REQ-13: SDD Injection
 
-| Scenario                                        | Test                                                                         | Result                      |
-|-------------------------------------------------|------------------------------------------------------------------------------|-----------------------------|
-| Orchestrator written to QWEN.md                 | `TestInjectQwenCodeWritesSDDOrchestratorAndSkills` → PASS                    | ✅ COMPLIANT                 |
-| Skill files written                             | Same test verifies `~/.qwen/skills/sdd-init/SKILL.md` exists                 | ✅ COMPLIANT                 |
+| Scenario                                                | Test                                                                                 | Result                              |
+|---------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------|
+| Orchestrator written to QWEN.md                         | `TestInjectQwenCodeWritesSDDOrchestratorAndSkills` → PASS                            | ✅ COMPLIANT                         |
+| Skill files written                                     | Same test verifies `~/.qwen/skills/sdd-init/SKILL.md` exists                         | ✅ COMPLIANT                         |
 
 ### REQ-14: Test Coverage
 
-| Scenario                                      | Evidence                                                                                                                          | Result                      |
-|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| Adapter tests exist                           | `internal/agents/qwen/adapter_test.go` — 6 test functions, all table-driven                                                       | ✅ COMPLIANT                 |
-| SDD injection test exists                     | `TestInjectQwenCodeWritesSDDOrchestratorAndSkills` in inject_test.go                                                              | ✅ COMPLIANT                 |
-| Asset selection test extended                 | `TestSDDOrchestratorAssetSelection` includes qwen-code case                                                                       | ✅ COMPLIANT                 |
-| Engram setup test extended                    | `TestSetupAgentSlug` includes qwen-code case                                                                                      | ✅ COMPLIANT                 |
-| CLI install tests extended                    | `TestNormalizeInstallFlagsDefaults` + `TestDefaultAgentsFromDetection_AllAgentsMappedCorrectly` include qwen-code                 | ✅ COMPLIANT                 |
-| Registry test extended                        | `TestDefaultRegistryIncludesAllAgents` includes AgentQwenCode                                                                     | ✅ COMPLIANT                 |
-| TUI test extended                             | `makeDetectionWithAgents()` includes "qwen-code"                                                                                  | ✅ COMPLIANT                 |
+| Scenario                                              | Evidence                                                                                                                                  | Result                              |
+|-------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| Adapter tests exist                                   | `internal/agents/qwen/adapter_test.go` — 6 test functions, all table-driven                                                               | ✅ COMPLIANT                         |
+| SDD injection test exists                             | `TestInjectQwenCodeWritesSDDOrchestratorAndSkills` in inject_test.go                                                                      | ✅ COMPLIANT                         |
+| Asset selection test extended                         | `TestSDDOrchestratorAssetSelection` includes qwen-code case                                                                               | ✅ COMPLIANT                         |
+| Engram setup test extended                            | `TestSetupAgentSlug` includes qwen-code case                                                                                              | ✅ COMPLIANT                         |
+| CLI install tests extended                            | `TestNormalizeInstallFlagsDefaults` + `TestDefaultAgentsFromDetection_AllAgentsMappedCorrectly` include qwen-code                         | ✅ COMPLIANT                         |
+| Registry test extended                                | `TestDefaultRegistryIncludesAllAgents` includes AgentQwenCode                                                                             | ✅ COMPLIANT                         |
+| TUI test extended                                     | `makeDetectionWithAgents()` includes "qwen-code"                                                                                          | ✅ COMPLIANT                         |
 
 **Compliance summary**: 40/40 scenarios compliant
 
@@ -184,38 +184,38 @@ ok  internal/system               0.008s
 
 ## Correctness (Static — Structural Evidence)
 
-| Requirement                      | Status                        | Notes                                                                     |
-|----------------------------------|-------------------------------|---------------------------------------------------------------------------|
-| Agent identity                   | ✅ Implemented                 | Constant, TierFull, all 21 adapter methods present                        |
-| Detection                        | ✅ Implemented                 | lookPath + stat with proper error handling                                |
-| Installation                     | ✅ Implemented                 | npm with sudo logic matching Gemini CLI pattern                           |
-| Config paths                     | ✅ Implemented                 | All 7 path methods return correct `~/.qwen/` paths                        |
-| Strategies                       | ✅ Implemented                 | FileReplace + MergeIntoSettings                                           |
-| Capabilities                     | ✅ Implemented                 | All 6 flags correct, including SupportsSlashCommands=true                 |
-| SDD orchestrator                 | ✅ Implemented                 | Dedicated asset with Qwen-specific paths                                  |
-| Permissions                      | ✅ Implemented                 | auto_edit overlay defined and wired                                       |
-| Engram setup                     | ✅ Implemented                 | "qwen-code" slug mapped                                                   |
-| Config scan                      | ✅ Implemented                 | Entry in knownAgentConfigDirs                                             |
-| CLI validation                   | ✅ Implemented                 | Case in validate.go switch                                                |
-| TUI selection                    | ✅ Implemented                 | Case in loadSelection switch                                              |
-| SDD injection                    | ✅ Implemented                 | Orchestrator + skills written on Inject()                                 |
+| Requirement                              | Status                                | Notes                                                                             |
+|------------------------------------------|---------------------------------------|-----------------------------------------------------------------------------------|
+| Agent identity                           | ✅ Implemented                         | Constant, TierFull, all 21 adapter methods present                                |
+| Detection                                | ✅ Implemented                         | lookPath + stat with proper error handling                                        |
+| Installation                             | ✅ Implemented                         | npm with sudo logic matching Gemini CLI pattern                                   |
+| Config paths                             | ✅ Implemented                         | All 7 path methods return correct `~/.qwen/` paths                                |
+| Strategies                               | ✅ Implemented                         | FileReplace + MergeIntoSettings                                                   |
+| Capabilities                             | ✅ Implemented                         | All 6 flags correct, including SupportsSlashCommands=true                         |
+| SDD orchestrator                         | ✅ Implemented                         | Dedicated asset with Qwen-specific paths                                          |
+| Permissions                              | ✅ Implemented                         | auto_edit overlay defined and wired                                               |
+| Engram setup                             | ✅ Implemented                         | "qwen-code" slug mapped                                                           |
+| Config scan                              | ✅ Implemented                         | Entry in knownAgentConfigDirs                                                     |
+| CLI validation                           | ✅ Implemented                         | Case in validate.go switch                                                        |
+| TUI selection                            | ✅ Implemented                         | Case in loadSelection switch                                                      |
+| SDD injection                            | ✅ Implemented                         | Orchestrator + skills written on Inject()                                         |
 
 ---
 
 ## Coherence (Design)
 
-| Decision                                              | Followed?                   | Notes                                                          |
-|-------------------------------------------------------|-----------------------------|----------------------------------------------------------------|
-| StrategyFileReplace for system prompt                 | ✅ Yes                       | Matches Gemini CLI pattern                                     |
-| StrategyMergeIntoSettings for MCP                     | ✅ Yes                       | Matches Gemini CLI pattern                                     |
-| npm global install                                    | ✅ Yes                       | `@qwen-code/qwen-code@latest`                                  |
-| auto_edit permission mode                             | ✅ Yes                       | Matches Qwen native model                                      |
-| "qwen-code" engram slug                               | ✅ Yes                       | Dashes follow convention                                       |
-| Dedicated SDD orchestrator asset                      | ✅ Yes                       | `qwen/sdd-orchestrator.md`                                     |
-| Slash command support = true                          | ✅ Yes                       | Differentiator from Gemini CLI                                 |
-| Mirror Gemini CLI adapter pattern                     | ✅ Yes                       | Structurally identical with minimal deviations                 |
-| Sequential Screen constants (iota)                    | N/A                         | Not applicable — no new screens added                          |
-| AgentBuilderState isolation                           | N/A                         | Not applicable — no new TUI state                              |
+| Decision                                                      | Followed?                           | Notes                                                                  |
+|---------------------------------------------------------------|-------------------------------------|------------------------------------------------------------------------|
+| StrategyFileReplace for system prompt                         | ✅ Yes                               | Matches Gemini CLI pattern                                             |
+| StrategyMergeIntoSettings for MCP                             | ✅ Yes                               | Matches Gemini CLI pattern                                             |
+| npm global install                                            | ✅ Yes                               | `@qwen-code/qwen-code@latest`                                          |
+| auto_edit permission mode                                     | ✅ Yes                               | Matches Qwen native model                                              |
+| "qwen-code" engram slug                                       | ✅ Yes                               | Dashes follow convention                                               |
+| Dedicated SDD orchestrator asset                              | ✅ Yes                               | `qwen/sdd-orchestrator.md`                                             |
+| Slash command support = true                                  | ✅ Yes                               | Differentiator from Gemini CLI                                         |
+| Mirror Gemini CLI adapter pattern                             | ✅ Yes                               | Structurally identical with minimal deviations                         |
+| Sequential Screen constants (iota)                            | N/A                                 | Not applicable — no new screens added                                  |
+| AgentBuilderState isolation                                   | N/A                                 | Not applicable — no new TUI state                                      |
 
 **Design deviations found**: None. Implementation faithfully follows the design decisions.
 

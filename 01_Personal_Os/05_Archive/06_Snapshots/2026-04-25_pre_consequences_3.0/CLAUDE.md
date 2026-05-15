@@ -209,51 +209,51 @@ Think_Different/
 ```
 
 ### 4. INVENTARIO HUB SCRIPTS (01_Personal_Os/04_Operations/03_Scripts_Os/)
-| Hub                      | Script                            | Proposito                                                   |
-|--------------------------|-----------------------------------|-------------------------------------------------------------|
-| **Sound Engine**         | `00_Sound_Engine.py`              | Motor de notificaciones sonoras del sistema                 |
-| **Auditor**              | `01_Auditor_Hub.py`               | System validation: structure, links, skills, health         |
-| **Git**                  | `02_Git_Hub.py`                   | Git operations + structure audits                           |
-| **AIPM**                 | `03_AIPM_Hub.py`                  | AI Performance Monitoring                                   |
-| **Ritual**               | `04_Ritual_Hub.py`                | Session rituals: open, close, recovery                      |
-| **Validator**            | `05_Validator_Hub.py`             | Code validation: rules, stack, patterns                     |
-| **Tool**                 | `06_Tool_Hub.py`                  | Tool integration and management                             |
-| **Integration**          | `07_Integration_Hub.py`           | MCP and external integrations                               |
-| **Workflow**             | `08_Workflow_Hub.py`              | Workflow automation                                         |
-| **Data**                 | `09_Data_Hub.py`                  | Data processing and analytics                               |
-| **General**              | `10_General_Hub.py`               | General utilities                                           |
-| **Auto Learn**           | `11_Auto_Learn_Hub.py`            | Motor de automejora y aprendizaje                           |
-| **Context Bar**          | `12_Context_Usage_Bar.py`         | Barra de uso de contexto                                    |
-| **Beautify**             | `13_Beautify_Tables.py`           | Formateo de tablas markdown                                 |
-| **Beauty Doc**           | `14_Beauty_Doc.py`                | Documentos embellecidos                                     |
+| Hub                              | Script                                    | Proposito                                                           |
+|----------------------------------|-------------------------------------------|---------------------------------------------------------------------|
+| **Sound Engine**                 | `00_Sound_Engine.py`                      | Motor de notificaciones sonoras del sistema                         |
+| **Auditor**                      | `01_Auditor_Hub.py`                       | System validation: structure, links, skills, health                 |
+| **Git**                          | `02_Git_Hub.py`                           | Git operations + structure audits                                   |
+| **AIPM**                         | `03_AIPM_Hub.py`                          | AI Performance Monitoring                                           |
+| **Ritual**                       | `04_Ritual_Hub.py`                        | Session rituals: open, close, recovery                              |
+| **Validator**                    | `05_Validator_Hub.py`                     | Code validation: rules, stack, patterns                             |
+| **Tool**                         | `06_Tool_Hub.py`                          | Tool integration and management                                     |
+| **Integration**                  | `07_Integration_Hub.py`                   | MCP and external integrations                                       |
+| **Workflow**                     | `08_Workflow_Hub.py`                      | Workflow automation                                                 |
+| **Data**                         | `09_Data_Hub.py`                          | Data processing and analytics                                       |
+| **General**                      | `10_General_Hub.py`                       | General utilities                                                   |
+| **Auto Learn**                   | `11_Auto_Learn_Hub.py`                    | Motor de automejora y aprendizaje                                   |
+| **Context Bar**                  | `12_Context_Usage_Bar.py`                 | Barra de uso de contexto                                            |
+| **Beautify**                     | `13_Beautify_Tables.py`                   | Formateo de tablas markdown                                         |
+| **Beauty Doc**                   | `14_Beauty_Doc.py`                        | Documentos embellecidos                                             |
 
 ### 📚 Documentación del Sistema
 
-| Documento                               | Ubicación                                                                                          |
-|-----------------------------------------|----------------------------------------------------------------------------------------------------|
-| **Rules Index**                         | `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md`                                                   |
-| **Skills Index**                        | `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                                              |
-| **SDD Registry**                        | `.atl/skill-registry.md`                                                                           |
-| **Migration Plan**                      | `00_Plan_Migración_Os.md` (raíz)                                                                   |
+| Documento                                       | Ubicación                                                                                                  |
+|-------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| **Rules Index**                                 | `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md`                                                           |
+| **Skills Index**                                | `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                                                      |
+| **SDD Registry**                                | `.atl/skill-registry.md`                                                                                   |
+| **Migration Plan**                              | `00_Plan_Migración_Os.md` (raíz)                                                                           |
 
 ### 5. SKILLS DISPONIBLES (9 Áreas en 01_Personal_Os/01_Core/02_Tools/02_Skills/)
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
-| Área                                      | Descripción                                                                | Ubicación                                    |
-|-------------------------------------------|----------------------------------------------------------------------------|----------------------------------------------|
-| **00_Compound_Engineering**               | Core CE (Spider, Avengers)                                                 | `00_Compound_Engineering/`                   |
-| **00_Personal_Os_Stack**                  | Stack base OS + Gcierr                                                     | `00_Personal_Os_Stack/`                      |
-| **00_Skill_Auditor**                      | Auditoría de skills                                                        | `00_Skill_Auditor/`                          |
-| **01_Creacion_Contenidos**                | Brand, YouTube, SEO, Carruseles                                            | `01_Creacion_Contenidos/`                    |
-| **02_Diseno_Ui_Ux**                       | Product Design, UI/UX                                                      | `02_Diseno_Ui_Ux/`                           |
-| **03_Video_Media**                        | Video Intel, James Cameron                                                 | `03_Video_Media/`                            |
-| **04_Automatizacion**                     | N8N, Firecrawl                                                             | `04_Automatizacion/`                         |
-| **05_Workflows**                          | Agent Teams, PM, Orchestrator                                              | `05_Workflows/`                              |
-| **06_Tools**                              | Skill Creator, Testing, DevOps, QMD, System Master, Data Analyst           | `06_Tools/`                                  |
-| **07_Personal_Os**                        | Life OS, Hillary, Rituales                                                 | `07_Personal_Os/`                            |
-| **08_Invictus_Web**                       | Playwright, Superpowers                                                    | `08_Invictus_Web/`                           |
-| **09_Legacy_Archive**                     | Skills obsoletas                                                           | `09_Legacy_Archive/`                         |
+| Área                                              | Descripción                                                                        | Ubicación                                            |
+|---------------------------------------------------|------------------------------------------------------------------------------------|------------------------------------------------------|
+| **00_Compound_Engineering**                       | Core CE (Spider, Avengers)                                                         | `00_Compound_Engineering/`                           |
+| **00_Personal_Os_Stack**                          | Stack base OS + Gcierr                                                             | `00_Personal_Os_Stack/`                              |
+| **00_Skill_Auditor**                              | Auditoría de skills                                                                | `00_Skill_Auditor/`                                  |
+| **01_Creacion_Contenidos**                        | Brand, YouTube, SEO, Carruseles                                                    | `01_Creacion_Contenidos/`                            |
+| **02_Diseno_Ui_Ux**                               | Product Design, UI/UX                                                              | `02_Diseno_Ui_Ux/`                                   |
+| **03_Video_Media**                                | Video Intel, James Cameron                                                         | `03_Video_Media/`                                    |
+| **04_Automatizacion**                             | N8N, Firecrawl                                                                     | `04_Automatizacion/`                                 |
+| **05_Workflows**                                  | Agent Teams, PM, Orchestrator                                                      | `05_Workflows/`                                      |
+| **06_Tools**                                      | Skill Creator, Testing, DevOps, QMD, System Master, Data Analyst                   | `06_Tools/`                                          |
+| **07_Personal_Os**                                | Life OS, Hillary, Rituales                                                         | `07_Personal_Os/`                                    |
+| **08_Invictus_Web**                               | Playwright, Superpowers                                                            | `08_Invictus_Web/`                                   |
+| **09_Legacy_Archive**                             | Skills obsoletas                                                                   | `09_Legacy_Archive/`                                 |
 </architecture_routing>
 
 ---
@@ -283,27 +283,27 @@ Think_Different/
 
 ## 📊 ESTADO DEL SISTEMA
 <system_state_snapshot>
-| Categoria                              | Estado                      | Notas                                                                           |
-|----------------------------------------|-----------------------------|---------------------------------------------------------------------------------|
-| **Overall Health**                     | **✅ PURE GREEN**            | v2.0 Consequences — migración completada 2026-04-24                             |
-| Estructura (4 raíz)                    | ✅ PASS                      | Winter / Personal_Os / Playground / Resultado                                   |
-| HUBs (00-13)                           | ✅ ACTIVE                    | 14 HUBs en 03_Scripts_Os                                                        |
-| Skills (9 áreas)                       | ✅ OPERATIONAL               | 165+ skills — 9 áreas funcionales limpias en 02_Tools/02_Skills/                |
-| Rules (10)                             | ✅ DEFINED                   | 10 .mdc en 01_Core/01_Rules/ (fuente de verdad)                                 |
-| MCPs (33 activos)                      | ✅ ACTIVE                    | 33 verificados vs .mcp.json                                                     |
-| Agentes (71)                           | ✅ ACTIVE                    | Orchestrator + Dream Team + 60 Specialists                                      |
-| config_paths.py                        | ✅ FIXED                     | Auto-detección por 00_Winter_is_Coming — todas las rutas OK                     |
-| Hooks settings.local.json              | ✅ FIXED                     | notification.py apuntando a nueva ruta 05_Hooks/04_Sound                        |
-| Agent Teams Protocol                   | ✅ ACTIVE                    | Super Campeones — comunicación inter-agente                                     |
-| Auto-Improvement Engine                | ✅ OPERATIONAL               | En 04_Operations/01_Auto_Improvement                                            |
-| GGA Code Review                        | ✅ ACTIVE                    | Pre-commit hook instalado                                                       |
+| Categoria                                      | Estado                              | Notas                                                                                   |
+|------------------------------------------------|-------------------------------------|-----------------------------------------------------------------------------------------|
+| **Overall Health**                             | **✅ PURE GREEN**                    | v2.0 Consequences — migración completada 2026-04-24                                     |
+| Estructura (4 raíz)                            | ✅ PASS                              | Winter / Personal_Os / Playground / Resultado                                           |
+| HUBs (00-13)                                   | ✅ ACTIVE                            | 14 HUBs en 03_Scripts_Os                                                                |
+| Skills (9 áreas)                               | ✅ OPERATIONAL                       | 165+ skills — 9 áreas funcionales limpias en 02_Tools/02_Skills/                        |
+| Rules (10)                                     | ✅ DEFINED                           | 10 .mdc en 01_Core/01_Rules/ (fuente de verdad)                                         |
+| MCPs (33 activos)                              | ✅ ACTIVE                            | 33 verificados vs .mcp.json                                                             |
+| Agentes (71)                                   | ✅ ACTIVE                            | Orchestrator + Dream Team + 60 Specialists                                              |
+| config_paths.py                                | ✅ FIXED                             | Auto-detección por 00_Winter_is_Coming — todas las rutas OK                             |
+| Hooks settings.local.json                      | ✅ FIXED                             | notification.py apuntando a nueva ruta 05_Hooks/04_Sound                                |
+| Agent Teams Protocol                           | ✅ ACTIVE                            | Super Campeones — comunicación inter-agente                                             |
+| Auto-Improvement Engine                        | ✅ OPERATIONAL                       | En 04_Operations/01_Auto_Improvement                                                    |
+| GGA Code Review                                | ✅ ACTIVE                            | Pre-commit hook instalado                                                               |
 
 ### Configuración MCP (dual)
 
-| Herramienta             | Config activa                              | Source (backup)                                                            |
-|-------------------------|--------------------------------------------|----------------------------------------------------------------------------|
-| **Claude Code**         | `.mcp.json` (raíz del proyecto)            | `01_Personal_Os/01_Core/02_Tools/03_Mcp/01_Claude_Code/mcp.json`           |
-| **OpenCode**            | `~/.config/opencode/opencode.json`         | `01_Personal_Os/01_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json`         |
+| Herramienta                     | Config activa                                      | Source (backup)                                                                    |
+|---------------------------------|----------------------------------------------------|------------------------------------------------------------------------------------|
+| **Claude Code**                 | `.mcp.json` (raíz del proyecto)                    | `01_Personal_Os/01_Core/02_Tools/03_Mcp/01_Claude_Code/mcp.json`                   |
+| **OpenCode**                    | `~/.config/opencode/opencode.json`                 | `01_Personal_Os/01_Core/02_Tools/03_Mcp/02_OpenCode/opencode.json`                 |
 
 > ⚠️ Al modificar MCPs: actualizar SIEMPRE el source Y el config activo correspondiente.
 

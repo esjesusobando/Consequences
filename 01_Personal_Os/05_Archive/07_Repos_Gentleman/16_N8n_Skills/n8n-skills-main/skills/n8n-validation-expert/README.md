@@ -96,14 +96,14 @@ n8n-validation-expert/
 
 ## Common Error Types
 
-| Error Type                           | Priority                   | Auto-Fix                   | Severity                   |
-|--------------------------------------|----------------------------|----------------------------|----------------------------|
-| missing_required                     | Highest                    | ❌                          | Error                      |
-| invalid_value                        | High                       | ❌                          | Error                      |
-| type_mismatch                        | Medium                     | ❌                          | Error                      |
-| invalid_expression                   | Medium                     | ❌                          | Error                      |
-| invalid_reference                    | Low                        | ❌                          | Error                      |
-| operator_structure                   | Low                        | ✅                          | Warning                    |
+| Error Type                                   | Priority                           | Auto-Fix                           | Severity                           |
+|----------------------------------------------|------------------------------------|------------------------------------|------------------------------------|
+| missing_required                             | Highest                            | ❌                                  | Error                              |
+| invalid_value                                | High                               | ❌                                  | Error                              |
+| type_mismatch                                | Medium                             | ❌                                  | Error                              |
+| invalid_expression                           | Medium                             | ❌                                  | Error                              |
+| invalid_reference                            | Low                                | ❌                                  | Error                              |
+| operator_structure                           | Low                                | ✅                                  | Warning                            |
 
 ## Key Insights
 

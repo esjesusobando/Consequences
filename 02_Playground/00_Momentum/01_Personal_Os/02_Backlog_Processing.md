@@ -44,13 +44,13 @@ Process my backlog
 **Claude:** I found 8 items in your backlog. Let me analyze them:
 
 **Ready to create (5 items):**
-| Item                                                     | Category                     | Suggested Priority                    |
-|----------------------------------------------------------|------------------------------|---------------------------------------|
-| Follow up with James about API                           | outreach                     | P1                                    |
-| Write blog post about launch learnings                   | writing                      | P2                                    |
-| Analyze competitor's new feature                         | research                     | P2                                    |
-| Prep questions for Mike 1:1                              | admin                        | P1 (tomorrow)                         |
-| Submit expense report                                    | admin                        | P1 (overdue)                          |
+| Item                                                             | Category                             | Suggested Priority                            |
+|------------------------------------------------------------------|--------------------------------------|-----------------------------------------------|
+| Follow up with James about API                                   | outreach                             | P1                                            |
+| Write blog post about launch learnings                           | writing                              | P2                                            |
+| Analyze competitor's new feature                                 | research                             | P2                                            |
+| Prep questions for Mike 1:1                                      | admin                                | P1 (tomorrow)                                 |
+| Submit expense report                                            | admin                                | P1 (overdue)                                  |
 
 **Needs clarification (2 items):**
 

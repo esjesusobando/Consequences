@@ -29,12 +29,12 @@
 
 ## Recommended Platform Mix
 
-| Platform | Role | Budget % | Why |
-|----------|------|----------|-----|
-| Meta Lead Forms | Primary | 40-50% | Visual property ads, listing promotion, seller leads, lead gen forms |
-| Google Search | Primary | 30-40% | High-intent "homes for sale in [area]" queries |
-| LinkedIn | Testing | 5-10% | Luxury real estate, investor targeting, relocation |
-| YouTube | Testing | 5-10% | Property tours, neighborhood guides, agent brand |
+| Platform              | Role          | Budget %         | Why                                                                        |
+|-----------------------|---------------|------------------|----------------------------------------------------------------------------|
+| Meta Lead Forms       | Primary       | 40-50%           | Visual property ads, listing promotion, seller leads, lead gen forms       |
+| Google Search         | Primary       | 30-40%           | High-intent "homes for sale in [area]" queries                             |
+| LinkedIn              | Testing       | 5-10%            | Luxury real estate, investor targeting, relocation                         |
+| YouTube               | Testing       | 5-10%            | Property tours, neighborhood guides, agent brand                           |
 
 ## Campaign Architecture
 
@@ -91,12 +91,12 @@ Account; Meta (Special Ad Category: Housing)
 - **Neighborhood guides**: lifestyle content showing the area
 
 ### Creative by Audience
-| Audience | Creative Type | Message |
-|----------|-------------|---------|
-| Buyers | Property carousels, video tours | "Your dream home is here" |
-| Sellers | Market update, home value | "Your home could be worth more" |
-| Investors | ROI data, rental yield | "Cap rate and cash flow analysis" |
-| First-time buyers | Educational, step-by-step | "How to buy your first home" |
+| Audience                | Creative Type                         | Message                                 |
+|-------------------------|---------------------------------------|-----------------------------------------|
+| Buyers                  | Property carousels, video tours       | "Your dream home is here"               |
+| Sellers                 | Market update, home value             | "Your home could be worth more"         |
+| Investors               | ROI data, rental yield                | "Cap rate and cash flow analysis"       |
+| First-time buyers       | Educational, step-by-step             | "How to buy your first home"            |
 
 ## Targeting Strategy
 
@@ -120,45 +120,45 @@ Account; Meta (Special Ad Category: Housing)
 
 ## Budget Guidelines
 
-| Metric | Real Estate Benchmark |
-|--------|---------------------|
-| Google CPC | $1.55-$2.53 |
-| Google CTR | 8.43% |
-| Google CVR | 3.28% |
-| Meta CPL (buyer lead) | $5-$25 |
-| Meta CPL (seller lead) | $15-$50 |
-| YouTube CPV | $0.05-$0.15 |
-| Cost per showing request | $50-$150 |
-| Cost per listing appointment | $100-$300 |
-| Min monthly budget | $2,500+ (Google + Meta) |
+| Metric                             | Real Estate Benchmark         |
+|------------------------------------|-------------------------------|
+| Google CPC                         | $1.55-$2.53                   |
+| Google CTR                         | 8.43%                         |
+| Google CVR                         | 3.28%                         |
+| Meta CPL (buyer lead)              | $5-$25                        |
+| Meta CPL (seller lead)             | $15-$50                       |
+| YouTube CPV                        | $0.05-$0.15                   |
+| Cost per showing request           | $50-$150                      |
+| Cost per listing appointment       | $100-$300                     |
+| Min monthly budget                 | $2,500+ (Google + Meta)       |
 
 ### Budget by Agent Type
-| Agent Type | Monthly Budget | Primary Channel |
-|-----------|---------------|-----------------|
-| New agent | $1,000-$2,000 | Google Search (high intent) |
-| Established agent | $3,000-$5,000 | Google + Meta balanced |
-| Team/brokerage | $5,000-$20,000 | Full platform mix |
-| Luxury specialist | $5,000-$15,000 | Google + YouTube + Meta |
+| Agent Type              | Monthly Budget        | Primary Channel                   |
+|-------------------------|-----------------------|-----------------------------------|
+| New agent               | $1,000-$2,000         | Google Search (high intent)       |
+| Established agent       | $3,000-$5,000         | Google + Meta balanced            |
+| Team/brokerage          | $5,000-$20,000        | Full platform mix                 |
+| Luxury specialist       | $5,000-$15,000        | Google + YouTube + Meta           |
 
 ## Bidding Strategy Selection
 
-| Platform | Monthly Conversions | Recommended Strategy |
-|----------|--------------------|--------------------|
-| Google | <15 | Maximize Clicks (cap CPC) |
-| Google | 15-29 | Maximize Conversions |
-| Google | 30+ | Target CPA (recommended for lead gen) |
-| Meta | Default | Lowest Cost (Special Ad Category limits optimization) |
-| Meta | Efficiency priority | Cost Cap |
+| Platform         | Monthly Conversions        | Recommended Strategy                                        |
+|------------------|----------------------------|-------------------------------------------------------------|
+| Google           | <15                        | Maximize Clicks (cap CPC)                                   |
+| Google           | 15-29                      | Maximize Conversions                                        |
+| Google           | 30+                        | Target CPA (recommended for lead gen)                       |
+| Meta             | Default                    | Lowest Cost (Special Ad Category limits optimization)       |
+| Meta             | Efficiency priority        | Cost Cap                                                    |
 
 ## KPI Targets
 
-| Metric | Month 1 | Month 3 | Month 6 |
-|--------|---------|---------|---------|
-| CPL (buyer) | <$25 | <$15 | <$10 |
-| CPL (seller) | <$50 | <$35 | <$25 |
-| Lead → Showing Rate | Track | 10%+ | 15%+ |
-| Lead → Closing Rate | Track | 1-2% | 2-3% |
-| Cost per Closing | Track | Baseline | Optimize |
+| Metric                    | Month 1         | Month 3         | Month 6         |
+|---------------------------|-----------------|-----------------|-----------------|
+| CPL (buyer)               | <$25            | <$15            | <$10            |
+| CPL (seller)              | <$50            | <$35            | <$25            |
+| Lead → Showing Rate       | Track           | 10%+            | 15%+            |
+| Lead → Closing Rate       | Track           | 1-2%            | 2-3%            |
+| Cost per Closing          | Track           | Baseline        | Optimize        |
 
 ## Common Pitfalls
 

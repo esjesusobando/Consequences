@@ -13,13 +13,13 @@
 
 ## Recommended Platform Mix
 
-| Platform | Role | Budget % | Why |
-|----------|------|----------|-----|
-| LinkedIn | Primary | 40-55% | Decision-maker targeting by title, company, industry, ABM |
-| Google Search | Secondary | 25-35% | High-intent category and solution queries |
-| ABM Display | Secondary | 10-15% | Programmatic account-based display targeting |
-| Meta | Supporting | 5-10% | Retargeting, lookalikes of closed-won accounts |
-| YouTube | Testing | 5% | Thought leadership, product demos, webinar promotion |
+| Platform            | Role             | Budget %         | Why                                                             |
+|---------------------|------------------|------------------|-----------------------------------------------------------------|
+| LinkedIn            | Primary          | 40-55%           | Decision-maker targeting by title, company, industry, ABM       |
+| Google Search       | Secondary        | 25-35%           | High-intent category and solution queries                       |
+| ABM Display         | Secondary        | 10-15%           | Programmatic account-based display targeting                    |
+| Meta                | Supporting       | 5-10%            | Retargeting, lookalikes of closed-won accounts                  |
+| YouTube             | Testing          | 5%               | Thought leadership, product demos, webinar promotion            |
 
 ## Campaign Architecture
 
@@ -67,12 +67,12 @@ Account; Google
 - **Document Ads (LinkedIn)**: gated content preview; native PDF viewer
 
 ### Content by Buyer Stage
-| Stage | Content Type | Platform |
-|-------|-------------|----------|
-| Awareness | Industry insights, trend reports | LinkedIn TLA, YouTube |
-| Consideration | Whitepapers, ROI calculators, webinars | LinkedIn, Google |
-| Decision | Case studies, product demos, free trial | Google, LinkedIn, Meta retargeting |
-| Expansion | Feature updates, customer advisory | Meta retargeting, LinkedIn |
+| Stage               | Content Type                                  | Platform                                 |
+|---------------------|-----------------------------------------------|------------------------------------------|
+| Awareness           | Industry insights, trend reports              | LinkedIn TLA, YouTube                    |
+| Consideration       | Whitepapers, ROI calculators, webinars        | LinkedIn, Google                         |
+| Decision            | Case studies, product demos, free trial       | Google, LinkedIn, Meta retargeting       |
+| Expansion           | Feature updates, customer advisory            | Meta retargeting, LinkedIn               |
 
 ### ABM Creative Personalization
 - Company-name personalization in ad copy (LinkedIn matched audiences)
@@ -96,45 +96,45 @@ Account; Google
 - **Audience layers**: in-market audiences for B2B software, business services
 
 ### Account-Based Marketing Tiers
-| Tier | Accounts | Budget/Account | Personalization |
-|------|----------|----------------|-----------------|
-| Tier 1 | 10-50 | $500-2,000/mo | Fully personalized |
-| Tier 2 | 50-200 | $100-500/mo | Industry personalized |
-| Tier 3 | 200-1,000 | $20-100/mo | ICP personalized |
+| Tier         | Accounts         | Budget/Account         | Personalization             |
+|--------------|------------------|------------------------|-----------------------------|
+| Tier 1       | 10-50            | $500-2,000/mo          | Fully personalized          |
+| Tier 2       | 50-200           | $100-500/mo            | Industry personalized       |
+| Tier 3       | 200-1,000        | $20-100/mo             | ICP personalized            |
 
 ## Budget Guidelines
 
-| Metric | B2B Enterprise Benchmark |
-|--------|------------------------|
-| LinkedIn CPC | $5-$35 (TLA: $2.29-$4.14) |
-| LinkedIn CPL | $60-$150+ |
-| LinkedIn CPM | $31-$38 |
-| Google CPC (B2B) | $4.50-$8.00 |
-| Google CPL (B2B SaaS) | $100-$200 |
-| Meta CPM (B2B) | $35.00 |
-| Pipeline:Spend Ratio | 5-10x |
-| Min monthly budget | $10,000+ (LinkedIn + Google minimum viable for ABM) |
+| Metric                      | B2B Enterprise Benchmark                                  |
+|-----------------------------|-----------------------------------------------------------|
+| LinkedIn CPC                | $5-$35 (TLA: $2.29-$4.14)                                 |
+| LinkedIn CPL                | $60-$150+                                                 |
+| LinkedIn CPM                | $31-$38                                                   |
+| Google CPC (B2B)            | $4.50-$8.00                                               |
+| Google CPL (B2B SaaS)       | $100-$200                                                 |
+| Meta CPM (B2B)              | $35.00                                                    |
+| Pipeline:Spend Ratio        | 5-10x                                                     |
+| Min monthly budget          | $10,000+ (LinkedIn + Google minimum viable for ABM)       |
 
 ### Budget Allocation for ABM
-| Component | % of Budget |
-|-----------|-------------|
-| LinkedIn ABM + TLA | 40% |
-| Google Search (high intent) | 30% |
-| Retargeting (cross-platform) | 15% |
-| Content promotion (YouTube, Meta) | 10% |
-| Testing | 5% |
+| Component                               | % of Budget         |
+|-----------------------------------------|---------------------|
+| LinkedIn ABM + TLA                      | 40%                 |
+| Google Search (high intent)             | 30%                 |
+| Retargeting (cross-platform)            | 15%                 |
+| Content promotion (YouTube, Meta)       | 10%                 |
+| Testing                                 | 5%                  |
 
 ## Bidding Strategy Selection
 
-| Platform | Monthly Conversions | Recommended Strategy |
-|----------|--------------------|--------------------|
-| LinkedIn | Default | Maximum Delivery |
-| LinkedIn | Efficiency priority | Manual CPC or Cost Cap |
-| LinkedIn | Accelerate campaigns | Auto-optimized (42% lower CPA, 21% lower CPL) |
-| Google | <15 | Maximize Clicks (cap CPC) |
-| Google | 15-29 | Maximize Conversions |
-| Google | 30+ | Target CPA |
-| Meta | Default | Lowest Cost (retargeting focus) |
+| Platform         | Monthly Conversions        | Recommended Strategy                                |
+|------------------|----------------------------|-----------------------------------------------------|
+| LinkedIn         | Default                    | Maximum Delivery                                    |
+| LinkedIn         | Efficiency priority        | Manual CPC or Cost Cap                              |
+| LinkedIn         | Accelerate campaigns       | Auto-optimized (42% lower CPA, 21% lower CPL)       |
+| Google           | <15                        | Maximize Clicks (cap CPC)                           |
+| Google           | 15-29                      | Maximize Conversions                                |
+| Google           | 30+                        | Target CPA                                          |
+| Meta             | Default                    | Lowest Cost (retargeting focus)                     |
 
 ## Attribution & Measurement
 
@@ -147,13 +147,13 @@ Account; Google
 
 ## KPI Targets
 
-| Metric | Month 1 | Month 3 | Month 6 |
-|--------|---------|---------|---------|
-| MQL Volume | Baseline | Stable | Stable |
-| MQL → SQL Rate | Track | 15%+ | 25%+ |
-| Pipeline Generated | Track | 5x spend | 8x spend |
-| Cost per MQA | Baseline | Optimize | Target |
-| LinkedIn TLA CTR | Track | 1.0%+ | 1.5%+ |
+| Metric                   | Month 1         | Month 3         | Month 6         |
+|--------------------------|-----------------|-----------------|-----------------|
+| MQL Volume               | Baseline        | Stable          | Stable          |
+| MQL → SQL Rate           | Track           | 15%+            | 25%+            |
+| Pipeline Generated       | Track           | 5x spend        | 8x spend        |
+| Cost per MQA             | Baseline        | Optimize        | Target          |
+| LinkedIn TLA CTR         | Track           | 1.0%+           | 1.5%+           |
 
 ## Common Pitfalls
 

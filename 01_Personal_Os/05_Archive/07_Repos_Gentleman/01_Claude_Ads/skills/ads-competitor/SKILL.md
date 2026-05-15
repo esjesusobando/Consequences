@@ -21,14 +21,14 @@ user-invokable: false
 ## Data Sources
 
 ### Free Intelligence Sources
-| Source | Platform | What You Can Find |
-|--------|----------|------------------|
-| Google Ads Transparency Center | Google | Active ads, formats, geo targeting |
-| Meta Ad Library | Meta/Instagram | All active ads, creative, copy, spend range |
-| LinkedIn Ad Library | LinkedIn | Active ads from company pages |
-| TikTok Creative Center | TikTok | Top ads, trending creative, hashtags |
-| Microsoft Ads | Microsoft | Limited: use auction insights |
-| Apple Ads (App Store) | Apple | Search tab ads, Today tab ads, product page creatives |
+| Source                               | Platform             | What You Can Find                                           |
+|--------------------------------------|----------------------|-------------------------------------------------------------|
+| Google Ads Transparency Center       | Google               | Active ads, formats, geo targeting                          |
+| Meta Ad Library                      | Meta/Instagram       | All active ads, creative, copy, spend range                 |
+| LinkedIn Ad Library                  | LinkedIn             | Active ads from company pages                               |
+| TikTok Creative Center               | TikTok               | Top ads, trending creative, hashtags                        |
+| Microsoft Ads                        | Microsoft            | Limited: use auction insights                               |
+| Apple Ads (App Store)                | Apple                | Search tab ads, Today tab ads, product page creatives       |
 
 ### Google Ads Auction Insights
 Available from the user's own Google Ads account:
@@ -117,13 +117,13 @@ For each competitor, document:
 
 ### 3. Messaging Themes
 Categorize competitor messaging into themes:
-| Theme | Competitor A | Competitor B | Your Brand |
-|-------|-------------|-------------|------------|
-| Price/Value | ✅ Primary | ⚠️ Secondary | ? |
-| Quality/Premium | ❌ | ✅ Primary | ? |
-| Speed/Convenience | ⚠️ Secondary | ❌ | ? |
-| Trust/Authority | ✅ Primary | ✅ Primary | ? |
-| Innovation | ❌ | ⚠️ Secondary | ? |
+| Theme                   | Competitor A        | Competitor B        | Your Brand         |
+|-------------------------|---------------------|---------------------|--------------------|
+| Price/Value             | ✅ Primary           | ⚠️ Secondary        | ?                  |
+| Quality/Premium         | ❌                   | ✅ Primary           | ?                  |
+| Speed/Convenience       | ⚠️ Secondary        | ❌                   | ?                  |
+| Trust/Authority         | ✅ Primary           | ✅ Primary           | ?                  |
+| Innovation              | ❌                   | ⚠️ Secondary        | ?                  |
 
 ### 4. Keyword Intelligence (Google/Microsoft/Apple Ads)
 - Brand keyword bidding: are competitors bidding on your brand?

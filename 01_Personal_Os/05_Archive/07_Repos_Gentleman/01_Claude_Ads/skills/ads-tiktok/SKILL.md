@@ -133,25 +133,25 @@ AI-powered creative variations generated from product URLs.
 
 ## TikTok Context
 
-| Setting | Value |
-|---------|-------|
-| CPM | 40-60% cheaper than Meta |
-| Spark Ads CTR | ~3% (vs ~2% standard) |
-| Smart+ adoption | 42% of advertisers |
-| Smart+ ROAS | 1.41-1.67 |
-| Shop CVR | >10% |
-| Available markets | 11 countries (US, UK, ID, MY, PH, SG, TH, VN, JP, KR, BR) |
+| Setting                 | Value                                                           |
+|-------------------------|-----------------------------------------------------------------|
+| CPM                     | 40-60% cheaper than Meta                                        |
+| Spark Ads CTR           | ~3% (vs ~2% standard)                                           |
+| Smart+ adoption         | 42% of advertisers                                              |
+| Smart+ ROAS             | 1.41-1.67                                                       |
+| Shop CVR                | >10%                                                            |
+| Available markets       | 11 countries (US, UK, ID, MY, PH, SG, TH, VN, JP, KR, BR)       |
 
 ## Key Thresholds
 
-| Metric | Pass | Warning | Fail |
-|--------|------|---------|------|
-| CTR (in-feed) | ≥1.0% | 0.5-1.0% | <0.5% |
-| Creatives per ad group | ≥6 | 3-5 | <3 |
-| Video watch time | ≥6s | 3-6s | <3s |
-| Learning conversions | ≥50/week | 30-50/week | <30/week |
-| Daily budget | ≥50x CPA | 20-49x CPA | <20x CPA |
-| Creative age (declining) | <7 days | 7-14 days | >14 days |
+| Metric                         | Pass           | Warning          | Fail           |
+|--------------------------------|----------------|------------------|----------------|
+| CTR (in-feed)                  | ≥1.0%          | 0.5-1.0%         | <0.5%          |
+| Creatives per ad group         | ≥6             | 3-5              | <3             |
+| Video watch time               | ≥6s            | 3-6s             | <3s            |
+| Learning conversions           | ≥50/week       | 30-50/week       | <30/week       |
+| Daily budget                   | ≥50x CPA       | 20-49x CPA       | <20x CPA       |
+| Creative age (declining)       | <7 days        | 7-14 days        | >14 days       |
 
 ## Output
 

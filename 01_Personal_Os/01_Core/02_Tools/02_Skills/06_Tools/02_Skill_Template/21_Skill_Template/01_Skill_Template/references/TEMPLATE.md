@@ -14,12 +14,12 @@ Este archivo sirve como guía para crear referencias efectivas en las skills.
 
 ## Cuándo Usar References
 
-| Tipo de Info                             | Dónde                                        |
-|------------------------------------------|----------------------------------------------|
-| API detallada                            | references/API.md                            |
-| Esquemas de datos                        | references/SCHEMAS.md                        |
-| Guías paso a paso                        | references/GUIDES.md                         |
-| Patrones de diseño                       | references/PATTERNS.md                       |
+| Tipo de Info                                     | Dónde                                                |
+|--------------------------------------------------|------------------------------------------------------|
+| API detallada                                    | references/API.md                                    |
+| Esquemas de datos                                | references/SCHEMAS.md                                |
+| Guías paso a paso                                | references/GUIDES.md                                 |
+| Patrones de diseño                               | references/PATTERNS.md                               |
 
 ## Ejemplo de Template
 

@@ -37,35 +37,35 @@ El fork actual (`01_Every/`) está en versión **2.36.0** con **20 skills**. Ups
 
 ### Contenido ÚNICO del Fork (que upstream NO tiene)
 
-| Asset                                       | Ubicación Actual                                                                 | Valor                                                                 |
-|---------------------------------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| `skill-creator`                             | `plugins/compound-engineering/skills/skill-creator/`                             | 3 scripts únicos: init, package, validate                             |
-| `brainstorming`                             | `plugins/compound-engineering/skills/brainstorming/`                             | Nueva versión con proceso 4 fases                                     |
-| `publish.yml`                               | `.github/workflows/publish.yml`                                                  | npm publishing con Bun                                                |
-| `release-docs`                              | `.claude/commands/release-docs.md`                                               | Comando personalizado                                                 |
-| `triage-prs`                                | `.claude/commands/triage-prs.md`                                                 | Comando de triaje                                                     |
-| `Rails demo`                                | `app/`, `spec/`                                                                  | Ejemplo didáctico SQL injection                                       |
-| `bunfig.toml`                               | raíz                                                                             | Coverage threshold 80%                                                |
-| Package scope                               | `@every-env` vs `@claude-every`                                                  | Branding diferenciado                                                 |
+| Asset                                               | Ubicación Actual                                                                         | Valor                                                                         |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| `skill-creator`                                     | `plugins/compound-engineering/skills/skill-creator/`                                     | 3 scripts únicos: init, package, validate                                     |
+| `brainstorming`                                     | `plugins/compound-engineering/skills/brainstorming/`                                     | Nueva versión con proceso 4 fases                                             |
+| `publish.yml`                                       | `.github/workflows/publish.yml`                                                          | npm publishing con Bun                                                        |
+| `release-docs`                                      | `.claude/commands/release-docs.md`                                                       | Comando personalizado                                                         |
+| `triage-prs`                                        | `.claude/commands/triage-prs.md`                                                         | Comando de triaje                                                             |
+| `Rails demo`                                        | `app/`, `spec/`                                                                          | Ejemplo didáctico SQL injection                                               |
+| `bunfig.toml`                                       | raíz                                                                                     | Coverage threshold 80%                                                        |
+| Package scope                                       | `@every-env` vs `@claude-every`                                                          | Branding diferenciado                                                         |
 
 ### Skills NUEVAS en Upstream (28+)
 
-| Categoría                                    | Skills                                                                                                                                                                               |
-|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **CE Workflows**                             | `ce-brainstorm`, `ce-compound`, `ce-compound-refresh`, `ce-ideate`, `ce-plan`, `ce-plan-beta`, `ce-review`, `ce-work`, `deepen-plan`, `deepen-plan-beta`                             |
-| **Testing**                                  | `test-browser`, `test-xcode`, `feature-video`                                                                                                                                        |
-| **Bug Handling**                             | `report-bug`, `reproduce-bug`, `resolve-parallel`, `resolve-todo-parallel`, `heal-skill`                                                                                             |
-| **Automation**                               | `lfg`, `slfg`                                                                                                                                                                        |
-| **Utilities**                                | `changelog`, `claude-permissions-optimizer`, `create-agent-skill`, `deploy-docs`, `generate_command`, `triage`, `agent-browser`, `agent-native-audit`                                |
+| Categoría                                            | Skills                                                                                                                                                                                       |
+|------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **CE Workflows**                                     | `ce-brainstorm`, `ce-compound`, `ce-compound-refresh`, `ce-ideate`, `ce-plan`, `ce-plan-beta`, `ce-review`, `ce-work`, `deepen-plan`, `deepen-plan-beta`                                     |
+| **Testing**                                          | `test-browser`, `test-xcode`, `feature-video`                                                                                                                                                |
+| **Bug Handling**                                     | `report-bug`, `reproduce-bug`, `resolve-parallel`, `resolve-todo-parallel`, `heal-skill`                                                                                                     |
+| **Automation**                                       | `lfg`, `slfg`                                                                                                                                                                                |
+| **Utilities**                                        | `changelog`, `claude-permissions-optimizer`, `create-agent-skill`, `deploy-docs`, `generate_command`, `triage`, `agent-browser`, `agent-native-audit`                                        |
 
 ### Fixes Críticos Incluidos
 
-| Fix                                                      | Impacto                                                     |
-|----------------------------------------------------------|-------------------------------------------------------------|
-| Context7 API key auth                                    | Previene rate limits                                        |
-| Serial mode para reviews                                 | Previene crashes de context                                 |
-| Cross-platform compatibility                             | Works con Codex/Gemini/Copilot                              |
-| Daily sequence numbers                                   | Previene colisiones de archivos                             |
+| Fix                                                              | Impacto                                                             |
+|------------------------------------------------------------------|---------------------------------------------------------------------|
+| Context7 API key auth                                            | Previene rate limits                                                |
+| Serial mode para reviews                                         | Previene crashes de context                                         |
+| Cross-platform compatibility                                     | Works con Codex/Gemini/Copilot                                      |
+| Daily sequence numbers                                           | Previene colisiones de archivos                                     |
 
 ## Plan de Ejecución
 
@@ -135,23 +135,23 @@ El fork actual (`01_Every/`) está en versión **2.36.0** con **20 skills**. Ups
 
 ## Edge Cases y Mitigaciones
 
-| Edge Case                                                          | Mitigación                                                                                             |
-|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Conflicto de versión en `package.json`                             | Merge manual, priorizar upstream para dependencias                                                     |
-| Skills con mismo nombre                                            | Upstream gana, preservar scripts únicos en subcarpeta                                                  |
-| CI workflows colisionan                                            | Configurar `release-please` para tags, `publish.yml` para npm only en tags                             |
-| Archivos `.lock` desincronizados                                   | Usar `bun.lock` de upstream, re-run `bun install`                                                      |
+| Edge Case                                                                  | Mitigación                                                                                                     |
+|----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| Conflicto de versión en `package.json`                                     | Merge manual, priorizar upstream para dependencias                                                             |
+| Skills con mismo nombre                                                    | Upstream gana, preservar scripts únicos en subcarpeta                                                          |
+| CI workflows colisionan                                                    | Configurar `release-please` para tags, `publish.yml` para npm only en tags                                     |
+| Archivos `.lock` desincronizados                                           | Usar `bun.lock` de upstream, re-run `bun install`                                                              |
 
 ## RTM (Requirements Traceability Matrix)
 
-| Req ID                               | Requirement                                            | Validation                                                                   | Priority                               |
-|--------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------|----------------------------------------|
-| INT-01                               | Upstream v2.45.0 integrado                             | `git log` muestra commits de upstream                                        | P0                                     |
-| INT-02                               | Skills propias preservadas                             | Skills únicas existen en zona de sync                                        | P0                                     |
-| INT-03                               | Tests pasan                                            | `bun test` 100% pass                                                         | P0                                     |
-| INT-04                               | CI/CD funcional                                        | Workflows no colisionan                                                      | P1                                     |
-| INT-05                               | Documentación actualizada                              | 01_Personal_Os/11_AGENTS.md incluye nota de filosofía                        | P1                                     |
-| INT-06                               | Personalizaciones intactas                             | `skill-creator`, `publish.yml`, `app/` presentes                             | P0                                     |
+| Req ID                                       | Requirement                                                    | Validation                                                                           | Priority                                       |
+|----------------------------------------------|----------------------------------------------------------------|--------------------------------------------------------------------------------------|------------------------------------------------|
+| INT-01                                       | Upstream v2.45.0 integrado                                     | `git log` muestra commits de upstream                                                | P0                                             |
+| INT-02                                       | Skills propias preservadas                                     | Skills únicas existen en zona de sync                                                | P0                                             |
+| INT-03                                       | Tests pasan                                                    | `bun test` 100% pass                                                                 | P0                                             |
+| INT-04                                       | CI/CD funcional                                                | Workflows no colisionan                                                              | P1                                             |
+| INT-05                                       | Documentación actualizada                                      | 01_Personal_Os/11_AGENTS.md incluye nota de filosofía                                | P1                                             |
+| INT-06                                       | Personalizaciones intactas                                     | `skill-creator`, `publish.yml`, `app/` presentes                                     | P0                                             |
 
 ## Evals
 

@@ -8,12 +8,12 @@ You are a COORDINATOR, not an executor. Your only job is to maintain one thin co
 
 ### Delegation Rules (ALWAYS ACTIVE)
 
-| Rule                            | Instruction                                                                                  |
-|---------------------------------|----------------------------------------------------------------------------------------------|
-| No inline work                  | Reading/writing code, analysis, tests → delegate to sub-agent                                |
-| Allowed actions                 | Short answers, coordinate phases, show summaries, ask decisions, track state                 |
-| Self-check                      | "Am I about to read/write code or analyze? → delegate"                                       |
-| Why                             | Inline work bloats context → compaction → state loss                                         |
+| Rule                                    | Instruction                                                                                          |
+|-----------------------------------------|------------------------------------------------------------------------------------------------------|
+| No inline work                          | Reading/writing code, analysis, tests → delegate to sub-agent                                        |
+| Allowed actions                         | Short answers, coordinate phases, show summaries, ask decisions, track state                         |
+| Self-check                              | "Am I about to read/write code or analyze? → delegate"                                               |
+| Why                                     | Inline work bloats context → compaction → state loss                                                 |
 
 ### Hard Stop Rule (ZERO EXCEPTIONS)
 
@@ -33,11 +33,11 @@ Before using Read, Edit, Write, or Grep tools on source/config/skill files:
 
 ### Task Escalation
 
-| Size                                | Action                                         |
-|-------------------------------------|------------------------------------------------|
-| Simple question                     | Answer if known, else delegate                 |
-| Small task                          | Delegate to sub-agent                          |
-| Substantial feature                 | Suggest SDD: `/sdd-new {name}`                 |
+| Size                                        | Action                                                 |
+|---------------------------------------------|--------------------------------------------------------|
+| Simple question                             | Answer if known, else delegate                         |
+| Small task                                  | Delegate to sub-agent                                  |
+| Substantial feature                         | Suggest SDD: `/sdd-new {name}`                         |
 
 ---
 
@@ -47,12 +47,12 @@ SDD is the structured planning layer for substantial changes.
 
 ### Artifact Store Policy
 
-| Mode                       | Behavior                                                                                 |
-|----------------------------|------------------------------------------------------------------------------------------|
-| `engram`                   | Default when available. Persistent memory across sessions.                               |
-| `openspec`                 | File-based artifacts. Use only when user explicitly requests.                            |
-| `hybrid`                   | Both backends. Cross-session recovery + local files. More tokens per op.                 |
-| `none`                     | Return results inline only. Recommend enabling engram or openspec.                       |
+| Mode                               | Behavior                                                                                         |
+|------------------------------------|--------------------------------------------------------------------------------------------------|
+| `engram`                           | Default when available. Persistent memory across sessions.                                       |
+| `openspec`                         | File-based artifacts. Use only when user explicitly requests.                                    |
+| `hybrid`                           | Both backends. Cross-session recovery + local files. More tokens per op.                         |
+| `none`                             | Return results inline only. Recommend enabling engram or openspec.                               |
 
 ### Commands
 - `/sdd-init` -> run `sdd-init`
@@ -105,16 +105,16 @@ Sub-agents get a fresh context with NO memory. The orchestrator controls context
 
 Each SDD phase has explicit read/write rules based on the dependency graph:
 
-| Phase                         | Reads artifacts from backend                      | Writes artifact                        |
-|-------------------------------|---------------------------------------------------|----------------------------------------|
-| `sdd-explore`                 | Nothing                                           | Yes (`explore`)                        |
-| `sdd-propose`                 | Exploration (if exists, optional)                 | Yes (`proposal`)                       |
-| `sdd-spec`                    | Proposal (required)                               | Yes (`spec`)                           |
-| `sdd-design`                  | Proposal (required)                               | Yes (`design`)                         |
-| `sdd-tasks`                   | Spec + Design (required)                          | Yes (`tasks`)                          |
-| `sdd-apply`                   | Tasks + Spec + Design                             | Yes (`apply-progress`)                 |
-| `sdd-verify`                  | Spec + Tasks                                      | Yes (`verify-report`)                  |
-| `sdd-archive`                 | All artifacts                                     | Yes (`archive-report`)                 |
+| Phase                                 | Reads artifacts from backend                              | Writes artifact                                |
+|---------------------------------------|-----------------------------------------------------------|------------------------------------------------|
+| `sdd-explore`                         | Nothing                                                   | Yes (`explore`)                                |
+| `sdd-propose`                         | Exploration (if exists, optional)                         | Yes (`proposal`)                               |
+| `sdd-spec`                            | Proposal (required)                                       | Yes (`spec`)                                   |
+| `sdd-design`                          | Proposal (required)                                       | Yes (`design`)                                 |
+| `sdd-tasks`                           | Spec + Design (required)                                  | Yes (`tasks`)                                  |
+| `sdd-apply`                           | Tasks + Spec + Design                                     | Yes (`apply-progress`)                         |
+| `sdd-verify`                          | Spec + Tasks                                              | Yes (`verify-report`)                          |
+| `sdd-archive`                         | All artifacts                                             | Yes (`archive-report`)                         |
 
 For SDD phases with required dependencies, the sub-agent reads them directly from the backend (engram or openspec) — the orchestrator passes artifact references (topic keys or file paths), NOT the content itself.
 
@@ -122,18 +122,18 @@ For SDD phases with required dependencies, the sub-agent reads them directly fro
 
 When launching sub-agents for SDD phases with engram mode, pass these exact topic_keys as artifact references:
 
-| Artifact                        | Topic Key                                          |
-|---------------------------------|----------------------------------------------------|
-| Project context                 | `sdd-init/{project}`                               |
-| Exploration                     | `sdd/{change-name}/explore`                        |
-| Proposal                        | `sdd/{change-name}/proposal`                       |
-| Spec                            | `sdd/{change-name}/spec`                           |
-| Design                          | `sdd/{change-name}/design`                         |
-| Tasks                           | `sdd/{change-name}/tasks`                          |
-| Apply progress                  | `sdd/{change-name}/apply-progress`                 |
-| Verify report                   | `sdd/{change-name}/verify-report`                  |
-| Archive report                  | `sdd/{change-name}/archive-report`                 |
-| DAG state                       | `sdd/{change-name}/state`                          |
+| Artifact                                | Topic Key                                                  |
+|-----------------------------------------|------------------------------------------------------------|
+| Project context                         | `sdd-init/{project}`                                       |
+| Exploration                             | `sdd/{change-name}/explore`                                |
+| Proposal                                | `sdd/{change-name}/proposal`                               |
+| Spec                                    | `sdd/{change-name}/spec`                                   |
+| Design                                  | `sdd/{change-name}/design`                                 |
+| Tasks                                   | `sdd/{change-name}/tasks`                                  |
+| Apply progress                          | `sdd/{change-name}/apply-progress`                         |
+| Verify report                           | `sdd/{change-name}/verify-report`                          |
+| Archive report                          | `sdd/{change-name}/archive-report`                         |
+| DAG state                               | `sdd/{change-name}/state`                                  |
 
 Sub-agents retrieve full content via two steps:
 1. `mem_search(query: "{topic_key}", project: "{project}")` → get observation ID
@@ -145,8 +145,8 @@ Convention files under `~/.copilot/skills/_shared/` (or your configured skills p
 
 ### Recovery Rule
 
-| Mode                       | Recovery                                                       |
-|----------------------------|----------------------------------------------------------------|
-| `engram`                   | `mem_search(...)` → `mem_get_observation(...)`                 |
-| `openspec`                 | read `openspec/changes/*/state.yaml`                           |
-| `none`                     | State not persisted — explain to user                          |
+| Mode                               | Recovery                                                               |
+|------------------------------------|------------------------------------------------------------------------|
+| `engram`                           | `mem_search(...)` → `mem_get_observation(...)`                         |
+| `openspec`                         | read `openspec/changes/*/state.yaml`                                   |
+| `none`                             | State not persisted — explain to user                                  |

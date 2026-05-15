@@ -29,29 +29,29 @@ user-invokable: false
 
 ### Platform Selection Matrix
 
-| Business Type | Primary | Secondary | Testing |
-|---------------|---------|-----------|---------|
-| SaaS B2B | Google Search, LinkedIn | Meta, YouTube | TikTok, Microsoft |
-| E-commerce | Google Shopping, Meta | TikTok, YouTube | Microsoft, LinkedIn |
-| Local Service | Google Search, Google LSA | Meta | Microsoft, YouTube |
-| B2B Enterprise | LinkedIn, Google Search | Meta | Microsoft, TikTok |
-| Info Products | Meta, YouTube | Google Search | TikTok |
-| Mobile App | Meta, Google UAC | TikTok | Apple Ads |
-| Real Estate | Google Search, Meta | YouTube | Microsoft |
-| Healthcare | Google Search | Meta | Microsoft, YouTube |
-| Finance | Google Search, Meta | LinkedIn | Microsoft |
-| Agency (clients) | Varies by client | N/A | N/A |
+| Business Type          | Primary                         | Secondary             | Testing                   |
+|------------------------|---------------------------------|-----------------------|---------------------------|
+| SaaS B2B               | Google Search, LinkedIn         | Meta, YouTube         | TikTok, Microsoft         |
+| E-commerce             | Google Shopping, Meta           | TikTok, YouTube       | Microsoft, LinkedIn       |
+| Local Service          | Google Search, Google LSA       | Meta                  | Microsoft, YouTube        |
+| B2B Enterprise         | LinkedIn, Google Search         | Meta                  | Microsoft, TikTok         |
+| Info Products          | Meta, YouTube                   | Google Search         | TikTok                    |
+| Mobile App             | Meta, Google UAC                | TikTok                | Apple Ads                 |
+| Real Estate            | Google Search, Meta             | YouTube               | Microsoft                 |
+| Healthcare             | Google Search                   | Meta                  | Microsoft, YouTube        |
+| Finance                | Google Search, Meta             | LinkedIn              | Microsoft                 |
+| Agency (clients)       | Varies by client                | N/A                   | N/A                       |
 
 ### Budget Sufficiency Rules
 
-| Platform | Minimum Daily | Learning Phase Budget |
-|----------|--------------|----------------------|
-| Google Search | $20/day | Sufficient for 15+ conv/month |
-| Google PMax | $50/day | Sufficient for algorithm optimization |
-| Meta | $20/day per ad set | ≥5x target CPA per ad set |
-| LinkedIn | $50/day Sponsored Content | 15+ conversions/month |
-| TikTok | $50/day campaign, $20/day ad group | ≥50x target CPA per ad group |
-| Microsoft | No strict minimum | Sufficient for stable delivery |
+| Platform            | Minimum Daily                            | Learning Phase Budget                       |
+|---------------------|------------------------------------------|---------------------------------------------|
+| Google Search       | $20/day                                  | Sufficient for 15+ conv/month               |
+| Google PMax         | $50/day                                  | Sufficient for algorithm optimization       |
+| Meta                | $20/day per ad set                       | ≥5x target CPA per ad set                   |
+| LinkedIn            | $50/day Sponsored Content                | 15+ conversions/month                       |
+| TikTok              | $50/day campaign, $20/day ad group       | ≥50x target CPA per ad group                |
+| Microsoft           | No strict minimum                        | Sufficient for stable delivery              |
 
 ## Bidding Strategy Evaluation
 
@@ -154,12 +154,12 @@ Never increase budget by more than 20% at a time:
 - Creative with CTR >50% below platform benchmark → **flag for creative kill**
 
 ### Kill Decision Framework
-| Scenario | Data Required | Action |
-|----------|---------------|--------|
-| CPA >3x target | ≥7 days data, ≥20 clicks | Pause immediately |
-| No conversions | ≥$100 spend or ≥50 clicks | Pause and diagnose |
-| CTR <50% of benchmark | ≥1,000 impressions | Kill creative, test new |
-| ROAS <50% of target | ≥14 days data | Reduce budget 50% or pause |
+| Scenario                    | Data Required                   | Action                           |
+|-----------------------------|---------------------------------|----------------------------------|
+| CPA >3x target              | ≥7 days data, ≥20 clicks        | Pause immediately                |
+| No conversions              | ≥$100 spend or ≥50 clicks       | Pause and diagnose               |
+| CTR <50% of benchmark       | ≥1,000 impressions              | Kill creative, test new          |
+| ROAS <50% of target         | ≥14 days data                   | Reduce budget 50% or pause       |
 
 ## MER (Marketing Efficiency Ratio)
 

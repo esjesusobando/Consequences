@@ -6,11 +6,11 @@ This guide explains how to align daily tasks with quarterly goals during morning
 
 ## The Alignment Matrix
 
-| Goal Priority                           | Daily Focus                         | Weekly Minimum                         |
-|-----------------------------------------|-------------------------------------|----------------------------------------|
-| P0 (Critical)                           | 60% of day                          | 4 hours                                |
-| P1 (Important)                          | 30% of day                          | 2 hours                                |
-| P2 (Nice to have)                       | 10% of day                          | 30 min                                 |
+| Goal Priority                                   | Daily Focus                                 | Weekly Minimum                                 |
+|-------------------------------------------------|---------------------------------------------|------------------------------------------------|
+| P0 (Critical)                                   | 60% of day                                  | 4 hours                                        |
+| P1 (Important)                                  | 30% of day                                  | 2 hours                                        |
+| P2 (Nice to have)                               | 10% of day                                  | 30 min                                         |
 
 ## How to Check Alignment
 
@@ -37,10 +37,10 @@ Ask: "Does completing this task move a goal forward?"
 
 Track how each task contributes to goal percentage:
 
-| Goal                              | Current %                         | Today +%                         | End of Day %                         |
-|-----------------------------------|-----------------------------------|----------------------------------|--------------------------------------|
-| Auth System                       | 40%                               | +20%                             | 60%                                  |
-| API v2                            | 15%                               | +5%                              | 20%                                  |
+| Goal                                      | Current %                                 | Today +%                                 | End of Day %                                 |
+|-------------------------------------------|-------------------------------------------|------------------------------------------|----------------------------------------------|
+| Auth System                               | 40%                                       | +20%                                     | 60%                                          |
+| API v2                                    | 15%                                       | +5%                                      | 20%                                          |
 
 ## Common Mistakes
 

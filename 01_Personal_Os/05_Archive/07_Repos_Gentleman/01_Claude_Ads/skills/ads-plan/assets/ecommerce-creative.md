@@ -113,13 +113,13 @@ guidance. Use alongside `copy-frameworks.md` for ad copy structure.
 
 ## A/B Testing Matrix
 
-| Campaign Type    | Test Variable 1       | Test Variable 2      | Test Variable 3         |
-|------------------|-----------------------|----------------------|-------------------------|
-| Product Launch   | Hero shot vs. UGC     | AIDA vs. BAB copy    | Static image vs. video  |
-| Sale / Promotion | Percentage vs. dollar discount | Countdown vs. no countdown | Single product vs. bundle |
-| Seasonal         | Themed vs. neutral imagery | Gift guide vs. single product | Video length (15s vs. 30s) |
-| Retargeting      | Dynamic vs. static creative | With incentive vs. without | Review overlay vs. plain |
-| Brand Awareness  | Founder story vs. customer UGC | 30s vs. 60s video | Cinematic vs. raw style |
+| Campaign Type            | Test Variable 1                      | Test Variable 2                     | Test Variable 3                  |
+|--------------------------|--------------------------------------|-------------------------------------|----------------------------------|
+| Product Launch           | Hero shot vs. UGC                    | AIDA vs. BAB copy                   | Static image vs. video           |
+| Sale / Promotion         | Percentage vs. dollar discount       | Countdown vs. no countdown          | Single product vs. bundle        |
+| Seasonal                 | Themed vs. neutral imagery           | Gift guide vs. single product       | Video length (15s vs. 30s)       |
+| Retargeting              | Dynamic vs. static creative          | With incentive vs. without          | Review overlay vs. plain         |
+| Brand Awareness          | Founder story vs. customer UGC       | 30s vs. 60s video                   | Cinematic vs. raw style          |
 
 Run each test for a minimum of 7 days or 1,000 impressions per variant (whichever
 comes first) before drawing conclusions. Allocate 10 to 15% of campaign budget to

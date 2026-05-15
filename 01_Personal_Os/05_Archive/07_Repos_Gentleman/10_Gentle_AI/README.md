@@ -27,17 +27,17 @@ This is NOT an AI agent installer. Most agents are easy to install. This is an *
 
 ### 9 Supported Agents
 
-| Agent                               | Delegation Model                             | Key Feature                                                       |
-|-------------------------------------|----------------------------------------------|-------------------------------------------------------------------|
-| **Claude Code**                     | Full (Task tool)                             | Sub-agents, output styles                                         |
-| **OpenCode**                        | Full (multi-mode overlay)                    | Per-phase model routing                                           |
-| **Gemini CLI**                      | Full (experimental)                          | Custom agents in `~/.gemini/agents/`                              |
-| **Cursor**                          | Full (native subagents)                      | 9 SDD agents in `~/.cursor/agents/`                               |
-| **VS Code Copilot**                 | Full (runSubagent)                           | Parallel execution                                                |
-| **Codex**                           | Solo-agent                                   | CLI-native, TOML config                                           |
-| **Windsurf**                        | Solo-agent                                   | Plan Mode, Code Mode, native workflows                            |
-| **Antigravity**                     | Solo-agent + Mission Control                 | Built-in Browser/Terminal sub-agents                              |
-| **Kiro IDE**                        | Full (native subagents)                      | Native `~/.kiro/agents/` + steering orchestration                 |
+| Agent                                       | Delegation Model                                     | Key Feature                                                               |
+|---------------------------------------------|------------------------------------------------------|---------------------------------------------------------------------------|
+| **Claude Code**                             | Full (Task tool)                                     | Sub-agents, output styles                                                 |
+| **OpenCode**                                | Full (multi-mode overlay)                            | Per-phase model routing                                                   |
+| **Gemini CLI**                              | Full (experimental)                                  | Custom agents in `~/.gemini/agents/`                                      |
+| **Cursor**                                  | Full (native subagents)                              | 9 SDD agents in `~/.cursor/agents/`                                       |
+| **VS Code Copilot**                         | Full (runSubagent)                                   | Parallel execution                                                        |
+| **Codex**                                   | Solo-agent                                           | CLI-native, TOML config                                                   |
+| **Windsurf**                                | Solo-agent                                           | Plan Mode, Code Mode, native workflows                                    |
+| **Antigravity**                             | Solo-agent + Mission Control                         | Built-in Browser/Terminal sub-agents                                      |
+| **Kiro IDE**                                | Full (native subagents)                              | Native `~/.kiro/agents/` + steering orchestration                         |
 
 > **Note**: This project supersedes [Agent Teams Lite](https://github.com/Gentleman-Programming/agent-teams-lite) (now archived). Everything ATL provided is included here with better installation, automatic updates, and persistent memory.
 
@@ -64,10 +64,10 @@ Or via PowerShell script: `irm https://raw.githubusercontent.com/Gentleman-Progr
 
 Once your agents are configured, open your AI agent in a project and run these two commands to register the project context:
 
-| Command                          | What it does                                                                                | When to re-run                                                                                 |
-|----------------------------------|---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| `/sdd-init`                      | Detects stack, testing capabilities, activates Strict TDD Mode if available                 | When your project adds/removes test frameworks, or first time in a new project                 |
-| `skill-registry`                 | Scans installed skills and project conventions, builds the registry                         | After installing/removing skills, or first time in a new project                               |
+| Command                                  | What it does                                                                                        | When to re-run                                                                                         |
+|------------------------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| `/sdd-init`                              | Detects stack, testing capabilities, activates Strict TDD Mode if available                         | When your project adds/removes test frameworks, or first time in a new project                         |
+| `skill-registry`                         | Scans installed skills and project conventions, builds the registry                                 | After installing/removing skills, or first time in a new project                                       |
 
 These are **not required** for basic usage. The SDD orchestrator runs `/sdd-init` automatically if it detects no context. But if something changed in your project (new test runner, new dependencies), re-running them manually ensures the agents have up-to-date context.
 
@@ -160,18 +160,18 @@ engram tui                    # Visual memory browser
 
 ## Documentation
 
-| Topic                                                              | Description                                                                             |
-|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [Intended Usage](docs/intended-usage.md)                           | How gentle-ai is meant to be used — the mental model                                    |
-| [OpenCode SDD Profiles](docs/opencode-profiles.md)                 | Create and manage per-phase model profiles for OpenCode                                 |
-| [Engram Commands](docs/engram.md)                                  | CLI commands, MCP tools, project management, team sharing                               |
-| [Agents](docs/agents.md)                                           | Supported agents, feature matrix, config paths, and per-agent notes                     |
-| [Components, Skills & Presets](docs/components.md)                 | All components, GGA behavior, skill catalog, and preset definitions                     |
-| [Usage](docs/usage.md)                                             | Persona modes, interactive TUI, CLI flags, and dependency management                    |
-| [Backup & Rollback](docs/rollback.md)                              | Backup retention, compression, dedup, pinning, and restore                              |
-| [Kiro IDE](docs/kiro.md)                                           | Kiro-specific setup, config paths, native subagents, and SDD behavior                   |
-| [Platforms](docs/platforms.md)                                     | Supported platforms, Windows notes, security verification, config paths                 |
-| [Architecture & Development](docs/architecture.md)                 | Codebase layout, testing, and relationship to Gentleman.Dots                            |
+| Topic                                                                      | Description                                                                                     |
+|----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| [Intended Usage](docs/intended-usage.md)                                   | How gentle-ai is meant to be used — the mental model                                            |
+| [OpenCode SDD Profiles](docs/opencode-profiles.md)                         | Create and manage per-phase model profiles for OpenCode                                         |
+| [Engram Commands](docs/engram.md)                                          | CLI commands, MCP tools, project management, team sharing                                       |
+| [Agents](docs/agents.md)                                                   | Supported agents, feature matrix, config paths, and per-agent notes                             |
+| [Components, Skills & Presets](docs/components.md)                         | All components, GGA behavior, skill catalog, and preset definitions                             |
+| [Usage](docs/usage.md)                                                     | Persona modes, interactive TUI, CLI flags, and dependency management                            |
+| [Backup & Rollback](docs/rollback.md)                                      | Backup retention, compression, dedup, pinning, and restore                                      |
+| [Kiro IDE](docs/kiro.md)                                                   | Kiro-specific setup, config paths, native subagents, and SDD behavior                           |
+| [Platforms](docs/platforms.md)                                             | Supported platforms, Windows notes, security verification, config paths                         |
+| [Architecture & Development](docs/architecture.md)                         | Codebase layout, testing, and relationship to Gentleman.Dots                                    |
 
 ---
 

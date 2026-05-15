@@ -87,22 +87,22 @@ Think_Different/
 
 Esta carpeta contiene el **cerebro operativo** del sistema - memoria a largo plazo, notas de sesiones, y mapeos:
 
-| Subcarpeta                   | Contenido                                  |
-|------------------------------|--------------------------------------------|
-| `00_Context_LLM/`            | CTX de sesiones, JSONs de validación       |
-| `02_Agent_Teams_Lite/`       | SDD Workflow + Manifest registries ✅       |
-| `03_Scripts_Os/`             | 18 HUBs operativos                         |
+| Subcarpeta                           | Contenido                                          |
+|--------------------------------------|----------------------------------------------------|
+| `00_Context_LLM/`                    | CTX de sesiones, JSONs de validación               |
+| `02_Agent_Teams_Lite/`               | SDD Workflow + Manifest registries ✅               |
+| `03_Scripts_Os/`                     | 18 HUBs operativos                                 |
 
 ---
 
 ## 📊 Estadísticas
 
-| Área              | Cantidad                                                                                                                           |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| SDD Skills        | 10 (sdd-init, sdd-explore, sdd-propose, sdd-spec, sdd-design, sdd-tasks, sdd-apply, sdd-verify, sdd-archive, skill-registry)       |
-| MCP Servers       | 33                                                                                                                                 |
-| Agents            | 52                                                                                                                                 |
-| HUBs              | 18                                                                                                                                 |
+| Área                      | Cantidad                                                                                                                                   |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| SDD Skills                | 10 (sdd-init, sdd-explore, sdd-propose, sdd-spec, sdd-design, sdd-tasks, sdd-apply, sdd-verify, sdd-archive, skill-registry)               |
+| MCP Servers               | 33                                                                                                                                         |
+| Agents                    | 52                                                                                                                                         |
+| HUBs                      | 18                                                                                                                                         |
 
 ---
 

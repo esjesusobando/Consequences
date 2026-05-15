@@ -57,14 +57,14 @@ Al iniciar esta sesión se lanzó un agente Explore sobre `01_Personal_Os` para 
 
 ### Issues detectados en CHANGELOG v1.9.0 (2026-04-21)
 
-| Área        | Issue                                                                           | Estado             |
-|-------------|---------------------------------------------------------------------------------|--------------------|
-| Hooks       | settings.json usa `.agent/04_Extensions/hooks/` vs docs `01_Core/07_Hooks/`     | 🔴 Analizar         |
-| Hooks       | SubagentStop documentado pero NO configurado                                    | 🔴 Fix              |
-| Hooks       | 5/8 hooks sin wirear                                                            | 🟠 Fix              |
-| Agentes     | Contaje inconsistente: docs vs real                                             | 🟡 Verificar        |
-| MCPs        | Drift: 16 faltantes en OpenCode vs Claude Code                                  | 🟡 Monitorear       |
-| Naming      | GGA/Gentleman/Guardian Angel sin estandarizar                                   | 🟡 Bajo impacto     |
+| Área                | Issue                                                                                   | Estado                     |
+|---------------------|-----------------------------------------------------------------------------------------|----------------------------|
+| Hooks               | settings.json usa `.agent/04_Extensions/hooks/` vs docs `01_Core/07_Hooks/`             | 🔴 Analizar                 |
+| Hooks               | SubagentStop documentado pero NO configurado                                            | 🔴 Fix                      |
+| Hooks               | 5/8 hooks sin wirear                                                                    | 🟠 Fix                      |
+| Agentes             | Contaje inconsistente: docs vs real                                                     | 🟡 Verificar                |
+| MCPs                | Drift: 16 faltantes en OpenCode vs Claude Code                                          | 🟡 Monitorear               |
+| Naming              | GGA/Gentleman/Guardian Angel sin estandarizar                                           | 🟡 Bajo impacto             |
 
 ---
 

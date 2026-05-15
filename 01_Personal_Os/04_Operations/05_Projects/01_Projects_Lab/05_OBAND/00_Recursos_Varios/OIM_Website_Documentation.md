@@ -81,14 +81,14 @@
 
 **6 Proyectos**:
 
-| Titulo                                    | Ubicacion                          | Ano                 | Tags                                              |
-|-------------------------------------------|------------------------------------|---------------------|---------------------------------------------------|
-| Corporate Headquarters                    | Atlanta, GA                        | 2024                | Office, 15,000 sqft, Enterprise                   |
-| Tech Campus Expansion                     | Alpharetta, GA                     | 2024                | Open Space, 8,500 sqft, Technology                |
-| Financial Center Renovation               | Midtown Atlanta                    | 2023                | Restructuring, 12,000 sqft, Finance               |
-| Healthcare Corp HQ                        | Atlanta Perimeter                  | 2023                | Corporate, 10,000 sqft, Healthcare                |
-| Law Firm Office                           | Buckhead, Atlanta                  | 2024                | Traditional, 6,000 sqft, Legal                    |
-| Startup Innovation Hub                    | Atlanta Tech Village               | 2024                | Modern, 4,500 sqft, Startup                       |
+| Titulo                                            | Ubicacion                                  | Ano                         | Tags                                                      |
+|---------------------------------------------------|--------------------------------------------|-----------------------------|-----------------------------------------------------------|
+| Corporate Headquarters                            | Atlanta, GA                                | 2024                        | Office, 15,000 sqft, Enterprise                           |
+| Tech Campus Expansion                             | Alpharetta, GA                             | 2024                        | Open Space, 8,500 sqft, Technology                        |
+| Financial Center Renovation                       | Midtown Atlanta                            | 2023                        | Restructuring, 12,000 sqft, Finance                       |
+| Healthcare Corp HQ                                | Atlanta Perimeter                          | 2023                        | Corporate, 10,000 sqft, Healthcare                        |
+| Law Firm Office                                   | Buckhead, Atlanta                          | 2024                        | Traditional, 6,000 sqft, Legal                            |
+| Startup Innovation Hub                            | Atlanta Tech Village                       | 2024                        | Modern, 4,500 sqft, Startup                               |
 
 ---
 

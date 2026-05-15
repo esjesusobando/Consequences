@@ -6,43 +6,43 @@
 
 ## Core Tools
 
-| Herramienta                       | Tipo                           | Propósito                                      |
-|-----------------------------------|--------------------------------|------------------------------------------------|
-| recall.it                         | Web App                        | Dashboard principal                            |
-| Browser Extension                 | Chrome/Firefox                 | Guardar desde cualquier página                 |
-| Mobile App                        | iOS/Android                    | Consumo móvil                                  |
+| Herramienta                               | Tipo                                   | Propósito                                              |
+|-------------------------------------------|----------------------------------------|--------------------------------------------------------|
+| recall.it                                 | Web App                                | Dashboard principal                                    |
+| Browser Extension                         | Chrome/Firefox                         | Guardar desde cualquier página                         |
+| Mobile App                                | iOS/Android                            | Consumo móvil                                          |
 
 ---
 
 ## AI Integration
 
-| Herramienta                      | Tipo                        | Propósito                             |
-|----------------------------------|-----------------------------|---------------------------------------|
-| Claude (vía MCP)                 | External AI                 | Chat con tu knowledge                 |
-| GPT (vía API)                    | External AI                 | Chat con tu knowledge                 |
-| ChatGPT Plugin                   | Plugin                      | Integración directa                   |
+| Herramienta                              | Tipo                                | Propósito                                     |
+|------------------------------------------|-------------------------------------|-----------------------------------------------|
+| Claude (vía MCP)                         | External AI                         | Chat con tu knowledge                         |
+| GPT (vía API)                            | External AI                         | Chat con tu knowledge                         |
+| ChatGPT Plugin                           | Plugin                              | Integración directa                           |
 
 ---
 
 ## Productivity Stack
 
-| Herramienta                  | Tipo                        | Propósito                                       |
-|------------------------------|-----------------------------|-------------------------------------------------|
-| Notion                       | Competitor                  | Comparar — different philosophy                 |
-| Obsidian                     | Competitor                  | Comparar — local-first                          |
-| Readwise                     | Alternative                 | Reader + spaced repetition                      |
-| Apple Notes                  | Alternative                 | Simple, Apple ecosystem                         |
+| Herramienta                          | Tipo                                | Propósito                                               |
+|--------------------------------------|-------------------------------------|---------------------------------------------------------|
+| Notion                               | Competitor                          | Comparar — different philosophy                         |
+| Obsidian                             | Competitor                          | Comparar — local-first                                  |
+| Readwise                             | Alternative                         | Reader + spaced repetition                              |
+| Apple Notes                          | Alternative                         | Simple, Apple ecosystem                                 |
 
 ---
 
 ## APIs & Developer Tools
 
-| Herramienta                  | Propósito                               |
-|------------------------------|-----------------------------------------|
-| Recall API                   | Automatización                          |
-| MCP Server                   | Conectar con AI tools                   |
-| Webhooks                     | Automatización de flujo                 |
-| Python SDK                   | Desarrollo propio                       |
+| Herramienta                          | Propósito                                       |
+|--------------------------------------|-------------------------------------------------|
+| Recall API                           | Automatización                                  |
+| MCP Server                           | Conectar con AI tools                           |
+| Webhooks                             | Automatización de flujo                         |
+| Python SDK                           | Desarrollo propio                               |
 
 ---
 

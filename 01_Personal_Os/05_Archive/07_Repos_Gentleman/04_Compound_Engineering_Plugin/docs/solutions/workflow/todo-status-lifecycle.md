@@ -22,11 +22,11 @@ problem_type: correctness-gap
 
 The todo system defines a three-state lifecycle (`pending` -> `ready` -> `complete`) across three skills (`todo-create`, `todo-triage`, `todo-resolve`). Different sources create todos with different status assumptions:
 
-| Source                                         | Status created                        | Reasoning                                                                                                                                                         |
-|------------------------------------------------|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ce:review` (autofix mode)                     | `ready`                               | Built-in triage: confidence gating (>0.60), merge/dedup across 8 personas, owner routing. Only creates todos for `downstream-resolver` findings                   |
-| `todo-create` (manual)                         | `pending` (default)                   | Template default                                                                                                                                                  |
-| `test-browser`, `test-xcode`                   | via `todo-create`                     | Inherit default                                                                                                                                                   |
+| Source                                                 | Status created                                | Reasoning                                                                                                                                                                 |
+|--------------------------------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `ce:review` (autofix mode)                             | `ready`                                       | Built-in triage: confidence gating (>0.60), merge/dedup across 8 personas, owner routing. Only creates todos for `downstream-resolver` findings                           |
+| `todo-create` (manual)                                 | `pending` (default)                           | Template default                                                                                                                                                          |
+| `test-browser`, `test-xcode`                           | via `todo-create`                             | Inherit default                                                                                                                                                           |
 
 `todo-resolve` was resolving ALL todos regardless of status. This meant untriaged, potentially ambiguous findings could be auto-implemented without human review. The `pending`/`ready` distinction was purely cosmetic -- dead metadata that nothing branched on.
 

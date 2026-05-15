@@ -207,17 +207,17 @@ Microsoft's PMax inventory now includes Copilot chat sessions. Ads displayed in 
 
 To provide actionable "Pass/Fail" grading in the *claude-ads* tool, we must establish baseline metrics. The following table aggregates data from multiple 2026 industry reports to serve as the standard for performance auditing.
 
-| Metric | E-Commerce | B2B SaaS | Legal | Finance | Healthcare | Local Services |
-|---|---|---|---|---|---|---|
-| **Google Search CTR** | 4.13% | 4.28% | 5.20% | 4.65% | 4.90% | 5.50% |
-| **Google Search CPC** | $1.15 | $4.50 | $750+ | $900+ | $40+ | $15 - $30 |
-| **Google Search CVR** | 2.81% | 1.65% | 4.60% | 3.50% | 3.10% | 15.0% |
-| **Meta Ads CTR** | 1.38% | 0.90% | 0.85% | 0.70% | 1.10% | 1.50% |
-| **Meta Ads CPM** | $12.50 | $35.00 | $45.00 | $50.00 | $28.00 | $18.00 |
-| **LinkedIn CPC** | N/A | $13.23 | $25.00 | $35.00 | N/A | N/A |
-| **LinkedIn CTR** | N/A | 0.56% | 0.45% | 0.40% | N/A | N/A |
-| **TikTok Ads CPM** | $3.21 | $8.00 | N/A | N/A | N/A | $5.00 |
-| **ROAS Benchmark** | 4.0x - 7.5x | N/A | 3.0x | 3.5x | 2.8x | 5.0x |
+| Metric                      | E-Commerce        | B2B SaaS       | Legal        | Finance       | Healthcare       | Local Services       |
+|-----------------------------|-------------------|----------------|--------------|---------------|------------------|----------------------|
+| **Google Search CTR**       | 4.13%             | 4.28%          | 5.20%        | 4.65%         | 4.90%            | 5.50%                |
+| **Google Search CPC**       | $1.15             | $4.50          | $750+        | $900+         | $40+             | $15 - $30            |
+| **Google Search CVR**       | 2.81%             | 1.65%          | 4.60%        | 3.50%         | 3.10%            | 15.0%                |
+| **Meta Ads CTR**            | 1.38%             | 0.90%          | 0.85%        | 0.70%         | 1.10%            | 1.50%                |
+| **Meta Ads CPM**            | $12.50            | $35.00         | $45.00       | $50.00        | $28.00           | $18.00               |
+| **LinkedIn CPC**            | N/A               | $13.23         | $25.00       | $35.00        | N/A              | N/A                  |
+| **LinkedIn CTR**            | N/A               | 0.56%          | 0.45%        | 0.40%         | N/A              | N/A                  |
+| **TikTok Ads CPM**          | $3.21             | $8.00          | N/A          | N/A           | N/A              | $5.00                |
+| **ROAS Benchmark**          | 4.0x - 7.5x       | N/A            | 3.0x         | 3.5x          | 2.8x             | 5.0x                 |
 
 Data Sources: <sup>16</sup>
 
@@ -340,15 +340,15 @@ To avoid IP bans or API suspensions, the tool must implement a **Token Bucket** 
 
 The *claude-ads* tool should query these specific endpoints to populate the audit report:
 
-| Platform | Goal | Endpoint / Service | Field / Metric |
-|---|---|---|---|
-| **Google** | Budget Analysis | CampaignBudgetService | recommended\_budget\_amount |
-| **Google** | Quality Score | KeywordView | quality\_score |
-| **Google** | Ad Strength | AdGroupAdService | ad\_strength |
-| **Meta** | Ad Quality | Insights | quality\_ranking, engagement\_rate\_ranking |
-| **Meta** | Creative Fatigue | Insights (Time Series) | ctr (compare last 7d vs last 30d) |
-| **TikTok** | Account Health | Account Health | is\_restricted, policy\_violations |
-| **LinkedIn** | Audience Quality | AdAnalytics | demographic\_metrics (Job Title/Function) |
+| Platform           | Goal                   | Endpoint / Service           | Field / Metric                                    |
+|--------------------|------------------------|------------------------------|---------------------------------------------------|
+| **Google**         | Budget Analysis        | CampaignBudgetService        | recommended\_budget\_amount                       |
+| **Google**         | Quality Score          | KeywordView                  | quality\_score                                    |
+| **Google**         | Ad Strength            | AdGroupAdService             | ad\_strength                                      |
+| **Meta**           | Ad Quality             | Insights                     | quality\_ranking, engagement\_rate\_ranking       |
+| **Meta**           | Creative Fatigue       | Insights (Time Series)       | ctr (compare last 7d vs last 30d)                 |
+| **TikTok**         | Account Health         | Account Health               | is\_restricted, policy\_violations                |
+| **LinkedIn**       | Audience Quality       | AdAnalytics                  | demographic\_metrics (Job Title/Function)         |
 
 ### 10.4 Automating Optimization (Write Operations)
 

@@ -31,10 +31,10 @@ Describe the problem or proposal clearly. The more context you provide, the fast
 
 A maintainer will review your issue and add one of these labels:
 
-| Label                                 | Meaning                                                     |
-|---------------------------------------|-------------------------------------------------------------|
-| `status:needs-review`                 | Added automatically when you open the issue                 |
-| `status:approved`                     | Maintainer approved — you may now open a PR                 |
+| Label                                         | Meaning                                                             |
+|-----------------------------------------------|---------------------------------------------------------------------|
+| `status:needs-review`                         | Added automatically when you open the issue                         |
+| `status:approved`                             | Maintainer approved — you may now open a PR                         |
 
 **Do not open a PR until your issue has `status:approved`.** PRs without an approved issue will be closed automatically.
 
@@ -66,19 +66,19 @@ Two sets of checks run automatically on every PR:
 
 ### PR Validation (`.github/workflows/pr-check.yml`)
 
-| Check                                             | What It Validates                                           |
-|---------------------------------------------------|-------------------------------------------------------------|
-| Check Issue Reference                             | PR body contains `Closes/Fixes/Resolves #N`                 |
-| Check Issue Has `status:approved`                 | Linked issue was approved by a maintainer                   |
-| Check PR Has `type:*` Label                       | PR has exactly one `type:*` label                           |
+| Check                                                     | What It Validates                                                   |
+|-----------------------------------------------------------|---------------------------------------------------------------------|
+| Check Issue Reference                                     | PR body contains `Closes/Fixes/Resolves #N`                         |
+| Check Issue Has `status:approved`                         | Linked issue was approved by a maintainer                           |
+| Check PR Has `type:*` Label                               | PR has exactly one `type:*` label                                   |
 
 ### CI Tests (`.github/workflows/ci.yml`)
 
-| Check                             | Command                                                       |
-|-----------------------------------|---------------------------------------------------------------|
-| Lint                              | ShellCheck on `bin/gga` and `lib/*.sh`                        |
-| Unit Tests                        | `shellspec spec/unit`                                         |
-| Integration Tests                 | `shellspec spec/integration/commands_spec.sh`                 |
+| Check                                     | Command                                                               |
+|-------------------------------------------|-----------------------------------------------------------------------|
+| Lint                                      | ShellCheck on `bin/gga` and `lib/*.sh`                                |
+| Unit Tests                                | `shellspec spec/unit`                                                 |
+| Integration Tests                         | `shellspec spec/integration/commands_spec.sh`                         |
 
 **All checks must pass before a PR can be merged.**
 
@@ -90,31 +90,31 @@ Two sets of checks run automatically on every PR:
 
 Applied to PRs to categorize the change:
 
-| Label                                  | When to Use                                                   |
-|----------------------------------------|---------------------------------------------------------------|
-| `type:bug`                             | Fixes a bug                                                   |
-| `type:feature`                         | Adds a new feature or enhancement                             |
-| `type:docs`                            | Documentation changes only                                    |
-| `type:refactor`                        | Code refactor with no behavior change                         |
-| `type:chore`                           | Maintenance: deps, CI, tooling                                |
-| `type:breaking-change`                 | Breaking change (also use `!` in commit type)                 |
+| Label                                          | When to Use                                                           |
+|------------------------------------------------|-----------------------------------------------------------------------|
+| `type:bug`                                     | Fixes a bug                                                           |
+| `type:feature`                                 | Adds a new feature or enhancement                                     |
+| `type:docs`                                    | Documentation changes only                                            |
+| `type:refactor`                                | Code refactor with no behavior change                                 |
+| `type:chore`                                   | Maintenance: deps, CI, tooling                                        |
+| `type:breaking-change`                         | Breaking change (also use `!` in commit type)                         |
 
 ### Status Labels
 
 Applied to issues by maintainers:
 
-| Label                                 | Meaning                                       |
-|---------------------------------------|-----------------------------------------------|
-| `status:needs-review`                 | Waiting for maintainer review                 |
-| `status:approved`                     | Approved — a PR may be opened                 |
+| Label                                         | Meaning                                               |
+|-----------------------------------------------|-------------------------------------------------------|
+| `status:needs-review`                         | Waiting for maintainer review                         |
+| `status:approved`                             | Approved — a PR may be opened                         |
 
 ### Priority Labels
 
-| Label                             | Meaning                                  |
-|-----------------------------------|------------------------------------------|
-| `priority:high`                   | Blocking or critical                     |
-| `priority:medium`                 | Important but not urgent                 |
-| `priority:low`                    | Nice to have                             |
+| Label                                     | Meaning                                          |
+|-------------------------------------------|--------------------------------------------------|
+| `priority:high`                           | Blocking or critical                             |
+| `priority:medium`                         | Important but not urgent                         |
+| `priority:low`                            | Nice to have                                     |
 
 ---
 

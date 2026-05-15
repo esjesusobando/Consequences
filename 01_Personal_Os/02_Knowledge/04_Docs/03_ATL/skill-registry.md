@@ -4,27 +4,27 @@
 
 ## Project Conventions
 
-| Convention                       | Pattern                                             |
-|----------------------------------|-----------------------------------------------------|
-| Directories                      | `XX_Nombre/` (numbered)                             |
-| Scripts                          | `##_Nombre_Script.py`                               |
-| Reports                          | `01_Report_Status.md`                               |
-| Skills                           | `SKILL.md` in skill directories                     |
-| Backup                           | `.agent/` mirrors `01_Core/`                        |
+| Convention                               | Pattern                                                     |
+|------------------------------------------|-------------------------------------------------------------|
+| Directories                              | `XX_Nombre/` (numbered)                                     |
+| Scripts                                  | `##_Nombre_Script.py`                                       |
+| Reports                                  | `01_Report_Status.md`                                       |
+| Skills                                   | `SKILL.md` in skill directories                             |
+| Backup                                   | `.agent/` mirrors `01_Core/`                                |
 
 ## User-Level Skills (Global)
 
 Located: `~/.config/opencode/skills/`
 
-| Skill                                      | Description                                          |
-|--------------------------------------------|------------------------------------------------------|
-| sdd-* (8 phases)                           | Spec-Driven Development workflow                     |
-| skill-creator                              | Create new AI skills                                 |
-| agent-browser                              | Browser automation                                   |
-| agent-native-*                             | Agent architecture patterns                          |
-| andrew-kane-gem-writer                     | Ruby gem patterns                                    |
-| go-testing                                 | Go/Bubbletea testing                                 |
-| judgment-day                               | Adversarial code review                              |
+| Skill                                              | Description                                                  |
+|----------------------------------------------------|--------------------------------------------------------------|
+| sdd-* (8 phases)                                   | Spec-Driven Development workflow                             |
+| skill-creator                                      | Create new AI skills                                         |
+| agent-browser                                      | Browser automation                                           |
+| agent-native-*                                     | Agent architecture patterns                                  |
+| andrew-kane-gem-writer                             | Ruby gem patterns                                            |
+| go-testing                                         | Go/Bubbletea testing                                         |
+| judgment-day                                       | Adversarial code review                                      |
 
 ## Project-Level Skills
 
@@ -34,16 +34,16 @@ Located: `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
 ### Key Skills
 
-| Category                              | Skill                                           | Purpose                                                                                    |
-|---------------------------------------|-------------------------------------------------|--------------------------------------------------------------------------------------------|
-| **Agent Teams**                       | sdd-* (8 phases)                                | SDD workflow                                                                               |
-| **Hillary OS**                        | 18_Personal_Life_OS (5)                         | Quick Capture, Plan My Day, Daily Notes, Recording Mode, Returns Tracker                   |
-| **Video Intel**                       | 19_Video_Intel                                  | Analisis YouTube/GitHub (exploracion)                                                      |
-| **Compound**                          | ce:*                                            | Compound Engineering                                                                       |
-| **Skill Creator**                     | Skill_Creator_Official                          | Create skills (v2.0)                                                                       |
-| **Data**                              | Silicon_Valley_Data_Analyst                     | Data analysis                                                                              |
-| **SEO**                               | SEO_SOTA_Master                                 | Technical SEO                                                                              |
-| **Taste**                             | taste-skill, soft-skill                         | Premium frontend                                                                           |
+| Category                                      | Skill                                                   | Purpose                                                                                            |
+|-----------------------------------------------|---------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| **Agent Teams**                               | sdd-* (8 phases)                                        | SDD workflow                                                                                       |
+| **Hillary OS**                                | 18_Personal_Life_OS (5)                                 | Quick Capture, Plan My Day, Daily Notes, Recording Mode, Returns Tracker                           |
+| **Video Intel**                               | 19_Video_Intel                                          | Analisis YouTube/GitHub (exploracion)                                                              |
+| **Compound**                                  | ce:*                                                    | Compound Engineering                                                                               |
+| **Skill Creator**                             | Skill_Creator_Official                                  | Create skills (v2.0)                                                                               |
+| **Data**                                      | Silicon_Valley_Data_Analyst                             | Data analysis                                                                                      |
+| **SEO**                                       | SEO_SOTA_Master                                         | Technical SEO                                                                                      |
+| **Taste**                                     | taste-skill, soft-skill                                 | Premium frontend                                                                                   |
 
 ## Agent Rules
 
@@ -61,18 +61,18 @@ Located: `00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md`
 
 ## Hubs
 
-| Hub                                | Purpose                                       |
-|------------------------------------|-----------------------------------------------|
-| 01_Auditor                         | System validation                             |
-| 02_Git                             | Git operations                                |
-| 03_AIPM                            | AI performance monitoring                     |
-| 04_Ritual                          | Session rituals                               |
-| 05_Validator                       | Code validation                               |
-| 06_Tool                            | Tool management                               |
-| 07_Integration                     | MCP integrations                              |
-| 08_Workflow                        | Workflow automation                           |
-| 09_Data                            | Data processing                               |
-| 10_General                         | Utilities                                     |
+| Hub                                        | Purpose                                               |
+|--------------------------------------------|-------------------------------------------------------|
+| 01_Auditor                                 | System validation                                     |
+| 02_Git                                     | Git operations                                        |
+| 03_AIPM                                    | AI performance monitoring                             |
+| 04_Ritual                                  | Session rituals                                       |
+| 05_Validator                               | Code validation                                       |
+| 06_Tool                                    | Tool management                                       |
+| 07_Integration                             | MCP integrations                                      |
+| 08_Workflow                                | Workflow automation                                   |
+| 09_Data                                    | Data processing                                       |
+| 10_General                                 | Utilities                                             |
 
 ---
 

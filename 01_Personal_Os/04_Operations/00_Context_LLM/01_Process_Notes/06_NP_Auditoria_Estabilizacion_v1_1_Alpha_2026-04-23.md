@@ -37,13 +37,13 @@ Think_Different/                    # Root (detected by 01_Core presence)
 
 ### Auditores Activos
 
-| Script                                   | Ubicacion                                           | Estado                             |
-|------------------------------------------|-----------------------------------------------------|------------------------------------|
-| 01_Auditor_Hub.py                        | 03_Scripts_Os/                                      | ✅ Estructura OK                    |
-| 15_SOTA_Integrity_Check.py               | 03_Scripts_Os/13_Auditors_Os/scripts/               | ⚠️ Benchmarks wrong                |
-| 33_Parallel_Audit_Pro.py                 | 03_Scripts_Os/03_Validator/                         | ⚠️ Paths old                       |
-| 34_Skill_Auditor.py                      | 03_Scripts_Os/03_Validator/                         | ✅ Funcional                        |
-| 80_Edge_Case_Validator.py                | 03_Scripts_Os/03_Validator/                         | ⚠️ REQUIRED_DIRS old               |
+| Script                                           | Ubicacion                                                   | Estado                                     |
+|--------------------------------------------------|-------------------------------------------------------------|--------------------------------------------|
+| 01_Auditor_Hub.py                                | 03_Scripts_Os/                                              | ✅ Estructura OK                            |
+| 15_SOTA_Integrity_Check.py                       | 03_Scripts_Os/13_Auditors_Os/scripts/                       | ⚠️ Benchmarks wrong                        |
+| 33_Parallel_Audit_Pro.py                         | 03_Scripts_Os/03_Validator/                                 | ⚠️ Paths old                               |
+| 34_Skill_Auditor.py                              | 03_Scripts_Os/03_Validator/                                 | ✅ Funcional                                |
+| 80_Edge_Case_Validator.py                        | 03_Scripts_Os/03_Validator/                                 | ⚠️ REQUIRED_DIRS old                       |
 
 ---
 

@@ -30,14 +30,14 @@ All measurements derived from real file sizes (bytes ÷ 3.5 chars/token for mark
 
 ### Fixed overhead per sub-agent launch
 
-| Component                                                 | Tokens                             |
-|-----------------------------------------------------------|------------------------------------|
-| System prompt (CLAUDE.md)                                 | 7,554                              |
-| 01_Personal_Os/11_AGENTS.md workspace rules               | 651                                |
-| Skill file (range across all skills)                      | 1,796–2,812                        |
-| Engram skill registry lookup                              | 1,028                              |
-| Launch prompt + result envelope                           | 300–500                            |
-| **Total per delegation**                                  | **~11,850–12,866**                 |
+| Component                                                         | Tokens                                     |
+|-------------------------------------------------------------------|--------------------------------------------|
+| System prompt (CLAUDE.md)                                         | 7,554                                      |
+| 01_Personal_Os/11_AGENTS.md workspace rules                       | 651                                        |
+| Skill file (range across all skills)                              | 1,796–2,812                                |
+| Engram skill registry lookup                                      | 1,028                                      |
+| Launch prompt + result envelope                                   | 300–500                                    |
+| **Total per delegation**                                          | **~11,850–12,866**                         |
 
 > The system prompt dominates. Prior estimates of ~3,700T used the example CLAUDE.md (2,440T), not the actual installed one (7,554T).
 
@@ -49,18 +49,18 @@ The break-even is a function of dependency count, not a fixed number:
 crossover(N_deps) = (system_prompt + skill_file + N_deps × avg_dep_size) / avg_file_size
 ```
 
-| Scenario                                       | Crossover (files)                 |
-|------------------------------------------------|-----------------------------------|
-| No SDD dependencies                            | ~8 files                          |
-| 1–2 SDD artifact reads                         | ~10 files                         |
-| 4 SDD dependencies (sdd-apply)                 | ~12 files                         |
+| Scenario                                               | Crossover (files)                         |
+|--------------------------------------------------------|-------------------------------------------|
+| No SDD dependencies                                    | ~8 files                                  |
+| 1–2 SDD artifact reads                                 | ~10 files                                 |
+| 4 SDD dependencies (sdd-apply)                         | ~12 files                                 |
 
 ### Compaction cost comparison
 
-| Model                      | Cost per compaction                  | Events (large feature)                  | Total                    |
-|----------------------------|--------------------------------------|-----------------------------------------|--------------------------|
-| Inline                     | 15,000–55,000T                       | 2–4                                     | ~75,000T                 |
-| Delegation                 | ~4,500T                              | 0–1                                     | ~4,500T                  |
+| Model                              | Cost per compaction                          | Events (large feature)                          | Total                            |
+|------------------------------------|----------------------------------------------|-------------------------------------------------|----------------------------------|
+| Inline                             | 15,000–55,000T                               | 2–4                                             | ~75,000T                         |
+| Delegation                         | ~4,500T                                      | 0–1                                             | ~4,500T                          |
 
 Delegation recovery uses engram references (~300T) instead of re-reading files (~3,000–15,000T per artifact).
 
@@ -70,12 +70,12 @@ Delegation recovery uses engram references (~300T) instead of re-reading files (
 
 Token savings come from three sources with very different weights:
 
-| Driver                                  | Share of savings                  | Mechanism                                                                |
-|-----------------------------------------|-----------------------------------|--------------------------------------------------------------------------|
-| Context scope isolation                 | ~60%                              | Sub-agent file reads never enter orchestrator history                    |
-| Compaction avoidance                    | ~25%                              | Fewer tokens in orchestrator = fewer compaction triggers                 |
-| Error reduction                         | ~10%                              | Smaller failure domain per sub-agent                                     |
-| Parallelism bonus                       | ~5%                               | Independent phases can run concurrently                                  |
+| Driver                                          | Share of savings                          | Mechanism                                                                        |
+|-------------------------------------------------|-------------------------------------------|----------------------------------------------------------------------------------|
+| Context scope isolation                         | ~60%                                      | Sub-agent file reads never enter orchestrator history                            |
+| Compaction avoidance                            | ~25%                                      | Fewer tokens in orchestrator = fewer compaction triggers                         |
+| Error reduction                                 | ~10%                                      | Smaller failure domain per sub-agent                                             |
+| Parallelism bonus                               | ~5%                                       | Independent phases can run concurrently                                          |
 
 The primary driver is **not** skill guidance or error reduction. It is that files read by sub-agents **disappear** when they return.
 
@@ -85,14 +85,14 @@ The primary driver is **not** skill guidance or error reduction. It is that file
 
 Six changes reduced fixed overhead ~38% per full SDD pipeline:
 
-| #                   | Optimization                                           | Savings/pipeline                  | Rationale                                                                            |
-|---------------------|--------------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|
-| 1                   | Remove `persistence-contract.md` reads                 | ~22,000T                          | Sub-agents already have inline instructions; file read was redundant                 |
-| 2                   | Artifact size budgets (word limits)                    | ~14,000T                          | Verbose artifacts compound across all downstream phases                              |
-| 3                   | Skill registry pre-resolution                          | ~11,400T                          | Orchestrator resolves once; sub-agents skip search                                   |
-| 4                   | Common boilerplate extraction                          | ~4,200T                           | Shared file for return envelope + upsert notes                                       |
-| 5                   | Orchestrator doc compression                           | ~4,200 chars                      | Tables over prose for lookup data                                                    |
-| 6                   | Parallel engram reads                                  | ~800T                             | Batch `mem_search`/`mem_get_observation` calls                                       |
+| #                           | Optimization                                                   | Savings/pipeline                          | Rationale                                                                                    |
+|-----------------------------|----------------------------------------------------------------|-------------------------------------------|----------------------------------------------------------------------------------------------|
+| 1                           | Remove `persistence-contract.md` reads                         | ~22,000T                                  | Sub-agents already have inline instructions; file read was redundant                         |
+| 2                           | Artifact size budgets (word limits)                            | ~14,000T                                  | Verbose artifacts compound across all downstream phases                                      |
+| 3                           | Skill registry pre-resolution                                  | ~11,400T                                  | Orchestrator resolves once; sub-agents skip search                                           |
+| 4                           | Common boilerplate extraction                                  | ~4,200T                                   | Shared file for return envelope + upsert notes                                               |
+| 5                           | Orchestrator doc compression                                   | ~4,200 chars                              | Tables over prose for lookup data                                                            |
+| 6                           | Parallel engram reads                                          | ~800T                                     | Batch `mem_search`/`mem_get_observation` calls                                               |
 
 ---
 
@@ -116,13 +116,13 @@ Three independent AI reviewers evaluated the optimizations across three rounds.
 
 ## 7. Decision Rules
 
-| Scenario                                      | Files                   | Recommendation                                    |
-|-----------------------------------------------|-------------------------|---------------------------------------------------|
-| Trivial edit (rename, 1 file)                 | 1                       | Inline                                            |
-| Small fix needing context                     | 2–7                     | Inline if <6 turns expected                       |
-| Medium feature                                | 8–15                    | Delegate                                          |
-| Large feature / SDD                           | 15+                     | Delegate (mandatory)                              |
-| Multi-day work                                | Any                     | Full SDD pipeline with delegation                 |
+| Scenario                                              | Files                           | Recommendation                                            |
+|-------------------------------------------------------|---------------------------------|-----------------------------------------------------------|
+| Trivial edit (rename, 1 file)                         | 1                               | Inline                                                    |
+| Small fix needing context                             | 2–7                             | Inline if <6 turns expected                               |
+| Medium feature                                        | 8–15                            | Delegate                                                  |
+| Large feature / SDD                                   | 15+                             | Delegate (mandatory)                                      |
+| Multi-day work                                        | Any                             | Full SDD pipeline with delegation                         |
 
 > **Per-file delegation is wasteful** (overhead ~1,209% for a 1-file task). Per-phase delegation is the sweet spot.
 

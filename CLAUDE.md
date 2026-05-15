@@ -180,29 +180,29 @@ Think_Different/                           # RAÍZ
 
 ### 2. AGENTS (52+)
 
-| Categoría                          | Ubicación                                                               |
-|------------------------------------|-------------------------------------------------------------------------|
-| Dream Team (5)                     | `01_Core/02_Tools/01_Agents/01_Dream_Team/`                             |
-| Specialists (24)                   | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                   |
-| Individuales (22)                  | `01_Core/02_Tools/01_Agents/`                                           |
+| Categoría                                  | Ubicación                                                                       |
+|--------------------------------------------|---------------------------------------------------------------------------------|
+| Dream Team (5)                             | `01_Core/02_Tools/01_Agents/01_Dream_Team/`                                     |
+| Specialists (24)                           | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                           |
+| Individuales (22)                          | `01_Core/02_Tools/01_Agents/`                                                   |
 
 ### 3. SKILLS (300+ — 11 áreas funcionales)
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
-| Área                                    | Items             | Descripción                                          |
-|-----------------------------------------|-------------------|------------------------------------------------------|
-| 00_Compound_Engineering                 | 11                | Core CE — SDD + Compound Engineering                 |
-| 00_Personal_Os_Stack                    | 11                | Stack base OS + Gcierr                               |
-| 00_Skill_Auditor                        | 4                 | Auditoría de skills                                  |
-| 01_Creacion_Contenidos                  | 22                | Brand, YouTube, SEO, Carruseles                      |
-| 02_Diseno_Ui_Ux                         | 14                | Product Design, UI/UX, Taste, Minimal                |
-| 03_Video_Media                          | 2                 | Video Intel, James Cameron                           |
-| 04_Automatizacion                       | 12                | N8N, Firecrawl, GWS Client                           |
-| 05_Workflows                            | 6                 | Agent Teams, PM, Orchestrator                        |
-| 06_Tools                                | 14                | Skill Creator, Testing, DevOps, Data                 |
-| 07_Personal_Os                          | 8                 | Life OS, Hillary, Rituales                           |
-| 08_Invictus_Web                         | 3                 | Playwright, Superpowers, Browser Auto                |
+| Área                                            | Items                     | Descripción                                                  |
+|-------------------------------------------------|---------------------------|--------------------------------------------------------------|
+| 00_Compound_Engineering                         | 11                        | Core CE — SDD + Compound Engineering                         |
+| 00_Personal_Os_Stack                            | 11                        | Stack base OS + Gcierr                                       |
+| 00_Skill_Auditor                                | 4                         | Auditoría de skills                                          |
+| 01_Creacion_Contenidos                          | 22                        | Brand, YouTube, SEO, Carruseles                              |
+| 02_Diseno_Ui_Ux                                 | 14                        | Product Design, UI/UX, Taste, Minimal                        |
+| 03_Video_Media                                  | 2                         | Video Intel, James Cameron                                   |
+| 04_Automatizacion                               | 12                        | N8N, Firecrawl, GWS Client                                   |
+| 05_Workflows                                    | 6                         | Agent Teams, PM, Orchestrator                                |
+| 06_Tools                                        | 14                        | Skill Creator, Testing, DevOps, Data                         |
+| 07_Personal_Os                                  | 8                         | Life OS, Hillary, Rituales                                   |
+| 08_Invictus_Web                                 | 3                         | Playwright, Superpowers, Browser Auto                        |
 
 ### 4. JARVIS 4.0 — MANIFEST SYSTEM
 
@@ -249,18 +249,18 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 
 ## 📊 ESTADO DEL SISTEMA (v4.0 — 2026-05-13)
 
-| Categoria                                        | Estado                                | Notas                                                                       |
-|--------------------------------------------------|---------------------------------------|-----------------------------------------------------------------------------|
-| **Overall Health**                               | **✅ PURE GREEN**                      | v4.0 Production — JARVIS 4.0 integrated 2026-05-13                          |
-| Estructura (4 raíz)                              | ✅ PASS                                | Winter / Personal_Os / Playground / Resultado                               |
-| HUBs (26 scripts)                                | ✅ ACTIVE                              | 21 HUBs + 5 aux en 03_Scripts_Os                                            |
-| Skills (11 áreas)                                | ✅ VERIFIED                            | 300+ skills — 11 áreas funcionales                                          |
-| Agent Matrix                                     | ✅ ACTIVE                              | 52+ agentes                                                                 |
-| Manifest (7 archivos)                            | ✅ VALIDATED                           | 00_Manifest/ en 02_Agent_Teams_Lite/                                        |
-| MCPs (36 Claude Code)                            | ✅ SYNCED                              | .mcp.json en raíz                                                           |
-| Rules (11 .mdc)                                  | ✅ DEFINED                             | 01_Rules/                                                                   |
-| Workflows (28+)                                  | ✅ ACTIVE                              | 5 categorías en 00_Workflows_Os                                             |
-| Agent Teams Protocol                             | ✅ ACTIVE                              | Super Campeones                                                             |
+| Categoria                                                | Estado                                        | Notas                                                                               |
+|----------------------------------------------------------|-----------------------------------------------|-------------------------------------------------------------------------------------|
+| **Overall Health**                                       | **✅ PURE GREEN**                              | v4.0 Production — JARVIS 4.0 integrated 2026-05-13                                  |
+| Estructura (4 raíz)                                      | ✅ PASS                                        | Winter / Personal_Os / Playground / Resultado                                       |
+| HUBs (26 scripts)                                        | ✅ ACTIVE                                      | 21 HUBs + 5 aux en 03_Scripts_Os                                                    |
+| Skills (11 áreas)                                        | ✅ VERIFIED                                    | 300+ skills — 11 áreas funcionales                                                  |
+| Agent Matrix                                             | ✅ ACTIVE                                      | 52+ agentes                                                                         |
+| Manifest (7 archivos)                                    | ✅ VALIDATED                                   | 00_Manifest/ en 02_Agent_Teams_Lite/                                                |
+| MCPs (36 Claude Code)                                    | ✅ SYNCED                                      | .mcp.json en raíz                                                                   |
+| Rules (11 .mdc)                                          | ✅ DEFINED                                     | 01_Rules/                                                                           |
+| Workflows (28+)                                          | ✅ ACTIVE                                      | 5 categorías en 00_Workflows_Os                                                     |
+| Agent Teams Protocol                                     | ✅ ACTIVE                                      | Super Campeones                                                                     |
 
 ---
 
@@ -280,20 +280,20 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 
 ### Ecosistemas Integrados
 
-| Ecosistema                         | Ubicación                                                                          |
-|------------------------------------|------------------------------------------------------------------------------------|
-| Personal OS Core                   | `00_Winter_is_Coming/AGENTS.md`                                                    |
-| Compound Engineering               | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/`               |
-| Dream Team                         | `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/`                         |
-| Specialists                        | `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/`               |
-| Gentleman GGA                      | `.agent/05_GGA/`                                                                   |
+| Ecosistema                                 | Ubicación                                                                                  |
+|--------------------------------------------|--------------------------------------------------------------------------------------------|
+| Personal OS Core                           | `00_Winter_is_Coming/AGENTS.md`                                                            |
+| Compound Engineering                       | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Compound_Engineering/`                       |
+| Dream Team                                 | `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/`                                 |
+| Specialists                                | `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                       |
+| Gentleman GGA                              | `.agent/05_GGA/`                                                                           |
 
 ### Configuración MCP (dual)
 
-| Herramienta                       | Config activa                                        | Source (backup)                                    |
-|-----------------------------------|------------------------------------------------------|----------------------------------------------------|
-| **Claude Code**                   | `.mcp.json` (raíz del proyecto)                      | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`          |
-| **OpenCode**                      | `~/.config/opencode/opencode.json`                   | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`          |
+| Herramienta                               | Config activa                                                | Source (backup)                                            |
+|-------------------------------------------|--------------------------------------------------------------|------------------------------------------------------------|
+| **Claude Code**                           | `.mcp.json` (raíz del proyecto)                              | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`                  |
+| **OpenCode**                              | `~/.config/opencode/opencode.json`                           | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`                  |
 
 > ⚠️ Al modificar MCPs: actualizar SIEMPRE el source Y el config activo correspondiente.
 
@@ -317,16 +317,16 @@ O reinstalar sin `--ignore-scripts` / `--omit=optional`.
 
 ## 📍 PATHS CRÍTICOS (v4.0)
 
-| Recurso                          | Path CORRECTO                                                         |
-|----------------------------------|-----------------------------------------------------------------------|
-| Skills                           | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                          |
-| Agents                           | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                          |
-| Rules                            | `01_Personal_Os/01_Core/01_Rules/`                                    |
-| HUBs                             | `01_Personal_Os/04_Operations/03_Scripts_Os/`                         |
-| Workflows                        | `01_Personal_Os/01_Core/00_Workflows_Os/`                             |
-| Tasks                            | `01_Personal_Os/03_Task/`                                             |
-| Knowledge                        | `01_Personal_Os/02_Knowledge/`                                        |
-| Context LLM                      | `01_Personal_Os/04_Operations/00_Context_LLM/`                        |
+| Recurso                                  | Path CORRECTO                                                                 |
+|------------------------------------------|-------------------------------------------------------------------------------|
+| Skills                                   | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                                  |
+| Agents                                   | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                                  |
+| Rules                                    | `01_Personal_Os/01_Core/01_Rules/`                                            |
+| HUBs                                     | `01_Personal_Os/04_Operations/03_Scripts_Os/`                                 |
+| Workflows                                | `01_Personal_Os/01_Core/00_Workflows_Os/`                                     |
+| Tasks                                    | `01_Personal_Os/03_Task/`                                                     |
+| Knowledge                                | `01_Personal_Os/02_Knowledge/`                                                |
+| Context LLM                              | `01_Personal_Os/04_Operations/00_Context_LLM/`                                |
 
 > ⚠️ NO usar paths v1.x (01_Core/, 03_Skills/, 03_Tasks/)
 

@@ -10,14 +10,14 @@
 
 ## 📊 Evaluación del Modelo
 
-| Métrica                                                                 | Valor                                                    | Notas                                                          |
-|-------------------------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------------|
-| Tokens Consumidos (Input)                                               | {X}                                                      |                                                                |
-| Tokens Generados (Output)                                               | {X}                                                      |                                                                |
-| Latencia Promedio                                                       | {X} ms                                                   |                                                                |
-| Ratio CoT/Response                                                      | {X}%                                                     | Objetivo: 20-50%                                               |
-| Contexto Inicio                                                         | {X} tokens                                               |                                                                |
-| Contexto Fin                                                            | {X} tokens                                               |                                                                |
+| Métrica                                                                         | Valor                                                            | Notas                                                                  |
+|---------------------------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------------|
+| Tokens Consumidos (Input)                                                       | {X}                                                              |                                                                        |
+| Tokens Generados (Output)                                                       | {X}                                                              |                                                                        |
+| Latencia Promedio                                                               | {X} ms                                                           |                                                                        |
+| Ratio CoT/Response                                                              | {X}%                                                             | Objetivo: 20-50%                                                       |
+| Contexto Inicio                                                                 | {X} tokens                                                       |                                                                        |
+| Contexto Fin                                                                    | {X} tokens                                                       |                                                                        |
 
 ### Salud del Contexto
 
@@ -41,11 +41,11 @@
 
 ## 🔧 Acciones Realizadas (Timeline)
 
-| Hora                                                  | Acción                                                   | Archivos                                                           | Notas                                                 |
-|-------------------------------------------------------|----------------------------------------------------------|--------------------------------------------------------------------|-------------------------------------------------------|
-| {HH:MM}                                               | {Acción 1}                                               | {archivo1, archivo2}                                               | {nota}                                                |
-| {HH:MM}                                               | {Acción 2}                                               | {archivo3}                                                         | {nota}                                                |
-| {HH:MM}                                               | {Acción 3}                                               |--------------------------------------------------------------------| {nota}                                                |
+| Hora                                                          | Acción                                                           | Archivos                                                                   | Notas                                                         |
+|---------------------------------------------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------|---------------------------------------------------------------|
+| {HH:MM}                                                       | {Acción 1}                                                       | {archivo1, archivo2}                                                       | {nota}                                                        |
+| {HH:MM}                                                       | {Acción 2}                                                       | {archivo3}                                                                 | {nota}                                                        |
+| {HH:MM}                                                       | {Acción 3}                                                       |----------------------------------------------------------------------------| {nota}                                                        |
 
 - --
 
@@ -89,23 +89,23 @@
 
 ## ⚠️ Problemas Detectados
 
-| Problema                                                   | Severidad                                                       | Causa Raíz                                                 | Solución Aplicada                                                 |
-|------------------------------------------------------------|-----------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|
-| {problema 1}                                               | {ALTA/MEDIA/BAJA}                                               | {causa}                                                    | {solución}                                                        |
-| {problema 2}                                               | {ALTA/MEDIA/BAJA}                                               | {causa}                                                    | {solución}                                                        |
+| Problema                                                           | Severidad                                                               | Causa Raíz                                                         | Solución Aplicada                                                         |
+|--------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------|---------------------------------------------------------------------------|
+| {problema 1}                                                       | {ALTA/MEDIA/BAJA}                                                       | {causa}                                                            | {solución}                                                                |
+| {problema 2}                                                       | {ALTA/MEDIA/BAJA}                                                       | {causa}                                                            | {solución}                                                                |
 
 - --
 
 ## 📈 Métricas AIPM (Del Sistema)
 
-| Herramienta                                                           | Estado                                                                 | Detalle                                                 |
-|-----------------------------------------------------------------------|------------------------------------------------------------------------|---------------------------------------------------------|
-| Trace Logger (22)                                                     | {FUNCIONA/NO_DATA/ERROR}                                               | {notas}                                                 |
-| Evaluator (23)                                                        | {FUNCIONA/NO_DATA/ERROR}                                               | {notas}                                                 |
-| Token Budget Guard (25)                                               | {FUNCIONA/NO_DATA/ERROR}                                               | {notas}                                                 |
-| RAG Optimizer (26)                                                    | {FUNCIONA/NO_DATA/ERROR}                                               | {notas}                                                 |
-| Risk Audit (27)                                                       | {FUNCIONA/NO_DATA/ERROR}                                               | {notas}                                                 |
-| Guardrails (29)                                                       | {FUNCIONA/NO_DATA/ERROR}                                               | {notas}                                                 |
+| Herramienta                                                                   | Estado                                                                         | Detalle                                                         |
+|-------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------------------|
+| Trace Logger (22)                                                             | {FUNCIONA/NO_DATA/ERROR}                                                       | {notas}                                                         |
+| Evaluator (23)                                                                | {FUNCIONA/NO_DATA/ERROR}                                                       | {notas}                                                         |
+| Token Budget Guard (25)                                                       | {FUNCIONA/NO_DATA/ERROR}                                                       | {notas}                                                         |
+| RAG Optimizer (26)                                                            | {FUNCIONA/NO_DATA/ERROR}                                                       | {notas}                                                         |
+| Risk Audit (27)                                                               | {FUNCIONA/NO_DATA/ERROR}                                                       | {notas}                                                         |
+| Guardrails (29)                                                               | {FUNCIONA/NO_DATA/ERROR}                                                       | {notas}                                                         |
 
 - --
 
