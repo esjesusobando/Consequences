@@ -2,7 +2,7 @@
 # Drift Claude<->OpenCode: claude_only=3, opencode_only=0
 
 version: v3.0
-generated: 2026-05-14T13:18:06.034517
+generated: 2026-05-14T20:59:45.314667
 totals:
   claude_code: 37
   opencode: 34
