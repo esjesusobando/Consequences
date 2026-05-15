@@ -41,13 +41,12 @@ The skill will:
 ## Output Structure
 
 ```
-07_Projects/00_Context/
-└── 00_Learning_Always/
-    └── 01_LA_[Description]/
-        ├── 00_Raw_Content/01_Video_Info.md
-        ├── 01_Resumen_500_Palabras/01_Resumen_500_Palabras.md
-        ├── 02_Prompts_Usados/{ES.md, EN.md}
-        ├── 03_Demos_Junior/*.md
+03_Resultado/10_Contenido_Learning/
+└── 01_LA_[Description]/
+    ├── 00_Raw_Content/01_Video_Info.md
+    ├── 01_Resumen_500_Palabras/01_Resumen_500_Palabras.md
+    ├── 02_Prompts_Usados/{ES.md, EN.md}
+    ├── 03_Demos_Junior/*.md
         ├── 04_Herramientas/04_Herramientas.md
         ├── 05_Insights_Segundo_Cerebro/05_Insights.md
         ├── 06_Post_Redes/{Facebook, Instagram, X_Twitter, LinkedIn}.md
