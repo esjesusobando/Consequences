@@ -148,6 +148,16 @@ Now/Office_Installations_-main.zip
 03_Resultado/OIM_Website_One/
 
 # =============================================================================
+# OIM VARIANTS — until official
+# =============================================================================
+01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy/
+01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy_2/
+03_Resultado/09_World_OIM/01_OIM_Website_v2/
+
+# Watchdog reports (auto-generated, not needed)
+03_Resultado/04_Reportes/watchdog_report_*.txt
+
+# =============================================================================
 # BINARIOS GRANDES — prevenir inflado del .git (392MB issue 2026-04-28)
 # =============================================================================
 
