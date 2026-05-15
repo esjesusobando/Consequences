@@ -1,6 +1,6 @@
 # 00_Manifest — JARVIS Ground Truth
 
-**Generated:** 2026-05-15T03:53:47
+**Generated:** 2026-05-15T04:40:27
 **Version:** v3.0 Consequences
 
 ## ¿Qué es esto?
@@ -10,15 +10,15 @@ Es la fuente de verdad que TODOS los agentes consultan.
 
 ## Archivos
 
-| #         | Archivo                        | Contenido                                       |
-|-----------|--------------------------------|-------------------------------------------------|
-| 01        | `01_OS_Inventory.json`         | Inventario crudo (counts, paths)                |
-| 02        | `02_MCP_Registry.yaml`         | MCPs Claude Code + OpenCode con drift           |
-| 03        | `03_Agent_Catalog.yaml`        | 52 agentes (source: core, backup: .agent)       |
-| 04        | `04_Skill_Index.json`          | Index navegable de las 316 skills               |
-| 05        | `05_HUB_Catalog.yaml`          | 29 HUBs ejecutables                             |
-| 06        | `06_Workflow_Graph.yaml`       | 29 workflows en 7 categorías                    |
-| 07        | `07_Hook_Registry.yaml`        | 10 hooks en 6 fases                             |
+| # | Archivo | Contenido |
+|---|---------|-----------|
+| 01 | `01_OS_Inventory.json` | Inventario crudo (counts, paths) |
+| 02 | `02_MCP_Registry.yaml` | MCPs Claude Code + OpenCode con drift |
+| 03 | `03_Agent_Catalog.yaml` | 52 agentes (source: core, backup: .agent) |
+| 04 | `04_Skill_Index.json` | Index navegable de las 316 skills |
+| 05 | `05_HUB_Catalog.yaml` | 29 HUBs ejecutables |
+| 06 | `06_Workflow_Graph.yaml` | 29 workflows en 7 categorías |
+| 07 | `07_Hook_Registry.yaml` | 10 hooks en 6 fases |
 
 ## Cómo regenerar
 
