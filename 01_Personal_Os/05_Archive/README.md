@@ -1,6 +1,6 @@
 # 05_Archive — Legacy y Repositorios
 
-**Versión:** 7.4
+**Versión:** 7.5
 **Última actualización:** 2026-05-15
 **Estado:** 📦 Legacy
 
@@ -41,7 +41,7 @@ Think_Different/
 ├── 04_Backups_AutoMejora/                # Backups del sistema de auto-mejora
 ├── 05_Planes_Legacy/                     # Planes de acción archivados
 ├── 06_Docs_All/                          # Documentos variados
-├── 07_Repos_Gentleman/                   # Repositorios externos (23 repos)
+├── 07_Repos_Gentleman/                   # Repositorios externos (25 repos)
 ├── 08_Planes_Estrategicos/               # Planes estratégicos legacy
 ├── 09_Legacy_Skills_Archive/             # Archive de skills legacy
 ├── 10_Legacy_Revisar/                    # Legacy para revisión
