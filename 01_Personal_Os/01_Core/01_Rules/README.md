@@ -1,14 +1,23 @@
-# Filosofía de Trabajo: La Tríada AI-Prime 🔱
+# Filosofía de Trabajo — Source of Truth 🔱
 
-Este directorio contiene la inteligencia operativa de **PersonalOS**, consolidada en **3 Pilares Cognitivos** para maximizar la eficiencia y precisión del asistente.
+**Este directorio es la FUENTE DE VERDAD** para las reglas del PersonalOS.
 
-## 🏛️ Estructura de Poder
+> ⚠️ **DOCUMENTO LEGACY:** Este README describe el sistema **Triada AI-Prime** (v1.0, 2026-04-18). El sistema actual (v4.0) está en `01_Personal_Os/01_Core/01_Rules/` con 12 reglas numeradas 00-11.
 
-1.  **[🔘 Pilar 0: Protocolo](02_Pilar_Base.mdc):** ADN operativo, estándares de idioma (Español) y bucle de evolución de reglas.
-2.  **[🛠️ Pilar 1: Motor](03_Pilar_Motor.mdc):** Ingeniería profunda, Armor Layer, Premium UI y organización de Skills.
-3.  **[🧠 Pilar 2: Estrategia](04_Pilar_Estrategia.mdc):** Gestión de tareas, contexto atómico y observabilidad AIPM (2026 Grade).
+---
 
-## 📋 Índice de Reglas (25 archivos)
+## 🏛️ Sistema Dual de Reglas
+
+| Sistema | Ubicación | Qty | Estado |
+|---------|-----------|-----|--------|
+| **Triada AI-Prime (Legacy)** | `.claude/02_Rules/` | 25 rules (01-35, algunos saltados) | Convive |
+| **Consequences v4.0 (Active)** | `01_Personal_Os/01_Core/01_Rules/` | 12 rules (00-11) | **ACTIVO** |
+
+> 📂 Los sistemas paralelos `.claude/02_Rules/` (Legacy) y `.agent/00_Rules/` (Backup) coexisten por compatibilidad.
+
+---
+
+## 📋 Índice de Reglas (Legacy — 25 archivos)
 
 | #                                   | Regla                                                                | Propósito                                                                   |
 |-------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -34,6 +43,10 @@ Este directorio contiene la inteligencia operativa de **PersonalOS**, consolidad
 | 20                                  | `20_Recap_Morning.mdc`                                               | Recap matutino                                                              |
 | 21                                  | `21_Gentleman_Framework.mdc`                                         | Framework Gentleman                                                         |
 | 35                                  | `35_Pencil_Design_Studio.mdc`                                        | Estudio de diseño Pencil                                                    |
+
+> 📝 **Nota:** Los números 23-34 fueron deprecados/absorbidos por otros archivos en la evolución del sistema.
+
+---
 
 ## 🔄 El Bucle de Oro (The Golden Loop)
 

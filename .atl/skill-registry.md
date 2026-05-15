@@ -8,7 +8,7 @@
 
 ## Proyecto: Think_Different
 
-**Versión:** 4.0 Production Ready (2026-05-14)
+**Versión:** 4.0 Production Ready (2026-05-15)
 **Última actualización:** 2026-05-14 (v4.0 Production Ready + gentle-ai v1.26.6 + Every CE v2.55.0)
 
 ### Convenciones del Proyecto
@@ -73,7 +73,7 @@ Think_Different/
 | **01** | 🎨 **Creación Contenidos** | Brand_Voice, Content_Creation, SEO_SOTA_Master, Carousel_Master | social-content, paid-ads, brand-voice, content-ideation | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/` |
 | **02** | 🎨 **Diseño UI/UX** | Product_Design, Taste_Skills, Diseno_Minimalista, Marca, Excalidraw, **Huashu_Design**, **Dumbledor_Design**, **Frontend_Slides** | taste-skill, soft-skill, minimalist-skill, redesign-skill, **huashu-design**, **dumbledor-design** | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/` |
 | **03** | 🎥 **Video Media** | Video_Intel, James_Cameron (Remotion, Audio) | youtube-analysis, video-prompt, seedance, remotion | CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/` |
-| **04** | ⚙️ **Automatización** | N8N_JS, N8N_Python, Firecrawl, GWS_Client | workflow-builder, webhook, automation, scraping | Automation | `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/` |
+| **04** | ⚙️ **Automatización** | N8N_JS, N8N_Python, Firecrawl, GWS_Client, **Learning_Always** | workflow-builder, webhook, automation, scraping, **/learning-url-to-knowledge**, **/compound-knowledge**, **/os-self-improvement**, **/content-from-url**, **/reverse-engineering** | Automation | `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/` |
 | **05** | 🔄 **Workflows** | Agent_Teams_Lite, Project_Manager, Product_Manager, PM_Orchestrator | sdd-*, /ce:*, issue-creation, jira-epic | SDD+CE | `01_Personal_Os/01_Core/02_Tools/02_Skills/05_Workflows/` |
 | **06** | 🛠️ **Tools** | Skill_Creator, Anthropic_Harness, DevOps, Testing, Doc_Processing, System_Master, Data_Analyst, Qmd | react-19, nextjs-15, pytest, playwright, docker | CE+GGA | `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/` |
 | **07** | 🌱 **Personal OS** | Life_OS, Personal_Os, Hillary, Contexto, Rituales | quick-capture, plan-my-day, morning-standup, weekly-review | OS | `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/` |

@@ -1,8 +1,20 @@
 # Think Different PersonalOS v1.0
 
+> ⚠️ **DOCUMENTO LEGACY (v1.0 - 2026-04-18):** Este README describe la estructura del sistema v1.0.
+> Para la estructura v4.0 actual, consultar `01_Personal_Os/README.md` del proyecto principal.
+>
+> **Paths actualizados en v4.0:**
+> - `01_Core/` → `01_Personal_Os/01_Core/`
+> - `03_Skills/` → `01_Personal_Os/01_Core/02_Tools/02_Skills/`
+> - `03_Tasks/` → `01_Personal_Os/03_Task/`
+> - `03_Scripts_Os/` → `01_Personal_Os/04_Operations/03_Scripts_Os/`
+> - `05_Archive/` → `01_Personal_Os/05_Archive/`
+
+---
+
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Version](https://img.shields.io/badge/Version-1.0-green)]()
-[![Status](https://img.shields.io/badge/Status-100%25%20--%20Production%20Ready-blue)]()
+[![Status](https://img.shields.io/badge/Status-Archived-blue)]()
 [![Multi--User](https://img.shields.io/badge/Multi--User-Ready-brightgreen)]()
 
 > 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 160+ skills SOTA, metodologías integradas y automatización completa.

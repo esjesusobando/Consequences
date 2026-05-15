@@ -1,12 +1,20 @@
 # 05_Archive — Legacy y Repositorios
 
-**Versión:** 7.3
+**Versión:** 7.4
 **Última actualización:** 2026-05-15
 **Estado:** 📦 Legacy
 
 ---
 
-> ⚠️ **AVISO DE CORRECCIÓN:** Secuencia de carpetas 06, 09, 10 tenía duplicados. Algunos renombrados completados, otros pendientes de lock.
+> ⚠️ **AVISO DE CORRECCIÓN:** Secuencia de carpetas 06, 09, 10 tenía duplicados.
+> - `06_Snapshots` → `11_Snapshots` ✅
+> - `09_OpenSpec_Archive` → `12_OpenSpec_Archive` ✅
+> - `10_Legacy_Scripts_Backup_20260420` → `13_Legacy_Scripts_Backup_20260420` ✅
+> - `10_Tasks_Legacy` → `14_Tasks_Legacy` ✅
+>
+> 📂 **OIM Consolidated:** Los sitios OIM duplicados en `03_Resultado/` raíz fueron movidos a `09_World_OIM/` (consolidado oficial) y su backup en `15_OIM_Websites_Root/`.
+>
+> ⚠️ **DUPLICADOS PENDIENTES:** Los originales (`06_Snapshots`, `09_OpenSpec_Archive`, `10_Legacy_Scripts...`, `10_Tasks_Legacy`) siguen lockeados por apps. Los renombrados (11-14) son los activos. Cuando se desbloqueen, mover a backup legacy.
 
 ---
 
@@ -23,7 +31,7 @@ Think_Different/
 
 ---
 
-## 📂 Estructura 05_Archive (Secuencia corregida 01-14)
+## 📂 Estructura 05_Archive (Secuencia corregida 01-15)
 
 ```
 05_Archive/
@@ -37,10 +45,16 @@ Think_Different/
 ├── 08_Planes_Estrategicos/               # Planes estratégicos legacy
 ├── 09_Legacy_Skills_Archive/             # Archive de skills legacy
 ├── 10_Legacy_Revisar/                    # Legacy para revisión
-├── 11_Snapshots/                         # Snapshots del sistema (era 06_Snapshots)
-├── 12_OpenSpec_Archive/                  # Archivo de especificaciones OpenSpec (era 09_OpenSpec_Archive)
-├── 13_Legacy_Scripts_Backup_20260420/   # Scripts de backup legacy (era 10_Legacy_Scripts_Backup_20260420)
-├── 14_Tasks_Legacy/                      # Tasks legacy archivadas (era 10_Tasks_Legacy)
+├── 11_Snapshots/                         # Snapshots del sistema (era 06_Snapshots) ✅
+├── 12_OpenSpec_Archive/                  # Archivo de especificaciones OpenSpec (era 09_OpenSpec_Archive) ✅
+├── 13_Legacy_Scripts_Backup_20260420/   # Scripts de backup legacy (era 10_Legacy_Scripts...) ✅
+├── 14_Tasks_Legacy/                      # Tasks legacy archivadas (era 10_Tasks_Legacy) ✅
+├── 15_OIM_Websites_Root/                 # Backup websites OIM desde 03_Resultado/ raíz
+│   ├── OIM_Website/                      # Versión original
+│   ├── OIM_Website_Backup/               # Backup versión original
+│   ├── OIM_Website_One/                 # Otra versión
+│   ├── Imagenes_Finales/                 # Imágenes del proyecto
+│   └── OIM_Website_v2/                  # ⚠️ PENDIENTE — lockeado, mover manualmente
 └── README.md                             # Este archivo
 ```
 
