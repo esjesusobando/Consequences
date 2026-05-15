@@ -198,3 +198,5 @@ Now/02_Videos_Finales/
 
 # Embedded git repos (local copies, not submodules)
 01_Personal_Os/05_Archive/07_Repos_Gentleman/*/.git
+# Local Pi runtime state
+.atl/
