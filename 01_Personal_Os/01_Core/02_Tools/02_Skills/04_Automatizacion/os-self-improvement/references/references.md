@@ -15,8 +15,8 @@
 │   └── 03_Context/              # Context docs
 ├── 02_Knowledge/
 │   └── 06_Unicorn/              # Knowledge network
-└── 07_Projects/
-    └── 00_Context/              # Learning Always output
+└── 03_Resultado/
+    └── 10_Contenido_Learning/    # Learning Always output
 ```
 
 ## Related Skills

@@ -18,7 +18,7 @@ El PersonalOS tiene la siguiente estructura:
 ├── 03_Tasks/              # Tareas activas (YAML frontmatter)
 ├── 04_Operations/         # Memoria, Brain, Notas
 ├── 05_Archive/           # Archive: Repos, legacy
-├── 07_Projects/          # Proyectos
+├── 03_Resultado/          # Outputs: Learning Always, OIM, Projects
 └── 01_Personal_Os/04_Operations/03_Scripts_Os/        # HUBs: Auditor, Git, AIPM, Ritual
 ```
 

@@ -29,4 +29,4 @@ echo "[4/4] Saving to Engram..."
 
 echo ""
 echo "=== Pipeline Complete ==="
-echo "Check output in: 07_Projects/00_Context/00_Learning_Always/"
+echo "Check output in: 03_Resultado/10_Contenido_Learning/"
