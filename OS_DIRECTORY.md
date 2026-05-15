@@ -9,7 +9,7 @@
 | Componente                           | Total                                                              | Estado                                        |
 |--------------------------------------|--------------------------------------------------------------------|-----------------------------------------------|
 | MCPs Claude Code                     | **37**                                                             | ✅ OPERATIONAL                                 |
-| Every CE                             | v2.55.0 (local repo) ✅                                             | ✅ ACTIVE — Local version                      |
+| Every CE                             | v2.55.0 (local repo) ✅                                           | ✅ ACTIVE — Local version                      |
 | gentle-ai                            | v1.26.6                                                            | ✅ AVAILABLE                                   |
 | Skills                               | **317** (11 áreas activas)                                         | ✅ VERIFIED                                    |
 | Agentes                              | **52+** (22 archivos en 01_Agents + subdirs)                       | ✅ ACTIVE                                      |

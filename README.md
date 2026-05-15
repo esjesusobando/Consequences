@@ -15,9 +15,9 @@
 
 | Métrica                            | Valor                                          |
 |------------------------------------|------------------------------------------------|
-| **Overall Health**                 | **100%** 🟢                                     |
-| **Every CE**                       | v2.55.0 ✅ (local repo)                         |
-| **gentle-ai**                      | v1.26.6 ✅                                      |
+| **Overall Health**                 | **100%** 🟢                                    |
+| **Every CE**                       | v2.55.0 ✅ (local repo)                        |
+| **gentle-ai**                      | v1.26.6 ✅                                     |
 | **Skills**                         | 317 (11 áreas funcionales)                     |
 | **Rules**                          | 11 (.mdc)                                      |
 | **MCPs**                           | 37 Claude Code                                 |
