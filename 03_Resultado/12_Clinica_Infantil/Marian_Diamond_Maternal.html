@@ -152,7 +152,7 @@
         .overlay {
             position: absolute;
             inset: 0;
-            background: rgba(0, 0, 0, 0.35);
+            background: rgba(0, 0, 0, 0.15);
             pointer-events: none;
         }
 
@@ -161,9 +161,9 @@
             margin-top: 85vh;
             position: relative;
             z-index: 1;
-            background: rgba(10, 10, 10, 0.55);
-            backdrop-filter: blur(40px) saturate(200%);
-            -webkit-backdrop-filter: blur(40px) saturate(200%);
+            background: rgba(10, 10, 10, 0.12);
+            backdrop-filter: blur(32px) saturate(200%);
+            -webkit-backdrop-filter: blur(32px) saturate(200%);
             border-radius: 2rem 2rem 0 0;
             box-shadow: 0 -4px 40px rgba(0, 0, 0, 0.6);
             overflow: hidden;
@@ -176,37 +176,18 @@
             left: 0;
             right: 0;
             height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08) 20%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.08) 80%, transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.12) 20%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.12) 80%, transparent);
         }
 
-        .page.light {
-            --blanco: #1A1A1A;
-            --blanco-dim: rgba(26, 26, 26, 0.65);
-            --gris: #999;
-            --glass: rgba(0, 0, 0, 0.04);
-            --glass-border: rgba(0, 0, 0, 0.1);
-            background: rgba(255, 255, 255, 0.78);
-            backdrop-filter: blur(40px) saturate(200%);
-            -webkit-backdrop-filter: blur(40px) saturate(200%);
-        }
-
-        .page.light::before {
-            background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.06) 20%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.06) 80%, transparent);
-        }
-
-        .page.light .badge {
-            background: rgba(0, 0, 0, 0.06);
-        }
-
-        .page.light .btn-secondary {
-            background: rgba(0, 0, 0, 0.06);
-            color: #1A1A1A;
-            border-color: rgba(0, 0, 0, 0.12);
-        }
-
-        .page.light .btn-secondary:hover {
-            background: rgba(0, 0, 0, 0.1);
-            border-color: rgba(0, 0, 0, 0.18);
+        .page::after {
+            content: '';
+            position: absolute;
+            top: -80px;
+            left: 0;
+            right: 0;
+            height: 160px;
+            background: linear-gradient(to bottom, rgba(10, 10, 10, 0.06), transparent);
+            pointer-events: none;
         }
 
         .content {
@@ -269,10 +250,12 @@
         }
 
         h1 span {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            background: linear-gradient(135deg, #A78BFA 0%, #F9A8D4 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            text-shadow: 0 0 40px rgba(167, 139, 250, 0.3);
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
         }
 
         .subtitle {
@@ -588,63 +571,6 @@
             to { opacity: 1; }
         }
 
-        /* ========== SCROLL INDICATOR ========== */
-        .scroll-hint {
-            position: fixed;
-            bottom: 1.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--gris);
-            font-size: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 0.25em;
-            z-index: 100;
-            opacity: 1;
-            transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1), transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .scroll-hint.hidden {
-            opacity: 0;
-            transform: translateX(-50%) translateY(20px);
-            pointer-events: none;
-        }
-
-        .scroll-hint .mouse {
-            width: 20px;
-            height: 32px;
-            border: 1.5px solid var(--gris);
-            border-radius: 10px;
-            position: relative;
-            opacity: 0.6;
-        }
-
-        .scroll-hint .wheel {
-            width: 3px;
-            height: 6px;
-            background: var(--gris);
-            border-radius: 2px;
-            position: absolute;
-            top: 5px;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: scrollWheel 2s ease-in-out infinite;
-        }
-
-        @keyframes scrollWheel {
-            0%, 100% {
-                transform: translateX(-50%) translateY(0);
-                opacity: 1;
-            }
-            50% {
-                transform: translateX(-50%) translateY(8px);
-                opacity: 0.3;
-            }
-        }
-
         /* ========== RESPONSIVE ========== */
         @media (min-width: 768px) {
             .content {
@@ -741,7 +667,7 @@
     </div>
 
     <!-- SCROLLABLE PAGE -->
-    <div class="page light">
+    <div class="page">
     <div class="content">
         <div class="badge">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -753,7 +679,7 @@
 
         <div class="headline">
             <h1>MARIAN<br><span>DIAMOND</span></h1>
-            <p class="subtitle">Metodología Montessori · Año Escolar 2026-2027</p>
+            <p class="subtitle">Metodología Montessori</p>
         </div>
 
         <div class="divider">
@@ -852,7 +778,7 @@
             canvas.height = window.innerHeight;
         }
 
-        window.addEventListener('resize', resizeCanvas);
+        window.addEventListener('resize', resizeCanvas, { passive: true });
         resizeCanvas();
 
         const kidsColors = ['#8B5CF6', '#06B6D4', '#F472B6', '#A78BFA', '#22D3EE', '#FB7185'];
@@ -922,18 +848,8 @@
             requestAnimationFrame(animateParticles);
         }
 
-        const hint = document.getElementById('scrollHint');
-
-        document.querySelectorAll('.btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const rect = btn.getBoundingClientRect();
-                burstParticles(rect.left + rect.width / 2, rect.top + rect.height / 2);
-            });
-        });
-
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
-                hint.classList.add('hidden');
                 createAmbientParticles();
             }
         }, { passive: true, once: true });
