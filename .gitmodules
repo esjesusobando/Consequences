@@ -13,3 +13,6 @@
 [submodule "01_Personal_Os/05_Archive/07_Repos_Gentleman/17_Open_Design"]
 	path = 01_Personal_Os/05_Archive/07_Repos_Gentleman/17_Open_Design
 	url = https://github.com/nexu-io/open-design.git
+[submodule "03_Resultado/09_World_OIM/01_OIM_Website_v2"]
+	path = 03_Resultado/09_World_OIM/01_OIM_Website_v2
+	url = https://github.com/esjesusobando/OIM.git
