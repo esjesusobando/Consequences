@@ -54,7 +54,7 @@ Think_Different/
 
 ---
 
-## 🔘 Reglas Activas (11 archivos .mdc)
+## 🔘 Reglas Activas (12 archivos .mdc)
 
 | #                             | Regla                                                                                  | Nombre                                                | Función                                                                     |
 |-------------------------------|----------------------------------------------------------------------------------------|-------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -69,6 +69,7 @@ Think_Different/
 | 08                            | [08_Token_Economy.mdc](./08_Token_Economy.mdc)                                         | **Token Economy**                                     | 10 leyes para extender Claude Code hasta 10x                                |
 | 09                            | [09_Agent_Teams_Protocol.mdc](./09_Agent_Teams_Protocol.mdc)                           | **Agent Teams Protocol**                              | Multi-agente: boot, delegación, Super Campeones                             |
 | 10                            | [10_Git_Directions.mdc](./10_Git_Directions.mdc)                                       | **Git Directions**                                    | URLs de repos y remotes actualizados                                        |
+| 11                            | [11_Minimax.mdc](./11_Minimax.mdc)                                                     | **Minimax**                                           | Configuración y integración con Minimax                                     |
 
 ---
 
@@ -103,7 +104,7 @@ Think_Different/
 
 ---
 
-_Total Reglas activas: 11 (.mdc files)_
+_Total Reglas activas: 12 (.mdc files)_
 _Total Skills: 300+_
 _Total Áreas funcionales: 11 (v4.0 Consequences)_
 _Framework: Anthropic SOTA 2026 + PersonalOS v4.0 Consequences_
