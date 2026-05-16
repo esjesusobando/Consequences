@@ -43,13 +43,6 @@ https://maps.apple.com/?address=Calle%20Campo%20El%C3%ADas,%20Ciudad%20Ojeda,%20
 
 ---
 
-## Deploy
-
-**GitHub**: https://github.com/esjesusobando/marian_diamond
-**Vercel**: https://marian-diamond.vercel.app
-
----
-
 ## Notas de Implementación
 
 - Usar template base: `Honores_Grado_Noel.html` de 09_Valeria
