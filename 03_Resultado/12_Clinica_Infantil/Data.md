@@ -1,23 +1,41 @@
-# Datos Invitación — U.E.P. Marian Diamond
+# Datos del Proyecto — U.E.P. Marian Diamond
 
-*Creado*: 2026-05-07
-*Proyecto*: 10_Clinica_Infantil
-*Tipo*: Invitación HTML — Maternal / Inscripciones
+*Creado:* 2026-05-15
+*Proyecto:* 12_Clinica_Infantil
+*Tipo:* Landing HTML — Preescolar / Jardín de Infantes / Inscripciones
+*Status:* ✅ Producción (Vercel)
 
 ---
 
-## Datos del Evento
+## Datos del Evento / Institución
 
 | Campo             | Valor                                                                         |
 |-------------------|-------------------------------------------------------------------------------|
-| Institución       | U.E.P. MARIAN DIAMOND                                                         |
-| Programa          | Maternal — Inscripciones Abiertas                                             |
-| CTA               | "Reserva tu cupo"                                                             |
-| Slogan            | "¡ 🌈En Diamond kids creemos que todos los niños ... Merecen Brillar✨!."       |
+| Nombre completo   | U.E.P. Marian Diamond                                                         |
+| Alias             | Diamond Kids                                                                  |
+| Programa          | Preescolar · Jardín de Infantes                                               |
+| Metodología       | Montessori                                                                    |
+| CTA               | "Reserva tu Cupo"                                                             |
+| Slogan            | "Donde cada niño aprende a brillar"                                           |
+| Slogan secundario | "¡Cada niño merece brillar!"                                                  |
 
 ---
 
-## Mensaje de WhatsApp
+## Información de Contacto
+
+| Canal            | Valor                                      |
+|------------------|--------------------------------------------|
+| Teléfono         | +58 0414 062 1217                          |
+| Email            | Ueprivadadiamondkids@gmail.com             |
+| Website          | https://uepdiamondkids.com/                |
+| TikTok           | @diamond.kids80                            |
+| Instagram        | instagram.com/u.e.p.diamondkids            |
+| Dirección        | Calle Campo Elías, Ciudad Ojeda, Zulia, Venezuela |
+| Coordenadas      | 10.204611, -71.313629                       |
+
+---
+
+## WhatsApp Mensaje Predefinido
 
 ```
 👋🏻Hola!. te saluda la Familia Diamond kids🧠. *Por favor me indica:*
@@ -32,11 +50,9 @@
 
 ---
 
-## Ubicación
+## Links de Mapa
 
-**Dirección**: Calle Campo Elías, Ciudad Ojeda, Zulia, Venezuela
-
-**Apple Maps Link**:
+**Apple Maps:**
 ```
 https://maps.apple.com/?address=Calle%20Campo%20El%C3%ADas,%20Ciudad%20Ojeda,%20Zulia,%20Venezuela&ll=10.204611,-71.313629&q=Calle%20Campo%20El%C3%ADas&t=m
 ```
@@ -45,8 +61,38 @@ https://maps.apple.com/?address=Calle%20Campo%20El%C3%ADas,%20Ciudad%20Ojeda,%20
 
 ## Notas de Implementación
 
-- Usar template base: `Honores_Grado_Noel.html` de 09_Valeria
-- Adaptar diseño para institución educativa (reemplazar paleta Holi por tonos institucionales Marian Diamond)
-- Botón WhatsApp debe abrir chat con mensaje predefinido
-- Botón Maps debe abrir ubicación de Apple Maps
-- Mantener partículas canvas y efectos SOTA
+- Landing HTML con CSS vanilla (sin frameworks)
+- Estilos basados en Apple Human Interface Guidelines (HIG)
+- Partículas animadas con canvas
+- Glass morphism UI
+- Deployment en Vercel
+- Rewrites via vercel.json para servir Marian_Diamond.html
+- Headers de seguridad (X-Frame, X-Content-Type, etc.)
+- SEO y Open Graph meta tags configurados
+- Fonts: Playfair Display, Inter, Bebas Neue (Google Fonts)
+
+---
+
+## Archivos del Proyecto
+
+| Archivo | Descripción |
+|---------|-------------|
+| `Marian_Diamond.html` | Landing page principal |
+| `vercel.json` | Configuración Vercel (rewrites + headers) |
+| `README.md` | Documentación general del proyecto |
+| `assets/bg-main.png` | Imagen de fondo principal (3.2MB) |
+| `assets/base.png` | Imagen base alternativa |
+| `assets/alts/` | Versiones alternativas de fondos |
+
+---
+
+## URLs de Producción
+
+| Recurso | URL |
+|---------|-----|
+| Landing Principal | https://marian-diamond.vercel.app/ |
+| Website Institucional | https://uepdiamondkids.com/ |
+
+---
+
+*Última actualización: 2026-05-17*

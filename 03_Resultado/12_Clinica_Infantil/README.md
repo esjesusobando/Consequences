@@ -28,14 +28,24 @@ Institución educativa privada enfocada en:
 - Vercel Hosting
 - Apple Human Interface Guidelines (HIG) styling
 
-## Files
-| File | Description |
-|------|-------------|
-| `Marian_Diamond.html` | Landing page principal (invitación HTML) |
-| `vercel.json` | Configuración de deploy y rewrite |
-| `Data.md` | Datos del evento e información de contacto |
-| `enhanced_03_Diamond_Vert (1).png` | Imagen de fondo principal |
-| `03_Diamond_Vert.png` | Versión alternativa de imagen |
+## Structure
+
+```
+12_Clinica_Infantil/
+├── Marian_Diamond.html    # Landing page principal
+├── vercel.json           # Config de deploy y rewrite
+├── Data.md                # Datos e información de contacto
+├── README.md             # Este archivo
+└── assets/
+    ├── bg-main.png      # Imagen de fondo principal (3.2MB)
+    ├── base.png          # Imagen base alternativa
+    └── alts/             # Versiones alternativas de fondos
+        ├── 01_Fondo.png
+        ├── 02_Fondo.png
+        ├── 03_Diamond_Vert.png
+        ├── 03_Fondo.png
+        └── Fondo base.png
+```
 
 ## Features
 - Particle animation canvas
@@ -44,3 +54,7 @@ Institución educativa privada enfocada en:
 - Apple HIG button styling
 - Responsive design (mobile-first)
 - Security headers (X-Frame, X-Content-Type, etc.)
+- Open Graph meta tags
+- Google Fonts (Playfair Display, Inter, Bebas Neue)
+- Trust badges (+10 años, +500 alumni, ubicación céntrica)
+- Benefits grid (Montessori, Ambiente, Crianza, Niños Felices)
