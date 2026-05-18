@@ -49,14 +49,14 @@ Jay E (RoboNuggets) presents HTMLSlides, a tool that turns Claude Code (or any A
 **Installation**: `claude plugin marketplace add bluedusk/html-slides`
 
 ## Datos Clave
-| Aspecto | Detalle |
-|---------|---------|
-| Costo | Gratis / Open Source |
-| AI Agents | Claude Code, Copilot, Gemini CLI, Cursor, Windsurf |
-| Output | Single HTML file |
-| Temas | 17 (5 Pro + 12 Vibe) |
-| Presentación | Dual-display con app HTMLSlides |
-| Conversión | PPT, reveal.js, Marp, Google Slides |
+| Aspecto     | Detalle                                           |
+|------------|--------------------------------------------------|
+| Costo       | Gratis / Open Source                              |
+| AI Agents   | Claude Code, Copilot, Gemini CLI, Cursor, Windsurf|
+| Output      | Single HTML file                                  |
+| Temas       | 17 (5 Pro + 12 Vibe)                              |
+| Presentación| Dual-display con app HTMLSlides                   |
+| Conversión  | PPT, reveal.js, Marp, Google Slides               |
 
 ## Nivel: Junior-Friendly
 Conceptos accesibles para principiantes. El único requisito es tener un AI agent instalado.

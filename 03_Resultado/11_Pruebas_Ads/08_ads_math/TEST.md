@@ -33,11 +33,11 @@ LTV:CAC Ratio:         100/100  ██████████████  (10%
 - CPA: $44.44
 
 **Results:**
-| Metric | Value | Benchmark | Status |
-|--------|-------|-----------|--------|
-| CPA | $44.44 | $40 (target) | WARNING |
-| Cost per lead | $44.44 | - | - |
-| Trend | -8% (improving) | - | PASS |
+| Metric       | Value          | Benchmark   | Status  |
+|-------------|---------------|------------|--------|
+| CPA          | $44.44         | $40 (target)| WARNING |
+| Cost per lead| $44.44         |------------|--------|
+| Trend        | -8% (improving)|------------| PASS    |
 
 **Interpretation:** CPA is 11% above target but trending in right direction. 8% improvement over last 30 days suggests optimization is working.
 
@@ -49,11 +49,11 @@ LTV:CAC Ratio:         100/100  ██████████████  (10%
 - ROAS: 4.25x
 
 **Results:**
-| Metric | Value | Benchmark | Status |
-|--------|-------|-----------|--------|
-| ROAS | 4.25x | 3.0x (minimum) | PASS |
-| ROAS % | 325% | - | - |
-| Break-Even ROAS | 2.0x | - | - |
+| Metric         | Value  | Benchmark     | Status  |
+|---------------|-------|--------------|--------|
+| ROAS           | 4.25x  | 3.0x (minimum)| PASS    |
+| ROAS %         | 325%   |--------------|--------|
+| Break-Even ROAS| 2.0x   |--------------|--------|
 
 **Interpretation:** ROAS of 4.25x means for every $1 spent, generating $4.25 revenue. Healthy for info product with long sales cycle.
 
@@ -66,11 +66,11 @@ LTV:CAC Ratio:         100/100  ██████████████  (10%
 - Current CPA: $44.44
 
 **Results:**
-| Metric | Value | Status |
-|--------|-------|--------|
-| Break-Even CPA | $215.28 | PASS |
-| Current headroom | $170.84 | Excellent |
-| Recommendation | SCALE | - |
+| Metric          | Value  | Status   |
+|----------------|-------|---------|
+| Break-Even CPA  | $215.28| PASS     |
+| Current headroom| $170.84| Excellent|
+| Recommendation  | SCALE  |---------|
 
 **Interpretation:** Current CPA ($44.44) is 79% below break-even. Massive headroom - should consider scaling budget.
 
@@ -84,12 +84,12 @@ LTV:CAC Ratio:         100/100  ██████████████  (10%
 - Current conversions: 32/month
 
 **Results:**
-| Metric | Value | Status |
-|--------|-------|--------|
-| Lost to rank (20%) | 8 additional conversions/mo | - |
-| Lost to budget (15%) | 6 additional conversions/mo | - |
-| Total opportunity | 14 more conversions/mo | - |
-| Budget needed for full IS | ~$1,800/mo | - |
+| Metric                   | Value                      | Status  |
+|-------------------------|---------------------------|--------|
+| Lost to rank (20%)       | 8 additional conversions/mo|--------|
+| Lost to budget (15%)     | 6 additional conversions/mo|--------|
+| Total opportunity        | 14 more conversions/mo     |--------|
+| Budget needed for full IS| ~$1,800/mo                 |--------|
 
 **Recommendation:** Increase Google Search budget by $400 to capture lost impression share. At current CPA ($37.50), this = $525 additional spend for 14 more conversions.
 
@@ -97,12 +97,12 @@ LTV:CAC Ratio:         100/100  ██████████████  (10%
 
 **Scenario: Scale Google Search by 20%**
 
-| Scenario | Daily Budget | Monthly Spend | Projected Conv | CPA |
-|----------|--------------|---------------|----------------|-----|
-| Current | $40 | $1,200 | 32 | $37.50 |
-| +20% | $48 | $1,440 | 38 | $37.89 |
-| +50% | $60 | $1,800 | 45 | $40.00 |
-| +100% | $80 | $2,400 | 60 | $40.00 |
+| Scenario  | Daily Budget  | Monthly Spend  | Projected Conv  | CPA   |
+|----------|--------------|---------------|----------------|------|
+| Current   | $40           | $1,200         | 32              | $37.50|
+| +20%      | $48           | $1,440         | 38              | $37.89|
+| +50%      | $60           | $1,800         | 45              | $40.00|
+| +100%     | $80           | $2,400         | 60              | $40.00|
 
 **20% Rule Applied:** Conservative increase to $1,440/mo. Monitor 3-5 days between increases.
 
@@ -117,10 +117,10 @@ LTV:CAC Ratio:         100/100  ██████████████  (10%
 - LTV: $2,392
 
 **Results:**
-| Metric | Value | Benchmark | Status |
-|--------|-------|-----------|--------|
-| LTV:CAC | 17.9:1 | 3:1 (healthy) | EXCELLENT |
-| Payback period | 0.5 months | 3-6 months | EXCELLENT |
+| Metric        | Value     | Benchmark    | Status   |
+|--------------|----------|-------------|---------|
+| LTV:CAC       | 17.9:1    | 3:1 (healthy)| EXCELLENT|
+| Payback period| 0.5 months| 3-6 months   | EXCELLENT|
 
 **Interpretation:** Exceptional LTV:CAC ratio of 17.9:1. Customer acquisition is highly efficient. May be under-investing in growth.
 

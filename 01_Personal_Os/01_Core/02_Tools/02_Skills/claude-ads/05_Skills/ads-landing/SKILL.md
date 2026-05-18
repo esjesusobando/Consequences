@@ -29,25 +29,25 @@ The #1 landing page issue in ad campaigns: does the page match the ad?
 - **Keyword match**: search keyword appears naturally in page content
 
 ### Message Match Scoring
-| Level | Description | Score |
-|-------|-------------|-------|
-| Exact match | Headline, offer, CTA all align perfectly | 100% |
-| Partial match | Headline matches but offer/CTA differs | 60% |
-| Weak match | Generic page, loosely related to ad | 30% |
-| Mismatch | Page content doesn't reflect ad promise | 0% |
+| Level        | Description                             | Score  |
+|-------------|----------------------------------------|-------|
+| Exact match  | Headline, offer, CTA all align perfectly| 100%   |
+| Partial match| Headline matches but offer/CTA differs  | 60%    |
+| Weak match   | Generic page, loosely related to ad     | 30%    |
+| Mismatch     | Page content doesn't reflect ad promise | 0%     |
 
 ## Page Speed Assessment
 
 Slow pages kill conversion rates. For every 1s delay, CVR drops ~7%.
 
 ### Thresholds (Ad Landing Pages)
-| Metric | Pass | Warning | Fail |
-|--------|------|---------|------|
-| LCP | <2.5s | 2.5-4.0s | >4.0s |
-| INP | <200ms | 200-500ms | >500ms |
-| CLS | <0.1 | 0.1-0.25 | >0.25 |
-| Time to Interactive | <3.0s | 3.0-5.0s | >5.0s |
-| Page weight | <2MB | 2-5MB | >5MB |
+| Metric             | Pass  | Warning  | Fail  |
+|-------------------|------|---------|------|
+| LCP                | <2.5s | 2.5-4.0s | >4.0s |
+| INP                | <200ms| 200-500ms| >500ms|
+| CLS                | <0.1  | 0.1-0.25 | >0.25 |
+| Time to Interactive| <3.0s | 3.0-5.0s | >5.0s |
+| Page weight        | <2MB  | 2-5MB    | >5MB  |
 
 ### Common Speed Issues in Ad Pages
 - Hero images not compressed (use WebP/AVIF)
@@ -89,12 +89,12 @@ Slow pages kill conversion rates. For every 1s delay, CVR drops ~7%.
 ## Form Optimization
 
 ### Form Length Impact on CVR
-| Fields | Expected CVR Impact | Use Case |
-|--------|-------------------|----------|
-| 1-3 fields | Highest CVR | Top-of-funnel, free offer |
-| 4-5 fields | Moderate CVR | Mid-funnel, qualified leads |
-| 6-8 fields | Lower CVR | Bottom-funnel, sales-ready |
-| 9+ fields | Lowest CVR | Only for high-value offers |
+| Fields    | Expected CVR Impact| Use Case                   |
+|----------|-------------------|---------------------------|
+| 1-3 fields| Highest CVR        | Top-of-funnel, free offer  |
+| 4-5 fields| Moderate CVR       | Mid-funnel, qualified leads|
+| 6-8 fields| Lower CVR          | Bottom-funnel, sales-ready |
+| 9+ fields | Lowest CVR         | Only for high-value offers |
 
 ### Form Best Practices
 - Pre-fill fields where possible (UTM data, known info)
@@ -125,13 +125,13 @@ Flag if any of the following are true:
 
 ## Quick Wins
 
-| Priority | Fix | Expected Impact |
-|----------|-----|-----------------|
-| 1 | Move primary CTA above the fold on all devices | +15-25% CVR |
-| 2 | Reduce form fields to essential only (name, email, one qualifier) | +10-20% CVR |
-| 3 | Add trust badges near CTA (security, guarantee, reviews) | +5-15% CVR |
-| 4 | Optimize hero image (WebP/AVIF, <200KB, proper dimensions) | -1-2s load time |
-| 5 | Fix mobile tap targets (>=48x48px with >=8px spacing) | +5-10% mobile CVR |
+| Priority  | Fix                                                              | Expected Impact  |
+|----------|-----------------------------------------------------------------|-----------------|
+| 1         | Move primary CTA above the fold on all devices                   | +15-25% CVR      |
+| 2         | Reduce form fields to essential only (name, email, one qualifier)| +10-20% CVR      |
+| 3         | Add trust badges near CTA (security, guarantee, reviews)         | +5-15% CVR       |
+| 4         | Optimize hero image (WebP/AVIF, <200KB, proper dimensions)       | -1-2s load time  |
+| 5         | Fix mobile tap targets (>=48x48px with >=8px spacing)            | +5-10% mobile CVR|
 
 ## Ad-Specific Landing Page Elements
 
@@ -154,13 +154,13 @@ Flag if any of the following are true:
 
 ## Landing Page Quality by Platform
 
-| Platform | Key Requirement | Notes |
-|----------|----------------|-------|
-| Google | QS component: landing page experience | Directly affects ad rank and CPC |
-| Meta | Page load speed critical | Slow pages = Meta penalizes delivery |
-| LinkedIn | Professional, B2B appropriate | Match LinkedIn's professional context |
-| TikTok | Mobile-first mandatory | 95%+ TikTok traffic is mobile |
-| Microsoft | Desktop-optimized matters more | Higher desktop % than other platforms |
+| Platform  | Key Requirement                      | Notes                                |
+|----------|-------------------------------------|-------------------------------------|
+| Google    | QS component: landing page experience| Directly affects ad rank and CPC     |
+| Meta      | Page load speed critical             | Slow pages = Meta penalizes delivery |
+| LinkedIn  | Professional, B2B appropriate        | Match LinkedIn's professional context|
+| TikTok    | Mobile-first mandatory               | 95%+ TikTok traffic is mobile        |
+| Microsoft | Desktop-optimized matters more       | Higher desktop % than other platforms|
 
 ## Output
 

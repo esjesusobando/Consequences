@@ -4,40 +4,40 @@
 
 ### Resumen
 
-| Métrica                                    | Esta Semana                           | Semana Anterior                           | Cambio                           |
+| Métrica                                     | Esta Semana                            | Semana Anterior                            | Cambio                            |
 |--------------------------------------------|---------------------------------------|-------------------------------------------|----------------------------------|
-| Clientes total                             |                                       |                                           |                                  |
-| Ingresos                                   |                                       |                                           |                                  |
-| Gastos                                     |                                       |                                           |                                  |
-| Ganancia                                   |                                       |                                           |                                  |
-| Ticket promedio                            |                                       |                                           |                                  |
-| Platillos vendidos                         |                                       |                                           |                                  |
+| Clientes total                              |                                        |                                            |                                   |
+| Ingresos                                    |                                        |                                            |                                   |
+| Gastos                                      |                                        |                                            |                                   |
+| Ganancia                                    |                                        |                                            |                                   |
+| Ticket promedio                             |                                        |                                            |                                   |
+| Platillos vendidos                          |                                        |                                            |                                   |
 
 ---
 
 ## Detalle por Día
 
-| Día                               | Clientes                           | Ingresos                           | Gastos                           | Ganancia                           |
+| Día                                | Clientes                            | Ingresos                            | Gastos                            | Ganancia                            |
 |-----------------------------------|------------------------------------|------------------------------------|----------------------------------|------------------------------------|
-| Lunes                             |                                    |                                    |                                  |                                    |
-| Martes                            |                                    |                                    |                                  |                                    |
-| Miércoles                         |                                    |                                    |                                  |                                    |
-| Jueves                            |                                    |                                    |                                  |                                    |
-| Viernes                           |                                    |                                    |                                  |                                    |
-| Sábado                            |                                    |                                    |                                  |                                    |
-| Domingo                           |                                    |                                    |                                  |                                    |
+| Lunes                              |                                     |                                     |                                   |                                     |
+| Martes                             |                                     |                                     |                                   |                                     |
+| Miércoles                          |                                     |                                     |                                   |                                     |
+| Jueves                             |                                     |                                     |                                   |                                     |
+| Viernes                            |                                     |                                     |                                   |                                     |
+| Sábado                             |                                     |                                     |                                   |                                     |
+| Domingo                            |                                     |                                     |                                   |                                     |
 
 ---
 
 ## Platillos Más Vendidos
 
-| #                           | Plato                           | Cantidad                           | Ingresos                           |
+| #                            | Plato                            | Cantidad                            | Ingresos                            |
 |-----------------------------|---------------------------------|------------------------------------|------------------------------------|
-| 1                           |                                 |                                    |                                    |
-| 2                           |                                 |                                    |                                    |
-| 3                           |                                 |                                    |                                    |
-| 4                           |                                 |                                    |                                    |
-| 5                           |                                 |                                    |                                    |
+| 1                            |                                  |                                     |                                     |
+| 2                            |                                  |                                     |                                     |
+| 3                            |                                  |                                     |                                     |
+| 4                            |                                  |                                     |                                     |
+| 5                            |                                  |                                     |                                     |
 
 ---
 

@@ -11,10 +11,10 @@ for use by `/ads create`, `/ads generate`, and `/ads photoshoot`.
 
 ## Quick Reference
 
-| Command | What it does |
-|---------|-------------|
-| `/ads dna <url>` | Full brand extraction → `brand-profile.json` |
-| `/ads dna https://acme.com --quick` | Fast extraction (homepage only) |
+| Command                            | What it does                                |
+|-----------------------------------|--------------------------------------------|
+| `/ads dna <url>`                   | Full brand extraction → `brand-profile.json`|
+| `/ads dna https://acme.com --quick`| Fast extraction (homepage only)             |
 
 ## Process
 
@@ -96,15 +96,15 @@ From the fetched HTML, extract:
 Analyze hero headline, subheadline, About page intro, and CTA button text.
 Score each axis 1-10 using these heuristics:
 
-| Signal | Score direction |
-|--------|----------------|
-| Uses "you/your" frequently | formal_casual → casual (+2) |
-| Uses technical jargon | expert_accessible → expert (-2) |
-| Short punchy sentences (≤8 words) | bold_subtle → bold (+2) |
-| Data/stats in hero | rational_emotional → rational (-2) |
-| "Transform", "revolutionize", "disrupt" | traditional_innovative → innovative (+2) |
-| Customer testimonials lead | rational_emotional → emotional (+2) |
-| Industry awards, "trusted by X" | traditional_innovative → traditional (-1) |
+| Signal                                 | Score direction                          |
+|---------------------------------------|-----------------------------------------|
+| Uses "you/your" frequently             | formal_casual → casual (+2)              |
+| Uses technical jargon                  | expert_accessible → expert (-2)          |
+| Short punchy sentences (≤8 words)      | bold_subtle → bold (+2)                  |
+| Data/stats in hero                     | rational_emotional → rational (-2)       |
+| "Transform", "revolutionize", "disrupt"| traditional_innovative → innovative (+2) |
+| Customer testimonials lead             | rational_emotional → emotional (+2)      |
+| Industry awards, "trusted by X"        | traditional_innovative → traditional (-1)|
 
 ### Confidence Scoring
 Each voice axis gets a confidence rating based on signal count:

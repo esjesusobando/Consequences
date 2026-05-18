@@ -78,10 +78,10 @@ Evaluate:
 
 ## Ad Format Benchmarks
 
-| Format | Key Metric |
-|--------|-----------|
-| Document Ads | 7.00% engagement rate |
-| Conversation Ads | 50-60% open rate |
+| Format          | Key Metric           |
+|----------------|---------------------|
+| Document Ads    | 7.00% engagement rate|
+| Conversation Ads| 50-60% open rate     |
 
 **Note:** EU Sponsored Messaging (InMail/Conversation Ads) discontinued since Jan 2022.
 
@@ -100,24 +100,24 @@ For B2B Enterprise accounts:
 
 ## LinkedIn Context
 
-| Setting | Value |
-|---------|-------|
-| Minimum audience size | 500 (for ads to run) |
-| Lead Gen Form CVR benchmark | 13% |
-| TLA CPC range | $2.29-$4.14 |
-| Standard SC CPC | $13.23 average |
-| Hierarchy rename | Oct 2025 (Campaign Group → Campaign → Ad) |
-| Predictive Audiences | Replaced Lookalikes Feb 2024 |
+| Setting                    | Value                                    |
+|---------------------------|-----------------------------------------|
+| Minimum audience size      | 500 (for ads to run)                     |
+| Lead Gen Form CVR benchmark| 13%                                      |
+| TLA CPC range              | $2.29-$4.14                              |
+| Standard SC CPC            | $13.23 average                           |
+| Hierarchy rename           | Oct 2025 (Campaign Group → Campaign → Ad)|
+| Predictive Audiences       | Replaced Lookalikes Feb 2024             |
 
 ## Key Thresholds
 
-| Metric | Pass | Warning | Fail |
-|--------|------|---------|------|
-| CTR (Sponsored Content) | ≥0.44% | 0.30-0.44% | <0.30% |
-| CPC (average) | ≤$7.00 | $7-10 | >$10.00 |
-| Lead Gen CVR | ≥10% | 5-10% | <5% |
-| Message frequency | ≤1/30 days | 1/15-30 days | >1/15 days |
-| TLA budget share | ≥30% | 15-30% | <15% |
+| Metric                 | Pass      | Warning     | Fail      |
+|-----------------------|----------|------------|----------|
+| CTR (Sponsored Content)| ≥0.44%    | 0.30-0.44%  | <0.30%    |
+| CPC (average)          | ≤$7.00    | $7-10       | >$10.00   |
+| Lead Gen CVR           | ≥10%      | 5-10%       | <5%       |
+| Message frequency      | ≤1/30 days| 1/15-30 days| >1/15 days|
+| TLA budget share       | ≥30%      | 15-30%      | <15%      |
 
 ## Output
 

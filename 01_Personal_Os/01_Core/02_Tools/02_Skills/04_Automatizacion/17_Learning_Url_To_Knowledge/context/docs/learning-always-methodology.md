@@ -39,15 +39,15 @@ Learning Always es un workflow que transforma cualquier URL en conocimiento estr
 **Proposito**: Extraer los prompts que aparecen en el contenido y crear versiones para cada perfil.
 
 **Perfiles**:
-| # | Perfil | Ubicacion |
-|---|--------|-----------|
-| 01 | Project Manager | `01_Personal_Os/.../02_Project_Manager/` |
-| 02 | Product Manager | `01_Personal_Os/.../03_Product_Manager/` |
+| #  | Perfil         | Ubicacion                               |
+|---|---------------|----------------------------------------|
+| 01 | Project Manager| `01_Personal_Os/.../02_Project_Manager/`|
+| 02 | Product Manager| `01_Personal_Os/.../03_Product_Manager/`|
 | 03 | Product Design | `01_Personal_Os/.../04_Product_Design/` |
-| 04 | Vibe Coding | `01_Personal_Os/.../05_Vibe_Coding/` |
-| 05 | Testing | `01_Personal_Os/.../06_Testing/` |
-| 06 | DevOps | `01_Personal_Os/.../07_DevOps/` |
-| 07 | Marketing | `01_Personal_Os/.../09_Marketing/` |
+| 04 | Vibe Coding    | `01_Personal_Os/.../05_Vibe_Coding/`    |
+| 05 | Testing        | `01_Personal_Os/.../06_Testing/`        |
+| 06 | DevOps         | `01_Personal_Os/.../07_DevOps/`         |
+| 07 | Marketing      | `01_Personal_Os/.../09_Marketing/`      |
 
 **Formato ES.md y EN.md**:
 ```markdown

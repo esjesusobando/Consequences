@@ -14,13 +14,13 @@ Lighthouse CI pipeline setup, Core Web Vitals optimization, and performance budg
 
 ## Core Web Vitals Targets (2026 SOTA)
 
-| Metric                                      | Target           | Good                    | Needs Work           | Poor            |
+| Metric                                       | Target            | Good                     | Needs Work            | Poor             |
 |---------------------------------------------|------------------|-------------------------|----------------------|-----------------|
-| **LCP** (Largest Contentful Paint)          | < 2.5s           | < 2.5s                  | 2.5s–4s              | > 4s            |
-| **INP** (Interaction to Next Paint)         | < 200ms          | < 200ms                 | 200ms–500ms          | > 500ms         |
-| **CLS** (Cumulative Layout Shift)           | < 0.1            | < 0.1                   | 0.1–0.25             | > 0.25          |
-| **TTFB** (Time to First Byte)               | < 200ms          | < 200ms                 | 200ms–600ms          | > 600ms         |
-| **FID** (First Input Delay)                 | < 100ms          | Deprecated 2024         | —                    | —               |
+| **LCP** (Largest Contentful Paint)           | < 2.5s            | < 2.5s                   | 2.5s–4s               | > 4s             |
+| **INP** (Interaction to Next Paint)          | < 200ms           | < 200ms                  | 200ms–500ms           | > 500ms          |
+| **CLS** (Cumulative Layout Shift)            | < 0.1             | < 0.1                    | 0.1–0.25              | > 0.25           |
+| **TTFB** (Time to First Byte)                | < 200ms           | < 200ms                  | 200ms–600ms           | > 600ms          |
+| **FID** (First Input Delay)                  | < 100ms           | Deprecated 2024          | —                     | —                |
 
 > **Note:** INP replaced FID as the official Core Web Vital in March 2024. FID is deprecated.
 
@@ -128,13 +128,13 @@ lighthouse:
 
 ## Commands
 
-| Command                       | Description                                        |
+| Command                        | Description                                         |
 |-------------------------------|----------------------------------------------------|
-| `lhci autorun`                | Run Lighthouse CI with budget assertions           |
-| `lhci healthcheck`            | Verify Lighthouse CI setup                         |
-| `lhci assert`                 | Run assertions against a Lighthouse report         |
-| `npm run lighthouse`          | Custom Lighthouse run script                       |
-| `npm run perf:report`         | Generate performance report                        |
+| `lhci autorun`                 | Run Lighthouse CI with budget assertions            |
+| `lhci healthcheck`             | Verify Lighthouse CI setup                          |
+| `lhci assert`                  | Run assertions against a Lighthouse report          |
+| `npm run lighthouse`           | Custom Lighthouse run script                        |
+| `npm run perf:report`          | Generate performance report                         |
 
 ## SOTA Standards 2026
 

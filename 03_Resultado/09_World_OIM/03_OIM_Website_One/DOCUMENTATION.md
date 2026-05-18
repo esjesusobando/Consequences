@@ -2,12 +2,12 @@
 
 ## Resumen Ejecutivo
 
-| Fecha                                                            | Estado                                                                 | Notas                                                                                           |
+| Fecha                                                             | Estado                                                                  | Notas                                                                                            |
 |------------------------------------------------------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| 2026-04-22                                                       | ✅ Build OK                                                             | Web funcionando en localhost:3000                                                               |
-| 2026-04-22                                                       | ❌ ChunkLoadError                                                       | Imágenes fallaron, revertimos cambios                                                           |
-| 2026-04-22                                                       | ✅ Restaurado                                                           | git checkout -- . para volver al original                                                       |
-| 2026-04-22                                                       | ✅ Taste Skills                                                         | Aplicado con fallback seguro a gradientes                                                       |
+| 2026-04-22                                                        | ✅ Build OK                                                              | Web funcionando en localhost:3000                                                                |
+| 2026-04-22                                                        | ❌ ChunkLoadError                                                        | Imágenes fallaron, revertimos cambios                                                            |
+| 2026-04-22                                                        | ✅ Restaurado                                                            | git checkout -- . para volver al original                                                        |
+| 2026-04-22                                                        | ✅ Taste Skills                                                          | Aplicado con fallback seguro a gradientes                                                        |
 
 ---
 

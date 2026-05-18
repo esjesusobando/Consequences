@@ -11,13 +11,13 @@ Dos reglas que definen el enfoque de Google:
 
 ## Herramientas GCP para CI/CD
 
-| Herramienta | Rol |
-|---|---|
-| **Cloud Build** | CI — compila, testea, construye imágenes Docker |
-| **Artifact Registry** | Almacena imágenes de contenedor |
-| **Cloud Deploy** | CD — despliegues progresivos a GKE/Cloud Run |
-| **Cloud Run / GKE** | Targets de despliegue |
-| **Cloud Monitoring** | Observabilidad post-release |
+| Herramienta          | Rol                                            |
+|---------------------|-----------------------------------------------|
+| **Cloud Build**      | CI — compila, testea, construye imágenes Docker|
+| **Artifact Registry**| Almacena imágenes de contenedor                |
+| **Cloud Deploy**     | CD — despliegues progresivos a GKE/Cloud Run   |
+| **Cloud Run / GKE**  | Targets de despliegue                          |
+| **Cloud Monitoring** | Observabilidad post-release                    |
 
 ---
 
@@ -111,12 +111,12 @@ CD:
 
 Métricas clave a monitorear los primeros 30 minutos:
 
-| Métrica | Umbral de alerta |
-|---|---|
-| Error rate HTTP 5xx | > 1% |
-| Latencia P99 | > 2x baseline |
-| CPU / Memoria | > 80% |
-| Tasa de éxito de jobs | < 95% |
+| Métrica              | Umbral de alerta|
+|---------------------|----------------|
+| Error rate HTTP 5xx  | > 1%            |
+| Latencia P99         | > 2x baseline   |
+| CPU / Memoria        | > 80%           |
+| Tasa de éxito de jobs| < 95%           |
 
 ---
 

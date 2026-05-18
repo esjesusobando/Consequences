@@ -23,12 +23,12 @@
 ```
 
 ### Commits de esta sesión (orden cronológico):
-| Commit                | Descripción                                                               |
+| Commit                 | Descripción                                                                |
 |-----------------------|---------------------------------------------------------------------------|
-| `b94043d`             | docs(os): actualizar paths v1.x → v2.0 en documentos activos              |
-| `fabffda`             | docs(os): limpiar refs v1.x residuales en documentos activos              |
-| `029341b`             | feat(os): SOTA hardening — FASE 1 P0 bugs + agent integration             |
-| `a1fa1e1`             | feat(os): SOTA hardening — FASE 2 P1 blindaje completo                    |
+| `b94043d`              | docs(os): actualizar paths v1.x → v2.0 en documentos activos               |
+| `fabffda`              | docs(os): limpiar refs v1.x residuales en documentos activos               |
+| `029341b`              | feat(os): SOTA hardening — FASE 1 P0 bugs + agent integration              |
+| `a1fa1e1`              | feat(os): SOTA hardening — FASE 2 P1 blindaje completo                     |
 
 ---
 
@@ -54,16 +54,16 @@ except ImportError:
 **Problema:** 7 agentes en `.agent/01_Agents/` backup sin equivalente en live.
 **Fix:** Integrados al sistema vivo con renumeración limpia:
 
-| Agente integrado                            | Destino                  | Número nuevo                                   |
+| Agente integrado                             | Destino                   | Número nuevo                                    |
 |---------------------------------------------|--------------------------|------------------------------------------------|
-| `Workflow_Orchestrator.md`                  | root                     | `10_Workflow_Orchestrator.md`                  |
-| `LFG_Autonomous_Engine.md`                  | root                     | `12_LFG_Autonomous_Engine.md`                  |
-| `Hillary.md`                                | root                     | `13_Hillary.md`                                |
-| `Content_Transformer.md`                    | `03_Growth/`             | `01_Content_Transformer.md`                    |
-| `Youtube_Script_Writer.md`                  | `03_Growth/`             | `02_Youtube_Script_Writer.md`                  |
-| `Youtube_Thumbnail_Prompter.md`             | `03_Growth/`             | `03_Youtube_Thumbnail_Prompter.md`             |
-| `Youtube_Title_Generator.md`                | `03_Growth/`             | `04_Youtube_Title_Generator.md`                |
-| `Carousel_Strategist.md`                    | `03_Growth/`             | `05_Carousel_Strategist.md`                    |
+| `Workflow_Orchestrator.md`                   | root                      | `10_Workflow_Orchestrator.md`                   |
+| `LFG_Autonomous_Engine.md`                   | root                      | `12_LFG_Autonomous_Engine.md`                   |
+| `Hillary.md`                                 | root                      | `13_Hillary.md`                                 |
+| `Content_Transformer.md`                     | `03_Growth/`              | `01_Content_Transformer.md`                     |
+| `Youtube_Script_Writer.md`                   | `03_Growth/`              | `02_Youtube_Script_Writer.md`                   |
+| `Youtube_Thumbnail_Prompter.md`              | `03_Growth/`              | `03_Youtube_Thumbnail_Prompter.md`              |
+| `Youtube_Title_Generator.md`                 | `03_Growth/`              | `04_Youtube_Title_Generator.md`                 |
+| `Carousel_Strategist.md`                     | `03_Growth/`              | `05_Carousel_Strategist.md`                     |
 
 Subcarpetas creadas: `03_Growth/`, `04_Contexto/`, `05_Marca/`, `06_Plantillas/` con LEEMEs.
 
@@ -87,15 +87,15 @@ Subcarpetas creadas: `03_Growth/`, `04_Contexto/`, `05_Marca/`, `06_Plantillas/`
 ### G1+G2 — Runtime Test Suite ✅
 **Archivo creado:** `02_Playground/01_OS_Runtime_Test.py`
 **20 tests de ejecución real:**
-| Tests               | Qué validan                                                                   |
+| Tests                | Qué validan                                                                    |
 |---------------------|-------------------------------------------------------------------------------|
-| R01-R14             | Sintaxis de todos los HUBs (compile, no subprocess)                           |
-| R15                 | `config_paths.py` resuelve PROJECT_ROOT correctamente                         |
-| R16                 | Validator standalone corre sin crash                                          |
-| R17                 | Auto-Improvement `--scan` ejecuta OK                                          |
-| R18                 | Agent sync: ZERO DRIFT entre live y backup                                    |
-| R19                 | Health test ejecuta y devuelve resultados parseable                           |
-| R20                 | Docs activos sin refs v1.x (`01_Core/03_Skills`, `03_Scripts_Os`)             |
+| R01-R14              | Sintaxis de todos los HUBs (compile, no subprocess)                            |
+| R15                  | `config_paths.py` resuelve PROJECT_ROOT correctamente                          |
+| R16                  | Validator standalone corre sin crash                                           |
+| R17                  | Auto-Improvement `--scan` ejecuta OK                                           |
+| R18                  | Agent sync: ZERO DRIFT entre live y backup                                     |
+| R19                  | Health test ejecuta y devuelve resultados parseable                            |
+| R20                  | Docs activos sin refs v1.x (`01_Core/03_Skills`, `03_Scripts_Os`)              |
 
 ### G5 — Health Metrics Hub ✅
 **Archivo creado:** `01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py`
@@ -266,14 +266,14 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py
 ```
 
 ### Archivos clave del blindaje
-| Archivo                                                                              | Rol                                    |
+| Archivo                                                                               | Rol                                     |
 |--------------------------------------------------------------------------------------|----------------------------------------|
-| `02_Playground/00_OS_Health_Test.py`                                                 | 15 tests estructurales                 |
-| `02_Playground/01_OS_Runtime_Test.py`                                                | 20 tests de ejecución                  |
-| `01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py`                | Dashboard histórico                    |
-| `01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py`                    | Sync live ↔ .agent                     |
-| `01_Personal_Os/01_Core/02_Tools/05_Hooks/01_Pre_Tool/secret_scanner.py`             | Scanner pre-commit                     |
-| `.git/hooks/pre-commit`                                                              | Hook: Secret Scanner → GGA             |
+| `02_Playground/00_OS_Health_Test.py`                                                  | 15 tests estructurales                  |
+| `02_Playground/01_OS_Runtime_Test.py`                                                 | 20 tests de ejecución                   |
+| `01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py`                 | Dashboard histórico                     |
+| `01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py`                     | Sync live ↔ .agent                      |
+| `01_Personal_Os/01_Core/02_Tools/05_Hooks/01_Pre_Tool/secret_scanner.py`              | Scanner pre-commit                      |
+| `.git/hooks/pre-commit`                                                               | Hook: Secret Scanner → GGA              |
 
 ### Comandos de validación rápida
 ```bash
@@ -296,26 +296,26 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA
 
 ## 📋 BACKLOG ORIGINAL (pre-SOTA, independiente del blindaje)
 
-| Ítem                                   | Prioridad               | Estado                | Detalle                                                     |
+| Ítem                                    | Prioridad                | Estado                 | Detalle                                                      |
 |----------------------------------------|-------------------------|-----------------------|-------------------------------------------------------------|
-| Elite Portfolio redesign               | P1                      | Pendiente             | Exaggerated Minimalism con taste-skill                      |
-| OIM Website Hostinger                  | P1                      | Bloqueado             | Espera: tipo hosting, dominio, acceso SSH                   |
-| `claude doctor`                        | P2                      | Pendiente             | Requiere TTY real — correr en terminal separada             |
-| Marvel Workflows verificar             | P3                      | Pendiente             | 8 archivos en `00_Workflows_Os/02_Marvel/`                  |
-| Avengers Plan decisión                 | P3                      | Pendiente             | Ejecutar / actualizar / archivar                            |
+| Elite Portfolio redesign                | P1                       | Pendiente              | Exaggerated Minimalism con taste-skill                       |
+| OIM Website Hostinger                   | P1                       | Bloqueado              | Espera: tipo hosting, dominio, acceso SSH                    |
+| `claude doctor`                         | P2                       | Pendiente              | Requiere TTY real — correr en terminal separada              |
+| Marvel Workflows verificar              | P3                       | Pendiente              | 8 archivos en `00_Workflows_Os/02_Marvel/`                   |
+| Avengers Plan decisión                  | P3                       | Pendiente              | Ejecutar / actualizar / archivar                             |
 
 ---
 
 ## 📈 MÉTRICAS OBJETIVO — ALCANZADAS
 
-| Métrica                               | Antes                   | Objetivo                    | Ahora                            |
+| Métrica                                | Antes                    | Objetivo                     | Ahora                             |
 |---------------------------------------|-------------------------|-----------------------------|----------------------------------|
-| Tests pasando                         | 15/15                   | **35/35**                   | ✅ 35/35                          |
-| Drift `.agent/` ↔ live                | 6+ archivos             | **0**                       | ✅ 0                              |
-| Refs v1.x en docs activos             | residuales              | **0**                       | ✅ 0                              |
-| Cobertura Pre-Commit                  | TS/JS only              | **+ secrets**               | ✅ Secrets bloqueados             |
-| Dashboard histórico                   | ninguno                 | **CSV + ASCII**             | ✅ Operativo                      |
-| Agentes integrados                    | faltaban 7              | **100% sync**               | ✅ 52/52                          |
+| Tests pasando                          | 15/15                    | **35/35**                    | ✅ 35/35                           |
+| Drift `.agent/` ↔ live                 | 6+ archivos              | **0**                        | ✅ 0                               |
+| Refs v1.x en docs activos              | residuales               | **0**                        | ✅ 0                               |
+| Cobertura Pre-Commit                   | TS/JS only               | **+ secrets**                | ✅ Secrets bloqueados              |
+| Dashboard histórico                    | ninguno                  | **CSV + ASCII**              | ✅ Operativo                       |
+| Agentes integrados                     | faltaban 7               | **100% sync**                | ✅ 52/52                           |
 
 ---
 

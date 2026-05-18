@@ -102,9 +102,9 @@ harness_pattern: [planner, generator, evaluator]
 - **Última validación:** [fecha]
 
 ## 🔄 Changelog
-| Versión                             | Fecha                                | Cambio                                     |
+| Versión                              | Fecha                                 | Cambio                                      |
 |-------------------------------------|--------------------------------------|--------------------------------------------|
-| 1.0.0                               | YYYY-MM-DD                           | Creación inicial                           |
+| 1.0.0                                | YYYY-MM-DD                            | Creación inicial                            |
 ```
 
 ## 🛠️ Integración con Skills Existentes

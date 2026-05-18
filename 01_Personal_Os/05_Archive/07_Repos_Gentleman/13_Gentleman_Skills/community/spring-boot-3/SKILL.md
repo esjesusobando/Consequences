@@ -140,11 +140,11 @@ public class PaymentService {
 
 ## Quick Reference
 
-| Task                                        | Pattern                                                       |
+| Task                                         | Pattern                                                        |
 |---------------------------------------------|---------------------------------------------------------------|
-| Inject dependencies                         | Constructor injection only                                    |
-| Read config                                 | @ConfigurationProperties + @Validated                         |
-| Transactions                                | @Transactional on services                                    |
+| Inject dependencies                          | Constructor injection only                                     |
+| Read config                                  | @ConfigurationProperties + @Validated                          |
+| Transactions                                 | @Transactional on services                                     |
 
 ## Resources
 

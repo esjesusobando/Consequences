@@ -10,21 +10,21 @@
 ## Scripts del Motor
 
 ### Ejecución Diaria
-| Script                                                        | Propósito                                                        | Ubicación                                                        |
+| Script                                                         | Propósito                                                         | Ubicación                                                         |
 |---------------------------------------------------------------|------------------------------------------------------------------|------------------------------------------------------------------|
-| `09_Backlog_Triage.py`                                        | Procesar backlog con dedup                                       | `04_Operations/03_Scripts_Os/`                                   |
-| `14_Morning_Standup.py`                                       | Daily standup                                                    | `04_Operations/03_Scripts_Os/`                                   |
-| `13_Validate_Stack.py`                                        | Validar herramientas                                             | `04_Operations/03_Scripts_Os/`                                   |
-| `08_Ritual_Cierre.py`                                         | Ritual de cierre                                                 | `04_Operations/03_Scripts_Os/`                                   |
+| `09_Backlog_Triage.py`                                         | Procesar backlog con dedup                                        | `04_Operations/03_Scripts_Os/`                                    |
+| `14_Morning_Standup.py`                                        | Daily standup                                                     | `04_Operations/03_Scripts_Os/`                                    |
+| `13_Validate_Stack.py`                                         | Validar herramientas                                              | `04_Operations/03_Scripts_Os/`                                    |
+| `08_Ritual_Cierre.py`                                          | Ritual de cierre                                                  | `04_Operations/03_Scripts_Os/`                                    |
 
 ### Mantenimiento del Sistema
-| Script                                                          | Propósito                                                   |
+| Script                                                           | Propósito                                                    |
 |-----------------------------------------------------------------|-------------------------------------------------------------|
-| `53_Structure_Auditor.py`                                       | Valida carpetas 00-07                                       |
-| `40_Validate_Rules.py`                                          | Valida reglas                                               |
-| `55_Avengers_Workflow.py`                                       | Review → Compound                                           |
-| `63_Audit_Sync_Master.py`                                       | Sincronización master                                       |
-| `79_System_Guardian.py`                                         | Validación completa                                         |
+| `53_Structure_Auditor.py`                                        | Valida carpetas 00-07                                        |
+| `40_Validate_Rules.py`                                           | Valida reglas                                                |
+| `55_Avengers_Workflow.py`                                        | Review → Compound                                            |
+| `63_Audit_Sync_Master.py`                                        | Sincronización master                                        |
+| `79_System_Guardian.py`                                          | Validación completa                                          |
 
 ---
 
@@ -36,11 +36,11 @@
 - **Archivo:** `03_Knowledge/08_Config_Mcp/mcp-tools/`
 
 ### Docs Analizadas
-| Doc                                                       | Ubicación                                                                                   | Propósito                                             |
+| Doc                                                        | Ubicación                                                                                    | Propósito                                              |
 |-----------------------------------------------------------|---------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| Stripe Minions                                            | `Revisar_Analizar/01_Analisis_Stripe_Minions.md`                                            | Patrones MCP                                          |
-| Gentleman Ecosystem                                       | `Revisar_Analizar/02_Gentleman_Ecosystem_Tutorial.md`                                       | Framework SDD                                         |
-| Firecrawl Guide                                           | `Revisar_Analizar/03_Firecrawl_Guide.md`                                                    | Web scraping IA                                       |
+| Stripe Minions                                             | `Revisar_Analizar/01_Analisis_Stripe_Minions.md`                                             | Patrones MCP                                           |
+| Gentleman Ecosystem                                        | `Revisar_Analizar/02_Gentleman_Ecosystem_Tutorial.md`                                        | Framework SDD                                          |
+| Firecrawl Guide                                            | `Revisar_Analizar/03_Firecrawl_Guide.md`                                                     | Web scraping IA                                        |
 
 ### Skills SDD
 - `sdd-init`, `sdd-explore`, `sdd-propose`, `sdd-spec`
@@ -72,21 +72,21 @@ Ideate → Brainstorm → Plan → Work → Review → Compound → Repeat
 ## Comandos Útiles
 
 ### Slash Commands
-| Comando                                              | Descripción                                                      |
+| Comando                                               | Descripción                                                       |
 |------------------------------------------------------|------------------------------------------------------------------|
-| `/gr`                                                | System Guardian (dry-run)                                        |
-| `/gr --apply`                                        | System Guardian + auto-fix                                       |
-| `/gr --agents`                                       | Solo 3 agentes de revisión                                       |
+| `/gr`                                                 | System Guardian (dry-run)                                         |
+| `/gr --apply`                                         | System Guardian + auto-fix                                        |
+| `/gr --agents`                                        | Solo 3 agentes de revisión                                        |
 
 ### Engram (Memoria)
-| Comando                                                     | Descripción                                                           |
+| Comando                                                      | Descripción                                                            |
 |-------------------------------------------------------------|-----------------------------------------------------------------------|
-| `mem_save`                                                  | Guardar decisión/descubrimiento                                       |
-| `mem_search`                                                | Buscar en memoria                                                     |
-| `mem_session_summary`                                       | Resumen de sesión                                                     |
+| `mem_save`                                                   | Guardar decisión/descubrimiento                                        |
+| `mem_search`                                                 | Buscar en memoria                                                      |
+| `mem_session_summary`                                        | Resumen de sesión                                                      |
 
 ### QMD (Búsqueda)
-| Comando                                                          | Descripción                                                 |
+| Comando                                                           | Descripción                                                  |
 |------------------------------------------------------------------|-------------------------------------------------------------|
-| `bun qmd.js query <query>`                                       | Búsqueda híbrida                                            |
-| `bun qmd.js status`                                              | Ver estado del índice                                       |
+| `bun qmd.js query <query>`                                        | Búsqueda híbrida                                             |
+| `bun qmd.js status`                                               | Ver estado del índice                                        |

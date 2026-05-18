@@ -191,13 +191,13 @@ return [{
 
 ### Comparison Table
 
-| Context                                                     | Syntax                                                      | Example                                                           |
+| Context                                                      | Syntax                                                       | Example                                                            |
 |-------------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------|
-| Set node                                                    | `{{ }}` expressions                                         | `{{ $json.name }}`                                                |
-| IF node                                                     | `{{ }}` expressions                                         | `{{ $json.age > 18 }}`                                            |
-| HTTP Request URL                                            | `{{ }}` expressions                                         | `{{ $json.userId }}`                                              |
-| **Code node**                                               | **JavaScript**                                              | `$json.name`                                                      |
-| **Code node strings**                                       | **Template literals**                                       | `` `Hello ${$json.name}` ``                                       |
+| Set node                                                     | `{{ }}` expressions                                          | `{{ $json.name }}`                                                 |
+| IF node                                                      | `{{ }}` expressions                                          | `{{ $json.age > 18 }}`                                             |
+| HTTP Request URL                                             | `{{ }}` expressions                                          | `{{ $json.userId }}`                                               |
+| **Code node**                                                | **JavaScript**                                               | `$json.name`                                                       |
+| **Code node strings**                                        | **Template literals**                                        | `` `Hello ${$json.name}` ``                                        |
 
 ### Quick Fix Guide
 
@@ -438,13 +438,13 @@ const path = "C:\\\\Users\\\\Documents\\\\file.txt";
 
 ### Escaping Guide
 
-| Character                                                                  | Escape As                                         | Example                                                        |
+| Character                                                                   | Escape As                                          | Example                                                         |
 |----------------------------------------------------------------------------|---------------------------------------------------|----------------------------------------------------------------|
-| Single quote in single-quoted string                                       | `\\'`                                             | `'It\\'s working'`                                             |
-| Double quote in double-quoted string                                       | `\\"`                                             | `"She said \\"hello\\""`                                       |
-| Backslash                                                                  | `\\\\`                                            | `"C:\\\\path"`                                                 |
-| Newline                                                                    | `\\n`                                             | `"Line 1\\nLine 2"`                                            |
-| Tab                                                                        | `\\t`                                             | `"Column1\\tColumn2"`                                          |
+| Single quote in single-quoted string                                        | `\\'`                                              | `'It\\'s working'`                                              |
+| Double quote in double-quoted string                                        | `\\"`                                              | `"She said \\"hello\\""`                                        |
+| Backslash                                                                   | `\\\\`                                             | `"C:\\\\path"`                                                  |
+| Newline                                                                     | `\\n`                                              | `"Line 1\\nLine 2"`                                             |
+| Tab                                                                         | `\\t`                                              | `"Column1\\tColumn2"`                                           |
 
 ### Best Practices
 
@@ -674,16 +674,16 @@ Use this checklist before deploying Code nodes:
 
 ## Quick Error Reference
 
-| Error Message                                                               | Likely Cause                                                            | Fix                                                                  |
+| Error Message                                                                | Likely Cause                                                             | Fix                                                                   |
 |-----------------------------------------------------------------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------|
-| "Code cannot be empty"                                                      | Empty code field                                                        | Add meaningful code                                                  |
-| "Code must return data"                                                     | Missing return statement                                                | Add `return [...]`                                                   |
-| "Return value must be an array"                                             | Returning object instead of array                                       | Wrap in `[...]`                                                      |
-| "Each item must have json property"                                         | Missing `json` wrapper                                                  | Use `{json: {...}}`                                                  |
-| "Unexpected token"                                                          | Expression syntax `{{ }}` in code                                       | Remove `{{ }}`, use JavaScript                                       |
-| "Cannot read property X of undefined"                                       | Missing null check                                                      | Use optional chaining `?.`                                           |
-| "Cannot read property X of null"                                            | Null value access                                                       | Add guard clause or default                                          |
-| "Unmatched expression brackets"                                             | Quote/bracket imbalance                                                 | Check string escaping                                                |
+| "Code cannot be empty"                                                       | Empty code field                                                         | Add meaningful code                                                   |
+| "Code must return data"                                                      | Missing return statement                                                 | Add `return [...]`                                                    |
+| "Return value must be an array"                                              | Returning object instead of array                                        | Wrap in `[...]`                                                       |
+| "Each item must have json property"                                          | Missing `json` wrapper                                                   | Use `{json: {...}}`                                                   |
+| "Unexpected token"                                                           | Expression syntax `{{ }}` in code                                        | Remove `{{ }}`, use JavaScript                                        |
+| "Cannot read property X of undefined"                                        | Missing null check                                                       | Use optional chaining `?.`                                            |
+| "Cannot read property X of null"                                             | Null value access                                                        | Add guard clause or default                                           |
+| "Unmatched expression brackets"                                              | Quote/bracket imbalance                                                  | Check string escaping                                                 |
 
 ---
 

@@ -24,13 +24,13 @@ Producto: Sistema operativo personal potenciado con IA
 
 ### Quick Audit Results (Simulado)
 
-| Categoría | Score | Finding |
-|-----------|-------|---------|
-| Bing/Microsoft Setup | 100/100 | Excellent account structure con audience sync |
-| Copilot Integration | 100/100 | Full integration con smart campaigns with Copilot |
-| Google Import | 100/100 | Clean import process con negative keyword harmonization |
-| Audience Targeting | 100/100 | Good in-market audiences con brand search isolation |
-| Bidding Strategy | 100/100 | Enhanced CPC configured con tCPA optimization |
+| Categoría           | Score  | Finding                                                |
+|--------------------|-------|-------------------------------------------------------|
+| Bing/Microsoft Setup| 100/100| Excellent account structure con audience sync          |
+| Copilot Integration | 100/100| Full integration con smart campaigns with Copilot      |
+| Google Import       | 100/100| Clean import process con negative keyword harmonization|
+| Audience Targeting  | 100/100| Good in-market audiences con brand search isolation    |
+| Bidding Strategy    | 100/100| Enhanced CPC configured con tCPA optimization          |
 
 **ads-microsoft Health Score**: 100/100 (Grade: A+ / Excellent)
 

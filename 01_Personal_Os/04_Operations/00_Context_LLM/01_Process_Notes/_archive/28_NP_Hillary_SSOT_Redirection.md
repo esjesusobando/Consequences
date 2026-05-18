@@ -10,13 +10,13 @@ Se ha ejecutado una refactorización masiva de las instrucciones (`SKILL.md`) de
 
 ### 📂 Mapeo de Destinos Finales
 
-| Módulo                                       | Ruta Original (Lab)                                   | Nueva Ruta (Producción)                                            |
+| Módulo                                        | Ruta Original (Lab)                                    | Nueva Ruta (Producción)                                             |
 |----------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------------|
-| 01 Quick Capture                             | `01_Quick_Capture/inbox/`                             | `03_Tasks/02_Hillary_Inbox/`                                       |
-| 02 Plan My Day                               | `02_Plan_My_Day/output/`                              | `03_Tasks/Daily_Routine.md`                                        |
-| 03 Daily Notes                               | `03_Daily_Notes/logs/`                                | `03_Tasks/Daily_Activity_Log.md`                                   |
-| 04 Recording Mode                            | `02_Knowledge/transcripts/`                           | `03_Tasks/02_Hillary_Inbox/Transcripts/`                           |
-| 05 Returns Tracker                           | Analizaba localmente                                  | Analiza `03_Tasks/` (Cross-check)                                  |
+| 01 Quick Capture                              | `01_Quick_Capture/inbox/`                              | `03_Tasks/02_Hillary_Inbox/`                                        |
+| 02 Plan My Day                                | `02_Plan_My_Day/output/`                               | `03_Tasks/Daily_Routine.md`                                         |
+| 03 Daily Notes                                | `03_Daily_Notes/logs/`                                 | `03_Tasks/Daily_Activity_Log.md`                                    |
+| 04 Recording Mode                             | `02_Knowledge/transcripts/`                            | `03_Tasks/02_Hillary_Inbox/Transcripts/`                            |
+| 05 Returns Tracker                            | Analizaba localmente                                   | Analiza `03_Tasks/` (Cross-check)                                   |
 
 ## 🛡️ Política de Preservación "No-Delete"
 

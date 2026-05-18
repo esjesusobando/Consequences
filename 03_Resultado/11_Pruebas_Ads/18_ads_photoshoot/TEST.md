@@ -24,13 +24,13 @@ Producto: Sistema operativo personal potenciado con IA
 
 ### Quick Audit Results (Simulado)
 
-| Categoría | Score | Finding |
-|-----------|-------|---------|
-| Studio Style | 100/100 | Excellent, professional, good for tech aesthetic |
-| Floating Style | 100/100 | Creative, good for lifestyle segments |
-| Ingredient Style | 100/100 | Excellent feature highlight con context integration |
-| In Use Style | 100/100 | Strong context con user diversity representation |
-| Lifestyle Style | 100/100 | Excellent aspirational con authentic representation |
+| Categoría       | Score  | Finding                                            |
+|----------------|-------|---------------------------------------------------|
+| Studio Style    | 100/100| Excellent, professional, good for tech aesthetic   |
+| Floating Style  | 100/100| Creative, good for lifestyle segments              |
+| Ingredient Style| 100/100| Excellent feature highlight con context integration|
+| In Use Style    | 100/100| Strong context con user diversity representation   |
+| Lifestyle Style | 100/100| Excellent aspirational con authentic representation|
 
 **ads-photoshoot Health Score**: 100/100 (Grade: A+ / Excellent)
 

@@ -49,13 +49,13 @@ Do **not** reduce the review to pass/fail. Classify findings using:
 
 Evaluate commands by **command type** — different types have different priority principles:
 
-| Command type                                    | Most important principles                                                                |
+| Command type                                     | Most important principles                                                                 |
 |-------------------------------------------------|------------------------------------------------------------------------------------------|
-| Read/query                                      | Structured output, bounded output, composability                                         |
-| Mutating                                        | Non-interactive, actionable errors, safety, idempotence                                  |
-| Streaming/logging                               | Filtering, truncation controls, clean stderr/stdout                                      |
-| Interactive/bootstrap                           | Automation escape hatch, `--no-input`, scriptable alternatives                           |
-| Bulk/export                                     | Pagination, range selection, machine-readable output                                     |
+| Read/query                                       | Structured output, bounded output, composability                                          |
+| Mutating                                         | Non-interactive, actionable errors, safety, idempotence                                   |
+| Streaming/logging                                | Filtering, truncation controls, clean stderr/stdout                                       |
+| Interactive/bootstrap                            | Automation escape hatch, `--no-input`, scriptable alternatives                            |
+| Bulk/export                                      | Pagination, range selection, machine-readable output                                      |
 
 ## Step 1: Locate the CLI and Identify the Framework
 
@@ -262,15 +262,15 @@ Treat fixed thresholds as heuristics, not laws. A default above roughly 500 line
 
 ### Scorecard
 
-| #                             | Principle                                                      | Severity                                                     | Key Finding                                  |
+| #                              | Principle                                                       | Severity                                                      | Key Finding                                   |
 |-------------------------------|----------------------------------------------------------------|--------------------------------------------------------------|----------------------------------------------|
-| 1                             | Non-interactive automation paths                               | Blocker/Friction/Optimization/None                           | <one-line summary>                           |
-| 2                             | Structured output                                              | Blocker/Friction/Optimization/None                           | <one-line summary>                           |
-| 3                             | Progressive help discovery                                     | Blocker/Friction/Optimization/None                           | <one-line summary>                           |
-| 4                             | Actionable errors                                              | Blocker/Friction/Optimization/None                           | <one-line summary>                           |
-| 5                             | Safe retries and mutation boundaries                           | Blocker/Friction/Optimization/None                           | <one-line summary>                           |
-| 6                             | Composable command structure                                   | Blocker/Friction/Optimization/None                           | <one-line summary>                           |
-| 7                             | Bounded responses                                              | Blocker/Friction/Optimization/None                           | <one-line summary>                           |
+| 1                              | Non-interactive automation paths                                | Blocker/Friction/Optimization/None                            | <one-line summary>                            |
+| 2                              | Structured output                                               | Blocker/Friction/Optimization/None                            | <one-line summary>                            |
+| 3                              | Progressive help discovery                                      | Blocker/Friction/Optimization/None                            | <one-line summary>                            |
+| 4                              | Actionable errors                                               | Blocker/Friction/Optimization/None                            | <one-line summary>                            |
+| 5                              | Safe retries and mutation boundaries                            | Blocker/Friction/Optimization/None                            | <one-line summary>                            |
+| 6                              | Composable command structure                                    | Blocker/Friction/Optimization/None                            | <one-line summary>                            |
+| 7                              | Bounded responses                                               | Blocker/Friction/Optimization/None                            | <one-line summary>                            |
 
 ### Detailed Findings
 

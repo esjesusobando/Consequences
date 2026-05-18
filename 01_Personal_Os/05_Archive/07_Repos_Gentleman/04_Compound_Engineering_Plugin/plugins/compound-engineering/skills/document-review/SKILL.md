@@ -85,13 +85,13 @@ Add activated conditional personas:
 
 Dispatch all agents in **parallel** using the platform's task/agent tool (e.g., Agent tool in Claude Code, spawn in Codex). Each agent receives the prompt built from the subagent template included below with these variables filled:
 
-| Variable                                       | Value                                                                          |
+| Variable                                        | Value                                                                           |
 |------------------------------------------------|--------------------------------------------------------------------------------|
-| `{persona_file}`                               | Full content of the agent's markdown file                                      |
-| `{schema}`                                     | Content of the findings schema included below                                  |
-| `{document_type}`                              | "requirements" or "plan" from Phase 1 classification                           |
-| `{document_path}`                              | Path to the document                                                           |
-| `{document_content}`                           | Full text of the document                                                      |
+| `{persona_file}`                                | Full content of the agent's markdown file                                       |
+| `{schema}`                                      | Content of the findings schema included below                                   |
+| `{document_type}`                               | "requirements" or "plan" from Phase 1 classification                            |
+| `{document_path}`                               | Path to the document                                                            |
+| `{document_content}`                            | Full text of the document                                                       |
 
 Pass each agent the **full document** -- do not split into sections.
 
@@ -143,11 +143,11 @@ Specific conflict patterns:
 
 ### 3.6 Route by Autofix Class
 
-| Autofix Class                             | Route                                                                                                                                                                                                         |
+| Autofix Class                              | Route                                                                                                                                                                                                          |
 |-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `auto`                                    | Apply automatically -- local deterministic fix (terminology, formatting, cross-references, completeness corrections where the correct value is verifiable from the document itself)                           |
-| `batch_confirm`                           | Group for single batch approval -- obvious fixes that touch meaning but have one clear correct answer                                                                                                         |
-| `present`                                 | Present individually for user judgment                                                                                                                                                                        |
+| `auto`                                     | Apply automatically -- local deterministic fix (terminology, formatting, cross-references, completeness corrections where the correct value is verifiable from the document itself)                            |
+| `batch_confirm`                            | Group for single batch approval -- obvious fixes that touch meaning but have one clear correct answer                                                                                                          |
+| `present`                                  | Present individually for user judgment                                                                                                                                                                         |
 
 Demote any `auto` finding that lacks a `suggested_fix` to `batch_confirm`. Demote any `batch_confirm` finding that lacks a `suggested_fix` to `present`.
 

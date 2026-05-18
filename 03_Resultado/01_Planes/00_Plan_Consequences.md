@@ -10,30 +10,30 @@
 
 ## 📈 Estado de Ejecución (live)
 
-| Fase                                        | Estado               | Notas                                                                                                                                                       |
+| Fase                                         | Estado                | Notas                                                                                                                                                        |
 |---------------------------------------------|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **FASE 0** — Snapshot                       | ✅ DONE               | Tag `v2.1-pre-consequences-3.0` + 7 SPOFs en `06_Snapshots/2026-04-25_pre_consequences_3.0/` + bonus: detector.py optimizado (1m51s → 1.5s)                 |
-| **FASE 1** — Ground Truth                   | ✅ DONE               | `16_System_Mapper_Hub.py` creado. 7 manifests + README generados en `02_Agent_Teams_Lite/00_Manifest/`. Validación referencial OK. **9s scan.**             |
-| **FASE 2** — Sync                           | ✅ DONE               | MCP DRIFT: 33 Claude / 18 OpenCode (16 faltantes). Agent Mirror: 52/52 sincronizados. Legacy refs: 559 detectadas.                                          |
-| **FASE 3** — Discovery                      | ✅ DONE               | `OS_DIRECTORY.md` creado en raíz (<2KB).                                                                                                                    |
-| **FASE 3.5** — Forked Subagents             | ✅ DONE               | Protocolo documentado en `09_Agent_Teams_Protocol.mdc`.                                                                                                     |
-| **FASE 4** — Empowerment                    | ✅ DONE               | Agent Skill Matrix en `.atl/agent-skill-matrix.yaml`. 43+ agentes categorizados.                                                                            |
-| **FASE 5** — Ecosystem                      | ✅ DONE               | READMEs de Compound, Dream Team, Specialists. Workflow graph.                                                                                               |
-| **FASE 6** — Blindaje                       | ✅ DONE               | Watchdog (17), Frontmatter validator (18).                                                                                                                  |
-| **FASE 7** — SOTA                           | ✅ DONE               | Telemetría collector (18_Telemetry).                                                                                                                        |
+| **FASE 0** — Snapshot                        | ✅ DONE                | Tag `v2.1-pre-consequences-3.0` + 7 SPOFs en `06_Snapshots/2026-04-25_pre_consequences_3.0/` + bonus: detector.py optimizado (1m51s → 1.5s)                  |
+| **FASE 1** — Ground Truth                    | ✅ DONE                | `16_System_Mapper_Hub.py` creado. 7 manifests + README generados en `02_Agent_Teams_Lite/00_Manifest/`. Validación referencial OK. **9s scan.**              |
+| **FASE 2** — Sync                            | ✅ DONE                | MCP DRIFT: 33 Claude / 18 OpenCode (16 faltantes). Agent Mirror: 52/52 sincronizados. Legacy refs: 559 detectadas.                                           |
+| **FASE 3** — Discovery                       | ✅ DONE                | `OS_DIRECTORY.md` creado en raíz (<2KB).                                                                                                                     |
+| **FASE 3.5** — Forked Subagents              | ✅ DONE                | Protocolo documentado en `09_Agent_Teams_Protocol.mdc`.                                                                                                      |
+| **FASE 4** — Empowerment                     | ✅ DONE                | Agent Skill Matrix en `.atl/agent-skill-matrix.yaml`. 43+ agentes categorizados.                                                                             |
+| **FASE 5** — Ecosystem                       | ✅ DONE                | READMEs de Compound, Dream Team, Specialists. Workflow graph.                                                                                                |
+| **FASE 6** — Blindaje                        | ✅ DONE                | Watchdog (17), Frontmatter validator (18).                                                                                                                   |
+| **FASE 7** — SOTA                            | ✅ DONE                | Telemetría collector (18_Telemetry).                                                                                                                         |
 
 ### Hallazgos del manifest (verificados con scan real)
 
-| Componente                   | Antes (estimado)             | Ground Truth (manifest)                                   |
+| Componente                    | Antes (estimado)              | Ground Truth (manifest)                                    |
 |------------------------------|------------------------------|-----------------------------------------------------------|
-| MCPs Claude Code             | 33                           | **33** ✅                                                  |
-| MCPs OpenCode                | 18                           | **18** ⚠️ DRIFT 16 faltantes                              |
-| Skills                       | 298                          | **297** (-1 por ajuste de SKILL.md naming)                |
-| Agentes (source)             | 52                           | **52** ✅                                                  |
-| Agentes (backup)             | 52                           | **52** ✅ (en sync)                                        |
-| HUBs                         | 14                           | **15** (incluye nuevo `16_System_Mapper_Hub`)             |
-| Workflows                    | 28                           | **27** en 5 categorías                                    |
-| Hooks                        | 10                           | **10** en 6 fases ✅                                       |
+| MCPs Claude Code              | 33                            | **33** ✅                                                   |
+| MCPs OpenCode                 | 18                            | **18** ⚠️ DRIFT 16 faltantes                               |
+| Skills                        | 298                           | **297** (-1 por ajuste de SKILL.md naming)                 |
+| Agentes (source)              | 52                            | **52** ✅                                                   |
+| Agentes (backup)              | 52                            | **52** ✅ (en sync)                                         |
+| HUBs                          | 14                            | **15** (incluye nuevo `16_System_Mapper_Hub`)              |
+| Workflows                     | 28                            | **27** en 5 categorías                                     |
+| Hooks                         | 10                            | **10** en 6 fases ✅                                        |
 
 ---
 
@@ -52,11 +52,11 @@ Convertir PersonalOS en un **JARVIS** — un sistema operativo donde:
 
 ## ⚡ Modernización v3.0 — Path Fixes Applied (2026-04-25)
 
-| Path Obsoleto                                        | Nuevo Path                                                | Estado                                   |
+| Path Obsoleto                                         | Nuevo Path                                                 | Estado                                    |
 |------------------------------------------------------|-----------------------------------------------------------|------------------------------------------|
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/`         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`              | ✅ CORREGIDO                              |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/`         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`              | ⚠️ Documentación actualizada             |
-| `03_Scripts_Os/`                                     | `01_Personal_Os/04_Operations/03_Scripts_Os/`             | ✅ CORREGIDO en plugin.json               |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/`          | `01_Personal_Os/01_Core/02_Tools/02_Skills/`               | ✅ CORREGIDO                               |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/`          | `01_Personal_Os/01_Core/02_Tools/02_Skills/`               | ⚠️ Documentación actualizada              |
+| `03_Scripts_Os/`                                      | `01_Personal_Os/04_Operations/03_Scripts_Os/`              | ✅ CORREGIDO en plugin.json                |
 
 ### Archivos Actualizados
 - `.claude-plugin/plugin.json` — Struktura + HUBs + paths ✅
@@ -70,34 +70,34 @@ Convertir PersonalOS en un **JARVIS** — un sistema operativo donde:
 
 ### Inventario real (verificado por audit)
 
-| Componente                        | Total                              | Conexión                        | Edge Case                                  |
+| Componente                         | Total                               | Conexión                         | Edge Case                                   |
 |-----------------------------------|------------------------------------|---------------------------------|--------------------------------------------|
-| **MCPs Claude Code**              | 33                                 | ✅                               | —                                          |
-| **MCPs OpenCode**                 | 18                                 | ⚠️                              | DRIFT: 16 MCPs faltantes                   |
-| **Skills (SKILL.md)**             | 298                                | 64% conocen MCPs                | ~13% sin frontmatter                       |
-| **Agentes**                       | 52 + 52 mirror                     | **2% conocen HUBs**             | Drift `.agent` ↔ core                      |
-| **HUBs**                          | 14                                 | ✅                               | Solo 1/52 agentes los conocen              |
-| **Workflows**                     | 28                                 | ❓                               | No referenciados desde agentes             |
-| **Hooks**                         | 10 (6 fases)                       | ✅                               | OK                                         |
-| **Rules**                         | 10                                 | ✅                               | OK                                         |
-| **Integrations**                  | 2 (Fireflies, Granola)             | ❌                               | Sin auto-discovery                         |
+| **MCPs Claude Code**               | 33                                  | ✅                                | —                                           |
+| **MCPs OpenCode**                  | 18                                  | ⚠️                               | DRIFT: 16 MCPs faltantes                    |
+| **Skills (SKILL.md)**              | 298                                 | 64% conocen MCPs                 | ~13% sin frontmatter                        |
+| **Agentes**                        | 52 + 52 mirror                      | **2% conocen HUBs**              | Drift `.agent` ↔ core                       |
+| **HUBs**                           | 14                                  | ✅                                | Solo 1/52 agentes los conocen               |
+| **Workflows**                      | 28                                  | ❓                                | No referenciados desde agentes              |
+| **Hooks**                          | 10 (6 fases)                        | ✅                                | OK                                          |
+| **Rules**                          | 10                                  | ✅                                | OK                                          |
+| **Integrations**                   | 2 (Fireflies, Granola)              | ❌                                | Sin auto-discovery                          |
 
 ### Distribución de skills por área
 
-| Área                                | Skills               | Notas                                     |
+| Área                                 | Skills                | Notas                                      |
 |-------------------------------------|----------------------|-------------------------------------------|
-| 00_Compound_Engineering             | **63**               | Sobre-poblada (21% del total)             |
-| 06_Tools                            | 77                   | OK                                        |
-| 01_Creacion_Contenidos              | 38                   | OK                                        |
-| 05_Workflows                        | 33                   | OK                                        |
-| 07_Personal_Os                      | 29                   | OK                                        |
-| 02_Diseno_Ui_Ux                     | 19                   | OK                                        |
-| 04_Automatizacion                   | 16                   | OK                                        |
-| 08_Invictus_Web                     | 14                   | OK                                        |
-| 03_Video_Media                      | 6                    | Pequeña                                   |
-| 00_Personal_Os_Stack                | 1                    | Mínima                                    |
-| 00_Skill_Auditor                    | 1                    | OK                                        |
-| 09_Legacy_Archive                   | 1                    | Histórico                                 |
+| 00_Compound_Engineering              | **63**                | Sobre-poblada (21% del total)              |
+| 06_Tools                             | 77                    | OK                                         |
+| 01_Creacion_Contenidos               | 38                    | OK                                         |
+| 05_Workflows                         | 33                    | OK                                         |
+| 07_Personal_Os                       | 29                    | OK                                         |
+| 02_Diseno_Ui_Ux                      | 19                    | OK                                         |
+| 04_Automatizacion                    | 16                    | OK                                         |
+| 08_Invictus_Web                      | 14                    | OK                                         |
+| 03_Video_Media                       | 6                     | Pequeña                                    |
+| 00_Personal_Os_Stack                 | 1                     | Mínima                                     |
+| 00_Skill_Auditor                     | 1                     | OK                                         |
+| 09_Legacy_Archive                    | 1                     | Histórico                                  |
 
 ### 🔴 Hallazgos críticos
 
@@ -276,11 +276,11 @@ python 15_MCP_Sync_Hub.py --validate                      # verifica sincronía
 
 #### Clasificación previa
 
-| Grupo                                 | Archivos                                                 | Acción                                                           |
+| Grupo                                  | Archivos                                                  | Acción                                                            |
 |---------------------------------------|----------------------------------------------------------|------------------------------------------------------------------|
-| **Activos críticos**                  | CLAUDE.md, README.md, AGENTS.md, *.mdc rules             | Fix manual con verificación                                      |
-| **Backups intencionales**             | `05_Archive/`                                            | Dejar como está (es histórico)                                   |
-| **Skills/Agentes**                    | resto                                                    | Script `--dry-run` primero, luego `--apply` por área             |
+| **Activos críticos**                   | CLAUDE.md, README.md, AGENTS.md, *.mdc rules              | Fix manual con verificación                                       |
+| **Backups intencionales**              | `05_Archive/`                                             | Dejar como está (es histórico)                                    |
+| **Skills/Agentes**                     | resto                                                     | Script `--dry-run` primero, luego `--apply` por área              |
 
 #### Tareas
 
@@ -378,13 +378,13 @@ Subagentes que **heredan el contexto completo del padre** (system prompt, tools,
 
 ### ¿Por qué encaja perfecto en PersonalOS?
 
-| Componente                                   | Beneficio del fork                                                                                 |
+| Componente                                    | Beneficio del fork                                                                                  |
 |----------------------------------------------|----------------------------------------------------------------------------------------------------|
-| **Avengers (Spider/Hulk/Thor)**              | Trabajan en bifurcaciones del mismo problema sin re-explicar contexto                              |
-| **Compound Engineering**                     | El patrón Plan→Work→Review puede tener N forks en Work explorando soluciones distintas             |
-| **Super Campeones (Dream Team)**             | El Director bifurca a los jugadores con todo el partido cargado                                    |
-| **4 Fantásticos / Octopus**                  | Multi-perspectiva paralela sobre el mismo target                                                   |
-| **Token economy**                            | 90% menos input en multi-agent = ahorro masivo                                                     |
+| **Avengers (Spider/Hulk/Thor)**               | Trabajan en bifurcaciones del mismo problema sin re-explicar contexto                               |
+| **Compound Engineering**                      | El patrón Plan→Work→Review puede tener N forks en Work explorando soluciones distintas              |
+| **Super Campeones (Dream Team)**              | El Director bifurca a los jugadores con todo el partido cargado                                     |
+| **4 Fantásticos / Octopus**                   | Multi-perspectiva paralela sobre el mismo target                                                    |
+| **Token economy**                             | 90% menos input en multi-agent = ahorro masivo                                                      |
 
 ### Tareas
 
@@ -485,16 +485,16 @@ context_load: .atl/agent-skill-matrix.yaml#spider_avenger
 
 ### Mapeo de ecosistemas
 
-| Ecosistema                                    | Ubicación actual                                            | Acción                                             |
+| Ecosistema                                     | Ubicación actual                                             | Acción                                              |
 |-----------------------------------------------|-------------------------------------------------------------|----------------------------------------------------|
-| **Personal OS Core**                          | `00_Winter_is_Coming/AGENTS.md`                             | ✅ Centro — confirmar                               |
-| **Gentleman GGA**                             | `.agent/05_GGA/`                                            | Documentar en OS_DIRECTORY                         |
-| **Compound Engineering**                      | `02_Skills/00_Compound_Engineering/` (63)                   | Consolidar índice + auditar duplicados             |
-| **Hillary**                                   | `02_Skills/07_Personal_Os/Hillary*`                         | Workflow registrado                                |
-| **Avengers (Spider, Hulk, etc.)**             | `02_Skills/00_Compound_Engineering/01_Pillars/`             | Catalogar agentes                                  |
-| **Super Campeones (Dream Team)**              | `02_Skills/05_Workflows/`                                   | Definir explícitamente                             |
-| **4 Fantásticos**                             | ⚠️ TBD                                                      | **INVESTIGAR antes de FASE 5**                     |
-| **Octopus**                                   | ⚠️ TBD                                                      | **INVESTIGAR antes de FASE 5**                     |
+| **Personal OS Core**                           | `00_Winter_is_Coming/AGENTS.md`                              | ✅ Centro — confirmar                                |
+| **Gentleman GGA**                              | `.agent/05_GGA/`                                             | Documentar en OS_DIRECTORY                          |
+| **Compound Engineering**                       | `02_Skills/00_Compound_Engineering/` (63)                    | Consolidar índice + auditar duplicados              |
+| **Hillary**                                    | `02_Skills/07_Personal_Os/Hillary*`                          | Workflow registrado                                 |
+| **Avengers (Spider, Hulk, etc.)**              | `02_Skills/00_Compound_Engineering/01_Pillars/`              | Catalogar agentes                                   |
+| **Super Campeones (Dream Team)**               | `02_Skills/05_Workflows/`                                    | Definir explícitamente                              |
+| **4 Fantásticos**                              | ⚠️ TBD                                                       | **INVESTIGAR antes de FASE 5**                      |
+| **Octopus**                                    | ⚠️ TBD                                                       | **INVESTIGAR antes de FASE 5**                      |
 
 ### Tareas
 
@@ -631,67 +631,67 @@ Mejora del trigger system en CLAUDE.md:
 
 ## ⚠️ Edge Cases Globales
 
-| #               | Edge Case                                                 | Mitigación                                                    |
+| #                | Edge Case                                                  | Mitigación                                                     |
 |-----------------|-----------------------------------------------------------|---------------------------------------------------------------|
-| 1               | `config_paths.py` se rompe → 207 scripts caen             | FASE 6.1 backup automático antes de editar                    |
-| 2               | Bulk replace v1.x rompe docs históricas                   | FASE 2.3 marcar `<!-- LEGACY-OK -->`                          |
-| 3               | Agent matrix incompleta → agente sin tools                | FASE 4.2 fallback "general access" con warning                |
-| 4               | MCP sync conflicts → MCPs solo Claude                     | Marcar `claude_only: true` en registry                        |
-| 5               | `.agent` y `core` divergen → cuál es source?              | FASE 2.2 investigación previa antes de actuar                 |
-| 6               | 298 skills × 52 agentes = 15K combinaciones               | FASE 4.1 matrix manual (selectiva, no exhaustiva)             |
-| 7               | Discovery layer satura contexto                           | FASE 3.1 OS_DIRECTORY <2KB                                    |
-| 8               | Tests rompen tras cambios                                 | Cada fase corre tests, baseline 35/35 obligatorio             |
-| 9               | "4 Fantásticos"/"Octopus" no existen                      | Pre-FASE 5 investigación + propuesta al usuario               |
-| 10              | Watchdog corre durante commit                             | FASE 6.2 lock/exclusion durante git ops                       |
+| 1                | `config_paths.py` se rompe → 207 scripts caen              | FASE 6.1 backup automático antes de editar                     |
+| 2                | Bulk replace v1.x rompe docs históricas                    | FASE 2.3 marcar `<!-- LEGACY-OK -->`                           |
+| 3                | Agent matrix incompleta → agente sin tools                 | FASE 4.2 fallback "general access" con warning                 |
+| 4                | MCP sync conflicts → MCPs solo Claude                      | Marcar `claude_only: true` en registry                         |
+| 5                | `.agent` y `core` divergen → cuál es source?               | FASE 2.2 investigación previa antes de actuar                  |
+| 6                | 298 skills × 52 agentes = 15K combinaciones                | FASE 4.1 matrix manual (selectiva, no exhaustiva)              |
+| 7                | Discovery layer satura contexto                            | FASE 3.1 OS_DIRECTORY <2KB                                     |
+| 8                | Tests rompen tras cambios                                  | Cada fase corre tests, baseline 35/35 obligatorio              |
+| 9                | "4 Fantásticos"/"Octopus" no existen                       | Pre-FASE 5 investigación + propuesta al usuario                |
+| 10               | Watchdog corre durante commit                              | FASE 6.2 lock/exclusion durante git ops                        |
 
 ---
 
 ## 📊 Impacto Esperado
 
-| Métrica                              | Antes (v2.1)             | Después (v3.0)                                |
+| Métrica                               | Antes (v2.1)              | Después (v3.0)                                 |
 |--------------------------------------|--------------------------|-----------------------------------------------|
-| Agentes que conocen HUBs             | 1/52 (2%)                | 52/52 (100%)                                  |
-| MCP sync Claude↔OpenCode             | 18/33 (54%)              | 33/33 (100%)                                  |
-| Refs v1.x rastreros                  | 487                      | <50 (solo legacy intencional)                 |
-| Skills sin frontmatter               | ~40                      | 0 (excepto archive)                           |
-| Discovery time                       | manual                   | <1s vía manifest                              |
-| Self-healing                         | manual                   | automático (watchdog cada hora)               |
-| Backups SPOFs                        | manual                   | automático en cada edición                    |
-| Cross-agent context                  | perdido                  | persistido en Engram                          |
-| Health %                             | 100%                     | 100% (regresión cero garantizada)             |
+| Agentes que conocen HUBs              | 1/52 (2%)                 | 52/52 (100%)                                   |
+| MCP sync Claude↔OpenCode              | 18/33 (54%)               | 33/33 (100%)                                   |
+| Refs v1.x rastreros                   | 487                       | <50 (solo legacy intencional)                  |
+| Skills sin frontmatter                | ~40                       | 0 (excepto archive)                            |
+| Discovery time                        | manual                    | <1s vía manifest                               |
+| Self-healing                          | manual                    | automático (watchdog cada hora)                |
+| Backups SPOFs                         | manual                    | automático en cada edición                     |
+| Cross-agent context                   | perdido                   | persistido en Engram                           |
+| Health %                              | 100%                      | 100% (regresión cero garantizada)              |
 
 ---
 
 ## 🕒 Cronograma
 
-| Fase                                   | Duración                | Fecha sugerida               |
+| Fase                                    | Duración                 | Fecha sugerida                |
 |----------------------------------------|-------------------------|------------------------------|
-| FASE 0: Snapshot                       | 15 min                  | Sesión 1                     |
-| FASE 1: Ground Truth                   | 30 min                  | Sesión 1                     |
-| FASE 2: Sync                           | 45 min                  | Sesión 1                     |
-| FASE 3: Discovery                      | 60 min                  | Sesión 1                     |
-| FASE 3.5: Forked Subagents             | 30 min                  | Sesión 1                     |
-| **Subtotal Sesión 1**                  | **~3 hs**               | **Día 1**                    |
-| FASE 4: Empowerment                    | 90 min                  | Sesión 2                     |
-| FASE 5: Ecosystem                      | 120 min                 | Sesión 2                     |
-| FASE 6: Blindaje                       | 45 min                  | Sesión 2                     |
-| FASE 7: SOTA                           | 60 min                  | Sesión 2                     |
-| **Subtotal Sesión 2**                  | **~5.5 hs**             | **Día 2**                    |
-| **TOTAL**                              | **~8.5 hs**             | **2 sesiones**               |
+| FASE 0: Snapshot                        | 15 min                   | Sesión 1                      |
+| FASE 1: Ground Truth                    | 30 min                   | Sesión 1                      |
+| FASE 2: Sync                            | 45 min                   | Sesión 1                      |
+| FASE 3: Discovery                       | 60 min                   | Sesión 1                      |
+| FASE 3.5: Forked Subagents              | 30 min                   | Sesión 1                      |
+| **Subtotal Sesión 1**                   | **~3 hs**                | **Día 1**                     |
+| FASE 4: Empowerment                     | 90 min                   | Sesión 2                      |
+| FASE 5: Ecosystem                       | 120 min                  | Sesión 2                      |
+| FASE 6: Blindaje                        | 45 min                   | Sesión 2                      |
+| FASE 7: SOTA                            | 60 min                   | Sesión 2                      |
+| **Subtotal Sesión 2**                   | **~5.5 hs**              | **Día 2**                     |
+| **TOTAL**                               | **~8.5 hs**              | **2 sesiones**                |
 
 ---
 
 ## 🚨 Pre-requisitos antes de arrancar
 
-| Requisito                                             | Verificación                                                                                          |
+| Requisito                                              | Verificación                                                                                           |
 |-------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| `git status` limpio                                   | `git status`                                                                                          |
-| Tests baseline 35/35                                  | `python 02_Playground/00_OS_Health_Test.py && python 02_Playground/01_OS_Runtime_Test.py`             |
-| `.mcp.json` válido                                    | `python -c "import json; json.load(open('.mcp.json'))"`                                               |
-| `config_paths.py` operativo                           | `python 01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py`                                   |
-| Backup snapshot inicial                               | Ver FASE 0                                                                                            |
-| **Decisión sobre 4 Fantásticos/Octopus**              | ⚠️ Pendiente input usuario antes de FASE 5                                                            |
-| **Decisión sobre `.agent` ↔ core mirror**             | ⚠️ Pendiente investigación en FASE 2.2                                                                |
+| `git status` limpio                                    | `git status`                                                                                           |
+| Tests baseline 35/35                                   | `python 02_Playground/00_OS_Health_Test.py && python 02_Playground/01_OS_Runtime_Test.py`              |
+| `.mcp.json` válido                                     | `python -c "import json; json.load(open('.mcp.json'))"`                                                |
+| `config_paths.py` operativo                            | `python 01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py`                                    |
+| Backup snapshot inicial                                | Ver FASE 0                                                                                             |
+| **Decisión sobre 4 Fantásticos/Octopus**               | ⚠️ Pendiente input usuario antes de FASE 5                                                             |
+| **Decisión sobre `.agent` ↔ core mirror**              | ⚠️ Pendiente investigación en FASE 2.2                                                                 |
 
 ---
 
@@ -712,31 +712,31 @@ Antes de arrancar la ejecución, se necesita resolver:
 
 ## 📁 Archivos Nuevos a Crear
 
-| Archivo                                    | Ubicación                                      | Fase                       |
+| Archivo                                     | Ubicación                                       | Fase                        |
 |--------------------------------------------|------------------------------------------------|----------------------------|
-| `15_MCP_Sync_Hub.py`                       | `03_Scripts_Os/`                               | FASE 2.1                   |
-| `16_System_Mapper_Hub.py`                  | `03_Scripts_Os/`                               | FASE 1                     |
-| `17_Watchdog_Hub.py`                       | `03_Scripts_Os/`                               | FASE 6.2                   |
-| `18_Telemetry_Hub.py`                      | `03_Scripts_Os/`                               | FASE 7.1                   |
-| `01_OS_Inventory.json`                     | `02_Agent_Teams_Lite/00_Manifest/`             | FASE 1                     |
-| `02_MCP_Registry.yaml`                     | `02_Agent_Teams_Lite/00_Manifest/`             | FASE 1                     |
-| `03_Agent_Catalog.yaml`                    | `02_Agent_Teams_Lite/00_Manifest/`             | FASE 1                     |
-| `04_Skill_Index.json`                      | `02_Agent_Teams_Lite/00_Manifest/`             | FASE 1                     |
-| `05_HUB_Catalog.yaml`                      | `02_Agent_Teams_Lite/00_Manifest/`             | FASE 1                     |
-| `06_Workflow_Graph.yaml`                   | `02_Agent_Teams_Lite/00_Manifest/`             | FASE 1, FASE 5             |
-| `07_Hook_Registry.yaml`                    | `02_Agent_Teams_Lite/00_Manifest/`             | FASE 1                     |
-| `OS_DIRECTORY.md`                          | raíz                                           | FASE 3.1                   |
-| `.atl/agent-skill-matrix.yaml`             | `.atl/`                                        | FASE 4.1                   |
+| `15_MCP_Sync_Hub.py`                        | `03_Scripts_Os/`                                | FASE 2.1                    |
+| `16_System_Mapper_Hub.py`                   | `03_Scripts_Os/`                                | FASE 1                      |
+| `17_Watchdog_Hub.py`                        | `03_Scripts_Os/`                                | FASE 6.2                    |
+| `18_Telemetry_Hub.py`                       | `03_Scripts_Os/`                                | FASE 7.1                    |
+| `01_OS_Inventory.json`                      | `02_Agent_Teams_Lite/00_Manifest/`              | FASE 1                      |
+| `02_MCP_Registry.yaml`                      | `02_Agent_Teams_Lite/00_Manifest/`              | FASE 1                      |
+| `03_Agent_Catalog.yaml`                     | `02_Agent_Teams_Lite/00_Manifest/`              | FASE 1                      |
+| `04_Skill_Index.json`                       | `02_Agent_Teams_Lite/00_Manifest/`              | FASE 1                      |
+| `05_HUB_Catalog.yaml`                       | `02_Agent_Teams_Lite/00_Manifest/`              | FASE 1                      |
+| `06_Workflow_Graph.yaml`                    | `02_Agent_Teams_Lite/00_Manifest/`              | FASE 1, FASE 5              |
+| `07_Hook_Registry.yaml`                     | `02_Agent_Teams_Lite/00_Manifest/`              | FASE 1                      |
+| `OS_DIRECTORY.md`                           | raíz                                            | FASE 3.1                    |
+| `.atl/agent-skill-matrix.yaml`              | `.atl/`                                         | FASE 4.1                    |
 
 ## 📝 Archivos a Modificar
 
-| Archivo                                     | Cambio                                                      | Fase                        |
+| Archivo                                      | Cambio                                                       | Fase                         |
 |---------------------------------------------|-------------------------------------------------------------|-----------------------------|
-| `CLAUDE.md`                                 | Agregar sección JARVIS + smart loading                      | FASE 3, 7                   |
-| `config_paths.py`                           | Registrar nuevos HUBs (15, 16, 17, 18)                      | FASE 1, 2, 6, 7             |
-| Cada agente `.md` (52)                      | Agregar frontmatter `agent_id` + `context_load`             | FASE 4.2                    |
-| Skills sin frontmatter (~40)                | Generar frontmatter mínimo                                  | FASE 6.3                    |
-| `00_Winter_is_Coming/AGENTS.md`             | Referencia a OS_DIRECTORY                                   | FASE 3                      |
+| `CLAUDE.md`                                  | Agregar sección JARVIS + smart loading                       | FASE 3, 7                    |
+| `config_paths.py`                            | Registrar nuevos HUBs (15, 16, 17, 18)                       | FASE 1, 2, 6, 7              |
+| Cada agente `.md` (52)                       | Agregar frontmatter `agent_id` + `context_load`              | FASE 4.2                     |
+| Skills sin frontmatter (~40)                 | Generar frontmatter mínimo                                   | FASE 6.3                     |
+| `00_Winter_is_Coming/AGENTS.md`              | Referencia a OS_DIRECTORY                                    | FASE 3                       |
 
 ---
 

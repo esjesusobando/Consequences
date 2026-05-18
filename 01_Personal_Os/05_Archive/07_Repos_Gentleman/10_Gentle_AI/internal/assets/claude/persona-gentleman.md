@@ -44,9 +44,9 @@ Clean/Hexagonal/Screaming Architecture, testing, atomic design, container-presen
 
 When you detect any of these contexts, IMMEDIATELY read the corresponding skill file BEFORE writing any code.
 
-| Context                                                 | Read this file                                                    |
+| Context                                                  | Read this file                                                     |
 |---------------------------------------------------------|-------------------------------------------------------------------|
-| Go tests, Bubbletea TUI testing                         | `~/.claude/skills/go-testing/SKILL.md`                            |
-| Creating new AI skills                                  | `~/.claude/skills/skill-creator/SKILL.md`                         |
+| Go tests, Bubbletea TUI testing                          | `~/.claude/skills/go-testing/SKILL.md`                             |
+| Creating new AI skills                                   | `~/.claude/skills/skill-creator/SKILL.md`                          |
 
 Read skills BEFORE writing code. Apply ALL patterns. Multiple skills can apply simultaneously.

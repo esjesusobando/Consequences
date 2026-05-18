@@ -43,14 +43,14 @@ Resource_Refs:
 
 * *Tech Stack:**
 
-| Componente                                                  | Valor                                                                         |
+| Componente                                                   | Valor                                                                          |
 |-------------------------------------------------------------|-------------------------------------------------------------------------------|
-| Framework                                                   | [Next.js 15]                                                                  |
-| Lenguaje                                                    | [TypeScript]                                                                  |
-| Base_Datos                                                  | [PostgreSQL]                                                                  |
-| UI                                                          | [Tailwind CSS]                                                                |
-| Autenticación                                               | [Better Auth]                                                                 |
-| Arquitectura                                                | [App Router, Server Components]                                               |
+| Framework                                                    | [Next.js 15]                                                                   |
+| Lenguaje                                                     | [TypeScript]                                                                   |
+| Base_Datos                                                   | [PostgreSQL]                                                                   |
+| UI                                                           | [Tailwind CSS]                                                                 |
+| Autenticación                                                | [Better Auth]                                                                  |
+| Arquitectura                                                 | [App Router, Server Components]                                                |
 
 * *Current State:** [Estado actual del código]
 
@@ -65,13 +65,13 @@ Resource_Refs:
 
 ## 4. Development Mode
 
-| Aspecto                                                        | Valor                                                               |
+| Aspecto                                                         | Valor                                                                |
 |----------------------------------------------------------------|---------------------------------------------------------------------|
-| Project Stage                                                  | [New / Feature / Fix]                                               |
-| Breaking Changes                                               | [Acceptable / Avoid]                                                |
-| Data Handling                                                  | [Preserve / Migrate]                                                |
-| User Base                                                      | [Quién será afectado]                                               |
-| Priority                                                       | [Speed vs Stability]                                                |
+| Project Stage                                                   | [New / Feature / Fix]                                                |
+| Breaking Changes                                                | [Acceptable / Avoid]                                                 |
+| Data Handling                                                   | [Preserve / Migrate]                                                 |
+| User Base                                                       | [Quién será afectado]                                                |
+| Priority                                                        | [Speed vs Stability]                                                 |
 
 ## 5. Requirements
 
@@ -83,11 +83,11 @@ Resource_Refs:
 
 * *Non-Functional Requirements:**
 
-| Aspecto                                                   | Requisito                                                        |
+| Aspecto                                                    | Requisito                                                         |
 |-----------------------------------------------------------|------------------------------------------------------------------|
-| Performance                                               | [<200ms]                                                         |
-| Security                                                  | [Validaciones]                                                   |
-| Usability                                                 | [UX/Accessibility]                                               |
+| Performance                                                | [<200ms]                                                          |
+| Security                                                   | [Validaciones]                                                    |
+| Usability                                                  | [UX/Accessibility]                                                |
 
 ## 6. Data & Database
 
@@ -113,30 +113,30 @@ Resource_Refs:
 
 * *Server Actions:**
 
-| Operación                                                | Descripción                                                |
+| Operación                                                 | Descripción                                                 |
 |----------------------------------------------------------|------------------------------------------------------------|
-| Create                                                   | [qué]                                                      |
-| Update                                                   | [qué]                                                      |
+| Create                                                    | [qué]                                                       |
+| Update                                                    | [qué]                                                       |
 
 * *Database Queries:**
 
-| Query                                                 | Descripción                                                |
+| Query                                                  | Descripción                                                 |
 |-------------------------------------------------------|------------------------------------------------------------|
-| Fetch                                                 | [datos]                                                    |
+| Fetch                                                  | [datos]                                                     |
 
 ## 8. Frontend
 
 * *New Components:**
 
-| Componente                                                | Propósito                                                |
+| Componente                                                 | Propósito                                                 |
 |-----------------------------------------------------------|----------------------------------------------------------|
-| [Nombre]                                                  | [qué]                                                    |
+| [Nombre]                                                   | [qué]                                                     |
 
 * *Page Updates:**
 
-| Página                                                 | Cambios                                                 |
+| Página                                                  | Cambios                                                  |
 |--------------------------------------------------------|---------------------------------------------------------|
-| [Página]                                               | [qué]                                                   |
+| [Página]                                                | [qué]                                                    |
 
 * *State Management:** [Zustand/Context]
 
@@ -161,17 +161,17 @@ Resource_Refs:
 
 ## 11. Impact Analysis
 
-| Tipo                                                               | Impacto                                                  |
+| Tipo                                                                | Impacto                                                   |
 |--------------------------------------------------------------------|----------------------------------------------------------|
-| Posibles Regresiones                                               | [lista]                                                  |
-| Performance                                                        | [concerns]                                               |
+| Posibles Regresiones                                                | [lista]                                                   |
+| Performance                                                         | [concerns]                                                |
 
 ## 12. Strategic Alignment
 
-| Métrica                                                           | Descripción                                                             |
+| Métrica                                                            | Descripción                                                              |
 |-------------------------------------------------------------------|-------------------------------------------------------------------------|
-| North Star                                                        | [Cómo acerca a la visión]                                               |
-| PersonalOS Priority                                               | [P0/P1/P2/P3]                                                           |
+| North Star                                                         | [Cómo acerca a la visión]                                                |
+| PersonalOS Priority                                                | [P0/P1/P2/P3]                                                            |
 
 - --
 

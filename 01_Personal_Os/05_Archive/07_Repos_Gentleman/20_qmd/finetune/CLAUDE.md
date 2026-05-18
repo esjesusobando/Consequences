@@ -36,13 +36,13 @@ The schema is enforced by `dataset/schema.py:TrainingExample` (Pydantic model). 
 
 ## HuggingFace Repositories
 
-| Repository                                                      | Purpose                                                          |
+| Repository                                                       | Purpose                                                           |
 |-----------------------------------------------------------------|------------------------------------------------------------------|
-| `tobil/qmd-query-expansion-1.7B`                                | Final merged model (SFT baseline)                                |
-| `tobil/qmd-query-expansion-1.7B-gguf`                           | GGUF quantized versions for deployment                           |
-| `tobil/qmd-query-expansion-1.7B-sft`                            | SFT adapter checkpoint (intermediate)                            |
-| `tobil/qmd-query-expansion-train`                               | Prepared training dataset                                        |
-| `tobil/qmd-query-expansion-1.7B-grpo`                           | Experimental GRPO adapter (optional)                             |
+| `tobil/qmd-query-expansion-1.7B`                                 | Final merged model (SFT baseline)                                 |
+| `tobil/qmd-query-expansion-1.7B-gguf`                            | GGUF quantized versions for deployment                            |
+| `tobil/qmd-query-expansion-1.7B-sft`                             | SFT adapter checkpoint (intermediate)                             |
+| `tobil/qmd-query-expansion-train`                                | Prepared training dataset                                         |
+| `tobil/qmd-query-expansion-1.7B-grpo`                            | Experimental GRPO adapter (optional)                              |
 
 **Rules:**
 - No versioned repos (`-v1`, `-v2`, `-v4`, etc.) - update in place
@@ -51,13 +51,13 @@ The schema is enforced by `dataset/schema.py:TrainingExample` (Pydantic model). 
 
 ## Dataset Tools
 
-| Script                                                 | Purpose                                                                            |
+| Script                                                  | Purpose                                                                             |
 |--------------------------------------------------------|------------------------------------------------------------------------------------|
-| `dataset/schema.py`                                    | Pydantic `TrainingExample` model + `load_examples()`                               |
-| `dataset/prepare_data.py`                              | Load via schema, apply Qwen3 chat template, dedup, split                           |
-| `dataset/validate_schema.py`                           | Validate all JSONL files against schema                                            |
-| `dataset/score_data.py`                                | Score all examples using reward.py                                                 |
-| `dataset/analyze_data.py`                              | Analyze distribution and quality                                                   |
+| `dataset/schema.py`                                     | Pydantic `TrainingExample` model + `load_examples()`                                |
+| `dataset/prepare_data.py`                               | Load via schema, apply Qwen3 chat template, dedup, split                            |
+| `dataset/validate_schema.py`                            | Validate all JSONL files against schema                                             |
+| `dataset/score_data.py`                                 | Score all examples using reward.py                                                  |
+| `dataset/analyze_data.py`                               | Analyze distribution and quality                                                    |
 
 ## Training Pipeline
 

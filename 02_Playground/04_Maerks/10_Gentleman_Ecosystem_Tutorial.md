@@ -8,13 +8,13 @@
 
 ## 📊 Resumen del Video
 
-| Tema                                      | Descripción                                                                    |
+| Tema                                       | Descripción                                                                     |
 |-------------------------------------------|--------------------------------------------------------------------------------|
-| **Creador**                               | Gentleman (Alan)                                                               |
-| **Stack**                                 | Engram + SDD + Skills + MCPs                                                   |
-| **Instalación**                           | `brew install gentelman/gentleman/ai`                                          |
-| **Soporte**                               | Windows, Linux, macOS                                                          |
-| **Agentes**                               | Claude Code, OpenCode, Gemini, Cursor, Codex, VSCode                           |
+| **Creador**                                | Gentleman (Alan)                                                                |
+| **Stack**                                  | Engram + SDD + Skills + MCPs                                                    |
+| **Instalación**                            | `brew install gentelman/gentleman/ai`                                           |
+| **Soporte**                                | Windows, Linux, macOS                                                           |
+| **Agentes**                                | Claude Code, OpenCode, Gemini, Cursor, Codex, VSCode                            |
 
 ---
 
@@ -120,26 +120,26 @@ git clone repositorio
 
 ### Configuración
 
-| Opción                              | Descripción                                                     |
+| Opción                               | Descripción                                                      |
 |-------------------------------------|-----------------------------------------------------------------|
-| Voice                               | Hablar como Alan / Neutral / Custom                             |
-| Ecosystem                           | Full gentleman / Solo Engram / Custom                           |
+| Voice                                | Hablar como Alan / Neutral / Custom                              |
+| Ecosystem                            | Full gentleman / Solo Engram / Custom                            |
 
 ---
 
 ## 🎯 Modelos Recomendados por Fase
 
-| Fase                                     | Modelo                                      | Razón                                          |
+| Fase                                      | Modelo                                       | Razón                                           |
 |------------------------------------------|---------------------------------------------|------------------------------------------------|
-| Inicializar                              | Sonnet                                      | Rápido                                         |
-| Explorar                                 | Sonnet                                      | Rápido                                         |
-| Propuesta                                | Opus / Gemini 2.0                           | Alto razonamiento                              |
-| Especificación                           | Google                                      | Documentación clara                            |
-| Diseño                                   | Opus                                        | Razonamiento técnico                           |
-| Tareas                                   | Sonnet                                      | Liviano                                        |
-| Implementar                              | Sonnet / 5.4                                | Eficiente                                      |
-| Verificar                                | 5.4                                         | Bug detection                                  |
-| Archivar                                 | Sonnet                                      | Liviano                                        |
+| Inicializar                               | Sonnet                                       | Rápido                                          |
+| Explorar                                  | Sonnet                                       | Rápido                                          |
+| Propuesta                                 | Opus / Gemini 2.0                            | Alto razonamiento                               |
+| Especificación                            | Google                                       | Documentación clara                             |
+| Diseño                                    | Opus                                         | Razonamiento técnico                            |
+| Tareas                                    | Sonnet                                       | Liviano                                         |
+| Implementar                               | Sonnet / 5.4                                 | Eficiente                                       |
+| Verificar                                 | 5.4                                          | Bug detection                                   |
+| Archivar                                  | Sonnet                                       | Liviano                                         |
 
 **Nota:** "Gemini es un desastre para implementar, pero excellent para razonamiento y documentación"
 

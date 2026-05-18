@@ -85,13 +85,13 @@ Context: same week or project
 ```
 
 ### Discipline Mapping
-| Learning Type | Primary Discipline | Secondary Connections |
-|--------------|-------------------|----------------------|
-| Agent/LLM topics | 05_Aipm | 06_Engineering |
-| PM methodologies | 01_Pm | 02_Pdm |
-| Design patterns | 03_Product_Design | 04_Art_Director |
-| Code patterns | 06_Engineering | 05_Aipm |
-| Productivity | 07_Personal_Os | 01_Pm |
+| Learning Type   | Primary Discipline | Secondary Connections |
+|----------------|-------------------|----------------------|
+| Agent/LLM topics| 05_Aipm            | 06_Engineering        |
+| PM methodologies| 01_Pm              | 02_Pdm                |
+| Design patterns | 03_Product_Design  | 04_Art_Director       |
+| Code patterns   | 06_Engineering     | 05_Aipm               |
+| Productivity    | 07_Personal_Os     | 01_Pm                 |
 
 ---
 

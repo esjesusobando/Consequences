@@ -96,14 +96,14 @@ What needs to be done and why.
 
 ## MCP Tools Available
 
-| Tool                                                         | Description                                                   |
+| Tool                                                          | Description                                                    |
 |--------------------------------------------------------------|---------------------------------------------------------------|
-| `list_tasks`                                                 | Filter and view tasks                                         |
-| `create_task`                                                | Create new task with metadata                                 |
-| `update_task_status`                                         | Change task status                                            |
-| `process_backlog_with_dedup`                                 | Smart backlog processing                                      |
-| `get_task_summary`                                           | Statistics and overview                                       |
-| `prune_completed_tasks`                                      | Clean old completed tasks                                     |
+| `list_tasks`                                                  | Filter and view tasks                                          |
+| `create_task`                                                 | Create new task with metadata                                  |
+| `update_task_status`                                          | Change task status                                             |
+| `process_backlog_with_dedup`                                  | Smart backlog processing                                       |
+| `get_task_summary`                                            | Statistics and overview                                        |
+| `prune_completed_tasks`                                       | Clean old completed tasks                                      |
 
 ## Configuration
 
@@ -154,9 +154,9 @@ The system automatically:
 
 Optional integrations extend Personal OS with external tools:
 
-| Integration                                                        | Description                                                        | Setup                                                        |
+| Integration                                                         | Description                                                         | Setup                                                         |
 |--------------------------------------------------------------------|--------------------------------------------------------------------|--------------------------------------------------------------|
-| [Granola](./integrations/granola/)                                 | Sync meeting notes and transcripts                                 | `Set up Granola integration`                                 |
+| [Granola](./integrations/granola/)                                  | Sync meeting notes and transcripts                                  | `Set up Granola integration`                                  |
 
 See [integrations/](./integrations/) for full documentation.
 

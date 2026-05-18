@@ -53,10 +53,10 @@ Almacena **proyectos activos, laboratorios de pruebas, y documentación estraté
 
 ## 🧪 Proyectos Activos
 
-| Proyecto                                        | Descripción                                        | Estado                                      |
+| Proyecto                                         | Descripción                                         | Estado                                       |
 |-------------------------------------------------|----------------------------------------------------|---------------------------------------------|
-| **01_Efrain_World**                             | Invitación interactiva                             | En desarrollo                               |
-| **03_Macano_Rest**                              | Sistema restaurant                                 | SDD en progreso                             |
+| **01_Efrain_World**                              | Invitación interactiva                              | En desarrollo                                |
+| **03_Macano_Rest**                               | Sistema restaurant                                  | SDD en progreso                              |
 
 ### Macano_Rest (SDD)
 

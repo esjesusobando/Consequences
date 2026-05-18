@@ -16,50 +16,50 @@ vec: authentication configuration options
 
 ## Output Format
 
-| Prefix                             | Purpose                                                                      | Required                             | Count                             |
+| Prefix                              | Purpose                                                                       | Required                              | Count                              |
 |------------------------------------|------------------------------------------------------------------------------|--------------------------------------|-----------------------------------|
-| `lex:`                             | BM25 keyword variations (shorter, keyword-focused)                           | Yes                                  | 1-3                               |
-| `vec:`                             | Semantic reformulations (natural language)                                   | Yes                                  | 1-3                               |
-| `hyde:`                            | Hypothetical document passage                                                | Optional                             | 0-1                               |
+| `lex:`                              | BM25 keyword variations (shorter, keyword-focused)                            | Yes                                   | 1-3                                |
+| `vec:`                              | Semantic reformulations (natural language)                                    | Yes                                   | 1-3                                |
+| `hyde:`                             | Hypothetical document passage                                                 | Optional                              | 0-1                                |
 
 ## Scoring Criteria
 
 ### 1. Format Compliance (0-30 points)
 
-| Criterion                                                                       | Points                             | Deduction                                     |
+| Criterion                                                                        | Points                              | Deduction                                      |
 |---------------------------------------------------------------------------------|------------------------------------|-----------------------------------------------|
-| Has at least one `lex:` line                                                    | +10                                | -10 if missing                                |
-| Has at least one `vec:` line                                                    | +10                                | -10 if missing                                |
-| All lines have valid prefix (`lex:`, `vec:`, `hyde:`)                           | +10                                | -5 per invalid line                           |
-| No garbage/prose outside of prefixed lines                                      |------------------------------------| -10 if present                                |
+| Has at least one `lex:` line                                                     | +10                                 | -10 if missing                                 |
+| Has at least one `vec:` line                                                     | +10                                 | -10 if missing                                 |
+| All lines have valid prefix (`lex:`, `vec:`, `hyde:`)                            | +10                                 | -5 per invalid line                            |
+| No garbage/prose outside of prefixed lines                                       |------------------------------------| -10 if present                                 |
 
 ### 2. Diversity & Coverage (0-30 points)
 
-| Criterion                                                                     | Points                             | Deduction                                               |
+| Criterion                                                                      | Points                              | Deduction                                                |
 |-------------------------------------------------------------------------------|------------------------------------|---------------------------------------------------------|
-| 2+ different types present (lex + vec)                                        | +10                                | -10 if only one type                                    |
-| 2+ total expansions                                                           | +5                                 | -5 if only one                                          |
-| Multiple lex: lines are diverse (edit distance > 3)                           | +5                                 | -2 per duplicate pair                                   |
-| Multiple vec: lines are diverse (edit distance > 5)                           | +5                                 | -2 per duplicate pair                                   |
-| lex/vec not identical to original query                                       | +5                                 | -5 per line that equals query                           |
+| 2+ different types present (lex + vec)                                         | +10                                 | -10 if only one type                                     |
+| 2+ total expansions                                                            | +5                                  | -5 if only one                                           |
+| Multiple lex: lines are diverse (edit distance > 3)                            | +5                                  | -2 per duplicate pair                                    |
+| Multiple vec: lines are diverse (edit distance > 5)                            | +5                                  | -2 per duplicate pair                                    |
+| lex/vec not identical to original query                                        | +5                                  | -5 per line that equals query                            |
 
 ### 3. Hyde Quality (0-20 points, optional bonus)
 
-| Criterion                                                  | Points                             | Deduction                                                 |
+| Criterion                                                   | Points                              | Deduction                                                  |
 |------------------------------------------------------------|------------------------------------|-----------------------------------------------------------|
-| Hyde present and well-formed                               | +5                                 |-----------------------------------------------------------|
-| Hyde is concise (50-200 chars)                             | +5                                 | -3 if too short, -5 if too long                           |
-| Hyde has no newlines                                       | +5                                 | -5 if contains newlines                                   |
-| Hyde has no excessive repetition                           | +5                                 | -3 if word repeats 3+ times                               |
+| Hyde present and well-formed                                | +5                                  |-----------------------------------------------------------|
+| Hyde is concise (50-200 chars)                              | +5                                  | -3 if too short, -5 if too long                            |
+| Hyde has no newlines                                        | +5                                  | -5 if contains newlines                                    |
+| Hyde has no excessive repetition                            | +5                                  | -3 if word repeats 3+ times                                |
 
 ### 4. Content Quality (0-20 points)
 
-| Criterion                                                                   | Points                             | Deduction                                              |
+| Criterion                                                                    | Points                              | Deduction                                               |
 |-----------------------------------------------------------------------------|------------------------------------|--------------------------------------------------------|
-| Base relevance                                                              | +5                                 | Subjective                                             |
-| Lex lines preserve key terms from query                                     | +5                                 | -5 if lex is generic                                   |
-| Lex lines are keyword-focused (shorter)                                     | +5                                 | -2 if lex is longer than vec                           |
-| Vec lines are natural language (complete phrases)                           | +5                                 | -2 if vec is just keywords                             |
+| Base relevance                                                               | +5                                  | Subjective                                              |
+| Lex lines preserve key terms from query                                      | +5                                  | -5 if lex is generic                                    |
+| Lex lines are keyword-focused (shorter)                                      | +5                                  | -2 if lex is longer than vec                            |
+| Vec lines are natural language (complete phrases)                            | +5                                  | -2 if vec is just keywords                              |
 
 ### 5. Named Entity Preservation (-65 to +20 points, CRITICAL)
 
@@ -67,14 +67,14 @@ Named entities are proper nouns, brand names, personal names, technical terms, a
 
 **Two-level checking:**
 
-| Criterion                                                                           | Points                             | Deduction                                            |
+| Criterion                                                                            | Points                              | Deduction                                             |
 |-------------------------------------------------------------------------------------|------------------------------------|------------------------------------------------------|
-| **Per-line**: All lex lines contain at least one entity                             | +15                                |------------------------------------------------------|
-| **Per-line**: Some lex lines contain entities                                       | +5                                 |------------------------------------------------------|
-| **Per-line**: NO lex lines contain entities                                         |------------------------------------| **-30 HEAVY PENALTY**                                |
-| **Per-entity**: Entity completely absent from all lex+vec                           |------------------------------------| **-20 per dropped entity**                           |
-| Generic filler phrases in lex                                                       |------------------------------------| -15 per phrase                                       |
-| Entities also in vec lines                                                          | +5                                 |------------------------------------------------------|
+| **Per-line**: All lex lines contain at least one entity                              | +15                                 |------------------------------------------------------|
+| **Per-line**: Some lex lines contain entities                                        | +5                                  |------------------------------------------------------|
+| **Per-line**: NO lex lines contain entities                                          |------------------------------------| **-30 HEAVY PENALTY**                                 |
+| **Per-entity**: Entity completely absent from all lex+vec                            |------------------------------------| **-20 per dropped entity**                            |
+| Generic filler phrases in lex                                                        |------------------------------------| -15 per phrase                                        |
+| Entities also in vec lines                                                           | +5                                  |------------------------------------------------------|
 
 **Named Entity Detection:**
 - All-caps acronyms: `TDS`, `API`, `GPU`, `AWS`
@@ -93,14 +93,14 @@ Named entities are proper nouns, brand names, personal names, technical terms, a
 
 **Examples:**
 
-| Query                                                  | Bad Lex                                                    | Good Lex                                                          |
+| Query                                                   | Bad Lex                                                     | Good Lex                                                           |
 |--------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|
-| `who is TDS motorsports`                               | `lex: find information about`                              | `lex: TDS motorsports history`                                    |
-|                                                        | `lex: company details`                                     | `lex: TDS motorsports founders`                                   |
-| `meeting with Bob about C++`                           | `lex: c++ meetings`                                        | `lex: Bob "C++" meeting`                                          |
-|                                                        | `vec: programming meeting notes`                           | `vec: meeting notes with Bob about C++`                           |
-| `how to use React hooks`                               | `lex: programming tutorial`                                | `lex: React hooks tutorial`                                       |
-|                                                        | `lex: how to code`                                         | `lex: useEffect useState hooks`                                   |
+| `who is TDS motorsports`                                | `lex: find information about`                               | `lex: TDS motorsports history`                                     |
+|                                                         | `lex: company details`                                      | `lex: TDS motorsports founders`                                    |
+| `meeting with Bob about C++`                            | `lex: c++ meetings`                                         | `lex: Bob "C++" meeting`                                           |
+|                                                         | `vec: programming meeting notes`                            | `vec: meeting notes with Bob about C++`                            |
+| `how to use React hooks`                                | `lex: programming tutorial`                                 | `lex: React hooks tutorial`                                        |
+|                                                         | `lex: how to code`                                          | `lex: useEffect useState hooks`                                    |
 
 **Key Rule**: If a query mentions a specific entity (person, brand, product, technology, project name), that entity MUST appear somewhere in the lex+vec output. Dropping a person's name is especially costly.
 
@@ -108,9 +108,9 @@ Named entities are proper nouns, brand names, personal names, technical terms, a
 
 When a query contains multi-word technical terms or proper nouns, lex output should use quoted phrases for exact matching in BM25.
 
-| Criterion                                                                                   | Points                             |
+| Criterion                                                                                    | Points                              |
 |---------------------------------------------------------------------------------------------|------------------------------------|
-| Uses `"quoted phrases"` in lex when query has multi-word entities                           | +3                                 |
+| Uses `"quoted phrases"` in lex when query has multi-word entities                            | +3                                  |
 
 **When to quote:**
 - Multi-word proper nouns: `"New York"`, `"Monte Carlo"`

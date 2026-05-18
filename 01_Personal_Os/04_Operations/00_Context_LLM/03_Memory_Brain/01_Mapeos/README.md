@@ -6,9 +6,9 @@
 
 ## Mapas Disponibles
 
-| Fecha                                    | Archivo                                                     | Descripción                                                                           |
+| Fecha                                     | Archivo                                                      | Descripción                                                                            |
 |------------------------------------------|-------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| 2026-03-24                               | `01_System_Map_2026-03-24.md`                               | Mapeo completo del sistema — Estado actual post-session                               |
+| 2026-03-24                                | `01_System_Map_2026-03-24.md`                                | Mapeo completo del sistema — Estado actual post-session                                |
 
 ---
 

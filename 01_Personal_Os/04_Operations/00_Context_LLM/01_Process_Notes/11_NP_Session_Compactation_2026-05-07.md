@@ -62,11 +62,11 @@ Limpiar pendientes del proyecto Think Different + auditoría interna de auditore
 
 ## Key Decisions
 
-| Decisión                                                                             | Razón                                       |
+| Decisión                                                                              | Razón                                        |
 |--------------------------------------------------------------------------------------|---------------------------------------------|
-| Scripts de rituales reales están en `10_Legacy/`, no en skills/scripts/              | Confirmado durante auditoría                |
-| 50_System_Health_Monitor.py debe estar en ENGINE_DIR raíz, no en 10_Legacy           | Ubicación correcta según estructura         |
-| get_skill_script() busca en SCRIPT_LOCATION_MAP primero, luego hace fallback         | Patrón de búsqueda implementado             |
+| Scripts de rituales reales están en `10_Legacy/`, no en skills/scripts/               | Confirmado durante auditoría                 |
+| 50_System_Health_Monitor.py debe estar en ENGINE_DIR raíz, no en 10_Legacy            | Ubicación correcta según estructura          |
+| get_skill_script() busca en SCRIPT_LOCATION_MAP primero, luego hace fallback          | Patrón de búsqueda implementado              |
 
 ---
 
@@ -95,27 +95,27 @@ Limpiar pendientes del proyecto Think Different + auditoría interna de auditore
 
 ## Relevant Files
 
-| Archivo                                                                          | Rol                                                         |
+| Archivo                                                                           | Rol                                                          |
 |----------------------------------------------------------------------------------|-------------------------------------------------------------|
-| `01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py`                   | Hub de auditorías                                           |
-| `01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py`                     | Rutas centralizadas (SCRIPT_LOCATION_MAP corregido)         |
-| `01_Personal_Os/04_Operations/03_Scripts_Os/50_System_Health_Monitor.py`         | Monitor de salud (paths corregidos)                         |
-| `03_Resultado/04_Reportes/`                                                      | Carpeta de reportes (limpiada)                              |
-| `09_Valeria/Honores_Grado_Noel.html`                                             | Template base copiado                                       |
-| `10_Clinica_Infantil/`                                                           | Nuevo proyecto para invitación                              |
+| `01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py`                    | Hub de auditorías                                            |
+| `01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py`                      | Rutas centralizadas (SCRIPT_LOCATION_MAP corregido)          |
+| `01_Personal_Os/04_Operations/03_Scripts_Os/50_System_Health_Monitor.py`          | Monitor de salud (paths corregidos)                          |
+| `03_Resultado/04_Reportes/`                                                       | Carpeta de reportes (limpiada)                               |
+| `09_Valeria/Honores_Grado_Noel.html`                                              | Template base copiado                                        |
+| `10_Clinica_Infantil/`                                                            | Nuevo proyecto para invitación                               |
 
 ---
 
 ## Datos Invitación Clínica Infantil (PENDIENTE)
 
-| Campo             | Valor                         |
+| Campo              | Valor                          |
 |-------------------|-------------------------------|
-| Nombre            | (pendiente)                   |
-| Fecha             | (pendiente)                   |
-| Hora              | (pendiente)                   |
-| Lugar             | (pendiente)                   |
-| Contacto          | (pendiente)                   |
-| Gate Code         | (pendiente si aplica)         |
+| Nombre             | (pendiente)                    |
+| Fecha              | (pendiente)                    |
+| Hora               | (pendiente)                    |
+| Lugar              | (pendiente)                    |
+| Contacto           | (pendiente)                    |
+| Gate Code          | (pendiente si aplica)          |
 
 ---
 

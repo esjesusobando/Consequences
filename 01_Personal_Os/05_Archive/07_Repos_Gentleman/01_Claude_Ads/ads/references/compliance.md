@@ -6,11 +6,11 @@
 ## Google Ads Policies
 
 ### Enforcement System: Three-Strike Policy
-| Strike         | Consequence                | Duration                    |
+| Strike          | Consequence                 | Duration                     |
 |----------------|----------------------------|-----------------------------|
-| Strike 1       | 90-day probation           | Warning period              |
-| Strike 2       | 90-day restriction         | Limited functionality       |
-| Strike 3       | Permanent suspension       | Account terminated          |
+| Strike 1        | 90-day probation            | Warning period               |
+| Strike 2        | 90-day restriction          | Limited functionality        |
+| Strike 3        | Permanent suspension        | Account terminated           |
 
 ### Prohibited Content (Immediate Disapproval)
 - Counterfeit goods
@@ -19,17 +19,17 @@
 - Inappropriate content (hate speech, violence, shocking content)
 
 ### Restricted Categories (Certification Required)
-| Category                 | Requirement                                |
+| Category                  | Requirement                                 |
 |--------------------------|--------------------------------------------|
-| Online pharmacies        | Google certification + LegitScript         |
-| Telemedicine             | Platform certification                     |
-| Health insurance         | Certification in applicable regions        |
-| Gambling                 | State/country-specific licensing           |
-| Political ads            | Identity verification + disclosures        |
-| Cryptocurrency           | Certification required                     |
-| Financial services       | Clear APR/fee/terms disclosures            |
-| Alcohol                  | Age-gating + regional restrictions         |
-| Adult content            | Age restriction + limited placements       |
+| Online pharmacies         | Google certification + LegitScript          |
+| Telemedicine              | Platform certification                      |
+| Health insurance          | Certification in applicable regions         |
+| Gambling                  | State/country-specific licensing            |
+| Political ads             | Identity verification + disclosures         |
+| Cryptocurrency            | Certification required                      |
+| Financial services        | Clear APR/fee/terms disclosures             |
+| Alcohol                   | Age-gating + regional restrictions          |
+| Adult content             | Age restriction + limited placements        |
 
 ### Common Disapprovals
 - Misleading claims (superlatives without evidence)
@@ -59,12 +59,12 @@
 ## Meta Ads Policies
 
 ### Special Ad Categories (Restricted Targeting)
-| Category                     | Restrictions                                         |
+| Category                      | Restrictions                                          |
 |------------------------------|------------------------------------------------------|
-| Housing                      | No ZIP code, age must be 18-65+, no lookalike        |
-| Employment                   | Same restrictions as Housing                         |
-| Credit                       | Same restrictions as Housing                         |
-| **Financial Products**       | **New Jan 2025**, enforced as Special Category       |
+| Housing                       | No ZIP code, age must be 18-65+, no lookalike         |
+| Employment                    | Same restrictions as Housing                          |
+| Credit                        | Same restrictions as Housing                          |
+| **Financial Products**        | **New Jan 2025**, enforced as Special Category        |
 
 All Special Ad Categories:
 - Cannot target by age (18-65+ only range)
@@ -152,14 +152,14 @@ All Special Ad Categories:
 
 ### Global Privacy Landscape
 
-| Regulation          | Region             | Status                | Key Requirement                                  |
+| Regulation           | Region              | Status                 | Key Requirement                                   |
 |---------------------|--------------------|-----------------------|--------------------------------------------------|
-| GDPR                | EU/EEA             | Active                | Consent before tracking; data minimization       |
-| UK GDPR             | UK                 | Active                | Similar to EU GDPR                               |
-| CCPA/CPRA           | California         | Active                | Right to opt out; mandatory audits               |
-| 20 State Laws       | US (various)       | Active Jan 2026       | Indiana, Kentucky, Rhode Island newest           |
-| LGPD                | Brazil             | Active                | Consent and transparency                         |
-| PIPL                | China              | Active                | Consent and data localization                    |
+| GDPR                 | EU/EEA              | Active                 | Consent before tracking; data minimization        |
+| UK GDPR              | UK                  | Active                 | Similar to EU GDPR                                |
+| CCPA/CPRA            | California          | Active                 | Right to opt out; mandatory audits                |
+| 20 State Laws        | US (various)        | Active Jan 2026        | Indiana, Kentucky, Rhode Island newest            |
+| LGPD                 | Brazil              | Active                 | Consent and transparency                          |
+| PIPL                 | China               | Active                 | Consent and data localization                     |
 
 ### Key Privacy Facts (2026)
 
@@ -213,25 +213,25 @@ FOR ALL REGIONS:
 
 ### Healthcare-Specific Compliance
 
-| Rule                                                 | Enforcement                                  |
+| Rule                                                  | Enforcement                                   |
 |------------------------------------------------------|----------------------------------------------|
-| No remarketing/retargeting for health services       | Google policy: account suspension risk       |
-| No targeting by health conditions                    | Google, Meta, all platforms                  |
-| Online pharmacy certification                        | Google: LegitScript required                 |
-| Telemedicine certification                           | Google: platform certification               |
-| HIPAA considerations                                 | US: no PHI in tracking pixels                |
-| Use contextual targeting                             | Instead of audience targeting                |
+| No remarketing/retargeting for health services        | Google policy: account suspension risk        |
+| No targeting by health conditions                     | Google, Meta, all platforms                   |
+| Online pharmacy certification                         | Google: LegitScript required                  |
+| Telemedicine certification                            | Google: platform certification                |
+| HIPAA considerations                                  | US: no PHI in tracking pixels                 |
+| Use contextual targeting                              | Instead of audience targeting                 |
 
 ### Financial Services Compliance
 
-| Rule                                      | Enforcement                                 |
+| Rule                                       | Enforcement                                  |
 |-------------------------------------------|---------------------------------------------|
-| Clear APR/fee/terms disclosures           | Google, Meta: ad disapproval                |
-| Lending certification                     | Google: account level                       |
-| Crypto certification                      | Google: account level                       |
-| Risk disclosures                          | All platforms                               |
-| Financial Products Special Category       | Meta (Jan 2025): restricted targeting       |
-| No misleading income claims               | All platforms: account suspension           |
+| Clear APR/fee/terms disclosures            | Google, Meta: ad disapproval                 |
+| Lending certification                      | Google: account level                        |
+| Crypto certification                       | Google: account level                        |
+| Risk disclosures                           | All platforms                                |
+| Financial Products Special Category        | Meta (Jan 2025): restricted targeting        |
+| No misleading income claims                | All platforms: account suspension            |
 
 ---
 

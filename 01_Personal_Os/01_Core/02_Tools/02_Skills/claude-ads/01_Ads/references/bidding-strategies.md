@@ -104,13 +104,13 @@ Rules:
 
 ### Transition Triggers (Google)
 
-| From | To | Trigger |
-|------|----|---------|
-| Maximize Clicks | Maximize Conversions | 15+ conversions in 30 days |
-| Maximize Conversions | Target CPA | CPA SD <20% over 14 days + 30+ conv |
-| Target CPA | Target ROAS | 50+ conv + dynamic values available |
-| Manual CPC | Maximize Clicks | Ready to test automation |
-| Any | Target Impression Share | Brand protection need identified |
+| From                | To                     | Trigger                            |
+|--------------------|-----------------------|-----------------------------------|
+| Maximize Clicks     | Maximize Conversions   | 15+ conversions in 30 days         |
+| Maximize Conversions| Target CPA             | CPA SD <20% over 14 days + 30+ conv|
+| Target CPA          | Target ROAS            | 50+ conv + dynamic values available|
+| Manual CPC          | Maximize Clicks        | Ready to test automation           |
+| Any                 | Target Impression Share| Brand protection need identified   |
 
 ---
 
@@ -316,14 +316,14 @@ Key Rules:
 
 ## Cross-Platform Bidding Red Flags
 
-| Red Flag | Severity | Platform | Action |
-|----------|----------|----------|--------|
-| Broad Match + Manual CPC | Critical | Google | Switch to Smart Bidding or Exact Match |
-| tCPA <50% of actual CPA | Critical | Google | Unrealistic target; set at 1.1-1.2× historical |
-| Smart Bidding with <15 conv/month | High | Google | Use Manual CPC or Maximize Clicks |
-| >50% ad sets "Learning Limited" | Critical | Meta | Consolidate, broaden audience, increase budget |
-| Cost Cap below historical CPA | High | Meta | Set at 1.2-1.5× target, not below |
-| Daily budget <5× CPA | High | Meta | Increase budget or switch to higher-funnel event |
-| Budget < $50/day campaign | High | TikTok | Increase to minimum or consolidate |
-| No negative keywords with Broad Match | Critical | Google | Add themed negative lists immediately |
-| No Portfolio strategy for low-vol campaigns | Medium | Google | Group <15 conv campaigns into portfolio |
+| Red Flag                                   | Severity  | Platform  | Action                                          |
+|-------------------------------------------|----------|----------|------------------------------------------------|
+| Broad Match + Manual CPC                   | Critical  | Google    | Switch to Smart Bidding or Exact Match          |
+| tCPA <50% of actual CPA                    | Critical  | Google    | Unrealistic target; set at 1.1-1.2× historical  |
+| Smart Bidding with <15 conv/month          | High      | Google    | Use Manual CPC or Maximize Clicks               |
+| >50% ad sets "Learning Limited"            | Critical  | Meta      | Consolidate, broaden audience, increase budget  |
+| Cost Cap below historical CPA              | High      | Meta      | Set at 1.2-1.5× target, not below               |
+| Daily budget <5× CPA                       | High      | Meta      | Increase budget or switch to higher-funnel event|
+| Budget < $50/day campaign                  | High      | TikTok    | Increase to minimum or consolidate              |
+| No negative keywords with Broad Match      | Critical  | Google    | Add themed negative lists immediately           |
+| No Portfolio strategy for low-vol campaigns| Medium    | Google    | Group <15 conv campaigns into portfolio         |

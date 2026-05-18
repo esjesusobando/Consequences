@@ -111,12 +111,12 @@ user-invokable: false
 
 ASA offers 4 placement types; evaluate coverage and performance:
 
-| Placement | Where | Best for | Benchmark CPT |
-|-----------|-------|----------|----------------|
-| Search Results | Below search results | High intent, bottom funnel | $0.50-$3.00 |
-| Search Tab | Top of Search tab | Discovery, mid funnel | $0.30-$1.50 |
-| Today Tab | App Store home | Brand awareness | $1.00-$5.00 |
-| Product Pages | Competitor/related app pages | Competitor conquesting | $0.50-$2.00 |
+| Placement     | Where                       | Best for                  | Benchmark CPT   |
+|--------------|----------------------------|--------------------------|----------------|
+| Search Results| Below search results        | High intent, bottom funnel| $0.50-$3.00     |
+| Search Tab    | Top of Search tab           | Discovery, mid funnel     | $0.30-$1.50     |
+| Today Tab     | App Store home              | Brand awareness           | $1.00-$5.00     |
+| Product Pages | Competitor/related app pages| Competitor conquesting    | $0.50-$2.00     |
 
 **Evaluation:**
 - Search Results: must be active (highest intent placement)
@@ -127,15 +127,15 @@ ASA offers 4 placement types; evaluate coverage and performance:
 ### Goal CPA / KPI Assessment (5% weight)
 
 **Benchmarks by Category (2025-2026 ASA averages):**
-| Category | Avg CPT | Avg TTR | Avg Install CVR | Target CPI |
-|----------|---------|---------|-----------------|------------|
-| Games | $0.50-$1.00 | 3-5% | 55-70% | $1.00-$3.00 |
-| Health & Fitness | $1.50-$3.00 | 2-4% | 45-60% | $3.00-$8.00 |
-| Productivity | $1.00-$2.50 | 2-3.5% | 50-65% | $2.00-$5.00 |
-| Finance | $2.00-$5.00 | 1.5-3% | 40-55% | $5.00-$15.00 |
-| Education | $1.00-$2.00 | 2-4% | 50-65% | $2.00-$6.00 |
-| Shopping | $0.80-$2.00 | 2.5-4% | 45-60% | $2.00-$5.00 |
-| Lifestyle | $0.80-$1.80 | 2-3.5% | 45-60% | $2.00-$5.00 |
+| Category        | Avg CPT    | Avg TTR  | Avg Install CVR  | Target CPI  |
+|----------------|-----------|---------|-----------------|------------|
+| Games           | $0.50-$1.00| 3-5%     | 55-70%           | $1.00-$3.00 |
+| Health & Fitness| $1.50-$3.00| 2-4%     | 45-60%           | $3.00-$8.00 |
+| Productivity    | $1.00-$2.50| 2-3.5%   | 50-65%           | $2.00-$5.00 |
+| Finance         | $2.00-$5.00| 1.5-3%   | 40-55%           | $5.00-$15.00|
+| Education       | $1.00-$2.00| 2-4%     | 50-65%           | $2.00-$6.00 |
+| Shopping        | $0.80-$2.00| 2.5-4%   | 45-60%           | $2.00-$5.00 |
+| Lifestyle       | $0.80-$1.80| 2-3.5%   | 45-60%           | $2.00-$5.00 |
 
 **Country-level benchmarks:**
 - Tier 1 (US, UK, AU, CA, JP): CPT 2-3× above global average; highest LTV
@@ -149,12 +149,12 @@ ASA offers 4 placement types; evaluate coverage and performance:
 
 ### Overall Benchmarks (2025 SplitMetrics data)
 
-| Metric | Search Results Average |
-|--------|-----------------------|
-| TTR (Tap-Through Rate) | 9.7% |
-| Conversion Rate | 66.2% |
-| CPT (Cost Per Tap) | $2.25 |
-| CPA (Cost Per Acquisition) | $3.76 |
+| Metric                    | Search Results Average |
+|--------------------------|-----------------------|
+| TTR (Tap-Through Rate)    | 9.7%                   |
+| Conversion Rate           | 66.2%                  |
+| CPT (Cost Per Tap)        | $2.25                  |
+| CPA (Cost Per Acquisition)| $3.76                  |
 
 - US is the highest-cost market
 - AMEI (Africa/Middle East/India) is most cost-efficient and stable
@@ -162,9 +162,9 @@ ASA offers 4 placement types; evaluate coverage and performance:
 
 ### Platform Changes (v1.5)
 
-| ID | Check | Severity | Notes |
-|----|-------|----------|-------|
-| ASA-MA1 | Multiple ads per query readiness | Medium | Rolling out March 2026: up to 2 ads per search query (was 1). Changes competitive dynamics: more search results real estate available. Evaluate bid strategy for increased competition |
+| ID     | Check                           | Severity  | Notes                                                                                                                                                                                 |
+|-------|--------------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ASA-MA1| Multiple ads per query readiness| Medium    | Rolling out March 2026: up to 2 ads per search query (was 1). Changes competitive dynamics: more search results real estate available. Evaluate bid strategy for increased competition|
 
 **Deprecated:**
 - Creative Sets: fully deprecated. Only CPPs now (up to 70 per app)
@@ -201,15 +201,15 @@ PASS/WARNING/FAIL for each check category
 
 ## Scoring Weights
 
-| Category | Weight |
-|----------|--------|
-| Campaign Structure | 25% |
-| Bid Health | 20% |
-| Custom Product Pages | 15% |
-| Attribution & MMP | 15% |
-| Budget Pacing | 10% |
-| TAP Coverage | 10% |
-| Goal KPI Assessment | 5% |
+| Category            | Weight  |
+|--------------------|--------|
+| Campaign Structure  | 25%     |
+| Bid Health          | 20%     |
+| Custom Product Pages| 15%     |
+| Attribution & MMP   | 15%     |
+| Budget Pacing       | 10%     |
+| TAP Coverage        | 10%     |
+| Goal KPI Assessment | 5%      |
 
 ## Data to Request from User
 

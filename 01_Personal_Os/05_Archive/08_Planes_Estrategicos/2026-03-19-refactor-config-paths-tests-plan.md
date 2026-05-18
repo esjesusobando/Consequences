@@ -68,18 +68,18 @@ def test_run_audit_success():
 
 ## Success Metrics
 
-| Métrica                                                | Target                                                          |
+| Métrica                                                 | Target                                                           |
 |--------------------------------------------------------|-----------------------------------------------------------------|
-| Tests覆盖率                                               | 100% de funciones/constants                                     |
-| Tests pasando                                          | 35 → 35+ (sin regresión)                                        |
-| Fail-fast coverage                                     | 100% de validaciones                                            |
+| Tests覆盖率                                                | 100% de funciones/constants                                      |
+| Tests pasando                                           | 35 → 35+ (sin regresión)                                         |
+| Fail-fast coverage                                      | 100% de validaciones                                             |
 
 ## Dependencies & Risks
 
-| Tipo                                                | Descripción                                                             | Mitigación                                                     |
+| Tipo                                                 | Descripción                                                              | Mitigación                                                      |
 |-----------------------------------------------------|-------------------------------------------------------------------------|----------------------------------------------------------------|
-| **Dependencia**                                     | Requiere `PERSONAL_OS_ROOT` seteada                                     | Tests usan `monkeypatch`                                       |
-| **Riesgo**                                          | Tests rompen si estructura cambia                                       | Sincronizar con Inventario                                     |
+| **Dependencia**                                      | Requiere `PERSONAL_OS_ROOT` seteada                                      | Tests usan `monkeypatch`                                        |
+| **Riesgo**                                           | Tests rompen si estructura cambia                                        | Sincronizar con Inventario                                      |
 
 ## References & Research
 

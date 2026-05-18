@@ -16,11 +16,11 @@
 
 ## Example Connections Made
 
-| New Learning | Connected To | Type |
-|--------------|--------------|------|
-| Claude Computer Use | Claude Agent patterns | builds_on |
-| N8N Workflow patterns | Automation best practices | similar_pattern |
-| SDD methodology | Engineering architecture | enables |
+| New Learning         | Connected To             | Type           |
+|---------------------|-------------------------|---------------|
+| Claude Computer Use  | Claude Agent patterns    | builds_on      |
+| N8N Workflow patterns| Automation best practices| similar_pattern|
+| SDD methodology      | Engineering architecture | enables        |
 
 ---
 

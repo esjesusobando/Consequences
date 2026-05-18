@@ -7,22 +7,22 @@
 
 ## ✅ YA HECHO EN ESTA SESIÓN (2026-04-28 / 2026-04-29)
 
-| Tarea                                                                                            | Commit                                   | Estado               |
+| Tarea                                                                                             | Commit                                    | Estado                |
 |--------------------------------------------------------------------------------------------------|------------------------------------------|----------------------|
-| 4 archivos 01_Core/ actualizados (Comandos, Inventario, Dream Team, INVENTARIO_CORE)             | `f4ecd531` (sesión anterior)             | ✅                    |
-| `.agent/README.md`: 9 → 11 áreas, 14 → 23 HUBs                                                   | `0fe81612`                               | ✅                    |
-| `.gitignore`: reglas binarios (*.exe, PDFs, imágenes grandes)                                    | `0fe81612`                               | ✅                    |
-| `INDEX_AREA_FUNCTIONAL.md`: removido ÁREA 09, footer 11 áreas                                    | `0fe81612`                               | ✅                    |
-| `09_Legacy_Archive` movido a `05_Archive/09_Legacy_Skills_Archive/`                              | `0fe81612`                               | ✅                    |
-| `OS_DIRECTORY.md`: MCPs 33→35, Rules 10→11, HUB paths corregidos                                 | `0fe81612`                               | ✅                    |
-| OIM_Website_Backup: 8 commits pusheados a `Office_Installations_` via GitHub API                 | externo                                  | ✅                    |
-| **Sesión 2026-04-29 — Limpieza disco + Git**                                                     |                                          |                      |
-| Disco C: liberado ~40 GB (npm 21GB, uv 12GB, Temp 10GB, Playwright 1.9GB, Brave 1.1GB)           | n/a                                      | ✅                    |
-| Update 1100+ archivos OS: workflows, skills, agents, rules, docs                                 | `92983546`                               | ✅                    |
-| Fix `.gitignore`: excluir `01_Original_Source_Backups/` (firecrawl + marketingskills)            | `92983546`                               | ✅                    |
-| Removidos 5 submodules huérfanos del índice git                                                  | `750151c3`                               | ✅                    |
-| `.gitmodules` vaciado — repo sin dependencias externas                                           | `750151c3`                               | ✅                    |
-| Ex-submodules agregados al `.gitignore` — working tree limpio                                    | `0426f884`                               | ✅                    |
+| 4 archivos 01_Core/ actualizados (Comandos, Inventario, Dream Team, INVENTARIO_CORE)              | `f4ecd531` (sesión anterior)              | ✅                     |
+| `.agent/README.md`: 9 → 11 áreas, 14 → 23 HUBs                                                    | `0fe81612`                                | ✅                     |
+| `.gitignore`: reglas binarios (*.exe, PDFs, imágenes grandes)                                     | `0fe81612`                                | ✅                     |
+| `INDEX_AREA_FUNCTIONAL.md`: removido ÁREA 09, footer 11 áreas                                     | `0fe81612`                                | ✅                     |
+| `09_Legacy_Archive` movido a `05_Archive/09_Legacy_Skills_Archive/`                               | `0fe81612`                                | ✅                     |
+| `OS_DIRECTORY.md`: MCPs 33→35, Rules 10→11, HUB paths corregidos                                  | `0fe81612`                                | ✅                     |
+| OIM_Website_Backup: 8 commits pusheados a `Office_Installations_` via GitHub API                  | externo                                   | ✅                     |
+| **Sesión 2026-04-29 — Limpieza disco + Git**                                                      |                                           |                       |
+| Disco C: liberado ~40 GB (npm 21GB, uv 12GB, Temp 10GB, Playwright 1.9GB, Brave 1.1GB)            | n/a                                       | ✅                     |
+| Update 1100+ archivos OS: workflows, skills, agents, rules, docs                                  | `92983546`                                | ✅                     |
+| Fix `.gitignore`: excluir `01_Original_Source_Backups/` (firecrawl + marketingskills)             | `92983546`                                | ✅                     |
+| Removidos 5 submodules huérfanos del índice git                                                   | `750151c3`                                | ✅                     |
+| `.gitmodules` vaciado — repo sin dependencias externas                                            | `750151c3`                                | ✅                     |
+| Ex-submodules agregados al `.gitignore` — working tree limpio                                     | `0426f884`                                | ✅                     |
 
 ---
 
@@ -43,15 +43,15 @@
 ### 2. Disco lleno — .git tiene 392MB ⚠️ (C: liberado ~40GB hoy, pero .git history pesa)
 
 **Root cause identificado:**
-| Archivo                                                  | Tamaño en historia                           |
+| Archivo                                                   | Tamaño en historia                            |
 |----------------------------------------------------------|----------------------------------------------|
-| `Now/03_Imagenes_Finales/*.png`                          | 64MB (no existe en working tree)             |
-| `00_Library_PDFs/12_Globant_Tech_Trends.pdf`             | 27MB                                         |
-| `00_Library_PDFs/09_Data_Lab_Unicorn.pdf`                | 27MB                                         |
-| `improvement_log.json`                                   | 26MB                                         |
-| `engram.exe`                                             | 21MB                                         |
-| `Engram/cmd/engram/gentle-creation`                      | 17MB                                         |
-| `Engram/cmd/engram/main`                                 | 17MB                                         |
+| `Now/03_Imagenes_Finales/*.png`                           | 64MB (no existe en working tree)              |
+| `00_Library_PDFs/12_Globant_Tech_Trends.pdf`              | 27MB                                          |
+| `00_Library_PDFs/09_Data_Lab_Unicorn.pdf`                 | 27MB                                          |
+| `improvement_log.json`                                    | 26MB                                          |
+| `engram.exe`                                              | 21MB                                          |
+| `Engram/cmd/engram/gentle-creation`                       | 17MB                                          |
+| `Engram/cmd/engram/main`                                  | 17MB                                          |
 
 **Fix (requiere confirmación del usuario — operación destructiva):**
 ```bash
@@ -132,20 +132,20 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 
 ## 📊 ESTADO FINAL DEL SISTEMA
 
-| Métrica                      | Valor                                                            |
+| Métrica                       | Valor                                                             |
 |------------------------------|------------------------------------------------------------------|
-| Versión OS                   | v3.1 Consequences                                                |
-| Rules                        | 11 .mdc (00-10)                                                  |
-| Skills activas               | 11 áreas / 299 skills                                            |
-| Agents                       | 52+ (Dream Team 5, Specialists 24, individuales 12+)             |
-| HUBs                         | 23 scripts (19 + 4 auxiliares)                                   |
-| MCPs Claude                  | 35                                                               |
-| Manifests JARVIS             | 7                                                                |
-| .git size                    | 392MB ⚠️ (requiere limpieza con git filter-repo)                 |
-| Disco C libre                | ~28 GB ✅ (liberados ~40 GB hoy)                                  |
-| Submodules                   | ✅ Removidos (0 submodules activos)                               |
-| OIM Website                  | ✅ Pusheado a Office_Installations_                               |
-| Último commit OS             | `0426f884`                                                       |
+| Versión OS                    | v3.1 Consequences                                                 |
+| Rules                         | 11 .mdc (00-10)                                                   |
+| Skills activas                | 11 áreas / 299 skills                                             |
+| Agents                        | 52+ (Dream Team 5, Specialists 24, individuales 12+)              |
+| HUBs                          | 23 scripts (19 + 4 auxiliares)                                    |
+| MCPs Claude                   | 35                                                                |
+| Manifests JARVIS              | 7                                                                 |
+| .git size                     | 392MB ⚠️ (requiere limpieza con git filter-repo)                  |
+| Disco C libre                 | ~28 GB ✅ (liberados ~40 GB hoy)                                   |
+| Submodules                    | ✅ Removidos (0 submodules activos)                                |
+| OIM Website                   | ✅ Pusheado a Office_Installations_                                |
+| Último commit OS              | `0426f884`                                                        |
 
 ---
 

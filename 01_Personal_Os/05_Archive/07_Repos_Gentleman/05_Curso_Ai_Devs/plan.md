@@ -6,57 +6,57 @@
 
 ### Frontend
 
-| Tecnología                                         | Versión                                           | Justificación                                                                                                                                                                                                                       |
+| Tecnología                                          | Versión                                            | Justificación                                                                                                                                                                                                                        |
 |----------------------------------------------------|---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Next.js**                                        | 15 (App Router)                                   | SSR/SSG híbrido para 40+ páginas. ISR permite revalidar contenido deportivo sin rebuild completo. Server Components reducen JS del cliente. Route Groups organizan las 12+ secciones del sitemap.                                   |
-| **TypeScript**                                     | 5.x                                               | Con 20+ modelos de datos y relaciones cruzadas, el tipado fuerte previene errores y documenta las interfaces del dominio.                                                                                                           |
-| **Tailwind CSS**                                   | 4                                                 | Utility-first elimina CSS muerto. El sistema de tokens (colores del club, tipografía) se configura una vez. Compatible con RSC.                                                                                                     |
-| **React**                                          | 19                                                | Server Components nativos, Suspense boundaries para carga progresiva de datos deportivos.                                                                                                                                           |
+| **Next.js**                                         | 15 (App Router)                                    | SSR/SSG híbrido para 40+ páginas. ISR permite revalidar contenido deportivo sin rebuild completo. Server Components reducen JS del cliente. Route Groups organizan las 12+ secciones del sitemap.                                    |
+| **TypeScript**                                      | 5.x                                                | Con 20+ modelos de datos y relaciones cruzadas, el tipado fuerte previene errores y documenta las interfaces del dominio.                                                                                                            |
+| **Tailwind CSS**                                    | 4                                                  | Utility-first elimina CSS muerto. El sistema de tokens (colores del club, tipografía) se configura una vez. Compatible con RSC.                                                                                                      |
+| **React**                                           | 19                                                 | Server Components nativos, Suspense boundaries para carga progresiva de datos deportivos.                                                                                                                                            |
 
 ### CMS (Contenido Editorial)
 
-| Tecnología                                      | Justificación                                                                                                                                                                                                                                                                                                                                                                   |
+| Tecnología                                       | Justificación                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Sanity.io**                                   | Esquemas definidos como código TypeScript alineados con los 20+ modelos del requisito. GROQ permite queries complejas para relaciones entidad-entidad. Portable Text soporta los `body_bloques` y `biografia_bloques` del spec. Previsualización en tiempo real integrable con Next.js. CDN global incluido. Plan gratuito generoso para MVP.                                   |
+| **Sanity.io**                                    | Esquemas definidos como código TypeScript alineados con los 20+ modelos del requisito. GROQ permite queries complejas para relaciones entidad-entidad. Portable Text soporta los `body_bloques` y `biografia_bloques` del spec. Previsualización en tiempo real integrable con Next.js. CDN global incluido. Plan gratuito generoso para MVP.                                    |
 
 ### Base de Datos (Datos Deportivos)
 
-| Tecnología                                                             | Justificación                                                                                                                                                                                                                                                              |
+| Tecnología                                                              | Justificación                                                                                                                                                                                                                                                               |
 |------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **PostgreSQL** (via Supabase o Neon)                                   | Datos deportivos altamente relacionales: partidos vinculan equipos, competiciones, temporadas, estadios. PostgreSQL maneja JOINs eficientes, índices compuestos y JSON columns para datos semi-estructurados como `stats` y `eventos[]`.                                   |
-| **Drizzle ORM**                                                        | Type-safe, genera tipos TS del schema, migraciones declarativas. Más ligero que Prisma, mejor performance en edge runtimes.                                                                                                                                                |
+| **PostgreSQL** (via Supabase o Neon)                                    | Datos deportivos altamente relacionales: partidos vinculan equipos, competiciones, temporadas, estadios. PostgreSQL maneja JOINs eficientes, índices compuestos y JSON columns para datos semi-estructurados como `stats` y `eventos[]`.                                    |
+| **Drizzle ORM**                                                         | Type-safe, genera tipos TS del schema, migraciones declarativas. Más ligero que Prisma, mejor performance en edge runtimes.                                                                                                                                                 |
 
 ### Infraestructura y Servicios
 
-| Servicio                                                    | Uso                                                                                                                                                  |
+| Servicio                                                     | Uso                                                                                                                                                   |
 |-------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Vercel**                                                  | Deploy del frontend. Edge Functions para ISR. Preview deployments por PR. Analytics integrado.                                                       |
-| **Supabase**                                                | PostgreSQL gestionado + Auth (V1/V2) + Storage para assets pesados. Row Level Security para futuras APIs públicas.                                   |
-| **Resend**                                                  | Emails transaccionales y newsletter.                                                                                                                 |
-| **Algolia o Meilisearch**                                   | Búsqueda global facetada (MVP: búsqueda simple con PostgreSQL full-text; V1: migración a servicio dedicado).                                         |
+| **Vercel**                                                   | Deploy del frontend. Edge Functions para ISR. Preview deployments por PR. Analytics integrado.                                                        |
+| **Supabase**                                                 | PostgreSQL gestionado + Auth (V1/V2) + Storage para assets pesados. Row Level Security para futuras APIs públicas.                                    |
+| **Resend**                                                   | Emails transaccionales y newsletter.                                                                                                                  |
+| **Algolia o Meilisearch**                                    | Búsqueda global facetada (MVP: búsqueda simple con PostgreSQL full-text; V1: migración a servicio dedicado).                                          |
 
 ### Testing y Calidad
 
-| Herramienta                                      | Uso                                                                                      |
+| Herramienta                                       | Uso                                                                                       |
 |--------------------------------------------------|------------------------------------------------------------------------------------------|
-| **Vitest**                                       | Unit tests y tests de integración de la capa de datos.                                   |
-| **Playwright**                                   | E2E tests de flujos críticos.                                                            |
-| **Storybook**                                    | Catálogo de componentes UI, pruebas visuales.                                            |
-| **axe-core**                                     | Tests automatizados de accesibilidad.                                                    |
+| **Vitest**                                        | Unit tests y tests de integración de la capa de datos.                                    |
+| **Playwright**                                    | E2E tests de flujos críticos.                                                             |
+| **Storybook**                                     | Catálogo de componentes UI, pruebas visuales.                                             |
+| **axe-core**                                      | Tests automatizados de accesibilidad.                                                     |
 
 ### CI/CD
 
-| Herramienta                                                  | Uso                                                                                              |
+| Herramienta                                                   | Uso                                                                                               |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| **GitHub Actions**                                           | Pipeline de CI: lint, types, tests, build.                                                       |
-| **Vercel Git Integration**                                   | CD automático: preview por branch, producción en merge a main.                                   |
+| **GitHub Actions**                                            | Pipeline de CI: lint, types, tests, build.                                                        |
+| **Vercel Git Integration**                                    | CD automático: preview por branch, producción en merge a main.                                    |
 
 ### Monorepo
 
-| Herramienta                                     | Uso                                                                          |
+| Herramienta                                      | Uso                                                                           |
 |-------------------------------------------------|------------------------------------------------------------------------------|
-| **Turborepo**                                   | Orquestación de builds y cache entre apps.                                   |
-| **pnpm**                                        | Gestor de paquetes con workspaces.                                           |
+| **Turborepo**                                    | Orquestación de builds y cache entre apps.                                    |
+| **pnpm**                                         | Gestor de paquetes con workspaces.                                            |
 
 ---
 
@@ -205,19 +205,19 @@ platzi-fc/
 
 ### Estrategia de Rendering por Página
 
-| Página                                                     | Estrategia                                      | Revalidación                                          |
+| Página                                                      | Estrategia                                       | Revalidación                                           |
 |------------------------------------------------------------|-------------------------------------------------|-------------------------------------------------------|
-| Home                                                       | ISR                                             | 60s                                                   |
-| Partidos (listado)                                         | ISR                                             | 300s                                                  |
-| Partido (detalle activo)                                   | ISR                                             | 60s                                                   |
-| Partido (detalle pasado)                                   | ISR                                             | 3600s                                                 |
-| Equipo / Plantilla                                         | ISR                                             | 3600s                                                 |
-| Clasificación                                              | ISR                                             | 300s                                                  |
-| Noticias (listado)                                         | ISR                                             | 120s                                                  |
-| Noticia (detalle)                                          | ISR                                             | on-demand (webhook)                                   |
-| Páginas Club                                               | SSG                                             | on-demand (webhook)                                   |
-| Tienda                                                     | ISR                                             | 600s                                                  |
-| Búsqueda                                                   | SSR (dynamic)                                   | N/A                                                   |
+| Home                                                        | ISR                                              | 60s                                                    |
+| Partidos (listado)                                          | ISR                                              | 300s                                                   |
+| Partido (detalle activo)                                    | ISR                                              | 60s                                                    |
+| Partido (detalle pasado)                                    | ISR                                              | 3600s                                                  |
+| Equipo / Plantilla                                          | ISR                                              | 3600s                                                  |
+| Clasificación                                               | ISR                                              | 300s                                                   |
+| Noticias (listado)                                          | ISR                                              | 120s                                                   |
+| Noticia (detalle)                                           | ISR                                              | on-demand (webhook)                                    |
+| Páginas Club                                                | SSG                                              | on-demand (webhook)                                    |
+| Tienda                                                      | ISR                                              | 600s                                                   |
+| Búsqueda                                                    | SSR (dynamic)                                    | N/A                                                    |
 
 ---
 
@@ -360,19 +360,19 @@ platzi-fc/
 
 ## 5) Integraciones Clave por Fase
 
-| Integración                                              | Fase                                   | Mecanismo                                                                                  |
+| Integración                                               | Fase                                    | Mecanismo                                                                                   |
 |----------------------------------------------------------|----------------------------------------|--------------------------------------------------------------------------------------------|
-| Sanity CMS                                               | MVP                                    | GROQ queries en Server Components + webhook revalidation                                   |
-| PostgreSQL                                               | MVP                                    | Drizzle ORM queries en Server Components                                                   |
-| Sanity Preview                                           | MVP                                    | Draft mode de Next.js + Sanity preview API                                                 |
-| Email (Resend)                                           | V1                                     | API route para newsletter signup                                                           |
-| Búsqueda (Algolia)                                       | V1                                     | Sync desde ambos datastores via webhooks/cron                                              |
-| Analytics (GA4/Vercel)                                   | V1                                     | Script tag con consent management                                                          |
-| Ticketing Provider                                       | V2                                     | API REST o iframe embebido                                                                 |
-| E-commerce                                               | V2                                     | Shopify Storefront API o similar                                                           |
-| WebSocket (live)                                         | V2                                     | Supabase Realtime channels                                                                 |
-| Push Notifications                                       | V2                                     | Web Push API + service worker                                                              |
-| Auth (Supabase)                                          | V2                                     | Supabase Auth con middleware Next.js                                                       |
+| Sanity CMS                                                | MVP                                     | GROQ queries en Server Components + webhook revalidation                                    |
+| PostgreSQL                                                | MVP                                     | Drizzle ORM queries en Server Components                                                    |
+| Sanity Preview                                            | MVP                                     | Draft mode de Next.js + Sanity preview API                                                  |
+| Email (Resend)                                            | V1                                      | API route para newsletter signup                                                            |
+| Búsqueda (Algolia)                                        | V1                                      | Sync desde ambos datastores via webhooks/cron                                               |
+| Analytics (GA4/Vercel)                                    | V1                                      | Script tag con consent management                                                           |
+| Ticketing Provider                                        | V2                                      | API REST o iframe embebido                                                                  |
+| E-commerce                                                | V2                                      | Shopify Storefront API o similar                                                            |
+| WebSocket (live)                                          | V2                                      | Supabase Realtime channels                                                                  |
+| Push Notifications                                        | V2                                      | Web Push API + service worker                                                               |
+| Auth (Supabase)                                           | V2                                      | Supabase Auth con middleware Next.js                                                        |
 
 ---
 

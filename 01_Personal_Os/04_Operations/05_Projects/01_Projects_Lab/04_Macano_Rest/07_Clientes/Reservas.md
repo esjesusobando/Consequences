@@ -4,25 +4,25 @@
 
 ### Hoy
 
-| #                           | Nombre                           | Teléfono                           | Hora                           | Personas                           | Mesa                           | Estado                             |
+| #                            | Nombre                            | Teléfono                            | Hora                            | Personas                            | Mesa                            | Estado                              |
 |-----------------------------|----------------------------------|------------------------------------|--------------------------------|------------------------------------|--------------------------------|------------------------------------|
-| 1                           |                                  |                                    |                                |                                    |                                | Confirmada                         |
-| 2                           |                                  |                                    |                                |                                    |                                | Pendiente                          |
-| 3                           |                                  |                                    |                                |                                    |                                | Cancelada                          |
+| 1                            |                                   |                                     |                                 |                                     |                                 | Confirmada                          |
+| 2                            |                                   |                                     |                                 |                                     |                                 | Pendiente                           |
+| 3                            |                                   |                                     |                                 |                                     |                                 | Cancelada                           |
 
 ---
 
 ### Esta Semana
 
-| Fecha                             | Total reservas                          | Personas total                           |
+| Fecha                              | Total reservas                           | Personas total                            |
 |-----------------------------------|-----------------------------------------|------------------------------------------|
-| Lunes                             |                                         |                                          |
-| Martes                            |                                         |                                          |
-| Miércoles                         |                                         |                                          |
-| Jueves                            |                                         |                                          |
-| Viernes                           |                                         |                                          |
-| Sábado                            |                                         |                                          |
-| Domingo                           |                                         |                                          |
+| Lunes                              |                                          |                                           |
+| Martes                             |                                          |                                           |
+| Miércoles                          |                                          |                                           |
+| Jueves                             |                                          |                                           |
+| Viernes                            |                                          |                                           |
+| Sábado                             |                                          |                                           |
+| Domingo                            |                                          |                                           |
 
 ---
 

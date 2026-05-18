@@ -82,36 +82,36 @@ Ingeniero de Petróleos con **17+ años de experiencia** combinando operaciones 
 ## 📜 CERTIFICACIONES
 
 ### AI & Digital
-| Certificación                                    | Año                             |
+| Certificación                                     | Año                              |
 |--------------------------------------------------|---------------------------------|
-| AI Day - IA Generativa                           | 2025                            |
-| Big School AI                                    | 2025                            |
-| Google Data Analytics                            | 2022                            |
-| Python Fundamentals                              | 2024                            |
-| Growth AI Marketing                              | 2024                            |
-| Advanced ChatGPT / LLM                           | 2024                            |
+| AI Day - IA Generativa                            | 2025                             |
+| Big School AI                                     | 2025                             |
+| Google Data Analytics                             | 2022                             |
+| Python Fundamentals                               | 2024                             |
+| Growth AI Marketing                               | 2024                             |
+| Advanced ChatGPT / LLM                            | 2024                             |
 
 ### Industrial (Oil & Gas)
-| Certificación                                                           | Año                             |
+| Certificación                                                            | Año                              |
 |-------------------------------------------------------------------------|---------------------------------|
-| **IADC WellCAP** - Control de Pozos                                     | 2014                            |
-| Ingeniería de Perforación Aplicada                                      | 2014                            |
-| Control de Arenas                                                       | 2013                            |
-| Cementaciones de Pozos                                                  | 2013                            |
-| Diseño Direccional / BHA                                                | 2012                            |
-| Prevención de Pega de Túberías (Schlumberger)                           | 2012                            |
+| **IADC WellCAP** - Control de Pozos                                      | 2014                             |
+| Ingeniería de Perforación Aplicada                                       | 2014                             |
+| Control de Arenas                                                        | 2013                             |
+| Cementaciones de Pozos                                                   | 2013                             |
+| Diseño Direccional / BHA                                                 | 2012                             |
+| Prevención de Pega de Túberías (Schlumberger)                            | 2012                             |
 
 ### PM & Business
-| Certificación                                                | Año                             |
+| Certificación                                                 | Año                              |
 |--------------------------------------------------------------|---------------------------------|
-| Project Manager & Business Analyst                           | 2024                            |
+| Project Manager & Business Analyst                            | 2024                             |
 
 ### HSE
-| Certificación                                          | Año                             |
+| Certificación                                           | Año                              |
 |--------------------------------------------------------|---------------------------------|
-| HSE & Protección Personal                              | 2007                            |
-| Análisis de Riesgo (ART)                               | 2013                            |
-| Ciberseguridad para Empresas                           | 2013                            |
+| HSE & Protección Personal                               | 2007                             |
+| Análisis de Riesgo (ART)                                | 2013                             |
+| Ciberseguridad para Empresas                            | 2013                             |
 
 ---
 
@@ -133,14 +133,14 @@ Interfaz NLP para consultar reportes técnicos con RAG
 
 ## 🏆 LOGROS CLAVE
 
-| Métrica                                            | Impacto                                        |
+| Métrica                                             | Impacto                                         |
 |----------------------------------------------------|------------------------------------------------|
-| Procesamiento documental                           | 95% reducción tiempo                           |
-| Productividad                                      | 30% aumento                                    |
-| VPN por pozo                                       | $200k+                                         |
-| Seguridad                                          | 0 LTI                                          |
-| NPT                                                | 12% reducción                                  |
-| Torque/drag                                        | 20% reducción                                  |
+| Procesamiento documental                            | 95% reducción tiempo                            |
+| Productividad                                       | 30% aumento                                     |
+| VPN por pozo                                        | $200k+                                          |
+| Seguridad                                           | 0 LTI                                           |
+| NPT                                                 | 12% reducción                                   |
+| Torque/drag                                         | 20% reducción                                   |
 
 ---
 

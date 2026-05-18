@@ -146,12 +146,12 @@ Para generación real de thumbnail, agregar step opcional:
 
 ## Agentes Involucrados
 
-| #         | Agent                            | Función                        | Input                | Output                       |
+| #          | Agent                             | Función                         | Input                 | Output                        |
 |-----------|----------------------------------|--------------------------------|----------------------|------------------------------|
-| 13        | Content Transformer              | Idea → Brief                   | Idea                 | Brief estructurado           |
-| 14        | Youtube Script Writer            | Brief → Guion                  | Brief                | Guion con timestamps         |
-| 16        | Youtube Title Generator          | Guion → Títulos                | Guion                | 10+ títulos con scores       |
-| 15        | Youtube Thumbnail Prompter       | Título + Guion → Prompts       | Título + Guion       | Prompts para imagen          |
+| 13         | Content Transformer               | Idea → Brief                    | Idea                  | Brief estructurado            |
+| 14         | Youtube Script Writer             | Brief → Guion                   | Brief                 | Guion con timestamps          |
+| 16         | Youtube Title Generator           | Guion → Títulos                 | Guion                 | 10+ títulos con scores        |
+| 15         | Youtube Thumbnail Prompter        | Título + Guion → Prompts        | Título + Guion        | Prompts para imagen           |
 
 ---
 

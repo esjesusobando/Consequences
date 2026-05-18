@@ -5,19 +5,19 @@
 
 ## Platform Selection Matrix by Business Type
 
-| Business Type | Platform 1 | Platform 2 | Platform 3 | Other | Min Monthly | Primary KPI | Time to Profit |
-|--------------|------------|------------|------------|-------|-------------|-------------|---------------|
-| SaaS B2B | Google 35-45% | LinkedIn 30-40% | Meta 15-25% | YouTube 10% | $5,000 | Pipeline ROI, LTV:CAC | 3-6 months |
-| E-commerce DTC | Meta 50-68% | Google PMax 23-30% | TikTok 5-15% | Email 5% | $3,000 | ROAS, MER, POAS | 0-2 months |
-| Local Service | Google LSA/Search 60% | Meta 30% | Bing 10% | N/A | $1,500 | Cost Per Lead/Booking | 1 month |
-| B2B Enterprise | LinkedIn 39-60% | Google 20-35% | ABM Display 15-20% | Programmatic 11% | $10,000 | Pipeline, SQLs | 6-12 months |
-| Info Products | YouTube 40% | Meta 40% | Email 20% | N/A | $2,000 | ROAS, Webinar CPL | 1-3 months |
-| Mobile App | Apple Search 30% | Google App 30% | Meta/TikTok 40% | N/A | $5,000 | CPI, LTV, D7 Retention | 3-6 months |
-| Real Estate | Meta Lead Forms 50% | Google Search 40% | LinkedIn 10% | N/A | $2,500 | Cost Per Lead | 2-4 months |
-| Healthcare | Google Search 55% | Meta 20% | Microsoft 10% | YouTube/Display 15% | $4,000 | Cost Per Patient | 2-5 months |
-| Finance/Fintech | Google Search 40-50% | LinkedIn 20-30% | Meta 15% | YouTube/Display 10% | $8,000 | CAC, LTV:CAC | 4-8 months |
-| Agency (Own) | LinkedIn 50% | Meta 30% | Google 20% | N/A | $1,500 | Cost Per Lead | 1-3 months |
-| B2C / DTC | Meta 50% | Google 20% | TikTok 30% | N/A | $2,000 | ROAS, CAC | 1-3 months |
+| Business Type  | Platform 1           | Platform 2        | Platform 3        | Other              | Min Monthly  | Primary KPI           | Time to Profit |
+|---------------|---------------------|------------------|------------------|-------------------|-------------|----------------------|---------------|
+| SaaS B2B       | Google 35-45%        | LinkedIn 30-40%   | Meta 15-25%       | YouTube 10%        | $5,000       | Pipeline ROI, LTV:CAC | 3-6 months     |
+| E-commerce DTC | Meta 50-68%          | Google PMax 23-30%| TikTok 5-15%      | Email 5%           | $3,000       | ROAS, MER, POAS       | 0-2 months     |
+| Local Service  | Google LSA/Search 60%| Meta 30%          | Bing 10%          | N/A                | $1,500       | Cost Per Lead/Booking | 1 month        |
+| B2B Enterprise | LinkedIn 39-60%      | Google 20-35%     | ABM Display 15-20%| Programmatic 11%   | $10,000      | Pipeline, SQLs        | 6-12 months    |
+| Info Products  | YouTube 40%          | Meta 40%          | Email 20%         | N/A                | $2,000       | ROAS, Webinar CPL     | 1-3 months     |
+| Mobile App     | Apple Search 30%     | Google App 30%    | Meta/TikTok 40%   | N/A                | $5,000       | CPI, LTV, D7 Retention| 3-6 months     |
+| Real Estate    | Meta Lead Forms 50%  | Google Search 40% | LinkedIn 10%      | N/A                | $2,500       | Cost Per Lead         | 2-4 months     |
+| Healthcare     | Google Search 55%    | Meta 20%          | Microsoft 10%     | YouTube/Display 15%| $4,000       | Cost Per Patient      | 2-5 months     |
+| Finance/Fintech| Google Search 40-50% | LinkedIn 20-30%   | Meta 15%          | YouTube/Display 10%| $8,000       | CAC, LTV:CAC          | 4-8 months     |
+| Agency (Own)   | LinkedIn 50%         | Meta 30%          | Google 20%        | N/A                | $1,500       | Cost Per Lead         | 1-3 months     |
+| B2C / DTC      | Meta 50%             | Google 20%        | TikTok 30%        | N/A                | $2,000       | ROAS, CAC             | 1-3 months     |
 
 ## Budget Distribution Rule: 70/20/10
 
@@ -57,12 +57,12 @@ THEN roll back to previous budget level
 ```
 
 ### Saturation Signals
-| Platform | Signal | Threshold | Action |
-|----------|--------|-----------|--------|
-| Google | Impression Share | >80% | Diminishing returns; diversify |
-| Meta | Frequency (7-day) | >4.0 | Audience exhausted; refresh creative or expand |
-| TikTok | Frequency | >3.0 | Creative fatigue; replace assets |
-| LinkedIn | Audience penetration | >50% | Audience exhausted; expand targeting |
+| Platform  | Signal              | Threshold  | Action                                        |
+|----------|--------------------|-----------|----------------------------------------------|
+| Google    | Impression Share    | >80%       | Diminishing returns; diversify                |
+| Meta      | Frequency (7-day)   | >4.0       | Audience exhausted; refresh creative or expand|
+| TikTok    | Frequency           | >3.0       | Creative fatigue; replace assets              |
+| LinkedIn  | Audience penetration| >50%       | Audience exhausted; expand targeting          |
 
 ## Marketing Efficiency Ratio (MER)
 
@@ -70,11 +70,11 @@ THEN roll back to previous budget level
 MER = Total Revenue / Total Ad Spend (all platforms combined)
 ```
 
-| Business Type | Healthy MER | Excellent MER | Danger Zone |
-|--------------|-------------|---------------|-------------|
-| E-commerce | 3.0-5.0 | >5.0 | <2.0 |
-| SaaS | Use LTV:CAC (3:1 target) | >4:1 | <2:1 |
-| Lead Gen | Revenue/Lead × CVR / CPL | N/A | <1.5 |
+| Business Type | Healthy MER             | Excellent MER  | Danger Zone  |
+|--------------|------------------------|---------------|-------------|
+| E-commerce    | 3.0-5.0                 | >5.0           | <2.0         |
+| SaaS          | Use LTV:CAC (3:1 target)| >4:1           | <2:1         |
+| Lead Gen      | Revenue/Lead × CVR / CPL| N/A            | <1.5         |
 
 **Why MER over ROAS:**
 - ROAS is platform-reported (overclaims by 20-40%)
@@ -127,13 +127,13 @@ MER = Total Revenue / Total Ad Spend (all platforms combined)
 
 ## Minimum Viable Budgets
 
-| Platform | Minimum Monthly | Rationale |
-|----------|----------------|-----------|
-| Google Ads | $1,000 | 15+ conv/month minimum for Smart Bidding |
-| Meta Ads | $600-$800 | 50 conv/week/ad set × $CPA |
-| LinkedIn Ads | $3,000 | High CPCs; $10/day minimum × multiple campaigns |
-| TikTok Ads | $300 | $50/day campaign min × creative testing needs |
-| Microsoft Ads | $200-$300 | 20-30% of Google budget |
+| Platform     | Minimum Monthly | Rationale                                      |
+|-------------|----------------|-----------------------------------------------|
+| Google Ads   | $1,000          | 15+ conv/month minimum for Smart Bidding       |
+| Meta Ads     | $600-$800       | 50 conv/week/ad set × $CPA                     |
+| LinkedIn Ads | $3,000          | High CPCs; $10/day minimum × multiple campaigns|
+| TikTok Ads   | $300            | $50/day campaign min × creative testing needs  |
+| Microsoft Ads| $200-$300       | 20-30% of Google budget                        |
 
 ## Cross-Platform Attribution Hierarchy
 

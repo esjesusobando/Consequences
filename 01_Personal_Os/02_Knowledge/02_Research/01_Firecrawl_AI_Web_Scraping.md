@@ -17,14 +17,14 @@
 
 ## 📊 Estadísticas
 
-| Métrica                                          | Valor                                            |
+| Métrica                                           | Valor                                             |
 |--------------------------------------------------|--------------------------------------------------|
-| **Stars**                                        | 110k+                                            |
-| **Forks**                                        | 7k                                               |
-| **Commits**                                      | 5,290                                            |
-| **Lenguaje principal**                           | TypeScript (67.1%)                               |
-| **Licencia**                                     | AGPL-3.0 (Open Source)                           |
-| **Última versión**                               | v2.9.0 (2026-04-10)                              |
+| **Stars**                                         | 110k+                                             |
+| **Forks**                                         | 7k                                                |
+| **Commits**                                       | 5,290                                             |
+| **Lenguaje principal**                            | TypeScript (67.1%)                                |
+| **Licencia**                                      | AGPL-3.0 (Open Source)                            |
+| **Última versión**                                | v2.9.0 (2026-04-10)                               |
 
 ---
 
@@ -32,15 +32,15 @@
 
 ### Endpoints Core
 
-| Endpoint                                   | Descripción                                                                                  |
+| Endpoint                                    | Descripción                                                                                   |
 |--------------------------------------------|----------------------------------------------------------------------------------------------|
-| **Search**                                 | Buscar en la web y obtener contenido completo de resultados                                  |
-| **Scrape**                                 | Convertir cualquier URL a markdown, HTML, JSON, screenshots                                  |
-| **Interact**                               | Raspar página y luego interactuar con ella (click, scroll, write)                            |
-| **Agent**                                  | Recolección automatizada de datos — solo describe lo que necesitas                           |
-| **Crawl**                                  | Raspar todas las URLs de un website con una sola petición                                    |
-| **Map**                                    | Descubrir todas las URLs de un website instantáneamente                                      |
-| **Batch Scrape**                           | Raspar miles de URLs asincrónicamente                                                        |
+| **Search**                                  | Buscar en la web y obtener contenido completo de resultados                                   |
+| **Scrape**                                  | Convertir cualquier URL a markdown, HTML, JSON, screenshots                                   |
+| **Interact**                                | Raspar página y luego interactuar con ella (click, scroll, write)                             |
+| **Agent**                                   | Recolección automatizada de datos — solo describe lo que necesitas                            |
+| **Crawl**                                   | Raspar todas las URLs de un website con una sola petición                                     |
+| **Map**                                     | Descubrir todas las URLs de un website instantáneamente                                       |
+| **Batch Scrape**                            | Raspar miles de URLs asincrónicamente                                                         |
 
 ### Features Clave
 
@@ -56,14 +56,14 @@
 
 ## 💻 SDKs Disponibles
 
-| Lenguaje                              | Install                                                        |
+| Lenguaje                               | Install                                                         |
 |---------------------------------------|----------------------------------------------------------------|
-| **Python**                            | `pip install firecrawl-py`                                     |
-| **Node.js**                           | `npm install @mendable/firecrawl-js`                           |
-| **Java**                              | Gradle/Maven (ver docs)                                        |
-| **Elixir**                            | `{:firecrawl, "~> 1.0"}`                                       |
-| **Rust**                              | `firecrawl = "2"`                                              |
-| **Go**                                | SDK community                                                  |
+| **Python**                             | `pip install firecrawl-py`                                      |
+| **Node.js**                            | `npm install @mendable/firecrawl-js`                            |
+| **Java**                               | Gradle/Maven (ver docs)                                         |
+| **Elixir**                             | `{:firecrawl, "~> 1.0"}`                                        |
+| **Rust**                               | `firecrawl = "2"`                                               |
+| **Go**                                 | SDK community                                                   |
 
 ---
 
@@ -167,16 +167,16 @@ result = app.agent(
 
 ## 🆚 Open Source vs Cloud
 
-| Feature                                        | Open Source                             | Cloud                             |
+| Feature                                         | Open Source                              | Cloud                              |
 |------------------------------------------------|-----------------------------------------|-----------------------------------|
-| Core scraping                                  | ✅                                       | ✅                                 |
-| Search                                         | ✅                                       | ✅                                 |
-| Agent (spark-1-mini)                           | ✅                                       | ✅                                 |
-| Agent (spark-1-pro)                            | ❌                                       | ✅                                 |
-| Crawl website                                  | ✅                                       | ✅                                 |
-| Batch scrape                                   | ❌                                       | ✅                                 |
-| Priority support                               | ❌                                       | ✅                                 |
-| Self-hosting                                   | ✅                                       | ❌                                 |
+| Core scraping                                   | ✅                                        | ✅                                  |
+| Search                                          | ✅                                        | ✅                                  |
+| Agent (spark-1-mini)                            | ✅                                        | ✅                                  |
+| Agent (spark-1-pro)                             | ❌                                        | ✅                                  |
+| Crawl website                                   | ✅                                        | ✅                                  |
+| Batch scrape                                    | ❌                                        | ✅                                  |
+| Priority support                                | ❌                                        | ✅                                  |
+| Self-hosting                                    | ✅                                        | ❌                                  |
 
 ---
 

@@ -18,14 +18,14 @@ Gemini CLI ([google-gemini/gemini-cli](https://github.com/google-gemini/gemini-c
 
 ## Component Mapping
 
-| Claude Code                                   | Gemini Equivalent                                      | Notes                                                                                                                                                   |
+| Claude Code                                    | Gemini Equivalent                                       | Notes                                                                                                                                                    |
 |-----------------------------------------------|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `agents/*.md`                                 | `.gemini/skills/*/SKILL.md`                            | Agents become skills -- Gemini activates them on demand via `activate_skill` tool based on description matching                                         |
-| `commands/*.md`                               | `.gemini/commands/*.toml`                              | TOML format with `prompt` and `description` fields; namespaced via directory structure                                                                  |
-| `skills/*/SKILL.md`                           | `.gemini/skills/*/SKILL.md`                            | **Identical standard** -- copy directly                                                                                                                 |
-| MCP servers                                   | `settings.json` `mcpServers`                           | Same MCP protocol; different config location (`settings.json` vs `.mcp.json`)                                                                           |
-| `hooks/`                                      | `settings.json` hooks                                  | Gemini has hooks (`BeforeTool`, `AfterTool`, `SessionStart`, etc.) but different format; emit `console.warn` and skip for now                           |
-| `.claude/` paths                              | `.gemini/` paths                                       | Content rewriting needed                                                                                                                                |
+| `agents/*.md`                                  | `.gemini/skills/*/SKILL.md`                             | Agents become skills -- Gemini activates them on demand via `activate_skill` tool based on description matching                                          |
+| `commands/*.md`                                | `.gemini/commands/*.toml`                               | TOML format with `prompt` and `description` fields; namespaced via directory structure                                                                   |
+| `skills/*/SKILL.md`                            | `.gemini/skills/*/SKILL.md`                             | **Identical standard** -- copy directly                                                                                                                  |
+| MCP servers                                    | `settings.json` `mcpServers`                            | Same MCP protocol; different config location (`settings.json` vs `.mcp.json`)                                                                            |
+| `hooks/`                                       | `settings.json` hooks                                   | Gemini has hooks (`BeforeTool`, `AfterTool`, `SessionStart`, etc.) but different format; emit `console.warn` and skip for now                            |
+| `.claude/` paths                               | `.gemini/` paths                                        | Content rewriting needed                                                                                                                                 |
 
 ### Key Design Decisions
 

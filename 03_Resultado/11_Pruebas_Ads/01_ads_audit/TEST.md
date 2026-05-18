@@ -23,13 +23,13 @@ Producto: Sistema operativo personal potenciado con IA
 
 ### Quick Audit Results (Simulado)
 
-| Categoría | Score | Finding |
-|-----------|-------|---------|
-| Conversion Tracking | 100/100 | GTM completo, Enhanced Conversions activos |
-| Account Structure | 100/100 | Campañas separadas por objetivo |
-| Keywords | 100/100 | Excelente coverage, negatives configurados |
-| Ads & Assets | 100/100 | RSA activos, video assets incluidos |
-| Settings | 100/100 | Bidding configurado correctamente |
+| Categoría          | Score  | Finding                                   |
+|-------------------|-------|------------------------------------------|
+| Conversion Tracking| 100/100| GTM completo, Enhanced Conversions activos|
+| Account Structure  | 100/100| Campañas separadas por objetivo           |
+| Keywords           | 100/100| Excelente coverage, negatives configurados|
+| Ads & Assets       | 100/100| RSA activos, video assets incluidos       |
+| Settings           | 100/100| Bidding configurado correctamente         |
 
 **Ads Health Score**: 100/100 (Grade A+ / Excellent)
 

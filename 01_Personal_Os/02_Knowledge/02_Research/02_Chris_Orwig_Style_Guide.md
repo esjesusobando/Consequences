@@ -8,12 +8,12 @@
 ## 1. IDENTIDAD DE MARCA
 
 ### Posicionamiento
-| Atributo                                        | Descripción                                                                      |
+| Atributo                                         | Descripción                                                                       |
 |-------------------------------------------------|----------------------------------------------------------------------------------|
-| **Tagline Principal**                           | "Authentic Portraiture & Good Living"                                            |
-| **Nicho**                                       | Retratos auténticos, lifestyle, fotografía corporativa                           |
-| **Mercado**                                     | Santa Barbara, California - clientes premium                                     |
-| **Personalidad**                                | Family man, surfer, yogi, warm-hearted                                           |
+| **Tagline Principal**                            | "Authentic Portraiture & Good Living"                                             |
+| **Nicho**                                        | Retratos auténticos, lifestyle, fotografía corporativa                            |
+| **Mercado**                                      | Santa Barbara, California - clientes premium                                      |
+| **Personalidad**                                 | Family man, surfer, yogi, warm-hearted                                            |
 
 ### Valores Centrales
 1. **Autenticidad** - Capturar la esencia real del sujeto
@@ -26,14 +26,14 @@
 ## 2. PALETA DE COLORES
 
 ### Colores Identificados
-| Color                                        | Hex                                 | Uso                                                  |
+| Color                                         | Hex                                  | Uso                                                   |
 |----------------------------------------------|-------------------------------------|------------------------------------------------------|
-| **Blanco natural**                           | `#FFFFFF`                           | Fondo principal                                      |
-| **Negro suave**                              | `#1A1A1A`                           | Texto principal                                      |
-| **Gris cálido**                              | `#8A8A8A`                           | Texto secundario                                     |
-| **Arena/Dorado**                             | `#C9A962`                           | Acentos, detalles premium                            |
-| **Azul océano**                              | `#2D5A7B`                           | Links, acentos secundarios                           |
-| **Verde natura**                             | `#4A6741`                           | Elementos naturales                                  |
+| **Blanco natural**                            | `#FFFFFF`                            | Fondo principal                                       |
+| **Negro suave**                               | `#1A1A1A`                            | Texto principal                                       |
+| **Gris cálido**                               | `#8A8A8A`                            | Texto secundario                                      |
+| **Arena/Dorado**                              | `#C9A962`                            | Acentos, detalles premium                             |
+| **Azul océano**                               | `#2D5A7B`                            | Links, acentos secundarios                            |
+| **Verde natura**                              | `#4A6741`                            | Elementos naturales                                   |
 
 ### Aplicación
 - Fondos limpios, minimalistas
@@ -46,12 +46,12 @@
 ## 3. TIPOGRAFÍA
 
 ### Familia Principal
-| Elemento                                   | Fuente                                     | Peso                                    |
+| Elemento                                    | Fuente                                      | Peso                                     |
 |--------------------------------------------|--------------------------------------------|-----------------------------------------|
-| **Headlines**                              | Playfair Display                           | Regular/Bold                            |
-| **Subheadlines**                           | Lato                                       | Light/Regular                           |
-| **Body**                                   | Lato                                       | Regular                                 |
-| **Nav/Menu**                               | Lato                                       | Medium                                  |
+| **Headlines**                               | Playfair Display                            | Regular/Bold                             |
+| **Subheadlines**                            | Lato                                        | Light/Regular                            |
+| **Body**                                    | Lato                                        | Regular                                  |
+| **Nav/Menu**                                | Lato                                        | Medium                                   |
 
 ### Características
 - **Contraste**: Headlines serif + body sans-serif
@@ -63,13 +63,13 @@
 ## 4. FOTOGRAFÍA - ESTÉTICA VISUAL
 
 ### Estilo Fotográfico
-| Elemento                                  | Característica                                              |
+| Elemento                                   | Característica                                               |
 |-------------------------------------------|-------------------------------------------------------------|
-| **Luz**                                   | Natural, suave, golden hour                                 |
-| **Palette**                               | Tonos cálidos, neutros, piel real                           |
-| **Composición**                           | Centrada, espacio negativo                                  |
-| **Expresión**                             | Auténtica,sparkle en ojos                                   |
-| **Edición**                               | Clean, mínimo procesado                                     |
+| **Luz**                                    | Natural, suave, golden hour                                  |
+| **Palette**                                | Tonos cálidos, neutros, piel real                            |
+| **Composición**                            | Centrada, espacio negativo                                   |
+| **Expresión**                              | Auténtica,sparkle en ojos                                    |
+| **Edición**                                | Clean, mínimo procesado                                      |
 
 ### Temas Recurrentes
 1. **Portraits** - Profundos, soulful, true
@@ -113,12 +113,12 @@
 ## 6. VOICE & TONE
 
 ### Voz
-| Aspecto                                | Descripción                                               |
+| Aspecto                                 | Descripción                                                |
 |----------------------------------------|-----------------------------------------------------------|
-| **Tono**                               | Warm, inspirador, accesible                               |
-| **Lenguaje**                           | Personal, no técnico                                      |
-| **mensajes**                           | "Stay Stoked", "Good Living"                              |
-| **CTA**                                | "Book a Session", "Get Started"                           |
+| **Tono**                                | Warm, inspirador, accesible                                |
+| **Lenguaje**                            | Personal, no técnico                                       |
+| **mensajes**                            | "Stay Stoked", "Good Living"                               |
+| **CTA**                                 | "Book a Session", "Get Started"                            |
 
 ### Mensajes Clave
 - "Capture the moment, savor life"
@@ -137,14 +137,14 @@
 ## 7. PRODUCTOS / SERVICIOS
 
 ### Ofertas Identificadas
-| Servicio                                    | Descripción                                                            |
+| Servicio                                     | Descripción                                                             |
 |---------------------------------------------|------------------------------------------------------------------------|
-| **Retratos**                                | Sesiones individuales y corporativas                                   |
-| **Familia**                                 | Fotografía familiar lifestyle                                          |
-| **Libros**                                  | 7+ libros (Lightroom, Photoshop, Creativity)                           |
-| **Workshops**                               | Clases presenciales y online                                           |
-| **Coaching**                                | Mentoría para fotógrafos                                               |
-| **Cursos Online**                           | 100+ tutoriales (5000+ horas)                                          |
+| **Retratos**                                 | Sesiones individuales y corporativas                                    |
+| **Familia**                                  | Fotografía familiar lifestyle                                           |
+| **Libros**                                   | 7+ libros (Lightroom, Photoshop, Creativity)                            |
+| **Workshops**                                | Clases presenciales y online                                            |
+| **Coaching**                                 | Mentoría para fotógrafos                                                |
+| **Cursos Online**                            | 100+ tutoriales (5000+ horas)                                           |
 
 ### Libros Publicados
 1. Visual Poetry (2009)
@@ -191,12 +191,12 @@
 
 ## 10. COMPARACIÓN CON OTRAS FOTÓGRAFOS
 
-| Aspecto                               | Chris Orwig                               | Estilo General                                              |
+| Aspecto                                | Chris Orwig                                | Estilo General                                               |
 |---------------------------------------|-------------------------------------------|-------------------------------------------------------------|
-| Luz                                   | Natural, golden                           | Similar a David duChemin                                    |
-| Color                                 | Cálido, sutil                             | Menos saturado que Peter McKinnon                           |
-| Composición                           | Minimal                                   | Más limpio que Steve McCurry                                |
-| Edición                               | Clean, real                               | Menos que otros                                             |
+| Luz                                    | Natural, golden                            | Similar a David duChemin                                     |
+| Color                                  | Cálido, sutil                              | Menos saturado que Peter McKinnon                            |
+| Composición                            | Minimal                                    | Más limpio que Steve McCurry                                 |
+| Edición                                | Clean, real                                | Menos que otros                                              |
 
 ---
 
@@ -231,23 +231,23 @@
 
 ### Mix Base = Esencia Chris Orwig + Contexto
 
-| Contexto                                              | Mix Aplicado                                                       |
+| Contexto                                               | Mix Aplicado                                                        |
 |-------------------------------------------------------|--------------------------------------------------------------------|
-| **Profesional/Corporativo**                           | Profesional + calidez humana + propósito                           |
-| **Lifestyle/Personal**                                | Personal + inspirador + auténtico                                  |
-| **Educativo/Cursos**                                  | Instructor warm + ejercicios prácticos                             |
-| **Blog/Artículos**                                    | Historia personal + concepto + acción                              |
-| **Redes Sociales**                                    | Breve + inspirador + comunidad                                     |
+| **Profesional/Corporativo**                            | Profesional + calidez humana + propósito                            |
+| **Lifestyle/Personal**                                 | Personal + inspirador + auténtico                                   |
+| **Educativo/Cursos**                                   | Instructor warm + ejercicios prácticos                              |
+| **Blog/Artículos**                                     | Historia personal + concepto + acción                               |
+| **Redes Sociales**                                     | Breve + inspirador + comunidad                                      |
 
 ### Características Generales del Escritura (Base)
 
-| Aspecto                                        | Descripción                                                                     |
+| Aspecto                                         | Descripción                                                                      |
 |------------------------------------------------|---------------------------------------------------------------------------------|
-| **Tono general**                               | Warm, personal, inspirador pero accesible                                       |
-| **VOZ**                                        | Segunda persona ("tú", "you") - cercano al lector                               |
-| **Largo de oración**                           | Variable - cortas para énfasis, largas para reflexión                           |
-| **Ritmo**                                      | Fluido, como conversando con un amigo que te inspira                            |
-| **Profundidad**                                | Capas - literal + metaforico                                                    |
+| **Tono general**                                | Warm, personal, inspirador pero accesible                                        |
+| **VOZ**                                         | Segunda persona ("tú", "you") - cercano al lector                                |
+| **Largo de oración**                            | Variable - cortas para énfasis, largas para reflexión                            |
+| **Ritmo**                                       | Fluido, como conversando con un amigo que te inspira                             |
+| **Profundidad**                                 | Capas - literal + metaforico                                                     |
 
 ### Estructura de Oraciones
 
@@ -260,13 +260,13 @@
 ### Palabras y Vocabulario
 
 #### Palabras Frecuentes
-| Categoría                                  | Palabras                                                             |
+| Categoría                                   | Palabras                                                              |
 |--------------------------------------------|----------------------------------------------------------------------|
-| **Autenticidad**                           | authentic, true, real, genuine, honest                               |
-| **Emociones**                              | soulful, depth, sparkle, feeling, meaning                            |
-| **Acción**                                 | create, capture, discover, inspire, become                           |
-| **Vida**                                   | life, meaningful, fully, alive, journey                              |
-| **Creatividad**                            | fight, spark, wild, untamed, practice                                |
+| **Autenticidad**                            | authentic, true, real, genuine, honest                                |
+| **Emociones**                               | soulful, depth, sparkle, feeling, meaning                             |
+| **Acción**                                  | create, capture, discover, inspire, become                            |
+| **Vida**                                    | life, meaningful, fully, alive, journey                               |
+| **Creatividad**                             | fight, spark, wild, untamed, practice                                 |
 
 #### Phrases Características
 - "Capture the moment, savor life"
@@ -380,15 +380,15 @@ Cada capítulo termina con ejercicios de reflexión:
 
 ### Cómo aplicar la guía según el contexto:
 
-| Contexto                                          | Tono                                              | Longitud                              | Ejemplo de Opening                                                         |
+| Contexto                                           | Tono                                               | Longitud                               | Ejemplo de Opening                                                          |
 |---------------------------------------------------|---------------------------------------------------|---------------------------------------|----------------------------------------------------------------------------|
-| **Corporativo/Empresa**                           | Profesional + warmth                              | Medio                                 | "En [empresa], creemos que el éxito viene de..."                           |
-| **Startup/Tech**                                  | Innovador + accesible                             | Corto-Medio                           | "El futuro se construye con personas que..."                               |
-| **Educativo/Cursos**                              | Instructor + inspirador                           | Largo                                 | "Hace 10 años descubrí algo que cambió..."                                 |
-| **Personal/Lifestyle**                            | Auténtico + vulnerable                            | Medio                                 | "Esta es la historia de cómo aprendí..."                                   |
-| **Blog/Artículo**                                 | Narrativo + actionable                            | Largo                                 | "Hace un año me pasó algo que..."                                          |
-| **Redes/Social**                                  | Cercano + breve                                   | Corto                                 | "Una verdad que aprendí..."                                                |
-| **Presentaciones**                                | Energético + motivador                            | Medio                                 | "Imagina que..."                                                           |
+| **Corporativo/Empresa**                            | Profesional + warmth                               | Medio                                  | "En [empresa], creemos que el éxito viene de..."                            |
+| **Startup/Tech**                                   | Innovador + accesible                              | Corto-Medio                            | "El futuro se construye con personas que..."                                |
+| **Educativo/Cursos**                               | Instructor + inspirador                            | Largo                                  | "Hace 10 años descubrí algo que cambió..."                                  |
+| **Personal/Lifestyle**                             | Auténtico + vulnerable                             | Medio                                  | "Esta es la historia de cómo aprendí..."                                    |
+| **Blog/Artículo**                                  | Narrativo + actionable                             | Largo                                  | "Hace un año me pasó algo que..."                                           |
+| **Redes/Social**                                   | Cercano + breve                                    | Corto                                  | "Una verdad que aprendí..."                                                 |
+| **Presentaciones**                                 | Energético + motivador                             | Medio                                  | "Imagina que..."                                                            |
 
 ### Fórmula de Adaptación
 
@@ -415,11 +415,11 @@ Inspiración        + Corporativo = Purpose-Driven Content
 
 ### Charlas/Talks Identificados
 
-| Evento                                   | Título                                                                | Tema                                  |
+| Evento                                    | Título                                                                 | Tema                                   |
 |------------------------------------------|-----------------------------------------------------------------------|---------------------------------------|
-| Adobe MAX 2018                           | Capturing Layers of Expression in Portraits                           | Retratos                              |
-| Adobe MAX 2016                           | Cultivating the Creative Spark                                        | Creatividad                           |
-| Adobe MAX                                | Multiple sessions (5x MAX Master)                                     | Varios                                |
+| Adobe MAX 2018                            | Capturing Layers of Expression in Portraits                            | Retratos                               |
+| Adobe MAX 2016                            | Cultivating the Creative Spark                                         | Creatividad                            |
+| Adobe MAX                                 | Multiple sessions (5x MAX Master)                                      | Varios                                 |
 
 ### Frases de sus Charlas
 

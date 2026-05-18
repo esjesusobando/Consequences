@@ -48,9 +48,9 @@ Eres un Especialista en Integraciones. Crea una integración completa para Perso
 - [Requisito 2]
 
 ### Variables de Entorno
-| Variable                             | Descripción                             | Obligatoria                             |
+| Variable                              | Descripción                              | Obligatoria                              |
 |--------------------------------------|-----------------------------------------|-----------------------------------------|
-| [VAR]                                | [desc]                                  | [S/N]                                   |
+| [VAR]                                 | [desc]                                   | [S/N]                                    |
 
 ### Pasos de Setup
 1. [Paso 1]

@@ -153,16 +153,16 @@ Return to the orchestrator:
 - [x] {task 1.2 description}
 
 ### Files Changed
-| File                                            | Action                               | What Was Done                                   |
+| File                                             | Action                                | What Was Done                                    |
 |-------------------------------------------------|--------------------------------------|-------------------------------------------------|
-| `path/to/file.ext`                              | Created                              | {brief description}                             |
-| `path/to/other.ext`                             | Modified                             | {brief description}                             |
+| `path/to/file.ext`                               | Created                               | {brief description}                              |
+| `path/to/other.ext`                              | Modified                              | {brief description}                              |
 
 ### Tests (TDD mode only)
-| Task                               | Test File                                      | RED (fail)                                       | GREEN (pass)                               | REFACTOR                               |
+| Task                                | Test File                                       | RED (fail)                                        | GREEN (pass)                                | REFACTOR                                |
 |------------------------------------|------------------------------------------------|--------------------------------------------------|--------------------------------------------|----------------------------------------|
-| 1.1                                | `path/to/test.ext`                             | ✅ Failed as expected                             | ✅ Passed                                   | ✅ Clean                                |
-| 1.2                                | `path/to/test.ext`                             | ✅ Failed as expected                             | ✅ Passed                                   | ✅ Clean                                |
+| 1.1                                 | `path/to/test.ext`                              | ✅ Failed as expected                              | ✅ Passed                                    | ✅ Clean                                 |
+| 1.2                                 | `path/to/test.ext`                              | ✅ Failed as expected                              | ✅ Passed                                    | ✅ Clean                                 |
 
 {Omit this section if standard mode was used.}
 

@@ -45,12 +45,12 @@ skills/<skill-name>/
 
 ## Token Impact
 
-| Approach                                                                         | Tokens                           | Reduction                           |
+| Approach                                                                          | Tokens                            | Reduction                            |
 |----------------------------------------------------------------------------------|----------------------------------|-------------------------------------|
-| Model does everything (read, parse, classify, present)                           | ~100k                            | baseline                            |
-| Added "do NOT grep session files" instruction                                    | ~84k                             | 16%                                 |
-| Script classifies; model still loads reference doc                               | ~38k                             | 62%                                 |
-| Script classifies; model presents only                                           | ~35k                             | 65%                                 |
+| Model does everything (read, parse, classify, present)                            | ~100k                             | baseline                             |
+| Added "do NOT grep session files" instruction                                     | ~84k                              | 16%                                  |
+| Script classifies; model still loads reference doc                                | ~38k                              | 62%                                  |
+| Script classifies; model presents only                                            | ~35k                              | 65%                                  |
 
 The biggest single win was moving classification into the script. The second was removing the instruction to load the reference file -- once the script handles classification, the reference file is maintenance documentation only.
 

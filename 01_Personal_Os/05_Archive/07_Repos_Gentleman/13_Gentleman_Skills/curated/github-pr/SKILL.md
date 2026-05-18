@@ -193,16 +193,16 @@ Closes #123"
 
 ## Quick Reference
 
-| Task                                 | Command                                                          |
+| Task                                  | Command                                                           |
 |--------------------------------------|------------------------------------------------------------------|
-| Create PR                            | `gh pr create -t "type: desc" -b "body"`                         |
-| Draft PR                             | `gh pr create --draft`                                           |
-| Web editor                           | `gh pr create --web`                                             |
-| Add reviewer                         | `--reviewer user1,user2`                                         |
-| Add label                            | `--label bug,high-priority`                                      |
-| Link issue                           | `Closes #123` in body                                            |
-| View status                          | `gh pr status`                                                   |
-| Merge squash                         | `gh pr merge --squash`                                           |
+| Create PR                             | `gh pr create -t "type: desc" -b "body"`                          |
+| Draft PR                              | `gh pr create --draft`                                            |
+| Web editor                            | `gh pr create --web`                                              |
+| Add reviewer                          | `--reviewer user1,user2`                                          |
+| Add label                             | `--label bug,high-priority`                                       |
+| Link issue                            | `Closes #123` in body                                             |
+| View status                           | `gh pr status`                                                    |
+| Merge squash                          | `gh pr merge --squash`                                            |
 
 ## Resources
 

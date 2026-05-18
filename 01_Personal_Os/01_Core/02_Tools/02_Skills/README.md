@@ -114,17 +114,17 @@
 
 ## 🎯 Quick Reference
 
-| Qué necesitas                                                 | Ve a                                                       |
+| Qué necesitas                                                  | Ve a                                                        |
 |---------------------------------------------------------------|------------------------------------------------------------|
-| Core Engineering (CE)                                         | `00_Compound_Engineering/`                                 |
-| Contenido (Brand, YouTube)                                    | `01_Creacion_Contenidos/`                                  |
-| UI/UX Design                                                  | `02_Diseno_Ui_Ux/`                                         |
-| Video & Media                                                 | `03_Video_Media/`                                          |
-| Automatización (N8N, Firecrawl)                               | `04_Automatizacion/`                                       |
-| Workflows (Agent Teams, PM)                                   | `05_Workflows/`                                            |
-| Tools (Testing, DevOps)                                       | `06_Tools/`                                                |
-| Personal OS (Hillary, Life OS)                                | `07_Personal_Os/`                                          |
-| Legacy                                                        | `09_Legacy_Archive/`                                       |
+| Core Engineering (CE)                                          | `00_Compound_Engineering/`                                  |
+| Contenido (Brand, YouTube)                                     | `01_Creacion_Contenidos/`                                   |
+| UI/UX Design                                                   | `02_Diseno_Ui_Ux/`                                          |
+| Video & Media                                                  | `03_Video_Media/`                                           |
+| Automatización (N8N, Firecrawl)                                | `04_Automatizacion/`                                        |
+| Workflows (Agent Teams, PM)                                    | `05_Workflows/`                                             |
+| Tools (Testing, DevOps)                                        | `06_Tools/`                                                 |
+| Personal OS (Hillary, Life OS)                                 | `07_Personal_Os/`                                           |
+| Legacy                                                         | `09_Legacy_Archive/`                                        |
 
 ---
 

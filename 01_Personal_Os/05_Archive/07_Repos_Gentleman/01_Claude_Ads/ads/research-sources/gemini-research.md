@@ -149,17 +149,17 @@ The 2026 advertising ecosystem operates under a **signal-based paradigm**; trans
 
 ## Section 7: Cross-Platform Benchmarks 2026
 
-| Metric                  | E-Commerce        | B2B SaaS         | Legal         | Finance         | Healthcare         | Local Services        |
+| Metric                   | E-Commerce         | B2B SaaS          | Legal          | Finance          | Healthcare          | Local Services         |
 |-------------------------|-------------------|------------------|---------------|-----------------|--------------------|-----------------------|
-| Google Search CTR       | 4.13%             | 4.28%            | 5.20%         | 4.65%           | 4.90%              | 5.50%                 |
-| Google Search CPC       | $1.15             | $4.50            | $750+         | $900+           | $40+               | $15-$30               |
-| Google Search CVR       | 2.81%             | 1.65%            | 4.60%         | 3.50%           | 3.10%              | 15.0%                 |
-| Meta Ads CTR            | 1.38%             | 0.90%            | 0.85%         | 0.70%           | 1.10%              | 1.50%                 |
-| Meta Ads CPM            | $12.50            | $35.00           | $45.00        | $50.00          | $28.00             | $18.00                |
-| LinkedIn CPC            | N/A               | $13.23           | $25.00        | $35.00          | N/A                | N/A                   |
-| LinkedIn CTR            | N/A               | 0.56%            | 0.45%         | 0.40%           | N/A                | N/A                   |
-| TikTok Ads CPM          | $3.21             | $8.00            | N/A           | N/A             | N/A                | $5.00                 |
-| ROAS Benchmark          | 4.0x-7.5x         | N/A              | 3.0x          | 3.5x            | 2.8x               | 5.0x                  |
+| Google Search CTR        | 4.13%              | 4.28%             | 5.20%          | 4.65%            | 4.90%               | 5.50%                  |
+| Google Search CPC        | $1.15              | $4.50             | $750+          | $900+            | $40+                | $15-$30                |
+| Google Search CVR        | 2.81%              | 1.65%             | 4.60%          | 3.50%            | 3.10%               | 15.0%                  |
+| Meta Ads CTR             | 1.38%              | 0.90%             | 0.85%          | 0.70%            | 1.10%               | 1.50%                  |
+| Meta Ads CPM             | $12.50             | $35.00            | $45.00         | $50.00           | $28.00              | $18.00                 |
+| LinkedIn CPC             | N/A                | $13.23            | $25.00         | $35.00           | N/A                 | N/A                    |
+| LinkedIn CTR             | N/A                | 0.56%             | 0.45%          | 0.40%            | N/A                 | N/A                    |
+| TikTok Ads CPM           | $3.21              | $8.00             | N/A            | N/A              | N/A                 | $5.00                  |
+| ROAS Benchmark           | 4.0x-7.5x          | N/A               | 3.0x           | 3.5x             | 2.8x                | 5.0x                   |
 
 ---
 
@@ -225,26 +225,26 @@ The 2026 advertising ecosystem operates under a **signal-based paradigm**; trans
 ## Section 10: API Engineering
 
 ### Rate Limits
-| Platform                 | Limit                                     | Strategy                                            |
+| Platform                  | Limit                                      | Strategy                                             |
 |--------------------------|-------------------------------------------|-----------------------------------------------------|
-| Google Ads API           | 15,000 ops/day (Basic)                    | Batch up to 5,000 ops, partial_failure=true         |
-| Meta Marketing API       | Rolling 1-hour window (spend-based)       | Check X-Business-Use-Case-Usage, pause at 75%       |
-| TikTok Ads API           | 600 req/min                               | Client-side throttling, respect Retry-After         |
+| Google Ads API            | 15,000 ops/day (Basic)                     | Batch up to 5,000 ops, partial_failure=true          |
+| Meta Marketing API        | Rolling 1-hour window (spend-based)        | Check X-Business-Use-Case-Usage, pause at 75%        |
+| TikTok Ads API            | 600 req/min                                | Client-side throttling, respect Retry-After          |
 
 ### Authentication
 - Google: Refresh Token → short-lived Access Token (1hr), handle invalid_grant
 - Meta: Short-lived → Long-lived tokens (60 days), warn if <7 days remain
 
 ### Critical Audit Endpoints
-| Platform         | Goal                   | Endpoint                     | Field                                          |
+| Platform          | Goal                    | Endpoint                      | Field                                           |
 |------------------|------------------------|------------------------------|------------------------------------------------|
-| Google           | Budget                 | CampaignBudgetService        | recommended_budget_amount                      |
-| Google           | Quality Score          | KeywordView                  | quality_score                                  |
-| Google           | Ad Strength            | AdGroupAdService             | ad_strength                                    |
-| Meta             | Ad Quality             | Insights                     | quality_ranking, engagement_rate_ranking       |
-| Meta             | Creative Fatigue       | Insights (time series)       | ctr (7d vs 30d)                                |
-| TikTok           | Account Health         | Account Health               | is_restricted, policy_violations               |
-| LinkedIn         | Audience Quality       | AdAnalytics                  | demographic_metrics                            |
+| Google            | Budget                  | CampaignBudgetService         | recommended_budget_amount                       |
+| Google            | Quality Score           | KeywordView                   | quality_score                                   |
+| Google            | Ad Strength             | AdGroupAdService              | ad_strength                                     |
+| Meta              | Ad Quality              | Insights                      | quality_ranking, engagement_rate_ranking        |
+| Meta              | Creative Fatigue        | Insights (time series)        | ctr (7d vs 30d)                                 |
+| TikTok            | Account Health          | Account Health                | is_restricted, policy_violations                |
+| LinkedIn          | Audience Quality        | AdAnalytics                   | demographic_metrics                             |
 
 ### Safe Write Operations
 - All write ops = "Dry Run" or explicit user confirmation

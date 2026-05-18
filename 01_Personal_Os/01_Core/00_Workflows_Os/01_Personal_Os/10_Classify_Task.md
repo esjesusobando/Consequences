@@ -23,11 +23,11 @@ User wants to classify a task or needs template recommendation.
 ```
 ## Clasificacion
 
-| Criterio                                    | Valor                                   | Template                                   |
+| Criterio                                     | Valor                                    | Template                                    |
 |---------------------------------------------|-----------------------------------------|--------------------------------------------|
-| Esfuerzo                                    | Xh                                      |--------------------------------------------|
-| Archivos                                    | Y                                       |--------------------------------------------|
-| Complejidad                                 | Z                                       |--------------------------------------------|
+| Esfuerzo                                     | Xh                                       |--------------------------------------------|
+| Archivos                                     | Y                                        |--------------------------------------------|
+| Complejidad                                  | Z                                        |--------------------------------------------|
 
 **Template Recomendado:** [SOTA/MEDIO/CORTO]
 **Archivo:** [ruta]

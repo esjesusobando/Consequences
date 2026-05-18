@@ -75,10 +75,10 @@ this.input = page.locator("#email");         // NO
 
 ## Scope Detection (ASK IF AMBIGUOUS)
 
-| User Says                                                                                  | Action                                                     |
+| User Says                                                                                   | Action                                                      |
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| "a test", "one test", "new test", "add test"                                               | Create ONE test() in existing spec                         |
-| "comprehensive tests", "all tests", "test suite", "generate tests"                         | Create full suite                                          |
+| "a test", "one test", "new test", "add test"                                                | Create ONE test() in existing spec                          |
+| "comprehensive tests", "all tests", "test suite", "generate tests"                          | Create full suite                                           |
 
 **Examples:**
 - "Create a test for user sign-up" → ONE test only

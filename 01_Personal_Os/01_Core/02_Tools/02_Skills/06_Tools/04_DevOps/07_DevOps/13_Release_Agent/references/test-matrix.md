@@ -10,11 +10,11 @@ Basado en la clasificación de BIG school + principios Anthropic de código opac
 
 Bloquean el release si fallan. Sin excepción.
 
-| Área | Ejemplos concretos |
-|---|---|
-| **Autenticación y autorización** | ¿Quién puede ver qué datos? ¿Quién puede ejecutar qué acción? |
-| **Lógica de negocio principal** | Cálculos de precios, reglas de descuento, validaciones de formularios críticos |
-| **Puntos de integración** | APIs externas (pagos, identidad), escrituras a base de datos, eventos de sistema |
+| Área                            | Ejemplos concretos                                                              |
+|--------------------------------|--------------------------------------------------------------------------------|
+| **Autenticación y autorización**| ¿Quién puede ver qué datos? ¿Quién puede ejecutar qué acción?                   |
+| **Lógica de negocio principal** | Cálculos de precios, reglas de descuento, validaciones de formularios críticos  |
+| **Puntos de integración**       | APIs externas (pagos, identidad), escrituras a base de datos, eventos de sistema|
 
 **Cómo testear:**
 ```python
@@ -37,10 +37,10 @@ def test_discount_never_exceeds_100_percent():
 
 No bloquean automáticamente, pero requieren que un humano los entienda antes del merge.
 
-| Caso | Por qué importa |
-|---|---|
-| **Edge cases que ya rompieron producción** | El sistema ya te dijo dónde duele. Escucha. |
-| **Código generado por IA que no entiendes** | Si no lo entiendes, no puedes garantizar que funciona correctamente en todos los casos |
+| Caso                                       | Por qué importa                                                                       |
+|-------------------------------------------|--------------------------------------------------------------------------------------|
+| **Edge cases que ya rompieron producción** | El sistema ya te dijo dónde duele. Escucha.                                           |
+| **Código generado por IA que no entiendes**| Si no lo entiendes, no puedes garantizar que funciona correctamente en todos los casos|
 
 **Señal de alerta:** Si al revisar código generado por IA piensas "no sé exactamente qué hace esto", ese código es "Importante". No "Delegable".
 
@@ -50,10 +50,10 @@ No bloquean automáticamente, pero requieren que un humano los entienda antes de
 
 La IA puede generar y mantener estos tests con supervisión mínima.
 
-| Tipo | Ejemplos |
-|---|---|
-| **Happy path de funciones simples** | `format_date()`, `calculate_age()`, `slugify()` |
-| **Tests de utilidades y helpers** | parsers, formateadores, conversores de unidades |
+| Tipo                               | Ejemplos                                       |
+|-----------------------------------|-----------------------------------------------|
+| **Happy path de funciones simples**| `format_date()`, `calculate_age()`, `slugify()`|
+| **Tests de utilidades y helpers**  | parsers, formateadores, conversores de unidades|
 
 ```python
 # Ejemplo — test delegable a IA
@@ -85,11 +85,11 @@ Cuando la IA escribe código, aplica esta decisión:
 
 ## Métricas de Cobertura Recomendadas
 
-| Categoría | Cobertura mínima | Herramienta |
-|---|---|---|
-| Crítico | 100% de ramas | pytest-cov, Istanbul |
-| Importante | 80% | pytest-cov |
-| Delegable | 60% o generado por IA | Copilot, Claude |
+| Categoría | Cobertura mínima     | Herramienta         |
+|----------|---------------------|--------------------|
+| Crítico   | 100% de ramas        | pytest-cov, Istanbul|
+| Importante| 80%                  | pytest-cov          |
+| Delegable | 60% o generado por IA| Copilot, Claude     |
 
 ---
 

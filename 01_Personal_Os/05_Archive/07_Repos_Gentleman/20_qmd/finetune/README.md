@@ -117,15 +117,15 @@ finetune/
 
 Teaches the model the `lex:/vec:/hyde:` output format from labeled examples.
 
-| Parameter                                      | Value                                                                  |
+| Parameter                                       | Value                                                                   |
 |------------------------------------------------|------------------------------------------------------------------------|
-| Base model                                     | `Qwen/Qwen3-1.7B`                                                      |
-| Method                                         | LoRA (rank 16, alpha 32)                                               |
-| Target modules                                 | All projection layers (q/k/v/o/gate/up/down)                           |
-| Dataset                                        | ~2,290 examples (train split)                                          |
-| Effective batch size                           | 16 (4 x 4 gradient accumulation)                                       |
-| Epochs                                         | 5                                                                      |
-| Learning rate                                  | 2e-4 (cosine schedule)                                                 |
+| Base model                                      | `Qwen/Qwen3-1.7B`                                                       |
+| Method                                          | LoRA (rank 16, alpha 32)                                                |
+| Target modules                                  | All projection layers (q/k/v/o/gate/up/down)                            |
+| Dataset                                         | ~2,290 examples (train split)                                           |
+| Effective batch size                            | 16 (4 x 4 gradient accumulation)                                        |
+| Epochs                                          | 5                                                                       |
+| Learning rate                                   | 2e-4 (cosine schedule)                                                  |
 
 ```bash
 uv run train.py sft --config configs/sft.yaml
@@ -170,14 +170,14 @@ and (optionally) as the GRPO reward signal in the experimental path.
 
 Five scoring dimensions (max 120 without hyde, 140 with):
 
-| Dimension                                 | Points                               | What It Measures                                                                      |
+| Dimension                                  | Points                                | What It Measures                                                                       |
 |-------------------------------------------|--------------------------------------|---------------------------------------------------------------------------------------|
-| **Format**                                | 0-30                                 | Has lex/vec lines, no invalid lines                                                   |
-| **Diversity**                             | 0-30                                 | Multiple expansion types, diverse content, no query echoes                            |
-| **HyDE**                                  | 0-20                                 | Present, 50-200 chars, single line, not repetitive                                    |
-| **Quality**                               | 0-20                                 | Lex shorter than vec, natural language, preserves key terms                           |
-| **Entity**                                | -45 to +20                           | Named entities preserved in lex and vec lines                                         |
-| **Think bonus**                           | 0-20                                 | Reward for NOT using `<think>` mode                                                   |
+| **Format**                                 | 0-30                                  | Has lex/vec lines, no invalid lines                                                    |
+| **Diversity**                              | 0-30                                  | Multiple expansion types, diverse content, no query echoes                             |
+| **HyDE**                                   | 0-20                                  | Present, 50-200 chars, single line, not repetitive                                     |
+| **Quality**                                | 0-20                                  | Lex shorter than vec, natural language, preserves key terms                            |
+| **Entity**                                 | -45 to +20                            | Named entities preserved in lex and vec lines                                          |
+| **Think bonus**                            | 0-20                                  | Reward for NOT using `<think>` mode                                                    |
 
 **Hard failures** (instant 0.0):
 - Chat template leakage (`<|im_start|>`, `<|im_end|>`, etc.)
@@ -245,20 +245,20 @@ deterministic, and suitable as an RL signal. See `SCORING.md` for the full rubri
 
 ### SFT
 
-| Metric                                           | Value                                       |
+| Metric                                            | Value                                        |
 |--------------------------------------------------|---------------------------------------------|
-| Final train loss                                 | 0.472                                       |
-| Final eval loss                                  | 0.304                                       |
-| Token accuracy (train)                           | 97.4%                                       |
-| Token accuracy (eval)                            | 93.8%                                       |
-| Epochs                                           | 5                                           |
-| Hardware                                         | A10G (24 GB VRAM)                           |
+| Final train loss                                  | 0.472                                        |
+| Final eval loss                                   | 0.304                                        |
+| Token accuracy (train)                            | 97.4%                                        |
+| Token accuracy (eval)                             | 93.8%                                        |
+| Epochs                                            | 5                                            |
+| Hardware                                          | A10G (24 GB VRAM)                            |
 
 ### Evaluation Scores
 
-| Model                             | Average Score                            | Excellent (30)                              |
+| Model                              | Average Score                             | Excellent (30)                               |
 |-----------------------------------|------------------------------------------|---------------------------------------------|
-| SFT                               | 92.0%                                    | 30/30                                       |
+| SFT                                | 92.0%                                     | 30/30                                        |
 
 > GRPO scores are not tracked in this branch; see `experiments/grpo/` for historical
 > experimental results.

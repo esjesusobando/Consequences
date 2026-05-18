@@ -19,13 +19,13 @@ Usuario → Detectar intención → Skill correcto → Ejecutar → Capturar res
 
 ## Routing de Intenciones
 
-| Trigger del usuario                                                                               | Skill invocado                                     | Acción                                                                      |
+| Trigger del usuario                                                                                | Skill invocado                                      | Acción                                                                       |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------|-----------------------------------------------------------------------------|
-| "capture", "captura", "quick add", "anota", "guarda idea"                                         | `01_Quick_Capture`                                 | Crear archivo en `03_Tasks/02_Hillary_Inbox/`                               |
-| "plan my day", "plan día", "qué hago hoy", "organizar día"                                        | `02_Plan_My_Day`                                   | Leer inbox → generar schedule                                               |
-| "daily notes", "log this", "registro", "anotar actividad"                                         | `03_Daily_Notes`                                   | Agregar a log diario en `04_Operations/`                                    |
-| "record", "transcribe", "grabar reunión", "recording mode"                                        | `04_Recording_Mode`                                | Transcribir + anonimizar PII                                                |
-| "create skill from", "auto-skill", "build pattern", "track returns"                               | `05_Returns_Tracker`                               | Detectar patrón → generar skill                                             |
+| "capture", "captura", "quick add", "anota", "guarda idea"                                          | `01_Quick_Capture`                                  | Crear archivo en `03_Tasks/02_Hillary_Inbox/`                                |
+| "plan my day", "plan día", "qué hago hoy", "organizar día"                                         | `02_Plan_My_Day`                                    | Leer inbox → generar schedule                                                |
+| "daily notes", "log this", "registro", "anotar actividad"                                          | `03_Daily_Notes`                                    | Agregar a log diario en `04_Operations/`                                     |
+| "record", "transcribe", "grabar reunión", "recording mode"                                         | `04_Recording_Mode`                                 | Transcribir + anonimizar PII                                                 |
+| "create skill from", "auto-skill", "build pattern", "track returns"                                | `05_Returns_Tracker`                                | Detectar patrón → generar skill                                              |
 
 ---
 
@@ -43,13 +43,13 @@ Usuario → Detectar intención → Skill correcto → Ejecutar → Capturar res
 
 ## Destinos por Skill
 
-| Skill                                         | Destino del output                                                                     |
+| Skill                                          | Destino del output                                                                      |
 |-----------------------------------------------|----------------------------------------------------------------------------------------|
-| Quick Capture                                 | `03_Tasks/02_Hillary_Inbox/`                                                           |
-| Plan My Day                                   | respuesta inline + opcionalmente `04_Operations/`                                      |
-| Daily Notes                                   | `04_Operations/03_Process_Notes/` (si existe)                                          |
-| Recording Mode                                | `02_Knowledge/` (transcripciones)                                                      |
-| Returns Tracker                               | `01_Personal_Os/01_Core/02_Tools/02_Skills/` (auto-generated skills)                   |
+| Quick Capture                                  | `03_Tasks/02_Hillary_Inbox/`                                                            |
+| Plan My Day                                    | respuesta inline + opcionalmente `04_Operations/`                                       |
+| Daily Notes                                    | `04_Operations/03_Process_Notes/` (si existe)                                           |
+| Recording Mode                                 | `02_Knowledge/` (transcripciones)                                                       |
+| Returns Tracker                                | `01_Personal_Os/01_Core/02_Tools/02_Skills/` (auto-generated skills)                    |
 
 ---
 

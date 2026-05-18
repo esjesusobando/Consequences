@@ -25,11 +25,11 @@ Esta skill es el **sistema de registro** del PersonalOS. Centraliza metadata, ev
 
 ## Ubicaciones
 
-| Tipo                                              | Ubicación                                                                 |
+| Tipo                                               | Ubicación                                                                  |
 |---------------------------------------------------|---------------------------------------------------------------------------|
-| **Código fuente**                                 | `05_Archive/07_Repos_Gentleman/qmd/`                                      |
-| **Skills definition**                             | `05_Archive/07_Repos_Gentleman/qmd/skills/`                               |
-| **Eval framework**                                | `05_Archive/07_Repos_Gentleman/qmd/finetune/`                             |
+| **Código fuente**                                  | `05_Archive/07_Repos_Gentleman/qmd/`                                       |
+| **Skills definition**                              | `05_Archive/07_Repos_Gentleman/qmd/skills/`                                |
+| **Eval framework**                                 | `05_Archive/07_Repos_Gentleman/qmd/finetune/`                              |
 
 ## Estructura QMD
 
@@ -160,12 +160,12 @@ cat 05_Archive/07_Repos_Gentleman/qmd/finetune/eval.py
 
 ## Diferencia con Otras
 
-| Sistema                               | Propósito                                             | Tipo                                        |
+| Sistema                                | Propósito                                              | Tipo                                         |
 |---------------------------------------|-------------------------------------------------------|---------------------------------------------|
-| **QMD**                               | Metadata + Evaluación                                 | Framework                                   |
-| **SDD**                               | Especificar + implementar                             | Metodología                                 |
-| **CE**                                | Plan + Review + Compound                              | Workflow                                    |
-| **GGA**                               | Code review                                           | Pre-commit hook                             |
+| **QMD**                                | Metadata + Evaluación                                  | Framework                                    |
+| **SDD**                                | Especificar + implementar                              | Metodología                                  |
+| **CE**                                 | Plan + Review + Compound                               | Workflow                                     |
+| **GGA**                                | Code review                                            | Pre-commit hook                              |
 
 ---
 

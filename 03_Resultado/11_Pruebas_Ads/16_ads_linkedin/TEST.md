@@ -24,13 +24,13 @@ Producto: Sistema operativo personal potenciado con IA
 
 ### Quick Audit Results (Simulado)
 
-| Categoría | Score | Finding |
-|-----------|-------|---------|
-| B2B Targeting | 100/100 | Excellent job title/company targeting con seniority segmentation |
-| Thought Leader Ads | 100/100 | Content strategy clara con employee advocate program |
-| ABM Implementation | 100/100 | Target lists created con personalized content paths |
-| Predictive Audiences | 100/100 | Advanced predictive con conversion modeling data |
-| Lead Gen Forms | 100/100 | Well-optimized forms con nurturing sequence integration |
+| Categoría           | Score  | Finding                                                         |
+|--------------------|-------|----------------------------------------------------------------|
+| B2B Targeting       | 100/100| Excellent job title/company targeting con seniority segmentation|
+| Thought Leader Ads  | 100/100| Content strategy clara con employee advocate program            |
+| ABM Implementation  | 100/100| Target lists created con personalized content paths             |
+| Predictive Audiences| 100/100| Advanced predictive con conversion modeling data                |
+| Lead Gen Forms      | 100/100| Well-optimized forms con nurturing sequence integration         |
 
 **ads-linkedin Health Score**: 100/100 (Grade: A+ / Excellent)
 

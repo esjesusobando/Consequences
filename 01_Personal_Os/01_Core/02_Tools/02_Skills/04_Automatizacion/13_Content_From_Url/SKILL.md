@@ -19,12 +19,12 @@ Extract clean, usable content from any URL. Simplified extraction without the fu
 
 ## When to Use This vs learning-url-to-knowledge
 
-| Use This | Use learning-url-to-knowledge |
-|----------|-------------------------------|
-| Quick content check | Full learning pipeline |
-| Simple extraction | 8 deliverables needed |
-| One-off content | Knowledge compounding |
-| Tool evaluation | Deep analysis |
+| Use This           | Use learning-url-to-knowledge  |
+|-------------------|-------------------------------|
+| Quick content check| Full learning pipeline         |
+| Simple extraction  | 8 deliverables needed          |
+| One-off content    | Knowledge compounding          |
+| Tool evaluation    | Deep analysis                  |
 
 ---
 
@@ -109,9 +109,9 @@ Works with:
 
 ## Changelog
 
-| Version | Date | Changes |
-|---------|------|---------|
-| v1.0 | 2026-05-15 | Initial skill |
+| Version  | Date      | Changes      |
+|---------|----------|-------------|
+| v1.0     | 2026-05-15| Initial skill|
 
 ---
 

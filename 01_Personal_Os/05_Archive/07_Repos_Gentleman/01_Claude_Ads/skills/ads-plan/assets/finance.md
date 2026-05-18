@@ -27,13 +27,13 @@
 - Local regulations: state-specific licensing requirements must be met
 
 ### Required Disclosures
-| Product Type          | Required Disclosures                                      |
+| Product Type           | Required Disclosures                                       |
 |-----------------------|-----------------------------------------------------------|
-| Loans/Mortgages       | APR, fees, repayment example, lender NMLS                 |
-| Credit Cards          | APR range, annual fee, issuer name                        |
-| Insurance             | "Not a guarantee" disclaimers, license numbers            |
-| Investments           | "Past performance doesn't guarantee future results"       |
-| Banking               | FDIC insured, equal housing lender (if applicable)        |
+| Loans/Mortgages        | APR, fees, repayment example, lender NMLS                  |
+| Credit Cards           | APR range, annual fee, issuer name                         |
+| Insurance              | "Not a guarantee" disclaimers, license numbers             |
+| Investments            | "Past performance doesn't guarantee future results"        |
+| Banking                | FDIC insured, equal housing lender (if applicable)         |
 
 ### Compliance Review Process
 - All ad copy requires legal/compliance team approval
@@ -43,13 +43,13 @@
 
 ## Recommended Platform Mix
 
-| Platform              | Role             | Budget %         | Why                                                       |
+| Platform               | Role              | Budget %          | Why                                                        |
 |-----------------------|------------------|------------------|-----------------------------------------------------------|
-| Google Search         | Primary          | 40-50%           | High-intent financial product queries                     |
-| LinkedIn              | Primary          | 20-30%           | B2B finance, wealth management, corporate solutions       |
-| Meta (FB/IG)          | Secondary        | 15%              | Awareness, education, retargeting                         |
-| YouTube/Display       | Supporting       | 10%              | Financial education, trust building                       |
-| Microsoft             | Testing          | 5%               | Higher-income demographic, desktop finance research       |
+| Google Search          | Primary           | 40-50%            | High-intent financial product queries                      |
+| LinkedIn               | Primary           | 20-30%            | B2B finance, wealth management, corporate solutions        |
+| Meta (FB/IG)           | Secondary         | 15%               | Awareness, education, retargeting                          |
+| YouTube/Display        | Supporting        | 10%               | Financial education, trust building                        |
+| Microsoft              | Testing           | 5%                | Higher-income demographic, desktop finance research        |
 
 ## Campaign Architecture
 
@@ -146,50 +146,50 @@ Account; LinkedIn (B2B Financial Products)
 
 ## Budget Guidelines
 
-| Metric                               | Financial Services Benchmark                     |
+| Metric                                | Financial Services Benchmark                      |
 |--------------------------------------|--------------------------------------------------|
-| Google CPC                           | $3.46-$3.77 (varies widely by product)           |
-| Google CTR                           | 4.65-8.33%                                       |
-| Google CVR                           | 2.55-3.50%                                       |
-| Google ROAS                          | 3.5x                                             |
-| Meta CPM                             | $50.00 (highest across industries)               |
-| LinkedIn CPL                         | $100+ (B2B financial)                            |
-| Cost per qualified application       | $50-$200                                         |
-| Min monthly budget                   | $8,000+ (Google + LinkedIn minimum viable)       |
+| Google CPC                            | $3.46-$3.77 (varies widely by product)            |
+| Google CTR                            | 4.65-8.33%                                        |
+| Google CVR                            | 2.55-3.50%                                        |
+| Google ROAS                           | 3.5x                                              |
+| Meta CPM                              | $50.00 (highest across industries)                |
+| LinkedIn CPL                          | $100+ (B2B financial)                             |
+| Cost per qualified application        | $50-$200                                          |
+| Min monthly budget                    | $8,000+ (Google + LinkedIn minimum viable)        |
 
 ### Budget by Financial Product
-| Product                  | Monthly Budget        | Primary Channel               |
+| Product                   | Monthly Budget         | Primary Channel                |
 |--------------------------|-----------------------|-------------------------------|
-| Personal loans           | $5,000-$15,000        | Google Search                 |
-| Mortgage                 | $10,000-$50,000       | Google + Meta                 |
-| Insurance                | $3,000-$10,000        | Google + Meta                 |
-| Wealth management        | $5,000-$20,000        | Google + LinkedIn             |
-| Banking (consumer)       | $10,000-$50,000       | Google + Meta + YouTube       |
-| Fintech                  | $5,000-$20,000        | Meta + Google + TikTok        |
+| Personal loans            | $5,000-$15,000         | Google Search                  |
+| Mortgage                  | $10,000-$50,000        | Google + Meta                  |
+| Insurance                 | $3,000-$10,000         | Google + Meta                  |
+| Wealth management         | $5,000-$20,000         | Google + LinkedIn              |
+| Banking (consumer)        | $10,000-$50,000        | Google + Meta + YouTube        |
+| Fintech                   | $5,000-$20,000         | Meta + Google + TikTok         |
 
 ## Bidding Strategy Selection
 
-| Platform         | Monthly Conversions           | Recommended Strategy                                |
+| Platform          | Monthly Conversions            | Recommended Strategy                                 |
 |------------------|-------------------------------|-----------------------------------------------------|
-| Google           | <15                           | Maximize Clicks (cap CPC)                           |
-| Google           | 15-29                         | Maximize Conversions                                |
-| Google           | 30+                           | Target CPA                                          |
-| Google           | 50+ with dynamic values       | Target ROAS                                         |
-| LinkedIn         | Default                       | Maximum Delivery                                    |
-| LinkedIn         | Efficiency priority           | Manual CPC or Cost Cap                              |
-| LinkedIn         | Accelerate campaigns          | Auto-optimized (42% lower CPA, 21% lower CPL)       |
-| Meta             | Default                       | Lowest Cost (Special Ad Category for credit)        |
-| Meta             | Efficiency priority           | Cost Cap                                            |
+| Google            | <15                            | Maximize Clicks (cap CPC)                            |
+| Google            | 15-29                          | Maximize Conversions                                 |
+| Google            | 30+                            | Target CPA                                           |
+| Google            | 50+ with dynamic values        | Target ROAS                                          |
+| LinkedIn          | Default                        | Maximum Delivery                                     |
+| LinkedIn          | Efficiency priority            | Manual CPC or Cost Cap                               |
+| LinkedIn          | Accelerate campaigns           | Auto-optimized (42% lower CPA, 21% lower CPL)        |
+| Meta              | Default                        | Lowest Cost (Special Ad Category for credit)         |
+| Meta              | Efficiency priority            | Cost Cap                                             |
 
 ## KPI Targets
 
-| Metric                                  | Month 1         | Month 3         | Month 6         |
+| Metric                                   | Month 1          | Month 3          | Month 6          |
 |-----------------------------------------|-----------------|-----------------|-----------------|
-| CPA (lead/application)                  | Baseline        | -15%            | -25%            |
-| Application Start → Complete Rate       | Track           | 30%+            | 40%+            |
-| Cost per Funded Loan/Account            | Track           | Baseline        | Optimize        |
-| ROAS                                    | 1.5x            | 2.5x            | 3.5x            |
-| Brand Search Volume                     | Baseline        | +10%            | +20%            |
+| CPA (lead/application)                   | Baseline         | -15%             | -25%             |
+| Application Start → Complete Rate        | Track            | 30%+             | 40%+             |
+| Cost per Funded Loan/Account             | Track            | Baseline         | Optimize         |
+| ROAS                                     | 1.5x             | 2.5x             | 3.5x             |
+| Brand Search Volume                      | Baseline         | +10%             | +20%             |
 
 ## Common Pitfalls
 

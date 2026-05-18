@@ -57,11 +57,11 @@ Los usuarios de Claude Code approve el 93% de los permission prompts. Se constru
 
 ### Métricas
 
-| Dataset                                              | Stage 1 FPR                                 | Stage 1 FNR                                 | Stage 2 FPR                                 | Stage 2 FNR                                 |
+| Dataset                                               | Stage 1 FPR                                  | Stage 1 FNR                                  | Stage 2 FPR                                  | Stage 2 FNR                                  |
 |------------------------------------------------------|---------------------------------------------|---------------------------------------------|---------------------------------------------|---------------------------------------------|
-| Real traffic (n=10k)                                 | 8.5%                                        | —                                           | 0.4%                                        | —                                           |
-| Real overeager (n=52)                                | —                                           | 6.6%                                        | —                                           | 17%                                         |
-| Synthetic exfil (n=1k)                               | —                                           | 1.8%                                        | —                                           | 5.7%                                        |
+| Real traffic (n=10k)                                  | 8.5%                                         | —                                            | 0.4%                                         | —                                            |
+| Real overeager (n=52)                                 | —                                            | 6.6%                                         | —                                            | 17%                                          |
+| Synthetic exfil (n=1k)                                | —                                            | 1.8%                                         | —                                            | 5.7%                                         |
 
 ### Decisiones de Diseño
 
@@ -107,10 +107,10 @@ Los agentes tienden a evaluar su propio trabajo positivamente, incluso cuando la
 
 ### Resultados
 
-| Harness                                    | Duration                                 | Cost                                 |
+| Harness                                     | Duration                                  | Cost                                  |
 |--------------------------------------------|------------------------------------------|--------------------------------------|
-| Solo                                       | 20 min                                   | $9                                   |
-| Full harness                               | 6 hr                                     | $200                                 |
+| Solo                                        | 20 min                                    | $9                                    |
+| Full harness                                | 6 hr                                      | $200                                  |
 
 El harness fue 20x más caro pero la diferencia en calidad de output fue obvia.
 
@@ -239,13 +239,13 @@ Se usó Opus 4.6 con agent teams para build un C compiler desde cero, capaz de c
 
 ### Benchmarks
 
-| Score                                     | Who                                                                       |
+| Score                                      | Who                                                                        |
 |-------------------------------------------|---------------------------------------------------------------------------|
-| 2164 cycles                               | Claude Opus 4 (many hours)                                                |
-| 1790 cycles                               | Claude Opus 4.5 (2 hr, matching best human)                               |
-| 1579 cycles                               | Claude Opus 4.5 (test-time compute)                                       |
-| 1487 cycles                               | Claude Opus 4.5 (11.5 hr)                                                 |
-| 1363 cycles                               | Improved harness                                                          |
+| 2164 cycles                                | Claude Opus 4 (many hours)                                                 |
+| 1790 cycles                                | Claude Opus 4.5 (2 hr, matching best human)                                |
+| 1579 cycles                                | Claude Opus 4.5 (test-time compute)                                        |
+| 1487 cycles                                | Claude Opus 4.5 (11.5 hr)                                                  |
+| 1363 cycles                                | Improved harness                                                           |
 
 ### Open Challenge
 
@@ -273,11 +273,11 @@ Guía comprehensiva sobre cómo diseñar evals para AI agents. Las capacidades q
 
 ### Tipos de Graders
 
-| Tipo                                          | Fortalezas                                              | Debilidades                                                           |
+| Tipo                                           | Fortalezas                                               | Debilidades                                                            |
 |-----------------------------------------------|---------------------------------------------------------|-----------------------------------------------------------------------|
-| **Code-based**                                | Fast, cheap, objective                                  | Brittle a variaciones válidas                                         |
-| **Model-based**                               | Flexible, captures nuance                               | Non-deterministic, requiere calibración                               |
-| **Human**                                     | Gold standard                                           | Expensive, slow                                                       |
+| **Code-based**                                 | Fast, cheap, objective                                   | Brittle a variaciones válidas                                          |
+| **Model-based**                                | Flexible, captures nuance                                | Non-deterministic, requiere calibración                                |
+| **Human**                                      | Gold standard                                            | Expensive, slow                                                        |
 
 ### pass@k vs pass^k
 

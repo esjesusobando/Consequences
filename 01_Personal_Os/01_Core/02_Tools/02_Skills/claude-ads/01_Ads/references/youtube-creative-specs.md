@@ -14,13 +14,13 @@ storyboard frame generation, and static companion assets.
 
 ## Ad Format Overview
 
-| Format | Ratio | Resolution | Duration | Skip |
-|--------|-------|-----------|----------|------|
-| Skippable In-Stream | 16:9 | 1920×1080 | 12s-3min (rec 15-30s) | After 5s |
-| Non-Skippable | 16:9 | 1920×1080 | 15-60s (expanded 2025) | No |
-| Bumper | 16:9 | 1920×1080 | ≤6s | No |
-| In-Feed Video | 16:9 | 1920×1080 | Any | N/A |
-| YouTube Shorts | 9:16 | 1080×1920 | ≤60s | Swipe |
+| Format             | Ratio  | Resolution | Duration              | Skip    |
+|-------------------|-------|-----------|----------------------|--------|
+| Skippable In-Stream| 16:9   | 1920×1080  | 12s-3min (rec 15-30s) | After 5s|
+| Non-Skippable      | 16:9   | 1920×1080  | 15-60s (expanded 2025)| No      |
+| Bumper             | 16:9   | 1920×1080  | ≤6s                   | No      |
+| In-Feed Video      | 16:9   | 1920×1080  | Any                   | N/A     |
+| YouTube Shorts     | 9:16   | 1080×1920  | ≤60s                  | Swipe   |
 
 ---
 
@@ -30,12 +30,12 @@ Thumbnails are the primary generation output for YouTube campaigns.
 
 ### Standard Thumbnail
 
-| Property | Value |
-|----------|-------|
-| Dimensions | 1280×720 (16:9) |
-| Format | JPG or PNG |
-| Max size | 2MB |
-| Min resolution | 640×360 |
+| Property      | Value          |
+|--------------|---------------|
+| Dimensions    | 1280×720 (16:9)|
+| Format        | JPG or PNG     |
+| Max size      | 2MB            |
+| Min resolution| 640×360        |
 
 **Thumbnail generation guidelines:**
 - High contrast between subject and background
@@ -47,10 +47,10 @@ Thumbnails are the primary generation output for YouTube campaigns.
 
 ### Shorts Thumbnail
 
-| Property | Value |
-|----------|-------|
-| Dimensions | 1080×1080 (1:1) |
-| Safe zone | Center 1080×1080 (full frame) |
+| Property  | Value                        |
+|----------|-----------------------------|
+| Dimensions| 1080×1080 (1:1)              |
+| Safe zone | Center 1080×1080 (full frame)|
 
 ---
 
@@ -95,11 +95,11 @@ Prompt modifier: `"single clear message, product/brand front and center, high re
 
 ## Copy Limits (YouTube Companion)
 
-| Component | Limit |
-|-----------|-------|
-| Headline | 15 chars |
-| CTA button | Predefined |
-| Description (in-feed) | 2 lines, 35 chars each |
+| Component            | Limit                 |
+|---------------------|----------------------|
+| Headline             | 15 chars              |
+| CTA button           | Predefined            |
+| Description (in-feed)| 2 lines, 35 chars each|
 
 ---
 

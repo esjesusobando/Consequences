@@ -47,34 +47,34 @@ When given ad account data:
 ## Check Assignment (18 Checks)
 
 ### LinkedIn Lead Gen & Performance (10 checks)
-| ID         | Check                                                     | Severity         |
+| ID          | Check                                                      | Severity          |
 |------------|-----------------------------------------------------------|------------------|
-| L14        | Lead Gen Form ≤5 fields (13% CVR benchmark)               | High             |
-| L15        | Lead Gen Form synced to CRM in real-time                  | High             |
-| L18        | Campaign objective matches funnel stage                   | High             |
-| L19        | A/B testing active (creative or audience)                 | Medium           |
-| L20        | Message frequency ≤1 per 30-45 days (inbox fatigue)       | High             |
-| L21        | Sponsored Content CTR ≥0.44%                              | High             |
-| L22        | CPC within benchmark ($5-7 avg, senior $6.40+)            | Medium           |
-| L23        | Lead-to-opportunity rate tracked (not just CPL)           | High             |
-| L24        | Attribution: 30-day click / 7-day view configured         | Medium           |
-| L25        | Demographics report reviewed monthly                      | Medium           |
+| L14         | Lead Gen Form ≤5 fields (13% CVR benchmark)                | High              |
+| L15         | Lead Gen Form synced to CRM in real-time                   | High              |
+| L18         | Campaign objective matches funnel stage                    | High              |
+| L19         | A/B testing active (creative or audience)                  | Medium            |
+| L20         | Message frequency ≤1 per 30-45 days (inbox fatigue)        | High              |
+| L21         | Sponsored Content CTR ≥0.44%                               | High              |
+| L22         | CPC within benchmark ($5-7 avg, senior $6.40+)             | Medium            |
+| L23         | Lead-to-opportunity rate tracked (not just CPL)            | High              |
+| L24         | Attribution: 30-day click / 7-day view configured          | Medium            |
+| L25         | Demographics report reviewed monthly                       | Medium            |
 
 ### TikTok Performance (3 checks)
-| ID         | Check                                          | Severity         |
+| ID          | Check                                           | Severity          |
 |------------|------------------------------------------------|------------------|
-| T17        | CTR ≥1.0% for in-feed ads                      | High             |
-| T18        | CPA within target (3x Kill Rule applies)       | High             |
-| T19        | Average video watch time ≥6 seconds            | Medium           |
+| T17         | CTR ≥1.0% for in-feed ads                       | High              |
+| T18         | CPA within target (3x Kill Rule applies)        | High              |
+| T19         | Average video watch time ≥6 seconds             | Medium            |
 
 ### Microsoft Settings & Performance (5 checks)
-| ID         | Check                                                                | Severity         |
+| ID          | Check                                                                 | Severity          |
 |------------|----------------------------------------------------------------------|------------------|
-| MS14       | Copilot chat placement enabled for PMax (73% CTR lift)               | Medium           |
-| MS15       | Conversion goals configured natively (not relying on imported)       | High             |
-| MS16       | CPC 20-40% lower than Google for same keywords                       | Medium           |
-| MS17       | CVR comparable to Google (not >50% lower)                            | Medium           |
-| MS18       | Impression share tracked for brand and top terms                     | Medium           |
+| MS14        | Copilot chat placement enabled for PMax (73% CTR lift)                | Medium            |
+| MS15        | Conversion goals configured natively (not relying on imported)        | High              |
+| MS16        | CPC 20-40% lower than Google for same keywords                        | Medium            |
+| MS17        | CVR comparable to Google (not >50% lower)                             | Medium            |
+| MS18        | Impression share tracked for brand and top terms                      | Medium            |
 
 ## Cross-Platform Compliance Checks
 
@@ -110,11 +110,11 @@ For ALL platforms, verify:
 
 ## Performance Benchmarks Summary
 
-| Platform         | Good CTR         | Good CPC Range         | Notes                              |
+| Platform          | Good CTR          | Good CPC Range          | Notes                               |
 |------------------|------------------|------------------------|------------------------------------|
-| LinkedIn         | ≥0.44% SC        | $5-7 avg               | Senior: $6.40+                     |
-| TikTok           | ≥1.0%            | $0.50-1.00             | 40-60% cheaper than Meta CPM       |
-| Microsoft        | ≥2.83%           | $1.20-1.55             | 20-35% discount vs Google          |
+| LinkedIn          | ≥0.44% SC         | $5-7 avg                | Senior: $6.40+                      |
+| TikTok            | ≥1.0%             | $0.50-1.00              | 40-60% cheaper than Meta CPM        |
+| Microsoft         | ≥2.83%            | $1.20-1.55              | 20-35% discount vs Google           |
 
 ## Output Format
 

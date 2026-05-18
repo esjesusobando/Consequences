@@ -40,15 +40,15 @@ commentary: When users ask about specific issues, focus on relevant checks rathe
 
 ## Audit Categories (80 Checks)
 
-| Category | Weight | Checks |
-|----------|--------|--------|
-| Conversion Tracking | 25% | G42-G49, G-CT1 to G-CT3, G-CTV1 (12 checks) |
-| Wasted Spend / Negatives | 20% | G13-G19, G-WS1 (8 checks) |
-| Account Structure | 15% | G01-G12 (12 checks) |
-| Keywords & Quality Score | 15% | G20-G25, G-KW1, G-KW2 (8 checks) |
-| Ads & Assets | 15% | G26-G35, G-AD1, G-AD2, G-PM1 to G-PM6 (18 checks) |
-| Settings & Targeting | 10% | G36-G41, G50-G61 (18 checks) |
-| AI & Demand Gen | N/A | G-AI1, G-DG1, G-DG2, G-DG3 (4 checks) |
+| Category                | Weight  | Checks                                           |
+|------------------------|--------|-------------------------------------------------|
+| Conversion Tracking     | 25%     | G42-G49, G-CT1 to G-CT3, G-CTV1 (12 checks)      |
+| Wasted Spend / Negatives| 20%     | G13-G19, G-WS1 (8 checks)                        |
+| Account Structure       | 15%     | G01-G12 (12 checks)                              |
+| Keywords & Quality Score| 15%     | G20-G25, G-KW1, G-KW2 (8 checks)                 |
+| Ads & Assets            | 15%     | G26-G35, G-AD1, G-AD2, G-PM1 to G-PM6 (18 checks)|
+| Settings & Targeting    | 10%     | G36-G41, G50-G61 (18 checks)                     |
+| AI & Demand Gen         | N/A     | G-AI1, G-DG1, G-DG2, G-DG3 (4 checks)            |
 
 ## Critical Checks (Must Evaluate First)
 
@@ -67,14 +67,14 @@ These checks have severity multiplier 5.0x; failure here dominates the score:
 
 ## Key Thresholds
 
-| Metric | Pass | Warning | Fail |
-|--------|------|---------|------|
-| Quality Score (weighted avg) | ≥7 | 5-6 | ≤4 |
-| Wasted spend | <5% | 5-15% | >15% |
-| RSA Ad Strength | Good/Excellent | Average | Poor |
-| Search term visibility | >60% | 40-60% | <40% |
-| Learning Limited ad sets | <25% | 25-40% | >40% |
-| Landing page LCP | <2.5s | 2.5-4.0s | >4.0s |
+| Metric                      | Pass          | Warning  | Fail  |
+|----------------------------|--------------|---------|------|
+| Quality Score (weighted avg)| ≥7            | 5-6      | ≤4    |
+| Wasted spend                | <5%           | 5-15%    | >15%  |
+| RSA Ad Strength             | Good/Excellent| Average  | Poor  |
+| Search term visibility      | >60%          | 40-60%   | <40%  |
+| Learning Limited ad sets    | <25%          | 25-40%   | >40%  |
+| Landing page LCP            | <2.5s         | 2.5-4.0s | >4.0s |
 
 ## PMax Specific Checks
 

@@ -75,9 +75,9 @@ This is no longer theoretical AI productivity. It's practical.
 
 ## 🎯 Tips
 
-| Platform                           | Style                                       |
+| Platform                            | Style                                        |
 |------------------------------------|---------------------------------------------|
-| Facebook                           | Emocional, pregunta                         |
-| Instagram                          | Short, hashtags                             |
-| X                                  | Thread hook                                 |
-| LinkedIn                           | Profesional, value                          |
+| Facebook                            | Emocional, pregunta                          |
+| Instagram                           | Short, hashtags                              |
+| X                                   | Thread hook                                  |
+| LinkedIn                            | Profesional, value                           |

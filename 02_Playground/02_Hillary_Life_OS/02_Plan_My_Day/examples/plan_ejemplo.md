@@ -6,12 +6,12 @@
 
 ## 📊 Resumen
 
-| Prioridad                            | Cantidad                             | Tiempo Estimado                             |
+| Prioridad                             | Cantidad                              | Tiempo Estimado                              |
 |--------------------------------------|--------------------------------------|---------------------------------------------|
-| P0                                   | 2                                    | 90 min                                      |
-| P1                                   | 1                                    | 30 min                                      |
-| P2                                   | 1                                    | 15 min                                      |
-| **Total**                            | **4**                                | **135 min**                                 |
+| P0                                    | 2                                     | 90 min                                       |
+| P1                                    | 1                                     | 30 min                                       |
+| P2                                    | 1                                     | 15 min                                       |
+| **Total**                             | **4**                                 | **135 min**                                  |
 
 ---
 
@@ -58,12 +58,12 @@
 
 ## 🔍 Análisis
 
-| Análisis                                      | Resultado                                                                   |
+| Análisis                                       | Resultado                                                                    |
 |-----------------------------------------------|-----------------------------------------------------------------------------|
-| **Tareas P0**                                 | 2 (límite era 3) ✅                                                          |
-| **Energy requerid**                           | ~135min deep work disponible: 3.5h ✅                                        |
-| **Conflictos**                                | Ninguno, todos en bloques libres                                            |
-| **Recommendation**                            | Empezar por Automatizar backup (primero en lista)                           |
+| **Tareas P0**                                  | 2 (límite era 3) ✅                                                           |
+| **Energy requerid**                            | ~135min deep work disponible: 3.5h ✅                                         |
+| **Conflictos**                                 | Ninguno, todos en bloques libres                                             |
+| **Recommendation**                             | Empezar por Automatizar backup (primero en lista)                            |
 
 ---
 

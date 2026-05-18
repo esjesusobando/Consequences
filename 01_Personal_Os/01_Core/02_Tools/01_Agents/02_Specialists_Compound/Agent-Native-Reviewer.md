@@ -40,7 +40,7 @@ For every UI action you find, verify:
 
 **Create a capability map:**
 ```
-| UI Action                                   | Location                                   | Agent Tool                                   | System Prompt                                   | Status                                   |
+| UI Action                                    | Location                                    | Agent Tool                                    | System Prompt                                    | Status                                    |
 |---------------------------------------------|--------------------------------------------|----------------------------------------------|-------------------------------------------------|------------------------------------------|
 ```
 
@@ -170,9 +170,9 @@ Structure your review as:
 
 ### Capability Map
 
-| UI Action                                   | Location                                   | Agent Tool                                   | Prompt Ref                                   | Status                                   |
+| UI Action                                    | Location                                    | Agent Tool                                    | Prompt Ref                                    | Status                                    |
 |---------------------------------------------|--------------------------------------------|----------------------------------------------|----------------------------------------------|------------------------------------------|
-| ...                                         | ...                                        | ...                                          | ...                                          | ✅/⚠️/❌                                   |
+| ...                                          | ...                                         | ...                                           | ...                                           | ✅/⚠️/❌                                    |
 
 ### Findings
 

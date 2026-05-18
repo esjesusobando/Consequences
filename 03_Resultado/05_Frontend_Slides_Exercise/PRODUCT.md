@@ -44,13 +44,13 @@
 
 **Lo que NO queremos (y por qué):**
 
-| Anti-pattern                      | Por qué está mal                          | Referencia buena                             |
+| Anti-pattern                       | Por qué está mal                           | Referencia buena                              |
 |-----------------------------------|-------------------------------------------|----------------------------------------------|
-| Purple gradients                  | Hype infantil, readability killed         | Navy profundo (#1E2530)                      |
-| Glassmorphism                     | Distraction, no function                  | Solid cards con borde sutil                  |
-| Glowing neons                     | 2019 vibes, cansado                       | Naranja acento (#FF6B35) estratégico         |
-| Centrifugado胡乱                    | Chaos sin jerarquía                       | Grid limpio, alineación estricta             |
-| Peso tipográfico uniforme         | Sin tensión visual, aburrido              | Headline bold → body light                   |
+| Purple gradients                   | Hype infantil, readability killed          | Navy profundo (#1E2530)                       |
+| Glassmorphism                      | Distraction, no function                   | Solid cards con borde sutil                   |
+| Glowing neons                      | 2019 vibes, cansado                        | Naranja acento (#FF6B35) estratégico          |
+| Centrifugado胡乱                     | Chaos sin jerarquía                        | Grid limpio, alineación estricta              |
+| Peso tipográfico uniforme          | Sin tensión visual, aburrido               | Headline bold → body light                    |
 
 **Diseño "viejo" que descartamos:**
 - Fondos claros con texto oscuro

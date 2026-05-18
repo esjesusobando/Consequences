@@ -71,12 +71,12 @@ What would you like to do?
 </intake>
 
 <routing>
-| Response                                          | Workflow                                          |
+| Response                                           | Workflow                                           |
 |---------------------------------------------------|---------------------------------------------------|
-| 1, "keyword", "keyword"                           | `workflows/option-a.md`                           |
-| 2, "keyword", "keyword"                           | `workflows/option-b.md`                           |
-| 3, "keyword", "keyword"                           | `workflows/option-c.md`                           |
-| 4, other                                          | Clarify, then select                              |
+| 1, "keyword", "keyword"                            | `workflows/option-a.md`                            |
+| 2, "keyword", "keyword"                            | `workflows/option-b.md`                            |
+| 3, "keyword", "keyword"                            | `workflows/option-c.md`                            |
+| 4, other                                           | Clarify, then select                               |
 
 **After reading the workflow, follow it exactly.**
 </routing>
@@ -89,11 +89,11 @@ All domain knowledge in `references/`:
 </reference_index>
 
 <workflows_index>
-| Workflow                              | Purpose                                  |
+| Workflow                               | Purpose                                   |
 |---------------------------------------|------------------------------------------|
-| option-a.md                           | [What it does]                           |
-| option-b.md                           | [What it does]                           |
-| option-c.md                           | [What it does]                           |
+| option-a.md                            | [What it does]                            |
+| option-b.md                            | [What it does]                            |
+| option-c.md                            | [What it does]                            |
 </workflows_index>
 ```
 </skill_md_template>

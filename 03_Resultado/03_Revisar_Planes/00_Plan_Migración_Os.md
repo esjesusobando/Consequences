@@ -23,49 +23,49 @@ Reorganizar `Think_Different/` de 9 carpetas raíz a 4 carpetas con propósito c
 
 ### Raíz
 
-| Actual                             | Destino                                                    | Tipo                                  |
+| Actual                              | Destino                                                     | Tipo                                   |
 |------------------------------------|------------------------------------------------------------|---------------------------------------|
-| `00_Winter_is_Coming/`             | `00_Winter_is_Coming/`                                     | Sin cambio                            |
-| `01_Core/`                         | `01_Personal_Os/01_Core/`                                  | Mover dentro de OS                    |
-| `02_Knowledge/`                    | `01_Personal_Os/02_Knowledge/`                             | Mover dentro de OS                    |
-| `03_Tasks/`                        | `01_Personal_Os/03_Task/`                                  | Mover + rename (singular)             |
-| `04_Operations/`                   | `01_Personal_Os/04_Operations/00_Context_LLM/`             | Mover + restructurar                  |
-| `05_Archive/`                      | `01_Personal_Os/05_Archive/`                               | Mover dentro de OS                    |
-| `06_Playground/`                   | `02_Playground/`                                           | Mover a raíz                          |
-| `07_Projects/`                     | `01_Personal_Os/04_Operations/05_Projects/`                | Mover a Operations                    |
-| `03_Scripts_Os/`                   | `01_Personal_Os/04_Operations/03_Scripts_Os/`              | Mover a Operations                    |
-| `Now/`                             | `03_Resultado/`                                            | Renombrar                             |
+| `00_Winter_is_Coming/`              | `00_Winter_is_Coming/`                                      | Sin cambio                             |
+| `01_Core/`                          | `01_Personal_Os/01_Core/`                                   | Mover dentro de OS                     |
+| `02_Knowledge/`                     | `01_Personal_Os/02_Knowledge/`                              | Mover dentro de OS                     |
+| `03_Tasks/`                         | `01_Personal_Os/03_Task/`                                   | Mover + rename (singular)              |
+| `04_Operations/`                    | `01_Personal_Os/04_Operations/00_Context_LLM/`              | Mover + restructurar                   |
+| `05_Archive/`                       | `01_Personal_Os/05_Archive/`                                | Mover dentro de OS                     |
+| `06_Playground/`                    | `02_Playground/`                                            | Mover a raíz                           |
+| `07_Projects/`                      | `01_Personal_Os/04_Operations/05_Projects/`                 | Mover a Operations                     |
+| `03_Scripts_Os/`                    | `01_Personal_Os/04_Operations/03_Scripts_Os/`               | Mover a Operations                     |
+| `Now/`                              | `03_Resultado/`                                             | Renombrar                              |
 
 ### `01_Core/` → `01_Personal_Os/01_Core/`
 
-| Actual                                               | Destino                                                        |
+| Actual                                                | Destino                                                         |
 |------------------------------------------------------|----------------------------------------------------------------|
-| `01_Core/00_Workflows/`                              | `01_Personal_Os/01_Core/00_Workflows_Os/`                      |
-| `01_Core/01_Rules/`                                  | `01_Personal_Os/01_Core/01_Rules/`                             |
-| `01_Core/02_Evals/`                                  | `01_Personal_Os/01_Core/02_Tools/08_Evals/`                    |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/`         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                   |
-| `01_Core/04_Agents/`                                 | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                   |
-| `01_Core/05_Mcp/`                                    | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`                      |
-| `01_Core/06_Integrations/`                           | `01_Personal_Os/01_Core/02_Tools/04_Integrations/`             |
-| `01_Core/07_Hooks/`                                  | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                    |
-| `01_Core/08_Plugins/`                                | `01_Personal_Os/01_Core/02_Tools/06_Plugins/`                  |
-| `01_Core/09_Server/`                                 | `01_Personal_Os/01_Core/02_Tools/07_Server/`                   |
-| `01_Core/10_Templates/`                              | `01_Personal_Os/01_Core/02_Tools/09_Templates/`                |
+| `01_Core/00_Workflows/`                               | `01_Personal_Os/01_Core/00_Workflows_Os/`                       |
+| `01_Core/01_Rules/`                                   | `01_Personal_Os/01_Core/01_Rules/`                              |
+| `01_Core/02_Evals/`                                   | `01_Personal_Os/01_Core/02_Tools/08_Evals/`                     |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/`          | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                    |
+| `01_Core/04_Agents/`                                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                    |
+| `01_Core/05_Mcp/`                                     | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`                       |
+| `01_Core/06_Integrations/`                            | `01_Personal_Os/01_Core/02_Tools/04_Integrations/`              |
+| `01_Core/07_Hooks/`                                   | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                     |
+| `01_Core/08_Plugins/`                                 | `01_Personal_Os/01_Core/02_Tools/06_Plugins/`                   |
+| `01_Core/09_Server/`                                  | `01_Personal_Os/01_Core/02_Tools/07_Server/`                    |
+| `01_Core/10_Templates/`                               | `01_Personal_Os/01_Core/02_Tools/09_Templates/`                 |
 
 ### `04_Operations/` → `01_Personal_Os/04_Operations/00_Context_LLM/`
 
-| Actual                                           | Destino                                                        |
+| Actual                                            | Destino                                                         |
 |--------------------------------------------------|----------------------------------------------------------------|
-| `04_Operations/00_Context_Memory/`               | `04_Operations/00_Context_LLM/00_Context_Memory/`              |
-| `04_Operations/02_Knowledge_Brain/`              | `04_Operations/00_Context_LLM/02_Knowledge_Brain/`             |
-| `04_Operations/03_Process_Notes/`                | `04_Operations/00_Context_LLM/01_Process_Notes/`               |
-| `04_Operations/04_Memory_Brain/`                 | `04_Operations/00_Context_LLM/02_Memory_Brain/`                |
-| `04_Operations/05_Plans/`                        | `04_Operations/00_Context_LLM/05_Plans/`                       |
-| `04_Operations/06_Solutions/`                    | `04_Operations/00_Context_LLM/06_Solutions/`                   |
-| `04_Operations/08_Auditorias/`                   | `04_Operations/00_Context_LLM/08_Auditorias/`                  |
-| `04_Operations/09_Agent_Teams_Lite/`             | `04_Operations/02_Agent_Teams_Lite/`                           |
-| `04_Operations/11_Reports/`                      | `04_Operations/00_Context_LLM/11_Reports/`                     |
-| `04_Operations/01_Auto_Improvement/`             | `04_Operations/01_Auto_Improvement/` (igual)                   |
+| `04_Operations/00_Context_Memory/`                | `04_Operations/00_Context_LLM/00_Context_Memory/`               |
+| `04_Operations/02_Knowledge_Brain/`               | `04_Operations/00_Context_LLM/02_Knowledge_Brain/`              |
+| `04_Operations/03_Process_Notes/`                 | `04_Operations/00_Context_LLM/01_Process_Notes/`                |
+| `04_Operations/04_Memory_Brain/`                  | `04_Operations/00_Context_LLM/02_Memory_Brain/`                 |
+| `04_Operations/05_Plans/`                         | `04_Operations/00_Context_LLM/05_Plans/`                        |
+| `04_Operations/06_Solutions/`                     | `04_Operations/00_Context_LLM/06_Solutions/`                    |
+| `04_Operations/08_Auditorias/`                    | `04_Operations/00_Context_LLM/08_Auditorias/`                   |
+| `04_Operations/09_Agent_Teams_Lite/`              | `04_Operations/02_Agent_Teams_Lite/`                            |
+| `04_Operations/11_Reports/`                       | `04_Operations/00_Context_LLM/11_Reports/`                      |
+| `04_Operations/01_Auto_Improvement/`              | `04_Operations/01_Auto_Improvement/` (igual)                    |
 
 ---
 
@@ -121,16 +121,16 @@ PersonalOS/
 
 ## ✅ Fases de Ejecución
 
-| Fase                   | Descripción                                                   | Estado                          | Tiempo               |
+| Fase                    | Descripción                                                    | Estado                           | Tiempo                |
 |------------------------|---------------------------------------------------------------|---------------------------------|----------------------|
-| **FASE 0**             | Git snapshot pre-migración                                    | ✅ Listo (`2474f94`)             | 5 min                |
-| **FASE 1**             | Fix Skills: rename UPPERCASE + absorber huérfanas             | 🔄 En curso                      | 15 min               |
-| **FASE 2**             | Crear estructura destino (mkdir)                              | ⏳ Pendiente                     | 10 min               |
-| **FASE 3**             | Mover contenido (git mv)                                      | ⏳ Pendiente                     | 30 min               |
-| **FASE 4**             | Actualizar config_paths.py                                    | ⏳ Pendiente                     | 10 min               |
-| **FASE 5**             | Actualizar documentación                                      | ⏳ Pendiente                     | 15 min               |
-| **FASE 6**             | Fix scripts auditores                                         | ⏳ Pendiente                     | 10 min               |
-| **FASE 7**             | Verificación final                                            | ⏳ Pendiente                     | 10 min               |
+| **FASE 0**              | Git snapshot pre-migración                                     | ✅ Listo (`2474f94`)              | 5 min                 |
+| **FASE 1**              | Fix Skills: rename UPPERCASE + absorber huérfanas              | 🔄 En curso                       | 15 min                |
+| **FASE 2**              | Crear estructura destino (mkdir)                               | ⏳ Pendiente                      | 10 min                |
+| **FASE 3**              | Mover contenido (git mv)                                       | ⏳ Pendiente                      | 30 min                |
+| **FASE 4**              | Actualizar config_paths.py                                     | ⏳ Pendiente                      | 10 min                |
+| **FASE 5**              | Actualizar documentación                                       | ⏳ Pendiente                      | 15 min                |
+| **FASE 6**              | Fix scripts auditores                                          | ⏳ Pendiente                      | 10 min                |
+| **FASE 7**              | Verificación final                                             | ⏳ Pendiente                      | 10 min                |
 
 ---
 
@@ -138,29 +138,29 @@ PersonalOS/
 
 ### Rename UPPERCASE → Proper_Case
 
-| Actual                                | Destino                               |
+| Actual                                 | Destino                                |
 |---------------------------------------|---------------------------------------|
-| `01_CREACION_Contenidos/`             | `01_Creacion_Contenidos/`             |
-| `02_DISENO_UI_UX/`                    | `02_Diseno_Ui_Ux/`                    |
-| `03_VIDEO_MEDIA/`                     | `03_Video_Media/`                     |
-| `04_AUTOMATIZACION/`                  | `04_Automatizacion/`                  |
-| `05_WORKFLOWS/`                       | `05_Workflows/`                       |
-| `06_TOOLS/`                           | `06_Tools/`                           |
-| `07_PERSONAL_OS/`                     | `07_Personal_Os/`                     |
-| `08_INVICTUS_WEB/`                    | `08_Invictus_Web/`                    |
+| `01_CREACION_Contenidos/`              | `01_Creacion_Contenidos/`              |
+| `02_DISENO_UI_UX/`                     | `02_Diseno_Ui_Ux/`                     |
+| `03_VIDEO_MEDIA/`                      | `03_Video_Media/`                      |
+| `04_AUTOMATIZACION/`                   | `04_Automatizacion/`                   |
+| `05_WORKFLOWS/`                        | `05_Workflows/`                        |
+| `06_TOOLS/`                            | `06_Tools/`                            |
+| `07_PERSONAL_OS/`                      | `07_Personal_Os/`                      |
+| `08_INVICTUS_WEB/`                     | `08_Invictus_Web/`                     |
 
 ### Absorber Huérfanas en 9 Áreas
 
-| Carpeta huérfana                              | Destino en área                       |
+| Carpeta huérfana                               | Destino en área                        |
 |-----------------------------------------------|---------------------------------------|
-| `20_James_Cameron/`                           | `03_Video_Media/`                     |
-| `28_Carousel_Master/`                         | `01_Creacion_Contenidos/`             |
-| `17_SEO_SOTA_Master/`                         | `01_Creacion_Contenidos/`             |
-| `11_Doc_Processing/`                          | `06_Tools/`                           |
-| `13_System_Master/`                           | `06_Tools/`                           |
-| `16_Silicon_Valley_Data_Analyst/`             | `06_Tools/`                           |
-| `27_Qmd/`                                     | `06_Tools/`                           |
-| `00_Gcierr/`                                  | `00_Personal_Os_Stack/`               |
+| `20_James_Cameron/`                            | `03_Video_Media/`                      |
+| `28_Carousel_Master/`                          | `01_Creacion_Contenidos/`              |
+| `17_SEO_SOTA_Master/`                          | `01_Creacion_Contenidos/`              |
+| `11_Doc_Processing/`                           | `06_Tools/`                            |
+| `13_System_Master/`                            | `06_Tools/`                            |
+| `16_Silicon_Valley_Data_Analyst/`              | `06_Tools/`                            |
+| `27_Qmd/`                                      | `06_Tools/`                            |
+| `00_Gcierr/`                                   | `00_Personal_Os_Stack/`                |
 
 ---
 
@@ -185,14 +185,14 @@ SCRIPTS_DIR = ENGINE_DIR
 
 ## 📊 Datos del Sistema (Verificados)
 
-| Componente                        | Valor                                                           |
+| Componente                         | Valor                                                            |
 |-----------------------------------|-----------------------------------------------------------------|
-| MCPs activos                      | 33                                                              |
-| Rules (fuente verdad)             | 10 .mdc en `01_Core/01_Rules/`                                  |
-| HUBs                              | 14 (→ `04_Operations/03_Scripts_Os/`)                           |
-| Skills                            | 165+ en 9 áreas funcionales                                     |
-| `.mcp.json`                       | ✅ JSON válido                                                   |
-| `config_paths.py`                 | ✅ Auto-detección por `01_Core` (survives migration)             |
+| MCPs activos                       | 33                                                               |
+| Rules (fuente verdad)              | 10 .mdc en `01_Core/01_Rules/`                                   |
+| HUBs                               | 14 (→ `04_Operations/03_Scripts_Os/`)                            |
+| Skills                             | 165+ en 9 áreas funcionales                                      |
+| `.mcp.json`                        | ✅ JSON válido                                                    |
+| `config_paths.py`                  | ✅ Auto-detección por `01_Core` (survives migration)              |
 
 ---
 

@@ -11,11 +11,11 @@ profile and optional audit data. Outputs `campaign-brief.md` for use by `/ads ge
 
 ## Quick Reference
 
-| Command | What it does |
-|---------|-------------|
-| `/ads create` | Full campaign brief → `campaign-brief.md` |
-| `/ads create --platforms meta google` | Brief for specific platforms only |
-| `/ads create --objective leads` | Brief optimized for lead generation |
+| Command                              | What it does                             |
+|-------------------------------------|-----------------------------------------|
+| `/ads create`                        | Full campaign brief → `campaign-brief.md`|
+| `/ads create --platforms meta google`| Brief for specific platforms only        |
+| `/ads create --objective leads`      | Brief optimized for lead generation      |
 
 ## Process
 
@@ -59,14 +59,14 @@ Ask (combine into one message; omit any already provided via flags):
 Read `ads/references/copy-frameworks.md` and recommend a framework based on
 campaign goal + platform + audience temperature:
 
-| Framework | Best For |
-|-----------|----------|
-| AIDA (Attention, Interest, Desire, Action) | Cold audiences, awareness campaigns |
-| PAS (Problem, Agitate, Solve) | Pain-point products, problem-aware audiences |
-| BAB (Before, After, Bridge) | Transformation offers, coaching, fitness |
-| 4P (Promise, Picture, Proof, Push) | Direct response, high-intent audiences |
-| FAB (Features, Advantages, Benefits) | Product-focused, comparison shoppers |
-| Star-Story-Solution | Brand storytelling, warm audiences |
+| Framework                                 | Best For                                    |
+|------------------------------------------|--------------------------------------------|
+| AIDA (Attention, Interest, Desire, Action)| Cold audiences, awareness campaigns         |
+| PAS (Problem, Agitate, Solve)             | Pain-point products, problem-aware audiences|
+| BAB (Before, After, Bridge)               | Transformation offers, coaching, fitness    |
+| 4P (Promise, Picture, Proof, Push)        | Direct response, high-intent audiences      |
+| FAB (Features, Advantages, Benefits)      | Product-focused, comparison shoppers        |
+| Star-Story-Solution                       | Brand storytelling, warm audiences          |
 
 Include the selected framework name in campaign-brief.md for the copy-writer agent.
 

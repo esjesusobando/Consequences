@@ -2,12 +2,12 @@
 
 ## Getting Help
 
-| Need                                  | Where to go                                                                                                    |
+| Need                                   | Where to go                                                                                                     |
 |---------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| **Bug report**                        | [Open a GitHub Issue](https://github.com/AgriciDaniel/claude-ads/issues/new/choose)                            |
-| **Feature request or question**       | [GitHub Discussions](https://github.com/AgriciDaniel/claude-ads/discussions)                                   |
-| **Security vulnerability**            | [GitHub Security Advisory](https://github.com/AgriciDaniel/claude-ads/security/advisories/new) (private)       |
-| **Contributing**                      | See [CONTRIBUTING.md](CONTRIBUTING.md)                                                                         |
+| **Bug report**                         | [Open a GitHub Issue](https://github.com/AgriciDaniel/claude-ads/issues/new/choose)                             |
+| **Feature request or question**        | [GitHub Discussions](https://github.com/AgriciDaniel/claude-ads/discussions)                                    |
+| **Security vulnerability**             | [GitHub Security Advisory](https://github.com/AgriciDaniel/claude-ads/security/advisories/new) (private)        |
+| **Contributing**                       | See [CONTRIBUTING.md](CONTRIBUTING.md)                                                                          |
 
 ## Before Opening an Issue
 

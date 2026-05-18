@@ -9,29 +9,29 @@
 
 ## Datos del Evento / Institución
 
-| Campo             | Valor                                                                         |
+| Campo              | Valor                                                                          |
 |-------------------|-------------------------------------------------------------------------------|
-| Nombre completo   | U.E.P. Marian Diamond                                                         |
-| Alias             | Diamond Kids                                                                  |
-| Programa          | Preescolar · Jardín de Infantes                                               |
-| Metodología       | Montessori                                                                    |
-| CTA               | "Reserva tu Cupo"                                                             |
-| Slogan            | "Donde cada niño aprende a brillar"                                           |
-| Slogan secundario | "¡Cada niño merece brillar!"                                                  |
+| Nombre completo    | U.E.P. Marian Diamond                                                          |
+| Alias              | Diamond Kids                                                                   |
+| Programa           | Preescolar · Jardín de Infantes                                                |
+| Metodología        | Montessori                                                                     |
+| CTA                | "Reserva tu Cupo"                                                              |
+| Slogan             | "Donde cada niño aprende a brillar"                                            |
+| Slogan secundario  | "¡Cada niño merece brillar!"                                                   |
 
 ---
 
 ## Información de Contacto
 
-| Canal            | Valor                                      |
-|------------------|--------------------------------------------|
-| Teléfono         | +58 0414 062 1217                          |
-| Email            | Ueprivadadiamondkids@gmail.com             |
-| Website          | https://uepdiamondkids.com/                |
-| TikTok           | @diamond.kids80                            |
-| Instagram        | instagram.com/u.e.p.diamondkids            |
-| Dirección        | Calle Campo Elías, Ciudad Ojeda, Zulia, Venezuela |
-| Coordenadas      | 10.204611, -71.313629                       |
+| Canal             | Valor                                            |
+|------------------|-------------------------------------------------|
+| Teléfono          | +58 0414 062 1217                                |
+| Email             | Ueprivadadiamondkids@gmail.com                   |
+| Website           | https://uepdiamondkids.com/                      |
+| TikTok            | @diamond.kids80                                  |
+| Instagram         | instagram.com/u.e.p.diamondkids                  |
+| Dirección         | Calle Campo Elías, Ciudad Ojeda, Zulia, Venezuela|
+| Coordenadas       | 10.204611, -71.313629                            |
 
 ---
 
@@ -75,23 +75,23 @@ https://maps.apple.com/?address=Calle%20Campo%20El%C3%ADas,%20Ciudad%20Ojeda,%20
 
 ## Archivos del Proyecto
 
-| Archivo | Descripción |
-|---------|-------------|
-| `Marian_Diamond.html` | Landing page principal |
-| `vercel.json` | Configuración Vercel (rewrites + headers) |
-| `README.md` | Documentación general del proyecto |
-| `assets/bg-main.png` | Imagen de fondo principal (3.2MB) |
-| `assets/base.png` | Imagen base alternativa |
-| `assets/alts/` | Versiones alternativas de fondos |
+| Archivo              | Descripción                              |
+|---------------------|-----------------------------------------|
+| `Marian_Diamond.html`| Landing page principal                   |
+| `vercel.json`        | Configuración Vercel (rewrites + headers)|
+| `README.md`          | Documentación general del proyecto       |
+| `assets/bg-main.png` | Imagen de fondo principal (3.2MB)        |
+| `assets/base.png`    | Imagen base alternativa                  |
+| `assets/alts/`       | Versiones alternativas de fondos         |
 
 ---
 
 ## URLs de Producción
 
-| Recurso | URL |
-|---------|-----|
-| Landing Principal | https://marian-diamond.vercel.app/ |
-| Website Institucional | https://uepdiamondkids.com/ |
+| Recurso              | URL                               |
+|---------------------|----------------------------------|
+| Landing Principal    | https://marian-diamond.vercel.app/|
+| Website Institucional| https://uepdiamondkids.com/       |
 
 ---
 

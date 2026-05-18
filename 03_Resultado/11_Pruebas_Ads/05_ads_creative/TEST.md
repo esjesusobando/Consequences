@@ -57,13 +57,13 @@ Volume:               100/100  ██████████████  (15%)
 
 ### Fatigue Detection
 
-| Signal | Status | Action |
-|--------|--------|--------|
-| CTR declining >20% (14 days) | Meta: -15% | WARNING - monitor |
-| Frequency (Meta) | 4.2 (7-day) | OK - under threshold |
-| Watch time (TikTok) | 4.5s avg | WARNING - below 6s |
-| QS declining (Google) | -1.2 points | WARNING - refresh ad copy |
-| Engagement rate drop | -8% (Meta) | OK |
+| Signal                      | Status     | Action                   |
+|----------------------------|-----------|-------------------------|
+| CTR declining >20% (14 days)| Meta: -15% | WARNING - monitor        |
+| Frequency (Meta)            | 4.2 (7-day)| OK - under threshold     |
+| Watch time (TikTok)         | 4.5s avg   | WARNING - below 6s       |
+| QS declining (Google)       | -1.2 points| WARNING - refresh ad copy|
+| Engagement rate drop        | -8% (Meta) | OK                       |
 
 ### Andromeda Diversity Issue (Meta)
 60% of Meta creatives have >60% similarity. This triggers retrieval suppression. Need genuinely distinct concepts: different hooks, formats, value propositions - not color swaps or minor text changes.

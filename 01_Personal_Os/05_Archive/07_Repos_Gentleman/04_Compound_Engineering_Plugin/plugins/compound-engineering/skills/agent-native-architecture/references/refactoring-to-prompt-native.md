@@ -63,11 +63,11 @@ List all your tools. Mark any that:
 
 For each workflow tool, identify the underlying primitives:
 
-| Workflow Tool                                 | Hidden Primitives                                      |
+| Workflow Tool                                  | Hidden Primitives                                       |
 |-----------------------------------------------|--------------------------------------------------------|
-| `process_feedback`                            | `store_item`, `send_message`                           |
-| `generate_report`                             | `read_file`, `write_file`                              |
-| `deploy_and_notify`                           | `git_push`, `send_message`                             |
+| `process_feedback`                             | `store_item`, `send_message`                            |
+| `generate_report`                              | `read_file`, `write_file`                               |
+| `deploy_and_notify`                            | `git_push`, `send_message`                              |
 
 **Step 3: Move behavior to the prompt**
 

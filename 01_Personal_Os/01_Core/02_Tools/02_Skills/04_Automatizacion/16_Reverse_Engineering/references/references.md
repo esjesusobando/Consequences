@@ -2,11 +2,11 @@
 
 ## Targets Analyzed
 
-| Target | Type | Key Learnings |
-|--------|------|---------------|
-| Claude Code | Agent/CLI | Tool use patterns |
-| n8n | Automation | Workflow architecture |
-| Firecrawl | Scraping | Extraction patterns |
+| Target     | Type      | Key Learnings        |
+|-----------|----------|---------------------|
+| Claude Code| Agent/CLI | Tool use patterns    |
+| n8n        | Automation| Workflow architecture|
+| Firecrawl  | Scraping  | Extraction patterns  |
 
 ## Analysis Tools
 
@@ -42,13 +42,13 @@
 
 ## Pattern Categories
 
-| Category | What to Look For |
-|----------|------------------|
-| Architectural | How components relate |
-| Coding | Style and conventions |
-| Testing | Test strategies and coverage |
-| Deployment | Build and release process |
-| Documentation | How knowledge is captured |
+| Category     | What to Look For            |
+|-------------|----------------------------|
+| Architectural| How components relate       |
+| Coding       | Style and conventions       |
+| Testing      | Test strategies and coverage|
+| Deployment   | Build and release process   |
+| Documentation| How knowledge is captured   |
 
 ---
 

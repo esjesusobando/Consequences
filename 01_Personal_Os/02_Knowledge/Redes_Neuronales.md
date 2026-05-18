@@ -48,15 +48,15 @@ Imagina que tienes un libro devant y decides contar cada palabra única. Cada un
 
 Se convierte en:
 
-| Token                                                             | ID                                                            |
+| Token                                                              | ID                                                             |
 |-------------------------------------------------------------------|---------------------------------------------------------------|
-| El                                                                | 1                                                             |
-| amor                                                              | 2                                                             |
-| es                                                                | 3                                                             |
-| todo                                                              | 4                                                             |
-| lo                                                                | 5                                                             |
-| que                                                               | 6                                                             |
-| necesitas                                                         | 7                                                             |
+| El                                                                 | 1                                                              |
+| amor                                                               | 2                                                              |
+| es                                                                 | 3                                                              |
+| todo                                                               | 4                                                              |
+| lo                                                                 | 5                                                              |
+| que                                                                | 6                                                              |
+| necesitas                                                          | 7                                                              |
 
 ### Por Qué Importa
 
@@ -84,13 +84,13 @@ Un vector es simplemente una lista de números. Piensa en él como una direcció
 
 ¿Por qué tantos números? Cada número representa una "característica" de la palabra.
 
-| Característica                                                               | Valor                                                           |
+| Característica                                                                | Valor                                                            |
 |------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| Intensidad emocional                                                         | 0.87                                                            |
-| Formalidad                                                                   | -0.23                                                           |
-| Positivo/Negativo                                                            | 0.65                                                            |
-| concrete/Abstracto                                                           | -0.12                                                           |
-| ...                                                                          | ...                                                             |
+| Intensidad emocional                                                          | 0.87                                                             |
+| Formalidad                                                                    | -0.23                                                            |
+| Positivo/Negativo                                                             | 0.65                                                             |
+| concrete/Abstracto                                                            | -0.12                                                            |
+| ...                                                                           | ...                                                              |
 
 No我们知道 que esto no es intuitivo — y está bien. Lo importante es entender el principio: **cada palabra vive en un espacio de muchas dimensiones**.
 

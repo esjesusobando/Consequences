@@ -37,32 +37,32 @@ No necesitas `npm install playwright` manualmente. El plugin encapsula runtime +
 |  USUARIO  |       |      CLAUDE       |       |   PLAYWRIGHT  |       |  BROWSER  |
 |           |       |      CODE         |       |    PLUGIN     |       | (Chromium)|
 +-----------+       +-------------------+       +---------------+       +-----------+
-|                        |                            |                         |
-| "logueate en la app    |                            |                         |
-| y verifica el          |                            |                         |
-| dashboard"             |                            |                         |
-| ---------------------> |                            |                         |
-|                        | traduce a comandos         |                         |
-|                        | async/await                |                         |
-|                        | -------------------------> |                         |
-|                        |                            | page.goto()             |
-|                        |                            | ----------------------> |
-|                        |                            |                         |
-|                        |                            | HTML + JS + DOM         |
-|                        |                            | <---------------------- |
-|                        |                            | page.fill(#user)        |
-|                        |                            | page.click(submit)      |
-|                        |                            | ----------------------> |
-|                        |                            | screenshot.png          |
-|                        |                            | <---------------------- |
-|                        | analiza, decide siguiente  |                         |
-|                        | paso, reintenta si falla   |                         |
-|                        | <------------------------- |                         |
-| "Login OK, tome        |                            |                         |
-| screenshot,            |                            |                         |
-| dashboard tiene        |                            |                         |
-| 3 widgets"             |                            |                         |
-| <--------------------- |                            |                         |
+|                       |                           |                        |
+| "logueate en la app   |                           |                        |
+| y verifica el         |                           |                        |
+| dashboard"            |                           |                        |
+| --------------------->|                           |                        |
+|                       | traduce a comandos        |                        |
+|                       | async/await               |                        |
+|                       | ------------------------->|                        |
+|                       |                           | page.goto()            |
+|                       |                           | ---------------------->|
+|                       |                           |                        |
+|                       |                           | HTML + JS + DOM        |
+|                       |                           | <----------------------|
+|                       |                           | page.fill(#user)       |
+|                       |                           | page.click(submit)     |
+|                       |                           | ---------------------->|
+|                       |                           | screenshot.png         |
+|                       |                           | <----------------------|
+|                       | analiza, decide siguiente |                        |
+|                       | paso, reintenta si falla  |                        |
+|                       | <-------------------------|                        |
+| "Login OK, tome       |                           |                        |
+| screenshot,           |                           |                        |
+| dashboard tiene       |                           |                        |
+| 3 widgets"            |                           |                        |
+| <---------------------|                           |                        |
 ```
 
 La magia: Claude **itera**. Si un selector falla, analiza el DOM, prueba otro. Si aparece un modal inesperado, lo cierra. Es un loop de percepcion-accion.
@@ -352,21 +352,21 @@ await context.tracing.stop({ path: 'trace.zip' });
 
 ## 5. Comparativa: Playwright vs Puppeteer vs Cypress
 
-| Criterio                                                | Playwright                                                 | Puppeteer                                                     | Cypress                                                   |
+| Criterio                                                 | Playwright                                                  | Puppeteer                                                      | Cypress                                                    |
 |---------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------|
-| Motor                                                   | Chromium + Firefox + WebKit                                | Solo Chromium/Chrome                                          | Solo Chromium/Electron                                    |
-| Lenguajes                                               | JS, TS, Python, Java, C#                                   | JS, TS                                                        | JS, TS                                                    |
-| Auto-wait                                               | Si, nativo y robusto                                       | Manual, hay que escribir `waitFor*`                           | Si, pero con timeouts fijos                               |
-| Multi-tab / multi-context                               | Nativo (contextos aislados)                                | Limitado                                                      | No soporta                                                |
-| iFrames cross-origin                                    | Si                                                         | Parcial                                                       | No (limitacion de arquitectura)                           |
-| Ejecucion paralela                                      | Nativa (workers)                                           | Manual                                                        | Requiere Dashboard pago                                   |
-| Intercepcion de red                                     | Completa (request/response/mock)                           | Basica                                                        | Solo XHR/fetch                                            |
-| Mantenido por                                           | Microsoft                                                  | Google (mantenimiento tibio)                                  | Cypress.io                                                |
-| Curva de aprendizaje                                    | Media                                                      | Baja                                                          | Baja (DSL propio)                                         |
-| Headless + Headed                                       | Ambos, mismo API                                           | Ambos                                                         | Headless limitado                                         |
-| Traces / Time travel debugger                           | `trace.zip` visual                                         | No                                                            | Si, excelente                                             |
-| Costo                                                   | Open source                                                | Open source                                                   | Freemium (dashboard pago)                                 |
-| Velocidad relativa                                      | Muy rapido                                                 | Rapido                                                        | Lento (arquitectura)                                      |
+| Motor                                                    | Chromium + Firefox + WebKit                                 | Solo Chromium/Chrome                                           | Solo Chromium/Electron                                     |
+| Lenguajes                                                | JS, TS, Python, Java, C#                                    | JS, TS                                                         | JS, TS                                                     |
+| Auto-wait                                                | Si, nativo y robusto                                        | Manual, hay que escribir `waitFor*`                            | Si, pero con timeouts fijos                                |
+| Multi-tab / multi-context                                | Nativo (contextos aislados)                                 | Limitado                                                       | No soporta                                                 |
+| iFrames cross-origin                                     | Si                                                          | Parcial                                                        | No (limitacion de arquitectura)                            |
+| Ejecucion paralela                                       | Nativa (workers)                                            | Manual                                                         | Requiere Dashboard pago                                    |
+| Intercepcion de red                                      | Completa (request/response/mock)                            | Basica                                                         | Solo XHR/fetch                                             |
+| Mantenido por                                            | Microsoft                                                   | Google (mantenimiento tibio)                                   | Cypress.io                                                 |
+| Curva de aprendizaje                                     | Media                                                       | Baja                                                           | Baja (DSL propio)                                          |
+| Headless + Headed                                        | Ambos, mismo API                                            | Ambos                                                          | Headless limitado                                          |
+| Traces / Time travel debugger                            | `trace.zip` visual                                          | No                                                             | Si, excelente                                              |
+| Costo                                                    | Open source                                                 | Open source                                                    | Freemium (dashboard pago)                                  |
+| Velocidad relativa                                       | Muy rapido                                                  | Rapido                                                         | Lento (arquitectura)                                       |
 
 **Veredicto para usar con Claude Code:**
 

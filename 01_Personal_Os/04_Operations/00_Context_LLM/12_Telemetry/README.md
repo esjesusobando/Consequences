@@ -33,15 +33,15 @@ Sistema de telemetría que registra cada ejecución de HUB para análisis poster
 
 ## Métricas Capturadas
 
-| Campo                       | Tipo                  | Descripción                    |
+| Campo                        | Tipo                   | Descripción                     |
 |-----------------------------|-----------------------|--------------------------------|
-| `timestamp`                 | ISO8601               | Cuándo                         |
-| `hub`                       | string                | Qué HUB                        |
-| `duration_ms`               | int                   | Cuánto tiempo                  |
-| `success`                   | bool                  | Status                         |
-| `exit_code`                 | int                   | Código de salida               |
-| `error`                     | string?               | Error si falló                 |
-| `who_called`                | string?               | Quién lo invocó                |
+| `timestamp`                  | ISO8601                | Cuándo                          |
+| `hub`                        | string                 | Qué HUB                         |
+| `duration_ms`                | int                    | Cuánto tiempo                   |
+| `success`                    | bool                   | Status                          |
+| `exit_code`                  | int                    | Código de salida                |
+| `error`                      | string?                | Error si falló                  |
+| `who_called`                 | string?                | Quién lo invocó                 |
 
 ---
 

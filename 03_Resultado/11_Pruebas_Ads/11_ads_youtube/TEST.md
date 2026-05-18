@@ -95,12 +95,12 @@ Measurement:        100/100  ██████████████  (25%)
 ### Measurement
 
 **YT-13: Key Metrics (65/100 - WARNING)**
-| Metric | Value | Benchmark | Status |
-|--------|-------|-----------|--------|
-| View Rate | 14% | ≥15% | WARNING |
-| CPV | $0.08 | $0.01-0.10 | PASS |
-| CTR | 0.4% | ≥0.5% | WARNING |
-| Brand Lift | Not measured | - | - |
+| Metric    | Value       | Benchmark  | Status  |
+|----------|------------|-----------|--------|
+| View Rate | 14%         | ≥15%       | WARNING |
+| CPV       | $0.08       | $0.01-0.10 | PASS    |
+| CTR       | 0.4%        | ≥0.5%      | WARNING |
+| Brand Lift| Not measured|-----------|--------|
 
 **YT-14: Attribution (68/100 - WARNING)**
 - View-through conversions: tracked ✅

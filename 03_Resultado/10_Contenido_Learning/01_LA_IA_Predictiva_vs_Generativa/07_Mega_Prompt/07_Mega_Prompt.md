@@ -20,13 +20,13 @@ ANALISIS FRAMEWORK:
 
 3. MAPEAR a solución
 
-   | Problema | Herramienta | Ejemplo |
-   |----------|-------------|---------|
-   | Redacción emails | Generativa | ChatGPT |
-   | Detectar fraude | Predictiva | Modelo sklearn |
-   | Crear imágenes | Generativa | Midjourney |
-   | Forecasting ventas | Predictiva | Prophet |
-   | Resumir documento | Generativa | Claude |
+| Problema          | Herramienta  | Ejemplo       |
+|------------------|-------------|--------------|
+| Redacción emails  | Generativa   | ChatGPT       |
+| Detectar fraude   | Predictiva   | Modelo sklearn|
+| Crear imágenes    | Generativa   | Midjourney    |
+| Forecasting ventas| Predictiva   | Prophet       |
+| Resumir documento | Generativa   | Claude        |
 
 4. CONSIDERAR híbrido
    Los mejores resultados usan ambas:

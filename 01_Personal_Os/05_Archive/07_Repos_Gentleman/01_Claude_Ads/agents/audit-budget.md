@@ -48,48 +48,48 @@ When given ad account data:
 ## Check Assignment (24 Checks)
 
 ### LinkedIn Audience & Budget (9 checks)
-| ID         | Check                                                                       | Severity         |
+| ID          | Check                                                                        | Severity          |
 |------------|-----------------------------------------------------------------------------|------------------|
-| L03        | Job title targeting precision (specific titles, not just functions)         | High             |
-| L04        | Company size filtering matches ICP                                          | Medium           |
-| L05        | Seniority level appropriate for offer                                       | High             |
-| L06        | Matched Audiences active (retargeting + contact lists)                      | High             |
-| L07        | ABM company lists uploaded (up to 300,000)                                  | Medium           |
-| L08        | Audience expansion OFF for precision, ON for scale (intentional)            | Medium           |
-| L09        | Predictive audiences tested (replaced Lookalikes Feb 2024)                  | Medium           |
-| L16        | Bid strategy appropriate (CPS for Messages, Max Delivery for Content)       | High             |
-| L17        | Daily budget ≥$50 for Sponsored Content                                     | High             |
+| L03         | Job title targeting precision (specific titles, not just functions)          | High              |
+| L04         | Company size filtering matches ICP                                           | Medium            |
+| L05         | Seniority level appropriate for offer                                        | High              |
+| L06         | Matched Audiences active (retargeting + contact lists)                       | High              |
+| L07         | ABM company lists uploaded (up to 300,000)                                   | Medium            |
+| L08         | Audience expansion OFF for precision, ON for scale (intentional)             | Medium            |
+| L09         | Predictive audiences tested (replaced Lookalikes Feb 2024)                   | Medium            |
+| L16         | Bid strategy appropriate (CPS for Messages, Max Delivery for Content)        | High              |
+| L17         | Daily budget ≥$50 for Sponsored Content                                      | High              |
 
 ### TikTok Bidding & Structure (8 checks)
-| ID         | Check                                                                             | Severity         |
+| ID          | Check                                                                              | Severity          |
 |------------|-----------------------------------------------------------------------------------|------------------|
-| T03        | Separate campaigns for prospecting vs retargeting                                 | High             |
-| T04        | Smart+ campaigns tested (42% adoption, 1.41-1.67 ROAS)                            | Medium           |
-| T11        | Bid strategy matches goal (Lowest Cost for volume, Cost Cap for efficiency)       | High             |
-| T12        | Daily budget ≥50x target CPA per ad group                                         | High             |
-| T13        | Learning phase: ≥50 conversions/week per ad group                                 | High             |
-| T14        | Search Ads Toggle enabled                                                         | High             |
-| T15        | Placement selection reviewed (TikTok, Pangle, etc.)                               | Medium           |
-| T16        | Dayparting aligned with audience activity                                         | Low              |
+| T03         | Separate campaigns for prospecting vs retargeting                                  | High              |
+| T04         | Smart+ campaigns tested (42% adoption, 1.41-1.67 ROAS)                             | Medium            |
+| T11         | Bid strategy matches goal (Lowest Cost for volume, Cost Cap for efficiency)        | High              |
+| T12         | Daily budget ≥50x target CPA per ad group                                          | High              |
+| T13         | Learning phase: ≥50 conversions/week per ad group                                  | High              |
+| T14         | Search Ads Toggle enabled                                                          | High              |
+| T15         | Placement selection reviewed (TikTok, Pangle, etc.)                                | Medium            |
+| T16         | Dayparting aligned with audience activity                                          | Low               |
 
 ### Microsoft Syndication & Structure (7 checks)
-| ID         | Check                                                                 | Severity         |
+| ID          | Check                                                                  | Severity          |
 |------------|-----------------------------------------------------------------------|------------------|
-| MS04       | Search partner network reviewed, low-performers excluded              | High             |
-| MS05       | Audience Network enabled only if testing intentionally                | Medium           |
-| MS06       | Bid targets 20-35% lower than Google (CPC advantage)                  | High             |
-| MS07       | Target New Customers enabled for PMax (Beta 2026)                     | Medium           |
-| MS08       | Campaign structure mirrors Google or follows best practices           | High             |
-| MS09       | Budget proportional to Bing volume (typically 20-30% of Google)       | Medium           |
-| MS10       | LinkedIn profile targeting for B2B (unique advantage)                 | High             |
+| MS04        | Search partner network reviewed, low-performers excluded               | High              |
+| MS05        | Audience Network enabled only if testing intentionally                 | Medium            |
+| MS06        | Bid targets 20-35% lower than Google (CPC advantage)                   | High              |
+| MS07        | Target New Customers enabled for PMax (Beta 2026)                      | Medium            |
+| MS08        | Campaign structure mirrors Google or follows best practices            | High              |
+| MS09        | Budget proportional to Bing volume (typically 20-30% of Google)        | Medium            |
+| MS10        | LinkedIn profile targeting for B2B (unique advantage)                  | High              |
 
 ## Budget Sufficiency Rules
 
-| Platform         | Minimum Daily Budget                     | Learning Phase Requirement                 |
+| Platform          | Minimum Daily Budget                      | Learning Phase Requirement                  |
 |------------------|------------------------------------------|--------------------------------------------|
-| LinkedIn         | $50/day Sponsored Content                | Sufficient for 15+ conversions/month       |
-| TikTok           | $50/day campaign, $20/day ad group       | ≥50 conversions per 7 days                 |
-| Microsoft        | No strict minimum                        | Sufficient for stable delivery             |
+| LinkedIn          | $50/day Sponsored Content                 | Sufficient for 15+ conversions/month        |
+| TikTok            | $50/day campaign, $20/day ad group        | ≥50 conversions per 7 days                  |
+| Microsoft         | No strict minimum                         | Sufficient for stable delivery              |
 
 ## Cross-Platform Budget Assessment
 

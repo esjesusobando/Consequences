@@ -8,14 +8,14 @@
 
 ## RESUMEN EJECUTIVO
 
-| Area | Status |
-|------|--------|
-| Project Structure | OK |
-| Path References | OK |
-| Git State | WARNING |
-| Skills & Scripts | OK |
-| Learning Always | OK |
-| Documentation | OK |
+| Area             | Status  |
+|-----------------|--------|
+| Project Structure| OK      |
+| Path References  | OK      |
+| Git State        | WARNING |
+| Skills & Scripts | OK      |
+| Learning Always  | OK      |
+| Documentation    | OK      |
 
 ---
 
@@ -123,20 +123,20 @@ e678ff3e 01_Personal_Os/05_Archive/07_Repos_Gentleman/09_Frontend_Slides
 
 **Skills verificados:** 300+ en 11 áreas funcionales
 
-| Área | SKILL.md |
-|------|----------|
-| 00_Compound_Engineering | ✅ HAS |
-| 00_Personal_Os_Stack | ✅ HAS |
-| 00_Skill_Auditor | ✅ HAS |
+| Área                   | SKILL.md  |
+|-----------------------|----------|
+| 00_Compound_Engineering| ✅ HAS     |
+| 00_Personal_Os_Stack   | ✅ HAS     |
+| 00_Skill_Auditor       | ✅ HAS     |
 | 01_Creacion_Contenidos | ❌ MISSING |
-| 02_Diseno_Ui_Ux | ❌ MISSING |
-| 03_Video_Media | ❌ MISSING |
-| 04_Automatizacion | ❌ MISSING |
-| 05_Workflows | ❌ MISSING |
-| 06_Tools | ❌ MISSING |
-| 07_Personal_Os | ❌ MISSING |
-| 08_Invictus_Web | ❌ MISSING |
-| claude-ads | ❌ MISSING |
+| 02_Diseno_Ui_Ux        | ❌ MISSING |
+| 03_Video_Media         | ❌ MISSING |
+| 04_Automatizacion      | ❌ MISSING |
+| 05_Workflows           | ❌ MISSING |
+| 06_Tools               | ❌ MISSING |
+| 07_Personal_Os         | ❌ MISSING |
+| 08_Invictus_Web        | ❌ MISSING |
+| claude-ads             | ❌ MISSING |
 
 **Nota:** Solo 3 de 12 folders de skill tienen SKILL.md propio. Esto es normal si las skills dentro de cada folder tienen sus propios SKILL.md en subcarpetas.
 
@@ -199,11 +199,11 @@ e678ff3e 01_Personal_Os/05_Archive/07_Repos_Gentleman/09_Frontend_Slides
 
 ## ISSUES ENCONTRADOS
 
-| # | Issue | Severity | Status |
-|---|-------|----------|--------|
-| 1 | Ghost submodules (engram, gentle-pi) in gitlink index | MEDIUM | FIX IN PROGRESS |
-| 2 | Referencias legacy a 07_Projects | INFO | ACKNOWLEDGED |
-| 3 | 9 skill folders sin SKILL.md propio | LOW | ACCEPTABLE |
+| #  | Issue                                                | Severity  | Status         |
+|---|-----------------------------------------------------|----------|---------------|
+| 1  | Ghost submodules (engram, gentle-pi) in gitlink index| MEDIUM    | FIX IN PROGRESS|
+| 2  | Referencias legacy a 07_Projects                     | INFO      | ACKNOWLEDGED   |
+| 3  | 9 skill folders sin SKILL.md propio                  | LOW       | ACCEPTABLE     |
 
 ---
 

@@ -113,14 +113,14 @@ user-invokable: false
 ## Measurement
 
 ### YT-13: Key YouTube Metrics
-| Metric                      | Benchmark         | Notes                                    |
+| Metric                       | Benchmark          | Notes                                     |
 |-----------------------------|-------------------|------------------------------------------|
-| View Rate (skippable)       | ≥15%              | Higher = better hook                     |
-| CPV (skippable)             | $0.01-0.10        | Varies by targeting                      |
-| VTR (bumper)                | 90%+              | Non-skippable, should be near 100%       |
-| CPM (non-skip)              | $6-15             | Varies by market                         |
-| CTR (Demand Gen)            | ≥0.5%             | Image+video combined                     |
-| Brand Lift                  | Measurable        | Requires Google Brand Lift Study         |
+| View Rate (skippable)        | ≥15%               | Higher = better hook                      |
+| CPV (skippable)              | $0.01-0.10         | Varies by targeting                       |
+| VTR (bumper)                 | 90%+               | Non-skippable, should be near 100%        |
+| CPM (non-skip)               | $6-15              | Varies by market                          |
+| CTR (Demand Gen)             | ≥0.5%              | Image+video combined                      |
+| Brand Lift                   | Measurable         | Requires Google Brand Lift Study          |
 
 ### YT-13 (continued): Attribution Considerations
 - YouTube is upper/mid-funnel; don't judge by last-click alone
@@ -160,12 +160,12 @@ High-performing Shorts ad pattern:
 
 ## Quick Wins
 
-| Check                             | Fix                                                            | Time         |
+| Check                              | Fix                                                             | Time          |
 |-----------------------------------|----------------------------------------------------------------|--------------|
-| YT-05: Demand Gen migration       | Upgrade remaining VACs to Demand Gen with video+image          | 15 min       |
-| YT-04: Shorts vertical            | Create 9:16 vertical cuts of existing ads                      | 10 min       |
-| YT-09: Add image assets           | Upload image assets to Demand Gen (20% more conversions)       | 10 min       |
-| YT-12: Frequency monitoring       | Set Target Frequency to 4/week for awareness campaigns         | 5 min        |
+| YT-05: Demand Gen migration        | Upgrade remaining VACs to Demand Gen with video+image           | 15 min        |
+| YT-04: Shorts vertical             | Create 9:16 vertical cuts of existing ads                       | 10 min        |
+| YT-09: Add image assets            | Upload image assets to Demand Gen (20% more conversions)        | 10 min        |
+| YT-12: Frequency monitoring        | Set Target Frequency to 4/week for awareness campaigns          | 5 min         |
 
 ## Output
 

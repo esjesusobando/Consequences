@@ -40,13 +40,13 @@ Read `ads/references/scoring-system.md` for full algorithm.
 
 ### Per-Platform Weights
 
-| Platform | Category Weights |
-|----------|-----------------|
-| Google | Conversion 25%, Waste 20%, Structure 15%, Keywords 15%, Ads 15%, Settings 10% |
-| Meta | Pixel/CAPI 30%, Creative 30%, Structure 20%, Audience 20% |
-| LinkedIn | Tech 25%, Audience 25%, Creative 20%, Lead Gen 15%, Budget 15% |
-| TikTok | Creative 30%, Tech 25%, Bidding 20%, Structure 15%, Performance 10% |
-| Microsoft | Tech 25%, Syndication 20%, Structure 20%, Creative 20%, Settings 15% |
+| Platform  | Category Weights                                                             |
+|----------|-----------------------------------------------------------------------------|
+| Google    | Conversion 25%, Waste 20%, Structure 15%, Keywords 15%, Ads 15%, Settings 10%|
+| Meta      | Pixel/CAPI 30%, Creative 30%, Structure 20%, Audience 20%                    |
+| LinkedIn  | Tech 25%, Audience 25%, Creative 20%, Lead Gen 15%, Budget 15%               |
+| TikTok    | Creative 30%, Tech 25%, Bidding 20%, Structure 15%, Performance 10%          |
+| Microsoft | Tech 25%, Syndication 20%, Structure 20%, Creative 20%, Settings 15%         |
 
 ### Aggregate Score
 

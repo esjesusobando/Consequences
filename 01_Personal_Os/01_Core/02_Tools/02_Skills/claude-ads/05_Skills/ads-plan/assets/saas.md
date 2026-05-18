@@ -12,13 +12,13 @@
 
 ## Recommended Platform Mix
 
-| Platform | Role | Budget % | Why |
-|----------|------|----------|-----|
-| Google Search | Primary | 35-45% | High-intent keyword capture (trial, demo, pricing queries) |
-| LinkedIn | Primary | 30-40% | B2B audience targeting (job title, company, industry) |
-| Meta | Secondary | 15-25% | Retargeting, lookalikes, brand awareness |
-| YouTube | Testing | 5-10% | Product demos, customer stories, thought leadership |
-| Microsoft | Testing | 5% | Google import, desktop-heavy B2B audience |
+| Platform     | Role     | Budget %  | Why                                                       |
+|-------------|---------|----------|----------------------------------------------------------|
+| Google Search| Primary  | 35-45%    | High-intent keyword capture (trial, demo, pricing queries)|
+| LinkedIn     | Primary  | 30-40%    | B2B audience targeting (job title, company, industry)     |
+| Meta         | Secondary| 15-25%    | Retargeting, lookalikes, brand awareness                  |
+| YouTube      | Testing  | 5-10%     | Product demos, customer stories, thought leadership       |
+| Microsoft    | Testing  | 5%        | Google import, desktop-heavy B2B audience                 |
 
 ## Campaign Architecture
 
@@ -55,12 +55,12 @@ Account
 - **ROI calculators**: interactive tools as lead magnets
 
 ### Creative by Funnel Stage
-| Stage | Format | Message |
-|-------|--------|---------|
-| Awareness | Video, carousel | Industry problem → your category exists |
-| Consideration | Demo video, comparison | Why your product vs alternatives |
-| Decision | Testimonial, case study | Specific results, social proof |
-| Retention | Feature update, tips | Drive adoption, reduce churn |
+| Stage        | Format                 | Message                                |
+|-------------|-----------------------|---------------------------------------|
+| Awareness    | Video, carousel        | Industry problem → your category exists|
+| Consideration| Demo video, comparison | Why your product vs alternatives       |
+| Decision     | Testimonial, case study| Specific results, social proof         |
+| Retention    | Feature update, tips   | Drive adoption, reduce churn           |
 
 ## Targeting Strategy
 
@@ -84,31 +84,31 @@ Account
 
 ## Budget Guidelines
 
-| Metric | SaaS Benchmark |
-|--------|---------------|
-| Google Search CPC | $4.50-$8.00 |
-| Google Search CTR | 4.28% |
-| Google Search CVR | 1.65% |
-| Google CPL | $100-$200 |
-| LinkedIn CPC | $5-$35 (TLA: $2.29-$4.14) |
-| LinkedIn CPL | $125 |
-| Meta CPC | $1.50-$3.00 |
-| Meta CPM | $35.00 |
-| Min monthly budget | $5,000+ (Google + LinkedIn minimum viable) |
+| Metric            | SaaS Benchmark                            |
+|------------------|------------------------------------------|
+| Google Search CPC | $4.50-$8.00                               |
+| Google Search CTR | 4.28%                                     |
+| Google Search CVR | 1.65%                                     |
+| Google CPL        | $100-$200                                 |
+| LinkedIn CPC      | $5-$35 (TLA: $2.29-$4.14)                 |
+| LinkedIn CPL      | $125                                      |
+| Meta CPC          | $1.50-$3.00                               |
+| Meta CPM          | $35.00                                    |
+| Min monthly budget| $5,000+ (Google + LinkedIn minimum viable)|
 
 ## Bidding Strategy Selection
 
-| Platform | Monthly Conversions | Recommended Strategy |
-|----------|--------------------|--------------------|
-| Google | <15 | Maximize Clicks (cap CPC) |
-| Google | 15-29 | Maximize Conversions |
-| Google | 30+ | Target CPA (recommended for SaaS) |
-| Google | 50+ with dynamic values | Target ROAS (if pipeline value tracked) |
-| LinkedIn | Default | Maximum Delivery |
-| LinkedIn | Efficiency priority | Manual CPC or Cost Cap |
-| LinkedIn | Accelerate campaigns | Auto-optimized (42% lower CPA) |
-| Meta | Default | Lowest Cost |
-| Meta | Efficiency priority | Cost Cap |
+| Platform  | Monthly Conversions    | Recommended Strategy                   |
+|----------|-----------------------|---------------------------------------|
+| Google    | <15                    | Maximize Clicks (cap CPC)              |
+| Google    | 15-29                  | Maximize Conversions                   |
+| Google    | 30+                    | Target CPA (recommended for SaaS)      |
+| Google    | 50+ with dynamic values| Target ROAS (if pipeline value tracked)|
+| LinkedIn  | Default                | Maximum Delivery                       |
+| LinkedIn  | Efficiency priority    | Manual CPC or Cost Cap                 |
+| LinkedIn  | Accelerate campaigns   | Auto-optimized (42% lower CPA)         |
+| Meta      | Default                | Lowest Cost                            |
+| Meta      | Efficiency priority    | Cost Cap                               |
 
 ## Attribution Model
 
@@ -120,15 +120,15 @@ Account
 
 ## KPI Targets
 
-| Metric | Month 1 | Month 3 | Month 6 |
-|--------|---------|---------|---------|
-| Trial/Demo CPA | Baseline | Target +30% | Target |
-| MQL → SQL Rate | Baseline | +10% | +20% |
-| Pipeline Value | Tracking | 3x spend | 5x spend |
-| ROAS (pipeline) | Tracking | 3:1 | 5:1 |
-| Brand Search Volume | Baseline | +15% | +30% |
-| Google QS (weighted avg) | Track | ≥6 | ≥7 |
-| Meta EMQ | Track | ≥7.0 | ≥8.0 |
+| Metric                  | Month 1  | Month 3    | Month 6  |
+|------------------------|---------|-----------|---------|
+| Trial/Demo CPA          | Baseline | Target +30%| Target   |
+| MQL → SQL Rate          | Baseline | +10%       | +20%     |
+| Pipeline Value          | Tracking | 3x spend   | 5x spend |
+| ROAS (pipeline)         | Tracking | 3:1        | 5:1      |
+| Brand Search Volume     | Baseline | +15%       | +30%     |
+| Google QS (weighted avg)| Track    | ≥6         | ≥7       |
+| Meta EMQ                | Track    | ≥7.0       | ≥8.0     |
 
 ## Common Pitfalls
 

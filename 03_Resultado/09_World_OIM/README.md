@@ -6,13 +6,13 @@
 
 ## 📂 Structure
 
-| # | Folder | Description | Status |
-|:-:|:-------|:------------|:-------:|
-| 01 | `01_OIM_Website_v2` | **Best quality** — Latest version with WebP optimization | Production |
-| 02 | `02_OIM_Website` | Standard version with hamburger menu | Production |
-| 03 | `03_OIM_Website_One` | Gallery version with real photos | Archived |
-| 04 | `04_OIM_Website_Backup` | Backup with 3D video hero | Archived |
-| — | `Imagenes_Finales` | Final images and assets | Resource |
+| #  | Folder                 | Description                                             | Status    |
+|---|-----------------------|--------------------------------------------------------|----------|
+| 01 | `01_OIM_Website_v2`    | **Best quality** — Latest version with WebP optimization| Production|
+| 02 | `02_OIM_Website`       | Standard version with hamburger menu                    | Production|
+| 03 | `03_OIM_Website_One`   | Gallery version with real photos                        | Archived  |
+| 04 | `04_OIM_Website_Backup`| Backup with 3D video hero                               | Archived  |
+| —  | `Imagenes_Finales`     | Final images and assets                                 | Resource  |
 
 ---
 

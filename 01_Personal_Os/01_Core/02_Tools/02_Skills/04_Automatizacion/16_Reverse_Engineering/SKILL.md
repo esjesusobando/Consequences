@@ -121,10 +121,10 @@ For our OS:
 
 ## Architectural Decisions
 
-| Decision | Rationale | Transferability |
+| Decision  | Rationale   | Transferability   |
 |----------|------------|------------------|
-| [D1] | [Why] | [High/Medium/Low] |
-| [D2] | [Why] | [High/Medium/Low] |
+| [D1]      | [Why]       | [High/Medium/Low] |
+| [D2]      | [Why]       | [High/Medium/Low] |
 
 ## Lessons Learned
 
@@ -165,9 +165,9 @@ Also connects to:
 
 ## Changelog
 
-| Version | Date | Changes |
-|---------|------|---------|
-| v1.0 | 2026-05-15 | Initial skill |
+| Version  | Date      | Changes      |
+|---------|----------|-------------|
+| v1.0     | 2026-05-15| Initial skill|
 
 ---
 

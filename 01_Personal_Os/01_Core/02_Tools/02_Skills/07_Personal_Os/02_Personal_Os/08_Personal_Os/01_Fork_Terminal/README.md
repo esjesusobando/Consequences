@@ -6,13 +6,13 @@ El skill está listo y funcional.
 
 ## estructura
 
-| Directorio                                                           | Propósito                                                                     |
+| Directorio                                                            | Propósito                                                                      |
 |----------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| **[cookbook/](cookbook/)**                                           | Recetas para usar Claude Code, Gemini, etc.                                   |
-| **[tools/](tools/)**                                                 | La herramienta principal (`fork_terminal.py`).                                |
-| **[05_Examples/](context/05_Examples/)**                             | Demos y scripts de prueba (en carpeta `context`).                             |
-| **[04_Docs/](context/04_Docs/)**                                     | Documentación completa (en carpeta `context`).                                |
-| **prompts/**                                                         | Templates para prompts de sistema.                                            |
+| **[cookbook/](cookbook/)**                                            | Recetas para usar Claude Code, Gemini, etc.                                    |
+| **[tools/](tools/)**                                                  | La herramienta principal (`fork_terminal.py`).                                 |
+| **[05_Examples/](context/05_Examples/)**                              | Demos y scripts de prueba (en carpeta `context`).                              |
+| **[04_Docs/](context/04_Docs/)**                                      | Documentación completa (en carpeta `context`).                                 |
+| **prompts/**                                                          | Templates para prompts de sistema.                                             |
 
 ## 📚 Documentación Completa
 

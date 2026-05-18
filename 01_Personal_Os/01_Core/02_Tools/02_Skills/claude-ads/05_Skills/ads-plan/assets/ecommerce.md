@@ -13,13 +13,13 @@
 
 ## Recommended Platform Mix
 
-| Platform | Role | Budget % | Why |
-|----------|------|----------|-----|
-| Meta (FB/IG) | Primary | 50-68% | Prospecting + Advantage+ Sales Campaigns, highest scale for DTC |
-| Google Shopping/PMax | Secondary | 23-30% | High-intent product searches, Shopping ads |
-| TikTok | Secondary | 5-15% | Product discovery, UGC, TikTok Shop |
-| Email | Supporting | 5% | Retention, repeat purchase, owned audience |
-| Microsoft Shopping | Testing | 2-5% | Google import, higher-income audience |
+| Platform            | Role      | Budget %  | Why                                                            |
+|--------------------|----------|----------|---------------------------------------------------------------|
+| Meta (FB/IG)        | Primary   | 50-68%    | Prospecting + Advantage+ Sales Campaigns, highest scale for DTC|
+| Google Shopping/PMax| Secondary | 23-30%    | High-intent product searches, Shopping ads                     |
+| TikTok              | Secondary | 5-15%     | Product discovery, UGC, TikTok Shop                            |
+| Email               | Supporting| 5%        | Retention, repeat purchase, owned audience                     |
+| Microsoft Shopping  | Testing   | 2-5%      | Google import, higher-income audience                          |
 
 ## Campaign Architecture
 
@@ -67,12 +67,12 @@ Account; TikTok
 - **Lifestyle imagery**: product in context, aspirational
 
 ### Creative Volume Requirements
-| Platform | Min Active Creatives | Refresh Cadence |
-|----------|---------------------|-----------------|
-| Meta Advantage+ Sales | 150+ in campaign | 2-4 weeks |
-| Meta Standard | 5+ per ad set | 2-4 weeks |
-| TikTok | 6+ per ad group | 5-7 days |
-| Google PMax | Text + 20 images + 5 videos per asset group | 4-8 weeks |
+| Platform             | Min Active Creatives                       | Refresh Cadence  |
+|---------------------|-------------------------------------------|-----------------|
+| Meta Advantage+ Sales| 150+ in campaign                           | 2-4 weeks        |
+| Meta Standard        | 5+ per ad set                              | 2-4 weeks        |
+| TikTok               | 6+ per ad group                            | 5-7 days         |
+| Google PMax          | Text + 20 images + 5 videos per asset group| 4-8 weeks        |
 
 ### Seasonal Creative Calendar
 - **Q1**: New year deals, resolution products
@@ -102,32 +102,32 @@ Account; TikTok
 
 ## Budget Guidelines
 
-| Metric | E-commerce Benchmark |
-|--------|---------------------|
-| Google Shopping CPC | $0.50-$1.50 |
-| Google Search CPC | $1.15 |
-| Google Search CTR | 4.13% |
-| Google ROAS | 3.68 |
-| Meta CPC | $0.70-$1.32 (seasonal) |
-| Meta ROAS | 2.19 (median), 4.52 (Advantage+ Sales) |
-| TikTok CPM | $3.21-$10 |
-| TikTok Shop CVR | >10% |
-| CPA (Triple Whale) | $23.74 (median, +12.35% YoY) |
-| Min monthly budget | $3,000+ (Google + Meta minimum viable) |
+| Metric             | E-commerce Benchmark                  |
+|-------------------|--------------------------------------|
+| Google Shopping CPC| $0.50-$1.50                           |
+| Google Search CPC  | $1.15                                 |
+| Google Search CTR  | 4.13%                                 |
+| Google ROAS        | 3.68                                  |
+| Meta CPC           | $0.70-$1.32 (seasonal)                |
+| Meta ROAS          | 2.19 (median), 4.52 (Advantage+ Sales)|
+| TikTok CPM         | $3.21-$10                             |
+| TikTok Shop CVR    | >10%                                  |
+| CPA (Triple Whale) | $23.74 (median, +12.35% YoY)          |
+| Min monthly budget | $3,000+ (Google + Meta minimum viable)|
 
 ### Bidding Strategy Selection
 
-| Platform | Monthly Conversions | Recommended Strategy |
-|----------|--------------------|--------------------|
-| Google | <15 | Maximize Clicks (cap CPC) |
-| Google | 15-29 | Maximize Conversions |
-| Google | 30+ | Target CPA |
-| Google | 50+ with dynamic values | Target ROAS (recommended for e-commerce) |
-| Meta | Default | Lowest Cost |
-| Meta | Efficiency priority | Cost Cap at target CPA |
-| Meta | Revenue tracking | ROAS Goal (4.0+ target) |
-| TikTok | <50 conversions/week | Maximum Delivery |
-| TikTok | 50+ conversions/week | Cost Cap |
+| Platform  | Monthly Conversions    | Recommended Strategy                    |
+|----------|-----------------------|----------------------------------------|
+| Google    | <15                    | Maximize Clicks (cap CPC)               |
+| Google    | 15-29                  | Maximize Conversions                    |
+| Google    | 30+                    | Target CPA                              |
+| Google    | 50+ with dynamic values| Target ROAS (recommended for e-commerce)|
+| Meta      | Default                | Lowest Cost                             |
+| Meta      | Efficiency priority    | Cost Cap at target CPA                  |
+| Meta      | Revenue tracking       | ROAS Goal (4.0+ target)                 |
+| TikTok    | <50 conversions/week   | Maximum Delivery                        |
+| TikTok    | 50+ conversions/week   | Cost Cap                                |
 
 ### Seasonal Budget Adjustments
 - **Q4 (Oct-Dec)**: increase 2-3x (CPMs rise 30-50%, but CVR rises too)
@@ -136,15 +136,15 @@ Account; TikTok
 
 ## KPI Targets
 
-| Metric | Month 1 | Month 3 | Month 6 |
-|--------|---------|---------|---------|
-| ROAS | 2.0 (learning) | 3.0 | 4.0+ |
-| CPA | Baseline | -15% | -25% |
-| AOV | Baseline | +5% (bundles) | +10% |
-| New Customer % | Track | 40%+ | 40%+ |
-| MER | Track | 3.0 | 4.0+ |
-| Google QS (weighted avg) | Track | ≥6 | ≥7 |
-| Meta EMQ | Track | ≥7.0 | ≥8.0 (87% of advertisers are below this) |
+| Metric                  | Month 1       | Month 3      | Month 6                                 |
+|------------------------|--------------|-------------|----------------------------------------|
+| ROAS                    | 2.0 (learning)| 3.0          | 4.0+                                    |
+| CPA                     | Baseline      | -15%         | -25%                                    |
+| AOV                     | Baseline      | +5% (bundles)| +10%                                    |
+| New Customer %          | Track         | 40%+         | 40%+                                    |
+| MER                     | Track         | 3.0          | 4.0+                                    |
+| Google QS (weighted avg)| Track         | ≥6           | ≥7                                      |
+| Meta EMQ                | Track         | ≥7.0         | ≥8.0 (87% of advertisers are below this)|
 
 ## Common Pitfalls
 

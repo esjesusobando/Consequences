@@ -27,63 +27,63 @@ Applied 3 auto-fixes. Batched 2 fixes for approval. 4 findings to consider (2 er
 
 These fixes have one clear correct answer but touch document meaning. Apply all?
 
-| #                             | Section                                | Fix                                                                                                              | Reviewer                                |
+| #                              | Section                                 | Fix                                                                                                               | Reviewer                                 |
 |-------------------------------|----------------------------------------|------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| 1                             | Unit 4                                 | Add "update API rate-limit config" step -- implied by Unit 3's rate-limit introduction                           | feasibility                             |
-| 2                             | Verification                           | Add auth token refresh to test scenarios -- required by Unit 2's token expiry handling                           | security-lens                           |
+| 1                              | Unit 4                                  | Add "update API rate-limit config" step -- implied by Unit 3's rate-limit introduction                            | feasibility                              |
+| 2                              | Verification                            | Add auth token refresh to test scenarios -- required by Unit 2's token expiry handling                            | security-lens                            |
 
 ### P0 -- Must Fix
 
 #### Errors
 
-| #                             | Section                                      | Issue                                                                                                          | Reviewer                             | Confidence                             |
+| #                              | Section                                       | Issue                                                                                                           | Reviewer                              | Confidence                              |
 |-------------------------------|----------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------------------------------------|----------------------------------------|
-| 1                             | Requirements Trace                           | Goal states "offline support" but technical approach assumes persistent connectivity                           | coherence                            | 0.92                                   |
+| 1                              | Requirements Trace                            | Goal states "offline support" but technical approach assumes persistent connectivity                            | coherence                             | 0.92                                    |
 
 ### P1 -- Should Fix
 
 #### Errors
 
-| #                             | Section                                    | Issue                                                                                        | Reviewer                                 | Confidence                             |
+| #                              | Section                                     | Issue                                                                                         | Reviewer                                  | Confidence                              |
 |-------------------------------|--------------------------------------------|----------------------------------------------------------------------------------------------|------------------------------------------|----------------------------------------|
-| 2                             | Scope Boundaries                           | 8 of 12 units build admin infrastructure; only 2 touch stated goal                           | scope-guardian                           | 0.80                                   |
+| 2                              | Scope Boundaries                            | 8 of 12 units build admin infrastructure; only 2 touch stated goal                            | scope-guardian                            | 0.80                                    |
 
 #### Omissions
 
-| #                             | Section                                         | Issue                                                                                                            | Reviewer                              | Confidence                             |
+| #                              | Section                                          | Issue                                                                                                             | Reviewer                               | Confidence                              |
 |-------------------------------|-------------------------------------------------|------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------------------------------|
-| 3                             | Implementation Unit 3                           | Plan proposes custom auth but does not mention existing Devise setup or migration path                           | feasibility                           | 0.85                                   |
+| 3                              | Implementation Unit 3                            | Plan proposes custom auth but does not mention existing Devise setup or migration path                            | feasibility                            | 0.85                                    |
 
 ### P2 -- Consider Fixing
 
 #### Omissions
 
-| #                             | Section                              | Issue                                                                            | Reviewer                                | Confidence                             |
+| #                              | Section                               | Issue                                                                             | Reviewer                                 | Confidence                              |
 |-------------------------------|--------------------------------------|----------------------------------------------------------------------------------|-----------------------------------------|----------------------------------------|
-| 4                             | API Design                           | Public webhook endpoint has no rate limiting mentioned                           | security-lens                           | 0.75                                   |
+| 4                              | API Design                            | Public webhook endpoint has no rate limiting mentioned                            | security-lens                            | 0.75                                    |
 
 ### Residual Concerns
 
-| #                             | Concern                                                                                      | Source                                |
+| #                              | Concern                                                                                       | Source                                 |
 |-------------------------------|----------------------------------------------------------------------------------------------|---------------------------------------|
-| 1                             | Migration rollback strategy not addressed for Phase 2 data changes                           | feasibility                           |
+| 1                              | Migration rollback strategy not addressed for Phase 2 data changes                            | feasibility                            |
 
 ### Deferred Questions
 
-| #                             | Question                                                                      | Source                                               |
+| #                              | Question                                                                       | Source                                                |
 |-------------------------------|-------------------------------------------------------------------------------|------------------------------------------------------|
-| 1                             | Should the API use versioned endpoints from launch?                           | feasibility, security-lens                           |
+| 1                              | Should the API use versioned endpoints from launch?                            | feasibility, security-lens                            |
 
 ### Coverage
 
-| Persona                                  | Status                                  | Findings                             | Auto                             | Batch                             | Present                             | Residual                             |
+| Persona                                   | Status                                   | Findings                              | Auto                              | Batch                              | Present                              | Residual                              |
 |------------------------------------------|-----------------------------------------|--------------------------------------|----------------------------------|-----------------------------------|-------------------------------------|--------------------------------------|
-| coherence                                | completed                               | 3                                    | 2                                | 0                                 | 1                                   | 0                                    |
-| feasibility                              | completed                               | 2                                    | 0                                | 1                                 | 1                                   | 1                                    |
-| security-lens                            | completed                               | 2                                    | 0                                | 1                                 | 1                                   | 0                                    |
-| scope-guardian                           | completed                               | 1                                    | 0                                | 0                                 | 1                                   | 0                                    |
-| product-lens                             | not activated                           |--------------------------------------|----------------------------------|-----------------------------------|-------------------------------------|--------------------------------------|
-| design-lens                              | not activated                           |--------------------------------------|----------------------------------|-----------------------------------|-------------------------------------|--------------------------------------|
+| coherence                                 | completed                                | 3                                     | 2                                 | 0                                  | 1                                    | 0                                     |
+| feasibility                               | completed                                | 2                                     | 0                                 | 1                                  | 1                                    | 1                                     |
+| security-lens                             | completed                                | 2                                     | 0                                 | 1                                  | 1                                    | 0                                     |
+| scope-guardian                            | completed                                | 1                                     | 0                                 | 0                                  | 1                                    | 0                                     |
+| product-lens                              | not activated                            |--------------------------------------|----------------------------------|-----------------------------------|-------------------------------------|--------------------------------------|
+| design-lens                               | not activated                            |--------------------------------------|----------------------------------|-----------------------------------|-------------------------------------|--------------------------------------|
 ```
 
 ## Section Rules

@@ -183,10 +183,10 @@ Para cada demo/code found:
 ```markdown
 ## Herramientas identificadas
 
-| #         | Herramienta         | Propósito        | Versión        |
+| #          | Herramienta          | Propósito         | Versión         |
 |-----------|---------------------|------------------|----------------|
-| 1         | [Tool 1]            | [Use]            | [v]            |
-| 2         | [Tool 2]            | [Use]            | [v]            |
+| 1          | [Tool 1]             | [Use]             | [v]             |
+| 2          | [Tool 2]             | [Use]             | [v]             |
 ... | ...        | ...      | ...
 
 ## Para el OS
@@ -335,13 +335,13 @@ Tweet 2: [280 chars]
 ```markdown
 ## [XX] [Título] — [Fecha]
 
-| Campo                 | Valor                      |
+| Campo                  | Valor                       |
 |-----------------------|----------------------------|
-| URL                   | [URL]                      |
-| Tipo                  | [Video/Artículo/Doc]       |
-| Tema                  | [Tema principal]           |
-| Herramientas          | [Lista]                    |
-| Fecha processed       | [YYYY-MM-DD]               |
+| URL                    | [URL]                       |
+| Tipo                   | [Video/Artículo/Doc]        |
+| Tema                   | [Tema principal]            |
+| Herramientas           | [Lista]                     |
+| Fecha processed        | [YYYY-MM-DD]                |
 ```
 
 ### Step 5.3: Notificar créditos
@@ -359,22 +359,22 @@ Tweet 2: [280 chars]
 
 ## Credit Management
 
-| API             | Estado         | Acción al 10%           |
+| API              | Estado          | Acción al 10%            |
 |-----------------|----------------|-------------------------|
-| Exa             | [CHECK]        | Notificar usuario       |
-| Firecrawl       | [CHECK]        | Notificar usuario       |
+| Exa              | [CHECK]         | Notificar usuario        |
+| Firecrawl        | [CHECK]         | Notificar usuario        |
 
 ---
 
 ## Error Handling
 
-| Error               | Solución                                    |
+| Error                | Solución                                     |
 |---------------------|---------------------------------------------|
-| No info found       | Request transcript al usuario               |
-| API error           | Usar web search manual                      |
-| Invalid URL         | Request valid URL                           |
-| Rate limit          | Wait + retry o notify user                  |
-| Timeout             | Continuar con lo que hay + documentar       |
+| No info found        | Request transcript al usuario                |
+| API error            | Usar web search manual                       |
+| Invalid URL          | Request valid URL                            |
+| Rate limit           | Wait + retry o notify user                   |
+| Timeout              | Continuar con lo que hay + documentar        |
 
 ---
 
@@ -408,15 +408,15 @@ AI:
 
 ## Perfiles de Agente (para prompts)
 
-| #         | Perfil                | Carpeta SKILL              |
+| #          | Perfil                 | Carpeta SKILL               |
 |-----------|-----------------------|----------------------------|
-| 01        | Project Manager       | `02_Project_Manager`       |
-| 02        | Product Manager       | `03_Product_Manager`       |
-| 03        | Product Design        | `04_Product_Design`        |
-| 04        | Vibe Coding           | `05_Vibe_Coding`           |
-| 05        | Testing               | `06_Testing`               |
-| 06        | DevOps                | `07_DevOps`                |
-| 07        | Marketing             | `09_Marketing`             |
+| 01         | Project Manager        | `02_Project_Manager`        |
+| 02         | Product Manager        | `03_Product_Manager`        |
+| 03         | Product Design         | `04_Product_Design`         |
+| 04         | Vibe Coding            | `05_Vibe_Coding`            |
+| 05         | Testing                | `06_Testing`                |
+| 06         | DevOps                 | `07_DevOps`                 |
+| 07         | Marketing              | `09_Marketing`              |
 
 ---
 

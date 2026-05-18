@@ -57,11 +57,11 @@
 
 ## Mejores Prompts
 
-| Prompt                                      | Cuándo                                     |
+| Prompt                                       | Cuándo                                      |
 |---------------------------------------------|--------------------------------------------|
-| "Open [app]"                                | iniciar aplicación                         |
-| "Go to [URL]"                               | navegar web                                |
-| "Create [file]"                             | crear archivo                              |
-| "Organize [folder]"                         | organizar archivos                         |
-| "Find and [action]"                         | buscar + hacer                             |
-| "Take a screenshot"                         | capturar pantalla                          |
+| "Open [app]"                                 | iniciar aplicación                          |
+| "Go to [URL]"                                | navegar web                                 |
+| "Create [file]"                              | crear archivo                               |
+| "Organize [folder]"                          | organizar archivos                          |
+| "Find and [action]"                          | buscar + hacer                              |
+| "Take a screenshot"                          | capturar pantalla                           |

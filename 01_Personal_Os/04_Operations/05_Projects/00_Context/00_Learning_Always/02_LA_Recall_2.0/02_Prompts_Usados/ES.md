@@ -78,13 +78,13 @@
 
 ## 🎯 Mejores Prompts Genéricos
 
-| Prompt                                                      | Cuándo usarlo                                      |
+| Prompt                                                       | Cuándo usarlo                                       |
 |-------------------------------------------------------------|----------------------------------------------------|
-| "¿Qué dijo sobre [tema]?"                                   | Buscar concepto específico                         |
-| "Conecta esto con [otro]"                                   | Hallar relaciones                                  |
-| "Genera un quiz de 5 preguntas"                             | Active learning                                    |
-| "¿Cómo se compara con [otro tool]?"                         | Análisis competitivo                               |
-| "Extrae los action items"                                   | Para implementar                                   |
+| "¿Qué dijo sobre [tema]?"                                    | Buscar concepto específico                          |
+| "Conecta esto con [otro]"                                    | Hallar relaciones                                   |
+| "Genera un quiz de 5 preguntas"                              | Active learning                                     |
+| "¿Cómo se compara con [otro tool]?"                          | Análisis competitivo                                |
+| "Extrae los action items"                                    | Para implementar                                    |
 
 ---
 

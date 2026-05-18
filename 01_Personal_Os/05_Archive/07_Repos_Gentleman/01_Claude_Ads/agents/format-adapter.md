@@ -56,12 +56,12 @@ commentary: Validate every asset in the manifest. Be precise about which dimensi
 5. **Copy Zone Validation** (after dimension and file size checks):
    After checking dimensions and file sizes, analyze image composition. Use Claude vision to check each generated image for clear copy zones:
 
-| Platform                  | Copy zone requirement                                                  |
+| Platform                   | Copy zone requirement                                                   |
 |---------------------------|------------------------------------------------------------------------|
-| Meta Feed                 | Bottom 30% should be clear for text overlay                            |
-| Meta Stories/Reels        | Top 15% and bottom 25% should be clear                                 |
-| TikTok                    | Top 15% (username) and bottom 25% (CTA) should be clear                |
-| Google Display            | Center 60% is primary; edges can have text                             |
+| Meta Feed                  | Bottom 30% should be clear for text overlay                             |
+| Meta Stories/Reels         | Top 15% and bottom 25% should be clear                                  |
+| TikTok                     | Top 15% (username) and bottom 25% (CTA) should be clear                 |
+| Google Display             | Center 60% is primary; edges can have text                              |
 
    Flag violations as **WARNING** in format-report.md with suggested prompt adjustments (e.g., "Regenerate with stronger copy zone constraint: bottom 30% minimal").
 
@@ -86,11 +86,11 @@ commentary: Validate every asset in the manifest. Be precise about which dimensi
 ## Results by Platform
 
 ### Meta
-| Asset                        | Expected         | Actual          | File Size                | Status           |
+| Asset                         | Expected          | Actual           | File Size                 | Status            |
 |------------------------------|------------------|-----------------|--------------------------|------------------|
-| feed-1080x1350.png           | 1080×1350        | 1080×1350       | 2.1MB / 30MB limit       | ✅ PASS           |
-| vertical-1080x1920.png       | 1080×1920        | 1080×1920       | 3.4MB / 30MB limit       | ✅ PASS           |
-| square-1080x1080.png         | 1080×1080        | N/A             | N/A                      | ⚠️ MISSING       |
+| feed-1080x1350.png            | 1080×1350         | 1080×1350        | 2.1MB / 30MB limit        | ✅ PASS            |
+| vertical-1080x1920.png        | 1080×1920         | 1080×1920        | 3.4MB / 30MB limit        | ✅ PASS            |
+| square-1080x1080.png          | 1080×1080         | N/A              | N/A                       | ⚠️ MISSING        |
 
 **Coverage:** Feed (4:5 ✅), Stories/Reels (9:16 ✅), Square (1:1 ⚠️ missing)
 
@@ -114,22 +114,22 @@ commentary: Validate every asset in the manifest. Be precise about which dimensi
 
 ## Copy Zone Compliance
 
-| Asset                           | Platform         | Zone Check                       | Status                                           |
+| Asset                            | Platform          | Zone Check                        | Status                                            |
 |---------------------------------|------------------|----------------------------------|--------------------------------------------------|
-| feed-1080x1350-v1.png           | Meta Feed        | Bottom 30% clear                 | ✅ PASS                                           |
-| vertical-1080x1920-v1.png       | TikTok           | Top 15% / Bottom 25% clear       | ⚠️ WARNING: bottom 25% has visual elements       |
+| feed-1080x1350-v1.png            | Meta Feed         | Bottom 30% clear                  | ✅ PASS                                            |
+| vertical-1080x1920-v1.png        | TikTok            | Top 15% / Bottom 25% clear        | ⚠️ WARNING: bottom 25% has visual elements        |
 
 [List prompt adjustment suggestions for any WARNING items]
 
 ## Generation Cost Summary
 *(Included only when ~/.banana/costs.json is available)*
 
-| Metric                       | Value                                                 |
+| Metric                        | Value                                                  |
 |------------------------------|-------------------------------------------------------|
-| Total assets generated       | [N]                                                   |
-| Total cost                   | $[X.XX]                                               |
-| Average cost per asset       | $[X.XX]                                               |
-| Cost by platform             | Meta: $[X.XX], Google: $[X.XX], TikTok: $[X.XX]       |
+| Total assets generated        | [N]                                                    |
+| Total cost                    | $[X.XX]                                                |
+| Average cost per asset        | $[X.XX]                                                |
+| Cost by platform              | Meta: $[X.XX], Google: $[X.XX], TikTok: $[X.XX]        |
 
 ## Recommendations
 [1-3 specific next steps based on findings]
@@ -137,13 +137,13 @@ commentary: Validate every asset in the manifest. Be precise about which dimensi
 
 ## Platform Size Limits
 
-| Platform         | Image Size Limit        | Notes                  |
+| Platform          | Image Size Limit         | Notes                   |
 |------------------|-------------------------|------------------------|
-| Meta             | 30MB                    | JPG/PNG                |
-| LinkedIn         | 5MB                     | PNG/JPG                |
-| TikTok           | 500MB                   | Video; image N/A       |
-| Google           | 5MB                     | JPG/PNG                |
-| Microsoft        | 2MB                     | JPG/PNG                |
+| Meta              | 30MB                     | JPG/PNG                 |
+| LinkedIn          | 5MB                      | PNG/JPG                 |
+| TikTok            | 500MB                    | Video; image N/A        |
+| Google            | 5MB                      | JPG/PNG                 |
+| Microsoft         | 2MB                      | JPG/PNG                 |
 
 ## Fallback: No Pillow Installed
 

@@ -6,15 +6,15 @@
 
 ## 1. Sincronización Desktop → Backup
 
-| Archivo               | Estado         | Notas                                          |
+| Archivo                | Estado          | Notas                                           |
 |-----------------------|----------------|------------------------------------------------|
-| CLAUDE.md             | ✅ Sync         | Desktop más nuevo (20KB vs 13KB backup)        |
-| OS_DIRECTORY.md       | ✅ Sync         | Diferentes versiones - ambas preservadas       |
-| README.md             | ✅ Sync         | Desktop más nuevo (25KB vs 16KB backup)        |
-| AGENTS.md             | ✅ Sync         | V2 optimizado                                  |
-| RULES_INDEX.md        | ✅ Sync         |                                                |
-| 11_Minimax.mdc        | ✅ Nuevo        | Creado en Desktop, copiado a backup            |
-| chat.py               | ✅ Nuevo        | Creado en Desktop, copiado a backup            |
+| CLAUDE.md              | ✅ Sync          | Desktop más nuevo (20KB vs 13KB backup)         |
+| OS_DIRECTORY.md        | ✅ Sync          | Diferentes versiones - ambas preservadas        |
+| README.md              | ✅ Sync          | Desktop más nuevo (25KB vs 16KB backup)         |
+| AGENTS.md              | ✅ Sync          | V2 optimizado                                   |
+| RULES_INDEX.md         | ✅ Sync          |                                                 |
+| 11_Minimax.mdc         | ✅ Nuevo         | Creado en Desktop, copiado a backup             |
+| chat.py                | ✅ Nuevo         | Creado en Desktop, copiado a backup             |
 
 **Backup:** Commiteado con mensaje `Sync from Desktop Think_Different - 2026-05-13`
 
@@ -22,13 +22,13 @@
 
 ## 2. Configuración Global (~/.claude/settings.json)
 
-| Setting                                 | Valor                                  | Estado              |
+| Setting                                  | Valor                                   | Estado               |
 |-----------------------------------------|----------------------------------------|---------------------|
-| ANTHROPIC_BASE_URL                      | https://api.minimax.io/anthropic       | ✅                   |
-| ANTHROPIC_AUTH_TOKEN                    | sk-cp-...                              | ✅ Configurado       |
-| ANTHROPIC_MODEL                         | MiniMax-M2.7                           | ✅                   |
-| skipDangerousModePermissionPrompt       | true                                   | ✅ Activado          |
-| theme                                   | dark                                   | ✅                   |
+| ANTHROPIC_BASE_URL                       | https://api.minimax.io/anthropic        | ✅                    |
+| ANTHROPIC_AUTH_TOKEN                     | sk-cp-...                               | ✅ Configurado        |
+| ANTHROPIC_MODEL                          | MiniMax-M2.7                            | ✅                    |
+| skipDangerousModePermissionPrompt        | true                                    | ✅ Activado           |
+| theme                                    | dark                                    | ✅                    |
 
 ---
 
@@ -36,31 +36,31 @@
 
 **Total: 37 servidores activos**
 
-| Server                    | Tipo                 | Estado                 |
+| Server                     | Tipo                  | Estado                  |
 |---------------------------|----------------------|------------------------|
-| higgsfield                | streamableHttp       | ✅ Nuevo agregado       |
-| context7                  | streamableHttp       | ✅                      |
-| github                    | streamableHttp       | ✅                      |
-| Linear                    | streamableHttp       | ✅                      |
-| fireflies                 | stdio                | ✅                      |
-| Notion                    | stdio                | ✅                      |
-| excalidraw-yctimlin       | stdio                | ✅                      |
-| engram                    | stdio                | ✅                      |
-| (32 más)                  | various              | ✅                      |
+| higgsfield                 | streamableHttp        | ✅ Nuevo agregado        |
+| context7                   | streamableHttp        | ✅                       |
+| github                     | streamableHttp        | ✅                       |
+| Linear                     | streamableHttp        | ✅                       |
+| fireflies                  | stdio                 | ✅                       |
+| Notion                     | stdio                 | ✅                       |
+| excalidraw-yctimlin        | stdio                 | ✅                       |
+| engram                     | stdio                 | ✅                       |
+| (32 más)                   | various               | ✅                       |
 
 ---
 
 ## 4. Repos Archivados (07_Repos_Gentleman)
 
-| Repo                              | Estado                                                        |
+| Repo                               | Estado                                                         |
 |-----------------------------------|---------------------------------------------------------------|
-| 07_claude-ads                     | ✅ Nuevo - clonado de github.com/AgriciDaniel/claude-ads       |
-| agent-teams-lite                  | ✅ Presente                                                    |
-| compound-engineering-plugin       | ✅ Presente                                                    |
-| design-system                     | ✅ Presente                                                    |
-| gentle-ai                         | ✅ Presente                                                    |
-| gentleman-guardian-angel          | ✅ Presente                                                    |
-| (18 más)                          | ✅ Presentes                                                   |
+| 07_claude-ads                      | ✅ Nuevo - clonado de github.com/AgriciDaniel/claude-ads        |
+| agent-teams-lite                   | ✅ Presente                                                     |
+| compound-engineering-plugin        | ✅ Presente                                                     |
+| design-system                      | ✅ Presente                                                     |
+| gentle-ai                          | ✅ Presente                                                     |
+| gentleman-guardian-angel           | ✅ Presente                                                     |
+| (18 más)                           | ✅ Presentes                                                    |
 
 ---
 
@@ -85,10 +85,10 @@ Think_Different/
 
 ## 6. Pendientes
 
-| Item                        | Estado                        | Notas                            |
+| Item                         | Estado                         | Notas                             |
 |-----------------------------|-------------------------------|----------------------------------|
-| Seedance 2.0 MCP            | ⏳ Esperando link              | Usuario no proporcionó URL       |
-| Doctor --check-issues       | ℹ️ No existe `--doctor`       | Cmd no disponible                |
+| Seedance 2.0 MCP             | ⏳ Esperando link               | Usuario no proporcionó URL        |
+| Doctor --check-issues        | ℹ️ No existe `--doctor`        | Cmd no disponible                 |
 
 ---
 

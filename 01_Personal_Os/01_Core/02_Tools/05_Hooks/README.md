@@ -61,9 +61,9 @@ Post-Compound Engineering:
 
 ### 01_Pre_Tool — Prevención Pre-Ejecución
 
-| Script                                    | Función                                                                                        | Cuándo se dispara                              |
+| Script                                     | Función                                                                                         | Cuándo se dispara                               |
 |-------------------------------------------|------------------------------------------------------------------------------------------------|------------------------------------------------|
-| `pre_tool_use.py`                         | Chequeo de batería (< 15% = warning), validación de seguridad, logging                         | Antes de CADA tool use                         |
+| `pre_tool_use.py`                          | Chequeo de batería (< 15% = warning), validación de seguridad, logging                          | Antes de CADA tool use                          |
 
 **Acciones:**
 - `check_battery()` — Verifica batería en Windows via PowerShell
@@ -74,18 +74,18 @@ Post-Compound Engineering:
 
 ### 02_Post_Tool — Validación Post-Ejecución
 
-| Script                                     | Función                                                                                | Cuándo se dispara                                |
+| Script                                      | Función                                                                                 | Cuándo se dispara                                 |
 |--------------------------------------------|----------------------------------------------------------------------------------------|--------------------------------------------------|
-| `post_tool_use.py`                         | Validación de outputs, backup de cambios, logging de resultado                         | Después de CADA tool use                         |
+| `post_tool_use.py`                          | Validación de outputs, backup de cambios, logging de resultado                          | Después de CADA tool use                          |
 
 ---
 
 ### 03_Lifecycle — Ciclo de Vida de Sesión
 
-| Script                                     | Función                                                                             | Cuándo se dispara                                                        |
+| Script                                      | Función                                                                              | Cuándo se dispara                                                         |
 |--------------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| `stop.py`                                  | Cierre limpio de sesión: guarda en Engram, notifica usuario                         | Cuando Claude termina (`Stop` event)                                     |
-| `subagent_stop.py`                         | Cierre de sub-agente: guarda contexto antes de retornar                             | Cuando sub-agente termina (`SubagentStop` event)                         |
+| `stop.py`                                   | Cierre limpio de sesión: guarda en Engram, notifica usuario                          | Cuando Claude termina (`Stop` event)                                      |
+| `subagent_stop.py`                          | Cierre de sub-agente: guarda contexto antes de retornar                              | Cuando sub-agente termina (`SubagentStop` event)                          |
 
 **Protocolo de cierre (`stop.py`):**
 ```python
@@ -98,11 +98,11 @@ Post-Compound Engineering:
 
 ### 04_Sound — Notificaciones Sonoras
 
-| Script                                            | Función                                                         | Uso                                                              |
+| Script                                             | Función                                                          | Uso                                                               |
 |---------------------------------------------------|-----------------------------------------------------------------|------------------------------------------------------------------|
-| `notification.py`                                 | Motor de notificaciones de audio                                | `python notification.py --task-complete`                         |
-| `task-complete-sound.ps1`                         | Script PowerShell para audio en Windows                         | Invocado por notification.py                                     |
-| `task-complete.bat`                               | Wrapper batch para compatibilidad                               | Fallback Windows                                                 |
+| `notification.py`                                  | Motor de notificaciones de audio                                 | `python notification.py --task-complete`                          |
+| `task-complete-sound.ps1`                          | Script PowerShell para audio en Windows                          | Invocado por notification.py                                      |
+| `task-complete.bat`                                | Wrapper batch para compatibilidad                                | Fallback Windows                                                  |
 
 **Flags disponibles:**
 ```bash
@@ -116,18 +116,18 @@ python 01_Core/07_Hooks/04_Sound/notification.py --notify "Progreso: 45%"
 
 ### 05_Harness — Evaluación y Monitoreo
 
-| Script                                       | Función                                                                               | Cuándo se dispara                              |
+| Script                                        | Función                                                                                | Cuándo se dispara                               |
 |----------------------------------------------|---------------------------------------------------------------------------------------|------------------------------------------------|
-| `context_monitor.py`                         | Monitorea uso del contexto, alerta cuando se acerca al límite                         | Periódicamente                                 |
-| `eval_trigger.py`                            | Dispara evaluaciones automáticas del sistema                                          | Por condición o manual                         |
+| `context_monitor.py`                          | Monitorea uso del contexto, alerta cuando se acerca al límite                          | Periódicamente                                  |
+| `eval_trigger.py`                             | Dispara evaluaciones automáticas del sistema                                           | Por condición o manual                          |
 
 ---
 
 ### 06_Post_Hulk_Compound — Post Compound Engineering
 
-| Script                                          | Función                                                                            | Cuándo se dispara                                            |
+| Script                                           | Función                                                                             | Cuándo se dispara                                             |
 |-------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| `post_hulk_compound.py`                         | Acciones post-CE: captura de learnings, compound knowledge                         | Al completar workflow `/ce:compound`                         |
+| `post_hulk_compound.py`                          | Acciones post-CE: captura de learnings, compound knowledge                          | Al completar workflow `/ce:compound`                          |
 
 ---
 
@@ -137,21 +137,21 @@ python 01_Core/07_Hooks/04_Sound/notification.py --notify "Progreso: 45%"
 
 ### Hooks Configurados en `.claude/settings.json` (✅ ACTIVOS)
 
-| Hook                                     | Script                                                  | Estado                           |
+| Hook                                      | Script                                                   | Estado                            |
 |------------------------------------------|---------------------------------------------------------|----------------------------------|
-| PreToolUse                               | `01_Pre_Tool/pre_tool_use.py`                           | ✅ Activo                         |
-| PostToolUse                              | `02_Post_Tool/post_tool_use.py`                         | ✅ Activo                         |
-| Stop                                     | `03_Lifecycle/stop.py`                                  | ✅ Activo                         |
-| **SubagentStop**                         | `03_Lifecycle/subagent_stop.py`                         | ✅ Activo                         |
+| PreToolUse                                | `01_Pre_Tool/pre_tool_use.py`                            | ✅ Activo                          |
+| PostToolUse                               | `02_Post_Tool/post_tool_use.py`                          | ✅ Activo                          |
+| Stop                                      | `03_Lifecycle/stop.py`                                   | ✅ Activo                          |
+| **SubagentStop**                          | `03_Lifecycle/subagent_stop.py`                          | ✅ Activo                          |
 
 ### Hooks Documentados pero NO Configurados (❌ INACTIVOS)
 
-| Hook                                          | Script                                          | Estado                               | Acciones                                                                  |
+| Hook                                           | Script                                           | Estado                                | Acciones                                                                   |
 |-----------------------------------------------|-------------------------------------------------|--------------------------------------|---------------------------------------------------------------------------|
-| 04_Sound                                      | `notification.py`                               | ❌ No wireado                         | Manual: `--task-complete`, `--success`, `--error`                         |
-| 05_Harness                                    | `context_monitor.py`                            | ❌ No wireado                         | Manual: monitoreo de contexto                                             |
-| 05_Harness                                    | `eval_trigger.py`                               | ❌ No wireado                         | Manual: dispara evals                                                     |
-| 06_Post_Hulk_Compound                         | `post_hulk_compound.py`                         | ❌ No wireado                         | Manual: post-CE workflow                                                  |
+| 04_Sound                                       | `notification.py`                                | ❌ No wireado                          | Manual: `--task-complete`, `--success`, `--error`                          |
+| 05_Harness                                     | `context_monitor.py`                             | ❌ No wireado                          | Manual: monitoreo de contexto                                              |
+| 05_Harness                                     | `eval_trigger.py`                                | ❌ No wireado                          | Manual: dispara evals                                                      |
+| 06_Post_Hulk_Compound                          | `post_hulk_compound.py`                          | ❌ No wireado                          | Manual: post-CE workflow                                                   |
 
 ### Recomendación
 Para activar los hooks inactivos, agregar al `settings.json`:

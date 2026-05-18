@@ -144,15 +144,15 @@ If Demand Gen campaigns exist, evaluate:
 
 ## Key Thresholds
 
-| Metric | Pass | Warning | Fail |
-|--------|------|---------|------|
-| Quality Score (avg) | ≥7 | 5-6 | <5 |
-| CTR (Search) | ≥6.66% | 3-6.66% | <3% |
-| CVR (Search) | ≥7.52% | 3-7.52% | <3% |
-| CPC (Search) | ≤$5.26 | $5.26-8.00 | >$8.00 |
-| Wasted Spend | <10% | 10-20% | >20% |
-| Ad Strength | Good+ | Average | Poor |
-| Invalid Clicks | <5% | 5-10% | >10% |
+| Metric             | Pass  | Warning   | Fail  |
+|-------------------|------|----------|------|
+| Quality Score (avg)| ≥7    | 5-6       | <5    |
+| CTR (Search)       | ≥6.66%| 3-6.66%   | <3%   |
+| CVR (Search)       | ≥7.52%| 3-7.52%   | <3%   |
+| CPC (Search)       | ≤$5.26| $5.26-8.00| >$8.00|
+| Wasted Spend       | <10%  | 10-20%    | >20%  |
+| Ad Strength        | Good+ | Average   | Poor  |
+| Invalid Clicks     | <5%   | 5-10%     | >10%  |
 
 ## Output
 

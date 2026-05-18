@@ -15,12 +15,12 @@ Transforma inbox de tareas en schedule organizado. Lee inbox, prefs y calendario
 INBOX ──► ANALYZE ──► PRIORITIZE ──► SCHEDULE
 ```
 
-| Component                             | Responsibility                                         |
+| Component                              | Responsibility                                          |
 |---------------------------------------|--------------------------------------------------------|
-| Collector                             | Read inbox, prefs, calendar                            |
-| Analyzer                              | Extract tags, energy, impact                           |
-| Prioritizer                           | Apply Eisenhower + 10x rules                           |
-| Scheduler                             | Map to time blocks                                     |
+| Collector                              | Read inbox, prefs, calendar                             |
+| Analyzer                               | Extract tags, energy, impact                            |
+| Prioritizer                            | Apply Eisenhower + 10x rules                            |
+| Scheduler                              | Map to time blocks                                      |
 
 ---
 
@@ -65,12 +65,12 @@ calendar = read("templates/calendario_hoy.md")
 
 ### 3. Prioritizar
 
-| Rule                                    | Priority                             |
+| Rule                                     | Priority                              |
 |-----------------------------------------|--------------------------------------|
-| Deadline hoy                            | P0                                   |
-| 10x impacto                             | P1                                   |
-| Bloquea otras                           | P2                                   |
-| Default                                 | P3                                   |
+| Deadline hoy                             | P0                                    |
+| 10x impacto                              | P1                                    |
+| Bloquea otras                            | P2                                    |
+| Default                                  | P3                                    |
 
 ### 4. Schedule
 
@@ -156,17 +156,17 @@ calendar = read("templates/calendario_hoy.md")
 
 ## Implementation
 
-| Scenario                                  | Behavior                                            |
+| Scenario                                   | Behavior                                             |
 |-------------------------------------------|-----------------------------------------------------|
-| Inbox vacío                               | "No tasks to plan"                                  |
-| >5 P0                                     | "Reduce to 3 recommended"                           |
-| Energy mismatch                           | Warn but schedule                                   |
-| No prefs                                  | Use defaults                                        |
+| Inbox vacío                                | "No tasks to plan"                                   |
+| >5 P0                                      | "Reduce to 3 recommended"                            |
+| Energy mismatch                            | Warn but schedule                                    |
+| No prefs                                   | Use defaults                                         |
 
 ---
 
 ## Changelog
 
-| Date                                 | Change                                 |
+| Date                                  | Change                                  |
 |--------------------------------------|----------------------------------------|
-| 2026-03-31                           | Initial v1.0                           |
+| 2026-03-31                            | Initial v1.0                            |

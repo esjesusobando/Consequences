@@ -13,12 +13,12 @@
 
 ## Recommended Platform Mix
 
-| Platform | Role | Budget % | Why |
-|----------|------|----------|-----|
-| Google Local Services Ads (LSA) | Primary | 40-50% | Pay-per-lead, Google Guaranteed badge, top placement, cheapest CPL ($25-$75) |
-| Google Search PPC | Primary | 20-25% | High-intent local queries ("near me", "[service] [city]") |
-| Meta (FB/IG) | Secondary | 15-20% | Local awareness, retargeting, seasonal promotions |
-| Microsoft/Bing | Testing | 5-10% | Google import, older demographic alignment |
+| Platform                       | Role     | Budget %  | Why                                                                         |
+|-------------------------------|---------|----------|----------------------------------------------------------------------------|
+| Google Local Services Ads (LSA)| Primary  | 40-50%    | Pay-per-lead, Google Guaranteed badge, top placement, cheapest CPL ($25-$75)|
+| Google Search PPC              | Primary  | 20-25%    | High-intent local queries ("near me", "[service] [city]")                   |
+| Meta (FB/IG)                   | Secondary| 15-20%    | Local awareness, retargeting, seasonal promotions                           |
+| Microsoft/Bing                 | Testing  | 5-10%     | Google import, older demographic alignment                                  |
 
 ## Campaign Architecture
 
@@ -61,13 +61,13 @@ Account; Meta
 - **Review highlights**: screenshot or quote from Google reviews
 
 ### Ad Copy Priorities
-| Element | Priority | Example |
-|---------|----------|---------|
-| Location | Must have | "Serving [City] & Surrounding Areas" |
-| Phone number | Must have | Call extensions on every campaign |
-| Offer | High | "$50 Off First Visit" or "Free Estimate" |
-| Trust signal | High | "Licensed & Insured", "4.9★ (200+ Reviews)" |
-| Urgency | Medium | "Same-Day Service Available" |
+| Element     | Priority  | Example                                    |
+|------------|----------|-------------------------------------------|
+| Location    | Must have | "Serving [City] & Surrounding Areas"       |
+| Phone number| Must have | Call extensions on every campaign          |
+| Offer       | High      | "$50 Off First Visit" or "Free Estimate"   |
+| Trust signal| High      | "Licensed & Insured", "4.9★ (200+ Reviews)"|
+| Urgency     | Medium    | "Same-Day Service Available"               |
 
 ### Extensions (Google)
 - **Call extension**: on every campaign (primary conversion)
@@ -100,57 +100,57 @@ Account; Meta
 
 ## Budget Guidelines
 
-| Metric | Local Service Benchmark |
-|--------|----------------------|
-| Google Search CPC | $7.85-$30 (varies by service type) |
-| Google Search CTR | 5.50-6.37% |
-| Google Search CVR | 7.33-15.0% |
-| Google CPL | $90.92 |
-| LSA CPL | $25-$75 (varies by service) |
-| Meta CPM | $18.00 |
-| ROAS | 5.0x (high margin services) |
-| Min monthly budget | $1,500+ (Google Search + LSA) |
+| Metric            | Local Service Benchmark           |
+|------------------|----------------------------------|
+| Google Search CPC | $7.85-$30 (varies by service type)|
+| Google Search CTR | 5.50-6.37%                        |
+| Google Search CVR | 7.33-15.0%                        |
+| Google CPL        | $90.92                            |
+| LSA CPL           | $25-$75 (varies by service)       |
+| Meta CPM          | $18.00                            |
+| ROAS              | 5.0x (high margin services)       |
+| Min monthly budget| $1,500+ (Google Search + LSA)     |
 
 ### Budget by Service Type (Monthly Minimums)
-| Service Type | Google Min | LSA Min | Meta Min |
+| Service Type | Google Min  | LSA Min  | Meta Min  |
 |-------------|------------|---------|----------|
-| HVAC | $2,000 | $500 | $500 |
-| Plumbing | $1,500 | $500 | $300 |
-| Roofing | $2,500 | $500 | $500 |
-| Landscaping | $1,000 | N/A | $500 |
-| Cleaning | $800 | $300 | $300 |
-| Pest Control | $1,000 | $300 | $300 |
+| HVAC         | $2,000      | $500     | $500      |
+| Plumbing     | $1,500      | $500     | $300      |
+| Roofing      | $2,500      | $500     | $500      |
+| Landscaping  | $1,000      | N/A      | $500      |
+| Cleaning     | $800        | $300     | $300      |
+| Pest Control | $1,000      | $300     | $300      |
 
 ## Bidding Strategy Selection
 
-| Platform | Monthly Conversions | Recommended Strategy |
-|----------|--------------------|--------------------|
-| Google | <15 | Maximize Clicks (cap CPC) |
-| Google | 15-29 | Maximize Conversions |
-| Google | 30+ | Target CPA (recommended for local) |
-| LSA | N/A | Pay-per-lead (no bidding strategy: set max CPL) |
-| Meta | Default | Lowest Cost |
-| Meta | Efficiency priority | Cost Cap at target CPL |
+| Platform  | Monthly Conversions | Recommended Strategy                           |
+|----------|--------------------|-----------------------------------------------|
+| Google    | <15                 | Maximize Clicks (cap CPC)                      |
+| Google    | 15-29               | Maximize Conversions                           |
+| Google    | 30+                 | Target CPA (recommended for local)             |
+| LSA       | N/A                 | Pay-per-lead (no bidding strategy: set max CPL)|
+| Meta      | Default             | Lowest Cost                                    |
+| Meta      | Efficiency priority | Cost Cap at target CPL                         |
 
 ## KPI Targets
 
-| Metric | Month 1 | Month 3 | Month 6 |
-|--------|---------|---------|---------|
-| CPL (Search) | Baseline | Target +20% | Target |
-| CPL (LSA) | Baseline | Optimize | <$50 |
-| Call Volume | Track | +20% | +40% |
-| Booked Job Rate | Track | 30%+ | 40%+ |
-| Cost per Booked Job | Track | <2x CPL | <1.5x CPL |
+| Metric             | Month 1  | Month 3    | Month 6  |
+|-------------------|---------|-----------|---------|
+| CPL (Search)       | Baseline | Target +20%| Target   |
+| CPL (LSA)          | Baseline | Optimize   | <$50     |
+| Call Volume        | Track    | +20%       | +40%     |
+| Booked Job Rate    | Track    | 30%+       | 40%+     |
+| Cost per Booked Job| Track    | <2x CPL    | <1.5x CPL|
 
 ## Seasonal Strategy
 
-| Season | Action |
-|--------|--------|
-| Spring | Ramp up: HVAC tune-ups, landscaping, spring cleaning |
-| Summer | Peak: AC repair, outdoor services, pest control |
-| Fall | Transition: heating prep, gutter cleaning, winterization |
-| Winter | Emergency focus: heating repair, pipe freeze, snow removal |
-| Pre-season | Increase budget 30% in month before peak (learning phase) |
+| Season    | Action                                                    |
+|----------|----------------------------------------------------------|
+| Spring    | Ramp up: HVAC tune-ups, landscaping, spring cleaning      |
+| Summer    | Peak: AC repair, outdoor services, pest control           |
+| Fall      | Transition: heating prep, gutter cleaning, winterization  |
+| Winter    | Emergency focus: heating repair, pipe freeze, snow removal|
+| Pre-season| Increase budget 30% in month before peak (learning phase) |
 
 ## Common Pitfalls
 

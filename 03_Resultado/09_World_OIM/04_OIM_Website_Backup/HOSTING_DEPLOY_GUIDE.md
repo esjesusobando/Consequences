@@ -6,14 +6,14 @@
 
 ## Lo que tenemos
 
-| Elemento                     | Detalle                                              |
+| Elemento                      | Detalle                                               |
 |------------------------------|------------------------------------------------------|
-| **Build output**             | `out/` — HTML, CSS, JS, videos, imágenes             |
-| **Tipo**                     | Static site (HTML + JS client-side)                  |
-| **Stack deploy**             | Solo subiendo archivos a `public_html/`              |
-| **Email**                    | EmailJS (client-side, configurable)                  |
-| **Dominio**                  | Apuntar a Hostinger                                  |
-| **SSL**                      | Gratis con Let's Encrypt en hPanel                   |
+| **Build output**              | `out/` — HTML, CSS, JS, videos, imágenes              |
+| **Tipo**                      | Static site (HTML + JS client-side)                   |
+| **Stack deploy**              | Solo subiendo archivos a `public_html/`               |
+| **Email**                     | EmailJS (client-side, configurable)                   |
+| **Dominio**                   | Apuntar a Hostinger                                   |
+| **SSL**                       | Gratis con Let's Encrypt en hPanel                    |
 
 ---
 
@@ -184,14 +184,14 @@ Después de deployar, registrar en:
 
 ## Troubleshooting
 
-| Problema                         | Solución                                                                                   |
+| Problema                          | Solución                                                                                    |
 |----------------------------------|--------------------------------------------------------------------------------------------|
-| Página en blanco                 | Verificar que `index.html` está en `public_html/` (no en subcarpeta)                       |
-| Videos no cargan                 | Verificar que `videos/` está al mismo nivel que `_next/`                                   |
-| Formulario no envía              | Configurar EmailJS (Paso 5)                                                                |
-| SSL warning                      | Forzar HTTPS en hPanel → SSL → Force HTTPS                                                 |
-| Imágenes rotas                   | Verificar que `public/` se subió completo                                                  |
-| 404 en otras páginas             | Con `output: 'export'`, solo existe `/`. Usar `vercel.json` si se necesita más             |
+| Página en blanco                  | Verificar que `index.html` está en `public_html/` (no en subcarpeta)                        |
+| Videos no cargan                  | Verificar que `videos/` está al mismo nivel que `_next/`                                    |
+| Formulario no envía               | Configurar EmailJS (Paso 5)                                                                 |
+| SSL warning                       | Forzar HTTPS en hPanel → SSL → Force HTTPS                                                  |
+| Imágenes rotas                    | Verificar que `public/` se subió completo                                                   |
+| 404 en otras páginas              | Con `output: 'export'`, solo existe `/`. Usar `vercel.json` si se necesita más              |
 
 ---
 

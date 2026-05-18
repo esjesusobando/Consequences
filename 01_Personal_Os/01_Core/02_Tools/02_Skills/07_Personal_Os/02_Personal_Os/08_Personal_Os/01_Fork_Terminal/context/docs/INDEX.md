@@ -109,14 +109,14 @@ Implementa orquestación de múltiples agentes con contexto aislado.
 
 ### ¿Cómo hacer...?
 
-| Pregunta                                                   | Archivo                                             | Sección                                               |
+| Pregunta                                                    | Archivo                                              | Sección                                                |
 |------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------|
-| ¿Cómo forkear un terminal?                                 | SKILL.md                                            | Workflow                                              |
-| ¿Cómo usar Claude Code?                                    | cookbook/claude-code.md                             | Instructions                                          |
-| ¿Cómo pasar contexto?                                      | SKILL.md                                            | Fork Summary User Prompts                             |
-| ¿Qué comandos son compatibles?                             | COMPATIBILITY.md                                    | Comandos compatibles                                  |
-| ¿Cómo ejecutar las demos?                                  | tools/run_all_tests.py                              |-------------------------------------------------------|
-| ¿Qué se logró en la sesión?                                | EXECUTIVE_REPORT.md                                 | Resumen Ejecutivo                                     |
+| ¿Cómo forkear un terminal?                                  | SKILL.md                                             | Workflow                                               |
+| ¿Cómo usar Claude Code?                                     | cookbook/claude-code.md                              | Instructions                                           |
+| ¿Cómo pasar contexto?                                       | SKILL.md                                             | Fork Summary User Prompts                              |
+| ¿Qué comandos son compatibles?                              | COMPATIBILITY.md                                     | Comandos compatibles                                   |
+| ¿Cómo ejecutar las demos?                                   | tools/run_all_tests.py                               |-------------------------------------------------------|
+| ¿Qué se logró en la sesión?                                 | EXECUTIVE_REPORT.md                                  | Resumen Ejecutivo                                      |
 
 ---
 

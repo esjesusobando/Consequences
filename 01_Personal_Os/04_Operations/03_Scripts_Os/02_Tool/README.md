@@ -27,9 +27,9 @@ El HUB espera encontrar scripts en este directorio.
 
 ## 📋 Scripts Planeados (Futuro)
 
-| Script             | Propósito             | Status             |
+| Script              | Propósito              | Status              |
 |--------------------|-----------------------|--------------------|
-| —                  | —                     | —                  |
+| —                   | —                      | —                   |
 
 **Actualmente no hay scripts asignados a este directorio.**
 

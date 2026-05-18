@@ -137,14 +137,14 @@ Puns and wit make copy memorable—but only if it fits the brand and doesn't und
 
 ### Core Sections
 
-| Section                                            | Purpose                                                                        |
+| Section                                             | Purpose                                                                         |
 |----------------------------------------------------|--------------------------------------------------------------------------------|
-| Social Proof                                       | Build credibility (logos, stats, testimonials)                                 |
-| Problem/Pain                                       | Show you understand their situation                                            |
-| Solution/Benefits                                  | Connect to outcomes (3-5 key benefits)                                         |
-| How It Works                                       | Reduce perceived complexity (3-4 steps)                                        |
-| Objection Handling                                 | FAQ, comparisons, guarantees                                                   |
-| Final CTA                                          | Recap value, repeat CTA, risk reversal                                         |
+| Social Proof                                        | Build credibility (logos, stats, testimonials)                                  |
+| Problem/Pain                                        | Show you understand their situation                                             |
+| Solution/Benefits                                   | Connect to outcomes (3-5 key benefits)                                          |
+| How It Works                                        | Reduce perceived complexity (3-4 steps)                                         |
+| Objection Handling                                  | FAQ, comparisons, guarantees                                                    |
+| Final CTA                                           | Recap value, repeat CTA, risk reversal                                          |
 
 **For detailed section types and page templates**: See [references/copy-frameworks.md](references/copy-frameworks.md)
 

@@ -9,18 +9,18 @@ Agent Teams Lite implementa el workflow SDD como un sistema de sub-skills especi
 
 ## Skills del SDD Workflow
 
-| #                               | Skill                                      | Trigger                                                | Descripción                                           |
+| #                                | Skill                                       | Trigger                                                 | Descripción                                            |
 |---------------------------------|--------------------------------------------|--------------------------------------------------------|-------------------------------------------------------|
-| 1                               | sdd-init                                   | "sdd init", "iniciar sdd"                              | Inicializar contexto SDD                              |
-| 2                               | sdd-explore                                | Explorar ideas, investigar                             | Fase de exploración                                   |
-| 3                               | sdd-propose                                | Crear propuesta                                        | Proposal con intent/scope                             |
-| 4                               | sdd-spec                                   | Especificar requisitos                                 | Requisitos y escenarios                               |
-| 5                               | sdd-design                                 | Diseño técnico                                         | Arquitectura y decisiones                             |
-| 6                               | sdd-tasks                                  | Desglose de tareas                                     | Task breakdown                                        |
-| 7                               | sdd-apply                                  | Implementar código                                     | Ejecución de tareas                                   |
-| 8                               | sdd-verify                                 | Verificar implementación                               | Validación contra specs                               |
-| 9                               | sdd-archive                                | Archivar cambio                                        | Sync a main specs                                     |
-| 10                              | skill-registry                             | Registro de skills                                     | Mantener registry                                     |
+| 1                                | sdd-init                                    | "sdd init", "iniciar sdd"                               | Inicializar contexto SDD                               |
+| 2                                | sdd-explore                                 | Explorar ideas, investigar                              | Fase de exploración                                    |
+| 3                                | sdd-propose                                 | Crear propuesta                                         | Proposal con intent/scope                              |
+| 4                                | sdd-spec                                    | Especificar requisitos                                  | Requisitos y escenarios                                |
+| 5                                | sdd-design                                  | Diseño técnico                                          | Arquitectura y decisiones                              |
+| 6                                | sdd-tasks                                   | Desglose de tareas                                      | Task breakdown                                         |
+| 7                                | sdd-apply                                   | Implementar código                                      | Ejecución de tareas                                    |
+| 8                                | sdd-verify                                  | Verificar implementación                                | Validación contra specs                                |
+| 9                                | sdd-archive                                 | Archivar cambio                                         | Sync a main specs                                      |
+| 10                               | skill-registry                              | Registro de skills                                      | Mantener registry                                      |
 
 ## Estructura de Cada Skill
 

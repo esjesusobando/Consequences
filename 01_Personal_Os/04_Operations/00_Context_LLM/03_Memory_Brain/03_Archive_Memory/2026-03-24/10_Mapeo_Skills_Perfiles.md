@@ -8,18 +8,18 @@
 
 ## 🏗️ Estructura de Perfiles
 
-| #                                         | Perfil                                                     | Propósito                                                                 | Skills                                         |
+| #                                          | Perfil                                                      | Propósito                                                                  | Skills                                          |
 |-------------------------------------------|------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------|
-| 01                                        | **Agent_Teams_Lite**                                       | Coordinación SDD y sub-agentes                                            | 10                                             |
-| 02                                        | **Project_Manager**                                        | Planificación, Backlog y Rituales                                         | 8                                              |
-| 03                                        | **Product_Manager**                                        | Estrategia, Jira y Planes                                                 | 8                                              |
-| 04                                        | **Product_Design**                                         | UI Premium, Marca y Studio                                                | 11                                             |
-| 05                                        | **Vibe_Coding**                                            | Stack Tecnológico (React, Next, Py)                                       | 18                                             |
-| 06                                        | **Testing**                                                | TDD, Debug y Calidad                                                      | 14                                             |
-| 07                                        | **DevOps**                                                 | Deploy, Supabase, SEO y MCP                                               | 12                                             |
-| 08                                        | **Personal_Os**                                            | Motor, Paralelismo y Git                                                  | 9                                              |
-| 09                                        | **Marketing**                                              | Estrategia, Imagen y Video                                                | 9                                              |
-| 10                                        | **Backup**                                                 | Archivo Histórico de Skills                                               | ~200                                           |
+| 01                                         | **Agent_Teams_Lite**                                        | Coordinación SDD y sub-agentes                                             | 10                                              |
+| 02                                         | **Project_Manager**                                         | Planificación, Backlog y Rituales                                          | 8                                               |
+| 03                                         | **Product_Manager**                                         | Estrategia, Jira y Planes                                                  | 8                                               |
+| 04                                         | **Product_Design**                                          | UI Premium, Marca y Studio                                                 | 11                                              |
+| 05                                         | **Vibe_Coding**                                             | Stack Tecnológico (React, Next, Py)                                        | 18                                              |
+| 06                                         | **Testing**                                                 | TDD, Debug y Calidad                                                       | 14                                              |
+| 07                                         | **DevOps**                                                  | Deploy, Supabase, SEO y MCP                                                | 12                                              |
+| 08                                         | **Personal_Os**                                             | Motor, Paralelismo y Git                                                   | 9                                               |
+| 09                                         | **Marketing**                                               | Estrategia, Imagen y Video                                                 | 9                                               |
+| 10                                         | **Backup**                                                  | Archivo Histórico de Skills                                                | ~200                                            |
 
 ---
 

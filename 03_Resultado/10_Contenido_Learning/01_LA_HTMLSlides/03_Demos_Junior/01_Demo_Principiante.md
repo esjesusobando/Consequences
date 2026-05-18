@@ -55,14 +55,14 @@ Use the Obsidian theme.
 
 ## Componentes Disponibles (Pro Mode)
 
-| Componente | Ejemplo de Uso |
-|------------|----------------|
-| Stats Card | KPIs, métricas de negocio |
-| Flip Card | FAQs, antes/después, características |
-| Timeline | Journey, roadmap, historia |
-| Comparison Table | vs competitors, pricing tiers |
-| Architecture Diagram | Sistemas, infraestructura |
-| Chart | Datos, tendencias |
+| Componente          | Ejemplo de Uso                      |
+|--------------------|------------------------------------|
+| Stats Card          | KPIs, métricas de negocio           |
+| Flip Card           | FAQs, antes/después, características|
+| Timeline            | Journey, roadmap, historia          |
+| Comparison Table    | vs competitors, pricing tiers       |
+| Architecture Diagram| Sistemas, infraestructura           |
+| Chart               | Datos, tendencias                   |
 
 ---
 

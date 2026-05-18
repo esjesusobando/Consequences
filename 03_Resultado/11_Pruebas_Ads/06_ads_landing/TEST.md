@@ -34,13 +34,13 @@ Form Quality:     100/100  ██████████████  (15%)
   - Visual imagery consistent ✅
 
 **Speed Assessment**
-| Metric | Value | Status |
-|--------|-------|--------|
-| LCP | 3.2s | WARNING (2.5-4.0s) |
-| INP | 180ms | PASS (<200ms) |
-| CLS | 0.12 | WARNING (0.1-0.25) |
-| Time to Interactive | 3.8s | WARNING (3.0-5.0s) |
-| Page weight | 2.8MB | WARNING (2-5MB) |
+| Metric             | Value  | Status            |
+|-------------------|-------|------------------|
+| LCP                | 3.2s   | WARNING (2.5-4.0s)|
+| INP                | 180ms  | PASS (<200ms)     |
+| CLS                | 0.12   | WARNING (0.1-0.25)|
+| Time to Interactive| 3.8s   | WARNING (3.0-5.0s)|
+| Page weight        | 2.8MB  | WARNING (2-5MB)   |
 
 Issues found:
 - Hero image not compressed (WebP needed)

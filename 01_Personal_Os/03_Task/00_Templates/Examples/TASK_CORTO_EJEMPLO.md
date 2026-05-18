@@ -40,10 +40,10 @@ Las tablas en README.md tienen ancho inconsistente. Necesitan beautify.
 
 ## Tech Stack
 
-| Componente                                              | Valor                                                   |
+| Componente                                               | Valor                                                    |
 |---------------------------------------------------------|---------------------------------------------------------|
-| Framework                                               | Python                                                  |
-| Lenguaje                                                | Python 3.12                                             |
+| Framework                                                | Python                                                   |
+| Lenguaje                                                 | Python 3.12                                              |
 
 ## Requirements
 
@@ -55,9 +55,9 @@ Las tablas en README.md tienen ancho inconsistente. Necesitan beautify.
 
 ## Impacto
 
-| Área                                               | Afectación                                                     |
+| Área                                                | Afectación                                                      |
 |----------------------------------------------------|----------------------------------------------------------------|
-| Docs                                               | Readme formateados                                             |
+| Docs                                                | Readme formateados                                              |
 
 ## Plan
 

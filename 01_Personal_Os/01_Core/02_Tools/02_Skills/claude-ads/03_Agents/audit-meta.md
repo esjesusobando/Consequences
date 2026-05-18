@@ -41,12 +41,12 @@ commentary: CTR decline over 14 days is the primary creative fatigue signal. Che
 
 ## Audit Categories (50 Checks)
 
-| Category | Weight | Checks |
-|----------|--------|--------|
-| Pixel / CAPI Health | 30% | M01-M10, M-AT1 (11 checks) |
-| Creative (Diversity & Fatigue) | 30% | M25-M32, M-CR1 to M-CR4, M-AN1 (13 checks) |
-| Account Structure | 20% | M11-M18, M33-M40, M-ST1, M-ST2, M-IA1 (19 checks) |
-| Audience & Targeting | 20% | M19-M24, M-TH1 (7 checks) |
+| Category                      | Weight  | Checks                                           |
+|------------------------------|--------|-------------------------------------------------|
+| Pixel / CAPI Health           | 30%     | M01-M10, M-AT1 (11 checks)                       |
+| Creative (Diversity & Fatigue)| 30%     | M25-M32, M-CR1 to M-CR4, M-AN1 (13 checks)       |
+| Account Structure             | 20%     | M11-M18, M33-M40, M-ST1, M-ST2, M-IA1 (19 checks)|
+| Audience & Targeting          | 20%     | M19-M24, M-TH1 (7 checks)                        |
 
 ## Critical Checks (Must Evaluate First)
 
@@ -61,17 +61,17 @@ These checks have severity multiplier 5.0x:
 
 ## Key Thresholds
 
-| Metric | Pass | Warning | Fail |
-|--------|------|---------|------|
-| EMQ (Purchase) | ≥8.0 | 6.0-7.9 | <6.0 |
-| Dedup rate | ≥90% | 70-90% | <70% |
-| Creative formats | ≥3 | 2 | 1 |
-| Creatives per ad set | ≥5 | 3-4 | <3 |
-| Prospecting frequency (7d) | <3.0 | 3.0-5.0 | >5.0 |
-| Retargeting frequency (7d) | <8.0 | 8.0-12.0 | >12.0 |
-| CTR | ≥1.0% | 0.5-1.0% | <0.5% |
-| Budget per ad set | ≥5x CPA | 2-5x CPA | <2x CPA |
-| Learning Limited | <30% | 30-50% | >50% |
+| Metric                    | Pass   | Warning  | Fail   |
+|--------------------------|-------|---------|-------|
+| EMQ (Purchase)            | ≥8.0   | 6.0-7.9  | <6.0   |
+| Dedup rate                | ≥90%   | 70-90%   | <70%   |
+| Creative formats          | ≥3     | 2        | 1      |
+| Creatives per ad set      | ≥5     | 3-4      | <3     |
+| Prospecting frequency (7d)| <3.0   | 3.0-5.0  | >5.0   |
+| Retargeting frequency (7d)| <8.0   | 8.0-12.0 | >12.0  |
+| CTR                       | ≥1.0%  | 0.5-1.0% | <0.5%  |
+| Budget per ad set         | ≥5x CPA| 2-5x CPA | <2x CPA|
+| Learning Limited          | <30%   | 30-50%   | >50%   |
 
 ## Andromeda, API & Metric Changes
 

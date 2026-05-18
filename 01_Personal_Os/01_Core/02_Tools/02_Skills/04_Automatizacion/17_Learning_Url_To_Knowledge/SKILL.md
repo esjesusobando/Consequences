@@ -25,16 +25,16 @@ The skill will:
 
 ## The 8 Deliverables
 
-| # | Deliverable | Description |
-|---|-------------|-------------|
-| 1 | **Resumen 500 palabras** | ES + EN summary accessible for Junior level |
-| 2 | **Prompts Usados** | Extracted prompts + 7 agent profiles (ES/EN) |
-| 3 | **Demos Junior** | Step-by-step tutorials with code |
-| 4 | **Herramientas** | Tools mentioned in the content |
-| 5 | **Insights Learning Always** | For ~/Knowledge and ~/Context |
-| 6 | **Posts Redes** | Facebook, Instagram, X, LinkedIn |
-| 7 | **Mega Prompt** | Customized for GEMs/GPTs |
-| 8 | **Ingeniería Inversa** | Analysis of how it was built |
+| #  | Deliverable                 | Description                                 |
+|---|----------------------------|--------------------------------------------|
+| 1  | **Resumen 500 palabras**    | ES + EN summary accessible for Junior level |
+| 2  | **Prompts Usados**          | Extracted prompts + 7 agent profiles (ES/EN)|
+| 3  | **Demos Junior**            | Step-by-step tutorials with code            |
+| 4  | **Herramientas**            | Tools mentioned in the content              |
+| 5  | **Insights Learning Always**| For ~/Knowledge and ~/Context               |
+| 6  | **Posts Redes**             | Facebook, Instagram, X, LinkedIn            |
+| 7  | **Mega Prompt**             | Customized for GEMs/GPTs                    |
+| 8  | **Ingeniería Inversa**      | Analysis of how it was built                |
 
 ---
 
@@ -139,9 +139,9 @@ mem_save({
 
 ## Changelog
 
-| Version | Date | Changes |
-|---------|------|---------|
-| v1.0 | 2026-05-15 | Initial skill based on Learning Always methodology |
+| Version  | Date      | Changes                                           |
+|---------|----------|--------------------------------------------------|
+| v1.0     | 2026-05-15| Initial skill based on Learning Always methodology|
 
 ---
 

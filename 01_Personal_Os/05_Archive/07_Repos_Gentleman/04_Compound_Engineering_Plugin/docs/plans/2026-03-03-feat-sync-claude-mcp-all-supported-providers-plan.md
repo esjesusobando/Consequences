@@ -72,13 +72,13 @@ Note: `docs/solutions/patterns/critical-patterns.md` does not exist in this repo
 
 Official docs confirm that the missing targets are not all equivalent, so this cannot be solved with a generic JSON pass-through.
 
-| Target                                  | Official MCP / skills location                                                                               | Key notes                                                                                                                                                                                             |
+| Target                                   | Official MCP / skills location                                                                                | Key notes                                                                                                                                                                                              |
 |-----------------------------------------|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Factory Droid                           | `~/.factory/mcp.json`, `.factory/mcp.json`, `~/.factory/skills/`                                             | Supports `stdio` and `http`; user config overrides project config.                                                                                                                                    |
-| Windsurf                                | `~/.codeium/windsurf/mcp_config.json`, `~/.codeium/windsurf/skills/`                                         | Supports `stdio`, Streamable HTTP, and SSE; remote config uses `serverUrl` or `url`.                                                                                                                  |
-| Kiro                                    | `~/.kiro/settings/mcp.json`, `.kiro/settings/mcp.json`, `~/.kiro/skills/`                                    | Supports user and workspace config; remote MCP support was added after this repo's local Kiro spec was written.                                                                                       |
-| Qwen Code                               | `~/.qwen/settings.json`, `.qwen/settings.json`, `~/.qwen/skills/`, `.qwen/skills/`                           | Supports `stdio`, `http`, and `sse`; official docs say prefer `http`, with `sse` treated as legacy/deprecated.                                                                                        |
-| OpenClaw                                | `~/.openclaw/skills`, `<workspace>/skills`, `~/.openclaw/openclaw.json`                                      | Skills are well-documented; a generic MCP server config surface is not clearly documented in official docs, so MCP sync needs validation before implementation is promised.                           |
+| Factory Droid                            | `~/.factory/mcp.json`, `.factory/mcp.json`, `~/.factory/skills/`                                              | Supports `stdio` and `http`; user config overrides project config.                                                                                                                                     |
+| Windsurf                                 | `~/.codeium/windsurf/mcp_config.json`, `~/.codeium/windsurf/skills/`                                          | Supports `stdio`, Streamable HTTP, and SSE; remote config uses `serverUrl` or `url`.                                                                                                                   |
+| Kiro                                     | `~/.kiro/settings/mcp.json`, `.kiro/settings/mcp.json`, `~/.kiro/skills/`                                     | Supports user and workspace config; remote MCP support was added after this repo's local Kiro spec was written.                                                                                        |
+| Qwen Code                                | `~/.qwen/settings.json`, `.qwen/settings.json`, `~/.qwen/skills/`, `.qwen/skills/`                            | Supports `stdio`, `http`, and `sse`; official docs say prefer `http`, with `sse` treated as legacy/deprecated.                                                                                         |
+| OpenClaw                                 | `~/.openclaw/skills`, `<workspace>/skills`, `~/.openclaw/openclaw.json`                                       | Skills are well-documented; a generic MCP server config surface is not clearly documented in official docs, so MCP sync needs validation before implementation is promised.                            |
 
 Additional important findings:
 
@@ -138,18 +138,18 @@ Backward-compatibility rule:
 
 Planned sync roots after this feature:
 
-| Target                               | Sync root                                       | Notes                                                           |
+| Target                                | Sync root                                        | Notes                                                            |
 |--------------------------------------|-------------------------------------------------|-----------------------------------------------------------------|
-| `opencode`                           | `~/.config/opencode`                            | unchanged                                                       |
-| `codex`                              | `~/.codex`                                      | unchanged                                                       |
-| `pi`                                 | `~/.pi/agent`                                   | unchanged                                                       |
-| `droid`                              | `~/.factory`                                    | unchanged root, new MCP file                                    |
-| `copilot`                            | `.github`                                       | unchanged for backwards compatibility                           |
-| `gemini`                             | `.gemini`                                       | unchanged for backwards compatibility                           |
-| `windsurf`                           | `~/.codeium/windsurf`                           | new                                                             |
-| `kiro`                               | `~/.kiro`                                       | new                                                             |
-| `qwen`                               | `~/.qwen`                                       | new                                                             |
-| `openclaw`                           | `~/.openclaw`                                   | new, MCP still validation-gated                                 |
+| `opencode`                            | `~/.config/opencode`                             | unchanged                                                        |
+| `codex`                               | `~/.codex`                                       | unchanged                                                        |
+| `pi`                                  | `~/.pi/agent`                                    | unchanged                                                        |
+| `droid`                               | `~/.factory`                                     | unchanged root, new MCP file                                     |
+| `copilot`                             | `.github`                                        | unchanged for backwards compatibility                            |
+| `gemini`                              | `.gemini`                                        | unchanged for backwards compatibility                            |
+| `windsurf`                            | `~/.codeium/windsurf`                            | new                                                              |
+| `kiro`                                | `~/.kiro`                                        | new                                                              |
+| `qwen`                                | `~/.qwen`                                        | new                                                              |
+| `openclaw`                            | `~/.openclaw`                                    | new, MCP still validation-gated                                  |
 
 #### 1. Add a dedicated sync target registry
 

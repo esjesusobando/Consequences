@@ -16,26 +16,26 @@ Elevar todas las skills al estándar Anthropic con **Esencia Original** real (no
 
 ### ✅ CATEGORÍAS COMPLETADAS (100%)
 
-| Categoría                                        | Skills                                 | Estado                                 | Notas                                                           |
+| Categoría                                         | Skills                                  | Estado                                  | Notas                                                            |
 |--------------------------------------------------|----------------------------------------|----------------------------------------|-----------------------------------------------------------------|
-| 02_Project_Manager                               | 9                                      | ✅                                      | Esencias reales                                                 |
-| 03_Product_Manager                               | 7                                      | ✅                                      | Esencias reales                                                 |
-| 04_Product_Design                                | 11                                     | ✅                                      | Taste Skills incluidos                                          |
-| 05_Gentleman                                     | 1                                      | ✅                                      | Double Code Review                                              |
-| 05_Vibe_Coding                                   | 21                                     | ✅                                      | Frameworks y librerías                                          |
-| 06_Testing                                       | 13                                     | ✅                                      | Testing y calidad                                               |
-| 07_DevOps                                        | 12                                     | ✅                                      | Limpieza de duplicados + esencias                               |
-| 08_Personal_Os                                   | 10                                     | ✅                                      | Reemplazo de placeholders                                       |
-| 09_Marketing                                     | 32                                     | ✅                                      | 15+10+7 sub-skills                                              |
-| 11_Doc_Processing                                | 3                                      | ✅                                      | Nuevas esencias                                                 |
-| **TOTAL**                                        | **119**                                | **100%**                               |                                                                 |
+| 02_Project_Manager                                | 9                                       | ✅                                       | Esencias reales                                                  |
+| 03_Product_Manager                                | 7                                       | ✅                                       | Esencias reales                                                  |
+| 04_Product_Design                                 | 11                                      | ✅                                       | Taste Skills incluidos                                           |
+| 05_Gentleman                                      | 1                                       | ✅                                       | Double Code Review                                               |
+| 05_Vibe_Coding                                    | 21                                      | ✅                                       | Frameworks y librerías                                           |
+| 06_Testing                                        | 13                                      | ✅                                       | Testing y calidad                                                |
+| 07_DevOps                                         | 12                                      | ✅                                       | Limpieza de duplicados + esencias                                |
+| 08_Personal_Os                                    | 10                                      | ✅                                       | Reemplazo de placeholders                                        |
+| 09_Marketing                                      | 32                                      | ✅                                       | 15+10+7 sub-skills                                               |
+| 11_Doc_Processing                                 | 3                                       | ✅                                       | Nuevas esencias                                                  |
+| **TOTAL**                                         | **119**                                 | **100%**                                |                                                                  |
 
 ### ⏭️ SKIPPED
 
-| Categoría                                         | Skills                                 | Razón                                                 |
+| Categoría                                          | Skills                                  | Razón                                                  |
 |---------------------------------------------------|----------------------------------------|-------------------------------------------------------|
-| 01_Agent_Teams_Lite                               | 9                                      | No tocado (instrucción)                               |
-| 10_Backup                                         | 177                                    | No tocado (instrucción)                               |
+| 01_Agent_Teams_Lite                                | 9                                       | No tocado (instrucción)                                |
+| 10_Backup                                          | 177                                     | No tocado (instrucción)                                |
 
 ---
 
@@ -43,47 +43,47 @@ Elevar todas las skills al estándar Anthropic con **Esencia Original** real (no
 
 ### 1. Scripts de Corrección Creados
 
-| Script                                                         | Función                                                               |
+| Script                                                          | Función                                                                |
 |----------------------------------------------------------------|-----------------------------------------------------------------------|
-| `fix_duplicate_lines.py`                                       | Limpiar líneas duplicadas en 07_DevOps                                |
-| `restore_essences.py`                                          | Restaurar esencias eliminadas                                         |
-| `fix_personal_os_essences.py`                                  | Arreglar placeholders en 08_Personal_Os                               |
-| `fix_marketing_essences.py`                                    | Agregar esencias a 32 skills Marketing                                |
-| `fix_yaml_skills.py`                                           | Arreglar skills solo YAML (Remotion)                                  |
-| `fix_doc_processing_essences.py`                               | Agregar esencias a 11_Doc_Processing                                  |
-| `generate_skills_tree.py`                                      | Contar skills por categoría                                           |
+| `fix_duplicate_lines.py`                                        | Limpiar líneas duplicadas en 07_DevOps                                 |
+| `restore_essences.py`                                           | Restaurar esencias eliminadas                                          |
+| `fix_personal_os_essences.py`                                   | Arreglar placeholders en 08_Personal_Os                                |
+| `fix_marketing_essences.py`                                     | Agregar esencias a 32 skills Marketing                                 |
+| `fix_yaml_skills.py`                                            | Arreglar skills solo YAML (Remotion)                                   |
+| `fix_doc_processing_essences.py`                                | Agregar esencias a 11_Doc_Processing                                   |
+| `generate_skills_tree.py`                                       | Contar skills por categoría                                            |
 
 ### 2. Archivos Movidos
 
-| Origen                                                          | Destino                                                                         | Razón                                                         |
+| Origen                                                           | Destino                                                                          | Razón                                                          |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------|
-| `scripts/*.py`                                                  | `06_Archive/13_Script_Aud_Perfiles/`                                            | Archivo de scripts de auditoría                               |
-| `scripts/generate_skills_tree.py`                               | `04_Operations/04_Tools/83_Generate_Skills_Tree.py`                             | Script reutilizable                                           |
+| `scripts/*.py`                                                   | `06_Archive/13_Script_Aud_Perfiles/`                                             | Archivo de scripts de auditoría                                |
+| `scripts/generate_skills_tree.py`                                | `04_Operations/04_Tools/83_Generate_Skills_Tree.py`                              | Script reutilizable                                            |
 
 ### 3. Documentación Actualizada
 
-| Archivo                                                      | Cambios                                                                                        |
+| Archivo                                                       | Cambios                                                                                         |
 |--------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| `CLAUDE.md`                                                  | Protocolo Génesis con Engram (mem_context + mem_session_summary)                               |
-| `01_Core/01_Context_Memory/`                                 | Reenumeración cronológica (01-11) con nombres descriptivos                                     |
-| `01_Core/02_Knowledge_Brain/`                                | Reenumeración 01-21, sin duplicados, README creado                                             |
-| `01_Core/08_Audit_Sota/`                                     | REPAIR_ files → 11_, 12_                                                                       |
-| `01_Core/09_Momentum_Os/`                                    | Reenumeración + eliminación de duplicados                                                      |
-| `06_Archive/`                                                | README/tree actualizado con 00_Backups y 13_Script_Aud_Perfiles                                |
-| `01_Core/tree.txt`                                           | Actualizado con nuevas estructuras                                                             |
+| `CLAUDE.md`                                                   | Protocolo Génesis con Engram (mem_context + mem_session_summary)                                |
+| `01_Core/01_Context_Memory/`                                  | Reenumeración cronológica (01-11) con nombres descriptivos                                      |
+| `01_Core/02_Knowledge_Brain/`                                 | Reenumeración 01-21, sin duplicados, README creado                                              |
+| `01_Core/08_Audit_Sota/`                                      | REPAIR_ files → 11_, 12_                                                                        |
+| `01_Core/09_Momentum_Os/`                                     | Reenumeración + eliminación de duplicados                                                       |
+| `06_Archive/`                                                 | README/tree actualizado con 00_Backups y 13_Script_Aud_Perfiles                                 |
+| `01_Core/tree.txt`                                            | Actualizado con nuevas estructuras                                                              |
 
 ---
 
 ## 📈 IMPACTO
 
-| Métrica                                                     | Antes                                       | Después                                                   |
+| Métrica                                                      | Antes                                        | Después                                                    |
 |-------------------------------------------------------------|---------------------------------------------|-----------------------------------------------------------|
-| Skills con Esencia Real                                     | ~30%                                        | **100%** (de las auditadas)                               |
-| Duplicados en Knowledge_Brain                               | 4 archivos                                  | **0**                                                     |
-| Duplicados en Momentum_Os                                   | 2 directorios                               | **0**                                                     |
-| Directorios reenumerados                                    | 5                                           | **0 desordenados**                                        |
-| Documentación READMEs creados                               | 1                                           | **2 nuevos**                                              |
-| tree.txt actualizados                                       | 0                                           | **4**                                                     |
+| Skills con Esencia Real                                      | ~30%                                         | **100%** (de las auditadas)                                |
+| Duplicados en Knowledge_Brain                                | 4 archivos                                   | **0**                                                      |
+| Duplicados en Momentum_Os                                    | 2 directorios                                | **0**                                                      |
+| Directorios reenumerados                                     | 5                                            | **0 desordenados**                                         |
+| Documentación READMEs creados                                | 1                                            | **2 nuevos**                                               |
+| tree.txt actualizados                                        | 0                                            | **4**                                                      |
 
 ---
 

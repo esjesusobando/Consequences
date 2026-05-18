@@ -25,12 +25,12 @@ Budget Sufficiency:   100/100  ██████████████  (25%)
 
 ### Current Budget Allocation
 
-| Platform | Current | Allocation | Status |
-|----------|---------|------------|--------|
-| Google Search | $1,200/mo | 60% | Within 70% proven ✅ |
-| Google PMax | $200/mo | 10% | Scaling channel ✅ |
-| Meta | $400/mo | 20% | Scaling ✅ |
-| YouTube | $200/mo | 10% | Testing ✅ |
+| Platform     | Current  | Allocation  | Status             |
+|-------------|---------|------------|-------------------|
+| Google Search| $1,200/mo| 60%         | Within 70% proven ✅|
+| Google PMax  | $200/mo  | 10%         | Scaling channel ✅  |
+| Meta         | $400/mo  | 20%         | Scaling ✅          |
+| YouTube      | $200/mo  | 10%         | Testing ✅          |
 
 **70/20/10 Rule Assessment**: Currently at 60/20/20 - slightly over-invested in testing. Recommendation to shift $200 from YouTube testing to Google proven.
 

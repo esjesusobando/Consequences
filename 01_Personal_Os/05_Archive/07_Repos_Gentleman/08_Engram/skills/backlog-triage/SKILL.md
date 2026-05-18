@@ -25,18 +25,18 @@ Use this skill when:
 
 These are the non-negotiable product values. Every triage decision is filtered through them.
 
-| Principle                                                    | What it means in practice                                                                                         |
+| Principle                                                     | What it means in practice                                                                                          |
 |--------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| **Zero-config**                                              | Works out of the box. No required flags, env vars, or setup beyond install.                                       |
-| **Local-first**                                              | Data lives in `~/.engram/engram.db`. No cloud dependency by default.                                              |
-| **Single binary**                                            | One `engram` binary. No daemon, no service, no secondary processes needed.                                        |
-| **Terminal-first**                                           | CLI and TUI are the primary UX. No web dashboard, no Electron.                                                    |
-| **Thin adapters**                                            | Plugin scripts (Claude, OpenCode, Gemini, Codex) are thin shims — logic lives in Go core.                         |
-| **Issue-first**                                              | Every PR must link a `status:approved` issue. No approved issue → no PR.                                          |
-| **Evidence-based reviews**                                   | Request changes with specific, actionable items. No vague "needs improvement".                                    |
-| **Tight scope**                                              | Reject features that expand Engram's surface area without a compelling case.                                      |
-| **Small focused contributions**                              | Prefer 50-line PRs solving one problem over 500-line PRs solving five.                                            |
-| **Reject vague/scope-breaking work**                         | Close scope-creep issues and PRs that turn Engram into something else.                                            |
+| **Zero-config**                                               | Works out of the box. No required flags, env vars, or setup beyond install.                                        |
+| **Local-first**                                               | Data lives in `~/.engram/engram.db`. No cloud dependency by default.                                               |
+| **Single binary**                                             | One `engram` binary. No daemon, no service, no secondary processes needed.                                         |
+| **Terminal-first**                                            | CLI and TUI are the primary UX. No web dashboard, no Electron.                                                     |
+| **Thin adapters**                                             | Plugin scripts (Claude, OpenCode, Gemini, Codex) are thin shims — logic lives in Go core.                          |
+| **Issue-first**                                               | Every PR must link a `status:approved` issue. No approved issue → no PR.                                           |
+| **Evidence-based reviews**                                    | Request changes with specific, actionable items. No vague "needs improvement".                                     |
+| **Tight scope**                                               | Reject features that expand Engram's surface area without a compelling case.                                       |
+| **Small focused contributions**                               | Prefer 50-line PRs solving one problem over 500-line PRs solving five.                                             |
+| **Reject vague/scope-breaking work**                          | Close scope-creep issues and PRs that turn Engram into something else.                                             |
 
 ---
 
@@ -44,14 +44,14 @@ These are the non-negotiable product values. Every triage decision is filtered t
 
 Assign exactly ONE disposition to each issue or PR:
 
-| Disposition                                 | When to use                                                                                                                                |
+| Disposition                                  | When to use                                                                                                                                 |
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| **MERGE**                                   | PR is correct, scoped, tests pass, linked approved issue. Merge immediately.                                                               |
-| **REQUEST CHANGES**                         | PR has the right idea but needs specific fixes. List each item.                                                                            |
-| **CLOSE**                                   | Noise, duplicate, vague, scope-breaking, no approved issue, or stale with no activity.                                                     |
-| **NEEDS DESIGN**                            | Idea is valid but architectural decision required before any PR is welcome. Open discussion or design issue first.                         |
-| **APPROVE ISSUE**                           | Issue is valid, clear, reproducible/specific, and in scope. Add `status:approved` label.                                                   |
-| **REJECT ISSUE**                            | Vague, duplicate, scope-breaking, or belongs in Discussions. Close with explanation.                                                       |
+| **MERGE**                                    | PR is correct, scoped, tests pass, linked approved issue. Merge immediately.                                                                |
+| **REQUEST CHANGES**                          | PR has the right idea but needs specific fixes. List each item.                                                                             |
+| **CLOSE**                                    | Noise, duplicate, vague, scope-breaking, no approved issue, or stale with no activity.                                                      |
+| **NEEDS DESIGN**                             | Idea is valid but architectural decision required before any PR is welcome. Open discussion or design issue first.                          |
+| **APPROVE ISSUE**                            | Issue is valid, clear, reproducible/specific, and in scope. Add `status:approved` label.                                                    |
+| **REJECT ISSUE**                             | Vague, duplicate, scope-breaking, or belongs in Discussions. Close with explanation.                                                        |
 
 ---
 
@@ -160,21 +160,21 @@ Output a structured triage report:
 
 ### PRs
 
-| #                           | Title                                                   | Disposition                             | Reason                                                                        |
+| #                            | Title                                                    | Disposition                              | Reason                                                                         |
 |-----------------------------|---------------------------------------------------------|-----------------------------------------|-------------------------------------------------------------------------------|
-| 89                          | fix(mcp): update config example                         | MERGE                                   | Correct, scoped, CI pending only                                              |
-| 98                          | feat(sync): selective export                            | REQUEST CHANGES                         | No approved issue linked                                                      |
-| 80                          | feat(nix): Introduce flake.nix                          | CLOSE                                   | No approved issue; nix out of scope for single-binary                         |
+| 89                           | fix(mcp): update config example                          | MERGE                                    | Correct, scoped, CI pending only                                               |
+| 98                           | feat(sync): selective export                             | REQUEST CHANGES                          | No approved issue linked                                                       |
+| 80                           | feat(nix): Introduce flake.nix                           | CLOSE                                    | No approved issue; nix out of scope for single-binary                          |
 
 ### Issues
 
-| #                           | Title                                                      | Disposition                           | Reason                                                                                     |
+| #                            | Title                                                       | Disposition                            | Reason                                                                                      |
 |-----------------------------|------------------------------------------------------------|---------------------------------------|--------------------------------------------------------------------------------------------|
-| 93                          | Windows false positive (Defender)                          | APPROVE ISSUE                         | Real user-facing bug, 3 confirmations                                                      |
-| 99                          | FTS5 trigram SQL logic error                               | APPROVE ISSUE                         | Specific bug, reproducible                                                                 |
-| 104                         | Project aliasing system                                    | NEEDS DESIGN                          | Scope question: conflicts with local-first project name resolution                         |
-| 97                          | Auto-generate docs from memory                             | REJECT ISSUE                          | Vague scope, no concrete problem statement                                                 |
-| 81                          | Remove Projects / local-only notes                         | REJECT ISSUE                          | Ambiguous, belongs in Discussions                                                          |
+| 93                           | Windows false positive (Defender)                           | APPROVE ISSUE                          | Real user-facing bug, 3 confirmations                                                       |
+| 99                           | FTS5 trigram SQL logic error                                | APPROVE ISSUE                          | Specific bug, reproducible                                                                  |
+| 104                          | Project aliasing system                                     | NEEDS DESIGN                           | Scope question: conflicts with local-first project name resolution                          |
+| 97                           | Auto-generate docs from memory                              | REJECT ISSUE                           | Vague scope, no concrete problem statement                                                  |
+| 81                           | Remove Projects / local-only notes                          | REJECT ISSUE                           | Ambiguous, belongs in Discussions                                                           |
 
 ### Suggested Comments
 

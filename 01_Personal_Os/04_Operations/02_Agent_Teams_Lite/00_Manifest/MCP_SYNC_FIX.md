@@ -7,11 +7,11 @@
 
 ## MCPs con Drift
 
-| MCP | Claude Code | OpenCode | Status |
-|-----|-------------|----------|--------|
-| higgsfield | ✅ | ❌ | Falta en OpenCode |
-| playwright | ✅ | ❌ | Falta en OpenCode |
-| sequential-thinking | ✅ | ❌ | Falta en OpenCode |
+| MCP                | Claude Code  | OpenCode  | Status           |
+|-------------------|-------------|----------|-----------------|
+| higgsfield         | ✅            | ❌         | Falta en OpenCode|
+| playwright         | ✅            | ❌         | Falta en OpenCode|
+| sequential-thinking| ✅            | ❌         | Falta en OpenCode|
 
 ---
 

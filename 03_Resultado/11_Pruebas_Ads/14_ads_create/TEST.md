@@ -24,13 +24,13 @@ Producto: Sistema operativo personal potenciado con IA
 
 ### Quick Audit Results (Simulado)
 
-| Categoría | Score | Finding |
-|-----------|-------|---------|
-| Brief Generator | 100/100 | Excellent structure con campaign brief template histórico |
-| Copy Frameworks | 100/100 | Strong frameworks (AIDA, PAS) con industry-specific variants |
-| Creative Concepts | 100/100 | Solid creative direction con visual brief documentation |
-| Keyword Clusters | 100/100 | Excellent coverage con negative keyword integration |
-| Value Props | 100/100 | Clear USP messaging con competitive differentiation copy |
+| Categoría        | Score  | Finding                                                     |
+|-----------------|-------|------------------------------------------------------------|
+| Brief Generator  | 100/100| Excellent structure con campaign brief template histórico   |
+| Copy Frameworks  | 100/100| Strong frameworks (AIDA, PAS) con industry-specific variants|
+| Creative Concepts| 100/100| Solid creative direction con visual brief documentation     |
+| Keyword Clusters | 100/100| Excellent coverage con negative keyword integration         |
+| Value Props      | 100/100| Clear USP messaging con competitive differentiation copy    |
 
 **ads-create Health Score**: 100/100 (Grade: A+ / Excellent)
 

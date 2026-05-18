@@ -14,21 +14,21 @@ WCAG 2.2 compliance verification and accessibility testing automation for web ap
 
 ### WCAG 2.2 Checklist Implementation
 
-| Success Criterion                        | Level           | Description                                                       |
+| Success Criterion                         | Level            | Description                                                        |
 |------------------------------------------|-----------------|-------------------------------------------------------------------|
-| 1.4.10 Reflow                            | AA              | Content reflows without horizontal scrolling at 400% zoom         |
-| 1.4.11 Non-Text Contrast                 | AA              | UI components and graphics have 3:1 contrast minimum              |
-| 1.4.12 Text Spacing                      | AA              | Text can be resized without loss of content                       |
-| 1.4.13 Content on Hover or Focus         | AA              | Additional content is dismissible and hoverable                   |
-| 2.1.1 Keyboard                           | A               | All functionality via keyboard                                    |
-| 2.1.2 No Keyboard Trap                   | A               | Focus can be moved away                                           |
-| 2.4.11 Focus Appearance                  | AA              | Focus indicator visible with 3:1 contrast                         |
-| 2.4.3 Focus Order                        | A               | Focus order follows logical sequence                              |
-| 2.4.7 Focus Visible                      | AA              | Focus indicator is visible                                        |
-| 2.5.7 Dragging Movements                 | AA              | Alternative provided for drag-and-drop                            |
-| 2.5.8 Target Size Minimum                | AA              | Touch targets at least 24x24px                                    |
-| 3.2.1 On Focus                           | A               | Context does not change on focus                                  |
-| 3.3.7 Redundant Entry                    | A               | User input not required twice                                     |
+| 1.4.10 Reflow                             | AA               | Content reflows without horizontal scrolling at 400% zoom          |
+| 1.4.11 Non-Text Contrast                  | AA               | UI components and graphics have 3:1 contrast minimum               |
+| 1.4.12 Text Spacing                       | AA               | Text can be resized without loss of content                        |
+| 1.4.13 Content on Hover or Focus          | AA               | Additional content is dismissible and hoverable                    |
+| 2.1.1 Keyboard                            | A                | All functionality via keyboard                                     |
+| 2.1.2 No Keyboard Trap                    | A                | Focus can be moved away                                            |
+| 2.4.11 Focus Appearance                   | AA               | Focus indicator visible with 3:1 contrast                          |
+| 2.4.3 Focus Order                         | A                | Focus order follows logical sequence                               |
+| 2.4.7 Focus Visible                       | AA               | Focus indicator is visible                                         |
+| 2.5.7 Dragging Movements                  | AA               | Alternative provided for drag-and-drop                             |
+| 2.5.8 Target Size Minimum                 | AA               | Touch targets at least 24x24px                                     |
+| 3.2.1 On Focus                            | A                | Context does not change on focus                                   |
+| 3.3.7 Redundant Entry                     | A                | User input not required twice                                      |
 
 ### axe-core Integration with Playwright
 
@@ -391,16 +391,16 @@ echo "Report generated at accessibility-report/index.html"
 
 ### WCAG 2.2 Requirements
 
-| Criterion           | Code                           | Name                                      | Level           |
+| Criterion            | Code                            | Name                                       | Level            |
 |---------------------|--------------------------------|-------------------------------------------|-----------------|
-| 1.4.10              | Reflow                         | Content reflows at 400% zoom              | AA              |
-| 1.4.11              | Non-text Contrast              | UI components 3:1 minimum                 | AA              |
-| 1.4.12              | Text Spacing                   | Resizable text without loss               | AA              |
-| 1.4.13              | Content on Hover/Focus         | Persistent content is dismissible         | AA              |
-| 2.4.11              | Focus Appearance               | Focus indicator 3:1 contrast              | AA              |
-| 2.5.7               | Dragging Movements             | Alternative for drag operations           | AA              |
-| 2.5.8               | Target Size Minimum            | 24x24px minimum for targets               | AA              |
-| 3.3.7               | Redundant Entry                | User data not required twice              | A               |
+| 1.4.10               | Reflow                          | Content reflows at 400% zoom               | AA               |
+| 1.4.11               | Non-text Contrast               | UI components 3:1 minimum                  | AA               |
+| 1.4.12               | Text Spacing                    | Resizable text without loss                | AA               |
+| 1.4.13               | Content on Hover/Focus          | Persistent content is dismissible          | AA               |
+| 2.4.11               | Focus Appearance                | Focus indicator 3:1 contrast               | AA               |
+| 2.5.7                | Dragging Movements              | Alternative for drag operations            | AA               |
+| 2.5.8                | Target Size Minimum             | 24x24px minimum for targets                | AA               |
+| 3.3.7                | Redundant Entry                 | User data not required twice               | A                |
 
 ### Focus Appearance (2.4.11) Details
 

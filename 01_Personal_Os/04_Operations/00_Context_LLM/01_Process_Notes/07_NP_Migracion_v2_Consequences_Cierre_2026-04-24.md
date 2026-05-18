@@ -89,17 +89,17 @@ Ejecutar en terminal separado y traer output para analizar los 8 issues detectad
 
 ## Estado del Sistema Post-Sesión
 
-| Componente                             | Estado                                        |
+| Componente                              | Estado                                         |
 |----------------------------------------|-----------------------------------------------|
-| Estructura v2.0 (4 raíz)               | ✅ PASS                                        |
-| `.agent/` backup                       | ✅ ACTUALIZADO v2.0                            |
-| Beautifier                             | ✅ FIJO (code blocks respetados)               |
-| Scripts auditores                      | ✅ RUTAS v2.0                                  |
-| Claude Code binario                    | ✅ INSTALADO v2.1.119                          |
-| Disco                                  | ✅ LIMPIO (~95MB liberados)                    |
-| Engram                                 | ⚠️ VALIDAR próxima sesión                     |
-| tech-defaults.md                       | ⚠️ PATH DESACTUALIZADO                        |
-| Metodologías check                     | ⏳ PENDIENTE                                   |
+| Estructura v2.0 (4 raíz)                | ✅ PASS                                         |
+| `.agent/` backup                        | ✅ ACTUALIZADO v2.0                             |
+| Beautifier                              | ✅ FIJO (code blocks respetados)                |
+| Scripts auditores                       | ✅ RUTAS v2.0                                   |
+| Claude Code binario                     | ✅ INSTALADO v2.1.119                           |
+| Disco                                   | ✅ LIMPIO (~95MB liberados)                     |
+| Engram                                  | ⚠️ VALIDAR próxima sesión                      |
+| tech-defaults.md                        | ⚠️ PATH DESACTUALIZADO                         |
+| Metodologías check                      | ⏳ PENDIENTE                                    |
 
 ---
 

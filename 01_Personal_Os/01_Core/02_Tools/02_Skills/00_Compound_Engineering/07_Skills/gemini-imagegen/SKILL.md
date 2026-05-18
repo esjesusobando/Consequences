@@ -9,9 +9,9 @@ Generate and edit images using Google's Gemini API. The environment variable `GE
 
 ## Default Model
 
-| Model                                                        | Resolution                                   | Best For                                                       |
+| Model                                                         | Resolution                                    | Best For                                                        |
 |--------------------------------------------------------------|----------------------------------------------|----------------------------------------------------------------|
-| `gemini-3-pro-image-preview`                                 | 1K-4K                                        | All image generation (default)                                 |
+| `gemini-3-pro-image-preview`                                  | 1K-4K                                         | All image generation (default)                                  |
 
 **Note:** Always use this Pro model. Only use a different model if explicitly requested.
 

@@ -26,10 +26,10 @@ video player -- the same result as pasting a video into the PR editor manually.
 
 The distinction is absolute:
 
-| URL namespace                                                      | Rendering                                                                           |
+| URL namespace                                                       | Rendering                                                                            |
 |--------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| `github.com/releases/download/...`                                 | Plain download link (bad UX, triggers download on mobile)                           |
-| `github.com/user-attachments/assets/...`                           | Native inline `<video>` player with controls                                        |
+| `github.com/releases/download/...`                                  | Plain download link (bad UX, triggers download on mobile)                            |
+| `github.com/user-attachments/assets/...`                            | Native inline `<video>` player with controls                                         |
 
 ## Investigation
 
@@ -83,10 +83,10 @@ gh pr edit [number] --body "[body with video URL on its own line]"
 
 ### Key selectors (validated March 2026)
 
-| Selector                                          | Element                                                | Purpose                                                                                                            |
+| Selector                                           | Element                                                 | Purpose                                                                                                             |
 |---------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| `#fc-new_comment_field`                           | Hidden `<input type="file">`                           | Target for `agent-browser upload`. Accepts `.mp4`, `.mov`, `.webm` and many other types.                           |
-| `#new_comment_field`                              | `<textarea>`                                           | GitHub injects the `user-attachments/assets/` URL here after processing the upload.                                |
+| `#fc-new_comment_field`                            | Hidden `<input type="file">`                            | Target for `agent-browser upload`. Accepts `.mp4`, `.mov`, `.webm` and many other types.                            |
+| `#new_comment_field`                               | `<textarea>`                                            | GitHub injects the `user-attachments/assets/` URL here after processing the upload.                                 |
 
 GitHub's comment form contains the hidden file input. After Playwright sets the file,
 GitHub uploads it server-side and injects a markdown URL into the textarea. The upload

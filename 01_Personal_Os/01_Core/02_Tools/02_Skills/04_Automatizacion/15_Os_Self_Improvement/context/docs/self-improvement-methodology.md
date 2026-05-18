@@ -28,13 +28,13 @@ Existing Knowledge: Check /02_Knowledge/
 
 ### 3. Gap Detection Matrix
 
-| New Learning Aspect | Check Against | Gap Type |
-|--------------------|---------------|-----------|
-| Tool | Tools inventory | Missing, Version update |
-| Technique | Skills documentation | Missing, Enhancement |
-| Pattern | Knowledge patterns | Missing, Cross-pollination |
-| Workflow | Workflow definitions | Missing, Optimization |
-| Integration | Skill connections | Missing, Better path |
+| New Learning Aspect | Check Against       | Gap Type                  |
+|--------------------|--------------------|--------------------------|
+| Tool                | Tools inventory     | Missing, Version update   |
+| Technique           | Skills documentation| Missing, Enhancement      |
+| Pattern             | Knowledge patterns  | Missing, Cross-pollination|
+| Workflow            | Workflow definitions| Missing, Optimization     |
+| Integration         | Skill connections   | Missing, Better path      |
 
 ### 4. Opportunity Scoring
 
@@ -116,12 +116,12 @@ Low Ease ├───────────────┼──────�
 
 ### Quadrant Actions
 
-| Quadrant | Score | Priority | Action |
-|----------|-------|----------|--------|
-| High Impact + High Ease | 8-10 | ALTA | Implement immediately |
-| High Impact + Low Ease | 4-6 | MEDIA | Plan for future |
-| Low Impact + High Ease | 3-5 | BAJA | Quick wins |
-| Low Impact + Low Ease | 1-3 | None | Document only |
+| Quadrant               | Score  | Priority  | Action               |
+|-----------------------|-------|----------|---------------------|
+| High Impact + High Ease| 8-10   | ALTA      | Implement immediately|
+| High Impact + Low Ease | 4-6    | MEDIA     | Plan for future      |
+| Low Impact + High Ease | 3-5    | BAJA      | Quick wins           |
+| Low Impact + Low Ease  | 1-3    | None      | Document only        |
 
 ---
 

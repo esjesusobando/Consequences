@@ -243,9 +243,9 @@ focus: <focus area if provided, omit if open>
 ...
 
 ## Rejection Summary
-| #                             | Idea                             | Reason for Rejection                            |
+| #                              | Idea                              | Reason for Rejection                             |
 |-------------------------------|----------------------------------|-------------------------------------------------|
-| 1                             | ...                              | ...                                             |
+| 1                              | ...                               | ...                                              |
 
 ## Session Log
 - [Date]: Initial ideation — [N] generated, [M] survived

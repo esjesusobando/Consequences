@@ -14,13 +14,13 @@ Design systems architecture establishes the foundation for scalable, consistent,
 
 ### Atomic Design Methodology
 
-| Level                | Definition                                   | Examples                                                                          |
+| Level                 | Definition                                    | Examples                                                                           |
 |----------------------|----------------------------------------------|-----------------------------------------------------------------------------------|
-| **Atom**             | Indivisible UI primitives                    | Button, Input, Badge, Icon, Avatar                                                |
-| **Molecule**         | Simple groups of atoms                       | SearchBar (Input + Button + Icon), CardHeader (Avatar + Title + Subtitle)         |
-| **Organism**         | Complex UI sections                          | NavigationBar, DataTable, CommentThread                                           |
-| **Template**         | Page-level layout skeletons                  | DashboardLayout, FormLayout, AuthLayout                                           |
-| **Page**             | Concrete instances with real content         | LoginPage, UserProfilePage, AnalyticsDashboard                                    |
+| **Atom**              | Indivisible UI primitives                     | Button, Input, Badge, Icon, Avatar                                                 |
+| **Molecule**          | Simple groups of atoms                        | SearchBar (Input + Button + Icon), CardHeader (Avatar + Title + Subtitle)          |
+| **Organism**          | Complex UI sections                           | NavigationBar, DataTable, CommentThread                                            |
+| **Template**          | Page-level layout skeletons                   | DashboardLayout, FormLayout, AuthLayout                                            |
+| **Page**              | Concrete instances with real content          | LoginPage, UserProfilePage, AnalyticsDashboard                                     |
 
 ### Design Tokens
 
@@ -507,12 +507,12 @@ const config: Config = {
 
 Prefer zero-runtime solutions:
 
-| Solution                    | Runtime Cost              | Use Case                            |
+| Solution                     | Runtime Cost               | Use Case                             |
 |-----------------------------|---------------------------|-------------------------------------|
-| **CSS Modules**             | None                      | Scoped component styles             |
-| **Tailwind CSS**            | None (build-time)         | Utility-first                       |
-| **Vanilla Extract**         | None (build-time)         | Type-safe CSS-in-JS                 |
-| **Linaria**                 | None (build-time)         | CSS-in-JS with zero runtime         |
+| **CSS Modules**              | None                       | Scoped component styles              |
+| **Tailwind CSS**             | None (build-time)          | Utility-first                        |
+| **Vanilla Extract**          | None (build-time)          | Type-safe CSS-in-JS                  |
+| **Linaria**                  | None (build-time)          | CSS-in-JS with zero runtime          |
 
 **AVOID** runtime CSS-in-JS unless performance profiling proves it's necessary.
 
@@ -606,12 +606,12 @@ jobs:
 
 Your codebase contains 138 design systems across your projects. Key patterns observed:
 
-| Pattern                         | Frequency           | Recommendation                             |
+| Pattern                          | Frequency            | Recommendation                              |
 |---------------------------------|---------------------|--------------------------------------------|
-| Token hardcoding                | 67%                 | Enforce token-only via linting             |
-| Storybook per-component         | 43%                 | Make it standard                           |
-| Variant props                   | 89%                 | Follow shadcn/ui variant pattern           |
-| CSS-in-JS runtime               | 31%                 | Migrate to CSS Modules or Tailwind         |
+| Token hardcoding                 | 67%                  | Enforce token-only via linting              |
+| Storybook per-component          | 43%                  | Make it standard                            |
+| Variant props                    | 89%                  | Follow shadcn/ui variant pattern            |
+| CSS-in-JS runtime                | 31%                  | Migrate to CSS Modules or Tailwind          |
 
 ### shadcn/ui System
 

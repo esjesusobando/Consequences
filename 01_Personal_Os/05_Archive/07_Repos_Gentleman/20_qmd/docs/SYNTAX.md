@@ -20,11 +20,11 @@ newline        = "\n" ;
 
 ## Query Types
 
-| Type                             | Method                             | Description                                                  |
+| Type                              | Method                              | Description                                                   |
 |----------------------------------|------------------------------------|--------------------------------------------------------------|
-| `lex`                            | BM25                               | Keyword search with exact matching                           |
-| `vec`                            | Vector                             | Semantic similarity search                                   |
-| `hyde`                           | Vector                             | Hypothetical document embedding                              |
+| `lex`                             | BM25                                | Keyword search with exact matching                            |
+| `vec`                             | Vector                              | Semantic similarity search                                    |
+| `hyde`                            | Vector                              | Hypothetical document embedding                               |
 
 ## Default Behavior
 
@@ -48,12 +48,12 @@ phrase      = '"' { character } '"' ;
 word        = { letter | digit | "'" } ;
 ```
 
-| Syntax                                | Meaning                                  | Example                                                |
+| Syntax                                 | Meaning                                   | Example                                                 |
 |---------------------------------------|------------------------------------------|--------------------------------------------------------|
-| `word`                                | Prefix match                             | `perf` matches "performance"                           |
-| `"phrase"`                            | Exact phrase                             | `"rate limiter"`                                       |
-| `-word`                               | Exclude term                             | `-sports`                                              |
-| `-"phrase"`                           | Exclude phrase                           | `-"test data"`                                         |
+| `word`                                 | Prefix match                              | `perf` matches "performance"                            |
+| `"phrase"`                             | Exact phrase                              | `"rate limiter"`                                        |
+| `-word`                                | Exclude term                              | `-sports`                                               |
+| `-"phrase"`                            | Exclude phrase                            | `-"test data"`                                          |
 
 ### Examples
 

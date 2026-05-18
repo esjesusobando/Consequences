@@ -48,11 +48,11 @@ Cerrar la sesión de trabajo de manera segura, persistiendo el progreso y sincro
 
 ## Reglas
 
-| Regla                                               | Descripción                                       |
+| Regla                                                | Descripción                                        |
 |-----------------------------------------------------|---------------------------------------------------|
-| Siempre hacer commit                                | Nunca dejar sin push                              |
-| Documentar aprendizajes                             | Guardar en Engram                                 |
-| Voice notification                                  | Speaking al completar                             |
+| Siempre hacer commit                                 | Nunca dejar sin push                               |
+| Documentar aprendizajes                              | Guardar en Engram                                  |
+| Voice notification                                   | Speaking al completar                              |
 
 ## Errores Comunes
 

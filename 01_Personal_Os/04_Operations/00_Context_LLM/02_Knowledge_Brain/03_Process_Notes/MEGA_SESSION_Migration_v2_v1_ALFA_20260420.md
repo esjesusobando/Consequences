@@ -8,14 +8,14 @@
 
 ## 📋 Resumen Ejecutivo
 
-| Métrica                                            | Valor                                 |
+| Métrica                                             | Valor                                  |
 |----------------------------------------------------|---------------------------------------|
-| Scripts migrados a skills                          | 9                                     |
-| Scripts movidos a 14_Otros                         | 5                                     |
-| Total scripts en skills                            | 22                                    |
-| READMEs creados                                    | 10                                    |
-| Tests Pass                                         | 50/50 (100%)                          |
-| Versión FINAL                                      | **v1.0 ALFA**                         |
+| Scripts migrados a skills                           | 9                                      |
+| Scripts movidos a 14_Otros                          | 5                                      |
+| Total scripts en skills                             | 22                                     |
+| READMEs creados                                     | 10                                     |
+| Tests Pass                                          | 50/50 (100%)                           |
+| Versión FINAL                                       | **v1.0 ALFA**                          |
 
 ---
 
@@ -30,31 +30,31 @@ Completar la migración de scripts pendiente (14 scripts) a skills o carpeta Otr
 ### 1️⃣ Análisis Inicial
 
 #### Estado Anterior
-| Antes                                      | Cantidad                                                |
+| Antes                                       | Cantidad                                                 |
 |--------------------------------------------|---------------------------------------------------------|
-| Scripts migrados                           | 12                                                      |
-| Scripts pendientes                         | 14                                                      |
-| Carpetas legacy                            | 01_Ritual, 02_Tool, 04_Workflow                         |
+| Scripts migrados                            | 12                                                       |
+| Scripts pendientes                          | 14                                                       |
+| Carpetas legacy                             | 01_Ritual, 02_Tool, 04_Workflow                          |
 
 #### Análisis por Valor (DECISIÓN CLAVE)
 En lugar de migrar por "uso", migramos por "valor":
 
-| Valor                           | Script                                                 | Decisión                                                     |
+| Valor                            | Script                                                  | Decisión                                                      |
 |---------------------------------|--------------------------------------------------------|--------------------------------------------------------------|
-| 🔥 ALTO                          | 13_Validate_Stack.py                                   | → 05_Vibe_Coding                                             |
-| 🔥 ALTO                          | 17_Ritual_Dominical.py                                 | → 08_Personal_Os                                             |
-| 🔥 ALTO                          | **18_Generacion_Contenido.py**                         | → 09_Marketing *(USUARIO LO QUIERE)*                         |
-| 🔥 ALTO                          | 19_Generate_Progress.py                                | → 08_Personal_Os                                             |
-| 🔥 ALTO                          | 39_Repair_Corruption.py                                | → 13_System_Master                                           |
-| 🔥 ALTO                          | 62_Tool_Shed.py                                        | → 07_DevOps                                                  |
-| 🔥 ALTO                          | 06_AntMan_Lfg_Lite.py                                  | → 00_Compound_Engineering                                    |
-| 🔥 ALTO                          | 07_Doc_Strange_Lfg.py                                  | → 00_Compound_Engineering                                    |
-| 🔥 ALTO                          | 73_Avengers_Workflow_v3.py                             | → 00_Compound_Engineering                                    |
-| 🟡 MEDIO                         | 12_Update_Links.py                                     | → 14_Otros                                                   |
-| 🟡 MEDIO                         | 60_Fast_Vision.py                                      | → 14_Otros                                                   |
-| 🟡 MEDIO                         | 61_MCP_Health_Check.py                                 | → 14_Otros                                                   |
-| 🟡 MEDIO                         | 63_Skill_Harmonizer.py                                 | → 14_Otros                                                   |
-| 🟡 MEDIO                         | 10_AI_Task_Planner.py                                  | → 14_Otros                                                   |
+| 🔥 ALTO                           | 13_Validate_Stack.py                                    | → 05_Vibe_Coding                                              |
+| 🔥 ALTO                           | 17_Ritual_Dominical.py                                  | → 08_Personal_Os                                              |
+| 🔥 ALTO                           | **18_Generacion_Contenido.py**                          | → 09_Marketing *(USUARIO LO QUIERE)*                          |
+| 🔥 ALTO                           | 19_Generate_Progress.py                                 | → 08_Personal_Os                                              |
+| 🔥 ALTO                           | 39_Repair_Corruption.py                                 | → 13_System_Master                                            |
+| 🔥 ALTO                           | 62_Tool_Shed.py                                         | → 07_DevOps                                                   |
+| 🔥 ALTO                           | 06_AntMan_Lfg_Lite.py                                   | → 00_Compound_Engineering                                     |
+| 🔥 ALTO                           | 07_Doc_Strange_Lfg.py                                   | → 00_Compound_Engineering                                     |
+| 🔥 ALTO                           | 73_Avengers_Workflow_v3.py                              | → 00_Compound_Engineering                                     |
+| 🟡 MEDIO                          | 12_Update_Links.py                                      | → 14_Otros                                                    |
+| 🟡 MEDIO                          | 60_Fast_Vision.py                                       | → 14_Otros                                                    |
+| 🟡 MEDIO                          | 61_MCP_Health_Check.py                                  | → 14_Otros                                                    |
+| 🟡 MEDIO                          | 63_Skill_Harmonizer.py                                  | → 14_Otros                                                    |
+| 🟡 MEDIO                          | 10_AI_Task_Planner.py                                   | → 14_Otros                                                    |
 
 ---
 
@@ -143,18 +143,18 @@ def get_skill_script(script_name):
 
 Creamos 10 READMEs para documentar cada carpeta:
 
-| #                           | Carpeta                                      | Contenido                                    |
+| #                            | Carpeta                                       | Contenido                                     |
 |-----------------------------|----------------------------------------------|----------------------------------------------|
-| 03                          | 03_Validator                                 | 8 scripts                                    |
-| 05                          | 05_AIPM                                      | 10 scripts                                   |
-| 07                          | 07_Data                                      | 4 scripts                                    |
-| 08                          | 08_General                                   | 4 scripts                                    |
-| 09                          | 09_Integration                               | 3 scripts                                    |
-| 10                          | 10_Legacy                                    | 92 scripts (archivo)                         |
-| 11                          | 11_Anthropic_Harness                         | 12 scripts                                   |
-| 12                          | 12_Audits                                    | 6 scripts                                    |
-| 13                          | 13_Auditors_Os                               | 1 + scripts/                                 |
-| 14                          | 14_Otros                                     | 5 scripts                                    |
+| 03                           | 03_Validator                                  | 8 scripts                                     |
+| 05                           | 05_AIPM                                       | 10 scripts                                    |
+| 07                           | 07_Data                                       | 4 scripts                                     |
+| 08                           | 08_General                                    | 4 scripts                                     |
+| 09                           | 09_Integration                                | 3 scripts                                     |
+| 10                           | 10_Legacy                                     | 92 scripts (archivo)                          |
+| 11                           | 11_Anthropic_Harness                          | 12 scripts                                    |
+| 12                           | 12_Audits                                     | 6 scripts                                     |
+| 13                           | 13_Auditors_Os                                | 1 + scripts/                                  |
+| 14                           | 14_Otros                                      | 5 scripts                                     |
 
 ---
 
@@ -213,38 +213,38 @@ tests = [
 
 ### 6️⃣ Edge Cases Corregidos
 
-| Edge Case                                   | Antes                                               | Después                           |
+| Edge Case                                    | Antes                                                | Después                            |
 |---------------------------------------------|-----------------------------------------------------|-----------------------------------|
-| Empty string `""`                           | ❌ Retourna carpeta 14_Otros                         | ✅ `None`                          |
-| Whitespace `" "`                            | ❌ Error                                             | ✅ `None`                          |
-| Sin `.py` extension                         | ❌ Busca incorrecto                                  | ✅ `None`                          |
-| Script no existe                            | ✅ `None`                                            | ✅ `None`                          |
+| Empty string `""`                            | ❌ Retourna carpeta 14_Otros                          | ✅ `None`                           |
+| Whitespace `" "`                             | ❌ Error                                              | ✅ `None`                           |
+| Sin `.py` extension                          | ❌ Busca incorrecto                                   | ✅ `None`                           |
+| Script no existe                             | ✅ `None`                                             | ✅ `None`                           |
 
 ---
 
 ## 📊 RESUMEN FINAL
 
-| Métrica                                     | Antes                             | Después                                  |
+| Métrica                                      | Antes                              | Después                                   |
 |---------------------------------------------|-----------------------------------|------------------------------------------|
-| Scripts en skills                           | 12                                | **22**                                   |
-| Scripts en 14_Otros                         | 0                                 | **5**                                    |
-| Scripts migrados                            | 12                                | **14**                                   |
-| Tests pass                                  | —                                 | **50/50 (100%)**                         |
-| READMEs carpeta                             | 0                                 | **10**                                   |
-| Edge cases                                  | 3 fallaba                         | **0 errores**                            |
-| Versión                                     | Beta                              | **v1.0 ALFA**                            |
+| Scripts en skills                            | 12                                 | **22**                                    |
+| Scripts en 14_Otros                          | 0                                  | **5**                                     |
+| Scripts migrados                             | 12                                 | **14**                                    |
+| Tests pass                                   | —                                  | **50/50 (100%)**                          |
+| READMEs carpeta                              | 0                                  | **10**                                    |
+| Edge cases                                   | 3 fallaba                          | **0 errores**                             |
+| Versión                                      | Beta                               | **v1.0 ALFA**                             |
 
 ---
 
 ## 🔗 HUBs que Usan los Scripts
 
-| HUB                                      | Script                             | Estado                            |
+| HUB                                       | Script                              | Estado                             |
 |------------------------------------------|------------------------------------|-----------------------------------|
-| 04_Ritual_Hub                            | 17, 08, 14                         | ✅ Migrado                         |
-| 05_Validator_Hub                         | 13, 34                             | ✅ Migrado                         |
-| 06_Tool_Hub                              | 39, 12                             | ✅ Migrado                         |
-| 08_Workflow_Hub                          | 06, 07, 73                         | ✅ Migrado                         |
-| 09_Data_Hub                              | 19                                 | ✅ Migrado                         |
+| 04_Ritual_Hub                             | 17, 08, 14                          | ✅ Migrado                          |
+| 05_Validator_Hub                          | 13, 34                              | ✅ Migrado                          |
+| 06_Tool_Hub                               | 39, 12                              | ✅ Migrado                          |
+| 08_Workflow_Hub                           | 06, 07, 73                          | ✅ Migrado                          |
+| 09_Data_Hub                               | 19                                  | ✅ Migrado                          |
 
 ---
 
@@ -259,22 +259,22 @@ tests = [
 
 ## 📁 Archivos Modificados/Creados
 
-| Archivo                                                                                                         | Acción                            |
+| Archivo                                                                                                          | Acción                             |
 |-----------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| 03_Scripts_Os/config_paths.py                                                                                   | ✅ Editado                         |
-| 03_Scripts_Os/README.md                                                                                         | ✅ Creado                          |
-| 03_Scripts_Os/03_Validator/README.md                                                                            | ✅ Creado                          |
-| 03_Scripts_Os/05_AIPM/README.md                                                                                 | ✅ Creado                          |
-| 03_Scripts_Os/07_Data/README.md                                                                                 | ✅ Creado                          |
-| 03_Scripts_Os/08_General/README.md                                                                              | ✅ Creado                          |
-| 03_Scripts_Os/09_Integration/README.md                                                                          | ✅ Creado                          |
-| 03_Scripts_Os/10_Legacy/README.md                                                                               | ✅ Creado                          |
-| 03_Scripts_Os/11_Anthropic_Harness/README.md                                                                    | ✅ Creado                          |
-| 03_Scripts_Os/12_Audits/README.md                                                                               | ✅ Creado                          |
-| 03_Scripts_Os/13_Auditors_Os/README.md                                                                          | ✅ Creado                          |
-| 03_Scripts_Os/14_Otros/README.md                                                                                | ✅ Creado                          |
-| 04_Operations/02_Knowledge_Brain/03_Process_Notes/Plan_Migracion_Scripts_v2_20260420.md                         | ✅ Creado                          |
-| 04_Operations/00_Context_Memory/Plan_Migracion_Scripts_v2_20260420.md                                           | ✅ Creado                          |
+| 03_Scripts_Os/config_paths.py                                                                                    | ✅ Editado                          |
+| 03_Scripts_Os/README.md                                                                                          | ✅ Creado                           |
+| 03_Scripts_Os/03_Validator/README.md                                                                             | ✅ Creado                           |
+| 03_Scripts_Os/05_AIPM/README.md                                                                                  | ✅ Creado                           |
+| 03_Scripts_Os/07_Data/README.md                                                                                  | ✅ Creado                           |
+| 03_Scripts_Os/08_General/README.md                                                                               | ✅ Creado                           |
+| 03_Scripts_Os/09_Integration/README.md                                                                           | ✅ Creado                           |
+| 03_Scripts_Os/10_Legacy/README.md                                                                                | ✅ Creado                           |
+| 03_Scripts_Os/11_Anthropic_Harness/README.md                                                                     | ✅ Creado                           |
+| 03_Scripts_Os/12_Audits/README.md                                                                                | ✅ Creado                           |
+| 03_Scripts_Os/13_Auditors_Os/README.md                                                                           | ✅ Creado                           |
+| 03_Scripts_Os/14_Otros/README.md                                                                                 | ✅ Creado                           |
+| 04_Operations/02_Knowledge_Brain/03_Process_Notes/Plan_Migracion_Scripts_v2_20260420.md                          | ✅ Creado                           |
+| 04_Operations/00_Context_Memory/Plan_Migracion_Scripts_v2_20260420.md                                            | ✅ Creado                           |
 
 ---
 

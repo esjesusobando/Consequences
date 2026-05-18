@@ -6,11 +6,11 @@ Módulo de notificaciones de sonido para el sistema PersonalOS.
 
 ## 📂 Archivos
 
-| Archivo                                               | Descripción                                                           |
+| Archivo                                                | Descripción                                                            |
 |-------------------------------------------------------|-----------------------------------------------------------------------|
-| `notification.py`                                     | Script principal de notificaciones                                    |
-| `task-complete-sound.ps1`                             | Script PowerShell para tareas completadas                             |
-| `task-complete.bat`                                   | Batch para ejecución rápida                                           |
+| `notification.py`                                      | Script principal de notificaciones                                     |
+| `task-complete-sound.ps1`                              | Script PowerShell para tareas completadas                              |
+| `task-complete.bat`                                    | Batch para ejecución rápida                                            |
 
 ---
 

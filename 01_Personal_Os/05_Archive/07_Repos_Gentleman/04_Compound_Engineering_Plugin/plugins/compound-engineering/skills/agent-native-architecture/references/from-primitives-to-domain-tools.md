@@ -248,31 +248,31 @@ Graduation is about efficiency. **Parity still holds.** The agent doesn't lose c
 
 ### Should I Add a Domain Tool?
 
-| Question                                                                                  | If Yes                                                 |
+| Question                                                                                   | If Yes                                                  |
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| Is the agent confused about what this concept means?                                      | Add for vocabulary anchoring                           |
-| Does this operation need validation the agent shouldn't decide?                           | Add with guardrails                                    |
-| Is this a common multi-step operation?                                                    | Add for efficiency                                     |
-| Would changing behavior require code changes?                                             | Keep as prompt instead                                 |
+| Is the agent confused about what this concept means?                                       | Add for vocabulary anchoring                            |
+| Does this operation need validation the agent shouldn't decide?                            | Add with guardrails                                     |
+| Is this a common multi-step operation?                                                     | Add for efficiency                                      |
+| Would changing behavior require code changes?                                              | Keep as prompt instead                                  |
 
 ### Should I Graduate to Code?
 
-| Question                                                                    | If Yes                                        |
+| Question                                                                     | If Yes                                         |
 |-----------------------------------------------------------------------------|-----------------------------------------------|
-| Is this operation called very frequently?                                   | Consider graduating                           |
-| Does latency matter significantly?                                          | Consider graduating                           |
-| Are token costs problematic?                                                | Consider graduating                           |
-| Do you need deterministic behavior?                                         | Graduate to code                              |
-| Does the operation need complex state management?                           | Graduate to code                              |
+| Is this operation called very frequently?                                    | Consider graduating                            |
+| Does latency matter significantly?                                           | Consider graduating                            |
+| Are token costs problematic?                                                 | Consider graduating                            |
+| Do you need deterministic behavior?                                          | Graduate to code                               |
+| Does the operation need complex state management?                            | Graduate to code                               |
 
 ### Should I Gate Access?
 
-| Question                                                               | If Yes                                              |
+| Question                                                                | If Yes                                               |
 |------------------------------------------------------------------------|-----------------------------------------------------|
-| Is there a security requirement?                                       | Gate appropriately                                  |
-| Must this operation maintain data integrity?                           | Gate appropriately                                  |
-| Is there an audit/compliance requirement?                              | Gate appropriately                                  |
-| Is it just "safer" with no specific risk?                              | Keep primitives available                           |
+| Is there a security requirement?                                        | Gate appropriately                                   |
+| Must this operation maintain data integrity?                            | Gate appropriately                                   |
+| Is there an audit/compliance requirement?                               | Gate appropriately                                   |
+| Is it just "safer" with no specific risk?                               | Keep primitives available                            |
 </decision_framework>
 
 <examples>

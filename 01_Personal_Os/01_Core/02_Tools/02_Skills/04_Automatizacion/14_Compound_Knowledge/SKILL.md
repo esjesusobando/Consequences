@@ -39,13 +39,13 @@ New Knowledge
 
 ### Connection Types
 
-| Type | Description | Example |
-|------|-------------|---------|
-| `related_to` | Similar topic | AI tools → Claude |
-| `builds_on` | Previous learning | Basic → Advanced |
-| `contradicts` | Opposite finding | Old approach → New approach |
-| `enables` | Prerequisite for | Syntax → Architecture |
-| `similar_pattern` | Same pattern different domain | PM framework → Dev workflow |
+| Type             | Description                  | Example                    |
+|-----------------|-----------------------------|---------------------------|
+| `related_to`     | Similar topic                | AI tools → Claude          |
+| `builds_on`      | Previous learning            | Basic → Advanced           |
+| `contradicts`    | Opposite finding             | Old approach → New approach|
+| `enables`        | Prerequisite for             | Syntax → Architecture      |
+| `similar_pattern`| Same pattern different domain| PM framework → Dev workflow|
 
 ---
 
@@ -53,13 +53,13 @@ New Knowledge
 
 Knowledge connects to disciplines:
 
-| Discipline | Location | Topic Key Prefix |
-|------------|----------|------------------|
-| Project Manager | `06_Unicorn/01_Pm/` | `learning/01_Pm/` |
-| Product Manager | `06_Unicorn/02_Pdm/` | `learning/02_Pdm/` |
-| Product Design | `06_Unicorn/03_Product_Design/` | `learning/03_Pd/` |
-| AI/PM | `06_Unicorn/05_Aipm/` | `learning/ai_pm/` |
-| Engineering | `06_Unicorn/06_Engineering/` | `learning/eng/` |
+| Discipline     | Location                       | Topic Key Prefix  |
+|---------------|-------------------------------|------------------|
+| Project Manager| `06_Unicorn/01_Pm/`            | `learning/01_Pm/` |
+| Product Manager| `06_Unicorn/02_Pdm/`           | `learning/02_Pdm/`|
+| Product Design | `06_Unicorn/03_Product_Design/`| `learning/03_Pd/` |
+| AI/PM          | `06_Unicorn/05_Aipm/`          | `learning/ai_pm/` |
+| Engineering    | `06_Unicorn/06_Engineering/`   | `learning/eng/`   |
 
 ---
 
@@ -115,13 +115,13 @@ Create a connections doc:
 
 ## Topic Keys Structure
 
-| Key Pattern | Content |
-|-------------|---------|
-| `learning/{topic}` | Main topic learning |
-| `learning/{tool}` | Tool-specific knowledge |
-| `learning/{pattern}` | Cross-cutting patterns |
-| `learning/{discipline}` | Discipline-specific insights |
-| `connections/{topic}` | Connection map for topic |
+| Key Pattern            | Content                     |
+|-----------------------|----------------------------|
+| `learning/{topic}`     | Main topic learning         |
+| `learning/{tool}`      | Tool-specific knowledge     |
+| `learning/{pattern}`   | Cross-cutting patterns      |
+| `learning/{discipline}`| Discipline-specific insights|
+| `connections/{topic}`  | Connection map for topic    |
 
 ---
 
@@ -161,9 +161,9 @@ URL_N → Knowledge Network with N×N connections
 
 ## Changelog
 
-| Version | Date | Changes |
-|---------|------|---------|
-| v1.0 | 2026-05-15 | Initial skill |
+| Version  | Date      | Changes      |
+|---------|----------|-------------|
+| v1.0     | 2026-05-15| Initial skill|
 
 ---
 

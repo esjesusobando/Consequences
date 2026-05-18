@@ -42,13 +42,13 @@ Javier Mediavilla from IEBS Business School presents a practical guide on when t
 
 ## Comparación Directa
 
-| Aspecto | IA Generativa | IA Predictiva |
-|---------|---------------|---------------|
-| **Qué hace** | Crea contenido nuevo | Estima probabilidades futuras |
-| **Salida** | Texto, código, imágenes | Predicciones, clasificaciones |
-| **Costo** | Alto (modelos grandes) | Más económico (modelos específicos) |
-| **Mejor para** | Creatividad, documentación | Decisiones, forecasting |
-| **Ejemplos** | ChatGPT, DALL-E | Churn prediction, fraud detection |
+| Aspecto       | IA Generativa             | IA Predictiva                      |
+|--------------|--------------------------|-----------------------------------|
+| **Qué hace**  | Crea contenido nuevo      | Estima probabilidades futuras      |
+| **Salida**    | Texto, código, imágenes   | Predicciones, clasificaciones      |
+| **Costo**     | Alto (modelos grandes)    | Más económico (modelos específicos)|
+| **Mejor para**| Creatividad, documentación| Decisiones, forecasting            |
+| **Ejemplos**  | ChatGPT, DALL-E           | Churn prediction, fraud detection  |
 
 ## Nivel: Junior-Friendly
 Este contenido usa ejemplos de negocio comunes para explicar conceptos técnicos de forma accessible.

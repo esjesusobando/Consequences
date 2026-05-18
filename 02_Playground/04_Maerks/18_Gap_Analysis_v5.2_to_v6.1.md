@@ -9,33 +9,33 @@
 
 ### Infraestructura Core
 
-| Componente                                        | v5.2                             | v6.1                             | Notas                                              |
+| Componente                                         | v5.2                              | v6.1                              | Notas                                               |
 |---------------------------------------------------|----------------------------------|----------------------------------|----------------------------------------------------|
-| Hubs (01-10)                                      | ✅                                | ✅                                | Independientes de Legacy                           |
-| Skills estructura                                 | ✅                                | ✅                                | 305+ skills                                        |
-| 01_Personal_Os/11_AGENTS.md                       | ✅                                | ✅                                | Unificado                                          |
-| GOALS.md                                          | ✅                                | ✅                                |                                                    |
-| BACKLOG.md                                        | ✅                                | ✅                                |                                                    |
-| System Guardian                                   | ✅                                | ✅                                | Skill + ~/gr wrapper                               |
-| Engram                                            | ✅                                | ✅                                | Memoria persistente                                |
+| Hubs (01-10)                                       | ✅                                 | ✅                                 | Independientes de Legacy                            |
+| Skills estructura                                  | ✅                                 | ✅                                 | 305+ skills                                         |
+| 01_Personal_Os/11_AGENTS.md                        | ✅                                 | ✅                                 | Unificado                                           |
+| GOALS.md                                           | ✅                                 | ✅                                 |                                                     |
+| BACKLOG.md                                         | ✅                                 | ✅                                 |                                                     |
+| System Guardian                                    | ✅                                 | ✅                                 | Skill + ~/gr wrapper                                |
+| Engram                                             | ✅                                 | ✅                                 | Memoria persistente                                 |
 
 ### Workflows
 
-| Workflow                                  | v5.2                             | v6.1                             | Script                                                 |
+| Workflow                                   | v5.2                              | v6.1                              | Script                                                  |
 |-------------------------------------------|----------------------------------|----------------------------------|--------------------------------------------------------|
-| Morning Standup                           | ✅                                | ✅                                | `14_Morning_Standup.py`                                |
-| Backlog Triage                            | ✅                                | ✅                                | `09_Backlog_Triage.py`                                 |
-| Weekly Review                             | ✅                                | ✅                                | `15_Weekly_Review.py`                                  |
-| Sunday Ritual                             | ✅                                | ✅                                | `17_Ritual_Dominical.py`                               |
-| Content Engine                            | ✅                                | ✅                                | `18_Generacion_Contenido.py`                           |
+| Morning Standup                            | ✅                                 | ✅                                 | `14_Morning_Standup.py`                                 |
+| Backlog Triage                             | ✅                                 | ✅                                 | `09_Backlog_Triage.py`                                  |
+| Weekly Review                              | ✅                                 | ✅                                 | `15_Weekly_Review.py`                                   |
+| Sunday Ritual                              | ✅                                 | ✅                                 | `17_Ritual_Dominical.py`                                |
+| Content Engine                             | ✅                                 | ✅                                 | `18_Generacion_Contenido.py`                            |
 
 ### Comandos
 
-| Comando                             | v5.2                             | v6.1                             | Estado                                 |
+| Comando                              | v5.2                              | v6.1                              | Estado                                  |
 |-------------------------------------|----------------------------------|----------------------------------|----------------------------------------|
-| `/gr`                               | ✅                                | ✅                                | Corregido                              |
-| `/ce:*`                             | ✅                                | ✅                                | Funcional                              |
-| `sdd-*`                             | ✅                                | ✅                                | 9 skills SDD                           |
+| `/gr`                                | ✅                                 | ✅                                 | Corregido                               |
+| `/ce:*`                              | ✅                                 | ✅                                 | Funcional                               |
+| `sdd-*`                              | ✅                                 | ✅                                 | 9 skills SDD                            |
 
 ---
 
@@ -43,49 +43,49 @@
 
 ### 🔴 Alta Prioridad
 
-| Componente                                       | Descripción                                                                         | Dónde estaba en v5.2                                              | Acción necesaria                                         |
+| Componente                                        | Descripción                                                                          | Dónde estaba en v5.2                                               | Acción necesaria                                          |
 |--------------------------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------|
-| **Tool Shed Pattern**                            | 36 MCPs organizados en 8 dominios                                                   | `03_Knowledge/08_Config_Mcp/mcp-tools/`                           | Migrar estructura MCP                                    |
-| **MCP Domains**                                  | Core, Knowledge, Dev, Research, Visual, Productivity                                | Documentado en v5.2                                               | Implementar organización                                 |
-| **Engram Integration**                           | Comandos: `mem_save`, `mem_search`, `mem_session_summary`                           | Documentado pero parcial                                          | Verificar integración completa                           |
-| **QMD System**                                   | Búsqueda híbrida: `bun qmd.js query`                                                | `04_Operations/`                                                  | Verificar si está implementado                           |
-| **Super Campeones**                              | 1 Director + 8 Agentes (4 jugadores + 4 auditores)                                  | Planificado                                                       | Documentar y implementar                                 |
+| **Tool Shed Pattern**                             | 36 MCPs organizados en 8 dominios                                                    | `03_Knowledge/08_Config_Mcp/mcp-tools/`                            | Migrar estructura MCP                                     |
+| **MCP Domains**                                   | Core, Knowledge, Dev, Research, Visual, Productivity                                 | Documentado en v5.2                                                | Implementar organización                                  |
+| **Engram Integration**                            | Comandos: `mem_save`, `mem_search`, `mem_session_summary`                            | Documentado pero parcial                                           | Verificar integración completa                            |
+| **QMD System**                                    | Búsqueda híbrida: `bun qmd.js query`                                                 | `04_Operations/`                                                   | Verificar si está implementado                            |
+| **Super Campeones**                               | 1 Director + 8 Agentes (4 jugadores + 4 auditores)                                   | Planificado                                                        | Documentar y implementar                                  |
 
 ### 🟡 Media Prioridad
 
-| Componente                                       | Descripción                                                     | Dónde estaba en v5.2                                                      | Acción necesaria                                    |
+| Componente                                        | Descripción                                                      | Dónde estaba en v5.2                                                       | Acción necesaria                                     |
 |--------------------------------------------------|-----------------------------------------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------|
-| **Anthropic Harness**                            | Eval/Gen separation, pass@k metrics                             | `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/`         | Verificar integridad                                |
-| **Auto Mode Security**                           | Prompt injection detector, classifier                           | Planificado en v5.2                                                       | Implementar                                         |
-| **Evaluator Pattern**                            | Generator + Evaluator separados                                 | Implementado en Harness                                                   | Verificar funcionamiento                            |
-| **Slash Commands**                               | `/gr`, `/gr --apply`, `/gr --agents`                            | Documentado                                                               | Verificar todos funcionan                           |
+| **Anthropic Harness**                             | Eval/Gen separation, pass@k metrics                              | `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/`          | Verificar integridad                                 |
+| **Auto Mode Security**                            | Prompt injection detector, classifier                            | Planificado en v5.2                                                        | Implementar                                          |
+| **Evaluator Pattern**                             | Generator + Evaluator separados                                  | Implementado en Harness                                                    | Verificar funcionamiento                             |
+| **Slash Commands**                                | `/gr`, `/gr --apply`, `/gr --agents`                             | Documentado                                                                | Verificar todos funcionan                            |
 
 ### 🟢 Baja Prioridad
 
-| Componente                                    | Descripción                                             | Dónde estaba en v5.2                             | Acción necesaria                               |
+| Componente                                     | Descripción                                              | Dónde estaba en v5.2                              | Acción necesaria                                |
 |-----------------------------------------------|---------------------------------------------------------|--------------------------------------------------|------------------------------------------------|
-| **Firecrawl Guide**                           | Documentación web scraping IA                           | `Revisar_Analizar/`                              | Integrar o deprecate                           |
-| **Stripe Minions**                            | Patrones MCP avanzados                                  | Documentado                                      | Revisar relevancia                             |
-| **Content Engine**                            | 18_Generacion_Contenido.py                              | `04_Operations/`                                 | Verificar ruta                                 |
+| **Firecrawl Guide**                            | Documentación web scraping IA                            | `Revisar_Analizar/`                               | Integrar o deprecate                            |
+| **Stripe Minions**                             | Patrones MCP avanzados                                   | Documentado                                       | Revisar relevancia                              |
+| **Content Engine**                             | 18_Generacion_Contenido.py                               | `04_Operations/`                                  | Verificar ruta                                  |
 
 ---
 
 ## 🆕 LO NUEVO EN v6.1 (NO ESTABA EN v5.2)
 
-| Componente                                           | Descripción                                                                        | Estado                             |
+| Componente                                            | Descripción                                                                         | Estado                              |
 |------------------------------------------------------|------------------------------------------------------------------------------------|------------------------------------|
-| **01_Core reorganizado**                             | 03_Agents → 04_Agents, 04_Integrations → 06_Integrations                           | ✅                                  |
-| **Hubs independentes**                               | Todos los Hubs (01-10) sin dependencia Legacy                                      | ✅                                  |
-| **AIPM_Fixed/**                                      | Scripts AIPM corregidos                                                            | ✅                                  |
-| **Ritual_Fixed/**                                    | Scripts Ritual corregidos                                                          | ✅                                  |
-| **Validator_Fixed/**                                 | Scripts Validator corregidos                                                       | ✅                                  |
-| **Tool_Fixed/**                                      | Scripts Tool corregidos                                                            | ✅                                  |
-| **Integration_Fixed/**                               | Scripts Integration corregidos                                                     | ✅                                  |
-| **Workflow_Fixed/**                                  | Scripts Workflow corregidos                                                        | ✅                                  |
-| **Data_Fixed/**                                      | Scripts Data corregidos                                                            | ✅                                  |
-| **General_Fixed/**                                   | Scripts General corregidos                                                         | ✅                                  |
-| **SOP Prompts**                                      | 8 prompts para crear componentes del sistema                                       | ✅                                  |
-| **Maerks/18_Gap_Analysis**                           | Este documento                                                                     | ✅                                  |
+| **01_Core reorganizado**                              | 03_Agents → 04_Agents, 04_Integrations → 06_Integrations                            | ✅                                   |
+| **Hubs independentes**                                | Todos los Hubs (01-10) sin dependencia Legacy                                       | ✅                                   |
+| **AIPM_Fixed/**                                       | Scripts AIPM corregidos                                                             | ✅                                   |
+| **Ritual_Fixed/**                                     | Scripts Ritual corregidos                                                           | ✅                                   |
+| **Validator_Fixed/**                                  | Scripts Validator corregidos                                                        | ✅                                   |
+| **Tool_Fixed/**                                       | Scripts Tool corregidos                                                             | ✅                                   |
+| **Integration_Fixed/**                                | Scripts Integration corregidos                                                      | ✅                                   |
+| **Workflow_Fixed/**                                   | Scripts Workflow corregidos                                                         | ✅                                   |
+| **Data_Fixed/**                                       | Scripts Data corregidos                                                             | ✅                                   |
+| **General_Fixed/**                                    | Scripts General corregidos                                                          | ✅                                   |
+| **SOP Prompts**                                       | 8 prompts para crear componentes del sistema                                        | ✅                                   |
+| **Maerks/18_Gap_Analysis**                            | Este documento                                                                      | ✅                                   |
 
 ---
 
@@ -124,13 +124,13 @@
 
 ## 📊 RESUMEN
 
-| Métrica                                                    | Valor                              |
+| Métrica                                                     | Valor                               |
 |------------------------------------------------------------|------------------------------------|
-| **Componentes v5.2 preservados**                           | 85%                                |
-| **Gap alta prioridad**                                     | 5 items                            |
-| **Gap media prioridad**                                    | 4 items                            |
-| **Gap baja prioridad**                                     | 3 items                            |
-| **Nuevos en v6.1**                                         | 11 items                           |
+| **Componentes v5.2 preservados**                            | 85%                                 |
+| **Gap alta prioridad**                                      | 5 items                             |
+| **Gap media prioridad**                                     | 4 items                             |
+| **Gap baja prioridad**                                      | 3 items                             |
+| **Nuevos en v6.1**                                          | 11 items                            |
 
 ---
 

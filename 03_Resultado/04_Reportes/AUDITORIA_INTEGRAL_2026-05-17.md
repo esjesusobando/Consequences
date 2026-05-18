@@ -7,18 +7,18 @@
 
 ## 🔍 RESUMEN EJECUTIVO
 
-| Indicador | Estado | Notas |
-|-----------|--------|-------|
-| Estructura de carpetas | ✅ OK | 4 dimensiones raíz validadas |
-| HUBs Scripts | ✅ OK | 29 scripts activos, numeración correcta |
-| Skills | ✅ OK | 341 skills en 12 áreas funcionales |
-| Agents | ✅ OK | 52+ agentes activos |
-| MCPs | ⚠️ DRIFT | 3 MCPs solo en Claude (higgsfield, playwright, sequential-thinking) |
-| Manifests | ✅ OK | 7/7 archivos validados |
-| Hooks | ✅ OK | 6 categorías de hooks activas |
-| Workflows | ✅ OK | 28+ workflows en 5 categorías |
-| Skills numeración | ✅ FIXED | Auditor reordenó skills con prefijos numéricos faltantes |
-| Frontmatter Skills | ✅ OK | 0 skills sin frontmatter |
+| Indicador             | Estado  | Notas                                                              |
+|----------------------|--------|-------------------------------------------------------------------|
+| Estructura de carpetas| ✅ OK    | 4 dimensiones raíz validadas                                       |
+| HUBs Scripts          | ✅ OK    | 29 scripts activos, numeración correcta                            |
+| Skills                | ✅ OK    | 341 skills en 12 áreas funcionales                                 |
+| Agents                | ✅ OK    | 52+ agentes activos                                                |
+| MCPs                  | ⚠️ DRIFT| 3 MCPs solo en Claude (higgsfield, playwright, sequential-thinking)|
+| Manifests             | ✅ OK    | 7/7 archivos validados                                             |
+| Hooks                 | ✅ OK    | 6 categorías de hooks activas                                      |
+| Workflows             | ✅ OK    | 28+ workflows en 5 categorías                                      |
+| Skills numeración     | ✅ FIXED | Auditor reordenó skills con prefijos numéricos faltantes           |
+| Frontmatter Skills    | ✅ OK    | 0 skills sin frontmatter                                           |
 
 ---
 
@@ -26,32 +26,32 @@
 
 ### MCPs (Estado Real)
 
-| Fuente | Cantidad |
-|--------|----------|
-| Claude Code | 37 |
-| OpenCode | 34 |
-| En ambos | 34 |
-| **Solo Claude** | **3** (higgsfield, playwright, sequential-thinking) |
-| Solo OpenCode | 0 |
+| Fuente         | Cantidad                                           |
+|---------------|---------------------------------------------------|
+| Claude Code    | 37                                                 |
+| OpenCode       | 34                                                 |
+| En ambos       | 34                                                 |
+| **Solo Claude**| **3** (higgsfield, playwright, sequential-thinking)|
+| Solo OpenCode  | 0                                                  |
 
 **⚠️ ACCIÓN REQUERIDA:** Los MCPs `higgsfield`, `playwright`, y `sequential-thinking` están en Claude Code pero no en OpenCode. Sincronizar si usas ambos.
 
 ### Skills (Estado Real)
 
-| Área | Estado |
-|------|--------|
-| Total Skills | **341** (no 300+) |
-| Áreas Funcionales | **12** (no 11) |
-| Sin frontmatter | 0 |
-| Categorías | 00_Compound_Engineering, 00_Personal_Os_Stack, 00_Skill_Auditor, 01_Creacion_Contenidos, 02_Diseno_Ui_Ux, 03_Video_Media, 04_Automatizacion, 05_Workflows, 06_Tools, 07_Personal_Os, 08_Invictus_Web, claude-ads |
+| Área             | Estado                                                                                                                                                                                                          |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Total Skills     | **341** (no 300+)                                                                                                                                                                                               |
+| Áreas Funcionales| **12** (no 11)                                                                                                                                                                                                  |
+| Sin frontmatter  | 0                                                                                                                                                                                                               |
+| Categorías       | 00_Compound_Engineering, 00_Personal_Os_Stack, 00_Skill_Auditor, 01_Creacion_Contenidos, 02_Diseno_Ui_Ux, 03_Video_Media, 04_Automatizacion, 05_Workflows, 06_Tools, 07_Personal_Os, 08_Invictus_Web, claude-ads|
 
 ### HUBs (Estado Real)
 
-| Tipo | Cantidad |
-|------|----------|
-| Total HUBs | **29** (no 26) |
-| Scripts principales | 26 (00-25 + 33 + 34 + 50 + 57) |
-| Otros scripts | 3 (path_replacement x2, mass_path_migration) |
+| Tipo               | Cantidad                                    |
+|-------------------|--------------------------------------------|
+| Total HUBs         | **29** (no 26)                              |
+| Scripts principales| 26 (00-25 + 33 + 34 + 50 + 57)              |
+| Otros scripts      | 3 (path_replacement x2, mass_path_migration)|
 
 **Scripts HUB activos:**
 - 00-25 (con gaps en 12, 13, 27-32)
@@ -62,12 +62,12 @@
 
 ### Agents (Estado Real)
 
-| Categoría | Ubicación | Estado |
-|-----------|-----------|--------|
-| Dream Team (5) | `01_Dream_Team/` | ✅ |
-| Specialists (24) | `02_Specialists_Compound/` | ✅ |
-| Individuales | raíz de `01_Agents/` | ✅ |
-| **Total** | **52+** | ✅ |
+| Categoría       | Ubicación                 | Estado  |
+|----------------|--------------------------|--------|
+| Dream Team (5)  | `01_Dream_Team/`          | ✅       |
+| Specialists (24)| `02_Specialists_Compound/`| ✅       |
+| Individuales    | raíz de `01_Agents/`      | ✅       |
+| **Total**       | **52+**                   | ✅       |
 
 ### Estructura de Carpetas (v4.0)
 
@@ -140,30 +140,30 @@ Think_Different/
 
 ### Datos a Corregir:
 
-| Campo | Valor Doc | Valor Real |
-|-------|-----------|------------|
-| MCPs en Claude Code | 36 | **37** |
-| Áreas de Skills | 11 | **12** |
-| Total Skills | 300+ | **341** |
-| Total HUBs | 26 | **29** |
-| HUBs activos | 21+5 aux | **29** |
+| Campo              | Valor Doc  | Valor Real  |
+|-------------------|-----------|------------|
+| MCPs en Claude Code| 36         | **37**      |
+| Áreas de Skills    | 11         | **12**      |
+| Total Skills       | 300+       | **341**     |
+| Total HUBs         | 26         | **29**      |
+| HUBs activos       | 21+5 aux   | **29**      |
 
 ### Nueva tabla de áreas de skills (12 áreas):
 
-| # | Área | Carpeta |
-|---|------|---------|
-| 1 | Compound Engineering | 00_Compound_Engineering |
-| 2 | Personal Os Stack | 00_Personal_Os_Stack |
-| 3 | Skill Auditor | 00_Skill_Auditor |
-| 4 | Creación de Contenidos | 01_Creacion_Contenidos |
-| 5 | Diseño UI/UX | 02_Diseno_Ui_Ux |
-| 6 | Video Media | 03_Video_Media |
-| 7 | Automatización | 04_Automatizacion |
-| 8 | Workflows | 05_Workflows |
-| 9 | Tools | 06_Tools |
-| 10 | Personal Os | 07_Personal_Os |
-| 11 | Invictus Web | 08_Invictus_Web |
-| 12 | Claude Ads | claude-ads |
+| #  | Área                  | Carpeta                |
+|---|----------------------|-----------------------|
+| 1  | Compound Engineering  | 00_Compound_Engineering|
+| 2  | Personal Os Stack     | 00_Personal_Os_Stack   |
+| 3  | Skill Auditor         | 00_Skill_Auditor       |
+| 4  | Creación de Contenidos| 01_Creacion_Contenidos |
+| 5  | Diseño UI/UX          | 02_Diseno_Ui_Ux        |
+| 6  | Video Media           | 03_Video_Media         |
+| 7  | Automatización        | 04_Automatizacion      |
+| 8  | Workflows             | 05_Workflows           |
+| 9  | Tools                 | 06_Tools               |
+| 10 | Personal Os           | 07_Personal_Os         |
+| 11 | Invictus Web          | 08_Invictus_Web        |
+| 12 | Claude Ads            | claude-ads             |
 
 ---
 
@@ -207,18 +207,18 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/34_Skill_Auditor.py
 
 ## 📊 MÉTRICAS FINALES
 
-| Métrica | Valor |
-|---------|-------|
-| Overall Health | ✅ PURE GREEN |
-| Estructura | ✅ VALID |
-| Scripts HUB | 29 ✅ |
-| Skills | 341 ✅ |
-| Agents | 52+ ✅ |
-| MCPs | 37 ✅ |
-| Workflows | 28+ ✅ |
-| Hooks Categories | 6 ✅ |
-| Manifests | 7/7 ✅ |
-| Frontmatter | 100% ✅ |
+| Métrica         | Valor       |
+|----------------|------------|
+| Overall Health  | ✅ PURE GREEN|
+| Estructura      | ✅ VALID     |
+| Scripts HUB     | 29 ✅        |
+| Skills          | 341 ✅       |
+| Agents          | 52+ ✅       |
+| MCPs            | 37 ✅        |
+| Workflows       | 28+ ✅       |
+| Hooks Categories| 6 ✅         |
+| Manifests       | 7/7 ✅       |
+| Frontmatter     | 100% ✅      |
 
 ---
 

@@ -47,37 +47,37 @@ When given ad account data:
 ## Check Assignment (21 Checks)
 
 ### LinkedIn Creative (4 checks)
-| ID         | Check                                                     | Severity         |
+| ID          | Check                                                      | Severity          |
 |------------|-----------------------------------------------------------|------------------|
-| L10        | Thought Leader Ads active, ≥30% budget for B2B            | High             |
-| L11        | Ad format diversity (≥2 formats tested)                   | High             |
-| L12        | Video ads tested                                          | Medium           |
-| L13        | Creative refresh every 4-6 weeks (LinkedIn cadence)       | Medium           |
+| L10         | Thought Leader Ads active, ≥30% budget for B2B             | High              |
+| L11         | Ad format diversity (≥2 formats tested)                    | High              |
+| L12         | Video ads tested                                           | Medium            |
+| L13         | Creative refresh every 4-6 weeks (LinkedIn cadence)        | Medium            |
 
 ### TikTok Creative (12 checks)
-| ID         | Check                                                  | Severity         |
+| ID          | Check                                                   | Severity          |
 |------------|--------------------------------------------------------|------------------|
-| T05        | ≥6 creatives per ad group                              | Critical         |
-| T06        | All video 9:16 vertical (1080x1920)                    | Critical         |
-| T07        | Native-looking content (not corporate)                 | High             |
-| T08        | Hook in first 1-2 seconds                              | High             |
-| T09        | No creative active >7-10 days with declining CTR       | High             |
-| T10        | Spark Ads tested (~3% CTR vs ~2% standard)             | High             |
-| T20        | TikTok Shop integration (e-commerce)                   | Medium           |
-| T21        | Video Shopping Ads tested                              | Medium           |
-| T22        | Caption SEO with high-intent keywords                  | High             |
-| T23        | Trending audio used (sound-on platform)                | Medium           |
-| T24        | Custom CTA button (not default)                        | Medium           |
-| T25        | Safe zone compliance (X:40-940, Y:150-1470)            | High             |
+| T05         | ≥6 creatives per ad group                               | Critical          |
+| T06         | All video 9:16 vertical (1080x1920)                     | Critical          |
+| T07         | Native-looking content (not corporate)                  | High              |
+| T08         | Hook in first 1-2 seconds                               | High              |
+| T09         | No creative active >7-10 days with declining CTR        | High              |
+| T10         | Spark Ads tested (~3% CTR vs ~2% standard)              | High              |
+| T20         | TikTok Shop integration (e-commerce)                    | Medium            |
+| T21         | Video Shopping Ads tested                               | Medium            |
+| T22         | Caption SEO with high-intent keywords                   | High              |
+| T23         | Trending audio used (sound-on platform)                 | Medium            |
+| T24         | Custom CTA button (not default)                         | Medium            |
+| T25         | Safe zone compliance (X:40-940, Y:150-1470)             | High              |
 
 ### Microsoft Creative (5 checks)
-| ID         | Check                                                 | Severity         |
+| ID          | Check                                                  | Severity          |
 |------------|-------------------------------------------------------|------------------|
-| MS11       | RSA: ≥8 headlines, ≥3 descriptions                    | High             |
-| MS12       | Multimedia Ads tested (unique rich format)            | Medium           |
-| MS13       | Ad copy optimized for Bing demographics               | Medium           |
-| MS19       | Action Extension utilized (unique to Microsoft)       | Medium           |
-| MS20       | Filter Link Extension tested                          | Medium           |
+| MS11        | RSA: ≥8 headlines, ≥3 descriptions                     | High              |
+| MS12        | Multimedia Ads tested (unique rich format)             | Medium            |
+| MS13        | Ad copy optimized for Bing demographics                | Medium            |
+| MS19        | Action Extension utilized (unique to Microsoft)        | Medium            |
+| MS20        | Filter Link Extension tested                           | Medium            |
 
 ## TikTok Safe Zone
 
@@ -89,12 +89,12 @@ All critical text, logos, and CTAs must be within:
 
 ## Refresh Cadence Thresholds
 
-| Platform                 | Refresh Cadence        |
+| Platform                  | Refresh Cadence         |
 |--------------------------|------------------------|
-| TikTok                   | 7-10 days              |
-| Meta                     | 14-21 days             |
-| LinkedIn                 | 4-6 weeks              |
-| Google / Microsoft       | 8-12 weeks             |
+| TikTok                    | 7-10 days               |
+| Meta                      | 14-21 days              |
+| LinkedIn                  | 4-6 weeks               |
+| Google / Microsoft        | 8-12 weeks              |
 
 ## Andromeda & Symphony Awareness
 

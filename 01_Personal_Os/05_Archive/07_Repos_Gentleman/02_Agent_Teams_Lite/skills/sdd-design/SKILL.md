@@ -89,11 +89,11 @@ Use ASCII diagrams when helpful.}
 
 ## File Changes
 
-| File                                           | Action                           | Description                                      |
+| File                                            | Action                            | Description                                       |
 |------------------------------------------------|----------------------------------|--------------------------------------------------|
-| `path/to/new-file.ext`                         | Create                           | {What this file does}                            |
-| `path/to/existing.ext`                         | Modify                           | {What changes and why}                           |
-| `path/to/old-file.ext`                         | Delete                           | {Why it's being removed}                         |
+| `path/to/new-file.ext`                          | Create                            | {What this file does}                             |
+| `path/to/existing.ext`                          | Modify                            | {What changes and why}                            |
+| `path/to/old-file.ext`                          | Delete                            | {Why it's being removed}                          |
 
 ## Interfaces / Contracts
 
@@ -102,11 +102,11 @@ Use code blocks with the project's language.}
 
 ## Testing Strategy
 
-| Layer                               | What to Test                          | Approach                           |
+| Layer                                | What to Test                           | Approach                            |
 |-------------------------------------|---------------------------------------|------------------------------------|
-| Unit                                | {What}                                | {How}                              |
-| Integration                         | {What}                                | {How}                              |
-| E2E                                 | {What}                                | {How}                              |
+| Unit                                 | {What}                                 | {How}                               |
+| Integration                          | {What}                                 | {How}                               |
+| E2E                                  | {What}                                 | {How}                               |
 
 ## Migration / Rollout
 

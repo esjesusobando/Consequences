@@ -55,13 +55,13 @@ Where:
 Simplified lookup:
 ```
 
-| Baseline CVR        | 5% MDE          | 10% MDE         | 20% MDE         | 30% MDE         |
+| Baseline CVR         | 5% MDE           | 10% MDE          | 20% MDE          | 30% MDE          |
 |---------------------|-----------------|-----------------|-----------------|-----------------|
-| 1%                  | 612,000         | 153,000         | 38,300          | 17,000          |
-| 2%                  | 302,400         | 75,600          | 18,900          | 8,400           |
-| 5%                  | 116,800         | 29,200          | 7,300           | 3,200           |
-| 10%                 | 55,200          | 13,800          | 3,450           | 1,530           |
-| 20%                 | 24,600          | 6,150           | 1,540           | 680             |
+| 1%                   | 612,000          | 153,000          | 38,300           | 17,000           |
+| 2%                   | 302,400          | 75,600           | 18,900           | 8,400            |
+| 5%                   | 116,800          | 29,200           | 7,300            | 3,200            |
+| 10%                  | 55,200           | 13,800           | 3,450            | 1,530            |
+| 20%                  | 24,600           | 6,150            | 1,540            | 680              |
 
 *Per variant, 95% confidence, 80% power*
 
@@ -83,12 +83,12 @@ Inputs needed:
 
 ### Duration Quick Estimates
 
-| Daily Clicks        | 2% CVR, 20% MDE         | 5% CVR, 20% MDE         | 10% CVR, 20% MDE        |
+| Daily Clicks         | 2% CVR, 20% MDE          | 5% CVR, 20% MDE          | 10% CVR, 20% MDE         |
 |---------------------|-------------------------|-------------------------|-------------------------|
-| 100                 | 189 days                | 73 days                 | 35 days                 |
-| 500                 | 38 days                 | 15 days                 | 7 days                  |
-| 1,000               | 19 days                 | 7 days                  | 4 days*                 |
-| 5,000               | 4 days*                 | 2 days*                 | 1 day*                  |
+| 100                  | 189 days                 | 73 days                  | 35 days                  |
+| 500                  | 38 days                  | 15 days                  | 7 days                   |
+| 1,000                | 19 days                  | 7 days                   | 4 days*                  |
+| 5,000                | 4 days*                  | 2 days*                  | 1 day*                   |
 
 *Minimum 7 days recommended regardless of sample sufficiency
 
@@ -168,25 +168,25 @@ THEN [metric] will [direction] by [amount]
 BECAUSE [reasoning]
 
 ### Test Design
-| Parameter            | Value                        |
+| Parameter             | Value                         |
 |----------------------|------------------------------|
-| Platform             | [platform]                   |
-| Test Type            | [A/B / Multivariate]         |
-| Variable             | [what's being changed]       |
-| Control              | [current state]              |
-| Variant              | [proposed change]            |
-| Primary Metric       | [KPI]                        |
-| Traffic Split        | [50/50 / other]              |
+| Platform              | [platform]                    |
+| Test Type             | [A/B / Multivariate]          |
+| Variable              | [what's being changed]        |
+| Control               | [current state]               |
+| Variant               | [proposed change]             |
+| Primary Metric        | [KPI]                         |
+| Traffic Split         | [50/50 / other]               |
 
 ### Sample Size & Duration
-| Metric                | Value                 |
+| Metric                 | Value                  |
 |-----------------------|-----------------------|
-| Baseline CVR          | [X%]                  |
-| MDE                   | [X%]                  |
-| Required Sample       | [N per variant]       |
-| Daily Traffic         | [N clicks/day]        |
-| Est. Duration         | [X days]              |
-| Min Duration          | 7 days                |
+| Baseline CVR           | [X%]                   |
+| MDE                    | [X%]                   |
+| Required Sample        | [N per variant]        |
+| Daily Traffic          | [N clicks/day]         |
+| Est. Duration          | [X days]               |
+| Min Duration           | 7 days                 |
 
 ### Success Criteria
 - Winner declared at 95% confidence

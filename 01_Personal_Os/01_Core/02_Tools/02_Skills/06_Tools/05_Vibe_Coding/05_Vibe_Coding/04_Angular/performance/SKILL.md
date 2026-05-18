@@ -55,13 +55,13 @@ import { NgOptimizedImage } from '@angular/common';
 
 ### Triggers
 
-| Trigger                                     | When to Use                                            |
+| Trigger                                      | When to Use                                             |
 |---------------------------------------------|--------------------------------------------------------|
-| `on viewport`                               | Below the fold content                                 |
-| `on interaction`                            | Load on click/focus/hover                              |
-| `on idle`                                   | Load when browser is idle                              |
-| `on timer(500ms)`                           | Load after delay                                       |
-| `when condition`                            | Load when expression is true                           |
+| `on viewport`                                | Below the fold content                                  |
+| `on interaction`                             | Load on click/focus/hover                               |
+| `on idle`                                    | Load when browser is idle                               |
+| `on timer(500ms)`                            | Load after delay                                        |
+| `when condition`                             | Load when expression is true                            |
 
 ```html
 <!-- Multiple triggers -->
@@ -105,22 +105,22 @@ bootstrapApplication(AppComponent, {
 });
 ```
 
-| Scenario                                                  | Use                                     |
+| Scenario                                                   | Use                                      |
 |-----------------------------------------------------------|-----------------------------------------|
-| SEO critical (blog, e-commerce)                           | SSR                                     |
-| Dashboard/Admin                                           | CSR                                     |
-| Static marketing site                                     | SSG/Prerender                           |
+| SEO critical (blog, e-commerce)                            | SSR                                      |
+| Dashboard/Admin                                            | CSR                                      |
+| Static marketing site                                      | SSG/Prerender                            |
 
 ---
 
 ## Slow Computations
 
-| Solution                                     | When                                             |
+| Solution                                      | When                                              |
 |----------------------------------------------|--------------------------------------------------|
-| Optimize algorithm                           | First choice always                              |
-| Pure pipes                                   | Cache single result                              |
-| Memoization                                  | Cache multiple results                           |
-| `computed()`                                 | Derived signal state                             |
+| Optimize algorithm                            | First choice always                               |
+| Pure pipes                                    | Cache single result                               |
+| Memoization                                   | Cache multiple results                            |
+| `computed()`                                  | Derived signal state                              |
 
 **NEVER** trigger reflows/repaints in lifecycle hooks (`ngOnInit`, `ngAfterViewInit`).
 

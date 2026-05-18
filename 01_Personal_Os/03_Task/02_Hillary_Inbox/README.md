@@ -28,12 +28,12 @@ tags: [trabajo]
 
 ## Tags disponibles
 
-| Tag                                    | Uso                                         |
+| Tag                                     | Uso                                          |
 |----------------------------------------|---------------------------------------------|
-| `[trabajo]`                            | Tareas laborales                            |
-| `[personal]`                           | Cosas personales                            |
-| `[salud]`                              | Salud y bienestar                           |
-| `[ideas]`                              | Ideas e insights                            |
+| `[trabajo]`                             | Tareas laborales                             |
+| `[personal]`                            | Cosas personales                             |
+| `[salud]`                               | Salud y bienestar                            |
+| `[ideas]`                               | Ideas e insights                             |
 
 ## Procesamiento
 

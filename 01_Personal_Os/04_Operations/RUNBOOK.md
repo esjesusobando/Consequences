@@ -20,12 +20,12 @@ Este documento establece los protocolos de emergencia, contingencia y resilienci
 
 ### Jerarquía de Seguridad
 
-| Prioridad                               | Descripción                                                 | Acción                                                       |
+| Prioridad                                | Descripción                                                  | Acción                                                        |
 |-----------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------|
-| 1️⃣                                     | **Protección de datos**                                     | Backup antes de cualquier cambio                             |
-| 2️⃣                                     | **Protección de configuración**                             | Archivos críticos inmutables                                 |
-| 3️⃣                                     | **Protección de memoria**                                   | Consistencia de Engram                                       |
-| 4️⃣                                     | **Mejora continua**                                         | Solo si 1-3 están seguras                                    |
+| 1️⃣                                      | **Protección de datos**                                      | Backup antes de cualquier cambio                              |
+| 2️⃣                                      | **Protección de configuración**                              | Archivos críticos inmutables                                  |
+| 3️⃣                                      | **Protección de memoria**                                    | Consistencia de Engram                                        |
+| 4️⃣                                      | **Mejora continua**                                          | Solo si 1-3 están seguras                                     |
 
 ---
 
@@ -230,13 +230,13 @@ ROLLBACK_PROCEDURE = """
 
 ## 📊 Métricas de Resiliencia
 
-| Métrica                                          | Target                               | Alerta si                               |
+| Métrica                                           | Target                                | Alerta si                                |
 |--------------------------------------------------|--------------------------------------|-----------------------------------------|
-| Uptime del sistema                               | > 99%                                | < 95%                                   |
-| Éxito de auto-fixes                              | > 80%                                | < 60%                                   |
-| Rollbacks necesarios                             | < 5%                                 | > 15%                                   |
-| Recovery Time                                    | < 5 min                              | > 15 min                                |
-| False Positives                                  | < 10%                                | > 20%                                   |
+| Uptime del sistema                                | > 99%                                 | < 95%                                    |
+| Éxito de auto-fixes                               | > 80%                                 | < 60%                                    |
+| Rollbacks necesarios                              | < 5%                                  | > 15%                                    |
+| Recovery Time                                     | < 5 min                               | > 15 min                                 |
+| False Positives                                   | < 10%                                 | > 20%                                    |
 
 ---
 
@@ -244,14 +244,14 @@ ROLLBACK_PROCEDURE = """
 
 ### Matriz de Notificaciones
 
-| Evento                                                 | Nivel                               | Destinatario                               | Canal                                       |
+| Evento                                                  | Nivel                                | Destinatario                                | Canal                                        |
 |--------------------------------------------------------|-------------------------------------|--------------------------------------------|---------------------------------------------|
-| Auto-fix exitoso                                       | INFO                                | Sistema                                    | Log                                         |
-| Sugerencia de mejora                                   | BAJO                                | Usuario                                    | Dashboard                                   |
-| Fix requiere confirmación                              | MEDIO                               | Usuario                                    | Prompt                                      |
-| Modo advertencia activo                                | ALTO                                | Usuario                                    | Alert                                       |
-| Modo emergencia activo                                 | CRÍTICO                             | Usuario + Log                              | Alert + File                                |
-| Archivo protegido afectado                             | CRÍTICO                             | Usuario                                    | Alert + Bloqueo                             |
+| Auto-fix exitoso                                        | INFO                                 | Sistema                                     | Log                                          |
+| Sugerencia de mejora                                    | BAJO                                 | Usuario                                     | Dashboard                                    |
+| Fix requiere confirmación                               | MEDIO                                | Usuario                                     | Prompt                                       |
+| Modo advertencia activo                                 | ALTO                                 | Usuario                                     | Alert                                        |
+| Modo emergencia activo                                  | CRÍTICO                              | Usuario + Log                               | Alert + File                                 |
+| Archivo protegido afectado                              | CRÍTICO                              | Usuario                                     | Alert + Bloqueo                              |
 
 ---
 

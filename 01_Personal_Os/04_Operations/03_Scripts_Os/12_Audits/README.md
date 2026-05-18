@@ -14,11 +14,11 @@ Scripts de auditoría: routes audit, skills audit.
 
 ## 📦 Scripts (6)
 
-| #                         | Script                                                     | Propósito                               |
+| #                          | Script                                                      | Propósito                                |
 |---------------------------|------------------------------------------------------------|-----------------------------------------|
-| —                         | `audit_skills_routes.py`                                   | Auditor de routes                       |
-| —                         | `REPORTE_AUDITORIA_SKILLS_ROUTES.md`                       | Reporte                                 |
-| —                         | `REPORTE_AUDITORIA_2026-04-14.md`                          | Reporte auditoría                       |
+| —                          | `audit_skills_routes.py`                                    | Auditor de routes                        |
+| —                          | `REPORTE_AUDITORIA_SKILLS_ROUTES.md`                        | Reporte                                  |
+| —                          | `REPORTE_AUDITORIA_2026-04-14.md`                           | Reporte auditoría                        |
 
 ---
 

@@ -34,12 +34,12 @@
 
 ## Errores Comunes a Evitar
 
-| #                             | Error                                          | Solución                                                    |
+| #                              | Error                                           | Solución                                                     |
 |-------------------------------|------------------------------------------------|-------------------------------------------------------------|
-| 1                             | Prompts vagos                                  | Ser específico + agregar contexto                           |
-| 2                             | No iterar                                      | 5-10 versiones mínimo                                       |
-| 3                             | Ignorar parámetros                             | --ar y --v cambian todo                                     |
-| 4                             | No guardar favoritos                           | Colección para reuse                                        |
+| 1                              | Prompts vagos                                   | Ser específico + agregar contexto                            |
+| 2                              | No iterar                                       | 5-10 versiones mínimo                                        |
+| 3                              | Ignorar parámetros                              | --ar y --v cambian todo                                      |
+| 4                              | No guardar favoritos                            | Colección para reuse                                         |
 
 ##Notas de Sesión
 

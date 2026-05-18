@@ -97,9 +97,9 @@ model_recommendation: "[modelo recomendado]"
 - **Última evaluación:** [fecha]
 
 ## 🔄 Changelog
-| Versión                             | Fecha                                | Cambio                                     |
+| Versión                              | Fecha                                 | Cambio                                      |
 |-------------------------------------|--------------------------------------|--------------------------------------------|
-| 1.0                                 | YYYY-MM-DD                           | Creación inicial                           |
+| 1.0                                  | YYYY-MM-DD                            | Creación inicial                            |
 ```
 
 ## 🛠️ Integración con Dream Team

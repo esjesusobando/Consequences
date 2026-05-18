@@ -82,12 +82,12 @@ gtag('consent', 'update', {
 ```
 
 ### Event Match Quality (EMQ) Scoring
-| Score          | Rating           | Action                                    |
+| Score           | Rating            | Action                                     |
 |----------------|------------------|-------------------------------------------|
-| <4.0           | Critical         | Severe data loss; urgent fix needed       |
-| 4.0-5.9        | Warning          | Significant signal gaps                   |
-| 6.0-7.9        | Acceptable       | Some optimization possible                |
-| 8.0-10.0       | Excellent        | Maximum signal strength                   |
+| <4.0            | Critical          | Severe data loss; urgent fix needed        |
+| 4.0-5.9         | Warning           | Significant signal gaps                    |
+| 6.0-7.9         | Acceptable        | Some optimization possible                 |
+| 8.0-10.0        | Excellent         | Maximum signal strength                    |
 
 **Key parameters by impact:**
 - Email: +4.0 points
@@ -215,18 +215,18 @@ Stage 5: Deal Closed-Won
 
 ### Critical Checks (Run for All Platforms)
 
-| Check                                  | Severity         | Pass Criteria                                      |
+| Check                                   | Severity          | Pass Criteria                                       |
 |----------------------------------------|------------------|----------------------------------------------------|
-| Primary conversion action exists       | Critical         | ≥1 active conversion per platform                  |
-| Server-side tracking active            | Critical         | CAPI/Server GTM/Events API configured              |
-| Event deduplication                    | Critical         | event_id matching (Meta), no double-counting       |
-| Consent Mode v2 (EU)                   | Critical         | Implemented if serving EU/EEA                      |
-| Enhanced Conversions / EMQ             | High             | Google: enabled; Meta: EMQ ≥6.0                    |
-| Micro vs macro separation              | High             | Only macro conversions set as Primary              |
-| Attribution model appropriate          | Medium           | DDA (Google), 7d/1d (Meta)                         |
-| Conversion window matches cycle        | Medium           | 7d (ecom), 30-90d (B2B), 30d (lead gen)            |
-| Offline conversion import              | Medium           | Active for lead gen / B2B accounts                 |
-| First-party data utilization           | High             | Customer Match / Custom Audiences from CRM         |
+| Primary conversion action exists        | Critical          | ≥1 active conversion per platform                   |
+| Server-side tracking active             | Critical          | CAPI/Server GTM/Events API configured               |
+| Event deduplication                     | Critical          | event_id matching (Meta), no double-counting        |
+| Consent Mode v2 (EU)                    | Critical          | Implemented if serving EU/EEA                       |
+| Enhanced Conversions / EMQ              | High              | Google: enabled; Meta: EMQ ≥6.0                     |
+| Micro vs macro separation               | High              | Only macro conversions set as Primary               |
+| Attribution model appropriate           | Medium            | DDA (Google), 7d/1d (Meta)                          |
+| Conversion window matches cycle         | Medium            | 7d (ecom), 30-90d (B2B), 30d (lead gen)             |
+| Offline conversion import               | Medium            | Active for lead gen / B2B accounts                  |
+| First-party data utilization            | High              | Customer Match / Custom Audiences from CRM          |
 
 ### Server-Side Tracking Priority
 ```

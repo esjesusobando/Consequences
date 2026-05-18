@@ -106,10 +106,10 @@ See `_shared/skill-resolver.md` for the full resolution protocol.
 
 ## User Skills
 
-| Trigger                                            | Skill                                | Path                                            |
+| Trigger                                             | Skill                                 | Path                                             |
 |----------------------------------------------------|--------------------------------------|-------------------------------------------------|
-| {trigger from frontmatter}                         | {skill name}                         | {full path to SKILL.md}                         |
-| ...                                                | ...                                  | ...                                             |
+| {trigger from frontmatter}                          | {skill name}                          | {full path to SKILL.md}                          |
+| ...                                                 | ...                                   | ...                                              |
 
 ## Compact Rules
 
@@ -129,11 +129,11 @@ Pre-digested rules per skill. Delegators copy matching blocks into sub-agent pro
 
 ## Project Conventions
 
-| File                                      | Path                                     | Notes                                                  |
+| File                                       | Path                                      | Notes                                                   |
 |-------------------------------------------|------------------------------------------|--------------------------------------------------------|
-| {index file}                              | {path}                                   | Index — references files below                         |
-| {referenced file}                         | {extracted path}                         | Referenced by {index file}                             |
-| {standalone file}                         | {path}                                   |                                                        |
+| {index file}                               | {path}                                    | Index — references files below                          |
+| {referenced file}                          | {extracted path}                          | Referenced by {index file}                              |
+| {standalone file}                          | {path}                                    |                                                         |
 
 Read the convention files listed above for project-specific patterns and rules. All referenced paths have been extracted — no need to read index files to discover more.
 ```
@@ -174,15 +174,15 @@ mem_save(
 **Engram**: {saved / not available}
 
 ### User Skills Found
-| Skill                           | Trigger                           |
+| Skill                            | Trigger                            |
 |---------------------------------|-----------------------------------|
-| {name}                          | {trigger}                         |
-| ...                             | ...                               |
+| {name}                           | {trigger}                          |
+| ...                              | ...                                |
 
 ### Project Conventions Found
-| File                           | Path                           |
+| File                            | Path                            |
 |--------------------------------|--------------------------------|
-| {file}                         | {path}                         |
+| {file}                          | {path}                          |
 
 ### Next Steps
 The orchestrator reads this registry once per session and passes pre-resolved skill paths to sub-agents via their launch prompts.

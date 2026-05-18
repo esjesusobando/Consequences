@@ -78,24 +78,24 @@ The 2025-2026 shift moves from hyper-granular to **consolidated, AI-friendly str
 
 **WordStream/LocaliQ 2025 benchmarks (16,000+ campaigns):** [WordStream]
 
-| Metric           | All Industries Average                               |
+| Metric            | All Industries Average                                |
 |------------------|------------------------------------------------------|
-| Search CTR       | **6.66%** [RentVision] (up 3.74% YoY)                |
-| Search CPC       | **$5.26** (up for 87% of industries)                 |
-| Search CVR       | **7.52%** [LocaliQ] (up for 65% of industries)       |
-| Search CPL       | **~$70** [LocaliQ] (up ~5% YoY)                      |
+| Search CTR        | **6.66%** [RentVision] (up 3.74% YoY)                 |
+| Search CPC        | **$5.26** (up for 87% of industries)                  |
+| Search CVR        | **7.52%** [LocaliQ] (up for 65% of industries)        |
+| Search CPL        | **~$70** [LocaliQ] (up ~5% YoY)                       |
 
 **By industry (Search):**
 
-| Industry                   | CPC                                | CTR                          | CVR                       |
+| Industry                    | CPC                                 | CTR                           | CVR                        |
 |----------------------------|------------------------------------|------------------------------|---------------------------|
-| Legal                      | $8.58- [Engage Coders] $9.21       | 5.97% [TheeDigital]          | 5.09% [TheeDigital]       |
-| Home Improvement           | $7.85                              | 6.37% [TheeDigital]          | 7.33%                     |
-| Education                  | $6.23                              |------------------------------|---------------------------|
-| Dental                     | $7.85                              | 5.44% [Engage Coders]        |---------------------------|
-| Arts & Entertainment       | $1.60 [LocaliQ]                    | 13.10% [Engage Coders]       |---------------------------|
-| Travel                     | $2.12 [LocaliQ]                    |------------------------------|---------------------------|
-| Restaurants                | $2.05 [LocaliQ]                    |------------------------------|---------------------------|
+| Legal                       | $8.58- [Engage Coders] $9.21        | 5.97% [TheeDigital]           | 5.09% [TheeDigital]        |
+| Home Improvement            | $7.85                               | 6.37% [TheeDigital]           | 7.33%                      |
+| Education                   | $6.23                               |------------------------------|---------------------------|
+| Dental                      | $7.85                               | 5.44% [Engage Coders]         |---------------------------|
+| Arts & Entertainment        | $1.60 [LocaliQ]                     | 13.10% [Engage Coders]        |---------------------------|
+| Travel                      | $2.12 [LocaliQ]                     |------------------------------|---------------------------|
+| Restaurants                 | $2.05 [LocaliQ]                     |------------------------------|---------------------------|
 
 **E-commerce benchmarks (Triple Whale 2025):** Median CPA **$23.74** (up 12.35% YoY), median CPM **$12.79** (up 10.01%), [Triple Whale] median ROAS **3.68** (down 10.03%). [Growth-onomics] CTR improved across all 14 tracked industries while CVR declined in 13 of 14. [Triple Whale]
 
@@ -133,10 +133,10 @@ CAPI is now essential -- it provides **15-20% performance increase** and bypasse
 
 **WordStream 2025 benchmarks (1,000+ campaigns):**
 
-| Objective           | CTR                      | CPC                      | CVR                      | CPL          |
+| Objective            | CTR                       | CPC                       | CVR                       | CPL           |
 |---------------------|--------------------------|--------------------------|--------------------------|--------------|
-| Traffic (all)       | 1.71% [wordstream]       | $0.70 [WordStream]       |--------------------------|--------------|
-| Leads (all)         | 2.59% [wordstream]       | $1.92 [WordStream]       | 7.72% [wordstream]       | $27.66       |
+| Traffic (all)        | 1.71% [wordstream]        | $0.70 [WordStream]        |--------------------------|--------------|
+| Leads (all)          | 2.59% [wordstream]        | $1.92 [WordStream]        | 7.72% [wordstream]        | $27.66        |
 
 **ROAS benchmarks:** Median all-industries **2.19:1**, [Enrichlabs +2] retargeting **3.61:1**, [Billo] Advantage+ **4.52:1**. [Madgicx] CPM benchmarks: Arts & Entertainment **$5.82** (lowest), most industries **$6-$8**. [Lebesgue: AI CMO] Global CPC trend: Jan 2026 at **$0.85** (24% below prior January; Nov 2025 peaked at $1.32 during Q4). [Superads]
 
@@ -164,17 +164,17 @@ LinkedIn offers professional targeting unmatched by other platforms: [LinkedFusi
 
 ### LinkedIn benchmarks
 
-| Metric                  | Benchmark                                                          |
+| Metric                   | Benchmark                                                           |
 |-------------------------|--------------------------------------------------------------------|
-| Average CPC             | $5-$7 globally; [Viewmetrics] [NAV43] median $3.94 [Closely]       |
-| Average CPM             | $31-$38 [Closely]                                                  |
-| Average CTR             | 0.44%-0.65% (sponsored content) [NAV43]                            |
-| Average CPL             | $60-$150+ [Adbacklog] [NAV43]                                      |
-| Lead Gen Form CVR       | **13%** (3.25x higher than landing pages)                          |
-| Message Ads CTR         | 3% with ~30% open rate                                             |
-| Conversation Ads        | ~50% open rate, 10-12% CTR [ZenABM]                                |
-| B2B ROAS                | 113% ($1.13 per $1 spent) [ZenABM]                                 |
-| Min daily budget        | $10/day [Fibbler]                                                  |
+| Average CPC              | $5-$7 globally; [Viewmetrics] [NAV43] median $3.94 [Closely]        |
+| Average CPM              | $31-$38 [Closely]                                                   |
+| Average CTR              | 0.44%-0.65% (sponsored content) [NAV43]                             |
+| Average CPL              | $60-$150+ [Adbacklog] [NAV43]                                       |
+| Lead Gen Form CVR        | **13%** (3.25x higher than landing pages)                           |
+| Message Ads CTR          | 3% with ~30% open rate                                              |
+| Conversation Ads         | ~50% open rate, 10-12% CTR [ZenABM]                                 |
+| B2B ROAS                 | 113% ($1.13 per $1 spent) [ZenABM]                                  |
+| Min daily budget         | $10/day [Fibbler]                                                   |
 
 **CPL by industry:** Software & IT **$125**, Finance **$100**, Healthcare **$125**, Education **$64**, Media **$65**, Manufacturing **$100**, Retail **$80**. [Tamarind +2]
 
@@ -196,13 +196,13 @@ TikTok restructured objectives with "Website Conversions" and "Product Sales" me
 
 ### TikTok benchmarks 2025-2026
 
-| Metric                | Average                                          |
+| Metric                 | Average                                           |
 |-----------------------|--------------------------------------------------|
-| CPM                   | $3.21-$10 (median ~$4.26)                        |
-| CPC                   | $0.20-$2.00 (avg ~$1.00)                         |
-| CTR                   | 0.5%-1.5% (avg ~0.84%)                           |
-| CVR                   | 0.3%-1.0% (avg ~0.46%)                           |
-| Engagement Rate       | **5-16%** (far exceeds FB 0.09%, IG 1.22%)       |
+| CPM                    | $3.21-$10 (median ~$4.26)                         |
+| CPC                    | $0.20-$2.00 (avg ~$1.00)                          |
+| CTR                    | 0.5%-1.5% (avg ~0.84%)                            |
+| CVR                    | 0.3%-1.0% (avg ~0.46%)                            |
+| Engagement Rate        | **5-16%** (far exceeds FB 0.09%, IG 1.22%)        |
 
 TikTok is **40-60% cheaper than Meta on CPMs**. [Creatify] Spark Ads deliver ~3% CTR versus ~2% for standard In-Feed, with ~$60 CPA versus ~$100. [adbacklog] Minimum budgets: **$50/day** campaign level, **$20/day** ad group level. [Printify] The algorithm needs **~50 conversions** in 7 days to pass the learning phase. [XMP Blog]
 
@@ -351,13 +351,13 @@ Scoring per item:
   N/A = excluded from total
 ```
 
-| Score        | Grade       | Action Required                      |
+| Score         | Grade        | Action Required                       |
 |--------------|-------------|--------------------------------------|
-| 90-100       | A           | Minor optimizations only             |
-| 80-89        | B           | Some improvement opportunities       |
-| 70-79        | C           | Notable issues need attention        |
-| 60-69        | D           | Significant problems present         |
-| <60          | F           | Urgent intervention required         |
+| 90-100        | A            | Minor optimizations only              |
+| 80-89         | B            | Some improvement opportunities        |
+| 70-79         | C            | Notable issues need attention         |
+| 60-69         | D            | Significant problems present          |
+| <60           | F            | Urgent intervention required          |
 
 ---
 
@@ -379,14 +379,14 @@ Scoring per item:
 
 ### What to automate versus keep manual
 
-| Automate                                         | Keep Manual                              |
+| Automate                                          | Keep Manual                               |
 |--------------------------------------------------|------------------------------------------|
-| Bidding (Smart Bidding, tROAS, tCPA)             | Strategy and goal setting                |
-| Creative variation testing                       | Brand messaging and positioning          |
-| Audience expansion (Predictive/Advantage+)       | Budget allocation across platforms       |
-| Reporting and performance snapshots              | Policy compliance review                 |
-| Ad scheduling and pacing                         | Creative concepting                      |
-| Placement optimization                           | Sensitive category targeting             |
+| Bidding (Smart Bidding, tROAS, tCPA)              | Strategy and goal setting                 |
+| Creative variation testing                        | Brand messaging and positioning           |
+| Audience expansion (Predictive/Advantage+)        | Budget allocation across platforms        |
+| Reporting and performance snapshots               | Policy compliance review                  |
+| Ad scheduling and pacing                          | Creative concepting                       |
+| Placement optimization                            | Sensitive category targeting              |
 
 **Guardrails:** Set daily/lifetime budget caps, use Cost Cap or tCPA as safety nets, pause rules if CPA exceeds target by a set percentage, allow 7-10 day learning phases before judging, and start small with AI campaigns before scaling.
 
@@ -446,14 +446,14 @@ Scoring per item:
 
 ### Essential tools landscape
 
-| Category                  | Top Tools                                                                                       | Key Notes                                                        |
+| Category                   | Top Tools                                                                                        | Key Notes                                                         |
 |---------------------------|-------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| Competitor research       | SEMrush ($140/mo), SpyFu ($39/mo), Google Auction Insights (free), Meta Ad Library (free)       | SEMrush most comprehensive; SpyFu best for historical data       |
-| PPC automation            | Optmyzr ($249+/mo), Adalysis ($149+/mo), Revealbot/Birch ($49+/mo), Madgicx ($44+/mo)           | Adalysis runs 100+ automated daily checks                        |
-| Attribution               | Triple Whale ($149+/mo), GA4 (free)                                                             | Triple Whale dominant for Shopify ecommerce                      |
-| Landing pages             | Unbounce ($99/mo), Instapage ($79/mo), Leadpages ($37/mo)                                       | Unbounce Smart Traffic delivers 30% more conversions             |
-| Feed management           | DataFeedWatch ($64/mo), Feedonomics (enterprise), GoDataFeed ($39/mo)                           | DataFeedWatch best self-serve; Feedonomics best managed          |
-| Reporting                 | Looker Studio (free), Supermetrics (EUR29/mo), AgencyAnalytics                                  | Supermetrics connects 150+ platforms                             |
+| Competitor research        | SEMrush ($140/mo), SpyFu ($39/mo), Google Auction Insights (free), Meta Ad Library (free)        | SEMrush most comprehensive; SpyFu best for historical data        |
+| PPC automation             | Optmyzr ($249+/mo), Adalysis ($149+/mo), Revealbot/Birch ($49+/mo), Madgicx ($44+/mo)            | Adalysis runs 100+ automated daily checks                         |
+| Attribution                | Triple Whale ($149+/mo), GA4 (free)                                                              | Triple Whale dominant for Shopify ecommerce                       |
+| Landing pages              | Unbounce ($99/mo), Instapage ($79/mo), Leadpages ($37/mo)                                        | Unbounce Smart Traffic delivers 30% more conversions              |
+| Feed management            | DataFeedWatch ($64/mo), Feedonomics (enterprise), GoDataFeed ($39/mo)                            | DataFeedWatch best self-serve; Feedonomics best managed           |
+| Reporting                  | Looker Studio (free), Supermetrics (EUR29/mo), AgencyAnalytics                                   | Supermetrics connects 150+ platforms                              |
 
 ### API reference for building claude-ads
 

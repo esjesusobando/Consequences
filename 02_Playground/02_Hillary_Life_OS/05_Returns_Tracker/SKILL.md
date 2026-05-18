@@ -19,12 +19,12 @@ Observación → DETECTAR → PATRON → GENERAR → SKILL
 
 ## Inputs
 
-| Source                                   | Data                                          | Weight                             |
+| Source                                    | Data                                           | Weight                              |
 |------------------------------------------|-----------------------------------------------|------------------------------------|
-| Quick Capture                            | Frecuencia de tags                            | Alta                               |
-| Daily Notes                              | Patrones temporales                           | Alta                               |
-| Recording Mode                           | Temas recurrentes                             | Media                              |
-| Plan My Day                              | Tareas repetitivas                            | Alta                               |
+| Quick Capture                             | Frecuencia de tags                             | Alta                                |
+| Daily Notes                               | Patrones temporales                            | Alta                                |
+| Recording Mode                            | Temas recurrentes                              | Media                               |
+| Plan My Day                               | Tareas repetitivas                             | Alta                                |
 
 ### Detectable Patterns
 
@@ -147,17 +147,17 @@ description: Auto-generated from pattern detection
 
 ## Implementation
 
-| Scenario                                 | Behavior                                   |
+| Scenario                                  | Behavior                                    |
 |------------------------------------------|--------------------------------------------|
-| <3 occurrences                           | "Need more data"                           |
-| Score 0.6-0.7                            | "Needs review"                             |
-| Already exists                           | Skip                                       |
-| User rejects                             | Feedback + retry                           |
+| <3 occurrences                            | "Need more data"                            |
+| Score 0.6-0.7                             | "Needs review"                              |
+| Already exists                            | Skip                                        |
+| User rejects                              | Feedback + retry                            |
 
 ---
 
 ## Changelog
 
-| Date                                 | Change                                 |
+| Date                                  | Change                                  |
 |--------------------------------------|----------------------------------------|
-| 2026-03-31                           | Initial v1.0                           |
+| 2026-03-31                            | Initial v1.0                            |

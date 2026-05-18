@@ -43,23 +43,23 @@ claude-ads/
 
 ## Commands
 
-| Command                  | Purpose                                                         |
+| Command                   | Purpose                                                          |
 |--------------------------|-----------------------------------------------------------------|
-| `/ads audit`             | Full multi-platform audit with 6 parallel agents                |
-| `/ads google`            | Google Ads deep analysis                                        |
-| `/ads meta`              | Meta/Facebook Ads analysis                                      |
-| `/ads youtube`           | YouTube Ads analysis                                            |
-| `/ads linkedin`          | LinkedIn Ads analysis                                           |
-| `/ads tiktok`            | TikTok Ads analysis                                             |
-| `/ads microsoft`         | Microsoft/Bing Ads analysis                                     |
-| `/ads creative`          | Creative quality and fatigue assessment                         |
-| `/ads landing`           | Landing page conversion analysis                                |
-| `/ads budget`            | Budget allocation optimization                                  |
-| `/ads plan <type>`       | Strategic ad planning by industry                               |
-| `/ads competitor`        | Competitor ad research                                          |
-| `/ads math`              | PPC financial calculator (CPA, ROAS, break-even, LTV:CAC)       |
-| `/ads test`              | A/B test design (hypothesis, significance, sample size)         |
-| `/ads report`            | PDF audit report generation for client deliverables             |
+| `/ads audit`              | Full multi-platform audit with 6 parallel agents                 |
+| `/ads google`             | Google Ads deep analysis                                         |
+| `/ads meta`               | Meta/Facebook Ads analysis                                       |
+| `/ads youtube`            | YouTube Ads analysis                                             |
+| `/ads linkedin`           | LinkedIn Ads analysis                                            |
+| `/ads tiktok`             | TikTok Ads analysis                                              |
+| `/ads microsoft`          | Microsoft/Bing Ads analysis                                      |
+| `/ads creative`           | Creative quality and fatigue assessment                          |
+| `/ads landing`            | Landing page conversion analysis                                 |
+| `/ads budget`             | Budget allocation optimization                                   |
+| `/ads plan <type>`        | Strategic ad planning by industry                                |
+| `/ads competitor`         | Competitor ad research                                           |
+| `/ads math`               | PPC financial calculator (CPA, ROAS, break-even, LTV:CAC)        |
+| `/ads test`               | A/B test design (hypothesis, significance, sample size)          |
+| `/ads report`             | PDF audit report generation for client deliverables              |
 
 ## Development Rules
 

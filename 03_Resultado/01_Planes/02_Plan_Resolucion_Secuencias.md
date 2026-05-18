@@ -16,11 +16,11 @@ Las carpetas `00_*` **NO se tocan** — son carpetas quemadas/fijas del sistema.
 
 ## Gaps Identificados (preliminar)
 
-| Ubicación                        | Estado Esperado                     | Estado Actual                   |
+| Ubicación                         | Estado Esperado                      | Estado Actual                    |
 |----------------------------------|-------------------------------------|---------------------------------|
-| `04_Operations/`                 | 00_, 01_, 02_, 03_, 04_             | Faltan carpetas 04              |
-| `03_Task/`                       | 00_-07                              | Solo 00_, 01_, 08_              |
-| `02_Tools/` (skills)             | Secuencial por área                 | Requiere validación             |
+| `04_Operations/`                  | 00_, 01_, 02_, 03_, 04_              | Faltan carpetas 04               |
+| `03_Task/`                        | 00_-07                               | Solo 00_, 01_, 08_               |
+| `02_Tools/` (skills)              | Secuencial por área                  | Requiere validación              |
 
 ---
 
@@ -52,11 +52,11 @@ Archivo: `03_Resultado/04_Reportes/SEQUENCE_INVENTORY.md`
 
 ### Clasificación por severity
 
-| Severity               | Definición                                   |
+| Severity                | Definición                                    |
 |------------------------|----------------------------------------------|
-| 🔴 CRITICAL             | Gap > 1 (carpeta faltante real)              |
-| 🟡 WARNING              | Gap = 1 (podría ser intencional)             |
-| 🟢 OK                   | Secuencia continua                           |
+| 🔴 CRITICAL              | Gap > 1 (carpeta faltante real)               |
+| 🟡 WARNING               | Gap = 1 (podría ser intencional)              |
+| 🟢 OK                    | Secuencia continua                            |
 
 ---
 
@@ -71,25 +71,25 @@ Archivo: `03_Resultado/04_Reportes/SEQUENCE_INVENTORY.md`
 ```markdown
 ## Directorio: 01_Personal_Os/04_Operations/
 
-| #                | Carpeta                      | Status               | Acción                        |
+| #                 | Carpeta                       | Status                | Acción                         |
 |------------------|------------------------------|----------------------|-------------------------------|
-| 01               | Context_LLM                  | ✅ OK                 |-------------------------------|
-| 02               | Auto_Improvement             | ✅ OK                 |-------------------------------|
-| 03               | Agent_Teams_Lite             | ✅ OK                 |-------------------------------|
-| 04               | Scripts_Os                   | 🔴 GAP                | Crear o reordenar             |
-| 05               | Projects                     | ✅ OK                 |-------------------------------|
+| 01                | Context_LLM                   | ✅ OK                  |-------------------------------|
+| 02                | Auto_Improvement              | ✅ OK                  |-------------------------------|
+| 03                | Agent_Teams_Lite              | ✅ OK                  |-------------------------------|
+| 04                | Scripts_Os                    | 🔴 GAP                 | Crear o reordenar              |
+| 05                | Projects                      | ✅ OK                  |-------------------------------|
 ```
 
 ### Directorios a validar
 
-| Prioridad               | Directorio                                     | Razón                               |
+| Prioridad                | Directorio                                      | Razón                                |
 |-------------------------|------------------------------------------------|-------------------------------------|
-| 🔴 ALTA                  | `01_Personal_Os/04_Operations/`                | HUBs + Scripts críticos             |
-| 🔴 ALTA                  | `01_Personal_Os/03_Task/`                      | Tareas activas                      |
-| 🟡 MEDIA                 | `01_Personal_Os/01_Core/02_Tools/`             | Skills + Agents                     |
-| 🟡 MEDIA                 | `01_Personal_Os/01_Core/01_Rules/`             | Reglas del sistema                  |
-| 🟡 MEDIA                 | `02_Playground/`                               | Zones de prueba                     |
-| 🟡 MEDIA                 | `03_Resultado/`                                | Planes y reportes                   |
+| 🔴 ALTA                   | `01_Personal_Os/04_Operations/`                 | HUBs + Scripts críticos              |
+| 🔴 ALTA                   | `01_Personal_Os/03_Task/`                       | Tareas activas                       |
+| 🟡 MEDIA                  | `01_Personal_Os/01_Core/02_Tools/`              | Skills + Agents                      |
+| 🟡 MEDIA                  | `01_Personal_Os/01_Core/01_Rules/`              | Reglas del sistema                   |
+| 🟡 MEDIA                  | `02_Playground/`                                | Zones de prueba                      |
+| 🟡 MEDIA                  | `03_Resultado/`                                 | Planes y reportes                    |
 
 ---
 
@@ -97,12 +97,12 @@ Archivo: `03_Resultado/04_Reportes/SEQUENCE_INVENTORY.md`
 
 ### Reglas de resolución
 
-| Caso                     | Acción                                          |
+| Caso                      | Acción                                           |
 |--------------------------|-------------------------------------------------|
-| Gap > 1                  | **CREAR** carpeta vacía placeholder             |
-| Gap = 1                  | **IGNORAR** (puede ser intencional)             |
-| Duplicado                | **MERGE** o eliminar duplicado                  |
-| Secuencia OK             | **NO TOCAR**                                    |
+| Gap > 1                   | **CREAR** carpeta vacía placeholder              |
+| Gap = 1                   | **IGNORAR** (puede ser intencional)              |
+| Duplicado                 | **MERGE** o eliminar duplicado                   |
+| Secuencia OK              | **NO TOCAR**                                     |
 
 ### Git backup obligatorio
 
@@ -132,23 +132,23 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py --sequ
 
 ## Criterio de Done
 
-| Criterio                                       | Status                  |
+| Criterio                                        | Status                   |
 |------------------------------------------------|-------------------------|
-| 📋 Inventario completo generado                 | ⬜ Pendiente             |
-| 📊 Reporte con gaps por directorio              | ⬜ Pendiente             |
-| ✅ Decisión del usuario aplicada                | ⬜ Pendiente             |
-| 💾 Git backup creado antes de fixes             | ⬜ Pendiente             |
-| 🔄 Secuencias resueltas                         | ⬜ Pendiente             |
+| 📋 Inventario completo generado                  | ⬜ Pendiente              |
+| 📊 Reporte con gaps por directorio               | ⬜ Pendiente              |
+| ✅ Decisión del usuario aplicada                 | ⬜ Pendiente              |
+| 💾 Git backup creado antes de fixes              | ⬜ Pendiente              |
+| 🔄 Secuencias resueltas                          | ⬜ Pendiente              |
 
 ---
 
 ## Pre-requisitos
 
-| Requisito                                    | Verificación                        |
+| Requisito                                     | Verificación                         |
 |----------------------------------------------|-------------------------------------|
-| Git status limpio                            | `git status`                        |
-| Backup tag creado                            | `git tag -l                         | grep v3.0` |
-| Plan Consequences 3.0 commiteado             | Commit `721698e` existe             |
+| Git status limpio                             | `git status`                         |
+| Backup tag creado                             | `git tag -l                          | grep v3.0`|
+| Plan Consequences 3.0 commiteado              | Commit `721698e` existe              |
 
 ---
 

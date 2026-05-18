@@ -13,12 +13,12 @@
 ### #0 — OPEN DESIGN (NUEVA CATEGORÍA)
 **Framework Multi-Agente + Skill System + 138 Design Systems**
 
-| Dimensión                            | Score                       | Justificación                                                                                              |
+| Dimensión                             | Score                        | Justificación                                                                                               |
 |--------------------------------------|-----------------------------|------------------------------------------------------------------------------------------------------------|
-| **Valor**                            | **10/10**                   | 62 skills, 138 design systems, 13 coding agents soportados (Claude Code, Codex, etc.)                      |
-| **SOTA**                             | **10/10**                   | Web app + daemon local + BYOK + skills como archivos git-versionables                                      |
-| **Calidad Diseño**                   | **9/10**                    | Inspirado en Claude Design, OpenCoDesign, huashu, guizang                                                   |
-| **TOTAL**                            | **29/30**                   |                                                                                                            |
+| **Valor**                             | **10/10**                    | 62 skills, 138 design systems, 13 coding agents soportados (Claude Code, Codex, etc.)                       |
+| **SOTA**                              | **10/10**                    | Web app + daemon local + BYOK + skills como archivos git-versionables                                       |
+| **Calidad Diseño**                    | **9/10**                     | Inspirado en Claude Design, OpenCoDesign, huashu, guizang                                                   |
+| **TOTAL**                             | **29/30**                    |                                                                                                             |
 
 **Why:** No es una skill, es un **OS de diseño completo**. Mismo concepto que PersonalOS pero para el flujo diseño→código. Skills en `skills/` + Design Systems en `design-systems/` + agente orchestrator. Es lo más cercano a un "design operating system" que existe en open source.
 
@@ -31,12 +31,12 @@
 ### 🥇 #1 — Huashu Design
 **HTML Prototipado de Alta Fidelidad**
 
-| Dimensión | Score | Justificación |
-|-----------|-------|---------------|
-| **Valor** | 10/10 | Prototipado real, funcional, exportable a MP4/GIF |
-| **SOTA** | 10/10 | 5流派 × 20 filosofías, 24 showrooms, 60fps |
-| **Diseño** | 9/10 | React+Babel, evitar AI slop, 5维度评审 |
-| **TOTAL** | **29/30** | |
+| Dimensión  | Score    | Justificación                                    |
+|-----------|---------|-------------------------------------------------|
+| **Valor**  | 10/10    | Prototipado real, funcional, exportable a MP4/GIF|
+| **SOTA**   | 10/10    | 5流派 × 20 filosofías, 24 showrooms, 60fps         |
+| **Diseño** | 9/10     | React+Babel, evitar AI slop, 5维度评审               |
+| **TOTAL**  | **29/30**|                                                  |
 
 **Why:** Prototipado de verdad con HTML — no Figma, no mockups. Entrega real. **Ya integrado en Open Design** como dependencia core.
 
@@ -45,12 +45,12 @@
 ### 🥈 #2 — HTMLSlides (NUEVA)
 **Presentaciones HTML con IA — PowerPoint Killer**
 
-| Dimensión | Score | Justificación |
-|-----------|-------|---------------|
-| **Valor** | 10/10 | Gratis, single HTML file, dual-display, AI speaker notes |
-| **SOTA** | 10/10 | 17 temas (5 Pro + 12 Vibe), conversión PPT/reveal.js/Marp |
-| **Diseño** | 9/10 | Output profesional, temas curados (Obsidian, Binary Architect) |
-| **TOTAL** | **29/30** | |
+| Dimensión  | Score    | Justificación                                                 |
+|-----------|---------|--------------------------------------------------------------|
+| **Valor**  | 10/10    | Gratis, single HTML file, dual-display, AI speaker notes      |
+| **SOTA**   | 10/10    | 17 temas (5 Pro + 12 Vibe), conversión PPT/reveal.js/Marp     |
+| **Diseño** | 9/10     | Output profesional, temas curados (Obsidian, Binary Architect)|
+| **TOTAL**  | **29/30**|                                                               |
 
 **Why:** El reemplazo definitivo de PowerPoint. Single HTML file = versionable, deployable, sin dependencias. Dual-display presenter mode como PowerPoint pero gratis. Compatible con Claude Code, Copilot, Gemini CLI, Cursor, Windsurf.
 
@@ -67,12 +67,12 @@
 ### 🥉 #3 — Dumbledor Design
 **Jerarquía Visual + Contraste Binario**
 
-| Dimensión | Score | Justificación |
-|-----------|-------|---------------|
-| **Valor** | 10/10 | Metodología universal — sirve para TODO: slides, landing, cards, posts |
-| **SOTA** | 9/10 | Sistema de 3 niveles (900→700→300) no lo tiene ninguna otra skill |
-| **Diseño** | 10/10 | Inspirado en Vogue, Helmut Lang, propaganda soviética |
-| **TOTAL** | **29/30** | |
+| Dimensión  | Score    | Justificación                                                         |
+|-----------|---------|----------------------------------------------------------------------|
+| **Valor**  | 10/10    | Metodología universal — sirve para TODO: slides, landing, cards, posts|
+| **SOTA**   | 9/10     | Sistema de 3 niveles (900→700→300) no lo tiene ninguna otra skill     |
+| **Diseño** | 10/10    | Inspirado en Vogue, Helmut Lang, propaganda soviética                 |
+| **TOTAL**  | **29/30**|                                                                       |
 
 **Why:** El único sistema que te enseña A DISEÑAR, no solo a usar herramientas. Contraste binario + jerarquía de 3 niveles = impacto real.
 
@@ -81,24 +81,24 @@
 ### 🏅 #4 — Ui Ux Pro Max
 **UI/UX con Base de Datos Consultable**
 
-| Dimensión | Score | Justificación |
-|-----------|-------|---------------|
-| **Valor** | 9/10 | DB consultable para referencias instantáneas |
-| **SOTA** | 8/10 | Patrones curados + búsqueda semántica |
-| **Diseño** | 9/10 | Sistema de scoring y búsqueda |
-| **TOTAL** | **26/30** | |
+| Dimensión  | Score    | Justificación                               |
+|-----------|---------|--------------------------------------------|
+| **Valor**  | 9/10     | DB consultable para referencias instantáneas|
+| **SOTA**   | 8/10     | Patrones curados + búsqueda semántica       |
+| **Diseño** | 9/10     | Sistema de scoring y búsqueda               |
+| **TOTAL**  | **26/30**|                                             |
 
 ---
 
 ### 🏅 #5 — Frontend Slides
 **Presentaciones HTML — Predeterminada Oficial**
 
-| Dimensión | Score | Justificación |
-|-----------|-------|---------------|
-| **Valor** | 10/10 | Zero deps, PPT conversion, deploy to URL, PDF export |
-| **SOTA** | 9/10 | 12 presets anti-AI-slop, viewport fitting, animations |
-| **Diseño** | 7/10 | Depende del preset elegido |
-| **TOTAL** | **26/30** | |
+| Dimensión  | Score    | Justificación                                        |
+|-----------|---------|-----------------------------------------------------|
+| **Valor**  | 10/10    | Zero deps, PPT conversion, deploy to URL, PDF export |
+| **SOTA**   | 9/10     | 12 presets anti-AI-slop, viewport fitting, animations|
+| **Diseño** | 7/10     | Depende del preset elegido                           |
+| **TOTAL**  | **26/30**|                                                      |
 
 **Nota:** HTMLSlides es superset de Frontend Slides. Mantener ambos por compatibilidad.
 
@@ -107,24 +107,24 @@
 ### 🏅 #6 — Design SOTA
 **Estado del Arte en Diseño**
 
-| Dimensión | Score | Justificación |
-|-----------|-------|---------------|
-| **Valor** | 8/10 | Consolida mejores prácticas y referencias |
-| **SOTA** | 9/10 | Estado del arte actualizado |
-| **Diseño** | 8/10 | Referencias de alto nivel |
-| **TOTAL** | **25/30** | |
+| Dimensión  | Score    | Justificación                            |
+|-----------|---------|-----------------------------------------|
+| **Valor**  | 8/10     | Consolida mejores prácticas y referencias|
+| **SOTA**   | 9/10     | Estado del arte actualizado              |
+| **Diseño** | 8/10     | Referencias de alto nivel                |
+| **TOTAL**  | **25/30**|                                          |
 
 ---
 
 ### 🏅 #7 — Taste Skill
 **Criterio Estético**
 
-| Dimensión | Score | Justificación |
-|-----------|-------|---------------|
-| **Valor** | 8/10 | Te hace mejor Diseñador, no solo mejor output |
-| **SOTA** | 8/10 | Principios sólidos de diseño clásico |
-| **Diseño** | 9/10 | Inspiración en lo mejor del diseño |
-| **TOTAL** | **25/30** | |
+| Dimensión  | Score    | Justificación                                |
+|-----------|---------|---------------------------------------------|
+| **Valor**  | 8/10     | Te hace mejor Diseñador, no solo mejor output|
+| **SOTA**   | 8/10     | Principios sólidos de diseño clásico         |
+| **Diseño** | 9/10     | Inspiración en lo mejor del diseño           |
+| **TOTAL**  | **25/30**|                                              |
 
 **Why:** La única skill que trabaja en tu OJEO — no tu output, tu capacidad de juzgar.
 
@@ -133,108 +133,108 @@
 ### 🏅 #8 — Excalidraw Flowchart
 **Diagramas y Flowcharts**
 
-| Dimensión | Score | Justificación |
-|-----------|-------|---------------|
-| **Valor** | 9/10 | Esencial para comunicar sistemas y flujos |
-| **SOTA** | 7/10 | Herramienta establecida, no revolucionaria |
-| **Diseño** | 8/10 | Excalidraw tiene estética distintiva |
-| **TOTAL** | **24/30** | |
+| Dimensión  | Score    | Justificación                             |
+|-----------|---------|------------------------------------------|
+| **Valor**  | 9/10     | Esencial para comunicar sistemas y flujos |
+| **SOTA**   | 7/10     | Herramienta establecida, no revolucionaria|
+| **Diseño** | 8/10     | Excalidraw tiene estética distintiva      |
+| **TOTAL**  | **24/30**|                                           |
 
 ---
 
 ### 🏅 #9 — Premium Image Studio
 **Generación de Imágenes Premium**
 
-| Dimensión | Score | Justificación |
-|-----------|-------|---------------|
-| **Valor** | 9/10 | Prompts optimizados para generación AI |
-| **SOTA** | 8/10 | Integración Gemini, edición, variation |
-| **Diseño** | 7/10 | Depende del prompt y modelo |
-| **TOTAL** | **24/30** | |
+| Dimensión  | Score    | Justificación                         |
+|-----------|---------|--------------------------------------|
+| **Valor**  | 9/10     | Prompts optimizados para generación AI|
+| **SOTA**   | 8/10     | Integración Gemini, edición, variation|
+| **Diseño** | 7/10     | Depende del prompt y modelo           |
+| **TOTAL**  | **24/30**|                                       |
 
 ---
 
 ### 🏅 #10 — Design Systems
 **Sistemas de Diseño Consistente**
 
-| Dimensión | Score | Justificación |
-|-----------|-------|---------------|
-| **Valor** | 9/10 | Consistencia cross-proyecto, reusable |
-| **SOTA** | 9/10 | 138 design systems disponibles en Open Design |
-| **Diseño** | 8/10 | Framework establecido |
-| **TOTAL** | **26/30** | |
+| Dimensión  | Score    | Justificación                                |
+|-----------|---------|---------------------------------------------|
+| **Valor**  | 9/10     | Consistencia cross-proyecto, reusable        |
+| **SOTA**   | 9/10     | 138 design systems disponibles en Open Design|
+| **Diseño** | 8/10     | Framework establecido                        |
+| **TOTAL**  | **26/30**|                                              |
 
 ---
 
 ### 🏅 #11 — Lighthouse / Core Web Vitals
 **Performance + UX Metrics**
 
-| Dimensión | Score | Justificación |
-|-----------|-------|---------------|
-| **Valor** | 9/10 | Métricas reales de performance |
-| **SOTA** | 9/10 | Estándar Google para web performance |
-| **Diseño** | 8/10 | Complemento esencial |
-| **TOTAL** | **26/30** | |
+| Dimensión  | Score    | Justificación                       |
+|-----------|---------|------------------------------------|
+| **Valor**  | 9/10     | Métricas reales de performance      |
+| **SOTA**   | 9/10     | Estándar Google para web performance|
+| **Diseño** | 8/10     | Complemento esencial                |
+| **TOTAL**  | **26/30**|                                     |
 
 ---
 
 ### 🏅 #12 — Accessibility WCAG 2.2
 **Accesibilidad Web**
 
-| Dimensión | Score | Justificación |
-|-----------|-------|---------------|
-| **Valor** | 9/10 | Inclusión, compliance, mercado enterprise |
-| **SOTA** | 9/10 | WCAG 2.2 es el estándar actual |
-| **Diseño** | 8/10 | Mejora la calidad general |
-| **TOTAL** | **26/30** | |
+| Dimensión  | Score    | Justificación                            |
+|-----------|---------|-----------------------------------------|
+| **Valor**  | 9/10     | Inclusión, compliance, mercado enterprise|
+| **SOTA**   | 9/10     | WCAG 2.2 es el estándar actual           |
+| **Diseño** | 8/10     | Mejora la calidad general                |
+| **TOTAL**  | **26/30**|                                          |
 
 ---
 
 ### 🏅 #13 — Diseno Minimalista
 **Diseño Minimalista Exagerado**
 
-| Dimensión | Score | Justificación |
-|-----------|-------|---------------|
-| **Valor** | 7/10 | Nicho específico pero válido |
-| **SOTA** | 8/10 | Principios de minimalismo fuerte |
-| **Diseño** | 8/10 | Línea editorial clara |
-| **TOTAL** | **23/30** | |
+| Dimensión  | Score    | Justificación                   |
+|-----------|---------|--------------------------------|
+| **Valor**  | 7/10     | Nicho específico pero válido    |
+| **SOTA**   | 8/10     | Principios de minimalismo fuerte|
+| **Diseño** | 8/10     | Línea editorial clara           |
+| **TOTAL**  | **23/30**|                                 |
 
 ---
 
 ### 🏅 #14 — Directrices Marca
 **Sistema de Marca**
 
-| Dimensión | Score | Justificación |
-|-----------|-------|---------------|
-| **Valor** | 8/10 | Consistencia cross-touchpoint |
-| **SOTA** | 7/10 | Framework establecido |
-| **Diseño** | 7/10 | Guías prácticas, no académicas |
-| **TOTAL** | **22/30** | |
+| Dimensión  | Score    | Justificación                 |
+|-----------|---------|------------------------------|
+| **Valor**  | 8/10     | Consistencia cross-touchpoint |
+| **SOTA**   | 7/10     | Framework establecido         |
+| **Diseño** | 7/10     | Guías prácticas, no académicas|
+| **TOTAL**  | **22/30**|                               |
 
 ---
 
 ### 🏅 #15 — Product Design
 **Fundamentos de Diseño de Producto**
 
-| Dimensión | Score | Justificación |
-|-----------|-------|---------------|
-| **Valor** | 7/10 | Base sólida, reusable |
-| **SOTA** | 7/10 | Principios probados |
-| **Diseño** | 7/10 | Curriculum estructurado |
-| **TOTAL** | **21/30** | |
+| Dimensión  | Score    | Justificación          |
+|-----------|---------|-----------------------|
+| **Valor**  | 7/10     | Base sólida, reusable  |
+| **SOTA**   | 7/10     | Principios probados    |
+| **Diseño** | 7/10     | Curriculum estructurado|
+| **TOTAL**  | **21/30**|                        |
 
 ---
 
 ### 🏅 #16 — Learning Always (NUEVA)
 **Pipeline de Aprendizaje con IA**
 
-| Dimensión | Score | Justificación |
-|-----------|-------|---------------|
-| **Valor** | 10/10 | Alimenta el OS con conocimiento, 8 deliverables por video |
-| **SOTA** | 9/10 | Metodología estructurada, prompts + insights + reverse engineering |
-| **Diseño** | 8/10 | Contribuye a mejorar los flujos del OS |
-| **TOTAL** | **27/30** | |
+| Dimensión  | Score    | Justificación                                                     |
+|-----------|---------|------------------------------------------------------------------|
+| **Valor**  | 10/10    | Alimenta el OS con conocimiento, 8 deliverables por video         |
+| **SOTA**   | 9/10     | Metodología estructurada, prompts + insights + reverse engineering|
+| **Diseño** | 8/10     | Contribuye a mejorar los flujos del OS                            |
+| **TOTAL**  | **27/30**|                                                                   |
 
 **Why:** Es la skill que alimenta todas las demás. Videos → conocimiento → prompts → demos → insights → OS improvements. Sin Learning Always, el OS no evoluciona.
 
@@ -244,25 +244,25 @@
 
 ## 📊 Tabla Resumen
 
-| Rank | Skill/Framework | Valor | SOTA | Diseño | **TOTAL** |
-|------|------------------|-------|------|--------|-----------|
-| #0 | **Open Design** | 10 | 10 | 9 | **29** |
-| 🥇 1 | **Huashu Design** | 10 | 10 | 9 | **29** |
-| 🥈 2 | **HTMLSlides** | 10 | 10 | 9 | **29** |
-| 🥉 3 | **Dumbledor Design** | 10 | 9 | 10 | **29** |
-| 4 | Ui Ux Pro Max | 9 | 8 | 9 | **26** |
-| 5 | Frontend Slides | 10 | 9 | 7 | **26** |
-| 6 | Design SOTA | 8 | 9 | 8 | **25** |
-| 7 | Taste Skill | 8 | 8 | 9 | **25** |
-| 8 | Excalidraw Flowchart | 9 | 7 | 8 | **24** |
-| 9 | Premium Image Studio | 9 | 8 | 7 | **24** |
-| 10 | Design Systems | 9 | 9 | 8 | **26** |
-| 11 | Lighthouse / Core Web Vitals | 9 | 9 | 8 | **26** |
-| 12 | Accessibility WCAG 2.2 | 9 | 9 | 8 | **26** |
-| 13 | Diseno Minimalista | 7 | 8 | 8 | **23** |
-| 14 | Directrices Marca | 8 | 7 | 7 | **22** |
-| 15 | Product Design | 7 | 7 | 7 | **21** |
-| 16 | Learning Always | 10 | 9 | 8 | **27** |
+| Rank  | Skill/Framework             | Valor  | SOTA  | Diseño  | **TOTAL**  |
+|------|----------------------------|-------|------|--------|-----------|
+| #0    | **Open Design**             | 10     | 10    | 9       | **29**     |
+| 🥇 1   | **Huashu Design**           | 10     | 10    | 9       | **29**     |
+| 🥈 2   | **HTMLSlides**              | 10     | 10    | 9       | **29**     |
+| 🥉 3   | **Dumbledor Design**        | 10     | 9     | 10      | **29**     |
+| 4     | Ui Ux Pro Max               | 9      | 8     | 9       | **26**     |
+| 5     | Frontend Slides             | 10     | 9     | 7       | **26**     |
+| 6     | Design SOTA                 | 8      | 9     | 8       | **25**     |
+| 7     | Taste Skill                 | 8      | 8     | 9       | **25**     |
+| 8     | Excalidraw Flowchart        | 9      | 7     | 8       | **24**     |
+| 9     | Premium Image Studio        | 9      | 8     | 7       | **24**     |
+| 10    | Design Systems              | 9      | 9     | 8       | **26**     |
+| 11    | Lighthouse / Core Web Vitals| 9      | 9     | 8       | **26**     |
+| 12    | Accessibility WCAG 2.2      | 9      | 9     | 8       | **26**     |
+| 13    | Diseno Minimalista          | 7      | 8     | 8       | **23**     |
+| 14    | Directrices Marca           | 8      | 7     | 7       | **22**     |
+| 15    | Product Design              | 7      | 7     | 7       | **21**     |
+| 16    | Learning Always             | 10     | 9     | 8       | **27**     |
 
 ---
 
@@ -327,50 +327,50 @@ BRIEF
 ## 📦 OPEN DESIGN — DETALLE DE 62 SKILLS
 
 ### 🎴 PRESENTACIONES (HTML-PPT)
-| Skill | Descripción |
-|-------|-------------|
-| `html-ppt` | HTML Presentations base |
-| `html-ppt-pitch-deck` | Pitch deck preset |
-| `html-ppt-product-launch` | Product launch deck |
-| `html-ppt-tech-sharing` | Tech sharing presentation |
-| `html-ppt-weekly-report` | Weekly report slides |
-| `html-ppt-course-module` | Course module presentation |
-| `guizang-ppt` | Magazine-style |
-| `simple-deck` | Simple deck builder |
-| `replit-deck` | Replit-style deck |
+| Skill                    | Descripción               |
+|-------------------------|--------------------------|
+| `html-ppt`               | HTML Presentations base   |
+| `html-ppt-pitch-deck`    | Pitch deck preset         |
+| `html-ppt-product-launch`| Product launch deck       |
+| `html-ppt-tech-sharing`  | Tech sharing presentation |
+| `html-ppt-weekly-report` | Weekly report slides      |
+| `html-ppt-course-module` | Course module presentation|
+| `guizang-ppt`            | Magazine-style            |
+| `simple-deck`            | Simple deck builder       |
+| `replit-deck`            | Replit-style deck         |
 
 ### 🌐 PROTOTIPADO WEB
-| Skill | Descripción |
-|-------|-------------|
-| `web-prototype` | Web prototyping base |
-| `web-prototype-taste-brutalist` | Brutalist web prototype |
-| `web-prototype-taste-editorial` | Editorial web prototype |
-| `saas-landing` | SaaS landing page |
-| `pricing-page` | Pricing page |
-| `dashboard` | Dashboard layout |
-| `mobile-app` | Mobile app prototype |
+| Skill                          | Descripción            |
+|-------------------------------|-----------------------|
+| `web-prototype`                | Web prototyping base   |
+| `web-prototype-taste-brutalist`| Brutalist web prototype|
+| `web-prototype-taste-editorial`| Editorial web prototype|
+| `saas-landing`                 | SaaS landing page      |
+| `pricing-page`                 | Pricing page           |
+| `dashboard`                    | Dashboard layout       |
+| `mobile-app`                   | Mobile app prototype   |
 
 ### 📝 CONTENIDO & DOCS
-| Skill | Descripción |
-|-------|-------------|
-| `blog-post` | Blog post generator |
-| `docs-page` | Documentation page |
-| `meeting-notes` | Meeting notes |
-| `pm-spec` | PM specs / PRD |
-| `eng-runbook` | Engineering runbooks |
+| Skill          | Descripción         |
+|---------------|--------------------|
+| `blog-post`    | Blog post generator |
+| `docs-page`    | Documentation page  |
+| `meeting-notes`| Meeting notes       |
+| `pm-spec`      | PM specs / PRD      |
+| `eng-runbook`  | Engineering runbooks|
 
 ### 🖼️ IMAGEN & VIDEO
-| Skill | Descripción |
-|-------|-------------|
-| `image-poster` | Poster image generation |
-| `video-shortform` | Short-form video |
-| `motion-frames` | Motion graphics frames |
+| Skill            | Descripción            |
+|-----------------|-----------------------|
+| `image-poster`   | Poster image generation|
+| `video-shortform`| Short-form video       |
+| `motion-frames`  | Motion graphics frames |
 
 ### 🔍 REVIEW & CRITIQUE
-| Skill | Descripción |
-|-------|-------------|
-| `critique` | Design critique |
-| `tweaks` | Design tweaks iteration |
+| Skill     | Descripción            |
+|----------|-----------------------|
+| `critique`| Design critique        |
+| `tweaks`  | Design tweaks iteration|
 
 ---
 

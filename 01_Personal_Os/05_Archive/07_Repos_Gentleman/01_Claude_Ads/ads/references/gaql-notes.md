@@ -6,12 +6,12 @@
 
 ## Known GAQL Field Incompatibilities (API v20+)
 
-| Resource                   | Incompatible Field                         | Error                                    | Fix                                                |
+| Resource                    | Incompatible Field                          | Error                                     | Fix                                                 |
 |----------------------------|--------------------------------------------|------------------------------------------|----------------------------------------------------|
-| `search_term_view`         | `campaign.status`, `ad_group.status`       | INVALID_ARGUMENT                         | Filter status in application layer, not GAQL       |
-| `search_term_view`         | `search_term_view.status`                  | INVALID_ARGUMENT                         | Field deprecated/removed in v20                    |
-| `asset_group_signal`       | `audience_signal`                          | UNRECOGNIZED_FIELD                       | Use `resource_name` instead                        |
-| DURING clause              | `LAST_90_DAYS`                             | INVALID_VALUE_WITH_DURING_OPERATOR       | Use `LAST_30_DAYS` for search terms                |
+| `search_term_view`          | `campaign.status`, `ad_group.status`        | INVALID_ARGUMENT                          | Filter status in application layer, not GAQL        |
+| `search_term_view`          | `search_term_view.status`                   | INVALID_ARGUMENT                          | Field deprecated/removed in v20                     |
+| `asset_group_signal`        | `audience_signal`                           | UNRECOGNIZED_FIELD                        | Use `resource_name` instead                         |
+| DURING clause               | `LAST_90_DAYS`                              | INVALID_VALUE_WITH_DURING_OPERATOR        | Use `LAST_30_DAYS` for search terms                 |
 
 ## Keyword Deduplication
 

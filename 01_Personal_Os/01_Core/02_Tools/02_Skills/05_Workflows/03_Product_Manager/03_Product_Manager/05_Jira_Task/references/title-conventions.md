@@ -8,24 +8,24 @@
 
 ## Types
 
-| Type                                          | Use For                                                                |
+| Type                                           | Use For                                                                 |
 |-----------------------------------------------|------------------------------------------------------------------------|
-| `[BUG]`                                       | Something broken that worked before                                    |
-| `[FEATURE]`                                   | New functionality                                                      |
-| `[ENHANCEMENT]`                               | Improvement to existing feature                                        |
-| `[REFACTOR]`                                  | Code restructure without behavior change                               |
-| `[DOCS]`                                      | Documentation only                                                     |
-| `[CHORE]`                                     | Maintenance, dependencies, CI/CD                                       |
+| `[BUG]`                                        | Something broken that worked before                                     |
+| `[FEATURE]`                                    | New functionality                                                       |
+| `[ENHANCEMENT]`                                | Improvement to existing feature                                         |
+| `[REFACTOR]`                                   | Code restructure without behavior change                                |
+| `[DOCS]`                                       | Documentation only                                                      |
+| `[CHORE]`                                      | Maintenance, dependencies, CI/CD                                        |
 
 ## Components
 
-| Component                                    | Use For                                        |
+| Component                                     | Use For                                         |
 |----------------------------------------------|------------------------------------------------|
-| `(API)`                                      | Backend only                                   |
-| `(UI)`                                       | Frontend only                                  |
-| `(SDK)`                                      | Prowler SDK only                               |
-| `(API + UI)`                                 | Both                                           |
-| `(Full Stack)`                               | All                                            |
+| `(API)`                                       | Backend only                                    |
+| `(UI)`                                        | Frontend only                                   |
+| `(SDK)`                                       | Prowler SDK only                                |
+| `(API + UI)`                                  | Both                                            |
+| `(Full Stack)`                                | All                                             |
 
 ## Examples
 
@@ -36,9 +36,9 @@
 
 ## Priority
 
-| Priority                                   | Criteria                                                           |
+| Priority                                    | Criteria                                                            |
 |--------------------------------------------|--------------------------------------------------------------------|
-| **Critical**                               | Production down, data loss, security                               |
-| **High**                                   | Blocks users, no workaround                                        |
-| **Medium**                                 | Has workaround, subset of users                                    |
-| **Low**                                    | Nice to have, cosmetic                                             |
+| **Critical**                                | Production down, data loss, security                                |
+| **High**                                    | Blocks users, no workaround                                         |
+| **Medium**                                  | Has workaround, subset of users                                     |
+| **Low**                                     | Nice to have, cosmetic                                              |

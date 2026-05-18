@@ -5,12 +5,12 @@
 ### Phase 1: Content Fetching
 
 **Tool Selection**:
-| URL Type | Tool | Command |
-|----------|------|---------|
-| YouTube | Transcript API | `yt-dlp --write-auto-sub` |
-| Web Docs | Firecrawl | `firecrawl_scrape` |
-| GitHub | GitHub API | `gh api repos/{owner}/{repo}` |
-| General | WebFetch Exa | `web_fetch_exa` |
+| URL Type  | Tool          | Command                      |
+|----------|--------------|-----------------------------|
+| YouTube   | Transcript API| `yt-dlp --write-auto-sub`    |
+| Web Docs  | Firecrawl     | `firecrawl_scrape`           |
+| GitHub    | GitHub API    | `gh api repos/{owner}/{repo}`|
+| General   | WebFetch Exa  | `web_fetch_exa`              |
 
 ### Phase 2: Content Extraction
 
@@ -50,16 +50,16 @@ Insights → Mega Prompt (synthesized insights)
 ### Phase 4: Engram Integration
 
 **Topic Key Assignment**:
-| Deliverable | Topic Key Pattern |
-|-------------|-------------------|
-| Resumen | `learning/{topic}/resumen` |
-| Prompts | `learning/{topic}/prompts` |
-| Demos | `learning/{topic}/demos` |
-| Herramientas | `learning/{topic}/tools` |
-| Insights | `learning/{topic}/insights` |
-| Posts | `learning/{topic}/social` |
-| Mega Prompt | `learning/{topic}/megaprompt` |
-| Ing. Inversa | `learning/{topic}/reverse` |
+| Deliverable  | Topic Key Pattern            |
+|-------------|-----------------------------|
+| Resumen      | `learning/{topic}/resumen`   |
+| Prompts      | `learning/{topic}/prompts`   |
+| Demos        | `learning/{topic}/demos`     |
+| Herramientas | `learning/{topic}/tools`     |
+| Insights     | `learning/{topic}/insights`  |
+| Posts        | `learning/{topic}/social`    |
+| Mega Prompt  | `learning/{topic}/megaprompt`|
+| Ing. Inversa | `learning/{topic}/reverse`   |
 
 **Save Pattern**:
 ```javascript

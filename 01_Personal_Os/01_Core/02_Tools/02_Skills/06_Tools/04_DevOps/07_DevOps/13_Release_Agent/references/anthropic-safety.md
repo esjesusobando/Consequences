@@ -7,11 +7,11 @@ Anthropic publica actualizaciones de su RSP cada 3-6 meses. La lógica central e
 
 ### Niveles ASL aplicados a releases
 
-| Nivel | Riesgo | Qué implica para un release |
-|---|---|---|
-| **ASL-2** | Baseline (todos los modelos actuales) | Clasificadores de input/output activados, monitoreo estándar |
-| **ASL-3** | Alto riesgo (CBRN, autonomía extendida) | Revisión externa obligatoria, aprobación formal antes del deploy |
-| **ASL-4+** | No implementado aún | Requiere industria completa, no unilateral |
+| Nivel     | Riesgo                                 | Qué implica para un release                                     |
+|----------|---------------------------------------|----------------------------------------------------------------|
+| **ASL-2** | Baseline (todos los modelos actuales)  | Clasificadores de input/output activados, monitoreo estándar    |
+| **ASL-3** | Alto riesgo (CBRN, autonomía extendida)| Revisión externa obligatoria, aprobación formal antes del deploy|
+| **ASL-4+**| No implementado aún                    | Requiere industria completa, no unilateral                      |
 
 ### Principio de proporcionalidad
 
@@ -54,11 +54,11 @@ skill-name/
 
 ### Campos frontmatter requeridos
 
-| Campo | Longitud máx | Descripción |
-|---|---|---|
-| `name` | 64 chars | minúsculas, guiones, sin espacios |
-| `description` | 1024 chars | qué hace + cuándo usarlo |
-| `allowed-tools` | — | herramientas sin confirmación |
+| Campo          | Longitud máx| Descripción                      |
+|---------------|------------|---------------------------------|
+| `name`         | 64 chars    | minúsculas, guiones, sin espacios|
+| `description`  | 1024 chars  | qué hace + cuándo usarlo         |
+| `allowed-tools`| —           | herramientas sin confirmación    |
 
 ---
 

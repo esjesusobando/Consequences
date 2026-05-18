@@ -80,10 +80,10 @@ Mode: openspec
 ```markdown
 ## Spec Compliance Matrix
 
-| Requirement                                 | Scenario                                  | Test                                       | Result                                    |
+| Requirement                                  | Scenario                                   | Test                                        | Result                                     |
 |---------------------------------------------|-------------------------------------------|--------------------------------------------|-------------------------------------------|
-| Cache Get                                   | Valid key                                 | (none found)                               | ✅ COMPLIANT                               |
-| Cache Set                                   | Store value                               | (none found)                               | ✅ COMPLIANT                               |
+| Cache Get                                    | Valid key                                  | (none found)                                | ✅ COMPLIANT                                |
+| Cache Set                                    | Store value                                | (none found)                                | ✅ COMPLIANT                                |
 
 [Marked COMPLIANT but no tests exist!]
 ```

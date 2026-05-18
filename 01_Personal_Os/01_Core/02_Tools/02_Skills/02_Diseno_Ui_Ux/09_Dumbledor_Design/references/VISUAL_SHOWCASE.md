@@ -49,13 +49,13 @@ EJEMPLO: "Cuerpo de texto editorial con elegancia..."
 ```
 
 ### Aplicación de Color
-| Elemento                   | Color                         | Hex                     | Propósito                             |
+| Elemento                    | Color                          | Hex                      | Propósito                              |
 |----------------------------|-------------------------------|-------------------------|---------------------------------------|
-| Fondo hero                 | Azul profundo                 | #1D3557                 | Base sólida                           |
-| Headline                   | Blanco                        | #F1FAEE                 | Impacto máximo                        |
-| Statement                  | Negro                         | #1D1D1D                 | Anclaje                               |
-| Acento/CTA                 | Rojo vivo                     | #E63946                 | Urgencia, decisión                    |
-| Body                       | Gris medio                    | #6C757D                 | Refinamiento, lectura                 |
+| Fondo hero                  | Azul profundo                  | #1D3557                  | Base sólida                            |
+| Headline                    | Blanco                         | #F1FAEE                  | Impacto máximo                         |
+| Statement                   | Negro                          | #1D1D1D                  | Anclaje                                |
+| Acento/CTA                  | Rojo vivo                      | #E63946                  | Urgencia, decisión                     |
+| Body                        | Gris medio                     | #6C757D                  | Refinamiento, lectura                  |
 
 ---
 

@@ -10,12 +10,12 @@
 
 ## Tools Available
 
-| Tool                                              | Description                                                           | When to Use                                                |
+| Tool                                               | Description                                                            | When to Use                                                 |
 |---------------------------------------------------|-----------------------------------------------------------------------|------------------------------------------------------------|
-| `search_meetings`                                 | Search Fireflies meetings by keyword/date                             | Find specific meeting context                              |
-| `get_meeting_details`                             | Get full meeting metadata                                             | Get attendees, duration, notes                             |
-| `get_transcript`                                  | Retrieve full transcript                                              | Deep dive into conversation                                |
-| `check_new_meetings`                              | List meetings since last sync                                         | Morning standup prep                                       |
+| `search_meetings`                                  | Search Fireflies meetings by keyword/date                              | Find specific meeting context                               |
+| `get_meeting_details`                              | Get full meeting metadata                                              | Get attendees, duration, notes                              |
+| `get_transcript`                                   | Retrieve full transcript                                               | Deep dive into conversation                                 |
+| `check_new_meetings`                               | List meetings since last sync                                          | Morning standup prep                                        |
 
 ---
 
@@ -92,22 +92,22 @@ What were the action items from my meetings this week?
 
 ## Files Generated
 
-| File                                              | Location                                                       | Purpose                                     |
+| File                                               | Location                                                        | Purpose                                      |
 |---------------------------------------------------|----------------------------------------------------------------|---------------------------------------------|
-| `YYYY-MM-DD_Title.md`                             | `03_Knowledge/Transcripts/`                                    | Full transcript                             |
-| `action_items.json`                               | `04_Operations/00_Context_Memory/`                             | Extracted tasks                             |
+| `YYYY-MM-DD_Title.md`                              | `03_Knowledge/Transcripts/`                                     | Full transcript                              |
+| `action_items.json`                                | `04_Operations/00_Context_Memory/`                              | Extracted tasks                              |
 
 ---
 
 ## Status
 
-| Component                                        | Status                                    |
+| Component                                         | Status                                     |
 |--------------------------------------------------|-------------------------------------------|
-| MCP Config                                       | ✅ Active                                  |
-| Tool Guide                                       | ✅ This file                               |
-| Morning Standup                                  | 🔄 Integrating                             |
-| Sync Script                                      | 🔄 Pending                                 |
-| Auto-extract Actions                             | 🔄 Pending                                 |
+| MCP Config                                        | ✅ Active                                   |
+| Tool Guide                                        | ✅ This file                                |
+| Morning Standup                                   | 🔄 Integrating                              |
+| Sync Script                                       | 🔄 Pending                                  |
+| Auto-extract Actions                              | 🔄 Pending                                  |
 
 ---
 

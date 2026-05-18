@@ -87,13 +87,13 @@ y aprende SOLO cuándo es comfortable para humanos
 
 ## Conceptos para Recordar
 
-| Concepto | Definición Simple |
-|----------|-------------------|
-| IA | Máquinas que pueden pensar/hacer decisiones |
-| LLM | Modelo entrenado con millones de textos |
-| Deep Learning | Redes neuronales con muchas capas |
-| IA Generativa | IA que CREA contenido nuevo |
-| Multimodelo | IA que usa texto + imagen + audio |
+| Concepto     | Definición Simple                          |
+|-------------|-------------------------------------------|
+| IA           | Máquinas que pueden pensar/hacer decisiones|
+| LLM          | Modelo entrenado con millones de textos    |
+| Deep Learning| Redes neuronales con muchas capas          |
+| IA Generativa| IA que CREA contenido nuevo                |
+| Multimodelo  | IA que usa texto + imagen + audio          |
 
 ---
 

@@ -335,18 +335,18 @@ Allocation in 2026 is governed by **Time-to-Profitability** (cash flow cycles) a
 
 ### 4.1 Platform Selection Matrix (2026)
 
-| Business Type | Recommended Split (2026) | Min. Viable Budget | Primary KPI | Time to Profit |
-|---|---|---|---|---|
-| **SaaS (B2B)** | LinkedIn (40%), Google Search (30%), Meta (20%), Other (10%) | $5,000/mo | Pipeline Value / SQL Cost | 3--6 Months |
-| **E-commerce** | Meta (50%), Google PMax (30%), TikTok (15%), Email (5%) | $3,000/mo | MER / ROAS | 0--2 Months |
-| **Local Service** | Google LSA/Search (60%), Meta (30%), Bing (10%) | $1,500/mo | Cost Per Lead (CPL) | 1 Month |
-| **B2B Enterprise** | LinkedIn (60%), Google Search (20%), ABM Display (20%) | $10,000/mo | Cost Per Account | 6--12 Months |
-| **Info Products** | YouTube (40%), Meta (40%), Email (20%) | $2,000/mo | ROAS / Funnel ROI | 1--3 Months |
-| **Mobile App** | Apple Search Ads (30%), Google App (30%), Meta/TikTok (40%) | $5,000/mo | CPI / LTV | 3--6 Months |
-| **Real Estate** | Meta Lead Forms (50%), Google Search (40%), LinkedIn (10%) | $2,500/mo | CPL / Appt Set | 2--4 Months |
-| **Healthcare** | Google Search (70%), Meta Remarketing (30%) | $4,000/mo | CPL / Patient Value | 2--5 Months |
-| **Finance** | Google Search (50%), Affiliate/Native (30%), LinkedIn (20%) | $8,000/mo | CAC / Deposit Value | 4--8 Months |
-| **Agency** | LinkedIn (50%), Meta (30%), Google (20%) | $1,500/mo | CPL / MQL | 1--3 Months |
+| Business Type     | Recommended Split (2026)                                    | Min. Viable Budget| Primary KPI              | Time to Profit|
+|------------------|------------------------------------------------------------|------------------|-------------------------|--------------|
+| **SaaS (B2B)**    | LinkedIn (40%), Google Search (30%), Meta (20%), Other (10%)| $5,000/mo         | Pipeline Value / SQL Cost| 3--6 Months   |
+| **E-commerce**    | Meta (50%), Google PMax (30%), TikTok (15%), Email (5%)     | $3,000/mo         | MER / ROAS               | 0--2 Months   |
+| **Local Service** | Google LSA/Search (60%), Meta (30%), Bing (10%)             | $1,500/mo         | Cost Per Lead (CPL)      | 1 Month       |
+| **B2B Enterprise**| LinkedIn (60%), Google Search (20%), ABM Display (20%)      | $10,000/mo        | Cost Per Account         | 6--12 Months  |
+| **Info Products** | YouTube (40%), Meta (40%), Email (20%)                      | $2,000/mo         | ROAS / Funnel ROI        | 1--3 Months   |
+| **Mobile App**    | Apple Search Ads (30%), Google App (30%), Meta/TikTok (40%) | $5,000/mo         | CPI / LTV                | 3--6 Months   |
+| **Real Estate**   | Meta Lead Forms (50%), Google Search (40%), LinkedIn (10%)  | $2,500/mo         | CPL / Appt Set           | 2--4 Months   |
+| **Healthcare**    | Google Search (70%), Meta Remarketing (30%)                 | $4,000/mo         | CPL / Patient Value      | 2--5 Months   |
+| **Finance**       | Google Search (50%), Affiliate/Native (30%), LinkedIn (20%) | $8,000/mo         | CAC / Deposit Value      | 4--8 Months   |
+| **Agency**        | LinkedIn (50%), Meta (30%), Google (20%)                    | $1,500/mo         | CPL / MQL                | 1--3 Months   |
 
 Sources:<sup>15</sup>
 

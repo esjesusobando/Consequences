@@ -14,51 +14,51 @@ When multiple axes combine, their descriptors merge into a cohesive style string
 
 ### 1. formal_casual
 
-| Range             | Score         | Visual Descriptors                                              |
+| Range              | Score          | Visual Descriptors                                               |
 |-------------------|---------------|-----------------------------------------------------------------|
-| Low               | 1-3           | Clean lines, symmetrical, muted palette, serif type             |
-| Mid               | 4-6           | Balanced layout, neutral tones, modern sans-serif               |
-| High              | 7-10          | Organic shapes, warm palette, hand-drawn elements               |
+| Low                | 1-3            | Clean lines, symmetrical, muted palette, serif type              |
+| Mid                | 4-6            | Balanced layout, neutral tones, modern sans-serif                |
+| High               | 7-10           | Organic shapes, warm palette, hand-drawn elements                |
 
 ### 2. rational_emotional
 
-| Range             | Score         | Visual Descriptors                                              |
+| Range              | Score          | Visual Descriptors                                               |
 |-------------------|---------------|-----------------------------------------------------------------|
-| Low               | 1-3           | Data overlays, charts, structured grids, cool tones             |
-| Mid               | 4-6           | Infographic style, balanced data and imagery                    |
-| High              | 7-10          | Expressive color, human faces, dynamic motion blur              |
+| Low                | 1-3            | Data overlays, charts, structured grids, cool tones              |
+| Mid                | 4-6            | Infographic style, balanced data and imagery                     |
+| High               | 7-10           | Expressive color, human faces, dynamic motion blur               |
 
 ### 3. bold_subtle
 
-| Range             | Score         | Visual Descriptors                                              |
+| Range              | Score          | Visual Descriptors                                               |
 |-------------------|---------------|-----------------------------------------------------------------|
-| Low               | 1-3           | Soft focus, pastel tones, whitespace, thin strokes              |
-| Mid               | 4-6           | Medium contrast, standard weight type, clear hierarchy          |
-| High              | 7-10          | High contrast, saturated color, heavy type, full bleed          |
+| Low                | 1-3            | Soft focus, pastel tones, whitespace, thin strokes               |
+| Mid                | 4-6            | Medium contrast, standard weight type, clear hierarchy           |
+| High               | 7-10           | High contrast, saturated color, heavy type, full bleed           |
 
 ### 4. traditional_innovative
 
-| Range             | Score         | Visual Descriptors                                              |
+| Range              | Score          | Visual Descriptors                                               |
 |-------------------|---------------|-----------------------------------------------------------------|
-| Low               | 1-3           | Classic compositions, heritage textures, earth tones            |
-| Mid               | 4-6           | Contemporary layouts, balanced modern and classic cues          |
-| High              | 7-10          | Futuristic gradients, 3D renders, neon accents, glass           |
+| Low                | 1-3            | Classic compositions, heritage textures, earth tones             |
+| Mid                | 4-6            | Contemporary layouts, balanced modern and classic cues           |
+| High               | 7-10           | Futuristic gradients, 3D renders, neon accents, glass            |
 
 ### 5. friendly_authoritative
 
-| Range             | Score         | Visual Descriptors                                              |
+| Range              | Score          | Visual Descriptors                                               |
 |-------------------|---------------|-----------------------------------------------------------------|
-| Low               | 1-3           | Rounded shapes, illustration style, bright accents              |
-| Mid               | 4-6           | Mixed photography and illustration, approachable layout         |
-| High              | 7-10          | Editorial photography, dark backgrounds, gold accents           |
+| Low                | 1-3            | Rounded shapes, illustration style, bright accents               |
+| Mid                | 4-6            | Mixed photography and illustration, approachable layout          |
+| High               | 7-10           | Editorial photography, dark backgrounds, gold accents            |
 
 ### 6. playful_serious
 
-| Range             | Score         | Visual Descriptors                                              |
+| Range              | Score          | Visual Descriptors                                               |
 |-------------------|---------------|-----------------------------------------------------------------|
-| Low               | 1-3           | Whimsical patterns, cartoon elements, candy colors              |
-| Mid               | 4-6           | Lifestyle photography, natural color grading                    |
-| High              | 7-10          | Cinematic lighting, desaturated palette, minimal decor          |
+| Low                | 1-3            | Whimsical patterns, cartoon elements, candy colors               |
+| Mid                | 4-6            | Lifestyle photography, natural color grading                     |
+| High               | 7-10           | Cinematic lighting, desaturated palette, minimal decor           |
 
 ## How to Apply
 

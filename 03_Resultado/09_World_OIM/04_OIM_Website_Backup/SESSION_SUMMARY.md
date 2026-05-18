@@ -13,12 +13,12 @@ Preparar el sitio web de OIM (Office Installations Mayen) para deploy en Hosting
 
 ## 📋 Diagnóstico Inicial
 
-| Aspecto                                | Estado                                                          |
+| Aspecto                                 | Estado                                                           |
 |----------------------------------------|-----------------------------------------------------------------|
-| **Stack**                              | Next.js 16.2.2 + React 19.2.4 + Tailwind CSS 4                  |
-| **Rendering original**                 | Server-side (sitemaps dinámicos, Server Actions)                |
-| **Deploy target original**             | Vercel (`.vercel/` presente)                                    |
-| **Hostinger**                          | No tiene soporte nativo para Next.js Server Actions             |
+| **Stack**                               | Next.js 16.2.2 + React 19.2.4 + Tailwind CSS 4                   |
+| **Rendering original**                  | Server-side (sitemaps dinámicos, Server Actions)                 |
+| **Deploy target original**              | Vercel (`.vercel/` presente)                                     |
+| **Hostinger**                           | No tiene soporte nativo para Next.js Server Actions              |
 
 ### Problema identificado
 
@@ -122,29 +122,29 @@ out/
 
 ## 📁 Archivos Creados/Modificados
 
-| Archivo                                      | Cambio                                                        |
+| Archivo                                       | Cambio                                                         |
 |----------------------------------------------|---------------------------------------------------------------|
-| `next.config.ts`                             | `output: 'export'` + `images.unoptimized: true`               |
-| `src/app/actions.ts`                         | Removido `'use server'`, validación Zod como util             |
-| `src/app/sitemap.ts`                         | ELIMINADO → `public/sitemap.xml`                              |
-| `src/app/robots.ts`                          | ELIMINADO → `public/robots.txt`                               |
-| `src/components/ContactForm.tsx`             | EmailJS integration                                           |
-| `package.json`                               | `@emailjs/browser` agregado                                   |
-| `public/sitemap.xml`                         | NUEVO (static)                                                |
-| `public/robots.txt`                          | NUEVO (static)                                                |
-| `HOSTING_DEPLOY_GUIDE.md`                    | NUEVO (deployment guide completo)                             |
+| `next.config.ts`                              | `output: 'export'` + `images.unoptimized: true`                |
+| `src/app/actions.ts`                          | Removido `'use server'`, validación Zod como util              |
+| `src/app/sitemap.ts`                          | ELIMINADO → `public/sitemap.xml`                               |
+| `src/app/robots.ts`                           | ELIMINADO → `public/robots.txt`                                |
+| `src/components/ContactForm.tsx`              | EmailJS integration                                            |
+| `package.json`                                | `@emailjs/browser` agregado                                    |
+| `public/sitemap.xml`                          | NUEVO (static)                                                 |
+| `public/robots.txt`                           | NUEVO (static)                                                 |
+| `HOSTING_DEPLOY_GUIDE.md`                     | NUEVO (deployment guide completo)                              |
 
 ---
 
 ## 📌 Pendientes para Production
 
-| #               | Tarea                             | Prioridad              | Notas                                                   |
+| #                | Tarea                              | Prioridad               | Notas                                                    |
 |-----------------|-----------------------------------|------------------------|---------------------------------------------------------|
-| 1               | Configurar EmailJS                | 🔴 Alta                 | Crear cuenta en emailjs.com, obtener 3 keys             |
-| 2               | Dominio                           | 🔴 Alta                 | ¿Comprado en Hostinger o existente?                     |
-| 3               | 3 fotos faltantes                 | 🟡 Media                | About, Gallery, Service Area sections                   |
-| 4               | Google Maps verificar             | 🟡 Media                | Embed URL correcta en ContactForm.tsx                   |
-| 5               | Google Search Console             | 🟢 Baja                 | Post-deploy: agregar sitemap                            |
+| 1                | Configurar EmailJS                 | 🔴 Alta                  | Crear cuenta en emailjs.com, obtener 3 keys              |
+| 2                | Dominio                            | 🔴 Alta                  | ¿Comprado en Hostinger o existente?                      |
+| 3                | 3 fotos faltantes                  | 🟡 Media                 | About, Gallery, Service Area sections                    |
+| 4                | Google Maps verificar              | 🟡 Media                 | Embed URL correcta en ContactForm.tsx                    |
+| 5                | Google Search Console              | 🟢 Baja                  | Post-deploy: agregar sitemap                             |
 
 ---
 
@@ -174,12 +174,12 @@ b7d6258 docs: add HOSTING_DEPLOY_GUIDE.md with step-by-step Hostinger deployment
 
 ## 🔑 Decisiones de Arquitectura
 
-| Decisión                                        | Razón                                                                    |
+| Decisión                                         | Razón                                                                     |
 |-------------------------------------------------|--------------------------------------------------------------------------|
-| Static Export en vez de Node.js App             | Hostinger LiteSpeed no soporta bien Next.js server                       |
-| EmailJS en vez de server-side email             | Elimina necesidad de servidor para form                                  |
-| Static sitemap/robots.txt                       | Next.js genera estos dinámicamente — incompatible con static             |
-| `images: { unoptimized: true }`                 | Next.js Image optimization requiere servidor                             |
+| Static Export en vez de Node.js App              | Hostinger LiteSpeed no soporta bien Next.js server                        |
+| EmailJS en vez de server-side email              | Elimina necesidad de servidor para form                                   |
+| Static sitemap/robots.txt                        | Next.js genera estos dinámicamente — incompatible con static              |
+| `images: { unoptimized: true }`                  | Next.js Image optimization requiere servidor                              |
 
 ---
 

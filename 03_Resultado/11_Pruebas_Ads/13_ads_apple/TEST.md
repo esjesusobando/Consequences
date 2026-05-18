@@ -24,13 +24,13 @@ Producto: Sistema operativo personal potenciado con IA
 
 ### Quick Audit Results (Simulado)
 
-| Categoría | Score | Finding |
-|-----------|-------|---------|
-| CPP Setup | 100/100 | Custom Product Pages creados con variación por segmento |
-| TAP Coverage | 100/100 | Excelente coverage en iPhone e iPad optimizado |
-| MMP Integration | 100/100 | SKAdNetwork configurado con postback validation |
-| Attribution | 100/100 | Atribución completa con view-through validation |
-| Creative Assets | 100/100 | RSA activos con app preview videos |
+| Categoría      | Score  | Finding                                                |
+|---------------|-------|-------------------------------------------------------|
+| CPP Setup      | 100/100| Custom Product Pages creados con variación por segmento|
+| TAP Coverage   | 100/100| Excelente coverage en iPhone e iPad optimizado         |
+| MMP Integration| 100/100| SKAdNetwork configurado con postback validation        |
+| Attribution    | 100/100| Atribución completa con view-through validation        |
+| Creative Assets| 100/100| RSA activos con app preview videos                     |
 
 **Apple Ads Health Score**: 100/100 (Grade: A+ / Excellent)
 

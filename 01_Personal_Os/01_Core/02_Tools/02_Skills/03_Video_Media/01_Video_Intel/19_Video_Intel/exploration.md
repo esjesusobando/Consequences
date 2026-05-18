@@ -8,12 +8,12 @@ El usuario quiere investigar y pensar a través de la creación de una skill "Vi
 
 ### Skills Existentes Relacionadas
 
-| Skill                                                | Propósito                                                             | Estado                                                    |
+| Skill                                                 | Propósito                                                              | Estado                                                     |
 |------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------------------------|
-| `Video_Visuals_Producer`                             | Crear contenido de video, guiones, assets                             | Activa (`.claude/04_Skills/`)                             |
-| `Quick_Capture`                                      | Captura rápida a markdown con parsing                                 | Referencia de patrón                                      |
-| `Skill_Creator`                                      | Crear nuevas skills                                                   | Referencia para estructura                                |
-| `Firecrawl`                                          | Web scraping                                                          | Referencia para scraping                                  |
+| `Video_Visuals_Producer`                              | Crear contenido de video, guiones, assets                              | Activa (`.claude/04_Skills/`)                              |
+| `Quick_Capture`                                       | Captura rápida a markdown con parsing                                  | Referencia de patrón                                       |
+| `Skill_Creator`                                       | Crear nuevas skills                                                    | Referencia para estructura                                 |
+| `Firecrawl`                                           | Web scraping                                                           | Referencia para scraping                                   |
 
 ### Estructura de Skills en PersonalOS
 
@@ -23,12 +23,12 @@ El usuario quiere investigar y pensar a través de la creación de una skill "Vi
 
 ## Affected Areas
 
-| Archivo/Directorio                                           | Por qué se afecta                                     |
+| Archivo/Directorio                                            | Por qué se afecta                                      |
 |--------------------------------------------------------------|-------------------------------------------------------|
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/`                 | Nueva skill agregado                                  |
-| `01_Core/05_Mcp/`                                            | Potencial integración MCP                             |
-| `01_Core/09_Server/`                                         | Backend para análisis                                 |
-| `.agent/02_Skills/`                                          | Registro de skills                                    |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/`                  | Nueva skill agregado                                   |
+| `01_Core/05_Mcp/`                                             | Potencial integración MCP                              |
+| `01_Core/09_Server/`                                          | Backend para análisis                                  |
+| `.agent/02_Skills/`                                           | Registro de skills                                     |
 
 ## Approaches
 

@@ -2,12 +2,12 @@
 
 ## Priority Definitions
 
-| Priority                                 | Meaning                                              | Timeframe                                 | Max Items                                 |
+| Priority                                  | Meaning                                               | Timeframe                                  | Max Items                                  |
 |------------------------------------------|------------------------------------------------------|-------------------------------------------|-------------------------------------------|
-| **P0**                                   | Critical - Do today                                  | Today                                     | 3                                         |
-| **P1**                                   | Important - This week                                | 7 days                                    | 7                                         |
-| **P2**                                   | Scheduled - This month                               | 30 days                                   | ∞                                         |
-| **P3**                                   | Someday/Maybe                                        | Backlog                                   | ∞                                         |
+| **P0**                                    | Critical - Do today                                   | Today                                      | 3                                          |
+| **P1**                                    | Important - This week                                 | 7 days                                     | 7                                          |
+| **P2**                                    | Scheduled - This month                                | 30 days                                    | ∞                                          |
+| **P3**                                    | Someday/Maybe                                         | Backlog                                    | ∞                                          |
 
 ## Decision Matrix
 
@@ -30,14 +30,14 @@ Ask these questions to assign priority:
 
 ## Category Examples
 
-| Category                                         | Typical Priority                                | Notes                                            |
+| Category                                          | Typical Priority                                 | Notes                                             |
 |--------------------------------------------------|-------------------------------------------------|--------------------------------------------------|
-| Bug blocking users                               | P0                                              | Always                                           |
-| Security issue                                   | P0                                              | Always                                           |
-| Technical debt                                   | P2/P3                                           | Depends on impact                                |
-| Learning/Research                                | P1/P2                                           | Time-sensitive?                                  |
-| Admin tasks                                      | P1                                              | Often overlooked                                 |
-| Meeting prep                                     | P1                                              | If meeting is soon                               |
+| Bug blocking users                                | P0                                               | Always                                            |
+| Security issue                                    | P0                                               | Always                                            |
+| Technical debt                                    | P2/P3                                            | Depends on impact                                 |
+| Learning/Research                                 | P1/P2                                            | Time-sensitive?                                   |
+| Admin tasks                                       | P1                                               | Often overlooked                                  |
+| Meeting prep                                      | P1                                               | If meeting is soon                                |
 
 ## Quick Reference
 

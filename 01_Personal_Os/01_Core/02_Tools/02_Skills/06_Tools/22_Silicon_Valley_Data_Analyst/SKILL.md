@@ -231,10 +231,10 @@ def predict_outcome(df: pd.DataFrame,
 [One sentence: What did we find and what should we do?]
 
 ### Key Metrics
-| Metric                                     | Current                                   | vs Last Period                                   | Target                                   | Status                                   |
+| Metric                                      | Current                                    | vs Last Period                                    | Target                                    | Status                                    |
 |--------------------------------------------|-------------------------------------------|--------------------------------------------------|------------------------------------------|------------------------------------------|
-| [Metric 1]                                 | [Value]                                   | [+X%]                                            | [Target]                                 | ✅/⚠️/❌                                   |
-| [Metric 2]                                 | [Value]                                   | [+X%]                                            | [Target]                                 | ✅/⚠️/❌                                   |
+| [Metric 1]                                  | [Value]                                    | [+X%]                                             | [Target]                                  | ✅/⚠️/❌                                    |
+| [Metric 2]                                  | [Value]                                    | [+X%]                                             | [Target]                                  | ✅/⚠️/❌                                    |
 
 ### What Worked
 - [Insight 1] — [Impact: $X or X%]
@@ -269,11 +269,11 @@ def predict_outcome(df: pd.DataFrame,
 - **Trend**: [Improving/Stable/Declining]
 
 ### Segmentation Insights
-| Segment                                     | Retention                                   | Revenue/User                                   | Notes                                   |
+| Segment                                      | Retention                                    | Revenue/User                                    | Notes                                    |
 |---------------------------------------------|---------------------------------------------|------------------------------------------------|-----------------------------------------|
-| [Segment A]                                 | 45%                                         | $X                                             | [Note]                                  |
-| [Segment B]                                 | 32%                                         | $X                                             | [Note]                                  |
-| [Segment C]                                 | 18%                                         | $X                                             | [Note]                                  |
+| [Segment A]                                  | 45%                                          | $X                                              | [Note]                                   |
+| [Segment B]                                  | 32%                                          | $X                                              | [Note]                                   |
+| [Segment C]                                  | 18%                                          | $X                                              | [Note]                                   |
 
 ### Action Items
 - [ ] Target [Segment] for [Campaign]
@@ -293,10 +293,10 @@ def predict_outcome(df: pd.DataFrame,
 - **Statistical Confidence**: [X]%
 
 ### Results
-| Metric                                     | Control                                   | Variant                                   | Lift                                   | p-value                                   | Significant?                                    |
+| Metric                                      | Control                                    | Variant                                    | Lift                                    | p-value                                    | Significant?                                     |
 |--------------------------------------------|-------------------------------------------|-------------------------------------------|----------------------------------------|-------------------------------------------|-------------------------------------------------|
-| [Metric 1]                                 | [X]%                                      | [X]%                                      | +[X]%                                  | 0.0X                                      | ✅ Yes                                           |
-| [Metric 2]                                 | [X]%                                      | [X]%                                      | +[X]%                                  | 0.XX                                      | ❌ No                                            |
+| [Metric 1]                                  | [X]%                                       | [X]%                                       | +[X]%                                   | 0.0X                                       | ✅ Yes                                            |
+| [Metric 2]                                  | [X]%                                       | [X]%                                       | +[X]%                                   | 0.XX                                       | ❌ No                                             |
 
 ### Recommendation
 [Ship / Don't Ship / Need More Data]
@@ -364,14 +364,14 @@ Add comments explaining the "why", not just the "what".
 
 ## Common Pitfalls
 
-| Pitfall                                                 | Why It Fails                                                      | Fix                                                      |
+| Pitfall                                                  | Why It Fails                                                       | Fix                                                       |
 |---------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------|
-| Aggregates only                                         | Hides outliers, obscures patterns                                 | Always segment                                           |
-| No baseline                                             | "10% growth" means nothing                                        | Compare to prior period                                  |
-| Ignoring sample size                                    | n=5 is not data                                                   | Require n>30 minimum                                     |
-| No statistical test                                     | "Looks different" isn't proof                                     | Run t-test or chi-square                                 |
-| Analysis without action                                 | Waste of time                                                     | End with recommendations                                 |
-| Overcomplicating                                        | Decision paralysis                                                | One insight > 50 tables                                  |
+| Aggregates only                                          | Hides outliers, obscures patterns                                  | Always segment                                            |
+| No baseline                                              | "10% growth" means nothing                                         | Compare to prior period                                   |
+| Ignoring sample size                                     | n=5 is not data                                                    | Require n>30 minimum                                      |
+| No statistical test                                      | "Looks different" isn't proof                                      | Run t-test or chi-square                                  |
+| Analysis without action                                  | Waste of time                                                      | End with recommendations                                  |
+| Overcomplicating                                         | Decision paralysis                                                 | One insight > 50 tables                                   |
 
 ---
 

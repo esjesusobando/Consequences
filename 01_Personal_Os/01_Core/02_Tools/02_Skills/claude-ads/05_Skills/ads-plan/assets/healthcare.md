@@ -22,13 +22,13 @@
 - Meta CAPI / Google Enhanced Conversions: ensure no PHI transmitted
 
 ### Platform-Specific Restrictions
-| Platform | Restriction | Certification |
-|----------|------------|---------------|
-| Google | Healthcare & medicines policy, LegitScript for rehab/pharmacy | LegitScript required for addiction treatment |
-| Meta | Restricted targeting for health conditions, no symptom targeting | N/A but policy-reviewed |
-| LinkedIn | Less restrictive, B2B healthcare marketing allowed | N/A |
-| TikTok | Health misinformation policy, no prescription drug ads | N/A |
-| Microsoft | Similar to Google, LegitScript for pharmacy | LegitScript required |
+| Platform  | Restriction                                                     | Certification                               |
+|----------|----------------------------------------------------------------|--------------------------------------------|
+| Google    | Healthcare & medicines policy, LegitScript for rehab/pharmacy   | LegitScript required for addiction treatment|
+| Meta      | Restricted targeting for health conditions, no symptom targeting| N/A but policy-reviewed                     |
+| LinkedIn  | Less restrictive, B2B healthcare marketing allowed              | N/A                                         |
+| TikTok    | Health misinformation policy, no prescription drug ads          | N/A                                         |
+| Microsoft | Similar to Google, LegitScript for pharmacy                     | LegitScript required                        |
 
 ### LegitScript Certification
 - **Required for**: addiction treatment, online pharmacy, telehealth prescribing
@@ -38,12 +38,12 @@
 
 ## Recommended Platform Mix
 
-| Platform | Role | Budget % | Why |
-|----------|------|----------|-----|
-| Google Search | Primary | 50-60% | High-intent health queries, local search |
-| Meta (FB/IG) | Secondary | 20-25% | Awareness, community building, retargeting |
-| YouTube | Secondary | 10-15% | Patient education, doctor introductions, facility tours |
-| Microsoft | Testing | 5-10% | Google import, older demographic (45-64: 38% of Bing) |
+| Platform     | Role     | Budget %  | Why                                                    |
+|-------------|---------|----------|-------------------------------------------------------|
+| Google Search| Primary  | 50-60%    | High-intent health queries, local search               |
+| Meta (FB/IG) | Secondary| 20-25%    | Awareness, community building, retargeting             |
+| YouTube      | Secondary| 10-15%    | Patient education, doctor introductions, facility tours|
+| Microsoft    | Testing  | 5-10%     | Google import, older demographic (45-64: 38% of Bing)  |
 
 ## Campaign Architecture
 
@@ -96,13 +96,13 @@ Account; Meta
 - **Insurance/cost transparency**: "We accept [insurance]", "Affordable payment plans"
 
 ### Compliance-Safe Creative Guidelines
-| Do | Don't |
-|----|-------|
-| Show facility and equipment | Guarantee specific medical outcomes |
-| Feature consenting patient testimonials | Use before/after for medical procedures (platform-specific) |
-| Educate about conditions generally | Diagnose or provide medical advice |
-| Mention accepted insurance plans | Target by specific health condition |
-| Highlight board certifications | Make superiority claims without evidence |
+| Do                                     | Don't                                                      |
+|---------------------------------------|-----------------------------------------------------------|
+| Show facility and equipment            | Guarantee specific medical outcomes                        |
+| Feature consenting patient testimonials| Use before/after for medical procedures (platform-specific)|
+| Educate about conditions generally     | Diagnose or provide medical advice                         |
+| Mention accepted insurance plans       | Target by specific health condition                        |
+| Highlight board certifications         | Make superiority claims without evidence                   |
 
 ### Ad Copy Framework
 - **Headline**: [Specialty/Condition] + [Location] + [Differentiator]
@@ -131,45 +131,45 @@ Account; Meta
 
 ## Budget Guidelines
 
-| Metric | Healthcare Benchmark |
-|--------|---------------------|
-| Google CPC | $10-$40+ (specialty dependent) |
-| Google CTR | 4.90% |
-| Google CVR | 3.10% |
-| Meta CPM | $28-$36.82 |
-| Meta CPL | $15-$50 (appointment request) |
-| Cost per new patient | $100-$500 (specialty dependent) |
-| Patient LTV | $1,000-$10,000+ |
-| Min monthly budget | $4,000+ (Google-first approach) |
+| Metric              | Healthcare Benchmark           |
+|--------------------|-------------------------------|
+| Google CPC          | $10-$40+ (specialty dependent) |
+| Google CTR          | 4.90%                          |
+| Google CVR          | 3.10%                          |
+| Meta CPM            | $28-$36.82                     |
+| Meta CPL            | $15-$50 (appointment request)  |
+| Cost per new patient| $100-$500 (specialty dependent)|
+| Patient LTV         | $1,000-$10,000+                |
+| Min monthly budget  | $4,000+ (Google-first approach)|
 
 ### Budget by Practice Type
-| Practice Type | Monthly Budget | Notes |
-|-------------|---------------|-------|
-| Single-provider practice | $2,000-$5,000 | Google Search focused |
-| Multi-location group | $5,000-$20,000 | Per-location campaigns |
-| Hospital system | $20,000-$100,000+ | Service line campaigns |
-| Telehealth | $5,000-$15,000 | National Google + Meta |
-| Dental | $2,000-$5,000 | Lower CPC ($7.85), higher CVR |
+| Practice Type           | Monthly Budget   | Notes                        |
+|------------------------|-----------------|-----------------------------|
+| Single-provider practice| $2,000-$5,000    | Google Search focused        |
+| Multi-location group    | $5,000-$20,000   | Per-location campaigns       |
+| Hospital system         | $20,000-$100,000+| Service line campaigns       |
+| Telehealth              | $5,000-$15,000   | National Google + Meta       |
+| Dental                  | $2,000-$5,000    | Lower CPC ($7.85), higher CVR|
 
 ## Bidding Strategy Selection
 
-| Platform | Monthly Conversions | Recommended Strategy |
-|----------|--------------------|--------------------|
-| Google | <15 | Maximize Clicks (cap CPC) |
-| Google | 15-29 | Maximize Conversions |
-| Google | 30+ | Target CPA (recommended for healthcare) |
-| Meta | Default | Lowest Cost |
-| Meta | Efficiency priority | Cost Cap at target CPL |
+| Platform  | Monthly Conversions | Recommended Strategy                   |
+|----------|--------------------|---------------------------------------|
+| Google    | <15                 | Maximize Clicks (cap CPC)              |
+| Google    | 15-29               | Maximize Conversions                   |
+| Google    | 30+                 | Target CPA (recommended for healthcare)|
+| Meta      | Default             | Lowest Cost                            |
+| Meta      | Efficiency priority | Cost Cap at target CPL                 |
 
 ## KPI Targets
 
-| Metric | Month 1 | Month 3 | Month 6 |
-|--------|---------|---------|---------|
-| CPL (appointment) | Baseline | Target +20% | Target |
-| Cost per New Patient | Track | Baseline | Optimize |
-| Call Volume | Track | +20% | +40% |
-| Show Rate (appt → visit) | Track | 70%+ | 80%+ |
-| Patient Acquisition Cost | Track | <20% of patient LTV | <15% of patient LTV |
+| Metric                  | Month 1  | Month 3            | Month 6            |
+|------------------------|---------|-------------------|-------------------|
+| CPL (appointment)       | Baseline | Target +20%        | Target             |
+| Cost per New Patient    | Track    | Baseline           | Optimize           |
+| Call Volume             | Track    | +20%               | +40%               |
+| Show Rate (appt → visit)| Track    | 70%+               | 80%+               |
+| Patient Acquisition Cost| Track    | <20% of patient LTV| <15% of patient LTV|
 
 ## Common Pitfalls
 

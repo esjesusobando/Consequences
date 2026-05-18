@@ -14,10 +14,10 @@ Meta and TikTok.
 
 ## Single Image Ad Specs
 
-| Ratio                    | Dimensions        | Priority                 | Notes                                    |
+| Ratio                     | Dimensions         | Priority                  | Notes                                     |
 |--------------------------|-------------------|--------------------------|------------------------------------------|
-| 1:1 (square)             | 1080×1080         | **Primary target**       | Better engagement than landscape         |
-| 1.91:1 (landscape)       | 1200×628          | Secondary                | Legacy placements, desktop sidebar       |
+| 1:1 (square)              | 1080×1080          | **Primary target**        | Better engagement than landscape          |
+| 1.91:1 (landscape)        | 1200×628           | Secondary                 | Legacy placements, desktop sidebar        |
 
 **File requirements:** PNG or JPG, max 5MB.
 
@@ -29,12 +29,12 @@ on mobile, increasing scroll-stop rate.
 
 ## Copy Limits
 
-| Component         | Recommended           | Max                    |
+| Component          | Recommended            | Max                     |
 |-------------------|-----------------------|------------------------|
-| Intro text        | 150 chars             | 600 chars              |
-| Headline          | 70 chars              | 200 chars              |
-| Description       | 100 chars             | : (desktop only)       |
-| CTA button        | Predefined list       | N/A                    |
+| Intro text         | 150 chars              | 600 chars               |
+| Headline           | 70 chars               | 200 chars               |
+| Description        | 100 chars              | : (desktop only)        |
+| CTA button         | Predefined list        | N/A                     |
 
 **Copy generation rule:** Write intro text ≤150 chars (truncated on mobile beyond this).
 Headline ≤70 chars. The description only shows on desktop; treat as supplementary.
@@ -43,13 +43,13 @@ Headline ≤70 chars. The description only shows on desktop; treat as supplement
 
 ## Video Ad Specs
 
-| Component           | Requirement                                              |
+| Component            | Requirement                                               |
 |---------------------|----------------------------------------------------------|
-| Format              | MP4 (required)                                           |
-| File size           | 75KB - 500MB                                             |
-| Duration            | 3s - 30min (rec 15-30s)                                  |
-| Resolution          | 360p min; 720p+ recommended                              |
-| Aspect ratios       | 16:9 (landscape), 1:1 (square), 9:16 (mobile only)       |
+| Format               | MP4 (required)                                            |
+| File size            | 75KB - 500MB                                              |
+| Duration             | 3s - 30min (rec 15-30s)                                   |
+| Resolution           | 360p min; 720p+ recommended                               |
+| Aspect ratios        | 16:9 (landscape), 1:1 (square), 9:16 (mobile only)        |
 
 For video thumbnail generation: use 1:1 (1080×1080) as the primary thumbnail size.
 

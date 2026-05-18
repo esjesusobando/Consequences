@@ -16,13 +16,13 @@ The unique format is the Multimedia Ad.
 
 The primary image-based format unique to Microsoft Ads.
 
-| Component            | Spec                    |
+| Component             | Spec                     |
 |----------------------|-------------------------|
-| Image                | 1200×628 (1.91:1)       |
-| Short Headline       | 30 chars                |
-| Long Headline        | 90 chars                |
-| Description          | 90 chars                |
-| Business Name        | 25 chars                |
+| Image                 | 1200×628 (1.91:1)        |
+| Short Headline        | 30 chars                 |
+| Long Headline         | 90 chars                 |
+| Description           | 90 chars                 |
+| Business Name         | 25 chars                 |
 
 **Generation target: 1200×628 (1.91:1)**
 This is the only unique image dimension for Microsoft. Everything else mirrors Google.
@@ -33,11 +33,11 @@ This is the only unique image dimension for Microsoft. Everything else mirrors G
 
 Identical to Google RSA character limits:
 
-| Component           | Min         | Max         | Character Limit         |
+| Component            | Min          | Max          | Character Limit          |
 |---------------------|-------------|-------------|-------------------------|
-| Headlines           | 3           | 15          | 30 chars each           |
-| Descriptions        | 2           | 4           | 90 chars each           |
-| Display Paths       | N/A         | 2           | 15 chars each           |
+| Headlines            | 3            | 15           | 30 chars each            |
+| Descriptions         | 2            | 4            | 90 chars each            |
+| Display Paths        | N/A          | 2            | 15 chars each            |
 
 **Asset reuse:** RSA copy written for Google can be used directly in Microsoft
 with no changes. Use the same headlines and descriptions.
@@ -46,11 +46,11 @@ with no changes. Use the same headlines and descriptions.
 
 ## Audience Ads (Display Network)
 
-| Size               | Dimensions              |
+| Size                | Dimensions               |
 |--------------------|-------------------------|
-| Landscape          | 1200×628 (1.91:1)       |
-| Square             | 1200×1200 (1:1)         |
-| Small square       | 628×628 (1:1)           |
+| Landscape           | 1200×628 (1.91:1)        |
+| Square              | 1200×1200 (1:1)          |
+| Small square        | 628×628 (1:1)            |
 
 These display on the Microsoft Audience Network (MSN, Outlook, Edge).
 **Asset reuse:** Generate the same 3 Google Display assets (1200×628, 1200×1200, and
@@ -62,11 +62,11 @@ These display on the Microsoft Audience Network (MSN, Outlook, Edge).
 
 These require copy but no image generation:
 
-| Extension                   | Description                                                 |
+| Extension                    | Description                                                  |
 |-----------------------------|-------------------------------------------------------------|
-| Action Extension            | Pre-defined action buttons (Book Now, Download, etc.)       |
-| Filter Link Extension       | Category-based deep links (e.g., product categories)        |
-| Review Extension            | Third-party review quotes with source attribution           |
+| Action Extension             | Pre-defined action buttons (Book Now, Download, etc.)        |
+| Filter Link Extension        | Category-based deep links (e.g., product categories)         |
+| Review Extension             | Third-party review quotes with source attribution            |
 
 ---
 
@@ -111,13 +111,13 @@ Avoid TikTok-style dramatic edits or Meta-style casual lifestyle photography.
 
 ## Asset Reuse Summary
 
-| Source                        | Reusable for Microsoft?                 |
+| Source                         | Reusable for Microsoft?                  |
 |-------------------------------|-----------------------------------------|
-| Google PMax 1200×628          | ✅ Direct reuse for Multimedia Ads       |
-| Google PMax 1200×1200         | ✅ Direct reuse for Audience Ads         |
-| Google RSA copy               | ✅ Use as-is                             |
-| Meta 4:5 (1080×1350)          | ❌ Wrong ratio                           |
-| TikTok 9:16 (1080×1920)       | ❌ Wrong ratio                           |
+| Google PMax 1200×628           | ✅ Direct reuse for Multimedia Ads        |
+| Google PMax 1200×1200          | ✅ Direct reuse for Audience Ads          |
+| Google RSA copy                | ✅ Use as-is                              |
+| Meta 4:5 (1080×1350)           | ❌ Wrong ratio                            |
+| TikTok 9:16 (1080×1920)        | ❌ Wrong ratio                            |
 
 **When using Google import:** No new image generation needed for Microsoft.
 Generate Microsoft-specific assets only if running Microsoft-native campaigns.

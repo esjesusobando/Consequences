@@ -84,11 +84,11 @@ Present `green` patterns as a numbered table. If `yellowFootnote` is not null, i
 
 ```
 ### Safe to auto-allow
-| #                             | Pattern                                      | Evidence                                                         |
+| #                              | Pattern                                       | Evidence                                                          |
 |-------------------------------|----------------------------------------------|------------------------------------------------------------------|
-| 1                             | `Bash(bun test *)`                           | 23 uses across 8 sessions                                        |
-| 2                             | `Bash(bun run *)`                            | 18 uses, covers dev/build/lint scripts                           |
-| 3                             | `Bash(node *)`                               | 12 uses across 5 sessions                                        |
+| 1                              | `Bash(bun test *)`                            | 23 uses across 8 sessions                                         |
+| 2                              | `Bash(bun run *)`                             | 18 uses, covers dev/build/lint scripts                            |
+| 3                              | `Bash(node *)`                                | 12 uses across 5 sessions                                         |
 
 Also frequently used: bun install, mkdir (not classified as safe to auto-allow but may be worth reviewing)
 ```
@@ -97,11 +97,11 @@ If `redExamples` is non-empty, show a compact "Blocked" table after the recommen
 
 ```
 ### Blocked from recommendations
-| Pattern                                        | Reason                                               | Uses                             |
+| Pattern                                         | Reason                                                | Uses                              |
 |------------------------------------------------|------------------------------------------------------|----------------------------------|
-| `rm *`                                         | Irreversible file deletion                           | 21                               |
-| `eval *`                                       | Arbitrary code execution                             | 14                               |
-| `git reset --hard *`                           | Destroys uncommitted work                            | 5                                |
+| `rm *`                                          | Irreversible file deletion                            | 21                                |
+| `eval *`                                        | Arbitrary code execution                              | 14                                |
+| `git reset --hard *`                            | Destroys uncommitted work                             | 5                                 |
 ```
 
 ### Part 3: Bottom line

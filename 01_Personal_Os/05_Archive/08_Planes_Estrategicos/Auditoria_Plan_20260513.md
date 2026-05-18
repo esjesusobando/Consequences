@@ -6,54 +6,54 @@
 
 ## 1. Configuración MiniMax — ✅ COMPLETO
 
-| Entorno                    | Config                                                    | Estado             |
+| Entorno                     | Config                                                     | Estado              |
 |----------------------------|-----------------------------------------------------------|--------------------|
-| **OpenCode**               | `~/.config/opencode/opencode.json` provider minimax       | ✅                  |
-| **Claude Code**            | `~/.claude/settings.json` ANTHROPIC_BASE_URL              | ✅                  |
-| **Regla 11_Minimax**       | `01_Personal_Os/01_Core/01_Rules/11_Minimax.mdc`          | ✅                  |
-| **API Key**                | `sk-cp-...` (Token Plan)                                  | ✅ Verificada       |
-| **Endpoint**               | `api.minimax.io` (internacional)                          | ✅                  |
+| **OpenCode**                | `~/.config/opencode/opencode.json` provider minimax        | ✅                   |
+| **Claude Code**             | `~/.claude/settings.json` ANTHROPIC_BASE_URL               | ✅                   |
+| **Regla 11_Minimax**        | `01_Personal_Os/01_Core/01_Rules/11_Minimax.mdc`           | ✅                   |
+| **API Key**                 | `sk-cp-...` (Token Plan)                                   | ✅ Verificada        |
+| **Endpoint**                | `api.minimax.io` (internacional)                           | ✅                   |
 
 ---
 
 ## 2. Engram — ✅ COMPLETO
 
-| Item                   | Estado                                |
+| Item                    | Estado                                 |
 |------------------------|---------------------------------------|
-| Versión                | `1.15.11` ✅                           |
-| AI Search Plugin       | ℹ️ Instalación manual pendiente       |
+| Versión                 | `1.15.11` ✅                            |
+| AI Search Plugin        | ℹ️ Instalación manual pendiente        |
 
 ---
 
 ## 3. OpenCode Plugins — ✅ COMPLETO
 
-| Plugin                        | Estado                        |
+| Plugin                         | Estado                         |
 |-------------------------------|-------------------------------|
-| **subagent-statusline**       | ✅ Instalado globalmente       |
-| **tui.json**                  | ✅ Configurado                 |
+| **subagent-statusline**        | ✅ Instalado globalmente        |
+| **tui.json**                   | ✅ Configurado                  |
 
 ---
 
 ## 4. Correcciones Docs — ✅ COMPLETO
 
-| Archivo                 | Cambio                               | Estado         |
+| Archivo                  | Cambio                                | Estado          |
 |-------------------------|--------------------------------------|----------------|
-| `OS_DIRECTORY.md`       | Rules: 11 → 12                       | ✅              |
-| `CLAUDE.md`             | Rules: 11 → 12                       | ✅              |
-| `RULES_INDEX.md`        | Agregada 11_Minimax, total: 12       | ✅              |
-| `AGENTS.md`             | MCP count: 38 → 36                   | ✅              |
-| `README.md`             | Rules: 11 → 12                       | ✅              |
+| `OS_DIRECTORY.md`        | Rules: 11 → 12                        | ✅               |
+| `CLAUDE.md`              | Rules: 11 → 12                        | ✅               |
+| `RULES_INDEX.md`         | Agregada 11_Minimax, total: 12        | ✅               |
+| `AGENTS.md`              | MCP count: 38 → 36                    | ✅               |
+| `README.md`              | Rules: 11 → 12                        | ✅               |
 
 ---
 
 ## 5. Git — ✅ COMPLETO
 
-| Commit           | Descripción                                         |
+| Commit            | Descripción                                          |
 |------------------|-----------------------------------------------------|
-| `3089bb2f`       | feat: add 11_Minimax rule and fix rules count       |
-| `dc54b37f`       | Sync from Desktop Think_Different                   |
-| `bba978cf`       | Claude I (manifests audit)                          |
-| `982cb31b`       | docs: add session summary 2026-05-13                |
+| `3089bb2f`        | feat: add 11_Minimax rule and fix rules count        |
+| `dc54b37f`        | Sync from Desktop Think_Different                    |
+| `bba978cf`        | Claude I (manifests audit)                           |
+| `982cb31b`        | docs: add session summary 2026-05-13                 |
 
 **Push:** ✅ Exitoso a origin/master
 
@@ -61,9 +61,9 @@
 
 ## 6. MCPs — ✅ COMPLETO (37 servers)
 
-| Server               | Tipo                 | Estado         |
+| Server                | Tipo                  | Estado          |
 |----------------------|----------------------|----------------|
-| **higgsfield**       | streamableHttp       | ✅ Nuevo        |
+| **higgsfield**        | streamableHttp        | ✅ Nuevo         |
 
 ### Duplicados No Críticos (ACEPTADOS):
 - `eagle` (remote) + `eagle-mcp` (streamableHttp) → misma URL
@@ -73,40 +73,40 @@
 
 ## 7. Repos Archivados — ✅ COMPLETO
 
-| Repo                              | Estado                                             |
+| Repo                               | Estado                                              |
 |-----------------------------------|----------------------------------------------------|
-| **07_claude-ads**                 | ✅ Nuevo — github.com/AgriciDaniel/claude-ads       |
-| agent-teams-lite                  | ✅                                                  |
-| compound-engineering-plugin       | ✅                                                  |
-| design-system                     | ✅                                                  |
-| gentle-ai                         | ✅                                                  |
-| gentleman-guardian-angel          | ✅                                                  |
-| (18 más)                          | ✅                                                  |
+| **07_claude-ads**                  | ✅ Nuevo — github.com/AgriciDaniel/claude-ads        |
+| agent-teams-lite                   | ✅                                                   |
+| compound-engineering-plugin        | ✅                                                   |
+| design-system                      | ✅                                                   |
+| gentle-ai                          | ✅                                                   |
+| gentleman-guardian-angel           | ✅                                                   |
+| (18 más)                           | ✅                                                   |
 
 ---
 
 ## 8. Sincronización Desktop → Backup — ✅ COMPLETO
 
-| Archivo               | Estado         |
+| Archivo                | Estado          |
 |-----------------------|----------------|
-| CLAUDE.md             | ✅ Sync         |
-| OS_DIRECTORY.md       | ✅ Sync         |
-| README.md             | ✅ Sync         |
-| AGENTS.md             | ✅ Sync         |
-| RULES_INDEX.md        | ✅ Sync         |
-| 11_Minimax.mdc        | ✅ Nuevo        |
-| chat.py               | ✅ Nuevo        |
+| CLAUDE.md              | ✅ Sync          |
+| OS_DIRECTORY.md        | ✅ Sync          |
+| README.md              | ✅ Sync          |
+| AGENTS.md              | ✅ Sync          |
+| RULES_INDEX.md         | ✅ Sync          |
+| 11_Minimax.mdc         | ✅ Nuevo         |
+| chat.py                | ✅ Nuevo         |
 
 ---
 
 ## 🔧 Pendientes (Low Priority)
 
-| Item                              | Prioridad         | Notas                                                   |
+| Item                               | Prioridad          | Notas                                                    |
 |-----------------------------------|-------------------|---------------------------------------------------------|
-| **Seedance 2.0**                  | ⏳                 | Esperando link del usuario                              |
-| **AI Search Plugin**              | ℹ️                | Instalación manual desde app Engram                     |
-| **TubeMaster MCP**                | P1                | Requiere Google OAuth                                   |
-| **subagent-statusline npm**       | ℹ️                | No aparece en `npm list -g` pero está configurado       |
+| **Seedance 2.0**                   | ⏳                  | Esperando link del usuario                               |
+| **AI Search Plugin**               | ℹ️                 | Instalación manual desde app Engram                      |
+| **TubeMaster MCP**                 | P1                 | Requiere Google OAuth                                    |
+| **subagent-statusline npm**        | ℹ️                 | No aparece en `npm list -g` pero está configurado        |
 
 ---
 

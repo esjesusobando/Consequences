@@ -76,29 +76,29 @@ Hybrid AI/ML Engineer and Petroleum Engineering Specialist with 15+ years of exp
 ## CERTIFICATIONS
 
 ### AI/ML & Digital Transformation
-| Certification                                                  | Issuer                                                 | Year                             |
+| Certification                                                   | Issuer                                                  | Year                              |
 |----------------------------------------------------------------|--------------------------------------------------------|----------------------------------|
-| AI Day — Generative AI Mastery                                 | Webpositer                                             | 2025                             |
-| Big School AI                                                  | Big School                                             | 2025                             |
-| Python Fundamentals                                            | Platzi                                                 | 2024                             |
-| Growth AI Marketing                                            | Platzi                                                 | 2024                             |
-| Advanced ChatGPT / LLM Applications                            | Platzi                                                 | 2024                             |
-| Claude Code Pro Tips                                           | Self-Study                                             | 2025                             |
-| Google Data Analytics Specialization                           | Coursera (Google Authorized)                           | 2022                             |
+| AI Day — Generative AI Mastery                                  | Webpositer                                              | 2025                              |
+| Big School AI                                                   | Big School                                              | 2025                              |
+| Python Fundamentals                                             | Platzi                                                  | 2024                              |
+| Growth AI Marketing                                             | Platzi                                                  | 2024                              |
+| Advanced ChatGPT / LLM Applications                             | Platzi                                                  | 2024                              |
+| Claude Code Pro Tips                                            | Self-Study                                              | 2025                              |
+| Google Data Analytics Specialization                            | Coursera (Google Authorized)                            | 2022                              |
 
 ### Industrial Operations (Oil & Gas)
-| Certification                                                       | Issuer                                            | Year                                |
+| Certification                                                        | Issuer                                             | Year                                 |
 |---------------------------------------------------------------------|---------------------------------------------------|-------------------------------------|
-| IADC WellCAP — International Well Control                           | IADC                                              | 2014                                |
-| Stuck Pipe Prevention                                               | Schlumberger IPM                                  | 2012                                |
-| Applied Drilling Engineering                                        | Mannyron Consultores                              | 2014                                |
-| Well Cementing & Sand Control                                       | Jairo Molero Consulting                           | 2013                                |
-| Directional Design & BHA Selection                                  | Jairo Molero Consulting                           | 2012-2013                           |
+| IADC WellCAP — International Well Control                            | IADC                                               | 2014                                 |
+| Stuck Pipe Prevention                                                | Schlumberger IPM                                   | 2012                                 |
+| Applied Drilling Engineering                                         | Mannyron Consultores                               | 2014                                 |
+| Well Cementing & Sand Control                                        | Jairo Molero Consulting                            | 2013                                 |
+| Directional Design & BHA Selection                                   | Jairo Molero Consulting                            | 2012-2013                            |
 
 ### Project Management & Business
-| Certification                                                | Issuer                              | Year                             |
+| Certification                                                 | Issuer                               | Year                              |
 |--------------------------------------------------------------|-------------------------------------|----------------------------------|
-| Project Manager & Business Analyst                           | Domestika                           | 2024                             |
+| Project Manager & Business Analyst                            | Domestika                            | 2024                              |
 
 ---
 
@@ -120,13 +120,13 @@ Natural Language interface to query 10+ years of PDVSA technical reports using R
 
 ## KEY ACHIEVEMENTS
 
-| Metric                                        | Achievement                                                         | Impact                                       |
+| Metric                                         | Achievement                                                          | Impact                                        |
 |-----------------------------------------------|---------------------------------------------------------------------|----------------------------------------------|
-| Document Processing                           | Built AI pipeline for 66+ industrial docs                           | 95% time reduction                           |
-| Team Productivity                             | Led digital transformation initiative                               | 30% speed increase                           |
-| Well Planning                                 | Optimized directional well design                                   | $200k+ NPV savings                           |
-| Safety                                        | Maintained HSE protocols                                            | 0 LTI record                                 |
-| Operations                                    | Resource optimization program                                       | 12% NPT reduction                            |
+| Document Processing                            | Built AI pipeline for 66+ industrial docs                            | 95% time reduction                            |
+| Team Productivity                              | Led digital transformation initiative                                | 30% speed increase                            |
+| Well Planning                                  | Optimized directional well design                                    | $200k+ NPV savings                            |
+| Safety                                         | Maintained HSE protocols                                             | 0 LTI record                                  |
+| Operations                                     | Resource optimization program                                        | 12% NPT reduction                             |
 
 ---
 

@@ -2,38 +2,38 @@
 
 ## Feedback Reciente
 
-| Fecha                           | Cliente                           | Canal                             | Comentario                           | Respuesta                           |
+| Fecha                            | Cliente                            | Canal                              | Comentario                            | Respuesta                            |
 |---------------------------------|-----------------------------------|-----------------------------------|--------------------------------------|-------------------------------------|
-|                                 |                                   | WhatsApp                          |                                      |                                     |
-|                                 |                                   | Google                            |                                      |                                     |
-|                                 |                                   | Instagram                         |                                      |                                     |
+|                                  |                                    | WhatsApp                           |                                       |                                      |
+|                                  |                                    | Google                             |                                       |                                      |
+|                                  |                                    | Instagram                          |                                       |                                      |
 
 ---
 
 ## Reviews Online
 
-| Plataforma                           | Rating                           | Reviews este mes                           |
+| Plataforma                            | Rating                            | Reviews este mes                            |
 |--------------------------------------|----------------------------------|--------------------------------------------|
-| Google                               | /5                               |                                            |
-| TripAdvisor                          | /5                               |                                            |
-| Instagram                            | /5                               |                                            |
+| Google                                | /5                                |                                             |
+| TripAdvisor                           | /5                                |                                             |
+| Instagram                             | /5                                |                                             |
 
 ---
 
 ## Mejoras Solicitadas
 
-| #                           | Feedback                           | Frecuencia                           | Acción                           |
+| #                            | Feedback                            | Frecuencia                            | Acción                            |
 |-----------------------------|------------------------------------|--------------------------------------|----------------------------------|
-| 1                           |                                    |                                      |                                  |
-| 2                           |                                    |                                      |                                  |
+| 1                            |                                     |                                       |                                   |
+| 2                            |                                     |                                       |                                   |
 
 ---
 
 ## Acciones de Mejora
 
-| Fecha                           | Problema                           | Acción tomada                          | Resultado                           |
+| Fecha                            | Problema                            | Acción tomada                           | Resultado                            |
 |---------------------------------|------------------------------------|----------------------------------------|-------------------------------------|
-|                                 |                                    |                                        |                                     |
+|                                  |                                     |                                         |                                      |
 
 ---
 

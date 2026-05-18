@@ -48,12 +48,12 @@ installer/
 
 Trainer estilo **keybr.com para Vim** con progresión RPG:
 
-| Elemento                                | Descripción                                                           |
+| Elemento                                 | Descripción                                                            |
 |-----------------------------------------|-----------------------------------------------------------------------|
-| Módulos                                 | Cada módulo es un "dungeon"                                           |
-| Progresión                              | Lecciones → Práctica → Jefe Final                                     |
-| Desbloqueo                              | Derrotar jefe desbloquea siguiente módulo                             |
-| Características                         | Stats persistentes, spaced repetition, combos                         |
+| Módulos                                  | Cada módulo es un "dungeon"                                            |
+| Progresión                               | Lecciones → Práctica → Jefe Final                                      |
+| Desbloqueo                               | Derrotar jefe desbloquea siguiente módulo                              |
+| Características                          | Stats persistentes, spaced repetition, combos                          |
 
 ---
 
@@ -90,66 +90,66 @@ Trainer estilo **keybr.com para Vim** con progresión RPG:
 
 ### 🏃 Movimientos Horizontales
 
-| Comando                            | Descripción                                                    |
+| Comando                             | Descripción                                                     |
 |------------------------------------|----------------------------------------------------------------|
-| `w`, `W`                           | Siguiente palabra / PALABRA                                    |
-| `e`, `E`                           | Final de palabra / PALABRA                                     |
-| `b`, `B`                           | Inicio palabra anterior / PALABRA                              |
-| `ge`, `gE`                         | Final palabra anterior / PALABRA                               |
-| `f{c}`                             | Hasta carácter (inclusive)                                     |
-| `F{c}`                             | Hasta carácter hacia atrás                                     |
-| `t{c}`                             | Hasta carácter (exclusive)                                     |
-| `T{c}`                             | Hasta carácter hacia atrás (exclusive)                         |
-| `;`                                | Repetir f/F/t/T                                                |
-| `,`                                | Repetir f/F/t/T en dirección opuesta                           |
-| `0`                                | Inicio de línea                                                |
-| `$`                                | Final de línea                                                 |
-| `^`                                | Primer carácter no-blanco                                      |
+| `w`, `W`                            | Siguiente palabra / PALABRA                                     |
+| `e`, `E`                            | Final de palabra / PALABRA                                      |
+| `b`, `B`                            | Inicio palabra anterior / PALABRA                               |
+| `ge`, `gE`                          | Final palabra anterior / PALABRA                                |
+| `f{c}`                              | Hasta carácter (inclusive)                                      |
+| `F{c}`                              | Hasta carácter hacia atrás                                      |
+| `t{c}`                              | Hasta carácter (exclusive)                                      |
+| `T{c}`                              | Hasta carácter hacia atrás (exclusive)                          |
+| `;`                                 | Repetir f/F/t/T                                                 |
+| `,`                                 | Repetir f/F/t/T en dirección opuesta                            |
+| `0`                                 | Inicio de línea                                                 |
+| `$`                                 | Final de línea                                                  |
+| `^`                                 | Primer carácter no-blanco                                       |
 
 ### 📐 Movimientos Verticales
 
-| Comando                               | Descripción                                               |
+| Comando                                | Descripción                                                |
 |---------------------------------------|-----------------------------------------------------------|
-| `j`, `k`                              | Abajo / Arriba                                            |
-| `gg`                                  | Primera línea                                             |
-| `G`                                   | Última línea                                              |
-| `{n}G`                                | Ir a línea n                                              |
-| `{`, `}`                              | Párrafo anterior / siguiente                              |
-| `H`, `M`, `L`                         | Top / Middle / Bottom de pantalla                         |
-| `ctrl+d`                              | Media página abajo                                        |
-| `ctrl+u`                              | Media página arriba                                       |
-| `ctrl+f`                              | Página completa abajo                                     |
-| `ctrl+b`                              | Página completa arriba                                    |
+| `j`, `k`                               | Abajo / Arriba                                             |
+| `gg`                                   | Primera línea                                              |
+| `G`                                    | Última línea                                               |
+| `{n}G`                                 | Ir a línea n                                               |
+| `{`, `}`                               | Párrafo anterior / siguiente                               |
+| `H`, `M`, `L`                          | Top / Middle / Bottom de pantalla                          |
+| `ctrl+d`                               | Media página abajo                                         |
+| `ctrl+u`                               | Media página arriba                                        |
+| `ctrl+f`                               | Página completa abajo                                      |
+| `ctrl+b`                               | Página completa arriba                                     |
 
 ### 🎯 Text Objects
 
 **CHANGE (c):**
 
-| Comando                                      | Descripción                                               |
+| Comando                                       | Descripción                                                |
 |----------------------------------------------|-----------------------------------------------------------|
-| `ciw`, `caw`                                 | Change inner/around word                                  |
-| `ci"`, `ca"`                                 | Change inner/around "quotes"                              |
-| `ci'`, `ca'`                                 | Change inner/around 'quotes'                              |
-| `ci{`, `ca{`                                 | Change inner/around {braces}                              |
-| `ci(`, `ca(`                                 | Change inner/around (parens)                              |
-| `ci[`, `ca[`                                 | Change inner/around [brackets]                            |
-| `cit`, `cat`                                 | Change inner/around \<tags\>                              |
-| `` ci` ``, `` ca` ``                         | Change inner/around \`backticks\`                         |
+| `ciw`, `caw`                                  | Change inner/around word                                   |
+| `ci"`, `ca"`                                  | Change inner/around "quotes"                               |
+| `ci'`, `ca'`                                  | Change inner/around 'quotes'                               |
+| `ci{`, `ca{`                                  | Change inner/around {braces}                               |
+| `ci(`, `ca(`                                  | Change inner/around (parens)                               |
+| `ci[`, `ca[`                                  | Change inner/around [brackets]                             |
+| `cit`, `cat`                                  | Change inner/around \<tags\>                               |
+| `` ci` ``, `` ca` ``                          | Change inner/around \`backticks\`                          |
 
 **Otros operadores:** Los mismos patterns aplican para `d` (delete), `y` (yank) y `v` (visual select).
 Ejemplo: `diw`, `daw`, `yiw`, `viw`, etc.
 
 ### 🔁 Change & Repeat (El Flujo Mágico)
 
-| Comando                           | Descripción                                                   |
+| Comando                            | Descripción                                                    |
 |-----------------------------------|---------------------------------------------------------------|
-| `*`                               | Buscar palabra bajo cursor (forward)                          |
-| `#`                               | Buscar palabra bajo cursor (backward)                         |
-| `n`, `N`                          | Siguiente / anterior match                                    |
-| `gn`                              | Seleccionar próximo match (visual)                            |
-| `cgn`                             | Cambiar próximo match                                         |
-| `dgn`                             | Borrar próximo match                                          |
-| `.`                               | Repetir último cambio                                         |
+| `*`                                | Buscar palabra bajo cursor (forward)                           |
+| `#`                                | Buscar palabra bajo cursor (backward)                          |
+| `n`, `N`                           | Siguiente / anterior match                                     |
+| `gn`                               | Seleccionar próximo match (visual)                             |
+| `cgn`                              | Cambiar próximo match                                          |
+| `dgn`                              | Borrar próximo match                                           |
+| `.`                                | Repetir último cambio                                          |
 
 **Combo Mágico (ventaja vs `:%s` - podés ELEGIR cuáles reemplazar):**
 
@@ -164,61 +164,61 @@ Ejemplo: `diw`, `daw`, `yiw`, `viw`, etc.
 
 ### 🔄 Sustitución (%s)
 
-| Comando                                     | Descripción                                                 |
+| Comando                                      | Descripción                                                  |
 |---------------------------------------------|-------------------------------------------------------------|
-| `:s/foo/bar/`                               | Línea actual, primera ocurrencia                            |
-| `:s/foo/bar/g`                              | Línea actual, todas las ocurrencias                         |
-| `:%s/foo/bar/g`                             | Todo el archivo                                             |
-| `:%s/foo/bar/gc`                            | Todo el archivo, con confirmación                           |
-| `:10,20s/foo/bar/g`                         | Rango de líneas (10-20)                                     |
-| `:'<,'>s/foo/bar/g`                         | Selección visual                                            |
-| `:s/foo/bar/i`                              | Case insensitive                                            |
-| `:s/foo/bar/I`                              | Case sensitive (forzado)                                    |
+| `:s/foo/bar/`                                | Línea actual, primera ocurrencia                             |
+| `:s/foo/bar/g`                               | Línea actual, todas las ocurrencias                          |
+| `:%s/foo/bar/g`                              | Todo el archivo                                              |
+| `:%s/foo/bar/gc`                             | Todo el archivo, con confirmación                            |
+| `:10,20s/foo/bar/g`                          | Rango de líneas (10-20)                                      |
+| `:'<,'>s/foo/bar/g`                          | Selección visual                                             |
+| `:s/foo/bar/i`                               | Case insensitive                                             |
+| `:s/foo/bar/I`                               | Case sensitive (forzado)                                     |
 
 **Patrones útiles:**
 
-| Comando                                     | Descripción                                                |
+| Comando                                      | Descripción                                                 |
 |---------------------------------------------|------------------------------------------------------------|
-| `:%s/\s\+$//g`                              | Eliminar trailing whitespace                               |
-| `:%s/foo/bar/gI`                            | Reemplazar exacto (case sensitive)                         |
-| `:%s/\<foo\>/bar/g`                         | Solo palabras completas                                    |
+| `:%s/\s\+$//g`                               | Eliminar trailing whitespace                                |
+| `:%s/foo/bar/gI`                             | Reemplazar exacto (case sensitive)                          |
+| `:%s/\<foo\>/bar/g`                          | Solo palabras completas                                     |
 
 ### 🔍 Regex & Vimgrep
 
 **Búsqueda básica:**
 
-| Comando                            | Descripción                                        |
+| Comando                             | Descripción                                         |
 |------------------------------------|----------------------------------------------------|
-| `/pattern`                         | Buscar hacia adelante                              |
-| `?pattern`                         | Buscar hacia atrás                                 |
-| `n`, `N`                           | Siguiente / anterior match                         |
-| `*`                                | Buscar palabra bajo cursor                         |
+| `/pattern`                          | Buscar hacia adelante                               |
+| `?pattern`                          | Buscar hacia atrás                                  |
+| `n`, `N`                            | Siguiente / anterior match                          |
+| `*`                                 | Buscar palabra bajo cursor                          |
 
 **Regex:**
 
-| Comando                              | Descripción                                                |
+| Comando                               | Descripción                                                 |
 |--------------------------------------|------------------------------------------------------------|
-| `/\<word\>`                          | Word boundaries (palabra completa)                         |
-| `/pattern\c`                         | Case insensitive                                           |
-| `/pattern\C`                         | Case sensitive                                             |
-| `\v`                                 | Very magic (menos escapes)                                 |
+| `/\<word\>`                           | Word boundaries (palabra completa)                          |
+| `/pattern\c`                          | Case insensitive                                            |
+| `/pattern\C`                          | Case sensitive                                              |
+| `\v`                                  | Very magic (menos escapes)                                  |
 
 **Very Magic Mode (`\v`):**
 
-| Comando                                     | Descripción                                                  |
+| Comando                                      | Descripción                                                   |
 |---------------------------------------------|--------------------------------------------------------------|
-| `/\vfunction\s+\w+`                         | Buscar "function" + espacio + nombre                         |
-| `/\v(\w+)@(\w+)`                            | Capturar grupos para email                                   |
+| `/\vfunction\s+\w+`                          | Buscar "function" + espacio + nombre                          |
+| `/\v(\w+)@(\w+)`                             | Capturar grupos para email                                    |
 
 **Vimgrep:**
 
-| Comando                                               | Descripción                                      |
+| Comando                                                | Descripción                                       |
 |-------------------------------------------------------|--------------------------------------------------|
-| `:vimgrep /pattern/g **/*.ts`                         | Buscar en todos los .ts                          |
-| `:vimgrep /TODO/g **/*`                               | Buscar TODOs en proyecto                         |
-| `:cnext`, `:cprev`                                    | Navegar resultados                               |
-| `:copen`                                              | Abrir quickfix list                              |
-| `:cclose`                                             | Cerrar quickfix                                  |
+| `:vimgrep /pattern/g **/*.ts`                          | Buscar en todos los .ts                           |
+| `:vimgrep /TODO/g **/*`                                | Buscar TODOs en proyecto                          |
+| `:cnext`, `:cprev`                                     | Navegar resultados                                |
+| `:copen`                                               | Abrir quickfix list                               |
+| `:cclose`                                              | Cerrar quickfix                                   |
 
 **Caracteres a escapar:** Sin `\v`: `. * [ ] ^ $ \ / ~` | Con `\v`: solo `/ \`
 
@@ -226,20 +226,20 @@ Ejemplo: `diw`, `daw`, `yiw`, `viw`, etc.
 
 **Grabar:**
 
-| Comando                              | Descripción                                              |
+| Comando                               | Descripción                                               |
 |--------------------------------------|----------------------------------------------------------|
-| `qa`                                 | Empezar a grabar en registro 'a'                         |
-| `{acciones}`                         | Las acciones que querés repetir                          |
-| `q`                                  | Parar de grabar                                          |
+| `qa`                                  | Empezar a grabar en registro 'a'                          |
+| `{acciones}`                          | Las acciones que querés repetir                           |
+| `q`                                   | Parar de grabar                                           |
 
 **Ejecutar:**
 
-| Comando                                  | Descripción                                             |
+| Comando                                   | Descripción                                              |
 |------------------------------------------|---------------------------------------------------------|
-| `@a`                                     | Ejecutar macro del registro 'a'                         |
-| `@@`                                     | Repetir última macro ejecutada                          |
-| `5@a`                                    | Ejecutar macro 5 veces                                  |
-| `:5,10normal @a`                         | Ejecutar en líneas 5-10                                 |
+| `@a`                                      | Ejecutar macro del registro 'a'                          |
+| `@@`                                      | Repetir última macro ejecutada                           |
+| `5@a`                                     | Ejecutar macro 5 veces                                   |
+| `:5,10normal @a`                          | Ejecutar en líneas 5-10                                  |
 
 **Tips:**
 - Empezar macro con `0` o `^` (posición consistente)
@@ -395,25 +395,25 @@ Antes:              Macro: qa0i"<Esc>A",<Esc>jq      Después de @a@@:
 
 ### Bosses por Módulo
 
-| Módulo                                  | Boss Name                                  | Mecánica Especial                                                         |
+| Módulo                                   | Boss Name                                   | Mecánica Especial                                                          |
 |-----------------------------------------|--------------------------------------------|---------------------------------------------------------------------------|
-| Horizontal                              | The Line Walker                            | Navegar línea compleja sin j/k                                            |
-| Vertical                                | The Code Tower                             | Archivo de 50 líneas, llegar a puntos específicos                         |
-| Text Objects                            | The Bracket Demon                          | Código anidado `{[({})]}`, cambiar contenidos                             |
-| Change & Repeat                         | The Clone Army                             | 10 ocurrencias, reemplazar selectivamente con cgn                         |
-| Sustitución                             | The Transformer                            | Transformaciones complejas con rangos y flags                             |
-| Regex                                   | The Pattern Master                         | Encontrar patterns complejos en código real                               |
-| Macros                                  | The Automaton                              | Grabar macro y aplicar en múltiples líneas                                |
+| Horizontal                               | The Line Walker                             | Navegar línea compleja sin j/k                                             |
+| Vertical                                 | The Code Tower                              | Archivo de 50 líneas, llegar a puntos específicos                          |
+| Text Objects                             | The Bracket Demon                           | Código anidado `{[({})]}`, cambiar contenidos                              |
+| Change & Repeat                          | The Clone Army                              | 10 ocurrencias, reemplazar selectivamente con cgn                          |
+| Sustitución                              | The Transformer                             | Transformaciones complejas con rangos y flags                              |
+| Regex                                    | The Pattern Master                          | Encontrar patterns complejos en código real                                |
+| Macros                                   | The Automaton                               | Grabar macro y aplicar en múltiples líneas                                 |
 
 ### Mecánicas de Boss
 
-| Mecánica                           | Descripción                                                         |
+| Mecánica                            | Descripción                                                          |
 |------------------------------------|---------------------------------------------------------------------|
-| ❤️ Vidas                           | 3 errores y perdés (retry desde el inicio)                          |
-| ⏱️ Timer                           | Más ajustado que práctica normal                                    |
-| Cadena                             | 5 pasos seguidos, todo conectado                                    |
-| Combo                              | Respuestas rápidas dan bonus (x2, x3, x4)                           |
-| HP                                 | Barra visual que se reduce con cada acierto                         |
+| ❤️ Vidas                            | 3 errores y perdés (retry desde el inicio)                           |
+| ⏱️ Timer                            | Más ajustado que práctica normal                                     |
+| Cadena                              | 5 pasos seguidos, todo conectado                                     |
+| Combo                               | Respuestas rápidas dan bonus (x2, x3, x4)                            |
+| HP                                  | Barra visual que se reduce con cada acierto                          |
 
 ---
 
@@ -599,12 +599,12 @@ import (
 
 Ejecutar desde `installer/`:
 
-| Comando                                                                        | Descripción                                           |
+| Comando                                                                         | Descripción                                            |
 |--------------------------------------------------------------------------------|-------------------------------------------------------|
-| `go build -o gentleman.dots ./cmd/gentleman-installer`                         | Build del binario                                     |
-| `go test ./...`                                                                | Ejecutar todos los tests                              |
-| `./gentleman.dots`                                                             | Ejecutar el installer                                 |
-| `go test ./internal/tui/trainer/... -v`                                        | Tests específicos del trainer                         |
+| `go build -o gentleman.dots ./cmd/gentleman-installer`                          | Build del binario                                      |
+| `go test ./...`                                                                 | Ejecutar todos los tests                               |
+| `./gentleman.dots`                                                              | Ejecutar el installer                                  |
+| `go test ./internal/tui/trainer/... -v`                                         | Tests específicos del trainer                          |
 
 ---
 
@@ -646,9 +646,9 @@ Ejecutar desde `installer/`:
 
 ## Estilo de Código
 
-| Aspecto                           | Guideline                                                                                 |
+| Aspecto                            | Guideline                                                                                  |
 |-----------------------------------|-------------------------------------------------------------------------------------------|
-| Patterns                          | Seguir patterns existentes en el TUI (`installer.go`, `model.go`)                         |
-| Estilos                           | Usar Lipgloss (referencia: `styles.go`)                                                   |
-| Testing                           | Tests para ejercicios, validación y scoring                                               |
-| Commits                           | Conventional commits para cada feature                                                    |
+| Patterns                           | Seguir patterns existentes en el TUI (`installer.go`, `model.go`)                          |
+| Estilos                            | Usar Lipgloss (referencia: `styles.go`)                                                    |
+| Testing                            | Tests para ejercicios, validación y scoring                                                |
+| Commits                            | Conventional commits para cada feature                                                     |

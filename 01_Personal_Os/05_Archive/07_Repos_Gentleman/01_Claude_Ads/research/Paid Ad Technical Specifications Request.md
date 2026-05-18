@@ -20,16 +20,16 @@ The RSA is the primary search format. A valid RSA acts as a container for up to 
 
 **Table 1.1: Google Ads Text Ad Specifications (Search & Display)**
 
-| Component         | Field Name         | Character Limit (Half-Width)       | Min Qty       | Max Qty       | Pinning Logic       | Validation Logic                                                |
+| Component          | Field Name          | Character Limit (Half-Width)        | Min Qty        | Max Qty        | Pinning Logic        | Validation Logic                                                 |
 |-------------------|--------------------|------------------------------------|---------------|---------------|---------------------|-----------------------------------------------------------------|
-| **RSA**           | Headline           | 30                                 | 3             | 15            | Pos 1, 2, 3         | Must contain >=1 keyword. Duplicates forbidden.                 |
-|                   | Description        | 90                                 | 2             | 4             | Pos 1, 2            | Min length recommended: 20 chars.                               |
-|                   | Path 1 & 2         | 15 each                            | 0             | 2             | N/A                 | Appended to Display URL.                                        |
-|                   | Final URL          | 2048                               | 1             | 1             | N/A                 | No redirects allowed.                                           |
-| **DSA**           | Description        | 90                                 | 1             | 1             | N/A                 | Headline dynamically generated from SEO title.                  |
-| **App Ad**        | Headline           | 30                                 | 2             | 5             | N/A                 | App store metadata often overrides this.                        |
-|                   | Description        | 90                                 | 2             | 5             | N/A                 |                                                                 |
-| **Call Ad**       | *Deprecated*       | N/A                                | 0             | 0             | *N/A*               | **Removed Feb 2026.** Migrate to Call Assets.<sup>1</sup>       |
+| **RSA**            | Headline            | 30                                  | 3              | 15             | Pos 1, 2, 3          | Must contain >=1 keyword. Duplicates forbidden.                  |
+|                    | Description         | 90                                  | 2              | 4              | Pos 1, 2             | Min length recommended: 20 chars.                                |
+|                    | Path 1 & 2          | 15 each                             | 0              | 2              | N/A                  | Appended to Display URL.                                         |
+|                    | Final URL           | 2048                                | 1              | 1              | N/A                  | No redirects allowed.                                            |
+| **DSA**            | Description         | 90                                  | 1              | 1              | N/A                  | Headline dynamically generated from SEO title.                   |
+| **App Ad**         | Headline            | 30                                  | 2              | 5              | N/A                  | App store metadata often overrides this.                         |
+|                    | Description         | 90                                  | 2              | 5              | N/A                  |                                                                  |
+| **Call Ad**        | *Deprecated*        | N/A                                 | 0              | 0              | *N/A*                | **Removed Feb 2026.** Migrate to Call Assets.<sup>1</sup>        |
 
 **Dynamic Insertion Syntax & Validation**
 
@@ -50,14 +50,14 @@ Performance Max campaigns (the successor to Smart Shopping and Local) require a 
 
 **Table 1.2: PMax & Demand Gen Creative Specifications**
 
-| Asset Type                | Dimension / Spec       | Aspect Ratio             | Min Qty       | Max Qty       | Max File Size       | Technical Notes                                                                            |
+| Asset Type                 | Dimension / Spec        | Aspect Ratio              | Min Qty        | Max Qty        | Max File Size        | Technical Notes                                                                             |
 |---------------------------|------------------------|--------------------------|---------------|---------------|---------------------|--------------------------------------------------------------------------------------------|
-| **Marketing Image**       | 1200 x 628 px          | 1.91:1 (Landscape)       | 1             | 20            | 5 MB                | Essential for Discover/Gmail feeds.<sup>9</sup>                                            |
-| **Square Image**          | 1200 x 1200 px         | 1:1 (Square)             | 1             | 20            | 5 MB                | Primary asset for mobile display. Min 300x300 allowed but penalized.                       |
-| **Portrait Image**        | 960 x 1200 px          | 4:5 (Portrait)           | 1             | 20            | 5 MB                | **Crucial** for mobile feed inventory.                                                     |
-| **Logo**                  | 1200 x 1200 px         | 1:1                      | 1             | 5             | 5 MB                | Transparent PNG recommended.                                                               |
-| **Video**                 | 1920 x 1080 px         | 16:9 (Horizontal)        | 0*            | 5             | 256 GB              | *If not provided, Google auto-generates a slideshow from images (often low quality).       |
-| **Vertical Video**        | 1080 x 1920 px         | 9:16 (Vertical)          | 0             | 5             | 256 GB              | Required for YouTube Shorts placement.                                                     |
+| **Marketing Image**        | 1200 x 628 px           | 1.91:1 (Landscape)        | 1              | 20             | 5 MB                 | Essential for Discover/Gmail feeds.<sup>9</sup>                                             |
+| **Square Image**           | 1200 x 1200 px          | 1:1 (Square)              | 1              | 20             | 5 MB                 | Primary asset for mobile display. Min 300x300 allowed but penalized.                        |
+| **Portrait Image**         | 960 x 1200 px           | 4:5 (Portrait)            | 1              | 20             | 5 MB                 | **Crucial** for mobile feed inventory.                                                      |
+| **Logo**                   | 1200 x 1200 px          | 1:1                       | 1              | 5              | 5 MB                 | Transparent PNG recommended.                                                                |
+| **Video**                  | 1920 x 1080 px          | 16:9 (Horizontal)         | 0*             | 5              | 256 GB               | *If not provided, Google auto-generates a slideshow from images (often low quality).        |
+| **Vertical Video**         | 1080 x 1920 px          | 9:16 (Vertical)           | 0              | 5              | 256 GB               | Required for YouTube Shorts placement.                                                      |
 
 **Deep Insight on Asset Groups:** The "Incomplete" Ad Strength status usually stems from missing the **Portrait (4:5)** image or the **Vertical Video (9:16)** asset. While technically optional (Google can crop Landscape assets), omitting them excludes the campaign from high-value mobile inventory like the Discover Feed and Shorts, severely degrading performance efficiency.<sup>10</sup>
 
@@ -67,13 +67,13 @@ YouTube ads in 2026 are categorized by "inventory bucket" rather than just forma
 
 **Table 1.3: YouTube Video Specifications & Safe Zones**
 
-| Format                        | Resolution (Px)       | Aspect Ratio       | Duration                 | Safe Zone Logic                                                                                                            |
+| Format                         | Resolution (Px)        | Aspect Ratio        | Duration                  | Safe Zone Logic                                                                                                             |
 |-------------------------------|-----------------------|--------------------|--------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| **Skippable In-Stream**       | 1920 x 1080           | 16:9               | Min: 5s / Rec: <3m       | **Bottom-Left:** 300x60 overlay. **Bottom-Right:** "Skip Ad" button (after 5s).                                            |
-| **Non-Skippable**             | 1920 x 1080           | 16:9               | 15s or 20s               | Region dependent. Europe/Asia often 15s max.                                                                               |
-| **Bumper**                    | 1920 x 1080           | 16:9               | Max 6s                   | Hard stop. 6.1s will fail upload.                                                                                          |
-| **Shorts**                    | 1080 x 1920           | 9:16               | 5s - 60s                 | **Critical:** Bottom 25% (480px) reserved for Captions/Music. Right 15% (160px) for Engagement buttons.<sup>11</sup>       |
-| **Masthead**                  | 1920 x 1080           | 16:9               | Max 30s (Autoplay)       | Widescreen format. Audio defaults to mute.                                                                                 |
+| **Skippable In-Stream**        | 1920 x 1080            | 16:9                | Min: 5s / Rec: <3m        | **Bottom-Left:** 300x60 overlay. **Bottom-Right:** "Skip Ad" button (after 5s).                                             |
+| **Non-Skippable**              | 1920 x 1080            | 16:9                | 15s or 20s                | Region dependent. Europe/Asia often 15s max.                                                                                |
+| **Bumper**                     | 1920 x 1080            | 16:9                | Max 6s                    | Hard stop. 6.1s will fail upload.                                                                                           |
+| **Shorts**                     | 1080 x 1920            | 9:16                | 5s - 60s                  | **Critical:** Bottom 25% (480px) reserved for Captions/Music. Right 15% (160px) for Engagement buttons.<sup>11</sup>        |
+| **Masthead**                   | 1920 x 1080            | 16:9                | Max 30s (Autoplay)        | Widescreen format. Audio defaults to mute.                                                                                  |
 
 **Technical Nuance - Safe Zones:** For YouTube Shorts, the safe zone is not just a recommendation; it is a visibility imperative. The bottom 25% of the 1080x1920 canvas is covered by the video title, channel name, and "Sponsored" label. Any CTA placed here will be unclickable. The validator must ensure all text is within the center **1080 x 1420 px** area.<sup>11</sup>
 
@@ -83,21 +83,21 @@ Google now treats extensions as "Assets" that can be associated at the Account, 
 
 **Table 1.4: Google Ads Asset/Extension Limits (2026)**
 
-| Asset Type                   | Field                   | Character Limit       | Max Count           | Validation Logic                                                                  |
+| Asset Type                    | Field                    | Character Limit        | Max Count            | Validation Logic                                                                   |
 |------------------------------|-------------------------|-----------------------|---------------------|-----------------------------------------------------------------------------------|
-| **Sitelink**                 | Text                    | 25                    | 20                  | Min 2 required to serve.                                                          |
-|                              | Description 1 & 2       | 35 each               |                     | Descriptions often truncated on mobile.                                           |
-| **Callout**                  | Text                    | 25                    | 20                  | Non-clickable. Highlights USPs.                                                   |
-| **Structured Snippet**       | Values                  | 25                    | 10 per header       | Header must be selected from predefined list (e.g., "Amenities", "Brands").       |
-| **Image Asset**              | 1:1 or 1.91:1           | N/A                   | 20                  | Square (1x1) required. Landscape optional.<sup>12</sup>                           |
-| **Call Asset**               | Phone Number            | N/A                   | 1 per entity        | Requires verification.                                                            |
-| **Lead Form**                | Headline                | 30                    | 1                   |                                                                                   |
-|                              | Business Name           | 25                    | 1                   |                                                                                   |
-|                              | Description             | 200                   | 1                   |                                                                                   |
-| **Price Asset**              | Header                  | 25                    | 8                   | Requires price qualifier and currency.                                            |
-| **Promotion Asset**          | Item                    | 20                    | N/A                 | Requires numeric discount or % off.                                               |
-| **App Asset**                | Link text               | 25                    | 1                   | Auto-detects device OS.                                                           |
-| **Location Asset**           | N/A                     | N/A                   | N/A                 | Linked via Google Business Profile (GMB).                                         |
+| **Sitelink**                  | Text                     | 25                     | 20                   | Min 2 required to serve.                                                           |
+|                               | Description 1 & 2        | 35 each                |                      | Descriptions often truncated on mobile.                                            |
+| **Callout**                   | Text                     | 25                     | 20                   | Non-clickable. Highlights USPs.                                                    |
+| **Structured Snippet**        | Values                   | 25                     | 10 per header        | Header must be selected from predefined list (e.g., "Amenities", "Brands").        |
+| **Image Asset**               | 1:1 or 1.91:1            | N/A                    | 20                   | Square (1x1) required. Landscape optional.<sup>12</sup>                            |
+| **Call Asset**                | Phone Number             | N/A                    | 1 per entity         | Requires verification.                                                             |
+| **Lead Form**                 | Headline                 | 30                     | 1                    |                                                                                    |
+|                               | Business Name            | 25                     | 1                    |                                                                                    |
+|                               | Description              | 200                    | 1                    |                                                                                    |
+| **Price Asset**               | Header                   | 25                     | 8                    | Requires price qualifier and currency.                                             |
+| **Promotion Asset**           | Item                     | 20                     | N/A                  | Requires numeric discount or % off.                                                |
+| **App Asset**                 | Link text                | 25                     | 1                    | Auto-detects device OS.                                                            |
+| **Location Asset**            | N/A                      | N/A                    | N/A                  | Linked via Google Business Profile (GMB).                                          |
 
 ### 1.5 Ad Strength Scoring Logic
 
@@ -127,14 +127,14 @@ The 1.91:1 (Landscape) format is effectively obsolete for performance marketing.
 
 **Table 2.1: Meta Image Ad Specifications**
 
-| Placement                 | Aspect Ratio          | Recommended Resolution       | Min Resolution       | File Type       | Max Size       | Text Rules (2026)                                                           |
+| Placement                  | Aspect Ratio           | Recommended Resolution        | Min Resolution        | File Type        | Max Size        | Text Rules (2026)                                                            |
 |---------------------------|-----------------------|------------------------------|----------------------|-----------------|----------------|-----------------------------------------------------------------------------|
-| **Feeds (FB/IG)**         | 4:5 (Preferred)       | 1080 x 1350 px               | 600 x 600 px         | JPG, PNG        | 30 MB          | **No 20% Rule.** Text allowed, but AI may penalize clutter.                 |
-|                           | 1:1 (Supported)       | 1080 x 1080 px               | 600 x 600 px         |                 |                |                                                                             |
-| **Stories / Reels**       | 9:16                  | 1080 x 1920 px               | 600 x 1067 px        | JPG, PNG        | 30 MB          | **Safe Zone:** Top 250px & Bottom 350px reserved for UI.<sup>17</sup>       |
-| **Right Column**          | 1:1                   | 1200 x 1200 px               | 254 x 133 px         | JPG, PNG        | 30 MB          | Desktop Only.                                                               |
-| **Marketplace**           | 1:1                   | 1080 x 1080 px               | 600 x 600 px         | JPG, PNG        | 30 MB          |                                                                             |
-| **Instant Article**       | 1.91:1                | 1200 x 628 px                | N/A                  | JPG, PNG        | 30 MB          |                                                                             |
+| **Feeds (FB/IG)**          | 4:5 (Preferred)        | 1080 x 1350 px                | 600 x 600 px          | JPG, PNG         | 30 MB           | **No 20% Rule.** Text allowed, but AI may penalize clutter.                  |
+|                            | 1:1 (Supported)        | 1080 x 1080 px                | 600 x 600 px          |                  |                 |                                                                              |
+| **Stories / Reels**        | 9:16                   | 1080 x 1920 px                | 600 x 1067 px         | JPG, PNG         | 30 MB           | **Safe Zone:** Top 250px & Bottom 350px reserved for UI.<sup>17</sup>        |
+| **Right Column**           | 1:1                    | 1200 x 1200 px                | 254 x 133 px          | JPG, PNG         | 30 MB           | Desktop Only.                                                                |
+| **Marketplace**            | 1:1                    | 1080 x 1080 px                | 600 x 600 px          | JPG, PNG         | 30 MB           |                                                                              |
+| **Instant Article**        | 1.91:1                 | 1200 x 628 px                 | N/A                   | JPG, PNG         | 30 MB           |                                                                              |
 
 **Technical Insight:** The 4:5 ratio (1080x1350) is mathematically superior for Feed placements. It occupies ~25% more vertical pixels on a mobile screen than a 1:1 square image, increasing "Time in View" metrics which directly feed the relevance score. A validator tool should warn users if they upload 16:9 images for Feed placements, as they will be rendered with significant letterboxing or reduced visibility.<sup>12</sup>
 
@@ -142,12 +142,12 @@ The 1.91:1 (Landscape) format is effectively obsolete for performance marketing.
 
 **Table 2.2: Meta Video Ad Specifications**
 
-| Format               | Ratio           | Resolution           | Duration        | File Spec        | Safe Zones (Pixels)                                                                                                                            |
+| Format                | Ratio            | Resolution            | Duration         | File Spec         | Safe Zones (Pixels)                                                                                                                             |
 |----------------------|-----------------|----------------------|-----------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Feed Video**       | 4:5 (Rec)       | 1080 x 1350 px       | 1s - 241m       | MP4, MOV         | Standard Feed UI.                                                                                                                              |
-| **Stories**          | 9:16            | 1080 x 1920 px       | 1s - 60s        | H.264, 4GB       | Top: 250px (Profile/Time). Bottom: 350px (Reply/CTA).                                                                                          |
-| **Reels**            | 9:16            | 1080 x 1920 px       | 1s - 15m        | MP4, MOV         | **Right Side:** 120px wide zone for Like/Comment/Share buttons. **Bottom:** 35% of screen obscured by caption/audio ticker.<sup>12</sup>       |
-| **In-Stream**        | 16:9            | 1920 x 1080 px       | 5s - 10m        | MP4, MOV         |                                                                                                                                                |
+| **Feed Video**        | 4:5 (Rec)        | 1080 x 1350 px        | 1s - 241m        | MP4, MOV          | Standard Feed UI.                                                                                                                               |
+| **Stories**           | 9:16             | 1080 x 1920 px        | 1s - 60s         | H.264, 4GB        | Top: 250px (Profile/Time). Bottom: 350px (Reply/CTA).                                                                                           |
+| **Reels**             | 9:16             | 1080 x 1920 px        | 1s - 15m         | MP4, MOV          | **Right Side:** 120px wide zone for Like/Comment/Share buttons. **Bottom:** 35% of screen obscured by caption/audio ticker.<sup>12</sup>        |
+| **In-Stream**         | 16:9             | 1920 x 1080 px        | 5s - 10m         | MP4, MOV          |                                                                                                                                                 |
 
 **Reels Safe Zone Enforcement:**
 
@@ -157,16 +157,16 @@ Meta is aggressive with Reels UI. If text is placed in the bottom 35% of a 9:16 
 
 **Table 2.3: Meta Carousel & Collection**
 
-| Ad Format                    | Component          | Spec / Limit        | Notes                                        |
+| Ad Format                     | Component           | Spec / Limit         | Notes                                         |
 |------------------------------|--------------------|---------------------|----------------------------------------------|
-| **Carousel**                 | Card Count         | Min 2, Max 10       | Cards must be uniform ratio (all 1:1).       |
-|                              | Headline           | 40 chars            |                                              |
-|                              | Description        | 20 chars            |                                              |
-|                              | Primary Text       | 125 chars           | Applies to whole unit.                       |
-| **Collection**               | Cover Media        | 1:1 or 16:9         | Video or Image.                              |
-|                              | Product Grid       | 4 products          | Dynamically pulled from Catalog.             |
-| **Instant Experience**       | Width              | 1080 px             | Full screen landing page.                    |
-|                              | Height             | 1920 px             | Scrollable.                                  |
+| **Carousel**                  | Card Count          | Min 2, Max 10        | Cards must be uniform ratio (all 1:1).        |
+|                               | Headline            | 40 chars             |                                               |
+|                               | Description         | 20 chars             |                                               |
+|                               | Primary Text        | 125 chars            | Applies to whole unit.                        |
+| **Collection**                | Cover Media         | 1:1 or 16:9          | Video or Image.                               |
+|                               | Product Grid        | 4 products           | Dynamically pulled from Catalog.              |
+| **Instant Experience**        | Width               | 1080 px              | Full screen landing page.                     |
+|                               | Height              | 1920 px              | Scrollable.                                   |
 
 ### 2.4 Advantage+ Creative & Quality Ranking
 
@@ -188,14 +188,14 @@ TikTok's platform is bifurcated into **Spark Ads** (boosting organic content) an
 
 **Table 3.1: TikTok Video Specifications**
 
-| Spec                 | Spark Ads (Pull)                 | Non-Spark Ads (Push)                | TopView                          |
+| Spec                  | Spark Ads (Pull)                  | Non-Spark Ads (Push)                 | TopView                           |
 |----------------------|----------------------------------|-------------------------------------|----------------------------------|
-| **Resolution**       | Native (1080x1920 rec)           | >= 540 x 960 px (540p)              | >= 720 x 1280 px (720p)          |
-| **Ratio**            | 9:16 (Vertical)                  | 9:16 (Rec), 1:1, 16:9               | 9:16 (Vertical)                  |
-| **Duration**         | Unlimited (Organic limits)       | 5s - 60s (Rec: 9-15s)               | 5s - 60s                         |
-| **File Size**        | N/A (Hosted)                     | <= 500 MB                           | <= 500 MB                        |
-| **Bitrate**          | N/A                              | >= 516 kbps                         | >= 2500 kbps <sup>19</sup>       |
-| **Captions**         | Organic (Max 4 lines)            | 100 chars (Latin), 50 (Asian)       | Fixed font (White).              |
+| **Resolution**        | Native (1080x1920 rec)            | >= 540 x 960 px (540p)               | >= 720 x 1280 px (720p)           |
+| **Ratio**             | 9:16 (Vertical)                   | 9:16 (Rec), 1:1, 16:9                | 9:16 (Vertical)                   |
+| **Duration**          | Unlimited (Organic limits)        | 5s - 60s (Rec: 9-15s)                | 5s - 60s                          |
+| **File Size**         | N/A (Hosted)                      | <= 500 MB                            | <= 500 MB                         |
+| **Bitrate**           | N/A                               | >= 516 kbps                          | >= 2500 kbps <sup>19</sup>        |
+| **Captions**          | Organic (Max 4 lines)             | 100 chars (Latin), 50 (Asian)        | Fixed font (White).               |
 
 **Technical Insight:**
 
@@ -207,12 +207,12 @@ TikTok's UI is dynamic; the description text pushes the bottom buttons up. The f
 
 **Table 3.2: TikTok Safe Zone Dimensions (Pixels)**
 
-| Zone             | Dimensions (from edge)       | Obscuring Element                                     |
+| Zone              | Dimensions (from edge)        | Obscuring Element                                      |
 |------------------|------------------------------|-------------------------------------------------------|
-| **Top**          | 0 - 150 px                   | "Following"                                           |
-| **Right**        | 0 - 140 px (Width)           | Profile, Like, Comment, Share, Disk Icons             |
-| **Bottom**       | 0 - 450 px (Height)          | Account Name, Caption, Music Ticker, CTA Button       |
-| **Left**         | Clear                        | Safe, but leave 40px padding for aesthetics.          |
+| **Top**           | 0 - 150 px                    | "Following"                                            |
+| **Right**         | 0 - 140 px (Width)            | Profile, Like, Comment, Share, Disk Icons              |
+| **Bottom**        | 0 - 450 px (Height)           | Account Name, Caption, Music Ticker, CTA Button        |
+| **Left**          | Clear                         | Safe, but leave 40px padding for aesthetics.           |
 
 **Validation Logic:**
 
@@ -237,42 +237,42 @@ LinkedIn's 2026 specs reflect its push into video and "Thought Leader" ads. Unli
 
 **Table 4.1: LinkedIn Static Ad Specs**
 
-| Format                 | Component           | Character Limit                   | Image Spec                   | Notes                                        |
+| Format                  | Component            | Character Limit                    | Image Spec                    | Notes                                         |
 |------------------------|---------------------|-----------------------------------|------------------------------|----------------------------------------------|
-| **Single Image**       | Intro Text          | 150 chars (Rec) / 600 (Max)       | N/A                          | Truncates on mobile after ~150 chars.        |
-|                        | Headline            | 70 chars (Rec) / 200 (Max)        | N/A                          | Truncates on desktop after ~70 chars.        |
-|                        | Image               | N/A                               | 1200 x 627 px (1.91:1)       | Max 5 MB. JPG/PNG.                           |
-| **Text Ad**            | Headline            | 25 chars                          | N/A                          | Strict limit. Desktop Right Rail only.       |
-|                        | Description         | 75 chars                          | N/A                          |                                              |
-|                        | Image               | N/A                               | 100 x 100 px                 | Optional but recommended.                    |
-| **Carousel**           | Intro Text          | 255 chars                         | N/A                          |                                              |
-|                        | Card Headline       | 45 chars                          | 1080 x 1080 px               | Max 10 cards.                                |
+| **Single Image**        | Intro Text           | 150 chars (Rec) / 600 (Max)        | N/A                           | Truncates on mobile after ~150 chars.         |
+|                         | Headline             | 70 chars (Rec) / 200 (Max)         | N/A                           | Truncates on desktop after ~70 chars.         |
+|                         | Image                | N/A                                | 1200 x 627 px (1.91:1)        | Max 5 MB. JPG/PNG.                            |
+| **Text Ad**             | Headline             | 25 chars                           | N/A                           | Strict limit. Desktop Right Rail only.        |
+|                         | Description          | 75 chars                           | N/A                           |                                               |
+|                         | Image                | N/A                                | 100 x 100 px                  | Optional but recommended.                     |
+| **Carousel**            | Intro Text           | 255 chars                          | N/A                           |                                               |
+|                         | Card Headline        | 45 chars                           | 1080 x 1080 px                | Max 10 cards.                                 |
 
 ### 4.2 Video Ad Specifications
 
 **Table 4.2: LinkedIn Video Specs**
 
-| Spec                | Requirement                                                              | Notes                                                                 |
+| Spec                 | Requirement                                                               | Notes                                                                  |
 |---------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| **Format**          | MP4                                                                      |                                                                       |
-| **File Size**       | 75 KB - 500 MB                                                           | **Warning:** High-res long videos often exceed this.                  |
-| **Duration**        | 3s - 30 mins                                                             | Best performance: < 15s.                                              |
-| **Ratios**          | 16:9 (Landscape) / 1:1 (Square) / 4:5 (Vertical) / 9:16 (Vertical)       | 9:16 Vertical video only serves on the Mobile App.<sup>22</sup>       |
-| **Audio**           | AAC / MPEG4                                                              | < 64 KHz.                                                             |
+| **Format**           | MP4                                                                       |                                                                        |
+| **File Size**        | 75 KB - 500 MB                                                            | **Warning:** High-res long videos often exceed this.                   |
+| **Duration**         | 3s - 30 mins                                                              | Best performance: < 15s.                                               |
+| **Ratios**           | 16:9 (Landscape) / 1:1 (Square) / 4:5 (Vertical) / 9:16 (Vertical)        | 9:16 Vertical video only serves on the Mobile App.<sup>22</sup>        |
+| **Audio**            | AAC / MPEG4                                                               | < 64 KHz.                                                              |
 
 ### 4.3 Sponsored Messaging & Dynamic Ads
 
 **Table 4.3: LinkedIn Messaging & Dynamic Specs**
 
-| Format                       | Component          | Limit              | Note                                        |
+| Format                        | Component           | Limit               | Note                                         |
 |------------------------------|--------------------|--------------------|---------------------------------------------|
-| **Message Ad**               | Subject            | 60 chars           |                                             |
-|                              | Body Text          | 1500 chars         | Plain text formatting.                      |
-| **Conversation Ad**          | Message Text       | 500 chars          | Uses branching CTA buttons (Max 5).         |
-| **Spotlight/Follower**       | Headline           | 50 chars           | Dynamic personalized ad.<sup>23</sup>       |
-|                              | Description        | 70 chars           |                                             |
-|                              | CTA                | 18 chars           |                                             |
-|                              | Logo               | 100 x 100 px       |                                             |
+| **Message Ad**                | Subject             | 60 chars            |                                              |
+|                               | Body Text           | 1500 chars          | Plain text formatting.                       |
+| **Conversation Ad**           | Message Text        | 500 chars           | Uses branching CTA buttons (Max 5).          |
+| **Spotlight/Follower**        | Headline            | 50 chars            | Dynamic personalized ad.<sup>23</sup>        |
+|                               | Description         | 70 chars            |                                              |
+|                               | CTA                 | 18 chars            |                                              |
+|                               | Logo                | 100 x 100 px        |                                              |
 
 ### 4.4 Quality Score
 
@@ -288,15 +288,15 @@ Microsoft Ads (formerly Bing Ads) closely mirrors Google Ads to facilitate the "
 
 **Table 5.1: Microsoft Ads Text Specs**
 
-| Format                  | Component            | Limit                       | Dynamic Syntax                                  |
+| Format                   | Component             | Limit                        | Dynamic Syntax                                   |
 |-------------------------|----------------------|-----------------------------|-------------------------------------------------|
-| **RSA**                 | Headline             | 30 chars (15 max)           | {keyword}, {param1}, {param2}, {param3}         |
-|                         | Description          | 90 chars (4 max)            |                                                 |
-|                         | Path                 | 15 chars                    |                                                 |
-| **Multimedia Ad**       | Short Headline       | 30 chars (15 max)           |                                                 |
-|                         | Long Headline        | 90 chars (5 max)            |                                                 |
-|                         | Ad Text              | 90 chars (4 max)            |                                                 |
-|                         | Images               | 1.91:1, 1:1, 1:2, 4:1       | Must upload multiple ratios.<sup>25</sup>       |
+| **RSA**                  | Headline              | 30 chars (15 max)            | {keyword}, {param1}, {param2}, {param3}          |
+|                          | Description           | 90 chars (4 max)             |                                                  |
+|                          | Path                  | 15 chars                     |                                                  |
+| **Multimedia Ad**        | Short Headline        | 30 chars (15 max)            |                                                  |
+|                          | Long Headline         | 90 chars (5 max)             |                                                  |
+|                          | Ad Text               | 90 chars (4 max)             |                                                  |
+|                          | Images                | 1.91:1, 1:1, 1:2, 4:1        | Must upload multiple ratios.<sup>25</sup>        |
 
 **Dynamic Params Validation:** Microsoft's {param1} feature allows advertisers to insert variable data (e.g., price, stock) associated with a keyword. A validator must ensure that the keyword ID used in the upload sheet actually contains data in the param1 column, otherwise the default text is used.<sup>26</sup>
 
@@ -304,15 +304,15 @@ Microsoft Ads (formerly Bing Ads) closely mirrors Google Ads to facilitate the "
 
 **Table 5.2: Microsoft Extension Limits**
 
-| Extension Type               | Character Limit           | Max Associations       | Notes                                          |
+| Extension Type                | Character Limit            | Max Associations        | Notes                                           |
 |------------------------------|---------------------------|------------------------|------------------------------------------------|
-| **Sitelink**                 | Text: 25 / Desc: 35       | 20 per ad group        |                                                |
-| **Callout**                  | 25 chars                  | 20 per entity          |                                                |
-| **Structured Snippet**       | 25 chars                  | 20 per entity          |                                                |
-| **Action Extension**         | N/A (Select List)         | 20 per entity          | Unique to Microsoft (CTA button).              |
-| **Filter Link**              | Header + Values           | 20 per entity          | Categories like "Deals", "Flower Types".       |
-| **Review**                   | Source + Quote            | 20 per entity          | Third-party reviews (e.g., Trustpilot).        |
-| **Image Extension**          | N/A                       | 25 per entity          |                                                |
+| **Sitelink**                  | Text: 25 / Desc: 35        | 20 per ad group         |                                                 |
+| **Callout**                   | 25 chars                   | 20 per entity           |                                                 |
+| **Structured Snippet**        | 25 chars                   | 20 per entity           |                                                 |
+| **Action Extension**          | N/A (Select List)          | 20 per entity           | Unique to Microsoft (CTA button).               |
+| **Filter Link**               | Header + Values            | 20 per entity           | Categories like "Deals", "Flower Types".        |
+| **Review**                    | Source + Quote             | 20 per entity           | Third-party reviews (e.g., Trustpilot).         |
+| **Image Extension**           | N/A                        | 25 per entity           |                                                 |
 
 ---
 

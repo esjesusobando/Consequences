@@ -7,14 +7,14 @@
 
 ## URLs Procesadas (ejemplos)
 
-| # | URL | Tema | Estado |
-|---|-----|------|--------|
-| 01 | youtube.com/...5v0Jj6s3DdA | Creative Heroes - IA Generativa | Done |
-| 02 | youtube.com/...b6hfk8k-UVk | Recall 2.0 - Knowledge + AI | Pending |
-| 03 | youtube.com/...N9RhW5pexrs | Claude Computer Use | Pending |
-| 04 | INBOUND '25 transcription | AI Fundamentals + How to Win | Done |
-| 05 | youtube.com/...slCl7LrStTM | [Pending] | Pending |
-| 06 | youtube.com/...8FDjwGAJBts | [Pending] | Pending |
+| #  | URL                       | Tema                           | Estado  |
+|---|--------------------------|-------------------------------|--------|
+| 01 | youtube.com/...5v0Jj6s3DdA| Creative Heroes - IA Generativa| Done    |
+| 02 | youtube.com/...b6hfk8k-UVk| Recall 2.0 - Knowledge + AI    | Pending |
+| 03 | youtube.com/...N9RhW5pexrs| Claude Computer Use            | Pending |
+| 04 | INBOUND '25 transcription | AI Fundamentals + How to Win   | Done    |
+| 05 | youtube.com/...slCl7LrStTM| [Pending]                      | Pending |
+| 06 | youtube.com/...8FDjwGAJBts| [Pending]                      | Pending |
 
 ## Tools Used
 

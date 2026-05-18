@@ -300,16 +300,16 @@ end
 
 ## Quick Reference
 
-| Situation                                    | Anti-Pattern                                    | Correct Pattern                                           |
+| Situation                                     | Anti-Pattern                                     | Correct Pattern                                            |
 |----------------------------------------------|-------------------------------------------------|-----------------------------------------------------------|
-| **Error handling**                           | `raise "Not found"`                             | `{:error, :not_found}`                                    |
-| **Missing data**                             | Return `nil`                                    | `{:error, :not_found}`                                    |
-| **Business logic**                           | In LiveView                                     | In context modules                                        |
-| **Associations**                             | `Enum.map` + `Repo.get`                         | `Repo.preload`                                            |
-| **with chains**                              | `validated = fn()`                              | `{:ok, validated} <- fn()`                                |
-| **Frequent queries**                         | No index                                        | `create index(:table, [:column])`                         |
-| **Testing**                                  | No assertions                                   | `assert` expected behavior                                |
-| **Complex logic**                            | 6+ step `with`                                  | Group into 3 functions                                    |
+| **Error handling**                            | `raise "Not found"`                              | `{:error, :not_found}`                                     |
+| **Missing data**                              | Return `nil`                                     | `{:error, :not_found}`                                     |
+| **Business logic**                            | In LiveView                                      | In context modules                                         |
+| **Associations**                              | `Enum.map` + `Repo.get`                          | `Repo.preload`                                             |
+| **with chains**                               | `validated = fn()`                               | `{:ok, validated} <- fn()`                                 |
+| **Frequent queries**                          | No index                                         | `create index(:table, [:column])`                          |
+| **Testing**                                   | No assertions                                    | `assert` expected behavior                                 |
+| **Complex logic**                             | 6+ step `with`                                   | Group into 3 functions                                     |
 
 ---
 

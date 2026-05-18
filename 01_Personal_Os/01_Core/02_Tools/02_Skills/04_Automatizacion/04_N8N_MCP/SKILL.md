@@ -25,15 +25,15 @@ n8n-mcp provides tools organized into categories:
 
 ### Most Used Tools (by success rate)
 
-| Tool                                                                    | Use When                                                                                    | Speed                                               |
+| Tool                                                                     | Use When                                                                                     | Speed                                                |
 |-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| `search_nodes`                                                          | Finding nodes by keyword                                                                    | <20ms                                               |
-| `get_node`                                                              | Understanding node operations (detail="standard")                                           | <10ms                                               |
-| `validate_node`                                                         | Checking configurations (mode="full")                                                       | <100ms                                              |
-| `n8n_create_workflow`                                                   | Creating workflows                                                                          | 100-500ms                                           |
-| `n8n_update_partial_workflow`                                           | Editing workflows (MOST USED!)                                                              | 50-200ms                                            |
-| `validate_workflow`                                                     | Checking complete workflow                                                                  | 100-500ms                                           |
-| `n8n_deploy_template`                                                   | Deploy template to n8n instance                                                             | 200-500ms                                           |
+| `search_nodes`                                                           | Finding nodes by keyword                                                                     | <20ms                                                |
+| `get_node`                                                               | Understanding node operations (detail="standard")                                            | <10ms                                                |
+| `validate_node`                                                          | Checking configurations (mode="full")                                                        | <100ms                                               |
+| `n8n_create_workflow`                                                    | Creating workflows                                                                           | 100-500ms                                            |
+| `n8n_update_partial_workflow`                                            | Editing workflows (MOST USED!)                                                               | 50-200ms                                             |
+| `validate_workflow`                                                      | Checking complete workflow                                                                   | 100-500ms                                            |
+| `n8n_deploy_template`                                                    | Deploy template to n8n instance                                                              | 200-500ms                                            |
 
 ---
 
@@ -567,17 +567,17 @@ validate_node({nodeType: "nodes-base.webhook", config: {}, mode: "minimal"})
 
 ## Performance Characteristics
 
-| Tool                                                                  | Response Time                                             | Payload Size                                             |
+| Tool                                                                   | Response Time                                              | Payload Size                                              |
 |-----------------------------------------------------------------------|-----------------------------------------------------------|----------------------------------------------------------|
-| search_nodes                                                          | <20ms                                                     | Small                                                    |
-| get_node (standard)                                                   | <10ms                                                     | ~1-2KB                                                   |
-| get_node (full)                                                       | <100ms                                                    | 3-8KB                                                    |
-| validate_node (minimal)                                               | <50ms                                                     | Small                                                    |
-| validate_node (full)                                                  | <100ms                                                    | Medium                                                   |
-| validate_workflow                                                     | 100-500ms                                                 | Medium                                                   |
-| n8n_create_workflow                                                   | 100-500ms                                                 | Medium                                                   |
-| n8n_update_partial_workflow                                           | 50-200ms                                                  | Small                                                    |
-| n8n_deploy_template                                                   | 200-500ms                                                 | Medium                                                   |
+| search_nodes                                                           | <20ms                                                      | Small                                                     |
+| get_node (standard)                                                    | <10ms                                                      | ~1-2KB                                                    |
+| get_node (full)                                                        | <100ms                                                     | 3-8KB                                                     |
+| validate_node (minimal)                                                | <50ms                                                      | Small                                                     |
+| validate_node (full)                                                   | <100ms                                                     | Medium                                                    |
+| validate_workflow                                                      | 100-500ms                                                  | Medium                                                    |
+| n8n_create_workflow                                                    | 100-500ms                                                  | Medium                                                    |
+| n8n_update_partial_workflow                                            | 50-200ms                                                   | Small                                                     |
+| n8n_deploy_template                                                    | 200-500ms                                                  | Medium                                                    |
 
 ---
 

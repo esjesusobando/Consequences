@@ -16,38 +16,38 @@ Se realizó un análisis exhaustivo de todo el proyecto PersonalOS (Think Differ
 
 ### 🔴 P0 — Críticos (6)
 
-| EC                                               | Archivo                                                                | Problema                                                                                                                                 |
+| EC                                                | Archivo                                                                 | Problema                                                                                                                                  |
 |--------------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| 01                                               | `.env`                                                                 | API Keys reales expuestas (GITHUB_AUTH, NOTION_TOKEN, OPENROUTER, SUPABASE, etc.)                                                        |
-| 02                                               | `52_Safe_Commit.py`                                                    | Ruta relativa hardcodeada — falla fuera del directorio raíz                                                                              |
-| 03                                               | `54_Commit_Guard.py`                                                   | Mismo patrón de rutas relativas + docstring con ruta incorrecta                                                                          |
-| 04                                               | `29_Guardrails_Service.py`                                             | Detección PII frágil: solo detecta `"PII:"` / `"DNI:"` literales                                                                         |
-| 05                                               | `00_Context_Reset.py`                                                  | Sort de notas por nombre alfabético, no por fecha de modificación                                                                        |
-| 06                                               | `13_Validate_Stack.py`                                                 | Doble import `config_paths` + `find_project_root()` redundante → posible ROOT_DIR divergente                                             |
+| 01                                                | `.env`                                                                  | API Keys reales expuestas (GITHUB_AUTH, NOTION_TOKEN, OPENROUTER, SUPABASE, etc.)                                                         |
+| 02                                                | `52_Safe_Commit.py`                                                     | Ruta relativa hardcodeada — falla fuera del directorio raíz                                                                               |
+| 03                                                | `54_Commit_Guard.py`                                                    | Mismo patrón de rutas relativas + docstring con ruta incorrecta                                                                           |
+| 04                                                | `29_Guardrails_Service.py`                                              | Detección PII frágil: solo detecta `"PII:"` / `"DNI:"` literales                                                                          |
+| 05                                                | `00_Context_Reset.py`                                                   | Sort de notas por nombre alfabético, no por fecha de modificación                                                                         |
+| 06                                                | `13_Validate_Stack.py`                                                  | Doble import `config_paths` + `find_project_root()` redundante → posible ROOT_DIR divergente                                              |
 
 ### 🟡 P1 — Medios (8)
 
-| EC                                               | Archivo                                                                    | Problema                                                                                                                              |
+| EC                                                | Archivo                                                                     | Problema                                                                                                                               |
 |--------------------------------------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| 07                                               | `50_System_Health_Monitor.py`                                              | `colorama` sin try/except — crash en entornos sin el paquete                                                                          |
-| 08                                               | `config_paths.py`                                                          | `COMPOUND_ENGINE_DIR` apunta a `Compound_Engine` (no existe; real: `03_Compound_Engine`)                                              |
-| 09                                               | `42_Audit_Engineering.py`                                                  | `GentlemanEcosystemAuditor.root_dir` sube solo 1 nivel (debería ser 2) → PURE GREEN falso                                             |
-| 10                                               | `03_Compound_Engine/`                                                      | Requiere `bun` sin validación ni fallback                                                                                             |
-| 11                                               | `06_Tests/test_safe_commit.py`                                             | Sin cobertura del caso `Exception` en `run_audit()`                                                                                   |
-| 12                                               | `00_Context_Reset.py`                                                      | `argparse` importado 2 veces                                                                                                          |
-| 13                                               | `config_paths.py`                                                          | `except:` desnudo en `get_active_project()` captura `KeyboardInterrupt`                                                               |
-| 14                                               | `.mcp.json`                                                                | Rutas absolutas hardcodeadas de Windows — rompe en otro equipo                                                                        |
+| 07                                                | `50_System_Health_Monitor.py`                                               | `colorama` sin try/except — crash en entornos sin el paquete                                                                           |
+| 08                                                | `config_paths.py`                                                           | `COMPOUND_ENGINE_DIR` apunta a `Compound_Engine` (no existe; real: `03_Compound_Engine`)                                               |
+| 09                                                | `42_Audit_Engineering.py`                                                   | `GentlemanEcosystemAuditor.root_dir` sube solo 1 nivel (debería ser 2) → PURE GREEN falso                                              |
+| 10                                                | `03_Compound_Engine/`                                                       | Requiere `bun` sin validación ni fallback                                                                                              |
+| 11                                                | `06_Tests/test_safe_commit.py`                                              | Sin cobertura del caso `Exception` en `run_audit()`                                                                                    |
+| 12                                                | `00_Context_Reset.py`                                                       | `argparse` importado 2 veces                                                                                                           |
+| 13                                                | `config_paths.py`                                                           | `except:` desnudo en `get_active_project()` captura `KeyboardInterrupt`                                                                |
+| 14                                                | `.mcp.json`                                                                 | Rutas absolutas hardcodeadas de Windows — rompe en otro equipo                                                                         |
 
 ### 🟢 P2 — Bajos (6)
 
-| EC                                               | Problema                                                                                        |
+| EC                                                | Problema                                                                                         |
 |--------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| 15                                               | Skills duplicadas en 3+ ubicaciones                                                             |
-| 16                                               | `62_Test_Pollution.py` vacío (46 bytes)                                                         |
-| 17                                               | Numeración discontinua: falta `63_X.py`                                                         |
-| 18                                               | GGA hooks (shell) no funcionan en Windows nativo                                                |
-| 19                                               | `conftest.py` usa `chmod(0o755)` — ignorado en NTFS                                             |
-| 20                                               | Scripts grandes sin timeouts en APIs externas                                                   |
+| 15                                                | Skills duplicadas en 3+ ubicaciones                                                              |
+| 16                                                | `62_Test_Pollution.py` vacío (46 bytes)                                                          |
+| 17                                                | Numeración discontinua: falta `63_X.py`                                                          |
+| 18                                                | GGA hooks (shell) no funcionan en Windows nativo                                                 |
+| 19                                                | `conftest.py` usa `chmod(0o755)` — ignorado en NTFS                                              |
+| 20                                                | Scripts grandes sin timeouts en APIs externas                                                    |
 
 - --
 

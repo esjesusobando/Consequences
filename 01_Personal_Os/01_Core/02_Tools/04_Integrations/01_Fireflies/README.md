@@ -16,12 +16,12 @@ Sync your [Fireflies.ai](https://fireflies.ai) meeting notes and transcripts int
 
 ## Available Tools (via Fireflies MCP)
 
-| Tool                                                  | Description                                                   |
+| Tool                                                   | Description                                                    |
 |-------------------------------------------------------|---------------------------------------------------------------|
-| `search_meetings`                                     | Search Fireflies meetings                                     |
-| `get_meeting_details`                                 | Get full meeting metadata                                     |
-| `get_transcript`                                      | Retrieve the transcript                                       |
-| `check_new_meetings`                                  | List meetings since last sync                                 |
+| `search_meetings`                                      | Search Fireflies meetings                                      |
+| `get_meeting_details`                                  | Get full meeting metadata                                      |
+| `get_transcript`                                       | Retrieve the transcript                                        |
+| `check_new_meetings`                                   | List meetings since last sync                                  |
 
 ## How Syncing Works
 

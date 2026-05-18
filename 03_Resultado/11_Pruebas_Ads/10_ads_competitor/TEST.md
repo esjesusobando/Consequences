@@ -47,12 +47,12 @@ Strategic Response:  100/100  ██████████████  (10%)
 
 ### Ad Copy Analysis
 
-| Competitor | Headline Theme | CTA | Tone | USPs |
-|------------|----------------|-----|------|------|
-| Notion | Productivity, collaboration | Start free | Professional | All-in-one workspace |
-| Todoist | Simplicity, clarity | Sign up free | Approachable | Easy to use |
-| Linear | Speed, design | Get started | Bold, technical | Beautiful, fast |
-| **Think Different** | AI-first, skills | Try free | Innovative | 317 skills, personal OS |
+| Competitor         | Headline Theme             | CTA         | Tone           | USPs                   |
+|-------------------|---------------------------|------------|---------------|-----------------------|
+| Notion             | Productivity, collaboration| Start free  | Professional   | All-in-one workspace   |
+| Todoist            | Simplicity, clarity        | Sign up free| Approachable   | Easy to use            |
+| Linear             | Speed, design              | Get started | Bold, technical| Beautiful, fast        |
+| **Think Different**| AI-first, skills           | Try free    | Innovative     | 317 skills, personal OS|
 
 **Messaging Gap Found:** No competitor emphasizes "AI operating system" or "317 skills" positioning. This is a clear differentiation opportunity.
 
@@ -64,24 +64,24 @@ Strategic Response:  100/100  ██████████████  (10%)
 - None bidding directly on "317 skills"
 
 **Non-Brand Overlap:**
-| Keyword | Notion | Todoist | Linear | Our Brand |
-|---------|--------|---------|--------|-----------|
-| AI productivity | ✅ | ❌ | ✅ | ✅ |
-| task management | ✅ | ✅ | ✅ | ✅ |
-| personal organization | ✅ | ✅ | ❌ | ✅ |
-| developer tools | ❌ | ❌ | ✅ | ✅ |
-| AI operating system | ✅ | ❌ | ❌ | ✅ (ours unique) |
+| Keyword              | Notion  | Todoist  | Linear  | Our Brand      |
+|---------------------|--------|---------|--------|---------------|
+| AI productivity      | ✅       | ❌        | ✅       | ✅              |
+| task management      | ✅       | ✅        | ✅       | ✅              |
+| personal organization| ✅       | ✅        | ❌       | ✅              |
+| developer tools      | ❌       | ❌        | ✅       | ✅              |
+| AI operating system  | ✅       | ❌        | ❌       | ✅ (ours unique)|
 
 **Keyword Gaps:** "AI operating system" and "317 skills" have zero competition - own these terms immediately.
 
 ### Creative Strategy Comparison
 
-| Format | Notion | Todoist | Linear | Opportunity |
-|--------|--------|---------|--------|-------------|
-| Video | ✅ Heavy | ❌ | ✅ Light | TikTok未被充分利用 |
-| UGC | ✅ Testimonials | ❌ | ❌ | 未开发 |
-| Carousel | ✅ | ✅ | ❌ | 差异化机会 |
-| Document | ✅ Case studies | ❌ | ✅ | B2B内容缺口 |
+| Format  | Notion        | Todoist  | Linear  | Opportunity  |
+|--------|--------------|---------|--------|-------------|
+| Video   | ✅ Heavy       | ❌        | ✅ Light | TikTok未被充分利用 |
+| UGC     | ✅ Testimonials| ❌        | ❌       | 未开发          |
+| Carousel| ✅             | ✅        | ❌       | 差异化机会        |
+| Document| ✅ Case studies| ❌        | ✅       | B2B内容缺口      |
 
 ### Gap & Opportunity Identification
 

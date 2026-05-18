@@ -99,10 +99,10 @@ Un webinar de 2026 sobre "pasado/presente/futuro" no se outdated rápidamente.
 - Formato exportación: Video mp4
 
 ## Rating de Contenido
-| Aspecto | Rating | Notas |
-|---------|--------|-------|
-| Calidad información | ⭐⭐⭐⭐ | Académico, estructurado |
-| Profundidad técnica | ⭐⭐ | Superficial para expertos |
-| Presentación | ⭐⭐⭐ | Profesional, clear |
-| Relevancia | ⭐⭐⭐⭐ | Temas atemporales |
-| Accesibilidad | ⭐⭐⭐⭐ | Lenguaje claro |
+| Aspecto            | Rating  | Notas                    |
+|-------------------|--------|-------------------------|
+| Calidad información| ⭐⭐⭐⭐    | Académico, estructurado  |
+| Profundidad técnica| ⭐⭐      | Superficial para expertos|
+| Presentación       | ⭐⭐⭐     | Profesional, clear       |
+| Relevancia         | ⭐⭐⭐⭐    | Temas atemporales        |
+| Accesibilidad      | ⭐⭐⭐⭐    | Lenguaje claro           |

@@ -15,14 +15,14 @@ For manual loading, read the SKILL.md file directly.
 
 ### Gentleman.Dots Specific (Repository Skills)
 
-| Skill                                         | Description                                                                          | File                                                                    |
+| Skill                                          | Description                                                                           | File                                                                     |
 |-----------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| `gentleman-bubbletea`                         | Bubbletea TUI patterns, Model-Update-View, screen navigation                         | [SKILL.md](skills/gentleman-bubbletea/SKILL.md)                         |
-| `gentleman-trainer`                           | Vim Trainer RPG system, exercises, progression, boss fights                          | [SKILL.md](skills/gentleman-trainer/SKILL.md)                           |
-| `gentleman-installer`                         | Installation steps, interactive/non-interactive modes                                | [SKILL.md](skills/gentleman-installer/SKILL.md)                         |
-| `gentleman-e2e`                               | Docker-based E2E testing, multi-platform validation                                  | [SKILL.md](skills/gentleman-e2e/SKILL.md)                               |
-| `gentleman-system`                            | OS detection, command execution, cross-platform support                              | [SKILL.md](skills/gentleman-system/SKILL.md)                            |
-| `go-testing`                                  | Go testing patterns, table-driven tests, Bubbletea testing                           | [SKILL.md](skills/go-testing/SKILL.md)                                  |
+| `gentleman-bubbletea`                          | Bubbletea TUI patterns, Model-Update-View, screen navigation                          | [SKILL.md](skills/gentleman-bubbletea/SKILL.md)                          |
+| `gentleman-trainer`                            | Vim Trainer RPG system, exercises, progression, boss fights                           | [SKILL.md](skills/gentleman-trainer/SKILL.md)                            |
+| `gentleman-installer`                          | Installation steps, interactive/non-interactive modes                                 | [SKILL.md](skills/gentleman-installer/SKILL.md)                          |
+| `gentleman-e2e`                                | Docker-based E2E testing, multi-platform validation                                   | [SKILL.md](skills/gentleman-e2e/SKILL.md)                                |
+| `gentleman-system`                             | OS detection, command execution, cross-platform support                               | [SKILL.md](skills/gentleman-system/SKILL.md)                             |
+| `go-testing`                                   | Go testing patterns, table-driven tests, Bubbletea testing                            | [SKILL.md](skills/go-testing/SKILL.md)                                   |
 
 > **Note:** User-facing AI skills (React 19, TypeScript, SDD workflow, etc.) are now managed by [gentle-ai](https://github.com/Gentleman-Programming/gentle-ai).
 
@@ -30,15 +30,15 @@ For manual loading, read the SKILL.md file directly.
 
 When performing these actions, **ALWAYS** invoke the corresponding skill FIRST:
 
-| Action                                           | Invoke First                                  | Why                                                                         |
+| Action                                            | Invoke First                                   | Why                                                                          |
 |--------------------------------------------------|-----------------------------------------------|-----------------------------------------------------------------------------|
-| Adding new TUI screen                            | `gentleman-bubbletea`                         | Screen constants, Model state, Update handlers                              |
-| Creating Vim exercises                           | `gentleman-trainer`                           | Exercise structure, module registration, validation                         |
-| Adding installation step                         | `gentleman-installer`                         | Step registration, OS handling, error wrapping                              |
-| Writing E2E tests                                | `gentleman-e2e`                               | Test structure, Docker patterns, verification                               |
-| Adding OS support                                | `gentleman-system`                            | Detection priority, command execution patterns                              |
-| Writing Go tests                                 | `go-testing`                                  | Table-driven tests, teatest patterns                                        |
-| Creating new skill                               | `skill-creator`                               | Skill structure, naming, frontmatter                                        |
+| Adding new TUI screen                             | `gentleman-bubbletea`                          | Screen constants, Model state, Update handlers                               |
+| Creating Vim exercises                            | `gentleman-trainer`                            | Exercise structure, module registration, validation                          |
+| Adding installation step                          | `gentleman-installer`                          | Step registration, OS handling, error wrapping                               |
+| Writing E2E tests                                 | `gentleman-e2e`                                | Test structure, Docker patterns, verification                                |
+| Adding OS support                                 | `gentleman-system`                             | Detection priority, command execution patterns                               |
+| Writing Go tests                                  | `go-testing`                                   | Table-driven tests, teatest patterns                                         |
+| Creating new skill                                | `skill-creator`                                | Skill structure, naming, frontmatter                                         |
 
 ## How Skills Work
 
@@ -155,16 +155,16 @@ Sub-agents get a fresh context with NO memory. The orchestrator is responsible f
 
 Each SDD phase has explicit read/write rules based on the dependency graph:
 
-| Phase                                 | Reads artifacts from backend                              | Writes artifact                                |
+| Phase                                  | Reads artifacts from backend                               | Writes artifact                                 |
 |---------------------------------------|-----------------------------------------------------------|------------------------------------------------|
-| `sdd-explore`                         | Nothing                                                   | Yes (`explore`)                                |
-| `sdd-propose`                         | Exploration (if exists, optional)                         | Yes (`proposal`)                               |
-| `sdd-spec`                            | Proposal (required)                                       | Yes (`spec`)                                   |
-| `sdd-design`                          | Proposal (required)                                       | Yes (`design`)                                 |
-| `sdd-tasks`                           | Spec + Design (required)                                  | Yes (`tasks`)                                  |
-| `sdd-apply`                           | Tasks + Spec + Design                                     | Yes (`apply-progress`)                         |
-| `sdd-verify`                          | Spec + Tasks                                              | Yes (`verify-report`)                          |
-| `sdd-archive`                         | All artifacts                                             | Yes (`archive-report`)                         |
+| `sdd-explore`                          | Nothing                                                    | Yes (`explore`)                                 |
+| `sdd-propose`                          | Exploration (if exists, optional)                          | Yes (`proposal`)                                |
+| `sdd-spec`                             | Proposal (required)                                        | Yes (`spec`)                                    |
+| `sdd-design`                           | Proposal (required)                                        | Yes (`design`)                                  |
+| `sdd-tasks`                            | Spec + Design (required)                                   | Yes (`tasks`)                                   |
+| `sdd-apply`                            | Tasks + Spec + Design                                      | Yes (`apply-progress`)                          |
+| `sdd-verify`                           | Spec + Tasks                                               | Yes (`verify-report`)                           |
+| `sdd-archive`                          | All artifacts                                              | Yes (`archive-report`)                          |
 
 For SDD phases with required dependencies, the sub-agent reads them directly from the backend (engram or openspec) — the orchestrator passes artifact references (topic keys or file paths), NOT the content itself.
 
@@ -172,18 +172,18 @@ For SDD phases with required dependencies, the sub-agent reads them directly fro
 
 When launching sub-agents for SDD phases with engram mode, pass these exact topic_keys as artifact references:
 
-| Artifact                                | Topic Key                                                  |
+| Artifact                                 | Topic Key                                                   |
 |-----------------------------------------|------------------------------------------------------------|
-| Project context                         | `sdd-init/{project}`                                       |
-| Exploration                             | `sdd/{change-name}/explore`                                |
-| Proposal                                | `sdd/{change-name}/proposal`                               |
-| Spec                                    | `sdd/{change-name}/spec`                                   |
-| Design                                  | `sdd/{change-name}/design`                                 |
-| Tasks                                   | `sdd/{change-name}/tasks`                                  |
-| Apply progress                          | `sdd/{change-name}/apply-progress`                         |
-| Verify report                           | `sdd/{change-name}/verify-report`                          |
-| Archive report                          | `sdd/{change-name}/archive-report`                         |
-| DAG state                               | `sdd/{change-name}/state`                                  |
+| Project context                          | `sdd-init/{project}`                                        |
+| Exploration                              | `sdd/{change-name}/explore`                                 |
+| Proposal                                 | `sdd/{change-name}/proposal`                                |
+| Spec                                     | `sdd/{change-name}/spec`                                    |
+| Design                                   | `sdd/{change-name}/design`                                  |
+| Tasks                                    | `sdd/{change-name}/tasks`                                   |
+| Apply progress                           | `sdd/{change-name}/apply-progress`                          |
+| Verify report                            | `sdd/{change-name}/verify-report`                           |
+| Archive report                           | `sdd/{change-name}/archive-report`                          |
+| DAG state                                | `sdd/{change-name}/state`                                   |
 
 Sub-agents retrieve full content via two steps:
 1. `mem_search(query: "{topic_key}", project: "{project}")` → get observation ID

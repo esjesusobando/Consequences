@@ -25,13 +25,13 @@ Este workflow elimina esa fricción. Una sola pregunta, un destino claro.
 
 ### Paso 1 — ¿Qué tipo de captura es?
 
-| Tipo                                            | Destino                                                                    | Ejemplo                                                                   |
+| Tipo                                             | Destino                                                                     | Ejemplo                                                                    |
 |-------------------------------------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| **Idea / Tarea**                                | `00_Winter_is_Coming/BACKLOG.md`                                           | "Crear workflow de English practice"                                      |
-| **Aprendizaje**                                 | `04_Operations/03_Process_Notes/` + **Engram**                             | "Descubrí que ctx.resume() es necesario en iOS"                           |
-| **Referencia**                                  | `02_Knowledge/`                                                            | Link, paper, concepto a profundizar                                       |
-| **Insight de diseño**                           | `04_Operations/04_Memory_Brain/`                                           | Reflexión sobre UX, AI, producto                                          |
-| **Bug / Problema**                              | `00_Winter_is_Coming/BACKLOG.md` con tag `[BUG]`                           | "El script 13 falla con archivos vacíos"                                  |
+| **Idea / Tarea**                                 | `00_Winter_is_Coming/BACKLOG.md`                                            | "Crear workflow de English practice"                                       |
+| **Aprendizaje**                                  | `04_Operations/03_Process_Notes/` + **Engram**                              | "Descubrí que ctx.resume() es necesario en iOS"                            |
+| **Referencia**                                   | `02_Knowledge/`                                                             | Link, paper, concepto a profundizar                                        |
+| **Insight de diseño**                            | `04_Operations/04_Memory_Brain/`                                            | Reflexión sobre UX, AI, producto                                           |
+| **Bug / Problema**                               | `00_Winter_is_Coming/BACKLOG.md` con tag `[BUG]`                            | "El script 13 falla con archivos vacíos"                                   |
 
 ### Paso 2 — Escribir en crudo
 

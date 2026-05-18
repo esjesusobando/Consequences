@@ -7,12 +7,12 @@ Este análisis de **Standard v4.0 (Value First)** trasciende la visualización d
 > [!IMPORTANT]
 > Los ratios calculados son el pulso real de la eficiencia operativa.
 
-| 🏷️ KPI / Ratio                                | 🔢 Valor                                   | 💡 Relevancia de Negocio                             |
+| 🏷️ KPI / Ratio                                 | 🔢 Valor                                    | 💡 Relevancia de Negocio                              |
 |-----------------------------------------------|-------------------------------------------|-----------------------------------------------------|
-| **Volumen Total**                             | N/A registros                             | Masa crítica de datos                               |
+| **Volumen Total**                              | N/A registros                              | Masa crítica de datos                                |
 
 ### 📈 Profundización Estadística (Auditoría de Lógica)
-| 📉 Variable                             | 🧮 Media                             | 📉 Estabilidad                             | 📊 Status                             |
+| 📉 Variable                              | 🧮 Media                              | 📉 Estabilidad                              | 📊 Status                              |
 |----------------------------------------|-------------------------------------|-------------------------------------------|--------------------------------------|
 
 ## 🧠 3. Strategic Analysis Matrix (The 'Why' Layer)

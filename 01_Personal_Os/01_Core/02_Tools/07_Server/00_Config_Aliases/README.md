@@ -6,10 +6,10 @@ Aliases de shell para Think Different PersonalOS.
 
 ## Contenido
 
-| Archivo                                  | Descripción                                                         |
+| Archivo                                   | Descripción                                                          |
 |------------------------------------------|---------------------------------------------------------------------|
-| `aliases.sh`                             | Aliases para bash (source este archivo)                             |
-| `README.md`                              | Este archivo                                                        |
+| `aliases.sh`                              | Aliases para bash (source este archivo)                              |
+| `README.md`                               | Este archivo                                                         |
 
 ## Instalación
 

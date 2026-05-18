@@ -108,11 +108,11 @@ Usa la plantilla en `templates/pr_template.md`.
 
 Patrón Google para releases seguros:
 
-| Estrategia | Cuándo usarla |
-|---|---|
-| **Canary** | Cambios de alto riesgo — primero al 5% del tráfico |
-| **Blue/Green** | Cambios que requieren rollback instantáneo |
-| **Rolling** | Updates rutinarios de bajo riesgo |
+| Estrategia    | Cuándo usarla                                     |
+|--------------|--------------------------------------------------|
+| **Canary**    | Cambios de alto riesgo — primero al 5% del tráfico|
+| **Blue/Green**| Cambios que requieren rollback instantáneo        |
+| **Rolling**   | Updates rutinarios de bajo riesgo                 |
 
 ```bash
 # Despliegue canary con Cloud Deploy

@@ -13,12 +13,12 @@
 
 ## Recommended Platform Mix
 
-| Platform                | Role            | Budget %         | Why                                                             |
+| Platform                 | Role             | Budget %          | Why                                                              |
 |-------------------------|-----------------|------------------|-----------------------------------------------------------------|
-| Apple Ads               | Primary         | 25-30%           | High-intent (searching App Store), iOS-specific, best CVR       |
-| Google App (UAC)        | Primary         | 25-30%           | Cross-network reach (Search, Play, YouTube, Display)            |
-| Meta App Installs       | Primary         | 20-25%           | Precise targeting, Advantage+ App Campaigns                     |
-| TikTok                  | Secondary       | 15-20%           | High engagement, young demographics, low CPM                    |
+| Apple Ads                | Primary          | 25-30%            | High-intent (searching App Store), iOS-specific, best CVR        |
+| Google App (UAC)         | Primary          | 25-30%            | Cross-network reach (Search, Play, YouTube, Display)             |
+| Meta App Installs        | Primary          | 20-25%            | Precise targeting, Advantage+ App Campaigns                      |
+| TikTok                   | Secondary        | 15-20%            | High engagement, young demographics, low CPM                     |
 
 ## Campaign Architecture
 
@@ -80,12 +80,12 @@ Account; TikTok
 - **Before/after**: life without app vs with app
 
 ### Creative by Platform
-| Platform         | Format                      | Length             | Notes                                  |
+| Platform          | Format                       | Length              | Notes                                   |
 |------------------|-----------------------------|--------------------|----------------------------------------|
-| Meta             | Video (9:16 + 1:1)          | 15-30s             | Multiple aspect ratios required        |
-| Google UAC       | Video + image + HTML5       | 15-30s video       | Provide 20+ creative assets            |
-| TikTok           | Vertical video (9:16)       | 15-30s             | Native-looking, not polished           |
-| Apple Ads        | App Store screenshots       | N/A                | Custom Product Pages recommended       |
+| Meta              | Video (9:16 + 1:1)           | 15-30s              | Multiple aspect ratios required         |
+| Google UAC        | Video + image + HTML5        | 15-30s video        | Provide 20+ creative assets             |
+| TikTok            | Vertical video (9:16)        | 15-30s              | Native-looking, not polished            |
+| Apple Ads         | App Store screenshots        | N/A                 | Custom Product Pages recommended        |
 
 ### App Store Creative Alignment
 - Ad creative should match App Store listing (message match)
@@ -119,38 +119,38 @@ Account; TikTok
 
 ## Budget Guidelines
 
-| Metric                        | Mobile App Benchmark                      |
+| Metric                         | Mobile App Benchmark                       |
 |-------------------------------|-------------------------------------------|
-| Meta CPI (iOS)                | $3-$8                                     |
-| Meta CPI (Android)            | $1-$4                                     |
-| Google UAC CPI                | $1-$5                                     |
-| Apple Ads CPI                 | $2-$5                                     |
-| TikTok CPI                    | $1-$3                                     |
-| Meta CPA (subscription)       | $15-$50                                   |
-| Cost per subscriber           | 3-5x CPI                                  |
-| Min monthly budget            | $5,000+ (Meta + UAC minimum viable)       |
+| Meta CPI (iOS)                 | $3-$8                                      |
+| Meta CPI (Android)             | $1-$4                                      |
+| Google UAC CPI                 | $1-$5                                      |
+| Apple Ads CPI                  | $2-$5                                      |
+| TikTok CPI                     | $1-$3                                      |
+| Meta CPA (subscription)        | $15-$50                                    |
+| Cost per subscriber            | 3-5x CPI                                   |
+| Min monthly budget             | $5,000+ (Meta + UAC minimum viable)        |
 
 ### Budget Allocation by App Type
-| App Type                     | Meta %         | Google %         | TikTok %         | Apple %         |
+| App Type                      | Meta %          | Google %          | TikTok %          | Apple %          |
 |------------------------------|----------------|------------------|------------------|-----------------|
-| Gaming                       | 35%            | 30%              | 20%              | 15%             |
-| Subscription (utility)       | 40%            | 25%              | 15%              | 20%             |
-| E-commerce app               | 30%            | 35%              | 20%              | 15%             |
-| Social/community             | 30%            | 25%              | 30%              | 15%             |
+| Gaming                        | 35%             | 30%               | 20%               | 15%              |
+| Subscription (utility)        | 40%             | 25%               | 15%               | 20%              |
+| E-commerce app                | 30%             | 35%               | 20%               | 15%              |
+| Social/community              | 30%             | 25%               | 30%               | 15%              |
 
 ## Bidding Strategy Selection
 
-| Platform           | Optimization Goal           | Recommended Strategy                         |
+| Platform            | Optimization Goal            | Recommended Strategy                          |
 |--------------------|-----------------------------|----------------------------------------------|
-| Meta               | App installs (volume)       | Lowest Cost (Advantage+ App Campaigns)       |
-| Meta               | In-app events               | Cost Cap or ROAS Goal                        |
-| Google UAC         | Install volume              | Maximize Conversions (install)               |
-| Google UAC         | In-app actions              | Target CPA (registration/purchase)           |
-| Google UAC         | Revenue                     | Target ROAS (in-app purchases)               |
-| Apple Search       | Default                     | Cost-Per-Tap (CPT) manual bidding            |
-| Apple Search       | Scale                       | Cost-Per-Acquisition (CPA) goal              |
-| TikTok             | <50 conversions/week        | Maximum Delivery                             |
-| TikTok             | 50+ conversions/week        | Cost Cap                                     |
+| Meta                | App installs (volume)        | Lowest Cost (Advantage+ App Campaigns)        |
+| Meta                | In-app events                | Cost Cap or ROAS Goal                         |
+| Google UAC          | Install volume               | Maximize Conversions (install)                |
+| Google UAC          | In-app actions               | Target CPA (registration/purchase)            |
+| Google UAC          | Revenue                      | Target ROAS (in-app purchases)                |
+| Apple Search        | Default                      | Cost-Per-Tap (CPT) manual bidding             |
+| Apple Search        | Scale                        | Cost-Per-Acquisition (CPA) goal               |
+| TikTok              | <50 conversions/week         | Maximum Delivery                              |
+| TikTok              | 50+ conversions/week         | Cost Cap                                      |
 
 ## Attribution & Measurement
 
@@ -163,14 +163,14 @@ Account; TikTok
 
 ## KPI Targets
 
-| Metric                       | Month 1         | Month 3         | Month 6           |
+| Metric                        | Month 1          | Month 3          | Month 6            |
 |------------------------------|-----------------|-----------------|-------------------|
-| CPI                          | Baseline        | -20%            | -30%              |
-| Day 1 Retention              | Track           | 30%+            | 35%+              |
-| Day 7 Retention              | Track           | 15%+            | 20%+              |
-| Install → Registration       | Track           | 40%+            | 50%+              |
-| CPA (key event)              | Baseline        | Target          | Target -15%       |
-| LTV:CPI Ratio                | Track           | 2:1             | 3:1+              |
+| CPI                           | Baseline         | -20%             | -30%               |
+| Day 1 Retention               | Track            | 30%+             | 35%+               |
+| Day 7 Retention               | Track            | 15%+             | 20%+               |
+| Install → Registration        | Track            | 40%+             | 50%+               |
+| CPA (key event)               | Baseline         | Target           | Target -15%        |
+| LTV:CPI Ratio                 | Track            | 2:1              | 3:1+               |
 
 ## Common Pitfalls
 

@@ -612,18 +612,18 @@ Add to supported targets list and include usage examples.
 
 ## Common Pitfalls and Solutions
 
-| Pitfall                                                                     | Solution                                                                                            |
+| Pitfall                                                                      | Solution                                                                                             |
 |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| **Double-nesting** (`.copilot/.copilot/`)                                   | Check `path.basename(outputRoot)` before nesting                                                    |
-| **Inconsistent name normalization**                                         | Use single `normalizeName()` function everywhere                                                    |
-| **Fragile content transformation**                                          | Test regex patterns against edge cases (file paths, URLs)                                           |
-| **Heuristic section extraction fails**                                      | Use structural mapping (description → Overview, body → Procedure) instead                           |
-| **MCP config overwrites user edits**                                        | Always backup with timestamp before overwriting                                                     |
-| **Skill body not loaded**                                                   | Verify `ClaudeSkill` has `skillPath` field for file reading                                         |
-| **Missing deduplication**                                                   | Build `usedNames` set before conversion, pass to each converter                                     |
-| **Unsupported features cause silent loss**                                  | Always warn to stderr (hooks, incompatible MCP types, etc.)                                         |
-| **Test isolation failures**                                                 | Use unique temp directories per test, clean up afterward                                            |
-| **Command namespace collisions after flattening**                           | Use `uniqueName()` with deduplication, test multiple collisions                                     |
+| **Double-nesting** (`.copilot/.copilot/`)                                    | Check `path.basename(outputRoot)` before nesting                                                     |
+| **Inconsistent name normalization**                                          | Use single `normalizeName()` function everywhere                                                     |
+| **Fragile content transformation**                                           | Test regex patterns against edge cases (file paths, URLs)                                            |
+| **Heuristic section extraction fails**                                       | Use structural mapping (description → Overview, body → Procedure) instead                            |
+| **MCP config overwrites user edits**                                         | Always backup with timestamp before overwriting                                                      |
+| **Skill body not loaded**                                                    | Verify `ClaudeSkill` has `skillPath` field for file reading                                          |
+| **Missing deduplication**                                                    | Build `usedNames` set before conversion, pass to each converter                                      |
+| **Unsupported features cause silent loss**                                   | Always warn to stderr (hooks, incompatible MCP types, etc.)                                          |
+| **Test isolation failures**                                                  | Use unique temp directories per test, clean up afterward                                             |
+| **Command namespace collisions after flattening**                            | Use `uniqueName()` with deduplication, test multiple collisions                                      |
 
 ---
 

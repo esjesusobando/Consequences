@@ -10,15 +10,15 @@
 
 ### ✅ Ecosistema Gentleman 100% INSTALADO
 
-| Repo                                             | Skills                           | Estado                           |
+| Repo                                              | Skills                            | Estado                            |
 |--------------------------------------------------|----------------------------------|----------------------------------|
-| gentleman-skills/curated                         | 17                               | ✅                                |
-| gentle-ai                                        | 2                                | ✅                                |
-| Gentleman.Dots                                   | 6                                | ✅                                |
-| agent-teams-lite                                 | 12                               | ✅                                |
-| taste-skill                                      | 5                                | ✅                                |
-| n8n-skills                                       | 7                                | ✅                                |
-| GGA skills                                       | 4                                | ✅                                |
+| gentleman-skills/curated                          | 17                                | ✅                                 |
+| gentle-ai                                         | 2                                 | ✅                                 |
+| Gentleman.Dots                                    | 6                                 | ✅                                 |
+| agent-teams-lite                                  | 12                                | ✅                                 |
+| taste-skill                                       | 5                                 | ✅                                 |
+| n8n-skills                                        | 7                                 | ✅                                 |
+| GGA skills                                        | 4                                 | ✅                                 |
 
 ---
 
@@ -90,12 +90,12 @@
 
 ## 📊 ESTADÍSTICAS
 
-| Métrica                                      | Valor                           |
+| Métrica                                       | Valor                            |
 |----------------------------------------------|---------------------------------|
-| **Total Skills**                             | 167                             |
-| **Skills Activas**                           | 140                             |
-| **Skills Backup**                            | 27                              |
-| **Repos Integrados**                         | 7                               |
+| **Total Skills**                              | 167                              |
+| **Skills Activas**                            | 140                              |
+| **Skills Backup**                             | 27                               |
+| **Repos Integrados**                          | 7                                |
 
 ---
 

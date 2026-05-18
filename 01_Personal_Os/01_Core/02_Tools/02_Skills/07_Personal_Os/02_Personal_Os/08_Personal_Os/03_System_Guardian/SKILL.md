@@ -113,6 +113,6 @@ Para verificar que seguiste las instrucciones:
 
 ## 📊 Changelog
 
-| Versión                               | Fecha                                  | Cambio                                       |
+| Versión                                | Fecha                                   | Cambio                                        |
 |---------------------------------------|----------------------------------------|----------------------------------------------|
-| 1.0.0                                 | 2026-03-28                             | Creación inicial                             |
+| 1.0.0                                  | 2026-03-28                              | Creación inicial                              |

@@ -39,11 +39,11 @@ Resource_Refs:
 
 ## Tech Stack
 
-| Componente                                                | Valor                                                      |
+| Componente                                                 | Valor                                                       |
 |-----------------------------------------------------------|------------------------------------------------------------|
-| Framework                                                 | [Next.js 15]                                               |
-| Lenguaje                                                  | [TypeScript]                                               |
-| Base_Datos                                                | [PostgreSQL]                                               |
+| Framework                                                  | [Next.js 15]                                                |
+| Lenguaje                                                   | [TypeScript]                                                |
+| Base_Datos                                                 | [PostgreSQL]                                                |
 
 ## Requirements
 
@@ -55,10 +55,10 @@ Resource_Refs:
 
 ## Impacto
 
-| Área                                                   | Afectación                                                |
+| Área                                                    | Afectación                                                 |
 |--------------------------------------------------------|-----------------------------------------------------------|
-| Frontend                                               | [qué]                                                     |
-| Backend                                                | [qué]                                                     |
+| Frontend                                                | [qué]                                                      |
+| Backend                                                 | [qué]                                                      |
 
 ## Plan
 

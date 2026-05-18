@@ -4,14 +4,14 @@
 
 **Pregunta clave**: ¿Tu problema es CREAR algo o PREDECIR algo?
 
-| Si tu respuesta es... | Entonces necesitas... |
-|----------------------|----------------------|
-| "Quiero redactar emails" | IA Generativa |
-| "Quiero saber quién va a dejar mi servicio" | IA Predictiva |
-| "Quiero crear imágenes" | IA Generativa |
-| "Quiero predecir ventas del próximo mes" | IA Predictiva |
-| "Quiero resumir documentos" | IA Generativa |
-| "Quiero detectar fraude" | IA Predictiva |
+| Si tu respuesta es...                      | Entonces necesitas... |
+|-------------------------------------------|----------------------|
+| "Quiero redactar emails"                   | IA Generativa         |
+| "Quiero saber quién va a dejar mi servicio"| IA Predictiva         |
+| "Quiero crear imágenes"                    | IA Generativa         |
+| "Quiero predecir ventas del próximo mes"   | IA Predictiva         |
+| "Quiero resumir documentos"                | IA Generativa         |
+| "Quiero detectar fraude"                   | IA Predictiva         |
 
 ---
 

@@ -16,13 +16,13 @@ In n8n Python Code nodes, you access data using **underscore-prefixed** variable
 5. **`_json`** - Direct current item (use `_input` instead)
 
 **Python vs JavaScript**:
-| JavaScript                                                 | Python (Beta)                                              | Python (Native)                                             |
+| JavaScript                                                  | Python (Beta)                                               | Python (Native)                                              |
 |------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------|
-| `$input.all()`                                             | `_input.all()`                                             | `_items`                                                    |
-| `$input.first()`                                           | `_input.first()`                                           | `_items[0]`                                                 |
-| `$input.item`                                              | `_input.item`                                              | `_item`                                                     |
-| `$json`                                                    | `_json`                                                    | `_item["json"]`                                             |
-| `$node["Name"]`                                            | `_node["Name"]`                                            | Not available                                               |
+| `$input.all()`                                              | `_input.all()`                                              | `_items`                                                     |
+| `$input.first()`                                            | `_input.first()`                                            | `_items[0]`                                                  |
+| `$input.item`                                               | `_input.item`                                               | `_item`                                                      |
+| `$json`                                                     | `_json`                                                     | `_item["json"]`                                              |
+| `$node["Name"]`                                             | `_node["Name"]`                                             | Not available                                                |
 
 ---
 
@@ -556,15 +556,15 @@ Do you need ALL items from previous node?
 
 ### Quick Reference Table
 
-| Scenario                                                             | Use This                                                   | Example                                                                                    |
+| Scenario                                                              | Use This                                                    | Example                                                                                     |
 |----------------------------------------------------------------------|------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| Sum all amounts                                                      | `_input.all()`                                             | `sum(i["json"].get("amount", 0) for i in items)`                                           |
-| Get API response                                                     | `_input.first()`                                           | `_input.first()["json"].get("data")`                                                       |
-| Process each independently                                           | `_input.item`                                              | `_input.item["json"]` (Each Item mode)                                                     |
-| Combine two nodes                                                    | `_node["Name"]`                                            | `_node["API"]["json"]`                                                                     |
-| Filter list                                                          | `_input.all()`                                             | `[i for i in items if i["json"].get("active")]`                                            |
-| Transform single object                                              | `_input.first()`                                           | `{**_input.first()["json"], "new": True}`                                                  |
-| Webhook data                                                         | `_input.first()`                                           | `_input.first()["json"]["body"]`                                                           |
+| Sum all amounts                                                       | `_input.all()`                                              | `sum(i["json"].get("amount", 0) for i in items)`                                            |
+| Get API response                                                      | `_input.first()`                                            | `_input.first()["json"].get("data")`                                                        |
+| Process each independently                                            | `_input.item`                                               | `_input.item["json"]` (Each Item mode)                                                      |
+| Combine two nodes                                                     | `_node["Name"]`                                             | `_node["API"]["json"]`                                                                      |
+| Filter list                                                           | `_input.all()`                                              | `[i for i in items if i["json"].get("active")]`                                             |
+| Transform single object                                               | `_input.first()`                                            | `{**_input.first()["json"], "new": True}`                                                   |
+| Webhook data                                                          | `_input.first()`                                            | `_input.first()["json"]["body"]`                                                            |
 
 ---
 

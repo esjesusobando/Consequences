@@ -3,41 +3,41 @@
 ## herramientas Mentionadas en el Video
 
 ### Pasado (Era Pre-Deep Learning)
-| Herramienta | Descripción | Estado |
-|-------------|-------------|--------|
-| ELIZA | Chatbot early (1966) simulando psicólogo | Histórico |
-| Deep Blue | Computadora que venció a Kasparov (1997) | Histórico |
-| Expert Systems | Sistemas basados en reglas | Obsoleto |
+| Herramienta   | Descripción                             | Estado   |
+|--------------|----------------------------------------|---------|
+| ELIZA         | Chatbot early (1966) simulando psicólogo| Histórico|
+| Deep Blue     | Computadora que venció a Kasparov (1997)| Histórico|
+| Expert Systems| Sistemas basados en reglas              | Obsoleto |
 
 ---
 
 ## Presente (Era Actual)
 
 ### Modelos de Lenguaje (LLMs)
-| Herramienta | Desarrollador | Link |
-|-------------|--------------|------|
-| ChatGPT | OpenAI | chat.openai.com |
-| Claude | Anthropic | claude.ai |
-| Gemini | Google | gemini.google.com |
-| Llama | Meta | llama.meta.com |
-| Mistral | Mistral AI | mistral.ai |
+| Herramienta  | Desarrollador | Link             |
+|-------------|--------------|-----------------|
+| ChatGPT      | OpenAI        | chat.openai.com  |
+| Claude       | Anthropic     | claude.ai        |
+| Gemini       | Google        | gemini.google.com|
+| Llama        | Meta          | llama.meta.com   |
+| Mistral      | Mistral AI    | mistral.ai       |
 
 ### IA Generativa (Texto a Video)
-| Herramienta | Descripción | VRAM Requerida |
-|-------------|-------------|---------------|
-| LTX Video | Open source, rápido, 13B | 6-8 GB |
-| Sora | OpenAI | Cloud only |
-| Veo 3 | Google | Cloud only |
-| Runway | Commercial | Cloud only |
-| Kling | Chinese | Cloud only |
+| Herramienta  | Descripción             | VRAM Requerida |
+|-------------|------------------------|---------------|
+| LTX Video    | Open source, rápido, 13B| 6-8 GB         |
+| Sora         | OpenAI                  | Cloud only     |
+| Veo 3        | Google                  | Cloud only     |
+| Runway       | Commercial              | Cloud only     |
+| Kling        | Chinese                 | Cloud only     |
 
 ### IA para Imágenes
-| Herramienta | Tipo | Notas |
-|-------------|------|-------|
-| Midjourney | Commercial | Popular para arte |
-| DALL-E | OpenAI | Integración con ChatGPT |
-| Stable Diffusion | Open source | Puede correr local |
-| Flux | Open source | Muy capaz, nuevo |
+| Herramienta     | Tipo       | Notas                  |
+|----------------|-----------|-----------------------|
+| Midjourney      | Commercial | Popular para arte      |
+| DALL-E          | OpenAI     | Integración con ChatGPT|
+| Stable Diffusion| Open source| Puede correr local     |
+| Flux            | Open source| Muy capaz, nuevo       |
 
 ---
 
@@ -72,13 +72,13 @@
 
 ## Alternativas por Caso de Uso
 
-| Necesidad | Alternativa Gratis | Alternativa Pago |
-|-----------|-------------------|-----------------|
-| Chatbot básico | Claude/ChatGPT | Character.ai |
-| Generación imagen | Stable Diffusion | Midjourney |
-| Generación video | LTX Video | Runway |
-| Código | GitHub Copilot | Cursor |
-| Búsqueda | Perplexity | New Bing |
+| Necesidad        | Alternativa Gratis | Alternativa Pago |
+|-----------------|-------------------|-----------------|
+| Chatbot básico   | Claude/ChatGPT     | Character.ai     |
+| Generación imagen| Stable Diffusion   | Midjourney       |
+| Generación video | LTX Video          | Runway           |
+| Código           | GitHub Copilot     | Cursor           |
+| Búsqueda         | Perplexity         | New Bing         |
 
 ---
 

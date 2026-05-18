@@ -166,21 +166,21 @@ For large accounts detecting small effects (5% MDE), multiply the 10% MDE sample
 
 ## Quick Formulas Reference
 
-| Metric | Formula |
-|--------|---------|
-| CPA | Spend / Conversions |
-| ROAS | Revenue / Spend |
-| CTR | Clicks / Impressions × 100 |
-| CVR | Conversions / Clicks × 100 |
-| CPC | Spend / Clicks |
-| CPM | (Spend / Impressions) × 1,000 |
-| CPL | Spend / Leads |
-| Break-Even CPA | AOV × Margin% |
-| Break-Even ROAS | 1 / Margin% |
-| LTV | ARPU × Avg Lifespan |
-| CAC | Total Marketing / New Customers |
-| MER | Total Revenue / Total Marketing |
-| Impression Share Opp | Revenue × (1/IS - 1) |
+| Metric              | Formula                        |
+|--------------------|-------------------------------|
+| CPA                 | Spend / Conversions            |
+| ROAS                | Revenue / Spend                |
+| CTR                 | Clicks / Impressions × 100     |
+| CVR                 | Conversions / Clicks × 100     |
+| CPC                 | Spend / Clicks                 |
+| CPM                 | (Spend / Impressions) × 1,000  |
+| CPL                 | Spend / Leads                  |
+| Break-Even CPA      | AOV × Margin%                  |
+| Break-Even ROAS     | 1 / Margin%                    |
+| LTV                 | ARPU × Avg Lifespan            |
+| CAC                 | Total Marketing / New Customers|
+| MER                 | Total Revenue / Total Marketing|
+| Impression Share Opp| Revenue × (1/IS - 1)           |
 
 ## Output Format
 
@@ -193,9 +193,9 @@ For large accounts detecting small effects (5% MDE), multiply the 10% MDE sample
 - [Listed inputs with values]
 
 **Results:**
-| Metric | Value | Benchmark | Status |
-|--------|-------|-----------|--------|
-| [Metric] | [Value] | [Benchmark] | PASS/WARNING/FAIL |
+| Metric  | Value  | Benchmark  | Status           |
+|--------|-------|-----------|-----------------|
+| [Metric]| [Value]| [Benchmark]| PASS/WARNING/FAIL|
 
 **Interpretation:**
 [1-2 sentence analysis]

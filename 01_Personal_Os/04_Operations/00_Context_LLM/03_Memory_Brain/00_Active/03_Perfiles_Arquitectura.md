@@ -10,13 +10,13 @@
 
 ### Skills System v2.0
 
-| Aspecto                                                                | Detalle                                                                                    |
+| Aspecto                                                                 | Detalle                                                                                     |
 |------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| Canonical Source                                                       | `01_Personal_Os/01_Core/02_Tools/02_Skills/` (fuente oficial)                              |
-| Mirror                                                                 | `.cursor/02_Skills/` (README only, sincronizado)                                           |
-| Total Active Skills                                                    | 99 en 9 perfiles                                                                           |
-| Backup Skills                                                          | ~200 en 10_Backup/                                                                         |
-| Beautified Documents                                                   | 85+ markdown docs                                                                          |
+| Canonical Source                                                        | `01_Personal_Os/01_Core/02_Tools/02_Skills/` (fuente oficial)                               |
+| Mirror                                                                  | `.cursor/02_Skills/` (README only, sincronizado)                                            |
+| Total Active Skills                                                     | 99 en 9 perfiles                                                                            |
+| Backup Skills                                                           | ~200 en 10_Backup/                                                                          |
+| Beautified Documents                                                    | 85+ markdown docs                                                                           |
 
 ### Estructura de Carpetas Sincronizada
 
@@ -135,11 +135,11 @@ Sistema de desarrollo dirigido por especificaciones con comandos slash.
 
 ### Diferencial SOTA
 
-| Aspecto                                                     | Competitors                                                    | Our SOTA                                                                   |
+| Aspecto                                                      | Competitors                                                     | Our SOTA                                                                    |
 |-------------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------------------------|
-| Specs                                                       | Ad-hoc                                                         | Fases estructuradas                                                        |
-| Memory                                                      | Sesión única                                                   | Engram persistence                                                         |
-| Orchestration                                               | Inline execution                                               | Sub-agents con fresh context                                               |
+| Specs                                                        | Ad-hoc                                                          | Fases estructuradas                                                         |
+| Memory                                                       | Sesión única                                                    | Engram persistence                                                          |
+| Orchestration                                                | Inline execution                                                | Sub-agents con fresh context                                                |
 
 - --
 
@@ -179,15 +179,15 @@ Gestión de proyectos, coordinación de equipos, y seguimiento de progreso.
 
 ### Qué Hace
 
-| Skill                                                            | Función Principal                                                                   |
+| Skill                                                             | Función Principal                                                                    |
 |------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| Morning_Standup                                                  | Priorización diaria, focus en metas                                                 |
-| Backlog_Processing                                               | Convertir notas en tareas actionables                                               |
-| Weekly_Review                                                    | Métricas, reflección, ajustes                                                       |
-| Sunday_Ritual                                                    | Mantenimiento, limpieza, alineación                                                 |
-| Finishing_Branch                                                 | PR flow, merge, cleanup                                                             |
-| Running_Tests                                                    | Validación pre-commit                                                               |
-| Content_Generation                                               | drafts, docs, contenido                                                             |
+| Morning_Standup                                                   | Priorización diaria, focus en metas                                                  |
+| Backlog_Processing                                                | Convertir notas en tareas actionables                                                |
+| Weekly_Review                                                     | Métricas, reflección, ajustes                                                        |
+| Sunday_Ritual                                                     | Mantenimiento, limpieza, alineación                                                  |
+| Finishing_Branch                                                  | PR flow, merge, cleanup                                                              |
+| Running_Tests                                                     | Validación pre-commit                                                                |
+| Content_Generation                                                | drafts, docs, contenido                                                              |
 
 - --
 
@@ -227,14 +227,14 @@ Gestión de producto: qué construir y por qué.
 
 ### Qué Hace
 
-| Skill                                                            | Función Principal                                                                  |
+| Skill                                                             | Función Principal                                                                   |
 |------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Brainstorming                                                    | Exploración creativa de soluciones                                                 |
-| Writing_Plans                                                    | Planes de acción estructurados                                                     |
-| Jira_Epic                                                        | Definición de epics                                                                |
-| Jira_Task                                                        | Creación de tareas                                                                 |
-| Strategy_Memos                                                   | Decisiones estratégicas documentadas                                               |
-| Planning_Tareas_Ai                                               | Priorización con AI                                                                |
+| Brainstorming                                                     | Exploración creativa de soluciones                                                  |
+| Writing_Plans                                                     | Planes de acción estructurados                                                      |
+| Jira_Epic                                                         | Definición de epics                                                                 |
+| Jira_Task                                                         | Creación de tareas                                                                  |
+| Strategy_Memos                                                    | Decisiones estratégicas documentadas                                                |
+| Planning_Tareas_Ai                                                | Priorización con AI                                                                 |
 
 ### Diferencial SOTA
 
@@ -287,17 +287,17 @@ Diseño de producto holístico: desde investigación hasta optimización de conv
 
 ### Qué Hace
 
-| Skill                                                          | Función Principal                                                                          |
+| Skill                                                           | Función Principal                                                                           |
 |----------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| Taste_Skill                                                    | Diseño principal con variance/motion/density                                               |
-| Soft_Skill                                                     | Awwwards tier ($150k+ agency)                                                              |
-| Minimalist_Skill                                               | Editorial minimalism                                                                       |
-| Redesign_Skill                                                 | Upgrade de proyectos existentes                                                            |
-| Output_Skill                                                   | Previene código truncado                                                                   |
-| Dieter_Rams                                                    | "Menos pero mejor"                                                                         |
-| Brand_Identity                                                 | Design tokens, voice, consistency                                                          |
-| Brand_Voice                                                    | Tone of voice generation                                                                   |
-| Canvas_Diagram                                                 | Diagramas con Excalidraw                                                                   |
+| Taste_Skill                                                     | Diseño principal con variance/motion/density                                                |
+| Soft_Skill                                                      | Awwwards tier ($150k+ agency)                                                               |
+| Minimalist_Skill                                                | Editorial minimalism                                                                        |
+| Redesign_Skill                                                  | Upgrade de proyectos existentes                                                             |
+| Output_Skill                                                    | Previene código truncado                                                                    |
+| Dieter_Rams                                                     | "Menos pero mejor"                                                                          |
+| Brand_Identity                                                  | Design tokens, voice, consistency                                                           |
+| Brand_Voice                                                     | Tone of voice generation                                                                    |
+| Canvas_Diagram                                                  | Diagramas con Excalidraw                                                                    |
 
 ### Config Dial de Taste_Skill
 
@@ -366,15 +366,15 @@ Desarrollo frontend con frameworks modernos y output premium.
 
 ### Stack Covered
 
-| Framework                                                 | Patterns                                                                               |
+| Framework                                                  | Patterns                                                                                |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|
-| React 19                                                  | Server Components, no manual memoization                                               |
-| Next.js 15                                                | App Router, Server Actions, streaming                                                  |
-| Angular                                                   | Signals, standalone components, zoneless                                               |
-| Tailwind 4                                                | cn() utility, semantic classes                                                         |
-| TypeScript                                                | Strict mode, generics, inference                                                       |
-| Zustand 5                                                 | Slices, middleware, persist                                                            |
-| Zod 4                                                     | Schema validation, inference                                                           |
+| React 19                                                   | Server Components, no manual memoization                                                |
+| Next.js 15                                                 | App Router, Server Actions, streaming                                                   |
+| Angular                                                    | Signals, standalone components, zoneless                                                |
+| Tailwind 4                                                 | cn() utility, semantic classes                                                          |
+| TypeScript                                                 | Strict mode, generics, inference                                                        |
+| Zustand 5                                                  | Slices, middleware, persist                                                             |
+| Zod 4                                                      | Schema validation, inference                                                            |
 
 ### Output Enforcement
 
@@ -500,12 +500,12 @@ Infraestructura y deployment automatizado.
 
 ### Observability Stack
 
-| Pillar                                                 | Tools                                                                     |
+| Pillar                                                  | Tools                                                                      |
 |--------------------------------------------------------|---------------------------------------------------------------------------|
-| Metrics                                                | Prometheus, Grafana                                                       |
-| Logs                                                   | Structured JSON (structlog)                                               |
-| Traces                                                 | OpenTelemetry, Jaeger                                                     |
-| Alerts                                                 | Prometheus alerts                                                         |
+| Metrics                                                 | Prometheus, Grafana                                                        |
+| Logs                                                    | Structured JSON (structlog)                                                |
+| Traces                                                  | OpenTelemetry, Jaeger                                                      |
+| Alerts                                                  | Prometheus alerts                                                          |
 
 - --
 
@@ -604,14 +604,14 @@ Marketing digital completo con automatización.
 
 ### Marketing Tech Stack
 
-| Category                                                | Tools                                                                                        |
+| Category                                                 | Tools                                                                                         |
 |---------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| SEO                                                     | seo-audit, seo-optimization, programmatic-seo                                                |
-| Ads                                                     | paid-ads, competitor-alternatives                                                            |
-| Analytics                                               | analytics-tracking, ab-test-setup                                                            |
-| CRO                                                     | page-cro, signup-flow-cro, popup-cro                                                         |
-| Content                                                 | content-creation, copywriting, email-sequence                                                |
-| Visual                                                  | premium-image-studio, pptx-generator, remotion                                               |
+| SEO                                                      | seo-audit, seo-optimization, programmatic-seo                                                 |
+| Ads                                                      | paid-ads, competitor-alternatives                                                             |
+| Analytics                                                | analytics-tracking, ab-test-setup                                                             |
+| CRO                                                      | page-cro, signup-flow-cro, popup-cro                                                          |
+| Content                                                  | content-creation, copywriting, email-sequence                                                 |
+| Visual                                                   | premium-image-studio, pptx-generator, remotion                                                |
 
 - --
 
@@ -663,43 +663,43 @@ El ecosistema CE complementa a Gentleman con inteligencia y validación.
 
 ### CE Commands
 
-| Command                                        | Triggers                                               | Propósito                                          |
+| Command                                         | Triggers                                                | Propósito                                           |
 |------------------------------------------------|--------------------------------------------------------|----------------------------------------------------|
-| `/ce:ideate`                                   | "idear", "mejorar"                                     | Descubrir mejoras                                  |
-| `/ce:brainstorm`                               | "explorar", "requisitos"                               | Explorar enfoques                                  |
-| `/ce:plan`                                     | "planear", "plan"                                      | Crear plan                                         |
-| `/ce:work`                                     | "ejecutar"                                             | Ejecutar plan                                      |
-| `/ce:review`                                   | "review", "revisar"                                    | Code review                                        |
-| `/ce:compound`                                 | "documentar"                                           | Documentar learnings                               |
+| `/ce:ideate`                                    | "idear", "mejorar"                                      | Descubrir mejoras                                   |
+| `/ce:brainstorm`                                | "explorar", "requisitos"                                | Explorar enfoques                                   |
+| `/ce:plan`                                      | "planear", "plan"                                       | Crear plan                                          |
+| `/ce:work`                                      | "ejecutar"                                              | Ejecutar plan                                       |
+| `/ce:review`                                    | "review", "revisar"                                     | Code review                                         |
+| `/ce:compound`                                  | "documentar"                                            | Documentar learnings                                |
 
 ### Agents CE Destacados
 
-| Agent                                                      | Triggers                                     | Propósito                                                |
+| Agent                                                       | Triggers                                      | Propósito                                                 |
 |------------------------------------------------------------|----------------------------------------------|----------------------------------------------------------|
-| `security-sentinel`                                        | "seguridad"                                  | Auditorías de seguridad                                  |
-| `performance-oracle`                                       | "performance"                                | Análisis de performance                                  |
-| `architecture-strategist`                                  | "arquitectura"                               | Decisiones arquitectónicas                               |
-| `kieran-typescript-reviewer`                               | "ts review"                                  | TypeScript review                                        |
+| `security-sentinel`                                         | "seguridad"                                   | Auditorías de seguridad                                   |
+| `performance-oracle`                                        | "performance"                                 | Análisis de performance                                   |
+| `architecture-strategist`                                   | "arquitectura"                                | Decisiones arquitectónicas                                |
+| `kieran-typescript-reviewer`                                | "ts review"                                   | TypeScript review                                         |
 
 ---
 
 ## 📊 RESUMEN DE PERFILES (Matrix Recargado)
 
-| #                                 | Perfil                                                 | Skills                                 | Focus                                                 |
+| #                                  | Perfil                                                  | Skills                                  | Focus                                                  |
 |-----------------------------------|--------------------------------------------------------|----------------------------------------|-------------------------------------------------------|
-| 00                                | **Compound_Engineering**                               | 131                                    | 🔥 Code Review, Research                               |
-| 01                                | Agent_Teams_Lite                                       | 9                                      | SDD Workflow                                          |
-| 02                                | Project_Manager                                        | 9                                      | Rituales, tracking                                    |
-| 03                                | Product_Manager                                        | 7                                      | Estrategia, producto                                  |
-| 04                                | Product_Design                                         | 11                                     | UX/UI, Brand, CRO                                     |
-| 05                                | Vibe_Coding                                            | 21                                     | Frontend, frameworks                                  |
-| 06                                | Testing                                                | 13                                     | QA, TDD, E2E                                          |
-| 07                                | DevOps                                                 | 13                                     | Deploy, infra                                         |
-| 08                                | Personal_Os                                            | 10                                     | System, tools                                         |
-| 09                                | Marketing                                              | 32                                     | SEO, ads, content                                     |
-| 11                                | Doc_Processing                                         | 3                                      | Documentos                                            |
-| 13                                | System_Master                                          | 1                                      | Guides (nuevo)                                        |
-| 10                                | Backup                                                 | ~204                                   | Legacy (no tocar)                                     |
+| 00                                 | **Compound_Engineering**                                | 131                                     | 🔥 Code Review, Research                                |
+| 01                                 | Agent_Teams_Lite                                        | 9                                       | SDD Workflow                                           |
+| 02                                 | Project_Manager                                         | 9                                       | Rituales, tracking                                     |
+| 03                                 | Product_Manager                                         | 7                                       | Estrategia, producto                                   |
+| 04                                 | Product_Design                                          | 11                                      | UX/UI, Brand, CRO                                      |
+| 05                                 | Vibe_Coding                                             | 21                                      | Frontend, frameworks                                   |
+| 06                                 | Testing                                                 | 13                                      | QA, TDD, E2E                                           |
+| 07                                 | DevOps                                                  | 13                                      | Deploy, infra                                          |
+| 08                                 | Personal_Os                                             | 10                                      | System, tools                                          |
+| 09                                 | Marketing                                               | 32                                      | SEO, ads, content                                      |
+| 11                                 | Doc_Processing                                          | 3                                       | Documentos                                             |
+| 13                                 | System_Master                                           | 1                                       | Guides (nuevo)                                         |
+| 10                                 | Backup                                                  | ~204                                    | Legacy (no tocar)                                      |
 
 * *TOTAL: ~440 componentes** (139 Gentleman + 131 CE + 100+ Backup)*
 

@@ -11,16 +11,16 @@
 
 ## 📊 Estado del Sistema (v1.0 - 2026-04-18)
 
-| Métrica                                    | Valor                            |
+| Métrica                                     | Valor                             |
 |--------------------------------------------|----------------------------------|
-| **Overall Health**                         | **100%** ✅                       |
-| **Skills**                                 | 160+                             |
-| **Rules**                                  | 25                               |
-| **MCPs**                                   | 36 activos                       |
-| **HUBs**                                   | 14                               |
-| **SDD Workflows**                          | 9                                |
-| **Agentes**                                | 71                               |
-| **Skill Categorías**                       | 22                               |
+| **Overall Health**                          | **100%** ✅                        |
+| **Skills**                                  | 160+                              |
+| **Rules**                                   | 25                                |
+| **MCPs**                                    | 36 activos                        |
+| **HUBs**                                    | 14                                |
+| **SDD Workflows**                           | 9                                 |
+| **Agentes**                                 | 71                                |
+| **Skill Categorías**                        | 22                                |
 
 ---
 
@@ -64,72 +64,72 @@ Think_Different/
 
 ### Skills System (160+ en 22 categorías)
 
-| Categoría                                          | Skills                      | Propósito                                                        |
+| Categoría                                           | Skills                       | Propósito                                                         |
 |----------------------------------------------------|-----------------------------|------------------------------------------------------------------|
-| **00_Compound_Engineering**                        | 8                           | Compound Engineering (CE)                                        |
-| **00_Personal_Os_Stack**                           | Core                        | Stack del OS                                                     |
-| **00_Skill_Auditor**                               | Auditor                     | Validación de skills                                             |
-| **01_Agent_Teams_Lite**                            | 9                           | SDD Workflows (init→archive)                                     |
-| **02_Project_Manager**                             | 8                           | Gestión de proyectos                                             |
-| **03_Product_Manager**                             | 7                           | Product management                                               |
-| **04_Product_Design**                              | 11                          | Diseño de producto                                               |
-| **05_Vibe_Coding**                                 | 17                          | Frameworks modernos                                              |
-| **06_Testing**                                     | 17                          | Testing estratégico                                              |
-| **07_DevOps**                                      | 12                          | DevOps y deploy                                                  |
-| **08_Personal_Os**                                 | 9                           | OS personal workflows                                            |
-| **09_Marketing**                                   | 10                          | Marketing y contenido                                            |
-| **10_Backup**                                      | 5                           | Legacy support                                                   |
-| **11_Doc_Processing**                              | 3                           | Procesamiento de docs                                            |
-| **12_N8N**                                         | 7                           | Automatizaciones N8N                                             |
-| **13_System_Master**                               | Master                      | Skill maestro del sistema                                        |
-| **14_Anthropic_Harness**                           | 8                           | Evaluadores AI                                                   |
-| **15_Skill_Creator_Oficial**                       | v2.0                        | Creación de skills SOTA                                          |
-| **16_Silicon_Valley_Data**                         | Analyst                     | Data analysis SOTA                                               |
-| **17_SEO_SOTA_Master**                             | SEO                         | Technical SEO                                                    |
-| **18_Personal_Life_OS**                            | Life OS                     | Hillary integration                                              |
-| **19_Video_Intel**                                 | Video                       | Video AI                                                         |
+| **00_Compound_Engineering**                         | 8                            | Compound Engineering (CE)                                         |
+| **00_Personal_Os_Stack**                            | Core                         | Stack del OS                                                      |
+| **00_Skill_Auditor**                                | Auditor                      | Validación de skills                                              |
+| **01_Agent_Teams_Lite**                             | 9                            | SDD Workflows (init→archive)                                      |
+| **02_Project_Manager**                              | 8                            | Gestión de proyectos                                              |
+| **03_Product_Manager**                              | 7                            | Product management                                                |
+| **04_Product_Design**                               | 11                           | Diseño de producto                                                |
+| **05_Vibe_Coding**                                  | 17                           | Frameworks modernos                                               |
+| **06_Testing**                                      | 17                           | Testing estratégico                                               |
+| **07_DevOps**                                       | 12                           | DevOps y deploy                                                   |
+| **08_Personal_Os**                                  | 9                            | OS personal workflows                                             |
+| **09_Marketing**                                    | 10                           | Marketing y contenido                                             |
+| **10_Backup**                                       | 5                            | Legacy support                                                    |
+| **11_Doc_Processing**                               | 3                            | Procesamiento de docs                                             |
+| **12_N8N**                                          | 7                            | Automatizaciones N8N                                              |
+| **13_System_Master**                                | Master                       | Skill maestro del sistema                                         |
+| **14_Anthropic_Harness**                            | 8                            | Evaluadores AI                                                    |
+| **15_Skill_Creator_Oficial**                        | v2.0                         | Creación de skills SOTA                                           |
+| **16_Silicon_Valley_Data**                          | Analyst                      | Data analysis SOTA                                                |
+| **17_SEO_SOTA_Master**                              | SEO                          | Technical SEO                                                     |
+| **18_Personal_Life_OS**                             | Life OS                      | Hillary integration                                               |
+| **19_Video_Intel**                                  | Video                        | Video AI                                                          |
 
 ### HUBs (08_Scripts_Os/) — 14 HUBs
 
-| Hub                                   | Script                                        | Propósito                                                 |
+| Hub                                    | Script                                         | Propósito                                                  |
 |---------------------------------------|-----------------------------------------------|-----------------------------------------------------------|
-| **Sound Engine**                      | `00_Sound_Engine.py`                          | Motor de notificaciones sonoras                           |
-| **Auditor**                           | `01_Auditor_Hub.py`                           | Auditorías del sistema                                    |
-| **Git**                               | `02_Git_Hub.py`                               | Operaciones Git                                           |
-| **AIPM**                              | `03_AIPM_Hub.py`                              | AI Performance Monitoring                                 |
-| **Ritual**                            | `04_Ritual_Hub.py`                            | Rituales de sesión: open/close                            |
-| **Validator**                         | `05_Validator_Hub.py`                         | Validación de código                                      |
-| **Tool**                              | `06_Tool_Hub.py`                              | Gestión de herramientas                                   |
-| **Integration**                       | `07_Integration_Hub.py`                       | Integraciones MCP                                         |
-| **Workflow**                          | `08_Workflow_Hub.py`                          | Automatización de workflows                               |
-| **Data**                              | `09_Data_Hub.py`                              | Procesamiento de datos                                    |
-| **General**                           | `10_General_Hub.py`                           | Utilidades generales                                      |
-| **Auto Learn**                        | `11_Auto_Learn_Hub.py`                        | Motor de automejora y aprendizaje                         |
-| **Context Bar**                       | `12_Context_Usage_Bar.py`                     | Barra de uso de contexto                                  |
-| **Beautify**                          | `13_Beautify_Tables.py`                       | Formateo de tablas markdown                               |
+| **Sound Engine**                       | `00_Sound_Engine.py`                           | Motor de notificaciones sonoras                            |
+| **Auditor**                            | `01_Auditor_Hub.py`                            | Auditorías del sistema                                     |
+| **Git**                                | `02_Git_Hub.py`                                | Operaciones Git                                            |
+| **AIPM**                               | `03_AIPM_Hub.py`                               | AI Performance Monitoring                                  |
+| **Ritual**                             | `04_Ritual_Hub.py`                             | Rituales de sesión: open/close                             |
+| **Validator**                          | `05_Validator_Hub.py`                          | Validación de código                                       |
+| **Tool**                               | `06_Tool_Hub.py`                               | Gestión de herramientas                                    |
+| **Integration**                        | `07_Integration_Hub.py`                        | Integraciones MCP                                          |
+| **Workflow**                           | `08_Workflow_Hub.py`                           | Automatización de workflows                                |
+| **Data**                               | `09_Data_Hub.py`                               | Procesamiento de datos                                     |
+| **General**                            | `10_General_Hub.py`                            | Utilidades generales                                       |
+| **Auto Learn**                         | `11_Auto_Learn_Hub.py`                         | Motor de automejora y aprendizaje                          |
+| **Context Bar**                        | `12_Context_Usage_Bar.py`                      | Barra de uso de contexto                                   |
+| **Beautify**                           | `13_Beautify_Tables.py`                        | Formateo de tablas markdown                                |
 
 ### Validators
 
-| Tool                                           | Ubicación                                            | Función                                    |
+| Tool                                            | Ubicación                                             | Función                                     |
 |------------------------------------------------|------------------------------------------------------|--------------------------------------------|
-| **skill_validator.py**                         | `08_Scripts_Os/03_Validator/`                        | Valida estructura SOTA                     |
-| **skill_security_scan.py**                     | `08_Scripts_Os/03_Validator/`                        | Escaneo de seguridad                       |
+| **skill_validator.py**                          | `08_Scripts_Os/03_Validator/`                         | Valida estructura SOTA                      |
+| **skill_security_scan.py**                      | `08_Scripts_Os/03_Validator/`                         | Escaneo de seguridad                        |
 
 ### MCPs (29 activos)
 
-| Categoría                             | Servidores                                                                                 |
+| Categoría                              | Servidores                                                                                  |
 |---------------------------------------|--------------------------------------------------------------------------------------------|
-| 🔍 Search                              | exa, brave-search*, stackoverflow                                                          |
-| 🧠 Memory                              | engram, aim-memory-bank, notebooklm                                                        |
-| 📝 Notes                               | mcp-obsidian, obsidian-api, Notion                                                         |
-| 🌐 Browser                             | Playwright, chrome-devtools, eagle-mcp                                                     |
-| 🤖 AI & Code                           | context7, zai-mcp-server, github, task-master-ai, @magicuidesign/mcp                       |
-| 📊 Data                                | supabase, supadata, sqlite*, postgres*                                                     |
-| 🔄 Workflow                            | n8n-mcp, Linear, atlassian*, jira-extended*                                                |
-| 💬 Communication                       | fireflies, slack*, google-workspace                                                        |
-| 📐 Design                              | excalidraw-yctimlin, pencil                                                                |
-| 🛠️ DevOps                             | docker, sentry*, filesystem                                                                |
-| 🚀 Deploy                              | vercel, TestSprite                                                                         |
+| 🔍 Search                               | exa, brave-search*, stackoverflow                                                           |
+| 🧠 Memory                               | engram, aim-memory-bank, notebooklm                                                         |
+| 📝 Notes                                | mcp-obsidian, obsidian-api, Notion                                                          |
+| 🌐 Browser                              | Playwright, chrome-devtools, eagle-mcp                                                      |
+| 🤖 AI & Code                            | context7, zai-mcp-server, github, task-master-ai, @magicuidesign/mcp                        |
+| 📊 Data                                 | supabase, supadata, sqlite*, postgres*                                                      |
+| 🔄 Workflow                             | n8n-mcp, Linear, atlassian*, jira-extended*                                                 |
+| 💬 Communication                        | fireflies, slack*, google-workspace                                                         |
+| 📐 Design                               | excalidraw-yctimlin, pencil                                                                 |
+| 🛠️ DevOps                              | docker, sentry*, filesystem                                                                 |
+| 🚀 Deploy                               | vercel, TestSprite                                                                          |
 
 > `*` = requiere credenciales reales. Presentes como templates en `01_Core/05_Mcp/01_Claude_Code/mcp.json`.
 
@@ -205,28 +205,28 @@ Code review automático integrado:
 
 ## 📁 Convenciones de Nombres
 
-| Tipo                                | Patrón                                    | Ejemplo                                          |
+| Tipo                                 | Patrón                                     | Ejemplo                                           |
 |-------------------------------------|-------------------------------------------|--------------------------------------------------|
-| **Directorios**                     | `XX_Nombre/`                              | `01_Core/`, `04_Operations/`                     |
-| **Archivos**                        | `XX_Nombre.ext`                           | `01_Report_Status.md`                            |
-| **Scripts**                         | `##_Nombre_Script.py`                     | `01_Auditor_Hub.py`                              |
-| **Skills**                          | `SKILL.md`                                | En cada skill                                    |
+| **Directorios**                      | `XX_Nombre/`                               | `01_Core/`, `04_Operations/`                      |
+| **Archivos**                         | `XX_Nombre.ext`                            | `01_Report_Status.md`                             |
+| **Scripts**                          | `##_Nombre_Script.py`                      | `01_Auditor_Hub.py`                               |
+| **Skills**                           | `SKILL.md`                                 | En cada skill                                     |
 
 - --
 
 ## 📚 Documentación
 
-| Documento                                    | Ubicación                                                                 |
+| Documento                                     | Ubicación                                                                  |
 |----------------------------------------------|---------------------------------------------------------------------------|
-| **AGENTS.md**                                | `00_Winter_is_Coming/AGENTS.md`                                           |
-| **RULES_INDEX**                              | `01_Core/01_Rules/RULES_INDEX.md`                                         |
-| **Skills README**                            | `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                     |
-| **Scripts INDEX**                            | `08_Scripts_Os/SCRIPTS_INDEX.md`                                          |
-| **OS Integration Audit**                     | `02_Knowledge/04_Docs/OS_Integration_Audit_v1.0.md`                       |
-| **Edge Cases**                               | `02_Knowledge/04_Docs/OS_Edge_Cases_Analysis.md`                          |
-| **Chris Orwig Style**                        | `02_Knowledge/03_Research/CHRIS_ORWIG_STYLE_GUIDE.md`                     |
-| **Neural Networks Doc**                      | `REDES_NEURONALES_TOKENS_VECTORES_EMBEDDINGS.md`                          |
-| **Landing Template**                         | `02_Knowledge/04_Templates/LANDING_WEBINAR_TEMPLATE.md`                   |
+| **AGENTS.md**                                 | `00_Winter_is_Coming/AGENTS.md`                                            |
+| **RULES_INDEX**                               | `01_Core/01_Rules/RULES_INDEX.md`                                          |
+| **Skills README**                             | `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                      |
+| **Scripts INDEX**                             | `08_Scripts_Os/SCRIPTS_INDEX.md`                                           |
+| **OS Integration Audit**                      | `02_Knowledge/04_Docs/OS_Integration_Audit_v1.0.md`                        |
+| **Edge Cases**                                | `02_Knowledge/04_Docs/OS_Edge_Cases_Analysis.md`                           |
+| **Chris Orwig Style**                         | `02_Knowledge/03_Research/CHRIS_ORWIG_STYLE_GUIDE.md`                      |
+| **Neural Networks Doc**                       | `REDES_NEURONALES_TOKENS_VECTORES_EMBEDDINGS.md`                           |
+| **Landing Template**                          | `02_Knowledge/04_Templates/LANDING_WEBINAR_TEMPLATE.md`                    |
 
 - --
 
@@ -234,13 +234,13 @@ Code review automático integrado:
 
 ### Metodologías Integradas
 
-| Metodología                                  | Propósito                                                               | Comando                                   |
+| Metodología                                   | Propósito                                                                | Comando                                    |
 |----------------------------------------------|-------------------------------------------------------------------------|-------------------------------------------|
-| **SDD**                                      | Desarrollo guiado por specs (9 fases)                                   | `/sdd-*`                                  |
-| **Super Campeones**                          | Orquestación de agentes en equipo                                       | Activado por defecto                      |
-| **Compound Engineering**                     | Cada unidad de trabajo hace la siguiente más fácil                      | `/ce:*`                                   |
-| **GGA**                                      | Code review automático pre-commit                                       | `.agent/05_GGA/bin/gga`                   |
-| **Auto-Improvement**                         | Detección y corrección recursiva de issues                              | `04_Operations/`                          |
+| **SDD**                                       | Desarrollo guiado por specs (9 fases)                                    | `/sdd-*`                                   |
+| **Super Campeones**                           | Orquestación de agentes en equipo                                        | Activado por defecto                       |
+| **Compound Engineering**                      | Cada unidad de trabajo hace la siguiente más fácil                       | `/ce:*`                                    |
+| **GGA**                                       | Code review automático pre-commit                                        | `.agent/05_GGA/bin/gga`                    |
+| **Auto-Improvement**                          | Detección y corrección recursiva de issues                               | `04_Operations/`                           |
 
 ### Cómo funciona la orquestación
 

@@ -12,12 +12,12 @@ and 9:16 (TikTok/Reels/Stories).
 
 ## Quick Reference
 
-| Command                                          | What it does                                |
+| Command                                           | What it does                                 |
 |--------------------------------------------------|---------------------------------------------|
-| `/ads photoshoot`                                | Interactive: ask for product + styles       |
-| `/ads photoshoot --styles studio floating`       | Generate only selected styles               |
-| `/ads photoshoot --product shoe.jpg`             | Start with a product image file             |
-| `/ads photoshoot --all-platforms`                | Generate all 5 sizes per style              |
+| `/ads photoshoot`                                 | Interactive: ask for product + styles        |
+| `/ads photoshoot --styles studio floating`        | Generate only selected styles                |
+| `/ads photoshoot --product shoe.jpg`              | Start with a product image file              |
+| `/ads photoshoot --all-platforms`                 | Generate all 5 sizes per style               |
 
 ## Environment Setup
 
@@ -203,13 +203,13 @@ Before generating, show:
 
 ## Platform Recommendations
 
-| Style            | Best Platforms                         | Rationale                                       |
+| Style             | Best Platforms                          | Rationale                                        |
 |------------------|----------------------------------------|-------------------------------------------------|
-| Studio           | Meta Feed, LinkedIn, Google PMax       | Universal, clean, platform-safe                 |
-| Floating         | Meta Reels, TikTok, Stories            | High visual impact on vertical placements       |
-| Ingredient       | Meta Feed, Pinterest                   | Works best as square; tells product story       |
-| In Use           | TikTok, Meta Reels, Stories            | Authentic, native-feeling content               |
-| Lifestyle        | All platforms                          | Aspirational, broad audience appeal             |
+| Studio            | Meta Feed, LinkedIn, Google PMax        | Universal, clean, platform-safe                  |
+| Floating          | Meta Reels, TikTok, Stories             | High visual impact on vertical placements        |
+| Ingredient        | Meta Feed, Pinterest                    | Works best as square; tells product story        |
+| In Use            | TikTok, Meta Reels, Stories             | Authentic, native-feeling content                |
+| Lifestyle         | All platforms                           | Aspirational, broad audience appeal              |
 
 ## Reference Files
 

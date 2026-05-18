@@ -148,18 +148,18 @@ IF daily_budget > $500:
 
 ### Platform Selection Matrix by Business Type
 
-| Business Type | Platform 1 | Platform 2 | Platform 3 | Other | Min Monthly Budget | Primary KPI | Time to Profit |
-|--------------|------------|------------|------------|-------|-------------------|-------------|---------------|
-| SaaS B2B | LinkedIn 40% | Google 30% | Meta 20% | Other 10% | $5,000 | Pipeline ROI | 3-6 months |
-| E-commerce DTC | Meta 50% | Google PMax 30% | TikTok 15% | Email 5% | $3,000 | ROAS / MER | 0-2 months |
-| Local Service | Google LSA/Search 60% | Meta 30% | Bing 10% | N/A | $1,500 | Cost Per Lead | 1 month |
-| B2B Enterprise | LinkedIn 60% | Google 20% | ABM Display 20% | N/A | $10,000 | Pipeline / SQLs | 6-12 months |
-| Info Products | YouTube 40% | Meta 40% | Email 20% | N/A | $2,000 | ROAS / CPL | 1-3 months |
-| Mobile App | Apple Search 30% | Google App 30% | Meta/TikTok 40% | N/A | $5,000 | CPI / LTV | 3-6 months |
-| Real Estate | Meta Lead Forms 50% | Google Search 40% | LinkedIn 10% | N/A | $2,500 | Cost Per Lead | 2-4 months |
-| Healthcare | Google Search 70% | Meta Remarketing 30% | N/A |: | $4,000 | Cost Per Patient | 2-5 months |
-| Finance/Fintech | Google Search 50% | Affiliate/Native 30% | LinkedIn 20% | N/A | $8,000 | CAC / LTV | 4-8 months |
-| Agency (Own) | LinkedIn 50% | Meta 30% | Google 20% | N/A | $1,500 | Cost Per Lead | 1-3 months |
+| Business Type  | Platform 1           | Platform 2          | Platform 3     | Other    | Min Monthly Budget | Primary KPI     | Time to Profit |
+|---------------|---------------------|--------------------|---------------|---------|-------------------|----------------|---------------|
+| SaaS B2B       | LinkedIn 40%         | Google 30%          | Meta 20%       | Other 10%| $5,000             | Pipeline ROI    | 3-6 months     |
+| E-commerce DTC | Meta 50%             | Google PMax 30%     | TikTok 15%     | Email 5% | $3,000             | ROAS / MER      | 0-2 months     |
+| Local Service  | Google LSA/Search 60%| Meta 30%            | Bing 10%       | N/A      | $1,500             | Cost Per Lead   | 1 month        |
+| B2B Enterprise | LinkedIn 60%         | Google 20%          | ABM Display 20%| N/A      | $10,000            | Pipeline / SQLs | 6-12 months    |
+| Info Products  | YouTube 40%          | Meta 40%            | Email 20%      | N/A      | $2,000             | ROAS / CPL      | 1-3 months     |
+| Mobile App     | Apple Search 30%     | Google App 30%      | Meta/TikTok 40%| N/A      | $5,000             | CPI / LTV       | 3-6 months     |
+| Real Estate    | Meta Lead Forms 50%  | Google Search 40%   | LinkedIn 10%   | N/A      | $2,500             | Cost Per Lead   | 2-4 months     |
+| Healthcare     | Google Search 70%    | Meta Remarketing 30%| N/A            | :        | $4,000             | Cost Per Patient| 2-5 months     |
+| Finance/Fintech| Google Search 50%    | Affiliate/Native 30%| LinkedIn 20%   | N/A      | $8,000             | CAC / LTV       | 4-8 months     |
+| Agency (Own)   | LinkedIn 50%         | Meta 30%            | Google 20%     | N/A      | $1,500             | Cost Per Lead   | 1-3 months     |
 
 ### Budget Scaling Decision Tree
 
@@ -304,13 +304,13 @@ transferred correctly; goals often break during import
 
 ### Platform Defaults (2026)
 
-| Platform | Default Model | Click Window | View Window |
-|----------|--------------|-------------|-------------|
-| Google Ads | Data-Driven Attribution (DDA) | 30 days | 1 day (YouTube: 3 days) |
-| Meta Ads | Statistical model | 7 days | 1 day |
-| TikTok Ads | Last touch | 7 days | 1 day |
-| LinkedIn Ads | Last touch | 30 days | 7 days |
-| Microsoft Ads | Last touch (DDA available) | 30 days | 1 day |
+| Platform     | Default Model                | Click Window | View Window            |
+|-------------|-----------------------------|-------------|-----------------------|
+| Google Ads   | Data-Driven Attribution (DDA)| 30 days      | 1 day (YouTube: 3 days)|
+| Meta Ads     | Statistical model            | 7 days       | 1 day                  |
+| TikTok Ads   | Last touch                   | 7 days       | 1 day                  |
+| LinkedIn Ads | Last touch                   | 30 days      | 7 days                 |
+| Microsoft Ads| Last touch (DDA available)   | 30 days      | 1 day                  |
 
 ### Cross-Platform Attribution Hierarchy
 

@@ -14,14 +14,14 @@ Cursor CLI (`cursor-agent`) launched in August 2025 and supports rules (`.mdc`),
 
 ## Component Mapping
 
-| Claude Code                                   | Cursor Equivalent                                     | Notes                                                                                                                                                                     |
+| Claude Code                                    | Cursor Equivalent                                      | Notes                                                                                                                                                                      |
 |-----------------------------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `agents/*.md`                                 | `.cursor/rules/*.mdc`                                 | Agents become "Agent Requested" rules (`alwaysApply: false`, `description` set) so the AI activates them on demand rather than flooding context                           |
-| `commands/*.md`                               | `.cursor/commands/*.md`                               | Plain markdown files; Cursor commands have no frontmatter support -- description becomes a markdown heading                                                               |
-| `skills/*/SKILL.md`                           | `.cursor/skills/*/SKILL.md`                           | **Identical standard** -- copy directly                                                                                                                                   |
-| MCP servers                                   | `.cursor/mcp.json`                                    | Same JSON structure (`mcpServers` key), compatible format                                                                                                                 |
-| `hooks/`                                      | No equivalent                                         | Cursor has no hook system; emit `console.warn` and skip                                                                                                                   |
-| `.claude/` paths                              | `.cursor/` paths                                      | Content rewriting needed                                                                                                                                                  |
+| `agents/*.md`                                  | `.cursor/rules/*.mdc`                                  | Agents become "Agent Requested" rules (`alwaysApply: false`, `description` set) so the AI activates them on demand rather than flooding context                            |
+| `commands/*.md`                                | `.cursor/commands/*.md`                                | Plain markdown files; Cursor commands have no frontmatter support -- description becomes a markdown heading                                                                |
+| `skills/*/SKILL.md`                            | `.cursor/skills/*/SKILL.md`                            | **Identical standard** -- copy directly                                                                                                                                    |
+| MCP servers                                    | `.cursor/mcp.json`                                     | Same JSON structure (`mcpServers` key), compatible format                                                                                                                  |
+| `hooks/`                                       | No equivalent                                          | Cursor has no hook system; emit `console.warn` and skip                                                                                                                    |
+| `.claude/` paths                               | `.cursor/` paths                                       | Content rewriting needed                                                                                                                                                   |
 
 ### Key Design Decisions
 

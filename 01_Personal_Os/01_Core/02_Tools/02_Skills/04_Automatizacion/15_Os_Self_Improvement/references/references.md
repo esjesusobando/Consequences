@@ -26,21 +26,21 @@
 
 ## Improvement Categories
 
-| Category | Check Location | Common Actions |
-|----------|---------------|----------------|
-| Skill | `02_Skills/*/` | Update, Enhance, Create |
-| Workflow | `05_Workflows/` | Optimize, Integrate |
-| Tool | `04_Automatizacion/` | Add, Update, Replace |
-| Knowledge | `02_Knowledge/` | Connect, Expand |
-| Context | `01_Core/03_Context/` | Update, Add |
+| Category  | Check Location       | Common Actions         |
+|----------|---------------------|-----------------------|
+| Skill     | `02_Skills/*/`       | Update, Enhance, Create|
+| Workflow  | `05_Workflows/`      | Optimize, Integrate    |
+| Tool      | `04_Automatizacion/` | Add, Update, Replace   |
+| Knowledge | `02_Knowledge/`      | Connect, Expand        |
+| Context   | `01_Core/03_Context/`| Update, Add            |
 
 ## Example Improvements Made
 
-| Learning Source | Improvement Made | Priority |
-|-----------------|------------------|----------|
-| Claude Computer Use | New skill: `/learning-url-to-knowledge` | ALTA |
-| N8N patterns | Enhanced: workflow patterns | MEDIA |
-| Firecrawl | New: `/content-from-url` | ALTA |
+| Learning Source    | Improvement Made                       | Priority  |
+|-------------------|---------------------------------------|----------|
+| Claude Computer Use| New skill: `/learning-url-to-knowledge`| ALTA      |
+| N8N patterns       | Enhanced: workflow patterns            | MEDIA     |
+| Firecrawl          | New: `/content-from-url`               | ALTA      |
 
 ---
 

@@ -370,13 +370,13 @@ method=POST
 
 **Dependency table**:
 
-| Operator                                             | value1                                             | value2                                             | singleValue                                           |
+| Operator                                              | value1                                              | value2                                              | singleValue                                            |
 |------------------------------------------------------|----------------------------------------------------|----------------------------------------------------|-------------------------------------------------------|
-| equals                                               | Required                                           | Required                                           | false                                                 |
-| notEquals                                            | Required                                           | Required                                           | false                                                 |
-| contains                                             | Required                                           | Required                                           | false                                                 |
-| isEmpty                                              | Required                                           | Hidden                                             | true                                                  |
-| isNotEmpty                                           | Required                                           | Hidden                                             | true                                                  |
+| equals                                                | Required                                            | Required                                            | false                                                  |
+| notEquals                                             | Required                                            | Required                                            | false                                                  |
+| contains                                              | Required                                            | Required                                            | false                                                  |
+| isEmpty                                               | Required                                            | Hidden                                              | true                                                   |
+| isNotEmpty                                            | Required                                            | Hidden                                              | true                                                   |
 
 ### Example 3: Slack Operation Matrix
 
@@ -416,13 +416,13 @@ method=POST
 
 **Field visibility matrix**:
 
-| Field                                                 | post                                               | update                                             | delete                                             | get                                                |
+| Field                                                  | post                                                | update                                              | delete                                              | get                                                 |
 |-------------------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------------------------------------------|----------------------------------------------------|
-| channel                                               | Required                                           | Optional                                           | Required                                           | Required                                           |
-| text                                                  | Required                                           | Required                                           | Hidden                                             | Hidden                                             |
-| messageId                                             | Hidden                                             | Required                                           | Required                                           | Required                                           |
-| attachments                                           | Optional                                           | Optional                                           | Hidden                                             | Hidden                                             |
-| blocks                                                | Optional                                           | Optional                                           | Hidden                                             | Hidden                                             |
+| channel                                                | Required                                            | Optional                                            | Required                                            | Required                                            |
+| text                                                   | Required                                            | Required                                            | Hidden                                              | Hidden                                              |
+| messageId                                              | Hidden                                              | Required                                            | Required                                            | Required                                            |
+| attachments                                            | Optional                                            | Optional                                            | Hidden                                              | Hidden                                              |
+| blocks                                                 | Optional                                            | Optional                                            | Hidden                                              | Hidden                                              |
 
 ---
 

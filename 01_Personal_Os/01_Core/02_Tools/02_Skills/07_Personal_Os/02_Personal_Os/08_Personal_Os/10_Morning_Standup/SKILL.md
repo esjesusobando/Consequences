@@ -49,11 +49,11 @@ Para cada prioridad, definir:
 
 ## Reglas
 
-| Regla                                            | Descripción                                         |
+| Regla                                             | Descripción                                          |
 |--------------------------------------------------|-----------------------------------------------------|
-| Máximo 3 prioridades                             | No overloaded el día                                |
-| Una acción por tarea                             | siguiente paso concreto                             |
-| Tiempo realista                                  | Estimar honestamente                                |
+| Máximo 3 prioridades                              | No overloaded el día                                 |
+| Una acción por tarea                              | siguiente paso concreto                              |
+| Tiempo realista                                   | Estimar honestamente                                 |
 
 ## Errores Comunes
 

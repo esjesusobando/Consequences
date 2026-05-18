@@ -100,15 +100,15 @@ Reference the recommended approach from exploration if available.}
 
 ## Affected Areas
 
-| Area                                   | Impact                                       | Description                            |
+| Area                                    | Impact                                        | Description                             |
 |----------------------------------------|----------------------------------------------|----------------------------------------|
-| `path/to/area`                         | New/Modified/Removed                         | {What changes}                         |
+| `path/to/area`                          | New/Modified/Removed                          | {What changes}                          |
 
 ## Risks
 
-| Risk                                       | Likelihood                           | Mitigation                                |
+| Risk                                        | Likelihood                            | Mitigation                                 |
 |--------------------------------------------|--------------------------------------|-------------------------------------------|
-| {Risk description}                         | Low/Med/High                         | {How we mitigate}                         |
+| {Risk description}                          | Low/Med/High                          | {How we mitigate}                          |
 
 ## Rollback Plan
 
