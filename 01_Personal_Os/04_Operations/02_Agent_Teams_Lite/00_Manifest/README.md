@@ -1,6 +1,6 @@
 # 00_Manifest — JARVIS Ground Truth
 
-**Generated:** 2026-05-18T14:08:41
+**Generated:** 2026-05-18T15:44:01
 **Version:** v3.0 Consequences
 
 ## ¿Qué es esto?
