@@ -79,7 +79,7 @@ Think_Different/                         # RAÍZ
 │   │   ├── 00_Workflows_Os/     ✅ 30 workflows (7 categorías)
 │   │   ├── 01_Rules/            ✅ 12 reglas .mdc
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/         ✅ 43 agentes (5 Dream + 23 Specialists + 15 individuelles)
+│   │       ├── 01_Agents/         ✅ 58 agentes (5 Dream + 23 Specialists + 30 individuales)
 │   │       ├── 02_Skills/         ✅ 342 skills (12 áreas funcionales)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
