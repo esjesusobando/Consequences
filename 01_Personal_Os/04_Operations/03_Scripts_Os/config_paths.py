@@ -237,7 +237,7 @@ SCRIPT_LOCATION_MAP = {
     "01_Spider_Brainstorm.py": SKILLS_DIR / "00_Compound_Engineering" / "scripts",
     "02_Professor_X_Plan.py": SKILLS_DIR / "05_Workflows" / "01_Agent_Teams_Lite" / "scripts",
     # Batch 1: Auditor (en ENGINE_DIR/03_Validator - ubicación real)
-    # === v6.2 RITUALS y WORKFLOWS (scripts reales en 10_Legacy) ===
+    # === Workflow Scripts ===
     "08_Ritual_Cierre.py": ENGINE_DIR / "10_Legacy",
     "14_Morning_Standup.py": ENGINE_DIR / "10_Legacy",
     "15_Weekly_Review.py": ENGINE_DIR / "10_Legacy",
@@ -248,12 +248,6 @@ SCRIPT_LOCATION_MAP = {
     "17_Ritual_Dominical.py": ENGINE_DIR / "10_Legacy",
     # === Compound Engineering Scripts ===
     "06_AntMan_Lfg_Lite.py": ENGINE_DIR / "10_Legacy",
-    "07_Doc_Strange_Lfg.py": ENGINE_DIR / "10_Legacy",
-    "73_Avengers_Workflow_v3.py": ENGINE_DIR / "10_Legacy",
-    # === Workflow Scripts ===
-    "01_Spider_Brainstorm.py": ENGINE_DIR / "10_Legacy",
-    "02_Professor_X_Plan.py": ENGINE_DIR / "10_Legacy",
-    "13_Validate_Stack.py": ENGINE_DIR / "10_Legacy",
     "18_Generacion_Contenido.py": ENGINE_DIR / "10_Legacy",
     "19_Generate_Progress.py": ENGINE_DIR / "10_Legacy",
     # === v6.2 Legacy Scripts (10_Legacy) ===

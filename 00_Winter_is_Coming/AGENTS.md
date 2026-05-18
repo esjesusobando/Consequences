@@ -1,12 +1,12 @@
-# AGENTS.md — Think Different PersonalOS v4.0
+# AGENTS.md — Think Different PersonalOS v4.1
 
 > **You are an Orchestrator Agent** with a complete engineering stack. You coordinate specialized sub-agents, keep backlog items organized, tie work to goals, execute technical workflows, and maintain system integrity.
 
-**Última actualización:** 2026-05-13 (v4.0 Production Ready)
+**Última actualización:** 2026-05-18 (v4.1 Production Ready)
 
 ---
 
-## 🚀 MÁQUINA DE GUERRA — Think Different v4.0
+## 🚀 MÁQUINA DE GUERRA — Think Different v4.1
 
 Integrated stack: PersonalOS + SDD + Compound Engineering + Gentleman Skills + GGA + Engram + Auto-Improvement Engine
 
@@ -33,18 +33,18 @@ cat 01_Personal_Os/03_Task/  # tareas activas
 
 ### Mapa de Recursos del Orquestador
 
-| Recurso                                           | Ubicación                                                                 | Para qué usarlo                                                   |
+| Recurso                                            | Ubicación                                                                  | Para qué usarlo                                                    |
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
-| **Skills** (11 áreas, 300+)                       | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar                           |
-| **Reglas** (11 .mdc)                              | `01_Personal_Os/01_Core/01_Rules/`                                        | Governance y comportamiento del sistema                           |
-| **Agentes** (52+)                                 | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas                                    |
-| **HUBs** (26 scripts)                             | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema (git, audit)                               |
-| **MCPs** (36 Claude)                              | `.mcp.json`                                                               | Herramientas externas disponibles                                 |
-| **Hooks**                                         | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                               | Automatizaciones pre/post tool                                    |
-| **Memory**                                        | Engram MCP                                                                | Contexto persistente entre sesiones                               |
-| **GGA**                                           | `.agent/05_GGA/`                                                          | Code review automático                                            |
-| **Auto-Improvement**                              | `01_Personal_Os/04_Operations/01_Auto_Improvement/`                       | Detección y fix recursivo de issues                               |
-| **Workflows**                                     | `01_Personal_Os/01_Core/00_Workflows_Os/`                                 | 28+ workflows en 5 categorías                                     |
+| **Skills** (11 áreas, 300+)                        | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
+| **Reglas** (11 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
+| **Agentes** (52+)                                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
+| **HUBs** (26 scripts)                              | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
+| **MCPs** (36 Claude)                               | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
+| **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
+| **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
+| **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |
+| **Auto-Improvement**                               | `01_Personal_Os/04_Operations/01_Auto_Improvement/`                        | Detección y fix recursivo de issues                                |
+| **Workflows**                                      | `01_Personal_Os/01_Core/00_Workflows_Os/`                                  | 28+ workflows en 5 categorías                                      |
 
 ---
 
@@ -77,25 +77,25 @@ cat 01_Personal_Os/03_Task/  # tareas activas
 
 📁 `01_Personal_Os/01_Core/02_Tools/01_Agents/01_Dream_Team/`
 
-| Agente                                      | Archivo                                         | Rol                                          | Skills que usa                                       |
+| Agente                                       | Archivo                                          | Rol                                           | Skills que usa                                        |
 |---------------------------------------------|-------------------------------------------------|----------------------------------------------|------------------------------------------------------|
-| **Product Builder**                         | `01_Product_Builder.md`                         | Features, UX, producto                       | 03_Product_Manager · 04_Design                       |
-| **Data Engineer**                           | `02_Data_Engineer.md`                           | Datos, analytics, SQL                        | 16_Data_Analyst · 09_Data_Hub                        |
-| **Marketing Tech**                          | `03_Marketing_Tech.md`                          | Growth, contenido                            | 09_Marketing · 17_SEO                                |
-| **Design Ops**                              | `04_Design_Ops.md`                              | Diseño, visual systems                       | 04_Product_Design                                    |
-| **Platform Engineer**                       | `05_Platform_Engineer.md`                       | Infra, DevOps, CI/CD                         | 07_DevOps · 05_Mcp                                   |
+| **Product Builder**                          | `01_Product_Builder.md`                          | Features, UX, producto                        | 03_Product_Manager · 04_Design                        |
+| **Data Engineer**                            | `02_Data_Engineer.md`                            | Datos, analytics, SQL                         | 16_Data_Analyst · 09_Data_Hub                         |
+| **Marketing Tech**                           | `03_Marketing_Tech.md`                           | Growth, contenido                             | 09_Marketing · 17_SEO                                 |
+| **Design Ops**                               | `04_Design_Ops.md`                               | Diseño, visual systems                        | 04_Product_Design                                     |
+| **Platform Engineer**                        | `05_Platform_Engineer.md`                        | Infra, DevOps, CI/CD                          | 07_DevOps · 05_Mcp                                    |
 
 ### Especialistas Compound (24)
 
 📁 `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/`
 
-| Especialista                                        | Archivo                                              | Cuándo invocar                                   |
+| Especialista                                         | Archivo                                               | Cuándo invocar                                    |
 |-----------------------------------------------------|------------------------------------------------------|--------------------------------------------------|
-| **Architecture-Strategist**                         | `architecture-strategist.md`                         | Decisiones de arquitectura                       |
-| **Security-Sentinel**                               | `security-sentinel.md`                               | Code review de seguridad                         |
-| **Data-Integrity-Guardian**                         | `data-integrity-guardian.md`                         | Migraciones y datos                              |
-| **Performance-Oracle**                              | `performance-oracle.md`                              | Análisis de performance                          |
-| **Best-Practices-Researcher**                       | `best-practices-researcher.md`                       | Investigación de patrones                        |
+| **Architecture-Strategist**                          | `architecture-strategist.md`                          | Decisiones de arquitectura                        |
+| **Security-Sentinel**                                | `security-sentinel.md`                                | Code review de seguridad                          |
+| **Data-Integrity-Guardian**                          | `data-integrity-guardian.md`                          | Migraciones y datos                               |
+| **Performance-Oracle**                               | `performance-oracle.md`                               | Análisis de performance                           |
+| **Best-Practices-Researcher**                        | `best-practices-researcher.md`                        | Investigación de patrones                         |
 
 ### Protocolo de Delegación
 
@@ -116,9 +116,9 @@ cat 01_Personal_Os/03_Task/  # tareas activas
 
 ## 🛠️ HERRAMIENTAS
 
-| Herramienta                                | Ubicación                                                                             | Función                                                      |
+| Herramienta                                 | Ubicación                                                                              | Función                                                       |
 |--------------------------------------------|---------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| **Notifier**                               | `01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py`                       | Sonido al completar tareas ✅                                 |
+| **Notifier**                                | `01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py`                        | Sonido al completar tareas ✅                                  |
 
 ---
 
@@ -142,29 +142,29 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --task-comp
 
 > **.agent/** es el backup estratégico de 01_Core/. La fuente de verdad es **01_Personal_Os/01_Core/**.
 
-| Contenido Sincronizado                                         | Origen (Fuente)                                                   |
+| Contenido Sincronizado                                          | Origen (Fuente)                                                    |
 |----------------------------------------------------------------|-------------------------------------------------------------------|
-| `.agent/00_Rules/`                                             | `01_Personal_Os/01_Core/01_Rules/`                                |
-| `.agent/01_Agents/`                                            | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                      |
-| `.agent/02_Skills/`                                            | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                      |
-| `.agent/03_Workflows/`                                         | `01_Personal_Os/01_Core/00_Workflows_Os/`                         |
+| `.agent/00_Rules/`                                              | `01_Personal_Os/01_Core/01_Rules/`                                 |
+| `.agent/01_Agents/`                                             | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                       |
+| `.agent/02_Skills/`                                             | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                       |
+| `.agent/03_Workflows/`                                          | `01_Personal_Os/01_Core/00_Workflows_Os/`                          |
 
 ---
 
 ## 1. PERSONAL OS METHODOLOGY
 
-### Workspace Shape (v4.0 — 2026-05-13)
+### Workspace Shape (v4.1 — 2026-05-18)
 
 ```
-Think_Different/                           # v4.0 — 4 carpetas raíz
+Think_Different/                           # v4.1 — 4 carpetas raíz
 ├── 00_Winter_is_Coming/                   # 🔮 ESTRATÉGICO: Goals, Backlog, AGENTS.md
 ├── 01_Personal_Os/                        # ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                           # Motor del OS
-│   │   ├── 00_Workflows_Os/              # 28 Workflows (5 categorías)
-│   │   ├── 01_Rules/                     # 11 reglas (.mdc)
+│   │   ├── 00_Workflows_Os/              # 29+ Workflows (7 categorías)
+│   │   ├── 01_Rules/                     # 12 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
-│   │       ├── 01_Agents/               # 52+ agentes
-│   │       ├── 02_Skills/                # 300+ skills (11 áreas)
+│   │       ├── 01_Agents/               # 58+ agentes
+│   │       ├── 02_Skills/                # 343 skills (12 áreas)
 │   │       ├── 03_Mcp/                   # Backup MCPs
 │   │       ├── 04_Integrations/         # Fireflies, Granola
 │   │       ├── 05_Hooks/                # Pre/Post/Lifecycle/Sound
@@ -255,12 +255,12 @@ Tie to goals and reference material.
 
 For complex tasks, delegate to workflow files in `01_Personal_Os/01_Core/00_Workflows_Os/`.
 
-| Trigger                                  | Workflow                                                                                     | Cuándo usar                              |
+| Trigger                                   | Workflow                                                                                      | Cuándo usar                               |
 |------------------------------------------|----------------------------------------------------------------------------------------------|------------------------------------------|
-| Content generation                       | `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/03_Content_Generation.md`             | Writing, marketing                       |
-| Morning planning                         | `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/01_Morning_Standup.md`                | Daily focus                              |
-| Processing backlog                       | `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/02_Backlog_Processing.md`             | Backlog flow                             |
-| Weekly reflection                        | `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/04_Weekly_Review.md`                  | Weekly review                            |
+| Content generation                        | `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/03_Content_Generation.md`              | Writing, marketing                        |
+| Morning planning                          | `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/01_Morning_Standup.md`                 | Daily focus                               |
+| Processing backlog                        | `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/02_Backlog_Processing.md`              | Backlog flow                              |
+| Weekly reflection                         | `01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/04_Weekly_Review.md`                   | Weekly review                             |
 
 ---
 
@@ -268,17 +268,17 @@ For complex tasks, delegate to workflow files in `01_Personal_Os/01_Core/00_Work
 
 **Workflow:** `explore → propose → spec → design → tasks → apply → verify → archive`
 
-| Command                              | Skill                               | Propósito                                               |
+| Command                               | Skill                                | Propósito                                                |
 |--------------------------------------|-------------------------------------|---------------------------------------------------------|
-| `/sdd:init`                          | `sdd-init`                          | Initialize context + persistencia                       |
-| `/sdd:explore`                       | `sdd-explore`                       | Investigar código/ideas                                 |
-| `/sdd:new`                           | `sdd-propose`                       | Create proposal                                         |
-| `/sdd:spec`                          | `sdd-spec`                          | Write specs                                             |
-| `/sdd:design`                        | `sdd-design`                        | Technical design                                        |
-| `/sdd:tasks`                         | `sdd-tasks`                         | Break into tasks                                        |
-| `/sdd:apply`                         | `sdd-apply`                         | Implement                                               |
-| `/sdd:verify`                        | `sdd-verify`                        | Verify                                                  |
-| `/sdd:archive`                       | `sdd-archive`                       | Close & archive                                         |
+| `/sdd:init`                           | `sdd-init`                           | Initialize context + persistencia                        |
+| `/sdd:explore`                        | `sdd-explore`                        | Investigar código/ideas                                  |
+| `/sdd:new`                            | `sdd-propose`                        | Create proposal                                          |
+| `/sdd:spec`                           | `sdd-spec`                           | Write specs                                              |
+| `/sdd:design`                         | `sdd-design`                         | Technical design                                         |
+| `/sdd:tasks`                          | `sdd-tasks`                          | Break into tasks                                         |
+| `/sdd:apply`                          | `sdd-apply`                          | Implement                                                |
+| `/sdd:verify`                         | `sdd-verify`                         | Verify                                                   |
+| `/sdd:archive`                        | `sdd-archive`                        | Close & archive                                          |
 
 ### SDD Skills Location
 
@@ -300,14 +300,14 @@ Ideate → Brainstorm → Plan → Work → Review → Compound → Repeat
 
 ### CE Commands
 
-| Command                                      | Propósito                                               |
+| Command                                       | Propósito                                                |
 |----------------------------------------------|---------------------------------------------------------|
-| `/ce:ideate`                                 | Discover high-impact improvements                       |
-| `/ce:brainstorm`                             | Explore requirements                                    |
-| `/ce:plan`                                   | Detailed implementation plans                           |
-| `/ce:work`                                   | Execute with worktrees                                  |
-| `/ce:review`                                 | Multi-agent code review                                 |
-| `/ce:compound`                               | Document learnings                                      |
+| `/ce:ideate`                                  | Discover high-impact improvements                        |
+| `/ce:brainstorm`                              | Explore requirements                                     |
+| `/ce:plan`                                    | Detailed implementation plans                            |
+| `/ce:work`                                    | Execute with worktrees                                   |
+| `/ce:review`                                  | Multi-agent code review                                  |
+| `/ce:compound`                                | Document learnings                                       |
 
 ### CE Skills Location
 
@@ -323,13 +323,13 @@ Ideate → Brainstorm → Plan → Work → Review → Compound → Repeat
 
 ### Categories
 
-| Category                            | Skills                                                                                                                                    |
+| Category                             | Skills                                                                                                                                     |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| **Plan**                            | project-structure, docs-alignment, issue-creation, branch-pr, brainstorming, writing-plans                                                |
-| **Work**                            | react-19, nextjs-15, tailwind-4, zod-4, zustand-5, ai-sdk-5, pytest, playwright                                                           |
-| **Review**                          | technical-review, pr-review, testing-coverage, commit-hygiene, tui-quality                                                                |
-| **Compound**                        | gentleman-trainer, analytics-workflow, dieter-rams-design                                                                                 |
-| **Utilities**                       | mcp-integration, e2e-testing-skill, edge-case-skill, evaluation-skill                                                                     |
+| **Plan**                             | project-structure, docs-alignment, issue-creation, branch-pr, brainstorming, writing-plans                                                 |
+| **Work**                             | react-19, nextjs-15, tailwind-4, zod-4, zustand-5, ai-sdk-5, pytest, playwright                                                            |
+| **Review**                           | technical-review, pr-review, testing-coverage, commit-hygiene, tui-quality                                                                 |
+| **Compound**                         | gentleman-trainer, analytics-workflow, dieter-rams-design                                                                                  |
+| **Utilities**                        | mcp-integration, e2e-testing-skill, edge-case-skill, evaluation-skill                                                                      |
 
 ---
 
@@ -337,33 +337,33 @@ Ideate → Brainstorm → Plan → Work → Review → Compound → Repeat
 
 Code review con IA.
 
-| Command                                               | Propósito                                     |
+| Command                                                | Propósito                                      |
 |-------------------------------------------------------|-----------------------------------------------|
-| `.agent/05_GGA/bin/gga run`                           | Review staged files                           |
-| `.agent/05_GGA/bin/gga install`                       | Install pre-commit hook                       |
+| `.agent/05_GGA/bin/gga run`                            | Review staged files                            |
+| `.agent/05_GGA/bin/gga install`                        | Install pre-commit hook                        |
 
 **Location:** `.agent/05_GGA/bin/gga`
 
 ---
 
-## 6. MCP SERVERS — Active (36 Servers)
+## 6. MCP SERVERS — Active (35 Servers)
 
 Configured in `.mcp.json` (raíz del proyecto):
 
-| Category                              | MCPs                                                                                                                                              |
+| Category                               | MCPs                                                                                                                                               |
 |---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| 🔍 Search                              | exa, brave-search, stackoverflow                                                                                                                  |
-| 🧠 Memory                              | engram, aim-memory-bank, notebooklm                                                                                                               |
-| 📝 Notes                               | Notion, mcp-obsidian, obsidian-api                                                                                                                |
-| 🌐 Browser                             | Playwright, chrome-devtools, eagle-mcp                                                                                                            |
-| 🤖 AI & Code                           | context7, zai-mcp-server, github, task-master-ai, @magicuidesign/mcp                                                                              |
-| 📊 Data                                | supabase, Amplitude, supadata                                                                                                                     |
-| 🔄 Workflow                            | n8n-mcp, Linear                                                                                                                                   |
-| 💬 Communication                       | fireflies, google-workspace                                                                                                                       |
-| 📐 Design                              | excalidraw-yctimlin, pencil                                                                                                                       |
-| 🛠️ DevOps                             | docker, filesystem                                                                                                                                |
-| 🚀 Deploy                              | vercel, recall, TestSprite                                                                                                                        |
-| 🧩 Chain                               | sequential-thinking, nanobanana, qmd                                                                                                              |
+| 🔍 Search                               | exa, brave-search, stackoverflow                                                                                                                   |
+| 🧠 Memory                               | engram, aim-memory-bank, notebooklm                                                                                                                |
+| 📝 Notes                                | Notion, mcp-obsidian, obsidian-api                                                                                                                 |
+| 🌐 Browser                              | Playwright, chrome-devtools, eagle-mcp                                                                                                             |
+| 🤖 AI & Code                            | context7, zai-mcp-server, github, task-master-ai, @magicuidesign/mcp                                                                               |
+| 📊 Data                                 | supabase, Amplitude, supadata                                                                                                                      |
+| 🔄 Workflow                             | n8n-mcp, Linear                                                                                                                                    |
+| 💬 Communication                        | fireflies, google-workspace                                                                                                                        |
+| 📐 Design                               | excalidraw-yctimlin, pencil                                                                                                                        |
+| 🛠️ DevOps                              | docker, filesystem                                                                                                                                 |
+| 🚀 Deploy                               | vercel, recall, TestSprite                                                                                                                         |
+| 🧩 Chain                                | sequential-thinking, nanobanana, qmd                                                                                                               |
 
 ---
 
@@ -371,33 +371,33 @@ Configured in `.mcp.json` (raíz del proyecto):
 
 Centralized HUBs in `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 
-| Hub                                                | Propósito                                                                 |
+| Hub                                                 | Propósito                                                                  |
 |----------------------------------------------------|---------------------------------------------------------------------------|
-| **00_Sound_Engine.py**                             | Notificaciones sonoras                                                    |
-| **01_Auditor_Hub.py**                              | System validation: structure, links, skills, health                       |
-| **02_Git_Hub.py**                                  | Git operations + structure audits                                         |
-| **03_AIPM_Hub.py**                                 | AI Performance Monitoring                                                 |
-| **04_Ritual_Hub.py**                               | Session rituals: open, close, recovery                                    |
-| **05_Validator_Hub.py**                            | Code validation: rules, stack, patterns                                   |
-| **06_Tool_Hub.py**                                 | Tool integration and management                                           |
-| **07_Integration_Hub.py**                          | MCP and external integrations                                             |
-| **08_Workflow_Hub.py**                             | Workflow automation                                                       |
-| **09_Data_Hub.py**                                 | Data processing and analytics                                             |
-| **10_General_Hub.py**                              | General utilities                                                         |
-| **11_Auto_Learn_Hub.py**                           | Motor de automejora y aprendizaje                                         |
-| **14_Health_Metrics_Hub.py**                       | Health metrics y reportes                                                 |
-| **15_MCP_Sync_Hub.py**                             | Detecta y sincroniza drift Claude↔OpenCode                                |
-| **16_Agent_Mirror_Hub.py**                         | Mirror agentes source → backup                                            |
-| **17_Watchdog_Hub.py**                             | Health watchdog — integridad, drift, frontmatter                          |
-| **18_Telemetry_Hub.py**                            | Dashboard ASCII de métricas de uso                                        |
-| **19_Agent_Sync_Hub.py**                           | Sync .agent ↔ 01_Core                                                     |
-| **20_System_Mapper_Hub.py**                        | Genera 7 manifests JARVIS                                                 |
-| **21_Legacy_Path_Cleanup.py**                      | Limpia paths legacy                                                       |
-| **22_Validate_Skill_Frontmatter.py**               | Detecta skills sin frontmatter YAML                                       |
-| **33_Parallel_Audit_Pro.py**                       | Auditoría paralela avanzada                                               |
-| **34_Skill_Auditor.py**                            | Auditoría específica de skills                                            |
-| **50_System_Health_Monitor.py**                    | Monitor de salud del sistema                                              |
-| **57_Repo_Sync_Auditor.py**                        | Auditor de sincronización de repos                                        |
+| **00_Sound_Engine.py**                              | Notificaciones sonoras                                                     |
+| **01_Auditor_Hub.py**                               | System validation: structure, links, skills, health                        |
+| **02_Git_Hub.py**                                   | Git operations + structure audits                                          |
+| **03_AIPM_Hub.py**                                  | AI Performance Monitoring                                                  |
+| **04_Ritual_Hub.py**                                | Session rituals: open, close, recovery                                     |
+| **05_Validator_Hub.py**                             | Code validation: rules, stack, patterns                                    |
+| **06_Tool_Hub.py**                                  | Tool integration and management                                            |
+| **07_Integration_Hub.py**                           | MCP and external integrations                                              |
+| **08_Workflow_Hub.py**                              | Workflow automation                                                        |
+| **09_Data_Hub.py**                                  | Data processing and analytics                                              |
+| **10_General_Hub.py**                               | General utilities                                                          |
+| **11_Auto_Learn_Hub.py**                            | Motor de automejora y aprendizaje                                          |
+| **14_Health_Metrics_Hub.py**                        | Health metrics y reportes                                                  |
+| **15_MCP_Sync_Hub.py**                              | Detecta y sincroniza drift Claude↔OpenCode                                 |
+| **16_Agent_Mirror_Hub.py**                          | Mirror agentes source → backup                                             |
+| **17_Watchdog_Hub.py**                              | Health watchdog — integridad, drift, frontmatter                           |
+| **18_Telemetry_Hub.py**                             | Dashboard ASCII de métricas de uso                                         |
+| **19_Agent_Sync_Hub.py**                            | Sync .agent ↔ 01_Core                                                      |
+| **20_System_Mapper_Hub.py**                         | Genera 7 manifests JARVIS                                                  |
+| **21_Legacy_Path_Cleanup.py**                       | Limpia paths legacy                                                        |
+| **22_Validate_Skill_Frontmatter.py**                | Detecta skills sin frontmatter YAML                                        |
+| **33_Parallel_Audit_Pro.py**                        | Auditoría paralela avanzada                                                |
+| **34_Skill_Auditor.py**                             | Auditoría específica de skills                                             |
+| **50_System_Health_Monitor.py**                     | Monitor de salud del sistema                                               |
+| **57_Repo_Sync_Auditor.py**                         | Auditor de sincronización de repos                                         |
 
 ### Dynamic Paths
 
@@ -423,11 +423,11 @@ gr --agents    # Solo 3 agents
 
 ## 9. SLASH COMMANDS
 
-| Command                         | Descripción                                                                 |
+| Command                          | Descripción                                                                  |
 |---------------------------------|-----------------------------------------------------------------------------|
-| `/gr`                           | System Guardian - Valida estructura                                         |
-| `/sdd:*`                        | SDD Workflow (init, explore, new, etc.)                                     |
-| `/ce:*`                         | Compound Engineering (ideate, brainstorm, plan, etc.)                       |
+| `/gr`                            | System Guardian - Valida estructura                                          |
+| `/sdd:*`                         | SDD Workflow (init, explore, new, etc.)                                      |
+| `/ce:*`                          | Compound Engineering (ideate, brainstorm, plan, etc.)                        |
 
 ---
 
@@ -435,12 +435,12 @@ gr --agents    # Solo 3 agents
 
 ### Engram — Persistent Memory
 
-| Command                                           | Propósito                               |
+| Command                                            | Propósito                                |
 |---------------------------------------------------|-----------------------------------------|
-| `engram search <query>`                           | Search memories                         |
-| `engram save <title> <msg>`                       | Save memory                             |
-| `engram context`                                  | Recent context                          |
-| `engram tui`                                      | Interactive TUI                         |
+| `engram search <query>`                            | Search memories                          |
+| `engram save <title> <msg>`                        | Save memory                              |
+| `engram context`                                   | Recent context                           |
+| `engram tui`                                       | Interactive TUI                          |
 
 ---
 
@@ -452,17 +452,17 @@ gr --agents    # Solo 3 agents
 
 ---
 
-## 12. WORKFLOWS (28+ — 5 categorías)
+## 12. WORKFLOWS (29+ — 7 categorías)
 
 📁 `01_Personal_Os/01_Core/00_Workflows_Os/`
 
-| Categoría                                  | Path                                        | Workflows                                      |
+| Categoría                                   | Path                                         | Workflows                                       |
 |--------------------------------------------|---------------------------------------------|------------------------------------------------|
-| Personal OS                                | `01_Personal_Os/`                           | Morning, Backlog, Content, Weekly              |
-| Marvel                                     | `02_Marvel/`                                | Marvel-related                                 |
-| Gentleman                                  | `03_Gentleman/`                             | Gentleman standards                            |
-| Hillary                                    | `04_Hillary/`                               | Hillary Life OS                                |
-| Compound Engineering                       | `05_Compound_Engineering/`                  | CE workflows                                   |
+| Personal OS                                 | `01_Personal_Os/`                            | Morning, Backlog, Content, Weekly               |
+| Marvel                                      | `02_Marvel/`                                 | Marvel-related                                  |
+| Gentleman                                   | `03_Gentleman/`                              | Gentleman standards                             |
+| Hillary                                     | `04_Hillary/`                                | Hillary Life OS                                 |
+| Compound Engineering                        | `05_Compound_Engineering/`                   | CE workflows                                    |
 
 ---
 
@@ -498,24 +498,24 @@ gr --agents    # Solo 3 agents
 
 ## Quick Reference
 
-| Category                               | Command/Tool                                                        |
+| Category                                | Command/Tool                                                         |
 |----------------------------------------|---------------------------------------------------------------------|
-| **Daily**                              | "What should I work on?" / "Clear my backlog"                       |
-| **Plan Feature**                       | `/ce:brainstorm` or `/sdd:new`                                      |
-| **Execute**                            | `/ce:work` or `/sdd:apply`                                          |
-| **Review**                             | GGA or `/ce:review`                                                 |
-| **Document**                           | `/ce:compound`                                                      |
-| **Validate**                           | `gr` or `01_Auditor_Hub.py`                                         |
-| **Memory**                             | `engram save <title> <msg>`                                         |
+| **Daily**                               | "What should I work on?" / "Clear my backlog"                        |
+| **Plan Feature**                        | `/ce:brainstorm` or `/sdd:new`                                       |
+| **Execute**                             | `/ce:work` or `/sdd:apply`                                           |
+| **Review**                              | GGA or `/ce:review`                                                  |
+| **Document**                            | `/ce:compound`                                                       |
+| **Validate**                            | `gr` or `01_Auditor_Hub.py`                                          |
+| **Memory**                              | `engram save <title> <msg>`                                          |
 
 ## Hillary Life OS — Triggers
 
-| Trigger                                                                  | Skill                                      | Workflow                                      |
+| Trigger                                                                   | Skill                                       | Workflow                                       |
 |--------------------------------------------------------------------------|--------------------------------------------|-----------------------------------------------|
-| "capture", "captura", "quick add", "anota"                               | `01_Quick_Capture`                         | Workflows en 04_Hillary/                      |
-| "plan my day", "plan día", "qué hago hoy"                                | `02_Plan_My_Day`                           | Workflows en 04_Hillary/                      |
-| "daily notes", "log this", "registro"                                    | `03_Daily_Notes`                           | Workflows en 04_Hillary/                      |
-| "/hillary", "life os", "personal productivity"                           | Orquestador                                | Workflows en 04_Hillary/                      |
+| "capture", "captura", "quick add", "anota"                                | `01_Quick_Capture`                          | Workflows en 04_Hillary/                       |
+| "plan my day", "plan día", "qué hago hoy"                                 | `02_Plan_My_Day`                            | Workflows en 04_Hillary/                       |
+| "daily notes", "log this", "registro"                                     | `03_Daily_Notes`                            | Workflows en 04_Hillary/                       |
+| "/hillary", "life os", "personal productivity"                            | Orquestador                                 | Workflows en 04_Hillary/                       |
 
 **Skills location:** `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/`
 **Inbox:** `01_Personal_Os/03_Task/02_Hillary_Inbox/`
@@ -523,4 +523,4 @@ gr --agents    # Solo 3 agents
 
 ---
 
-_Think Different PersonalOS v4.0 — Pure Green State (Audit 2026-05-13)_
+_Think Different PersonalOS v4.1 — Pure Green State (Audit 2026-05-18)_

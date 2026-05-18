@@ -34,11 +34,11 @@
 
 ## 🔄 Actualizaciones Recientes
 
-| Fecha                                    | Cambio                                                                                          |
+| Fecha                                     | Cambio                                                                                           |
 |------------------------------------------|-------------------------------------------------------------------------------------------------|
-| 2026-05-10                               | v4.0 Consequences — Production Ready, Every CE v3.7.3, gentle-ai v1.26.6                        |
-| 2026-05-05                               | v3.1 Consequences — Beautify Tables, métricas actualizadas, JARVIS manifests                    |
-| 2026-04-29                               | Git cleanup session — submodules removidos                                                      |
+| 2026-05-10                                | v4.0 Consequences — Production Ready, Every CE v3.7.3, gentle-ai v1.26.6                         |
+| 2026-05-05                                | v3.1 Consequences — Beautify Tables, métricas actualizadas, JARVIS manifests                     |
+| 2026-04-29                                | Git cleanup session — submodules removidos                                                       |
 
 ---
 
