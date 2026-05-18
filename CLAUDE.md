@@ -146,11 +146,11 @@ Think_Different/                           # RAÍZ
 ├── 00_Winter_is_Coming/          ✅ MATRIX: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD 💾)
-│   │   ├── 00_Workflows_Os/     ✅ 28 workflows (5 categorías)
+│   │   ├── 00_Workflows_Os/     ✅ 30 workflows (7 categorías)
 │   │   ├── 01_Rules/            ✅ 12 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/            ✅ Todas las herramientas
-│   │       ├── 01_Agents/       ✅ 52+ agentes (Dream Team + Specialists)
-│   │       ├── 02_Skills/       ✅ 300+ skills (11 áreas funcionales)
+│   │       ├── 01_Agents/       ✅ 58 agentes (5 Dream + 24 Specialists + 29 individuales)
+│   │       ├── 02_Skills/         ✅ 342 skills (12 áreas funcionales)
 │   │       ├── 03_Mcp/         ✅ Backup configs MCP
 │   │       ├── 04_Integrations/ ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/        ✅ Pre/Post/Lifecycle/Sound/Harness
@@ -164,21 +164,21 @@ Think_Different/                           # RAÍZ
 │       ├── 00_Context_LLM/      ✅ Memoria, notas, knowledge brain
 │       ├── 01_Auto_Improvement/ ✅ Motor auto-mejora
 │       ├── 02_Agent_Teams_Lite/ ✅ SDD registry + 7 JARVIS manifests
-│       └── 03_Scripts_Os/       ✅ 26 scripts (21 HUBs + 5 aux)
+│       └── 03_Scripts_Os/       ✅ 30 scripts (21 HUBs + 9 aux)
 ├── 02_Playground/               ✅ Zona de pruebas (no contamina el OS)
 ├── 03_Resultado/                ✅ Outputs de proyectos (OIM, Elite Portfolio, etc.)
 ├── .agent/                      ✅ Backup estratégico
 ├── .atl/                        ✅ SDD Registry + openspec
 ├── .claude/                     ✅ Config Claude Code + rules
 ├── .opencode/                   ✅ Config OpenCode + skills locales
-├── .mcp.json                    ✅ MCPs activos (36 servidores)
+├── .mcp.json                    ✅ MCPs activos (35 servidores)
 ├── OS_DIRECTORY.md              ✅ JARVIS discovery
 ├── AGENTS.md                    ✅ Root entry (GGA Pre-Commit)
 ├── CLAUDE.md                    ✅ Config Oficial para IAs (ESTE)
 └── README.md                    ✅ Documentación principal
 ```
 
-### 2. AGENTS (52+)
+### 2. AGENTS (58)
 
 | Categoría                                   | Ubicación                                                                        |
 |--------------------------------------------|---------------------------------------------------------------------------------|
@@ -210,11 +210,11 @@ Think_Different/                           # RAÍZ
 ```text
 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 ├── 01_OS_Inventory.json      # Inventario OS
-├── 02_MCP_Registry.yaml     # 37 MCPs (34 shared + 3 Claude-only)
-├── 03_Agent_Catalog.yaml    # 52+ agentes
-├── 04_Skill_Index.json      # 341 skills en 12 áreas
-├── 05_HUB_Catalog.yaml     # 29 scripts HUB
-├── 06_Workflow_Graph.yaml   # 28+ workflows
+├── 02_MCP_Registry.yaml     # 35 MCPs (34 shared + 3 Claude-only)
+├── 03_Agent_Catalog.yaml    # 43 agentes
+├── 04_Skill_Index.json      # 342 skills en 12 áreas
+├── 05_HUB_Catalog.yaml     # 30 scripts HUB
+├── 06_Workflow_Graph.yaml   # 30 workflows
 └── 07_Hook_Registry.yaml    # 6 categorías de hooks
 ```
 
@@ -256,10 +256,10 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 | Estructura (4 raíz)                                       | ✅ PASS                                         | Winter / Personal_Os / Playground / Resultado                                                |
 | HUBs (29 scripts)                                         | ✅ ACTIVE                                       | 26 HUBs + 3 utility scripts (path_replacement x2, mass_path_migration)                       |
 | Skills (341 skills, 12 áreas)                             | ✅ VERIFIED                                     | 12 áreas funcionales — 0 sin frontmatter                                                     |
-| Agent Matrix                                              | ✅ ACTIVE                                       | 52+ agentes                                                                                  |
+| Agent Matrix                                              | ✅ ACTIVE                                       | 58 agentes                                                                                |
 | Manifest (7 archivos)                                     | ✅ VALIDATED                                    | 00_Manifest/ en 02_Agent_Teams_Lite/                                                         |
 | MCPs (37 Claude Code)                                     | ⚠️ SYNCED WITH DRIFT                           | 37 Claude / 34 OpenCode — 3 MCPs solo en Claude (higgsfield, playwright, sequential-thinking)|
-| Rules (11 .mdc)                                           | ✅ DEFINED                                      | 01_Rules/                                                                                    |
+| Rules (12 .mdc)                                           | ✅ DEFINED                                      | 01_Rules/                                                                                    |
 | Workflows (28+)                                           | ✅ ACTIVE                                       | 5 categorías en 00_Workflows_Os                                                              |
 | Agent Teams Protocol                                      | ✅ ACTIVE                                       | Super Campeones                                                                              |
 

@@ -1,14 +1,14 @@
-# MCP Registry — generated 2026-05-18T02:27:20
-# Drift Claude<->OpenCode: claude_only=3, opencode_only=0
+# MCP Registry — generated 2026-05-18T14:08:41
+# Drift Claude<->OpenCode: claude_only=2, opencode_only=1
 
 version: v3.0
-generated: "2026-05-18T02:27:20"
+generated: "2026-05-18T14:08:41"
 totals:
-  claude_code: 37
+  claude_code: 35
   opencode: 34
-  both: 34
-  claude_only: 3
-  opencode_only: 0
+  both: 33
+  claude_only: 2
+  opencode_only: 1
 mcps:
   - name: @magicuidesign/mcp
     availability: both
@@ -51,8 +51,8 @@ mcps:
     claude_code: True
     opencode: True
   - name: eagle
-    availability: both
-    claude_code: True
+    availability: opencode_only
+    claude_code: False
     opencode: True
   - name: eagle-mcp
     availability: both
@@ -118,10 +118,6 @@ mcps:
     availability: both
     claude_code: True
     opencode: True
-  - name: playwright
-    availability: claude_only
-    claude_code: True
-    opencode: False
   - name: qmd
     availability: both
     claude_code: True

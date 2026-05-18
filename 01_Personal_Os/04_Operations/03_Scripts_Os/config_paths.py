@@ -79,7 +79,7 @@ AUTO_IMPROVEMENT_DIR = OPERATIONS_DIR / "01_Auto_Improvement"
 # =============================================================================
 
 ENGINE_SCRIPTS_DIR = ENGINE_DIR  # Ya está en 03_Scripts_Os
-ENGINE_TESTS_DIR = ENGINE_DIR / "Legacy_Backup"
+ENGINE_TESTS_DIR = ENGINE_DIR / "10_Legacy"
 ENGINE_COMPOUND_DIR = CORE_DIR / "02_Tools" / "02_Skills" / "00_Compound_Engineering"
 
 # =============================================================================
@@ -268,7 +268,7 @@ SCRIPT_LOCATION_MAP = {
     "16_Carousel_Engine.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
     "12_Context_Usage_Bar.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
     # === Scripts migrados a skills/scripts/ ===
-    "39_Repair_Corruption.py": SKILLS_DIR / "06_Tools" / "11_System_Master" / "06_Scripts",
+    "39_Repair_Corruption.py": SKILLS_DIR / "06_Tools" / "21_System_Master",
     "62_Tool_Shed.py": SKILLS_DIR / "06_Tools" / "04_DevOps" / "scripts",
     # === Scripts Medio Valor → 14_Otros ===
     "60_Fast_Vision.py": ENGINE_DIR / "14_Otros" / "60_Fast_Vision.py",

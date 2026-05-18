@@ -11,10 +11,10 @@
 | MCPs Claude Code                      | **35**                                                              | ✅ OPERATIONAL                                  |
 | Every CE                              | v2.55.0 (local repo) ✅                                              | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.26.6                                                             | ✅ AVAILABLE                                    |
-| Skills                                | **343** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
-| Agentes                               | **58+** (22 archivos en 01_Agents + subdirs)                        | ✅ ACTIVE                                       |
-| HUBs                                  | **31 scripts** (26 HUBs + 5 utility)                                | ✅ VERIFIED                                     |
-| Workflows                             | **29+** (7 categorías en 00_Workflows_Os)                           | ✅ ACTIVE                                       |
+| Skills                                | **342** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
+| Agentes                               | **43** (5 Dream + 23 Specialists + 15 individuelles)              | ✅ ACTIVE                                       |
+| HUBs                                  | **30 scripts** (21 HUBs + 9 auxiliary)                              | ✅ VERIFIED                                     |
+| Workflows                             | **30** (7 categorías en 00_Workflows_Os)                             | ✅ ACTIVE                                       |
 | Hooks                                 | 6 categorías                                                        | ✅ ACTIVE                                       |
 | Rules                                 | **12 (.mdc)** en 01_Rules                                           | ✅ DEFINED                                      |
 | JARVIS Manifests                      | 7 en 00_Manifest/                                                   | ✅ VALIDATED                                    |
@@ -76,11 +76,11 @@ Think_Different/                         # RAÍZ
 ├── 00_Winter_is_Coming/          ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD)
-│   │   ├── 00_Workflows_Os/     ✅ 29+ workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/     ✅ 30 workflows (7 categorías)
 │   │   ├── 01_Rules/            ✅ 12 reglas .mdc
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/         ✅ 58+ agentes (Dream Team + Specialists + individuales)
-│   │       ├── 02_Skills/         ✅ 343 skills (12 áreas funcionales)
+│   │       ├── 01_Agents/         ✅ 43 agentes (5 Dream + 23 Specialists + 15 individuelles)
+│   │       ├── 02_Skills/         ✅ 342 skills (12 áreas funcionales)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/          ✅ Pre/Post/Lifecycle/Sound
@@ -126,7 +126,7 @@ Think_Different/                         # RAÍZ
 ├── .atl/                         ✅ SDD Registry + openspec/
 ├── .claude/                      ✅ Config Claude Code + rules
 ├── .opencode/                    ✅ Config OpenCode + skills locales
-├── .mcp.json                     ✅ 37 MCPs activos (Claude Code)
+├── .mcp.json                     ✅ 35 MCPs activos (Claude Code)
 ├── OS_DIRECTORY.md               ✅ Este archivo — JARVIS discovery
 ├── AGENTS.md                     ✅ GGA Pre-Commit entry
 ├── CLAUDE.md                     ✅ Config IAs (FUENTE)
@@ -135,25 +135,25 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## 🧠 SKILLS — 12 ÁREAS FUNCIONALES (343 skills)
+## 🧠 SKILLS — 12 ÁREAS FUNCIONALES (342 skills)
 
 | Área                   | Items  | Descripción                          |
 |-----------------------|-------|-------------------------------------|
-| 00_Compound_Engineering| 11     | Core CE — SDD + Compound Engineering |
-| 00_Personal_Os_Stack   | 11     | Stack base OS + Gcierr               |
-| 00_Skill_Auditor       | 4      | Auditoría de skills                  |
-| 01_Creacion_Contenidos | 22     | Brand, YouTube, SEO, Carruseles      |
-| 02_Diseno_Ui_Ux        | 14     | Product Design, UI/UX, Taste, Minimal|
-| 03_Video_Media         | 2      | Video Intel, James Cameron           |
-| 04_Automatizacion      | 12     | N8N, Firecrawl, GWS Client           |
-| 05_Workflows           | 6      | Agent Teams, PM, Orchestrator        |
-| 06_Tools               | 14     | Skill Creator, Testing, DevOps, Data |
-| 07_Personal_Os         | 8      | Life OS, Hillary, Rituales           |
-| 08_Invictus_Web        | 3      | Playwright, Superpowers, Browser Auto|
-| 09_Claude_Ads          | 5      | Claude Ads & Promoted Content        |
-| **TOTAL**              | **343**| Total real indexado en disco         |
+| 00_Compound_Engineering| 63     | Core CE — SDD + Compound Engineering |
+| 00_Personal_Os_Stack   | 1      | Stack base OS + Gcierr               |
+| 00_Skill_Auditor       | 1      | Auditoría de skills                  |
+| 01_Creacion_Contenidos | 38     | Brand, YouTube, SEO, Carruseles      |
+| 02_Diseno_Ui_Ux        | 23     | Product Design, UI/UX, Taste, Minimal|
+| 03_Video_Media         | 6      | Video Intel, James Cameron           |
+| 04_Automatizacion      | 21     | N8N, Firecrawl, GWS Client           |
+| 05_Workflows           | 33     | Agent Teams, PM, Orchestrator        |
+| 06_Tools               | 93     | Skill Creator, Testing, DevOps, Data |
+| 07_Personal_Os         | 29     | Life OS, Hillary, Rituales           |
+| 08_Invictus_Web        | 14     | Playwright, Superpowers, Browser Auto|
+| 09_Claude_Ads          | 20     | Claude Ads & Promoted Content        |
+| **TOTAL**              | **342**| Total real indexado en disco         |
 
-> ⚠️ Las skills están tanto en carpetas de área como en subcarpetas internas. Total real: 300+.
+> Las skills están tanto en carpetas de área como en subcarpetas internas.
 
 ---
 
@@ -176,18 +176,18 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## ⚡ AGENTES — 58+ CONFIGURADOS
+## ⚡ AGENTES — 43 CONFIGURADOS
 
 | Categoría                 | Cantidad  | Ubicación                                                              |
 |--------------------------|----------|-----------------------------------------------------------------------|
 | **Dream Team**            | 5         | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform)          |
-| **Specialists Compound**  | 24        | `02_Specialists_Compound/`                                             |
-| **Individuales**          | 29        | Raíz `01_Agents/` (Orchestrator, AIPM_Judge, LFG, etc.)                |
-| **TOTAL**                 | **58+**   | 58+ archivos de agentes                                                |
+| **Specialists Compound**  | 23        | `02_Specialists_Compound/`                                             |
+| **Individuales**          | 15        | Raíz `01_Agents/` (Orchestrator, AIPM_Judge, LFG, etc.)                |
+| **TOTAL**                 | **43**   | 43 archivos de agentes                                                |
 
 ---
 
-## 🎯 HUBs — 31 SCRIPTS TOTALES (26 operativos + 5 auxiliary)
+## 🎯 HUBs — 30 SCRIPTS TOTALES (21 operativos + 9 auxiliary)
 
 ### Scripts Python en raíz de 03_Scripts_Os/ (principales)
 
@@ -296,4 +296,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-05-18 | PersonalOS v4.1 Production Ready | Every CE v3.7.3 (local repo) ✅ | gentle-ai v1.26.6 | 343 skills | 58+ agents | 35 MCPs*
+*Actualizado: 2026-05-18 | PersonalOS v4.1 Production Ready | Every CE v3.7.3 (local repo) ✅ | gentle-ai v1.26.6 | 343 skills | 43 agents | 35 MCPs*

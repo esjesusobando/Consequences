@@ -35,16 +35,16 @@ cat 01_Personal_Os/03_Task/  # tareas activas
 
 | Recurso                                            | Ubicación                                                                  | Para qué usarlo                                                    |
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
-| **Skills** (11 áreas, 300+)                        | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
-| **Reglas** (11 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
-| **Agentes** (52+)                                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
-| **HUBs** (26 scripts)                              | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
-| **MCPs** (36 Claude)                               | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
+| **Skills** (12 áreas, 342)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
+| **Reglas** (12 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
+| **Agentes** (58)                                   | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
+| **HUBs** (30 scripts)                              | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
+| **MCPs** (35 Claude)                               | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
 | **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |
 | **Auto-Improvement**                               | `01_Personal_Os/04_Operations/01_Auto_Improvement/`                        | Detección y fix recursivo de issues                                |
-| **Workflows**                                      | `01_Personal_Os/01_Core/00_Workflows_Os/`                                  | 28+ workflows en 5 categorías                                      |
+| **Workflows**                                      | `01_Personal_Os/01_Core/00_Workflows_Os/`                                  | 30 workflows en 7 categorías                                      |
 
 ---
 
@@ -160,11 +160,11 @@ Think_Different/                           # v4.1 — 4 carpetas raíz
 ├── 00_Winter_is_Coming/                   # 🔮 ESTRATÉGICO: Goals, Backlog, AGENTS.md
 ├── 01_Personal_Os/                        # ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                           # Motor del OS
-│   │   ├── 00_Workflows_Os/              # 29+ Workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/              # 30 Workflows (7 categorías)
 │   │   ├── 01_Rules/                     # 12 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
-│   │       ├── 01_Agents/               # 58+ agentes
-│   │       ├── 02_Skills/                # 343 skills (12 áreas)
+│   │       ├── 01_Agents/               # 58 agentes
+│   │       ├── 02_Skills/                # 342 skills (12 áreas)
 │   │       ├── 03_Mcp/                   # Backup MCPs
 │   │       ├── 04_Integrations/         # Fireflies, Granola
 │   │       ├── 05_Hooks/                # Pre/Post/Lifecycle/Sound

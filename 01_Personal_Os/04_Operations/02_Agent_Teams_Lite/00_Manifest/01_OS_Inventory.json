@@ -1,13 +1,13 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-18T02:27:20",
+  "generated": "2026-05-18T14:08:41",
   "personal_os": {
     "name": "PersonalOS",
     "version": "v2.1 -> v3.0 (in progress)",
     "root": "Think_Different"
   },
   "totals": {
-    "mcps_claude": 37,
+    "mcps_claude": 35,
     "mcps_opencode": 34,
     "skills": 342,
     "skill_areas": 12,
