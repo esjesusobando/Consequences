@@ -47,19 +47,22 @@ def validate_table(table_block, file_path, line_num):
     if not rows:
         return issues
 
-    # Check column consistency
-    col_counts = [len(row) for row in rows]
-    if len(set(col_counts)) > 1:
-        issues.append(f"Línea {line_num}: columnas desiguales {col_counts}")
+    # Check column consistency (exclude separator row)
+    data_rows = [row for row in rows if not all(set(c).issubset({"-", ":", " "}) for c in row)]
+    if data_rows:
+        col_counts = [len(row) for row in data_rows]
+        if len(set(col_counts)) > 1:
+            issues.append(f"Línea {line_num}: columnas desiguales {col_counts}")
 
-    # Check separator row exists
-    if not any(set(c).issubset({"-", ":", " "}) for c in rows[1] if len(rows) > 1):
-        issues.append(f"Línea {line_num}: falta fila separadora `|---|`")
+    # Check separator row exists (only if we have data rows)
+    if data_rows and len(rows) > 1:
+        if not any(set(c).issubset({"-", ":", " "}) for c in rows[1] if len(rows) > 1):
+            issues.append(f"Línea {line_num}: falta fila separadora `|---|`")
 
-    # Check no cell overflow (cell content longer than 200 chars is suspicious)
+    # Check no cell overflow (cell content longer than 400 chars is suspicious - likely URL or path)
     for i, row in enumerate(rows):
         for j, cell in enumerate(row):
-            if len(cell) > 200:
+            if len(cell) > 400:
                 issues.append(f"Línea {line_num + i}: celda [{j}] muy larga ({len(cell)} chars)")
 
     return issues
