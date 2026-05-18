@@ -30,8 +30,8 @@ Se completó la auditoría integral del sistema Think Different PersonalOS. Se i
 ### Bug 4 — `.mcp.json: Claves duplicadas` ⚡ MEDIO
 - **Encontrado:** `"Playwright"` (L113) + `"playwright"` (L325) — misma funcionalidad
 - **Encontrado:** `"eagle-mcp"` (L31) + `"eagle"` (L321) — misma URL
-- **Acción:** Eliminadas las entradas duplicadas (`playwright` lowercase + `eagle`)
-- **Impacto:** PowerShell `ConvertFrom-Json` fallaba con "claves duplicadas"
+- **Acción:** Eliminadas las entradas duplicadas (`playwright` lowercase + `eagle`) → Fix aplicado 2026-05-18
+- **Impacto:** JSON válido sin duplicados — 37→35 MCPs activos
 
 ### Bug 5 — `BACKLOG.md: Versión incorrecta` ⚠️ BAJO
 - **Antes:** "v7" (no corresponde a ninguna versión del sistema)
