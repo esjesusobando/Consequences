@@ -1,6 +1,6 @@
-# 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
+🪅📝# 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.0 Production** | 2026-05-10
+**v4.1 Production** | 2026-05-18
 
 ---
 
@@ -8,20 +8,20 @@
 
 | Componente                         | Total                                            | Estado                                      |
 |------------------------------------|--------------------------------------------------|---------------------------------------------|
-| MCPs Claude Code                   | 38                                               | ✅ OPERATIONAL                               |
+| MCPs Claude Code                   | 35                                               | ✅ OPERATIONAL                               |
 | Every CE                           | v3.7.3 (latest)                                  | ✅ UPDATED                                   |
 | gentle-ai                          | v1.26.6                                          | ✅ AVAILABLE                                 |
-| Skills                             | 300+ (11 áreas activas)                          | ✅ VERIFIED                                  |
-| Agentes                            | 52+                                              | ✅ ACTIVE                                    |
-| HUBs                               | 28 scripts (23 principales + 5 aux)              | ✅ VERIFIED                                  |
-| Workflows                          | 28+                                              | ✅ ACTIVE                                    |
+| Skills                             | 343 (12 áreas activas)                           | ✅ VERIFIED                                  |
+| Agentes                            | 58+                                              | ✅ ACTIVE                                    |
+| HUBs                               | 31 scripts (26 principales + 5 aux)              | ✅ VERIFIED                                  |
+| Workflows                          | 29+                                              | ✅ ACTIVE                                    |
 | Hooks                              | 10+                                              | ✅ ACTIVE                                    |
-| Rules                              | 11 (.mdc)                                        | ✅ DEFINED                                   |
+| Rules                              | 12 (.mdc)                                        | ✅ DEFINED                                   |
 | JARVIS Manifests                   | 7                                                | ✅ VALIDATED                                 |
 | Open Design                        | 62 skills + 138 design systems                   | ✅ INTEGRATED                                |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-10 — v4.0 Production Ready
-> Sistema actualizado: Every CE v3.7.3, gentle-ai v1.26.6, naming conventions fixes, reports consolidated
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-18 — v4.1 Production Ready
+> Bugs corregidos: config_paths (3 paths rotos), .mcp.json (2 duplicados), BACKLOG version, conteos actualizados
 > Ver: `01_Personal_Os/04_Operations/00_Context_LLM/08_Auditorias/HEALTH_CHECK_2026-05-10.md`
 
 ---
@@ -110,7 +110,7 @@ Think_Different/
 
 ---
 
-## 🧠 SKILLS — 11 ÁREAS FUNCIONALES (300 skills)
+## 🧠 SKILLS — 12 ÁREAS FUNCIONALES (343 skills)
 
 | Área                                        | Descripción                                              | Skills                 |
 |---------------------------------------------|----------------------------------------------------------|------------------------|
@@ -125,10 +125,11 @@ Think_Different/
 | 06_Tools                                    | Skill Creator, Testing, DevOps, Data                     | 25+                    |
 | 07_Personal_Os                              | Life OS, Hillary, Rituales                               | 10+                    |
 | 08_Invictus_Web                             | Playwright, Superpowers, Browser Auto                    | 15+                    |
+| claude-ads                                  | Claude Ads integration                                   | 2+                     |
 
 ---
 
-## 📊 MCPs — 38 SERVIDORES ACTIVOS (Claude Code)
+## 📊 MCPs — 35 SERVIDORES ACTIVOS (Claude Code)
 
 | Categoría                     | Servidores                                                                         |
 |-------------------------------|------------------------------------------------------------------------------------|
@@ -158,7 +159,7 @@ Think_Different/
 
 ---
 
-## 🎯 HUBs — 28 SCRIPTS TOTALES (23 operativos + 5 auxiliares)
+## 🎯 HUBs — 31 SCRIPTS TOTALES (26 operativos + 5 auxiliares)
 
 ### HUBs Principales (en raíz de 03_Scripts_Os/)
 
@@ -185,6 +186,9 @@ Think_Different/
 | 20                | System Mapper ★                         | `20_System_Mapper_Hub.py`                                     | Genera 7 manifests JARVIS                            |
 | 21                | Legacy Cleanup                          | `21_Legacy_Path_Cleanup.py`                                   | Limpia paths legacy v2.x                             |
 | 22                | Skill Frontmatter                       | `22_Validate_Skill_Frontmatter.py`                            | Detecta skills sin frontmatter YAML                  |
+| 23                | Path Replacement                        | `23_path_replacement.py`                                      | Reemplazo de paths en archivos                       |
+| 24                | Mass Path Migration                     | `24_mass_path_migration.py`                                   | Migración masiva de paths                            |
+| 25                | Minimax Optimizer                       | `25_Minimax_Optimizer_Hub.py`                                 | Optimización MiniMax                                 |
 
 ### Scripts Auxiliares (en subdirectorios)
 
@@ -232,4 +236,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-05-10 | PersonalOS v4.0 Production Ready | Every CE v3.7.3 | gentle-ai v1.26.6 | 300+ skills | Reports consolidated | Naming conventions fixed*
+*Actualizado: 2026-05-18 | PersonalOS v4.1 Production Ready | Every CE v3.7.3 | gentle-ai v1.26.6 | 343 skills | 34 MCPs | 12 rules | config_paths fixed*

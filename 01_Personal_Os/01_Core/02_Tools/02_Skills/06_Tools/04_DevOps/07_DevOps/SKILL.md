@@ -24,7 +24,8 @@ Operaciones, deployment, integraciones cloud y optimización: Vercel, Supabase, 
 | 09                              | `09_Using_Git_Worktrees`                                     | Gestión de git worktrees                                               |
 | 10                              | `10_E2b_Sandbox`                                             | Sandboxing con E2B                                                     |
 | 11                              | `11_Error_Handling_Patterns`                                 | Patrones de manejo de errores                                          |
-| 12                              | `12_RTM`                                                     | Release to Market checklist                                            |
+| 12                              | `12_RTM`                                                     | Requirements Traceability Matrix                                       |
+| 13                              | `13_Release_Agent`                                           | Pre-release checks, test matrix y release checklists (Anthropic + Google) |
 
 ## Uso
 Activar la skill correspondiente al servicio o proceso DevOps requerido.

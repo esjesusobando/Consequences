@@ -1,10 +1,10 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-15T05:45:42",
+  "generated": "2026-05-18T02:00:16",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
-    "areas": 11,
-    "skills": 316,
+    "areas": 12,
+    "skills": 342,
     "without_frontmatter": 0
   },
   "by_area": {
@@ -358,187 +358,187 @@
         },
         {
           "name": "01_Agent_Onboarding",
-          "path": "01_Creacion_Contenidos/04_Ai_Agents/01_Agent_Onboarding/SKILL.md",
+          "path": "01_Creacion_Contenidos/02_Ai_Agents/01_Agent_Onboarding/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "02_Executive_Assistant",
-          "path": "01_Creacion_Contenidos/04_Ai_Agents/02_Executive_Assistant/SKILL.md",
+          "path": "01_Creacion_Contenidos/02_Ai_Agents/02_Executive_Assistant/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "03_Head_Of_Marketing",
-          "path": "01_Creacion_Contenidos/04_Ai_Agents/03_Head_Of_Marketing/SKILL.md",
+          "path": "01_Creacion_Contenidos/02_Ai_Agents/03_Head_Of_Marketing/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "05_Content_Ideation",
-          "path": "01_Creacion_Contenidos/05_Content_Ideation/SKILL.md",
+          "name": "03_Content_Ideation",
+          "path": "01_Creacion_Contenidos/03_Content_Ideation/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "06_Offer_And_Bio_Writer",
-          "path": "01_Creacion_Contenidos/06_Offer_And_Bio_Writer/SKILL.md",
+          "name": "04_Offer_And_Bio_Writer",
+          "path": "01_Creacion_Contenidos/04_Offer_And_Bio_Writer/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "content-strategy",
-          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/content-strategy/SKILL.md",
+          "path": "01_Creacion_Contenidos/05_Marketing_Strategy/content-strategy/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "copy-editing",
-          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/copy-editing/SKILL.md",
+          "path": "01_Creacion_Contenidos/05_Marketing_Strategy/copy-editing/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "copywriting",
-          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/copywriting/SKILL.md",
+          "path": "01_Creacion_Contenidos/05_Marketing_Strategy/copywriting/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "email-sequence",
-          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/email-sequence/SKILL.md",
+          "path": "01_Creacion_Contenidos/05_Marketing_Strategy/email-sequence/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "form-cro",
-          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/form-cro/SKILL.md",
+          "path": "01_Creacion_Contenidos/05_Marketing_Strategy/form-cro/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "launch-strategy",
-          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/launch-strategy/SKILL.md",
+          "path": "01_Creacion_Contenidos/05_Marketing_Strategy/launch-strategy/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "marketing-ideas",
-          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/marketing-ideas/SKILL.md",
+          "path": "01_Creacion_Contenidos/05_Marketing_Strategy/marketing-ideas/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "marketing-psychology",
-          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/marketing-psychology/SKILL.md",
+          "path": "01_Creacion_Contenidos/05_Marketing_Strategy/marketing-psychology/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "onboarding-cro",
-          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/onboarding-cro/SKILL.md",
+          "path": "01_Creacion_Contenidos/05_Marketing_Strategy/onboarding-cro/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "page-cro",
-          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/page-cro/SKILL.md",
+          "path": "01_Creacion_Contenidos/05_Marketing_Strategy/page-cro/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "paywall-upgrade-cro",
-          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/paywall-upgrade-cro/SKILL.md",
+          "path": "01_Creacion_Contenidos/05_Marketing_Strategy/paywall-upgrade-cro/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "popup-cro",
-          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/popup-cro/SKILL.md",
+          "path": "01_Creacion_Contenidos/05_Marketing_Strategy/popup-cro/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "pricing-strategy",
-          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/pricing-strategy/SKILL.md",
+          "path": "01_Creacion_Contenidos/05_Marketing_Strategy/pricing-strategy/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "product-marketing-context",
-          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/product-marketing-context/SKILL.md",
+          "path": "01_Creacion_Contenidos/05_Marketing_Strategy/product-marketing-context/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "signup-flow-cro",
-          "path": "01_Creacion_Contenidos/07_Marketing_Strategy/signup-flow-cro/SKILL.md",
+          "path": "01_Creacion_Contenidos/05_Marketing_Strategy/signup-flow-cro/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "ab-test-setup",
-          "path": "01_Creacion_Contenidos/08_Marketing_Tech/ab-test-setup/SKILL.md",
+          "path": "01_Creacion_Contenidos/06_Marketing_Tech/ab-test-setup/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "analytics-tracking",
-          "path": "01_Creacion_Contenidos/08_Marketing_Tech/analytics-tracking/SKILL.md",
+          "path": "01_Creacion_Contenidos/06_Marketing_Tech/analytics-tracking/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "competitor-alternatives",
-          "path": "01_Creacion_Contenidos/08_Marketing_Tech/competitor-alternatives/SKILL.md",
+          "path": "01_Creacion_Contenidos/06_Marketing_Tech/competitor-alternatives/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "free-tool-strategy",
-          "path": "01_Creacion_Contenidos/08_Marketing_Tech/free-tool-strategy/SKILL.md",
+          "path": "01_Creacion_Contenidos/06_Marketing_Tech/free-tool-strategy/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "paid-ads",
-          "path": "01_Creacion_Contenidos/08_Marketing_Tech/paid-ads/SKILL.md",
+          "path": "01_Creacion_Contenidos/06_Marketing_Tech/paid-ads/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "programmatic-seo",
-          "path": "01_Creacion_Contenidos/08_Marketing_Tech/programmatic-seo/SKILL.md",
+          "path": "01_Creacion_Contenidos/06_Marketing_Tech/programmatic-seo/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "referral-program",
-          "path": "01_Creacion_Contenidos/08_Marketing_Tech/referral-program/SKILL.md",
+          "path": "01_Creacion_Contenidos/06_Marketing_Tech/referral-program/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "schema-markup",
-          "path": "01_Creacion_Contenidos/08_Marketing_Tech/schema-markup/SKILL.md",
+          "path": "01_Creacion_Contenidos/06_Marketing_Tech/schema-markup/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "seo-audit",
-          "path": "01_Creacion_Contenidos/08_Marketing_Tech/seo-audit/SKILL.md",
+          "path": "01_Creacion_Contenidos/06_Marketing_Tech/seo-audit/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "social-content",
-          "path": "01_Creacion_Contenidos/08_Marketing_Tech/social-content/SKILL.md",
+          "path": "01_Creacion_Contenidos/06_Marketing_Tech/social-content/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "09_Compound_Engine",
-          "path": "01_Creacion_Contenidos/09_Compound_Engine/SKILL.md",
+          "name": "07_Compound_Engine",
+          "path": "01_Creacion_Contenidos/07_Compound_Engine/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "10_Premium_Image_Studio",
-          "path": "01_Creacion_Contenidos/10_Premium_Image_Studio/SKILL.md",
+          "name": "08_Premium_Image_Studio",
+          "path": "01_Creacion_Contenidos/08_Premium_Image_Studio/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "11_Video_Visuals_Producer",
-          "path": "01_Creacion_Contenidos/11_Video_Visuals_Producer/SKILL.md",
+          "name": "09_Video_Visuals_Producer",
+          "path": "01_Creacion_Contenidos/09_Video_Visuals_Producer/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "13_Remotion_Best_Practices",
-          "path": "01_Creacion_Contenidos/13_Remotion_Best_Practices/SKILL.md",
+          "name": "11_Remotion_Best_Practices",
+          "path": "01_Creacion_Contenidos/11_Remotion_Best_Practices/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "13_Carousel_Master",
+          "path": "01_Creacion_Contenidos/13_Carousel_Master/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "14_Seo_Sota_Master",
+          "path": "01_Creacion_Contenidos/14_Seo_Sota_Master/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "15_Carousel_Master",
           "path": "01_Creacion_Contenidos/15_Carousel_Master/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "16_Seo_Sota_Master",
-          "path": "01_Creacion_Contenidos/16_Seo_Sota_Master/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "17_Carousel_Master",
-          "path": "01_Creacion_Contenidos/17_Carousel_Master/SKILL.md",
           "has_frontmatter": true
         }
       ]
@@ -548,117 +548,117 @@
       "skills": [
         {
           "name": "04_Product_Design",
-          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "01_Taste_Skill",
-          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/01_Taste_Skill/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/01_Taste_Skill/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "02_Soft_Skill",
-          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/02_Soft_Skill/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/02_Soft_Skill/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "03_Minimalist_Skill",
-          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/03_Minimalist_Skill/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/03_Minimalist_Skill/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "04_Redesign_Skill",
-          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/04_Redesign_Skill/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/04_Redesign_Skill/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "05_Output_Skill",
-          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/05_Output_Skill/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/05_Output_Skill/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "06_Dieter_Rams_Design",
-          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/06_Dieter_Rams_Design/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/06_Dieter_Rams_Design/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "07_Brand_Identity",
-          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/07_Brand_Identity/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/07_Brand_Identity/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "08_Brand_Voice_Generator",
-          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/08_Brand_Voice_Generator/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/08_Brand_Voice_Generator/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "09_Canvas_Diagram_Studio",
-          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/09_Canvas_Diagram_Studio/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/09_Canvas_Diagram_Studio/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "10_Visual_Language",
-          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/10_Visual_Language/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/10_Visual_Language/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "11_Pencil_Design_Studio",
-          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/11_Pencil_Design_Studio/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/11_Pencil_Design_Studio/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "12_Shadcn",
-          "path": "02_Diseno_Ui_Ux/02_Product_Design/04_Product_Design/12_Shadcn/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/12_Shadcn/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "1. TASTE SKILLS",
-          "path": "02_Diseno_Ui_Ux/03_Taste_Skills/1. TASTE SKILLS/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/02_Taste_Skills/1. TASTE SKILLS/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "2. DISEÑO MINIMALISTA",
-          "path": "02_Diseno_Ui_Ux/04_Diseno_Minimalista/2. DISEÑO MINIMALISTA/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/03_Diseno_Minimalista/2. DISEÑO MINIMALISTA/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "3. DIRECTRICES DE MARCA",
-          "path": "02_Diseno_Ui_Ux/05_Directrices_Marca/3. DIRECTRICES DE MARCA/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/04_Directrices_Marca/3. DIRECTRICES DE MARCA/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "4. EXCALIDRAW FLOWCHART",
-          "path": "02_Diseno_Ui_Ux/06_Excalidraw_Flowchart/4. EXCALIDRAW FLOWCHART/SKILL.md",
+          "path": "02_Diseno_Ui_Ux/05_Excalidraw_Flowchart/4. EXCALIDRAW FLOWCHART/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "08_Design_Sota",
-          "path": "02_Diseno_Ui_Ux/08_Design_Sota/SKILL.md",
+          "name": "06_Design_Sota",
+          "path": "02_Diseno_Ui_Ux/06_Design_Sota/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "09_Ui_Ux_Pro_Max",
-          "path": "02_Diseno_Ui_Ux/09_Ui_Ux_Pro_Max/SKILL.md",
+          "name": "07_Ui_Ux_Pro_Max",
+          "path": "02_Diseno_Ui_Ux/07_Ui_Ux_Pro_Max/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "10_Huashu_Design",
-          "path": "02_Diseno_Ui_Ux/10_Huashu_Design/SKILL.md",
+          "name": "08_Huashu_Design",
+          "path": "02_Diseno_Ui_Ux/08_Huashu_Design/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "11_Dumbledor_Design",
-          "path": "02_Diseno_Ui_Ux/11_Dumbledor_Design/SKILL.md",
+          "name": "09_Dumbledor_Design",
+          "path": "02_Diseno_Ui_Ux/09_Dumbledor_Design/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "12_Design_Systems",
-          "path": "02_Diseno_Ui_Ux/12_Design_Systems/SKILL.md",
+          "name": "10_Design_Systems",
+          "path": "02_Diseno_Ui_Ux/10_Design_Systems/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "13_Design_Systems",
-          "path": "02_Diseno_Ui_Ux/13_Design_Systems/SKILL.md",
+          "name": "11_Design_Systems",
+          "path": "02_Diseno_Ui_Ux/11_Design_Systems/SKILL.md",
           "has_frontmatter": true
         }
       ]
@@ -699,7 +699,7 @@
       ]
     },
     "04_Automatizacion": {
-      "count": 16,
+      "count": 21,
       "skills": [
         {
           "name": "01_N8N_JS",
@@ -779,6 +779,31 @@
         {
           "name": "12_N8N",
           "path": "04_Automatizacion/12_N8N/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "13_Content_From_Url",
+          "path": "04_Automatizacion/13_Content_From_Url/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "14_Compound_Knowledge",
+          "path": "04_Automatizacion/14_Compound_Knowledge/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "15_Os_Self_Improvement",
+          "path": "04_Automatizacion/15_Os_Self_Improvement/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "16_Reverse_Engineering",
+          "path": "04_Automatizacion/16_Reverse_Engineering/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "17_Learning_Url_To_Knowledge",
+          "path": "04_Automatizacion/17_Learning_Url_To_Knowledge/SKILL.md",
           "has_frontmatter": true
         }
       ]
@@ -954,7 +979,7 @@
       ]
     },
     "06_Tools": {
-      "count": 92,
+      "count": 93,
       "skills": [
         {
           "name": "15_Skill_Creator_Oficial",
@@ -1079,6 +1104,11 @@
         {
           "name": "12_RTM",
           "path": "06_Tools/04_DevOps/07_DevOps/12_RTM/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "13_Release_Agent",
+          "path": "06_Tools/04_DevOps/07_DevOps/13_Release_Agent/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -1639,6 +1669,111 @@
         {
           "name": "writing-skills",
           "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/writing-skills/SKILL.md",
+          "has_frontmatter": true
+        }
+      ]
+    },
+    "claude-ads": {
+      "count": 20,
+      "skills": [
+        {
+          "name": "01_Ads",
+          "path": "claude-ads/01_Ads/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-apple",
+          "path": "claude-ads/05_Skills/ads-apple/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-audit",
+          "path": "claude-ads/05_Skills/ads-audit/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-budget",
+          "path": "claude-ads/05_Skills/ads-budget/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-competitor",
+          "path": "claude-ads/05_Skills/ads-competitor/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-create",
+          "path": "claude-ads/05_Skills/ads-create/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-creative",
+          "path": "claude-ads/05_Skills/ads-creative/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-dna",
+          "path": "claude-ads/05_Skills/ads-dna/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-generate",
+          "path": "claude-ads/05_Skills/ads-generate/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-google",
+          "path": "claude-ads/05_Skills/ads-google/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-landing",
+          "path": "claude-ads/05_Skills/ads-landing/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-linkedin",
+          "path": "claude-ads/05_Skills/ads-linkedin/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-math",
+          "path": "claude-ads/05_Skills/ads-math/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-meta",
+          "path": "claude-ads/05_Skills/ads-meta/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-microsoft",
+          "path": "claude-ads/05_Skills/ads-microsoft/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-photoshoot",
+          "path": "claude-ads/05_Skills/ads-photoshoot/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-plan",
+          "path": "claude-ads/05_Skills/ads-plan/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-test",
+          "path": "claude-ads/05_Skills/ads-test/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-tiktok",
+          "path": "claude-ads/05_Skills/ads-tiktok/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "ads-youtube",
+          "path": "claude-ads/05_Skills/ads-youtube/SKILL.md",
           "has_frontmatter": true
         }
       ]

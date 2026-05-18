@@ -47,33 +47,40 @@ def print_banner():
     print(banner)
 
 ROOT_DIR = PROJECT_ROOT
-# Official Skill Tool Path
-FORK_TOOL = os.path.join(
-    PROJECT_ROOT,
-    ".agent",
-    "02_Skills",
-    "08_Personal_Os",
-    "01_Fork_Terminal",
-    "tools",
-    "fork_terminal.py",
-)
 
+def find_fork_tool():
+    """Busca el Fork Tool en múltiples ubicaciones posibles (3-level discovery)"""
+    possible_paths = [
+        # Primary: .agent backup (canonical)
+        os.path.join(PROJECT_ROOT, ".agent", "02_Skills", "01_Fork_Terminal", "tools", "fork_terminal.py"),
+        # Secondary: skills at root level
+        os.path.join(PROJECT_ROOT, ".claude", "04_Skills", "01_Core", "01_Fork_Terminal", "tools", "fork_terminal.py"),
+        # Tertiary: nested .agent structure
+        os.path.join(PROJECT_ROOT, ".agent", "02_Skills", "07_Personal_Os", "02_Personal_Os", "08_Personal_Os", "01_Fork_Terminal", "tools", "fork_terminal.py"),
+        # Quaternary: standalone in .agent
+        os.path.join(PROJECT_ROOT, ".agent", "02_Skills", "08_Personal_Os", "01_Fork_Terminal", "tools", "fork_terminal.py"),
+    ]
+    for path in possible_paths:
+        if os.path.exists(path):
+            return path
+    return None
+
+FORK_TOOL = find_fork_tool()
 
 def launch_agent(id, name, task_cmd):
-    """Lanza un sub-agente usando fork_terminal.py oficial"""
-    # El fork_terminal.py oficial toma el comando como args y los une
-    # No soporta titulo nativamente en los args, pero podemos usar echo para mostrarlo
-
+    """Lanza un sub-agente usando fork_terminal.py oficial o fallback directo"""
     full_cmd = f"echo ==================================== && echo  🕵️ AGENT {id}: {name.upper()} && echo ==================================== && {task_cmd} && echo. && echo ✅ AGENT {id} COMPLETE && pause"
 
     print(f"🚀 Deploying Agent {id}: {name}")
 
-    # We call the tool with python
-    # We must quote the entire command string for the tool argument
-    cmd_str = f'python "{FORK_TOOL}" "{full_cmd}"'
-    os.system(cmd_str)
-
-    time.sleep(1.5)  # Stagger launch to avoid chaos
+    if FORK_TOOL and os.path.exists(FORK_TOOL):
+        cmd_str = f'python "{FORK_TOOL}" "{full_cmd}"'
+        os.system(cmd_str)
+    else:
+        # Fallback: ejecutar directamente sin fork (menos isolado pero funcional)
+        print(f"   [FALLBACK] Ejecutando directamente...")
+        os.system(f'start cmd /c "{full_cmd}"')
+        time.sleep(0.5)
 
 
 def main():
@@ -84,79 +91,79 @@ def main():
     print("🚀 ACTIVATING 10 PARALLEL SUB-AGENTS (LFG PRO)")
     print(f"{Fore.RED}{'=' * 75}{Style.RESET_ALL}")
 
-    if not os.path.exists(FORK_TOOL):
-        print(f"❌ Error: Fork Tool not found at {FORK_TOOL}")
-        return
+    if FORK_TOOL is None:
+        print(f"⚠️  Fork Tool no encontrado — usando fallback con cmd.exe directo")
+    else:
+        print(f"✅ Fork Tool encontrado: {FORK_TOOL}")
 
     # 1. Agente Estructural
     launch_agent(
         1,
         "Stack Integrity",
-        f"python {ROOT_DIR}/04_Engine/08_Scripts_Os/13_Validate_Stack.py",
+        f"python \"{SCRIPT_DIR}/50_System_Health_Monitor.py\"",
     )
 
     # 2. Agente de Reglas
     launch_agent(
         2,
         "Rules Auditor",
-        f"python {ROOT_DIR}/04_Engine/08_Scripts_Os/40_Validate_Rules.py",
+        f"python \"{SCRIPT_DIR}/05_Validator_Hub.py\"",
     )
 
     # 3. Agente de Enlaces
     launch_agent(
         3,
         "Link Validator",
-        f"python {ROOT_DIR}/04_Engine/08_Scripts_Os/12_Update_Links.py",
+        f"python \"{SCRIPT_DIR}/57_Repo_Sync_Auditor.py\"",
     )
 
     # 4. Agente Beautifier (README)
     launch_agent(
         4,
-        "Beautifier README",
-        f"python {ROOT_DIR}/04_Engine/08_Scripts_Os/35_Beautify_Tables.py target=README.md",
+        "Health Check",
+        f"python \"{SCRIPT_DIR}/17_Watchdog_Hub.py\"",
     )
 
-    # 5. Agente Beautifier (AGENTS)
+    # 5. Agente de MCP Sync
     launch_agent(
         5,
-        "Beautifier AGENTS",
-        f"python {ROOT_DIR}/04_Engine/08_Scripts_Os/35_Beautify_Tables.py target=00_Core/01_Personal_Os/11_AGENTS.md",
+        "MCP Sync",
+        f"python \"{SCRIPT_DIR}/15_MCP_Sync_Hub.py\" --report",
     )
 
-    # 6. Agente Beautifier (INVENTORY)
+    # 6. Agente Skills Audit
     launch_agent(
         6,
-        "Beautifier INVENTORY",
-        f"python {ROOT_DIR}/04_Engine/08_Scripts_Os/35_Beautify_Tables.py target=01_Brain/01_Inventario_Total.md",
+        "Skills Audit",
+        f"python \"{SCRIPT_DIR}/34_Skill_Auditor.py\"",
     )
 
-    # 7. Agente Beautifier (CLAUDE)
+    # 7. Agente System Mapper
     launch_agent(
         7,
-        "Beautifier CLAUDE",
-        f"python {ROOT_DIR}/04_Engine/08_Scripts_Os/35_Beautify_Tables.py target=CLAUDE.md",
+        "System Mapper",
+        f"python \"{SCRIPT_DIR}/20_System_Mapper_Hub.py\" --scan",
     )
 
     # 8. Agente de Inventario (Skills audit)
-    # Simula auditoría de Skills
     launch_agent(
         8,
         "Skill Auditor",
-        "echo Auditing 02_Skills vs Inventory... & dir /s .agent\\02_Skills",
+        f"python \"{SCRIPT_DIR}/22_Validate_Skill_Frontmatter.py\"",
     )
 
     # 9. Agente de Seguridad
     launch_agent(
         9,
         "Security Scanner",
-        'echo Scanning for secrets... & findstr /S /I "password secret key" *.py *.md',
+        f'findstr /S /I \"password secret key api_key\" *.py *.md 2>nul',
     )
 
-    # 10. Agente Reporteador Final (Wait a bit for others potentially, though parallel is fine)
+    # 10. Agente Reporteador Final
     launch_agent(
         10,
         "Final Reporter",
-        f"python {ROOT_DIR}/04_Engine/08_Scripts_Os/30_AIPM_Consolidated_Report.py",
+        f"python \"{SCRIPT_DIR}/01_Auditor_Hub.py\" health",
     )
 
     print("\n✅ All 10 Agents Deployed.")

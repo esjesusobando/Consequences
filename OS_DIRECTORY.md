@@ -1,6 +1,6 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.0 Production** | 2026-05-15
+**v4.1** | 2026-05-18
 
 ---
 
@@ -8,20 +8,20 @@
 
 | Componente                            | Total                                                               | Estado                                         |
 |--------------------------------------|--------------------------------------------------------------------|-----------------------------------------------|
-| MCPs Claude Code                      | **37**                                                              | ✅ OPERATIONAL                                  |
+| MCPs Claude Code                      | **35**                                                              | ✅ OPERATIONAL                                  |
 | Every CE                              | v2.55.0 (local repo) ✅                                              | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.26.6                                                             | ✅ AVAILABLE                                    |
-| Skills                                | **317** (11 áreas activas)                                          | ✅ VERIFIED                                     |
-| Agentes                               | **52+** (22 archivos en 01_Agents + subdirs)                        | ✅ ACTIVE                                       |
-| HUBs                                  | **21 scripts principales + 5 aux** (+ 12 subdirectorios)            | ✅ VERIFIED                                     |
-| Workflows                             | **28+** (5 categorías en 00_Workflows_Os)                           | ✅ ACTIVE                                       |
-| Hooks                                 | 10+                                                                 | ✅ ACTIVE                                       |
+| Skills                                | **343** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
+| Agentes                               | **58+** (22 archivos en 01_Agents + subdirs)                        | ✅ ACTIVE                                       |
+| HUBs                                  | **31 scripts** (26 HUBs + 5 utility)                                | ✅ VERIFIED                                     |
+| Workflows                             | **29+** (7 categorías en 00_Workflows_Os)                           | ✅ ACTIVE                                       |
+| Hooks                                 | 6 categorías                                                         | ✅ ACTIVE                                       |
 | Rules                                 | **12 (.mdc)** en 01_Rules                                           | ✅ DEFINED                                      |
 | JARVIS Manifests                      | 7 en 00_Manifest/                                                   | ✅ VALIDATED                                    |
 | Open Design                           | 62 skills + 138 design systems                                      | ✅ INTEGRATED                                   |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-15 — v4.0 Production Ready
-> Sistema actualizado: Every CE v2.55.0 (local repo), gentle-ai v1.26.6
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-18 — v4.1 Bugs Corregidos
+> config_paths.py (3 paths rotos), .mcp.json (2 duplicados eliminados), conteos sincronizados con disco
 
 ---
 
@@ -80,7 +80,7 @@ Think_Different/                         # RAÍZ
 │   │   ├── 01_Rules/            ✅ 11 reglas .mdc
 │   │   └── 02_Tools/
 │   │       ├── 01_Agents/         ✅ 52+ agentes (Dream Team + Specialists + individuales)
-│   │       ├── 02_Skills/         ✅ 300+ skills (11 áreas funcionales)
+│   │       ├── 02_Skills/         ✅ 341 skills (12 áreas funcionales)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/          ✅ Pre/Post/Lifecycle/Sound

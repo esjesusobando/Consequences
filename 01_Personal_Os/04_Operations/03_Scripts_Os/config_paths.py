@@ -40,7 +40,7 @@ if not ROOT_DIR or not ROOT_DIR.exists():
         "Define la variable 'PERSONAL_OS_ROOT' o asegúrate de que existe 00_Winter_is_Coming."
     )
 
-# 8 Dimensiones del OS (estructura v2.0 Consequences)
+# 4 Carpetas raíz del OS (estructura v4.0 Consequences)
 CORE_DIR       = ROOT_DIR / "01_Personal_Os" / "01_Core"
 OPERATIONS_DIR = ROOT_DIR / "01_Personal_Os" / "04_Operations"
 KNOWLEDGE_DIR  = ROOT_DIR / "01_Personal_Os" / "02_Knowledge"
@@ -90,7 +90,7 @@ KNOWLEDGE_RESEARCH_DIR = KNOWLEDGE_DIR / "01_Research_Os"
 KNOWLEDGE_NOTES_DIR = OPERATIONS_DIR / "00_Context_LLM" / "02_Knowledge_Brain"
 KNOWLEDGE_RESOURCES_DIR = KNOWLEDGE_DIR / "03_Writing_Content"
 KNOWLEDGE_EXAMPLES_DIR = KNOWLEDGE_DIR / "00_Examples_Personal_Os"
-KNOWLEDGE_PLANS_DIR = OPERATIONS_DIR / "00_Context_LLM" / "04_Memory_Brain"
+KNOWLEDGE_PLANS_DIR = OPERATIONS_DIR / "00_Context_LLM" / "05_Plans"
 
 # Alias para scripts que usan PLANS_DIR
 PLANS_DIR = KNOWLEDGE_PLANS_DIR
@@ -163,7 +163,7 @@ SERVER_DIR = CORE_DIR / "02_Tools" / "07_Server"
 AIPM_ROOT = SERVER_DIR / "AIPM"
 
 # =============================================================================
-# JARVIS v3.0 — Manifest + HUBs nuevos (Consequences 3.0)
+# JARVIS v4.0 — Manifest + HUBs (Consequences 4.0)
 # =============================================================================
 
 MANIFEST_DIR       = OPERATIONS_DIR / "02_Agent_Teams_Lite" / "00_Manifest"
@@ -177,10 +177,10 @@ HUB_VALIDATOR      = ENGINE_DIR / "05_Validator_Hub.py"
 HUB_AUTO_LEARN     = ENGINE_DIR / "11_Auto_Learn_Hub.py"
 HUB_HEALTH_METRICS = ENGINE_DIR / "14_Health_Metrics_Hub.py"
 HUB_MCP_SYNC       = ENGINE_DIR / "15_MCP_Sync_Hub.py"
-HUB_SYSTEM_MAPPER  = ENGINE_DIR / "16_System_Mapper_Hub.py"
+HUB_SYSTEM_MAPPER  = ENGINE_DIR / "20_System_Mapper_Hub.py"
 HUB_WATCHDOG       = ENGINE_DIR / "17_Watchdog_Hub.py"
 HUB_TELEMETRY      = ENGINE_DIR / "18_Telemetry_Hub.py"
-HUB_VALIDATE_FM    = ENGINE_DIR / "18_Validate_Skill_Frontmatter.py"
+HUB_VALIDATE_FM    = ENGINE_DIR / "22_Validate_Skill_Frontmatter.py"
 
 # Archivos específicos
 BACKLOG_FILE = MATRIX_DIR / "BACKLOG.md"
@@ -273,20 +273,9 @@ SCRIPT_LOCATION_MAP = {
     "15_SOTA_Integrity_Check.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
     "16_Carousel_Engine.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
     "12_Context_Usage_Bar.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
-    # === Scripts that moved to skills/scripts/ ===
+    # === Scripts migrados a skills/scripts/ ===
     "39_Repair_Corruption.py": SKILLS_DIR / "06_Tools" / "11_System_Master" / "06_Scripts",
     "62_Tool_Shed.py": SKILLS_DIR / "06_Tools" / "04_DevOps" / "scripts",
-    # === v6.2 AUDITORS Y VALIDATORS ===
-    "33_Parallel_Audit_Pro.py": ENGINE_DIR / "03_Validator",
-    "34_Skill_Auditor.py": ENGINE_DIR / "03_Validator",
-    "37_Linter_Autofix.py": ENGINE_DIR / "03_Validator",
-    "40_Validate_Rules.py": ENGINE_DIR / "03_Validator",
-    "80_Edge_Case_Validator.py": ENGINE_DIR / "03_Validator",
-    "skill_validator.py": ENGINE_DIR / "03_Validator",
-    "skill_security_scan.py": ENGINE_DIR / "03_Validator",
-    # === HUBS ===
-    "01_Auditor_Hub.py": ENGINE_DIR / "01_Auditor_Hub.py",
-    "05_Validator_Hub.py": ENGINE_DIR / "05_Validator_Hub.py",
     # === Scripts Medio Valor → 14_Otros ===
     "60_Fast_Vision.py": ENGINE_DIR / "14_Otros" / "60_Fast_Vision.py",
     "61_MCP_Health_Check.py": ENGINE_DIR / "14_Otros" / "61_MCP_Health_Check.py",

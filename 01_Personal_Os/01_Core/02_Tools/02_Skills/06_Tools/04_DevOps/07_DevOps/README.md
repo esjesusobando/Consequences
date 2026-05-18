@@ -18,6 +18,7 @@ Infrastructure, deployment, and operational excellence skills. Covers cloud plat
 | 10                                | E2B Sandbox                                               | "sandbox", "e2b"                                                  | Cloud sandbox environments                                            |
 | 11                                | Error Handling Patterns                                   | "error handling", "exceptions"                                    | Robust error handling strategies                                      |
 | 12                                | RTM                                                       | "rtm", "traceability"                                             | Requirements Traceability Matrix                                      |
+| 13                                | Release Agent                                            | "release", "pre-release", "checklist", "ci/cd"                   | Pre-release checks, test matrix, release checklists                    |
 
 ## Usage
 ```
@@ -32,6 +33,9 @@ Infrastructure, deployment, and operational excellence skills. Covers cloud plat
 "set up e2b sandbox"         # Cloud sandbox
 "implement error handling"   # Error patterns
 "create rtm"                 # Requirements traceability
+"run pre-release check"     # Release Agent: validate before release
+"generate release checklist" # Release Agent: create deployment checklist
+"run test matrix"            # Release Agent: classify tests by criticality
 ```
 
 ## Related Profiles

@@ -225,6 +225,32 @@ Tie to goals and reference material.
 - YYYY-MM-DD: Notes, blockers, decisions.
 ```
 
+
+## Goals Alignment
+
+- During backlog work, make sure each task references the relevant goal inside the **Context** section (cite headings or bullets from `00_CORE/GOALS.md`).
+- If no goal fits, ask whether to create a new goal entry or clarify why the work matters.
+- Remind the user when active tasks do not support any current goals.
+
+## Daily Guidance
+
+- Answer prompts like "What should I work on today?" by inspecting priorities, statuses, and goal alignment.
+- Suggest no more than three focus tasks unless the user insists.
+- Flag blocked tasks and propose next steps or follow-up questions.
+
+## Categories (adjust as needed)
+
+- **technical**: build, fix, configure
+- **outreach**: communicate, meet
+- **research**: learn, analyze
+- **writing**: draft, document
+- **content**: blog posts, social media, public writing
+- **admin**: operations, finance, logistics
+- **personal**: health, routines
+- **other**: everything else
+
+
+
 ### Specialized Workflows
 
 For complex tasks, delegate to workflow files in `01_Personal_Os/01_Core/00_Workflows_Os/`.
