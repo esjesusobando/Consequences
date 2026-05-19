@@ -178,15 +178,15 @@ Think_Different/                           # RAÍZ
 └── README.md                    ✅ Documentación principal
 ```
 
-### 2. AGENTS (58)
+### 2. AGENTS (43)
 
 | Categoría                                   | Ubicación                                                                        |
 |--------------------------------------------|---------------------------------------------------------------------------------|
 | Dream Team (5)                              | `01_Core/02_Tools/01_Agents/01_Dream_Team/`                                      |
-| Specialists (24)                            | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                            |
-| Individuales (22)                           | `01_Core/02_Tools/01_Agents/`                                                    |
+| Specialists (23)                            | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                            |
+| Individuales (15)                           | `01_Core/02_Tools/01_Agents/`                                                    |
 
-### 3. SKILLS (341 — 12 áreas funcionales)
+### 3. SKILLS (342 — 12 áreas funcionales)
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 

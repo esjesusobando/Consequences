@@ -21,6 +21,13 @@
 
 - [ ] Pre-commit hook para detectar API keys en archivos staged
 - [ ] Documentar proceso de onboarding para nueva máquina
+- [ ] **Corregir System Mapper Hub**: Agent Catalog cuenta 58 vs 44 real. Mapper cuenta mal (incluye READMEs o subdirectorios)
+- [ ] **GGA Pre-commit hook**: Instalar `gga install` en repo (listo en `.agent/05_GGA/`)
+- [ ] **Revisar Metodología Hillary**: Workflow `04_Hillary/`, integración con Life OS
+- [ ] **Revisar Metodología Learning Always**: Workflow `00_Learning_Always/`, verificar operativos
+- [ ] **Revisar Supercampeones Protocol**: Agent Teams en `09_Agent_Teams_Protocol.mdc`, integración SDD
+- [ ] **Revisar Octopus Framework**: Skills en `06_Tools/08_Octopus/`, estado y utilidad
+- [ ] **Revisar Los 4 Fantásticos**: Skills en `07_Personal_Os/03_Fantasticos/`, contexto y propósito
 
 ---
 

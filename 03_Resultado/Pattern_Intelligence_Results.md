@@ -11,12 +11,12 @@ Un motor de búsqueda semántica que indexa todos los scripts de PersonalOS y pe
 
 ### Antes vs Después
 
-| Aspecto | Antes | Después |
-|---------|-------|---------|
-| Discovery de scripts | Por nombre exacto en `SCRIPT_LOCATION_MAP` | Búsqueda semántica + por nombre |
-| Scripts encontrados | Solo los mapeados (~30) | Todos los indexados (~120+) |
-| Rewrites duplicados | Frecuentes | Reducidos via reuse |
-| Error ante script faltante | `None` (silencioso) | Fallback semántico + log |
+| Aspecto                   | Antes                                     | Después                        |
+|--------------------------|------------------------------------------|-------------------------------|
+| Discovery de scripts      | Por nombre exacto en `SCRIPT_LOCATION_MAP`| Búsqueda semántica + por nombre|
+| Scripts encontrados       | Solo los mapeados (~30)                   | Todos los indexados (~120+)    |
+| Rewrites duplicados       | Frecuentes                                | Reducidos via reuse            |
+| Error ante script faltante| `None` (silencioso)                       | Fallback semántico + log       |
 
 ---
 
@@ -124,13 +124,13 @@ Tags disponibles según path:
 
 ## Métricas de Uso
 
-| Métrica | Valor |
-|---------|-------|
-| Scripts indexados | ~120+ |
-| Tiempo de scan | <60s |
-| Tiempo de búsqueda | <500ms |
-| RAM requerida | <500MB |
-| Threshold default | 0.70 |
+| Métrica           | Valor  |
+|------------------|-------|
+| Scripts indexados | ~120+  |
+| Tiempo de scan    | <60s   |
+| Tiempo de búsqueda| <500ms |
+| RAM requerida     | <500MB |
+| Threshold default | 0.70   |
 
 ---
 
@@ -164,12 +164,12 @@ python -m pattern_engine --search "mi nuevo script hace parsing de JSON"
 
 ## Siguientes Pasos (Roadmap)
 
-| Mejora | Prioridad | Descripción |
-|--------|-----------|-------------|
-| Auto-register hook | Alta | Integrar con file watcher para auto-registro |
-| Knowledge Graph | Media | Link decisiones pasadas con scripts usados |
-| Analytics dashboard | Media | Ver qué scripts se buscan más, qué se reuse |
-| Mutation testing | Baja | Integrar con evals para medir calidad |
+| Mejora             | Prioridad  | Descripción                                 |
+|-------------------|-----------|--------------------------------------------|
+| Auto-register hook | Alta       | Integrar con file watcher para auto-registro|
+| Knowledge Graph    | Media      | Link decisiones pasadas con scripts usados  |
+| Analytics dashboard| Media      | Ver qué scripts se buscan más, qué se reuse |
+| Mutation testing   | Baja       | Integrar con evals para medir calidad       |
 
 ---
 
@@ -196,11 +196,11 @@ python -m pattern_engine --register path/to/script.py
 
 ## Errores Conocidos y Soluciones
 
-| Error | Causa | Solución |
-|-------|-------|----------|
-| `No module named 'sentence_transformers'` | No instalado | `pip install sentence-transformers` |
-| `No results found` | Threshold muy alto | Bajar threshold: `--threshold 0.50` |
-| `Database not found` | No se ejecutó scan | `python -m pattern_engine --scan` primero |
+| Error                                    | Causa             | Solución                                 |
+|-----------------------------------------|------------------|-----------------------------------------|
+| `No module named 'sentence_transformers'`| No instalado      | `pip install sentence-transformers`      |
+| `No results found`                       | Threshold muy alto| Bajar threshold: `--threshold 0.50`      |
+| `Database not found`                     | No se ejecutó scan| `python -m pattern_engine --scan` primero|
 
 ---
 

@@ -2,7 +2,7 @@
 
 > **You are an Orchestrator Agent** with a complete engineering stack. You coordinate specialized sub-agents, keep backlog items organized, tie work to goals, execute technical workflows, and maintain system integrity.
 
-**Última actualización:** 2026-05-18 (v4.1 Production Ready)
+**Última actualización:** 2026-05-19 (v4.1 Production Ready — SOTA)
 
 ---
 
@@ -37,7 +37,7 @@ cat 01_Personal_Os/03_Task/  # tareas activas
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
 | **Skills** (12 áreas, 342)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
 | **Reglas** (12 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
-| **Agentes** (58)                                   | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
+| **Agentes** (43)                                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
 | **HUBs** (30 scripts)                              | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
 | **MCPs** (35 Claude)                               | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |

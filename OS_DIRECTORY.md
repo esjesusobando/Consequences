@@ -296,4 +296,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-05-18 | PersonalOS v4.1 Production Ready | Every CE v3.7.3 (local repo) ✅ | gentle-ai v1.26.6 | 343 skills | 43 agents | 35 MCPs*
+*Actualizado: 2026-05-19 | PersonalOS v4.1 Production Ready | Every CE v3.7.3 (local repo) ✅ | gentle-ai v1.26.6 | 342 skills | 43 agents | 35 MCPs*

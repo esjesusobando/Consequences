@@ -1,10 +1,10 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-18T15:44:01",
+  "generated": "2026-05-19T07:01:17",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
     "areas": 12,
-    "skills": 342,
+    "skills": 345,
     "without_frontmatter": 0
   },
   "by_area": {
@@ -544,7 +544,7 @@
       ]
     },
     "02_Diseno_Ui_Ux": {
-      "count": 23,
+      "count": 24,
       "skills": [
         {
           "name": "04_Product_Design",
@@ -617,8 +617,8 @@
           "has_frontmatter": true
         },
         {
-          "name": "2. DISEÑO MINIMALISTA",
-          "path": "02_Diseno_Ui_Ux/03_Diseno_Minimalista/2. DISEÑO MINIMALISTA/SKILL.md",
+          "name": "2. DISE\u00c3\u2018O MINIMALISTA",
+          "path": "02_Diseno_Ui_Ux/03_Diseno_Minimalista/2. DISE\u00c3\u2018O MINIMALISTA/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -634,6 +634,11 @@
         {
           "name": "06_Design_Sota",
           "path": "02_Diseno_Ui_Ux/06_Design_Sota/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "07_Marvel_Avengers",
+          "path": "02_Diseno_Ui_Ux/07_Marvel_Avengers/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -809,7 +814,7 @@
       ]
     },
     "05_Workflows": {
-      "count": 33,
+      "count": 34,
       "skills": [
         {
           "name": "01_Agent_Teams_Lite",
@@ -972,6 +977,11 @@
           "has_frontmatter": true
         },
         {
+          "name": "03_Super_Campeones",
+          "path": "05_Workflows/03_Super_Campeones/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "24_PM_Agent_Orchestrator",
           "path": "05_Workflows/04_PM_Orchestrator/24_PM_Agent_Orchestrator/SKILL.md",
           "has_frontmatter": true
@@ -979,7 +989,7 @@
       ]
     },
     "06_Tools": {
-      "count": 93,
+      "count": 92,
       "skills": [
         {
           "name": "15_Skill_Creator_Oficial",
@@ -1327,8 +1337,8 @@
           "has_frontmatter": true
         },
         {
-          "name": "25_Octopus",
-          "path": "06_Tools/10_Octopus/25_Octopus/SKILL.md",
+          "name": "00_Octopus_Skill",
+          "path": "06_Tools/10_Octopus/00_Octopus_Skill/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -1354,11 +1364,6 @@
         {
           "name": "03_Resumen_Extractor",
           "path": "06_Tools/13_Doc_Processing/03_Resumen_Extractor/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "25_Octopus",
-          "path": "06_Tools/14_Octopus/25_Octopus/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -1449,7 +1454,7 @@
       ]
     },
     "07_Personal_Os": {
-      "count": 29,
+      "count": 31,
       "skills": [
         {
           "name": "18_Personal_Life_OS",
@@ -1595,6 +1600,16 @@
           "name": "26_Fantasticos",
           "path": "07_Personal_Os/03_Fantasticos/26_Fantasticos/SKILL.md",
           "has_frontmatter": true
+        },
+        {
+          "name": "08_Hillary",
+          "path": "07_Personal_Os/08_Hillary/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "09_Learning_Always",
+          "path": "07_Personal_Os/09_Learning_Always/SKILL.md",
+          "has_frontmatter": true
         }
       ]
     },
@@ -1673,107 +1688,107 @@
         }
       ]
     },
-    "claude-ads": {
+    "09_Claude_Ads": {
       "count": 20,
       "skills": [
         {
           "name": "01_Ads",
-          "path": "claude-ads/01_Ads/SKILL.md",
+          "path": "09_Claude_Ads/01_Ads/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-apple",
-          "path": "claude-ads/05_Skills/ads-apple/SKILL.md",
+          "name": "01_Ads_Apple",
+          "path": "09_Claude_Ads/05_Skills/01_Ads_Apple/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-audit",
-          "path": "claude-ads/05_Skills/ads-audit/SKILL.md",
+          "name": "02_Ads_Audit",
+          "path": "09_Claude_Ads/05_Skills/02_Ads_Audit/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-budget",
-          "path": "claude-ads/05_Skills/ads-budget/SKILL.md",
+          "name": "03_Ads_Budget",
+          "path": "09_Claude_Ads/05_Skills/03_Ads_Budget/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-competitor",
-          "path": "claude-ads/05_Skills/ads-competitor/SKILL.md",
+          "name": "04_Ads_Competitor",
+          "path": "09_Claude_Ads/05_Skills/04_Ads_Competitor/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-create",
-          "path": "claude-ads/05_Skills/ads-create/SKILL.md",
+          "name": "05_Ads_Create",
+          "path": "09_Claude_Ads/05_Skills/05_Ads_Create/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-creative",
-          "path": "claude-ads/05_Skills/ads-creative/SKILL.md",
+          "name": "06_Ads_Creative",
+          "path": "09_Claude_Ads/05_Skills/06_Ads_Creative/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-dna",
-          "path": "claude-ads/05_Skills/ads-dna/SKILL.md",
+          "name": "07_Ads_Dna",
+          "path": "09_Claude_Ads/05_Skills/07_Ads_Dna/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-generate",
-          "path": "claude-ads/05_Skills/ads-generate/SKILL.md",
+          "name": "08_Ads_Generate",
+          "path": "09_Claude_Ads/05_Skills/08_Ads_Generate/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-google",
-          "path": "claude-ads/05_Skills/ads-google/SKILL.md",
+          "name": "09_Ads_Google",
+          "path": "09_Claude_Ads/05_Skills/09_Ads_Google/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-landing",
-          "path": "claude-ads/05_Skills/ads-landing/SKILL.md",
+          "name": "10_Ads_Landing",
+          "path": "09_Claude_Ads/05_Skills/10_Ads_Landing/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-linkedin",
-          "path": "claude-ads/05_Skills/ads-linkedin/SKILL.md",
+          "name": "11_Ads_Linkedin",
+          "path": "09_Claude_Ads/05_Skills/11_Ads_Linkedin/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-math",
-          "path": "claude-ads/05_Skills/ads-math/SKILL.md",
+          "name": "12_Ads_Math",
+          "path": "09_Claude_Ads/05_Skills/12_Ads_Math/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-meta",
-          "path": "claude-ads/05_Skills/ads-meta/SKILL.md",
+          "name": "13_Ads_Meta",
+          "path": "09_Claude_Ads/05_Skills/13_Ads_Meta/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-microsoft",
-          "path": "claude-ads/05_Skills/ads-microsoft/SKILL.md",
+          "name": "14_Ads_Microsoft",
+          "path": "09_Claude_Ads/05_Skills/14_Ads_Microsoft/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-photoshoot",
-          "path": "claude-ads/05_Skills/ads-photoshoot/SKILL.md",
+          "name": "15_Ads_Photoshoot",
+          "path": "09_Claude_Ads/05_Skills/15_Ads_Photoshoot/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-plan",
-          "path": "claude-ads/05_Skills/ads-plan/SKILL.md",
+          "name": "16_Ads_Plan",
+          "path": "09_Claude_Ads/05_Skills/16_Ads_Plan/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-test",
-          "path": "claude-ads/05_Skills/ads-test/SKILL.md",
+          "name": "17_Ads_Test",
+          "path": "09_Claude_Ads/05_Skills/17_Ads_Test/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-tiktok",
-          "path": "claude-ads/05_Skills/ads-tiktok/SKILL.md",
+          "name": "18_Ads_Tiktok",
+          "path": "09_Claude_Ads/05_Skills/18_Ads_Tiktok/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "ads-youtube",
-          "path": "claude-ads/05_Skills/ads-youtube/SKILL.md",
+          "name": "19_Ads_Youtube",
+          "path": "09_Claude_Ads/05_Skills/19_Ads_Youtube/SKILL.md",
           "has_frontmatter": true
         }
       ]

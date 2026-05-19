@@ -85,9 +85,9 @@ def run_script(script_name):
     dynamic_speak(f"Ejecutando: {script_name}")
 
     report_progress(30, "Preparando entorno...")
-    result = scripts_dir = str(Path(__file__).parent)
+    scripts_dir = str(Path(__file__).parent)
     env = {**__import__("os").environ, "PYTHONPATH": scripts_dir}
-    subprocess.run([sys.executable, str(script_path)], cwd=scripts_dir, env=env)
+    result = subprocess.run([sys.executable, str(script_path)], cwd=scripts_dir, env=env)
 
     report_progress(60, "Procesando resultados...")
     report_progress(90, "Finalizando...")
