@@ -44,7 +44,7 @@ cat 01_Personal_Os/03_Task/  # tareas activas
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
 | **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |
 | **Auto-Improvement**                               | `01_Personal_Os/04_Operations/01_Auto_Improvement/`                        | Detección y fix recursivo de issues                                |
-| **Workflows**                                      | `01_Personal_Os/01_Core/00_Workflows_Os/`                                  | 30 workflows en 7 categorías                                      |
+| **Workflows**                                      | `01_Personal_Os/01_Core/00_Workflows_Os/`                                  | 30 workflows en 7 categorías                                       |
 
 ---
 

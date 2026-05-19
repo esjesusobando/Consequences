@@ -12,9 +12,9 @@
 | Every CE                              | v2.55.0 (local repo) ✅                                              | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.26.6                                                             | ✅ AVAILABLE                                    |
 | Skills                                | **342** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
-| Agentes                               | **43** (5 Dream + 23 Specialists + 15 individuelles)              | ✅ ACTIVE                                       |
+| Agentes                               | **43** (5 Dream + 23 Specialists + 15 individuelles)                | ✅ ACTIVE                                       |
 | HUBs                                  | **30 scripts** (21 HUBs + 9 auxiliary)                              | ✅ VERIFIED                                     |
-| Workflows                             | **30** (7 categorías en 00_Workflows_Os)                             | ✅ ACTIVE                                       |
+| Workflows                             | **30** (7 categorías en 00_Workflows_Os)                            | ✅ ACTIVE                                       |
 | Hooks                                 | 6 categorías                                                        | ✅ ACTIVE                                       |
 | Rules                                 | **12 (.mdc)** en 01_Rules                                           | ✅ DEFINED                                      |
 | JARVIS Manifests                      | 7 en 00_Manifest/                                                   | ✅ VALIDATED                                    |
@@ -183,7 +183,7 @@ Think_Different/                         # RAÍZ
 | **Dream Team**            | 5         | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform)          |
 | **Specialists Compound**  | 23        | `02_Specialists_Compound/`                                             |
 | **Individuales**          | 15        | Raíz `01_Agents/` (Orchestrator, AIPM_Judge, LFG, etc.)                |
-| **TOTAL**                 | **43**   | 43 archivos de agentes                                                |
+| **TOTAL**                 | **43**    | 43 archivos de agentes                                                 |
 
 ---
 

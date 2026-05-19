@@ -129,23 +129,23 @@ Basado en el análisis de `compound-engine`, estos son los pilares para impleme
 
 ## 🔄 Flujos de Trabajo PersonalOS
 
-| ID     | Flujo de Trabajo       | Descripción                                              | Referencia Script            |
-| :----- | :--------------------- | :------------------------------------------------------- | :--------------------------- |
-| **07** | 🌅 **Morning Standup** | Planificación matutina: "¿En qué debo trabajar hoy?"     | `07_morning_standup.py`      |
-| **02** | 📥 **Backlog Triage**  | Organización, limpieza y priorización del backlog.       | `02_backlog_triage.py`       |
-| **08** | 📊 **Weekly Review**   | Reflexión semanal y planificación estratégica.           | `08_weekly_review.py`        |
-| **10** | ⛪ **Sunday Ritual**   | Ritual dominical de mantenimiento sistémico profundo.    | `10_ritual_dominical.py`     |
-| **11** | ✍️ **Content Engine**  | Generación de contenido, marketing y redacción creativa. | `11_generacion_contenido.py` |
+| ID    | Flujo de Trabajo      | Descripción                                             | Referencia Script           |
+|------|----------------------|--------------------------------------------------------|----------------------------|
+| **07**| 🌅 **Morning Standup** | Planificación matutina: "¿En qué debo trabajar hoy?"    | `07_morning_standup.py`     |
+| **02**| 📥 **Backlog Triage**  | Organización, limpieza y priorización del backlog.      | `02_backlog_triage.py`      |
+| **08**| 📊 **Weekly Review**   | Reflexión semanal y planificación estratégica.          | `08_weekly_review.py`       |
+| **10**| ⛪ **Sunday Ritual**   | Ritual dominical de mantenimiento sistémico profundo.   | `10_ritual_dominical.py`    |
+| **11**| ✍️ **Content Engine** | Generación de contenido, marketing y redacción creativa.| `11_generacion_contenido.py`|
 
 ---
 
 ### Quick Start Commands Summary
 
-| Actividad         | Comando             | Resultado / Impacto                                   |
-| :---------------- | :------------------ | :---------------------------------------------------- |
-| 🚀 **Planificar** | `/workflows:plan`   | Genera un plan técnico exhaustivo en `docs/plans/`.   |
-| 🎓 **Aprender**   | `/teach-me`         | Lección personalizada (puedes seguir con `/quiz-me`). |
-| 🔍 **Revisar**    | `/workflows:review` | Auditoría de lógica, seguridad y simplicidad.         |
+| Actividad        | Comando            | Resultado / Impacto                                  |
+|-----------------|-------------------|-----------------------------------------------------|
+| 🚀 **Planificar** | `/workflows:plan`  | Genera un plan técnico exhaustivo en `docs/plans/`.  |
+| 🎓 **Aprender**   | `/teach-me`        | Lección personalizada (puedes seguir con `/quiz-me`).|
+| 🔍 **Revisar**    | `/workflows:review`| Auditoría de lógica, seguridad y simplicidad.        |
 
 ## 🚀 Quick Start (Guía de Inicio Rápido)
 
