@@ -308,6 +308,7 @@ def get_skill_script(script_name):
         ENGINE_DIR / "01_Ritual" / script_name,
         ENGINE_DIR / "02_Tool" / script_name,
         ENGINE_DIR / ".backup" / "10_Legacy_backup_20260420" / script_name,
+        ENGINE_DIR / script_name,  # Directamente en ENGINE_DIR
     ]
     for legacy_path in legacy_paths:
         if legacy_path.exists():
@@ -316,11 +317,13 @@ def get_skill_script(script_name):
     # Fallback: buscar en skills folders directamente
     for skill_dir in SKILLS_DIR.iterdir():
         if skill_dir.is_dir():
-            scripts_dir = skill_dir / "scripts"
-            if scripts_dir.exists():
-                script_path = scripts_dir / script_name
-                if script_path.exists():
-                    return script_path
+            # Check multiple possible script subdirectory names
+            for scripts_subdir in ["scripts", "01_Scripts", "02_Scripts", "03_Scripts", "scripts"]:
+                scripts_dir = skill_dir / scripts_subdir
+                if scripts_dir.exists():
+                    script_path = scripts_dir / script_name
+                    if script_path.exists():
+                        return script_path
 
     # Fallback: búsqueda semántica via Pattern Intelligence Engine
     # Solo activa si MAP + legacy + skills fallaron
