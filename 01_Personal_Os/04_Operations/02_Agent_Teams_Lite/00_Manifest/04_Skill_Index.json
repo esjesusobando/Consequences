@@ -1,10 +1,10 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-19T07:01:17",
+  "generated": "2026-05-19T13:43:02",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
     "areas": 12,
-    "skills": 345,
+    "skills": 352,
     "without_frontmatter": 0
   },
   "by_area": {
@@ -349,8 +349,13 @@
       ]
     },
     "01_Creacion_Contenidos": {
-      "count": 38,
+      "count": 39,
       "skills": [
+        {
+          "name": "01_Creacion_Contenidos",
+          "path": "01_Creacion_Contenidos/SKILL.md",
+          "has_frontmatter": true
+        },
         {
           "name": "01_Brand_Voice",
           "path": "01_Creacion_Contenidos/01_Brand_Voice/SKILL.md",
@@ -617,8 +622,8 @@
           "has_frontmatter": true
         },
         {
-          "name": "2. DISE\u00c3\u2018O MINIMALISTA",
-          "path": "02_Diseno_Ui_Ux/03_Diseno_Minimalista/2. DISE\u00c3\u2018O MINIMALISTA/SKILL.md",
+          "name": "2. DISEÑO MINIMALISTA",
+          "path": "02_Diseno_Ui_Ux/03_Diseno_Minimalista/2. DISEÑO MINIMALISTA/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -662,15 +667,20 @@
           "has_frontmatter": true
         },
         {
-          "name": "11_Design_Systems",
-          "path": "02_Diseno_Ui_Ux/11_Design_Systems/SKILL.md",
+          "name": "12_Design_Systems",
+          "path": "02_Diseno_Ui_Ux/12_Design_Systems/SKILL.md",
           "has_frontmatter": true
         }
       ]
     },
     "03_Video_Media": {
-      "count": 6,
+      "count": 7,
       "skills": [
+        {
+          "name": "03_Video_Media",
+          "path": "03_Video_Media/SKILL.md",
+          "has_frontmatter": true
+        },
         {
           "name": "19_Video_Intel",
           "path": "03_Video_Media/01_Video_Intel/19_Video_Intel/SKILL.md",
@@ -704,8 +714,13 @@
       ]
     },
     "04_Automatizacion": {
-      "count": 21,
+      "count": 22,
       "skills": [
+        {
+          "name": "04_Automatizacion",
+          "path": "04_Automatizacion/SKILL.md",
+          "has_frontmatter": true
+        },
         {
           "name": "01_N8N_JS",
           "path": "04_Automatizacion/01_N8N_JS/SKILL.md",
@@ -814,8 +829,13 @@
       ]
     },
     "05_Workflows": {
-      "count": 34,
+      "count": 35,
       "skills": [
+        {
+          "name": "05_Workflows",
+          "path": "05_Workflows/SKILL.md",
+          "has_frontmatter": true
+        },
         {
           "name": "01_Agent_Teams_Lite",
           "path": "05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/SKILL.md",
@@ -977,20 +997,25 @@
           "has_frontmatter": true
         },
         {
-          "name": "03_Super_Campeones",
-          "path": "05_Workflows/03_Super_Campeones/SKILL.md",
+          "name": "24_PM_Agent_Orchestrator",
+          "path": "05_Workflows/04_PM_Orchestrator/24_PM_Agent_Orchestrator/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "24_PM_Agent_Orchestrator",
-          "path": "05_Workflows/04_PM_Orchestrator/24_PM_Agent_Orchestrator/SKILL.md",
+          "name": "04_Super_Campeones",
+          "path": "05_Workflows/04_Super_Campeones/SKILL.md",
           "has_frontmatter": true
         }
       ]
     },
     "06_Tools": {
-      "count": 92,
+      "count": 93,
       "skills": [
+        {
+          "name": "06_Tools",
+          "path": "06_Tools/SKILL.md",
+          "has_frontmatter": true
+        },
         {
           "name": "15_Skill_Creator_Oficial",
           "path": "06_Tools/01_Skill_Creator/15_Skill_Creator_Oficial/SKILL.md",
@@ -1367,8 +1392,8 @@
           "has_frontmatter": true
         },
         {
-          "name": "15_Qmd",
-          "path": "06_Tools/15_Qmd/SKILL.md",
+          "name": "14_Qmd",
+          "path": "06_Tools/14_Qmd/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -1392,6 +1417,11 @@
           "has_frontmatter": true
         },
         {
+          "name": "17_Qmd",
+          "path": "06_Tools/17_Qmd/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "17_System_Master",
           "path": "06_Tools/17_System_Master/SKILL.md",
           "has_frontmatter": true
@@ -1412,18 +1442,13 @@
           "has_frontmatter": true
         },
         {
-          "name": "18_Qmd",
-          "path": "06_Tools/18_Qmd/SKILL.md",
+          "name": "19_Qmd",
+          "path": "06_Tools/19_Qmd/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "19_Silicon_Valley_Data_Analyst",
           "path": "06_Tools/19_Silicon_Valley_Data_Analyst/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "20_Qmd",
-          "path": "06_Tools/20_Qmd/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -1454,8 +1479,13 @@
       ]
     },
     "07_Personal_Os": {
-      "count": 31,
+      "count": 32,
       "skills": [
+        {
+          "name": "07_Personal_Os",
+          "path": "07_Personal_Os/SKILL.md",
+          "has_frontmatter": true
+        },
         {
           "name": "18_Personal_Life_OS",
           "path": "07_Personal_Os/01_Life_OS/18_Personal_Life_OS/SKILL.md",
@@ -1602,20 +1632,25 @@
           "has_frontmatter": true
         },
         {
-          "name": "08_Hillary",
-          "path": "07_Personal_Os/08_Hillary/SKILL.md",
+          "name": "07_Hillary",
+          "path": "07_Personal_Os/07_Hillary/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "09_Learning_Always",
-          "path": "07_Personal_Os/09_Learning_Always/SKILL.md",
+          "name": "08_Learning_Always",
+          "path": "07_Personal_Os/08_Learning_Always/SKILL.md",
           "has_frontmatter": true
         }
       ]
     },
     "08_Invictus_Web": {
-      "count": 14,
+      "count": 15,
       "skills": [
+        {
+          "name": "08_Invictus_Web",
+          "path": "08_Invictus_Web/SKILL.md",
+          "has_frontmatter": true
+        },
         {
           "name": "brainstorming",
           "path": "08_Invictus_Web/01_Superpowers/00_Superpowers-plugin/brainstorming/SKILL.md",
