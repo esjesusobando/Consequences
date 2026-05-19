@@ -199,3 +199,6 @@ Now/02_Videos_Finales/
 01_Personal_Os/05_Archive/07_Repos_Gentleman/*/.git
 # Local Pi runtime state
 .atl/
+
+# Pattern Intelligence Engine cache (regeneratable)
+**/pattern_index.db
