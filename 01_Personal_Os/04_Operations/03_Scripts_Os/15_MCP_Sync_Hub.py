@@ -10,7 +10,11 @@ detecta drift y ofrece sync uni o bidireccional.
 import json
 import os
 import sys
+import io
 from pathlib import Path
+
+if sys.platform == "win32":
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 
 # ─────────────────────────────────────────────────────────────
 # RUTAS
