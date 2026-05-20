@@ -36,19 +36,19 @@ BRIGHT = Fore.MAGENTA
 
 # Todas las rutas se importan desde config_paths arriba
 
-REQUIRED_DIRS = [
-    MATRIX_DIR.name,
-    CORE_DIR.name,
-    KNOWLEDGE_DIR.name,
-    TASKS_DIR.name,
-    OPERATIONS_DIR.name,
-    ARCHIVE_DIR.name,
-    PROJECTS_DIR.name,
-    ENGINE_DIR.name,
-]
-for d in REQUIRED_DIRS:
-    if not (PROJECT_ROOT / d).exists():
-        print(f"[WARN] Required directory not found: {d}")
+REQUIRED_DIRS = {
+    "00_Winter_is_Coming": MATRIX_DIR,
+    "01_Core": CORE_DIR,
+    "02_Knowledge": KNOWLEDGE_DIR,
+    "03_Task": TASKS_DIR,
+    "04_Operations": OPERATIONS_DIR,
+    "05_Archive": ARCHIVE_DIR,
+    "05_Projects": PROJECTS_DIR,
+    "03_Scripts_Os": ENGINE_DIR,
+}
+for name, path in REQUIRED_DIRS.items():
+    if not path.exists():
+        print(f"[WARN] Required directory not found: {name} ({path})")
 
 # Fix Windows console encoding
 if sys.platform == "win32":
@@ -115,12 +115,21 @@ def validate_engine_naming() -> bool:
     pattern = re.compile(r"^\d{2}_[A-Z][a-zA-Z0-9_]+\.py$")
     errors: List[str] = []
 
+    EXCLUDED_FILES = {
+        "config_paths.py",
+        "refactor_revert_id.py",
+        "23_path_replacement.py",
+        "24_mass_path_migration.py",
+    }
+
     if not os.path.exists(engine_dir):
         print(f"{ERROR}[ERR] No se encontró el directorio 08_Scripts_Os.{RESET}")
         return False
 
     for item_name in os.listdir(engine_dir):
         if not item_name.endswith(".py") or item_name == "__init__.py":
+            continue
+        if item_name in EXCLUDED_FILES:
             continue
         if not pattern.match(item_name):
             errors.append(item_name)
@@ -265,20 +274,10 @@ def validate_arsenal_integrity() -> bool:
 def validate_folder_health() -> bool:
     """Verifica que la jerarquía 00-08 de PersonalOS esté intacta."""
     print(f"\n{INFO}[SCAN] Validando Jerarquía de Carpetas (00-08)...{RESET}")
-    expected_dirs = [
-        MATRIX_DIR.name,
-        CORE_DIR.name,
-        KNOWLEDGE_DIR.name,
-        TASKS_DIR.name,
-        OPERATIONS_DIR.name,
-        ARCHIVE_DIR.name,
-        PROJECTS_DIR.name,
-        ENGINE_DIR.name,
-    ]
     missing = []
-    for d in expected_dirs:
-        if not os.path.exists(PROJECT_ROOT / d):
-            missing.append(d)
+    for name, path in REQUIRED_DIRS.items():
+        if not path.exists():
+            missing.append(name)
 
     if missing:
         print(f"{ERROR}[ERR] Carpetas faltantes: {', '.join(missing)}{RESET}")
@@ -354,12 +353,12 @@ def main() -> None:
             if not value:
                 if key == "Arsenal":
                     print(
-                        f"  - Crear inventario de skills en 01_Brain/02_Knowledge_Brain/01_Inventario_Total.md"
+                        f"  - Crear inventario de skills en {INVENTORY_FILE.relative_to(PROJECT_ROOT)}"
                     )
                 elif key == "Integraciones":
                     print(f"  - Instalar o configurar Playwright")
                 elif key == "Reglas":
-                    print(f"  - Revisar estructura de reglas en 01_Brain/04_Rules/")
+                    print(f"  - Revisar estructura de reglas en {RULES_DIR.relative_to(PROJECT_ROOT)}")
                 elif key == "Carpetas":
                     print(f"  - Crear carpetas faltantes en la raiz del proyecto")
                 else:

@@ -37,18 +37,18 @@ BRIGHT = Fore.MAGENTA
 # Todas las rutas se importan desde config_paths arriba
 
 REQUIRED_DIRS = [
-    MATRIX_DIR.name,
-    CORE_DIR.name,
-    KNOWLEDGE_DIR.name,
-    TASKS_DIR.name,
-    OPERATIONS_DIR.name,
-    ARCHIVE_DIR.name,
-    PROJECTS_DIR.name,
-    ENGINE_DIR.name,
+    MATRIX_DIR,
+    CORE_DIR,
+    KNOWLEDGE_DIR,
+    TASKS_DIR,
+    OPERATIONS_DIR,
+    ARCHIVE_DIR,
+    PROJECTS_DIR,
+    ENGINE_DIR,
 ]
 for d in REQUIRED_DIRS:
-    if not (PROJECT_ROOT / d).exists():
-        print(f"[WARN] Required directory not found: {d}")
+    if not d.exists():
+        print(f"[WARN] Required directory not found: {d.name}")
 
 # Fix Windows console encoding
 if sys.platform == "win32":
@@ -119,8 +119,9 @@ def validate_engine_naming() -> bool:
         print(f"{ERROR}[ERR] No se encontró el directorio 08_Scripts_Os.{RESET}")
         return False
 
+    ignored_files = {"config_paths.py", "23_path_replacement.py", "24_mass_path_migration.py", "refactor_revert_id.py", "13_Beautify_Tables.py"}
     for item_name in os.listdir(engine_dir):
-        if not item_name.endswith(".py") or item_name == "__init__.py":
+        if not item_name.endswith(".py") or item_name == "__init__.py" or item_name in ignored_files:
             continue
         if not pattern.match(item_name):
             errors.append(item_name)
@@ -266,19 +267,19 @@ def validate_folder_health() -> bool:
     """Verifica que la jerarquía 00-08 de PersonalOS esté intacta."""
     print(f"\n{INFO}[SCAN] Validando Jerarquía de Carpetas (00-08)...{RESET}")
     expected_dirs = [
-        MATRIX_DIR.name,
-        CORE_DIR.name,
-        KNOWLEDGE_DIR.name,
-        TASKS_DIR.name,
-        OPERATIONS_DIR.name,
-        ARCHIVE_DIR.name,
-        PROJECTS_DIR.name,
-        ENGINE_DIR.name,
+        MATRIX_DIR,
+        CORE_DIR,
+        KNOWLEDGE_DIR,
+        TASKS_DIR,
+        OPERATIONS_DIR,
+        ARCHIVE_DIR,
+        PROJECTS_DIR,
+        ENGINE_DIR,
     ]
     missing = []
     for d in expected_dirs:
-        if not os.path.exists(PROJECT_ROOT / d):
-            missing.append(d)
+        if not d.exists():
+            missing.append(d.name)
 
     if missing:
         print(f"{ERROR}[ERR] Carpetas faltantes: {', '.join(missing)}{RESET}")

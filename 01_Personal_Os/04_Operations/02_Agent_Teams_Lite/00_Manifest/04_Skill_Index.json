@@ -1,10 +1,10 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-19T13:43:02",
+  "generated": "2026-05-20T11:50:03",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
     "areas": 12,
-    "skills": 352,
+    "skills": 356,
     "without_frontmatter": 0
   },
   "by_area": {
@@ -549,7 +549,7 @@
       ]
     },
     "02_Diseno_Ui_Ux": {
-      "count": 24,
+      "count": 25,
       "skills": [
         {
           "name": "04_Product_Design",
@@ -664,6 +664,11 @@
         {
           "name": "10_Design_Systems",
           "path": "02_Diseno_Ui_Ux/10_Design_Systems/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "11_Design_Systems",
+          "path": "02_Diseno_Ui_Ux/11_Design_Systems/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -829,7 +834,7 @@
       ]
     },
     "05_Workflows": {
-      "count": 35,
+      "count": 36,
       "skills": [
         {
           "name": "05_Workflows",
@@ -1005,11 +1010,16 @@
           "name": "04_Super_Campeones",
           "path": "05_Workflows/04_Super_Campeones/SKILL.md",
           "has_frontmatter": true
+        },
+        {
+          "name": "05_Super_Campeones",
+          "path": "05_Workflows/05_Super_Campeones/SKILL.md",
+          "has_frontmatter": true
         }
       ]
     },
     "06_Tools": {
-      "count": 93,
+      "count": 95,
       "skills": [
         {
           "name": "06_Tools",
@@ -1417,6 +1427,11 @@
           "has_frontmatter": true
         },
         {
+          "name": "16_Qmd",
+          "path": "06_Tools/16_Qmd/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "17_Qmd",
           "path": "06_Tools/17_Qmd/SKILL.md",
           "has_frontmatter": true
@@ -1439,6 +1454,11 @@
         {
           "name": "05_Google_Stitch_MCP",
           "path": "06_Tools/17_System_Master/05_Google_Stitch_MCP/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "18_Qmd",
+          "path": "06_Tools/18_Qmd/SKILL.md",
           "has_frontmatter": true
         },
         {

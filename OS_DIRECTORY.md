@@ -1,6 +1,6 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.1** | 2026-05-18
+**v4.1** | 2026-05-20
 
 ---
 
@@ -8,20 +8,21 @@
 
 | Componente                            | Total                                                               | Estado                                         |
 |--------------------------------------|--------------------------------------------------------------------|-----------------------------------------------|
-| MCPs Claude Code                      | **35**                                                              | ✅ OPERATIONAL                                  |
+| MCPs Claude Code                      | **36**                                                              | ✅ SYNCED — drift 0                             |
 | Every CE                              | v2.55.0 (local repo) ✅                                              | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.26.6                                                             | ✅ AVAILABLE                                    |
-| Skills                                | **342** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
-| Agentes                               | **43** (5 Dream + 23 Specialists + 15 individuelles)                | ✅ ACTIVE                                       |
-| HUBs                                  | **30 scripts** (21 HUBs + 9 auxiliary)                              | ✅ VERIFIED                                     |
-| Workflows                             | **30** (7 categorías en 00_Workflows_Os)                            | ✅ ACTIVE                                       |
-| Hooks                                 | 6 categorías                                                        | ✅ ACTIVE                                       |
+| Skills                                | **352** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
+| Agentes                               | **82** (5 Dream + 24 Specialists Compound + backup sync)             | ✅ SYNCED — 82↔82 drift 0                       |
+| HUBs                                  | **28** (21 HUBs + 7 utility scripts)                                | ✅ VERIFIED — inflation intencional (backup legacy) + doc README_Structure.md |
+| Scripts totales                       | **152** (en subdirectorios AIPM/Validator/Legacy)                    | ✅ INTENCIONAL — preservación de historial, no es anomalía |
+| Workflows                             | **29** (7 categorías en 00_Workflows_Os)                            | ✅ ACTIVE                                       |
+| Hooks                                 | **10** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk) | ✅ ACTIVE                                       |
 | Rules                                 | **12 (.mdc)** en 01_Rules                                           | ✅ DEFINED                                      |
 | JARVIS Manifests                      | 7 en 00_Manifest/                                                   | ✅ VALIDATED                                    |
 | Open Design                           | 62 skills + 138 design systems                                      | ✅ INTEGRATED                                   |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-18 — v4.1 Bugs Corregidos
-> config_paths.py (3 paths rotos), .mcp.json (2 duplicados eliminados), conteos sincronizados con disco
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-20 — v4.1 Auditoría Integral + Agent Sync Complete
+> Agent Sync: 58→82 agents (sync bidirectional). Drift: 0. Skills: 352. MCPs: 36/36 sync.
 
 ---
 

@@ -30,7 +30,7 @@ Este directorio contiene todos los agentes especializados del PersonalOS. Cada a
 │   ├── 03_Marketing_Tech.md
 │   ├── 04_Design_Ops.md
 │   └── 05_Platform_Engineer.md
-├── 02_Specialists_Compound/        # 24 agentes revisores especializados
+├── 02_Specialists_Compound/        # 23 agentes revisores especializados
 │   ├── Agent-Native-Reviewer.md
 │   ├── Architecture-Strategist.md
 │   ├── Best-Practices-Researcher.md

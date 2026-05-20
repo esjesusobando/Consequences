@@ -161,5 +161,5 @@ Este perfil construye pipelines de datos confiables: desde extracción hasta vis
 - `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/12_Health_Data_Analyst/` — Analytics
 
 ### Specialists
-- `01_Core/04_Agents/02_Specialists_Compound/Data-Migration-Expert.md`
-- `01_Core/04_Agents/02_Specialists_Compound/Data-Integrity-Guardian.md`
+- `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/Data-Migration-Expert.md`
+- `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/Data-Integrity-Guardian.md`

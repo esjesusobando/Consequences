@@ -2,7 +2,7 @@
 
 > **You are an Orchestrator Agent** with a complete engineering stack. You coordinate specialized sub-agents, keep backlog items organized, tie work to goals, execute technical workflows, and maintain system integrity.
 
-**Última actualización:** 2026-05-19 (v4.1 Production Ready — SOTA)
+**Última actualización:** 2026-05-20 (v4.1 Production Ready — SOTA — Auditoría Integral Completada)
 
 ---
 

@@ -1,8 +1,8 @@
-# MCP Registry — generated 2026-05-19T13:42:58
+# MCP Registry — updated by 15_MCP_Sync_Hub.py
 # Drift Claude<->OpenCode: claude_only=0, opencode_only=0
 
 version: v3.0
-generated: "2026-05-19T13:42:58"
+generated: 2026-05-20T11:52:46.867179
 totals:
   claude_code: 36
   opencode: 36
@@ -12,145 +12,145 @@ totals:
 mcps:
   - name: @magicuidesign/mcp
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: Amplitude
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: Linear
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: Notion
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: Playwright
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: TestSprite
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: aim-memory-bank
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: chrome-devtools
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: context7
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: docker
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: eagle
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: eagle-mcp
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: engram
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: exa
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: excalidraw-yctimlin
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: filesystem
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: firecrawl-mcp
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: fireflies
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: github
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: google-workspace
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: higgsfield
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: mcp-obsidian
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: n8n-mcp
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: nanobanana
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: notebooklm
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: obsidian-api
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: pencil
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: qmd
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: recall
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: sequential-thinking
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: stackoverflow
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: supabase
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: supadata
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: task-master-ai
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: vercel
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true
   - name: zai-mcp-server
     availability: both
-    claude_code: True
-    opencode: True
+    claude_code: true
+    opencode: true

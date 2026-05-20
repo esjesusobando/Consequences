@@ -223,13 +223,13 @@ if __name__ == "__main__":
 SCRIPT_LOCATION_MAP = {
     # === v6.2 AUDITORS Y VALIDATORS ===
     # directorio — get_skill_script agrega el nombre del script al final
-    "33_Parallel_Audit_Pro.py": ENGINE_DIR / "03_Validator",
-    "34_Skill_Auditor.py": ENGINE_DIR / "03_Validator",
-    "37_Linter_Autofix.py": ENGINE_DIR / "03_Validator",
-    "40_Validate_Rules.py": ENGINE_DIR / "03_Validator",
-    "80_Edge_Case_Validator.py": ENGINE_DIR / "03_Validator",
-    "skill_validator.py": ENGINE_DIR / "03_Validator",
-    "skill_security_scan.py": ENGINE_DIR / "03_Validator",
+    "33_Parallel_Audit_Pro.py": ENGINE_DIR / "05_Validator",
+    "34_Skill_Auditor.py": ENGINE_DIR / "05_Validator",
+    "37_Linter_Autofix.py": ENGINE_DIR / "05_Validator",
+    "40_Validate_Rules.py": ENGINE_DIR / "05_Validator",
+    "80_Edge_Case_Validator.py": ENGINE_DIR / "05_Validator",
+    "skill_validator.py": ENGINE_DIR / "05_Validator",
+    "skill_security_scan.py": ENGINE_DIR / "05_Validator",
     # HUBS
     "01_Auditor_Hub.py": ENGINE_DIR / "01_Auditor_Hub.py",
     "05_Validator_Hub.py": ENGINE_DIR / "05_Validator_Hub.py",

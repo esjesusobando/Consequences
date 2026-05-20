@@ -93,12 +93,7 @@ class EvaluationResult:
     bugs: List[str] = field(default_factory=list)
     feedback: str = ""
     passed: bool = False
-
-    @property
-    def average_score(self) -> float:
-        if not self.scores:
-            return 0
-        return sum(s.score for s in self.scores) / len(self.scores)
+    average_score: float = 0.0
 
     def to_dict(self) -> dict:
         return {
@@ -213,7 +208,7 @@ class EvaluatorRunner:
         )
 
         # 2. Originalidad - detectar AI slop
-        orig_score = self._assess_originality(output)
+        orig_score = self._assess_originalidad(output)
         scores.append(
             GradingScore(
                 criteria=GradingCriteria.ORIGINALIDAD,

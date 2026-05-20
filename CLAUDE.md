@@ -1,7 +1,7 @@
-# 🛡️ CLAUDE.md | PersonalOS v4.0 — Production Ready AI Context Harness
+# 🛡️ CLAUDE.md | PersonalOS v4.1 — Production Ready AI Context Harness
 
-> **Última actualización:** 2026-05-13
-> **Versión:** v4.0 Production — Every CE v2.55.0 (local repo), gentle-ai v1.26.6
+> **Última actualización:** 2026-05-20
+> **Versión:** v4.1 Production — Every CE v2.55.0 (local repo), gentle-ai v1.26.6
 
 <system_directives>
   <fundamental_rule>
@@ -178,15 +178,17 @@ Think_Different/                           # RAÍZ
 └── README.md                    ✅ Documentación principal
 ```
 
-### 2. AGENTS (43)
+### 2. AGENTS (82 — post-audit 2026-05-20)
 
 | Categoría                                   | Ubicación                                                                        |
 |--------------------------------------------|---------------------------------------------------------------------------------|
 | Dream Team (5)                              | `01_Core/02_Tools/01_Agents/01_Dream_Team/`                                      |
-| Specialists (23)                            | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                            |
-| Individuales (15)                           | `01_Core/02_Tools/01_Agents/`                                                    |
+| Specialists Compound (24+)                  | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                            |
+| Individuales                                | `01_Core/02_Tools/01_Agents/`                                                    |
 
-### 3. SKILLS (342 — 12 áreas funcionales)
+> ⚠️ Source + Backup sync: **82 ↔ 82** — drift: 0 ✅ (post-audit 2026-05-20)
+
+### 3. SKILLS (352 — 12 áreas funcionales)
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
@@ -252,20 +254,21 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 
 | Categoria                                                 | Estado                                         | Notas                                                                                        |
 |----------------------------------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------|
-| **Overall Health**                                        | **✅ PURE GREEN**                               | v4.1 — Auditoría completa 2026-05-17                                                         |
+| **Overall Health**                                        | **✅ PURE GREEN**                               | v4.1 — Auditoría completa 2026-05-20 — Agent Sync DONE                                        |
 | Estructura (4 raíz)                                       | ✅ PASS                                         | Winter / Personal_Os / Playground / Resultado                                                |
-| HUBs (29 scripts)                                         | ✅ ACTIVE                                       | 26 HUBs + 3 utility scripts (path_replacement x2, mass_path_migration)                       |
-| Skills (341 skills, 12 áreas)                             | ✅ VERIFIED                                     | 12 áreas funcionales — 0 sin frontmatter                                                     |
-| Agent Matrix                                              | ✅ ACTIVE                                       | 58 agentes                                                                                   |
+| HUBs (28 + 152 scripts)                                    | ✅ ACTIVE                                       | 28 HUBs + 152 scripts en subdirectorios (AIPM/Validator/Legacy)                              |
+| Skills (352, 12 áreas)                                    | ✅ VERIFIED                                     | 12 áreas funcionales — 0 sin frontmatter                                                     |
+| Agent Matrix                                              | ✅ SYNCED                                      | 82 ↔ 82 (drift: 0 post-audit 2026-05-20)                                                    |
 | Manifest (7 archivos)                                     | ✅ VALIDATED                                    | 00_Manifest/ en 02_Agent_Teams_Lite/                                                         |
-| MCPs (37 Claude Code)                                     | ⚠️ SYNCED WITH DRIFT                           | 37 Claude / 34 OpenCode — 3 MCPs solo en Claude (higgsfield, playwright, sequential-thinking)|
+| MCPs (36 Claude / 36 OpenCode)                            | ✅ SYNCED                                       | drift: 0 (ambos configs alineados)                                                           |
 | Rules (12 .mdc)                                           | ✅ DEFINED                                      | 01_Rules/                                                                                    |
-| Workflows (28+)                                           | ✅ ACTIVE                                       | 5 categorías en 00_Workflows_Os                                                              |
+| Workflows (29)                                            | ✅ ACTIVE                                       | 7 categorías en 00_Workflows_Os                                                              |
+| Hooks (10, 6 fases)                                       | ✅ ACTIVE                                       | 05_Hooks/                                                                                    |
 | Agent Teams Protocol                                      | ✅ ACTIVE                                       | Super Campeones                                                                              |
 
 ---
 
-## 🤖 JARVIS — 4.1 (2026-05-17)
+## 🤖 JARVIS — 4.1 (2026-05-20)
 
 ### Quick Access
 ```bash
@@ -333,9 +336,10 @@ O reinstalar sin `--ignore-scripts` / `--omit=optional`.
 
 ---
 
-**Última actualización:** 2026-05-17
-**Versión:** v4.1 — Auditoría Integral
+**Última actualización:** 2026-05-20
+**Versión:** v4.1 — Auditoría Integral + Agent Sync Complete
 
 > ✅ **Migración v4.0 2026-05-13:** Production Ready. Pure Green State. Paths corregidos.
+> ✅ **Audit 2026-05-20:** Agent Sync completado. Drift: 0. 82 agents syncados.
 
-© 2026 PersonalOS v4.0 Production Ready
+© 2026 PersonalOS v4.1 Production Ready

@@ -256,12 +256,15 @@ def scan_agents():
 
 
 def scan_hubs():
-    """Escanea HUBs en 03_Scripts_Os/."""
+    """Escanea HUBs en 03_Scripts_Os/ + scripts en subdirectorios."""
     hubs_dir = PROJECT_ROOT / "01_Personal_Os/04_Operations/03_Scripts_Os"
 
     hubs = []
+    scripts = []
+
+    # HUBs en raíz (scripts con prefijo numérico XX_ en directorio raíz)
     for f in sorted(hubs_dir.glob("*.py")):
-        if f.stem in ("config_paths", "__init__"):
+        if f.stem in ("config_paths", "__init__", "refactor_revert_id"):
             continue
         if not f.stem[:2].isdigit():
             continue
@@ -271,12 +274,30 @@ def scan_hubs():
             "command": f"python {f.relative_to(PROJECT_ROOT)}".replace("\\", "/"),
         })
 
+    # Scripts en subdirectorios (ej: 05_Validator/, 10_Legacy/)
+    for subdir in sorted(hubs_dir.iterdir()):
+        if not subdir.is_dir():
+            continue
+        if subdir.name.startswith("."):
+            continue
+        for f in sorted(subdir.glob("*.py")):
+            if f.stem in ("__init__",):
+                continue
+            if not f.stem[:2].isdigit():
+                continue
+            scripts.append({
+                "name": f.stem,
+                "path": str(f.relative_to(PROJECT_ROOT)).replace("\\", "/"),
+                "command": f"python {f.relative_to(PROJECT_ROOT)}".replace("\\", "/"),
+            })
+
     return {
         "version": "v3.0",
         "generated": datetime.now().isoformat(timespec="seconds"),
         "base_path": "01_Personal_Os/04_Operations/03_Scripts_Os/",
-        "totals": {"hubs": len(hubs)},
+        "totals": {"hubs": len(hubs), "scripts": len(scripts)},
         "hubs": hubs,
+        "scripts": scripts,
     }
 
 
@@ -365,6 +386,7 @@ def scan_inventory():
             "agents_source": agents_data["totals"]["source"],
             "agents_backup": agents_data["totals"]["backup"],
             "hubs": hubs_data["totals"]["hubs"],
+            "scripts": hubs_data["totals"]["scripts"],
             "workflows": workflows_data["totals"]["workflows"],
             "workflow_categories": workflows_data["totals"]["categories"],
             "hooks": hooks_data["totals"]["hooks"],
@@ -466,7 +488,7 @@ Es la fuente de verdad que TODOS los agentes consultan.
 | 02 | `02_MCP_Registry.yaml` | MCPs Claude Code + OpenCode con drift |
 | 03 | `03_Agent_Catalog.yaml` | 52 agentes (source: core, backup: .agent) |
 | 04 | `04_Skill_Index.json` | Index navegable de las {inventory['totals']['skills']} skills |
-| 05 | `05_HUB_Catalog.yaml` | {inventory['totals']['hubs']} HUBs ejecutables |
+| 05 | `05_HUB_Catalog.yaml` | {inventory['totals']['hubs']} HUBs + {inventory['totals']['scripts']} scripts |
 | 06 | `06_Workflow_Graph.yaml` | {inventory['totals']['workflows']} workflows en {inventory['totals']['workflow_categories']} categorías |
 | 07 | `07_Hook_Registry.yaml` | {inventory['totals']['hooks']} hooks en {inventory['totals']['hook_phases']} fases |
 
@@ -488,7 +510,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py --vali
 - **MCPs OpenCode:** {inventory['totals']['mcps_opencode']}
 - **Skills:** {inventory['totals']['skills']} en {inventory['totals']['skill_areas']} áreas
 - **Agentes:** {inventory['totals']['agents_source']} (source) / {inventory['totals']['agents_backup']} (backup)
-- **HUBs:** {inventory['totals']['hubs']}
+- **HUBs:** {inventory['totals']['hubs']} (+ {inventory['totals']['scripts']} scripts)
 - **Workflows:** {inventory['totals']['workflows']}
 - **Hooks:** {inventory['totals']['hooks']}
 - **Rules:** {inventory['totals']['rules']}
