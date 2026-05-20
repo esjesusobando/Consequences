@@ -1,0 +1,27 @@
+global:
+  dry_run: false
+  log_level: INFO
+last_updated: '2026-05-20'
+sota_features:
+  01_contemplation_loop:
+    description: Reviews memory stores, extracts patterns, self-improves between sessions
+    enabled: false
+    schedule: 0 3 * * *
+    version: 1.0.0
+  02_voice_profile:
+    description: Extracts writing style fingerprint from user content
+    enabled: false
+    version: 1.0.0
+  03_memory_versioning:
+    description: Immutable versions + audit trail for Engram memory operations
+    enabled: false
+    version: 1.0.0
+  04_feedback_loop:
+    description: "Structured corrections \xE2\u2020\u2019 persistent behavioral rules"
+    enabled: false
+    version: 1.0.0
+  05_ambient_intelligence:
+    description: Screenpipe integration for automatic context capture
+    enabled: false
+    version: 1.0.0
+version: 1.0.0

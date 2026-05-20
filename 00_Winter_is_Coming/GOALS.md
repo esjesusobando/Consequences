@@ -182,7 +182,7 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 - **Frontend:** React, Next.js
 - **Automation:** Make, Zapier
 - **MCP:** Custom protocol implementation (via `05_System/`)
-- **Engine Scripts:** `08_Scripts_Os/` — HUBs automation scripts for OS operations
+- **Engine Scripts:** `01_Personal_Os/04_Operations/03_Scripts_Os/` — HUBs automation scripts for OS operations
 
 - --
 

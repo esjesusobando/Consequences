@@ -1,0 +1,14 @@
+{
+  "versions": [
+    {
+      "id": "ver_2026-05-20T13-31-24-468964",
+      "topic_key": "test/sota",
+      "project": "Think_Different",
+      "timestamp": "2026-05-20T13:31:24.468964",
+      "content_hash": "c925d465c35b575a",
+      "content_length": 35,
+      "status": "saved"
+    }
+  ],
+  "latest": "ver_2026-05-20T13-31-24-468964"
+}

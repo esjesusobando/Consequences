@@ -1,4 +1,4 @@
-﻿---
+---
 description: PILAR 03: Estándares de Ingeniería, Stack Tecnológico y Organización (Motor AI-Prime)
 globs: */*.{html,css,js,ts,tsx,py,md}
 alwaysApply: true
@@ -45,10 +45,10 @@ Think_Different/
     - Seguir el formato `NN_Nombre_Skill`.
     - Si un flujo se repite 3 veces, crear una nueva Skill.
     - **Skill Fusion**: Usar siempre el conocimiento oficial de skills instaladas (Vercel, Docker, etc.) antes de intentar implementaciones manuales.
-4.  **Vitaminización de Scripts**: Los scripts de `08_Scripts_Os` deben incluir Branding de PersonalOS y notificaciones de voz (TTS).
+4.  **Vitaminización de Scripts**: Los scripts de `01_Personal_Os/04_Operations/03_Scripts_Os` deben incluir Branding de PersonalOS y notificaciones de voz (TTS).
 5.  **Validación de Salud (Pure Green)**: El sistema debe mantenerse con métricas del 100% en rutas, dependencias y hooks.
 6.  **Visibilidad de Progreso en Scripts Multi-Paso**:
-    - **Descripción**: Todo script en `08_Scripts_Os` que ejecute múltiples pasos (≥3) DEBE mostrar porcentaje de avance acumulado.
+    - **Descripción**: Todo script en `01_Personal_Os/04_Operations/03_Scripts_Os` que ejecute múltiples pasos (≥3) DEBE mostrar porcentaje de avance acumulado.
     - **Formato**: `[XX.X%] Paso N/Total: Descripción`
     - **Notificaciones de Voz**: Opcional en hitos clave (25%, 50%, 75%) para evitar saturación.
     - **Template Disponible**: `01_Personal_Os/04_Operations/03_Scripts_Os/templates/multi_step_script_template.py`
