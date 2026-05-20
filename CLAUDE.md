@@ -257,7 +257,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 | **Overall Health**                                        | **✅ PURE GREEN**                               | v4.1 — Auditoría completa 2026-05-20 — Agent Sync DONE                                        |
 | Estructura (4 raíz)                                       | ✅ PASS                                         | Winter / Personal_Os / Playground / Resultado                                                |
 | HUBs (28 + 152 scripts)                                    | ✅ ACTIVE                                       | 28 HUBs + 152 scripts en subdirectorios (AIPM/Validator/Legacy)                              |
-| Skills (352, 12 áreas)                                    | ✅ VERIFIED                                     | 12 áreas funcionales — 0 sin frontmatter                                                     |
+| Skills (356, 12 áreas)                                    | ✅ VERIFIED                                     | 12 áreas funcionales — 0 sin frontmatter                                                     |
 | Agent Matrix                                              | ✅ SYNCED                                      | 82 ↔ 82 (drift: 0 post-audit 2026-05-20)                                                    |
 | Manifest (7 archivos)                                     | ✅ VALIDATED                                    | 00_Manifest/ en 02_Agent_Teams_Lite/                                                         |
 | MCPs (36 Claude / 36 OpenCode)                            | ✅ SYNCED                                       | drift: 0 (ambos configs alineados)                                                           |

@@ -29,7 +29,7 @@ El núcleo del sistema operativo personal. Contiene toda la infraestructura, her
 | Componente | Total | Estado |
 |---|---|---|
 | Agents | 82 | ✅ SYNCED — 82↔82 |
-| Skills | 352 | ✅ VERIFIED — 12 áreas |
+| Skills | 356 | ✅ VERIFIED — 12 áreas |
 | MCPs | 36 | ✅ SYNCED — drift 0 |
 | HUBs | 28 | ✅ ACTIVE |
 | Scripts totales | 152 | ✅ INTENCIONAL — backup legacy |

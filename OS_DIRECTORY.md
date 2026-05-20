@@ -11,7 +11,7 @@
 | MCPs Claude Code                      | **36**                                                              | ✅ SYNCED — drift 0                             |
 | Every CE                              | v2.55.0 (local repo) ✅                                              | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.26.6                                                             | ✅ AVAILABLE                                    |
-| Skills                                | **352** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
+| Skills                                | **356** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
 | Agentes                               | **82** (5 Dream + 24 Specialists Compound + backup sync)             | ✅ SYNCED — 82↔82 drift 0                       |
 | HUBs                                  | **28** (21 HUBs + 7 utility scripts)                                | ✅ VERIFIED — inflation intencional (backup legacy) + doc README_Structure.md |
 | Scripts totales                       | **152** (en subdirectorios AIPM/Validator/Legacy)                    | ✅ INTENCIONAL — preservación de historial, no es anomalía |
