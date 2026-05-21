@@ -1,6 +1,6 @@
-# 04_Installer — PersonalOS v2.0
+# 04_Installer — PersonalOS v4.5
 
-**Estado:** v2.0 Consequences | **Última actualización:** 2026-04-25
+**Estado:** v4.5 Consequences | **Última actualización:** 2026-05-20
 
 ## Descripción
 

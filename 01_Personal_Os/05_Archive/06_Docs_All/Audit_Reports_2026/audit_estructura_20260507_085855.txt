@@ -1,4 +1,0 @@
-Audit estructura — 20260507_085855
-Dimension errors: 0
-Numbering errors: 1
-Total errors: 1

@@ -1,6 +1,6 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.1** | 2026-05-20
+**v4.5 Consequences** | 2026-05-20
 
 ---
 
@@ -13,7 +13,7 @@
 | gentle-ai                             | v1.26.6                                                             | ✅ AVAILABLE                                    |
 | Skills                                | **356** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
 | Agentes                               | **82** (5 Dream + 24 Specialists Compound + backup sync)             | ✅ SYNCED — 82↔82 drift 0                       |
-| HUBs                                  | **28** (21 HUBs + 7 utility scripts)                                | ✅ VERIFIED — inflation intencional (backup legacy) + doc README_Structure.md |
+| HUBs                                  | **31** scripts en raíz + subdirectorios                             | ✅ VERIFIED                                     |
 | Scripts totales                       | **152** (en subdirectorios AIPM/Validator/Legacy)                    | ✅ INTENCIONAL — preservación de historial, no es anomalía |
 | Workflows                             | **29** (7 categorías en 00_Workflows_Os)                            | ✅ ACTIVE                                       |
 | Hooks                                 | **10** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk) | ✅ ACTIVE                                       |
@@ -21,18 +21,18 @@
 | JARVIS Manifests                      | 7 en 00_Manifest/                                                   | ✅ VALIDATED                                    |
 | Open Design                           | 62 skills + 138 design systems                                      | ✅ INTEGRATED                                   |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-20 — v4.1 Auditoría Integral + Agent Sync Complete
-> Agent Sync: 58→82 agents (sync bidirectional). Drift: 0. Skills: 352. MCPs: 36/36 sync.
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-20 — v4.5 Consequences
+> Agent Sync: 82↔82 drift 0. Skills: 356. MCPs: 36/36 sync.
 
 ---
 
-## 🆕 v4.1 Cambios desde v4.0
+## 🆕 v4.5 Cambios desde v4.1
 
-1. **Every CE v3.7.3** — Integración SOTA
-2. **gentle-ai v1.26.6** — Herramientas Gentleman Programming activas
-3. **Paths Normalizados** — config_paths.py completamente libre de bugs
-4. **Respaldo Sincronizado** — Mirror .agent ↔ 01_Core al 100%
-5. **Base de Datos Limpia** — Eliminación de duplicados y optimización de .mcp.json
+1. **Secuencias corregidas** — Playground, Reports, carpetas sin huecos
+2. **Nomenclatura estandarizada** — Pascal_Case para datos, snake_case para código
+3. **00_ prefix rule** — Archivos "a la mano" no se tocan
+4. **06_Testing_Youtube organizado** — 5 subcarpetas (Agents/Outputs/Sessions/Tests/Skills_Test)
+5. **Rules actualizadas** — Convenciones de nomenclatura documentadas
 
 ## 📍 UBICACIONES CRÍTICAS
 
@@ -49,7 +49,7 @@
 
 ---
 
-## 🔧 HUBs JARVIS 4.0 — Comandos Canónicos
+## 🔧 HUBs JARVIS 4.5 — Comandos Canónicos
 
 ```bash
 # regenerar 7 manifests JARVIS
@@ -70,7 +70,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 
 ---
 
-## 🗂️ ESTRUCTURA COMPLETA v4.1
+## 🗂️ ESTRUCTURA COMPLETA v4.5
 
 ```
 Think_Different/                         # RAÍZ
@@ -246,7 +246,7 @@ Think_Different/                         # RAÍZ
 | `13_Auditors_Os/`          | Auditores OS                                                                |
 | `14_Otros/`                | Otros                                                                       |
 
-> ★ = HUB canónico JARVIS 4.1
+> ★ = HUB canónico JARVIS 4.5
 
 ---
 
@@ -297,4 +297,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-05-19 | PersonalOS v4.1 Production Ready | Every CE v3.7.3 (local repo) ✅ | gentle-ai v1.26.6 | 342 skills | 43 agents | 35 MCPs*
+*Actualizado: 2026-05-20 | PersonalOS v4.5 Consequences | Every CE v2.55.0 ✅ | gentle-ai v1.26.6 | 356 skills | 82 agents | 36 MCPs*

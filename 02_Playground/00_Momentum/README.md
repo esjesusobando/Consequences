@@ -1,35 +1,124 @@
-# 🔄 PersonalOS Workflows v6.1 — Think Different
+# 🔄 PersonalOS Workflows v4.5 — Think Different
+
+> **Versión:** 4.5 Consequences
+> **Última actualización:** 2026-05-20
+> **Estado:** Production Ready
 
 Directorio centralizado de los flujos de trabajo operativos de PersonalOS. Los flujos están organizados temáticamente para maximizar la eficiencia y la capitalización de conocimiento.
 
-## 🧭 Estructura del Sistema
+---
 
-### [01_Personal_Os](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/01_Personal_Os) (Ritmos Core)
-*Rituales operativos indispensables para el funcionamiento diario del sistema.*
-1. **[01_Morning_Standup](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/01_Personal_Os/01_Morning_Standup.md)**: Planificación y foco matutino.
-2. **[02_Backlog_Processing](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/01_Personal_Os/02_Backlog_Processing.md)**: Triaje de tareas pendientes.
-3. **[03_Content_Generation](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/01_Personal_Os/03_Content_Generation.md)**: Generación acelerada de valor.
-4. **[04_Weekly_Review](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/01_Personal_Os/04_Weekly_Review.md)**: Alineación estratégica semanal.
-... +6 archivos de mantenimiento.
+## 📁 Estructura del Sistema (v4.5)
 
-### [02_Marvel](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/02_Marvel) (The Avengers)
-*Identidades temáticas para la orquestación y ejecución experta.*
-- **[Iron Man Gen](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/02_Marvel/01_Iron_Man_Gen.md)**: Genesis y Boot del sistema.
-- **[Hulk Compound](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/02_Marvel/06_Hulk_Compound.md)**: Capitalización agresiva de soluciones.
-- **[Thor Work](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/02_Marvel/05_Thor_Work.md)**: Ejecución imparable.
-
-### [03_Gentleman](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/03_Gentleman) (UX & Docs)
-*Flujos de diseño premium y redacción técnica de alta calidad.*
-- **[Frontend Premium](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/03_Gentleman/10_Frontend_Premium.md)**.
-- **[Redacción de Docs](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/03_Gentleman/20_Redaccion_de_Docs.md)**.
-
-### [04_Hillary](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/04_Hillary) (Life OS)
-*Gestión integral del inbox y captura rápida de información.*
-
-### [05_Compound_Engineering](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/05_Compound_Engineering) (Técnica & Deep Work)
-*Metodologías avanzadas de ingeniería y sesiones de alto rendimiento (Invistus).*
+```
+00_Momentum/
+├── 01_Personal_Os/           # Ritmos Core — Operativos diarios
+├── 02_Marvel/                 # The Avengers — Identidades temáticas
+├── 02_Mom_Projects/           # Proyectos en momentum
+├── 03_Gentleman/              # UX & Docs — Diseño premium
+├── 04_Hillary/                # Life OS — Gestión integral
+├── 05_Compound_Engineering/   # Técnica & Deep Work
+└── 06_Testing_Youtube/        # Testing YouTube pipeline
+    ├── 01_Agents/             # Agentes de prueba
+    ├── 02_Outputs/            # Outputs generados
+    ├── 03_Sessions/            # Sesiones de testing
+    ├── 04_Tests/               # Tests específicos
+    └── 05_Skills_Test/         # Skill prototypes
+```
 
 ---
 
-> [!TIP]
-> Use el comando `python 03_Scripts_Os/08_Workflow_Hub.py run <name>` para ejecutar un flujo específico de forma automatizada.
+## 🧭 Workflows por Categoría
+
+### 01_Personal_Os (Ritmos Core)
+*Rituales operativos indispensables para el funcionamiento diario del sistema.*
+
+| # | Workflow | Descripción | Skill Integrada |
+|---|---------|-------------|-----------------|
+| 01 | Morning_Standup | Planificación y foco matutino | ✅ |
+| 02 | Backlog_Processing | Triaje de tareas pendientes | ✅ |
+| 03 | Content_Generation | Generación acelerada de valor | ✅ |
+| 04 | Weekly_Review | Alineación estratégica semanal | ✅ |
+| 05 | Best_Practices | Estándares de calidad | ✅ |
+
+### 02_Marvel (The Avengers)
+*Identidades temáticas para la orquestación y ejecución experta.*
+
+| # | Workflow | Descripción |
+|---|---------|-------------|
+| 01 | Iron_Man_Gen | Genesis y Boot del sistema |
+| 05 | Thor_Work | Ejecución imparable |
+| 06 | Hulk_Compound | Capitalización agresiva de soluciones |
+
+### 03_Gentleman (UX & Docs)
+*Flujos de diseño premium y redacción técnica de alta calidad.*
+
+- **Frontend_Premium** — UI de alta calidad
+- **Redaccion_de_Docs** — Documentación técnica
+
+### 04_Hillary (Life OS)
+*Gestión integral del inbox y captura rápida de información.*
+
+### 05_Compound_Engineering (Técnica & Deep Work)
+*Metodologías avanzadas de ingeniería y sesiones de alto rendimiento.*
+
+---
+
+## 🔗 Integración con Skills
+
+Los workflows están integrados con el sistema de skills en:
+
+```
+01_Personal_Os/01_Core/02_Tools/02_Skills/
+├── 05_Workflows/
+│   ├── 01_Agent_Teams_Lite/    # SDD + Agent Teams
+│   ├── 02_Project_Manager/     # PM workflows
+│   └── 03_Product_Manager/    # Product workflows
+└── 00_Compound_Engineering/   # CE workflows
+```
+
+### Skills YouTube Relacionadas
+
+| Skill | Ubicación | Estado |
+|-------|----------|--------|
+| Youtube_Script_Writer | `01_Creacion_Contenidos/` | ✅ Integrada |
+| Youtube_Full_Video | `01_Creacion_Contenidos/` | ✅ Integrada |
+| Title_Generator | `01_Creacion_Contenidos/` | ✅ Integrada |
+| Thumbnail_Prompter | `01_Creacion_Contenidos/` | ✅ Integrada |
+| Content_Ideation | `01_Creacion_Contenidos/` | ✅ Integrada |
+
+---
+
+## 🚀 Uso
+
+### Ejecutar Workflow
+```bash
+python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py run <nombre>
+```
+
+### Ver Workflows Disponibles
+```bash
+python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py list
+```
+
+---
+
+## 📋 Reglas de Organización
+
+1. **Workflows validados → se integran al OS**
+2. **Testing en 06_Testing_Youtube** — no contaminar el OS
+3. **Outputs → 02_Outputs/** — mantener historial
+4. **Sessions → 03_Sessions/** — registro de pruebas
+
+---
+
+## 🔄 Historial
+
+| Fecha | Cambio |
+|-------|--------|
+| 2026-05-20 | v4.5 — Secuencia corregida, estructura organizada |
+| 2026-05-20 | 06_Testing_Youtube reorganizado en 5 carpetas |
+
+---
+
+*PersonalOS Think Different v4.5 — Workflows Production Ready*
