@@ -1,173 +1,133 @@
-# 05_Archive — Legacy y Repositorios
+# 📦 05_Archive — Think Different PersonalOS v4.5
 
-**Versión:** 7.5
-**Última actualización:** 2026-05-15
-**Estado:** 📦 Legacy
+> **Versión:** 4.5 Consequences
+> **Última actualización:** 2026-05-20
+> **Estado:** ✅ Optimizado a 3 carpetas con subcarpetas enumeradas
 
----
-
-> ⚠️ **AVISO DE CORRECCIÓN:** Secuencia de carpetas 06, 09, 10 tenía duplicados.
-> - `06_Snapshots` → `11_Snapshots` ✅
-> - `09_OpenSpec_Archive` → `12_OpenSpec_Archive` ✅
-> - `10_Legacy_Scripts_Backup_20260420` → `13_Legacy_Scripts_Backup_20260420` ✅
-> - `10_Tasks_Legacy` → `14_Tasks_Legacy` ✅
->
-> 📂 **OIM Consolidated:** Los sitios OIM duplicados en `03_Resultado/` raíz fueron movidos a `09_World_OIM/` (consolidado oficial) y su backup en `15_OIM_Websites_Root/`.
->
-> ⚠️ **DUPLICADOS PENDIENTES:** Los originales (`06_Snapshots`, `09_OpenSpec_Archive`, `10_Legacy_Scripts...`, `10_Tasks_Legacy`) siguen lockeados por apps. Los renombrados (11-14) son los activos. Cuando se desbloqueen, mover a backup legacy.
+Carpeta de legado y archivo muerto del sistema. Todo lo que ya no está activo pero se preserva por razones históricas o de referencia.
 
 ---
 
-## 📂 Estructura (Workspace)
-
-```
-Think_Different/
-├── 00_Winter_is_Coming/    # Estrategia, Backlog y ADN (ESTRATÉGICO)
-├── 01_Personal_Os/         # OS completo (Core, Operations, Archive, etc.)
-├── 02_Playground/           # Laboratorio de Pruebas y Experimentos
-├── 03_Resultado/           # Resultados de proyectos
-└── AGENTS.md              # Configuración de agentes
-```
-
----
-
-## 📂 Estructura 05_Archive (Secuencia corregida 01-15)
+## 📁 Estructura Final (4 carpetas principales)
 
 ```
 05_Archive/
-├── 01_Raiz_Archive/                      # Archivos de raíz archivados
-├── 02_Rules_Legacy/                      # Reglas y Pilares antiguos
-├── 03_Docs_Legacy/                       # Documentación legacy
-├── 04_Backups_AutoMejora/                # Backups del sistema de auto-mejora
-├── 05_Planes_Legacy/                     # Planes de acción archivados
-├── 06_Docs_All/                          # Documentos variados
-├── 07_Repos_Gentleman/                   # Repositorios externos (25 repos)
-├── 08_Planes_Estrategicos/               # Planes estratégicos legacy
-├── 09_Legacy_Skills_Archive/             # Archive de skills legacy
-├── 10_Legacy_Revisar/                    # Legacy para revisión
-├── 11_Snapshots/                         # Snapshots del sistema (era 06_Snapshots) ✅
-├── 12_OpenSpec_Archive/                  # Archivo de especificaciones OpenSpec (era 09_OpenSpec_Archive) ✅
-├── 13_Legacy_Scripts_Backup_20260420/   # Scripts de backup legacy (era 10_Legacy_Scripts...) ✅
-├── 14_Tasks_Legacy/                      # Tasks legacy archivadas (era 10_Tasks_Legacy) ✅
-├── 15_OIM_Websites_Root/                 # Backup websites OIM desde 03_Resultado/ raíz
-│   ├── OIM_Website/                      # Versión original
-│   ├── OIM_Website_Backup/               # Backup versión original
-│   ├── OIM_Website_One/                 # Otra versión
-│   ├── Imagenes_Finales/                 # Imágenes del proyecto
-│   └── OIM_Website_v2/                  # ⚠️ PENDIENTE — lockeado, mover manualmente
-└── README.md                             # Este archivo
+├── 00_Backup_Os/              # Backup completo del OS antes de reorganizaciones
+├── 01_Repos_Reference/      # Repos upstream y referencias externas
+├── 02_Legacy_Content/       # Contenido legacy: planes, docs, skills
+├── 03_Backups_Audits/       # Backups, auditorías y tareas legacy
+└── README.md                # Este archivo
 ```
 
-> ⚠️ **Nota de secuencia:** Originalmente había duplicados en 06, 09 y 10. La corrección lógica es:
-> - `06_Snapshots` → `11_Snapshots`
-> - `09_OpenSpec_Archive` → `12_OpenSpec_Archive`
-> - `10_Legacy_Scripts_Backup_20260420` → `13_Legacy_Scripts_Backup_20260420`
-> - `10_Tasks_Legacy` → `14_Tasks_Legacy`
-> Algunos archivos aún tienen lock de sistema y requieren cierre de apps que los tengan abiertos.
+---
+
+## 📂 01_Repos_Reference — Repositorios de Referencia
+
+Repos clonados de upstream para referencia y consulta.
+
+```
+01_Repos_Reference/
+├── 01_Rules_Legacy/              # Rules antiguas del sistema
+│   └── 02_Pilar_Base_OilBrain.mdc
+├── 02_Repos_Gentleman/           # 25 repos upstream
+│   ├── 01_Claude_Ads/
+│   ├── 02_Agent_Teams_Lite/
+│   ├── 03_Claude_Code_Learn/
+│   ├── 04_Compound_Engineering_Plugin/
+│   ├── 05_Curso_Ai_Devs/
+│   └── [20+ más repos...]
+└── 03_OpenSpec_Archive/          # Archivos openspec
+    ├── openspec/
+    └── Plan_Video_Intel_Implementation_2026-04-03.md
+```
+
+### Principales Repos Referenciados
+
+| Repo | Stars | Propósito |
+|------|-------|-----------|
+| engram | 2.7k | Memoria persistente |
+| gentle-ai | 2.2k | AI Gentle Stack |
+| taste-skill | 3.9k | Diseño premium UI/UX |
+| Gentleman.Dots | 1.7k | LazyVim config |
 
 ---
 
-## 🎯 Propósito
+## 📂 02_Legacy_Content — Contenido Legacy
 
-Almacena **archivos obsoletos, repositorios de referencia, y backups**. Es el "baúl" del sistema.
+Contenido antiguo organizado: planes, documentación y skills.
 
-> ⚠️ **Nota:** Los repos en `07_Repos_Gentleman/` son **copias locales**, NO submodules (excepto 06, 09, 17).
-
----
-
-## 📚 Repositorios Clonados (25 repos)
-
-| Repo                                         | Fuente                                         | Propósito                                         | Estado               |
-|---------------------------------------------|-----------------------------------------------|--------------------------------------------------|---------------------|
-| **engram**                                   | Gentleman-Programming/engram                   | Memoria persistente (v2.10+)                      | ✅ Activo             |
-| **gentle-ai**                                | Gentleman-Programming/gentle-ai                | AI Gentle Stack (v1.21.0)                         | ✅ Activo             |
-| **Gentleman.Dots**                           | Gentleman-Programming/Gentleman.Dots           | Dotfiles + LazyVim config (v2.9.10)               | ✅ Activo             |
-| **gentleman-guardian-angel**                 | Gentleman-Programming/gga                      | Code review AI (v2.8+)                            | ✅ Activo             |
-| **gentleman-skills**                         | Gentleman-Programming/gentleman-skills         | Skills curadas                                    | ✅ Activo             |
-| **taste-skill**                              | Leonxlnx/taste-skill                           | Diseño premium UI/UX (3.9k stars)                 | ✅ Activo             |
-| **agent-teams-lite**                         | Gentleman-Programming/agent-teams              | SDD workflow (v4.0.0+)                            | ⚠️ Archive           |
-| **personal-os-main**                         | Gentleman-Programming/personal-os              | Original del fork                                 | ✅ Activo             |
-| **n8n-skills-main**                          | N8N skills                                     | Skills n8n                                        | ✅ Activo             |
-| **compound-engineering-plugin**              | EveryInc/compound-engineering                  | Compound Engineering                              | ✅ Activo             |
-| **digitalgarden**                            | Obsidian Digital Garden                        | Publicación notas                                 | ✅ Activo             |
-| **docling**                                  | Docling                                        | Document processing                               | ✅ Activo             |
-| **curso-ai-devs**                            | Curso AI Devs                                  | Curso desarrollo AI                               | ✅ Activo             |
-| **google-workspace-mcp-server**              | Google Workspace MCP                           | GCP integrations                                  | ✅ Activo             |
-| **pi-vs-claude-code**                        | PI vs Claude Code                              | Comparativa                                       | ✅ Activo             |
-| **claude-ads**                               | AgriciDaniel/claude-ads                        | Claude Ads integration                            | ✅ Activo             |
-| **claude-code-learn**                        | Gentleman-Programming/claude-code              | Learning resources                                | ✅ Activo             |
-| **qmd**                                      | QMD project                                    | Quick notes terminal + MCP server                 | ✅ Activo             |
-| **frontend-slides**                          | zarazhangrui/frontend-slides                   | Presentaciones HTML (v2.0.0)                      | ✅ Submodule          |
-| **Kit Profesional Alto Impacto 2026**        | Curso Premium                                  | Formación profesional                             | ✅ Activo             |
-| **sub-agent-statusline**                     | Joaquinvesapa/sub-agent-statusline             | OpenCode sidebar agents                           | ✅ Activo             |
-| **tubemaster**                               | Gentleman-Programming/tubemaster               | YouTube operations                                | ✅ Activo             |
-| **design-system**                            | robonuggets/design-system                      | Design system components                          | ✅ Submodule          |
-| **open-design**                              | nexu-io/open-design                            | Open design system                                | ✅ Submodule          |
+```
+02_Legacy_Content/
+├── 01_Planes_Legacy/              # Planes antiguos
+│   └── 2026-03-30/
+├── 02_Docs_All/                   # Documentación legacy
+│   ├── 01_Legacy_Skills/
+│   ├── 02_Legacy_Revisar/
+│   └── Audit_Reports_2026/
+├── 03_Planes_Estrategicos/        # Planes estratégicos
+│   ├── 00_Reporte_Fusion_O4_Engine.md
+│   ├── 13_Session_Summary_2026-05-13.md
+│   └── [planes...]
+├── 04_Legacy_Skills_Archive/      # Archive de skills legacy
+│   └── SKILL.md
+└── 05_Docs_Legacy/               # Docs adicionales
+    ├── 01_Planes/
+    ├── 02_Auditorias/
+    └── 03_Legacy_All/
+```
 
 ---
 
-## ⭐ Repos Principales
+## 📂 03_Backups_Audits — Backups y Auditorías
 
-| Repositorio                              | Stars            | Versión            | Propósito                                         |
-|-----------------------------------------|-----------------|-------------------|--------------------------------------------------|
-| **engram**                               | 2.7k ⭐           | v2.10+             | Memoria persistente (backbone OS)                 |
-| **gentle-ai**                            | 2.2k ⭐           | v1.21.0            | AI Gentle Stack (reemplaza ATL)                   |
-| **taste-skill**                          | 3.9k ⭐           | —                  | Diseño premium UI/UX de alto impacto              |
-| **Gentleman.Dots**                       | 1.7k ⭐           | v2.9.10            | Configuración LazyVim premium                     |
-| **gentleman-guardian-angel**             | 961 ⭐            | v2.8+              | GGA Code Review automático                        |
-| **frontend-slides**                      | —                | v2.0.0             | Presentaciones HTML                               |
-| **compound-engineering-plugin**          | —                | v2.55.0            | CE Philosophy — hacer cada tarea más fácil        |
-| **tubemaster**                           | 9 ⭐              | v0.1.1             | YouTube Operations (Web+CLI+MCP+API)              |
+Backups, snapshots y reportes de auditoría del sistema.
 
----
-
-## 📦 Estado de Clonación Detallado
-
-| #         | Repositorio                          | Clonado          | Ubicación                                         | Submodule         |
-|----------|-------------------------------------|-----------------|--------------------------------------------------|------------------|
-| 01        | Claude_Ads                           | ✅                | `01_Claude_Ads/`                                  | —                 |
-| 02        | Agent_Teams_Lite                     | ✅                | `02_Agent_Teams_Lite/`                            | —                 |
-| 03        | Claude_Code_Learn                    | ✅                | `03_Claude_Code_Learn/`                           | —                 |
-| 04        | Compound_Engineering_Plugin          | ✅                | `04_Compound_Engineering_Plugin/`                 | —                 |
-| 05        | Curso_Ai_Devs                        | ✅                | `05_Curso_Ai_Devs/`                               | —                 |
-| 06        | Design_System                        | ✅                | `06_Design_System/`                               | ✅                 |
-| 07        | Digital_Garden                       | ✅                | `07_Digital_Garden/`                              | —                 |
-| 08        | Engram                               | ✅                | `08_Engram/`                                      | —                 |
-| 09        | Frontend_Slides                      | ✅                | `09_Frontend_Slides/`                             | ✅                 |
-| 10        | Gentle_AI                            | ✅                | `10_Gentle_AI/`                                   | —                 |
-| 11        | Gentleman_Dots                       | ✅                | `11_Gentleman_Dots/`                              | —                 |
-| 12        | Gentleman_Guardian_Angel             | ✅                | `12_Gentleman_Guardian_Angel/`                    | —                 |
-| 13        | Gentleman_Skills                     | ✅                | `13_Gentleman_Skills/`                            | —                 |
-| 14        | Google_Workspace_Mcp_Server          | ✅                | `14_Google_Workspace_Mcp_Server/`                 | —                 |
-| 15        | Kit_Profesional_Alto_Impacto         | ✅                | `15_Kit_Profesional_Alto_Impacto_2026/`           | —                 |
-| 16        | N8n_Skills                           | ✅                | `16_N8n_Skills/`                                  | —                 |
-| 17        | Open_Design                          | ✅                | `17_Open_Design/`                                 | ✅                 |
-| 18        | Personal_Os_Main                     | ✅                | `18_Personal_Os_Main/`                            | —                 |
-| 19        | Pi_Vs_Claude_Code                    | ✅                | `19_Pi_Vs_Claude_Code/`                           | —                 |
-| 20        | Qmd                                  | ✅                | `20_Qmd/` + global `qmd` installed                | —                 |
-| 21        | Sub_Agent_Statusline                 | ✅                | `21_Sub_Agent_Statusline/`                        | —                 |
-| 22        | Taste_Skill                          | ✅                | `22_Taste_Skill/`                                 | —                 |
-| 23        | Tubemaster                           | ✅                | `23_Tubemaster/`                                  | —                 |
+```
+03_Backups_Audits/
+├── 01_Raiz_Archive/               # Archive de raíz
+│   ├── LICENSE
+│   ├── setup.sh
+│   └── System_Tree_Audit_v6.1.txt
+├── 02_Auditorias/                  # Reportes de auditoría
+│   ├── AUDIT_REPORT_v4.1.md
+│   └── AUDITORIA_INTEGRAL_2026-05-20.md
+├── 03_Backups_AutoMejora/          # Backups del motor de auto-mejora
+│   ├── 04_Playwright_QA_20260330_014011.py
+│   ├── 04_Playwright_QA_20260330_020828.py
+│   └── [más backups...]
+├── 04_Legacy_Revisar/              # Stuff para revisar
+│   ├── 02_Backup_Agents/
+│   ├── 03_Backup_Workflows/
+│   ├── 04_Plans_Completed/
+│   ├── OIM_Website_Backup_copy/
+│   └── OIM_Website_Backup_copy_2/
+├── 05_Legacy_Scripts_Backup/       # Scripts backup (duplicado de 04)
+│   └── [mismos contenidos]
+├── 06_Tasks_Legacy/               # Tareas legacy
+│   ├── 03_P1_Verificar_MCPs.md
+│   ├── 06_P1_Validar_Numeracion_Sistema.md
+│   └── [más tareas...]
+└── 07_Snapshots/                   # Snapshots del sistema
+    ├── 2026-04-25_pre_consequences_3.0/
+    └── Reports_v4_0/
+```
 
 ---
 
-## 🔗 Submodules Activos (3)
+## 📋 Reglas de Archive
 
-| Repositorio                   | Commit            | Propósito                        |
-|------------------------------|------------------|---------------------------------|
-| `06_Design_System`            | `74b456c`         | Design system components         |
-| `09_Frontend_Slides`          | `8dca834`         | Presentaciones HTML              |
-| `17_Open_Design`              | `7549883`         | Open design system               |
+1. **No modificar** — El archive es solo lectura histórica
+2. **Antes de archivar** — Verificar que el contenido no esté activo en el OS
+3. **4 carpetas máximo** — Si necesitás más, revisar si realmente todo merece estar archivado
 
 ---
 
-## 🔗 Recursos Adicionales
+## 🔄 Historial
 
-- [Repos README](./07_Repos_Gentleman/README.md) — Índice completo de repos
-- `10_Legacy_Revisar/OIM_Website_Backup_copy/` — Backup web OIM
-- `10_Legacy_Revisar/OIM_Website_Backup_copy_2/` — Backup web OIM #2
-- `03_Resultado/OIM_Website_v2/` — Website OIM (submodule)
+| Fecha | Cambio |
+|-------|--------|
+| 2026-05-20 | **v4.5** — Reorganizado de 15 carpetas a 4 + subcarpetas enumeradas 01-07 |
 
 ---
 
-_Think Different PersonalOS v7.5 — Archivo activo_
+*Archive v4.5 — Mantener por razones históricas, no por funcionalidad activa.*
