@@ -1,0 +1,111 @@
+{
+  "name": "Generar Anuncios Nano Banana",
+  "nodes": [
+    {
+      "parameters": {
+        "resource": "image",
+        "operation": "edit",
+        "modelId": {
+          "__rl": true,
+          "value": "models/gemini-3-pro-image-preview",
+          "mode": "list",
+          "cachedResultName": "models/gemini-3-pro-image-preview (Nano Banana Pro)"
+        },
+        "prompt": "={{ $json.body.instructions }}",
+        "images": {
+          "values": [
+            {
+              "binaryPropertyName": "character_image"
+            },
+            {
+              "binaryPropertyName": "product_image"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.googleGemini",
+      "typeVersion": 1.1,
+      "position": [
+        304,
+        32
+      ],
+      "id": "17b3685f-4422-4cfe-b07d-14298741be7d",
+      "name": "Edit an image",
+      "credentials": {
+        "googlePalmApi": {
+          "id": "8n6l0eyUwgHnCdvg",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "2e085256-71a9-456a-8304-db9c9288ae26",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        96,
+        32
+      ],
+      "id": "beb7417f-7142-4826-9a83-6981c778e938",
+      "name": "Webhook",
+      "webhookId": "2e085256-71a9-456a-8304-db9c9288ae26"
+    },
+    {
+      "parameters": {
+        "respondWith": "binary",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        512,
+        32
+      ],
+      "id": "ed30a719-a179-4861-921a-0dbc48a59849",
+      "name": "Respond to Webhook"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Edit an image": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Edit an image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": false
+  },
+  "versionId": "cb675ed9-9a16-443a-848f-2c5bef2c046e",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "cd45752616b99f4db905fdbf77b15f941dcae0df3c6a48b8fdb10fb443542c37"
+  },
+  "id": "jQGBrQBOxQBRWzsi",
+  "tags": []
+}

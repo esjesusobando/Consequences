@@ -1,0 +1,61 @@
+Este workflow de n8n se llama "Consultar Leads" y está pensado para ser consumido en modo lectura desde una aplicación externa (por ejemplo, un dashboard en Lovable) mediante la integración MCP.
+
+Funcionalidad:
+- Expone un endpoint HTTP (método GET) que devuelve la lista completa de leads almacenados en la base de datos de la inmobiliaria.
+- No modifica datos: es SOLO lectura.
+- Está diseñado para alimentar dashboards y vistas de análisis (gráficas, filtros, tablas, métricas).
+
+Entrada:
+- El workflow se invoca mediante una petición HTTP GET.
+- No requiere parámetros obligatorios.
+- Opcionalmente, en el futuro podría aceptar parámetros de filtrado, pero en la versión actual devuelve todos los leads.
+
+Salida:
+- Devuelve un objeto JSON con todos los leads.
+- La estructura de respuesta es:
+
+{
+  "leads": [
+    {
+      "Nombre": string,
+      "Email": string,
+      "Telefono": string,
+      "QueQuieresHacer": string,
+      "TipoInmueble": string,
+      "ZonaBarrio": string,
+      "Presupuesto": string,
+      "Plazo": string,
+      "ComoNosHasConocido": string,
+      "Mensaje": string,
+      "ResumenIA": string,
+      "TipoClienteIA": string,
+      "LeadScoreIA": number,
+      "UrgenciaIA": string,
+      "SentimientoIA": string,
+      "FechaHora": string,
+      "EstadoLeadNumero": number,
+      "EstadoLead": string
+    },
+    ...
+  ]
+}
+
+Significado de algunos campos clave:
+- "LeadScoreIA": número entero de 0 a 100 que representa el nivel de interés / probabilidad de cierre.
+- "UrgenciaIA": una de "Alta", "Media", "Baja".
+- "SentimientoIA": una de "Muy interesado", "Interesado", "Solo curioseando", "Molesto", "Escéptico".
+- "EstadoLeadNumero": código numérico del estado del lead:
+    0 = Nuevo
+    1 = Contactado
+    2 = En seguimiento
+    3 = En negociación
+    4 = Cerrado ganado
+    5 = Cerrado perdido
+- "EstadoLead": estado textual del lead ("Nuevo", "Contactado", "En seguimiento", "En negociación", "Cerrado ganado", "Cerrado perdido").
+
+Uso previsto:
+- Una aplicación (como Lovable) puede usar la integración MCP para llamar al workflow "Consultar Leads".
+- Con la respuesta, puede construir un dashboard de gestión de leads con:
+  - Listados de leads
+  - Filtros por estado, urgencia, sentimiento, tipo de cliente, canal, etc.
+  - Gráficas y métricas agregadas.

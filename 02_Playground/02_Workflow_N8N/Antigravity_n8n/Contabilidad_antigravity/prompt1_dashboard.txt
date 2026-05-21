@@ -1,0 +1,113 @@
+Crea una aplicación web de dashboard financiero de una agencia de IA con las siguientes características:
+
+TECNOLOGÍA Y ESTRUCTURA
+- Usa React + TypeScript en una sola página (SPA).
+- Usa un diseño responsive con layout de dashboard: barra superior con título y filtros, zona central con tarjetas de métricas (KPIs) y zona inferior con gráficos y tabla de detalle.
+- El idioma de toda la interfaz debe ser ESPAÑOL.
+
+FUENTE DE DATOS
+- Al cargar la aplicación, realiza una petición GET al webhook:
+  https://n8n.dominia.site/webhook/44daf343-08e3-4a0b-8c8f-cd87c1554113
+- La respuesta es un array JSON de objetos con esta estructura (nombres EXACTOS de las claves):
+  - row_number
+  - "Fecha" (string, formato dd/MM/yyyy, por ejemplo "03/11/2025")
+  - "Tipo" (string: "Ingreso" o "Gasto")
+  - "Categoría" (string, por ejemplo: "Servicios", "YouTube", "Infraestructura", "APIs IA", etc.)
+  - "Canal" (string, por ejemplo: "Cliente A", "YouTube", "Google Cloud", etc.)
+  - "#" (string, referencia de factura, p. ej. "F-2024-001")
+  - "Importe (€)" (string numérico, ingresos positivos y gastos negativos, por ejemplo "8200.00" o "-780.00")
+  - "Estado de Pago" (string: "Pagado", "Pendiente", etc.)
+  - "Descripción Adicional" (string)
+- Tras recibir los datos, normaliza cada registro a un objeto interno con claves más cómodas:
+  {
+    rowNumber: number;
+    fecha: Date;              // parseando "Fecha" (dd/MM/yyyy)
+    tipo: "Ingreso" | "Gasto";
+    categoria: string;
+    canal: string;
+    referencia: string;       // viene de "#"
+    importe: number;          // parseFloat de "Importe (€)"
+    estadoPago: string;
+    descripcion: string;      // "Descripción Adicional"
+  }
+- Añade estado de carga (“Cargando datos…”) y manejo de error (“Error al cargar datos del servidor”).
+
+DISEÑO / UI
+- Tema oscuro, moderno y profesional:
+  - Fondo principal muy oscuro.
+  - Tarjetas con bordes redondeados, sombras suaves y separaciones claras.
+  - Colores de acento en tonos azul / morado para resaltar métricas y gráficos.
+- Tipografía limpia y legible; destaca títulos de secciones y KPIs.
+- Usa un sistema de grid para alinear bien tarjetas, gráficos y tabla.
+
+LAYOUT DEL DASHBOARD
+1) CABECERA SUPERIOR
+   - Título: “Dashboard Financiero Agencia IA”.
+   - Subtítulo pequeño con un resumen: “Control de ingresos, gastos y métricas clave”.
+   - A la derecha, un pequeño indicador del rango de fechas actualmente filtrado.
+
+2) PANEL DE FILTROS (SIEMPRE VISIBLE)
+   Coloca los filtros en una barra horizontal o un panel lateral:
+   - Selector de rango de fechas (desde / hasta) basado en el campo `fecha`.
+   - Filtro por Tipo: dropdown con opciones [Todos, Ingreso, Gasto].
+   - Filtro por Categoría: dropdown multi-selección con las categorías presentes en los datos.
+   - Filtro por Canal: dropdown multi-selección con los canales presentes.
+   - Filtro por Estado de Pago: [Todos, Pagado, Pendiente].
+   - Campo de búsqueda por texto libre que filtre por “Descripción Adicional” y por “#”.
+   - Todos los filtros deben aplicarse de forma combinada y recalcular KPIs, gráficos y tabla.
+
+3) KPIs PRINCIPALES (TARJETAS EN LA PARTE SUPERIOR)
+   Muestra al menos 4 tarjetas de métricas, todas actualizadas según los filtros:
+   - “Ingresos Totales”: suma de `importe` donde tipo === "Ingreso". Formatea en euros.
+   - “Gastos Totales”: suma ABSOLUTA de `importe` donde tipo === "Gasto" (los gastos vienen como números negativos, pero muestra el valor positivo).
+   - “Beneficio Neto”: ingresos totales + suma de gastos (tendrán signo negativo). Muestra en verde si es positivo, rojo si es negativo.
+   - “Categoría más rentable”: categoría con mayor beneficio neto (suma de importes por categoría). Muestra el nombre de la categoría y el importe.
+   Opcionalmente añade más KPIs, como:
+   - “Número de operaciones” (total de registros filtrados).
+   - “Ticket medio por servicio” (promedio de importes de categoría = ‘Servicios’).
+
+4) GRÁFICOS
+   Genera varios gráficos interactivos, todos sincronizados con los filtros:
+
+   a) Gráfico de líneas de evolución temporal
+      - Eje X: fecha (orden cronológico).
+      - Eje Y: importe en euros.
+      - Dos líneas:
+        - Línea de “Ingresos” (solo registros tipo Ingreso).
+        - Línea de “Gastos” (usar valor absoluto para que se vea la magnitud de los gastos).
+      - Muestra tooltip al pasar el ratón por un punto con detalle: fecha, tipo, importe, categoría, canal.
+
+   b) Gráfico de barras por categoría
+      - Eje X: categorías.
+      - Eje Y: importe total.
+      - Para cada categoría, muestra dos barras: Ingresos y Gastos (gastos en valor absoluto).
+      - Permite ver rápidamente qué categorías aportan más ingresos y cuáles consumen más gastos.
+
+   c) Gráfico de donut / pastel de distribución de ingresos por categoría
+      - Solo considera registros de tipo Ingreso.
+      - Cada porción representa el porcentaje de ingresos de una categoría.
+      - Etiquetas o tooltip con: categoría, importe total y porcentaje.
+
+   d) Gráfico por canal (opcional pero recomendable)
+      - Barras horizontales con los ingresos totales por canal (Cliente A, Cliente B, YouTube, etc.).
+
+5) TABLA DETALLADA
+   - Tabla debajo de los gráficos con todos los registros filtrados.
+   - Columnas: Fecha, Tipo, Categoría, Canal, #, Importe (€), Estado de Pago, Descripción Adicional.
+   - Características:
+     - Paginación.
+     - Ordenar por cualquier columna (por defecto ordenar Fecha descendente).
+     - Búsqueda rápida (sincronizada con el filtro de texto libre).
+     - Resaltar visualmente:
+       - Ingresos en verde.
+       - Gastos en rojo.
+       - Estado de Pago “Pendiente” con una etiqueta/ badge llamativo.
+
+COMPORTAMIENTO GENERAL
+- Todos los KPIs, gráficos y la tabla deben reaccionar dinámicamente a los filtros.
+- Mantén el código organizado en componentes reutilizables: por ejemplo, `KpiCard`, `FiltersBar`, `LineChart`, `CategoryBarChart`, `DonutChart`, `TransactionsTable`.
+- Asegúrate de que las fechas se muestren en formato dd/MM/yyyy y los importes formateados como euros con separador de miles.
+- Implementa un diseño totalmente responsive: que se vea bien tanto en pantallas grandes como en portátiles.
+
+Genera todo el código necesario para esta aplicación de dashboard con este comportamiento y este diseño oscuro, moderno y profesional.
+

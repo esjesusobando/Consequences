@@ -1,0 +1,94 @@
+{
+  "name": "Consultar Leads",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "b470e00a-0823-48e0-988f-a9763171dee8",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -272,
+        -48
+      ],
+      "id": "f1409ed9-4d10-41a9-ae18-693a73da40f2",
+      "name": "Webhook",
+      "webhookId": "b470e00a-0823-48e0-988f-a9763171dee8"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "xiRBtq4xSpuu9180",
+          "mode": "list",
+          "cachedResultName": "Leads Inmobiliaria",
+          "cachedResultUrl": "/projects/1BQl9jGuctDBYcMq/datatables/xiRBtq4xSpuu9180"
+        },
+        "returnAll": true
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        -48,
+        -48
+      ],
+      "id": "4354a955-912f-4dca-901f-5044e7aa5482",
+      "name": "Get row(s)"
+    },
+    {
+      "parameters": {
+        "respondWith": "allIncomingItems",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        176,
+        -48
+      ],
+      "id": "7086d143-f899-4cca-a513-20896bb2b508",
+      "name": "Respond to Webhook"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Get row(s)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s)": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "timeSavedMode": "fixed",
+    "callerPolicy": "workflowsFromSameOwner",
+    "executionTimeout": -1,
+    "availableInMCP": true
+  },
+  "versionId": "e0ace2db-710f-4509-97fc-c6b48214af2b",
+  "meta": {
+    "instanceId": "cd45752616b99f4db905fdbf77b15f941dcae0df3c6a48b8fdb10fb443542c37"
+  },
+  "id": "mCPJahHEgLpBokli",
+  "tags": []
+}
