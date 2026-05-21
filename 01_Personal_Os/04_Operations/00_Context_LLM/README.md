@@ -1,7 +1,7 @@
-# 00_Context_LLM — Memoria LLM y Contexto Persistente
+# 00_Context_LLM — Memoria LLM y Contexto Persistente v4.5
 
-> **Versión:** v4.1
-> **Última actualización:** 2026-05-20
+> **Versión:** v4.5 Consequences
+> **Última actualización:** 2026-05-21
 
 ---
 

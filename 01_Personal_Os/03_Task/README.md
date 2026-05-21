@@ -1,7 +1,7 @@
-# 03_Tasks — Sistema de Tareas
+# 03_Tasks — Sistema de Tareas PersonalOS v4.5
 
-**Versión:** 6.1
-**Última actualización:** 2026-04-14
+**Versión:** 4.5 Consequences
+**Última actualización:** 2026-05-21
 **Estado:** ✅ Activo
 
 ---

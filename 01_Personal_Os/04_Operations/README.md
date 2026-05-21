@@ -1,12 +1,12 @@
-# 04_Operations — Memoria y Procesos
+# 04_Operations — Motor Operativo PersonalOS v4.5
 
-**Versión:** 7.0
-**Última actualización:** 2026-04-26
-**Estado:** ✅ Activo (v3.0 Consequences)
+**Versión:** 4.5 Consequences
+**Última actualización:** 2026-05-21
+**Estado:** ✅ Activo (v4.5 Consequences)
 
 ---
 
-## 📂 Estructura (Workspace) — v3.0 Consequences
+## 📂 Estructura (Workspace) — v4.5 Consequences
 
 ```
 Think_Different/

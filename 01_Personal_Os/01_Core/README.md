@@ -1,12 +1,12 @@
-# 01_Core — Think Different PersonalOS v3.1 Consequences
+# 01_Core — Think Different PersonalOS v4.5 Consequences
 
-> **Versión:** v3.1 Consequences — JARVIS 3.1 Integrated
-> **Última actualización:** 2026-04-29
+> **Versión:** v4.5 Consequences — JARVIS 4.5 Integrated
+> **Última actualización:** 2026-05-21
 > **Estado:** ✅ Activo | 💾 FUENTE DE VERDAD
 
 ---
 
-## 📂 Estructura Principal v3.1
+## 📂 Estructura Principal v4.5
 
 ```
 Think_Different/
