@@ -5,7 +5,7 @@ Centralized reporting hub for Think_Different operations.
 ## Directory Structure
 
 ```
-10_Reports/
+07_Reports/
 ├── README.md                    # This file
 ├── 00_Templates/                # Report templates and configurations
 └── 01_Generated/                # Auto-generated reports (gitignored)
@@ -120,10 +120,10 @@ Run all HUBs weekly to maintain system health visibility:
 ```bash
 # Add to crontab: Sunday 9am
 0 9 * * 0 cd /path/to/01_Personal_Os/04_Operations/03_Scripts_Os && \
-  python 18_Telemetry_Hub.py --dashboard >> ../../10_Reports/01_Generated/telemetry_weekly.txt && \
-  python 17_Watchdog_Hub.py >> ../../10_Reports/01_Generated/health_weekly.txt && \
-  python 15_MCP_Sync_Hub.py --report >> ../../10_Reports/01_Generated/mcp_drift_weekly.txt && \
-  python 01_Auditor_Hub.py estructura >> ../../10_Reports/01_Generated/audit_estructura_weekly.txt
+  python 18_Telemetry_Hub.py --dashboard >> ../../07_Reports/01_Generated/telemetry_weekly.txt && \
+  python 17_Watchdog_Hub.py >> ../../07_Reports/01_Generated/health_weekly.txt && \
+  python 15_MCP_Sync_Hub.py --report >> ../../07_Reports/01_Generated/mcp_drift_weekly.txt && \
+  python 01_Auditor_Hub.py estructura >> ../../07_Reports/01_Generated/audit_estructura_weekly.txt
 ```
 
 ### Post-Session (After Major Changes)

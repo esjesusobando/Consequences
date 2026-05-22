@@ -1,8 +1,8 @@
-# INVENTARIO CORE — PersonalOS v3.1 Consequences
+# INVENTARIO CORE — PersonalOS v4.7 Consequences
 
-> **Fecha:** 2026-04-28
+> **Fecha:** 2026-05-22
 > **Path:** `01_Personal_Os/01_Core/`
-> **Versión:** v3.1 Consequences — JARVIS 3.1 Integrated
+> **Versión:** v4.7 Consequences — Boot Protocol强化, Dependency Modernization
 > **Estado:** ✅ PURE GREEN
 
 ---
@@ -12,19 +12,20 @@
 ```
 01_Core/
 ├── README.md                     ← Índice central
-├── INVENTARIO_CORE.md           ← Este archivo
-├── 00_Comandos_Workflows.md     ← Comandos y HUBs (v3.1)
+├── INVENTARIO_CORE.md           ← Este archivo (v4.7)
+├── 00_Comandos_Workflows.md     ← Comandos y HUBs
 ├── 01_Inventario_Total.md       ← Inventario completo del OS
 ├── 02_Dream_Team.md             ← Estructura del equipo
 ├── Requirements.txt              ← Dependencias Python
-├── 00_Workflows_Os/            ← 5 categorías de workflows (27+ archivos)
-├── 01_Rules/                   ← 11 archivos .mdc (00-10)
+├── 00_Workflows_Os/            ← 29 workflows (7 categorías)
+├── 01_Rules/                   ← 12 archivos .mdc (00-11)
 └── 02_Tools/
     ├── README.md
-    ├── 01_Agents/             ← 52+ agents (Dream Team + Specialists + Growth)
-    ├── 02_Skills/             ← 299 skills (11 áreas activas)
+    ├── 01_Agents/             ← 82 agents (Dream + Specialists + Individuales)
+    ├── 02_Skills/             ← 393 skills (12 áreas activas)
     ├── 03_Mcp/                ← MCP servers (backup de config)
-    ├── 05_Hooks/              ← Hooks calidad (Pre/Post/Lifecycle/Sound)
+    ├── 04_Integrations/       ← Fireflies, Granola
+    ├── 05_Hooks/              ← 10 hooks (6 fases)
     ├── 06_Plugins/            ← Plugins del OS
     ├── 07_Server/             ← Engram server
     ├── 08_Evals/              ← Evaluaciones
@@ -33,141 +34,153 @@
 
 ---
 
-## WORKFLOWS — 27+ archivos en 5 categorías
+## WORKFLOWS — 29 archivos en 7 categorías
 
-### 01_Personal_Os — Ritmos Core (11 workflows)
+### 00_Learning_Always — Continuous Learning
 
-| #                        | Workflow                                     | Función                                         |
-|-------------------------|---------------------------------------------|------------------------------------------------|
-| 01                       | Morning_Standup.md                           | Planificación diaria                            |
-| 02                       | Backlog_Processing.md                        | Triage del inbox                                |
-| 03                       | Content_Generation.md                        | Creación de contenido                           |
-| 04                       | Weekly_Review.md                             | Revisión estratégica semanal                    |
-| 05                       | Ritual_Cierre_Protocol.md                    | Cierre del día                                  |
-| 06                       | Validar_Reglas.md                            | Validación de reglas                            |
-| 07                       | System_Health_Audit.md                       | Check del sistema                               |
-| 08                       | Context_Recovery.md                          | Recuperación de contexto                        |
-| 09                       | AI_Task_Template.md                          | Template de tarea IA                            |
-| 10                       | Classify_Task.md                             | Auto-clasificación                              |
-| 11                       | AGENTS.md                                    | Sistema de agentes                              |
+| # | Workflow | Función |
+|---|----------|---------|
+| 00 | Continuo | Learning permanente del sistema |
 
----
+### 01_Personal_Os — Ritmos Core (4 workflows)
 
-### 02_Marvel — Avengers (8 workflows)
+| # | Workflow | Función |
+|---|----------|---------|
+| 01 | Morning_Standup.md | Planificación diaria |
+| 02 | Backlog_Processing.md | Triage del inbox |
+| 03 | Content_Generation.md | Creación de contenido |
+| 04 | Weekly_Review.md | Revisión estratégica semanal |
 
-| #                        | Workflow                                | Función                            |
-|-------------------------|----------------------------------------|-----------------------------------|
-| 01                       | Iron_Man_Gen.md                         | Bootstrap                          |
-| 02                       | Spider_Brainstorm.md                    | Ideation                           |
-| 03                       | Professor_X_Plan.md                     | Planning                           |
-| 04                       | Vision_Review.md                        | Strategy review                    |
-| 05                       | Thor_Work.md                            | Implementation                     |
-| 06                       | Hulk_Compound.md                        | Compounding                        |
-| 07                       | AntMan_Lfg_Lite.md                      | Lite autonomous                    |
-| 08                       | Doc_Strange_Lfg.md                      | Full autonomous                    |
+### 02_Marvel — Avengers (4+ workflows) 🔥
 
----
+| # | Workflow | Función |
+|---|----------|---------|
+| 01 | Iron_Man_Gen.md | **Bootstrap / Genesis** (boot protocol强化) |
+| 02 | Spider_Brainstorm.md | Ideation |
+| 03 | Thor_Work.md | Implementation |
+| 04 | Hulk_Compound.md | Compounding |
 
 ### 03_Gentleman — UX & Docs (2 workflows)
 
-| #                        | Workflow                                | Función                              |
-|-------------------------|----------------------------------------|-------------------------------------|
-| 10                       | Frontend_Premium.md                     | Design system                        |
-| 20                       | Redaccion_de_Docs.md                    | Technical writing                    |
-
----
+| # | Workflow | Función |
+|---|----------|---------|
+| 10 | Frontend_Premium.md | Design system |
+| 20 | Redaccion_de_Docs.md | Technical writing |
 
 ### 04_Hillary — Life OS (2 workflows)
 
-| #                        | Workflow                              | Función                          |
-|-------------------------|--------------------------------------|---------------------------------|
-| 15                       | Captura_Rapida.md                     | Quick capture                    |
-| 25                       | Hillary_Life_OS.md                    | Full life OS                     |
-
----
+| # | Workflow | Función |
+|---|----------|---------|
+| 15 | Captura_Rapida.md | Quick capture |
+| 25 | Hillary_Life_OS.md | Full life OS |
 
 ### 05_Compound_Engineering — Technical (4 workflows)
 
-| #                        | Workflow                                | Función                         |
-|-------------------------|----------------------------------------|--------------------------------|
-| 16                       | Deep_Work_Session.md                    | Focus work                      |
-| 17                       | Ship_It.md                              | Shipping                        |
-| 18                       | Anthropic_Harness.md                    | Eval harness                    |
-| 19                       | Multi_Agent_Roles.md                    | Multi-agent                     |
+| # | Workflow | Función |
+|---|----------|---------|
+| 16 | Deep_Work_Session.md | Focus work |
+| 17 | Ship_It.md | Shipping |
+| 18 | Anthropic_Harness.md | Eval harness |
+| 19 | Multi_Agent_Roles.md | Multi-agent |
+
+### 06_Youtube_Full_Video — Video Production
+
+| # | Workflow | Función |
+|---|----------|---------|
+| - | Video production pipeline | Full video production |
 
 ---
 
-## RULES — 11 archivos .mdc
+## RULES — 12 archivos .mdc
 
 **Ubicación:** `01_Personal_Os/01_Core/01_Rules/`
 
-| #                        | Rule                                        | Propósito                                          |
-|-------------------------|--------------------------------------------|---------------------------------------------------|
-| 00                       | Core_Protocol.mdc                           | Protocolo central del OS                           |
-| 01                       | Pilares_Sistema.mdc                         | 4 pilares del sistema                              |
-| 02                       | Motor_Agent.mdc                             | Motor agentic                                      |
-| 03                       | Protocolos_Ejecucion.mdc                    | Protocolos de ejecución                            |
-| 04                       | Observabilidad.mdc                          | Logging y métricas                                 |
-| 05                       | Reporting.mdc                               | Reglas de reporte                                  |
-| 06                       | Contexto_Gestion.mdc                        | Gestión de contexto                                |
-| 07                       | Docs_Guias.mdc                              | Guías de documentación                             |
-| 08                       | Token_Economy.mdc                           | Optimización de tokens                             |
-| 09                       | Agent_Teams_Protocol.mdc                    | Protocolo multi-agente                             |
-| 10                       | Git_Directions.mdc                          | Flujo y reglas Git ← NUEVO v3.1                    |
+| # | Rule | Propósito |
+|---|------|-----------|
+| 00 | Core_Protocol.mdc | Protocolo central del OS |
+| 01 | Pilares_Sistema.mdc | 4 pilares del sistema |
+| 02 | Motor_Agent.mdc | Motor agentic |
+| 03 | Protocolos_Ejecucion.mdc | Protocolos de ejecución |
+| 04 | Observabilidad.mdc | Logging y métricas |
+| 05 | Reporting.mdc | Reglas de reporte |
+| 06 | Contexto_Gestion.mdc | Gestión de contexto |
+| 07 | Docs_Guias.mdc | Guías de documentación |
+| 08 | Token_Economy.mdc | Optimización de tokens |
+| 09 | Agent_Teams_Protocol.mdc | Protocolo multi-agente |
+| 10 | Git_Directions.mdc | Flujo y reglas Git |
+| 11 | Minimax.mdc | Configuración Minimax |
 
 ---
 
 ## TOOLS — ESTRUCTURA
 
-### 01_Agents (52+ agents)
+### 01_Agents (82 agents) ✅
 
 **Ubicación:** `01_Personal_Os/01_Core/02_Tools/01_Agents/`
 
-| Categoría                                   | Agents                      | Detalles                                                                                                                                                                                       |
-|--------------------------------------------|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Orchestrator**                            | 1                           | `00_Orchestrator.md`                                                                                                                                                                           |
-| **Scope Architect**                         | 1                           | `01_Scope_Rule_Architect.md`                                                                                                                                                                   |
-| **Dream Team**                              | 5                           | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform)                                                                                                                                  |
-| **Specialists Compound**                    | 24                          | `02_Specialists_Compound/` (review, architecture, framework, data, quality, security, research)                                                                                                |
-| **Growth**                                  | N                           | `03_Growth/`                                                                                                                                                                                   |
-| **Contexto**                                | N                           | `04_Contexto/`                                                                                                                                                                                 |
-| **Marca**                                   | N                           | `05_Marca/`                                                                                                                                                                                    |
-| **Plantillas**                              | N                           | `06_Plantillas/`                                                                                                                                                                               |
-| **Individuales**                            | 12                          | TDD, React Test, React Mentor, Security Auditor, Git Workflow Manager, Accessibility, PRD, Design SOP, AIPM Judge, Carousel, Workflow Orchestrator, LFG Autonomous, Hillary                    |
+| Categoría | Agents | Detalles |
+|-----------|---------|-----------|
+| **Orchestrator** | 1 | `00_Orchestrator.md` |
+| **Scope Architect** | 1 | `01_Scope_Rule_Architect.md` |
+| **Dream Team** | 5 | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform) |
+| **Specialists Compound** | 24+ | `02_Specialists_Compound/` (review, architecture, framework, data, quality, security, research) |
+| **Growth** | N | `03_Growth/` |
+| **Contexto** | N | `04_Contexto/` |
+| **Marca** | N | `05_Marca/` |
+| **Plantillas** | N | `06_Plantillas/` |
+| **Individuales** | 12+ | TDD, React Test, React Mentor, Security Auditor, Git Workflow Manager, Accessibility, PRD, Design SOP, AIPM Judge, Carousel, Workflow Orchestrator, LFG Autonomous, Hillary |
 
 ---
 
-### 02_Skills — 11 ÁREAS ACTIVAS (299 skills)
+### 02_Skills — 12 ÁREAS ACTIVAS (393 skills) ✅
 
 **Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
-| Área                                       | Propósito                                                       |
-|-------------------------------------------|----------------------------------------------------------------|
-| 00_Compound_Engineering                    | Core CE — SDD + Reviews                                         |
-| 00_Personal_Os_Stack                       | Stack base del OS + Gcierr                                      |
-| 00_Skill_Auditor                           | Auditoría de skills                                             |
-| 01_Creacion_Contenidos                     | Brand, YouTube, SEO, Carruseles                                 |
-| 02_Diseno_Ui_Ux                            | Product Design, UI/UX, Taste, Minimal                           |
-| 03_Video_Media                             | Video Intel, James Cameron, Remotion, Audio                     |
-| 04_Automatizacion                          | N8N, Firecrawl                                                  |
-| 05_Workflows                               | Agent Teams, PM, Orchestrator                                   |
-| 06_Tools                                   | Skill Creator, Testing, DevOps, Data Analyst                    |
-| 07_Personal_Os                             | Life OS, Hillary, Rituales                                      |
-| 08_Invictus_Web                            | Playwright, Superpowers, Browser Automation                     |
-
-> ℹ️ `09_Legacy_Archive` → archivado en `01_Personal_Os/05_Archive/` (no es área activa)
+| Área | Skills | Descripción |
+|------|--------|-------------|
+| 00_Compound_Engineering | 63 | Core CE — SDD + Reviews |
+| 00_Personal_Os_Stack | 1 | Stack base del OS + Gcierr |
+| 00_Skill_Auditor | 4 | Auditoría de skills |
+| 01_Creacion_Contenidos | 38 | Brand, YouTube, SEO, Carruseles |
+| 02_Diseno_Ui_Ux | 23 | Product Design, UI/UX, Taste, Minimal |
+| 03_Video_Media | 6 | Video Intel, James Cameron |
+| 04_Automatizacion | 21 | N8N, Firecrawl, GWS Client |
+| 05_Workflows | 33 | Agent Teams, PM, Orchestrator |
+| 06_Tools | 93 | Skill Creator, Testing, DevOps, Data Analyst |
+| 07_Personal_Os | 29 | Life OS, Hillary, Rituales |
+| 08_Invictus_Web | 14 | Playwright, Superpowers, Browser Automation |
+| 09_Claude_Ads | 20 | Claude Ads & Promoted Content |
 
 ---
 
-### Personal Life OS — 07_Personal_Os/
+### 03_Mcp — MCPs (36 Claude / 36 OpenCode)
 
-| Skill                              | Trigger                                      | Función                                  |
-|-----------------------------------|---------------------------------------------|-----------------------------------------|
-| Quick Capture                      | "capture", "quick add"                       | Captura de ideas                         |
-| Plan My Day                        | "plan my day", "plan día"                    | Planificación diaria                     |
-| Daily Notes                        | "daily notes", "log this"                    | Log de actividades                       |
-| Recording Mode                     | "record", "transcribe"                       | Transcripción                            |
-| Returns Tracker                    | "create skill from"                          | Detección de patrones                    |
+| MCP | Función |
+|-----|---------|
+| engram | Memory persistente |
+| brave-search, exa, stackoverflow | Búsqueda |
+| Notion, mcp-obsidian, obsidian-api | Notas |
+| Playwright, chrome-devtools, eagle-mcp | Browser |
+| context7, zai-mcp-server, github | AI & Code |
+| supabase, Amplitude, supadata | Data |
+| n8n-mcp, Linear | Workflow |
+| fireflies, google-workspace | Communication |
+| excalidraw-yctimlin, pencil | Design |
+| docker, filesystem | DevOps |
+| vercel, recall, TestSprite | Deploy |
+
+---
+
+### 05_Hooks — 10 hooks (6 fases)
+
+| Fase | Hooks |
+|------|-------|
+| Pre_Tool | 2 |
+| Post_Tool | 2 |
+| Lifecycle | 2 |
+| Sound | 1 |
+| Harness | 2 |
+| Post_Hulk | 1 |
 
 ---
 
@@ -180,7 +193,7 @@
 │                                                             │
 │  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐  │
 │  │   Workflows  │───▶│    Rules     │───▶│    Tools     │  │
-│  │  (27+ files) │    │  (11 .mdc)   │    │ (299 skills) │  │
+│  │  (29 files)  │    │  (12 .mdc)   │    │ (393 skills) │  │
 │  └──────────────┘    └──────────────┘    └──────────────┘  │
 │         │                   │                   │          │
 │         │                   │                   │          │
@@ -188,9 +201,15 @@
 │  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐  │
 │  │   Personal   │    │  Compound    │    │   Hillary    │  │
 │  │     OS       │    │  Engineering │    │   (Tasks)    │  │
-│  │  (11 wf)     │    │  (52+ agents)│    │  (Life OS)   │  │
+│  │  (4 wf)      │    │  (82 agents)│    │  (Life OS)   │  │
 │  └──────────────┘    └──────────────┘    └──────────────┘  │
 │                                                             │
+│  ┌──────────────────────────────────────────────────────┐  │
+│  │            🔥 BOOT PROTOCOL — IRON MAN GENESIS      │  │
+│  │  Leer AGENTS → GOALS → BACKLOG → Rules → Iron_Man   │  │
+│  │  → engram_mem_context → Process Notes → Tasks s/b   │  │
+│  │  ⚠️ Sin lectura completa, NO hay respuesta           │  │
+│  └──────────────────────────────────────────────────────┘  │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -198,34 +217,52 @@
 
 ## INTEGRACIÓN CON OTRAS METODOLOGÍAS
 
-| Metodología                             | Conexión en 01_Core                                                                           |
-|----------------------------------------|----------------------------------------------------------------------------------------------|
-| Gentleman                               | `03_Gentleman/` workflows, `gentleman-*` skills                                               |
-| Compound Engineering                    | `05_Compound_Engineering/` + `02_Tools/01_Agents/02_Specialists_Compound/`                    |
-| Hillary                                 | `04_Hillary/` + `03_Task/` (fuera de 01_Core)                                                 |
-| Sistema Recursivo                       | `07_System_Health_Audit.md` en workflows                                                      |
-| Learning Always                         | Integrada en todos los workflows via Engram                                                   |
-| JARVIS 3.1                              | `04_Operations/02_Agent_Teams_Lite/00_Manifest/` (7 manifests)                                |
+| Metodología | Conexión en 01_Core |
+|-------------|---------------------|
+| Gentleman | `03_Gentleman/` workflows, `gentleman-*` skills |
+| Compound Engineering | `05_Compound_Engineering/` + `02_Tools/01_Agents/02_Specialists_Compound/` |
+| Hillary | `04_Hillary/` + `03_Task/` |
+| Sistema Recursivo | `System_Health_Audit.md` en workflows |
+| Learning Always | Integrada en todos los workflows via Engram |
+| JARVIS 4.5 | `04_Operations/02_Agent_Teams_Lite/00_Manifest/` (7 manifests) |
 
 ---
 
-## RESUMEN 01_Core — v3.1
+## RESUMEN 01_Core — v4.7 Consequences
 
-| Componente                                | Cantidad                      | Delta vs v2.0                             |
-|------------------------------------------|------------------------------|------------------------------------------|
-| Workflows Totales                         | 27+                           | +2                                        |
-| Rules (.mdc)                              | 11                            | +1 (10_Git_Directions)                    |
-| Agents                                    | 52+                           | +17                                       |
-| Agents Dream Team                         | 5                             | =                                         |
-| Agents Specialists                        | 24                            | +1                                        |
-| Skills (áreas activas)                    | 11                            | +2                                        |
-| Skills (count total)                      | 299                           | +199                                      |
-| MCPs Claude Code                          | 35                            | +2                                        |
-| HUBs Scripts                              | 23                            | +9                                        |
-| JARVIS Manifests                          | 7                             | NEW                                       |
-
-**Estado: ✅ PURE GREEN — PersonalOS v3.1 JARVIS Integrated**
+| Componente | Cantidad | Delta vs v3.1 |
+|------------|----------|---------------|
+| Workflows Totales | 29 | +2 |
+| Rules (.mdc) | 12 | +1 (11_Minimax) |
+| Agents | 82 | +30 |
+| Agents Dream Team | 5 | = |
+| Agents Specialists | 24+ | = |
+| Skills (áreas activas) | 12 | +1 |
+| Skills (count total) | 393 | +94 |
+| MCPs Claude Code | 36 | +1 |
+| HUBs Scripts | 31 | +8 |
+| JARVIS Manifests | 7 | = |
+| Hooks | 10 | NEW |
 
 ---
 
-*PersonalOS v3.1 Consequences — PURE GREEN | 2026-04-28*
+## 🔥 BOOT PROTOCOL — IRON MAN GENESIS (v4.7)
+
+Al iniciar sesión, la IA ejecuta EXACTAMENTE:
+
+1. Leer `00_Winter_is_Coming/AGENTS.md`
+2. Leer `00_Winter_is_Coming/GOALS.md`
+3. Leer `00_Winter_is_Coming/BACKLOG.md`
+4. Leer rules con `alwaysApply: true`
+5. Leer `.agent/03_Workflows/02_Marvel/01_Iron_Man_Gen.md`
+6. `engram_mem_context(limit=10)`
+7. Process notes recientes
+8. Tasks status s/b
+9. Reportar contexto
+
+⚠️ **REGLA DE ORO:** Sin lectura completa, NO hay respuesta.
+
+---
+
+*PersonalOS v4.7 Consequences — PURE GREEN | 2026-05-22*
+*Skills: 393 | Agents: 82 | MCPs: 36 | HUBs: 31 | Workflows: 29*
