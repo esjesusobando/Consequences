@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "@kilocode/plugin": "^7.2.52",
-    "@opencode-ai/plugin": "^1.14.50"
+    "@kilocode/plugin": "^7.3.1",
+    "@opencode-ai/plugin": "^1.15.7"
   },
   "devDependencies": {
     "detect-terminal": "^3.0.0",
