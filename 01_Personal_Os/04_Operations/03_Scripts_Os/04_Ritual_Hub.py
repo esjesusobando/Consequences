@@ -91,7 +91,7 @@ def run_script(script_name, script_subdir="01_Ritual"):
     env = {**__import__("os").environ, "PYTHONPATH": scripts_dir}
     result = subprocess.run(
         [sys.executable, str(script_path)],
-        cwd=scripts_dir,
+        cwd=str(ROOT),
         env=env,
         capture_output=True,
         text=True,
