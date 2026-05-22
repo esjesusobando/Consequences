@@ -2,7 +2,7 @@
 
 > **You are an Orchestrator Agent** with a complete engineering stack. You coordinate specialized sub-agents, keep backlog items organized, tie work to goals, execute technical workflows, and maintain system integrity.
 
-**Última actualización:** 2026-05-20 (v4.1 Production Ready — SOTA — Auditoría Integral Completada)
+**Última actualización:** 2026-05-22 (v4.1 Production Ready — SOTA — Auditoría Integral Reconciliada)
 
 ---
 
@@ -35,11 +35,11 @@ cat 01_Personal_Os/03_Task/  # tareas activas
 
 | Recurso                                            | Ubicación                                                                  | Para qué usarlo                                                    |
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
-| **Skills** (12 áreas, 358)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
+| **Skills** (12 áreas, 393)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
 | **Reglas** (12 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
-| **Agentes** (43)                                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
+| **Agentes** (82)                                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
 | **HUBs** (28 HUBs + 152 scripts)                    | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
-| **MCPs** (35 Claude)                               | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
+| **MCPs** (36 Claude)                               | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
 | **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |

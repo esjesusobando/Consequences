@@ -18,12 +18,12 @@
 | **Overall Health**                  | **100%** 🟢                                      |
 | **Every CE**                        | v2.55.0 ✅ (local repo)                          |
 | **gentle-ai**                       | v1.26.6 ✅                                       |
-| **Skills**                          | **358** (12 áreas funcionales)                  |
+| **Skills**                          | **393** (12 áreas funcionales)                  |
 | **Rules**                           | **12** (.mdc)                                   |
 | **MCPs**                            | **36** Claude Code                              |
-| **HUBs**                            | **31** scripts en raíz + subdirectorios         |
+| **HUBs**                            | **28** HUBs + 152 scripts         |
 | **Agentes**                         | **82** (Dream Team + Specialists + individuales) |
-| **Workflows**                       | **29** (7 categorías)                           |
+| **Workflows**                       | **30** (7 categorías)                           |
 
 ---
 
@@ -34,11 +34,11 @@ Think_Different/                           # RAÍZ
 ├── 00_Winter_is_Coming/           ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/                ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                   ✅ Motor del OS (FUENTE DE VERDAD)
-│   │   ├── 00_Workflows_Os/      ✅ 29 workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/      ✅ 30 workflows (7 categorías)
 │   │   ├── 01_Rules/             ✅ 12 reglas .mdc — FUENTE DE VERDAD
 │   │   └── 02_Tools/             ✅ Todas las herramientas
 │   │       ├── 01_Agents/         ✅ 82 agentes
-│   │       ├── 02_Skills/        ✅ 358 skills — 12 áreas funcionales
+│   │       ├── 02_Skills/        ✅ 393 skills — 12 áreas funcionales
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/         ✅ 10 hooks (6 fases)
@@ -106,19 +106,19 @@ Think_Different/                           # RAÍZ
 |-------------------------------------------------------------|---------------------------|--------------------------------------------------------------|
 | **00_Compound_Engineering**                                  | 63                         | Core CE — SDD + Compound Engineering                          |
 | **00_Personal_Os_Stack**                                    | 1                          | Stack base OS + Gcierr                                        |
-| **00_Skill_Auditor**                                        | 4                          | Auditoría de skills                                           |
-| **01_Creacion_Contenidos**                                  | 38                         | Brand, YouTube, SEO, Carruseles                               |
-| **02_Diseno_Ui_Ux**                                         | 23                         | Product Design, UI/UX, Taste, Minimal                          |
-| **03_Video_Media**                                         | 6                          | Video Intel, James Cameron                                     |
-| **04_Automatizacion**                                      | 21                         | N8N, Firecrawl, GWS Client                                    |
-| **05_Workflows**                                           | 33                         | Agent Teams, PM, Orchestrator                                 |
-| **06_Tools**                                                | 93                         | Skill Creator, Testing, DevOps, Data                           |
-| **07_Personal_Os**                                         | 29                         | Life OS, Hillary, Rituales                                    |
-| **08_Invictus_Web**                                         | 14                         | Playwright, Superpowers, Browser Auto                          |
+| **00_Skill_Auditor**                                        | 1                          | Auditoría de skills                                           |
+| **01_Creacion_Contenidos**                                  | 40                         | Brand, YouTube, SEO, Carruseles                               |
+| **02_Diseno_Ui_Ux**                                         | 29                         | Product Design, UI/UX, Taste, Minimal                          |
+| **03_Video_Media**                                         | 7                          | Video Intel, James Cameron                                     |
+| **04_Automatizacion**                                      | 37                         | N8N, Firecrawl, GWS Client                                    |
+| **05_Workflows**                                           | 37                         | Agent Teams, PM, Orchestrator                                 |
+| **06_Tools**                                                | 111                        | Skill Creator, Testing, DevOps, Data                           |
+| **07_Personal_Os**                                         | 32                         | Life OS, Hillary, Rituales                                    |
+| **08_Invictus_Web**                                         | 15                         | Playwright, Superpowers, Browser Auto                          |
 | **09_Claude_Ads**                                           | 20                         | Claude Ads & Promoted Content                                 |
-| **TOTAL**                                                   | **358**                    | Total real indexado en disco                                  |
+| **TOTAL**                                                   | **393**                    | Total real indexado en disco                                  |
 
-> ⚠️ Skills están en carpetas de área + subcarpetas. Total real: 358 skills
+> ⚠️ Skills están en carpetas de área + subcarpetas. Total real: 393 skills
 > Índice completo: `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
 
 ---

@@ -1,10 +1,10 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-22T12:09:18",
+  "generated": "2026-05-22T16:21:05",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
     "areas": 12,
-    "skills": 358,
+    "skills": 393,
     "without_frontmatter": 0
   },
   "by_area": {
@@ -554,7 +554,7 @@
       ]
     },
     "02_Diseno_Ui_Ux": {
-      "count": 25,
+      "count": 29,
       "skills": [
         {
           "name": "04_Product_Design",
@@ -662,8 +662,18 @@
           "has_frontmatter": true
         },
         {
+          "name": "08_Ui_Ux_Pro_Max",
+          "path": "02_Diseno_Ui_Ux/08_Ui_Ux_Pro_Max/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "09_Dumbledor_Design",
           "path": "02_Diseno_Ui_Ux/09_Dumbledor_Design/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "09_Huashu_Design",
+          "path": "02_Diseno_Ui_Ux/09_Huashu_Design/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -677,8 +687,18 @@
           "has_frontmatter": true
         },
         {
+          "name": "11_Dumbledor_Design",
+          "path": "02_Diseno_Ui_Ux/11_Dumbledor_Design/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "12_Design_Systems",
           "path": "02_Diseno_Ui_Ux/12_Design_Systems/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "13_Design_Systems",
+          "path": "02_Diseno_Ui_Ux/13_Design_Systems/SKILL.md",
           "has_frontmatter": true
         }
       ]
@@ -724,7 +744,7 @@
       ]
     },
     "04_Automatizacion": {
-      "count": 22,
+      "count": 37,
       "skills": [
         {
           "name": "04_Automatizacion",
@@ -767,6 +787,11 @@
           "has_frontmatter": true
         },
         {
+          "name": "08_AI_News_Weekly",
+          "path": "04_Automatizacion/08_AI_News_Weekly/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "n8n-code-javascript",
           "path": "04_Automatizacion/08_N8N_Invictus/n8n-code-javascript/SKILL.md",
           "has_frontmatter": true
@@ -802,8 +827,48 @@
           "has_frontmatter": true
         },
         {
+          "name": "n8n-code-javascript",
+          "path": "04_Automatizacion/09_N8n_Invictus/n8n-code-javascript/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "n8n-code-python",
+          "path": "04_Automatizacion/09_N8n_Invictus/n8n-code-python/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "n8n-expression-syntax",
+          "path": "04_Automatizacion/09_N8n_Invictus/n8n-expression-syntax/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "n8n-mcp-tools-expert",
+          "path": "04_Automatizacion/09_N8n_Invictus/n8n-mcp-tools-expert/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "n8n-node-configuration",
+          "path": "04_Automatizacion/09_N8n_Invictus/n8n-node-configuration/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "n8n-validation-expert",
+          "path": "04_Automatizacion/09_N8n_Invictus/n8n-validation-expert/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "n8n-workflow-patterns",
+          "path": "04_Automatizacion/09_N8n_Invictus/n8n-workflow-patterns/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "10_GWS_Client",
           "path": "04_Automatizacion/10_GWS_Client/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "11_Gws_Client",
+          "path": "04_Automatizacion/11_Gws_Client/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -817,13 +882,33 @@
           "has_frontmatter": true
         },
         {
+          "name": "13_N8n",
+          "path": "04_Automatizacion/13_N8n/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "14_Compound_Knowledge",
           "path": "04_Automatizacion/14_Compound_Knowledge/SKILL.md",
           "has_frontmatter": true
         },
         {
+          "name": "14_Content_From_Url",
+          "path": "04_Automatizacion/14_Content_From_Url/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "15_Compound_Knowledge",
+          "path": "04_Automatizacion/15_Compound_Knowledge/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "15_Os_Self_Improvement",
           "path": "04_Automatizacion/15_Os_Self_Improvement/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "16_Os_Self_Improvement",
+          "path": "04_Automatizacion/16_Os_Self_Improvement/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -835,11 +920,21 @@
           "name": "17_Learning_Url_To_Knowledge",
           "path": "04_Automatizacion/17_Learning_Url_To_Knowledge/SKILL.md",
           "has_frontmatter": true
+        },
+        {
+          "name": "17_Reverse_Engineering",
+          "path": "04_Automatizacion/17_Reverse_Engineering/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "18_Learning_Url_To_Knowledge",
+          "path": "04_Automatizacion/18_Learning_Url_To_Knowledge/SKILL.md",
+          "has_frontmatter": true
         }
       ]
     },
     "05_Workflows": {
-      "count": 36,
+      "count": 37,
       "skills": [
         {
           "name": "05_Workflows",
@@ -1020,11 +1115,16 @@
           "name": "05_Super_Campeones",
           "path": "05_Workflows/05_Super_Campeones/SKILL.md",
           "has_frontmatter": true
+        },
+        {
+          "name": "06_Super_Campeones",
+          "path": "05_Workflows/06_Super_Campeones/SKILL.md",
+          "has_frontmatter": true
         }
       ]
     },
     "06_Tools": {
-      "count": 96,
+      "count": 111,
       "skills": [
         {
           "name": "06_Tools",
@@ -1412,6 +1512,26 @@
           "has_frontmatter": true
         },
         {
+          "name": "15_Doc_Processing",
+          "path": "06_Tools/15_Doc_Processing/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "01_Universal_Doc_Reader",
+          "path": "06_Tools/15_Doc_Processing/01_Universal_Doc_Reader/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "02_Batch_Doc_Processor",
+          "path": "06_Tools/15_Doc_Processing/02_Batch_Doc_Processor/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Resumen_Extractor",
+          "path": "06_Tools/15_Doc_Processing/03_Resumen_Extractor/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "16_Doc_Processing",
           "path": "06_Tools/16_Doc_Processing/SKILL.md",
           "has_frontmatter": true
@@ -1477,6 +1597,36 @@
           "has_frontmatter": true
         },
         {
+          "name": "19_System_Master",
+          "path": "06_Tools/19_System_Master/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Find_Skills",
+          "path": "06_Tools/19_System_Master/03_Find_Skills/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "04_Mcp_Builder",
+          "path": "06_Tools/19_System_Master/04_Mcp_Builder/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_Google_Stitch_MCP",
+          "path": "06_Tools/19_System_Master/05_Google_Stitch_MCP/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "20_Qmd",
+          "path": "06_Tools/20_Qmd/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "21_Silicon_Valley_Data_Analyst",
+          "path": "06_Tools/21_Silicon_Valley_Data_Analyst/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "21_System_Master",
           "path": "06_Tools/21_System_Master/SKILL.md",
           "has_frontmatter": true
@@ -1502,8 +1652,33 @@
           "has_frontmatter": true
         },
         {
+          "name": "22_System_Master",
+          "path": "06_Tools/22_System_Master/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Find_Skills",
+          "path": "06_Tools/22_System_Master/03_Find_Skills/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "04_Mcp_Builder",
+          "path": "06_Tools/22_System_Master/04_Mcp_Builder/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_Google_Stitch_MCP",
+          "path": "06_Tools/22_System_Master/05_Google_Stitch_MCP/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "23_Ai_News_Weekly_Report",
           "path": "06_Tools/23_Ai_News_Weekly_Report/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "23_Silicon_Valley_Data_Analyst",
+          "path": "06_Tools/23_Silicon_Valley_Data_Analyst/SKILL.md",
           "has_frontmatter": true
         }
       ]

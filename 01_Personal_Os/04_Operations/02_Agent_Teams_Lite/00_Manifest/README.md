@@ -1,6 +1,6 @@
 # 00_Manifest — JARVIS Ground Truth
 
-**Generated:** 2026-05-22T12:09:17
+**Generated:** 2026-05-22T16:21:03
 **Version:** v3.0 Consequences
 
 ## ¿Qué es esto?
@@ -15,7 +15,7 @@ Es la fuente de verdad que TODOS los agentes consultan.
 | 01 | `01_OS_Inventory.json` | Inventario crudo (counts, paths) |
 | 02 | `02_MCP_Registry.yaml` | MCPs Claude Code + OpenCode con drift |
 | 03 | `03_Agent_Catalog.yaml` | 52 agentes (source: core, backup: .agent) |
-| 04 | `04_Skill_Index.json` | Index navegable de las 358 skills |
+| 04 | `04_Skill_Index.json` | Index navegable de las 393 skills |
 | 05 | `05_HUB_Catalog.yaml` | 28 HUBs + 152 scripts |
 | 06 | `06_Workflow_Graph.yaml` | 30 workflows en 7 categorías |
 | 07 | `07_Hook_Registry.yaml` | 10 hooks en 6 fases |
@@ -36,7 +36,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py --vali
 
 - **MCPs Claude Code:** 36
 - **MCPs OpenCode:** 36
-- **Skills:** 358 en 12 áreas
+- **Skills:** 393 en 12 áreas
 - **Agentes:** 82 (source) / 82 (backup)
 - **HUBs:** 28 (+ 152 scripts)
 - **Workflows:** 30

@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
 
   // Turbopack root — top-level in Next.js 16.x (not experimental.turbo)
   turbopack: {
-    root: ".",
+    root: process.cwd(),
   },
 
   // Compression & image optimization

@@ -82,6 +82,7 @@ El corazón del PersonalOS. Aquí vive todo lo que hace funcionar el sistema: re
 | **06_Youtube_Full_Video** | Video | Pipeline de producción de video |
 
 > **Regla:** Todo trabajo pasa por un workflow. No se trabaja directo en carpetas.
+> **Boot Protocol:** Al iniciar sesión, ejecutar `.agent/03_Workflows/02_Marvel/01_Iron_Man_Gen.md` OBLIGATORIAMENTE antes de cualquier acción.
 
 #### 📝 01_Rules — Reglas del Sistema (12 .mdc)
 

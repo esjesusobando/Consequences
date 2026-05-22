@@ -136,7 +136,7 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## 🧠 SKILLS — 12 ÁREAS FUNCIONALES (358 skills)
+## 🧠 SKILLS — 12 ÁREAS FUNCIONALES (393 skills)
 
 | Área                   | Items  | Descripción                          |
 |-----------------------|-------|-------------------------------------|
@@ -144,15 +144,15 @@ Think_Different/                         # RAÍZ
 | 00_Personal_Os_Stack   | 1      | Stack base OS + Gcierr               |
 | 00_Skill_Auditor       | 1      | Auditoría de skills                  |
 | 01_Creacion_Contenidos | 40     | Brand, YouTube, SEO, Carruseles      |
-| 02_Diseno_Ui_Ux        | 25     | Product Design, UI/UX, Taste, Minimal|
+| 02_Diseno_Ui_Ux        | 29     | Product Design, UI/UX, Taste, Minimal|
 | 03_Video_Media         | 7      | Video Intel, James Cameron           |
-| 04_Automatizacion      | 22     | N8N, Firecrawl, GWS Client           |
-| 05_Workflows           | 33     | Agent Teams, PM, Orchestrator        |
-| 06_Tools               | 93     | Skill Creator, Testing, DevOps, Data |
-| 07_Personal_Os         | 29     | Life OS, Hillary, Rituales           |
+| 04_Automatizacion      | 37     | N8N, Firecrawl, GWS Client           |
+| 05_Workflows           | 37     | Agent Teams, PM, Orchestrator        |
+| 06_Tools               | 111    | Skill Creator, Testing, DevOps, Data |
+| 07_Personal_Os         | 32     | Life OS, Hillary, Rituales           |
 | 08_Invictus_Web        | 15     | Playwright, Superpowers, Browser Auto|
 | 09_Claude_Ads          | 20     | Claude Ads & Promoted Content        |
-| **TOTAL**              | **358**| Total real indexado en disco         |
+| **TOTAL**              | **393**| Total real indexado en disco         |
 
 > Las skills están tanto en carpetas de área como en subcarpetas internas.
 
@@ -290,11 +290,19 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 | YouTube Full Video           | `__Youtube_Full_Video/`         | Video production pipeline            |
 | Learning Always              | `00_Learning_Always/`           | Continuous learning                  |
 | Personal OS                  | `01_Personal_Os/`               | Morning, Backlog, Content, Weekly    |
-| Marvel                       | `02_Marvel/`                    | Marvel-related workflows             |
+| Marvel                       | `02_Marvel/`                    | **Iron Man Genesis** (boot), Spider, Thor, Hulk |
 | Gentleman                    | `03_Gentleman/`                 | Gentleman standards                  |
 | Hillary                      | `04_Hillary/`                   | Hillary Life OS                      |
 | Compound Engineering         | `05_Compound_Engineering/`      | CE workflows                         |
 
 ---
 
-*Actualizado: 2026-05-20 | PersonalOS v4.5 Consequences | Every CE v2.55.0 ✅ | gentle-ai v1.26.6 | 358 skills | 82 agents | 36 MCPs*
+## 🔥 BOOT PROTOCOL — IRON MAN GENESIS
+
+Al iniciar sesión O al recibir cualquier instrucción, ejecutar `.agent/03_Workflows/02_Marvel/01_Iron_Man_Gen.md` PRIMERO.
+
+> ⚠️ **REGLA DE ORO:** Sin lectura completa del contexto NO hay respuesta. Leer todos los archivos listados en el workflow de genesis antes de actuar.
+
+---
+
+*Actualizado: 2026-05-22 | PersonalOS v4.6 | Every CE v2.55.0 ✅ | gentle-ai v1.30.6 | 393 skills | 82 agents | 36 MCPs*

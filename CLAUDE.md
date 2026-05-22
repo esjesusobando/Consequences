@@ -40,13 +40,32 @@
 ## ⚙️ CORE: BOOT PROTOCOL
 <boot_sequence>
 Al iniciar sesión, la IA ejecuta EXACTAMENTE este bucle ANTES de actuar:
--0.5. Si es una sesión fría o nueva, LEER `01_Personal_Os/05_Archive/07_Repos_Gentleman/README.md` para comprender los principios del OS y los repos upstream de referencia.
-0. Identificar el área de trabajo y leer `00_Winter_is_Coming/AGENTS.md` (Asignación del GGA).
-1. Leer `00_Winter_is_Coming/GOALS.md` y `00_Winter_is_Coming/BACKLOG.md`.
-2. Ejecutar `engram_mem_context(limit=10)` para recuperar trazas de contexto.
-3. Si la memoria ha sido compactada, usa `engram_mem_session_summary()`.
-4. Explora `01_Personal_Os/01_Core/`, `01_Personal_Os/02_Knowledge/` y `01_Personal_Os/04_Operations/` si la tarea lo requiere.
-5. **[OUTPUT]**: Reporta en el chat un resumen limpio del contexto cargado.
+
+1. **[LECTURA OBLIGATORIA]** Leer EN ESTE ORDEN:
+   - `00_Winter_is_Coming/AGENTS.md` — Asignación GGA
+   - `00_Winter_is_Coming/GOALS.md` — Goals del día
+   - `00_Winter_is_Coming/BACKLOG.md` — Backlog pendiente
+   - `01_Personal_Os/01_Core/01_Rules/` — Reglas vigentes (cualquiera con alwaysApply: true)
+   - `.agent/03_Workflows/02_Marvel/01_Iron_Man_Gen.md` — Workflow Génesis (ESTE)
+
+2. **[MEMORIA]** Ejecutar `engram_mem_context(limit=10)` para recuperar trazas de sesión previa.
+   - Si memoria fue compactada: usar `engram_mem_session_summary()`.
+
+3. **[CONTEXTO LLM]** Leer archivos recientes en:
+   - `01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/`
+
+4. **[TAREAS]** Leer `01_Personal_Os/03_Task/` — identificar:
+   - status: s (en progreso)
+   - status: b (bloqueadas)
+   - P0/P1 prioritarios
+
+5. **[OUTPUT]** Reportar en chat:
+   - Estado del proyecto (último commit, cambios pendientes)
+   - Reglas críticas de esta sesión
+   - Tareas en progreso / bloqueadas
+   - Agentes y herramientas disponibles
+
+⚠️ **REGLA DE ORO:** Si no leíste todos los archivos del paso 1, NO responds. No hay excepción.
 </boot_sequence>
 
 ---
@@ -189,7 +208,7 @@ Think_Different/                           # RAÍZ
 
 > ⚠️ Source + Backup sync: **82 ↔ 82** — drift: 0 ✅ (post-audit 2026-05-20)
 
-### 3. SKILLS (358 — 12 áreas funcionales)
+### 3. SKILLS (393 — 12 áreas funcionales)
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
@@ -208,7 +227,7 @@ Think_Different/                           # RAÍZ
 | 08_Invictus_Web                                  | 08_Invictus_Web/            | Playwright, Superpowers, Browser Auto                        |
 | 09_Claude_Ads                                    | 09_Claude_Ads/              | Ads, Evals, Agents, Assets, Research                         |
 
-> ⚠️ Audit 2026-05-22: 12 áreas activas, 358 skills verificados
+> ⚠️ Audit 2026-05-22: 12 áreas activas, 393 skills verificados
 
 ### 4. JARVIS 4.5 — MANIFEST SYSTEM
 
@@ -260,7 +279,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 | **Overall Health**                                        | **✅ PURE GREEN**                                | v4.6 — 2026-05-22 — Full Audit DONE                                                              |
 | Estructura (4 raíz)                                       | ✅ PASS                                         | Winter / Personal_Os / Playground / Resultado                                                |
 | HUBs (28 + 152 scripts)                                   | ✅ SYNCED                                       | 28 HUBs documentados + 152 total scripts (2026-05-22)                                    |
-| Skills (358, 12 áreas)                                    | ✅ VERIFIED                                     | 12 áreas funcionales — audit 2026-05-22                                           |
+| Skills (393, 12 áreas)                                    | ✅ VERIFIED                                     | 12 áreas funcionales — audit 2026-05-22                                           |
 | Agent Matrix                                              | ✅ SYNCED                                      | 82 ↔ 82 (drift: 0 post-audit 2026-05-20)                                                    |
 | Manifest (7 archivos)                                     | ✅ VALIDATED                                    | 00_Manifest/ en 02_Agent_Teams_Lite/                                                         |
 | MCPs (36 Claude / 36 OpenCode)                            | ✅ SYNCED                                       | drift: 0 (ambos configs alineados)                                                           |
