@@ -1,7 +1,7 @@
 # 🔍 Edge Case Validator Report
 
-**Archivos analizados:** 30
-**Edge cases encontrados:** 187
+**Archivos analizados:** 31
+**Edge cases encontrados:** 191
 
 ---
 
@@ -10,7 +10,7 @@
 | Categoría | Cantidad |
 |-----------|----------|
 | Boundary | 13 |
-| Empty/Null | 174 |
+| Empty/Null | 178 |
 | Invalid | 0 |
 | Temporal | 0 |
 | System | 0 |
