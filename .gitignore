@@ -205,3 +205,16 @@ Now/02_Videos_Finales/
 03_Resultado/04_Reportes/
 02_Playground/Side Project/
 03_Resultado/Side Project/
+
+# LOCAL / GENERATED WORKSPACE STATE — do not track
+node_modules/
+**/node_modules/
+.next/
+out/
+*.tsbuildinfo
+01_Personal_Os/04_Operations/04_Installer/.machine_id
+01_Personal_Os/05_Archive/07_Repos_Gentleman/curso-ai-devs/
+01_Personal_Os/05_Archive/07_Repos_Gentleman/design-system/
+01_Personal_Os/05_Archive/07_Repos_Gentleman/open-design/
+03_Resultado/OIM_Website_v2/
+01_Personal_Os/05_Archive/07_Repos_Gentleman/frontend-slides/

@@ -1,6 +1,6 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-22T09:36:02",
+  "generated": "2026-05-22T12:09:17",
   "personal_os": {
     "name": "PersonalOS",
     "version": "v2.1 -> v3.0 (in progress)",
@@ -9,7 +9,7 @@
   "totals": {
     "mcps_claude": 36,
     "mcps_opencode": 36,
-    "skills": 356,
+    "skills": 358,
     "skill_areas": 12,
     "agents_source": 82,
     "agents_backup": 82,

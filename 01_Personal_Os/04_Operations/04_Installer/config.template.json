@@ -29,9 +29,9 @@
     "claude_code": ""
   },
   "aliases": {
-    "gr": "python 04_ENGINE/08_Scripts_Os/79_System_Guardian.py",
-    "gra": "python 04_ENGINE/08_Scripts_Os/79_System_Guardian.py --apply",
-    "gr-agents": "python 04_ENGINE/08_Scripts_Os/79_System_Guardian.py --agents"
+    "gr": "python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py",
+    "gra": "python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py --apply",
+    "gr-agents": "python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py --agents"
   },
   "hooks": {
     "stop": {

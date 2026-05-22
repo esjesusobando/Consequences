@@ -5,7 +5,7 @@
 [![Status](https://img.shields.io/badge/Status-PRODUCTION%20READY-00FF00)]()
 [![OS](https://img.shields.io/badge/Think%20Different-OS--4.5-7B68EE)]()
 
-> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 356 skills SOTA, 12 áreas funcionales, 82 agentes, metodologías integradas y automatización completa.
+> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 358 skills SOTA, 12 áreas funcionales, 82 agentes, metodologías integradas y automatización completa.
 
 ---
 
@@ -18,7 +18,7 @@
 | **Overall Health**                  | **100%** 🟢                                      |
 | **Every CE**                        | v2.55.0 ✅ (local repo)                          |
 | **gentle-ai**                       | v1.26.6 ✅                                       |
-| **Skills**                          | **356** (12 áreas funcionales)                  |
+| **Skills**                          | **358** (12 áreas funcionales)                  |
 | **Rules**                           | **12** (.mdc)                                   |
 | **MCPs**                            | **36** Claude Code                              |
 | **HUBs**                            | **31** scripts en raíz + subdirectorios         |
@@ -38,7 +38,7 @@ Think_Different/                           # RAÍZ
 │   │   ├── 01_Rules/             ✅ 12 reglas .mdc — FUENTE DE VERDAD
 │   │   └── 02_Tools/             ✅ Todas las herramientas
 │   │       ├── 01_Agents/         ✅ 82 agentes
-│   │       ├── 02_Skills/        ✅ 356 skills — 12 áreas funcionales
+│   │       ├── 02_Skills/        ✅ 358 skills — 12 áreas funcionales
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/         ✅ 10 hooks (6 fases)
@@ -56,7 +56,7 @@ Think_Different/                           # RAÍZ
 │       ├── 00_Context_LLM/       ✅ Memoria LLM (Engram, notes)
 │       ├── 01_Auto_Improvement/  ✅ Auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests JARVIS
-│       ├── 03_Scripts_Os/        ✅ 31 HUBs + scripts
+│       ├── 03_Scripts_Os/        ✅ 28 HUBs + 152 scripts
 │       ├── 04_Installer/         ✅ Installer
 │       ├── 05_Projects/          ✅ Proyectos activos
 │       ├── GOVERNANCE.md
@@ -116,14 +116,14 @@ Think_Different/                           # RAÍZ
 | **07_Personal_Os**                                         | 29                         | Life OS, Hillary, Rituales                                    |
 | **08_Invictus_Web**                                         | 14                         | Playwright, Superpowers, Browser Auto                          |
 | **09_Claude_Ads**                                           | 20                         | Claude Ads & Promoted Content                                 |
-| **TOTAL**                                                   | **342**                    | Total real indexado en disco                                  |
+| **TOTAL**                                                   | **358**                    | Total real indexado en disco                                  |
 
-> ⚠️ Skills están en carpetas de área + subcarpetas. Total real: 300+
+> ⚠️ Skills están en carpetas de área + subcarpetas. Total real: 358 skills
 > Índice completo: `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
 
 ---
 
-### HUBs v4.5 (31 scripts en raíz de 03_Scripts_Os)
+### HUBs v4.5 (28 HUBs documentados + 152 scripts)
 
 | Hub                                          | Script                                          | Propósito                                             |
 |---------------------------------------------|------------------------------------------------|------------------------------------------------------|

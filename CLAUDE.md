@@ -151,7 +151,7 @@ Think_Different/                           # RAÍZ
 │   │   ├── 01_Rules/            ✅ 12 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/            ✅ Todas las herramientas
 │   │       ├── 01_Agents/       ✅ 58 agentes (5 Dream + 24 Specialists + 29 individuales)
-│   │       ├── 02_Skills/         ✅ 342 skills (12 áreas funcionales)
+│   │       ├── 02_Skills/         ✅ 358 skills (12 áreas funcionales)
 │   │       ├── 03_Mcp/         ✅ Backup configs MCP
 │   │       ├── 04_Integrations/ ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/        ✅ Pre/Post/Lifecycle/Sound/Harness
@@ -165,7 +165,7 @@ Think_Different/                           # RAÍZ
 │       ├── 00_Context_LLM/      ✅ Memoria, notas, knowledge brain
 │       ├── 01_Auto_Improvement/ ✅ Motor auto-mejora
 │       ├── 02_Agent_Teams_Lite/ ✅ SDD registry + 7 JARVIS manifests
-│       └── 03_Scripts_Os/       ✅ 30 scripts (21 HUBs + 9 aux)
+│       └── 03_Scripts_Os/       ✅ 28 HUBs documentados + 152 scripts
 ├── 02_Playground/               ✅ Zona de pruebas (no contamina el OS)
 ├── 03_Resultado/                ✅ Outputs de proyectos (OIM, Elite Portfolio, etc.)
 ├── .agent/                      ✅ Backup estratégico
@@ -189,7 +189,7 @@ Think_Different/                           # RAÍZ
 
 > ⚠️ Source + Backup sync: **82 ↔ 82** — drift: 0 ✅ (post-audit 2026-05-20)
 
-### 3. SKILLS (356 — 12 áreas funcionales)
+### 3. SKILLS (358 — 12 áreas funcionales)
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
@@ -208,7 +208,7 @@ Think_Different/                           # RAÍZ
 | 08_Invictus_Web                                  | 08_Invictus_Web/            | Playwright, Superpowers, Browser Auto                        |
 | 09_Claude_Ads                                    | 09_Claude_Ads/              | Ads, Evals, Agents, Assets, Research                         |
 
-> ⚠️ Audit 2026-05-22: 12 áreas activas, 356 skills verificados
+> ⚠️ Audit 2026-05-22: 12 áreas activas, 358 skills verificados
 
 ### 4. JARVIS 4.5 — MANIFEST SYSTEM
 
@@ -217,8 +217,8 @@ Think_Different/                           # RAÍZ
 ├── 01_OS_Inventory.json      # Inventario OS (updated 2026-05-22)
 ├── 02_MCP_Registry.yaml     # 35 MCPs (34 shared + 3 Claude-only)
 ├── 03_Agent_Catalog.yaml    # 82 agentes
-├── 04_Skill_Index.json      # 356 skills en 12 áreas (updated 2026-05-22)
-├── 05_HUB_Catalog.yaml     # 28 HUBs + 152 scripts + 284 total scripts
+├── 04_Skill_Index.json      # 358 skills en 12 áreas (updated 2026-05-22)
+├── 05_HUB_Catalog.yaml     # 28 HUBs + 152 scripts
 ├── 06_Workflow_Graph.yaml   # 30 workflows
 └── 07_Hook_Registry.yaml    # 6 categorías de hooks
 ```
@@ -259,8 +259,8 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 |----------------------------------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------|
 | **Overall Health**                                        | **✅ PURE GREEN**                                | v4.6 — 2026-05-22 — Full Audit DONE                                                              |
 | Estructura (4 raíz)                                       | ✅ PASS                                         | Winter / Personal_Os / Playground / Resultado                                                |
-| HUBs (28 + 284 scripts)                                   | ✅ SYNCED                                       | 28 HUBs + 3 auxiliary + 284 total scripts (2026-05-22)                                    |
-| Skills (356, 12 áreas)                                    | ✅ VERIFIED                                     | 12 áreas funcionales — audit 2026-05-22                                           |
+| HUBs (28 + 152 scripts)                                   | ✅ SYNCED                                       | 28 HUBs documentados + 152 total scripts (2026-05-22)                                    |
+| Skills (358, 12 áreas)                                    | ✅ VERIFIED                                     | 12 áreas funcionales — audit 2026-05-22                                           |
 | Agent Matrix                                              | ✅ SYNCED                                      | 82 ↔ 82 (drift: 0 post-audit 2026-05-20)                                                    |
 | Manifest (7 archivos)                                     | ✅ VALIDATED                                    | 00_Manifest/ en 02_Agent_Teams_Lite/                                                         |
 | MCPs (36 Claude / 36 OpenCode)                            | ✅ SYNCED                                       | drift: 0 (ambos configs alineados)                                                           |
@@ -335,7 +335,7 @@ O reinstalar sin `--ignore-scripts` / `--omit=optional`.
 | Knowledge                                 | `01_Personal_Os/02_Knowledge/`                                                 |
 | Context LLM                               | `01_Personal_Os/04_Operations/00_Context_LLM/`                                 |
 
-> ⚠️ NO usar paths v1.x (01_Core/, 03_Skills/, 03_Tasks/)
+> ⚠️ NO usar rutas legacy v1.x; usar únicamente las rutas canónicas listadas arriba.
 
 ---
 

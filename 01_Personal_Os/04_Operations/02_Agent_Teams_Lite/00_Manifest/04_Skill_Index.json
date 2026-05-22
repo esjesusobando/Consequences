@@ -1,10 +1,10 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-22T09:36:03",
+  "generated": "2026-05-22T12:09:18",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
     "areas": 12,
-    "skills": 356,
+    "skills": 358,
     "without_frontmatter": 0
   },
   "by_area": {
@@ -349,7 +349,7 @@
       ]
     },
     "01_Creacion_Contenidos": {
-      "count": 39,
+      "count": 40,
       "skills": [
         {
           "name": "01_Creacion_Contenidos",
@@ -524,6 +524,11 @@
         {
           "name": "09_Video_Visuals_Producer",
           "path": "01_Creacion_Contenidos/09_Video_Visuals_Producer/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "10_Remotion_Video_Creator",
+          "path": "01_Creacion_Contenidos/10_Remotion_Video_Creator/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -1019,7 +1024,7 @@
       ]
     },
     "06_Tools": {
-      "count": 95,
+      "count": 96,
       "skills": [
         {
           "name": "06_Tools",
@@ -1494,6 +1499,11 @@
         {
           "name": "22_Silicon_Valley_Data_Analyst",
           "path": "06_Tools/22_Silicon_Valley_Data_Analyst/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "23_Ai_News_Weekly_Report",
+          "path": "06_Tools/23_Ai_News_Weekly_Report/SKILL.md",
           "has_frontmatter": true
         }
       ]

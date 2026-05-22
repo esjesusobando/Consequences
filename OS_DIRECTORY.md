@@ -11,7 +11,7 @@
 | MCPs Claude Code                      | **36**                                                              | ✅ SYNCED — drift 0                             |
 | Every CE                              | v2.55.0 (local repo) ✅                                              | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.26.6                                                             | ✅ AVAILABLE                                    |
-| Skills                                | **356** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
+| Skills                                | **358** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
 | Agentes                               | **82** (5 Dream + 24 Specialists Compound + backup sync)             | ✅ SYNCED — 82↔82 drift 0                       |
 | HUBs                                  | **31** scripts en raíz + subdirectorios                             | ✅ VERIFIED                                     |
 | Scripts totales                       | **152** (en subdirectorios AIPM/Validator/Legacy)                    | ✅ INTENCIONAL — preservación de historial, no es anomalía |
@@ -22,7 +22,7 @@
 | Open Design                           | 62 skills + 138 design systems                                      | ✅ INTEGRATED                                   |
 
 > **🟢 ÚLTIMA AUDITORÍA:** 2026-05-20 — v4.5 Consequences
-> Agent Sync: 82↔82 drift 0. Skills: 356. MCPs: 36/36 sync.
+> Agent Sync: 82↔82 drift 0. Skills: 358. MCPs: 36/36 sync.
 
 ---
 
@@ -81,7 +81,7 @@ Think_Different/                         # RAÍZ
 │   │   ├── 01_Rules/            ✅ 12 reglas .mdc
 │   │   └── 02_Tools/
 │   │       ├── 01_Agents/         ✅ 58 agentes (5 Dream + 23 Specialists + 30 individuales)
-│   │       ├── 02_Skills/         ✅ 342 skills (12 áreas funcionales)
+│   │       ├── 02_Skills/         ✅ 358 skills (12 áreas funcionales)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/          ✅ Pre/Post/Lifecycle/Sound
@@ -109,7 +109,7 @@ Think_Different/                         # RAÍZ
 │       ├── 00_Context_LLM/        ✅ Memoria LLM (Engram, notes)
 │       ├── 01_Auto_Improvement/   ✅ Motor auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests
-│       ├── 03_Scripts_Os/         ✅ 21 HUBs + 5 aux (26 scripts .py)
+│       ├── 03_Scripts_Os/         ✅ 28 HUBs documentados + 152 scripts
 │       ├── 04_Installer/          ✅ Installer scripts
 │       ├── 05_Projects/          ✅ Proyectos activos
 │       ├── GOVERNANCE.md
@@ -136,23 +136,23 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## 🧠 SKILLS — 12 ÁREAS FUNCIONALES (342 skills)
+## 🧠 SKILLS — 12 ÁREAS FUNCIONALES (358 skills)
 
 | Área                   | Items  | Descripción                          |
 |-----------------------|-------|-------------------------------------|
 | 00_Compound_Engineering| 63     | Core CE — SDD + Compound Engineering |
 | 00_Personal_Os_Stack   | 1      | Stack base OS + Gcierr               |
 | 00_Skill_Auditor       | 1      | Auditoría de skills                  |
-| 01_Creacion_Contenidos | 38     | Brand, YouTube, SEO, Carruseles      |
-| 02_Diseno_Ui_Ux        | 23     | Product Design, UI/UX, Taste, Minimal|
-| 03_Video_Media         | 6      | Video Intel, James Cameron           |
-| 04_Automatizacion      | 21     | N8N, Firecrawl, GWS Client           |
+| 01_Creacion_Contenidos | 40     | Brand, YouTube, SEO, Carruseles      |
+| 02_Diseno_Ui_Ux        | 25     | Product Design, UI/UX, Taste, Minimal|
+| 03_Video_Media         | 7      | Video Intel, James Cameron           |
+| 04_Automatizacion      | 22     | N8N, Firecrawl, GWS Client           |
 | 05_Workflows           | 33     | Agent Teams, PM, Orchestrator        |
 | 06_Tools               | 93     | Skill Creator, Testing, DevOps, Data |
 | 07_Personal_Os         | 29     | Life OS, Hillary, Rituales           |
-| 08_Invictus_Web        | 14     | Playwright, Superpowers, Browser Auto|
+| 08_Invictus_Web        | 15     | Playwright, Superpowers, Browser Auto|
 | 09_Claude_Ads          | 20     | Claude Ads & Promoted Content        |
-| **TOTAL**              | **342**| Total real indexado en disco         |
+| **TOTAL**              | **358**| Total real indexado en disco         |
 
 > Las skills están tanto en carpetas de área como en subcarpetas internas.
 
@@ -188,7 +188,7 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## 🎯 HUBs — 30 SCRIPTS TOTALES (21 operativos + 9 auxiliary)
+## 🎯 HUBs — 28 HUBs DOCUMENTADOS + 152 SCRIPTS
 
 ### Scripts Python en raíz de 03_Scripts_Os/ (principales)
 
@@ -297,4 +297,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-05-20 | PersonalOS v4.5 Consequences | Every CE v2.55.0 ✅ | gentle-ai v1.26.6 | 356 skills | 82 agents | 36 MCPs*
+*Actualizado: 2026-05-20 | PersonalOS v4.5 Consequences | Every CE v2.55.0 ✅ | gentle-ai v1.26.6 | 358 skills | 82 agents | 36 MCPs*

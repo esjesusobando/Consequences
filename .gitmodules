@@ -1,12 +1,12 @@
-[submodule "01_Personal_Os/05_Archive/07_Repos_Gentleman/06_Design_System"]
-	path = 01_Personal_Os/05_Archive/07_Repos_Gentleman/06_Design_System
-	url = https://github.com/robonuggets/design-system.git
-[submodule "01_Personal_Os/05_Archive/07_Repos_Gentleman/09_Frontend_Slides"]
-	path = 01_Personal_Os/05_Archive/07_Repos_Gentleman/09_Frontend_Slides
-	url = https://github.com/zarazhangrui/frontend-slides.git
-[submodule "01_Personal_Os/05_Archive/07_Repos_Gentleman/17_Open_Design"]
-	path = 01_Personal_Os/05_Archive/07_Repos_Gentleman/17_Open_Design
-	url = https://github.com/nexu-io/open-design.git
-[submodule "03_Resultado/09_World_OIM/01_OIM_Website_v2"]
-	path = 03_Resultado/09_World_OIM/01_OIM_Website_v2
+[submodule "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/23_Tubemaster"]
+	path = 01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/23_Tubemaster
+	url = https://github.com/Gentleman-Programming/tubemaster.git
+[submodule "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/engram"]
+	path = 01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/engram
+	url = https://github.com/Gentleman-Programming/engram.git
+[submodule "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/gentle-pi"]
+	path = 01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/gentle-pi
+	url = https://github.com/Gentleman-Programming/gentle-pi.git
+[submodule "03_Resultado/09b_World_OIM/01_OIM_Website_v2"]
+	path = 03_Resultado/09b_World_OIM/01_OIM_Website_v2
 	url = https://github.com/esjesusobando/OIM.git

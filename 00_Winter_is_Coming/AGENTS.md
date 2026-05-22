@@ -35,10 +35,10 @@ cat 01_Personal_Os/03_Task/  # tareas activas
 
 | Recurso                                            | Ubicación                                                                  | Para qué usarlo                                                    |
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
-| **Skills** (12 áreas, 342)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
+| **Skills** (12 áreas, 358)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
 | **Reglas** (12 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
 | **Agentes** (43)                                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
-| **HUBs** (30 scripts)                              | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
+| **HUBs** (28 HUBs + 152 scripts)                    | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
 | **MCPs** (35 Claude)                               | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
@@ -164,7 +164,7 @@ Think_Different/                           # v4.1 — 4 carpetas raíz
 │   │   ├── 01_Rules/                     # 12 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
 │   │       ├── 01_Agents/               # 58 agentes
-│   │       ├── 02_Skills/                # 342 skills (12 áreas)
+│   │       ├── 02_Skills/                # 358 skills (12 áreas)
 │   │       ├── 03_Mcp/                   # Backup MCPs
 │   │       ├── 04_Integrations/         # Fireflies, Granola
 │   │       ├── 05_Hooks/                # Pre/Post/Lifecycle/Sound
@@ -178,7 +178,7 @@ Think_Different/                           # v4.1 — 4 carpetas raíz
 │       ├── 00_Context_LLM/              # Memoria LLM
 │       ├── 01_Auto_Improvement/         # Motor auto-mejora
 │       ├── 02_Agent_Teams_Lite/         # SDD registry + 7 Manifests
-│       ├── 03_Scripts_Os/               # 26 scripts (21 HUBs + 5 aux)
+│       ├── 03_Scripts_Os/               # 28 HUBs documentados + 152 scripts
 │       ├── 04_Installer/                # Installer
 │       └── 05_Projects/                  # Proyectos activos
 ├── 02_Playground/                        # Zona de pruebas
