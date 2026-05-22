@@ -1,7 +1,8 @@
-# 🛡️ CLAUDE.md | PersonalOS v4.5 Consequences — Production Ready AI Context Harness
+# 🛡️ CLAUDE.md | PersonalOS v4.6 — Production Ready AI Context Harness
 
-> **Última actualización:** 2026-05-20
-> **Versión:** v4.5 Consequences — Every CE v2.55.0 (local repo), gentle-ai v1.26.6
+> **Última actualización:** 2026-05-22
+> **Versión:** v4.6 — Every CE v2.55.0 (local repo), gentle-ai v1.30.6
+> **Audit:** 2026-05-22 — Full project audit completed + fixes applied
 
 <system_directives>
   <fundamental_rule>
@@ -188,7 +189,7 @@ Think_Different/                           # RAÍZ
 
 > ⚠️ Source + Backup sync: **82 ↔ 82** — drift: 0 ✅ (post-audit 2026-05-20)
 
-### 3. SKILLS (352 — 12 áreas funcionales)
+### 3. SKILLS (356 — 12 áreas funcionales)
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
@@ -201,21 +202,23 @@ Think_Different/                           # RAÍZ
 | 02_Diseno_Ui_Ux                                  | 02_Diseno_Ui_Ux/            | Product Design, UI/UX, Taste, Minimal                         |
 | 03_Video_Media                                   | 03_Video_Media/             | Video Intel, James Cameron                                    |
 | 04_Automatizacion                                | 04_Automatizacion/          | N8N, Firecrawl, GWS Client                                    |
-| 05_Workflows                                     | 05_Workflows/               | Agent Teams, PM, Orchestrator                                 |
+| 05_Workflows                                     | 05_Workflows/               | Agent Teams, PM, Orchestrator                                |
 | 06_Tools                                         | 06_Tools/                   | Skill Creator, Testing, DevOps, Data                          |
 | 07_Personal_Os                                   | 07_Personal_Os/             | Life OS, Hillary, Rituales                                    |
-| 08_Invictus_Web                                  | 08_Invictus_Web/            | Playwright, Superpowers, Browser Auto                         |
-| claude-ads                                       | claude-ads/                 | Ads, Evals, Agents, Assets, Research                          |
+| 08_Invictus_Web                                  | 08_Invictus_Web/            | Playwright, Superpowers, Browser Auto                        |
+| 09_Claude_Ads                                    | 09_Claude_Ads/              | Ads, Evals, Agents, Assets, Research                         |
+
+> ⚠️ Audit 2026-05-22: 12 áreas activas, 356 skills verificados
 
 ### 4. JARVIS 4.5 — MANIFEST SYSTEM
 
 ```text
 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
-├── 01_OS_Inventory.json      # Inventario OS
+├── 01_OS_Inventory.json      # Inventario OS (updated 2026-05-22)
 ├── 02_MCP_Registry.yaml     # 35 MCPs (34 shared + 3 Claude-only)
-├── 03_Agent_Catalog.yaml    # 43 agentes
-├── 04_Skill_Index.json      # 342 skills en 12 áreas
-├── 05_HUB_Catalog.yaml     # 30 scripts HUB
+├── 03_Agent_Catalog.yaml    # 82 agentes
+├── 04_Skill_Index.json      # 356 skills en 12 áreas (updated 2026-05-22)
+├── 05_HUB_Catalog.yaml     # 28 HUBs + 152 scripts + 284 total scripts
 ├── 06_Workflow_Graph.yaml   # 30 workflows
 └── 07_Hook_Registry.yaml    # 6 categorías de hooks
 ```
@@ -250,19 +253,19 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 
 ---
 
-## 📊 ESTADO DEL SISTEMA (v4.5 — 2026-05-20)
+## 📊 ESTADO DEL SISTEMA (v4.6 — 2026-05-22)
 
 | Categoria                                                 | Estado                                         | Notas                                                                                        |
 |----------------------------------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------|
-| **Overall Health**                                        | **✅ PURE GREEN**                               | v4.5 Consequences — 2026-05-20 — Agent Sync DONE                                        |
+| **Overall Health**                                        | **✅ PURE GREEN**                                | v4.6 — 2026-05-22 — Full Audit DONE                                                              |
 | Estructura (4 raíz)                                       | ✅ PASS                                         | Winter / Personal_Os / Playground / Resultado                                                |
-| HUBs (28 + 152 scripts)                                    | ✅ ACTIVE                                       | 28 HUBs + 152 scripts en subdirectorios (AIPM/Validator/Legacy)                              |
-| Skills (356, 12 áreas)                                    | ✅ VERIFIED                                     | 12 áreas funcionales — 0 sin frontmatter                                                     |
+| HUBs (28 + 284 scripts)                                   | ✅ SYNCED                                       | 28 HUBs + 3 auxiliary + 284 total scripts (2026-05-22)                                    |
+| Skills (356, 12 áreas)                                    | ✅ VERIFIED                                     | 12 áreas funcionales — audit 2026-05-22                                           |
 | Agent Matrix                                              | ✅ SYNCED                                      | 82 ↔ 82 (drift: 0 post-audit 2026-05-20)                                                    |
 | Manifest (7 archivos)                                     | ✅ VALIDATED                                    | 00_Manifest/ en 02_Agent_Teams_Lite/                                                         |
 | MCPs (36 Claude / 36 OpenCode)                            | ✅ SYNCED                                       | drift: 0 (ambos configs alineados)                                                           |
 | Rules (12 .mdc)                                           | ✅ DEFINED                                      | 01_Rules/                                                                                    |
-| Workflows (29)                                            | ✅ ACTIVE                                       | 7 categorías en 00_Workflows_Os                                                              |
+| Workflows (30)                                            | ✅ ACTIVE                                       | 7 categorías en 00_Workflows_Os                                                              |
 | Hooks (10, 6 fases)                                       | ✅ ACTIVE                                       | 05_Hooks/                                                                                    |
 | Agent Teams Protocol                                      | ✅ ACTIVE                                       | Super Campeones                                                                              |
 
