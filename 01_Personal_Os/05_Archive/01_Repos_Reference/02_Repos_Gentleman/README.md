@@ -4,7 +4,7 @@
 
 ---
 
-## 📋 ÍNDICE COMPLETO (25 repos + 3 submodules)
+## 📋 ÍNDICE COMPLETO (25 repos + 3 submodules activos)
 
 | #        | Repositorio                                  | Fuente                                         | Estado               | Uso                                           |
 |---------|---------------------------------------------|-----------------------------------------------|---------------------|----------------------------------------------|
@@ -30,9 +30,9 @@
 | 20       | `20_Qmd`                                     | QMD project                                    | ✅ Activo             | Quick notes terminal + MCP server             |
 | 21       | `21_Sub_Agent_Statusline`                    | Joaquinvesapa/sub-agent-statusline             | ✅ Activo             | OpenCode sidebar agents                       |
 | 22       | `22_Taste_Skill`                             | Leonxlnx/taste-skill                           | ✅ Activo             | **Diseño premium** ⭐ 3.9k stars               |
-| 23       | `23_Tubemaster`                              | Gentleman-Programming/tubemaster               | ✅ Activo             | YouTube operations                            |
-| 24       | `24_gentle-pi`                               | Gentleman-Programming/gentle-pi                | ✅ Activo             | **Gentleman harness para Pi** v0.3.2          |
-| 25       | `25_engram`                                  | Gentleman-Programming/engram                   | ✅ Activo             | **Engram core** (Go binary + MCP)             |
+| 23       | `23_Tubemaster`                              | Gentleman-Programming/tubemaster               | ✅ Gitlink            | YouTube operations (Next.js 16)              |
+| 24       | `24_gentle-pi`                               | Gentleman-Programming/gentle-pi                | ✅ Gitlink            | **Gentleman harness para Pi** v0.3.2          |
+| 25       | `25_engram`                                  | Gentleman-Programming/engram                   | ✅ Gitlink            | **Engram core** (Go binary + MCP)             |
 
 ---
 
@@ -138,15 +138,20 @@ YouTubeTranscriptApi.list_transcripts("VIDEO_ID")
 
 ## 📝 Notas
 
-- 22 repos son **copias locales** (NO submodules)
-- 3 repos son **git submodules** ✅:
-  - `06_Design_System/`
-  - `09_Frontend_Slides/`
-  - `17_Open_Design/`
-- `gentle-pi` y `gentle-engram` están también como **copias locales** en esta carpeta para referencia
+- **22 repos son copias locales** (NO submodules) — versionados directamente en el repo principal
+- **3 repos son git submodules activos** ✅:
+  - `06_Design_System/` → `robonuggets/design-system`
+  - `09_Frontend_Slides/` → `zarazhangrui/frontend-slides`
+  - `17_Open_Design/` → `nexu-io/open-design`
+- **3 repos son gitlinks (mode 160000)** con contenido local real:
+  - `23_Tubemaster/` → YouTube operations (Next.js 16, MCP server)
+  - `gentle-pi/` → Gentle harness para Pi con SDD/workflows
+  - `engram/` → Engram core con skills y MCP server
+- Estos gitlinks funcionan correctamente en la sesion actual
+- `gentle-pi` y `gentle-engram` están también como **copias locales** para referencia
 - `01_Claude_Ads` ya no tiene `.git` propio (carpeta normal)
 - ⚠️ **IMPORTANTE:** Leer `README.md` al inicio de cada sesión
 
 ---
 
-*Última actualización: 2026-05-15 — v5.5*
+*Última actualización: 2026-05-22 — v5.6 — Fase C ejecutada*
