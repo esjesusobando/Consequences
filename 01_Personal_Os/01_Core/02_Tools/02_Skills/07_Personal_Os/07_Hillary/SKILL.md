@@ -39,12 +39,12 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --triage
 ```
 
 ### Daily Report (al final de jornada)
-Generar `03_Tasks/Daily_Report.md` basado en `01_Hillary_Report_Template.md`
+Generar `01_Personal_Os/03_Task/Daily_Report.md` basado en `01_Hillary_Report_Template.md`
 
 ## Runbook
 
 ### Setup Hillary_Inbox
-1. Crear `03_Task/02_Hillary_Inbox/` si no existe
+1. Crear `01_Personal_Os/03_Task/02_Hillary_Inbox/` si no existe
 2. Monitorear entrada de nuevas capturas
 3. Procesar inbox al menos 1x por día
 

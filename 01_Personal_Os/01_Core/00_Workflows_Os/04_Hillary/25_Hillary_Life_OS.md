@@ -21,7 +21,7 @@ Usuario → Detectar intención → Skill correcto → Ejecutar → Capturar res
 
 | Trigger del usuario                                                                                | Skill invocado                                      | Acción                                                                       |
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------|-----------------------------------------------------------------------------|
-| "capture", "captura", "quick add", "anota", "guarda idea"                                          | `01_Quick_Capture`                                  | Crear archivo en `03_Tasks/02_Hillary_Inbox/`                                |
+| "capture", "captura", "quick add", "anota", "guarda idea"                                          | `01_Quick_Capture`                                  | Crear archivo en `01_Personal_Os/03_Task/02_Hillary_Inbox/`                                |
 | "plan my day", "plan día", "qué hago hoy", "organizar día"                                         | `02_Plan_My_Day`                                    | Leer inbox → generar schedule                                                |
 | "daily notes", "log this", "registro", "anotar actividad"                                          | `03_Daily_Notes`                                    | Agregar a log diario en `04_Operations/`                                     |
 | "record", "transcribe", "grabar reunión", "recording mode"                                         | `04_Recording_Mode`                                 | Transcribir + anonimizar PII                                                 |
@@ -45,7 +45,7 @@ Usuario → Detectar intención → Skill correcto → Ejecutar → Capturar res
 
 | Skill                                          | Destino del output                                                                      |
 |-----------------------------------------------|----------------------------------------------------------------------------------------|
-| Quick Capture                                  | `03_Tasks/02_Hillary_Inbox/`                                                            |
+| Quick Capture                                  | `01_Personal_Os/03_Task/02_Hillary_Inbox/`                                                            |
 | Plan My Day                                    | respuesta inline + opcionalmente `04_Operations/`                                       |
 | Daily Notes                                    | `04_Operations/03_Process_Notes/` (si existe)                                           |
 | Recording Mode                                 | `02_Knowledge/` (transcripciones)                                                       |
@@ -68,12 +68,12 @@ Usuario → Detectar intención → Skill correcto → Ejecutar → Capturar res
 ```
 Usuario: "captura: revisar propuesta de cliente [trabajo]"
 → Skill: Quick Capture
-→ Output: 03_Tasks/02_Hillary_Inbox/2026-04-02-revisar-propuesta.md
+→ Output: 01_Personal_Os/03_Task/02_Hillary_Inbox/2026-04-02-revisar-propuesta.md
 → Engram: mem_save("Quick capture: revisar propuesta cliente")
 
 Usuario: "plan my day"
 → Skill: Plan My Day
-→ Lee: 03_Tasks/02_Hillary_Inbox/ + GOALS.md
+→ Lee: 01_Personal_Os/03_Task/02_Hillary_Inbox/ + GOALS.md
 → Output: Schedule por bloques de energía inline
 ```
 
