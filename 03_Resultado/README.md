@@ -1,7 +1,7 @@
 # 03_Resultado — Project Outputs
 
-> **Versión:** v4.6
-> **Última actualización:** 2026-05-22
+> **Versión:** v4.7
+> **Última actualización:** 2026-05-23
 
 ---
 
@@ -27,14 +27,14 @@ Carpeta de resultados y outputs de proyectos. Aquí terminan los entregables de 
 ├── 06_Huashu_Design_Exercise/   # Ejercicios diseño
 ├── 07_Referencias_Pre/           # Referencias/preliminares
 ├── 08_Fundamentos_AI/            # Fundamentos AI
-├── 09b_World_OIM/                 # Proyecto OIM (4 variantes: v2, One, Backup, 02; sufijo b histórico)
+├── 09_World_OIM/                 # Proyecto OIM (4 variantes: v2, One, Backup, 02)
 ├── 10_Contenido_Learning/       # Contenido aprendizaje
 ├── 11_Pruebas_Ads/               # Pruebas publicidad
 ├── 12_Clinica_Infantil/          # Proyecto clínica
 ├── 13_Sessions/                 # Sesiones auditoría
 ├── 14_Imagenes_Finales/          # Imágenes finales
 ├── 15_AI_News_Weekly_20260522/  # Reporte AI News (NUEVO v4.6)
-├── 16_Side_Project/              # Side project local Oil/Brain (NUEVO v4.6, repo propio ignorado)
+├── 16_Side Project/              # Side project local Oil/Brain (NUEVO v4.6, repo propio ignorado)
 ├── Design.md
 ├── Pattern_Intelligence_Results.md
 └── README.md
@@ -70,7 +70,7 @@ Carpeta de resultados y outputs de proyectos. Aquí terminan los entregables de 
 
 ## 📦 CONTENIDO DESTACADO
 
-### 09b_World_OIM/
+### 09_World_OIM/
 - `01_OIM_Website_v2/` — Versión 2 del website
 - `02_OIM_Website/` — Website principal
 - `03_OIM_Website_One/` — Variante One
@@ -97,9 +97,9 @@ Carpeta de resultados y outputs de proyectos. Aquí terminan los entregables de 
 ## 📋 REGLAS DE ENUMERACIÓN
 
 1. **00_ = recursos especiales** — No seguir secuencia normal
-2. **09b_World_OIM** — Contiene 4 variantes de OIM Website (sufijo b preservado por compatibilidad histórica)
+2. **09_World_OIM** — Contiene 4 variantes de OIM Website (renombrado desde 09b)
 3. **15-16** — Secuencia nueva para AI News y Side Project
 
 ---
 
-*Think Different PersonalOS v4.6 — 2026-05-22*
+*Think Different PersonalOS v4.7 — 2026-05-23*
