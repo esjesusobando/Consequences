@@ -23,17 +23,17 @@ Persiste aprendizajes con `topic_key: video-intel-skill`. Guardar: metodologias 
 
 ## 9-Step Workflow
 
-| Step                       | Action                                         | Description                                                       |
-|----------------------------|------------------------------------------------|-------------------------------------------------------------------|
-| 1                          | Video URL Validation                           | Verifica URL valida de YouTube                                    |
-| 2                          | Metadata Extraction                            | yt-dlp obtiene titulo, canal, duracion                            |
-| 3                          | Subtitle Download                              | Descarga subtitles si estan disponibles                           |
-| 4                          | Transcript Generation                          | whisper transcribe audio a texto                                  |
-| 5                          | NLP Methodology Extraction                     | Identifica tecnicas, herramientas, pasos                          |
-| 6                          | Demo URL Detection                             | Extrae URLs de demos/sandboxes del transcript                     |
-| 7                          | OS Verification                                | Verifica herramientas vs sistema del usuario                      |
-| 8                          | Plan Synthesis                                 | Combina todo en plan ejecutable                                   |
-| 9                          | Output Generation                              | Genera markdown con implementacion_plan.md                        |
+| Step                                | Action                                                  | Description                                                                |
+|------------------------------------|--------------------------------------------------------|---------------------------------------------------------------------------|
+| 1                                   | Video URL Validation                                    | Verifica URL valida de YouTube                                             |
+| 2                                   | Metadata Extraction                                     | yt-dlp obtiene titulo, canal, duracion                                     |
+| 3                                   | Subtitle Download                                       | Descarga subtitles si estan disponibles                                    |
+| 4                                   | Transcript Generation                                   | whisper transcribe audio a texto                                           |
+| 5                                   | NLP Methodology Extraction                              | Identifica tecnicas, herramientas, pasos                                   |
+| 6                                   | Demo URL Detection                                      | Extrae URLs de demos/sandboxes del transcript                              |
+| 7                                   | OS Verification                                         | Verifica herramientas vs sistema del usuario                               |
+| 8                                   | Plan Synthesis                                          | Combina todo en plan ejecutable                                            |
+| 9                                   | Output Generation                                       | Genera markdown con implementacion_plan.md                                 |
 
 ## Video Registry
 
@@ -76,14 +76,14 @@ Aprendizajes migran a la **Unicorn Engineering knowledge base** en `02_Knowledge
 
 ## Triggers
 
-| Pattern                                                  | Cuando usar                                            |
-|----------------------------------------------------------|--------------------------------------------------------|
-| "analizar video"                                         | Extraer contenido de YouTube                           |
-| "extraer de youtube"                                     | Transcribir video                                      |
-| "plan de implementacion desde video"                     | Generar pasos desde video                              |
-| "transcribir video"                                      | Obtener transcripcion                                  |
-| "analizar repositorio"                                   | Escanear codigo de GitHub                              |
-| "extraer metodologias"                                   | Identificar tecnicas en transcript                     |
+| Pattern                                                           | Cuando usar                                                     |
+|------------------------------------------------------------------|----------------------------------------------------------------|
+| "analizar video"                                                  | Extraer contenido de YouTube                                    |
+| "extraer de youtube"                                              | Transcribir video                                               |
+| "plan de implementacion desde video"                              | Generar pasos desde video                                       |
+| "transcribir video"                                               | Obtener transcripcion                                           |
+| "analizar repositorio"                                            | Escanear codigo de GitHub                                       |
+| "extraer metodologias"                                            | Identificar tecnicas en transcript                              |
 
 ## Modo de Uso
 
@@ -117,13 +117,13 @@ print(result["prerequisites"])
 
 ## Componentes
 
-| Modulo                                    | Proposito                                                           |
-|-------------------------------------------|---------------------------------------------------------------------|
-| `video_analyzer.py`                       | yt-dlp + whisper para metadata y transcripcion                      |
-| `repo_scanner.py`                         | git clone + AST parsing para analisis de codigo                     |
-| `synthesis_engine.py`                     | Combina datos y genera plan                                         |
-| `video_registry.py`                       | Cache local de videos analizados y busqueda                         |
-| `cli.py`                                  | Interfaz Click para CLI                                             |
+| Modulo                                             | Proposito                                                                    |
+|---------------------------------------------------|-----------------------------------------------------------------------------|
+| `video_analyzer.py`                                | yt-dlp + whisper para metadata y transcripcion                               |
+| `repo_scanner.py`                                  | git clone + AST parsing para analisis de codigo                              |
+| `synthesis_engine.py`                              | Combina datos y genera plan                                                  |
+| `video_registry.py`                                | Cache local de videos analizados y busqueda                                  |
+| `cli.py`                                           | Interfaz Click para CLI                                                      |
 
 ## Output
 

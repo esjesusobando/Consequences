@@ -1,9 +1,9 @@
 ---
 name: qmd
 description: >
-  Sistema de metadata QMD para skills. Framework de evaluación y schema de metadata 
-  para skills. Referencia al código en Archive + utilidad operativa para consultar 
-  schemas de evaluación. Activa cuando: "qmd", "metadata de skill", "eval schema", 
+  Sistema de metadata QMD para skills. Framework de evaluación y schema de metadata
+  para skills. Referencia al código en Archive + utilidad operativa para consultar
+  schemas de evaluación. Activa cuando: "qmd", "metadata de skill", "eval schema",
   "skill scoring", "qué metadata tiene esta skill".
 ---
 
@@ -25,11 +25,11 @@ Esta skill es el **sistema de registro** del PersonalOS. Centraliza metadata, ev
 
 ## Ubicaciones
 
-| Tipo                                  | Ubicación                                                     |
-|---------------------------------------|---------------------------------------------------------------|
-| **Código fuente**                     | `05_Archive/07_Repos_Gentleman/qmd/`                          |
-| **Skills definition**                 | `05_Archive/07_Repos_Gentleman/qmd/skills/`                   |
-| **Eval framework**                    | `05_Archive/07_Repos_Gentleman/qmd/finetune/`                 |
+| Tipo                                           | Ubicación                                                              |
+|-----------------------------------------------|-----------------------------------------------------------------------|
+| **Código fuente**                              | `05_Archive/07_Repos_Gentleman/qmd/`                                   |
+| **Skills definition**                          | `05_Archive/07_Repos_Gentleman/qmd/skills/`                            |
+| **Eval framework**                             | `05_Archive/07_Repos_Gentleman/qmd/finetune/`                          |
 
 ## Estructura QMD
 
@@ -108,16 +108,16 @@ El **Skill Auditor** en PersonalOS consulta el schema QMD para evaluar skills:
 # Pseudo-código de cómo Skill Auditor usa QMD
 def audit_skill(skill_path):
     schema = qmd.load_schema(skill_path)
-    
+
     # Verificar required fields
     required = ["name", "description", "triggers"]
     for field in required:
         if not schema.get(field):
             issues.append(f"Missing: {field}")
-    
+
     # Ejecutar evals
     eval_results = qmd.run_evals(skill_path, schema.evals)
-    
+
     return {
         "score": eval_results.score,
         "issues": issues,
@@ -160,12 +160,12 @@ cat 05_Archive/07_Repos_Gentleman/qmd/finetune/eval.py
 
 ## Diferencia con Otras
 
-| Sistema                   | Propósito                                 | Tipo                            |
-|---------------------------|-------------------------------------------|---------------------------------|
-| **QMD**                   | Metadata + Evaluación                     | Framework                       |
-| **SDD**                   | Especificar + implementar                 | Metodología                     |
-| **CE**                    | Plan + Review + Compound                  | Workflow                        |
-| **GGA**                   | Code review                               | Pre-commit hook                 |
+| Sistema                            | Propósito                                          | Tipo                                     |
+|-----------------------------------|---------------------------------------------------|-----------------------------------------|
+| **QMD**                            | Metadata + Evaluación                              | Framework                                |
+| **SDD**                            | Especificar + implementar                          | Metodología                              |
+| **CE**                             | Plan + Review + Compound                           | Workflow                                 |
+| **GGA**                            | Code review                                        | Pre-commit hook                          |
 
 ---
 

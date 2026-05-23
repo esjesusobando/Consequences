@@ -180,10 +180,10 @@ Add a REST API.
 
 ## Affected Areas
 
-| Area                                  | Impact                         | Description                         |
-|---------------------------------------|--------------------------------|-------------------------------------|
-| Backend stuff                         | Modified                       | Changes                             |
-| Frontend things                       | New                            | More changes                        |
+| Area                                           | Impact                                  | Description                                  |
+|-----------------------------------------------|----------------------------------------|---------------------------------------------|
+| Backend stuff                                  | Modified                                | Changes                                      |
+| Frontend things                                | New                                     | More changes                                 |
 ```
 
 ### Why This Is Bad

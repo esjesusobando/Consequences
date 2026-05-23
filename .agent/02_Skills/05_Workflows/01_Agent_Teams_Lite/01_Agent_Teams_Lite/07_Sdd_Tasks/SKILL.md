@@ -88,12 +88,12 @@ openspec/changes/{change-name}/
 
 Each task MUST be:
 
-| Criteria                           | Example ✅                                                                      | Anti-example ❌                              |
-|------------------------------------|--------------------------------------------------------------------------------|---------------------------------------------|
-| **Specific**                       | "Create `internal/auth/middleware.go` with JWT validation"                     | "Add auth"                                  |
-| **Actionable**                     | "Add `ValidateToken()` method to `AuthService`"                                | "Handle tokens"                             |
-| **Verifiable**                     | "Test: `POST /login` returns 401 without token"                                | "Make sure it works"                        |
-| **Small**                          | One file or one logical unit of work                                           | "Implement the feature"                     |
+| Criteria                                    | Example ✅                                                                               | Anti-example ❌                                       |
+|--------------------------------------------|----------------------------------------------------------------------------------------|-----------------------------------------------------|
+| **Specific**                                | "Create `internal/auth/middleware.go` with JWT validation"                              | "Add auth"                                           |
+| **Actionable**                              | "Add `ValidateToken()` method to `AuthService`"                                         | "Handle tokens"                                      |
+| **Verifiable**                              | "Test: `POST /login` returns 401 without token"                                         | "Make sure it works"                                 |
+| **Small**                                   | One file or one logical unit of work                                                    | "Implement the feature"                              |
 
 ### Phase Organization Guidelines
 
@@ -138,12 +138,12 @@ Return to the orchestrator:
 **Location**: `openspec/changes/{change-name}/tasks.md` (openspec/hybrid) | Engram `sdd/{change-name}/tasks` (engram) | inline (none)
 
 ### Breakdown
-| Phase                       | Tasks                       | Focus                            |
-|-----------------------------|-----------------------------|----------------------------------|
-| Phase 1                     | {N}                         | {Phase name}                     |
-| Phase 2                     | {N}                         | {Phase name}                     |
-| Phase 3                     | {N}                         | {Phase name}                     |
-| Total                       | {N}                         |                                  |
+| Phase                                | Tasks                                | Focus                                     |
+|-------------------------------------|-------------------------------------|------------------------------------------|
+| Phase 1                              | {N}                                  | {Phase name}                              |
+| Phase 2                              | {N}                                  | {Phase name}                              |
+| Phase 3                              | {N}                                  | {Phase name}                              |
+| Total                                | {N}                                  |                                           |
 
 ### Implementation Order
 {Brief description of the recommended order and why}

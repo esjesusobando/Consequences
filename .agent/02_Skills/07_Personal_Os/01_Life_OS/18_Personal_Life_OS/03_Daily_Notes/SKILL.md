@@ -171,17 +171,17 @@ Notes: Terminando script de bash
 
 ## Implementation
 
-| Scenario                              | Behavior                                                   |
-|---------------------------------------|------------------------------------------------------------|
-| Sin input                             | Prompt: "Sin actividad registrada hoy"                     |
-| Privacy sensitive                     | Tag `[sensitive]`, no análisis                             |
-| <5 días data                          | "Aún no hay suficientes datos"                             |
-| Log >5000 líneas                      | Archivar comprimido                                        |
+| Scenario                                       | Behavior                                                            |
+|-----------------------------------------------|--------------------------------------------------------------------|
+| Sin input                                      | Prompt: "Sin actividad registrada hoy"                              |
+| Privacy sensitive                              | Tag `[sensitive]`, no análisis                                      |
+| <5 días data                                   | "Aún no hay suficientes datos"                                      |
+| Log >5000 líneas                               | Archivar comprimido                                                 |
 
 ---
 
 ## Changelog
 
-| Date                           | Change                             |
-|--------------------------------|------------------------------------|
-| 2026-03-31                     | Initial design                     |
+| Date                                    | Change                                      |
+|----------------------------------------|--------------------------------------------|
+| 2026-03-31                              | Initial design                              |

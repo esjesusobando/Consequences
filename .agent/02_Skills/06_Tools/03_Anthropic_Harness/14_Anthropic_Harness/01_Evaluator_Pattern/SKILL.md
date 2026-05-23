@@ -41,20 +41,20 @@ Implementa el patrón de Adversarial Evaluation (GAN-inspired) de Anthropic:
 ## Criterios de Grading (Anthropic Pattern)
 
 ### Para Diseño
-| Criterio                                 | Peso                          | Descripción                                   |
-|------------------------------------------|-------------------------------|-----------------------------------------------|
-| **Design Quality**                       | 🔴 ALTO                        | Coherencia visual, mood                       |
-| **Originalidad**                         | 🔴 ALTO                        | Custom vs AI slop                             |
-| **Craft**                                | default                       | Ejecución técnica                             |
-| **Funcionalidad**                        | default                       | Usabilidad                                    |
+| Criterio                                          | Peso                                   | Descripción                                            |
+|--------------------------------------------------|---------------------------------------|-------------------------------------------------------|
+| **Design Quality**                                | 🔴 ALTO                                 | Coherencia visual, mood                                |
+| **Originalidad**                                  | 🔴 ALTO                                 | Custom vs AI slop                                      |
+| **Craft**                                         | default                                | Ejecución técnica                                      |
+| **Funcionalidad**                                 | default                                | Usabilidad                                             |
 
 ### Para Código
-| Criterio                                | Peso                          | Descripción                            |
-|-----------------------------------------|-------------------------------|----------------------------------------|
-| **Code Quality**                        | 1.2                           | Clean code                             |
-| **Test Coverage**                       | 1.2                           | % cubierto                             |
-| **Security**                            | 🔴 ALTO                        | Vulnerabilidades                       |
-| **Performance**                         | default                       | Speed                                  |
+| Criterio                                         | Peso                                   | Descripción                                     |
+|-------------------------------------------------|---------------------------------------|------------------------------------------------|
+| **Code Quality**                                 | 1.2                                    | Clean code                                      |
+| **Test Coverage**                                | 1.2                                    | % cubierto                                      |
+| **Security**                                     | 🔴 ALTO                                 | Vulnerabilidades                                |
+| **Performance**                                  | default                                | Speed                                           |
 
 ---
 
@@ -81,11 +81,11 @@ else:
 
 ## Integración con Perfiles
 
-| Perfil                                | Cómo usa                                             |
-|---------------------------------------|------------------------------------------------------|
-| Product Builder                       | Invoca después de cada feature                       |
-| Design Ops                            | Playwright para interactivo                          |
-| Data Engineer                         | Verifica pipelines                                   |
+| Perfil                                         | Cómo usa                                                      |
+|-----------------------------------------------|--------------------------------------------------------------|
+| Product Builder                                | Invoca después de cada feature                                |
+| Design Ops                                     | Playwright para interactivo                                   |
+| Data Engineer                                  | Verifica pipelines                                            |
 
 ---
 

@@ -126,12 +126,12 @@ Mientras los subagentes entregan el contenido, las Skills actúan como filtros d
 
 ### 📊 Resumen del Flujo de Trabajo
 
-| Paso                         | Componente                        | Función Crítica                                                                      |
-|------------------------------|-----------------------------------|--------------------------------------------------------------------------------------|
-| Inicio                       | Slash Command                     | El humano da la orden de salida y define el objetivo.                                |
-| Datos                        | MCP                               | Conexión con el stock real y datos de clientes externos.                             |
-| Creación                     | Subagents                         | Generación masiva de contenido (Ads, Email, Web) en paralelo.                        |
-| Pulido                       | Skills                            | Formateo automático y control de estilo sin intervención humana.                     |
+| Paso                                  | Componente                                 | Función Crítica                                                                               |
+|--------------------------------------|-------------------------------------------|----------------------------------------------------------------------------------------------|
+| Inicio                                | Slash Command                              | El humano da la orden de salida y define el objetivo.                                         |
+| Datos                                 | MCP                                        | Conexión con el stock real y datos de clientes externos.                                      |
+| Creación                              | Subagents                                  | Generación masiva de contenido (Ads, Email, Web) en paralelo.                                 |
+| Pulido                                | Skills                                     | Formateo automático y control de estilo sin intervención humana.                              |
 
 ### ¿Cómo se vería esto en tu pantalla?
 

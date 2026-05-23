@@ -253,14 +253,14 @@ For complete error catalog with fixes, see [COMMON_MISTAKES.md](COMMON_MISTAKES.
 
 ### Quick Fixes
 
-| Mistake                                                            | Fix                                                           |
-|--------------------------------------------------------------------|---------------------------------------------------------------|
-| `$json.field`                                                      | `{{$json.field}}`                                             |
-| `{{$json.field name}}`                                             | `{{$json['field name']}}`                                     |
-| `{{$node.HTTP Request}}`                                           | `{{$node["HTTP Request"]}}`                                   |
-| `{{{$json.field}}}`                                                | `{{$json.field}}`                                             |
-| `{{$json.name}}` (webhook)                                         | `{{$json.body.name}}`                                         |
-| `'={{$json.email}}'` (Code node)                                   | `$json.email`                                                 |
+| Mistake                                                                     | Fix                                                                    |
+|----------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| `$json.field`                                                               | `{{$json.field}}`                                                      |
+| `{{$json.field name}}`                                                      | `{{$json['field name']}}`                                              |
+| `{{$node.HTTP Request}}`                                                    | `{{$node["HTTP Request"]}}`                                            |
+| `{{{$json.field}}}`                                                         | `{{$json.field}}`                                                      |
+| `{{$json.name}}` (webhook)                                                  | `{{$json.body.name}}`                                                  |
+| `'={{$json.email}}'` (Code node)                                            | `$json.email`                                                          |
 
 ---
 

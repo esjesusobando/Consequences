@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>10 Skills Claude — El Arsenal 10x</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=JetBrains+Mono:wght@400;500;700&family=Geist:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #0a0a0a;
+    --bg-raised: #141413;
+    --fg: #faf9f5;
+    --fg-dim: #8a877f;
+    --accent: #d97757;
+    --accent-soft: rgba(217, 119, 87, 0.12);
+    --line: rgba(250, 249, 245, 0.08);
+    --line-strong: rgba(250, 249, 245, 0.18);
+  }
+
+  html, body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Geist', system-ui, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    letter-spacing: -0.01em;
+  }
+
+  .slide {
+    width: 100vw;
+    height: 100vh;
+    min-height: 900px;
+    padding: 72px 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .slide::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse 900px 600px at 85% 15%,
+      rgba(217, 119, 87, 0.07),
+      transparent 60%
+    );
+    pointer-events: none;
+  }
+
+  .slide-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--fg-dim);
+    z-index: 2;
+  }
+
+  .slide-header .track {
+    color: var(--accent);
+  }
+
+  .slide-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+  }
+
+  .slide-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--fg-dim);
+    text-transform: uppercase;
+    z-index: 2;
+  }
+
+  /* =========== TITLE SLIDE =========== */
+  .title-slide {
+    background: var(--bg);
+    justify-content: center;
+    align-items: flex-start;
+    padding: 96px;
+  }
+
+  .title-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 48px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .title-eyebrow::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 120px;
+    background: var(--accent);
+  }
+
+  .title-main {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-size: 180px;
+    line-height: 0.88;
+    letter-spacing: -0.04em;
+    margin-bottom: 48px;
+  }
+
+  .title-main em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .title-hook {
+    font-family: 'Geist', sans-serif;
+    font-size: 28px;
+    line-height: 1.35;
+    font-weight: 300;
+    color: var(--fg);
+    max-width: 820px;
+    margin-bottom: 40px;
+  }
+
+  .title-hook strong {
+    font-weight: 500;
+    color: var(--accent);
+  }
+
+  .title-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--fg-dim);
+    letter-spacing: 0.1em;
+    display: flex;
+    gap: 40px;
+    margin-top: auto;
+  }
+
+  .title-meta span strong {
+    display: block;
+    color: var(--fg);
+    font-size: 22px;
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-top: 4px;
+  }
+
+  /* =========== SKILL SLIDES =========== */
+  .skill-number {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-size: 380px;
+    line-height: 0.85;
+    letter-spacing: -0.06em;
+    color: var(--accent);
+    position: absolute;
+    top: 54px;
+    right: 72px;
+    opacity: 0.92;
+    z-index: 1;
+  }
+
+  .skill-number small {
+    font-size: 28px;
+    vertical-align: top;
+    margin-top: 32px;
+    display: inline-block;
+    color: var(--fg-dim);
+    margin-left: -8px;
+  }
+
+  .skill-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--fg-dim);
+    margin-bottom: 24px;
+  }
+
+  .skill-label::before {
+    content: '—— ';
+    color: var(--accent);
+  }
+
+  .skill-name {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-size: 112px;
+    line-height: 0.92;
+    letter-spacing: -0.035em;
+    margin-bottom: 12px;
+    max-width: 14ch;
+  }
+
+  .skill-name em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .skill-tag {
+    font-family: 'Geist', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--fg-dim);
+    margin-bottom: 56px;
+    letter-spacing: -0.005em;
+  }
+
+  .skill-block {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 32px;
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+    align-items: baseline;
+  }
+
+  .skill-block:last-of-type {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .skill-block-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding-top: 4px;
+  }
+
+  .skill-block-text {
+    font-family: 'Geist', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.4;
+    color: var(--fg);
+    letter-spacing: -0.01em;
+    max-width: 62ch;
+  }
+
+  .skill-block-text strong {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .skill-block-proof {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 26px;
+    line-height: 1.3;
+    color: var(--fg);
+  }
+
+  .skill-block-proof .metric {
+    color: var(--accent);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  a.skill-demo-bar {
+    margin-top: auto;
+    padding: 22px 28px;
+    background: var(--bg-raised);
+    border: 1px solid var(--line-strong);
+    border-left: 2px solid var(--accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s ease;
+    cursor: pointer;
+    position: relative;
+  }
+
+  a.skill-demo-bar:hover {
+    background: #1c1a16;
+    border-color: var(--accent);
+    border-left-width: 4px;
+    padding-left: 26px;
+    transform: translateX(2px);
+  }
+
+  a.skill-demo-bar .demo-label {
+    color: var(--accent);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  a.skill-demo-bar .demo-path {
+    color: var(--fg);
+    font-weight: 500;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  a.skill-demo-bar .demo-action {
+    color: var(--fg-dim);
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  a.skill-demo-bar .demo-action::before {
+    content: '> ';
+    color: var(--accent);
+  }
+
+  a.skill-demo-bar .demo-arrow {
+    color: var(--accent);
+    font-size: 16px;
+    margin-left: 8px;
+    transition: transform 0.25s ease;
+    font-family: 'Geist', sans-serif;
+    font-weight: 300;
+  }
+
+  a.skill-demo-bar:hover .demo-arrow {
+    transform: translate(4px, -4px);
+  }
+
+  @media print {
+    a.skill-demo-bar { transition: none; }
+    a.skill-demo-bar:hover { transform: none; padding-left: 28px; }
+  }
+
+  /* =========== DIVIDER SLIDES =========== */
+  .divider-slide {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background: var(--bg);
+  }
+
+  .divider-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 32px;
+  }
+
+  .divider-text {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 1;
+    letter-spacing: -0.035em;
+    max-width: 20ch;
+  }
+
+  .divider-text em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  /* =========== CLOSING SLIDE =========== */
+  .closing-slide {
+    justify-content: flex-end;
+    background: var(--bg);
+  }
+
+  .closing-huge {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-size: 220px;
+    line-height: 0.86;
+    letter-spacing: -0.05em;
+    margin-bottom: 48px;
+  }
+
+  .closing-huge em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .closing-cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 32px;
+    border-top: 1px solid var(--line-strong);
+  }
+
+  .closing-cta-text {
+    font-family: 'Geist', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.4;
+    max-width: 48ch;
+  }
+
+  .closing-cta-cmd {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    padding: 16px 24px;
+    border: 1px solid var(--accent);
+  }
+
+  /* Print styles for PDF export */
+  @media print {
+    html, body { background: var(--bg); }
+    .slide {
+      width: 100%;
+      height: 100vh;
+      page-break-after: always;
+      break-after: page;
+      box-shadow: none;
+    }
+    @page {
+      size: 1920px 1080px;
+      margin: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================ SLIDE 1: TITLE ============================ -->
+<section class="slide title-slide">
+  <div>
+    <div class="title-eyebrow">Top 10 · Claude Skills · 2026</div>
+    <h1 class="title-main">El arsenal<br><em>que no te cuentan.</em></h1>
+    <p class="title-hook">
+      Mientras el 99% le pide a Claude que le escriba un <em>to-do app</em>,
+      tú tienes <strong>10 skills</strong> que convierten un prompt
+      en un sistema de producción.
+    </p>
+  </div>
+
+  <div class="title-meta">
+    <span>Tiempo <strong>7 min</strong></span>
+    <span>Skills <strong>10</strong></span>
+    <span>Demos funcionales <strong>40 archivos</strong></span>
+    <span>Nivel <strong>Shipping</strong></span>
+  </div>
+</section>
+
+<!-- ============================ DIVIDER: El dolor común ============================ -->
+<section class="slide divider-slide">
+  <div>
+    <div class="divider-eyebrow">Antes de empezar</div>
+    <p class="divider-text">
+      Claude por defecto<br>
+      escribe código <em>genérico.</em><br>
+      <br>
+      Con estas skills,<br>
+      escribe tu <em>producto.</em>
+    </p>
+  </div>
+</section>
+
+<!-- ============================ SKILL 01: TASTE ============================ -->
+<section class="slide">
+  <div class="skill-number">01<small>/10</small></div>
+
+  <div class="slide-header">
+    <span class="track">VISUAL · FRONTEND</span>
+    <span>Presentación · 10 Skills</span>
+  </div>
+
+  <div class="slide-body">
+    <div class="skill-label">Skill 01</div>
+    <h2 class="skill-name">Taste <em>Skill</em></h2>
+    <p class="skill-tag">Anti-cliché para interfaces que tienen que vender.</p>
+
+    <div class="skill-block">
+      <div class="skill-block-label">El síntoma</div>
+      <p class="skill-block-text">
+        Tu landing sale <strong>lila con gradiente</strong>, fuente Inter, todo centrado.
+        Parece hecha por una IA. Porque lo fue.
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">La skill</div>
+      <p class="skill-block-text">
+        Prohíbe los defaults que delatan al modelo: asimetría obligatoria, 1 solo acento, Geist en vez de Inter.
+        El output vibra a <strong>Linear / Vercel / Arc</strong>, no a "GPT generó esto".
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">En el demo</div>
+      <p class="skill-block-proof">
+        Landing <span class="metric">"Meridian"</span> — copilot financiero. Split 50/50 asimétrico, acento esmeralda, tipografía Geist. Sin lila IA ni gradientes neón.
+      </p>
+    </div>
+  </div>
+
+  <a class="skill-demo-bar" href="../skill-demos-functional/10-taste-skill.html">
+    <span class="demo-label">Demo</span>
+    <span class="demo-path">10-taste-skill.html</span>
+    <span class="demo-action">landing "Meridian"</span>
+    <span class="demo-arrow">↗</span>
+  </a>
+</section>
+
+<!-- ============================ SKILL 02: MINIMALIST ============================ -->
+<section class="slide">
+  <div class="skill-number">02<small>/10</small></div>
+
+  <div class="slide-header">
+    <span class="track">VISUAL · FRONTEND</span>
+    <span>Presentación · 10 Skills</span>
+  </div>
+
+  <div class="slide-body">
+    <div class="skill-label">Skill 02</div>
+    <h2 class="skill-name">Minimalist <em>UI</em></h2>
+    <p class="skill-tag">Interfaces estilo documento. Claridad primero, decoración nunca.</p>
+
+    <div class="skill-block">
+      <div class="skill-block-label">El síntoma</div>
+      <p class="skill-block-text">
+        Dashboards con <strong>12 sombras por card</strong>, degradados azules, emojis de iconos.
+        El usuario no encuentra el botón importante porque todo grita igual.
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">La skill</div>
+      <p class="skill-block-text">
+        Paleta cálida monocromática, tipografía editorial serif + mono, bento asimétrico plano.
+        Vibra a <strong>Stripe docs</strong> o <strong>Notion</strong>. Tu info respira.
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">En el demo</div>
+      <p class="skill-block-proof">
+        Dashboard <span class="metric">"Metric"</span> — bento asimétrico, paleta cálida <span class="metric">#F7F6F3</span>, serif editorial para H1, mono para metadata, cero sombras pesadas.
+      </p>
+    </div>
+  </div>
+
+  <a class="skill-demo-bar" href="../skill-demos-functional/05-minimalist-skill.html">
+    <span class="demo-label">Demo</span>
+    <span class="demo-path">05-minimalist-skill.html</span>
+    <span class="demo-action">dashboard "Metric"</span>
+    <span class="demo-arrow">↗</span>
+  </a>
+</section>
+
+<!-- ============================ SKILL 03: BRAND GUIDELINES ============================ -->
+<section class="slide">
+  <div class="skill-number">03<small>/10</small></div>
+
+  <div class="slide-header">
+    <span class="track">VISUAL · IDENTIDAD</span>
+    <span>Presentación · 10 Skills</span>
+  </div>
+
+  <div class="slide-body">
+    <div class="skill-label">Skill 03</div>
+    <h2 class="skill-name">Brand <em>Guidelines</em></h2>
+    <p class="skill-tag">El hexcode del cliente, blindado a cualquier prompt.</p>
+
+    <div class="skill-block">
+      <div class="skill-block-label">El síntoma</div>
+      <p class="skill-block-text">
+        Pides 8 componentes y te devuelve <strong>8 paletas distintas</strong>.
+        El cliente abre el staging y ve azules que nunca autorizó.
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">La skill</div>
+      <p class="skill-block-text">
+        Ata hexcodes, tipografías y tokens a la conversación entera.
+        Claude <strong>no puede romper</strong> la marca aunque se lo pidas mal.
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">En el demo</div>
+      <p class="skill-block-proof">
+        Landing <span class="metric">"Claude for Enterprise"</span> con los <span class="metric">7 hexcodes</span> oficiales, Poppins + Lora, hero, features, pricing y footer consistentes.
+      </p>
+    </div>
+  </div>
+
+  <a class="skill-demo-bar" href="../skill-demos-functional/01-brand-guidelines.html">
+    <span class="demo-label">Demo</span>
+    <span class="demo-path">01-brand-guidelines.html</span>
+    <span class="demo-action">landing Anthropic brand</span>
+    <span class="demo-arrow">↗</span>
+  </a>
+</section>
+
+<!-- ============================ DIVIDER 2 ============================ -->
+<section class="slide divider-slide">
+  <div>
+    <div class="divider-eyebrow">Cambio de marcha</div>
+    <p class="divider-text">
+      Ya viste lo <em>visual.</em><br>
+      Ahora viene<br>
+      el <em>motor</em> por debajo.
+    </p>
+  </div>
+</section>
+
+<!-- ============================ SKILL 04: EXCALIDRAW ============================ -->
+<section class="slide">
+  <div class="skill-number">04<small>/10</small></div>
+
+  <div class="slide-header">
+    <span class="track">ARQUITECTURA · DIAGRAMAS</span>
+    <span>Presentación · 10 Skills</span>
+  </div>
+
+  <div class="slide-body">
+    <div class="skill-label">Skill 04</div>
+    <h2 class="skill-name">Excalidraw <em>Architect</em></h2>
+    <p class="skill-tag">Diagramas que argumentan, no que decoran.</p>
+
+    <div class="skill-block">
+      <div class="skill-block-label">El síntoma</div>
+      <p class="skill-block-text">
+        Pasas <strong>3 horas</strong> dibujando cajas con flechas para explicar tu arquitectura en Notion.
+        Nadie lo entiende igual.
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">La skill</div>
+      <p class="skill-block-text">
+        Genera JSON importable en excalidraw.com con <strong>multi-zoom, evidencia técnica inline</strong>
+        (snippets reales, payloads JSON) y patrones que argumentan: embudos, árboles, abanicos.
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">En el demo</div>
+      <p class="skill-block-proof">
+        Arquitectura <span class="metric">RAG con Claude + Pinecone</span>: 30+ elementos, multi-zoom, snippets de código JSON reales dentro de las cajas.
+      </p>
+    </div>
+  </div>
+
+  <a class="skill-demo-bar" href="../skill-demos-functional/02-excalidraw-diagram.excalidraw" download>
+    <span class="demo-label">Demo</span>
+    <span class="demo-path">02-excalidraw-diagram.excalidraw</span>
+    <span class="demo-action">arrastrá a excalidraw.com</span>
+    <span class="demo-arrow">↗</span>
+  </a>
+</section>
+
+<!-- ============================ SKILL 05: PLAYWRIGHT ============================ -->
+<section class="slide">
+  <div class="skill-number">05<small>/10</small></div>
+
+  <div class="slide-header">
+    <span class="track">TESTING · BROWSER</span>
+    <span>Presentación · 10 Skills</span>
+  </div>
+
+  <div class="slide-body">
+    <div class="skill-label">Skill 05</div>
+    <h2 class="skill-name">Playwright <em>Plugin</em></h2>
+    <p class="skill-tag">Claude abre un browser real. Hace click. Encuentra bugs.</p>
+
+    <div class="skill-block">
+      <div class="skill-block-label">El síntoma</div>
+      <p class="skill-block-text">
+        Rompes el checkout un viernes. Te enteras el lunes por un cliente cabreado.
+        <strong>48 horas</strong> de revenue perdido.
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">La skill</div>
+      <p class="skill-block-text">
+        Claude maneja Chromium de verdad: abre tu app, navega, completa forms, saca screenshots,
+        detecta regresiones. <strong>E2E real</strong>, no mockeo.
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">En el demo</div>
+      <p class="skill-block-proof">
+        Proyecto Playwright completo: <span class="metric">753 líneas</span>, 6 tests E2E reales, 3 navegadores (Chromium + Firefox + WebKit), helpers de login, scraping dinámico.
+      </p>
+    </div>
+  </div>
+
+  <a class="skill-demo-bar" href="../skill-demos-functional/07-playwright-plugin/README.md">
+    <span class="demo-label">Demo</span>
+    <span class="demo-path">07-playwright-plugin/</span>
+    <span class="demo-action">npm install && npm test</span>
+    <span class="demo-arrow">↗</span>
+  </a>
+</section>
+
+<!-- ============================ SKILL 06: FIRECRAWL ============================ -->
+<section class="slide">
+  <div class="skill-number">06<small>/10</small></div>
+
+  <div class="slide-header">
+    <span class="track">DATA · SCRAPING</span>
+    <span>Presentación · 10 Skills</span>
+  </div>
+
+  <div class="slide-body">
+    <div class="skill-label">Skill 06</div>
+    <h2 class="skill-name">Firecrawl <em>CLI</em></h2>
+    <p class="skill-tag">Cualquier sitio público → markdown limpio listo para LLM.</p>
+
+    <div class="skill-block">
+      <div class="skill-block-label">El síntoma</div>
+      <p class="skill-block-text">
+        Quieres un dataset para RAG. Te pones a hacer scraping con <strong>BeautifulSoup + regex</strong>.
+        3 días después, tienes HTML roto con ads.
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">La skill</div>
+      <p class="skill-block-text">
+        Un comando convierte un dominio entero en JSONL estructurado con schema.
+        Markdown limpio, frontmatter, <strong>zero noise</strong>. Listo para embeddings.
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">En el demo</div>
+      <p class="skill-block-proof">
+        Script con <span class="metric">3 comandos</span> reales (scrape, crawl, schema-based), JSON Schema de extracción y <span class="metric">5 registros JSONL</span> de ejemplo ya listos.
+      </p>
+    </div>
+  </div>
+
+  <a class="skill-demo-bar" href="../skill-demos-functional/03-firecrawl-cli/sample-output.md">
+    <span class="demo-label">Demo</span>
+    <span class="demo-path">03-firecrawl-cli/</span>
+    <span class="demo-action">mira el JSONL estructurado</span>
+    <span class="demo-arrow">↗</span>
+  </a>
+</section>
+
+<!-- ============================ SKILL 07: GWS CLI ============================ -->
+<section class="slide">
+  <div class="skill-number">07<small>/10</small></div>
+
+  <div class="slide-header">
+    <span class="track">PRODUCTIVIDAD · AUTOMATION</span>
+    <span>Presentación · 10 Skills</span>
+  </div>
+
+  <div class="slide-body">
+    <div class="skill-label">Skill 07</div>
+    <h2 class="skill-name">GWS <em>CLI</em></h2>
+    <p class="skill-tag">Gmail, Calendar, Drive y Sheets desde la terminal.</p>
+
+    <div class="skill-block">
+      <div class="skill-block-label">El síntoma</div>
+      <p class="skill-block-text">
+        Cada mañana: abrir Gmail, filtrar, abrir Calendar, copiar al Notion, abrir Drive, chequear qué cambió.
+        <strong>40 min antes de empezar a trabajar.</strong>
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">La skill</div>
+      <p class="skill-block-text">
+        Un script de 80 líneas compila tu standup diario automático:
+        emails no leídos, eventos del día, archivos modificados, te lo manda por mail.
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">En el demo</div>
+      <p class="skill-block-proof">
+        Script de <span class="metric">208 líneas</span>: lista no leídos de Gmail, eventos del Calendar, cambios en Drive, compila markdown y lo envía por email.
+      </p>
+    </div>
+  </div>
+
+  <a class="skill-demo-bar" href="../skill-demos-functional/04-gws-cli/daily-standup-bot.sh">
+    <span class="demo-label">Demo</span>
+    <span class="demo-path">04-gws-cli/daily-standup-bot.sh</span>
+    <span class="demo-action">standup diario automático</span>
+    <span class="demo-arrow">↗</span>
+  </a>
+</section>
+
+<!-- ============================ SKILL 08: N8N ============================ -->
+<section class="slide">
+  <div class="skill-number">08<small>/10</small></div>
+
+  <div class="slide-header">
+    <span class="track">AUTOMATION · WORKFLOWS</span>
+    <span>Presentación · 10 Skills</span>
+  </div>
+
+  <div class="slide-body">
+    <div class="skill-label">Skill 08</div>
+    <h2 class="skill-name">n8n <em>Skills</em></h2>
+    <p class="skill-tag">Workflows completos como JSON. Chau Zapier.</p>
+
+    <div class="skill-block">
+      <div class="skill-block-label">El síntoma</div>
+      <p class="skill-block-text">
+        <strong>$3,200/mes</strong> en Zapier + Make para 40 automations.
+        Si queres escalar, el pricing te come el margen.
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">La skill</div>
+      <p class="skill-block-text">
+        Pack de 7 sub-skills que generan JSONs de n8n importables:
+        webhooks, Code nodes JS/Python, expresiones, validación, patrones avanzados.
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">En el demo</div>
+      <p class="skill-block-proof">
+        <span class="metric">3 workflows JSON</span> importables: lead enrichment (Clearbit + Claude), digest diario de PRs, clasificador de emails con 4 salidas (Linear / Jira / HubSpot / Trash).
+      </p>
+    </div>
+  </div>
+
+  <a class="skill-demo-bar" href="../skill-demos-functional/06-n8n-skills/README.md">
+    <span class="demo-label">Demo</span>
+    <span class="demo-path">06-n8n-skills/</span>
+    <span class="demo-action">3 workflows JSON importables</span>
+    <span class="demo-arrow">↗</span>
+  </a>
+</section>
+
+<!-- ============================ DIVIDER 3 ============================ -->
+<section class="slide divider-slide">
+  <div>
+    <div class="divider-eyebrow">Quedan 2 — Las más potentes</div>
+    <p class="divider-text">
+      Las <em>meta-skills.</em><br>
+      <br>
+      Las que fabrican<br>
+      skills y <em>agentes.</em>
+    </p>
+  </div>
+</section>
+
+<!-- ============================ SKILL 09: SKILL CREATOR ============================ -->
+<section class="slide">
+  <div class="skill-number">09<small>/10</small></div>
+
+  <div class="slide-header">
+    <span class="track">META · PRODUCTIVIDAD</span>
+    <span>Presentación · 10 Skills</span>
+  </div>
+
+  <div class="slide-body">
+    <div class="skill-label">Skill 09</div>
+    <h2 class="skill-name">Skill <em>Creator</em></h2>
+    <p class="skill-tag">La skill que fabrica skills. Tu arsenal personal se arma solo.</p>
+
+    <div class="skill-block">
+      <div class="skill-block-label">El síntoma</div>
+      <p class="skill-block-text">
+        Cada proyecto repetís el mismo prompt de 400 palabras.
+        Se te pierden las mejores versiones en chats viejos. Siempre <strong>reinventás la receta.</strong>
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">La skill</div>
+      <p class="skill-block-text">
+        Describes lo que quieres, te devuelve un SKILL.md completo con triggers, workflow, ejemplos y anti-patterns.
+        Reutilizable para siempre, <strong>versionable en git</strong>.
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">En el demo</div>
+      <p class="skill-block-proof">
+        Skill <span class="metric">"pr-summarizer"</span> generada de cero: SKILL.md + 2 templates + fetch-pr.sh + generate.js + ejemplos de input/output. <span class="metric">873 líneas</span>.
+      </p>
+    </div>
+  </div>
+
+  <a class="skill-demo-bar" href="../skill-demos-functional/08-skill-creator-plugin/CREATION-STORY.md">
+    <span class="demo-label">Demo</span>
+    <span class="demo-path">08-skill-creator-plugin/</span>
+    <span class="demo-action">skill "pr-summarizer" generada</span>
+    <span class="demo-arrow">↗</span>
+  </a>
+</section>
+
+<!-- ============================ SKILL 10: SUPERPOWERS ============================ -->
+<section class="slide">
+  <div class="skill-number">10<small>/10</small></div>
+
+  <div class="slide-header">
+    <span class="track">META · DEV LIFECYCLE</span>
+    <span>Presentación · 10 Skills — Final</span>
+  </div>
+
+  <div class="slide-body">
+    <div class="skill-label">Skill 10 · El finale</div>
+    <h2 class="skill-name">Super <em>powers</em></h2>
+    <p class="skill-tag">14 meta-skills que cubren el ciclo completo de delivery.</p>
+
+    <div class="skill-block">
+      <div class="skill-block-label">El síntoma</div>
+      <p class="skill-block-text">
+        Claude empieza bien y a los 40 minutos escribe código frágil.
+        No hay plan, no hay tests primero, no hay verification.
+        <strong>Despliegas con miedo.</strong>
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">La skill</div>
+      <p class="skill-block-text">
+        Un pack: brainstorming → plan formal → TDD → dispatching paralelo → debug sistemático → verification.
+        Cada etapa deja un artefacto revisable. <strong>Despliegas con evidencia.</strong>
+      </p>
+    </div>
+
+    <div class="skill-block">
+      <div class="skill-block-label">En el demo</div>
+      <p class="skill-block-proof">
+        Feature <span class="metric">"magic link auth"</span> como caso: <span class="metric">6 documentos</span> de delivery — brainstorm, plan, tests-first, parallel-dispatch, debug-session, verification.
+      </p>
+    </div>
+  </div>
+
+  <a class="skill-demo-bar" href="../skill-demos-functional/09-superpowers-plugin/README.md">
+    <span class="demo-label">Demo</span>
+    <span class="demo-path">09-superpowers-plugin/</span>
+    <span class="demo-action">6 artefactos del lifecycle completo</span>
+    <span class="demo-arrow">↗</span>
+  </a>
+</section>
+
+<!-- ============================ CLOSING ============================ -->
+<section class="slide closing-slide">
+  <div>
+    <div class="title-eyebrow">Fin · Tu siguiente paso</div>
+    <h2 class="closing-huge">
+      Descargá<br>
+      el <em>arsenal.</em>
+    </h2>
+  </div>
+
+  <div class="closing-cta">
+    <p class="closing-cta-text">
+      40 archivos funcionales ya corriendo.
+      Clónalos, ábrelos, rómpelos.
+      Móntate el stack que Claude debería traer por defecto.
+    </p>
+    <div class="closing-cta-cmd">github.com/tu-repo/claude-arsenal</div>
+  </div>
+</section>
+
+</body>
+</html>

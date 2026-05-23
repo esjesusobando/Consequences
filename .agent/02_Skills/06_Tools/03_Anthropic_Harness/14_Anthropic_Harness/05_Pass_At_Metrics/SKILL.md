@@ -41,11 +41,11 @@ pass^k = p^k
 
 ## Cuándo Usar
 
-| Escenario                                                       | Métrica                         | Por qué                                              |
-|-----------------------------------------------------------------|---------------------------------|------------------------------------------------------|
-| Tool donde una solución basta                                   | pass@1                          | Primera oportunidad cuenta                           |
-| Coding donde try-try-allowed                                    | pass@5                          | Múltiples intentos posibles                          |
-| Tareas críticas que requieren consistency                       | pass^k                          | Debe funcionar todas las veces                       |
+| Escenario                                                                | Métrica                                  | Por qué                                                       |
+|-------------------------------------------------------------------------|-----------------------------------------|--------------------------------------------------------------|
+| Tool donde una solución basta                                            | pass@1                                   | Primera oportunidad cuenta                                    |
+| Coding donde try-try-allowed                                             | pass@5                                   | Múltiples intentos posibles                                   |
+| Tareas críticas que requieren consistency                                | pass^k                                   | Debe funcionar todas las veces                                |
 
 ---
 
@@ -53,10 +53,10 @@ pass^k = p^k
 
 ### Scripts
 
-| Script                                        | Función                                           |
-|-----------------------------------------------|---------------------------------------------------|
-| `00_Pass_At_Metrics.py`                       | Calcula pass@k y pass^k                           |
-| `01_Eval_Analyzer.py`                         | Analiza resultados de evals                       |
+| Script                                                 | Función                                                    |
+|-------------------------------------------------------|-----------------------------------------------------------|
+| `00_Pass_At_Metrics.py`                                | Calcula pass@k y pass^k                                    |
+| `01_Eval_Analyzer.py`                                  | Analiza resultados de evals                                |
 
 ### Uso Básico
 
@@ -80,23 +80,23 @@ pass_3 = calculate_pass_all_k(results, k=3)
 
 ## Ejemplo de Evaluación
 
-| Task                              | 10 Trials Results                         | pass@1                         | pass@5                         | pass^3                         |
-|-----------------------------------|-------------------------------------------|--------------------------------|--------------------------------|--------------------------------|
-| Easy task                         | T,T,T,T,T,T,T,T,T,T                       | 100%                           | 100%                           | 100%                           |
-| Medium task                       | T,F,T,T,F,T,T,T,T,F                       | 70%                            | 100%                           | 34%                            |
-| Hard task                         | F,F,F,F,T,F,F,F,F,F                       | 10%                            | 50%                            | 0.1%                           |
+| Task                                       | 10 Trials Results                                  | pass@1                                  | pass@5                                  | pass^3                                  |
+|-------------------------------------------|---------------------------------------------------|----------------------------------------|----------------------------------------|----------------------------------------|
+| Easy task                                  | T,T,T,T,T,T,T,T,T,T                                | 100%                                    | 100%                                    | 100%                                    |
+| Medium task                                | T,F,T,T,F,T,T,T,T,F                                | 70%                                     | 100%                                    | 34%                                     |
+| Hard task                                  | F,F,F,F,T,F,F,F,F,F                                | 10%                                     | 50%                                     | 0.1%                                    |
 
 ---
 
 ## Integración con Perfiles
 
-| Perfil                                  | Uso de pass@k                                                     |
-|-----------------------------------------|-------------------------------------------------------------------|
-| Product Builder                         | Evaluar si feature es "solvable eventually"                       |
-| Data Engineer                           | Medir reliability de pipelines                                    |
-| Marketing Tech                          | Medir consistency de campaigns                                    |
-| Design Ops                              | Medir consistency de designs                                      |
-| Platform Engineer                       | Medir reliability de deployments                                  |
+| Perfil                                           | Uso de pass@k                                                              |
+|-------------------------------------------------|---------------------------------------------------------------------------|
+| Product Builder                                  | Evaluar si feature es "solvable eventually"                                |
+| Data Engineer                                    | Medir reliability de pipelines                                             |
+| Marketing Tech                                   | Medir consistency de campaigns                                             |
+| Design Ops                                       | Medir consistency de designs                                               |
+| Platform Engineer                                | Medir reliability de deployments                                           |
 
 ---
 

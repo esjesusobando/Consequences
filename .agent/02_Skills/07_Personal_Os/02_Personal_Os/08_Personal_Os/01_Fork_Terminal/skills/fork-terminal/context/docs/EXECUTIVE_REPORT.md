@@ -261,16 +261,16 @@ Cada cookbook ahora incluye:
 
 ## 📈 Métricas del Proyecto
 
-| Métrica                                     | Valor                        |
-|---------------------------------------------|------------------------------|
-| Archivos creados                            | 7                            |
-| Archivos modificados                        | 6                            |
-| Líneas de código                            | ~800                         |
-| Líneas de documentación                     | ~500                         |
-| Pruebas ejecutadas                          | 9                            |
-| Tasa de éxito                               | 100%                         |
-| Tiempo total                                | ~3 horas                     |
-| Comandos ejecutados                         | 15+                          |
+| Métrica                                              | Valor                                 |
+|-----------------------------------------------------|--------------------------------------|
+| Archivos creados                                     | 7                                     |
+| Archivos modificados                                 | 6                                     |
+| Líneas de código                                     | ~800                                  |
+| Líneas de documentación                              | ~500                                  |
+| Pruebas ejecutadas                                   | 9                                     |
+| Tasa de éxito                                        | 100%                                  |
+| Tiempo total                                         | ~3 horas                              |
+| Comandos ejecutados                                  | 15+                                   |
 
 ---
 
