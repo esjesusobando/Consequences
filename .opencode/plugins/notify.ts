@@ -11,10 +11,10 @@
  * - Click notification to focus terminal
  * - Parent session only by default (no spam from sub-tasks)
  *
- * Uses cmux CLI first (if available), then node-notifier fallback:
+ * Uses cmux CLI first (if available), then native OS CLI fallback:
  * - cmux: `cmux notify --title ... --subtitle ... --body ...`
- * - macOS: terminal-notifier (native NSUserNotificationCenter)
- * - Windows: SnoreToast (native toast notifications)
+ * - macOS: osascript notification
+ * - Windows: PowerShell BurntToast if available, otherwise console fallback
  * - Linux: notify-send (native desktop notifications)
  */
 
@@ -25,8 +25,6 @@ import type { Plugin } from "@opencode-ai/plugin"
 import type { Event } from "@opencode-ai/sdk"
 // @ts-expect-error - installed at runtime by OCX
 import detectTerminal from "detect-terminal"
-// @ts-expect-error - installed at runtime by OCX
-import notifier from "node-notifier"
 import type { OpencodeClient } from "./kdco-primitives/types"
 import { sendNotificationWithFallback } from "./notify/backend"
 import { canUseCmuxNotification, sendCmuxNotification } from "./notify/cmux"
@@ -321,22 +319,54 @@ function buildPermissionEventDedupeKey(properties: unknown): string | null {
 	return `permission:request:${normalizedRequestID}`
 }
 
-function sendNodeNotification(options: NotificationOptions): void {
+function shellQuotePowerShell(value: string): string {
+	return `'${value.replaceAll("'", "''")}'`
+}
+
+function escapeAppleScript(value: string): string {
+	return value.replaceAll('\\', '\\\\').replaceAll('"', '\\"')
+}
+
+async function spawnDetached(command: string[]): Promise<void> {
+	try {
+		const proc = Bun.spawn(command, {
+			stdout: "ignore",
+			stderr: "ignore",
+		})
+		await proc.exited
+	} catch {
+		// Native notification fallback is best-effort only.
+	}
+}
+
+async function sendNodeNotification(options: NotificationOptions): Promise<void> {
 	const { title, message, sound, terminalInfo } = options
 
-	// Base notification options
-	const notifyOptions: Record<string, unknown> = {
-		title,
-		message,
-		sound,
+	if (process.platform === "darwin") {
+		const activate = terminalInfo.bundleId
+			? `; tell application id "${escapeAppleScript(terminalInfo.bundleId)}" to activate`
+			: ""
+		await spawnDetached([
+			"osascript",
+			"-e",
+			`display notification "${escapeAppleScript(message)}" with title "${escapeAppleScript(title)}" sound name "${escapeAppleScript(sound)}"${activate}`,
+		])
+		return
 	}
 
-	// macOS-specific: click notification to focus terminal
-	if (process.platform === "darwin" && terminalInfo.bundleId) {
-		notifyOptions.activate = terminalInfo.bundleId
+	if (process.platform === "win32") {
+		const script = [
+			"if (Get-Module -ListAvailable -Name BurntToast) {",
+			`New-BurntToastNotification -Text ${shellQuotePowerShell(title)}, ${shellQuotePowerShell(message)};`,
+			"} else {",
+			`Write-Host ${shellQuotePowerShell(`${title}: ${message}`)};`,
+			"}",
+		].join(" ")
+		await spawnDetached(["powershell.exe", "-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", script])
+		return
 	}
 
-	notifier.notify(notifyOptions)
+	await spawnDetached(["notify-send", title, message])
 }
 
 async function sendNotification(
@@ -612,4 +642,3 @@ export const NotifyPlugin: Plugin = async (ctx) => {
 	}
 }
 
-export default NotifyPlugin

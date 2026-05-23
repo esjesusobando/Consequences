@@ -130,7 +130,7 @@
 ## 📝 Changelog
 
 **2026-05-19:** Auditoría Completa v4.1
-- ✅ Sincronizado con estructura real: 342 skills, 12 áreas funcionales
+- ✅ Sincronizado con estructura real: 393 skills, 12 áreas funcionales
 - ✅ Añadida área `claude-ads/` (20 items)
 - ✅ Eliminada referencia a `00_Gcierr/` y `09_Legacy_Archive/` (no existen en disco)
 - ✅ Consistencia total entre README, OS_DIRECTORY y skill-registry

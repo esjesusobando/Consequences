@@ -100,8 +100,8 @@ Think_Different/
 │   │   ├── 00_Workflows_Os/      # Workflows (Personal, Marvel, Gentleman, Hillary, CE)
 │   │   ├── 01_Rules/             # 11 reglas del sistema (.mdc)
 │   │   └── 02_Tools/             # Todas las herramientas
-│   │       ├── 01_Agents/        # Dream Team + Specialists (52 agentes)
-│   │       ├── 02_Skills/        # 11 áreas funcionales (299 skills)
+│   │       ├── 01_Agents/        # Dream Team + Specialists + Growth (46 agentes)
+│   │       ├── 02_Skills/        # 12 áreas funcionales (394 skills)
 │   │       ├── 03_Mcp/           # Config MCPs (35 Claude / 18 OpenCode)
 │   │       ├── 04_Integrations/   # Fireflies, Granola
 │   │       ├── 05_Hooks/          # Pre/Post/Lifecycle/Sound/Harness
@@ -115,7 +115,7 @@ Think_Different/
 │   │   ├── 00_Context_LLM/        # Memoria, notas, knowledge brain
 │   │   ├── 01_Auto_Improvement/   # Motor de auto-mejora
 │   │   ├── 02_Agent_Teams_Lite/   # SDD skills registry + JARVIS 7 manifests
-│   │   ├── 03_Scripts_Os/         # 23 scripts (19 HUBs + 4 auxiliares)
+│   │       ├── 03_Scripts_Os/         # 31 scripts (19 HUBs + 12 auxiliares)
 │   │   ├── 04_Installer/          # Scripts de instalación
 │   │   └── 05_Projects/           # Proyectos activos
 │   └── 05_Archive/                # Legacy y repos de referencia
@@ -137,7 +137,7 @@ Think_Different/
 ```
 .agent/
 ├── 00_Rules/            # Reglas del agente (11 .mdc activos)
-├── 01_Agents/           # Agentes externos configurados (52+)
+├── 01_Agents/           # Agentes externos configurados (46)
 ├── 02_Skills/           # Skills organizadas (backup)
 ├── 03_Workflows/        # Workflows del sistema
 ├── 04_Extensions/       # Hooks del sistema
@@ -234,10 +234,10 @@ El sistema tiene un manifest central en `01_Personal_Os/04_Operations/02_Agent_T
 |----------|-----------|
 | 01_OS_Inventory.json | Inventario OS |
 | 02_MCP_Registry.yaml | 35 MCPs Claude / 18 OpenCode |
-| 03_Agent_Catalog.yaml | 52+ agentes |
-| 04_Skill_Index.json | 299 skills |
-| 05_HUB_Catalog.yaml | 19+5 HUBs |
-| 06_Workflow_Graph.yaml | 27+ workflows |
+| 03_Agent_Catalog.yaml | 46 agentes |
+| 04_Skill_Index.json | 394 skills |
+| 05_HUB_Catalog.yaml | 19 HUBs |
+| 06_Workflow_Graph.yaml | 30 workflows |
 | 07_Hook_Registry.yaml | 10+ hooks |
 
 ---

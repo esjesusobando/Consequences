@@ -1,7 +1,7 @@
 # 01_Personal_Os — Personal Operating System
 
-> **Versión:** v4.1 — Production Ready
-> **Última actualización:** 2026-05-20
+> **Versión:** v4.7 — Production Ready
+> **Última actualización:** 2026-05-23
 
 ---
 
@@ -24,16 +24,16 @@ El núcleo del sistema operativo personal. Contiene toda la infraestructura, her
 
 ---
 
-## 📊 ESTADO DEL SISTEMA (v4.1 — 2026-05-20)
+## 📊 ESTADO DEL SISTEMA (v4.7 — 2026-05-23)
 
 | Componente | Total | Estado |
 |---|---|---|
-| Agents | 82 | ✅ SYNCED — 82↔82 |
-| Skills | 356 | ✅ VERIFIED — 12 áreas |
+| Agents | 46 | ✅ SYNCED — 46↔46 |
+| Skills | 394 | ✅ VERIFIED — 12 áreas |
 | MCPs | 36 | ✅ SYNCED — drift 0 |
-| HUBs | 28 | ✅ ACTIVE |
-| Scripts totales | 152 | ✅ INTENCIONAL — backup legacy |
-| Workflows | 29 | ✅ ACTIVE — 7 categorías |
+| HUBs | 19 | ✅ ACTIVE |
+| Scripts totales | 284 | ✅ DOCUMENTED — recursivo |
+| Workflows | 30 | ✅ ACTIVE — 7 categorías |
 | Hooks | 10 | ✅ ACTIVE — 6 fases |
 | Rules | 12 | ✅ DEFINED |
 
@@ -78,4 +78,4 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboar
 
 ---
 
-*Think Different PersonalOS v4.1 — Pure Green State*
+*Think Different PersonalOS v4.7 — Pure Green State*

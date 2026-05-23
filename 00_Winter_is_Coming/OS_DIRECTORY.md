@@ -1,6 +1,6 @@
 🪅📝# 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.5 Consequences** | 2026-05-20
+**v4.7 Consequences** | 2026-05-23
 
 ---
 
@@ -11,18 +11,18 @@
 | MCPs Claude Code                    | **36**                                           | ✅ SYNCED — drift 0                          |
 | Every CE                            | v2.55.0 (local repo)                              | ✅ ACTIVE — Local version                     |
 | gentle-ai                           | v1.26.6                                          | ✅ AVAILABLE                                  |
-| Skills                              | **356** (12 áreas funcionales)                   | ✅ VERIFIED — 0 sin frontmatter               |
-| Agentes                             | **82** (5 Dream + 24 Specialists + backup sync)  | ✅ SYNCED — 82↔82 drift 0                   |
-| HUBs                                | **31** scripts en raíz + subdirectorios          | ✅ VERIFIED                                   |
-| Scripts totales                     | **152** (en subdirectorios AIPM/Validator/Legacy)| ✅ INTENCIONAL                                |
-| Workflows                           | **29** (7 categorías en 00_Workflows_Os)          | ✅ ACTIVE                                     |
+| Skills                              | **394** (12 áreas funcionales)                   | ✅ VERIFIED — 0 sin frontmatter               |
+| Agentes                             | **46** (5 Dream + 23 Specialists + 13 individuales + 5 Growth) | ✅ SYNCED — 46↔46 drift 0 |
+| HUBs                                | **19** scripts HUB (`*_Hub.py`) + 12 support     | ✅ VERIFIED                                   |
+| Scripts totales                     | **284** (recursivo en 03_Scripts_Os/)            | ✅ DOCUMENTED                                 |
+| Workflows                           | **30** (7 categorías en 00_Workflows_Os)          | ✅ ACTIVE                                     |
 | Hooks                               | **10** (6 fases)                                 | ✅ ACTIVE                                     |
 | Rules                               | **12 (.mdc)** en 01_Rules                         | ✅ DEFINED                                    |
 | JARVIS Manifests                    | 7 en 00_Manifest/                                | ✅ VALIDATED                                  |
 | Open Design                         | 62 skills + 138 design systems                   | ✅ INTEGRATED                                 |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-20 — v4.5 Consequences
-> Agent Sync: 82↔82 drift 0. Skills: 356. MCPs: 36/36 sync.
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-23 — v4.7 Consequences
+> Agent Sync: 46↔46 drift 0. Skills: 394. MCPs: 36/36 sync.
 
 ---
 
@@ -82,7 +82,7 @@ Think_Different/
 │   │   ├── 00_Workflows_Os/     ✅ 29 workflows (7 categorías)
 │   │   ├── 01_Rules/           ✅ 12 reglas .mdc
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/         ✅ 82 agentes
+│   │       ├── 01_Agents/         ✅ 46 agentes
 │   │       ├── 02_Skills/         ✅ 356 skills (12 áreas)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
@@ -154,7 +154,7 @@ Think_Different/
 
 ---
 
-## ⚡ AGENTES — 82 CONFIGURADOS
+## ⚡ AGENTES — 46 CONFIGURADOS
 
 | Categoría                               | Cantidad                  | Ubicación                                                                    |
 |----------------------------------------|--------------------------|-----------------------------------------------------------------------------|
@@ -241,4 +241,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-05-20 | PersonalOS v4.5 Consequences | Every CE v2.55.0 ✅ | gentle-ai v1.26.6 | 356 skills | 82 agents | 36 MCPs*
+*Actualizado: 2026-05-23 | PersonalOS v4.7 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 394 skills | 46 agents | 36 MCPs*

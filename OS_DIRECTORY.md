@@ -1,6 +1,6 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.5 Consequences** | 2026-05-20
+**v4.7 Consequences** | 2026-05-22
 
 ---
 
@@ -11,18 +11,18 @@
 | MCPs Claude Code                      | **36**                                                              | ✅ SYNCED — drift 0                             |
 | Every CE                              | v2.55.0 (local repo) ✅                                              | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.26.6                                                             | ✅ AVAILABLE                                    |
-| Skills                                | **358** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
-| Agentes                               | **82** (5 Dream + 24 Specialists Compound + backup sync)             | ✅ SYNCED — 82↔82 drift 0                       |
-| HUBs                                  | **31** scripts en raíz + subdirectorios                             | ✅ VERIFIED                                     |
-| Scripts totales                       | **152** (en subdirectorios AIPM/Validator/Legacy)                    | ✅ INTENCIONAL — preservación de historial, no es anomalía |
-| Workflows                             | **29** (7 categorías en 00_Workflows_Os)                            | ✅ ACTIVE                                       |
+| Skills                                | **394** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
+| Agentes                               | **46** (5 Dream + 23 Specialists + 13 individuales + 5 Growth)    | ✅ SYNCED — 46↔46 drift 0                       |
+| HUBs                                  | **19** scripts HUB (`*_Hub.py`) + 12 support scripts                | ✅ VERIFIED                                     |
+| Scripts totales                       | **284** (recursivo en 03_Scripts_Os/)                                | ✅ DOCUMENTED                                   |
+| Workflows                             | **30** (7 categorías en 00_Workflows_Os)                            | ✅ ACTIVE                                       |
 | Hooks                                 | **10** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk) | ✅ ACTIVE                                       |
 | Rules                                 | **12 (.mdc)** en 01_Rules                                           | ✅ DEFINED                                      |
 | JARVIS Manifests                      | 7 en 00_Manifest/                                                   | ✅ VALIDATED                                    |
 | Open Design                           | 62 skills + 138 design systems                                      | ✅ INTEGRATED                                   |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-20 — v4.5 Consequences
-> Agent Sync: 82↔82 drift 0. Skills: 358. MCPs: 36/36 sync.
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-22 — v4.7 Consequences
+> Agent Sync: 46↔46 drift 0. Skills: 394 (SKILL.md). MCPs: 36/36 sync.
 
 ---
 
@@ -80,8 +80,8 @@ Think_Different/                         # RAÍZ
 │   │   ├── 00_Workflows_Os/     ✅ 30 workflows (7 categorías)
 │   │   ├── 01_Rules/            ✅ 12 reglas .mdc
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/         ✅ 58 agentes (5 Dream + 23 Specialists + 30 individuales)
-│   │       ├── 02_Skills/         ✅ 358 skills (12 áreas funcionales)
+│   │       ├── 01_Agents/         ✅ 46 agentes (5 Dream + 23 Specialists + 13 individuales + 5 Growth)
+│   │       ├── 02_Skills/         ✅ 394 skills (12 áreas funcionales)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/          ✅ Pre/Post/Lifecycle/Sound
@@ -105,13 +105,16 @@ Think_Different/                         # RAÍZ
 │   │   ├── 01_Tasks_Done/
 │   │   ├── 02_Hillary_Inbox/
 │   │   └── README.md
+│   ├── 05_Archive/                ✅ Backups, snapshots, históricos
 │   └── 04_Operations/             ✅ Operativo
 │       ├── 00_Context_LLM/        ✅ Memoria LLM (Engram, notes)
 │       ├── 01_Auto_Improvement/   ✅ Motor auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests
-│       ├── 03_Scripts_Os/         ✅ 28 HUBs documentados + 152 scripts
+│       ├── 03_Scripts_Os/         ✅ 19 HUBs + 284 scripts (recursivo)
 │       ├── 04_Installer/          ✅ Installer scripts
 │       ├── 05_Projects/          ✅ Proyectos activos
+│       ├── 06_SOTA_Features/     ✅ Features estado-del-arte
+│       ├── 07_Reports/           ✅ Reportes generados
 │       ├── GOVERNANCE.md
 │       ├── README.md
 │       └── RUNBOOK.md
@@ -136,7 +139,7 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## 🧠 SKILLS — 12 ÁREAS FUNCIONALES (393 skills)
+## 🧠 SKILLS — 12 ÁREAS FUNCIONALES (394 skills)
 
 | Área                   | Items  | Descripción                          |
 |-----------------------|-------|-------------------------------------|
@@ -152,7 +155,7 @@ Think_Different/                         # RAÍZ
 | 07_Personal_Os         | 32     | Life OS, Hillary, Rituales           |
 | 08_Invictus_Web        | 15     | Playwright, Superpowers, Browser Auto|
 | 09_Claude_Ads          | 20     | Claude Ads & Promoted Content        |
-| **TOTAL**              | **393**| Total real indexado en disco         |
+| **TOTAL**              | **394**| Total real indexado en disco         |
 
 > Las skills están tanto en carpetas de área como en subcarpetas internas.
 
@@ -177,14 +180,15 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## ⚡ AGENTES — 43 CONFIGURADOS
+## ⚡ AGENTES — 75 ARCHIVOS (43 en 01_Agents/ + 32 SDD/CE en opencode.json → 82 total sistema)
 
 | Categoría                 | Cantidad  | Ubicación                                                              |
 |--------------------------|----------|-----------------------------------------------------------------------|
 | **Dream Team**            | 5         | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform)          |
 | **Specialists Compound**  | 23        | `02_Specialists_Compound/`                                             |
 | **Individuales**          | 15        | Raíz `01_Agents/` (Orchestrator, AIPM_Judge, LFG, etc.)                |
-| **TOTAL**                 | **43**    | 43 archivos de agentes                                                 |
+| **Subcarpetas**           | 32        | Subdirectorios de `01_Agents/` (+ SDD + CE configurados en opencode.json) |
+| **TOTAL SISTEMA**         | **82**    | 75 .md files + SDD/CE agents en opencode.json                          |
 
 ---
 
@@ -305,4 +309,4 @@ Al iniciar sesión O al recibir cualquier instrucción, ejecutar `.agent/03_Work
 
 ---
 
-*Actualizado: 2026-05-22 | PersonalOS v4.6 | Every CE v2.55.0 ✅ | gentle-ai v1.30.6 | 393 skills | 82 agents | 36 MCPs*
+*Actualizado: 2026-05-23 | PersonalOS v4.7 | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 394 skills | 46 agents | 36 MCPs | 36 CE skills registered*

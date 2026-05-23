@@ -1,9 +1,9 @@
 # 📁 ESTRUCTURA COMPLETA — Think Different PersonalOS v4.7 Consequences
 
 > **Versión:** 4.7 Consequences
-> **Fecha:** 2026-05-22
+> **Fecha:** 2026-05-23
 > **Estado:** Production Ready
-> **Audit:** 2026-05-22 — Dependency modernization, Reports consolidation, Boot protocol强化
+> **Audit:** 2026-05-23 — Audit v2: Submodule fix, 21 CE skills, docs pixel-perfect
 
 ---
 
@@ -33,11 +33,11 @@ Think_Different/                    # RAÍZ
 ```
 01_Personal_Os/
 ├── 01_Core/                       # MOTOR DEL OS
-│   ├── 00_Workflows_Os/          # 29 workflows (7 categorías)
+│   ├── 00_Workflows_Os/          # 30 workflows (7 categorías)
 │   ├── 01_Rules/                 # 12 reglas .mdc
 │   └── 02_Tools/                 # Herramientas del OS
-│       ├── 01_Agents/            # 82 agentes
-│       ├── 02_Skills/           # 393 skills (12 áreas)
+│       ├── 01_Agents/            # 46 agentes
+│       ├── 02_Skills/           # 394 skills (12 áreas)
 │       ├── 03_Mcp/              # Backup MCP configs
 │       ├── 04_Integrations/     # Fireflies, Granola
 │       ├── 05_Hooks/            # 10 hooks (6 fases)
@@ -51,7 +51,7 @@ Think_Different/                    # RAÍZ
 │   ├── 00_Context_LLM/          # Memoria LLM
 │   ├── 01_Auto_Improvement/     # Motor auto-mejora
 │   ├── 02_Agent_Teams_Lite/     # SDD + 7 JARVIS manifests
-│   ├── 03_Scripts_Os/          # 31 HUBs + 284 scripts
+│   ├── 03_Scripts_Os/          # 19 HUBs + 284 scripts (recursivo)
 │   ├── 04_Installer/           # Scripts de instalación
 │   ├── 05_Projects/             # Proyectos activos
 │   │   └── 01_Projects_Lab/    # Lab de proyectos (9 proyectos)
@@ -64,7 +64,7 @@ Think_Different/                    # RAÍZ
 
 ## 📂 01_Core — Motor del OS
 
-### 00_Workflows_Os — Workflows (29 workflows, 7 categorías)
+### 00_Workflows_Os — Workflows (30 workflows, 7 categorías)
 
 | Categoría | Workflows | Propósito |
 |----------|-----------|----------|
@@ -97,8 +97,8 @@ Think_Different/                    # RAÍZ
 
 | Herramienta | Cantidad | Propósito |
 |-------------|----------|-----------|
-| **01_Agents** | 82 | Orquestación multi-agente |
-| **02_Skills** | 393 | 12 áreas funcionales |
+| **01_Agents** | 46 | Orquestación multi-agente |
+| **02_Skills** | 394 | 12 áreas funcionales |
 | **03_Mcp** | - | Backup configs MCP |
 | **04_Integrations** | - | Fireflies, Granola |
 | **05_Hooks** | 10 | Ganchos 6 fases |
@@ -111,7 +111,7 @@ Think_Different/                    # RAÍZ
 
 | Área | Skills | Descripción |
 |------|--------|-------------|
-| 00_Compound_Engineering | 63 | Core CE — SDD |
+| 00_Compound_Engineering | 63* | Core CE — SDD + 21 nuevas CE skills registradas |
 | 00_Personal_Os_Stack | 1 | Stack base OS |
 | 00_Skill_Auditor | 4 | Auditoría |
 | 01_Creacion_Contenidos | 38 | Brand, YouTube, SEO |
@@ -179,7 +179,7 @@ Think_Different/                    # RAÍZ
 ├── 05_OBAND/               # ✅ Deps actualizadas
 ├── 06_OIM_Original/       # ✅ Deps actualizadas
 ├── 07_Backup_OIM/
-├── 08_Elite_Portfolio/    # 🔴 MIGRATION NEEDED
+├── 08_Elite_Portfolio/    # ✅ DEPS OK (framer-motion 12.40.0)
 └── 09_Valeria/
 ```
 
@@ -281,13 +281,14 @@ Think_Different/                    # RAÍZ
 
 | Componente | Total | Estado |
 |-----------|-------|--------|
-| Skills | 393 | ✅ |
-| Agentes | 82 | ✅ |
+| Skills | 394 | ✅ |
+| Agentes | 46 | ✅ |
 | Rules | 12 | ✅ |
 | MCPs | 36 | ✅ |
-| HUBs | 31 | ✅ |
+| HUBs | 19 | ✅ |
 | Scripts | 284 | ✅ |
-| Workflows | 29 | ✅ |
+| Workflows | 30 | ✅ |
+| CE Skills in opencode.json | 36 | ✅ (antes 15) |
 | Projects (Lab) | 9 | ✅ |
 
 ---
@@ -324,18 +325,18 @@ Al iniciar sesión, ejecutar EN ORDEN:
 **Reglas de Secuencia:**
 1. **Enumeración limpia** — Sin huecos ni duplicados
 2. **00_ = No tocar** — Archivos de referencia rápida
-3. **Duplicados** — Usar sufijo `b` (ej: `09b_World_OIM`)
+3. **Duplicados** — Usar sufijo `b` (ej: `09b_World_OIM`) → renombrado a `09_World_OIM` en audit v2
 
 ---
 
 ## ✅ PURE GREEN STATE
 
-**Think Different PersonalOS v4.7 Consequences — 2026-05-22**
+**Think Different PersonalOS v4.7 Consequences — 2026-05-23**
 
-*Dependency modernization complete. Reports consolidated to 07_Reports. Boot protocol강화. Ready for production.*
+*Audit v2 complete. Submodule OIM fixed. 21 CE skills registered. Docs pixel-perfect. Ready for production.*
 
 ---
 
 *Versión: v4.7 Consequences*
-*Audit: 2026-05-22*
-*Skills: 393 | Agents: 82 | MCPs: 36 | HUBs: 31*
+*Audit: 2026-05-23*
+*Skills: 394 | Agents: 46 | MCPs: 36 | HUBs: 19*

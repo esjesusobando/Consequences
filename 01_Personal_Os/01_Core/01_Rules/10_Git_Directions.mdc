@@ -204,6 +204,32 @@ Skills activos en el sistema:
 - sdd-init, sdd-onboard, sdd-propose, sdd-spec
 - sdd-tasks, sdd-verify
 
+### 9. Plugin: opencode-subagent-statusline (Sidebar de Subagentes)
+
+**Repositorio fuente**: https://github.com/Joaquinvesapa/sub-agent-statusline
+- Autor: Joaquinvesapa
+- Licencia: MIT
+- Versión instalada: 0.7.1 (npm: `opencode-subagent-statusline`)
+
+**Funcionalidad**: Sidebar en OpenCode que muestra el estado de los subagentes
+en tiempo real — running, completed, failed, elapsed time y token usage.
+Monitorea todas las delegaciones del sistema (background-agents).
+
+**Ubicacion del plugin**: `~/.config/opencode/tui.json`
+- Configurado en sección `plugins` del `tui.json`
+- NO requiere entrada en `opencode.json` ni en profile — es UI-side, no backend
+
+**Estado actual**: ✅ INSTALADO y CONFIGURADO en `~/.config/opencode/tui.json`
+
+**Para verificar**:
+```bash
+# Verificar que el paquete npm esta instalado
+ls ~/.config/opencode/node_modules/opencode-subagent-statusline/
+
+# Verificar config en tui.json
+grep -A2 "subagent-statusline" ~/.config/opencode/tui.json
+```
+
 ---
 
 ## CHECKLIST DE VERIFICACION
@@ -217,17 +243,26 @@ ls -la ~/.config/opencode/plugins/background-agents.ts
 # 2. Verificar que engram existe
 ls -la ~/.config/opencode/plugins/engram.ts
 
-# 3. Verificar profile config
+# 3. Verificar subagent-statusline instalado
+ls ~/.config/opencode/node_modules/opencode-subagent-statusline/
+
+# 4. Verificar subagent-statusline en tui.json
+grep -A2 "subagent-statusline" ~/.config/opencode/tui.json
+
+# 5. Verificar profile config
 cat ~/.config/opencode/profiles/default/opencode.jsonc
 
-# 4. Verificar skills SDD
+# 6. Verificar skills SDD
 ls ~/.config/opencode/skills/sdd-*/
 
-# 5. Verificar agent config
+# 7. Verificar agent config
 grep -n "gentle-orchestrator\|sdd-" ~/.config/opencode/opencode.json | head -20
 
-# 6. Verificar plugins activos en OpenCode
+# 8. Verificar plugins activos en OpenCode
 grep -n "plugins" ~/.config/opencode/opencode.json
+
+# 9. Verificar .gitignore paths correctos
+grep -n "^03_Task/\|^01_Personal_Os/02_Knowledge/" .gitignore
 ```
 
 ---
@@ -235,12 +270,14 @@ grep -n "plugins" ~/.config/opencode/opencode.json
 ## NOTA DE MANTENIMIENTO
 
 Cada vez que se agregue un nuevo plugin o agent:
-1. Registrar en `~/.config/opencode/profiles/default/opencode.jsonc`
-2. Si es global, registrar en `~/.config/opencode/opencode.json`
-3. Actualizar esta regla con el nuevo componente
-4. Ejecutar checklist de verificacion
+1. Si es UI-side → registrar en `~/.config/opencode/tui.json` (ej: subagent-statusline)
+2. Si es backend → registrar en `~/.config/opencode/profiles/default/opencode.jsonc`
+3. Si es global, registrar en `~/.config/opencode/opencode.json`
+4. Si es un repositorio clonado en Archive → agregar al `.gitignore` con la ruta completa
+5. Actualizar esta regla con el nuevo componente
+6. Ejecutar checklist de verificacion
 
 ---
 
-*Ultima actualizacion: 2026-05-12*
-*Agregado: Seccion PARTE B para OpenCode/Claude Code plugins y agents*
+*Ultima actualizacion: 2026-05-22*
+*Agregados: Plugin opencode-subagent-statusline (Joaquinvesapa), checklist expandido, .gitignore paths corregidos*

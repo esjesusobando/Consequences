@@ -17,12 +17,12 @@
 ├── 01_Inventario_Total.md       ← Inventario completo del OS
 ├── 02_Dream_Team.md             ← Estructura del equipo
 ├── Requirements.txt              ← Dependencias Python
-├── 00_Workflows_Os/            ← 29 workflows (7 categorías)
+├── 00_Workflows_Os/            ← 30 workflows (7 categorías)
 ├── 01_Rules/                   ← 12 archivos .mdc (00-11)
 └── 02_Tools/
     ├── README.md
-    ├── 01_Agents/             ← 82 agents (Dream + Specialists + Individuales)
-    ├── 02_Skills/             ← 393 skills (12 áreas activas)
+    ├── 01_Agents/             ← 46 agents (Dream + Specialists + Individuales + Growth)
+    ├── 02_Skills/             ← 394 skills (12 áreas activas)
     ├── 03_Mcp/                ← MCP servers (backup de config)
     ├── 04_Integrations/       ← Fireflies, Granola
     ├── 05_Hooks/              ← 10 hooks (6 fases)
@@ -34,7 +34,7 @@
 
 ---
 
-## WORKFLOWS — 29 archivos en 7 categorías
+## WORKFLOWS — 30 archivos en 7 categorías
 
 ### 00_Learning_Always — Continuous Learning
 
@@ -114,25 +114,20 @@
 
 ## TOOLS — ESTRUCTURA
 
-### 01_Agents (82 agents) ✅
-
-**Ubicación:** `01_Personal_Os/01_Core/02_Tools/01_Agents/`
+### 01_Agents (46 agents) ✅
 
 | Categoría | Agents | Detalles |
 |-----------|---------|-----------|
 | **Orchestrator** | 1 | `00_Orchestrator.md` |
 | **Scope Architect** | 1 | `01_Scope_Rule_Architect.md` |
 | **Dream Team** | 5 | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform) |
-| **Specialists Compound** | 24+ | `02_Specialists_Compound/` (review, architecture, framework, data, quality, security, research) |
-| **Growth** | N | `03_Growth/` |
-| **Contexto** | N | `04_Contexto/` |
-| **Marca** | N | `05_Marca/` |
-| **Plantillas** | N | `06_Plantillas/` |
-| **Individuales** | 12+ | TDD, React Test, React Mentor, Security Auditor, Git Workflow Manager, Accessibility, PRD, Design SOP, AIPM Judge, Carousel, Workflow Orchestrator, LFG Autonomous, Hillary |
+| **Specialists Compound** | 23 | `02_Specialists_Compound/` (review, architecture, framework, data, quality, security, research) |
+| **Growth** | 5 | `03_Growth/` (Content Transformer, YouTube Script/Thumbnail/Title, Carousel) |
+| **Individuales** | 13 | Orchestrator, Scope, TDD, React Test, React Mentor, Security, Git, Accessibility, PRD, Design SOP, AIPM Judge, Workflow Orchestrator, LFG, Hillary |
 
 ---
 
-### 02_Skills — 12 ÁREAS ACTIVAS (393 skills) ✅
+### 02_Skills — 12 ÁREAS ACTIVAS (394 skills) ✅
 
 **Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
@@ -232,15 +227,15 @@
 
 | Componente | Cantidad | Delta vs v3.1 |
 |------------|----------|---------------|
-| Workflows Totales | 29 | +2 |
+| Workflows Totales | 30 | +3 |
 | Rules (.mdc) | 12 | +1 (11_Minimax) |
-| Agents | 82 | +30 |
+| Agents | 46 | -6 |
 | Agents Dream Team | 5 | = |
-| Agents Specialists | 24+ | = |
+| Agents Specialists | 23 | = |
 | Skills (áreas activas) | 12 | +1 |
-| Skills (count total) | 393 | +94 |
+| Skills (count total) | 394 | +95 |
 | MCPs Claude Code | 36 | +1 |
-| HUBs Scripts | 31 | +8 |
+| HUBs Scripts | 19 | -4 |
 | JARVIS Manifests | 7 | = |
 | Hooks | 10 | NEW |
 
@@ -264,5 +259,5 @@ Al iniciar sesión, la IA ejecuta EXACTAMENTE:
 
 ---
 
-*PersonalOS v4.7 Consequences — PURE GREEN | 2026-05-22*
-*Skills: 393 | Agents: 82 | MCPs: 36 | HUBs: 31 | Workflows: 29*
+*PersonalOS v4.7 Consequences — PURE GREEN | 2026-05-23*
+*Skills: 394 | Agents: 46 | MCPs: 36 | HUBs: 19 | Workflows: 30*

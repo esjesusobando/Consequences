@@ -1,35 +1,84 @@
-# 🔄 PersonalOS Workflows v4.0 Consequences — Think Different
+# 🔄 PersonalOS Workflows v4.7 Consequences — Think Different
 
 Directorio centralizado de los flujos de trabajo operativos de PersonalOS. Los flujos están organizados temáticamente para maximizar la eficiencia y la capitalización de conocimiento.
 
-## 🧭 Estructura del Sistema
+**Ruta:** `01_Personal_Os/01_Core/00_Workflows_Os/`
+**Total:** 30 workflows en 7 categorías
 
-### [01_Personal_Os](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/01_Personal_Os) (Ritmos Core)
+---
+
+## 🧭 Categorías
+
+### 00_Learning_Always — Continuous Learning
+*Módulo de aprendizaje continuo.*
+- `00_Learning_Always.md` — Workflow de aprendizaje permanente
+
+### 01_Personal_Os — Ritmos Core
 *Rituales operativos indispensables para el funcionamiento diario del sistema.*
-1. **[01_Morning_Standup](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/01_Personal_Os/01_Morning_Standup.md)**: Planificación y foco matutino.
-2. **[02_Backlog_Processing](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/01_Personal_Os/02_Backlog_Processing.md)**: Triaje de tareas pendientes.
-3. **[03_Content_Generation](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/01_Personal_Os/03_Content_Generation.md)**: Generación acelerada de valor.
-4. **[04_Weekly_Review](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/01_Personal_Os/04_Weekly_Review.md)**: Alineación estratégica semanal.
-... +6 archivos de mantenimiento.
+1. `01_Morning_Standup.md` — Planificación y foco matutino
+2. `02_Backlog_Processing.md` — Triaje de tareas pendientes
+3. `03_Content_Generation.md` — Generación acelerada de valor
+4. `04_Weekly_Review.md` — Alineación estratégica semanal
+5. `05_Ritual_Cierre_Protocol.md` — Protocolo de cierre de sesión
+6. `06_Validar_Reglas.md` — Validación de reglas del sistema
+7. `07_System_Health_Audit.md` — Auditoría de salud del sistema
+8. `08_Context_Recovery.md` — Recuperación de contexto
+9. `09_AI_Task_Template.md` — Template de tareas AI
+10. `10_Classify_Task.md` — Clasificador de tareas
+11. `11_AGENTS.md` — Reglas de agentes
 
-### [02_Marvel](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/02_Marvel) (The Avengers)
+### 02_Marvel — The Avengers
 *Identidades temáticas para la orquestación y ejecución experta.*
-- **[Iron Man Gen](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/02_Marvel/01_Iron_Man_Gen.md)**: Genesis y Boot del sistema.
-- **[Hulk Compound](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/02_Marvel/06_Hulk_Compound.md)**: Capitalización agresiva de soluciones.
-- **[Thor Work](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/02_Marvel/05_Thor_Work.md)**: Ejecución imparable.
+- `01_Iron_Man_Gen.md` — **Genesis y Boot del sistema**
+- `02_Spider_Brainstorm.md` — Brainstorming ágil
+- `03_Professor_X_Plan.md` — Planificación estratégica
+- `04_Vision_Review.md` — Revisión de visión
+- `05_Thor_Work.md` — Ejecución imparable
+- `06_Hulk_Compound.md` — Capitalización agresiva de soluciones
+- `07_AntMan_Lfg_Lite.md` — LFG liviano
+- `08_Doc_Strange_Lfg.md` — LFG completo
 
-### [03_Gentleman](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/03_Gentleman) (UX & Docs)
+### 03_Gentleman — UX & Docs
 *Flujos de diseño premium y redacción técnica de alta calidad.*
-- **[Frontend Premium](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/03_Gentleman/10_Frontend_Premium.md)**.
-- **[Redacción de Docs](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/03_Gentleman/20_Redaccion_de_Docs.md)**.
+- `10_Frontend_Premium.md` — Diseño frontend premium
+- `20_Redaccion_de_Docs.md` — Documentación técnica
 
-### [04_Hillary](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/04_Hillary) (Life OS)
+### 04_Hillary — Life OS
 *Gestión integral del inbox y captura rápida de información.*
+- `15_Captura_Rapida.md` — Captura rápida de ideas
+- `25_Hillary_Life_OS.md` — Sistema de vida personal
 
-### [05_Compound_Engineering](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/01_Core/00_Workflows/05_Compound_Engineering) (Técnica & Deep Work)
-*Metodologías avanzadas de ingeniería y sesiones de alto rendimiento (Invistus).*
+### 05_Compound_Engineering — Técnica & Deep Work
+*Metodologías avanzadas de ingeniería y sesiones de alto rendimiento.*
+- `16_Deep_Work_Session.md` — Sesiones de trabajo profundo
+- `17_Ship_It.md` — Workflow de entrega
+- `18_Anthropic_Harness.md` — Harness Anthropic
+- `19_Multi_Agent_Roles.md` — Roles multi-agente
+
+### 06_Youtube_Full_Video — Video Production Pipeline
+*Pipeline completo de producción de video para YouTube.*
+- `__Youtube_Full_Video.md` / `99_Youtube_Full_Video.md` — Workflow de producción (véase nota)
+
+> **Nota:** `06_Youtube_Full_Video/` tiene dos archivos (`__Youtube_Full_Video.md` y `99_Youtube_Full_Video.md`) que son idénticos en contenido. Pendiente de consolidación.
+
+---
+
+## 📋 Cómo usar los workflows
+
+Cada archivo contiene su propio frontmatter YAML con `name`, `description` y `argument-hint` para invocación directa.
+
+```bash
+# Ejecutar un workflow específico vía HUB
+python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py run <workflow-name>
+
+# O simplemente leer el archivo .md y seguir sus pasos
+```
 
 ---
 
 > [!TIP]
-> Use el comando `python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py run <name>` para ejecutar un flujo específico de forma automatizada.
+> El workflow **Iron Man Genesis** (`02_Marvel/01_Iron_Man_Gen.md`) debe ejecutarse al inicio de CADA sesión para cargar el contexto completo del sistema.
+
+---
+
+*Actualizado: 2026-05-22 | v4.7 Consequences*

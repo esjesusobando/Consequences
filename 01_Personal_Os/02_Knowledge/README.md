@@ -1,7 +1,7 @@
-# 02_Knowledge — Base de Conocimiento PersonalOS v4.5
+# 02_Knowledge — Base de Conocimiento PersonalOS v4.7
 
-**Version:** 4.5 Consequences
-**Ultima actualizacion:** 2026-05-21
+**Version:** 4.7 Consequences
+**Ultima actualizacion:** 2026-05-23
 **Estado:** Activo
 
 ---

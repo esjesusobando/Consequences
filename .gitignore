@@ -11,23 +11,19 @@
 # =============================================================================
 
 # Personal task files
-03_Tasks/*.md
-!03_Tasks/.gitkeep
-!03_Tasks/README.md
+03_Task/*.md
+!03_Task/.gitkeep
+!03_Task/README.md
 
 # Matrix files (personal)
 00_Winter_is_Coming/BACKLOG.md
 
 # Personal knowledge files
-02_Knowledge/*.md
-!02_Knowledge/.gitkeep
-!02_Knowledge/README.md
-
-# Personal configuration
-CLAUDE.md       # If customized from template
+01_Personal_Os/02_Knowledge/*.md
+!01_Personal_Os/02_Knowledge/.gitkeep
+!01_Personal_Os/02_Knowledge/README.md
 
 # Keep templates and examples
-!CLAUDE_TEMPLATE.md
 !config.example.yaml
 !Tasks/example.md
 !CRM/example.md
@@ -196,6 +192,7 @@ Now/02_Videos_Finales/
 01_Personal_Os/05_Archive/07_Repos_Gentleman/23_Tubemaster/.git
 
 # Embedded git repos (local copies, not submodules)
+01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/
 01_Personal_Os/05_Archive/07_Repos_Gentleman/*/.git
 # Local Pi runtime state
 .atl/

@@ -1,12 +1,12 @@
-# 00_Winter_is_Coming — Think Different PersonalOS v4.0 Consequences
+# 00_Winter_is_Coming — Think Different PersonalOS v4.7 Consequences
 
-**Versión:** 4.0 Consequences
-**Última actualización:** 2026-05-11
-**Estado:** ✅ ESTRATÉGICO | ADN del Sistema | PRODUCTION READY
+**Versión:** 4.7 Consequences
+**Última actualización:** 2026-05-22
+**Estado:** ✅ PRODUCTION READY | SOTA | Auditoría Integral Reconciliada
 
 ---
 
-## 📂 Contenido (2026-05-11)
+## 📂 Contenido (2026-05-22)
 
 ```
 00_Winter_is_Coming/
@@ -20,15 +20,18 @@
 
 ---
 
-## 📊 Estado Actual (v4.0 — 2026-05-11)
+## 📊 Estado Actual (v4.7 — 2026-05-22)
 
-- **GGA Version**: v2.8.1
-- **Every CE**: v3.7.3 ✅
-- **gentle-ai**: v1.26.6 ✅
-- **Agentes activos**: 52+
-- **MCPs**: 38 servidores activos (Claude Code)
-- **Skills**: 11 áreas funcionales (300+ SKILL.md)
-- **HUBs**: 23 scripts operativos (JARVIS 3.1)
+- **GGA Version**: v2.8.1 ✅
+- **Every CE**: v3.8.4 ✅
+- **gentle-ai**: v1.30.6 ✅
+- **Agentes activos**: 82 (75 .md + SDD/CE configurados)
+- **MCPs**: 36 servidores activos (Claude Code)
+- **Skills**: 394 SKILL.md (12 áreas funcionales)
+- **HUBs**: 19 HUBs + 284 scripts
+- **Workflows**: 30 (7 categorías)
+- **Agentes**: 46 definiciones (5 Dream Team + 23 Specialists + 13 individuales + 5 Growth)
+- **Subagentes**: SDD (10 fases) + background-agents + subagent-statusline sidebar
 
 ---
 
@@ -36,10 +39,13 @@
 
 | Fecha                                     | Cambio                                                                                           |
 |------------------------------------------|-------------------------------------------------------------------------------------------------|
+| 2026-05-22                                | v4.7 Consequences — Auditoría Integral, 394 skills, subagent-statusline, git fixes                |
+| 2026-05-21                                | v4.7 — SOTA, 393 skills, scripts actualizados                                                    |
+| 2026-05-20                                | v4.6 — Stable, OS_DIRECTORY.md v4.5, 358 skills                                                  |
+| 2026-05-18                                | v4.5 — Iron Man Genesis, 393 skills, Auditoría reconcilidada                                      |
+| 2026-05-11                                | v4.1 — Boot Protocol, MCPs sync                                                                  |
 | 2026-05-10                                | v4.0 Consequences — Production Ready, Every CE v3.7.3, gentle-ai v1.26.6                         |
-| 2026-05-05                                | v3.1 Consequences — Beautify Tables, métricas actualizadas, JARVIS manifests                     |
-| 2026-04-29                                | Git cleanup session — submodules removidos                                                       |
 
 ---
 
-*Think Different PersonalOS v4.0 Consequences — Estrategia y ADN*
+*Think Different PersonalOS v4.7 Consequences — Estrategia y ADN*

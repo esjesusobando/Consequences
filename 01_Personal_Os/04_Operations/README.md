@@ -1,12 +1,12 @@
-# 04_Operations — Motor Operativo PersonalOS v4.5
+# 04_Operations — Motor Operativo PersonalOS v4.7
 
-**Versión:** 4.5 Consequences
-**Última actualización:** 2026-05-21
-**Estado:** ✅ Activo (v4.5 Consequences)
+**Versión:** 4.7 Consequences
+**Última actualización:** 2026-05-23
+**Estado:** ✅ Activo (v4.7 Consequences)
 
 ---
 
-## 📂 Estructura (Workspace) — v4.5 Consequences
+## 📂 Estructura (Workspace) — v4.7 Consequences
 
 ```
 Think_Different/
@@ -15,8 +15,8 @@ Think_Different/
 │   ├── 01_Core/              # Motor OS: Skills, Agents, MCPs (FUENTE DE VERDAD)
 │   ├── 02_Knowledge/         # Base de Conocimiento, Research y Documentación
 │   ├── 03_Task/              # Gestión de Tareas Activas
+│   ├── 05_Archive/           # Backups, snapshots, históricos
 │   └── 04_Operations/        # Cerebro Operativo y Automatización ✅
-├── 05_Archive/            # Repositorio de Proyectos Finalizados
 ├── 02_Playground/         # Laboratorio de Pruebas y Experimentos
 ├── 03_Resultado/          # Resultados de proyectos
 └── .atl/                  # SDD Registry + openspec

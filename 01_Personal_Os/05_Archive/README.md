@@ -1,7 +1,7 @@
-# 📦 05_Archive — Think Different PersonalOS v4.5
+# 📦 05_Archive — Think Different PersonalOS v4.7
 
-> **Versión:** 4.5 Consequences
-> **Última actualización:** 2026-05-20
+> **Versión:** 4.7 Consequences
+> **Última actualización:** 2026-05-23
 > **Estado:** ✅ Optimizado a 3 carpetas con subcarpetas enumeradas
 
 Carpeta de legado y archivo muerto del sistema. Todo lo que ya no está activo pero se preserva por razones históricas o de referencia.
