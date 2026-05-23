@@ -1,15 +1,63 @@
-# Agent Catalog — generated 2026-05-22T16:21:03
+# Agent Catalog — generated 2026-05-23T08:31:46
 # Source of truth: 01_Personal_Os/01_Core/02_Tools/01_Agents/
 
 version: v3.0
-generated: "2026-05-22T16:21:03"
+generated: "2026-05-23T08:31:46"
 policy:
   source_of_truth: 01_Personal_Os/01_Core/02_Tools/01_Agents/
   backup: .agent/01_Agents/
   sync_direction: source -> backup (uni-directional)
 totals:
-  source: 82
-  backup: 82
-  in_sync: 82
-  drift: 0
+  source: 58
+  backup: 106
+  in_sync: 58
+  drift: 48
 drift_files:
+  - 01_Agent_Teams_Lite/AGENTS.md
+  - 01_Agent_Teams_Lite/skills/sdd-apply/SKILL.md
+  - 01_Agent_Teams_Lite/skills/sdd-apply/examples/scenario_01.md
+  - 01_Agent_Teams_Lite/skills/sdd-archive/SKILL.md
+  - 01_Agent_Teams_Lite/skills/sdd-archive/examples/anti_pattern.md
+  - 01_Agent_Teams_Lite/skills/sdd-archive/examples/scenario_01.md
+  - 01_Agent_Teams_Lite/skills/sdd-design/SKILL.md
+  - 01_Agent_Teams_Lite/skills/sdd-design/examples/scenario_01.md
+  - 01_Agent_Teams_Lite/skills/sdd-explore/SKILL.md
+  - 01_Agent_Teams_Lite/skills/sdd-explore/examples/scenario_01.md
+  - 01_Agent_Teams_Lite/skills/sdd-init/SKILL.md
+  - 01_Agent_Teams_Lite/skills/sdd-init/examples/anti_pattern.md
+  - 01_Agent_Teams_Lite/skills/sdd-init/examples/scenario_01.md
+  - 01_Agent_Teams_Lite/skills/sdd-propose/SKILL.md
+  - 01_Agent_Teams_Lite/skills/sdd-propose/examples/scenario_01.md
+  - 01_Agent_Teams_Lite/skills/sdd-spec/SKILL.md
+  - 01_Agent_Teams_Lite/skills/sdd-spec/examples/scenario_01.md
+  - 01_Agent_Teams_Lite/skills/sdd-tasks/SKILL.md
+  - 01_Agent_Teams_Lite/skills/sdd-tasks/examples/anti_pattern.md
+  - 01_Agent_Teams_Lite/skills/sdd-tasks/examples/scenario_01.md
+  - 01_Agent_Teams_Lite/skills/sdd-verify/SKILL.md
+  - 01_Agent_Teams_Lite/skills/sdd-verify/examples/anti_pattern.md
+  - 01_Agent_Teams_Lite/skills/skill-registry/SKILL.md
+  - 01_Agent_Teams_Lite/skills/skill-registry/examples/anti_pattern.md
+  - 01_Agent_Teams_Lite/skills/skill-registry/examples/scenario_01.md
+  - 02_Specialists_Compound/Agent-Native-Reviewer.md
+  - 02_Specialists_Compound/Ankane-Readme-Writer.md
+  - 02_Specialists_Compound/Architecture-Strategist.md
+  - 02_Specialists_Compound/Best-Practices-Researcher.md
+  - 02_Specialists_Compound/Code-Simplicity-Reviewer.md
+  - 02_Specialists_Compound/Data-Integrity-Guardian.md
+  - 02_Specialists_Compound/Data-Migration-Expert.md
+  - 02_Specialists_Compound/Deployment-Verification-Agent.md
+  - 02_Specialists_Compound/Design-Implementation-Reviewer.md
+  - 02_Specialists_Compound/Design-Iterator.md
+  - 02_Specialists_Compound/Dhh-Rails-Reviewer.md
+  - 02_Specialists_Compound/Figma-Design-Sync.md
+  - 02_Specialists_Compound/Framework-Docs-Researcher.md
+  - 02_Specialists_Compound/Git-History-Analyzer.md
+  - 02_Specialists_Compound/Julik-Frontend-Races-Reviewer.md
+  - 02_Specialists_Compound/Kieran-Python-Reviewer.md
+  - 02_Specialists_Compound/Kieran-Rails-Reviewer.md
+  - 02_Specialists_Compound/Kieran-Typescript-Reviewer.md
+  - 02_Specialists_Compound/Learnings-Researcher.md
+  - 02_Specialists_Compound/Pattern-Recognition-Specialist.md
+  - 02_Specialists_Compound/Performance-Oracle.md
+  - 02_Specialists_Compound/Repo-research-Analyst.md
+  - 02_Specialists_Compound/Security-Sentinel.md
