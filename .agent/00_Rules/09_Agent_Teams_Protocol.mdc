@@ -1,3 +1,7 @@
+---
+description: Regla para el uso de Forked Subagents y Agent Teams Protocol
+globs: **/*.py, **/*.ts, **/*.md, **/*.json, **/*.mdc
+---
 # Forked Subagents — Agent Teams Protocol
 
 **Version:** 1.0

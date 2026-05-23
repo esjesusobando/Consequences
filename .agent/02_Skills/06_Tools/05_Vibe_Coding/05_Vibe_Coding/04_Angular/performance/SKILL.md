@@ -18,13 +18,13 @@ import { NgOptimizedImage } from '@angular/common';
   template: `
     <!-- LCP image: add priority -->
     <img ngSrc="hero.jpg" width="800" height="400" priority>
-    
+
     <!-- Regular: lazy loaded by default -->
     <img ngSrc="thumb.jpg" width="200" height="200">
-    
+
     <!-- Fill mode (parent needs position: relative) -->
     <img ngSrc="bg.jpg" fill>
-    
+
     <!-- With placeholder -->
     <img ngSrc="photo.jpg" width="400" height="300" placeholder>
   `
@@ -55,13 +55,13 @@ import { NgOptimizedImage } from '@angular/common';
 
 ### Triggers
 
-| Trigger                             | When to Use                                    |
-|-------------------------------------|------------------------------------------------|
-| `on viewport`                       | Below the fold content                         |
-| `on interaction`                    | Load on click/focus/hover                      |
-| `on idle`                           | Load when browser is idle                      |
-| `on timer(500ms)`                   | Load after delay                               |
-| `when condition`                    | Load when expression is true                   |
+| Trigger                                      | When to Use                                             |
+|---------------------------------------------|--------------------------------------------------------|
+| `on viewport`                                | Below the fold content                                  |
+| `on interaction`                             | Load on click/focus/hover                               |
+| `on idle`                                    | Load when browser is idle                               |
+| `on timer(500ms)`                            | Load after delay                                        |
+| `when condition`                             | Load when expression is true                            |
 
 ```html
 <!-- Multiple triggers -->
@@ -105,22 +105,22 @@ bootstrapApplication(AppComponent, {
 });
 ```
 
-| Scenario                                          | Use                             |
-|---------------------------------------------------|---------------------------------|
-| SEO critical (blog, e-commerce)                   | SSR                             |
-| Dashboard/Admin                                   | CSR                             |
-| Static marketing site                             | SSG/Prerender                   |
+| Scenario                                                   | Use                                      |
+|-----------------------------------------------------------|-----------------------------------------|
+| SEO critical (blog, e-commerce)                            | SSR                                      |
+| Dashboard/Admin                                            | CSR                                      |
+| Static marketing site                                      | SSG/Prerender                            |
 
 ---
 
 ## Slow Computations
 
-| Solution                             | When                                     |
-|--------------------------------------|------------------------------------------|
-| Optimize algorithm                   | First choice always                      |
-| Pure pipes                           | Cache single result                      |
-| Memoization                          | Cache multiple results                   |
-| `computed()`                         | Derived signal state                     |
+| Solution                                      | When                                              |
+|----------------------------------------------|--------------------------------------------------|
+| Optimize algorithm                            | First choice always                               |
+| Pure pipes                                    | Cache single result                               |
+| Memoization                                   | Cache multiple results                            |
+| `computed()`                                  | Derived signal state                              |
 
 **NEVER** trigger reflows/repaints in lifecycle hooks (`ngOnInit`, `ngAfterViewInit`).
 

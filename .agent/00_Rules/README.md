@@ -1,29 +1,52 @@
-# Filosofía de Trabajo: La Tríada AI-Prime 🔱
+# Filosofía de Trabajo — Source of Truth 🔱
 
-Este directorio contiene la inteligencia operativa de **PersonalOS**, consolidada en **3 Pilares Cognitivos** para maximizar la eficiencia y precisión del asistente.
+**Este directorio es la FUENTE DE VERDAD** para las reglas del PersonalOS.
 
-## 🏛️ Estructura de Poder
+> ⚠️ **DOCUMENTO LEGACY:** Este README describe el sistema **Triada AI-Prime** (v1.0, 2026-04-18). El sistema actual (v4.0) está en `01_Personal_Os/01_Core/01_Rules/` con 12 reglas numeradas 00-11.
 
-1.  **[🔘 Pilar 0: Protocolo](01_Pilares_Sistema.mdc):** Pilares fundamentales del sistema
-2.  **[🛠️ Pilar 1: Motor](02_Motor_Agent.mdc):** Motor y stack técnico, Agent Integration
-3.  **[🧠 Pilar 2: Estrategia](03_Protocolos_Ejecucion.mdc):** Protocolos de ejecución y gestión
+---
 
-## 📋 Índice de Reglas (12 archivos)
+## 🏛️ Sistema Dual de Reglas
 
-| #  | Regla                        | Propósito                                        |
-|----|------------------------------|--------------------------------------------------|
-| 00 | `00_Core_Protocol.mdc`        | Protocolo core — ADN operativo                    |
-| 01 | `01_Pilares_Sistema.mdc`     | Pilares fundamentales del sistema                |
-| 02 | `02_Motor_Agent.mdc`         | Motor, Agent Integration y Stack Técnico         |
-| 03 | `03_Protocolos_Ejecucion.mdc`| Protocolos de ejecución                          |
-| 04 | `04_Observabilidad.mdc`      | Observabilidad y monitoreo                       |
-| 05 | `05_Reporting.mdc`           | Reporting de élite                               |
-| 06 | `06_Contexto_Gestion.mdc`    | Gestión de contexto                              |
-| 07 | `07_Docs_Guias.mdc`          | Documentación y guías                           |
-| 08 | `08_Token_Economy.mdc`       | Economía de tokens                               |
-| 09 | `09_Agent_Teams_Protocol.mdc` | Protocolo de Agent Teams                        |
-| 10 | `10_Git_Directions.mdc`       | Direcciones Git y flujo de trabajo               |
-| 11 | `11_Minimax.mdc`             | Configuración Minimax                            |
+| Sistema                       | Ubicación                         | Qty                               | Estado    |
+|------------------------------|----------------------------------|----------------------------------|----------|
+| **Triada AI-Prime (Legacy)**  | `.claude/02_Rules/`               | 25 rules (01-35, algunos saltados)| Convive   |
+| **Consequences v4.0 (Active)**| `01_Personal_Os/01_Core/01_Rules/`| 12 rules (00-11)                  | **ACTIVO**|
+
+> 📂 Los sistemas paralelos `.claude/02_Rules/` (Legacy) y `.agent/00_Rules/` (Backup) coexisten por compatibilidad.
+
+---
+
+## 📋 Índice de Reglas (Legacy — 25 archivos)
+
+| #                                    | Regla                                                                 | Propósito                                                                    |
+|-------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| 01                                   | `01_Context_Protocol.mdc`                                             | Protocolo de contexto obligatorio (Génesis)                                  |
+| 02                                   | `02_Pilar_Base.mdc`                                                   | Pilares fundamentales del sistema                                            |
+| 03                                   | `03_Pilar_Motor.mdc`                                                  | Motor y stack técnico                                                        |
+| 04                                   | `04_Pilar_Estrategia.mdc`                                             | Estrategia y AIPM                                                            |
+| 05                                   | `05_ritual-integrity.mdc`                                             | Integridad de ritus                                                          |
+| 06                                   | `06_Claude_Integration.mdc`                                           | Integración Claude                                                           |
+| 07                                   | `07_Skill_Fusion.mdc`                                                 | Fusión de skills                                                             |
+| 08                                   | `08_Observability.mdc`                                                | Observabilidad                                                               |
+| 09                                   | `09_Elite_Reporting.mdc`                                              | Reporting de élite                                                           |
+| 10                                   | `10_Context_Management.mdc`                                           | Gestión de contexto                                                          |
+| 11                                   | `11_Workflow_Standards.mdc`                                           | Estándares de workflow                                                       |
+| 12                                   | `12_Nexus-Routing.mdc`                                                | Enrutamiento Nexus                                                           |
+| 13                                   | `13_Testing_Resource_Management.mdc`                                  | Testing y recursos                                                           |
+| 14                                   | `14_Invoice_Intelligence.mdc`                                         | Inteligencia de facturas                                                     |
+| 15                                   | `15_Backlog_Processing.mdc`                                           | Procesamiento de backlog                                                     |
+| 16                                   | `16_Brainstorming.mdc`                                                | Brainstorming                                                                |
+| 17                                   | `17_Genesis.mdc`                                                      | Protocolo de inicio de sesión                                                |
+| 18                                   | `18_Morning_Standup.mdc`                                              | Standup matutino                                                             |
+| 19                                   | `19_Planning.mdc`                                                     | Planificación                                                                |
+| 20                                   | `20_Recap_Morning.mdc`                                                | Recap matutino                                                               |
+| 21                                   | `21_Gentleman_Framework.mdc`                                          | Framework Gentleman                                                          |
+| 35                                   | `35_Pencil_Design_Studio.mdc`                                         | Estudio de diseño Pencil                                                     |
+
+> 📝 **Nota:** Los números 23-34 fueron deprecados/absorbidos por otros archivos en la evolución del sistema.
+
+---
 
 ## 🔄 El Bucle de Oro (The Golden Loop)
 
@@ -40,8 +63,6 @@ graph TD
     S2 --> S3["S3: Aprendizaje & Evolución"]
     S3 --> S0
 ```
-
-> ⚠️ **Nota:** Este es el stack LEGACY de `.agent/00_Rules/`. El stack activo actual vive en `.claude/02_Rules/` con 22 archivos numerados (01-22 + Cursor_Rule_Skeleton).
 
 ---
 

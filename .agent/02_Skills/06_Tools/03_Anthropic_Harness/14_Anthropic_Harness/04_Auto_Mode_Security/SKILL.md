@@ -53,32 +53,32 @@ def scan_for_prompt_injection(tool_output: str) -> bool:
 
 Evalúa cada acción contra criterios de decisión. Dos etapas:
 
-| Stage                         | Propósito                                                                  | Latencia                         |
-|-------------------------------|----------------------------------------------------------------------------|----------------------------------|
-| Stage 1                       | Filtro rápido single-token (yes/no)                                        | <10ms                            |
-| Stage 2                       | Chain-of-thought reasoning (solo si Stage 1 flaggea)                       | <50ms                            |
+| Stage                                  | Propósito                                                                           | Latencia                                  |
+|---------------------------------------|------------------------------------------------------------------------------------|------------------------------------------|
+| Stage 1                                | Filtro rápido single-token (yes/no)                                                 | <10ms                                     |
+| Stage 2                                | Chain-of-thought reasoning (solo si Stage 1 flaggea)                                | <50ms                                     |
 
 ---
 
 ## Niveles de Riesgo
 
-| Nivel                              | Acción                                         | Ejemplos                                            |
-|------------------------------------|------------------------------------------------|-----------------------------------------------------|
-| **LOW**                            | Ejecutar automáticamente                       | `ls`, `cat`, `read`                                 |
-| **MEDIUM**                         | Ejecutar con logging                           | `write`, `edit`                                     |
-| **HIGH**                           | Solicitar confirmación                         | `delete`, `rm`, `exec`                              |
-| **CRITICAL**                       | Bloquear                                       | `rm -rf`, `format`, `--force`                       |
+| Nivel                                       | Acción                                                  | Ejemplos                                                     |
+|--------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------|
+| **LOW**                                     | Ejecutar automáticamente                                | `ls`, `cat`, `read`                                          |
+| **MEDIUM**                                  | Ejecutar con logging                                    | `write`, `edit`                                              |
+| **HIGH**                                    | Solicitar confirmación                                  | `delete`, `rm`, `exec`                                       |
+| **CRITICAL**                                | Bloquear                                                | `rm -rf`, `format`, `--force`                                |
 
 ---
 
 ## Métricas Objetivo
 
-| Métrica                                            | Target                         |
-|----------------------------------------------------|--------------------------------|
-| Reducción acciones overeager                       | >83%                           |
-| False positives                                    | <1%                            |
-| Latencia por decisión                              | <50ms                          |
-| Blocks en prompt injection                         | 100%                           |
+| Métrica                                                     | Target                                  |
+|------------------------------------------------------------|----------------------------------------|
+| Reducción acciones overeager                                | >83%                                    |
+| False positives                                             | <1%                                     |
+| Latencia por decisión                                       | <50ms                                   |
+| Blocks en prompt injection                                  | 100%                                    |
 
 ---
 
@@ -94,13 +94,13 @@ Evalúa cada acción contra criterios de decisión. Dos etapas:
 
 ### Scripts Disponibles
 
-| Script                                               | Propósito                                        |
-|------------------------------------------------------|--------------------------------------------------|
-| `00_Prompt_Injection_Probe.py`                       | Escanea outputs de tools                         |
-| `01_Transcript_Classifier.py`                        | Clasifica acciones                               |
-| `02_Stage1_Fast_Filter.py`                           | Filtro rápido single-token                       |
-| `03_Stage2_CoT_Reasoning.py`                         | Chain-of-thought reasoning                       |
-| `04_Decision_Engine.py`                              | Decide approve/deny                              |
+| Script                                                        | Propósito                                                 |
+|--------------------------------------------------------------|----------------------------------------------------------|
+| `00_Prompt_Injection_Probe.py`                                | Escanea outputs de tools                                  |
+| `01_Transcript_Classifier.py`                                 | Clasifica acciones                                        |
+| `02_Stage1_Fast_Filter.py`                                    | Filtro rápido single-token                                |
+| `03_Stage2_CoT_Reasoning.py`                                  | Chain-of-thought reasoning                                |
+| `04_Decision_Engine.py`                                       | Decide approve/deny                                       |
 
 ### Uso Básico
 

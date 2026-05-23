@@ -18,11 +18,11 @@ Input → PARSE(tags) → PROCESS(type,slug) → SAVE(filename,content)
 "reunión 3pm [trabajo]" → inbox/2026-03-31-1430-reunion.md
 ```
 
-| Component                       | Responsibility                                    | API                                                  |
-|---------------------------------|---------------------------------------------------|------------------------------------------------------|
-| Parser                          | Extract tags, clean content                       | `parse(input): {content, tags}`                      |
-| Processor                       | Detect type, slugify                              | `process(parsed): {slug, type}`                      |
-| Saver                           | Generate filename, write file                     | `save(processed, content): path`                     |
+| Component                                | Responsibility                                             | API                                                           |
+|-----------------------------------------|-----------------------------------------------------------|--------------------------------------------------------------|
+| Parser                                   | Extract tags, clean content                                | `parse(input): {content, tags}`                               |
+| Processor                                | Detect type, slugify                                       | `process(parsed): {slug, type}`                               |
+| Saver                                    | Generate filename, write file                              | `save(processed, content): path`                              |
 
 ---
 
@@ -49,11 +49,11 @@ function extractTags(input: string): string[] {
 }
 ```
 
-| Input                                              | Tags                                         |
-|----------------------------------------------------|----------------------------------------------|
-| `"comprar leche [compras]"`                        | `["compras"]`                                |
-| `"reunión [trabajo, reunion]"`                     | `["trabajo", "reunion"]`                     |
-| `"nota sin tags"`                                  | `[]`                                         |
+| Input                                                       | Tags                                                  |
+|------------------------------------------------------------|------------------------------------------------------|
+| `"comprar leche [compras]"`                                 | `["compras"]`                                         |
+| `"reunión [trabajo, reunion]"`                              | `["trabajo", "reunion"]`                              |
+| `"nota sin tags"`                                           | `[]`                                                  |
 
 ### 3. Type Detection (Two-Phase)
 
@@ -72,12 +72,12 @@ type: task
 tags: []
 ```
 
-| Field                         | Default                       | Source                                          |
-|-------------------------------|-------------------------------|-------------------------------------------------|
-| `created`                     | ISO 8601                      | System time                                     |
-| `source`                      | `text`                        | Input (text/voice/shortcut)                     |
-| `type`                        | `task`                        | Content analysis                                |
-| `tags`                        | `[]`                          | `[tag]` patterns                                |
+| Field                                  | Default                                | Source                                                   |
+|---------------------------------------|---------------------------------------|---------------------------------------------------------|
+| `created`                              | ISO 8601                               | System time                                              |
+| `source`                               | `text`                                 | Input (text/voice/shortcut)                              |
+| `type`                                 | `task`                                 | Content analysis                                         |
+| `tags`                                 | `[]`                                   | `[tag]` patterns                                         |
 
 ---
 
@@ -138,14 +138,14 @@ Rules: Title from first line → slug | Body: original (tags removed) | Blank li
 
 ## Implementation
 
-| Scenario                          | Behavior                                   |
-|-----------------------------------|--------------------------------------------|
-| Inbox missing                     | Create automatically                       |
-| Write denied                      | Error, no file                             |
-| Invalid YAML                      | Wrap in code block                         |
-| Empty input                       | Error: "Captura vacía"                     |
-| File exists                       | Retry 3x, then UUID                        |
-| Disk full                         | Error: "disco lleno"                       |
+| Scenario                                   | Behavior                                            |
+|-------------------------------------------|----------------------------------------------------|
+| Inbox missing                              | Create automatically                                |
+| Write denied                               | Error, no file                                      |
+| Invalid YAML                               | Wrap in code block                                  |
+| Empty input                                | Error: "Captura vacía"                              |
+| File exists                                | Retry 3x, then UUID                                 |
+| Disk full                                  | Error: "disco lleno"                                |
 
 **Dependencies**: Zero — pure file ops only. Target: <50ms, <5MB memory.
 
@@ -153,6 +153,6 @@ Rules: Title from first line → slug | Body: original (tags removed) | Blank li
 
 ## Changelog
 
-| Date                           | Change                             |
-|--------------------------------|------------------------------------|
-| 2026-03-31                     | Initial design                     |
+| Date                                    | Change                                      |
+|----------------------------------------|--------------------------------------------|
+| 2026-03-31                              | Initial design                              |

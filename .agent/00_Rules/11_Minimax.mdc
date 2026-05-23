@@ -1,3 +1,7 @@
+---
+description: Configuración Dual OpenCode + Claude Code con MiniMax-M2.7
+globs: **/*.py, **/*.ts, **/*.md, **/*.json, **/*.mdc
+---
 # 11_Minimax — Configuración Dual OpenCode + Claude Code con MiniMax-M2.7
 
 > **Última actualización:** 2026-05-13

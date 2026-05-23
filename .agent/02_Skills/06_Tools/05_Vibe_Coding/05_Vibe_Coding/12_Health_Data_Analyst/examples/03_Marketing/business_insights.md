@@ -7,20 +7,20 @@ Este análisis de **Standard v4.0 (Value First)** trasciende la visualización d
 > [!IMPORTANT]
 > Los ratios calculados son el pulso real de la eficiencia operativa.
 
-| 🏷️ KPI / Ratio                               | 🔢 Valor                           | 💡 Relevancia de Negocio                            |
-|----------------------------------------------|-----------------------------------|----------------------------------------------------|
-| **Volumen Total**                            | N/A registros                     | Masa crítica de datos                              |
-| **Conv_Rate (Promedio)**                     | 0.0653                            | Intent (Conversions/Clicks)                        |
-| **CPA (Promedio)**                           | 23.1667                           | Efficiency (Spend/Conversions)                     |
+| 🏷️ KPI / Ratio                                        | 🔢 Valor                                    | 💡 Relevancia de Negocio                                     |
+|------------------------------------------------------|-------------------------------------------|------------------------------------------------------------|
+| **Volumen Total**                                     | N/A registros                              | Masa crítica de datos                                       |
+| **Conv_Rate (Promedio)**                              | 0.0653                                     | Intent (Conversions/Clicks)                                 |
+| **CPA (Promedio)**                                    | 23.1667                                    | Efficiency (Spend/Conversions)                              |
 
 ### 📈 Profundización Estadística (Auditoría de Lógica)
-| 📉 Variable                          | 🧮 Media                     | 📉 Estabilidad                     | 📊 Status                             |
-|-------------------------------------|-----------------------------|-----------------------------------|--------------------------------------|
-| **Clicks**                          | 170.00                      | Volátil                           | 🟡 En Observación                     |
-| **Spend**                           | 160.00                      | Volátil                           | 🟡 En Observación                     |
-| **Conversions**                     | 10.40                       | Volátil                           | 🟡 En Observación                     |
-| **Conv_rate**                       | 0.07                        | Volátil                           | 🟡 En Observación                     |
-| **Cpa**                             | 23.17                       | Volátil                           | 🟡 En Observación                     |
+| 📉 Variable                                   | 🧮 Media                              | 📉 Estabilidad                              | 📊 Status                                      |
+|---------------------------------------------|-------------------------------------|-------------------------------------------|----------------------------------------------|
+| **Clicks**                                   | 170.00                               | Volátil                                    | 🟡 En Observación                              |
+| **Spend**                                    | 160.00                               | Volátil                                    | 🟡 En Observación                              |
+| **Conversions**                              | 10.40                                | Volátil                                    | 🟡 En Observación                              |
+| **Conv_rate**                                | 0.07                                 | Volátil                                    | 🟡 En Observación                              |
+| **Cpa**                                      | 23.17                                | Volátil                                    | 🟡 En Observación                              |
 
 ## 🧠 3. Strategic Analysis Matrix (The 'Why' Layer)
 > [!TIP]

@@ -1,8 +1,8 @@
 ---
 name: fantasticos
 description: >
-  Metodología 4 FANTÁSTICOS — Formación 4-3-3: Swarm + Auditor + Engram + Docs. 
-  Para tareas multi-carpeta con verificación continua. Activa cuando: "verificación completa", 
+  Metodología 4 FANTÁSTICOS — Formación 4-3-3: Swarm + Auditor + Engram + Docs.
+  Para tareas multi-carpeta con verificación continua. Activa cuando: "verificación completa",
   "audita esto", "revisá todo", "múltiples carpetas", "4 fantásticaos".
 ---
 
@@ -21,12 +21,12 @@ Calidad del trabajo de uno determina la calidad del siguiente.
 
 ## Cuándo Usar 4 FANTÁSTICOS
 
-| Scenario                               | Ejemplo                                             |
-|----------------------------------------|-----------------------------------------------------|
-| Tareas multi-carpeta                   | "Migra todas las carpetas de X a Y"                 |
-| Verificación continua                  | "Audita todo el sistema"                            |
-| Revisión completa                      | "Revisá que todo esté bien"                         |
-| Migración con rollback                 | "Mové esto pero mantene un backup"                  |
+| Scenario                                        | Ejemplo                                                      |
+|------------------------------------------------|-------------------------------------------------------------|
+| Tareas multi-carpeta                            | "Migra todas las carpetas de X a Y"                          |
+| Verificación continua                           | "Audita todo el sistema"                                     |
+| Revisión completa                               | "Revisá que todo esté bien"                                  |
+| Migración con rollback                          | "Mové esto pero mantene un backup"                           |
 
 ## Formación 4 FANTÁSTICOS
 
@@ -124,11 +124,11 @@ Usuario: "Migra todas las rutas de skills de la raíz a 01_Core/"
 
 ## Integración con Otras Metodologías
 
-| Metodología                         | Relación                                                         |
-|-------------------------------------|------------------------------------------------------------------|
-| **OCTOPUS**                         | 4F es más complejo, incluye verificación                         |
-| **Super Campeones**                 | Similar pero 4F es específico para multi-carpeta                 |
-| **SDD**                             | 4F puede ejecutar tasks del SDD                                  |
+| Metodología                                  | Relación                                                                  |
+|---------------------------------------------|--------------------------------------------------------------------------|
+| **OCTOPUS**                                  | 4F es más complejo, incluye verificación                                  |
+| **Super Campeones**                          | Similar pero 4F es específico para multi-carpeta                          |
+| **SDD**                                      | 4F puede ejecutar tasks del SDD                                           |
 
 ## Gotchas
 
@@ -140,11 +140,11 @@ Usuario: "Migra todas las rutas de skills de la raíz a 01_Core/"
 
 ## Diferencia con otras Formaciones
 
-| Formación                           | Complejidad                   | Verificación                    | Docs                   | Memoria                    |
-|-------------------------------------|-------------------------------|---------------------------------|------------------------|----------------------------|
-| **OCTOPUS**                         | Baja                          | ❌                               | ❌                      | ❌                          |
-| **Super Campeones**                 | Alta                          | ✅                               | ✅                      | ✅                          | ✅ |
-| **4 FANTÁSTICOS**                   | Media                         | ✅                               | ✅                      | ✅                          |
+| Formación                                    | Complejidad                            | Verificación                             | Docs                            | Memoria                             |
+|---------------------------------------------|---------------------------------------|-----------------------------------------|--------------------------------|------------------------------------|
+| **OCTOPUS**                                  | Baja                                   | ❌                                        | ❌                               | ❌                                   |
+| **Super Campeones**                          | Alta                                   | ✅                                        | ✅                               | ✅                                   | ✅|
+| **4 FANTÁSTICOS**                            | Media                                  | ✅                                        | ✅                               | ✅                                   |
 
 ---
 

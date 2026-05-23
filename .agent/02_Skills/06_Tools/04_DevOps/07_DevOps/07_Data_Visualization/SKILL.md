@@ -23,27 +23,27 @@ Skill para crear visualizaciones de datos SOTA usando las mejores librerías 202
 
 ### Libraries Ranking
 
-| Library                                   | Best For                                     | Weekly DLs                         | Bundle                           | Type                                 |
-|-------------------------------------------|----------------------------------------------|------------------------------------|----------------------------------|--------------------------------------|
-| **Recharts v2**                           | React apps, composable                       | ~3M                                | ~45kB gz                         | SVG                                  |
-| **Chart.js v4**                           | Simple, Canvas                               | ~10M                               | ~75kB gz                         | Canvas                               |
-| **ECharts v5**                            | Enterprise dashboards                        | ~2M                                | ~350kB gz                        | Canvas                               |
-| **Tremor v3**                             | SaaS dashboards                              | ~100k                              | ~200kB                           | React+Tailwind                       |
-| **Nivo v0.87**                            | Complex viz, SSR                             | ~450k                              | Modular                          | SVG+Canvas                           |
-| **D3.js v7**                              | Custom, max control                          | ~9M                                | ~90kB                            | Low-level                            |
-| **Observable Plot**                       | Exploratory analysis                         |------------------------------------| D3-powered                       | SVG                                  |
-| **ApexCharts**                            | React/Vue wrappers                           | ~500k                              | ~130kB                           | SVG                                  |
+| Library                                            | Best For                                              | Weekly DLs                                  | Bundle                                    | Type                                          |
+|---------------------------------------------------|------------------------------------------------------|--------------------------------------------|------------------------------------------|----------------------------------------------|
+| **Recharts v2**                                    | React apps, composable                                | ~3M                                         | ~45kB gz                                  | SVG                                           |
+| **Chart.js v4**                                    | Simple, Canvas                                        | ~10M                                        | ~75kB gz                                  | Canvas                                        |
+| **ECharts v5**                                     | Enterprise dashboards                                 | ~2M                                         | ~350kB gz                                 | Canvas                                        |
+| **Tremor v3**                                      | SaaS dashboards                                       | ~100k                                       | ~200kB                                    | React+Tailwind                                |
+| **Nivo v0.87**                                     | Complex viz, SSR                                      | ~450k                                       | Modular                                   | SVG+Canvas                                    |
+| **D3.js v7**                                       | Custom, max control                                   | ~9M                                         | ~90kB                                     | Low-level                                     |
+| **Observable Plot**                                | Exploratory analysis                                  |--------------------------------------------| D3-powered                                | SVG                                           |
+| **ApexCharts**                                     | React/Vue wrappers                                    | ~500k                                       | ~130kB                                    | SVG                                           |
 
 ### Selection Matrix
 
-| Criteria                                          | Winner                         | Alternative                             |
-|---------------------------------------------------|--------------------------------|-----------------------------------------|
-| React + TypeScript strict                         | Recharts                       | Tremor                                  |
-| SaaS Dashboard (Tailwind)                         | Tremor                         | Recharts + shadcn                       |
-| Enterprise (complex charts)                       | ECharts                        | Highcharts                              |
-| SSR/Next.js                                       | Nivo                           | Recharts                                |
-| Max customization                                 | D3.js                          | Observable Plot                         |
-| Quick/simple charts                               | Chart.js                       | Recharts                                |
+| Criteria                                                   | Winner                                  | Alternative                                      |
+|-----------------------------------------------------------|----------------------------------------|-------------------------------------------------|
+| React + TypeScript strict                                  | Recharts                                | Tremor                                           |
+| SaaS Dashboard (Tailwind)                                  | Tremor                                  | Recharts + shadcn                                |
+| Enterprise (complex charts)                                | ECharts                                 | Highcharts                                       |
+| SSR/Next.js                                                | Nivo                                    | Recharts                                         |
+| Max customization                                          | D3.js                                   | Observable Plot                                  |
+| Quick/simple charts                                        | Chart.js                                | Recharts                                         |
 
 ---
 
@@ -1162,18 +1162,18 @@ export function RealtimeDashboard() {
 
 ## Chart Types Guide
 
-| Data Pattern                                   | Best Chart                                | Use Case                                                  |
-|------------------------------------------------|-------------------------------------------|-----------------------------------------------------------|
-| Trends over time                               | Line, Area                                | Revenue, growth, stock prices                             |
-| Comparisons (categories)                       | Bar, Column                               | Sales by region, product comparison                       |
-| Part-to-whole                                  | Pie, Donut, Treemap                       | Market share, budget allocation                           |
-| Distributions                                  | Histogram, Box plot                       | User behavior, response times                             |
-| Correlations                                   | Scatter                                   | Height vs weight, price vs demand                         |
-| Funnels                                        | Funnel, Waterfall                         | Sales pipeline, conversion                                |
-| Multi-axis                                     | Composed                                  | Sales vs targets vs conversion                            |
-| Geographical                                   | Map                                       | Regional data, location metrics                           |
-| Hierarchical                                   | Tree map, Sunburst                        | Organizational structure                                  |
-| Relationships                                  | Network, Sankey                           | User flows, dependencies                                  |
+| Data Pattern                                            | Best Chart                                         | Use Case                                                           |
+|--------------------------------------------------------|---------------------------------------------------|-------------------------------------------------------------------|
+| Trends over time                                        | Line, Area                                         | Revenue, growth, stock prices                                      |
+| Comparisons (categories)                                | Bar, Column                                        | Sales by region, product comparison                                |
+| Part-to-whole                                           | Pie, Donut, Treemap                                | Market share, budget allocation                                    |
+| Distributions                                           | Histogram, Box plot                                | User behavior, response times                                      |
+| Correlations                                            | Scatter                                            | Height vs weight, price vs demand                                  |
+| Funnels                                                 | Funnel, Waterfall                                  | Sales pipeline, conversion                                         |
+| Multi-axis                                              | Composed                                           | Sales vs targets vs conversion                                     |
+| Geographical                                            | Map                                                | Regional data, location metrics                                    |
+| Hierarchical                                            | Tree map, Sunburst                                 | Organizational structure                                           |
+| Relationships                                           | Network, Sankey                                    | User flows, dependencies                                           |
 
 ---
 
@@ -1289,18 +1289,18 @@ export function recommendChartType(data: {
 
 ## Resources
 
-| Resource                                 | URL                                                  |
-|------------------------------------------|------------------------------------------------------|
-| Recharts                                 | https://recharts.org                                 |
-| Tremor                                   | https://tremor.so                                    |
-| Nivo                                     | https://nivo.rocks                                   |
-| Chart.js                                 | https://www.chartjs.org                              |
-| ECharts                                  | https://echarts.apache.org                           |
-| D3.js                                    | https://d3js.org                                     |
-| Observable Plot                          | https://observablehq.com/plot/                       |
-| TanStack Table                           | https://tanstack.com/table                           |
-| Chart Chooser                            | https://datavizproject.com                           |
-| Data Viz Catalogue                       | https://datavizcatalogue.com                         |
+| Resource                                          | URL                                                           |
+|--------------------------------------------------|--------------------------------------------------------------|
+| Recharts                                          | https://recharts.org                                          |
+| Tremor                                            | https://tremor.so                                             |
+| Nivo                                              | https://nivo.rocks                                            |
+| Chart.js                                          | https://www.chartjs.org                                       |
+| ECharts                                           | https://echarts.apache.org                                    |
+| D3.js                                             | https://d3js.org                                              |
+| Observable Plot                                   | https://observablehq.com/plot/                                |
+| TanStack Table                                    | https://tanstack.com/table                                    |
+| Chart Chooser                                     | https://datavizproject.com                                    |
+| Data Viz Catalogue                                | https://datavizcatalogue.com                                  |
 
 ---
 

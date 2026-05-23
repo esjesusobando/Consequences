@@ -51,11 +51,11 @@ python 01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe
 
 ## Commands Reference
 
-| Command                                             | Description                                                |
-|-----------------------------------------------------|------------------------------------------------------------|
-| `servers`                                           | List all configured MCP servers                            |
-| `tools <server>`                                    | List tools with full parameter schemas                     |
-| `call <server> <tool> '<json>'`                     | Execute a tool with arguments                              |
+| Command                                                      | Description                                                         |
+|-------------------------------------------------------------|--------------------------------------------------------------------|
+| `servers`                                                    | List all configured MCP servers                                     |
+| `tools <server>`                                             | List tools with full parameter schemas                              |
+| `call <server> <tool> '<json>'`                              | Execute a tool with arguments                                       |
 
 ## Example: Zapier
 

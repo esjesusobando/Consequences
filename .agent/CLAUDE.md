@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working in this
 
 ---
 
-# Constitucion Think Different — PersonalOS v3.1 Consequences
+# Constitucion Think Different — PersonalOS v4.7 Consequences
 
 ## REGLA 00: Protocolo Genesis (OBLIGATORIO)
 
@@ -308,4 +308,4 @@ Code review con IA integrado.
 
 ---
 
-© 2026 PersonalOS v3.1 Consequences
+© 2026 PersonalOS v4.7 Consequences

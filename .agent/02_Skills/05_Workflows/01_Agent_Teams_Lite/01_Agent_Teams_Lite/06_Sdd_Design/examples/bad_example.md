@@ -29,10 +29,10 @@ Use Repository pattern with dependency injection.
 
 ## File Changes
 
-| File                              | Action                         |
-|-----------------------------------|--------------------------------|
-| new-file.ts                       | Create                         |
-| another.ts                        | Modify                         |
+| File                                       | Action                                  |
+|-------------------------------------------|----------------------------------------|
+| new-file.ts                                | Create                                  |
+| another.ts                                 | Modify                                  |
 ```
 
 ### Why This Is Bad
@@ -79,17 +79,17 @@ await client.connect();
 app.use(async (req, res, next) => {
   const key = req.originalUrl;
   const cached = await client.get(key);
-  
+
   if (cached) {
     return res.json(JSON.parse(cached));
   }
-  
+
   const originalJson = res.json.bind(res);
   res.json = (data) => {
     client.setEx(key, 3600, JSON.stringify(data));
     return originalJson(data);
   };
-  
+
   next();
 });
 ```
@@ -128,9 +128,9 @@ Use functional programming with pure functions.
 
 ## File Changes
 
-| File                                       | Action                         |
-|--------------------------------------------|--------------------------------|
-| src/services/user.ts                       | Create                         |
+| File                                                | Action                                  |
+|----------------------------------------------------|----------------------------------------|
+| src/services/user.ts                                | Create                                  |
 
 ## Interfaces
 

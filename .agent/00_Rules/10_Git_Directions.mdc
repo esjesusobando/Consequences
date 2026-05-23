@@ -1,3 +1,7 @@
+---
+description: Regla de configuración de Remotes Git y OpenCode/Claude Code plugins
+globs: **/*.py, **/*.ts, **/*.md, **/*.json, **/*.mdc
+---
 # 10_Git_Directions — Regla de Configuracion de Remotes y OpenCode/Claude Code
 
 > Evita confusiones entre proyectos verificando siempre el remote antes de hacer push.

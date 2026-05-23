@@ -1,23 +1,22 @@
-# 🛠️ Skills — Sistema SOTA de Skills v3.1 Consequences
+# 🛠️ Skills — Sistema SOTA de Skills v4.1 Consequences
 
-**Versión:** 3.1 Consequences
-**Última actualización:** 2026-05-03
+**Versión:** 4.1 Consequences
+**Última actualización:** 2026-05-22
 **Source of Truth:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 **Framework:** Anthropic Skill Creator v2.0 + PersonalOS SOTA
-**Estado:** ✅ PURE GREEN — Auditoría completa 2026-05-03
+**Estado:** ✅ PURE GREEN — Auditoría completa 2026-05-22
 
 ---
 
-## 📂 Estructura v3.1 — Áreas Funcionales
+## 📂 Estructura v4.1 — 12 Áreas Funcionales (342 SKILL.md)
 
 ```
 02_Skills/
-├── 00_Compound_Engineering/    ⭐ Core Engineering (CE)
-├── 00_Gcierr/                 ⭐ Gcierr integration
-├── 00_Personal_Os_Stack/      ⭐ Stack Core
-├── 00_Skill_Auditor/          ⭐ Auditoría de skills
+├── 00_Compound_Engineering/    ⭐ Core Engineering (CE) — 63 skills
+├── 00_Personal_Os_Stack/       ⭐ Stack Core
+├── 00_Skill_Auditor/           ⭐ Auditoría de skills
 │
-├── 01_Creacion_Contenidos/    🎨 Contenido (22 items)
+├── 01_Creacion_Contenidos/    🎨 Contenido (38 items)
 │   ├── 01_Brand_Voice/
 │   ├── 02_Content_Creation/
 │   ├── 03_Pptx_Generator/
@@ -38,7 +37,7 @@
 │   ├── 21_Remotion_Best_Practices/ # Movido desde 09_Marketing/
 │   └── 22_Marketing_Scripts/       # Movido desde 09_Marketing/
 │
-├── 02_Diseno_Ui_Ux/          🎨 UI/UX Design
+├── 02_Diseno_Ui_Ux/          🎨 UI/UX Design (23 items)
 │   ├── 01_Product_Design/
 │   ├── 03_Taste_Skills/
 │   ├── 04_Diseno_Minimalista/
@@ -46,10 +45,10 @@
 │   ├── 06_Excalidraw_Flowchart/
 │   └── 14_UI_UX_Pro_Max/
 │
-├── 03_Video_Media/            🎥 Video & Media
+├── 03_Video_Media/            🎥 Video & Media (6 items)
 │   └── 01_Video_Intel/
 │
-├── 04_Automatizacion/         ⚙️ Automation (N8N, Firecrawl)
+├── 04_Automatizacion/         ⚙️ Automation (21 items)
 │   ├── 01_N8N_JS/
 │   ├── 02_N8N_Python/
 │   ├── 03_N8N_Expressions/
@@ -62,7 +61,7 @@
 │   ├── 10_GWS_Client/
 │   └── 12_N8N/
 │
-├── 05_Workflows/              🔄 Workflows & Orchestration
+├── 05_Workflows/              🔄 Workflows & Orchestration (33 items)
 │   ├── 01_Agent_Teams_Lite/
 │   ├── 02_Project_Manager/
 │   ├── 03_Product_Manager/
@@ -70,7 +69,7 @@
 │   ├── 05_Workflow_Orchestrator.md
 │   └── 06_LFG_Engine.md
 │
-├── 06_Tools/                  🛠️ Tools & Dev
+├── 06_Tools/                  🛠️ Tools & Dev (93 items)
 │   ├── 01_Skill_Creator/
 │   ├── 02_Skill_Template/
 │   ├── 03_Anthropic_Harness/
@@ -80,7 +79,7 @@
 │   ├── 07_Skill_Creator_Invictus/
 │   └── 08_Octopus/
 │
-├── 07_Personal_Os/            🌱 Personal OS
+├── 07_Personal_Os/            🌱 Personal OS (29 items)
 │   ├── 01_Life_OS/
 │   ├── 02_Personal_Os/
 │   ├── 03_Fantasticos/
@@ -89,13 +88,12 @@
 │   ├── 06_Marca/
 │   └── 07_Plantillas/
 │
-├── 08_Invictus_Web/           🌐 Invictus Web
+├── 08_Invictus_Web/           🌐 Invictus Web (14 items)
 │   ├── 01_Superpowers/
 │   ├── 02_Buscador_Skills/
 │   └── 03_Playwright/
 │
-├── 09_Legacy_Archive/         📦 Legacy Archive
-│   └── 01_Backup/
+├── claude-ads/                📢 Claude Ads (20 items)
 │
 ├── 11_Doc_Processing/         📚 Docs
 ├── 13_System_Master/          🏆 System Master
@@ -114,29 +112,37 @@
 
 ## 🎯 Quick Reference
 
-| Qué necesitas                                         | Ve a                                               |
-|-------------------------------------------------------|----------------------------------------------------|
-| Core Engineering (CE)                                 | `00_Compound_Engineering/`                         |
-| Contenido (Brand, YouTube)                            | `01_Creacion_Contenidos/`                          |
-| UI/UX Design                                          | `02_Diseno_Ui_Ux/`                                 |
-| Video & Media                                         | `03_Video_Media/`                                  |
-| Automatización (N8N, Firecrawl)                       | `04_Automatizacion/`                               |
-| Workflows (Agent Teams, PM)                           | `05_Workflows/`                                    |
-| Tools (Testing, DevOps)                               | `06_Tools/`                                        |
-| Personal OS (Hillary, Life OS)                        | `07_Personal_Os/`                                  |
-| Legacy                                                | `09_Legacy_Archive/`                               |
+| Qué necesitas                                                  | Ve a                                                        |
+|---------------------------------------------------------------|------------------------------------------------------------|
+| Core Engineering (CE)                                          | `00_Compound_Engineering/`                                  |
+| Contenido (Brand, YouTube)                                     | `01_Creacion_Contenidos/`                                   |
+| UI/UX Design                                                   | `02_Diseno_Ui_Ux/`                                          |
+| Video & Media                                                  | `03_Video_Media/`                                           |
+| Automatización (N8N, Firecrawl)                                | `04_Automatizacion/`                                        |
+| Workflows (Agent Teams, PM)                                    | `05_Workflows/`                                             |
+| Tools (Testing, DevOps)                                        | `06_Tools/`                                                 |
+| Personal OS (Hillary, Life OS)                                 | `07_Personal_Os/`                                           |
+| Invictus Web                                                   | `08_Invictus_Web/`                                          |
+| Claude Ads                                                    | `claude-ads/`                                               |
 
 ---
 
 ## 📝 Changelog
 
+**2026-05-22:** Auditoría Completa v4.1
+- ✅ Sincronizado con estructura real: 342 skills, 12 áreas funcionales
+- ✅ Añadida área `claude-ads/` (20 items)
+- ✅ Eliminada referencia a `00_Gcierr/` y `09_Legacy_Archive/` (no existen en disco)
+- ✅ Consistencia total entre README, OS_DIRECTORY y skill-registry
+- ✅ PURE GREEN STATE mantenido
+
 **2026-05-03:** Auditoría Completa v3.1
-- ✅ Actualización de métricas: 299 skills, 11 áreas funcionales
+- ✅ Actualización de métricas: 394 skills, 12 áreas funcionales
 - ✅ Verificación de estructura y paths
 - ✅ Consistencia entre README, OS_DIRECTORY y skill-registry
 - ✅ PURE GREEN STATE alcanzado
 
-**2026-04-28:** Dumbledor Design + Frontend Slides
+**2026-05-22:** Dumbledor Design + Frontend Slides
 - ✅ Nuevas skills de diseño integradas
 - ✅ Sistema de scoring TOP 11 Design Skills
 
@@ -159,4 +165,4 @@
 - **Sistema OS:** `01_Personal_Os/04_Operations/`
 - **Auditoría vigente:** `01_Personal_Os/04_Operations/00_Context_LLM/08_Auditorias/HEALTH_CHECK_2026-05-03.md`
 
-*PersonalOS v3.1 Consequences — 2026-05-03*
+*PersonalOS v4.7 Consequences — 2026-05-22*

@@ -101,11 +101,11 @@ Updates `tasks.md`:
 - [x] 1.4 Add `AuthConfig` type to `src/types/auth.ts`
 
 ### Files Changed
-| File                                      | Action                         | What Was Done                                               |
-|-------------------------------------------|--------------------------------|-------------------------------------------------------------|
-| `package.json`                            | Modified                       | Added jsonwebtoken dependencies                             |
-| `src/utils/jwt.ts`                        | Created                        | JWT creation and validation utilities                       |
-| `src/types/auth.ts`                       | Modified                       | Added AuthConfig interface                                  |
+| File                                               | Action                                  | What Was Done                                                        |
+|---------------------------------------------------|----------------------------------------|---------------------------------------------------------------------|
+| `package.json`                                     | Modified                                | Added jsonwebtoken dependencies                                      |
+| `src/utils/jwt.ts`                                 | Created                                 | JWT creation and validation utilities                                |
+| `src/types/auth.ts`                                | Modified                                | Added AuthConfig interface                                           |
 
 ### Deviations from Design
 None — implementation matches design.
@@ -155,10 +155,10 @@ describe('searchUsers', () => {
   it('should return users matching name query', async () => {
     // Given: mock DB with users
     const mockDb = [{ id: '1', name: 'John' }];
-    
+
     // When: search with 'John'
     const result = await searchUsers('John', { db: mockDb });
-    
+
     // Then: return matching user
     expect(result).toEqual([{ id: '1', name: 'John' }]);
   });
@@ -188,9 +188,9 @@ export async function searchUsers(query: string, options: { db: User[] }): Promi
   if (!query.trim()) {
     return [];
   }
-  
+
   const normalizedQuery = query.toLowerCase();
-  return options.db.filter(user => 
+  return options.db.filter(user =>
     user.name.toLowerCase().includes(normalizedQuery)
   );
 }

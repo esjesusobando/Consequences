@@ -1,6 +1,6 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-22T21:21:21",
+  "generated": "2026-05-22T23:19:38",
   "personal_os": {
     "name": "PersonalOS",
     "version": "v2.1 -> v3.0 (in progress)",
@@ -15,7 +15,7 @@
     "agents_backup": 82,
     "hubs": 28,
     "scripts": 152,
-    "workflows": 30,
+    "workflows": 29,
     "workflow_categories": 7,
     "hooks": 10,
     "hook_phases": 6,

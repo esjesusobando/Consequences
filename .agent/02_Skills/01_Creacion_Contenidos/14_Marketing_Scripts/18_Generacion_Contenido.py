@@ -42,7 +42,7 @@ def print_banner():
 ╔══════════════════════════════════════════════════════════════════════╗
 ║                                                                      ║
 ║          ✍️  C O N T E N T   G E N E R A T I O N                 ║
-║              Think Different PersonalOS v3.0                           ║
+║              Think Different PersonalOS v4.7                           ║
 ║                                                                      ║
 ╚══════════════════════════════════════════════════════════════════════╝
 """)

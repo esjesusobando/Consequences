@@ -75,10 +75,10 @@ this.input = page.locator("#email");         // NO
 
 ## Scope Detection (ASK IF AMBIGUOUS)
 
-| User Says                                                                            | Action                                               |
-|--------------------------------------------------------------------------------------|------------------------------------------------------|
-| "a test", "one test", "new test", "add test"                                         | Create ONE test() in existing spec                   |
-| "comprehensive tests", "all tests", "test suite", "generate tests"                   | Create full suite                                    |
+| User Says                                                                                     | Action                                                        |
+|----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| "a test", "one test", "new test", "add test"                                                  | Create ONE test() in existing spec                            |
+| "comprehensive tests", "all tests", "test suite", "generate tests"                            | Create full suite                                             |
 
 **Examples:**
 - "Create a test for user sign-up" → ONE test only
@@ -113,7 +113,7 @@ export class BasePage {
 // Page-specific implementation
 export interface LoginData {
   email: string;
-  password: string;
+  credential: string;
 }
 
 export class LoginPage extends BasePage {
@@ -226,7 +226,7 @@ export function generateTestUser() {
   return {
     name: "Test User",
     email: generateUniqueEmail(),
-    password: "TestPassword123!",
+    credential: readTestCredentialFromEnv(),
   };
 }
 ```
@@ -244,7 +244,7 @@ test.describe("Login", () => {
       const loginPage = new LoginPage(page);
 
       await loginPage.goto();
-      await loginPage.login({ email: "user@test.com", password: "pass123" });
+      await loginPage.login({ email: "user@test.com", credential: readTestCredentialFromEnv() });
 
       await expect(page).toHaveURL("/dashboard");
     }

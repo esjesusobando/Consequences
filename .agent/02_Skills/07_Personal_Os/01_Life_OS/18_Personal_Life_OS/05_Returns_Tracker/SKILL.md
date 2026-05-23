@@ -19,12 +19,12 @@ Observación → DETECTAR → PATRON → GENERAR → SKILL
 
 ## Inputs
 
-| Source                             | Data                                    | Target Path                                                | Weight                       |
-|------------------------------------|-----------------------------------------|------------------------------------------------------------|------------------------------|
-| Quick Capture                      | Frecuencia de tags                      | `03_Tasks/02_Hillary_Inbox/`                               | Alta                         |
-| Daily Notes                        | Patrones temporales                     | `03_Tasks/Daily_Activity_Log.md`                           | Alta                         |
-| Recording Mode                     | Temas recurrentes                       | `03_Tasks/02_Hillary_Inbox/Transcripts/`                   | Media                        |
-| Plan My Day                        | Tareas repetitivas                      | `03_Tasks/` (Backlog)                                      | Alta                         |
+| Source                                      | Data                                             | Target Path                                                         | Weight                                |
+|--------------------------------------------|-------------------------------------------------|--------------------------------------------------------------------|--------------------------------------|
+| Quick Capture                               | Frecuencia de tags                               | `03_Tasks/02_Hillary_Inbox/`                                        | Alta                                  |
+| Daily Notes                                 | Patrones temporales                              | `03_Tasks/Daily_Activity_Log.md`                                    | Alta                                  |
+| Recording Mode                              | Temas recurrentes                                | `03_Tasks/02_Hillary_Inbox/Transcripts/`                            | Media                                 |
+| Plan My Day                                 | Tareas repetitivas                               | `03_Tasks/` (Backlog)                                               | Alta                                  |
 
 ### Detectable Patterns
 
@@ -147,17 +147,17 @@ description: Auto-generated from pattern detection
 
 ## Implementation
 
-| Scenario                           | Behavior                             |
-|------------------------------------|--------------------------------------|
-| <3 occurrences                     | "Need more data"                     |
-| Score 0.6-0.7                      | "Needs review"                       |
-| Already exists                     | Skip                                 |
-| User rejects                       | Feedback + retry                     |
+| Scenario                                    | Behavior                                      |
+|--------------------------------------------|----------------------------------------------|
+| <3 occurrences                              | "Need more data"                              |
+| Score 0.6-0.7                               | "Needs review"                                |
+| Already exists                              | Skip                                          |
+| User rejects                                | Feedback + retry                              |
 
 ---
 
 ## Changelog
 
-| Date                           | Change                           |
-|--------------------------------|----------------------------------|
-| 2026-03-31                     | Initial v1.0                     |
+| Date                                    | Change                                    |
+|----------------------------------------|------------------------------------------|
+| 2026-03-31                              | Initial v1.0                              |

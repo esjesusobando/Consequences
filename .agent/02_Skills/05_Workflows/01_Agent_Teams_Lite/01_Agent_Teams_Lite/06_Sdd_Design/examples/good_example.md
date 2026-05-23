@@ -36,7 +36,7 @@ This maps to proposal's approach of "Access + refresh token with HTTP-only cooki
 
 **Choice**: HTTP-only secure cookies for both access and refresh tokens
 
-**Alternatives considered**: 
+**Alternatives considered**:
 - LocalStorage for access token (rejected: XSS vulnerability)
 - Authorization header with Bearer token (rejected: more complex client implementation)
 - Session storage (rejected: doesn't scale horizontally)
@@ -92,15 +92,15 @@ This maps to proposal's approach of "Access + refresh token with HTTP-only cooki
 
 ## File Changes
 
-| File                                           | Action                         | Description                                                     |
-|------------------------------------------------|--------------------------------|-----------------------------------------------------------------|
-| `src/utils/jwt.ts`                             | Create                         | JWT creation, validation, refresh logic                         |
-| `src/middleware/auth.ts`                       | Modify                         | Replace session check with JWT validation                       |
-| `src/routes/login.ts`                          | Modify                         | Return JWT tokens in cookies                                    |
-| `src/routes/logout.ts`                         | Modify                         | Invalidate refresh token                                        |
-| `src/routes/refresh.ts`                        | Create                         | Token refresh endpoint                                          |
-| `src/types/auth.ts`                            | Modify                         | Add JWT payload types                                           |
-| `package.json`                                 | Modify                         | Add jsonwebtoken dependency                                     |
+| File                                                    | Action                                  | Description                                                              |
+|--------------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------|
+| `src/utils/jwt.ts`                                      | Create                                  | JWT creation, validation, refresh logic                                  |
+| `src/middleware/auth.ts`                                | Modify                                  | Replace session check with JWT validation                                |
+| `src/routes/login.ts`                                   | Modify                                  | Return JWT tokens in cookies                                             |
+| `src/routes/logout.ts`                                  | Modify                                  | Invalidate refresh token                                                 |
+| `src/routes/refresh.ts`                                 | Create                                  | Token refresh endpoint                                                   |
+| `src/types/auth.ts`                                     | Modify                                  | Add JWT payload types                                                    |
+| `package.json`                                          | Modify                                  | Add jsonwebtoken dependency                                              |
 
 ## Interfaces / Contracts
 
@@ -128,13 +128,13 @@ interface AuthConfig {
 
 ## Testing Strategy
 
-| Layer                             | What to Test                                                   | Approach                                           |
-|-----------------------------------|----------------------------------------------------------------|----------------------------------------------------|
-| Unit                              | JWT creation, validation, refresh logic                        | Mock secrets, test with jest                       |
-| Unit                              | Middleware token extraction & validation                       | Mock request/response                              |
-| Integration                       | Login → protected endpoint flow                                | Supertest with test DB                             |
-| Integration                       | Token refresh flow                                             | Supertest                                          |
-| E2E                               | Full auth user journey                                         | Playwright                                         |
+| Layer                                      | What to Test                                                            | Approach                                                    |
+|-------------------------------------------|------------------------------------------------------------------------|------------------------------------------------------------|
+| Unit                                       | JWT creation, validation, refresh logic                                 | Mock secrets, test with jest                                |
+| Unit                                       | Middleware token extraction & validation                                | Mock request/response                                       |
+| Integration                                | Login → protected endpoint flow                                         | Supertest with test DB                                      |
+| Integration                                | Token refresh flow                                                      | Supertest                                                   |
+| E2E                                        | Full auth user journey                                                  | Playwright                                                  |
 
 ## Migration / Rollback
 
@@ -203,7 +203,7 @@ Create a migration system to manage database schema changes.
 
 **Choice**: Use `node-pg-migrate`
 
-**Alternatives considered**: 
+**Alternatives considered**:
 - Custom migration scripts (rejected: reinventing wheel)
 - TypeORM migrations (rejected: couples to ORM)
 

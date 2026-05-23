@@ -30,7 +30,7 @@ Este directorio contiene todos los agentes especializados del PersonalOS. Cada a
 │   ├── 03_Marketing_Tech.md
 │   ├── 04_Design_Ops.md
 │   └── 05_Platform_Engineer.md
-├── 02_Specialists_Compound/        # 24 agentes revisores especializados
+├── 02_Specialists_Compound/        # 23 agentes revisores especializados
 │   ├── Agent-Native-Reviewer.md
 │   ├── Architecture-Strategist.md
 │   ├── Best-Practices-Researcher.md
@@ -59,22 +59,22 @@ Este directorio contiene todos los agentes especializados del PersonalOS. Cada a
 
 ### Agentes Principales
 
-| #                           | Agente                                         | Dominio                                 | Prioridad                         | Estado                         |
-|-----------------------------|------------------------------------------------|-----------------------------------------|-----------------------------------|--------------------------------|
-| 01                          | Scope Rule Architect                           | Arquitectura                            | CRÍTICA                           | ✅                              |
-| 02                          | TDD Test-First                                 | Tests (RED)                             | ALTA                              | ✅                              |
-| 03                          | Growth (Marketing Tech)                        | Growth/Marketing                        | ALTA                              | ✅                              |
-| 04                          | React Mentor                                   | Refactor                                | MEDIA                             | ✅                              |
-| 05                          | Security Auditor                               | Seguridad                               | CRÍTICA                           | ✅                              |
-| 06                          | Git Workflow Manager                           | Pull Request                            | ALTA                              | ✅                              |
-| 07                          | Accessibility Auditor                          | Accesibilidad                           | MEDIA                             | ✅                              |
-| 08                          | PRD Dashboard Template                         | Producto                                | BAJA                              | ✅                              |
-| 09                          | Design SOP Document                            | Producto                                | BAJA                              | ✅                              |
-| 10                          | Workflow Orchestrator                          | Orquestación                            | CRÍTICA                           | ✅                              |
-| 11                          | AIPM Judge                                     | Calidad/Auditoría                       | ALTA                              | ✅                              |
-| 12                          | LFG Autonomous Engine                          | Autonomía                               | ALTA                              | ✅                              |
-| 13                          | Hillary Specialist                             | Life OS                                 | ALTA                              | ✅ 🆕                            |
-| 14                          | React Test Implementer                         | Código (GREEN)                          | ALTA                              | ✅ 🆕                            |
+| #                                    | Agente                                                  | Dominio                                          | Prioridad                                  | Estado                                  |
+|-------------------------------------|--------------------------------------------------------|-------------------------------------------------|-------------------------------------------|----------------------------------------|
+| 01                                   | Scope Rule Architect                                    | Arquitectura                                     | CRÍTICA                                    | ✅                                       |
+| 02                                   | TDD Test-First                                          | Tests (RED)                                      | ALTA                                       | ✅                                       |
+| 03                                   | Growth (Marketing Tech)                                 | Growth/Marketing                                 | ALTA                                       | ✅                                       |
+| 04                                   | React Mentor                                            | Refactor                                         | MEDIA                                      | ✅                                       |
+| 05                                   | Security Auditor                                        | Seguridad                                        | CRÍTICA                                    | ✅                                       |
+| 06                                   | Git Workflow Manager                                    | Pull Request                                     | ALTA                                       | ✅                                       |
+| 07                                   | Accessibility Auditor                                   | Accesibilidad                                    | MEDIA                                      | ✅                                       |
+| 08                                   | PRD Dashboard Template                                  | Producto                                         | BAJA                                       | ✅                                       |
+| 09                                   | Design SOP Document                                     | Producto                                         | BAJA                                       | ✅                                       |
+| 10                                   | Workflow Orchestrator                                   | Orquestación                                     | CRÍTICA                                    | ✅                                       |
+| 11                                   | AIPM Judge                                              | Calidad/Auditoría                                | ALTA                                       | ✅                                       |
+| 12                                   | LFG Autonomous Engine                                   | Autonomía                                        | ALTA                                       | ✅                                       |
+| 13                                   | Hillary Specialist                                      | Life OS                                          | ALTA                                       | ✅ 🆕                                     |
+| 14                                   | React Test Implementer                                  | Código (GREEN)                                   | ALTA                                       | ✅ 🆕                                     |
 
 ---
 
@@ -100,16 +100,16 @@ FASE 7: ACCESIBILIDAD (opcional)
 
 ### Duración Estimada por Fase
 
-| Fase                              | Duración                               | Output                                            |
-|-----------------------------------|----------------------------------------|---------------------------------------------------|
-| FASE 1                            | 30-60 min                              | Documento de arquitectura                         |
-| FASE 2                            | 1-2 horas                              | Suite de tests (RED)                              |
-| FASE 3                            | 2-4 horas                              | Código funcional (GREEN)                          |
-| FASE 4                            | 1-2 horas                              | Código refactorizado                              |
-| FASE 5                            | 30-60 min                              | Reporte de seguridad                              |
-| FASE 6                            | 30 min                                 | PR completo                                       |
-| FASE 7                            | 30-60 min                              | Reporte accesibilidad                             |
-| **Total**                         | **6-11 horas**                         | Feature completa                                  |
+| Fase                                       | Duración                                        | Output                                                     |
+|-------------------------------------------|------------------------------------------------|-----------------------------------------------------------|
+| FASE 1                                     | 30-60 min                                       | Documento de arquitectura                                  |
+| FASE 2                                     | 1-2 horas                                       | Suite de tests (RED)                                       |
+| FASE 3                                     | 2-4 horas                                       | Código funcional (GREEN)                                   |
+| FASE 4                                     | 1-2 horas                                       | Código refactorizado                                       |
+| FASE 5                                     | 30-60 min                                       | Reporte de seguridad                                       |
+| FASE 6                                     | 30 min                                          | PR completo                                                |
+| FASE 7                                     | 30-60 min                                       | Reporte accesibilidad                                      |
+| **Total**                                  | **6-11 horas**                                  | Feature completa                                           |
 
 ---
 
@@ -136,11 +136,11 @@ Agente #05: "Audita seguridad de [feature]"
 
 ## 📊 Métricas de Éxito
 
-| Agente                                    | Métrica Clave                                                | Target                           |
-|-------------------------------------------|--------------------------------------------------------------|----------------------------------|
-| #01 Architect                             | Decisiones GLOBAL/LOCAL documentadas                         | 100%                             |
-| #14 Implementer                           | Tests pasando                                                | 100%                             |
-| #05 Security                              | Vulnerabilidades HIGH/CRITICAL                               | 0                                |
+| Agente                                             | Métrica Clave                                                         | Target                                    |
+|---------------------------------------------------|----------------------------------------------------------------------|------------------------------------------|
+| #01 Architect                                      | Decisiones GLOBAL/LOCAL documentadas                                  | 100%                                      |
+| #14 Implementer                                    | Tests pasando                                                         | 100%                                      |
+| #05 Security                                       | Vulnerabilidades HIGH/CRITICAL                                        | 0                                         |
 
 ---
 

@@ -1,20 +1,20 @@
 # 18_Personal_Life_OS
 
-> **Categoría:** Personal Life OS — Hillary Integration  
-> **Versión:** 1.0.0 — 2026-04-02  
+> **Categoría:** Personal Life OS — Hillary Integration
+> **Versión:** 1.0.0 — 2026-04-02
 > **Origen:** `06_Playground/Hillary_Life_OS/` (integrado a producción)
 
 ---
 
 ## 5 Skills del Sistema
 
-| #                     | Skill                                 | Trigger                                                              | Propósito                                                                     |
-|-----------------------|---------------------------------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| 01                    | **Quick Capture**                     | "capture", "quick add", "captura"                                    | Capturar ideas/tareas a markdown con frontmatter automático                   |
-| 02                    | **Plan My Day**                       | "plan my day", "plan día", "organizar día"                           | Transformar inbox en schedule por bloques de energía                          |
-| 03                    | **Daily Notes**                       | "daily notes", "log this", "registro diario"                         | Observación activa — Yapper's API pattern                                     |
-| 04                    | **Recording Mode**                    | "record", "transcribe", "recording mode"                             | Transcripción + anonimización PII automática                                  |
-| 05                    | **Returns Tracker**                   | "create skill from", "auto-skill", "track returns"                   | Detecta patrones → genera skills automáticos                                  |
+| #                              | Skill                                          | Trigger                                                                       | Propósito                                                                              |
+|-------------------------------|-----------------------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| 01                             | **Quick Capture**                              | "capture", "quick add", "captura"                                             | Capturar ideas/tareas a markdown con frontmatter automático                            |
+| 02                             | **Plan My Day**                                | "plan my day", "plan día", "organizar día"                                    | Transformar inbox en schedule por bloques de energía                                   |
+| 03                             | **Daily Notes**                                | "daily notes", "log this", "registro diario"                                  | Observación activa — Yapper's API pattern                                              |
+| 04                             | **Recording Mode**                             | "record", "transcribe", "recording mode"                                      | Transcripción + anonimización PII automática                                           |
+| 05                             | **Returns Tracker**                            | "create skill from", "auto-skill", "track returns"                            | Detecta patrones → genera skills automáticos                                           |
 
 ---
 

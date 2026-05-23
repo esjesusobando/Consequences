@@ -26,14 +26,14 @@ Esta skill es el **orquestador histórico** del PersonalOS. Aunque obsoleto, sus
 
 ## Evaluación de la Info
 
-| Aspecto                                                     | Calidad                       | Notas                                                |
-|-------------------------------------------------------------|-------------------------------|------------------------------------------------------|
-| Concepto de orquestación multi-agente                       | ⭐⭐⭐⭐                          | válido, ahora implementado en CE                     |
-| Back pressure gates                                         | ⭐⭐⭐⭐                          | concepto aún relevante                               |
-| Let it Fail pattern                                         | ⭐⭐⭐⭐                          | ahora en Auto-Improvement Engine                     |
-| Git truth                                                   | ⭐⭐⭐⭐⭐                         | principio fundacional del OS                         |
-| Slash commands (/discovery, /spec, etc)                     | ⭐⭐⭐                           | ahora tenemos /sdd:* y /ce:*                         |
-| Integraciones (yt-dlp, Figma MCP)                           | ⭐⭐⭐⭐                          | algunas aún activas                                  |
+| Aspecto                                                              | Calidad                                | Notas                                                         |
+|---------------------------------------------------------------------|---------------------------------------|--------------------------------------------------------------|
+| Concepto de orquestación multi-agente                                | ⭐⭐⭐⭐                                   | válido, ahora implementado en CE                              |
+| Back pressure gates                                                  | ⭐⭐⭐⭐                                   | concepto aún relevante                                        |
+| Let it Fail pattern                                                  | ⭐⭐⭐⭐                                   | ahora en Auto-Improvement Engine                              |
+| Git truth                                                            | ⭐⭐⭐⭐⭐                                  | principio fundacional del OS                                  |
+| Slash commands (/discovery, /spec, etc)                              | ⭐⭐⭐                                    | ahora tenemos /sdd:* y /ce:*                                  |
+| Integraciones (yt-dlp, Figma MCP)                                    | ⭐⭐⭐⭐                                   | algunas aún activas                                           |
 
 ### Veredicto: INFO VALIOSA pero LEGACY
 
@@ -50,14 +50,14 @@ EquipoAgentesPM_SOTA_ClaudeCode
 
 ### Descripción
 ```
-Orquestación multi-agente SOTA para Product Management: discovery, tech, design, 
+Orquestación multi-agente SOTA para Product Management: discovery, tech, design,
 orchestrator + back pressure + Let it Fail + Git truth automática.
 ```
 
 ### Prompt Base
 ```
-Actúa como PM SOTA + equipo de agentes. Carga SIEMPRE contexto completo de Git 
-antes de responder. Aplica back pressure en cada gate. Usa Let it Fail para 
+Actúa como PM SOTA + equipo de agentes. Carga SIEMPRE contexto completo de Git
+antes de responder. Aplica back pressure en cada gate. Usa Let it Fail para
 auto-mejorar skills.
 ```
 
@@ -91,15 +91,15 @@ auto-mejorar skills.
 
 ## Mapping a OS Actual
 
-| Concepto Legacy                               | Implementación Actual                                                     |
-|-----------------------------------------------|---------------------------------------------------------------------------|
-| Multi-agent orchestration                     | CE Workflows + SDD                                                        |
-| Back pressure gates                           | SDD gates en specs                                                        |
-| Let it Fail                                   | 04_Operations/01_Auto_Improvement/                                        |
-| Git truth                                     | 01_Personal_Os/11_AGENTS.md - Git como fuente de verdad                   |
-| /discovery, /spec                             | /sdd:explore, /sdd:spec                                                   |
-| yt-dlp                                        | 19_Video_Intel skill                                                      |
-| Figma MCP                                     | MCP activo en .mcp.json                                                   |
+| Concepto Legacy                                        | Implementación Actual                                                              |
+|-------------------------------------------------------|-----------------------------------------------------------------------------------|
+| Multi-agent orchestration                              | CE Workflows + SDD                                                                 |
+| Back pressure gates                                    | SDD gates en specs                                                                 |
+| Let it Fail                                            | 04_Operations/01_Auto_Improvement/                                                 |
+| Git truth                                              | 01_Personal_Os/11_AGENTS.md - Git como fuente de verdad                            |
+| /discovery, /spec                                      | /sdd:explore, /sdd:spec                                                            |
+| yt-dlp                                                 | 19_Video_Intel skill                                                               |
+| Figma MCP                                              | MCP activo en .mcp.json                                                            |
 
 ---
 

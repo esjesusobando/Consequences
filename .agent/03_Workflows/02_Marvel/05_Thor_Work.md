@@ -21,7 +21,7 @@ This command takes a work document (plan, specification, or todo file) and execu
 ### Phase 1: Quick Start
 
 1. **Pachamama Protocol: Security First** 🛡️
-   - Antes de iniciar, ejecutar: `python 03_Scripts_Os/04_Ritual_Hub.py --backup-only`
+   - Antes de iniciar, ejecutar: `python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --backup-only`
    - Notificar al usuario que el backup ha sido generado con éxito.
 
 2. **Read Plan and Clarify**
@@ -110,12 +110,12 @@ This command takes a work document (plan, specification, or todo file) and execu
 
    After completing each task, evaluate whether to create an incremental commit:
 
-| Commit when...                                    | Don't commit when...                |
-|---------------------------------------------------|-------------------------------------|
-| Logical unit complete (model, service, component) | Small part of a larger unit         |
-| Tests pass + meaningful progress                  | Tests failing                       |
-| About to switch contexts (backend → frontend)     | Purely scaffolding with no behavior |
-| About to attempt risky/uncertain changes          | Would need a "WIP" commit message   |
+| Commit when...                                                                     | Don't commit when...                                                 |
+|-----------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| Logical unit complete (model, service, component)                                  | Small part of a larger unit                                          |
+| Tests pass + meaningful progress                                                   | Tests failing                                                        |
+| About to switch contexts (backend → frontend)                                      | Purely scaffolding with no behavior                                  |
+| About to attempt risky/uncertain changes                                           | Would need a "WIP" commit message                                    |
 
    **Heuristic:** "Can I write a commit message that describes a complete, valuable change? If yes, commit. If the message would be 'WIP' or 'partial X', wait."
 
@@ -262,7 +262,7 @@ This command takes a work document (plan, specification, or todo file) and execu
    **IMPORTANT**: Always include uploaded image URLs in PR description. This provides visual context for reviewers and documents the change.
 
 3. **Ritual de Cierre & Push** 🔱
-   - Ejecutar `python 03_Scripts_Os/04_Ritual_Hub.py` para sincronizar memoria y certificar el estado.
+   - Ejecutar `python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py` para sincronizar memoria y certificar el estado.
    - Realizar el push final: `git push -u origin feature-branch-name`
 
 4. **Notify User**
@@ -281,9 +281,9 @@ This command takes a work document (plan, specification, or todo file) and execu
 
    ## Before / After Screenshots
 
-| Before         | After         |
-|----------------|---------------|
-| ![before](URL) | ![after](URL) |
+| Before                                          | After                                          |
+|------------------------------------------------|-----------------------------------------------|
+| ![before](URL)                                  | ![after](URL)                                  |
 
    ## Figma Design
 
@@ -350,7 +350,7 @@ Before creating PR, verify:
 - [ ] Before/after screenshots captured and uploaded (for UI changes)
 - [ ] Commit messages follow conventional format
 - [ ] PR description includes summary and testing notes
-- [ ] Ritual de Cierre executed (`03_Scripts_Os/04_Ritual_Hub.py`)
+- [ ] Ritual de Cierre executed (`01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py`)
 
 ## When to Use Reviewer Agents
 

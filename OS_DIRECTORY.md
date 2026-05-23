@@ -287,7 +287,7 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 | Categoría                    | Path                            | Workflows                            |
 |-----------------------------|--------------------------------|-------------------------------------|
-| YouTube Full Video           | `__Youtube_Full_Video/`         | Video production pipeline            |
+| YouTube Full Video           | `06_Youtube_Full_Video/01_Youtube_Full_Video.md`         | Video production pipeline            |
 | Learning Always              | `00_Learning_Always/`           | Continuous learning                  |
 | Personal OS                  | `01_Personal_Os/`               | Morning, Backlog, Content, Weekly    |
 | Marvel                       | `02_Marvel/`                    | Marvel-related workflows             |
