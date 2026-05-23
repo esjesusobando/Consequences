@@ -1,7 +1,7 @@
-# 📦 INVENTARIO TOTAL — PersonalOS v3.3 Consequences
+# 📦 INVENTARIO TOTAL — PersonalOS v4.7 Consequences
 
-> **Fecha:** 2026-04-29
-> **Versión:** v3.3 Consequences — Git Clean State
+> **Fecha:** 2026-05-22
+> **Versión:** v4.7 Consequences — Git Clean State
 > **Estado:** ✅ PURE GREEN — Documento de referencia principal
 
 ---
@@ -40,7 +40,7 @@ Think_Different/
 │   │   ├── 01_Rules/              ← 11 .mdc (00-10)
 │   │   └── 02_Tools/
 │   │       ├── 01_Agents/          ← 52+ agents (Dream Team + Specialists + Growth)
-│   │       ├── 02_Skills/          ← 299 skills en 11 áreas activas
+│   │       ├── 02_Skills/          ← 358 skills en 11 áreas activas
 │   │       ├── 03_Mcp/            ← MCP servers (35 Claude / 18 OpenCode)
 │   │       ├── 05_Hooks/          ← Hooks (Pre/Post/Lifecycle/Sound/Harness)
 │   │       ├── 06_Plugins/        ← Plugins
@@ -287,7 +287,7 @@ Think_Different/
 | `01_OS_Inventory.json`                      | Inventario completo del OS                      |
 | `02_MCP_Registry.yaml`                      | 35 MCPs Claude / 18 OpenCode                    |
 | `03_Agent_Catalog.yaml`                     | 52+ agentes                                     |
-| `04_Skill_Index.json`                       | 299 skills                                      |
+| `04_Skill_Index.json`                       | 358 skills                                      |
 | `05_HUB_Catalog.yaml`                       | 23 scripts                                      |
 | `06_Workflow_Graph.yaml`                    | Workflows                                       |
 | `07_Hook_Registry.yaml`                     | 10 hooks                                        |
@@ -352,7 +352,7 @@ Think_Different/
 |---------------------------------------|-------------------------------------------------------------------------|
 | AGENTS.md principal                    | `00_Winter_is_Coming/AGENTS.md`                                          |
 | Dream Team                             | `01_Personal_Os/01_Core/02_Dream_Team.md`                                |
-| Inventario Core                        | `01_Personal_Os/01_Core/INVENTARIO_CORE.md`                              |
+| Inventario Core                        | `01_Personal_Os/01_Core/03_Inventario_Core.md`                              |
 | OS Directory                           | `OS_DIRECTORY.md` (raíz — JARVIS discovery)                              |
 | CLAUDE.md                              | `CLAUDE.md` (raíz — config IA)                                           |
 | README.md                              | `README.md` (raíz — documentación principal)                             |
@@ -366,11 +366,11 @@ Think_Different/
 
 | Fecha                         | Versión                      | Cambio                                                                                |
 |------------------------------|-----------------------------|--------------------------------------------------------------------------------------|
-| 2026-04-28                    | **v3.1**                     | Actualización JARVIS 3.1 — 11 áreas, 11 rules, 52+ agents, 23 HUBs                    |
+| 2026-05-22                    | **v3.1**                     | Actualización JARVIS 3.1 — 11 áreas, 11 rules, 52+ agents, 23 HUBs                    |
 | 2026-04-25                    | v3.0                         | Plan Consequences 3.0 JARVIS Integration                                              |
 | 2026-04-24                    | v2.0                         | Estructura v2.0 Consequences                                                          |
 | 2026-04-20                    | v1.x                         | Script Migration                                                                      |
 
 ---
 
-**PersonalOS v3.1 Consequences — PURE GREEN | 2026-04-28**
+**PersonalOS v4.7 Consequences — PURE GREEN | 2026-05-22**

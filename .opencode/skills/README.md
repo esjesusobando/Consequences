@@ -1,9 +1,9 @@
 # .opencode/skills — Skills Locales del Proyecto
 
 > **Versión:** 1.0
-> **Fecha:** 2026-04-29
+> **Fecha:** 2026-05-22
 > **Estado:** ✅ Activo
-> **Proyecto:** Think Different PersonalOS v3.1 Consequences
+> **Proyecto:** Think Different PersonalOS v4.7 Consequences
 
 ---
 
@@ -25,7 +25,7 @@ Este directorio contiene **skills locales** específicas del proyecto Think Diff
 
 | Tipo | Ubicación | Uso | Cantidad |
 |------|-----------|-----|----------|
-| **Skills del Sistema** | `01_Personal_Os/01_Core/02_Tools/02_Skills/` | FUENTE DE VERDAD - 299 skills en 11 áreas | 299 |
+| **Skills del Sistema** | `01_Personal_Os/01_Core/02_Tools/02_Skills/` | FUENTE DE VERDAD - 394 skills en 12 áreas | 299 |
 | **Skills Globales** | `~/.config/opencode/skills/` | Skills instaladas globalmente (gentleman, etc) | Variable |
 | **Skills Locales** | `.opencode/skills/` | Skills específicas del proyecto | 1 |
 
@@ -72,4 +72,4 @@ Para agregar una skill local:
 
 ---
 
-_Actualizado: 2026-04-29 (Auditoría Integral v3.1)_
+_Actualizado: 2026-05-22 (Auditoría Integral v3.1)_

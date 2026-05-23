@@ -1,10 +1,10 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-22T16:21:05",
+  "generated": "2026-05-22T21:21:22",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
     "areas": 12,
-    "skills": 393,
+    "skills": 394,
     "without_frontmatter": 0
   },
   "by_area": {
@@ -1124,7 +1124,7 @@
       ]
     },
     "06_Tools": {
-      "count": 111,
+      "count": 112,
       "skills": [
         {
           "name": "06_Tools",
@@ -1214,6 +1214,11 @@
         {
           "name": "04_Observability",
           "path": "06_Tools/04_DevOps/07_DevOps/04_Observability/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "04_Obsidian_CLI",
+          "path": "06_Tools/04_DevOps/07_DevOps/04_Obsidian_CLI/SKILL.md",
           "has_frontmatter": true
         },
         {

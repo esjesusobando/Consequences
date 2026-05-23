@@ -1,7 +1,7 @@
 # 03_Mcp — MCP Configurations Backup
 
-> **Versión:** v4.1
-> **Última actualización:** 2026-05-20
+> **Versión:** v4.7
+> **Última actualización:** 2026-05-22
 
 ---
 
@@ -55,4 +55,4 @@ Al modificar MCPs: actualizar SIEMPRE el source (este) Y el config activo corres
 
 ---
 
-*Think Different PersonalOS v4.1*
+*Think Different PersonalOS v4.7 Consequences*

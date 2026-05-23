@@ -2,7 +2,7 @@
 
 > Índice navegable de todas las skills organizadas por área funcional.
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
-> **Actualizado:** 2026-05-10 (v4.0 Consequences — Production Ready)
+> **Actualizado:** 2026-05-22 (v4.0 Consequences — Production Ready)
 
 ---
 
@@ -125,4 +125,4 @@
 
 > ℹ️ **Legacy Archive** → movido a `01_Personal_Os/05_Archive/09_Legacy_Skills_Archive/` (no es área activa de skills)
 
-*PersonalOS v4.0 Consequences — 2026-05-10 | 11 áreas activas | Skills count: 300+*
+*PersonalOS v4.7 Consequences — 2026-05-22 | 11 áreas activas | Skills count: 358*

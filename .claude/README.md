@@ -1,7 +1,7 @@
 # .claude — Claude Code Configuration & Memory
 
-> **Versión:** v4.1
-> **Última actualización:** 2026-05-20
+> **Versión:** v4.7
+> **Última actualización:** 2026-05-22
 
 ---
 
@@ -16,7 +16,7 @@ Configuración local de Claude Code y sistema de memoria persistente. Contiene r
 ```
 .claude/
 ├── memory/                  # Memoria persistente (Engram)
-│   └── audit-2026-05-20.md  # Context de auditoría
+│   └── audit-2026-05-22.md  # Context de auditoría
 ├── settings.json            # Config de Claude Code
 └── CLAUDE.md               # Constitución para IAs
 ```
@@ -41,4 +41,4 @@ Configuración local de Claude Code y sistema de memoria persistente. Contiene r
 
 ---
 
-*Think Different PersonalOS v4.1*
+*Think Different PersonalOS v4.7*

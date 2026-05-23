@@ -1,61 +1,57 @@
 # 02_Playground — Pruebas y Experimentos
 
-> **Versión:** v4.5
-> **Última actualización:** 2026-05-20
-> **Estado:** Activo — Limpio post-auditoría
+> **Versión:** v4.7 Consequences
+> **Última actualización:** 2026-05-22
+> **Estado:** Activo — zona de pruebas validable
 
 ---
 
-## 🎯 DESCRIPCIÓN
+## 🎯 Descripción
 
-Zona de pruebas y experimentos. **Todo lo validado se integra al OS**, nada queda huerfano.
+Zona de pruebas, auditorías y experimentos. Todo lo validado aquí debe integrarse al OS o documentarse como resultado; no debe quedar contenido huérfano.
 
 ---
 
-## 📁 ESTRUCTURA ACTUAL
+## 📁 Estructura actual
 
 ```
 02_Playground/
 ├── 00_Momentum/              # Agenda de momentum activo
+├── 01_Focus_Now_Lab/         # Laboratorio Focus Now
 ├── 01_OS_Health_Test.py      # Test de salud del OS
+├── 01_OS_Runtime_Test.py     # Runtime test legacy mantenido por compatibilidad
 ├── 02_Reports/               # Reportes generados
-│   └── 00_SALUD_REPORTS.md   # Reportes de salud (00_ = no tocar)
 ├── 02_OS_Deep_Audit.py       # Auditoría profunda
-├── 03_OS_Runtime_Test.py     # Test runtime
+├── 02_Workflow_N8N/          # Pruebas de workflows N8N
+├── 03_Branders_Skills/       # Skills de branding en revisión
+├── 03_OS_Runtime_Test.py     # Runtime test actual
+├── 04_Maerks/                # Sandbox Maerks
+├── reports/                  # Salidas auxiliares
 └── README.md                 # Este archivo
 ```
 
-> **Secuencia:** 01 → 02 → 03 (limpio, sin huecos)
-> **Reportes:** Pascal_Case + Guion_bajo: `OS_Health_2026-05-20_12-24-20.txt`
-> **00_ prefix:** Archivos "a la mano" que NO se tocan
+> **Nota de numeración:** se preservan archivos legacy cuando aún sirven para compatibilidad; la documentación debe reflejar la estructura real antes de mover o eliminar.
 
 ---
 
-## 🔗 RELACIONES
+## 🔗 Relaciones
 
 | Recurso | Ubicación OS |
 |---------|-------------|
 | Skills validadas | `01_Personal_Os/01_Core/02_Tools/02_Skills/` |
 | Agents | `01_Personal_Os/01_Core/02_Tools/01_Agents/` |
-| Reports | `03_Resultado/04_Reportes/` |
+| Reports de proyecto | `03_Resultado/` |
+| Website OIM actual | `03_Resultado/09b_World_OIM/02_OIM_Website/` |
 
 ---
 
-## 📋 HISTORIAL
+## 📌 Reglas
 
-| Fecha | Acción |
-|-------|--------|
-| 2026-05-20 | Limpieza post-auditoría — eliminados Maerks, New_Skills, Hillary_Life_OS, Focus_Now_Lab |
-| 2026-05-20 | Reenumerado carpetas activas |
-
----
-
-## 📌 REGLAS
-
-1. **Todo lo que se valida aquí → se integra al OS**
-2. **No dejar contenido legacy** — cuando se integra, borrar del Playground
-3. **Carpetas con prefijo numérico** — mantener enumeración limpia
+1. Todo lo que se valida aquí debe integrarse al OS o quedar referenciado en un plan/tarea.
+2. No eliminar información útil; mover o archivar solo si está duplicada, rota o documentada.
+3. Mantener numeración y nombres sincronizados con README, planes y scripts.
+4. Ejecutar pruebas desde la raíz del repositorio para evitar rutas relativas rotas.
 
 ---
 
-*Think Different PersonalOS v6.2 — Playground limpio 2026-05-20*
+*Think Different PersonalOS v4.7 Consequences — Playground sincronizado 2026-05-22*

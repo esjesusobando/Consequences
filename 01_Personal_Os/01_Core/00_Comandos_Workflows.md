@@ -1,6 +1,6 @@
-# PersonalOS v3.1 — Comandos y Workflows
+# PersonalOS v4.7 Consequences — Comandos y Workflows
 
-> **Versión:** v3.1 Consequences | **Actualizado:** 2026-04-28 | **Estado:** ✅ OPERATIVO
+> **Versión:** v4.7 Consequences | **Actualizado:** 2026-05-22 | **Estado:** ✅ OPERATIVO
 
 ---
 
@@ -174,4 +174,4 @@ Basado en: `01_Personal_Os/05_Archive/07_Repos_Gentleman/personal-os-main/exampl
 
 ---
 
-*PersonalOS v3.1 Consequences — Actualizado 2026-04-28*
+*PersonalOS v4.7 Consequences — Actualizado 2026-05-22*

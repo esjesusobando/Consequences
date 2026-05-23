@@ -1,6 +1,6 @@
 🪅📝# 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.5 Consequences** | 2026-05-20
+**v4.7 Consequences** | 2026-05-22
 
 ---
 
@@ -21,18 +21,18 @@
 | JARVIS Manifests                    | 7 en 00_Manifest/                                | ✅ VALIDATED                                  |
 | Open Design                         | 62 skills + 138 design systems                   | ✅ INTEGRATED                                 |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-20 — v4.5 Consequences
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-22 — v4.7 Consequences
 > Agent Sync: 82↔82 drift 0. Skills: 356. MCPs: 36/36 sync.
 
 ---
 
-## 🆕 v4.5 Cambios desde v4.1
+## 🆕 v4.7 Cambios desde v4.1
 
 1. **05_Archive reorganizado** — 15+ carpetas → 4 carpetas con subcarpetas numeradas
 2. **09b_World_OIM** — Sufijo `b` para evitar conflicto de numeración
 3. **02_Reports** — Corregida enumeración (era 01_Reports)
 4. **READMEs internos** — Creados en 01_Repos_Reference, 02_Legacy_Content, 03_Backups_Audits
-5. **Documentación unificada** — Todos los docs a v4.5
+5. **Documentación unificada** — Todos los docs a v4.7
 
 ---
 
@@ -72,14 +72,14 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 
 ---
 
-## 🗂️ ESTRUCTURA COMPLETA v4.5
+## 🗂️ ESTRUCTURA COMPLETA v4.7
 
 ```
 Think_Different/
 ├── 00_Winter_is_Coming/          ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD)
-│   │   ├── 00_Workflows_Os/     ✅ 29 workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/     ✅ 31 workflow files (7 categorías)
 │   │   ├── 01_Rules/           ✅ 12 reglas .mdc
 │   │   └── 02_Tools/
 │   │       ├── 01_Agents/         ✅ 82 agentes
@@ -241,4 +241,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-05-20 | PersonalOS v4.5 Consequences | Every CE v2.55.0 ✅ | gentle-ai v1.26.6 | 356 skills | 82 agents | 36 MCPs*
+*Actualizado: 2026-05-22 | PersonalOS v4.7 Consequences | Every CE v2.55.0 ✅ | gentle-ai v1.26.6 | 356 skills | 82 agents | 36 MCPs*

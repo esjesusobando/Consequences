@@ -1,4 +1,4 @@
-# 🤖 Folder .agent - PersonalOS v3.1 Consequences
+# 🤖 Folder .agent - PersonalOS v4.7 Consequences
 
 ## ⚙️ Configuración del Sistema de Agentes
 
@@ -50,7 +50,7 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 
 ---
 
-## 🎯 Skills Disponibles (11 áreas activas — 299 skills)
+## 🎯 Skills Disponibles (12 áreas activas — 394 skills)
 
 ### Por Categoría (`01_Personal_Os/01_Core/02_Tools/02_Skills/`)
 
@@ -154,4 +154,4 @@ gr --apply      # Apply fixes
 
 ---
 
-*Última actualización: 2026-04-29 | PersonalOS v3.1 Consequences | 11 áreas activas | 299 skills | 23 scripts ✅*
+*Última actualización: 2026-05-22 | PersonalOS v4.7 Consequences | 12 áreas activas | 394 skills | 19 HUBs + 284 scripts Python ✅*

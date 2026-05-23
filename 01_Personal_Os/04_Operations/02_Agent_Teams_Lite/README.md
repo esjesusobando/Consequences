@@ -92,4 +92,4 @@ El SDD (Spec-Driven Development) usa Agent Teams Lite:
 
 ---
 
-*Think Different PersonalOS v4.1 — JARVIS 4.1 ACTIVE*
+*Think Different PersonalOS v4.7 — JARVIS 4.1 ACTIVE*

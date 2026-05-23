@@ -1,6 +1,6 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.5 Consequences** | 2026-05-20
+**v4.7 Consequences** | 2026-05-22
 
 ---
 
@@ -11,7 +11,7 @@
 | MCPs Claude Code                      | **36**                                                              | ✅ SYNCED — drift 0                             |
 | Every CE                              | v2.55.0 (local repo) ✅                                              | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.26.6                                                             | ✅ AVAILABLE                                    |
-| Skills                                | **358** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
+| Skills                                | **394** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
 | Agentes                               | **82** (5 Dream + 24 Specialists Compound + backup sync)             | ✅ SYNCED — 82↔82 drift 0                       |
 | HUBs                                  | **31** scripts en raíz + subdirectorios                             | ✅ VERIFIED                                     |
 | Scripts totales                       | **152** (en subdirectorios AIPM/Validator/Legacy)                    | ✅ INTENCIONAL — preservación de historial, no es anomalía |
@@ -21,12 +21,12 @@
 | JARVIS Manifests                      | 7 en 00_Manifest/                                                   | ✅ VALIDATED                                    |
 | Open Design                           | 62 skills + 138 design systems                                      | ✅ INTEGRATED                                   |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-20 — v4.5 Consequences
-> Agent Sync: 82↔82 drift 0. Skills: 358. MCPs: 36/36 sync.
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-22 — v4.7 Consequences
+> Agent Sync: 82↔82 drift 0. Skills: 394. MCPs: 36/36 sync.
 
 ---
 
-## 🆕 v4.5 Cambios desde v4.1
+## 🆕 v4.7 Cambios desde v4.1
 
 1. **Secuencias corregidas** — Playground, Reports, carpetas sin huecos
 2. **Nomenclatura estandarizada** — Pascal_Case para datos, snake_case para código
@@ -70,7 +70,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 
 ---
 
-## 🗂️ ESTRUCTURA COMPLETA v4.5
+## 🗂️ ESTRUCTURA COMPLETA v4.7
 
 ```
 Think_Different/                         # RAÍZ
@@ -81,7 +81,7 @@ Think_Different/                         # RAÍZ
 │   │   ├── 01_Rules/            ✅ 12 reglas .mdc
 │   │   └── 02_Tools/
 │   │       ├── 01_Agents/         ✅ 58 agentes (5 Dream + 23 Specialists + 30 individuales)
-│   │       ├── 02_Skills/         ✅ 358 skills (12 áreas funcionales)
+│   │       ├── 02_Skills/         ✅ 394 skills (12 áreas funcionales)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/          ✅ Pre/Post/Lifecycle/Sound
@@ -136,7 +136,7 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## 🧠 SKILLS — 12 ÁREAS FUNCIONALES (393 skills)
+## 🧠 SKILLS — 12 ÁREAS FUNCIONALES (394 skills)
 
 | Área                   | Items  | Descripción                          |
 |-----------------------|-------|-------------------------------------|
@@ -144,15 +144,15 @@ Think_Different/                         # RAÍZ
 | 00_Personal_Os_Stack   | 1      | Stack base OS + Gcierr               |
 | 00_Skill_Auditor       | 1      | Auditoría de skills                  |
 | 01_Creacion_Contenidos | 40     | Brand, YouTube, SEO, Carruseles      |
-| 02_Diseno_Ui_Ux        | 29     | Product Design, UI/UX, Taste, Minimal|
+| 02_Diseno_Ui_Ux        | 25     | Product Design, UI/UX, Taste, Minimal|
 | 03_Video_Media         | 7      | Video Intel, James Cameron           |
-| 04_Automatizacion      | 37     | N8N, Firecrawl, GWS Client           |
-| 05_Workflows           | 37     | Agent Teams, PM, Orchestrator        |
-| 06_Tools               | 111    | Skill Creator, Testing, DevOps, Data |
-| 07_Personal_Os         | 32     | Life OS, Hillary, Rituales           |
+| 04_Automatizacion      | 22     | N8N, Firecrawl, GWS Client           |
+| 05_Workflows           | 33     | Agent Teams, PM, Orchestrator        |
+| 06_Tools               | 93     | Skill Creator, Testing, DevOps, Data |
+| 07_Personal_Os         | 29     | Life OS, Hillary, Rituales           |
 | 08_Invictus_Web        | 15     | Playwright, Superpowers, Browser Auto|
 | 09_Claude_Ads          | 20     | Claude Ads & Promoted Content        |
-| **TOTAL**              | **393**| Total real indexado en disco         |
+| **TOTAL**              | **394**| Total real indexado en disco         |
 
 > Las skills están tanto en carpetas de área como en subcarpetas internas.
 
@@ -290,19 +290,11 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 | YouTube Full Video           | `__Youtube_Full_Video/`         | Video production pipeline            |
 | Learning Always              | `00_Learning_Always/`           | Continuous learning                  |
 | Personal OS                  | `01_Personal_Os/`               | Morning, Backlog, Content, Weekly    |
-| Marvel                       | `02_Marvel/`                    | **Iron Man Genesis** (boot), Spider, Thor, Hulk |
+| Marvel                       | `02_Marvel/`                    | Marvel-related workflows             |
 | Gentleman                    | `03_Gentleman/`                 | Gentleman standards                  |
 | Hillary                      | `04_Hillary/`                   | Hillary Life OS                      |
 | Compound Engineering         | `05_Compound_Engineering/`      | CE workflows                         |
 
 ---
 
-## 🔥 BOOT PROTOCOL — IRON MAN GENESIS
-
-Al iniciar sesión O al recibir cualquier instrucción, ejecutar `.agent/03_Workflows/02_Marvel/01_Iron_Man_Gen.md` PRIMERO.
-
-> ⚠️ **REGLA DE ORO:** Sin lectura completa del contexto NO hay respuesta. Leer todos los archivos listados en el workflow de genesis antes de actuar.
-
----
-
-*Actualizado: 2026-05-22 | PersonalOS v4.6 | Every CE v2.55.0 ✅ | gentle-ai v1.30.6 | 393 skills | 82 agents | 36 MCPs*
+*Actualizado: 2026-05-22 | PersonalOS v4.7 Consequences | Every CE v2.55.0 ✅ | gentle-ai v1.26.6 | 394 skills | 82 agents | 36 MCPs*

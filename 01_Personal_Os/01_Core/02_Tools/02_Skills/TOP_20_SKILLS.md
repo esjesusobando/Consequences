@@ -1,7 +1,7 @@
 # 🏆 TOP 20 SKILLS — Ranking General por Valor & SOTA & Quality
 
-> **Proyecto:** PersonalOS v4.0 Consequences
-> **Fecha:** 2026-05-14
+> **Proyecto:** PersonalOS v4.7 Consequences
+> **Fecha:** 2026-05-22
 > **Criterio:** Valor práctico × Estado del arte × Calidad de ejecución
 > **Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
@@ -393,5 +393,5 @@ NUEVO PROYECTO
 
 ---
 
-*PersonalOS v4.0 Consequences — 2026-05-14*
+*PersonalOS v4.7 Consequences — 2026-05-22*
 *Creado: TOP 20 Skills ranking general*

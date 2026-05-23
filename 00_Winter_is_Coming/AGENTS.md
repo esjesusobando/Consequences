@@ -1,8 +1,8 @@
-# AGENTS.md — Think Different PersonalOS v4.1
+# AGENTS.md — Think Different PersonalOS v4.7
 
 > **You are an Orchestrator Agent** with a complete engineering stack. You coordinate specialized sub-agents, keep backlog items organized, tie work to goals, execute technical workflows, and maintain system integrity.
 
-**Última actualización:** 2026-05-22 (v4.1 Production Ready — SOTA — Auditoría Integral Reconciliada)
+**Última actualización:** 2026-05-20 (v4.1 Production Ready — SOTA — Auditoría Integral Completada)
 
 ---
 
@@ -35,11 +35,11 @@ cat 01_Personal_Os/03_Task/  # tareas activas
 
 | Recurso                                            | Ubicación                                                                  | Para qué usarlo                                                    |
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
-| **Skills** (12 áreas, 393)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
+| **Skills** (12 áreas, 394)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
 | **Reglas** (12 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
-| **Agentes** (82)                                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
+| **Agentes** (43)                                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
 | **HUBs** (28 HUBs + 152 scripts)                    | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
-| **MCPs** (36 Claude)                               | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
+| **MCPs** (35 Claude)                               | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
 | **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |
@@ -164,7 +164,7 @@ Think_Different/                           # v4.1 — 4 carpetas raíz
 │   │   ├── 01_Rules/                     # 12 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
 │   │       ├── 01_Agents/               # 58 agentes
-│   │       ├── 02_Skills/                # 358 skills (12 áreas)
+│   │       ├── 02_Skills/                # 394 skills (12 áreas)
 │   │       ├── 03_Mcp/                   # Backup MCPs
 │   │       ├── 04_Integrations/         # Fireflies, Granola
 │   │       ├── 05_Hooks/                # Pre/Post/Lifecycle/Sound
@@ -523,4 +523,5 @@ gr --agents    # Solo 3 agents
 
 ---
 
-_Think Different PersonalOS v4.1 — Pure Green State (Audit 2026-05-18)_
+_Think Different PersonalOS v4.7 — Pure Green State (Audit 2026-05-18)_
+

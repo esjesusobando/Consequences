@@ -1,44 +1,44 @@
-# Think Different PersonalOS v4.5 Consequences — Production Ready
+# Think Different PersonalOS v4.7 Consequences — Production Ready
 
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Version](https://img.shields.io/badge/Version-4.5-00FF00)]()
+[![Version](https://img.shields.io/badge/Version-4.7-00FF00)]()
 [![Status](https://img.shields.io/badge/Status-PRODUCTION%20READY-00FF00)]()
-[![OS](https://img.shields.io/badge/Think%20Different-OS--4.5-7B68EE)]()
+[![OS](https://img.shields.io/badge/Think%20Different-OS--4.7-7B68EE)]()
 
-> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 358 skills SOTA, 12 áreas funcionales, 82 agentes, metodologías integradas y automatización completa.
+> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 394 skills SOTA, 12 áreas funcionales, 82 agentes, metodologías integradas y automatización completa.
 
 ---
 
-## 📊 Estado del Sistema (v4.5 Consequences — Production Ready — 2026-05-20)
+## 📊 Estado del Sistema (v4.7 Consequences — Production Ready — 2026-05-22)
 
-> 🟢 **PRODUCTION READY** - v4.5 Consequences lista para uso público
+> 🟢 **PRODUCTION READY** - v4.7 Consequences lista para uso público
 
 | Métrica                             | Valor                                           |
 |------------------------------------|------------------------------------------------|
 | **Overall Health**                  | **100%** 🟢                                      |
 | **Every CE**                        | v2.55.0 ✅ (local repo)                          |
 | **gentle-ai**                       | v1.26.6 ✅                                       |
-| **Skills**                          | **393** (12 áreas funcionales)                  |
+| **Skills**                          | **394** (12 áreas funcionales)                  |
 | **Rules**                           | **12** (.mdc)                                   |
 | **MCPs**                            | **36** Claude Code                              |
-| **HUBs**                            | **28** HUBs + 152 scripts         |
+| **HUBs**                            | **31** scripts en raíz + subdirectorios         |
 | **Agentes**                         | **82** (Dream Team + Specialists + individuales) |
-| **Workflows**                       | **30** (7 categorías)                           |
+| **Workflows**                       | **29** (7 categorías)                           |
 
 ---
 
-## 📂 Estructura del Sistema (v4.5 Consequences — Production Ready)
+## 📂 Estructura del Sistema (v4.7 Consequences — Production Ready)
 
 ```
 Think_Different/                           # RAÍZ
 ├── 00_Winter_is_Coming/           ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/                ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                   ✅ Motor del OS (FUENTE DE VERDAD)
-│   │   ├── 00_Workflows_Os/      ✅ 30 workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/      ✅ 31 workflow files (7 categorías)
 │   │   ├── 01_Rules/             ✅ 12 reglas .mdc — FUENTE DE VERDAD
 │   │   └── 02_Tools/             ✅ Todas las herramientas
 │   │       ├── 01_Agents/         ✅ 82 agentes
-│   │       ├── 02_Skills/        ✅ 393 skills — 12 áreas funcionales
+│   │       ├── 02_Skills/        ✅ 394 skills — 12 áreas funcionales
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/         ✅ 10 hooks (6 fases)
@@ -100,30 +100,30 @@ Think_Different/                           # RAÍZ
 
 ## 🛠️ Componentes Principales
 
-### Skills System (v4.5 — 12 Áreas Funcionales)
+### Skills System (v4.7 — 12 Áreas Funcionales)
 
 | Área                                                         | Items                      | Descripción                                                   |
 |-------------------------------------------------------------|---------------------------|--------------------------------------------------------------|
 | **00_Compound_Engineering**                                  | 63                         | Core CE — SDD + Compound Engineering                          |
 | **00_Personal_Os_Stack**                                    | 1                          | Stack base OS + Gcierr                                        |
-| **00_Skill_Auditor**                                        | 1                          | Auditoría de skills                                           |
-| **01_Creacion_Contenidos**                                  | 40                         | Brand, YouTube, SEO, Carruseles                               |
-| **02_Diseno_Ui_Ux**                                         | 29                         | Product Design, UI/UX, Taste, Minimal                          |
-| **03_Video_Media**                                         | 7                          | Video Intel, James Cameron                                     |
-| **04_Automatizacion**                                      | 37                         | N8N, Firecrawl, GWS Client                                    |
-| **05_Workflows**                                           | 37                         | Agent Teams, PM, Orchestrator                                 |
-| **06_Tools**                                                | 111                        | Skill Creator, Testing, DevOps, Data                           |
-| **07_Personal_Os**                                         | 32                         | Life OS, Hillary, Rituales                                    |
-| **08_Invictus_Web**                                         | 15                         | Playwright, Superpowers, Browser Auto                          |
+| **00_Skill_Auditor**                                        | 4                          | Auditoría de skills                                           |
+| **01_Creacion_Contenidos**                                  | 38                         | Brand, YouTube, SEO, Carruseles                               |
+| **02_Diseno_Ui_Ux**                                         | 23                         | Product Design, UI/UX, Taste, Minimal                          |
+| **03_Video_Media**                                         | 6                          | Video Intel, James Cameron                                     |
+| **04_Automatizacion**                                      | 21                         | N8N, Firecrawl, GWS Client                                    |
+| **05_Workflows**                                           | 33                         | Agent Teams, PM, Orchestrator                                 |
+| **06_Tools**                                                | 93                         | Skill Creator, Testing, DevOps, Data                           |
+| **07_Personal_Os**                                         | 29                         | Life OS, Hillary, Rituales                                    |
+| **08_Invictus_Web**                                         | 14                         | Playwright, Superpowers, Browser Auto                          |
 | **09_Claude_Ads**                                           | 20                         | Claude Ads & Promoted Content                                 |
-| **TOTAL**                                                   | **393**                    | Total real indexado en disco                                  |
+| **TOTAL**                                                   | **394**                    | Total real indexado en disco                                  |
 
-> ⚠️ Skills están en carpetas de área + subcarpetas. Total real: 393 skills
+> ⚠️ Skills están en carpetas de área + subcarpetas. Total real: 394 skills
 > Índice completo: `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
 
 ---
 
-### HUBs v4.5 (28 HUBs documentados + 152 scripts)
+### HUBs v4.7 (28 HUBs documentados + 152 scripts)
 
 | Hub                                          | Script                                          | Propósito                                             |
 |---------------------------------------------|------------------------------------------------|------------------------------------------------------|
@@ -274,6 +274,6 @@ CC BY-NC-SA 4.0 - Uso no comercial permitido.
 
 ---
 
-_Think Different PersonalOS v4.5 Consequences — Production Ready ✅ — 2026-05-20_
+_Think Different PersonalOS v4.7 Consequences — Production Ready ✅ — 2026-05-22_
 
 *Estructura completa: ver `STRUCTURE_v4.5.md`*

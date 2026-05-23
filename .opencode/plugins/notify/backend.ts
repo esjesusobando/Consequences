@@ -1,7 +1,7 @@
 interface NotifyBackendOptions {
 	preferCmux: boolean
 	tryCmuxNotify: () => Promise<boolean>
-	sendNodeNotify: () => void
+	sendNodeNotify: () => Promise<void> | void
 }
 
 export async function sendNotificationWithFallback(options: NotifyBackendOptions): Promise<void> {
@@ -14,8 +14,8 @@ export async function sendNotificationWithFallback(options: NotifyBackendOptions
 		const sentViaCmux = await options.tryCmuxNotify()
 		if (sentViaCmux) return
 	} catch {
-		// Fall through to node-notifier fallback
+		// Fall through to native OS fallback
 	}
 
-	options.sendNodeNotify()
+	await options.sendNodeNotify()
 }

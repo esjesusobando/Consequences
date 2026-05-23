@@ -1,4 +1,4 @@
-# 03_Task — Sistema de Tareas PersonalOS v4.5
+# 03_Tasks — Sistema de Tareas PersonalOS v4.7 Consequences
 
 **Versión:** 4.5 Consequences
 **Última actualización:** 2026-05-21
@@ -11,11 +11,10 @@
 ```
 Think_Different/
 ├── 00_Winter_is_Coming/    # Estrategia, Backlog y ADN (ESTRATÉGICO)
-├── 01_Personal_Os/             # Sistema Operativo Personal
-│   ├── 01_Core/              # Motor OS: Skills, Agents, MCPs (FUENTE DE VERDAD) 💾
-│   ├── 02_Knowledge/         # Base de Conocimiento, Research y Documentación
-│   ├── 03_Task/              # Gestión de Tareas Activas ✅
-│   ├── 04_Operations/        # Cerebro Operativo y Automatización
+├── 01_Core/               # Motor OS: Skills, Agents, MCPs (FUENTE DE VERDAD) 💾
+├── 02_Knowledge/          # Base de Conocimiento, Research y Documentación
+├── 03_Tasks/              # Gestión de Tareas Activas ✅
+├── 04_Operations/         # Cerebro Operativo y Automatización
 ├── 05_Archive/            # Repositorio de Proyectos Finalizados
 ├── 06_Playground/         # Laboratorio de Pruebas y Experimentos
 ├── 07_Projects/           # Desarrollo de Proyectos Activos
@@ -25,10 +24,10 @@ Think_Different/
 
 ---
 
-## 📂 Estructura 03_Task
+## 📂 Estructura 03_Tasks
 
 ```
-01_Personal_Os/03_Task/
+03_Tasks/
 ├── 00_Templates/                   # Plantillas oficiales (SOTA, Skeleton, AI)
 ├── 01_Tasks_Done/                 # Historial de hitos logrados
 ├── 02_Hillary_Inbox/               # Entrada de tareas sin procesar
@@ -112,7 +111,7 @@ Vincular con goals y referenciar material.
 ```
 1. Agregar notas a BACKLOG.md (00_Winter_is_Coming/)
 2. Decir "process my backlog" al AI
-3. AI crea tareas en 01_Personal_Os/03_Task/
+3. AI crea tareas en 03_Tasks/
 4. Tareas se vinculan con GOALS.md
 5. AI sugiere qué trabajar según prioridades
 ```

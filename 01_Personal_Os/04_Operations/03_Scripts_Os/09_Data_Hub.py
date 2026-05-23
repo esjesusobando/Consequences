@@ -5,7 +5,7 @@ PersonalOS v6.1 | Think Different
 
 Procesa y analiza datos del OS: métricas de sesiones, consumo de tokens,
 performance de skills, reportes de auditoría y visualización de tendencias.
-Genera outputs en `04_Operations/10_Reports/` para revisión manual o automatizada.
+Genera outputs en `04_Operations/06_SOTA_Features/Reports_Planned/` para revisión manual o automatizada.
 
 Uso:
     python 09_Data_Hub.py --help

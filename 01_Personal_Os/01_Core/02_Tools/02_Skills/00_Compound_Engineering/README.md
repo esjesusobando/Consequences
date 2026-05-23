@@ -74,4 +74,4 @@ Compound Engineering es el nucleo de habilidades especializadas del sistema. Agr
 
 ---
 
-*Think Different PersonalOS v3.0 Consequences*
+*Think Different PersonalOS v4.7 Consequences*

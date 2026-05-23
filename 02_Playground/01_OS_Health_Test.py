@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-00_OS_Health_Test.py — PersonalOS v2.0 Consequences
+00_OS_Health_Test.py — PersonalOS v4.7 Consequences
 Test suite completo del sistema. 100% no-destructivo (solo lectura).
 
 Usage:
@@ -465,7 +465,7 @@ ALL_TESTS = [
 
 def run_tests(filter_ids=None):
     print(f"\n{BOLD}{CYAN}{'='*60}{RESET}")
-    print(f"{BOLD}{CYAN}  PersonalOS v2.0 — Health Test Suite{RESET}")
+    print(f"{BOLD}{CYAN}  PersonalOS v4.7 Consequences — Health Test Suite{RESET}")
     print(f"{CYAN}  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}{RESET}")
     print(f"{BOLD}{CYAN}{'='*60}{RESET}\n")
 
@@ -506,7 +506,7 @@ def run_tests(filter_ids=None):
     report_dir.mkdir(exist_ok=True)
     report_file = report_dir / f"health_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
     with open(report_file, "w", encoding="utf-8") as f:
-        f.write(f"PersonalOS v2.0 Health Report — {datetime.now()}\n")
+        f.write(f"PersonalOS v4.7 Consequences Health Report — {datetime.now()}\n")
         f.write(f"Score: {passed}/{total} ({score}%)\n\n")
         for r in results:
             status = "PASS" if r.passed else ("WARN" if r.warning else "FAIL")

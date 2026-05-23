@@ -1,8 +1,7 @@
-# Task: Automatizar Reportes — 04_Operations/07_Reports/
+# Task: Automatizar Reportes — 04_Operations/06_SOTA_Features/Reports_Planned/
 
 **Prioridad:** P3
 **Fecha creación:** 2026-05-22
-**Fecha actualización:** 2026-05-22
 **Proyecto:** Think_Different
 **Origen:** Plan_Seguir_2026-05-22.md — Fase E
 
@@ -12,7 +11,7 @@
 
 ### Hallazgo
 
-**La carpeta oficial es `04_Operations/07_Reports/` (la 10 fue eliminada por duplicación).**
+**La carpeta `04_Operations/06_SOTA_Features/Reports_Planned/` NO EXISTE actualmente.**
 
 ```
 01_Personal_Os/04_Operations/
@@ -23,10 +22,10 @@
 ├── 04_Installer/
 ├── 05_Projects/
 ├── 06_SOTA_Features/
-├── 07_Reports/                  # ✅ OFICIAL
 ├── GOVERNANCE.md
 ├── README.md
 └── RUNBOOK.md
+# ❌ 10_Reports/ no existe
 ```
 
 ### Concepto
@@ -52,7 +51,7 @@ Ya existen scripts que generan outputs relevantes:
 
 ## 🎯 Definición de Terminado
 
-1. **Carpeta existe** — `04_Operations/07_Reports/`
+1. **Carpeta existe** — `04_Operations/06_SOTA_Features/Reports_Planned/`
 2. **Reportes automáticos** — al menos 2 tipos de reportes configurados
 3. **Scheduling** — weekly o triggered by ritual
 4. **Output accesible** — humanos pueden leer los reportes
@@ -61,12 +60,17 @@ Ya existen scripts que generan outputs relevantes:
 
 ## ➡️ Siguiente Acción
 
-**La carpeta ya existe con README.md. Verificar que los scripts apunten a 07_Reports:**
+**Crear estructura y definir tipos de reportes:**
 
 ```bash
-# Verificar estructura
-ls 01_Personal_Os/04_Operations/07_Reports/
-# Debe tener: README.md, 00_Templates/, 01_Generated/
+mkdir -p 01_Personal_Os/04_Operations/06_SOTA_Features/Reports_Planned/00_Templates
+mkdir -p 01_Personal_Os/04_Operations/06_SOTA_Features/Reports_Planned/01_Generated
+
+# Tipos de reportes a considerar:
+# - Weekly Health Report
+# - Audit Summary
+# - Project Status
+# - Skills Usage
 ```
 
 ---
@@ -74,6 +78,6 @@ ls 01_Personal_Os/04_Operations/07_Reports/
 ## 📋 Metadata
 
 - **Ubicación tarea:** `01_Personal_Os/03_Task/14_Task_Automate_Reports_P3.md`
-- **Keywords:** `reports`, `automation`, `04_Operations`, `07_Reports`
+- **Keywords:** `reports`, `automation`, `04_Operations`
 - **Bloqueado por:** —
 - **Related:** HUBs existentes (Telemetry, Watchdog, Auditor)

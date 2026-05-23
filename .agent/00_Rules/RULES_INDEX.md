@@ -1,9 +1,9 @@
-# 📋 Índice de Reglas — PersonalOS v4.0 Consequences
+# 📋 Índice de Reglas — PersonalOS v4.7 Consequences
 
 **Versión:** 4.0
-**Última actualización:** 2026-05-10
+**Última actualización:** 2026-05-22
 **Ubicación:** `01_Personal_Os/01_Core/01_Rules/`
-**Framework:** Anthropic SOTA 2026 + PersonalOS v4.0 Consequences
+**Framework:** Anthropic SOTA 2026 + PersonalOS v4.7 Consequences
 
 ---
 
@@ -104,7 +104,7 @@ Think_Different/
 ---
 
 _Total Reglas activas: 11 (.mdc files)_
-_Total Skills: 300+_
+_Total Skills: 358_
 _Total Áreas funcionales: 11 (v4.0 Consequences)_
-_Framework: Anthropic SOTA 2026 + PersonalOS v4.0 Consequences_
+_Framework: Anthropic SOTA 2026 + PersonalOS v4.7 Consequences_
 _Open Design: 62 skills + 138 design systems integrados_

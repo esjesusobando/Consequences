@@ -1,7 +1,7 @@
 # 06_Plugins — OS Plugins
 
-> **Versión:** v4.1
-> **Última actualización:** 2026-05-20
+> **Versión:** v4.7
+> **Última actualización:** 2026-05-22
 
 ---
 
@@ -36,4 +36,4 @@ Plugins del sistema operativo PersonalOS. Extensiones que agregan funcionalidad 
 
 ---
 
-*Think Different PersonalOS v4.1*
+*Think Different PersonalOS v4.7 Consequences*

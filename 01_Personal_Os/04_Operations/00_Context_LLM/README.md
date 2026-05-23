@@ -67,4 +67,4 @@ Sistema de memoria y contexto para LLMs. Guarda el estado del sistema, notas de 
 
 ---
 
-*Think Different PersonalOS v4.1*
+*Think Different PersonalOS v4.7*

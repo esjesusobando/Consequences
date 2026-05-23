@@ -61,7 +61,7 @@ The PDF and HTML presentation must include:
 
 ## Numbering rule
 
-Before creating an output folder under `03_Resultado/`, scan existing top-level directories that start with `NN_`. Use the next integer with two digits. Example: if `03_Resultado/09_World_OIM/` exists and no later numbered folder exists, create `03_Resultado/10_AI_News_Weekly_YYYYMMDD/`.
+Before creating an output folder under `03_Resultado/`, scan existing top-level directories that start with `NN_`. Use the next integer with two digits. Example: if `03_Resultado/09b_World_OIM/` exists and no later numbered folder exists, create `03_Resultado/10_AI_News_Weekly_YYYYMMDD/`.
 
 ## Bundled resources
 

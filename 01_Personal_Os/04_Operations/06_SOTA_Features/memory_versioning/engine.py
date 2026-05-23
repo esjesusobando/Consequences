@@ -1,6 +1,6 @@
 """
 Memory Versioning Engine
-PersonalOS v4.1 — SOTA Feature
+PersonalOS v4.7 — SOTA Feature
 Wraps Engram saves with immutable versioning + audit trail.
 Inspired by Claude Memory Stores (memver_...) + MemMachine versioning.
 

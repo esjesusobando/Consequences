@@ -1,21 +1,21 @@
-# 01_Core — Think Different PersonalOS v4.5 Consequences
+# 01_Core — Think Different PersonalOS v4.7 Consequences
 
-> **Versión:** v4.5 Consequences — JARVIS 4.5 Integrated
-> **Última actualización:** 2026-05-21
+> **Versión:** v4.7 Consequences — JARVIS Integrated
+> **Última actualización:** 2026-05-22
 > **Estado:** ✅ Activo | 💾 FUENTE DE VERDAD
 
 ---
 
-## 📂 Estructura Principal v4.5
+## 📂 Estructura Principal v4.7
 
 ```
 Think_Different/
 ├── 00_Winter_is_Coming/    # Estrategia, Backlog y ADN (ESTRATÉGICO)
 ├── 01_Personal_Os/
-│   ├── 01_Core/          # Motor OS: Skills, Agents, MCPs (FUENTE DE VERDAD) 💾
-│   ├── 02_Knowledge/     # Base de Conocimiento, Research y Documentación
-│   ├── 03_Task/          # Gestión de Tareas Activas (Hillary)
-│   └── 04_Operations/   # Cerebro Operativo y Automatización
+│   └── 01_Core/          # Motor OS: Skills, Agents, MCPs (FUENTE DE VERDAD) 💾
+├── 02_Knowledge/         # Base de Conocimiento, Research y Documentación
+├── 03_Tasks/             # Gestión de Tareas Activas (Hillary)
+├── 04_Operations/        # Cerebro Operativo y Automatización
 ├── 05_Archive/          # Repositorio de Proyectos Finalizados
 ├── 02_Playground/       # Laboratorio de Pruebas y Experimentos
 └── 03_Resultado/       # Resultados de trabajo
@@ -27,7 +27,7 @@ Think_Different/
 
 | #                        | Carpeta                               | Contenido                                               | Estado                       |
 |-------------------------|--------------------------------------|--------------------------------------------------------|-----------------------------|
-| 01                       | `00_Workflows_Os/`                    | 27 workflows (5 categorías)                             | ✅                            |
+| 01                       | `00_Workflows_Os/`                    | 31 workflow files (5 categorías)                             | ✅                            |
 | 02                       | `01_Rules/`                           | 11 reglas .mdc                                          | ✅                            |
 | 03                       | `02_Tools/`                           | Skills, Agents, MCPs, Hooks, Plugins                    | ✅                            |
 
@@ -37,8 +37,8 @@ Think_Different/
 
 | #                        | Carpeta                            | Contenido                                | Estado                       |
 |-------------------------|-----------------------------------|-----------------------------------------|-----------------------------|
-| 01                       | `01_Agents/`                       | 52+ agents                               | ✅                            |
-| 02                       | `02_Skills/`                       | 299 skills (11 áreas)                    | ✅                            |
+| 01                       | `01_Agents/`                       | 82 agents                               | ✅                            |
+| 02                       | `02_Skills/`                       | 394 skills (12 áreas)                    | ✅                            |
 | 03                       | `03_Mcp/`                          | MCP servers                              | ✅                            |
 | 04                       | `05_Hooks/`                        | Hooks de calidad                         | ✅                            |
 | 05                       | `06_Plugins/`                      | Plugins                                  | ✅                            |
@@ -120,7 +120,7 @@ Think_Different/
 
 ---
 
-## 📋 MCPs (35 Claude Code / 18 OpenCode)
+## 📋 MCPs (36 Claude Code / OpenCode configs)
 
 | Categoría                       | Cantidad                      | Ejemplos                                      |
 |--------------------------------|------------------------------|----------------------------------------------|
@@ -139,7 +139,7 @@ Think_Different/
 
 ---
 
-## 📋 HUBs (23 scripts totales: 19 HUBs + 4 auxiliares)
+## 📋 HUBs (19 HUBs + 284 scripts Python)
 
 | #                        | HUB                                          | Función                                     |
 |-------------------------|---------------------------------------------|--------------------------------------------|
@@ -173,7 +173,7 @@ Think_Different/
 |------------------------------------|-----------------------------------------------|
 | Dream Team                          | `02_Dream_Team.md`                             |
 | Inventario Total                    | `01_Inventario_Total.md`                       |
-| Inventario Core                     | `INVENTARIO_CORE.md`                           |
+| Inventario Core                     | `03_Inventario_Core.md`                           |
 | Workflows                           | `00_Workflows_Os/README.md`                    |
 
 ---
@@ -192,4 +192,4 @@ El sistema cuenta con 7 manifests en `04_Operations/02_Agent_Teams_Lite/00_Manif
 
 ---
 
-**PersonalOS v3.1 Consequences — JARVIS 3.1 Integrated — 2026-04-29**
+**PersonalOS v4.7 Consequences — JARVIS Integrated — 2026-05-22**
