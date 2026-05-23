@@ -216,7 +216,7 @@ Think_Different/                    # RAÍZ
 02_Playground/
 ├── 00_Momentum/              # Agenda momentum (7 subcarpetas)
 ├── 01_OS_Health_Test.py      # Test de salud
-├── 02_OS_Runtime_Test.py     # Test runtime v2
+├── 08_OS_Runtime_Test.py     # Test runtime v2 (ex-02_)
 ├── 03_Reports/               # Reportes generados
 ├── 04_Side Project/          # Oil Brain (repo propio, ignorado)
 ├── 05_Branders_Skills/       # Skills de branding (10 archivos)

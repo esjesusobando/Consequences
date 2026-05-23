@@ -18,7 +18,7 @@ Zona de pruebas y experimentos. **Todo lo validado se integra al OS**, nada qued
 02_Playground/
 ├── 00_Momentum/              # Agenda de momentum activo
 ├── 01_OS_Health_Test.py      # Test de salud del OS
-├── 02_OS_Runtime_Test.py     # Test runtime v2
+├── 08_OS_Runtime_Test.py     # Test runtime v2 (ex-02_, renumbered para evitar colisión)
 ├── 03_Reports/               # Reportes generados
 │   └── 00_SALUD_REPORTS.md   # Reportes de salud (00_ = no tocar)
 ├── 04_Side Project/          # Oil Brain (repo propio, ignorado)
