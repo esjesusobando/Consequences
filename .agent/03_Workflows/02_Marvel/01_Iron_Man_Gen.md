@@ -7,7 +7,7 @@ argument-hint: "[opcional: tarea específica del día o contexto a priorizar]"
 # 🧬 Workflow: Génesis (Iron Man Boot) — v4.7 Consequences
 
 > **Versión del sistema:** v4.7 Consequences — Production Ready
-> **Fecha:** 2026-05-22
+> **Fecha:** 2026-05-23
 > **Estado:** 🟢 PURE GREEN — Auditoría Integral Reconciliada
 
 Ejecutar al inicio de CADA sesión. Sin contexto completo NO hay respuesta.
@@ -52,8 +52,8 @@ Think_Different/
 │   │   ├── 00_Workflows_Os/     # 30 workflows (7 categorías)
 │   │   ├── 01_Rules/            # 12 reglas .mdc (00-11)
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/       # 82 agentes (Dream + Specialists + Individuales)
-│   │       ├── 02_Skills/       # 393+ skills (12 áreas funcionales)
+│   │       ├── 01_Agents/       # 59 agent files (75 .md + SDD/CE opencode.json = 82 total sistema)
+│   │       ├── 02_Skills/       # 394 skills (12 áreas funcionales)
 │   │       ├── 03_Mcp/          # Backup MCPs
 │   │       ├── 04_Integrations/ # Fireflies, Granola
 │   │       ├── 05_Hooks/        # 10 hooks (6 fases)
@@ -110,6 +110,18 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 
 # Sync .agent ↔ 01_Core
 python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
+
+# Optimización Minimax (modelo M2.7)
+python 01_Personal_Os/04_Operations/03_Scripts_Os/25_Minimax_Optimizer_Hub.py
+
+# Auditoría de skills (frontmatter YAML)
+python 01_Personal_Os/04_Operations/03_Scripts_Os/22_Validate_Skill_Frontmatter.py
+
+# Limpieza de paths legacy v2.x
+python 01_Personal_Os/04_Operations/03_Scripts_Os/21_Legacy_Path_Cleanup.py
+
+# Migración masiva de paths
+python 01_Personal_Os/04_Operations/03_Scripts_Os/24_mass_path_migration.py
 ```
 
 ---
@@ -128,7 +140,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 |------------------------|---------------------------------|-----------------------------------------------|
 | **Learning Always**     | `00_Learning_Always/`            | Continuous learning module                     |
 | **Personal OS**         | `01_Personal_Os/`                | Morning, Backlog, Content, Weekly, Rituales    |
-| **Marvel**              | `02_Marvel/`                     | Iron Man Gen, Spider, Professor X, Vision, Thor, Hulk, AntMan, Doc Strange |
+| **Marvel**              | `02_Marvel/`                     | 01_Iron_Man_Gen, 02_Spider_Brainstorm, 03_Professor_X_Plan, 04_Vision_Review, 05_Thor_Work, 06_Hulk_Compound, 07_AntMan_Lfg_Lite, 08_Doc_Strange_Lfg |
 | **Gentleman**           | `03_Gentleman/`                  | Frontend Premium, Redacción de Docs            |
 | **Hillary**             | `04_Hillary/`                    | Captura Rápida, Hillary Life OS                |
 | **Compound Engineering**| `05_Compound_Engineering/`       | Deep Work, Ship It, Harness, Multi-Agent       |
@@ -203,4 +215,4 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 ---
 
 *Think Different PersonalOS v4.7 Consequences — Production Ready*
-*Actualizado: 2026-05-22 | 393 skills | 82 agents | 36 MCPs | 31 HUBs | 12 rules*
+*Actualizado: 2026-05-23 | 394 skills | 59 agents (82 total sistema) | 36 MCPs | 19 HUBs + 12 auxiliares | 12 rules*

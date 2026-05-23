@@ -85,7 +85,7 @@ FASE 1: ARQUITECTURA
     ↓ (Scope Rule definida)
 FASE 2: TESTS (RED)
     ↓ (Tests fallando)
-FASE 3: IMPLEMENTACIÓN (GREEN - Usar Agente #14)
+FASE 3: IMPLEMENTACIÓN (GREEN - Usar Agente #03)
     ↓ (Tests pasando)
 FASE 4: REFACTORIZACIÓN (REFACTOR)
     ↓ (Código optimizado)
@@ -126,7 +126,7 @@ FASE 7: ACCESIBILIDAD (opcional)
 
 ```bash
 # FASE 3: Implementación (GREEN)
-Agente #14: "Implementa código para pasar los tests de [feature]"
+Agente #03: "Implementa código para pasar los tests de [feature]"
 
 # FASE 5: Seguridad
 Agente #05: "Audita seguridad de [feature]"

@@ -115,7 +115,7 @@ Agente #01: "Define la arquitectura para [feature]"
 Agente #02: "Escribe tests para [feature] basado en la arquitectura"
 
 # FASE 3: Implementación (GREEN)
-Agente #14: "Implementa código para pasar los tests de [feature]"
+Agente #03: "Implementa código para pasar los tests de [feature]"
 
 # FASE 4: Refactor
 Agente #04: "Refactoriza [feature] optimizando performance"

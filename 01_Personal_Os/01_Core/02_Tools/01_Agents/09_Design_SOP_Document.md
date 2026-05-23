@@ -25,7 +25,7 @@ Establecer los estándares de diseño, UI/UX y alineación visual del proyecto. 
 ##  Cómo Usar
 
 - **Para Agente #01**: Para entender requerimientos de UI global.
-- **Para Agente #14**: Como referencia "Biblia de Estilo" al codificar CSS/Styled-Components.
+- **Para Agente #03**: Como referencia "Biblia de Estilo" al codificar CSS/Styled-Components.
 - **Para Agente #07**: Para validar contrastes base definidos en el sistema.
 
 ---

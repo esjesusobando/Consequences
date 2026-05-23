@@ -97,7 +97,7 @@ Think_Different/                    # RAÍZ
 
 | Herramienta | Cantidad | Propósito |
 |-------------|----------|-----------|
-| **01_Agents** | 46 | Orquestación multi-agente |
+| **01_Agents** | 58 .md (16 root + 42 subcarpetas) | Orquestación multi-agente |
 | **02_Skills** | 394 | 12 áreas funcionales |
 | **03_Mcp** | - | Backup configs MCP |
 | **04_Integrations** | - | Fireflies, Granola |
@@ -107,22 +107,37 @@ Think_Different/                    # RAÍZ
 | **08_Evals** | - | Evaluadores |
 | **09_Templates** | - | Templates |
 
+**Agentes por Categoría (numeración secuencial 00-19):**
+
+| # | Categoría | Tipo | Cantidad |
+|---|-----------|------|----------|
+| 00 | Orchestrator / Agent_Template | Root | 2 archivos |
+| 01 | Dream Team | Subdirectorio | 5 agentes + README |
+| 02 | Specialists Compound | Subdirectorio | 23 agentes + README |
+| 03 | Growth | Subdirectorio | 5 agentes + README |
+| 04 | Contexto | Subdirectorio | 1 agente + README |
+| 05 | Marca | Subdirectorio | 1 agente + README |
+| 06 | Plantillas | Subdirectorio | 1 agente + README |
+| 07-13 | Individuales (Accessibility → Hillary) | Root | 7 archivos |
+| 14-19 | Specialist Individuales (Git → TDD) | Root | 6 archivos |
+| | **TOTAL** | | **58 .md agent files** |
+
 **Skills por Área:**
 
 | Área | Skills | Descripción |
 |------|--------|-------------|
-| 00_Compound_Engineering | 63* | Core CE — SDD + 21 nuevas CE skills registradas |
+| 00_Compound_Engineering | 63 | Core CE — SDD + CE workflow skills |
 | 00_Personal_Os_Stack | 1 | Stack base OS |
-| 00_Skill_Auditor | 4 | Auditoría |
-| 01_Creacion_Contenidos | 38 | Brand, YouTube, SEO |
-| 02_Diseno_Ui_Ux | 23 | Product Design, UI/UX |
-| 03_Video_Media | 6 | Video Intel |
-| 04_Automatizacion | 21 | N8N, Firecrawl, GWS |
-| 05_Workflows | 33 | Agent Teams, PM |
-| 06_Tools | 93 | Skill Creator, Testing, DevOps |
-| 07_Personal_Os | 29 | Life OS, Hillary |
-| 08_Invictus_Web | 14 | Playwright, Browser Auto |
-| 09_Claude_Ads | 20 | Claude Ads |
+| 00_Skill_Auditor | 1 | Auditoría de skills |
+| 01_Creacion_Contenidos | 40 | Brand, YouTube, SEO, Carruseles |
+| 02_Diseno_Ui_Ux | 29 | Product Design, UI/UX, Taste, Minimal |
+| 03_Video_Media | 7 | Video Intel, James Cameron |
+| 04_Automatizacion | 37 | N8N, Firecrawl, GWS Client |
+| 05_Workflows | 37 | Agent Teams, PM, Orchestrator |
+| 06_Tools | 112 | Skill Creator, Testing, DevOps, Data Analyst |
+| 07_Personal_Os | 32 | Life OS, Hillary, Rituales |
+| 08_Invictus_Web | 15 | Playwright, Superpowers, Browser Auto |
+| 09_Claude_Ads | 20 | Claude Ads & Promoted Content |
 
 ---
 
@@ -215,14 +230,14 @@ Think_Different/                    # RAÍZ
 ```
 02_Playground/
 ├── 00_Momentum/              # Agenda momentum (7 subcarpetas)
-├── 01_OS_Health_Test.py      # Test de salud
-├── 08_OS_Runtime_Test.py     # Test runtime v2 (ex-02_)
+├── 01_Branders_Skills/       # Skills de branding (10 archivos)
+├── 02_Workflow_N8N/          # ⚠️ A renombrar a 04_Workflow_N8N (locked)
 ├── 03_Reports/               # Reportes generados
 ├── 04_Side Project/          # Oil Brain (repo propio, ignorado)
-├── 05_Branders_Skills/       # Skills de branding (10 archivos)
+├── 05_OS_Health_Test.py      # Test de salud
 ├── 06_OS_Deep_Audit.py       # Auditoría profunda v2
 ├── 07_OS_Runtime_Test.py     # Test runtime v3
-├── 02_Workflow_N8N/          # ⚠️ A renombrar a 04_Workflow_N8N (locked)
+├── 08_OS_Runtime_Test.py     # Test runtime v2 (ex-02_ renombrado)
 ├── Kit_Diseño_Top.md         # Guía diseño legacy
 └── README.md
 ```
@@ -285,14 +300,14 @@ Think_Different/                    # RAÍZ
 
 | Componente | Total | Estado |
 |-----------|-------|--------|
-| Skills | 394 | ✅ |
-| Agentes | 46 | ✅ |
-| Rules | 12 | ✅ |
+| Skills | 394 (12 áreas) | ✅ |
+| Agentes | 59 files (75 .md + SDD/CE → 82 total) | ✅ |
+| Rules | 12 (.mdc 00-11) | ✅ |
 | MCPs | 36 | ✅ |
-| HUBs | 19 | ✅ |
-| Scripts | 284 | ✅ |
-| Workflows | 30 | ✅ |
-| CE Skills in opencode.json | 36 | ✅ (antes 15) |
+| HUBs | 19 _Hub.py + 12 auxiliares = 31 py | ✅ |
+| Scripts | 284 (recursivo en 03_Scripts_Os/) | ✅ |
+| Workflows | 30 (7 categorías) | ✅ |
+| CE Skills in opencode.json | 36+8 = 44 | ✅ |
 | Projects (Lab) | 9 | ✅ |
 
 ---

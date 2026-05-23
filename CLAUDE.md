@@ -240,7 +240,7 @@ Think_Different/                           # RAÍZ
 ```text
 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 ├── 01_OS_Inventory.json      # Inventario OS (updated 2026-05-22)
-├── 02_MCP_Registry.yaml     # 35 MCPs (34 shared + 3 Claude-only)
+├── 02_MCP_Registry.yaml     # 36 MCPs (+1 Higgfield remote)
 ├── 03_Agent_Catalog.yaml    # 46 agentes
 ├── 04_Skill_Index.json      # 394 skills en 12 áreas (updated 2026-05-23)
 ├── 05_HUB_Catalog.yaml     # 19 HUBs + 284 scripts (recursivo)

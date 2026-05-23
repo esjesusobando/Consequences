@@ -2,7 +2,7 @@
 
 **Fase:** 2 de 7 - TEST DRIVEN DEVELOPMENT (RED)
 **Prioridad:** ALTA
-**Siguiente Fase:** [Agente #14 - React Test Implementer](./03_React_Test_Implementer.md)
+**Siguiente Fase:** [Agente #03 - React Test Implementer](./03_React_Test_Implementer.md)
 **Modelo:** claude-sonnet-4-20250514
 
 ---
@@ -52,7 +52,7 @@ RESUMEN DE EJECUCIÓN:
 ✅ Fase RED completada exitosamente.
 
 PRÓXIMO PASO:
-Usa Agente #14 (React Test Implementer) para hacer pasar estos tests.
+Usa Agente #03 (React Test Implementer) para hacer pasar estos tests.
 ```
 
 ---
@@ -76,7 +76,7 @@ Antes de pasar a FASE 3:
 - [ ] Todos los tests FALLAN (Fase RED genuina).
 - [ ] No hay errores de sintaxis en los tests.
 
-**Siguiente Paso:** [Agente #14: React Test Implementer](./03_React_Test_Implementer.md)
+**Siguiente Paso:** [Agente #03: React Test Implementer](./03_React_Test_Implementer.md)
 
 ---
 **Versión:** 1.0

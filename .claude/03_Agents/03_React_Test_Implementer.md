@@ -1,4 +1,4 @@
-#  Agente #14: React Test Implementer
+#  Agente #03: React Test Implementer
 
 **Fase:** 3 de 7 - IMPLEMENTACIÓN (GREEN)
 **Prioridad:** ALTA
@@ -35,7 +35,7 @@ Desarrollador Senior React enfocado exclusivamente en **hacer pasar los tests**.
 ```
 Usuario: "Tengo los tests fallando para ProfileCard. Implementa el componente."
 
-Agente #14:
+Agente #03:
  IMPLEMENTANDO CÓDIGO (GREEN PHASE)
 
 Creando: src/components/ProfileCard/ProfileCard.tsx
