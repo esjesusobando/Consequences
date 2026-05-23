@@ -3,7 +3,7 @@
 > **Versión:** 4.7 Consequences
 > **Fecha:** 2026-05-23
 > **Estado:** Production Ready
-> **Audit:** 2026-05-23 — Audit v2: Submodule fix, 21 CE skills, docs pixel-perfect
+> **Audit:** 2026-05-23 — Audit v2: 23 duplicates removed, 3 folders synced, docs pixel-perfect
 
 ---
 
@@ -214,12 +214,16 @@ Think_Different/                    # RAÍZ
 
 ```
 02_Playground/
-├── 00_Momentum/
-├── 01_OS_Health_Test.py
-├── 02_OS_Deep_Audit.py
-├── 02_Reports/
-├── 02_Workflow_N8N/
-├── 03_Branders_Skills/
+├── 00_Momentum/              # Agenda momentum (7 subcarpetas)
+├── 01_OS_Health_Test.py      # Test de salud
+├── 02_OS_Runtime_Test.py     # Test runtime v2
+├── 02_Reports/               # Reportes generados
+├── 02_Workflow_N8N/          # Workflows N8N (11 carpetas)
+├── 03_Branders_Skills/       # Skills de branding
+├── 03_OS_Deep_Audit.py       # Auditoría profunda v2
+├── 04_OS_Runtime_Test.py     # Test runtime v3
+├── 04_Side Project/          # Oil Brain (submódulo externo)
+├── Kit_Diseño_Top.md         # Guía diseño legacy
 └── README.md
 ```
 
@@ -252,7 +256,7 @@ Think_Different/                    # RAÍZ
 ├── 13_Sessions/
 ├── 14_Imagenes_Finales/
 ├── 15_AI_News_Weekly_20260522/  # ✅ Reporte ejecutado
-├── 16_Side_Project/             # Oil/Brain (git ignored)
+├── 16_Side Project/             # Oil/Brain (repo propio, ignorado)
 ├── Design.md
 ├── Pattern_Intelligence_Results.md
 └── README.md
@@ -325,7 +329,7 @@ Al iniciar sesión, ejecutar EN ORDEN:
 **Reglas de Secuencia:**
 1. **Enumeración limpia** — Sin huecos ni duplicados
 2. **00_ = No tocar** — Archivos de referencia rápida
-3. **Duplicados** — Usar sufijo `b` (ej: `09b_World_OIM`) → renombrado a `09_World_OIM` en audit v2
+3. **Renombrados** — `09b_World_OIM` → `09_World_OIM` (audit v2)
 
 ---
 
