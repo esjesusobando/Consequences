@@ -217,12 +217,12 @@ Think_Different/                    # RAÍZ
 ├── 00_Momentum/              # Agenda momentum (7 subcarpetas)
 ├── 01_OS_Health_Test.py      # Test de salud
 ├── 02_OS_Runtime_Test.py     # Test runtime v2
-├── 02_Reports/               # Reportes generados
-├── 02_Workflow_N8N/          # Workflows N8N (11 carpetas)
-├── 03_Branders_Skills/       # Skills de branding
-├── 03_OS_Deep_Audit.py       # Auditoría profunda v2
-├── 04_OS_Runtime_Test.py     # Test runtime v3
-├── 04_Side Project/          # Oil Brain (submódulo externo)
+├── 03_Reports/               # Reportes generados
+├── 04_Side Project/          # Oil Brain (repo propio, ignorado)
+├── 05_Branders_Skills/       # Skills de branding (10 archivos)
+├── 06_OS_Deep_Audit.py       # Auditoría profunda v2
+├── 07_OS_Runtime_Test.py     # Test runtime v3
+├── 02_Workflow_N8N/          # ⚠️ A renombrar a 04_Workflow_N8N (locked)
 ├── Kit_Diseño_Top.md         # Guía diseño legacy
 └── README.md
 ```
