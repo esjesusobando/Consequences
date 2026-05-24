@@ -208,7 +208,7 @@ improvement:
     - risk_reduction: "medio"
   
   artifacts:
-    - "01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os_Stack/SKILL.md"
+    - "01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os_Stack/SKILL.md"  # → 00_System_Core (rename 2026-05-24)
   
   status: "✅ COMPLETADO"
 ```

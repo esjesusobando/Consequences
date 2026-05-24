@@ -121,8 +121,8 @@ Think_Different/
 | Área                                         | Descripción                                               | Skills |
 |---------------------------------------------|----------------------------------------------------------|--------|
 | 00_Compound_Engineering                      | Core CE — SDD + Compound Engineering                     | 63     |
-| 00_Personal_Os_Stack                         | Stack base OS + Gcierr                                    | 1      |
-| 00_Skill_Auditor                             | Auditoría de skills                                       | 4      |
+| 00_System_Core                         | Stack base OS + Gcierr                                    | 1      |
+| 10_Skill_Auditor                             | Auditoría de skills                                       | 4      |
 | 01_Creacion_Contenidos                       | Brand, YouTube, SEO, Carruseles                           | 38     |
 | 02_Diseno_Ui_Ux                              | Product Design, UI/UX, Taste, Minimal                     | 23     |
 | 03_Video_Media                               | Video Intel, James Cameron                                | 6      |

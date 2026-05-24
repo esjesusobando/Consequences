@@ -328,22 +328,22 @@
         }
       ]
     },
-    "00_Personal_Os_Stack": {
+    "00_System_Core": {
       "count": 1,
       "skills": [
         {
-          "name": "00_Personal_Os_Stack",
-          "path": "00_Personal_Os_Stack/SKILL.md",
+          "name": "00_System_Core",
+          "path": "00_System_Core/SKILL.md",
           "has_frontmatter": true
         }
       ]
     },
-    "00_Skill_Auditor": {
+    "10_Skill_Auditor": {
       "count": 1,
       "skills": [
         {
-          "name": "00_Skill_Auditor",
-          "path": "00_Skill_Auditor/SKILL.md",
+          "name": "10_Skill_Auditor",
+          "path": "10_Skill_Auditor/SKILL.md",
           "has_frontmatter": true
         }
       ]

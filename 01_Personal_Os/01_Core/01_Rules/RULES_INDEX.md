@@ -82,8 +82,8 @@ Think_Different/
 | Área                                                   | Contenido                                                                   |
 |-------------------------------------------------------|----------------------------------------------------------------------------|
 | **00_Compound_Engineering**                            | Core CE + Avengers + Spider                                                 |
-| **00_Personal_Os_Stack**                               | Stack base OS + System Guardian                                             |
-| **00_Skill_Auditor**                                   | Auditor de skills                                                           |
+| **00_System_Core**                               | Stack base OS + System Guardian                                             |
+| **10_Skill_Auditor**                                   | Auditor de skills                                                           |
 | **01_Creacion_Contenidos**                             | Brand, YouTube, SEO, Carousel                                               |
 | **02_Diseno_Ui_Ux**                                    | UI/UX, Huashu, Dumbledor, Taste, Design SOTA                                |
 | **03_Video_Media**                                     | Video Intel, James Cameron (Remotion)                                       |

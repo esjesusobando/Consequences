@@ -37,7 +37,7 @@ def parse_audit_results(output: str) -> dict:
     """Parse audit-skills.py output to get scores."""
     results = {}
 
-    # Match patterns like: ✅ 00_Skill_Auditor: 94.1% (16/17 checks)
+    # Match patterns like: ✅ 10_Skill_Auditor: 94.1% (16/17 checks)
     # or: ⚠️ 17_SEO_SOTA_Master: 63.6% (7/11 checks)
     pattern = r"([✅⚠️❌])\s+(\S+):\s+(\d+\.?\d*)%"
 
@@ -97,7 +97,7 @@ def run_validate_essence(skills_dir: Path) -> dict:
     output = result.stdout
     scores = {}
 
-    # Match: ✅ 00_Skill_Auditor: 100.0%
+    # Match: ✅ 10_Skill_Auditor: 100.0%
     pattern = r"([✅⚠️❌])\s+(\S+):\s+(\d+\.?\d*)%"
 
     for match in re.finditer(pattern, output):

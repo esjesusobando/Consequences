@@ -134,8 +134,8 @@
 | Área | Skills | Descripción |
 |------|--------|-------------|
 | 00_Compound_Engineering | 63 | Core CE — SDD + Reviews |
-| 00_Personal_Os_Stack | 1 | Stack base del OS + Gcierr |
-| 00_Skill_Auditor | 4 | Auditoría de skills |
+| 00_System_Core | 1 | Stack base del OS + Gcierr |
+| 10_Skill_Auditor | 4 | Auditoría de skills |
 | 01_Creacion_Contenidos | 38 | Brand, YouTube, SEO, Carruseles |
 | 02_Diseno_Ui_Ux | 23 | Product Design, UI/UX, Taste, Minimal |
 | 03_Video_Media | 6 | Video Intel, James Cameron |

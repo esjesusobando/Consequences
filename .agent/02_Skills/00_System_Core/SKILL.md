@@ -28,7 +28,7 @@ El núcleo del sistema, diseñado para una autonomía extrema mediante flujos de
 ## Estructura
 
 ```
-00_Personal_Os_Stack/
+00_System_Core/
 ├── 01_Hooks/
 ├── 01_Personal_Os.md
 ├── 02_SDD_Workflow.md

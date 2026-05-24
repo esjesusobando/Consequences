@@ -38,8 +38,8 @@ Las skills del sistema en `01_Personal_Os/01_Core/02_Tools/02_Skills/` están or
 | Área | Descripción |
 |------|-------------|
 | 00_Compound_Engineering | Core CE — SDD + Reviews |
-| 00_Personal_Os_Stack | Stack base del OS + Gcierr |
-| 00_Skill_Auditor | Auditoría de skills |
+| 00_System_Core | Stack base del OS + Gcierr |
+| 10_Skill_Auditor | Auditoría de skills |
 | 01_Creacion_Contenidos | Brand, YouTube, SEO, Carruseles |
 | 02_Diseno_Ui_Ux | Product Design, UI/UX, Taste, Minimal |
 | 03_Video_Media | Video Intel, James Cameron, Remotion, Audio |
