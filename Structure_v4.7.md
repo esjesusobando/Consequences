@@ -97,7 +97,7 @@ Think_Different/                    # RAÍZ
 
 | Herramienta | Cantidad | Propósito |
 |-------------|----------|-----------|
-| **01_Agents** | 58 .md (16 root + 42 subcarpetas) | Orquestación multi-agente |
+| **01_Agents** | 46 agentes (5 Dream + 23 Specialists + 13 Individual + 5 Growth) | Orquestación multi-agente |
 | **02_Skills** | 394 | 12 áreas funcionales |
 | **03_Mcp** | - | Backup configs MCP |
 | **04_Integrations** | - | Fireflies, Granola |
@@ -120,15 +120,15 @@ Think_Different/                    # RAÍZ
 | 06 | Plantillas | Subdirectorio | 1 agente + README |
 | 07-13 | Individuales (Accessibility → Hillary) | Root | 7 archivos |
 | 14-19 | Specialist Individuales (Git → TDD) | Root | 6 archivos |
-| | **TOTAL** | | **58 .md agent files** |
+| | **TOTAL** | | **46 agentes** |
 
 **Skills por Área:**
 
 | Área | Skills | Descripción |
 |------|--------|-------------|
 | 00_Compound_Engineering | 63 | Core CE — SDD + CE workflow skills |
-| 00_Personal_Os_Stack | 1 | Stack base OS |
-| 00_Skill_Auditor | 1 | Auditoría de skills |
+| 00_System_Core          | 1 | Stack base OS |
+| 10_Skill_Auditor | 1 | Auditoría de skills |
 | 01_Creacion_Contenidos | 40 | Brand, YouTube, SEO, Carruseles |
 | 02_Diseno_Ui_Ux | 29 | Product Design, UI/UX, Taste, Minimal |
 | 03_Video_Media | 7 | Video Intel, James Cameron |
@@ -231,13 +231,12 @@ Think_Different/                    # RAÍZ
 02_Playground/
 ├── 00_Momentum/              # Agenda momentum (7 subcarpetas)
 ├── 01_Branders_Skills/       # Skills de branding (10 archivos)
-├── 02_Workflow_N8N/          # ⚠️ A renombrar a 04_Workflow_N8N (locked)
+├── 01_OS_Runtime_Test.py     # Test runtime v4.7 Consequences
+├── 02_Workflow_N8N/          # Workflows N8N
 ├── 03_Reports/               # Reportes generados
 ├── 04_Side Project/          # Oil Brain (repo propio, ignorado)
 ├── 05_OS_Health_Test.py      # Test de salud
 ├── 06_OS_Deep_Audit.py       # Auditoría profunda v2
-├── 07_OS_Runtime_Test.py     # Test runtime v3
-├── 08_OS_Runtime_Test.py     # Test runtime v2 (ex-02_ renombrado)
 ├── Kit_Diseño_Top.md         # Guía diseño legacy
 └── README.md
 ```
@@ -301,7 +300,7 @@ Think_Different/                    # RAÍZ
 | Componente | Total | Estado |
 |-----------|-------|--------|
 | Skills | 394 (12 áreas) | ✅ |
-| Agentes | 59 files (75 .md + SDD/CE → 82 total) | ✅ |
+| Agentes | 46 (5 Dream + 23 Specialists + 13 Individual + 5 Growth) | ✅ |
 | Rules | 12 (.mdc 00-11) | ✅ |
 | MCPs | 36 | ✅ |
 | HUBs | 19 _Hub.py + 12 auxiliares = 31 py | ✅ |

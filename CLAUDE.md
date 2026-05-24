@@ -169,7 +169,7 @@ Think_Different/                           # RAÍZ
 │   │   ├── 00_Workflows_Os/     ✅ 30 workflows (7 categorías)
 │   │   ├── 01_Rules/            ✅ 12 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/            ✅ Todas las herramientas
-│   │       ├── 01_Agents/       ✅ 46 agentes (5 Dream Team + 23 Specialists + 18 individuales)
+│       │   ├── 01_Agents/       ✅ 46 agentes (5 Dream Team + 23 Specialists + 13 Individuales + 5 Growth)
 │   │       ├── 02_Skills/         ✅ 394 skills (12 áreas funcionales)
 │   │       ├── 03_Mcp/         ✅ Backup configs MCP
 │   │       ├── 04_Integrations/ ✅ Fireflies, Granola
@@ -196,7 +196,7 @@ Think_Different/                           # RAÍZ
 ├── .atl/                        ✅ SDD Registry + openspec
 ├── .claude/                     ✅ Config Claude Code + rules
 ├── .opencode/                   ✅ Config OpenCode + skills locales
-├── .mcp.json                    ✅ MCPs activos (35 servidores)
+├── .mcp.json                    ✅ MCPs activos (36 Claude)
 ├── OS_DIRECTORY.md              ✅ JARVIS discovery
 ├── AGENTS.md                    ✅ Root entry (GGA Pre-Commit)
 ├── CLAUDE.md                    ✅ Config Oficial para IAs (ESTE)
@@ -221,8 +221,8 @@ Think_Different/                           # RAÍZ
 | Área                                             | Carpeta                     | Descripción                                                   |
 |-------------------------------------------------|----------------------------|--------------------------------------------------------------|
 | 00_Compound_Engineering                          | 00_Compound_Engineering/    | Core CE — SDD + Compound Engineering                          |
-| 00_Personal_Os_Stack                             | 00_Personal_Os_Stack/       | Stack base OS + Gcierr                                        |
-| 00_Skill_Auditor                                 | 00_Skill_Auditor/           | Auditoría de skills                                           |
+| 00_System_Core                                   | 00_System_Core/             | Stack base del OS                                             |
+| 10_Skill_Auditor                                 | 10_Skill_Auditor/           | Auditoría de skills                                           |
 | 01_Creacion_Contenidos                           | 01_Creacion_Contenidos/     | Brand, YouTube, SEO, Carruseles                               |
 | 02_Diseno_Ui_Ux                                  | 02_Diseno_Ui_Ux/            | Product Design, UI/UX, Taste, Minimal                         |
 | 03_Video_Media                                   | 03_Video_Media/             | Video Intel, James Cameron                                    |
@@ -328,22 +328,6 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 | **OpenCode**                               | `~/.config/opencode/opencode.json`                            | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`                   |
 
 > ⚠️ Al modificar MCPs: actualizar SIEMPRE el source Y el config activo correspondiente.
-
----
-
-## 🚨 PROBLEMA DETECTADO: Claude Code no abre
-
-**Error:**
-```
-Error: claude native binary not installed.
-```
-
-**Solución:**
-```bash
-node node_modules/@anthropic-ai/claude-code/install.cjs
-```
-
-O reinstalar sin `--ignore-scripts` / `--omit=optional`.
 
 ---
 

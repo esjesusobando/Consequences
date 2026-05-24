@@ -1,20 +1,20 @@
-# 🛠️ Skills — Sistema SOTA de Skills v4.1 Consequences
+# 🛠️ Skills — Sistema SOTA de Skills v4.7 Consequences
 
-**Versión:** 4.1 Consequences
-**Última actualización:** 2026-05-19
+**Versión:** 4.7 Consequences
+**Última actualización:** 2026-05-24
 **Source of Truth:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 **Framework:** Anthropic Skill Creator v2.0 + PersonalOS SOTA
-**Estado:** ✅ PURE GREEN — Auditoría completa 2026-05-19
+**Estado:** ✅ PURE GREEN — Auditoría 2026-05-24
 
 ---
 
-## 📂 Estructura v4.1 — 12 Áreas Funcionales (342 SKILL.md)
+## 📂 Estructura v4.7 — 12 Áreas Funcionales (394 SKILL.md)
 
 ```
 02_Skills/
 ├── 00_Compound_Engineering/    ⭐ Core Engineering (CE) — 63 skills
-├── 00_Personal_Os_Stack/       ⭐ Stack Core
-├── 00_Skill_Auditor/           ⭐ Auditoría de skills
+├── 00_System_Core/             ⭐ Stack Core
+├── 10_Skill_Auditor/           ⭐ Auditoría de skills
 │
 ├── 01_Creacion_Contenidos/    🎨 Contenido (38 items)
 │   ├── 01_Brand_Voice/
@@ -93,7 +93,7 @@
 │   ├── 02_Buscador_Skills/
 │   └── 03_Playwright/
 │
-├── claude-ads/                📢 Claude Ads (20 items)
+├── 09_Claude_Ads/             📢 Claude Ads (20 items)
 │
 ├── 11_Doc_Processing/         📚 Docs
 ├── 13_System_Master/          🏆 System Master
@@ -123,15 +123,15 @@
 | Tools (Testing, DevOps)                                        | `06_Tools/`                                                 |
 | Personal OS (Hillary, Life OS)                                 | `07_Personal_Os/`                                           |
 | Invictus Web                                                   | `08_Invictus_Web/`                                          |
-| Claude Ads                                                    | `claude-ads/`                                               |
+| Claude Ads                                                    | `09_Claude_Ads/`                                             |
 
 ---
 
 ## 📝 Changelog
 
 **2026-05-19:** Auditoría Completa v4.1
-- ✅ Sincronizado con estructura real: 393 skills, 12 áreas funcionales
-- ✅ Añadida área `claude-ads/` (20 items)
+- ✅ Sincronizado con estructura real: 394 skills, 12 áreas funcionales
+- ✅ Añadida área `09_Claude_Ads/` (20 items)
 - ✅ Eliminada referencia a `00_Gcierr/` y `09_Legacy_Archive/` (no existen en disco)
 - ✅ Consistencia total entre README, OS_DIRECTORY y skill-registry
 - ✅ PURE GREEN STATE mantenido
@@ -165,4 +165,4 @@
 - **Sistema OS:** `01_Personal_Os/04_Operations/`
 - **Auditoría vigente:** `01_Personal_Os/04_Operations/00_Context_LLM/08_Auditorias/HEALTH_CHECK_2026-05-03.md`
 
-*PersonalOS v4.1 Consequences — 2026-05-19*
+*PersonalOS v4.7 Consequences — 2026-05-24*

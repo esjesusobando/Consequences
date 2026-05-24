@@ -1,21 +1,20 @@
-# 🛠️ Skills — Sistema SOTA de Skills v3.1 Consequences
+# 🛠️ Skills — Sistema SOTA de Skills v4.7 Consequences
 
-**Versión:** 3.1 Consequences
-**Última actualización:** 2026-05-03
+**Versión:** 4.7 Consequences
+**Última actualización:** 2026-05-24
 **Source of Truth:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 **Framework:** Anthropic Skill Creator v2.0 + PersonalOS SOTA
-**Estado:** ✅ PURE GREEN — Auditoría completa 2026-05-03
+**Estado:** ✅ PURE GREEN — Auditoría 2026-05-24
 
 ---
 
-## 📂 Estructura v3.1 — Áreas Funcionales
+## 📂 Estructura v4.7 — Áreas Funcionales
 
 ```
 02_Skills/
 ├── 00_Compound_Engineering/    ⭐ Core Engineering (CE)
-├── 00_Gcierr/                 ⭐ Gcierr integration
-├── 00_Personal_Os_Stack/      ⭐ Stack Core
-├── 00_Skill_Auditor/          ⭐ Auditoría de skills
+├── 00_System_Core/            ⭐ Stack Core
+├── 10_Skill_Auditor/          ⭐ Auditoría de skills
 │
 ├── 01_Creacion_Contenidos/    🎨 Contenido (22 items)
 │   ├── 01_Brand_Voice/
@@ -94,14 +93,8 @@
 │   ├── 02_Buscador_Skills/
 │   └── 03_Playwright/
 │
-├── 09_Legacy_Archive/         📦 Legacy Archive
-│   └── 01_Backup/
-│
-├── 11_Doc_Processing/         📚 Docs
-├── 13_System_Master/          🏆 System Master
-├── 16_Silicon_Valley_Data_Analyst/ 📊 Analytics
-├── 17_SEO_SOTA_Master/       🔍 SEO
-├── 20_James_Cameron/          🎬 Video Production
+├── 09_Claude_Ads/            📢 Ads & Promoted Content
+├── 10_Skill_Auditor/         🔍 Skill Auditor
 ├── 27_Qmd/                   💾 QMD Search
 ├── 28_Carousel_Master/       🎠 Carruseles
 │
@@ -117,6 +110,7 @@
 | Qué necesitas                                         | Ve a                                               |
 |-------------------------------------------------------|----------------------------------------------------|
 | Core Engineering (CE)                                 | `00_Compound_Engineering/`                         |
+| Stack base del OS                                     | `00_System_Core/`                                  |
 | Contenido (Brand, YouTube)                            | `01_Creacion_Contenidos/`                          |
 | UI/UX Design                                          | `02_Diseno_Ui_Ux/`                                 |
 | Video & Media                                         | `03_Video_Media/`                                  |
@@ -124,11 +118,18 @@
 | Workflows (Agent Teams, PM)                           | `05_Workflows/`                                    |
 | Tools (Testing, DevOps)                               | `06_Tools/`                                        |
 | Personal OS (Hillary, Life OS)                        | `07_Personal_Os/`                                  |
-| Legacy                                                | `09_Legacy_Archive/`                               |
+| Invictus Web                                          | `08_Invictus_Web/`                                 |
+| Claude Ads                                            | `09_Claude_Ads/`                                   |
+| Skill Auditor                                         | `10_Skill_Auditor/`                                |
 
 ---
 
 ## 📝 Changelog
+
+**2026-05-24:** Sincronización v4.7
+- ✅ Actualización de métricas: 394 skills, 12 áreas funcionales
+- ✅ Directorios corregidos: System_Core, Skill_Auditor (10_)
+- ✅ Consistentes con source de truth en 01_Core/
 
 **2026-05-03:** Auditoría Completa v3.1
 - ✅ Actualización de métricas: 299 skills, 11 áreas funcionales
@@ -159,4 +160,4 @@
 - **Sistema OS:** `01_Personal_Os/04_Operations/`
 - **Auditoría vigente:** `01_Personal_Os/04_Operations/00_Context_LLM/08_Auditorias/HEALTH_CHECK_2026-05-03.md`
 
-*PersonalOS v3.1 Consequences — 2026-05-03*
+*PersonalOS v4.7 Consequences — 2026-05-24*

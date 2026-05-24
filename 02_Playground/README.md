@@ -1,7 +1,7 @@
 # 02_Playground — Pruebas y Experimentos
 
-> **Versión:** v4.7
-> **Última actualización:** 2026-05-23
+> **Versión:** v4.7 Consequences
+> **Última actualización:** 2026-05-24
 > **Estado:** Activo — Sincronizado v4.7
 
 ---
@@ -18,22 +18,20 @@ Zona de pruebas y experimentos. **Todo lo validado se integra al OS**, nada qued
 02_Playground/
 ├── 00_Momentum/              # Agenda de momentum activo
 ├── 01_Branders_Skills/       # Skills de branding (10 archivos)
-├── 02_Workflow_N8N/          # ⚠️ A renombrar a 04_Workflow_N8N (locked por OpenCode)
+├── 01_OS_Runtime_Test.py     # Test runtime v4.7 Consequences (renombrado desde 08)
+├── 02_Workflow_N8N/          # Workflows N8N (numeración secuencial OK)
 ├── 03_Reports/               # Reportes generados
 │   └── 00_SALUD_REPORTS.md   # Reportes de salud (00_ = no tocar)
 ├── 04_Side Project/          # Oil Brain (repo propio, ignorado)
 ├── 05_OS_Health_Test.py      # Test de salud
 ├── 06_OS_Deep_Audit.py       # Auditoría profunda v2
-├── 07_OS_Runtime_Test.py     # Test runtime v3
-├── 08_OS_Runtime_Test.py     # Test runtime v2 (ex-02_ renombrado)
 ├── Kit_Diseño_Top.md         # Guía de diseño legacy
 └── README.md                 # Este archivo
 ```
 
-> **Nota:** `02_Workflow_N8N/` pendiente de renombrar a `04_Workflow_N8N` (bloqueado por OpenCode, post-sesión)
-> **Secuencia:** 01 → 08 (rango activo, prefijos únicos)
+> **Secuencia:** 00 → 06 (rango activo, prefijos únicos)
 > **Reportes:** Pascal_Case + Guion_bajo: `OS_Health_2026-05-20_12-24-20.txt`
-> **00_ prefix:** Archivos "a la mano" que NO se tocan
+> **00_ prefix:** Carpetas "a la mano" que NO se tocan
 
 ---
 
@@ -64,4 +62,4 @@ Zona de pruebas y experimentos. **Todo lo validado se integra al OS**, nada qued
 
 ---
 
-*Think Different PersonalOS v6.2 — Playground limpio 2026-05-20*
+*Think Different PersonalOS v4.7 Consequences — Playground limpio 2026-05-24*

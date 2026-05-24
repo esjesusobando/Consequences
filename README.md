@@ -1,28 +1,28 @@
 # Think Different PersonalOS v4.7 Consequences — Production Ready
 
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Version](https://img.shields.io/badge/Version-4.5-00FF00)]()
+[![Version](https://img.shields.io/badge/Version-4.7-00FF00)]()
 [![Status](https://img.shields.io/badge/Status-PRODUCTION%20READY-00FF00)]()
-[![OS](https://img.shields.io/badge/Think%20Different-OS--4.5-7B68EE)]()
+[![OS](https://img.shields.io/badge/Think%20Different-OS--4.7-7B68EE)]()
 
-> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 393 skills SOTA, 12 áreas funcionales, 82 agentes, metodologías integradas y automatización completa.
+> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 394 skills SOTA, 12 áreas funcionales, 46 agentes, metodologías integradas y automatización completa.
 
 ---
 
-## 📊 Estado del Sistema (v4.7 Consequences — Production Ready — 2026-05-22)
+## 📊 Estado del Sistema (v4.7 Consequences — Production Ready — 2026-05-24)
 
 > 🟢 **PRODUCTION READY** - v4.7 Consequences lista para uso público
 
 | Métrica                             | Valor                                           |
 |------------------------------------|------------------------------------------------|
 | **Overall Health**                  | **100%** 🟢                                      |
-| **Every CE**                        | v2.55.0 ✅ (local repo)                          |
-| **gentle-ai**                       | v1.26.6 ✅                                       |
-| **Skills**                          | **393** (12 áreas funcionales)                  |
+| **Every CE**                        | v3.8.4 ✅ (local repo)                          |
+| **gentle-ai**                       | v1.30.6 ✅                                       |
+| **Skills**                          | **394** (12 áreas funcionales)                  |
 | **Rules**                           | **12** (.mdc)                                   |
 | **MCPs**                            | **36** Claude Code                              |
-| **HUBs**                            | **28** HUBs + 152 scripts         |
-| **Agentes**                         | **82** (Dream Team + Specialists + individuales) |
+| **HUBs**                            | **19** HUBs + 284 scripts         |
+| **Agentes**                         | **46** (Dream Team + Specialists + Growth) |
 | **Workflows**                       | **30** (7 categorías)                           |
 
 ---
@@ -37,8 +37,8 @@ Think_Different/                           # RAÍZ
 │   │   ├── 00_Workflows_Os/      ✅ 30 workflows (7 categorías)
 │   │   ├── 01_Rules/             ✅ 12 reglas .mdc — FUENTE DE VERDAD
 │   │   └── 02_Tools/             ✅ Todas las herramientas
-│   │       ├── 01_Agents/         ✅ 82 agentes
-│   │       ├── 02_Skills/        ✅ 393 skills — 12 áreas funcionales
+│   │       ├── 01_Agents/         ✅ 46 agentes
+│   │       ├── 02_Skills/        ✅ 394 skills — 12 áreas funcionales
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/         ✅ 10 hooks (6 fases)
@@ -56,19 +56,21 @@ Think_Different/                           # RAÍZ
 │       ├── 00_Context_LLM/       ✅ Memoria LLM (Engram, notes)
 │       ├── 01_Auto_Improvement/  ✅ Auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests JARVIS
-│       ├── 03_Scripts_Os/        ✅ 28 HUBs + 152 scripts
+│       ├── 03_Scripts_Os/        ✅ 19 HUBs + 284 scripts
 │       ├── 04_Installer/         ✅ Installer
 │       ├── 05_Projects/          ✅ Proyectos activos
 │       ├── GOVERNANCE.md
 │       └── RUNBOOK.md
 ├── 02_Playground/                 ✅ Zona de pruebas
 │   ├── 00_Momentum/
-│   ├── 01_OS_Health_Test.py
-│   ├── 02_Reports/
-│   ├── 02_OS_Deep_Audit.py
-│   ├── 03_OS_Runtime_Test.py
+│   ├── 01_Branders_Skills/
+│   ├── 01_OS_Runtime_Test.py
 │   ├── 02_Workflow_N8N/
-│   └── 03_Branders_Skills/
+│   ├── 03_Reports/
+│   ├── 04_Side Project/
+│   ├── 05_OS_Health_Test.py
+│   ├── 06_OS_Deep_Audit.py
+│   └── Kit_Diseño_Top.md
 ├── 03_Resultado/                 ✅ Outputs de proyectos
 │   └── 09_World_OIM/
 ├── .agent/                      ✅ BACKUP ESTRATÉGICO
@@ -100,30 +102,30 @@ Think_Different/                           # RAÍZ
 
 ## 🛠️ Componentes Principales
 
-### Skills System (v4.5 — 12 Áreas Funcionales)
+### Skills System (v4.7 — 12 Áreas Funcionales)
 
 | Área                                                         | Items                      | Descripción                                                   |
 |-------------------------------------------------------------|---------------------------|--------------------------------------------------------------|
 | **00_Compound_Engineering**                                  | 63                         | Core CE — SDD + Compound Engineering                          |
-| **00_Personal_Os_Stack**                                    | 1                          | Stack base OS + Gcierr                                        |
-| **00_Skill_Auditor**                                        | 1                          | Auditoría de skills                                           |
+| **00_System_Core**                                          | 1                          | Stack base del OS                                             |
 | **01_Creacion_Contenidos**                                  | 40                         | Brand, YouTube, SEO, Carruseles                               |
 | **02_Diseno_Ui_Ux**                                         | 29                         | Product Design, UI/UX, Taste, Minimal                          |
-| **03_Video_Media**                                         | 7                          | Video Intel, James Cameron                                     |
+| **03_Video_Media**                                         | 7                          | Video Intel, James Cameron, Remotion                          |
 | **04_Automatizacion**                                      | 37                         | N8N, Firecrawl, GWS Client                                    |
 | **05_Workflows**                                           | 37                         | Agent Teams, PM, Orchestrator                                 |
-| **06_Tools**                                                | 111                        | Skill Creator, Testing, DevOps, Data                           |
+| **06_Tools**                                                | 112                        | Skill Creator, Testing, DevOps, Data                           |
 | **07_Personal_Os**                                         | 32                         | Life OS, Hillary, Rituales                                    |
 | **08_Invictus_Web**                                         | 15                         | Playwright, Superpowers, Browser Auto                          |
 | **09_Claude_Ads**                                           | 20                         | Claude Ads & Promoted Content                                 |
-| **TOTAL**                                                   | **393**                    | Total real indexado en disco                                  |
+| **10_Skill_Auditor**                                       | 1                          | Auditoría de skills                                           |
+| **TOTAL**                                                   | **394**                    | Total real indexado en disco                                  |
 
-> ⚠️ Skills están en carpetas de área + subcarpetas. Total real: 393 skills
+> ⚠️ Skills están en carpetas de área + subcarpetas. Total real: 394 skills
 > Índice completo: `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
 
 ---
 
-### HUBs v4.5 (28 HUBs documentados + 152 scripts)
+### HUBs v4.7 (19 HUBs + 284 scripts)
 
 | Hub                                          | Script                                          | Propósito                                             |
 |---------------------------------------------|------------------------------------------------|------------------------------------------------------|
@@ -162,13 +164,14 @@ Think_Different/                           # RAÍZ
 
 ---
 
-### Agentes (82 total)
+### Agentes (46 total)
 
 | Categoría                                   | Cantidad                      | Ubicación                                                                   |
 |--------------------------------------------|------------------------------|----------------------------------------------------------------------------|
 | Dream Team                                  | 5                             | `01_Core/02_Tools/01_Agents/01_Dream_Team/`                                 |
-| Specialists Compound                        | 24+                           | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                       |
-| Individuales                                | 53+                           | Raíz `01_Core/02_Tools/01_Agents/` (incluye subdirectorios)                |
+| Specialists Compound                        | 23                            | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                       |
+| Individuales                                | 13                            | Raíz `01_Core/02_Tools/01_Agents/`                                          |
+| Growth                                      | 5                             | `01_Core/02_Tools/01_Agents/03_Growth/`                                     |
 
 ---
 
@@ -274,6 +277,6 @@ CC BY-NC-SA 4.0 - Uso no comercial permitido.
 
 ---
 
-_Think Different PersonalOS v4.7 Consequences — Production Ready ✅ — 2026-05-20_
+_Think Different PersonalOS v4.7 Consequences — Production Ready ✅ — 2026-05-24_
 
-*Estructura completa: ver `STRUCTURE_v4.5.md`*
+*Estructura completa: ver `Structure_v4.7.md`*

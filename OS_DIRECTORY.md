@@ -9,8 +9,8 @@
 | Componente                            | Total                                                               | Estado                                         |
 |--------------------------------------|--------------------------------------------------------------------|-----------------------------------------------|
 | MCPs Claude Code                      | **36**                                                              | ✅ SYNCED — drift 0                             |
-| Every CE                              | v2.55.0 (local repo) ✅                                              | ✅ ACTIVE — Local version                       |
-| gentle-ai                             | v1.26.6                                                             | ✅ AVAILABLE                                    |
+| Every CE                              | v3.8.4 (local repo) ✅                                              | ✅ ACTIVE — Local version                       |
+| gentle-ai                             | v1.30.6                                                             | ✅ AVAILABLE                                    |
 | Skills                                | **394** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
 | Agentes                               | **46** (5 Dream + 23 Specialists + 13 individuales + 5 Growth)    | ✅ SYNCED — 46↔46 drift 0                       |
 | HUBs                                  | **19** scripts HUB (`*_Hub.py`) + 12 support scripts                | ✅ VERIFIED                                     |
@@ -70,7 +70,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 
 ---
 
-## 🗂️ ESTRUCTURA COMPLETA v4.5
+## 🗂️ ESTRUCTURA COMPLETA v4.7
 
 ```
 Think_Different/                         # RAÍZ
@@ -118,7 +118,7 @@ Think_Different/                         # RAÍZ
 │       ├── GOVERNANCE.md
 │       ├── README.md
 │       └── RUNBOOK.md
-├── 02_Playground/                ✅ Zona de pruebas (11 folders: Momentum, Hillary, Focus, etc.)
+├── 02_Playground/                ✅ Zona de pruebas (4 carpetas + 4 scripts)
 ├── 03_Resultado/                 ✅ Outputs de proyectos (OIM, Portfolio, Exercises)
 ├── .agent/                       ✅ Backup estratégico
 │   ├── 00_Rules/
@@ -130,7 +130,7 @@ Think_Different/                         # RAÍZ
 ├── .atl/                         ✅ SDD Registry + openspec/
 ├── .claude/                      ✅ Config Claude Code + rules
 ├── .opencode/                    ✅ Config OpenCode + skills locales
-├── .mcp.json                     ✅ 35 MCPs activos (Claude Code)
+├── .mcp.json                     ✅ 36 MCPs activos (Claude Code)
 ├── OS_DIRECTORY.md               ✅ Este archivo — JARVIS discovery
 ├── AGENTS.md                     ✅ GGA Pre-Commit entry
 ├── CLAUDE.md                     ✅ Config IAs (FUENTE)
@@ -144,8 +144,8 @@ Think_Different/                         # RAÍZ
 | Área                   | Items  | Descripción                          |
 |-----------------------|-------|-------------------------------------|
 | 00_Compound_Engineering| 63     | Core CE — SDD + Compound Engineering |
-| 00_Personal_Os_Stack   | 1      | Stack base OS + Gcierr               |
-| 00_Skill_Auditor       | 1      | Auditoría de skills                  |
+| 00_System_Core          | 1      | Stack base OS + Gcierr               |
+| 10_Skill_Auditor       | 1      | Auditoría de skills                  |
 | 01_Creacion_Contenidos | 40     | Brand, YouTube, SEO, Carruseles      |
 | 02_Diseno_Ui_Ux        | 29     | Product Design, UI/UX, Taste, Minimal|
 | 03_Video_Media         | 7      | Video Intel, James Cameron           |
@@ -161,7 +161,7 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## 📊 MCPs — 35 SERVIDORES ACTIVOS (Claude Code)
+## 📊 MCPs — 36 SERVIDORES ACTIVOS (Claude Code)
 
 | Categoría          | Servidores                                                             |
 |-------------------|-----------------------------------------------------------------------|
@@ -180,19 +180,18 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## ⚡ AGENTES — 75 ARCHIVOS (43 en 01_Agents/ + 32 SDD/CE en opencode.json → 82 total sistema)
+## ⚡ AGENTES — 46 configuraciones activas
 
 | Categoría                 | Cantidad  | Ubicación                                                              |
 |--------------------------|----------|-----------------------------------------------------------------------|
 | **Dream Team**            | 5         | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform)          |
 | **Specialists Compound**  | 23        | `02_Specialists_Compound/`                                             |
-| **Individuales**          | 15        | Raíz `01_Agents/` (Orchestrator, AIPM_Judge, LFG, etc.)                |
-| **Subcarpetas**           | 32        | Subdirectorios de `01_Agents/` (+ SDD + CE configurados en opencode.json) |
-| **TOTAL SISTEMA**         | **82**    | 75 .md files + SDD/CE agents en opencode.json                          |
+| **Individuales**          | 13        | Raíz `01_Agents/` (Orchestrator, AIPM_Judge, LFG, etc.)                |
+| **Growth**                | 5         | `03_Growth/`                                                           |
 
 ---
 
-## 🎯 HUBs — 28 HUBs DOCUMENTADOS + 152 SCRIPTS
+## 🎯 HUBs — 19 HUBs + 284 SCRIPTS
 
 ### Scripts Python en raíz de 03_Scripts_Os/ (principales)
 
@@ -309,4 +308,4 @@ Al iniciar sesión O al recibir cualquier instrucción, ejecutar `.agent/03_Work
 
 ---
 
-*Actualizado: 2026-05-23 | PersonalOS v4.7 | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 394 skills | 46 agents | 36 MCPs | 36 CE skills registered*
+*Actualizado: 2026-05-23 | PersonalOS v4.7 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 394 skills | 46 agents | 36 MCPs | 36 CE skills registered*

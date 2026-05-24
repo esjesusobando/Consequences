@@ -325,28 +325,4 @@ def get_skill_script(script_name):
                     if script_path.exists():
                         return script_path
 
-    # Fallback: búsqueda semántica via Pattern Intelligence Engine
-    # Solo activa si MAP + legacy + skills fallaron
-    try:
-        from pathlib import Path as PathClass
-        from pattern_engine.api import find_similar_scripts
-
-        query = script_name.replace(".py", "").replace("_", " ").replace("-", " ")
-        similar = find_similar_scripts(
-            query=query,
-            top_k=3,
-            threshold=0.60  # Más permisivo para fallback
-        )
-        if similar:
-            best_path, score, reason = similar[0]
-            # Solo retornar si el archivo existe y es alcanzable
-            if best_path.exists():
-                return best_path
-    except ImportError:
-        # Pattern Engine no está instalado, ignorar
-        pass
-    except Exception:
-        # Cualquier error en Pattern Engine, continuar con None
-        pass
-
     return None

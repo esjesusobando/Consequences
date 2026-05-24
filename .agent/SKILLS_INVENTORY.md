@@ -16,8 +16,8 @@
 | `00_Compound_Engineering` | 63 | Compound Engineering: skills de agentes, CE workflow, herramientas |
 | `00_Engram` | 19 | Engram persistent memory system |
 | `00_Invictus_Backup` | 78 | Backup de skills Invictus |
-| `00_Personal_Os_Stack` | 1 | Stack de configuración del OS |
-| `00_Skill_Auditor` | 1 | Auditoría de skills |
+| `00_System_Core` | 1 | Stack de configuración del OS |
+| `10_Skill_Auditor` | 1 | Auditoría de skills |
 
 ### 01-09 — Áreas Canónicas (sincronizadas desde source)
 

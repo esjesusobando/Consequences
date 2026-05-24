@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-01_OS_Runtime_Test.py — PersonalOS v4.1 SOTA
+01_OS_Runtime_Test.py — PersonalOS v4.7 Consequences
 
 Test suite que valida EJECUCIÓN REAL de los componentes del OS,
 complementando el 00_OS_Health_Test.py (que solo valida estructura).
@@ -314,7 +314,7 @@ TESTS = [
 
 def main():
     print("\n" + "=" * 60)
-    print("  OS RUNTIME TEST — PersonalOS v4.1 SOTA")
+    print("  OS RUNTIME TEST — PersonalOS v4.7 Consequences")
     print("  20 tests de ejecución real")
     print("=" * 60 + "\n")
 

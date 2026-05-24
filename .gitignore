@@ -39,7 +39,7 @@ __pycache__/
 venv/
 .venv/
 env/
-.env
+.env*
 *.egg-info/
 dist/
 build/

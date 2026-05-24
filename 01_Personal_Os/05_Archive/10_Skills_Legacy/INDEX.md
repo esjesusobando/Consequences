@@ -47,7 +47,7 @@ fork-terminal, parallel-orchestration, 02_Agent_Orchestrator, 03_System_Guardian
 Listado completo en `10_Backup/SKILLS_UNICAS.md`
 
 ### Otros directorios con skills únicos
-- `05_Vibe_Coding`: 4 únicos
+- `04_Vibe_Coding`: 4 únicos
 - `12_N8N`: 7 únicos
 - `13_System_Master`: 1 único
 - `15_Skill_Creator_Oficial`: 1 único

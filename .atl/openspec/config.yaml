@@ -107,5 +107,6 @@ known_issues:
       - .atl/openspec/config.yaml (skill_sources.project_level)
       - .atl/skill-registry.md (note about project-level skills)
       - .atl/README.md (Fuentes de Verdad section)
-    status: open
+    status: fixed
+    fixed_date: "2026-05-24"
     recommendation: All three .atl/ config files updated as of 2026-05-23. Registry auto-generator may need its source path updated to match.

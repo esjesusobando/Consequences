@@ -1,8 +1,8 @@
-# INDEX ÁREAS FUNCIONALES — Skills v4.0 Consequences
+# INDEX ÁREAS FUNCIONALES — Skills v4.7 Consequences
 
 > Índice navegable de todas las skills organizadas por área funcional.
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
-> **Actualizado:** 2026-05-10 (v4.0 Consequences — Production Ready)
+> **Actualizado:** 2026-05-24 (v4.7 Consequences — Production Ready)
 
 ---
 
@@ -11,8 +11,8 @@
 | Skill                                       | Path                                          | Descripción                                                  |
 |--------------------------------------------|----------------------------------------------|-------------------------------------------------------------|
 | **Compound Engineering**                    | `00_Compound_Engineering/`                    | CE Spider, Avengers, metodología completa                    |
-| **Personal OS Stack**                       | `00_Personal_Os_Stack/`                       | Stack base del OS, System Guardian                           |
-| **Skill Auditor**                           | `00_Skill_Auditor/`                           | Auditoría y validación de skills                             |
+| **Personal OS Stack**                       | `00_System_Core/`                              | Stack base del OS, System Guardian                           |
+| **Skill Auditor**                           | `10_Skill_Auditor/`                           | Auditoría y validación de skills                             |
 
 ---
 
@@ -125,4 +125,4 @@
 
 > ℹ️ **Legacy Archive** → movido a `01_Personal_Os/05_Archive/09_Legacy_Skills_Archive/` (no es área activa de skills)
 
-*PersonalOS v4.0 Consequences — 2026-05-10 | 11 áreas activas | Skills count: 300+*
+*PersonalOS v4.7 Consequences — 2026-05-24 | 12 áreas activas | Skills count: 394*
