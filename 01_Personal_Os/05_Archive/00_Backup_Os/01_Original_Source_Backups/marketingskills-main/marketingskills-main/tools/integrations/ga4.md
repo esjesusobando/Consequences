@@ -4,12 +4,12 @@ Web analytics platform for tracking user behavior, conversions, and marketing pe
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | Data API for reports, Admin API for configuration |
-| MCP | ✓ | Available via Google Analytics MCP server |
-| CLI | - | Use gcloud for some operations |
-| SDK | ✓ | gtag.js, Google Analytics SDK for mobile |
+| Integration  | Available  | Notes                                            |
+|-------------|-----------|-------------------------------------------------|
+| API          | ✓          | Data API for reports, Admin API for configuration|
+| MCP          | ✓          | Available via Google Analytics MCP server        |
+| CLI          |-----------| Use gcloud for some operations                   |
+| SDK          | ✓          | gtag.js, Google Analytics SDK for mobile         |
 
 ## Authentication
 

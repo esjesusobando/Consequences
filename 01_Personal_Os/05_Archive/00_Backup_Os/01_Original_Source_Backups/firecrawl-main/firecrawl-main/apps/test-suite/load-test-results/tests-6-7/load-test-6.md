@@ -22,12 +22,12 @@ The load test was conducted with a duration of 10 minutes and an arrival rate of
 ## Test environment
 ### Machines
 
-| Machine | Size/CPU | Status |
-|---|---|---|
-| 06e825d0da2387 mia (worker) | performance-cpu-1x@2048MB | always on |
-| 178134db566489 mia (worker) | performance-cpu-1x@2048MB | always on |
-| 73d8dd909c1189 mia (app) | performance-cpu-1x@2048MB | always on |
-| e286de4f711e86 mia (app) | performance-cpu-1x@2048MB | always on |
+| Machine                    | Size/CPU                 | Status   |
+|---------------------------|-------------------------|---------|
+| 06e825d0da2387 mia (worker)| performance-cpu-1x@2048MB| always on|
+| 178134db566489 mia (worker)| performance-cpu-1x@2048MB| always on|
+| 73d8dd909c1189 mia (app)   | performance-cpu-1x@2048MB| always on|
+| e286de4f711e86 mia (app)   | performance-cpu-1x@2048MB| always on|
 
 Other app machines with autoscaling shouldn't start during crawl tests.
 
@@ -47,29 +47,29 @@ Other app machines with autoscaling shouldn't start during crawl tests.
 ### Results
 Date: 16:00:06(-0300)
 
-| Metric                                      | Value   |
+| Metric                                       | Value    |
 |---------------------------------------------|---------|
-| http.codes.200                              | 200     |
-| http.downloaded_bytes                       | 0       |
-| http.request_rate                           | 10/sec  |
-| http.requests                               | 200     |
-| http.response_time.min                      | 687     |
-| http.response_time.max                      | 1416    |
-| http.response_time.mean                     | 838.1   |
-| http.response_time.median                   | 788.5   |
-| http.response_time.p95                      | 1085.9  |
-| http.response_time.p99                      | 1274.3  |
-| http.responses                              | 200     |
-| vusers.completed                            | 100     |
-| vusers.created                              | 100     |
-| vusers.created_by_name.Crawl a URL          | 100     |
-| vusers.failed                               | 0       |
-| vusers.session_length.min                   | 11647.5 |
-| vusers.session_length.max                   | 12310   |
-| vusers.session_length.mean                  | 11812.7 |
-| vusers.session_length.median                | 11734.2 |
-| vusers.session_length.p95                   | 11971.2 |
-| vusers.session_length.p99                   | 12213.1 |
+| http.codes.200                               | 200      |
+| http.downloaded_bytes                        | 0        |
+| http.request_rate                            | 10/sec   |
+| http.requests                                | 200      |
+| http.response_time.min                       | 687      |
+| http.response_time.max                       | 1416     |
+| http.response_time.mean                      | 838.1    |
+| http.response_time.median                    | 788.5    |
+| http.response_time.p95                       | 1085.9   |
+| http.response_time.p99                       | 1274.3   |
+| http.responses                               | 200      |
+| vusers.completed                             | 100      |
+| vusers.created                               | 100      |
+| vusers.created_by_name.Crawl a URL           | 100      |
+| vusers.failed                                | 0        |
+| vusers.session_length.min                    | 11647.5  |
+| vusers.session_length.max                    | 12310    |
+| vusers.session_length.mean                   | 11812.7  |
+| vusers.session_length.median                 | 11734.2  |
+| vusers.session_length.p95                    | 11971.2  |
+| vusers.session_length.p99                    | 12213.1  |
 
 ### Metrics
 

@@ -5,14 +5,14 @@ Completada resolución del plan PLAN_SEGUIR_2026-05-22.md cubriendo todas las fa
 
 ## Fases Completadas
 
-| Fase | Estado | Notas |
-|------|--------|-------|
-| A (Git) | ✅ | 4 commits pushados |
-| B (Dependencies) | ✅ | OBAND, OIM_Original, Macano - con warnings |
-| C (Submodules) | ✅ Report | 3 broken gitlinks identificados |
-| D (Legacy routes) | ✅ Report | 463 refs stale, sin acción |
-| E (Backlog 8 items) | ✅ | Marvel swap, Setup Guide, Reports, Pre-commit existe |
-| F (AI News) | ✅ | Reporte generado, calidad media |
+| Fase               | Estado  | Notas                                               |
+|-------------------|--------|----------------------------------------------------|
+| A (Git)            | ✅       | 4 commits pushados                                  |
+| B (Dependencies)   | ✅       | OBAND, OIM_Original, Macano - con warnings          |
+| C (Submodules)     | ✅ Report| 3 broken gitlinks identificados                     |
+| D (Legacy routes)  | ✅ Report| 463 refs stale, sin acción                          |
+| E (Backlog 8 items)| ✅       | Marvel swap, Setup Guide, Reports, Pre-commit existe|
+| F (AI News)        | ✅       | Reporte generado, calidad media                     |
 
 ## Hallazgos Críticos
 

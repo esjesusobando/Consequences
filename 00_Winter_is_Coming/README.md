@@ -25,7 +25,7 @@
 - **GGA Version**: v2.8.1 ✅
 - **Every CE**: v3.8.4 ✅
 - **gentle-ai**: v1.30.6 ✅
-- **Agentes activos**: 82 (75 .md + SDD/CE configurados)
+- **Agentes activos**: 46 (5 Dream + 23 Specialists + 13 Individual + 5 Growth)
 - **MCPs**: 36 servidores activos (Claude Code)
 - **Skills**: 394 SKILL.md (12 áreas funcionales)
 - **HUBs**: 19 HUBs + 284 scripts
@@ -39,10 +39,10 @@
 
 | Fecha                                     | Cambio                                                                                           |
 |------------------------------------------|-------------------------------------------------------------------------------------------------|
-| 2026-05-22                                | v4.7 Consequences — Auditoría Integral, 394 skills, subagent-statusline, git fixes                |
+| 2026-05-22                                | v4.7 Consequences — Auditoría Integral, 394 skills, subagent-statusline, git fixes               |
 | 2026-05-21                                | v4.7 — SOTA, 393 skills, scripts actualizados                                                    |
 | 2026-05-20                                | v4.6 — Stable, OS_DIRECTORY.md v4.5, 358 skills                                                  |
-| 2026-05-18                                | v4.5 — Iron Man Genesis, 393 skills, Auditoría reconcilidada                                      |
+| 2026-05-18                                | v4.5 — Iron Man Genesis, 393 skills, Auditoría reconcilidada                                     |
 | 2026-05-11                                | v4.1 — Boot Protocol, MCPs sync                                                                  |
 | 2026-05-10                                | v4.0 Consequences — Production Ready, Every CE v3.7.3, gentle-ai v1.26.6                         |
 

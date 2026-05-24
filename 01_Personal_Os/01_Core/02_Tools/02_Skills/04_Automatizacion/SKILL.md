@@ -14,18 +14,18 @@ description: >
 
 ## Sub-áreas y Contenido
 
-| Sub-área | Descripción |
-|----------|-------------|
-| `01_N8N_JS/` | Scripts N8N en JavaScript |
-| `02_N8N_Python/` | Scripts N8N en Python |
-| `03_N8N_Expressions/` | Expresiones N8N |
-| `04_N8N_MCP/` | MCP nodes para N8N |
-| `05_N8N_Nodes/` | Nodos personalizados |
-| `06_N8N_Validation/` | Validación en workflows |
-| `07_N8N_Workflows/` | Workflows completos |
-| `08_N8N_Invictus/` | N8N para Invictus |
-| `09_Firecrawl/` | Web scraping con Firecrawl |
-| `10_GWS_Client/` | Google Workspace Client |
+| Sub-área             | Descripción               |
+|---------------------|--------------------------|
+| `01_N8N_JS/`         | Scripts N8N en JavaScript |
+| `02_N8N_Python/`     | Scripts N8N en Python     |
+| `03_N8N_Expressions/`| Expresiones N8N           |
+| `04_N8N_MCP/`        | MCP nodes para N8N        |
+| `05_N8N_Nodes/`      | Nodos personalizados      |
+| `06_N8N_Validation/` | Validación en workflows   |
+| `07_N8N_Workflows/`  | Workflows completos       |
+| `08_N8N_Invictus/`   | N8N para Invictus         |
+| `09_Firecrawl/`      | Web scraping con Firecrawl|
+| `10_GWS_Client/`     | Google Workspace Client   |
 
 ## Integración
 

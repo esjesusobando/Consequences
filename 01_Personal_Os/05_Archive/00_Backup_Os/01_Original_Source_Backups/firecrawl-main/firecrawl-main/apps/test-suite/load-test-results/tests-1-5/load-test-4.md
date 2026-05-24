@@ -22,13 +22,13 @@ The load test was conducted with the Fly.io configuration set to a hard limit of
 ## Test environment
 ### Machines
 
-| Machine | Size/CPU | Status |
-|---|---|---|
-| e286de4f711e86 mia (app) | performance-cpu-1x@2048MB | always on |
-| 73d8dd909c1189 mia (app) | performance-cpu-1x@2048MB | always on |
-| 6e82050c726358 mia (app) | performance-cpu-1x@2048MB | paused |
-| 4d89505a6e5038 mia (app) | performance-cpu-1x@2048MB | paused |
-| 48ed6e6b74e378 mia (app) | performance-cpu-1x@2048MB | paused |
+| Machine                 | Size/CPU                 | Status   |
+|------------------------|-------------------------|---------|
+| e286de4f711e86 mia (app)| performance-cpu-1x@2048MB| always on|
+| 73d8dd909c1189 mia (app)| performance-cpu-1x@2048MB| always on|
+| 6e82050c726358 mia (app)| performance-cpu-1x@2048MB| paused   |
+| 4d89505a6e5038 mia (app)| performance-cpu-1x@2048MB| paused   |
+| 48ed6e6b74e378 mia (app)| performance-cpu-1x@2048MB| paused   |
 
 ---
 
@@ -59,30 +59,30 @@ arrivalRate: 10  # Cool down
 ### Results
 Date: 15:43:26(-0300)
 
-| Metric                                      | Value   |
+| Metric                                       | Value    |
 |---------------------------------------------|---------|
-| errors.ETIMEDOUT                            | 1329    |
-| http.codes.200                              | 7671    |
-| http.downloaded_bytes                       | 0       |
-| http.request_rate                           | 23/sec  |
-| http.requests                               | 9000    |
-| http.response_time.min                      | 999     |
-| http.response_time.max                      | 9935    |
-| http.response_time.mean                     | 3547.9  |
-| http.response_time.median                   | 2836.2  |
-| http.response_time.p95                      | 8352    |
-| http.response_time.p99                      | 9607.1  |
-| http.responses                              | 7671    |
-| vusers.completed                            | 7671    |
-| vusers.created                              | 9000    |
-| vusers.created_by_name.Scrape a URL         | 9000    |
-| vusers.failed                               | 1329    |
-| vusers.session_length.min                   | 1063.4  |
-| vusers.session_length.max                   | 10006.8 |
-| vusers.session_length.mean                  | 3616    |
-| vusers.session_length.median                | 2893.5  |
-| vusers.session_length.p95                   | 8352    |
-| vusers.session_length.p99                   | 9607.1  |
+| errors.ETIMEDOUT                             | 1329     |
+| http.codes.200                               | 7671     |
+| http.downloaded_bytes                        | 0        |
+| http.request_rate                            | 23/sec   |
+| http.requests                                | 9000     |
+| http.response_time.min                       | 999      |
+| http.response_time.max                       | 9935     |
+| http.response_time.mean                      | 3547.9   |
+| http.response_time.median                    | 2836.2   |
+| http.response_time.p95                       | 8352     |
+| http.response_time.p99                       | 9607.1   |
+| http.responses                               | 7671     |
+| vusers.completed                             | 7671     |
+| vusers.created                               | 9000     |
+| vusers.created_by_name.Scrape a URL          | 9000     |
+| vusers.failed                                | 1329     |
+| vusers.session_length.min                    | 1063.4   |
+| vusers.session_length.max                    | 10006.8  |
+| vusers.session_length.mean                   | 3616     |
+| vusers.session_length.median                 | 2893.5   |
+| vusers.session_length.p95                    | 8352     |
+| vusers.session_length.p99                    | 9607.1   |
 
 ## Metrics
 

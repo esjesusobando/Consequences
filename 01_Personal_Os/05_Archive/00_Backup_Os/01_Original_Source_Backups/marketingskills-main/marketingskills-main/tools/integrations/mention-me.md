@@ -4,12 +4,12 @@ Enterprise referral marketing platform for customer advocacy.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | REST API for referrals, customers, rewards |
-| MCP | - | Not available |
-| CLI | - | Not available |
-| SDK | - | JavaScript widget for embedding |
+| Integration  | Available  | Notes                                     |
+|-------------|-----------|------------------------------------------|
+| API          | ✓          | REST API for referrals, customers, rewards|
+| MCP          |-----------| Not available                             |
+| CLI          |-----------| Not available                             |
+| SDK          |-----------| JavaScript widget for embedding           |
 
 ## Authentication
 
@@ -116,12 +116,12 @@ MentionMe.push({
 
 ## Webhook Events
 
-| Event | When |
-|-------|------|
-| `referral.created` | New referral tracked |
-| `referral.converted` | Referral completed purchase |
-| `reward.earned` | Reward unlocked |
-| `reward.redeemed` | Reward used |
+| Event               | When                       |
+|--------------------|---------------------------|
+| `referral.created`  | New referral tracked       |
+| `referral.converted`| Referral completed purchase|
+| `reward.earned`     | Reward unlocked            |
+| `reward.redeemed`   | Reward used                |
 
 ## Key Features
 

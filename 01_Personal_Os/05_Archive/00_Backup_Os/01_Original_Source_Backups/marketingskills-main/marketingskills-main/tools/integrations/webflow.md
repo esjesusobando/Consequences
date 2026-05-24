@@ -4,12 +4,12 @@ Visual web design and CMS platform for marketing sites.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | REST API for sites, CMS, forms |
-| MCP | - | Not available |
-| CLI | ✓ | Webflow CLI for devlink and apps |
-| SDK | ✓ | Official SDK for Node.js |
+| Integration  | Available  | Notes                           |
+|-------------|-----------|--------------------------------|
+| API          | ✓          | REST API for sites, CMS, forms  |
+| MCP          |-----------| Not available                   |
+| CLI          | ✓          | Webflow CLI for devlink and apps|
+| SDK          | ✓          | Official SDK for Node.js        |
 
 ## Authentication
 

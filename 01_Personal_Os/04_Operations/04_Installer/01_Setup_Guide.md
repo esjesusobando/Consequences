@@ -6,12 +6,12 @@
 
 Before running the installer, ensure the following are installed on your system:
 
-| Tool | Version | Installation |
-|------|---------|--------------|
-| Python | 3.10+ | [python.org](https://python.org) |
-| Git | any recent | [git-scm.com](https://git-scm.com) |
-| Node.js | recommended | [nodejs.org](https://nodejs.org) |
-| uv | optional (faster installs) | `pip install uv` |
+| Tool   | Version                   | Installation                      |
+|-------|--------------------------|----------------------------------|
+| Python | 3.10+                     | [python.org](https://python.org)  |
+| Git    | any recent                | [git-scm.com](https://git-scm.com)|
+| Node.js| recommended               | [nodejs.org](https://nodejs.org)  |
+| uv     | optional (faster installs)| `pip install uv`                  |
 
 ---
 
@@ -95,22 +95,22 @@ The installer configures MCP servers automatically via `.mcp.template.json`. Thi
 
 ### Placeholders Replaced During Installation
 
-| Placeholder | Config Key | Description |
-|-------------|------------|-------------|
-| `{{USER_DOWNLOADS}}` | `paths.downloads` | Downloads folder |
-| `{{USER_OBSIDIAN}}` | `paths.obsidian_vault` | Obsidian vault path |
-| `{{USER_EXCALIDRAW}}` | `paths.excalidraw` | Excalidraw diagrams folder |
+| Placeholder          | Config Key            | Description               |
+|---------------------|----------------------|--------------------------|
+| `{{USER_DOWNLOADS}}` | `paths.downloads`     | Downloads folder          |
+| `{{USER_OBSIDIAN}}`  | `paths.obsidian_vault`| Obsidian vault path       |
+| `{{USER_EXCALIDRAW}}`| `paths.excalidraw`    | Excalidraw diagrams folder|
 
 ### API Keys
 
 The template expects these API keys (configured interactively or in `config.json`):
 
-| Service | Key Name | Format |
-|---------|----------|--------|
-| Context7 | `CONTEXT7_API_KEY` | Starts with `ctx7sk-` |
-| Exa | `EXA_API_KEY` | 10+ characters |
-| GitHub | `github_pat_*` | Starts with `github_pat_` |
-| Notion | `NOTION_TOKEN` | Starts with `ntn_` |
+| Service  | Key Name          | Format                   |
+|---------|------------------|-------------------------|
+| Context7 | `CONTEXT7_API_KEY`| Starts with `ctx7sk-`    |
+| Exa      | `EXA_API_KEY`     | 10+ characters           |
+| GitHub   | `github_pat_*`    | Starts with `github_pat_`|
+| Notion   | `NOTION_TOKEN`    | Starts with `ntn_`       |
 
 ### MCP Servers Configured
 
@@ -185,13 +185,13 @@ python 01_Personal_Os/04_Operations/13_Validate_Stack.py
 
 ### Manual Verification Checks
 
-| Check | Command/Path |
-|-------|--------------|
-| Structure | Verify directories exist: `00_Core/`, `01_Brain/`, `04_Operations/`, `05_System/` |
-| .mcp.json | Check placeholders are replaced |
-| .machine_id | File exists at `05_System/04_Env/.machine_id` |
-| Settings | `.claude/settings.local.json` contains hooks configuration |
-| Dependencies | Run `pip list` or `uv pip list` to verify packages |
+| Check       | Command/Path                                                                     |
+|------------|---------------------------------------------------------------------------------|
+| Structure   | Verify directories exist: `00_Core/`, `01_Brain/`, `04_Operations/`, `05_System/`|
+| .mcp.json   | Check placeholders are replaced                                                  |
+| .machine_id | File exists at `05_System/04_Env/.machine_id`                                    |
+| Settings    | `.claude/settings.local.json` contains hooks configuration                       |
+| Dependencies| Run `pip list` or `uv pip list` to verify packages                               |
 
 ### Test Commands
 
@@ -212,11 +212,11 @@ npx --version
 
 After installation, these aliases are available:
 
-| Alias | Command |
-|-------|---------|
-| `gr` | System Guardian (dry-run mode) |
-| `gra` | System Guardian (with fixes) |
-| `gr-agents` | System Guardian (agents mode) |
+| Alias      | Command                       |
+|-----------|------------------------------|
+| `gr`       | System Guardian (dry-run mode)|
+| `gra`      | System Guardian (with fixes)  |
+| `gr-agents`| System Guardian (agents mode) |
 
 Aliases are added to your shell config:
 - Bash: `~/.bashrc`

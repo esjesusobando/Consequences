@@ -6,20 +6,20 @@
 
 ## 🚨 ESTADO DEL SISTEMA
 
-| Componente                            | Total                                                               | Estado                                         |
-|--------------------------------------|--------------------------------------------------------------------|-----------------------------------------------|
-| MCPs Claude Code                      | **36**                                                              | ✅ SYNCED — drift 0                             |
-| Every CE                              | v3.8.4 (local repo) ✅                                              | ✅ ACTIVE — Local version                       |
-| gentle-ai                             | v1.30.6                                                             | ✅ AVAILABLE                                    |
-| Skills                                | **394** (12 áreas funcionales)                                      | ✅ VERIFIED — 0 sin frontmatter                 |
-| Agentes                               | **46** (5 Dream + 23 Specialists + 13 individuales + 5 Growth)    | ✅ SYNCED — 46↔46 drift 0                       |
-| HUBs                                  | **19** scripts HUB (`*_Hub.py`) + 12 support scripts                | ✅ VERIFIED                                     |
-| Scripts totales                       | **284** (recursivo en 03_Scripts_Os/)                                | ✅ DOCUMENTED                                   |
-| Workflows                             | **30** (7 categorías en 00_Workflows_Os)                            | ✅ ACTIVE                                       |
-| Hooks                                 | **10** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk) | ✅ ACTIVE                                       |
-| Rules                                 | **12 (.mdc)** en 01_Rules                                           | ✅ DEFINED                                      |
-| JARVIS Manifests                      | 7 en 00_Manifest/                                                   | ✅ VALIDATED                                    |
-| Open Design                           | 62 skills + 138 design systems                                      | ✅ INTEGRATED                                   |
+| Componente                            | Total                                                                      | Estado                                         |
+|--------------------------------------|---------------------------------------------------------------------------|-----------------------------------------------|
+| MCPs Claude Code                      | **36**                                                                     | ✅ SYNCED — drift 0                             |
+| Every CE                              | v3.8.4 (local repo) ✅                                                      | ✅ ACTIVE — Local version                       |
+| gentle-ai                             | v1.30.6                                                                    | ✅ AVAILABLE                                    |
+| Skills                                | **394** (12 áreas funcionales)                                             | ✅ VERIFIED — 0 sin frontmatter                 |
+| Agentes                               | **46** (5 Dream + 23 Specialists + 13 individuales + 5 Growth)             | ✅ SYNCED — 46↔46 drift 0                       |
+| HUBs                                  | **19** scripts HUB (`*_Hub.py`) + 12 support scripts                       | ✅ VERIFIED                                     |
+| Scripts totales                       | **284** (recursivo en 03_Scripts_Os/)                                      | ✅ DOCUMENTED                                   |
+| Workflows                             | **30** (7 categorías en 00_Workflows_Os)                                   | ✅ ACTIVE                                       |
+| Hooks                                 | **10** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk)| ✅ ACTIVE                                       |
+| Rules                                 | **12 (.mdc)** en 01_Rules                                                  | ✅ DEFINED                                      |
+| JARVIS Manifests                      | 7 en 00_Manifest/                                                          | ✅ VALIDATED                                    |
+| Open Design                           | 62 skills + 138 design systems                                             | ✅ INTEGRATED                                   |
 
 > **🟢 ÚLTIMA AUDITORÍA:** 2026-05-22 — v4.7 Consequences
 > Agent Sync: 46↔46 drift 0. Skills: 394 (SKILL.md). MCPs: 36/36 sync.
@@ -144,7 +144,7 @@ Think_Different/                         # RAÍZ
 | Área                   | Items  | Descripción                          |
 |-----------------------|-------|-------------------------------------|
 | 00_Compound_Engineering| 63     | Core CE — SDD + Compound Engineering |
-| 00_System_Core          | 1      | Stack base OS + Gcierr               |
+| 00_System_Core         | 1      | Stack base OS + Gcierr               |
 | 10_Skill_Auditor       | 1      | Auditoría de skills                  |
 | 01_Creacion_Contenidos | 40     | Brand, YouTube, SEO, Carruseles      |
 | 02_Diseno_Ui_Ux        | 29     | Product Design, UI/UX, Taste, Minimal|
@@ -288,15 +288,15 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ## 📁 WORKFLOWS — 7 CATEGORÍAS (29+ workflows)
 
-| Categoría                    | Path                            | Workflows                            |
-|-----------------------------|--------------------------------|-------------------------------------|
-| YouTube Full Video           | `__Youtube_Full_Video/`         | Video production pipeline            |
-| Learning Always              | `00_Learning_Always/`           | Continuous learning                  |
-| Personal OS                  | `01_Personal_Os/`               | Morning, Backlog, Content, Weekly    |
-| Marvel                       | `02_Marvel/`                    | **Iron Man Genesis** (boot), Spider, Thor, Hulk |
-| Gentleman                    | `03_Gentleman/`                 | Gentleman standards                  |
-| Hillary                      | `04_Hillary/`                   | Hillary Life OS                      |
-| Compound Engineering         | `05_Compound_Engineering/`      | CE workflows                         |
+| Categoría                    | Path                            | Workflows                                      |
+|-----------------------------|--------------------------------|-----------------------------------------------|
+| YouTube Full Video           | `__Youtube_Full_Video/`         | Video production pipeline                      |
+| Learning Always              | `00_Learning_Always/`           | Continuous learning                            |
+| Personal OS                  | `01_Personal_Os/`               | Morning, Backlog, Content, Weekly              |
+| Marvel                       | `02_Marvel/`                    | **Iron Man Genesis** (boot), Spider, Thor, Hulk|
+| Gentleman                    | `03_Gentleman/`                 | Gentleman standards                            |
+| Hillary                      | `04_Hillary/`                   | Hillary Life OS                                |
+| Compound Engineering         | `05_Compound_Engineering/`      | CE workflows                                   |
 
 ---
 

@@ -93,7 +93,7 @@ class AnalyticsFactory:
 
     def generate_narrative(self, graph_id, data_summary):
         """
-        Motor de interpretación v4.2: Traduce gráficos a valor de negocio según el dominio.
+        Motor de interpretación v4.7: Traduce gráficos a valor de negocio según el dominio.
         """
         domain = data_summary.get('domain', 'General')
         intensity = data_summary.get('primary_intensity', 'variable')
@@ -183,7 +183,7 @@ class AnalyticsFactory:
             self._write_footer(f, deep)
 
         print(f"✨ Reporte Maestro v4.7 (Value First) generado en: {report_path}")
-        print(f"✨ Reporte Estratégico v4.3 (Premium Strategy) generado en: {report_path}")
+        print(f"✨ Reporte Estratégico v4.7 (Premium Strategy) generado en: {report_path}")
 
     def _write_header(self, f, deep):
         f.write(f"# 🚀 Strategic Value Report: {self.domain} Intelligence\n")

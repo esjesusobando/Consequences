@@ -47,7 +47,7 @@
 | 34                         | `34_Skill_Auditor.py`                                | 10_Skill_Auditor                                  |
 | 39                         | `39_Repair_Corruption.py`                            | 13_System_Master                                  |
 | 50                         | `50_System_Health_Monitor.py`                        | 08_Personal_Os                                    |
-| 53                         | `53_Structure_Auditor.py`                            | 00_System_Core                              |
+| 53                         | `53_Structure_Auditor.py`                            | 00_System_Core                                    |
 | 57                         | `57_Repo_Sync_Auditor.py`                            | 07_DevOps                                         |
 | 62                         | `62_Tool_Shed.py`                                    | 07_DevOps                                         |
 | 06                         | `06_AntMan_Lfg_Lite.py`                              | 00_Compound_Engineering                           |

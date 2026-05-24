@@ -85,26 +85,26 @@ Detailed formulas and templates for writing high-converting ad copy.
 
 ### For Search Ads
 
-| Formula | Example |
-|---------|---------|
-| [Keyword] + [Benefit] | "Project Management That Teams Actually Use" |
-| [Action] + [Outcome] | "Automate Reports \| Save 10 Hours Weekly" |
-| [Question] | "Tired of Manual Data Entry?" |
-| [Number] + [Benefit] | "500+ Teams Trust [Product] for [Outcome]" |
-| [Keyword] + [Differentiator] | "CRM Built for Small Teams" |
-| [Price/Offer] + [Keyword] | "Free Project Management \| No Credit Card" |
+| Formula                     | Example                                     |
+|----------------------------|--------------------------------------------|
+| [Keyword] + [Benefit]       | "Project Management That Teams Actually Use"|
+| [Action] + [Outcome]        | "Automate Reports \                         | Save 10 Hours Weekly"|
+| [Question]                  | "Tired of Manual Data Entry?"               |
+| [Number] + [Benefit]        | "500+ Teams Trust [Product] for [Outcome]"  |
+| [Keyword] + [Differentiator]| "CRM Built for Small Teams"                 |
+| [Price/Offer] + [Keyword]   | "Free Project Management \                  | No Credit Card"      |
 
 ### For Social Ads
 
-| Type | Example |
-|------|---------|
-| Outcome hook | "How we 3x'd our conversion rate" |
-| Curiosity hook | "The reporting hack no one talks about" |
-| Contrarian hook | "Why we stopped using [common tool]" |
-| Specificity hook | "The exact template we use for..." |
-| Question hook | "What if you could cut your admin time in half?" |
-| Number hook | "7 ways to improve your workflow today" |
-| Story hook | "We almost gave up. Then we found..." |
+| Type            | Example                                         |
+|----------------|------------------------------------------------|
+| Outcome hook    | "How we 3x'd our conversion rate"               |
+| Curiosity hook  | "The reporting hack no one talks about"         |
+| Contrarian hook | "Why we stopped using [common tool]"            |
+| Specificity hook| "The exact template we use for..."              |
+| Question hook   | "What if you could cut your admin time in half?"|
+| Number hook     | "7 ways to improve your workflow today"         |
+| Story hook      | "We almost gave up. Then we found..."           |
 
 ---
 

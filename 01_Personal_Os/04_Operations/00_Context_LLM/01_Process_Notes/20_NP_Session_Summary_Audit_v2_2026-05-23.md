@@ -44,13 +44,13 @@
 
 ## Key Numbers After Audit
 
-| Metric | Before | After |
-|--------|--------|-------|
-| Agents (core) | 82 | 46 |
-| Skills | 393 | 394 |
-| Workflows | 29 | 30 |
-| Scripts | 152 | 284 |
-| Backups archived | — | 3 |
+| Metric          | Before  | After  |
+|----------------|--------|-------|
+| Agents (core)   | 82      | 46     |
+| Skills          | 393     | 394    |
+| Workflows       | 29      | 30     |
+| Scripts         | 152     | 284    |
+| Backups archived| —       | 3      |
 
 ## Pending
 - [x] Fix GGA export default in notify.ts

@@ -21,10 +21,10 @@ The load test encountered significant issues, processing 9000 requests with 5473
 ## Test environment
 ### Machines
 
-| Machine | Size/CPU |
-|---|---|
-| e286de4f711e86 mia (app) | performance-cpu-1x@2048MB |
-| 73d8dd909c1189 mia (app) | performance-cpu-1x@2048MB |
+| Machine                 | Size/CPU                 |
+|------------------------|-------------------------|
+| e286de4f711e86 mia (app)| performance-cpu-1x@2048MB|
+| 73d8dd909c1189 mia (app)| performance-cpu-1x@2048MB|
 
 ---
 
@@ -47,33 +47,33 @@ The load test encountered significant issues, processing 9000 requests with 5473
 ### Archillery Report
 Date: 13:50:08(-0300)
 
-| Metric                                      | Value   |
+| Metric                                       | Value    |
 |---------------------------------------------|---------|
-| errors.ETIMEDOUT                            | 5473    |
-| errors.Failed capture or match              | 73      |
-| http.codes.200                              | 3454    |
-| http.codes.401                              | 64      |
-| http.codes.402                              | 9       |
-| http.downloaded_bytes                       | 0       |
-| http.request_rate                           | 21/sec  |
-| http.requests                               | 9000    |
-| http.response_time.min                      | 929     |
-| http.response_time.max                      | 9919    |
-| http.response_time.mean                     | 3682.1  |
-| http.response_time.median                   | 3395.5  |
-| http.response_time.p95                      | 8024.5  |
-| http.response_time.p99                      | 9607.1  |
-| http.responses                              | 3527    |
-| vusers.completed                            | 3454    |
-| vusers.created                              | 9000    |
-| vusers.created_by_name.Scrape a URL         | 9000    |
-| vusers.failed                               | 5546    |
-| vusers.session_length.min                   | 1127.6  |
-| vusers.session_length.max                   | 9982.2  |
-| vusers.session_length.mean                  | 3730.6  |
-| vusers.session_length.median                | 3464.1  |
-| vusers.session_length.p95                   | 7865.6  |
-| vusers.session_length.p99                   | 9607.1  |
+| errors.ETIMEDOUT                             | 5473     |
+| errors.Failed capture or match               | 73       |
+| http.codes.200                               | 3454     |
+| http.codes.401                               | 64       |
+| http.codes.402                               | 9        |
+| http.downloaded_bytes                        | 0        |
+| http.request_rate                            | 21/sec   |
+| http.requests                                | 9000     |
+| http.response_time.min                       | 929      |
+| http.response_time.max                       | 9919     |
+| http.response_time.mean                      | 3682.1   |
+| http.response_time.median                    | 3395.5   |
+| http.response_time.p95                       | 8024.5   |
+| http.response_time.p99                       | 9607.1   |
+| http.responses                               | 3527     |
+| vusers.completed                             | 3454     |
+| vusers.created                               | 9000     |
+| vusers.created_by_name.Scrape a URL          | 9000     |
+| vusers.failed                                | 5546     |
+| vusers.session_length.min                    | 1127.6   |
+| vusers.session_length.max                    | 9982.2   |
+| vusers.session_length.mean                   | 3730.6   |
+| vusers.session_length.median                 | 3464.1   |
+| vusers.session_length.p95                    | 7865.6   |
+| vusers.session_length.p99                    | 9607.1   |
 
 ### Metrics
 

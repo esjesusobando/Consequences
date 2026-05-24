@@ -41,12 +41,12 @@ Automatizar generación de reportes recurrentes:
 
 Ya existen scripts que generan outputs relevantes:
 
-| HUB | Script | Output |
-|-----|--------|--------|
-| **Telemetry** | `18_Telemetry_Hub.py --dashboard` | Stats ASCII |
-| **Watchdog** | `17_Watchdog_Hub.py` | Health check |
-| **Auditor** | `01_Auditor_Hub.py` | System validation |
-| **MCP Sync** | `15_MCP_Sync_Hub.py --report` | Drift report |
+| HUB          | Script                           | Output           |
+|-------------|---------------------------------|-----------------|
+| **Telemetry**| `18_Telemetry_Hub.py --dashboard`| Stats ASCII      |
+| **Watchdog** | `17_Watchdog_Hub.py`             | Health check     |
+| **Auditor**  | `01_Auditor_Hub.py`              | System validation|
+| **MCP Sync** | `15_MCP_Sync_Hub.py --report`    | Drift report     |
 
 ---
 

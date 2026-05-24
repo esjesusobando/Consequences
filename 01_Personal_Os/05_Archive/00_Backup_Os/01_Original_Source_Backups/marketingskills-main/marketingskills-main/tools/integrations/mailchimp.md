@@ -4,12 +4,12 @@ Email marketing platform for campaigns, automation, and audience management.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | Marketing API for campaigns, audiences, automation |
-| MCP | ✓ | Available via Mailchimp MCP server |
-| CLI | - | Not available |
-| SDK | ✓ | Official SDKs for multiple languages |
+| Integration  | Available  | Notes                                             |
+|-------------|-----------|--------------------------------------------------|
+| API          | ✓          | Marketing API for campaigns, audiences, automation|
+| MCP          | ✓          | Available via Mailchimp MCP server                |
+| CLI          |-----------| Not available                                     |
+| SDK          | ✓          | Official SDKs for multiple languages              |
 
 ## Authentication
 

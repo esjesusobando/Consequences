@@ -59,12 +59,12 @@ Go beyond checkmarks:
 ```markdown
 ## Pricing
 
-| | [Competitor] | [Your Product] |
-|---|---|---|
-| Free tier | [Details] | [Details] |
-| Starting price | $X/user/mo | $X/user/mo |
-| Business tier | $X/user/mo | $X/user/mo |
-| Enterprise | Custom | Custom |
+|               | [Competitor]| [Your Product]|
+|--------------|------------|--------------|
+| Free tier     | [Details]   | [Details]     |
+| Starting price| $X/user/mo  | $X/user/mo    |
+| Business tier | $X/user/mo  | $X/user/mo    |
+| Enterprise    | Custom      | Custom        |
 
 **What's included**: [Competitor]'s $X plan includes [features], while
 [Your product]'s $X plan includes [features].
@@ -84,13 +84,13 @@ $X/year while [Your product] costs $Y/year, with [key differences in what you ge
 ```markdown
 ## Service & Support
 
-| | [Competitor] | [Your Product] |
-|---|---|---|
-| Documentation | [Quality assessment] | [Quality assessment] |
-| Response time | [SLA if known] | [Your SLA] |
-| Support channels | [List] | [List] |
-| Onboarding | [What they offer] | [What you offer] |
-| CSM included | [At what tier] | [At what tier] |
+|                 | [Competitor]        | [Your Product]      |
+|----------------|--------------------|--------------------|
+| Documentation   | [Quality assessment]| [Quality assessment]|
+| Response time   | [SLA if known]      | [Your SLA]          |
+| Support channels| [List]              | [List]              |
+| Onboarding      | [What they offer]   | [What you offer]    |
+| CSM included    | [At what tier]      | [At what tier]      |
 
 **Support quality**: Based on [G2/Capterra reviews, your research],
 [Competitor] support is described as [assessment]. Common feedback includes
@@ -184,16 +184,16 @@ Focus on switchers:
 ### Beyond Checkmarks
 
 Instead of:
-| Feature | You | Competitor |
+| Feature  | You  | Competitor |
 |---------|-----|-----------|
-| Feature A | ✓ | ✓ |
-| Feature B | ✓ | ✗ |
+| Feature A| ✓    | ✓          |
+| Feature B| ✓    | ✗          |
 
 Do this:
-| Feature | You | Competitor |
-|---------|-----|-----------|
-| Feature A | Full support with [detail] | Basic support, [limitation] |
-| Feature B | [Specific capability] | Not available |
+| Feature  | You                       | Competitor                 |
+|---------|--------------------------|---------------------------|
+| Feature A| Full support with [detail]| Basic support, [limitation]|
+| Feature B| [Specific capability]     | Not available              |
 
 ### Organize by Category
 
@@ -206,7 +206,7 @@ Group features into meaningful categories:
 
 ### Include Ratings Where Useful
 
-| Category | You | Competitor | Notes |
-|----------|-----|-----------|-------|
-| Ease of use | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | [Brief note] |
-| Feature depth | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | [Brief note] |
+| Category     | You  | Competitor | Notes       |
+|-------------|-----|-----------|------------|
+| Ease of use  | ⭐⭐⭐⭐⭐| ⭐⭐⭐⭐       | [Brief note]|
+| Feature depth| ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐      | [Brief note]|

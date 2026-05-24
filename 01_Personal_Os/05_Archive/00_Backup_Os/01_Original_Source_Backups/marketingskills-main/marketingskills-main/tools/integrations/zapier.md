@@ -4,12 +4,12 @@ Workflow automation platform connecting apps without code.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | REST API for Zaps, tasks, and webhooks |
-| MCP | ✓ | Available via Zapier MCP server |
-| CLI | - | Not available |
-| SDK | - | API and webhooks only |
+| Integration  | Available  | Notes                                 |
+|-------------|-----------|--------------------------------------|
+| API          | ✓          | REST API for Zaps, tasks, and webhooks|
+| MCP          | ✓          | Available via Zapier MCP server       |
+| CLI          |-----------| Not available                         |
+| SDK          |-----------| API and webhooks only                 |
 
 ## Authentication
 

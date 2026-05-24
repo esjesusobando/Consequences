@@ -26,14 +26,14 @@ Sesión partida en dos bloques:
 
 ## ✅ ARCHIVOS REVISADOS
 
-| Archivo | Path | Estado | Issues |
-|---------|------|--------|--------|
-| AGENTS.md | `00_Winter_is_Coming/AGENTS.md` | ⚠️ Stale | 6 números + version desactualizada |
-| BACKLOG.md | `00_Winter_is_Coming/BACKLOG.md` | ⚠️ Stale | Fecha abril, items P2 resueltos |
-| CHANGELOG.md | `00_Winter_is_Coming/CHANGELOG.md` | ✅ OK | — |
-| GOALS.md | `00_Winter_is_Coming/GOALS.md` | ⚠️ Stale | Números de HUBs y skills |
-| README.md | `00_Winter_is_Coming/README.md` | ⚠️ Stale | HUBs y scripts count |
-| OS_DIRECTORY.md | `00_Winter_is_Coming/OS_DIRECTORY.md` | ⚠️ Stale copy | v4.5 vs raíz v4.7 |
+| Archivo        | Path                                 | Estado       | Issues                            |
+|---------------|-------------------------------------|-------------|----------------------------------|
+| AGENTS.md      | `00_Winter_is_Coming/AGENTS.md`      | ⚠️ Stale     | 6 números + version desactualizada|
+| BACKLOG.md     | `00_Winter_is_Coming/BACKLOG.md`     | ⚠️ Stale     | Fecha abril, items P2 resueltos   |
+| CHANGELOG.md   | `00_Winter_is_Coming/CHANGELOG.md`   | ✅ OK         | —                                 |
+| GOALS.md       | `00_Winter_is_Coming/GOALS.md`       | ⚠️ Stale     | Números de HUBs y skills          |
+| README.md      | `00_Winter_is_Coming/README.md`      | ⚠️ Stale     | HUBs y scripts count              |
+| OS_DIRECTORY.md| `00_Winter_is_Coming/OS_DIRECTORY.md`| ⚠️ Stale copy| v4.5 vs raíz v4.7                 |
 
 ---
 
@@ -52,13 +52,13 @@ Sesión partida en dos bloques:
 
 ## 📊 MÉTRICAS POST-AUDIT V2
 
-| Métrica | Sesión anterior | Esta sesión |
-|---------|----------------|-------------|
-| CE skills registradas | 15 | 36 (+21) |
-| Docs synced a v4.7 | 0 | 3 |
-| Archivos revisados 00_Winter/ | — | 6 |
-| Archivos con bugs detectados | — | 5 |
-| Archivos archivados (duplicados raíz) | — | 2 (Fase_B, Pendientes) |
+| Métrica                              | Sesión anterior | Esta sesión           |
+|-------------------------------------|----------------|----------------------|
+| CE skills registradas                | 15              | 36 (+21)              |
+| Docs synced a v4.7                   | 0               | 3                     |
+| Archivos revisados 00_Winter/        | —               | 6                     |
+| Archivos con bugs detectados         | —               | 5                     |
+| Archivos archivados (duplicados raíz)| —               | 2 (Fase_B, Pendientes)|
 
 ---
 

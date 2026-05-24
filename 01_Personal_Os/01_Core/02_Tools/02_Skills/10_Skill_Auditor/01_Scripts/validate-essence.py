@@ -5,7 +5,7 @@ Validate Esencia Original - SOTA v5.1
 Verifies that skills maintain their original purpose and essence.
 This prevents scope creep and drift from original intent.
 
-Supports PersonalOS structure: 01_Core/03_Skills/
+Supports PersonalOS structure: 01_Core/02_Tools/02_Skills/
 """
 
 import sys
@@ -180,7 +180,7 @@ def main():
     print("=" * 70)
 
     project_root = find_project_root()
-    skills_dir = project_root / "01_Core" / "03_Skills"
+    skills_dir = project_root / "01_Core" / "02_Tools" / "02_Skills"
 
     # Allow custom path argument
     if len(sys.argv) > 1:

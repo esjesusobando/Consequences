@@ -19,12 +19,12 @@ Think_Different/                    # RAÍZ
 
 ### 📝 Notas de la Raíz
 
-| Carpeta | Propósito |
-|---------|----------|
-| **00_Winter_is_Coming** | Dirección estratégica. Aquí van Goals, Backlog, AGENTS.md (GGA), CHANGELOG. Es el "cerebro" que define qué hacer y por qué. |
-| **01_Personal_Os** | EL SISTEMA OPERATIVO. Todo el motor del OS vivo aquí. Reglas, skills, agentes, HUBs, workflows. NO se toca directamente — todo pasa por los workflows. |
-| **02_Playground** | Zona de pruebas. Skills nuevas, flujos experimentales, tests. Lo validado aquí se migra al OS. NO contaminar el OS con experimentos. |
-| **03_Resultado** | Outputs de proyectos. Entregables, reportes, contenido generado. Es el "almacén" de resultados, no el lugar de trabajo. |
+| Carpeta                | Propósito                                                                                                                                             |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **00_Winter_is_Coming**| Dirección estratégica. Aquí van Goals, Backlog, AGENTS.md (GGA), CHANGELOG. Es el "cerebro" que define qué hacer y por qué.                           |
+| **01_Personal_Os**     | EL SISTEMA OPERATIVO. Todo el motor del OS vivo aquí. Reglas, skills, agentes, HUBs, workflows. NO se toca directamente — todo pasa por los workflows.|
+| **02_Playground**      | Zona de pruebas. Skills nuevas, flujos experimentales, tests. Lo validado aquí se migra al OS. NO contaminar el OS con experimentos.                  |
+| **03_Resultado**       | Outputs de proyectos. Entregables, reportes, contenido generado. Es el "almacén" de resultados, no el lugar de trabajo.                               |
 
 ---
 
@@ -57,13 +57,13 @@ El corazón del PersonalOS. Aquí vive todo lo que hace funcionar el sistema: re
 
 ### 📝 Notas de 01_Personal_Os
 
-| Subcarpeta | Propósito | Contenido |
-|------------|-----------|------------|
-| **01_Core** | El motor. Reglas que gobiernan, herramientas que ejecutan. | workflows, rules, agents, skills, hooks, plugins |
-| **02_Knowledge** | Base de conocimiento. Documentación, research, templates. | Docs, ejemplos, research, templates |
-| **03_Task** | Tareas activas. Backlog, inbox, tareas completadas. | Pendientes, en progreso, done |
-| **04_Operations** | El operativo. HUBs que ejecutan, memoria LLM, auto-mejora. | Scripts, métricas, sync, mejoras |
-| **05_Archive** | Legado. Lo que ya no está activo pero se preserva. | Backups, auditorías, contenido legacy |
+| Subcarpeta       | Propósito                                                 | Contenido                                       |
+|-----------------|----------------------------------------------------------|------------------------------------------------|
+| **01_Core**      | El motor. Reglas que gobiernan, herramientas que ejecutan.| workflows, rules, agents, skills, hooks, plugins|
+| **02_Knowledge** | Base de conocimiento. Documentación, research, templates. | Docs, ejemplos, research, templates             |
+| **03_Task**      | Tareas activas. Backlog, inbox, tareas completadas.       | Pendientes, en progreso, done                   |
+| **04_Operations**| El operativo. HUBs que ejecutan, memoria LLM, auto-mejora.| Scripts, métricas, sync, mejoras                |
+| **05_Archive**   | Legado. Lo que ya no está activo pero se preserva.        | Backups, auditorías, contenido legacy           |
 
 ---
 
@@ -71,66 +71,66 @@ El corazón del PersonalOS. Aquí vive todo lo que hace funcionar el sistema: re
 
 #### 📝 00_Workflows_Os — Workflows (29 workflows, 7 categorías)
 
-| Categoría | Workflows | Propósito |
-|----------|-----------|----------|
-| **00_Learning_Always** | Continuo | Learning permanente del sistema |
-| **01_Personal_Os** | 4 principales | Morning, Backlog, Content, Weekly |
-| **02_Marvel** | Iron Man, Spider, Thor, Hulk | Identidades temáticas para ejecución experta |
-| **03_Gentleman** | Frontend, Docs | Diseño premium y redacción técnica |
-| **04_Hillary** | Life OS | Gestión integral del inbox |
-| **05_Compound_Engineering** | CE | Metodología de ingeniería avanzada |
-| **06_Youtube_Full_Video** | Video | Pipeline de producción de video |
+| Categoría                  | Workflows                   | Propósito                                   |
+|---------------------------|----------------------------|--------------------------------------------|
+| **00_Learning_Always**     | Continuo                    | Learning permanente del sistema             |
+| **01_Personal_Os**         | 4 principales               | Morning, Backlog, Content, Weekly           |
+| **02_Marvel**              | Iron Man, Spider, Thor, Hulk| Identidades temáticas para ejecución experta|
+| **03_Gentleman**           | Frontend, Docs              | Diseño premium y redacción técnica          |
+| **04_Hillary**             | Life OS                     | Gestión integral del inbox                  |
+| **05_Compound_Engineering**| CE                          | Metodología de ingeniería avanzada          |
+| **06_Youtube_Full_Video**  | Video                       | Pipeline de producción de video             |
 
 > **Regla:** Todo trabajo pasa por un workflow. No se trabaja directo en carpetas.
 > **Boot Protocol:** Al iniciar sesión, ejecutar `.agent/03_Workflows/02_Marvel/01_Iron_Man_Gen.md` OBLIGATORIAMENTE antes de cualquier acción.
 
 #### 📝 01_Rules — Reglas del Sistema (12 .mdc)
 
-| Regla | Propósito |
-|-------|----------|
-| **00_Core_Protocol.mdc** | Protocolo core del OS |
-| **01_Pilares_Sistema.mdc** | Pilares fundamentales |
-| **02_Motor_Agent.mdc** | Motor de agentes |
-| **03_Protocolos_Ejecucion.mdc** | Protocolos de ejecución |
-| **04_Observabilidad.mdc** | Sistema de observación |
-| **05_Reporting.mdc** | Reportes y métricas |
-| **06_Contexto_Gestion.mdc** | Gestión de contexto |
-| **07_Docs_Guias.mdc** | Convenciones de nomenclatura |
-| **08_Token_Economy.mdc** | Economía de tokens |
-| **09_Agent_Teams_Protocol.mdc** | Protocolo de equipos de agentes |
-| **10_Git_Directions.mdc** | Direcciones Git |
-| **11_Minimax.mdc** | Configuración Minimax |
+| Regla                          | Propósito                      |
+|-------------------------------|-------------------------------|
+| **00_Core_Protocol.mdc**       | Protocolo core del OS          |
+| **01_Pilares_Sistema.mdc**     | Pilares fundamentales          |
+| **02_Motor_Agent.mdc**         | Motor de agentes               |
+| **03_Protocolos_Ejecucion.mdc**| Protocolos de ejecución        |
+| **04_Observabilidad.mdc**      | Sistema de observación         |
+| **05_Reporting.mdc**           | Reportes y métricas            |
+| **06_Contexto_Gestion.mdc**    | Gestión de contexto            |
+| **07_Docs_Guias.mdc**          | Convenciones de nomenclatura   |
+| **08_Token_Economy.mdc**       | Economía de tokens             |
+| **09_Agent_Teams_Protocol.mdc**| Protocolo de equipos de agentes|
+| **10_Git_Directions.mdc**      | Direcciones Git                |
+| **11_Minimax.mdc**             | Configuración Minimax          |
 
 #### 📝 02_Tools — Herramientas del OS
 
-| Herramienta | Cantidad | Propósito |
-|-------------|----------|-----------|
-| **01_Agents** | 82 | Orquestación multi-agente. Dream Team (5) + Specialists (24+) + Individuales |
-| **02_Skills** | 356 | 12 áreas funcionales. Skills que el sistema sabe ejecutar |
-| **03_Mcp** | - | Backup de configs MCP |
-| **04_Integrations** | - | Fireflies, Granola (integraciones externas) |
-| **05_Hooks** | 10 | Ganchos en 6 fases: Pre/Post Tool, Lifecycle, Sound, Harness, Post_Hulk |
-| **06_Plugins** | - | Plugins extensible del OS |
-| **07_Server** | - | Engram server (memoria persistente) |
-| **08_Evals** | - | Evaluadores de código |
-| **09_Templates** | - | Templates reutilizables |
+| Herramienta        | Cantidad  | Propósito                                                                   |
+|-------------------|----------|----------------------------------------------------------------------------|
+| **01_Agents**      | 82        | Orquestación multi-agente. Dream Team (5) + Specialists (24+) + Individuales|
+| **02_Skills**      | 356       | 12 áreas funcionales. Skills que el sistema sabe ejecutar                   |
+| **03_Mcp**         |----------| Backup de configs MCP                                                       |
+| **04_Integrations**|----------| Fireflies, Granola (integraciones externas)                                 |
+| **05_Hooks**       | 10        | Ganchos en 6 fases: Pre/Post Tool, Lifecycle, Sound, Harness, Post_Hulk     |
+| **06_Plugins**     |----------| Plugins extensible del OS                                                   |
+| **07_Server**      |----------| Engram server (memoria persistente)                                         |
+| **08_Evals**       |----------| Evaluadores de código                                                       |
+| **09_Templates**   |----------| Templates reutilizables                                                     |
 
 **Skills por Área:**
 
-| Área | Skills | Descripción |
-|------|--------|-------------|
-| 00_Compound_Engineering | 63 | Core CE — SDD + Compound Engineering |
-| 00_Personal_Os_Stack | 1 | Stack base OS + Gcierr |
-| 00_Skill_Auditor | 4 | Auditoría de skills |
-| 01_Creacion_Contenidos | 38 | Brand, YouTube, SEO, Carruseles |
-| 02_Diseno_Ui_Ux | 23 | Product Design, UI/UX, Taste, Minimal |
-| 03_Video_Media | 6 | Video Intel, James Cameron |
-| 04_Automatizacion | 21 | N8N, Firecrawl, GWS Client |
-| 05_Workflows | 33 | Agent Teams, PM, Orchestrator |
-| 06_Tools | 93 | Skill Creator, Testing, DevOps, Data |
-| 07_Personal_Os | 29 | Life OS, Hillary, Rituales |
-| 08_Invictus_Web | 14 | Playwright, Superpowers, Browser Auto |
-| 09_Claude_Ads | 20 | Claude Ads integration |
+| Área                   | Skills  | Descripción                          |
+|-----------------------|--------|-------------------------------------|
+| 00_Compound_Engineering| 63      | Core CE — SDD + Compound Engineering |
+| 00_Personal_Os_Stack   | 1       | Stack base OS + Gcierr               |
+| 00_Skill_Auditor       | 4       | Auditoría de skills                  |
+| 01_Creacion_Contenidos | 38      | Brand, YouTube, SEO, Carruseles      |
+| 02_Diseno_Ui_Ux        | 23      | Product Design, UI/UX, Taste, Minimal|
+| 03_Video_Media         | 6       | Video Intel, James Cameron           |
+| 04_Automatizacion      | 21      | N8N, Firecrawl, GWS Client           |
+| 05_Workflows           | 33      | Agent Teams, PM, Orchestrator        |
+| 06_Tools               | 93      | Skill Creator, Testing, DevOps, Data |
+| 07_Personal_Os         | 29      | Life OS, Hillary, Rituales           |
+| 08_Invictus_Web        | 14      | Playwright, Superpowers, Browser Auto|
+| 09_Claude_Ads          | 20      | Claude Ads integration               |
 
 ---
 
@@ -193,38 +193,38 @@ El corazón del PersonalOS. Aquí vive todo lo que hace funcionar el sistema: re
 └── RUNBOOK.md
 ```
 
-| Subcarpeta | Propósito |
-|------------|-----------|
-| **00_Context_LLM** | Memoria LLM. Engram, process notes, knowledge brain, plans, solutions |
-| **01_Auto_Improvement** | Motor de auto-mejora recursiva |
-| **02_Agent_Teams_Lite** | SDD registry + 7 JARVIS manifests |
-| **03_Scripts_Os** | 31 HUBs/scripts operativos |
-| **04_Installer** | Scripts de instalación del OS |
-| **05_Projects** | Proyectos activos |
-| **06_SOTA_Features** | Features de última generación |
+| Subcarpeta             | Propósito                                                            |
+|-----------------------|---------------------------------------------------------------------|
+| **00_Context_LLM**     | Memoria LLM. Engram, process notes, knowledge brain, plans, solutions|
+| **01_Auto_Improvement**| Motor de auto-mejora recursiva                                       |
+| **02_Agent_Teams_Lite**| SDD registry + 7 JARVIS manifests                                    |
+| **03_Scripts_Os**      | 31 HUBs/scripts operativos                                           |
+| **04_Installer**       | Scripts de instalación del OS                                        |
+| **05_Projects**        | Proyectos activos                                                    |
+| **06_SOTA_Features**   | Features de última generación                                        |
 
 #### 📝 HUBs JARVIS (31 scripts)
 
-| HUB ★ | Script | Propósito |
-|-------|--------|-----------|
-| Sound Engine | 00_Sound_Engine.py | Notificaciones sonoras |
-| Auditor | 01_Auditor_Hub.py | Auditorías del sistema |
-| Git | 02_Git_Hub.py | Operaciones Git |
-| AIPM | 03_AIPM_Hub.py | AI Performance Monitoring |
-| Ritual | 04_Ritual_Hub.py | Rituales de sesión |
-| Validator | 05_Validator_Hub.py | Validación de código |
-| Tool | 06_Tool_Hub.py | Gestión de herramientas |
-| Integration | 07_Integration_Hub.py | Integraciones MCP |
-| Workflow | 08_Workflow_Hub.py | Automatización de workflows |
-| Data | 09_Data_Hub.py | Procesamiento de datos |
-| General | 10_General_Hub.py | Utilidades generales |
-| Auto Learn | 11_Auto_Learn_Hub.py | Motor de automejora |
-| Health Metrics ★ | 14_Health_Metrics_Hub.py | Métricas de salud del OS |
-| MCP Sync ★ | 15_MCP_Sync_Hub.py | Sync Claude ↔ OpenCode |
-| Watchdog ★ | 17_Watchdog_Hub.py | Health watchdog |
-| Telemetry ★ | 18_Telemetry_Hub.py | Dashboard de métricas |
-| Agent Sync | 19_Agent_Sync_Hub.py | Sync .agent ↔ 01_Core |
-| System Mapper ★ | 20_System_Mapper_Hub.py | Genera 7 manifests JARVIS |
+| HUB ★           | Script                  | Propósito                  |
+|----------------|------------------------|---------------------------|
+| Sound Engine    | 00_Sound_Engine.py      | Notificaciones sonoras     |
+| Auditor         | 01_Auditor_Hub.py       | Auditorías del sistema     |
+| Git             | 02_Git_Hub.py           | Operaciones Git            |
+| AIPM            | 03_AIPM_Hub.py          | AI Performance Monitoring  |
+| Ritual          | 04_Ritual_Hub.py        | Rituales de sesión         |
+| Validator       | 05_Validator_Hub.py     | Validación de código       |
+| Tool            | 06_Tool_Hub.py          | Gestión de herramientas    |
+| Integration     | 07_Integration_Hub.py   | Integraciones MCP          |
+| Workflow        | 08_Workflow_Hub.py      | Automatización de workflows|
+| Data            | 09_Data_Hub.py          | Procesamiento de datos     |
+| General         | 10_General_Hub.py       | Utilidades generales       |
+| Auto Learn      | 11_Auto_Learn_Hub.py    | Motor de automejora        |
+| Health Metrics ★| 14_Health_Metrics_Hub.py| Métricas de salud del OS   |
+| MCP Sync ★      | 15_MCP_Sync_Hub.py      | Sync Claude ↔ OpenCode     |
+| Watchdog ★      | 17_Watchdog_Hub.py      | Health watchdog            |
+| Telemetry ★     | 18_Telemetry_Hub.py     | Dashboard de métricas      |
+| Agent Sync      | 19_Agent_Sync_Hub.py    | Sync .agent ↔ 01_Core      |
+| System Mapper ★ | 20_System_Mapper_Hub.py | Genera 7 manifests JARVIS  |
 
 > ★ = HUB canónico JARVIS 4.5
 
@@ -241,12 +241,12 @@ El corazón del PersonalOS. Aquí vive todo lo que hace funcionar el sistema: re
 └── README.md
 ```
 
-| Subcarpeta | Propósito |
-|------------|-----------|
-| **00_Backup_Os** | Backup completo del OS antes de reorganizaciones |
-| **01_Repos_Reference** | Repos clonados de upstream (engram, gentle-ai, etc.) |
-| **02_Legacy_Content** | Contenido antiguo: planes, docs, skills legacy |
-| **03_Backups_Audits** | Backups, snapshots, reportes de auditoría |
+| Subcarpeta            | Propósito                                           |
+|----------------------|----------------------------------------------------|
+| **00_Backup_Os**      | Backup completo del OS antes de reorganizaciones    |
+| **01_Repos_Reference**| Repos clonados de upstream (engram, gentle-ai, etc.)|
+| **02_Legacy_Content** | Contenido antiguo: planes, docs, skills legacy      |
+| **03_Backups_Audits** | Backups, snapshots, reportes de auditoría           |
 
 > **Regla:** Archive es solo lectura histórica. No modificar contenido archivado.
 
@@ -334,45 +334,45 @@ El corazón del PersonalOS. Aquí vive todo lo que hace funcionar el sistema: re
 
 ## ⚙️ Archivos de Configuración Raíz
 
-| Archivo | Propósito |
-|---------|----------|
-| **.mcp.json** | 36 MCPs Claude Code |
-| **.claude/** | Config Claude Code |
-| **.opencode/** | Config OpenCode + skills locales |
-| **.atl/** | SDD Registry + openspec/ |
-| **.env** | Variables de entorno |
-| **.gga** | Guardian Angel config |
-| **AGENTS.md** | GGA Pre-Commit entry |
-| **CLAUDE.md** | Config IAs (FUENTE) |
-| **OS_DIRECTORY.md** | JARVIS discovery |
-| **README.md** | Documentación principal |
-| **STRUCTURE_v4.5.md** | Este archivo — estructura completa |
+| Archivo              | Propósito                         |
+|---------------------|----------------------------------|
+| **.mcp.json**        | 36 MCPs Claude Code               |
+| **.claude/**         | Config Claude Code                |
+| **.opencode/**       | Config OpenCode + skills locales  |
+| **.atl/**            | SDD Registry + openspec/          |
+| **.env**             | Variables de entorno              |
+| **.gga**             | Guardian Angel config             |
+| **AGENTS.md**        | GGA Pre-Commit entry              |
+| **CLAUDE.md**        | Config IAs (FUENTE)               |
+| **OS_DIRECTORY.md**  | JARVIS discovery                  |
+| **README.md**        | Documentación principal           |
+| **STRUCTURE_v4.5.md**| Este archivo — estructura completa|
 
 ---
 
 ## 📊 ESTADO DEL SISTEMA v4.5
 
-| Componente | Total | Estado |
+| Componente | Total  | Estado  |
 |-----------|-------|--------|
-| Skills | 356 | ✅ |
-| Agentes | 82 | ✅ |
-| Rules | 12 | ✅ |
-| MCPs | 36 | ✅ |
-| HUBs | 31 | ✅ |
-| Workflows | 29 | ✅ |
+| Skills     | 356    | ✅       |
+| Agentes    | 82     | ✅       |
+| Rules      | 12     | ✅       |
+| MCPs       | 36     | ✅       |
+| HUBs       | 31     | ✅       |
+| Workflows  | 29     | ✅       |
 
 ---
 
 ## 📋 CONVENCIONES DE NOMENCLATURA
 
-| Tipo | Estándar | Ejemplo |
-|------|----------|---------|
-| Archivos de código | snake_case.py | `os_health_test.py` |
-| Archivos de datos | Pascal_Case + guion_bajo | `OS_Health_2026-05-20_12-24-20.txt` |
-| Carpetas principales | XX_Nombre | `00_Winter_is_Coming` |
-| SKILL.md | SKILL.md (fijo) | `Skills/.../SKILL.md` |
-| Scripts HUBs | NN_Nombre_Hub.py | `20_System_Mapper_Hub.py` |
-| Archivos 00_ | 00_ prefix = NO TOCAR | `00_SALUD_REPORTS.md` |
+| Tipo                | Estándar                | Ejemplo                            |
+|--------------------|------------------------|-----------------------------------|
+| Archivos de código  | snake_case.py           | `os_health_test.py`                |
+| Archivos de datos   | Pascal_Case + guion_bajo| `OS_Health_2026-05-20_12-24-20.txt`|
+| Carpetas principales| XX_Nombre               | `00_Winter_is_Coming`              |
+| SKILL.md            | SKILL.md (fijo)         | `Skills/.../SKILL.md`              |
+| Scripts HUBs        | NN_Nombre_Hub.py        | `20_System_Mapper_Hub.py`          |
+| Archivos 00_        | 00_ prefix = NO TOCAR   | `00_SALUD_REPORTS.md`              |
 
 ### Reglas de Secuencia
 1. **Enumeración limpia** — Sin huecos ni duplicados
@@ -383,9 +383,9 @@ El corazón del PersonalOS. Aquí vive todo lo que hace funcionar el sistema: re
 
 ## ⚠️ EXCEPCIONES / PERMISOS
 
-| Ruta | Problema | Solución |
-|------|----------|----------|
-| `02_Playground/.../05_Skills_Test/12_Content_Ideation` | Permission denied | Carpeta anidada, no afecta enumeración |
+| Ruta                                                  | Problema         | Solución                              |
+|------------------------------------------------------|-----------------|--------------------------------------|
+| `02_Playground/.../05_Skills_Test/12_Content_Ideation`| Permission denied| Carpeta anidada, no afecta enumeración|
 
 ---
 

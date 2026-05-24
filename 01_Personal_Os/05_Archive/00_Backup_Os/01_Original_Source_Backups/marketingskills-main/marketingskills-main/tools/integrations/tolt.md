@@ -4,12 +4,12 @@ Affiliate program management for SaaS, with Stripe and Paddle integration.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | REST API for affiliates, referrals, payouts |
-| MCP | - | Not available |
-| CLI | - | Not available |
-| SDK | - | JavaScript snippet for tracking |
+| Integration  | Available  | Notes                                      |
+|-------------|-----------|-------------------------------------------|
+| API          | ✓          | REST API for affiliates, referrals, payouts|
+| MCP          |-----------| Not available                              |
+| CLI          |-----------| Not available                              |
+| SDK          |-----------| JavaScript snippet for tracking            |
 
 ## Authentication
 
@@ -100,14 +100,14 @@ window.tolt.identify(stripeCustomerId);
 
 ## Webhook Events
 
-| Event | When |
-|-------|------|
-| `affiliate.created` | New affiliate registered |
-| `affiliate.approved` | Affiliate approved |
-| `referral.created` | New referral tracked |
-| `referral.converted` | Referral converted to customer |
-| `commission.created` | Commission earned |
-| `payout.completed` | Payout sent |
+| Event               | When                          |
+|--------------------|------------------------------|
+| `affiliate.created` | New affiliate registered      |
+| `affiliate.approved`| Affiliate approved            |
+| `referral.created`  | New referral tracked          |
+| `referral.converted`| Referral converted to customer|
+| `commission.created`| Commission earned             |
+| `payout.completed`  | Payout sent                   |
 
 ## Key Features
 

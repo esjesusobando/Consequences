@@ -83,7 +83,7 @@ def print_banner():
 ROOT_DIR = PROJECT_ROOT
 
 
-# Real mapping of path renames for v4.0
+# Real mapping of path renames for v4.7
 RENAMES = {
     # ai_docs renaming (XX_)
     "ai_docs/Process_Notes/01_setup_standares_sv_2026-02-02.md": "ai_docs/Process_Notes/01_setup_standares_sv_2026-02-02.md",

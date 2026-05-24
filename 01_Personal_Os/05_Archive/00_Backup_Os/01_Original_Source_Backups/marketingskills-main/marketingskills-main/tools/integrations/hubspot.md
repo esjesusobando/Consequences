@@ -4,12 +4,12 @@ CRM platform for marketing, sales, and customer service.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | REST API for CRM, Marketing, Sales |
-| MCP | - | Not available |
-| CLI | ✓ | `hs` CLI for local development |
-| SDK | ✓ | Official client libraries |
+| Integration  | Available  | Notes                             |
+|-------------|-----------|----------------------------------|
+| API          | ✓          | REST API for CRM, Marketing, Sales|
+| MCP          |-----------| Not available                     |
+| CLI          | ✓          | `hs` CLI for local development    |
+| SDK          | ✓          | Official client libraries         |
 
 ## Authentication
 

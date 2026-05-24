@@ -4,12 +4,12 @@ Behavior-based messaging platform for email, push, SMS, and in-app.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | Track API, App API, Journeys API |
-| MCP | - | Not available |
-| CLI | - | Not available |
-| SDK | ✓ | JavaScript, iOS, Android, Ruby, Python |
+| Integration  | Available  | Notes                                 |
+|-------------|-----------|--------------------------------------|
+| API          | ✓          | Track API, App API, Journeys API      |
+| MCP          |-----------| Not available                         |
+| CLI          |-----------| Not available                         |
+| SDK          | ✓          | JavaScript, iOS, Android, Ruby, Python|
 
 ## Authentication
 

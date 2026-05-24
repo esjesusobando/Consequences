@@ -4,12 +4,12 @@ SEO toolset for backlink analysis, keyword research, and competitive research.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | REST API for Site Explorer, Keywords Explorer |
-| MCP | - | Not available |
-| CLI | - | Not available |
-| SDK | - | API-only |
+| Integration  | Available  | Notes                                        |
+|-------------|-----------|---------------------------------------------|
+| API          | ✓          | REST API for Site Explorer, Keywords Explorer|
+| MCP          |-----------| Not available                                |
+| CLI          |-----------| Not available                                |
+| SDK          |-----------| API-only                                     |
 
 ## Authentication
 

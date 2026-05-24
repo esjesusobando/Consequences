@@ -22,19 +22,19 @@ This load test, conducted over a period of 7 minutes with an extended observatio
 ## Test environment
 ### Machines
 
-| Machine | Size/CPU | Status |
-|---|---|---|
-| 06e825d0da2387 mia (worker) | performance-cpu-1x@2048MB | always on |
-| 178134db566489 mia (worker) | performance-cpu-1x@2048MB | always on |
-| 73d8dd909c1189 mia (app) | performance-cpu-1x@2048MB | always on |
-| e286de4f711e86 mia (app) | performance-cpu-1x@2048MB | always on |
+| Machine                    | Size/CPU                 | Status   |
+|---------------------------|-------------------------|---------|
+| 06e825d0da2387 mia (worker)| performance-cpu-1x@2048MB| always on|
+| 178134db566489 mia (worker)| performance-cpu-1x@2048MB| always on|
+| 73d8dd909c1189 mia (app)   | performance-cpu-1x@2048MB| always on|
+| e286de4f711e86 mia (app)   | performance-cpu-1x@2048MB| always on|
 
 fire-engine machines:
-| Machine | Size/CPU | Status |
-|---|---|---|
-| 2874d0db0e5258 mia app | performance-cpu-2x@4096MB | always on |
-| 48ed194f7de258 mia app | performance-cpu-2x@4096MB | always on |
-| 56830d45f70218 sjc app | performance-cpu-2x@4096MB | initialized during the test |
+| Machine               | Size/CPU                 | Status                     |
+|----------------------|-------------------------|---------------------------|
+| 2874d0db0e5258 mia app| performance-cpu-2x@4096MB| always on                  |
+| 48ed194f7de258 mia app| performance-cpu-2x@4096MB| always on                  |
+| 56830d45f70218 sjc app| performance-cpu-2x@4096MB| initialized during the test|
 
 ---
 
@@ -63,29 +63,29 @@ NUM_WORKERS_PER_QUEUE=8
 ### Results
 Date: 17:31:33(-0300)
 
-| Metric                                      | Value   |
+| Metric                                       | Value    |
 |---------------------------------------------|---------|
-| http.codes.200                              | 1800    |
-| http.downloaded_bytes                       | 0       |
-| http.request_rate                           | 3/sec   |
-| http.requests                               | 1800    |
-| http.response_time.min                      | 711     |
-| http.response_time.max                      | 5829    |
-| http.response_time.mean                     | 849.2   |
-| http.response_time.median                   | 804.5   |
-| http.response_time.p95                      | 1043.3  |
-| http.response_time.p99                      | 1274.3  |
-| http.responses                              | 1800    |
-| vusers.completed                            | 900     |
-| vusers.created                              | 900     |
-| vusers.created_by_name.Crawl a URL          | 900     |
-| vusers.failed                               | 0       |
-| vusers.session_length.min                   | 11637   |
-| vusers.session_length.max                   | 16726.1 |
-| vusers.session_length.mean                  | 11829.5 |
-| vusers.session_length.median                | 11734.2 |
-| vusers.session_length.p95                   | 12213.1 |
-| vusers.session_length.p99                   | 12213.1 |
+| http.codes.200                               | 1800     |
+| http.downloaded_bytes                        | 0        |
+| http.request_rate                            | 3/sec    |
+| http.requests                                | 1800     |
+| http.response_time.min                       | 711      |
+| http.response_time.max                       | 5829     |
+| http.response_time.mean                      | 849.2    |
+| http.response_time.median                    | 804.5    |
+| http.response_time.p95                       | 1043.3   |
+| http.response_time.p99                       | 1274.3   |
+| http.responses                               | 1800     |
+| vusers.completed                             | 900      |
+| vusers.created                               | 900      |
+| vusers.created_by_name.Crawl a URL           | 900      |
+| vusers.failed                                | 0        |
+| vusers.session_length.min                    | 11637    |
+| vusers.session_length.max                    | 16726.1  |
+| vusers.session_length.mean                   | 11829.5  |
+| vusers.session_length.median                 | 11734.2  |
+| vusers.session_length.p95                    | 12213.1  |
+| vusers.session_length.p99                    | 12213.1  |
 
 ### Metrics
 

@@ -4,12 +4,12 @@ Payment processing, subscriptions, and billing for internet businesses.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | Comprehensive REST API |
-| MCP | ✓ | Available via Stripe MCP server |
-| CLI | ✓ | `stripe` CLI for testing and webhooks |
-| SDK | ✓ | Official SDKs for most languages |
+| Integration  | Available  | Notes                                |
+|-------------|-----------|-------------------------------------|
+| API          | ✓          | Comprehensive REST API               |
+| MCP          | ✓          | Available via Stripe MCP server      |
+| CLI          | ✓          | `stripe` CLI for testing and webhooks|
+| SDK          | ✓          | Official SDKs for most languages     |
 
 ## Authentication
 
@@ -81,14 +81,14 @@ GET https://api.stripe.com/v1/payment_intents/{payment_intent_id}
 
 Key events to handle:
 
-| Event | When | Action |
-|-------|------|--------|
-| `checkout.session.completed` | Successful checkout | Provision access |
-| `customer.subscription.created` | New subscription | Update user record |
-| `customer.subscription.updated` | Plan change | Update entitlements |
-| `customer.subscription.deleted` | Cancellation | Revoke access |
-| `invoice.payment_failed` | Payment failed | Notify user, retry |
-| `invoice.paid` | Invoice paid | Confirm payment |
+| Event                          | When               | Action             |
+|-------------------------------|-------------------|-------------------|
+| `checkout.session.completed`   | Successful checkout| Provision access   |
+| `customer.subscription.created`| New subscription   | Update user record |
+| `customer.subscription.updated`| Plan change        | Update entitlements|
+| `customer.subscription.deleted`| Cancellation       | Revoke access      |
+| `invoice.payment_failed`       | Payment failed     | Notify user, retry |
+| `invoice.paid`                 | Invoice paid       | Confirm payment    |
 
 ### Verify webhook signature
 

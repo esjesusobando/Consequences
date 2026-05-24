@@ -16,13 +16,13 @@
 | Métrica                             | Valor                                           |
 |------------------------------------|------------------------------------------------|
 | **Overall Health**                  | **100%** 🟢                                      |
-| **Every CE**                        | v3.8.4 ✅ (local repo)                          |
+| **Every CE**                        | v3.8.4 ✅ (local repo)                           |
 | **gentle-ai**                       | v1.30.6 ✅                                       |
 | **Skills**                          | **394** (12 áreas funcionales)                  |
 | **Rules**                           | **12** (.mdc)                                   |
 | **MCPs**                            | **36** Claude Code                              |
-| **HUBs**                            | **19** HUBs + 284 scripts         |
-| **Agentes**                         | **46** (Dream Team + Specialists + Growth) |
+| **HUBs**                            | **19** HUBs + 284 scripts                       |
+| **Agentes**                         | **46** (Dream Team + Specialists + Growth)      |
 | **Workflows**                       | **30** (7 categorías)                           |
 
 ---
@@ -107,18 +107,18 @@ Think_Different/                           # RAÍZ
 | Área                                                         | Items                      | Descripción                                                   |
 |-------------------------------------------------------------|---------------------------|--------------------------------------------------------------|
 | **00_Compound_Engineering**                                  | 63                         | Core CE — SDD + Compound Engineering                          |
-| **00_System_Core**                                          | 1                          | Stack base del OS                                             |
-| **01_Creacion_Contenidos**                                  | 40                         | Brand, YouTube, SEO, Carruseles                               |
-| **02_Diseno_Ui_Ux**                                         | 29                         | Product Design, UI/UX, Taste, Minimal                          |
-| **03_Video_Media**                                         | 7                          | Video Intel, James Cameron, Remotion                          |
-| **04_Automatizacion**                                      | 37                         | N8N, Firecrawl, GWS Client                                    |
-| **05_Workflows**                                           | 37                         | Agent Teams, PM, Orchestrator                                 |
-| **06_Tools**                                                | 112                        | Skill Creator, Testing, DevOps, Data                           |
-| **07_Personal_Os**                                         | 32                         | Life OS, Hillary, Rituales                                    |
-| **08_Invictus_Web**                                         | 15                         | Playwright, Superpowers, Browser Auto                          |
-| **09_Claude_Ads**                                           | 20                         | Claude Ads & Promoted Content                                 |
-| **10_Skill_Auditor**                                       | 1                          | Auditoría de skills                                           |
-| **TOTAL**                                                   | **394**                    | Total real indexado en disco                                  |
+| **00_System_Core**                                           | 1                          | Stack base del OS                                             |
+| **01_Creacion_Contenidos**                                   | 40                         | Brand, YouTube, SEO, Carruseles                               |
+| **02_Diseno_Ui_Ux**                                          | 29                         | Product Design, UI/UX, Taste, Minimal                         |
+| **03_Video_Media**                                           | 7                          | Video Intel, James Cameron, Remotion                          |
+| **04_Automatizacion**                                        | 37                         | N8N, Firecrawl, GWS Client                                    |
+| **05_Workflows**                                             | 37                         | Agent Teams, PM, Orchestrator                                 |
+| **06_Tools**                                                 | 112                        | Skill Creator, Testing, DevOps, Data                          |
+| **07_Personal_Os**                                           | 32                         | Life OS, Hillary, Rituales                                    |
+| **08_Invictus_Web**                                          | 15                         | Playwright, Superpowers, Browser Auto                         |
+| **09_Claude_Ads**                                            | 20                         | Claude Ads & Promoted Content                                 |
+| **10_Skill_Auditor**                                         | 1                          | Auditoría de skills                                           |
+| **TOTAL**                                                    | **394**                    | Total real indexado en disco                                  |
 
 > ⚠️ Skills están en carpetas de área + subcarpetas. Total real: 394 skills
 > Índice completo: `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
@@ -151,14 +151,14 @@ Think_Different/                           # RAÍZ
 | **Legacy Cleanup**                           | `21_Legacy_Path_Cleanup.py`                     | Limpia paths legacy                                   |
 | **Skill Frontmatter**                        | `22_Validate_Skill_Frontmatter.py`              | Detecta skills sin frontmatter                        |
 | **Path Replacement**                         | `23_path_replacement.py`                        | Reemplazo de paths legacy                             |
-| **Mass Path Migration**                       | `24_mass_path_migration.py`                     | Migración masiva de paths                             |
-| **Minimax Optimizer**                         | `25_Minimax_Optimizer_Hub.py`                    | Optimización Minimax                                   |
+| **Mass Path Migration**                      | `24_mass_path_migration.py`                     | Migración masiva de paths                             |
+| **Minimax Optimizer**                        | `25_Minimax_Optimizer_Hub.py`                   | Optimización Minimax                                  |
 | **Parallel Audit Pro**                       | `33_Parallel_Audit_Pro.py`                      | Auditoría paralela                                    |
 | **Skill Auditor**                            | `34_Skill_Auditor.py`                           | Auditoría específica de skills                        |
 | **System Health Monitor**                    | `50_System_Health_Monitor.py`                   | Monitor de salud                                      |
 | **Repo Sync Auditor**                        | `57_Repo_Sync_Auditor.py`                       | Auditor de sincronización                             |
 | **HUB SOTA**                                 | `HUB_SOTA.py`                                   | HUB de HUBs SOTA                                      |
-| **Config Paths**                             | `config_paths.py`                               | Configuración de paths del sistema                   |
+| **Config Paths**                             | `config_paths.py`                               | Configuración de paths del sistema                    |
 
 > ★ = HUB canónico JARVIS 4.5 | Scripts adicionales en subdirectorios organizados por función
 

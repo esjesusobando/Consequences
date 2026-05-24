@@ -7,13 +7,13 @@ Cuando el usuario pide crear/editar frontend: landing pages, webapps, dashboards
 
 ### 1. Identificar el tipo de proyecto
 
-| Tipo                          | Skills a usar                                             |
+| Tipo                           | Skills a usar                                              |
 |-------------------------------|-----------------------------------------------------------|
-| Landing / Webapp nueva        | `@taste-skill/SKILL.md` + `@output-skill/SKILL.md`        |
-| Invitación / Evento premium   | `@soft-skill/SKILL.md` + `@output-skill/SKILL.md`         |
-| Dashboard / Data-heavy        | `@minimalist-skill/SKILL.md` + `@output-skill/SKILL.md`   |
-| Legacy upgrade                | `@redesign-skill/SKILL.md` + `@output-skill/SKILL.md`     |
-| Siempre                       | `@output-skill/SKILL.md`                                  |
+| Landing / Webapp nueva         | `@taste-skill/SKILL.md` + `@output-skill/SKILL.md`         |
+| Invitación / Evento premium    | `@soft-skill/SKILL.md` + `@output-skill/SKILL.md`          |
+| Dashboard / Data-heavy         | `@minimalist-skill/SKILL.md` + `@output-skill/SKILL.md`    |
+| Legacy upgrade                 | `@redesign-skill/SKILL.md` + `@output-skill/SKILL.md`      |
+| Siempre                        | `@output-skill/SKILL.md`                                   |
 
 ### 2. Cargar skills
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-16_Carousel_Engine.py — PersonalOS v2.0 Consequences
+16_Carousel_Engine.py — PersonalOS v4.7 Consequences
 Motor central para la generación de carruseles estratégicos.
 """
 
@@ -28,7 +28,7 @@ sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='repla
 sys.path.insert(0, str(SCRIPTS_OS))
 from config_paths import *
 
-# Output directory: v2.0 uses 01_Process_Notes inside Context_LLM
+# Output directory: v4.7 uses 01_Process_Notes inside Context_LLM
 OUTPUT_DIR = ROOT_DIR / "01_Personal_Os" / "04_Operations" / "00_Context_LLM" / "01_Process_Notes" / "Carousel_Exports"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 

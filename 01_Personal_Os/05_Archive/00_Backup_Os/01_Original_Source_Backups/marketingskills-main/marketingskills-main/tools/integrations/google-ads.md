@@ -4,12 +4,12 @@ Pay-per-click advertising platform for search, display, and video campaigns.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | Google Ads API for campaign management |
-| MCP | ✓ | Available via Google Ads MCP server |
-| CLI | - | Use gcloud or API scripts |
-| SDK | ✓ | Client libraries for multiple languages |
+| Integration  | Available  | Notes                                  |
+|-------------|-----------|---------------------------------------|
+| API          | ✓          | Google Ads API for campaign management |
+| MCP          | ✓          | Available via Google Ads MCP server    |
+| CLI          |-----------| Use gcloud or API scripts              |
+| SDK          | ✓          | Client libraries for multiple languages|
 
 ## Authentication
 
@@ -104,16 +104,16 @@ POST https://googleads.googleapis.com/v14/customers/{customer_id}/campaignBudget
 
 ## Key Metrics
 
-| Metric | Description |
-|--------|-------------|
-| `metrics.impressions` | Ad impressions |
-| `metrics.clicks` | Clicks |
-| `metrics.cost_micros` | Cost in micros (divide by 1M) |
-| `metrics.conversions` | Conversions |
-| `metrics.conversions_value` | Conversion value |
-| `metrics.average_cpc` | Average cost per click |
-| `metrics.ctr` | Click-through rate |
-| `metrics.conversion_rate` | Conversion rate |
+| Metric                     | Description                  |
+|---------------------------|-----------------------------|
+| `metrics.impressions`      | Ad impressions               |
+| `metrics.clicks`           | Clicks                       |
+| `metrics.cost_micros`      | Cost in micros (divide by 1M)|
+| `metrics.conversions`      | Conversions                  |
+| `metrics.conversions_value`| Conversion value             |
+| `metrics.average_cpc`      | Average cost per click       |
+| `metrics.ctr`              | Click-through rate           |
+| `metrics.conversion_rate`  | Conversion rate              |
 
 ## Campaign Types
 

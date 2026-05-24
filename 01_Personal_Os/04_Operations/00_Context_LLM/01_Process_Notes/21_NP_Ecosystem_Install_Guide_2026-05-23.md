@@ -22,12 +22,12 @@ Documentación completa de instalación y configuración del ecosistema Gentlema
 
 ### Instalación
 
-| OS | Comando |
-|----|---------|
-| **macOS/Linux (brew)** | `brew tap Gentleman-Programming/homebrew-tap && brew install gentle-ai` |
-| **Windows (scoop)** | `scoop bucket add gentleman https://github.com/Gentleman-Programming/scoop-bucket && scoop install gentle-ai` |
-| **Go install** | `go install github.com/gentleman-programming/gentle-ai/cmd/gentle-ai@latest` |
-| **Windows (script)** | `irm https://raw.githubusercontent.com/Gentleman-Programming/gentle-ai/main/scripts/install.ps1 \| iex` |
+| OS                    | Comando                                                                                                      |
+|----------------------|-------------------------------------------------------------------------------------------------------------|
+| **macOS/Linux (brew)**| `brew tap Gentleman-Programming/homebrew-tap && brew install gentle-ai`                                      |
+| **Windows (scoop)**   | `scoop bucket add gentleman https://github.com/Gentleman-Programming/scoop-bucket && scoop install gentle-ai`|
+| **Go install**        | `go install github.com/gentleman-programming/gentle-ai/cmd/gentle-ai@latest`                                 |
+| **Windows (script)**  | `irm https://raw.githubusercontent.com/Gentleman-Programming/gentle-ai/main/scripts/install.ps1 \            | iex`|
 
 ### Post-install
 
@@ -39,16 +39,16 @@ gentle-ai update            # Verificar actualizaciones
 
 ### SDD Commands (vía gentle-orchestrator)
 
-| Comando | Función |
-|---------|---------|
-| `/sdd-init` | Inicializa contexto SDD + detecta stack + testing |
-| `/sdd-explore <topic>` | Explora ideas, investiga código |
-| `/sdd-new <change>` | Pipeline completo: propuesta → specs → diseño → tareas |
-| `/sdd-ff <name>` | Fast-forward: proposal → specs → design → tasks |
-| `/sdd-continue [change]` | Siguiente fase según dependencias |
-| `/sdd-apply [change]` | Implementa tareas en batches |
-| `/sdd-verify [change]` | Valida contra specs y tests |
-| `/sdd-archive [change]` | Archiva cambio y persiste estado |
+| Comando                 | Función                                               |
+|------------------------|------------------------------------------------------|
+| `/sdd-init`             | Inicializa contexto SDD + detecta stack + testing     |
+| `/sdd-explore <topic>`  | Explora ideas, investiga código                       |
+| `/sdd-new <change>`     | Pipeline completo: propuesta → specs → diseño → tareas|
+| `/sdd-ff <name>`        | Fast-forward: proposal → specs → design → tasks       |
+| `/sdd-continue [change]`| Siguiente fase según dependencias                     |
+| `/sdd-apply [change]`   | Implementa tareas en batches                          |
+| `/sdd-verify [change]`  | Valida contra specs y tests                           |
+| `/sdd-archive [change]` | Archiva cambio y persiste estado                      |
 
 ### Perfiles Multi-Modelo (OpenCode)
 
@@ -245,15 +245,15 @@ bunx @every-env/compound-plugin cleanup --target qwen
 
 ## 4. Estado Actual en el PersonalOS
 
-| Componente | Versión | Estado | Notas |
-|------------|---------|--------|-------|
-| **gentle-ai** | v1.30.8 | ✅ ACTUALIZADO | Go bin en `~/go/bin/gentle-ai.exe` + AppData |
-| **gentle-pi** | — | ❌ NO INSTALADO | oh-my-pi no está instalado |
-| **CE Plugin** | v3.8.3 (bun) | ✅ DISPONIBLE | Instalación Bun disponible, no nativa |
-| **CE Skills** | v3.x | ✅ ACTIVO | En `01_Core/02_Tools/02_Skills/00_Compound_Engineering/` |
-| **Agent Teams Lite** | v2.0 (legacy) | 🗄️ LEGACY | Archivo → reemplazado por gentle-ai |
-| **Engram** | v1.15.15 | ✅ ACTIVO | Memoria persistente |
-| **GGA** | v2.8.1 | ✅ ACTIVO | Code Review pre-commit |
+| Componente          | Versión      | Estado        | Notas                                                   |
+|--------------------|-------------|--------------|--------------------------------------------------------|
+| **gentle-ai**       | v1.30.8      | ✅ ACTUALIZADO | Go bin en `~/go/bin/gentle-ai.exe` + AppData            |
+| **gentle-pi**       | —            | ❌ NO INSTALADO| oh-my-pi no está instalado                              |
+| **CE Plugin**       | v3.8.3 (bun) | ✅ DISPONIBLE  | Instalación Bun disponible, no nativa                   |
+| **CE Skills**       | v3.x         | ✅ ACTIVO      | En `01_Core/02_Tools/02_Skills/00_Compound_Engineering/`|
+| **Agent Teams Lite**| v2.0 (legacy)| 🗄️ LEGACY     | Archivo → reemplazado por gentle-ai                     |
+| **Engram**          | v1.15.15     | ✅ ACTIVO      | Memoria persistente                                     |
+| **GGA**             | v2.8.1       | ✅ ACTIVO      | Code Review pre-commit                                  |
 
 ### Próximos pasos recomendados
 

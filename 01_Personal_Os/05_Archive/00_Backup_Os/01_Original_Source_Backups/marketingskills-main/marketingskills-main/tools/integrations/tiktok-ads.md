@@ -4,12 +4,12 @@ Advertising platform for TikTok's short-form video audience.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | Marketing API for campaigns, audiences, reporting |
-| MCP | - | Not available |
-| CLI | - | Not available |
-| SDK | ✓ | Python SDK available |
+| Integration  | Available  | Notes                                            |
+|-------------|-----------|-------------------------------------------------|
+| API          | ✓          | Marketing API for campaigns, audiences, reporting|
+| MCP          |-----------| Not available                                    |
+| CLI          |-----------| Not available                                    |
+| SDK          | ✓          | Python SDK available                             |
 
 ## Authentication
 
@@ -101,18 +101,18 @@ Access-Token: {access_token}
 
 ## Key Metrics
 
-| Metric | Description |
-|--------|-------------|
-| `spend` | Amount spent |
-| `impressions` | Ad impressions |
-| `clicks` | Clicks |
-| `ctr` | Click-through rate |
-| `cpc` | Cost per click |
-| `cpm` | Cost per 1000 impressions |
-| `conversion` | Conversions |
-| `cost_per_conversion` | CPA |
-| `video_play_actions` | Video views |
-| `video_watched_6s` | 6s views |
+| Metric               | Description              |
+|---------------------|-------------------------|
+| `spend`              | Amount spent             |
+| `impressions`        | Ad impressions           |
+| `clicks`             | Clicks                   |
+| `ctr`                | Click-through rate       |
+| `cpc`                | Cost per click           |
+| `cpm`                | Cost per 1000 impressions|
+| `conversion`         | Conversions              |
+| `cost_per_conversion`| CPA                      |
+| `video_play_actions` | Video views              |
+| `video_watched_6s`   | 6s views                 |
 
 ## Campaign Objectives
 

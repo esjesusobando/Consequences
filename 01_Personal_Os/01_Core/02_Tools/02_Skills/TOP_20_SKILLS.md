@@ -1,6 +1,6 @@
 # 🏆 TOP 20 SKILLS — Ranking General por Valor & SOTA & Quality
 
-> **Proyecto:** PersonalOS v4.0 Consequences
+> **Proyecto:** PersonalOS v4.7 Consequences
 > **Fecha:** 2026-05-14
 > **Criterio:** Valor práctico × Estado del arte × Calidad de ejecución
 > **Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
@@ -15,7 +15,7 @@
 | Dimensión                             | Score                        | Justificación                                                                             |
 |--------------------------------------|-----------------------------|------------------------------------------------------------------------------------------|
 | **Valor**                             | 10/10                        | Zero-dependency, MP4/GIF export, deploy to URL, universal shell                           |
-| **SOTA**                              | 10/10                        | v2.55.0 — 5 años de refinamiento, 0 competitors equivalentes                              |
+| **SOTA**                              | 10/10                        | v3.8.4 — Motor de ejecución universal                                                     |
 | **Calidad**                           | 10/10                        | 200+ commands, atomic workflows, self-healing                                             |
 | **TOTAL**                             | **30/30**                    |                                                                                           |
 
@@ -393,5 +393,5 @@ NUEVO PROYECTO
 
 ---
 
-*PersonalOS v4.0 Consequences — 2026-05-14*
+*PersonalOS v4.7 Consequences — 2026-05-24*
 *Creado: TOP 20 Skills ranking general*

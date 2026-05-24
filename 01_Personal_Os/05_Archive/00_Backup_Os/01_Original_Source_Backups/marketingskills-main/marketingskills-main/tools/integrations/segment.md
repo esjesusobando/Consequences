@@ -4,12 +4,12 @@ Customer data platform for collecting, routing, and activating user data.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | Tracking API, Profile API, Config API |
-| MCP | - | Not available |
-| CLI | - | Not available |
-| SDK | ✓ | analytics.js, iOS, Android, server libraries |
+| Integration  | Available  | Notes                                       |
+|-------------|-----------|--------------------------------------------|
+| API          | ✓          | Tracking API, Profile API, Config API       |
+| MCP          |-----------| Not available                               |
+| CLI          |-----------| Not available                               |
+| SDK          | ✓          | analytics.js, iOS, Android, server libraries|
 
 ## Authentication
 

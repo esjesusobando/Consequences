@@ -77,27 +77,27 @@ Audited 9 core documentation files for version/metric/directory-name consistency
 
 ## Final state
 
-| Criterion | Verdict |
-|-----------|---------|
-| Version v4.7 Consequences | ✅ Clean — no stale v4.1 in active content |
-| Directory `00_System_Core` | ✅ Clean — no `00_Personal_Os_Stack` |
-| Every CE v3.8.4 | ✅ Consistent |
-| gentle-ai v1.30.6 | ✅ Consistent |
-| MCPs 36 | ✅ Count consistent across all files |
-| Agents 46 (5+23+13+5) | ✅ Count + breakdown consistent |
-| HUBs 19 + 284 scripts | ✅ Consistent |
-| 10_Skill_Auditor | ✅ Clean — no `00_Skill_Auditor` |
-| Footers `v4.7 Consequences` | ✅ All footers consistent |
-| Trees match metrics | ✅ Clean |
+| Criterion                  | Verdict                                  |
+|---------------------------|-----------------------------------------|
+| Version v4.7 Consequences  | ✅ Clean — no stale v4.1 in active content|
+| Directory `00_System_Core` | ✅ Clean — no `00_Personal_Os_Stack`      |
+| Every CE v3.8.4            | ✅ Consistent                             |
+| gentle-ai v1.30.6          | ✅ Consistent                             |
+| MCPs 36                    | ✅ Count consistent across all files      |
+| Agents 46 (5+23+13+5)      | ✅ Count + breakdown consistent           |
+| HUBs 19 + 284 scripts      | ✅ Consistent                             |
+| 10_Skill_Auditor           | ✅ Clean — no `00_Skill_Auditor`          |
+| Footers `v4.7 Consequences`| ✅ All footers consistent                 |
+| Trees match metrics        | ✅ Clean                                  |
 
 ### Known non-blocking discrepancies (suspect)
 
-| Issue | Why not fixed |
-|-------|---------------|
-| MCP table lists 34 of 36 servers | Table is illustrative; real count is in .mcp.json |
-| Skills README tree annotations differ from official counts | Tree shows directory-scoped, not recursive |
-| CLAUDE.md headers say v4.0 | Architecture model version, not OS version |
-| SDD command naming: hyphens vs colons | Out of scope for this audit |
+| Issue                                                     | Why not fixed                                    |
+|----------------------------------------------------------|-------------------------------------------------|
+| MCP table lists 34 of 36 servers                          | Table is illustrative; real count is in .mcp.json|
+| Skills README tree annotations differ from official counts| Tree shows directory-scoped, not recursive       |
+| CLAUDE.md headers say v4.0                                | Architecture model version, not OS version       |
+| SDD command naming: hyphens vs colons                     | Out of scope for this audit                      |
 
 ---
 

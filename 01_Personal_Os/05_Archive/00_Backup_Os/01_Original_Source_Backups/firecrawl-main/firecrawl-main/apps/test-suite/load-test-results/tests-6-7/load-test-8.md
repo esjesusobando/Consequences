@@ -22,21 +22,21 @@ This load test, conducted over a period of 7 minutes with an extended observatio
 ### Configuration
 
 
-| Machine | Size/CPU | Status |
-|---|---|---|
-| 73d8dd909c1189 mia (app) | performance-cpu-1x@2048MB | always on |
-| e286de4f711e86 mia (app) | performance-cpu-1x@2048MB | always on |
-| 178134db566489 mia (worker) | performance-cpu-1x@2048MB | always on |
-| 7811020c91d138 mia (worker) | performance-cpu-1x@2048MB | always on
+| Machine                    | Size/CPU                 | Status   |
+|---------------------------|-------------------------|---------|
+| 73d8dd909c1189 mia (app)   | performance-cpu-1x@2048MB| always on|
+| e286de4f711e86 mia (app)   | performance-cpu-1x@2048MB| always on|
+| 178134db566489 mia (worker)| performance-cpu-1x@2048MB| always on|
+| 7811020c91d138 mia (worker)| performance-cpu-1x@2048MB| always on|
 178134db566489 mia (worker) | performance-cpu-1x@2048MB | stopped
 | 06e825d0da2387 mia (worker) | performance-cpu-1x@2048MB | stopped |
 
 fire-engine machines:
-| Machine | Size/CPU | Status |
-|---|---|---|
-| 2874d0db0e5258 mia app | performance-cpu-2x@4096MB | always on |
-| 48ed194f7de258 mia app | performance-cpu-2x@4096MB | always on |
-| 56830d45f70218 sjc app | performance-cpu-2x@4096MB | always on |
+| Machine               | Size/CPU                 | Status   |
+|----------------------|-------------------------|---------|
+| 2874d0db0e5258 mia app| performance-cpu-2x@4096MB| always on|
+| 48ed194f7de258 mia app| performance-cpu-2x@4096MB| always on|
+| 56830d45f70218 sjc app| performance-cpu-2x@4096MB| always on|
 
 ```yml
 phases:
@@ -59,31 +59,31 @@ NUM_WORKERS_PER_QUEUE=12
 ### Results
 Date: 14:42:27(-0300)
 
-| Metric                                      | Value   |
+| Metric                                       | Value    |
 |---------------------------------------------|---------|
-| errors.Failed capture or match              | 43      |
-| http.codes.200                              | 1757    |
-| http.codes.404                              | 43      |
-| http.downloaded_bytes                       | 0       |
-| http.request_rate                           | 3/sec   |
-| http.requests                               | 1800    |
-| http.response_time.min                      | 363     |
-| http.response_time.max                      | 6065    |
-| http.response_time.mean                     | 847.8   |
-| http.response_time.median                   | 804.5   |
-| http.response_time.p95                      | 1130.2  |
-| http.response_time.p99                      | 1353.1  |
-| http.responses                              | 1800    |
-| vusers.completed                            | 857     |
-| vusers.created                              | 900     |
-| vusers.created_by_name.Crawl a URL          | 900     |
-| vusers.failed                               | 43      |
-| vusers.session_length.min                   | 11598.4 |
-| vusers.session_length.max                   | 17005.3 |
-| vusers.session_length.mean                  | 11854.1 |
-| vusers.session_length.median                | 11734.2 |
-| vusers.session_length.p95                   | 12213.1 |
-| vusers.session_length.p99                   | 12459.8 |
+| errors.Failed capture or match               | 43       |
+| http.codes.200                               | 1757     |
+| http.codes.404                               | 43       |
+| http.downloaded_bytes                        | 0        |
+| http.request_rate                            | 3/sec    |
+| http.requests                                | 1800     |
+| http.response_time.min                       | 363      |
+| http.response_time.max                       | 6065     |
+| http.response_time.mean                      | 847.8    |
+| http.response_time.median                    | 804.5    |
+| http.response_time.p95                       | 1130.2   |
+| http.response_time.p99                       | 1353.1   |
+| http.responses                               | 1800     |
+| vusers.completed                             | 857      |
+| vusers.created                               | 900      |
+| vusers.created_by_name.Crawl a URL           | 900      |
+| vusers.failed                                | 43       |
+| vusers.session_length.min                    | 11598.4  |
+| vusers.session_length.max                    | 17005.3  |
+| vusers.session_length.mean                   | 11854.1  |
+| vusers.session_length.median                 | 11734.2  |
+| vusers.session_length.p95                    | 12213.1  |
+| vusers.session_length.p99                    | 12459.8  |
 
 ### Metrics
 

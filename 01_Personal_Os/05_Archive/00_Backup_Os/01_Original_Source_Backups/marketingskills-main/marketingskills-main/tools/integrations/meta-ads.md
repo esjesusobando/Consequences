@@ -4,12 +4,12 @@ Advertising platform for Facebook, Instagram, Messenger, and Audience Network.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | Marketing API for campaigns, audiences, reporting |
-| MCP | - | Not available |
-| CLI | - | Not available |
-| SDK | ✓ | Official SDKs for Python, PHP, Node.js |
+| Integration  | Available  | Notes                                            |
+|-------------|-----------|-------------------------------------------------|
+| API          | ✓          | Marketing API for campaigns, audiences, reporting|
+| MCP          |-----------| Not available                                    |
+| CLI          |-----------| Not available                                    |
+| SDK          | ✓          | Official SDKs for Python, PHP, Node.js           |
 
 ## Authentication
 
@@ -90,17 +90,17 @@ access_token={access_token}
 
 ## Key Metrics
 
-| Metric | Description |
-|--------|-------------|
-| `impressions` | Ad impressions |
-| `clicks` | All clicks |
-| `spend` | Amount spent |
-| `reach` | Unique people reached |
-| `frequency` | Avg impressions per person |
-| `cpm` | Cost per 1000 impressions |
-| `cpc` | Cost per click |
-| `actions` | Conversions array |
-| `cost_per_action_type` | CPA by action |
+| Metric                | Description               |
+|----------------------|--------------------------|
+| `impressions`         | Ad impressions            |
+| `clicks`              | All clicks                |
+| `spend`               | Amount spent              |
+| `reach`               | Unique people reached     |
+| `frequency`           | Avg impressions per person|
+| `cpm`                 | Cost per 1000 impressions |
+| `cpc`                 | Cost per click            |
+| `actions`             | Conversions array         |
+| `cost_per_action_type`| CPA by action             |
 
 ## Campaign Objectives
 

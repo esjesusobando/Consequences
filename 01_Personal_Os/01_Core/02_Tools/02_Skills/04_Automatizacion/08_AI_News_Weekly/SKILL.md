@@ -244,9 +244,9 @@ Can be triggered via N8N webhook for automated weekly generation.
 
 ## Changelog
 
-| Version | Date | Changes |
-|---------|------|---------|
-| v1.0 | 2026-05-22 | Initial skill creation |
+| Version  | Date      | Changes               |
+|---------|----------|----------------------|
+| v1.0     | 2026-05-22| Initial skill creation|
 
 ---
 

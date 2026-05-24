@@ -30,7 +30,7 @@
 | 20       | `20_Qmd`                                     | QMD project                                    | ✅ Activo             | Quick notes terminal + MCP server             |
 | 21       | `21_Sub_Agent_Statusline`                    | Joaquinvesapa/sub-agent-statusline             | ✅ Activo             | OpenCode sidebar agents                       |
 | 22       | `22_Taste_Skill`                             | Leonxlnx/taste-skill                           | ✅ Activo             | **Diseño premium** ⭐ 3.9k stars               |
-| 23       | `23_Tubemaster`                              | Gentleman-Programming/tubemaster               | ✅ Gitlink            | YouTube operations (Next.js 16)              |
+| 23       | `23_Tubemaster`                              | Gentleman-Programming/tubemaster               | ✅ Gitlink            | YouTube operations (Next.js 16)               |
 | 24       | `24_gentle-pi`                               | Gentleman-Programming/gentle-pi                | ✅ Gitlink            | **Gentleman harness para Pi** v0.3.2          |
 | 25       | `25_engram`                                  | Gentleman-Programming/engram                   | ✅ Gitlink            | **Engram core** (Go binary + MCP)             |
 

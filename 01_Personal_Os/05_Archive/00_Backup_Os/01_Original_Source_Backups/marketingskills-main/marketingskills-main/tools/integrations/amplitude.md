@@ -4,12 +4,12 @@ Product analytics platform for user behavior, retention, and experimentation.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | HTTP API for events, User Profile API, Export API |
-| MCP | - | Not available |
-| CLI | - | Not available |
-| SDK | ✓ | JavaScript, iOS, Android, Python, etc. |
+| Integration  | Available  | Notes                                            |
+|-------------|-----------|-------------------------------------------------|
+| API          | ✓          | HTTP API for events, User Profile API, Export API|
+| MCP          |-----------| Not available                                    |
+| CLI          |-----------| Not available                                    |
+| SDK          | ✓          | JavaScript, iOS, Android, Python, etc.           |
 
 ## Authentication
 

@@ -4,12 +4,12 @@ E-commerce platform for online stores and retail.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | REST Admin API, Storefront API, GraphQL |
-| MCP | - | Not available |
-| CLI | ✓ | Shopify CLI for themes and apps |
-| SDK | ✓ | Official libraries for multiple languages |
+| Integration  | Available  | Notes                                    |
+|-------------|-----------|-----------------------------------------|
+| API          | ✓          | REST Admin API, Storefront API, GraphQL  |
+| MCP          |-----------| Not available                            |
+| CLI          | ✓          | Shopify CLI for themes and apps          |
+| SDK          | ✓          | Official libraries for multiple languages|
 
 ## Authentication
 
@@ -146,14 +146,14 @@ shopify app create node
 
 ## Webhook Topics
 
-| Topic | When |
-|-------|------|
-| `orders/create` | New order |
-| `orders/paid` | Order paid |
-| `orders/fulfilled` | Order shipped |
-| `customers/create` | New customer |
+| Topic             | When            |
+|------------------|----------------|
+| `orders/create`   | New order       |
+| `orders/paid`     | Order paid      |
+| `orders/fulfilled`| Order shipped   |
+| `customers/create`| New customer    |
 | `products/update` | Product changed |
-| `checkouts/create` | Checkout started |
+| `checkouts/create`| Checkout started|
 
 ## When to Use
 

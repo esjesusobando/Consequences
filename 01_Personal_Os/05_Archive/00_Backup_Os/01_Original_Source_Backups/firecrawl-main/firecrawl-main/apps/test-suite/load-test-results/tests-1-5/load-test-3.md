@@ -22,13 +22,13 @@ The load test involved setting up an autoscaling option and adjusting the hard a
 ## Test environment
 ### Machines
 
-| Machine | Size/CPU | Status |
-|---|---|---|
-| e286de4f711e86 mia (app) | performance-cpu-1x@2048MB | always on |
-| 73d8dd909c1189 mia (app) | performance-cpu-1x@2048MB | always on |
-| 6e82050c726358 mia (app) | performance-cpu-1x@2048MB | paused |
-| 4d89505a6e5038 mia (app) | performance-cpu-1x@2048MB | paused |
-| 48ed6e6b74e378 mia (app) | performance-cpu-1x@2048MB | paused |
+| Machine                 | Size/CPU                 | Status   |
+|------------------------|-------------------------|---------|
+| e286de4f711e86 mia (app)| performance-cpu-1x@2048MB| always on|
+| 73d8dd909c1189 mia (app)| performance-cpu-1x@2048MB| always on|
+| 6e82050c726358 mia (app)| performance-cpu-1x@2048MB| paused   |
+| 4d89505a6e5038 mia (app)| performance-cpu-1x@2048MB| paused   |
+| 48ed6e6b74e378 mia (app)| performance-cpu-1x@2048MB| paused   |
 
 ---
 
@@ -59,32 +59,32 @@ arrivalRate: 10  # Cool down
 ### Results
 Date: 14:53:32(-0300)
 
-| Metric                                      | Value   |
+| Metric                                       | Value    |
 |---------------------------------------------|---------|
-| errors.ETIMEDOUT                            | 653     |
-| errors.Failed capture or match              | 2       |
-| http.codes.200                              | 8345    |
-| http.codes.502                              | 2       |
-| http.downloaded_bytes                       | 0       |
-| http.request_rate                           | 11/sec  |
-| http.requests                               | 9000    |
-| http.response_time.min                      | 979     |
-| http.response_time.max                      | 9941    |
-| http.response_time.mean                     | 3037.2  |
-| http.response_time.median                   | 2059.5  |
-| http.response_time.p95                      | 7709.8  |
-| http.response_time.p99                      | 9416.8  |
-| http.responses                              | 8347    |
-| vusers.completed                            | 8345    |
-| vusers.created                              | 9000    |
-| vusers.created_by_name.Scrape a URL         | 9000    |
-| vusers.failed                               | 655     |
-| vusers.session_length.min                   | 1044.5  |
-| vusers.session_length.max                   | 9998.8  |
-| vusers.session_length.mean                  | 3109.7  |
-| vusers.session_length.median                | 2143.5  |
-| vusers.session_length.p95                   | 7709.8  |
-| vusers.session_length.p99                   | 9416.8  |
+| errors.ETIMEDOUT                             | 653      |
+| errors.Failed capture or match               | 2        |
+| http.codes.200                               | 8345     |
+| http.codes.502                               | 2        |
+| http.downloaded_bytes                        | 0        |
+| http.request_rate                            | 11/sec   |
+| http.requests                                | 9000     |
+| http.response_time.min                       | 979      |
+| http.response_time.max                       | 9941     |
+| http.response_time.mean                      | 3037.2   |
+| http.response_time.median                    | 2059.5   |
+| http.response_time.p95                       | 7709.8   |
+| http.response_time.p99                       | 9416.8   |
+| http.responses                               | 8347     |
+| vusers.completed                             | 8345     |
+| vusers.created                               | 9000     |
+| vusers.created_by_name.Scrape a URL          | 9000     |
+| vusers.failed                                | 655      |
+| vusers.session_length.min                    | 1044.5   |
+| vusers.session_length.max                    | 9998.8   |
+| vusers.session_length.mean                   | 3109.7   |
+| vusers.session_length.median                 | 2143.5   |
+| vusers.session_length.p95                    | 7709.8   |
+| vusers.session_length.p99                    | 9416.8   |
 
 ### Metrics
 

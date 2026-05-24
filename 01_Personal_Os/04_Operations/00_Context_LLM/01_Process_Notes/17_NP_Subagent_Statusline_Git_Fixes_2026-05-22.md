@@ -91,11 +91,11 @@ Se actualizó `01_Personal_Os/01_Core/01_Rules/10_Git_Directions.mdc`:
 
 A partir de esta sesión, cuando el usuario diga **"documentar"** o **"documentar todo"**:
 
-| Destino | Formato | Propósito |
-|---------|---------|-----------|
-| `00_Context_Memory/` | `NN_CTX_Session_YYYY-MM-DD.md` | Contexto ligero de sesión |
-| `01_Process_Notes/` | `NN_NP_Descripcion_YYYY-MM-DD.md` | Detalle técnico completo |
-| Engram | `mem_save` + `mem_session_summary` | Memoria persistente cross-session |
+| Destino             | Formato                           | Propósito                        |
+|--------------------|----------------------------------|---------------------------------|
+| `00_Context_Memory/`| `NN_CTX_Session_YYYY-MM-DD.md`    | Contexto ligero de sesión        |
+| `01_Process_Notes/` | `NN_NP_Descripcion_YYYY-MM-DD.md` | Detalle técnico completo         |
+| Engram              | `mem_save` + `mem_session_summary`| Memoria persistente cross-session|
 
 ---
 

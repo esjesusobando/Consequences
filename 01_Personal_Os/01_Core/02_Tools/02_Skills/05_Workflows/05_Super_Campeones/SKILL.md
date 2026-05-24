@@ -99,13 +99,13 @@ export CLAUDE_CODE_FORK_SUBAGENT=1
 
 ### Fork vs Subagent Tipeado
 
-| Contexto | Usar Fork | Usar Subagent |
-|----------|-----------|---------------|
-| Continuación de contexto | ✅ | ❌ |
-| Exploración paralela | ✅ | ❌ |
-| Tarea aislada | ❌ | ✅ |
-| Contexto contaminado | ❌ | ✅ |
-| Modelo diferente necesario | ❌ | ✅ |
+| Contexto                  | Usar Fork  | Usar Subagent  |
+|--------------------------|-----------|---------------|
+| Continuación de contexto  | ✅          | ❌              |
+| Exploración paralela      | ✅          | ❌              |
+| Tarea aislada             | ❌          | ✅              |
+| Contexto contaminado      | ❌          | ✅              |
+| Modelo diferente necesario| ❌          | ✅              |
 
 ## Gotchas
 
@@ -117,12 +117,12 @@ export CLAUDE_CODE_FORK_SUBAGENT=1
 
 ## Integración SDD
 
-| Fase SDD | Rol Supercampeones |
+| Fase SDD  | Rol Supercampeones   |
 |----------|---------------------|
-| Explore | Researcher/Delantero |
-| Plan | Director coordina |
-| Apply | Jugadores ejecutan |
-| Verify | Árbitro revisa |
+| Explore   | Researcher/Delantero |
+| Plan      | Director coordina    |
+| Apply     | Jugadores ejecutan   |
+| Verify    | Árbitro revisa       |
 
 ## Referencia
 

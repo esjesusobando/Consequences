@@ -53,10 +53,10 @@ Estado post-sync: **394 skills | 82 agents | 30 workflows | 19 HUBs | 284 script
 
 ## ✅ 4. DIAGNÓSTICO SKILLS DRIFT (.agent 734 vs 01_Core 394)
 
-| Directorio | SKILL.md | Estado |
-|---|---|---|
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/` | 394 | ✅ Fuente de verdad (12 áreas) |
-| `.agent/02_Skills/` | 734 | 📋 Legacy copy-not-cut de v3.1 |
+| Directorio                                  | SKILL.md| Estado                       |
+|--------------------------------------------|--------|-----------------------------|
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/`| 394     | ✅ Fuente de verdad (12 áreas)|
+| `.agent/02_Skills/`                         | 734     | 📋 Legacy copy-not-cut de v3.1|
 
 **Causa raíz:** Migración v3.1 que consolidó skills de ~34 directorios legacy en 12 áreas funcionales. La operación fue **copy, no cut**. `.agent` conserva los 22 directorios pre-consolidación + `10_Backup/` (205 skills de sistema Gentleman anterior).
 
@@ -68,14 +68,14 @@ Estado post-sync: **394 skills | 82 agents | 30 workflows | 19 HUBs | 284 script
 
 ## 📊 RESUMEN DE CAMBIOS
 
-| Archivo | Cambio |
-|---------|--------|
-| `~/.config/opencode/opencode.json` | +21 CE skills registradas |
-| `CLAUDE.md` | v4.6→v4.7, stats sync, drift note |
-| `Structure_v4.7.md` | stats sync, status, referencias |
-| `OS_DIRECTORY.md` | footer actualizado |
-| `.git/modules/` | submodule path fix |
-| `03_Resultado/09_World_OIM/` | index git corregido |
+| Archivo                           | Cambio                           |
+|----------------------------------|---------------------------------|
+| `~/.config/opencode/opencode.json`| +21 CE skills registradas        |
+| `CLAUDE.md`                       | v4.6→v4.7, stats sync, drift note|
+| `Structure_v4.7.md`               | stats sync, status, referencias  |
+| `OS_DIRECTORY.md`                 | footer actualizado               |
+| `.git/modules/`                   | submodule path fix               |
+| `03_Resultado/09_World_OIM/`      | index git corregido              |
 
 ## ➡️ PRÓXIMOS PASOS RECOMENDADOS
 - Ejecutar `20_System_Mapper_Hub.py --scan` post-cambios

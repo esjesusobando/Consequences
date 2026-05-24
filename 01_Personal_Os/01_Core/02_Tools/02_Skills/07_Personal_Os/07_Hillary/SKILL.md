@@ -49,13 +49,13 @@ Generar `01_Personal_Os/03_Task/Daily_Report.md` basado en `01_Hillary_Report_Te
 3. Procesar inbox al menos 1x por día
 
 ### Tags del Sistema
-| Tag | Significado | Destino |
-|-----|-------------|---------|
-| `[trabajo]` | Tarea laboral | BACKLOG P1 |
-| `[personal]` | Vida personal | BACKLOG P2 |
-| `[salud]` | Bienestar | BACKLOG P2 |
-| `[ideas]` | Ideas a explorar | Learning Always |
-| `[BUG]` | Bug encontrado | BACKLOG con priorización |
+| Tag         | Significado     | Destino                 |
+|------------|----------------|------------------------|
+| `[trabajo]` | Tarea laboral   | BACKLOG P1              |
+| `[personal]`| Vida personal   | BACKLOG P2              |
+| `[salud]`   | Bienestar       | BACKLOG P2              |
+| `[ideas]`   | Ideas a explorar| Learning Always         |
+| `[BUG]`     | Bug encontrado  | BACKLOG con priorización|
 
 ### Workflow: Captura Rápida
 ```

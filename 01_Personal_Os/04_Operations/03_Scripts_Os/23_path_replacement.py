@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-PATH REPLACEMENT SCRIPT — Think Different OS v3.1
+PATH REPLACEMENT SCRIPT — Think Different OS v4.7
 Reemplaza paths old con nuevos paths correctos.
 
 Uso:

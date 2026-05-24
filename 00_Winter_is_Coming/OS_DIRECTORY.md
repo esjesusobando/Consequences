@@ -6,20 +6,20 @@
 
 ## 🚨 ESTADO DEL SISTEMA
 
-| Componente                          | Total                                             | Estado                                       |
-|------------------------------------|--------------------------------------------------|---------------------------------------------|
-| MCPs Claude Code                    | **36**                                           | ✅ SYNCED — drift 0                          |
-| Every CE                            | v2.55.0 (local repo)                              | ✅ ACTIVE — Local version                     |
-| gentle-ai                           | v1.26.6                                          | ✅ AVAILABLE                                  |
-| Skills                              | **394** (12 áreas funcionales)                   | ✅ VERIFIED — 0 sin frontmatter               |
-| Agentes                             | **46** (5 Dream + 23 Specialists + 13 individuales + 5 Growth) | ✅ SYNCED — 46↔46 drift 0 |
-| HUBs                                | **19** scripts HUB (`*_Hub.py`) + 12 support     | ✅ VERIFIED                                   |
-| Scripts totales                     | **284** (recursivo en 03_Scripts_Os/)            | ✅ DOCUMENTED                                 |
-| Workflows                           | **30** (7 categorías en 00_Workflows_Os)          | ✅ ACTIVE                                     |
-| Hooks                               | **10** (6 fases)                                 | ✅ ACTIVE                                     |
-| Rules                               | **12 (.mdc)** en 01_Rules                         | ✅ DEFINED                                    |
-| JARVIS Manifests                    | 7 en 00_Manifest/                                | ✅ VALIDATED                                  |
-| Open Design                         | 62 skills + 138 design systems                   | ✅ INTEGRATED                                 |
+| Componente                          | Total                                                         | Estado                                       |
+|------------------------------------|--------------------------------------------------------------|---------------------------------------------|
+| MCPs Claude Code                    | **36**                                                        | ✅ SYNCED — drift 0                           |
+| Every CE                            | v3.8.4 (local repo)                                           | ✅ ACTIVE — Local version                     |
+| gentle-ai                           | v1.30.6                                                       | ✅ AVAILABLE                                  |
+| Skills                              | **394** (12 áreas funcionales)                                | ✅ VERIFIED — 0 sin frontmatter               |
+| Agentes                             | **46** (5 Dream + 23 Specialists + 13 individuales + 5 Growth)| ✅ SYNCED — 46↔46 drift 0                     |
+| HUBs                                | **19** scripts HUB (`*_Hub.py`) + 12 support                  | ✅ VERIFIED                                   |
+| Scripts totales                     | **284** (recursivo en 03_Scripts_Os/)                         | ✅ DOCUMENTED                                 |
+| Workflows                           | **30** (7 categorías en 00_Workflows_Os)                      | ✅ ACTIVE                                     |
+| Hooks                               | **10** (6 fases)                                              | ✅ ACTIVE                                     |
+| Rules                               | **12 (.mdc)** en 01_Rules                                     | ✅ DEFINED                                    |
+| JARVIS Manifests                    | 7 en 00_Manifest/                                             | ✅ VALIDATED                                  |
+| Open Design                         | 62 skills + 138 design systems                                | ✅ INTEGRATED                                 |
 
 > **🟢 ÚLTIMA AUDITORÍA:** 2026-05-23 — v4.7 Consequences
 > Agent Sync: 46↔46 drift 0. Skills: 394. MCPs: 36/36 sync.
@@ -118,20 +118,20 @@ Think_Different/
 
 ## 🧠 SKILLS — 12 ÁREAS FUNCIONALES (356 skills)
 
-| Área                                         | Descripción                                               | Skills |
+| Área                                         | Descripción                                               | Skills  |
 |---------------------------------------------|----------------------------------------------------------|--------|
-| 00_Compound_Engineering                      | Core CE — SDD + Compound Engineering                     | 63     |
-| 00_System_Core                         | Stack base OS + Gcierr                                    | 1      |
-| 10_Skill_Auditor                             | Auditoría de skills                                       | 4      |
-| 01_Creacion_Contenidos                       | Brand, YouTube, SEO, Carruseles                           | 38     |
-| 02_Diseno_Ui_Ux                              | Product Design, UI/UX, Taste, Minimal                     | 23     |
-| 03_Video_Media                               | Video Intel, James Cameron                                | 6      |
-| 04_Automatizacion                            | N8N, Firecrawl, GWS Client                                | 21     |
-| 05_Workflows                                 | Agent Teams, PM, Orchestrator                             | 33     |
-| 06_Tools                                     | Skill Creator, Testing, DevOps, Data                     | 93     |
-| 07_Personal_Os                               | Life OS, Hillary, Rituales                               | 29     |
-| 08_Invictus_Web                              | Playwright, Superpowers, Browser Auto                     | 14     |
-| 09_Claude_Ads                                | Claude Ads integration                                    | 20     |
+| 00_Compound_Engineering                      | Core CE — SDD + Compound Engineering                      | 63      |
+| 00_System_Core                               | Stack base OS + Gcierr                                    | 1       |
+| 10_Skill_Auditor                             | Auditoría de skills                                       | 4       |
+| 01_Creacion_Contenidos                       | Brand, YouTube, SEO, Carruseles                           | 38      |
+| 02_Diseno_Ui_Ux                              | Product Design, UI/UX, Taste, Minimal                     | 23      |
+| 03_Video_Media                               | Video Intel, James Cameron                                | 6       |
+| 04_Automatizacion                            | N8N, Firecrawl, GWS Client                                | 21      |
+| 05_Workflows                                 | Agent Teams, PM, Orchestrator                             | 33      |
+| 06_Tools                                     | Skill Creator, Testing, DevOps, Data                      | 93      |
+| 07_Personal_Os                               | Life OS, Hillary, Rituales                                | 29      |
+| 08_Invictus_Web                              | Playwright, Superpowers, Browser Auto                     | 14      |
+| 09_Claude_Ads                                | Claude Ads integration                                    | 20      |
 
 ---
 
@@ -182,7 +182,7 @@ Think_Different/
 | 09  | Data                                     | `09_Data_Hub.py`                                               | Procesamiento de datos                                |
 | 10  | General                                  | `10_General_Hub.py`                                            | Utilidades generales                                  |
 | 11  | Auto Learn                               | `11_Auto_Learn_Hub.py`                                         | Motor de automejora                                   |
-| 14  | Health Metrics ★                         | `14_Health_Metrics_Hub.py`                                      | Métricas de salud del OS                              |
+| 14  | Health Metrics ★                         | `14_Health_Metrics_Hub.py`                                     | Métricas de salud del OS                              |
 | 15  | MCP Sync ★                               | `15_MCP_Sync_Hub.py`                                           | Sync drift Claude ↔ OpenCode                          |
 | 16  | Agent Mirror                             | `16_Agent_Mirror_Hub.py`                                       | Mirror agentes source → backup                        |
 | 17  | Watchdog ★                               | `17_Watchdog_Hub.py`                                           | Health watchdog                                       |
@@ -231,13 +231,13 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ## 🎨 TOP 5 DESIGN SKILLS
 
-| Rank | Skill                                   | Valor | SOTA | Diseño | Total |
+| Rank  | Skill                                   | Valor  | SOTA  | Diseño  | Total  |
 |------|----------------------------------------|-------|------|--------|-------|
-| 🥇 1 | **Dumbledor Design**                    | 10    | 9    | 10     | **29** |
-| 🥈 2 | **Huashu Design**                       | 10    | 10   | 9      | **29** |
-| 🥉 3 | **Ui Ux Pro Max**                       | 9     | 8    | 9      | **26** |
-| 4   | **Frontend Slides**                     | 10    | 9    | 7      | **26** |
-| 5   | **Design SOTA**                         | 8     | 9    | 8      | **25** |
+| 🥇 1   | **Dumbledor Design**                    | 10     | 9     | 10      | **29** |
+| 🥈 2   | **Huashu Design**                       | 10     | 10    | 9       | **29** |
+| 🥉 3   | **Ui Ux Pro Max**                       | 9      | 8     | 9       | **26** |
+| 4     | **Frontend Slides**                     | 10     | 9     | 7       | **26** |
+| 5     | **Design SOTA**                         | 8      | 9     | 8       | **25** |
 
 ---
 

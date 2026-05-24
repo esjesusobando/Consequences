@@ -4,12 +4,12 @@ Content management system for blogs and websites.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | REST API (WP REST API) |
-| MCP | - | Not available |
-| CLI | ✓ | WP-CLI for server-side management |
-| SDK | ✓ | Various client libraries |
+| Integration  | Available  | Notes                            |
+|-------------|-----------|---------------------------------|
+| API          | ✓          | REST API (WP REST API)           |
+| MCP          |-----------| Not available                    |
+| CLI          | ✓          | WP-CLI for server-side management|
+| SDK          | ✓          | Various client libraries         |
 
 ## Authentication
 
@@ -145,15 +145,15 @@ wp plugin update --all
 
 ## Common Endpoints
 
-| Endpoint | Resource |
-|----------|----------|
-| `/wp/v2/posts` | Blog posts |
-| `/wp/v2/pages` | Pages |
-| `/wp/v2/media` | Images/files |
-| `/wp/v2/categories` | Categories |
-| `/wp/v2/tags` | Tags |
-| `/wp/v2/users` | Users |
-| `/wp/v2/comments` | Comments |
+| Endpoint           | Resource    |
+|-------------------|------------|
+| `/wp/v2/posts`     | Blog posts  |
+| `/wp/v2/pages`     | Pages       |
+| `/wp/v2/media`     | Images/files|
+| `/wp/v2/categories`| Categories  |
+| `/wp/v2/tags`      | Tags        |
+| `/wp/v2/users`     | Users       |
+| `/wp/v2/comments`  | Comments    |
 
 ## When to Use
 

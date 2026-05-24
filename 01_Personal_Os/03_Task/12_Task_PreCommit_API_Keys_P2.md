@@ -11,10 +11,10 @@
 
 ### Hooks Existentes en el Sistema
 
-| Hook | Ubicación | Función |
-|------|-----------|---------|
-| **GGA pre-commit** | `.agent/05_GGA/.github/workflows/pr-check.yml` | Valida PR: issue reference, labels |
-| **GGA pre-commit install** | `.agent/05_GGA/bin/gga` | Hook binario para staged files |
+| Hook                      | Ubicación                                     | Función                           |
+|--------------------------|----------------------------------------------|----------------------------------|
+| **GGA pre-commit**        | `.agent/05_GGA/.github/workflows/pr-check.yml`| Valida PR: issue reference, labels|
+| **GGA pre-commit install**| `.agent/05_GGA/bin/gga`                       | Hook binario para staged files    |
 
 ### Buscar en el Proyecto
 

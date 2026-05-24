@@ -11,11 +11,11 @@
 
 OIM Website es un proyecto activo en múltiples ubicaciones:
 
-| Instancia | Path | Estado |
-|-----------|------|--------|
-| **Primary** | `03_Resultado/09b_World_OIM/02_OIM_Website/` | ✅ Activo — Next 16.2.2 |
-| **Backup** | `03_Resultado/09b_World_OIM/04_OIM_Website_Backup/` | ✅ Funcional |
-| **Legacy** | `03_Resultado/09b_World_OIM/03_OIM_Website_One/` | ⚠️ Revisar |
+| Instancia  | Path                                               | Estado                |
+|-----------|---------------------------------------------------|----------------------|
+| **Primary**| `03_Resultado/09b_World_OIM/02_OIM_Website/`       | ✅ Activo — Next 16.2.2|
+| **Backup** | `03_Resultado/09b_World_OIM/04_OIM_Website_Backup/`| ✅ Funcional           |
+| **Legacy** | `03_Resultado/09b_World_OIM/03_OIM_Website_One/`   | ⚠️ Revisar            |
 
 ### Estado Primary (02_OIM_Website)
 
@@ -34,16 +34,16 @@ OIM Website es un proyecto activo en múltiples ubicaciones:
 
 ### Componentes Verificados
 
-| Componente | Archivo | Estado |
-|------------|---------|--------|
-| Home page | `src/app/page.tsx` | ✅ |
-| Hero Section | `src/components/HeroSection.tsx` | ✅ |
-| Services | `src/components/ServicesSection.tsx` | ✅ |
-| Scroll Video Services | `src/components/ScrollVideoServices.tsx` | ✅ |
-| Project Gallery | `src/components/ProjectGallery.tsx` | ✅ |
-| About Section | `src/components/AboutSection.tsx` | ✅ |
-| Contact Form | `src/components/ContactForm.tsx` | ✅ |
-| Service Area | `src/components/ServiceArea.tsx` | ✅ |
+| Componente           | Archivo                                 | Estado  |
+|---------------------|----------------------------------------|--------|
+| Home page            | `src/app/page.tsx`                      | ✅       |
+| Hero Section         | `src/components/HeroSection.tsx`        | ✅       |
+| Services             | `src/components/ServicesSection.tsx`    | ✅       |
+| Scroll Video Services| `src/components/ScrollVideoServices.tsx`| ✅       |
+| Project Gallery      | `src/components/ProjectGallery.tsx`     | ✅       |
+| About Section        | `src/components/AboutSection.tsx`       | ✅       |
+| Contact Form         | `src/components/ContactForm.tsx`        | ✅       |
+| Service Area         | `src/components/ServiceArea.tsx`        | ✅       |
 
 ### Videos en Public
 

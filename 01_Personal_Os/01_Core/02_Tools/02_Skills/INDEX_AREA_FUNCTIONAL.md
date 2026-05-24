@@ -11,7 +11,7 @@
 | Skill                                       | Path                                          | Descripción                                                  |
 |--------------------------------------------|----------------------------------------------|-------------------------------------------------------------|
 | **Compound Engineering**                    | `00_Compound_Engineering/`                    | CE Spider, Avengers, metodología completa                    |
-| **Personal OS Stack**                       | `00_System_Core/`                              | Stack base del OS, System Guardian                           |
+| **Personal OS Stack**                       | `00_System_Core/`                             | Stack base del OS, System Guardian                           |
 | **Skill Auditor**                           | `10_Skill_Auditor/`                           | Auditoría y validación de skills                             |
 
 ---

@@ -38,12 +38,12 @@ Metodología completa de 4 fases: ejecución + verificación + persistencia + do
 
 ## Cuándo Usar
 
-| Scenario | Ejemplo |
-|----------|---------|
-| Tareas multi-carpeta | "Migra todas las carpetas de X a Y" |
-| Verificación continua | "Audita todo el sistema" |
-| Revisión completa | "Revisá que todo esté bien" |
-| Migración con rollback | "Mové esto pero mantene backup" |
+| Scenario              | Ejemplo                            |
+|----------------------|-----------------------------------|
+| Tareas multi-carpeta  | "Migra todas las carpetas de X a Y"|
+| Verificación continua | "Audita todo el sistema"           |
+| Revisión completa     | "Revisá que todo esté bien"        |
+| Migración con rollback| "Mové esto pero mantene backup"    |
 
 ## Runbook
 
@@ -84,11 +84,11 @@ doc = {
 
 ## Comparación con otras Formaciones
 
-| Formación | Complejidad | Verificación | Docs | Memoria |
-|-----------|-------------|--------------|-------|---------|
-| **Octopus** | Baja | ❌ | ❌ | ❌ |
-| **4 Fantásticos** | Media | ✅ | ✅ | ✅ |
-| **Super Campeones** | Alta | ✅ | ✅ | ✅ |
+| Formación          | Complejidad  | Verificación  | Docs   | Memoria  |
+|-------------------|-------------|--------------|-------|---------|
+| **Octopus**        | Baja         | ❌             | ❌      | ❌        |
+| **4 Fantásticos**  | Media        | ✅             | ✅      | ✅        |
+| **Super Campeones**| Alta         | ✅             | ✅      | ✅        |
 
 ## Gotchas
 

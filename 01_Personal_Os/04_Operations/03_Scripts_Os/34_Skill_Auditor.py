@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 SKILL AUDITOR & FIXER
 Audita la estructura de 01_Core/03_Skills y corrige la numeración.

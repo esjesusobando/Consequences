@@ -14,9 +14,9 @@ description: >
 
 ## Sub-áreas y Contenido
 
-| Sub-área | Descripción |
-|----------|-------------|
-| `01_Video_Intel/` | Inteligencia de video |
+| Sub-área         | Descripción          |
+|-----------------|---------------------|
+| `01_Video_Intel/`| Inteligencia de video|
 
 ## Integración
 

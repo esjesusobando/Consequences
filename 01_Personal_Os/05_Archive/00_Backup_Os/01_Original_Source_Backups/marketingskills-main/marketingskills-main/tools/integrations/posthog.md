@@ -4,12 +4,12 @@ Open-source product analytics with session replay and feature flags.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | Capture API, Query API, Feature Flags API |
-| MCP | - | Not available |
-| CLI | ✓ | `posthog` CLI for local development |
-| SDK | ✓ | JavaScript, Python, Ruby, Go, etc. |
+| Integration  | Available  | Notes                                    |
+|-------------|-----------|-----------------------------------------|
+| API          | ✓          | Capture API, Query API, Feature Flags API|
+| MCP          |-----------| Not available                            |
+| CLI          | ✓          | `posthog` CLI for local development      |
+| SDK          | ✓          | JavaScript, Python, Ruby, Go, etc.       |
 
 ## Authentication
 

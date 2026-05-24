@@ -4,12 +4,12 @@ Email marketing platform for creators and newsletter businesses.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | REST API for subscribers, forms, sequences |
-| MCP | - | Not available |
-| CLI | - | Not available |
-| SDK | ✓ | JavaScript, Ruby gems available |
+| Integration  | Available  | Notes                                     |
+|-------------|-----------|------------------------------------------|
+| API          | ✓          | REST API for subscribers, forms, sequences|
+| MCP          |-----------| Not available                             |
+| CLI          |-----------| Not available                             |
+| SDK          | ✓          | JavaScript, Ruby gems available           |
 
 ## Authentication
 

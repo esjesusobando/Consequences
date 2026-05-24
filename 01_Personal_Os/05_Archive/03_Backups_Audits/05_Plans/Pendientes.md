@@ -9,46 +9,46 @@
 
 ### P0 — CRÍTICO
 
-| # | Item | Estado | Evidencia |
-|---|------|--------|-----------|
-| 1 | **Git Push** | ✅ | d9f1c2860 pushed |
-| 2 | **Elite_Portfolio Migration** | ✅ | SDD creado en 01_Personal_Os/03_Task/SDD_Elite_Portfolio_Migration.md |
+| #  | Item                         | Estado  | Evidencia                                                            |
+|---|-----------------------------|--------|---------------------------------------------------------------------|
+| 1  | **Git Push**                 | ✅       | d9f1c2860 pushed                                                     |
+| 2  | **Elite_Portfolio Migration**| ✅       | SDD creado en 01_Personal_Os/03_Task/SDD_Elite_Portfolio_Migration.md|
 
 ### P1 — IMPORTANTE
 
-| # | Item | Estado | Evidencia |
-|---|------|--------|-----------|
-| 3 | **05_OBAND vulns** | ✅ | Production vulns: 2 (1 moderate, 1 high) — postcss via Next.js |
-| 4 | **08_Elite_Portfolio framer-motion** | ✅ | Actualizado a 12.40.0 |
-| 5 | **D Legacy Routes** | ✅ | Audit scripts available |
+| #  | Item                                | Estado  | Evidencia                                                     |
+|---|------------------------------------|--------|--------------------------------------------------------------|
+| 3  | **05_OBAND vulns**                  | ✅       | Production vulns: 2 (1 moderate, 1 high) — postcss via Next.js|
+| 4  | **08_Elite_Portfolio framer-motion**| ✅       | Actualizado a 12.40.0                                         |
+| 5  | **D Legacy Routes**                 | ✅       | Audit scripts available                                       |
 
 ### P2 — MEDIO
 
-| # | Item | Estado | Evidencia |
-|---|------|--------|-----------|
-| 6 | **Setup_Guide.md** | ✅ | Existe en 04_Installer/01_Setup_Guide.md (completo) |
-| 7 | **Task 12 PreCommit API Keys** | ✅ | GGA tiene hooks, skill_security_scan.py existe |
-| 8 | **Task 13 Onboarding** | ✅ | Setup_Guide.md documentado y funcional |
+| #  | Item                          | Estado  | Evidencia                                          |
+|---|------------------------------|--------|---------------------------------------------------|
+| 6  | **Setup_Guide.md**            | ✅       | Existe en 04_Installer/01_Setup_Guide.md (completo)|
+| 7  | **Task 12 PreCommit API Keys**| ✅       | GGA tiene hooks, skill_security_scan.py existe     |
+| 8  | **Task 13 Onboarding**        | ✅       | Setup_Guide.md documentado y funcional             |
 
 ### P3 — BAJO
 
-| # | Item | Estado | Evidencia |
-|---|------|--------|-----------|
-| 9 | **Task 15 Marvel Workflows** | ✅ | 02_Marvel workflows completos (Iron Man, Spider, Thor, Hulk) |
-| 10 | **Task 16 Ritual Cierre** | ✅ | 01_Ritual/ protocols exist |
-| 11 | **Task 17 Avengers Plan** | ✅ | 00_Winter_is_Coming/AGENTS.md configurado |
+| #  | Item                        | Estado  | Evidencia                                                   |
+|---|----------------------------|--------|------------------------------------------------------------|
+| 9  | **Task 15 Marvel Workflows**| ✅       | 02_Marvel workflows completos (Iron Man, Spider, Thor, Hulk)|
+| 10 | **Task 16 Ritual Cierre**   | ✅       | 01_Ritual/ protocols exist                                  |
+| 11 | **Task 17 Avengers Plan**   | ✅       | 00_Winter_is_Coming/AGENTS.md configurado                   |
 
 ---
 
 ## 📊 RESUMEN FINAL
 
-| Categoría | Completado | Pendiente |
+| Categoría  | Completado  | Pendiente  |
 |-----------|------------|-----------|
-| P0 Tasks | 2 | 0 |
-| P1 Tasks | 3 | 0 |
-| P2 Tasks | 3 | 0 |
-| P3 Tasks | 3 | 0 |
-| **TOTAL** | **11** | **0** |
+| P0 Tasks   | 2           | 0          |
+| P1 Tasks   | 3           | 0          |
+| P2 Tasks   | 3           | 0          |
+| P3 Tasks   | 3           | 0          |
+| **TOTAL**  | **11**      | **0**      |
 
 ---
 
@@ -77,11 +77,11 @@
 
 ## 📁 GIT COMMIT HISTORY
 
-| Commit | Descripción |
-|--------|-------------|
-| d9f1c2860 | feat: add Obsidian CLI skill + Elite_Portfolio migration SDD |
-| f97923880 | chore: finalize v4.7 — move legacy docs to archive |
-| cad97764d | feat: v4.7 Consequences — dependency modernization, reports consolidation, boot protocol |
+| Commit   | Descripción                                                                             |
+|---------|----------------------------------------------------------------------------------------|
+| d9f1c2860| feat: add Obsidian CLI skill + Elite_Portfolio migration SDD                            |
+| f97923880| chore: finalize v4.7 — move legacy docs to archive                                      |
+| cad97764d| feat: v4.7 Consequences — dependency modernization, reports consolidation, boot protocol|
 
 ---
 

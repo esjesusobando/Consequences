@@ -35,16 +35,16 @@ Resolve all pending phases (A→F) from PLAN_SEGUIR_2026-05-22.md and push to re
 - Canonical path: `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
 ### Phase E: Backlog Items
-| Item | Status |
-|------|--------|
-| Elite Portfolio | NOT migration — design gap (gold palette, Playfair Display, video hero not implemented) |
-| OIM Website | Build fails — Turbopack native bindings missing (platform issue) |
-| Pre-commit API keys | EXISTS and functional at .git/hooks/pre-commit |
-| Onboarding | 01_Setup_Guide.md created |
-| Reports | 10_Reports/ created with README |
-| Marvel workflows | Iron Man ↔ Professor X swapped (content mismatch) |
-| Ritual cierre | cwd bug fixed (subprocess now runs from ROOT) |
-| Avengers Plan | Partially implemented — config_paths.py done, rest low priority |
+| Item               | Status                                                                                 |
+|-------------------|---------------------------------------------------------------------------------------|
+| Elite Portfolio    | NOT migration — design gap (gold palette, Playfair Display, video hero not implemented)|
+| OIM Website        | Build fails — Turbopack native bindings missing (platform issue)                       |
+| Pre-commit API keys| EXISTS and functional at .git/hooks/pre-commit                                         |
+| Onboarding         | 01_Setup_Guide.md created                                                              |
+| Reports            | 10_Reports/ created with README                                                        |
+| Marvel workflows   | Iron Man ↔ Professor X swapped (content mismatch)                                      |
+| Ritual cierre      | cwd bug fixed (subprocess now runs from ROOT)                                          |
+| Avengers Plan      | Partially implemented — config_paths.py done, rest low priority                        |
 
 ### Phase F: AI News Weekly
 - Report generated at `03_Resultado/15_AI_News_Weekly_20260522/`

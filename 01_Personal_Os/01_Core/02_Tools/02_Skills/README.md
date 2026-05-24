@@ -123,7 +123,7 @@
 | Tools (Testing, DevOps)                                        | `06_Tools/`                                                 |
 | Personal OS (Hillary, Life OS)                                 | `07_Personal_Os/`                                           |
 | Invictus Web                                                   | `08_Invictus_Web/`                                          |
-| Claude Ads                                                    | `09_Claude_Ads/`                                             |
+| Claude Ads                                                     | `09_Claude_Ads/`                                            |
 
 ---
 

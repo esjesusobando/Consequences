@@ -4,12 +4,12 @@ Free tool for monitoring website search performance and indexing.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | Search Analytics API, URL Inspection API |
-| MCP | - | Not available |
-| CLI | - | Use gcloud or API scripts |
-| SDK | ✓ | Google API client libraries |
+| Integration  | Available  | Notes                                   |
+|-------------|-----------|----------------------------------------|
+| API          | ✓          | Search Analytics API, URL Inspection API|
+| MCP          |-----------| Not available                           |
+| CLI          |-----------| Use gcloud or API scripts               |
+| SDK          | ✓          | Google API client libraries             |
 
 ## Authentication
 

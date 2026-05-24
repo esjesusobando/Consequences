@@ -33,22 +33,22 @@ Directorio centralizado de los flujos de trabajo operativos de PersonalOS. Los f
 ### 01_Personal_Os (Ritmos Core)
 *Rituales operativos indispensables para el funcionamiento diario del sistema.*
 
-| # | Workflow | Descripción | Skill Integrada |
-|---|---------|-------------|-----------------|
-| 01 | Morning_Standup | Planificación y foco matutino | ✅ |
-| 02 | Backlog_Processing | Triaje de tareas pendientes | ✅ |
-| 03 | Content_Generation | Generación acelerada de valor | ✅ |
-| 04 | Weekly_Review | Alineación estratégica semanal | ✅ |
-| 05 | Best_Practices | Estándares de calidad | ✅ |
+| #  | Workflow          | Descripción                   | Skill Integrada  |
+|---|------------------|------------------------------|-----------------|
+| 01 | Morning_Standup   | Planificación y foco matutino | ✅                |
+| 02 | Backlog_Processing| Triaje de tareas pendientes   | ✅                |
+| 03 | Content_Generation| Generación acelerada de valor | ✅                |
+| 04 | Weekly_Review     | Alineación estratégica semanal| ✅                |
+| 05 | Best_Practices    | Estándares de calidad         | ✅                |
 
 ### 02_Marvel (The Avengers)
 *Identidades temáticas para la orquestación y ejecución experta.*
 
-| # | Workflow | Descripción |
-|---|---------|-------------|
-| 01 | Iron_Man_Gen | Genesis y Boot del sistema |
-| 05 | Thor_Work | Ejecución imparable |
-| 06 | Hulk_Compound | Capitalización agresiva de soluciones |
+| #  | Workflow     | Descripción                          |
+|---|-------------|-------------------------------------|
+| 01 | Iron_Man_Gen | Genesis y Boot del sistema           |
+| 05 | Thor_Work    | Ejecución imparable                  |
+| 06 | Hulk_Compound| Capitalización agresiva de soluciones|
 
 ### 03_Gentleman (UX & Docs)
 *Flujos de diseño premium y redacción técnica de alta calidad.*
@@ -79,13 +79,13 @@ Los workflows están integrados con el sistema de skills en:
 
 ### Skills YouTube Relacionadas
 
-| Skill | Ubicación | Estado |
-|-------|----------|--------|
-| Youtube_Script_Writer | `01_Creacion_Contenidos/` | ✅ Integrada |
-| Youtube_Full_Video | `01_Creacion_Contenidos/` | ✅ Integrada |
-| Title_Generator | `01_Creacion_Contenidos/` | ✅ Integrada |
-| Thumbnail_Prompter | `01_Creacion_Contenidos/` | ✅ Integrada |
-| Content_Ideation | `01_Creacion_Contenidos/` | ✅ Integrada |
+| Skill                | Ubicación                | Estado     |
+|---------------------|-------------------------|-----------|
+| Youtube_Script_Writer| `01_Creacion_Contenidos/`| ✅ Integrada|
+| Youtube_Full_Video   | `01_Creacion_Contenidos/`| ✅ Integrada|
+| Title_Generator      | `01_Creacion_Contenidos/`| ✅ Integrada|
+| Thumbnail_Prompter   | `01_Creacion_Contenidos/`| ✅ Integrada|
+| Content_Ideation     | `01_Creacion_Contenidos/`| ✅ Integrada|
 
 ---
 
@@ -114,11 +114,11 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py list
 
 ## 🔄 Historial
 
-| Fecha | Cambio |
-|-------|--------|
-| 2026-05-20 | v4.5 — Secuencia corregida, estructura organizada |
-| 2026-05-20 | 06_Testing_Youtube reorganizado en 5 carpetas |
-| 2026-05-23 | v4.7 — Version bump sincronización general |
+| Fecha     | Cambio                                           |
+|----------|-------------------------------------------------|
+| 2026-05-20| v4.5 — Secuencia corregida, estructura organizada|
+| 2026-05-20| 06_Testing_Youtube reorganizado en 5 carpetas    |
+| 2026-05-23| v4.7 — Version bump sincronización general       |
 
 ---
 

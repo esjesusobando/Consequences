@@ -4,12 +4,12 @@ Email delivery platform for transactional and marketing emails.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | Mail Send API, Marketing API |
-| MCP | - | Not available |
-| CLI | - | Not available |
-| SDK | ✓ | Official libraries for most languages |
+| Integration  | Available  | Notes                                |
+|-------------|-----------|-------------------------------------|
+| API          | ✓          | Mail Send API, Marketing API         |
+| MCP          |-----------| Not available                        |
+| CLI          |-----------| Not available                        |
+| SDK          | ✓          | Official libraries for most languages|
 
 ## Authentication
 
@@ -118,16 +118,16 @@ POST https://api.sendgrid.com/v3/validations/email
 
 ## Webhook Events
 
-| Event | Description |
-|-------|-------------|
-| `processed` | Email accepted |
-| `delivered` | Email delivered |
-| `open` | Email opened |
-| `click` | Link clicked |
-| `bounce` | Hard/soft bounce |
-| `dropped` | Email dropped |
-| `spamreport` | Marked as spam |
-| `unsubscribe` | Unsubscribed |
+| Event        | Description     |
+|-------------|----------------|
+| `processed`  | Email accepted  |
+| `delivered`  | Email delivered |
+| `open`       | Email opened    |
+| `click`      | Link clicked    |
+| `bounce`     | Hard/soft bounce|
+| `dropped`    | Email dropped   |
+| `spamreport` | Marked as spam  |
+| `unsubscribe`| Unsubscribed    |
 
 ## Node.js SDK
 

@@ -1,6 +1,6 @@
 # 03_Resultado — Project Outputs
 
-> **Versión:** v4.7
+> **Versión:** v4.7 Consequences
 > **Última actualización:** 2026-05-23
 
 ---
@@ -44,27 +44,27 @@ Carpeta de resultados y outputs de proyectos. Aquí terminan los entregables de 
 
 ## 📋 CONTENIDO POR CARPETA
 
-| #  | Carpeta | Descripción |
-|----|---------|-------------|
-| .opencode | - | Config OpenCode local |
-| 00 | Output_Skills | Skills generadas por el sistema |
-| 00 | Recursos_Varios | Recursos diversos |
-| 01 | Planes | Planes de proyectos |
-| 02 | Revisar_Now | Material para revisión inmediata |
-| 03 | Revisar_Planes | Planes pendientes de revisión |
-| 04 | Reportes | Reportes de auditorías y health checks |
-| 05 | Frontend_Slides_Exercise | Ejercicios de slides frontend |
-| 06 | Huashu_Design_Exercise | Ejercicios de diseño Huashu |
-| 07 | Referencias_Pre | Referencias preliminares |
-| 08 | Fundamentos_AI | Documentación de fundamentos AI |
-| 09 | World_OIM | Proyecto OIM (4 variantes: v2, One, Backup, 02; sufijo b histórico) |
-| 10 | Contenido_Learning | Contenido de aprendizaje |
-| 11 | Pruebas_Ads | Pruebas de publicidad |
-| 12 | Clinica_Infantil | Proyecto clínica infantil |
-| 13 | Sessions | Sesiones de auditoría |
-| 14 | Imagenes_Finales | Imágenes finales de proyectos |
-| 15 | AI_News_Weekly_20260522 | Reporte AI News Weekly |
-| 16 | Side_Project | Side project local (Oil/Brain JSX; repo propio, ignorado en git OS) |
+| #        | Carpeta                 | Descripción                                                        |
+|---------|------------------------|-------------------------------------------------------------------|
+| .opencode|------------------------| Config OpenCode local                                              |
+| 00       | Output_Skills           | Skills generadas por el sistema                                    |
+| 00       | Recursos_Varios         | Recursos diversos                                                  |
+| 01       | Planes                  | Planes de proyectos                                                |
+| 02       | Revisar_Now             | Material para revisión inmediata                                   |
+| 03       | Revisar_Planes          | Planes pendientes de revisión                                      |
+| 04       | Reportes                | Reportes de auditorías y health checks                             |
+| 05       | Frontend_Slides_Exercise| Ejercicios de slides frontend                                      |
+| 06       | Huashu_Design_Exercise  | Ejercicios de diseño Huashu                                        |
+| 07       | Referencias_Pre         | Referencias preliminares                                           |
+| 08       | Fundamentos_AI          | Documentación de fundamentos AI                                    |
+| 09       | World_OIM               | Proyecto OIM (4 variantes: v2, One, Backup, 02; sufijo b histórico)|
+| 10       | Contenido_Learning      | Contenido de aprendizaje                                           |
+| 11       | Pruebas_Ads             | Pruebas de publicidad                                              |
+| 12       | Clinica_Infantil        | Proyecto clínica infantil                                          |
+| 13       | Sessions                | Sesiones de auditoría                                              |
+| 14       | Imagenes_Finales        | Imágenes finales de proyectos                                      |
+| 15       | AI_News_Weekly_20260522 | Reporte AI News Weekly                                             |
+| 16       | Side_Project            | Side project local (Oil/Brain JSX; repo propio, ignorado en git OS)|
 
 ---
 
@@ -102,4 +102,4 @@ Carpeta de resultados y outputs de proyectos. Aquí terminan los entregables de 
 
 ---
 
-*Think Different PersonalOS v4.7 — 2026-05-23*
+*Think Different PersonalOS v4.7 Consequences — 2026-05-23*

@@ -17,15 +17,15 @@ generator → qa → code_reviewer → docs → (optional) performance → merge
 
 ## Agentes Disponibles
 
-| Rol                 | Descripción                       | Capabilities                              |
+| Rol                  | Descripción                        | Capabilities                               |
 |---------------------|-----------------------------------|-------------------------------------------|
-| **generator**       | Construye features una a la vez   | code_generation, implementation           |
-| **qa**              | Testea lo que el generator hizo   | testing, validation                       |
-| **code_reviewer**   | Revisa calidad del código         | code_review, quality                      |
-| **docs**            | Mantiene la documentación         | documentation, readmes                    |
-| **performance**     | Optimiza donde sea necesario      | optimization, profiling                   |
-| **security**        | Revisa aspectos de seguridad      | security_audit, vulnerability_detection   |
-| **architect**       | Diseño de arquitectura            | system_design, patterns                   |
+| **generator**        | Construye features una a la vez    | code_generation, implementation            |
+| **qa**               | Testea lo que el generator hizo    | testing, validation                        |
+| **code_reviewer**    | Revisa calidad del código          | code_review, quality                       |
+| **docs**             | Mantiene la documentación          | documentation, readmes                     |
+| **performance**      | Optimiza donde sea necesario       | optimization, profiling                    |
+| **security**         | Revisa aspectos de seguridad       | security_audit, vulnerability_detection    |
+| **architect**        | Diseño de arquitectura             | system_design, patterns                    |
 
 ---
 
@@ -142,12 +142,12 @@ team = AgentTeam("dev-team", num_agents=16, lock_manager=manager)
 
 ## Métricas
 
-| Métrica                       | Target     |
+| Métrica                        | Target      |
 |-------------------------------|------------|
-| Latencia por decisión         | <50ms      |
-| Agentes en paralelo           | 16         |
-| Tasa de éxito                 | >90%       |
-| Tiempo promedio por feature   | <5min      |
+| Latencia por decisión          | <50ms       |
+| Agentes en paralelo            | 16          |
+| Tasa de éxito                  | >90%        |
+| Tiempo promedio por feature    | <5min       |
 
 ---
 

@@ -50,12 +50,12 @@ description: What this skill does and when to use it. Include trigger phrases.
 
 ### Frontmatter Field Constraints
 
-| Field         | Required | Constraints                                                      |
+| Field          | Required  | Constraints                                                       |
 |---------------|----------|------------------------------------------------------------------|
-| `name`        | Yes      | 1-64 chars, lowercase `a-z`, numbers, hyphens. Must match dir.   |
-| `description` | Yes      | 1-1024 chars. Describe what it does and when to use it.          |
-| `license`     | No       | License name (default: MIT)                                      |
-| `metadata`    | No       | Key-value pairs (author, version, etc.)                          |
+| `name`         | Yes       | 1-64 chars, lowercase `a-z`, numbers, hyphens. Must match dir.    |
+| `description`  | Yes       | 1-1024 chars. Describe what it does and when to use it.           |
+| `license`      | No        | License name (default: MIT)                                       |
+| `metadata`     | No        | Key-value pairs (author, version, etc.)                           |
 
 ### Name Field Rules
 

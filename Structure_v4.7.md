@@ -19,12 +19,12 @@ Think_Different/                    # RAÍZ
 
 ### 📝 Notas de la Raíz
 
-| Carpeta | Propósito |
-|---------|----------|
-| **00_Winter_is_Coming** | Dirección estratégica. Goals, Backlog, AGENTS.md (GGA), CHANGELOG. |
-| **01_Personal_Os** | EL SISTEMA OPERATIVO. Skills, agentes, HUBs, workflows, memoria. |
-| **02_Playground** | Zona de pruebas. Skills nuevas, flujos experimentales. |
-| **03_Resultado** | Outputs de proyectos. Entregables, reportes, contenido generado. |
+| Carpeta                | Propósito                                                         |
+|-----------------------|------------------------------------------------------------------|
+| **00_Winter_is_Coming**| Dirección estratégica. Goals, Backlog, AGENTS.md (GGA), CHANGELOG.|
+| **01_Personal_Os**     | EL SISTEMA OPERATIVO. Skills, agentes, HUBs, workflows, memoria.  |
+| **02_Playground**      | Zona de pruebas. Skills nuevas, flujos experimentales.            |
+| **03_Resultado**       | Outputs de proyectos. Entregables, reportes, contenido generado.  |
 
 ---
 
@@ -66,78 +66,78 @@ Think_Different/                    # RAÍZ
 
 ### 00_Workflows_Os — Workflows (30 workflows, 7 categorías)
 
-| Categoría | Workflows | Propósito |
-|----------|-----------|----------|
-| **00_Learning_Always** | Continuo | Learning permanente |
-| **01_Personal_Os** | 4 principales | Morning, Backlog, Content, Weekly |
-| **02_Marvel** | Iron Man (Genesis), Spider, Thor, Hulk | Identidades temáticas |
-| **03_Gentleman** | Frontend, Docs | Diseño premium y redacción |
-| **04_Hillary** | Life OS | Gestión inbox |
-| **05_Compound_Engineering** | CE | Ingeniería avanzada |
-| **06_Youtube_Full_Video** | Video | Pipeline producción video |
+| Categoría                  | Workflows                             | Propósito                        |
+|---------------------------|--------------------------------------|---------------------------------|
+| **00_Learning_Always**     | Continuo                              | Learning permanente              |
+| **01_Personal_Os**         | 4 principales                         | Morning, Backlog, Content, Weekly|
+| **02_Marvel**              | Iron Man (Genesis), Spider, Thor, Hulk| Identidades temáticas            |
+| **03_Gentleman**           | Frontend, Docs                        | Diseño premium y redacción       |
+| **04_Hillary**             | Life OS                               | Gestión inbox                    |
+| **05_Compound_Engineering**| CE                                    | Ingeniería avanzada              |
+| **06_Youtube_Full_Video**  | Video                                 | Pipeline producción video        |
 
 ### 01_Rules — Reglas (12 .mdc)
 
-| Regla | Propósito |
-|-------|----------|
-| **00_Core_Protocol.mdc** | Protocolo core |
-| **01_Pilares_Sistema.mdc** | Pilares fundamentales |
-| **02_Motor_Agent.mdc** | Motor de agentes |
-| **03_Protocolos_Ejecucion.mdc** | Protocolos de ejecución |
-| **04_Observabilidad.mdc** | Sistema de observación |
-| **05_Reporting.mdc** | Reportes y métricas |
-| **06_Contexto_Gestion.mdc** | Gestión de contexto |
-| **07_Docs_Guias.mdc** | Convenciones |
-| **08_Token_Economy.mdc** | Economía de tokens |
-| **09_Agent_Teams_Protocol.mdc** | Protocolo de equipos |
-| **10_Git_Directions.mdc** | Direcciones Git |
-| **11_Minimax.mdc** | Configuración Minimax |
+| Regla                          | Propósito              |
+|-------------------------------|-----------------------|
+| **00_Core_Protocol.mdc**       | Protocolo core         |
+| **01_Pilares_Sistema.mdc**     | Pilares fundamentales  |
+| **02_Motor_Agent.mdc**         | Motor de agentes       |
+| **03_Protocolos_Ejecucion.mdc**| Protocolos de ejecución|
+| **04_Observabilidad.mdc**      | Sistema de observación |
+| **05_Reporting.mdc**           | Reportes y métricas    |
+| **06_Contexto_Gestion.mdc**    | Gestión de contexto    |
+| **07_Docs_Guias.mdc**          | Convenciones           |
+| **08_Token_Economy.mdc**       | Economía de tokens     |
+| **09_Agent_Teams_Protocol.mdc**| Protocolo de equipos   |
+| **10_Git_Directions.mdc**      | Direcciones Git        |
+| **11_Minimax.mdc**             | Configuración Minimax  |
 
 ### 02_Tools — Herramientas del OS
 
-| Herramienta | Cantidad | Propósito |
-|-------------|----------|-----------|
-| **01_Agents** | 46 agentes (5 Dream + 23 Specialists + 13 Individual + 5 Growth) | Orquestación multi-agente |
-| **02_Skills** | 394 | 12 áreas funcionales |
-| **03_Mcp** | - | Backup configs MCP |
-| **04_Integrations** | - | Fireflies, Granola |
-| **05_Hooks** | 10 | Ganchos 6 fases |
-| **06_Plugins** | - | Plugins OS |
-| **07_Server** | - | Engram server |
-| **08_Evals** | - | Evaluadores |
-| **09_Templates** | - | Templates |
+| Herramienta        | Cantidad                                                        | Propósito                |
+|-------------------|----------------------------------------------------------------|-------------------------|
+| **01_Agents**      | 46 agentes (5 Dream + 23 Specialists + 13 Individual + 5 Growth)| Orquestación multi-agente|
+| **02_Skills**      | 394                                                             | 12 áreas funcionales     |
+| **03_Mcp**         |----------------------------------------------------------------| Backup configs MCP       |
+| **04_Integrations**|----------------------------------------------------------------| Fireflies, Granola       |
+| **05_Hooks**       | 10                                                              | Ganchos 6 fases          |
+| **06_Plugins**     |----------------------------------------------------------------| Plugins OS               |
+| **07_Server**      |----------------------------------------------------------------| Engram server            |
+| **08_Evals**       |----------------------------------------------------------------| Evaluadores              |
+| **09_Templates**   |----------------------------------------------------------------| Templates                |
 
 **Agentes por Categoría (numeración secuencial 00-19):**
 
-| # | Categoría | Tipo | Cantidad |
-|---|-----------|------|----------|
-| 00 | Orchestrator / Agent_Template | Root | 2 archivos |
-| 01 | Dream Team | Subdirectorio | 5 agentes + README |
-| 02 | Specialists Compound | Subdirectorio | 23 agentes + README |
-| 03 | Growth | Subdirectorio | 5 agentes + README |
-| 04 | Contexto | Subdirectorio | 1 agente + README |
-| 05 | Marca | Subdirectorio | 1 agente + README |
-| 06 | Plantillas | Subdirectorio | 1 agente + README |
-| 07-13 | Individuales (Accessibility → Hillary) | Root | 7 archivos |
-| 14-19 | Specialist Individuales (Git → TDD) | Root | 6 archivos |
-| | **TOTAL** | | **46 agentes** |
+| #    | Categoría                             | Tipo         | Cantidad           |
+|-----|--------------------------------------|-------------|-------------------|
+| 00   | Orchestrator / Agent_Template         | Root         | 2 archivos         |
+| 01   | Dream Team                            | Subdirectorio| 5 agentes + README |
+| 02   | Specialists Compound                  | Subdirectorio| 23 agentes + README|
+| 03   | Growth                                | Subdirectorio| 5 agentes + README |
+| 04   | Contexto                              | Subdirectorio| 1 agente + README  |
+| 05   | Marca                                 | Subdirectorio| 1 agente + README  |
+| 06   | Plantillas                            | Subdirectorio| 1 agente + README  |
+| 07-13| Individuales (Accessibility → Hillary)| Root         | 7 archivos         |
+| 14-19| Specialist Individuales (Git → TDD)   | Root         | 6 archivos         |
+|      | **TOTAL**                             |              | **46 agentes**     |
 
 **Skills por Área:**
 
-| Área | Skills | Descripción |
-|------|--------|-------------|
-| 00_Compound_Engineering | 63 | Core CE — SDD + CE workflow skills |
-| 00_System_Core          | 1 | Stack base OS |
-| 10_Skill_Auditor | 1 | Auditoría de skills |
-| 01_Creacion_Contenidos | 40 | Brand, YouTube, SEO, Carruseles |
-| 02_Diseno_Ui_Ux | 29 | Product Design, UI/UX, Taste, Minimal |
-| 03_Video_Media | 7 | Video Intel, James Cameron |
-| 04_Automatizacion | 37 | N8N, Firecrawl, GWS Client |
-| 05_Workflows | 37 | Agent Teams, PM, Orchestrator |
-| 06_Tools | 112 | Skill Creator, Testing, DevOps, Data Analyst |
-| 07_Personal_Os | 32 | Life OS, Hillary, Rituales |
-| 08_Invictus_Web | 15 | Playwright, Superpowers, Browser Auto |
-| 09_Claude_Ads | 20 | Claude Ads & Promoted Content |
+| Área                   | Skills  | Descripción                                 |
+|-----------------------|--------|--------------------------------------------|
+| 00_Compound_Engineering| 63      | Core CE — SDD + CE workflow skills          |
+| 00_System_Core         | 1       | Stack base OS                               |
+| 10_Skill_Auditor       | 1       | Auditoría de skills                         |
+| 01_Creacion_Contenidos | 40      | Brand, YouTube, SEO, Carruseles             |
+| 02_Diseno_Ui_Ux        | 29      | Product Design, UI/UX, Taste, Minimal       |
+| 03_Video_Media         | 7       | Video Intel, James Cameron                  |
+| 04_Automatizacion      | 37      | N8N, Firecrawl, GWS Client                  |
+| 05_Workflows           | 37      | Agent Teams, PM, Orchestrator               |
+| 06_Tools               | 112     | Skill Creator, Testing, DevOps, Data Analyst|
+| 07_Personal_Os         | 32      | Life OS, Hillary, Rituales                  |
+| 08_Invictus_Web        | 15      | Playwright, Superpowers, Browser Auto       |
+| 09_Claude_Ads          | 20      | Claude Ads & Promoted Content               |
 
 ---
 
@@ -280,34 +280,34 @@ Think_Different/                    # RAÍZ
 
 ## ⚙️ Archivos de Configuración Raíz
 
-| Archivo | Propósito |
-|---------|----------|
-| **.mcp.json** | 36 MCPs Claude Code |
-| **.claude/** | Config Claude Code |
-| **.opencode/** | Config OpenCode + skills locales |
-| **.atl/** | SDD Registry + openspec/ |
-| **.env** | Variables de entorno |
-| **.gga** | Guardian Angel config |
-| **AGENTS.md** | GGA Pre-Commit entry |
-| **CLAUDE.md** | Config IAs (FUENTE) — Boot Protocol强化 |
-| **OS_DIRECTORY.md** | JARVIS discovery |
-| **STRUCTURE_v4.7.md** | Este archivo — estructura completa |
+| Archivo              | Propósito                            |
+|---------------------|-------------------------------------|
+| **.mcp.json**        | 36 MCPs Claude Code                  |
+| **.claude/**         | Config Claude Code                   |
+| **.opencode/**       | Config OpenCode + skills locales     |
+| **.atl/**            | SDD Registry + openspec/             |
+| **.env**             | Variables de entorno                 |
+| **.gga**             | Guardian Angel config                |
+| **AGENTS.md**        | GGA Pre-Commit entry                 |
+| **CLAUDE.md**        | Config IAs (FUENTE) — Boot Protocol强化|
+| **OS_DIRECTORY.md**  | JARVIS discovery                     |
+| **STRUCTURE_v4.7.md**| Este archivo — estructura completa   |
 
 ---
 
 ## 📊 ESTADO DEL SISTEMA v4.7
 
-| Componente | Total | Estado |
-|-----------|-------|--------|
-| Skills | 394 (12 áreas) | ✅ |
-| Agentes | 46 (5 Dream + 23 Specialists + 13 Individual + 5 Growth) | ✅ |
-| Rules | 12 (.mdc 00-11) | ✅ |
-| MCPs | 36 | ✅ |
-| HUBs | 19 _Hub.py + 12 auxiliares = 31 py | ✅ |
-| Scripts | 284 (recursivo en 03_Scripts_Os/) | ✅ |
-| Workflows | 30 (7 categorías) | ✅ |
-| CE Skills in opencode.json | 36+8 = 44 | ✅ |
-| Projects (Lab) | 9 | ✅ |
+| Componente                | Total                                                   | Estado  |
+|--------------------------|--------------------------------------------------------|--------|
+| Skills                    | 394 (12 áreas)                                          | ✅       |
+| Agentes                   | 46 (5 Dream + 23 Specialists + 13 Individual + 5 Growth)| ✅       |
+| Rules                     | 12 (.mdc 00-11)                                         | ✅       |
+| MCPs                      | 36                                                      | ✅       |
+| HUBs                      | 19 _Hub.py + 12 auxiliares = 31 py                      | ✅       |
+| Scripts                   | 284 (recursivo en 03_Scripts_Os/)                       | ✅       |
+| Workflows                 | 30 (7 categorías)                                       | ✅       |
+| CE Skills in opencode.json| 36+8 = 44                                               | ✅       |
+| Projects (Lab)            | 9                                                       | ✅       |
 
 ---
 
@@ -331,14 +331,14 @@ Al iniciar sesión, ejecutar EN ORDEN:
 
 ## 📋 CONVENCIONES DE NOMENCLATURA
 
-| Tipo | Estándar | Ejemplo |
-|------|----------|---------|
-| Archivos de código | snake_case.py | `os_health_test.py` |
-| Archivos de datos | Pascal_Case + guion_bajo | `OS_Health_2026-05-22.txt` |
-| Carpetas principales | XX_Nombre | `00_Winter_is_Coming` |
-| SKILL.md | SKILL.md (fijo) | `Skills/.../SKILL.md` |
-| Scripts HUBs | NN_Nombre_Hub.py | `20_System_Mapper_Hub.py` |
-| Archivos 00_ | 00_ prefix = NO TOCAR | `00_SALUD_REPORTS.md` |
+| Tipo                | Estándar                | Ejemplo                   |
+|--------------------|------------------------|--------------------------|
+| Archivos de código  | snake_case.py           | `os_health_test.py`       |
+| Archivos de datos   | Pascal_Case + guion_bajo| `OS_Health_2026-05-22.txt`|
+| Carpetas principales| XX_Nombre               | `00_Winter_is_Coming`     |
+| SKILL.md            | SKILL.md (fijo)         | `Skills/.../SKILL.md`     |
+| Scripts HUBs        | NN_Nombre_Hub.py        | `20_System_Mapper_Hub.py` |
+| Archivos 00_        | 00_ prefix = NO TOCAR   | `00_SALUD_REPORTS.md`     |
 
 **Reglas de Secuencia:**
 1. **Enumeración limpia** — Sin huecos ni duplicados

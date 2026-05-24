@@ -115,7 +115,7 @@ Think_Different/                        ← Raíz del proyecto
 | Área                           | Carpeta                                      | Descripción                                                                | SKILL.md                  |
 |-------------------------------|---------------------------------------------|---------------------------------------------------------------------------|--------------------------|
 | 00a                            | `00_Compound_Engineering`                    | Core CE (Spider, Avengers, LFG)                                            | ✅                         |
-| 00b                            | `00_System_Core`                       | Stack base OS + Gcierr                                                     | ✅                         |
+| 00b                            | `00_System_Core`                             | Stack base OS + Gcierr                                                     | ✅                         |
 | 00c                            | `10_Skill_Auditor`                           | Auditoría de skills                                                        | ✅                         |
 | 01                             | `01_Creacion_Contenidos`                     | Brand, YouTube, SEO, Carruseles, Contenidos                                | ✅                         |
 | 02                             | `02_Diseno_Ui_Ux`                            | Product Design, UI/UX, Taste, Minimalismo                                  | ✅                         |
@@ -174,7 +174,7 @@ Scripts migrados a skills usando `get_skill_script()`:
 | `01_Spider_Brainstorm.py`                            | 00_Compound_Engineering/scripts                        | ✅                                   |
 | `02_Professor_X_Plan.py`                             | 01_Agent_Teams_Lite/scripts                            | ✅                                   |
 | `34_Skill_Auditor.py`                                | 10_Skill_Auditor/scripts                               | ✅                                   |
-| `53_Structure_Auditor.py`                            | 00_System_Core/scripts                           | ✅                                   |
+| `53_Structure_Auditor.py`                            | 00_System_Core/scripts                                 | ✅                                   |
 | `50_System_Health_Monitor.py`                        | 08_Personal_Os/scripts                                 | ✅                                   |
 | `33_Parallel_Audit_Pro.py`                           | 06_Testing/scripts                                     | ✅                                   |
 | `57_Repo_Sync_Auditor.py`                            | 07_DevOps/scripts                                      | ✅                                   |

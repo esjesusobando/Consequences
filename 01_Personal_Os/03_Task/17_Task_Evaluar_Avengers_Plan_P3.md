@@ -11,10 +11,10 @@
 
 ### Avengers Plan — Documentación Encontrada
 
-| Archivo | Ubicación | Tipo |
-|---------|-----------|------|
-| **Avengers_Plan.md** | `01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/04_Plans_Completed/20260420_plans/Avengers_Plan.md` | Legacy |
-| **Avengers_Plan.md** | `01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/04_Plans_Completed/20260420_plans/Avengers_Plan.md` | Legacy Backup |
+| Archivo             | Ubicación                                                                                                                | Tipo         |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------|-------------|
+| **Avengers_Plan.md**| `01_Personal_Os/05_Archive/03_Backups_Audits/04_Legacy_Revisar/04_Plans_Completed/20260420_plans/Avengers_Plan.md`       | Legacy       |
+| **Avengers_Plan.md**| `01_Personal_Os/05_Archive/03_Backups_Audits/05_Legacy_Scripts_Backup/04_Plans_Completed/20260420_plans/Avengers_Plan.md`| Legacy Backup|
 
 ### Contenido del Plan (Resumen)
 

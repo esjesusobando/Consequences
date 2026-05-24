@@ -151,9 +151,9 @@ After gathering information, create `.claude/product-marketing-context.md` with 
 -
 
 ## Personas
-| Persona | Cares about | Challenge | Value we promise |
+| Persona  | Cares about  | Challenge  | Value we promise  |
 |---------|-------------|-----------|------------------|
-| | | | |
+|          |              |            |                   |
 
 ## Problems & Pain Points
 **Core problem:**
@@ -175,9 +175,9 @@ After gathering information, create `.claude/product-marketing-context.md` with 
 **Why customers choose us:**
 
 ## Objections
-| Objection | Response |
+| Objection  | Response  |
 |-----------|----------|
-| | |
+|            |           |
 
 **Anti-persona:**
 
@@ -195,9 +195,9 @@ After gathering information, create `.claude/product-marketing-context.md` with 
 **Words to use:**
 **Words to avoid:**
 **Glossary:**
-| Term | Meaning |
+| Term  | Meaning  |
 |------|---------|
-| | |
+|       |          |
 
 ## Brand Voice
 **Tone:**
@@ -210,9 +210,9 @@ After gathering information, create `.claude/product-marketing-context.md` with 
 **Testimonials:**
 > "[quote]" — [who]
 **Value themes:**
-| Theme | Proof |
+| Theme  | Proof  |
 |-------|-------|
-| | |
+|        |        |
 
 ## Goals
 **Business goal:**

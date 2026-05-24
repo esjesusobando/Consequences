@@ -208,7 +208,7 @@ Think_Different/                           # RAÍZ
 | Categoría                                   | Ubicación                                                                        |
 |--------------------------------------------|---------------------------------------------------------------------------------|
 | Dream Team (5)                              | `01_Core/02_Tools/01_Agents/01_Dream_Team/`                                      |
-| Specialists Compound (23)                  | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                            |
+| Specialists Compound (23)                   | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                            |
 | Individuales (13)                           | `01_Core/02_Tools/01_Agents/`                                                    |
 | Growth (5)                                  | `01_Core/02_Tools/01_Agents/03_Growth/`                                          |
 
@@ -227,11 +227,11 @@ Think_Different/                           # RAÍZ
 | 02_Diseno_Ui_Ux                                  | 02_Diseno_Ui_Ux/            | Product Design, UI/UX, Taste, Minimal                         |
 | 03_Video_Media                                   | 03_Video_Media/             | Video Intel, James Cameron                                    |
 | 04_Automatizacion                                | 04_Automatizacion/          | N8N, Firecrawl, GWS Client                                    |
-| 05_Workflows                                     | 05_Workflows/               | Agent Teams, PM, Orchestrator                                |
+| 05_Workflows                                     | 05_Workflows/               | Agent Teams, PM, Orchestrator                                 |
 | 06_Tools                                         | 06_Tools/                   | Skill Creator, Testing, DevOps, Data                          |
 | 07_Personal_Os                                   | 07_Personal_Os/             | Life OS, Hillary, Rituales                                    |
-| 08_Invictus_Web                                  | 08_Invictus_Web/            | Playwright, Superpowers, Browser Auto                        |
-| 09_Claude_Ads                                    | 09_Claude_Ads/              | Ads, Evals, Agents, Assets, Research                         |
+| 08_Invictus_Web                                  | 08_Invictus_Web/            | Playwright, Superpowers, Browser Auto                         |
+| 09_Claude_Ads                                    | 09_Claude_Ads/              | Ads, Evals, Agents, Assets, Research                          |
 
 > ⚠️ Audit 2026-05-23: 12 áreas activas, 394 skills verificados
 
@@ -282,11 +282,11 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 
 | Categoria                                                 | Estado                                         | Notas                                                                                        |
 |----------------------------------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------|
-| **Overall Health**                                        | **✅ PURE GREEN**                                | v4.7 — 2026-05-23 — Full Audit v2 DONE                                                              |
+| **Overall Health**                                        | **✅ PURE GREEN**                               | v4.7 — 2026-05-23 — Full Audit v2 DONE                                                       |
 | Estructura (4 raíz)                                       | ✅ PASS                                         | Winter / Personal_Os / Playground / Resultado                                                |
-| HUBs (19 HUBs + 284 scripts)                              | ✅ PASS                                         | 19 HUBs + 284 scripts en total (recursivo)                                    |
-| Skills (394, 12 áreas)                                    | ✅ VERIFIED                                     | 12 áreas funcionales — audit 2026-05-23                                           |
-| Agent Matrix                                              | ✅ SYNCED                                      | 46 ↔ 46 (drift: 0 post-cleanup 2026-05-23)                                                    |
+| HUBs (19 HUBs + 284 scripts)                              | ✅ PASS                                         | 19 HUBs + 284 scripts en total (recursivo)                                                   |
+| Skills (394, 12 áreas)                                    | ✅ VERIFIED                                     | 12 áreas funcionales — audit 2026-05-23                                                      |
+| Agent Matrix                                              | ✅ SYNCED                                       | 46 ↔ 46 (drift: 0 post-cleanup 2026-05-23)                                                   |
 | Manifest (7 archivos)                                     | ✅ VALIDATED                                    | 00_Manifest/ en 02_Agent_Teams_Lite/                                                         |
 | MCPs (36 Claude / 36 OpenCode)                            | ✅ SYNCED                                       | drift: 0 (ambos configs alineados)                                                           |
 | Rules (12 .mdc)                                           | ✅ DEFINED                                      | 01_Rules/                                                                                    |

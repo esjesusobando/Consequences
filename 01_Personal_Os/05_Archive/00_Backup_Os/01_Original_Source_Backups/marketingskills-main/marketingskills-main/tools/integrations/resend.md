@@ -4,12 +4,12 @@ Developer-friendly transactional email service with modern API.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | Simple REST API for sending emails |
-| MCP | ✓ | Available via Resend MCP server |
-| CLI | - | Not available |
-| SDK | ✓ | Official SDKs for Node.js, Python, Go, etc. |
+| Integration  | Available  | Notes                                      |
+|-------------|-----------|-------------------------------------------|
+| API          | ✓          | Simple REST API for sending emails         |
+| MCP          | ✓          | Available via Resend MCP server            |
+| CLI          |-----------| Not available                              |
+| SDK          | ✓          | Official SDKs for Node.js, Python, Go, etc.|
 
 ## Authentication
 
@@ -139,14 +139,14 @@ await resend.emails.send({
 
 ## Webhook Events
 
-| Event | When |
-|-------|------|
-| `email.sent` | Email sent |
-| `email.delivered` | Email delivered |
-| `email.opened` | Email opened |
-| `email.clicked` | Link clicked |
-| `email.bounced` | Email bounced |
-| `email.complained` | Spam complaint |
+| Event             | When           |
+|------------------|---------------|
+| `email.sent`      | Email sent     |
+| `email.delivered` | Email delivered|
+| `email.opened`    | Email opened   |
+| `email.clicked`   | Link clicked   |
+| `email.bounced`   | Email bounced  |
+| `email.complained`| Spam complaint |
 
 ## When to Use
 

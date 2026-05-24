@@ -12,37 +12,37 @@ Quick reference for AI agents to discover tool capabilities and integration meth
 
 ## Tool Index
 
-| Tool | Category | API | MCP | CLI | SDK | Guide |
-|------|----------|:---:|:---:|:---:|:---:|-------|
-| ga4 | Analytics | ✓ | ✓ | - | ✓ | [ga4.md](integrations/ga4.md) |
-| mixpanel | Analytics | ✓ | - | - | ✓ | [mixpanel.md](integrations/mixpanel.md) |
-| amplitude | Analytics | ✓ | - | - | ✓ | [amplitude.md](integrations/amplitude.md) |
-| posthog | Analytics | ✓ | - | ✓ | ✓ | [posthog.md](integrations/posthog.md) |
-| segment | Analytics | ✓ | - | - | ✓ | [segment.md](integrations/segment.md) |
-| adobe-analytics | Analytics | ✓ | - | - | ✓ | [adobe-analytics.md](integrations/adobe-analytics.md) |
-| google-search-console | SEO | ✓ | - | - | ✓ | [google-search-console.md](integrations/google-search-console.md) |
-| semrush | SEO | ✓ | - | - | - | [semrush.md](integrations/semrush.md) |
-| ahrefs | SEO | ✓ | - | - | - | [ahrefs.md](integrations/ahrefs.md) |
-| hubspot | CRM | ✓ | - | ✓ | ✓ | [hubspot.md](integrations/hubspot.md) |
-| salesforce | CRM | ✓ | - | ✓ | ✓ | [salesforce.md](integrations/salesforce.md) |
-| stripe | Payments | ✓ | ✓ | ✓ | ✓ | [stripe.md](integrations/stripe.md) |
-| rewardful | Referral | ✓ | - | - | - | [rewardful.md](integrations/rewardful.md) |
-| tolt | Referral | ✓ | - | - | - | [tolt.md](integrations/tolt.md) |
-| dub-co | Links | ✓ | - | - | ✓ | [dub-co.md](integrations/dub-co.md) |
-| mention-me | Referral | ✓ | - | - | - | [mention-me.md](integrations/mention-me.md) |
-| mailchimp | Email | ✓ | ✓ | - | ✓ | [mailchimp.md](integrations/mailchimp.md) |
-| customer-io | Email | ✓ | - | - | ✓ | [customer-io.md](integrations/customer-io.md) |
-| sendgrid | Email | ✓ | - | - | ✓ | [sendgrid.md](integrations/sendgrid.md) |
-| resend | Email | ✓ | ✓ | - | ✓ | [resend.md](integrations/resend.md) |
-| kit | Email | ✓ | - | - | ✓ | [kit.md](integrations/kit.md) |
-| google-ads | Ads | ✓ | ✓ | - | ✓ | [google-ads.md](integrations/google-ads.md) |
-| meta-ads | Ads | ✓ | - | - | ✓ | [meta-ads.md](integrations/meta-ads.md) |
-| linkedin-ads | Ads | ✓ | - | - | - | [linkedin-ads.md](integrations/linkedin-ads.md) |
-| tiktok-ads | Ads | ✓ | - | - | ✓ | [tiktok-ads.md](integrations/tiktok-ads.md) |
-| zapier | Automation | ✓ | ✓ | - | - | [zapier.md](integrations/zapier.md) |
-| shopify | Commerce | ✓ | - | ✓ | ✓ | [shopify.md](integrations/shopify.md) |
-| wordpress | CMS | ✓ | - | ✓ | ✓ | [wordpress.md](integrations/wordpress.md) |
-| webflow | CMS | ✓ | - | ✓ | ✓ | [webflow.md](integrations/webflow.md) |
+| Tool                 | Category  | API  | MCP  | CLI  | SDK  | Guide                                                            |
+|---------------------|----------|-----|-----|-----|-----|-----------------------------------------------------------------|
+| ga4                  | Analytics | ✓    | ✓    |-----| ✓    | [ga4.md](integrations/ga4.md)                                    |
+| mixpanel             | Analytics | ✓    |-----|-----| ✓    | [mixpanel.md](integrations/mixpanel.md)                          |
+| amplitude            | Analytics | ✓    |-----|-----| ✓    | [amplitude.md](integrations/amplitude.md)                        |
+| posthog              | Analytics | ✓    |-----| ✓    | ✓    | [posthog.md](integrations/posthog.md)                            |
+| segment              | Analytics | ✓    |-----|-----| ✓    | [segment.md](integrations/segment.md)                            |
+| adobe-analytics      | Analytics | ✓    |-----|-----| ✓    | [adobe-analytics.md](integrations/adobe-analytics.md)            |
+| google-search-console| SEO       | ✓    |-----|-----| ✓    | [google-search-console.md](integrations/google-search-console.md)|
+| semrush              | SEO       | ✓    |-----|-----|-----| [semrush.md](integrations/semrush.md)                            |
+| ahrefs               | SEO       | ✓    |-----|-----|-----| [ahrefs.md](integrations/ahrefs.md)                              |
+| hubspot              | CRM       | ✓    |-----| ✓    | ✓    | [hubspot.md](integrations/hubspot.md)                            |
+| salesforce           | CRM       | ✓    |-----| ✓    | ✓    | [salesforce.md](integrations/salesforce.md)                      |
+| stripe               | Payments  | ✓    | ✓    | ✓    | ✓    | [stripe.md](integrations/stripe.md)                              |
+| rewardful            | Referral  | ✓    |-----|-----|-----| [rewardful.md](integrations/rewardful.md)                        |
+| tolt                 | Referral  | ✓    |-----|-----|-----| [tolt.md](integrations/tolt.md)                                  |
+| dub-co               | Links     | ✓    |-----|-----| ✓    | [dub-co.md](integrations/dub-co.md)                              |
+| mention-me           | Referral  | ✓    |-----|-----|-----| [mention-me.md](integrations/mention-me.md)                      |
+| mailchimp            | Email     | ✓    | ✓    |-----| ✓    | [mailchimp.md](integrations/mailchimp.md)                        |
+| customer-io          | Email     | ✓    |-----|-----| ✓    | [customer-io.md](integrations/customer-io.md)                    |
+| sendgrid             | Email     | ✓    |-----|-----| ✓    | [sendgrid.md](integrations/sendgrid.md)                          |
+| resend               | Email     | ✓    | ✓    |-----| ✓    | [resend.md](integrations/resend.md)                              |
+| kit                  | Email     | ✓    |-----|-----| ✓    | [kit.md](integrations/kit.md)                                    |
+| google-ads           | Ads       | ✓    | ✓    |-----| ✓    | [google-ads.md](integrations/google-ads.md)                      |
+| meta-ads             | Ads       | ✓    |-----|-----| ✓    | [meta-ads.md](integrations/meta-ads.md)                          |
+| linkedin-ads         | Ads       | ✓    |-----|-----|-----| [linkedin-ads.md](integrations/linkedin-ads.md)                  |
+| tiktok-ads           | Ads       | ✓    |-----|-----| ✓    | [tiktok-ads.md](integrations/tiktok-ads.md)                      |
+| zapier               | Automation| ✓    | ✓    |-----|-----| [zapier.md](integrations/zapier.md)                              |
+| shopify              | Commerce  | ✓    |-----| ✓    | ✓    | [shopify.md](integrations/shopify.md)                            |
+| wordpress            | CMS       | ✓    |-----| ✓    | ✓    | [wordpress.md](integrations/wordpress.md)                        |
+| webflow              | CMS       | ✓    |-----| ✓    | ✓    | [webflow.md](integrations/webflow.md)                            |
 
 ---
 
@@ -52,14 +52,14 @@ Quick reference for AI agents to discover tool capabilities and integration meth
 
 Track user behavior, measure conversions, and analyze marketing performance.
 
-| Tool | Best For | MCP Available |
-|------|----------|:-------------:|
-| **ga4** | Web analytics, Google ecosystem | ✓ |
-| **mixpanel** | Product analytics, event tracking | - |
-| **amplitude** | Product analytics, cohort analysis | - |
-| **posthog** | Open-source analytics, session replay | - |
-| **segment** | Customer data platform, routing | - |
-| **adobe-analytics** | Enterprise analytics | - |
+| Tool               | Best For                             | MCP Available  |
+|-------------------|-------------------------------------|---------------|
+| **ga4**            | Web analytics, Google ecosystem      | ✓              |
+| **mixpanel**       | Product analytics, event tracking    |---------------|
+| **amplitude**      | Product analytics, cohort analysis   |---------------|
+| **posthog**        | Open-source analytics, session replay|---------------|
+| **segment**        | Customer data platform, routing      |---------------|
+| **adobe-analytics**| Enterprise analytics                 |---------------|
 
 **Agent recommendation**: Start with GA4 if using Google ecosystem. Use Mixpanel or Amplitude for deeper product analytics.
 
@@ -67,11 +67,11 @@ Track user behavior, measure conversions, and analyze marketing performance.
 
 Search engine optimization tools for keyword research, rank tracking, and site audits.
 
-| Tool | Best For | Notes |
-|------|----------|-------|
-| **google-search-console** | Free, authoritative search data | Direct from Google |
-| **semrush** | Competitive analysis, keyword research | Comprehensive |
-| **ahrefs** | Backlink analysis, content research | Best for links |
+| Tool                     | Best For                              | Notes             |
+|-------------------------|--------------------------------------|------------------|
+| **google-search-console**| Free, authoritative search data       | Direct from Google|
+| **semrush**              | Competitive analysis, keyword research| Comprehensive     |
+| **ahrefs**               | Backlink analysis, content research   | Best for links    |
 
 **Agent recommendation**: Google Search Console is essential (free). Add Semrush or Ahrefs for competitive research.
 
@@ -79,10 +79,10 @@ Search engine optimization tools for keyword research, rank tracking, and site a
 
 Customer relationship management and sales tools.
 
-| Tool | Best For | CLI Available |
-|------|----------|:-------------:|
-| **hubspot** | SMB, marketing + sales alignment | ✓ |
-| **salesforce** | Enterprise, complex sales processes | ✓ |
+| Tool          | Best For                           | CLI Available  |
+|--------------|-----------------------------------|---------------|
+| **hubspot**   | SMB, marketing + sales alignment   | ✓              |
+| **salesforce**| Enterprise, complex sales processes| ✓              |
 
 **Agent recommendation**: HubSpot for startups/SMBs, Salesforce for enterprise.
 
@@ -90,9 +90,9 @@ Customer relationship management and sales tools.
 
 Payment processing and subscription management.
 
-| Tool | Best For | MCP Available |
-|------|----------|:-------------:|
-| **stripe** | SaaS subscriptions, developer-friendly | ✓ |
+| Tool      | Best For                              | MCP Available  |
+|----------|--------------------------------------|---------------|
+| **stripe**| SaaS subscriptions, developer-friendly| ✓              |
 
 **Agent recommendation**: Stripe is the default for SaaS and developer-focused products.
 
@@ -100,12 +100,12 @@ Payment processing and subscription management.
 
 Tools for referral programs, affiliate tracking, and partner management.
 
-| Tool | Best For | Stripe Integration |
-|------|----------|:------------------:|
-| **rewardful** | Stripe-native affiliate programs | ✓ |
-| **tolt** | SaaS affiliate programs | ✓ |
-| **mention-me** | Enterprise referral programs | ✓ |
-| **dub-co** | Link tracking, attribution | - |
+| Tool          | Best For                        | Stripe Integration  |
+|--------------|--------------------------------|--------------------|
+| **rewardful** | Stripe-native affiliate programs| ✓                   |
+| **tolt**      | SaaS affiliate programs         | ✓                   |
+| **mention-me**| Enterprise referral programs    | ✓                   |
+| **dub-co**    | Link tracking, attribution      |--------------------|
 
 **Agent recommendation**: Rewardful or Tolt for Stripe-based SaaS. Dub.co for link attribution.
 
@@ -113,13 +113,13 @@ Tools for referral programs, affiliate tracking, and partner management.
 
 Email marketing, transactional email, and automation platforms.
 
-| Tool | Best For | MCP Available |
-|------|----------|:-------------:|
-| **mailchimp** | SMB email marketing | ✓ |
-| **customer-io** | Behavior-based messaging | - |
-| **sendgrid** | Transactional email at scale | - |
-| **resend** | Developer-friendly transactional | ✓ |
-| **kit** | Creator/newsletter focused | - |
+| Tool           | Best For                        | MCP Available  |
+|---------------|--------------------------------|---------------|
+| **mailchimp**  | SMB email marketing             | ✓              |
+| **customer-io**| Behavior-based messaging        |---------------|
+| **sendgrid**   | Transactional email at scale    |---------------|
+| **resend**     | Developer-friendly transactional| ✓              |
+| **kit**        | Creator/newsletter focused      |---------------|
 
 **Agent recommendation**: Resend for transactional (dev-friendly). Customer.io for advanced automation. Kit for creators.
 
@@ -127,12 +127,12 @@ Email marketing, transactional email, and automation platforms.
 
 Paid advertising platforms and campaign management.
 
-| Tool | Best For | MCP Available |
-|------|----------|:-------------:|
-| **google-ads** | Search intent, high-intent traffic | ✓ |
-| **meta-ads** | Demand gen, visual products, B2C | - |
-| **linkedin-ads** | B2B, job title targeting | - |
-| **tiktok-ads** | Younger demographics, video | - |
+| Tool            | Best For                          | MCP Available  |
+|----------------|----------------------------------|---------------|
+| **google-ads**  | Search intent, high-intent traffic| ✓              |
+| **meta-ads**    | Demand gen, visual products, B2C  |---------------|
+| **linkedin-ads**| B2B, job title targeting          |---------------|
+| **tiktok-ads**  | Younger demographics, video       |---------------|
 
 **Agent recommendation**: Google Ads for search intent. Meta for demand generation. LinkedIn for B2B.
 
@@ -140,9 +140,9 @@ Paid advertising platforms and campaign management.
 
 Workflow automation and integration platforms.
 
-| Tool | Best For | MCP Available |
-|------|----------|:-------------:|
-| **zapier** | No-code integrations | ✓ |
+| Tool      | Best For            | MCP Available  |
+|----------|--------------------|---------------|
+| **zapier**| No-code integrations| ✓              |
 
 **Agent recommendation**: Zapier for connecting tools without code.
 
@@ -150,11 +150,11 @@ Workflow automation and integration platforms.
 
 E-commerce platforms and content management systems.
 
-| Tool | Best For | CLI Available |
-|------|----------|:-------------:|
-| **shopify** | E-commerce, product sales | ✓ |
-| **wordpress** | Blogs, content sites | ✓ |
-| **webflow** | Design-focused marketing sites | ✓ |
+| Tool         | Best For                      | CLI Available  |
+|-------------|------------------------------|---------------|
+| **shopify**  | E-commerce, product sales     | ✓              |
+| **wordpress**| Blogs, content sites          | ✓              |
+| **webflow**  | Design-focused marketing sites| ✓              |
 
 **Agent recommendation**: Shopify for e-commerce. Webflow for marketing sites. WordPress for blogs.
 

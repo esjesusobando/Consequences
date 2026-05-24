@@ -13,16 +13,16 @@
 
 **Ubicación:** `01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/`
 
-| Workflow | Archivo | Descripción |
-|----------|---------|-------------|
-| **Iron Man** | `01_Iron_Man_Gen.md` | Generación inicial de código |
-| **Spider-Man** | `02_Spider_Brainstorm.md` | Exploración e ideas |
-| **Professor X** | `03_Professor_X_Plan.md` | Planificación detallada |
-| **Vision** | `04_Vision_Review.md` | Revisión de arquitectura |
-| **Thor** | `05_Thor_Work.md` | Ejecución de trabajo |
-| **Hulk** | `06_Hulk_Compound.md` | Compounding de conocimiento |
-| **Ant-Man** | `07_AntMan_Lfg_Lite.md` | Autonomous Lite |
-| **Dr. Strange** | `08_Doc_Strange_Lfg.md` | Documentación |
+| Workflow       | Archivo                  | Descripción                 |
+|---------------|-------------------------|----------------------------|
+| **Iron Man**   | `01_Iron_Man_Gen.md`     | Generación inicial de código|
+| **Spider-Man** | `02_Spider_Brainstorm.md`| Exploración e ideas         |
+| **Professor X**| `03_Professor_X_Plan.md` | Planificación detallada     |
+| **Vision**     | `04_Vision_Review.md`    | Revisión de arquitectura    |
+| **Thor**       | `05_Thor_Work.md`        | Ejecución de trabajo        |
+| **Hulk**       | `06_Hulk_Compound.md`    | Compounding de conocimiento |
+| **Ant-Man**    | `07_AntMan_Lfg_Lite.md`  | Autonomous Lite             |
+| **Dr. Strange**| `08_Doc_Strange_Lfg.md`  | Documentación               |
 
 ### Skill Marvel/Avengers
 

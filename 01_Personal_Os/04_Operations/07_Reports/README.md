@@ -13,12 +13,12 @@ Centralized reporting hub for Think_Different operations.
 
 ## Available Report Types
 
-| Report | HUB | Trigger | Frequency |
-|--------|-----|---------|-----------|
-| **Telemetry Dashboard** | `18_Telemetry_Hub.py` | `python 18_Telemetry_Hub.py --dashboard` | Weekly / On-demand |
-| **Health Report** | `17_Watchdog_Hub.py` | `python 17_Watchdog_Hub.py` | Weekly / Post-session |
-| **MCP Drift Report** | `15_MCP_Sync_Hub.py` | `python 15_MCP_Sync_Hub.py --report` | Weekly / Post-session |
-| **Audit Reports** | `01_Auditor_Hub.py` | `python 01_Auditor_Hub.py <command>` | Weekly |
+| Report                 | HUB                  | Trigger                                 | Frequency            |
+|-----------------------|---------------------|----------------------------------------|---------------------|
+| **Telemetry Dashboard**| `18_Telemetry_Hub.py`| `python 18_Telemetry_Hub.py --dashboard`| Weekly / On-demand   |
+| **Health Report**      | `17_Watchdog_Hub.py` | `python 17_Watchdog_Hub.py`             | Weekly / Post-session|
+| **MCP Drift Report**   | `15_MCP_Sync_Hub.py` | `python 15_MCP_Sync_Hub.py --report`    | Weekly / Post-session|
+| **Audit Reports**      | `01_Auditor_Hub.py`  | `python 01_Auditor_Hub.py <command>`    | Weekly               |
 
 ---
 
@@ -90,13 +90,13 @@ python 15_MCP_Sync_Hub.py --validate      # Validation tip
 
 **What it generates:**
 
-| Subcommand | Script | Report |
-|------------|--------|--------|
-| `estructura` | Structure audit | Dimension validation + script numbering |
-| `links` | `57_Repo_Sync_Auditor.py` | Repository link sync status |
-| `skills` | `34_Skill_Auditor.py` | Skills validation |
-| `health` | `50_System_Health_Monitor.py` | System health metrics |
-| `profundo` | `33_Parallel_Audit_Pro.py` | Deep parallel audit |
+| Subcommand  | Script                       | Report                                 |
+|------------|-----------------------------|---------------------------------------|
+| `estructura`| Structure audit              | Dimension validation + script numbering|
+| `links`     | `57_Repo_Sync_Auditor.py`    | Repository link sync status            |
+| `skills`    | `34_Skill_Auditor.py`        | Skills validation                      |
+| `health`    | `50_System_Health_Monitor.py`| System health metrics                  |
+| `profundo`  | `33_Parallel_Audit_Pro.py`   | Deep parallel audit                    |
 
 **How to trigger:**
 ```bash

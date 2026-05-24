@@ -43,16 +43,16 @@ blindar    + fix       agentes     renombrar
 **Problema:** 14+ API keys en plain text en `.env`, committeadas al repo.
 
 **Keys a rotar:**
-| Key | Proveedor | Riesgo |
-|-----|-----------|--------|
-| `GITHUB_TOKEN` | GitHub | 🛑 ACCESO TOTAL A REPOS |
-| `OPEN_AI_API_KEY` (x2) | OpenAI | 🛑 USO DE CRÉDITOS |
-| `OPENAI_API_KEY` (duplicada) | OpenAI | 🛑 DUPLICADA Y DISTINTA |
-| `GEMINI_API_KEY` | Google | ⚠️ Gemini API |
-| `NOTION_API_KEY` | Notion | ⚠️ Acceso a workspace |
-| `LINEAR_API_KEY` | Linear | ⚠️ Issues privados |
-| `ANTHROPIC_API_KEY` | Anthropic | ⚠️ Si existe |
-| Las demás (Exa, Fireflies, etc.) | Varios | ⚠️ Depende del scope |
+| Key                             | Proveedor  | Riesgo                |
+|--------------------------------|-----------|----------------------|
+| `GITHUB_TOKEN`                  | GitHub     | 🛑 ACCESO TOTAL A REPOS|
+| `OPEN_AI_API_KEY` (x2)          | OpenAI     | 🛑 USO DE CRÉDITOS     |
+| `OPENAI_API_KEY` (duplicada)    | OpenAI     | 🛑 DUPLICADA Y DISTINTA|
+| `GEMINI_API_KEY`                | Google     | ⚠️ Gemini API         |
+| `NOTION_API_KEY`                | Notion     | ⚠️ Acceso a workspace |
+| `LINEAR_API_KEY`                | Linear     | ⚠️ Issues privados    |
+| `ANTHROPIC_API_KEY`             | Anthropic  | ⚠️ Si existe          |
+| Las demás (Exa, Fireflies, etc.)| Varios     | ⚠️ Depende del scope  |
 
 **Acciones:**
 1. Identificar cada key y generar una nueva desde el panel del proveedor
@@ -193,16 +193,16 @@ find 01_Personal_Os/01_Core/02_Tools/01_Agents/ -name "*.md" | wc -l
 
 Una vez con las cifras reales, actualizar:
 
-| Documento | Sección a corregir |
-|-----------|-------------------|
-| `README.md` | Skills, Agentes, HUBs |
-| `OS_DIRECTORY.md` | Skills, Agentes |
-| `00_Winter_is_Coming/AGENTS.md` | Skills, Agentes |
-| `CLAUDE.md` | Skills, Agentes, Estado del Sistema |
-| `Structure_v4.7.md` | Skills, Agentes |
-| `.agent/CLAUDE.md` | TODO (ya está en Fase 1) |
-| `.agent/README.md` | TODO (ya está en Fase 1) |
-| `.agent/SKILLS_INVENTORY.md` | Skills count |
+| Documento                      | Sección a corregir                 |
+|-------------------------------|-----------------------------------|
+| `README.md`                    | Skills, Agentes, HUBs              |
+| `OS_DIRECTORY.md`              | Skills, Agentes                    |
+| `00_Winter_is_Coming/AGENTS.md`| Skills, Agentes                    |
+| `CLAUDE.md`                    | Skills, Agentes, Estado del Sistema|
+| `Structure_v4.7.md`            | Skills, Agentes                    |
+| `.agent/CLAUDE.md`             | TODO (ya está en Fase 1)           |
+| `.agent/README.md`             | TODO (ya está en Fase 1)           |
+| `.agent/SKILLS_INVENTORY.md`   | Skills count                       |
 
 ### 2.4 Actualizar `README.md` estructura de Playground
 
@@ -252,14 +252,14 @@ rmdir 02_Playground/02_Workflow_N8N
 
 ### 4.1 Unificar versión en todos los documentos
 
-| Documento | Versión actual | Versión target |
-|-----------|---------------|----------------|
-| `.agent/CLAUDE.md` | v3.1 | v4.7 |
-| `.agent/README.md` | v3.1 | v4.7 |
-| `WORKSPACE.md` (.agent) | v2.0 | v4.7 o archivar |
-| `Structure_v4.7.md` | v4.7 | ✅ ya está |
-| `OS_DIRECTORY.md` | v4.7 | ✅ ya está |
-| `README.md` | v4.5 (badge) v4.7 (texto) | v4.7 consistente |
+| Documento              | Versión actual           | Versión target  |
+|-----------------------|-------------------------|----------------|
+| `.agent/CLAUDE.md`     | v3.1                     | v4.7            |
+| `.agent/README.md`     | v3.1                     | v4.7            |
+| `WORKSPACE.md` (.agent)| v2.0                     | v4.7 o archivar |
+| `Structure_v4.7.md`    | v4.7                     | ✅ ya está       |
+| `OS_DIRECTORY.md`      | v4.7                     | ✅ ya está       |
+| `README.md`            | v4.5 (badge) v4.7 (texto)| v4.7 consistente|
 
 ### 4.2 Verificar que `00_Personal_Os_Stack` y `00_Skill_Auditor` estén documentados
 
@@ -293,14 +293,14 @@ FASE 0 ──► FASE 1 ──► FASE 2 ──► FASE 3 ──► FASE 4
 
 ## ⏱️ ESTIMACIÓN DE ESFUERZO
 
-| Fase | Ítems | Tiempo estimado | Dependencias |
-|------|-------|-----------------|--------------|
-| **FASE 0** | 4 | ~30 min | Ninguna |
-| **FASE 1** | 6 | ~40 min | Fase 0 (seguridad primero) |
-| **FASE 2** | 4 | ~25 min | Fase 1.1, 1.2 |
-| **FASE 3** | 3 | ~15 min | Fase 2 (cifras para docs) |
-| **FASE 4** | 3 | ~15 min | Fase 3 |
-| **TOTAL** | **20** | **~2 horas** | |
+| Fase      | Ítems  | Tiempo estimado  | Dependencias              |
+|----------|-------|-----------------|--------------------------|
+| **FASE 0**| 4      | ~30 min          | Ninguna                   |
+| **FASE 1**| 6      | ~40 min          | Fase 0 (seguridad primero)|
+| **FASE 2**| 4      | ~25 min          | Fase 1.1, 1.2             |
+| **FASE 3**| 3      | ~15 min          | Fase 2 (cifras para docs) |
+| **FASE 4**| 3      | ~15 min          | Fase 3                    |
+| **TOTAL** | **20** | **~2 horas**     |                           |
 
 ---
 

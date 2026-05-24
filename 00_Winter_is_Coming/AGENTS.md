@@ -37,8 +37,8 @@ cat 01_Personal_Os/03_Task/  # tareas activas
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
 | **Skills** (12 áreas, 394)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
 | **Reglas** (12 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
-| **Agentes** (46)                                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
-| **HUBs** (19 HUBs + 284 scripts)                    | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
+| **Agentes** (46)                                   | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
+| **HUBs** (19 HUBs + 284 scripts)                   | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
 | **MCPs** (36 Claude)                               | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
@@ -273,15 +273,15 @@ For complex tasks, delegate to workflow files in `01_Personal_Os/01_Core/00_Work
 
 | Command                               | Skill                                | Propósito                                                |
 |--------------------------------------|-------------------------------------|---------------------------------------------------------|
-| `/sdd:init`                           | `sdd-init`                           | Initialize context + persistencia                        |
-| `/sdd:explore`                        | `sdd-explore`                        | Investigar código/ideas                                  |
-| `/sdd:new`                            | `sdd-propose`                        | Create proposal                                          |
-| `/sdd:spec`                           | `sdd-spec`                           | Write specs                                              |
-| `/sdd:design`                         | `sdd-design`                         | Technical design                                         |
-| `/sdd:tasks`                          | `sdd-tasks`                          | Break into tasks                                         |
-| `/sdd:apply`                          | `sdd-apply`                          | Implement                                                |
-| `/sdd:verify`                         | `sdd-verify`                         | Verify                                                   |
-| `/sdd:archive`                        | `sdd-archive`                        | Close & archive                                          |
+| `/sdd-init`                           | `sdd-init`                           | Initialize context + persistencia                        |
+| `/sdd-explore`                        | `sdd-explore`                        | Investigar código/ideas                                  |
+| `/sdd-propose`                        | `sdd-propose`                        | Create proposal                                          |
+| `/sdd-spec`                           | `sdd-spec`                           | Write specs                                              |
+| `/sdd-design`                         | `sdd-design`                         | Technical design                                         |
+| `/sdd-tasks`                          | `sdd-tasks`                          | Break into tasks                                         |
+| `/sdd-apply`                          | `sdd-apply`                          | Implement                                                |
+| `/sdd-verify`                         | `sdd-verify`                         | Verify                                                   |
+| `/sdd-archive`                        | `sdd-archive`                        | Close & archive                                          |
 
 ### SDD Skills Location
 
@@ -349,7 +349,7 @@ Code review con IA.
 
 ---
 
-## 6. MCP SERVERS — Active (35 Servers)
+## 6. MCP SERVERS — Active (36 Servers)
 
 Configured in `.mcp.json` (raíz del proyecto):
 
@@ -429,7 +429,7 @@ gr --agents    # Solo 3 agents
 | Command                          | Descripción                                                                  |
 |---------------------------------|-----------------------------------------------------------------------------|
 | `/gr`                            | System Guardian - Valida estructura                                          |
-| `/sdd:*`                         | SDD Workflow (init, explore, new, etc.)                                      |
+| `/sdd-*`                         | SDD Workflow (init, explore, propose, spec, etc.)                            |
 | `/ce:*`                          | Compound Engineering (ideate, brainstorm, plan, etc.)                        |
 
 ---
@@ -504,8 +504,8 @@ gr --agents    # Solo 3 agents
 | Category                                | Command/Tool                                                         |
 |----------------------------------------|---------------------------------------------------------------------|
 | **Daily**                               | "What should I work on?" / "Clear my backlog"                        |
-| **Plan Feature**                        | `/ce:brainstorm` or `/sdd:new`                                       |
-| **Execute**                             | `/ce:work` or `/sdd:apply`                                           |
+| **Plan Feature**                        | `/ce:brainstorm` or `/sdd-propose`                                   |
+| **Execute**                             | `/ce:work` or `/sdd-apply`                                           |
 | **Review**                              | GGA or `/ce:review`                                                  |
 | **Document**                            | `/ce:compound`                                                       |
 | **Validate**                            | `gr` or `01_Auditor_Hub.py`                                          |

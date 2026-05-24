@@ -65,13 +65,13 @@ Use for "[X] vs [Y]" queries. Optimal for table snippets.
 ```markdown
 ## [Option A] vs [Option B]: [Brief Descriptor]
 
-| Feature | [Option A] | [Option B] |
-|---------|------------|------------|
-| [Criteria 1] | [Value/Description] | [Value/Description] |
-| [Criteria 2] | [Value/Description] | [Value/Description] |
-| [Criteria 3] | [Value/Description] | [Value/Description] |
-| [Criteria 4] | [Value/Description] | [Value/Description] |
-| Best For | [Use case] | [Use case] |
+| Feature     | [Option A]         | [Option B]         |
+|------------|-------------------|-------------------|
+| [Criteria 1]| [Value/Description]| [Value/Description]|
+| [Criteria 2]| [Value/Description]| [Value/Description]|
+| [Criteria 3]| [Value/Description]| [Value/Description]|
+| [Criteria 4]| [Value/Description]| [Value/Description]|
+| Best For    | [Use case]         | [Use case]         |
 
 **Bottom line**: [1-2 sentence recommendation based on different needs]
 ```

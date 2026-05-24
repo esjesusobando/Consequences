@@ -37,20 +37,20 @@ Zona de pruebas y experimentos. **Todo lo validado se integra al OS**, nada qued
 
 ## 🔗 RELACIONES
 
-| Recurso | Ubicación OS |
-|---------|-------------|
-| Skills validadas | `01_Personal_Os/01_Core/02_Tools/02_Skills/` |
-| Agents | `01_Personal_Os/01_Core/02_Tools/01_Agents/` |
-| Reports | `03_Resultado/04_Reportes/` |
+| Recurso         | Ubicación OS                                |
+|----------------|--------------------------------------------|
+| Skills validadas| `01_Personal_Os/01_Core/02_Tools/02_Skills/`|
+| Agents          | `01_Personal_Os/01_Core/02_Tools/01_Agents/`|
+| Reports         | `03_Resultado/04_Reportes/`                 |
 
 ---
 
 ## 📋 HISTORIAL
 
-| Fecha | Acción |
-|-------|--------|
-| 2026-05-20 | Limpieza post-auditoría — eliminados Maerks, New_Skills, Hillary_Life_OS, Focus_Now_Lab |
-| 2026-05-20 | Reenumerado carpetas activas |
+| Fecha     | Acción                                                                                 |
+|----------|---------------------------------------------------------------------------------------|
+| 2026-05-20| Limpieza post-auditoría — eliminados Maerks, New_Skills, Hillary_Life_OS, Focus_Now_Lab|
+| 2026-05-20| Reenumerado carpetas activas                                                           |
 
 ---
 

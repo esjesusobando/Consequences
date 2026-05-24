@@ -25,55 +25,55 @@ Think_Different/
 
 ## 📂 Estructura 01_Core
 
-| #  | Carpeta             | Contenido                                    | Estado |
+| #   | Carpeta              | Contenido                                     | Estado  |
 |----|---------------------|----------------------------------------------|--------|
-| 01 | `00_Workflows_Os/`  | 30 workflows (7 categorías)                  | ✅     |
-| 02 | `01_Rules/`         | 12 reglas .mdc (00-11)                       | ✅     |
-| 03 | `02_Tools/`         | Agents, Skills, MCPs, Hooks, Plugins, Evals  | ✅     |
+| 01  | `00_Workflows_Os/`   | 30 workflows (7 categorías)                   | ✅       |
+| 02  | `01_Rules/`          | 12 reglas .mdc (00-11)                        | ✅       |
+| 03  | `02_Tools/`          | Agents, Skills, MCPs, Hooks, Plugins, Evals   | ✅       |
 
 ---
 
 ## 📂 Estructura 02_Tools
 
-| #  | Carpeta              | Contenido                       | Estado |
+| #   | Carpeta               | Contenido                        | Estado  |
 |----|----------------------|---------------------------------|--------|
-| 01 | `01_Agents/`         | 46 agents (5 áreas)             | ✅     |
-| 02 | `02_Skills/`         | 394 skills (12 áreas)           | ✅     |
-| 03 | `03_Mcp/`            | MCP servers (backup config)     | ✅     |
-| 04 | `04_Integrations/`   | Fireflies, Granola              | ✅     |
-| 05 | `05_Hooks/`          | 10 hooks (6 fases)              | ✅     |
-| 06 | `06_Plugins/`        | Plugins OS                      | ✅     |
-| 07 | `07_Server/`         | Engram server                   | ✅     |
-| 08 | `08_Evals/`          | Evaluaciones                    | ✅     |
-| 09 | `09_Templates/`      | Plantillas                      | ✅     |
+| 01  | `01_Agents/`          | 46 agents (5 áreas)              | ✅       |
+| 02  | `02_Skills/`          | 394 skills (12 áreas)            | ✅       |
+| 03  | `03_Mcp/`             | MCP servers (backup config)      | ✅       |
+| 04  | `04_Integrations/`    | Fireflies, Granola               | ✅       |
+| 05  | `05_Hooks/`           | 10 hooks (6 fases)               | ✅       |
+| 06  | `06_Plugins/`         | Plugins OS                       | ✅       |
+| 07  | `07_Server/`          | Engram server                    | ✅       |
+| 08  | `08_Evals/`           | Evaluaciones                     | ✅       |
+| 09  | `09_Templates/`       | Plantillas                       | ✅       |
 
 ---
 
 ## 📊 Resumen de Inventario
 
-| Componente       | Cantidad | Estado   |
-|-----------------|----------|----------|
-| Workflows       | 30       | ✅ Activo |
-| Rules (.mdc)    | 12       | ✅ Definido |
-| Agents          | 46       | ✅ Sync |
-| Skills          | 394      | ✅ 12 áreas |
-| MCPs            | 36       | ✅ Activo |
-| HUBs            | 19       | ✅ Activo |
-| Scripts totales | 284      | ✅ Recursivo |
-| JARVIS Manifests| 7        | ✅ Validado |
-| Hooks           | 10       | ✅ 6 fases |
+| Componente       | Cantidad  | Estado     |
+|-----------------|----------|-----------|
+| Workflows        | 30        | ✅ Activo   |
+| Rules (.mdc)     | 12        | ✅ Definido |
+| Agents           | 46        | ✅ Sync     |
+| Skills           | 394       | ✅ 12 áreas |
+| MCPs             | 36        | ✅ Activo   |
+| HUBs             | 19        | ✅ Activo   |
+| Scripts totales  | 284       | ✅ Recursivo|
+| JARVIS Manifests | 7         | ✅ Validado |
+| Hooks            | 10        | ✅ 6 fases  |
 
 ---
 
 ## 📋 Documentos Clave
 
-| Documento         | Ubicación                          |
+| Documento          | Ubicación                           |
 |-------------------|------------------------------------|
-| Dream Team        | `02_Dream_Team.md`                 |
-| Inventario Total  | `01_Inventario_Total.md`           |
-| Inventario Core   | `03_Inventario_Core.md`            |
-| Workflows         | `00_Workflows_Os/README.md`        |
-| Comandos          | `00_Comandos_Workflows.md`         |
+| Dream Team         | `02_Dream_Team.md`                  |
+| Inventario Total   | `01_Inventario_Total.md`            |
+| Inventario Core    | `03_Inventario_Core.md`             |
+| Workflows          | `00_Workflows_Os/README.md`         |
+| Comandos           | `00_Comandos_Workflows.md`          |
 
 ---
 

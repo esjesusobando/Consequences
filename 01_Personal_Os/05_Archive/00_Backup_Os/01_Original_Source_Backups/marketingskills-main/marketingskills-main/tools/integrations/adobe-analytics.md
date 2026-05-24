@@ -4,12 +4,12 @@ Enterprise analytics platform for cross-channel measurement and attribution.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | Reporting API 2.0, Data Insertion API |
-| MCP | - | Not available |
-| CLI | - | Not available |
-| SDK | ✓ | AppMeasurement.js, Mobile SDKs, Launch |
+| Integration  | Available  | Notes                                 |
+|-------------|-----------|--------------------------------------|
+| API          | ✓          | Reporting API 2.0, Data Insertion API |
+| MCP          |-----------| Not available                         |
+| CLI          |-----------| Not available                         |
+| SDK          | ✓          | AppMeasurement.js, Mobile SDKs, Launch|
 
 ## Authentication
 

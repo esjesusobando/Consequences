@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 07_Integration_Hub.py — MCP & External Integrations Hub
 =========================================================

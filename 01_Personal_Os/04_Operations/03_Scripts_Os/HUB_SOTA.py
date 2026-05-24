@@ -1,6 +1,7 @@
+#!/usr/bin/env python3
 """
 HUB_SOTA.py — SOTA Features Orchestrator
-PersonalOS v4.1 — JARVIS Integration
+PersonalOS v4.7 — JARVIS Integration
 Auto-discovered by System_Mapper_Hub.py
 
 Usage:
@@ -38,7 +39,7 @@ def show_status():
     """Show status of all SOTA features."""
     config = load_config()
     print("\n" + "="*60)
-    print("SOTA FEATURES STATUS — PersonalOS v4.1")
+    print("SOTA FEATURES STATUS — PersonalOS v4.7")
     print("="*60)
 
     for feature_name in FEATURES.keys():

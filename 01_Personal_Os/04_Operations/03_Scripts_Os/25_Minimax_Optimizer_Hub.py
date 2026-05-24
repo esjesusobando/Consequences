@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 25_Minimax_Optimizer_Hub.py - Gestión de Integración MiniMax para PersonalOS
 ===========================================================================

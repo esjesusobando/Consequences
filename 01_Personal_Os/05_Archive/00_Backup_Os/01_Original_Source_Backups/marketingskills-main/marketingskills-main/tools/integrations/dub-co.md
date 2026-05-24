@@ -4,12 +4,12 @@ Link management and attribution platform for modern marketing teams.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | REST API for links, analytics, domains |
-| MCP | - | Not available |
-| CLI | - | Not available |
-| SDK | ✓ | TypeScript SDK available |
+| Integration  | Available  | Notes                                 |
+|-------------|-----------|--------------------------------------|
+| API          | ✓          | REST API for links, analytics, domains|
+| MCP          |-----------| Not available                         |
+| CLI          |-----------| Not available                         |
+| SDK          | ✓          | TypeScript SDK available              |
 
 ## Authentication
 

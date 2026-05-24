@@ -28,20 +28,20 @@ Repos clonados de upstream para referencia y consulta. Estos repos contienen el 
 
 ## 📊 Repos Principales
 
-| Repo | Stars | Propósito |
-|------|-------|-----------|
-| **engram** | 2.7k | Memoria persistente |
-| **gentle-ai** | 2.2k | AI Gentle Stack |
-| **taste-skill** | 3.9k | Diseño premium UI/UX |
-| **Gentleman.Dots** | 1.7k | LazyVim config |
+| Repo              | Stars  | Propósito           |
+|------------------|-------|--------------------|
+| **engram**        | 2.7k   | Memoria persistente |
+| **gentle-ai**     | 2.2k   | AI Gentle Stack     |
+| **taste-skill**   | 3.9k   | Diseño premium UI/UX|
+| **Gentleman.Dots**| 1.7k   | LazyVim config      |
 
 ---
 
 ## 🔄 Historial
 
-| Fecha | Cambio |
-|-------|--------|
-| 2026-05-20 | v4.5 — Reorganizado con subcarpetas numeradas |
+| Fecha     | Cambio                                       |
+|----------|---------------------------------------------|
+| 2026-05-20| v4.5 — Reorganizado con subcarpetas numeradas|
 
 ---
 

@@ -46,12 +46,12 @@ Migrar a:
 
 ## 4. Riesgos
 
-| Componente | Riesgo | Mitigation |
-|------------|--------|------------|
-| Next 14 → 16 | Breaking changes en App Router | Testing completo |
-| React 18 → 19 | Breaking changes en hooks | Revisar breaking changes |
-| ESLint 8 → 10 | Reglas deprecated | `--fix` automatico |
-| Tailwind | Cambios en config | Migración guiada |
+| Componente   | Riesgo                        | Mitigation              |
+|-------------|------------------------------|------------------------|
+| Next 14 → 16 | Breaking changes en App Router| Testing completo        |
+| React 18 → 19| Breaking changes en hooks     | Revisar breaking changes|
+| ESLint 8 → 10| Reglas deprecated             | `--fix` automatico      |
+| Tailwind     | Cambios en config             | Migración guiada        |
 
 ---
 

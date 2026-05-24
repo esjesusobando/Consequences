@@ -22,13 +22,13 @@ The load test was conducted with a higher timeout configuration to address previ
 ## Test environment
 ### Machines
 
-| Machine | Size/CPU | Status |
-|---|---|---|
-| e286de4f711e86 mia (app) | performance-cpu-1x@2048MB | always on |
-| 73d8dd909c1189 mia (app) | performance-cpu-1x@2048MB | always on |
-| 6e82050c726358 mia (app) | performance-cpu-1x@2048MB | paused |
-| 4d89505a6e5038 mia (app) | performance-cpu-1x@2048MB | paused |
-| 48ed6e6b74e378 mia (app) | performance-cpu-1x@2048MB | paused |
+| Machine                 | Size/CPU                 | Status   |
+|------------------------|-------------------------|---------|
+| e286de4f711e86 mia (app)| performance-cpu-1x@2048MB| always on|
+| 73d8dd909c1189 mia (app)| performance-cpu-1x@2048MB| always on|
+| 6e82050c726358 mia (app)| performance-cpu-1x@2048MB| paused   |
+| 4d89505a6e5038 mia (app)| performance-cpu-1x@2048MB| paused   |
+| 48ed6e6b74e378 mia (app)| performance-cpu-1x@2048MB| paused   |
 
 ---
 
@@ -45,31 +45,31 @@ The load test was conducted with a higher timeout configuration to address previ
 ### Results
 Date: 15:59:50(-0300)
 
-| Metric                                      | Value   |
+| Metric                                       | Value    |
 |---------------------------------------------|---------|
-| errors.Failed capture or match              | 4       |
-| http.codes.200                              | 8996    |
-| http.codes.502                              | 4       |
-| http.downloaded_bytes                       | 0       |
-| http.request_rate                           | 23/sec  |
-| http.requests                               | 9000    |
-| http.response_time.min                      | 62      |
-| http.response_time.max                      | 18924   |
-| http.response_time.mean                     | 5661.8  |
-| http.response_time.median                   | 5378.9  |
-| http.response_time.p95                      | 11050.8 |
-| http.response_time.p99                      | 12968.3 |
-| http.responses                              | 9000    |
-| vusers.completed                            | 8996    |
-| vusers.created                              | 9000    |
-| vusers.created_by_name.Scrape a URL         | 9000    |
-| vusers.failed                               | 4       |
-| vusers.session_length.min                   | 1079.2  |
-| vusers.session_length.max                   | 18980.3 |
-| vusers.session_length.mean                  | 5734.4  |
-| vusers.session_length.median                | 5487.5  |
-| vusers.session_length.p95                   | 11050.8 |
-| vusers.session_length.p99                   | 12968.3 |
+| errors.Failed capture or match               | 4        |
+| http.codes.200                               | 8996     |
+| http.codes.502                               | 4        |
+| http.downloaded_bytes                        | 0        |
+| http.request_rate                            | 23/sec   |
+| http.requests                                | 9000     |
+| http.response_time.min                       | 62       |
+| http.response_time.max                       | 18924    |
+| http.response_time.mean                      | 5661.8   |
+| http.response_time.median                    | 5378.9   |
+| http.response_time.p95                       | 11050.8  |
+| http.response_time.p99                       | 12968.3  |
+| http.responses                               | 9000     |
+| vusers.completed                             | 8996     |
+| vusers.created                               | 9000     |
+| vusers.created_by_name.Scrape a URL          | 9000     |
+| vusers.failed                                | 4        |
+| vusers.session_length.min                    | 1079.2   |
+| vusers.session_length.max                    | 18980.3  |
+| vusers.session_length.mean                   | 5734.4   |
+| vusers.session_length.median                 | 5487.5   |
+| vusers.session_length.p95                    | 11050.8  |
+| vusers.session_length.p99                    | 12968.3  |
 
 ### Metrics
 

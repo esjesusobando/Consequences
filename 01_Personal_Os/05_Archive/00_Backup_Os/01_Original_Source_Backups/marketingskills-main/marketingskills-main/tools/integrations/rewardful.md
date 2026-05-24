@@ -4,12 +4,12 @@ Affiliate and referral tracking for Stripe-based SaaS businesses.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | REST API for affiliates, referrals, commissions |
-| MCP | - | Not available |
-| CLI | - | Not available |
-| SDK | - | API-only, JavaScript snippet for tracking |
+| Integration  | Available  | Notes                                          |
+|-------------|-----------|-----------------------------------------------|
+| API          | ✓          | REST API for affiliates, referrals, commissions|
+| MCP          |-----------| Not available                                  |
+| CLI          |-----------| Not available                                  |
+| SDK          |-----------| API-only, JavaScript snippet for tracking      |
 
 ## Authentication
 
@@ -103,14 +103,14 @@ rewardful('convert', { email: 'customer@example.com' });
 
 ## Webhook Events
 
-| Event | When |
-|-------|------|
-| `affiliate.created` | New affiliate signs up |
-| `affiliate.approved` | Affiliate approved |
-| `referral.created` | New referral tracked |
-| `referral.converted` | Referral becomes customer |
-| `commission.created` | Commission generated |
-| `commission.paid` | Commission paid out |
+| Event               | When                     |
+|--------------------|-------------------------|
+| `affiliate.created` | New affiliate signs up   |
+| `affiliate.approved`| Affiliate approved       |
+| `referral.created`  | New referral tracked     |
+| `referral.converted`| Referral becomes customer|
+| `commission.created`| Commission generated     |
+| `commission.paid`   | Commission paid out      |
 
 ## Key Objects
 

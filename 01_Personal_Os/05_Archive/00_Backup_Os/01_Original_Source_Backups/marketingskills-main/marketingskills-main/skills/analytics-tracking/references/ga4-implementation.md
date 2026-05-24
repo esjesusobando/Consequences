@@ -13,14 +13,14 @@ Detailed implementation guide for Google Analytics 4.
 
 ### Enhanced Measurement Events (Automatic)
 
-| Event | Description | Configuration |
-|-------|-------------|---------------|
-| page_view | Page loads | Automatic |
-| scroll | 90% scroll depth | Toggle on/off |
-| outbound_click | Click to external domain | Automatic |
-| site_search | Search query used | Configure parameter |
-| video_engagement | YouTube video plays | Toggle on/off |
-| file_download | PDF, docs, etc. | Configurable extensions |
+| Event           | Description             | Configuration          |
+|----------------|------------------------|-----------------------|
+| page_view       | Page loads              | Automatic              |
+| scroll          | 90% scroll depth        | Toggle on/off          |
+| outbound_click  | Click to external domain| Automatic              |
+| site_search     | Search query used       | Configure parameter    |
+| video_engagement| YouTube video plays     | Toggle on/off          |
+| file_download   | PDF, docs, etc.         | Configurable extensions|
 
 ### Recommended Events
 
@@ -175,11 +175,11 @@ Or set default value in GA4 Admin when marking conversion.
 
 ### Examples
 
-| Dimension | Scope | Parameter | Description |
-|-----------|-------|-----------|-------------|
-| User Type | User | user_type | Free, trial, paid |
-| Content Author | Event | author | Blog post author |
-| Product Category | Item | item_category | E-commerce category |
+| Dimension       | Scope  | Parameter    | Description        |
+|----------------|-------|-------------|-------------------|
+| User Type       | User   | user_type    | Free, trial, paid  |
+| Content Author  | Event  | author       | Blog post author   |
+| Product Category| Item   | item_category| E-commerce category|
 
 ---
 

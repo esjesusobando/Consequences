@@ -315,8 +315,8 @@ def main():
 
     project_root = find_project_root()
 
-    # Default to 01_Core/03_Skills
-    skills_dir = project_root / "01_Core" / "03_Skills"
+    # Default to current skills path
+    skills_dir = project_root / "01_Core" / "02_Tools" / "02_Skills"
 
     if not skills_dir.exists():
         # Try alternative path

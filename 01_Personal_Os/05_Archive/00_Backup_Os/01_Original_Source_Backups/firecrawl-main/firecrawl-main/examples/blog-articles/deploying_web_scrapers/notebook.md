@@ -110,13 +110,13 @@ These limits are based on various cost factors like compute time, data transfer 
 
 Here is a little decision matrix to distill all this information:
 
-| Factor          | Small Project | Medium Project | Large Project |
+| Factor           | Small Project  | Medium Project  | Large Project  |
 |-----------------|---------------|----------------|---------------|
-| Best Platform   | GitHub Actions| AWS Lambda     | Kubernetes   |
-| Monthly Cost    | $0           | $10-50         | $100+        |
-| Setup Time      | 1-2 hours    | 1-2 days       | 1-2 weeks    |
-| Maintenance     | Minimal      | Moderate       | Significant  |
-| Scalability     | Limited      | Good           | Excellent    |
+| Best Platform    | GitHub Actions | AWS Lambda      | Kubernetes     |
+| Monthly Cost     | $0             | $10-50          | $100+          |
+| Setup Time       | 1-2 hours      | 1-2 days        | 1-2 weeks      |
+| Maintenance      | Minimal        | Moderate        | Significant    |
+| Scalability      | Limited        | Good            | Excellent      |
 
 -------------
 

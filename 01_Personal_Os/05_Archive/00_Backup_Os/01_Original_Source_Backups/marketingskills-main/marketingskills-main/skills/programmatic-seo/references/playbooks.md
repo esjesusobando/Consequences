@@ -272,17 +272,17 @@ Beyond mixing and matching data point permutations, these are the proven playboo
 
 ### Match to Your Assets
 
-| If you have... | Consider... |
-|----------------|-------------|
-| Proprietary data | Stats, Directories, Profiles |
-| Product with integrations | Integrations |
-| Design/creative product | Templates, Examples |
-| Multi-segment audience | Personas |
-| Local presence | Locations |
-| Tool or utility product | Conversions |
-| Content/expertise | Glossary, Curation |
-| International potential | Translations |
-| Competitor landscape | Comparisons |
+| If you have...           | Consider...                 |
+|-------------------------|----------------------------|
+| Proprietary data         | Stats, Directories, Profiles|
+| Product with integrations| Integrations                |
+| Design/creative product  | Templates, Examples         |
+| Multi-segment audience   | Personas                    |
+| Local presence           | Locations                   |
+| Tool or utility product  | Conversions                 |
+| Content/expertise        | Glossary, Curation          |
+| International potential  | Translations                |
+| Competitor landscape     | Comparisons                 |
 
 ### Combine Playbooks
 

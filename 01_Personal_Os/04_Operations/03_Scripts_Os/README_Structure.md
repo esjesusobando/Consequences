@@ -7,15 +7,15 @@
 
 ## 📊 OVERVIEW
 
-| Category | Count | Description |
-|---|---|---|
-| **HUBs principales** | 28 | Scripts activos en raíz de `03_Scripts_Os/` |
-| **AIPM scripts** | 9 | Scripts de AI Performance Monitoring (backup) |
-| **Validator scripts** | 5 | Scripts de validación (backup) |
-| **Data scripts** | 4 | Scripts de procesamiento de datos |
-| **Integration scripts** | 3 | Scripts de integración MCP |
-| **General scripts** | 4 | Utilidades generales |
-| **Legacy scripts** | 80+ | Histórico de versiones anteriores |
+| Category               | Count| Description                                  |
+|-----------------------|-----|---------------------------------------------|
+| **HUBs principales**   | 28   | Scripts activos en raíz de `03_Scripts_Os/`  |
+| **AIPM scripts**       | 9    | Scripts de AI Performance Monitoring (backup)|
+| **Validator scripts**  | 5    | Scripts de validación (backup)               |
+| **Data scripts**       | 4    | Scripts de procesamiento de datos            |
+| **Integration scripts**| 3    | Scripts de integración MCP                   |
+| **General scripts**    | 4    | Utilidades generales                         |
+| **Legacy scripts**     | 80+  | Histórico de versiones anteriores            |
 
 **Total reportado por HUB_Catalog.yaml: 152**
 
@@ -128,36 +128,36 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py --apply
 
 ## 📊 HUB Catalog (28 activos)
 
-| # | HUB | Propósito |
-|---|---|---|
-| 00 | Sound Engine | Notificaciones sonoras |
-| 01 | Auditor | Auditoría de sistema |
-| 02 | Git | Operaciones Git |
-| 03 | AIPM | AI Performance Monitoring |
-| 04 | Ritual | Rituales de sesión |
-| 05 | Validator | Validación de código |
-| 06 | Tool | Integración de herramientas |
-| 07 | Integration | Integraciones MCP |
-| 08 | Workflow | Automatización de workflows |
-| 09 | Data | Procesamiento de datos |
-| 10 | General | Utilidades generales |
-| 11 | Auto Learn | Motor de automejora |
-| 14 | Health Metrics | Health metrics |
-| 15 | MCP Sync | Sync Claude ↔ OpenCode |
-| 16 | Agent Mirror | Mirror agents |
-| 17 | Watchdog | Health watchdog |
-| 18 | Telemetry | Dashboard ASCII |
-| 19 | Agent Sync | Sync agents |
-| 20 | System Mapper | Genera manifests |
-| 21 | Legacy Path Cleanup | Limpia paths legacy |
-| 22 | Validate Skill Frontmatter | Detecta skills sin frontmatter |
-| 23 | Path Replacement | Utility |
-| 24 | Mass Path Migration | Utility |
-| 25 | Minimax Optimizer | Optimizador |
-| 33 | Parallel Audit Pro | Auditoría paralela |
-| 34 | Skill Auditor | Auditoría de skills |
-| 50 | System Health Monitor | Monitor de salud |
-| 57 | Repo Sync Auditor | Auditor de repos |
+| #  | HUB                       | Propósito                     |
+|---|--------------------------|------------------------------|
+| 00 | Sound Engine              | Notificaciones sonoras        |
+| 01 | Auditor                   | Auditoría de sistema          |
+| 02 | Git                       | Operaciones Git               |
+| 03 | AIPM                      | AI Performance Monitoring     |
+| 04 | Ritual                    | Rituales de sesión            |
+| 05 | Validator                 | Validación de código          |
+| 06 | Tool                      | Integración de herramientas   |
+| 07 | Integration               | Integraciones MCP             |
+| 08 | Workflow                  | Automatización de workflows   |
+| 09 | Data                      | Procesamiento de datos        |
+| 10 | General                   | Utilidades generales          |
+| 11 | Auto Learn                | Motor de automejora           |
+| 14 | Health Metrics            | Health metrics                |
+| 15 | MCP Sync                  | Sync Claude ↔ OpenCode        |
+| 16 | Agent Mirror              | Mirror agents                 |
+| 17 | Watchdog                  | Health watchdog               |
+| 18 | Telemetry                 | Dashboard ASCII               |
+| 19 | Agent Sync                | Sync agents                   |
+| 20 | System Mapper             | Genera manifests              |
+| 21 | Legacy Path Cleanup       | Limpia paths legacy           |
+| 22 | Validate Skill Frontmatter| Detecta skills sin frontmatter|
+| 23 | Path Replacement          | Utility                       |
+| 24 | Mass Path Migration       | Utility                       |
+| 25 | Minimax Optimizer         | Optimizador                   |
+| 33 | Parallel Audit Pro        | Auditoría paralela            |
+| 34 | Skill Auditor             | Auditoría de skills           |
+| 50 | System Health Monitor     | Monitor de salud              |
+| 57 | Repo Sync Auditor         | Auditor de repos              |
 
 ---
 

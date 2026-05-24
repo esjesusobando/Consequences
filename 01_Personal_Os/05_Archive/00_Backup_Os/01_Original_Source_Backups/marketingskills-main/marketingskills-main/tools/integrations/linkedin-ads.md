@@ -4,12 +4,12 @@ B2B advertising platform with professional targeting.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | Marketing API for campaigns, audiences, analytics |
-| MCP | - | Not available |
-| CLI | - | Not available |
-| SDK | - | API-only (community libraries available) |
+| Integration  | Available  | Notes                                            |
+|-------------|-----------|-------------------------------------------------|
+| API          | ✓          | Marketing API for campaigns, audiences, analytics|
+| MCP          |-----------| Not available                                    |
+| CLI          |-----------| Not available                                    |
+| SDK          |-----------| API-only (community libraries available)         |
 
 ## Authentication
 
@@ -111,13 +111,13 @@ POST https://api.linkedin.com/v2/audienceCountsV2
 
 ## Key Metrics
 
-| Metric | Description |
-|--------|-------------|
-| `impressions` | Ad impressions |
-| `clicks` | Total clicks |
-| `costInLocalCurrency` | Spend |
-| `conversions` | Conversion count |
-| `leadGenerationMailContactInfoShares` | Lead form submissions |
+| Metric                               | Description          |
+|-------------------------------------|---------------------|
+| `impressions`                        | Ad impressions       |
+| `clicks`                             | Total clicks         |
+| `costInLocalCurrency`                | Spend                |
+| `conversions`                        | Conversion count     |
+| `leadGenerationMailContactInfoShares`| Lead form submissions|
 
 ## Campaign Types
 

@@ -92,15 +92,15 @@ python 19_Agent_Sync_Hub.py --apply
 
 ## 📊 ESTADO FINAL
 
-| Área | Score | Antes |
-|---|---|---|
-| Estructura | 100/100 | 85/100 |
-| Scripts | 100/100 | 70/100 |
-| Skills | 100/100 | 100/100 |
-| MCPs | 100/100 | 100/100 |
-| Workflows | 100/100 | 95/100 |
-| Hooks | 100/100 | 100/100 |
-| **OVERALL** | **100/100** | **92/100** |
+| Área       | Score      | Antes     |
+|-----------|-----------|----------|
+| Estructura | 100/100    | 85/100    |
+| Scripts    | 100/100    | 70/100    |
+| Skills     | 100/100    | 100/100   |
+| MCPs       | 100/100    | 100/100   |
+| Workflows  | 100/100    | 95/100    |
+| Hooks      | 100/100    | 100/100   |
+| **OVERALL**| **100/100**| **92/100**|
 
 **Health Score:** 100/100 🟢 PURE GREEN
 

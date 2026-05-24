@@ -81,12 +81,12 @@ Features are ranked by utility score:
 
 ### Using MaxDiff for Packaging
 
-| Utility Score | Packaging Decision |
-|---------------|-------------------|
-| Top 20% | Include in all tiers (table stakes) |
-| 20-50% | Use to differentiate tiers |
-| 50-80% | Higher tiers only |
-| Bottom 20% | Consider cutting or premium add-on |
+| Utility Score  | Packaging Decision                 |
+|---------------|-----------------------------------|
+| Top 20%        | Include in all tiers (table stakes)|
+| 20-50%         | Use to differentiate tiers         |
+| 50-80%         | Higher tiers only                  |
+| Bottom 20%     | Consider cutting or premium add-on |
 
 ---
 

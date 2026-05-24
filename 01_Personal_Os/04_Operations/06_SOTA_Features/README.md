@@ -4,13 +4,13 @@
 
 ## Features
 
-| Feature | Status | Description |
-|---------|--------|-------------|
-| **Contemplation Loop** | 🔶 Off | Between-session improvement — reviews memories, extracts patterns |
-| **Voice Profile** | 🔶 Off | Writing style fingerprint extraction |
-| **Memory Versioning** | 🔶 Off | Immutable versions + audit trail for Engram |
-| **Feedback Loop** | 🔶 Off | User corrections → persistent behavioral rules |
-| **Ambient Intelligence** | 🔶 Off | Screenpipe integration for automatic context |
+| Feature                 | Status  | Description                                                      |
+|------------------------|--------|-----------------------------------------------------------------|
+| **Contemplation Loop**  | 🔶 Off   | Between-session improvement — reviews memories, extracts patterns|
+| **Voice Profile**       | 🔶 Off   | Writing style fingerprint extraction                             |
+| **Memory Versioning**   | 🔶 Off   | Immutable versions + audit trail for Engram                      |
+| **Feedback Loop**       | 🔶 Off   | User corrections → persistent behavioral rules                   |
+| **Ambient Intelligence**| 🔶 Off   | Screenpipe integration for automatic context                     |
 
 ## Quick Start
 

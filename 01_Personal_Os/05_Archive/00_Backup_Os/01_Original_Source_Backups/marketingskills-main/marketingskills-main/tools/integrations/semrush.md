@@ -4,12 +4,12 @@ SEO and competitive analysis platform for keyword research and site audits.
 
 ## Capabilities
 
-| Integration | Available | Notes |
-|-------------|-----------|-------|
-| API | ✓ | Analytics API, Projects API |
-| MCP | - | Not available |
-| CLI | - | Not available |
-| SDK | - | API-only |
+| Integration  | Available  | Notes                      |
+|-------------|-----------|---------------------------|
+| API          | ✓          | Analytics API, Projects API|
+| MCP          |-----------| Not available              |
+| CLI          |-----------| Not available              |
+| SDK          |-----------| API-only                   |
 
 ## Authentication
 

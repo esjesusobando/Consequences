@@ -161,13 +161,13 @@ Detailed targeting strategies for each major ad platform.
 
 ### High-Performing Combinations
 
-| Use Case | Targeting Combination |
-|----------|----------------------|
-| Enterprise sales | Company size 1000+ + VP/CXO + Industry |
-| SMB sales | Company size 11-200 + Manager/Director + Function |
-| Developer tools | Skills + Job function + Company type |
-| ABM campaigns | Company list + Decision-maker titles |
-| Broad awareness | Industry + Seniority + Geography |
+| Use Case        | Targeting Combination                            |
+|----------------|-------------------------------------------------|
+| Enterprise sales| Company size 1000+ + VP/CXO + Industry           |
+| SMB sales       | Company size 11-200 + Manager/Director + Function|
+| Developer tools | Skills + Job function + Company type             |
+| ABM campaigns   | Company list + Decision-maker titles             |
+| Broad awareness | Industry + Seniority + Geography                 |
 
 ---
 
@@ -209,14 +209,14 @@ Detailed targeting strategies for each major ad platform.
 
 ## Audience Size Guidelines
 
-| Platform | Minimum Recommended | Ideal Range |
-|----------|-------------------|-------------|
+| Platform      | Minimum Recommended| Ideal Range  |
+|--------------|-------------------|-------------|
 | Google Search | 1,000+ searches/mo | 5,000-50,000 |
-| Google Display | 100,000+ | 500K-5M |
-| Meta | 100,000+ | 500K-10M |
-| LinkedIn | 50,000+ | 100K-500K |
-| Twitter/X | 50,000+ | 100K-1M |
-| TikTok | 100,000+ | 1M+ |
+| Google Display| 100,000+           | 500K-5M      |
+| Meta          | 100,000+           | 500K-10M     |
+| LinkedIn      | 50,000+            | 100K-500K    |
+| Twitter/X     | 50,000+            | 100K-1M      |
+| TikTok        | 100,000+           | 1M+          |
 
 Too narrow = expensive, slow learning
 Too broad = wasted spend, poor relevance

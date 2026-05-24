@@ -88,7 +88,7 @@ Think_Different/
 
 ## ⚡ RECURSOS DEL ORQUESTADOR
 
-| Recurso                        | Ubicación                                                                 | Para qué usarlo                          |
+| Recurso                        | Ubicación                                                                 | Para qué usarlo                           |
 |-------------------------------|--------------------------------------------------------------------------|------------------------------------------|
 | **Skills** (12 áreas, 393+)    | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
 | **Reglas** (12 .mdc)           | `01_Personal_Os/01_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
@@ -133,15 +133,15 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 
 ## 🎯 WORKFLOWS DISPONIBLES (7 categorías)
 
-| Categoría               | Path                            | Workflows principales                          |
-|------------------------|---------------------------------|-----------------------------------------------|
-| **Learning Always**     | `00_Learning_Always/`            | Continuous learning module                     |
-| **Personal OS**         | `01_Personal_Os/`                | Morning, Backlog, Content, Weekly, Rituales    |
-| **Marvel**              | `02_Marvel/`                     | Iron Man Gen, Spider, Professor X, Vision, Thor, Hulk, AntMan, Doc Strange |
-| **Gentleman**           | `03_Gentleman/`                  | Frontend Premium, Redacción de Docs            |
-| **Hillary**             | `04_Hillary/`                    | Captura Rápida, Hillary Life OS                |
-| **Compound Engineering**| `05_Compound_Engineering/`       | Deep Work, Ship It, Harness, Multi-Agent       |
-| **YouTube Full Video**  | `06_Youtube_Full_Video/`         | Pipeline de producción de video                |
+| Categoría               | Path                             | Workflows principales                                                     |
+|------------------------|---------------------------------|--------------------------------------------------------------------------|
+| **Learning Always**     | `00_Learning_Always/`            | Continuous learning module                                                |
+| **Personal OS**         | `01_Personal_Os/`                | Morning, Backlog, Content, Weekly, Rituales                               |
+| **Marvel**              | `02_Marvel/`                     | Iron Man Gen, Spider, Professor X, Vision, Thor, Hulk, AntMan, Doc Strange|
+| **Gentleman**           | `03_Gentleman/`                  | Frontend Premium, Redacción de Docs                                       |
+| **Hillary**             | `04_Hillary/`                    | Captura Rápida, Hillary Life OS                                           |
+| **Compound Engineering**| `05_Compound_Engineering/`       | Deep Work, Ship It, Harness, Multi-Agent                                  |
+| **YouTube Full Video**  | `06_Youtube_Full_Video/`         | Pipeline de producción de video                                           |
 
 ---
 
@@ -177,25 +177,25 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 
 ## 🧠 SDD (Spec-Driven Development) — Comandos
 
-| Comando        | Fase                    | Propósito                        |
-|---------------|-------------------------|----------------------------------|
-| `/sdd-new`     | proposal → spec → design → tasks → apply → verify → archive | Cambio completo |
-| `/sdd-explore` | Investigación            | Explorar código/ideas             |
-| `/sdd-apply`   | Implementación           | Codificar según specs             |
-| `/sdd-verify`  | Validación               | Tests vs specs                    |
+| Comando        | Fase                                                       | Propósito                         |
+|---------------|-----------------------------------------------------------|----------------------------------|
+| `/sdd-new`     | proposal → spec → design → tasks → apply → verify → archive| Cambio completo                   |
+| `/sdd-explore` | Investigación                                              | Explorar código/ideas             |
+| `/sdd-apply`   | Implementación                                             | Codificar según specs             |
+| `/sdd-verify`  | Validación                                                 | Tests vs specs                    |
 
 ---
 
 ## 🔄 COMPOUND ENGINEERING — Comandos
 
-| Comando        | Propósito                          |
-|---------------|------------------------------------|
-| `/ce:ideate`   | Descubrir mejoras de alto impacto  |
-| `/ce:brainstorm` | Explorar requisitos              |
-| `/ce:plan`     | Plan de implementación detallado   |
-| `/ce:work`     | Ejecutar con calidad               |
-| `/ce:review`   | Code review multi-agente           |
-| `/ce:compound` | Documentar aprendizajes            |
+| Comando         | Propósito                           |
+|----------------|------------------------------------|
+| `/ce:ideate`    | Descubrir mejoras de alto impacto   |
+| `/ce:brainstorm`| Explorar requisitos                 |
+| `/ce:plan`      | Plan de implementación detallado    |
+| `/ce:work`      | Ejecutar con calidad                |
+| `/ce:review`    | Code review multi-agente            |
+| `/ce:compound`  | Documentar aprendizajes             |
 
 ---
 

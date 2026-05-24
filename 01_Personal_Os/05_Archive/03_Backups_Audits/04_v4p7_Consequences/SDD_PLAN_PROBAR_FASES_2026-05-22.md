@@ -14,14 +14,14 @@
 
 ### Estado Git observado
 
-| Señal | Cantidad / Estado | Diagnóstico |
-|---|---:|---|
-| Branch | `master...origin/master [ahead 1]` | Hay 1 commit local todavía no publicado o remoto no sincronizado en este clone. |
-| Deletes tracked | 284 | Riesgo alto: hay muchas eliminaciones en skills de diseño/UI. No commitear sin clasificar. |
-| Modified tracked | 2 | `02_MCP_Registry.yaml` y submodule `gentle-pi`. |
-| Untracked | 286 | Parecen reubicaciones/renombres de skills + lockfile OIM + este plan SDD. |
-| Submodule drift | `gentle-pi c3ce0a9f9 → 848a1fd62` | Decisión pendiente: actualizar puntero o revertir. |
-| Lockfile nuevo | `03_Resultado/09b_World_OIM/02_OIM_Website/package-lock.json` | Decisión pendiente: trackear si corresponde al build activo. |
+| Señal           | Cantidad / Estado                                            | Diagnóstico                                                                               |
+|----------------|-------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| Branch          | `master...origin/master [ahead 1]`                           | Hay 1 commit local todavía no publicado o remoto no sincronizado en este clone.           |
+| Deletes tracked | 284                                                          | Riesgo alto: hay muchas eliminaciones en skills de diseño/UI. No commitear sin clasificar.|
+| Modified tracked| 2                                                            | `02_MCP_Registry.yaml` y submodule `gentle-pi`.                                           |
+| Untracked       | 286                                                          | Parecen reubicaciones/renombres de skills + lockfile OIM + este plan SDD.                 |
+| Submodule drift | `gentle-pi c3ce0a9f9 → 848a1fd62`                            | Decisión pendiente: actualizar puntero o revertir.                                        |
+| Lockfile nuevo  | `03_Resultado/09b_World_OIM/02_OIM_Website/package-lock.json`| Decisión pendiente: trackear si corresponde al build activo.                              |
 
 ### Riesgo principal nuevo
 
@@ -172,15 +172,15 @@ graph TD
 
 ### Evidencia por fase
 
-| Fase | Evidencia mínima | Resultado esperado |
-|---|---|---|
-| A Git | `git status`, `git log`, remoto | clean o pendientes claros |
-| B Deps | package versions, lockfiles, build/lint | pass o bloqueo documentado |
-| C Submodules | `git submodule status --recursive` | sin fatal + decisión por drift |
-| D Legacy Routes | audit scripts output | clasificación por tipo |
-| E Backlog | tasks 10-17 revisados | todos accionables |
-| F AI News | output real 7 días | reporte usable |
-| Extra Reports | README/templates/output policy | rutina clara |
+| Fase           | Evidencia mínima                       | Resultado esperado            |
+|---------------|---------------------------------------|------------------------------|
+| A Git          | `git status`, `git log`, remoto        | clean o pendientes claros     |
+| B Deps         | package versions, lockfiles, build/lint| pass o bloqueo documentado    |
+| C Submodules   | `git submodule status --recursive`     | sin fatal + decisión por drift|
+| D Legacy Routes| audit scripts output                   | clasificación por tipo        |
+| E Backlog      | tasks 10-17 revisados                  | todos accionables             |
+| F AI News      | output real 7 días                     | reporte usable                |
+| Extra Reports  | README/templates/output policy         | rutina clara                  |
 
 ---
 
@@ -284,14 +284,14 @@ graph TD
 
 Al terminar pruebas, crear un reporte con este formato:
 
-| Fase | Estado | Evidencia | Riesgo | Siguiente acción |
-|---|---|---|---|---|
-| A Git | PASS/WARN/FAIL | comando + output | bajo/medio/alto | acción |
-| B Deps | PASS/WARN/FAIL | build/lint | bajo/medio/alto | acción |
-| C Submodules | PASS/WARN/FAIL | submodule status | bajo/medio/alto | acción |
-| D Legacy | PASS/WARN/FAIL | audit output | bajo/medio/alto | acción |
-| E Backlog | PASS/WARN/FAIL | tasks | bajo/medio/alto | acción |
-| F AI News | PASS/WARN/FAIL | outputs | bajo/medio/alto | acción |
+| Fase        | Estado        | Evidencia       | Riesgo         | Siguiente acción|
+|------------|--------------|----------------|---------------|----------------|
+| A Git       | PASS/WARN/FAIL| comando + output| bajo/medio/alto| acción          |
+| B Deps      | PASS/WARN/FAIL| build/lint      | bajo/medio/alto| acción          |
+| C Submodules| PASS/WARN/FAIL| submodule status| bajo/medio/alto| acción          |
+| D Legacy    | PASS/WARN/FAIL| audit output    | bajo/medio/alto| acción          |
+| E Backlog   | PASS/WARN/FAIL| tasks           | bajo/medio/alto| acción          |
+| F AI News   | PASS/WARN/FAIL| outputs         | bajo/medio/alto| acción          |
 
 ### Criterio para “100%”
 
@@ -346,11 +346,11 @@ Antes de ejecutar cualquier fase técnica, completar este gate:
 
 Para cada grupo:
 
-| Grupo | Acción de auditoría | Criterio |
-|---|---|---|
-| `02_Diseno_Ui_Ux` | Detectar si `07/08` fueron renombrados a `09/10/13` | Si contenido coincide, tratar como rename; si no, preservar ambos hasta decisión. |
-| `04_Automatizacion` | Detectar si nuevas skills son complementos o duplicados | Mantener si aportan capacidad nueva; fusionar solo si hay duplicado claro. |
-| `06_Tools` | Revisar duplicados `18/22 System_Master`, `21/23 Silicon_Valley`, `23/24 AI News` | Evitar dos skills equivalentes con números distintos sin índice. |
+| Grupo              | Acción de auditoría                                                              | Criterio                                                                         |
+|-------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| `02_Diseno_Ui_Ux`  | Detectar si `07/08` fueron renombrados a `09/10/13`                              | Si contenido coincide, tratar como rename; si no, preservar ambos hasta decisión.|
+| `04_Automatizacion`| Detectar si nuevas skills son complementos o duplicados                          | Mantener si aportan capacidad nueva; fusionar solo si hay duplicado claro.       |
+| `06_Tools`         | Revisar duplicados `18/22 System_Master`, `21/23 Silicon_Valley`, `23/24 AI News`| Evitar dos skills equivalentes con números distintos sin índice.                 |
 
 ### P0-GATE-03 — Actualizar manifests sin perder info
 

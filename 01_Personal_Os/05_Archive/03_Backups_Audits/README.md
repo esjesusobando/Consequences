@@ -41,15 +41,15 @@ Backups, snapshots y reportes de auditoría del sistema. Todo lo relacionado con
 
 ## 📊 Resumen de Contenido
 
-| Subcarpeta | Contenido |
-|------------|-----------|
-| 01_Raiz_Archive | Archivos originales de la raíz |
-| 02_Auditorias | Reportes de auditorías del sistema |
-| 03_Backups_AutoMejora | Backups del motor de auto-mejora |
-| 04_Legacy_Revisar | Material para revisión |
-| 05_Legacy_Scripts_Backup | Scripts en backup |
-| 06_Tasks_Legacy | Tareas pendientes completadas |
-| 07_Snapshots | Snapshots históricos del sistema |
+| Subcarpeta              | Contenido                         |
+|------------------------|----------------------------------|
+| 01_Raiz_Archive         | Archivos originales de la raíz    |
+| 02_Auditorias           | Reportes de auditorías del sistema|
+| 03_Backups_AutoMejora   | Backups del motor de auto-mejora  |
+| 04_Legacy_Revisar       | Material para revisión            |
+| 05_Legacy_Scripts_Backup| Scripts en backup                 |
+| 06_Tasks_Legacy         | Tareas pendientes completadas     |
+| 07_Snapshots            | Snapshots históricos del sistema  |
 
 ---
 
@@ -63,10 +63,10 @@ Backups, snapshots y reportes de auditoría del sistema. Todo lo relacionado con
 
 ## 🔄 Historial
 
-| Fecha | Cambio |
-|-------|--------|
-| 2026-05-20 | v4.5 — Reorganizado con 7 subcarpetas numeradas |
-| 2026-05-20 | AUDIT_REPORT_v4.1.md convertido a README de esta carpeta |
+| Fecha     | Cambio                                                  |
+|----------|--------------------------------------------------------|
+| 2026-05-20| v4.5 — Reorganizado con 7 subcarpetas numeradas         |
+| 2026-05-20| AUDIT_REPORT_v4.1.md convertido a README de esta carpeta|
 
 ---
 

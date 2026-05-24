@@ -22,10 +22,10 @@ The load test successfully processed 600 requests in 60 seconds with all request
 ## Test environment
 ### Machines
 
-| Machine | Size/CPU |
-|---|---|
-| e286de4f711e86 mia (app) | performance-cpu-1x@2048MB |
-| 73d8dd909c1189 mia (app) | performance-cpu-1x@2048MB |
+| Machine                 | Size/CPU                 |
+|------------------------|-------------------------|
+| e286de4f711e86 mia (app)| performance-cpu-1x@2048MB|
+| 73d8dd909c1189 mia (app)| performance-cpu-1x@2048MB|
 
 ---
 
@@ -40,29 +40,29 @@ The load test successfully processed 600 requests in 60 seconds with all request
 ### Archillery Report
 Date: 10:49:39(-0300)
 
-| Metric                                      | Value   |
+| Metric                                       | Value    |
 |---------------------------------------------|---------|
-| http.codes.200                              | 600     |
-| http.downloaded_bytes                       | 0       |
-| http.request_rate                           | 10/sec  |
-| http.requests                               | 600     |
-| http.response_time.min                      | 984     |
-| http.response_time.max                      | 2267    |
-| http.response_time.mean                     | 1380.1  |
-| http.response_time.median                   | 1353.1  |
-| http.response_time.p95                      | 1755    |
-| http.response_time.p99                      | 2059.5  |
-| http.responses                              | 600     |
-| vusers.completed                            | 600     |
-| vusers.created                              | 600     |
-| vusers.created_by_name.Scrape a URL         | 600     |
-| vusers.failed                               | 0       |
-| vusers.session_length.min                   | 1053.7  |
-| vusers.session_length.max                   | 2332.6  |
-| vusers.session_length.mean                  | 1447.4  |
-| vusers.session_length.median                | 1436.8  |
-| vusers.session_length.p95                   | 1863.5  |
-| vusers.session_length.p99                   | 2143.5  |
+| http.codes.200                               | 600      |
+| http.downloaded_bytes                        | 0        |
+| http.request_rate                            | 10/sec   |
+| http.requests                                | 600      |
+| http.response_time.min                       | 984      |
+| http.response_time.max                       | 2267     |
+| http.response_time.mean                      | 1380.1   |
+| http.response_time.median                    | 1353.1   |
+| http.response_time.p95                       | 1755     |
+| http.response_time.p99                       | 2059.5   |
+| http.responses                               | 600      |
+| vusers.completed                             | 600      |
+| vusers.created                               | 600      |
+| vusers.created_by_name.Scrape a URL          | 600      |
+| vusers.failed                                | 0        |
+| vusers.session_length.min                    | 1053.7   |
+| vusers.session_length.max                    | 2332.6   |
+| vusers.session_length.mean                   | 1447.4   |
+| vusers.session_length.median                 | 1436.8   |
+| vusers.session_length.p95                    | 1863.5   |
+| vusers.session_length.p99                    | 2143.5   |
 
 ### CPU Utilization
 ![](./assets/CPU-utilization-report-test-1.png)
@@ -72,10 +72,10 @@ Both machines peaked at around 50% CPU utilization.
 ### Memory Utilization
 ![](./assets/memory-utilization-report-test-1.png)
 
-| Machine | Before | After Load Test |
-|---|---|---|
-| e286de4f711e86 | 295 MiB | 358 MiB |
-| 73d8dd909c1189 | 296 MiB | 355 MiB |
+| Machine       | Before | After Load Test|
+|--------------|-------|---------------|
+| e286de4f711e86| 295 MiB| 358 MiB        |
+| 73d8dd909c1189| 296 MiB| 355 MiB        |
 
 Notice that the memory utilization has not re-stabilished to the pre-test values during the check window, which may indicate a memory leak problem.
 

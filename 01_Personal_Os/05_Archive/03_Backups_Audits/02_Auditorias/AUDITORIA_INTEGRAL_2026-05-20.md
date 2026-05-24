@@ -8,17 +8,17 @@
 
 ## 📊 RESUMEN EJECUTIVO
 
-| Categoría | Estado | Tickets | Prioridad |
-|---|---|---|---|
-| **Overall** | 🟡 OPORTUNIDAD | 6 | MEDIUM |
-| Agent Sync (Source↔Backup) | 🔴 DRIFT | 25 archivos | CRITICAL |
-| Scripts Duplicados | 🟡 INFLATION | ~120 entries | LOW |
-| MCP Sync | ✅ SYNCED | 0 drift | — |
-| Skills (352) | ✅ VERIFIED | 0 sin frontmatter | — |
-| HUBs (28 + 152 scripts) | ✅ OK | Gaps de numeración | INFO |
-| Workflows (29) | ✅ OK | 0 issues | — |
-| Hooks (10) | ✅ OK | 0 issues | — |
-| Rules (12) | ✅ OK | 0 issues | — |
+| Categoría                 | Estado       | Tickets           | Prioridad|
+|--------------------------|-------------|------------------|---------|
+| **Overall**               | 🟡 OPORTUNIDAD| 6                 | MEDIUM   |
+| Agent Sync (Source↔Backup)| 🔴 DRIFT      | 25 archivos       | CRITICAL |
+| Scripts Duplicados        | 🟡 INFLATION  | ~120 entries      | LOW      |
+| MCP Sync                  | ✅ SYNCED     | 0 drift           | —        |
+| Skills (352)              | ✅ VERIFIED   | 0 sin frontmatter | —        |
+| HUBs (28 + 152 scripts)   | ✅ OK         | Gaps de numeración| INFO     |
+| Workflows (29)            | ✅ OK         | 0 issues          | —        |
+| Hooks (10)                | ✅ OK         | 0 issues          | —        |
+| Rules (12)                | ✅ OK         | 0 issues          | —        |
 
 ---
 
@@ -122,10 +122,10 @@ Agregar comment en el HUB_Catalog o en `05_Archive/` explicando que los gaps son
 
 ### Skills duplicadas detectadas:
 
-| Skill | Path Normal | Path Duplicado |
-|---|---|---|
-| skill-creator | Global `~/.config/opencode/skills/gentleman/06_Compound_Engineering/` | `06_Tools/01_Skill_Creator/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/` |
-| 01_Vercel_Deploy | `06_Tools/04_DevOps/07_DevOps/01_Vercel_Deploy/` | Posible duplicado en otra área |
+| Skill           | Path Normal                                                          | Path Duplicado                                                                             |
+|----------------|---------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| skill-creator   | Global `~/.config/opencode/skills/gentleman/06_Compound_Engineering/`| `06_Tools/01_Skill_Creator/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator/`|
+| 01_Vercel_Deploy| `06_Tools/04_DevOps/07_DevOps/01_Vercel_Deploy/`                     | Posible duplicado en otra área                                                             |
 
 ### Fix Recomendado
 El skill `skill-creator` local dentro de `15_Skill_Creator_Oficial/01_Skill_Creator/skills/` es un **backup local**. Mantenerlo como referencia, no como skill activo.
@@ -158,13 +158,13 @@ El skill `skill-creator` local dentro de `15_Skill_Creator_Oficial/01_Skill_Crea
 
 ## 📋 PLAN DE ACCIÓN
 
-| # | Acción | Prioridad | Estado |
-|---|---|---|---|
-| 1 | Ejecutar `19_Agent_Sync_Hub.py` para sincronizar agents | CRITICAL | PENDIENTE |
-| 2 | Regenerar manifests con `20_System_Mapper_Hub.py --scan` | HIGH | PENDIENTE |
-| 3 | Auditar subdirectorios AIPM/Validator duplicados | MEDIUM | REVISAR |
-| 4 | Documentar gaps de numeración HUB | LOW | INFO |
-| 5 | Verificar zombie skills (skill-creator duplicado) | LOW | INFO |
+| #  | Acción                                                  | Prioridad| Estado   |
+|---|--------------------------------------------------------|---------|---------|
+| 1  | Ejecutar `19_Agent_Sync_Hub.py` para sincronizar agents | CRITICAL | PENDIENTE|
+| 2  | Regenerar manifests con `20_System_Mapper_Hub.py --scan`| HIGH     | PENDIENTE|
+| 3  | Auditar subdirectorios AIPM/Validator duplicados        | MEDIUM   | REVISAR  |
+| 4  | Documentar gaps de numeración HUB                       | LOW      | INFO     |
+| 5  | Verificar zombie skills (skill-creator duplicado)       | LOW      | INFO     |
 
 ---
 
@@ -188,11 +188,11 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboar
 
 ## ✅ ESTADO POST-AUDITORÍA (2026-05-20 — RESUELTO)
 
-| # | Acción | Estado |
-|---|---|---|
-| 1 | Agent Sync `--apply` ejecutado | ✅ DONE — 25 archivos sincronizados |
-| 2 | System Mapper `--scan` ejecutado | ✅ DONE — Manifests regenerados |
-| 3 | Watchdog health check | ✅ ALL SYSTEMS GREEN |
+| #  | Acción                          | Estado                            |
+|---|--------------------------------|----------------------------------|
+| 1  | Agent Sync `--apply` ejecutado  | ✅ DONE — 25 archivos sincronizados|
+| 2  | System Mapper `--scan` ejecutado| ✅ DONE — Manifests regenerados    |
+| 3  | Watchdog health check           | ✅ ALL SYSTEMS GREEN               |
 
 ### Resultados Post-Fix:
 - **Agents:** 58 → 82 (sync bidirectional completo)
@@ -204,15 +204,15 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboar
 
 ## 📊 HEALTH SCORE — POST-AUDIT
 
-| Área | Score | Notas |
-|---|---|---|
-| Estructura | 100/100 | ✅ Agent sync done, docs actualizadas |
-| Scripts | 100/100 | ✅ Inflation intencional (legacy preservation) + README_Structure.md creado |
-| Skills | 100/100 | ✅ Perfecto |
-| MCPs | 100/100 | ✅ Perfecto sync |
-| Workflows | 100/100 | ✅ 29 workflows activos |
-| Hooks | 100/100 | ✅ Perfecto |
-| **OVERALL** | **100/100** | 🟢 PURE GREEN — TODO AL 100% |
+| Área       | Score      | Notas                                                                     |
+|-----------|-----------|--------------------------------------------------------------------------|
+| Estructura | 100/100    | ✅ Agent sync done, docs actualizadas                                      |
+| Scripts    | 100/100    | ✅ Inflation intencional (legacy preservation) + README_Structure.md creado|
+| Skills     | 100/100    | ✅ Perfecto                                                                |
+| MCPs       | 100/100    | ✅ Perfecto sync                                                           |
+| Workflows  | 100/100    | ✅ 29 workflows activos                                                    |
+| Hooks      | 100/100    | ✅ Perfecto                                                                |
+| **OVERALL**| **100/100**| 🟢 PURE GREEN — TODO AL 100%                                               |
 
 ---
 

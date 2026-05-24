@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 06_Tool_Hub.py — Tool Integration & Management Hub
 ====================================================

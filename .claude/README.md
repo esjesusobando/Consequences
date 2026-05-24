@@ -1,6 +1,6 @@
 # .claude — Claude Code Configuration & Memory
 
-> **Versión:** v4.1
+> **Versión:** v4.7 Consequences
 > **Última actualización:** 2026-05-20
 
 ---
@@ -41,4 +41,4 @@ Configuración local de Claude Code y sistema de memoria persistente. Contiene r
 
 ---
 
-*Think Different PersonalOS v4.1*
+*Think Different PersonalOS v4.7 Consequences*
