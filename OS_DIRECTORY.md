@@ -12,17 +12,17 @@
 | Every CE                              | v3.8.4 (local repo) ✅                                                      | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.30.6                                                                    | ✅ AVAILABLE                                    |
 | Skills                                | **394** (12 áreas funcionales)                                             | ✅ VERIFIED — 0 sin frontmatter                 |
-| Agentes                               | **46** (5 Dream + 23 Specialists + 13 individuales + 5 Growth)             | ✅ SYNCED — 46↔46 drift 0                       |
-| HUBs                                  | **19** scripts HUB (`*_Hub.py`) + 12 support scripts                       | ✅ VERIFIED                                     |
-| Scripts totales                       | **284** (recursivo en 03_Scripts_Os/)                                      | ✅ DOCUMENTED                                   |
+| Agentes                               | **58** (source) / 95 (backup)                                              | ✅ SYNCED                                      |
+| HUBs                                  | **28**                                                                     | ✅ VERIFIED                                     |
+| Scripts totales                       | **152**                                                                    | ✅ DOCUMENTED                                   |
 | Workflows                             | **30** (7 categorías en 00_Workflows_Os)                                   | ✅ ACTIVE                                       |
 | Hooks                                 | **10** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk)| ✅ ACTIVE                                       |
 | Rules                                 | **12 (.mdc)** en 01_Rules                                                  | ✅ DEFINED                                      |
 | JARVIS Manifests                      | 7 en 00_Manifest/                                                          | ✅ VALIDATED                                    |
-| Open Design                           | 62 skills + 138 design systems                                             | ✅ INTEGRATED                                   |
+| Integrations                          | **2** (01_Fireflies, 02_Granola)                                           | ✅ INTEGRATED                                   |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-22 — v4.7 Consequences
-> Agent Sync: 46↔46 drift 0. Skills: 394 (SKILL.md). MCPs: 36/36 sync.
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-24 — v4.7 Consequences
+> Agent Sync: 58 agents. Skills: 394 (SKILL.md). MCPs: 36/36 sync. HUBs: 28. Scripts: 152.
 
 ---
 

@@ -300,11 +300,11 @@ Think_Different/                    # RAÍZ
 | Componente                | Total                                                   | Estado  |
 |--------------------------|--------------------------------------------------------|--------|
 | Skills                    | 394 (12 áreas)                                          | ✅       |
-| Agentes                   | 46 (5 Dream + 23 Specialists + 13 Individual + 5 Growth)| ✅       |
+| Agentes                   | 58 (source) / 95 (backup)                               | ✅       |
 | Rules                     | 12 (.mdc 00-11)                                         | ✅       |
 | MCPs                      | 36                                                      | ✅       |
-| HUBs                      | 19 _Hub.py + 12 auxiliares = 31 py                      | ✅       |
-| Scripts                   | 284 (recursivo en 03_Scripts_Os/)                       | ✅       |
+| HUBs                      | 28                                                      | ✅       |
+| Scripts                   | 152 (recursivo en 03_Scripts_Os/)                       | ✅       |
 | Workflows                 | 30 (7 categorías)                                       | ✅       |
 | CE Skills in opencode.json| 36+8 = 44                                               | ✅       |
 | Projects (Lab)            | 9                                                       | ✅       |
@@ -357,4 +357,4 @@ Al iniciar sesión, ejecutar EN ORDEN:
 
 *Versión: v4.7 Consequences*
 *Audit: 2026-05-23*
-*Skills: 394 | Agents: 46 | MCPs: 36 | HUBs: 19*
+*Skills: 394 | Agents: 58 | MCPs: 36 | HUBs: 28*

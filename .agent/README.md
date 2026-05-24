@@ -13,7 +13,7 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 | Directorio           | Contenido                                | Fuente de verdad                               |
 |----------------------|------------------------------------------|------------------------------------------------|
 | **00_Rules/**        | 11 reglas activas (.mdc)                 | `01_Personal_Os/01_Core/01_Rules/`             |
-| **01_Agents/**       | Agentes configurados (46+)               | `01_Personal_Os/01_Core/02_Tools/01_Agents/`   |
+| **01_Agents/**       | Agentes configurados (58+)               | `01_Personal_Os/01_Core/02_Tools/01_Agents/`   |
 | **02_Skills/**       | Skills organizadas (backup)              | `01_Personal_Os/01_Core/02_Tools/02_Skills/`   |
 | **03_Workflows/**    | Workflows del sistema                    | `01_Personal_Os/01_Core/00_Workflows_Os/`      |
 | **04_Extensions/**   | Hooks system (Pre/Post/Lifecycle/Sound)  | Local                                          |
@@ -30,7 +30,7 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 | **01_Personal_Os/01_Core/**         | Motor: Skills (12 áreas, 394), Rules (12), MCPs (36), Tools |
 | **01_Personal_Os/02_Knowledge/**    | Documentación, Research, Notas                           |
 | **01_Personal_Os/03_Task/**         | Tareas activas                                           |
-| **01_Personal_Os/04_Operations/**   | Operativo: Scripts (23), Auto-Mejora, Projects, Context LLM |
+| **01_Personal_Os/04_Operations/**   | Operativo: Scripts (152), Auto-Mejora, Projects, Context LLM |
 | **01_Personal_Os/05_Archive/**      | Legacy archivado                                         |
 | **02_Playground/**                  | Zona de pruebas (no contamina el OS)                     |
 | **03_Resultado/**                   | Outputs de proyectos                                     |

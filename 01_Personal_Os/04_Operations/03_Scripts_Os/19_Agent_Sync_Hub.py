@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-15_Agent_Sync_Hub.py — PersonalOS v4.7 Consequences
+19_Agent_Sync_Hub.py — PersonalOS v4.7 Consequences
 
 Sincroniza .agent/01_Agents/ con 01_Personal_Os/01_Core/02_Tools/01_Agents/
 Detecta drift y lo reporta. Modo --apply lo corrige.
 
 Usage:
-    python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py
-    python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py --apply
+    python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
+    python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py --apply
 """
 
 import io

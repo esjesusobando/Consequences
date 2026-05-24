@@ -1,6 +1,6 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-23T08:31:47",
+  "generated": "2026-05-24T08:43:53",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
     "areas": 12,
@@ -334,16 +334,6 @@
         {
           "name": "00_System_Core",
           "path": "00_System_Core/SKILL.md",
-          "has_frontmatter": true
-        }
-      ]
-    },
-    "10_Skill_Auditor": {
-      "count": 1,
-      "skills": [
-        {
-          "name": "10_Skill_Auditor",
-          "path": "10_Skill_Auditor/SKILL.md",
           "has_frontmatter": true
         }
       ]
@@ -2034,6 +2024,16 @@
         {
           "name": "19_Ads_Youtube",
           "path": "09_Claude_Ads/05_Skills/19_Ads_Youtube/SKILL.md",
+          "has_frontmatter": true
+        }
+      ]
+    },
+    "10_Skill_Auditor": {
+      "count": 1,
+      "skills": [
+        {
+          "name": "10_Skill_Auditor",
+          "path": "10_Skill_Auditor/SKILL.md",
           "has_frontmatter": true
         }
       ]

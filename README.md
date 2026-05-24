@@ -21,8 +21,8 @@
 | **Skills**                          | **394** (12 áreas funcionales)                  |
 | **Rules**                           | **12** (.mdc)                                   |
 | **MCPs**                            | **36** Claude Code                              |
-| **HUBs**                            | **19** HUBs + 284 scripts                       |
-| **Agentes**                         | **46** (Dream Team + Specialists + Growth)      |
+| **HUBs**                            | **28** HUBs + 152 scripts                       |
+| **Agentes**                         | **58** (source) / 95 (backup)                   |
 | **Workflows**                       | **30** (7 categorías)                           |
 
 ---
