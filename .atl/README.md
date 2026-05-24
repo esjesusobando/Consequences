@@ -19,7 +19,7 @@ Directorio de artefactos del sistema SDD (Spec-Driven Development).
 
 ## Fuentes de Verdad
 
-- Skills: 01_Personal_Os/01_Core/02_Tools/02_Skills/
+- Skills: .agent/02_Skills/ (migrated from 01_Personal_Os/01_Core/02_Tools/02_Skills/)
 - Registry principal: 02_Knowledge/04_Docs/99_ATL/skill-registry.md
 - Reglas: 01_Core/01_Rules/
 

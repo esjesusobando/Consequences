@@ -66,7 +66,7 @@ testing:
 
 skill_sources:
   user_level: "~/.config/opencode/skills/"
-  project_level: "01_Personal_Os/01_Core/02_Tools/02_Skills/"
+  project_level: ".agent/02_Skills/"
   config: ".atl/skill-registry.md"
 
 persistence:
@@ -99,3 +99,13 @@ known_issues:
       - .atl/skill-registry.md
     status: fixed
     fixed_date: "2026-04-26"
+  - id: KI-004
+    severity: medium
+    title: Project-level skills source path changed
+    description: Project-level skills moved from "01_Personal_Os/01_Core/02_Tools/02_Skills/" to ".agent/02_Skills/". Config and registry references need updating for consistency.
+    affected_files:
+      - .atl/openspec/config.yaml (skill_sources.project_level)
+      - .atl/skill-registry.md (note about project-level skills)
+      - .atl/README.md (Fuentes de Verdad section)
+    status: open
+    recommendation: All three .atl/ config files updated as of 2026-05-23. Registry auto-generator may need its source path updated to match.
