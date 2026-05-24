@@ -88,7 +88,7 @@ __Cursor_Rule_Skeleton.mdc
 01_EV_Claude_Opus_03_26.md
 README.md
 
-01_Core/03_Skills:
+01_Core/02_Tools/02_Skills:
 00_Compound_Engineering
 00_Personal_Os_Stack
 00_Skill_Auditor

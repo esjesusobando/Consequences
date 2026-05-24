@@ -126,7 +126,7 @@ print("="*70)
 
 legacy_patterns = [
     ("08_Scripts_Os", "v1.x scripts"),
-    ("01_Core/03_Skills", "v1.x skills"),
+    ("01_Core/02_Tools/02_Skills", "v1.x skills"),
     ("06_Playground", "v1.x playground"),
 ]
 

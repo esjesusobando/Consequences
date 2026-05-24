@@ -14,7 +14,7 @@ PROJECT_ROOT = Path(
 REPLACEMENTS = [
     # (pattern, replacement, description)
     ("04_Operations", "04_Operations", "Old engine folder"),
-    ("01_Core/03_Skills", "01_Core/03_Skills", "Claude skills old path"),
+    ("01_Core/02_Tools/02_Skills", "01_Core/02_Tools/02_Skills", "Claude skills old path"),
     ("04_Operations", "04_Operations", "Old operations folder"),
     ("03_Tasks/", "03_Tasks/", "Old todos directory"),
     (".agent/01_Agents", ".agent/01_Agents", "Claude agents old path"),

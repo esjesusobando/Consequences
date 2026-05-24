@@ -45,8 +45,8 @@ ROOT = ROOT_DIR
 
 OLD_PATHS = (
     ".agent/02_Skills/",
-    "01_Core/03_Skills/",
-    "01_Personal_Os/01_Core/03_Skills/",
+    "01_Core/02_Tools/02_Skills/",
+    "01_Personal_Os/01_Core/02_Tools/02_Skills/",
 )
 NEW_PATH = "01_Personal_Os/01_Core/02_Tools/02_Skills/"
 
