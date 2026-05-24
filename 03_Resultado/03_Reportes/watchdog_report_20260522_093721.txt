@@ -1,0 +1,27 @@
++==============================================================+
+|       WATCHDOG HUB -- HEALTH REPORT               |
+|  Timestamp: 2026-05-22T09:37:21.062910 |
++==============================================================+
+
+|  1. MANIFEST INTEGRITY (7 archivos):               |
+|    [OK] 01_OS_Inventory.json                     |
+|    [OK] 02_MCP_Registry.yaml                     |
+|    [OK] 03_Agent_Catalog.yaml                    |
+|    [OK] 04_Skill_Index.json                      |
+|    [OK] 05_HUB_Catalog.yaml                      |
+|    [OK] 06_Workflow_Graph.yaml                   |
+|    [OK] 07_Hook_Registry.yaml                    |
+
+|  2. MCP SYNC STATUS:                            |
+|    Claude MCPs:   36                              |
+|    OpenCode:    36                              |
+|    Status:     ok                   |
+
+|  3. LEGACY DRIFT:                               |
+|    [OK] Total refs:   0                           |
+
+|  4. SKILLS FRONTMATTER:                         |
+|    [OK] Sin frontmatter:   0                      |
++==============================================================+
+|  >> OVERALL: [OK] ALL SYSTEMS GREEN              |
++==============================================================+

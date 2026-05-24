@@ -1,0 +1,4 @@
+Audit estructura — 20260523_122118
+Dimension errors: 0
+Numbering errors: 1
+Total errors: 1
