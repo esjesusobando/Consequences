@@ -84,6 +84,7 @@ test_*.py
 
 # MCP configurations (local to each machine — contain API keys)
 .mcp.json
+.mcp.json.backup
 .mcp.json.local
 .claude/mcp.json
 .agent/mcp.json
