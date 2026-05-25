@@ -1,8 +1,8 @@
-# 🛡️ CLAUDE.md | PersonalOS v4.7 — Production Ready AI Context Harness
+# 🛡️ CLAUDE.md | PersonalOS v4.8 — Production Ready AI Context Harness
 
-> **Última actualización:** 2026-05-23
-> **Versión:** v4.7 — Every CE v3.8.4 (local repo), gentle-ai v1.30.6
-> **Audit:** 2026-05-23 — Full project audit v2: fixed submodule, registered 21 CE skills, updated counts
+> **Última actualización:** 2026-05-25
+> **Versión:** v4.8 — Every CE v3.8.4 (local repo), gentle-ai v1.30.6
+> **Audit:** 2026-05-25 — Judgment Day v3: full project scan, counts corregidos, docs syncronizados
 
 <system_directives>
   <fundamental_rule>
@@ -167,9 +167,9 @@ Think_Different/                           # RAÍZ
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD 💾)
 │   │   ├── 00_Workflows_Os/     ✅ 30 workflows (7 categorías)
-│   │   ├── 01_Rules/            ✅ 12 reglas (.mdc) — fuente de verdad
+│   │   ├── 01_Rules/            ✅ 13 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/            ✅ Todas las herramientas
-│       │   ├── 01_Agents/       ✅ 46 agentes (5 Dream Team + 23 Specialists + 13 Individuales + 5 Growth)
+│       │   ├── 01_Agents/       ✅ 48 agentes (5 Dream Team + 23 Specialists + 13 Individuales + 5 Growth + 2 Root)
 │   │       ├── 02_Skills/         ✅ 394 skills (12 áreas funcionales)
 │   │       ├── 03_Mcp/         ✅ Backup configs MCP
 │   │       ├── 04_Integrations/ ✅ Fireflies, Granola
@@ -185,7 +185,7 @@ Think_Different/                           # RAÍZ
 │       ├── 00_Context_LLM/      ✅ Memoria, notas, knowledge brain
 │       ├── 01_Auto_Improvement/ ✅ Motor auto-mejora
 │       ├── 02_Agent_Teams_Lite/ ✅ SDD registry + 7 JARVIS manifests
-│       ├── 03_Scripts_Os/       ✅ 28 HUBs total: 19 raíz + 9 aux + 284 scripts (recursivo)
+│       ├── 03_Scripts_Os/       ✅ 21+2 HUBs + 284 scripts (recursivo)
 │       ├── 04_Installer/        ✅ Instalador del OS
 │       ├── 05_Projects/         ✅ Proyectos activos
 │       ├── 06_SOTA_Features/    ✅ Features estado-del-arte
@@ -196,14 +196,14 @@ Think_Different/                           # RAÍZ
 ├── .atl/                        ✅ SDD Registry + openspec
 ├── .claude/                     ✅ Config Claude Code + rules
 ├── .opencode/                   ✅ Config OpenCode + skills locales
-├── .mcp.json                    ✅ MCPs activos (36 Claude)
+├── .mcp.json                    ✅ MCPs activos (7 Claude + 38 backup)
 ├── OS_DIRECTORY.md              ✅ JARVIS discovery
 ├── AGENTS.md                    ✅ Root entry (GGA Pre-Commit)
 ├── CLAUDE.md                    ✅ Config Oficial para IAs (ESTE)
 └── README.md                    ✅ Documentación principal
 ```
 
-### 2. AGENTS (46 — post-cleanup 2026-05-23)
+### 2. AGENTS (48 — post-Judgment Day 2026-05-25)
 
 | Categoría                                   | Ubicación                                                                        |
 |--------------------------------------------|---------------------------------------------------------------------------------|
@@ -212,7 +212,7 @@ Think_Different/                           # RAÍZ
 | Individuales (13)                           | `01_Core/02_Tools/01_Agents/`                                                    |
 | Growth (5)                                  | `01_Core/02_Tools/01_Agents/03_Growth/`                                          |
 
-> ⚠️ Source + Backup sync: **46 ↔ 46** — Agent drift: 0 ✅ — Skills drift: 394 vs .agent (734) — copy-not-cut de migración v3.1, no afecta runtime. .agent tiene legacy de 22 directorios pre-consolidación + 10_Backup (205). Ignorar — no es bug.
+> ⚠️ Source + Backup sync: **48 ↔ 48** — Agent drift: 0 ✅ — Skills drift: 394 vs .agent (734) — copy-not-cut de migración v3.1, no afecta runtime. .agent tiene legacy de 22 directorios pre-consolidación + 10_Backup (205). Ignorar — no es bug.
 
 ### 3. SKILLS (394 — 12 áreas funcionales)
 
@@ -278,21 +278,21 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 
 ---
 
-## 📊 ESTADO DEL SISTEMA (v4.7 — 2026-05-23)
+## 📊 ESTADO DEL SISTEMA (v4.8 — 2026-05-25)
 
-| Categoria                                                 | Estado                                         | Notas                                                                                        |
-|----------------------------------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------|
-| **Overall Health**                                        | **✅ PURE GREEN**                               | v4.7 — 2026-05-23 — Full Audit v2 DONE                                                       |
-| Estructura (4 raíz)                                       | ✅ PASS                                         | Winter / Personal_Os / Playground / Resultado                                                |
-| HUBs (28 HUBs + 284 scripts)                              | ✅ PASS                                         | 28 HUBs + 284 scripts en total (recursivo)                                                   |
-| Skills (394, 12 áreas)                                    | ✅ VERIFIED                                     | 12 áreas funcionales — audit 2026-05-23                                                      |
-| Agent Matrix                                              | ✅ SYNCED                                       | 46 ↔ 46 (drift: 0 post-cleanup 2026-05-23)                                                   |
-| Manifest (7 archivos)                                     | ✅ VALIDATED                                    | 00_Manifest/ en 02_Agent_Teams_Lite/                                                         |
-| MCPs (36 Claude / 36 OpenCode)                            | ✅ SYNCED                                       | drift: 0 (ambos configs alineados)                                                           |
-| Rules (12 .mdc)                                           | ✅ DEFINED                                      | 01_Rules/                                                                                    |
-| Workflows (30)                                            | ✅ ACTIVE                                       | 7 categorías en 00_Workflows_Os                                                              |
-| Hooks (10, 6 fases)                                       | ✅ ACTIVE                                       | 05_Hooks/                                                                                    |
-| Agent Teams Protocol                                      | ✅ ACTIVE                                       | Super Campeones                                                                              |
+| Categoria                        | Estado                    | Notas                                                          |
+|----------------------------------|---------------------------|---------------------------------------------------------------|
+| **Overall Health**               | **✅ PURE GREEN**          | v4.8 — 2026-05-25 — Judgment Day v3 DONE                      |
+| Estructura (4 raíz)              | ✅ PASS                   | Winter / Personal_Os / Playground / Resultado                  |
+| HUBs (21+2 + 284 scripts)        | ✅ PASS                   | 21+2 HUBs + 284 scripts en total (recursivo)                   |
+| Skills (394, 12 áreas)           | ✅ VERIFIED               | 12 áreas funcionales — audit 2026-05-25                        |
+| Agent Matrix                     | ✅ SYNCED                 | 48 ↔ 48 (drift: 0 post-Judgment Day v3)                        |
+| Manifest (7 archivos)            | ✅ VALIDATED              | 00_Manifest/ en 02_Agent_Teams_Lite/                           |
+| MCPs (7+38 Claude / 36 OpenCode) | ✅ SYNCED                 | drift: 0 (ambos configs alineados)                             |
+| Rules (13 .mdc)                  | ✅ DEFINED                | 01_Rules/                                                      |
+| Workflows (30)                   | ✅ ACTIVE                 | 7 categorías en 00_Workflows_Os                                |
+| Hooks (12, 6 fases)              | ✅ ACTIVE                 | 05_Hooks/                                                      |
+| Agent Teams Protocol             | ✅ ACTIVE                 | Super Campeones                                                |
 
 ---
 
@@ -348,11 +348,11 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 
 ---
 
-**Última actualización:** 2026-05-23
-**Versión:** v4.7 Consequences — Audit v2 + Submodule Fix + 21 CE Skills Registered
+**Última actualización:** 2026-05-25
+**Versión:** v4.8 Consequences — Judgment Day v3 — Full Project Sync
 
 > ✅ **Migración v4.0 2026-05-13:** Production Ready. Pure Green State. Paths corregidos.
-> ✅ **Cleanup 2026-05-23:** 23 agent duplicates removed. Total: 46 agents.
+> ✅ **Judgment Day v3 2026-05-25:** Docs syncronizados. Counts corregidos. Full project scan.
 > ✅ **Audit 2026-05-23:** Full project audit v2. Submodule OIM fixed. 21 CE skills registered. Docs pixel-perfect.
 
-© 2026 PersonalOS v4.7 Consequences Production Ready
+© 2026 PersonalOS v4.8 Consequences Production Ready

@@ -1,10 +1,10 @@
 ---
 name: genesis
-description: Workflow de inicio de sesión — carga reglas, memoria, notas de proceso y estado del PersonalOS v4.7 Consequences.
+description: Workflow de inicio de sesión — carga reglas, memoria, notas de proceso y estado del PersonalOS v4.8 Consequences.
 argument-hint: "[opcional: tarea específica del día o contexto a priorizar]"
 ---
 
-# 🧬 Workflow: Génesis (Iron Man Boot) — v4.7 Consequences
+# 🧬 Workflow: Génesis (Iron Man Boot) — v4.8 Consequences
 
 > **Versión del sistema:** v4.7 Consequences — Production Ready
 > **Fecha:** 2026-05-22

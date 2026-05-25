@@ -1,8 +1,8 @@
-# INVENTARIO CORE — PersonalOS v4.7 Consequences
+# INVENTARIO CORE — PersonalOS v4.8 Consequences
 
 > **Fecha:** 2026-05-22
 > **Path:** `01_Personal_Os/01_Core/`
-> **Versión:** v4.7 Consequences — Boot Protocol强化, Dependency Modernization
+> **Versión:** v4.8 Consequences — Boot Protocol强化, Dependency Modernization
 > **Estado:** ✅ PURE GREEN
 
 ---
@@ -12,20 +12,20 @@
 ```
 01_Core/
 ├── README.md                     ← Índice central
-├── INVENTARIO_CORE.md           ← Este archivo (v4.7)
+├── INVENTARIO_CORE.md           ← Este archivo (v4.8)
 ├── 00_Comandos_Workflows.md     ← Comandos y HUBs
 ├── 01_Inventario_Total.md       ← Inventario completo del OS
 ├── 02_Dream_Team.md             ← Estructura del equipo
 ├── Requirements.txt              ← Dependencias Python
 ├── 00_Workflows_Os/            ← 30 workflows (7 categorías)
-├── 01_Rules/                   ← 12 archivos .mdc (00-11)
+├── 01_Rules/                   ← 13 archivos .mdc (00-12)
 └── 02_Tools/
     ├── README.md
-    ├── 01_Agents/             ← 46 agents (Dream + Specialists + Individuales + Growth)
+    ├── 01_Agents/             ← 48 agents (Dream + Specialists + Individuales + Growth)
     ├── 02_Skills/             ← 394 skills (12 áreas activas)
     ├── 03_Mcp/                ← MCP servers (backup de config)
     ├── 04_Integrations/       ← Fireflies, Granola
-    ├── 05_Hooks/              ← 10 hooks (6 fases)
+    ├── 05_Hooks/              ← 12 hooks (6 fases)
     ├── 06_Plugins/            ← Plugins del OS
     ├── 07_Server/             ← Engram server
     ├── 08_Evals/              ← Evaluaciones
@@ -91,7 +91,7 @@
 
 ---
 
-## RULES — 12 archivos .mdc
+## RULES — 13 archivos .mdc
 
 **Ubicación:** `01_Personal_Os/01_Core/01_Rules/`
 
@@ -114,7 +114,7 @@
 
 ## TOOLS — ESTRUCTURA
 
-### 01_Agents (46 agents) ✅
+### 01_Agents (48 agents) ✅
 
 | Categoría               | Agents   | Detalles                                                                                                                                          |
 |------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -166,7 +166,7 @@
 
 ---
 
-### 05_Hooks — 10 hooks (6 fases)
+### 05_Hooks — 12 hooks (6 fases)
 
 | Fase     | Hooks  |
 |---------|-------|
@@ -188,7 +188,7 @@
 │                                                             │
 │  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐  │
 │  │   Workflows  │───▶│    Rules     │───▶│    Tools     │  │
-│  │  (29 files)  │    │  (12 .mdc)   │    │ (394 skills) │  │
+│  │  (29 files)  │    │  (13 .mdc)   │    │ (394 skills) │  │
 │  └──────────────┘    └──────────────┘    └──────────────┘  │
 │         │                   │                   │          │
 │         │                   │                   │          │
@@ -223,13 +223,13 @@
 
 ---
 
-## RESUMEN 01_Core — v4.7 Consequences
+## RESUMEN 01_Core — v4.8 Consequences
 
 | Componente            | Cantidad  | Delta vs v3.1  |
 |----------------------|----------|---------------|
 | Workflows Totales     | 30        | +3             |
-| Rules (.mdc)          | 12        | +1 (11_Minimax)|
-| Agents                | 46        | -6             |
+| Rules (.mdc)          | 13        | +1 (11_Minimax)|
+| Agents                | 48        | -6             |
 | Agents Dream Team     | 5         | =              |
 | Agents Specialists    | 23        | =              |
 | Skills (áreas activas)| 12        | +1             |
@@ -237,11 +237,11 @@
 | MCPs Claude Code      | 36        | +1             |
 | HUBs Scripts          | 19        | -4             |
 | JARVIS Manifests      | 7         | =              |
-| Hooks                 | 10        | NEW            |
+| Hooks                 | 12        | NEW            |
 
 ---
 
-## 🔥 BOOT PROTOCOL — IRON MAN GENESIS (v4.7)
+## 🔥 BOOT PROTOCOL — IRON MAN GENESIS (v4.8)
 
 Al iniciar sesión, la IA ejecuta EXACTAMENTE:
 
@@ -259,5 +259,5 @@ Al iniciar sesión, la IA ejecuta EXACTAMENTE:
 
 ---
 
-*PersonalOS v4.7 Consequences — PURE GREEN | 2026-05-23*
-*Skills: 394 | Agents: 46 | MCPs: 36 | HUBs: 19 | Workflows: 30*
+*PersonalOS v4.8 Consequences — PURE GREEN | 2026-05-23*
+*Skills: 394 | Agents: 48 | MCPs: 7+38 | HUBs: 21+2 | Workflows: 30*

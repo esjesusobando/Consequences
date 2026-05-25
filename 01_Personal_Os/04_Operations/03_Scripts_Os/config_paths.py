@@ -40,7 +40,7 @@ if not ROOT_DIR or not ROOT_DIR.exists():
         "Define la variable 'PERSONAL_OS_ROOT' o asegúrate de que existe 00_Winter_is_Coming."
     )
 
-# 4 Carpetas raíz del OS (estructura v4.7 Consequences)
+# 4 Carpetas raíz del OS (estructura v4.8 Consequences)
 CORE_DIR       = ROOT_DIR / "01_Personal_Os" / "01_Core"
 OPERATIONS_DIR = ROOT_DIR / "01_Personal_Os" / "04_Operations"
 KNOWLEDGE_DIR  = ROOT_DIR / "01_Personal_Os" / "02_Knowledge"

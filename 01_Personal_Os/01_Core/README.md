@@ -1,12 +1,12 @@
-# 01_Core — Think Different PersonalOS v4.7
+# 01_Core — Think Different PersonalOS v4.8
 
-> **Versión:** v4.7 Consequences — Audit v2 synced
-> **Última actualización:** 2026-05-23
+> **Versión:** v4.8 Consequences — Audit v3 synced
+> **Última actualización:** 2026-05-25
 > **Estado:** ✅ Activo | 💾 FUENTE DE VERDAD
 
 ---
 
-## 📂 Estructura Principal v4.7
+## 📂 Estructura Principal v4.8
 
 ```
 Think_Different/
@@ -28,7 +28,7 @@ Think_Different/
 | #   | Carpeta              | Contenido                                     | Estado  |
 |----|---------------------|----------------------------------------------|--------|
 | 01  | `00_Workflows_Os/`   | 30 workflows (7 categorías)                   | ✅       |
-| 02  | `01_Rules/`          | 12 reglas .mdc (00-11)                        | ✅       |
+| 02  | `01_Rules/`          | 13 reglas .mdc (00-12)                        | ✅       |
 | 03  | `02_Tools/`          | Agents, Skills, MCPs, Hooks, Plugins, Evals   | ✅       |
 
 ---
@@ -37,11 +37,11 @@ Think_Different/
 
 | #   | Carpeta               | Contenido                        | Estado  |
 |----|----------------------|---------------------------------|--------|
-| 01  | `01_Agents/`          | 46 agents (5 áreas)              | ✅       |
-| 02  | `02_Skills/`          | 394 skills (12 áreas)            | ✅       |
+| 01  | `01_Agents/`          | 48 agents (5 áreas)              | ✅       |
+| 02  | `02_Skills/`          | 394 skills (13 áreas)            | ✅       |
 | 03  | `03_Mcp/`             | MCP servers (backup config)      | ✅       |
 | 04  | `04_Integrations/`    | Fireflies, Granola               | ✅       |
-| 05  | `05_Hooks/`           | 10 hooks (6 fases)               | ✅       |
+| 05  | `05_Hooks/`           | 12 hooks (6 fases)               | ✅       |
 | 06  | `06_Plugins/`         | Plugins OS                       | ✅       |
 | 07  | `07_Server/`          | Engram server                    | ✅       |
 | 08  | `08_Evals/`           | Evaluaciones                     | ✅       |

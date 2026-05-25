@@ -1,12 +1,12 @@
-# AGENTS.md — Think Different PersonalOS v4.7
+# AGENTS.md — Think Different PersonalOS v4.8
 
 > **You are an Orchestrator Agent** with a complete engineering stack. You coordinate specialized sub-agents, keep backlog items organized, tie work to goals, execute technical workflows, and maintain system integrity.
 
-**Última actualización:** 2026-05-23 (v4.7 Production Ready — SOTA — Auditoría Integral Reconciliada)
+**Última actualización:** 2026-05-25 (v4.8 Production Ready — Judgment Day v3 — Auditoría Full Project)
 
 ---
 
-## 🚀 MÁQUINA DE GUERRA — Think Different v4.7
+## 🚀 MÁQUINA DE GUERRA — Think Different v4.8
 
 Integrated stack: PersonalOS + SDD + Compound Engineering + Gentleman Skills + GGA + Engram + Auto-Improvement Engine
 
@@ -36,10 +36,10 @@ cat 01_Personal_Os/03_Task/  # tareas activas
 | Recurso                                            | Ubicación                                                                  | Para qué usarlo                                                    |
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
 | **Skills** (12 áreas, 394)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
-| **Reglas** (12 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
-| **Agentes** (58)                                   | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
-| **HUBs** (28 HUBs + 284 scripts)                   | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
-| **MCPs** (36 Claude)                               | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
+| **Reglas** (13 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
+| **Agentes** (48)                                   | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
+| **HUBs** (21+2 HUBs + 284 scripts)                 | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
+| **MCPs** (7 root + 38 backup)                      | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
 | **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |
@@ -153,17 +153,17 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --task-comp
 
 ## 1. PERSONAL OS METHODOLOGY
 
-### Workspace Shape (v4.7 — 2026-05-23)
+### Workspace Shape (v4.8 — 2026-05-25)
 
 ```
-Think_Different/                           # v4.7 — 4 carpetas raíz
+Think_Different/                           # v4.8 — 4 carpetas raíz
 ├── 00_Winter_is_Coming/                   # 🔮 ESTRATÉGICO: Goals, Backlog, AGENTS.md
 ├── 01_Personal_Os/                        # ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                           # Motor del OS
 │   │   ├── 00_Workflows_Os/              # 30 Workflows (7 categorías)
-│   │   ├── 01_Rules/                     # 12 reglas (.mdc)
+│   │   ├── 01_Rules/                     # 13 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
-│   │       ├── 01_Agents/               # 46 agentes
+│   │       ├── 01_Agents/               # 48 agentes
 │   │       ├── 02_Skills/                # 394 skills (12 áreas)
 │   │       ├── 03_Mcp/                   # Backup MCPs
 │   │       ├── 04_Integrations/         # Fireflies, Granola
@@ -179,7 +179,7 @@ Think_Different/                           # v4.7 — 4 carpetas raíz
 │       ├── 00_Context_LLM/              # Memoria LLM
 │       ├── 01_Auto_Improvement/         # Motor auto-mejora
 │       ├── 02_Agent_Teams_Lite/         # SDD registry + 7 Manifests
-│       ├── 03_Scripts_Os/               # 28 HUBs total (19 raíz + 9 aux) + 284 scripts
+│       ├── 03_Scripts_Os/               # 21 HUBs + HUB_SOTA + 284 scripts
 │       ├── 04_Installer/                # Installer
 │       ├── 05_Projects/                 # Proyectos activos
 │       ├── 06_SOTA_Features/            # Features estado-del-arte

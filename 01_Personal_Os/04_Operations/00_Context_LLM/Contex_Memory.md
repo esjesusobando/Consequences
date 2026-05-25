@@ -6,44 +6,64 @@ Este documento mantiene un registro de los cambios realizados durante las sesion
 ## Sesión: 2026-05-24 - Mantenimiento Proactivo
 
 ### Cambios Realizados
+[... contenido previo preservado ...]
 
-#### 1. Corrección de Configuración MCP (.mcp.json)
-- **Problema**: El servidor "eagle" tenía una configuración no estándar que impediría su funcionamiento correcto
-  - Formato incorrecto: `"type": "remote"` en lugar de `"transport": "streamableHttp"`
-  - Duplicación innecesaria con el servidor existente "eagle-mcp"
-- **Solución**: 
-  - Corregido el servidor "eagle" para usar el formato estándar MCP
-  - Manteniendo tanto la versión stdio (eagle-mcp) como la versión streamableHttp (eagle) según los comentarios originales
-  - Resultado: Ambos servidores ahora funcionarán correctamente según su tipo de transporte
+---
 
-#### 2. Estandarización de Nomenclatura (.mcp.json)
-- **Problema**: Inconsistencia en la nomenclatura de servidores
-  - "Notion" usaba mayúscula inicial mientras que todos los demás servidores usan minúsculas
-- **Solución**:
-  - Renombrado de "Notion" a "notion" para mantener consistencia con el patrón establecido
-  - Este cambio mejora la legibilidad y mantiene el estándar de nomenclatura en minúsculas
+## Sesión: 2026-05-25 — Judgment Day Audit v3 (Estructura v4.7 → v4.8)
 
-#### 3. Protección de Configuraciones Locales (.gitignore)
-- **Problema**: El archivo de backup .mcp.json.backup no estaba siendo ignorado por Git
-  - Esto representaba un riesgo de seguridad potencial al exponer API keys en repositorios públicos
-- **Solución**:
-  - Añadido ".mcp.json.backup" a la sección de LOCAL CONFIG en .gitignore
-  - Ahora los archivos de backup de configuración MCP estarán protegidos de commits accidentales
+### Cambios Realizados
 
-#### 4. Verificación de Integridad Estructural
-- **Actividad**: Comparación de la estructura real de carpetas con la documentación oficial
-- **Resultados**:
-  - ✓ Estructura de carpetas principales coincide exactamente: 00_Winter_is_Coming, 01_Personal_Os, 02_Playground, 03_Resultado
-  - ✓ Estructura interna de 01_Personal_Os sigue las especificaciones documentadas
-  - ✓ Variaciones menores en 03_Resultado son meramente de nomenclatura pero preservan la misma función
-  - Conclusión: La integridad estructural del sistema está mantenida
+#### 1. Escaneo Profundo del Proyecto (3 Agentes Paralelos)
+- **Actividad**: Despliegue de 3 agentes de exploración simultáneos para mapear TODO el proyecto
+- **Cobertura**:
+  - Agente 1: Árbol completo 5+ niveles, directorios ocultos, configs
+  - Agente 2: Skills, scripts, HUBs, rules, agents, workflows
+  - Agente 3: Projects, Knowledge, Operations, Archive, Playground, Resultado
+- **Resultado**: 30 discrepancias encontradas (12 bugs + 18 omisiones)
 
-#### 5. Revisión de Calidad de Código
-- **Actividad**: Búsqueda de marcadores TODO/FIXME/XXX en skills y scripts
-- **Hallazgos**:
-  - La mayoría de las ocurrencias eran referencias documentales, ejemplos o placeholders legítimos
-  - Los TODO reales encontrados estaban principalmente en plantillas de habilidad (lo cual es esperado y apropiado)
-  - No se identificaron problemas críticos que requirieran intervención inmediata
+#### 2. Corrección de Bugs en Structure_v4.7.md (12 bugs)
+- **Bug 1** — `00_P0_Auditoria.md/` → `00_P0_Auditoria.md` (trailing slash typo en tree)
+- **Bug 2** — Rules count: 12 → 13 (faltaba `12_Audit_OS_Integrity.mdc`)
+- **Bug 3** — `01_Repos_Reference/` estructura interna COMPLETAMENTE incorrecta
+  - Antes: `23_Tubemaster/`, `engram/`, `gentle-pi/` como hijos directos
+  - Después: `01_Rules_Legacy/`, `02_Repos_Gentleman/` (con 23 repos), `03_OpenSpec_Archive/`
+- **Bug 4** — HUBs count: 28 → 21+2 (21 HUBs core + HUB_SOTA + HUB_CATALOG)
+- **Bug 5** — Status table con counts desactualizados (Rules 12, HUBs 28, etc.)
+- **Bug 6** — Footer versión v4.7 no actualizado a v4.8
+- **Bug 7** — Título de Skills en code block incorrecto
+- **Bug 8** — Tabla de Skills con # duplicados (00 repetido 2×)
+- **Bug 9** — Tabla Herramientas con separadores desalineados
+- **Bug 10** — Tabla Workflows con columna inconsistente
+- **Bug 11** — Tabla Config con separadores cortos
+- **Bug 12** — Tabla Conventions con padding inconsistente
+
+#### 3. Complementos de Información (18 añadidos)
+- Tasks faltantes: 8 archivos (02_P1_Consolidated → 09_Plan_Seguir) + SDD_Elite_Portfolio_Migration
+- 10_Skills_Legacy/ documentado: 24 directorios, ~490 SKILL.md, INDEX.md
+- 09_World_OIM/ duplicado detectado y marcado
+- Redes_Neuronales.md en 02_Knowledge/
+- 6 directorios hidden documentados: `.agent/`, `.pi/`, `.claude-plugin/`, `.codex/`, `.playwright-mcp/`, `.gga`
+- 00_Context_LLM expandido: 06_Solutions, 07_Auditorias, 11_Reports, 13_Telemetry, 14_Scripts, 15_Resources
+- 01_Rules .Backup/ documentado
+- 04_Pruebas_Ads/ detail: 19 subdirectorios
+- 02_Experimentos expandido: subdirs faltantes
+- 05_Archive: 00_Plan_Auditoria, New_Implementation_Plan
+- SOTA Features completo: 5 módulos
+- 01_Auto_Improvement: 12 entradas
+- Agent_Teams_Lite: Manifest + Skills + Pattern Engine
+- 04_Installer: 8 entradas + scripts/
+- Config dual: opencode.jsonc vs opencode.json
+- 00_Context/: 5 subdirs de contexto proyectos
+- 03_Scripts_Os catalog: HUBs detallados
+- Pixel-perfect tables: 12 tablas reformateadas
+
+#### 4. Pixel-Perfect Tables
+- **12 tablas reformateadas** con alineación exacta
+- Cabeceras y separadores con ANCHO IDÉNTICO (columna por columna)
+- Padding consistente en todas las celdas
+- Columnas `#` numeradas secuencialmente donde aplica
+- Sin duplicados ni desalineaciones
 
 ### Estado del Sistema Post-Mantenimiento
 - **Integridad MCP**: ✅ Todos los servidores deberían funcionar correctamente con sus respectivos transportes

@@ -1,6 +1,6 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.7 Consequences** | 2026-05-22
+**v4.8 Consequences** | 2026-05-25
 
 ---
 
@@ -8,21 +8,21 @@
 
 | Componente                            | Total                                                                      | Estado                                         |
 |--------------------------------------|---------------------------------------------------------------------------|-----------------------------------------------|
-| MCPs Claude Code                      | **36**                                                                     | ✅ SYNCED — drift 0                             |
+| MCPs Claude Code                      | **7** (root) + **38** (backup)                                             | ✅ SYNCED — drift 0                             |
 | Every CE                              | v3.8.4 (local repo) ✅                                                      | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.30.6                                                                    | ✅ AVAILABLE                                    |
 | Skills                                | **394** (12 áreas funcionales)                                             | ✅ VERIFIED — 0 sin frontmatter                 |
-| Agentes                               | **46** (source) / 82 (con SDD/CE)                                          | ✅ SYNCED                                      |
-| HUBs                                  | **28**                                                                     | ✅ VERIFIED                                     |
+| Agentes                               | **48** (source) / 82 (con SDD/CE)                                          | ✅ SYNCED                                      |
+| HUBs                                  | **21+2** (19 Hub.py + HUB_SOTA + HUB_CATALOG)                              | ✅ VERIFIED                                     |
 | Scripts totales                       | **284** (283 .py + 1 .js)                                                 | ✅ DOCUMENTED                                   |
 | Workflows                             | **30** (7 categorías en 00_Workflows_Os)                                   | ✅ ACTIVE                                       |
-| Hooks                                 | **10** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk)| ✅ ACTIVE                                       |
-| Rules                                 | **12 (.mdc)** en 01_Rules                                                  | ✅ DEFINED                                      |
+| Hooks                                 | **12** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk)| ✅ ACTIVE                                       |
+| Rules                                 | **13 (.mdc)** en 01_Rules                                                  | ✅ DEFINED                                      |
 | JARVIS Manifests                      | 7 en 00_Manifest/                                                          | ✅ VALIDATED                                    |
 | Integrations                          | **2** (01_Fireflies, 02_Granola)                                           | ✅ INTEGRATED                                   |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-24 — v4.7 Consequences
-> Agent Sync: 46 agents (source) / 82 total con SDD/CE. Skills: 394 (SKILL.md). MCPs: 36/36 sync. HUBs: 28. Scripts: 284.
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-25 — v4.8 Consequences
+> Agent Sync: 48 agents (source) / 82 total con SDD/CE. Skills: 394 (SKILL.md). MCPs: 7+38. HUBs: 21+2. Scripts: 284.
 
 ---
 
@@ -70,7 +70,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 
 ---
 
-## 🗂️ ESTRUCTURA COMPLETA v4.7
+## 🗂️ ESTRUCTURA COMPLETA v4.8
 
 ```
 Think_Different/                         # RAÍZ
@@ -79,9 +79,9 @@ Think_Different/                         # RAÍZ
 │   ├── 00_EVOLUTION_LOG.md       ✅ Registro histórico de evolución del OS
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD)
 │   │   ├── 00_Workflows_Os/     ✅ 30 workflows (7 categorías)
-│   │   ├── 01_Rules/            ✅ 12 reglas .mdc
+│   │   ├── 01_Rules/            ✅ 13 reglas .mdc
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/         ✅ 46 agentes (5 Dream + 23 Specialists + 13 individuales + 5 Growth)
+│   │       ├── 01_Agents/         ✅ 48 agentes (5 Dream + 23 Specialists + 13 Indiv + 5 Growth + 2 Root)
 │   │       ├── 02_Skills/         ✅ 394 skills (12 áreas funcionales)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
@@ -131,7 +131,7 @@ Think_Different/                         # RAÍZ
 ├── .atl/                         ✅ SDD Registry + openspec/
 ├── .claude/                      ✅ Config Claude Code + rules
 ├── .opencode/                    ✅ Config OpenCode + skills locales
-├── .mcp.json                     ✅ 36 MCPs activos (Claude Code)
+├── .mcp.json                     ✅ 7 MCPs activos root + 38 backup
 ├── OS_DIRECTORY.md               ✅ Este archivo — JARVIS discovery
 ├── AGENTS.md                     ✅ GGA Pre-Commit entry
 ├── CLAUDE.md                     ✅ Config IAs (FUENTE)
@@ -162,7 +162,7 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## 📊 MCPs — 36 SERVIDORES ACTIVOS (Claude Code)
+## 📊 MCPs — 7 SERVIDORES ROOT + 38 BACKUP (Claude Code)
 
 | Categoría          | Servidores                                                             |
 |-------------------|-----------------------------------------------------------------------|
@@ -181,7 +181,7 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## ⚡ AGENTES — 46 configuraciones activas
+## ⚡ AGENTES — 48 configuraciones activas
 
 | Categoría                 | Cantidad  | Ubicación                                                              |
 |--------------------------|----------|-----------------------------------------------------------------------|
@@ -189,10 +189,11 @@ Think_Different/                         # RAÍZ
 | **Specialists Compound**  | 23        | `02_Specialists_Compound/`                                             |
 | **Individuales**          | 13        | Raíz `01_Agents/` (Orchestrator, AIPM_Judge, LFG, etc.)                |
 | **Growth**                | 5         | `03_Growth/`                                                           |
+| **Root**                  | 2         | `01_Agents/` (00_Orchestrator, 00_Agent_Template)                      |
 
 ---
 
-## 🎯 HUBs — 28 HUBs + 284 SCRIPTS
+## 🎯 HUBs — 21+2 HUBs + 284 SCRIPTS
 
 ### Scripts Python en raíz de 03_Scripts_Os/ (principales)
 
@@ -352,4 +353,4 @@ Los siguientes hallsazgos fueron identificados durante la auditoría OS integral
 
 ---
 
-*Actualizado: 2026-05-25 | PersonalOS v4.7 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 394 skills | 46 agents | 36 MCPs | 36 CE skills registered*
+*Actualizado: 2026-05-25 | PersonalOS v4.8 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 394 skills | 48 agents | 7+38 MCPs | 36 CE skills registered*

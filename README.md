@@ -1,33 +1,33 @@
-# Think Different PersonalOS v4.7 Consequences — Production Ready
+# Think Different PersonalOS v4.8 Consequences — Production Ready
 
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Version](https://img.shields.io/badge/Version-4.7-00FF00)]()
+[![Version](https://img.shields.io/badge/Version-4.8-00FF00)]()
 [![Status](https://img.shields.io/badge/Status-PRODUCTION%20READY-00FF00)]()
-[![OS](https://img.shields.io/badge/Think%20Different-OS--4.7-7B68EE)]()
+[![OS](https://img.shields.io/badge/Think%20Different-OS--4.8-7B68EE)]()
 
-> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 394 skills SOTA, 12 áreas funcionales, 46 agentes, metodologías integradas y automatización completa.
+> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 394 skills SOTA, 13 áreas funcionales, 48 agentes, metodologías integradas y automatización completa.
 
 ---
 
-## 📊 Estado del Sistema (v4.7 Consequences — Production Ready — 2026-05-24)
+## 📊 Estado del Sistema (v4.8 Consequences — Production Ready — 2026-05-25)
 
-> 🟢 **PRODUCTION READY** - v4.7 Consequences lista para uso público
+> 🟢 **PRODUCTION READY** - v4.8 Consequences lista para uso público
 
 | Métrica                             | Valor                                           |
 |------------------------------------|------------------------------------------------|
 | **Overall Health**                  | **100%** 🟢                                      |
 | **Every CE**                        | v3.8.4 ✅ (local repo)                           |
 | **gentle-ai**                       | v1.30.6 ✅                                       |
-| **Skills**                          | **394** (12 áreas funcionales)                  |
-| **Rules**                           | **12** (.mdc)                                   |
-| **MCPs**                            | **36** Claude Code                              |
-| **HUBs**                            | **28** HUBs + 284 scripts (recursivo)           |
-| **Agentes**                         | **46** (source) / 82 (con SDD/CE)               |
+| **Skills**                          | **394** (13 áreas funcionales)                  |
+| **Rules**                           | **13** (.mdc)                                   |
+| **MCPs**                            | **7** root + **38** backup                      |
+| **HUBs**                            | **21+2** HUBs + 284 scripts (recursivo)         |
+| **Agentes**                         | **48** (source) / 82 (con SDD/CE)               |
 | **Workflows**                       | **30** (7 categorías)                           |
 
 ---
 
-## 📂 Estructura del Sistema (v4.7 Consequences — Production Ready)
+## 📂 Estructura del Sistema (v4.8 Consequences — Production Ready)
 
 ```
 Think_Different/                           # RAÍZ
@@ -36,13 +36,13 @@ Think_Different/                           # RAÍZ
 │   ├── 00_EVOLUTION_LOG.md        ✅ Registro histórico de evolución del OS
 │   ├── 01_Core/                   ✅ Motor del OS (FUENTE DE VERDAD)
 │   │   ├── 00_Workflows_Os/      ✅ 30 workflows (7 categorías)
-│   │   ├── 01_Rules/             ✅ 12 reglas .mdc — FUENTE DE VERDAD
+│   │   ├── 01_Rules/             ✅ 13 reglas .mdc — FUENTE DE VERDAD
 │   │   └── 02_Tools/             ✅ Todas las herramientas
-│   │       ├── 01_Agents/         ✅ 46 agentes
-│   │       ├── 02_Skills/        ✅ 394 skills — 12 áreas funcionales
+│   │       ├── 01_Agents/         ✅ 48 agentes
+│   │       ├── 02_Skills/        ✅ 394 skills — 13 áreas funcionales
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
-│   │       ├── 05_Hooks/         ✅ 10 hooks (6 fases)
+│   │       ├── 05_Hooks/         ✅ 12 hooks (6 fases)
 │   │       ├── 06_Plugins/        ✅ Plugins OS
 │   │       ├── 07_Server/         ✅ Engram server
 │   │       ├── 08_Evals/         ✅ Evaluadores
@@ -57,7 +57,7 @@ Think_Different/                           # RAÍZ
 │       ├── 00_Context_LLM/       ✅ Memoria LLM (Engram, notes)
 │       ├── 01_Auto_Improvement/  ✅ Auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests JARVIS
-│       ├── 03_Scripts_Os/        ✅ 28 HUBs total (19 raíz + 9 aux) + 284 scripts
+│       ├── 03_Scripts_Os/        ✅ 21+2 HUBs (19 raíz + SOTA + CATALOG) + 284 scripts
 │       ├── 04_Installer/         ✅ Installer
 │       ├── 05_Projects/          ✅ Proyectos activos
 │       ├── 06_SOTA_Features/    ✅ Features estado-del-arte
@@ -86,7 +86,7 @@ Think_Different/                           # RAÍZ
 ├── .atl/                        ✅ SDD Registry + openspec/
 ├── .claude/                     ✅ Config Claude Code
 ├── .opencode/                   ✅ Config OpenCode + skills locales
-├── .mcp.json                    ✅ 36 MCPs Claude Code activos
+├── .mcp.json                    ✅ 7 MCPs root activos (+ 38 backup)
 ├── OS_DIRECTORY.md              ✅ JARVIS discovery
 ├── AGENTS.md                    ✅ GGA Pre-Commit
 ├── CLAUDE.md                    ✅ Config IAs
@@ -111,7 +111,7 @@ Think_Different/                           # RAÍZ
 
 ## 🛠️ Componentes Principales
 
-### Skills System (v4.7 — 12 Áreas Funcionales)
+### Skills System (v4.8 — 13 Áreas Funcionales)
 
 | Área                                                         | Items                      | Descripción                                                   |
 |-------------------------------------------------------------|---------------------------|--------------------------------------------------------------|
@@ -134,7 +134,7 @@ Think_Different/                           # RAÍZ
 
 ---
 
-### HUBs v4.7 (28 HUBs + 284 scripts)
+### HUBs v4.8 (21+2 HUBs + 284 scripts)
 
 | Hub                                          | Script                                          | Propósito                                             |
 |---------------------------------------------|------------------------------------------------|------------------------------------------------------|
@@ -173,7 +173,7 @@ Think_Different/                           # RAÍZ
 
 ---
 
-### Agentes (46 total)
+### Agentes (48 total)
 
 | Categoría                                   | Cantidad                      | Ubicación                                                                   |
 |--------------------------------------------|------------------------------|----------------------------------------------------------------------------|
@@ -181,25 +181,23 @@ Think_Different/                           # RAÍZ
 | Specialists Compound                        | 23                            | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                       |
 | Individuales                                | 13                            | Raíz `01_Core/02_Tools/01_Agents/`                                          |
 | Growth                                      | 5                             | `01_Core/02_Tools/01_Agents/03_Growth/`                                     |
+| Root                                        | 2                             | `01_Core/02_Tools/01_Agents/` (00_Orchestrator, 00_Agent_Template)          |
 
 ---
 
-### MCPs (36 Claude Code)
+### MCPs (7 root + 38 backup)
 
-| Categoría                                                               | Servidores                                                                          |
-|------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| 🔍 Search                                                                | exa, brave-search, stackoverflow                                                    |
-| 🧠 Memory                                                                | engram, aim-memory-bank, notebooklm                                                 |
-| 📝 Notes                                                                 | Notion, mcp-obsidian, obsidian-api                                                  |
-| 🌐 Browser                                                               | Playwright, chrome-devtools, eagle-mcp                                              |
-| 🤖 AI & Code                                                             | context7, zai-mcp-server, github, task-master-ai, @magicuidesign/mcp                |
-| 📊 Data                                                                  | supabase, Amplitude, supadata                                                       |
-| 🔄 Workflow                                                              | n8n-mcp, Linear                                                                     |
-| 💬 Communication                                                         | fireflies, google-workspace                                                         |
-| 📐 Design                                                                | excalidraw-yctimlin, pencil                                                         |
-| 🛠️ DevOps                                                               | docker, filesystem                                                                  |
-| 🚀 Deploy                                                                | vercel, recall, TestSprite                                                          |
-| 🧩 Chain                                                                 | sequential-thinking, nanobanana, qmd                                                |
+| Servidor                        | Propósito                            | Fuente               |
+|--------------------------------|--------------------------------------|----------------------|
+| @magicuidesign/mcp             | UI design generation                  | root .mcp.json       |
+| aim-memory-bank                | AI memory bank                        | root .mcp.json       |
+| context7                       | Context-aware code search             | root .mcp.json       |
+| eagle-mcp                      | Eagle library MCP                     | root .mcp.json       |
+| eagle                          | Eagle library API                     | root .mcp.json       |
+| higgsfield                     | Higgsfield AI                         | root .mcp.json       |
+| sequential-thinking            | Sequential reasoning                  | root .mcp.json       |
+
+> Backup completo (38 servidores) en `01_Personal_Os/01_Core/02_Tools/03_Mcp/00_Config_Mcp/mcp_backup.json`
 
 ---
 
@@ -286,6 +284,6 @@ CC BY-NC-SA 4.0 - Uso no comercial permitido.
 
 ---
 
-_Think Different PersonalOS v4.7 Consequences — Production Ready ✅ — 2026-05-24_
+_Think Different PersonalOS v4.8 Consequences — Production Ready ✅ — 2026-05-25_
 
-*Estructura completa: ver `Structure_v4.7.md`*
+*Estructura completa: ver `Structure_v4.8.md`*
