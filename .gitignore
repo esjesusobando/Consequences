@@ -196,7 +196,10 @@ Now/02_Videos_Finales/                  # LEGACY: Now/ dir no longer exists, kep
 01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/
 01_Personal_Os/05_Archive/07_Repos_Gentleman/*/.git
 # Local Pi runtime state
-# .atl/   # NOTE: .atl is the SDD registry — DO NOT ignore, already tracked in git. Commented out 2026-05-25.
+
+# SDD generated artifacts (NOT the registry itself — .atl/*.md and .atl/openspec/ are tracked)
+.atl/.skill-registry.cache.json
+.atl/openspec/changes/pattern-intelligence-v1/
 
 # Pattern Intelligence Engine cache (regeneratable)
 **/pattern_index.db
