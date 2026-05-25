@@ -14,7 +14,7 @@
 | Skills                                | **394** (12 áreas funcionales)                                             | ✅ VERIFIED — 0 sin frontmatter                 |
 | Agentes                               | **46** (source) / 82 (con SDD/CE)                                          | ✅ SYNCED                                      |
 | HUBs                                  | **28**                                                                     | ✅ VERIFIED                                     |
-| Scripts totales                       | **152**                                                                    | ✅ DOCUMENTED                                   |
+| Scripts totales                       | **284** (283 .py + 1 .js)                                                 | ✅ DOCUMENTED                                   |
 | Workflows                             | **30** (7 categorías en 00_Workflows_Os)                                   | ✅ ACTIVE                                       |
 | Hooks                                 | **10** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk)| ✅ ACTIVE                                       |
 | Rules                                 | **12 (.mdc)** en 01_Rules                                                  | ✅ DEFINED                                      |
@@ -22,7 +22,7 @@
 | Integrations                          | **2** (01_Fireflies, 02_Granola)                                           | ✅ INTEGRATED                                   |
 
 > **🟢 ÚLTIMA AUDITORÍA:** 2026-05-24 — v4.7 Consequences
-> Agent Sync: 46 agents (source) / 82 total con SDD/CE. Skills: 394 (SKILL.md). MCPs: 36/36 sync. HUBs: 28. Scripts: 152.
+> Agent Sync: 46 agents (source) / 82 total con SDD/CE. Skills: 394 (SKILL.md). MCPs: 36/36 sync. HUBs: 28. Scripts: 284.
 
 ---
 
@@ -110,7 +110,7 @@ Think_Different/                         # RAÍZ
 │       ├── 00_Context_LLM/        ✅ Memoria LLM (Engram, notes)
 │       ├── 01_Auto_Improvement/   ✅ Motor auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests
-│       ├── 03_Scripts_Os/         ✅ 19 HUBs + 284 scripts (recursivo)
+│       ├── 03_Scripts_Os/         ✅ 28 HUBs (19 raíz + 9 aux) + 284 scripts (recursivo)
 │       ├── 04_Installer/          ✅ Installer scripts
 │       ├── 05_Projects/          ✅ Proyectos activos
 │       ├── 06_SOTA_Features/     ✅ Features estado-del-arte
@@ -151,7 +151,7 @@ Think_Different/                         # RAÍZ
 | 03_Video_Media         | 7      | Video Intel, James Cameron           |
 | 04_Automatizacion      | 37     | N8N, Firecrawl, GWS Client           |
 | 05_Workflows           | 37     | Agent Teams, PM, Orchestrator        |
-| 06_Tools               | 111    | Skill Creator, Testing, DevOps, Data |
+| 06_Tools               | 112    | Skill Creator, Testing, DevOps, Data |
 | 07_Personal_Os         | 32     | Life OS, Hillary, Rituales           |
 | 08_Invictus_Web        | 15     | Playwright, Superpowers, Browser Auto|
 | 09_Claude_Ads          | 20     | Claude Ads & Promoted Content        |
@@ -191,7 +191,7 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## 🎯 HUBs — 19 HUBs + 284 SCRIPTS
+## 🎯 HUBs — 28 HUBs + 284 SCRIPTS
 
 ### Scripts Python en raíz de 03_Scripts_Os/ (principales)
 
@@ -286,7 +286,7 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-## 📁 WORKFLOWS — 7 CATEGORÍAS (29+ workflows)
+## 📁 WORKFLOWS — 7 CATEGORÍAS (30 workflows)
 
 | Categoría                    | Path                            | Workflows                                      |
 |-----------------------------|--------------------------------|-----------------------------------------------|

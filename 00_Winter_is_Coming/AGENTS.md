@@ -38,7 +38,7 @@ cat 01_Personal_Os/03_Task/  # tareas activas
 | **Skills** (12 áreas, 394)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
 | **Reglas** (12 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
 | **Agentes** (58)                                   | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
-| **HUBs** (28 HUBs + 152 scripts)                   | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
+| **HUBs** (28 HUBs + 284 scripts)                   | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
 | **MCPs** (36 Claude)                               | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
@@ -179,7 +179,7 @@ Think_Different/                           # v4.7 — 4 carpetas raíz
 │       ├── 00_Context_LLM/              # Memoria LLM
 │       ├── 01_Auto_Improvement/         # Motor auto-mejora
 │       ├── 02_Agent_Teams_Lite/         # SDD registry + 7 Manifests
-│       ├── 03_Scripts_Os/               # 19 HUBs + 284 scripts
+│       ├── 03_Scripts_Os/               # 28 HUBs total (19 raíz + 9 aux) + 284 scripts
 │       ├── 04_Installer/                # Installer
 │       ├── 05_Projects/                 # Proyectos activos
 │       ├── 06_SOTA_Features/            # Features estado-del-arte

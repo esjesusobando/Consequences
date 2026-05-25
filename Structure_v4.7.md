@@ -51,7 +51,7 @@ Think_Different/                    # RAÍZ
 │   ├── 00_Context_LLM/          # Memoria LLM
 │   ├── 01_Auto_Improvement/     # Motor auto-mejora
 │   ├── 02_Agent_Teams_Lite/     # SDD + 7 JARVIS manifests
-│   ├── 03_Scripts_Os/          # 19 HUBs + 284 scripts (recursivo)
+│   ├── 03_Scripts_Os/          # 28 HUBs total (19 raíz + 9 aux) + 284 scripts (recursivo)
 │   ├── 04_Installer/           # Scripts de instalación
 │   ├── 05_Projects/             # Proyectos activos
 │   │   └── 01_Projects_Lab/    # Lab de proyectos (9 proyectos)
@@ -314,7 +314,7 @@ Think_Different/                    # RAÍZ
 | Rules                     | 12 (.mdc 00-11)                                         | ✅       |
 | MCPs                      | 36                                                      | ✅       |
 | HUBs                      | 28                                                      | ✅       |
-| Scripts                   | 152 (recursivo en 03_Scripts_Os/)                       | ✅       |
+| Scripts                   | 284 (recursivo: 283 .py + 1 .js)                        | ✅       |
 | Workflows                 | 30 (7 categorías)                                       | ✅       |
 | CE Skills in opencode.json| 36+8 = 44                                               | ✅       |
 | Projects (Lab)            | 9                                                       | ✅       |

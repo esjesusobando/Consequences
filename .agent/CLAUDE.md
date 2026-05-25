@@ -115,7 +115,7 @@ Think_Different/
 │   │   ├── 00_Context_LLM/        # Memoria, notas, knowledge brain
 │   │   ├── 01_Auto_Improvement/   # Motor de auto-mejora
 │   │   ├── 02_Agent_Teams_Lite/   # SDD skills registry + JARVIS 7 manifests
-│   │   ├── 03_Scripts_Os/         # 284 scripts (19 HUBs + auxiliares)
+│   │   ├── 03_Scripts_Os/         # 284 scripts (28 HUBs total: 19 raíz + 9 aux)
 │   │   ├── 04_Installer/          # Scripts de instalación
 │   │   └── 05_Projects/           # Proyectos activos
 │   └── 05_Archive/                # Legacy y repos de referencia
@@ -153,7 +153,7 @@ Think_Different/
 
 ---
 
-# HUB Scripts (284 scripts — 19 HUBs + auxiliares)
+# HUB Scripts (284 scripts — 28 HUBs total: 19 raíz + 9 aux)
 
 Centralizados en `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 
@@ -237,7 +237,7 @@ El sistema tiene un manifest central en `01_Personal_Os/04_Operations/02_Agent_T
 | 02_MCP_Registry.yaml | 36 MCPs Claude / 36 OpenCode |
 | 03_Agent_Catalog.yaml | 46 agentes |
 | 04_Skill_Index.json | 394 skills |
-| 05_HUB_Catalog.yaml | 19 HUBs |
+| 05_HUB_Catalog.yaml | 28 HUBs |
 | 06_Workflow_Graph.yaml | 30 workflows |
 | 07_Hook_Registry.yaml | 10+ hooks |
 
@@ -296,7 +296,7 @@ Code review con IA integrado.
 | Categoria                             | Estado            | Notas                                      |
 |---------------------------------------|-------------------|--------------------------------------------|
 | Estructura v4.7 (4 carpetas raíz)     | ✅ PASS            | Winter / Personal_Os / Playground / Resultado |
-| HUBs (19 + auxiliares)                | ✅ ACTIVE          | 284 scripts recursivos en 03_Scripts_Os/    |
+| HUBs (28 total: 19 raíz + 9 aux)      | ✅ ACTIVE          | 284 scripts recursivos en 03_Scripts_Os/    |
 | Skills (12 áreas funcionales)         | ✅ OPERATIONAL     | 394 skills                                 |
 | Rules (12 .mdc)                       | ✅ DEFINED         | En 01_Personal_Os/01_Core/01_Rules/       |
 | MCPs (36 activos)                     | ✅ ACTIVE          | .mcp.json en raíz                          |

@@ -12,13 +12,14 @@ Usage:
 """
 import sys
 import json
+import yaml
 from pathlib import Path
 
 # Add to path for imports
 SOTA_DIR = Path(__file__).parent
 SOTA_FEATURES_DIR = SOTA_DIR.parent / "06_SOTA_Features"
-sys.path.insert(0, str(SOTA_FEATURES_DIR))
 sys.path.insert(0, str(SOTA_DIR))
+sys.path.insert(0, str(SOTA_FEATURES_DIR))
 
 from config import load_config, is_feature_enabled
 from contemplation_loop.engine import ContemplationLoopEngine
@@ -102,9 +103,7 @@ def run_all():
 
 def toggle_feature(feature_name: str):
     """Toggle a feature's enabled status in config."""
-    import yaml
-
-    config_file = SOTA_DIR / "config.yaml"
+    config_file = SOTA_FEATURES_DIR / "config.yaml"
     with open(config_file, 'r') as f:
         config = yaml.safe_load(f)
 

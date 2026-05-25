@@ -67,7 +67,7 @@ Think_Different/
 │       ├── 00_Context_LLM/      # Memoria LLM (Context_Memory, Process_Notes)
 │       ├── 01_Auto_Improvement/ # Motor de auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/ # SDD + 7 Manifests JARVIS
-│       ├── 03_Scripts_Os/       # 25+ HUBs + subdirectorios (numeración 00-57)
+│       ├── 03_Scripts_Os/       # 28 HUBs + subdirectorios (numeración 00-57)
 │       ├── 04_Installer/        # Scripts de instalación
 │       ├── 05_Projects/         # Proyectos activos
 │       ├── 06_SOTA_Features/    # Features SOTA
@@ -81,10 +81,10 @@ Think_Different/
 
 | Recurso                        | Ubicación                                                                 | Para qué usarlo                          |
 |-------------------------------|--------------------------------------------------------------------------|------------------------------------------|
-| **Skills** (12 áreas, 393+)    | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
+| **Skills** (12 áreas, 394)     | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
 | **Reglas** (12 .mdc)           | `01_Personal_Os/01_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
 | **Agentes** (46 núcleo, 82 total sistema) | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
-| **HUBs** (25+ scripts, 00-57) | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema                    |
+| **HUBs** (28 scripts, 00-57)  | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema                    |
 | **MCPs** (36 Claude Code)      | `.mcp.json` (raíz)                                                        | Herramientas externas                     |
 | **Hooks** (10)                 | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                               | Automatizaciones pre/post tool            |
 | **Memory**                     | Engram MCP                                                                | Contexto persistente entre sesiones       |
@@ -215,4 +215,4 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 ---
 
 *Think Different PersonalOS v4.7 Consequences — Production Ready*
-*Actualizado: 2026-05-25 | 394 skills | 46 agents (82 total sistema) | 6 MCPs activos (36 referenciados) | 25+ HUBs (numeración 00-57) | 12 rules*
+*Actualizado: 2026-05-25 | 394 skills | 46 agents (82 total sistema) | 36 MCPs activos | 28 HUBs (numeración 00-57) | 12 rules*

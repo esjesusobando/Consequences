@@ -90,7 +90,7 @@ Think_Different/
 
 | Recurso                        | Ubicación                                                                 | Para qué usarlo                           |
 |-------------------------------|--------------------------------------------------------------------------|------------------------------------------|
-| **Skills** (12 áreas, 393+)    | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
+| **Skills** (12 áreas, 394)    | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
 | **Reglas** (12 .mdc)           | `01_Personal_Os/01_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
 | **Agentes** (82)               | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
 | **HUBs** (31 principales)      | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema                    |
@@ -212,4 +212,4 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 ---
 
 *Think Different PersonalOS v4.7 Consequences — Production Ready*
-*Actualizado: 2026-05-23 | 394 skills | 46 agents | 36 MCPs | 19 HUBs | 12 rules*
+*Actualizado: 2026-05-25 | 394 skills | 46 agents (82 total sistema) | 36 MCPs | 28 HUBs | 12 rules*

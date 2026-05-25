@@ -21,7 +21,7 @@
 | **Skills**                          | **394** (12 áreas funcionales)                  |
 | **Rules**                           | **12** (.mdc)                                   |
 | **MCPs**                            | **36** Claude Code                              |
-| **HUBs**                            | **28** HUBs + 152 scripts                       |
+| **HUBs**                            | **28** HUBs + 284 scripts (recursivo)           |
 | **Agentes**                         | **46** (source) / 82 (con SDD/CE)               |
 | **Workflows**                       | **30** (7 categorías)                           |
 
@@ -56,9 +56,11 @@ Think_Different/                           # RAÍZ
 │       ├── 00_Context_LLM/       ✅ Memoria LLM (Engram, notes)
 │       ├── 01_Auto_Improvement/  ✅ Auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests JARVIS
-│       ├── 03_Scripts_Os/        ✅ 19 HUBs + 284 scripts
+│       ├── 03_Scripts_Os/        ✅ 28 HUBs total (19 raíz + 9 aux) + 284 scripts
 │       ├── 04_Installer/         ✅ Installer
 │       ├── 05_Projects/          ✅ Proyectos activos
+│       ├── 06_SOTA_Features/    ✅ Features estado-del-arte
+│       ├── 07_Reports/          ✅ Reportes generados
 │       ├── GOVERNANCE.md
 │       └── RUNBOOK.md
 ├── 02_Playground/                 ✅ Zona de pruebas
@@ -130,7 +132,7 @@ Think_Different/                           # RAÍZ
 
 ---
 
-### HUBs v4.7 (19 HUBs + 284 scripts)
+### HUBs v4.7 (28 HUBs + 284 scripts)
 
 | Hub                                          | Script                                          | Propósito                                             |
 |---------------------------------------------|------------------------------------------------|------------------------------------------------------|

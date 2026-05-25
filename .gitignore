@@ -137,7 +137,6 @@ claude-plugins-official/
 
 # El website tiene su propio repo independiente - NO trackear desde el OS
 Now/oim-website/                        # LEGACY: Now/ dir no longer exists, kept for reference
-Now/oim-website/                        # LEGACY: Now/ dir no longer exists, kept for reference
 Now/Office_Installations_-main.zip      # LEGACY: Now/ dir no longer exists, kept for reference
 
 # OIM_Website_One - proyecto Next.js independiente
@@ -151,7 +150,7 @@ Now/Office_Installations_-main.zip      # LEGACY: Now/ dir no longer exists, kep
 03_Resultado/09_World_OIM/01_OIM_Website_v2/
 
 # Watchdog reports (auto-generated, not needed)
-03_Resultado/04_Reportes/watchdog_report_*.txt
+03_Resultado/03_Reportes/watchdog_report_*.txt
 
 # =============================================================================
 # BINARIOS GRANDES — prevenir inflado del .git (392MB issue 2026-04-28)
@@ -203,9 +202,9 @@ Now/02_Videos_Finales/                  # LEGACY: Now/ dir no longer exists, kep
 
 # Pattern Intelligence Engine cache (regeneratable)
 **/pattern_index.db
-03_Resultado/04_Reportes/
-02_Playground/Side Project/
-03_Resultado/Side Project/
+03_Resultado/03_Reportes/
+02_Playground/Side Project/             # LEGACY: non-numbered variant, dir no longer exists
+03_Resultado/Side Project/              # LEGACY: non-numbered variant, dir no longer exists
 
 # LOCAL / GENERATED WORKSPACE STATE — do not track
 node_modules/

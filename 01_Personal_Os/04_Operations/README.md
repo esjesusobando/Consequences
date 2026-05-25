@@ -164,4 +164,4 @@ mem_save [title] [content]
 
 ---
 
-_Think Different PersonalOS v7.0 — Cerebro operativo (v3.0 Consequences)_
+_Think Different PersonalOS v4.7 Consequences — Cerebro operativo_

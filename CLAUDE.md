@@ -185,7 +185,7 @@ Think_Different/                           # RAÍZ
 │       ├── 00_Context_LLM/      ✅ Memoria, notas, knowledge brain
 │       ├── 01_Auto_Improvement/ ✅ Motor auto-mejora
 │       ├── 02_Agent_Teams_Lite/ ✅ SDD registry + 7 JARVIS manifests
-│       ├── 03_Scripts_Os/       ✅ 19 HUBs + 284 scripts (recursivo)
+│       ├── 03_Scripts_Os/       ✅ 28 HUBs total: 19 raíz + 9 aux + 284 scripts (recursivo)
 │       ├── 04_Installer/        ✅ Instalador del OS
 │       ├── 05_Projects/         ✅ Proyectos activos
 │       ├── 06_SOTA_Features/    ✅ Features estado-del-arte
@@ -243,7 +243,7 @@ Think_Different/                           # RAÍZ
 ├── 02_MCP_Registry.yaml     # 36 MCPs (+1 Higgfield remote)
 ├── 03_Agent_Catalog.yaml    # 46 agentes
 ├── 04_Skill_Index.json      # 394 skills en 12 áreas (updated 2026-05-23)
-├── 05_HUB_Catalog.yaml     # 19 HUBs + 284 scripts (recursivo)
+├── 05_HUB_Catalog.yaml     # 28 HUBs + 284 scripts (recursivo)
 ├── 06_Workflow_Graph.yaml   # 30 workflows
 └── 07_Hook_Registry.yaml    # 6 categorías de hooks
 ```
@@ -284,7 +284,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 |----------------------------------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------|
 | **Overall Health**                                        | **✅ PURE GREEN**                               | v4.7 — 2026-05-23 — Full Audit v2 DONE                                                       |
 | Estructura (4 raíz)                                       | ✅ PASS                                         | Winter / Personal_Os / Playground / Resultado                                                |
-| HUBs (19 HUBs + 284 scripts)                              | ✅ PASS                                         | 19 HUBs + 284 scripts en total (recursivo)                                                   |
+| HUBs (28 HUBs + 284 scripts)                              | ✅ PASS                                         | 28 HUBs + 284 scripts en total (recursivo)                                                   |
 | Skills (394, 12 áreas)                                    | ✅ VERIFIED                                     | 12 áreas funcionales — audit 2026-05-23                                                      |
 | Agent Matrix                                              | ✅ SYNCED                                       | 46 ↔ 46 (drift: 0 post-cleanup 2026-05-23)                                                   |
 | Manifest (7 archivos)                                     | ✅ VALIDATED                                    | 00_Manifest/ en 02_Agent_Teams_Lite/                                                         |
