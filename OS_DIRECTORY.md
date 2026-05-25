@@ -76,6 +76,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 Think_Different/                         # RAÍZ
 ├── 00_Winter_is_Coming/          ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
+│   ├── 00_EVOLUTION_LOG.md       ✅ Registro histórico de evolución del OS
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD)
 │   │   ├── 00_Workflows_Os/     ✅ 30 workflows (7 categorías)
 │   │   ├── 01_Rules/            ✅ 12 reglas .mdc
@@ -105,8 +106,8 @@ Think_Different/                         # RAÍZ
 │   │   ├── 01_Tasks_Done/
 │   │   ├── 02_Hillary_Inbox/
 │   │   └── README.md
-│   ├── 05_Archive/                ✅ Backups, snapshots, históricos
-│   └── 04_Operations/             ✅ Operativo
+│   ├── 04_Operations/             ✅ Operativo
+│   └── 05_Archive/                ✅ Backups, snapshots, históricos
 │       ├── 00_Context_LLM/        ✅ Memoria LLM (Engram, notes)
 │       ├── 01_Auto_Improvement/   ✅ Motor auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests
@@ -228,6 +229,7 @@ Think_Different/                         # RAÍZ
 | 50  | `50_System_Health_Monitor.py`           | Monitor de salud del sistema                                        |
 | 57  | `57_Repo_Sync_Auditor.py`               | Auditor de sincronización de repos                                  |
 | 23  | `23_path_replacement.py`                | Reemplazo de paths legacy                                           |
+| —   | `refactor_revert_id.py`                 | Utilidad one-off para revertir IDs en refactor                      |
 
 ### Subdirectorios (organización)
 
@@ -308,4 +310,46 @@ Al iniciar sesión O al recibir cualquier instrucción, ejecutar `.agent/03_Work
 
 ---
 
-*Actualizado: 2026-05-23 | PersonalOS v4.7 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 394 skills | 46 agents | 36 MCPs | 36 CE skills registered*
+---
+
+## 📋 AUDIT LOG — Findings Documentados (v4.7 Consequences)
+
+Los siguientes hallsazgos fueron identificados durante la auditoría OS integral del 2026-05-25 y **documentados sin eliminar información**:
+
+### Estructurales
+| # | Hallazgo | Estado |
+|---|---------|--------|
+| 1 | `05_Archive/` faltaba en árbol README.md | ✅ CORREGIDO |
+| 2 | `05_Archive/` antes que `04_Operations/` en OS_DIRECTORY.md | ✅ CORREGIDO |
+| 3 | `00_EVOLUTION_LOG.md` no documentado en ningún árbol | ✅ CORREGIDO |
+| 4 | Gap de numeración en `02_Playground/`: no existe `05_` | 📌 DOCUMENTADO |
+| 5 | `refactor_revert_id.py` huérfano (sin documentar en HUBs) | ✅ CORREGIDO |
+| 6 | `excalidraw.log` en raíz | ✅ .gitignore (fase 1-2) |
+
+### Skills
+| # | Hallazgo | Estado |
+|---|---------|--------|
+| 7 | 0/394 skills tienen campo `trigger:` en frontmatter YAML | 📌 MEJORA POTENCIAL — no es error |
+| 8 | ~30 skills duplicadas de migración incompleta (áreas 02/04) | 📌 PRESERVADO — no se elimina |
+| 9 | 18 skills Engram existen solo en backup (`.agent/02_Skills/02_Engram/`) | 📌 PRESERVADO — backup natural |
+| 10 | `.opencode/skills/ui-ux-pro-max` huérfano (no en árbol source) | 📌 PRESERVADO — skill local |
+
+### Scripts
+| # | Hallazgo | Estado |
+|---|---------|--------|
+| 11 | Directorios duplicados en `03_Scripts_Os/`: 05_AIPM↔03_AIPM, 05_Validator↔03_Validator, 09_Data↔07_Data, 10_General↔08_General | 📌 PRESERVADO — inflación intencional para backup |
+| 12 | `HUB_SOTA.py` duplicado (v4.7 raíz + v4.1 en 10_Legacy) | 📌 PRESERVADO — versiones históricas |
+| 13 | `10_Legacy/` con ~85 scripts mayormente duplicados de versiones modernas | 📌 PRESERVADO — archivo histórico |
+| 14 | `config_paths.py`: 0 referencias rotas verificadas | ✅ VERIFICADO |
+
+### Referencias Cruzadas
+| # | Hallazgo | Estado |
+|---|---------|--------|
+| 15 | Números canónicos 28/284/394/36 sync post-Judgment Day | ✅ VERIFICADO (commit fb823448e) |
+| 16 | `.agent/README.md` decía 23 scripts, real son 31 root + subdirs | 📌 DOCUMENTADO — backup no es fuente |
+
+> **NOTA:** todo hallazgo marcado como PRESERVADO se mantiene intencionalmente. El sistema prioriza no perder información histórica sobre la limpieza perfecta.
+
+---
+
+*Actualizado: 2026-05-25 | PersonalOS v4.7 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 394 skills | 46 agents | 36 MCPs | 36 CE skills registered*
