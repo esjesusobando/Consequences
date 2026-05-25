@@ -231,12 +231,13 @@ Think_Different/                    # RAÍZ
 02_Playground/
 ├── 00_Momentum/              # Agenda momentum (7 subcarpetas)
 ├── 01_Branders_Skills/       # Skills de branding (10 archivos)
-├── 01_OS_Runtime_Test.py     # Test runtime v4.7 Consequences
 ├── 02_Workflow_N8N/          # Workflows N8N
 ├── 03_Reports/               # Reportes generados
 ├── 04_Side Project/          # Oil Brain (repo propio, ignorado)
-├── 05_OS_Health_Test.py      # Test de salud
-├── 06_OS_Deep_Audit.py       # Auditoría profunda v2
+├── 06_Testing_Legacy/        # Scripts de test legacy
+│   ├── 01_OS_Runtime_Test.py # Test runtime v4.7 Consequences
+│   ├── 05_OS_Health_Test.py  # Test de salud
+│   └── 06_OS_Deep_Audit.py   # Auditoría profunda v2
 ├── Kit_Diseño_Top.md         # Guía diseño legacy
 └── README.md
 ```
@@ -248,32 +249,41 @@ Think_Different/                    # RAÍZ
 ```
 03_Resultado/
 ├── .opencode/                   # ✅ Deps actualizadas
-├── 00_Output_Skills/
-├── 00_Recursos_Varios/
-├── 01_Planes/
-├── 02_Revisar_Now/
-├── 03_Revisar_Planes/
-├── 04_Reportes/
-├── 05_Frontend_Slides_Exercise/
-├── 06_Huashu_Design_Exercise/
-├── 07_Referencias_Pre/
-├── 08_Fundamentos_AI/
-├── 09_World_OIM/               # 4 variantes OIM
-│   ├── 01_OIM_Website_v2/
-│   ├── 02_OIM_Website/
-│   ├── 03_OIM_Website_One/
-│   ├── 04_OIM_Website_Backup/
-│   └── Imagenes_Finales/
-├── 10_Contenido_Learning/
-├── 11_Pruebas_Ads/
-├── 12_Clinica_Infantil/
-├── 13_Sessions/
-├── 14_Imagenes_Finales/
-├── 15_AI_News_Weekly_20260522/  # ✅ Reporte ejecutado
-├── 16_Side Project/             # Oil/Brain (repo propio, ignorado)
-├── Design.md
-├── Pattern_Intelligence_Results.md
-└── README.md
+├── 00_Proyectos/                # Proyectos activos y planes
+│   ├── 00_Side Project/         # Oil/Brain (repo propio, ignorado)
+│   ├── 01_Planes/              # Planes de proyecto
+│   ├── 02_Revisar_Now/         # Pendientes de revisión
+│   ├── 03_Revisar_Planes/      # Planes en revisión
+│   ├── 04_Pruebas_Ads/         # Pruebas de anuncios
+│   └── README.md
+├── 01_Aprendizaje/              # Outputs de aprendizaje
+│   ├── 00_Output_Skills/       # Skills generadas
+│   ├── 01_Fundamentos_AI/      # Fundamentos de IA
+│   ├── 02_Contenido_Learning/  # Contenido de aprendizaje
+│   ├── 03_Documentacion/       # Documentación (Design.md, Pattern_Intelligence.md)
+│   ├── 04_Referencias_Pre/     # Referencias previas
+│   └── README.md
+├── 02_Experimentos/             # Experimentos y ejercicios
+│   ├── 00_Recursos_Varios/     # Recursos varios
+│   ├── 00_World_OIM/           # 4 variantes OIM
+│   │   ├── 01_OIM_Website_v2/
+│   │   ├── 02_OIM_Website/
+│   │   ├── 03_OIM_Website_One/
+│   │   ├── 04_OIM_Website_Backup/
+│   │   └── Imagenes_Finales/
+│   ├── 01_Frontend_Slides_Exercise/    # Frontend/Slides
+│   ├── 02_Huashu_Design_Exercise/      # Huashu Design
+│   ├── 04_Sessions/                    # Sesiones de trabajo
+│   ├── 05_Imagenes_Finales/            # Imágenes finales
+│   ├── 06_AI_News_Weekly/              # AI News Weekly
+│   ├── 07_Clinica_Infantil/            # Clínica Infantil
+│   └── README.md
+├── 03_Reportes/                # Reportes y auditorías
+├── 04_Documentacion/           # Documentación general
+├── 00_Think_Different.code-workspace
+└── ORGANIZACION_SUMMARY.md     # Documento de reorganización
+
+*Nota: Estructura reorganizada el 2026-05-24. Contenido legacy preservado en subdirectorios agrupados.*
 ```
 
 ---
@@ -300,7 +310,7 @@ Think_Different/                    # RAÍZ
 | Componente                | Total                                                   | Estado  |
 |--------------------------|--------------------------------------------------------|--------|
 | Skills                    | 394 (12 áreas)                                          | ✅       |
-| Agentes                   | 58 (source) / 95 (backup)                               | ✅       |
+| Agentes                   | 46 (source) / 82 (con SDD/CE)                           | ✅       |
 | Rules                     | 12 (.mdc 00-11)                                         | ✅       |
 | MCPs                      | 36                                                      | ✅       |
 | HUBs                      | 28                                                      | ✅       |
@@ -357,4 +367,4 @@ Al iniciar sesión, ejecutar EN ORDEN:
 
 *Versión: v4.7 Consequences*
 *Audit: 2026-05-23*
-*Skills: 394 | Agents: 58 | MCPs: 36 | HUBs: 28*
+*Skills: 394 | Agents: 46 (source) / 82 (con SDD/CE) | MCPs: 36 | HUBs: 28*

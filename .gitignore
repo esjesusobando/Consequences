@@ -106,8 +106,8 @@ tree.txt
 # SCRIPTS OUTPUT
 # =============================================================================
 
-08_Scripts_Os/Analytics_Output/
-08_Scripts_Os/AIPM_Fixed/Analytics_Output/
+08_Scripts_Os/Analytics_Output/         # LEGACY: dir no longer exists, kept for reference
+08_Scripts_Os/AIPM_Fixed/Analytics_Output/ # LEGACY: dir no longer exists, kept for reference
 
 # =============================================================================
 # REPOS EXTERNOS CLONADOS (no commit)
@@ -119,8 +119,8 @@ tree.txt
 # Skill Creator Official (Anthropic) - clonar con: git clone <url>
 claude-plugins-official/
 01_Core/08_Plugins/01_Claude-Plugins_Official/
-01_Core/05_Mcp/mcp.json
-01_Core/05_Mcp/opencode.json
+01_Core/05_Mcp/mcp.json                # LEGACY: 01_Core/05_Mcp/ no longer exists; MCP configs moved to 01_Personal_Os/01_Core/02_Tools/03_Mcp/
+01_Core/05_Mcp/opencode.json           # LEGACY: same as above
 01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/03_Side_Project_Backup/
 
 # Frontend Slides - Predeterminada para presentaciones HTML (TRACKED)
@@ -136,18 +136,18 @@ claude-plugins-official/
 # =============================================================================
 
 # El website tiene su propio repo independiente - NO trackear desde el OS
-Now/oim-website/
-Now/oim-website/
-Now/Office_Installations_-main.zip
+Now/oim-website/                        # LEGACY: Now/ dir no longer exists, kept for reference
+Now/oim-website/                        # LEGACY: Now/ dir no longer exists, kept for reference
+Now/Office_Installations_-main.zip      # LEGACY: Now/ dir no longer exists, kept for reference
 
 # OIM_Website_One - proyecto Next.js independiente
-03_Resultado/OIM_Website_One/
+03_Resultado/OIM_Website_One/           # LEGACY: dir no longer exists, kept for reference
 
 # =============================================================================
 # OIM VARIANTS — until official
 # =============================================================================
-01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy/
-01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy_2/
+01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy/    # LEGACY: 10_Legacy_Revisar/ no longer exists, kept for reference
+01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy_2/   # LEGACY: 10_Legacy_Revisar/ no longer exists, kept for reference
 03_Resultado/09_World_OIM/01_OIM_Website_v2/
 
 # Watchdog reports (auto-generated, not needed)
@@ -168,8 +168,8 @@ Now/Office_Installations_-main.zip
 01_Personal_Os/04_Operations/00_Context_LLM/02_Knowledge_Brain/00_Library_PDFs/*.pdf
 
 # Imágenes grandes (carpeta Now/ ya no existe pero por si vuelve)
-Now/03_Imagenes_Finales/
-Now/02_Videos_Finales/
+Now/03_Imagenes_Finales/                # LEGACY: Now/ dir no longer exists, kept for reference
+Now/02_Videos_Finales/                  # LEGACY: Now/ dir no longer exists, kept for reference
 
 # JSON de métricas auto-generados (se regeneran solos)
 01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/03_Metrics/improvement_log.json
@@ -196,7 +196,7 @@ Now/02_Videos_Finales/
 01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/
 01_Personal_Os/05_Archive/07_Repos_Gentleman/*/.git
 # Local Pi runtime state
-.atl/
+# .atl/   # NOTE: .atl is the SDD registry — DO NOT ignore, already tracked in git. Commented out 2026-05-25.
 
 # Pattern Intelligence Engine cache (regeneratable)
 **/pattern_index.db
@@ -216,5 +216,5 @@ out/
 01_Personal_Os/05_Archive/07_Repos_Gentleman/open-design/
 03_Resultado/OIM_Website_v2/
 01_Personal_Os/05_Archive/07_Repos_Gentleman/frontend-slides/
-03_Resultado/16_Side Project/
+03_Resultado/16_Side Project/            # LEGACY: dir no longer exists, kept for reference
 02_Playground/04_Side Project/

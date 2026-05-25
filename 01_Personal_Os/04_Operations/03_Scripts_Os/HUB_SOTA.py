@@ -16,6 +16,8 @@ from pathlib import Path
 
 # Add to path for imports
 SOTA_DIR = Path(__file__).parent
+SOTA_FEATURES_DIR = SOTA_DIR.parent / "06_SOTA_Features"
+sys.path.insert(0, str(SOTA_FEATURES_DIR))
 sys.path.insert(0, str(SOTA_DIR))
 
 from config import load_config, is_feature_enabled

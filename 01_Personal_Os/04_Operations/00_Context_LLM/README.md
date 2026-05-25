@@ -1,6 +1,6 @@
-# 00_Context_LLM — Memoria LLM y Contexto Persistente v4.5
+# 00_Context_LLM — Memoria LLM y Contexto Persistente v4.7
 
-> **Versión:** v4.5 Consequences
+> **Versión:** v4.7 Consequences
 > **Última actualización:** 2026-05-21
 
 ---
@@ -15,17 +15,24 @@ Sistema de memoria y contexto para LLMs. Guarda el estado del sistema, notas de 
 
 ```
 00_Context_LLM/
-├── 00_Memory/              # Memoria base del sistema
+├── 00_Context_Memory/       # Memoria de contexto del sistema
 ├── 01_Process_Notes/        # Notas de proceso (sesiones)
-│   ├── *.md                # Notas de cada sesión
-│   ├── _archive/          # Archivo de notas antiguas
-│   └── README.md          # Este archivo
-├── 02_Knowledge_Brain/     # Knowledge brain del sistema
-├── 03_Context_Memory/       # Memoria de contexto
-├── 04_Plans/               # Plans del sistema
-├── 05_Memory_Brain/        # Brain de memoria
-└── 06_LLM_Logs/            # Logs de LLM
+├── 02_Knowledge_Brain/      # Knowledge brain del sistema
+├── 03_Memory_Brain/         # Brain de memoria persistente
+├── 04_Docs/                 # Documentación del sistema
+├── 05_Plans/                # Planes activos y archivados
+├── 06_Solutions/            # Soluciones documentadas
+├── 07_Auditorias/           # Reportes de auditoría
+├── 11_Reports/              # Reportes generados
+├── 13_Telemetry/            # Telemetría del sistema
+├── 14_Scripts/              # Scripts auxiliares
+├── 15_Resources/            # Recursos adicionales
+├── Contex_Memory.md         # Archivo de contexto plano
+├── Notas_de_Proceso.md      # Notas de proceso plano
+└── README.md                # Este archivo
 ```
+
+> **Nota:** La numeración tiene saltos (08-10, 12 son espacios no utilizados/heredados que se preservaron tal cual).
 
 ---
 
@@ -67,4 +74,4 @@ Sistema de memoria y contexto para LLMs. Guarda el estado del sistema, notas de 
 
 ---
 
-*Think Different PersonalOS v4.1*
+*Think Different PersonalOS v4.7 Consequences*

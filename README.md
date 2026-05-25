@@ -22,7 +22,7 @@
 | **Rules**                           | **12** (.mdc)                                   |
 | **MCPs**                            | **36** Claude Code                              |
 | **HUBs**                            | **28** HUBs + 152 scripts                       |
-| **Agentes**                         | **58** (source) / 95 (backup)                   |
+| **Agentes**                         | **46** (source) / 82 (con SDD/CE)               |
 | **Workflows**                       | **30** (7 categorías)                           |
 
 ---
@@ -64,15 +64,20 @@ Think_Different/                           # RAÍZ
 ├── 02_Playground/                 ✅ Zona de pruebas
 │   ├── 00_Momentum/
 │   ├── 01_Branders_Skills/
-│   ├── 01_OS_Runtime_Test.py
 │   ├── 02_Workflow_N8N/
 │   ├── 03_Reports/
 │   ├── 04_Side Project/
-│   ├── 05_OS_Health_Test.py
-│   ├── 06_OS_Deep_Audit.py
+│   ├── 06_Testing_Legacy/         # Scripts de test
+│   │   ├── 01_OS_Runtime_Test.py
+│   │   ├── 05_OS_Health_Test.py
+│   │   └── 06_OS_Deep_Audit.py
 │   └── Kit_Diseño_Top.md
-├── 03_Resultado/                 ✅ Outputs de proyectos
-│   └── 09_World_OIM/
+├── 03_Resultado/                 ✅ Outputs de proyectos (agrupado: Proyectos, Aprendizaje, Experimentos, Reportes, Documentacion)
+│   ├── 00_Proyectos/            # Planes, revisiones, side projects
+│   ├── 01_Aprendizaje/          # Skills output, fundamentos, referencias
+│   ├── 02_Experimentos/         # World OIM, ejercicios, sesiones
+│   ├── 03_Reportes/             # Auditorías y reportes
+│   └── 04_Documentacion/        # Documentación general
 ├── .agent/                      ✅ BACKUP ESTRATÉGICO
 ├── .atl/                        ✅ SDD Registry + openspec/
 ├── .claude/                     ✅ Config Claude Code

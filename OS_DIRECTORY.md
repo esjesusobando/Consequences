@@ -12,7 +12,7 @@
 | Every CE                              | v3.8.4 (local repo) ✅                                                      | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.30.6                                                                    | ✅ AVAILABLE                                    |
 | Skills                                | **394** (12 áreas funcionales)                                             | ✅ VERIFIED — 0 sin frontmatter                 |
-| Agentes                               | **58** (source) / 95 (backup)                                              | ✅ SYNCED                                      |
+| Agentes                               | **46** (source) / 82 (con SDD/CE)                                          | ✅ SYNCED                                      |
 | HUBs                                  | **28**                                                                     | ✅ VERIFIED                                     |
 | Scripts totales                       | **152**                                                                    | ✅ DOCUMENTED                                   |
 | Workflows                             | **30** (7 categorías en 00_Workflows_Os)                                   | ✅ ACTIVE                                       |
@@ -22,7 +22,7 @@
 | Integrations                          | **2** (01_Fireflies, 02_Granola)                                           | ✅ INTEGRATED                                   |
 
 > **🟢 ÚLTIMA AUDITORÍA:** 2026-05-24 — v4.7 Consequences
-> Agent Sync: 58 agents. Skills: 394 (SKILL.md). MCPs: 36/36 sync. HUBs: 28. Scripts: 152.
+> Agent Sync: 46 agents (source) / 82 total con SDD/CE. Skills: 394 (SKILL.md). MCPs: 36/36 sync. HUBs: 28. Scripts: 152.
 
 ---
 
@@ -118,8 +118,8 @@ Think_Different/                         # RAÍZ
 │       ├── GOVERNANCE.md
 │       ├── README.md
 │       └── RUNBOOK.md
-├── 02_Playground/                ✅ Zona de pruebas (4 carpetas + 4 scripts)
-├── 03_Resultado/                 ✅ Outputs de proyectos (OIM, Portfolio, Exercises)
+├── 02_Playground/                ✅ Zona de pruebas (6 carpetas, scripts test en 06_Testing_Legacy/)
+├── 03_Resultado/                 ✅ Outputs de proyectos (agrupado: Proyectos, Aprendizaje, Experimentos, Reportes, Documentacion)
 ├── .agent/                       ✅ Backup estratégico
 │   ├── 00_Rules/
 │   ├── 01_Agents/
