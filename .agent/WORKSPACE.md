@@ -1,10 +1,10 @@
-# Workspace Structure — Think Different v2.0 Consequences
+# Workspace Structure — Think Different v4.8 Consequences
 
 > **4 carpetas raíz con propósito claro — estructura limpia post-migración 2026-05-22**
 
 ---
 
-## 📂 Estructura Raíz (Workspace v2.0)
+## 📂 Estructura Raíz (Workspace v4.8)
 
 ```
 Think_Different/
@@ -15,7 +15,7 @@ Think_Different/
 ├── .agent/                 # Backup estratégico
 ├── .atl/                   # SDD Registry + openspec
 ├── .claude/                # Config Claude Code
-├── .mcp.json               # 33 MCPs activos
+├── .mcp.json               # 36 MCPs activos
 ├── AGENTS.md               # Entry point GGA (Pre-Commit)
 ├── CLAUDE.md               # Config oficial para IAs
 └── README.md               # Documentación principal
@@ -29,11 +29,11 @@ Think_Different/
 01_Personal_Os/
 ├── 01_Core/                         # Motor del OS
 │   ├── 00_Workflows_Os/             # Workflows (Personal, Marvel, Gentleman, Hillary, CE)
-│   ├── 01_Rules/                    # 10 reglas del sistema (.mdc)
+│   ├── 01_Rules/                    # 13 reglas del sistema (.mdc)
 │   └── 02_Tools/                    # Todas las herramientas
 │       ├── 01_Agents/               # Dream Team + 23 Specialists
-│       ├── 02_Skills/               # 9 áreas funcionales (limpias)
-│       ├── 03_Mcp/                  # Config MCPs (33 activos)
+│       ├── 02_Skills/               # 12 áreas canónicas
+│       ├── 03_Mcp/                  # Config MCPs (36 activos)
 │       ├── 04_Integrations/         # Fireflies, Granola
 │       ├── 05_Hooks/                # Pre/Post/Lifecycle/Sound/Harness
 │       ├── 06_Plugins/              # Plugins OS
@@ -61,7 +61,7 @@ Think_Different/
 │   │   └── 05_Plans/
 │   ├── 01_Auto_Improvement/         # Motor auto-mejora
 │   ├── 02_Agent_Teams_Lite/         # SDD registry
-│   ├── 03_Scripts_Os/               # 14 HUBs + scripts
+│   ├── 03_Scripts_Os/               # 21+2 HUBs + 284 scripts
 │   ├── 04_Installer/                # Instalación
 │   └── 05_Projects/                 # Proyectos activos
 │
@@ -73,7 +73,7 @@ Think_Different/
 
 ---
 
-## 📋 Tabla de Carpetas (v2.0)
+## 📋 Tabla de Carpetas (v4.8)
 
 | #     | Carpeta                    | Contenido                                                 | Estado          |
 |-------|----------------------------|-----------------------------------------------------------|-----------------|
@@ -84,13 +84,13 @@ Think_Different/
 
 ---
 
-## 🎯 Rutas Importantes (v2.0)
+## 🎯 Rutas Importantes (v4.8)
 
 | Recurso                       | Ruta                                                           |
 |-------------------------------|----------------------------------------------------------------|
 | **Fuente de Verdad Skills**   | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                   |
-| **Rules (10 .mdc)**           | `01_Personal_Os/01_Core/01_Rules/`                             |
-| **Scripts (14 HUBs)**         | `01_Personal_Os/04_Operations/03_Scripts_Os/`                  |
+| **Rules (13 .mdc)**           | `01_Personal_Os/01_Core/01_Rules/`                             |
+| **Scripts (21+2 HUBs + 284 scripts)** | `01_Personal_Os/04_Operations/03_Scripts_Os/`                  |
 | **Workflows**                 | `01_Personal_Os/01_Core/00_Workflows_Os/`                      |
 | **Agents**                    | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                   |
 | **MCPs**                      | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`                      |
@@ -103,7 +103,7 @@ Think_Different/
 
 ---
 
-## 📂 Estructura 03_Scripts_Os (14 HUBs)
+## 📂 Estructura 03_Scripts_Os (21+2 HUBs + scripts)
 
 ```
 03_Scripts_Os/
@@ -127,4 +127,4 @@ Think_Different/
 
 ---
 
-*Generado: 2026-05-22 | PersonalOS v4.7 Consequences — 4 carpetas raíz*
+*Generado: 2026-05-22 | PersonalOS v4.8 Consequences — 4 carpetas raíz*

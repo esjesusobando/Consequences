@@ -8,7 +8,7 @@ Sistema de extensiones para Claude Code: hooks de ciclo de vida, notificaciones,
 
 ```
 04_Extensions/
-├── hooks/                      # Hooks de Claude Code
+├── 01_Hooks/                   # Hooks de Claude Code
 │   ├── 01_Pre_Tool/           # Ejecuta ANTES de cada tool
 │   │   └── pre_tool_use.py
 │   ├── 02_Post_Tool/          # Ejecuta DESPUÉS de cada tool
@@ -213,6 +213,6 @@ find .claude/backups -name "*.bak" -mtime +7 -delete
 
 ---
 
-**Last Updated**: 2026-03-18  
-**Version**: 2.0.0 — Full Integration  
+**Last Updated**: 2026-03-18
+**Version**: 2.0.0 — Full Integration
 **Maintainer**: Think Different AI System

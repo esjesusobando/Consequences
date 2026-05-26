@@ -1,4 +1,4 @@
-# SKILLS INVENTORY — Think Different PersonalOS v4.7
+# SKILLS INVENTORY — Think Different PersonalOS v4.8
 
 > 📍 **Source:** `01_Personal_Os/01_Core/02_Tools/02_Skills/` (canonical)
 > 📍 **Backup activo:** `.agent/02_Skills/` (sincronizado)
@@ -6,16 +6,14 @@
 
 ---
 
-## 📁 Estructura Activa: `.agent/02_Skills/` (15 directorios, 504 SKILL.md)
+## 📁 Estructura Activa: `.agent/02_Skills/` (14 directorios, 407 SKILL.md)
 
-### 00_* — Infraestructura (no sincronizados, preservados)
+### 00_* — Infraestructura/bootstrap (preservados; no todos existen en source)
 
 | Directorio | SKILL.md | Propósito |
 |-----------|----------|-----------|
 | `00_Agent_Teams_Lite` | 13 | SDD sub-agents (explore, propose, spec, design, tasks, apply, verify, archive) |
 | `00_Compound_Engineering` | 63 | Compound Engineering: skills de agentes, CE workflow, herramientas |
-| `00_Engram` | 19 | Engram persistent memory system |
-| `00_Invictus_Backup` | 78 | Backup de skills Invictus |
 | `00_System_Core` | 1 | Stack de configuración del OS |
 | `10_Skill_Auditor` | 1 | Auditoría de skills |
 
@@ -56,7 +54,6 @@
 | Claude Ads | `09_Claude_Ads/` |
 | Compound Engineering (CE) | `00_Compound_Engineering/` |
 | SDD sub-agents | `00_Agent_Teams_Lite/` |
-| Engram memory | `00_Engram/` |
 
 ### Skills únicos en Legacy Archive
 
@@ -89,9 +86,9 @@ Skill lookup: `find 01_Personal_Os/05_Archive/10_Skills_Legacy/ -name "<skill_na
 | Ubicación | SKILL.md | Notas |
 |-----------|----------|-------|
 | Source (`01_Core/02_Tools/02_Skills/`) | 394 | Canonical |
-| Backup activo (`.agent/02_Skills/`) | 504 | Incluye 00_* extras + source sync |
+| Backup activo (`.agent/02_Skills/`) | 407 | Incluye bootstrap 00_* + source sync |
 | Legacy archive (`05_Archive/10_Skills_Legacy/`) | ~490 | Preservado completo |
 | **Total general único estimado** | **~700+** | Skills únicos en todo el OS |
 
 ---
-*Generado: 2026-05-23 | Actualizar tras cambios significativos en source*
+*Actualizado: 2026-05-26 | PersonalOS v4.8 | 394 source / 407 backup skills*

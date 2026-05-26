@@ -8,11 +8,11 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 
 ---
 
-## 📂 Estructura .agent/ (v4.7 — Backup)
+## 📂 Estructura .agent/ (v4.8 — Backup sincronizado)
 
 | Directorio           | Contenido                                | Fuente de verdad                               |
 |----------------------|------------------------------------------|------------------------------------------------|
-| **00_Rules/**        | 11 reglas activas (.mdc)                 | `01_Personal_Os/01_Core/01_Rules/`             |
+| **00_Rules/**        | 13 reglas activas (.mdc)                 | `01_Personal_Os/01_Core/01_Rules/`             |
 | **01_Agents/**       | Agentes configurados (58+)               | `01_Personal_Os/01_Core/02_Tools/01_Agents/`   |
 | **02_Skills/**       | Skills organizadas (backup)              | `01_Personal_Os/01_Core/02_Tools/02_Skills/`   |
 | **03_Workflows/**    | Workflows del sistema                    | `01_Personal_Os/01_Core/00_Workflows_Os/`      |
@@ -27,7 +27,7 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 |-------------------------------------|----------------------------------------------------------|
 | **00_Winter_is_Coming/**            | Goals, Backlog, AGENTS.md (ESTRATÉGICO)                  |
 | **01_Personal_Os/**                 | El sistema operativo completo                            |
-| **01_Personal_Os/01_Core/**         | Motor: Skills (12 áreas, 394), Rules (12), MCPs (36), Tools |
+| **01_Personal_Os/01_Core/**         | Motor: Skills (12 áreas, 394), Rules (13), MCPs (36), Tools |
 | **01_Personal_Os/02_Knowledge/**    | Documentación, Research, Notas                           |
 | **01_Personal_Os/03_Task/**         | Tareas activas                                           |
 | **01_Personal_Os/04_Operations/**   | Operativo: Scripts (152), Auto-Mejora, Projects, Context LLM |
@@ -50,7 +50,7 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 
 ---
 
-## 🎯 Skills Disponibles (12 áreas activas — 394 skills)
+## 🎯 Skills Disponibles (12 áreas canónicas — 394 source / 407 backup skills)
 
 ### Por Categoría (`01_Personal_Os/01_Core/02_Tools/02_Skills/`)
 
@@ -121,7 +121,7 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 ## 🔗 Related
 
 - **Rules:** See `01_Personal_Os/01_Core/01_Rules/` for active rules (13 .mdc)
-- **Skills:** See `01_Personal_Os/01_Core/02_Tools/02_Skills/` for all skills (394)
+- **Skills:** See `01_Personal_Os/01_Core/02_Tools/02_Skills/` for canonical skills (394); `.agent/02_Skills/` preserves 407 backup/bootstrap skills
 - **CLAUDE.md:** See `./CLAUDE.md` for agent instructions
 - **Scripts:** See `01_Personal_Os/04_Operations/03_Scripts_Os/` for 284 scripts (21+2 HUBs total: 19 raíz + 9 aux)
 - **Manifests:** See `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/` for JARVIS 3.1
@@ -155,4 +155,4 @@ gr --apply      # Apply fixes
 
 ---
 
-*Última actualización: 2026-05-24 | PersonalOS v4.8 Consequences | 12 áreas activas | 394 skills | 23 scripts ✅*
+*Última actualización: 2026-05-26 | PersonalOS v4.8 Consequences | 12 áreas canónicas | 394 source / 407 backup skills | 13 rules | 23 scripts ✅*

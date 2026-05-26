@@ -136,16 +136,18 @@ Think_Different/
 
 ```
 .agent/
-├── 00_Rules/            # Reglas del agente (12 .mdc activos)
+├── 00_Rules/            # Reglas del agente (13 .mdc activos)
 ├── 01_Agents/           # Agentes externos configurados (46)
 ├── 02_Skills/           # Skills organizadas (backup)
 ├── 03_Workflows/        # Workflows del sistema
-├── 04_Extensions/       # Hooks del sistema
-│   └── hooks/
+├── 04_Extensions/       # Extensiones del sistema
+│   └── 01_Hooks/
 │       ├── 01_Pre_Tool/    # PreToolUse: battery, security
 │       ├── 02_Post_Tool/   # PostToolUse: backup, voice
 │       ├── 03_Lifecycle/   # Stop, SubagentStop
-│       └── 04_Sound/      # Notifications, sounds
+│       ├── 04_Sound/      # Notifications, sounds
+│       ├── 05_Harness/    # Context/eval harness hooks
+│       └── 06_Post_Hulk_Compound/ # Post-CE workflow hook
 └── 05_GGA/              # Gentleman Guardian Angel (Code Review)
 ```
 
@@ -186,7 +188,7 @@ Centralizados en `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 
 ---
 
-# Skills Disponibles (12 áreas funcionales — 394 skills)
+# Skills Disponibles (12 áreas canónicas — 394 source / 407 backup skills)
 
 ## Skills por Categoria (`01_Personal_Os/01_Core/02_Tools/02_Skills/`)
 
@@ -295,7 +297,7 @@ Code review con IA integrado.
 
 | Categoria                             | Estado            | Notas                                      |
 |---------------------------------------|-------------------|--------------------------------------------|
-| Estructura v4.7 (4 carpetas raíz)     | ✅ PASS            | Winter / Personal_Os / Playground / Resultado |
+| Estructura v4.8 (4 carpetas raíz)     | ✅ PASS            | Winter / Personal_Os / Playground / Resultado |
 | HUBs (28 total: 19 raíz + 9 aux)      | ✅ ACTIVE          | 284 scripts recursivos en 03_Scripts_Os/    |
 | Skills (12 áreas funcionales)         | ✅ OPERATIONAL     | 394 skills                                 |
 | Rules (12 .mdc)                       | ✅ DEFINED         | En 01_Personal_Os/01_Core/01_Rules/       |
