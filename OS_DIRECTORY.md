@@ -13,16 +13,16 @@
 | gentle-ai                             | v1.30.6                                                                    | ✅ AVAILABLE                                    |
 | Skills                                | **394** (12 áreas funcionales)                                             | ✅ VERIFIED — 0 sin frontmatter                 |
 | Agentes                               | **48** (source) / 82 (con SDD/CE)                                          | ✅ SYNCED                                       |
-| HUBs                                  | **21+2** (19 Hub.py + HUB_SOTA + HUB_CATALOG)                              | ✅ VERIFIED                                     |
-| Scripts totales                       | **284** (283 .py + 1 .js)                                                  | ✅ DOCUMENTED                                   |
+| HUBs                                  | **21** (19 Hub.py + HUB_SOTA + HUB_CATALOG)                               | ✅ VERIFIED                                     |
+| Scripts totales                       | **267** (.py, excl legacy) + **88** legacy                                | ✅ DOCUMENTED                                   |
 | Workflows                             | **30** (7 categorías en 00_Workflows_Os)                                   | ✅ ACTIVE                                       |
-| Hooks                                 | **12** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk)| ✅ ACTIVE                                       |
-| Rules                                 | **13 (.mdc)** en 01_Rules                                                  | ✅ DEFINED                                      |
+| Hooks                                 | **13** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk)| ✅ ACTIVE                                       |
+| Rules                                 | **14** (13 .mdc + 1 .md index)                                             | ✅ DEFINED                                      |
 | JARVIS Manifests                      | 7 en 00_Manifest/                                                          | ✅ VALIDATED                                    |
 | Integrations                          | **2** (01_Fireflies, 02_Granola)                                           | ✅ INTEGRATED                                   |
 
 > **🟢 ÚLTIMA AUDITORÍA:** 2026-05-25 — v4.8 Consequences
-> Agent Sync: 48 agents (source) / 82 total con SDD/CE. Skills: 394 (SKILL.md). MCPs: 7+38. HUBs: 21+2. Scripts: 284.
+> Agent Sync: 48 agents (source) / 82 total con SDD/CE. Skills: 394 (SKILL.md source) / 407 (backup .agent). MCPs: 7+38. HUBs: 21. Scripts: 267 activos + 88 legacy.
 
 ---
 
@@ -111,7 +111,7 @@ Think_Different/                         # RAÍZ
 │       ├── 00_Context_LLM/        ✅ Memoria LLM (Engram, notes)
 │       ├── 01_Auto_Improvement/   ✅ Motor auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests
-│       ├── 03_Scripts_Os/         ✅ 28 HUBs (19 raíz + 9 aux) + 284 scripts (recursivo)
+│       ├── 03_Scripts_Os/         ✅ 21 HUBs (19 Hub.py + HUB_SOTA + HUB_CATALOG) + 267 scripts + 88 legacy
 │       ├── 04_Installer/          ✅ Installer scripts
 │       ├── 05_Projects/          ✅ Proyectos activos
 │       ├── 06_SOTA_Features/     ✅ Features estado-del-arte
@@ -193,7 +193,7 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## 🎯 HUBs — 21+2 HUBs + 284 SCRIPTS
+## 🎯 HUBs — 21 HUBs + 267 SCRIPTS (+88 legacy)
 
 ### Scripts Python en raíz de 03_Scripts_Os/ (principales)
 
@@ -241,16 +241,17 @@ Think_Different/                         # RAÍZ
 | `02_Tool/`                 | Herramientas auxiliares                                                     |
 | `03_Validator/`            | Validadores                                                                 |
 | `04_Workflow/`             | Workflows                                                                   |
-| `05_AIPM/`                 | AIPM scripts                                                                |
+| `05_AIPM/`                 | AIPM scripts (9)                                                            |
 | `06_Auditor/`              | Auditorías                                                                  |
-| `07_Data/`                 | Datos                                                                       |
-| `08_General/`              | Generales                                                                   |
-| `09_Integration/`          | Integraciones                                                               |
-| `10_Legacy/`               | Legacy                                                                      |
+| `07_Data/`                 | Datos (4)                                                                   |
+| `08_General/`              | Generales (4)                                                               |
+| `09_Integration/`          | Integraciones (3)                                                           |
+| `10_Legacy/`               | Legacy (88)                                                                 |
 | `11_Anthropic_Harness/`    | Harness Anthropic                                                           |
 | `12_Audits/`               | Auditorías                                                                  |
 | `13_Auditors_Os/`          | Auditores OS                                                                |
 | `14_Otros/`                | Otros                                                                       |
+| `05_Validator/`            | Validadores (8)                                                             |
 
 > ★ = HUB canónico JARVIS 4.5
 
@@ -353,4 +354,4 @@ Los siguientes hallsazgos fueron identificados durante la auditoría OS integral
 
 ---
 
-*Actualizado: 2026-05-25 | PersonalOS v4.8 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 394 skills | 48 agents | 7+38 MCPs | 36 CE skills registered*
+*Actualizado: 2026-05-25 | PersonalOS v4.8 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 394 skills source / 407 backup | 48 agents | 21 HUBs | 267 active scripts + 88 legacy | 30 workflows | 13 hooks*
