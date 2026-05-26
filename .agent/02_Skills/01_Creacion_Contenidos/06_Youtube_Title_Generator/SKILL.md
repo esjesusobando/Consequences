@@ -1,3 +1,12 @@
+---
+name: youtube-title-generator
+description: "Genera títulos de YouTube con variantes, scoring de CTR y recomendación final."
+license: Apache-2.0
+metadata:
+  author: gentleman-programming
+  version: "1.0"
+---
+
 # 16_Youtube_Title_Generator
 
 > Genera múltiples títulos optimizados para YouTube con scoring.
