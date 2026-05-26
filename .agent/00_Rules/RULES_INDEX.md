@@ -13,7 +13,7 @@
 Think_Different/
 ├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria (ESTRATÉGICO)
 ├── 01_Personal_Os/         # El Sistema Operativo
-│   ├── 01_Core/01_Rules/  # ← AQUÍ: 11 reglas .mdc
+│   ├── 01_Core/01_Rules/  # ← AQUÍ: 13 reglas .mdc
 │   └── ...
 ├── 02_Playground/         # Zona de pruebas
 └── 03_Resultado/          # Outputs de proyectos
@@ -54,7 +54,7 @@ Think_Different/
 
 ---
 
-## 🔘 Reglas Activas (12 archivos .mdc)
+## 🔘 Reglas Activas (13 archivos .mdc)
 
 | #                              | Regla                                                                                   | Nombre                                                 | Función                                                                      |
 |-------------------------------|----------------------------------------------------------------------------------------|-------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -70,6 +70,7 @@ Think_Different/
 | 09                             | [09_Agent_Teams_Protocol.mdc](./09_Agent_Teams_Protocol.mdc)                            | **Agent Teams Protocol**                               | Multi-agente: boot, delegación, Super Campeones                              |
 | 10                             | [10_Git_Directions.mdc](./10_Git_Directions.mdc)                                        | **Git Directions**                                     | URLs de repos y remotes actualizados                                         |
 | 11                             | [11_Minimax.mdc](./11_Minimax.mdc)                                                      | **Minimax**                                            | Configuración y integración con Minimax                                      |
+| 12                             | [12_Audit_OS_Integrity.mdc](./12_Audit_OS_Integrity.mdc)                        | **Integridad y Auditoría OS**                          | Auditoría no destructiva, preservación histórica y verificación estructural  |
 
 ---
 

@@ -22,7 +22,7 @@ Este archivo enumera y describe la función de cada regla activa en el sistema p
 | [09_Elite_Reporting.mdc](./09_Elite_Reporting.mdc) | Elite Reporting | Estándares de reporte de alta calidad. |
 | [10_Context_Management.mdc](./10_Context_Management.mdc) | Context Management | Gestión de la ventana de contexto y sub-agentes. |
 | [11_Workflow_Standards.mdc](./11_Workflow_Standards.mdc) | Workflow Standards | Estándares para la creación y ejecución de workflows. |
-| [12_Nexus-Routing.mdc](./12_Nexus-Routing.mdc) | Nexus Routing | Lógica de enrutamiento entre componentes del sistema. |
+| [12_Audit_OS_Integrity.mdc](./12_Audit_OS_Integrity.mdc) | OS Audit Integrity | Auditoría no destructiva, preservación histórica y verificación estructural. |
 | [13_Testing_Resource.mdc](./13_Testing_Resource_Management.mdc) | Testing Resources | Gestión de recursos para pruebas automatizadas. |
 | [14_Invoice_Intelligence.mdc](./14_Invoice_Intelligence.mdc) | Invoice Intelligence | Lógica específica para procesamiento de inteligencia de facturas. |
 | [15_Backlog_Processing.mdc](./15_Backlog_Processing.mdc) | Backlog Processing | Triage y priorización del backlog. |
@@ -40,7 +40,9 @@ Este archivo enumera y describe la función de cada regla activa en el sistema p
 | [22_Pencil_Design_Studio.mdc](./22_Pencil_Design_Studio.mdc) | Pencil Design Studio | Workflow de diseño de alto nivel. |
 | [35_Pencil_Design_Studio.mdc](./35_Pencil_Design_Studio.mdc) | Pencil Design Studio (Legacy) | Versión legacy del workflow de diseño. |
 
-> ⚠️ **Nota sobre numeración:** Los archivos 23-34 fueron deprecados/absorbidos. La secuencia activa es 01-22 + Cursor_Rule_Skeleton + 35_legacy.
+> ⚠️ **Nota sobre numeración:** Los archivos 23-34 fueron deprecados/absorbidos. La secuencia activa preserva 01-28 + Cursor_Rule_Skeleton; Nexus queda como legacy en 28.
 
 ---
-_Total Reglas: 22 numeradas + 1 skeleton + 1 legacy_
+_Total Reglas: 28 numeradas + 1 skeleton_
+
+| [28_Nexus_Routing_Legacy.mdc](./28_Nexus_Routing_Legacy.mdc) | Nexus Routing (Legacy) | Regla histórica preservada; reemplazada como Regla 12 activa por OS Audit Integrity. |
