@@ -67,3 +67,4 @@ Estado validado y corregido para el ecosistema Gentleman, OpenCode SDD y EveryIn
 ## Próximo paso operativo
 
 Reiniciar OpenCode, Claude Code y Codex para que todos recarguen configuración/plugins/agentes.
+
