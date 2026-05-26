@@ -7,7 +7,7 @@ metadata:
   version: "1.0"
 ---
 
-# 16_Youtube_Title_Generator
+# Youtube Title Generator
 
 > Genera múltiples títulos optimizados para YouTube con scoring.
 

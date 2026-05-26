@@ -7,7 +7,7 @@ metadata:
   version: "1.0"
 ---
 
-# 14_Youtube_Script_Writer
+# Youtube Script Writer
 
 > Escribe guiones de video para YouTube optimizados para retención.
 

@@ -7,7 +7,7 @@ metadata:
   version: "1.0"
 ---
 
-# 13_Content_Transformer
+# Content Transformer
 
 > Transforma contenido raw en contenido estructurado para múltiples canales.
 

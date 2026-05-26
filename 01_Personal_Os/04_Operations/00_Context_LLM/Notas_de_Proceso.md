@@ -158,3 +158,34 @@ Revisar todo el proyecto Think_Different sin eliminar información, corregir deu
 ### Validaciones
 - Se evitó tocar `node_modules`, `.git`, archivos de archivo histórico y memoria/contexto antiguo salvo esta nota nueva.
 - La política aplicada fue complementar y mover con trazabilidad, no eliminar.
+
+---
+
+## Sesión: 2026-05-26 — Auditoría Skills & INDEX v4.8 Consequences (post-compaction)
+
+### Objetivo
+Auditar focalizadamente el Área 01 (Creación de Contenidos) de skills tras migración de numeración legacy 11-20 → canónica 00-20. Corregir paths, headers, SKILL.md faltantes, índices y mirror drift.
+
+### Bugs corregidos (7)
+| # | Bug | Fix |
+|---|-----|-----|
+| 1 | Path `08_Scripts_Os` hardcodeado en `18_Generacion_Contenido.py` | `04_Operations/03_Scripts_Os` |
+| 2 | Banner version inconsistente (`v4.8` vs `v4.8 Consequences`) | Unificado |
+| 3 | SKILL.md headers con numeración legacy (03,05,06,07,08) | Números legacy eliminados |
+| 4 | SKILL.md faltantes en 16,18,19,20 | Creados con frontmatter base |
+| 5 | `01_Creacion_Contenidos/SKILL.md` paths legacy | Rewrite completo 00-20 |
+| 6 | INDEX_AREA_FUNCTIONAL.md paths legacy | Rewrite completo Área 01 |
+| 7 | Mirror drift entre `.agent/` y `01_Personal_Os/` | Sincronizados |
+
+### Archivos tocados: 22 | Mirrors verificados idénticos
+
+### Decisiones
+- Eliminar números legacy de H1 en SKILL.md (folder numbering es source of truth)
+- SKILL.md mínimos para sub-áreas (navegación sin duplicar)
+- Mirror sync obligatorio entre `.agent/` y `01_Personal_Os/`
+
+### Próximos pasos
+- Commit de cambios
+- Revisar MAPA_MIGRACION.md
+- Extender auditoría a Áreas 02-08
+- Hook pre-commit para mirror consistency

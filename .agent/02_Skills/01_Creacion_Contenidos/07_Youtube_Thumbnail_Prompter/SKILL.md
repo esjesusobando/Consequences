@@ -7,7 +7,7 @@ metadata:
   version: "1.0"
 ---
 
-# 15_Youtube_Thumbnail_Prompter
+# Youtube Thumbnail Prompter
 
 > Genera prompts optimizados para crear miniaturas de YouTube con AI.
 

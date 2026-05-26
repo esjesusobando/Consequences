@@ -4,7 +4,7 @@ description: Workflow ÉPICO para YouTube que integra el ecosistema completo de 
 argument-hint: "[idea/tema del video - ej: cómo usar AI para marketing]"
 ---
 
-# 17_Youtube_Full_Video_EPIC 🎬
+# Youtube Full Video EPIC 🎬
 
 > Workflow completo integrado con TODO el ecosistema de skills de marketing.
 
