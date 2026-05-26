@@ -212,7 +212,7 @@ Think_Different/                    # RAÍZ
 ├── 13_Telemetry/              # Telemetría
 ├── 14_Scripts/                # Scripts operativos (pm_agents_sota.py, pm_agents_hook.ps1)
 ├── 15_Resources/              # Recursos externos (a16z GenAI Top100 insights)
-├── Contex_Memory.md           # Registro de memoria de sesiones
+├── Context_Memory.md           # Registro de memoria de sesiones
 ├── Notas_de_Proceso.md        # Notas de proceso activas
 └── README.md
 ```
@@ -440,7 +440,7 @@ Think_Different/                    # RAÍZ
 | **AGENTS.md**              | GGA Pre-Commit entry (redirect → 00_Winter_is_Coming)           |
 | **CLAUDE.md**              | Config IAs (FUENTE) — Boot Protocol, 12 Laws, Super Campeones   |
 | **OS_DIRECTORY.md**        | JARVIS discovery — 36 MCPs, 28 HUBs, 16 audit findings          |
-| **STRUCTURE_v4.7.md**      | Este archivo — estructura completa                              |
+| **Structure_v4.8.md**        | Este archivo — estructura completa                              |
 
 ---
 

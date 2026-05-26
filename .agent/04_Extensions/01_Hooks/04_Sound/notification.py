@@ -1,6 +1,16 @@
+"""
+Módulo de notificaciones de sonido para PersonalOS
+Uso:
+    python notification.py --task-complete
+    python notification.py --notify "Mensaje"
+    python notification.py --success
+    python notification.py --error
+"""
+
 import os
 import sys
 import argparse
+import platform
 
 # Forzar encoding UTF-8 para consola Windows
 if sys.platform == "win32":
@@ -9,67 +19,118 @@ if sys.platform == "win32":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
-from pathlib import Path
-import sys
 
-_ext_root = Path(__file__).parent.parent.parent
-
-_speak = None
-_visual_alert = None
-_log_to_json = None
-
-try:
-    import importlib.util
-
-    _common_path = _ext_root / "02_Utils" / "common.py"
-    if _common_path.exists():
-        _spec = importlib.util.spec_from_file_location("_common", _common_path)
-        _common = importlib.util.module_from_spec(_spec)
-        _spec.loader.exec_module(_common)
-        _speak = _common.speak
-        _visual_alert = _common.visual_alert
-        _log_to_json = _common.log_to_json
-except Exception:
-    pass
+def play_sound_windows(sound_type="Asterisk"):
+    """Reproducir sonido del sistema Windows."""
+    try:
+        import winsound
+        # FIX: Mapear a los nombres de alias correctos de Windows
+        # winsound.PlaySound necesita el STRING del alias, no el flag
+        alias_map = {
+            "Asterisk":    "SystemAsterisk",
+            "Exclamation": "SystemExclamation",
+            "Hand":        "SystemHand",
+            "Question":    "SystemQuestion",
+            "Success":     "SystemAsterisk",
+        }
+        alias = alias_map.get(sound_type, "SystemAsterisk")
+        winsound.PlaySound(alias, winsound.SND_ALIAS)
+        return True
+    except Exception:
+        return False
 
 
-def speak(msg, priority="normal"):
-    if _speak:
-        _speak(msg, priority)
+def play_sound_beep(frequency=800, duration=150):
+    """Reproducir beep usando Console.Beep (Windows) o echo (Unix)"""
+    try:
+        if sys.platform == "win32":
+            import winsound
+
+            winsound.Beep(frequency, duration)
+        else:
+            # Unix - usar beep o tput
+            os.system(
+                f'echo -e "\\a" > /dev/tty 2>/dev/null'
+                if sys.platform != "win32"
+                else ""
+            )
+        return True
+    except Exception:
+        return False
+
+
+def task_complete_sound():
+    """Sonido de tarea completada - garantizado con doble beep fallback."""
+    print("[Sound] Task Complete...")
+
+    if sys.platform == "win32":
+        # Intentar sonido del sistema primero
+        success = play_sound_windows("Asterisk")
+        if not success:
+            # FIX: Fallback garantizado - doble beep ascendente
+            try:
+                import winsound
+                winsound.Beep(800, 150)
+                winsound.Beep(1100, 200)
+            except Exception:
+                pass
     else:
-        print(msg)
+        os.system('printf "\\a"')
+
+    print("[OK] Sonido reproducido")
 
 
-def visual_alert(msg):
-    if _visual_alert:
-        _visual_alert(msg)
+def success_sound():
+    """Sonido de éxito"""
+    print("✅ [Success]")
+    if sys.platform == "win32":
+        play_sound_windows("Exclamation")
     else:
-        print(f"[ALERT] {msg}")
+        os.system('echo -e "\\a"')
 
 
-def log_to_json(event, data):
-    if _log_to_json:
-        _log_to_json(event, data)
+def error_sound():
+    """Sonido de error"""
+    print("❌ [Error]")
+    if sys.platform == "win32":
+        play_sound_windows("Hand")
     else:
-        print(f"[LOG] {event}: {data}")
+        os.system('echo -e "\\a"')
+
+
+def notification(msg):
+    """Notificación general"""
+    print(f"🔔 [Notification] {msg}")
+    if sys.platform == "win32":
+        play_sound_windows("Asterisk")
+    else:
+        os.system('echo -e "\\a"')
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Claude Code Notification Hook")
+    parser = argparse.ArgumentParser(description="PersonalOS Sound Notifications")
     parser.add_argument(
-        "--notify", action="store_true", help="Send general notification"
+        "--task-complete", action="store_true", help="Sonido de tarea completada"
     )
+    parser.add_argument("--success", action="store_true", help="Sonido de éxito")
+    parser.add_argument("--error", action="store_true", help="Sonido de error")
+    parser.add_argument("--notify", type=str, help="Notificación con mensaje")
+    parser.add_argument("--beep", action="store_true", help="Beep simple")
     args = parser.parse_args()
 
-    message = os.environ.get("CLAUDE_NOTIFICATION", "Claude requiere tu atención")
-
-    if args.notify:
-        print(f"Enviando notificación: {message}")
-        visual_alert(message)
-        speak(message, priority="high")  # Explicit notifications are high priority
-
-        # Log to JSON
-        log_to_json("notification", {"message": message, "status": "sent"})
+    if args.task_complete:
+        task_complete_sound()
+    elif args.success:
+        success_sound()
+    elif args.error:
+        error_sound()
+    elif args.notify:
+        notification(args.notify)
+    elif args.beep:
+        play_sound_beep()
+    else:
+        # Por defecto, sonido de tarea completa
+        task_complete_sound()
 
 
 if __name__ == "__main__":

@@ -27,7 +27,7 @@ Sistema de memoria y contexto para LLMs. Guarda el estado del sistema, notas de 
 ├── 13_Telemetry/            # Telemetría del sistema
 ├── 14_Scripts/              # Scripts auxiliares
 ├── 15_Resources/            # Recursos adicionales
-├── Contex_Memory.md         # Archivo de contexto plano
+├── Context_Memory.md         # Archivo de contexto plano (registro de sesiones)
 ├── Notas_de_Proceso.md      # Notas de proceso plano
 └── README.md                # Este archivo
 ```

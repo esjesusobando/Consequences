@@ -1322,7 +1322,7 @@
       "text": "| **4**                  | FULL                      | Ejecución completa                  | TODO                              | NUNCA*                                |"
     },
     {
-      "file": "01_Personal_Os/04_Operations/00_Context_LLM/Contex_Memory.md",
+      "file": "01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/01_CTX_Sesion_Auditoria_Estado_del_Arte_v4.7.md",
       "line": 18,
       "text": "- **Actividad**: Despliegue de 3 agentes de exploración simultáneos para mapear TODO el proyecto"
     },
