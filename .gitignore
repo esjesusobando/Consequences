@@ -191,7 +191,7 @@ Now/02_Videos_Finales/                  # LEGACY: Now/ dir no longer exists, kep
 01_Personal_Os/05_Archive/07_Repos_Gentleman/21_Sub_Agent_Statusline/.git
 01_Personal_Os/05_Archive/07_Repos_Gentleman/23_Tubemaster/.git
 
-# Embedded git repos (local copies, not submodules)
+# Embedded git repos (local copies, not submodules)  
 01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/
 01_Personal_Os/05_Archive/07_Repos_Gentleman/*/.git
 # Local Pi runtime state
