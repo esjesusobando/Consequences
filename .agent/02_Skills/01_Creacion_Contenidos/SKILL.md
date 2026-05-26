@@ -14,14 +14,14 @@ description: >
 
 ## Sub-áreas y Contenido
 
-| Sub-área | Descripción |
-|----------|-------------|
-| `01_Brand_Voice/` | Sistema de voz de marca |
-| `02_Content_Creation/` | Generación de contenido |
-| `03_Pptx_Generator/` | Presentaciones PPTX |
-| `06_Ai_Agents/` | Agentes AI para contenido |
-| `07_Content_Ideation/` | Ideación de contenido |
-| `08_Offer_And_Bio_Writer/` | Copys para ofertas y bio |
+| Sub-área                  | Descripción              |
+|--------------------------|-------------------------|
+| `01_Brand_Voice/`         | Sistema de voz de marca  |
+| `02_Content_Creation/`    | Generación de contenido  |
+| `03_Pptx_Generator/`      | Presentaciones PPTX      |
+| `06_Ai_Agents/`           | Agentes AI para contenido|
+| `07_Content_Ideation/`    | Ideación de contenido    |
+| `08_Offer_And_Bio_Writer/`| Copys para ofertas y bio |
 
 ## Workflows Relacionados
 

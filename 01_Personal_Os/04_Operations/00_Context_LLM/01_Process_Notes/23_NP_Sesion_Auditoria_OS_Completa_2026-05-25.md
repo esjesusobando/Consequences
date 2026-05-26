@@ -20,13 +20,13 @@ Auditar integralmente el PersonalOS Think_Different para:
 
 ### Fases Ejecutadas
 
-| Fase | Descripción | Método |
-|------|-------------|--------|
-| **1-2** | SDD Comprehensive Audit: docs, configs, paths | Delegación directa |
-| **Judgment Day** | Dual blind review con 2 jueces → síntesis → corrección → re-juicio | `judgment-day` skill |
-| **Exploración Estructural** | README, OS_DIRECTORY, árboles, gaps numeración | Sub-agente explorador |
-| **Exploración Skills** | Frontmatter YAML, duplicados, backup drift | Sub-agente explorador |
-| **Exploración Scripts** | Directorios duplicados, HUB_SOTA, config_paths | Sub-agente explorador |
+| Fase                       | Descripción                                                       | Método               |
+|---------------------------|------------------------------------------------------------------|---------------------|
+| **1-2**                    | SDD Comprehensive Audit: docs, configs, paths                     | Delegación directa   |
+| **Judgment Day**           | Dual blind review con 2 jueces → síntesis → corrección → re-juicio| `judgment-day` skill |
+| **Exploración Estructural**| README, OS_DIRECTORY, árboles, gaps numeración                    | Sub-agente explorador|
+| **Exploración Skills**     | Frontmatter YAML, duplicados, backup drift                        | Sub-agente explorador|
+| **Exploración Scripts**    | Directorios duplicados, HUB_SOTA, config_paths                    | Sub-agente explorador|
 
 ### Comandos Clave
 
@@ -47,42 +47,42 @@ Judgment Day
 
 ### 3.1 Estructurales (Documentación)
 
-| # | Hallazgo | Severidad | Acción |
-|---|----------|-----------|--------|
-| 1 | `README.md` tree omitía `05_Archive/` | ERROR | ✅ AGREGADO |
-| 2 | `OS_DIRECTORY.md` tree mostraba `05_Archive` antes que `04_Operations` | ERROR | ✅ CORREGIDO (swap) |
-| 3 | `00_EVOLUTION_LOG.md` no documentado en ningún árbol | WARNING | ✅ AGREGADO a README + OS_DIRECTORY |
-| 4 | `02_Playground/` gap: no existe `05_` | WARNING | 📌 DOCUMENTADO (sin crear dir) |
-| 5 | `refactor_revert_id.py` huérfano sin documentar | WARNING | ✅ AGREGADO a OS_DIRECTORY |
-| 6 | `excalidraw.log` en raíz del repo | LOW | ✅ .gitignore (fase 1-2) |
-| 7 | `OS_DIRECTORY.md` duplicado en `00_Winter_is_Coming/` | LOW | 📌 PRESERVADO (backup natural) |
+| #  | Hallazgo                                                              | Severidad  | Acción                            |
+|---|----------------------------------------------------------------------|-----------|----------------------------------|
+| 1  | `README.md` tree omitía `05_Archive/`                                 | ERROR      | ✅ AGREGADO                        |
+| 2  | `OS_DIRECTORY.md` tree mostraba `05_Archive` antes que `04_Operations`| ERROR      | ✅ CORREGIDO (swap)                |
+| 3  | `00_EVOLUTION_LOG.md` no documentado en ningún árbol                  | WARNING    | ✅ AGREGADO a README + OS_DIRECTORY|
+| 4  | `02_Playground/` gap: no existe `05_`                                 | WARNING    | 📌 DOCUMENTADO (sin crear dir)     |
+| 5  | `refactor_revert_id.py` huérfano sin documentar                       | WARNING    | ✅ AGREGADO a OS_DIRECTORY         |
+| 6  | `excalidraw.log` en raíz del repo                                     | LOW        | ✅ .gitignore (fase 1-2)           |
+| 7  | `OS_DIRECTORY.md` duplicado en `00_Winter_is_Coming/`                 | LOW        | 📌 PRESERVADO (backup natural)     |
 
 ### 3.2 Skills (394 total)
 
-| # | Hallazgo | Severidad | Acción |
-|---|----------|-----------|--------|
-| 8 | 0/394 skills tienen campo `trigger:` YAML | SUGGESTION | 📌 MEJORA FUTURA — no afecta funcionalidad |
-| 9 | ~30 skills duplicadas (migración incompleta: áreas 02/04 tienen skills que ya migraron a source) | WARNING | 📌 PRESERVADO — no se elimina |
-| 10 | 18 skills Engram solo en `.agent/02_Skills/02_Engram/` | INFO | 📌 PRESERVADO — backup natural del repo Engram |
-| 11 | `.opencode/skills/ui-ux-pro-max` huérfano (no linkeado al source tree) | WARNING | 📌 PRESERVADO — skill local |
+| #  | Hallazgo                                                                                        | Severidad  | Acción                                       |
+|---|------------------------------------------------------------------------------------------------|-----------|---------------------------------------------|
+| 8  | 0/394 skills tienen campo `trigger:` YAML                                                       | SUGGESTION | 📌 MEJORA FUTURA — no afecta funcionalidad    |
+| 9  | ~30 skills duplicadas (migración incompleta: áreas 02/04 tienen skills que ya migraron a source)| WARNING    | 📌 PRESERVADO — no se elimina                 |
+| 10 | 18 skills Engram solo en `.agent/02_Skills/02_Engram/`                                          | INFO       | 📌 PRESERVADO — backup natural del repo Engram|
+| 11 | `.opencode/skills/ui-ux-pro-max` huérfano (no linkeado al source tree)                          | WARNING    | 📌 PRESERVADO — skill local                   |
 
 ### 3.3 Scripts (284 total)
 
-| # | Hallazgo | Severidad | Acción |
-|---|----------|-----------|--------|
-| 12 | Directorios duplicados en `03_Scripts_Os/` (4 pares: AIPM, Validator, Data, General) | WARNING | 📌 PRESERVADO — inflación documentada |
-| 13 | `HUB_SOTA.py` v4.7 en raíz + v4.1 en `10_Legacy/` | LOW | 📌 PRESERVADO — versiones históricas |
-| 14 | `10_Legacy/` con ~85 scripts, mayoría versiones antiguas | INFO | 📌 PRESERVADO — archivo histórico |
-| 15 | `config_paths.py`: 0 referencias rotas verificadas | NONE | ✅ VERIFICADO |
-| 16 | `load_config()` duplicado en `config.py` + `base_engine.py` | LOW | 📌 DOCUMENTADO — módulos separados |
+| #  | Hallazgo                                                                            | Severidad  | Acción                              |
+|---|------------------------------------------------------------------------------------|-----------|------------------------------------|
+| 12 | Directorios duplicados en `03_Scripts_Os/` (4 pares: AIPM, Validator, Data, General)| WARNING    | 📌 PRESERVADO — inflación documentada|
+| 13 | `HUB_SOTA.py` v4.7 en raíz + v4.1 en `10_Legacy/`                                   | LOW        | 📌 PRESERVADO — versiones históricas |
+| 14 | `10_Legacy/` con ~85 scripts, mayoría versiones antiguas                            | INFO       | 📌 PRESERVADO — archivo histórico    |
+| 15 | `config_paths.py`: 0 referencias rotas verificadas                                  | NONE       | ✅ VERIFICADO                        |
+| 16 | `load_config()` duplicado en `config.py` + `base_engine.py`                         | LOW        | 📌 DOCUMENTADO — módulos separados   |
 
 ### 3.4 Referencias Cruzadas
 
-| # | Hallazgo | Severidad | Acción |
-|---|----------|-----------|--------|
-| 17 | Números 28/284/394/36/46 desactualizados en docs previo a JJDD | ERROR | ✅ CORREGIDO (7 archivos sync) |
-| 18 | `.agent/README.md` decía 23 scripts vs 31 reales | WARNING | 📌 DOCUMENTADO — backup no es SSOT |
-| 19 | Iron Man Gen workflow desactualizado en cuentas agent/HUB/MCP | ERROR | ✅ CORREGIDO (2 workflows sync) |
+| #  | Hallazgo                                                      | Severidad  | Acción                           |
+|---|--------------------------------------------------------------|-----------|---------------------------------|
+| 17 | Números 28/284/394/36/46 desactualizados en docs previo a JJDD| ERROR      | ✅ CORREGIDO (7 archivos sync)    |
+| 18 | `.agent/README.md` decía 23 scripts vs 31 reales              | WARNING    | 📌 DOCUMENTADO — backup no es SSOT|
+| 19 | Iron Man Gen workflow desactualizado en cuentas agent/HUB/MCP | ERROR      | ✅ CORREGIDO (2 workflows sync)   |
 
 ---
 
@@ -117,17 +117,17 @@ Judgment Day
 
 ## 5. Estado Final
 
-| Componente | Antes | Después |
-|-----------|-------|---------|
-| Árbol README.md | Faltaba 05_Archive, EVOLUTION_LOG | Completo + documentado |
-| OS_DIRECTORY.md orden | 05 antes de 04 | ✅ Secuencia correcta |
-| HUBs documentados | 152 (stale) | 28 (19+9) |
-| Scripts documentados | No especificado | 284 (283+1) |
-| Skills documentadas | 393+ (impreciso) | 394 exactas |
-| MCPs documentados | 6 (stale) | 36 |
-| Agentes documentados | 46/82 inconsistente | 46 source / 82 total |
-| config_paths.py | Referencias "rotas" sospechadas | ✅ Verificado: 0 rotas |
-| Archivos commiteados | — | 25+ archivos corregidos |
+| Componente           | Antes                            | Después                |
+|---------------------|---------------------------------|-----------------------|
+| Árbol README.md      | Faltaba 05_Archive, EVOLUTION_LOG| Completo + documentado |
+| OS_DIRECTORY.md orden| 05 antes de 04                   | ✅ Secuencia correcta   |
+| HUBs documentados    | 152 (stale)                      | 28 (19+9)              |
+| Scripts documentados | No especificado                  | 284 (283+1)            |
+| Skills documentadas  | 393+ (impreciso)                 | 394 exactas            |
+| MCPs documentados    | 6 (stale)                        | 36                     |
+| Agentes documentados | 46/82 inconsistente              | 46 source / 82 total   |
+| config_paths.py      | Referencias "rotas" sospechadas  | ✅ Verificado: 0 rotas  |
+| Archivos commiteados | —                                | 25+ archivos corregidos|
 
 ---
 

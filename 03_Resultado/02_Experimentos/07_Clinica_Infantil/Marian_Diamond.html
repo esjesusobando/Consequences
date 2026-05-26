@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    <title>U.E.P. Marian Diamond · Inscripciones 2026</title>
+    <meta name="description" content="Inscripciones abiertas 2026-2027 · U.E.P. Marian Diamond — Preescolar y Jardín de Infantes en Ciudad Ojeda">
+    <meta property="og:title" content="U.E.P. Marian Diamond · Inscripciones 2026">
+    <meta property="og:description" content="Reserva tu cupo para el año escolar 2026-2027. Preescolar · Jardín de Infantes. ¡Cada niño merece brillar!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://uepdiamondkids.com/">
+    <meta property="og:image" content="assets/bg-main.png">
+    <meta name="theme-color" content="#0A0A0A">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet"></noscript>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #9b7FC8;
+            --primary-hover: #8B6FB8;
+            --primary-glow: rgba(155, 127, 200, 0.4);
+            --secondary: #7EC8C8;
+            --secondary-hover: #6BB8B8;
+            --accent: #F5B8C8;
+            --accent-glow: rgba(245, 184, 200, 0.3);
+            --warm-yellow: #F5D890;
+            --warm-coral: #F5A090;
+            --negro: #0A0A0A;
+            --negro-soft: #111111;
+            --blanco: #F5F5F5;
+            --blanco-dim: rgba(245, 245, 245, 0.85);
+            --glass: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.12);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--negro);
+            color: var(--blanco);
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ========== PARTICLE CANVAS ========== */
+        #particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        #particles.visible {
+            opacity: 1;
+        }
+
+        /* ========== FIXED BACKGROUND ========== */
+        .bg-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .bg-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center 10%;
+            display: block;
+            background-color: #0A0A0A;
+        }
+
+        .bg-image.loaded {
+            transform: none;
+        }
+
+        .glow-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.2;
+            pointer-events: none;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .glow-orb-1 {
+            width: 350px;
+            height: 350px;
+            background: linear-gradient(135deg, #F5D890 0%, #F5B8C8 100%);
+            top: 5%;
+            left: -15%;
+        }
+
+        .glow-orb-2 {
+            width: 280px;
+            height: 280px;
+            background: linear-gradient(135deg, #9b7FC8 0%, #7EC8C8 100%);
+            top: 40%;
+            right: -10%;
+            animation-delay: -3s;
+        }
+
+        .glow-orb-3 {
+            width: 220px;
+            height: 220px;
+            background: linear-gradient(135deg, #F5A090 0%, #F5B8C8 100%);
+            bottom: 10%;
+            left: 25%;
+            animation-delay: -5s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(25px, -25px) scale(1.05); }
+            66% { transform: translate(-15px, 20px) scale(0.97); }
+        }
+
+        .bg-gradient {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 25%;
+            background: linear-gradient(
+                to top,
+                rgba(10, 10, 10, 0.7) 0%,
+                rgba(10, 10, 10, 0.2) 50%,
+                transparent 100%
+            );
+            pointer-events: none;
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.05);
+            pointer-events: none;
+        }
+
+        /* ========== PAGE (scrollable, glass panel) ========== */
+        .page {
+            margin-top: 85vh;
+            position: relative;
+            z-index: 1;
+            background: rgba(10, 10, 10, 0.35);
+            backdrop-filter: blur(28px) saturate(180%);
+            -webkit-backdrop-filter: blur(28px) saturate(180%);
+            border-radius: 2rem 2rem 0 0;
+            box-shadow: 0 -4px 60px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(245, 184, 200, 0.3) 20%, rgba(155, 127, 200, 0.4) 50%, rgba(126, 200, 200, 0.3) 80%, transparent);
+        }
+
+        .content {
+            padding: 3rem 1.5rem 5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.75rem;
+            max-width: 560px;
+            margin: 0 auto;
+        }
+
+        /* ========== BADGE ========== */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, var(--primary) 0%, #7EC8C8 100%);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 2rem;
+            font-size: 0.55rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            box-shadow: 0 4px 20px var(--primary-glow);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.15s;
+            width: fit-content;
+        }
+
+        .badge svg {
+            width: 12px;
+            height: 12px;
+            animation: sparkle 2s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+            50% { transform: scale(1.15) rotate(8deg); opacity: 0.8; }
+        }
+
+        /* ========== HEADLINE ========== */
+        .headline {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.3s;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(2.8rem, 13vw, 5.5rem);
+            font-weight: 400;
+            line-height: 0.9;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--blanco);
+            text-shadow: 0 4px 40px rgba(0, 0, 0, 0.7), 0 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 span {
+            display: block;
+            color: #11a094;
+            font-size: 0.6em;
+            letter-spacing: 0.15em;
+            margin-top: 0.2em;
+        }
+
+        .subtitle {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(0.8rem, 2.5vw, 1.1rem);
+            color: rgba(245, 245, 245, 0.7);
+            margin-top: 0.5rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ========== DIVIDER ========== */
+        .divider {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+            animation-delay: 0.4s;
+        }
+
+        .divider-line {
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(245, 184, 200, 0.2), transparent);
+        }
+
+        .divider-dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        /* ========== DESCRIPTION ========== */
+        .description {
+            text-align: center;
+            font-size: 0.9rem;
+            line-height: 1.75;
+            color: rgba(245, 245, 245, 0.95);
+            max-width: 460px;
+            margin: 0 auto;
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+            animation-delay: 0.45s;
+            text-shadow: 0 1px 12px rgba(0, 0, 0, 0.8);
+        }
+
+        .description strong {
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        /* ========== BENEFITS ========== */
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.875rem;
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+            animation-delay: 0.5s;
+        }
+
+        .benefit {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 1rem;
+            padding: 1rem;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .benefit:nth-child(1) { animation-delay: 0.55s; }
+        .benefit:nth-child(2) { animation-delay: 0.62s; }
+        .benefit:nth-child(3) { animation-delay: 0.69s; }
+        .benefit:nth-child(4) { animation-delay: 0.76s; }
+
+        .benefit:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(245, 184, 200, 0.2);
+            box-shadow: 0 8px 30px rgba(155, 127, 200, 0.15);
+        }
+
+        .benefit-icon {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .benefit-text {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: rgba(245, 245, 245, 0.85);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            line-height: 1.4;
+        }
+
+        /* ========== TRUST BADGES ========== */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+            animation-delay: 0.55s;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.6rem;
+            color: rgba(245, 245, 245, 0.6);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .trust-badge svg {
+            width: 14px;
+            height: 14px;
+            color: var(--secondary);
+        }
+
+        /* ========== INFO CARD ========== */
+        .info-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px) saturate(160%);
+            -webkit-backdrop-filter: blur(20px) saturate(160%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1.25rem;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.6s;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .info-row {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            transition: background 0.3s ease;
+        }
+
+        .info-row:hover {
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .info-row:not(:last-child) {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .info-icon {
+            width: 20px;
+            height: 20px;
+            color: var(--secondary);
+            flex-shrink: 0;
+            filter: drop-shadow(0 0 6px rgba(126, 200, 200, 0.4));
+        }
+
+        .info-content {
+            flex: 1;
+        }
+
+        .info-label {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 0.2rem;
+            font-weight: 600;
+        }
+
+        .info-value {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.95);
+            letter-spacing: -0.01em;
+        }
+
+        /* ========== BUTTONS (Apple HIG) ========== */
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation-delay: 0.7s;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            height: 44px;
+            padding: 0 16px;
+            border-radius: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 1;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+            border: none;
+            text-decoration: none;
+            letter-spacing: -0.01em;
+            position: relative;
+            overflow: hidden;
+            -webkit-tap-highlight-color: transparent;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            min-width: 140px;
+        }
+
+        .btn:nth-child(1) { animation-delay: 0.78s; }
+        .btn:nth-child(2) { animation-delay: 0.86s; }
+        .btn:nth-child(3) { animation-delay: 0.92s; }
+        .btn:nth-child(4) { animation-delay: 1s; }
+
+        .btn:hover {
+            transform: translateY(-1px);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn svg {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary) 0%, #7EB8B8 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(155, 127, 200, 0.35);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 10px 40px var(--primary-glow),
+                0 5px 15px rgba(0, 0, 0, 0.25);
+            transform: translateY(-3px);
+        }
+
+        .btn-primary:active {
+            transform: scale(0.97) translateY(1px);
+        }
+
+        .btn-primary .whatsapp-pulse {
+            position: absolute;
+            inset: -4px;
+            border-radius: 12px;
+            border: 2px solid var(--primary);
+            opacity: 0;
+            animation: pulse-ring 2.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse-ring {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.06); opacity: 0; }
+        }
+
+        .btn-tiktok {
+            background: #1a1a1a;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-tiktok:hover {
+            background: #2d2d2d;
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .btn-tiktok:active {
+            background: #111;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.08);
+            color: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.18);
+        }
+
+        .btn-secondary:active {
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            text-align: center;
+            font-size: 0.55rem;
+            color: var(--blanco-dim);
+            letter-spacing: 0.12em;
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+            animation-delay: 1s;
+            line-height: 1.8;
+        }
+
+        .footer .slogan {
+            display: block;
+            margin-top: 0.6rem;
+            font-style: italic;
+            color: var(--accent);
+            font-size: 0.65rem;
+            letter-spacing: 0.05em;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        
+        /* ========== RESPONSIVE ========== */
+        @media (min-width: 768px) {
+            .content {
+                padding: 4rem 2.5rem 6rem;
+                gap: 2rem;
+            }
+
+            .benefits {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1rem;
+            }
+
+            .benefit {
+                padding: 1.25rem 0.75rem;
+            }
+
+            .buttons {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.625rem;
+            }
+
+            .btn {
+                height: 46px;
+                padding: 0 18px;
+                font-size: 15px;
+            }
+
+            .info-card {
+                border-radius: 1.25rem;
+            }
+
+            .info-row {
+                padding: 1rem 1.25rem;
+                gap: 1rem;
+            }
+
+            .info-icon {
+                width: 20px;
+                height: 20px;
+            }
+
+            .info-value {
+                font-size: 0.95rem;
+            }
+
+            h1 {
+                font-size: clamp(3.5rem, 10vw, 6rem);
+            }
+
+            .scroll-hint {
+                bottom: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .bg-image {
+                object-position: center 40%;
+            }
+
+            .trust-badges {
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .content {
+                padding: 2rem 1rem 4rem;
+                gap: 1.5rem;
+            }
+
+            h1 {
+                font-size: clamp(2.5rem, 14vw, 3.5rem);
+            }
+
+            .btn {
+                height: 42px;
+                padding: 0 14px;
+                font-size: 14px;
+                min-width: 120px;
+                max-width: 180px;
+            }
+
+            .buttons {
+                gap: 0.625rem;
+            }
+        }
+
+        @supports (padding: env(safe-area-inset-top)) {
+            .content {
+                padding-left: calc(1.5rem + env(safe-area-inset-left));
+                padding-right: calc(1.5rem + env(safe-area-inset-right));
+                padding-top: calc(3rem + env(safe-area-inset-top));
+                padding-bottom: calc(5rem + env(safe-area-inset-bottom));
+            }
+
+            .scroll-hint {
+                bottom: calc(2rem + env(safe-area-inset-bottom));
+            }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="particles"></canvas>
+
+    <!-- FIXED BACKGROUND IMAGE -->
+    <div class="bg-fixed">
+        <div class="glow-orb glow-orb-1"></div>
+        <div class="glow-orb glow-orb-2"></div>
+        <div class="glow-orb glow-orb-3"></div>
+        <img src="assets/bg-main.png" alt="U.E.P. Marian Diamond" class="bg-image" id="heroImg" decoding="async" fetchpriority="high">
+        <div class="overlay"></div>
+        <div class="bg-gradient"></div>
+    </div>
+
+    <!-- SCROLLABLE PAGE -->
+    <div class="page">
+    <div class="content">
+        <div class="badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            Preescolar · Jardín de Infantes
+        </div>
+
+        <div class="headline">
+            <h1>U.E.P.<br><span>Marian Diamond</span></h1>
+            <p class="subtitle">Donde cada niño aprende a brillar</p>
+        </div>
+
+        <div class="divider">
+            <div class="divider-line"></div>
+            <div class="divider-dot"></div>
+            <div class="divider-line"></div>
+        </div>
+
+        <p class="description">
+            <strong>Construimos niños seguros, autónomos y felices.</strong><br>
+            Ambiente estimulante · Crianza integral · Metodología Montessori
+        </p>
+
+        <div class="benefits">
+            <div class="benefit">
+                <span class="benefit-icon">🌱</span>
+                <span class="benefit-text">Ambiente<br>Estimulante</span>
+            </div>
+            <div class="benefit">
+                <span class="benefit-icon">🧠</span>
+                <span class="benefit-text">Metodología<br>Montessori</span>
+            </div>
+            <div class="benefit">
+                <span class="benefit-icon">❤️</span>
+                <span class="benefit-text">Crianza<br>Integral</span>
+            </div>
+            <div class="benefit">
+                <span class="benefit-icon">✨</span>
+                <span class="benefit-text">Niños<br>Felices</span>
+            </div>
+        </div>
+
+        <div class="trust-badges">
+            <div class="trust-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                </svg>
+                +10 años
+            </div>
+            <div class="trust-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+                +500 alumni
+            </div>
+            <div class="trust-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/>
+                    <path d="M9 21V12h6v9"/>
+                </svg>
+                Ubicación céntrica
+            </div>
+        </div>
+
+        <div class="info-card">
+            <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z"/>
+                    <path d="M9 21V12h6v9"/>
+                </svg>
+                <div class="info-content">
+                    <div class="info-label">Ubicación</div>
+                    <div class="info-value">Calle Campo Elías, Ciudad Ojeda</div>
+                </div>
+            </div>
+            <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.22.95.45 1.89.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.92.25 1.86.48 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <div class="info-content">
+                    <div class="info-label">Teléfono</div>
+                    <div class="info-value">+58 0414 062 1217</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="https://wa.me/5804140621217?text=%F0%9F%91%8B%F0%9F%8F%BBHola!.%20te%20saluda%20la%20Familia%20Diamond%20kids%F0%9F%A7%A0.%20*Por%20favor%20me%20indica:*%0A*%20Nombre%20y%20apellido%20del%20representante.%0A*%20Nombre%20y%20apellido%20del%20ni%C3%B1o%20(a).%0A*%20Fecha%20de%20nacimiento.%0A%0A%E2%8F%B3En%20breve%20ser%C3%A1%20atendido!%20%F0%9F%AA%84%0A%0A%C2%A1%20%F0%9F%8C%88En%20Diamond%20kids%20creemos%20que%20todos%20los%20ni%C3%B1os%20...%20Merecen%20Brillar%E2%9C%A8!." target="_blank" class="btn btn-primary" id="whatsappBtn" aria-label="Reservar Cupo">
+                <span class="whatsapp-pulse"></span>
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                <span>Reserva tu Cupo</span>
+            </a>
+
+            <a href="https://www.tiktok.com/@diamond.kids80" target="_blank" class="btn btn-tiktok" id="tiktokBtn" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                </svg>
+                <span>TikTok</span>
+            </a>
+
+            <a href="https://maps.apple.com/?address=Calle%20Campo%20El%C3%ADas,%20Ciudad%20Ojeda,%20Zulia,%20Venezuela&ll=10.204611,-71.313629&q=Calle%20Campo%20El%C3%ADas&t=m" target="_blank" class="btn btn-secondary" id="mapsBtn" aria-label="Ubicación">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                </svg>
+                <span>Ubicación</span>
+            </a>
+
+            <a href="https://uepdiamondkids.com/" target="_blank" class="btn btn-secondary" id="webBtn" aria-label="Website">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+                </svg>
+                <span>Website</span>
+            </a>
+        </div>
+
+        <p class="footer">
+            U.E.P. Marian Diamond
+            <span class="slogan">¡Cada niño merece brillar!</span>
+        </p>
+    </div>
+    </div>
+
+    
+    <script>
+        const heroImg = document.getElementById('heroImg');
+        heroImg.addEventListener('load', () => {
+            heroImg.classList.add('loaded');
+        });
+
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let particlesStarted = false;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resizeCanvas, { passive: true });
+        resizeCanvas();
+
+        const kidsColors = ['#9b7FC8', '#7EC8C8', '#F5B8C8', '#F5D890', '#F5A090', '#A78BFA'];
+
+        class Particle {
+            constructor(x, y, burst = false) {
+                this.x = x || Math.random() * canvas.width;
+                this.y = y || Math.random() * canvas.height;
+                this.size = Math.random() * 3 + 1.5;
+                this.color = kidsColors[Math.floor(Math.random() * kidsColors.length)];
+                this.speedX = (Math.random() - 0.5) * 0.5;
+                this.speedY = (Math.random() - 0.5) * 0.5;
+                this.opacity = Math.random() * 0.25 + 0.1;
+                this.life = 1;
+                this.decay = burst ? 0.015 : 0.0012;
+                this.isBurst = burst;
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                this.life -= this.decay;
+                if (this.isBurst) {
+                    this.speedY += 0.06;
+                }
+            }
+
+            draw() {
+                ctx.save();
+                ctx.globalAlpha = this.opacity * this.life;
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.restore();
+            }
+        }
+
+        function createAmbientParticles() {
+            if (particlesStarted) return;
+            particlesStarted = true;
+            particles = [];
+            for (let i = 0; i < 35; i++) {
+                particles.push(new Particle());
+            }
+            animateParticles();
+            canvas.classList.add('visible');
+        }
+
+        function burstParticles(x, y) {
+            for (let i = 0; i < 25; i++) {
+                particles.push(new Particle(x, y, true));
+            }
+            if (!particlesStarted) {
+                createAmbientParticles();
+            }
+        }
+
+        function animateParticles() {
+            if (particles.length === 0) return;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles = particles.filter(p => p.life > 0);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                createAmbientParticles();
+                document.getElementById('scrollHint').classList.add('hidden');
+            }
+        }, { passive: true, once: true });
+
+        document.addEventListener('click', function initParticles() {
+            createAmbientParticles();
+            document.removeEventListener('click', initParticles);
+        }, { once: true });
+
+        requestAnimationFrame(() => {
+            setTimeout(createAmbientParticles, 2000);
+        });
+    </script>
+</body>
+</html>

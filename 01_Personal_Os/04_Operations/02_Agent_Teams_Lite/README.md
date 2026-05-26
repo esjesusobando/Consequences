@@ -20,12 +20,12 @@ Este directorio contiene el **legacy de Agent Teams Lite** y los **7 manifests d
 02_Agent_Teams_Lite/
 ├── 00_Manifest/                    # JARVIS 7 manifests (ACTIVO — fuente de verdad del OS)
 │   ├── 01_OS_Inventory.json        # Inventario OS
-│   ├── 02_MCP_Registry.yaml        # 36 MCPs
+│   ├── 02_MCP_Registry.yaml        # 7+38 MCPs
 │   ├── 03_Agent_Catalog.yaml       # 82 agents
 │   ├── 04_Skill_Index.json        # 352 skills
-│   ├── 05_HUB_Catalog.yaml        # 28 HUBs
+│   ├── 05_HUB_Catalog.yaml        # 21+2 HUBs
 │   ├── 06_Workflow_Graph.yaml     # 29 workflows
-│   └── 07_Hook_Registry.yaml        # 10 hooks
+│   └── 07_Hook_Registry.yaml        # 12 hooks
 ├── 00_SDD_Registry/                 # SDD skills registry (LEGACY — mantener como referencia)
 │   ├── sdd-init/
 │   ├── sdd-explore/
@@ -47,12 +47,12 @@ Este directorio contiene el **legacy de Agent Teams Lite** y los **7 manifests d
 | Manifest      | Total       | Drift| Nota       |
 |--------------|------------|-----|-----------|
 | OS Inventory  | 1 archivo   | 0 ✅  | Se mantiene|
-| MCP Registry  | 36 MCPs     | 0 ✅  | Se mantiene|
+| MCP Registry  | 7+38 MCPs   | 0 ✅  | Se mantiene|
 | Agent Catalog | 82 agents   | 0 ✅  | Se mantiene|
 | Skill Index   | 352 skills  | 0 ✅  | Se mantiene|
-| HUB Catalog   | 28 HUBs     | 0 ✅  | Se mantiene|
+| HUB Catalog   | 21+2 HUBs   | 0 ✅  | Se mantiene|
 | Workflow Graph| 29 workflows| 0 ✅  | Se mantiene|
-| Hook Registry | 10 hooks    | 0 ✅  | Se mantiene|
+| Hook Registry | 12 hooks    | 0 ✅  | Se mantiene|
 
 > Los manifests JARVIS SIGUEN ACTIVOS como fuente de verdad del PersonalOS.
 > Lo deprecado son las skills SDD de ATL, ahora reemplazadas por gentle-ai.

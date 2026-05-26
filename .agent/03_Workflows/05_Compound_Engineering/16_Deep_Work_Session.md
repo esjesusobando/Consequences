@@ -18,13 +18,13 @@ Basado en el principio de Cal Newport: el trabajo profundo produce resultados ex
 
 ## Duración recomendada
 
-| Tipo de trabajo              | Duración ideal   |
-|------------------------------|------------------|
-| Escritura / Documentación    | 45-60 min        |
-| Diseño UX/UI                 | 60-90 min        |
-| Programación / Scripts       | 90-120 min       |
-| Aprendizaje (Python/English) | 45-60 min        |
-| Review + Revisión            | 30-45 min        |
+| Tipo de trabajo                                               | Duración ideal                                    |
+|--------------------------------------------------------------|--------------------------------------------------|
+| Escritura / Documentación                                     | 45-60 min                                         |
+| Diseño UX/UI                                                  | 60-90 min                                         |
+| Programación / Scripts                                        | 90-120 min                                        |
+| Aprendizaje (Python/English)                                  | 45-60 min                                         |
+| Review + Revisión                                             | 30-45 min                                         |
 
 ## El protocolo (antes de empezar)
 
@@ -40,13 +40,13 @@ Ejemplo:
 ```
 Output: Tener el script 14_Deep_Work_Timer.py funcionando
 Done: El script corre sin errores y guarda el log
-Abrir: VS Code + Claude Code + 03_Scripts_Os/
+Abrir: VS Code + Claude Code + 01_Personal_Os/04_Operations/03_Scripts_Os/
 ```
 
 ### 2. Preparar el contexto (3 min)
 
 ```bash
-python 03_Scripts_Os/04_Ritual_Hub.py --standup  # Ver prioridades del día
+python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --standup  # Ver prioridades del día
 git status                                # Estado limpio antes de empezar
 ```
 
@@ -92,7 +92,7 @@ Al finalizar cada bloque, evaluar en 1 segundo:
 4. **Captura de aprendizajes**: ¿Qué aprendí hoy que vale la pena guardar?
 
 ```bash
-python 03_Scripts_Os/04_Ritual_Hub.py   # Si es fin de día
+python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py   # Si es fin de día
 ```
 
 ## Para sesiones de aprendizaje (Python / English)

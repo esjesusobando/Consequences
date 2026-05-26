@@ -1,0 +1,7 @@
+# Drilling Engine — Dependencies
+numpy>=1.26
+scipy>=1.12
+matplotlib>=3.8
+reportlab>=4.0
+pytest>=8.0
+pytest-cov>=4.0

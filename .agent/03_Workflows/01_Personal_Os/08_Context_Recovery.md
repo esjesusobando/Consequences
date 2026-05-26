@@ -23,7 +23,7 @@ Usar cuando el contexto de la sesión está degradado: respuestas incoherentes, 
 1. Ejecutar el script de reset:
 
    ```bash
-   python 03_Scripts_Os/04_Ritual_Hub.py --reset
+   python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --reset
    ```
 
 2. Iniciar nueva sesión ejecutando `01_Iron_Man_Gen` (Workflow Génesis)
@@ -33,13 +33,13 @@ Usar cuando el contexto de la sesión está degradado: respuestas incoherentes, 
 ### Opción B — Reset Manual (si el script falla)
 
 1. Abrir nueva conversación en Claude/OpenCode
-2. Ejecutar el Workflow Génesis (`02_Marvel/01_Iron_Man_Gen.md`) completo:
+2. Ejecutar el Workflow Génesis (`01_Iron_Man_Gen.md`) completo:
    - `01_Core/01_Rules/`
    - `04_Operations/00_Context_Memory/` (último archivo)
    - `04_Operations/03_Process_Notes/` (último archivo)
    - `01_Core/01_Inventario_Total.md`
    - **Engram**: `mem_search()` + `mem_context()`
-3. Leer `01_Personal_Os/11_AGENTS.md` — constitución del sistema
+3. Leer `AGENTS.md` — constitución del sistema
 4. Reportar contexto cargado antes de continuar
 
 ### Opción C — Reset Completo del Sistema
@@ -67,7 +67,7 @@ Think_Different/
 ├── 03_Tasks/             # Tareas activas
 ├── 04_Operations/        # Context_Memory, Process_Notes, Memory_Brain, Plans, Solutions
 ├── 05_Archive/           # Legacy
-├── 03_Scripts_Os/        # HUBs y scripts Python
+├── 01_Personal_Os/04_Operations/03_Scripts_Os/        # HUBs y scripts Python
 └── .agent/              # Skills, Workflows, Extensions
 ```
 

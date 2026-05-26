@@ -10,7 +10,7 @@
 
 ---
 
-## 🗺️ Catálogo Completo (36 MCPs)
+## 🗺️ Catálogo Completo (7+38 MCPs)
 
 ### 🔍 Search & Research
 
@@ -147,4 +147,4 @@ Para activar estos MCPs, agregar las credenciales reales:
 | ⚠️ Placeholder                          | 7                                   | Necesitan credenciales reales                                     |
 | ❌ Sin config                            | 2                                   | postgres, sqlite — requieren setup local                          |
 
-**Total: 36 MCPs configurados**
+**Total: 7+38 MCPs configurados**

@@ -1,13 +1,13 @@
 ---
 name: genesis
-description: Workflow de inicio de sesión — carga reglas, memoria, notas de proceso y estado del PersonalOS v4.7 Consequences.
+description: Workflow de inicio de sesión — carga reglas, memoria, notas de proceso y estado del PersonalOS v4.8 Consequences.
 argument-hint: "[opcional: tarea específica del día o contexto a priorizar]"
 ---
 
-# 🧬 Workflow: Génesis (Iron Man Boot) — v4.7 Consequences
+# 🧬 Workflow: Génesis (Iron Man Boot) — v4.8 Consequences
 
-> **Versión del sistema:** v4.7 Consequences — Production Ready
-> **Fecha:** 2026-05-23
+> **Versión del sistema:** v4.8 Consequences — Production Ready
+> **Fecha:** 2026-05-22
 > **Estado:** 🟢 PURE GREEN — Auditoría Integral Reconciliada
 
 Ejecutar al inicio de CADA sesión. Sin contexto completo NO hay respuesta.
@@ -30,6 +30,7 @@ Antes de responder, leer en este orden:
 ### 3. Estado Estratégico
    - Leer `00_Winter_is_Coming/GOALS.md` — Metas y prioridades
    - Leer `00_Winter_is_Coming/BACKLOG.md` — Bandeja de entrada
+   - Leer `01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/` — notas de proceso recientes
    - Leer `OS_DIRECTORY.md` (raíz) — Mapa JARVIS del sistema
 
 ### 4. Estado de Tareas
@@ -42,7 +43,7 @@ Antes de responder, leer en este orden:
 
 ---
 
-## 🚀 MAPA DEL SISTEMA (v4.7 Consequences)
+## 🚀 MAPA DEL SISTEMA (v4.8 Consequences)
 
 ```
 Think_Different/
@@ -50,13 +51,13 @@ Think_Different/
 ├── 01_Personal_Os/               # SISTEMA OPERATIVO (FUENTE DE VERDAD)
 │   ├── 01_Core/                  # MOTOR DEL OS
 │   │   ├── 00_Workflows_Os/     # 30 workflows (7 categorías)
-│   │   ├── 01_Rules/            # 12 reglas .mdc (00-11)
+│   │   ├── 01_Rules/            # 13 reglas .mdc (00-12)
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/       # 46 agent files (82 con SDD/CE = total sistema)
+│   │       ├── 01_Agents/       # 48 agentes (Dream + Specialists + Individuales + Growth)
 │   │       ├── 02_Skills/       # 394 skills (12 áreas funcionales)
-│   │       ├── 03_Mcp/          # Configs MCP (backup de .mcp.json)
+│   │       ├── 03_Mcp/          # Backup MCPs
 │   │       ├── 04_Integrations/ # Fireflies, Granola
-│   │       ├── 05_Hooks/        # 10 hooks (6 fases)
+│   │       ├── 05_Hooks/        # 12 hooks (6 fases)
 │   │       ├── 06_Plugins/      # Plugins OS
 │   │       ├── 07_Server/       # Engram server
 │   │       ├── 08_Evals/        # Evaluadores
@@ -67,26 +68,34 @@ Think_Different/
 │       ├── 00_Context_LLM/      # Memoria LLM (Context_Memory, Process_Notes)
 │       ├── 01_Auto_Improvement/ # Motor de auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/ # SDD + 7 Manifests JARVIS
-│       ├── 03_Scripts_Os/       # 28 HUBs + subdirectorios (numeración 00-57)
+│       ├── 03_Scripts_Os/       # 31 HUBs principales + subdirectorios
 │       ├── 04_Installer/        # Scripts de instalación
 │       ├── 05_Projects/         # Proyectos activos
 │       ├── 06_SOTA_Features/    # Features SOTA
-│       └── 07_Reports/          # Reportes consolidados
-└── 05_Archive/                  # Legado (Backup_Os, Repos_Reference, Legacy_Content, Backups_Audits)
+│       └── 07_Reports/          # Reportes consolidados (10_Reports eliminado en v4.7)
+├── 02_Playground/               # Zona de pruebas
+├── 03_Resultado/                # Outputs de proyectos
+├── .agent/                      # Backup estratégico (sync con 01_Core/)
+├── .atl/                        # SDD Registry + openspec/
+├── .claude/                     # Config Claude Code + rules
+├── .mcp.json                    # 7+38 MCPs activos
+├── AGENTS.md                    # GGA Pre-Commit entry
+├── CLAUDE.md                    # Config IAs (FUENTE)
+└── README.md                    # Documentación principal
 ```
 
 ---
 
 ## ⚡ RECURSOS DEL ORQUESTADOR
 
-| Recurso                        | Ubicación                                                                 | Para qué usarlo                          |
+| Recurso                        | Ubicación                                                                 | Para qué usarlo                           |
 |-------------------------------|--------------------------------------------------------------------------|------------------------------------------|
-| **Skills** (12 áreas, 394)     | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
-| **Reglas** (12 .mdc)           | `01_Personal_Os/01_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
-| **Agentes** (46 núcleo, 82 total sistema) | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
-| **HUBs** (28 scripts, 00-57)  | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema                    |
-| **MCPs** (36 Claude Code)      | `.mcp.json` (raíz)                                                        | Herramientas externas                     |
-| **Hooks** (10)                 | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                               | Automatizaciones pre/post tool            |
+| **Skills** (12 áreas, 394)    | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
+| **Reglas** (13 .mdc)           | `01_Personal_Os/01_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
+| **Agentes** (82)               | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
+| **HUBs** (21+2)                | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema                    |
+| **MCPs** (7+38)                | `.mcp.json` (raíz)                                                        | Herramientas externas                     |
+| **Hooks** (12)                 | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                               | Automatizaciones pre/post tool            |
 | **Memory**                     | Engram MCP                                                                | Contexto persistente entre sesiones       |
 | **GGA Code Review**            | `.agent/05_GGA/`                                                          | Code review automático                    |
 | **SDD Registry**               | `.atl/skill-registry.md`                                                  | Compact rules para sub-agentes            |
@@ -110,18 +119,6 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 
 # Sync .agent ↔ 01_Core
 python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
-
-# Optimización Minimax (modelo M2.7)
-python 01_Personal_Os/04_Operations/03_Scripts_Os/25_Minimax_Optimizer_Hub.py
-
-# Auditoría de skills (frontmatter YAML)
-python 01_Personal_Os/04_Operations/03_Scripts_Os/22_Validate_Skill_Frontmatter.py
-
-# Limpieza de paths legacy v2.x
-python 01_Personal_Os/04_Operations/03_Scripts_Os/21_Legacy_Path_Cleanup.py
-
-# Migración masiva de paths
-python 01_Personal_Os/04_Operations/03_Scripts_Os/24_mass_path_migration.py
 ```
 
 ---
@@ -136,15 +133,15 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/24_mass_path_migration.py
 
 ## 🎯 WORKFLOWS DISPONIBLES (7 categorías)
 
-| Categoría               | Path                            | Workflows principales                          |
-|------------------------|---------------------------------|-----------------------------------------------|
-| **Learning Always**     | `00_Learning_Always/`            | Continuous learning module                     |
-| **Personal OS**         | `01_Personal_Os/`                | Morning, Backlog, Content, Weekly, Rituales    |
-| **Marvel**              | `02_Marvel/`                     | 01_Iron_Man_Gen, 02_Spider_Brainstorm, 03_Professor_X_Plan, 04_Vision_Review, 05_Thor_Work, 06_Hulk_Compound, 07_AntMan_Lfg_Lite, 08_Doc_Strange_Lfg |
-| **Gentleman**           | `03_Gentleman/`                  | Frontend Premium, Redacción de Docs            |
-| **Hillary**             | `04_Hillary/`                    | Captura Rápida, Hillary Life OS                |
-| **Compound Engineering**| `05_Compound_Engineering/`       | Deep Work, Ship It, Harness, Multi-Agent       |
-| **YouTube Full Video**  | `06_Youtube_Full_Video/`         | Pipeline de producción de video                |
+| Categoría               | Path                             | Workflows principales                                                     |
+|------------------------|---------------------------------|--------------------------------------------------------------------------|
+| **Learning Always**     | `00_Learning_Always/`            | Continuous learning module                                                |
+| **Personal OS**         | `01_Personal_Os/`                | Morning, Backlog, Content, Weekly, Rituales                               |
+| **Marvel**              | `02_Marvel/`                     | Iron Man Gen, Spider, Professor X, Vision, Thor, Hulk, AntMan, Doc Strange|
+| **Gentleman**           | `03_Gentleman/`                  | Frontend Premium, Redacción de Docs                                       |
+| **Hillary**             | `04_Hillary/`                    | Captura Rápida, Hillary Life OS                                           |
+| **Compound Engineering**| `05_Compound_Engineering/`       | Deep Work, Ship It, Harness, Multi-Agent                                  |
+| **YouTube Full Video**  | `06_Youtube_Full_Video/`         | Pipeline de producción de video                                           |
 
 ---
 
@@ -180,25 +177,25 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 
 ## 🧠 SDD (Spec-Driven Development) — Comandos
 
-| Comando        | Fase                    | Propósito                        |
-|---------------|-------------------------|----------------------------------|
-| `/sdd-new`     | proposal → spec → design → tasks → apply → verify → archive | Cambio completo |
-| `/sdd-explore` | Investigación            | Explorar código/ideas             |
-| `/sdd-apply`   | Implementación           | Codificar según specs             |
-| `/sdd-verify`  | Validación               | Tests vs specs                    |
+| Comando        | Fase                                                       | Propósito                         |
+|---------------|-----------------------------------------------------------|----------------------------------|
+| `/sdd-new`     | proposal → spec → design → tasks → apply → verify → archive| Cambio completo                   |
+| `/sdd-explore` | Investigación                                              | Explorar código/ideas             |
+| `/sdd-apply`   | Implementación                                             | Codificar según specs             |
+| `/sdd-verify`  | Validación                                                 | Tests vs specs                    |
 
 ---
 
 ## 🔄 COMPOUND ENGINEERING — Comandos
 
-| Comando        | Propósito                          |
-|---------------|------------------------------------|
-| `/ce:ideate`   | Descubrir mejoras de alto impacto  |
-| `/ce:brainstorm` | Explorar requisitos              |
-| `/ce:plan`     | Plan de implementación detallado   |
-| `/ce:work`     | Ejecutar con calidad               |
-| `/ce:review`   | Code review multi-agente           |
-| `/ce:compound` | Documentar aprendizajes            |
+| Comando         | Propósito                           |
+|----------------|------------------------------------|
+| `/ce:ideate`    | Descubrir mejoras de alto impacto   |
+| `/ce:brainstorm`| Explorar requisitos                 |
+| `/ce:plan`      | Plan de implementación detallado    |
+| `/ce:work`      | Ejecutar con calidad                |
+| `/ce:review`    | Code review multi-agente            |
+| `/ce:compound`  | Documentar aprendizajes             |
 
 ---
 
@@ -214,5 +211,5 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 
 ---
 
-*Think Different PersonalOS v4.7 Consequences — Production Ready*
-*Actualizado: 2026-05-25 | 394 skills | 46 agents (82 total sistema) | 36 MCPs activos | 28 HUBs (numeración 00-57) | 12 rules*
+*Think Different PersonalOS v4.8 Consequences — Production Ready*
+*Actualizado: 2026-05-25 | 394 skills | 48 agents (82 total sistema) | 7+38 MCPs | 21+2 HUBs | 13 rules*

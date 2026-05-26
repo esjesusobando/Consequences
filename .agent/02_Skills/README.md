@@ -8,15 +8,15 @@
 
 ---
 
-## 📂 Estructura v4.7 — Áreas Funcionales
+## 📂 Estructura v4.7 — 12 Áreas Funcionales (394 SKILL.md)
 
 ```
 02_Skills/
-├── 00_Compound_Engineering/    ⭐ Core Engineering (CE)
-├── 00_System_Core/            ⭐ Stack Core
-├── 10_Skill_Auditor/          ⭐ Auditoría de skills
+├── 00_Compound_Engineering/    ⭐ Core Engineering (CE) — 63 skills
+├── 00_System_Core/             ⭐ Stack Core
+├── 10_Skill_Auditor/           ⭐ Auditoría de skills
 │
-├── 01_Creacion_Contenidos/    🎨 Contenido (22 items)
+├── 01_Creacion_Contenidos/    🎨 Contenido (38 items)
 │   ├── 01_Brand_Voice/
 │   ├── 02_Content_Creation/
 │   ├── 03_Pptx_Generator/
@@ -37,7 +37,7 @@
 │   ├── 21_Remotion_Best_Practices/ # Movido desde 09_Marketing/
 │   └── 22_Marketing_Scripts/       # Movido desde 09_Marketing/
 │
-├── 02_Diseno_Ui_Ux/          🎨 UI/UX Design
+├── 02_Diseno_Ui_Ux/          🎨 UI/UX Design (23 items)
 │   ├── 01_Product_Design/
 │   ├── 03_Taste_Skills/
 │   ├── 04_Diseno_Minimalista/
@@ -45,10 +45,10 @@
 │   ├── 06_Excalidraw_Flowchart/
 │   └── 14_UI_UX_Pro_Max/
 │
-├── 03_Video_Media/            🎥 Video & Media
+├── 03_Video_Media/            🎥 Video & Media (6 items)
 │   └── 01_Video_Intel/
 │
-├── 04_Automatizacion/         ⚙️ Automation (N8N, Firecrawl)
+├── 04_Automatizacion/         ⚙️ Automation (21 items)
 │   ├── 01_N8N_JS/
 │   ├── 02_N8N_Python/
 │   ├── 03_N8N_Expressions/
@@ -61,7 +61,7 @@
 │   ├── 10_GWS_Client/
 │   └── 12_N8N/
 │
-├── 05_Workflows/              🔄 Workflows & Orchestration
+├── 05_Workflows/              🔄 Workflows & Orchestration (33 items)
 │   ├── 01_Agent_Teams_Lite/
 │   ├── 02_Project_Manager/
 │   ├── 03_Product_Manager/
@@ -69,7 +69,7 @@
 │   ├── 05_Workflow_Orchestrator.md
 │   └── 06_LFG_Engine.md
 │
-├── 06_Tools/                  🛠️ Tools & Dev
+├── 06_Tools/                  🛠️ Tools & Dev (93 items)
 │   ├── 01_Skill_Creator/
 │   ├── 02_Skill_Template/
 │   ├── 03_Anthropic_Harness/
@@ -79,7 +79,7 @@
 │   ├── 07_Skill_Creator_Invictus/
 │   └── 08_Octopus/
 │
-├── 07_Personal_Os/            🌱 Personal OS
+├── 07_Personal_Os/            🌱 Personal OS (29 items)
 │   ├── 01_Life_OS/
 │   ├── 02_Personal_Os/
 │   ├── 03_Fantasticos/
@@ -88,13 +88,18 @@
 │   ├── 06_Marca/
 │   └── 07_Plantillas/
 │
-├── 08_Invictus_Web/           🌐 Invictus Web
+├── 08_Invictus_Web/           🌐 Invictus Web (14 items)
 │   ├── 01_Superpowers/
 │   ├── 02_Buscador_Skills/
 │   └── 03_Playwright/
 │
-├── 09_Claude_Ads/            📢 Ads & Promoted Content
-├── 10_Skill_Auditor/         🔍 Skill Auditor
+├── 09_Claude_Ads/             📢 Claude Ads (20 items)
+│
+├── 11_Doc_Processing/         📚 Docs
+├── 13_System_Master/          🏆 System Master
+├── 16_Silicon_Valley_Data_Analyst/ 📊 Analytics
+├── 17_SEO_SOTA_Master/       🔍 SEO
+├── 20_James_Cameron/          🎬 Video Production
 ├── 27_Qmd/                   💾 QMD Search
 ├── 28_Carousel_Master/       🎠 Carruseles
 │
@@ -107,29 +112,29 @@
 
 ## 🎯 Quick Reference
 
-| Qué necesitas                                         | Ve a                                               |
-|-------------------------------------------------------|----------------------------------------------------|
-| Core Engineering (CE)                                 | `00_Compound_Engineering/`                         |
-| Stack base del OS                                     | `00_System_Core/`                                  |
-| Contenido (Brand, YouTube)                            | `01_Creacion_Contenidos/`                          |
-| UI/UX Design                                          | `02_Diseno_Ui_Ux/`                                 |
-| Video & Media                                         | `03_Video_Media/`                                  |
-| Automatización (N8N, Firecrawl)                       | `04_Automatizacion/`                               |
-| Workflows (Agent Teams, PM)                           | `05_Workflows/`                                    |
-| Tools (Testing, DevOps)                               | `06_Tools/`                                        |
-| Personal OS (Hillary, Life OS)                        | `07_Personal_Os/`                                  |
-| Invictus Web                                          | `08_Invictus_Web/`                                 |
-| Claude Ads                                            | `09_Claude_Ads/`                                   |
-| Skill Auditor                                         | `10_Skill_Auditor/`                                |
+| Qué necesitas                                                  | Ve a                                                        |
+|---------------------------------------------------------------|------------------------------------------------------------|
+| Core Engineering (CE)                                          | `00_Compound_Engineering/`                                  |
+| Contenido (Brand, YouTube)                                     | `01_Creacion_Contenidos/`                                   |
+| UI/UX Design                                                   | `02_Diseno_Ui_Ux/`                                          |
+| Video & Media                                                  | `03_Video_Media/`                                           |
+| Automatización (N8N, Firecrawl)                                | `04_Automatizacion/`                                        |
+| Workflows (Agent Teams, PM)                                    | `05_Workflows/`                                             |
+| Tools (Testing, DevOps)                                        | `06_Tools/`                                                 |
+| Personal OS (Hillary, Life OS)                                 | `07_Personal_Os/`                                           |
+| Invictus Web                                                   | `08_Invictus_Web/`                                          |
+| Claude Ads                                                     | `09_Claude_Ads/`                                            |
 
 ---
 
 ## 📝 Changelog
 
-**2026-05-24:** Sincronización v4.7
-- ✅ Actualización de métricas: 394 skills, 12 áreas funcionales
-- ✅ Directorios corregidos: System_Core, Skill_Auditor (10_)
-- ✅ Consistentes con source de truth en 01_Core/
+**2026-05-19:** Auditoría Completa v4.1
+- ✅ Sincronizado con estructura real: 394 skills, 12 áreas funcionales
+- ✅ Añadida área `09_Claude_Ads/` (20 items)
+- ✅ Eliminada referencia a `00_Gcierr/` y `09_Legacy_Archive/` (no existen en disco)
+- ✅ Consistencia total entre README, OS_DIRECTORY y skill-registry
+- ✅ PURE GREEN STATE mantenido
 
 **2026-05-03:** Auditoría Completa v3.1
 - ✅ Actualización de métricas: 299 skills, 11 áreas funcionales

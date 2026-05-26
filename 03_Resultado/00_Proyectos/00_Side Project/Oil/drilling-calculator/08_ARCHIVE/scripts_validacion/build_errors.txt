@@ -1,0 +1,38 @@
+
+> drilling-calculator@0.0.0 build
+> tsc -b && vite build
+
+src/App.tsx(33,5): error TS6133: 'formationData' is declared but its value is never read.
+src/App.tsx(34,5): error TS6133: 'pumpData' is declared but its value is never read.
+src/App.tsx(35,5): error TS6133: 'setResults' is declared but its value is never read.
+src/App.tsx(36,5): error TS6133: 'setValidationResults' is declared but its value is never read.
+src/App.tsx(37,5): error TS6133: 'setAlerts' is declared but its value is never read.
+src/App.tsx(66,17): error TS2339: Property 'lastUpdate' does not exist on type 'DrillingResults'.
+src/App.tsx(69,15): error TS2339: Property 'lastUpdate' does not exist on type 'DrillingResults'.
+src/components/sections/BitConfig.tsx(59,14): error TS2304: Cannot find name 'results'.
+src/components/sections/BitConfig.tsx(114,20): error TS2304: Cannot find name 'results'.
+src/components/sections/JetroChat.tsx(2,21): error TS6133: 'User' is declared but its value is never read.
+src/components/sections/JetroChat.tsx(135,62): error TS2339: Property 'trueVerticalDepth' does not exist on type 'WellData'.
+src/components/sections/JetroChat.tsx(136,23): error TS2339: Property 'holeDiameter' does not exist on type 'WellData'.
+src/components/sections/JetroChat.tsx(139,121): error TS2339: Property 'fann600' does not exist on type 'MudData'.
+src/components/sections/JetroChat.tsx(139,148): error TS2339: Property 'fann300' does not exist on type 'MudData'.
+src/components/sections/JetroChat.tsx(143,102): error TS2339: Property 'ecd' does not exist on type 'DrillingResults'.
+src/components/visuals/DynamicTwinWindow.tsx(11,18): error TS6133: 'setSimGpm' is declared but its value is never read.
+src/components/visuals/GaugeChart.tsx(2,1): error TS6133: 'AlertCircle' is declared but its value is never read.
+src/engine/bit-intelligence.ts(6,1): error TS6192: All imports in import declaration are unused.
+src/engine/bit-intelligence.ts(82,46): error TS6133: 'impactForce' is declared but its value is never read.
+src/engine/circulation.ts(22,3): error TS6133: 'numberOfPumps' is declared but its value is never read.
+src/engine/hydraulics.ts(44,5): error TS2739: Type '{ annularVelocity: number; pipeVelocity: number; totalFlowArea: number; nozzleVelocity: number; pressureLossDP: number; pressureLossHWDP: number; pressureLossDC: number; pressureLossBit: number; ... 11 more ...; rheologyModelSelected: RheologyModel; }' is missing the following properties from type 'HydraulicsResult': reynoldsDP, reynoldsAnnular
+src/engine/hydraulics.ts(190,5): error TS2322: Type 'number | undefined' is not assignable to type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+src/engine/hydraulics.ts(191,5): error TS2322: Type 'number | undefined' is not assignable to type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+src/engine/orchestrator.ts(101,7): error TS2739: Type '{ pv: number; yp: number; n_pl: number; k_pl: number; n_hb: number; k_hb: number; tau0_hb: number; mu_eff: number; gel10s: number; gel10m: number; }' is missing the following properties from type 'RheologyResult': av, pvYpRatio, gelProgression
+src/engine/pressures.ts(41,9): error TS6133: 'dynamicOverbalance' is declared but its value is never read.
+src/engine/pump.ts(18,9): error TS6133: 'factor' is declared but its value is never read.
+src/engine/pump.ts(19,9): error TS6133: 'rodArea' is declared but its value is never read.
+src/engine/rheology.ts(72,9): error TS6133: 'gel_is_progressive' is declared but its value is never read.
+src/engine/rheology.ts(73,9): error TS6133: 'gel_strength_ratio' is declared but its value is never read.
+src/store/drilling-store.ts(149,14): error TS2304: Cannot find name 'DrillingSnapshot'.
+src/store/drilling-store.ts(308,9): error TS2304: Cannot find name 'pressures'.
+src/store/drilling-store.ts(309,9): error TS2304: Cannot find name 'hydraulics'.

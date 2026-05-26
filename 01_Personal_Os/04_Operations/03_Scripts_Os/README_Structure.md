@@ -97,7 +97,7 @@
 
 Los **152 scripts** reportados en el HUB_Catalog incluyen:
 
-1. **28 HUBs activos** en raíz (`00_` - `57_`)
+1. **21+2 HUBs activos** en raíz (`00_` - `57_`)
 2. **Backup scripts** en subdirectorios (`03_AIPM/`, `03_Validator/`, `05_AIPM/`, etc.) — estos son **copias de respaldo heredadas de v3.x**
 3. **80+ scripts legacy** en `10_Legacy/` — historial de versiones anteriores
 

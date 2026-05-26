@@ -21,12 +21,12 @@ Metodología de ejecución paralela donde múltiples "brazos" trabajan simultán
 
 ## Cuándo Usar
 
-| Scenario | Ejemplo |
-|----------|---------|
-| Múltiples tareas independientes | "Procesa estos 10 PDFs" |
-| Trabajo paralelo | "Descarga estos archivos" |
-| Análisis paralelo | "Audita estas 5 carpetas" |
-| Generación batch | "Crea versiones para 3 temas" |
+| Scenario                       | Ejemplo                      |
+|-------------------------------|-----------------------------|
+| Múltiples tareas independientes| "Procesa estos 10 PDFs"      |
+| Trabajo paralelo               | "Descarga estos archivos"    |
+| Análisis paralelo              | "Audita estas 5 carpetas"    |
+| Generación batch               | "Crea versiones para 3 temas"|
 
 ## Runbook
 
@@ -55,11 +55,11 @@ results = await task(tasks, mode="parallel")
 
 ## Comparación con otras Formaciones
 
-| Formación | Complejidad | Verificación | Docs | Memoria |
-|-----------|-------------|--------------|-------|---------|
-| **Octopus** | Baja | ❌ | ❌ | ❌ |
-| **4 Fantásticos** | Media | ✅ | ✅ | ✅ |
-| **Super Campeones** | Alta | ✅ | ✅ | ✅ |
+| Formación          | Complejidad  | Verificación  | Docs   | Memoria  |
+|-------------------|-------------|--------------|-------|---------|
+| **Octopus**        | Baja         | ❌             | ❌      | ❌        |
+| **4 Fantásticos**  | Media        | ✅             | ✅      | ✅        |
+| **Super Campeones**| Alta         | ✅             | ✅      | ✅        |
 
 ## Integración
 

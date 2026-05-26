@@ -15,16 +15,16 @@ Workflow de equipo multi-agente donde cada "héroe" tiene un rol específico y p
 
 ## Los 8 Héroes
 
-| Héroe | Workflow | Rol | Integración SDD |
-|--------|----------|-----|-----------------|
-| **Iron Man** | `01_Iron_Man_Gen.md` | Generación inicial de código | — |
-| **Spider-Man** | `02_Spider_Brainstorm.md` | Exploración e ideas | Brainstorm |
-| **Professor X** | `03_Professor_X_Plan.md` | Planificación detallada | Plan |
-| **Vision** | `04_Vision_Review.md` | Revisión de arquitectura | Review |
-| **Thor** | `05_Thor_Work.md` | Ejecución de trabajo | Work |
-| **Hulk** | `06_Hulk_Compound.md` | Compounding de conocimiento | Compound |
-| **Ant-Man** | `07_AntMan_Lfg_Lite.md` | Autonomous Lite | Auto-Execute |
-| **Dr. Strange** | `08_Doc_Strange_Lfg.md` | Documentación | Docs |
+| Héroe          | Workflow                 | Rol                         | Integración SDD  |
+|---------------|-------------------------|----------------------------|-----------------|
+| **Iron Man**   | `01_Iron_Man_Gen.md`     | Generación inicial de código| —                |
+| **Spider-Man** | `02_Spider_Brainstorm.md`| Exploración e ideas         | Brainstorm       |
+| **Professor X**| `03_Professor_X_Plan.md` | Planificación detallada     | Plan             |
+| **Vision**     | `04_Vision_Review.md`    | Revisión de arquitectura    | Review           |
+| **Thor**       | `05_Thor_Work.md`        | Ejecución de trabajo        | Work             |
+| **Hulk**       | `06_Hulk_Compound.md`    | Compounding de conocimiento | Compound         |
+| **Ant-Man**    | `07_AntMan_Lfg_Lite.md`  | Autonomous Lite             | Auto-Execute     |
+| **Dr. Strange**| `08_Doc_Strange_Lfg.md`  | Documentación               | Docs             |
 
 ## Pipeline de Avengers
 
@@ -132,13 +132,13 @@ argument-hint: "[feature idea or problem]"
 
 ## Integración Compound Engineering
 
-| Fase CE | Héroe |
-|---------|-------|
-| Ideate | Spider |
-| Plan | Professor X |
-| Work | Thor |
-| Review | Vision |
-| Compound | Hulk |
+| Fase CE  | Héroe      |
+|---------|-----------|
+| Ideate   | Spider     |
+| Plan     | Professor X|
+| Work     | Thor       |
+| Review   | Vision     |
+| Compound | Hulk       |
 
 ## Gotchas
 

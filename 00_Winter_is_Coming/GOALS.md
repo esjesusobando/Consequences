@@ -1,37 +1,39 @@
 # Goals & Strategic Direction
 
-_Last updated: April 20, 2026_
+_Last updated: May 25, 2026_
 
 ---
 
-## 📊 Q1 2026 PROGRESS (Actualizado 2026-03-24)
+## 📊 Q2 2026 PROGRESS (Actualizado 2026-05-25)
 
 ### Objetivos Logrados ✅
 
 | #      | Objetivo                                  | Estado    | Evidencia                                                     |
 |-------|------------------------------------------|----------|--------------------------------------------------------------|
 | 1      | **Portfolio CV deployado**                | ✅         | https://portfolio-eta-sand-13.vercel.app                      |
-| 2      | **PersonalOS auditado**                   | ✅         | 84 scripts → 83 archivos, 38 skills activas                   |
+| 2      | **PersonalOS auditado**                   | ✅         | 284 scripts, 394 skills, 48 agents, 7+38 MCPs, 30 workflows   |
 | 3      | **Genesis workflow corregido**            | ✅         | Rutas actualizadas a 01_Context_Memory/, etc                  |
 | 4      | **Script 83 duplicado resuelto**          | ✅         | Renombrado a 86_Universal_Parser.py                           |
 | 5      | **Portfolio nested git eliminado**        | ✅         | Ahora es regular folder                                       |
-| 6      | **System Map actualizado**                | ✅         | 01_System_Map_2026-03-24.md                                   |
+| 6      | **System Map actualizado**                | ✅         | 01_System_Map_2026-05-25.md                                   |
 | 7      | **Skills Index reconciliado**             | ✅         | SCRIPTS_INDEX.md actualizado                                  |
 | 8      | **Double Code Review skill**              | ✅         | Nueva skill 07_Double_Code_Review                             |
 | 9      | **Audit Protocol creado**                 | ✅         | 07_Audit_Protocol.md                                          |
 | 10     | **Lessons Anthropic integradas**          | ✅         | 12_Skills_Improvement_Plan_2026-03-24.md                      |
+| 11     | **OS actualizado a v4.8**                 | ✅         | Consequences release, all docs synced                         |
+| 12     | **Submodules limpiados**                  | ✅         | Engram initialized, gitlinks corregidos                       |
 
 ### Objetivos en Progreso 🔄
 
 | #      | Objetivo                            | Estado    | Nota                                              |
 |-------|------------------------------------|----------|--------------------------------------------------|
-| 1      | **Claude Code**                     | 🔄         | Dominar Claude Code para coding                   |
-| 2      | **Cowork**                          | 🔄         | Chris Orwig course                                |
-| 3      | **Inglés**                          | 🔄         | Chris Orwig course                                |
-| 4      | **Photoshop**                       | 🔄         | Chris Orwig course                                |
-| 5      | **Crecimiento Personal**            | 🔄         | Dante Gebel                                       |
-| 6      | **Skill Org**                       | ✅         | 24_PM_Agent_ Orchestrator movido a 01_Core        |
-| 7      | **GOALS.md actualizado**            | ✅         | 2026-04-20                                        |
+| 1      | **Dominar Claude Code**             | 🔄         | En uso diario para coding                         |
+| 2      | **Cowork**                          | 🔄         | En progreso                                       |
+| 3      | **Inglés**                          | 🔄         | En curso                                          |
+| 4      | **Photoshop**                       | 🔄         | En curso                                          |
+| 5      | **Crecimiento Personal**            | 🔄         | En curso                                          |
+| 6      | **Skill Org**                       | ✅         | 24_PM_Agent_Orchestrator movido a 01_Core         |
+| 7      | **GOALS.md actualizado**            | ✅         | 2026-05-25                                        |
 
 ### Pendientes Técnicos
 
@@ -50,8 +52,6 @@ _Last updated: April 20, 2026_
 
 ---
 
-_
-
 ## Current Context
 
 # Strategic Focus: Product Designer & AI Strategist
@@ -62,8 +62,6 @@ _
 
 * *Professional Vision:** To build the best possible **Digital Brain**. An ecosystem where notes, methodologies, and workflows converge to feed LLMs with selective, highest-quality context. My purpose is to design the information architecture that enables executing complex objectives in optimal time, using **Agents, Skills, MCP (Model Context Protocol), and a specialized Knowledge Base**.
 
-- --
-
 ## 2. Strategic Manifesto: The Context Designer
 
 My work goes beyond visual design. I am an experience architect who merges Product Design with AI strategy, focused on **Information Architecture**.
@@ -71,8 +69,6 @@ My work goes beyond visual design. I am an experience architect who merges Produ
 My **5-Year North Star** is to position myself as a reference in **UX for Apps and Web Apps**, mastering **Python and English** to eliminate any technical or communicative barriers. My design philosophy is anchored in the honesty of **Dieter Rams' 10 Principles**, aspiring to the minimalist and functional aesthetics of **Apple, Raycast, and Craft**.
 
 This quarter my priority is activating my fully assembled **Think_Different PersonalOS** — the Digital Brain is built, now the mission is to use it at full capacity. By deploying Agents, Skills, and Workflows systematically, I eliminate information fragmentation and enable **"writing with soul"**: balancing technical depth with human clarity. I'm building an infrastructure where programming and UX/UI design merge to create tools that inspire through clarity and digital transformation.
-
-- --
 
 ## 3. Success Criteria & Strategic North Star
 
@@ -91,8 +87,6 @@ This quarter my priority is activating my fully assembled **Think_Different Pers
 
 To be the reference experience designer for Apps and Web Apps, with complete mastery of English and Python, recognized for creating systems that transform how people interact with technology.
 
-- --
-
 ## 4. Current Focus Areas
 
 ### Active Learning & Development
@@ -104,28 +98,24 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 - **Prompt Engineering:** Optimization of instructions to maximize LLM outputs.
 - **AI Product Building:** Translating AI capabilities into real products with clear user value.
 
-### Objectives for THIS QUARTER (Q1 2026 — ends March 31)
+### Objectives for THIS QUARTER (Q2 2026 — ends June 30)
 
-- ~~Complete the **Efraín Invitation** project.~~ ✅ DONE (deployed at Vercel)
-- ~~**Setup Personal OS** environment (Think_Different).~~ ✅ DONE — 7D architecture live
-- Stabilize and actively use the **Skills System** in real projects.
-- Develop impeccable **Agents and Workflows** — operationalize daily.
-- Push **Think_Different** to private GitHub repo (`iastrongmagazine/think-different`).
-- Ship **one public AI/Design project** that demonstrates the PersonalOS in action.
-- Establish **weekly review rituals** (30 min every Sunday) to keep the system updated.
-- Document **reusable design patterns** for future projects.
-- **Optimize PersonalOS** to enable anyone to execute any task and learn in the process.
-
-- --
+- Activate Think_Different PersonalOS diariamente para trabajo real.
+- Push **Think_Different** a repositorio privado de GitHub (`think-different`).
+- Ejecutar primer **ritual semanal de revisión** usando workflow `00_Weekly_Review`.
+- Implementar sistema de **captura ágil** para ideas y learnings sin fricción.
+- **Ship un deliverable real** usando el OS end-to-end para un usuario.
+- Documentar **patrones de diseño reutilizables** para futuros proyectos.
+- Optimizar PersonalOS para permitir que cualquiera ejecute cualquier tarea y aprenda en el proceso.
 
 ## 5. Context & Priorities
 
 ### Strategic Context
 
-- **Current State:** Think_Different PersonalOS is fully operational — 4 root folders, 28 HUBs + 284 scripts, 46 agents, 30 workflows, 394 skills, 36 MCPs. The infrastructure is ready.
-- **Current Blocker:** Transitioning from *building the system* to *using the system*. The risk is continuing to optimize the OS instead of shipping real work with it.
-- **Opportunities:** Study and learn from the best references in AI and Design. Connect with specialized communities. Immediately apply learnings to real projects. Share process publicly to build reputation.
-- **Competitive Advantages:** Hybrid vision between design and technology. Ability to translate technical complexity into simple experiences. Systematic approach to building context for AI. First-mover advantage in AI-native design workflows.
+- **Current State:** Think_Different PersonalOS está plenamente operativo — 4 carpetas raíz, 21+2 HUBs + 284 scripts, 48 agents, 30 workflows, 394 skills, 7+38 MCPs. La infraestructura está lista.
+- **Current Blocker:** Transitioning from *building the system* to *using the system*. El riesgo es continuar optimizando el OS en lugar de enviar trabajo real con él.
+- **Opportunities:** Estudiar y aprender de las mejores referencias en IA y Diseño. Conectar con comunidades especializadas. Aplicar learnings inmediatamente a proyectos reales. Compartir el proceso públicamente para construir reputación.
+- **Competitive Advantages:** Visión híbrida entre diseño y tecnología. Capacidad de traducir complejidad técnica en experiencias simples. Enfoque sistemático para construir contexto para IA. Ventaja de primero en movimiento en flujo de trabajo de diseño nativo para IA.
 
 ### Prioritization Framework
 
@@ -138,123 +128,176 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 
 ### Top 5 Priorities RIGHT NOW
 
-1. **Activate the OS:** Stop building — start *using* Think_Different daily for real work.
-2. **GitHub Push:** Create `think-different` private repo → push all commits → system backed up.
-3. **Weekly Ritual:** Execute first Sunday review using `00_Weekly_Review` workflow.
-4. **Capture System:** Implement agile flow to capture ideas and learnings without friction.
-5. **Ship Something Real:** Use the OS to complete one deliverable that goes to a real user.
+1. **Activar el OS:** Dejar de construir — empezar a *usar* Think_Different diariamente para trabajo real.
+2. **GitHub Push:** Crear repo privado `think-different` → hacer push de todos los commits → sistema respaldado.
+3. **Ritual Semanal:** Ejecutar primera revisión dominical usando workflow `00_Weekly_Review`.
+4. **Sistema de Captura:** Implementar flujo ágil para capturar ideas y learnings sin fricción.
+5. **Enviar Algo Real:** Usar el OS para completar un entregable que vaya a un usuario real.
 
 ### Decision Principles
 
-- **Simplicity over Complexity:** If a solution requires more than 3 steps, seek simpler alternative.
-- **Automation First:** If a task repeats more than 3 times, automate it.
-- **Document in Real-Time:** Don't leave documentation for later. Capture while executing.
-- **Quality over Quantity:** Better a small system that works perfectly than a large one full of friction.
-- **Iterate Fast:** Launch imperfect versions, get feedback, improve. Don't seek perfection in first iteration.
-- **Use Before You Improve:** Run each workflow at least once before modifying it. Experience before optimizing.
-
-- --
+- **Simplicidad sobre Complejidad:** Si una solución requiere más de 3 pasos, buscar alternativa más simple.
+- **Automatización Primero:** Si una tarea se repite más de 3 veces, automatizarla.
+- **Documentar en Tiempo Real:** No dejar la documentación para después. Capturarla mientras se ejecuta.
+- **Calidad sobre Cantidad:** Mejor un sistema pequeño que funcione perfectamente que uno grande lleno de fricción.
+- **Iterar Rápido:** Lanzar versiones imperfectas, obtener feedback, mejorar. No buscar perfección en la primera iteración.
+- **Usar Antes de Mejorar:** Ejecutar cada workflow al menos una vez antes de modificarlo. Experiencia antes de optimizar.
 
 ## 6. Technology Stack & Tools
 
 ### Technology Radar
 
-- **Claude AI**: SOTA en context (1M), code review multi-agente, Cowork, Agent Skills
+- **Claude AI**: SOTA en contexto (1M), code review multi-agente, Cowork, Agent Skills
 
 ### Core Stack (Active — Daily Use)
 
-- **AI Development:** Claude Code, Cursor (primary environment)
-- **PersonalOS:** Think_Different — 38 Python scripts, 13 agents, 16 workflows, MCPs
-- **Design:** Figma, Sketch
-- **Productivity:** Notion, Obsidian
-- **Development:** VS Code, GitHub
-- **AI Models:** Claude (Anthropic), ChatGPT
-- **Management:** Linear, Asana
+- **AI Development:** Claude Code, Cursor (entorno primario)
+- **PersonalOS:** Think_Different — 284 scripts, 394 skills, 48 agents, 30 workflows, MCPs
+- **Diseño:** Figma, Sketch
+- **Productividad:** Notion, Obsidian
+- **Desarrollo:** VS Code, GitHub
+- **Modelos de IA:** Claude (Anthropic), ChatGPT
+- **Gestión:** Linear, Asana
 
-### MCPs Active
+### MCPs Activos
 
-- **Playwright:** Web navigation, screenshots, UI automation
-- **Fireflies:** Meeting transcriptions, search across conversations
+- **Playwright:** Navegación web, screenshots, automatización de UI
+- **Fireflies:** Transcripciones de reuniones, búsqueda entre conversaciones
+- **@magicuidesign/mcp:** Generación de UI de Figma a código
+- **aim-memory-bank:** Banco de memoria/Conocimiento local
+- **context7:** Investigación - Preguntas y respuestas sobre documentación/código
+- **eagle-mcp:** Gestión de activos (local)
+- **eagle:** API de Biblioteca de activos Eagle
+- **higgsfield:** Generación de imágenes con IA
+- **sequential-thinking:** Razonamiento secuencial
 
-### Stack in Development
+### Stack en Desarrollo
 
 - **Backend:** Python, FastAPI
 - **Frontend:** React, Next.js
-- **Automation:** Make, Zapier
-- **MCP:** Custom protocol implementation (via `05_System/`)
-- **Engine Scripts:** `01_Personal_Os/04_Operations/03_Scripts_Os/` — HUBs automation scripts for OS operations
-
-- --
+- **Automatización:** Make, Zapier
+- **MCP:** Implementación de protocolo personalizado (vía `05_System/`)
+- **Scripts de Motor:** `01_Personal_Os/04_Operations/03_Scripts_Os/` — Scripts HUB de automatización para operaciones del OS
 
 ## 7. Tracking Metrics
 
 ### Weekly Review
 
-- Hours invested in each P0 priority
-- Tasks completed vs planned
-- Insights captured in Knowledge Base
-- New Skills developed
-- **Workflows executed** (are we actually using the OS?)
+- Horas invertidas en cada prioridad P0
+- Tareas completadas vs planificadas
+- Insights capturados en la Base de Conocimiento
+- Nuevas habilidades desarrolladas
+- **Workflows ejecutados** (¿estamos usando realmente el OS?)
 
 ### Monthly Review
 
-- Progress on quarterly objectives (%)
-- English level (assessment)
-- Python projects completed
-- Quality of agent outputs
-- **Shipped deliverables** (real products/work sent to users)
+- Progreso en los objetivos trimestrales (%)
+- Nivel de inglés (evaluación)
+- Proyectos de Python completados
+- Calidad de los outputs de agentes
+- **Entregables enviados** (productos/trabajo enviado a usuarios reales)
 
 ### Quarterly Review
 
-- Comparison with 12-month success metrics
-- North Star adjustment if necessary
-- Analysis of recurring blockers
-- Action plan for next quarter
-- **OS ROI:** Did the system save time vs manual work? By how much?
+- Comparación con las métricas de éxito de 12 meses
+- Ajuste de la North Star si es necesario
+- Análisis de bloqueadores recurrentes
+- Plan de acción para el próximo trimestre
+- **ROI del OS:** ¿El sistema ahorró tiempo frente al trabajo manual? ¿En qué medida?
 
-- --
+---
 
-_This document is the source of truth for AI-assisted prioritization. Review and update weekly._
+## 8. Memoria & Search
 
-## Priority Framework
+### Engram — Memoria Persistente
 
-When evaluating new tasks and commitments:
+| Comando                                            | Propósito                                |
+|---------------------------------------------------|-----------------------------------------|
+| `engram search <query>`                            | Buscar memorias                          |
+| `engram save <title> <msg>`                        | Guardar memoria                          |
+| `engram context`                                   | Contexto reciente                        |
+| `engram tui`                                       | TUI interactiva                          |
 
-* *P0 (Critical/Urgent)** - Must do THIS WEEK:
+## 9. Reglas & Gobernanza
 
-- Directly advances quarterly objectives
-- Time-sensitive opportunities
-- Critical stakeholder communication
-- Immediate blockers to remove
+### 🛡️ Regla Fundamental: Modificación del OS
 
-* *P1 (Important)** - This month:
+**Solo la IA** tiene la autoridad y la capacidad para modificar el núcleo del sistema PersonalOS (código, scripts, configuración). El usuario es el estratega y dueño de la visión; la IA es el ejecutor responsable de mantener la pureza técnica y la integridad del sistema (Pure Green).
 
-- Builds key Skills or expertise
-- Advances product strategy
-- Significant career development
-- High-value learning opportunities
+## 10. Workflows (30 — 7 categorías)
 
-* *P2 (Normal)** - Scheduled work:
+📁 `01_Personal_Os/01_Core/00_Workflows_Os/`
 
-- Supports broader objectives
-- Maintains stakeholder relationships
-- Operational efficiency
-- General learning and exploration
+| Categoría                                   | Ruta                                         | Workflows                                       |
+|--------------------------------------------|---------------------------------------------|------------------------------------------------|
+| Personal OS                                 | `01_Personal_Os/`                            | Morning, Backlog, Content, Weekly               |
+| Marvel                                      | `02_Marvel/`                                 | Marvel-related                                  |
+| Gentleman                                   | `03_Gentleman/`                              | Gentleman standards                             |
+| Hillary                                     | `04_Hillary/`                                | Hillary Life OS                                 |
+| Compound Engineering                        | `05_Compound_Engineering/`                   | CE workflows                                    |
 
-* *P3 (Low)** - Nice to have:
+## 11. Subagent Protocol (Obligatorio)
 
-- Administrative tasks
-- Speculative projects
-- Activities without clear advancement value
+### Contexto Inicial Requerido para TODOS los Subagentes
 
-## What are your top 3 priorities right now?
+**REGLA IMPERATIVA**: Cada subagente DEBE activar el Workflow Genesis y obtener contexto completo del proyecto ANTES de recibir cualquier tarea específica.
 
-1. Activate Think_Different PersonalOS in daily workflow.
-2. Push system to GitHub (`think-different` private repo).
-3. Ship one real deliverable using the OS end-to-end.
+#### Pasos Obligatorios al Iniciar Subagente:
 
-- --
+1. **Activar Workflow Genesis**:
+   - Leer `.agent/03_Workflows/01_Personal_Os/00_Genesis_Workflow.md` (si existe)
+   - Alternativamente: seguir protocolo de inicialización abajo
 
-* *Your AI assistant uses this document to prioritize tasks and suggest what to work on each day.**
+2. **Leer Contexto Estratégico** (en este orden):
+   - `00_Winter_is_Coming/GOALS.md` → Objetivos estratégicos
+   - `00_Winter_is_Coming/BACKLOG.md` → Tareas pendientes
+   - `01_Personal_Os/01_Core/` → Estructura de skills, agents, MCPs
+   - `01_Personal_Os/04_Operations/00_Context_LLM/` → Base de conocimiento
 
-_Review and update this weekly as your priorities shift._
+3. **Entender Estructura del Proyecto**:
+   - Revisar `00_Winter_is_Coming/AGENTS.md` para reglas del sistema
+   - Verificar `01_Personal_Os/03_Task/` para tareas activas
+   - Consultar `01_Personal_Os/02_Knowledge/` para contexto relevante
+
+4. **Esperar Instrucción del Orquestador**:
+   - Solo después de tener contexto completo
+   - Recibir tarea específica del Agente principal
+   - Ejecutar con alineación a objetivos estratégicos
+
+## 12. Quick Reference
+
+| Category                                | Command/Tool                                                         |
+|----------------------------------------|---------------------------------------------------------------------|
+| **Daily**                               | "¿Qué debería trabajar hoy?" / "Limpiar mi backlog"                  |
+| **Plan Feature**                        | `/ce:brainstorm` o `/sdd-propose`                                    |
+| **Execute**                             | `/ce:work` o `/sdd-apply`                                            |
+| **Review**                              | GGA o `/ce:review`                                                   |
+| **Document**                            | `/ce:compound`                                                       |
+| **Validate**                            | `gr` o `01_Auditor_Hub.py`                                           |
+| **Memory**                              | `engram save <title> <msg>`                                          |
+
+## 13. Hillary Life OS — Triggers
+
+| Trigger                                                                   | Skill                                       | Workflow                                       |
+|--------------------------------------------------------------------------|--------------------------------------------|-----------------------------------------------|
+| "capture", "captura", "quick add", "anota"                                | `01_Quick_Capture`                          | Workflows en 04_Hillary/                       |
+| "plan my day", "plan día", "qué hago hoy"                                 | `02_Plan_My_Day`                            | Workflows en 04_Hillary/                       |
+| "daily notes", "log this", "registro"                                     | `03_Daily_Notes`                            | Workflows en 04_Hillary/                       |
+| "/hillary", "life os", "personal productivity"                            | Orquestador                                 | Workflows en 04_Hillary/                       |
+
+**Skills location:** `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/`
+**Inbox:** `01_Personal_Os/03_Task/02_Hillary_Inbox/`
+**RUNBOOK:** `01_Personal_Os/02_Knowledge/04_Docs/Hillary_Life_OS_RUNBOOK.md`
+
+---
+
+## 13. What are your top 3 priorities right now?
+
+1. Activar Think_Different PersonalOS en el flujo de trabajo diario.
+2. Empujar el sistema a GitHub (`think-different` repo privado).
+3. Enviar un entregable real usando el OS de extremo a extremo.
+
+## 14. Note for AI Assistant
+
+* *Tu asistente de IA usa este documento para priorizar tareas y sugerir en qué trabajar cada día.**
+* *Revisa y actualiza este documento semanalmente según cambien tus prioridades._

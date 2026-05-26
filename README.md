@@ -187,15 +187,15 @@ Think_Different/                           # RAÍZ
 
 ### MCPs (7 root + 38 backup)
 
-| Servidor                        | Propósito                            | Fuente               |
+| Servidor                        | Propósito                             | Fuente                |
 |--------------------------------|--------------------------------------|----------------------|
-| @magicuidesign/mcp             | UI design generation                  | root .mcp.json       |
-| aim-memory-bank                | AI memory bank                        | root .mcp.json       |
-| context7                       | Context-aware code search             | root .mcp.json       |
-| eagle-mcp                      | Eagle library MCP                     | root .mcp.json       |
-| eagle                          | Eagle library API                     | root .mcp.json       |
-| higgsfield                     | Higgsfield AI                         | root .mcp.json       |
-| sequential-thinking            | Sequential reasoning                  | root .mcp.json       |
+| @magicuidesign/mcp              | UI design generation                  | root .mcp.json        |
+| aim-memory-bank                 | AI memory bank                        | root .mcp.json        |
+| context7                        | Context-aware code search             | root .mcp.json        |
+| eagle-mcp                       | Eagle library MCP                     | root .mcp.json        |
+| eagle                           | Eagle library API                     | root .mcp.json        |
+| higgsfield                      | Higgsfield AI                         | root .mcp.json        |
+| sequential-thinking             | Sequential reasoning                  | root .mcp.json        |
 
 > Backup completo (38 servidores) en `01_Personal_Os/01_Core/02_Tools/03_Mcp/00_Config_Mcp/mcp_backup.json`
 

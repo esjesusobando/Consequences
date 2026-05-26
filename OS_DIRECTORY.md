@@ -12,9 +12,9 @@
 | Every CE                              | v3.8.4 (local repo) ✅                                                      | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.30.6                                                                    | ✅ AVAILABLE                                    |
 | Skills                                | **394** (12 áreas funcionales)                                             | ✅ VERIFIED — 0 sin frontmatter                 |
-| Agentes                               | **48** (source) / 82 (con SDD/CE)                                          | ✅ SYNCED                                      |
+| Agentes                               | **48** (source) / 82 (con SDD/CE)                                          | ✅ SYNCED                                       |
 | HUBs                                  | **21+2** (19 Hub.py + HUB_SOTA + HUB_CATALOG)                              | ✅ VERIFIED                                     |
-| Scripts totales                       | **284** (283 .py + 1 .js)                                                 | ✅ DOCUMENTED                                   |
+| Scripts totales                       | **284** (283 .py + 1 .js)                                                  | ✅ DOCUMENTED                                   |
 | Workflows                             | **30** (7 categorías en 00_Workflows_Os)                                   | ✅ ACTIVE                                       |
 | Hooks                                 | **12** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk)| ✅ ACTIVE                                       |
 | Rules                                 | **13 (.mdc)** en 01_Rules                                                  | ✅ DEFINED                                      |
@@ -318,36 +318,36 @@ Al iniciar sesión O al recibir cualquier instrucción, ejecutar `.agent/03_Work
 Los siguientes hallsazgos fueron identificados durante la auditoría OS integral del 2026-05-25 y **documentados sin eliminar información**:
 
 ### Estructurales
-| # | Hallazgo | Estado |
-|---|---------|--------|
-| 1 | `05_Archive/` faltaba en árbol README.md | ✅ CORREGIDO |
-| 2 | `05_Archive/` antes que `04_Operations/` en OS_DIRECTORY.md | ✅ CORREGIDO |
-| 3 | `00_EVOLUTION_LOG.md` no documentado en ningún árbol | ✅ CORREGIDO |
-| 4 | Gap de numeración en `02_Playground/`: no existe `05_` | 📌 DOCUMENTADO |
-| 5 | `refactor_revert_id.py` huérfano (sin documentar en HUBs) | ✅ CORREGIDO |
-| 6 | `excalidraw.log` en raíz | ✅ .gitignore (fase 1-2) |
+| #  | Hallazgo                                                   | Estado                 |
+|---|-----------------------------------------------------------|-----------------------|
+| 1  | `05_Archive/` faltaba en árbol README.md                   | ✅ CORREGIDO            |
+| 2  | `05_Archive/` antes que `04_Operations/` en OS_DIRECTORY.md| ✅ CORREGIDO            |
+| 3  | `00_EVOLUTION_LOG.md` no documentado en ningún árbol       | ✅ CORREGIDO            |
+| 4  | Gap de numeración en `02_Playground/`: no existe `05_`     | 📌 DOCUMENTADO          |
+| 5  | `refactor_revert_id.py` huérfano (sin documentar en HUBs)  | ✅ CORREGIDO            |
+| 6  | `excalidraw.log` en raíz                                   | ✅ .gitignore (fase 1-2)|
 
 ### Skills
-| # | Hallazgo | Estado |
-|---|---------|--------|
-| 7 | 0/394 skills tienen campo `trigger:` en frontmatter YAML | 📌 MEJORA POTENCIAL — no es error |
-| 8 | ~30 skills duplicadas de migración incompleta (áreas 02/04) | 📌 PRESERVADO — no se elimina |
-| 9 | 18 skills Engram existen solo en backup (`.agent/02_Skills/02_Engram/`) | 📌 PRESERVADO — backup natural |
-| 10 | `.opencode/skills/ui-ux-pro-max` huérfano (no en árbol source) | 📌 PRESERVADO — skill local |
+| #  | Hallazgo                                                               | Estado                          |
+|---|-----------------------------------------------------------------------|--------------------------------|
+| 7  | 0/394 skills tienen campo `trigger:` en frontmatter YAML               | 📌 MEJORA POTENCIAL — no es error|
+| 8  | ~30 skills duplicadas de migración incompleta (áreas 02/04)            | 📌 PRESERVADO — no se elimina    |
+| 9  | 18 skills Engram existen solo en backup (`.agent/02_Skills/02_Engram/`)| 📌 PRESERVADO — backup natural   |
+| 10 | `.opencode/skills/ui-ux-pro-max` huérfano (no en árbol source)         | 📌 PRESERVADO — skill local      |
 
 ### Scripts
-| # | Hallazgo | Estado |
-|---|---------|--------|
-| 11 | Directorios duplicados en `03_Scripts_Os/`: 05_AIPM↔03_AIPM, 05_Validator↔03_Validator, 09_Data↔07_Data, 10_General↔08_General | 📌 PRESERVADO — inflación intencional para backup |
-| 12 | `HUB_SOTA.py` duplicado (v4.7 raíz + v4.1 en 10_Legacy) | 📌 PRESERVADO — versiones históricas |
-| 13 | `10_Legacy/` con ~85 scripts mayormente duplicados de versiones modernas | 📌 PRESERVADO — archivo histórico |
-| 14 | `config_paths.py`: 0 referencias rotas verificadas | ✅ VERIFICADO |
+| #  | Hallazgo                                                                                                                      | Estado                                          |
+|---|------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
+| 11 | Directorios duplicados en `03_Scripts_Os/`: 05_AIPM↔03_AIPM, 05_Validator↔03_Validator, 09_Data↔07_Data, 10_General↔08_General| 📌 PRESERVADO — inflación intencional para backup|
+| 12 | `HUB_SOTA.py` duplicado (v4.7 raíz + v4.1 en 10_Legacy)                                                                       | 📌 PRESERVADO — versiones históricas             |
+| 13 | `10_Legacy/` con ~85 scripts mayormente duplicados de versiones modernas                                                      | 📌 PRESERVADO — archivo histórico                |
+| 14 | `config_paths.py`: 0 referencias rotas verificadas                                                                            | ✅ VERIFICADO                                    |
 
 ### Referencias Cruzadas
-| # | Hallazgo | Estado |
-|---|---------|--------|
-| 15 | Números canónicos 28/284/394/36 sync post-Judgment Day | ✅ VERIFICADO (commit fb823448e) |
-| 16 | `.agent/README.md` decía 23 scripts, real son 31 root + subdirs | 📌 DOCUMENTADO — backup no es fuente |
+| #  | Hallazgo                                                       | Estado                             |
+|---|---------------------------------------------------------------|-----------------------------------|
+| 15 | Números canónicos 28/284/394/36 sync post-Judgment Day         | ✅ VERIFICADO (commit fb823448e)    |
+| 16 | `.agent/README.md` decía 23 scripts, real son 31 root + subdirs| 📌 DOCUMENTADO — backup no es fuente|
 
 > **NOTA:** todo hallazgo marcado como PRESERVADO se mantiene intencionalmente. El sistema prioriza no perder información histórica sobre la limpieza perfecta.
 

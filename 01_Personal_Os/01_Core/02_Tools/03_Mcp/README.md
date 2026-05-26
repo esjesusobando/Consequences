@@ -23,7 +23,7 @@ Carpeta de backup para configuraciones de MCP (Model Context Protocol). Contiene
 
 ---
 
-## 📊 MCPs ACTIVOS (36)
+## 📊 MCPs ACTIVOS (7+38)
 
 | Categoría    | MCPs                                            |
 |-------------|------------------------------------------------|
@@ -45,7 +45,7 @@ Carpeta de backup para configuraciones de MCP (Model Context Protocol). Contiene
 ## 🔗 RELACIONES
 
 - **Config activa:** `.mcp.json` en raíz del proyecto
-- **Sync status:** 36/36 MCPs sync entre Claude y OpenCode ✅
+- **Sync status:** 7+38 MCPs sync entre Claude y OpenCode ✅
 
 ---
 

@@ -6,7 +6,7 @@ argument-hint: "[opcional: tarea específica del día o contexto a priorizar]"
 
 # 🧬 Workflow: Génesis (Iron Man Boot) — v4.8 Consequences
 
-> **Versión del sistema:** v4.7 Consequences — Production Ready
+> **Versión del sistema:** v4.8 Consequences — Production Ready
 > **Fecha:** 2026-05-22
 > **Estado:** 🟢 PURE GREEN — Auditoría Integral Reconciliada
 
@@ -43,7 +43,7 @@ Antes de responder, leer en este orden:
 
 ---
 
-## 🚀 MAPA DEL SISTEMA (v4.7 Consequences)
+## 🚀 MAPA DEL SISTEMA (v4.8 Consequences)
 
 ```
 Think_Different/
@@ -51,13 +51,13 @@ Think_Different/
 ├── 01_Personal_Os/               # SISTEMA OPERATIVO (FUENTE DE VERDAD)
 │   ├── 01_Core/                  # MOTOR DEL OS
 │   │   ├── 00_Workflows_Os/     # 30 workflows (7 categorías)
-│   │   ├── 01_Rules/            # 12 reglas .mdc (00-11)
+│   │   ├── 01_Rules/            # 13 reglas .mdc (00-12)
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/       # 46 agentes (Dream + Specialists + Individuales + Growth)
+│   │       ├── 01_Agents/       # 48 agentes (Dream + Specialists + Individuales + Growth)
 │   │       ├── 02_Skills/       # 394 skills (12 áreas funcionales)
 │   │       ├── 03_Mcp/          # Backup MCPs
 │   │       ├── 04_Integrations/ # Fireflies, Granola
-│   │       ├── 05_Hooks/        # 10 hooks (6 fases)
+│   │       ├── 05_Hooks/        # 12 hooks (6 fases)
 │   │       ├── 06_Plugins/      # Plugins OS
 │   │       ├── 07_Server/       # Engram server
 │   │       ├── 08_Evals/        # Evaluadores
@@ -78,7 +78,7 @@ Think_Different/
 ├── .agent/                      # Backup estratégico (sync con 01_Core/)
 ├── .atl/                        # SDD Registry + openspec/
 ├── .claude/                     # Config Claude Code + rules
-├── .mcp.json                    # 36 MCPs Claude Code activos
+├── .mcp.json                    # 7+38 MCPs activos
 ├── AGENTS.md                    # GGA Pre-Commit entry
 ├── CLAUDE.md                    # Config IAs (FUENTE)
 └── README.md                    # Documentación principal
@@ -90,12 +90,12 @@ Think_Different/
 
 | Recurso                        | Ubicación                                                                 | Para qué usarlo                           |
 |-------------------------------|--------------------------------------------------------------------------|------------------------------------------|
-| **Skills** (12 áreas, 394)    | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
-| **Reglas** (12 .mdc)           | `01_Personal_Os/01_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
+| **Skills** (12 áreas, 394)     | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
+| **Reglas** (13 .mdc)           | `01_Personal_Os/01_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
 | **Agentes** (82)               | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
-| **HUBs** (31 principales)      | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema                    |
-| **MCPs** (36 Claude Code)      | `.mcp.json` (raíz)                                                        | Herramientas externas                     |
-| **Hooks** (10)                 | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                               | Automatizaciones pre/post tool            |
+| **HUBs** (21+2)                | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema                    |
+| **MCPs** (7+38)                | `.mcp.json` (raíz)                                                        | Herramientas externas                     |
+| **Hooks** (12)                 | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                               | Automatizaciones pre/post tool            |
 | **Memory**                     | Engram MCP                                                                | Contexto persistente entre sesiones       |
 | **GGA Code Review**            | `.agent/05_GGA/`                                                          | Code review automático                    |
 | **SDD Registry**               | `.atl/skill-registry.md`                                                  | Compact rules para sub-agentes            |
@@ -211,5 +211,5 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 
 ---
 
-*Think Different PersonalOS v4.7 Consequences — Production Ready*
-*Actualizado: 2026-05-25 | 394 skills | 46 agents (82 total sistema) | 36 MCPs | 28 HUBs | 12 rules*
+*Think Different PersonalOS v4.8 Consequences — Production Ready*
+*Actualizado: 2026-05-25 | 394 skills | 48 agents (82 total sistema) | 7+38 MCPs | 21+2 HUBs | 13 rules*

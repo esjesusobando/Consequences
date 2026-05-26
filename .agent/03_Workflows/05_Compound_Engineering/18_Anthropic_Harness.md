@@ -40,7 +40,7 @@ Inspirado en: [Anthropic Engineering Blog](https://docs.anthropic.com)
 
 ```bash
 # Verificar que no hay riesgos
-python 03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/00_Safety_Wrapper.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/00_Safety_Wrapper.py
 ```
 
 **Validaciones:**
@@ -55,15 +55,15 @@ python 03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/00_Safety_Wrapper.py
 
 ```bash
 # Analizar contexto y decidir reset vs compaction
-python 03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/01_Context_Manager.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/01_Context_Manager.py
 ```
 
 **Decisiones:**
-| Token Usage   | Modelo     | Acción   |
-|---------------|------------|----------|
-| >80%          | Sonnet 4.5 | RESET    |
-| 50-80%        | Any        | COMPACT  |
-| <50%          | Any        | CONTINUE |
+| Token Usage                                    | Modelo                                      | Acción                                    |
+|-----------------------------------------------|--------------------------------------------|------------------------------------------|
+| >80%                                           | Sonnet 4.5                                  | RESET                                     |
+| 50-80%                                         | Any                                         | COMPACT                                   |
+| <50%                                           | Any                                         | CONTINUE                                  |
 
 ---
 
@@ -81,7 +81,7 @@ python 03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/01_Context_Manager.py
 ### Paso 4: SPRINT CONTRACT (para cada sprint)
 
 ```bash
-python 03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/03_Sprint_Contract.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/03_Sprint_Contract.py
 ```
 
 1. Generator propone qué va a build
@@ -102,15 +102,15 @@ python 03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/03_Sprint_Contract.py
 ### Paso 6: EVALUATOR - QA
 
 ```bash
-python 03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/02_Evaluator_Runner.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/02_Evaluator_Runner.py
 ```
 
 **Criterios de Grading:**
 
-| Tipo Output   | Criterios                                          |
-|---------------|----------------------------------------------------|
-| **Diseño**    | Design Quality, Originalidad, Craft, Funcionalidad |
-| **Código**    | Code Quality, Test Coverage, Security, Performance |
+| Tipo Output                                    | Criterios                                                                           |
+|-----------------------------------------------|------------------------------------------------------------------------------------|
+| **Diseño**                                     | Design Quality, Originalidad, Craft, Funcionalidad                                  |
+| **Código**                                     | Code Quality, Test Coverage, Security, Performance                                  |
 
 **Resultado:** PASS/FAIL con bugs list
 
@@ -119,7 +119,7 @@ python 03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/02_Evaluator_Runner.py
 ### Paso 7: PLAYWRIGHT QA (opcional)
 
 ```bash
-python 03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/04_Playwright_QA.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/04_Playwright_QA.py
 ```
 
 Para diseño o features que requieren testing visual/interactivo.
@@ -135,42 +135,42 @@ Para diseño o features que requieren testing visual/interactivo.
 
 ## 🎯 Cuándo Usar Este Workflow
 
-| Escenario         | Usar?    | Reason                                 |
-|-------------------|----------|----------------------------------------|
-| Feature simple    | ❌ NO     | Overhead innecesario                   |
-| Feature media     | ⚠️ MAYBE | Depende de complejidad                 |
-| App completa      | ✅ SÍ     | Anthropic demostró 6hr → app funcional |
-| Sesión >1 hora    | ✅ SÍ     | Context anxiety prevention             |
-| Trabajo en equipo | ✅ SÍ     | Sprint contracts                       |
+| Escenario                                          | Usar?                                     | Reason                                                                  |
+|---------------------------------------------------|------------------------------------------|------------------------------------------------------------------------|
+| Feature simple                                     | ❌ NO                                      | Overhead innecesario                                                    |
+| Feature media                                      | ⚠️ MAYBE                                  | Depende de complejidad                                                  |
+| App completa                                       | ✅ SÍ                                      | Anthropic demostró 6hr → app funcional                                  |
+| Sesión >1 hora                                     | ✅ SÍ                                      | Context anxiety prevention                                              |
+| Trabajo en equipo                                  | ✅ SÍ                                      | Sprint contracts                                                        |
 
 ---
 
 ## 📦 Skills Relacionadas
 
-| Skill                                         | Uso en Workflow  |
-|-----------------------------------------------|------------------|
-| `14_Anthropic_Harness/01_Evaluator_Pattern/`  | Paso 6           |
-| `14_Anthropic_Harness/02_Context_Management/` | Paso 2           |
-| `14_Anthropic_Harness/03_Sprint_Contract/`    | Paso 4           |
+| Skill                                                                          | Uso en Workflow                                   |
+|-------------------------------------------------------------------------------|--------------------------------------------------|
+| `14_Anthropic_Harness/01_Evaluator_Pattern/`                                   | Paso 6                                            |
+| `14_Anthropic_Harness/02_Context_Management/`                                  | Paso 2                                            |
+| `14_Anthropic_Harness/03_Sprint_Contract/`                                     | Paso 4                                            |
 
 ---
 
 ## ⚙️ Scripts del Workflow
 
-| Script                                        | Paso   | Función   |
-|-----------------------------------------------|--------|-----------|
-| `11_Anthropic_Harness/00_Safety_Wrapper.py`   | 1      | Pre-check |
-| `11_Anthropic_Harness/01_Context_Manager.py`  | 2      | Context   |
-| `11_Anthropic_Harness/02_Evaluator_Runner.py` | 6      | QA        |
-| `11_Anthropic_Harness/03_Sprint_Contract.py`  | 4      | Contract  |
-| `11_Anthropic_Harness/04_Playwright_QA.py`    | 7      | Visual QA |
+| Script                                                                         | Paso                                    | Función                                    |
+|-------------------------------------------------------------------------------|----------------------------------------|-------------------------------------------|
+| `11_Anthropic_Harness/00_Safety_Wrapper.py`                                    | 1                                       | Pre-check                                  |
+| `11_Anthropic_Harness/01_Context_Manager.py`                                   | 2                                       | Context                                    |
+| `11_Anthropic_Harness/02_Evaluator_Runner.py`                                  | 6                                       | QA                                         |
+| `11_Anthropic_Harness/03_Sprint_Contract.py`                                   | 4                                       | Contract                                   |
+| `11_Anthropic_Harness/04_Playwright_QA.py`                                     | 7                                       | Visual QA                                  |
 
 ---
 
 ## 📚 Referencia
 
 - Artículo: [Anthropic Engineering Blog](https://docs.anthropic.com)
-- Scripts: `03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/` (legacy - verificar)
+- Scripts: `01_Personal_Os/04_Operations/03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/` (legacy - verificar)
 - Skills: `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/`
 
 ---
@@ -179,11 +179,11 @@ Para diseño o features que requieren testing visual/interactivo.
 
 Según Anthropic:
 
-| Métrica       | Solo Generator   | Full Harness   |
-|---------------|------------------|----------------|
-| **Tiempo**    | 20 min           | 6 hr           |
-| **Costo**     | $9               | $200           |
-| **Resultado** | App rotas        | App funcional  |
+| Métrica                                        | Solo Generator                                    | Full Harness                                    |
+|-----------------------------------------------|--------------------------------------------------|------------------------------------------------|
+| **Tiempo**                                     | 20 min                                            | 6 hr                                            |
+| **Costo**                                      | $9                                                | $200                                            |
+| **Resultado**                                  | App rotas                                         | App funcional                                   |
 
 > "The game built by the full harness actually was functional"
 

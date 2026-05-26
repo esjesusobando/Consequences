@@ -1,0 +1,248 @@
+.wellbore-schematic-container {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 24px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --primary: #5068be;
+  --secondary: #a3e635;
+  --accent-gradient: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    var(--secondary) 100%
+  );
+  --surface: rgba(255, 255, 255, 0.03);
+}
+
+.wellbore-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wellbore-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-shadow: 0 0 10px rgba(100, 100, 255, 0.3);
+}
+
+.status-badge {
+  background: var(--accent-gradient);
+  color: #211818;
+  padding: 4px 14px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  box-shadow: 0 4px 15px rgba(146, 179, 231, 0.4);
+}
+
+.header-sub {
+  display: flex;
+  gap: 12px;
+  font-size: 0.7rem;
+  color: rgba(23, 16, 16, 0.5);
+  font-family: "JetBrains Mono", monospace;
+}
+
+.wellbore-layout {
+  display: flex;
+  gap: 24px;
+  flex: 1;
+}
+
+.wellbore-svg-v3 {
+  width: 280px;
+  height: 450px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+/* Engineering Styles */
+.mud-annulus {
+  transition: all 0.3s ease;
+}
+
+.pipe-segment {
+  stroke-width: 1;
+  stroke: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pipe-segment.dp {
+  fill: var(--primary);
+}
+.pipe-segment.hwdp {
+  fill: url(#hwdp-grad);
+}
+.pipe-segment.dc {
+  fill: var(--secondary);
+}
+
+.bit-head {
+  fill: #a0dc61;
+  stroke: rgba(36, 31, 31, 0.5);
+  stroke-width: 0.5;
+}
+
+.ruler-text {
+  font-size: 9px;
+  fill: rgba(11, 6, 6, 0.4);
+}
+
+.ruler-text.active {
+  fill: var(--primary);
+  font-weight: bold;
+}
+
+/* Legend & Decision Support */
+.engineering-legend {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(16px);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.legend-section h4 {
+  margin: 0 0 16px 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+.l-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.l-item:hover {
+  transform: translateX(4px);
+}
+
+.l-box {
+  width: 6px;
+  height: 32px;
+  border-radius: 4px;
+}
+
+.l-box.dp {
+  background: var(--primary);
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+.l-box.hwdp {
+  background: var(--accent-gradient);
+  box-shadow: 0 0 10px rgba(163, 230, 53, 0.3);
+}
+.l-box.dc {
+  background: var(--secondary);
+  box-shadow: 0 0 10px rgba(163, 230, 53, 0.3);
+}
+
+.l-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.l-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(46, 130, 176, 0.95);
+}
+
+.l-val {
+  font-size: 0.7rem;
+  color: rgba(19, 41, 3, 0.5);
+  font-family: "JetBrains Mono", monospace;
+}
+
+/* ============================================
+   METRICS SECTION - High Contrast Dark Text
+   ============================================ */
+.metrics {
+  background: rgba(95, 166, 221, 0.25);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(63, 91, 126, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.metrics .m-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  align-items: center;
+}
+
+/* Force dark color for labels - CRITICAL for visibility */
+.metrics .m-label {
+  color: #1f2331 !important;
+  font-weight: 700 !important;
+  text-shadow: none !important;
+}
+
+/* Force black color for values - CRITICAL for visibility */
+.metrics .m-val {
+  font-family: "JetBrains Mono", monospace !important;
+  font-weight: 800 !important;
+  color: #000000 !important;
+  text-shadow: none !important;
+}
+
+.metrics .m-row.highlight {
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(34, 61, 93, 0.1);
+}
+
+.metrics .m-row.highlight .m-val {
+  color: #000000 !important;
+  font-weight: 900 !important;
+  font-size: 0.95rem !important;
+  text-shadow: none !important;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+    shadow: 0 0 20px var(--primary);
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.bit-assembly {
+  animation: pulse 2s infinite ease-in-out;
+}

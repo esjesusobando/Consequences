@@ -48,7 +48,7 @@ First, I need to determine the review target type and set up the code for analys
 
 #### 🛡️ Pachamama Protocol (Backup Check)
 
-- [ ] Ejecutar `python 03_Scripts_Os/04_Ritual_Hub.py --backup-only` para asegurar un punto de restauración antes de iniciar la revisión profunda.
+- [ ] Ejecutar `python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --backup-only` para asegurar un punto de restauración antes de iniciar la revisión profunda.
 
 </task_list>
 
@@ -442,11 +442,11 @@ After creating all todo files, present comprehensive summary:
 
 **First, detect the project type from PR files:**
 
-| Indicator                                             | Project Type       |
-|-------------------------------------------------------|--------------------|
-| `*.xcodeproj`, `*.xcworkspace`, `Package.swift` (iOS) | iOS/macOS          |
-| `Gemfile`, `package.json`, `app/views/*`, `*.html.*`  | Web                |
-| Both iOS files AND web files                          | Hybrid (test both) |
+| Indicator                                                                              | Project Type                                        |
+|---------------------------------------------------------------------------------------|----------------------------------------------------|
+| `*.xcodeproj`, `*.xcworkspace`, `Package.swift` (iOS)                                  | iOS/macOS                                           |
+| `Gemfile`, `package.json`, `app/views/*`, `*.html.*`                                   | Web                                                 |
+| Both iOS files AND web files                                                           | Hybrid (test both)                                  |
 
 </detect_project_type>
 

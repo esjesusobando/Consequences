@@ -1,6 +1,6 @@
-🪅📝# 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
+# 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.7 Consequences** | 2026-05-23
+**v4.8 Consequences** | 2026-05-25
 
 ---
 

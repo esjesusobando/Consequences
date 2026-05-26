@@ -1,0 +1,363 @@
+# 11_Minimax — Configuración Dual OpenCode + Claude Code con MiniMax-M2.7
+
+> **Última actualización:** 2026-05-13
+> **Modelo:** MiniMax-M2.7
+> **Estado:** ✅ Configurado y verificado
+
+---
+
+## 🎯 Propósito
+
+Este documento establece la configuración oficial del entorno dual **OpenCode + Claude Code** usando **MiniMax-M2.7** como modelo de IA, permitiendo usar el mismo modelo en ambos entornos de desarrollo.
+
+---
+
+## 📋 Arquitectura del Sistema
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    ENTORNO DUAL MINI MAX                        │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                 │
+│   ┌─────────────────────┐       ┌─────────────────────┐       │
+│   │     OPENCODE        │       │    CLAUDE CODE      │       │
+│   │  (este entorno)     │       │                     │       │
+│   ├─────────────────────┤       ├─────────────────────┤       │
+│   │ Config: opencode.json      │ Config: settings.json        │
+│   │ Provider: minimax │       │ ANTHROPIC_BASE_URL  │       │
+│   │ Model: MiniMax-M2.7       │ ANTHROPIC_AUTH_TOKEN│       │
+│   │ Endpoint: api.minimaxi.com │ Model: MiniMax-M2.7 │       │
+│   └──────────┬──────────┘       └──────────┬──────────┘       │
+│              │                              │                  │
+│              └──────────┬───────────────────┘                  │
+│                          ▼                                    │
+│              ┌─────────────────────┐                           │
+│              │   MINI MAX API      │                           │
+│              │  api.minimaxi.com   │                           │
+│              │  (China/Global)     │                           │
+│              └─────────────────────┘                           │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🔧 Configuración OpenCode
+
+### Archivo de configuración
+
+**Ubicación:** `~/.config/opencode/opencode.json`
+
+### Estructura del provider MiniMax
+
+```json
+{
+  "agent": {
+    "gentle-orchestrator": {
+      "model": "minimax/MiniMax-M2.7"
+    }
+  },
+  "provider": {
+    "minimax": {
+      "options": {
+        "apiKey": "<TU_MINIMAX_API_KEY>",
+        "baseURL": "https://api.minimaxi.com/anthropic"
+      },
+      "models": {
+        "MiniMax-M2.7": {
+          "id": "MiniMax-M2.7",
+          "name": "MiniMax M2.7",
+          "reasoning": true,
+          "tool_call": true
+        },
+        "MiniMax-M2.7-highspeed": {
+          "id": "MiniMax-M2.7-highspeed",
+          "name": "MiniMax M2.7 Highspeed",
+          "reasoning": true,
+          "tool_call": true
+        }
+      }
+    }
+  }
+}
+```
+
+### Verificación en OpenCode
+
+Una vez configurado, al iniciar OpenCode:
+1. Seleccionar modelo `minimax/MiniMax-M2.7`
+2. El endpoint y API key se usan automáticamente
+
+---
+
+## 🔧 Configuración Claude Code
+
+### Archivo de configuración
+
+**Ubicación:** `~/.claude/settings.json`
+
+### Estructura de variables de entorno
+
+```json
+{
+  "theme": "auto",
+  "autoCompactEnabled": false,
+  "env": {
+    "ANTHROPIC_BASE_URL": "https://api.minimaxi.com/anthropic",
+    "ANTHROPIC_AUTH_TOKEN": "<TU_MINIMAX_API_KEY>",
+    "API_TIMEOUT_MS": "3000000",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1",
+    "ANTHROPIC_MODEL": "MiniMax-M2.7",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "MiniMax-M2.7",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "MiniMax-M2.7",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "MiniMax-M2.7"
+  }
+}
+```
+
+### Verificación en Claude Code
+
+Ejecutar dentro del TUI de Claude Code:
+
+```
+/status
+/model
+```
+
+**Resultado esperado:**
+- `/status` → `ANTHROPIC_BASE_URL` apunta a `api.minimaxi.com/anthropic`
+- `/model` → Modelo activo: `MiniMax-M2.7`
+
+---
+
+## 🌐 Endpoints según Región
+
+| Región       | Endpoint                              | Puerto |
+|--------------|---------------------------------------|--------|
+| **China**    | `https://api.minimaxi.com/anthropic`  | 443    |
+| **Internacional** | `https://api.minimax.io/anthropic` | 443    |
+
+> **Nota:** Para usuarios fuera de China, cambiar `api.minimaxi.com` por `api.minimax.io`
+
+---
+
+## ⚠️ Requisitos Previos
+
+### Limpieza de variables de entorno
+
+Antes de configurar, **OBLIGATORIO** limpiar las variables de Anthropic:
+
+```bash
+# En ~/.bashrc o ~/.zshrc, eliminar si existen:
+unset ANTHROPIC_AUTH_TOKEN
+unset ANTHROPIC_BASE_URL
+```
+
+**Variables a eliminar:**
+- `ANTHROPIC_AUTH_TOKEN`
+- `ANROPIC_BASE_URL`
+
+Si estas variables están activas, toman prioridad sobre la configuración en `settings.json` y pueden causar errores del tipo:
+
+```
+API Error: Cannot read properties of undefined (reading 'map')
+```
+
+---
+
+## 🔑 Obtención de API Key MiniMax
+
+### Paso 1: Crear cuenta
+
+1. Ir a [MiniMax Developer Platform](https://platform.minimax.io/user-center/payment/token-plan)
+   - Para China: [MiniMax China](https://platform.minimaxi.com/user-center/payment/token-plan)
+
+2. Registrarse / Iniciar sesión
+
+### Paso 2: Obtener API Key
+
+1. Ir a **User Center** → **Payment/Token Plan**
+2. Seleccionar plan (Token Plan o Pay-As-You-Go)
+3. Generar API Key
+4. **COPIAR Y GUARDAR** — La key solo se muestra una vez
+
+### Paso 3: Configurar en ambos entornos
+
+Copiar la API key en:
+- `opencode.json` → `provider.minimax.options.apiKey`
+- `settings.json` → `env.ANTHROPIC_AUTH_TOKEN`
+
+---
+
+## 📊 Modelos Disponibles
+
+| Modelo                  | Capacidad          | Velocidad      |
+|-------------------------|--------------------|----------------|
+| **MiniMax-M2.7**        | Reasoning + Tools  | Estándar       |
+| **MiniMax-M2.7-highspeed** | Reasoning + Tools  | Alta velocidad |
+
+> **Nota:** Token Plan API Key no puede usar `MiniMax-M2.7-highspeed`. Para alta velocidad, usar Pay-As-You-Go API Key.
+
+---
+
+## 🔍 Troubleshooting
+
+### Error: `API Error: Cannot read properties of undefined (reading 'map')`
+
+**Causa:** Conflictos con variables de entorno de Anthropic.
+
+**Solución:**
+1. Verificar que `ANTHROPIC_AUTH_TOKEN` y `ANTHROPIC_BASE_URL` no estén definidos como variables de entorno
+2. En terminal: `unset ANTHROPIC_AUTH_TOKEN ANTHROPIC_BASE_URL`
+3. En `~/.bashrc`/`~/.zshrc`: eliminar líneas de export si existen
+4. Reiniciar terminal y volver a intentar
+
+### Error: 401 Unauthorized
+
+**Causa:** API key inválida o expirada.
+
+**Solución:**
+1. Verificar que la API key sea correcta
+2. Confirmar que el plan esté activo en MiniMax Platform
+3. Regenerar key si es necesario
+
+### Error: Model not found
+
+**Causa:** Nombre del modelo incorrecto.
+
+**Solución:**
+- Usar exactamente: `MiniMax-M2.7` (mayúsculas M, minúsculas i, guión)
+- No usar: `minimax-m2.7` o `MiniMax-m2.7`
+
+---
+
+## 📦 Plugins — OpenCode Subagent Statusline
+
+Plugin que muestra en tiempo real el estado de subagentes dentro de OpenCode.
+
+### Estado: ✅ Instalado + Configurado
+
+### Verificación de instalación
+
+```bash
+npm list -g opencode-subagent-statusline
+# Resultado esperado: opencode-subagent-statusline@0.3.0
+```
+
+### Archivos de configuración
+
+| Archivo | Ubicación | Estado |
+|---------|-----------|--------|
+| **Plugin** | `~/.npm/global/lib/node_modules/opencode-subagent-statusline/` | ✅ Instalado |
+| **TUI Config** | `~/.config/opencode/tui.json` | ✅ Configurado |
+
+### Configuración actual (`~/.config/opencode/tui.json`)
+
+```json
+{
+  "$schema": "https://opencode.ai/tui.json",
+  "theme": "gentleman-kanagawa",
+  "plugin": [
+    "opencode-subagent-statusline"
+  ]
+}
+```
+
+### Qué muestra el plugin
+
+- **Running subagents** — Agentes en ejecución
+- **Completed subagents** — Agentes terminados
+- **Failed subagents** — Agentes fallidos
+- **Elapsed time** — Tiempo transcurrido
+- **Token/context usage** — Uso de tokens y contexto
+
+### Troubleshooting
+
+**El plugin no aparece:**
+```bash
+grep -n "subagent-statusline\|failed to load tui plugin" ~/.local/share/opencode/log/*.log
+# Luego reiniciar OpenCode
+```
+
+**Sigue mostrando versión vieja después de update:**
+```bash
+rm -rf ~/.cache/opencode/packages/
+# Reiniciar OpenCode
+```
+
+### Ubicación del repositorio
+
+`01_Personal_Os/05_Archive/07_Repos_Gentleman/sub-agent-statusline/`
+
+---
+
+## 📁 Archivos de Configuración
+
+| Entorno      | Archivo                        |-key a buscar        |
+|--------------|--------------------------------|---------------------|
+| **OpenCode** | `~/.config/opencode/opencode.json` | `provider.minimax`  |
+| **Claude Code** | `~/.claude/settings.json`     | `env.ANTHROPIC_*`   |
+
+---
+
+## 🔄 Sincronización de Configuración
+
+Para mantener consistencia entre ambos entornos:
+
+1. **Usar la misma API key** en ambos archivos
+2. **Usar el mismo endpoint** según región
+3. **Verificar** con `/status` y `/model` en Claude Code
+
+---
+
+## 📝 Checklist de Configuración
+
+```
+PRECONFIGURACIÓN:
+□ Limpiar variables ANTHROPIC_* del entorno
+□ Verificar ~/.bashrc ~/.zshrc
+
+OPENCODE:
+□ Editar ~/.config/opencode/opencode.json
+□ Agregar section provider.minimax
+□ Configurar apiKey con MiniMax API key
+□ Configurar baseURL según región
+□ Guardar y reiniciar OpenCode
+
+CLAUDE CODE:
+□ Editar ~/.claude/settings.json
+□ Agregar sección env
+□ Configurar ANTHROPIC_BASE_URL
+□ Configurar ANTHROPIC_AUTH_TOKEN
+□ Configurar ANTHROPIC_MODEL: MiniMax-M2.7
+□ Guardar y reiniciar Claude Code
+
+VERIFICACIÓN:
+□ En OpenCode: verificar modelo seleccionado
+□ En Claude Code: /status → endpoint correcto
+□ En Claude Code: /model → MiniMax-M2.7
+□ Probar una request simple
+```
+
+---
+
+## 📚 Referencias
+
+- [Documentación oficial MiniMax](https://platform.minimax.io/docs/llms.txt)
+- [Guía Claude Code + MiniMax](https://platform.minimax.io/docs/guides/text-ai-coding-tools)
+- [Tokens y billing MiniMax](https://platform.minimax.io/user-center/payment/token-plan)
+- [OpenCode Subagent Statusline](https://github.com/Joaquinvesapa/sub-agent-statusline)
+
+---
+
+## 🔗 HUCOS — Configuraciones Relacionadas
+
+- **OpenCode:** `~/.config/opencode/opencode.json`
+- **Claude Code:** `~/.claude/settings.json`
+- **MCP Servers:** `.mcp.json`
+- **Skills:** `~/.config/opencode/skills/`
+- **Plugins:** `~/.config/opencode/plugins/`
+
+---
+
+_11_Minimax — Think Different PersonalOS v4.0 Consequences — Production Ready_

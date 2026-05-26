@@ -27,13 +27,13 @@ obsidian create name="Nombre de la nota" vault="Mi Vault" folder="Carpeta/Subcar
 
 **Parámetros:**
 
-| Parámetro | Requerido | Descripción |
-|-----------|-----------|-------------|
-| `name` | Sí | Nombre del archivo (sin extensión .md) |
-| `vault` | No | Nombre del vault. Si se omite, usa el vault por defecto |
-| `folder` | No | Carpeta destino (crea submdirectorios si no existen) |
-| `content` | No | Contenido markdown de la nota |
-| `format` | No | Formato de fecha: `YYYY-MM-DD` (defecto), `DD-MM-YYYY`, `MM-DD-YYYY` |
+| Parámetro  | Requerido  | Descripción                                                         |
+|-----------|-----------|--------------------------------------------------------------------|
+| `name`     | Sí         | Nombre del archivo (sin extensión .md)                              |
+| `vault`    | No         | Nombre del vault. Si se omite, usa el vault por defecto             |
+| `folder`   | No         | Carpeta destino (crea submdirectorios si no existen)                |
+| `content`  | No         | Contenido markdown de la nota                                       |
+| `format`   | No         | Formato de fecha: `YYYY-MM-DD` (defecto), `DD-MM-YYYY`, `MM-DD-YYYY`|
 
 **Ejemplos:**
 
@@ -56,11 +56,11 @@ obsidian list vault="Mi Vault" folder="Carpeta" format="sort"
 
 **Parámetros:**
 
-| Parámetro | Requerido | Descripción |
-|-----------|-----------|-------------|
-| `vault` | No | Filtrar por vault |
-| `folder` | No | Filtrar por carpeta ("" = raíz) |
-| `format` | No | `sort` para ordenar por fecha, `tree` para estructura jerárquica |
+| Parámetro  | Requerido  | Descripción                                                     |
+|-----------|-----------|----------------------------------------------------------------|
+| `vault`    | No         | Filtrar por vault                                               |
+| `folder`   | No         | Filtrar por carpeta ("" = raíz)                                 |
+| `format`   | No         | `sort` para ordenar por fecha, `tree` para estructura jerárquica|
 
 **Ejemplos:**
 
@@ -83,11 +83,11 @@ obsidian search query="texto a buscar" vault="Mi Vault" exact=true
 
 **Parámetros:**
 
-| Parámetro | Requerido | Descripción |
-|-----------|-----------|-------------|
-| `query` | Sí | Texto a buscar |
-| `vault` | No | Vault donde buscar |
-| `exact` | No | `true` para búsqueda exacta, `false` para fuzzy (defecto) |
+| Parámetro  | Requerido  | Descripción                                              |
+|-----------|-----------|---------------------------------------------------------|
+| `query`    | Sí         | Texto a buscar                                           |
+| `vault`    | No         | Vault donde buscar                                       |
+| `exact`    | No         | `true` para búsqueda exacta, `false` para fuzzy (defecto)|
 
 **Ejemplos:**
 
@@ -107,11 +107,11 @@ obsidian grep query="patrón" vault="Mi Vault" path="Carpeta"
 
 **Parámetros:**
 
-| Parámetro | Requerido | Descripción |
-|-----------|-----------|-------------|
-| `query` | Sí | Patrón regex a buscar |
-| `vault` | No | Vault donde buscar |
-| `path` | No | Carpeta específica donde buscar |
+| Parámetro  | Requerido  | Descripción                    |
+|-----------|-----------|-------------------------------|
+| `query`    | Sí         | Patrón regex a buscar          |
+| `vault`    | No         | Vault donde buscar             |
+| `path`     | No         | Carpeta específica donde buscar|
 
 **Ejemplos:**
 
@@ -131,11 +131,11 @@ obsidian task list vault="Mi Vault" status=any folder="Carpeta"
 
 **Parámetros:**
 
-| Parámetro | Requerido | Descripción |
-|-----------|-----------|-------------|
-| `vault` | No | Vault donde buscar |
-| `status` | No | `any` (todas), `done` (completadas), `not` (no completadas, defecto) |
-| `folder` | No | Carpeta específica |
+| Parámetro  | Requerido  | Descripción                                                         |
+|-----------|-----------|--------------------------------------------------------------------|
+| `vault`    | No         | Vault donde buscar                                                  |
+| `status`   | No         | `any` (todas), `done` (completadas), `not` (no completadas, defecto)|
+| `folder`   | No         | Carpeta específica                                                  |
 
 **Ejemplos:**
 
@@ -158,11 +158,11 @@ obsidian open name="Nombre de nota" vault="Mi Vault" focus=true
 
 **Parámetros:**
 
-| Parámetro | Requerido | Descripción |
-|-----------|-----------|-------------|
-| `name` | Sí | Nombre de la nota |
-| `vault` | No | Vault de la nota |
-| `focus` | No | `true` para enfocar ventana, `false` (defecto) |
+| Parámetro  | Requerido  | Descripción                                   |
+|-----------|-----------|----------------------------------------------|
+| `name`     | Sí         | Nombre de la nota                             |
+| `vault`    | No         | Vault de la nota                              |
+| `focus`    | No         | `true` para enfocar ventana, `false` (defecto)|
 
 **Ejemplos:**
 

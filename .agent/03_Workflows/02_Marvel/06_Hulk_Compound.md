@@ -149,7 +149,7 @@ What's next?
 2. Link related documentation
 3. Update other references
 4. View documentation
-5. **🛡️ Pachamama Final Backup**: `python 03_Scripts_Os/04_Ritual_Hub.py --backup-only`
+5. **🛡️ Pachamama Final Backup**: `python 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py --backup-only`
 6. Other
 ```
 

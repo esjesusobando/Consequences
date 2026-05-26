@@ -17,15 +17,15 @@ generator → qa → code_reviewer → docs → (optional) performance → merge
 
 ## Agentes Disponibles
 
-| Rol               | Descripción                     | Capabilities                            |
-|-------------------|---------------------------------|-----------------------------------------|
-| **generator**     | Construye features una a la vez | code_generation, implementation         |
-| **qa**            | Testea lo que el generator hizo | testing, validation                     |
-| **code_reviewer** | Revisa calidad del código       | code_review, quality                    |
-| **docs**          | Mantiene la documentación       | documentation, readmes                  |
-| **performance**   | Optimiza donde sea necesario    | optimization, profiling                 |
-| **security**      | Revisa aspectos de seguridad    | security_audit, vulnerability_detection |
-| **architect**     | Diseño de arquitectura          | system_design, patterns                 |
+| Rol                                                | Descripción                                                      | Capabilities                                                             |
+|---------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------------|
+| **generator**                                      | Construye features una a la vez                                  | code_generation, implementation                                          |
+| **qa**                                             | Testea lo que el generator hizo                                  | testing, validation                                                      |
+| **code_reviewer**                                  | Revisa calidad del código                                        | code_review, quality                                                     |
+| **docs**                                           | Mantiene la documentación                                        | documentation, readmes                                                   |
+| **performance**                                    | Optimiza donde sea necesario                                     | optimization, profiling                                                  |
+| **security**                                       | Revisa aspectos de seguridad                                     | security_audit, vulnerability_detection                                  |
+| **architect**                                      | Diseño de arquitectura                                           | system_design, patterns                                                  |
 
 ---
 
@@ -92,7 +92,7 @@ pipeline:
 
 ```python
 # Legacy - API anterior a v6.1
-# from 03_Scripts_Os.11_Anthropic_Harness.multi_agent_pipeline import (
+# from 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness.multi_agent_pipeline import (
 #     PipelineBuilder, AgentRole
 # )
 
@@ -128,7 +128,7 @@ Este workflow se complementa con `07_Agent_Teams_Locks.py`:
 
 ```python
 # Legacy - API anterior a v6.1
-# from 03_Scripts_Os.11_Anthropic_Harness.07_Agent_Teams_Locks import AgentTeam, GitLockManager
+# from 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness.07_Agent_Teams_Locks import AgentTeam, GitLockManager
 
 # Crear equipo con locks
 manager = GitLockManager()
@@ -142,17 +142,17 @@ team = AgentTeam("dev-team", num_agents=16, lock_manager=manager)
 
 ## Métricas
 
-| Métrica                     | Target   |
-|-----------------------------|----------|
-| Latencia por decisión       | <50ms    |
-| Agentes en paralelo         | 16       |
-| Tasa de éxito               | >90%     |
-| Tiempo promedio por feature | <5min    |
+| Métrica                                                      | Target                                    |
+|-------------------------------------------------------------|------------------------------------------|
+| Latencia por decisión                                        | <50ms                                     |
+| Agentes en paralelo                                          | 16                                        |
+| Tasa de éxito                                                | >90%                                      |
+| Tiempo promedio por feature                                  | <5min                                     |
 
 ---
 
 ## Archivos Relacionados
 
-- `03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/07_Agent_Teams_Locks.py` (legacy)
+- `01_Personal_Os/04_Operations/03_Scripts_Os/Legacy_Backup/11_Anthropic_Harness/07_Agent_Teams_Locks.py` (legacy)
 - `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/08_Graders_Framework/`
 - `01_Personal_Os/01_Core/02_Tools/02_Skills/14_Anthropic_Harness/01_Evaluator_Pattern/`

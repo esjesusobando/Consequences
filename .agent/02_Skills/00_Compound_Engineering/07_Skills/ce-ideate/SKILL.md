@@ -297,9 +297,9 @@ focus: <optional focus hint>
 
 ## Rejection Summary
 
-| #                           | Idea                           | Reason Rejected                           |
-|-----------------------------|--------------------------------|-------------------------------------------|
-| 1                           | <Idea>                         | <Reason rejected>                         |
+| #                                    | Idea                                    | Reason Rejected                                    |
+|-------------------------------------|----------------------------------------|---------------------------------------------------|
+| 1                                    | <Idea>                                  | <Reason rejected>                                  |
 
 ## Session Log
 - YYYY-MM-DD: Initial ideation — <candidate count> generated, <survivor count> survived

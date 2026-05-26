@@ -26,9 +26,9 @@
 - **Every CE**: v3.8.4 ✅
 - **gentle-ai**: v1.30.6 ✅
 - **Agentes activos**: 46 (5 Dream + 23 Specialists + 13 Individual + 5 Growth)
-- **MCPs**: 36 servidores activos (Claude Code)
+- **MCPs**: 7+38 servidores activos (Claude Code)
 - **Skills**: 394 SKILL.md (12 áreas funcionales)
-- **HUBs**: 28 HUBs + 284 scripts
+- **HUBs**: 21+2 HUBs + 284 scripts
 - **Workflows**: 30 (7 categorías)
 - **Agentes**: 46 definiciones (5 Dream Team + 23 Specialists + 13 individuales + 5 Growth)
 - **Subagentes**: SDD (10 fases) + background-agents + subagent-statusline sidebar

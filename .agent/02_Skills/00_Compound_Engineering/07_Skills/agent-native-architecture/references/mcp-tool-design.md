@@ -49,12 +49,12 @@ The agent decides categorization, priority, and when to notify based on the syst
 
 Names should describe the capability, not the use case:
 
-| Wrong                                             | Right                                  |
-|---------------------------------------------------|----------------------------------------|
-| `process_user_feedback`                           | `store_item`                           |
-| `create_feedback_summary`                         | `write_file`                           |
-| `send_notification`                               | `send_message`                         |
-| `deploy_to_production`                            | `git_push`                             |
+| Wrong                                                      | Right                                           |
+|-----------------------------------------------------------|------------------------------------------------|
+| `process_user_feedback`                                    | `store_item`                                    |
+| `create_feedback_summary`                                  | `write_file`                                    |
+| `send_notification`                                        | `send_message`                                  |
+| `deploy_to_production`                                     | `git_push`                                      |
 
 The prompt tells the agent *when* to use primitives. The tool just provides *capability*.
 </principle>
@@ -364,12 +364,12 @@ tool("read_health_data", {
 
 **When to Use Each Approach:**
 
-| Dynamic (Agent-Native)                                                                 | Static (Constrained Agent)                                    |
-|----------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| Agent should access anything user can                                                  | Agent has intentionally limited scope                         |
-| External API with many endpoints (HealthKit, HomeKit, GraphQL)                         | Internal domain with fixed operations                         |
-| API evolves independently of your code                                                 | Tightly coupled domain logic                                  |
-| You want full action parity                                                            | You want strict guardrails                                    |
+| Dynamic (Agent-Native)                                                                          | Static (Constrained Agent)                                             |
+|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| Agent should access anything user can                                                           | Agent has intentionally limited scope                                  |
+| External API with many endpoints (HealthKit, HomeKit, GraphQL)                                  | Internal domain with fixed operations                                  |
+| API evolves independently of your code                                                          | Tightly coupled domain logic                                           |
+| You want full action parity                                                                     | You want strict guardrails                                             |
 
 **The agent-native default is Dynamic.** Only use Static when you're intentionally limiting the agent's capabilities.
 

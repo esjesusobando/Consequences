@@ -14,16 +14,16 @@ Auditoría completa del PersonalOS v4.7: 3 exploraciones delegadas (estructura, 
 
 ## Métricas Finales Verificadas
 
-| Métrica | Valor | Fuente |
-|---------|-------|--------|
-| HUBs | 28 (19 raíz + 9 aux) | `03_Scripts_Os/` |
-| Scripts | 284 (283 .py + 1 .js) | `03_Scripts_Os/` recursivo |
-| Skills | 394 (12 áreas funcionales) | `01_Core/02_Tools/02_Skills/` |
-| MCPs | 36 Claude Code | `.mcp.json` |
-| Agentes | 46 source / 82 con SDD/CE | `01_Core/02_Tools/01_Agents/` |
-| Workflows | 30 (7 categorías) | `00_Workflows_Os/` |
-| Hooks | 10 (6 fases) | `02_Tools/05_Hooks/` |
-| Rules | 12 (.mdc) | `01_Rules/` |
+| Métrica  | Valor                     | Fuente                       |
+|---------|--------------------------|-----------------------------|
+| HUBs     | 28 (19 raíz + 9 aux)      | `03_Scripts_Os/`             |
+| Scripts  | 284 (283 .py + 1 .js)     | `03_Scripts_Os/` recursivo   |
+| Skills   | 394 (12 áreas funcionales)| `01_Core/02_Tools/02_Skills/`|
+| MCPs     | 36 Claude Code            | `.mcp.json`                  |
+| Agentes  | 46 source / 82 con SDD/CE | `01_Core/02_Tools/01_Agents/`|
+| Workflows| 30 (7 categorías)         | `00_Workflows_Os/`           |
+| Hooks    | 10 (6 fases)              | `02_Tools/05_Hooks/`         |
+| Rules    | 12 (.mdc)                 | `01_Rules/`                  |
 
 ---
 
@@ -52,11 +52,11 @@ Auditoría completa del PersonalOS v4.7: 3 exploraciones delegadas (estructura, 
 
 ## Commits
 
-| Hash | Descripción | Archivos |
-|------|-------------|----------|
-| `787bd2e02` | Fase 1-2: docs + HUB + gitignore | 8 |
-| `d536e019d` | .gitignore SDD patterns | 1 |
-| `fb823448e` | Judgment Day + correcciones numéricas | 16, +42/−42 |
+| Hash       | Descripción                          | Archivos   |
+|-----------|-------------------------------------|-----------|
+| `787bd2e02`| Fase 1-2: docs + HUB + gitignore     | 8          |
+| `d536e019d`| .gitignore SDD patterns              | 1          |
+| `fb823448e`| Judgment Day + correcciones numéricas| 16, +42/−42|
 
 ---
 

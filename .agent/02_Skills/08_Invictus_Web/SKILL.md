@@ -14,11 +14,11 @@ description: >
 
 ## Sub-áreas y Contenido
 
-| Sub-área | Descripción |
-|----------|-------------|
-| `01_Superpowers/` | Superpoderes del sistema |
-| `02_Buscador_Skills/` | Buscador de skills |
-| `03_Playwright/` | Automatización browser |
+| Sub-área             | Descripción             |
+|---------------------|------------------------|
+| `01_Superpowers/`    | Superpoderes del sistema|
+| `02_Buscador_Skills/`| Buscador de skills      |
+| `03_Playwright/`     | Automatización browser  |
 
 ## Integración
 

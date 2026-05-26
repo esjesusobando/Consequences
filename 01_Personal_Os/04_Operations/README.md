@@ -1,12 +1,12 @@
-# 04_Operations — Motor Operativo PersonalOS v4.7
+# 04_Operations — Motor Operativo PersonalOS v4.8
 
 **Versión:** 4.7 Consequences
 **Última actualización:** 2026-05-23
-**Estado:** ✅ Activo (v4.7 Consequences)
+**Estado:** ✅ Activo (v4.8 Consequences)
 
 ---
 
-## 📂 Estructura (Workspace) — v4.7 Consequences
+## 📂 Estructura (Workspace) — v4.8 Consequences
 
 ```
 Think_Different/
@@ -33,7 +33,7 @@ Think_Different/
 ├── 02_Agent_Teams_Lite/      # Orquestación SDD + Manifest ✅
 │   ├── 00_Manifest/         # Registros YAML (MCP, Agents, HUBs, Workflows, Hooks)
 │   └── 01_Agent_Teams_Lite/ # SDD Workflow Skills + AGENTS.md
-├── 03_Scripts_Os/            # 28 HUBs operativos ✅
+├── 03_Scripts_Os/            # 21+2 HUBs operativos ✅
 ├── 04_Installer/             # Scripts de instalación y configuración
 └── 05_Projects/             # Proyectos activos
 ```
@@ -49,7 +49,7 @@ Think_Different/
 │   ├── 03_Agent_Catalog.yaml  # 52 agents
 │   ├── 05_HUB_Catalog.yaml   # 18 HUBs
 │   ├── 06_Workflow_Graph.yaml # Workflow orchestration
-│   └── 07_Hook_Registry.yaml # 10 hooks
+│   └── 07_Hook_Registry.yaml # 12 hooks
 └── 01_Agent_Teams_Lite/
     ├── AGENTS.md              # SDD Workflow definition
     └── skills/               # 10 SDD skills (sdd-*, skill-registry)
@@ -57,7 +57,7 @@ Think_Different/
 
 ---
 
-## 📂 Estructura 03_Scripts_Os (28 HUBs operativos)
+## 📂 Estructura 03_Scripts_Os (21+2 HUBs operativos)
 
 > **Nota:** Algunos números corresponden a **directorios** (ej. `02_Tool/`, `03_AIPM/`) que contienen herramientas auxiliares, no scripts individuales. La lista abajo son los HUBs/scripts principales en la raíz del directorio.
 
@@ -126,7 +126,7 @@ Esta carpeta contiene el **cerebro operativo** del sistema - memoria a largo pla
 |--------------------------------------|----------------------------------------------------|
 | `00_Context_LLM/`                     | CTX de sesiones, JSONs de validación                |
 | `02_Agent_Teams_Lite/`                | SDD Workflow + Manifest registries ✅                |
-| `03_Scripts_Os/`                      | 28 HUBs operativos + directorios auxiliares          |
+| `03_Scripts_Os/`                      | 21+2 HUBs operativos + directorios auxiliares       |
 
 ---
 
@@ -164,4 +164,4 @@ mem_save [title] [content]
 
 ---
 
-_Think Different PersonalOS v4.7 Consequences — Cerebro operativo_
+_Think Different PersonalOS v4.8 Consequences — Cerebro operativo_

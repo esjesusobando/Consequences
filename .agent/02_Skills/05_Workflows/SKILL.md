@@ -14,19 +14,19 @@ description: >
 
 ## Sub-áreas y Contenido
 
-| Sub-área | Descripción |
-|----------|-------------|
-| `01_Agent_Teams_Lite/` | Sistema de equipos de agentes |
-| `02_Project_Manager/` | Gestión de proyectos |
-| `03_Product_Manager/` | Gestión de producto |
-| `04_PM_Orchestrator/` | Orquestador PM |
+| Sub-área              | Descripción                  |
+|----------------------|-----------------------------|
+| `01_Agent_Teams_Lite/`| Sistema de equipos de agentes|
+| `02_Project_Manager/` | Gestión de proyectos         |
+| `03_Product_Manager/` | Gestión de producto          |
+| `04_PM_Orchestrator/` | Orquestador PM               |
 
 ## Skills Principales
 
-| Skill | Trigger | Descripción |
-|-------|---------|-------------|
-| **Super_Campeones** | `03_Super_Campeones/` | Agent Teams Protocol |
-| **Agent Teams Lite** | `01_Agent_Teams_Lite/` | Sistema legacy |
+| Skill               | Trigger               | Descripción         |
+|--------------------|----------------------|--------------------|
+| **Super_Campeones** | `03_Super_Campeones/` | Agent Teams Protocol|
+| **Agent Teams Lite**| `01_Agent_Teams_Lite/`| Sistema legacy      |
 
 ## Metodologías Integradas
 
@@ -43,11 +43,11 @@ Usuario → Director → Jugadores → Árbitro → Director → Usuario
 
 ## Workflows Disponibles
 
-| Workflow | Ubicación | Héroes |
-|----------|-----------|--------|
-| Marvel | `00_Workflows_Os/02_Marvel/` | 8 |
-| Personal OS | `00_Workflows_Os/01_Personal_Os/` | 11 |
-| Compound Eng | `00_Workflows_Os/05_Compound_Engineering/` | 4 |
+| Workflow    | Ubicación                                 | Héroes  |
+|------------|------------------------------------------|--------|
+| Marvel      | `00_Workflows_Os/02_Marvel/`              | 8       |
+| Personal OS | `00_Workflows_Os/01_Personal_Os/`         | 11      |
+| Compound Eng| `00_Workflows_Os/05_Compound_Engineering/`| 4       |
 
 ---
 

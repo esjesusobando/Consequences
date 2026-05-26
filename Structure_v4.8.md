@@ -20,12 +20,12 @@ Think_Different/                    # RAÍZ
 
 ### 📝 Notas de la Raíz
 
-| Carpeta                  | Propósito                                                          |
+| Carpeta                   | Propósito                                                           |
 |--------------------------|--------------------------------------------------------------------|
-| **00_Winter_is_Coming**  | Dirección estratégica. Goals, Backlog, AGENTS.md (GGA), CHANGELOG. |
-| **01_Personal_Os**       | EL SISTEMA OPERATIVO. Skills, agentes, HUBs, workflows, memoria.   |
-| **02_Playground**        | Zona de pruebas. Skills nuevas, flujos experimentales.             |
-| **03_Resultado**         | Outputs de proyectos. Entregables, reportes, contenido generado.   |
+| **00_Winter_is_Coming**   | Dirección estratégica. Goals, Backlog, AGENTS.md (GGA), CHANGELOG.  |
+| **01_Personal_Os**        | EL SISTEMA OPERATIVO. Skills, agentes, HUBs, workflows, memoria.    |
+| **02_Playground**         | Zona de pruebas. Skills nuevas, flujos experimentales.              |
+| **03_Resultado**          | Outputs de proyectos. Entregables, reportes, contenido generado.    |
 
 ---
 
@@ -67,81 +67,81 @@ Think_Different/                    # RAÍZ
 
 ### 00_Workflows_Os — Workflows (30 workflows, 7 categorías)
 
-| Categoría                     | Workflows                                        | Propósito                          |
-|-------------------------------|---------------------------------------------------|-------------------------------------|
-| **00_Learning_Always**        | 1                                                 | Aprendizaje continuo                |
-| **01_Personal_Os**            | 11 (Morning, Backlog, Content, Weekly, Ritual_Cierre, Validar_Reglas, System_Health, Context_Recovery, AI_Task_Template, Classify_Task, AGENTS) | Rutinas personales                  |
-| **02_Marvel**                 | 8 (Iron Man Gen, Spider, Thor, Hulk)              | Identidades temáticas de agente     |
-| **03_Gentleman**              | 2 (Frontend, Docs)                                | Diseño premium y redacción          |
-| **04_Hillary**                | 2 (Life OS, Inbox)                                | Gestión de vida personal            |
-| **05_Compound_Engineering**   | 4                                                 | Ingeniería avanzada (CE)            |
-| **06_Youtube_Full_Video**     | 2                                                 | Pipeline de producción de video     |
+| Categoría                      | Workflows                                                                                                                                      | Propósito                            |
+|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| **00_Learning_Always**         | 1                                                                                                                                              | Aprendizaje continuo                 |
+| **01_Personal_Os**             | 11 (Morning, Backlog, Content, Weekly, Ritual_Cierre, Validar_Reglas, System_Health, Context_Recovery, AI_Task_Template, Classify_Task, AGENTS)| Rutinas personales                   |
+| **02_Marvel**                  | 8 (Iron Man Gen, Spider, Thor, Hulk)                                                                                                           | Identidades temáticas de agente      |
+| **03_Gentleman**               | 2 (Frontend, Docs)                                                                                                                             | Diseño premium y redacción           |
+| **04_Hillary**                 | 2 (Life OS, Inbox)                                                                                                                             | Gestión de vida personal             |
+| **05_Compound_Engineering**    | 4                                                                                                                                              | Ingeniería avanzada (CE)             |
+| **06_Youtube_Full_Video**      | 2                                                                                                                                              | Pipeline de producción de video      |
 
 ### 01_Rules — Reglas (13 .mdc + README + RULES_INDEX.md + .Backup/)
 
-| #   | Regla                            | Propósito               |
+| #    | Regla                             | Propósito                 |
 |-----|----------------------------------|--------------------------|
-| 00  | **00_Core_Protocol.mdc**         | Protocolo core           |
-| 01  | **01_Pilares_Sistema.mdc**       | Pilares fundamentales    |
-| 02  | **02_Motor_Agent.mdc**           | Motor de agentes         |
-| 03  | **03_Protocolos_Ejecucion.mdc**  | Protocolos de ejecución  |
-| 04  | **04_Observabilidad.mdc**        | Sistema de observación   |
-| 05  | **05_Reporting.mdc**             | Reportes y métricas      |
-| 06  | **06_Contexto_Gestion.mdc**      | Gestión de contexto      |
-| 07  | **07_Docs_Guias.mdc**            | Convenciones             |
-| 08  | **08_Token_Economy.mdc**         | Economía de tokens       |
-| 09  | **09_Agent_Teams_Protocol.mdc**  | Protocolo de equipos     |
-| 10  | **10_Git_Directions.mdc**        | Direcciones Git          |
-| 11  | **11_Minimax.mdc**               | Configuración Minimax    |
-| 12  | **12_Audit_OS_Integrity.mdc**    | Auditoría integridad OS  |
+| 00   | **00_Core_Protocol.mdc**          | Protocolo core            |
+| 01   | **01_Pilares_Sistema.mdc**        | Pilares fundamentales     |
+| 02   | **02_Motor_Agent.mdc**            | Motor de agentes          |
+| 03   | **03_Protocolos_Ejecucion.mdc**   | Protocolos de ejecución   |
+| 04   | **04_Observabilidad.mdc**         | Sistema de observación    |
+| 05   | **05_Reporting.mdc**              | Reportes y métricas       |
+| 06   | **06_Contexto_Gestion.mdc**       | Gestión de contexto       |
+| 07   | **07_Docs_Guias.mdc**             | Convenciones              |
+| 08   | **08_Token_Economy.mdc**          | Economía de tokens        |
+| 09   | **09_Agent_Teams_Protocol.mdc**   | Protocolo de equipos      |
+| 10   | **10_Git_Directions.mdc**         | Direcciones Git           |
+| 11   | **11_Minimax.mdc**                | Configuración Minimax     |
+| 12   | **12_Audit_OS_Integrity.mdc**     | Auditoría integridad OS   |
 
 > **Nota:** También existe `.Backup/00_Rules_Backup/` con copia de seguridad de las rules.
 
 ### 02_Tools — Herramientas del OS
 
-| #   | Herramienta         | Cantidad                                              | Propósito                         |
-|-----|---------------------|-------------------------------------------------------|-----------------------------------|
-| 01  | **01_Agents**       | 48 (5 Dream + 23 Specialists + 13 Indiv + 5 Growth + 2 Root)               | Orquestación multi-agente         |
-| 02  | **02_Skills**       | 394 activos + ~490 legacy                             | 12 áreas funcionales              |
-| 03  | **03_Mcp**          | —                                                     | Backup configs MCP                |
-| 04  | **04_Integrations** | —                                                     | Fireflies, Granola                |
-| 05  | **05_Hooks**        | 10 hooks                                              | Ganchos 6 fases                   |
-| 06  | **06_Plugins**      | —                                                     | Plugins OS (Staff, Personal_Os)   |
-| 07  | **07_Server**       | —                                                     | Engram server + AIPM + MCP        |
-| 08  | **08_Evals**        | —                                                     | Evaluadores (vacíos)              |
-| 09  | **09_Templates**    | —                                                     | Templates (vacíos)                |
+| #    | Herramienta          | Cantidad                                                    | Propósito                          |
+|-----|---------------------|------------------------------------------------------------|-----------------------------------|
+| 01   | **01_Agents**        | 48 (5 Dream + 23 Specialists + 13 Indiv + 5 Growth + 2 Root)| Orquestación multi-agente          |
+| 02   | **02_Skills**        | 394 activos + ~490 legacy                                   | 12 áreas funcionales               |
+| 03   | **03_Mcp**           | —                                                           | Backup configs MCP                 |
+| 04   | **04_Integrations**  | —                                                           | Fireflies, Granola                 |
+| 05   | **05_Hooks**         | 10 hooks                                                    | Ganchos 6 fases                    |
+| 06   | **06_Plugins**       | —                                                           | Plugins OS (Staff, Personal_Os)    |
+| 07   | **07_Server**        | —                                                           | Engram server + AIPM + MCP         |
+| 08   | **08_Evals**         | —                                                           | Evaluadores (vacíos)               |
+| 09   | **09_Templates**     | —                                                           | Templates (vacíos)                 |
 
 **Agentes por Categoría (numeración secuencial 00-19):**
 
-| #        | Categoría                               | Tipo            | Cantidad            |
+| #         | Categoría                                | Tipo             | Cantidad             |
 |----------|-----------------------------------------|-----------------|---------------------|
-| 00       | Orchestrator / Agent_Template           | Root            | 2 archivos          |
-| 01       | Dream Team                              | Subdirectorio   | 5 agentes + README    |
-| 02       | Specialists Compound                    | Subdirectorio   | 23 agentes + README   |
-| 03       | Growth                                  | Subdirectorio   | 5 agentes + README    |
-| 04       | Contexto                                | Subdirectorio   | 0 agentes (LEEME)     |
-| 05       | Marca                                   | Subdirectorio   | 0 agentes (LEEME)     |
-| 06       | Plantillas                              | Subdirectorio   | 0 agentes (LEEME)     |
-| 07–13    | Individuales (Accessibility → Hillary)   | Root            | 7 archivos            |
-| 14–19    | Specialist Individuales (Git → TDD)      | Root            | 6 archivos            |
-|          | **TOTAL**               |                 | **48 agentes**        |
+| 00        | Orchestrator / Agent_Template            | Root             | 2 archivos           |
+| 01        | Dream Team                               | Subdirectorio    | 5 agentes + README   |
+| 02        | Specialists Compound                     | Subdirectorio    | 23 agentes + README  |
+| 03        | Growth                                   | Subdirectorio    | 5 agentes + README   |
+| 04        | Contexto                                 | Subdirectorio    | 0 agentes (LEEME)    |
+| 05        | Marca                                    | Subdirectorio    | 0 agentes (LEEME)    |
+| 06        | Plantillas                               | Subdirectorio    | 0 agentes (LEEME)    |
+| 07–13     | Individuales (Accessibility → Hillary)   | Root             | 7 archivos           |
+| 14–19     | Specialist Individuales (Git → TDD)      | Root             | 6 archivos           |
+|           | **TOTAL**                                |                  | **48 agentes**       |
 
 **Skills por Área:**
 
-| Área                         | Skills | Descripción                                    |
+| Área                          | Skills  | Descripción                                     |
 |------------------------------|--------|------------------------------------------------|
-| **00_Compound_Engineering**   | 63     | Core CE — SDD + CE workflow skills             |
-| **00_System_Core**            | 1      | Stack base OS                                  |
-| **10_Skill_Auditor**          | 1      | Auditoría de skills                            |
-| **01_Creacion_Contenidos**    | 40     | Brand, YouTube, SEO, Carruseles                |
-| **02_Diseno_Ui_Ux**           | 29     | Product Design, UI/UX, Taste, Minimal          |
-| **03_Video_Media**            | 7      | Video Intel, James Cameron                     |
-| **04_Automatizacion**         | 37     | N8N, Firecrawl, GWS Client                     |
-| **05_Workflows**              | 37     | Agent Teams, PM, Orchestrator                  |
-| **06_Tools**                  | 112    | Skill Creator, Testing, DevOps, Data Analyst   |
-| **07_Personal_Os**            | 32     | Life OS, Hillary, Rituales                     |
-| **08_Invictus_Web**           | 15     | Playwright, Superpowers, Browser Auto          |
-| **09_Claude_Ads**             | 20     | Claude Ads & Promoted Content                  |
+| **00_Compound_Engineering**   | 63      | Core CE — SDD + CE workflow skills              |
+| **00_System_Core**            | 1       | Stack base OS                                   |
+| **10_Skill_Auditor**          | 1       | Auditoría de skills                             |
+| **01_Creacion_Contenidos**    | 40      | Brand, YouTube, SEO, Carruseles                 |
+| **02_Diseno_Ui_Ux**           | 29      | Product Design, UI/UX, Taste, Minimal           |
+| **03_Video_Media**            | 7       | Video Intel, James Cameron                      |
+| **04_Automatizacion**         | 37      | N8N, Firecrawl, GWS Client                      |
+| **05_Workflows**              | 37      | Agent Teams, PM, Orchestrator                   |
+| **06_Tools**                  | 112     | Skill Creator, Testing, DevOps, Data Analyst    |
+| **07_Personal_Os**            | 32      | Life OS, Hillary, Rituales                      |
+| **08_Invictus_Web**           | 15      | Playwright, Superpowers, Browser Auto           |
+| **09_Claude_Ads**             | 20      | Claude Ads & Promoted Content                   |
 
 ---
 
@@ -423,45 +423,45 @@ Think_Different/                    # RAÍZ
 
 ## ⚙️ Archivos y Directorios de Configuración Raíz
 
-| Archivo/Directorio        | Propósito                                                      |
+| Archivo/Directorio         | Propósito                                                       |
 |---------------------------|----------------------------------------------------------------|
-| **.mcp.json**             | 7 MCPs Claude Code (root) + 38 backup en 03_Mcp/               |
-| **.claude/**              | Config Claude Code (skills, rules, agents, memory, history)    |
-| **.claude-plugin/**       | Claude plugin directory                                        |
-| **.opencode/**            | Config OpenCode + plugins + skills locales (ui-ux-pro-max)     |
-| **.atl/**                 | SDD Registry + openspec/ + skill-registry cache                |
-| **.agent/**               | Backup estratégico: Rules, Agents, Skills, Workflows, GGA      |
-| **.pi/**                  | PI config: 10 SDD agents, 3 chains, gentle-ai support          |
-| **.codex/**               | Config Codex (mínimo)                                           |
-| **.playwright-mcp/**      | Logs de Playwright MCP                                         |
-| **.env**                  | Variables de entorno                                           |
-| **.gga**                  | Guardian Angel config (FILE — opencode, skill validation)      |
-| **.vscode/**              | Config VS Code                                                 |
-| **AGENTS.md**             | GGA Pre-Commit entry (redirect → 00_Winter_is_Coming)          |
-| **CLAUDE.md**             | Config IAs (FUENTE) — Boot Protocol, 12 Laws, Super Campeones  |
-| **OS_DIRECTORY.md**       | JARVIS discovery — 36 MCPs, 28 HUBs, 16 audit findings        |
-| **STRUCTURE_v4.7.md**     | Este archivo — estructura completa                             |
+| **.mcp.json**              | 7 MCPs Claude Code (root) + 38 backup en 03_Mcp/                |
+| **.claude/**               | Config Claude Code (skills, rules, agents, memory, history)     |
+| **.claude-plugin/**        | Claude plugin directory                                         |
+| **.opencode/**             | Config OpenCode + plugins + skills locales (ui-ux-pro-max)      |
+| **.atl/**                  | SDD Registry + openspec/ + skill-registry cache                 |
+| **.agent/**                | Backup estratégico: Rules, Agents, Skills, Workflows, GGA       |
+| **.pi/**                   | PI config: 10 SDD agents, 3 chains, gentle-ai support           |
+| **.codex/**                | Config Codex (mínimo)                                           |
+| **.playwright-mcp/**       | Logs de Playwright MCP                                          |
+| **.env**                   | Variables de entorno                                            |
+| **.gga**                   | Guardian Angel config (FILE — opencode, skill validation)       |
+| **.vscode/**               | Config VS Code                                                  |
+| **AGENTS.md**              | GGA Pre-Commit entry (redirect → 00_Winter_is_Coming)           |
+| **CLAUDE.md**              | Config IAs (FUENTE) — Boot Protocol, 12 Laws, Super Campeones   |
+| **OS_DIRECTORY.md**        | JARVIS discovery — 36 MCPs, 28 HUBs, 16 audit findings          |
+| **STRUCTURE_v4.7.md**      | Este archivo — estructura completa                              |
 
 ---
 
 ## 📊 ESTADO DEL SISTEMA v4.8
 
-| Componente                      | Total                                                        | Estado |
+| Componente                       | Total                                                         | Estado  |
 |---------------------------------|--------------------------------------------------------------|--------|
-| Skills (activas)                | 394 en 12 áreas funcionales                                  | ✅     |
-| Skills (legacy)                 | ~490 en 24 categorías archivadas (10_Skills_Legacy)          | 💾     |
-| Agentes                         | 48 (source) / 82 (con SDD/CE) / 13 agent-files root          | ✅     |
-| Rules                           | 13 .mdc (00–12) + README + RULES_INDEX.md + .Backup/        | ✅     |
-| MCPs                            | 7 servidores root + 38 backup en 03_Mcp/                      | ✅     |
-| HUBs                            | 21 (00–18, 15a/b, 16a/b) + HUB_SOTA + HUB_CATALOG           | ✅     |
-| Scripts                         | 284 (283 .py + 1 .js)                                        | ✅     |
-| Workflows                       | 30 en 7 categorías                                           | ✅     |
-| Process Notes                   | 25 NP activas (colisiones 01 y 10) + _archive histórico      | ✅     |
-| SOTA Features                   | 5 módulos (ambient, contemplation, feedback, memory, voice)  | ✅     |
-| JARVIS Manifests                | 7 manifests (OS_Inventory → Hook_Registry)                  | ✅     |
-| Projects Lab                    | 9 proyectos activos (Efrain → Valeria)                       | ✅     |
-| Directorios Config              | 12 (`.agent`, `.atl`, `.claude`, `.opencode`, `.pi`, etc)    | ✅     |
-| OpenCode Skills Registrados     | 8 CE skills + 10 SDD + 1 local (ui-ux-pro-max)               | ✅     |
+| Skills (activas)                 | 394 en 12 áreas funcionales                                   | ✅       |
+| Skills (legacy)                  | ~490 en 24 categorías archivadas (10_Skills_Legacy)           | 💾       |
+| Agentes                          | 48 (source) / 82 (con SDD/CE) / 13 agent-files root           | ✅       |
+| Rules                            | 13 .mdc (00–12) + README + RULES_INDEX.md + .Backup/          | ✅       |
+| MCPs                             | 7 servidores root + 38 backup en 03_Mcp/                      | ✅       |
+| HUBs                             | 21 (00–18, 15a/b, 16a/b) + HUB_SOTA + HUB_CATALOG             | ✅       |
+| Scripts                          | 284 (283 .py + 1 .js)                                         | ✅       |
+| Workflows                        | 30 en 7 categorías                                            | ✅       |
+| Process Notes                    | 25 NP activas (colisiones 01 y 10) + _archive histórico       | ✅       |
+| SOTA Features                    | 5 módulos (ambient, contemplation, feedback, memory, voice)   | ✅       |
+| JARVIS Manifests                 | 7 manifests (OS_Inventory → Hook_Registry)                    | ✅       |
+| Projects Lab                     | 9 proyectos activos (Efrain → Valeria)                        | ✅       |
+| Directorios Config               | 12 (`.agent`, `.atl`, `.claude`, `.opencode`, `.pi`, etc)     | ✅       |
+| OpenCode Skills Registrados      | 8 CE skills + 10 SDD + 1 local (ui-ux-pro-max)                | ✅       |
 
 ---
 
@@ -485,16 +485,16 @@ Al iniciar sesión, ejecutar EN ORDEN:
 
 ## 📋 CONVENCIONES DE NOMENCLATURA
 
-| Tipo                     | Estándar                        | Ejemplo                           |
+| Tipo                      | Estándar                         | Ejemplo                            |
 |--------------------------|---------------------------------|-----------------------------------|
-| Archivos de código       | `snake_case.py`                 | `os_health_test.py`              |
-| Archivos de datos        | `Pascal_Case` + guion_bajo      | `OS_Health_2026-05-22.txt`       |
-| Carpetas principales     | `XX_Nombre`                     | `00_Winter_is_Coming`            |
-| SKILL.md                 | `SKILL.md` (fijo)               | `Skills/.../SKILL.md`            |
-| Scripts HUBs             | `NN_Nombre_Hub.py`              | `20_System_Mapper_Hub.py`        |
-| Archivos `00_`           | `00_` prefix = NO TOCAR         | `00_SALUD_REPORTS.md`            |
-| Directorios Config       | `.nombre` (dotfiles)            | `.agent/`, `.atl/`, `.claude/`   |
-| Notas de Proceso         | `NN_NP_Titulo.md`               | `23_NP_Sesion_Auditoria_v4.7.md` |
+| Archivos de código        | `snake_case.py`                  | `os_health_test.py`                |
+| Archivos de datos         | `Pascal_Case` + guion_bajo       | `OS_Health_2026-05-22.txt`         |
+| Carpetas principales      | `XX_Nombre`                      | `00_Winter_is_Coming`              |
+| SKILL.md                  | `SKILL.md` (fijo)                | `Skills/.../SKILL.md`              |
+| Scripts HUBs              | `NN_Nombre_Hub.py`               | `20_System_Mapper_Hub.py`          |
+| Archivos `00_`            | `00_` prefix = NO TOCAR          | `00_SALUD_REPORTS.md`              |
+| Directorios Config        | `.nombre` (dotfiles)             | `.agent/`, `.atl/`, `.claude/`     |
+| Notas de Proceso          | `NN_NP_Titulo.md`                | `23_NP_Sesion_Auditoria_v4.7.md`   |
 
 **Reglas de Secuencia:**
 1. **Enumeración limpia** — Sin huecos ni duplicados
