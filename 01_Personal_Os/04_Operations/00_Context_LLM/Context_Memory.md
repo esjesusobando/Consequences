@@ -123,3 +123,57 @@ Revisar todo el proyecto Think_Different sin eliminar información, corregir deu
 ### Validaciones
 - Se evitó tocar `node_modules`, `.git`, archivos de archivo histórico y memoria/contexto antiguo salvo esta nota nueva.
 - La política aplicada fue complementar y mover con trazabilidad, no eliminar.
+
+---
+
+## Sesión: 2026-05-26 — Bugfixes post-Auditoría (v4.8)
+
+### Objetivo
+Corregir bugs detectados durante la auditoría inicial del proyecto: Contex_Memory typo, .agent hooks sin sync, counts incorrectos en docs, árboles con rutas mal posicionadas.
+
+### Cambios Realizados
+
+#### 1. Rename Contex_Memory.md → Context_Memory.md
+- **Bug**: Nombre incorrecto `Contex_Memory.md` (falta la 't' en Context)
+- **Acción**: Renombrado a `Context_Memory.md` + movido a `00_Context_Memory/` (estaba en raíz de `00_Context_LLM/`)
+- **Refs actualizadas**: `README.md`, `Structure_v4.8.md`, `COMPLETION_SUMMARY.md`, `04_debt_scan_active_refs.json`
+- **Head updated**: `01_CTX_Sesion_Auditoria_Estado_del_Arte_v4.7.md` title cambiado a `Context_Memory`
+
+#### 2. Sync .agent hooks con source
+- **Bug**: `.agent/` hooks desactualizados vs `01_Core/02_Tools/05_Hooks/`
+- **Acción**: 
+  - `notification.py` sincronizado (código moderno con winsound, Beep, fallbacks)
+  - `secret_scanner.py` copiado a `.agent/04_Extensions/01_Hooks/01_Pre_Tool/`
+  - `task-complete.bat` copiado a `.agent/04_Extensions/01_Hooks/04_Sound/`
+
+#### 3. Fix Structure_v4.8.md self-reference
+- **Bug**: El footer del tree se referenciaba a sí mismo como `Structure_v4.7.md`
+- **Acción**: Corregido a `Structure_v4.8.md`
+
+#### 4. Fix counts en .agent/CLAUDE.md
+- **HUBs**: 28 → 24 (la tabla real tiene 24 entradas)
+- **Rules**: 12 → 13 .mdc (faltaba contabilizar `12_Audit_OS_Integrity.mdc`)
+
+#### 5. Fix árboles con EVOLUTION_LOG.md mal posicionado
+- **Bug**: `00_EVOLUTION_LOG.md` aparecía como hijo directo de `01_Personal_Os/` en `README.md` y `OS_DIRECTORY.md`
+- **Real**: Está en `01_Personal_Os/04_Operations/00_EVOLUTION_LOG.md`
+- **Acción**: Movido dentro del árbol bajo `04_Operations/`
+- **Bonus**: En `OS_DIRECTORY.md` todo el subárbol de `04_Operations/` estaba mal anidado bajo `05_Archive/` — corregido
+
+#### 6. Fix version header 04_Operations/README.md
+- **Bug**: Decía "4.7 Consequences"
+- **Acción**: Actualizado a "4.8 Consequences"
+
+### Estado Post-Fixes
+| Área | Estado |
+|---|---|
+| Contex_Memory typo | ✅ Eliminado completamente |
+| .agent hooks | ✅ Synced con source |
+| Structure_v4.8 self-ref | ✅ Corregida |
+| CLAUDE.md counts | ✅ HUBs 24, Rules 13 |
+| EVOLUTION_LOG árbol | ✅ En posición correcta bajo 04_Operations/ |
+| OS_DIRECTORY.md tree | ✅ Subárbol 04_Operations corregido |
+| version headers | ✅ 4.8 en todos lados |
+
+### Pendiente
+- `.mcp.json`: Renombrar `eagle-mcp` → `obsidian-mcp` (el key corre `obsidian-mcp@latest`, no es Eagle)

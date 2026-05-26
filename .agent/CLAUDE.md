@@ -155,7 +155,7 @@ Think_Different/
 
 ---
 
-# HUB Scripts (284 scripts — 21+2 HUBs total: 19 raíz + 9 aux)
+# HUB Scripts (284 scripts — 24 HUBs)
 
 Centralizados en `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 
@@ -298,9 +298,9 @@ Code review con IA integrado.
 | Categoria                             | Estado            | Notas                                      |
 |---------------------------------------|-------------------|--------------------------------------------|
 | Estructura v4.8 (4 carpetas raíz)     | ✅ PASS            | Winter / Personal_Os / Playground / Resultado |
-| HUBs (28 total: 19 raíz + 9 aux)      | ✅ ACTIVE          | 284 scripts recursivos en 03_Scripts_Os/    |
+| HUBs (24 total)                        | ✅ ACTIVE          | 284 scripts recursivos en 03_Scripts_Os/    |
 | Skills (12 áreas funcionales)         | ✅ OPERATIONAL     | 394 skills                                 |
-| Rules (12 .mdc)                       | ✅ DEFINED         | En 01_Personal_Os/01_Core/01_Rules/       |
+| Rules (13 .mdc)                       | ✅ DEFINED         | En 01_Personal_Os/01_Core/01_Rules/       |
 | MCPs (7+38 activos)                     | ✅ ACTIVE          | .mcp.json en raíz                          |
 | Auto-Improvement Engine               | ✅ OPERATIONAL     | En 04_Operations/01_Auto_Improvement/      |
 | JARVIS Manifests (7 archivos)          | ✅ VALIDATED       | 00_Manifest/ en 02_Agent_Teams_Lite/       |

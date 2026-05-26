@@ -76,7 +76,6 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 Think_Different/                         # RAÍZ
 ├── 00_Winter_is_Coming/          ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
-│   ├── 00_EVOLUTION_LOG.md       ✅ Registro histórico de evolución del OS
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD)
 │   │   ├── 00_Workflows_Os/     ✅ 30 workflows (7 categorías)
 │   │   ├── 01_Rules/            ✅ 13 reglas .mdc
@@ -107,18 +106,26 @@ Think_Different/                         # RAÍZ
 │   │   ├── 02_Hillary_Inbox/
 │   │   └── README.md
 │   ├── 04_Operations/             ✅ Operativo
-│   └── 05_Archive/                ✅ Backups, snapshots, históricos
-│       ├── 00_Context_LLM/        ✅ Memoria LLM (Engram, notes)
-│       ├── 01_Auto_Improvement/   ✅ Motor auto-mejora recursiva
-│       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests
-│       ├── 03_Scripts_Os/         ✅ 21 HUBs (19 Hub.py + HUB_SOTA + HUB_CATALOG) + 267 scripts + 88 legacy
-│       ├── 04_Installer/          ✅ Installer scripts
-│       ├── 05_Projects/          ✅ Proyectos activos
-│       ├── 06_SOTA_Features/     ✅ Features estado-del-arte
-│       ├── 07_Reports/           ✅ Reportes generados
-│       ├── GOVERNANCE.md
-│       ├── README.md
-│       └── RUNBOOK.md
+│   │   ├── 00_EVOLUTION_LOG.md   ✅ Registro histórico de evolución del OS
+│   │   ├── 00_Context_LLM/        ✅ Memoria LLM (Engram, notes)
+│   │   ├── 01_Auto_Improvement/   ✅ Motor auto-mejora recursiva
+│   │   ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests
+│   │   ├── 03_Scripts_Os/         ✅ 21 HUBs (19 Hub.py + HUB_SOTA + HUB_CATALOG) + 267 scripts + 88 legacy
+│   │   ├── 04_Installer/          ✅ Installer scripts
+│   │   ├── 05_Projects/          ✅ Proyectos activos
+│   │   ├── 06_SOTA_Features/     ✅ Features estado-del-arte
+│   │   ├── 07_Reports/           ✅ Reportes generados
+│   │   ├── GOVERNANCE.md
+│   │   ├── README.md
+│   │   └── RUNBOOK.md
+│   ├── 05_Archive/                ✅ Backups, snapshots, históricos
+│   │   ├── 00_Backup_Os/
+│   │   ├── 01_Repos_Reference/
+│   │   ├── 02_Legacy_Content/
+│   │   ├── 03_Backups_Audits/
+│   │   ├── 09_Session_Summaries/
+│   │   ├── 10_Skills_Legacy/
+│   │   └── README.md
 ├── 02_Playground/                ✅ Zona de pruebas (6 carpetas, scripts test en 06_Testing_Legacy/)
 ├── 03_Resultado/                 ✅ Outputs de proyectos (agrupado: Proyectos, Aprendizaje, Experimentos, Reportes, Documentacion)
 ├── .agent/                       ✅ Backup estratégico

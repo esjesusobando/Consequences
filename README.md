@@ -33,7 +33,6 @@
 Think_Different/                           # RAÍZ
 ├── 00_Winter_is_Coming/           ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/                ✅ EL SISTEMA OPERATIVO
-│   ├── 00_EVOLUTION_LOG.md        ✅ Registro histórico de evolución del OS
 │   ├── 01_Core/                   ✅ Motor del OS (FUENTE DE VERDAD)
 │   │   ├── 00_Workflows_Os/      ✅ 30 workflows (7 categorías)
 │   │   ├── 01_Rules/             ✅ 13 reglas .mdc — FUENTE DE VERDAD
@@ -54,6 +53,7 @@ Think_Different/                           # RAÍZ
 │   │   ├── 02_Hillary_Inbox/
 │   │   └── README.md
 │   ├── 04_Operations/            ✅ Motor operativo
+│       ├── 00_EVOLUTION_LOG.md   ✅ Registro histórico de evolución del OS
 │       ├── 00_Context_LLM/       ✅ Memoria LLM (Engram, notes)
 │       ├── 01_Auto_Improvement/  ✅ Auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests JARVIS
