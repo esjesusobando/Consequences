@@ -64,7 +64,7 @@ Transformar cualquier contenido (URLs de YouTube, artículos, docs) en:
   - Puntos principales
 
 # SI NO encuentra resultados...
-→ Warning al usuario: "No encontré info de este video. 
+→ Warning al usuario: "No encontré info de este video.
    ¿Tenés la transcripción? Si la tenés, pasámela y continuamos."
 
 # SI encuentra → Continuar a Step 2
@@ -350,7 +350,7 @@ Tweet 2: [280 chars]
 # SI se usa API (Exa, etc):
 - Verificar créditos restantes
 - SI < 10% → NOTIFICAR al usuario:
-  "⚠️warning: Créditos de [API] al [X]%. 
+  "⚠️warning: Créditos de [API] al [X]%.
    Considera reducir uso o recargar."
 - NUNCA exceder el límite
 ```
@@ -383,7 +383,7 @@ Tweet 2: [280 chars]
 ```
 USER: /Learning https://www.youtube.com/watch?v=b6hfk8k-UVk
 
-AI: 
+AI:
 🔍 [1] Buscando info con Exa...
 ✅ [2] Encontré: Recall 2.0 - One Living Space for Your Knowledge
 🛠️ [3] Herramientas: Recall app, AI chat, Knowledge Graph
@@ -393,7 +393,7 @@ AI:
    - Update knowledge base
 ✅ [6] Guardado en 02_Knowledge/00_Second_Brain/02_LA_Recall_20/
 
-📊 Output: 
+📊 Output:
 - ✅ Resumen 500 palabras (ES + EN)
 - ✅ Prompts + 7 perfiles
 - ✅ Demos Junior

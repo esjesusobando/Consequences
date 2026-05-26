@@ -1,8 +1,8 @@
 # 🎨 KIT DE DISEÑO — TOP 16 + OPEN DESIGN + LEARNING
-**PersonalOS v4.1 — 2026-05-15**
+**PersonalOS v4.7 — 2026-05-22**
 
-> **Proyecto:** PersonalOS v4.1 Production
-> **Fecha:** 2026-05-15
+> **Proyecto:** PersonalOS v4.7 Production
+> **Fecha:** 2026-05-22
 > **Criterio:** Valor práctico × Estado del arte × Calidad de diseño
 > **Actualización:** HTMLSlides agregado + 3 Learning Always videos para alimentar el OS
 
@@ -417,5 +417,5 @@ volta, wepik, wix, world, youtube, zapier, zeego, zen, zest, zova
 
 ---
 
-*PersonalOS Consequences v3.3 — 2026-05-15*
+*PersonalOS Consequences v3.3 — 2026-05-22*
 *Actualizado: HTMLSlides #2 + Learning Always #16 + Flujo actualizado*

@@ -16,7 +16,7 @@ Configuración local de Claude Code y sistema de memoria persistente. Contiene r
 ```
 .claude/
 ├── memory/                  # Memoria persistente (Engram)
-│   └── audit-2026-05-20.md  # Context de auditoría
+│   └── audit-2026-05-22.md  # Context de auditoría
 ├── settings.json            # Config de Claude Code
 └── CLAUDE.md               # Constitución para IAs
 ```

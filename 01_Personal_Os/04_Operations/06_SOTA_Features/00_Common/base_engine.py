@@ -1,6 +1,6 @@
 """
 SOTA Features — Base Engine
-PersonalOS v4.1 — SOTA Module
+PersonalOS v4.7 — SOTA Module
 """
 import yaml
 from abc import ABC, abstractmethod

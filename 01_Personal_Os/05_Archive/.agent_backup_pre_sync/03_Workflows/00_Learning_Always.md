@@ -64,7 +64,7 @@ Transformar cualquier contenido (URLs de YouTube, artículos, docs) en:
   - Puntos principales
 
 # SI NO encuentra resultados...
-→ Warning al usuario: "No encontré info de este video. 
+→ Warning al usuario: "No encontré info de este video.
    ¿Tenés la transcripción? Si la tenés, pasámela y continuamos."
 
 # SI encuentra → Continuar a Step 2
@@ -183,10 +183,10 @@ Para cada demo/code found:
 ```markdown
 ## Herramientas identificadas
 
-| # | Herramienta | Propósito | Versión |
-|---|-------------|----------|--------|
-| 1 | [Tool 1]   | [Use]    | [v]    |
-| 2 | [Tool 2]   | [Use]    | [v]    |
+| #          | Herramienta          | Propósito         | Versión         |
+|-----------|---------------------|------------------|----------------|
+| 1          | [Tool 1]             | [Use]             | [v]             |
+| 2          | [Tool 2]             | [Use]             | [v]             |
 ... | ...        | ...      | ...
 
 ## Para el OS
@@ -335,13 +335,13 @@ Tweet 2: [280 chars]
 ```markdown
 ## [XX] [Título] — [Fecha]
 
-| Campo | Valor |
-|-------|-------|
-| URL   | [URL] |
-| Tipo | [Video/Artículo/Doc] |
-| Tema | [Tema principal] |
-| Herramientas | [Lista] |
-| Fecha processed | [YYYY-MM-DD] |
+| Campo                  | Valor                       |
+|-----------------------|----------------------------|
+| URL                    | [URL]                       |
+| Tipo                   | [Video/Artículo/Doc]        |
+| Tema                   | [Tema principal]            |
+| Herramientas           | [Lista]                     |
+| Fecha processed        | [YYYY-MM-DD]                |
 ```
 
 ### Step 5.3: Notificar créditos
@@ -350,7 +350,7 @@ Tweet 2: [280 chars]
 # SI se usa API (Exa, etc):
 - Verificar créditos restantes
 - SI < 10% → NOTIFICAR al usuario:
-  "⚠️warning: Créditos de [API] al [X]%. 
+  "⚠️warning: Créditos de [API] al [X]%.
    Considera reducir uso o recargar."
 - NUNCA exceder el límite
 ```
@@ -359,22 +359,22 @@ Tweet 2: [280 chars]
 
 ## Credit Management
 
-| API | Estado | Acción al 10% |
-|-----|--------|--------------|
-| Exa | [CHECK] | Notificar usuario |
-| Firecrawl | [CHECK] | Notificar usuario |
+| API              | Estado          | Acción al 10%            |
+|-----------------|----------------|-------------------------|
+| Exa              | [CHECK]         | Notificar usuario        |
+| Firecrawl        | [CHECK]         | Notificar usuario        |
 
 ---
 
 ## Error Handling
 
-| Error | Solución |
-|-------|---------|
-| No info found | Request transcript al usuario |
-| API error | Usar web search manual |
-| Invalid URL | Request valid URL |
-| Rate limit | Wait + retry o notify user |
-| Timeout | Continuar con lo que hay + documentar |
+| Error                | Solución                                     |
+|---------------------|---------------------------------------------|
+| No info found        | Request transcript al usuario                |
+| API error            | Usar web search manual                       |
+| Invalid URL          | Request valid URL                            |
+| Rate limit           | Wait + retry o notify user                   |
+| Timeout              | Continuar con lo que hay + documentar        |
 
 ---
 
@@ -383,7 +383,7 @@ Tweet 2: [280 chars]
 ```
 USER: /Learning https://www.youtube.com/watch?v=b6hfk8k-UVk
 
-AI: 
+AI:
 🔍 [1] Buscando info con Exa...
 ✅ [2] Encontré: Recall 2.0 - One Living Space for Your Knowledge
 🛠️ [3] Herramientas: Recall app, AI chat, Knowledge Graph
@@ -393,7 +393,7 @@ AI:
    - Update knowledge base
 ✅ [6] Guardado en 02_Knowledge/00_Second_Brain/02_LA_Recall_20/
 
-📊 Output: 
+📊 Output:
 - ✅ Resumen 500 palabras (ES + EN)
 - ✅ Prompts + 7 perfiles
 - ✅ Demos Junior
@@ -408,15 +408,15 @@ AI:
 
 ## Perfiles de Agente (para prompts)
 
-| # | Perfil | Carpeta SKILL |
-|---|-------|---------------|
-| 01 | Project Manager | `02_Project_Manager` |
-| 02 | Product Manager | `03_Product_Manager` |
-| 03 | Product Design | `04_Product_Design` |
-| 04 | Vibe Coding | `05_Vibe_Coding` |
-| 05 | Testing | `06_Testing` |
-| 06 | DevOps | `07_DevOps` |
-| 07 | Marketing | `09_Marketing` |
+| #          | Perfil                 | Carpeta SKILL               |
+|-----------|-----------------------|----------------------------|
+| 01         | Project Manager        | `02_Project_Manager`        |
+| 02         | Product Manager        | `03_Product_Manager`        |
+| 03         | Product Design         | `04_Product_Design`         |
+| 04         | Vibe Coding            | `05_Vibe_Coding`            |
+| 05         | Testing                | `06_Testing`                |
+| 06         | DevOps                 | `07_DevOps`                 |
+| 07         | Marketing              | `09_Marketing`              |
 
 ---
 

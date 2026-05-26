@@ -1,6 +1,6 @@
 """
 Voice Profile Engine
-PersonalOS v4.1 — SOTA Feature
+PersonalOS v4.7 — SOTA Feature
 Standalone module — no relative imports.
 """
 import sys

@@ -1,6 +1,6 @@
 # 03_Growth — Agentes de Contenido y Crecimiento
 
-**Versión:** v3.3 | **Fecha:** 2026-04-29
+**Versión:** v4.7 | **Fecha:** 2026-05-22
 
 Agentes especializados en creación y transformación de contenido para canales digitales — YouTube, redes sociales, carruseles.
 
@@ -41,4 +41,4 @@ Idea/Research → Content Transformer → Youtube Script Writer → Title Genera
 
 ---
 
-_PersonalOS v3.3 — Growth Squad_
+_PersonalOS v4.7 Consequences — Growth Squad_

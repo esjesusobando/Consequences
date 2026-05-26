@@ -113,7 +113,7 @@ export class BasePage {
 // Page-specific implementation
 export interface LoginData {
   email: string;
-  password: string;
+  credential: string;
 }
 
 export class LoginPage extends BasePage {
@@ -226,7 +226,7 @@ export function generateTestUser() {
   return {
     name: "Test User",
     email: generateUniqueEmail(),
-    password: "TestPassword123!",
+    credential: readTestCredentialFromEnv(),
   };
 }
 ```
@@ -244,7 +244,7 @@ test.describe("Login", () => {
       const loginPage = new LoginPage(page);
 
       await loginPage.goto();
-      await loginPage.login({ email: "user@test.com", password: "pass123" });
+      await loginPage.login({ email: "user@test.com", credential: readTestCredentialFromEnv() });
 
       await expect(page).toHaveURL("/dashboard");
     }
