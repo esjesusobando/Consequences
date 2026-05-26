@@ -314,7 +314,7 @@ Documento ÚNICO, **<2KB**, que cada agente lee al boot.
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
 ## ¿Qué hay aquí?
-- 33 MCPs disponibles → ver 00_Manifest/02_MCP_Registry.yaml
+- 36 MCPs disponibles → ver 00_Manifest/02_MCP_Registry.yaml
 - 298 Skills en 9 áreas → ver 00_Manifest/04_Skill_Index.json
 - 52 Agentes activos → ver 00_Manifest/03_Agent_Catalog.yaml
 - 14 HUBs ejecutables → ver 00_Manifest/05_HUB_Catalog.yaml

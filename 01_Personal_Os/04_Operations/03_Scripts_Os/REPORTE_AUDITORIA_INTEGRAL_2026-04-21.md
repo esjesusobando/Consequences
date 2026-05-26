@@ -136,7 +136,7 @@ El sistema muestra 29 categorías pero la numeración no es secuencial (ej: tien
 | `01_Core/01_Rules/`                                     | ✅                               | 25 reglas definidas                                      |
 | `01_Personal_Os/01_Core/02_Tools/02_Skills/`            | ✅                               | ~20+ categorías activas                                  |
 | `01_Core/05_Mcp/`                                       | ✅                               | Config MCPs                                              |
-| `01_Core/07_Hooks/`                                     | ✅                               | Hooks del sistema                                        |
+| `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                     | ✅                               | Hooks del sistema                                        |
 | `02_Knowledge/`                                         | ✅                               | Docs y research                                          |
 | `03_Tasks/`                                             | ✅                               | YAML frontmatter                                         |
 | `04_Operations/`                                        | ✅                               | Auto-improvement                                         |

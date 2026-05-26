@@ -59,7 +59,7 @@ Usuario → Detectar intención → Skill correcto → Ejecutar → Capturar res
 - **SDD:** Compatible con `/sdd:new` si la captura escala a feature
 - **CE:** Compatible con `/ce:work` para ejecutar tasks del inbox
 - **GOALS.md:** Quick Capture → tareas alineadas con objetivos Q2 2026
-- **Notificaciones:** `python 01_Core/07_Hooks/04_Sound/notification.py --task-complete`
+- **Notificaciones:** `python 01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/notification.py --task-complete`
 
 ---
 

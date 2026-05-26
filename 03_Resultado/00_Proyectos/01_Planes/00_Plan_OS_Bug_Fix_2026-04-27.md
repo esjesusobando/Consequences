@@ -59,7 +59,7 @@ Al iniciar esta sesión se lanzó un agente Explore sobre `01_Personal_Os` para 
 
 | Área                 | Issue                                                                                    | Estado                      |
 |---------------------|-----------------------------------------------------------------------------------------|----------------------------|
-| Hooks                | settings.json usa `.agent/04_Extensions/hooks/` vs docs `01_Core/07_Hooks/`              | 🔴 Analizar                  |
+| Hooks                | settings.json usa ` .agent/04_Extensions/01_Hooks/` vs docs `01_Personal_Os/01_Core/02_Tools/05_Hooks/`              | 🔴 Analizar                  |
 | Hooks                | SubagentStop documentado pero NO configurado                                             | 🔴 Fix                       |
 | Hooks                | 5/8 hooks sin wirear                                                                     | 🟠 Fix                       |
 | Agentes              | Contaje inconsistente: docs vs real                                                      | 🟡 Verificar                 |

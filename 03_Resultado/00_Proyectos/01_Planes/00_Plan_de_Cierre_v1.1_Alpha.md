@@ -5,12 +5,12 @@
 > **SOTA VERSION:** v6.3 / Alpha v1.1
 
 ## 1. 🧠 Memoria de Contexto y Engram
-- [ ] Ejecutar `mem_save` a través de Engram para registrar todas las decisiones de arquitectura de esta sesión (Resolución Dinámica, Ley de Formatos, Stack de 33 MCPs).
+- [ ] Ejecutar `mem_save` a través de Engram para registrar todas las decisiones de arquitectura de esta sesión (Resolución Dinámica, Ley de Formatos, Stack de 36 MCPs).
 - [ ] Documentar el "Golden Loop" de validación de *Edge Cases*.
 
 ## 2. ⚖️ Checklist: Plan vs Realidad
 - [ ] **Plan Original:** Consolidar Inventario Core.
-  - *Realidad:* `01_Inventario_Total.md` actualizado aditivamente con el mapa de 9 Áreas y 33 MCPs.
+  - *Realidad:* `01_Inventario_Total.md` actualizado aditivamente con el mapa de 9 Áreas y 36 MCPs.
 - [ ] **Plan Original:** Integración de Agentes (Matrix).
   - *Realidad:* `AGENTS.md` inyectado con la referencia visual al inventario sin perder el historial.
 - [ ] **Plan Original:** Blindaje Dinámico.

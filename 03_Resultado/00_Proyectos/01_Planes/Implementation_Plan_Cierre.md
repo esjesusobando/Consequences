@@ -15,7 +15,7 @@ El siguiente plan encapsula las directrices finales del audio para sellar el sis
 ### 1. Engram & Context Memory
 - Ejecutar el comando CLI de Engram (`mem_save`) para registrar de forma permanente:
   - El blindaje del sistema mediante resolución de rutas dinámicas SOTA.
-  - La finalización del Mapa de 9 Áreas Maestras y los 33 MCPs.
+  - La finalización del Mapa de 9 Áreas Maestras y los 36 MCPs.
   - La consolidación de la directriz de la "Ley de Formatos".
 
 ### 2. Checklist de Validación (Plan vs Realidad)

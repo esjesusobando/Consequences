@@ -1,0 +1,24 @@
+{
+  "date": "2026-05-26",
+  "purpose": "Índice numerado de auditorías JSON movidas desde la raíz de 03_Resultado hacia 03_Reportes/01_Auditorias_OS.",
+  "files": [
+    {
+      "order": 1,
+      "file": "03_Resultado/03_Reportes/01_Auditorias_OS/01_sota_integrity_audit_2026-05-24.json",
+      "valid_json": true,
+      "bytes": 70363
+    },
+    {
+      "order": 2,
+      "file": "03_Resultado/03_Reportes/01_Auditorias_OS/02_agent_workspace_deep_audit_2026-05-26.json",
+      "valid_json": true,
+      "bytes": 61780
+    },
+    {
+      "order": 3,
+      "file": "03_Resultado/03_Reportes/01_Auditorias_OS/03_ecosystem_integration_validation_2026-05-26.json",
+      "valid_json": true,
+      "bytes": 1603
+    }
+  ]
+}

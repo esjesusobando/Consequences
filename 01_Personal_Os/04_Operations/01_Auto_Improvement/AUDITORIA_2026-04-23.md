@@ -142,11 +142,11 @@ ui-ux-pro-max/
 ### 6. BUG: Hooks Path Incorrecto en AGENTS.md
 
 ```diff
-- python 01_Core/07_Hooks/04_Sound/notification.py --task-complete
+- python 01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/notification.py --task-complete
 + python 03_Scripts_Os/00_Sound_Engine.py --task-complete
 ```
 
-El script de sonido está en `03_Scripts_Os/00_Sound_Engine.py` NO en `01_Core/07_Hooks/`.
+El script de sonido está en `03_Scripts_Os/00_Sound_Engine.py` NO en `01_Personal_Os/01_Core/02_Tools/05_Hooks/`.
 
 ---
 

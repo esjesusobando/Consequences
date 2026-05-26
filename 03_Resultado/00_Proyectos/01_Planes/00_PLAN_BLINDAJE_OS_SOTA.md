@@ -173,7 +173,7 @@ Pre-commit hook en producción (`a1fa1e1`): Secret Scanner → GGA → commit ex
    ```bash
    python 01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --scan
    ```
-2. Agregar al hook de fin de sesión en `.agent/04_Extensions/hooks/03_Lifecycle/` o crear cron:
+2. Agregar al hook de fin de sesión en `.agent/04_Extensions/01_Hooks/03_Lifecycle/` o crear cron:
    ```bash
    # Opción A — Hook SessionEnd
    python $PROJECT_ROOT/01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/recursive_improvement_engine.py --scan

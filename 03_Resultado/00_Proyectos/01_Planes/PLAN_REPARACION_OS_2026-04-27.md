@@ -40,7 +40,7 @@ did not match actual filenames on disk (no a/b suffix). Fixed to match reality.
 **Estado:** El replace se hizo en `01_Personal_Os/01_Core/02_Tools/02_Skills/` y parte de `01_Personal_Os/` pero quedan ~120 archivos en:
 - `01_Personal_Os/03_Task/` (tasks activas)
 - `01_Personal_Os/04_Operations/00_Context_LLM/` (context memory)
-- `.agent/04_Extensions/hooks/` (hooks .py)
+- `.agent/04_Extensions/01_Hooks/` (hooks .py)
 - `01_Personal_Os/01_Core/02_Tools/02_Skills/` (scripts .py de skills)
 - `01_Personal_Os/02_Knowledge/` (lessons)
 

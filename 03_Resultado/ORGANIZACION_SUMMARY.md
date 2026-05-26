@@ -65,3 +65,15 @@ Contiene: Informes de auditoría, salud y seguimiento del sistema.
 
 ---
 *Documento generado automáticamente durante la sesión de organización del 24/05/2026*
+
+### Actualización 2026-05-26 — JSON de auditorías
+
+Se movieron los JSON sueltos de la raíz de `03_Resultado/` hacia `03_Resultado/03_Reportes/01_Auditorias_OS/`, con numeración explícita y manifest:
+
+- `00_manifest_auditorias_os_2026-05-26.json`
+- `01_sota_integrity_audit_2026-05-24.json`
+- `02_agent_workspace_deep_audit_2026-05-26.json`
+- `03_ecosystem_integration_validation_2026-05-26.json`
+- `04_debt_scan_active_refs_2026-05-26.json`
+
+Principio aplicado: mover y complementar sin eliminar evidencia histórica.

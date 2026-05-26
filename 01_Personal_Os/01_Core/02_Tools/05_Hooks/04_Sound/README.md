@@ -61,7 +61,7 @@ Agregar a tu `CLAUDE.md` o 01_Personal_Os/11_AGENTS.md:
 ## 🔔 Notificaciones de Sonido
 
 Al completar cada tarea significativa:
-- Ejecutar: `python 01_Core/07_Hooks/04_Sound/notification.py --task-complete`
+- Ejecutar: `python 01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/notification.py --task-complete`
 ```
 
 ---
