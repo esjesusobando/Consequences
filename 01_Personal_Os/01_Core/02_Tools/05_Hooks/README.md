@@ -3,7 +3,7 @@
 **Versión:** 1.1
 **Última actualización:** 2026-04-21
 **Fuente de verdad:** `01_Core/07_Hooks/`
-**Backup:** `.agent/04_Extensions/hooks/`
+**Backup:** `.agent/04_Extensions/01_Hooks/`
 
 ---
 
@@ -198,11 +198,11 @@ Los hooks están configurados en `C:\Users\sebas\.claude\settings.json` con path
 
 ## 🔄 Sincronización con Backup
 
-El backup en `.agent/04_Extensions/hooks/` debe estar sincronizado con `01_Core/07_Hooks/`.
+El backup en `.agent/04_Extensions/01_Hooks/` debe estar sincronizado con `01_Core/07_Hooks/`.
 
 **Fuente de verdad:** `01_Core/07_Hooks/` (aquí)
-**Backup:** `.agent/04_Extensions/hooks/`
+**Backup:** `.agent/04_Extensions/01_Hooks/`
 
-> ⚠️ Importante: La configuración en `.claude/settings.json` actualmente apunta a rutas en `.agent/04_Extensions/hooks/`. Esto es incorrecto — debería apuntar a `01_Core/07_Hooks/` que es la fuente de verdad.
+> ⚠️ Importante: La configuración en `.claude/settings.json` actualmente apunta a rutas en `.agent/04_Extensions/01_Hooks/`. Esto es incorrecto — debería apuntar a `01_Core/07_Hooks/` que es la fuente de verdad.
 
 Al modificar un hook, actualizar AMBOS directorios.

@@ -57,23 +57,23 @@ Sistema de extensiones para Claude Code: hooks de ciclo de vida, notificaciones,
   },
   "hooks": {
     "PreToolUse": [
-      { "hooks": [{ "type": "command", "command": "python .agent/04_Extensions/hooks/01_Pre_Tool/pre_tool_use.py" }] },
+      { "hooks": [{ "type": "command", "command": "python .agent/04_Extensions/01_Hooks/01_Pre_Tool/pre_tool_use.py" }] },
       { "hooks": [{ "type": "command", "command": "python .agent/04_Extensions/03_Validators/csv-single-validator.py" }] }
     ],
     "PostToolUse": [
-      { "hooks": [{ "type": "command", "command": "python .agent/04_Extensions/hooks/02_Post_Tool/post_tool_use.py" }] }
+      { "hooks": [{ "type": "command", "command": "python .agent/04_Extensions/01_Hooks/02_Post_Tool/post_tool_use.py" }] }
     ],
     "Stop": [
-      { "hooks": [{ "type": "command", "command": "python .agent/04_Extensions/hooks/03_Lifecycle/stop.py" }] }
+      { "hooks": [{ "type": "command", "command": "python .agent/04_Extensions/01_Hooks/03_Lifecycle/stop.py" }] }
     ],
     "SubagentStop": [
-      { "hooks": [{ "type": "command", "command": "python .agent/04_Extensions/hooks/03_Lifecycle/subagent_stop.py" }] }
+      { "hooks": [{ "type": "command", "command": "python .agent/04_Extensions/01_Hooks/03_Lifecycle/subagent_stop.py" }] }
     ],
     "UserPromptSubmit": [
-      { "hooks": [{ "type": "command", "command": "python .agent/04_Extensions/hooks/04_Sound/notification.py --notify" }] }
+      { "hooks": [{ "type": "command", "command": "python .agent/04_Extensions/01_Hooks/04_Sound/notification.py --notify" }] }
     ],
     "TodoWrite": [
-      { "hooks": [{ "type": "command", "command": "powershell -ExecutionPolicy Bypass -NoProfile -WindowStyle Hidden -File .agent/04_Extensions/hooks/04_Sound/task-complete-sound.ps1" }] }
+      { "hooks": [{ "type": "command", "command": "powershell -ExecutionPolicy Bypass -NoProfile -WindowStyle Hidden -File .agent/04_Extensions/01_Hooks/04_Sound/task-complete-sound.ps1" }] }
     ]
   }
 }
@@ -149,13 +149,13 @@ Sistema de extensiones para Claude Code: hooks de ciclo de vida, notificaciones,
 
 ```bash
 # Test sound
-powershell -ExecutionPolicy Bypass -File ".agent/04_Extensions/hooks/04_Sound/task-complete-sound.ps1"
+powershell -ExecutionPolicy Bypass -File ".agent/04_Extensions/01_Hooks/04_Sound/task-complete-sound.ps1"
 
 # Test notification
-python .agent/04_Extensions/hooks/04_Sound/notification.py --notify
+python .agent/04_Extensions/01_Hooks/04_Sound/notification.py --notify
 
 # Test pre-tool (skip battery)
-BYPASS_BATTERY_CHECK=1 python .agent/04_Extensions/hooks/01_Pre_Tool/pre_tool_use.py
+BYPASS_BATTERY_CHECK=1 python .agent/04_Extensions/01_Hooks/01_Pre_Tool/pre_tool_use.py
 
 # Validate CSV manually
 python .agent/04_Extensions/03_Validators/csv-single-validator.py archivo.csv

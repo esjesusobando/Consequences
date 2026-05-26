@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python \"${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/.agent/04_Extensions/hooks/01_Pre_Tool/pre_tool_use.py\""
+            "command": "python \"${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/.agent/04_Extensions/01_Hooks/01_Pre_Tool/pre_tool_use.py\""
           }
         ]
       }
@@ -17,7 +17,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python \"${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/.agent/04_Extensions/hooks/02_Post_Tool/post_tool_use.py\""
+            "command": "python \"${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/.agent/04_Extensions/01_Hooks/02_Post_Tool/post_tool_use.py\""
           }
         ]
       }
@@ -27,7 +27,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python \"${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/.agent/04_Extensions/hooks/03_Lifecycle/stop.py\""
+            "command": "python \"${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/.agent/04_Extensions/01_Hooks/03_Lifecycle/stop.py\""
           }
         ]
       }
@@ -37,7 +37,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python \"${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/.agent/04_Extensions/hooks/03_Lifecycle/subagent_stop.py\""
+            "command": "python \"${env:THINK_DIFFERENT_ROOT:-C:/Users/sebas/Desktop/Think_Different}/.agent/04_Extensions/01_Hooks/03_Lifecycle/subagent_stop.py\""
           }
         ]
       }

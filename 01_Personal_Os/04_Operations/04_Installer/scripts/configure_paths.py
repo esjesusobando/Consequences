@@ -25,7 +25,7 @@ MCP_PATH_FIELDS = {
 
 
 # Hooks a registrar
-HOOKS_TO_REGISTER = {"Stop": [".agent/04_Extensions/hooks/03_Lifecycle/stop.py"]}
+HOOKS_TO_REGISTER = {"Stop": [".agent/04_Extensions/01_Hooks/03_Lifecycle/stop.py"]}
 
 
 def get_project_root():

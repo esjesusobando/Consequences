@@ -4,9 +4,9 @@
 ## 1. Operational Protocols (Hooks)
 | Hook                                                | Path                                                                                              | Function                                                |
 |----------------------------------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| PostToolUse                                         | `.agent/04_Extensions/hooks/02_Post_Tool/post_tool_use.py`                                        | Backup & Voice                                          |
-| PreToolUse                                          | `.agent/04_Extensions/hooks/01_Pre_Tool/pre_tool_use.py`                                          | Battery/Security                                        |
-| SubagentStop                                        | `.agent/04_Extensions/hooks/03_Lifecycle/subagent_stop.py`                                        | Cleanup                                                 |
+| PostToolUse                                         | `.agent/04_Extensions/01_Hooks/02_Post_Tool/post_tool_use.py`                                        | Backup & Voice                                          |
+| PreToolUse                                          | `.agent/04_Extensions/01_Hooks/01_Pre_Tool/pre_tool_use.py`                                          | Battery/Security                                        |
+| SubagentStop                                        | `.agent/04_Extensions/01_Hooks/03_Lifecycle/subagent_stop.py`                                        | Cleanup                                                 |
 
 ## 2. Execution Engine (Scripts Registry - 03_Scripts_Os/)
 *Mapping de automatizaciones SOTA.*

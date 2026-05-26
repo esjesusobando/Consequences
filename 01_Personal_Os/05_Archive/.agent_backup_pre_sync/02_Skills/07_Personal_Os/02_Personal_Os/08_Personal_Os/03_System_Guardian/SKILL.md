@@ -22,7 +22,7 @@ Esta skill se CARGA MANUALMENTE cuando el usuario inicia una tarea. Su función 
 ### 2. **SONIDO AL FINALIZAR** (OBLIGATORIO)
 - ✅ Al terminar **CUALQUIER** tarea importante, ejecutar:
   ```bash
-  powershell -ExecutionPolicy Bypass -File ".agent/04_Extensions/hooks/04_Sound/task-complete-sound.ps1"
+  powershell -ExecutionPolicy Bypass -File ".agent/04_Extensions/01_Hooks/04_Sound/task-complete-sound.ps1"
   ```
 - ✅ O usar `speak("tarea completada")` para voz
 
@@ -100,7 +100,7 @@ Cargar skill: System Guardian
 
 ### Paso 4: Finalizar tarea
 ```
-powershell -ExecutionPolicy Bypass -File ".agent/04_Extensions/hooks/04_Sound/task-complete-sound.ps1"
+powershell -ExecutionPolicy Bypass -File ".agent/04_Extensions/01_Hooks/04_Sound/task-complete-sound.ps1"
 ```
 
 ## ✅ Verification

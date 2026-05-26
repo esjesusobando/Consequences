@@ -1,0 +1,2713 @@
+[
+  {
+    "path": ".agent/02_Skills",
+    "dirs": 14,
+    "files": 4,
+    "unnumbered_dirs": [],
+    "duplicate_prefixes": {
+      "00": [
+        "00_Agent_Teams_Lite",
+        "00_Compound_Engineering",
+        "00_Personal_Os_Stack",
+        "00_System_Core"
+      ]
+    },
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/04_Extensions",
+    "dirs": 3,
+    "files": 1,
+    "unnumbered_dirs": [
+      "hooks"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/05_GGA",
+    "dirs": 7,
+    "files": 9,
+    "unnumbered_dirs": [
+      ".git",
+      ".github",
+      "bin",
+      "docs",
+      "lib",
+      "skills",
+      "spec"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/01_Agents/00_Agent_Teams_Lite",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "skills"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Personal_Os_Stack",
+    "dirs": 3,
+    "files": 0,
+    "unnumbered_dirs": [],
+    "duplicate_prefixes": {},
+    "number_gaps": [
+      4
+    ]
+  },
+  {
+    "path": ".agent/02_Skills/00_System_Core",
+    "dirs": 6,
+    "files": 5,
+    "unnumbered_dirs": [],
+    "duplicate_prefixes": {
+      "02": [
+        "02_Gcierr",
+        "02_Hooks"
+      ]
+    },
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux",
+    "dirs": 17,
+    "files": 3,
+    "unnumbered_dirs": [],
+    "duplicate_prefixes": {
+      "07": [
+        "07_Marvel_Avengers",
+        "07_Ui_Ux_Pro_Max"
+      ],
+      "08": [
+        "08_Huashu_Design",
+        "08_Ui_Ux_Pro_Max"
+      ],
+      "09": [
+        "09_Dumbledor_Design",
+        "09_Huashu_Design"
+      ],
+      "11": [
+        "11_Design_Systems",
+        "11_Dumbledor_Design"
+      ]
+    },
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion",
+    "dirs": 28,
+    "files": 1,
+    "unnumbered_dirs": [],
+    "duplicate_prefixes": {
+      "08": [
+        "08_AI_News_Weekly",
+        "08_N8N_Invictus"
+      ],
+      "09": [
+        "09_Firecrawl",
+        "09_N8n_Invictus"
+      ],
+      "10": [
+        "10_Firecrawl",
+        "10_GWS_Client"
+      ],
+      "11": [
+        "11_Gcierr",
+        "11_Gws_Client"
+      ],
+      "12": [
+        "12_Gcierr",
+        "12_N8N"
+      ],
+      "13": [
+        "13_Content_From_Url",
+        "13_N8n"
+      ],
+      "14": [
+        "14_Compound_Knowledge",
+        "14_Content_From_Url"
+      ],
+      "15": [
+        "15_Compound_Knowledge",
+        "15_Os_Self_Improvement"
+      ],
+      "16": [
+        "16_Os_Self_Improvement",
+        "16_Reverse_Engineering"
+      ],
+      "17": [
+        "17_Learning_Url_To_Knowledge",
+        "17_Reverse_Engineering"
+      ]
+    },
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows",
+    "dirs": 7,
+    "files": 3,
+    "unnumbered_dirs": [],
+    "duplicate_prefixes": {
+      "04": [
+        "04_PM_Orchestrator",
+        "04_Super_Campeones"
+      ]
+    },
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools",
+    "dirs": 30,
+    "files": 1,
+    "unnumbered_dirs": [],
+    "duplicate_prefixes": {
+      "16": [
+        "16_Doc_Processing",
+        "16_Qmd"
+      ],
+      "17": [
+        "17_Qmd",
+        "17_System_Master"
+      ],
+      "19": [
+        "19_Qmd",
+        "19_Silicon_Valley_Data_Analyst",
+        "19_System_Master"
+      ],
+      "21": [
+        "21_Silicon_Valley_Data_Analyst",
+        "21_System_Master"
+      ],
+      "22": [
+        "22_Silicon_Valley_Data_Analyst",
+        "22_System_Master"
+      ],
+      "23": [
+        "23_Ai_News_Weekly_Report",
+        "23_Silicon_Valley_Data_Analyst"
+      ]
+    },
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/04_Extensions/hooks",
+    "dirs": 6,
+    "files": 0,
+    "unnumbered_dirs": [],
+    "duplicate_prefixes": {
+      "05": [
+        "05_Harness",
+        "05_Post_Hulk_Compound"
+      ]
+    },
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/05_GGA/.git",
+    "dirs": 5,
+    "files": 7,
+    "unnumbered_dirs": [
+      "hooks",
+      "info",
+      "logs",
+      "objects",
+      "refs"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/05_GGA/.github",
+    "dirs": 2,
+    "files": 2,
+    "unnumbered_dirs": [
+      "ISSUE_TEMPLATE",
+      "workflows"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/05_GGA/skills",
+    "dirs": 6,
+    "files": 0,
+    "unnumbered_dirs": [
+      "branch-pr",
+      "commit-hygiene",
+      "docs-alignment",
+      "issue-creation",
+      "shellcheck-standards",
+      "testing-coverage"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/05_GGA/spec",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "integration",
+      "unit"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/05_GGA/.git/logs",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "refs"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/05_GGA/.git/objects",
+    "dirs": 18,
+    "files": 0,
+    "unnumbered_dirs": [
+      "12",
+      "1a",
+      "30",
+      "3e",
+      "79",
+      "7e",
+      "8f",
+      "90",
+      "9a",
+      "a6",
+      "a8",
+      "cf",
+      "d1",
+      "dd",
+      "ea",
+      "f5",
+      "info",
+      "pack"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/05_GGA/.git/refs",
+    "dirs": 3,
+    "files": 0,
+    "unnumbered_dirs": [
+      "heads",
+      "remotes",
+      "tags"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/05_GGA/.git/logs/refs",
+    "dirs": 2,
+    "files": 0,
+    "unnumbered_dirs": [
+      "heads",
+      "remotes"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/05_GGA/.git/refs/remotes",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "origin"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/05_GGA/.git/logs/refs/remotes",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "origin"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Agent_Teams_Lite/02_Sdd_Init",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Agent_Teams_Lite/03_Sdd_Explore",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Agent_Teams_Lite/04_Sdd_Propose",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Agent_Teams_Lite/05_Sdd_Spec",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Agent_Teams_Lite/06_Sdd_Design",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Agent_Teams_Lite/07_Sdd_Tasks",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Agent_Teams_Lite/08_Sdd_Apply",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Agent_Teams_Lite/09_Sdd_Verify",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Agent_Teams_Lite/10_Sdd_Archive",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Compound_Engineering/07_Skills",
+    "dirs": 62,
+    "files": 0,
+    "unnumbered_dirs": [
+      "agent-browser",
+      "agent-native-architecture",
+      "agent-native-audit",
+      "andrew-kane-gem-writer",
+      "architecture-guardrails",
+      "backlog-triage",
+      "business-rules",
+      "ce-brainstorm",
+      "ce-compound",
+      "ce-compound-refresh",
+      "ce-ideate",
+      "ce-plan",
+      "ce-review",
+      "ce-setup",
+      "ce-work",
+      "ce-work-beta",
+      "changelog",
+      "claude-permissions-optimizer",
+      "compound-docs",
+      "cultural-norms",
+      "dashboard-htmx",
+      "deepen-plan",
+      "deploy-docs",
+      "dhh-rails-style",
+      "document-review",
+      "dspy-ruby",
+      "every-style-editor",
+      "feature-video",
+      "frontend-design",
+      "gemini-imagegen",
+      "generate_command",
+      "gentleman-compound-mastery",
+      "git-clean-gone-branches",
+      "git-commit",
+      "git-commit-push-pr",
+      "git-worktree",
+      "lfg",
+      "memory-protocol",
+      "onboarding",
+      "orchestrating-swarms",
+      "plugin-thin",
+      "pr-review-deep",
+      "project-structure",
+      "proof",
+      "rclone",
+      "report-bug-ce",
+      "reproduce-bug",
+      "resolve-pr-feedback",
+      "resolve-pr-parallel",
+      "sdd-flow",
+      "server-api",
+      "setup",
+      "slfg",
+      "test-browser",
+      "test-xcode",
+      "testing-coverage",
+      "todo-create",
+      "todo-resolve",
+      "todo-triage",
+      "tui-quality",
+      "ui-elements",
+      "visual-language"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/01_Creacion_Contenidos/01_Brand_Voice",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/01_Creacion_Contenidos/03_Content_Ideation",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/01_Creacion_Contenidos/04_Offer_And_Bio_Writer",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/01_Creacion_Contenidos/05_Marketing_Strategy",
+    "dirs": 15,
+    "files": 0,
+    "unnumbered_dirs": [
+      "content-strategy",
+      "copy-editing",
+      "copywriting",
+      "email-sequence",
+      "form-cro",
+      "launch-strategy",
+      "marketing-ideas",
+      "marketing-psychology",
+      "onboarding-cro",
+      "page-cro",
+      "paywall-upgrade-cro",
+      "popup-cro",
+      "pricing-strategy",
+      "product-marketing-context",
+      "signup-flow-cro"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/01_Creacion_Contenidos/06_Marketing_Tech",
+    "dirs": 10,
+    "files": 0,
+    "unnumbered_dirs": [
+      "ab-test-setup",
+      "analytics-tracking",
+      "competitor-alternatives",
+      "free-tool-strategy",
+      "paid-ads",
+      "programmatic-seo",
+      "referral-program",
+      "schema-markup",
+      "seo-audit",
+      "social-content"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/01_Creacion_Contenidos/10_Remotion_Video_Creator",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "rules"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/01_Creacion_Contenidos/11_Remotion_Best_Practices",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "rules"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/02_Taste_Skills",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "1. TASTE SKILLS"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/03_Diseno_Minimalista",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "2. DISE�O MINIMALISTA"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/04_Directrices_Marca",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "3. DIRECTRICES DE MARCA"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/05_Excalidraw_Flowchart",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "4. EXCALIDRAW FLOWCHART"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/07_Ui_Ux_Pro_Max",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "data",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/08_Huashu_Design",
+    "dirs": 4,
+    "files": 5,
+    "unnumbered_dirs": [
+      "assets",
+      "demos",
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/08_Ui_Ux_Pro_Max",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "data",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/09_Dumbledor_Design",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/09_Huashu_Design",
+    "dirs": 4,
+    "files": 5,
+    "unnumbered_dirs": [
+      "assets",
+      "demos",
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/11_Dumbledor_Design",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/01_N8N_JS",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/02_N8N_Python",
+    "dirs": 1,
+    "files": 2,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/03_N8N_Expressions",
+    "dirs": 1,
+    "files": 2,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/04_N8N_MCP",
+    "dirs": 1,
+    "files": 2,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/05_N8N_Nodes",
+    "dirs": 1,
+    "files": 2,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/06_N8N_Validation",
+    "dirs": 1,
+    "files": 2,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/08_N8N_Invictus",
+    "dirs": 7,
+    "files": 1,
+    "unnumbered_dirs": [
+      "n8n-code-javascript",
+      "n8n-code-python",
+      "n8n-expression-syntax",
+      "n8n-mcp-tools-expert",
+      "n8n-node-configuration",
+      "n8n-validation-expert",
+      "n8n-workflow-patterns"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/09_N8n_Invictus",
+    "dirs": 7,
+    "files": 1,
+    "unnumbered_dirs": [
+      "n8n-code-javascript",
+      "n8n-code-python",
+      "n8n-expression-syntax",
+      "n8n-mcp-tools-expert",
+      "n8n-node-configuration",
+      "n8n-validation-expert",
+      "n8n-workflow-patterns"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/10_GWS_Client",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/11_Gws_Client",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/13_Content_From_Url",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/14_Compound_Knowledge",
+    "dirs": 3,
+    "files": 1,
+    "unnumbered_dirs": [
+      "context",
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/14_Content_From_Url",
+    "dirs": 3,
+    "files": 1,
+    "unnumbered_dirs": [
+      "context",
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/15_Compound_Knowledge",
+    "dirs": 3,
+    "files": 1,
+    "unnumbered_dirs": [
+      "context",
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/15_Os_Self_Improvement",
+    "dirs": 3,
+    "files": 1,
+    "unnumbered_dirs": [
+      "context",
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/16_Os_Self_Improvement",
+    "dirs": 3,
+    "files": 1,
+    "unnumbered_dirs": [
+      "context",
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/16_Reverse_Engineering",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/17_Learning_Url_To_Knowledge",
+    "dirs": 3,
+    "files": 1,
+    "unnumbered_dirs": [
+      "context",
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/17_Reverse_Engineering",
+    "dirs": 3,
+    "files": 1,
+    "unnumbered_dirs": [
+      "context",
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/18_Learning_Url_To_Knowledge",
+    "dirs": 3,
+    "files": 1,
+    "unnumbered_dirs": [
+      "context",
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/06_Testing",
+    "dirs": 18,
+    "files": 2,
+    "unnumbered_dirs": [
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/08_Skill_Creator_Invictus",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "7. SKILL CREATOR"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/11_Skill_Creator_Invictus",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "7. SKILL CREATOR"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/23_Ai_News_Weekly_Report",
+    "dirs": 3,
+    "files": 1,
+    "unnumbered_dirs": [
+      "agents",
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/08_Invictus_Web/02_Buscador_Skills",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "8 Buscador Skills"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/08_Invictus_Web/03_Playwright",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "9.PLAYWRIGHT"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/09_Claude_Ads/01_Ads",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "research-sources"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/09_Claude_Ads/04_Assets",
+    "dirs": 1,
+    "files": 2,
+    "unnumbered_dirs": [
+      "diagrams"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/09_Claude_Ads/06_.github",
+    "dirs": 2,
+    "files": 3,
+    "unnumbered_dirs": [
+      "ISSUE_TEMPLATE",
+      "workflows"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/09_Claude_Ads/05_Skills/16_Ads_Plan",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "assets"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/08_Invictus_Web/01_Superpowers/00_Superpowers-plugin",
+    "dirs": 15,
+    "files": 0,
+    "unnumbered_dirs": [
+      "brainstorming",
+      "demo_tdd",
+      "dispatching-parallel-agents",
+      "executing-plans",
+      "finishing-a-development-branch",
+      "receiving-code-review",
+      "requesting-code-review",
+      "subagent-driven-development",
+      "systematic-debugging",
+      "test-driven-development",
+      "using-git-worktrees",
+      "using-superpowers",
+      "verification-before-completion",
+      "writing-plans",
+      "writing-skills"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/07_Personal_Os/01_Life_OS/18_Personal_Life_OS",
+    "dirs": 6,
+    "files": 2,
+    "unnumbered_dirs": [
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os",
+    "dirs": 20,
+    "files": 2,
+    "unnumbered_dirs": [
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal",
+    "dirs": 10,
+    "files": 2,
+    "unnumbered_dirs": [
+      "command",
+      "context",
+      "cookbook",
+      "documentation",
+      "prompts",
+      "references",
+      "reports",
+      "scripts",
+      "skills",
+      "tools"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/02_Agent_Orchestrator",
+    "dirs": 3,
+    "files": 2,
+    "unnumbered_dirs": [
+      "references",
+      "scripts",
+      "tools"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/04_Premium_Git_Manager",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/05_Subagent_Driven_Development",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/06_Browser_Use",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/07_Csv_Management",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/08_Managing_Image_Assets",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/09_Frictionless_Capture",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/context",
+    "dirs": 3,
+    "files": 0,
+    "unnumbered_dirs": [
+      "docs",
+      "examples",
+      "scenarios"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/reports",
+    "dirs": 2,
+    "files": 3,
+    "unnumbered_dirs": [
+      "history",
+      "latest"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/skills",
+    "dirs": 2,
+    "files": 0,
+    "unnumbered_dirs": [
+      "fork-terminal",
+      "parallel-orchestration"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal",
+    "dirs": 4,
+    "files": 2,
+    "unnumbered_dirs": [
+      "context",
+      "cookbook",
+      "prompts",
+      "tools"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/skills/parallel-orchestration",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "tools"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/context",
+    "dirs": 3,
+    "files": 0,
+    "unnumbered_dirs": [
+      "docs",
+      "examples",
+      "scenarios"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps",
+    "dirs": 15,
+    "files": 2,
+    "unnumbered_dirs": [
+      "scripts"
+    ],
+    "duplicate_prefixes": {
+      "04": [
+        "04_Observability",
+        "04_Obsidian_CLI"
+      ]
+    },
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding",
+    "dirs": 21,
+    "files": 2,
+    "unnumbered_dirs": [
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/06_Testing/01_Test_Driven_Development",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/06_Testing/02_Systematic_Debugging",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/06_Testing/03_Verify_And_Commit",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/06_Testing/04_Test_Resource_Management",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/06_Testing/05_Testing_Coverage",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/06_Testing/06_Go_Testing",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/06_Testing/07_Tui_Quality",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/06_Testing/08_E2e_Testing",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/06_Testing/09_Integration_Testing",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/06_Testing/10_Edge_Case",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/06_Testing/11_Test_Coverage",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/06_Testing/12_Evaluation",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/06_Testing/13_Skill_Testing_Automation",
+    "dirs": 4,
+    "files": 2,
+    "unnumbered_dirs": [
+      "examples",
+      "references",
+      "scripts",
+      "tests"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/17_System_Master/04_Mcp_Builder",
+    "dirs": 2,
+    "files": 2,
+    "unnumbered_dirs": [
+      "reference",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/19_System_Master/04_Mcp_Builder",
+    "dirs": 2,
+    "files": 2,
+    "unnumbered_dirs": [
+      "reference",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/21_System_Master/04_Mcp_Builder",
+    "dirs": 2,
+    "files": 2,
+    "unnumbered_dirs": [
+      "reference",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/22_System_Master/04_Mcp_Builder",
+    "dirs": 2,
+    "files": 2,
+    "unnumbered_dirs": [
+      "reference",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/01_React_19",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/02_Nextjs_15",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/03_Tailwind_4",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/04_Angular",
+    "dirs": 4,
+    "files": 0,
+    "unnumbered_dirs": [
+      "architecture",
+      "core",
+      "forms",
+      "performance"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/05_Typescript",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/06_Zustand_5",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/07_Zod_4",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/08_Ai_Sdk_5",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/09_Skill_Architect",
+    "dirs": 2,
+    "files": 2,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/10_Mcp_Client",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/11_Invoice_Intelligence",
+    "dirs": 2,
+    "files": 3,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/12_Health_Data_Analyst",
+    "dirs": 3,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples",
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/13_Django_Drf",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/14_Health_Data_Analyst",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/15_Server_Api",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/16_Pytest",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/17_Playwright",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/05_Vibe_Coding/05_Vibe_Coding/18_Firecrawl",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/01_Vercel_Deploy",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/02_Supabase_Integration",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/03_MCP_Integration",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/04_Observability",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/05_Seo_Audit",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/06_Seo_Optimization",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/07_Data_Visualization",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/08_Vercel_React_Best_Practices",
+    "dirs": 3,
+    "files": 2,
+    "unnumbered_dirs": [
+      "references",
+      "rules",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/09_Using_Git_Worktrees",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/10_E2b_Sandbox",
+    "dirs": 3,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "resources",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/11_Error_Handling_Patterns",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/12_RTM",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/04_DevOps/07_DevOps/13_Release_Agent",
+    "dirs": 3,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts",
+      "templates"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/02_Skill_Template/21_Skill_Template/01_Skill_Template",
+    "dirs": 3,
+    "files": 3,
+    "unnumbered_dirs": [
+      "examples",
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/01_Skill_Creator/15_Skill_Creator_Oficial/01_Skill_Creator",
+    "dirs": 2,
+    "files": 2,
+    "unnumbered_dirs": [
+      ".claude-plugin",
+      "skills"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/01_Skill_Creator/15_Skill_Creator_Oficial/01_Skill_Creator/skills",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "skill-creator"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/06_Tools/01_Skill_Creator/15_Skill_Creator_Oficial/01_Skill_Creator/skills/skill-creator",
+    "dirs": 5,
+    "files": 2,
+    "unnumbered_dirs": [
+      "agents",
+      "assets",
+      "eval-viewer",
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite",
+    "dirs": 15,
+    "files": 2,
+    "unnumbered_dirs": [
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/02_Project_Manager/02_Project_Manager",
+    "dirs": 9,
+    "files": 2,
+    "unnumbered_dirs": [
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/01_Brainstorming",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/02_Technical_Planning",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/03_Executing_Plans",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/04_Jira_Epic",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/05_Jira_Task",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/06_Branch_Pr",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/07_Writing_Strategy_Memos",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/03_Product_Manager/03_Product_Manager/02_Technical_Planning/references",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "sop-templates"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/02_Project_Manager/02_Project_Manager/01_Morning_Standup",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/02_Project_Manager/02_Project_Manager/02_Backlog_Processing",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/02_Project_Manager/02_Project_Manager/03_Weekly_Review",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/02_Project_Manager/02_Project_Manager/04_Sunday_Ritual",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/02_Project_Manager/02_Project_Manager/05_Best_Practices",
+    "dirs": 2,
+    "files": 2,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/02_Project_Manager/02_Project_Manager/06_Finishing_A_Development_Branch",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/02_Project_Manager/02_Project_Manager/07_Running_Tests",
+    "dirs": 3,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples",
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/02_Project_Manager/02_Project_Manager/08_Content_Generation",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/02_Sdd_Init",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/03_Sdd_Explore",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/04_Sdd_Propose",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/05_Sdd_Spec",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/06_Sdd_Design",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/07_Sdd_Tasks",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/08_Sdd_Apply",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/09_Sdd_Verify",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/05_Workflows/01_Agent_Teams_Lite/01_Agent_Teams_Lite/10_Sdd_Archive",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/14_Compound_Knowledge/context",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "docs"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/14_Content_From_Url/context",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "docs"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/15_Compound_Knowledge/context",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "docs"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/15_Os_Self_Improvement/context",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "docs"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/16_Os_Self_Improvement/context",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "docs"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/17_Learning_Url_To_Knowledge/context",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "docs"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/17_Reverse_Engineering/context",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "docs"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/04_Automatizacion/18_Learning_Url_To_Knowledge/context",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "docs"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/03_Video_Media/02_James_Cameron/01_Video_Prompt_Builder",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/07_Ui_Ux_Pro_Max/data",
+    "dirs": 1,
+    "files": 11,
+    "unnumbered_dirs": [
+      "stacks"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/08_Huashu_Design/assets",
+    "dirs": 2,
+    "files": 15,
+    "unnumbered_dirs": [
+      "sfx",
+      "showcases"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/08_Ui_Ux_Pro_Max/data",
+    "dirs": 1,
+    "files": 11,
+    "unnumbered_dirs": [
+      "stacks"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/09_Huashu_Design/assets",
+    "dirs": 2,
+    "files": 15,
+    "unnumbered_dirs": [
+      "sfx",
+      "showcases"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/09_Huashu_Design/assets/sfx",
+    "dirs": 9,
+    "files": 0,
+    "unnumbered_dirs": [
+      "container",
+      "feedback",
+      "impact",
+      "keyboard",
+      "magic",
+      "progress",
+      "terminal",
+      "transition",
+      "ui"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/09_Huashu_Design/assets/showcases",
+    "dirs": 8,
+    "files": 1,
+    "unnumbered_dirs": [
+      "cover",
+      "infographic",
+      "ppt",
+      "website-ai-nav",
+      "website-ai-writing",
+      "website-devdocs",
+      "website-homepage",
+      "website-saas"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/08_Huashu_Design/assets/sfx",
+    "dirs": 9,
+    "files": 0,
+    "unnumbered_dirs": [
+      "container",
+      "feedback",
+      "impact",
+      "keyboard",
+      "magic",
+      "progress",
+      "terminal",
+      "transition",
+      "ui"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/08_Huashu_Design/assets/showcases",
+    "dirs": 8,
+    "files": 1,
+    "unnumbered_dirs": [
+      "cover",
+      "infographic",
+      "ppt",
+      "website-ai-nav",
+      "website-ai-writing",
+      "website-devdocs",
+      "website-homepage",
+      "website-saas"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/01_Taste_Skill",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/02_Soft_Skill",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/03_Minimalist_Skill",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/04_Redesign_Skill",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/05_Output_Skill",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/06_Dieter_Rams_Design",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/07_Brand_Identity",
+    "dirs": 3,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "resources",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/08_Brand_Voice_Generator",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/09_Canvas_Diagram_Studio",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/10_Visual_Language",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/11_Pencil_Design_Studio",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/12_Shadcn",
+    "dirs": 4,
+    "files": 4,
+    "unnumbered_dirs": [
+      "agents",
+      "assets",
+      "evals",
+      "rules"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/02_Diseno_Ui_Ux/01_Product_Design/04_Product_Design/07_Brand_Identity/resources",
+    "dirs": 1,
+    "files": 6,
+    "unnumbered_dirs": [
+      "examples"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/01_Creacion_Contenidos/02_Ai_Agents/01_Agent_Onboarding",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/01_Creacion_Contenidos/02_Ai_Agents/02_Executive_Assistant",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/01_Creacion_Contenidos/02_Ai_Agents/03_Head_Of_Marketing",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/01_Creacion_Contenidos/10_Remotion_Video_Creator/rules",
+    "dirs": 1,
+    "files": 30,
+    "unnumbered_dirs": [
+      "assets"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/01_Creacion_Contenidos/11_Remotion_Best_Practices/rules",
+    "dirs": 1,
+    "files": 35,
+    "unnumbered_dirs": [
+      "assets"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/01_Creacion_Contenidos/02_Ai_Agents/01_Agent_Onboarding/references",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "example-contexts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Compound_Engineering/07_Skills/agent-browser",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references",
+      "templates"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Compound_Engineering/07_Skills/agent-native-architecture",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Compound_Engineering/07_Skills/andrew-kane-gem-writer",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Compound_Engineering/07_Skills/ce-review",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Compound_Engineering/07_Skills/claude-permissions-optimizer",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Compound_Engineering/07_Skills/compound-docs",
+    "dirs": 2,
+    "files": 2,
+    "unnumbered_dirs": [
+      "assets",
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Compound_Engineering/07_Skills/dhh-rails-style",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Compound_Engineering/07_Skills/document-review",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Compound_Engineering/07_Skills/dspy-ruby",
+    "dirs": 2,
+    "files": 1,
+    "unnumbered_dirs": [
+      "assets",
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Compound_Engineering/07_Skills/every-style-editor",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "references"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Compound_Engineering/07_Skills/gemini-imagegen",
+    "dirs": 1,
+    "files": 2,
+    "unnumbered_dirs": [
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Compound_Engineering/07_Skills/git-worktree",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Compound_Engineering/07_Skills/rclone",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Compound_Engineering/07_Skills/resolve-pr-parallel",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "scripts"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/02_Skills/00_Compound_Engineering/07_Skills/todo-create",
+    "dirs": 1,
+    "files": 1,
+    "unnumbered_dirs": [
+      "assets"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  },
+  {
+    "path": ".agent/01_Agents/00_Agent_Teams_Lite/skills",
+    "dirs": 1,
+    "files": 0,
+    "unnumbered_dirs": [
+      "sdd-apply"
+    ],
+    "duplicate_prefixes": {},
+    "number_gaps": []
+  }
+]

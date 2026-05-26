@@ -5,7 +5,7 @@
 Notifier - Sistema de notificaciones y sonidos
 Ejecuta sonidos al completar tareas importantes.
 
-Usa: .agent/04_Extensions/hooks/04_Sound/task-complete-sound.ps1
+Usa: .agent/04_Extensions/01_Hooks/04_Sound/task-complete-sound.ps1
 """
 
 import sys

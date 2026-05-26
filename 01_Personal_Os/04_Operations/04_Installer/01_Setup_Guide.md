@@ -72,7 +72,7 @@ Hooks are stored in `.claude/settings.local.json` under the `hooks` key:
 ```json
 {
   "hooks": {
-    "Stop": [".agent/04_Extensions/hooks/03_Lifecycle/stop.py"]
+    "Stop": [".agent/04_Extensions/01_Hooks/03_Lifecycle/stop.py"]
   }
 }
 ```
@@ -81,7 +81,7 @@ Hooks are stored in `.claude/settings.local.json` under the `hooks` key:
 
 1. Open or create `.claude/settings.local.json` in the project root
 2. Add the hooks configuration above
-3. The `Stop` hook triggers `.agent/04_Extensions/hooks/03_Lifecycle/stop.py` on agent lifecycle stop events
+3. The `Stop` hook triggers `.agent/04_Extensions/01_Hooks/03_Lifecycle/stop.py` on agent lifecycle stop events
 
 ---
 

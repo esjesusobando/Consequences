@@ -11,7 +11,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python .agent/04_Extensions/hooks/01_Pre_Tool/pre_tool_use.py"
+            "command": "python .agent/04_Extensions/01_Hooks/01_Pre_Tool/pre_tool_use.py"
           },
           {
             "type": "command",
@@ -25,7 +25,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python .agent/04_Extensions/hooks/02_Post_Tool/post_tool_use.py"
+            "command": "python .agent/04_Extensions/01_Hooks/02_Post_Tool/post_tool_use.py"
           }
         ]
       }
@@ -35,7 +35,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python .agent/04_Extensions/hooks/03_Lifecycle/stop.py"
+            "command": "python .agent/04_Extensions/01_Hooks/03_Lifecycle/stop.py"
           }
         ]
       }
@@ -45,7 +45,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python .agent/04_Extensions/hooks/03_Lifecycle/subagent_stop.py"
+            "command": "python .agent/04_Extensions/01_Hooks/03_Lifecycle/subagent_stop.py"
           }
         ]
       }
@@ -55,7 +55,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python .agent/04_Extensions/hooks/04_Sound/notification.py --notify"
+            "command": "python .agent/04_Extensions/01_Hooks/04_Sound/notification.py --notify"
           }
         ]
       }
@@ -65,7 +65,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "powershell -ExecutionPolicy Bypass -NoProfile -WindowStyle Hidden -File .agent/04_Extensions/hooks/04_Sound/task-complete-sound.ps1"
+            "command": "powershell -ExecutionPolicy Bypass -NoProfile -WindowStyle Hidden -File .agent/04_Extensions/01_Hooks/04_Sound/task-complete-sound.ps1"
           }
         ]
       }

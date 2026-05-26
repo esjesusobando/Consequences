@@ -184,7 +184,7 @@ El installer registra automáticamente el hook de **Session Handover** en `.clau
 {
   "hooks": {
     "Stop": [
-      ".agent/04_Extensions/hooks/03_Lifecycle/stop.py"
+      ".agent/04_Extensions/01_Hooks/03_Lifecycle/stop.py"
     ]
   }
 }

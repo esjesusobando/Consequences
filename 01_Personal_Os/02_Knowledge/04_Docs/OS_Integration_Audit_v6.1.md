@@ -222,7 +222,7 @@
 | Lifecycle                                  | 03_Lifecycle/                                       | stop.py, subagent_stop.py                                        | ✅                                     |
 | Sound                                      | 04_Sound/                                           | notification.py, .bat, .ps1                                      | ✅                                     |
 | Harness                                    | 05_Harness/                                         | eval_trigger.py, context_monitor.py                              | ✅                                     |
-| Hulk Compound                              | 05_Post_Hulk_Compound/                              | post_hulk_compound.py                                            | ✅                                     |
+| Hulk Compound                              | 06_Post_Hulk_Compound/                              | post_hulk_compound.py                                            | ✅                                     |
 
 ### ⚠️ 5.2 .gga/ vs .agent/05_GGA/
 

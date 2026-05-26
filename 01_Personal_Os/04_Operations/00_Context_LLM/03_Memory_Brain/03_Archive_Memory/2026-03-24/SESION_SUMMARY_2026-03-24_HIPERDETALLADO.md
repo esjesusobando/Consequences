@@ -63,7 +63,7 @@ Se crearon scripts para asegurar la escalabilidad:
 ## 🚧 PENDIENTE / DEBUGGING (Hook Fail)
 
 - **Incidencia:** El hook de post-procesamiento (mover archivos a `03_Knowledge/`) falló al ejecutar la creación del reporte de `runtime-errors`.
-- **Acción requerida:** Investigar `04_Extensions/hooks/02_Post_Tool/post_tool_use.py` y el log de ejecución.
+- **Acción requerida:** Investigar `04_Extensions/01_Hooks/02_Post_Tool/post_tool_use.py` y el log de ejecución.
 
 ---
 
