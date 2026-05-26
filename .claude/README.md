@@ -1,44 +1,52 @@
 # .claude — Claude Code Configuration & Memory
 
-> **Versión:** v4.7 Consequences
-> **Última actualización:** 2026-05-20
+> **Version:** v4.8 Desktop-aligned
+> **Last update:** 2026-05-26
 
 ---
 
-## 🎯 DESCRIPCIÓN
+## Purpose
 
-Configuración local de Claude Code y sistema de memoria persistente. Contiene reglas, hooks, skills y memoria del sistema.
+Project-local Claude Code configuration, commands, rules, agents, skills, memory and historical session artifacts for Think_Different.
 
 ---
 
-## 📁 ESTRUCTURA
+## Canonical Structure
 
-```
+```text
 .claude/
-├── memory/                  # Memoria persistente (Engram)
-│   └── audit-2026-05-22.md  # Context de auditoría
-├── settings.json            # Config de Claude Code
-└── CLAUDE.md               # Constitución para IAs
+├── 01_Commands/          # Claude commands and workflow entrypoints
+├── 02_Rules/             # Numbered Claude rules; canonical replacement for legacy rules/
+├── 03_Agents/            # Claude agent definitions
+├── 04_Skills/            # Claude skills grouped by priority/domain
+├── 05_Memory/            # Preserved project memory artifacts
+├── 06_History/           # Session history and preserved legacy history
+├── 07_Local_Settings/    # Archived local/nested settings that are not active defaults
+├── settings.json         # Portable Claude Code settings
+├── settings.local.json   # Desktop-local Claude Code settings
+└── skills-lock.json      # Skill lock metadata
 ```
 
 ---
 
-## 🎯 FUNCIÓN
+## Canonical Rules
 
-- **Configuración:** Parámetros para Claude Code en este proyecto
-- **Memory:** Contexto persistente entre sesiones (`.claude/memory/`)
-- **Rules:** Heredadas de `01_Personal_Os/01_Core/01_Rules/`
+- Prefer numbered folders as source of truth.
+- Legacy unnumbered folders were merged into the numbered structure on 2026-05-26.
+- Active rules live in `.claude/02_Rules/`.
+- Active memory artifacts live in `.claude/05_Memory/`.
+- Active/preserved history lives in `.claude/06_History/`.
 
 ---
 
-## 📋 DOCUMENTACIÓN RELACIONADA
+## Related Documentation
 
-| Recurso | Descripción |
+| Resource | Description |
 |---|---|
-| `CLAUDE.md` (raíz) | Config principal del proyecto |
-| `00_Winter_is_Coming/AGENTS.md` | Asignación del GGA |
-| `01_Personal_Os/01_Core/01_Rules/` | Fuente de verdad de reglas |
+| `AGENTS.md` | Root Guardian Angel entrypoint |
+| `00_Winter_is_Coming/AGENTS.md` | Main Matrix Core rules |
+| `01_Personal_Os/01_Core/01_Rules/` | PersonalOS source-of-truth rules |
 
 ---
 
-*Think Different PersonalOS v4.7 Consequences*
+*Think Different PersonalOS v4.8 Desktop-aligned*

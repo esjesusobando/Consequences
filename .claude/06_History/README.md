@@ -1,4 +1,4 @@
-# 📜 .claude/history — Registro de Sesiones
+# 📜 .claude/06_History — Registro de Sesiones
 
 Historial de logs generados por los hooks del sistema.
 
@@ -7,7 +7,7 @@ Historial de logs generados por los hooks del sistema.
 ## 🏗️ Estructura
 
 ```
-.claude/history/
+.claude/06_History/
 ├── sessions/
 │   ├── pre_tool_use.json     # Log de PreToolUse hook
 │   ├── post_tool_use.json    # Log de PostToolUse hook
@@ -55,10 +55,10 @@ Cada log es un **array JSON** con entradas:
 type .claude\history\sessions\pre_tool_use.json
 
 # Ver último entry
-jq -s '.[-1]' .claude/history/sessions/pre_tool_use.json
+jq -s '.[-1]' .claude/06_History/sessions/pre_tool_use.json
 
 # Contar entries
-jq 'length' .claude/history/sessions/pre_tool_use.json
+jq 'length' .claude/06_History/sessions/pre_tool_use.json
 ```
 
 ---
@@ -72,7 +72,7 @@ jq 'length' .claude/history/sessions/pre_tool_use.json
 Get-ChildItem .claude\history\sessions\*.json | Where-Object { $_.LastWriteTime -lt (Get-Date).AddDays(-7) } | Remove-Item
 
 # Bash
-find .claude/history/sessions -name "*.json" -mtime +7 -delete
+find .claude/06_History/sessions -name "*.json" -mtime +7 -delete
 ```
 
 ### Limpiar todos los logs
@@ -108,5 +108,5 @@ Este historial se usa para:
 
 ---
 
-**Auto-generado**: 2026-03-18  
+**Auto-generado**: 2026-03-18
 **Sistema**: Think Different AI Extensions
