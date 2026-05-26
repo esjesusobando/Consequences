@@ -1,6 +1,6 @@
 # 06_Plantillas — Templates Reutilizables
 
-**Versión:** v4.7 | **Fecha:** 2026-05-22
+**Versión:** v4.8 | **Fecha:** 2026-05-26
 
 Coleccion de plantillas generales reutilizables para los agentes del sistema — desde estructura de posts hasta formatos de documentos.
 
@@ -34,4 +34,4 @@ Evitar que los agentes generen desde cero cada vez. Las plantillas aceleran la g
 
 ---
 
-_PersonalOS v4.7 Consequences — Templates Library_
+_PersonalOS v4.8 Consequences — Templates Library_

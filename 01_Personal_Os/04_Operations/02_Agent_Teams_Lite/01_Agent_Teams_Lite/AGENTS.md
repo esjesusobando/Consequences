@@ -1,6 +1,6 @@
 # SDD Workflow — gentle-ai (supersedes Agent Teams Lite)
 
-> **Versión:** 3.0 (2026-05-23)
+> **Versión:** 3.0 (2026-05-26)
 > **Framework:** Spec-Driven Development (SDD)
 > **Motor:** gentle-ai — [https://github.com/Gentleman-Programming/gentle-ai](https://github.com/Gentleman-Programming/gentle-ai)
 > 
@@ -46,4 +46,4 @@ Agent Teams Lite fue el framework original de SDD. Desde gentle-ai v1.0, todo el
 
 ---  
 
-*Legacy ATL v2.0 → gentle-ai v1.30+ | PersonalOS v4.7*
+*Legacy ATL v2.0 → gentle-ai v1.30+ | PersonalOS v4.8*

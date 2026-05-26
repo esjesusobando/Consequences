@@ -10,7 +10,7 @@ globs: **/README.md, **/OS_DIRECTORY.md, **/AGENTS.md, **/CLAUDE.md, **/GOALS.md
 
 ---
 
-## Números Canónicos (v4.7 Consequences)
+## Números Canónicos (v4.8 Consequences)
 
 | Métrica | Valor | Última verificación |
 |---------|-------|---------------------|
@@ -80,4 +80,4 @@ Antes de modificar skills/scripts/HUBs/agentes/MCPs:
 
 ---
 
-*Creada: 2026-05-25 | v4.7 Consequences OS Audit | Regla nro 12 del sistema*
+*Creada: 2026-05-25 | v4.8 Consequences OS Audit | Regla nro 12 del sistema*

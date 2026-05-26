@@ -152,4 +152,4 @@ Agente #05: "Audita seguridad de [feature]"
 
 ---
 
-_PersonalOS v4.7 Consequences — Pure Green Production — 2026-05-24_
+_PersonalOS v4.8 Consequences — Pure Green Production — 2026-05-26_

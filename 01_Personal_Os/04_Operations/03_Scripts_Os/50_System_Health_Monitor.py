@@ -34,7 +34,7 @@ init(autoreset=True)
 
 
 def check_directory_structure():
-    """Verifica estructura de directorios del sistema (v4.7 Consequences)."""
+    """Verifica estructura de directorios del sistema (v4.8 Consequences)."""
     print(f"{Fore.CYAN}--- Verificando Estructura de Directorios ---")
     required_dirs = [
         (CORE_DIR, "01_Core"),
@@ -55,7 +55,7 @@ def check_directory_structure():
 
 
 def check_pollution():
-    """Verifica archivos de contaminación en raíz del proyecto (v4.7 Consequences)."""
+    """Verifica archivos de contaminación en raíz del proyecto (v4.8 Consequences)."""
     print(f"{Fore.CYAN}--- Verificando Contaminación ---")
     junk_files = [".DS_Store", "Thumbs.db"]
     found_junk = False
@@ -69,7 +69,7 @@ def check_pollution():
 
 
 def verify_master_files():
-    """Verifica archivos maestros en ubicaciones correctas (v4.7 Consequences)."""
+    """Verifica archivos maestros en ubicaciones correctas (v4.8 Consequences)."""
     print(f"\n{Fore.CYAN}--- Verificando Archivos Maestros ---")
     # CLAUDE.md no existe en raíz, README.md está en MATRIX_DIR (00_Winter_is_Coming)
     # Verificar según estructura real

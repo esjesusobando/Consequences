@@ -1,6 +1,6 @@
 # SDD Workflow Skills — gentle-ai
 
-> **Versión:** 3.0 (2026-05-23)
+> **Versión:** 3.0 (2026-05-26)
 > **Framework:** Spec-Driven Development (SDD)
 > **Motor:** gentle-ai (reemplaza Agent Teams Lite)
 
@@ -63,4 +63,4 @@ proposal → specs → design → tasks → apply → verify → archive
 
 ---
 
-*gentle-ai v1.30+ | SDD v3.0 | PersonalOS v4.7*
+*gentle-ai v1.30+ | SDD v3.0 | PersonalOS v4.8*

@@ -138,7 +138,7 @@ def print_banner():
 ╔══════════════════════════════════════════════════════════════════════╗
 ║                                                                      ║
 ║          📊 W E E K L Y   R E V I E W                              ║
-║              Think Different PersonalOS v4.7 Consequences                          ║
+║              Think Different PersonalOS v4.8 Consequences                          ║
 ║                                                                      ║
 ╚══════════════════════════════════════════════════════════════════════╝
 """)

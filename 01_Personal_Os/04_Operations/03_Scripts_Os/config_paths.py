@@ -52,12 +52,12 @@ SYSTEM_DIR = CORE_DIR         # alias legacy → CORE_DIR
 ARCHIVE_DIR = ROOT_DIR / "01_Personal_Os" / "05_Archive"
 PROJECTS_DIR = ROOT_DIR / "01_Personal_Os" / "04_Operations" / "05_Projects"
 PLAYGROUND_DIR = ROOT_DIR / "02_Playground"
-HOOKS_DIR = ROOT_DIR / ".agent" / "04_Extensions" / "hooks"
+HOOKS_DIR = ROOT_DIR / ".agent" / "04_Extensions" / "01_Hooks"
 SOUND_DIR = CORE_DIR / "02_Tools" / "05_Hooks" / "04_Sound"   # fuente canónica
-MCP_CONFIG_FILE = ROOT_DIR / ".mcp.json"           # config activa v4.7
+MCP_CONFIG_FILE = ROOT_DIR / ".mcp.json"           # config activa v4.8
 
 # =============================================================================
-# SUBDIRECTORIOS BRAIN/OPERATIONS (v4.7 Consequences)
+# SUBDIRECTORIOS BRAIN/OPERATIONS (v4.8 Consequences)
 # =============================================================================
 
 BRAIN_MEMORY_DIR = OPERATIONS_DIR / "00_Context_LLM" / "00_Context_Memory"
@@ -66,7 +66,7 @@ BRAIN_NOTES_DIR = OPERATIONS_DIR / "00_Context_LLM" / "01_Process_Notes"
 BRAIN_RULES_DIR = OPERATIONS_DIR / "00_Context_LLM" / "03_Memory_Brain"
 
 # =============================================================================
-# SUBDIRECTORIOS OPERATIONS (v4.7)
+# SUBDIRECTORIOS OPERATIONS (v4.8)
 # =============================================================================
 
 OPERATIONS_TASKS_DIR = ROOT_DIR / "01_Personal_Os" / "03_Task"
@@ -75,7 +75,7 @@ OPERATIONS_ANALYTICS_DIR = OPERATIONS_DIR / "00_Context_LLM" / "01_Process_Notes
 AUTO_IMPROVEMENT_DIR = OPERATIONS_DIR / "01_Auto_Improvement"
 
 # =============================================================================
-# SUBDIRECTORIOS ENGINE/SCRIPTS (v4.7)
+# SUBDIRECTORIOS ENGINE/SCRIPTS (v4.8)
 # =============================================================================
 
 ENGINE_SCRIPTS_DIR = ENGINE_DIR  # Ya está en 03_Scripts_Os
@@ -83,7 +83,7 @@ ENGINE_TESTS_DIR = ENGINE_DIR / "10_Legacy"
 ENGINE_COMPOUND_DIR = CORE_DIR / "02_Tools" / "02_Skills" / "00_Compound_Engineering"
 
 # =============================================================================
-# SUBDIRECTORIOS KNOWLEDGE (v4.7)
+# SUBDIRECTORIOS KNOWLEDGE (v4.8)
 # =============================================================================
 
 KNOWLEDGE_RESEARCH_DIR = KNOWLEDGE_DIR / "01_Research_Os"
@@ -125,7 +125,7 @@ PROJECT_ROOT = ROOT_DIR  # Alias para scripts que usan PROJECT_ROOT
 SCRIPTS_OS_DIR = ENGINE_DIR  # Alias de compatibilidad para recursive_improvement_engine
 
 # =============================================================================
-# RUTAS REALES DEL SISTEMA (estructura v4.7 Consequences)
+# RUTAS REALES DEL SISTEMA (estructura v4.8 Consequences)
 # =============================================================================
 
 # Matrix: Goals, Backlog, Agentes (ubicación central)
@@ -163,7 +163,7 @@ SERVER_DIR = CORE_DIR / "02_Tools" / "07_Server"
 AIPM_ROOT = SERVER_DIR / "AIPM"
 
 # =============================================================================
-# JARVIS v4.7 — Manifest + HUBs (Consequences 4.7)
+# JARVIS v4.8 — Manifest + HUBs (Consequences 4.8)
 # =============================================================================
 
 MANIFEST_DIR       = OPERATIONS_DIR / "02_Agent_Teams_Lite" / "00_Manifest"

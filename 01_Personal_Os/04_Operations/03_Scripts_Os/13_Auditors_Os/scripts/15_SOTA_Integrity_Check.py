@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-15_SOTA_Integrity_Check.py — PersonalOS v4.7 Consequences
+15_SOTA_Integrity_Check.py — PersonalOS v4.8 Consequences
 
 Script de integridad que valida las dimensiones del sistema:
 - Submódulos git
@@ -26,7 +26,7 @@ from pathlib import Path
 import io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-# Config - v4.7 Consequences: script está en
+# Config - v4.8 Consequences: script está en
 # 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/
 # → scripts/ → 13_Auditors_Os/ → 03_Scripts_Os/ → 04_Operations/ → 01_Personal_Os/ → ROOT
 SCRIPT_DIR = Path(__file__).parent.resolve()
@@ -72,9 +72,9 @@ def check_submodules():
     return len(issues) == 0
 
 def check_skills():
-    """Verifica skills en v4.7: 9 áreas funcionales + extras con SKILL.md."""
+    """Verifica skills en v4.8: 9 áreas funcionales + extras con SKILL.md."""
     print("-" * 50)
-    print("CHECKING: Skills (v4.7)")
+    print("CHECKING: Skills (v4.8)")
     print("-" * 50)
 
     skills_path = ROOT / "01_Personal_Os" / "01_Core" / "02_Tools" / "02_Skills"
@@ -99,7 +99,7 @@ def check_skills():
 
     print(f"Total: {len(categories_with_skills)}/{len(categories)} áreas con al menos 1 SKILL.md")
 
-    # v4.7 tiene 12 áreas (9 funcionales + extras); requerir que todas tengan SKILL.md
+    # v4.8 tiene 12 áreas (9 funcionales + extras); requerir que todas tengan SKILL.md
     return len(categories_with_skills) == len(categories)
 
 def check_mcps():
@@ -218,9 +218,9 @@ def check_rules():
     return len(mdc_files) >= 8
 
 def check_methodologies():
-    """Verifica metodologías integradas en v4.7 Consequences."""
+    """Verifica metodologías integradas en v4.8 Consequences."""
     log("=" * 50)
-    log("CHECKING: Metodologias Integradas (v4.7)")
+    log("CHECKING: Metodologias Integradas (v4.8)")
     log("=" * 50)
 
     _tools = ROOT / "01_Personal_Os" / "01_Core" / "02_Tools"
@@ -244,9 +244,9 @@ def check_methodologies():
     return True  # Warn only — no falla el sistema
 
 def check_core_structure():
-    """Verifica estructura core de v4.7 Consequences."""
+    """Verifica estructura core de v4.8 Consequences."""
     log("=" * 50)
-    log("CHECKING: Core Structure (v4.7 Consequences)")
+    log("CHECKING: Core Structure (v4.8 Consequences)")
     log("=" * 50)
 
     _os = ROOT / "01_Personal_Os"
@@ -273,7 +273,7 @@ def check_core_structure():
 def main():
     """Ejecutar todos los checks."""
     print("\n===========================================")
-    print(" SOTA INTEGRITY CHECK -- PersonalOS v4.7")
+    print(" SOTA INTEGRITY CHECK -- PersonalOS v4.8")
     print("===========================================\n")
 
     results = {
@@ -312,7 +312,7 @@ def main():
         reports_dir.mkdir(parents=True, exist_ok=True)
         ts = datetime.now().strftime("%Y%m%d_%H%M%S")
         report_path = reports_dir / f"sota_integrity_{ts}.txt"
-        lines = [f"SOTA INTEGRITY CHECK — PersonalOS v4.7\n", f"Fecha: {ts}\n\n"]
+        lines = [f"SOTA INTEGRITY CHECK — PersonalOS v4.8\n", f"Fecha: {ts}\n\n"]
         for name, status in results.items():
             icon = "[OK]" if status else "[FAIL]"
             lines.append(f"{icon} {name}\n")

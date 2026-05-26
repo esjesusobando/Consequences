@@ -1,7 +1,7 @@
 # 02_Agent_Teams_Lite — SDD Registry & JARVIS Manifests
 
 > **Versión:** v4.1 → **MIGRADO A gentle-ai**
-> **Última actualización:** 2026-05-23
+> **Última actualización:** 2026-05-26
 > **Estado:** DEPRECATED — El upstream `agent-teams-lite` fue archivado. Reemplazado por [`gentle-ai`](https://github.com/Gentleman-Programming/gentle-ai).
 
 ---
@@ -123,5 +123,5 @@ Si venís de Agent Teams Lite, esto cambió:
 
 ---
 
-*Think Different PersonalOS v4.7 — gentle-ai ACTIVE | ATL LEGACY*
+*Think Different PersonalOS v4.8 — gentle-ai ACTIVE | ATL LEGACY*
 

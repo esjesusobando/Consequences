@@ -81,7 +81,7 @@ def process_file(file_path: str) -> tuple:
 
 def main():
     print("=" * 50)
-    print("   PERSONAL OS : BEAUTY DOC v4.7")
+    print("   PERSONAL OS : BEAUTY DOC v4.8")
     print("=" * 50)
 
     # Buscar TODOS los .md en el proyecto

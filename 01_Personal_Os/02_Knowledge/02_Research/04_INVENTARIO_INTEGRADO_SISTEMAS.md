@@ -56,7 +56,7 @@ Framework operativo personal que integra agents, skills, workflows, y automatiza
 ├── 04_Operations/
 │   ├── 01_Auto_Improvement/  ← Sistema recursivo
 │   ├── 02_Agent_Teams_Lite/  ← SDD workflow
-│   └── 03_Scripts_Os/       ← 14 HUBs
+│   └── 03_Scripts_Os/       ← 28 HUBs
 └── 05_Archive/               ← Legacy + backups
 ```
 

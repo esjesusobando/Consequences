@@ -182,7 +182,7 @@
 | 09                                  | Elite Reporting                                    | 09_Elite_Reporting.mdc                                          | ✅                                          |
 | 10                                  | Context Management                                 | 10_Context_Management.mdc                                       | ✅                                          |
 | 11                                  | Workflow Standards                                 | 11_Workflow_Standards.mdc                                       | ✅                                          |
-| 12                                  | Nexus-Routing                                      | 12_Nexus-Routing.mdc                                            | ✅                                          |
+| 12                                  | Audit OS Integrity                                 | 12_Audit_OS_Integrity.mdc                                       | ✅                                          |
 | 13                                  | Testing Resource                                   | 13_Testing_Resource_Management.mdc                              | ✅                                          |
 | 14                                  | Invoice Intelligence                               | 14_Invoice_Intelligence.mdc                                     | ✅                                          |
 | 15                                  | Backlog Processing                                 | 15_Backlog_Processing.mdc                                       | ✅                                          |
@@ -213,7 +213,7 @@
 
 ## 5. HOOKS & AUTOMATION
 
-### ✅ 5.1 Hooks Structure (01_Core/07_Hooks/)
+### ✅ 5.1 Hooks Structure (01_Core/02_Tools/05_Hooks/)
 
 | Hook Type                                  | Location                                            | Files                                                            | Status                                |
 |-------------------------------------------|----------------------------------------------------|-----------------------------------------------------------------|--------------------------------------|

@@ -87,7 +87,7 @@ Think_Different/                        ← Raíz del proyecto
 ├── 01_Personal_Os/                     ✅ Sistema Operativo completo
 │   ├── 01_Core/                        ✅ Motor del OS
 │   │   ├── 00_Workflows_Os/            ✅ 28 Workflows (Personal, Marvel, CE, Hillary)
-│   │   ├── 01_Rules/                   ✅ 11 reglas .mdc
+│   │   ├── 01_Rules/                   ✅ 13 reglas .mdc
 │   │   └── 02_Tools/                   ✅ Agentes, Skills, MCPs, Hooks, Evals
 │   │       ├── 01_Agents/              ✅ 52+ agentes (Dream Team + Specialists)
 │   │       ├── 02_Skills/               ✅ 300+ skills en 11 áreas funcionales
