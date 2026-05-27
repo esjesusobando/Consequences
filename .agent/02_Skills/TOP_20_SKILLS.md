@@ -1,7 +1,7 @@
 # 🏆 TOP 20 SKILLS — Ranking General por Valor & SOTA & Quality
 
 > **Proyecto:** PersonalOS v4.8 Consequences
-> **Fecha:** 2026-05-14
+> **Fecha:** 2026-05-27 (v2 — añadido TOP 10 Diseño + Creación de Contenido)
 > **Criterio:** Valor práctico × Estado del arte × Calidad de ejecución
 > **Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
@@ -322,6 +322,171 @@
 
 ---
 
+## 🏆 TOP 10 — Diseño y Creación de Contenido (Áreas 01 + 02 combinadas)
+
+> Ranking específico para el dominio de Diseño UI/UX + Creación de Contenido.
+> Combina skills de `02_Diseno_Ui_Ux` (Diseño) y `01_Creacion_Contenidos` (Contenido).
+
+### 🥇 #1 — Huashu Design
+**HTML Prototipado de Alta Fidelidad** — `02_Diseno_Ui_Ux/08_Huashu_Design/`
+
+| Dimensión | Score | Justificación |
+|-----------|-------|---------------|
+| **Valor** | 10/10 | Prototipado real, funcional, exportable a MP4/GIF |
+| **SOTA** | 10/10 | 5流派 × 20 filosofías, 24 showrooms, 60fps |
+| **Calidad** | 9/10 | React+Babel, evitar AI slop, 5维度评审 |
+| **TOTAL** | **29/30** | |
+
+**Why:** La skill de prototipado mas completa que existe. Zero deps, deploy a URL, exporta a video.
+
+---
+
+### 🥈 #2 — Dumbledor Design
+**Jerarquía Visual + Contraste Binario** — `02_Diseno_Ui_Ux/09_Dumbledor_Design/`
+
+| Dimensión | Score | Justificación |
+|-----------|-------|---------------|
+| **Valor** | 10/10 | Metodología universal — slides, landing, cards, posts |
+| **SOTA** | 9/10 | Sistema 3 niveles (900→700→300) único |
+| **Calidad** | 10/10 | Inspirado en Vogue, Helmut Lang, propaganda soviética |
+| **TOTAL** | **29/30** | |
+
+**Why:** Te enseña A DISEÑAR, no solo a usar herramientas.
+
+---
+
+### 🥉 #3 — Frontend Slides
+**Presentaciones HTML** — `02_Diseno_Ui_Ux/07_Marvel_Avengers/`
+
+| Dimensión | Score | Justificación |
+|-----------|-------|---------------|
+| **Valor** | 10/10 | Zero deps, PPT conversion, deploy a URL, PDF export |
+| **SOTA** | 9/10 | 12 presets anti-AI-slop, viewport fitting, animations |
+| **Calidad** | 7/10 | Depende del preset elegido |
+| **TOTAL** | **26/30** | |
+
+**Why:** La skill de presentaciones MAS completa — zero dependencies.
+
+---
+
+### 🏅 #4 — Premium Image Studio
+**Generación de Imágenes Premium** — `01_Creacion_Contenidos/11_Premium_Image_Studio/`
+
+| Dimensión | Score | Justificación |
+|-----------|-------|---------------|
+| **Valor** | 9/10 | Logos, banners, thumbnails, branding visual completo |
+| **SOTA** | 8/10 | Integración Gemini, edición, variación |
+| **Calidad** | 7/10 | Depende del prompt y modelo |
+| **TOTAL** | **24/30** | |
+
+**Why:** Tu kit de identidad visual — todo en una skill.
+
+---
+
+### 🏅 #5 — Ui Ux Pro Max
+**UI/UX con Base de Datos Consultable** — `02_Diseno_Ui_Ux/06_Ui_Ux_Pro_Max/`
+
+| Dimensión | Score | Justificación |
+|-----------|-------|---------------|
+| **Valor** | 9/10 | DB consultable para referencias instantáneas |
+| **SOTA** | 8/10 | Patrones curados + búsqueda semántica |
+| **Calidad** | 9/10 | Sistema de scoring y búsqueda |
+| **TOTAL** | **26/30** | |
+
+**Why:** Centraliza el conocimiento de diseño — no mas buscar en bookmark chaos.
+
+---
+
+### 🏅 #6 — Video Visuals Producer
+**Producción de Visuales para Video** — `01_Creacion_Contenidos/10_Video_Visuals_Producer/`
+
+| Dimensión | Score | Justificación |
+|-----------|-------|---------------|
+| **Valor** | 9/10 | Scripts, assets, animaciones, pipeline completo |
+| **SOTA** | 8/10 | Remotion + Seedance + visual synthesis |
+| **Calidad** | 7/10 | Depende del brief creativo |
+| **TOTAL** | **24/30** | |
+
+**Why:** La skill mas infravalorada del OS — produce contenido visual real.
+
+---
+
+### 🏅 #7 — Carousel Master
+**Estrategia de Carruseles** — `01_Creacion_Contenidos/12_Carousel_Master/`
+
+| Dimensión | Score | Justificación |
+|-----------|-------|---------------|
+| **Valor** | 8/10 | Engine de carruseles para LinkedIn, Instagram |
+| **SOTA** | 8/10 | Estructura viral, hooks, storytelling visual |
+| **Calidad** | 7/10 | Templates probados |
+| **TOTAL** | **23/30** | |
+
+**Why:** El formato que MAS engagement genera en redes — dominarlo es diferencial.
+
+---
+
+### 🏅 #8 — Brand Voice
+**Sistema de Voz de Marca** — `01_Creacion_Contenidos/01_Brand_Voice/`
+
+| Dimensión | Score | Justificación |
+|-----------|-------|---------------|
+| **Valor** | 8/10 | Consistencia cross-touchpoint |
+| **SOTA** | 7/10 | Framework de voz + tono + personalidad |
+| **Calidad** | 7/10 | Guidelines prácticas, no académicas |
+| **TOTAL** | **22/30** | |
+
+**Why:** Sin voz de marca, cada pieza es una isla — esto las conecta.
+
+---
+
+### 🏅 #9 — SEO SOTA Master
+**SEO Técnico + Keyword Research** — `01_Creacion_Contenidos/13_Seo_Sota_Master/`
+
+| Dimensión | Score | Justificación |
+|-----------|-------|---------------|
+| **Valor** | 8/10 | Tráfico orgánico sostenible |
+| **SOTA** | 8/10 | SEO técnico + schema + content strategy |
+| **Calidad** | 6/10 | En evolución constante |
+| **TOTAL** | **22/30** | |
+
+**Why:** Sin SEO no te encuentran. Punto.
+
+---
+
+### 🏅 #10 — Taste Skill
+**Criterio Estético** — `02_Diseno_Ui_Ux/02_Taste_Skills/`
+
+| Dimensión | Score | Justificación |
+|-----------|-------|---------------|
+| **Valor** | 8/10 | Te hace mejor diseñador, no solo mejor output |
+| **SOTA** | 8/10 | Principios sólidos de diseño clásico |
+| **Calidad** | 9/10 | Inspiración en lo mejor del diseño |
+| **TOTAL** | **25/30** | |
+
+**Why:** La única skill que trabaja en tu OJO — no tu output, tu capacidad de juzgar.
+
+---
+
+### 📊 Resumen Diseño + Contenido
+
+| Rank | Skill | Área | TOTAL |
+|------|-------|------|-------|
+| 🥇 1 | **Huashu Design** | 02_Diseno | **29** |
+| 🥈 2 | **Dumbledor Design** | 02_Diseno | **29** |
+| 🥉 3 | **Frontend Slides** | 02_Diseno | **26** |
+| 4 | **Premium Image Studio** | 01_Contenido | **24** |
+| 5 | **Ui Ux Pro Max** | 02_Diseno | **26** |
+| 6 | **Video Visuals Producer** | 01_Contenido | **24** |
+| 7 | **Carousel Master** | 01_Contenido | **23** |
+| 8 | **Brand Voice** | 01_Contenido | **22** |
+| 9 | **SEO SOTA Master** | 01_Contenido | **22** |
+| 10 | **Taste Skill** | 02_Diseno | **25** |
+
+> **Nota:** Área 01 (Creación de Contenidos) tenía 0 skills en el TOP 20 general. Este ranking las visibiliza.
+> **Próximo paso:** Evaluar y añadir Marketing Tech, Content Transformer, Youtube Full Video en próxima iteración.
+
+---
+
 ## 🔄 FLUJO DE APRENDIZAJE SUGERIDO
 
 ```
@@ -393,5 +558,6 @@ NUEVO PROYECTO
 
 ---
 
-*PersonalOS v4.8 Consequences — 2026-05-26*
+*PersonalOS v4.8 Consequences — 2026-05-27*
 *Creado: TOP 20 Skills ranking general*
+*Actualización v2: TOP 10 Diseño + Creación de Contenido añadido (Áreas 01 + 02)*
