@@ -176,4 +176,21 @@ Corregir bugs detectados durante la auditoría inicial del proyecto: Contex_Memo
 | version headers | ✅ 4.8 en todos lados |
 
 ### Pendiente
-- `.mcp.json`: Renombrar `eagle-mcp` → `obsidian-mcp` (el key corre `obsidian-mcp@latest`, no es Eagle)
+- ~~`.mcp.json`: Renombrar `eagle-mcp` → `obsidian-mcp` (el key corre `obsidian-mcp@latest`, no es Eagle)~~ ✅ 2026-05-27
+
+### Session 2026-05-27 — Post-Merge Cleanup
+
+#### Fixes aplicados:
+| # | Bug | Fix |
+|---|-----|-----|
+| 1 | skill-registry.md perdió descriptions CE + paths a `.pi/` (inexistente) | 37 CE descriptions restauradas desde git history; `.pi/` → `.config/opencode/skills/` |
+| 2 | 78+ scripts activos referencian `08_Scripts_Os` legacy path | 91 archivos actualizados (73 .py + 18 no-py) a `04_Operations/03_Scripts_Os` |
+| 3 | `.mcp.json` key `eagle-mcp` corre `obsidian-mcp@latest` | Renombrado a `obsidian-mcp` |
+| 4 | `OS_DIRECTORY.md` + `README.md` refs a `eagle-mcp` | 3 referencias actualizadas a `obsidian-mcp` |
+| 5 | `Contex_Memory` typo en H1 de doc histórico (v4.7) | Corregido a `Context_Memory` |
+
+#### Archivos tocados: 90+ | Todos los bugs cerrados
+
+#### Nota
+- `_root` para scripts en `.agent/` resuelve a `project_root`, para `01_Personal_Os/` resuelve a `01_Personal_Os/`. Ambos caminos ahora apuntan a `04_Operations/03_Scripts_Os/`. ✅
+- skill-registry auto-refresh de gentle-ai es riesgoso — pisó descriptions activas con "--". Monitorear.
