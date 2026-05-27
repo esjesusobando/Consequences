@@ -146,7 +146,7 @@ def run_script(script_name, report_path=None):
 
     # Fallback 2: subdirectorios conocidos
     if not script_path or not script_path.exists():
-        for subdir in ["03_Validator", "13_Auditors_Os", "14_Otros", "11_Anthropic_Harness"]:
+        for subdir in ["05_Validator", "12_Auditors_Os", "09_Auxiliary", "10_Anthropic"]:
             candidate = ENGINE_DIR / subdir / script_name
             if candidate.exists():
                 script_path = candidate

@@ -4,6 +4,3 @@
 [submodule "01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/engram"]
 	path = 01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/engram
 	url = https://github.com/Gentleman-Programming/engram.git
-[submodule "03_Resultado/09_World_OIM/01_OIM_Website_v2"]
-	path = 03_Resultado/09_World_OIM/01_OIM_Website_v2
-	url = https://github.com/esjesusobando/OIM.git

@@ -12,8 +12,8 @@ import argparse
 from pathlib import Path
 
 # === PROTOCOLO DE RUTA v2.0 Consequences ===
-# Script: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/
-# → scripts/ → 13_Auditors_Os/ → 03_Scripts_Os/ → 04_Operations/ → 01_Personal_Os/ → ROOT
+# Script: 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/
+# → scripts/ → 12_Auditors_Os/ → 03_Scripts_Os/ → 04_Operations/ → 01_Personal_Os/ → ROOT
 SCRIPT_DIR = Path(__file__).parent.resolve()
 SCRIPTS_OS = SCRIPT_DIR.parent.parent  # 03_Scripts_Os
 OPERATIONS = SCRIPTS_OS.parent          # 04_Operations

@@ -17,7 +17,7 @@ from typing import Any, Callable, TypeVar
 from enum import Enum
 
 # Path resolution con fallback robusto (v2.0 Consequences)
-# Script en: ROOT/01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/
+# Script en: ROOT/01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/
 _SCRIPT_DIR = Path(__file__).parent.resolve()
 _SCRIPTS_OS = _SCRIPT_DIR.parent  # 03_Scripts_Os/
 sys.path.insert(0, str(_SCRIPT_DIR))

@@ -12,7 +12,7 @@ from typing import List, Dict
 
 ROOT = Path(r"C:\Users\sebas\Downloads\01 Revisar\09 Versiones\00 Respaldo PC Sebas\01 Github\personal-os\Think_Different")
 SKILLS_DIR = ROOT / "01_Core" / "03_Skills"
-OUTPUT_CSV = ROOT / "04_Operations/03_Scripts_Os" / "14_Otros" / "skills_references.csv"
+OUTPUT_CSV = ROOT / "04_Operations/03_Scripts_Os" / "09_Auxiliary" / "skills_references.csv"
 
 EXCLUDE = {".mcp.json", "CLAUDE.md", "AGENTS.md", "SKILL.md", "PLAN_SDD_REORGANIZACION_SKILLS.md"}
 

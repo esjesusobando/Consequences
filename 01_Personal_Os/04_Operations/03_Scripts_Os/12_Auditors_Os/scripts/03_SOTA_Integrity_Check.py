@@ -13,8 +13,8 @@ Script de integridad que valida las dimensiones del sistema:
 - Metodologías integradas
 
 Usage:
-    python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA_Integrity_Check.py
-    python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA_Integrity_Check.py --verbose
+    python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/03_SOTA_Integrity_Check.py
+    python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/03_SOTA_Integrity_Check.py --verbose
 """
 
 import os
@@ -27,8 +27,8 @@ import io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
 # Config - v4.8 Consequences: script está en
-# 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/
-# → scripts/ → 13_Auditors_Os/ → 03_Scripts_Os/ → 04_Operations/ → 01_Personal_Os/ → ROOT
+# 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/
+# → scripts/ → 12_Auditors_Os/ → 03_Scripts_Os/ → 04_Operations/ → 01_Personal_Os/ → ROOT
 SCRIPT_DIR = Path(__file__).parent.resolve()
 ROOT = SCRIPT_DIR.parent.parent.parent.parent.parent
 VERBOSE = "--verbose" in sys.argv

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-94_Ritual_Hub.py — Hub centralizador de Rituales y Standups
+04_Ritual_Hub.py — Hub centralizador de Rituales y Standups
 Reutiliza scripts de rituales: 08, 09, 14, 15, 17
 """
 

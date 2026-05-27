@@ -57,7 +57,7 @@ Think_Different/                           # RAÍZ
 │       ├── 00_Context_LLM/       ✅ Memoria LLM (Engram, notes)
 │       ├── 01_Auto_Improvement/  ✅ Auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests JARVIS
-│       ├── 03_Scripts_Os/        ✅ 21+2 HUBs (19 raíz + SOTA + CATALOG) + 284 scripts
+│       ├── 03_Scripts_Os/        ✅ 31 HUBs/scripts raíz + 169 scripts total (13 directorios)
 │       ├── 04_Installer/         ✅ Installer
 │       ├── 05_Projects/          ✅ Proyectos activos
 │       ├── 06_SOTA_Features/    ✅ Features estado-del-arte
@@ -134,7 +134,7 @@ Think_Different/                           # RAÍZ
 
 ---
 
-### HUBs v4.8 (21+2 HUBs + 284 scripts)
+### HUBs v4.8 (31 HUBs + scripts en 13 directorios)
 
 | Hub                                          | Script                                          | Propósito                                             |
 |---------------------------------------------|------------------------------------------------|------------------------------------------------------|
@@ -162,10 +162,10 @@ Think_Different/                           # RAÍZ
 | **Path Replacement**                         | `23_path_replacement.py`                        | Reemplazo de paths legacy                             |
 | **Mass Path Migration**                      | `24_mass_path_migration.py`                     | Migración masiva de paths                             |
 | **Minimax Optimizer**                        | `25_Minimax_Optimizer_Hub.py`                   | Optimización Minimax                                  |
-| **Parallel Audit Pro**                       | `33_Parallel_Audit_Pro.py`                      | Auditoría paralela                                    |
-| **Skill Auditor**                            | `34_Skill_Auditor.py`                           | Auditoría específica de skills                        |
-| **System Health Monitor**                    | `50_System_Health_Monitor.py`                   | Monitor de salud                                      |
-| **Repo Sync Auditor**                        | `57_Repo_Sync_Auditor.py`                       | Auditor de sincronización                             |
+| **Parallel Audit Pro**                       | `26_Parallel_Audit_Pro.py`                      | Auditoría paralela                                    |
+| **Skill Auditor**                            | `27_Skill_Auditor.py`                           | Auditoría específica de skills                        |
+| **System Health Monitor**                    | `28_System_Health_Monitor.py`                   | Monitor de salud                                      |
+| **Repo Sync Auditor**                        | `29_Repo_Sync_Auditor.py`                       | Auditor de sincronización                             |
 | **HUB SOTA**                                 | `HUB_SOTA.py`                                   | HUB de HUBs SOTA                                      |
 | **Config Paths**                             | `config_paths.py`                               | Configuración de paths del sistema                    |
 

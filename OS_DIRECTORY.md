@@ -13,8 +13,8 @@
 | gentle-ai                             | v1.30.6                                                                    | ✅ AVAILABLE                                    |
 | Skills                                | **394** (12 áreas funcionales)                                             | ✅ VERIFIED — 0 sin frontmatter                 |
 | Agentes                               | **48** (source) / 82 (con SDD/CE)                                          | ✅ SYNCED                                       |
-| HUBs                                  | **21** (19 Hub.py + HUB_SOTA + HUB_CATALOG)                               | ✅ VERIFIED                                     |
-| Scripts totales                       | **267** (.py, excl legacy) + **88** legacy                                | ✅ DOCUMENTED                                   |
+| HUBs                                  | **31** (scripts raíz)                                                      | ✅ RESTRUCTURED (00-30)                         |
+| Scripts totales                       | **81** active + **88** legacy = 169 total                                  | ✅ REORGANIZED (00-13 dirs)                    |
 | Workflows                             | **30** (7 categorías en 00_Workflows_Os)                                   | ✅ ACTIVE                                       |
 | Hooks                                 | **13** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk)| ✅ ACTIVE                                       |
 | Rules                                 | **14** (13 .mdc + 1 .md index)                                             | ✅ DEFINED                                      |
@@ -22,7 +22,7 @@
 | Integrations                          | **2** (01_Fireflies, 02_Granola)                                           | ✅ INTEGRATED                                   |
 
 > **🟢 ÚLTIMA AUDITORÍA:** 2026-05-25 — v4.8 Consequences
-> Agent Sync: 48 agents (source) / 82 total con SDD/CE. Skills: 394 (SKILL.md source) / 407 (backup .agent). MCPs: 7+38. HUBs: 21. Scripts: 267 activos + 88 legacy.
+> Agent Sync: 48 agents (source) / 82 total con SDD/CE. Skills: 394 (SKILL.md source) / 407 (backup .agent). MCPs: 7+38. HUBs: 31 raíz. Scripts: 81 active + 88 legacy.
 
 ---
 
@@ -110,7 +110,7 @@ Think_Different/                         # RAÍZ
 │   │   ├── 00_Context_LLM/        ✅ Memoria LLM (Engram, notes)
 │   │   ├── 01_Auto_Improvement/   ✅ Motor auto-mejora recursiva
 │   │   ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests
-│   │   ├── 03_Scripts_Os/         ✅ 21 HUBs (19 Hub.py + HUB_SOTA + HUB_CATALOG) + 267 scripts + 88 legacy
+│   │   ├── 03_Scripts_Os/         ✅ 31 HUBs/scripts raíz + 169 total (81 active + 88 legacy)
 │   │   ├── 04_Installer/          ✅ Installer scripts
 │   │   ├── 05_Projects/          ✅ Proyectos activos
 │   │   ├── 06_SOTA_Features/     ✅ Features estado-del-arte
@@ -200,7 +200,7 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## 🎯 HUBs — 21 HUBs + 267 SCRIPTS (+88 legacy)
+## 🎯 HUBs — 31 scripts raíz + 169 total (+88 legacy)
 
 ### Scripts Python en raíz de 03_Scripts_Os/ (principales)
 
@@ -253,7 +253,7 @@ Think_Different/                         # RAÍZ
 | `07_Data/`                 | Datos (4)                                                                   |
 | `08_General/`              | Generales (4)                                                               |
 | `09_Integration/`          | Integraciones (3)                                                           |
-| `10_Legacy/`               | Legacy (88)                                                                 |
+| `13_Legacy/`               | Legacy (88 scripts archivados)                                              |
 | `11_Anthropic_Harness/`    | Harness Anthropic                                                           |
 | `12_Audits/`               | Auditorías                                                                  |
 | `13_Auditors_Os/`          | Auditores OS                                                                |
@@ -354,11 +354,11 @@ Los siguientes hallsazgos fueron identificados durante la auditoría OS integral
 ### Referencias Cruzadas
 | #  | Hallazgo                                                       | Estado                             |
 |---|---------------------------------------------------------------|-----------------------------------|
-| 15 | Números canónicos 28/284/394/36 sync post-Judgment Day         | ✅ VERIFICADO (commit fb823448e)    |
+| 15 | Renumbering 03_Scripts_Os: 00-13 dirs, 31 scripts raíz    | ✅ APLICADO (commits 2026-05-27)    |
 | 16 | `.agent/README.md` decía 23 scripts, real son 31 root + subdirs| 📌 DOCUMENTADO — backup no es fuente|
 
 > **NOTA:** todo hallazgo marcado como PRESERVADO se mantiene intencionalmente. El sistema prioriza no perder información histórica sobre la limpieza perfecta.
 
 ---
 
-*Actualizado: 2026-05-25 | PersonalOS v4.8 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 394 skills source / 407 backup | 48 agents | 21 HUBs | 267 active scripts + 88 legacy | 30 workflows | 13 hooks*
+*Actualizado: 2026-05-27 | PersonalOS v4.8 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 394 skills source / 407 backup | 48 agents | 31 scripts raíz | 81 active + 88 legacy | 30 workflows | 13 hooks*

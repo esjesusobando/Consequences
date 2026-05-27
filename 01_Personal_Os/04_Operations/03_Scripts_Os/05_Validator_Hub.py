@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-95_Validator_Hub.py — Hub centralizador de Validaciones del sistema
+05_Validator_Hub.py — Hub centralizador de Validaciones del sistema
 Reutiliza scripts de validación: 13, 40, 37, 80
 """
 
@@ -70,12 +70,12 @@ def dynamic_speak(text):
 
 def run_script(script_name):
     """Ejecuta un script de validación con fallback dinámico."""
-    # Fallback 1: buscar en 03_Validator
-    script_path = ENGINE_DIR / "03_Validator" / script_name
+    # Fallback 1: buscar en 05_Validator
+    script_path = ENGINE_DIR / "05_Validator" / script_name
     
-    # Fallback 2: buscar en subdirectorios de 08_Scripts_Os
+    # Fallback 2: buscar en subdirectorios de 03_Scripts_Os
     if not script_path.exists():
-        search_dirs = ["13_Auditors_Os/scripts", "14_Otros", "11_Anthropic_Harness"]
+        search_dirs = ["12_Auditors_Os/scripts", "09_Auxiliary", "10_Anthropic"]
         for subdir in search_dirs:
             candidate = ENGINE_DIR / subdir / script_name
             if candidate.exists():

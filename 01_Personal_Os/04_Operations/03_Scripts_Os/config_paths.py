@@ -236,7 +236,7 @@ SCRIPT_LOCATION_MAP = {
     # Batch 3: Workflows
     "01_Spider_Brainstorm.py": SKILLS_DIR / "00_Compound_Engineering" / "scripts",
     "02_Professor_X_Plan.py": SKILLS_DIR / "05_Workflows" / "01_Agent_Teams_Lite" / "scripts",
-    # Batch 1: Auditor (en ENGINE_DIR/03_Validator - ubicación real)
+    # Batch 1: Auditor (en ENGINE_DIR/05_Validator - ubicación real)
     # === Workflow Scripts ===
     "08_Ritual_Cierre.py": ENGINE_DIR / "13_Legacy",
     "14_Morning_Standup.py": ENGINE_DIR / "13_Legacy",

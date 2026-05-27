@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-93_AIPM_Hub.py — Hub centralizador de AIPM (AI Project Management)
+03_AIPM_Hub.py — Hub centralizador de AIPM (AI Project Management)
 Reutiliza scripts AIPM: 22, 23, 24, 28, 30
 """
 
@@ -68,8 +68,8 @@ def dynamic_speak(text):
 
 
 def run_script(script_name, args=None):
-    # Los scripts de AIPM ahora están en 05_AIPM
-    script_path = ENGINE_DIR / "05_AIPM" / script_name
+    # Los scripts de AIPM ahora están en 03_AIPM
+    script_path = ENGINE_DIR / "03_AIPM" / script_name
     if not script_path.exists():
         print(f"{Fore.RED}[ERROR] Script no encontrado: {script_path}{Style.RESET_ALL}")
         return

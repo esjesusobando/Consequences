@@ -83,29 +83,29 @@ def main():
     # 1. Agente Estructural - usar config_paths con get_skill_script()
     launch_agent(1, "StackIntegrity", f'python -c "from config_paths import *; print(ROOT_DIR)"')
 
-    # 2. Agente de Reglas - en 03_Validator
-    launch_agent(2, "RulesAuditor", f'python "{ENGINE_DIR / "03_Validator" / "40_Validate_Rules.py"}"')
+    # 2. Agente de Reglas - en 05_Validator (legacy: 40_Validate_Rules → 13_Legacy)
+    launch_agent(2, "RulesAuditor", f'python "{ENGINE_DIR / "05_Validator" / "40_Validate_Rules.py"}"')
 
-    # 3. Agente de Enlaces - en 14_Otros (no en 01_Ritual)
-    launch_agent(3, "LinkValidator", f'python "{ENGINE_DIR / "14_Otros" / "12_Update_Links.py"}"')
+    # 3. Agente de Enlaces - en 09_Auxiliary (legacy: 12_Update_Links → 13_Legacy)
+    launch_agent(3, "LinkValidator", f'python "{ENGINE_DIR / "09_Auxiliary" / "12_Update_Links.py"}"')
 
-    # 4-7. Agentes Beautifier - usar 13_Auditors_Os
-    launch_agent(4, "BeautifierREADME", f'python "{ENGINE_DIR / "13_Auditors_Os" / "scripts" / "13_Beautify_Tables.py"}" --target=README.md')
+    # 4-7. Agentes Beautifier - usar 12_Auditors_Os
+    launch_agent(4, "BeautifierREADME", f'python "{ENGINE_DIR / "12_Auditors_Os" / "scripts" / "13_Beautify_Tables.py"}" --target=README.md')
 
-    launch_agent(5, "BeautifierAGENTS", f'python "{ENGINE_DIR / "13_Auditors_Os" / "scripts" / "13_Beautify_Tables.py"}" --target=AGENTS.md')
+    launch_agent(5, "BeautifierAGENTS", f'python "{ENGINE_DIR / "12_Auditors_Os" / "scripts" / "13_Beautify_Tables.py"}" --target=AGENTS.md')
 
-    launch_agent(6, "BeautifierINVENTORY", f'python "{ENGINE_DIR / "13_Auditors_Os" / "scripts" / "13_Beautify_Tables.py"}" --target="01_Core/01_Inventario_Total.md"')
+    launch_agent(6, "BeautifierINVENTORY", f'python "{ENGINE_DIR / "12_Auditors_Os" / "scripts" / "13_Beautify_Tables.py"}" --target="01_Core/01_Inventario_Total.md"')
 
-    launch_agent(7, "BeautifierCLAUDE", f'python "{ENGINE_DIR / "13_Auditors_Os" / "scripts" / "01_Beautify_Tables.py"}" --target=CLAUDE.md')
+    launch_agent(7, "BeautifierCLAUDE", f'python "{ENGINE_DIR / "12_Auditors_Os" / "scripts" / "01_Beautify_Tables.py"}" --target=CLAUDE.md')
 
-    # 8. Agente de Inventario (Skills audit) - en 03_Validator
+    # 8. Agente de Inventario (Skills audit) - en 05_Validator
     launch_agent(8, "SkillAuditor", f'python "{ENGINE_DIR / "05_Validator" / "01_Skill_Auditor.py"}"')
 
-    # 9. Agente de Seguridad - en 03_Validator
-    launch_agent(9, "SecurityScanner", f'python "{ENGINE_DIR / "03_Validator" / "skill_security_scan.py"}" --skill={SKILLS_DIR}')
+    # 9. Agente de Seguridad - en 05_Validator
+    launch_agent(9, "SecurityScanner", f'python "{ENGINE_DIR / "05_Validator" / "skill_security_scan.py"}" --skill={SKILLS_DIR}')
 
-    # 10. Agente Reporteador Final - en 11_Anthropic_Harness (no en 04_Reporting)
-    launch_agent(10, "FinalReporter", f'python "{ENGINE_DIR / "11_Anthropic_Harness" / "02_Evaluator_Runner.py"}"')
+    # 10. Agente Reporteador Final - en 10_Anthropic (legacy: 02_Evaluator_Runner → 13_Legacy)
+    launch_agent(10, "FinalReporter", f'python "{ENGINE_DIR / "10_Anthropic" / "02_Evaluator_Runner.py"}"')
 
     print("\n✅ All 10 Agents Deployed.")
     print("   Please review each visible terminal window.")
