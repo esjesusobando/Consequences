@@ -2,7 +2,7 @@
 
 > **Total Scripts:** 98+ (HUBs + módulos + utilities)
 > **Total HUBs:** 23 (v4.0 + JARVIS 3.1)
-> **Last Updated:** 2026-05-14
+> **Last Updated:** 2026-05-27
 > **Validation:** Production Ready — Sistema PURE GREEN v4.0 Consequences
 > **Migration:** 12 scripts moved to skills using get_skill_script()
 > **New:** 13_Auditors_Os folder + HUBs 14-23 (JARVIS 3.1)
@@ -23,7 +23,7 @@
 | **Scripts legacy**                             | ✅ MOVED                             | 9 scripts migrados de 90_Legacy a módulos                                         |
 | **Hooks Windows**                              | ✅ FIXED                             | WinError 5 + emoji encoding resueltos                                             |
 | **Script Migration**                           | ✅ DONE                              | 12 scripts → skills using get_skill_script()                                      |
-| **90_Legacy**                                  | ✅ ARCHIVED                          | `.backup/90_Legacy_backup_20260420/`                                              |
+| **13_Legacy**                                  | ✅ ARCHIVED                          | `13_Legacy/`                                                                      |
 | **HUBs 14-18**                                 | ✅ JARVIS 3.0                        | Health Metrics, MCP Sync, Agent Mirror/Mapper, Watchdog, Telemetry                |
 
 ---
@@ -96,8 +96,8 @@ Think_Different/                        ← Raíz del proyecto
 │   ├── 03_Task/                        ✅ Tareas activas
 │   ├── 04_Operations/                  ✅ Todo lo operativo
 │   │   ├── 03_Scripts_Os/              ✅ 23 HUBs + utilities (JARVIS 3.1)
-│   │   │   ├── 13_Auditors_Os/         ✅ Utilities: Beautify, Carousel, SOTA, etc.
-│   │   │   └── .backup/               ✅ 90_Legacy_backup_20260420
+│   │   │   ├── 12_Auditors_Os/         ✅ Utilities: Beautify, Carousel, SOTA, etc.
+│   │   │   └── 13_Legacy/              ✅ Scripts legacy archivados
 │   │   └── 02_Agent_Teams_Lite/00_Manifest/ ✅ 7 archivos JARVIS manifest
 │   └── 05_Archive/                     ✅ Legacy + repos de referencia
 ├── 02_Playground/                      ✅ Zona de pruebas
