@@ -169,7 +169,7 @@ Think_Different/                           # RAÍZ
 │   │   ├── 00_Workflows_Os/     ✅ 30 workflows (7 categorías)
 │   │   ├── 01_Rules/            ✅ 13 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/            ✅ Todas las herramientas
-│       │   ├── 01_Agents/       ✅ 48 agentes (5 Dream Team + 23 Specialists + 13 Individuales + 5 Growth + 2 Root)
+│   │       ├── 01_Agents/       ✅ 58 agentes (6 áreas: Dream Team, Specialists, Growth, Contexto, Marca, Plantillas)
 │   │       ├── 02_Skills/         ✅ 394 skills (12 áreas funcionales)
 │   │       ├── 03_Mcp/         ✅ Backup configs MCP
 │   │       ├── 04_Integrations/ ✅ Fireflies, Granola
@@ -180,16 +180,16 @@ Think_Different/                           # RAÍZ
 │   │       └── 09_Templates/    ✅ Templates
 │   ├── 02_Knowledge/            ✅ Base de conocimiento
 │   ├── 03_Task/                 ✅ Tareas activas
-│   ├── 05_Archive/              ✅ Backups, snapshots, archivos históricos
-│   └── 04_Operations/           ✅ Todo lo operativo
-│       ├── 00_Context_LLM/      ✅ Memoria, notas, knowledge brain
-│       ├── 01_Auto_Improvement/ ✅ Motor auto-mejora
-│       ├── 02_Agent_Teams_Lite/ ✅ SDD registry + 7 JARVIS manifests
-│       ├── 03_Scripts_Os/       ✅ 31 HUBs/scripts raíz + 169 scripts total (13 directorios)
-│       ├── 04_Installer/        ✅ Instalador del OS
-│       ├── 05_Projects/         ✅ Proyectos activos
-│       ├── 06_SOTA_Features/    ✅ Features estado-del-arte
-│       └── 07_Reports/          ✅ Reportes generados
+│   ├── 04_Operations/           ✅ Todo lo operativo
+│   │   ├── 00_Context_LLM/      ✅ Memoria, notas, knowledge brain
+│   │   ├── 01_Auto_Improvement/ ✅ Motor auto-mejora
+│   │   ├── 02_Agent_Teams_Lite/ ✅ SDD registry + 7 JARVIS manifests
+│   │   ├── 03_Scripts_Os/       ✅ 31 HUBs/scripts raíz + 169 scripts total (14 directorios: 00-13)
+│   │   ├── 04_Installer/        ✅ Instalador del OS
+│   │   ├── 05_Projects/         ✅ Proyectos activos
+│   │   ├── 06_SOTA_Features/    ✅ Features estado-del-arte
+│   │   └── 07_Reports/          ✅ Reportes generados
+│   └── 05_Archive/              ✅ Backups, snapshots, archivos históricos
 ├── 02_Playground/               ✅ Zona de pruebas (no contamina el OS)
 ├── 03_Resultado/                ✅ Outputs de proyectos (OIM, Elite Portfolio, etc.)
 ├── .agent/                      ✅ Backup estratégico
@@ -203,7 +203,7 @@ Think_Different/                           # RAÍZ
 └── README.md                    ✅ Documentación principal
 ```
 
-### 2. AGENTS (48 — post-Judgment Day 2026-05-25)
+### 2. AGENTS (58 — 6 áreas funcionales — 2026-05-27)
 
 | Categoría                                   | Ubicación                                                                        |
 |--------------------------------------------|---------------------------------------------------------------------------------|
@@ -211,8 +211,11 @@ Think_Different/                           # RAÍZ
 | Specialists Compound (23)                   | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                            |
 | Individuales (13)                           | `01_Core/02_Tools/01_Agents/`                                                    |
 | Growth (5)                                  | `01_Core/02_Tools/01_Agents/03_Growth/`                                          |
+| Contexto (7)                                | `01_Core/02_Tools/01_Agents/04_Contexto/`                                        |
+| Marca (5)                                   | `01_Core/02_Tools/01_Agents/05_Marca/`                                           |
+| Plantillas (20+)                            | `01_Core/02_Tools/01_Agents/06_Plantillas/`                                      |
 
-> ⚠️ Source + Backup sync: **48 ↔ 48** — Agent drift: 0 ✅ — Skills drift: 394 vs .agent (734) — copy-not-cut de migración v3.1, no afecta runtime. .agent tiene legacy de 22 directorios pre-consolidación + 10_Backup (205). Ignorar — no es bug.
+> ⚠️ Source: 58 agentes (6 áreas). Backup .agent/01_Agents/: 61 agentes (añade `07_Agent_Teams_Lite_Gen`). Skills drift: 394 vs .agent (734) — copy-not-cut de migración v3.1, no afecta runtime.
 
 ### 3. SKILLS (394 — 12 áreas funcionales)
 
@@ -284,9 +287,9 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 |----------------------------------|---------------------------|---------------------------------------------------------------|
 | **Overall Health**                | **✅ PURE GREEN**           | v4.8 — 2026-05-25 — Judgment Day v3 DONE                       |
 | Estructura (4 raíz)               | ✅ PASS                     | Winter / Personal_Os / Playground / Resultado                  |
-| HUBs (31 scripts raíz + 13 dirs)  | ✅ PASS                     | 31 HUBs/scripts + 169 scripts total (81 active + 88 legacy)   |
+| HUBs (31 scripts raíz + 14 dirs)  | ✅ PASS                     | 31 HUBs/scripts + 169 scripts total (81 active + 88 legacy)   |
 | Skills (394, 12 áreas)            | ✅ VERIFIED                 | 12 áreas funcionales — audit 2026-05-25                        |
-| Agent Matrix                      | ✅ SYNCED                   | 48 ↔ 48 (drift: 0 post-Judgment Day v3)                        |
+| Agent Matrix                      | ✅ SYNCED                   | 58 agentes (6 áreas: Dream Team, Specialists, Growth, Contexto, Marca, Plantillas) |
 | Manifest (7 archivos)             | ✅ VALIDATED                | 00_Manifest/ en 02_Agent_Teams_Lite/                           |
 | MCPs (7+38 Claude / 36 OpenCode)  | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                             |
 | Rules (13 .mdc)                   | ✅ DEFINED                  | 01_Rules/                                                      |

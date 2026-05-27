@@ -1,11 +1,11 @@
-# Scripts Index — PersonalOS Think Different v4.0 Consequences
+# Scripts Index — PersonalOS Think Different v4.8 Consequences
 
-> **Total Scripts:** 98+ (HUBs + módulos + utilities)
-> **Total HUBs:** 23 (v4.0 + JARVIS 3.1)
+> **Total Scripts:** 169 (31 raíz + 81 activos en subdirs + 88 legacy)
+> **Total HUBs:** 31 scripts raíz (00-30 + config_paths + HUB_SOTA + refactor_revert_id)
 > **Last Updated:** 2026-05-27
-> **Validation:** Production Ready — Sistema PURE GREEN v4.0 Consequences
-> **Migration:** 12 scripts moved to skills using get_skill_script()
-> **New:** 12_Auditors_Os folder + HUBs 14-23 (JARVIS 3.1)
+> **Validation:** Production Ready — Sistema PURE GREEN v4.8 Renumbered
+> **Migration:** Scripts reorganizados en estructura 00-13 post-renumbering
+> **New:** Directorios 00-13 alineados con HUBs numerados
 
 ---
 

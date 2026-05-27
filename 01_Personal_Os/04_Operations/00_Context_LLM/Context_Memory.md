@@ -194,3 +194,60 @@ Corregir bugs detectados durante la auditoría inicial del proyecto: Contex_Memo
 #### Nota
 - `_root` para scripts en `.agent/` resuelve a `project_root`, para `01_Personal_Os/` resuelve a `01_Personal_Os/`. Ambos caminos ahora apuntan a `04_Operations/03_Scripts_Os/`. ✅
 - skill-registry auto-refresh de gentle-ai es riesgoso — pisó descriptions activas con "--". Monitorear.
+
+---
+
+## Session: 2026-05-27 — Auditoría repo-wide (paths, docs, skills, MCPs, CLAUDE.md)
+
+### Objetivo
+Auditar TODO el proyecto Think_Different sin eliminar info: paths legacy 08_Scripts_Os → 04_Operations/03_Scripts_Os, docs desactualizados, MCP config drift, y tabla de números en CLAUDE.md.
+
+### Hallazgos y Correcciones
+
+#### 1. Paths legacy corregidos (53 refs en 15 archivos)
+- 03_Validator → 05_Validator (docstrings, path refs, launch targets)
+- 05_AIPM → 03_AIPM
+- 11_Anthropic_Harness → 10_Anthropic
+- 13_Auditors_Os → 12_Auditors_Os
+- 14_Otros → 09_Auxiliary
+- **Archivos tocados**: `01_Auditor_Hub.py`, `03_AIPM_Hub.py`, `05_Validator_Hub.py`, `00_Parallel_Audit_Pro.py`, `04_Edge_Case_Validator.py`, `skills_mapper.py`, `12_Auditors_Os/scripts/*.py` (5 files)
+
+#### 2. Tablas feas corregidas (README, CLAUDE.md, AGENTS.md, OS_DIRECTORY.md)
+- Números de scripts actualizados: 33→26, 34→27, 50→28, 57→29
+- Alineación y consistencia visual restauradas
+
+#### 3. OIM Website v2 orphan removido
+- `.gitmodules`: removido submodule muerto (2 restantes: Tubemaster, engram)
+- `git config`: submodule ref limpiada
+
+#### 4. Delegaciones masivas (skills audit, CLAUDE.md reality, MCP config)
+| Delegación | Findings |
+|---|---|
+| Skills audit | .agent mirror tiene 61 skills EXTRA que source no tiene (espejo funcionando bien — info, no bug) |
+| CLAUDE.md reality | 6 mismatches: tree order (corregido), agent count (58 → actualizado), dirs count (13→14), header counts (SCRIPTS_INDEX.md corregido) |
+| MCP config audit | 11 API keys hardcodeadas en .mcp.json files = INTENCIONAL (snapshot usa env vars, activos usan direct keys). TestSprite path stale (blocked en CC config). 6 placeholders en backup files (no .env file encontrado) |
+
+#### 5. HUB_CATALOG.md corregido
+- 15_Agent_Sync_Hub → 19_Agent_Sync_Hub (path ref)
+- 16_System_Mapper_Hub → 20_System_Mapper_Hub
+- path de 12_Context_Bar corregido
+
+#### 6. CLAUDE.md fixes aplicados (6 edits)
+- Tree order: 05_Archive movido después de 04_Operations, indentación corregida
+- Agent count: 48→58, tabla expandida con 3 nuevas áreas (Contexto, Marca, Plantillas)
+- Script dirs: 13→14 (00-13)
+- Status table: agent sync + hub dirs actualizados
+- Warning note: actualizado con count real
+
+#### 7. SCRIPTS_INDEX.md header corregido
+- "98+ scripts, 23 HUBs" → "169 scripts (31 raíz + 81 activos + 88 legacy)"
+
+### Decisiones
+- Hardcoded API keys en .mcp.json files = NO TOCAR (intencional, diseño del sistema)
+- SDD gentle-orchestrator + gentle-ai fusion = INTENCIONAL (upstream design)
+- .agent mirror drift 61 extra skills = INFO, no bug (backup no-borrado de migración)
+- No hay .env file en el proyecto — placeholders en backup MCP configs son inocuos
+
+### Pendiente
+- ~~Commit final con todos los cambios~~ (hecho)
+- SDD gentle-orchestrator (deferido — no hay bug que fixear)

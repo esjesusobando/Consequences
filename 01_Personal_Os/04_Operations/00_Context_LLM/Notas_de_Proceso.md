@@ -189,3 +189,52 @@ Auditar focalizadamente el Área 01 (Creación de Contenidos) de skills tras mig
 - Revisar MAPA_MIGRACION.md
 - Extender auditoría a Áreas 02-08
 - Hook pre-commit para mirror consistency
+
+---
+
+## Session: 2026-05-27 — Auditoría repo-wide (paths, docs, MCPs, CLAUDE.md)
+
+### Objetivo
+Auditar el proyecto completo: paths legacy, docs desactualizados, MCP config drift, consistencia de CLAUDE.md vs realidad.
+
+### Fase 1: Paths legacy (53 refs en 15 archivos)
+| Archivo | Paths corregidos |
+|---|---|
+| `01_Auditor_Hub.py` | 03_Validator→05_Validator, 05_AIPM→03_AIPM, 11_Anthropic_Harness→10_Anthropic |
+| `03_AIPM_Hub.py` | 05_AIPM→03_AIPM (docstring + path) |
+| `05_Validator_Hub.py` | 13_Auditors_Os→12_Auditors_Os, 03_Validator→05_Validator |
+| `00_Parallel_Audit_Pro.py` | launch paths Validator → 05_Validator, AIPM → 03_AIPM |
+| `04_Edge_Case_Validator.py` | 14_Otros→09_Auxiliary (comment) |
+| `skills_mapper.py` | output path fix |
+| `12_Auditors_Os/scripts/*.py` (5 files) | comment paths |
+
+### Fase 2: Docs corregidos
+- **README, CLAUDE.md, AGENTS.md, OS_DIRECTORY.md**: script numbers actualizados (33→26, 34→27, 50→28, 57→29)
+- **OIM Website v2 orphan**: removido de `.gitmodules` + `git config`
+- **SCRIPTS_INDEX.md**: header "98+ scripts, 23 HUBs" → "169 scripts (31 raíz)"
+
+### Fase 3: Delegaciones (skills, CLAUDE.md, MCPs)
+| Delegación | Findings clave |
+|---|---|
+| Skills audit | 61 skills extra en .agent/ (mirror sano — copy-not-cut) |
+| CLAUDE.md reality | 6 mismatches: tree order, agent count, dirs count, header stale |
+| MCP config | 11 hardcoded keys (intencional), TestSprite stale path, 6 placeholders |
+
+### Fase 4: CLAUDE.md fixes (6 edits)
+- Tree hierarchy corregida (05_Archive después de 04_Operations, indentación)
+- Agent count 48→58, tabla expandida
+- Script dirs 13→14
+- Warning note actualizado
+- Status table synced
+
+### Decisiones
+- APIs hardcodeadas en .mcp.json = INTENCIONAL (no tocar)
+- SDD gentle-orchestrator fusion = INTENCIONAL (upstream design)
+- No hay .env file en proyecto — placeholders inocuos
+
+### Commit
+Archivos: CLAUDE.md, SCRIPTS_INDEX.md, Context_Memory.md, Notas_de_Proceso.md, ~15 .py files
+
+---
+
+*Notas_de_Proceso.md — 2026-05-27 — Auditoría repo-wide fases 2-5*

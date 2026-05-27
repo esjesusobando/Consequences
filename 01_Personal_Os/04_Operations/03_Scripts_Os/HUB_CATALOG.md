@@ -7,7 +7,7 @@
 
 ---
 
-## Catálogo de HUBs (21 HUBs principales + 5 auxiliares = 26 scripts totales — v4.0 + JARVIS 3.1)
+## Catálogo de HUBs (31 scripts raíz + 12 subdirectorios con scripts internos — v4.8 Renumbered)
 
 | #                          | HUB                                     | Script                                           | Propósito                                                                      | Comando rápido                                                                                                    |
 |---------------------------|----------------------------------------|-------------------------------------------------|-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -27,15 +27,15 @@
 | 13                         | **Beautify**                            | `01_Beautify_Tables.py`                          | Formateo de tablas markdown (en `12_Auditors_Os/scripts/`)                     | `python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/01_Beautify_Tables.py`                  |
 | 14                         | **Health Metrics**                      | `14_Health_Metrics_Hub.py`                       | Métricas de salud del sistema OS                                               | `python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py`                                      |
 | 15a                        | **MCP Sync** ★                          | `15_MCP_Sync_Hub.py`                             | Sincronización y drift report de MCPs (canónico JARVIS 3.0)                    | `python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report`                                   |
-| 15b                        | **Agent Sync**                          | `15_Agent_Sync_Hub.py`                           | Sincronización de agentes del sistema                                          | `python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py`                                          |
-| 16a                        | **System Mapper** ★                     | `16_System_Mapper_Hub.py`                        | Regenera el manifest JARVIS (canónico JARVIS 3.0)                              | `python 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py --scan`                                |
+| 19                         | **Agent Sync**                          | `19_Agent_Sync_Hub.py`                           | Sincronización de agentes del sistema                                          | `python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py`                                          |
+| 20                         | **System Mapper** ★                     | `20_System_Mapper_Hub.py`                        | Regenera el manifest JARVIS (canónico JARVIS 3.0)                              | `python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan`                                |
 | 16b                        | **Agent Mirror**                        | `16_Agent_Mirror_Hub.py`                         | Mirror y sync de agentes (source → backup)                                     | `python 01_Personal_Os/04_Operations/03_Scripts_Os/16_Agent_Mirror_Hub.py`                                        |
 | 17                         | **Watchdog** ★                          | `17_Watchdog_Hub.py`                             | Health check + monitoreo activo del OS (canónico JARVIS 3.0)                   | `python 01_Personal_Os/04_Operations/03_Scripts_Os/17_Watchdog_Hub.py --check`                                    |
 | 18                         | **Telemetry** ★                         | `18_Telemetry_Hub.py`                            | Dashboard de telemetría y uso del sistema (canónico JARVIS 3.0)                | `python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboard`                               |
 
 > ★ = HUBs canónicos JARVIS 3.0 (Consequences 3.0 — 2026-04-25). Usar estos en scripts de automatización.
 >
-> **Notas de numeración:** Los slots 15 y 16 tienen duplicados (a/b) por expansión JARVIS 3.0. Los HUBs 12 y 13 viven en `12_Auditors_Os/scripts/`. Scripts de utilidad en rango 17-18: `17_Legacy_Path_Cleanup.py`, `17_Preview_Generator.js`, `18_Validate_Skill_Frontmatter.py` — no son HUBs sino helpers.
+> **Notas de numeración:** HUBs 00-11 numerados con subdirectorios emparejados. HUBs 12-13 son scripts en `12_Auditors_Os/scripts/`. HUBs 14-20 son JARVIS standalone. Scripts de utilidad 21-30 son herramientas de migración/auditoría.
 
 ---
 
@@ -93,9 +93,9 @@ Utilidades comunes: formateo, parsing, helpers compartidos entre HUBs.
 ### 11 — Auto Learn
 Motor de automejora. Coordina con `04_Operations/01_Auto_Improvement/` para análisis y corrección recursiva.
 
-### 12 — Context Bar
+### 12 — Context Bar (en 12_Auditors_Os/scripts/)
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Context_Usage_Bar.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/00_Context_Usage_Bar.py
 ```
 Muestra visualmente el porcentaje de contexto utilizado en la sesión actual.
 
@@ -118,16 +118,16 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --sync     
 ```
 Detecta drift entre MCPs de Claude Code y OpenCode. HUB canónico JARVIS 3.0.
 
-### 15b — Agent Sync
+### 19 — Agent Sync
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 ```
 Sincronización de agentes del sistema.
 
-### 16a — System Mapper (canónico)
+### 20 — System Mapper (canónico)
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py --scan     # Regenerar manifest
-python 01_Personal_Os/04_Operations/03_Scripts_Os/16_System_Mapper_Hub.py --report   # Ver estado
+python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan     # Regenerar manifest
+python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --report   # Ver estado
 ```
 Regenera el manifest JARVIS en `02_Agent_Teams_Lite/00_Manifest/`. HUB canónico JARVIS 3.0.
 
