@@ -1,4 +1,4 @@
-# Contex_Memory - Estado Actual del Sistema
+# Context_Memory - Estado Actual del Sistema
 
 ## Sesión: Auditoría y Actualización del Sistema (24/05/2026)
 

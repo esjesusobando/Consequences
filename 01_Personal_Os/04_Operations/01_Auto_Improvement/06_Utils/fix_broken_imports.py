@@ -31,7 +31,7 @@ BROKEN_PATTERNS = [
 
 def find_broken_import_files():
     """Find all files with broken import patterns"""
-    scripts_dir = PROJECT_ROOT / "08_Scripts_Os"
+    scripts_dir = PROJECT_ROOT / "04_Operations/03_Scripts_Os"
     found = []
 
     for py_file in scripts_dir.glob("**/*.py"):

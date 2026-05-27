@@ -13,8 +13,8 @@
     {
       "id": "R002",
       "name": "broken_import_old_structure",
-      "pattern": "04_Operations",
-      "action": "replace_with_08_Scripts_Os",
+      "pattern": "08_Scripts_Os",
+      "action": "replace_with_04_Operations/03_Scripts_Os",
       "tier": 1,
       "auto_fix": true,
       "created": "2026-03-28"

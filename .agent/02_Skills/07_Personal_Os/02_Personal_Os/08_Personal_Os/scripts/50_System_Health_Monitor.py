@@ -5,7 +5,7 @@ from pathlib import Path
 _current = Path(__file__).resolve()
 _root = next((p for p in _current.parents if (p / "01_Core").exists()), None)
 if _root:
-    sys.path.insert(0, str(_root / "08_Scripts_Os"))
+    sys.path.insert(0, str(_root / "04_Operations" / "03_Scripts_Os"))
 from config_paths import *
 
 # === COLOR SETUP ===

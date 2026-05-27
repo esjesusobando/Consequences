@@ -106,8 +106,8 @@ tree.txt
 # SCRIPTS OUTPUT
 # =============================================================================
 
-08_Scripts_Os/Analytics_Output/         # LEGACY: dir no longer exists, kept for reference
-08_Scripts_Os/AIPM_Fixed/Analytics_Output/ # LEGACY: dir no longer exists, kept for reference
+04_Operations/03_Scripts_Os/Analytics_Output/         # LEGACY: dir no longer exists, kept for reference
+04_Operations/03_Scripts_Os/AIPM_Fixed/Analytics_Output/ # LEGACY: dir no longer exists, kept for reference
 
 # =============================================================================
 # REPOS EXTERNOS CLONADOS (no commit)

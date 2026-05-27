@@ -21,7 +21,7 @@ BROKEN_PATTERNS = [
     "from 05_",
 ]
 
-scripts_dir = PROJECT_ROOT / "08_Scripts_Os"
+scripts_dir = PROJECT_ROOT / "04_Operations/03_Scripts_Os"
 issues = []
 
 for py_file in scripts_dir.glob("**/*.py"):

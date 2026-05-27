@@ -47,7 +47,7 @@ def main():
     print("--- POST-HULK-COMPOUND HOOK ---")
 
     # Use skill script resolution
-    sys.path.insert(0, str(project_root / "08_Scripts_Os"))
+    sys.path.insert(0, str(project_root / "04_Operations" / "03_Scripts_Os"))
     try:
         from config_paths import get_skill_script
         organize_path = get_skill_script("56_Organize_Solutions.py")
@@ -55,7 +55,7 @@ def main():
         organize_path = None
     
     if not organize_path or not organize_path.exists():
-        organize_path = project_root / "08_Scripts_Os" / "10_Legacy" / "56_Organize_Solutions.py"
+        organize_path = project_root / "04_Operations" / "03_Scripts_Os" / "10_Legacy" / "56_Organize_Solutions.py"
     
     if not organize_path.exists():
         print("[!] 56_Organize_Solutions.py not found. Skipping.")

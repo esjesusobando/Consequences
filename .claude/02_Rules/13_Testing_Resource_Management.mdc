@@ -86,7 +86,7 @@ npx vitest --maxWorkers=4
 
 ### Skill 48 (Resource Guardian)
 
-- Integrar la validación de hardware en cualquier script de `08_Scripts_Os` que realice procesamiento intensivo de archivos.
+- Integrar la validación de hardware en cualquier script de `04_Operations/03_Scripts_Os` que realice procesamiento intensivo de archivos.
 
 </project_patterns>
 

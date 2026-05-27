@@ -72,9 +72,9 @@
 
 **Antes:**
 ```bash
-SKILL_VALIDATOR_SCRIPT="08_Scripts_Os/03_Validator/skill_validator.py"
+SKILL_VALIDATOR_SCRIPT="04_Operations/03_Scripts_Os/03_Validator/skill_validator.py"
 SKILL_PATHS="01_Core/03_Skills/"
-SKILL_SECURITY_SCRIPT="08_Scripts_Os/03_Validator/skill_security_scan.py"
+SKILL_SECURITY_SCRIPT="04_Operations/03_Scripts_Os/03_Validator/skill_security_scan.py"
 ```
 
 **Después:**

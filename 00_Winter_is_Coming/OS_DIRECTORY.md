@@ -141,8 +141,8 @@ Think_Different/
 |-------------------------------|------------------------------------------------------------------------------------|
 | 🔍 Search                       | exa, brave-search, stackoverflow                                                    |
 | 🧠 Memory                       | engram, aim-memory-bank, notebooklm                                                 |
-| 📝 Notes                        | Notion, mcp-obsidian, obsidian-api                                                  |
-| 🌐 Browser                      | Playwright, chrome-devtools, eagle-mcp                                              |
+| 📝 Notes                        | Notion, mcp-obsidian, obsidian-api, obsidian-mcp                                    |
+| 🌐 Browser                      | Playwright, chrome-devtools                                                          |
 | 🤖 AI & Code                    | context7, zai-mcp-server, github, task-master-ai, @magicuidesign/mcp                |
 | 📊 Data                         | supabase, Amplitude, supadata                                                       |
 | 🔄 Workflow                     | n8n-mcp, Linear                                                                     |

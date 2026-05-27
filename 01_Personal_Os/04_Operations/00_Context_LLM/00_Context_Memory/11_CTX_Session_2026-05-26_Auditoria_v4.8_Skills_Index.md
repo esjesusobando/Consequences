@@ -16,7 +16,7 @@ Auditoría focalizada en el Área 01 (Creación de Contenidos) de skills tras mi
 
 | # | Bug | Archivo | Fix |
 |---|-----|---------|-----|
-| 1 | Path `08_Scripts_Os` hardcodeado (no existe desde migración) | `18_Generacion_Contenido.py` | Cambiado a `04_Operations/03_Scripts_Os` |
+| 1 | Path `04_Operations/03_Scripts_Os` hardcodeado (no existe desde migración) | `18_Generacion_Contenido.py` | Cambiado a `04_Operations/03_Scripts_Os` |
 | 2 | Banner version string inconsistente (`v4.8` vs `v4.8 Consequences`) | `18_Generacion_Contenido.py` | Unificado a `v4.8 Consequences` |
 | 3 | SKILL.md headers con numeración legacy (ej. `# 13_Content_Transformer`) | 03, 05, 06, 07, 08 | Eliminados números legacy |
 | 4 | SKILL.md faltantes en 16_Ai_Agents, 18_Marketing_Strategy, 19_Marketing_Tech, 20_Marketing_Scripts | `.agent/` y `01_Personal_Os/` | Creados con frontmatter base |

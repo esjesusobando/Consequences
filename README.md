@@ -192,7 +192,7 @@ Think_Different/                           # RAÍZ
 | @magicuidesign/mcp              | UI design generation                  | root .mcp.json        |
 | aim-memory-bank                 | AI memory bank                        | root .mcp.json        |
 | context7                        | Context-aware code search             | root .mcp.json        |
-| eagle-mcp                       | Eagle library MCP                     | root .mcp.json        |
+| obsidian-mcp                    | Obsidian notes MCP                    | root .mcp.json        |
 | eagle                           | Eagle library API                     | root .mcp.json        |
 | higgsfield                      | Higgsfield AI                         | root .mcp.json        |
 | sequential-thinking             | Sequential reasoning                  | root .mcp.json        |

@@ -11,7 +11,7 @@ DIMENSIONS = [
     "05_Archive",
     "06_Playground",
     "07_Projects",
-    "08_Scripts_Os",
 ]
 
-ENGINE_DIR = ROOT_DIR / "08_Scripts_Os"
+# Sub-dimensions (not top-level): use ENGINE_DIR for "04_Operations/03_Scripts_Os"
+ENGINE_DIR = ROOT_DIR / "04_Operations" / "03_Scripts_Os"

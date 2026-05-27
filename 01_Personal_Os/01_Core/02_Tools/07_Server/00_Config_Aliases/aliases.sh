@@ -9,30 +9,30 @@ if [ -z "$PERSONAL_OS_ROOT" ]; then
 fi
 
 # ===========================================
-# HUB SCRIPTS (08_Scripts_Os/)
+# HUB SCRIPTS (04_Operations/03_Scripts_Os/)
 # ===========================================
-alias gr='python "$PERSONAL_OS_ROOT/08_Scripts_Os/01_Auditor_Hub.py"'
-alias audit='python "$PERSONAL_OS_ROOT/08_Scripts_Os/01_Auditor_Hub.py"'
-alias git-hub='python "$PERSONAL_OS_ROOT/08_Scripts_Os/02_Git_Hub.py"'
-alias aipm='python "$PERSONAL_OS_ROOT/08_Scripts_Os/03_AIPM_Hub.py"'
-alias ritual='python "$PERSONAL_OS_ROOT/08_Scripts_Os/04_Ritual_Hub.py"'
-alias validate='python "$PERSONAL_OS_ROOT/08_Scripts_Os/05_Validator_Hub.py"'
-alias tools='python "$PERSONAL_OS_ROOT/08_Scripts_Os/06_Tool_Hub.py"'
-alias integration='python "$PERSONAL_OS_ROOT/08_Scripts_Os/07_Integration_Hub.py"'
-alias workflows='python "$PERSONAL_OS_ROOT/08_Scripts_Os/08_Workflow_Hub.py"'
-alias data='python "$PERSONAL_OS_ROOT/08_Scripts_Os/09_Data_Hub.py"'
-alias general='python "$PERSONAL_OS_ROOT/08_Scripts_Os/10_General_Hub.py"'
-alias auto-learn='python "$PERSONAL_OS_ROOT/08_Scripts_Os/11_Auto_Learn_Hub.py"'
-alias context-bar='python "$PERSONAL_OS_ROOT/08_Scripts_Os/12_Context_Usage_Bar.py"'
-alias beautify='python "$PERSONAL_OS_ROOT/08_Scripts_Os/13_Beautify_Tables.py"'
-alias beauty-doc='python "$PERSONAL_OS_ROOT/08_Scripts_Os/14_Beauty_Doc.py"'
+alias gr='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/01_Auditor_Hub.py"'
+alias audit='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/01_Auditor_Hub.py"'
+alias git-hub='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/02_Git_Hub.py"'
+alias aipm='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/03_AIPM_Hub.py"'
+alias ritual='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/04_Ritual_Hub.py"'
+alias validate='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/05_Validator_Hub.py"'
+alias tools='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/06_Tool_Hub.py"'
+alias integration='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/07_Integration_Hub.py"'
+alias workflows='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/08_Workflow_Hub.py"'
+alias data='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/09_Data_Hub.py"'
+alias general='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/10_General_Hub.py"'
+alias auto-learn='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/11_Auto_Learn_Hub.py"'
+alias context-bar='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/12_Context_Usage_Bar.py"'
+alias beautify='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/13_Beautify_Tables.py"'
+alias beauty-doc='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/14_Beauty_Doc.py"'
 
 # ===========================================
 # SYSTEM GUARDIAN (System Guardian)
 # ===========================================
-alias gr-dry='python "$PERSONAL_OS_ROOT/08_Scripts_Os/01_Auditor_Hub.py" --dry-run'
-alias gr-apply='python "$PERSONAL_OS_ROOT/08_Scripts_Os/01_Auditor_Hub.py" --apply'
-alias gr-agents='python "$PERSONAL_OS_ROOT/08_Scripts_Os/01_Auditor_Hub.py" --agents'
+alias gr-dry='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/01_Auditor_Hub.py" --dry-run'
+alias gr-apply='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/01_Auditor_Hub.py" --apply'
+alias gr-agents='python "$PERSONAL_OS_ROOT/04_Operations/03_Scripts_Os/01_Auditor_Hub.py" --agents'
 
 # ===========================================
 # GIT & PULL REQUESTS
@@ -44,7 +44,7 @@ ce-pr() {
         echo "Ejecuta: gh auth login"
         return 1
     fi
-    cd 08_Scripts_Os && python -c "
+    cd 04_Operations/03_Scripts_Os && python -c "
 from 02_Git_Hub import GitHub
 print('PR creation via GitHub integration')
 "

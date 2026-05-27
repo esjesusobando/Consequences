@@ -279,7 +279,7 @@ def run_guardian():
     print("=" * 50)
 
     project_root = os.path.dirname(SCRIPT_DIR)
-    # v2.0: 04_ENGINE/08_Scripts_Os/79_System_Guardian.py → 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/79_System_Guardian.py
+    # v2.0: 04_ENGINE/04_Operations/03_Scripts_Os/79_System_Guardian.py → 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/79_System_Guardian.py
     guardian_path = os.path.join(
         project_root, "01_Personal_Os", "04_Operations", "03_Scripts_Os", "10_Legacy", "79_System_Guardian.py"
     )

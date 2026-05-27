@@ -78,7 +78,7 @@ def run_guardian_if_needed():
 
         # Buscar script guardian
         project_root = _ext_root.parent.parent
-        guardian_path = project_root / "08_Scripts_Os" / "79_System_Guardian.py"
+        guardian_path = project_root / "04_Operations" / "03_Scripts_Os" / "79_System_Guardian.py"
         if guardian_path.exists():
             try:
                 # Correr guardian y capturar output

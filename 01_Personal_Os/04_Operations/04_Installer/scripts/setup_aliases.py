@@ -23,9 +23,9 @@ ALIASES_CONTENT = """
 # ═══════════════════════════════════════════════════════════════════════════════
 
 # Alias Global - System Guardian (detecta root automáticamente)
-alias gr='cd "$(git rev-parse --show-toplevel 2>/dev/null || echo .)" && python 04_ENGINE/08_Scripts_Os/79_System_Guardian.py'
-alias gra='cd "$(git rev-parse --show-toplevel 2>/dev/null || echo .)" && python 04_ENGINE/08_Scripts_Os/79_System_Guardian.py --apply'
-alias gr-agents='cd "$(git rev-parse --show-toplevel 2>/dev/null || echo .)" && python 04_ENGINE/08_Scripts_Os/79_System_Guardian.py --agents'
+alias gr='cd "$(git rev-parse --show-toplevel 2>/dev/null || echo .)" && python 04_Operations/03_Scripts_Os/79_System_Guardian.py'
+alias gra='cd "$(git rev-parse --show-toplevel 2>/dev/null || echo .)" && python 04_Operations/03_Scripts_Os/79_System_Guardian.py --apply'
+alias gr-agents='cd "$(git rev-parse --show-toplevel 2>/dev/null || echo .)" && python 04_Operations/03_Scripts_Os/79_System_Guardian.py --agents'
 
 # ─────────────────────────────────────────────────────────────────────────────
 """

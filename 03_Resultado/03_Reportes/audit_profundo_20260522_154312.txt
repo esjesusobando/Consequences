@@ -15,7 +15,7 @@ C:\Users\sebas\Desktop\Think_Different
 
 [35m🔊 [VOICE]: Iniciando validación integral PURE GREEN[0m
 
-[36m[SCAN] Validando Naming Convention en 08_Scripts_Os...[0m
+[36m[SCAN] Validando Naming Convention en 04_Operations/03_Scripts_Os...[0m
 [33m[WARN] Archivos que no siguen el estándar 'NN_Title_Case.py':[0m
   - HUB_SOTA.py
 

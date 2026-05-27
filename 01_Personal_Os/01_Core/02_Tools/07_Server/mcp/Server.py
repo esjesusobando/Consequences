@@ -13,7 +13,7 @@ from datetime import datetime, timedelta, date
 from collections import Counter
 
 # Add scripts directory to path for config_paths
-SCRIPTS_DIR = Path(__file__).parent.parent.parent / "08_Scripts_Os"
+SCRIPTS_DIR = Path(__file__).parent.parent.parent / "04_Operations/03_Scripts_Os"
 sys.path.insert(0, str(SCRIPTS_DIR))
 
 import yaml

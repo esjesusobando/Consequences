@@ -17,7 +17,7 @@ from pathlib import Path
 # ─────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).parent.parent.parent.parent
 LEGACY_PATTERNS = [
-    ("08_Scripts_Os", "01_Personal_Os/04_Operations/03_Scripts_Os"),
+    ("08_Scripts_Os", "04_Operations/03_Scripts_Os"),
     ("01_Core/02_Tools/02_Skills", "01_Personal_Os/01_Core/02_Tools/02_Skills"),
     ("06_Playground", "01_Personal_Os/02_Playground"),
 ]

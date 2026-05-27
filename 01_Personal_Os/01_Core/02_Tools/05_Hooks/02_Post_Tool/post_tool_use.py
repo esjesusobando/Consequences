@@ -84,7 +84,7 @@ def organize_solution_if_needed(file_path):
         try:
             script_path = (
                 PROJECT_ROOT
-                / "08_Scripts_Os"
+                / "04_Operations/03_Scripts_Os"
                 / "Legacy_Backup"
                 / "56_Organize_Solutions.py"
             )

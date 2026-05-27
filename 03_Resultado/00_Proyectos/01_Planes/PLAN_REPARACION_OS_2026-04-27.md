@@ -7,7 +7,7 @@
 1. **opencode.json corregido** — todos los MCPs con formato viejo (`transport/command/args`) migrados a formato nuevo (`type: local/remote`, `command: [array]`, `enabled: true`)
 2. **Auditoría completa del proyecto** — ver reporte en `03_Resultado/04_Reportes/AUDITORIA_COMPLETA_v3_0_2026-04-26.md`
 3. **HUB_Catalog.yaml corregido** — sufijos `15a/15b/16a/16b` cambiados a nombres reales `15_/16_` (sin sufijos). Archivo modificado pero NO commiteado.
-4. **Bulk replace parcial** — `08_Scripts_Os` → `03_Scripts_Os` en archivos `.md` de `01_Personal_Os/01_Core/02_Tools/02_Skills/` y `01_Personal_Os/01_Core/`. **Aún quedan ~120 archivos** en otras rutas (tasks, context_memory, hooks .py, scripts .py).
+4. **Bulk replace parcial** — `04_Operations/03_Scripts_Os` → `03_Scripts_Os` en archivos `.md` de `01_Personal_Os/01_Core/02_Tools/02_Skills/` y `01_Personal_Os/01_Core/`. **Aún quedan ~120 archivos** en otras rutas (tasks, context_memory, hooks .py, scripts .py).
 
 ### ❌ PENDIENTE — COMMITS POR FASES
 
@@ -36,7 +36,7 @@ Names 15a_Agent_Sync_Hub/15b_MCP_Sync_Hub/16a_Agent_Mirror_Hub/16b_System_Mapper
 did not match actual filenames on disk (no a/b suffix). Fixed to match reality.
 ```
 
-#### FASE 3 — Bulk replace 08_Scripts_Os → 03_Scripts_Os (INCOMPLETO)
+#### FASE 3 — Bulk replace 04_Operations/03_Scripts_Os → 03_Scripts_Os (INCOMPLETO)
 **Estado:** El replace se hizo en `01_Personal_Os/01_Core/02_Tools/02_Skills/` y parte de `01_Personal_Os/` pero quedan ~120 archivos en:
 - `01_Personal_Os/03_Task/` (tasks activas)
 - `01_Personal_Os/04_Operations/00_Context_LLM/` (context memory)
@@ -48,21 +48,21 @@ did not match actual filenames on disk (no a/b suffix). Fixed to match reality.
 ```bash
 find . -name "*.md" -name "*.py" -name "*.yaml" -name "*.yml" \
   -not -path "./.backup/*" -not -path "./node_modules/*" \
-  -exec grep -l "08_Scripts_Os" {} \; | \
-  while read f; do sed -i 's|08_Scripts_Os|03_Scripts_Os|g' "$f"; done
+  -exec grep -l "04_Operations/03_Scripts_Os" {} \; | \
+  while read f; do sed -i 's|04_Operations/03_Scripts_Os|03_Scripts_Os|g' "$f"; done
 ```
 NOTA: El find con múltiples `-name` no funciona así (OR logic). Usar:
 ```bash
 find . \( -name "*.md" -o -name "*.py" -o -name "*.yaml" \) \
   -not -path "./.backup/*" \
-  -exec grep -l "08_Scripts_Os" {} \; | \
-  while read f; do sed -i 's|08_Scripts_Os|03_Scripts_Os|g' "$f"; done
+  -exec grep -l "04_Operations/03_Scripts_Os" {} \; | \
+  while read f; do sed -i 's|04_Operations/03_Scripts_Os|03_Scripts_Os|g' "$f"; done
 ```
 **Mensaje de commit:**
 ```
-fix(paths): complete bulk replace 08_Scripts_Os → 03_Scripts_Os
+fix(paths): complete bulk replace 04_Operations/03_Scripts_Os → 03_Scripts_Os
 
-All .md, .py, .yaml files updated. 08_Scripts_Os was v2.0 path,
+All .md, .py, .yaml files updated. 04_Operations/03_Scripts_Os was v2.0 path,
 now canonical path is 03_Scripts_Os in v3.0 Consequences architecture.
 ```
 
@@ -134,4 +134,4 @@ Dice `skill_areas: 12, hubs: 15` — debería ser `13` y `19`. Actualizar al fin
 ## NOTAS DEL AUDITOR
 Los commits `28ddcf9` y `03e587e` fueron BUENOS. Sumaron. El único bug que introdujeron fue el nombre `15a/15b/16a/16b` en HUB_Catalog que no matcheaba los archivos reales (ya corregido en working tree, pendiente commit).
 
-Lo que "rompió cosas" no fue un commit específico sino que el migrate de `08_Scripts_Os` → `03_Scripts_Os` fue PARCIAL — actualizó config pero no los ~148 SKILL.md y scripts .py que referenciaban la ruta vieja.
+Lo que "rompió cosas" no fue un commit específico sino que el migrate de `04_Operations/03_Scripts_Os` → `03_Scripts_Os` fue PARCIAL — actualizó config pero no los ~148 SKILL.md y scripts .py que referenciaban la ruta vieja.
