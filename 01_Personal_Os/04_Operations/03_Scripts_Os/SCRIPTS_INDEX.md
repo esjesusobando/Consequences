@@ -5,7 +5,7 @@
 > **Last Updated:** 2026-05-27
 > **Validation:** Production Ready — Sistema PURE GREEN v4.0 Consequences
 > **Migration:** 12 scripts moved to skills using get_skill_script()
-> **New:** 13_Auditors_Os folder + HUBs 14-23 (JARVIS 3.1)
+> **New:** 12_Auditors_Os folder + HUBs 14-23 (JARVIS 3.1)
 
 ---
 
@@ -16,11 +16,11 @@
 | **Estructura**                                 | ✅ PASS                              | 10 carpetas (00-13) válidas                                                       |
 | **Health**                                     | ✅ PASS                              | SALUDABLE                                                                         |
 | **Skills**                                     | ✅ FIXED                             | 22 categorías — 100% con SKILL.md                                                 |
-| **13_Auditors_Os**                             | ✅ NEW                               | Utilities + Beautify scripts                                                      |
+| **12_Auditors_Os**                             | ✅ ACTIVE                            | Utilities + Beautify scripts                                                      |
 | **Hub 07 rutas**                               | ✅ FIXED                             | `09_Integration/` (antes `Integration_Fixed`)                                     |
 | **Hub 08 rutas**                               | ✅ FIXED                             | `04_Workflow/` (antes `Workflow_Fixed`)                                           |
 | **PYTHONPATH**                                 | ✅ FIXED                             | Todos los hubs pasan PYTHONPATH a sub-scripts                                     |
-| **Scripts legacy**                             | ✅ MOVED                             | 9 scripts migrados de 90_Legacy a módulos                                         |
+| **Scripts legacy**                             | ✅ MOVED                             | 9 scripts migrados de 13_Legacy a módulos                                         |
 | **Hooks Windows**                              | ✅ FIXED                             | WinError 5 + emoji encoding resueltos                                             |
 | **Script Migration**                           | ✅ DONE                              | 12 scripts → skills using get_skill_script()                                      |
 | **13_Legacy**                                  | ✅ ARCHIVED                          | `13_Legacy/`                                                                      |
@@ -28,35 +28,41 @@
 
 ---
 
-## 🏗️ Orchestration HUBs (01_Personal_Os/04_Operations/03_Scripts_Os/)
+## 🏗️ Standalone HUBs & Scripts (01_Personal_Os/04_Operations/03_Scripts_Os/)
 
-> **Total HUBs:** 23 (v4.0 Consequences + JARVIS 3.1) — Ver detalle completo en `HUB_CATALOG.md`
+> **Total:** 27 scripts standalone + 4 subdirectorios con scripts internos. Ver detalle completo en `HUB_CATALOG.md`
 
-| #                              | Script                                          | Purpose                                                              | Status                              |
-|-------------------------------|------------------------------------------------|---------------------------------------------------------------------|------------------------------------|
-| 00                             | `Sound_Engine.py`                               | Motor de notificaciones sonoras                                      | ✅ ACTIVO                            |
-| 01                             | `Auditor_Hub.py`                                | Orquestador de Auditorías                                            | ✅ ACTIVO                            |
-| 02                             | `Git_Hub.py`                                    | Orquestador de Git/Repos                                             | ✅ ACTIVO                            |
-| 03                             | `AIPM_Hub.py`                                   | Métricas AIPM                                                        | ✅ ACTIVO                            |
-| 04                             | `Ritual_Hub.py`                                 | Rituales (Start/End)                                                 | ✅ ACTIVO                            |
-| 05                             | `Validator_Hub.py`                              | Validaciones                                                         | ✅ ACTIVO                            |
-| 06                             | `Tool_Hub.py`                                   | Herramientas                                                         | ✅ ACTIVO                            |
-| 07                             | `Integration_Hub.py`                            | Integraciones MCP                                                    | ✅ ACTIVO                            |
-| 08                             | `Workflow_Hub.py`                               | Workflows SOTA                                                       | ✅ ACTIVO                            |
-| 09                             | `Data_Hub.py`                                   | Datos/Sync                                                           | ✅ ACTIVO                            |
-| 10                             | `General_Hub.py`                                | Utilidades                                                           | ✅ ACTIVO                            |
-| 11                             | `Auto_Learn_Hub.py`                             | Motor de automejora                                                  | ✅ ACTIVO                            |
-| 12                             | `Context_Usage_Bar.py`                          | Barra de uso de contexto (en 13_Auditors_Os/scripts/)                | ✅ ACTIVO                            |
-| 13                             | `Beautify_Tables.py`                            | Formateo de tablas (en 13_Auditors_Os/scripts/)                      | ✅ ACTIVO                            |
-| 14                             | `Health_Metrics_Hub.py`                         | Métricas de salud del sistema                                        | ✅ ACTIVO (JARVIS)                   |
-| 15a ★                          | `MCP_Sync_Hub.py`                               | Sync + drift report MCPs (canónico)                                  | ✅ ACTIVO (JARVIS)                   |
-| 15b                            | `Agent_Sync_Hub.py`                             | Sincronización de agentes                                            | ✅ ACTIVO                            |
-| 16a ★                          | `System_Mapper_Hub.py`                          | Regenera manifest JARVIS (canónico)                                  | ✅ ACTIVO (JARVIS)                   |
-| 16b                            | `Agent_Mirror_Hub.py`                           | Mirror agentes source → backup                                       | ✅ ACTIVO                            |
-| 17 ★                           | `Watchdog_Hub.py`                               | Health check activo del OS (canónico)                                | ✅ ACTIVO (JARVIS)                   |
-| 18 ★                           | `Telemetry_Hub.py`                              | Dashboard telemetría y stats (canónico)                              | ✅ ACTIVO (JARVIS)                   |
+| #   | Script                    | Purpose                                           | Status           |
+|-----|--------------------------|---------------------------------------------------|-----------------|
+| 00  | `Sound_Engine.py`         | Motor de notificaciones sonoras                   | ✅ ACTIVO         |
+| 01  | `Auditor_Hub.py`          | Orquestador de Auditorías                         | ✅ ACTIVO         |
+| 02  | `Git_Hub.py`              | Orquestador de Git/Repos                          | ✅ ACTIVO         |
+| 03  | `AIPM_Hub.py`             | Hub centralizador de AIPM                         | ✅ ACTIVO         |
+| 04  | `Ritual_Hub.py`           | Hub centralizador de Rituales y Standups          | ✅ ACTIVO         |
+| 05  | `Validator_Hub.py`        | Hub centralizador de Validaciones                 | ✅ ACTIVO         |
+| 06  | `Tool_Hub.py`             | Tool Integration & Management Hub                 | ✅ ACTIVO         |
+| 07  | `Integration_Hub.py`      | MCP & External Integrations Hub                   | ✅ ACTIVO         |
+| 08  | `Workflow_Hub.py`         | Workflow Automation Hub                           | ✅ ACTIVO         |
+| 09  | `Data_Hub.py`             | Data Processing & Analytics Hub                   | ✅ ACTIVO         |
+| 10  | `General_Hub.py`          | General Utilities Hub                             | ✅ ACTIVO         |
+| 11  | `Auto_Learn_Hub.py`       | Motor de automejora                               | ✅ ACTIVO         |
+| 14  | `Health_Metrics_Hub.py`   | Métricas de salud del sistema (JARVIS)            | ✅ ACTIVO         |
+| 15  | `MCP_Sync_Hub.py`         | Sync + drift report MCPs (JARVIS)                 | ✅ ACTIVO         |
+| 16  | `Agent_Mirror_Hub.py`     | Mirror agentes source → backup                    | ✅ ACTIVO         |
+| 17  | `Watchdog_Hub.py`         | Self-Healing Watchdog (JARVIS)                   | ✅ ACTIVO         |
+| 18  | `Telemetry_Hub.py`        | Telemetry Dashboard (JARVIS)                     | ✅ ACTIVO         |
+| 19  | `Agent_Sync_Hub.py`       | Sincronización de agentes                         | ✅ ACTIVO         |
+| 20  | `System_Mapper_Hub.py`    | System Mapper — regenera manifest                | ✅ ACTIVO         |
+| 21  | `Legacy_Path_Cleanup.py`  | Legacy Path Cleanup Scanner                      | ✅ ACTIVO         |
+| 22  | `Validate_Skill_Frontmatter.py` | Skill Frontmatter Validator                 | ✅ ACTIVO         |
+| 25  | `Minimax_Optimizer_Hub.py`| Gestión de Integración MiniMax                   | ✅ ACTIVO         |
+| 26  | `Parallel_Audit_Pro.py`   | Auditoría paralela                               | ✅ ACTIVO         |
+| 27  | `Skill_Auditor.py`        | Skill Auditor                                    | ✅ ACTIVO         |
+| 28  | `System_Health_Monitor.py`| Health monitor del sistema                       | ✅ ACTIVO         |
+| 29  | `Repo_Sync_Auditor.py`    | Repo sync auditor                                | ✅ ACTIVO         |
+| 30  | `path_replacement.py`     | PATH Replacement Script — OS v4.8                | ✅ ACTIVO         |
 
-> ★ = HUBs canónicos JARVIS 3.0. `Beauty_Doc.py` está en `13_Auditors_Os/scripts/`.
+> Nota: los # 12-13 fueron reasignados a directorios internos. `Context_Usage_Bar.py` y `Beautify_Tables.py` están en `12_Auditors_Os/scripts/`.
 
 ### Usage
 
@@ -132,15 +138,15 @@ Think_Different/                        ← Raíz del proyecto
 
 ---
 
-## 🔧 Legacy Scripts (Legacy_Backup/)
+## 🔧 Legacy Scripts (13_Legacy/)
 
-Scripts legacy en `01_Personal_Os/04_Operations/03_Scripts_Os/Legacy_Backup/` — referensiados por números:
+Scripts legacy en `01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/` — scripts históricos archivados:
 
-| #                                | Script                                 | Purpose                                                   |
-|---------------------------------|---------------------------------------|----------------------------------------------------------|
-| 00-90                            | +80 scripts                            | Workflows, AIPM, Quality, etc.                            |
+| Rango     | Cantidad | Contenido                           |
+|-----------|----------|-------------------------------------|
+| 00-08     | 8+       | Scripts pre-migración de agentes    |
 
-> ⚠️ Algunos scripts legacy pueden tener rutas obsoletas (`.agent/02_Skills`). Auditoría en progreso.
+> ⚠️ Algunos scripts legacy pueden tener rutas obsoletas. Auditoría en progreso.
 
 ---
 
@@ -188,23 +194,45 @@ Scripts migrados a skills usando `get_skill_script()`:
 
 ---
 
-## 📁 Scripts por Carpeta (01_Ritual)
+## 📁 Scripts por Directorio
 
-| Script                                                   | Función                                         |
-|---------------------------------------------------------|------------------------------------------------|
-| `08_Ritual_Cierre.py`                                    | Cierre de sesión                                |
-| `09_Backlog_Triage.py`                                   | Procesa backlog                                 |
-| `11_Sync_Notes.py`                                       | Sincroniza notas                                |
-| `12_Update_Links.py`                                     | Actualiza enlaces                               |
-| `13_Validate_Stack.py`                                   | Valida stack tech                               |
-| `14_Morning_Standup.py`                                  | Daily standup                                   |
-| `15_Weekly_Review.py`                                    | Weekly review                                   |
-| `16_Clean_System.py`                                     | Limpia sistema                                  |
-| `17_Ritual_Dominical.py`                                 | Ritual dominical                                |
-| `18_Generacion_Contenido.py`                             | Generación contenido                            |
-| `19_Generate_Progress.py`                                | Dashboard progreso                              |
-| `50_System_Health_Monitor.py`                            | Health monitor                                  |
-| `57_Repo_Sync_Auditor.py`                                | Repo sync                                       |
+### 01_Ritual/
+| Script                     | Función                        |
+|---------------------------|--------------------------------|
+| `00_Context_Reset.py`      | Resetea contexto de sesión     |
+| `01_Campanilla.py`         | Notificación sonora (campana)  |
+| `02_Alert_Manager.py`      | Gestor de alertas del sistema  |
+| `03_Notify_System.py`      | Sistema de notificaciones      |
+
+### 05_Validator/
+| Script                         | Función                           |
+|-------------------------------|-----------------------------------|
+| `00_Parallel_Audit_Pro.py`     | Auditoría en paralelo             |
+| `01_Skill_Auditor.py`          | Validador de skills               |
+| `02_Linter_Autofix.py`         | Autofix de linter                 |
+| `03_Validate_Rules.py`         | Validación de reglas              |
+| `04_Edge_Case_Validator.py`    | Validación de edge cases          |
+| `05_test_skill_lifecycle.py`   | Test de ciclo de vida de skills   |
+| `skill_security_scan.py`       | Escaneo de seguridad              |
+| `skill_validator.py`           | Validador genérico de skills      |
+
+### 12_Auditors_Os/scripts/
+| Script                     | Función                           |
+|---------------------------|-----------------------------------|
+| `00_Context_Usage_Bar.py`  | Barra de uso de contexto          |
+| `01_Beautify_Tables.py`    | Formateo de tablas                |
+| `02_Beauty_Doc.py`         | Formateo de documentación         |
+| `03_SOTA_Integrity_Check.py` | Verificación de integridad SOTA |
+| `04_Carousel_Engine.py`    | Motor de carruseles               |
+
+### 13_Legacy/ (scripts archivados)
+| Script                     | Función original                  |
+|---------------------------|-----------------------------------|
+| `00_Context_Reset.py`      | (archivado)                       |
+| `01_Spider_Brainstorm.py`  | (archivado — migrado a skill)     |
+| `02_Professor_X_Plan.py`   | (archivado — migrado a skill)     |
+| `03_Thor_Work.py`          | (archivado)                       |
+| ... (8+ scripts legacy)    |                                   |
 
 ---
 

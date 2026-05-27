@@ -1,7 +1,7 @@
 # 🔧 HUB_CATALOG — PersonalOS v4.0 Consequences
 
 **Versión:** 4.0
-**Última actualización:** 2026-05-14
+**Última actualización:** 2026-05-27
 **Ubicación:** `01_Personal_Os/04_Operations/03_Scripts_Os/`
 **PYTHONPATH:** Configurado vía `config_paths.py` en todos los HUBs
 
@@ -23,8 +23,8 @@
 | 09                         | **Data**                                | `09_Data_Hub.py`                                 | Procesamiento y analytics de datos                                             | `python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Data_Hub.py`                                                |
 | 10                         | **General**                             | `10_General_Hub.py`                              | Utilidades generales del sistema                                               | `python 01_Personal_Os/04_Operations/03_Scripts_Os/10_General_Hub.py`                                             |
 | 11                         | **Auto Learn**                          | `11_Auto_Learn_Hub.py`                           | Motor de automejora y aprendizaje                                              | `python 01_Personal_Os/04_Operations/03_Scripts_Os/11_Auto_Learn_Hub.py`                                          |
-| 12                         | **Context Bar**                         | `12_Context_Usage_Bar.py`                        | Barra visual de uso de contexto (en `13_Auditors_Os/scripts/`)                 | `python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/12_Context_Usage_Bar.py`                |
-| 13                         | **Beautify**                            | `13_Beautify_Tables.py`                          | Formateo de tablas markdown (en `13_Auditors_Os/scripts/`)                     | `python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/13_Beautify_Tables.py`                  |
+| 12                         | **Context Bar**                         | `00_Context_Usage_Bar.py`                        | Barra visual de uso de contexto (en `12_Auditors_Os/scripts/`)                 | `python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/00_Context_Usage_Bar.py`                |
+| 13                         | **Beautify**                            | `01_Beautify_Tables.py`                          | Formateo de tablas markdown (en `12_Auditors_Os/scripts/`)                     | `python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/01_Beautify_Tables.py`                  |
 | 14                         | **Health Metrics**                      | `14_Health_Metrics_Hub.py`                       | Métricas de salud del sistema OS                                               | `python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Health_Metrics_Hub.py`                                      |
 | 15a                        | **MCP Sync** ★                          | `15_MCP_Sync_Hub.py`                             | Sincronización y drift report de MCPs (canónico JARVIS 3.0)                    | `python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report`                                   |
 | 15b                        | **Agent Sync**                          | `15_Agent_Sync_Hub.py`                           | Sincronización de agentes del sistema                                          | `python 01_Personal_Os/04_Operations/03_Scripts_Os/15_Agent_Sync_Hub.py`                                          |
@@ -35,7 +35,7 @@
 
 > ★ = HUBs canónicos JARVIS 3.0 (Consequences 3.0 — 2026-04-25). Usar estos en scripts de automatización.
 >
-> **Notas de numeración:** Los slots 15 y 16 tienen duplicados (a/b) por expansión JARVIS 3.0. Los HUBs 12 y 13 viven en `13_Auditors_Os/scripts/`. Scripts de utilidad en rango 17-18: `17_Legacy_Path_Cleanup.py`, `17_Preview_Generator.js`, `18_Validate_Skill_Frontmatter.py` — no son HUBs sino helpers.
+> **Notas de numeración:** Los slots 15 y 16 tienen duplicados (a/b) por expansión JARVIS 3.0. Los HUBs 12 y 13 viven en `12_Auditors_Os/scripts/`. Scripts de utilidad en rango 17-18: `17_Legacy_Path_Cleanup.py`, `17_Preview_Generator.js`, `18_Validate_Skill_Frontmatter.py` — no son HUBs sino helpers.
 
 ---
 
@@ -101,7 +101,7 @@ Muestra visualmente el porcentaje de contexto utilizado en la sesión actual.
 
 ### 13 — Beautify
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/13_Beautify_Tables.py --file archivo.md
+python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/01_Beautify_Tables.py --file archivo.md
 ```
 Formatea y embellece tablas markdown.
 
