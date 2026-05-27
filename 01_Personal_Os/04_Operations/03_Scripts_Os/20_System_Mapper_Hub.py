@@ -274,7 +274,7 @@ def scan_hubs():
             "command": f"python {f.relative_to(PROJECT_ROOT)}".replace("\\", "/"),
         })
 
-    # Scripts en subdirectorios (ej: 05_Validator/, 10_Legacy/)
+    # Scripts en subdirectorios (ej: 05_Validator/, 90_Legacy/)
     for subdir in sorted(hubs_dir.iterdir()):
         if not subdir.is_dir():
             continue

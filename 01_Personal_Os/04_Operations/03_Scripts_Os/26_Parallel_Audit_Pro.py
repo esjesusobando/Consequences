@@ -101,7 +101,7 @@ def main():
     launch_agent(
         1,
         "Stack Integrity",
-        f"python \"{SCRIPT_DIR}/50_System_Health_Monitor.py\"",
+        f"python \"{SCRIPT_DIR}/28_System_Health_Monitor.py\"",
     )
 
     # 2. Agente de Reglas
@@ -115,7 +115,7 @@ def main():
     launch_agent(
         3,
         "Link Validator",
-        f"python \"{SCRIPT_DIR}/57_Repo_Sync_Auditor.py\"",
+        f"python \"{SCRIPT_DIR}/29_Repo_Sync_Auditor.py\"",
     )
 
     # 4. Agente Beautifier (README)
@@ -136,7 +136,7 @@ def main():
     launch_agent(
         6,
         "Skills Audit",
-        f"python \"{SCRIPT_DIR}/34_Skill_Auditor.py\"",
+        f"python \"{SCRIPT_DIR}/27_Skill_Auditor.py\"",
     )
 
     # 7. Agente System Mapper

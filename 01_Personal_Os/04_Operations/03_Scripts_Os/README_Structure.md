@@ -46,70 +46,89 @@
 ├── 20_System_Mapper_Hub.py    # Genera 7 JARVIS manifests
 ├── 21_Legacy_Path_Cleanup.py  # Limpia paths legacy v2.x
 ├── 22_Validate_Skill_Frontmatter.py  # Detecta skills sin frontmatter
-├── 23_path_replacement.py     # Utilidad de paths
+├── 23_Preview_Generator.js    # Generador de previews de skills
 ├── 24_mass_path_migration.py  # Utilidad de migración
 ├── 25_Minimax_Optimizer_Hub.py  # Optimizador
-├── 33_Parallel_Audit_Pro.py  # Auditoría paralela
-├── 34_Skill_Auditor.py        # Auditoría de skills
-├── 50_System_Health_Monitor.py  # Monitor de salud
-├── 57_Repo_Sync_Auditor.py    # Auditor de repos
+├── 26_Parallel_Audit_Pro.py  # Auditoría paralela
+├── 27_Skill_Auditor.py        # Auditoría de skills
+├── 28_System_Health_Monitor.py  # Monitor de salud
+├── 29_Repo_Sync_Auditor.py    # Auditor de repos
+├── 30_path_replacement.py     # Utilidad de paths
 │
-├── 03_AIPM/                    # 📦 BACKUP — AIPM scripts (v3.x heritage)
-│   ├── 22_AIPM_Trace_Logger.py
-│   ├── 23_AIPM_Evaluator.py
-│   ├── 24_AIPM_Interview_Sim.py
-│   ├── 25_Token_Budget_Guard.py
-│   ├── 26_RAG_Optimizer_Pro.py
-│   ├── 27_Probabilistic_Risk_Audit.py
-│   ├── 28_AIPM_Control_Center.py
-│   ├── 29_Guardrails_Service.py
-│   └── 30_AIPM_Consolidated_Report.py
+├── 03_AIPM/                    # AIPM scripts (00-08)
+│   ├── 00_AIPM_Trace_Logger.py
+│   ├── 01_AIPM_Evaluator.py
+│   ├── 02_AIPM_Interview_Sim.py
+│   ├── 03_Token_Budget_Guard.py
+│   ├── 04_RAG_Optimizer_Pro.py
+│   ├── 05_Probabilistic_Risk_Audit.py
+│   ├── 06_AIPM_Control_Center.py
+│   ├── 07_Guardrails_Service.py
+│   └── 08_AIPM_Consolidated_Report.py
 │
-├── 03_Validator/               # 📦 BACKUP — Validator scripts
-│   ├── 33_Parallel_Audit_Pro.py
-│   ├── 34_Skill_Auditor.py
-│   ├── 37_Linter_Autofix.py
-│   ├── 40_Validate_Rules.py
-│   └── 80_Edge_Case_Validator.py
+├── 04_LangGraph/               # LangGraph templates (README only)
 │
-├── 05_AIPM/                     # 📦 BACKUP — AIPM scripts
-├── 05_Validator/               # 📦 BACKUP — Validator scripts
-├── 07_Data/                    # 📦 Scripts de datos activos
-├── 09_AIPM/                     # 📦 BACKUP — AIPM scripts
-├── 09_Validator/               # 📦 BACKUP — Validator scripts
-├── 09_Integration/              # 📦 Scripts de integración activos
-├── 10_Legacy/                  # 📦 LEGACY — +80 scripts de versiones anteriores
+├── 05_Validator/               # Validator scripts (00-05)
+│   ├── 00_Parallel_Audit_Pro.py
+│   ├── 01_Skill_Auditor.py
+│   ├── 02_Linter_Autofix.py
+│   ├── 03_Validate_Rules.py
+│   ├── 04_Edge_Case_Validator.py
+│   └── 05_test_skill_lifecycle.py
+│
+├── 06_Tool/                    # Tool scripts (README only)
+│
+├── 07_Integration/             # Integration scripts (00-02)
+│   ├── 00_Sync_MCP_OpenCode.py
+│   ├── 01_Update_QMD_Index.py
+│   └── 02_Obsidian_Exporter.py
+│
+├── 08_Data/                    # Data scripts (00-03)
+│   ├── 00_Master_Analytics_Factory.py
+│   ├── 01_Batch_Parser.py
+│   ├── 02_Resumen_Extractor.py
+│   └── 03_Universal_Parser.py
+│
+├── 09_Auxiliary/               # Auxiliary scripts (00-04)
+│   ├── 00_AI_Task_Planner.py
+│   ├── 01_Update_Links.py
+│   ├── 02_Fast_Vision.py
+│   ├── 03_MCP_Health_Check.py
+│   ├── 04_Skill_Harmonizer.py
+│   └── skills_mapper.py
+│
+├── 10_Anthropic/               # Anthropic harness (00-09)
+│   ├── 00_Safety_Wrapper.py → 09_Multi_Agent_Pipeline.py
+│   └── test_features.json
+│
+├── 11_Audits/                  # Audit reports & scripts
+│   ├── audit_skills_routes.py
+│   ├── migrate_skills_routes.ps1
+│   └── REPORTES (3)
+│
+├── 12_Auditors_Os/             # Auditors_Os scripts (00-04)
+│   └── scripts/
+│       ├── 00_Context_Usage_Bar.py → 04_Carousel_Engine.py
+│
+├── 13_Legacy/                  # Legacy scripts (80+)
 │   ├── 01_Spider_Brainstorm.py
 │   ├── 02_Professor_X_Plan.py
 │   ├── 03_Thor_Work.py
-│   ├── 04_Vision_Review.py
-│   ├── 05_Hulk_Compound.py
 │   └── ... (80+ más)
 │
-├── 10_General/                  # 📦 BACKUP — General scripts
-├── 11_Anthropic_Harness/       # 📦 Scripts del harness de Anthropic
-└── 14_Otros/                    # 📦 Scripts misceláneos
+└── .backup/                    # Backup directory
+    └── 10_Legacy_backup_20260420/
 ```
 
 ---
 
-## 📝 NOTA SOBRE "INFLATION"
+## 📝 NOTA SOBRE SCRIPTS TOTALES
 
-Los **152 scripts** reportados en el HUB_Catalog incluyen:
+Los scripts reportados en el HUB_Catalog incluyen:
 
-1. **21+2 HUBs activos** en raíz (`00_` - `57_`)
-2. **Backup scripts** en subdirectorios (`03_AIPM/`, `03_Validator/`, `05_AIPM/`, etc.) — estos son **copias de respaldo heredadas de v3.x**
-3. **80+ scripts legacy** en `10_Legacy/` — historial de versiones anteriores
-
-### ¿Por qué existe esta estructura?
-
-- **History preservation:** Los subdirectorios AIPM/Validator contienen snapshots de cuando эти scripts se usaban en contextos específicos (AIPM mode, Validator mode).
-- **Quick rollback:** Si un script se rompe, la copia en subdirectorio permite recovery instantáneo.
-- **Audit trail:** Los scripts en `10_Legacy/` documentan la evolución del sistema a lo largo del tiempo.
-
-### Esta NO es una anomalía — es intencional
-
-El "inflated count" de 152 scripts es el resultado de mantener **máxima información** sin destruir nada. Es una característica de preservación, no un bug.
+1. **HUBs activos** en raíz (`00_` - `30_`)
+2. **Scripts de módulo** en subdirectorios (`03_AIPM/`, `05_Validator/`, etc.)
+3. **80+ scripts legacy** en `13_Legacy/` — historial de versiones anteriores
 
 ---
 
@@ -154,10 +173,11 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py --apply
 | 23 | Path Replacement          | Utility                       |
 | 24 | Mass Path Migration       | Utility                       |
 | 25 | Minimax Optimizer         | Optimizador                   |
-| 33 | Parallel Audit Pro        | Auditoría paralela            |
-| 34 | Skill Auditor             | Auditoría de skills           |
-| 50 | System Health Monitor     | Monitor de salud              |
-| 57 | Repo Sync Auditor         | Auditor de repos              |
+| 26 | Parallel Audit Pro        | Auditoría paralela            |
+| 27 | Skill Auditor             | Auditoría de skills           |
+| 28 | System Health Monitor     | Monitor de salud              |
+| 29 | Repo Sync Auditor         | Auditor de repos              |
+| 30 | Path Replacement          | Utilidad de paths             |
 
 ---
 

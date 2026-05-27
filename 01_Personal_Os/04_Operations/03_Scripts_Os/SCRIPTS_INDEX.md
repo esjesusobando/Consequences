@@ -20,10 +20,10 @@
 | **Hub 07 rutas**                               | ✅ FIXED                             | `09_Integration/` (antes `Integration_Fixed`)                                     |
 | **Hub 08 rutas**                               | ✅ FIXED                             | `04_Workflow/` (antes `Workflow_Fixed`)                                           |
 | **PYTHONPATH**                                 | ✅ FIXED                             | Todos los hubs pasan PYTHONPATH a sub-scripts                                     |
-| **Scripts legacy**                             | ✅ MOVED                             | 9 scripts migrados de 10_Legacy a módulos                                         |
+| **Scripts legacy**                             | ✅ MOVED                             | 9 scripts migrados de 90_Legacy a módulos                                         |
 | **Hooks Windows**                              | ✅ FIXED                             | WinError 5 + emoji encoding resueltos                                             |
 | **Script Migration**                           | ✅ DONE                              | 12 scripts → skills using get_skill_script()                                      |
-| **10_Legacy**                                  | ✅ ARCHIVED                          | `.backup/10_Legacy_backup_20260420/`                                              |
+| **90_Legacy**                                  | ✅ ARCHIVED                          | `.backup/90_Legacy_backup_20260420/`                                              |
 | **HUBs 14-18**                                 | ✅ JARVIS 3.0                        | Health Metrics, MCP Sync, Agent Mirror/Mapper, Watchdog, Telemetry                |
 
 ---
@@ -97,7 +97,7 @@ Think_Different/                        ← Raíz del proyecto
 │   ├── 04_Operations/                  ✅ Todo lo operativo
 │   │   ├── 03_Scripts_Os/              ✅ 23 HUBs + utilities (JARVIS 3.1)
 │   │   │   ├── 13_Auditors_Os/         ✅ Utilities: Beautify, Carousel, SOTA, etc.
-│   │   │   └── .backup/               ✅ 10_Legacy_backup_20260420
+│   │   │   └── .backup/               ✅ 90_Legacy_backup_20260420
 │   │   └── 02_Agent_Teams_Lite/00_Manifest/ ✅ 7 archivos JARVIS manifest
 │   └── 05_Archive/                     ✅ Legacy + repos de referencia
 ├── 02_Playground/                      ✅ Zona de pruebas

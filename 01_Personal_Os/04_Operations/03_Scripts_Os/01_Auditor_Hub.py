@@ -187,16 +187,16 @@ def main():
         "estructura", help="Auditoría de estructura (reutiliza 53_Structure_Auditor.py)"
     )
     subparsers.add_parser(
-        "links", help="Auditoría de links (reutiliza 57_Repo_Sync_Auditor.py)"
+        "links", help="Auditoría de links (reutiliza 29_Repo_Sync_Auditor.py)"
     )
     subparsers.add_parser(
-        "skills", help="Auditoría de skills (reutiliza 34_Skill_Auditor.py)"
+        "skills", help="Auditoría de skills (reutiliza 27_Skill_Auditor.py)"
     )
     subparsers.add_parser(
-        "health", help="Monitoreo de salud (reutiliza 50_System_Health_Monitor.py)"
+        "health", help="Monitoreo de salud (reutiliza 28_System_Health_Monitor.py)"
     )
     subparsers.add_parser(
-        "profundo", help="Auditoría profunda (reutiliza 33_Parallel_Audit_Pro.py)"
+        "profundo", help="Auditoría profunda (reutiliza 26_Parallel_Audit_Pro.py)"
     )
 
     args = parser.parse_args()
@@ -227,16 +227,16 @@ def main():
         print(f"{Fore.CYAN}📄 Reporte: 03_Resultado/04_Reportes/audit_estructura_{ts}.txt{Style.RESET_ALL}")
     elif args.command == "links":
         dynamic_speak("Iniciando auditoría de enlaces")
-        run_script("57_Repo_Sync_Auditor.py", REPORTS_DIR / f"audit_links_{ts}.txt")
+        run_script("29_Repo_Sync_Auditor.py", REPORTS_DIR / f"audit_links_{ts}.txt")
     elif args.command == "skills":
         dynamic_speak("Iniciando auditoría de skills")
-        run_script("34_Skill_Auditor.py", REPORTS_DIR / f"audit_skills_{ts}.txt")
+        run_script("27_Skill_Auditor.py", REPORTS_DIR / f"audit_skills_{ts}.txt")
     elif args.command == "health":
         dynamic_speak("Iniciando monitoreo de salud")
-        run_script("50_System_Health_Monitor.py", REPORTS_DIR / f"audit_health_{ts}.txt")
+        run_script("28_System_Health_Monitor.py", REPORTS_DIR / f"audit_health_{ts}.txt")
     elif args.command == "profundo":
         dynamic_speak("Iniciando auditoría profunda paralela")
-        run_script("33_Parallel_Audit_Pro.py", REPORTS_DIR / f"audit_profundo_{ts}.txt")
+        run_script("26_Parallel_Audit_Pro.py", REPORTS_DIR / f"audit_profundo_{ts}.txt")
     else:
         parser.print_help()
 

@@ -118,12 +118,12 @@ def validate_engine_naming() -> bool:
     EXCLUDED_FILES = {
         "config_paths.py",
         "refactor_revert_id.py",
-        "23_path_replacement.py",
+        "30_path_replacement.py",
         "24_mass_path_migration.py",
     }
 
     if not os.path.exists(engine_dir):
-        print(f"{ERROR}[ERR] No se encontró el directorio 08_Scripts_Os.{RESET}")
+        print(f"{ERROR}[ERR] No se encontró el directorio 03_Scripts_Os.{RESET}")
         return False
 
     for item_name in os.listdir(engine_dir):

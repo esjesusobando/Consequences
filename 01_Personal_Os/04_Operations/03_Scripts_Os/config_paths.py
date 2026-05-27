@@ -79,7 +79,7 @@ AUTO_IMPROVEMENT_DIR = OPERATIONS_DIR / "01_Auto_Improvement"
 # =============================================================================
 
 ENGINE_SCRIPTS_DIR = ENGINE_DIR  # Ya está en 03_Scripts_Os
-ENGINE_TESTS_DIR = ENGINE_DIR / "10_Legacy"
+ENGINE_TESTS_DIR = ENGINE_DIR / "13_Legacy"
 ENGINE_COMPOUND_DIR = CORE_DIR / "02_Tools" / "02_Skills" / "00_Compound_Engineering"
 
 # =============================================================================
@@ -223,8 +223,8 @@ if __name__ == "__main__":
 SCRIPT_LOCATION_MAP = {
     # === v6.2 AUDITORS Y VALIDATORS ===
     # directorio — get_skill_script agrega el nombre del script al final
-    "33_Parallel_Audit_Pro.py": ENGINE_DIR / "05_Validator",
-    "34_Skill_Auditor.py": ENGINE_DIR / "05_Validator",
+    "00_Parallel_Audit_Pro.py": ENGINE_DIR / "05_Validator",
+    "01_Skill_Auditor.py": ENGINE_DIR / "05_Validator",
     "37_Linter_Autofix.py": ENGINE_DIR / "05_Validator",
     "40_Validate_Rules.py": ENGINE_DIR / "05_Validator",
     "80_Edge_Case_Validator.py": ENGINE_DIR / "05_Validator",
@@ -238,42 +238,42 @@ SCRIPT_LOCATION_MAP = {
     "02_Professor_X_Plan.py": SKILLS_DIR / "05_Workflows" / "01_Agent_Teams_Lite" / "scripts",
     # Batch 1: Auditor (en ENGINE_DIR/03_Validator - ubicación real)
     # === Workflow Scripts ===
-    "08_Ritual_Cierre.py": ENGINE_DIR / "10_Legacy",
-    "14_Morning_Standup.py": ENGINE_DIR / "10_Legacy",
-    "15_Weekly_Review.py": ENGINE_DIR / "10_Legacy",
-    "09_Backlog_Triage.py": ENGINE_DIR / "10_Legacy",
-    "11_Sync_Notes.py": ENGINE_DIR / "10_Legacy",
-    "16_Clean_System.py": ENGINE_DIR / "10_Legacy",
-    "00_Notifier.py": ENGINE_DIR / "10_Legacy",
-    "17_Ritual_Dominical.py": ENGINE_DIR / "10_Legacy",
+    "08_Ritual_Cierre.py": ENGINE_DIR / "13_Legacy",
+    "14_Morning_Standup.py": ENGINE_DIR / "13_Legacy",
+    "15_Weekly_Review.py": ENGINE_DIR / "13_Legacy",
+    "09_Backlog_Triage.py": ENGINE_DIR / "13_Legacy",
+    "11_Sync_Notes.py": ENGINE_DIR / "13_Legacy",
+    "16_Clean_System.py": ENGINE_DIR / "13_Legacy",
+    "00_Notifier.py": ENGINE_DIR / "13_Legacy",
+    "17_Ritual_Dominical.py": ENGINE_DIR / "13_Legacy",
     # === Compound Engineering Scripts ===
-    "06_AntMan_Lfg_Lite.py": ENGINE_DIR / "10_Legacy",
-    "18_Generacion_Contenido.py": ENGINE_DIR / "10_Legacy",
-    "19_Generate_Progress.py": ENGINE_DIR / "10_Legacy",
-    # === v6.2 Legacy Scripts (10_Legacy) ===
-    "10_AI_Task_Planner.py": ENGINE_DIR / "10_Legacy",
-    "12_Update_Links.py": ENGINE_DIR / "10_Legacy",
-    "50_System_Health_Monitor.py": ENGINE_DIR / "50_System_Health_Monitor.py",
+    "06_AntMan_Lfg_Lite.py": ENGINE_DIR / "13_Legacy",
+    "18_Generacion_Contenido.py": ENGINE_DIR / "13_Legacy",
+    "19_Generate_Progress.py": ENGINE_DIR / "13_Legacy",
+    # === v6.2 Legacy Scripts (13_Legacy) ===
+    "10_AI_Task_Planner.py": ENGINE_DIR / "13_Legacy",
+    "12_Update_Links.py": ENGINE_DIR / "13_Legacy",
+    "28_System_Health_Monitor.py": ENGINE_DIR / "28_System_Health_Monitor.py",
     # === Avengers Workflow Scripts ===
-    "03_Thor_Work.py": ENGINE_DIR / "10_Legacy",
-    "04_Vision_Review.py": ENGINE_DIR / "10_Legacy",
-    "05_Hulk_Compound.py": ENGINE_DIR / "10_Legacy",
+    "03_Thor_Work.py": ENGINE_DIR / "13_Legacy",
+    "04_Vision_Review.py": ENGINE_DIR / "13_Legacy",
+    "05_Hulk_Compound.py": ENGINE_DIR / "13_Legacy",
     # === Others ===
-    "56_Organize_Solutions.py": ENGINE_DIR / "10_Legacy",
-    "87_Iron_Man_Gen.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
-    # === Batch 4: Utilities (13_Auditors_Os) ===
-    "13_Beautify_Tables.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
-    "14_Beauty_Doc.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
-    "15_SOTA_Integrity_Check.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
-    "16_Carousel_Engine.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
-    "12_Context_Usage_Bar.py": ENGINE_DIR / "13_Auditors_Os" / "scripts",
+    "56_Organize_Solutions.py": ENGINE_DIR / "13_Legacy",
+    "87_Iron_Man_Gen.py": ENGINE_DIR / "12_Auditors_Os" / "scripts",
+    # === Batch 4: Utilities (12_Auditors_Os) ===
+    "01_Beautify_Tables.py": ENGINE_DIR / "12_Auditors_Os" / "scripts",
+    "02_Beauty_Doc.py": ENGINE_DIR / "12_Auditors_Os" / "scripts",
+    "03_SOTA_Integrity_Check.py": ENGINE_DIR / "12_Auditors_Os" / "scripts",
+    "04_Carousel_Engine.py": ENGINE_DIR / "12_Auditors_Os" / "scripts",
+    "00_Context_Usage_Bar.py": ENGINE_DIR / "12_Auditors_Os" / "scripts",
     # === Scripts migrados a skills/scripts/ ===
     "39_Repair_Corruption.py": SKILLS_DIR / "06_Tools" / "21_System_Master",
     "62_Tool_Shed.py": SKILLS_DIR / "06_Tools" / "04_DevOps" / "scripts",
-    # === Scripts Medio Valor → 14_Otros ===
-    "60_Fast_Vision.py": ENGINE_DIR / "14_Otros" / "60_Fast_Vision.py",
-    "61_MCP_Health_Check.py": ENGINE_DIR / "14_Otros" / "61_MCP_Health_Check.py",
-    "63_Skill_Harmonizer.py": ENGINE_DIR / "14_Otros" / "63_Skill_Harmonizer.py",
+    # === Scripts Medio Valor → 09_Auxiliary ===
+    "02_Fast_Vision.py": ENGINE_DIR / "09_Auxiliary" / "02_Fast_Vision.py",
+    "03_MCP_Health_Check.py": ENGINE_DIR / "09_Auxiliary" / "03_MCP_Health_Check.py",
+    "04_Skill_Harmonizer.py": ENGINE_DIR / "09_Auxiliary" / "04_Skill_Harmonizer.py",
 }
 
 
@@ -300,13 +300,12 @@ def get_skill_script(script_name):
         if script_path.exists():
             return script_path
 
-    # Fallback: buscar en ubicaciones legacy + 14_Otros
+    # Fallback: buscar en ubicaciones legacy + 09_Auxiliary
     legacy_paths = [
-        ENGINE_DIR / "14_Otros" / script_name,
-        ENGINE_DIR / "04_Workflow" / script_name,
-        ENGINE_DIR / "06_Auditor" / script_name,
+        ENGINE_DIR / "09_Auxiliary" / script_name,
         ENGINE_DIR / "01_Ritual" / script_name,
-        ENGINE_DIR / "02_Tool" / script_name,
+        ENGINE_DIR / "02_Git" / script_name,
+        ENGINE_DIR / "12_Auditors_Os" / "scripts" / script_name,
         ENGINE_DIR / ".backup" / "10_Legacy_backup_20260420" / script_name,
         ENGINE_DIR / script_name,  # Directamente en ENGINE_DIR
     ]

@@ -96,10 +96,10 @@ def main():
 
     launch_agent(6, "BeautifierINVENTORY", f'python "{ENGINE_DIR / "13_Auditors_Os" / "scripts" / "13_Beautify_Tables.py"}" --target="01_Core/01_Inventario_Total.md"')
 
-    launch_agent(7, "BeautifierCLAUDE", f'python "{ENGINE_DIR / "13_Auditors_Os" / "scripts" / "13_Beautify_Tables.py"}" --target=CLAUDE.md')
+    launch_agent(7, "BeautifierCLAUDE", f'python "{ENGINE_DIR / "13_Auditors_Os" / "scripts" / "01_Beautify_Tables.py"}" --target=CLAUDE.md')
 
     # 8. Agente de Inventario (Skills audit) - en 03_Validator
-    launch_agent(8, "SkillAuditor", f'python "{ENGINE_DIR / "03_Validator" / "34_Skill_Auditor.py"}"')
+    launch_agent(8, "SkillAuditor", f'python "{ENGINE_DIR / "05_Validator" / "01_Skill_Auditor.py"}"')
 
     # 9. Agente de Seguridad - en 03_Validator
     launch_agent(9, "SecurityScanner", f'python "{ENGINE_DIR / "03_Validator" / "skill_security_scan.py"}" --skill={SKILLS_DIR}')

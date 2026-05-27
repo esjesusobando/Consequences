@@ -22,8 +22,7 @@ Verifica estado de MCPs configurados
 Ejecuta checks en los MCPs del archivo .mcp.json
 
 Uso:
-  python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Otros/61_MCP_Health_Check.py
-  python 01_Personal_Os/04_Operations/03_Scripts_Os/61_MCP_Health_Check.py
+  python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Auxiliary/03_MCP_Health_Check.py
 """
 
 import json
