@@ -21,7 +21,7 @@ Think_Different/                    # RAÍZ
 ### 📝 Notas de la Raíz
 
 | Carpeta                   | Propósito                                                           |
-|--------------------------|--------------------------------------------------------------------|
+|---------------------------|---------------------------------------------------------------------|
 | **00_Winter_is_Coming**   | Dirección estratégica. Goals, Backlog, AGENTS.md (GGA), CHANGELOG.  |
 | **01_Personal_Os**        | EL SISTEMA OPERATIVO. Skills, agentes, HUBs, workflows, memoria.    |
 | **02_Playground**         | Zona de pruebas. Skills nuevas, flujos experimentales.              |
@@ -114,7 +114,7 @@ Think_Different/                    # RAÍZ
 **Agentes por Categoría (numeración secuencial 00-19):**
 
 | #         | Categoría                                | Tipo             | Cantidad             |
-|----------|-----------------------------------------|-----------------|---------------------|
+|----------|-------------------------------------------|------------------|----------------------|
 | 00        | Orchestrator / Agent_Template            | Root             | 2 archivos           |
 | 01        | Dream Team                               | Subdirectorio    | 5 agentes + README   |
 | 02        | Specialists Compound                     | Subdirectorio    | 23 agentes + README  |
@@ -129,7 +129,7 @@ Think_Different/                    # RAÍZ
 **Skills por Área:**
 
 | Área                          | Skills  | Descripción                                     |
-|------------------------------|--------|------------------------------------------------|
+|-------------------------------|---------|-------------------------------------------------|
 | **00_Compound_Engineering**   | 63      | Core CE — SDD + CE workflow skills              |
 | **00_System_Core**            | 1       | Stack base OS                                   |
 | **10_Skill_Auditor**          | 1       | Auditoría de skills                             |
