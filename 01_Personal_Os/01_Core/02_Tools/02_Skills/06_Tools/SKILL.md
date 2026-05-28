@@ -8,22 +8,33 @@ description: >
 # 🛠️ TOOLS — Skill Creator, Testing, DevOps, Development
 
 **Área Funcional:** 06_Tools
-**Versión:** 1.0 | **Última actualización:** 2026-05-19
+**Versión:** 2.0 | **Última actualización:** 2026-05-28
 
 ---
 
 ## Sub-áreas y Contenido
 
-| Sub-área                    | Descripción                     |
-|----------------------------|--------------------------------|
-| `01_Skill_Creator/`         | Creación de skills              |
-| `02_Skill_Template/`        | Templates para skills           |
-| `03_Anthropic_Harness/`     | Harness para Claude Code        |
-| `04_DevOps/`                | Operaciones DevOps              |
-| `05_Vibe_Coding/`           | Coding por vibes                |
-| `06_Testing/`               | Testing y QA                    |
-| `07_Skill_Creator_Invictus/`| Skill creator para Invictus     |
-| `08_Octopus/`               | **Octopus** — Ejecución paralela|
+| N° | Sub-área                           | Descripción                     |
+|----|-----------------------------------|--------------------------------|
+| 01 | `01_Skill_Creator/`                | Creación de skills              |
+| 02 | `02_Skill_Template/`               | Templates para skills           |
+| 03 | `03_Anthropic_Harness/`            | Harness para Claude Code        |
+| 04 | `04_DevOps/`                       | Operaciones DevOps              |
+| 05 | `05_Vibe_Coding/`                  | Coding por vibes                |
+| 06 | `06_Testing/`                      | Testing y QA                    |
+| 07 | `07_Performance/`                  | Performance optimization        |
+| 08 | `08_Skill_Creator_Invictus/`       | Skill creator para Invictus     |
+| 09 | `09_Accessibility/`                | Accesibilidad web               |
+| 10 | `10_Octopus/`                      | Octopus — Ejecución paralela    |
+| 11 | `11_Doc_Processing/`               | Procesamiento de documentos     |
+| 12 | `12_Qmd/`                          | Búsqueda híbrida BM25 + embed   |
+| 13 | `13_System_Master/`                | System Guardian, MCP Builder    |
+| 14 | `14_Silicon_Valley_Data_Analyst/`  | Data analysis, SQL, pandas      |
+| 15 | `15_Ai_News_Weekly_Report/`        | News semanal con IA             |
+
+## Consolidación
+
+Esta área se redujo de **30 a 15** directorios (12 duplicados archivados en `05_Archive/02_Skills_Legacy/06_Tools/`).
 
 ## Octopus — Quick Reference
 
@@ -36,11 +47,12 @@ description: >
 
 ## Skills Principales
 
-| Skill            | Ubicación                     | Descripción          |
-|-----------------|------------------------------|---------------------|
-| **Octopus**      | `10_Octopus/00_Octopus_Skill/`| Multi-brazos paralelo|
-| **Skill Creator**| `01_Skill_Creator/`           | Crear nuevas skills  |
-| **Testing**      | `06_Testing/`                 | Test suites          |
+| Skill              | Ubicación                       | Descripción              |
+|-------------------|--------------------------------|-------------------------|
+| **Octopus**        | `10_Octopus/00_Octopus_Skill/`  | Multi-brazos paralelo    |
+| **System Master**  | `13_System_Master/`             | System Guardian, MCP     |
+| **Skill Creator**  | `01_Skill_Creator/`             | Crear nuevas skills      |
+| **Testing**        | `06_Testing/`                   | Test suites              |
 
 ## Runbook: Crear Nueva Skill
 
@@ -63,4 +75,4 @@ pytest --cov
 
 ---
 
-*Área Tools v1.0 — 2026-05-19*
+*Área Tools v2.0 — Consolidación 30→15 completada — 2026-05-28*

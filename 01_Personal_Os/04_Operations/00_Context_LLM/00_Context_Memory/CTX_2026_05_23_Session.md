@@ -1,0 +1,74 @@
+# 🧠 CTX: Audit v2 — Skills Registry, Docs Sync, Submodule Fix + 00_Winter_is_Coming/ Review
+
+**Sesión:** 2026-05-23
+**Tags:** #audit #opencode #skills #submodule #docsync #v4.7 #winter
+
+---
+
+## 🇦🇺 PARTE 1 — BUGS FIXED
+
+### Submodule OIM roto
+rename `09b→09` dejó `.git/modules/` y `worktree` apuntando al path viejo. Fixeado moviendo módulo git y actualizando config.
+
+### Index git dual
+archivos OIM en estado D + ?? resuelto con `git rm --cached` + `git add`.
+
+---
+
+## 🇦🇺 PARTE 1 — CONFIG FIXED
+
+**opencode.json**: 21 CE skills faltantes registradas (incluyendo `ce-update`). Total: 15→36.
+
+---
+
+## 🇦🇺 PARTE 1 — DOCS SYNCED
+
+- **CLAUDE.md**: v4.6→v4.7, skills 393→394, agents 58→82, HUBs 28→19
+- **Structure_v4.7.md**: skills 393→394, workflows 29→30, HUBs 31→19, 09b→09, Elite_Portfolio status ✅
+- **OS_DIRECTORY.md**: footer actualizado
+
+---
+
+## 🇦🇺 PARTE 1 — DIAGNÓSTICO
+
+- **Skills drift .agent (734) vs 01_Core (394)**: copy-not-cut de migración v3.1. 22 directorios legacy pre-consolidación + 10_Backup/ (205). No afecta runtime. Ignorar.
+
+---
+
+## 🇦🇺 PARTE 2 — 00_Winter_is_Coming/ REVIEW
+
+### Archivos revisados (6):
+- `AGENTS.md`: ⚠️ v4.1 (actual v4.7), 393→394 skills, 58→82 agents, 28→19 HUBs
+- `BACKLOG.md`: ⚠️ Última actualización 2026-04-17; items P2 resueltos sin marcar
+- `CHANGELOG.md`: ✅ Histórico — preservar tal cual
+- `GOALS.md`: ⚠️ "28 HUBs + 152 scripts, 393 skills" — números stale
+- `README.md`: ⚠️ "28 HUBs + 152 scripts, 29+ workflows"
+- `OS_DIRECTORY.md`: ⚠️ v4.5 STALE — existe copia v4.7 en raíz. ¿Eliminar o sync?
+
+### Issues detected:
+| File           | Issue                                                                    | Fix                 |
+|---------------|-------------------------------------------------------------------------|--------------------|
+| AGENTS.md l.1  | "v4.1" → v4.7                                                            | Edición directa     |
+| AGENTS.md l.38 | "393 skills" → 394                                                       | Edición directa     |
+| AGENTS.md l.41 | "28 HUBs + 152 scripts" → "19 HUBs + 284 scripts"                        | Edición directa     |
+| AGENTS.md l.166| "58 agentes" → 82                                                        | Edición directa     |
+| AGENTS.md l.167| "393 skills" → 394                                                       | Edición directa     |
+| AGENTS.md l.455| "29+ workflows" → "30 workflows"                                         | Edición directa     |
+| AGENTS.md l.526| "v4.1, 2026-05-18" → "v4.7, 2026-05-23"                                  | Edición directa     |
+| README.md l.31 | "28 HUBs + 152 scripts" → "19 HUBs + 284 scripts"                        | Edición directa     |
+| GOALS.md l.125 | "28 HUBs + 152 scripts, 393 skills" → "19 HUBs + 284 scripts, 394 skills"| Edición directa     |
+| OS_DIRECTORY.md| Stale v4.5 copy inside 00_Winter_is_coming/                              | Preguntar al usuario|
+
+---
+
+## 🇦🇺 PENDIENTE DE DECISIÓN
+
+- **OS_DIRECTORY.md**: ¿Eliminar copia stale v4.5 de 00_Winter_is_Coming/? (raíz tiene v4.7)
+- **BACKLOG.md**: ¿Scope de cleanup? Items viejos + mucho template/instruction content abajo
+
+---
+
+## 🇦🇺 WHAT WAS NOT DONE (by user directive)
+
+- No se eliminó `.agent/02_Skills/` — información histórica preservada.
+- No se eliminaron archivos legacy de docs — solo se actualizaron números.

@@ -1,102 +1,111 @@
-# DISEÑO UI/UX — Área Funcional 02
+# DISEÑO UI/UX — Area Funcional 02
 
-> **Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/`
-> **Última actualización:** 2026-04-28
-> **Skills activas:** 10 (+ 1 repo externo destacado)
+> **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/`
+> **Ultima actualizacion:** 2026-05-27
+> **Skills activas:** 11 (post-consolidacion)
 
 ---
 
-## Navegación Rápida
+## Navegacion Rapida
 
-| #                      | Skill                                         | Descripción                                            | Estado                      |
-|-----------------------|----------------------------------------------|-------------------------------------------------------|----------------------------|
-| 01                     | `01_Product_Design/`                          | Fundamentos de diseño de producto                      | ✅                           |
-| 02                     | `02_Product_Design/`                          | Diseño de producto (backup)                            | 🟡                           |
-| 03                     | `03_Taste_Skills/`                            | Criterio estético y buen diseño                        | ✅                           |
-| 04                     | `04_Diseno_Minimalista/`                      | Diseño minimalista exagerado                           | ✅                           |
-| 05                     | `05_Directrices_Marca/`                       | Guías de marca y consistencia                          | ✅                           |
-| 06                     | `06_Excalidraw_Flowchart/`                    | Diagramas y flowcharts                                 | ✅                           |
-| 07                     | `07_Ui_Ux_Pro_Max/`                           | UI/UX con base de datos consultable                    | ✅                           |
-| 08                     | `08_Design_Sota/`                             | Estado del arte en diseño                              | ✅                           |
-| 09                     | `09_Ui_Ux_Pro_Max/`                           | Backup Ui Ux Pro Max                                   | 🟡                           |
-| 10                     | `10_Huashu_Design/`                           | HTML prototipado de alta fidelidad                     | ✅                           |
-| 11                     | `11_Dumbledor_Design/`                        | Diseño editorial de alto impacto                       | 🆕                           |
+| # | Directorio | Skill | Descripcion |
+|---|-----------|-------|-------------|
+| 01 | `01_Product_Design/` | Product Design | Fundamentos de diseno de producto |
+| 02 | `02_Taste_Skills/` | Taste/Design Taste | Criterio estetico y diseno con criterio |
+| 03 | `03_Diseno_Minimalista/` | Diseno Minimalista | Diseno minimalista exagerado |
+| 04 | `04_Directrices_Marca/` | Brand Guidelines | Guias de marca y consistencia |
+| 05 | `05_Excalidraw_Flowchart/` | Excalidraw/Diagramas | Diagramas y flowcharts |
+| 06 | `06_Design_Sota/` | Design SOTA | Estado del arte en diseno |
+| 07 | `07_Ui_Ux_Pro_Max/` | UI/UX Pro Max | UI/UX con base de datos consultable |
+| 08 | `08_Huashu_Design/` | Huashu Design | HTML prototipado de alta fidelidad |
+| 09 | `09_Dumbledor_Design/` | Dumbledor Design | Diseno editorial de alto impacto |
+| 10 | `10_Design_Systems/` | Design Systems | Atomic design, tokens, Storybook, shadcn/ui |
+| 11 | `11_Marvel_Avengers/` | Marvel/UI Theme | Tematica Marvel para interfaces |
 
 ---
 
 ## Skills Destacadas
 
-### 🎯 Dumbledor Design (11)
-**Diseño editorial de alto impacto** — Metodología de contraste binario + jerarquía visual de 3 niveles.
+### Huashu Design (08)
+**HTML prototipado de alta fidelidad** — Prototipos interactivos, animaciones, demos, y presentaciones en HTML puro con React. Incluye sistema de exportacion a MP4/GIF, 6 tracks de BGM, y libreria de componentes starter (slide shell, variant canvas, animation engine, device frame).
+
+**Contenido:**
+- `SKILL.md` — Workflow completo con triggers
+- `assets/` — Recursos visuales
+- `demos/` — Demos interactivos
+- `scripts/` — Scripts de automatizacion
+- `references/` — Documentacion de referencia
+
+### Dumbledor Design (09)
+**Diseno editorial de alto impacto** — Metodologia de contraste binario + jerarquia visual de 3 niveles.
 
 **Principios:**
-- Sistema de castas: Impacto Brutal (900) → Anclaje (700) → Refinamiento (300)
+- Sistema de castas: Impacto Brutal (900) -> Anclaje (700) -> Refinamiento (300)
 - Paleta Dominante-Acento: 1 color dominante + 1 acento (rojo) + soporte (negro/grises)
-- Contraste binario: Nunca pesos medios — o muy grueso o muy delgado
+- Contraste binario: Nunca pesos medios - o muy grueso o muy delgado
 
 **Archivos:**
-- `SKILL.md` — Workflow y metodología completa
-- `references/VISUAL_SHOWCASE.md` — CSS examples y visualización
+- `SKILL.md` — Workflow y metodologia completa
+- `references/VISUAL_SHOWCASE.md` — CSS examples y visualizacion
+
+### Design Systems (10)
+**Atomic design, design tokens, shadcn/ui, Storybook** — Arquitectura completa de sistemas de diseno desde componentes atomicos hasta multi-brand theming.
 
 ---
 
-### 🌐 Frontend Slides (external repo)
-**Predeterminada oficial para presentaciones HTML** — Zero dependencies, visual style discovery, anti-AI-slop.
-
-**Ubicación:** `05_Archive/07_Repos_Gentleman/frontend-slides/`
-
-**Features:**
-- Zero dependencies (HTML inline)
-- 12 presets visuales (Dark/Light/Specialty)
-- PPT conversion
-- Deploy to URL (Vercel)
-- Export to PDF (Playwright)
-
-**Uso:**
-```
-/frontend-slides
-> "Create a pitch deck for my AI startup"
-```
-
----
-
-## Integración con Flujo UI/UX
+## Integracion con Flujo UI/UX
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                    FLUJO UI/UX SUGERIDO                     │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│   1. Brief ──→ 02_Product_Design (análisis)                │
-│                                                             │
-│   2. Research ──→ 05_Directrices_Marca (brand)             │
-│                   07_Ui_Ux_Pro_Max (referencia DB)          │
-│                                                             │
-│   3. Wireframe ──→ 06_Excalidraw_Flowchart (flujos)        │
-│                                                             │
-│   4. Visual Design ──→ 11_Dumbledor_Design (impacto)        │
-│                        04_Diseno_Minimalista (estética)    │
-│                        10_Huashu_Design (prototipado HTML)  │
-│                                                             │
-│   5. Presentación ──→ Frontend Slides (deck final)          │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
+                      FLUJO UI/UX SUGERIDO
+
+  1. Brief ---------> 01_Product_Design (analisis)
+
+  2. Research ------> 04_Directrices_Marca (brand)
+                      07_Ui_Ux_Pro_Max (referencia DB)
+
+  3. Wireframe -----> 05_Excalidraw_Flowchart (flujos)
+
+  4. Visual --------> 09_Dumbledor_Design (impacto)
+                      03_Diseno_Minimalista (estetica)
+                      10_Design_Systems (componentes)
+
+  5. Prototipo -----> 08_Huashu_Design (HTML interactivo)
+                      06_Design_Sota (estado del arte)
+
+  6. Presentacion --> Frontend Slides (deck final)
 ```
 
 ---
 
-## Selección de Skill por Caso
+## Seleccion de Skill por Caso
 
-| Caso                                       | Skill Recomendada                            |
-|-------------------------------------------|---------------------------------------------|
-| Landing page impactante                    | `11_Dumbledor_Design`                        |
-| Presentación de pitch                      | `Frontend Slides`                            |
-| Prototipo clickeable                       | `10_Huashu_Design`                           |
-| Diagrama de flujo                          | `06_Excalidraw_Flowchart`                    |
-| Sistema de diseño                          | `07_Ui_Ux_Pro_Max`                           |
-| Diseño minimalista                         | `04_Diseno_Minimalista`                      |
-| Marca coherente                            | `05_Directrices_Marca`                       |
+| Caso | Skill Recomendada |
+|------|------------------|
+| Landing page impactante | `09_Dumbledor_Design` |
+| Presentacion de pitch | Frontend Slides (repo externo) |
+| Prototipo clickeable | `08_Huashu_Design` |
+| Diagrama de flujo | `05_Excalidraw_Flowchart` |
+| Sistema de diseno | `10_Design_Systems` |
+| Diseno minimalista | `03_Diseno_Minimalista` |
+| Marca coherente | `04_Directrices_Marca` |
+| Referencia visual | `07_Ui_Ux_Pro_Max` |
+| Tema Marvel | `11_Marvel_Avengers` |
 
 ---
 
-*PersonalOS Consequences v3.1 — 2026-04-28*
+## Skills Archivadas
+
+Las siguientes skills fueron consolidadas por duplicacion numerica y movidas a Archive:
+
+| Skill Original | Archivada En | Motivo |
+|---------------|-------------|--------|
+| `08_Ui_Ux_Pro_Max` | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/` | Duplicado exacto de 07 |
+| `09_Huashu_Design` | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/` | Duplicado exacto de 08 |
+| `11_Dumbledor_Design` | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/` | Duplicado exacto de 09 |
+| `11_Design_Systems` | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/` | Duplicado de 10 |
+| `12_Design_Systems` | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/` | Duplicado de 10 |
+| `13_Design_Systems` | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/` | Duplicado de 10 |
+
+---
+
+*PersonalOS Consequences v4.0 - 2026-05-27 (Consolidacion Fase 1)*

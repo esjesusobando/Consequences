@@ -182,7 +182,7 @@ class Learner:
         stats = self.get_stats()
 
         lines = [
-            "# 🧠 Reporte de Aprendizaje",
+            "# [BRAIN] Reporte de Aprendizaje",
             f"**Fecha:** {datetime.now().strftime('%Y-%m-%d')}",
             "",
             "## Estadísticas",
@@ -217,7 +217,7 @@ def main():
         "description": "Directorio faltante en estructura"
     }, success=True, method="auto")
 
-    print("\n✅ Nuevo aprendizaje registrado")
+    print("\n[OK] Nuevo aprendizaje registrado")
     return 0
 
 

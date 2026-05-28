@@ -98,7 +98,7 @@ class Analyzer:
     def generate_report(self, analyzed: List[AnalyzedIssue]) -> str:
         """Genera reporte de análisis"""
         lines = [
-            "# 📊 Análisis de Issues",
+            "# [STATS] Análisis de Issues",
             f"**Fecha:** {datetime.now().strftime('%Y-%m-%d')}",
             f"**Total issues analizados:** {len(analyzed)}",
             "",
@@ -115,7 +115,7 @@ class Analyzer:
             lines.append(f"- **Score:** {item.severity_score}/10")
             lines.append(f"- **Área de impacto:** {item.impact_area}")
             lines.append(f"- **Esfuerzo:** {item.effort_to_fix}")
-            lines.append(f"- **Auto-fixable:** {'✅' if item.auto_fixable else '❌'}")
+            lines.append(f"- **Auto-fixable:** {'[OK]' if item.auto_fixable else '[FAIL]'}")
             lines.append("")
 
         # Summary stats

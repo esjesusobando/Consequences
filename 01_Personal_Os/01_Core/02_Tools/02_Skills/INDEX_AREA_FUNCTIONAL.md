@@ -10,6 +10,7 @@
 
 | Skill                                       | Path                                          | Descripción                                                  |
 |--------------------------------------------|----------------------------------------------|-------------------------------------------------------------|
+| **Agent Teams Lite**                        | `00_Agent_Teams_Lite/`                        | SDD workflow: init, explore, propose, spec, design, tasks, apply, verify, archive, judgment_day, go_testing, branch_pr, issue_creation |
 | **Compound Engineering**                    | `00_Compound_Engineering/`                    | CE Spider, Avengers, metodología completa                    |
 | **Personal OS Stack**                       | `00_System_Core/`                             | Stack base del OS, System Guardian                           |
 | **Skill Auditor**                           | `10_Skill_Auditor/`                           | Auditoría y validación de skills                             |
@@ -50,11 +51,14 @@
 | **Product Design**                            | `02_Diseno_Ui_Ux/01_Product_Design/`                                | Habilidades de diseño de producto                                                            |
 | **Taste Skill**                               | `02_Diseno_Ui_Ux/02_Taste_Skills/`                                  | Diseño con gusto y criterio estético                                                         |
 | **Diseno Minimalista**                        | `02_Diseno_Ui_Ux/03_Diseno_Minimalista/`                            | Diseño minimalista exagerado                                                                 |
+| **Directrices Marca**                         | `02_Diseno_Ui_Ux/04_Directrices_Marca/`                             | Guías de marca y consistencia                                                                |
 | **Excalidraw Flowchart**                      | `02_Diseno_Ui_Ux/05_Excalidraw_Flowchart/`                          | Diagramas y flowcharts en Excalidraw                                                         |
-| **Ui Ux Pro Max**                             | `02_Diseno_Ui_Ux/06_Ui_Ux_Pro_Max/`                                 | Diseño UI/UX con base de datos                                                               |
+| **Design SOTA**                               | `02_Diseno_Ui_Ux/06_Design_Sota/`                                   | Estado del arte en diseño                                                                    |
+| **Ui Ux Pro Max**                             | `02_Diseno_Ui_Ux/07_Ui_Ux_Pro_Max/`                                 | Diseño UI/UX con base de datos consultable                                                   |
 | **Huashu Design**                             | `02_Diseno_Ui_Ux/08_Huashu_Design/`                                 | HTML prototipado de alta fidelidad                                                           |
 | **Dumbledor Design**                          | `02_Diseno_Ui_Ux/09_Dumbledor_Design/`                              | Diseño editorial de alto impacto — jerarquía 3 niveles, contraste binario                    |
-| **Design SOTA**                               | `02_Diseno_Ui_Ux/10_Design_Sota/`                                   | Estado del arte en diseño                                                                    |
+| **Design Systems**                            | `02_Diseno_Ui_Ux/10_Design_Systems/`                                | Atomic design, design tokens, shadcn/ui, Storybook, multi-brand theming                      |
+| **Marvel Avengers**                           | `02_Diseno_Ui_Ux/11_Marvel_Avengers/`                               | Temática Marvel para interfaces                                                              |
 | **Frontend Slides**                           | `05_Archive/07_Repos_Gentleman/frontend-slides/`                    | HTML presentations — predeterminada para presentaciones                                      |
 
 > **Skills en 03_Resultado:** `00_Output_Skills/` — Output de skills compiladas
@@ -106,11 +110,18 @@
 | **Skill Template**                                 | `06_Tools/02_Skill_Template/`                                            | Plantillas de skills                                       |
 | **Anthropic Harness**                              | `06_Tools/03_Anthropic_Harness/`                                         | CE Harness — Sprint, Context, Evaluator                    |
 | **DevOps**                                         | `06_Tools/04_DevOps/`                                                    | Docker, CI/CD, infraestructura                             |
+| **Vibe Coding**                                    | `06_Tools/05_Vibe_Coding/`                                               | Coding guiado por vibes                                    |
 | **Testing**                                        | `06_Tools/06_Testing/`                                                   | Pytest, Playwright, E2E                                    |
 | **Verify And Commit**                              | `06_Tools/06_Testing/03_Verify_And_Commit/`                              | Workflow de verificación y commit                          |
+| **Performance**                                    | `06_Tools/07_Performance/`                                               | Performance optimization                                   |
+| **Skill Creator Invictus**                         | `06_Tools/08_Skill_Creator_Invictus/`                                    | Invictus skill creator                                     |
+| **Accessibility**                                  | `06_Tools/09_Accessibility/`                                             | Accesibilidad web                                          |
+| **Octopus**                                        | `06_Tools/10_Octopus/`                                                   | Ejecución paralela multi-brazo                             |
+| **Doc Processing**                                 | `06_Tools/11_Doc_Processing/`                                            | Procesamiento de documentos                                |
+| **Qmd (Hybrid Search)**                            | `06_Tools/12_Qmd/`                                                       | Búsqueda híbrida BM25 + embeddings                         |
 | **System Master**                                  | `06_Tools/13_System_Master/`                                             | System Guardian, MCP Builder                               |
-| **Silicon Valley Data Analyst**                    | `06_Tools/16_Silicon_Valley_Data_Analyst/`                               | Data analysis, SQL, pandas                                 |
-| **QMD (Hybrid Search)**                            | `06_Tools/27_Qmd/`                                                       | Búsqueda híbrida BM25 + embeddings                         |
+| **Silicon Valley Data Analyst**                    | `06_Tools/14_Silicon_Valley_Data_Analyst/`                               | Data analysis, SQL, pandas                                 |
+| **AI News Weekly Report**                          | `06_Tools/15_Ai_News_Weekly_Report/`                                     | News semanal con IA                                        |
 
 ---
 

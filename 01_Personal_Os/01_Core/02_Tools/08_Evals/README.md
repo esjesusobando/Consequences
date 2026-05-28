@@ -1,39 +1,24 @@
-# Session Evals
+# Session Evals — Evaluacion de Sesiones y Sistema
 
-Capture and review Claude Code sessions to improve AI-assisted workflows.
+Capture, review, and improve AI-assisted workflows through structured evaluation.
 
-## Quick Start
+---
 
-```bash
-cd core/scripts
+## Estructura
 
-# Generate eval for most recent session
-python trace_to_eval.py session recent
-
-# Generate evals for last 5 sessions
-python trace_to_eval.py recent -n 5
-
-# List pending evals
-python trace_to_eval.py list --pending
+```
+08_Evals/
+  README.md                       # Este archivo
+  01_Agente_Evals/                # Evaluaciones de sesiones de agente
+    01_EV_Claude_Opus_03_26.md    # Eval: Claude Opus session
+  02_System_Evals/                # Evaluaciones de componentes del sistema
+    EV_System_Estructural_Optimization_Fase4.md
+    EV_System_Auto_Improvement_State.md
+  03_Templates/                   # Plantillas para crear nuevas evals
+    EV_Template.md                # Template generico
 ```
 
-## Workflow
-
-1. **Capture**: Claude Code auto-saves sessions to `~/.claude/projects/`
-2. **Generate**: Run `python trace_to_eval.py session recent`
-3. **Review**: Open eval in Obsidian, check AI analysis
-4. **Annotate**: Update judgement and add notes
-5. **Improve**: Apply suggestions to 01_Personal_Os/11_AGENTS.md
-
-## Eval Structure
-
-Each eval includes:
-
-- **User Intent**: Initial request
-- **Conversation Flow**: Collapsed message turns
-- **Tool Summary**: What tools were used
-- **AI Analysis**: Suggested judgement, patterns, improvements
-- **Manual Review**: Space for your notes
+---
 
 ## Judgement Values
 
@@ -42,30 +27,30 @@ Each eval includes:
 - `failure`: Task failed or wrong result
 - `pending`: Not yet reviewed
 
+---
+
 ## Axial Codes
 
-Tag patterns for analysis:
+| Code | Meaning |
+|------|---------|
+| `good-context-gathering` | Read/explored before acting |
+| `efficient-tool-use` | Minimal tool calls |
+| `iterative-refinement` | Improved based on feedback |
+| `task-tracking` | Used TodoWrite |
+| `incomplete` | Stopped before done |
 
-| Code                                                  | Meaning                                                  |
-|------------------------------------------------------|---------------------------------------------------------|
-| `good-context-gathering`                              | Read/explored before acting                              |
-| `efficient-tool-use`                                  | Minimal tool calls                                       |
-| `iterative-refinement`                                | Improved based on feedback                               |
-| `task-tracking`                                       | Used TodoWrite                                           |
-| `incomplete`                                          | Stopped before done                                      |
+---
 
-## CLI Reference
+## Integracion con Auto_Improvement
 
-```bash
-# List projects
-python trace_parser.py projects
+Las evaluaciones de sistema (`02_System_Evals/`) sirven como input para el Learner del motor Auto_Improvement en `04_Operations/01_Auto_Improvement/`.
 
-# List sessions
-python trace_parser.py sessions -n 10
+Ciclo de feedback:
+1. Auto_Improvement ejecuta escaneo → detecta issues
+2. Resultados se registran en Evals como System Evals
+3. Evals alimentan al Learner para mejorar reglas
+4. Reglas mejoradas → mejor deteccion en proximo escaneo
 
-# Parse specific session
-python trace_parser.py parse abc123
+---
 
-# Generate eval
-python trace_to_eval.py session abc123
-```
+*Actualizado: 2026-05-28 (Fase 5 — Estructura expandida)*

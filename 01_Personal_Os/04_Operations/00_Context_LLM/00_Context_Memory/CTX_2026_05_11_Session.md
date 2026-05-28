@@ -1,0 +1,53 @@
+# Context Memory — 2026-05-11
+
+## Session Summary
+
+### Completado
+
+| Área                          | Acción                                                  | Resultado                                                             |
+|------------------------------|--------------------------------------------------------|----------------------------------------------------------------------|
+| **Cache Cleanup**             | Eliminados archivos >30 días                            | 336 archivos file-history, downloads, paste-cache limpiados           |
+| **Ecosystem Update**          | Engram v1.13.1→v1.15.10, compound v2.54→v3.8.0          | CLI y plugin actualizados a últimas versiones                         |
+| **Engram Projects**           | Consolidación 50→34 proyectos                           | 16 duplicados fusionados (Think_Different, personal-os, etc)          |
+| **Config Fusion**             | settings.local.json movido + fusionado                  | Hooks y permissions combinados de Desktop a Think_Different           |
+| **Gentleman Repos**           | Upstream remotes agregados                              | 7 repos configurados con upstream original                            |
+
+### Pendientes
+
+| Item                    | Estado                   | Requiere                           |
+|------------------------|-------------------------|-----------------------------------|
+| TubeMaster MCP          | P1 Backlog               | Credenciales Google OAuth          |
+| SupaData MCP            | Verificar tools          | Tests de herramientas              |
+| "ultrathink"            | No encontrado            | Confirmación de nombre             |
+
+---
+
+## Insights Técnicos
+
+1. **Engram consolidation** requiere modo interactivo manual (no funciona con pipes)
+2. **Repos clonados** tenían remote apuntando a fork personal — no al upstream Gentleman-Programming
+3. **compound-engineering** y **every-marketplace** son el MISMO repo (EveryInc/compound-engineering-plugin)
+4. **TubeMaster** tiene MCP stdio para YouTube (transcript, metadata, playlists)
+
+---
+
+## Learning: Personal OS Architecture (creatoreconomy.so)
+
+### 4-Layer Architecture
+
+1. **Folder (with memory)** — Files que Claude lee al inicio, estableciendo identidad y contexto
+2. **Tools** — APIs, MCPs, CLIs para tareas específicas
+3. **Skills** — Instrucciones detalladas y repetibles para tareas recurrentes
+4. **Routines** — Jobs programados que ejecutan proactivamente
+
+### Critical Sequence
+
+> Folder structure setup FIRST — antes de tools o skills
+
+### Memory Loop
+
+Persiste contexto entre sesiones sin repetición manual.
+
+---
+
+*Guardado: 2026-05-11*

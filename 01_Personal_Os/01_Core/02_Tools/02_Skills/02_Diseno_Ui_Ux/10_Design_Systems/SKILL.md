@@ -1,10 +1,7 @@
 ---
-name: 02_Diseno_Ui_Ux
-description: (descripcion de la skill)
-type: skill
-version: 1.0
-date: 2026-05-13
-status: active
+name: design-systems
+description: "Design Systems / Component Architecture - Atomic design, design tokens, shadcn/ui, Storybook, multi-brand theming. Triggers: design system, component library, atomic design, tokens, shadcn."
+version: 1.0.0
 ---
 
 # Design Systems / Component Architecture

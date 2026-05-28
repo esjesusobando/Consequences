@@ -20,7 +20,7 @@ class Executor:
 
     def execute(self, prioritized_issues: List[dict]) -> Tuple[int, int]:
         """Ejecuta fixes para issues priorizados"""
-        print(f"{'🔍 DRY RUN' if self.dry_run else '⚙️ EXECUTING'}: Aplicando fixes...")
+        print(f"{'[SEARCH] DRY RUN' if self.dry_run else '[EXEC] EXECUTING'}: Aplicando fixes...")
 
         success_count = 0
         fail_count = 0
@@ -82,7 +82,7 @@ class Executor:
             return False
 
         if self.dry_run:
-            print(f"  📁 [DRY] Crear: {target}")
+            print(f"  [DIR] [DRY] Crear: {target}")
             return True
 
         try:
@@ -92,16 +92,16 @@ class Executor:
                 "path": str(target),
                 "timestamp": datetime.now().isoformat()
             })
-            print(f"  ✅ Creado: {target}")
+            print(f"  [OK] Creado: {target}")
             return True
         except Exception as e:
-            print(f"  ❌ Error creando {target}: {e}")
+            print(f"  [FAIL] Error creando {target}: {e}")
             return False
 
     def report(self) -> str:
         """Genera reporte de fixes"""
         lines = [
-            "# ⚙️ Reporte de Ejecución",
+            "# [EXEC] Reporte de Ejecución",
             f"**Fecha:** {datetime.now().strftime('%Y-%m-%d %H:%M')}",
             f"**Modo:** {'DRY RUN' if self.dry_run else 'LIVE'}",
             "",
@@ -113,13 +113,13 @@ class Executor:
         if self.fixes_applied:
             lines.append("## Fixes Exitosos")
             for fix in self.fixes_applied:
-                lines.append(f"- ✅ {fix['action']}: {fix['path']}")
+                lines.append(f"- [OK] {fix['action']}: {fix['path']}")
             lines.append("")
 
         if self.fixes_failed:
             lines.append("## Fixes Fallidos")
             for fail in self.fixes_failed:
-                lines.append(f"- ❌ {fail['issue'].get('path')}: {fail['error']}")
+                lines.append(f"- [FAIL] {fail['issue'].get('path')}: {fail['error']}")
             lines.append("")
 
         return "\n".join(lines)

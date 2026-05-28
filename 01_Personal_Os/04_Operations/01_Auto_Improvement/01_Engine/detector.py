@@ -58,7 +58,7 @@ class Detector:
 
     def scan(self) -> List[Issue]:
         """Ejecuta todas las detecciones"""
-        print("🔍 Iniciando detección de issues...")
+        print("[DETECTOR] Iniciando deteccion de issues...")
 
         self._check_structure()
         self._check_docs_consistency()
@@ -70,7 +70,7 @@ class Detector:
 
     def _check_structure(self):
         """Verifica estructura de carpetas"""
-        print("  📁 Verificando estructura...")
+        print("  [ESTRUCTURA] Verificando estructura...")
 
         required_dirs = ["00_Winter_is_Coming", "01_Core", "02_Knowledge",
                         "03_Tasks", "04_Operations", "05_Archive"]
@@ -84,7 +84,7 @@ class Detector:
 
     def _check_docs_consistency(self):
         """Verifica consistencia entre docs y realidad"""
-        print("  📝 Verificando consistencia de docs...")
+        print("  [DOCS] Verificando consistencia de docs...")
 
         # Verificar version mismatch
         readme = self.root / "README.md"
@@ -107,7 +107,7 @@ class Detector:
 
     def _check_naming_conventions(self):
         """Verifica convenciones de nombres"""
-        print("  📋 Verificando naming conventions...")
+        print("  [SUMMARY] Verificando naming conventions...")
 
         # Patrones válidos
         dir_pattern = re.compile(r'^\d{2}_[A-Z].+$')
@@ -120,7 +120,7 @@ class Detector:
 
     def _check_duplicate_scripts(self):
         """Detecta scripts duplicados"""
-        print("  🔍 Verificando duplicados...")
+        print("  [SEARCH] Verificando duplicados...")
 
         scripts = {}
         for py_file in self._walk_files(ext_filter=(".py",)):
@@ -147,22 +147,22 @@ class Detector:
     def report(self) -> str:
         """Genera reporte de issues"""
         lines = [
-            "# 🔍 Reporte de Issues Detectados",
+            "# [SEARCH] Reporte de Issues Detectados",
             f"**Fecha:** 2026-04-23",
             f"**Archivos escaneados:** {self.stats['files_scanned']}",
             f"**Issues encontrados:** {self.stats['issues_found']}",
             "",
             "## Por Severidad",
-            f"- 🔴 CRITICAL: {self.stats['by_severity']['CRITICAL']}",
-            f"- 🟠 HIGH: {self.stats['by_severity']['HIGH']}",
-            f"- 🟡 MEDIUM: {self.stats['by_severity']['MEDIUM']}",
-            f"- 🟢 LOW: {self.stats['by_severity']['LOW']}",
+            f"- [CRITICAL] CRITICAL: {self.stats['by_severity']['CRITICAL']}",
+            f"- [HIGH] HIGH: {self.stats['by_severity']['HIGH']}",
+            f"- [MEDIUM] MEDIUM: {self.stats['by_severity']['MEDIUM']}",
+            f"- [LOW] LOW: {self.stats['by_severity']['LOW']}",
             "",
             "## Por Categoría",
-            f"- 📁 Structure: {self.stats['by_category']['structure']}",
-            f"- 📝 Docs: {self.stats['by_category']['docs']}",
-            f"- 💻 Code: {self.stats['by_category']['code']}",
-            f"- 📦 Deps: {self.stats['by_category']['deps']}",
+            f"- [DIR] Structure: {self.stats['by_category']['structure']}",
+            f"- [DOCS] Docs: {self.stats['by_category']['docs']}",
+            f"- [CODE] Code: {self.stats['by_category']['code']}",
+            f"- [DEPS] Deps: {self.stats['by_category']['deps']}",
             "",
             "## Issues Detallados",
             ""
@@ -172,7 +172,7 @@ class Detector:
             lines.append(f"### {issue.severity}: {issue.path}")
             lines.append(f"**{issue.category}**: {issue.description}")
             if issue.suggestion:
-                lines.append(f"💡 **Sugerencia:** {issue.suggestion}")
+                lines.append(f"[TIP] **Sugerencia:** {issue.suggestion}")
             lines.append("")
 
         return "\n".join(lines)
@@ -185,7 +185,7 @@ def main():
     detector = Detector(root)
     issues = detector.scan()
 
-    print(f"\n✅ Detección completada: {len(issues)} issues")
+    print(f"\n[OK] Detección completada: {len(issues)} issues")
     print(detector.report())
 
     return 0 if len(issues) == 0 else 1
