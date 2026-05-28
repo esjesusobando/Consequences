@@ -2,7 +2,7 @@
 
 > **Source of Truth:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 > **Actualizado:** 2026-05-28 (v4.8 Consequences)
-> **Total:** 12 áreas, ~100+ skills
+> **Total:** 12 áreas, 97 skills
 
 ---
 

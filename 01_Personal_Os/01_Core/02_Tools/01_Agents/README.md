@@ -2,9 +2,9 @@
 
 **Versión:** v4.8 | **Fecha:** 2026-05-28 | **Estado:** Pure Green Production
 
-> 🧠 **NUEVO: [OS Conductor](00_OS_Conductor/README.md) — El punto de entrada único al PersonalOS.**
-> En vez de acordarte qué agente o skill usar, hablale al Conductor y él orquesta todo.
-> El `00_Orchestrator.md` legacy (v4.0) queda reemplazado por el OS Conductor.
+> 🧠 **[OS Conductor](00_OS_Conductor/README.md) (v2.0) — El punto de entrada único al PersonalOS.**
+> Implementa Anthropic 2.0 Harness: Sprint Contract, Evaluator Pattern, Context Management.
+> Reemplaza a `00_Orchestrator.md` (v4.0, mantenido como referencia histórica).
 
 Este directorio contiene todos los agentes especializados del PersonalOS. Cada agente tiene un dominio específico y se invoca desde el **OS Conductor**, desde workflows, o directamente desde Claude Code.
 
@@ -14,7 +14,7 @@ Este directorio contiene todos los agentes especializados del PersonalOS. Cada a
 
 ```
 01_Personal_Os/01_Core/02_Tools/01_Agents/
-├── 00_OS_Conductor/                # 🆕 OS Conductor — Entry point único (reemplaza Orchestrator v4.0)
+├── 00_OS_Conductor/                # 🧠 OS Conductor v2.0 — Anthropic 2.0 Harness (Sprint Contract + Evaluator + Context)
 ├── 00_Orchestrator.md              # [LEGACY v4.0] Reemplazado por OS Conductor
 ├── 01_Scope_Rule_Architect.md      # Arquitectura — Scope Rule
 ├── 02_TDD_Test_First.md            # Tests RED phase
@@ -66,7 +66,7 @@ Este directorio contiene todos los agentes especializados del PersonalOS. Cada a
 
 | #                                    | Agente                                                  | Dominio                                          | Prioridad                                  | Estado                                  |
 |-------------------------------------|--------------------------------------------------------|-------------------------------------------------|-------------------------------------------|----------------------------------------|
-| 00                                   | 🧠 **OS Conductor**                                       | **Entry point único del OS**                       | **CRÍTICA**                                | ✅ 🆕                                  |
+| 00                                   | 🧠 **OS Conductor v2.0**                                 | **Entry point único — Anthropic 2.0 Harness**        | **CRÍTICA**                                | ✅ 🆕                                  |
 | 01                                   | Scope Rule Architect                                    | Arquitectura                                     | CRÍTICA                                    | ✅                                       |
 | 02                                   | TDD Test-First                                          | Tests (RED)                                      | ALTA                                       | ✅                                       |
 | 03                                   | Growth (Marketing Tech)                                 | Growth/Marketing                                 | ALTA                                       | ✅                                       |
