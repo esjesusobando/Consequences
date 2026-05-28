@@ -3,6 +3,7 @@ name: sdd-verify
 description: >
   Validate that implementation matches specs, design, and tasks.
   Trigger: When the orchestrator launches you to verify a completed (or partially completed) change.
+  Triggers on: verification, validation, testing, quality gate, spec compliance, SDD verify, build check, test execution
 license: MIT
 metadata:
   author: gentleman-programming
@@ -14,6 +15,35 @@ metadata:
 You are a sub-agent responsible for VERIFICATION. You are the quality gate. Your job is to prove — with real execution evidence — that the implementation is complete, correct, and behaviorally compliant with the specs.
 
 Static analysis alone is NOT enough. You must execute the code.
+
+## Esencia Original
+
+### Metaskill
+What specific problem this skill phase solves: Providing an objective, evidence-based quality gate that validates implementation completeness and correctness through both static analysis and real execution, producing a compliance matrix that ties every spec scenario to a passing test.
+
+### Propósito original
+Why this phase exists: To prevent incomplete, incorrect, or untested code from reaching production by enforcing that every spec requirement has behavioral proof (a passing test), not just structural existence in the codebase.
+
+## ⚠️ Gotchas
+
+### Gotcha 1: Relying solely on static analysis without executing tests
+**Por qué**: Static analysis (grep'ing for function names, checking file existence) can miss behavioral gaps. A function might exist but be buggy, or a test might exist but be skipped.
+**Solución**: Always execute the actual test suite (Step 5b) and cross-reference results against spec scenarios. A passing test is the only valid proof of compliance.
+
+### Gotcha 2: Misinterpreting test results as spec coverage
+**Por qué**: Tests might exist and pass but not actually cover the spec's scenarios — they could be testing something else entirely. This creates false confidence.
+**Solución**: Build the Spec Compliance Matrix (Step 6) by explicitly mapping each test to its corresponding spec scenario. If no test maps to a scenario, mark it UNTESTED regardless of overall test pass rate.
+
+### Gotcha 3: Confusing "build passes" with "verification passes"
+**Por qué**: A successful build or type check does NOT mean the implementation is correct. It only means there are no syntax/type errors. The behavioral logic could still be completely wrong.
+**Solución**: Keep the hierarchy clear: build/type-check is a prerequisite (Step 5c), not a substitute for behavioral verification (Step 6). Always run the full pipeline.
+
+## 💾 State Persistence
+
+- **engram**: Saves `verify-report` via `mem_save` with topic_key `sdd/{change-name}/verify-report` and type `architecture`.
+- **openspec**: Writes `openspec/changes/{change-name}/verify-report.md` to the filesystem for audit trail.
+- **hybrid**: Both engram persistence AND filesystem verify-report.md.
+- **none**: Returns the full verification report inline only — no files written.
 
 ## What You Receive
 

@@ -1,11 +1,17 @@
 ---
 name: dumbledor-design
-description: "Design editorial de alto impacto con jerarquía visual de 3 niveles y contraste binario. Aplica principios de tipografía强硬 (Knockout HTF, Mark Pro), paleta Dominante-Acento, y tensión por contraste extremo. Para crear piezas que parecen 'caras y con intención' — diseño funcional, no decorativo."
+description: "Design editorial de alto impacto con jerarquía visual de 3 niveles y contraste binario. Aplica principios de tipografía强硬 (Knockout HTF, Mark Pro), paleta Dominante-Acento, y tensión por contraste extremo. Para crear piezas que parecen 'caras y con intención' — diseño funcional, no decorativo. Triggers on: diseño editorial, alto impacto, contraste binario, tipografía bold, jerarquía visual editorial, paleta dominante-accento, diseño de presentaciones"
 ---
 
 # Dumbledor Design
 
 Diseño editorial de alto impacto basado en la metodología de contraste binario y jerarquía visual de 3 niveles.
+
+## Esencia Original
+
+**Metaskill**: Metodología de diseño editorial de alto impacto basada en contraste binario extremo. No es un theme UI ni un sistema de componentes — es una **filosofía de tensión visual** que rechaza los puntos medios: todo es o muy grueso o muy delgado, o muy vibrante o neutro. Resuelve el problema de cómo hacer que una pieza de diseño se vea "cara y con intención" sin decoración superflua.
+
+**Propósito original**: Crear piezas editoriales que proyectan autoridad, control y disciplina a través de la agresividad visual controlada. Nace de la observación de que el diseño funcional (no decorativo) comunica mejor cuando usa pesos tipográficos extremos y paletas dominante-accento en lugar de múltiples colores compitiendo.
 
 ## Filosofía Central
 
@@ -56,6 +62,34 @@ Diseño editorial de alto impacto basado en la metodología de contraste binario
 - ❌ Meter todos los colores en el mismo plano
 - ❌ Falta de contraste en tipografía
 - ❌ Usar "pesos medios" (Medium, Regular) — estos matan la tensión
+
+---
+
+## ⚠️ Gotchas
+
+### Usar pesos medios en lugar de extremos
+> Elegir `font-weight: 500` o `600` en titulares porque "se ve bien en el editor".
+
+- **Por qué**: Los pesos medios destruyen el contraste binario. El sistema Dumbledor funciona en extremos: Black (900) vs Light (300). Medium no es ni impacto ni refinamiento — es ambigüedad visual.
+- **Solución**: Headlines siempre en 800-900. Body siempre en 300. Si no tienes la fuente exacta, usar los fallbacks (Bebas Neue / Impact para headlines, Helvetica Light para body).
+
+### Rojo y azul con la misma jerarquía
+> Usar rojo para un headline y azul para otro headline, o rojo para un CTA y azul para otro CTA.
+
+- **Por qué**: Dos colores fuertes compitiendo por atención = ruido visual. El ojo no sabe a dónde mirar. El sistema Dumbledor exige **1 dominante + 1 acento**.
+- **Solución**: Elegir: ¿el azul es fondo dominante o el rojo es acento? Nunca los dos al mismo nivel. Si el fondo es azul, el acento es rojo (solo en CTAs, badges, highlights).
+
+### Tracking incorrecto en headlines
+> Dejar `letter-spacing: normal` o usar tracking positivo (expandido).
+
+- **Por qué**: El tracking cerrado (`-0.02em` a `-0.05em`) hace que el headline se lea como una imagen, no como palabras. Es la diferencia entre un título de PowerPoint y un titular de revista Vogue.
+- **Solución**: Aplicar tracking negativo agresivo en headlines. Short headlines (2-5 palabras) con `text-transform: uppercase` y `letter-spacing: -0.03em`.
+
+### Body con line-height insuficiente
+> Usar `line-height: 1.2` en body text porque ahorra espacio.
+
+- **Por qué**: El body en peso Light necesita respirar. `line-height < 1.5` hace que el texto refinado se vea apretado y pierde su elegancia.
+- **Solución**: Mínimo `line-height: 1.5` en body text Light. Idealmente `1.6-1.8` para máxima legibilidad editorial.
 
 ---
 
@@ -175,3 +209,20 @@ Si las fuentes originales no están disponibles:
 - Arquitectura visual de Virgil Abloh
 - Propaganda gráfica soviética (contraste brutal)
 - Tipografía suiza moderna (Bauhaus influence)
+
+---
+
+## 💾 State Persistence
+
+### What to persist between sessions
+
+| Dato | Cómo se persiste | Cuándo restaurar |
+|------|-----------------|-----------------|
+| **Paleta dominante-accento elegida** | Variables CSS o notas de sesión | Al iniciar un nuevo proyecto editorial |
+| **Fallback fonts verificados** | Lista de fuentes disponibles en el sistema/proyecto | Cada sesión — verificar que Knockout/Impact/Bebas están instalados |
+| **Checklist de calidad aprobada** | `mem_save` con el último checklist completado | Si el usuario pide "usar la misma configuración que el proyecto anterior" |
+
+### Reglas de persistencia
+- **NO** persistir diseños completos — el output HTML es el source of truth
+- **SÍ** guardar la configuración de paleta (dominante + acento) para consistencia entre piezas
+- Las fuentes instaladas se verifican al inicio de cada sesión

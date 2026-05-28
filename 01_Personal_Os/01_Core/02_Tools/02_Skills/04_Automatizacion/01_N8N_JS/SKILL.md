@@ -1,11 +1,19 @@
 ---
 name: n8n-code-javascript
-description: Write JavaScript code in n8n Code nodes. Use when writing JavaScript in n8n, using $input/$json/$node syntax, making HTTP requests with $helpers, working with dates using DateTime, troubleshooting Code node errors, or choosing between Code node modes.
+description: Write JavaScript code in n8n Code nodes. Use when writing JavaScript in n8n, using $input/$json/$node syntax, making HTTP requests with $helpers, working with dates using DateTime, troubleshooting Code node errors, or choosing between Code node modes. Triggers on: Code node, JavaScript, $input/$json/$node, $helpers.httpRequest, Code node debugging
 ---
 
 # JavaScript Code Node
 
 Expert guidance for writing JavaScript code in n8n Code nodes.
+
+---
+
+## Esencia Original
+
+**Metaskill**: Solve the problem of writing correct JavaScript in n8n Code nodes — handling the specific n8n API ($input, $json, $node), correct return formats ({json: {...}}), and choosing between "Run Once for All Items" vs "Run Once for Each Item" mode.
+
+**Propósito original**: Provide production-tested JavaScript patterns that prevent the most common and costly n8n mistakes: webhook data nesting confusion, missing return statements, and expression syntax misuse inside Code nodes.
 
 ---
 
@@ -693,6 +701,45 @@ Before deploying Code nodes, verify:
 - Code Node Guide: https://docs.n8n.io/code/code-node/
 - Built-in Methods: https://docs.n8n.io/code-examples/methods-variables-reference/
 - Luxon Documentation: https://moment.github.io/luxon/
+
+---
+
+## ⚠️ Gotchas
+
+### 1. Webhook Data está Bajo `.body`, NO en la Raíz
+
+**Por qué**: El Webhook node n8n envuelve todo el payload entrante bajo la propiedad `body`. Acceder a `$json.name` directamente devuelve `undefined`.
+
+**Solución**: Usa siempre `$json.body.name` o `$input.first().json.body.name` cuando trabajes con datos de Webhook. Para otros nodos (HTTP Request, etc.), los datos sí están en la raíz.
+
+### 2. Modo "Run Once for All Items" vs "Run Once for Each Item"
+
+**Por qué**: En "All Items" mode `$input.all()` devuelve un array de todos los items. En "Each Item" mode `$input.item` devuelve un solo item. Mezclarlos produce resultados incorrectos o crashes silenciosos.
+
+**Solución**: Para 95% de los casos usa "All Items". Si necesitas "Each Item", asegúrate de usar `$input.item` (no `$input.all()`). La regla: si necesitas mirar múltiples items, usa "All Items"; si cada item es completamente independiente, usa "Each Item".
+
+### 3. Missing Return Statement = Falla Silenciosa
+
+**Por qué**: Si el Code node no tiene `return`, n8n no arroja error — simplemente no pasa datos al siguiente nodo, causando bugs difíciles de rastrear.
+
+**Solución**: Siempre verifica que todas las rutas de código tengan un `return` con el formato correcto `[{json: {...}}]`. Usa el checklist pre-deploy del final de esta guía.
+
+### 4. Usar Sintaxis `{{ }}` de Expressiones Dentro del Code Node
+
+**Por qué**: Las expresiones n8n (`{{$json.field}}`) NO funcionan en Code nodes. Code nodes usan JavaScript directo. Las expresiones se evalúan como strings literales.
+
+**Solución**: Usa JavaScript template literals `` `${variable}` `` o acceso directo: `$json.field`. Nunca uses `"={{$json.field}}"` dentro de un Code node.
+
+## 💾 State Persistence
+
+| Qué | Dónde | Notas |
+|-----|-------|-------|
+| Código JS del Code node | Dentro del workflow JSON de n8n (propiedad `parameters.code`) | Persistido al guardar el workflow |
+| Variables de entorno ($env) | Configuración de n8n instance | No accesible desde Code node directamente |
+| Output de ejecución | n8n execution log (en UI o API) | Efímero, se pierde al borrar execution history |
+| Token de autenticación ($credentials) | n8n credential vault | Encriptado, no accesible desde código |
+
+No hay almacenamiento externo de archivos — todo el estado vive dentro del workflow n8n o la instancia. Para persistencia externa, usa HTTP Request node o el built-in `$helpers`.
 
 ---
 

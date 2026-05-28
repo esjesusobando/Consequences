@@ -1,5 +1,6 @@
 ---
 name: content-ideation
+version: 1.0.0
 description: Extrae temas, historias y ángulos de tu marca, los puntos de dolor de tu audiencia y las conversaciones tendencia en tu nicho — y los convierte en una lista de ideas de contenido lista para ejecutar. Usa esta skill cuando el usuario diga cosas como "no sé qué publicar", "dame ideas de contenido", "se me acabaron las ideas", "¿qué debería hacer esta semana?", "plan de contenido", "lluvia de ideas", "¿qué temas debería cubrir?", "necesito un calendario de contenido", "ayúdame a generar ideas", o cuando se sienta bloqueado antes de crear cualquier cosa. También activa cuando el usuario comparte su nicho, audiencia o marca y quiere una dirección estratégica de contenido. Esta es la capa de pensamiento — úsala siempre antes de que se haga cualquier guion, visual o post. Triggers on: "no sé qué publicar", "dame ideas", "se me acabaron las ideas", "plan de contenido", "lluvia de ideas".
 ---
 

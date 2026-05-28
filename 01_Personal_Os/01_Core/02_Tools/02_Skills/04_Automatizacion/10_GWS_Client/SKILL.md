@@ -4,6 +4,7 @@ description: >
   Google Workspace CLI for terminal-based email, calendar, drive, and sheets management.
   Use when: (1) Managing Gmail emails (list, send, mark read/unread, filter by sender/date), (2) Creating/updating Calendar events with Meet links, (3) Uploading files to Google Drive, (4) Reading/writing Google Sheets as CSV, (5) Automating daily summaries, (6) Onboarding employee scripts.
   Triggers: "gmail", "calendar", "drive", "sheets", "google workspace", "automation", "terminal gmail", "email desde terminal", "automatizar google".
+  Triggers on: gws CLI, Gmail power-user, Calendar events with Meet, Drive uploads, Sheets CSV, Google Workspace automation
 license: Apache-2.0
 metadata:
   author: googleworkspace/cli
@@ -14,6 +15,14 @@ metadata:
 
 > "Deja de hacer click. Empieza a escribir."
 > Una CLI oficial para manejar Gmail, Calendar, Drive, Docs y Sheets sin salir de tu shell.
+
+---
+
+## Esencia Original
+
+**Metaskill**: Operate Google Workspace entirely from the terminal — Gmail (list, send, mark, filter), Calendar (create events with Meet links), Drive (upload, list), and Sheets (read/write as CSV) via the official `gws` CLI from googleworkspace/cli.
+
+**Propósito original**: Eliminate browser-dependency for daily Workspace operations. Enable scriptable, versionable, CI/CD-compatible automation of email, calendar, file, and spreadsheet workflows without opening a single browser tab.
 
 ---
 
@@ -288,6 +297,39 @@ gws sheets append --id <ID> --range "Hoja!A:E" --values "val1,val2"  # Agregar f
 gws --help
 gws gmail --help
 ```
+
+---
+
+## ⚠️ Gotchas
+
+### 1. Token OAuth Expira ~60 Minutos — Re-autenticación Requerida
+
+**Por qué**: El token OAuth de `gws auth login` tiene una vida corta (~1 hora). Después de ese tiempo, los comandos fallan con error de autenticación. No hay refresh automático en todos los entornos.
+
+**Solución**: Monitorea con `gws auth status` que muestra el tiempo restante. Para scripting, renueva antes de ejecutar: `gws auth login --account tu@email.com --force` o configura un cron que renueve el token periódicamente. En CI/CD, inyecta el token como secret `GWS_TOKEN_JSON`.
+
+### 2. `--format json` vs `--format table`: Output Distinto para Scripting
+
+**Por qué**: `--format json` produce un array de objetos que puedes pipear a `jq`. `--format table` produce texto formateado para humanos. Usar table output en scripts causa parsing errors.
+
+**Solución**: Siempre usa `--format json` cuando el output vaya a ser procesado por scripts (xargs, jq, awk). Reserva `--format table` solo para inspección manual. Combinación típica: `gws ... --format json | jq -r '.[].id' | xargs ...`.
+
+### 3. Multi-Cuenta: El Token por Defecto NO es el que Esperas
+
+**Por qué**: Si tienes múltiples cuentas autenticadas, `gws` usa la última cuenta que hizo login por defecto, no necesariamente la que quieres usar. Enviar un email desde la cuenta equivocada puede tener consecuencias.
+
+**Solución**: Usa `gws --account email@dominio.com <comando>` para especificar la cuenta explícitamente en cada comando. O configura la cuenta por defecto con `gws config set account email@dominio.com`. Verifica siempre con `gws auth status` antes de operaciones destructivas.
+
+## 💾 State Persistence
+
+| Qué | Dónde | Notas |
+|-----|-------|-------|
+| Token OAuth (~1 hora de vida) | `~/.config/gws/{email}.json` | Archivo JSON con token, refresh token y scopes |
+| Config global | `~/.config/gws/config.json` | Cuenta default, preferencias |
+| Cache de API calls | Efímero (en memoria de proceso) | Sin persistencia entre comandos |
+| Logs de operaciones | n8n execution log o terminal stdout | No hay log persistente por defecto |
+
+No hay base de datos local. Todo el estado persistente son los tokens OAuth. Los datos de Gmail, Calendar, Drive y Sheets viven en los servidores de Google.
 
 ---
 

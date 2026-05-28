@@ -1,11 +1,19 @@
 ---
 name: n8n-validation-expert
-description: Interpret validation errors and guide fixing them. Use when encountering validation errors, validation warnings, false positives, operator structure issues, or need help understanding validation results. Also use when asking about validation profiles, error types, or the validation loop process.
+description: Interpret validation errors and guide fixing them. Use when encountering validation errors, validation warnings, false positives, operator structure issues, or need help understanding validation results. Also use when asking about validation profiles, error types, or the validation loop process. Triggers on: validation errors, validate_node, validate_workflow, auto-sanitization, false positives, operator structure
 ---
 
 # n8n Validation Expert
 
 Expert guide for interpreting and fixing n8n validation errors.
+
+---
+
+## Esencia Original
+
+**Metaskill**: Interpret n8n validation errors across three severity levels (errors, warnings, suggestions) and understand the auto-sanitization system that silently fixes operator structures on every workflow update.
+
+**Propósito original**: Turn validation from a frustrating blocker into a guided fix loop. Covers validation profiles (minimal, runtime, ai-friendly, strict), common error types (missing_required, invalid_value, type_mismatch), and false positive recognition.
 
 ---
 
@@ -682,6 +690,46 @@ For comprehensive error catalogs and false positive examples:
 2. Repeat until valid (usually 2-3 iterations)
 3. Review warnings and decide if acceptable
 4. Deploy with confidence
+
+---
+
+## ⚠️ Gotchas
+
+### 1. Perfil `strict` Genera Demasiados Falsos Positivos en Desarrollo
+
+**Por qué**: `strict` valida todo incluyendo best practices, performance concerns y security issues. En desarrollo, la mayoría de estos son ruido — "Missing error handling", "No retry logic", "Unbounded query" aparecen incluso en workflows simples de prueba.
+
+**Solución**: Usa `profile: "runtime"` para validación pre-deployment — es el balance óptimo entre detección de errores reales y falsos positivos. Reserva `strict` solo para workflows críticos en producción. Usa `ai-friendly` si estás generando configuraciones con IA.
+
+### 2. Auto-Sanitization Modifica la Estructura de Operadores Sin Aviso
+
+**Por qué**: Cada `n8n_update_partial_workflow` ejecuta auto-sanitization en TODOS los nodos. Esto agrega `singleValue: true` en operadores unarios (isEmpty, isNotEmpty) y lo remueve en binarios (equals, contains). Si estabas debuggeando la estructura, los cambios se pierden.
+
+**Solución**: No edites manualmente `singleValue`. Confía en auto-sanitization. Si necesitas verificar la estructura después de un update, valida el workflow completo con `validate_workflow`. Auto-sanitization NO puede arreglar conexiones rotas o branch count mismatches.
+
+### 3. `validate_node` vs `validate_workflow` Validan Cosas Distintas
+
+**Por qué**: `validate_node` solo revisa la configuración de un nodo individual (campos requeridos, tipos, valores). No detecta conexiones rotas, expresiones que referencian nodos inexistentes, o dependencias circulares. Un workflow puede tener todos los nodos válidos pero ser inválido como conjunto.
+
+**Solución**: Siempre corre `validate_workflow` además de `validate_node`. `validate_workflow` revisa: configuraciones de nodos, conexiones, expresiones, y estructura lógica del flujo. Es el paso final antes de activar.
+
+### 4. Leer Errores Incompletos — Cada Error Tiene un `fix` o `suggestion`
+
+**Por qué**: Los errores de validación incluyen un campo `fix` con la solución recomendada. Muchos usuarios leen solo `message` y se quedan sin saber cómo arreglarlo.
+
+**Solución**: Siempre revisa `error.fix` o `warning.suggestion` en el response de validación. El `fix` contiene la acción concreta: "Provide a channel name (lowercase, no spaces, 1-80 characters)". Los errores de tipo `missing_required`, `invalid_value`, `type_mismatch` e `invalid_expression` todos incluyen guías de fix.
+
+## 💾 State Persistence
+
+| Qué | Dónde | Notas |
+|-----|-------|-------|
+| Resultados de validación | Efímeros — solo en memoria | No se persisten entre llamadas |
+| Estado del workflow | Base de datos de la instancia n8n | Persistido vía API |
+| Auto-sanitization | Aplica en cada save/update | No configurable, siempre activo |
+
+La validación es completamente efímera — no hay historial de validaciones. Cada llamada es independiente. El estado mutable es el workflow en la base de datos n8n.
+
+---
 
 **Related Skills**:
 - n8n MCP Tools Expert - Use validation tools correctly

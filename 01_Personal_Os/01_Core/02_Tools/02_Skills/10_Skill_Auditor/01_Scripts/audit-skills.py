@@ -223,6 +223,7 @@ def audit_skill(skill_dir: Path) -> dict:
             r"\*\*ERROR\*\*:",  # **ERROR**:
             r"\*\*\[ERROR\]\*\*:",  # **[ERROR]**:
             r"### ERROR",  # ### ERROR 1: (markdown header)
+            r"### Gotcha",  # ### Gotcha 1: (common alternative format)
             r"^- Don\'t:",  # - Don't:
             r"^- \[ERROR\]:",  # - [ERROR]:
             r"^- \*\*\[ERROR\]\*\*:",  # - **[ERROR]**:

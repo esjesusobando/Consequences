@@ -690,10 +690,40 @@ This skill makes you a **Silicon Valley-grade SEO expert**:
 *Level: TOP TOP — SEO Master*
 
 
+## 💾 State Persistence
+
+> **Qué persists**: Datos de auditorías, reportes, configuraciones de proyectos SEO, cohortes de páginas.
+> **Dónde**: `01_Personal_Os/04_Operations/03_Scripts_Os/` + exports del skill.
+> **Cuándo restore**: Al retomar un proyecto SEO, restaurar la data de Search Console, cohortes, y estado del audit.
+> **Formato**: CSV/JSON con rankings, tráfico, y métricas segmentadas.
+
+### Estado que se preserva entre sesiones:
+1. **Proyecto activo**: Dominio, configuración de audit, métricas baseline.
+2. **Cohortes de páginas**: Segmentaciones por tipo, performance, y tráfico.
+3. **Historial de rankings**: Tracking de posiciones por keyword a lo largo del tiempo.
+4. **Issues pendientes**: Lista priorizada de issues técnicos encontrados.
+5. **Cache de APIs**: Datos de Google Search Console, GA4, y herramientas externas.
+
+---
+
 ## ⚠️ Gotchas (Errores Comunes a Evitar)
 
 > Common mistakes and edge cases to watch for when using this skill.
 
-- **[ERROR]**: Add common error here
-  - **Por qué**: Explanation of why it's an error
-  - **Solución**: How to fix or avoid it
+### Actualizar metadata sin verificar crawl budget
+> Optimizar todas las páginas simultáneamente sin considerar límites de rastreo.
+
+- **Por qué**: Google asigna un crawl budget limitado. Cambiar muchos title/meta tags de golpe puede hacer que el crawler no alcance a indexar los cambios antes de la próxima evaluación.
+- **Solución**: Priorizar las páginas de mayor tráfico primero (Pareto: 20% de páginas = 80% de tráfico) y escalonar los cambios en batches semanales.
+
+### Keywords sin considerar user intent
+> Optimizar para keywords de alto volumen sin verificar si匹配 la intención de búsqueda.
+
+- **Por qué**: Ranking para una keyword informacional con contenido transaccional (o viceversa) genera rebote y baja conversión. Google lo detecta y penaliza.
+- **Solución**: Clasificar cada keyword por intent (informacional, navegacional, transaccional, commercial investigation) antes de crear contenido. Matching de intent = mejor CTR y conversión.
+
+### Dependencia de una sola fuente de datos
+> Tomar decisiones SEO basándose únicamente en Google Search Console o una sola herramienta.
+
+- **Por qué**: Cada herramienta tiene sesgos. Search Console no muestra competidores. Ahrefs/SEMrush tienen datos estimados. Una sola fuente da una visión incompleta.
+- **Solución**: Triangular datos de mínimo 3 fuentes (Search Console + GA4 + herramienta de rankings) antes de hacer una recomendación.

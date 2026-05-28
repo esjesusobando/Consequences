@@ -9,6 +9,12 @@ description: >
 
 # 🦸 MARVEL/AVENGERS — Workflow Team de Agentes
 
+## Esencia Original
+
+**Metaskill**: Framework de orquestación multi-agente inspirado en el equipo de los Vengadores. No es un workflow de codificación ni un skill de diseño — es una **metodología de equipo** que asigna roles de Compound Engineering (Ideate → Plan → Work → Review → Compound) a personajes arquetípicos para hacer el pipeline más memorable y fácil de ejecutar.
+
+**Propósito original**: Hacer accesible el pipeline de Compound Engineering (SDD) a través de una metáfora narrativa. Cada héroe representa una fase del ciclo de desarrollo: Spider-Man (brainstorm divergente), Professor X (plan convergente), Thor (ejecución), Hulk (documentación de conocimiento), Vision (revisión). Resuelve el problema de que los equipos multi-agente tienden a saltarse fases o mezclar roles sin una estructura clara.
+
 ## Concepto
 
 Workflow de equipo multi-agente donde cada "héroe" tiene un rol específico y poderes únicos. Inspirado en los Vengadores de Marvel — el equipo más poderoso no es el que tiene más fuerza, sino el que sabe cuándo actuar juntos y cuándo por separado.
@@ -140,18 +146,56 @@ argument-hint: "[feature idea or problem]"
 | Review   | Vision     |
 | Compound | Hulk       |
 
-## Gotchas
+## ⚠️ Gotchas
 
-- ❌ NO usar pipeline completo para tareas simples → usar héroe individual
-- ❌ Thor NO debe compound → eso es trabajo de Hulk
-- ✅ SIEMPRE pasar output de un héroe al siguiente
-- ✅ VISION debe verificar que Thor siguió el plan
+### Usar el pipeline completo para todo
+> Ejecutar Spider → Professor X → Thor → Hulk → Vision incluso para corregir un typo.
+
+- **Por qué**: El pipeline completo es para features complejas. Para tareas simples (typo, refactor menor, cambio de config) el overhead del pipeline es mayor que el beneficio. Terminas con 5 mensajes de agente para cambiar 1 línea.
+- **Solución**: Tareas simples → usar 1 héroe directamente. Bugs → Thor directo. Typos → Iron Man directo. El pipeline completo solo para features que requieren brainstrom + plan + work.
+
+### Thor haciendo trabajo de Hulk
+> El héroe de ejecución también documenta el conocimiento al final.
+
+- **Por qué**: Cada rol tiene un skill específico. Thor ejecuta, Hulk compound. Si Thor hace ambos, el compounding se vuelve superficial (Thor se enfoca en "cómo" no en "por qué"). Además viola la separación de concerns.
+- **Solución**: Thor pasa su output a Hulk. Hulk es quien decide qué vale la pena documentar y escribe el compound. Si Hulk no está disponible, anotar findings y documentar después.
+
+### No pasar output entre héroes
+> Cada héroe empieza desde cero sin el contexto del anterior.
+
+- **Por qué**: El pipeline es secuencial por diseño. Spider produce ideas divergentes → Professor X necesita esas ideas para converger. Thor necesita el plan de Professor X para ejecutar. Romper la cadena = cada fase reinventa la rueda.
+- **Solución**: Structurar el output de cada héroe como un artefacto markdown que el siguiente héroe lee como input. El plan de Professor X es el contrato que Thor debe cumplir.
+
+### Vision sin plan de referencia
+> Vision revisa sin tener el plan original de Professor X.
+
+- **Por qué**: Vision no puede verificar que el plan se ejecutó correctamente si no sabe cuál era el plan. La revisión se vuelve subjetiva ("esto se ve bien") en lugar de objetiva ("esto cumple el plan").
+- **Solución**: Vision lee el plan de Professor X primero. Checklist de verificación: "¿Se implementaron todos los puntos del plan? ¿Hay desviaciones no documentadas?"
 
 ## Ubicación
 
 ```
 01_Core/00_Workflows_Os/02_Marvel/
 ```
+
+---
+
+## 💾 State Persistence
+
+### What to persist between sessions
+
+| Dato | Cómo se persiste | Cuándo restaurar |
+|------|-----------------|-----------------|
+| **Pipeline stage actual** | Artefacto markdown en el directorio del proyecto | Al retomar un pipeline multi-agente a medio ejecutar |
+| **Output de cada héroe** | Archivos markdown independientes (`spider-output.md`, `professor-plan.md`, etc.) | Como input para el siguiente héroe en el pipeline |
+| **Heroes disponibles y workflow files** | Verificación de archivos existentes en `02_Marvel/` | Al iniciar cualquier llamado a héroe individual |
+| **Integración CE phases** | `mem_save` con el mapping héroe → fase CE | Al configurar un nuevo proyecto para usar el pipeline |
+
+### Reglas de persistencia
+- **NO** guardar el estado de héroes individuales — son invocados bajo demanda
+- **SÍ** persistir los artefactos de output de cada fase para que el siguiente héroe los consuma
+- El pipeline se reinicia por proyecto: nuevo feature → nuevo ciclo de héroes
+- La integración con Compound Engineering se verifica al inicio de cada sesión
 
 ---
 

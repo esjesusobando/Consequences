@@ -4,6 +4,7 @@ description: >
   Google Workspace CLI for terminal-based email, calendar, drive, and sheets management.
   Use when: (1) Managing Gmail emails (list, send, mark read/unread, filter by sender/date), (2) Creating/updating Calendar events with Meet links, (3) Uploading files to Google Drive, (4) Reading/writing Google Sheets as CSV, (5) Automating daily summaries, (6) Onboarding employee scripts.
   Triggers: "gmail", "calendar", "drive", "sheets", "google workspace", "automation", "terminal gmail", "email desde terminal", "automatizar google".
+  Triggers on: gws CLI, Gmail power-user, Calendar events with Meet, Drive uploads, Sheets CSV, Google Workspace automation
 license: Apache-2.0
 metadata:
   author: googleworkspace/cli
@@ -14,6 +15,14 @@ metadata:
 
 > "Deja de hacer click. Empieza a escribir."
 > Una CLI oficial para manejar Gmail, Calendar, Drive, Docs y Sheets sin salir de tu shell.
+
+---
+
+## Esencia Original
+
+**Metaskill**: Operate Google Workspace entirely from the terminal — Gmail (list, send, mark, filter), Calendar (create events with Meet links), Drive (upload, list), and Sheets (read/write as CSV) via the official `gws` CLI from googleworkspace/cli.
+
+**Propósito original**: Eliminar la dependencia del navegador para operaciones diarias de Workspace. Scripteable, versionable, automatizable en CI/CD — un solo binario reemplaza horas de clicks en Gmail, Calendar, Drive y Sheets.
 
 ---
 
@@ -288,6 +297,38 @@ gws sheets append --id <ID> --range "Hoja!A:E" --values "val1,val2"  # Agregar f
 gws --help
 gws gmail --help
 ```
+
+---
+
+## ⚠️ Gotchas
+
+### 1. Scopes de OAuth se Definen en el Primer Login — No se Amplían sin Re-login
+
+**Por qué**: Cuando haces `gws auth login`, los scopes (gmail.modify, calendar, drive, spreadsheets, docs) se negocian en ese momento. Si después necesitas un scope adicional (ej. gmail.labels), el token existente no lo incluye y el comando falla.
+
+**Solución**: Planea todos los scopes que necesitas antes del primer login. Si necesitas agregar scopes, corre `gws auth login --account tu@email.com --force` que re-negocia todos los scopes. El flag `--force` es necesario para refrescar.
+
+### 2. Formato de Fechas en Calendar: ISO 8601 con Timezone es Obligatorio
+
+**Por qué**: `gws calendar events create` requiere fechas en formato ISO 8601 con timezone explícito (`2026-04-21T10:00:00-03:00`). Fechas sin timezone o en formato local producen errores de parseo o eventos en el momento equivocado.
+
+**Solución**: Siempre usa `date +%Y-%m-%dT%H:%M:%S%z` en scripts o construye el string manualmente con el offset correcto. Para Argentina (UTC-3), usa `-03:00`. Verifica con `gws calendar events list --time-min ...` antes de crear.
+
+### 3. Drive: Nombres de Carpeta con Espacios y Caracteres Especiales
+
+**Por qué**: `--parent "Marketing/Campañas 2026"` funciona porque gws usa la ruta de Drive, pero si la carpeta tiene caracteres especiales (ñ, acentos, emojis), puede no encontrarla o crear una duplicada.
+
+**Solución**: Usa el ID de la carpeta de Drive en lugar del nombre cuando sea posible: `--parent "1abc123..."`. Para obtener el ID: `gws drive list --folder "Nombre" --format json | jq -r '.[0].id'`. Los IDs son estables y no tienen problemas de encoding.
+
+## 💾 State Persistence
+
+| Qué | Dónde | Notas |
+|-----|-------|-------|
+| Tokens OAuth (~1 hora de vida) | `~/.config/gws/{email}.json` | JSON con token, refresh token y scopes |
+| Config global de CLI | `~/.config/gws/config.json` | Cuenta default, preferencias de formato |
+| Estado remoto | Servidores de Google (Gmail, Calendar, Drive, Sheets) | La CLI es solo un cliente |
+
+No hay base de datos local. La CLI es completamente stateless — todo el estado vive en los servidores de Google Workspace. Los tokens son el único artefacto persistente local.
 
 ---
 

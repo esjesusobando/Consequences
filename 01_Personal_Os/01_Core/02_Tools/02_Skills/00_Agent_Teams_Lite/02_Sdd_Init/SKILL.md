@@ -3,11 +3,17 @@ name: sdd-init
 description: >
   Initialize Spec-Driven Development context in any project. Detects stack, conventions, and bootstraps the active persistence backend.
   Trigger: When user wants to initialize SDD in a project, or says "sdd init", "iniciar sdd", "openspec init".
+  Triggers on: "initialize sdd", "set up sdd", "bootstrap sdd", "setup project for specs".
 license: MIT
 metadata:
   author: gentleman-programming
   version: "2.0"
 ---
+
+## Esencia Original
+
+- **Metaskill**: Elimina el problema de "cold start" — nuevos proyectos o sesiones comienzan sin convenciones, persistencia ni contexto. Esta fase bootstrapea todo eso.
+- **Propósito original**: Asegurar que cada sesión SDD comience con una línea base conocida: stack detectado, backend de persistencia activo y skills indexadas. Sin esta fase, todas las fases subsiguientes operan a ciegas.
 
 ## Purpose
 
@@ -187,6 +193,27 @@ Enable `engram` or `openspec` for artifact persistence across sessions. Without 
 ### Next Steps
 Ready for /sdd-explore <topic> or /sdd-new <change-name>.
 ```
+
+## ⚠️ Gotchas
+
+### Gotcha 1: Skills directory scanning omite instalaciones no estándar
+- **Por qué**: La detección de skills se basa en directorios conocidos (`~/.claude/skills/`, `~/.config/opencode/skills/`, etc.). El usuario puede tener skills en ubicaciones personalizadas.
+- **Solución**: Escanear también `~/.local/share/`, `~/.config/`, y permitir que el usuario especifique directorios adicionales via `config.yaml`.
+
+### Gotcha 2: Stack detection puede fallar si faltan archivos de manifiesto
+- **Por qué**: Si `package.json`, `go.mod` o `pyproject.toml` no existen o están corruptos, la detección devuelve vacío.
+- **Solución**: Como fallback, inspeccionar archivos fuente (`.ts`, `.go`, `.py`) para inferir el stack por extensión mayoritaria.
+
+### Gotcha 3: Proyecto ya tiene directorio `openspec/`
+- **Por qué**: Re-inicializar sobre un proyecto ya configurado puede sobrescribir la configuración existente.
+- **Solución**: Reportar el estado actual y preguntar al orquestador si debe actualizar `config.yaml` o dejarlo intacto.
+
+## 💾 State Persistence
+
+El estado de esta fase se persiste en:
+- **SDD Registry**: `.atl/skill-registry.md` en la raíz del proyecto (infraestructura, no artefacto SDD).
+- **Engram observations**: Via `mem_save` con `topic_key: sdd-init/{project-name}`, `type: architecture`.
+- **openspec directory**: `openspec/config.yaml` con la configuración del proyecto (solo en modo `openspec` o `hybrid`).
 
 ## Rules
 

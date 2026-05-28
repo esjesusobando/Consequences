@@ -9,6 +9,12 @@ Detect opportunities to improve the OS based on new learnings. Compares existing
 
 ---
 
+## Esencia Original
+
+Detects OS improvement opportunities by comparing newly acquired knowledge (from learning-url-to-knowledge) against existing skills, workflows, tools, and patterns. Generates prioritized recommendations for skill updates, new skills, workflow optimizations, tool integrations, and cross-discipline pattern adoption.
+
+---
+
 ## Quick Start
 
 ```
@@ -178,6 +184,38 @@ mem_save({
   }
 });
 ```
+
+---
+
+## ⚠️ Gotchas
+
+### Gotcha 1: Oversized recommendation lists create noise
+- **Por qué**: Every new learning can generate 5-10 recommendations. After processing 20 articles, the recommendation backlog becomes overwhelming and nothing gets implemented.
+- **Solución**: Hard-cap at 3 recommendations per run. Use the priority system aggressively: only ALTA and MEDIA items make it to the output. BAJA items are logged to Engram for batch review. Implement a weekly consolidation pass.
+
+### Gotcha 2: Skill update recommendations conflict with existing skill structure
+- **Por qué**: The skill suggests updating a skill, but the proposed change may conflict with the skill's existing architecture, triggers, or contracts. Blindly updating can break the skill's contract with other OS components.
+- **Solución**: Before recommending a skill update, analyze the existing skill's contract (triggers, prerequisites, output structure). If the change would break the contract, recommend a new skill or extension instead of an update.
+
+### Gotcha 3: Immediacy bias inflates priority
+- **Por qué**: A newly learned technique feels urgent and important (recency effect), but may not actually provide long-term value. The skill tends to rate new discoveries as ALTA priority by default.
+- **Solución**: Apply a "wait one day" rule: save the recommendation and let it sit for 24 hours before assigning final priority. Use the Impact/Effort matrix: ALTA = high impact AND low effort. If effort is high, downgrade to MEDIA.
+
+### Gotcha 4: Cross-discipline pattern recommendations lack implementation details
+- **Por qué**: The skill identifies that a PM pattern applies to Engineering, but doesn't provide concrete implementation steps. The recommendation stays at the abstract level and never gets actioned.
+- **Solución**: Every recommendation must include at least one concrete implementation step. For cross-discipline patterns, include a "How to Apply" section with specific files to modify, workflows to update, or skills to create.
+
+---
+
+## 💾 State Persistence
+
+State is managed through Engram observations and the recommendation output. The skill:
+- **Saves recommendations** to Engram with `topic_key: os-improvement/{area}`
+- **Generates output files** in the `03_Resultado/` structure (if triggered via /os-self-improvement)
+- **No persistent local state** between runs — each execution is stateless
+- **Relies on the current OS snapshot** (skills, workflows, tools as they exist at execution time)
+
+For historical review, search `mem_search({query: "OS Improvement", project: "Think_Different"})`.
 
 ---
 

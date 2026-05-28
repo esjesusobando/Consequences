@@ -3,11 +3,20 @@ name: go-testing
 description: >
   Go testing patterns for Gentleman.Dots, including Bubbletea TUI testing.
   Trigger: When writing Go tests, using teatest, or adding test coverage.
+  Triggers on: Go tests, unit tests, TUI testing, table-driven tests, golden files, teatest, test coverage, Bubbletea testing
 license: Apache-2.0
 metadata:
   author: gentleman-programming
   version: "1.0"
 ---
+
+## Esencia Original
+
+### Metaskill
+What specific problem this skill phase solves: Providing battle-tested, project-specific Go testing patterns for Bubbletea TUI applications — covering unit tests, integration tests with teatest, golden file snapshots, and mocked system dependencies — so test code is consistent and reliable.
+
+### Propósito original
+Why this phase exists: To establish a shared testing vocabulary and set of patterns that every contributor follows, eliminating the "how do I test this?" question for the most common TUI testing scenarios and ensuring test quality is consistent across the codebase.
 
 ## When to Use
 
@@ -17,6 +26,28 @@ Use this skill when:
 - Creating table-driven tests
 - Adding integration tests
 - Using golden file testing
+
+## ⚠️ Gotchas
+
+### Gotcha 1: Golden files become stale when models change
+**Por qué**: Golden file tests compare View() output against saved snapshots. When model structs gain or lose fields, or the rendering changes, the golden files silently become out of date and tests fail.
+**Solución**: Run `go test -update ./...` to regenerate golden files after intentional rendering changes. Always verify the diff before committing the updated golden file to ensure the change was expected.
+
+### Gotcha 2: Teatest integration tests hang in CI without proper timeouts
+**Por qué**: `teatest.NewTestModel` creates a real Bubbletea program. Without a `WithDuration` timeout, tests can hang indefinitely if the model never reaches a terminal state.
+**Solución**: Always use `teatest.WithDuration(timeout)` in integration tests. Set a reasonable timeout (e.g., 1-2 seconds) that accounts for the slowest expected interaction, not the default.
+
+### Gotcha 3: Mocking system info with t.TempDir() creates broken paths on Windows
+**Por qué**: On Windows, `t.TempDir()` returns paths with backslashes, but Go path handling and golden files often expect forward slashes. This causes false failures on Windows CI runners.
+**Solución**: Always normalize paths with `filepath.ToSlash()` when comparing against expected values. Use `filepath.Join()` for constructing paths instead of string concatenation.
+
+## 💾 State Persistence
+
+This skill does NOT manage SDD artifact state. It provides test code patterns only. However:
+
+- **Golden files**: Stored alongside tests in `testdata/` directories. Must be committed to version control. Regenerate with `go test -update`.
+- **Test coverage**: Run with `go test -cover ./...` — output is ephemeral unless piped to a coverage file (e.g., `-coverprofile=coverage.out`).
+- **No engram/openspec integration**: This skill is purely about writing Go test code. State management follows the project's existing conventions.
 
 ---
 

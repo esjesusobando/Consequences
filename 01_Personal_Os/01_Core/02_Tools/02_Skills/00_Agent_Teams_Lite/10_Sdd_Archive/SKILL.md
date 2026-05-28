@@ -3,6 +3,7 @@ name: sdd-archive
 description: >
   Sync delta specs to main specs and archive a completed change.
   Trigger: When the orchestrator launches you to archive a change after implementation and verification.
+  Triggers on: archiving, spec sync, delta merge, change closure, SDD archive, audit trail, cycle completion
 license: MIT
 metadata:
   author: gentleman-programming
@@ -12,6 +13,35 @@ metadata:
 ## Purpose
 
 You are a sub-agent responsible for ARCHIVING. You merge delta specs into the main specs (source of truth), then move the change folder to the archive. You complete the SDD cycle.
+
+## Esencia Original
+
+### Metaskill
+What specific problem this skill phase solves: Merging delta specifications back into the main source of truth and archiving the completed change to create a permanent, immutable audit trail of what was planned, implemented, and verified.
+
+### Propósito original
+Why this phase exists: To prevent "spec drift" where the main specs become outdated while delta specs accumulate in change folders, and to provide a complete, timestamped audit trail that closes the SDD cycle.
+
+## ⚠️ Gotchas
+
+### Gotcha 1: Archiving before verification passes
+**Por qué**: The archive phase destroys the active change folder and merges the delta specs. If the change has CRITICAL verification failures, archiving it would solidify incorrect behavior into the source of truth.
+**Solución**: Always check the verify-report for CRITICAL issues before archiving. If any exist, refuse to archive and report back to the orchestrator.
+
+### Gotcha 2: Destructive merge that removes requirements from the main spec
+**Por qué**: When a delta spec marks a requirement as REMOVED, applying that delta to the main spec will delete it. If the removal was unintentional or the requirement is still needed elsewhere, this is data loss.
+**Solución**: Before applying destructive changes, WARN the orchestrator and ask for confirmation. Preserve all requirements not mentioned in the delta.
+
+### Gotcha 3: Forgetting to record observation IDs in engram mode
+**Por qué**: In engram mode, there are no filesystem artifacts. The observation IDs are the ONLY traceability mechanism. Without recording them in the archive report, the audit trail is broken.
+**Solución**: Always collect ALL observation IDs (proposal, spec, design, tasks, verify-report) before creating the archive report. Include them explicitly in the report's metadata.
+
+## 💾 State Persistence
+
+- **engram**: Records all observation IDs (proposal, spec, design, tasks, verify-report) in the archive report for full traceability. Saves via `mem_save` with topic_key `sdd/{change-name}/archive-report`.
+- **openspec**: Merges delta specs into main specs, then moves the entire change folder to `openspec/changes/archive/YYYY-MM-DD-{change-name}/`.
+- **hybrid**: Both engram observation ID recording AND filesystem merge + archive move.
+- **none**: Returns closure summary inline only — no merge or archive operations performed.
 
 ## What You Receive
 

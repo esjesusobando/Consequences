@@ -1,10 +1,18 @@
 ---
 name: ui-ux-pro-max
-description: UI/UX design intelligence with searchable database
+description: "UI/UX design intelligence with searchable database. Triggers on: UI design, UX design, design system, color palette, typography, design search, UI recommendations, design workflow"
 ---
 # ui-ux-pro-max
 
 Comprehensive design guide for web and mobile applications. Contains 67 styles, 96 color palettes, 57 font pairings, 99 UX guidelines, and 25 chart types across 13 technology stacks. Searchable database with priority-based recommendations.
+
+## Esencia Original
+
+**Metaskill**: Base de datos de inteligencia de diseño consultable vía CLI. No es una skill generativa de UI — es un motor de búsqueda y recomendación que prioriza diseño basado en razonamiento contextual (industria, stack, keywords). Resuelve el problema de "no sé qué estilo/color/tipografía usar para este producto".
+
+**Propósito original**: Proveer un sistema de recomendación de diseño completo y consultable que cubra estilos, paletas, tipografías, patrones UX y tipos de gráfico, todo desde una sola interfaz de búsqueda. Elimina la parálisis de decisión que ocurre al comenzar un nuevo proyecto de diseño sin referencias claras.
+
+---
 
 ## Prerequisites
 
@@ -216,6 +224,34 @@ python3 01_Personal_Os/01_Core/02_Tools/02_Skills/02_Diseno_Ui_Ux/09_Ui_Ux_Pro_M
 
 ---
 
+## ⚠️ Gotchas
+
+### Confiar en un solo dominio de búsqueda
+> Buscar solo `style` y perderse las reglas UX o los anti-patrones del stack.
+
+- **Por qué**: El diseño system completo requiere 5 dominios (product, style, color, landing, typography) + stack + UX. Saltarse uno produce recomendaciones incompletas.
+- **Solución**: Siempre empezar con `--design-system` que ejecuta los 5 dominios en paralelo. Luego complementar con `--domain ux` y `--stack <tecnología>`.
+
+### Olvidar persistir el design system
+> Generar un design system perfecto pero no guardarlo con `--persist`.
+
+- **Por qué**: Sin persistencia, cada sesión empieza desde cero. No hay MASTER.md ni jerarquía page-specific.
+- **Solución**: Usar `--persist -p "Project Name"` siempre. Para proyectos multi-página, agregar `--page "page-name"` para overrides específicos.
+
+### No especificar el stack
+> Usar el default `html-tailwind` cuando el proyecto es React o Next.js.
+
+- **Por qué**: Las reglas de performance, estado y patrones cambian radicalmente entre stacks. `html-tailwind` no cubre Server Components, Suspense, o hydration.
+- **Solución**: Siempre preguntar el stack primero. Si el usuario no sabe, Next.js es el default más seguro para apps modernas.
+
+### Ignorar la pre-delivery checklist
+> Entregar código sin verificar contraste, modo oscuro, o cursor-pointer.
+
+- **Por qué**: La diferencia entre diseño "profesional" y "amateur" está en los detalles: contraste 4.5:1, hover states, transiciones suaves, focus visible.
+- **Solución**: Correr la checklist completa antes de entregar. Son 5 minutos que ahorran 3 rondas de feedback.
+
+---
+
 ## Common Rules for Professional UI
 
 These are frequently overlooked issues that make UI look unprofessional:
@@ -290,3 +326,21 @@ Before delivering UI code, verify these items:
 - [ ] Form inputs have labels
 - [ ] Color is not the only indicator
 - [ ] `prefers-reduced-motion` respected
+
+---
+
+## 💾 State Persistence
+
+### What to persist between sessions
+
+| Dato | Cómo se persiste | Cuándo restaurar |
+|------|-----------------|-----------------|
+| **Design system generado** | `--persist` crea `design-system/MASTER.md` + `design-system/pages/*.md` | Al retomar un proyecto |
+| **Último stack usado** | Variable de entorno o config local | Si el usuario no especifica stack |
+| **Preferencias de formato** (ASCII vs Markdown) | Preferencia de sesión vía `-f` flag | Cada nueva búsqueda |
+| **Proyectos activos** | Sistema de archivos en `design-system/` | Al listar proyectos con `--list-projects` |
+
+### Reglas de persistencia
+- **NO** guardar resultados de búsqueda individuales — son transitorios
+- **SÍ** persistir design systems completos con `--persist`
+- La estructura MASTER.md + pages/ permite herencia jerárquica sin duplicación

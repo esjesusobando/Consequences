@@ -62,3 +62,36 @@ Read individual rule files for detailed explanations and code examples:
 - [rules/videos.md](rules/videos.md) - Embedding videos in Remotion - trimming, volume, speed, looping, pitch
 - [rules/parameters.md](rules/parameters.md) - Make a video parametrizable by adding a Zod schema
 - [rules/maps.md](rules/maps.md) - Add a map using Mapbox and animate it
+
+## ⚠️ Gotchas
+
+### Composición sin definir duración máxima
+> Crear composiciones sin límite de duración o con duraciones extremadamente largas.
+
+- **Por qué**: Remotion must pre-render every frame. Una composición de 10 minutos a 30fps son 18,000 frames. Si no está optimizada con `useVideoConfig()` y `<Sequence>`, el render puede tardar horas o quedarse sin memoria.
+- **Solución**: Siempre definir duraciones realistas. Usar `<Sequence>` con `durationInFrames` para segmentos. Para contenido largo, dividir en múltiples composiciones y unir con FFmpeg post-render.
+
+### Assets sin importar correctamente (rutas absolutas)
+> Usar rutas relativas del sistema de archivos en vez de importaciones de módulo para assets.
+
+- **Por qué**: Remotion usa Webpack. Las imágenes/videos importados con `import` o `require()` son procesados por el bundler. Usar rutas de archivo directas (`/Users/.../image.png`) falla en render de server-side o producción porque la ruta no existe en el entorno de render.
+- **Solución**: Siempre importar assets como módulos: `import myImage from './assets/my-image.png'` y usar `<Img src={myImage} />`.
+
+### No usar `useCurrentFrame()` para animaciones dependientes del tiempo
+> Usar estado de React (`useState`, `useEffect`) en vez de `useCurrentFrame()` para animaciones.
+
+- **Por qué**: Remotion es declarativo — cada frame es una función del tiempo. `useState` rompe el modelo declarativo y causa renders inconsistentes entre frames. `useEffect` no se ejecuta en el server-side render de Remotion.
+- **Solución**: Toda animación debe basarse en `useCurrentFrame()`, `useVideoConfig()`, e interpolaciones con `interpolate()` o `spring()`. El estado de React solo para props que no cambian por frame.
+
+## 💾 State Persistence
+
+> **Qué persists**: Configuración de proyecto Remotion, composiciones, assets, parámetros de render.
+> **Dónde**: Archivos del proyecto Remotion (`src/`, `public/`, `remotion.config.ts`).
+> **Cuándo restore**: Al retomar un proyecto de video, restaurar la estructura de composiciones y assets referenciados.
+> **Formato**: Código fuente React/TypeScript + archivos multimedia en `public/`.
+
+### Estado que se preserva entre sesiones:
+1. **Proyecto activo**: Ruta del proyecto, composiciones definidas, estructura de carpetas.
+2. **Assets referenciados**: Lista de imágenes, videos, audios y fuentes usados.
+3. **Configuración de render**: Resolución, FPS, codec, calidad y duración.
+4. **Parámetros de composición**: Zod schemas, default props, metadata dinámica.

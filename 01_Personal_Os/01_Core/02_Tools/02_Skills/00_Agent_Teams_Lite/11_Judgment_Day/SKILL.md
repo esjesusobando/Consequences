@@ -6,11 +6,20 @@ description: >
   and re-judges until both pass or escalates after 2 iterations.
   Trigger: When user says "judgment day", "judgment-day", "review adversarial", "dual review",
   "doble review", "juzgar", "que lo juzguen".
+  Triggers on: judgment day, dual review, adversarial review, juzgar, code review, blind review, parallel review
 license: Apache-2.0
 metadata:
   author: gentleman-programming
   version: "1.0"
 ---
+
+## Esencia Original
+
+### Metaskill
+What specific problem this skill phase solves: Eliminating single-reviewer blind spots through parallel independent adversarial review — two reviewers who don't know about each other finding different issues, with a coordinator synthesizing results and applying fixes iteratively.
+
+### Propósito original
+Why this phase exists: To catch bugs, edge cases, and architectural issues that a single reviewer (or a single AI pass) would miss, by creating adversarial pressure through independent parallel judges who must converge before the target is approved.
 
 ## When to Use
 
@@ -19,6 +28,29 @@ metadata:
 - When high-confidence review of code, features, or architecture is needed
 - When a single reviewer might miss edge cases or have blind spots
 - When the cost of a production bug is higher than the cost of two review rounds
+
+## ⚠️ Gotchas
+
+### Gotcha 1: The orchestrator accidentally reviewing code instead of delegating
+**Por qué**: It's tempting for the orchestrator to glance at the code and add its own findings to the verdict. This pollutes the blind review protocol — the orchestrator's findings weren't produced by the adversarial process.
+**Solución**: The orchestrator NEVER reviews code. Its only job is coordination: launch judges, read results, synthesize. If the orchestrator sees an obvious issue, it should note it separately and ask the Fix Agent to address it, not inject it into the verdict table.
+
+### Gotcha 2: Judges leaking information between rounds or cross-contaminating
+**Por qué**: If delegates share context (e.g., via the same file reads, or the orchestrator hints at what the other judge found), the independence of the review is compromised.
+**Solución**: Each judge delegation must be fully independent — identical target description, identical criteria, no references to the other judge. Use fresh delegates for each round.
+
+### Gotcha 3: Infinite fix loops due to diminishing returns
+**Por qué**: After 2 fix iterations, remaining issues are often subjective style preferences or architectural tradeoffs that can't be "fixed" in a binary way. Chasing these creates diminishing returns.
+**Solución**: Hard limit of 2 iterations. After that, escalate with full history. Not every disagreement needs resolution — some are valid design tensions that need human judgment.
+
+## 💾 State Persistence
+
+Judgment Day is a pure orchestration protocol — it does NOT persist artifacts to engram or openspec by default. However:
+
+- **Round results**: Each verdict and fix summary is returned inline to the user/orchestrator.
+- **Escalation reports**: Full history of all rounds, findings, and fixes is included in the escalation output.
+- **Integration with SDD**: When used as part of an SDD cycle, the final verdict (APPROVED or ESCALATED) should be recorded by the orchestrator as part of the verify-report or an observation in engram.
+- **No automatic persistence**: The protocol intentionally avoids writing intermediate state, since the orchestrator's session context serves as the working audit trail.
 
 ## Critical Patterns
 

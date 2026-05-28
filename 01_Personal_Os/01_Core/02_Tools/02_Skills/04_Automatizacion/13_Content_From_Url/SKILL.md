@@ -1,11 +1,19 @@
 ---
 name: content-from-url
-description: Extract clean content from any URL for use in the OS. Simpler than learning-url-to-knowledge - just fetches and cleans content without generating all 8 deliverables. Use when you need quick content extraction. Trigger: /content-from-url [URL]
+description: Extract clean content from any URL for use in the OS. Simpler than learning-url-to-knowledge - just fetches and cleans content without generating all 8 deliverables. Use when you need quick content extraction. Trigger: /content-from-url [URL]. Triggers on: /content-from-url, extract content, URL scraper, webpage cleaner, quick research, Firecrawl
 ---
 
 # Content from URL
 
 Extract clean, usable content from any URL. Simplified extraction without the full Learning Always pipeline.
+
+---
+
+## Esencia Original
+
+**Metaskill**: Extract clean content from URLs quickly — Firecrawl, WebFetch, WebSearch, or YouTube transcript — without generating the 8 deliverables of the full learning-url-to-knowledge pipeline.
+
+**Propósito original**: Provide a fast, single-step content extraction command (/content-from-url [URL]) for quick research, tool evaluation, content backup, and reference retrieval when you don't need deep analysis or knowledge compounding.
 
 ---
 
@@ -112,6 +120,44 @@ Works with:
 | Version  | Date      | Changes      |
 |---------|----------|-------------|
 | v1.0     | 2026-05-22| Initial skill|
+
+---
+
+## ⚠️ Gotchas
+
+### 1. Firecrawl Falla en SPAs con JavaScript Pesado
+
+**Por qué**: Firecrawl extrae contenido del HTML estático de la página. Si el contenido se renderiza dinámicamente con JavaScript (React, Vue, Angular SPAs), Firecrawl puede devolver HTML vacío o incompleto.
+
+**Solución**: Si Firecrawl devuelve poco contenido, prueba con WebFetch como alternativa. Para SPAs críticas, considera herramientas headless browser-based. Si el contenido es de documentación técnica, la mayoría de los sites estáticos (docs, blogs, MDN-style) se extraen bien.
+
+### 2. WebFetch Tiene Rate Limiting por Dominio
+
+**Por qué**: WebFetch (Exa) puede tener rate limits por dominio. Si haces múltiples fetch al mismo sitio en corto tiempo, puedes recibir respuestas 429 o vacías.
+
+**Solución**: Espacia las requests al mismo dominio. Si necesitas extraer múltiples páginas del mismo sitio, considera Firecrawl que maneja mejor la rate limiting. Para extracciones masivas, usa los métodos paginados si están disponibles.
+
+### 3. YouTube Transcript Requiere Servicio Especializado
+
+**Por qué**: Ni Firecrawl ni WebFetch pueden extraer transcripciones de YouTube. El contenido del video no está en el HTML de la página — está en la API de YouTube o requiere Whisper/STT.
+
+**Solución**: Para videos de YouTube, usa transcript service dedicado (YouTube Transcript API, Whisper, o herramientas de subtítulos). `content-from-url` para YouTube se limita a la metadata del video (título, descripción). Para análisis completo del contenido hablado, usa el pipeline `learning-url-to-knowledge` con soporte de transcript.
+
+### 4. El Output es Efímero — No Hay Persistencia Automática
+
+**Por qué**: `content-from-url` devuelve el contenido extraído en la conversación, pero no lo guarda automáticamente a disco ni a la base de conocimiento del OS.
+
+**Solución**: Si el contenido es valioso, guárdalo manualmente o pásalo a `compound-knowledge` o `learning-url-to-knowledge` para persistencia. El comando es intencionalmente simple — la persistencia es tu responsabilidad.
+
+## 💾 State Persistence
+
+| Qué | Dónde | Notas |
+|-----|-------|-------|
+| Contenido extraído | Efímero — solo en la conversación actual | No persiste entre sesiones |
+| Cache de Firecrawl/WebFetch | Del lado del proveedor (no controlado) | Sin acceso local al cache |
+| URL de origen | En la metadata del output | Referencia, no contenido |
+
+Este skill es intencionalmente **stateless** — no guarda nada. Es un pipeline de extracción puro: URL → contenido limpio → output en chat. Para persistencia, usa los skills de integración (compound-knowledge, learning-url-to-knowledge).
 
 ---
 

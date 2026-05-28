@@ -9,6 +9,12 @@ Connect newly generated knowledge to existing knowledge in the OS. Builds a comp
 
 ---
 
+## Esencia Original
+
+Takes newly generated knowledge (from learning-url-to-knowledge or manual input) and connects it to existing knowledge in the OS using Engram. Builds a compounding network where each new piece reinforces and connects to previous learnings across disciplines defined in `06_Unicorn/`.
+
+---
+
 ## Quick Start
 
 ```
@@ -148,6 +154,37 @@ URL_3 → K3 + Connection to K1-2 + Connection to existing
 ...
 URL_N → Knowledge Network with N×N connections
 ```
+
+---
+
+## ⚠️ Gotchas
+
+### Gotcha 1: Topic key collisions overwrite existing knowledge
+- **Por qué**: Using the same `topic_key` for different pieces of knowledge can silently overwrite previous observations in Engram. This destroys the compounding effect because older connections are lost.
+- **Solución**: Always suffix topic keys with a unique discriminator (e.g., `learning/claude/v2`, `learning/claude/computer-use`). Use `mem_suggest_topic_key` before saving if unsure. Review existing topic keys periodically to avoid collisions.
+
+### Gotcha 2: Cross-discipline connections require discipline-specific context
+- **Por qué**: A pattern from Engineering (e.g., event sourcing) might apply to Product Management (e.g., event-driven roadmaps), but without translating the concept into each discipline's vocabulary, the connection is unusable.
+- **Solución**: When creating cross-discipline links, include a brief "translation" section explaining how the concept applies to the target discipline. Don't just link — explain the mapping.
+
+### Gotcha 3: Knowledge graph becomes noisy without pruning
+- **Por qué**: Over time, connections accumulate. Old connections to outdated knowledge create noise, making it hard to find the most relevant current information.
+- **Solución**: Periodically (monthly) review existing topic keys and archive connections older than 6 months. Use `mem_update` to mark outdated observations with a flag. Prioritize quality over quantity in connections.
+
+### Gotcha 4: Enabling relationships are directional but the OS treats connections as bidirectional
+- **Por qué**: "Basic → Advanced" is a directional relationship (Advanced builds on Basic), but Engram connections are inherently bidirectional. This can cause confusion when navigating the knowledge graph.
+- **Solución**: Explicitly document direction in the connection content (e.g., "This enables: [X]" and "Requires: [Y]"). Use clear naming conventions like `builds_on` vs `enables` to preserve direction semantics.
+
+---
+
+## 💾 State Persistence
+
+State is managed exclusively through Engram observations. The skill creates and updates:
+- **Topic observations**: Each knowledge topic gets an Engram observation with `topic_key: learning/{topic}`
+- **Connection maps**: Cross-links are implicit in the graph structure — connections exist as relationships between observations
+- **No local files**: All state lives in Engram's persistent store
+
+For recovery, use `mem_search({query: "[topic]", project: "Think_Different"})` to find all connected knowledge.
 
 ---
 

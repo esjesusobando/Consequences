@@ -1,11 +1,21 @@
 ---
 name: ads
-description: "Multi-platform paid advertising audit and optimization skill. Analyzes Google, Meta, YouTube, LinkedIn, TikTok, Microsoft, and Apple Ads. 250+ checks with scoring, parallel agents, industry templates, and AI creative generation."
+description: "Multi-platform paid advertising audit and optimization skill. Analyzes Google, Meta, YouTube, LinkedIn, TikTok, Microsoft, and Apple Ads. 250+ checks with scoring, parallel agents, industry templates, and AI creative generation. Triggers on: /ads, audit, google, meta, youtube, linkedin, tiktok, microsoft, apple, creative, landing, budget, plan, competitor, create, generate, photoshoot, dna, math, test, report"
 argument-hint: "audit | google | meta | youtube | linkedin | tiktok | microsoft | apple | creative | landing | budget | plan <type> | competitor | dna <url> | create | generate | photoshoot"
 license: MIT
 ---
 
 # Ads: Multi-Platform Paid Advertising Audit & Optimization
+
+## Esencia Original
+
+Este skill orquesta auditorías y optimización de publicidad pagada multi-plataforma
+(Google, Meta, YouTube, LinkedIn, TikTok, Microsoft, Apple) mediante 17 sub-skills
+especializados y 10 agentes (6 de auditoría + 4 creativos). Ejecuta 250+ checks
+ponderados con scoring multi-plataforma, detección de industria, generación de
+creativos por IA, y reportes PDF profesionales. Nació como el skill de publicidad
+más completo del ecosistema Agent Skills, diseñado para reemplazar consultorías
+de performance marketing con un solo comando `/ads audit`.
 
 Comprehensive ad account analysis across all major platforms (Google, Meta,
 LinkedIn, TikTok, Microsoft). Orchestrates 17 specialized sub-skills and
@@ -111,6 +121,43 @@ Hard rules (never violate these):
 - Andromeda creative diversity: Flag Meta accounts with <10 genuinely distinct creatives
 - Privacy infrastructure gate: Always verify tracking stack (Consent Mode V2, CAPI, Events API, AdAttributionKit) before making optimization recommendations
 - PDF report quality gate: When generating reports via `/ads report`, always use `scripts/generate_report.py` with `--check` first. Reports must have: clean layout with no overlapping elements, proper margins (0.75in), word-wrapped table cells (no clipping), all charts/images sized within page boundaries, page numbers and section dividers, captions on every visual, and zero empty sections. Run `--check` before `--output` and fix any warnings before delivering the PDF
+
+## ⚠️ Gotchas (SOTA v5.1)
+
+### 1. API keys faltantes para generación de imágenes
+- **Por qué**: `/ads generate` y `/ads photoshoot` requieren `GOOGLE_API_KEY` (Gemini) u otro provider configurado. Si falta la key, fallan silenciosamente o muestran setup instructions que el usuario puede ignorar.
+- **Solución**: Validar la key al inicio del pipeline creativo. Si falta, abortar con mensaje claro y el comando exacto para configurarla. No continuar con el pipeline si no hay provider disponible.
+
+### 2. Subagentes que devuelven JSON inválido
+- **Por qué**: Los agentes de auditoría (audit-google, audit-meta, etc.) deben devolver JSON con scores. Si un agente devuelve texto libre o campos faltantes, el agregador falla.
+- **Solución**: Validar cada respuesta de subagente contra un schema antes de agregar. Si la validación falla, re-ejecutar ese subagente con instrucciones explícitas de formato. Máximo 2 reintentos.
+
+### 3. Benchmarks genéricos sin contexto de industria
+- **Por qué**: Sin contexto de industria (SaaS vs E-commerce vs Local), los benchmarks de CPC/CTR/CVR son genéricos y las recomendaciones pueden ser incorrectas.
+- **Solución**: El Context Intake es obligatorio antes de cualquier auditoría. Si el usuario no proporciona industria, asumir "unknown" y usar benchmarks conservadores. Marcar todas las comparativas como "sin industria definida".
+
+### 4. Reporte PDF con elementos superpuestos
+- **Por qué**: El PDF generation puede producir layouts rotos (tablas que se salen de página, imágenes superpuestas, texto truncado) si los datos de entrada son irregulares.
+- **Solución**: Ejecutar `scripts/generate_report.py --check` antes de `--output` como gate obligatorio. No entregar el PDF si hay warnings sin resolver.
+
+### 5. Atribución inconsistente entre plataformas
+- **Por qué**: Meta usa 7-day click / 1-day view por defecto, Google usa data-driven. Comparar métricas sin normalizar lleva a conclusiones erróneas.
+- **Solución**: Siempre normalizar ventanas de atribución antes de comparar entre plataformas. Documentar la ventana usada en cada comparativa.
+
+## 💾 State Persistence
+
+| State                    | Almacenamiento                        | Persistencia              |
+|--------------------------|---------------------------------------|---------------------------|
+| Contexto de auditoría    | Memoria de subagentes (fork)          | Sesión (volátil)          |
+| Brand DNA profile        | `brand-profile.json` (local)          | Persistente (archivo)     |
+| Campaign brief           | `campaign-brief.md` (local)           | Persistente (archivo)     |
+| Ad assets generados      | `ad-assets/` (local)                  | Persistente (carpeta)     |
+| Auditorías completas     | Reporte al usuario + PDF              | Hasta descarga            |
+| Scores por plataforma    | Memoria de sesión                     | Volátil                   |
+
+Los archivos generados (`brand-profile.json`, `campaign-brief.md`, `ad-assets/`)
+persisten en el directorio de trabajo. Los scores y auditorías no persisten
+entre sesiones — cada invocación comienza desde cero.
 
 ## Community Footer
 

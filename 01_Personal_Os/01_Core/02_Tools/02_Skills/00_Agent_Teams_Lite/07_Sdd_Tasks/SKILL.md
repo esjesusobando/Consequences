@@ -3,11 +3,17 @@ name: sdd-tasks
 description: >
   Break down a change into an implementation task checklist.
   Trigger: When the orchestrator launches you to create or update the task breakdown for a change.
+  Triggers on: "break down tasks", "create tasks", "task breakdown", "implementation steps", "tasks for this change", "split into tasks".
 license: MIT
 metadata:
   author: gentleman-programming
   version: "2.0"
 ---
+
+## Esencia Original
+
+- **Metaskill**: Las tareas transforman diseño de alto nivel en pasos concretos, ordenados y accionables. Hacen que el trabajo sea estimable, asignable y trackeable.
+- **Propósito original**: Crear el plan ejecutable. Las tareas puentean diseño e implementación especificando exactamente qué archivos cambiar, en qué orden, y cómo verificar cada paso.
 
 ## Purpose
 
@@ -151,6 +157,27 @@ Return to the orchestrator:
 ### Next Step
 Ready for implementation (sdd-apply).
 ```
+
+## ⚠️ Gotchas
+
+### Gotcha 1: Tareas demasiado grandes — no completables en una sesión
+- **Por qué**: "Implementar el módulo de autenticación" parece una tarea, pero abarca múltiples archivos, decisiones y pruebas.
+- **Solución**: Cada tarea debe poder completarse en una sesión de trabajo. Si una tarea tiene subtareas, splitearla. Regla general: si la tarea toca más de 2 archivos o requiere más de 30 minutos, probablemente es muy grande.
+
+### Gotcha 2: Orden de dependencias incorrecto
+- **Por qué**: Es fácil listar tareas por área en vez de por dependencias reales.
+- **Solución**: Validar que ninguna tarea de Phase N depende de una tarea de Phase N+1. Las dependencias deben ir hacia adelante. Usar un grafo mental: si la tarea B necesita lo que produce A, A debe estar antes.
+
+### Gotcha 3: Tareas vagas sin referencias a archivos concretos
+- **Por qué**: "Agregar validación" no dice dónde, qué tipo de validación, ni cómo verificarlo.
+- **Solución**: Cada tarea debe incluir la ruta del archivo y la acción específica. "Agregar validación de email en `internal/auth/validator.go`" es mucho mejor. Si una tarea no tiene una ruta de archivo, probablemente es muy vaga.
+
+## 💾 State Persistence
+
+El estado de esta fase se persiste en:
+- **Change folder**: `openspec/changes/{change-name}/tasks.md` (modos `openspec` e `hybrid`).
+- **Engram observations**: Via `mem_save` con `topic_key: sdd/{change-name}/tasks`, `type: architecture`.
+- **Modo `none`**: Solo retorno inline, sin persistencia en disco.
 
 ## Rules
 

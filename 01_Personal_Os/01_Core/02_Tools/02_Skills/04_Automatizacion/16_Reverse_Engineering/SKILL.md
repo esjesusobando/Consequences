@@ -9,6 +9,12 @@ Analyze how things are built to extract transferable patterns, architectural dec
 
 ---
 
+## Esencia Original
+
+Analyzes how tools, frameworks, repos, and APIs are built to extract transferable patterns, architectural decisions, and implementation insights. Outputs structured analysis with adoption recommendations for the OS. Feeds into deliverable #8 (Ingeniería Inversa) of the Learning Always pipeline.
+
+---
+
 ## Quick Start
 
 ```
@@ -152,6 +158,38 @@ This skill feeds into deliverable #8 (Ingenieria Inversa) of the Learning Always
 Also connects to:
 - **os-self-improvement**: Findings become OS improvements
 - **compound-knowledge**: Patterns connect to existing knowledge
+
+---
+
+## ⚠️ Gotchas
+
+### Gotcha 1: Superficial analysis from small repos
+- **Por qué**: Small or early-stage repos may not have established architecture patterns worth extracting. The skill may over-analyze and generate false patterns from limited code.
+- **Solución**: Set a minimum threshold: if the repo has fewer than 5 files or less than 1000 lines of meaningful code, flag it as "limited sample" and reduce the depth of analysis. Focus on tools/frameworks with proven adoption.
+
+### Gotcha 2: Transferability overestimation
+- **Por qué**: A pattern that works in a full-time team context may not transfer to a single-operator OS. The skill tends to recommend adoption without considering the operational context difference.
+- **Solución**: Always filter recommendations through the "single operator" lens. Before marking something as "Adopt", ask: "Does this add complexity? Is it worth the maintenance cost?" Prefer simpler patterns that reduce cognitive load.
+
+### Gotcha 3: Language-specific patterns get generalized incorrectly
+- **Por qué**: A pattern discovered in a TypeScript codebase (e.g., dependency injection with decorators) may not transfer to Go or Python. The skill may present it as a universal pattern when it's language-specific.
+- **Solución**: Always note the language and ecosystem context for each pattern. If the pattern requires a specific language feature, flag it as "language-dependent" and suggest equivalent patterns for other languages.
+
+### Gotcha 4: Outdated repos mislead pattern extraction
+- **Por qué**: The skill analyzes a repo at a single point in time. If the repo hasn't been maintained for 2+ years, the patterns extracted may be obsolete or based on deprecated practices.
+- **Solución**: Check the repo's last commit date before analysis. If >12 months without recent activity, prefix the output with a "staleness warning". Cross-reference patterns with current best practices when possible.
+
+---
+
+## 💾 State Persistence
+
+No persistent state between runs. Each analysis is stateless and generates a fresh output file. The skill:
+- **Analyzes repos/tools at execution time** — relies on live data
+- **Outputs structured markdown** with adoption recommendations
+- **Saves findings to Engram** using `topic_key: learning/{pattern}` when patterns are extracted
+- **No caching**: re-running with the same target generates a fresh analysis
+
+For recurring analysis of the same target, save the output to Engram to track evolution over time.
 
 ---
 

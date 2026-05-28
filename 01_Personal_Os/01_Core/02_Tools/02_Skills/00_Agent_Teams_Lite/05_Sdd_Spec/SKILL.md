@@ -3,11 +3,17 @@ name: sdd-spec
 description: >
   Write specifications with requirements and scenarios (delta specs for changes).
   Trigger: When the orchestrator launches you to write or update specs for a change.
+  Triggers on: "spec this out", "write specs", "define requirements", "specify behavior", "write scenarios", "delta spec", "specification for".
 license: MIT
 metadata:
   author: gentleman-programming
   version: "2.0"
 ---
+
+## Esencia Original
+
+- **Metaskill**: Las specs crean un entendimiento compartido de QUÉ debe hacer el sistema antes de CÓMO construirlo. Son la fuente única de verdad para el comportamiento.
+- **Propósito original**: Traducir la intención de la propuesta en requisitos testables e inequívocos usando escenarios Given/When/Then y palabras clave RFC 2119. Las specs son contra lo que verificamos.
 
 ## Purpose
 
@@ -160,6 +166,27 @@ Return to the orchestrator:
 ### Next Step
 Ready for design (sdd-design). If design already exists, ready for tasks (sdd-tasks).
 ```
+
+## ⚠️ Gotchas
+
+### Gotcha 1: Specs que describen implementación en vez de comportamiento
+- **Por qué**: Es fácil caer en "el sistema debe hacer X llamando a Y función con Z parámetros" en vez de describir el comportamiento observable.
+- **Solución**: Si un requisito menciona una función, clase, o tecnología específica, probablemente es implementación. Reescribirlo desde la perspectiva del usuario o del sistema: "Dado X, cuando Y, entonces Z" sin asumir cómo se implementa.
+
+### Gotcha 2: Falta de edge cases — solo escenarios felices
+- **Por qué**: Es natural pensar primero en el camino feliz y olvidar los casos borde.
+- **Solución**: Por cada requisito, preguntar: ¿qué pasa si el input es inválido? ¿si el estado no existe? ¿si hay condiciones de carrera? ¿si el recurso no está disponible? Cada requisito debería tener al menos un escenario feliz y un escenario de error.
+
+### Gotcha 3: Fuerza de requisito ambigua (MUST vs SHOULD mal usado)
+- **Por qué**: Usar SHOULD cuando se necesita MUST (o viceversa) crea ambigüedad sobre si un comportamiento es obligatorio.
+- **Solución**: Ser estricto con RFC 2119: MUST es absoluto, SHOULD es recomendado con justificación, MAY es opcional. Si hay duda, preguntar: "¿el sistema fallaría sin esto?" → sí = MUST, no = SHOULD.
+
+## 💾 State Persistence
+
+El estado de esta fase se persiste en:
+- **Change folder**: `openspec/changes/{change-name}/specs/{domain}/spec.md` (modos `openspec` e `hybrid`).
+- **Engram observations**: Via `mem_save` con `topic_key: sdd/{change-name}/spec`, `type: architecture`.
+- **Delta specs**: Siempre se escriben como ADDED/MODIFIED/REMOVED contra specs existentes.
 
 ## Rules
 

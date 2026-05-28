@@ -13,6 +13,12 @@ Weekly AI news briefing with strategic analysis and executive summary.
 
 ---
 
+## Esencia Original
+
+Weekly AI news briefing that keeps the OS operator informed on fast-moving AI developments. Aggregates from 4+ sources (HN, TechCrunch, aginews.io, arxiv), distills to strategic insights, and saves in structured multi-file format under `03_Resultado/`. Designed for the Sunday/Monday planning cadence.
+
+---
+
 ## Quick Start
 
 ```
@@ -231,6 +237,37 @@ Can be triggered via N8N webhook for automated weekly generation.
 
 - **Recommended:** Weekly (Sunday evening or Monday morning)
 - **Minimum:** Weekly to stay current with fast-moving AI landscape
+
+---
+
+## ⚠️ Gotchas
+
+### Gotcha 1: Source availability variability
+- **Por qué**: News sources can change their structure, block scraping, or go down. Hacker News and TechCrunch are generally stable, but arxiv RSS feeds can change format, and aginews.io may restructure without notice.
+- **Solución**: Always include a fallback source list. If scraping fails for one source, skip it and note it in the output. Periodically validate all source URLs (every 2 weeks). Cache the last successful run's results to avoid empty outputs.
+
+### Gotcha 2: Executive summary quality degrades with too many stories
+- **Por qué**: When there's a heavy news week (50+ stories), the Top 5 selection becomes arbitrary and the executive summary loses focus. The model may surface less relevant stories just to fill quotas.
+- **Solución**: Hard-cap selection at 12 stories max, and invest more context in the top 3. Use a simple relevance filter: "Does this story directly impact my work or strategy?" before including. Tag stories by category to ensure balanced coverage.
+
+### Gotcha 3: Weekly cadence can miss breaking news mid-week
+- **Por qué**: AI news moves fast. A major release on Wednesday gets stale by Sunday, and the weekly report becomes a history lesson rather than a briefing.
+- **Solución**: Add a mid-week flash check (Wednesday) for critical developments. Tag any "must act now" items for immediate notification. Consider a separate "Breaking News" section in the output for items that required immediate attention.
+
+### Gotcha 4: Source bias creates blind spots
+- **Por qué**: HN leans open-source, TechCrunch favors VC-backed startups, and arxiv is research-heavy. Together they cover most angles, but enterprise AI (Microsoft, Google, AWS) news is underrepresented.
+- **Solución**: Intentionally rotate in enterprise sources (e.g., Google AI Blog, Microsoft Research, AWS ML Blog) every other week. Track which sources contributed to the Top 5 to identify representation gaps.
+
+---
+
+## 💾 State Persistence
+
+No persistent state is stored between runs. Each execution is stateless and generates a fresh output. The skill relies on:
+- **Current system date**: Determines the week range (Monday-Sunday)
+- **Source availability**: Content depends on live scraping at execution time
+- **Engram memory**: Key findings can be saved via the Integration section for cross-week trend tracking
+
+For trend analysis across weeks, save the Top 5 stories strategically using Engram's `topic_key: "ai-news-weekly/YYYY-WXX"` pattern to enable historical queries.
 
 ---
 

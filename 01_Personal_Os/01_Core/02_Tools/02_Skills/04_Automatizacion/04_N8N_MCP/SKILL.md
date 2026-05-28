@@ -1,11 +1,19 @@
 ---
 name: n8n-mcp-tools-expert
-description: Expert guide for using n8n-mcp MCP tools effectively. Use when searching for nodes, validating configurations, accessing templates, managing workflows, or using any n8n-mcp tool. Provides tool selection guidance, parameter formats, and common patterns.
+description: Expert guide for using n8n-mcp MCP tools effectively. Use when searching for nodes, validating configurations, accessing templates, managing workflows, or using any n8n-mcp tool. Provides tool selection guidance, parameter formats, and common patterns. Triggers on: n8n-mcp, search_nodes, get_node, validate_node, workflow API, templates, MCP tools
 ---
 
 # n8n MCP Tools Expert
 
 Master guide for using n8n-mcp MCP server tools to build workflows.
+
+---
+
+## Esencia Original
+
+**Metaskill**: Master the n8n-mcp MCP server tool interface — the bridge between an AI agent and n8n's node/workflow ecosystem. Covers 20+ tools organized into Node Discovery, Configuration Validation, Workflow Management, and Template Library categories.
+
+**Propósito original**: Provide a quick-reference guide that prevents the most common n8n-mcp mistakes: nodeType format mismatches (nodes-base vs n8n-nodes-base), unnecessary full-detail queries, forgotten intent parameters, and auto-sanitization surprises.
 
 ---
 
@@ -630,6 +638,45 @@ For details, see:
 - [SEARCH_GUIDE.md](SEARCH_GUIDE.md) - Node discovery
 - [VALIDATION_GUIDE.md](VALIDATION_GUIDE.md) - Configuration validation
 - [WORKFLOW_GUIDE.md](WORKFLOW_GUIDE.md) - Workflow management
+
+---
+
+---
+
+## ⚠️ Gotchas
+
+### 1. nodeType Format Mismatch: `nodes-base` vs `n8n-nodes-base`
+
+**Por qué**: `search_nodes` y `get_node` usan prefijo `nodes-base.slack`, mientras que `n8n_create_workflow` y `n8n_update_partial_workflow` requieren `n8n-nodes-base.slack`. Usar el formato incorrecto produce "Node not found".
+
+**Solución**: `search_nodes` devuelve ambos formatos en su respuesta: `nodeType` (para search/validate) y `workflowNodeType` (para workflow tools). Usa el campo correcto según la herramienta que llames. Para herramientas manuales: `nodes-base.*` para discovery/validation, `n8n-nodes-base.*` para workflow CRUD.
+
+### 2. `detail="full"` Devuelve 3-8K Tokens Innecesarios
+
+**Por qué**: Llamar `get_node({detail: "full"})` por defecto desperdicia tokens masivamente. El response completo incluye todas las opciones anidadas, schemas completos y metadata que no necesitas el 95% de las veces.
+
+**Solución**: Usa `detail="standard"` (default) que cubre 95% de los casos con ~1-2K tokens. Para buscar un campo específico usa `mode: "search_properties"` con `propertyQuery`. Solo usa `detail: "full"` cuando necesites debuggear configuraciones complejas.
+
+### 3. Auto-Sanitization se Ejecuta en TODOS los Nodos en CADA Update
+
+**Por qué**: Cada vez que llamas a `n8n_update_partial_workflow`, el sistema sanitiza automáticamente TODOS los nodos del workflow. Esto puede sobreescribir cambios que hiciste manualmente en la estructura de operadores.
+
+**Solución**: No intentes luchar contra auto-sanitization. Deja que maneje `singleValue` en operadores unarios/binarios y metadata de IF/Switch. Enfócate en la lógica de negocio, no en la estructura de operadores. Si auto-sanitization no puede arreglar algo (conexiones rotas, branch count mismatches), usa `cleanStaleConnections`.
+
+### 4. Olvidar el Parámetro `intent` en Workflow Updates
+
+**Por qué**: Sin `intent`, las respuestas del MCP server son genéricas y menos útiles para debugging. El parámetro `intent` le dice al servidor qué estás tratando de lograr, mejorando la calidad de la respuesta.
+
+**Solución**: Siempre incluye `intent: "descripción de lo que estás haciendo"` en `n8n_update_partial_workflow`. Ejemplo: `intent: "Agregar manejo de errores para fallos de API"`. Esto también ayuda a mantener un audit trail de cambios.
+
+## 💾 State Persistence
+
+| Qué | Dónde | Notas |
+|-----|-------|-------|
+| Configuración de conexión n8n-mcp | Variables de entorno: `N8N_API_URL`, `N8N_API_KEY` | Requeridas para herramientas de workflow API |
+| Workflow JSON | En la base de datos de la instancia n8n | Accesible vía API |
+| Templates | n8n template library (cloud) | No requiere API key para búsqueda |
+| Tool documentation | Empaquetada en el MCP server | Siempre disponible offline |
 
 ---
 

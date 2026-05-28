@@ -1,11 +1,19 @@
 ---
 name: n8n-node-configuration
-description: Operation-aware node configuration guidance. Use when configuring nodes, understanding property dependencies, determining required fields, choosing between get_node detail levels, or learning common configuration patterns by node type.
+description: Operation-aware node configuration guidance. Use when configuring nodes, understanding property dependencies, determining required fields, choosing between get_node detail levels, or learning common configuration patterns by node type. Triggers on: node config, property dependencies, displayOptions, operation-aware setup, get_node detail levels
 ---
 
 # n8n Node Configuration
 
 Expert guidance for operation-aware node configuration with property dependencies.
+
+---
+
+## Esencia Original
+
+**Metaskill**: Navigate n8n's progressive-disclosure node configuration system — where fields appear/disappear based on operation+resource combinations and displayOptions rules. Not all fields are always visible or required.
+
+**Propósito original**: Replace trial-and-error configuration with a systematic validation-driven setup workflow. Understand property dependencies (Boolean toggles, operation switches, type selections) to configure nodes correctly the first time.
 
 ---
 
@@ -777,6 +785,46 @@ For comprehensive guides on specific topics:
 - **Progressive disclosure**: Start minimal, add as needed
 - **Dependency-aware**: Understand field visibility rules
 - **Validation-driven**: Let validation guide configuration
+
+---
+
+## ⚠️ Gotchas
+
+### 1. Resource + Operation Determina los Campos Requeridos, NO el Tipo de Nodo
+
+**Por qué**: Un nodo Slack puede tener 20+ operaciones. `post` message requiere `channel` + `text`, mientras que `update` message requiere `messageId` + `text` (sin `channel`). Usar la misma config para distintas operaciones produce errores de validación.
+
+**Solución**: Siempre llama a `get_node({nodeType})` cuando cambies de operación. Los campos requeridos cambian drásticamente. No asumas que una configuración válida para una operación lo será para otra.
+
+### 2. displayOptions: Campos que Aparecen y Desaparecen
+
+**Por qué**: Muchos campos tienen reglas `displayOptions` que los ocultan hasta que se cumplen condiciones. Por ejemplo, `body` en HTTP Request solo aparece cuando `sendBody=true` y `method` es POST/PUT/PATCH. Si no ves un campo, puede que no hayas cumplido sus prerequisitos.
+
+**Solución**: Usa `get_node({mode: "search_properties", propertyQuery: "nombre_del_campo"})` para entender qué controla su visibilidad. O usa validación: `validate_node()` te dirá qué campo falta aunque no sea visible en la UI.
+
+### 3. Auto-Sanitization Modifica Silenciosamente Operadores
+
+**Por qué**: Cuando guardas un IF/Switch node, n8n automáticamente agrega o remueve `singleValue` dependiendo del tipo de operador (binario vs unario). Esto puede confundir si estabas editando manualmente la estructura.
+
+**Solución**: No toques `singleValue` manualmente. Configura la lógica de negocio (valores, operadores) y deja que auto-sanitization maneje la estructura. Validar antes de desplegar confirma que todo está correcto.
+
+### 4. Over-Configurar Upfront vs Enfoque Progresivo
+
+**Por qué**: Agregar todos los campos opcionales al inicio (timeout, sendQuery, sendHeaders, etc.) hace la configuración frágil y difícil de debuggear cuando algo falla.
+
+**Solución**: Empieza con el mínimo viable: solo campos requeridos para la operación. Valida. Agrega campos opcionales uno por uno, validando después de cada adición. El promedio es 2-3 ciclos de validación hasta una config completa.
+
+## 💾 State Persistence
+
+| Qué | Dónde | Notas |
+|-----|-------|-------|
+| Configuración de nodo individual | Dentro del workflow JSON (propiedad `parameters`) | Persistido al guardar el workflow |
+| Propiedades por operación | Empaquetadas en el MCP server (`get_node`) | Siempre disponibles, sin estado mutable |
+| Credenciales | n8n credential vault | Encriptadas, referenciadas por nombre |
+
+El estado de configuración de nodos es completamente declarativo — todo vive dentro del workflow JSON. No hay archivos de configuración externos. Cada nodo es autónomo con sus parámetros.
+
+---
 
 **Related Skills**:
 - **n8n MCP Tools Expert** - How to use discovery tools correctly

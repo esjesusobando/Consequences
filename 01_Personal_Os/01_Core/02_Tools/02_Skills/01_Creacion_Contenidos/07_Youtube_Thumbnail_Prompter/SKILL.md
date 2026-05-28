@@ -1,6 +1,6 @@
 ---
 name: youtube-thumbnail-prompter
-description: "Genera prompts de miniaturas de YouTube optimizados para herramientas de imagen AI."
+description: "Genera prompts de miniaturas de YouTube optimizados para herramientas de imagen AI. Triggers on: youtube thumbnails, AI image prompts, thumbnail optimization, click-worthy visuals, video cover design"
 license: Apache-2.0
 metadata:
   author: gentleman-programming
@@ -10,6 +10,11 @@ metadata:
 # Youtube Thumbnail Prompter
 
 > Genera prompts optimizados para crear miniaturas de YouTube con AI.
+
+## Esencia Original
+
+- **Metaskill**: Traducir el título y guion de un video en prompts visuales ultra-detallados para generación de imagen AI (Midjourney, DALL-E, Flux), capturando el "momento clave" que maximiza el click.
+- **Propósito original**: Cerrar el gap entre el contenido del video y su representación visual — una miniatura engañosa daña la retención, pero una miniatura precisa y llamativa multiplica el CTR sin romper la confianza del espectador.
 
 ## Propósito
 
@@ -76,6 +81,26 @@ Toma el título y el guion (o resumen) de un video y genera un prompt detallado 
 
 **Input:** Título: "Cómo gané $10,000 con AI en 30 días"
 **Output:** Prompt con cara de sorpresa + dinero/digitales + lighting dramático
+
+---
+
+## ⚠️ Gotchas
+
+1. **Prompt de AI genera caras con expresiones grotescas**
+   - **Por qué**: Los modelos de imagen AI (especialmente Flux y SD) tienden a generar expresiones faciales exageradas o uncanny valley cuando el prompt pide "sorpresa" o "emoción fuerte".
+   - **Solución**: En prompts que incluyan rostros, añadir modificadores de naturalidad ("expresión natural, sin exageración", "retrato profesional") y especificar que la emoción sea sutil pero presente.
+
+2. **Texto en imagen generado por AI es ilegible**
+   - **Por qué**: Los modelos de imagen AI aún no manejan texto de forma confiable — cualquier overlay de texto en el prompt sale distorsionado, con errores ortográficos o simplemente ilegible.
+   - **Solución**: Jamás incluir texto en el prompt de AI. El texto overlay debe añadirse en post-procesamiento (Canva, Photoshop, etc.). Incluir una nota de "text overlay" separada en el output.
+
+3. **Estilo inconsciente entre miniaturas de la serie**
+   - **Por qué**: Cada invocación del prompter genera un prompt desde cero, sin referencia a miniaturas anteriores del mismo canal, resultando en estilos visuales inconsistentes.
+   - **Solución**: Exigir que el input incluya siempre "Brand Style Reference" (colores, tipografía, ejemplos de thumbnails previas) para mantener coherencia visual en toda la serie del canal.
+
+## 💾 State Persistence
+
+Esta skill es stateless. Cada invocación produce prompts de thumbnail independientes. No hay memoria de estilos previos usados por el canal. Para mantener consistencia visual, el orquestador debe pasar referencias de marca (colors, mood) en cada llamada.
 
 ---
 

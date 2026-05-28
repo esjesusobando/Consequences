@@ -3,11 +3,20 @@ name: issue-creation
 description: >
   Issue creation workflow for Agent Teams Lite following the issue-first enforcement system.
   Trigger: When creating a GitHub issue, reporting a bug, or requesting a feature.
+  Triggers on: issue creation, bug report, feature request, GitHub issue, triage, maintainer approval, needs-review
 license: Apache-2.0
 metadata:
   author: gentleman-programming
   version: "1.0"
 ---
+
+## Esencia Original
+
+### Metaskill
+What specific problem this skill phase solves: Standardizing GitHub issue creation through enforced templates (bug report or feature request), auto-labeling, and a maintainer approval workflow that gates PR readiness behind explicit `status:approved` labels.
+
+### Propósito original
+Why this phase exists: To eliminate blank, vague, or duplicate issues by forcing structure through templates, and to establish a clear triage pipeline where maintainers explicitly approve issues before any implementation work begins — preventing wasted effort on out-of-scope changes.
 
 ## When to Use
 
@@ -15,6 +24,29 @@ Use this skill when:
 - Creating a GitHub issue (bug report or feature request)
 - Helping a contributor file an issue
 - Triaging or approving issues as a maintainer
+
+## ⚠️ Gotchas
+
+### Gotcha 1: Forgetting to search for duplicates before creating an issue
+**Por qué**: Creating a duplicate issue fragments the discussion and confuses the triage process. The pre-flight checkboxes are self-reported and not enforced — contributors can check them without actually searching.
+**Solución**: Always run `gh issue list --search "<keywords>"` BEFORE creating the issue. If a duplicate exists, link it and close the new one. Don't rely on the submitter's self-check.
+
+### Gotcha 2: Using issues for questions instead of Discussions
+**Por qué**: The repo explicitly routes questions to Discussions, but the GitHub UI makes it easy to file an issue instead. This pollutes the issue tracker with non-actionable items.
+**Solución**: If a submission looks like a question ("how do I...", "is it possible to..."), apply the label `type:question` and redirect to Discussions with a link. Do not add `status:needs-review`.
+
+### Gotcha 3: Approving an issue that is too vague to implement
+**Por qué**: Adding `status:approved` to an issue with insufficient detail creates a problem downstream: the PR author has to guess at requirements, and the review will be contentious.
+**Solución**: Before approving, ensure the issue has clear acceptance criteria: specific reproduction steps for bugs, or a concrete proposed solution for features. If not, ask for clarification first.
+
+## 💾 State Persistence
+
+This skill does NOT manage SDD artifact state. It provides an issue creation workflow only.
+
+- **Issue state**: Managed by GitHub — labels (`status:needs-review`, `status:approved`, `type:*`, `priority:*`) and issue body are all GitHub state.
+- **Template state**: Managed by GitHub — issue templates live in `.github/ISSUE_TEMPLATE/` and are version-controlled.
+- **No engram/openspec integration**: This skill is purely about the GitHub issue workflow. SDD state management (if used after issue approval) is handled by the SDD skills.
+- **Maintainer actions**: Approval (`status:approved`) and priority labels are set via `gh issue edit` and persist in GitHub.
 
 ---
 

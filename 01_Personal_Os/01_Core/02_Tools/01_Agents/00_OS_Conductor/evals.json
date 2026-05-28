@@ -1,0 +1,79 @@
+{
+  "skill": "orchestrating-os",
+  "version": "2.0.0",
+  "schema": "evals-v1",
+  "created": "2026-05-28",
+  "evals": [
+    {
+      "name": "routing-content-creation",
+      "description": "Routing un request de creación de contenido al área correcta",
+      "prompt": "Necesito un post para LinkedIn sobre AI Agents",
+      "expectations": [
+        "Conductor identifica 01_Creacion_Contenidos como área principal",
+        "No selecciona 00_OS_Conductor como skill destino (auto-exclusión)",
+        "Propone Sprint Contract con criterios verificables",
+        "Selecciona una skill específica dentro de Creacion_Contenidos"
+      ]
+    },
+    {
+      "name": "routing-sdd-development",
+      "description": "Routing un request de implementación a SDD flow",
+      "prompt": "Quiero implementar una feature de autenticación con JWT",
+      "expectations": [
+        "Conductor identifica 00_Compound_Engineering como área principal",
+        "Propone flujo SDD completo (init → archive)",
+        "No ejecuta código directamente, delega a SDD tasks"
+      ]
+    },
+    {
+      "name": "auto-exclusion-guard",
+      "description": "El Conductor no se selecciona a sí mismo como skill destino",
+      "prompt": "Ejecutá el OS Conductor para diagnosticar el sistema",
+      "expectations": [
+        "Conductor reconoce que ya está activo",
+        "No se re-invoca a sí mismo como skill destino",
+        "Procesa el request directamente sin loop de auto-referencia"
+      ]
+    },
+    {
+      "name": "multi-category-detection",
+      "description": "Request que matchea 3+ áreas debe preguntar al usuario",
+      "prompt": "Quiero hacer un video promocional para una campaña de marketing",
+      "expectations": [
+        "Conductor detecta múltiples áreas (Creacion_Contenidos, Video_Media, Claude_Ads)",
+        "Pregunta al usuario qué prioridad prefiere antes de rutear",
+        "No elige por default sin clarificar"
+      ]
+    },
+    {
+      "name": "sprint-contract-proposal",
+      "description": "Antes de flujo compuesto, negocia criterios de 'done'",
+      "prompt": "Lanzame un producto nuevo al mercado",
+      "expectations": [
+        "Conductor propone Sprint Contract con criterios específicos",
+        "Espera confirmación del usuario antes de ejecutar",
+        "Criterios incluyen brand, diseño, assets, video, ads"
+      ]
+    },
+    {
+      "name": "system-diagnosis-flow",
+      "description": "Diagnóstico del OS invoca System_Core + Skill_Auditor",
+      "prompt": "Hacé un diagnóstico completo del sistema operativo",
+      "expectations": [
+        "Conductor invoca 00_System_Core como ruta directa",
+        "Incluye 10_Skill_Auditor para verificación de calidad",
+        "Devuelve reporte estructurado de salud del OS"
+      ]
+    },
+    {
+      "name": "unrecognized-request",
+      "description": "Request no reconocido pide clarificación al usuario",
+      "prompt": "qwxyz no se que es esto",
+      "expectations": [
+        "Conductor no encuentra match en ninguna categoría",
+        "No inventa una categoría por default",
+        "Pide clarificación al usuario sobre qué necesita"
+      ]
+    }
+  ]
+}

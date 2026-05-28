@@ -7,6 +7,11 @@ description: Generate detailed, shot-by-shot AI video prompts for Seedance 2.0 f
 
 Build cinematic, shot-by-shot video prompts from a creative brief. Every output follows a structured effects breakdown format designed to give Seedance 2.0 maximum detail on camera work, effects, transitions, pacing, and energy arc.
 
+## Esencia Original
+
+- **Metaskill**: Transformar un brief creativo en prompts shot-by-shot con desglose de efectos, densidad y arco energético, específicamente optimizados para motores de video AI como Seedance 2.0.
+- **Propósito original**: Resolver el problema de que los prompts genéricos producen videos genéricos — esta skill aplica principios de dirección cinematográfica (contraste de densidad, firma visual, transiciones como planos) para elevar la salida de AI generativa al nivel de un director profesional.
+
 ## How this skill works
 
 1. The user provides a **creative brief** — this can be as simple as "a runner in a stadium for a Nike-style ad" or as detailed as a full storyboard description. They may also provide a reference video, mood, brand context, or specific effects they want.
@@ -120,3 +125,23 @@ If the user doesn't specify a duration, default to 15-20 seconds (a sweet spot f
 1. Read `references/effects-breakdown-reference.txt` to calibrate detail level
 2. Generate the full four-section output: shot-by-shot timeline (8-12 shots), master effects inventory, density map, and energy arc
 3. Present in plain text in chat
+
+---
+
+## ⚠️ Gotchas
+
+1. **Seedance 2.0 ignores details not in the expected structural format**
+   - **Why**: The model is trained to respond to specific structural cues (shot blocks, effect names, transition logic). Free-form descriptions or narrative prose get interpreted loosely, losing the precise intent.
+   - **Solution**: Always use the four-section output structure exactly as specified. Never skip sections or mix formats — treat the structure as part of the prompt, not just decoration.
+
+2. **High density without contrast produces flat videos**
+   - **Why**: Stacking 5+ effects per shot across the entire timeline creates visual noise where nothing stands out. The "signature moment" gets lost in the chaos.
+   - **Solution**: Enforce the density map strictly — alternate HIGH and LOW density segments. If every shot is high density, deliberately designate 1-2 shots as LOW to create breathing room.
+
+3. **Duration mismatch between prompt and actual generation**
+   - **Why**: The shot-by-shot timeline specifies timestamps, but AI video generators have their own pacing constraints. A prompt with 15 shots for a 15-second video can produce clips where each shot is 2+ seconds, blowing past the target.
+   - **Solution**: Specify shot counts conservatively (4-7 for 5-10s, not 10+) and include a "total runtime estimate" at the top of the output. Flag it if the shot count exceeds what the duration can realistically hold.
+
+## 💾 State Persistence
+
+This skill is stateless. Each invocation produces a fresh video prompt based solely on the creative brief provided. There is no memory of previous prompts, style preferences, or brand references across sessions. The user (or orchestrator) is responsible for passing brand reference material and any prior prompt context needed for consistency.

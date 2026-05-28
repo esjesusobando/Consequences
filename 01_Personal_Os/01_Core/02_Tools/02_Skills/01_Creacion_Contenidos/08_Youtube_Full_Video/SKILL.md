@@ -1,12 +1,17 @@
 ---
 name: youtube-full-video-epic
-description: Workflow ÉPICO para YouTube que integra el ecosistema completo de skills: Brand Voice Guardian → Content Ideation → Content Transformer → Script Writer → Title Generator → Thumbnail Prompter → Nano Banana (imagen).
+description: Workflow ÉPICO para YouTube que integra el ecosistema completo de skills: Brand Voice Guardian → Content Ideation → Content Transformer → Script Writer → Title Generator → Thumbnail Prompter → Nano Banana (imagen). Triggers on: full youtube workflow, video production pipeline, content ecosystem, integrated content creation, end-to-end video
 argument-hint: "[idea/tema del video - ej: cómo usar AI para marketing]"
 ---
 
 # Youtube Full Video EPIC 🎬
 
 > Workflow completo integrado con TODO el ecosistema de skills de marketing.
+
+## Esencia Original
+
+- **Metaskill**: Orquestar el pipeline completo de creación de video YouTube — desde idea hasta thumbnail generado — integrando 8+ skills especializadas en un solo flujo coherente y repetible.
+- **Propósito original**: Unificar todos los micro-servicios de contenido en un meta-workflow que garantice consistencia entre idea, guion, título, miniatura y marca. Es el "comando de un solo botón" para producción profesional de video sin depender de equipos grandes.
 
 ## Por Qué es ÉPICO
 
@@ -292,6 +297,26 @@ Variaciones: [2 opciones]
 → Resumen para newsletter
 → Offer & Bio Writer para CTA
 ```
+
+---
+
+## ⚠️ Gotchas
+
+1. **Skills referenciadas por números/names desactualizados**
+   - **Por qué**: Este workflow referencia skills por números (ej: "10_Content_Transformer", "11_Youtube_Script_Writer") que pueden cambiar cuando se añaden o reordenan skills en el ecosistema.
+   - **Solución**: Verificar que las rutas y nombres de skills referenciados en los Steps 1-8 coincidan con el estado actual del directorio `01_Creacion_Contenidos/` antes de ejecutar el workflow.
+
+2. **Workflow asume ejecución lineal pero se necesita iteración**
+   - **Por qué**: El flujo presentado es secuencial (Step 1 → Step 8), pero en la práctica los pasos 4-6 requieren iteración: el título puede cambiar el guion, la miniatura puede sugerir cambios en el título, etc.
+   - **Solución**: Después del Step 6, incluir un bucle de retroalimentación donde el usuario pueda ajustar cualquiera de los outputs anteriores antes de pasar a generación de imagen.
+
+3. **Sin manejo de errores para generación de imagen fallida**
+   - **Por qué**: Nano Banana / Premium Image Studio pueden fallar (rate limits, prompts rechazados, timeout) y el workflow no contempla reintentos ni alternativas.
+   - **Solución**: El Step 7 debe incluir un plan de contingencia: 3 reintentos con prompts simplificados y un fallback a descripción textual de la miniatura para diseño manual.
+
+## 💾 State Persistence
+
+Este workflow orquesta múltiples skills stateless. El estado del pipeline (idea aprobada, brief, guion, título seleccionado, prompt de thumbnail) debe ser gestionado por el orquestador entre cada step. Se recomienda usar un archivo temporal `youtube-pipeline-state.json` que acumule los outputs de cada etapa.
 
 ---
 

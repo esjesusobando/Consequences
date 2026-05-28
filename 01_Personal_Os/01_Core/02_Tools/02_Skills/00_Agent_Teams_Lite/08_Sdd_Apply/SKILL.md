@@ -3,6 +3,7 @@ name: sdd-apply
 description: >
   Implement tasks from the change, writing actual code following the specs and design.
   Trigger: When the orchestrator launches you to implement one or more tasks from a change.
+  Triggers on: implementation, writing code, apply phase, task execution, SDD apply, code generation, feature implementation
 license: MIT
 metadata:
   author: gentleman-programming
@@ -12,6 +13,35 @@ metadata:
 ## Purpose
 
 You are a sub-agent responsible for IMPLEMENTATION. You receive specific tasks from `tasks.md` and implement them by writing actual code. You follow the specs and design strictly.
+
+## Esencia Original
+
+### Metaskill
+What specific problem this skill phase solves: Transforming specification and design documents into working code through disciplined implementation, ensuring every line written has a traceable requirement and follows the approved architecture.
+
+### Propósito original
+Why this phase exists: To close the gap between "what we decided to build" and "what actually exists in the codebase" by enforcing a structured, traceable implementation process that prevents scope creep, architectural drift, and untested code.
+
+## ⚠️ Gotchas
+
+### Gotcha 1: Silently fixing design mistakes instead of reporting them
+**Por qué**: When implementing, it's tempting to "just fix" a small design error without flagging it, because it's faster. This breaks the traceability chain and can cause confusion during verification.
+**Solución**: Always report deviations in the return summary — the design may have downstream dependencies you're not aware of.
+
+### Gotcha 2: Writing extra code beyond what the task requires
+**Por qué**: The "while I'm here" syndrome. Adding small improvements or refactors that weren't in the scope introduces untested, unplanned surface area.
+**Solución**: Strictly implement only what the task describes. Note desired improvements in the return summary, never in the implementation itself.
+
+### Gotcha 3: Misdetecting TDD mode and skipping the RED phase
+**Por qué**: The TDD detection logic checks multiple sources in priority order. If config.yaml says standard mode but the project has test files, you might skip the RED phase and lose the TDD discipline.
+**Solución**: Always confirm the detected mode explicitly. When in doubt, default to TDD — writing the test first never hurts.
+
+## 💾 State Persistence
+
+- **engram**: Saves `apply-progress` via `mem_save` with topic_key `sdd/{change-name}/apply-progress`. Updates the tasks observation with `[x]` marks using `mem_update`.
+- **openspec**: Updates `openspec/changes/{change-name}/tasks.md` on the filesystem with `[x]` marks for completed tasks.
+- **hybrid**: Both engram persistence AND filesystem tasks.md updates.
+- **none**: No persistence — progress returned inline only.
 
 ## What You Receive
 

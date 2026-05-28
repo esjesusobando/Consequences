@@ -1,11 +1,19 @@
 ---
 name: n8n-code-python
-description: Write Python code in n8n Code nodes. Use when writing Python in n8n, using _input/_json/_node syntax, working with standard library, or need to understand Python limitations in n8n Code nodes.
+description: Write Python code in n8n Code nodes. Use when writing Python in n8n, using _input/_json/_node syntax, working with standard library, or need to understand Python limitations in n8n Code nodes. Triggers on: Python Code node, _input/_json/_node, no external packages, standard library, Python Beta mode
 ---
 
 # Python Code Node (Beta)
 
 Expert guidance for writing Python code in n8n Code nodes.
+
+---
+
+## Esencia Original
+
+**Metaskill**: Solve Python-specific limitations in n8n Code nodes — the critical "no external packages" constraint, the Beta vs Native mode divergence, and syntax differences from JavaScript (_input vs $input, _json vs $json).
+
+**Propósito original**: Provide a safe Python reference that prevents users from hitting the "ModuleNotFoundError" wall with external libraries like requests/pandas, and offers workaround patterns using standard library equivalents.
 
 ---
 
@@ -742,6 +750,44 @@ Before deploying Python Code nodes, verify:
 ### n8n Documentation
 - Code Node Guide: https://docs.n8n.io/code/code-node/
 - Python in n8n: https://docs.n8n.io/code/builtin/python-modules/
+
+---
+
+## ⚠️ Gotchas
+
+### 1. No Hay Librerías Externas — `import requests` Falla Silenciosamente
+
+**Por qué**: n8n no tiene instalados pandas, numpy, requests, BeautifulSoup ni ninguna librería externa de Python. Intentar importarlas lanza `ModuleNotFoundError` en ejecución.
+
+**Solución**: Usa solo `import json`, `datetime`, `re`, `base64`, `hashlib`, `urllib.parse`, `math`, `random`, `statistics` (standard library). Para HTTP requests, usa un HTTP Request node antes del Code node o cambia a JavaScript con `$helpers.httpRequest()`.
+
+### 2. Confusión entre Modo Beta y Modo Native
+
+**Por qué**: Python (Beta) usa `_input.all()`, `_input.first()`, `_input.item`, `_node`, `_now`. Python (Native) solo tiene `_items` y `_item` — sin helpers. Mezclar las sintaxis produce `NameError`.
+
+**Solución**: Usa **Python (Beta)** siempre que sea posible. Native mode es más limitado y no recomendado. Verifica en la UI del Code node cuál modo está seleccionado antes de escribir código.
+
+### 3. KeyError en Acceso a Diccionarios
+
+**Por qué**: En Python, `item["json"]["field"]` lanza `KeyError` si la clave no existe. JavaScript maneja `undefined` más tolerantemente, pero Python es estricto.
+
+**Solución**: Siempre usa `.get()`: `item["json"].get("field", "default")`. Para acceso anidado: `item.get("json", {}).get("field", "default")`. Esto previene crashes en datos faltantes.
+
+### 4. Diferencia de Sintaxis al Migrar desde JavaScript
+
+**Por qué**: JavaScript usa `$input`, `$json`, `$node` con `$`. Python usa `_input`, `_json`, `_node` con `_`. Cambiar de lenguaje sin ajustar los prefijos es el error más común al alternar.
+
+**Solución**: Si migras código JS a Python, busca y reemplaza: `$input` → `_input`, `$json` → `_json`, `$node` → `_node`, `$helpers.httpRequest()` → no disponible en Python (usa HTTP Request node).
+
+## 💾 State Persistence
+
+| Qué | Dónde | Notas |
+|-----|-------|-------|
+| Código Python del Code node | Dentro del workflow JSON de n8n (propiedad `parameters.code`) | Persistido al guardar el workflow |
+| Output de ejecución | n8n execution log | Efímero |
+| Módulos standard library | Entorno n8n server | Fijos, no se pueden instalar nuevos |
+
+No hay almacenamiento externo de archivos. Todo el estado vive dentro del workflow n8n. Python no tiene acceso a `$helpers` — usa nodos n8n dedicados para HTTP, fechas avanzadas, etc.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: remotion-best-practices
-description: Best practices for Remotion - Video creation in React
+description: "Best practices for Remotion - Video creation in React. Triggers: Remotion, video, animación, composición, render, React animation, video editing, performance Remotion."
 metadata:
   tags: remotion, video, react, animation, composition
 ---
@@ -59,3 +59,36 @@ Read individual rule files for detailed explanations and code examples:
 - [rules/videos.md](rules/videos.md) - Embedding videos in Remotion - trimming, volume, speed, looping, pitch
 - [rules/parameters.md](rules/parameters.md) - Make a video parametrizable by adding a Zod schema
 - [rules/maps.md](rules/maps.md) - Add a map using Mapbox and animate it
+
+## ⚠️ Gotchas
+
+### No auditar performance antes de render final
+> Escribir animaciones complejas sin verificar el tiempo de render por frame.
+
+- **Por qué**: Una animación que corre a 60fps en desarrollo puede tardar 5+ segundos por frame en render final si tiene cálculos pesados, imágenes grandes o muchos elementos DOM. El tiempo de render total se vuelve inviable.
+- **Solución**: Usar `npx remotion benchmark` y la solapa "Performance" del Studio. Identificar frames lentos con `<Timeline>`. Aplicar `useMemo()`, `<Freeze>`, y evitar re-renders innecesarios.
+
+### Ignorar el bundler (Webpack/Vite) para optimización de assets
+> Usar imágenes de 4000x4000px sin optimizar o videos en formatos no soportados por el navegador.
+
+- **Por qué**: Remotion incluye cada asset importado en el bundle. Una imagen de 12MB se convierte en 12MB dentro del bundle de render. Videos sin comprimir aumentan drásticamente el memory usage.
+- **Solución**: Pre-optimizar imágenes a la resolución máxima de despliegue (1920x1080). Usar WebM para videos. Comprimir assets antes de importarlos. Para imágenes, usar formatos modernos (WebP).
+
+### No separar lógica por composiciones (monolito)
+> Poner toda la animación en una sola composición de 10,000 frames con todo el código en un solo archivo.
+
+- **Por qué**: Una composición monolítica es imposible de debuggear, testear, o reusar. Si falla en el frame 8,000, hay que re-renderizar desde el frame 1. Además, `useCurrentFrame()` se vuelve inmanejable con lógica condicional anidada.
+- **Solución**: Dividir en composiciones pequeñas (< 500 frames cada una) y orquestar con `<Sequence>`. Cada escena es su propia composición. Usar `interpolate()` por escena, no global.
+
+## 💾 State Persistence
+
+> **Qué persists**: Reglas de best practices cargadas, configuraciones de auditoría, benchmarks de performance.
+> **Dónde**: Repositorio del proyecto y archivos de reglas (`rules/*.md`).
+> **Cuándo restore**: Al iniciar un nuevo proyecto o retomar uno existente, restaurar las reglas de best practices relevantes.
+> **Formato**: Archivos markdown con reglas + configuración de proyecto.
+
+### Estado que se preserva entre sesiones:
+1. **Reglas activas**: Best practices cargadas según el tipo de proyecto (3D, captions, charts, etc.).
+2. **Benchmarks de performance**: Tiempos de render por composición registrados.
+3. **Configuración de FFmpeg**: Parámetros de encoding, codecs y formatos.
+4. **Patrones de animación**: Timing curves exitsosas y spring configurations probadas.

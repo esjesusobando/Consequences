@@ -3,11 +3,17 @@ name: sdd-explore
 description: >
   Explore and investigate ideas before committing to a change.
   Trigger: When the orchestrator launches you to think through a feature, investigate the codebase, or clarify requirements.
+  Triggers on: "explore this idea", "investigate this feature", "research this approach", "think through this", "analyze options", "compare approaches".
 license: MIT
 metadata:
   author: gentleman-programming
   version: "2.0"
 ---
+
+## Esencia Original
+
+- **Metaskill**: Previene implementación desperdiciada forzando investigación antes del compromiso. Muchos cambios fallan porque se saltean el paso de "¿es este siquiera el enfoque correcto?".
+- **Propósito original**: Des-riesgar decisiones. Cada cambio SDD comienza con investigación — leer el codebase, entender restricciones, comparar alternativas — para que la propuesta que sigue esté basada en realidad.
 
 ## Purpose
 
@@ -117,6 +123,27 @@ Return EXACTLY this format to the orchestrator (and write the same content to `e
 ### Ready for Proposal
 {Yes/No — and what the orchestrator should tell the user}
 ```
+
+## ⚠️ Gotchas
+
+### Gotcha 1: La exploración puede derivar en solución (diseñar en vez de explorar)
+- **Por qué**: Es tentador saltar a "cómo implementar" cuando se está explorando "qué opciones existen".
+- **Solución**: Mantener el foco en análisis y comparación. Si aparece una solución obvia, documentarla como recomendación pero no escribir el diseño completo — eso es trabajo de `sdd-design`.
+
+### Gotcha 2: Leer el codebase puede inflarse con código irrelevante
+- **Por qué**: Sin un límite claro, la exploración puede leer archivos que no están relacionados con el tema.
+- **Solución**: Comenzar con búsquedas específicas (grep por términos clave, leer entry points) y solo profundizar cuando sea necesario. Usar el Principio de Pareto: 20% de los archivos dan 80% del contexto.
+
+### Gotcha 3: Recomendar sin información suficiente
+- **Por qué**: A veces el codebase no tiene suficiente información para tomar una decisión informada.
+- **Solución**: Ser explícito sobre lo que NO se sabe. Documentar suposiciones y marcarlas como "requiere verificación". Si es necesario, recomendar un spike/prototype como siguiente paso.
+
+## 💾 State Persistence
+
+El estado de esta fase se persiste en:
+- **Change folder**: `openspec/changes/{change-name}/exploration.md` (solo cuando está vinculado a un cambio con nombre).
+- **Engram observations**: Via `mem_save` con `topic_key: sdd/{change-name}/explore`, `type: architecture`.
+- **Standalone exploration**: `mem_save` con `topic_key: sdd/explore/{topic-slug}` si no está vinculado a un cambio.
 
 ## Rules
 

@@ -40,6 +40,18 @@ Soy el **punto de entrada único** al PersonalOS. No ejecuto tareas especializad
 
 ---
 
+## Esencia Original
+
+> **Metaskill:** La skill que orquesta a todas las otras skills. Sin el Conductor, el usuario tiene que saber qué skill usar para cada tarea — rompiendo la promesa de "un entry point único" del PersonalOS.
+
+El Conductor nace de una verdad incómoda: el Orchestrator v4.0 era un archivo plano sin mecanismo de delegación real. El PersonalOS tenía 100+ skills y 47 agentes, pero no había quién supiera cuál usar para cada cosa.
+
+**Propósito original:** Ser el cerebro que conoce TODO el mapa de skills y agentes, para que el usuario solo tenga que decir qué necesita. El Conductor no es experto en nada — pero sabe quién es experto en cada cosa.
+
+**Por qué no puede desaparecer:** Sin entry point único, el sistema colapsa en complejidad. El usuario tendría que leer 12 áreas de skills para saber por dónde empezar.
+
+---
+
 ## 🗺️ Mapa de Dominio del OS
 
 12 áreas de skills + 47 agentes especializados:
@@ -62,6 +74,23 @@ Soy el **punto de entrada único** al PersonalOS. No ejecuto tareas especializad
 > La columna Prioridad actúa como **tiebreaker** cuando un request matchea múltiples áreas: CORE > ALTA > MEDIA > AUDIT.
 
 **Referencia completa:** [`registry.md`](registry.md)
+
+---
+
+## 🔒 On-Demand Hooks (Tool Restrictions)
+
+Cuando el Conductor está activo, las siguientes herramientas están RESTRINGIDAS:
+
+| Herramienta | Estado | Razón |
+|------------|--------|-------|
+| **Editar archivos** (`edit`, `write`) | 🚫 BLOQUEADO | El Conductor orquesta, no implementa. Las skills editan archivos. |
+| **Ejecutar código** (`bash` para compilar/testear) | 🚫 BLOQUEADO | Solo skills especializadas ejecutan código. |
+| **Git commits/push** | 🚫 BLOQUEADO | Solo SDD flow o `ce-commit` skills hacen commits. |
+| **Leer archivos** (`read`, `grep`, `glob`) | ✅ PERMITIDO | Necesario para diagnosticar OS y verificar skills. |
+| **Invocar skills** (`skill()`) | ✅ PERMITIDO | Es la función principal del Conductor. |
+| **Comunicación** (texto al usuario) | ✅ PERMITIDO | Esencial para Sprint Contract y verificación. |
+
+> ⚠️ Si una skill delegada necesita alguna herramienta bloqueada, el Conductor le pasa el control completo durante su ejecución. Las restricciones aplican solo al rol de **orquestación**.
 
 ---
 
@@ -293,6 +322,64 @@ Para sesiones largas con el Conductor:
 
 ---
 
+## ⚠️ Gotchas
+
+### ERROR 1: Auto-referencia — El Conductor se invoca a sí mismo
+- **Por qué**: Si el trigger set del Conductor es muy amplio, el modelo puede interpretar que debe "ejecutar el Conductor" como skill destino, creando un loop infinito.
+- **Solución**: La regla de auto-exclusión es explícita y va ANTES del ruteo. Si un request matchea los triggers del Conductor, no se re-selecciona — se procesa directamente. Verificar en tests que el Conductor nunca aparezca como skill destino.
+
+### ERROR 2: Delegación sin contexto de contrato
+- **Por qué**: Delegar a una skill sin pasarle los criterios del Sprint Contract hace que la skill genere output que no cumple lo acordado, y el error se descubre recién en la verificación final.
+- **Solución**: En el paso `skill()` de delegación, inyectar SIEMPRE: `intent del usuario` + `criterios del contrato` + `formato de output esperado`. Así la skill puede auto-verificar antes de devolver.
+
+### ERROR 3: Flujo incompleto por omitir verificación intermedia
+- **Por qué**: En flujos compuestos de 4+ pasos, es tentador ejecutar todo y verificar al final. Pero si el paso 2 falló, los pasos 3-5 trabajan sobre datos incorrectos y hay que rehacer todo.
+- **Solución**: Verificar CADA paso contra su criterio del contrato antes de avanzar al siguiente. Si falla, re-ejecutar ese paso (máx 2 intentos) — no seguir adelante.
+
+### ERROR 4: Ruteo ambiguo sin clarificación al usuario
+- **Por qué**: Cuando un request matchea 2 áreas (ej: "hacer un video de marketing" matchea `03_Video_Media` y `01_Creacion_Contenidos`), elegir por default puede mandar al skill equivocado.
+- **Solución**: Multi-categoría (3+ áreas) → preguntar siempre. 2 áreas → aplicar tiebreaker por prioridad pero documentar la decisión: "Ruteo a [X] por prioridad [Y]. Si no es correcto, decime."
+
+---
+
+## 📜 Scripts de Soporte
+
+| Script | Propósito |
+|--------|-----------|
+| [`scripts/validate-registry.py`](scripts/validate-registry.py) | Valida que todas las skills del registry existan en disco |
+| [`scripts/init-contract.sh`](scripts/init-contract.sh) | Scaffolds un Sprint Contract en `references/contracts/` |
+| [`scripts/run_evals.py`](scripts/run_evals.py) | Ejecuta tests cuantitativos contra el Conductor |
+
+> Los scripts son herramientas auxiliares. El Conductor no depende de ellos para operar.
+
+---
+
+### 🎯 Evals & Benchmarks (v2.0)
+
+El Conductor incluye un sistema de **evaluación cuantitativa** siguiendo Skill Creator v2.0:
+
+| Artifact | Propósito |
+|----------|-----------|
+| [`evals.json`](evals.json) | Define 7 tests de ruteo, auto-exclusión, multi-categoría, Sprint Contract y diagnóstico |
+| [`scripts/run_evals.py`](scripts/run_evals.py) | Ejecuta los tests y mide Pass@k contra los targets definidos |
+
+**Pass@k Metrics targets:**
+- Routing Accuracy: >90%
+- Auto-Exclusion: 100%
+- Flow Completion: >80%
+- Contract Fulfillment: >95%
+
+---
+
+## 📚 Runbooks Operativos
+
+| Runbook | Cuándo usarlo |
+|---------|---------------|
+| [`references/runbooks/01-recovery.md`](references/runbooks/01-recovery.md) | Una skill falló durante un flujo compuesto |
+| [`references/runbooks/02-diagnosis.md`](references/runbooks/02-diagnosis.md) | El usuario pide un diagnóstico general del OS |
+
+---
+
 ## 🔗 Referencias
 
 - **Registry completo:** [`registry.md`](registry.md) — mapa skill-por-skill
@@ -300,5 +387,7 @@ Para sesiones largas con el Conductor:
 - **Catálogo de skills:** `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
 - **Ranking:** `01_Personal_Os/01_Core/02_Tools/02_Skills/TOP_20_SKILLS.md`
 - **Agentes:** `01_Personal_Os/01_Core/02_Tools/01_Agents/README.md`
+- **Scripts:** [`scripts/`](scripts/)
 - **Flujos detallados:** [`references/compound-flows.md`](references/compound-flows.md)
 - **Sprint Contract template:** [`references/sprint-contract.md`](references/sprint-contract.md)
+- **Runbooks:** [`references/runbooks/`](references/runbooks/)

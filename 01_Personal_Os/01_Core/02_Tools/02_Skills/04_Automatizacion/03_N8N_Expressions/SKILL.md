@@ -1,11 +1,19 @@
 ---
 name: n8n-expression-syntax
-description: Validate n8n expression syntax and fix common errors. Use when writing n8n expressions, using {{}} syntax, accessing $json/$node variables, troubleshooting expression errors, or working with webhook data in workflows.
+description: Validate n8n expression syntax and fix common errors. Use when writing n8n expressions, using {{}} syntax, accessing $json/$node variables, troubleshooting expression errors, or working with webhook data in workflows. Triggers on: expressions, curly braces {{}}, $json/$node variables, webhook data, expression debugging
 ---
 
 # n8n Expression Syntax
 
 Expert guide for writing correct n8n expressions in workflows.
+
+---
+
+## Esencia Original
+
+**Metaskill**: Decode n8n's double-curly-brace expression language — a distinct mini-language that differs from JavaScript and Python used inside Code nodes. Covers $json, $node, $now, $env variable access patterns.
+
+**Propósito original**: Prevent the single most common error category in n8n workflows: expression syntax mistakes. Includes webhook data nesting (.body), node name quoting, case sensitivity, and context-aware usage (when NOT to use expressions).
 
 ---
 
@@ -510,6 +518,44 @@ Hello {{$json.name}}!
 For more details, see:
 - [COMMON_MISTAKES.md](COMMON_MISTAKES.md) - Complete error catalog
 - [EXAMPLES.md](EXAMPLES.md) - Real workflow examples
+
+---
+
+## ⚠️ Gotchas
+
+### 1. Nombres de Nodo con Espacios Requieren Sintaxis Especial
+
+**Por qué**: `{{$node.HTTP Request.json.data}}` no funciona porque el parser interpreta el espacio como un separador de sintaxis, no como parte del nombre.
+
+**Solución**: Usa bracket notation con quotes: `{{$node["HTTP Request"].json.data}}`. Siempre que un nombre de nodo tenga espacios (común en "HTTP Request", "Respond to Webhook", "Split In Batches"), usa `["" ]`.
+
+### 2. Case Sensitivity en Referencias a Nodos
+
+**Por qué**: `{{$node["http request"].json.data}}` no encuentra el nodo "HTTP Request" por diferencia de mayúsculas. n8n trata los nombres de nodo como case-sensitive.
+
+**Solución**: Verifica el nombre exacto del nodo en el workflow (incluyendo mayúsculas, espacios, caracteres especiales). Una forma segura: copia el nombre del nodo desde el canvas del workflow.
+
+### 3. Doble Wrapping {{{}}} Causa Parse Errors
+
+**Por qué**: `{{{ $json.field }}}` intenta evaluar `{$json.field}` como expresión anidada, lo que produce un error de parseo.
+
+**Solución**: Usa exactamente dos curly braces: `{{$json.field}}`. Si ves un error de parseo en una expresión, verifica que no tenga braces extra.
+
+### 4. NO Usar {{ }} en Code Nodes (Pero Sí en Expression Fields)
+
+**Por qué**: Code nodes ejecutan JavaScript o Python directamente — las expresiones `{{ }}` no se interpretan y se tratan como strings literales. Es el error más común entre usuarios nuevos.
+
+**Solución**: En Code nodes usa `$json.field` (JS) o `_json["field"]` (Python). En fields de configuración de otros nodos (Set, IF, HTTP Request, etc.) usa `{{$json.field}}`. Si ves el texto literal `{{$json.field}}` en la salida, significa que estás en un Code node y debes quitar los braces.
+
+## 💾 State Persistence
+
+| Qué | Dónde | Notas |
+|-----|-------|-------|
+| Expresiones en campos de nodos | Dentro del workflow JSON de n8n | Persistido al guardar |
+| Contexto de expresión ($json, $node) | En memoria durante ejecución | Efímero, existe solo durante el execution run |
+| Variables de entorno ($env) | Configuración de la instancia n8n | No se setean desde expresiones |
+
+Las expresiones no tienen estado persistente por sí mismas — son referencias dinámicas a datos que fluyen a través del workflow. El estado real está en los datos del workflow en ejecución.
 
 ---
 

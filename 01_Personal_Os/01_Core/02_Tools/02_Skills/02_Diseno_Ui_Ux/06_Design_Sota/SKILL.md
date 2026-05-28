@@ -4,10 +4,12 @@ description: >
   Arquitecto de interfaces digitales de elite que fusiona minimalismo editorial con diseño de alto impacto.
   Usa cuando: (1) Generar UIs premium con estética Stripe/Linear/Vercel, (2) Crear dashboards con jerarquía tipográfica editorial, (3) Implementar diseños asimétricos tipo bento grid, (4) Aplicar paletas monocromáticas cálidas + acentos funcionales, (5) Reemplazar tarjetas genéricas con separadores sutiles, (6)厌恶(love) tipografías Geist/Outfit/Satoshi sobre Inter.
   Combina el minimalismo cálida (crema, serif editorial, hairlines 1px) con la asimetria power-user (grid 12 cols, variance 8, motion 6).
+  Triggers on: diseño SOTA, minimalismo editorial, UI premium, bento grid, diseño asimétrico, tipografía editorial, dashboard editorial
 license: Apache-2.0
 metadata:
   author: personal-os
   version: "1.0"
+version: 1.1.0
 ---
 
 # Design SOTA: Minimalismo Editorial + Alto Impacto
@@ -15,6 +17,10 @@ metadata:
 > "La mejor UI no se nota — se siente. Cada pixel respira, cada hairline estructura, cada número cuenta una historia."
 
 Fusiona el **minimalismo utilitario premium** (paleta crema, serif editorial, pasteles desaturados) con el **diseño de alto agency** (asimetría, Geist, acentos funcional). El resultado: interfaces que se leen como publicaciones, no como paneles SaaS genéricos.
+
+## Esencia Original
+
+Esta skill no es un theme de Tailwind ni un design system — es una **filosofía de interfaz** que nace de la observación de cómo Stripe, Linear y Vercel rompieron el molde del SaaS genérico. En lugar de cards flotantes y gradientes púrpura, la belleza está en la jerarquía tipográfica editorial, los hairline borders de 1px y los espacios que respiran. Una interfaz no necesita decoración cuando tiene estructura.
 
 ---
 
@@ -338,3 +344,51 @@ useEffect(() => {
 9. MOTION: fade 600ms + micro-scale — nunca todo a la vez
 10. HIERARCHY: serif para números macro, mono para labels
 ```
+
+## ⚠️ Gotchas
+
+### Cobertura de acento excesiva
+> El error más común: pintar el 50% de la pantalla con el color de acento.
+
+- **Por qué**: Un acento en emerald o sky se vuelve wallpaper si ocupa mucho espacio. Pierde su función de señal.
+- **Solución**: Regla del 5% — el acento solo en badges, labels de estado, highlights inline. Si necesitas más color, usa tonos ultra-desaturados.
+
+### Cards flotantes con sombra
+> Recaer en `rounded-2xl shadow-xl` es el default de toda AI y todo framework CSS.
+
+- **Por qué**: Las sombras crean jerarquías falsas. Todo parece "elevado" y nada tiene estructura real.
+- **Solución**: Usar `border-t` + espaciado. Si necesitas contenedor, usa `border border-[#EAEAEA]` sin sombra.
+
+### Tipografía por defecto
+> Terminar con Inter, Roboto o system-ui porque "es más seguro".
+
+- **Por qué**: Inter es funcional pero genérica. La diferencia entre Geist/Outfit y Inter es la diferencia entre una publicación editorial y un formulario.
+- **Solución**: Cargar Geist desde `next/font` o CDN. Si no es posible, Satoshi o Cabinet Grotesk como fallback.
+
+### Copy sin números concretos
+> Poner "Mejora tu productividad" en lugar de "Clasifica 840k docs en 11 min".
+
+- **Por qué**: El copy sin números no genera confianza ni curiosidad. Es ruido.
+- **Solución**: Antes de escribir cualquier headline, preguntar: "¿Qué número va aquí?". Si no hay número, inventar un caso de uso realista con métrica.
+
+---
+
+*Skill Version: 1.1.0*
+
+---
+
+## 💾 State Persistence
+
+### What to persist between sessions
+
+| Dato | Cómo se persiste | Cuándo restaurar |
+|------|-----------------|-----------------|
+| **Design variance elegido** | Variable de entorno o config `DESIGN_VARIANCE`, `MOTION_INTENSITY`, `VISUAL_DENSITY` | Al iniciar un nuevo proyecto con el mismo perfil de producto |
+| **Paleta activa** (claro/oscuro) | Preferencia del último diseño generado | Si el usuario pide "seguir con el mismo tono" |
+| **Stack tipográfico** | Fuentes cargadas y verificadas (`Geist`, `Newsreader`, etc.) | Cada sesión — verificar disponibilidad via `next/font` o CDN |
+| **Anti-patrones evitados** | Memoria de decisiones vía `mem_save` (Engram) | Cuando el usuario pide revisión de diseño previo |
+
+### Reglas de persistencia
+- **NO** guardar componentes enteros en memoria — el código fuente es el source of truth
+- **SÍ** guardar preferencias estilísticas del usuario (modo oscuro/claro, variance preference)
+- La configuración activa se declara al inicio de cada sesión via las barras de configuración (sección 1)

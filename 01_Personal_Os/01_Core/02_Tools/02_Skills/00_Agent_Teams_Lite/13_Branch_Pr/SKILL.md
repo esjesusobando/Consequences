@@ -3,11 +3,20 @@ name: branch-pr
 description: >
   PR creation workflow for Agent Teams Lite following the issue-first enforcement system.
   Trigger: When creating a pull request, opening a PR, or preparing changes for review.
+  Triggers on: pull request, PR creation, branch preparation, code review, GitHub PR, opening PR, PR template
 license: Apache-2.0
 metadata:
   author: gentleman-programming
   version: "2.0"
 ---
+
+## Esencia Original
+
+### Metaskill
+What specific problem this skill phase solves: Enforcing a strict issue-first PR workflow where every pull request is traceable to an approved issue, follows conventional commit conventions, passes automated checks, and meets the project's branch naming and labeling standards.
+
+### Propósito original
+Why this phase exists: To prevent untracked, unapproved changes from entering the codebase by making the PR process a mechanical enforcement of the issue-first policy — branch naming, label requirements, shellcheck, and template compliance are all checked automatically.
 
 ## When to Use
 
@@ -15,6 +24,29 @@ Use this skill when:
 - Creating a pull request for any change
 - Preparing a branch for submission
 - Helping a contributor open a PR
+
+## ⚠️ Gotchas
+
+### Gotcha 1: Opening a PR without an approved issue
+**Por qué**: The issue-first enforcement system blocks PRs that don't link a `status:approved` issue. If you skip this check and create the PR anyway, the GitHub Actions workflow will reject it.
+**Solución**: Always verify the issue has `status:approved` BEFORE creating the branch. Run `gh issue view <number> --json labels` to confirm before any work starts.
+
+### Gotcha 2: Mismatch between conventional commit type and PR label
+**Por qué**: The commit type (e.g., `feat`) must map to the correct PR label (e.g., `type:feature`). A `docs:` commit with a `type:feature` label will fail the automated check.
+**Solución**: Use the type-to-label mapping table in the skill to ensure consistency. The commit type AND the PR label must match the same category.
+
+### Gotcha 3: Shellcheck passes locally but fails in CI due to different shell version
+**Por qué**: The local shellcheck version might be older or have different default rules. A script that passes locally may reveal warnings on the CI runner's shellcheck version.
+**Solución**: Use `shellcheck --norc` to avoid local config interference. Better yet, run shellcheck via the same Docker image used in CI or check the CI's shellcheck version in the workflow file.
+
+## 💾 State Persistence
+
+This skill does NOT manage SDD artifact state. It provides a PR creation workflow only.
+
+- **Branch state**: Managed by git — the branch name encodes the type and scope.
+- **PR state**: Managed by GitHub — the PR body, labels, and linked issue are all GitHub state.
+- **Check state**: Managed by GitHub Actions — automated checks run on push/PR open.
+- **No engram/openspec integration**: This skill is purely about the GitHub PR workflow. SDD state management (if used before branching) is handled by the SDD skills.
 
 ---
 

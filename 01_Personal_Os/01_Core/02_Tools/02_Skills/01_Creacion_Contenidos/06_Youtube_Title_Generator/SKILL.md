@@ -1,6 +1,6 @@
 ---
 name: youtube-title-generator
-description: "Genera títulos de YouTube con variantes, scoring de CTR y recomendación final."
+description: "Genera títulos de YouTube con variantes, scoring de CTR y recomendación final. Triggers on: youtube titles, CTR optimization, title A/B testing, video headlines, click-through rate scoring"
 license: Apache-2.0
 metadata:
   author: gentleman-programming
@@ -10,6 +10,11 @@ metadata:
 # Youtube Title Generator
 
 > Genera múltiples títulos optimizados para YouTube con scoring.
+
+## Esencia Original
+
+- **Metaskill**: Convertir el contenido de un video en 10+ variantes de título con scoring cuantificable (CTR, searchability, brand fit), emulando el trabajo de un equipo degrowth hacking editorial.
+- **Propósito original**: Resolver el problema de que creators pasan más tiempo del necesario eligiendo títulos — esta skill aplica fórmulas probadas (how-to, numbers, controversy, story) y las rankea objetivamente para maximizar clicks sin perder autenticidad.
 
 ## Propósito
 
@@ -97,6 +102,26 @@ Toma el guion o contenido de un video y genera 10+ variantes de título con aná
 
 **Input:** Video sobre "AI para crear contenido"
 **Output:** 12 títulos con scores, incluyendo "Cómo tripliqué mi producción de contenido con AI (sin ser experto)"
+
+---
+
+## ⚠️ Gotchas
+
+1. **Títulos que sobre-prometen y dañan la retención**
+   - **Por qué**: El scoring de CTR puede favorecer títulos agresivos que maximizan clicks pero generan decepción cuando el video no cumple, destruyendo la confianza del canal a largo plazo.
+   - **Solución**: Incluir un filtro de "promesa realista" que verifique que el título no exceda lo que el guion realmente entrega — priorizar títulos con score balanceado (CTR + Brand fit) sobre los de CTR puro.
+
+2. **Keywords stuffing que mata la legibilidad**
+   - **Por qué**: Al optimizar para searchability, la skill puede generar títulos cargados de keywords que suenan robóticos o forzados, reduciendo el click real aunque el score de search sea alto.
+   - **Solución**: Añadir una regla de "natural language test": el título debe sonar natural cuando se lee en voz alta. Penalizar en el scoring si parece una sopa de keywords.
+
+3. **Sesgo cultural en las fórmulas de título**
+   - **Por qué**: Fórmulas como "how-to" o "numbers" funcionan distinto en audiencias de habla hispana vs inglesa. Un título que funciona en USA puede sonar artificial en LATAM.
+   - **Solución**: Parametrizar el "mercado objetivo" en el input y ajustar las fórmulas y ejemplos según el contexto cultural y regional del canal.
+
+## 💾 State Persistence
+
+Esta skill es stateless. Cada invocación genera títulos basados exclusivamente en el guion/resumen proporcionado. No hay memoria de títulos generados previamente para el mismo contenido. Para A/B testing histórico, el orquestador debe gestionar el registro de variantes usadas y sus resultados.
 
 ---
 

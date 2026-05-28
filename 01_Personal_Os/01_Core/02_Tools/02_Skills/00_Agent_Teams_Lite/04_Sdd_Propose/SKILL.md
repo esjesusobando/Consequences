@@ -3,11 +3,17 @@ name: sdd-propose
 description: >
   Create a change proposal with intent, scope, and approach.
   Trigger: When the orchestrator launches you to create or update a proposal for a change.
+  Triggers on: "propose a change", "create proposal", "write proposal", "propose solution", "outline approach", "make a proposal".
 license: MIT
 metadata:
   author: gentleman-programming
   version: "2.0"
 ---
+
+## Esencia Original
+
+- **Metaskill**: Las propuestas definen el QUÉ y el POR QUÉ antes de escribir código. Previenen "solución en busca de un problema" forzando intención y alcance explícitos.
+- **Propósito original**: Formalizar la decisión de hacer un cambio. La propuesta documenta el problema, enfoque, alcance, riesgos y criterios de éxito — es el contrato entre la intención y la ejecución.
 
 ## Purpose
 
@@ -134,6 +140,27 @@ Return to the orchestrator:
 ### Next Step
 Ready for specs (sdd-spec) or design (sdd-design).
 ```
+
+## ⚠️ Gotchas
+
+### Gotcha 1: Scope creep — la propuesta empieza resolviendo una cosa y se expande a muchas
+- **Por qué**: Es natural querer resolver problemas relacionados "ya que estamos aquí".
+- **Solución**: La sección "Out of Scope" es tu mejor aliada. Ser explícito sobre lo que NO se hace. Si algo relacionado aparece, documentarlo como "futuro trabajo" pero mantener el alcance del cambio actual ajustado.
+
+### Gotcha 2: Rollback plan puede ser vago o inexistente
+- **Por qué**: Es incómodo planear el fracaso, y a menudo se asume que no hará falta.
+- **Solución**: Para cada archivo modificado, preguntar: "¿cómo vuelvo esto atrás?". Para cambios de datos: migración inversa. Para cambios de API: versionado. Para cambios de UI: feature flags. Un rollback plan que dice "revertir el commit" no es suficiente.
+
+### Gotcha 3: Criterios de éxito no testables
+- **Por qué**: "El usuario puede hacer X" no es medible sin contexto.
+- **Solución**: Cada criterio debe poder responderse con un "sí" o "no" objetivo. "La API responde 200 OK con payload válido" es mejor que "la API funciona". Si no se puede medir en una sesión de implementación, no es un buen criterio de éxito.
+
+## 💾 State Persistence
+
+El estado de esta fase se persiste en:
+- **Change folder**: `openspec/changes/{change-name}/proposal.md` (modos `openspec` e `hybrid`).
+- **Engram observations**: Via `mem_save` con `topic_key: sdd/{change-name}/proposal`, `type: architecture`.
+- **Modo `none`**: Solo retorno inline, sin persistencia en disco.
 
 ## Rules
 

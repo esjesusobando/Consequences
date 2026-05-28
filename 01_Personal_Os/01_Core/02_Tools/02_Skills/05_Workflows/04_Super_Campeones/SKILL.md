@@ -5,9 +5,21 @@ description: >
   Director (Orquestador) + Jugadores especializados + Árbitro (GGA).
   Activa cuando: "delegá esto", "coordiná el equipo", "usa el Dream Team", "multi-agente",
   "subagentes", "fork subagent".
+  Triggers on: delegá esto, coordiná el equipo, usa el Dream Team, multi-agente, subagentes, fork subagent, agent teams protocol
 ---
 
 # ⚽ SUPERCAMPEONES — Agent Teams Protocol
+
+## Esencia Original
+
+Este skill implementa el protocolo de equipos multi-agente de Supercampeones,
+inspirado en la analogía del Dream Team de fútbol. El Director (orquestador)
+es el único punto de contacto con el usuario; los Jugadores ejecutan tareas
+especializadas en paralelo mediante forks o subagentes tipados; y el Árbitro
+(GGA) verifica calidad y consistencia contra el plan aprobado. Nació de la
+necesidad de escalar la capacidad de un agente único sin perder calidad,
+compartiendo contexto vía fork para ahorrar tokens, y manteniendo supervisión
+centralizada.
 
 ## Concepto
 
@@ -115,6 +127,24 @@ export CLAUDE_CODE_FORK_SUBAGENT=1
 - ❌ NO usar fork si las tareas tienen interdependencias
 - ❌ NO usar fork si se requiere validación entre brazos
 
+## ⚠️ Gotchas (SOTA v5.1)
+
+### 1. Fork con modelo lite inesperado
+- **Por qué**: El flag `context: fork` puede resolver a un modelo más barato/lite que el orquestador, degradando calidad de salida.
+- **Solución**: Especificar modelo explícitamente en el fork o verificar el modelo asignado antes de delegar tareas críticas.
+
+### 2. Contexto compartido se desincroniza
+- **Por qué**: Los forks son ramas paralelas independientes — no comparten output entre sí. Si un jugador necesita resultado de otro, hay que coordinar manualmente.
+- **Solución**: Para tareas con interdependencias, usar subagente tipado secuencial en vez de fork paralelo. Documentar dependencias antes del fork.
+
+### 3. Output de fork excede límite de contexto
+- **Por qué**: Un fork puede generar >50KB de output, causando truncamiento o fallo al reincorporar al orquestador.
+- **Solución**: Implementar summarize obligatorio post-fork si el output estimado excede 50KB. Usar `maxTokens` o límites por step.
+
+### 4. Contaminación de contexto padre
+- **Por qué**: Si el contexto del orquestador está contaminado (herramientas rotas, estado inconsistente) antes del fork, el jugador hereda el problema.
+- **Solución**: Aplicar limpieza de contexto antes de cada fork. Verificar que el estado del orquestador sea limpio. Preferir subagente tipado si hay duda.
+
 ## Integración SDD
 
 | Fase SDD  | Rol Supercampeones   |
@@ -132,4 +162,18 @@ export CLAUDE_CODE_FORK_SUBAGENT=1
 
 ---
 
-*Skill Supercampeones — v1.0 | Activated 2026-04-25*
+## 💾 State Persistence
+
+| State              | Almacenamiento              | Persistencia     |
+|--------------------|-----------------------------|------------------|
+| Contexto de fork   | Memoria del subagente       | Sesión (volátil) |
+| Output de jugadores| Resumen incorporado al padre| Hasta resuelto   |
+| Scorecard de calidad| GGA / reporte al usuario    | Por invoación    |
+| Plan de partido    | Contexto del Director       | Sesión completa  |
+
+El estado de los forks no persiste entre sesiones. Cada invocación del skill
+reconstruye el equipo desde el plan actual.
+
+---
+
+*Skill Supercampeones — v1.0 | Activated 2026-04-25 | SOTA v5.1*

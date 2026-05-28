@@ -1,11 +1,19 @@
 ---
 name: n8n-workflow-patterns
-description: Proven workflow architectural patterns from real n8n workflows. Use when building new workflows, designing workflow structure, choosing workflow patterns, planning workflow architecture, or asking about webhook processing, HTTP API integration, database operations, AI agent workflows, or scheduled tasks.
+description: Proven workflow architectural patterns from real n8n workflows. Use when building new workflows, designing workflow structure, choosing workflow patterns, planning workflow architecture, or asking about webhook processing, HTTP API integration, database operations, AI agent workflows, or scheduled tasks. Triggers on: workflow patterns, webhook processing, HTTP API integration, AI agent workflows, scheduled tasks, database operations
 ---
 
 # n8n Workflow Patterns
 
 Proven architectural patterns for building n8n workflows.
+
+---
+
+## Esencia Original
+
+**Metaskill**: Provide architectural blueprints (5 core patterns) for structuring n8n workflows — Webhook Processing, HTTP API Integration, Database Operations, AI Agent Workflows, and Scheduled Tasks. Not just how to configure nodes, but how to compose them into reliable automations with proper error handling.
+
+**Propósito original**: Reduce the 56-second average gap between workflow edits by planning architecture first. Covers data flow patterns (linear, branching, parallel, loop, error handler) and gives a reusable creation checklist.
 
 ---
 
@@ -403,6 +411,47 @@ Use `search_templates` and `get_template` from n8n-mcp tools to find examples!
 3. Use n8n MCP Tools Expert to find nodes
 4. Follow the workflow creation checklist
 5. Use n8n Validation Expert to validate
+
+---
+
+## ⚠️ Gotchas
+
+### 1. Webhook Data Structure: El Error #1 en Workflows
+
+**Por qué**: El Webhook node envuelve todo el payload bajo `.body` — `$json.body.name`, no `$json.name`. Este es el error más común en todos los patrones de workflow. Afecta a webhooks, formularios, integraciones con Slack, Stripe, GitHub, etc.
+
+**Solución**: Siempre accede a datos de webhook como `{{$json.body.field}}` (expressions) o `$json.body.field` (Code node). Para otros nodos como HTTP Request, los datos están en la raíz. Si no estás seguro, usa `$input.first().json` en Code node para inspeccionar la estructura completa.
+
+### 2. Modo de Ejecución de Nodos: v0 vs v1
+
+**Por qué**: n8n tiene dos modos de orden de ejecución. v0 (legacy) ejecuta top-to-bottom. v1 (recomendado) ejecuta basado en conexiones. Si un workflow se ejecuta en orden inesperado, puede deberse al modo legacy.
+
+**Solución**: En workflow settings, cambia Execution Order a v1 (connection-based). Esto asegura que los nodos se ejecuten según el flujo de datos, no según su posición vertical en el canvas.
+
+### 3. Múltiples Trigger Nodes en un Solo Workflow
+
+**Por qué**: n8n solo ejecuta un trigger por workflow. Si agregas dos triggers (ej. Webhook + Schedule), solo uno se ejecutará activamente y el otro será ignorado silenciosamente. Esto causa bugs difíciles de detectar.
+
+**Solución**: Usa exactamente un trigger node por workflow. Si necesitas múltiples puntos de entrada, crea workflows separados o usa el patrón de sub-workflow con Execute Workflow node. La validación de workflow (`validate_workflow`) muestra una warning si detecta múltiples triggers.
+
+### 4. No Planificar Error Handling Antes de Construir
+
+**Por qué**: Agregar error handling después de construir un workflow completo es difícil y requiere reestructurar conexiones. Los workflows sin error handling fallan silenciosamente o se detienen por completo.
+
+**Solución**: Incluye error handling en el plan del workflow desde el inicio. Usa Error Trigger node para flujos críticos, `continueOnFail` para nodos no esenciales, y el patrón de Error Handler del diagrama de flujo. La checklist de creación incluye esto deliberadamente en la fase de Planning.
+
+## 💾 State Persistence
+
+| Qué | Dónde | Notas |
+|-----|-------|-------|
+| Workflow completo (nodos + conexiones) | Base de datos de la instancia n8n | Exportable como archivo JSON |
+| Workflow activo/inactivo | Estado en la DB de n8n | Se activa vía API o UI |
+| Execution history | n8n execution log | Retención configurable |
+| Templates | n8n template library (cloud) | 2,700+ templates disponibles |
+
+Los workflows pueden exportarse como archivos `.json` para versionado en git. El estado activo/inactivo es parte del workflow en la DB de n8n.
+
+---
 
 **Related Skills**:
 - n8n MCP Tools Expert - Find and configure nodes

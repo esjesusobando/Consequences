@@ -6,6 +6,12 @@ version: 1.0.0
 
 # Design Systems / Component Architecture
 
+## Esencia Original
+
+**Metaskill**: Arquitectura completa de design systems — desde tokens y atomic design hasta shadcn/ui, Storybook y multi-brand theming. No es una skill de UI o de componentes sueltos; es una skill de **infraestructura visual** que resuelve cómo escalar el diseño de un equipo a través de sistemas tokenizados, documentados y testeables.
+
+**Propósito original**: Proveer una guía integral para construir y mantener design systems escalables. Nace de la necesidad de estandarizar el diseño visual a través de múltiples productos y marcas sin sacrificar consistencia. Cubre el ciclo de vida completo: tokens → componentes → documentación → testing → theming multi-marca.
+
 ## Purpose
 
 Design systems architecture establishes the foundation for scalable, consistent, and maintainable UI component libraries. This skill covers the complete lifecycle: from atomic design methodology and design token systems, through shadcn/ui customization, to Storybook documentation and multi-brand theming.
@@ -435,6 +441,40 @@ npx chromatic --project-token=CHROMATIC_PROJECT_TOKEN
 
 ---
 
+## ⚠️ Gotchas
+
+### Hardcodear valores en componentes
+> Poner `color: #3b82f6` o `padding: 16px` directamente en lugar de usar tokens.
+
+- **Por qué**: El valor hardcodeado no escala. Cambiar el color primario requiere buscar y reemplazar en 50 componentes. El design system se vuelve insostenible desde el día 1.
+- **Solución**: CSS custom properties para todo: `var(--color-primary-500)`, `var(--space-4)`. Linter rule que prohíba `#` en valores de color y números directos en spacing/font-size.
+
+### shadcn/ui sin personalización real
+> Usar shadcn/ui con los defaults exactos que vienen de fábrica.
+
+- **Por qué**: shadcn/ui es copy-paste ownership, pero si no personalizas los tokens CSS, tu app se ve idéntica a las otras 10,000 que usan shadcn/ui. No hay identidad visual.
+- **Solución**: Sobrescribir `--primary`, `--radius`, `--font-family` en `global.css`. Definir una paleta única y variantes de botón propias. El design system debe reflejar tu marca, no la de shadcn.
+
+### Olvidar documentar componentes en Storybook
+> Construir componentes pero no crear stories o documentación.
+
+- **Por qué**: Un componente sin documentación es invisible para el equipo. Nadie sabe que existe, nadie lo usa. Cada quien reinventa su propia versión → inconsistencia.
+- **Solución**: Cada componente nuevo debe tener story con `autodocs` habilitado y `argTypes` documentados. Integrar Chromatic para regression testing visual.
+
+### No aislar el theming multi-marca correctamente
+> Usar clases condicionales (`if brand === 'acme'`) en lugar de CSS variables con `data-theme`.
+
+- **Por qué**: Las clases condicionales requieren lógica en runtime y no separan concerns. Cada nueva marca requiere cambiar código en lugar de solo cambiar un archivo de tokens.
+- **Solución**: Usar `[data-theme="brand-name"]` en CSS para sobreescribir tokens. El componente consume `var(--color-primary)` sin saber qué marca es. Nueva marca = nuevo bloque de CSS variables, no código nuevo.
+
+### Token pipeline sin automatización
+> Mantener tokens manualmente en CSS/JS/JSON sin usar Style Dictionary.
+
+- **Por qué**: Los tokens existen en múltiples formatos (CSS, Tailwind config, TypeScript). Actualizarlos a mano garantiza desincronización: el color en Tailwind no coincide con el de CSS.
+- **Solución**: Style Dictionary o Token Transformer como pipeline de build. El source of truth es un archivo JSON tokens → genera automáticamente CSS, Tailwind y TypeScript.
+
+---
+
 ## SOTA Standards (2026)
 
 ### CSS Custom Properties for Tokens
@@ -687,3 +727,23 @@ src/
 - [ ] Component tests cover variant combinations
 - [ ] Multi-brand theming works with `data-theme` attribute
 - [ ] No hardcoded values in any component
+
+---
+
+## 💾 State Persistence
+
+### What to persist between sessions
+
+| Dato | Cómo se persiste | Cuándo restaurar |
+|------|-----------------|-----------------|
+| **Design tokens activos** | `design-tokens.json` o `tokens/` directorio en el proyecto | Al retomar un proyecto de design system |
+| **Configuración de shadcn/ui** | `components.json` + `tailwind.config.js` | Cada sesión — verificar que existe y está actualizado |
+| **Storybook setup** | `.storybook/` config directory | Si se agregan nuevos addons o historias |
+| **Multi-brand themes definidos** | Archivo CSS con bloques `[data-theme="..." ]` | Al agregar una nueva marca o modificar existente |
+| **Token pipeline** | `token-transform.config.js` + Style Dictionary config | Al generar nuevos tokens desde Figma |
+
+### Reglas de persistencia
+- **NO** guardar componentes compilados ni build artifacts
+- **SÍ** persistir la configuración del token pipeline (Style Dictionary, figma tokens JSON)
+- La estructura `src/components/ui/` + `src/styles/tokens/` es la fuente de verdad
+- El theming multi-marca se versiona en el sistema de archivos, no en memoria
