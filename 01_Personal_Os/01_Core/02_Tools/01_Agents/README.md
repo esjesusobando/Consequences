@@ -1,8 +1,12 @@
 # 🤖 01_Agents — Sistema de Agentes Especializados
 
-**Versión:** v4.0 | **Fecha:** 2026-05-10 | **Estado:** Pure Green Production
+**Versión:** v4.8 | **Fecha:** 2026-05-28 | **Estado:** Pure Green Production
 
-Este directorio contiene todos los agentes especializados del PersonalOS. Cada agente tiene un dominio específico y se invoca desde workflows o directamente desde Claude Code.
+> 🧠 **NUEVO: [OS Conductor](00_OS_Conductor/README.md) — El punto de entrada único al PersonalOS.**
+> En vez de acordarte qué agente o skill usar, hablale al Conductor y él orquesta todo.
+> El `00_Orchestrator.md` legacy (v4.0) queda reemplazado por el OS Conductor.
+
+Este directorio contiene todos los agentes especializados del PersonalOS. Cada agente tiene un dominio específico y se invoca desde el **OS Conductor**, desde workflows, o directamente desde Claude Code.
 
 ---
 
@@ -10,7 +14,8 @@ Este directorio contiene todos los agentes especializados del PersonalOS. Cada a
 
 ```
 01_Personal_Os/01_Core/02_Tools/01_Agents/
-├── 00_Orchestrator.md              # Orquestador maestro del OS
+├── 00_OS_Conductor/                # 🆕 OS Conductor — Entry point único (reemplaza Orchestrator v4.0)
+├── 00_Orchestrator.md              # [LEGACY v4.0] Reemplazado por OS Conductor
 ├── 01_Scope_Rule_Architect.md      # Arquitectura — Scope Rule
 ├── 02_TDD_Test_First.md            # Tests RED phase
 ├── 03_React_Test_Implementer.md    # Código GREEN phase
@@ -61,6 +66,7 @@ Este directorio contiene todos los agentes especializados del PersonalOS. Cada a
 
 | #                                    | Agente                                                  | Dominio                                          | Prioridad                                  | Estado                                  |
 |-------------------------------------|--------------------------------------------------------|-------------------------------------------------|-------------------------------------------|----------------------------------------|
+| 00                                   | 🧠 **OS Conductor**                                       | **Entry point único del OS**                       | **CRÍTICA**                                | ✅ 🆕                                  |
 | 01                                   | Scope Rule Architect                                    | Arquitectura                                     | CRÍTICA                                    | ✅                                       |
 | 02                                   | TDD Test-First                                          | Tests (RED)                                      | ALTA                                       | ✅                                       |
 | 03                                   | Growth (Marketing Tech)                                 | Growth/Marketing                                 | ALTA                                       | ✅                                       |
@@ -115,14 +121,26 @@ FASE 7: ACCESIBILIDAD (opcional)
 
 ## 🚀 Cómo Usar los Agentes
 
-### Opción A: Orquestador Automático (Recomendado)
+### Opción A: OS Conductor — Entry Point Único ✅ RECOMENDADO
+
+```bash
+# El Conductor sabe a qué agente/skill rutear según lo que necesites
+"Necesito implementar [funcionalidad]."
+"Quiero crear contenido sobre [tema]."
+"Auditame el sistema."
+
+# El Conductor analiza el request, selecciona los agentes/skills correctos,
+# y orquesta el flujo completo.
+```
+
+### Opción B: Orquestador Automático (Legacy)
 
 ```bash
 # Usar el agente Workflow Orchestrator
 "Necesito implementar [funcionalidad]. Orquesta las 7 fases del flujo TDD."
 ```
 
-### Opción B: Manual (Fase por Fase)
+### Opción C: Manual (Fase por Fase)
 
 ```bash
 # FASE 3: Implementación (GREEN)
