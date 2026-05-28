@@ -1,7 +1,7 @@
 # 🧠 Knowledge Brain — Index de Busqueda
 
 **Actualizado:** 2026-05-28
-**Total:** 14 archivos MD + 9 PDFs
+**Total:** 15 archivos MD + 9 PDFs
 
 ---
 
@@ -37,8 +37,9 @@
 | 12 | `12_Estado_Del_Arte.md` | Estado del arte del PersonalOS v6.0 (SOTA) |
 | 13 | `13_Anthropic_Engineering_01_07.md` | Anthropic Engineering Blog — Posts 1-7 |
 | 14 | `14_Anthropic_Engineering_Part2.md` | Anthropic Engineering Blog — Posts 8-13 (Parte 2 de 3) |
+| 15 | `15_Anthropic_Engineering_Part3.md` | Anthropic Engineering Blog — Posts 14-20 (Parte 3 de 3 — COMPLETA) |
 
-> **Nota:** Falta Parte 3 de Anthropic Engineering (posts 14-20) — no fue creada o extraviada.
+
 
 ---
 
