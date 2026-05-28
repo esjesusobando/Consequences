@@ -260,8 +260,8 @@ def t07_edge_case_validator():
 
 def t08_sota_integrity():
     """15_SOTA_Integrity_Check — verifica estructura v2.0."""
-    script = (SCRIPTS_OS / "13_Auditors_Os" / "scripts"
-              / "15_SOTA_Integrity_Check.py")
+    script = (SCRIPTS_OS / "12_Auditors_Os" / "scripts"
+              / "03_SOTA_Integrity_Check.py")
     if not script.exists():
         return TestResult("T08", "SOTA Integrity Check — v2.0", False,
                           "Script no encontrado")

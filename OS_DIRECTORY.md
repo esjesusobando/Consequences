@@ -256,7 +256,7 @@ Think_Different/                         # RAÍZ
 | `13_Legacy/`               | Legacy (88 scripts archivados)                                              |
 | `11_Anthropic_Harness/`    | Harness Anthropic                                                           |
 | `12_Audits/`               | Auditorías                                                                  |
-| `13_Auditors_Os/`          | Auditores OS                                                                |
+| `12_Auditors_Os/`          | Auditores OS                                                                |
 | `14_Otros/`                | Otros                                                                       |
 | `05_Validator/`            | Validadores (8)                                                             |
 

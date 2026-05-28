@@ -238,3 +238,42 @@ Archivos: CLAUDE.md, SCRIPTS_INDEX.md, Context_Memory.md, Notas_de_Proceso.md, ~
 ---
 
 *Notas_de_Proceso.md — 2026-05-27 — Auditoría repo-wide fases 2-5*
+
+---
+
+## Sesión: 2026-05-28 — Deep Audit Integral + Bugfixes estructurales
+
+### Objetivo
+Revisión integral del proyecto Think_Different PersonalOS v4.8 — identificar errores en estructura, rutas, dependencias, skills y scripts. Corregir bugs sin eliminar información histórica.
+
+### Bugs Corregidos (13)
+| # | Bug | Fix |
+|---|-----|-----|
+| 1 | `12_Auditors_Os/README.md` completamente stale: header `13_Auditors_Os`, scripts numerados 12-16 vs reales 00-04, paths en ejemplos legacy `13_Auditors_Os/` | Reescribir README completo: header v4.8, números 00-04 actualizados, paths corregidos, ejemplos funcionales |
+| 2 | `Structure_v4.8.md:262` ref `13_Auditors_Os/` | `12_Auditors_Os/` |
+| 3 | `OS_DIRECTORY.md:259` ref `13_Auditors_Os/` | `12_Auditors_Os/` |
+| 4 | `Operations/README.md:94` ref `13_Auditors_Os/` | `12_Auditors_Os/` |
+| 5 | `03_Scripts_Os/README.md:25` ref `13_Auditors_Os/` | `12_Auditors_Os/` |
+| 6 | `.agent/README.md:104-105` refs `13_Auditors_Os/` + números legacy | `12_Auditors_Os/` + `00_`/`01_` |
+| 7 | `.agent/CLAUDE.md:176-177` refs `13_Auditors_Os/` + números legacy | `12_Auditors_Os/` + `00_`/`01_` |
+| 8 | `00_Comandos_Workflows.md:37-44` ref `13_Auditors_Os/`, números legacy, faltan scripts | `12_Auditors_Os/`, 5 scripts con números reales 00-04 |
+| 9 | `embedding.py:158` `13_Auditors_Os` hardcodeado | `12_Auditors_Os` |
+| 10 | `05_OS_Health_Test.py:263` + `01_OS_Runtime_Test.py:203` refs `13_Auditors_Os/` + `15_SOTA_Integrity_Check.py` | `12_Auditors_Os/` + `03_SOTA_Integrity_Check.py` |
+| 11 | `HUB_CATALOG.md:1` header "v4.0 Consequences" | "v4.8 Consequences" |
+| 12 | `03_SOTA_Integrity_Check.py:176` log "08_Scripts_Os not found" | "03_Scripts_Os not found" |
+| 13 | `03_Validate_Rules.py:113,146` prints "08_Scripts_Os" | "03_Scripts_Os" |
+
+### Archivos tocados: 15 (8 .md + 5 .py + 1 README rewrite + 2 docs de memoria)
+
+### Hallazgos adicionales
+- `02_Playground/README.md` header dice `v1.0 ALFA` — posiblemente desactualizado
+- `HUB_CATALOG.md` body inconsistente: header arreglado, pero cuenta "31 scripts raíz" vs "21+2 HUBs" vs otras métricas — arrastra conteos históricos divergentes
+- En `03_Resultado/` hay planes/auditorías con referencias a `13_Auditors_Os` pero son HISTÓRICOS — no tocar
+- `07_Snapshots/` y backups pre-Consequences también tienen `13_Auditors_Os` — preservados intencionalmente
+
+### Decisiones
+- No tocar archivos en `05_Archive/`, `03_Resultado/00_Proyectos/01_Planes/`, backups históricos — documentan el estado del sistema en su momento
+- Política de "complementar sin eliminar" se mantiene
+- Engram protocol activo para persistencia entre sesiones
+
+---

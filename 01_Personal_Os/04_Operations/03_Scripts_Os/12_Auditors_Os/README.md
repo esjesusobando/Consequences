@@ -1,12 +1,15 @@
-# 📁 13_Auditors_Os — Auditors Utilities
+# 📁 12_Auditors_Os — Auditors Utilities
 
-> **Versión**: v4.0 Consequences
+> **Versión**: v4.8 Consequences
+> **Última actualización**: 2026-05-28
+> **Estado**: ✅ ACTUALIZADO
 
-Utilities para auditors del PersonalOS v4.0 Consequences:
+Utilities para auditors del PersonalOS v4.8 Consequences:
 
-> **⚠️ NOTE:** These utilities are used by Auditor_Hub.py for systematic project auditing.
-- Beautify tables y documentos
-- Context usage bar para OpenCode
+> **⚠️ NOTE:** These utilities are used by `config_paths.py` for systematic project operations.
+- Beautify Tables
+- Beauty Doc
+- Context Usage Bar para OpenCode
 - SOTA Integrity Check
 - Carousel Engine para contenido estratégico
 
@@ -14,20 +17,20 @@ Utilities para auditors del PersonalOS v4.0 Consequences:
 
 ## 📦 Scripts (5 en `scripts/`)
 
-| #                  | Script                                      | Propósito                                             |
-|-------------------|--------------------------------------------|------------------------------------------------------|
-| 12                 | `12_Context_Usage_Bar.py`                   | Barra de uso de contexto para OpenCode                |
-| 13                 | `13_Beautify_Tables.py`                     | Embellecedor de tablas markdown                       |
-| 14                 | `14_Beauty_Doc.py`                          | Embellecedor de documentos markdown                   |
-| 15                 | `15_SOTA_Integrity_Check.py`                | Validación de integridad SOTA                         |
-| 16                 | `16_Carousel_Engine.py`                     | Motor de carruseles estratégicos                      |
+| #  | Script                    | Propósito                                         |
+|----|---------------------------|---------------------------------------------------|
+| 00 | `00_Context_Usage_Bar.py` | Barra de uso de contexto para OpenCode             |
+| 01 | `01_Beautify_Tables.py`   | Embellecedor de tablas markdown                    |
+| 02 | `02_Beauty_Doc.py`        | Embellecedor de documentos markdown                |
+| 03 | `03_SOTA_Integrity_Check.py` | Validación de integridad SOTA                   |
+| 04 | `04_Carousel_Engine.py`   | Motor de carruseles estratégicos                   |
 
 ---
 
-## 📍 Ubicación en v4.0 Consequences
+## 📍 Ubicación en v4.8 Consequences
 
 ```
-01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/
+01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/
 ```
 
 ---
@@ -36,46 +39,46 @@ Utilities para auditors del PersonalOS v4.0 Consequences:
 
 ```bash
 # Context Usage Bar (demo mode)
-python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/12_Context_Usage_Bar.py --demo
+python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/00_Context_Usage_Bar.py --demo
 
 # Beautify Tables
-python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/13_Beautify_Tables.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/01_Beautify_Tables.py
 
-# Beautify Docs
-python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/14_Beauty_Doc.py
+# Beauty Doc
+python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/02_Beauty_Doc.py
 
 # SOTA Integrity Check
-python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA_Integrity_Check.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/03_SOTA_Integrity_Check.py
 
 # Carousel Engine
-python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/16_Carousel_Engine.py --niche "Productividad" --goal "Education" --name "Draft"
+python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/04_Carousel_Engine.py --niche "Productividad" --goal "Education" --name "Draft"
 ```
 
 ---
 
-## 📊 SOTA Integrity Check (15)
+## 📊 SOTA Integrity Check
 
-El script `15_SOTA_Integrity_Check.py` valida:
+El script `03_SOTA_Integrity_Check.py` valida:
 
 | Check                         | Descripción                                      |
-|------------------------------|-------------------------------------------------|
+|-------------------------------|-------------------------------------------------|
 | submodules                    | Git submodules verificados                       |
-| skills                        | 9+ áreas funcionales con SKILL.md                |
-| mcps                          | 25+ MCPs configurados                            |
+| skills                        | 12+ áreas funcionales con SKILL.md               |
+| mcps                          | 7+ MCPs activos configurados                     |
 | agents                        | Agentes en .agent/ y core/                       |
 | hooks                         | Hooks instalados                                 |
-| hubs                          | 10+ HUBs activos                                 |
-| rules                         | 8+ reglas consolidadas                           |
+| hubs                          | 31+ HUBs activos                                 |
+| rules                         | 13+ reglas consolidadas                          |
 | methodologies                 | Metodologías integradas                          |
-| core_structure                | Estructura v2.0 completa                         |
+| core_structure                | Estructura v4.8 completa                         |
 
 **Uso:**
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA_Integrity_Check.py
-python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Auditors_Os/scripts/15_SOTA_Integrity_Check.py --verbose
+python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/03_SOTA_Integrity_Check.py
+python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/03_SOTA_Integrity_Check.py --verbose
 ```
 
 ---
 
-**Última actualización**: 2026-04-25
-**Estado**: ✅ ACTUALIZADO — v4.0 Consequences
+**Última actualización**: 2026-05-28
+**Estado**: ✅ ACTUALIZADO — v4.8 Consequences

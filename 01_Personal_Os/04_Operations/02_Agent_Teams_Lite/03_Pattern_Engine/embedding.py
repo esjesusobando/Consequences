@@ -155,7 +155,7 @@ def extract_tags_from_path(script_path: Path) -> List[Tuple[str, str]]:
             if part.isdigit() and len(part) == 2:
                 tags.append((f"cat_{part}", "scripts"))
                 break
-    elif "Auditors_Os" in parts or "13_Auditors_Os" in str(script_path):
+    elif "Auditors_Os" in parts or "12_Auditors_Os" in str(script_path):
         tags.append(("auditor", "auditors"))
     elif "14_Otros" in str(script_path):
         tags.append(("other", "misc"))

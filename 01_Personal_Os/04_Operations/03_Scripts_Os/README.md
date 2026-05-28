@@ -22,7 +22,7 @@
 | 10                         | `10_Legacy/`                                   | 92                                  | 🗄️ Archivo                                |
 | 11                         | `11_Anthropic_Harness/`                        | 12                                  | ✅ Activo                                  |
 | 12                         | `12_Audits/`                                   | 6                                   | ✅ Activo                                  |
-| 13                         | `13_Auditors_Os/`                              | 1 + scripts/                        | ✅ Activo                                  |
+| 12                         | `12_Auditors_Os/`                              | 1 + scripts/                        | ✅ Activo                                  |
 | 14                         | `14_Otros/`                                    | 5                                   | ✅ Recién creado                           |
 
 ---

@@ -110,7 +110,7 @@ def validate_engine_naming() -> bool:
     Returns:
         bool: True si todos los archivos cumplen el estándar, False de lo contrario.
     """
-    print(f"\n{INFO}[SCAN] Validando Naming Convention en 08_Scripts_Os...{RESET}")
+    print(f"\n{INFO}[SCAN] Validando Naming Convention en 03_Scripts_Os...{RESET}")
     engine_dir = ENGINE_DIR
     pattern = re.compile(r"^\d{2}_[A-Z][a-zA-Z0-9_]+\.py$")
     errors: List[str] = []
@@ -143,7 +143,7 @@ def validate_engine_naming() -> bool:
         return False
 
     print(
-        f"{Fore.GREEN}[OK] Todos los scripts de 08_Scripts_Os cumplen el estándar.{Style.RESET_ALL}"
+        f"{Fore.GREEN}[OK] Todos los scripts de 03_Scripts_Os cumplen el estándar.{Style.RESET_ALL}"
     )
     return True
 

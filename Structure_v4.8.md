@@ -259,7 +259,7 @@ Think_Different/                    # RAÍZ
 ├── 01_Auditor_Hub.py → 25_Minimax_Optimizer_Hub.py  # 21 HUBs core
 ├── HUB_SOTA.py                # HUB SOTA orchestrator
 ├── 21_Legacy_Path_Cleanup.py → 57_Repo_Sync_Auditor.py  # Scripts utilitarios
-├── 13_Auditors_Os/            # Auditors + Context_Usage_Bar, Beautify_Tables
+├── 12_Auditors_Os/            # Auditors + Context_Usage_Bar, Beautify_Tables
 ├── .backup/                   # Legacy backup 20260420
 └── ... (data dirs: 02_Tool, 03_AIPM, 03_Validator, etc.)
 ```

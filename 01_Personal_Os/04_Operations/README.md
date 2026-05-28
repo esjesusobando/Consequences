@@ -91,7 +91,7 @@ Think_Different/
 ├── 11_Auto_Learn_Hub.py         # Motor de automejora
 ├── 11_Anthropic_Harness/        # Anthropic harness tools
 ├── 12_Audits/                   # Audit directory
-├── 13_Auditors_Os/             # Auditor tools
+├── 12_Auditors_Os/             # Auditor tools
 ├── 14_Health_Metrics_Hub.py     # Métricas de salud
 ├── 14_Otros/                    # Other miscellaneous tools
 ├── 15_MCP_Sync_Hub.py          # MCP drift report

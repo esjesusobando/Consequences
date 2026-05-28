@@ -251,3 +251,61 @@ Auditar TODO el proyecto Think_Different sin eliminar info: paths legacy 08_Scri
 ### Pendiente
 - ~~Commit final con todos los cambios~~ (hecho)
 - SDD gentle-orchestrator (deferido — no hay bug que fixear)
+
+---
+
+## Sesión: 2026-05-28 — Deep Audit Integral + Bugfixes estructurales
+
+### Cambios Realizados
+
+#### 1. Directorio `12_Auditors_Os/README.md` — REWRITE COMPLETO
+- **Problema**: README completamente desactualizado (v4.0 Consequences, números legacy 12-16, paths a `13_Auditors_Os/`)
+- **Solución**: Reescribir con:
+  - Header v4.8 Consequences
+  - Scripts listados con números REALES (00_Context_Usage_Bar, 01_Beautify_Tables, 02_Beauty_Doc, 03_SOTA_Integrity_Check, 04_Carousel_Engine)
+  - Paths en ejemplos corregidos: `.../12_Auditors_Os/scripts/00_Context_Usage_Bar.py`
+  - Fecha de actualización: 2026-05-28
+
+#### 2. Fix `13_Auditors_Os` → `12_Auditors_Os` (8 archivos)
+| Archivo | Líneas corregidas |
+|---|---|
+| `Structure_v4.8.md` | 1 (line 262) |
+| `OS_DIRECTORY.md` | 1 (line 259) |
+| `Operations/README.md` | 1 (line 94) |
+| `03_Scripts_Os/README.md` | 1 (line 25) |
+| `.agent/README.md` | 2 (lines 104-105) — incluye números de script |
+| `.agent/CLAUDE.md` | 2 (lines 176-177) — incluye números de script |
+| `00_Comandos_Workflows.md` | 8 (header + 5 scripts obsoletos) |
+| `embedding.py` | 1 (line 158) |
+
+#### 3. Fix paths + script names en tests de Playground (2 archivos)
+- `05_OS_Health_Test.py`: `13_Auditors_Os` → `12_Auditors_Os`, `15_SOTA_Integrity_Check.py` → `03_SOTA_Integrity_Check.py`
+- `01_OS_Runtime_Test.py`: mismo patrón
+
+#### 4. Fix HUB_CATALOG.md header
+- "v4.0 Consequences" → "v4.8 Consequences"
+
+#### 5. Fix active scripts con `08_Scripts_Os` residual
+- `12_Auditors_Os/scripts/03_SOTA_Integrity_Check.py:176`: log msg actualizado
+- `05_Validator/03_Validate_Rules.py:113,146`: prints actualizados
+
+#### 6. Documentación de memoria
+- Notas_de_Proceso.md: entrada 2026-05-28 añadida
+- Context_Memory.md: entrada 2026-05-28 añadida
+
+### Archivos tocados: 15 (8 .md + 5 .py + 1 README rewrite + 2 docs de memoria)
+
+### Estado Post-Fixes
+| Área | Estado |
+|---|---|
+| `13_Auditors_Os` en activos | ✅ 0 refs (solo en archive/históricos) |
+| `12_Auditors_Os/README.md` | ✅ v4.8 con números reales |
+| `08_Scripts_Os` en activos | ✅ 0 refs |
+| HUB_CATALOG.md header | ✅ v4.8 |
+| Memoria documentada | ✅ Entrada 2026-05-28 |
+
+### Hallazgos
+- Playground README.md header "v1.0 ALFA" — posible stale
+- HUB_CATALOG.md body tiene conteos históricos divergentes (no crítica, documentación no-funcional)
+- Planes en `03_Resultado/00_Proyectos/01_Planes/` tienen refs legacy — preservados intencionalmente
+- 31 refs `13_Auditors_Os` restantes en backups/archivos históricos — NO TOCAR

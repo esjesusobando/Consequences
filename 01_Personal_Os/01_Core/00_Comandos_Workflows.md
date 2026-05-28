@@ -34,14 +34,15 @@ Los scripts individuales migraron a HUBs centralizados. Usar siempre los HUBs co
 | **Legacy Cleanup**                       | `21_Legacy_Path_Cleanup.py`                           | Limpia paths legacy de Consequences 2.x                               |
 | **Skill Frontmatter**                    | `22_Validate_Skill_Frontmatter.py`                    | Detecta skills sin frontmatter YAML                                   |
 
-### Scripts Auxiliares (13_Auditors_Os/scripts/)
+### Scripts Auxiliares (12_Auditors_Os/scripts/)
 
 | Script                                          | Propósito                                       |
 |------------------------------------------------|------------------------------------------------|
-| `12_Context_Usage_Bar.py`                       | Barra de uso de contexto                        |
-| `13_Beautify_Tables.py`                         | Formateo de tablas markdown                     |
-| `15_SOTA_Integrity_Check.py`                    | Verificación integridad SOTA                    |
-| `16_Carousel_Engine.py`                         | Motor de carruseles                             |
+| `00_Context_Usage_Bar.py`                       | Barra de uso de contexto                        |
+| `01_Beautify_Tables.py`                         | Formateo de tablas markdown                     |
+| `02_Beauty_Doc.py`                              | Formateo de documentos markdown                 |
+| `03_SOTA_Integrity_Check.py`                    | Verificación integridad SOTA                    |
+| `04_Carousel_Engine.py`                         | Motor de carruseles                             |
 
 ---
 

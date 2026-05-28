@@ -200,8 +200,8 @@ def r15_edge_validator_standalone():
 
 def r16_sota_integrity():
     """SOTA Integrity Check corre."""
-    script = (SCRIPTS_OS / "13_Auditors_Os" / "scripts"
-              / "15_SOTA_Integrity_Check.py")
+    script = (SCRIPTS_OS / "12_Auditors_Os" / "scripts"
+              / "03_SOTA_Integrity_Check.py")
     if not script.exists():
         return TestResult("R16", "SOTA Integrity — runtime", False, "No existe")
     try:

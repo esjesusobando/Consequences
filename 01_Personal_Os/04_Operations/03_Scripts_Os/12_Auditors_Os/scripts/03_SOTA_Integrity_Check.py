@@ -173,7 +173,7 @@ def check_hubs():
 
     hubs_path = ROOT / "01_Personal_Os" / "04_Operations" / "03_Scripts_Os"
     if not hubs_path.exists():
-        log("08_Scripts_Os not found", "ERROR")
+        log("03_Scripts_Os not found", "ERROR")
         return False
 
     # Contar HUBs por prefijo numérico
