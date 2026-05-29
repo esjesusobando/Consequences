@@ -16,8 +16,8 @@ except ImportError:
         pass
 
 
-# Add ENGINE_DIR to path for imports (v4.7 fix - was going up 2 levels which landed on 04_Operations, not 03_Scripts_Os)
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+# Add ENGINE_DIR to path for imports (v4.9 fix — apunta a 03_Scripts_Os donde está config_paths.py)
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 from config_paths import (
     ROOT_DIR,
     MATRIX_DIR,

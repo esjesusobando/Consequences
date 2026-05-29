@@ -33,7 +33,10 @@ def sync_repo(repo_path):
 
 
 def main():
-    base_dir = "05_Archive/07_Repos_Gentleman"
+    # Ruta absoluta desde la ubicación del script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    root_dir = os.path.abspath(os.path.join(script_dir, "..", "..", ".."))
+    base_dir = os.path.join(root_dir, "05_Archive", "07_Repos_Gentleman")
     if not os.path.exists(base_dir):
         print(f"Directorio de respaldo no encontrado: {base_dir}")
         sys.exit(0)

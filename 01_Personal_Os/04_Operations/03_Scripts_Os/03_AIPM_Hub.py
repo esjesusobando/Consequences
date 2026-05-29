@@ -87,32 +87,32 @@ def main():
     parser = argparse.ArgumentParser(description="Hub centralizador de AIPM.")
     subparsers = parser.add_subparsers(dest="command", help="Comandos AIPM")
 
-    # Definir subcomandos
+    # Definir subcomandos — nombres actualizados a numeración v4.9
     subparsers.add_parser(
-        "logger", help="Logger AIPM (reutiliza 22_AIPM_Trace_Logger.py)"
+        "logger", help="Logger AIPM (reutiliza 00_AIPM_Trace_Logger.py)"
     )
     subparsers.add_parser(
-        "evaluator", help="Evaluador AIPM (reutiliza 23_AIPM_Evaluator.py)"
+        "evaluator", help="Evaluador AIPM (reutiliza 01_AIPM_Evaluator.py)"
     )
     subparsers.add_parser(
-        "interview", help="Entrevistador AIPM (reutiliza 24_AIPM_Interview_Sim.py)"
+        "interview", help="Entrevistador AIPM (reutiliza 02_AIPM_Interview_Sim.py)"
     )
     subparsers.add_parser(
-        "control", help="Control Center AIPM (reutiliza 28_AIPM_Control_Center.py)"
+        "control", help="Control Center AIPM (reutiliza 06_AIPM_Control_Center.py)"
     )
     subparsers.add_parser(
-        "report", help="Reporte AIPM (reutiliza 30_AIPM_Consolidated_Report.py)"
+        "report", help="Reporte AIPM (reutiliza 08_AIPM_Consolidated_Report.py)"
     )
 
     args = parser.parse_args()
 
-    # Mapeo de comandos
+    # Mapeo de comandos — nombres actualizados a numeración v4.9
     cmd_map = {
-        "logger": "22_AIPM_Trace_Logger.py",
-        "evaluator": "23_AIPM_Evaluator.py",
-        "interview": "24_AIPM_Interview_Sim.py",
-        "control": "28_AIPM_Control_Center.py",
-        "report": "30_AIPM_Consolidated_Report.py",
+        "logger": "00_AIPM_Trace_Logger.py",
+        "evaluator": "01_AIPM_Evaluator.py",
+        "interview": "02_AIPM_Interview_Sim.py",
+        "control": "06_AIPM_Control_Center.py",
+        "report": "08_AIPM_Consolidated_Report.py",
     }
 
     if args.command in cmd_map:

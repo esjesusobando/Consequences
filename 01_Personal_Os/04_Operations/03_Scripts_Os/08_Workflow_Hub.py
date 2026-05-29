@@ -70,7 +70,8 @@ def run_script(script_name):
     from config_paths import get_skill_script
     script_path = get_skill_script(script_name)
     if not script_path or not script_path.exists():
-        script_path = Path(__file__).parent / "04_Workflow" / script_name
+        # Fallback directo a 13_Legacy (workflows heredados)
+        script_path = Path(__file__).parent / "13_Legacy" / script_name
     if not script_path.exists():
         print(f"{Fore.RED}[ERROR] Script no encontrado: {script_name}{Style.RESET_ALL}")
         return

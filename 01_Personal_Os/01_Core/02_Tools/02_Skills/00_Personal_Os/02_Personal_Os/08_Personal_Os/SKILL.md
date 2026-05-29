@@ -1,5 +1,6 @@
 ---
-description: 08_Personal_Os
+name: personal-os-index
+description: 08_Personal_Os — Skills operativas del sistema PersonalOS: rituals, gestión del sistema, sincronización, captura de información y administración del workspace personal.
 globs: **/*
 alwaysApply: true
 ---

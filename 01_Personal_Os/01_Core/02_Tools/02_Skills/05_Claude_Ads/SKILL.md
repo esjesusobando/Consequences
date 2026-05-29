@@ -1,4 +1,5 @@
 ---
+name: claude-ads
 description: Claude Ads — marketing automation, advertising, and campaign management with Claude. Triggers on: ads, advertising, campañas, pauta, marketing ads, publicidad
 globs: 
 alwaysApply: false

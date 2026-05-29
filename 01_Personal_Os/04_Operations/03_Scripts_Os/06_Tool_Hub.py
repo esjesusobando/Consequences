@@ -76,11 +76,16 @@ def report_progress(percent, message):
 
 
 def run_script(script_name):
-    # Los scripts de Herramientas están en 02_Tool
-    script_path = ENGINE_DIR / "02_Tool" / script_name
+    # Los scripts de Herramientas migraron a 13_Legacy
+    # Intentar primero en 13_Legacy (scripts heredados)
+    script_path = ENGINE_DIR / "13_Legacy" / script_name
     if not script_path.exists():
-        print(f"{Fore.RED}[ERROR] Script no encontrado: {script_path}{Style.RESET_ALL}")
-        return False
+        # Intentar en 06_Tool (scripts nuevos)
+        script_path = ENGINE_DIR / "06_Tool" / script_name
+        if not script_path.exists():
+            print(f"{Fore.RED}[ERROR] Script no encontrado: {script_name} en ninguna ubicación{Style.RESET_ALL}")
+            print(f"{Fore.YELLOW}[HINT] Los scripts '01_Cleanup_Tabs.py' y '02_Generate_Tree.py' no existen en el sistema actual. Reportá esto si los necesitás.{Style.RESET_ALL}")
+            return False
 
     report_progress(10, "Iniciando ejecución...")
     dynamic_speak(f"Ejecutando: {script_name}")
@@ -116,19 +121,20 @@ def main():
 
     # Definir subcomandos
     subparsers.add_parser(
-        "cleanup", help="Limpieza de tabs (reutiliza 01_Cleanup_Tabs.py)"
+        "cleanup", help="Limpieza de tabs — script no disponible actualmente (01_Cleanup_Tabs.py no existe)"
     )
     subparsers.add_parser(
         "tree",
-        help="Generación de árbol de directorios (reutiliza 02_Generate_Tree.py)",
+        help="Generación de árbol de directorios — script no disponible actualmente (02_Generate_Tree.py no existe)",
     )
     subparsers.add_parser(
-        "repair", help="Reparación de corrupción (reutiliza 39_Repair_Corruption.py)"
+        "repair", help="Reparación de corrupción (reutiliza 39_Repair_Corruption.py en 13_Legacy)"
     )
 
     args = parser.parse_args()
 
-    # Mapeo de comandos
+    # Mapeo de comandos — 01_Cleanup_Tabs.py y 02_Generate_Tree.py no existen actualmente
+    # Se mantienen en el mapa para documentación, con fallback automático
     cmd_map = {
         "cleanup": "01_Cleanup_Tabs.py",
         "tree": "02_Generate_Tree.py",

@@ -67,10 +67,14 @@ def dynamic_speak(text):
 
 
 def run_script(script_name):
-    script_path = Path(__file__).parent / "09_Integration" / script_name
+    # Los scripts de Integración migraron a 07_Integration/ con nueva numeración
+    script_path = Path(__file__).parent / "07_Integration" / script_name
     if not script_path.exists():
-        print(f"{Fore.RED}[ERROR] Script no encontrado: {script_path}{Style.RESET_ALL}")
-        return
+        # Fallback a 13_Legacy para compatibilidad
+        script_path = Path(__file__).parent / "13_Legacy" / script_name
+        if not script_path.exists():
+            print(f"{Fore.RED}[ERROR] Script no encontrado: {script_path}{Style.RESET_ALL}")
+            return
 
     print(f"{Fore.YELLOW}[RUNNING] Ejecutando: {script_name}...{Style.RESET_ALL}")
     scripts_dir = str(Path(__file__).parent)
@@ -83,25 +87,25 @@ def main():
     parser = argparse.ArgumentParser(description="Hub centralizador de Integraciones.")
     subparsers = parser.add_subparsers(dest="command", help="Comandos de Integración")
 
-    # Definir subcomandos
+    # Definir subcomandos — nombres actualizados a numeración v4.9
     subparsers.add_parser(
-        "qmd", help="Actualización del índice QMD (reutiliza 75_Update_QMD_Index.py)"
+        "qmd", help="Actualización del índice QMD (reutiliza 01_Update_QMD_Index.py)"
     )
     subparsers.add_parser(
-        "obsidian", help="Exportador para Obsidian (reutiliza 76_Obsidian_Exporter.py)"
+        "obsidian", help="Exportador para Obsidian (reutiliza 02_Obsidian_Exporter.py)"
     )
     subparsers.add_parser(
         "mcp-sync",
-        help="Sincronización con OpenCode MCP (reutiliza 46_Sync_MCP_OpenCode.py)",
+        help="Sincronización con OpenCode MCP (reutiliza 00_Sync_MCP_OpenCode.py)",
     )
 
     args = parser.parse_args()
 
-    # Mapeo de comandos
+    # Mapeo de comandos — nombres actualizados a numeración v4.9
     cmd_map = {
-        "qmd": "75_Update_QMD_Index.py",
-        "obsidian": "76_Obsidian_Exporter.py",
-        "mcp-sync": "46_Sync_MCP_OpenCode.py",
+        "qmd": "01_Update_QMD_Index.py",
+        "obsidian": "02_Obsidian_Exporter.py",
+        "mcp-sync": "00_Sync_MCP_OpenCode.py",
     }
 
     if args.command in cmd_map:

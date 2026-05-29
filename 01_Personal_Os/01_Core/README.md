@@ -37,8 +37,8 @@ Think_Different/
 
 | #   | Carpeta               | Contenido                        | Estado  |
 |----|----------------------|---------------------------------|--------|
-| 01  | `01_Agents/`          | 48 agents (5 áreas)              | ✅       |
-| 02  | `02_Skills/`          | 385 skills (13 áreas)            | ✅       |
+| 01  | `01_Agents/`          | 49 agents (Dream + Specialists + Growth + Marketing) | ✅       |
+| 02  | `02_Skills/`          | 385 skills (14 áreas)            | ✅       |
 | 03  | `03_Mcp/`             | MCP servers (backup config)      | ✅       |
 | 04  | `04_Integrations/`    | Fireflies, Granola               | ✅       |
 | 05  | `05_Hooks/`           | 12 hooks (6 fases)               | ✅       |

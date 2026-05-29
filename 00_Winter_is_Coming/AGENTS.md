@@ -166,7 +166,7 @@ Think_Different/                           # v4.9 — 4 carpetas raíz
 │   │   ├── 00_Workflows_Os/              # 30 Workflows (7 categorías)
 │   │   ├── 01_Rules/                     # 13 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
-│   │       ├── 01_Agents/               # 48 agentes
+│   │       ├── 01_Agents/               # 49 agentes
 │   │       ├── 02_Skills/                # 385 skills (14 áreas)
 │   │       ├── 03_Mcp/                   # Backup MCPs
 │   │       ├── 04_Integrations/         # Fireflies, Granola

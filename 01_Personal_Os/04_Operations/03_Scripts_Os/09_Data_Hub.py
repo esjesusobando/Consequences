@@ -67,11 +67,20 @@ def dynamic_speak(text):
 
 
 def run_script(script_name):
-    # Los scripts de Datos están en 07_Data
-    script_path = ENGINE_DIR / "07_Data" / script_name
+    # Los scripts de Datos migraron a 08_Data/ con nueva numeración
+    # Mapa de nombres legacy → nuevos en 08_Data/
+    data_rename_map = {
+        "84_Batch_Parser.py": "01_Batch_Parser.py",
+        "85_Resumen_Extractor.py": "02_Resumen_Extractor.py",
+        "86_Universal_Parser.py": "03_Universal_Parser.py",
+        "20_Master_Analytics_Factory.py": "00_Master_Analytics_Factory.py",
+    }
+    data_name = data_rename_map.get(script_name, script_name)
+    
+    script_path = ENGINE_DIR / "08_Data" / data_name
     if not script_path.exists():
-        # Fallback a 01_Ritual para Generate_Progress si no está en 07_Data
-        script_path = ENGINE_DIR / "01_Ritual" / script_name
+        # Fallback a 13_Legacy para scripts no migrados (ej: 19_Generate_Progress.py)
+        script_path = ENGINE_DIR / "13_Legacy" / script_name
         if not script_path.exists():
             print(f"{Fore.RED}[ERROR] Script no encontrado: {script_path}{Style.RESET_ALL}")
             return
@@ -89,23 +98,23 @@ def main():
     )
     subparsers = parser.add_subparsers(dest="command", help="Comandos de Datos")
 
-    # Definir subcomandos
+    # Definir subcomandos — nombres actualizados a numeración v4.9
     subparsers.add_parser(
         "progress",
-        help="Generación de reportes de progreso (reutiliza 19_Generate_Progress.py)",
+        help="Generación de reportes de progreso (reutiliza 19_Generate_Progress.py en 13_Legacy)",
     )
     subparsers.add_parser(
         "analytics",
-        help="Fábrica de analítica maestra (reutiliza 20_Master_Analytics_Factory.py)",
+        help="Fábrica de analítica maestra (reutiliza 00_Master_Analytics_Factory.py en 08_Data)",
     )
     subparsers.add_parser(
-        "parser", help="Parser universal (reutiliza 86_Universal_Parser.py)"
+        "parser", help="Parser universal (reutiliza 03_Universal_Parser.py en 08_Data)"
     )
     subparsers.add_parser(
-        "extract", help="Extractor de resúmenes (reutiliza 85_Resumen_Extractor.py)"
+        "extract", help="Extractor de resúmenes (reutiliza 02_Resumen_Extractor.py en 08_Data)"
     )
     subparsers.add_parser(
-        "batch", help="Parser por lotes (reutiliza 84_Batch_Parser.py)"
+        "batch", help="Parser por lotes (reutiliza 01_Batch_Parser.py en 08_Data)"
     )
 
     args = parser.parse_args()

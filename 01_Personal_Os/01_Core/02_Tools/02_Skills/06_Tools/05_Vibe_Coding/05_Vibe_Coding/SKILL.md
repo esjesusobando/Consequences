@@ -1,5 +1,6 @@
 ---
-description: 05_Vibe_Coding
+name: vibe-coding-index
+description: 05_Vibe_Coding — Stack técnico moderno: frameworks frontend/backend, herramientas de estado, validación, APIs de IA, CMS y herramientas especializadas.
 globs: **/*
 alwaysApply: true
 ---

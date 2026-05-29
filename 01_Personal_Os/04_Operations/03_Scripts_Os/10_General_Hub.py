@@ -68,11 +68,14 @@ def dynamic_speak(text):
 
 
 def run_script(script_name):
-    # Los scripts Generales están en 08_General
-    script_path = ENGINE_DIR / "08_General" / script_name
+    # Los scripts Generales están en 01_Ritual (renombrados de legacy)
+    script_path = ENGINE_DIR / "01_Ritual" / script_name
     if not script_path.exists():
-        print(f"{Fore.RED}[ERROR] Script no encontrado: {script_path}{Style.RESET_ALL}")
-        return
+        # Fallback a 13_Legacy para scripts no migrados
+        script_path = ENGINE_DIR / "13_Legacy" / script_name
+        if not script_path.exists():
+            print(f"{Fore.RED}[ERROR] Script no encontrado: {script_path}{Style.RESET_ALL}")
+            return
 
     print(f"{Fore.YELLOW}[RUNNING] Ejecutando: {script_name}...{Style.RESET_ALL}")
     subprocess.run([sys.executable, str(script_path)])
@@ -104,12 +107,12 @@ def main():
 
     args = parser.parse_args()
 
-    # Mapeo de comandos
+    # Mapeo de comandos — nombres actualizados a numeración v4.9
     cmd_map = {
         "reset": "00_Context_Reset.py",
-        "notify": "77_Notify_System.py",
-        "alert": "66_Alert_Manager.py",
-        "campanilla": "64_Campanilla.py",
+        "notify": "03_Notify_System.py",
+        "alert": "02_Alert_Manager.py",
+        "campanilla": "01_Campanilla.py",
         "sync-notes": "11_Sync_Notes.py",
     }
 

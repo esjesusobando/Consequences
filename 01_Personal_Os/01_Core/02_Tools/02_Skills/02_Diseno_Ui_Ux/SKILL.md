@@ -1,4 +1,5 @@
 ---
+name: diseno-ui-ux
 description: Diseño UI/UX profesional — skills de diseño visual, prototipado, sistemas de diseño, y experiencia de usuario. Triggers on: diseño, ui, ux, prototipo, figma, design system, interface, experiencia de usuario, visual design, carrusel, thumbnail, imagen premium, video prompt
 globs: 
 alwaysApply: false

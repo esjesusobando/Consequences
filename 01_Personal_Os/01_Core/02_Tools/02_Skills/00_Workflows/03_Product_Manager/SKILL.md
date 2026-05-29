@@ -1,5 +1,6 @@
 ---
-description: 03_Product_Manager
+name: product-manager-index
+description: 03_Product_Manager — Gestión de producto: brainstorming, planificación técnica, ejecución de planes, gestión de épicas/tareas en Jira y escritura de documentos estratégicos.
 globs: **/*
 alwaysApply: true
 ---
