@@ -31,7 +31,7 @@ Esta skill permite a cualquier agente (especialmente a @13_hillary) gestionar el
 
 ### 01. Quick Capture
 - **Input**: Cualquier pensamiento o tarea.
-- **Action**: Crear un archivo `.md` en `03_Tasks/02_Hillary_Inbox/` con el formato:
+- **Action**: Crear un archivo `.md` en `03_Task/02_Hillary_Inbox/` con el formato:
   ```markdown
   ---
   created: YYYY-MM-DD HH:MM
@@ -43,18 +43,18 @@ Esta skill permite a cualquier agente (especialmente a @13_hillary) gestionar el
   ```
 
 ### 02. Plan My Day
-- **Action**: Leer `03_Tasks/02_Hillary_Inbox/` y el backlog. Generar un bloque de rutina en `03_Tasks/Daily_Routine.md` usando la plantilla `03_Tasks/00_Templates/06_Routine_Master.md`.
+- **Action**: Leer `03_Task/02_Hillary_Inbox/` y el backlog. Generar un bloque de rutina en `03_Task/Daily_Routine.md` usando la plantilla `03_Task/00_Templates/06_Routine_Master.md`.
 - **Lógica de Energía**:
   - 🌅 Mañana: Alta energía (Focus Deep Work) -> Tareas P0/Exploración.
   - 🌞 Tarde: Media energía (Meetings/Admin) -> Tareas P1/E-mail.
   - 🌙 Noche: Baja energía (Review/Relax) -> Triage/Higiene.
 
 ### 03. Daily Notes
-- **Action**: Registrar eventos significativos durante la ejecución en `03_Tasks/Daily_Activity_Log.md`.
+- **Action**: Registrar eventos significativos durante la ejecución en `03_Task/Daily_Activity_Log.md`.
 
 ## 📜 Rules
 
-1.  **No Duplicates**: Verificar que la tarea no exista en `03_Tasks`.
+1.  **No Duplicates**: Verificar que la tarea no exista en `03_Task`.
 2.  **Tag First**: Siempre usar brackets `[]` para identificar categorías.
 3.  **Proactive Triage**: Hillary debe procesar el inbox al inicio de cada sesión de "Life OS".
 
@@ -82,4 +82,4 @@ Esta skill permite a cualquier agente (especialmente a @13_hillary) gestionar el
 
 ---
 
-*v6.1 | Source of Truth: 01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/01_Life_OS/18_Personal_Life_OS/README.md*
+*v6.1 | Source of Truth: 01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/01_Life_OS/18_Personal_Life_OS/README.md*

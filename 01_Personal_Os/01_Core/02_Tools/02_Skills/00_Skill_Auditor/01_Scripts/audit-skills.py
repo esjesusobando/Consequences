@@ -178,26 +178,26 @@ def audit_skill(skill_dir: Path) -> dict:
         results["passed"] += 1  # Pass but warn if under 700
     else:
         results["failed"] += 1
-        results["missing"].append(f"SKILL.md has {line_count} lines (max: 500)")
+        results["missing"].append(f"SKILL.md has {line_count} lines (max: 700)")
 
     # References folder
-    has_references = (skill_dir / "references").exists()
+    has_references = (skill_dir / "01_References").exists() or (skill_dir / "02_References").exists()
     results["checks"]["references/ folder"] = has_references
     if has_references:
         results["passed"] += 1
     elif line_count > 200:
         results["failed"] += 1
-        results["missing"].append("references/ folder needed (SKILL.md > 200 lines)")
+        results["missing"].append("01_References/ or 02_References/ folder needed (SKILL.md > 200 lines)")
     else:
-        results["warnings"].append("references/ folder recommended")
+        results["warnings"].append("01_References/ or 02_References/ folder recommended")
 
     # Scripts folder (optional)
-    has_scripts = (skill_dir / "scripts").exists()
+    has_scripts = (skill_dir / "01_Scripts").exists() or (skill_dir / "scripts").exists()
     results["checks"]["scripts/ folder"] = has_scripts
     if has_scripts:
         results["passed"] += 1
         # Check if scripts exist
-        scripts = list((skill_dir / "scripts").glob("*.py"))
+        scripts = list((skill_dir / "scripts").glob("*.py")) + list((skill_dir / "01_Scripts").glob("*.py"))
         if scripts:
             results["checks"]["scripts: exist"] = True
             results["passed"] += 1
@@ -320,8 +320,8 @@ def main():
     skills_dir = project_root / "01_Core" / "02_Tools" / "02_Skills"
 
     if not skills_dir.exists():
-        # Try alternative path
-        skills_dir = project_root / ".agent" / "02_Skills"
+        # Try alternative path (project root skills)
+        skills_dir = project_root / "01_Personal_Os" / "01_Core" / "02_Tools" / "02_Skills"
 
     if not skills_dir.exists():
         print(f"❌ Skills directory not found: {skills_dir}")

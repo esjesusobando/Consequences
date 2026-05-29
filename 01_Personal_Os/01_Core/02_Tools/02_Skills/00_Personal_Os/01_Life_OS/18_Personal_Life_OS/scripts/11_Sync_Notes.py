@@ -9,6 +9,8 @@ Sincroniza notas del Brain.
 import os
 import subprocess
 import glob
+import sys
+from pathlib import Path
 from datetime import datetime
 
 

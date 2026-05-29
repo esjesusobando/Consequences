@@ -1,6 +1,6 @@
 ---
 name: compound-engineering
-description: "Compound Engineering - Captura y reutiliza conocimiento del equipo. Triggers: compound, knowledge capture, lessons learned, document solution, capturar conocimiento."
+description: "Compound Engineering - Captura y reutiliza conocimiento del equipo. Triggers: compound, knowledge capture, lessons learned, document solution, capturar conocimiento. Triggers on: compound, knowledge capture, lessons learned, document solution, capturar conocimiento, solution documentation, problem solving"
 version: 1.0.0
 ---
 
@@ -66,6 +66,15 @@ Compound Engineering nace de una verdad incómoda: en el software, el equipo res
 
 - **Por qué**: Sin el issue/PR original, la solución flota sin contexto del sistema — no se sabe qué versión aplica, ni qué decisión de negocio la motivó.
 - **Solución**: Incluir referencia al issue/PR en el documento. Formato: `Relacionado: #ISSUE-123` o `PR: #456`.
+
+## 💾 State Persistence
+
+| Componente | Persistencia | Mecanismo |
+|---|---|---|
+| Soluciones documentadas | ✅ Permanente | Archivos `.md` en `04_Operations/06_Solutions/` |
+| Categorías disponibles | ✅ Archivo | Directorios en `06_Solutions/` + validación al guardar |
+| Índice de búsqueda | ⚠️ Bajo demanda | Se regenera con cada búsqueda — no hay índice persistente |
+| Vínculos a issues | ✅ En el documento | Formato `Relacionado: #ISSUE-123` incluido en el template |
 
 ---
 

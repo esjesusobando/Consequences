@@ -47,8 +47,8 @@ Esta skill es el **guardián de calidad** del PersonalOS. Sin ella, skills de ba
 | Criterio                                            | Límite                                                              | Notas                                                       |
 |----------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------|
 | SKILL.md líneas                                     | < 200 ideal, < 500 max                                              | Contar líneas reales                                        |
-| references/ existe                                  | Requerido si SKILL.md > 200 líneas                                  | Para docs pesadas                                           |
-| scripts/ existe                                     | Opcional                                                            | Si hay código reutilizable                                  |
+| 02_References/ existe                               | Requerido si SKILL.md > 200 líneas                                  | Para docs pesadas                                           |
+| 01_Scripts/ existe                                  | Opcional                                                            | Si hay código reutilizable                                  |
 | assets/ existe                                      | Opcional                                                            | Si hay templates                                            |
 
 ### 3. Gotchas Section (REQUIRED)
@@ -117,9 +117,9 @@ Esta skill es el **guardián de calidad** del PersonalOS. Sin ella, skills de ba
 
 > Para información detallada:
 
-- [references/audit-criteria.md](references/audit-criteria.md) — Checklist completo de auditoría
-- [references/anthropic-standards.md](references/anthropic-standards.md) — Estándares Anthropic originales
-- [08_Skill_Creation_SOTA.md](../08_Skill_Creation_SOTA/SKILL.md) — Documento SOTA v5.1
+- [02_References/audit-criteria.md](02_References/audit-criteria.md) — Checklist completo de auditoría
+- [02_References/anthropic-standards.md](02_References/anthropic-standards.md) — Estándares Anthropic originales
+- [SOTA v5.1 — Skill Creator](../06_Tools/03_Skill_Creator/01_References/anthropic-standards.md) — Documento SOTA v5.1
 
 ---
 
@@ -127,9 +127,9 @@ Esta skill es el **guardián de calidad** del PersonalOS. Sin ella, skills de ba
 
 | Script                                                                                      | Propósito                                                                   |
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [scripts/audit-skills.py](scripts/audit-skills.py)                                          | Analiza todas las skills en un directorio                                   |
-| [scripts/validate-essence.py](scripts/validate-essence.py)                                  | Verifica esencia original preservada                                        |
-| [scripts/fix-missing.py](scripts/fix-missing.py)                                            | Corrige archivos faltantes automáticamente                                  |
+| [01_Scripts/audit-skills.py](01_Scripts/audit-skills.py)                                    | Analiza todas las skills en un directorio                                   |
+| [01_Scripts/validate-essence.py](01_Scripts/validate-essence.py)                            | Verifica esencia original preservada                                        |
+| [01_Scripts/fix-missing.py](01_Scripts/fix-missing.py)                                      | Corrige archivos faltantes automáticamente                                  |
 
 ---
 

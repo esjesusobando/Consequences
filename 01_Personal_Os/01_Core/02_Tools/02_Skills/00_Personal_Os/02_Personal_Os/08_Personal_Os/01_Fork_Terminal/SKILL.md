@@ -1,12 +1,9 @@
 ---
+name: fork-terminal-skill
 description: 01_Fork_Terminal
 globs: **/*
 alwaysApply: true
 ---
-
-name: Fork Terminal Skill
-description: QUÉ HACE: Abre nuevas instancias de terminal para ejecutar comandos o agentes de forma independiente. CUÁNDO SE EJECUTA: Para ejecutar procesos largos o delegar subtareas sin bloquear la sesión actual.
- Triggers on: personalos, workflow, automation.
 ## 📋 Skill Protocol (Armor Layer)
 
 ### 🧩 Contexto Requerido
@@ -48,7 +45,7 @@ AGENTIC_CODING_TOOLS: claude-code, codex-cli, gemini-cli
 
 - IF: The user requests a fork terminal with a summary. This ONLY works for our agentic coding tools `AGENTIC_CODING_TOOLS`. The tool MUST BE enabled as well.
 - THEN:
-  - Read, and REPLACE the `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/prompts/fork_summary_user_prompt.md` with the history of the conversation between you and the user so far.
+  - Read, and REPLACE the `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/prompts/fork_summary_user_prompt.md` with the history of the conversation between you and the user so far.
   - Include the next users request in the `Next User Request` section.
   - This will be what you pass into the PROMPT parameter of the agentic coding tool.
   - IMPORTANT: To be clear, don't update the file directly, just read it, fill it out IN YOUR MEMORY and use it to craft a new prompt in the structure provided for the new fork agent.
@@ -62,16 +59,16 @@ AGENTIC_CODING_TOOLS: claude-code, codex-cli, gemini-cli
 ## Workflow
 
 1. Understand the user's request.
-2. READ: `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/tools/fork_terminal.py` to understand our tooling.
+2. READ: `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/tools/fork_terminal.py` to understand our tooling.
 3. Follow the `Cookbook` to determine which tool to use.
-4. Execute the `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/tools/fork_terminal.py: fork_terminal(command: str)` tool.
+4. Execute the `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/tools/fork_terminal.py: fork_terminal(command: str)` tool.
 
 ## Cookbook
 
 ### Raw CLI Commands
 
 - IF: The user requests a non-agentic coding tool AND `ENABLE_RAW_CLI_COMMANDS` is true.
-- THEN: Read and execute: `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/cookbook/cli-command.md`
+- THEN: Read and execute: `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/cookbook/cli-command.md`
 - EXAMPLES:
   - "Create a new terminal to <xyz> with ffmpeg"
   - "Create a new terminal to <xyz> with curl"
@@ -80,7 +77,7 @@ AGENTIC_CODING_TOOLS: claude-code, codex-cli, gemini-cli
 ### Claude Code
 
 - IF: The user requests a claude code agent to execute the command AND `ENABLE_CLAUDE_CODE` is true.
-- THEN: Read and execute: `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/cookbook/claude-code.md`
+- THEN: Read and execute: `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/cookbook/claude-code.md`
 - EXAMPLES:
   - "fork terminal use claude code to <xyz>"
   - "spin up a new terminal request <xyz> using claude code"
@@ -89,7 +86,7 @@ AGENTIC_CODING_TOOLS: claude-code, codex-cli, gemini-cli
 ### Codex CLI
 
 - IF: The user requests a codex CLI agent to execute the command AND `ENABLE_CODEX_CLI` is true.
-- THEN: Read and execute: `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/cookbook/codex-cli.md`
+- THEN: Read and execute: `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/cookbook/codex-cli.md`
 - EXAMPLES:
   - "fork terminal use codex to <xyz>"
   - "spin up a new terminal request <xyz> using codex"
@@ -98,7 +95,7 @@ AGENTIC_CODING_TOOLS: claude-code, codex-cli, gemini-cli
 ### Gemini CLI
 
 - IF: The user requests a gemini CLI agent to execute the command AND `ENABLE_GEMINI_CLI` is true.
-- THEN: Read and execute: `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/cookbook/gemini-cli.md`
+- THEN: Read and execute: `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/cookbook/gemini-cli.md`
 - EXAMPLES:
   - "fork terminal use gemini to <xyz>"
   - "spin up a new terminal request <xyz> with gemini"

@@ -86,8 +86,8 @@
 ### 06_Youtube_Full_Video — Video Production
 
 | #  | Workflow                 | Función              |
-|---|-------------------------|---------------------|
-|---| Video production pipeline| Full video production|
+|----|-------------------------|---------------------|
+| 01 | Video production pipeline| Full video production|
 
 ---
 
@@ -109,6 +109,7 @@
 | 09 | Agent_Teams_Protocol.mdc| Protocolo multi-agente  |
 | 10 | Git_Directions.mdc      | Flujo y reglas Git      |
 | 11 | Minimax.mdc             | Configuración Minimax   |
+| 12 | Audit_OS_Integrity.mdc  | Auditoría de integridad |
 
 ---
 
