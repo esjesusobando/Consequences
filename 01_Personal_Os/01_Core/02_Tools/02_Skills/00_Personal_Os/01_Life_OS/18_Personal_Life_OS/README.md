@@ -31,7 +31,7 @@ Quick Capture → 03_Task/02_Hillary_Inbox/   (inbox de capturas)
 Plan My Day   → 03_Task/Daily_Routine.md    (schedule diario)
 Daily Notes   → 03_Task/Daily_Activity_Log.md (observaciones)
 Recording Mode → 03_Task/02_Hillary_Inbox/Transcripts/
-Returns Tracker → 01_Personal_Os/01_Core/02_Tools/02_Skills/ (auto-generated skills)
+Returns Tracker → 01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/01_Life_OS/99_Auto_Generated/ (auto-generated skills)
 ```
 
 ---
