@@ -199,10 +199,10 @@ Think_Different/
 
 | #   | Script                                           | Propósito                                                      |
 |----|-------------------------------------------------|---------------------------------------------------------------|
-| 33  | `33_Parallel_Audit_Pro.py`                       | Auditoría paralela avanzada                                    |
-| 34  | `34_Skill_Auditor.py`                            | Auditoría específica de skills                                 |
-| 50  | `50_System_Health_Monitor.py`                    | Monitor de salud del sistema                                   |
-| 57  | `57_Repo_Sync_Auditor.py`                        | Auditor de sincronización de repos                             |
+| 26  | `26_Parallel_Audit_Pro.py`                       | Auditoría paralela avanzada                                    |
+| 27  | `27_Skill_Auditor.py`                            | Auditoría específica de skills                                 |
+| 28  | `28_System_Health_Monitor.py`                    | Monitor de salud del sistema                                   |
+| 29  | `29_Repo_Sync_Auditor.py`                        | Auditor de sincronización de repos                             |
 
 > ★ = HUB canónico JARVIS 4.5
 

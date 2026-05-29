@@ -93,10 +93,10 @@ python 15_MCP_Sync_Hub.py --validate      # Validation tip
 | Subcommand  | Script                       | Report                                 |
 |------------|-----------------------------|---------------------------------------|
 | `estructura`| Structure audit              | Dimension validation + script numbering|
-| `links`     | `57_Repo_Sync_Auditor.py`    | Repository link sync status            |
-| `skills`    | `34_Skill_Auditor.py`        | Skills validation                      |
-| `health`    | `50_System_Health_Monitor.py`| System health metrics                  |
-| `profundo`  | `33_Parallel_Audit_Pro.py`   | Deep parallel audit                    |
+| `links`     | `29_Repo_Sync_Auditor.py`    | Repository link sync status            |
+| `skills`    | `27_Skill_Auditor.py`        | Skills validation                      |
+| `health`    | `28_System_Health_Monitor.py`| System health metrics                  |
+| `profundo`  | `26_Parallel_Audit_Pro.py`   | Deep parallel audit                    |
 
 **How to trigger:**
 ```bash

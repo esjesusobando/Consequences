@@ -12,7 +12,7 @@ description: >
 
 Workflows es la capa de orquestación del sistema — donde los agentes dejan de ser islas y se convierten en equipos. No se trata de tener muchos agentes, sino de que sepan cuándo hablar, cuándo escuchar y cuándo pasar la posta. Cada patrón aquí (Supercampeones, Marvel, Octopus) resuelve un problema de coordinación real que apareció en producción. La diferencia entre un swarm que funciona y uno que no es saber quién tiene el contexto en cada momento.
 
-**Área Funcional:** 05_Workflows
+**Área Funcional:** 00_Workflows
 **Versión:** 1.0 | **Última actualización:** 2026-05-19
 
 ---
@@ -79,7 +79,7 @@ Usuario → Director → Jugadores → Árbitro → Director → Usuario
 | Componente | Persistencia | Mecanismo |
 |---|---|---|
 | Workflow activo | ⚠️ Por sesión | Estado en memoria — se pierde al cerrar sesión |
-| Resultados de fase | ✅ Archivo | Checkpoints en `05_Workflows/00_Workflows_Os/.checkpoints/` |
+| Resultados de fase | ✅ Archivo | Checkpoints en `00_Workflows/00_Workflows_Os/.checkpoints/` |
 | Config de equipos | ✅ Permanente | SKILL.md de cada equipo en su directorio |
 | Historial de ejecuciones | ❌ No persiste | Cada ejecución empieza fresh |
 

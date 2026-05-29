@@ -14,11 +14,15 @@ alwaysApply: true
 
 ---
 
+**Versión:** v4.8 Consequences (2026-05-28)
+
+---
+
 ## 📋 SECCIÓN 01: PILAR 01 - CORE PROTOCOL (Inicio y Contexto)
 
 ### Obligatorio en Cada Sesión
 
-1. Leer `00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md` (SIEMPRE)
+1. Leer `00_Winter_is_Coming/AGENTS.md` (SIEMPRE)
 2. Leer `00_Winter_is_Coming/GOALS.md`
 3. Leer `00_Winter_is_Coming/BACKLOG.md`
 4. Engram: `mem_context(limit=10)`

@@ -224,7 +224,7 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 
 **Solo la IA** tiene la autoridad y la capacidad para modificar el núcleo del sistema PersonalOS (código, scripts, configuración). El usuario es el estratega y dueño de la visión; la IA es el ejecutor responsable de mantener la pureza técnica y la integridad del sistema (Pure Green).
 
-## 10. Workflows (30 — 7 categorías)
+## 10. Workflows (28 — 7 categorías)
 
 📁 `01_Personal_Os/01_Core/00_Workflows_Os/`
 

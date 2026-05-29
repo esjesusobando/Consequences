@@ -9,7 +9,7 @@ description: >-
   quiero crear, quiero lanzar, plan, estrategia, auditoría, diagnóstico, crear contenido,
   diseñar prototipo, automatizar workflow, debug problema, test feature, analizar datos,
   revisar código, implementar feature, refactor, build proyecto, lanzar campaña.
-version: 2.0.0
+version: 2.1.0
 harness:
   sprint_contract: true
   evaluator_pattern: true
@@ -309,6 +309,82 @@ El Conductor opera como **Evaluator del flujo completo**:
 
 ---
 
+## ⚡ Dynamic Workflows Pattern (Anthropic May 2026)
+
+> **Reference:** [Knowledge Base](../../../02_Knowledge/01_Anthropic/00_Dynamic_Workflows.md)
+
+Anthropic's **Dynamic Workflows** (released May 28, 2026) represent the next evolution of agent orchestration — Claude dynamically writes JavaScript scripts that run tens to hundreds of parallel subagents in a single session. This pattern extends the Conductor's orchestration capabilities beyond sequential skill pipelines.
+
+### How Dynamic Workflows Differ from Current Orchestration
+
+| Aspect | Current Conductor Flow | Dynamic Workflows Pattern |
+|--------|----------------------|--------------------------|
+| **Execution model** | Sequential pipeline (one skill at a time) | Parallel subagent fleets (16 concurrent, 1,000 total) |
+| **Context management** | Single context window | Script variables (outside context — only results return) |
+| **Verification** | Sprint Contract checks after each step | Adversarial agents refute findings before they reach you |
+| **Granularity** | Skill-level domains | Task-level subtasks |
+| **Resilience** | Manual recovery via runbooks | Auto-resume on interrupt |
+| **Token efficiency** | Lower per-task | Higher up-front, but scales better for large tasks |
+
+### When to Use Dynamic Workflows vs. Current Flow
+
+**Use current flow (sequential pipeline) when:**
+- The task involves 1-3 skills
+- Steps have hard dependencies (step B needs step A's output)
+- Token budget is constrained
+- The user needs interactive steering mid-flow
+
+**Use dynamic workflows when:**
+- The task has many independent sub-tasks (e.g., audit all 47 agents)
+- You need adversarial verification on critical output
+- The work spans hundreds of files (migrations, refactors)
+- The task would take more than one conversation session
+
+### Integration with OS Conductor
+
+The Conductor can serve as the **decision layer** that routes to either path:
+
+```
+User request → Conductor categorizes intent
+  ├── Simple (1-3 skills, sequential) → Current pipeline
+  │     Sprint Contract → Route → Delegate → Verify
+  │
+  └── Complex (parallelizable, 4+ domains) → Dynamic Workflow
+        Plan → Write orchestration script → Fan out subagents
+        → Adversarial verify → Synthesize → Report
+```
+
+**For the Conductor specifically, these are good dynamic workflow candidates:**
+- **Full OS audit**: Audit all 47 agents + 12 skill areas in parallel, then synthesize a health report
+- **Multi-platform content launch**: Generate brand voice + design assets + video script + ad copy simultaneously
+- **Security sweep**: Scan all skills for vulnerabilities using parallel audit agents with adversarial verification
+- **Registry sync**: Validate all registry entries against filesystem in parallel
+
+### Key Pattern: Adversarial Review Step
+
+From the Bun rewrite case study (750K lines of Rust ported from Zig in 6-11 days):
+
+```
+For each unit of work:
+  1. Do the work (no git/build — slow commands banned to avoid conflicts)
+  2. Adversarial review (2 independent agents refute the output)
+  3. Apply verified changes
+```
+
+The Conductor can inject this pattern into any flow where output quality is critical:
+- Before presenting audit results to the user
+- Before committing generated content
+- Before finalizing a plan or strategy document
+
+### ⚠️ Gotcha: Cost Awareness
+
+Dynamic workflows consume **significantly more tokens** than a typical session. The Conductor MUST:
+- Warn the user before dispatching a workflow: "This task will use dynamic workflows which consume more tokens. Proceed?"
+- Monitor for runaway workflows (escalate if a workflow exceeds expected bounds)
+- Prefer sequential pipeline for bounded, small tasks
+
+---
+
 ## 🔧 Context Management (Harness Anthropic 2.0)
 
 Para sesiones largas con el Conductor:
@@ -391,3 +467,5 @@ El Conductor incluye un sistema de **evaluación cuantitativa** siguiendo Skill 
 - **Flujos detallados:** [`references/compound-flows.md`](references/compound-flows.md)
 - **Sprint Contract template:** [`references/sprint-contract.md`](references/sprint-contract.md)
 - **Runbooks:** [`references/runbooks/`](references/runbooks/)
+- **Dynamic Workflows knowledge:** `01_Personal_Os/02_Knowledge/01_Anthropic/00_Dynamic_Workflows.md`
+- **Security Find-and-Fix knowledge:** `01_Personal_Os/02_Knowledge/01_Anthropic/01_Security_Find_Fix_Loop.md`

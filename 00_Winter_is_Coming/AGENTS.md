@@ -85,7 +85,7 @@ cat 01_Personal_Os/03_Task/  # tareas activas
 | **Design Ops**                               | `04_Design_Ops.md`                               | Diseño, visual systems                        | 04_Product_Design                                     |
 | **Platform Engineer**                        | `05_Platform_Engineer.md`                        | Infra, DevOps, CI/CD                          | 07_DevOps · 05_Mcp                                    |
 
-### Especialistas Compound (24)
+### Especialistas Compound (23)
 
 📁 `01_Personal_Os/01_Core/02_Tools/01_Agents/02_Specialists_Compound/`
 
@@ -231,7 +231,7 @@ Tie to goals and reference material.
 
 ## Goals Alignment
 
-- During backlog work, make sure each task references the relevant goal inside the **Context** section (cite headings or bullets from `00_CORE/GOALS.md`).
+- During backlog work, make sure each task references the relevant goal inside the **Context** section (cite headings or bullets from `00_Winter_is_Coming/GOALS.md`).
 - If no goal fits, ask whether to create a new goal entry or clarify why the work matters.
 - Remind the user when active tasks do not support any current goals.
 
@@ -397,10 +397,10 @@ Centralized HUBs in `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 | **20_System_Mapper_Hub.py**                         | Genera 7 manifests JARVIS                                                  |
 | **21_Legacy_Path_Cleanup.py**                       | Limpia paths legacy                                                        |
 | **22_Validate_Skill_Frontmatter.py**                | Detecta skills sin frontmatter YAML                                        |
-| **33_Parallel_Audit_Pro.py**                        | Auditoría paralela avanzada                                                |
-| **34_Skill_Auditor.py**                             | Auditoría específica de skills                                             |
-| **50_System_Health_Monitor.py**                     | Monitor de salud del sistema                                               |
-| **57_Repo_Sync_Auditor.py**                         | Auditor de sincronización de repos                                         |
+| **26_Parallel_Audit_Pro.py**                        | Auditoría paralela avanzada                                                |
+| **27_Skill_Auditor.py**                             | Auditoría específica de skills                                             |
+| **28_System_Health_Monitor.py**                     | Monitor de salud del sistema                                               |
+| **29_Repo_Sync_Auditor.py**                         | Auditor de sincronización de repos                                         |
 
 ### Dynamic Paths
 
@@ -520,10 +520,10 @@ gr --agents    # Solo 3 agents
 | "daily notes", "log this", "registro"                                     | `03_Daily_Notes`                            | Workflows en 04_Hillary/                       |
 | "/hillary", "life os", "personal productivity"                            | Orquestador                                 | Workflows en 04_Hillary/                       |
 
-**Skills location:** `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/`
+**Skills location:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/`
 **Inbox:** `01_Personal_Os/03_Task/02_Hillary_Inbox/`
 **RUNBOOK:** `01_Personal_Os/02_Knowledge/04_Docs/Hillary_Life_OS_RUNBOOK.md`
 
 ---
 
-_Think Different PersonalOS v4.7 Consequences — Pure Green State (Audit 2026-05-24)_
+_Think Different PersonalOS v4.8 Consequences — Pure Green State (Audit 2026-05-28)_

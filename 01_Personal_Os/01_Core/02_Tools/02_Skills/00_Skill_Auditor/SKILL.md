@@ -198,6 +198,76 @@ Reportes de auditoría se guardan en:
 
 ---
 
-*Skill Version: 2.0*
-*Framework: Anthropic Skill Creator v2.0 + PersonalOS SOTA v5.1*
-*Last Updated: 2026-03-27*
+## 🔄 Anthropic Find-and-Fix Loop Integration
+
+> **Source:** Anthropic Security Find-and-Fix Loop (May 27, 2026) — [Knowledge Base](../../../../02_Knowledge/01_Anthropic/01_Security_Find_Fix_Loop.md)
+
+The Skill Auditor now incorporates Anthropic's 6-step find-and-fix methodology to transform audits from static checks into a complete discovery→verification→patching pipeline.
+
+### How the 6 Steps Map
+
+#### Step 1: 🔍 Threat Model — Define Audit Criteria
+- **Before:** Static checklist from SOTA v5.1
+- **After:** Dynamic threat model per skill being audited
+- **Implementation:** The audit criteria in `02_References/audit-criteria.md` act as the threat model. Each criteria defines what "counts as a violation" (severity thresholds, must-pass vs. nice-to-have rules).
+- **New:** Every audit session starts by defining the audit scope: what skill areas are in scope, what severity counts as FAIL, and what's out of scope.
+
+#### Step 2: 📦 Sandbox — Skills Directory as Sandbox
+- **Before:** Audit runs directly on the skill files
+- **After:** Explicitly treat the skills directory as a read-only sandbox
+- **Implementation:** Audit scripts mount the skills tree as read-only reference. No modifications during discovery. The sandbox guarantees the audit doesn't accidentally mutate what it's auditing.
+- **Script:** `audit-skills.py` already operates in read-only mode — this is just making it explicit.
+
+#### Step 3: 🚀 Discovery — Parallel Audit Agents
+- **Before:** Sequential audit (one skill at a time)
+- **After:** Parallel discovery using subagents or batched processing
+- **Implementation:** Split the skills directory into batches, run `audit-skills.py` across each batch in parallel, collect all raw findings.
+- **Script enhancement:** `audit-skills.py` should support a `--batch` flag for parallel execution.
+
+#### Step 4: ✅ Verification — Cross-Validate Findings
+- **Before:** A single pass generates the audit report
+- **After:** Every finding goes through adversarial verification
+- **Implementation:** After raw findings are collected, run `validate-essence.py` as an independent verification pass. Then run a **cross-validation** step: one script audits, another verifies the audit. Findings that can't be independently confirmed get downgraded.
+- **Script enhancement:** New `cross-validate.py` script that compares audit results between two independent runs and highlights discrepancies.
+
+#### Step 5: 📊 Triage — Deduplicate by Root Cause
+- **Before:** Each skill gets its own audit report
+- **After:** Findings are deduplicated by root cause across all skills
+- **Implementation:** `audit-loop.py` can be extended to group findings by root cause pattern. Example: 5 skills all missing gotchas → one root cause ("missing gotchas pattern"), not 5 separate issues.
+- **Rank by severity:** Classify each finding as Critical (blocks integration), Major (needs fix before next audit), Minor (nice-to-have).
+
+#### Step 6: 🔧 Patching — Auto-Fix with Verification
+- **Before:** `fix-missing.py` creates missing files
+- **After:** TDD approach: verify → generate fix → verify fix → commit
+- **Implementation:** Extend `fix-missing.py` with a verification step:
+  1. Identify what's missing (e.g., no gotchas section)
+  2. Generate the fix (e.g., add gotchas template)
+  3. Re-run audit on the fixed skill to verify it now PASSES
+  4. Only commit if verification succeeds
+- **Adversarial check:** After fixing, run `validate-essence.py` to ensure the fix didn't break the skill's original purpose.
+
+### Complete Find-and-Fix Audit Flow
+
+```
+1. THREAT MODEL → Define criteria + scope thresholds
+2. SANDBOX → Mount skills directory as read-only
+3. DISCOVERY → audit-skills.py --parallel (batched)
+4. VERIFICATION → validate-essence.py + cross-validate.py
+5. TRIAGE → audit-loop.py --dedup --rank
+6. PATCHING → fix-missing.py --verify --adversarial-check
+```
+
+### New Scripts Needed
+
+| Script | Purpose | Status |
+|--------|---------|--------|
+| `audit-skills.py --parallel --batch N` | Parallel discovery | Enhancement |
+| `cross-validate.py` | Independent verification of audit findings | New |
+| `audit-loop.py --dedup --rank` | Root-cause dedup + severity ranking | Enhancement |
+| `fix-missing.py --verify --adversarial-check` | Fix + verify fix passes audit | Enhancement |
+
+---
+
+*Skill Version: 2.1*
+*Framework: Anthropic Skill Creator v2.0 + PersonalOS SOTA v5.1 + Find-and-Fix Loop*
+*Last Updated: 2026-05-28*

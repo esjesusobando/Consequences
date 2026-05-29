@@ -12,7 +12,7 @@ description: >
 
 Personal OS es el centro nervioso del sistema — no es un conjunto de herramientas, es el sistema operativo de tu vida. Hillary no es un bot de productividad más: es la interfaz que transforma el caos del día a día en estructura ejecutable. Cada ritual, cada template, cada workflow existe porque hubo una iteración anterior que falló. Este skill área orquesta la relación entre el agente y el humano para que el sistema funcione aunque ninguno de los dos esté al 100%.
 
-**Área Funcional:** 07_Personal_Os
+**Área Funcional:** 00_Personal_Os
 **Versión:** 1.0 | **Última actualización:** 2026-05-19
 
 ---
@@ -51,7 +51,7 @@ Personal OS es el centro nervioso del sistema — no es un conjunto de herramien
 ## Estructura de Life OS
 
 ```
-07_Personal_Os/
+00_Personal_Os/
 ├── 01_Life_OS/       # Sistema de vida
 ├── 08_Hillary/        # Skill Hillary ✅
 ├── 09_Learning_Always/ # Skill Learning ✅
@@ -76,7 +76,7 @@ Personal OS es el centro nervioso del sistema — no es un conjunto de herramien
 > Los cambios en el sistema de vida no se reflejan en Hillary automáticamente.
 
 - **Por qué**: Hillary lee los archivos de Life OS al inicio de la sesión pero no detecta cambios en caliente. Si actualizás un template, Hillary sigue operando con la versión anterior.
-- **Solución**: Después de modificar un archivo en Life OS, ejecutar `touch 07_Personal_Os/01_Life_OS/.reload` para forzar a Hillary a reindexar.
+- **Solución**: Después de modificar un archivo en Life OS, ejecutar `touch 00_Personal_Os/01_Life_OS/.reload` para forzar a Hillary a reindexar.
 
 ## 💾 State Persistence
 

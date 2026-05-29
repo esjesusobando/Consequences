@@ -14,13 +14,13 @@ alwaysApply: true
 
 ---
 
-## 📂 Workspace Structure (v2.0 Consequences)
+## 📂 Workspace Structure (v4.8 Consequences)
 
 ```
 Think_Different/
 ├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria (ESTRATEGICO)
 ├── 01_Personal_Os/      # El Sistema Operativo
-│   ├── 01_Core/01_Rules/ # <- DONDE ESTAMOS: 10 reglas .mdc
+│   ├── 01_Core/01_Rules/ # <- DONDE ESTAMOS: 13 reglas .mdc
 │   ├── 01_Core/02_Tools/ # Skills, Agents, MCPs, Hooks
 │   ├── 02_Knowledge/    # Base de conocimiento
 │   ├── 03_Task/         # Tareas activas
@@ -37,7 +37,7 @@ Think_Different/
 ### SECUENCIA OBLIGATORIA (EN ORDEN)
 
 1.  **📖 LEER EL PROYECTO COMPLETO**:
-    0. Leer `00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md` - SIEMPRE Comunicarte en Español
+    0. Leer `00_Winter_is_Coming/AGENTS.md` - SIEMPRE Comunicarte en Español
     1. Leer `00_Winter_is_Coming/GOALS.md` — Metas y prioridades
     2. Leer `00_Winter_is_Coming/BACKLOG.md` — Bandeja de entrada
     3. Ejecutar `engram_mem_context(limit=10)` — Ultimas 10 sesiones
@@ -45,8 +45,8 @@ Think_Different/
 
 ### FASE 2: Memoria AI (Contexto Inter-sesiones)
 
-6.  **CTX más reciente**: `00_Context_Memory/CTX_*.md`
-7.  **Session Summary**: `00_Context_Memory/SUMMARY*.md`
+6.  **CTX más reciente**: `01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/CTX_*.md`
+7.  **Session Summary**: `01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/SUMMARY*.md`
 
 ---
 
@@ -116,7 +116,7 @@ Antes de terminar sesión, DEBE llamar `mem_session_summary`:
 
 ---
 
-## 📋 SECCIÓN 05: Aliases de Rutas (v2.0 Consequences)
+## 📋 SECCIÓN 05: Aliases de Rutas (v4.8 Consequences)
 
 ```
 ROOT_DIR              → Think_Different/ (raíz)

@@ -167,7 +167,7 @@ Scripts legacy en `01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/` — sc
 
 1. **Rutas v4.0**: Skills ahora en `01_Personal_Os/01_Core/02_Tools/02_Skills/` (estructura v4.0 Consequences)
 2. **.bashrc**: Alias configurados con rutas absolutas
-3. **34_Skill_Auditor.py**: Corregido para auto-detectar categorías
+3. **27_Skill_Auditor.py**: Corregido para auto-detectar categorías
 
 ---
 
@@ -179,11 +179,11 @@ Scripts migrados a skills usando `get_skill_script()`:
 |-----------------------------------------------------|-------------------------------------------------------|------------------------------------|
 | `01_Spider_Brainstorm.py`                            | 00_Compound_Engineering/scripts                        | ✅                                   |
 | `02_Professor_X_Plan.py`                             | 01_Agent_Teams_Lite/scripts                            | ✅                                   |
-| `34_Skill_Auditor.py`                                | 10_Skill_Auditor/scripts                               | ✅                                   |
+| `27_Skill_Auditor.py`                                | 00_Skill_Auditor/scripts                               | ✅                                   |
 | `53_Structure_Auditor.py`                            | 00_System_Core/scripts                                 | ✅                                   |
-| `50_System_Health_Monitor.py`                        | 08_Personal_Os/scripts                                 | ✅                                   |
-| `33_Parallel_Audit_Pro.py`                           | 06_Testing/scripts                                     | ✅                                   |
-| `57_Repo_Sync_Auditor.py`                            | 07_DevOps/scripts                                      | ✅                                   |
+| `28_System_Health_Monitor.py`                        | 00_Personal_Os/scripts                                 | ✅                                   |
+| `26_Parallel_Audit_Pro.py`                           | 06_Tools/scripts                                       | ✅                                   |
+| `29_Repo_Sync_Auditor.py`                            | 00_Personal_Os/scripts                                 | ✅                                   |
 | `08_Ritual_Cierre.py`                                | 08_Personal_Os/scripts                                 | ✅                                   |
 | `14_Morning_Standup.py`                              | 08_Personal_Os/scripts                                 | ✅                                   |
 | `09_Backlog_Triage.py`                               | 02_Project_Manager/scripts                             | ✅                                   |

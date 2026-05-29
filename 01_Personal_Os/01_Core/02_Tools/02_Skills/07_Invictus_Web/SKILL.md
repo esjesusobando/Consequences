@@ -12,7 +12,7 @@ description: >
 
 Invictus Web es la interfaz del sistema con el mundo exterior — browser automation, web scraping, DevTools. Playwright no está aquí solo para tests: es el brazo que extiende el agente al navegador. Los Superpowers son atajos que convierten acciones frecuentes en comandos de un solo paso. El Buscador Skills resuelve un problema concreto: el sistema tiene decenas de skills y el usuario no siempre sabe cuál invocar. Sin esta capa, el agente opera en una burbuja sin acceso a la web.
 
-**Área Funcional:** 08_Invictus_Web
+**Área Funcional:** 07_Invictus_Web
 **Versión:** 1.0 | **Última actualización:** 2026-05-19
 
 ---

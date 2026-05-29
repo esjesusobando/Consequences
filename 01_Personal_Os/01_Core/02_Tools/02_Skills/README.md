@@ -8,13 +8,13 @@
 
 ---
 
-## 📂 Estructura v4.8 — 12 Áreas Canónicas (394 source / 407 backup SKILL.md)
+## 📂 Estructura v4.8 — 13 Áreas Canónicas (369 source / 734 backup SKILL.md)
 
 ```
 02_Skills/
 ├── 00_Compound_Engineering/    ⭐ Core Engineering (CE) — 63 skills
 ├── 00_System_Core/             ⭐ Stack Core
-├── 10_Skill_Auditor/           ⭐ Auditoría de skills
+├── 00_Skill_Auditor/           ⭐ Auditoría de skills
 │
 ├── 01_Creacion_Contenidos/    🎨 Contenido (38 items)
 │   ├── 01_Brand_Voice/
@@ -61,7 +61,7 @@
 │   ├── 10_GWS_Client/
 │   └── 12_N8N/
 │
-├── 05_Workflows/              🔄 Workflows & Orchestration (33 items)
+├── 00_Workflows/              🔄 Workflows & Orchestration (33 items)
 │   ├── 01_Agent_Teams_Lite/
 │   ├── 02_Project_Manager/
 │   ├── 03_Product_Manager/
@@ -79,7 +79,7 @@
 │   ├── 07_Skill_Creator_Invictus/
 │   └── 08_Octopus/
 │
-├── 07_Personal_Os/            🌱 Personal OS (29 items)
+├── 00_Personal_Os/            🌱 Personal OS (29 items)
 │   ├── 01_Life_OS/
 │   ├── 02_Personal_Os/
 │   ├── 03_Fantasticos/
@@ -88,12 +88,12 @@
 │   ├── 06_Marca/
 │   └── 07_Plantillas/
 │
-├── 08_Invictus_Web/           🌐 Invictus Web (14 items)
+├── 07_Invictus_Web/           🌐 Invictus Web (14 items)
 │   ├── 01_Superpowers/
 │   ├── 02_Buscador_Skills/
 │   └── 03_Playwright/
 │
-├── 09_Claude_Ads/             📢 Claude Ads (20 items)
+├── 05_Claude_Ads/             📢 Claude Ads (20 items)
 │
 ├── 11_Doc_Processing/         📚 Docs
 ├── 13_System_Master/          🏆 System Master
@@ -119,19 +119,19 @@
 | UI/UX Design                                                   | `02_Diseno_Ui_Ux/`                                          |
 | Video & Media                                                  | `03_Video_Media/`                                           |
 | Automatización (N8N, Firecrawl)                                | `04_Automatizacion/`                                        |
-| Workflows (Agent Teams, PM)                                    | `05_Workflows/`                                             |
+| Workflows (Agent Teams, PM)                                    | `00_Workflows/`                                             |
 | Tools (Testing, DevOps)                                        | `06_Tools/`                                                 |
-| Personal OS (Hillary, Life OS)                                 | `07_Personal_Os/`                                           |
-| Invictus Web                                                   | `08_Invictus_Web/`                                          |
-| Claude Ads                                                     | `09_Claude_Ads/`                                            |
+| Personal OS (Hillary, Life OS)                                 | `00_Personal_Os/`                                           |
+| Invictus Web                                                   | `07_Invictus_Web/`                                          |
+| Claude Ads                                                     | `05_Claude_Ads/`                                            |
 
 ---
 
 ## 📝 Changelog
 
 **2026-05-19:** Auditoría Completa v4.1
-- ✅ Sincronizado con estructura real: 394 skills, 12 áreas funcionales
-- ✅ Añadida área `09_Claude_Ads/` (20 items)
+- ✅ Sincronizado con estructura real: 369 skills, 13 áreas funcionales
+- ✅ Añadida área `05_Claude_Ads/` (20 items)
 - ✅ Eliminada referencia a `00_Gcierr/` y `09_Legacy_Archive/` (no existen en disco)
 - ✅ Consistencia total entre README, OS_DIRECTORY y skill-registry
 - ✅ PURE GREEN STATE mantenido
@@ -150,7 +150,7 @@
 - ✅ Reconciliado duplicado 09_Marketing/ → integrado en 01_Creacion_Contenidos/
 - ✅ Eliminado duplicado 09_LEGACY/ (mantenido 09_Legacy_Archive/)
 - ✅ Eliminados duplicados internos (04_Content_Creation, 05_Pptx_Generator)
-- ✅ Total: 394 source skills / 407 backup skills, 12 áreas canónicas
+- ✅ Total: 369 source skills / 734 backup skills, 13 áreas canónicas
 
 **2026-04-21:** Migración v2.0
 - 59+ carpetas reorganizadas

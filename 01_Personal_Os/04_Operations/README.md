@@ -106,10 +106,10 @@ Think_Different/
 ├── 23_Preview_Generator.js     # HTML preview generator
 ├── 24_mass_path_migration.py   # Bulk path migration
 ├── 25_Minimax_Optimizer_Hub.py # Minimax API optimizer
-├── 33_Parallel_Audit_Pro.py    # Parallel audit system
-├── 34_Skill_Auditor.py         # Skill audit tool
-├── 50_System_Health_Monitor.py # System health monitor
-├── 57_Repo_Sync_Auditor.py     # Repo sync auditor
+├── 26_Parallel_Audit_Pro.py    # Parallel audit system
+├── 27_Skill_Auditor.py         # Skill audit tool
+├── 28_System_Health_Monitor.py # System health monitor
+├── 29_Repo_Sync_Auditor.py     # Repo sync auditor
 ├── HUB_SOTA.py                 # SOTA Features Orchestrator
 ├── HUB_CATALOG.md              # Auto-generated HUB catalog
 ├── SCRIPTS_INDEX.md            # Scripts index
