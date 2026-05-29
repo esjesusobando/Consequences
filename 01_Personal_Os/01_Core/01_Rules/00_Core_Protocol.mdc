@@ -14,7 +14,7 @@ alwaysApply: true
 
 ---
 
-## 📂 Workspace Structure (v4.8 Consequences)
+## 📂 Workspace Structure (v4.9 Consequences)
 
 ```
 Think_Different/
@@ -116,7 +116,7 @@ Antes de terminar sesión, DEBE llamar `mem_session_summary`:
 
 ---
 
-## 📋 SECCIÓN 05: Aliases de Rutas (v4.8 Consequences)
+## 📋 SECCIÓN 05: Aliases de Rutas (v4.9 Consequences)
 
 ```
 ROOT_DIR              → Think_Different/ (raíz)

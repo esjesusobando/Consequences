@@ -1,7 +1,7 @@
-# 🛡️ CLAUDE.md | PersonalOS v4.8 — Production Ready AI Context Harness
+# 🛡️ CLAUDE.md | PersonalOS v4.9 — Production Ready AI Context Harness
 
 > **Última actualización:** 2026-05-25
-> **Versión:** v4.8 — Every CE v3.8.4 (local repo), gentle-ai v1.30.6
+> **Versión:** v4.9 — Every CE v3.8.4 (local repo), gentle-ai v1.30.6
 > **Audit:** 2026-05-25 — Judgment Day v3: full project scan, counts corregidos, docs syncronizados
 
 <system_directives>
@@ -170,7 +170,7 @@ Think_Different/                           # RAÍZ
 │   │   ├── 01_Rules/            ✅ 13 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/            ✅ Todas las herramientas
 │   │       ├── 01_Agents/       ✅ 58 agentes (6 áreas: Dream Team, Specialists, Growth, Contexto, Marca, Plantillas)
-│   │       ├── 02_Skills/         ✅ 394 skills (12 áreas funcionales)
+│   │       ├── 02_Skills/         ✅ 385 skills (14 áreas funcionales)
 │   │       ├── 03_Mcp/         ✅ Backup configs MCP
 │   │       ├── 04_Integrations/ ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/        ✅ Pre/Post/Lifecycle/Sound/Harness
@@ -217,7 +217,7 @@ Think_Different/                           # RAÍZ
 
 > ⚠️ Source: 58 agentes (6 áreas). Backup .agent/ puede diferir en conteo — es esperado por ser un snapshot histórico, no afecta runtime.
 
-### 3. SKILLS (394 — 12 áreas funcionales)
+### 3. SKILLS (394 — 14 áreas funcionales)
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
@@ -236,7 +236,7 @@ Think_Different/                           # RAÍZ
 | 08_Invictus_Web                                  | 08_Invictus_Web/            | Playwright, Superpowers, Browser Auto                         |
 | 09_Claude_Ads                                    | 09_Claude_Ads/              | Ads, Evals, Agents, Assets, Research                          |
 
-> ⚠️ Audit 2026-05-23: 12 áreas activas, 394 skills verificados
+> ⚠️ Audit 2026-05-23: 14 áreas activas, 385 skills verificados
 
 ### 4. JARVIS 4.5 — MANIFEST SYSTEM
 
@@ -245,7 +245,7 @@ Think_Different/                           # RAÍZ
 ├── 01_OS_Inventory.json      # Inventario OS (updated 2026-05-22)
 ├── 02_MCP_Registry.yaml     # 36 MCPs (+1 Higgfield remote)
 ├── 03_Agent_Catalog.yaml    # 46 agentes
-├── 04_Skill_Index.json      # 394 skills en 12 áreas (updated 2026-05-23)
+├── 04_Skill_Index.json      # 385 skills en 14 áreas (updated 2026-05-23)
 ├── 05_HUB_Catalog.yaml     # 31 scripts raíz + 169 total
 ├── 06_Workflow_Graph.yaml   # 30 workflows
 └── 07_Hook_Registry.yaml    # 6 categorías de hooks
@@ -281,14 +281,14 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 
 ---
 
-## 📊 ESTADO DEL SISTEMA (v4.8 — 2026-05-25)
+## 📊 ESTADO DEL SISTEMA (v4.9 — 2026-05-25)
 
 | Categoria                         | Estado                     | Notas                                                          |
 |----------------------------------|---------------------------|---------------------------------------------------------------|
-| **Overall Health**                | **✅ PURE GREEN**           | v4.8 — 2026-05-25 — Judgment Day v3 DONE                       |
+| **Overall Health**                | **✅ PURE GREEN**           | v4.9 — 2026-05-25 — Judgment Day v3 DONE                       |
 | Estructura (4 raíz)               | ✅ PASS                     | Winter / Personal_Os / Playground / Resultado                  |
 | HUBs (31 scripts raíz + 14 dirs)  | ✅ PASS                     | 31 HUBs/scripts + 169 scripts total (81 active + 88 legacy)   |
-| Skills (394, 12 áreas)            | ✅ VERIFIED                 | 12 áreas funcionales — audit 2026-05-25                        |
+| Skills (394, 14 áreas)            | ✅ VERIFIED                 | 14 áreas funcionales — audit 2026-05-25                        |
 | Agent Matrix                      | ✅ SYNCED                   | 58 agentes (6 áreas: Dream Team, Specialists, Growth, Contexto, Marca, Plantillas) |
 | Manifest (7 archivos)             | ✅ VALIDATED                | 00_Manifest/ en 02_Agent_Teams_Lite/                           |
 | MCPs (7+38 Claude / 36 OpenCode)  | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                             |
@@ -352,10 +352,10 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 ---
 
 **Última actualización:** 2026-05-25
-**Versión:** v4.8 Consequences — Judgment Day v3 — Full Project Sync
+**Versión:** v4.9 Consequences — Judgment Day v3 — Full Project Sync
 
 > ✅ **Migración v4.0 2026-05-13:** Production Ready. Pure Green State. Paths corregidos.
 > ✅ **Judgment Day v3 2026-05-25:** Docs syncronizados. Counts corregidos. Full project scan.
 > ✅ **Audit 2026-05-23:** Full project audit v2. Submodule OIM fixed. 21 CE skills registered. Docs pixel-perfect.
 
-© 2026 PersonalOS v4.8 Consequences Production Ready
+© 2026 PersonalOS v4.9 Consequences Production Ready

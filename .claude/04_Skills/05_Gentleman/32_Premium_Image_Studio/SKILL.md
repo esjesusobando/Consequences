@@ -22,7 +22,7 @@ Antes de generar, el estudio define los parámetros visuales basados en el **Pil
 - **Glassmorphism**: Aplicar efectos de desenfoque y semitransparencia si el activo es para UI.
 - **Grillas**: Asegurar equilibrio visual.
 
-### 2. Deep Prompt Engineering (v4.8)
+### 2. Deep Prompt Engineering (v4.9)
 El estudio no usa prompts simples. Construye comandos detallados que incluyen:
 - Iluminación cinemática.
 - Composición de regla de tercios.

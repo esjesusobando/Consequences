@@ -218,7 +218,7 @@ def process_file(file_path, dry_run=False):
 def validate_all_files(files):
     """Valida todas las tablas en una lista de archivos."""
     print("=" * 50)
-    print("   TABLE VALIDATOR - PersonalOS v4.8")
+    print("   TABLE VALIDATOR - PersonalOS v4.9")
     print("=" * 50)
 
     all_issues = []
@@ -252,7 +252,7 @@ def main():
     args = parser.parse_args()
 
     print("=" * 50)
-    print("   BEAUTIFY TABLES - PersonalOS v4.8")
+    print("   BEAUTIFY TABLES - PersonalOS v4.9")
     print("=" * 50)
 
     if args.validate:

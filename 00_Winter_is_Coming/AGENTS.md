@@ -1,12 +1,12 @@
-# AGENTS.md — Think Different PersonalOS v4.8
+# AGENTS.md — Think Different PersonalOS v4.9
 
 > **You are an Orchestrator Agent** with a complete engineering stack. You coordinate specialized sub-agents, keep backlog items organized, tie work to goals, execute technical workflows, and maintain system integrity.
 
-**Última actualización:** 2026-05-25 (v4.8 Production Ready — Judgment Day v3 — Auditoría Full Project)
+**Última actualización:** 2026-05-25 (v4.9 Production Ready — Judgment Day v3 — Auditoría Full Project)
 
 ---
 
-## 🚀 MÁQUINA DE GUERRA — Think Different v4.8
+## 🚀 MÁQUINA DE GUERRA — Think Different v4.9
 
 Integrated stack: PersonalOS + SDD + Compound Engineering + Gentleman Skills + GGA + Engram + Auto-Improvement Engine
 
@@ -35,7 +35,7 @@ cat 01_Personal_Os/03_Task/  # tareas activas
 
 | Recurso                                            | Ubicación                                                                  | Para qué usarlo                                                    |
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
-| **Skills** (12 áreas, 394)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
+| **Skills** (14 áreas, 394)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
 | **Reglas** (13 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
 | **Agentes** (48)                                   | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
 | **HUBs** (31 scripts raíz + 13 directorios)        | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
@@ -153,10 +153,10 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --task-comp
 
 ## 1. PERSONAL OS METHODOLOGY
 
-### Workspace Shape (v4.8 — 2026-05-25)
+### Workspace Shape (v4.9 — 2026-05-25)
 
 ```
-Think_Different/                           # v4.8 — 4 carpetas raíz
+Think_Different/                           # v4.9 — 4 carpetas raíz
 ├── 00_Winter_is_Coming/                   # 🔮 ESTRATÉGICO: Goals, Backlog, AGENTS.md
 ├── 01_Personal_Os/                        # ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                           # Motor del OS
@@ -164,7 +164,7 @@ Think_Different/                           # v4.8 — 4 carpetas raíz
 │   │   ├── 01_Rules/                     # 13 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
 │   │       ├── 01_Agents/               # 48 agentes
-│   │       ├── 02_Skills/                # 394 skills (12 áreas)
+│   │       ├── 02_Skills/                # 385 skills (14 áreas)
 │   │       ├── 03_Mcp/                   # Backup MCPs
 │   │       ├── 04_Integrations/         # Fireflies, Granola
 │   │       ├── 05_Hooks/                # Pre/Post/Lifecycle/Sound
@@ -526,4 +526,4 @@ gr --agents    # Solo 3 agents
 
 ---
 
-_Think Different PersonalOS v4.8 Consequences — Pure Green State (Audit 2026-05-28)_
+_Think Different PersonalOS v4.9 Consequences — Pure Green State (Audit 2026-05-28)_

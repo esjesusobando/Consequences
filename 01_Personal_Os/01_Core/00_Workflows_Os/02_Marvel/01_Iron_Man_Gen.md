@@ -1,12 +1,12 @@
 ---
 name: genesis
-description: Workflow de inicio de sesión — carga reglas, memoria, notas de proceso y estado del PersonalOS v4.8 Consequences.
+description: Workflow de inicio de sesión — carga reglas, memoria, notas de proceso y estado del PersonalOS v4.9 Consequences.
 argument-hint: "[opcional: tarea específica del día o contexto a priorizar]"
 ---
 
-# 🧬 Workflow: Génesis (Iron Man Boot) — v4.8 Consequences
+# 🧬 Workflow: Génesis (Iron Man Boot) — v4.9 Consequences
 
-> **Versión del sistema:** v4.8 Consequences — Production Ready
+> **Versión del sistema:** v4.9 Consequences — Production Ready
 > **Fecha:** 2026-05-22
 > **Estado:** 🟢 PURE GREEN — Auditoría Integral Reconciliada
 
@@ -43,7 +43,7 @@ Antes de responder, leer en este orden:
 
 ---
 
-## 🚀 MAPA DEL SISTEMA (v4.8 Consequences)
+## 🚀 MAPA DEL SISTEMA (v4.9 Consequences)
 
 ```
 Think_Different/
@@ -54,7 +54,7 @@ Think_Different/
 │   │   ├── 01_Rules/            # 13 reglas .mdc (00-12)
 │   │   └── 02_Tools/
 │   │       ├── 01_Agents/       # 48 agentes (Dream + Specialists + Individuales + Growth)
-│   │       ├── 02_Skills/       # 394 skills (12 áreas funcionales)
+│   │       ├── 02_Skills/       # 385 skills (14 áreas funcionales)
 │   │       ├── 03_Mcp/          # Backup MCPs
 │   │       ├── 04_Integrations/ # Fireflies, Granola
 │   │       ├── 05_Hooks/        # 12 hooks (6 fases)
@@ -90,7 +90,7 @@ Think_Different/
 
 | Recurso                        | Ubicación                                                                 | Para qué usarlo                           |
 |-------------------------------|--------------------------------------------------------------------------|------------------------------------------|
-| **Skills** (12 áreas, 394)     | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
+| **Skills** (14 áreas, 394)     | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
 | **Reglas** (13 .mdc)           | `01_Personal_Os/01_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
 | **Agentes** (82)               | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
 | **HUBs** (21+2)                | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema                    |
@@ -211,5 +211,5 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 
 ---
 
-*Think Different PersonalOS v4.8 Consequences — Production Ready*
-*Actualizado: 2026-05-25 | 394 skills | 48 agents (82 total sistema) | 7+38 MCPs | 21+2 HUBs | 13 rules*
+*Think Different PersonalOS v4.9 Consequences — Production Ready*
+*Actualizado: 2026-05-25 | 385 skills | 48 agents (82 total sistema) | 7+38 MCPs | 21+2 HUBs | 13 rules*

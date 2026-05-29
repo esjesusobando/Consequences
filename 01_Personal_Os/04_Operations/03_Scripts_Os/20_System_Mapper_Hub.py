@@ -371,11 +371,11 @@ def scan_inventory():
         integrations = [d.name for d in integrations_dir.iterdir() if d.is_dir()]
 
     return {
-        "version": "v4.8",
+        "version": "v4.9",
         "generated": datetime.now().isoformat(timespec="seconds"),
         "personal_os": {
             "name": "PersonalOS",
-            "version": "v4.8 Consequences",
+            "version": "v4.9 Consequences",
             "root": str(PROJECT_ROOT.name),
         },
         "totals": {
@@ -473,7 +473,7 @@ def write_manifest():
     readme = f"""# 00_Manifest — JARVIS Ground Truth
 
 **Generated:** {inventory['generated']}
-**Version:** v4.8 Consequences
+**Version:** v4.9 Consequences
 
 ## ¿Qué es esto?
 

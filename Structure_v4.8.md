@@ -1,10 +1,11 @@
-# 📁 ESTRUCTURA COMPLETA — Think Different PersonalOS v4.8 Consequences
+# 📁 ESTRUCTURA COMPLETA — Think Different PersonalOS v4.9 Consequences
 
-> **Versión:** 4.8 Consequences
-> **Fecha:** 2026-05-25
-> **Estado:** Production Ready — Post Judgment Day Audit
+> **Versión:** 4.9 Consequences
+> **Fecha:** 2026-05-29
+> **Estado:** Production Ready — Consolidación SOTA
 > **Audit v2:** 2026-05-23 — 23 duplicates removed, 3 folders synced, docs pixel-perfect
 > **Audit v3 (Judgment Day):** 2026-05-25 — 12 bugs corregidos, 18 complementos añadidos, estructura sincronizada con realidad
+> **Audit v4 (SOTA Consolidation):** 2026-05-29 — Skills visuales consolidadas en 02_Diseno_Ui_Ux, duplicado archivado, numeración secuenciada Content 01-16, path stale corregido, SKILL.md promovidos áreas legacy
 
 ---
 
@@ -38,7 +39,7 @@ Think_Different/                    # RAÍZ
 │   ├── 01_Rules/                 # 13 reglas .mdc
 │   └── 02_Tools/                 # Herramientas del OS
 │   ├── 01_Agents/            # 48 agentes
-│       ├── 02_Skills/           # 394 skills (12 áreas)
+│       ├── 02_Skills/           # 385 skills (14 áreas)
 │       ├── 03_Mcp/              # Backup MCP configs
 │       ├── 04_Integrations/     # Fireflies, Granola
 │       ├── 05_Hooks/            # 10 hooks (6 fases)
@@ -102,7 +103,7 @@ Think_Different/                    # RAÍZ
 | #    | Herramienta          | Cantidad                                                    | Propósito                          |
 |-----|---------------------|------------------------------------------------------------|-----------------------------------|
 | 01   | **01_Agents**        | 48 (5 Dream + 23 Specialists + 13 Indiv + 5 Growth + 2 Root)| Orquestación multi-agente          |
-| 02   | **02_Skills**        | 394 activos + ~490 legacy                                   | 12 áreas funcionales               |
+| 02   | **02_Skills**        | 385 activos + ~490 legacy                                   | 14 áreas funcionales (00-10)         |
 | 03   | **03_Mcp**           | —                                                           | Backup configs MCP                 |
 | 04   | **04_Integrations**  | —                                                           | Fireflies, Granola                 |
 | 05   | **05_Hooks**         | 10 hooks                                                    | Ganchos 6 fases                    |
@@ -126,22 +127,24 @@ Think_Different/                    # RAÍZ
 | 14–19     | Specialist Individuales (Git → TDD)      | Root             | 6 archivos           |
 |           | **TOTAL**                                |                  | **48 agentes**       |
 
-**Skills por Área:**
+**Skills por Área (v4.9 — auditada contra disco):**
 
-| Área                          | Skills  | Descripción                                     |
-|-------------------------------|---------|-------------------------------------------------|
-| **00_Compound_Engineering**   | 63      | Core CE — SDD + CE workflow skills              |
-| **00_System_Core**            | 1       | Stack base OS                                   |
-| **10_Skill_Auditor**          | 1       | Auditoría de skills                             |
-| **01_Creacion_Contenidos**    | 40      | Brand, YouTube, SEO, Carruseles                 |
-| **02_Diseno_Ui_Ux**           | 29      | Product Design, UI/UX, Taste, Minimal           |
-| **03_Video_Media**            | 7       | Video Intel, James Cameron                      |
-| **04_Automatizacion**         | 37      | N8N, Firecrawl, GWS Client                      |
-| **05_Workflows**              | 37      | Agent Teams, PM, Orchestrator                   |
-| **06_Tools**                  | 112     | Skill Creator, Testing, DevOps, Data Analyst    |
-| **07_Personal_Os**            | 32      | Life OS, Hillary, Rituales                      |
-| **08_Invictus_Web**           | 15      | Playwright, Superpowers, Browser Auto           |
-| **09_Claude_Ads**             | 20      | Claude Ads & Promoted Content                   |
+| Área                          | SKILL.md | Descripción (directorio real)                   |
+|-------------------------------|----------|------------------------------------------------|
+| **00_Agent_Teams_Lite**       | 13       | SDD sub-agentes + JARVIS manifests              |
+| **00_Compound_Engineering**   | 63       | Core CE — SDD + CE workflow skills              |
+| **00_Personal_Os**            | 32       | Life OS, Hillary, Rituales (antes 07_)          |
+| **00_Skill_Auditor**          | 1        | Auditoría de skills                             |
+| **00_System_Core**            | 1        | Stack base OS                                   |
+| **00_Workflows**              | 43       | Workflows OS (antes no listado)                 |
+| **01_Creacion_Contenidos**    | 47       | Brand, YouTube, SEO, Marketing — 16 sub-áreas secuenciales 01-16 |
+| **02_Diseno_Ui_Ux**           | 34       | 16 sub-áreas (01-16): Product Design → Video Prompt |
+| **03_Video_Media**            | 7        | Video Intel, James Cameron                      |
+| **04_Automatizacion**         | 24       | N8N, Firecrawl, GWS Client                      |
+| **05_Claude_Ads**             | 21       | Claude Ads & Promoted Content (antes 09_)       |
+| **06_Tools**                  | 83       | Skill Creator, Testing, DevOps, Data Analyst    |
+| **07_Invictus_Web**           | 15       | Playwright, Superpowers, Browser Auto (antes 08_) |
+| **10_Laia_Learning**          | 1        | Sistema de aprendizaje personal                 |
 
 ---
 
@@ -158,7 +161,7 @@ Think_Different/                    # RAÍZ
 ├── 06_Unicorn/
 ├── 07_Invictus/
 ├── 08_Templates/
-└── README.md
+└── 09_Anthropic/
 ```
 
 ---
@@ -239,8 +242,10 @@ Think_Different/                    # RAÍZ
 
 ```
 02_Agent_Teams_Lite/
-├── 00_Manifest/              # 7 JARVIS manifests (OS_Inventory, MCP_Registry, Agent_Catalog, Skill_Index, HUB_Catalog, Workflow_Graph, Hook_Registry)
-├── 01_Agent_Teams_Lite/      # AGENTS.md + 10 SDD skills (sdd-init → sdd-archive)
+├── 00_Manifest/              # 7 JARVIS manifests (OS_Inventory → Hook_Registry)
+├── 01_Sdd_Init → 14_Issue_Creation  # 10 SDD sub-agentes (flattened)
+├── 02_Project_Manager/       # 7 PM workflows (flattened)
+├── 03_Product_Manager/       # 5 Product Mgr workflows (flattened)
 ├── 03_Pattern_Engine/        # Python engine (indexer, search, embedding, api, database)
 ├── README.md
 └── SDD_SKILLS.md
@@ -338,18 +343,21 @@ Think_Different/                    # RAÍZ
 05_Archive/
 ├── 00_Backup_Os/             # Backup completo OS (Source Backups, Agents, Workflows, Plans)
 ├── 00_Plan_Auditoria_2026-05-24.md  # Plan de auditoría
-├── 01_Repos_Reference/     # Repos de referencia
-│   ├── 01_Rules_Legacy/   # Rules legacy
-│   ├── 02_Repos_Gentleman/ # 23 repos de Gentleman (01-23 + engram + gentle-pi)
+├── 00_Skills_Legacy/         # Skills legacy v3 (24 directorios, ~490 SKILL.md)
+│   ├── 00_Agent_Teams_Lite/ → 22_Huashu_Design/ # Skills de versiones anteriores
+│   └── INDEX.md              # Índice completo con 24 categorías archivadas
+├── 01_Repos_Reference/       # Repos de referencia
+│   ├── 01_Rules_Legacy/      # Rules legacy
+│   ├── 02_Repos_Gentleman/   # 23 repos de Gentleman (01-23 + engram + gentle-pi)
 │   │   ├── 23_Tubemaster/
 │   │   ├── engram/
-│   │   └── gentle-pi/     # ✅ Actualizado a 848a1fd62
-│   └── 03_OpenSpec_Archive/ # Archive openspec
-├── 02_Legacy_Content/      # Contenido legacy (Planes, Skills, Docs antiguos)
-├── 03_Backups_Audits/     # Backups y auditorías (Raíz, Auditorías, Snapshots, v4.7)
-├── 10_Skills_Legacy/      # Skills legacy v3 (24 directorios, ~490 SKILL.md)
-│   ├── 00_Agent_Teams_Lite/ → 22_Huashu_Design/ # Skills de versiones anteriores
-│   └── INDEX.md           # Índice completo con 24 categorías archivadas
+│   │   └── gentle-pi/        # ✅ Actualizado a 848a1fd62
+│   └── 03_OpenSpec_Archive/  # Archive openspec
+├── 02_Legacy_Content/        # Contenido legacy (Planes, Skills, Docs antiguos)
+├── 03_Backups_Audits/        # Backups y auditorías (Raíz, Auditorías, Snapshots, v4.7)
+├── 04_Docs_Legacy/           # Documentos legacy
+├── 05_Skills_Legacy/         # Skills backup adicional
+├── 06_Skills_Legacy/         # Skills backup adicional
 ├── New_Implementation_Plan.md
 └── README.md
 ```
@@ -428,7 +436,7 @@ Think_Different/                    # RAÍZ
 | **.mcp.json**              | 7 MCPs Claude Code (root) + 38 backup en 03_Mcp/                |
 | **.claude/**               | Config Claude Code (skills, rules, agents, memory, history)     |
 | **.claude-plugin/**        | Claude plugin directory                                         |
-| **.opencode/**             | Config OpenCode + plugins + skills locales (ui-ux-pro-max)      |
+| **.opencode/**             | Config OpenCode + plugins + skills locales (ui-ux-pro-max → Archivado a 05_Archive/) |
 | **.atl/**                  | SDD Registry + openspec/ + skill-registry cache                 |
 | **.agent/**                | Backup estratégico: Rules, Agents, Skills, Workflows, GGA       |
 | **.pi/**                   | PI config: 10 SDD agents, 3 chains, gentle-ai support           |
@@ -444,12 +452,12 @@ Think_Different/                    # RAÍZ
 
 ---
 
-## 📊 ESTADO DEL SISTEMA v4.8
+## 📊 ESTADO DEL SISTEMA v4.9
 
 | Componente                       | Total                                                         | Estado  |
 |---------------------------------|--------------------------------------------------------------|--------|
-| Skills (activas)                 | 394 en 12 áreas funcionales                                   | ✅       |
-| Skills (legacy)                  | ~490 en 24 categorías archivadas (10_Skills_Legacy)           | 💾       |
+| Skills (activas)                 | 385 en 14 áreas funcionales                                   | ✅       |
+| Skills (legacy)                  | ~490 en 24 categorías archivadas (00_Skills_Legacy)           | 💾       |
 | Agentes                          | 48 (source) / 82 (con SDD/CE) / 13 agent-files root           | ✅       |
 | Rules                            | 13 .mdc (00–12) + README + RULES_INDEX.md + .Backup/          | ✅       |
 | MCPs                             | 7 servidores root + 38 backup en 03_Mcp/                      | ✅       |
@@ -461,11 +469,11 @@ Think_Different/                    # RAÍZ
 | JARVIS Manifests                 | 7 manifests (OS_Inventory → Hook_Registry)                    | ✅       |
 | Projects Lab                     | 9 proyectos activos (Efrain → Valeria)                        | ✅       |
 | Directorios Config               | 12 (`.agent`, `.atl`, `.claude`, `.opencode`, `.pi`, etc)     | ✅       |
-| OpenCode Skills Registrados      | 8 CE skills + 10 SDD + 1 local (ui-ux-pro-max)                | ✅       |
+| OpenCode Skills Registrados      | 8 CE skills + 10 SDD (ui-ux-pro-max → 05_Archive/)         | ✅       |
 
 ---
 
-## 🔥 BOOT PROTOCOL — IRON MAN GENESIS (v4.8)
+## 🔥 BOOT PROTOCOL — IRON MAN GENESIS (v4.9)
 
 Al iniciar sesión, ejecutar EN ORDEN:
 
@@ -505,12 +513,12 @@ Al iniciar sesión, ejecutar EN ORDEN:
 
 ## ✅ PURE GREEN STATE
 
-**Think Different PersonalOS v4.8 Consequences — 2026-05-25**
+**Think Different PersonalOS v4.9 Consequences — 2026-05-29**
 
-*Audit v3 (Judgment Day) complete. 12 bugs corregidos, 18 complementos añadidos. Estructura sincronizada con realidad. Tablas pixel-perfect. Ready for production.*
+*Audit v4 (SOTA Consolidation) complete. Skills visuales consolidadas en 02_Diseno_Ui_Ux. Duplicado .opencode archivado. Content renombrado secuencia 01-16. Laia renumerada 10_. Path stale corregido. SKILL.md promovidos áreas legacy. 13 directorios Content renombrados a secuencia limpia. 5 skills visuales migradas sin pérdida de datos. Estructura sincronizada con realidad.*
 
 ---
 
-*Versión: v4.8 Consequences*
-*Audit: 2026-05-25 (Judgment Day)*
-*Skills: 394 active + ~490 legacy | Agents: 48 (source) / 82 (con SDD/CE) | Rules: 13 .mdc | MCPs: 7+38 | HUBs: 21+2 | Scripts: 284*
+*Versión: v4.9 Consequences*
+*Audit: 2026-05-29 (SOTA Consolidation)*
+*Skills: 385 active + ~490 legacy | Agents: 48 (source) / 82 (con SDD/CE) | Rules: 13 .mdc | MCPs: 7+38 | HUBs: 21+2 | Scripts: 284*

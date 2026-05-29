@@ -1,4 +1,4 @@
-# 🔧 HUB_CATALOG — PersonalOS v4.8 Consequences
+# 🔧 HUB_CATALOG — PersonalOS v4.9 Consequences
 
 **Versión:** 4.8
 **Última actualización:** 2026-05-27
@@ -7,7 +7,7 @@
 
 ---
 
-## Catálogo de HUBs (31 scripts raíz + 12 subdirectorios con scripts internos — v4.8 Renumbered)
+## Catálogo de HUBs (31 scripts raíz + 12 subdirectorios con scripts internos — v4.9 Renumbered)
 
 | #                          | HUB                                     | Script                                           | Propósito                                                                      | Comando rápido                                                                                                    |
 |---------------------------|----------------------------------------|-------------------------------------------------|-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|

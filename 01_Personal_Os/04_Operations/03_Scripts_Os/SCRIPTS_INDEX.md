@@ -1,9 +1,9 @@
-# Scripts Index — PersonalOS Think Different v4.8 Consequences
+# Scripts Index — PersonalOS Think Different v4.9 Consequences
 
 > **Total Scripts:** 169 (31 raíz + 81 activos en subdirs + 88 legacy)
 > **Total HUBs:** 31 scripts raíz (00-30 + config_paths + HUB_SOTA + refactor_revert_id)
 > **Last Updated:** 2026-05-27
-> **Validation:** Production Ready — Sistema PURE GREEN v4.8 Renumbered
+> **Validation:** Production Ready — Sistema PURE GREEN v4.9 Renumbered
 > **Migration:** Scripts reorganizados en estructura 00-13 post-renumbering
 > **New:** Directorios 00-13 alineados con HUBs numerados
 
@@ -60,7 +60,7 @@
 | 27  | `Skill_Auditor.py`        | Skill Auditor                                    | ✅ ACTIVO         |
 | 28  | `System_Health_Monitor.py`| Health monitor del sistema                       | ✅ ACTIVO         |
 | 29  | `Repo_Sync_Auditor.py`    | Repo sync auditor                                | ✅ ACTIVO         |
-| 30  | `path_replacement.py`     | PATH Replacement Script — OS v4.8                | ✅ ACTIVO         |
+| 30  | `path_replacement.py`     | PATH Replacement Script — OS v4.9                | ✅ ACTIVO         |
 
 > Nota: los # 12-13 fueron reasignados a directorios internos. `Context_Usage_Bar.py` y `Beautify_Tables.py` están en `12_Auditors_Os/scripts/`.
 

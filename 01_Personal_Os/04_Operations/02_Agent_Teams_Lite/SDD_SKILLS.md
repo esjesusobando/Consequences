@@ -63,4 +63,4 @@ proposal → specs → design → tasks → apply → verify → archive
 
 ---
 
-*gentle-ai v1.30+ | SDD v3.0 | PersonalOS v4.8*
+*gentle-ai v1.30+ | SDD v3.0 | PersonalOS v4.9*

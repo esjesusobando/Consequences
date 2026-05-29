@@ -93,11 +93,11 @@ class AnalyticsFactory:
 
     def generate_narrative(self, graph_id, data_summary):
         """
-        Motor de interpretación v4.8: Traduce gráficos a valor de negocio según el dominio.
+        Motor de interpretación v4.9: Traduce gráficos a valor de negocio según el dominio.
         """
         domain = data_summary.get('domain', 'General')
         intensity = data_summary.get('primary_intensity', 'variable')
-        primary = intensity  # Alias for F-string depth v4.8
+        primary = intensity  # Alias for F-string depth v4.9
 
         narratives = {
             "01": (f"**Synergy Matrix (Correlaciones)**: Esta matriz revela las palancas ocultas del dominio **{domain}**. "
@@ -133,7 +133,7 @@ class AnalyticsFactory:
                    f"Es fundamental para entender el equilibrio de poder dentro de la operación y asegurar que el dominio **{domain}** no esté sufriendo de canibalización interna entre sus propios segmentos.")
         }
 
-        return narratives.get(graph_id, "Interpretación analítica profunda en proceso de síntesis por el motor de inteligencia v4.8.")
+        return narratives.get(graph_id, "Interpretación analítica profunda en proceso de síntesis por el motor de inteligencia v4.9.")
 
     def get_business_question(self, graph_id):
         """
@@ -155,9 +155,9 @@ class AnalyticsFactory:
 
     def generate_report(self):
         """
-        Genera un reporte de alto impacto v4.8 (Intelligence Overhaul) centrado en Valor y Acción.
+        Genera un reporte de alto impacto v4.9 (Intelligence Overhaul) centrado en Valor y Acción.
         """
-        print(f"🧠 Esculpiendo Reporte Maestro v4.8 (Intelligence Expansion) para {self.domain}...")
+        print(f"🧠 Esculpiendo Reporte Maestro v4.9 (Intelligence Expansion) para {self.domain}...")
 
         summary_path = os.path.join(self.results_dir, 'summary.json')
         data_summary = {}
@@ -182,13 +182,13 @@ class AnalyticsFactory:
             self._write_roadmap(f, worsts, tops, main_metric)
             self._write_footer(f, deep)
 
-        print(f"✨ Reporte Maestro v4.8 (Value First) generado en: {report_path}")
-        print(f"✨ Reporte Estratégico v4.8 (Premium Strategy) generado en: {report_path}")
+        print(f"✨ Reporte Maestro v4.9 (Value First) generado en: {report_path}")
+        print(f"✨ Reporte Estratégico v4.9 (Premium Strategy) generado en: {report_path}")
 
     def _write_header(self, f, deep):
         f.write(f"# 🚀 Strategic Value Report: {self.domain} Intelligence\n")
         f.write(f"**Análisis de {deep.get('record_count', 0)} registros | Período: Snapshot 2025**\n")
-        f.write(f"**Standard v4.8 (Premium Intelligence) – Enfoque Rentabilidad y Acción**\n\n")
+        f.write(f"**Standard v4.9 (Premium Intelligence) – Enfoque Rentabilidad y Acción**\n\n")
 
     def _write_executive_summary(self, f, data_summary, totals, tops, worsts, main_metric):
         f.write("## 🏛️ 1. Executive Summary\n")
@@ -321,7 +321,7 @@ class AnalyticsFactory:
 
     def _write_footer(self, f, deep):
         f.write("---\n")
-        f.write(f"*Standard Analysis Factory | Premium Value Edition | v4.8 (Intelligence Expansion)*\n")
+        f.write(f"*Standard Analysis Factory | Premium Value Edition | v4.9 (Intelligence Expansion)*\n")
         f.write(f"*Generado con datos reales validados – {deep.get('record_count', 0)} registros analizados*")
 
     def generate_and_run_script(self):

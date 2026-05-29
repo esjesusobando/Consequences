@@ -1,6 +1,6 @@
 # 02_Tools — Herramientas del Sistema
 
-> **Versión:** v4.8
+> **Versión:** v4.9
 > **Última actualización:** 2026-05-23
 
 ---
@@ -16,7 +16,7 @@ Contiene todas las herramientas del sistema PersonalOS: Agents, Skills, MCPs, Ho
 ```
 02_Tools/
 ├── 01_Agents/           ✅ 48 agents (Dream Team + Specialists + Individuales + Growth)
-├── 02_Skills/           ✅ 394 skills en 12 áreas funcionales
+├── 02_Skills/           ✅ 385 skills en 14 áreas funcionales
 ├── 03_Mcp/              ✅ Backup configs MCP (Claude + OpenCode)
 ├── 04_Integrations/      ✅ Fireflies, Granola
 ├── 05_Hooks/            ✅ Pre/Post/Lifecycle/Sound/Harness/Post_Hulk
@@ -33,7 +33,7 @@ Contiene todas las herramientas del sistema PersonalOS: Agents, Skills, MCPs, Ho
 | Herramienta | Total| Estado                        |
 |------------|-----|------------------------------|
 | Agents      | 48   | ✅ SYNCED                      |
-| Skills      | 394  | ✅ VERIFIED — 0 sin frontmatter|
+| Skills      | 385  | ✅ VERIFIED — 0 sin frontmatter|
 | MCPs backup | 35+  | ✅ ACTIVE                      |
 | Hooks       | 10   | ✅ 6 fases activas             |
 | Plugins     | ?    | ⏳ Verificar                   |
@@ -49,4 +49,4 @@ Contiene todas las herramientas del sistema PersonalOS: Agents, Skills, MCPs, Ho
 
 ---
 
-*Think Different PersonalOS v4.8*
+*Think Different PersonalOS v4.9*

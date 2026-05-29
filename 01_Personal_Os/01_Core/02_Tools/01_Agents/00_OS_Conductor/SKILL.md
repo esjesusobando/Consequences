@@ -1,7 +1,7 @@
 ---
 name: orchestrating-os
 description: >-
-  Punto de entrada único al Think Different PersonalOS v4.8. Orquesta 12 áreas de skills,
+  Punto de entrada único al Think Different PersonalOS v4.9. Orquesta 14 áreas de skills,
   47 agentes especializados y flujos compuestos multi-dominio. Activa cuando el usuario
   pide ayuda sin especificar skill, cuando un request cruza múltiples áreas, o cuando se
   necesita un entry point único para diagnóstico, estrategia o lanzamientos.
@@ -20,7 +20,7 @@ harness:
 # 🧠 OS Conductor — Entry Point Único del PersonalOS
 
 **ID:** `OS_CONDUCTOR`
-**Tipo:** Orquestador Maestro v4.8
+**Tipo:** Orquestador Maestro v4.9
 **Versión Skill:** 2.0.0 (2026-05-28)
 **Harness:** Anthropic 2.0 — Sprint Contract · Evaluator Pattern · Context Management
 **Ubicación:** `01_Personal_Os/01_Core/02_Tools/01_Agents/00_OS_Conductor/`
@@ -48,13 +48,13 @@ El Conductor nace de una verdad incómoda: el Orchestrator v4.0 era un archivo p
 
 **Propósito original:** Ser el cerebro que conoce TODO el mapa de skills y agentes, para que el usuario solo tenga que decir qué necesita. El Conductor no es experto en nada — pero sabe quién es experto en cada cosa.
 
-**Por qué no puede desaparecer:** Sin entry point único, el sistema colapsa en complejidad. El usuario tendría que leer 12 áreas de skills para saber por dónde empezar.
+**Por qué no puede desaparecer:** Sin entry point único, el sistema colapsa en complejidad. El usuario tendría que leer 14 áreas de skills para saber por dónde empezar.
 
 ---
 
 ## 🗺️ Mapa de Dominio del OS
 
-12 áreas de skills + 47 agentes especializados:
+14 áreas de skills + 47 agentes especializados:
 
 | Prioridad | Área | Skills | Lo uso para... |
 |-----------|------|--------|----------------|

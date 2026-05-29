@@ -1,6 +1,6 @@
 # 🤖 01_Agents — Sistema de Agentes Especializados
 
-**Versión:** v4.8 | **Fecha:** 2026-05-28 | **Estado:** Pure Green Production
+**Versión:** v4.9 | **Fecha:** 2026-05-28 | **Estado:** Pure Green Production
 
 > 🧠 **[OS Conductor](00_OS_Conductor/README.md) (v2.0) — El punto de entrada único al PersonalOS.**
 > Implementa Anthropic 2.0 Harness: Sprint Contract, Evaluator Pattern, Context Management.
@@ -170,4 +170,4 @@ Agente #05: "Audita seguridad de [feature]"
 
 ---
 
-_PersonalOS v4.8 Consequences — Pure Green Production — 2026-05-26_
+_PersonalOS v4.9 Consequences — Pure Green Production — 2026-05-26_

@@ -24,7 +24,7 @@
 | 2026-05-24  | [`CTX_2026_05_24_SOTA_Audit.md`](./CTX_2026_05_24_SOTA_Audit.md)                                                                  | SOTA Audit — revisión de skills y docs                    |
 | 2026-05-24  | [`CTX_2026_05_24_Sesion_Auditoria_Arte.md`](./CTX_2026_05_24_Sesion_Auditoria_Arte.md)                                            | Estado del arte del sistema (v4.7)                        |
 | 2026-05-25  | [`CTX_2026_05_25_Auditoria_OS_Completa.md`](./CTX_2026_05_25_Auditoria_OS_Completa.md)                                            | Auditoría completa del sistema                            |
-| 2026-05-26  | [`CTX_2026_05_26_Auditoria_v4_8_Skills.md`](./CTX_2026_05_26_Auditoria_v4_8_Skills.md)                                            | Auditoría v4.8 Skills Index                               |
+| 2026-05-26  | [`CTX_2026_05_26_Auditoria_v4_8_Skills.md`](./CTX_2026_05_26_Auditoria_v4_8_Skills.md)                                            | Auditoría v4.9 Skills Index                               |
 | 2026-05-28  | [`CTX_2026_05_28_Session_Summary.md`](./CTX_2026_05_28_Session_Summary.md)                                                        | Session summary actual (Fase 3)                           |
 
 ---

@@ -8,7 +8,7 @@
 
 ## ¿Qué es el OS Conductor?
 
-El **punto de entrada único** al Think Different PersonalOS v4.8. En vez de tener que saber qué skill usar o qué agente invocar, le decís lo que necesitás y el Conductor se encarga de orquestar todo.
+El **punto de entrada único** al Think Different PersonalOS v4.9. En vez de tener que saber qué skill usar o qué agente invocar, le decís lo que necesitás y el Conductor se encarga de orquestar todo.
 
 **No ejecuta tareas especializadas.** Orquesta a los que sí lo hacen usando el patrón **Generator + Evaluator** de Anthropic 2.0: cada skill genera en su dominio, el Conductor evalúa que se cumpla el contrato.
 
@@ -117,10 +117,10 @@ Core (13) + Dream Team (5) + Specialists (24) + Growth (5)
 
 ## Contexto de creación
 
-El OS Conductor nace de la **Auditoría Completa v4.8** (2026-05-28) y fue refinado mediante **Judgment Day** (revisión adversarial dual). Incorpora los patrones de **Anthropic 2.0 Harness**: Sprint Contract, Evaluator Pattern, Context Management y Pass@k Metrics.
+El OS Conductor nace de la **Auditoría Completa v4.9** (2026-05-28) y fue refinado mediante **Judgment Day** (revisión adversarial dual). Incorpora los patrones de **Anthropic 2.0 Harness**: Sprint Contract, Evaluator Pattern, Context Management y Pass@k Metrics.
 
 Versión 1.0 → 2.0: upgrade completo basado en hallazgos de la revisión adversarial.
 
 ---
 
-*PersonalOS v4.8 Consequences — Anthropic 2.0 Harness — 2026-05-28*
+*PersonalOS v4.9 Consequences — Anthropic 2.0 Harness — 2026-05-28*

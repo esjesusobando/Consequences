@@ -1,6 +1,6 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.8 Consequences** | 2026-05-25
+**v4.9 Consequences** | 2026-05-25
 
 ---
 
@@ -11,7 +11,7 @@
 | MCPs Claude Code                    | **36**                                                        | ✅ SYNCED — drift 0                           |
 | Every CE                            | v3.8.4 (local repo)                                           | ✅ ACTIVE — Local version                     |
 | gentle-ai                           | v1.30.6                                                       | ✅ AVAILABLE                                  |
-| Skills                              | **394** (12 áreas funcionales)                                | ✅ VERIFIED — 0 sin frontmatter               |
+| Skills                              | **394** (14 áreas funcionales)                                | ✅ VERIFIED — 0 sin frontmatter               |
 | Agentes                             | **46** (5 Dream + 23 Specialists + 13 individuales + 5 Growth)| ✅ SYNCED — 46↔46 drift 0                     |
 | HUBs                                | **19** scripts HUB (`*_Hub.py`) + 12 support                  | ✅ VERIFIED                                   |
 | Scripts totales                     | **284** (recursivo en 03_Scripts_Os/)                         | ✅ DOCUMENTED                                 |
@@ -83,7 +83,7 @@ Think_Different/
 │   │   ├── 01_Rules/           ✅ 12 reglas .mdc
 │   │   └── 02_Tools/
 │   │       ├── 01_Agents/         ✅ 46 agentes
-│   │       ├── 02_Skills/         ✅ 356 skills (12 áreas)
+│   │       ├── 02_Skills/         ✅ 356 skills (14 áreas)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/          ✅ 10 hooks (6 fases)
@@ -241,4 +241,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-05-23 | PersonalOS v4.7 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 394 skills | 46 agents | 36 MCPs*
+*Actualizado: 2026-05-23 | PersonalOS v4.7 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 385 skills | 46 agents | 36 MCPs*

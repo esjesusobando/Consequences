@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-16_Carousel_Engine.py — PersonalOS v4.8 Consequences
+16_Carousel_Engine.py — PersonalOS v4.9 Consequences
 Motor central para la generación de carruseles estratégicos.
 """
 

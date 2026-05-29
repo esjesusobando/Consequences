@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-14_Health_Metrics_Hub.py — PersonalOS v4.8 Consequences
+14_Health_Metrics_Hub.py — PersonalOS v4.9 Consequences
 
 Registra métricas históricas de salud del OS y genera reportes ASCII.
 Lee resultados de los Health Tests y los persiste en CSV.

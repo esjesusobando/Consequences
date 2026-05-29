@@ -123,5 +123,5 @@ Si venís de Agent Teams Lite, esto cambió:
 
 ---
 
-*Think Different PersonalOS v4.8 — gentle-ai ACTIVE | ATL LEGACY*
+*Think Different PersonalOS v4.9 — gentle-ai ACTIVE | ATL LEGACY*
 

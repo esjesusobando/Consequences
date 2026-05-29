@@ -13,7 +13,7 @@
 | Sistema                       | Ubicación                         | Qty                               | Estado    |
 |------------------------------|----------------------------------|----------------------------------|----------|
 | **Triada AI-Prime (Legacy)**  | `.claude/02_Rules/`               | 25 rules (01-35, algunos saltados)| Convive   |
-| **Consequences v4.8 (Active)**| `01_Personal_Os/01_Core/01_Rules/`| 13 rules (00-12)                  | **ACTIVO**|
+| **Consequences v4.9 (Active)**| `01_Personal_Os/01_Core/01_Rules/`| 13 rules (00-12)                  | **ACTIVO**|
 
 > 📂 Los sistemas paralelos `.claude/02_Rules/` (Legacy) y `.agent/00_Rules/` (Backup) coexisten por compatibilidad.
 

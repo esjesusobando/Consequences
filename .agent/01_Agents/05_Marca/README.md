@@ -1,6 +1,6 @@
 # 05_Marca — Brand Assets y Voz de Marca
 
-**Versión:** v4.8 | **Fecha:** 2026-05-26
+**Versión:** v4.9 | **Fecha:** 2026-05-29
 
 Repositorio de assets de marca y guias de voz para garantizar consistencia en todo el contenido generado por los agentes.
 
@@ -32,4 +32,4 @@ Centraliza la identidad de marca del proyecto activo — tono, voz, paleta, tipo
 
 ---
 
-_PersonalOS v4.8 Consequences — Brand System_
+_PersonalOS v4.9 Consequences — SOTA Consolidation — Brand System_

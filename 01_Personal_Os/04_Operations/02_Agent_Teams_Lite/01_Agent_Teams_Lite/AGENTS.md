@@ -46,4 +46,4 @@ Agent Teams Lite fue el framework original de SDD. Desde gentle-ai v1.0, todo el
 
 ---  
 
-*Legacy ATL v2.0 → gentle-ai v1.30+ | PersonalOS v4.8*
+*Legacy ATL v2.0 → gentle-ai v1.30+ | PersonalOS v4.9*

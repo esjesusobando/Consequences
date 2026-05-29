@@ -1,6 +1,6 @@
 # 04_Contexto — Contexto de Proyecto para Marketing Agents
 
-**Versión:** v4.8 | **Fecha:** 2026-05-26
+**Versión:** v4.9 | **Fecha:** 2026-05-29
 
 Carpeta que almacena el contexto del proyecto activo para alimentar a los agentes de Growth y Marketing con informacion personalizada y alineada al negocio.
 
@@ -33,4 +33,4 @@ Los agentes de Growth (03_Growth/) necesitan contexto para generar contenido rel
 
 ---
 
-_PersonalOS v4.8 Consequences — Marketing Agents Context_
+_PersonalOS v4.9 Consequences — SOTA Consolidation — Marketing Agents Context_

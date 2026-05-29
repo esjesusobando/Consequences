@@ -1,6 +1,6 @@
 # .claude — Claude Code Configuration & Memory
 
-> **Version:** v4.8 Desktop-aligned
+> **Version:** v4.9 Desktop-aligned
 > **Last update:** 2026-05-26
 
 ---
@@ -49,4 +49,4 @@ Project-local Claude Code configuration, commands, rules, agents, skills, memory
 
 ---
 
-*Think Different PersonalOS v4.8 Desktop-aligned*
+*Think Different PersonalOS v4.9 Desktop-aligned*

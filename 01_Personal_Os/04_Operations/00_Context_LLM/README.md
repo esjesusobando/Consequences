@@ -1,6 +1,6 @@
-# 00_Context_LLM — Memoria LLM y Contexto Persistente v4.8
+# 00_Context_LLM — Memoria LLM y Contexto Persistente v4.9
 
-> **Versión:** v4.8 Consequences
+> **Versión:** v4.9 Consequences
 > **Última actualización:** 2026-05-21
 
 ---
@@ -74,4 +74,4 @@ Sistema de memoria y contexto para LLMs. Guarda el estado del sistema, notas de 
 
 ---
 
-*Think Different PersonalOS v4.8 Consequences*
+*Think Different PersonalOS v4.9 Consequences*

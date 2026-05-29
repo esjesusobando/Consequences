@@ -1,12 +1,12 @@
-# 01_Core — Think Different PersonalOS v4.8
+# 01_Core — Think Different PersonalOS v4.9
 
-> **Versión:** v4.8 Consequences — Audit v3 synced
+> **Versión:** v4.9 Consequences — Audit v3 synced
 > **Última actualización:** 2026-05-25
 > **Estado:** ✅ Activo | 💾 FUENTE DE VERDAD
 
 ---
 
-## 📂 Estructura Principal v4.8
+## 📂 Estructura Principal v4.9
 
 ```
 Think_Different/
@@ -38,7 +38,7 @@ Think_Different/
 | #   | Carpeta               | Contenido                        | Estado  |
 |----|----------------------|---------------------------------|--------|
 | 01  | `01_Agents/`          | 48 agents (5 áreas)              | ✅       |
-| 02  | `02_Skills/`          | 394 skills (13 áreas)            | ✅       |
+| 02  | `02_Skills/`          | 385 skills (13 áreas)            | ✅       |
 | 03  | `03_Mcp/`             | MCP servers (backup config)      | ✅       |
 | 04  | `04_Integrations/`    | Fireflies, Granola               | ✅       |
 | 05  | `05_Hooks/`           | 12 hooks (6 fases)               | ✅       |
@@ -56,7 +56,7 @@ Think_Different/
 | Workflows        | 30        | ✅ Activo   |
 | Rules (.mdc)     | 12        | ✅ Definido |
 | Agents           | 46        | ✅ Sync     |
-| Skills           | 394       | ✅ 12 áreas |
+| Skills           | 385       | ✅ 14 áreas funcionales |
 | MCPs             | 36        | ✅ Activo   |
 | HUBs             | 19        | ✅ Activo   |
 | Scripts totales  | 284       | ✅ Recursivo|
@@ -90,4 +90,4 @@ Think_Different/
 
 ---
 
-**PersonalOS v4.8 Consequences — Audit v2 synced — 2026-05-26**
+**PersonalOS v4.9 Consequences — Audit v2 synced — 2026-05-26**

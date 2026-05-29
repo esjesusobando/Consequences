@@ -1,6 +1,6 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.8 Consequences** | 2026-05-25
+**v4.9 Consequences** | 2026-05-25
 
 ---
 
@@ -11,7 +11,7 @@
 | MCPs Claude Code                      | **7** (root) + **38** (backup)                                             | ✅ SYNCED — drift 0                             |
 | Every CE                              | v3.8.4 (local repo) ✅                                                      | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.30.6                                                                    | ✅ AVAILABLE                                    |
-| Skills                                | **394** (12 áreas funcionales)                                             | ✅ VERIFIED — 0 sin frontmatter                 |
+| Skills                                | **394** (14 áreas funcionales)                                             | ✅ VERIFIED — 0 sin frontmatter                 |
 | Agentes                               | **48** (source) / 82 (con SDD/CE)                                          | ✅ SYNCED                                       |
 | HUBs                                  | **31** (scripts raíz)                                                      | ✅ RESTRUCTURED (00-30)                         |
 | Scripts totales                       | **81** active + **88** legacy = 169 total                                  | ✅ REORGANIZED (00-13 dirs)                    |
@@ -21,7 +21,7 @@
 | JARVIS Manifests                      | 7 en 00_Manifest/                                                          | ✅ VALIDATED                                    |
 | Integrations                          | **2** (01_Fireflies, 02_Granola)                                           | ✅ INTEGRATED                                   |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-25 — v4.8 Consequences
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-25 — v4.9 Consequences
 > Agent Sync: 48 agents (source) / 82 total con SDD/CE. Skills: 394 (SKILL.md source) / 407 (backup .agent). MCPs: 7+38. HUBs: 31 raíz. Scripts: 81 active + 88 legacy.
 
 ---
@@ -70,7 +70,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 
 ---
 
-## 🗂️ ESTRUCTURA COMPLETA v4.8
+## 🗂️ ESTRUCTURA COMPLETA v4.9
 
 ```
 Think_Different/                         # RAÍZ
@@ -81,7 +81,7 @@ Think_Different/                         # RAÍZ
 │   │   ├── 01_Rules/            ✅ 13 reglas .mdc
 │   │   └── 02_Tools/
 │   │       ├── 01_Agents/         ✅ 48 agentes (5 Dream + 23 Specialists + 13 Indiv + 5 Growth + 2 Root)
-│   │       ├── 02_Skills/         ✅ 394 skills (12 áreas funcionales)
+│   │       ├── 02_Skills/         ✅ 385 skills (14 áreas funcionales)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/          ✅ Pre/Post/Lifecycle/Sound
@@ -147,7 +147,7 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## 🧠 SKILLS — 12 ÁREAS FUNCIONALES (394 skills)
+## 🧠 SKILLS — 14 ÁREAS FUNCIONALES (385 skills)
 
 | Área                   | Items  | Descripción                          |
 |-----------------------|-------|-------------------------------------|
@@ -338,7 +338,7 @@ Los siguientes hallsazgos fueron identificados durante la auditoría OS integral
 ### Skills
 | #  | Hallazgo                                                               | Estado                          |
 |---|-----------------------------------------------------------------------|--------------------------------|
-| 7  | 0/394 skills tienen campo `trigger:` en frontmatter YAML               | 📌 MEJORA POTENCIAL — no es error|
+| 7  | 0/385 skills tienen campo `trigger:` en frontmatter YAML               | 📌 MEJORA POTENCIAL — no es error|
 | 8  | ~30 skills duplicadas de migración incompleta (áreas 02/04)            | 📌 PRESERVADO — no se elimina    |
 | 9  | 18 skills Engram existen solo en backup (`.agent/02_Skills/02_Engram/`)| 📌 PRESERVADO — backup natural   |
 | 10 | `.opencode/skills/ui-ux-pro-max` huérfano (no en árbol source)         | 📌 PRESERVADO — skill local      |
@@ -361,4 +361,4 @@ Los siguientes hallsazgos fueron identificados durante la auditoría OS integral
 
 ---
 
-*Actualizado: 2026-05-27 | PersonalOS v4.8 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 394 skills source / 407 backup | 48 agents | 31 scripts raíz | 81 active + 88 legacy | 30 workflows | 13 hooks*
+*Actualizado: 2026-05-27 | PersonalOS v4.9 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 385 skills source / 407 backup | 48 agents | 31 scripts raíz | 81 active + 88 legacy | 30 workflows | 13 hooks*

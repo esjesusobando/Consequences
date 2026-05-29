@@ -96,4 +96,4 @@ Recommended actions:
 
 ---
 
-*OS Conductor v2.0 — PersonalOS v4.8 — 2026-05-28*
+*OS Conductor v2.0 — PersonalOS v4.9 — 2026-05-28*

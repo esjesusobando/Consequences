@@ -27,7 +27,7 @@
 - **gentle-ai**: v1.30.6 ✅
 - **Agentes activos**: 46 (5 Dream + 23 Specialists + 13 Individual + 5 Growth)
 - **MCPs**: 7+38 servidores activos (Claude Code)
-- **Skills**: 394 SKILL.md (12 áreas funcionales)
+- **Skills**: 385 SKILL.md activas (14 áreas funcionales) + ~490 legacy
 - **HUBs**: 21+2 HUBs + 284 scripts
 - **Workflows**: 30 (7 categorías)
 - **Agentes**: 46 definiciones (5 Dream Team + 23 Specialists + 13 individuales + 5 Growth)
@@ -39,7 +39,7 @@
 
 | Fecha                                     | Cambio                                                                                           |
 |------------------------------------------|-------------------------------------------------------------------------------------------------|
-| 2026-05-22                                | v4.7 Consequences — Auditoría Integral, 394 skills, subagent-statusline, git fixes               |
+| 2026-05-22                                | v4.7 Consequences — Auditoría Integral, 385 skills, subagent-statusline, git fixes               |
 | 2026-05-21                                | v4.7 — SOTA, 393 skills, scripts actualizados                                                    |
 | 2026-05-20                                | v4.6 — Stable, OS_DIRECTORY.md v4.5, 358 skills                                                  |
 | 2026-05-18                                | v4.5 — Iron Man Genesis, 393 skills, Auditoría reconcilidada                                     |

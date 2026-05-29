@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-19_Agent_Sync_Hub.py — PersonalOS v4.8 Consequences
+19_Agent_Sync_Hub.py — PersonalOS v4.9 Consequences
 
 Sincroniza .agent/01_Agents/ con 01_Personal_Os/01_Core/02_Tools/01_Agents/
 Detecta drift y lo reporta. Modo --apply lo corrige.
@@ -45,7 +45,7 @@ def collect_files(root):
 
 def main():
     print("\n" + "=" * 60)
-    print("  AGENT SYNC HUB — PersonalOS v4.8 Consequences")
+    print("  AGENT SYNC HUB — PersonalOS v4.9 Consequences")
     print(f"  Modo: {'APPLY' if APPLY else 'DRY-RUN'}")
     print("=" * 60)
 

@@ -32,7 +32,7 @@
 | 21 | [`21_NP_Ecosystem_Install_Guide_2026-05-23.md`](./21_NP_Ecosystem_Install_Guide_2026-05-23.md)                        | 2026-05-23  | Ecosystem install guide                                    |
 | 22 | [`22_NP_Sesion_Auditoria_Estado_del_Arte_v4.7.md`](./22_NP_Sesion_Auditoria_Estado_del_Arte_v4.7.md)                  | 2026-04-23  | Auditoría Estado del Arte v4.7 (retrospectiva)             |
 | 23 | [`23_NP_Sesion_Auditoria_OS_Completa_2026-05-25.md`](./23_NP_Sesion_Auditoria_OS_Completa_2026-05-25.md)              | 2026-05-25  | Auditoría OS completa                                      |
-| 24 | [`24_NP_Sesion_Auditoria_v4.8_Skills_Index_2026-05-26.md`](./24_NP_Sesion_Auditoria_v4.8_Skills_Index_2026-05-26.md)  | 2026-05-26  | Auditoría v4.8 Skills Index                                |
+| 24 | [`24_NP_Sesion_Auditoria_v4.8_Skills_Index_2026-05-26.md`](./24_NP_Sesion_Auditoria_v4.8_Skills_Index_2026-05-26.md)  | 2026-05-26  | Auditoría v4.9 Skills Index                                |
 | 25 | [`25_NP_Estado_Pre_Auditoria_v4_7.md`](./25_NP_Estado_Pre_Auditoria_v4_7.md)                                          | —           | Estado del sistema antes de auditoría                      |
 | 26 | [`26_NP_Engram_Memory_System.md`](./26_NP_Engram_Memory_System.md)                                                    | 2026-04-28  | Documentación del sistema Engram Memory                    |
 | 27 | [`27_NP_Subagent_Statusline_Git_Fixes.md`](./27_NP_Subagent_Statusline_Git_Fixes.md)                                  | 2026-05-22  | Subagent Statusline + Git fixes                            |

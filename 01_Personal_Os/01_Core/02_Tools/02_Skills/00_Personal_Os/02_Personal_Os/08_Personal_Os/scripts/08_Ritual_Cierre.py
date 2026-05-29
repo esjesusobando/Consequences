@@ -147,7 +147,7 @@ def step_integrar_compound() -> bool:
 
 
 def git_commit_push():
-    """Secuencia Git CON APROBACIÓN del usuario - PersonalOS v4.8 Consequences"""
+    """Secuencia Git CON APROBACIÓN del usuario - PersonalOS v4.9 Consequences"""
     print(f"\n{INFO}>>> Iniciando Secuencia Git...{RESET}")
 
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")

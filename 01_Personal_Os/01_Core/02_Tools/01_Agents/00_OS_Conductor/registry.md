@@ -1,8 +1,8 @@
 # 📋 Registry — Mapa Completo de Skills del PersonalOS
 
 > **Source of Truth:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
-> **Actualizado:** 2026-05-28 (v4.8 Consequences)
-> **Total:** 12 áreas, 97 skills
+> **Actualizado:** 2026-05-28 (v4.9 Consequences)
+> **Total:** 14 áreas, 97 skills
 
 ---
 
@@ -254,5 +254,5 @@ personal, web, ads, quality
 
 ---
 
-> *PersonalOS v4.8 Consequences — 2026-05-28*
+> *PersonalOS v4.9 Consequences — 2026-05-28*
 > *Mantenido por: OS Conductor*

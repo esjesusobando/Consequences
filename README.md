@@ -1,24 +1,24 @@
-# Think Different PersonalOS v4.8 Consequences — Production Ready
+# Think Different PersonalOS v4.9 Consequences — Production Ready
 
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Version](https://img.shields.io/badge/Version-4.8-00FF00)]()
 [![Status](https://img.shields.io/badge/Status-PRODUCTION%20READY-00FF00)]()
 [![OS](https://img.shields.io/badge/Think%20Different-OS--4.8-7B68EE)]()
 
-> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 394 skills SOTA, 13 áreas funcionales, 48 agentes, metodologías integradas y automatización completa.
+> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 385 skills SOTA, 13 áreas funcionales, 48 agentes, metodologías integradas y automatización completa.
 
 ---
 
-## 📊 Estado del Sistema (v4.8 Consequences — Production Ready — 2026-05-25)
+## 📊 Estado del Sistema (v4.9 Consequences — Production Ready — 2026-05-25)
 
-> 🟢 **PRODUCTION READY** - v4.8 Consequences lista para uso público
+> 🟢 **PRODUCTION READY** - v4.9 Consequences lista para uso público
 
 | Métrica                             | Valor                                           |
 |------------------------------------|------------------------------------------------|
 | **Overall Health**                  | **100%** 🟢                                      |
 | **Every CE**                        | v3.8.4 ✅ (local repo)                           |
 | **gentle-ai**                       | v1.30.6 ✅                                       |
-| **Skills**                          | **394** (13 áreas funcionales)                  |
+| **Skills**                          | **385** (14 áreas funcionales)                 |
 | **Rules**                           | **13** (.mdc)                                   |
 | **MCPs**                            | **7** root + **38** backup                      |
 | **HUBs**                            | **21+2** HUBs + 284 scripts (recursivo)         |
@@ -27,7 +27,7 @@
 
 ---
 
-## 📂 Estructura del Sistema (v4.8 Consequences — Production Ready)
+## 📂 Estructura del Sistema (v4.9 Consequences — Production Ready)
 
 ```
 Think_Different/                           # RAÍZ
@@ -38,7 +38,7 @@ Think_Different/                           # RAÍZ
 │   │   ├── 01_Rules/             ✅ 13 reglas .mdc — FUENTE DE VERDAD
 │   │   └── 02_Tools/             ✅ Todas las herramientas
 │   │       ├── 01_Agents/         ✅ 48 agentes
-│   │       ├── 02_Skills/        ✅ 394 skills — 13 áreas funcionales
+│   │       ├── 02_Skills/        ✅ 385 skills — 13 áreas funcionales
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/         ✅ 12 hooks (6 fases)
@@ -111,7 +111,7 @@ Think_Different/                           # RAÍZ
 
 ## 🛠️ Componentes Principales
 
-### Skills System (v4.8 — 13 Áreas Funcionales)
+### Skills System (v4.9 — 13 Áreas Funcionales)
 
 | Área                                                         | Items                      | Descripción                                                   |
 |-------------------------------------------------------------|---------------------------|--------------------------------------------------------------|
@@ -127,14 +127,14 @@ Think_Different/                           # RAÍZ
 | **08_Invictus_Web**                                          | 15                         | Playwright, Superpowers, Browser Auto                         |
 | **09_Claude_Ads**                                            | 20                         | Claude Ads & Promoted Content                                 |
 | **10_Skill_Auditor**                                         | 1                          | Auditoría de skills                                           |
-| **TOTAL**                                                    | **394**                    | Total real indexado en disco                                  |
+| **TOTAL**                                                    | **385**                    | Skills activas en 14 áreas funcionales                        |
 
-> ⚠️ Skills están en carpetas de área + subcarpetas. Total real: 394 skills
+> ⚠️ Skills están en carpetas de área + subcarpetas. Total real: 385 skills
 > Índice completo: `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
 
 ---
 
-### HUBs v4.8 (31 HUBs + scripts en 13 directorios)
+### HUBs v4.9 (31 HUBs + scripts en 13 directorios)
 
 | Hub                                          | Script                                          | Propósito                                             |
 |---------------------------------------------|------------------------------------------------|------------------------------------------------------|
@@ -284,6 +284,6 @@ CC BY-NC-SA 4.0 - Uso no comercial permitido.
 
 ---
 
-_Think Different PersonalOS v4.8 Consequences — Production Ready ✅ — 2026-05-25_
+_Think Different PersonalOS v4.9 Consequences — Production Ready ✅ — 2026-05-25_
 
 *Estructura completa: ver `Structure_v4.8.md`*
