@@ -40,8 +40,15 @@
 
 ---
 
-## ✅ Completados
+## ✅ Completados (2026-05-29)
+
+- [x] **Revisar Metodología Learning Always**: Workflow actualizado a v1.1 — paths corregidos, modo rápido como default, `_transcripts/` para VTT, Engram save obligatorio. Sync a .agent mirror.
+- [x] **Corregir System Mapper Hub**: Agent Catalog ahora excluye README.md, LEEME.md, SKILL.md, registry.md y dirs `references/`. Count bajó de 73 a 55 agentes reales.
+- [x] **GGA Pre-commit hook**: Ya instalado (secret scanner + gga run en `.git/hooks/pre-commit`). Verificado operativo.
+- [x] **Revisar Metodología Hillary**: Duplicado `04_Hillary.md` archivado. Paths corregidos en workflow (`07_Personal_Os` → `00_Personal_Os`). Workflow bump v1.1.0. Sync a .agent.
+- [x] **Revisar Supercampeones Protocol**: `09_Agent_Teams_Protocol.mdc` actualizado con nota de compatibilidad OpenCode (task_id vs fork subagent).
+- [x] **Mover VTT legacy**: `Creé un equipo de Marketing...vtt` y `Por Qué La Suerte...vtt` movidos de `03_Resultado/05_JAO/` a `01_Research_Os/_transcripts/`.
 
 ---
 
-*Sistema en estado PURE GREEN — 2026-05-25*
+*Sistema en estado PURE GREEN — 2026-05-29*

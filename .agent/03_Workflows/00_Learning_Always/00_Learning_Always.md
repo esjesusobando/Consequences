@@ -6,7 +6,7 @@ argument-hint: "[URL del contenido - video, artículo, doc]"
 
 # 26_Learning_Always — Knowledge Compounding Workflow
 
-> **Versión:** 1.0 | **Fecha:** 2026-04-18 | **Owner:** Think_Different OS
+> **Versión:** 1.1 | **Fecha:** 2026-05-29 | **Owner:** Think_Different OS
 
 ## Propósito
 
@@ -64,7 +64,7 @@ Transformar cualquier contenido (URLs de YouTube, artículos, docs) en:
   - Puntos principales
 
 # SI NO encuentra resultados...
-→ Warning al usuario: "No encontré info de este video.
+→ Warning al usuario: "No encontré info de este video. 
    ¿Tenés la transcripción? Si la tenés, pasámela y continuamos."
 
 # SI encuentra → Continuar a Step 2
@@ -293,13 +293,18 @@ Tweet 2: [280 chars]
 3. SI EXISTS → Update con nuevo conocimiento
 ```
 
-### Step 4.2: Save to Engram
+### Step 4.2: Save to Engram (OBLIGATORIO)
 
 ```bash
-# Guardar conocimiento nuevo:
-- Crear observation en Engram
-- Agregar topic_key relevante
-- Crear conexiones con conocimiento previo
+# Guardar conocimiento nuevo con ubicaciones exactas:
+mem_save(
+  title="LA: [Título del contenido]",
+  type="learning",
+  topic_key="learning-always/[tema]",
+  content="**What**: [Qué se aprendió]\n**Why**: [Por qué es relevante]\n**Where**: [Paths exactos de archivos creados]\n**Learned**: [Gotchas, edge cases]"
+)
+
+# SIEMPRE incluir las rutas exactas en Where para trazabilidad
 ```
 
 ---
@@ -309,28 +314,39 @@ Tweet 2: [280 chars]
 ### Step 5.1: Estructurar archivos
 
 ```
-02_Knowledge/00_Second_Brain/
+01_Personal_Os/02_Knowledge/01_Research_Os/
+├── YYYY-MM-DD_Learning_[Titulo_Corto].md       # Knowledge entry (resumen + insights)
+├── YYYY-MM-DD_RE_[Titulo_Corto].md              # Reverse Engineering
+├── _transcripts/
+│   └── [Video Title].es.vtt                      # Raw transcript (source)
+├── 00_INDEX.md                                   # Index de todos los entries
+```
+
+**Output mínimo (modo rápido — el que usamos):**
+1. `YYYY-MM-DD_Learning_[Titulo].md` — Knowledge entry con puntos clave, herramientas, conexiones OS
+2. `YYYY-MM-DD_RE_[Titulo].md` — Ingeniería inversa del contenido
+3. `_transcripts/[titulo].vtt` — Transcripción cruda (source)
+4. **Engram save** — Memoria persistente con ubicaciones exactas
+5. **NP update** — Nota de proceso con lo aprendido
+
+**Output completo (8 deliverables — opcional):**
+```
+01_Personal_Os/02_Knowledge/00_Second_Brain/
 ├── XX_LA_[Descripcion_Corta]/
 │   ├── 00_Raw_Content.md
 │   ├── 01_Resumen_500_Palabras.md
-│   ├── 02_Prompts_Usados/
-│   │   ├── ES.md
-│   │   └── EN.md
+│   ├── 02_Prompts_Usados/ (ES + EN)
 │   ├── 03_Demos_Junior/
 │   ├── 04_Herramientas.md
 │   ├── 05_Insights_Segundo_Cerebro.md
-│   ├── 06_Post_Redes/
-│   │   ├── Facebook.md
-│   │   ├── Instagram.md
-│   │   ├── X_Twitter.md
-│   │   └── LinkedIn.md
+│   ├── 06_Post_Redes/ (4 platforms)
 │   ├── 07_Mega_Prompt_Gems_GPTs.md
 │   └── 08_Ingenieria_Inversa.md
 ├── 00_Index_Learnings.md
 └── README.md
 ```
 
-### Step 5.2: Index en 00_Index_Learnings.md
+### Step 5.2: Index en 00_INDEX.md
 
 ```markdown
 ## [XX] [Título] — [Fecha]
@@ -350,7 +366,7 @@ Tweet 2: [280 chars]
 # SI se usa API (Exa, etc):
 - Verificar créditos restantes
 - SI < 10% → NOTIFICAR al usuario:
-  "⚠️warning: Créditos de [API] al [X]%.
+  "⚠️warning: Créditos de [API] al [X]%. 
    Considera reducir uso o recargar."
 - NUNCA exceder el límite
 ```
@@ -383,7 +399,7 @@ Tweet 2: [280 chars]
 ```
 USER: /Learning https://www.youtube.com/watch?v=b6hfk8k-UVk
 
-AI:
+AI: 
 🔍 [1] Buscando info con Exa...
 ✅ [2] Encontré: Recall 2.0 - One Living Space for Your Knowledge
 🛠️ [3] Herramientas: Recall app, AI chat, Knowledge Graph
@@ -393,7 +409,7 @@ AI:
    - Update knowledge base
 ✅ [6] Guardado en 02_Knowledge/00_Second_Brain/02_LA_Recall_20/
 
-📊 Output:
+📊 Output: 
 - ✅ Resumen 500 palabras (ES + EN)
 - ✅ Prompts + 7 perfiles
 - ✅ Demos Junior
@@ -408,20 +424,19 @@ AI:
 
 ## Perfiles de Agente (para prompts)
 
-| #          | Perfil                 | Carpeta SKILL               |
-|-----------|-----------------------|----------------------------|
-| 01         | Project Manager        | `02_Project_Manager`        |
-| 02         | Product Manager        | `03_Product_Manager`        |
-| 03         | Product Design         | `04_Product_Design`         |
-| 04         | Vibe Coding            | `05_Vibe_Coding`            |
-| 05         | Testing                | `06_Testing`                |
-| 06         | DevOps                 | `07_DevOps`                 |
-| 07         | Marketing              | `09_Marketing`              |
+| #          | Perfil                 | Carpeta SKILL (path relativo a 02_Skills/) |
+|-----------|-----------------------|------------------------------------------|
+| 01         | Project Manager        | `01_Productividad/01_Project_Manager`      |
+| 02         | Product Manager        | `03_Product_Manager`                       |
+| 03         | Product Design         | `02_Diseno_Ui_Ux/01_Product_Design`        |
+| 04         | Vibe Coding            | `06_Tools/05_Vibe_Coding`                  |
+| 05         | Testing                | `06_Tools/06_Testing`                      |
+| 06         | DevOps                 | `06_Tools/04_DevOps`                       |
+| 07         | Marketing              | `09_Marketing`                             |
 
 ---
 
 ## Changelog
 
 - **v1.0** (2026-04-18): Versión inicial con 8 deliverables + automejora OS
-
-// turbo-all
+- **v1.1** (2026-05-29): Paths actualizados a estructura real del OS. Modo rápido (Knowledge Entry + RE + transcript + Engram) como default. Output completo (8 deliverables) como opcional. _transcripts/ para VTT. Perfiles de agente con paths correctos. Engram save obligatorio con ubicaciones exactas.

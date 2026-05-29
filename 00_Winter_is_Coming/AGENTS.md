@@ -27,7 +27,10 @@ cat 00_Winter_is_Coming/BACKLOG.md
 # 3. Cargar skill registry (compact rules para sub-agentes)
 cat .atl/skill-registry.md
 
-# 4. Si hay trabajo en curso, verificar estado
+# 4. Verificar Hillary Inbox (tareas personales pendientes)
+ls 01_Personal_Os/03_Task/02_Hillary_Inbox/  # SI hay archivos .md → procesar con Hillary antes de continuar
+
+# 5. Si hay trabajo en curso, verificar estado
 cat 01_Personal_Os/03_Task/  # tareas activas
 ```
 
@@ -511,16 +514,34 @@ gr --agents    # Solo 3 agents
 | **Validate**                            | `gr` or `01_Auditor_Hub.py`                                          |
 | **Memory**                              | `engram save <title> <msg>`                                          |
 
-## Hillary Life OS — Triggers
+## Hillary Life OS — Autonomous Agent
 
-| Trigger                                                                   | Skill                                       | Workflow                                       |
-|--------------------------------------------------------------------------|--------------------------------------------|-----------------------------------------------|
-| "capture", "captura", "quick add", "anota"                                | `01_Quick_Capture`                          | Workflows en 04_Hillary/                       |
-| "plan my day", "plan día", "qué hago hoy"                                 | `02_Plan_My_Day`                            | Workflows en 04_Hillary/                       |
-| "daily notes", "log this", "registro"                                     | `03_Daily_Notes`                            | Workflows en 04_Hillary/                       |
-| "/hillary", "life os", "personal productivity"                            | Orquestador                                 | Workflows en 04_Hillary/                       |
+Hillary corre en segundo plano y se activa SOLA cuando detecta estas señales. NO esperar a que el usuario la invoque explícitamente.
 
-**Skills location:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/`
+### Triggers Automáticos (routing obligatorio)
+
+| Disparo                                                                  | Acción                                    | Prioridad |
+|-------------------------------------------------------------------------|-------------------------------------------|-----------|
+| "capture", "captura", "quick add", "anota", "guarda idea"               | Captura rápida → `02_Hillary_Inbox/`      | 🔴 Alta |
+| "plan my day", "plan día", "qué hago hoy", "organizar día"              | Plan My Day → leer inbox + generar schedule | 🔴 Alta |
+| "daily notes", "log this", "registro", "anotar actividad"               | Daily Notes → agregar a log diario        | 🟡 Media |
+| "/hillary", "life os", "personal productivity"                          | Orquestador → workflow Hillary completo   | 🔴 Alta |
+| El inbox tiene items sin procesar (al iniciar sesión)                   | Procesar inbox + triage automático        | 🔴 Alta |
+| No hay Daily Report del día actual (al iniciar sesión)                  | Preguntar si quiere hacer daily review    | 🟡 Media |
+
+### Regla de enrutamiento
+Cualquier mensaje del usuario que coincida con estos triggers → **responder como Hillary**, no como orquestador general. Si el trigger es ambiguo, preguntar "¿Es algo personal/laboral? Así lo derivo a Hillary o a Gentleman."
+
+### Pipeline Autónomo
+```
+[Inicio de sesión] → ¿Inbox con items? → SI → Procesar inbox → Triaje → Backlog
+                  → ¿Daily Report hoy? → NO → Sugerir daily review
+                  → ¿Items sin procesar > 48h? → Alertar al usuario
+```
+
+**Skills location:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/01_Life_OS/18_Personal_Life_OS/`
+**Skill principal:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/07_Hillary/SKILL.md`
+**Agente:** `01_Personal_Os/01_Core/02_Tools/01_Agents/13_Hillary.md`
 **Inbox:** `01_Personal_Os/03_Task/02_Hillary_Inbox/`
 **RUNBOOK:** `01_Personal_Os/02_Knowledge/04_Docs/Hillary_Life_OS_RUNBOOK.md`
 

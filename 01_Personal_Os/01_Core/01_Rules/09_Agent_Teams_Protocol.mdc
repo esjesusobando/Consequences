@@ -4,8 +4,8 @@ globs: **/*.py, **/*.ts, **/*.md, **/*.json, **/*.mdc
 ---
 # Forked Subagents — Agent Teams Protocol
 
-**Version:** 1.0
-**Date:** 2026-04-25
+**Version:** 1.1
+**Date:** 2026-05-29
 **Source:** [Forked Subagents in Claude Code](https://www.buildthisnow.com/blog/guide/mechanics/claude-code-fork-subagent)
 
 ---
@@ -54,6 +54,16 @@ export CLAUDE_CODE_FORK_SUBAGENT=1
 | Necesita modelo diferente | ❌ | ✅ |
 
 ---
+
+## Compatibilidad OpenCode
+
+OpenCode NO tiene fork subagent. En su lugar usa `task_id` para continuar sesiones de subagentes:
+- **Task tool + fresh**: contexto fresco (equivalente a subagent tipado)
+- **Task tool + task_id**: reanuda sesión anterior (similar a fork, comparte historial)
+
+**Regla práctica:**
+- OpenCode: usar `task` con task_id para trabajo continuo
+- Claude Code: usar fork subagent (nativo)
 
 ## Politica pre-fork
 

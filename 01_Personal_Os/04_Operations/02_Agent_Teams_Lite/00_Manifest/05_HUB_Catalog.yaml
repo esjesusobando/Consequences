@@ -1,11 +1,11 @@
-# HUB Catalog — generated 2026-05-24T08:43:53
+# HUB Catalog — generated 2026-05-29T12:53:43
 
 version: v3.0
-generated: "2026-05-24T08:43:53"
+generated: "2026-05-29T12:53:43"
 base_path: 01_Personal_Os/04_Operations/03_Scripts_Os/
 totals:
   hubs: 28
-  scripts: 152
+  scripts: 128
 hubs:
   - name: 00_Sound_Engine
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py
@@ -70,481 +70,409 @@ hubs:
   - name: 22_Validate_Skill_Frontmatter
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/22_Validate_Skill_Frontmatter.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/22_Validate_Skill_Frontmatter.py
-  - name: 23_path_replacement
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/23_path_replacement.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/23_path_replacement.py
   - name: 24_mass_path_migration
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/24_mass_path_migration.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/24_mass_path_migration.py
   - name: 25_Minimax_Optimizer_Hub
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/25_Minimax_Optimizer_Hub.py
     command: python 01_Personal_Os/04_Operations/03_Scripts_Os/25_Minimax_Optimizer_Hub.py
-  - name: 33_Parallel_Audit_Pro
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/33_Parallel_Audit_Pro.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/33_Parallel_Audit_Pro.py
-  - name: 34_Skill_Auditor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/34_Skill_Auditor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/34_Skill_Auditor.py
-  - name: 50_System_Health_Monitor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/50_System_Health_Monitor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/50_System_Health_Monitor.py
-  - name: 57_Repo_Sync_Auditor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/57_Repo_Sync_Auditor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/57_Repo_Sync_Auditor.py
+  - name: 26_Parallel_Audit_Pro
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/26_Parallel_Audit_Pro.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/26_Parallel_Audit_Pro.py
+  - name: 27_Skill_Auditor
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/27_Skill_Auditor.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/27_Skill_Auditor.py
+  - name: 28_System_Health_Monitor
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/28_System_Health_Monitor.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/28_System_Health_Monitor.py
+  - name: 29_Repo_Sync_Auditor
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/29_Repo_Sync_Auditor.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/29_Repo_Sync_Auditor.py
+  - name: 30_path_replacement
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/30_path_replacement.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/30_path_replacement.py
 scripts:
-  - name: 22_AIPM_Trace_Logger
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/22_AIPM_Trace_Logger.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/22_AIPM_Trace_Logger.py
-  - name: 23_AIPM_Evaluator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/23_AIPM_Evaluator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/23_AIPM_Evaluator.py
-  - name: 24_AIPM_Interview_Sim
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/24_AIPM_Interview_Sim.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/24_AIPM_Interview_Sim.py
-  - name: 25_Token_Budget_Guard
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/25_Token_Budget_Guard.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/25_Token_Budget_Guard.py
-  - name: 26_RAG_Optimizer_Pro
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/26_RAG_Optimizer_Pro.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/26_RAG_Optimizer_Pro.py
-  - name: 27_Probabilistic_Risk_Audit
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/27_Probabilistic_Risk_Audit.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/27_Probabilistic_Risk_Audit.py
-  - name: 28_AIPM_Control_Center
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/28_AIPM_Control_Center.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/28_AIPM_Control_Center.py
-  - name: 29_Guardrails_Service
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/29_Guardrails_Service.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/29_Guardrails_Service.py
-  - name: 30_AIPM_Consolidated_Report
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/30_AIPM_Consolidated_Report.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/30_AIPM_Consolidated_Report.py
-  - name: 33_Parallel_Audit_Pro
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/33_Parallel_Audit_Pro.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/33_Parallel_Audit_Pro.py
-  - name: 34_Skill_Auditor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/34_Skill_Auditor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/34_Skill_Auditor.py
-  - name: 37_Linter_Autofix
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/37_Linter_Autofix.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/37_Linter_Autofix.py
-  - name: 40_Validate_Rules
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/40_Validate_Rules.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/40_Validate_Rules.py
-  - name: 80_Edge_Case_Validator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/80_Edge_Case_Validator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_Validator/80_Edge_Case_Validator.py
-  - name: 22_AIPM_Trace_Logger
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/22_AIPM_Trace_Logger.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/22_AIPM_Trace_Logger.py
-  - name: 23_AIPM_Evaluator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/23_AIPM_Evaluator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/23_AIPM_Evaluator.py
-  - name: 24_AIPM_Interview_Sim
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/24_AIPM_Interview_Sim.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/24_AIPM_Interview_Sim.py
-  - name: 25_Token_Budget_Guard
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/25_Token_Budget_Guard.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/25_Token_Budget_Guard.py
-  - name: 26_RAG_Optimizer_Pro
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/26_RAG_Optimizer_Pro.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/26_RAG_Optimizer_Pro.py
-  - name: 27_Probabilistic_Risk_Audit
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/27_Probabilistic_Risk_Audit.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/27_Probabilistic_Risk_Audit.py
-  - name: 28_AIPM_Control_Center
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/28_AIPM_Control_Center.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/28_AIPM_Control_Center.py
-  - name: 29_Guardrails_Service
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/29_Guardrails_Service.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/29_Guardrails_Service.py
-  - name: 30_AIPM_Consolidated_Report
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/30_AIPM_Consolidated_Report.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_AIPM/30_AIPM_Consolidated_Report.py
-  - name: 33_Parallel_Audit_Pro
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/33_Parallel_Audit_Pro.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/33_Parallel_Audit_Pro.py
-  - name: 34_Skill_Auditor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/34_Skill_Auditor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/34_Skill_Auditor.py
-  - name: 37_Linter_Autofix
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/37_Linter_Autofix.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/37_Linter_Autofix.py
-  - name: 40_Validate_Rules
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/40_Validate_Rules.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/40_Validate_Rules.py
-  - name: 80_Edge_Case_Validator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/80_Edge_Case_Validator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/80_Edge_Case_Validator.py
-  - name: 20_Master_Analytics_Factory
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Data/20_Master_Analytics_Factory.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Data/20_Master_Analytics_Factory.py
-  - name: 84_Batch_Parser
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Data/84_Batch_Parser.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Data/84_Batch_Parser.py
-  - name: 85_Resumen_Extractor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Data/85_Resumen_Extractor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Data/85_Resumen_Extractor.py
-  - name: 86_Universal_Parser
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Data/86_Universal_Parser.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Data/86_Universal_Parser.py
-  - name: 46_Sync_MCP_OpenCode
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/46_Sync_MCP_OpenCode.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/46_Sync_MCP_OpenCode.py
-  - name: 75_Update_QMD_Index
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/75_Update_QMD_Index.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/75_Update_QMD_Index.py
-  - name: 76_Obsidian_Exporter
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/76_Obsidian_Exporter.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/76_Obsidian_Exporter.py
   - name: 00_Context_Reset
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_General/00_Context_Reset.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/08_General/00_Context_Reset.py
-  - name: 64_Campanilla
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_General/64_Campanilla.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/08_General/64_Campanilla.py
-  - name: 66_Alert_Manager
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_General/66_Alert_Manager.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/08_General/66_Alert_Manager.py
-  - name: 77_Notify_System
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_General/77_Notify_System.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/08_General/77_Notify_System.py
-  - name: 20_Master_Analytics_Factory
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Data/20_Master_Analytics_Factory.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Data/20_Master_Analytics_Factory.py
-  - name: 84_Batch_Parser
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Data/84_Batch_Parser.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Data/84_Batch_Parser.py
-  - name: 85_Resumen_Extractor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Data/85_Resumen_Extractor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Data/85_Resumen_Extractor.py
-  - name: 86_Universal_Parser
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Data/86_Universal_Parser.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Data/86_Universal_Parser.py
-  - name: 46_Sync_MCP_OpenCode
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Integration/46_Sync_MCP_OpenCode.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Integration/46_Sync_MCP_OpenCode.py
-  - name: 75_Update_QMD_Index
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Integration/75_Update_QMD_Index.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Integration/75_Update_QMD_Index.py
-  - name: 76_Obsidian_Exporter
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Integration/76_Obsidian_Exporter.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Integration/76_Obsidian_Exporter.py
-  - name: 00_Context_Reset
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_General/00_Context_Reset.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_General/00_Context_Reset.py
-  - name: 64_Campanilla
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_General/64_Campanilla.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_General/64_Campanilla.py
-  - name: 66_Alert_Manager
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_General/66_Alert_Manager.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_General/66_Alert_Manager.py
-  - name: 77_Notify_System
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_General/77_Notify_System.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_General/77_Notify_System.py
-  - name: 00_Context_Reset
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/00_Context_Reset.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/00_Context_Reset.py
-  - name: 01_Spider_Brainstorm
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/01_Spider_Brainstorm.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/01_Spider_Brainstorm.py
-  - name: 02_Professor_X_Plan
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/02_Professor_X_Plan.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/02_Professor_X_Plan.py
-  - name: 03_Thor_Work
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/03_Thor_Work.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/03_Thor_Work.py
-  - name: 04_Vision_Review
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/04_Vision_Review.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/04_Vision_Review.py
-  - name: 05_Hulk_Compound
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/05_Hulk_Compound.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/05_Hulk_Compound.py
-  - name: 06_AntMan_Lfg_Lite
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/06_AntMan_Lfg_Lite.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/06_AntMan_Lfg_Lite.py
-  - name: 07_Doc_Strange_Lfg
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/07_Doc_Strange_Lfg.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/07_Doc_Strange_Lfg.py
-  - name: 08_Ritual_Cierre
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/08_Ritual_Cierre.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/08_Ritual_Cierre.py
-  - name: 09_Backlog_Triage
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/09_Backlog_Triage.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/09_Backlog_Triage.py
-  - name: 10_AI_Task_Planner
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/10_AI_Task_Planner.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/10_AI_Task_Planner.py
-  - name: 11_Sync_Notes
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/11_Sync_Notes.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/11_Sync_Notes.py
-  - name: 12_Update_Links
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/12_Update_Links.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/12_Update_Links.py
-  - name: 13_Validate_Stack
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/13_Validate_Stack.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/13_Validate_Stack.py
-  - name: 14_Morning_Standup
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/14_Morning_Standup.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/14_Morning_Standup.py
-  - name: 15_Weekly_Review
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/15_Weekly_Review.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/15_Weekly_Review.py
-  - name: 16_Clean_System
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/16_Clean_System.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/16_Clean_System.py
-  - name: 17_Ritual_Dominical
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/17_Ritual_Dominical.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/17_Ritual_Dominical.py
-  - name: 18_Generacion_Contenido
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/18_Generacion_Contenido.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/18_Generacion_Contenido.py
-  - name: 19_Generate_Progress
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/19_Generate_Progress.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/19_Generate_Progress.py
-  - name: 20_Master_Analytics_Factory
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/20_Master_Analytics_Factory.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/20_Master_Analytics_Factory.py
-  - name: 21_Skill_Script_Mapper
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/21_Skill_Script_Mapper.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/21_Skill_Script_Mapper.py
-  - name: 22_AIPM_Trace_Logger
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/22_AIPM_Trace_Logger.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/22_AIPM_Trace_Logger.py
-  - name: 23_AIPM_Evaluator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/23_AIPM_Evaluator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/23_AIPM_Evaluator.py
-  - name: 24_AIPM_Interview_Sim
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/24_AIPM_Interview_Sim.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/24_AIPM_Interview_Sim.py
-  - name: 28_AIPM_Control_Center
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/28_AIPM_Control_Center.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/28_AIPM_Control_Center.py
-  - name: 30_AIPM_Consolidated_Report
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/30_AIPM_Consolidated_Report.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/30_AIPM_Consolidated_Report.py
-  - name: 31_Silicon_Valley_Auditor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/31_Silicon_Valley_Auditor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/31_Silicon_Valley_Auditor.py
-  - name: 32_Multi_Agent_Final_Validation
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/32_Multi_Agent_Final_Validation.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/32_Multi_Agent_Final_Validation.py
-  - name: 33_Parallel_Audit_Pro
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/33_Parallel_Audit_Pro.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/33_Parallel_Audit_Pro.py
-  - name: 34_Skill_Auditor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/34_Skill_Auditor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/34_Skill_Auditor.py
-  - name: 35_Beautify_Tables
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/35_Beautify_Tables.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/35_Beautify_Tables.py
-  - name: 36_Beauty_Doc
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/36_Beauty_Doc.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/36_Beauty_Doc.py
-  - name: 37_Linter_Autofix
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/37_Linter_Autofix.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/37_Linter_Autofix.py
-  - name: 38_Recap_Planning
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/38_Recap_Planning.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/38_Recap_Planning.py
-  - name: 39_Repair_Corruption
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/39_Repair_Corruption.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/39_Repair_Corruption.py
-  - name: 40_Validate_Rules
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/40_Validate_Rules.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/40_Validate_Rules.py
-  - name: 43_Marketing_Skills_Distributor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/43_Marketing_Skills_Distributor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/43_Marketing_Skills_Distributor.py
-  - name: 44_Auto_Compound_Intelligence
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/44_Auto_Compound_Intelligence.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/44_Auto_Compound_Intelligence.py
-  - name: 45_Migration_Master
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/45_Migration_Master.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/45_Migration_Master.py
-  - name: 46_Sync_MCP_OpenCode
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/46_Sync_MCP_OpenCode.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/46_Sync_MCP_OpenCode.py
-  - name: 47_Verify_OpenCode_Status
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/47_Verify_OpenCode_Status.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/47_Verify_OpenCode_Status.py
-  - name: 48_Design_Critique_Expert
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/48_Design_Critique_Expert.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/48_Design_Critique_Expert.py
-  - name: 49_Path_Optimization
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/49_Path_Optimization.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/49_Path_Optimization.py
-  - name: 50_DEBUG
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/50_DEBUG.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/50_DEBUG.py
-  - name: 50_DEBUG2
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/50_DEBUG2.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/50_DEBUG2.py
-  - name: 50_System_Health_Monitor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/50_System_Health_Monitor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/50_System_Health_Monitor.py
-  - name: 51_Commit_Lint_Guard
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/51_Commit_Lint_Guard.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/51_Commit_Lint_Guard.py
-  - name: 52_Safe_Commit
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/52_Safe_Commit.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/52_Safe_Commit.py
-  - name: 53_Structure_Auditor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/53_Structure_Auditor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/53_Structure_Auditor.py
-  - name: 54_Commit_Guard
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/54_Commit_Guard.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/54_Commit_Guard.py
-  - name: 55_Sync_Skills
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/55_Sync_Skills.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/55_Sync_Skills.py
-  - name: 56_Organize_Solutions
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/56_Organize_Solutions.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/56_Organize_Solutions.py
-  - name: 57_Repo_Sync_Auditor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/57_Repo_Sync_Auditor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/57_Repo_Sync_Auditor.py
-  - name: 58_Batch_Beautify_README
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/58_Batch_Beautify_README.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/58_Batch_Beautify_README.py
-  - name: 59_Task_Classifier
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/59_Task_Classifier.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/59_Task_Classifier.py
-  - name: 60_Fast_Vision
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/60_Fast_Vision.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/60_Fast_Vision.py
-  - name: 61_MCP_Health_Check
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/61_MCP_Health_Check.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/61_MCP_Health_Check.py
-  - name: 63_Audit_Sync_Master
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/63_Audit_Sync_Master.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/63_Audit_Sync_Master.py
-  - name: 64_Campanilla
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/64_Campanilla.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/64_Campanilla.py
-  - name: 65_CTX_Generator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/65_CTX_Generator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/65_CTX_Generator.py
-  - name: 66_Alert_Manager
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/66_Alert_Manager.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/66_Alert_Manager.py
-  - name: 67_Retry_Decorator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/67_Retry_Decorator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/67_Retry_Decorator.py
-  - name: 68_Benchmark_Baseline
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/68_Benchmark_Baseline.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/68_Benchmark_Baseline.py
-  - name: 69_Health_Check_Pro
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/69_Health_Check_Pro.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/69_Health_Check_Pro.py
-  - name: 70_Ship_It
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/70_Ship_It.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/70_Ship_It.py
-  - name: 72_Validate_Skills_Duplicates
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/72_Validate_Skills_Duplicates.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/72_Validate_Skills_Duplicates.py
-  - name: 73_Avengers_Workflow
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/73_Avengers_Workflow.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/73_Avengers_Workflow.py
-  - name: 73_Avengers_Workflow_v3
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/73_Avengers_Workflow_v3.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/73_Avengers_Workflow_v3.py
-  - name: 74_MCP_Top_Tests
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/74_MCP_Top_Tests.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/74_MCP_Top_Tests.py
-  - name: 75_Update_QMD_Index
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/75_Update_QMD_Index.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/75_Update_QMD_Index.py
-  - name: 76_Obsidian_Exporter
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/76_Obsidian_Exporter.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/76_Obsidian_Exporter.py
-  - name: 77_Notify_System
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/77_Notify_System.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/77_Notify_System.py
-  - name: 78_Context_Switcher
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/78_Context_Switcher.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/78_Context_Switcher.py
-  - name: 79_System_Guardian
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/79_System_Guardian.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/79_System_Guardian.py
-  - name: 80_Edge_Case_Validator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/80_Edge_Case_Validator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/80_Edge_Case_Validator.py
-  - name: 81_RTM_Generator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/81_RTM_Generator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/81_RTM_Generator.py
-  - name: 82_Health_Monitor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/82_Health_Monitor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/82_Health_Monitor.py
-  - name: 83_Skill_Script_Mapper
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/83_Skill_Script_Mapper.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/83_Skill_Script_Mapper.py
-  - name: 84_Batch_Parser
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/84_Batch_Parser.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/84_Batch_Parser.py
-  - name: 85_Resumen_Extractor
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/85_Resumen_Extractor.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/85_Resumen_Extractor.py
-  - name: 86_Universal_Parser
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/86_Universal_Parser.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/86_Universal_Parser.py
-  - name: 87_Iron_Man_Gen
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/87_Iron_Man_Gen.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/87_Iron_Man_Gen.py
-  - name: 88_Frontend_Premium
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/88_Frontend_Premium.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/88_Frontend_Premium.py
-  - name: 89_Redaccion_de_Docs
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/89_Redaccion_de_Docs.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/89_Redaccion_de_Docs.py
-  - name: 90_Deep_Work_Session
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/90_Deep_Work_Session.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/90_Deep_Work_Session.py
-  - name: 95_Documentation_Updater
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/95_Documentation_Updater.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Legacy/95_Documentation_Updater.py
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/00_Context_Reset.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/00_Context_Reset.py
+  - name: 01_Campanilla
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/01_Campanilla.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/01_Campanilla.py
+  - name: 02_Alert_Manager
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/02_Alert_Manager.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/02_Alert_Manager.py
+  - name: 03_Notify_System
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/03_Notify_System.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/03_Notify_System.py
+  - name: 00_AIPM_Trace_Logger
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/00_AIPM_Trace_Logger.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/00_AIPM_Trace_Logger.py
+  - name: 01_AIPM_Evaluator
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/01_AIPM_Evaluator.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/01_AIPM_Evaluator.py
+  - name: 02_AIPM_Interview_Sim
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/02_AIPM_Interview_Sim.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/02_AIPM_Interview_Sim.py
+  - name: 03_Token_Budget_Guard
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/03_Token_Budget_Guard.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/03_Token_Budget_Guard.py
+  - name: 04_RAG_Optimizer_Pro
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/04_RAG_Optimizer_Pro.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/04_RAG_Optimizer_Pro.py
+  - name: 05_Probabilistic_Risk_Audit
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/05_Probabilistic_Risk_Audit.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/05_Probabilistic_Risk_Audit.py
+  - name: 06_AIPM_Control_Center
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/06_AIPM_Control_Center.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/06_AIPM_Control_Center.py
+  - name: 07_Guardrails_Service
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/07_Guardrails_Service.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/07_Guardrails_Service.py
+  - name: 08_AIPM_Consolidated_Report
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/08_AIPM_Consolidated_Report.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM/08_AIPM_Consolidated_Report.py
+  - name: 00_Parallel_Audit_Pro
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/00_Parallel_Audit_Pro.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/00_Parallel_Audit_Pro.py
+  - name: 01_Skill_Auditor
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/01_Skill_Auditor.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/01_Skill_Auditor.py
+  - name: 02_Linter_Autofix
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/02_Linter_Autofix.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/02_Linter_Autofix.py
+  - name: 03_Validate_Rules
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/03_Validate_Rules.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/03_Validate_Rules.py
+  - name: 04_Edge_Case_Validator
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/04_Edge_Case_Validator.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/04_Edge_Case_Validator.py
+  - name: 05_test_skill_lifecycle
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/05_test_skill_lifecycle.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator/05_test_skill_lifecycle.py
+  - name: 00_Sync_MCP_OpenCode
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/00_Sync_MCP_OpenCode.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/00_Sync_MCP_OpenCode.py
+  - name: 01_Update_QMD_Index
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/01_Update_QMD_Index.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/01_Update_QMD_Index.py
+  - name: 02_Obsidian_Exporter
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/02_Obsidian_Exporter.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration/02_Obsidian_Exporter.py
+  - name: 00_Master_Analytics_Factory
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data/00_Master_Analytics_Factory.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data/00_Master_Analytics_Factory.py
+  - name: 01_Batch_Parser
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data/01_Batch_Parser.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data/01_Batch_Parser.py
+  - name: 02_Resumen_Extractor
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data/02_Resumen_Extractor.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data/02_Resumen_Extractor.py
+  - name: 03_Universal_Parser
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data/03_Universal_Parser.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data/03_Universal_Parser.py
+  - name: 00_AI_Task_Planner
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/00_AI_Task_Planner.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/00_AI_Task_Planner.py
+  - name: 01_Update_Links
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/01_Update_Links.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/01_Update_Links.py
+  - name: 02_Fast_Vision
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/02_Fast_Vision.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/02_Fast_Vision.py
+  - name: 03_MCP_Health_Check
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/03_MCP_Health_Check.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/03_MCP_Health_Check.py
+  - name: 04_Skill_Harmonizer
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/04_Skill_Harmonizer.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary/04_Skill_Harmonizer.py
   - name: 00_Safety_Wrapper
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/00_Safety_Wrapper.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/00_Safety_Wrapper.py
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/00_Safety_Wrapper.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/00_Safety_Wrapper.py
   - name: 01_Context_Manager
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/01_Context_Manager.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/01_Context_Manager.py
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/01_Context_Manager.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/01_Context_Manager.py
   - name: 02_Evaluator_Runner
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/02_Evaluator_Runner.py
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/02_Evaluator_Runner.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/02_Evaluator_Runner.py
   - name: 03_Sprint_Contract
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/03_Sprint_Contract.py
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/03_Sprint_Contract.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/03_Sprint_Contract.py
   - name: 04_Playwright_QA
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/04_Playwright_QA.py
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/04_Playwright_QA.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/04_Playwright_QA.py
   - name: 05_Pass_At_Metrics
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/05_Pass_At_Metrics.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/05_Pass_At_Metrics.py
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/05_Pass_At_Metrics.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/05_Pass_At_Metrics.py
   - name: 06_Feature_List
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/06_Feature_List.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/06_Feature_List.py
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/06_Feature_List.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/06_Feature_List.py
   - name: 07_Agent_Teams_Locks
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/07_Agent_Teams_Locks.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/07_Agent_Teams_Locks.py
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/07_Agent_Teams_Locks.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/07_Agent_Teams_Locks.py
   - name: 08_Progress_Generator
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/08_Progress_Generator.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/08_Progress_Generator.py
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/08_Progress_Generator.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/08_Progress_Generator.py
   - name: 09_Multi_Agent_Pipeline
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/09_Multi_Agent_Pipeline.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/11_Anthropic_Harness/09_Multi_Agent_Pipeline.py
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/09_Multi_Agent_Pipeline.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic/09_Multi_Agent_Pipeline.py
+  - name: 00_Context_Reset
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/00_Context_Reset.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/00_Context_Reset.py
+  - name: 01_Spider_Brainstorm
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/01_Spider_Brainstorm.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/01_Spider_Brainstorm.py
+  - name: 02_Professor_X_Plan
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/02_Professor_X_Plan.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/02_Professor_X_Plan.py
+  - name: 03_Thor_Work
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/03_Thor_Work.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/03_Thor_Work.py
+  - name: 04_Vision_Review
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/04_Vision_Review.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/04_Vision_Review.py
+  - name: 05_Hulk_Compound
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/05_Hulk_Compound.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/05_Hulk_Compound.py
+  - name: 06_AntMan_Lfg_Lite
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/06_AntMan_Lfg_Lite.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/06_AntMan_Lfg_Lite.py
+  - name: 07_Doc_Strange_Lfg
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/07_Doc_Strange_Lfg.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/07_Doc_Strange_Lfg.py
+  - name: 08_Ritual_Cierre
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/08_Ritual_Cierre.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/08_Ritual_Cierre.py
+  - name: 09_Backlog_Triage
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/09_Backlog_Triage.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/09_Backlog_Triage.py
   - name: 10_AI_Task_Planner
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/14_Otros/10_AI_Task_Planner.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Otros/10_AI_Task_Planner.py
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/10_AI_Task_Planner.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/10_AI_Task_Planner.py
+  - name: 11_Sync_Notes
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/11_Sync_Notes.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/11_Sync_Notes.py
   - name: 12_Update_Links
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/14_Otros/12_Update_Links.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Otros/12_Update_Links.py
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/12_Update_Links.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/12_Update_Links.py
+  - name: 13_Validate_Stack
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/13_Validate_Stack.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/13_Validate_Stack.py
+  - name: 14_Morning_Standup
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/14_Morning_Standup.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/14_Morning_Standup.py
+  - name: 15_Weekly_Review
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/15_Weekly_Review.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/15_Weekly_Review.py
+  - name: 16_Clean_System
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/16_Clean_System.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/16_Clean_System.py
+  - name: 17_Ritual_Dominical
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/17_Ritual_Dominical.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/17_Ritual_Dominical.py
+  - name: 18_Generacion_Contenido
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/18_Generacion_Contenido.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/18_Generacion_Contenido.py
+  - name: 19_Generate_Progress
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/19_Generate_Progress.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/19_Generate_Progress.py
+  - name: 20_Master_Analytics_Factory
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/20_Master_Analytics_Factory.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/20_Master_Analytics_Factory.py
+  - name: 21_Skill_Script_Mapper
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/21_Skill_Script_Mapper.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/21_Skill_Script_Mapper.py
+  - name: 22_AIPM_Trace_Logger
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/22_AIPM_Trace_Logger.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/22_AIPM_Trace_Logger.py
+  - name: 23_AIPM_Evaluator
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/23_AIPM_Evaluator.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/23_AIPM_Evaluator.py
+  - name: 24_AIPM_Interview_Sim
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/24_AIPM_Interview_Sim.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/24_AIPM_Interview_Sim.py
+  - name: 28_AIPM_Control_Center
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/28_AIPM_Control_Center.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/28_AIPM_Control_Center.py
+  - name: 30_AIPM_Consolidated_Report
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/30_AIPM_Consolidated_Report.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/30_AIPM_Consolidated_Report.py
+  - name: 31_Silicon_Valley_Auditor
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/31_Silicon_Valley_Auditor.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/31_Silicon_Valley_Auditor.py
+  - name: 32_Multi_Agent_Final_Validation
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/32_Multi_Agent_Final_Validation.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/32_Multi_Agent_Final_Validation.py
+  - name: 33_Parallel_Audit_Pro
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/33_Parallel_Audit_Pro.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/33_Parallel_Audit_Pro.py
+  - name: 34_Skill_Auditor
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/34_Skill_Auditor.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/34_Skill_Auditor.py
+  - name: 35_Beautify_Tables
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/35_Beautify_Tables.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/35_Beautify_Tables.py
+  - name: 36_Beauty_Doc
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/36_Beauty_Doc.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/36_Beauty_Doc.py
+  - name: 37_Linter_Autofix
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/37_Linter_Autofix.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/37_Linter_Autofix.py
+  - name: 38_Recap_Planning
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/38_Recap_Planning.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/38_Recap_Planning.py
+  - name: 39_Repair_Corruption
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/39_Repair_Corruption.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/39_Repair_Corruption.py
+  - name: 40_Validate_Rules
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/40_Validate_Rules.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/40_Validate_Rules.py
+  - name: 43_Marketing_Skills_Distributor
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/43_Marketing_Skills_Distributor.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/43_Marketing_Skills_Distributor.py
+  - name: 44_Auto_Compound_Intelligence
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/44_Auto_Compound_Intelligence.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/44_Auto_Compound_Intelligence.py
+  - name: 45_Migration_Master
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/45_Migration_Master.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/45_Migration_Master.py
+  - name: 46_Sync_MCP_OpenCode
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/46_Sync_MCP_OpenCode.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/46_Sync_MCP_OpenCode.py
+  - name: 47_Verify_OpenCode_Status
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/47_Verify_OpenCode_Status.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/47_Verify_OpenCode_Status.py
+  - name: 48_Design_Critique_Expert
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/48_Design_Critique_Expert.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/48_Design_Critique_Expert.py
+  - name: 49_Path_Optimization
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/49_Path_Optimization.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/49_Path_Optimization.py
+  - name: 50_DEBUG
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/50_DEBUG.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/50_DEBUG.py
+  - name: 50_DEBUG2
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/50_DEBUG2.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/50_DEBUG2.py
+  - name: 50_System_Health_Monitor
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/50_System_Health_Monitor.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/50_System_Health_Monitor.py
+  - name: 51_Commit_Lint_Guard
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/51_Commit_Lint_Guard.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/51_Commit_Lint_Guard.py
+  - name: 52_Safe_Commit
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/52_Safe_Commit.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/52_Safe_Commit.py
+  - name: 53_Structure_Auditor
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/53_Structure_Auditor.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/53_Structure_Auditor.py
+  - name: 54_Commit_Guard
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/54_Commit_Guard.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/54_Commit_Guard.py
+  - name: 55_Sync_Skills
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/55_Sync_Skills.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/55_Sync_Skills.py
+  - name: 56_Organize_Solutions
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/56_Organize_Solutions.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/56_Organize_Solutions.py
+  - name: 57_Repo_Sync_Auditor
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/57_Repo_Sync_Auditor.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/57_Repo_Sync_Auditor.py
+  - name: 58_Batch_Beautify_README
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/58_Batch_Beautify_README.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/58_Batch_Beautify_README.py
+  - name: 59_Task_Classifier
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/59_Task_Classifier.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/59_Task_Classifier.py
   - name: 60_Fast_Vision
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/14_Otros/60_Fast_Vision.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Otros/60_Fast_Vision.py
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/60_Fast_Vision.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/60_Fast_Vision.py
   - name: 61_MCP_Health_Check
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/14_Otros/61_MCP_Health_Check.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Otros/61_MCP_Health_Check.py
-  - name: 63_Skill_Harmonizer
-    path: 01_Personal_Os/04_Operations/03_Scripts_Os/14_Otros/63_Skill_Harmonizer.py
-    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/14_Otros/63_Skill_Harmonizer.py
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/61_MCP_Health_Check.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/61_MCP_Health_Check.py
+  - name: 63_Audit_Sync_Master
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/63_Audit_Sync_Master.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/63_Audit_Sync_Master.py
+  - name: 64_Campanilla
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/64_Campanilla.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/64_Campanilla.py
+  - name: 65_CTX_Generator
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/65_CTX_Generator.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/65_CTX_Generator.py
+  - name: 66_Alert_Manager
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/66_Alert_Manager.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/66_Alert_Manager.py
+  - name: 67_Retry_Decorator
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/67_Retry_Decorator.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/67_Retry_Decorator.py
+  - name: 68_Benchmark_Baseline
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/68_Benchmark_Baseline.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/68_Benchmark_Baseline.py
+  - name: 69_Health_Check_Pro
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/69_Health_Check_Pro.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/69_Health_Check_Pro.py
+  - name: 70_Ship_It
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/70_Ship_It.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/70_Ship_It.py
+  - name: 72_Validate_Skills_Duplicates
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/72_Validate_Skills_Duplicates.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/72_Validate_Skills_Duplicates.py
+  - name: 73_Avengers_Workflow
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/73_Avengers_Workflow.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/73_Avengers_Workflow.py
+  - name: 73_Avengers_Workflow_v3
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/73_Avengers_Workflow_v3.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/73_Avengers_Workflow_v3.py
+  - name: 74_MCP_Top_Tests
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/74_MCP_Top_Tests.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/74_MCP_Top_Tests.py
+  - name: 75_Update_QMD_Index
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/75_Update_QMD_Index.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/75_Update_QMD_Index.py
+  - name: 76_Obsidian_Exporter
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/76_Obsidian_Exporter.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/76_Obsidian_Exporter.py
+  - name: 77_Notify_System
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/77_Notify_System.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/77_Notify_System.py
+  - name: 78_Context_Switcher
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/78_Context_Switcher.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/78_Context_Switcher.py
+  - name: 79_System_Guardian
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/79_System_Guardian.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/79_System_Guardian.py
+  - name: 80_Edge_Case_Validator
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/80_Edge_Case_Validator.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/80_Edge_Case_Validator.py
+  - name: 81_RTM_Generator
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/81_RTM_Generator.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/81_RTM_Generator.py
+  - name: 82_Health_Monitor
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/82_Health_Monitor.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/82_Health_Monitor.py
+  - name: 83_Skill_Script_Mapper
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/83_Skill_Script_Mapper.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/83_Skill_Script_Mapper.py
+  - name: 84_Batch_Parser
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/84_Batch_Parser.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/84_Batch_Parser.py
+  - name: 85_Resumen_Extractor
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/85_Resumen_Extractor.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/85_Resumen_Extractor.py
+  - name: 86_Universal_Parser
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/86_Universal_Parser.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/86_Universal_Parser.py
+  - name: 87_Iron_Man_Gen
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/87_Iron_Man_Gen.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/87_Iron_Man_Gen.py
+  - name: 88_Frontend_Premium
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/88_Frontend_Premium.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/88_Frontend_Premium.py
+  - name: 89_Redaccion_de_Docs
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/89_Redaccion_de_Docs.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/89_Redaccion_de_Docs.py
+  - name: 90_Deep_Work_Session
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/90_Deep_Work_Session.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/90_Deep_Work_Session.py
+  - name: 95_Documentation_Updater
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/95_Documentation_Updater.py
+    command: python 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/95_Documentation_Updater.py

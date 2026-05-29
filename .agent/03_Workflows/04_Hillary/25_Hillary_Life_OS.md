@@ -2,8 +2,8 @@
 
 > **Agente Responsable:** @13_hillary
 > **Trigger:** `/hillary`, "life os", "personal productivity"  
-> **Versión:** 1.0.0 — 2026-04-02  
-> **Skills:** `18_Personal_Life_OS` (5 skills)
+> **Versión:** 1.1.0 — 2026-05-29  
+> **Skills:** `00_Personal_Os/01_Life_OS/18_Personal_Life_OS` (5 skills)
 
 ---
 
@@ -33,7 +33,7 @@ Usuario → Detectar intención → Skill correcto → Ejecutar → Capturar res
 
 ```
 1. DETECTAR intención (tabla arriba)
-2. CARGAR skill: 01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/01_Life_OS/18_Personal_Life_OS/{skill}/SKILL.md
+2. CARGAR skill: 01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/01_Life_OS/18_Personal_Life_OS/{skill}/SKILL.md
 3. EJECUTAR según instrucciones del skill
 4. GUARDAR resultado en destino apropiado
 5. NOTIFICAR via notification.py si corresponde

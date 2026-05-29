@@ -221,10 +221,18 @@ def scan_agents():
     source_dir = PROJECT_ROOT / "01_Personal_Os/01_Core/02_Tools/01_Agents"
     backup_dir = PROJECT_ROOT / ".agent/01_Agents"
 
+    # Non-agent files to exclude from count (READMEs, LEEMEs, SKILLs, support files)
+    NON_AGENT_FILES = {"README.md", "LEEME.md", "SKILL.md", "registry.md"}
+    NON_AGENT_DIRS = {"references"}  # subdirectories that are support/docs only
+
     source_agents = []
     if source_dir.exists():
         for f in source_dir.rglob("*.md"):
             if any(p in EXCLUDE_DIRS for p in f.parts):
+                continue
+            if any(p in NON_AGENT_DIRS for p in f.parts):
+                continue
+            if f.name in NON_AGENT_FILES:
                 continue
             source_agents.append(str(f.relative_to(source_dir)).replace("\\", "/"))
 
@@ -232,6 +240,10 @@ def scan_agents():
     if backup_dir.exists():
         for f in backup_dir.rglob("*.md"):
             if any(p in EXCLUDE_DIRS for p in f.parts):
+                continue
+            if any(p in NON_AGENT_DIRS for p in f.parts):
+                continue
+            if f.name in NON_AGENT_FILES:
                 continue
             backup_agents.append(str(f.relative_to(backup_dir)).replace("\\", "/"))
 
