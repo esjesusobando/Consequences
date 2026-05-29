@@ -1,40 +1,46 @@
 # 05_Plantillas
 
-> Plantillas reutilizables para generación de contenido.
-
-**Ubicación:** `.agent/01_Agents/05_Plantillas/`
+> Plantillas reutilizables para generación de contenido por los agentes de marketing.
 
 ## Contenido
 
-Plantillas para:
-- Posts (LinkedIn, Twitter, Instagram)
-- Emails
-- Artículos de blog
-- Guiones de video
-- Miniaturas
-- Descripciones
+Plantillas estructuradas por canal que los agentes usan para producir contenido consistente:
+
+| Carpeta | Canal | Agente responsable |
+|---------|-------|--------------------|
+| `01_Posts/` | LinkedIn, Twitter, Instagram | Marketing Creador (`16_`) |
+| `02_Emails/` | Newsletter, Outreach | Marketing Creador (`16_`) |
+| `03_Blog/` | Artículos largos | Marketing Creador (`16_`) |
+| `04_Video/` | YouTube, Shorts | Marketing Creador (`16_`) |
+| `05_Miniaturas/` | Thumbnail prompts | Marketing Creador (`16_`) |
+
+## Agentes que lo usan
+
+| Agente | Cómo usa las plantillas |
+|--------|------------------------|
+| `15_Marketing_Estratega.md` | Referencia al generar briefs (sabe qué formatos existen) |
+| `16_Marketing_Creador.md` | Usa la plantilla exacta del formato solicitado |
+| `17_Marketing_Analista.md` | Evalúa si el formato se usó correctamente |
 
 ## Estructura Recomendada
 
 ```
 05_Plantillas/
+├── LEEME.md
 ├── 01_Posts/
 │   ├── linkedin.md
-│   ├── twitter.md
-│   └── instagram.md
+│   └── linkedin-carrusel.md
 ├── 02_Emails/
 │   ├── newsletter.md
 │   └── outreach.md
-├── 03_Blog/
-│   └── articulo.md
 ├── 04_Video/
-│   ├── youtube.md
-│   └── shorts.md
+│   ├── youtube-script.md
+│   └── youtube-shorts.md
 └── 05_Miniaturas/
-    └── thumbnail_prompt.md
+    └── thumbnail-brief.md
 ```
 
 ---
 
-*Parte del sistema Marketing Agents v1.0*
-*Homologado a Core: 01_Core/04_Agents/*
+*Marketing Agents v1.0 — PersonalOS v4.9 Consequences*
+*Integrado con Core: 01_Core/02_Tools/01_Agents/*

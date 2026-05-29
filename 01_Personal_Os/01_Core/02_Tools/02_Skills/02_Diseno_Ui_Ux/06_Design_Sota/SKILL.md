@@ -18,9 +18,57 @@ version: 1.1.0
 
 Fusiona el **minimalismo utilitario premium** (paleta crema, serif editorial, pasteles desaturados) con el **diseño de alto agency** (asimetría, Geist, acentos funcional). El resultado: interfaces que se leen como publicaciones, no como paneles SaaS genéricos.
 
+Esta skill integra la metodología **Frontend Design** de Anthropic (Prithvi Rajasekaran & Alexander Bricken) — el framework de "Design Thinking" que antecede a cualquier implementación. La sección 0 es la incorporación directa de esa metodología; el resto es implementación SOTA concreta.
+
+---
+
+## 0. DESIGN THINKING (Anthropic Frontend Design — Official Skill)
+
+> *Antes de escribir UNA línea de código, comprometerte con una DIRECCIÓN ESTÉTICA CLARA.*
+
+### 0.1 Context Research
+Antes de codificar, entender el contexto:
+
+- **Purpose**: ¿Qué problema resuelve esta interfaz? ¿Quién la usa?
+- **Tone**: Elegir un extremo. Brutalmente minimalista, caos maximalista, retro-futurista, orgánico/natural, lujo/refinado, lúdico/juguete, editorial/revista, brutalista/crudo, art deco/geométrico, suave/pastel, industrial/utilitario. Hay muchísimos sabores. Usarlos como inspiración, pero diseñar UNO que sea fiel a la dirección estética.
+- **Constraints**: Requerimientos técnicos (framework, performance, accesibilidad).
+- **Differentiation**: ¿Qué hace esto INOLVIDABLE? ¿Qué es lo único que alguien va a recordar?
+
+**CRÍTICO**: Elegir una dirección conceptual clara y ejecutarla con precisión. Tanto el maximalismo audaz como el minimalismo refinado funcionan — la clave es la **intencionalidad**, no la intensidad.
+
+### 0.2 Aesthetic Guidelines
+
+| Dimensión | Qué hacer | Qué evitar |
+|-----------|-----------|------------|
+| **Tipografía** | Fuentes hermosas, únicas, con carácter. Combinar una display font distintiva con una body font refinada. | Arial, Inter, Roboto, system-ui genérico |
+| **Color** | Paleta cohesiva con CSS variables. Colores dominantes con acentos precisos. | Paletas tímidas y parejas, degradados púrpura sobre blanco |
+| **Motion** | Animaciones para momentos de alto impacto: staggered reveals, hover states que sorprenden. Priorizar CSS-only. | Micro-interacciones dispersas sin cohesión |
+| **Composición espacial** | Layouts inesperados. Asimetría. Overlap. Flujo diagonal. Elementos que rompen la grilla. | Cuadrícula simétrica predecible |
+| **Backgrounds** | Atmósfera y profundidad: gradient meshes, noise textures, geometric patterns, layered transparencias, grain overlays. | Fondo blanco sólido por defecto |
+
+### 0.3 Anti-AI-Slop Checklist
+
+NUNCA usar:
+- ❌ Fonts sobre-usadas: Inter, Roboto, Arial, system fonts
+- ❌ Paletas cliché: degradados púrpura sobre fondos blancos
+- ❌ Layouts predecibles y patrones genéricos de componentes
+- ❌ Diseño "cookie-cutter" sin carácter contextual
+- ❌ Converger siempre a las mismas elecciones (p. ej. Space Grotesk)
+
+**Cada diseño debe ser diferente**. Variar entre temas claros y oscuros, diferentes fuentes, diferentes estéticas. **No converger a opciones comunes.**
+
+### 0.4 Complexity Matching
+
+> La complejidad de la implementación debe coincidir con la visión estética.
+
+- **Maximalista**: Código elaborado con múltiples animaciones y efectos. Cada detalle cuenta.
+- **Minimalista/Refinado**: Contención, precisión, atención obsesiva al spacing, tipografía, detalles sutiles. La elegancia está en ejecutar la visión bien.
+
+---
+
 ## Esencia Original
 
-Esta skill no es un theme de Tailwind ni un design system — es una **filosofía de interfaz** que nace de la observación de cómo Stripe, Linear y Vercel rompieron el molde del SaaS genérico. En lugar de cards flotantes y gradientes púrpura, la belleza está en la jerarquía tipográfica editorial, los hairline borders de 1px y los espacios que respiran. Una interfaz no necesita decoración cuando tiene estructura.
+Esta skill no es un theme de Tailwind ni un design system — es una **filosofía de interfaz** que nace de la observación de cómo Stripe, Linear y Vercel rompieron el molde del SaaS genérico. Incorpora la metodología de **Design Thinking** del Frontend Design Skill oficial de Anthropic (Prithvi Rajasekaran & Alexander Bricken, anthropics/claude-code). En lugar de cards flotantes y gradientes púrpura, la belleza está en la jerarquía tipográfica editorial, los hairline borders de 1px y los espacios que respiran. Una interfaz no necesita decoración cuando tiene estructura.
 
 ---
 
@@ -373,7 +421,110 @@ useEffect(() => {
 
 ---
 
-*Skill Version: 1.1.0*
+## 11. EVALUATION CHECKLIST — ¿Tu sitio vale $10K?
+
+Usar este checklist para **gradear** cualquier diseño contra estándares premium. Pasarlo completo ANTES de dar por terminado.
+
+### GRUPO TASTE (primer impacto visual)
+
+| # | Criterio | Qué evaluar | Pass/Fail |
+|---|----------|-------------|-----------|
+| 1 | **Point of View** | El brief es específico, no genérico. Hay una dirección clara que se siente en cada sección. | ☐ |
+| 2 | **Typography** | Sin Inter/Roboto/Open Sans. Usa Geist/Outfit/Satoshi + serif editorial para jerarquía. | ☐ |
+| 3 | **Color** | Máximo 5 hex. Sin rainbow. Acento funcional en <5% de la pantalla. | ☐ |
+
+### GRUPO SUBSTANCE (contenido y estructura)
+
+| # | Criterio | Qué evaluar | Pass/Fail |
+|---|----------|-------------|-----------|
+| 4 | **Hierarchy** | 3 tamaños que guían el ojo (qué leer 1ro, 2do, 3ro). Nada es del mismo tamaño. | ☐ |
+| 5 | **Imagery** | Assets custom (foto real, AI generado, gráfico). Sin stock photos genéricas. | ☐ |
+| 6 | **Motion** | Micro-interacciones que se sienten vivas. Scroll reveals, cursor effects sutiles. | ☐ |
+
+### GRUPO FELT QUALITY (la diferencia real)
+
+| # | Criterio | Qué evaluar | Pass/Fail |
+|---|----------|-------------|-----------|
+| 7 | **Mobile** | Diseñado para mobile, no encogido. Navegación colapsada, espaciado ajustado, botones táctiles. | ☐ |
+| 8 | **Invisible Stuff** | Velocidad de carga, transiciones suaves, sin layout shift, sin horizontal scroll. | ☐ |
+
+### Cómo usar el checklist
+
+```prompt
+Paste this checklist into Claude and ask:
+"Where does this site land against each of these criteria? Be honest."
+```
+
+Claude devuelve un diagnóstico sección por sección: qué está fuerte, qué está mixto, qué falta. Los items 7 y 8 son los más importantes — son los que realmente separan un sitio premium de uno genérico.
+
+---
+
+## 12. ITERATION WORKFLOW — De "está bien" a "se siente caro"
+
+### Principio rector: Intención > Especificación
+
+Nunca le digas a Claude qué cambiar. Decile **cómo querés que se sienta**.
+
+| ❌ Especificación | ✅ Intención |
+|------------------|-------------|
+| "Cambiá el margin de la card a 24px" | "Las cards se sienten apretadas, necesitan más respiro" |
+| "Agregá un gradient en el hero" | "El hero se siente plano, necesita más profundidad" |
+| "Usá este color #991B1B" | "El acento rojo está gritando, hace falta algo más sutil" |
+
+### Paso 1: Batch Fixes por intent (no one-at-a-time)
+
+En lugar de pedir cambios de uno en uno, agruparlos por INTENT:
+
+```prompt
+We need more handcrafted micro interactions.
+The lower sections feel a bit generic.
+We don't need to make them busier, just more expensive.
+Propose a batch of fixes.
+```
+
+Claude devuelve 3-5 cambios juntos (ej: film grain, animated hairlines, glow effects, word reveals). Aprobás todo de una. Menos ida y vuelta, más cohesión.
+
+### Paso 2: Una micro-interacción por sección plana
+
+Después del batch, revisar sección por sección. Las que todavía se sienten planas → pedir **UNA** interacción sutil:
+
+```prompt
+[Section name] is feeling very static.
+Add some elegant micro movements and cursor interactions here.
+Make it more subtle, more refined.
+```
+
+### Paso 3: Refinar con "make it more subtle"
+
+El primer intento de Claude siempre es DEMASIADO obvio. Siempre hacer una segunda pasada:
+
+```prompt
+Make it more subtle, more refined.
+```
+
+Esto aplica trailing motion, easing, delays — el tipo de refinamiento que separa un efecto "de AI" de uno "de estudio de diseño".
+
+### Patrón completo de iteración
+
+```
+1. GRADE → pasar checklist de 8 items, pedir diagnóstico honesto
+2. BATCH → agrupar fixes por intent, pedir 3-5 cambios juntos
+3. MICRO → una interacción de cursor por sección que sigue plana
+4. SUBTLE → "make it more subtle" hasta que se sienta vivo sin ser ruidoso
+5. REGRADE → volver al checklist para confirmar que subió
+```
+
+---
+
+*Skill Version: 2.0.0 — Integración Frontend Design (Anthropic)*
+
+---
+
+## 13. FUENTES Y REFERENCIAS
+
+- **Frontend Design Skill (Anthropic)**: `anthropics/claude-code/plugins/frontend-design/skills/frontend-design/SKILL.md` — Autores: Prithvi Rajasekaran & Alexander Bricken. Design Thinking framework (sección 0) extraído e integrado con permiso conceptual.
+- **Iteration Workflow y $10K Checklist**: Desarrollo propio basado en principios de Stripe/Linear/Vercel y práctica de diseño editorial.
+- **Design Variance Sliders**: Metodología propia para comunicación rápida de dirección de diseño.
 
 ---
 
