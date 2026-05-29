@@ -291,7 +291,7 @@ For complex tasks, delegate to workflow files in `01_Personal_Os/01_Core/00_Work
 
 ---
 
-## 3. EVERY/COMPOUND ENGINEERING
+## 3. COMPOUND ENGINEERING
 
 ### Philosophy
 _"Each unit of engineering work should make subsequent units easier—not harder."_

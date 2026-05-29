@@ -95,6 +95,11 @@
 │
 ├── 05_Claude_Ads/             📢 Claude Ads (20 items)
 │
+├── 11_Laia_Learning/          🧠 Context Engineering & Onboarding (1.0)
+│   ├── 01_Context_Canonical/  Templates canónicos
+│   ├── 02_Prompts/            System prompts (Hermes, Códex, Gauss)
+│   └── 03_Workflows/          Pipeline laia-init
+│
 ├── 11_Doc_Processing/         📚 Docs
 ├── 13_System_Master/          🏆 System Master
 ├── 16_Silicon_Valley_Data_Analyst/ 📊 Analytics
@@ -124,6 +129,7 @@
 | Personal OS (Hillary, Life OS)                                 | `00_Personal_Os/`                                           |
 | Invictus Web                                                   | `07_Invictus_Web/`                                          |
 | Claude Ads                                                     | `05_Claude_Ads/`                                            |
+| Context Engineering & Onboarding (Laia Learning)                | `11_Laia_Learning/`                                               |
 
 ---
 

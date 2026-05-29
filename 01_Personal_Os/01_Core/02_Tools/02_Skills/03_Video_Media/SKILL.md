@@ -19,9 +19,11 @@ Video no es un formato más en el stack — es el que más contexto retiene y el
 
 ## Sub-áreas y Contenido
 
-| Sub-área         | Descripción          |
-|-----------------|---------------------|
-| `01_Video_Intel/`| Inteligencia de video|
+| Sub-área              | Descripción                       |
+|----------------------|----------------------------------|
+| `01_Video_Intel/`     | Inteligencia de video             |
+| `02_James_Cameron/`   | Filosofía de preproducción extrema|
+| `03_Production/`      | Post-producción, edición, render  |
 
 ## Integración
 

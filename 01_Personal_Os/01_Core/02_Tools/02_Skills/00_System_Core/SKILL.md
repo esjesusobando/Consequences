@@ -16,10 +16,11 @@ El núcleo del sistema, diseñado para una autonomía extrema mediante flujos de
 
 | #                                    | Skill                                               | Descripción                                                             |
 |-------------------------------------|----------------------------------------------------|------------------------------------------------------------------------|
-| 01                                   | Personal OS                                         | Sistema principal de productividad                                      |
-| 02                                   | SDD Workflow                                        | Metodología de desarrollo estructurado                                  |
-| 03                                   | System Guardian                                     | Validación automática                                                   |
-| 04                                   | Backlog Processing                                  | Flujo completo de backlog                                               |
+| 01                                   | SDD Workflow                                        | Metodología de desarrollo estructurado                                  |
+| 02                                   | System Guardian                                     | Validación automática                                                   |
+| 03                                   | Backlog Processing                                  | Flujo completo de backlog                                               |
+| 04                                   | Personal OS                                         | Sistema principal de productividad                                      |
+| 05                                   | [Endpoint Logic]                                    | Lógica de endpoints y routing del OS                                    |
 
 ## ⚠️ Gotchas
 

@@ -166,7 +166,7 @@ Think_Different/                           # RAÍZ
 ├── 00_Winter_is_Coming/          ✅ MATRIX: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD 💾)
-│   │   ├── 00_Workflows_Os/     ✅ 30 workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/     ✅ 28 workflows (7 categorías)
 │   │   ├── 01_Rules/            ✅ 13 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/            ✅ Todas las herramientas
 │   │       ├── 01_Agents/       ✅ 58 agentes (6 áreas: Dream Team, Specialists, Growth, Contexto, Marca, Plantillas)
@@ -215,7 +215,7 @@ Think_Different/                           # RAÍZ
 | Marca (5)                                   | `01_Core/02_Tools/01_Agents/05_Marca/`                                           |
 | Plantillas (20+)                            | `01_Core/02_Tools/01_Agents/06_Plantillas/`                                      |
 
-> ⚠️ Source: 58 agentes (6 áreas). Backup .agent/01_Agents/: 61 agentes (añade `07_Agent_Teams_Lite_Gen`). Skills drift: 394 vs .agent (734) — copy-not-cut de migración v3.1, no afecta runtime.
+> ⚠️ Source: 58 agentes (6 áreas). Backup .agent/ puede diferir en conteo — es esperado por ser un snapshot histórico, no afecta runtime.
 
 ### 3. SKILLS (394 — 12 áreas funcionales)
 
@@ -293,8 +293,8 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 | Manifest (7 archivos)             | ✅ VALIDATED                | 00_Manifest/ en 02_Agent_Teams_Lite/                           |
 | MCPs (7+38 Claude / 36 OpenCode)  | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                             |
 | Rules (13 .mdc)                   | ✅ DEFINED                  | 01_Rules/                                                      |
-| Workflows (30)                    | ✅ ACTIVE                   | 7 categorías en 00_Workflows_Os                                |
-| Hooks (12, 6 fases)               | ✅ ACTIVE                   | 05_Hooks/                                                      |
+| Workflows (28)                    | ✅ ACTIVE                   | 7 categorías en 00_Workflows_Os                                |
+| Hooks (13, 6 fases)               | ✅ ACTIVE                   | 05_Hooks/                                                      |
 | Agent Teams Protocol              | ✅ ACTIVE                   | Super Campeones                                                |
 
 ---

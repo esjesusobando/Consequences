@@ -29,6 +29,20 @@
 
 ---
 
+## 4.2.0 - 2026-05-28
+
+### Fixed — Massive Structural Audit + Count Corrections
+
+- **CLAUDE.md**: Corregidos workflows 30→28, hooks 12→13, sync counts con disco
+- **GOALS.md**: Eliminada sección 13 duplicada (What are your top 3 priorities)
+- **AGENTS.md**: Corregido typo "EVERY/COMPOUND ENGINEERING" → "COMPOUND ENGINEERING"
+- **MAPA_MIGRACION.md**: Marcado como documento histórico (plan v3.1 no ejecutado)
+- **00_System_Core/SKILL.md**: Actualizado listing de skills incluidas
+- **03_Video_Media/SKILL.md**: Agregadas sub-areas faltantes (James Cameron, Production)
+- **CHANGELOG.md**: Esta entrada
+
+---
+
 ## 4.0.0 - 2026-05-10
 
 ### Added — Production Ready v4.0

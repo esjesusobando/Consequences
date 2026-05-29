@@ -1,6 +1,8 @@
 # MAPA DE MIGRACIÓN: Carpeta Original → Destino
 
-> Mapeo exacto de cada carpeta de skills hacia su nueva área funcional.
+> ⚠️ **DOCUMENTO HISTÓRICO** — La migración descrita aquí fue planificada para v3.1 pero NUNCA se ejecutó como está mapeada. La migración real se hizo directo a `00_Personal_Os/01_Core/02_Tools/02_Skills/` con una estructura de 13 áreas funcionales. Este documento se mantiene como referencia histórica del plan original.
+
+> Mapeo histórico (plan original v3.1 — no ejecutado).
 
 ---
 

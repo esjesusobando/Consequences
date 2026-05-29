@@ -11,7 +11,7 @@ _Last updated: May 25, 2026_
 | #      | Objetivo                                  | Estado    | Evidencia                                                     |
 |-------|------------------------------------------|----------|--------------------------------------------------------------|
 | 1      | **Portfolio CV deployado**                | ✅         | https://portfolio-eta-sand-13.vercel.app                      |
-| 2      | **PersonalOS auditado**                   | ✅         | 284 scripts, 394 skills, 48 agents, 7+38 MCPs, 30 workflows   |
+| 2      | **PersonalOS auditado**                   | ✅         | 284 scripts, 394 skills, 48 agents, 7+38 MCPs, 28 workflows   |
 | 3      | **Genesis workflow corregido**            | ✅         | Rutas actualizadas a 01_Context_Memory/, etc                  |
 | 4      | **Script 83 duplicado resuelto**          | ✅         | Renombrado a 86_Universal_Parser.py                           |
 | 5      | **Portfolio nested git eliminado**        | ✅         | Ahora es regular folder                                       |
@@ -112,7 +112,7 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 
 ### Strategic Context
 
-- **Current State:** Think_Different PersonalOS está plenamente operativo — 4 carpetas raíz, 21+2 HUBs + 284 scripts, 48 agents, 30 workflows, 394 skills, 7+38 MCPs. La infraestructura está lista.
+- **Current State:** Think_Different PersonalOS está plenamente operativo — 4 carpetas raíz, 21+2 HUBs + 284 scripts, 48 agents, 28 workflows, 394 skills, 7+38 MCPs. La infraestructura está lista.
 - **Current Blocker:** Transitioning from *building the system* to *using the system*. El riesgo es continuar optimizando el OS en lugar de enviar trabajo real con él.
 - **Opportunities:** Estudiar y aprender de las mejores referencias en IA y Diseño. Conectar con comunidades especializadas. Aplicar learnings inmediatamente a proyectos reales. Compartir el proceso públicamente para construir reputación.
 - **Competitive Advantages:** Visión híbrida entre diseño y tecnología. Capacidad de traducir complejidad técnica en experiencias simples. Enfoque sistemático para construir contexto para IA. Ventaja de primero en movimiento en flujo de trabajo de diseño nativo para IA.
@@ -152,7 +152,7 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 ### Core Stack (Active — Daily Use)
 
 - **AI Development:** Claude Code, Cursor (entorno primario)
-- **PersonalOS:** Think_Different — 284 scripts, 394 skills, 48 agents, 30 workflows, MCPs
+- **PersonalOS:** Think_Different — 284 scripts, 394 skills, 48 agents, 28 workflows, MCPs
 - **Diseño:** Figma, Sketch
 - **Productividad:** Notion, Obsidian
 - **Desarrollo:** VS Code, GitHub
@@ -291,7 +291,7 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 
 ---
 
-## 13. What are your top 3 priorities right now?
+## 15. What are your top 3 priorities right now?
 
 1. Activar Think_Different PersonalOS en el flujo de trabajo diario.
 2. Empujar el sistema a GitHub (`think-different` repo privado).
