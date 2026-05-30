@@ -77,3 +77,9 @@ Se movieron los JSON sueltos de la raíz de `03_Resultado/` hacia `03_Resultado/
 - `04_debt_scan_active_refs_2026-05-26.json`
 
 Principio aplicado: mover y complementar sin eliminar evidencia histórica.
+
+### Actualización 2026-05-29 — Post-auditoría docs
+
+- `04_Documentacion/` renombrado a `05_Documentacion/` para resolver conflicto numérico con `04_Reportes/`
+- `05_JAO/` eliminado (directorio vacío)
+- `README.md` creado en raíz de `03_Resultado/`
