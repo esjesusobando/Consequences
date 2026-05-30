@@ -260,11 +260,11 @@ This skill is working if it can:
 
 ## 📚 Related Resources
 
-- [Test Suite Documentation](../../../05_Examples/tests/01_README.md)
-- [Quick Start Guide](../../../05_Examples/tests/QUICK_START.md)
-- [Results Tracker](../../../05_Examples/tests/RESULTS.md)
-- [Skills Checklist](../../../03_Knowledge/04_Docs/tests/04_Docs/SKILLS_TEST_CHECKLIST.md)
-- [System Validation](../../../03_Knowledge/04_Docs/reports/system/SYSTEM_VALIDATION.md)
+- Test Suite Documentation (examples — path pendiente de migración)
+- Quick Start Guide (examples — path pendiente de migración)
+- Results Tracker (examples — path pendiente de migración)
+- Skills Checklist (knowledge — path pendiente de migración)
+- System Validation (knowledge — path pendiente de migración)
 
 ---
 
