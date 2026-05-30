@@ -309,3 +309,37 @@ Auditar TODO el proyecto Think_Different sin eliminar info: paths legacy 08_Scri
 - HUB_CATALOG.md body tiene conteos históricos divergentes (no crítica, documentación no-funcional)
 - Planes en `03_Resultado/00_Proyectos/01_Planes/` tienen refs legacy — preservados intencionalmente
 - 31 refs `13_Auditors_Os` restantes en backups/archivos históricos — NO TOCAR
+
+---
+
+## Sesión: 2026-05-30 — Auditoría Cross-Ref + Path Fixes (v4.9 Consolidation)
+
+### Cambios Realizados
+
+#### 1. Cross-Ref Audit (Paths Rotos Post-Renumeración)
+- **Detectados**: 22+ referencias rotas en archivos activos del sistema
+  - `04_Documentacion/` → `05_Documentacion/`: README.md, Structure_v4.8.md, COMPLETION_SUMMARY.md (×2)
+  - `01_Anthropic/` → `09_Anthropic/`: OS_Conductor (×3), Skill_Auditor (×1)
+  - `06_Ui_Ux_Pro_Max` → `07_Ui_Ux_Pro_Max`: TOP_20_SKILLS.md
+  - `../../tools/` (directorio inexistente): 4 skills Marketing Tech
+  - `../../../05_Examples/` y `../../../03_Knowledge/` (inexistentes): 2 files Testing Automation
+  - `../../skills/compound-docs/` → `07_Skills/compound-docs/`: 4 files Learnings-Researcher
+- **Commits**: ea48b92b7 + e7b908620 = 16 archivos fixeados
+
+#### 2. Correción Drift Workflows Backup vs Source
+- **Problema**: `.agent/03_Workflows/` tenía 32 archivos vs 28 en source
+- **Archivos stale**: `00_Genesis_Workflow.md`, `11_AGENTS.md`, `__Youtube_Full_Video.md`, `99_Youtube_Full_Video.md`
+- **Fix**: Eliminados los 4 archivos huérfanos del backup
+- **Commit**: 62031174f
+
+#### 3. Fix Estructura 03_Resultado
+- **Problema**: Conflicto numérico — `04_Documentacion/` y `04_Reportes/` coexistían
+- **Fix**: Renombrado `04_Documentacion/` → `05_Documentacion/`, creado README.md raíz en 03_Resultado
+- **Commit**: dca740e06
+
+### Hallazgos
+- `tools/` solo existe en archive backup (`05_Archive/00_Backup_Os/.../marketingskills-main/tools/`) — nunca migrado al árbol activo
+- `05_Examples/` nunca existió como directorio real — referencias fantasmas en Testing Automation
+- `03_Knowledge/` dentro de `02_Skills/` no existe (el real es `03_Video_Media/`)
+- Los 4 archivos extra en backup workflows eran stale/post-migración sin limpiar
+- Paths absolutos Windows en `.atl/skill-registry.md` son paths de instalación reales — NO TOCAR
