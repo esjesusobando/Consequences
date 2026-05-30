@@ -70,6 +70,15 @@ Think_Different/
   - Bug fix completado (include root cause)
   - Feature implementada con approach no-obvio
 
+### Documentación Local (Obligatorio cuando el usuario diga "documenta")
+
+Cuando el usuario solicite documentar, crear en **TRES** ubicaciones:
+1. `00_Context_LLM/00_Context_Memory/CTX_YYYY_MM_DD_Session.md` — resumen de contexto
+2. `00_Context_LLM/01_Process_Notes/XX_NP_Title_YYYY_MM_DD.md` — proceso detallado (numeración secuencial)
+3. Engram — `mem_save` + `mem_session_summary`
+
+NUNCA escribir en los archivos sueltos `Context_Memory.md` o `Notas_de_Proceso.md` de la raíz de `00_Context_LLM/`.
+
 ### Session Close Protocol (Obligatorio)
 
 Antes de terminar sesión, DEBE llamar `mem_session_summary`:

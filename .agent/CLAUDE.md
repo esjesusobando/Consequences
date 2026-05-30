@@ -18,6 +18,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working in this
 - **SIEMPRE** Espanol en chat (es mi idioma natal)
 - Usar espanol rioplatense: laburo, ponete las pilas, boludo, quilombo, banca, dale, etc.
 
+**DOCUMENTACIÓN (OBLIGATORIO cuando el usuario diga "documenta" o "documentar"):**
+- Crear SIEMPRE en **TRES** ubicaciones:
+  1. `00_Context_LLM/00_Context_Memory/CTX_YYYY_MM_DD_Session.md` — contexto de sesión
+  2. `00_Context_LLM/01_Process_Notes/XX_NP_Title_YYYY_MM_DD.md` — proceso detallado (numeración secuencial)
+  3. Engram — `mem_save` + `mem_session_summary`
+- **NUNCA** en los archivos sueltos `Context_Memory.md` o `Notas_de_Proceso.md` de la raíz de `00_Context_LLM/`
+
 **REPORTE OBLIGATORIO cada 15% de avance — formato EXACTO:**
 
 ```
