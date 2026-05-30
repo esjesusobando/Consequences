@@ -67,7 +67,7 @@ Reorganizado en 4 áreas funcionales (3 principales + 1 de reportes):
 - sota_integrity_*.txt
 - watchdog_report_*.txt
 
-#### 📄 04_Documentacion/ - Documentation suelta
+#### 📄 05_Documentacion/ - Documentation suelta
 - Design.md
 - Pattern_Intelligence_Results.md
 - README.md
@@ -123,7 +123,7 @@ Reorganizado en 4 áreas funcionales (3 principales + 1 de reportes):
 - 03_Resultado/01_Aprendizaje/ — recursos de aprendizaje organizados
 - 03_Resultado/02_Experimentos/ — experimentos organizados
 - 03_Resultado/03_Reportes/ — informes organizados
-- 03_Resultado/04_Documentacion/ — documentación suelta organizada
+- 03_Resultado/05_Documentacion/ — documentación suelta organizada
 - 03_Resultado/ORGANIZACION_SUMMARY.md — documento de organización
 
 ## ✅ CONFIRMACIÓN DE ESTADO FINAL

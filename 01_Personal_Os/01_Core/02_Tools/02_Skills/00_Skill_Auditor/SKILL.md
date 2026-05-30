@@ -200,7 +200,7 @@ Reportes de auditoría se guardan en:
 
 ## 🔄 Anthropic Find-and-Fix Loop Integration
 
-> **Source:** Anthropic Security Find-and-Fix Loop (May 27, 2026) — [Knowledge Base](../../../../02_Knowledge/01_Anthropic/01_Security_Find_Fix_Loop.md)
+> **Source:** Anthropic Security Find-and-Fix Loop (May 27, 2026) — [Knowledge Base](../../../../02_Knowledge/09_Anthropic/01_Security_Find_Fix_Loop.md)
 
 The Skill Auditor now incorporates Anthropic's 6-step find-and-fix methodology to transform audits from static checks into a complete discovery→verification→patching pipeline.
 

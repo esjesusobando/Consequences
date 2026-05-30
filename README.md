@@ -81,7 +81,8 @@ Think_Different/                           # RAÍZ
 │   ├── 01_Aprendizaje/          # Skills output, fundamentos, referencias
 │   ├── 02_Experimentos/         # World OIM, ejercicios, sesiones
 │   ├── 03_Reportes/             # Auditorías y reportes
-│   └── 04_Documentacion/        # Documentación general
+│   ├── 04_Reportes/              # Reportes operativos
+│   ├── 05_Documentacion/        # Documentación general
 ├── .agent/                      ✅ BACKUP ESTRATÉGICO
 ├── .atl/                        ✅ SDD Registry + openspec/
 ├── .claude/                     ✅ Config Claude Code

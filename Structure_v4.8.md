@@ -420,7 +420,8 @@ Think_Different/                    # RAÍZ
 ├── 09_World_OIM/                # ⚠️ DUPLICADO — Misma data que 02_Experimentos/00_World_OIM/
 │   └── 01_OIM_Website_v2/
 ├── 03_Reportes/                # Reportes y auditorías
-├── 04_Documentacion/           # Documentación general
+├── 04_Reportes/               # Reportes operativos
+├── 05_Documentacion/           # Documentación general
 ├── 00_Think_Different.code-workspace
 └── ORGANIZACION_SUMMARY.md     # Documento de reorganización
 

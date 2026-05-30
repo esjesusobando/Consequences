@@ -384,7 +384,7 @@
 ---
 
 ### 🏅 #5 — Ui Ux Pro Max
-**UI/UX con Base de Datos Consultable** — `02_Diseno_Ui_Ux/06_Ui_Ux_Pro_Max/`
+**UI/UX con Base de Datos Consultable** — `02_Diseno_Ui_Ux/07_Ui_Ux_Pro_Max/`
 
 | Dimensión | Score | Justificación |
 |-----------|-------|---------------|
