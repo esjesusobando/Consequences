@@ -169,7 +169,7 @@ Think_Different/                           # RAÍZ
 │   │   ├── 00_Workflows_Os/     ✅ 28 workflows (7 categorías)
 │   │   ├── 01_Rules/            ✅ 13 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/            ✅ Todas las herramientas
-│   │       ├── 01_Agents/       ✅ 58 agentes (6 áreas: Dream Team, Specialists, Growth, Contexto, Marca, Plantillas)
+│   │       ├── 01_Agents/       ✅ 55 agentes (2 Root + 5 Dream + 23 Specialists + 5 Growth + 20 Individuales)
 │   │       ├── 02_Skills/         ✅ 385 skills (14 áreas funcionales)
 │   │       ├── 03_Mcp/         ✅ Backup configs MCP
 │   │       ├── 04_Integrations/ ✅ Fireflies, Granola
@@ -184,7 +184,7 @@ Think_Different/                           # RAÍZ
 │   │   ├── 00_Context_LLM/      ✅ Memoria, notas, knowledge brain
 │   │   ├── 01_Auto_Improvement/ ✅ Motor auto-mejora
 │   │   ├── 02_Agent_Teams_Lite/ ✅ SDD registry + 7 JARVIS manifests
-│   │   ├── 03_Scripts_Os/       ✅ 31 HUBs/scripts raíz + 169 scripts total (14 directorios: 00-13)
+│   │   ├── 03_Scripts_Os/       ✅ 20 HUBs + 256 scripts total
 │   │   ├── 04_Installer/        ✅ Instalador del OS
 │   │   ├── 05_Projects/         ✅ Proyectos activos
 │   │   ├── 06_SOTA_Features/    ✅ Features estado-del-arte
@@ -203,40 +203,40 @@ Think_Different/                           # RAÍZ
 └── README.md                    ✅ Documentación principal
 ```
 
-### 2. AGENTS (58 — 6 áreas funcionales — 2026-05-27)
+### 2. AGENTS (55 — 5 áreas funcionales — 2026-05-29)
 
 | Categoría                                   | Ubicación                                                                        |
 |--------------------------------------------|---------------------------------------------------------------------------------|
+| Root (2)                                    | `01_Core/02_Tools/01_Agents/` (00_Orchestrator, 00_Agent_Template)               |
 | Dream Team (5)                              | `01_Core/02_Tools/01_Agents/01_Dream_Team/`                                      |
 | Specialists Compound (23)                   | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                            |
-| Individuales (13)                           | `01_Core/02_Tools/01_Agents/`                                                    |
 | Growth (5)                                  | `01_Core/02_Tools/01_Agents/03_Growth/`                                          |
-| Contexto (7)                                | `01_Core/02_Tools/01_Agents/04_Contexto/`                                        |
-| Marca (5)                                   | `01_Core/02_Tools/01_Agents/05_Marca/`                                           |
-| Plantillas (20+)                            | `01_Core/02_Tools/01_Agents/06_Plantillas/`                                      |
+| Individuales (20)                           | `01_Core/02_Tools/01_Agents/` (01-20)                                            |
 
-> ⚠️ Source: 58 agentes (6 áreas). Backup .agent/ puede diferir en conteo — es esperado por ser un snapshot histórico, no afecta runtime.
+> ⚠️ Source: 55 agentes (5 áreas). Backup .agent/ puede diferir en conteo — es esperado por ser un snapshot histórico, no afecta runtime.
 
-### 3. SKILLS (394 — 14 áreas funcionales)
+### 3. SKILLS (385 — 14 áreas funcionales)
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
 | Área                                             | Carpeta                     | Descripción                                                   |
 |-------------------------------------------------|----------------------------|--------------------------------------------------------------|
+| 00_Agent_Teams_Lite                              | 00_Agent_Teams_Lite/        | SDD sub-agentes + JARVIS manifests                            |
 | 00_Compound_Engineering                          | 00_Compound_Engineering/    | Core CE — SDD + Compound Engineering                          |
+| 00_Personal_Os                                   | 00_Personal_Os/             | Life OS, Hillary, Rituales                                    |
+| 00_Skill_Auditor                                 | 00_Skill_Auditor/           | Auditoría de skills                                           |
 | 00_System_Core                                   | 00_System_Core/             | Stack base del OS                                             |
-| 10_Skill_Auditor                                 | 10_Skill_Auditor/           | Auditoría de skills                                           |
-| 01_Creacion_Contenidos                           | 01_Creacion_Contenidos/     | Brand, YouTube, SEO, Carruseles                               |
+| 00_Workflows                                     | 00_Workflows/               | Workflows OS                                                  |
+| 01_Creacion_Contenidos                           | 01_Creacion_Contenidos/     | Brand, YouTube, SEO, Marketing — 16 sub-áreas                 |
 | 02_Diseno_Ui_Ux                                  | 02_Diseno_Ui_Ux/            | Product Design, UI/UX, Taste, Minimal                         |
 | 03_Video_Media                                   | 03_Video_Media/             | Video Intel, James Cameron                                    |
 | 04_Automatizacion                                | 04_Automatizacion/          | N8N, Firecrawl, GWS Client                                    |
-| 05_Workflows                                     | 05_Workflows/               | Agent Teams, PM, Orchestrator                                 |
+| 05_Claude_Ads                                    | 05_Claude_Ads/              | Claude Ads & Promoted Content                                 |
 | 06_Tools                                         | 06_Tools/                   | Skill Creator, Testing, DevOps, Data                          |
-| 07_Personal_Os                                   | 07_Personal_Os/             | Life OS, Hillary, Rituales                                    |
-| 08_Invictus_Web                                  | 08_Invictus_Web/            | Playwright, Superpowers, Browser Auto                         |
-| 09_Claude_Ads                                    | 09_Claude_Ads/              | Ads, Evals, Agents, Assets, Research                          |
+| 07_Invictus_Web                                  | 07_Invictus_Web/            | Playwright, Superpowers, Browser Auto                         |
+| 10_Laia_Learning                                 | 10_Laia_Learning/           | Sistema de aprendizaje personal                               |
 
-> ⚠️ Audit 2026-05-23: 14 áreas activas, 385 skills verificados
+> ⚠️ Audit 2026-05-29: 14 áreas activas, 385 skills verificados contra disco
 
 ### 4. JARVIS 4.5 — MANIFEST SYSTEM
 
@@ -244,11 +244,11 @@ Think_Different/                           # RAÍZ
 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 ├── 01_OS_Inventory.json      # Inventario OS (updated 2026-05-22)
 ├── 02_MCP_Registry.yaml     # 36 MCPs (+1 Higgfield remote)
-├── 03_Agent_Catalog.yaml    # 46 agentes
-├── 04_Skill_Index.json      # 385 skills en 14 áreas (updated 2026-05-23)
-├── 05_HUB_Catalog.yaml     # 31 scripts raíz + 169 total
-├── 06_Workflow_Graph.yaml   # 30 workflows
-└── 07_Hook_Registry.yaml    # 6 categorías de hooks
+├── 03_Agent_Catalog.yaml    # 55 agentes
+├── 04_Skill_Index.json      # 385 skills en 14 áreas (updated 2026-05-29)
+├── 05_HUB_Catalog.yaml     # 20 HUBs + 256 scripts
+├── 06_Workflow_Graph.yaml   # 28 workflows
+└── 07_Hook_Registry.yaml    # 10 hooks (6 categorías)
 ```
 
 ---
@@ -281,20 +281,20 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 
 ---
 
-## 📊 ESTADO DEL SISTEMA (v4.9 — 2026-05-25)
+## 📊 ESTADO DEL SISTEMA (v4.9 — 2026-05-29)
 
 | Categoria                         | Estado                     | Notas                                                          |
 |----------------------------------|---------------------------|---------------------------------------------------------------|
-| **Overall Health**                | **✅ PURE GREEN**           | v4.9 — 2026-05-25 — Judgment Day v3 DONE                       |
+| **Overall Health**                | **✅ PURE GREEN**           | v4.9 — 2026-05-29 — Docs audit DONE                            |
 | Estructura (4 raíz)               | ✅ PASS                     | Winter / Personal_Os / Playground / Resultado                  |
-| HUBs (31 scripts raíz + 14 dirs)  | ✅ PASS                     | 31 HUBs/scripts + 169 scripts total (81 active + 88 legacy)   |
-| Skills (394, 14 áreas)            | ✅ VERIFIED                 | 14 áreas funcionales — audit 2026-05-25                        |
-| Agent Matrix                      | ✅ SYNCED                   | 58 agentes (6 áreas: Dream Team, Specialists, Growth, Contexto, Marca, Plantillas) |
+| HUBs (20 + 256 scripts)           | ✅ PASS                     | 20 HUBs (19 numerados + HUB_SOTA)                              |
+| Skills (385, 14 áreas)            | ✅ VERIFIED                 | 14 áreas funcionales — audit 2026-05-29                        |
+| Agent Matrix                      | ✅ SYNCED                   | 55 agentes (5 áreas: Root, Dream Team, Specialists, Growth, Individuales) |
 | Manifest (7 archivos)             | ✅ VALIDATED                | 00_Manifest/ en 02_Agent_Teams_Lite/                           |
 | MCPs (7+38 Claude / 36 OpenCode)  | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                             |
 | Rules (13 .mdc)                   | ✅ DEFINED                  | 01_Rules/                                                      |
 | Workflows (28)                    | ✅ ACTIVE                   | 7 categorías en 00_Workflows_Os                                |
-| Hooks (13, 6 fases)               | ✅ ACTIVE                   | 05_Hooks/                                                      |
+| Hooks (10, 6 fases)               | ✅ ACTIVE                   | 05_Hooks/                                                      |
 | Agent Teams Protocol              | ✅ ACTIVE                   | Super Campeones                                                |
 
 ---

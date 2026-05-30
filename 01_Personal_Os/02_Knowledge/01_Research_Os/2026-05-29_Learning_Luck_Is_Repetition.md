@@ -110,7 +110,7 @@ El OS eligió estratégicamente **14 áreas funcionales** en lugar de intentar c
 El motor de auto-mejora recursiva del OS (detector → analyzer → executor → learner) es la encarnación técnica de "fallar, aprender, repetir". Cada fix no busca la perfección — busca **acumular ciclos de mejora**.
 
 ### 5.5 La Ley del Volumen → Los HUBs y Scripts
-Los 24 HUBs con 284 scripts no aparecieron de golpe. Fueron **10 → 100 → 1000 → 10000** líneas de código acumuladas. Cada HUB fue un intento que se volvió competencia, luego talento, luego maestría del sistema.
+Los 20 HUBs con 256 scripts no aparecieron de golpe. Fueron **10 → 100 → 1000 → 10000** líneas de código acumuladas. Cada HUB fue un intento que se volvió competencia, luego talento, luego maestría del sistema.
 
 ### 5.6 Conexión Directa con Compound Engineering
 La filosofía CE del OS dice: *"Each unit of engineering work should make subsequent units easier—not harder."* Esto es exactamente volumen que se acumula como competencia. Cada skill instalada, cada script escrito, cada workflow documentado — es una repetición que acerca al dominio del sistema.

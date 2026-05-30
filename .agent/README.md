@@ -123,7 +123,7 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 - **Rules:** See `01_Personal_Os/01_Core/01_Rules/` for active rules (13 .mdc)
 - **Skills:** See `01_Personal_Os/01_Core/02_Tools/02_Skills/` for canonical skills (385); `.agent/02_Skills/` preserves backup skills
 - **CLAUDE.md:** See `./CLAUDE.md` for agent instructions
-- **Scripts:** See `01_Personal_Os/04_Operations/03_Scripts_Os/` for 284 scripts (21+2 HUBs total: 19 raíz + 9 aux)
+- **Scripts:** See `01_Personal_Os/04_Operations/03_Scripts_Os/` for 256 scripts (20 HUBs: 19 numerados + HUB_SOTA)
 - **Manifests:** See `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/` for JARVIS 3.1
 
 ---
@@ -155,4 +155,4 @@ gr --apply      # Apply fixes
 
 ---
 
-*Última actualización: 2026-05-29 | PersonalOS v4.9 Consequences — SOTA Consolidation | 14 áreas funcionales | 385 active + ~490 legacy skills | 13 rules | 284 scripts ✅*
+*Última actualización: 2026-05-29 | PersonalOS v4.9 Consequences — SOTA Consolidation | 14 áreas funcionales | 385 active + ~490 legacy skills | 13 rules | 256 scripts ✅*

@@ -17,15 +17,15 @@
 ├── 01_Inventario_Total.md       ← Inventario completo del OS
 ├── 02_Dream_Team.md             ← Estructura del equipo
 ├── Requirements.txt              ← Dependencias Python
-├── 00_Workflows_Os/            ← 30 workflows (7 categorías)
+├── 00_Workflows_Os/            ← 28 workflows (7 categorías)
 ├── 01_Rules/                   ← 13 archivos .mdc (00-12)
 └── 02_Tools/
     ├── README.md
-    ├── 01_Agents/             ← 48 agents (Dream + Specialists + Individuales + Growth)
+    ├── 01_Agents/             ← 55 agents (Dream + Specialists + Individuales + Growth)
     ├── 02_Skills/             ← 385 skills (14 áreas activas)
     ├── 03_Mcp/                ← MCP servers (backup de config)
     ├── 04_Integrations/       ← Fireflies, Granola
-    ├── 05_Hooks/              ← 12 hooks (6 fases)
+    ├── 05_Hooks/              ← 10 hooks (6 fases)
     ├── 06_Plugins/            ← Plugins del OS
     ├── 07_Server/             ← Engram server
     ├── 08_Evals/              ← Evaluaciones
@@ -34,7 +34,7 @@
 
 ---
 
-## WORKFLOWS — 30 archivos en 7 categorías
+## WORKFLOWS — 28 archivos en 7 categorías
 
 ### 00_Learning_Always — Continuous Learning
 
@@ -115,16 +115,17 @@
 
 ## TOOLS — ESTRUCTURA
 
-### 01_Agents (48 agents) ✅
+### 01_Agents (55 agents) ✅
 
 | Categoría               | Agents   | Detalles                                                                                                                                          |
 |------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Orchestrator**        | 1        | `00_Orchestrator.md`                                                                                                                              |
+| **Agent Template**      | 1        | `00_Agent_Template.md`                                                                                                                            |
 | **Scope Architect**     | 1        | `01_Scope_Rule_Architect.md`                                                                                                                      |
 | **Dream Team**          | 5        | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform)                                                                                     |
 | **Specialists Compound**| 23       | `02_Specialists_Compound/` (review, architecture, framework, data, quality, security, research)                                                   |
 | **Growth**              | 5        | `03_Growth/` (Content Transformer, YouTube Script/Thumbnail/Title, Carousel)                                                                      |
-| **Individuales**        | 13       | Orchestrator, Scope, TDD, React Test, React Mentor, Security, Git, Accessibility, PRD, Design SOP, AIPM Judge, Workflow Orchestrator, LFG, Hillary|
+| **Individuales**        | 19       | TDD, React, Security, Git, Accessibility, PRD, Workflow Orchestrator, AIPM Judge, LFG, Hillary, Laia, Marketing, Workflow Youtube/LinkedIn/Newsletter|
 
 ---
 
@@ -136,16 +137,18 @@
 |-----------------------|--------|--------------------------------------------|
 | 00_Compound_Engineering| 63      | Core CE — SDD + Reviews                     |
 | 00_System_Core         | 1       | Stack base del OS + Gcierr                  |
-| 10_Skill_Auditor       | 4       | Auditoría de skills                         |
-| 01_Creacion_Contenidos | 38      | Brand, YouTube, SEO, Carruseles             |
-| 02_Diseno_Ui_Ux        | 23      | Product Design, UI/UX, Taste, Minimal       |
-| 03_Video_Media         | 6       | Video Intel, James Cameron                  |
-| 04_Automatizacion      | 21      | N8N, Firecrawl, GWS Client                  |
-| 05_Workflows           | 33      | Agent Teams, PM, Orchestrator               |
-| 06_Tools               | 93      | Skill Creator, Testing, DevOps, Data Analyst|
-| 07_Personal_Os         | 29      | Life OS, Hillary, Rituales                  |
-| 08_Invictus_Web        | 14      | Playwright, Superpowers, Browser Automation |
-| 09_Claude_Ads          | 20      | Claude Ads & Promoted Content               |
+| 00_Workflows           | 43      | Workflows OS                                |
+| 00_Agent_Teams_Lite    | 13      | SDD sub-agentes + JARVIS manifests          |
+| 00_Personal_Os         | 32      | Life OS, Hillary, Rituales                  |
+| 00_Skill_Auditor       | 1       | Auditoría de skills                         |
+| 01_Creacion_Contenidos | 47      | Brand, YouTube, SEO, Carruseles             |
+| 02_Diseno_Ui_Ux        | 34      | Product Design, UI/UX, Taste, Minimal       |
+| 03_Video_Media         | 7       | Video Intel, James Cameron                  |
+| 04_Automatizacion      | 24      | N8N, Firecrawl, GWS Client                  |
+| 05_Claude_Ads          | 21      | Claude Ads & Promoted Content               |
+| 06_Tools               | 83      | Skill Creator, Testing, DevOps, Data Analyst|
+| 07_Invictus_Web        | 15      | Playwright, Superpowers, Browser Automation |
+| 10_Laia_Learning       | 1       | Sistema de aprendizaje personal             |
 
 ---
 
@@ -167,7 +170,7 @@
 
 ---
 
-### 05_Hooks — 12 hooks (6 fases)
+### 05_Hooks — 10 hooks (6 fases)
 
 | Fase     | Hooks  |
 |---------|-------|
@@ -228,17 +231,17 @@
 
 | Componente            | Cantidad  | Delta vs v3.1  |
 |----------------------|----------|---------------|
-| Workflows Totales     | 30        | +3             |
+| Workflows Totales     | 28        | +1             |
 | Rules (.mdc)          | 13        | +1 (11_Minimax)|
-| Agents                | 48        | -6             |
+| Agents                | 55        | +1             |
 | Agents Dream Team     | 5         | =              |
 | Agents Specialists    | 23        | =              |
-| Skills (áreas activas)| 12        | +1             |
-| Skills (count total)  | 394       | +95            |
+| Skills (áreas activas)| 14        | +3             |
+| Skills (count total)  | 385       | +86            |
 | MCPs Claude Code      | 36        | +1             |
-| HUBs Scripts          | 19        | -4             |
+| HUBs Scripts          | 20        | -3             |
 | JARVIS Manifests      | 7         | =              |
-| Hooks                 | 12        | NEW            |
+| Hooks                 | 10        | NEW            |
 
 ---
 
@@ -260,5 +263,5 @@ Al iniciar sesión, la IA ejecuta EXACTAMENTE:
 
 ---
 
-*PersonalOS v4.9 Consequences — PURE GREEN | 2026-05-23*
-*Skills: 394 | Agents: 48 | MCPs: 7+38 | HUBs: 21+2 | Workflows: 30*
+*PersonalOS v4.9 Consequences — PURE GREEN | 2026-05-29*
+*Skills: 385 | Agents: 55 | MCPs: 7+38 | HUBs: 20 | Workflows: 28*

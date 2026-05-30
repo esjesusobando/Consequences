@@ -1,4 +1,4 @@
-# Workspace Structure — Think Different v4.8 Consequences
+# Workspace Structure — Think Different v4.9 Consequences
 
 > **4 carpetas raíz con propósito claro — estructura limpia post-migración 2026-05-22**
 
@@ -61,7 +61,7 @@ Think_Different/
 │   │   └── 05_Plans/
 │   ├── 01_Auto_Improvement/         # Motor auto-mejora
 │   ├── 02_Agent_Teams_Lite/         # SDD registry
-│   ├── 03_Scripts_Os/               # 21+2 HUBs + 284 scripts
+│   ├── 03_Scripts_Os/               # 20 HUBs + 256 scripts
 │   ├── 04_Installer/                # Instalación
 │   └── 05_Projects/                 # Proyectos activos
 │
@@ -90,7 +90,7 @@ Think_Different/
 |-------------------------------|----------------------------------------------------------------|
 | **Fuente de Verdad Skills**   | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                   |
 | **Rules (13 .mdc)**           | `01_Personal_Os/01_Core/01_Rules/`                             |
-| **Scripts (21+2 HUBs + 284 scripts)** | `01_Personal_Os/04_Operations/03_Scripts_Os/`                  |
+| **Scripts (20 HUBs + 256 scripts)** | `01_Personal_Os/04_Operations/03_Scripts_Os/`                  |
 | **Workflows**                 | `01_Personal_Os/01_Core/00_Workflows_Os/`                      |
 | **Agents**                    | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                   |
 | **MCPs**                      | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`                      |
@@ -127,4 +127,4 @@ Think_Different/
 
 ---
 
-*Generado: 2026-05-22 | PersonalOS v4.8 Consequences — 4 carpetas raíz*
+*Generado: 2026-05-22 | PersonalOS v4.9 Consequences — 4 carpetas raíz*

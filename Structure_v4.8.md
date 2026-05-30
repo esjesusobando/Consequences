@@ -35,10 +35,10 @@ Think_Different/                    # RAÍZ
 ```
 01_Personal_Os/
 ├── 01_Core/                       # MOTOR DEL OS
-│   ├── 00_Workflows_Os/          # 30 workflows (7 categorías)
+│   ├── 00_Workflows_Os/          # 28 workflows (7 categorías)
 │   ├── 01_Rules/                 # 13 reglas .mdc
 │   └── 02_Tools/                 # Herramientas del OS
-│   ├── 01_Agents/            # 48 agentes
+│   ├── 01_Agents/            # 55 agentes
 │       ├── 02_Skills/           # 385 skills (14 áreas)
 │       ├── 03_Mcp/              # Backup MCP configs
 │       ├── 04_Integrations/     # Fireflies, Granola
@@ -53,7 +53,7 @@ Think_Different/                    # RAÍZ
 │   ├── 00_Context_LLM/          # Memoria LLM
 │   ├── 01_Auto_Improvement/     # Motor auto-mejora
 │   ├── 02_Agent_Teams_Lite/     # SDD + 7 JARVIS manifests
-│   ├── 03_Scripts_Os/          # 21 HUBs (00-18, 15a/b, 16a/b) + HUB_SOTA + 284 scripts
+│   ├── 03_Scripts_Os/          # 20 HUBs (numerados 00-20 + HUB_SOTA) + 256 scripts
 │   ├── 04_Installer/           # Scripts de instalación
 │   ├── 05_Projects/             # Proyectos activos
 │   │   └── 01_Projects_Lab/    # Lab de proyectos (9 proyectos)
@@ -66,7 +66,7 @@ Think_Different/                    # RAÍZ
 
 ## 📂 01_Core — Motor del OS
 
-### 00_Workflows_Os — Workflows (30 workflows, 7 categorías)
+### 00_Workflows_Os — Workflows (28 workflows, 7 categorías)
 
 | Categoría                      | Workflows                                                                                                                                      | Propósito                            |
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
@@ -102,7 +102,7 @@ Think_Different/                    # RAÍZ
 
 | #    | Herramienta          | Cantidad                                                    | Propósito                          |
 |-----|---------------------|------------------------------------------------------------|-----------------------------------|
-| 01   | **01_Agents**        | 48 (5 Dream + 23 Specialists + 13 Indiv + 5 Growth + 2 Root)| Orquestación multi-agente          |
+| 01   | **01_Agents**        | 55 (2 Root + 5 Dream + 23 Specialists + 5 Growth + 20 Individuales)| Orquestación multi-agente          |
 | 02   | **02_Skills**        | 385 activos + ~490 legacy                                   | 14 áreas funcionales (00-10)         |
 | 03   | **03_Mcp**           | —                                                           | Backup configs MCP                 |
 | 04   | **04_Integrations**  | —                                                           | Fireflies, Granola                 |
@@ -125,7 +125,7 @@ Think_Different/                    # RAÍZ
 | 06        | Plantillas                               | Subdirectorio    | 0 agentes (LEEME)    |
 | 07–13     | Individuales (Accessibility → Hillary)   | Root             | 7 archivos           |
 | 14–19     | Specialist Individuales (Git → TDD)      | Root             | 6 archivos           |
-|           | **TOTAL**                                |                  | **48 agentes**       |
+|           | **TOTAL**                  |                  | **55 agentes**       |
 
 **Skills por Área (v4.9 — auditada contra disco):**
 
@@ -458,12 +458,12 @@ Think_Different/                    # RAÍZ
 |---------------------------------|--------------------------------------------------------------|--------|
 | Skills (activas)                 | 385 en 14 áreas funcionales                                   | ✅       |
 | Skills (legacy)                  | ~490 en 24 categorías archivadas (00_Skills_Legacy)           | 💾       |
-| Agentes                          | 48 (source) / 82 (con SDD/CE) / 13 agent-files root           | ✅       |
+| Agentes                          | 55 (source) / 82 (con SDD/CE) / 20 agent-files root           | ✅       |
 | Rules                            | 13 .mdc (00–12) + README + RULES_INDEX.md + .Backup/          | ✅       |
 | MCPs                             | 7 servidores root + 38 backup en 03_Mcp/                      | ✅       |
-| HUBs                             | 21 (00–18, 15a/b, 16a/b) + HUB_SOTA + HUB_CATALOG             | ✅       |
-| Scripts                          | 284 (283 .py + 1 .js)                                         | ✅       |
-| Workflows                        | 30 en 7 categorías                                            | ✅       |
+| HUBs                             | 20 (00-20) + HUB_SOTA                                       | ✅       |
+| Scripts                          | 256 (.py)                                                   | ✅       |
+| Workflows                        | 28 en 7 categorías                                            | ✅       |
 | Process Notes                    | 25 NP activas (colisiones 01 y 10) + _archive histórico       | ✅       |
 | SOTA Features                    | 5 módulos (ambient, contemplation, feedback, memory, voice)   | ✅       |
 | JARVIS Manifests                 | 7 manifests (OS_Inventory → Hook_Registry)                    | ✅       |
@@ -521,4 +521,4 @@ Al iniciar sesión, ejecutar EN ORDEN:
 
 *Versión: v4.9 Consequences*
 *Audit: 2026-05-29 (SOTA Consolidation)*
-*Skills: 385 active + ~490 legacy | Agents: 48 (source) / 82 (con SDD/CE) | Rules: 13 .mdc | MCPs: 7+38 | HUBs: 21+2 | Scripts: 284*
+*Skills: 385 active + ~490 legacy | Agents: 55 (source) / 82 (con SDD/CE) | Rules: 13 .mdc | MCPs: 7+38 | HUBs: 20 | Scripts: 256*

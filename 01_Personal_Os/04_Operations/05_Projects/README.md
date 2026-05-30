@@ -1,7 +1,7 @@
-# 07_Projects — Laboratorios y Proyectos
+# 05_Projects — Laboratorios y Proyectos
 
-**Versión:** 6.1
-**Última actualización:** 2026-04-14
+**Versión:** v4.9 Consequences
+**Última actualización:** 2026-05-29
 **Estado:** ✅ Activo
 
 ---

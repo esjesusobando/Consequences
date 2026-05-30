@@ -27,7 +27,7 @@ Think_Different/
 
 | #   | Carpeta              | Contenido                                     | Estado  |
 |----|---------------------|----------------------------------------------|--------|
-| 01  | `00_Workflows_Os/`   | 30 workflows (7 categorías)                   | ✅       |
+| 01  | `00_Workflows_Os/`   | 28 workflows (7 categorías)                   | ✅       |
 | 02  | `01_Rules/`          | 13 reglas .mdc (00-12)                        | ✅       |
 | 03  | `02_Tools/`          | Agents, Skills, MCPs, Hooks, Plugins, Evals   | ✅       |
 
@@ -37,11 +37,11 @@ Think_Different/
 
 | #   | Carpeta               | Contenido                        | Estado  |
 |----|----------------------|---------------------------------|--------|
-| 01  | `01_Agents/`          | 49 agents (Dream + Specialists + Growth + Marketing) | ✅       |
+| 01  | `01_Agents/`          | 55 agents (Dream + Specialists + Growth + Individuales) | ✅       |
 | 02  | `02_Skills/`          | 385 skills (14 áreas)            | ✅       |
 | 03  | `03_Mcp/`             | MCP servers (backup config)      | ✅       |
 | 04  | `04_Integrations/`    | Fireflies, Granola               | ✅       |
-| 05  | `05_Hooks/`           | 12 hooks (6 fases)               | ✅       |
+| 05  | `05_Hooks/`           | 10 hooks (6 fases)               | ✅       |
 | 06  | `06_Plugins/`         | Plugins OS                       | ✅       |
 | 07  | `07_Server/`          | Engram server                    | ✅       |
 | 08  | `08_Evals/`           | Evaluaciones                     | ✅       |
@@ -53,13 +53,13 @@ Think_Different/
 
 | Componente       | Cantidad  | Estado     |
 |-----------------|----------|-----------|
-| Workflows        | 30        | ✅ Activo   |
-| Rules (.mdc)     | 12        | ✅ Definido |
-| Agents           | 46        | ✅ Sync     |
+| Workflows        | 28        | ✅ Activo   |
+| Rules (.mdc)     | 13        | ✅ Definido |
+| Agents           | 55        | ✅ Sync     |
 | Skills           | 385       | ✅ 14 áreas funcionales |
 | MCPs             | 36        | ✅ Activo   |
-| HUBs             | 19        | ✅ Activo   |
-| Scripts totales  | 284       | ✅ Recursivo|
+| HUBs             | 20        | ✅ Activo   |
+| Scripts totales  | 256       | ✅ Recursivo|
 | JARVIS Manifests | 7         | ✅ Validado |
 | Hooks            | 10        | ✅ 6 fases  |
 

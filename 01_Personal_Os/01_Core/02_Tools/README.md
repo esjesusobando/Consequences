@@ -15,7 +15,7 @@ Contiene todas las herramientas del sistema PersonalOS: Agents, Skills, MCPs, Ho
 
 ```
 02_Tools/
-├── 01_Agents/           ✅ 49 agents (Dream Team + Specialists + Individuales + Growth + Marketing)
+├── 01_Agents/           ✅ 55 agents (2 Root + 5 Dream + 23 Specialists + 5 Growth + 20 Individuales)
 ├── 02_Skills/           ✅ 385 skills en 14 áreas funcionales
 ├── 03_Mcp/              ✅ Backup configs MCP (Claude + OpenCode)
 ├── 04_Integrations/      ✅ Fireflies, Granola

@@ -1,6 +1,6 @@
-# Backlog — Think Different PersonalOS v4.8
+# Backlog — Think Different PersonalOS v4.9
 
-*Última actualización: 2026-05-25*
+*Última actualización: 2026-05-29*
 
 ---
 

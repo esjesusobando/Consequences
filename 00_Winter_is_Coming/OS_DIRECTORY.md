@@ -1,6 +1,6 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.9 Consequences** | 2026-05-25
+**v4.9 Consequences** | 2026-05-29
 
 ---
 
@@ -11,28 +11,28 @@
 | MCPs Claude Code                    | **36**                                                        | ✅ SYNCED — drift 0                           |
 | Every CE                            | v3.8.4 (local repo)                                           | ✅ ACTIVE — Local version                     |
 | gentle-ai                           | v1.30.6                                                       | ✅ AVAILABLE                                  |
-| Skills                              | **394** (14 áreas funcionales)                                | ✅ VERIFIED — 0 sin frontmatter               |
-| Agentes                             | **46** (5 Dream + 23 Specialists + 13 individuales + 5 Growth)| ✅ SYNCED — 46↔46 drift 0                     |
-| HUBs                                | **19** scripts HUB (`*_Hub.py`) + 12 support                  | ✅ VERIFIED                                   |
-| Scripts totales                     | **284** (recursivo en 03_Scripts_Os/)                         | ✅ DOCUMENTED                                 |
-| Workflows                           | **30** (7 categorías en 00_Workflows_Os)                      | ✅ ACTIVE                                     |
+| Skills                              | **385** (14 áreas funcionales)                                | ✅ VERIFIED — 0 sin frontmatter               |
+| Agentes                             | **55** (2 Root + 5 Dream + 23 Specialists + 5 Growth + 20 Individuales)| ✅ SYNCED            |
+| HUBs                                | **20** scripts (`*_Hub.py` + HUB_SOTA)                        | ✅ VERIFIED                                   |
+| Scripts totales                     | **256** (recursivo en 03_Scripts_Os/)                         | ✅ DOCUMENTED                                 |
+| Workflows                           | **28** (7 categorías en 00_Workflows_Os)                      | ✅ ACTIVE                                     |
 | Hooks                               | **10** (6 fases)                                              | ✅ ACTIVE                                     |
-| Rules                               | **12 (.mdc)** en 01_Rules                                     | ✅ DEFINED                                    |
+| Rules                               | **13 (.mdc)** en 01_Rules                                     | ✅ DEFINED                                    |
 | JARVIS Manifests                    | 7 en 00_Manifest/                                             | ✅ VALIDATED                                  |
 | Open Design                         | 62 skills + 138 design systems                                | ✅ INTEGRATED                                 |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-23 — v4.7 Consequences
-> Agent Sync: 46↔46 drift 0. Skills: 394. MCPs: 36/36 sync.
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-29 — v4.9 Consequences
+> Skills: 385. HUBs: 20. Workflows: 28. Rules: 13.
 
 ---
 
-## 🆕 v4.5 Cambios desde v4.1
+## 🆕 v4.9 Changes
 
-1. **05_Archive reorganizado** — 15+ carpetas → 4 carpetas con subcarpetas numeradas
-2. **09b_World_OIM** — Sufijo `b` para evitar conflicto de numeración
-3. **02_Reports** — Corregida enumeración (era 01_Reports)
-4. **READMEs internos** — Creados en 01_Repos_Reference, 02_Legacy_Content, 03_Backups_Audits
-5. **Documentación unificada** — Todos los docs a v4.5
+1. **Skills auditadas**: 385 SKILL.md activas en 14 áreas funcionales
+2. **Agentes expandidos**: 55 agentes total (2 Root + 5 Dream + 23 Specialists + 5 Growth + 20 Individuales)
+3. **Workflows**: 28 activos en 7 categorías
+4. **Scripts**: 256 .py scripts totales
+5. **HUBs**: 19 numerados + HUB_SOTA = 20 total
 
 ---
 
@@ -72,18 +72,18 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/19_Agent_Sync_Hub.py
 
 ---
 
-## 🗂️ ESTRUCTURA COMPLETA v4.5
+## 🗂️ ESTRUCTURA COMPLETA v4.9
 
 ```
 Think_Different/
 ├── 00_Winter_is_Coming/          ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD)
-│   │   ├── 00_Workflows_Os/     ✅ 29 workflows (7 categorías)
-│   │   ├── 01_Rules/           ✅ 12 reglas .mdc
+│   │   ├── 00_Workflows_Os/     ✅ 28 workflows (7 categorías)
+│   │   ├── 01_Rules/           ✅ 13 reglas .mdc
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/         ✅ 46 agentes
-│   │       ├── 02_Skills/         ✅ 356 skills (14 áreas)
+│   │       ├── 01_Agents/         ✅ 55 agentes
+│   │       ├── 02_Skills/         ✅ 385 skills (14 áreas)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/          ✅ 10 hooks (6 fases)
@@ -97,7 +97,7 @@ Think_Different/
 │       ├── 00_Context_LLM/        ✅ Memoria LLM
 │       ├── 01_Auto_Improvement/  ✅ Auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests
-│       ├── 03_Scripts_Os/         ✅ 31 HUBs + scripts
+│       ├── 03_Scripts_Os/         ✅ 20 HUBs + scripts
 │       ├── 04_Installer/          ✅ Scripts de instalación
 │       ├── 05_Projects/          ✅ Proyectos activos
 │       └── 06_SOTA_Features/     ✅ Features SOTA
@@ -116,22 +116,24 @@ Think_Different/
 
 ---
 
-## 🧠 SKILLS — 12 ÁREAS FUNCIONALES (356 skills)
+## 🧠 SKILLS — 14 ÁREAS FUNCIONALES (385 skills)
 
 | Área                                         | Descripción                                               | Skills  |
 |---------------------------------------------|----------------------------------------------------------|--------|
+| 00_Agent_Teams_Lite                         | SDD sub-agentes + JARVIS manifests                        | 13      |
 | 00_Compound_Engineering                      | Core CE — SDD + Compound Engineering                      | 63      |
+| 00_Personal_Os                               | Life OS, Hillary, Rituales                                | 32      |
+| 00_Skill_Auditor                             | Auditoría de skills                                       | 1       |
 | 00_System_Core                               | Stack base OS + Gcierr                                    | 1       |
-| 10_Skill_Auditor                             | Auditoría de skills                                       | 4       |
-| 01_Creacion_Contenidos                       | Brand, YouTube, SEO, Carruseles                           | 38      |
-| 02_Diseno_Ui_Ux                              | Product Design, UI/UX, Taste, Minimal                     | 23      |
-| 03_Video_Media                               | Video Intel, James Cameron                                | 6       |
-| 04_Automatizacion                            | N8N, Firecrawl, GWS Client                                | 21      |
-| 05_Workflows                                 | Agent Teams, PM, Orchestrator                             | 33      |
-| 06_Tools                                     | Skill Creator, Testing, DevOps, Data                      | 93      |
-| 07_Personal_Os                               | Life OS, Hillary, Rituales                                | 29      |
-| 08_Invictus_Web                              | Playwright, Superpowers, Browser Auto                     | 14      |
-| 09_Claude_Ads                                | Claude Ads integration                                    | 20      |
+| 00_Workflows                                 | Workflows OS                                              | 43      |
+| 01_Creacion_Contenidos                       | Brand, YouTube, SEO, Marketing — 16 sub-áreas             | 47      |
+| 02_Diseno_Ui_Ux                              | Product Design, UI/UX, Taste, Minimal                     | 34      |
+| 03_Video_Media                               | Video Intel, James Cameron                                | 7       |
+| 04_Automatizacion                            | N8N, Firecrawl, GWS Client                                | 24      |
+| 05_Claude_Ads                                | Claude Ads & Promoted Content                             | 21      |
+| 06_Tools                                     | Skill Creator, Testing, DevOps, Data                      | 83      |
+| 07_Invictus_Web                              | Playwright, Superpowers, Browser Auto                     | 15      |
+| 10_Laia_Learning                             | Sistema de aprendizaje personal                           | 1       |
 
 ---
 
@@ -154,17 +156,19 @@ Think_Different/
 
 ---
 
-## ⚡ AGENTES — 46 CONFIGURADOS
+## ⚡ AGENTES — 55 CONFIGURADOS
 
 | Categoría                               | Cantidad                  | Ubicación                                                                    |
 |----------------------------------------|--------------------------|-----------------------------------------------------------------------------|
+| Root (Orchestrator + Template)          | 2                         | Raíz `01_Agents/` (00_Orchestrator, 00_Agent_Template)                      |
 | Dream Team                              | 5                         | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform)                |
-| Specialists Compound                    | 24+                       | `02_Specialists_Compound/`                                                   |
-| Individuales                            | 53+                       | Raíz `01_Agents/`                                                            |
+| Specialists Compound                    | 23                        | `02_Specialists_Compound/` (Architecture → Security)                        |
+| Growth                                  | 5                         | `03_Growth/` (Content Transformer → Carousel)                               |
+| Individuales                            | 20                        | Raíz `01_Agents/` (01-20: Scope, TDD → Newsletter)                         |
 
 ---
 
-## 🎯 HUBs — 31 SCRIPTS TOTALES (21 operativos + 10 auxiliary)
+## 🎯 HUBs — 20 SCRIPTS TOTALES (19 numerados + HUB_SOTA)
 
 ### HUBs Principales (en raíz de 03_Scripts_Os/)
 
@@ -189,20 +193,21 @@ Think_Different/
 | 18  | Telemetry ★                              | `18_Telemetry_Hub.py`                                          | Dashboard de métricas                                 |
 | 19  | Agent Sync                               | `19_Agent_Sync_Hub.py`                                         | Sync .agent ↔ 01_Core                                 |
 | 20  | System Mapper ★                          | `20_System_Mapper_Hub.py`                                      | Genera 7 manifests JARVIS                             |
-| 21  | Legacy Cleanup                           | `21_Legacy_Path_Cleanup.py`                                    | Limpia paths legacy v2.x                              |
-| 22  | Skill Frontmatter                        | `22_Validate_Skill_Frontmatter.py`                             | Detecta skills sin frontmatter YAML                   |
-| 23  | Path Replacement                         | `23_path_replacement.py`                                       | Reemplazo de paths en archivos                        |
-| 24  | Mass Path Migration                      | `24_mass_path_migration.py`                                    | Migración masiva de paths                             |
 | 25  | Minimax Optimizer                        | `25_Minimax_Optimizer_Hub.py`                                  | Optimización MiniMax                                  |
+| —   | HUB SOTA                                 | `HUB_SOTA.py`                                                  | HUB de HUBs SOTA                                      |
 
 ### Scripts Auxiliares
 
 | #   | Script                                           | Propósito                                                      |
 |----|-------------------------------------------------|---------------------------------------------------------------|
-| 26  | `26_Parallel_Audit_Pro.py`                       | Auditoría paralela avanzada                                    |
-| 27  | `27_Skill_Auditor.py`                            | Auditoría específica de skills                                 |
-| 28  | `28_System_Health_Monitor.py`                    | Monitor de salud del sistema                                   |
-| 29  | `29_Repo_Sync_Auditor.py`                        | Auditor de sincronización de repos                             |
+| 21  | `21_Legacy_Path_Cleanup.py`                     | Limpia paths legacy v2.x                                       |
+| 22  | `22_Validate_Skill_Frontmatter.py`              | Detecta skills sin frontmatter YAML                            |
+| 24  | `24_mass_path_migration.py`                     | Migración masiva de paths                                      |
+| 26  | `26_Parallel_Audit_Pro.py`                      | Auditoría paralela avanzada                                    |
+| 27  | `27_Skill_Auditor.py`                           | Auditoría específica de skills                                 |
+| 28  | `28_System_Health_Monitor.py`                   | Monitor de salud del sistema                                   |
+| 29  | `29_Repo_Sync_Auditor.py`                       | Auditor de sincronización de repos                             |
+| 30  | `30_path_replacement.py`                        | Reemplazo de paths en archivos                                 |
 
 > ★ = HUB canónico JARVIS 4.5
 
@@ -241,4 +246,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-05-23 | PersonalOS v4.7 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 385 skills | 46 agents | 36 MCPs*
+*Actualizado: 2026-05-29 | PersonalOS v4.9 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 385 skills | 55 agents | 20 HUBs | 28 workflows | 13 rules*

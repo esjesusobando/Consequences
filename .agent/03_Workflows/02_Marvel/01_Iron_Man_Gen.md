@@ -1,13 +1,13 @@
 ---
 name: genesis
-description: Workflow de inicio de sesión — carga reglas, memoria, notas de proceso y estado del PersonalOS v4.8 Consequences.
+description: Workflow de inicio de sesión — carga reglas, memoria, notas de proceso y estado del PersonalOS v4.9 Consequences.
 argument-hint: "[opcional: tarea específica del día o contexto a priorizar]"
 ---
 
-# 🧬 Workflow: Génesis (Iron Man Boot) — v4.8 Consequences
+# 🧬 Workflow: Génesis (Iron Man Boot) — v4.9 Consequences
 
-> **Versión del sistema:** v4.8 Consequences — Production Ready
-> **Fecha:** 2026-05-22
+> **Versión del sistema:** v4.9 Consequences — Production Ready
+> **Fecha:** 2026-05-29
 > **Estado:** 🟢 PURE GREEN — Auditoría Integral Reconciliada
 
 Ejecutar al inicio de CADA sesión. Sin contexto completo NO hay respuesta.
@@ -43,21 +43,21 @@ Antes de responder, leer en este orden:
 
 ---
 
-## 🚀 MAPA DEL SISTEMA (v4.8 Consequences)
+## 🚀 MAPA DEL SISTEMA (v4.9 Consequences)
 
 ```
 Think_Different/
 ├── 00_Winter_is_Coming/          # ESTRATÉGICO: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               # SISTEMA OPERATIVO (FUENTE DE VERDAD)
 │   ├── 01_Core/                  # MOTOR DEL OS
-│   │   ├── 00_Workflows_Os/     # 30 workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/     # 28 workflows (7 categorías)
 │   │   ├── 01_Rules/            # 13 reglas .mdc (00-12)
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/       # 48 agentes (Dream + Specialists + Individuales + Growth)
-│   │       ├── 02_Skills/       # 394 skills (12 áreas funcionales)
+│   │       ├── 01_Agents/       # 55 agentes (2 Root + 5 Dream + 23 Specialists + 5 Growth + 20 Individuales)
+│   │       ├── 02_Skills/       # 385 skills (14 áreas funcionales)
 │   │       ├── 03_Mcp/          # Backup MCPs
 │   │       ├── 04_Integrations/ # Fireflies, Granola
-│   │       ├── 05_Hooks/        # 12 hooks (6 fases)
+│   │       ├── 05_Hooks/        # 10 hooks (6 fases)
 │   │       ├── 06_Plugins/      # Plugins OS
 │   │       ├── 07_Server/       # Engram server
 │   │       ├── 08_Evals/        # Evaluadores
@@ -68,7 +68,7 @@ Think_Different/
 │       ├── 00_Context_LLM/      # Memoria LLM (Context_Memory, Process_Notes)
 │       ├── 01_Auto_Improvement/ # Motor de auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/ # SDD + 7 Manifests JARVIS
-│       ├── 03_Scripts_Os/       # 31 HUBs principales + subdirectorios
+│       ├── 03_Scripts_Os/       # 20 HUBs + 256 scripts total
 │       ├── 04_Installer/        # Scripts de instalación
 │       ├── 05_Projects/         # Proyectos activos
 │       ├── 06_SOTA_Features/    # Features SOTA
@@ -211,5 +211,5 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 
 ---
 
-*Think Different PersonalOS v4.8 Consequences — Production Ready*
-*Actualizado: 2026-05-25 | 394 skills | 48 agents (82 total sistema) | 7+38 MCPs | 21+2 HUBs | 13 rules*
+*Think Different PersonalOS v4.9 Consequences — Production Ready*
+*Actualizado: 2026-05-29 | 385 skills | 55 agents (82 total sistema) | 7+38 MCPs | 20 HUBs | 13 rules*

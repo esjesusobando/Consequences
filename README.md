@@ -5,7 +5,7 @@
 [![Status](https://img.shields.io/badge/Status-PRODUCTION%20READY-00FF00)]()
 [![OS](https://img.shields.io/badge/Think%20Different-OS--4.9-7B68EE)]()
 
-> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 385 skills SOTA, 14 áreas funcionales, 49 agentes, metodologías integradas y automatización completa.
+> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 385 skills SOTA, 14 áreas funcionales, 55 agentes, metodologías integradas y automatización completa.
 
 ---
 
@@ -21,9 +21,9 @@
 | **Skills**                          | **385** (14 áreas funcionales)                 |
 | **Rules**                           | **13** (.mdc)                                   |
 | **MCPs**                            | **7** root + **38** backup                      |
-| **HUBs**                            | **21+2** HUBs + 284 scripts (recursivo)         |
-| **Agentes**                         | **48** (source) / 82 (con SDD/CE)               |
-| **Workflows**                       | **30** (7 categorías)                           |
+| **HUBs**                            | **20** HUBs + 256 scripts                           |
+| **Agentes**                         | **55** (source) / 82 (con SDD/CE)               |
+| **Workflows**                       | **28** (7 categorías)                           |
 
 ---
 
@@ -34,14 +34,14 @@ Think_Different/                           # RAÍZ
 ├── 00_Winter_is_Coming/           ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/                ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                   ✅ Motor del OS (FUENTE DE VERDAD)
-│   │   ├── 00_Workflows_Os/      ✅ 30 workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/      ✅ 28 workflows (7 categorías)
 │   │   ├── 01_Rules/             ✅ 13 reglas .mdc — FUENTE DE VERDAD
 │   │   └── 02_Tools/             ✅ Todas las herramientas
-│   │       ├── 01_Agents/         ✅ 49 agentes
+│   │       ├── 01_Agents/         ✅ 55 agentes
 │   │       ├── 02_Skills/        ✅ 385 skills — 14 áreas funcionales
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
-│   │       ├── 05_Hooks/         ✅ 12 hooks (6 fases)
+│   │       ├── 05_Hooks/         ✅ 10 hooks (6 fases)
 │   │       ├── 06_Plugins/        ✅ Plugins OS
 │   │       ├── 07_Server/         ✅ Engram server
 │   │       ├── 08_Evals/         ✅ Evaluadores
@@ -57,7 +57,7 @@ Think_Different/                           # RAÍZ
 │       ├── 00_Context_LLM/       ✅ Memoria LLM (Engram, notes)
 │       ├── 01_Auto_Improvement/  ✅ Auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests JARVIS
-│       ├── 03_Scripts_Os/        ✅ 31 HUBs/scripts raíz + 169 scripts total (13 directorios)
+│       ├── 03_Scripts_Os/        ✅ 20 HUBs + 256 scripts total
 │       ├── 04_Installer/         ✅ Installer
 │       ├── 05_Projects/          ✅ Proyectos activos
 │       ├── 06_SOTA_Features/    ✅ Features estado-del-arte
@@ -111,22 +111,24 @@ Think_Different/                           # RAÍZ
 
 ## 🛠️ Componentes Principales
 
-### Skills System (v4.9 — 13 Áreas Funcionales)
+### Skills System (v4.9 — 14 Áreas Funcionales)
 
 | Área                                                         | Items                      | Descripción                                                   |
 |-------------------------------------------------------------|---------------------------|--------------------------------------------------------------|
+| **00_Agent_Teams_Lite**                                      | 13                         | SDD sub-agentes + JARVIS manifests                            |
 | **00_Compound_Engineering**                                  | 63                         | Core CE — SDD + Compound Engineering                          |
+| **00_Personal_Os**                                           | 32                         | Life OS, Hillary, Rituales                                    |
+| **00_Skill_Auditor**                                         | 1                          | Auditoría de skills                                           |
 | **00_System_Core**                                           | 1                          | Stack base del OS                                             |
-| **01_Creacion_Contenidos**                                   | 40                         | Brand, YouTube, SEO, Carruseles                               |
-| **02_Diseno_Ui_Ux**                                          | 29                         | Product Design, UI/UX, Taste, Minimal                         |
-| **03_Video_Media**                                           | 7                          | Video Intel, James Cameron, Remotion                          |
-| **04_Automatizacion**                                        | 37                         | N8N, Firecrawl, GWS Client                                    |
-| **05_Workflows**                                             | 37                         | Agent Teams, PM, Orchestrator                                 |
-| **06_Tools**                                                 | 112                        | Skill Creator, Testing, DevOps, Data                          |
-| **07_Personal_Os**                                           | 32                         | Life OS, Hillary, Rituales                                    |
-| **08_Invictus_Web**                                          | 15                         | Playwright, Superpowers, Browser Auto                         |
-| **09_Claude_Ads**                                            | 20                         | Claude Ads & Promoted Content                                 |
-| **10_Skill_Auditor**                                         | 1                          | Auditoría de skills                                           |
+| **00_Workflows**                                             | 43                         | Workflows OS                                                  |
+| **01_Creacion_Contenidos**                                   | 47                         | Brand, YouTube, SEO, Marketing — 16 sub-áreas                 |
+| **02_Diseno_Ui_Ux**                                          | 34                         | Product Design, UI/UX, Taste, Minimal                         |
+| **03_Video_Media**                                           | 7                          | Video Intel, James Cameron                                    |
+| **04_Automatizacion**                                        | 24                         | N8N, Firecrawl, GWS Client                                    |
+| **05_Claude_Ads**                                            | 21                         | Claude Ads & Promoted Content                                 |
+| **06_Tools**                                                 | 83                         | Skill Creator, Testing, DevOps, Data                          |
+| **07_Invictus_Web**                                          | 15                         | Playwright, Superpowers, Browser Auto                         |
+| **10_Laia_Learning**                                         | 1                          | Sistema de aprendizaje personal                               |
 | **TOTAL**                                                    | **385**                    | Skills activas en 14 áreas funcionales                        |
 
 > ⚠️ Skills están en carpetas de área + subcarpetas. Total real: 385 skills
@@ -134,7 +136,7 @@ Think_Different/                           # RAÍZ
 
 ---
 
-### HUBs v4.9 (31 HUBs + scripts en 13 directorios)
+### HUBs v4.9 (20 HUBs + 256 scripts)
 
 | Hub                                          | Script                                          | Propósito                                             |
 |---------------------------------------------|------------------------------------------------|------------------------------------------------------|
@@ -173,15 +175,15 @@ Think_Different/                           # RAÍZ
 
 ---
 
-### Agentes (48 total)
+### Agentes (55 total)
 
 | Categoría                                   | Cantidad                      | Ubicación                                                                   |
 |--------------------------------------------|------------------------------|----------------------------------------------------------------------------|
+| Root                                        | 2                             | `01_Core/02_Tools/01_Agents/` (00_Orchestrator, 00_Agent_Template)          |
 | Dream Team                                  | 5                             | `01_Core/02_Tools/01_Agents/01_Dream_Team/`                                 |
 | Specialists Compound                        | 23                            | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                       |
-| Individuales                                | 13                            | Raíz `01_Core/02_Tools/01_Agents/`                                          |
 | Growth                                      | 5                             | `01_Core/02_Tools/01_Agents/03_Growth/`                                     |
-| Root                                        | 2                             | `01_Core/02_Tools/01_Agents/` (00_Orchestrator, 00_Agent_Template)          |
+| Individuales                                | 20                            | Raíz `01_Core/02_Tools/01_Agents/` (01-20)                                  |
 
 ---
 

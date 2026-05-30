@@ -13,16 +13,16 @@
 | gentle-ai                             | v1.30.6                                                                    | ✅ AVAILABLE                                    |
 | Skills                                | **394** (14 áreas funcionales)                                             | ✅ VERIFIED — 0 sin frontmatter                 |
 | Agentes                               | **48** (source) / 82 (con SDD/CE)                                          | ✅ SYNCED                                       |
-| HUBs                                  | **31** (scripts raíz)                                                      | ✅ RESTRUCTURED (00-30)                         |
-| Scripts totales                       | **81** active + **88** legacy = 169 total                                  | ✅ REORGANIZED (00-13 dirs)                    |
-| Workflows                             | **30** (7 categorías en 00_Workflows_Os)                                   | ✅ ACTIVE                                       |
-| Hooks                                 | **13** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk)| ✅ ACTIVE                                       |
-| Rules                                 | **14** (13 .mdc + 1 .md index)                                             | ✅ DEFINED                                      |
+| HUBs                                  | **20** (19 numerados + HUB_SOTA) + **256 scripts**                        | ✅ ACTIVE                                       |
+| Scripts totales                       | — (incluido en HUBs)                                                       | —                                               |
+| Workflows                             | **28** (7 categorías en 00_Workflows_Os)                                   | ✅ ACTIVE                                       |
+| Hooks                                 | **10** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk)| ✅ ACTIVE                                       |
+| Rules                                 | **13** (.mdc)                                                              | ✅ DEFINED                                      |
 | JARVIS Manifests                      | 7 en 00_Manifest/                                                          | ✅ VALIDATED                                    |
 | Integrations                          | **2** (01_Fireflies, 02_Granola)                                           | ✅ INTEGRATED                                   |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-25 — v4.9 Consequences
-> Agent Sync: 48 agents (source) / 82 total con SDD/CE. Skills: 394 (SKILL.md source) / 407 (backup .agent). MCPs: 7+38. HUBs: 31 raíz. Scripts: 81 active + 88 legacy.
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-29 — v4.9 Consequences
+> Agent Sync: 55 agents (source) / 82 total con SDD/CE. Skills: 385 (SKILL.md source) / ~490 legacy. MCPs: 7+38. HUBs: 20. Scripts: 256.
 
 ---
 
@@ -77,10 +77,10 @@ Think_Different/                         # RAÍZ
 ├── 00_Winter_is_Coming/          ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD)
-│   │   ├── 00_Workflows_Os/     ✅ 30 workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/     ✅ 28 workflows (7 categorías)
 │   │   ├── 01_Rules/            ✅ 13 reglas .mdc
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/         ✅ 48 agentes (5 Dream + 23 Specialists + 13 Indiv + 5 Growth + 2 Root)
+│   │       ├── 01_Agents/         ✅ 55 agentes (2 Root + 5 Dream + 23 Specialists + 5 Growth + 20 Individuales)
 │   │       ├── 02_Skills/         ✅ 385 skills (14 áreas funcionales)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
@@ -110,7 +110,7 @@ Think_Different/                         # RAÍZ
 │   │   ├── 00_Context_LLM/        ✅ Memoria LLM (Engram, notes)
 │   │   ├── 01_Auto_Improvement/   ✅ Motor auto-mejora recursiva
 │   │   ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests
-│   │   ├── 03_Scripts_Os/         ✅ 31 HUBs/scripts raíz + 169 total (81 active + 88 legacy)
+│   │   ├── 03_Scripts_Os/         ✅ 20 HUBs + 256 scripts total
 │   │   ├── 04_Installer/          ✅ Installer scripts
 │   │   ├── 05_Projects/          ✅ Proyectos activos
 │   │   ├── 06_SOTA_Features/     ✅ Features estado-del-arte
@@ -297,7 +297,7 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-## 📁 WORKFLOWS — 7 CATEGORÍAS (30 workflows)
+## 📁 WORKFLOWS — 7 CATEGORÍAS (28 workflows)
 
 | Categoría                    | Path                            | Workflows                                      |
 |-----------------------------|--------------------------------|-----------------------------------------------|
@@ -361,4 +361,4 @@ Los siguientes hallsazgos fueron identificados durante la auditoría OS integral
 
 ---
 
-*Actualizado: 2026-05-27 | PersonalOS v4.9 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 385 skills source / 407 backup | 48 agents | 31 scripts raíz | 81 active + 88 legacy | 30 workflows | 13 hooks*
+*Actualizado: 2026-05-29 | PersonalOS v4.9 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 385 skills | 55 agents | 20 HUBs | 256 scripts | 28 workflows | 10 hooks*

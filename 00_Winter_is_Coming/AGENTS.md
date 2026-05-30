@@ -38,16 +38,16 @@ cat 01_Personal_Os/03_Task/  # tareas activas
 
 | Recurso                                            | Ubicación                                                                  | Para qué usarlo                                                    |
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
-| **Skills** (14 áreas, 394)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
+| **Skills** (14 áreas, 385)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
 | **Reglas** (13 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
-| **Agentes** (48)                                   | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
-| **HUBs** (31 scripts raíz + 13 directorios)        | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
+| **Agentes** (55)                                   | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
+| **HUBs** (20 HUBs + 256 scripts total)             | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
 | **MCPs** (7 root + 38 backup)                      | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
 | **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |
 | **Auto-Improvement**                               | `01_Personal_Os/04_Operations/01_Auto_Improvement/`                        | Detección y fix recursivo de issues                                |
-| **Workflows**                                      | `01_Personal_Os/01_Core/00_Workflows_Os/`                                  | 30 workflows en 7 categorías                                       |
+| **Workflows**                                      | `01_Personal_Os/01_Core/00_Workflows_Os/`                                  | 28 workflows en 7 categorías                                       |
 
 ---
 
@@ -163,10 +163,10 @@ Think_Different/                           # v4.9 — 4 carpetas raíz
 ├── 00_Winter_is_Coming/                   # 🔮 ESTRATÉGICO: Goals, Backlog, AGENTS.md
 ├── 01_Personal_Os/                        # ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                           # Motor del OS
-│   │   ├── 00_Workflows_Os/              # 30 Workflows (7 categorías)
+│   │   ├── 00_Workflows_Os/              # 28 Workflows (7 categorías)
 │   │   ├── 01_Rules/                     # 13 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
-│   │       ├── 01_Agents/               # 49 agentes
+│   │       ├── 01_Agents/               # 55 agentes
 │   │       ├── 02_Skills/                # 385 skills (14 áreas)
 │   │       ├── 03_Mcp/                   # Backup MCPs
 │   │       ├── 04_Integrations/         # Fireflies, Granola
@@ -182,7 +182,7 @@ Think_Different/                           # v4.9 — 4 carpetas raíz
 │       ├── 00_Context_LLM/              # Memoria LLM
 │       ├── 01_Auto_Improvement/         # Motor auto-mejora
 │       ├── 02_Agent_Teams_Lite/         # SDD registry + 7 Manifests
-│       ├── 03_Scripts_Os/               # 31 HUBs/scripts raíz + 169 total
+│       ├── 03_Scripts_Os/               # 20 HUBs + 256 scripts total
 │       ├── 04_Installer/                # Installer
 │       ├── 05_Projects/                 # Proyectos activos
 │       ├── 06_SOTA_Features/            # Features estado-del-arte
@@ -458,7 +458,7 @@ gr --agents    # Solo 3 agents
 
 ---
 
-## 12. WORKFLOWS (30 — 7 categorías)
+## 12. WORKFLOWS (28 — 7 categorías)
 
 📁 `01_Personal_Os/01_Core/00_Workflows_Os/`
 
@@ -547,4 +547,4 @@ Cualquier mensaje del usuario que coincida con estos triggers → **responder co
 
 ---
 
-_Think Different PersonalOS v4.9 Consequences — Pure Green State (Audit 2026-05-28)_
+_Think Different PersonalOS v4.9 Consequences — Pure Green State (Audit 2026-05-29)_

@@ -30,10 +30,10 @@ Cada intento imperfecto te vuelve más competente. No necesitas que cada acción
 | OS Element | Volumen | Competencia Resultante |
 |-----------|---------|----------------------|
 | Skills     | 385 activas + ~490 legacy | Cobertura de 14 áreas funcionales |
-| Scripts    | 284 scripts (24 HUBs) | Automatización de casi cualquier operación |
-| Agents     | 48 definiciones | Especialización sin dependencia del orquestador |
-| Workflows  | 30 workflows | Método repetible para cada tarea recurrente |
-| MCPs       | 36 servidores | Conexión con cualquier herramienta externa |
+| Scripts    | 256 scripts (20 HUBs) | Automatización de casi cualquier operación |
+| Agents     | 55 definiciones | Especialización sin dependencia del orquestador |
+| Workflows  | 28 workflows | Método repetible para cada tarea recurrente |
+| MCPs       | 45 servidores (7+38) | Conexión con cualquier herramienta externa |
 
 **La trampa que evita este principio**: Querer 10 skills perfectas en lugar de 385 skills funcionales. El que busca calidad antes que volumen nunca empieza.
 
@@ -66,7 +66,7 @@ El "Pure Green State" del OS no es magia. Es el resultado visible de auditorías
 > *No puedes intentar 10,000 veces todo. Debes elegir estratégicamente dónde invertir tu volumen.*
 
 ### Corolario Técnico
-El OS no intenta cubrir 50 áreas funcionales. Elige **14** y las domina. Prefiere 30 workflows profundos que 100 superficiales. Este principio es el que separa un sistema coherente de un cajón de herramientas sin dirección.
+El OS no intenta cubrir 50 áreas funcionales. Elige **14** y las domina. Prefiere 28 workflows profundos que 100 superficiales. Este principio es el que separa un sistema coherente de un cajón de herramientas sin dirección.
 
 ### Criterios de Selección
 La pregunta que define dónde poner volumen:
@@ -150,9 +150,9 @@ El nombre **v4.9 Consequences** no es un número de versión cualquiera. "Conseq
 
 | Principio del Video | Principio del OS Consequences | Refuerzo mutuo |
 |--------------------|------------------------------|----------------|
-| Cantidad → Calidad | 385 skills, 284 scripts, 48 agents | El OS valida empíricamente que el volumen produce capacidad |
+| Cantidad → Calidad | 385 skills, 256 scripts, 55 agents | El OS valida empíricamente que el volumen produce capacidad |
 | Proceso invisible | Pure Green State, ~490 skills legacy | Nadie ve el archive — solo el resultado pulido |
-| Volumen estratégico | 14 áreas funcionales, 30 workflows | El OS elige profundidad sobre anchura |
+| Volumen estratégico | 14 áreas funcionales, 28 workflows | El OS elige profundidad sobre anchura |
 | Persistencia imperfecta | Auto-Improvement Engine, gr --apply | El OS se repara a sí mismo en vez de buscar perfección estática |
 | Framework 10/100/1000/10000 | CE philosophy, skill adoption curve | Cada skill atraviesa estas fases; el OS lo sabe y no espera maestría instantánea |
 

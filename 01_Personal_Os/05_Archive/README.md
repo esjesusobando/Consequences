@@ -1,22 +1,27 @@
-# 📦 05_Archive — Think Different PersonalOS v4.7
+# 📦 05_Archive — Think Different PersonalOS v4.9
 
-> **Versión:** 4.7 Consequences
-> **Última actualización:** 2026-05-23
-> **Estado:** ✅ Optimizado a 3 carpetas con subcarpetas enumeradas
+> **Versión:** 4.9 Consequences
+> **Última actualización:** 2026-05-29
+> **Estado:** ✅ Archivado histórico
 
 Carpeta de legado y archivo muerto del sistema. Todo lo que ya no está activo pero se preserva por razones históricas o de referencia.
 
 ---
 
-## 📁 Estructura Final (4 carpetas principales)
+## 📁 Estructura Actual (9 directorios + README)
 
 ```
 05_Archive/
 ├── 00_Backup_Os/              # Backup completo del OS antes de reorganizaciones
-├── 01_Repos_Reference/      # Repos upstream y referencias externas
-├── 02_Legacy_Content/       # Contenido legacy: planes, docs, skills
-├── 03_Backups_Audits/       # Backups, auditorías y tareas legacy
-└── README.md                # Este archivo
+├── 00_Skills_Legacy/           # Skills legacy pre-migración
+├── 01_Repos_Reference/         # Repos upstream y referencias externas
+├── 02_Legacy_Content/          # Contenido legacy: planes, docs, skills
+├── 03_Backups_Audits/          # Backups, auditorías y tareas legacy
+├── 04_Docs_Legacy/            # Documentación legacy
+├── 05_Skills_Legacy/           # Skills legacy (lote 2)
+├── 06_Skills_Legacy/           # Skills legacy (lote 3)
+├── .agent_backup_pre_sync/    # Backup pre-sync de .agent/
+└── README.md                  # Este archivo
 ```
 
 ---
@@ -118,7 +123,7 @@ Backups, snapshots y reportes de auditoría del sistema.
 
 1. **No modificar** — El archive es solo lectura histórica
 2. **Antes de archivar** — Verificar que el contenido no esté activo en el OS
-3. **4 carpetas máximo** — Si necesitás más, revisar si realmente todo merece estar archivado
+3. **Skills legacy** en 00/05/06_Skills_Legacy — preservadas por referencia, no funcionales
 
 ---
 
@@ -126,8 +131,9 @@ Backups, snapshots y reportes de auditoría del sistema.
 
 | Fecha     | Cambio                                                                   |
 |----------|-------------------------------------------------------------------------|
+| 2026-05-29| **v4.9** — README actualizado con estructura real (9 directorios, 00_Skills_Legacy/ añadido)|
 | 2026-05-20| **v4.5** — Reorganizado de 15 carpetas a 4 + subcarpetas enumeradas 01-07|
 
 ---
 
-*Archive v4.5 — Mantener por razones históricas, no por funcionalidad activa.*
+*Archive v4.9 — Mantener por razones históricas, no por funcionalidad activa.*

@@ -1,4 +1,4 @@
-# SOTA Features Module — PersonalOS v4.1
+# SOTA Features Module — PersonalOS v4.9
 
 > State of the Art features para llevar PersonalOS al nivel mundial.
 
