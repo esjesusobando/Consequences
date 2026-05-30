@@ -285,7 +285,7 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 | "daily notes", "log this", "registro"                                     | `03_Daily_Notes`                            | Workflows en 04_Hillary/                       |
 | "/hillary", "life os", "personal productivity"                            | Orquestador                                 | Workflows en 04_Hillary/                       |
 
-**Skills location:** `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Personal_Os/`
+**Skills location:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/`
 **Inbox:** `01_Personal_Os/03_Task/02_Hillary_Inbox/`
 **RUNBOOK:** `01_Personal_Os/02_Knowledge/04_Docs/Hillary_Life_OS_RUNBOOK.md`
 

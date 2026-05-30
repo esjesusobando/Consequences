@@ -432,6 +432,8 @@ gr --agents    # Solo 3 agents
 | Command                          | Descripción                                                                  |
 |---------------------------------|-----------------------------------------------------------------------------|
 | `/gr`                            | System Guardian - Valida estructura                                          |
+| `/la`                            | Learning Always — aprender/investigar/compundear (vía skill())               |
+| `/dw`                            | Dynamic Workflows — pipeline completo (vía skill())                          |
 | `/sdd-*`                         | SDD Workflow (init, explore, propose, spec, etc.)                            |
 | `/ce:*`                          | Compound Engineering (ideate, brainstorm, plan, etc.)                        |
 
@@ -507,10 +509,13 @@ gr --agents    # Solo 3 agents
 | Category                                | Command/Tool                                                         |
 |----------------------------------------|---------------------------------------------------------------------|
 | **Daily**                               | "What should I work on?" / "Clear my backlog"                        |
+| **Learn / Research**                    | `skill("learning-always")` or `/ce:brainstorm`                      |
+| **Pipeline completo**                   | `skill("dynamic-workflows")` — 11 fases con skill mapping            |
 | **Plan Feature**                        | `/ce:brainstorm` or `/sdd-propose`                                   |
 | **Execute**                             | `/ce:work` or `/sdd-apply`                                           |
 | **Review**                              | GGA or `/ce:review`                                                  |
 | **Document**                            | `/ce:compound`                                                       |
+| **Compound Knowledge**                  | `skill("learning-always")` → Fase 4 (Compound)                       |
 | **Validate**                            | `gr` or `01_Auditor_Hub.py`                                          |
 | **Memory**                              | `engram save <title> <msg>`                                          |
 

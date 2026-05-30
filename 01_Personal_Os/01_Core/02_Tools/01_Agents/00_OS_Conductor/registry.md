@@ -143,6 +143,8 @@
 | 1 | **Life OS** | `01_Life_OS/` | `life`, `productivity` | Sistema Life OS |
 | 2 | **Personal OS (Hillary)** | `02_Personal_Os/` | `personal`, `daily`, `capture` | Captura rápida, plan diario |
 | 3 | **Fantasticos** | `03_Fantasticos/` | `fantastic-four` | Los 4 Fantásticos |
+| 4 | **Learning Always** | `09_Workflow_Os/01_Learning_Always/` | `learning`, `methodology`, `compound` | Metodología de aprendizaje continuo con IA |
+| 5 | **Dynamic Workflows** | `09_Workflow_Os/02_Dynamic_Workflows/` | `workflow`, `pipeline`, `lifecycle` | Pipeline completo de ejecución (11 fases) |
 
 ---
 
@@ -248,6 +250,8 @@ personal, web, ads, quality
 | Orquestar proyecto | Área 05 |
 | Tooling/dev | Área 06 |
 | Productividad personal | Área 07 |
+| Aprender / investigar / entender | Área 07 > `09_Workflow_Os/01_Learning_Always` |
+| Ejecutar pipeline completo | Área 07 > `09_Workflow_Os/02_Dynamic_Workflows` |
 | Web automation | Área 08 |
 | Publicidad | Área 09 |
 | Auditar skills | Área 10 |

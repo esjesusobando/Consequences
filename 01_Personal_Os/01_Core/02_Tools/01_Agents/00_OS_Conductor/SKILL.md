@@ -135,6 +135,8 @@ Si matchea **1 área** → seguir al Paso 2.
 | Planear/ejecutar proyecto | `05_Workflows` | |
 | Escribir/testear código | `06_Tools` | |
 | Estrategia, roadmap, ideación | `00_Compound_Engineering` | |
+| Aprender / investigar / entender algo | `00_Personal_Os > 09_Workflow_Os > 01_Learning_Always` | ✅ skill("learning-always") |
+| Pipeline completo de feature (research→ship→compound) | `00_Personal_Os > 09_Workflow_Os > 02_Dynamic_Workflows` | ✅ skill("dynamic-workflows") |
 | Salud del OS, validación | `00_System_Core` | ✅ Ruta directa |
 | Auditoría de skills/calidad | `10_Skill_Auditor` | ✅ Ruta directa |
 | Video, animación | `03_Video_Media` | |
@@ -229,6 +231,17 @@ Sprint Contract: scraping (si aplica) + workflow + código + validación + deplo
 3. 04_Automatizacion → N8N_JS / N8N_Python (código nodes)
 4. 04_Automatizacion → N8N_Validation (validar)
 5. 06_Tools → DevOps (deploy si aplica)
+```
+
+### 🧠 FLUJO: Aprendizaje e Investigación (LA + Workflow Os)
+
+```
+Sprint Contract: entender + validar + aplicar + compundear
+1. 00_Personal_Os > 09_Workflow_Os > 01_Learning_Always → LA Cycle (Fases 1-2)
+2. 00_Personal_Os > 09_Workflow_Os > 02_Dynamic_Workflows → Research Only mode (Fase 01-02)
+3. 00_Compound_Engineering → SDD Explore/Propose (si deriva en feature)
+4. 00_Personal_Os > 09_Workflow_Os > 01_Learning_Always → Compound (Fase 4)
+5. Engram Memory → mem_save con learnings
 ```
 
 ### 🏗️ FLUJO: Desarrollo SDD Completo

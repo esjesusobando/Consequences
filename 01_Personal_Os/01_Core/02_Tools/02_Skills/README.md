@@ -79,14 +79,18 @@
 │   ├── 07_Skill_Creator_Invictus/
 │   └── 08_Octopus/
 │
-├── 00_Personal_Os/            🌱 Personal OS (29 items)
-│   ├── 01_Life_OS/
-│   ├── 02_Personal_Os/
-│   ├── 03_Fantasticos/
-│   ├── 04_Hillary.md
-│   ├── 05_Contexto/
-│   ├── 06_Marca/
-│   └── 07_Plantillas/
+├── 00_Personal_Os/            🌱 Personal OS (29+ items)
+│   ├── 01_Life_OS/             Sistema de vida personal
+│   ├── 02_Personal_Os/         Core del OS
+│   ├── 03_Fantasticos/         4 Fantásticos
+│   ├── 04_Contexto/            Contexto del sistema
+│   ├── 05_Marca/               Marca personal
+│   ├── 06_Plantillas/          Templates
+│   ├── 07_Hillary/             Hillary — Life OS Specialist
+│   ├── 08_Learning_Always/     URL→Knowledge (legacy pipeline)
+│   └── 09_Workflow_Os/ 🆕     Workflow Os — pipelines ejecutables
+│       ├── 01_Learning_Always/   LA — Metodología aprendizaje continuo
+│       └── 02_Dynamic_Workflows/ DW — Pipeline 11 fases + skill mapping
 │
 ├── 07_Invictus_Web/           🌐 Invictus Web (14 items)
 │   ├── 01_Superpowers/
@@ -126,7 +130,9 @@
 | Automatización (N8N, Firecrawl)                                | `04_Automatizacion/`                                        |
 | Workflows (Agent Teams, PM)                                    | `00_Workflows/`                                             |
 | Tools (Testing, DevOps)                                        | `06_Tools/`                                                 |
-| Personal OS (Hillary, Life OS)                                 | `00_Personal_Os/`                                           |
+| Personal OS (Hillary, Life OS, Workflows)                      | `00_Personal_Os/`                                           |
+| Aprendizaje continuo con IA                                    | `00_Personal_Os/09_Workflow_Os/01_Learning_Always/`         |
+| Pipeline completo de ejecución                                 | `00_Personal_Os/09_Workflow_Os/02_Dynamic_Workflows/`       |
 | Invictus Web                                                   | `07_Invictus_Web/`                                          |
 | Claude Ads                                                     | `05_Claude_Ads/`                                            |
 | Context Engineering & Onboarding (Laia Learning)                | `11_Laia_Learning/`                                               |
@@ -134,6 +140,14 @@
 ---
 
 ## 📝 Changelog
+
+**2026-05-30:** Workflow Os — LA + Dynamic Workflows 🆕
+- ✅ Movido `11_Learning_Always` → `09_Workflow_Os/01_Learning_Always/`
+- ✅ Movido `12_Dynamic_Workflows` → `09_Workflow_Os/02_Dynamic_Workflows/`
+- ✅ Dynamic Workflows ahora delega cada fase a una skill específica del OS
+- ✅ Actualizado OS Conductor (registry + routing)
+- ✅ Eliminados directorios legacy `11_Learning_Always/` y `12_Dynamic_Workflows/`
+- ⚠️ Audit completo reveló 30+ duplicados numéricos en el OS (pendiente)
 
 **2026-05-19:** Auditoría Completa v4.1
 - ✅ Sincronizado con estructura real: 369 skills, 13 áreas funcionales

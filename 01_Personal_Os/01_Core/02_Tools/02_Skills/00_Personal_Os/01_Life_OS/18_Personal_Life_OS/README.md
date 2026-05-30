@@ -39,7 +39,7 @@ Returns Tracker → 01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/01_
 ## Invocar el Orquestador
 
 ```
-/hillary          # Activa workflow 04_Hillary/25_Hillary_Life_OS.md
+/hillary          # Activa workflow 07_Hillary/SKILL.md
 "life os"         # Alias del orquestador
 "personal productivity"
 ```
