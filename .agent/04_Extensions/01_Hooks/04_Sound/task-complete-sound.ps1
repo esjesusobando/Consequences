@@ -1,27 +1,35 @@
-# Script para reproducir un sonido cuando se usa TodoWrite
-# Se ejecuta después de cada llamada a la herramienta TodoWrite
+# Script para reproducir un sonido cuando se completa una tarea
+# Uso: .\task-complete-sound.ps1
+# Para integrar con Claude Code: agregar a hooks en CLAUDE.md
 
-# Reproducir sonido del sistema de Windows
-# Opciones disponibles:
-# - Asterisk (información general)
-# - Beep (alerta)
-# - Exclamation (advertencia)
-# - Hand (error/stop)
-# - Question (pregunta)
+param(
+    [string]$Sound = "Asterisk",  # Asterisk, Beep, Exclamation, Hand, Question
+    [int]$Duration = 200            # Duración en ms para Beep
+)
+
+# Sonidos disponibles del sistema Windows
+$systemSounds = @{
+    "Asterisk"    = [System.Media.SystemSounds]::Asterisk
+    "Beep"        = [System.Media.SystemSounds]::Beep
+    "Exclamation" = [System.Media.SystemSounds]::Exclamation
+    "Hand"        = [System.Media.SystemSounds]::Hand
+    "Question"    = [System.Media.SystemSounds]::Question
+}
 
 try {
-    # Reproducir sonido de éxito/completado
-    [System.Media.SystemSounds]::Asterisk.Play()
-
-    # Alternativas para personalizar:
-    # Doble beep ascendente:
-    # [Console]::Beep(800, 150)
-    # [Console]::Beep(1000, 150)
-
-    # Beep de notificación más largo:
-    # [Console]::Beep(1200, 300)
+    if ($systemSounds.ContainsKey($Sound)) {
+        $systemSounds[$Sound].Play()
+        Write-Host "🔔 Sonido reproducido: $Sound"
+    } else {
+        [Console]::Beep(800, $Duration)
+        Write-Host "🔔 Beep reproducido"
+    }
 } catch {
-    # Silenciosamente ignorar errores para no interrumpir Claude Code
+    try {
+        [Console]::Beep(1000, 150)
+    } catch {
+        # Silenciosamente ignorar errores
+    }
 }
 
 exit 0

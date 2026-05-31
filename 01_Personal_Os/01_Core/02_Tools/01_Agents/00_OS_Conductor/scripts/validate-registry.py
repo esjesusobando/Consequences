@@ -18,18 +18,29 @@ def extract_skill_paths_from_registry() -> list[tuple[str, str]]:
     """Extract skill names and their expected paths from registry.md."""
     text = REGISTRY_FILE.read_text(encoding="utf-8")
     skills = []
+    in_area_11 = False
 
-    # Match lines like: | \d+ | **Skill Name** | `path/` |
-    pattern = re.compile(r"\|\s*\d+\s*\|\s*\*\*(.+?)\*\*\s*\|\s*`(.+?)`\s*\|")
-    for match in pattern.finditer(text):
-        name = match.group(1).strip()
-        rel_path = match.group(2).strip()
-        # Handle paths prefixed with area number like "01_N8N_JS/"
-        if not rel_path.startswith(".."):
-            # Relative to the area folder in 02_Skills
-            skills.append((name, rel_path))
-        else:
-            # Could be an external reference
+    for line in text.splitlines():
+        # Track when we enter Area 11 (Anthropic) — it uses tags, not paths
+        if "AREA 11:" in line or "ANTHROPIC SKILLS LIBRARY" in line:
+            in_area_11 = True
+            continue
+        if in_area_11 and line.startswith("## ") and "AREA" in line:
+            in_area_11 = False
+        if in_area_11 and "AGENTES ESPECIALIZADOS" in line:
+            in_area_11 = False
+
+        # Match lines like: | \d+ | **Skill Name** | `path/` |
+        pattern = re.compile(r"\|\s*\d+\s*\|\s*\*\*(.+?)\*\*\s*\|\s*`(.+?)`\s*\|")
+        match = pattern.match(line.strip())
+        if match:
+            name = match.group(1).strip()
+            rel_path = match.group(2).strip()
+
+            # Skip tags-only entries (Anthropic area has tags, not paths)
+            if not rel_path or "/" not in rel_path and "." not in rel_path:
+                continue
+
             skills.append((name, rel_path))
 
     return skills
@@ -60,34 +71,36 @@ def main():
     errors = 0
     warnings = 0
 
-    print("=" * 60)
-    print("🔍 OS Conductor — Registry Validator")
+    line = "=" * 60
+    print(line)
+    print("[OK] OS Conductor -- Registry Validator")
     print(f"Registry: {REGISTRY_FILE}")
     print(f"Skills dir: {SKILLS_DIR}")
-    print("=" * 60)
+    print(line)
 
     if not REGISTRY_FILE.exists():
-        print(f"\n❌ ERROR: registry.md not found at {REGISTRY_FILE}")
+        print(f"\n[ERROR] registry.md not found at {REGISTRY_FILE}")
         sys.exit(1)
 
     skills = extract_skill_paths_from_registry()
-    print(f"\n📋 Found {len(skills)} skills in registry\n")
+    print(f"\n[INFO] Found {len(skills)} skills in registry\n")
 
     for name, rel_path in skills:
         found = find_skill_on_disk(rel_path)
         if found:
-            print(f"   ✅ {name:35s} → {rel_path}")
+            print(f"   [OK] {name:35s} -> {rel_path}")
         else:
-            print(f"   ❌ {name:35s} → NOT FOUND: {rel_path}")
+            print(f"   [FAIL] {name:35s} -> NOT FOUND: {rel_path}")
             errors += 1
 
-    print("\n" + "=" * 60)
+    print()
+    print(line)
     if errors == 0:
-        print("🎉 ALL SKILLS VALIDATED — Registry matches filesystem")
+        print("[PASS] ALL SKILLS VALIDATED -- Registry matches filesystem")
     else:
-        print(f"⚠️  {errors} skills referenced in registry.md but not found on disk")
+        print(f"[WARN] {errors} skills referenced in registry.md but not found on disk")
         print("   Run: python scripts/validate-registry.py to recheck after fixes")
-    print("=" * 60)
+    print(line)
 
     return errors
 

@@ -2,7 +2,7 @@
 name: orchestrating-os
 description: >-
   Punto de entrada único al Think Different PersonalOS v4.9. Orquesta 12 áreas de skills,
-  47 agentes especializados y flujos compuestos multi-dominio. Activa cuando el usuario
+  67+ agentes especializados y flujos compuestos multi-dominio. Activa cuando el usuario
   pide ayuda sin especificar skill, cuando un request cruza múltiples áreas, o cuando se
   necesita un entry point único para diagnóstico, estrategia o lanzamientos.
   Triggers: OS Conductor, orchestrator, orquestador, qué skill, qué agente, cómo hago,
@@ -54,7 +54,7 @@ El Conductor nace de una verdad incómoda: el Orchestrator v4.0 era un archivo p
 
 ## 🗺️ Mapa de Dominio del OS
 
-12 áreas de skills + 47 agentes especializados:
+12 áreas de skills + 67 agentes especializados:
 
 | Prioridad | Área | Skills | Lo uso para... |
 |-----------|------|--------|----------------|
@@ -64,7 +64,7 @@ El Conductor nace de una verdad incómoda: el Orchestrator v4.0 era un archivo p
 | 🔥 ALTA | `02_Diseno_Ui_Ux` | 11 skills | UI/UX, prototipado, diseño visual |
 | 🔥 ALTA | `04_Automatizacion` | 17 skills | N8N, Firecrawl, GWS, scraping |
 | 🔥 ALTA | `05_Workflows` | 7 skills | PM, orquestación, LFG |
-| 🔥 ALTA | `06_Tools` | 15 skills | Testing, DevOps, Skill Creator |
+| 🔥 ALTA | `06_Tools` | 6 skills | Testing, Doc Processing, Qmd, System Master, Data Analyst, AI News |
 | 📈 MEDIA | `03_Video_Media` | 5 skills | Video Intel, Remotion |
 | 📈 MEDIA | `00_Personal_Os` | 5 skills | Life OS, Hillary, Fantasticos, Learning Always, Dynamic Workflows |
 | 📈 MEDIA | `08_Invictus_Web` | 3 skills | Playwright, Superpowers |
@@ -91,6 +91,27 @@ Cuando el Conductor está activo, las siguientes herramientas están RESTRINGIDA
 | **Comunicación** (texto al usuario) | ✅ PERMITIDO | Esencial para Sprint Contract y verificación. |
 
 > ⚠️ Si una skill delegada necesita alguna herramienta bloqueada, el Conductor le pasa el control completo durante su ejecución. Las restricciones aplican solo al rol de **orquestación**.
+
+---
+
+## ✅ Health Check — Auto-Validación al Arrancar
+
+Antes de procesar cualquier request, el Conductor ejecuta una auto-validación rápida del OS:
+
+```
+1. Ejecutar: python scripts/validate-registry.py
+   ─ ¿Todo OK? → Continuar normal
+   ─ ¿Errores? → Reportar al usuario: "El registry tiene N skills que no existen en disco. ¿Querés que las audite antes de seguir?"
+2. Verificar que registry.md tiene agentes actualizados
+3. Confirmar que el total de agentes coincide con el filesystem
+```
+
+**Si el health check encuentra errores:**
+- No bloquear — el Conductor sigue operando
+- Reportar el diagnóstico al inicio: "⚠️ Health check: N skills huérfanas en registry. Podés pedir `diagnóstico del OS` para más detalle."
+- Si el usuario pide diagnóstico, ejecutar el flujo completo de System_Core + Skill_Auditor
+
+**Auto-reparación:** Si el usuario lo autoriza, el Conductor puede ejecutar `scripts/validate-registry.py --fix` (cuando exista) para sincronizar automáticamente.
 
 ---
 
@@ -276,14 +297,15 @@ Sprint Contract: spec + design + tasks + code + tests + verify + archive
 
 ## 🤖 Integración con Agentes Especializados
 
-El Conductor conoce y rutea a **47 agentes** en `01_Agents/`:
+El Conductor conoce y rutea a **67 agentes** en `01_Agents/`:
 
 | Categoría | Cantidad | Agentes |
 |-----------|----------|---------|
-| **Core** | 13 | Scope Rule, TDD, Implementer, Mentor, Security, Git, Accessibility, PRD, Design, AIPM, LFG, Hillary, Orchestrator (legacy) |
+| **Core** | 23 | Orchestrator, Scope Rule, TDD, Implementer, Mentor, Security, Git, Accessibility, PRD, Design, Orchestrator, AIPM, LFG, Hillary, Laia, Mkt Estratega, Mkt Creador, Mkt Analista, Wf YouTube, Wf LinkedIn, Wf Newsletter, Learning Always, Dynamic Workflows |
 | **Dream Team** | 5 | Product Builder, Data Engineer, Marketing Tech, Design Ops, Platform Engineer |
-| **Specialists** | 24 | Agent-Native, Architecture, Best-Practices, Code-Simplicity, Deployment, DHH-Rails, Security-Sentinel, +17 |
+| **Specialists** | 23 | Agent-Native, Ankane, Architecture, Best-Practices, Code-Simplicity, Data Integrity, Data Migration, Deployment, Design Impl Reviewer, Design Iterator, DHH Rails, Figma Sync, Framework Docs, Git History, Julik Races, Kieran Python, Kieran Rails, Kieran TS, Learnings, Pattern Recognition, Performance Oracle, Repo Research, Security Sentinel |
 | **Growth** | 5 | Content Transformer, YouTube Script, Thumbnail, Title, Carousel |
+| **OpenCode** | 11 | gentleman, sdd-orchestrator, sdd-explore/init/propose/spec/design/tasks/apply/verify/archive |
 
 **Regla:** Si un request coincide con el dominio de un agente especializado, el Conductor lo invoca como sub-agente con el contexto completo del OS.
 

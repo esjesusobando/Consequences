@@ -1,85 +1,20 @@
 # 🛠️ Skills — Sistema SOTA de Skills v4.9 Consequences
 
-**Versión:** 4.8 Consequences
-**Última actualización:** 2026-05-26
+**Versión:** 4.9 Consequences
+**Última actualización:** 2026-05-31
 **Source of Truth:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 **Framework:** Anthropic Skill Creator v2.0 + PersonalOS SOTA
-**Estado:** ✅ PURE GREEN — Auditoría 2026-05-24
+**Estado:** ✅ PURE GREEN — 74 skills validadas contra filesystem
 
 ---
 
-## 📂 Estructura v4.9 — 13 Áreas Canónicas (369 source / 734 backup SKILL.md)
+## 📂 Estructura v4.9 — 12 Áreas Canónicas (74 skills validadas)
 
 ```
 02_Skills/
-├── 00_Compound_Engineering/    ⭐ Core Engineering (CE) — 63 skills
-├── 00_System_Core/             ⭐ Stack Core
-├── 00_Skill_Auditor/           ⭐ Auditoría de skills
-│
-├── 01_Creacion_Contenidos/    🎨 Contenido (38 items)
-│   ├── 01_Brand_Voice/
-│   ├── 02_Content_Creation/
-│   ├── 03_Pptx_Generator/
-│   ├── 06_Ai_Agents/
-│   ├── 07_Content_Ideation/
-│   ├── 08_Offer_And_Bio_Writer/
-│   ├── 10_Content_Transformer.md
-│   ├── 11_Youtube_Script_Writer.md
-│   ├── 12_Thumbnail_Prompter.md
-│   ├── 13_Title_Generator.md
-│   ├── 14_Youtube_Full_Video.md
-│   ├── 15_Marketing_Strategy/       # Movido desde 09_Marketing/
-│   ├── 16_Marketing_Tech/          # Movido desde 09_Marketing/
-│   ├── 17_Compound_Engine/         # Movido desde 09_Marketing/
-│   ├── 18_Premium_Image_Studio/   # Movido desde 09_Marketing/
-│   ├── 19_Video_Visuals_Producer/  # Movido desde 09_Marketing/
-│   ├── 20_Remotion_Video_Creator/ # Movido desde 09_Marketing/
-│   ├── 21_Remotion_Best_Practices/ # Movido desde 09_Marketing/
-│   └── 22_Marketing_Scripts/       # Movido desde 09_Marketing/
-│
-├── 02_Diseno_Ui_Ux/          🎨 UI/UX Design (23 items)
-│   ├── 01_Product_Design/
-│   ├── 03_Taste_Skills/
-│   ├── 04_Diseno_Minimalista/
-│   ├── 05_Directrices_Marca/
-│   ├── 06_Excalidraw_Flowchart/
-│   └── 14_UI_UX_Pro_Max/
-│
-├── 03_Video_Media/            🎥 Video & Media (6 items)
-│   └── 01_Video_Intel/
-│
-├── 04_Automatizacion/         ⚙️ Automation (21 items)
-│   ├── 01_N8N_JS/
-│   ├── 02_N8N_Python/
-│   ├── 03_N8N_Expressions/
-│   ├── 04_N8N_MCP/
-│   ├── 05_N8N_Nodes/
-│   ├── 06_N8N_Validation/
-│   ├── 07_N8N_Workflows/
-│   ├── 08_N8N_Invictus/
-│   ├── 09_Firecrawl/
-│   ├── 10_GWS_Client/
-│   └── 12_N8N/
-│
-├── 00_Workflows/              🔄 Workflows & Orchestration (33 items)
-│   ├── 01_Agent_Teams_Lite/
-│   ├── 02_Project_Manager/
-│   ├── 03_Product_Manager/
-│   ├── 04_PM_Orchestrator/
-│   ├── 05_Workflow_Orchestrator.md
-│   └── 06_LFG_Engine.md
-│
-├── 06_Tools/                  🛠️ Tools & Dev (93 items)
-│   ├── 01_Skill_Creator/
-│   ├── 02_Skill_Template/
-│   ├── 03_Anthropic_Harness/
-│   ├── 04_DevOps/
-│   ├── 05_Vibe_Coding/
-│   ├── 06_Testing/
-│   ├── 07_Skill_Creator_Invictus/
-│   └── 08_Octopus/
-│
-├── 00_Personal_Os/            🌱 Personal OS (29+ items)
+├── 00_Agent_Teams_Lite/      ⚡ SDD Workflow System (14 fases)
+├── 00_Compound_Engineering/  ⭐ Core Engineering (9 skills)
+├── 00_Personal_Os/           🌱 Personal OS (9 skills)
 │   ├── 01_Life_OS/             Sistema de vida personal
 │   ├── 02_Personal_Os/         Core del OS
 │   ├── 03_Fantasticos/         4 Fantásticos
@@ -88,32 +23,65 @@
 │   ├── 06_Plantillas/          Templates
 │   ├── 07_Hillary/             Hillary — Life OS Specialist
 │   ├── 08_Learning_Always/     URL→Knowledge (legacy pipeline)
-│   └── 09_Workflow_Os/ 🆕     Workflow Os — pipelines ejecutables
+│   └── 09_Workflow_Os/         Workflow Os — pipelines ejecutables
 │       ├── 01_Learning_Always/   LA — Metodología aprendizaje continuo
-│       └── 02_Dynamic_Workflows/ DW — Pipeline 11 fases + skill mapping
+│       └── 02_Dynamic_Workflows/ DW — Pipeline 11 fases
 │
-├── 07_Invictus_Web/           🌐 Invictus Web (14 items)
+├── 00_Skill_Auditor/         🔍 Auditoría de skills
+├── 00_System_Core/           ⭐ Stack Core del OS
+├── 00_Workflows/             🔄 Workflows & Orquestación (5 skills)
+│   ├── 01_Agent_Teams_Lite/
+│   ├── 02_Project_Manager/
+│   ├── 03_Product_Manager/
+│   ├── 04_PM_Orchestrator/
+│   └── 05_Super_Campeones/
+│
+├── 01_Creacion_Contenidos/   🎨 Contenido (17 skills)
+│   ├── 01-15: Brand Voice → Marketing Scripts
+│   ├── 16_Imported_Packages/
+│   └── 21_Content_Generation/
+│
+├── 02_Diseno_Ui_Ux/          🎨 UI/UX Design (16 skills)
+│   ├── 01-11: Product Design → Marvel Avengers
+│   ├── 12_Premium_Image_Studio/
+│   ├── 13_Carousel_Master/
+│   ├── 14_Video_Visuals_Producer/
+│   ├── 15_Youtube_Thumbnail_Prompter/
+│   └── 16_Video_Prompt_Builder/
+│
+├── 03_Video_Media/           🎥 Video & Media (2 skills)
+│   ├── 01_Video_Intel/
+│   └── 02_James_Cameron/
+│
+├── 04_Automatizacion/        ⚙️ Automatización (19 skills)
+│   ├── 01-08: N8N JS → N8N Invictus
+│   ├── 10_Firecrawl/
+│   ├── 10_GWS_Client/
+│   ├── 11_Gcierr/ + 11_Gws_Client/
+│   ├── 13-17: Content From URL → Learning URL→Knowledge
+│
+├── 05_Claude_Ads/            📢 Claude Ads (9 skills)
+├── 06_Tools/                 🛠️ Tools & Dev (6 skills)
+│   ├── 06_Testing/
+│   ├── 11_Doc_Processing/
+│   ├── 12_Qmd/
+│   ├── 13_System_Master/
+│   ├── 14_Silicon_Valley_Data_Analyst/
+│   └── 15_Ai_News_Weekly_Report/
+│
+├── 07_Invictus_Web/          🌐 Invictus Web (3 skills)
 │   ├── 01_Superpowers/
 │   ├── 02_Buscador_Skills/
 │   └── 03_Playwright/
 │
-├── 05_Claude_Ads/             📢 Claude Ads (20 items)
+├── 10_Laia_Learning/         🧠 Context Engineering (4 skills)
+│   ├── 01_Context_Canonical/
+│   ├── 02_Prompts/
+│   ├── 03_Workflows/
+│   └── 04_References/
 │
-├── 11_Laia_Learning/          🧠 Context Engineering & Onboarding (1.0)
-│   ├── 01_Context_Canonical/  Templates canónicos
-│   ├── 02_Prompts/            System prompts (Hermes, Códex, Gauss)
-│   └── 03_Workflows/          Pipeline laia-init
-│
-├── 11_Doc_Processing/         📚 Docs
-├── 13_System_Master/          🏆 System Master
-├── 16_Silicon_Valley_Data_Analyst/ 📊 Analytics
-├── 17_SEO_SOTA_Master/       🔍 SEO
-├── 20_James_Cameron/          🎬 Video Production
-├── 27_Qmd/                   💾 QMD Search
-├── 28_Carousel_Master/       🎠 Carruseles
-│
-├── INDEX_AREA_FUNCTIONAL.md   📋 Índice navegable
-├── MAPA_MIGRACION.md         🗺️ Mapa de migración
+├── INDEX_AREA_FUNCTIONAL.md  📋 Índice navegable
+├── MAPA_MIGRACION.md         🗺️ Mapa de migración (histórico)
 └── README.md                  📖 Este archivo
 ```
 
@@ -129,7 +97,7 @@
 | Video & Media                                                  | `03_Video_Media/`                                           |
 | Automatización (N8N, Firecrawl)                                | `04_Automatizacion/`                                        |
 | Workflows (Agent Teams, PM)                                    | `00_Workflows/`                                             |
-| Tools (Testing, DevOps)                                        | `06_Tools/`                                                 |
+| Tools (Testing, Qmd, System Master)                            | `06_Tools/`                                                 |
 | Personal OS (Hillary, Life OS, Workflows)                      | `00_Personal_Os/`                                           |
 | Aprendizaje continuo con IA                                    | `00_Personal_Os/09_Workflow_Os/01_Learning_Always/`         |
 | Pipeline completo de ejecución                                 | `00_Personal_Os/09_Workflow_Os/02_Dynamic_Workflows/`       |
@@ -141,13 +109,23 @@
 
 ## 📝 Changelog
 
+**2026-05-31:** Fix Registry + Wrapper Cleanup (SOTA 🏆)
+- ✅ 8 wrapper directories flattened (Life OS, Personal OS, Fantasticos, PM Orchestrator, Video Intel, Superpowers, Buscador, Playwright)
+- ✅ 9 empty skill dirs removed from registry (Area 06 — Skill Creator, Template, Harness, DevOps, Vibe, Perf, Invictus, A11y, Octopus)
+- ✅ 2 .md file entries removed from registry (Workflow Orchestrator, LFG Engine)
+- ✅ 5 SKILL.md files created for content-full dirs without them
+- ✅ validate-registry.py fixed: Unicode-safe, skips Anthropic Area 11 (tag-only)
+- ✅ Registry validator: 0 failures, 74/74 skills OK
+- ✅ README structure actualizada con directorios reales
+- ✅ UNIFIED_REGISTRY.md sync con estado actual
+- ✅ OS Conductor counts actualizados (agents 47→67, tools 15→6)
+
 **2026-05-30:** Workflow Os — LA + Dynamic Workflows 🆕
 - ✅ Movido `11_Learning_Always` → `09_Workflow_Os/01_Learning_Always/`
 - ✅ Movido `12_Dynamic_Workflows` → `09_Workflow_Os/02_Dynamic_Workflows/`
 - ✅ Dynamic Workflows ahora delega cada fase a una skill específica del OS
 - ✅ Actualizado OS Conductor (registry + routing)
-- ✅ Eliminados directorios legacy `11_Learning_Always/` y `12_Dynamic_Workflows/`
-- ⚠️ Audit completo reveló 30+ duplicados numéricos en el OS (pendiente)
+- ✅ Eliminados directorios legacy
 
 **2026-05-19:** Auditoría Completa v4.1
 - ✅ Sincronizado con estructura real: 369 skills, 13 áreas funcionales
