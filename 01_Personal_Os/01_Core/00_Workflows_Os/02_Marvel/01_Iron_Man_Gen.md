@@ -94,7 +94,7 @@ Think_Different/
 | **Reglas** (13 .mdc)           | `01_Personal_Os/01_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
 | **Agentes** (55 source / 82 total) | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
 | **HUBs** (20)                  | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema                    |
-| **MCPs** (7+38)                | `.mcp.json` (raíz)                                                        | Herramientas externas                     |
+| **MCPs** (8+38)                | `.mcp.json` (raíz)                                                        | Herramientas externas                     |
 | **Hooks** (10)                 | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                               | Automatizaciones pre/post tool            |
 | **Memory**                     | Engram MCP                                                                | Contexto persistente entre sesiones       |
 | **GGA Code Review**            | `.agent/05_GGA/`                                                          | Code review automático                    |
@@ -212,4 +212,4 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 ---
 
 *Think Different PersonalOS v4.9 Consequences — Production Ready*
-*Actualizado: 2026-05-29 | 385 skills | 55 agents (82 total sistema) | 7+38 MCPs | 20 HUBs | 13 rules*
+*Actualizado: 2026-05-31 | 385 skills | **62** agents (82 total sistema) | **8+38** MCPs | 20 HUBs (+10 aux) | 13 rules*

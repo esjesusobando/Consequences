@@ -8,11 +8,11 @@
 
 | Componente                            | Total                                                                      | Estado                                         |
 |--------------------------------------|---------------------------------------------------------------------------|-----------------------------------------------|
-| MCPs Claude Code                      | **7** (root) + **38** (backup)                                             | ✅ SYNCED — drift 0                             |
+| MCPs Claude Code                      | **8** (root) + **38** (backup)                                             | ✅ SYNCED — drift 0                             |
 | Every CE                              | v3.8.4 (local repo) ✅                                                      | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.30.6                                                                    | ✅ AVAILABLE                                    |
 | Skills                                | **394** (14 áreas funcionales)                                             | ✅ VERIFIED — 0 sin frontmatter                 |
-| Agentes                               | **48** (source) / 82 (con SDD/CE)                                          | ✅ SYNCED                                       |
+| Agentes                               | **62** source / **82** total (con SDD/CE)                                   | ✅ SYNCED                                       |
 | HUBs                                  | **20** (19 numerados + HUB_SOTA) + **256 scripts**                        | ✅ ACTIVE                                       |
 | Scripts totales                       | — (incluido en HUBs)                                                       | —                                               |
 | Workflows                             | **28** (7 categorías en 00_Workflows_Os)                                   | ✅ ACTIVE                                       |
@@ -21,8 +21,8 @@
 | JARVIS Manifests                      | 7 en 00_Manifest/                                                          | ✅ VALIDATED                                    |
 | Integrations                          | **2** (01_Fireflies, 02_Granola)                                           | ✅ INTEGRATED                                   |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-29 — v4.9 Consequences
-> Agent Sync: 55 agents (source) / 82 total con SDD/CE. Skills: 385 (SKILL.md source) / ~490 legacy. MCPs: 7+38. HUBs: 20. Scripts: 256.
+> **🟢 Última AUDITORÍA:** 2026-05-31 — v4.9 Consequences Final
+> Agent Sync: 62 agents (source) / 82 total con SDD/CE. Skills: 385 (SKILL.md source) / ~490 legacy. MCPs: **8+38**. HUBs: 20 (+10 aux scripts 21-30). Scripts: 256+.
 
 ---
 
@@ -188,15 +188,16 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## ⚡ AGENTES — 48 configuraciones activas
+## ⚡ AGENTES — 62 source / 82 total
 
-| Categoría                 | Cantidad  | Ubicación                                                              |
-|--------------------------|----------|-----------------------------------------------------------------------|
-| **Dream Team**            | 5         | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform)          |
-| **Specialists Compound**  | 23        | `02_Specialists_Compound/`                                             |
-| **Individuales**          | 13        | Raíz `01_Agents/` (Orchestrator, AIPM_Judge, LFG, etc.)                |
-| **Growth**                | 5         | `03_Growth/`                                                           |
-| **Root**                  | 2         | `01_Agents/` (00_Orchestrator, 00_Agent_Template)                      |
+| Categoría | Cantidad | Ubicación |
+|-----------|----------|-----------|
+| 🎯 Dream Team | 5 | `01_Dream_Team/` — Product, Data, Marketing, Design, Platform |
+| 🔬 Specialists Compound | 23 | `02_Specialists_Compound/` |
+| 🧑 Individuales | 28 | Raíz `01_Agents/` — Orchestrator, AIPM, LFG, Hillary, Laia… |
+| 📈 Growth | 5 | `03_Growth/` — Content, YouTube, Carousel |
+| 🧠 OS Conductor | 1 | `00_OS_Conductor/` — Entry point Anthropic 2.0 Harness |
+| ⚙️ SDD/CE | +26 | gentle-ai, SDD phases, CE workflows |
 
 ---
 
@@ -227,6 +228,14 @@ Think_Different/                         # RAÍZ
 | 20  | System Mapper ★    | `20_System_Mapper_Hub.py`             | Genera 7 manifests JARVIS                                  |
 | 21  | Legacy Cleanup     | `21_Legacy_Path_Cleanup.py`           | Limpia paths legacy v2.x                                   |
 | 22  | Skill Frontmatter  | `22_Validate_Skill_Frontmatter.py`    | Detecta skills sin frontmatter YAML                        |
+| 23  | Preview Generator  | `23_Preview_Generator.js`             | Generador de previews (JavaScript)                         |
+| 24  | Mass Path Migr.    | `24_mass_path_migration.py`           | Migración masiva de paths (batch)                           |
+| 25  | Minimax Optimizer  | `25_Minimax_Optimizer_Hub.py`         | Optimizador Minimax                                        |
+| 26  | Parallel Audit Pro | `26_Parallel_Audit_Pro.py`            | Auditoría paralela avanzada (ex 33_)                        |
+| 27  | Skill Auditor      | `27_Skill_Auditor.py`                 | Auditor específico de skills (ex 34_)                       |
+| 28  | System Health      | `28_System_Health_Monitor.py`         | Monitor de salud del sistema (ex 50_)                      |
+| 29  | Repo Sync Auditor  | `29_Repo_Sync_Auditor.py`             | Auditor sync de repos (ex 57_)                             |
+| 30  | Path Replacement   | `30_path_replacement.py`              | Reemplazo de paths legacy (ex 23_)                         |
 
 ### Scripts Auxiliary
 

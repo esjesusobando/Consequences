@@ -1,6 +1,6 @@
 # Goals & Strategic Direction
 
-_Last updated: May 25, 2026_
+_Last updated: May 31, 2026_
 
 ---
 
@@ -291,13 +291,15 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 
 ---
 
+## 14. Note for AI Assistant
+
+* *Tu asistente de IA usa este documento para priorizar tareas y sugerir en qué trabajar cada día.**
+* *Revisa y actualiza este documento semanalmente según cambien tus prioridades._
+
+---
+
 ## 15. What are your top 3 priorities right now?
 
 1. Activar Think_Different PersonalOS en el flujo de trabajo diario.
 2. Empujar el sistema a GitHub (`think-different` repo privado).
 3. Enviar un entregable real usando el OS de extremo a extremo.
-
-## 14. Note for AI Assistant
-
-* *Tu asistente de IA usa este documento para priorizar tareas y sugerir en qué trabajar cada día.**
-* *Revisa y actualiza este documento semanalmente según cambien tus prioridades._

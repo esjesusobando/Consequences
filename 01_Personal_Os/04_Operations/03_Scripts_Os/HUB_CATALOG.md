@@ -1,7 +1,7 @@
 # 🔧 HUB_CATALOG — PersonalOS v4.9 Consequences
 
-**Versión:** 4.8
-**Última actualización:** 2026-05-27
+**Versión:** 4.9
+**Última actualización:** 2026-05-31
 **Ubicación:** `01_Personal_Os/04_Operations/03_Scripts_Os/`
 **PYTHONPATH:** Configurado vía `config_paths.py` en todos los HUBs
 
@@ -50,7 +50,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py          # D
 python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py --apply  # Con auto-fix
 python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py --agents # Solo 3 agentes + Judge
 ```
-Valida: estructura (00-08), naming convention, links rotos, archivos huérfanos, skills.
+Valida: estructura `00-08`, naming convention, links rotos, archivos huérfanos, skills.
 
 ### 02 — Git
 ```bash
@@ -95,7 +95,8 @@ Motor de automejora. Coordina con `04_Operations/01_Auto_Improvement/` para aná
 
 ### 12 — Context Bar (en 12_Auditors_Os/scripts/)
 ```bash
-python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/00_Context_Usage_Bar.py
+python ...15_MCP_Sync_Hub.py --report  # Drift report
+python ...15_MCP_Sync_Hub.py --sync    # Sincronizar MCPs
 ```
 Muestra visualmente el porcentaje de contexto utilizado en la sesión actual.
 
@@ -150,6 +151,36 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --dashboar
 python 01_Personal_Os/04_Operations/03_Scripts_Os/18_Telemetry_Hub.py --stats      # Stats rápidos
 ```
 Dashboard de telemetría: uso del sistema, métricas de sesiones, rendimiento de agentes. HUB canónico JARVIS 3.0.
+
+---
+
+## Scripts Auxiliares — 21-30 (Migración + Auditoría + Utilidades)
+
+> Scripts de utilidad para mantenimiento del sistema. Existen en raíz de `03_Scripts_Os/` pero no son HUBs principales.
+
+| # | Script | Propósito |
+|---|--------|-----------|
+| 21 | `21_Legacy_Path_Cleanup.py` | Limpieza de paths legacy v2.x |
+| 22 | `22_Validate_Skill_Frontmatter.py` | Detecta skills sin frontmatter YAML válido |
+| 23 | `23_Preview_Generator.js` | Generador de previews (JavaScript) |
+| 24 | `24_mass_path_migration.py` | Migración masiva de paths (batch) |
+| 25 | `25_Minimax_Optimizer_Hub.py` | Optimizador usando estrategia Minimax |
+| 26 | `26_Parallel_Audit_Pro.py` | Auditoría paralela avanzada (ex 33_) |
+| 27 | `27_Skill_Auditor.py` | Auditor específico de skills (ex 34_) |
+| 28 | `28_System_Health_Monitor.py` | Monitor de salud del sistema (ex 50_) |
+| 29 | `29_Repo_Sync_Auditor.py` | Auditor de sincronización de repos (ex 57_) |
+| 30 | `30_path_replacement.py` | Reemplazo de paths legacy (ex 23_) |
+
+### Scripts Adicionales en Raíz
+
+| Script | Propósito |
+|--------|-----------|
+| `HUB_SOTA.py` | HUB SOTA — features estado del arte |
+| `config_paths.py` | Resolución centralizada de paths (14,530 bytes) |
+| `refactor_revert_id.py` | Utilidad one-off para revertir IDs |
+| `qmd.sh` | Quick Make script |
+| `testsprite_failover.sh` | Failover TestSprite |
+| `tarea_lista.bat` | Notificación tarea completada (Windows) |
 
 ---
 

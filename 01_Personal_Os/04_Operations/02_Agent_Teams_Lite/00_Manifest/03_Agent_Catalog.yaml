@@ -1,26 +1,15 @@
-# Agent Catalog — generated 2026-05-29T12:53:43
+# Agent Catalog — generated 2026-05-31T14:36:11
 # Source of truth: 01_Personal_Os/01_Core/02_Tools/01_Agents/
 
 version: v3.0
-generated: "2026-05-29T12:53:43"
+generated: "2026-05-31T14:36:11"
 policy:
   source_of_truth: 01_Personal_Os/01_Core/02_Tools/01_Agents/
   backup: .agent/01_Agents/
   sync_direction: source -> backup (uni-directional)
 totals:
-  source: 55
-  backup: 52
-  in_sync: 48
-  drift: 11
+  source: 62
+  backup: 62
+  in_sync: 62
+  drift: 0
 drift_files:
-  - 00_Agent_Teams_Lite/AGENTS.md
-  - 07_Agent_Teams_Lite_Gen/00_Shared/engram-convention.md
-  - 07_Agent_Teams_Lite_Gen/00_Shared/openspec-convention.md
-  - 07_Agent_Teams_Lite_Gen/00_Shared/persistence-contract.md
-  - 14_Laia_Learning.md
-  - 15_Marketing_Estratega.md
-  - 16_Marketing_Creador.md
-  - 17_Marketing_Analista.md
-  - 18_Workflow_Youtube.md
-  - 19_Workflow_LinkedIn.md
-  - 20_Workflow_Newsletter.md

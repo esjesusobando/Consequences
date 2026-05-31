@@ -1,16 +1,21 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-29T12:53:43",
+  "generated": "2026-05-31T14:36:11",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
     "areas": 14,
-    "skills": 385,
+    "skills": 386,
     "without_frontmatter": 0
   },
   "by_area": {
     "00_Agent_Teams_Lite": {
-      "count": 13,
+      "count": 14,
       "skills": [
+        {
+          "name": "00_Agent_Teams_Lite",
+          "path": "00_Agent_Teams_Lite/SKILL.md",
+          "has_frontmatter": true
+        },
         {
           "name": "02_Sdd_Init",
           "path": "00_Agent_Teams_Lite/02_Sdd_Init/SKILL.md",
@@ -399,7 +404,7 @@
       ]
     },
     "00_Personal_Os": {
-      "count": 32,
+      "count": 24,
       "skills": [
         {
           "name": "00_Personal_Os",
@@ -407,148 +412,98 @@
           "has_frontmatter": true
         },
         {
-          "name": "18_Personal_Life_OS",
-          "path": "00_Personal_Os/01_Life_OS/18_Personal_Life_OS/SKILL.md",
+          "name": "01_Life_OS",
+          "path": "00_Personal_Os/01_Life_OS/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "01_Quick_Capture",
-          "path": "00_Personal_Os/01_Life_OS/18_Personal_Life_OS/01_Quick_Capture/SKILL.md",
+          "path": "00_Personal_Os/01_Life_OS/01_Quick_Capture/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "02_Plan_My_Day",
-          "path": "00_Personal_Os/01_Life_OS/18_Personal_Life_OS/02_Plan_My_Day/SKILL.md",
+          "path": "00_Personal_Os/01_Life_OS/02_Plan_My_Day/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "03_Daily_Notes",
-          "path": "00_Personal_Os/01_Life_OS/18_Personal_Life_OS/03_Daily_Notes/SKILL.md",
+          "path": "00_Personal_Os/01_Life_OS/03_Daily_Notes/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "04_Recording_Mode",
-          "path": "00_Personal_Os/01_Life_OS/18_Personal_Life_OS/04_Recording_Mode/SKILL.md",
+          "path": "00_Personal_Os/01_Life_OS/04_Recording_Mode/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "05_Returns_Tracker",
-          "path": "00_Personal_Os/01_Life_OS/18_Personal_Life_OS/05_Returns_Tracker/SKILL.md",
+          "path": "00_Personal_Os/01_Life_OS/05_Returns_Tracker/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "08_Personal_Os",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "01_Fork_Terminal",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "fork-terminal",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/skills/fork-terminal/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "parallel-orchestration",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/01_Fork_Terminal/skills/parallel-orchestration/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "02_Agent_Orchestrator",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/02_Agent_Orchestrator/SKILL.md",
+          "name": "02_Personal_Os",
+          "path": "00_Personal_Os/02_Personal_Os/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "03_System_Guardian",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/03_System_Guardian/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "04_Premium_Git_Manager",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/04_Premium_Git_Manager/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "05_Subagent_Driven_Development",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/05_Subagent_Driven_Development/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "06_Browser_Use",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/06_Browser_Use/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "07_Csv_Management",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/07_Csv_Management/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "08_Managing_Image_Assets",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/08_Managing_Image_Assets/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "09_Frictionless_Capture",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/09_Frictionless_Capture/SKILL.md",
+          "path": "00_Personal_Os/02_Personal_Os/03_System_Guardian/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "10_Morning_Standup",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/10_Morning_Standup/SKILL.md",
+          "path": "00_Personal_Os/02_Personal_Os/10_Morning_Standup/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "11_Token_Management",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/11_Token_Management/SKILL.md",
+          "path": "00_Personal_Os/02_Personal_Os/11_Token_Management/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "12_Weekly_Review",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/12_Weekly_Review/SKILL.md",
+          "path": "00_Personal_Os/02_Personal_Os/12_Weekly_Review/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "13_Ritual_Cierre",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/13_Ritual_Cierre/SKILL.md",
+          "path": "00_Personal_Os/02_Personal_Os/13_Ritual_Cierre/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "14_Sync_Notes",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/14_Sync_Notes/SKILL.md",
+          "path": "00_Personal_Os/02_Personal_Os/14_Sync_Notes/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "15_Validate_Stack",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/15_Validate_Stack/SKILL.md",
+          "path": "00_Personal_Os/02_Personal_Os/15_Validate_Stack/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "16_Update_Links",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/16_Update_Links/SKILL.md",
+          "path": "00_Personal_Os/02_Personal_Os/16_Update_Links/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "17_Clean_System",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/17_Clean_System/SKILL.md",
+          "path": "00_Personal_Os/02_Personal_Os/17_Clean_System/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "18_Ritual_Dominical",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/18_Ritual_Dominical/SKILL.md",
+          "path": "00_Personal_Os/02_Personal_Os/18_Ritual_Dominical/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "19_Repo_Sync",
-          "path": "00_Personal_Os/02_Personal_Os/08_Personal_Os/19_Repo_Sync/SKILL.md",
+          "path": "00_Personal_Os/02_Personal_Os/19_Repo_Sync/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "26_Fantasticos",
-          "path": "00_Personal_Os/03_Fantasticos/26_Fantasticos/SKILL.md",
+          "name": "03_Fantasticos",
+          "path": "00_Personal_Os/03_Fantasticos/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -559,6 +514,16 @@
         {
           "name": "08_Learning_Always",
           "path": "00_Personal_Os/08_Learning_Always/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "01_Learning_Always",
+          "path": "00_Personal_Os/09_Workflow_Os/01_Learning_Always/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "02_Dynamic_Workflows",
+          "path": "00_Personal_Os/09_Workflow_Os/02_Dynamic_Workflows/SKILL.md",
           "has_frontmatter": true
         }
       ]
@@ -792,8 +757,8 @@
           "has_frontmatter": true
         },
         {
-          "name": "24_PM_Agent_Orchestrator",
-          "path": "00_Workflows/04_PM_Orchestrator/24_PM_Agent_Orchestrator/SKILL.md",
+          "name": "04_PM_Orchestrator",
+          "path": "00_Workflows/04_PM_Orchestrator/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -804,7 +769,7 @@
       ]
     },
     "01_Creacion_Contenidos": {
-      "count": 47,
+      "count": 49,
       "skills": [
         {
           "name": "01_Creacion_Contenidos",
@@ -1040,6 +1005,16 @@
           "name": "15_Marketing_Scripts",
           "path": "01_Creacion_Contenidos/15_Marketing_Scripts/SKILL.md",
           "has_frontmatter": true
+        },
+        {
+          "name": "16_Imported_Packages",
+          "path": "01_Creacion_Contenidos/16_Imported_Packages/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "21_Content_Generation",
+          "path": "01_Creacion_Contenidos/21_Content_Generation/SKILL.md",
+          "has_frontmatter": true
         }
       ]
     },
@@ -1227,8 +1202,8 @@
           "has_frontmatter": true
         },
         {
-          "name": "19_Video_Intel",
-          "path": "03_Video_Media/01_Video_Intel/19_Video_Intel/SKILL.md",
+          "name": "01_Video_Intel",
+          "path": "03_Video_Media/01_Video_Intel/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -1259,7 +1234,7 @@
       ]
     },
     "04_Automatizacion": {
-      "count": 24,
+      "count": 27,
       "skills": [
         {
           "name": "04_Automatizacion",
@@ -1307,6 +1282,11 @@
           "has_frontmatter": true
         },
         {
+          "name": "08_N8N_Invictus",
+          "path": "04_Automatizacion/08_N8N_Invictus/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "n8n-code-javascript",
           "path": "04_Automatizacion/08_N8N_Invictus/n8n-code-javascript/SKILL.md",
           "has_frontmatter": true
@@ -1342,8 +1322,18 @@
           "has_frontmatter": true
         },
         {
+          "name": "10_Firecrawl",
+          "path": "04_Automatizacion/10_Firecrawl/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "10_GWS_Client",
           "path": "04_Automatizacion/10_GWS_Client/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "11_Gcierr",
+          "path": "04_Automatizacion/11_Gcierr/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -1914,7 +1904,7 @@
       ]
     },
     "07_Invictus_Web": {
-      "count": 15,
+      "count": 18,
       "skills": [
         {
           "name": "07_Invictus_Web",
@@ -1922,73 +1912,88 @@
           "has_frontmatter": true
         },
         {
+          "name": "01_Superpowers",
+          "path": "07_Invictus_Web/01_Superpowers/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "brainstorming",
-          "path": "07_Invictus_Web/01_Superpowers/00_Superpowers-plugin/brainstorming/SKILL.md",
+          "path": "07_Invictus_Web/01_Superpowers/brainstorming/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "dispatching-parallel-agents",
-          "path": "07_Invictus_Web/01_Superpowers/00_Superpowers-plugin/dispatching-parallel-agents/SKILL.md",
+          "path": "07_Invictus_Web/01_Superpowers/dispatching-parallel-agents/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "executing-plans",
-          "path": "07_Invictus_Web/01_Superpowers/00_Superpowers-plugin/executing-plans/SKILL.md",
+          "path": "07_Invictus_Web/01_Superpowers/executing-plans/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "finishing-a-development-branch",
-          "path": "07_Invictus_Web/01_Superpowers/00_Superpowers-plugin/finishing-a-development-branch/SKILL.md",
+          "path": "07_Invictus_Web/01_Superpowers/finishing-a-development-branch/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "receiving-code-review",
-          "path": "07_Invictus_Web/01_Superpowers/00_Superpowers-plugin/receiving-code-review/SKILL.md",
+          "path": "07_Invictus_Web/01_Superpowers/receiving-code-review/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "requesting-code-review",
-          "path": "07_Invictus_Web/01_Superpowers/00_Superpowers-plugin/requesting-code-review/SKILL.md",
+          "path": "07_Invictus_Web/01_Superpowers/requesting-code-review/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "subagent-driven-development",
-          "path": "07_Invictus_Web/01_Superpowers/00_Superpowers-plugin/subagent-driven-development/SKILL.md",
+          "path": "07_Invictus_Web/01_Superpowers/subagent-driven-development/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "systematic-debugging",
-          "path": "07_Invictus_Web/01_Superpowers/00_Superpowers-plugin/systematic-debugging/SKILL.md",
+          "path": "07_Invictus_Web/01_Superpowers/systematic-debugging/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "test-driven-development",
-          "path": "07_Invictus_Web/01_Superpowers/00_Superpowers-plugin/test-driven-development/SKILL.md",
+          "path": "07_Invictus_Web/01_Superpowers/test-driven-development/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "using-git-worktrees",
-          "path": "07_Invictus_Web/01_Superpowers/00_Superpowers-plugin/using-git-worktrees/SKILL.md",
+          "path": "07_Invictus_Web/01_Superpowers/using-git-worktrees/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "using-superpowers",
-          "path": "07_Invictus_Web/01_Superpowers/00_Superpowers-plugin/using-superpowers/SKILL.md",
+          "path": "07_Invictus_Web/01_Superpowers/using-superpowers/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "verification-before-completion",
-          "path": "07_Invictus_Web/01_Superpowers/00_Superpowers-plugin/verification-before-completion/SKILL.md",
+          "path": "07_Invictus_Web/01_Superpowers/verification-before-completion/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "writing-plans",
-          "path": "07_Invictus_Web/01_Superpowers/00_Superpowers-plugin/writing-plans/SKILL.md",
+          "path": "07_Invictus_Web/01_Superpowers/writing-plans/SKILL.md",
           "has_frontmatter": true
         },
         {
           "name": "writing-skills",
-          "path": "07_Invictus_Web/01_Superpowers/00_Superpowers-plugin/writing-skills/SKILL.md",
+          "path": "07_Invictus_Web/01_Superpowers/writing-skills/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "02_Buscador_Skills",
+          "path": "07_Invictus_Web/02_Buscador_Skills/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Playwright",
+          "path": "07_Invictus_Web/03_Playwright/SKILL.md",
           "has_frontmatter": true
         }
       ]
