@@ -58,7 +58,7 @@
 | **Marvel Avengers**                           | `02_Diseno_Ui_Ux/11_Marvel_Avengers/`                               | Temática Marvel para interfaces                                                              |
 | **Frontend Slides**                           | `05_Archive/07_Repos_Gentleman/frontend-slides/`                    | HTML presentations — predeterminada para presentaciones                                      |
 
-> **Skills en 03_Resultado:** `00_Output_Skills/` — Output de skills compiladas
+> **Skills en 03_Resultado:** *(pendiente — directorio no existe en disco)*
 
 ---
 
@@ -82,8 +82,21 @@
 | **N8N Code Python**                          | `04_Automatizacion/02_N8N_Python/`              | Código Python en N8N                           |
 | **N8N Expression Syntax**                    | `04_Automatizacion/03_N8N_Expressions/`         | Sintaxis de expresiones N8N                    |
 | **N8N MCP Tools Expert**                     | `04_Automatizacion/04_N8N_MCP/`                 | Herramientas MCP en N8N                        |
+| **N8N Nodes**                                | `04_Automatizacion/05_N8N_Nodes/`               | Configuración de nodos N8N                     |
+| **N8N Validation**                           | `04_Automatizacion/06_N8N_Validation/`          | Validación de workflows N8N                    |
 | **N8N Workflow Patterns**                    | `04_Automatizacion/07_N8N_Workflows/`           | Patrones de workflows                          |
-| **Firecrawl Scraper**                        | `04_Automatizacion/09_Firecrawl/`               | Web scraping con Firecrawl                     |
+| **AI News Weekly**                           | `04_Automatizacion/08_AI_News_Weekly/`          | News semanal con IA                            |
+| **N8N Invictus**                             | `04_Automatizacion/08_N8N_Invictus/`            | Workflows N8N del ecosistema Invictus          |
+| **Firecrawl Scraper**                        | `04_Automatizacion/10_Firecrawl/`               | Web scraping con Firecrawl                     |
+| **GWS Client**                               | `04_Automatizacion/10_GWS_Client/`              | Cliente Google Workspace                       |
+| **Gcierr**                                   | `04_Automatizacion/11_Gcierr/`                  | Herramientas Gcierr                            |
+| **Gws Client**                               | `04_Automatizacion/11_Gws_Client/`              | Cliente Google Workspace (alternativo)         |
+| **Content From URL**                         | `04_Automatizacion/13_Content_From_Url/`        | Extraer contenido desde URL                    |
+| **Compound Knowledge**                       | `04_Automatizacion/14_Compound_Knowledge/`      | Conocimiento compuesto                         |
+| **N8N (general)**                            | `04_Automatizacion/14_N8n/`                     | Skill N8N general                              |
+| **OS Self Improvement**                      | `04_Automatizacion/15_Os_Self_Improvement/`     | Auto-mejora del OS                             |
+| **Reverse Engineering**                      | `04_Automatizacion/16_Reverse_Engineering/`     | Ingeniería inversa                             |
+| **Learning URL→Knowledge**                   | `04_Automatizacion/17_Learning_Url_To_Knowledge/` | Pipeline URL → conocimiento                   |
 
 ---
 
@@ -96,6 +109,8 @@
 | **Product Manager**                          | `00_Workflows/03_Product_Manager/`                            | Gestión de producto                                  |
 | **PM Agent Orchestrator**                    | `00_Workflows/04_PM_Orchestrator/`                            | Orquestación PM avanzada                             |
 | **Workflow Orchestrator**                    | `00_Workflows/05_Workflow_Orchestrator.md`                    | Orquestación de workflows                            |
+| **Super Campeones**                          | `00_Workflows/05_Super_Campeones/`                            | Workflows Super Campeones                            |
+| **LFG Engine**                               | `00_Workflows/06_LFG_Engine.md`                               | Motor autónomo LFG                                   |
 
 ---
 

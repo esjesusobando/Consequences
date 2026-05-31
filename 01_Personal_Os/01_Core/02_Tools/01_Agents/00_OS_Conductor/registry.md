@@ -13,7 +13,7 @@
 | 1 | **Agent Teams Lite** | `00_Agent_Teams_Lite/` | `sdd`, `workflow`, `init→archive` | Ciclo completo SDD: init, explore, propose, spec, design, tasks, apply, verify, archive |
 | 2 | **Compound Engineering** | `00_Compound_Engineering/` | `ce`, `spider`, `review` | CE Spider, code review, compound workflow |
 | 3 | **Personal OS Stack** | `00_System_Core/` | `core`, `guardian`, `validation` | Salud del OS, validación estructural, stack base |
-| 4 | **Skill Auditor** | `00_Skill_Auditor/` | `audit`, `quality` | Auditoría y validación de calidad de skills |
+| 4 | **Skill Auditor** | `00_Skill_Auditor/` | `audit`, `quality`, `validation` | Auditoría y validación de calidad de skills |
 
 ---
 
@@ -85,10 +85,10 @@
 | 6 | **N8N Validation** | `06_N8N_Validation/` | `n8n`, `validation` | Validación de workflows N8N |
 | 7 | **N8N Workflows** | `07_N8N_Workflows/` | `n8n`, `patterns` | Patrones de workflows N8N |
 | 8 | **N8N Invictus** | `08_N8N_Invictus/` | `n8n`, `invictus` | Workflows N8N del ecosistema Invictus |
-| 9 | **Firecrawl** | `09_Firecrawl/` | `scraping`, `web`, `firecrawl` | Web scraping con Firecrawl |
+| 9 | **Firecrawl** | `10_Firecrawl/` | `scraping`, `web`, `firecrawl` | Web scraping con Firecrawl |
 | 10 | **GWS Client** | `10_GWS_Client/` | `gws`, `google-workspace` | Cliente Google Workspace |
 | 11 | **Gcierr** | `11_Gcierr/` | `gcierr`, `tools` | Herramientas Gcierr |
-| 12 | **N8N** | `12_N8N/` | `n8n`, `general` | Skill N8N general |
+| 12 | **N8N** | `14_N8n/` | `n8n`, `general` | Skill N8N general |
 | 13 | **Content From URL** | `13_Content_From_Url/` | `url`, `content`, `extract` | Extraer contenido desde URL |
 | 14 | **Compound Knowledge** | `14_Compound_Knowledge/` | `knowledge`, `compound` | Conocimiento compuesto |
 | 15 | **OS Self Improvement** | `15_Os_Self_Improvement/` | `self-improvement`, `os` | Auto-mejora del OS |
@@ -101,13 +101,13 @@
 
 | # | Skill | Path | Tags | ¿Cuándo usarla? |
 |---|-------|------|------|-----------------|
-| 1 | **Agent Teams Lite** | `01_Agent_Teams_Lite/` | `agents`, `orchestration` | Orquestación de equipos de agentes |
-| 2 | **Project Manager** | `02_Project_Manager/` | `project`, `management` | Gestión de proyectos |
-| 3 | **Product Manager** | `03_Product_Manager/` | `product`, `management` | Gestión de producto |
-| 4 | **PM Orchestrator** | `04_PM_Orchestrator/` | `pm`, `orchestration` | Orquestación PM avanzada |
-| 5 | **Super Campeones** | `04_Super_Campeones/` | `super`, `champion` | Workflows Super Campeones |
-| 6 | **Workflow Orchestrator** | `05_Workflow_Orchestrator.md` | `workflow`, `orchestration` | Orquestación de workflows |
-| 7 | **LFG Engine** | `06_LFG_Engine.md` | `lfg`, `autonomous` | Motor autónomo LFG |
+| 1 | **Agent Teams Lite** | `00_Workflows/01_Agent_Teams_Lite/` | `agents`, `orchestration` | Orquestación de equipos de agentes |
+| 2 | **Project Manager** | `00_Workflows/02_Project_Manager/` | `project`, `management` | Gestión de proyectos |
+| 3 | **Product Manager** | `00_Workflows/03_Product_Manager/` | `product`, `management` | Gestión de producto |
+| 4 | **PM Orchestrator** | `00_Workflows/04_PM_Orchestrator/` | `pm`, `orchestration` | Orquestación PM avanzada |
+| 5 | **Super Campeones** | `00_Workflows/05_Super_Campeones/` | `super`, `champion` | Workflows Super Campeones |
+| 6 | **Workflow Orchestrator** | `00_Workflows/05_Workflow_Orchestrator.md` | `workflow`, `orchestration` | Orquestación de workflows |
+| 7 | **LFG Engine** | `00_Workflows/06_LFG_Engine.md` | `lfg`, `autonomous` | Motor autónomo LFG |
 
 ---
 
@@ -149,9 +149,9 @@
 
 | # | Skill | Path | Tags | ¿Cuándo usarla? |
 |---|-------|------|------|-----------------|
-| 1 | **Superpowers** | `01_Superpowers/` | `search`, `scraping` | Superpoderes de búsqueda y scraping |
-| 2 | **Buscador Skills** | `02_Buscador_Skills/` | `search`, `skills` | Buscador de skills |
-| 3 | **Browser Automation** | `03_Playwright/` | `playwright`, `automation` | Playwright, automatización web |
+| 1 | **Superpowers** | `07_Invictus_Web/01_Superpowers/` | `search`, `scraping` | Superpoderes de búsqueda y scraping |
+| 2 | **Buscador Skills** | `07_Invictus_Web/02_Buscador_Skills/` | `search`, `skills` | Buscador de skills |
+| 3 | **Browser Automation** | `07_Invictus_Web/03_Playwright/` | `playwright`, `automation` | Playwright, automatización web |
 
 ---
 
@@ -160,14 +160,6 @@
 | # | Skill | Path | Tags | ¿Cuándo usarla? |
 |---|-------|------|------|-----------------|
 | 1 | **Claude Ads** | `05_Claude_Ads/` | `ads`, `claude` | Sistema de publicidad y campañas |
-
----
-
-## 🔍 ÁREA 10: SKILL AUDITOR
-
-| # | Skill | Path | Tags | ¿Cuándo usarla? |
-|---|-------|------|------|-----------------|
-| 1 | **Skill Auditor** | `00_Skill_Auditor/` | `audit`, `quality`, `validation` | Auditoría y validación de calidad de skills |
 
 ---
 

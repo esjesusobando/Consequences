@@ -356,7 +356,7 @@
 ---
 
 ### 🥉 #3 — Frontend Slides
-**Presentaciones HTML** — `02_Diseno_Ui_Ux/07_Marvel_Avengers/`
+**Presentaciones HTML** — `05_Archive/07_Repos_Gentleman/frontend-slides/`
 
 | Dimensión | Score | Justificación |
 |-----------|-------|---------------|
@@ -370,7 +370,7 @@
 ---
 
 ### 🏅 #4 — Premium Image Studio
-**Generación de Imágenes Premium** — `01_Creacion_Contenidos/11_Premium_Image_Studio/`
+**Generación de Imágenes Premium** — `02_Diseno_Ui_Ux/12_Premium_Image_Studio/`
 
 | Dimensión | Score | Justificación |
 |-----------|-------|---------------|
@@ -398,7 +398,7 @@
 ---
 
 ### 🏅 #6 — Video Visuals Producer
-**Producción de Visuales para Video** — `01_Creacion_Contenidos/10_Video_Visuals_Producer/`
+**Producción de Visuales para Video** — `02_Diseno_Ui_Ux/14_Video_Visuals_Producer/`
 
 | Dimensión | Score | Justificación |
 |-----------|-------|---------------|
@@ -412,7 +412,7 @@
 ---
 
 ### 🏅 #7 — Carousel Master
-**Estrategia de Carruseles** — `01_Creacion_Contenidos/12_Carousel_Master/`
+**Estrategia de Carruseles** — `02_Diseno_Ui_Ux/13_Carousel_Master/`
 
 | Dimensión | Score | Justificación |
 |-----------|-------|---------------|
@@ -440,7 +440,7 @@
 ---
 
 ### 🏅 #9 — SEO SOTA Master
-**SEO Técnico + Keyword Research** — `01_Creacion_Contenidos/13_Seo_Sota_Master/`
+**SEO Técnico + Keyword Research** — `01_Creacion_Contenidos/08_Seo_Sota_Master/`
 
 | Dimensión | Score | Justificación |
 |-----------|-------|---------------|

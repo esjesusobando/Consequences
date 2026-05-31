@@ -48,7 +48,7 @@ El Conductor nace de una verdad incómoda: el Orchestrator v4.0 era un archivo p
 
 **Propósito original:** Ser el cerebro que conoce TODO el mapa de skills y agentes, para que el usuario solo tenga que decir qué necesita. El Conductor no es experto en nada — pero sabe quién es experto en cada cosa.
 
-**Por qué no puede desaparecer:** Sin entry point único, el sistema colapsa en complejidad. El usuario tendría que leer 14 áreas de skills para saber por dónde empezar.
+**Por qué no puede desaparecer:** Sin entry point único, el sistema colapsa en complejidad. El usuario tendría que leer 12 áreas de skills para saber por dónde empezar.
 
 ---
 
