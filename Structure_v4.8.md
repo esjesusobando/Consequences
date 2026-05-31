@@ -35,7 +35,7 @@ Think_Different/                    # RAÍZ
 ```
 01_Personal_Os/
 ├── 01_Core/                       # MOTOR DEL OS
-│   ├── 00_Workflows_Os/          # 28 workflows (7 categorías)
+│   ├── 00_Workflows_Os/          # 27 workflows (7 categorías)
 │   ├── 01_Rules/                 # 13 reglas .mdc
 │   └── 02_Tools/                 # Herramientas del OS
 │   ├── 01_Agents/            # 55 agentes
@@ -66,17 +66,17 @@ Think_Different/                    # RAÍZ
 
 ## 📂 01_Core — Motor del OS
 
-### 00_Workflows_Os — Workflows (28 workflows, 7 categorías)
+### 00_Workflows_Os — Workflows (27 workflows, 7 categorías)
 
 | Categoría                      | Workflows                                                                                                                                      | Propósito                            |
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | **00_Learning_Always**         | 1                                                                                                                                              | Aprendizaje continuo                 |
-| **01_Personal_Os**             | 11 (Morning, Backlog, Content, Weekly, Ritual_Cierre, Validar_Reglas, System_Health, Context_Recovery, AI_Task_Template, Classify_Task, AGENTS)| Rutinas personales                   |
+| **01_Personal_Os**             | 10 (Morning, Backlog, Content, Weekly, Ritual_Cierre, Validar_Reglas, System_Health, Context_Recovery, AI_Task_Template, Classify_Task)| Rutinas personales                   |
 | **02_Marvel**                  | 8 (Iron Man Gen, Spider, Thor, Hulk)                                                                                                           | Identidades temáticas de agente      |
 | **03_Gentleman**               | 2 (Frontend, Docs)                                                                                                                             | Diseño premium y redacción           |
 | **04_Hillary**                 | 2 (Life OS, Inbox)                                                                                                                             | Gestión de vida personal             |
 | **05_Compound_Engineering**    | 4                                                                                                                                              | Ingeniería avanzada (CE)             |
-| **06_Youtube_Full_Video**      | 2                                                                                                                                              | Pipeline de producción de video      |
+| **06_Youtube_Full_Video**      | 1                                                                                                                                              | Pipeline de producción de video      |
 
 ### 01_Rules — Reglas (13 .mdc + README + RULES_INDEX.md + .Backup/)
 
@@ -204,7 +204,7 @@ Think_Different/                    # RAÍZ
 ```
 00_Context_LLM/
 ├── 00_Context_Memory/         # Memoria de contexto (_archive, _jsons)
-├── 01_Process_Notes/          # 25 Notas de Proceso (NP_01-NP_23 con colisiones en 01 y 10) + _archive/
+├── 01_Process_Notes/          # 35 Notas de Proceso (01-33 + 27b + README) + _archive/
 ├── 02_Knowledge_Brain/        # Cerebro de conocimiento (16 entradas, 9 PDFs en 00_Library_PDFs/)
 ├── 03_Memory_Brain/           # Active, Mapeos, Code_Reviews, Archive_Memory
 ├── 04_Docs/                   # Documentación con planes/
@@ -215,8 +215,6 @@ Think_Different/                    # RAÍZ
 ├── 13_Telemetry/              # Telemetría
 ├── 14_Scripts/                # Scripts operativos (pm_agents_sota.py, pm_agents_hook.ps1)
 ├── 15_Resources/              # Recursos externos (a16z GenAI Top100 insights)
-├── Context_Memory.md           # Registro de memoria de sesiones
-├── Notas_de_Proceso.md        # Notas de proceso activas
 └── README.md
 ```
 
@@ -243,9 +241,7 @@ Think_Different/                    # RAÍZ
 ```
 02_Agent_Teams_Lite/
 ├── 00_Manifest/              # 7 JARVIS manifests (OS_Inventory → Hook_Registry)
-├── 01_Sdd_Init → 14_Issue_Creation  # 10 SDD sub-agentes (flattened)
-├── 02_Project_Manager/       # 7 PM workflows (flattened)
-├── 03_Product_Manager/       # 5 Product Mgr workflows (flattened)
+├── 01_Agent_Teams_Lite/      # Framework de agentes
 ├── 03_Pattern_Engine/        # Python engine (indexer, search, embedding, api, database)
 ├── README.md
 └── SDD_SKILLS.md
@@ -464,8 +460,8 @@ Think_Different/                    # RAÍZ
 | MCPs                             | 7 servidores root + 38 backup en 03_Mcp/                      | ✅       |
 | HUBs                             | 20 (00-20) + HUB_SOTA                                       | ✅       |
 | Scripts                          | 256 (.py)                                                   | ✅       |
-| Workflows                        | 28 en 7 categorías                                            | ✅       |
-| Process Notes                    | 25 NP activas (colisiones 01 y 10) + _archive histórico       | ✅       |
+| Workflows                        | 27 en 7 categorías                                            | ✅       |
+| Process Notes                    | 35 NP activas (01-33 + 27b + README) + _archive histórico       | ✅       |
 | SOTA Features                    | 5 módulos (ambient, contemplation, feedback, memory, voice)   | ✅       |
 | JARVIS Manifests                 | 7 manifests (OS_Inventory → Hook_Registry)                    | ✅       |
 | Projects Lab                     | 9 proyectos activos (Efrain → Valeria)                        | ✅       |

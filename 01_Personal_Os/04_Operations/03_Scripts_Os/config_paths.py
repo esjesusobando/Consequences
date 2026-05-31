@@ -102,14 +102,9 @@ PLANS_DIR = KNOWLEDGE_PLANS_DIR
 # Brainstorms (deprecated - ahora en 02_Knowledge_Brain si existe)
 BRAINSTORMS_DIR = BRAIN_DIR / "02_Knowledge_Brain"
 
-# Compound Engine - ubicacion principal en Every_Sync_Zone
-COMPOUND_ENGINE_DIR = (
-    PROJECTS_DIR
-    / "01_Projects_Lab"
-    / "Every_Sync_Zone"
-    / "plugins"
-    / "compound-engineering"
-)
+# Compound Engine - fix: Every_Sync_Zone no existe en disco
+# Ruta deprecada → CE skills ahora en 02_Skills/00_Compound_Engineering
+COMPOUND_ENGINE_DIR = ENGINE_COMPOUND_DIR  # fix: era Every_Sync_Zone/plugins/compound-engineering (ruta fantasma)
 
 # Ubicacion alternativa en home (skills gentleman)
 COMPOUND_ENGINE_HOME_DIR = (
@@ -142,7 +137,7 @@ SKILLS_DIR = CORE_DIR / "02_Tools" / "02_Skills"
 RULES_DIR = CORE_DIR / "01_Rules"
 MCP_DIR = CORE_DIR / "02_Tools" / "03_Mcp"
 AGENTS_DIR = CORE_DIR / "02_Tools" / "01_Agents"
-INVENTORY_FILE = CORE_DIR / "01_Inventario_Total.md"
+INVENTORY_FILE = CORE_DIR / "01_Inventario_Core.md"  # fix: era 01_Inventario_Total.md (archivo real es 01_Inventario_Core.md)
 BRAIN_TEMPLATE_DIR = ROOT_DIR / "01_Personal_Os" / "03_Task" / "00_Templates"
 
 # Workflows (Estructura Jerárquica v4.7)
@@ -155,7 +150,8 @@ WORKFLOWS_COMPOUND_DIR = WORKFLOWS_DIR / "05_Compound_Engineering"
 
 
 # Auditoría y Conocimiento (Unicorn)
-AUDITOR_DIR = ENGINE_DIR / "06_Auditor"
+# fix: 06_Auditor no existe en disco; auditorías reales en 11_Audits del Context_LLM
+AUDITOR_DIR = OPERATIONS_DIR / "00_Context_LLM" / "07_Auditorias"  # fix: era ENGINE_DIR/06_Auditor (inexistente)
 UNICORN_DIR = KNOWLEDGE_DIR
 
 # Server MCP
@@ -167,7 +163,7 @@ AIPM_ROOT = SERVER_DIR / "AIPM"
 # =============================================================================
 
 MANIFEST_DIR       = OPERATIONS_DIR / "02_Agent_Teams_Lite" / "00_Manifest"
-TELEMETRY_DIR      = OPERATIONS_DIR / "00_Context_LLM" / "12_Telemetry"
+TELEMETRY_DIR      = OPERATIONS_DIR / "00_Context_LLM" / "13_Telemetry"  # fix: era 12_, real es 13_
 OS_DIRECTORY_FILE  = ROOT_DIR / "OS_DIRECTORY.md"
 
 # HUB scripts (paths dinámicos vía ENGINE_DIR)

@@ -85,18 +85,18 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py profundo
 
 ---
 
-## 📁 Estructura v4.0 Consequences (Activo — 2026-05-14)
+## 📁 Estructura v4.9 Consequences (Activo — 2026-05-31)
 
 ```
 Think_Different/                        ← Raíz del proyecto
 ├── 00_Winter_is_Coming/                ✅ Goals, Backlog, AGENTS.md, OS_DIRECTORY.md
 ├── 01_Personal_Os/                     ✅ Sistema Operativo completo
 │   ├── 01_Core/                        ✅ Motor del OS
-│   │   ├── 00_Workflows_Os/            ✅ 28 Workflows (Personal, Marvel, CE, Hillary)
+│   │   ├── 00_Workflows_Os/            ✅ 27 Workflows (Personal, Marvel, CE, Hillary)
 │   │   ├── 01_Rules/                   ✅ 13 reglas .mdc
 │   │   └── 02_Tools/                   ✅ Agentes, Skills, MCPs, Hooks, Evals
 │   │       ├── 01_Agents/              ✅ 52+ agentes (Dream Team + Specialists)
-│   │       ├── 02_Skills/               ✅ 300+ skills en 11 áreas funcionales
+│   │       ├── 02_Skills/               ✅ 385 skills en 14 áreas funcionales (15 directorios)
 │   │       └── 03_Mcp/ … 09_Templates ✅ MCPs, Hooks, Plugins, Server, Evals
 │   ├── 02_Knowledge/                   ✅ Base de conocimiento
 │   ├── 03_Task/                        ✅ Tareas activas
@@ -114,9 +114,9 @@ Think_Different/                        ← Raíz del proyecto
 
 ---
 
-## 🎯 Skills (01_Personal_Os/01_Core/02_Tools/02_Skills/) — v4.0 Consequences
+## 🎯 Skills (01_Personal_Os/01_Core/02_Tools/02_Skills/) — v4.9 Consequences
 
-> **Total:** 300+ skills — 11 áreas funcionales | Índice completo: `INDEX_AREA_FUNCTIONAL.md`
+> **Total:** 385 skills — 14 áreas funcionales | Índice completo: `INDEX_AREA_FUNCTIONAL.md`
 
 | Área                           | Carpeta                                      | Descripción                                                                | SKILL.md                  |
 |-------------------------------|---------------------------------------------|---------------------------------------------------------------------------|--------------------------|
@@ -165,7 +165,7 @@ Scripts legacy en `01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy/` — sc
 
 ## 📝 Notas Importantes
 
-1. **Rutas v4.0**: Skills ahora en `01_Personal_Os/01_Core/02_Tools/02_Skills/` (estructura v4.0 Consequences)
+1. **Rutas v4.0**: Skills ahora en `01_Personal_Os/01_Core/02_Tools/02_Skills/` (estructura v4.9 Consequences)
 2. **.bashrc**: Alias configurados con rutas absolutas
 3. **27_Skill_Auditor.py**: Corregido para auto-detectar categorías
 
@@ -236,4 +236,4 @@ Scripts migrados a skills usando `get_skill_script()`:
 
 ---
 
-*Actualizado: 2026-04-01 — Estructura 05_Archive estandarizada (01-09)*
+*Actualizado: 2026-05-31 — Estructura 05_Archive estandarizada (01-09)*

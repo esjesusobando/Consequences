@@ -11,11 +11,11 @@
 | MCPs Claude Code                      | **8** (root) + **38** (backup)                                             | ✅ SYNCED — drift 0                             |
 | Every CE                              | v3.8.4 (local repo) ✅                                                      | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.30.6                                                                    | ✅ AVAILABLE                                    |
-| Skills                                | **394** (14 áreas funcionales)                                             | ✅ VERIFIED — 0 sin frontmatter                 |
+| Skills                                | **385** (14 áreas funcionales)                                             | ✅ VERIFIED — 0 sin frontmatter                 |
 | Agentes                               | **62** source / **82** total (con SDD/CE)                                   | ✅ SYNCED                                       |
 | HUBs                                  | **20** (19 numerados + HUB_SOTA) + **256 scripts**                        | ✅ ACTIVE                                       |
 | Scripts totales                       | — (incluido en HUBs)                                                       | —                                               |
-| Workflows                             | **28** (7 categorías en 00_Workflows_Os)                                   | ✅ ACTIVE                                       |
+| Workflows                             | **27** (7 categorías en 00_Workflows_Os)                                   | ✅ ACTIVE                                       |
 | Hooks                                 | **10** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk)| ✅ ACTIVE                                       |
 | Rules                                 | **13** (.mdc)                                                              | ✅ DEFINED                                      |
 | JARVIS Manifests                      | 7 en 00_Manifest/                                                          | ✅ VALIDATED                                    |
@@ -119,12 +119,15 @@ Think_Different/                         # RAÍZ
 │   │   ├── README.md
 │   │   └── RUNBOOK.md
 │   ├── 05_Archive/                ✅ Backups, snapshots, históricos
+│   │   ├── .agent_backup_pre_sync/
 │   │   ├── 00_Backup_Os/
+│   │   ├── 00_Skills_Legacy/
 │   │   ├── 01_Repos_Reference/
 │   │   ├── 02_Legacy_Content/
 │   │   ├── 03_Backups_Audits/
-│   │   ├── 09_Session_Summaries/
-│   │   ├── 10_Skills_Legacy/
+│   │   ├── 04_Docs_Legacy/
+│   │   ├── 05_Skills_Legacy/
+│   │   ├── 06_Skills_Legacy/
 │   │   └── README.md
 ├── 02_Playground/                ✅ Zona de pruebas (6 carpetas, scripts test en 06_Testing_Legacy/)
 ├── 03_Resultado/                 ✅ Outputs de proyectos (agrupado: Proyectos, Aprendizaje, Experimentos, Reportes, Documentacion)
@@ -162,29 +165,29 @@ Think_Different/                         # RAÍZ
 | 06_Tools               | 112    | Skill Creator, Testing, DevOps, Data |
 | 07_Personal_Os         | 32     | Life OS, Hillary, Rituales           |
 | 08_Invictus_Web        | 15     | Playwright, Superpowers, Browser Auto|
-| 09_Claude_Ads          | 20     | Claude Ads & Promoted Content        |
-| **TOTAL**              | **394**| Total real indexado en disco         |
+| 09_Claude_Ads          | 11     | Claude Ads & Promoted Content        |
+| **TOTAL**              | **385**| Total real indexado en disco         |
 
-> Las skills están tanto en carpetas de área como en subcarpetas internas.
+> Las skills están tanto en carpetas de área como en subcarpetas internas. (Nota: Existe además una carpeta Archive_Delete_Skills que no se cuenta).
 
 ---
 
 ## 📊 MCPs — 7 SERVIDORES ROOT + 38 BACKUP (Claude Code)
 
-| Categoría          | Servidores                                                             |
+| Categoría          | Servidores (Root: 8)                                                   |
 |-------------------|-----------------------------------------------------------------------|
-| 🔍 Search           | exa, brave-search, stackoverflow                                       |
-| 🧠 Memory           | engram, aim-memory-bank, notebooklm                                    |
-| 📝 Notes            | Notion, mcp-obsidian, obsidian-api, obsidian-mcp                       |
-| 🌐 Browser          | Playwright, chrome-devtools                                             |
-| 🤖 AI & Code        | context7, zai-mcp-server, github, task-master-ai, @magicuidesign/mcp   |
-| 📊 Data             | supabase, Amplitude, supadata                                          |
-| 🔄 Workflow         | n8n-mcp, Linear                                                        |
-| 💬 Communication    | fireflies, google-workspace                                            |
-| 📐 Design           | excalidraw-yctimlin, pencil                                            |
-| 🛠️ DevOps          | docker, filesystem                                                     |
-| 🚀 Deploy           | vercel, recall, TestSprite                                             |
-| 🧩 Chain            | sequential-thinking, nanobanana, qmd                                   |
+| 🔍 Search           | exa (backup), brave-search (backup), stackoverflow (backup)            |
+| 🧠 Memory           | engram (backup), aim-memory-bank (root), notebooklm (backup)           |
+| 📝 Notes            | Notion (backup), obsidian-mcp (root)                                   |
+| 🌐 Browser          | Playwright (backup), chrome-devtools (backup)                          |
+| 🤖 AI & Code        | context7 (root), @magicuidesign/mcp (root)                             |
+| 📊 Data             | supabase (backup), Amplitude (backup), supadata (backup)               |
+| 🔄 Workflow         | n8n-mcp (backup), Linear (backup)                                      |
+| 💬 Communication    | fireflies (backup), google-workspace (root)                            |
+| 📐 Design           | eagle (root), higgsfield (root)                                        |
+| 🛠️ DevOps          | docker (backup), filesystem (backup)                                   |
+| 🚀 Deploy           | vercel (backup), recall (backup), TestSprite (backup)                  |
+| 🧩 Chain            | sequential-thinking (root), nanobanana (backup), qmd (backup)          |
 
 ---
 
@@ -304,17 +307,17 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-## 📁 WORKFLOWS — 7 CATEGORÍAS (28 workflows)
+## 📁 WORKFLOWS — 7 CATEGORÍAS (27 workflows)
 
 | Categoría                    | Path                            | Workflows                                      |
 |-----------------------------|--------------------------------|-----------------------------------------------|
-| YouTube Full Video           | `06_Youtube_Full_Video/`        | Video production pipeline                      |
-| Learning Always              | `00_Learning_Always/`           | Continuous learning                            |
-| Personal OS                  | `01_Personal_Os/`               | Morning, Backlog, Content, Weekly              |
-| Marvel                       | `02_Marvel/`                    | **Iron Man Genesis** (boot), Spider, Thor, Hulk|
-| Gentleman                    | `03_Gentleman/`                 | Gentleman standards                            |
-| Hillary                      | `04_Hillary/`                   | Hillary Life OS                                |
-| Compound Engineering         | `05_Compound_Engineering/`      | CE workflows                                   |
+| YouTube Full Video           | `06_Youtube_Full_Video/`        | Video production pipeline (1 workflow)         |
+| Learning Always              | `00_Learning_Always/`           | Continuous learning (1 workflow)               |
+| Personal OS                  | `01_Personal_Os/`               | Morning, Backlog, Content, Weekly (10)         |
+| Marvel                       | `02_Marvel/`                    | Iron Man, Spider, Thor, Hulk (8)               |
+| Gentleman                    | `03_Gentleman/`                 | Frontend Premium, Redacción de Docs (2)        |
+| Hillary                      | `04_Hillary/`                   | Captura Rápida, Hillary Life OS (2)            |
+| Compound Engineering         | `05_Compound_Engineering/`      | Deep Work, Ship It, Harness, Multi-Agent (4)   |
 
 ---
 
@@ -328,9 +331,9 @@ Al iniciar sesión O al recibir cualquier instrucción, ejecutar `.agent/03_Work
 
 ---
 
-## 📋 AUDIT LOG — Findings Documentados (v4.7 Consequences)
+## 📋 AUDIT LOG — Findings Documentados (v4.9 Consequences)
 
-Los siguientes hallsazgos fueron identificados durante la auditoría OS integral del 2026-05-25 y **documentados sin eliminar información**:
+Los siguientes hallazgos fueron identificados durante la auditoría OS integral del 2026-05-31 y **documentados sin eliminar información**:
 
 ### Estructurales
 | #  | Hallazgo                                                   | Estado                 |

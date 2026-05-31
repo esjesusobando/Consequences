@@ -176,7 +176,7 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 - **Backend:** Python, FastAPI
 - **Frontend:** React, Next.js
 - **Automatización:** Make, Zapier
-- **MCP:** Implementación de protocolo personalizado (vía `05_System/`)
+- **MCP:** Implementación de protocolo personalizado (vía `01_Personal_Os/01_Core/02_Tools/07_Server/`)
 - **Scripts de Motor:** `01_Personal_Os/04_Operations/03_Scripts_Os/` — Scripts HUB de automatización para operaciones del OS
 
 ## 7. Tracking Metrics
@@ -245,7 +245,7 @@ To be the reference experience designer for Apps and Web Apps, with complete mas
 #### Pasos Obligatorios al Iniciar Subagente:
 
 1. **Activar Workflow Genesis**:
-   - Leer `.agent/03_Workflows/01_Personal_Os/00_Genesis_Workflow.md` (si existe)
+   - Leer `01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/01_Iron_Man_Gen.md` (si existe)
    - Alternativamente: seguir protocolo de inicialización abajo
 
 2. **Leer Contexto Estratégico** (en este orden):
