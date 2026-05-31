@@ -1,6 +1,6 @@
 ---
 session_id: 65a7fa18-6736-45d0-b51d-25ad9659e33c
-project: -Users-amankhan-Projects-personal-os
+project: think_different_ai
 timestamp: 2025-12-24T14:57:43.827Z
 model: claude-opus-4-5-20251101
 git_branch: main
@@ -14,7 +14,7 @@ reviewed: false
 
 # Session Eval: 65a7fa18
 
-**Project:** Users/amankhan/Projects/personal/os
+**Project:** think_different_ai
 **Date:** 2025-12-24 14:57
 **Model:** claude-opus-4-5-20251101
 **Duration:** 10 messages, 3 tool calls

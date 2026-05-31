@@ -9,7 +9,7 @@ if sys.platform == "win32":
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding="utf-8", errors="replace")
 
 _ext_root = Path(__file__).parent.parent.parent
-project_root = _ext_root.parent  # Add project_root for dynamic resolution
+project_root = _ext_root.parent.parent  # 05_Hooks/ → 02_Tools/ → 01_Core/ → 01_Personal_Os/ → Think_Different
 
 _speak = None
 _log_to_json = None
@@ -25,8 +25,8 @@ try:
             _spec.loader.exec_module(_common)
             _speak = _common.speak
             _log_to_json = _common.log_to_json
-except Exception:
-    pass
+except Exception as e:
+    print(f"[WARN] Could not load common utilities: {e}")
 
 
 def speak(msg, priority="normal"):

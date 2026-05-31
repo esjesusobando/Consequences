@@ -25,6 +25,7 @@ import io
 import re
 import subprocess
 import sys
+import fnmatch
 from pathlib import Path
 
 if sys.platform == "win32":
@@ -67,11 +68,68 @@ def get_staged_files():
     try:
         result = subprocess.run(
             ["git", "diff", "--cached", "--name-only", "--diff-filter=ACM"],
-            capture_output=True, text=True, encoding="utf-8", errors="replace"
+            capture_output=True, text=True, encoding="utf-8", errors="replace",
+            timeout=15,
         )
+        if result.returncode != 0:
+            print(f"[WARN] git diff returned {result.returncode}: {result.stderr.strip()}")
+            return []
         return [Path(f.strip()) for f in result.stdout.splitlines() if f.strip()]
-    except Exception:
+    except subprocess.TimeoutExpired:
+        print("[WARN] git diff timed out")
         return []
+    except FileNotFoundError:
+        print("[WARN] git not found — are you in a git repo?")
+        return []
+    except Exception as e:
+        print(f"[WARN] git diff failed: {e}")
+        return []
+
+
+def find_project_root(sentinel=".git"):
+    """Walk up from script location until sentinel file/dir is found."""
+    current = Path(__file__).resolve().parent
+    for _ in range(20):
+        if (current / sentinel).exists():
+            return current
+        parent = current.parent
+        if parent == current:
+            break
+        current = parent
+    return Path(__file__).resolve().parent.parent.parent.parent.parent.parent
+
+
+def load_gitignore_patterns(root):
+    """Load .gitignore patterns from root and subdirs, return compiled matcher."""
+    patterns = []
+    gitignore_path = root / ".gitignore"
+    if gitignore_path.exists():
+        try:
+            with open(gitignore_path, encoding="utf-8", errors="replace") as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith("#"):
+                        patterns.append(line)
+        except Exception as e:
+            print(f"[WARN] Could not read .gitignore: {e}")
+    # Always ignore common non-project dirs
+    patterns.extend([".git/", "node_modules/", "__pycache__/", ".venv/", ".pytest_cache/",
+                     ".eggs/", "*.pyc", ".DS_Store", "Thumbs.db"])
+    return patterns
+
+
+def is_ignored(path, root, patterns):
+    """Check if path matches any gitignore pattern."""
+    rel = path.relative_to(root).as_posix()
+    for pattern in patterns:
+        if pattern.endswith("/"):
+            if fnmatch.fnmatch(rel, pattern) or rel.startswith(pattern):
+                return True
+        elif fnmatch.fnmatch(rel, pattern):
+            return True
+        if "/" + rel in pattern or rel == pattern:
+            return True
+    return False
 
 
 def scan_file(filepath, root):
@@ -117,14 +175,24 @@ def scan_file(filepath, root):
 
 
 def main():
-    root = Path(__file__).resolve().parent.parent.parent.parent.parent.parent
+    root = find_project_root()
 
     if "--file" in sys.argv:
         idx = sys.argv.index("--file")
         files = [Path(sys.argv[idx + 1])]
     elif "--all" in sys.argv:
-        files = [p.relative_to(root) for p in root.rglob("*")
-                 if p.is_file() and ".git" not in p.parts and "node_modules" not in p.parts]
+        gitignore_patterns = load_gitignore_patterns(root)
+        files = []
+        for p in root.rglob("*"):
+            if not p.is_file():
+                continue
+            try:
+                rel = p.relative_to(root)
+            except ValueError:
+                continue
+            if is_ignored(p, root, gitignore_patterns):
+                continue
+            files.append(rel)
     else:
         files = get_staged_files()
 

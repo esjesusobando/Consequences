@@ -37,8 +37,8 @@ try:
         _speak = _common.speak
         _visual_alert = _common.visual_alert
         _log_to_json = _common.log_to_json
-except Exception:
-    pass
+except Exception as e:
+    print(f"[WARN] Could not load common utilities: {e}")
 
 
 def speak(msg, priority="normal"):

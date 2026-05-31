@@ -26,8 +26,8 @@ try:
         _spec.loader.exec_module(_common)
         _speak = _common.speak
         _log_to_json = _common.log_to_json
-except Exception:
-    pass
+except Exception as e:
+    print(f"[WARN] Could not load common utilities: {e}")
 
 
 def speak(msg, priority="normal"):
@@ -48,15 +48,20 @@ def check_battery():
     try:
         ps_command = "Get-WmiObject -Class Win32_Battery | Select-Object -ExpandProperty EstimatedChargeRemaining"
         result = subprocess.run(
-            ["powershell.exe", "-Command", ps_command], capture_output=True, text=True
+            ["powershell.exe", "-Command", ps_command], capture_output=True, text=True,
+            timeout=5,
         )
         if result.stdout.strip():
             battery_level = int(result.stdout.strip())
             if battery_level < 15:
                 print(f"⚠️ Batería baja: {battery_level}%")
                 return False, battery_level
-    except:
-        pass
+    except subprocess.TimeoutExpired:
+        print("[INFO] Battery check timed out — no battery or slow WMI")
+    except FileNotFoundError:
+        print("[INFO] powershell.exe not found — skipping battery check")
+    except (ValueError, OSError) as e:
+        print(f"[INFO] Battery check skipped: {e}")
     return True, 100
 
 

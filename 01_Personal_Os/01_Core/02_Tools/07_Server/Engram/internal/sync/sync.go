@@ -464,7 +464,20 @@ func writeGzip(path string, data []byte) error {
 	if _, err := gz.Write(data); err != nil {
 		return err
 	}
-	return gz.Close()
+	if err := gz.Close(); err != nil {
+		return err
+	}
+	// Post-gzip integrity check: read back and verify checksum
+	written, err := readGzip(path)
+	if err != nil {
+		return fmt.Errorf("integrity check failed (read): %w", err)
+	}
+	originalHash := sha256.Sum256(data)
+	writtenHash := sha256.Sum256(written)
+	if originalHash != writtenHash {
+		return fmt.Errorf("integrity check failed: written data differs from source")
+	}
+	return nil
 }
 
 func readGzip(path string) ([]byte, error) {
