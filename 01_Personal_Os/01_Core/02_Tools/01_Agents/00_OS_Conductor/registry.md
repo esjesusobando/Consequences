@@ -106,8 +106,6 @@
 | 3 | **Product Manager** | `00_Workflows/03_Product_Manager/` | `product`, `management` | Gestión de producto |
 | 4 | **PM Orchestrator** | `00_Workflows/04_PM_Orchestrator/` | `pm`, `orchestration` | Orquestación PM avanzada |
 | 5 | **Super Campeones** | `00_Workflows/05_Super_Campeones/` | `super`, `champion` | Workflows Super Campeones |
-| 6 | **Workflow Orchestrator** | `00_Workflows/05_Workflow_Orchestrator.md` | `workflow`, `orchestration` | Orquestación de workflows |
-| 7 | **LFG Engine** | `00_Workflows/06_LFG_Engine.md` | `lfg`, `autonomous` | Motor autónomo LFG |
 
 ---
 
@@ -115,21 +113,12 @@
 
 | # | Skill | Path | Tags | ¿Cuándo usarla? |
 |---|-------|------|------|-----------------|
-| 1 | **Skill Creator** | `01_Skill_Creator/` | `skill`, `create` | Crear nuevas skills |
-| 2 | **Skill Template** | `02_Skill_Template/` | `template`, `skill` | Plantillas de skills |
-| 3 | **Anthropic Harness** | `03_Anthropic_Harness/` | `ce`, `harness`, `eval` | CE Harness — Sprint, Context, Evaluator |
-| 4 | **DevOps** | `04_DevOps/` | `docker`, `ci/cd`, `infra` | Docker, CI/CD, infraestructura |
-| 5 | **Vibe Coding** | `05_Vibe_Coding/` | `vibe`, `coding` | Coding guiado por vibes |
-| 6 | **Testing** | `06_Testing/` | `test`, `pytest`, `playwright` | Pytest, Playwright, E2E |
-| 7 | **Performance** | `07_Performance/` | `performance`, `optimization` | Performance optimization |
-| 8 | **Skill Creator Invictus** | `08_Skill_Creator_Invictus/` | `invictus`, `skill` | Invictus skill creator |
-| 9 | **Accessibility** | `09_Accessibility/` | `a11y`, `wcag` | Accesibilidad web WCAG |
-| 10 | **Octopus** | `10_Octopus/` | `parallel`, `multi-branch` | Ejecución paralela multi-brazo |
-| 11 | **Doc Processing** | `11_Doc_Processing/` | `doc`, `processing` | Procesamiento de documentos |
-| 12 | **Qmd** | `12_Qmd/` | `search`, `hybrid`, `bm25` | Búsqueda híbrida BM25 + embeddings |
-| 13 | **System Master** | `13_System_Master/` | `system`, `mcp`, `guardian` | System Guardian, MCP Builder |
-| 14 | **Silicon Valley Data Analyst** | `14_Silicon_Valley_Data_Analyst/` | `data`, `analytics`, `sql`, `pandas` | Data analysis, SQL, pandas |
-| 15 | **AI News Weekly Report** | `15_Ai_News_Weekly_Report/` | `news`, `weekly`, `ai` | News semanal con IA |
+| 1 | **Testing** | `06_Testing/` | `test`, `pytest`, `playwright` | Pytest, Playwright, E2E |
+| 2 | **Doc Processing** | `11_Doc_Processing/` | `doc`, `processing` | Procesamiento de documentos |
+| 3 | **Qmd** | `12_Qmd/` | `search`, `hybrid`, `bm25` | Búsqueda híbrida BM25 + embeddings |
+| 4 | **System Master** | `13_System_Master/` | `system`, `mcp`, `guardian` | System Guardian, MCP Builder |
+| 5 | **Silicon Valley Data Analyst** | `14_Silicon_Valley_Data_Analyst/` | `data`, `analytics`, `sql`, `pandas` | Data analysis, SQL, pandas |
+| 6 | **AI News Weekly Report** | `15_Ai_News_Weekly_Report/` | `news`, `weekly`, `ai` | News semanal con IA |
 
 ---
 
@@ -192,7 +181,9 @@
 
 ## 🤖 AGENTES ESPECIALIZADOS (01_Agents/)
 
-### Core (13 agentes .md)
+**Total:** 67 agentes (23 Core + 5 Dream Team + 23 Specialists + 5 Growth + 11 OpenCode)
+
+### Core (23 agentes .md)
 
 | # | Agente | Dominio |
 |---|--------|---------|
@@ -210,6 +201,15 @@
 | 11 | **AIPM Judge** | Evaluación + calidad |
 | 12 | **LFG Autonomous Engine** | Autonomía |
 | 13 | **Hillary** | Life OS |
+| 14 | **Laia Learning** | Context Engineering & Onboarding |
+| 15 | **Marketing Estratega** | Estrategia de contenido y marketing |
+| 16 | **Marketing Creador** | Producción de contenido multicanal |
+| 17 | **Marketing Analista** | Métricas y optimización |
+| 18 | **Workflow YouTube** | Pipeline YouTube (idea → publicación) |
+| 19 | **Workflow LinkedIn** | Pipeline LinkedIn (post de autoridad) |
+| 20 | **Workflow Newsletter** | Pipeline Newsletter (curación → envío) |
+| 21 | **Learning Always** | Metodología de aprendizaje continuo |
+| 22 | **Dynamic Workflows** | Pipeline completo de feature (11 fases) |
 
 ### Dream Team (5 agentes)
 
@@ -221,19 +221,33 @@
 | 4 | **Design Ops** | Diseño |
 | 5 | **Platform Engineer** | Plataforma |
 
-### Specialists Compound (24 agentes)
+### Specialists Compound (23 agentes)
 
 | # | Agente | Dominio |
 |---|--------|---------|
-| 1 | **Agent-Native Reviewer** | Arquitectura agent-native |
-| 2 | **Architecture Strategist** | Estrategia arquitectura |
-| 3 | **Best-Practices Researcher** | Research |
-| 4 | **Code Simplicity Reviewer** | Simplicidad |
-| 5 | **Deployment Verification** | Deploy |
-| 6 | **DHH Rails Reviewer** | Rails |
-| 7 | **Learnings Researcher** | Aprendizajes |
-| 8 | **Security Sentinel** | Seguridad |
-| +16 | *(ver README interno)* | Varios |
+| 01 | **Agent-Native Reviewer** | Arquitectura agent-native |
+| 02 | **Ankane Readme Writer** | Documentación Ruby |
+| 03 | **Architecture Strategist** | Estrategia arquitectura |
+| 04 | **Best-Practices Researcher** | Research externo |
+| 05 | **Code Simplicity Reviewer** | Simplicidad |
+| 06 | **Data Integrity Guardian** | Integridad datos |
+| 07 | **Data Migration Expert** | Migraciones |
+| 08 | **Deployment Verification** | Deploy |
+| 09 | **Design Implementation Reviewer** | Fidelidad diseño |
+| 10 | **Design Iterator** | Iteración diseño |
+| 11 | **DHH Rails Reviewer** | Rails |
+| 12 | **Figma Design Sync** | Sync Figma |
+| 13 | **Framework Docs Researcher** | Docs frameworks |
+| 14 | **Git History Analyzer** | Análisis git |
+| 15 | **Julik Frontend Races Reviewer** | Race conditions |
+| 16 | **Kieran Python Reviewer** | Python |
+| 17 | **Kieran Rails Reviewer** | Rails |
+| 18 | **Kieran Typescript Reviewer** | TypeScript |
+| 19 | **Learnings Researcher** | Aprendizajes |
+| 20 | **Pattern Recognition Specialist** | Patrones |
+| 21 | **Performance Oracle** | Performance |
+| 22 | **Repo Research Analyst** | Research repos |
+| 23 | **Security Sentinel** | Seguridad |
 
 ### Growth (5 agentes)
 
@@ -244,6 +258,22 @@
 | 3 | **YouTube Thumbnail Prompter** | Miniaturas |
 | 4 | **YouTube Title Generator** | Títulos |
 | 5 | **Carousel Strategist** | Carruseles |
+
+### OpenCode Agents (11 agentes — desde opencode.json)
+
+| # | Agente | Modo | Propósito |
+|---|--------|------|-----------|
+| 1 | **gentleman** | primary | Senior Architect mentor |
+| 2 | **sdd-orchestrator** | primary | Agent Teams Orchestrator |
+| 3 | **sdd-explore** | subagent | Investigación codebase |
+| 4 | **sdd-init** | subagent | Bootstrap SDD |
+| 5 | **sdd-propose** | subagent | Change proposals |
+| 6 | **sdd-spec** | subagent | Delta specs |
+| 7 | **sdd-design** | subagent | Technical design |
+| 8 | **sdd-tasks** | subagent | Task breakdown |
+| 9 | **sdd-apply** | subagent | Implement changes |
+| 10 | **sdd-verify** | subagent | Validate implementation |
+| 11 | **sdd-archive** | subagent | Archive artifacts |
 
 ---
 

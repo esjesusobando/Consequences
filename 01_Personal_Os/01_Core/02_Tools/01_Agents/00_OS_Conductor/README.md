@@ -77,8 +77,8 @@ No necesitás acordarte de skills, agentes, ni paths. El Conductor conoce todo e
 - Desarrollo SDD completo (init → archive)
 - **Ad-Hoc Flow Construction** para combinaciones no previstas
 
-### ✅ 47 agentes especializados integrados
-Core (13) + Dream Team (5) + Specialists (24) + Growth (5)
+### ✅ 67 agentes especializados integrados
+Core (23) + Dream Team (5) + Specialists (23) + Growth (5) + OpenCode (11)
 
 ---
 

@@ -232,18 +232,19 @@
 
 | Área | Nombre | Skills | Prioridad |
 |------|--------|--------|-----------|
+| 00 | **AGENT TEAMS LITE** | 14 sub-skills | ⭐ SDD |
 | 00 | **CORE ENGINEERING** | 4 | ⭐ CORE |
+| 00 | **PERSONAL OS** | 9 | 📈 MEDIA |
+| 00 | **SYSTEM CORE** | 2 + 4 scripts | ⭐ CORE |
+| 00 | **WORKFLOWS** | 5 | 🔥 ALTA |
 | 01 | **CREACIÓN DE CONTENIDOS** | 17 | 🔥 ALTA |
 | 02 | **DISEÑO UI/UX** | 16 | 🔥 ALTA |
-| 03 | **VIDEO & MEDIA** | 5 | 📈 MEDIA |
+| 03 | **VIDEO & MEDIA** | 2 | 📈 MEDIA |
 | 04 | **AUTOMATIZACIÓN** | 19 | 🔥 ALTA |
-| 05 | **WORKFLOWS & ORQUESTACIÓN** | 7 | 🔥 ALTA |
-| 06 | **TOOLS & DEV** | 15 | 🔥 ALTA |
-| 07 | **PERSONAL OS** | 5 | 📈 MEDIA |
-| 08 | **INVICTUS WEB** | 3 | 📈 MEDIA |
-| 09 | **CLAUDE ADS** | 1 | 📈 MEDIA |
-| 10 | **SKILL AUDITOR** | 1 | 🔍 AUDIT |
-| 11 | **ANTHROPIC SKILLS LIBRARY** | 17 | 📦 EXTERNA |
+| 05 | **CLAUDE ADS** | 9 | 📈 MEDIA |
+| 06 | **TOOLS & DEV** | 6 | 📈 MEDIA |
+| 07 | **INVICTUS WEB** | 3 | 📈 MEDIA |
+| 10 | **LAIA LEARNING** | 4 | 🧠 ONBOARDING |
 
 ---
 
@@ -259,11 +260,11 @@
 | **Total Agentes** | **67** |
 | MCP Servers | 8+ |
 | Hooks | 10 |
-| Skills (12 áreas) | ~110 |
-| **Poder Total del OS** | **~195 componentes** |
+| Skills (12 áreas) | 74 validadas |
+| **Poder Total del OS** | **~160 componentes** |
 
 ---
 
 > *PersonalOS v4.9 Consequences — 2026-05-31*
-> *Creado post Judgment Day Round 2 — paths corregidos, INDEX sincronizado, registry unificado*
+> *Creado post Judgment Day Round 2 — paths corregidos, INDEX sincronizado, registry unificado, 74 skills validadas*
 > *Mantenido por: OS Conductor*
