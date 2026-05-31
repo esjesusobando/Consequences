@@ -1,8 +1,8 @@
 # 📋 Registry — Mapa Completo de Skills del PersonalOS
 
 > **Source of Truth:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
-> **Actualizado:** 2026-05-28 (v4.9 Consequences)
-> **Total:** 14 áreas, 97 skills
+> **Actualizado:** 2026-05-30 (v4.9 Consequences + Anthropic Skills)
+> **Total:** 12 áreas, ~103 skills
 
 ---
 
@@ -13,7 +13,7 @@
 | 1 | **Agent Teams Lite** | `00_Agent_Teams_Lite/` | `sdd`, `workflow`, `init→archive` | Ciclo completo SDD: init, explore, propose, spec, design, tasks, apply, verify, archive |
 | 2 | **Compound Engineering** | `00_Compound_Engineering/` | `ce`, `spider`, `review` | CE Spider, code review, compound workflow |
 | 3 | **Personal OS Stack** | `00_System_Core/` | `core`, `guardian`, `validation` | Salud del OS, validación estructural, stack base |
-| 4 | **Skill Auditor** | `10_Skill_Auditor/` | `audit`, `quality` | Auditoría y validación de calidad de skills |
+| 4 | **Skill Auditor** | `00_Skill_Auditor/` | `audit`, `quality` | Auditoría y validación de calidad de skills |
 
 ---
 
@@ -27,20 +27,17 @@
 | 4 | **Offer & Bio Writer** | `04_Offer_And_Bio_Writer/` | `copy`, `offer`, `bio` | Escribir ofertas y bios |
 | 5 | **YouTube Script Writer** | `05_Youtube_Script_Writer/` | `youtube`, `script` | Guiones optimizados para YouTube |
 | 6 | **YouTube Title Generator** | `06_Youtube_Title_Generator/` | `youtube`, `title` | Generar títulos para videos |
-| 7 | **YouTube Thumbnail Prompter** | `07_Youtube_Thumbnail_Prompter/` | `youtube`, `thumbnail` | Prompts para miniaturas |
-| 8 | **YouTube Full Video** | `08_Youtube_Full_Video/` | `youtube`, `pipeline` | Pipeline completo YouTube |
-| 9 | **Video Prompt Builder** | `09_Video_Prompt_Builder/` | `video`, `prompt`, `seedance` | Prompts para generación de video |
-| 10 | **Video Visuals Producer** | `10_Video_Visuals_Producer/` | `video`, `visual`, `production` | Producción de visuales para video |
-| 11 | **Premium Image Studio** | `11_Premium_Image_Studio/` | `image`, `branding`, `logo` | Imágenes premium, logos, banners |
-| 12 | **Carousel Master** | `12_Carousel_Master/` | `carousel`, `linkedin`, `instagram` | Estrategia y creación de carruseles |
-| 13 | **SEO SOTA Master** | `13_Seo_Sota_Master/` | `seo`, `keywords`, `technical` | SEO técnico + keyword research |
-| 14 | **Remotion Video Creator** | `14_Remotion_Video_Creator/` | `remotion`, `video`, `animation` | Videos con Remotion |
-| 15 | **Remotion Best Practices** | `15_Remotion_Best_Practices/` | `remotion`, `best-practices` | Mejores prácticas Remotion |
-| 16 | **AI Agents Marketing** | `16_Ai_Agents/` | `ai`, `marketing`, `agents` | Agentes AI para marketing |
-| 17 | **Compound Engine** | `17_Compound_Engine/` | `ce`, `engine` | Integración Compound Engineering |
-| 18 | **Marketing Strategy** | `18_Marketing_Strategy/` | `marketing`, `cro`, `pricing` | Copy, CRO, pricing, lanzamientos |
-| 19 | **Marketing Tech** | `19_Marketing_Tech/` | `seo`, `analytics`, `ads`, `schema` | SEO, analytics, ads, schema markup |
-| 20 | **Marketing Scripts** | `20_Marketing_Scripts/` | `automation`, `scripts` | Automatización de marketing |
+| 7 | **YouTube Full Video** | `07_Youtube_Full_Video/` | `youtube`, `pipeline` | Pipeline completo YouTube |
+| 8 | **SEO SOTA Master** | `08_Seo_Sota_Master/` | `seo`, `keywords`, `technical` | SEO técnico + keyword research |
+| 9 | **Remotion Video Creator** | `09_Remotion_Video_Creator/` | `remotion`, `video`, `animation` | Videos con Remotion |
+| 10 | **Remotion Best Practices** | `10_Remotion_Best_Practices/` | `remotion`, `best-practices` | Mejores prácticas Remotion |
+| 11 | **AI Agents Marketing** | `11_Ai_Agents/` | `ai`, `marketing`, `agents` | Agentes AI para marketing |
+| 12 | **Compound Engine** | `12_Compound_Engine/` | `ce`, `engine` | Integración Compound Engineering |
+| 13 | **Marketing Strategy** | `13_Marketing_Strategy/` | `marketing`, `cro`, `pricing` | Copy, CRO, pricing, lanzamientos |
+| 14 | **Marketing Tech** | `14_Marketing_Tech/` | `seo`, `analytics`, `ads`, `schema` | SEO, analytics, ads, schema markup |
+| 15 | **Marketing Scripts** | `15_Marketing_Scripts/` | `automation`, `scripts` | Automatización de marketing |
+| 16 | **Imported Packages** | `16_Imported_Packages/` | `packages`, `imports` | Paquetes y dependencias importadas |
+| 17 | **Content Generation** | `21_Content_Generation/` | `content`, `writing`, `voice`, `blog` | Generar contenido escrito (blog, email, social) en voz auténtica |
 
 ---
 
@@ -143,8 +140,8 @@
 | 1 | **Life OS** | `01_Life_OS/` | `life`, `productivity` | Sistema Life OS |
 | 2 | **Personal OS (Hillary)** | `02_Personal_Os/` | `personal`, `daily`, `capture` | Captura rápida, plan diario |
 | 3 | **Fantasticos** | `03_Fantasticos/` | `fantastic-four` | Los 4 Fantásticos |
-| 4 | **Learning Always** | `09_Workflow_Os/01_Learning_Always/` | `learning`, `methodology`, `compound` | Metodología de aprendizaje continuo con IA |
-| 5 | **Dynamic Workflows** | `09_Workflow_Os/02_Dynamic_Workflows/` | `workflow`, `pipeline`, `lifecycle` | Pipeline completo de ejecución (11 fases) |
+| 4 | **Learning Always** | `00_Personal_Os/09_Workflow_Os/01_Learning_Always/` | `learning`, `methodology`, `compound` | Metodología de aprendizaje continuo con IA |
+| 5 | **Dynamic Workflows** | `00_Personal_Os/09_Workflow_Os/02_Dynamic_Workflows/` | `workflow`, `pipeline`, `lifecycle` | Pipeline completo de ejecución (11 fases) |
 
 ---
 
@@ -162,7 +159,7 @@
 
 | # | Skill | Path | Tags | ¿Cuándo usarla? |
 |---|-------|------|------|-----------------|
-| 1 | **Claude Ads** | `09_Claude_Ads/` | `ads`, `claude` | Sistema de publicidad y campañas |
+| 1 | **Claude Ads** | `05_Claude_Ads/` | `ads`, `claude` | Sistema de publicidad y campañas |
 
 ---
 
@@ -170,7 +167,34 @@
 
 | # | Skill | Path | Tags | ¿Cuándo usarla? |
 |---|-------|------|------|-----------------|
-| 1 | **Skill Auditor** | `10_Skill_Auditor/` | `audit`, `quality`, `validation` | Auditoría y validación de calidad de skills |
+| 1 | **Skill Auditor** | `00_Skill_Auditor/` | `audit`, `quality`, `validation` | Auditoría y validación de calidad de skills |
+
+---
+
+## 🤖 ÁREA 11: ANTHROPIC SKILLS LIBRARY
+
+> Skills instaladas de Anthropic Skills Library. Instaladas en `~/.claude/skills/` (Claude Code) y `~/.config/opencode/skills/` (OpenCode).
+> El Conductor rutea a estos skills por nombre, no por path local.
+
+| # | Skill | Tags | ¿Cuándo usarla? |
+|---|-------|------|-----------------|
+| 1 | **PDF Processing** | `pdf`, `document`, `ocr`, `merge` | Leer, crear, mergear, dividir, OCR, encriptar PDFs |
+| 2 | **DOCX Generation** | `docx`, `word`, `document` | Crear y editar documentos Word con Python |
+| 3 | **PPTX Creation** | `pptx`, `powerpoint`, `slides`, `deck` | Crear presentaciones con diseño profesional |
+| 4 | **XLSX Processing** | `xlsx`, `excel`, `spreadsheet`, `data` | Leer, crear y transformar planillas de cálculo |
+| 5 | **Claude API** | `api`, `claude`, `sdk`, `integration` | Integrar Claude API en 8 lenguajes |
+| 6 | **MCP Builder** | `mcp`, `server`, `tool`, `protocol` | Construir servidores MCP personalizados |
+| 7 | **Frontend Design** | `frontend`, `ui`, `react`, `landing` | Diseño y prototipado de interfaces web |
+| 8 | **Canvas Design** | `canvas`, `font`, `typography`, `graphic` | Diseño tipográfico y canvas con 81 fonts |
+| 9 | **Web Artifacts Builder** | `artifact`, `html`, `react`, `shadcn` | Buildear artifacts HTML complejos con React+Tailwind |
+| 10 | **Webapp Testing** | `testing`, `playwright`, `browser`, `e2e` | Testing de apps web con Playwright |
+| 11 | **Algorithmic Art** | `art`, `generative`, `creative`, `code` | Arte generativo y creativo con código |
+| 12 | **Slack GIF Creator** | `gif`, `slack`, `emoji`, `animation` | Crear GIFs animados optimizados para Slack |
+| 13 | **Theme Factory** | `theme`, `colors`, `fonts`, `branding` | Temas visuales profesionales (10 pre-set) |
+| 14 | **Brand Guidelines** | `brand`, `guidelines`, `identity`, `style` | Guías de marca y estilo |
+| 15 | **Doc Coauthoring** | `document`, `coauthor`, `writing`, `draft` | Coautoría y edición colaborativa de documentos |
+| 16 | **Internal Comms** | `comms`, `internal`, `memo`, `announcement` | Comunicaciones internas y memos |
+| 17 | **Skill Creator** | `skill`, `create`, `eval`, `iterate` | Crear y mejorar skills con ciclo iterativo de evals |
 
 ---
 
@@ -237,7 +261,8 @@
 ```
 Tags disponibles: sdd, ce, core, audit, brand, youtube, seo, design, 
 n8n, automation, workflow, test, devops, video, ai, marketing, 
-personal, web, ads, quality
+personal, web, ads, quality, pdf, docx, pptx, xlsx, api, mcp, 
+frontend, testing, art, gif, theme, guidelines, comms, skill
 ```
 
 ### Búsqueda por necesidad
@@ -254,7 +279,17 @@ personal, web, ads, quality
 | Ejecutar pipeline completo | Área 07 > `09_Workflow_Os/02_Dynamic_Workflows` |
 | Web automation | Área 08 |
 | Publicidad | Área 09 |
-| Auditar skills | Área 10 |
+| Procesar PDF/DOCX/PPTX/XLSX | Área 11 (Anthropic Skills) |
+| Integrar API (Claude, MCP) | Área 11 (claude-api, mcp-builder) |
+| Testing web | Área 11 (webapp-testing) |
+| Diseño frontend / canvas | Área 11 (frontend-design, canvas-design) |
+| Branding / guías de marca | Área 11 (brand-guidelines) |
+| Arte generativo / creativo | Área 11 (algorithmic-art) |
+| GIFs / animaciones para Slack | Área 11 (slack-gif-creator) |
+| Temas visuales / paletas | Área 11 (theme-factory) |
+| Comunicaciones internas | Área 11 (internal-comms) |
+| Coautoría de documentos | Área 11 (doc-coauthoring) |
+| Crear/mejorar skills | Área 11 (skill-creator) |
 
 ---
 

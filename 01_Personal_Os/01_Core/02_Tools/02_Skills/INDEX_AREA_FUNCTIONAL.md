@@ -2,7 +2,7 @@
 
 > Índice navegable de todas las skills organizadas por área funcional.
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
-> **Actualizado:** 2026-05-26 (v4.9 Consequences — Production Ready)
+> **Actualizado:** 2026-05-30 (v4.9 Consequences + Anthropic Skills)
 
 ---
 
@@ -13,7 +13,7 @@
 | **Agent Teams Lite**                        | `00_Agent_Teams_Lite/`                        | SDD workflow: init, explore, propose, spec, design, tasks, apply, verify, archive, judgment_day, go_testing, branch_pr, issue_creation |
 | **Compound Engineering**                    | `00_Compound_Engineering/`                    | CE Spider, Avengers, metodología completa                    |
 | **Personal OS Stack**                       | `00_System_Core/`                             | Stack base del OS, System Guardian                           |
-| **Skill Auditor**                           | `10_Skill_Auditor/`                           | Auditoría y validación de skills                             |
+| **Skill Auditor**                           | `00_Skill_Auditor/`                           | Auditoría y validación de skills                             |
 
 ---
 
@@ -27,20 +27,17 @@
 | **Offer & Bio Writer**                      | `01_Creacion_Contenidos/04_Offer_And_Bio_Writer/`                    | Copy de ofertas y bio                             |
 | **Youtube Script Writer**                   | `01_Creacion_Contenidos/05_Youtube_Script_Writer/`                   | Guiones optimizados YouTube                       |
 | **Youtube Title Generator**                 | `01_Creacion_Contenidos/06_Youtube_Title_Generator/`                 | Generación de títulos                             |
-| **Youtube Thumbnail Prompter**              | `01_Creacion_Contenidos/07_Youtube_Thumbnail_Prompter/`              | Prompts para miniaturas                           |
-| **Youtube Full Video**                      | `01_Creacion_Contenidos/08_Youtube_Full_Video/`                      | Pipeline completo YouTube                         |
-| **Video Prompt Builder**                    | `01_Creacion_Contenidos/09_Video_Prompt_Builder/`                    | Prompts Seedance/video                            |
-| **Video Visuals Producer**                  | `01_Creacion_Contenidos/10_Video_Visuals_Producer/`                  | Producción de visuales                            |
-| **Premium Image Studio**                    | `01_Creacion_Contenidos/11_Premium_Image_Studio/`                    | Imágenes premium                                  |
-| **Carousel Master**                         | `01_Creacion_Contenidos/12_Carousel_Master/`                         | Estrategia de carruseles                          |
-| **SEO SOTA Master**                         | `01_Creacion_Contenidos/13_Seo_Sota_Master/`                         | SEO técnico + keyword research                    |
-| **Remotion Video Creator**                  | `01_Creacion_Contenidos/14_Remotion_Video_Creator/`                  | Videos con Remotion                               |
-| **Remotion Best Practices**                 | `01_Creacion_Contenidos/15_Remotion_Best_Practices/`                 | Mejores prácticas Remotion                        |
-| **AI Agents Marketing**                     | `01_Creacion_Contenidos/16_Ai_Agents/`                               | Agentes AI para marketing                         |
-| **Compound Engine**                         | `01_Creacion_Contenidos/17_Compound_Engine/`                         | Integración CE                                    |
-| **Marketing Strategy**                      | `01_Creacion_Contenidos/18_Marketing_Strategy/`                      | Copy, CRO, pricing, lanzamientos                  |
-| **Marketing Tech**                          | `01_Creacion_Contenidos/19_Marketing_Tech/`                          | SEO, analytics, ads, schema                       |
-| **Marketing Scripts**                       | `01_Creacion_Contenidos/20_Marketing_Scripts/`                       | Automatización de marketing                       |
+| **Youtube Full Video**                      | `01_Creacion_Contenidos/07_Youtube_Full_Video/`                      | Pipeline completo YouTube                         |
+| **SEO SOTA Master**                         | `01_Creacion_Contenidos/08_Seo_Sota_Master/`                         | SEO técnico + keyword research                    |
+| **Remotion Video Creator**                  | `01_Creacion_Contenidos/09_Remotion_Video_Creator/`                  | Videos con Remotion                               |
+| **Remotion Best Practices**                 | `01_Creacion_Contenidos/10_Remotion_Best_Practices/`                 | Mejores prácticas Remotion                        |
+| **AI Agents Marketing**                     | `01_Creacion_Contenidos/11_Ai_Agents/`                               | Agentes AI para marketing                         |
+| **Compound Engine**                         | `01_Creacion_Contenidos/12_Compound_Engine/`                         | Integración Compound Engineering                  |
+| **Marketing Strategy**                      | `01_Creacion_Contenidos/13_Marketing_Strategy/`                      | Copy, CRO, pricing, lanzamientos                  |
+| **Marketing Tech**                          | `01_Creacion_Contenidos/14_Marketing_Tech/`                          | SEO, analytics, ads, schema                       |
+| **Marketing Scripts**                       | `01_Creacion_Contenidos/15_Marketing_Scripts/`                       | Automatización de marketing                       |
+| **Imported Packages**                       | `01_Creacion_Contenidos/16_Imported_Packages/`                       | Paquetes y dependencias importadas                |
+| **Content Generation**                      | `01_Creacion_Contenidos/21_Content_Generation/`                      | Generar contenido escrito en voz auténtica        |
 
 ---
 
@@ -94,11 +91,11 @@
 
 | Skill                                        | Path                                                          | Descripción                                          |
 |---------------------------------------------|--------------------------------------------------------------|-----------------------------------------------------|
-| **Agent Teams Lite**                         | `05_Workflows/01_Agent_Teams_Lite/`                           | Orquestación de equipos de agents                    |
-| **Project Manager**                          | `05_Workflows/02_Project_Manager/`                            | Gestión de proyectos                                 |
-| **Product Manager**                          | `05_Workflows/03_Product_Manager/`                            | Gestión de producto                                  |
-| **PM Agent Orchestrator**                    | `05_Workflows/04_PM_Orchestrator/`                            | Orquestación PM avanzada                             |
-| **Workflow Orchestrator**                    | `05_Workflows/05_Workflow_Orchestrator.md`                    | Orquestación de workflows                            |
+| **Agent Teams Lite**                         | `00_Workflows/01_Agent_Teams_Lite/`                           | Orquestación de equipos de agents                    |
+| **Project Manager**                          | `00_Workflows/02_Project_Manager/`                            | Gestión de proyectos                                 |
+| **Product Manager**                          | `00_Workflows/03_Product_Manager/`                            | Gestión de producto                                  |
+| **PM Agent Orchestrator**                    | `00_Workflows/04_PM_Orchestrator/`                            | Orquestación PM avanzada                             |
+| **Workflow Orchestrator**                    | `00_Workflows/05_Workflow_Orchestrator.md`                    | Orquestación de workflows                            |
 
 ---
 
@@ -129,9 +126,11 @@
 
 | Skill                                    | Path                                                                                  | Descripción                                    |
 |-----------------------------------------|--------------------------------------------------------------------------------------|-----------------------------------------------|
-| **Life OS**                             | `07_Personal_Os/01_Life_OS/`                                                         | Sistema Life OS                               |
-| **Personal OS (Hillary)**               | `07_Personal_Os/02_Personal_Os/`                                                     | Captura rápida, plan diario                    |
-| **Fantasticos**                         | `07_Personal_Os/03_Fantasticos/`                                                     | 4 Fantásticos                                 |
+| **Life OS**                             | `00_Personal_Os/01_Life_OS/`                                                         | Sistema Life OS (5 sub-skills)                 |
+| **Personal OS (Hillary)**               | `00_Personal_Os/02_Personal_Os/`                                                     | Captura rápida, plan diario                    |
+| **Learning Always**                     | `00_Personal_Os/09_Workflow_Os/01_Learning_Always/`                                  | Metodología de aprendizaje continuo con IA     |
+| **Dynamic Workflows**                   | `00_Personal_Os/09_Workflow_Os/02_Dynamic_Workflows/`                                | Pipeline completo de ejecución (11 fases)      |
+| **Fantasticos**                         | `00_Personal_Os/03_Fantasticos/`                                                     | 4 Fantásticos                                 |
 
 ---
 
@@ -139,12 +138,54 @@
 
 | Skill                                     | Path                                  | Descripción                                            |
 |------------------------------------------|--------------------------------------|-------------------------------------------------------|
-| **Browser Automation**                    | `08_Invictus_Web/03_Playwright/`      | Playwright, automatización web                         |
-| **Superpowers**                           | `08_Invictus_Web/01_Superpowers/`     | Superpoderes de búsqueda y scraping                    |
-| **Buscador Skills**                       | `08_Invictus_Web/02_Buscador_Skills/` | Buscador de skills                                     |
+| **Browser Automation**                    | `07_Invictus_Web/03_Playwright/`      | Playwright, automatización web                         |
+| **Superpowers**                           | `07_Invictus_Web/01_Superpowers/`     | Superpoderes de búsqueda y scraping                    |
+| **Buscador Skills**                       | `07_Invictus_Web/02_Buscador_Skills/` | Buscador de skills                                     |
+
+---
+
+## ÁREA 09: CLAUDE ADS
+
+| Skill                                     | Path                                  | Descripción                                            |
+|------------------------------------------|--------------------------------------|-------------------------------------------------------|
+| **Claude Ads**                            | `05_Claude_Ads/`                      | Sistema de publicidad y campañas                       |
+
+---
+
+## ÁREA 10: SKILL AUDITOR
+
+| Skill                                     | Path                                  | Descripción                                            |
+|------------------------------------------|--------------------------------------|-------------------------------------------------------|
+| **Skill Auditor**                         | `00_Skill_Auditor/`                   | Auditoría y validación de calidad de skills             |
+
+---
+
+## ÁREA 11: ANTHROPIC SKILLS LIBRARY
+
+> Instaladas de Anthropic Skills Library. Disponibles en `~/.claude/skills/` (Claude Code) y `~/.config/opencode/skills/` (OpenCode).
+
+| Skill                  | Path (CC/OC)                        | Tags                                                        | Descripción                                    |
+|-----------------------|-------------------------------------|-------------------------------------------------------------|-----------------------------------------------|
+| **PDF Processing**     | `pdf/`                              | `pdf`, `document`, `ocr`, `merge`                           | Leer, crear, mergear, dividir, OCR PDFs        |
+| **DOCX Generation**    | `docx/`                             | `docx`, `word`, `document`                                  | Crear y editar documentos Word                 |
+| **PPTX Creation**      | `pptx/`                             | `pptx`, `slides`, `presentation`, `deck`                    | Presentaciones con diseño profesional          |
+| **XLSX Processing**    | `xlsx/`                             | `xlsx`, `excel`, `spreadsheet`, `data`                      | Leer, crear y transformar planillas            |
+| **Claude API**         | `claude-api/`                       | `api`, `claude`, `sdk`, `integration`                       | Integrar Claude API (8 lenguajes)              |
+| **MCP Builder**        | `mcp-builder/`                      | `mcp`, `server`, `tool`, `protocol`                         | Construir servidores MCP                       |
+| **Frontend Design**    | `frontend-design/`                  | `frontend`, `ui`, `react`, `landing`                        | Diseño de interfaces web                       |
+| **Canvas Design**      | `canvas-design/`                    | `canvas`, `font`, `typography`, `graphic`                   | Diseño tipográfico (81 fonts)                  |
+| **Web Artifacts**      | `web-artifacts-builder/`            | `artifact`, `html`, `react`, `shadcn`                       | Artifacts HTML con React+Tailwind              |
+| **Webapp Testing**     | `webapp-testing/`                   | `testing`, `playwright`, `browser`                          | Testing de apps web con Playwright             |
+| **Algorithmic Art**    | `algorithmic-art/`                  | `art`, `generative`, `creative`, `code`                     | Arte generativo con código                     |
+| **Slack GIF Creator**  | `slack-gif-creator/`                | `gif`, `slack`, `emoji`, `animation`                        | GIFs animados para Slack                       |
+| **Theme Factory**      | `theme-factory/`                    | `theme`, `colors`, `fonts`, `branding`                      | 10 temas visuales profesionales                |
+| **Brand Guidelines**   | `brand-guidelines/`                 | `brand`, `guidelines`, `identity`                           | Guías de marca y estilo                        |
+| **Doc Coauthoring**    | `doc-coauthoring/`                  | `document`, `coauthor`, `writing`                           | Coautoría y edición de documentos              |
+| **Internal Comms**     | `internal-comms/`                   | `comms`, `internal`, `memo`, `announcement`                 | Comunicaciones internas                        |
+| **Skill Creator**      | `skill-creator/`                    | `skill`, `create`, `eval`, `iterate`                        | Crear y mejorar skills con evals               |
 
 ---
 
 > ℹ️ **Legacy Archive** → movido a `01_Personal_Os/05_Archive/09_Legacy_Skills_Archive/` (no es área activa de skills)
 
-*PersonalOS v4.9 Consequences — 2026-05-29 | 14 áreas funcionales | Skills: 385 activas + ~490 legacy*
+*PersonalOS v4.9 Consequences — 2026-05-30 | 12 áreas funcionales | Skills: 385 activas + 17 Anthropic + ~490 legacy*

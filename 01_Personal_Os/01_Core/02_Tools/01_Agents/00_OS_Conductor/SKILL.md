@@ -1,7 +1,7 @@
 ---
 name: orchestrating-os
 description: >-
-  Punto de entrada único al Think Different PersonalOS v4.9. Orquesta 14 áreas de skills,
+  Punto de entrada único al Think Different PersonalOS v4.9. Orquesta 12 áreas de skills,
   47 agentes especializados y flujos compuestos multi-dominio. Activa cuando el usuario
   pide ayuda sin especificar skill, cuando un request cruza múltiples áreas, o cuando se
   necesita un entry point único para diagnóstico, estrategia o lanzamientos.
@@ -54,19 +54,19 @@ El Conductor nace de una verdad incómoda: el Orchestrator v4.0 era un archivo p
 
 ## 🗺️ Mapa de Dominio del OS
 
-14 áreas de skills + 47 agentes especializados:
+12 áreas de skills + 47 agentes especializados:
 
 | Prioridad | Área | Skills | Lo uso para... |
 |-----------|------|--------|----------------|
 | ⭐ CORE | `00_Compound_Engineering` | SDD, CE Spider | Plan→code→review→commit |
 | ⭐ CORE | `00_System_Core` | Stack base, Guardian | Salud del OS, validación |
-| 🔥 ALTA | `01_Creacion_Contenidos` | 20 skills | Brand, YouTube, SEO, Marketing |
+| 🔥 ALTA | `01_Creacion_Contenidos` | 17 skills | Brand, YouTube, SEO, Marketing |
 | 🔥 ALTA | `02_Diseno_Ui_Ux` | 11 skills | UI/UX, prototipado, diseño visual |
 | 🔥 ALTA | `04_Automatizacion` | 17 skills | N8N, Firecrawl, GWS, scraping |
 | 🔥 ALTA | `05_Workflows` | 7 skills | PM, orquestación, LFG |
 | 🔥 ALTA | `06_Tools` | 15 skills | Testing, DevOps, Skill Creator |
 | 📈 MEDIA | `03_Video_Media` | 5 skills | Video Intel, Remotion |
-| 📈 MEDIA | `07_Personal_Os` | 3 skills | Life OS, Hillary |
+| 📈 MEDIA | `00_Personal_Os` | 5 skills | Life OS, Hillary, Fantasticos, Learning Always, Dynamic Workflows |
 | 📈 MEDIA | `08_Invictus_Web` | 3 skills | Playwright, Superpowers |
 | 📈 MEDIA | `09_Claude_Ads` | Ads system | Publicidad |
 | 🔍 AUDIT | `10_Skill_Auditor` | Auditoría | Calidad interna de skills |
@@ -140,7 +140,20 @@ Si matchea **1 área** → seguir al Paso 2.
 | Salud del OS, validación | `00_System_Core` | ✅ Ruta directa |
 | Auditoría de skills/calidad | `10_Skill_Auditor` | ✅ Ruta directa |
 | Video, animación | `03_Video_Media` | |
-| Productividad personal | `07_Personal_Os` | |
+| Productividad personal | `00_Personal_Os` | |
+| Contenido escrito (blog, email, social, voz) | `01_Creacion_Contenidos` (Content Generation) | ✅ skill("content-generation") |
+| Documentos (PDF, DOCX, PPTX, XLSX) | `11_Anthropic` (Anthropic Skills Library) | ✅ pdf, docx, pptx, xlsx skills |
+| API / MCP integration | `11_Anthropic` (claude-api, mcp-builder) | ✅ claude-api, mcp-builder skills |
+| Diseño UI/frontend | `02_Diseno_Ui_Ux` + `11_Anthropic` (frontend-design) | ✅ frontend-design, canvas-design |
+| Testing web | `11_Anthropic` (webapp-testing) | ✅ webapp-testing skill |
+| Arte / diseño generativo | `11_Anthropic` (algorithmic-art) | ✅ algorithmic-art skill |
+| GIFs / animaciones (Slack, social) | `11_Anthropic` (slack-gif-creator) | ✅ slack-gif-creator skill |
+| Temas visuales / paletas de colores | `11_Anthropic` (theme-factory) | ✅ theme-factory skill |
+| Guías de marca / identidad visual | `11_Anthropic` (brand-guidelines) | ✅ brand-guidelines skill |
+| Coautoría / edición de documentos | `11_Anthropic` (doc-coauthoring) | ✅ doc-coauthoring skill |
+| Comunicaciones internas / memos | `11_Anthropic` (internal-comms) | ✅ internal-comms skill |
+| Crear / mejorar skills | `11_Anthropic` (skill-creator) | ✅ skill-creator skill |
+| Web artifacts / HTML componentes | `11_Anthropic` (web-artifacts-builder) | ✅ web-artifacts-builder skill |
 | Automatización web/browser | `08_Invictus_Web` | |
 | Publicidad, ads | `09_Claude_Ads` | |
 | **No reconozco el request** | `00_System_Core` (diagnóstico) | Pedir clarificación al usuario |

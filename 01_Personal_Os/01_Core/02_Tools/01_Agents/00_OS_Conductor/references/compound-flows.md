@@ -124,6 +124,36 @@
 
 ---
 
+## 📄 FLUJO: Document Pipeline (PDF → Extracción → Documento)
+
+**Propósito:** Pipeline de procesamiento de documentos usando Anthropic Skills Library. Desde un PDF raw hasta documentos editables y presentaciones.
+
+### Pasos
+
+| Paso | Skill | Acción | Output esperado |
+|------|-------|--------|-----------------|
+| 1 | `pdf` | Leer/extraer texto y tablas del PDF | extracted-text.md, tables.csv |
+| 2 | `xlsx` | Transformar datos extraídos a planilla | data.xlsx |
+| 3 | `docx` | Generar documento Word con contenido formateado | report.docx |
+| 4 | `pptx` | Crear presentación a partir del documento | deck.pptx |
+| 5 | `canvas-design` | Diseñar tipografía y visuales si aplica | fonts/ |
+| 6 | `brand-guidelines` | Verificar consistencia de marca en outputs | brand-check.md |
+| 7 | `skill-creator` | QA final y validación de formato | qa-report.md |
+
+### Sprint Contract Default
+```
+✅ PDF procesado: texto y tablas extraídos
+✅ Datos organizados en XLSX
+✅ Documento Word generado con formato profesional
+✅ Presentación PPTX con diseño coherente
+✅ Consistencia de marca verificada
+✅ QA de formato pasado
+```
+
+### Duración estimada: 1-3 horas
+
+---
+
 ## 🛠️ Cómo Agregar un Nuevo Flujo Compuesto
 
 1. Definir el trigger pattern (qué dice el usuario)
