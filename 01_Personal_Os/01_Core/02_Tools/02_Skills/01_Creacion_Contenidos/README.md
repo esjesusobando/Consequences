@@ -1,7 +1,7 @@
 # CREACION DE CONTENIDOS — Area Funcional 01
 
 > **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/`
-> **Ultima actualizacion:** 2026-05-29
+> **Ultima actualizacion:** 2026-05-31
 > **Skills activas:** 21
 
 ---
@@ -69,4 +69,4 @@
 
 ---
 
-*PersonalOS Consequences v4.9 — 2026-05-29*
+*PersonalOS Consequences v4.9 — 2026-05-31*

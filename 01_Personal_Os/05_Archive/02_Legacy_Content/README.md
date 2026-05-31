@@ -1,6 +1,6 @@
 # 📂 02_Legacy_Content — Contenido Legacy
 
-> **Versión:** v4.5 | **Última actualización:** 2026-05-20
+> **Versión:** v4.5 | **Última actualización:** 2026-05-31
 
 Contenido antiguo organizado: planes, documentación y skills que ya no están activos pero se preservan por razones históricas o de referencia.
 
@@ -42,7 +42,7 @@ Contenido antiguo organizado: planes, documentación y skills que ya no están a
 
 | Fecha | Cambio |
 |-------|--------|
-| 2026-05-20 | v4.5 — Reorganizado con 5 subcarpetas numeradas |
+| 2026-05-31 | v4.5 — Reorganizado con 5 subcarpetas numeradas |
 
 ---
 

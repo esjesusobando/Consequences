@@ -17,7 +17,7 @@ Es la fuente de verdad que TODOS los agentes consultan.
 | 03 | `03_Agent_Catalog.yaml` | 62 agentes (source: core, backup: .agent) |
 | 04 | `04_Skill_Index.json` | Index navegable de las 386 skills |
 | 05 | `05_HUB_Catalog.yaml` | 28 HUBs + 128 scripts |
-| 06 | `06_Workflow_Graph.yaml` | 28 workflows en 7 categorías |
+| 06 | `06_Workflow_Graph.yaml` | 27 workflows en 7 categorías |
 | 07 | `07_Hook_Registry.yaml` | 10 hooks en 6 fases |
 
 ## Cómo regenerar

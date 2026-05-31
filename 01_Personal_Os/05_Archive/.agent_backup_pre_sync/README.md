@@ -1,4 +1,4 @@
-# 🤖 Folder .agent - PersonalOS v4.8 Consequences
+# 🤖 Folder .agent - PersonalOS v4.9 Consequences
 
 ## ⚙️ Configuración del Sistema de Agentes
 
@@ -21,7 +21,7 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 
 ---
 
-## 📂 Estructura Principal (v4.8 Consequences — 4 carpetas raíz)
+## 📂 Estructura Principal (v4.9 Consequences — 4 carpetas raíz)
 
 | Carpeta                             | Contenido                                                |
 |-------------------------------------|----------------------------------------------------------|
@@ -155,4 +155,4 @@ gr --apply      # Apply fixes
 
 ---
 
-*Última actualización: 2026-05-24 | PersonalOS v4.8 Consequences | 12 áreas activas | 394 skills | 23 scripts ✅*
+*Última actualización: 2026-05-24 | PersonalOS v4.9 Consequences | 12 áreas activas | 394 skills | 23 scripts ✅*

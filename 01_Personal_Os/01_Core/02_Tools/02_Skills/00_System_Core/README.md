@@ -1,7 +1,7 @@
 # SYSTEM CORE — Area Funcional 00
 
 > **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_System_Core/`
-> **Ultima actualizacion:** 2026-05-29
+> **Ultima actualizacion:** 2026-05-31
 > **Skills activas:** 2 (mas 4 documentos de sistema + master SKILL.md)
 
 ---
@@ -42,4 +42,4 @@
 
 ---
 
-*PersonalOS Consequences v4.9 — 2026-05-29*
+*PersonalOS Consequences v4.9 — 2026-05-31*

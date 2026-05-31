@@ -1,6 +1,6 @@
 # 📂 03_Backups_Audits — Backups y Auditorías
 
-> **Versión:** v4.5 | **Última actualización:** 2026-05-20
+> **Versión:** v4.5 | **Última actualización:** 2026-05-31
 
 Backups, snapshots y reportes de auditoría del sistema. Todo lo relacionado con respaldo de información y validación del estado del OS.
 
@@ -16,7 +16,7 @@ Backups, snapshots y reportes de auditoría del sistema. Todo lo relacionado con
 │   └── System_Tree_Audit_v6.1.txt
 ├── 02_Auditorias/                  # Reportes de auditoría
 │   ├── AUDIT_REPORT_v4.1_HISTORICO.md  # ← Preservado histórico (original)
-│   └── AUDITORIA_INTEGRAL_2026-05-20.md
+│   └── AUDITORIA_INTEGRAL_2026-05-31.md
 ├── 03_Backups_AutoMejora/          # Backups del motor de auto-mejora
 │   ├── 04_Playwright_QA_20260330_014011.py
 │   ├── 04_Playwright_QA_20260330_020828.py
@@ -65,8 +65,8 @@ Backups, snapshots y reportes de auditoría del sistema. Todo lo relacionado con
 
 | Fecha     | Cambio                                                  |
 |----------|--------------------------------------------------------|
-| 2026-05-20| v4.5 — Reorganizado con 7 subcarpetas numeradas         |
-| 2026-05-20| AUDIT_REPORT_v4.1.md convertido a README de esta carpeta|
+| 2026-05-31| v4.5 — Reorganizado con 7 subcarpetas numeradas         |
+| 2026-05-31| AUDIT_REPORT_v4.1.md convertido a README de esta carpeta|
 
 ---
 

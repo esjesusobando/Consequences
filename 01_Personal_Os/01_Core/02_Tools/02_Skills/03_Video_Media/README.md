@@ -1,7 +1,7 @@
 # VIDEO & MEDIA — Area Funcional 03
 
 > **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/`
-> **Ultima actualizacion:** 2026-05-29
+> **Ultima actualizacion:** 2026-05-31
 > **Skills activas:** 2
 
 ---
@@ -34,4 +34,4 @@ Produccion cinematografica con enfoque narrative. Metodologia de direccion, stor
 
 ---
 
-*PersonalOS Consequences v4.9 — 2026-05-29*
+*PersonalOS Consequences v4.9 — 2026-05-31*

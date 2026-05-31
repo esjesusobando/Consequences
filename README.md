@@ -14,14 +14,14 @@
 > 🟢 **PRODUCTION READY** - v4.9 Consequences lista para uso público
 
 | Métrica                             | Valor                                           |
-|------------------------------------|------------------------------------------------|
-| **Overall Health**                  | **100%** 🟢                                      |
-| **Every CE**                        | v3.8.4 ✅ (local repo)                           |
-| **gentle-ai**                       | v1.30.6 ✅                                       |
-| **Skills**                          | **385** (14 áreas funcionales)                 |
+|-------------------------------------|-------------------------------------------------|
+| **Overall Health**                  | **100%** 🟢                                     |
+| **Every CE**                        | v3.8.4 ✅ (local repo)                          |
+| **gentle-ai**                       | v1.30.6 ✅                                      |
+| **Skills**                          | **385** (14 áreas funcionales)                  |
 | **Rules**                           | **13** (.mdc)                                   |
 | **MCPs**                            | **7** root + **38** backup                      |
-| **HUBs**                            | **20** HUBs + 256 scripts                           |
+| **HUBs**                            | **20** HUBs + 256 scripts                       |
 | **Agentes**                         | **55** (source) / 82 (con SDD/CE)               |
 | **Workflows**                       | **27** (7 categorías)                           |
 
@@ -34,20 +34,20 @@ Think_Different/                           # RAÍZ
 ├── 00_Winter_is_Coming/           ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/                ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                   ✅ Motor del OS (FUENTE DE VERDAD)
-│   │   ├── 00_Workflows_Os/      ✅ 27 workflows (7 categorías)
-│   │   ├── 01_Rules/             ✅ 13 reglas .mdc — FUENTE DE VERDAD
-│   │   └── 02_Tools/             ✅ Todas las herramientas
+│   │   ├── 00_Workflows_Os/       ✅ 27 workflows (7 categorías)
+│   │   ├── 01_Rules/              ✅ 13 reglas .mdc — FUENTE DE VERDAD
+│   │   └── 02_Tools/              ✅ Todas las herramientas
 │   │       ├── 01_Agents/         ✅ 55 agentes
-│   │       ├── 02_Skills/        ✅ 385 skills — 14 áreas funcionales
-│   │       ├── 03_Mcp/           ✅ Backup MCP configs
-│   │       ├── 04_Integrations/  ✅ Fireflies, Granola
-│   │       ├── 05_Hooks/         ✅ 10 hooks (6 fases)
+│   │       ├── 02_Skills/         ✅ 385 skills — 14 áreas funcionales
+│   │       ├── 03_Mcp/            ✅ Backup MCP configs
+│   │       ├── 04_Integrations/   ✅ Fireflies, Granola
+│   │       ├── 05_Hooks/          ✅ 10 hooks (6 fases)
 │   │       ├── 06_Plugins/        ✅ Plugins OS
 │   │       ├── 07_Server/         ✅ Engram server
-│   │       ├── 08_Evals/         ✅ Evaluadores
-│   │       └── 09_Templates/     ✅ Templates
-│   ├── 02_Knowledge/             ✅ Base de conocimiento + Docs
-│   ├── 03_Task/                  ✅ Tareas activas
+│   │       ├── 08_Evals/          ✅ Evaluadores
+│   │       └── 09_Templates/      ✅ Templates
+│   ├── 02_Knowledge/              ✅ Base de conocimiento + Docs
+│   ├── 03_Task/                   ✅ Tareas activas
 │   │   ├── 00_P0_Auditoria.md/
 │   │   ├── 01_Tasks_Done/
 │   │   ├── 02_Hillary_Inbox/
@@ -289,4 +289,4 @@ CC BY-NC-SA 4.0 - Uso no comercial permitido.
 
 _Think Different PersonalOS v4.9 Consequences — Production Ready ✅ — 2026-05-31_
 
-*Estructura completa: ver `Structure_v4.8.md`*
+*Estructura completa: ver `Structure_v4.9.md`*

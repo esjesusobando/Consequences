@@ -155,4 +155,4 @@ gr --apply      # Apply fixes
 
 ---
 
-*Última actualización: 2026-05-29 | PersonalOS v4.9 Consequences — SOTA Consolidation | 14 áreas funcionales | 385 active + ~490 legacy skills | 13 rules | 256 scripts ✅*
+*Última actualización: 2026-05-31 | PersonalOS v4.9 Consequences — SOTA Consolidation | 14 áreas funcionales | 385 active + ~490 legacy skills | 13 rules | 256 scripts ✅*

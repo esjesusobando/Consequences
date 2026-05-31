@@ -1,7 +1,7 @@
 # WORKFLOWS — Area Funcional 00
 
 > **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Workflows/`
-> **Ultima actualizacion:** 2026-05-29
+> **Ultima actualizacion:** 2026-05-31
 > **Skills activas:** 5 (mas documentos de orquestacion)
 
 ---
@@ -51,4 +51,4 @@
 
 ---
 
-*PersonalOS Consequences v4.9 — 2026-05-29*
+*PersonalOS Consequences v4.9 — 2026-05-31*

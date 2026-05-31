@@ -1,7 +1,7 @@
 # INVICTUS WEB — Area Funcional 07
 
 > **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Invictus_Web/`
-> **Ultima actualizacion:** 2026-05-29
+> **Ultima actualizacion:** 2026-05-31
 > **Skills activas:** 3
 
 ---
@@ -39,4 +39,4 @@ Framework de automatizacion de navegador para testing E2E, web scraping, y autom
 
 ---
 
-*PersonalOS Consequences v4.9 — 2026-05-29*
+*PersonalOS Consequences v4.9 — 2026-05-31*

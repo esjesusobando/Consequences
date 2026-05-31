@@ -31,7 +31,7 @@ rules = engine.execute(action='get', scope='global')
 
 ```json
 {
-  "id": "rule_2026-05-20...",
+  "id": "rule_2026-05-31...",
   "correction": "What was wrong",
   "rule": "What to do instead",
   "rationale": "Why this is correct",

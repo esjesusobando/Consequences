@@ -1,7 +1,7 @@
 # 09_Templates — Templates del Sistema
 
 > **Versión:** v4.1
-> **Última actualización:** 2026-05-20
+> **Última actualización:** 2026-05-31
 
 ---
 

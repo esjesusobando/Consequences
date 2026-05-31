@@ -3,7 +3,7 @@
 Directorio centralizado de los flujos de trabajo operativos de PersonalOS. Los flujos están organizados temáticamente para maximizar la eficiencia y la capitalización de conocimiento.
 
 **Ruta:** `01_Personal_Os/01_Core/00_Workflows_Os/`
-**Total:** 28 workflows en 7 categorías
+**Total:** 27 workflows en 7 categorías
 
 ---
 
@@ -81,4 +81,4 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py run <workfl
 
 ---
 
-*Actualizado: 2026-05-29 | v4.9 Consequences — SOTA Consolidation*
+*Actualizado: 2026-05-31 | v4.9 Consequences — SOTA Consolidation*

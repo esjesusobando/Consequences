@@ -1,6 +1,6 @@
 # 📂 01_Repos_Reference — Repositorios de Referencia
 
-> **Versión:** v4.5 | **Última actualización:** 2026-05-20
+> **Versión:** v4.5 | **Última actualización:** 2026-05-31
 
 Repos clonados de upstream para referencia y consulta. Estos repos contienen el código fuente de las herramientas y frameworks que powering el PersonalOS.
 
@@ -41,7 +41,7 @@ Repos clonados de upstream para referencia y consulta. Estos repos contienen el 
 
 | Fecha     | Cambio                                       |
 |----------|---------------------------------------------|
-| 2026-05-20| v4.5 — Reorganizado con subcarpetas numeradas|
+| 2026-05-31| v4.5 — Reorganizado con subcarpetas numeradas|
 
 ---
 

@@ -116,8 +116,8 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/08_Workflow_Hub.py list
 
 | Fecha     | Cambio                                           |
 |----------|-------------------------------------------------|
-| 2026-05-20| v4.5 — Secuencia corregida, estructura organizada|
-| 2026-05-20| 06_Testing_Youtube reorganizado en 5 carpetas    |
+| 2026-05-31| v4.5 — Secuencia corregida, estructura organizada|
+| 2026-05-31| 06_Testing_Youtube reorganizado en 5 carpetas    |
 | 2026-05-23| v4.7 — Version bump sincronización general       |
 
 ---

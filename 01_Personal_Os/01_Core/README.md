@@ -1,7 +1,7 @@
 # 01_Core — Think Different PersonalOS v4.9
 
 > **Versión:** v4.9 Consequences — Audit v3 synced
-> **Última actualización:** 2026-05-25
+> **Última actualización:** 2026-05-31
 > **Estado:** ✅ Activo | 💾 FUENTE DE VERDAD
 
 ---
@@ -27,7 +27,7 @@ Think_Different/
 
 | #   | Carpeta              | Contenido                                     | Estado  |
 |----|---------------------|----------------------------------------------|--------|
-| 01  | `00_Workflows_Os/`   | 28 workflows (7 categorías)                   | ✅       |
+| 01  | `00_Workflows_Os/`   | 27 workflows (7 categorías)                   | ✅       |
 | 02  | `01_Rules/`          | 13 reglas .mdc (00-12)                        | ✅       |
 | 03  | `02_Tools/`          | Agents, Skills, MCPs, Hooks, Plugins, Evals   | ✅       |
 

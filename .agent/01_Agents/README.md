@@ -152,4 +152,4 @@ Agente #05: "Audita seguridad de [feature]"
 
 ---
 
-_PersonalOS v4.9 Consequences — SOTA Consolidation — 2026-05-29_
+_PersonalOS v4.9 Consequences — SOTA Consolidation — 2026-05-31_

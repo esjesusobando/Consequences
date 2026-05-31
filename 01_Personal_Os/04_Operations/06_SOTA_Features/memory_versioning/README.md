@@ -26,7 +26,7 @@ result = engine.execute(action='save',
 versions = engine.execute(action='list', topic_key='project/architecture')
 
 # Rollback to previous version
-content = engine.execute(action='rollback', version_id='ver_2026-05-20...')
+content = engine.execute(action='rollback', version_id='ver_2026-05-31...')
 ```
 
 ## CLI

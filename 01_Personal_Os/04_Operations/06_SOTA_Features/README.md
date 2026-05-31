@@ -65,4 +65,4 @@ sota_features:
 
 ---
 
-**Version:** 1.0.0 | **PersonalOS:** v4.1 | **Date:** 2026-05-20
+**Version:** 1.0.0 | **PersonalOS:** v4.1 | **Date:** 2026-05-31

@@ -1,7 +1,7 @@
 # 04_Operations — Motor Operativo PersonalOS v4.9
 
 **Versión:** 4.9 Consequences
-**Última actualización:** 2026-05-29
+**Última actualización:** 2026-05-31
 **Estado:** ✅ Activo (v4.9 Consequences)
 
 ---
@@ -53,7 +53,7 @@ Think_Different/
 │   ├── 02_MCP_Registry.yaml     # 7+37 MCPs (7 both, 1 Claude-only, 36 OpenCode-only)
 │   ├── 03_Agent_Catalog.yaml  # 55 agents source / 52 backup
 │   ├── 05_HUB_Catalog.yaml   # 28 root scripts + subdirectory tools
-│   ├── 06_Workflow_Graph.yaml # 28 workflows (7 categorías)
+│   ├── 06_Workflow_Graph.yaml # 27 workflows (7 categorías)
 │   └── 07_Hook_Registry.yaml # 10 hooks (6 fases)
 └── 01_Agent_Teams_Lite/
     ├── AGENTS.md              # SDD Workflow definition

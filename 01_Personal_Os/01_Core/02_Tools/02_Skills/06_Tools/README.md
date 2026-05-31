@@ -1,7 +1,7 @@
 # TOOLS — Area Funcional 06
 
 > **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/06_Tools/`
-> **Ultima actualizacion:** 2026-05-29
+> **Ultima actualizacion:** 2026-05-31
 > **Skills activas:** 15
 
 ---
@@ -73,4 +73,4 @@ Framework de testing unificado con cobertura para e2e, integracion, unitario, y 
 
 ---
 
-*PersonalOS Consequences v4.9 — 2026-05-29*
+*PersonalOS Consequences v4.9 — 2026-05-31*

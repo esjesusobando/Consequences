@@ -1,6 +1,6 @@
 # 05_Marca — Brand Assets y Voz de Marca
 
-**Versión:** v4.9 | **Fecha:** 2026-05-29
+**Versión:** v4.9 | **Fecha:** 2026-05-31
 
 Repositorio de assets de marca y guias de voz para garantizar consistencia en todo el contenido generado por los agentes.
 

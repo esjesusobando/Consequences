@@ -70,7 +70,7 @@ Sistema de memoria y contexto para LLMs. Guarda el estado del sistema, notas de 
 | Fecha     | Nota                               |
 |----------|-----------------------------------|
 | 2026-05-19| Session 15                         |
-| 2026-05-20| **Auditoría Integral** — Session 16|
+| 2026-05-31| **Auditoría Integral** — Session 16|
 
 ---
 

@@ -24,7 +24,7 @@ Este directorio contiene el **legacy de Agent Teams Lite** y los **7 manifests d
 │   ├── 03_Agent_Catalog.yaml       # 82 agents
 │   ├── 04_Skill_Index.json        # 385 skills
 │   ├── 05_HUB_Catalog.yaml        # 20 HUBs
-│   ├── 06_Workflow_Graph.yaml     # 28 workflows
+│   ├── 06_Workflow_Graph.yaml     # 27 workflows
 │   └── 07_Hook_Registry.yaml        # 10 hooks
 ├── 00_SDD_Registry/                 # SDD skills registry (LEGACY — mantener como referencia)
 │   ├── sdd-init/
@@ -51,7 +51,7 @@ Este directorio contiene el **legacy de Agent Teams Lite** y los **7 manifests d
 | Agent Catalog | 82 agents   | 0 ✅  | Se mantiene|
 | Skill Index   | 385 skills  | 0 ✅  | Se mantiene|
 | HUB Catalog   | 20 HUBs   | 0 ✅  | Se mantiene|
-| Workflow Graph| 28 workflows| 0 ✅  | Se mantiene|
+| Workflow Graph| 27 workflows| 0 ✅  | Se mantiene|
 | Hook Registry | 10 hooks    | 0 ✅  | Se mantiene|
 
 > Los manifests JARVIS SIGUEN ACTIVOS como fuente de verdad del PersonalOS.

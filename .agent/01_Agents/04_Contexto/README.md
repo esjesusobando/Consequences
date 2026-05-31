@@ -1,6 +1,6 @@
 # 04_Contexto — Contexto de Proyecto para Marketing Agents
 
-**Versión:** v4.9 | **Fecha:** 2026-05-29
+**Versión:** v4.9 | **Fecha:** 2026-05-31
 
 Carpeta que almacena el contexto del proyecto activo para alimentar a los agentes de Growth y Marketing con informacion personalizada y alineada al negocio.
 

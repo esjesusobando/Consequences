@@ -1,7 +1,7 @@
 # AUTOMATIZACION — Area Funcional 04
 
 > **Ubicacion:** `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/`
-> **Ultima actualizacion:** 2026-05-29
+> **Ultima actualizacion:** 2026-05-31
 > **Skills activas:** 16
 
 ---
@@ -64,4 +64,4 @@
 
 ---
 
-*PersonalOS Consequences v4.9 — 2026-05-29*
+*PersonalOS Consequences v4.9 — 2026-05-31*

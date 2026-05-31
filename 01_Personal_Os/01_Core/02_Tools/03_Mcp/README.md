@@ -1,7 +1,7 @@
 # 03_Mcp — MCP Configurations Backup
 
 > **Versión:** v4.1
-> **Última actualización:** 2026-05-20
+> **Última actualización:** 2026-05-31
 
 ---
 

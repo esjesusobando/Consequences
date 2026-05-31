@@ -1,7 +1,7 @@
 # 🧪 Experimento Controlado: Content Generation + LA Research
 
 > **Workflow testeado:** `00_Workflows_Os/01_Personal_Os/03_Content_Generation.md`
-> **Input research:** `02_Knowledge/01_Research_Os/2026-05-29_Learning_Luck_Is_Repetition.md`
+> **Input research:** `02_Knowledge/01_Research_Os/2026-05-31_Learning_Luck_Is_Repetition.md`
 > **Fecha:** 2026-05-30
 > **Tester:** Gentle AI SDD Orchestrator
 
@@ -22,7 +22,7 @@ Validar que el **Content Generation workflow** produce contenido alineado con la
 ### Inputs
 | Input | Fuente | Path |
 |-------|--------|------|
-| Research LA | Video "Por Qué La Suerte No Existe" | `02_Knowledge/01_Research_Os/2026-05-29_Learning_Luck_Is_Repetition.md` |
+| Research LA | Video "Por Qué La Suerte No Existe" | `02_Knowledge/01_Research_Os/2026-05-31_Learning_Luck_Is_Repetition.md` |
 | Tono | Rioplatense natural, coloquial pero con peso | Voice Guide (ver sección) |
 | Formato | LinkedIn post (~800-1200 chars) | Estándar de la plataforma |
 
