@@ -14,14 +14,14 @@ globs: **/README.md, **/OS_DIRECTORY.md, **/AGENTS.md, **/CLAUDE.md, **/GOALS.md
 
 | Métrica | Valor | Última verificación |
 |---------|-------|---------------------|
-| **HUBs** | **28** (19 raíz + 9 aux) | 2026-05-25 ✅ |
-| **Scripts** | **284** (283 .py + 1 .js, recursivo) | 2026-05-25 ✅ |
-| **Skills** | **385** (14 áreas funcionales) | 2026-05-25 ✅ |
-| **MCPs** | **36** (Claude Code) | 2026-05-25 ✅ |
-| **Agentes source** | **46** | 2026-05-25 ✅ |
-| **Agentes total (con SDD/CE)** | **82** | 2026-05-25 ✅ |
-| **Workflows** | **30** (7 categorías) | 2026-05-25 ✅ |
-| **Hooks** | **10** (6 fases) | 2026-05-25 ✅ |
+| **HUBs** | **28** | 2026-05-31 ✅ |
+| **Scripts** | **128** | 2026-05-31 ✅ |
+| **Skills** | **386** (14 áreas funcionales) | 2026-05-31 ✅ |
+| **MCPs** | **8 (Claude) + 43 (Opencode)** | 2026-05-31 ✅ |
+| **Agentes source** | **62** | 2026-05-31 ✅ |
+| **Agentes total (con SDD/CE)** | **82** | 2026-05-31 ✅ |
+| **Workflows** | **28** (7 categorías) | 2026-05-31 ✅ |
+| **Hooks** | **10** (6 fases) | 2026-05-31 ✅ |
 
 ## Archivos que Deben Estar Sync
 
@@ -80,4 +80,4 @@ Antes de modificar skills/scripts/HUBs/agentes/MCPs:
 
 ---
 
-*Creada: 2026-05-25 | v4.9 Consequences OS Audit | Regla nro 12 del sistema*
+*Creada: 2026-05-31 | v4.9 Consequences OS Audit | Regla nro 12 del sistema*

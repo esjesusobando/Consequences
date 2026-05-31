@@ -237,37 +237,35 @@ Think_Different/                         # RAÍZ
 | 29  | Repo Sync Auditor  | `29_Repo_Sync_Auditor.py`             | Auditor sync de repos (ex 57_)                             |
 | 30  | Path Replacement   | `30_path_replacement.py`              | Reemplazo de paths legacy (ex 23_)                         |
 
-### Scripts Auxiliary
+### Scripts Adicionales en Raíz
 
-| #   | Script                                  | Propósito                                                           |
-|----|----------------------------------------|--------------------------------------------------------------------|
-| 33  | `33_Parallel_Audit_Pro.py`              | Auditoría paralela avanzada                                         |
-| 34  | `34_Skill_Auditor.py`                   | Auditoría específica de skills                                      |
-| 50  | `50_System_Health_Monitor.py`           | Monitor de salud del sistema                                        |
-| 57  | `57_Repo_Sync_Auditor.py`               | Auditor de sincronización de repos                                  |
-| 23  | `23_path_replacement.py`                | Reemplazo de paths legacy                                           |
-| —   | `refactor_revert_id.py`                 | Utilidad one-off para revertir IDs en refactor                      |
+| Script | Propósito |
+|--------|-----------|
+| `HUB_SOTA.py` | HUB SOTA — features estado del arte |
+| `config_paths.py` | Resolución centralizada de paths |
+| `refactor_revert_id.py` | Utilidad one-off para revertir IDs |
+| `qmd.sh` | Quick Make script |
+| `testsprite_failover.sh` | Failover TestSprite |
+| `tarea_lista.bat` | Notificación tarea completada (Windows) |
 
 ### Subdirectorios (organización)
 
 | Dir                        | Contenido                                                                   |
 |---------------------------|----------------------------------------------------------------------------|
 | `00_Context_LLM/`          | Memoria y notas LLM                                                         |
-| `01_Ritual/`               | Scripts de rituales                                                         |
-| `02_Tool/`                 | Herramientas auxiliares                                                     |
-| `03_Validator/`            | Validadores                                                                 |
-| `04_Workflow/`             | Workflows                                                                   |
-| `05_AIPM/`                 | AIPM scripts (9)                                                            |
-| `06_Auditor/`              | Auditorías                                                                  |
-| `07_Data/`                 | Datos (4)                                                                   |
-| `08_General/`              | Generales (4)                                                               |
-| `09_Integration/`          | Integraciones (3)                                                           |
-| `13_Legacy/`               | Legacy (88 scripts archivados)                                              |
-| `11_Anthropic_Harness/`    | Harness Anthropic                                                           |
-| `12_Audits/`               | Auditorías                                                                  |
-| `12_Auditors_Os/`          | Auditores OS                                                                |
-| `14_Otros/`                | Otros                                                                       |
-| `05_Validator/`            | Validadores (8)                                                             |
+| `01_Ritual/`               | Scripts de rituales de sesión                                               |
+| `02_Git/`                  | Operaciones Git                                                             |
+| `03_AIPM/`                 | AI Performance Monitoring                                                   |
+| `04_LangGraph/`            | LangGraph utilities                                                         |
+| `05_Validator/`            | Validadores de código y reglas                                              |
+| `06_Tool/`                 | Integración y gestión de herramientas                                       |
+| `07_Integration/`          | Integraciones MCP y sistemas externos                                       |
+| `08_Data/`                 | Procesamiento y analytics de datos                                          |
+| `09_Auxiliary/`            | Scripts auxiliares y utilidades                                             |
+| `10_Anthropic/`            | Harness Anthropic                                                           |
+| `11_Audits/`               | Auditorías del sistema                                                      |
+| `12_Auditors_Os/`          | Auditores OS + scripts Context Bar                                          |
+| `13_Legacy/`               | 📦 Legacy — scripts archivados (read-only)                                  |
 
 > ★ = HUB canónico JARVIS 4.5
 
@@ -310,7 +308,7 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 | Categoría                    | Path                            | Workflows                                      |
 |-----------------------------|--------------------------------|-----------------------------------------------|
-| YouTube Full Video           | `__Youtube_Full_Video/`         | Video production pipeline                      |
+| YouTube Full Video           | `06_Youtube_Full_Video/`        | Video production pipeline                      |
 | Learning Always              | `00_Learning_Always/`           | Continuous learning                            |
 | Personal OS                  | `01_Personal_Os/`               | Morning, Backlog, Content, Weekly              |
 | Marvel                       | `02_Marvel/`                    | **Iron Man Genesis** (boot), Spider, Thor, Hulk|

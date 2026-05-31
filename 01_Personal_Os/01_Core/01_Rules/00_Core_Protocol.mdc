@@ -142,6 +142,7 @@ KNOWLEDGE_DIR       → 01_Personal_Os/02_Knowledge/
 TASKS_DIR           → 01_Personal_Os/03_Task/
 MEMORY_DIR         → 01_Personal_Os/04_Operations/00_Context_LLM/
 BRAIN_DIR          → 01_Personal_Os/04_Operations/00_Context_LLM/
+BACKUP_DIR         → .agent/ (Agent Teams mirror)
 ```
 
 ---
