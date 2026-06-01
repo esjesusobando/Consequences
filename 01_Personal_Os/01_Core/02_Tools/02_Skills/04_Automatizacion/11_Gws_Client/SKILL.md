@@ -322,11 +322,11 @@ gws gmail --help
 
 ## 💾 State Persistence
 
-| Qué | Dónde | Notas |
-|-----|-------|-------|
-| Tokens OAuth (~1 hora de vida) | `~/.config/gws/{email}.json` | JSON con token, refresh token y scopes |
-| Config global de CLI | `~/.config/gws/config.json` | Cuenta default, preferencias de formato |
-| Estado remoto | Servidores de Google (Gmail, Calendar, Drive, Sheets) | La CLI es solo un cliente |
+| Qué                           | Dónde                                                | Notas                                  |
+|------------------------------|-----------------------------------------------------|---------------------------------------|
+| Tokens OAuth (~1 hora de vida)| `~/.config/gws/{email}.json`                         | JSON con token, refresh token y scopes |
+| Config global de CLI          | `~/.config/gws/config.json`                          | Cuenta default, preferencias de formato|
+| Estado remoto                 | Servidores de Google (Gmail, Calendar, Drive, Sheets)| La CLI es solo un cliente              |
 
 No hay base de datos local. La CLI es completamente stateless — todo el estado vive en los servidores de Google Workspace. Los tokens son el único artefacto persistente local.
 

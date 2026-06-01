@@ -74,16 +74,16 @@ This creates local skill files that the agent reads to understand available comm
 
 ## CLI vs MCP Comparison
 
-| Aspect | Playwright CLI | Playwright MCP |
-|--------|---------------|----------------|
-| **Best for** | Coding agents with large codebases | Exploratory automation, self-healing tests |
-| **Token cost** | ~27K per task | ~114K per task |
-| **Snapshot storage** | YAML on disk (refs only) | In LLM context (full tree) |
-| **Default mode** | Headless | Headed |
-| **Setup** | `npm i -g @playwright/cli` | JSON config in MCP client |
-| **State management** | In-memory by default, `--persistent` for disk | Session-managed |
-| **Discovery** | `--help` or installed skills via `install --skills` | Tool schemas loaded in context |
-| **Architecture** | CLI commands → daemon process | Structured tool calls |
+| Aspect              | Playwright CLI                                     | Playwright MCP                            |
+|--------------------|---------------------------------------------------|------------------------------------------|
+| **Best for**        | Coding agents with large codebases                 | Exploratory automation, self-healing tests|
+| **Token cost**      | ~27K per task                                      | ~114K per task                            |
+| **Snapshot storage**| YAML on disk (refs only)                           | In LLM context (full tree)                |
+| **Default mode**    | Headless                                           | Headed                                    |
+| **Setup**           | `npm i -g @playwright/cli`                         | JSON config in MCP client                 |
+| **State management**| In-memory by default, `--persistent` for disk      | Session-managed                           |
+| **Discovery**       | `--help` or installed skills via `install --skills`| Tool schemas loaded in context            |
+| **Architecture**    | CLI commands → daemon process                      | Structured tool calls                     |
 
 ---
 

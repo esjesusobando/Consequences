@@ -27,12 +27,12 @@ Cada proyecto nuevo arranca con una hoja en blanco — y cada agente pierde tiem
 
 ## Sub-áreas y Contenido
 
-| Sub-área                | Descripción                                                  |
+| Sub-área                | Descripción                                                   |
 |------------------------|--------------------------------------------------------------|
-| `01_Context_Canonical/` | Templates de los 3 archivos canónicos de contexto            |
-| `02_Prompts/`           | System prompts para Hermes, Códex y Gauss                    |
-| `03_Workflows/`         | Flujo completo iabrain-init (ingest → plan → execute)        |
-| `references/`           | Documentación de referencia y ejemplos                       |
+| `01_Context_Canonical/` | Templates de los 3 archivos canónicos de contexto             |
+| `02_Prompts/`           | System prompts para Hermes, Códex y Gauss                     |
+| `03_Workflows/`         | Flujo completo iabrain-init (ingest → plan → execute)         |
+| `references/`           | Documentación de referencia y ejemplos                        |
 
 ## Arquitectura del Flujo
 
@@ -95,12 +95,12 @@ Cada proyecto nuevo arranca con una hoja en blanco — y cada agente pierde tiem
 
 ## 💾 State Persistence
 
-| Componente            | Persistencia | Mecanismo                                                             |
-|----------------------|-------------|-----------------------------------------------------------------------|
-| Archivos canónicos    | ✅ Archivo   | En `/Context/Canonical/` del proyecto                                 |
-| Prompts de agente     | ✅ Archivo   | Definiciones estáticas en `02_Prompts/`                               |
-| Workflow laia-init | ✅ Archivo   | En `03_Workflows/laia-init.md`                                    |
-| Sesiones de proyecto  | ⚠️ Por proyecto | Historial de sesiones en `/Context/Sessions/` del proyecto           |
+| Componente            | Persistencia   | Mecanismo                                                              |
+|----------------------|---------------|-----------------------------------------------------------------------|
+| Archivos canónicos    | ✅ Archivo      | En `/Context/Canonical/` del proyecto                                  |
+| Prompts de agente     | ✅ Archivo      | Definiciones estáticas en `02_Prompts/`                                |
+| Workflow laia-init    | ✅ Archivo      | En `03_Workflows/laia-init.md`                                         |
+| Sesiones de proyecto  | ⚠️ Por proyecto| Historial de sesiones en `/Context/Sessions/` del proyecto             |
 
 ---
 

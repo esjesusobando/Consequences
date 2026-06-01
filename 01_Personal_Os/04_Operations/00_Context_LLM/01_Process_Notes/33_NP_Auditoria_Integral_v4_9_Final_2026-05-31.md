@@ -28,10 +28,10 @@ Auditoría integral del proyecto Think_Different: revisar todo sin eliminar info
 
 ### 1. NUMERACIÓN DUPLICADA — NP-27
 
-| Archivo | Contenido | Estado |
-|---------|-----------|--------|
-| `27_NP_Full_Project_Audit_2026_05_31.md` | Auditoría completa 05-31 | ✅ Correcto (el más reciente) |
-| `27_NP_Subagent_Statusline_Git_Fixes.md` | Fix statusline+git en subagentes | 🔴 CONFLICTO — mismo número |
+| Archivo                                 | Contenido                       | Estado                      |
+|----------------------------------------|--------------------------------|----------------------------|
+| `27_NP_Full_Project_Audit_2026_05_31.md`| Auditoría completa 05-31        | ✅ Correcto (el más reciente)|
+| `27_NP_Subagent_Statusline_Git_Fixes.md`| Fix statusline+git en subagentes| 🔴 CONFLICTO — mismo número  |
 
 **Acción:** `27_NP_Subagent_Statusline_Git_Fixes.md` debe renombrarse a `27b_NP_Subagent_Statusline_Git_Fixes.md` para preservar sin conflicto. El archivo de Full_Project_Audit conserva el `27_` por ser más completo.
 
@@ -40,16 +40,16 @@ Auditoría integral del proyecto Think_Different: revisar todo sin eliminar info
 ### 2. MCP COUNT — .mcp.json vs Documentación
 
 **Realidad en `.mcp.json` (8 MCPs activos):**
-| # | MCP | Tipo |
-|---|-----|------|
-| 1 | @magicuidesign/mcp | stdio |
-| 2 | aim-memory-bank | stdio |
-| 3 | context7 | streamableHttp |
-| 4 | obsidian-mcp | stdio |
-| 5 | eagle | streamableHttp |
-| 6 | higgsfield | streamableHttp |
-| 7 | sequential-thinking | stdio |
-| 8 | google-workspace | stdio |
+| #  | MCP                | Tipo          |
+|---|-------------------|--------------|
+| 1  | @magicuidesign/mcp | stdio         |
+| 2  | aim-memory-bank    | stdio         |
+| 3  | context7           | streamableHttp|
+| 4  | obsidian-mcp       | stdio         |
+| 5  | eagle              | streamableHttp|
+| 6  | higgsfield         | streamableHttp|
+| 7  | sequential-thinking| stdio         |
+| 8  | google-workspace   | stdio         |
 
 **Documentación dice:** "7 MCPs root" en OS_DIRECTORY.md, Iron_Man_Gen.md, GOALS.md
 
@@ -61,13 +61,13 @@ Auditoría integral del proyecto Think_Different: revisar todo sin eliminar info
 
 ### 3. AGENTES COUNT — Inconsistencia entre documentos
 
-| Documento | Cuenta | Qué incluye |
-|-----------|--------|-------------|
-| `01_Agents/README.md` | "13+5+24+5=47+" | Principales + Dream + Specialists + Growth |
-| `OS_DIRECTORY.md` | 48 source / 82 total | Source vs con SDD/CE |
-| `NP-31` | 49 | Post-fix auditoría mayo 29 |
-| `AGENTS.md` (root) | 55 | Conteo anterior |
-| `Iron_Man_Gen.md` | 55 agents | Pie de página |
+| Documento            | Cuenta              | Qué incluye                               |
+|---------------------|--------------------|------------------------------------------|
+| `01_Agents/README.md`| "13+5+24+5=47+"     | Principales + Dream + Specialists + Growth|
+| `OS_DIRECTORY.md`    | 48 source / 82 total| Source vs con SDD/CE                      |
+| `NP-31`              | 49                  | Post-fix auditoría mayo 29                |
+| `AGENTS.md` (root)   | 55                  | Conteo anterior                           |
+| `Iron_Man_Gen.md`    | 55 agents           | Pie de página                             |
 
 **Conteo real del filesystem (01_Agents/):**
 - Raíz: 22 archivos .md (00_Agent_Template + 00_Orchestrator + 01-22 numbered)
@@ -88,21 +88,21 @@ Auditoría integral del proyecto Think_Different: revisar todo sin eliminar info
 
 ### 4. HUB_CATALOG.md — Versión Desactualizada
 
-| Campo | Dice | Debería decir |
-|-------|------|---------------|
-| **Versión** | 4.8 | 4.9 |
-| **Fecha** | 2026-05-27 | 2026-05-31 |
-| **Scripts documentados** | HUBs 00-20 | HUBs 00-20 + scripts 21-30 (nuevo rango) |
-| **Scripts 21-30** | No documentados | `21_Legacy_Path_Cleanup.py`, `22_Validate_Skill_Frontmatter.py`, `23_Preview_Generator.js`, `24_mass_path_migration.py`, `25_Minimax_Optimizer_Hub.py`, `26_Parallel_Audit_Pro.py`, `27_Skill_Auditor.py`, `28_System_Health_Monitor.py`, `29_Repo_Sync_Auditor.py`, `30_path_replacement.py` |
+| Campo                   | Dice           | Debería decir                                                                                                                                                                                                                                                                                |
+|------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Versión**             | 4.8            | 4.9                                                                                                                                                                                                                                                                                          |
+| **Fecha**               | 2026-05-27     | 2026-05-31                                                                                                                                                                                                                                                                                   |
+| **Scripts documentados**| HUBs 00-20     | HUBs 00-20 + scripts 21-30 (nuevo rango)                                                                                                                                                                                                                                                     |
+| **Scripts 21-30**       | No documentados| `21_Legacy_Path_Cleanup.py`, `22_Validate_Skill_Frontmatter.py`, `23_Preview_Generator.js`, `24_mass_path_migration.py`, `25_Minimax_Optimizer_Hub.py`, `26_Parallel_Audit_Pro.py`, `27_Skill_Auditor.py`, `28_System_Health_Monitor.py`, `29_Repo_Sync_Auditor.py`, `30_path_replacement.py`|
 
 ---
 
 ### 5. IRON_MAN_GEN.MD — Drift Source vs Backup
 
-| Archivo | Tamaño | Diferencia |
-|---------|--------|------------|
-| Source: `01_Core/00_Workflows_Os/02_Marvel/01_Iron_Man_Gen.md` | **10,984 bytes** | Más actualizado |
-| Backup: `.agent/03_Workflows/02_Marvel/01_Iron_Man_Gen.md` | **10,979 bytes** | 5 bytes menos |
+| Archivo                                                       | Tamaño          | Diferencia     |
+|--------------------------------------------------------------|----------------|---------------|
+| Source: `01_Core/00_Workflows_Os/02_Marvel/01_Iron_Man_Gen.md`| **10,984 bytes**| Más actualizado|
+| Backup: `.agent/03_Workflows/02_Marvel/01_Iron_Man_Gen.md`    | **10,979 bytes**| 5 bytes menos  |
 
 **Causa:** El source fue actualizado ligeramente pero el backup no se sincronizó.
 **Acción:** Sincronizar backup con source (ejecutar `19_Agent_Sync_Hub.py`).
@@ -113,18 +113,18 @@ Auditoría integral del proyecto Think_Different: revisar todo sin eliminar info
 
 Scripts existentes en filesystem pero ausentes de la tabla de OS_DIRECTORY.md sección HUBs:
 
-| Script | Función |
-|--------|---------|
-| `21_Legacy_Path_Cleanup.py` | Limpia paths legacy v2.x |
-| `22_Validate_Skill_Frontmatter.py` | Detecta skills sin frontmatter YAML |
-| `23_Preview_Generator.js` | Generador de previews (JS) |
-| `24_mass_path_migration.py` | Migración masiva de paths |
-| `25_Minimax_Optimizer_Hub.py` | Optimizador Minimax |
-| `26_Parallel_Audit_Pro.py` | Auditoría paralela (renumerado desde 33) |
-| `27_Skill_Auditor.py` | Auditor específico de skills (renumerado desde 34) |
-| `28_System_Health_Monitor.py` | Monitor de salud (renumerado desde 50) |
-| `29_Repo_Sync_Auditor.py` | Auditor de sync de repos (renumerado desde 57) |
-| `30_path_replacement.py` | Reemplazo de paths legacy (renumerado desde 23) |
+| Script                            | Función                                           |
+|----------------------------------|--------------------------------------------------|
+| `21_Legacy_Path_Cleanup.py`       | Limpia paths legacy v2.x                          |
+| `22_Validate_Skill_Frontmatter.py`| Detecta skills sin frontmatter YAML               |
+| `23_Preview_Generator.js`         | Generador de previews (JS)                        |
+| `24_mass_path_migration.py`       | Migración masiva de paths                         |
+| `25_Minimax_Optimizer_Hub.py`     | Optimizador Minimax                               |
+| `26_Parallel_Audit_Pro.py`        | Auditoría paralela (renumerado desde 33)          |
+| `27_Skill_Auditor.py`             | Auditor específico de skills (renumerado desde 34)|
+| `28_System_Health_Monitor.py`     | Monitor de salud (renumerado desde 50)            |
+| `29_Repo_Sync_Auditor.py`         | Auditor de sync de repos (renumerado desde 57)    |
+| `30_path_replacement.py`          | Reemplazo de paths legacy (renumerado desde 23)   |
 
 **Adicionalmente:** `HUB_SOTA.py` y archivos extra (`qmd.sh`, `testsprite_failover.sh`, `tarea_lista.bat`, `refactor_revert_id.py`) no están indexados en el catálogo.
 
@@ -132,25 +132,25 @@ Scripts existentes en filesystem pero ausentes de la tabla de OS_DIRECTORY.md se
 
 ### 7. GOALS.md — Fecha Desactualizada
 
-| Campo | Estado |
-|-------|--------|
-| Última actualización | "May 25, 2026" — 6 días desactualizado |
-| MCPs listados en sección 6 | Incluye `eagle-mcp` Y `eagle` como separados — posiblemente el mismo MCP |
-| Numeración de secciones | Secciones 14 y 15 están invertidas (15 aparece antes que 14) |
+| Campo                     | Estado                                                                  |
+|--------------------------|------------------------------------------------------------------------|
+| Última actualización      | "May 25, 2026" — 6 días desactualizado                                  |
+| MCPs listados en sección 6| Incluye `eagle-mcp` Y `eagle` como separados — posiblemente el mismo MCP|
+| Numeración de secciones   | Secciones 14 y 15 están invertidas (15 aparece antes que 14)            |
 
 ---
 
 ### 8. WORKFLOWS — Source tiene 7 categorías confirmadas
 
-| Categoría | Source | Backup | Estado |
-|-----------|--------|--------|--------|
-| 00_Learning_Always | ✅ | ✅ | Sync |
-| 01_Personal_Os | ✅ | ✅ | Sync |
-| 02_Marvel | ✅ (8 files) | ✅ (8 files) | Sync |
-| 03_Gentleman | ✅ | ✅ | Sync |
-| 04_Hillary | ✅ | ✅ | Sync |
-| 05_Compound_Engineering | ✅ | ✅ | Sync |
-| 06_Youtube_Full_Video | ✅ | ✅ | Sync |
+| Categoría              | Source     | Backup     | Estado  |
+|-----------------------|-----------|-----------|--------|
+| 00_Learning_Always     | ✅          | ✅          | Sync    |
+| 01_Personal_Os         | ✅          | ✅          | Sync    |
+| 02_Marvel              | ✅ (8 files)| ✅ (8 files)| Sync    |
+| 03_Gentleman           | ✅          | ✅          | Sync    |
+| 04_Hillary             | ✅          | ✅          | Sync    |
+| 05_Compound_Engineering| ✅          | ✅          | Sync    |
+| 06_Youtube_Full_Video  | ✅          | ✅          | Sync    |
 
 **Status:** Workflows COMPLETAMENTE SINCRONIZADOS source ↔ backup (la crisis de NP-32 fue revertida correctamente).
 
@@ -158,26 +158,26 @@ Scripts existentes en filesystem pero ausentes de la tabla de OS_DIRECTORY.md se
 
 ### 9. .atl/skill-registry.md — Estado
 
-| Métrica | Estado |
-|---------|--------|
-| Tamaño | 70,291 bytes (archivo grande, robusto) |
-| `.skill-registry.cache.json` | 64 bytes — posiblemente vacío o minimal |
-| Scripts de fix en raíz `.atl/` | `_fix_08_nonpy.py`, `_fix_08_paths.py`, `_fix_registry.py` — utilidades de mantenimiento |
+| Métrica                       | Estado                                                                                  |
+|------------------------------|----------------------------------------------------------------------------------------|
+| Tamaño                        | 70,291 bytes (archivo grande, robusto)                                                  |
+| `.skill-registry.cache.json`  | 64 bytes — posiblemente vacío o minimal                                                 |
+| Scripts de fix en raíz `.atl/`| `_fix_08_nonpy.py`, `_fix_08_paths.py`, `_fix_registry.py` — utilidades de mantenimiento|
 
 ---
 
 ### 10. MANIFESTS JARVIS — Estado (00_Manifest/)
 
-| Manifest | Archivo | Estado |
-|----------|---------|--------|
-| 01 OS Inventory | `01_OS_Inventory.json` | ✅ Existe (823 bytes) |
-| 02 MCP Registry | `02_MCP_Registry.yaml` | ✅ Existe (4,531 bytes) |
-| 03 Agent Catalog | `03_Agent_Catalog.yaml` | ✅ Existe (820 bytes — posiblemente minimal) |
-| 04 Skill Index | `04_Skill_Index.json` | ✅ Existe (69,904 bytes — robusto) |
-| 05 HUB Catalog | `05_HUB_Catalog.yaml` | ✅ Existe (33,136 bytes) |
-| 06 Workflow Graph | `06_Workflow_Graph.yaml` | ✅ Existe (1,438 bytes) |
-| 07 Hook Registry | `07_Hook_Registry.yaml` | ✅ Existe (723 bytes) |
-| MCP Sync Fix | `MCP_SYNC_FIX.md` | ✅ Documentación adicional |
+| Manifest         | Archivo                 | Estado                                     |
+|-----------------|------------------------|-------------------------------------------|
+| 01 OS Inventory  | `01_OS_Inventory.json`  | ✅ Existe (823 bytes)                       |
+| 02 MCP Registry  | `02_MCP_Registry.yaml`  | ✅ Existe (4,531 bytes)                     |
+| 03 Agent Catalog | `03_Agent_Catalog.yaml` | ✅ Existe (820 bytes — posiblemente minimal)|
+| 04 Skill Index   | `04_Skill_Index.json`   | ✅ Existe (69,904 bytes — robusto)          |
+| 05 HUB Catalog   | `05_HUB_Catalog.yaml`   | ✅ Existe (33,136 bytes)                    |
+| 06 Workflow Graph| `06_Workflow_Graph.yaml`| ✅ Existe (1,438 bytes)                     |
+| 07 Hook Registry | `07_Hook_Registry.yaml` | ✅ Existe (723 bytes)                       |
+| MCP Sync Fix     | `MCP_SYNC_FIX.md`       | ✅ Documentación adicional                  |
 
 ---
 
@@ -195,24 +195,24 @@ Elementos que parecen bugs pero están correctos:
 
 ### Documentación
 
-| Ítem | ANTES (2026-05-30) | DESPUÉS (2026-05-31) |
-|------|-------------------|---------------------|
-| NP numeración | NP-27 duplicado (conflict) | NP-27b para el subagent fixes |
-| MCP count en docs | "7 MCPs root" en todos los docs | **8 MCPs root** documentado |
-| HUB_CATALOG versión | v4.8 | **v4.9** actualizado |
-| Scripts 21-30 | No documentados en OS_DIRECTORY | **Documentados en NP-33** |
-| Iron_Man_Gen drift | 5 bytes de diferencia | Registrado para sync |
-| GOALS.md fecha | May 25, 2026 | Identificado para update |
+| Ítem               | ANTES (2026-05-30)             | DESPUÉS (2026-05-31)         |
+|-------------------|-------------------------------|-----------------------------|
+| NP numeración      | NP-27 duplicado (conflict)     | NP-27b para el subagent fixes|
+| MCP count en docs  | "7 MCPs root" en todos los docs| **8 MCPs root** documentado  |
+| HUB_CATALOG versión| v4.8                           | **v4.9** actualizado         |
+| Scripts 21-30      | No documentados en OS_DIRECTORY| **Documentados en NP-33**    |
+| Iron_Man_Gen drift | 5 bytes de diferencia          | Registrado para sync         |
+| GOALS.md fecha     | May 25, 2026                   | Identificado para update     |
 
 ### Estado del Sistema (Sin cambios — PURE GREEN mantenido)
 
-| Componente | Estado |
-|------------|--------|
-| Paths rotos activos | 0 (NP-32 los resolvió todos) |
-| Git status | Clean (branch docs/sync-v4.9-metrics) |
-| Workflows source/backup | 8 archivos por categoría, 7 categorías — SYNC |
-| Skills con frontmatter válido | ✅ (NP-31 los corrigió) |
-| HUBs críticos funcionando | ✅ (NP-31 los corrigió) |
+| Componente                   | Estado                                       |
+|-----------------------------|---------------------------------------------|
+| Paths rotos activos          | 0 (NP-32 los resolvió todos)                 |
+| Git status                   | Clean (branch docs/sync-v4.9-metrics)        |
+| Workflows source/backup      | 8 archivos por categoría, 7 categorías — SYNC|
+| Skills con frontmatter válido| ✅ (NP-31 los corrigió)                       |
+| HUBs críticos funcionando    | ✅ (NP-31 los corrigió)                       |
 
 ---
 

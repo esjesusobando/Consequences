@@ -16,7 +16,7 @@
 | **Skills**                                             | 128+                                      | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                   |
 | **Scripts**                                            | 86+                                       | `03_Scripts_Os/`                                               |
 | **Workflows**                                          | 24                                        | `.agent/03_Workflows/`                                         |
-| **Hooks**                                              | 12                                        | `.agent/04_Extensions/01_Hooks/`                                  |
+| **Hooks**                                              | 12                                        | `.agent/04_Extensions/01_Hooks/`                               |
 
 ---
 

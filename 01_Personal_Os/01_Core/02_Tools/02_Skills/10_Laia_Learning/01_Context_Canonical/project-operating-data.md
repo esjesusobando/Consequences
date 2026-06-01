@@ -21,20 +21,20 @@
 
 ## Variables de Control
 
-| Variable              | Valor         | Fuente de Verdad       |
-|----------------------|---------------|------------------------|
-| Kickoff Real         | [Fecha]       | SOW / Email            |
-| Modo de Organización | [Bloques/Pantallas] | Brief           |
-| Sprint Duration      | [1 sem/2 sem] | Acuerdo                |
-| QA Cycle             | [Días]        | Acuerdo                |
-| Deploy Frequency     | [Por sprint/Continuous] | Acuerdo      |
+| Variable              | Valor                  | Fuente de Verdad        |
+|----------------------|-----------------------|------------------------|
+| Kickoff Real          | [Fecha]                | SOW / Email             |
+| Modo de Organización  | [Bloques/Pantallas]    | Brief                   |
+| Sprint Duration       | [1 sem/2 sem]          | Acuerdo                 |
+| QA Cycle              | [Días]                 | Acuerdo                 |
+| Deploy Frequency      | [Por sprint/Continuous]| Acuerdo                 |
 
 ## Accesos y Credenciales
 
-| Servicio     | Estado      | Responsable      | Notas         |
+| Servicio     | Estado      | Responsable       | Notas          |
 |-------------|------------|------------------|---------------|
-| [Servicio 1] | ✅/❌ Activo | [Nombre]         | [Notas]       |
-| [Servicio 2] | ✅/❌ Activo | [Nombre]         | [Notas]       |
+| [Servicio 1] | ✅/❌ Activo  | [Nombre]          | [Notas]        |
+| [Servicio 2] | ✅/❌ Activo  | [Nombre]          | [Notas]        |
 
 ---
 

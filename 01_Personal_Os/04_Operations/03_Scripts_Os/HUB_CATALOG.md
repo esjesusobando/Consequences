@@ -158,29 +158,29 @@ Dashboard de telemetría: uso del sistema, métricas de sesiones, rendimiento de
 
 > Scripts de utilidad para mantenimiento del sistema. Existen en raíz de `03_Scripts_Os/` pero no son HUBs principales.
 
-| # | Script | Propósito |
-|---|--------|-----------|
-| 21 | `21_Legacy_Path_Cleanup.py` | Limpieza de paths legacy v2.x |
-| 22 | `22_Validate_Skill_Frontmatter.py` | Detecta skills sin frontmatter YAML válido |
-| 23 | `23_Preview_Generator.js` | Generador de previews (JavaScript) |
-| 24 | `24_mass_path_migration.py` | Migración masiva de paths (batch) |
-| 25 | `25_Minimax_Optimizer_Hub.py` | Optimizador usando estrategia Minimax |
-| 26 | `26_Parallel_Audit_Pro.py` | Auditoría paralela avanzada (ex 33_) |
-| 27 | `27_Skill_Auditor.py` | Auditor específico de skills (ex 34_) |
-| 28 | `28_System_Health_Monitor.py` | Monitor de salud del sistema (ex 50_) |
-| 29 | `29_Repo_Sync_Auditor.py` | Auditor de sincronización de repos (ex 57_) |
-| 30 | `30_path_replacement.py` | Reemplazo de paths legacy (ex 23_) |
+| #  | Script                            | Propósito                                  |
+|---|----------------------------------|-------------------------------------------|
+| 21 | `21_Legacy_Path_Cleanup.py`       | Limpieza de paths legacy v2.x              |
+| 22 | `22_Validate_Skill_Frontmatter.py`| Detecta skills sin frontmatter YAML válido |
+| 23 | `23_Preview_Generator.js`         | Generador de previews (JavaScript)         |
+| 24 | `24_mass_path_migration.py`       | Migración masiva de paths (batch)          |
+| 25 | `25_Minimax_Optimizer_Hub.py`     | Optimizador usando estrategia Minimax      |
+| 26 | `26_Parallel_Audit_Pro.py`        | Auditoría paralela avanzada (ex 33_)       |
+| 27 | `27_Skill_Auditor.py`             | Auditor específico de skills (ex 34_)      |
+| 28 | `28_System_Health_Monitor.py`     | Monitor de salud del sistema (ex 50_)      |
+| 29 | `29_Repo_Sync_Auditor.py`         | Auditor de sincronización de repos (ex 57_)|
+| 30 | `30_path_replacement.py`          | Reemplazo de paths legacy (ex 23_)         |
 
 ### Scripts Adicionales en Raíz
 
-| Script | Propósito |
-|--------|-----------|
-| `HUB_SOTA.py` | HUB SOTA — features estado del arte |
-| `config_paths.py` | Resolución centralizada de paths (14,530 bytes) |
-| `refactor_revert_id.py` | Utilidad one-off para revertir IDs |
-| `qmd.sh` | Quick Make script |
-| `testsprite_failover.sh` | Failover TestSprite |
-| `tarea_lista.bat` | Notificación tarea completada (Windows) |
+| Script                  | Propósito                                      |
+|------------------------|-----------------------------------------------|
+| `HUB_SOTA.py`           | HUB SOTA — features estado del arte            |
+| `config_paths.py`       | Resolución centralizada de paths (14,530 bytes)|
+| `refactor_revert_id.py` | Utilidad one-off para revertir IDs             |
+| `qmd.sh`                | Quick Make script                              |
+| `testsprite_failover.sh`| Failover TestSprite                            |
+| `tarea_lista.bat`       | Notificación tarea completada (Windows)        |
 
 ---
 

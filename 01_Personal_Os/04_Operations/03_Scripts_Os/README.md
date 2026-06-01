@@ -43,8 +43,8 @@
 | 17                         | `17_Ritual_Dominical.py`                             | 08_Personal_Os                                    |
 | 18                         | `18_Generacion_Contenido.py`                         | **09_Marketing** ← USUARIO                        |
 | 19                         | `19_Generate_Progress.py`                            | 08_Personal_Os                                    |
-| 26                         | `26_Parallel_Audit_Pro.py`                           | 05_Validator                                       |
-| 27                         | `27_Skill_Auditor.py`                                | 05_Validator                                       |
+| 26                         | `26_Parallel_Audit_Pro.py`                           | 05_Validator                                      |
+| 27                         | `27_Skill_Auditor.py`                                | 05_Validator                                      |
 | 39                         | `39_Repair_Corruption.py`                            | 13_System_Master                                  |
 | 28                         | `28_System_Health_Monitor.py`                        | 08_Personal_Os                                    |
 | 29                         | `29_Repo_Sync_Auditor.py`                            | 07_DevOps                                         |

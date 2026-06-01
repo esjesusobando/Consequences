@@ -102,14 +102,14 @@ python -X utf8 04_Triggers/cron_trigger.py --loop --interval 8
 
 ### Fixers del Executor v2.0
 
-| Fixer | Categoria | Que hace |
-|-------|-----------|----------|
-| `_create_missing_dir` | structure | Crea directorios faltantes del arbol |
-| `_fix_version_mismatch` | docs | Unifica version entre README.md y AGENTS.md (parseo seguro con tupla de ints) |
-| `_fix_docstring` | docs | Actualiza fechas y versiones viejas en docstrings |
-| `_fix_naming_convention` | code | Renombra archivos a formato NN_Descripcion.ext (prefijo dinamico) |
-| `_fix_duplicate_scripts` | structure | Archiva scripts duplicados en 05_Archive/00_Duplicates_Auto |
-| `_fix_requirements_txt` | deps | Estandariza constraints (>=→==) sin tocar != ni multi-constraint |
+| Fixer                   | Categoria  | Que hace                                                                     |
+|------------------------|-----------|-----------------------------------------------------------------------------|
+| `_create_missing_dir`   | structure  | Crea directorios faltantes del arbol                                         |
+| `_fix_version_mismatch` | docs       | Unifica version entre README.md y AGENTS.md (parseo seguro con tupla de ints)|
+| `_fix_docstring`        | docs       | Actualiza fechas y versiones viejas en docstrings                            |
+| `_fix_naming_convention`| code       | Renombra archivos a formato NN_Descripcion.ext (prefijo dinamico)            |
+| `_fix_duplicate_scripts`| structure  | Archiva scripts duplicados en 05_Archive/00_Duplicates_Auto                  |
+| `_fix_requirements_txt` | deps       | Estandariza constraints (>=→==) sin tocar != ni multi-constraint             |
 
 ### CLI Usage
 

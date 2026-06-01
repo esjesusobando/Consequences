@@ -200,7 +200,7 @@ El PersonalOS v1.0 está completamente operativo con todas las metodologías int
 | `01_Core/01_Rules/RULES_INDEX.md`                                      | ✅ v1.0                                                  | 2026-04-18                          |
 | `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                  | ✅ v1.0                                                  | 2026-04-18                          |
 | `01_Core/05_Mcp/00_Config_Mcp/MCP_CATALOG.md`                          | ✅ Creado                                                | 2026-04-18                          |
-| `01_Personal_Os/01_Core/02_Tools/05_Hooks/README.md`                                           | ✅ Creado                                                | 2026-04-18                          |
+| `01_Personal_Os/01_Core/02_Tools/05_Hooks/README.md`                   | ✅ Creado                                                | 2026-04-18                          |
 
 ---
 

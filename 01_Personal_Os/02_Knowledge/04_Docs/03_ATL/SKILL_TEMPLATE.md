@@ -109,10 +109,10 @@ mem_save(
 
 ### Technologies usadas
 
-| # | Herramienta | Propósito | Versión |
+| #  | Herramienta  | Propósito  | Versión  |
 |---|-------------|-----------|---------|
-| 1 | [Tool 1] | [Use] | [Version] |
-| 2 | [Tool 2] | [Use] | [Version] |
+| 1  | [Tool 1]     | [Use]      | [Version]|
+| 2  | [Tool 2]     | [Use]      | [Version]|
 
 ### Patrones de diseño
 
@@ -141,18 +141,18 @@ mem_save(
 
 [If the skill uses external APIs, include a credit management table similar to Learning Always.]
 
-| API | Estado | Acción al 10% |
-|-----|--------|--------------|
-| [API 1] | [CHECK] | [Notificar usuario] |
+| API    | Estado  | Acción al 10%      |
+|-------|--------|-------------------|
+| [API 1]| [CHECK] | [Notificar usuario]|
 
 ---
 
 ## Error Handling
 
-| Error | Solución |
-|-------|----------|
-| [Error 1] | [Solución 1] |
-| [Error 2] | [Solución 2] |
+| Error    | Solución    |
+|---------|------------|
+| [Error 1]| [Solución 1]|
+| [Error 2]| [Solución 2]|
 
 ---
 
@@ -170,10 +170,10 @@ mem_save(
 
 [If the skill involves agent profiles, include a table similar to Learning Always.]
 
-| # | Perfil | Carpeta SKILL (path relativo a 02_Skills/) |
-|---|--------|------------------------------------------|
-| 01 | [Perfil 1] | `ruta/carpeta` |
-| 02 | [Perfil 2] | `ruta/carpeta` |
+| #  | Perfil    | Carpeta SKILL (path relativo a 02_Skills/)|
+|---|----------|------------------------------------------|
+| 01 | [Perfil 1]| `ruta/carpeta`                            |
+| 02 | [Perfil 2]| `ruta/carpeta`                            |
 
 ---
 

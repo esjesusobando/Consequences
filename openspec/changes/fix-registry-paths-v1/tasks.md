@@ -2,13 +2,13 @@
 
 ## Review Workload Forecast
 
-| Field | Value |
-|-------|-------|
-| Estimated changed lines | ~230 |
-| 400-line budget risk | Low |
-| Chained PRs recommended | No |
-| Suggested split | Single PR |
-| Delivery strategy | single-pr |
+| Field                  | Value    |
+|-----------------------|---------|
+| Estimated changed lines| ~230     |
+| 400-line budget risk   | Low      |
+| Chained PRs recommended| No       |
+| Suggested split        | Single PR|
+| Delivery strategy      | single-pr|
 
 Decision needed before apply: No
 Chained PRs recommended: No
@@ -26,15 +26,15 @@ Chain strategy: single-pr
 
 - [ ] 2.1 **`registry.md` Area 05** — Add `00_Workflows/` prefix and fix numbering on all 7 paths:
 
-| # | Current path (broken) | Correct path |
-|---|----------------------|--------------|
-| 1 | `01_Agent_Teams_Lite/` | `00_Workflows/01_Agent_Teams_Lite/` |
-| 2 | `02_Project_Manager/` | `00_Workflows/02_Project_Manager/` |
-| 3 | `03_Product_Manager/` | `00_Workflows/03_Product_Manager/` |
-| 4 | `04_PM_Orchestrator/` | `00_Workflows/04_PM_Orchestrator/` |
-| 5 | `04_Super_Campeones/` | `00_Workflows/05_Super_Campeones/` |
-| 6 | `05_Workflow_Orchestrator.md` | `00_Workflows/05_Workflow_Orchestrator.md` |
-| 7 | `06_LFG_Engine.md` | `00_Workflows/06_LFG_Engine.md` |
+| #  | Current path (broken)        | Correct path                              |
+|---|-----------------------------|------------------------------------------|
+| 1  | `01_Agent_Teams_Lite/`       | `00_Workflows/01_Agent_Teams_Lite/`       |
+| 2  | `02_Project_Manager/`        | `00_Workflows/02_Project_Manager/`        |
+| 3  | `03_Product_Manager/`        | `00_Workflows/03_Product_Manager/`        |
+| 4  | `04_PM_Orchestrator/`        | `00_Workflows/04_PM_Orchestrator/`        |
+| 5  | `04_Super_Campeones/`        | `00_Workflows/05_Super_Campeones/`        |
+| 6  | `05_Workflow_Orchestrator.md`| `00_Workflows/05_Workflow_Orchestrator.md`|
+| 7  | `06_LFG_Engine.md`           | `00_Workflows/06_LFG_Engine.md`           |
 
 ## Phase 3: Fix Broken Paths in INDEX_AREA_FUNCTIONAL.md
 
@@ -45,30 +45,30 @@ Chain strategy: single-pr
 
 - [ ] 4.1 **Add 13 missing skills to Area 04 (Automatización)** — Insert after existing row `04_Automatizacion/07_N8N_Workflows/`:
 
-| # | Skill | Path | Description |
-|---|-------|------|-------------|
-| 1 | N8N Nodes | `04_Automatizacion/05_N8N_Nodes/` | Configuración de nodos N8N |
-| 2 | N8N Validation | `04_Automatizacion/06_N8N_Validation/` | Validación de workflows N8N |
-| 3 | N8N Invictus | `04_Automatizacion/08_N8N_Invictus/` | Workflows del ecosistema Invictus |
-| 4 | AI News Weekly | `04_Automatizacion/08_AI_News_Weekly/` | News semanal con IA |
-| 5 | GWS Client | `04_Automatizacion/10_GWS_Client/` | Cliente Google Workspace |
-| 6 | Gcierr | `04_Automatizacion/11_Gcierr/` | Herramientas Gcierr |
-| 7 | (merge Gws_Client with Gcierr or add) | `04_Automatizacion/11_Gws_Client/` | (verify if duplicate) |
-| 8 | Content From URL | `04_Automatizacion/13_Content_From_Url/` | Extraer contenido desde URL |
-| 9 | Compound Knowledge | `04_Automatizacion/14_Compound_Knowledge/` | Conocimiento compuesto |
-| 10 | N8n General | `04_Automatizacion/14_N8n/` | Skill N8N general |
-| 11 | OS Self Improvement | `04_Automatizacion/15_Os_Self_Improvement/` | Auto-mejora del OS |
-| 12 | Reverse Engineering | `04_Automatizacion/16_Reverse_Engineering/` | Ingeniería inversa |
-| 13 | Learning URL→Knowledge | `04_Automatizacion/17_Learning_Url_To_Knowledge/` | Pipeline URL → conocimiento |
+| #  | Skill                                | Path                                             | Description                      |
+|---|-------------------------------------|-------------------------------------------------|---------------------------------|
+| 1  | N8N Nodes                            | `04_Automatizacion/05_N8N_Nodes/`                | Configuración de nodos N8N       |
+| 2  | N8N Validation                       | `04_Automatizacion/06_N8N_Validation/`           | Validación de workflows N8N      |
+| 3  | N8N Invictus                         | `04_Automatizacion/08_N8N_Invictus/`             | Workflows del ecosistema Invictus|
+| 4  | AI News Weekly                       | `04_Automatizacion/08_AI_News_Weekly/`           | News semanal con IA              |
+| 5  | GWS Client                           | `04_Automatizacion/10_GWS_Client/`               | Cliente Google Workspace         |
+| 6  | Gcierr                               | `04_Automatizacion/11_Gcierr/`                   | Herramientas Gcierr              |
+| 7  | (merge Gws_Client with Gcierr or add)| `04_Automatizacion/11_Gws_Client/`               | (verify if duplicate)            |
+| 8  | Content From URL                     | `04_Automatizacion/13_Content_From_Url/`         | Extraer contenido desde URL      |
+| 9  | Compound Knowledge                   | `04_Automatizacion/14_Compound_Knowledge/`       | Conocimiento compuesto           |
+| 10 | N8n General                          | `04_Automatizacion/14_N8n/`                      | Skill N8N general                |
+| 11 | OS Self Improvement                  | `04_Automatizacion/15_Os_Self_Improvement/`      | Auto-mejora del OS               |
+| 12 | Reverse Engineering                  | `04_Automatizacion/16_Reverse_Engineering/`      | Ingeniería inversa               |
+| 13 | Learning URL→Knowledge               | `04_Automatizacion/17_Learning_Url_To_Knowledge/`| Pipeline URL → conocimiento      |
 
 > **Note:** Implementer should deduplicate `10_GWS_Client` vs `11_Gws_Client` and `14_Compound_Knowledge` vs `14_N8n` — keep both if they have distinct SKILL.md content.
 
 - [ ] 4.2 **Add 2 missing skills to Area 05 (Workflows)** — Add after existing row `00_Workflows/05_Workflow_Orchestrator.md`:
 
-| # | Skill | Path | Description |
-|---|-------|------|-------------|
-| 1 | Super Campeones | `00_Workflows/05_Super_Campeones/` | Workflows Super Campeones |
-| 2 | LFG Engine | `00_Workflows/06_LFG_Engine.md` | Motor autónomo LFG |
+| #  | Skill          | Path                              | Description              |
+|---|---------------|----------------------------------|-------------------------|
+| 1  | Super Campeones| `00_Workflows/05_Super_Campeones/`| Workflows Super Campeones|
+| 2  | LFG Engine     | `00_Workflows/06_LFG_Engine.md`   | Motor autónomo LFG       |
 
 ## Phase 5: Fix TOP_20_SKILLS.md Paths (TOP 10 sub-ranking)
 

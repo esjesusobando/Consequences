@@ -161,14 +161,14 @@ Estrategia de venta:
 
 ## Conexiones con PersonalOS
 
-| Patrón del Video | Skill/Concepto en nuestro OS | Gap |
-|-----------------|------------------------------|-----|
-| $10K Checklist | Design SOTA (tiene principios similares) | No está codificado como checklist evaluable |
-| Batch fixes | No tenemos equivalente | Prompting pattern que podríamos adoptar |
-| Front End Design skill | 02_Taste_Skills + 06_Design_Sota | Concepto similar pero no idéntico |
-| Pipeline de assets | 12_Premium_Image_Studio + 03_Video_Media | No están conectados en pipeline |
-| Cursor interactions | Motion design skills | Patrón específico no documentado |
-| Claude protects architecture | No tenemos equivalente | Es un comportamiento del agente, no una skill |
+| Patrón del Video            | Skill/Concepto en nuestro OS            | Gap                                          |
+|----------------------------|----------------------------------------|---------------------------------------------|
+| $10K Checklist              | Design SOTA (tiene principios similares)| No está codificado como checklist evaluable  |
+| Batch fixes                 | No tenemos equivalente                  | Prompting pattern que podríamos adoptar      |
+| Front End Design skill      | 02_Taste_Skills + 06_Design_Sota        | Concepto similar pero no idéntico            |
+| Pipeline de assets          | 12_Premium_Image_Studio + 03_Video_Media| No están conectados en pipeline              |
+| Cursor interactions         | Motion design skills                    | Patrón específico no documentado             |
+| Claude protects architecture| No tenemos equivalente                  | Es un comportamiento del agente, no una skill|
 
 ---
 

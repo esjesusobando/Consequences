@@ -55,14 +55,14 @@ metadata:
 
 ## Before / After Summary
 
-| Area | Before | After |
-|---|---|---|
-| Plans | Root plans needed validation | Validated and documented |
-| Dependencies | Live package drift and high audit findings | Patched without breaking-force upgrades |
-| Build | Turbopack failure risk | Webpack build stable |
-| GGA | Ran every commit | Opt-in via `GGA_PRECOMMIT=1` |
-| Website content | Risk of accidental copy edits | Copy/comment changes avoided/reverted |
-| Skills | Needed registry confirmation | Registry refreshed and paths valid |
+| Area           | Before                                    | After                                  |
+|---------------|------------------------------------------|---------------------------------------|
+| Plans          | Root plans needed validation              | Validated and documented               |
+| Dependencies   | Live package drift and high audit findings| Patched without breaking-force upgrades|
+| Build          | Turbopack failure risk                    | Webpack build stable                   |
+| GGA            | Ran every commit                          | Opt-in via `GGA_PRECOMMIT=1`           |
+| Website content| Risk of accidental copy edits             | Copy/comment changes avoided/reverted  |
+| Skills         | Needed registry confirmation              | Registry refreshed and paths valid     |
 
 ## Next Recommended Work
 

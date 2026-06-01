@@ -6,13 +6,13 @@ Motor de auto-mejora recursiva que escanea el PersonalOS cada 8 horas, detecta i
 
 ## Estado Actual
 
-| Componente | Estado |
-|-----------|--------|
-| Motor | ✅ SOTA — Funcional |
-| Scheduler | ✅ Activo — Cada 8h via Task Scheduler |
-| Proxima ejecucion | 28 may 2026 09:05 |
-| Pipeline | Detector ✅ → Analyzer ✅ → Executor (stub) → Learner ✅ |
-| Ultimo scan | ✅ Completado sin errores |
+| Componente       | Estado                                               |
+|-----------------|-----------------------------------------------------|
+| Motor            | ✅ SOTA — Funcional                                   |
+| Scheduler        | ✅ Activo — Cada 8h via Task Scheduler                |
+| Proxima ejecucion| 28 may 2026 09:05                                    |
+| Pipeline         | Detector ✅ → Analyzer ✅ → Executor (stub) → Learner ✅|
+| Ultimo scan      | ✅ Completado sin errores                             |
 
 ---
 
@@ -81,13 +81,13 @@ python -X utf8 04_Triggers/manual_trigger.py --report --path "C:/Users/sebas/Des
 
 La tarea `AutoImprovementPersonalOS` esta configurada para:
 
-| Propiedad | Valor |
-|-----------|-------|
-| Frecuencia | Cada 8 horas (480 min) |
-| Inicio | 2026-05-28 09:05 |
-| Script | `run_scheduled.bat` |
-| Usuario | sebas |
-| Modo | Dry-run (solo escanea) |
+| Propiedad  | Valor                 |
+|-----------|----------------------|
+| Frecuencia | Cada 8 horas (480 min)|
+| Inicio     | 2026-05-28 09:05      |
+| Script     | `run_scheduled.bat`   |
+| Usuario    | sebas                 |
+| Modo       | Dry-run (solo escanea)|
 
 ### Para desactivar temporalmente
 

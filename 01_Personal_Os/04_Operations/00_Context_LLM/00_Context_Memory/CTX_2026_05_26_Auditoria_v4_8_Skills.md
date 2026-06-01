@@ -14,15 +14,15 @@ Auditoría focalizada en el Área 01 (Creación de Contenidos) de skills tras mi
 
 ## Bugs Corregidos
 
-| # | Bug | Archivo | Fix |
-|---|-----|---------|-----|
-| 1 | Path `04_Operations/03_Scripts_Os` hardcodeado (no existe desde migración) | `18_Generacion_Contenido.py` | Cambiado a `04_Operations/03_Scripts_Os` |
-| 2 | Banner version string inconsistente (`v4.8` vs `v4.8 Consequences`) | `18_Generacion_Contenido.py` | Unificado a `v4.8 Consequences` |
-| 3 | SKILL.md headers con numeración legacy (ej. `# 13_Content_Transformer`) | 03, 05, 06, 07, 08 | Eliminados números legacy |
-| 4 | SKILL.md faltantes en 16_Ai_Agents, 18_Marketing_Strategy, 19_Marketing_Tech, 20_Marketing_Scripts | `.agent/` y `01_Personal_Os/` | Creados con frontmatter base |
-| 5 | `01_Creacion_Contenidos/SKILL.md` paths desactualizados (11_Brand_Voice_Guardian, etc.) | `.agent/` y `01_Personal_Os/` | Rewrite completo con paths 00-20 |
-| 6 | INDEX_AREA_FUNCTIONAL.md paths legacy Área 01 | `.agent/` y `01_Personal_Os/` | Rewrite completo |
-| 7 | Mirror drift: 18_Generacion_Contenido.py banner diferente entre `.agent/` y `01_Personal_Os/` | Ambos | Sincronizados |
+| #  | Bug                                                                                               | Archivo                      | Fix                                     |
+|---|--------------------------------------------------------------------------------------------------|-----------------------------|----------------------------------------|
+| 1  | Path `04_Operations/03_Scripts_Os` hardcodeado (no existe desde migración)                        | `18_Generacion_Contenido.py` | Cambiado a `04_Operations/03_Scripts_Os`|
+| 2  | Banner version string inconsistente (`v4.8` vs `v4.8 Consequences`)                               | `18_Generacion_Contenido.py` | Unificado a `v4.8 Consequences`         |
+| 3  | SKILL.md headers con numeración legacy (ej. `# 13_Content_Transformer`)                           | 03, 05, 06, 07, 08           | Eliminados números legacy               |
+| 4  | SKILL.md faltantes en 16_Ai_Agents, 18_Marketing_Strategy, 19_Marketing_Tech, 20_Marketing_Scripts| `.agent/` y `01_Personal_Os/`| Creados con frontmatter base            |
+| 5  | `01_Creacion_Contenidos/SKILL.md` paths desactualizados (11_Brand_Voice_Guardian, etc.)           | `.agent/` y `01_Personal_Os/`| Rewrite completo con paths 00-20        |
+| 6  | INDEX_AREA_FUNCTIONAL.md paths legacy Área 01                                                     | `.agent/` y `01_Personal_Os/`| Rewrite completo                        |
+| 7  | Mirror drift: 18_Generacion_Contenido.py banner diferente entre `.agent/` y `01_Personal_Os/`     | Ambos                        | Sincronizados                           |
 
 ---
 

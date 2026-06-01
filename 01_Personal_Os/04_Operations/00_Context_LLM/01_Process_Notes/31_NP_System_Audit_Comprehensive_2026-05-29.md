@@ -23,29 +23,29 @@ Lancé 4 exploraciones paralelas (sdd-explore) para cubrir:
 
 ## Hallazgos CRÍTICOS (8 issues)
 
-| # | Hallazgo | Severidad | Fix aplicado |
-|---|---------|-----------|-------------|
-| 1 | **03_AIPM_Hub.py** — Referencia nombres legacy (22_*.py → 00_*.py) | 🔴 CRÍTICO | ✅ cmd_map actualizado |
-| 2 | **10_General_Hub.py** — Busca en `08_General/` inexistente | 🔴 CRÍTICO | ✅ Redirigido a `01_Ritual/` + fallback legacy |
-| 3 | **06_Tool_Hub.py** — `01_Cleanup_Tabs.py` y `02_Generate_Tree.py` no existen | 🔴 CRÍTICO | ✅ Fallback + hint al usuario |
-| 4 | **07_Integration_Hub.py** — Busca en `09_Integration/` inexistente | 🔴 CRÍTICO | ✅ Redirigido a `07_Integration/` + nombres nuevos |
-| 5 | **08_Workflow_Hub.py** — Fallback a `04_Workflow/` inexistente | 🔴 CRÍTICO | ✅ Redirigido a `13_Legacy/` |
-| 6 | **09_Data_Hub.py** — Busca en `07_Data/` inexistente | 🔴 CRÍTICO | ✅ Redirigido a `08_Data/` + rename map |
-| 7 | **5 skills con frontmatter abierto (sin `---` cierre)** | 🔴 CRÍTICO | ✅ Cerrados |
-| 8 | **4 skills sin frontmatter YAML** | 🔴 CRÍTICO | ✅ Añadido frontmatter completo |
+| #  | Hallazgo                                                                    | Severidad  | Fix aplicado                                     |
+|---|----------------------------------------------------------------------------|-----------|-------------------------------------------------|
+| 1  | **03_AIPM_Hub.py** — Referencia nombres legacy (22_*.py → 00_*.py)          | 🔴 CRÍTICO  | ✅ cmd_map actualizado                            |
+| 2  | **10_General_Hub.py** — Busca en `08_General/` inexistente                  | 🔴 CRÍTICO  | ✅ Redirigido a `01_Ritual/` + fallback legacy    |
+| 3  | **06_Tool_Hub.py** — `01_Cleanup_Tabs.py` y `02_Generate_Tree.py` no existen| 🔴 CRÍTICO  | ✅ Fallback + hint al usuario                     |
+| 4  | **07_Integration_Hub.py** — Busca en `09_Integration/` inexistente          | 🔴 CRÍTICO  | ✅ Redirigido a `07_Integration/` + nombres nuevos|
+| 5  | **08_Workflow_Hub.py** — Fallback a `04_Workflow/` inexistente              | 🔴 CRÍTICO  | ✅ Redirigido a `13_Legacy/`                      |
+| 6  | **09_Data_Hub.py** — Busca en `07_Data/` inexistente                        | 🔴 CRÍTICO  | ✅ Redirigido a `08_Data/` + rename map           |
+| 7  | **5 skills con frontmatter abierto (sin `---` cierre)**                     | 🔴 CRÍTICO  | ✅ Cerrados                                       |
+| 8  | **4 skills sin frontmatter YAML**                                           | 🔴 CRÍTICO  | ✅ Añadido frontmatter completo                   |
 
 ## Hallazgos WARNING (8 issues)
 
-| # | Hallazgo | Severidad | Fix aplicado |
-|---|---------|-----------|-------------|
-| 9 | **5 skills locales sin campo `name`** | 🟠 WARNING | ✅ Añadido name |
-| 10 | **28_System_Health_Monitor.py** — import path sube a `04_Operations/` | 🟠 WARNING | ✅ Fixeado a `03_Scripts_Os/` |
-| 11 | **29_Repo_Sync_Auditor.py** — ruta relativa sin base | 🟠 WARNING | ✅ Convertida a absoluta |
-| 12 | **Backup `.agent/` — faltan 7 archivos** | 🟠 WARNING | ✅ Copiados: Laia, Marketing agents, workflows |
-| 13 | **AGENTS.md — dice 48 agentes, hay 49** | 🟠 WARNING | ✅ Actualizado en docs principales |
-| 14 | **README.md — dice v4.8 en badges, es v4.9** | 🟠 WARNING | ✅ Actualizado |
-| 15 | **.agent/CLAUDE.md — 48 agentes desactualizado** | 🟠 WARNING | ✅ Actualizado |
-| 16 | **00_Genesis_Workflow.md — referenciado pero no existe** | 🟠 INFO | ✅ Creado con contenido completo |
+| #  | Hallazgo                                                             | Severidad  | Fix aplicado                                 |
+|---|---------------------------------------------------------------------|-----------|---------------------------------------------|
+| 9  | **5 skills locales sin campo `name`**                                | 🟠 WARNING  | ✅ Añadido name                               |
+| 10 | **28_System_Health_Monitor.py** — import path sube a `04_Operations/`| 🟠 WARNING  | ✅ Fixeado a `03_Scripts_Os/`                 |
+| 11 | **29_Repo_Sync_Auditor.py** — ruta relativa sin base                 | 🟠 WARNING  | ✅ Convertida a absoluta                      |
+| 12 | **Backup `.agent/` — faltan 7 archivos**                             | 🟠 WARNING  | ✅ Copiados: Laia, Marketing agents, workflows|
+| 13 | **AGENTS.md — dice 48 agentes, hay 49**                              | 🟠 WARNING  | ✅ Actualizado en docs principales            |
+| 14 | **README.md — dice v4.8 en badges, es v4.9**                         | 🟠 WARNING  | ✅ Actualizado                                |
+| 15 | **.agent/CLAUDE.md — 48 agentes desactualizado**                     | 🟠 WARNING  | ✅ Actualizado                                |
+| 16 | **00_Genesis_Workflow.md — referenciado pero no existe**             | 🟠 INFO     | ✅ Creado con contenido completo              |
 
 ---
 
@@ -53,39 +53,39 @@ Lancé 4 exploraciones paralelas (sdd-explore) para cubrir:
 
 ### HUBs Scripts
 
-| HUB | ANTES (roto) | DESPUÉS (funcional) |
-|-----|-------------|-------------------|
-| **03_AIPM_Hub** | Busca `22_AIPM_Trace_Logger.py` en `03_AIPM/` | Busca `00_AIPM_Trace_Logger.py` en `03_AIPM/` |
-| **10_General_Hub** | Busca `77_Notify_System.py` en `08_General/` (no existe) | Busca `03_Notify_System.py` en `01_Ritual/` + fallback Legacy |
-| **06_Tool_Hub** | `01_Cleanup_Tabs.py` no existe → crash | Fallback + hint documentado |
-| **07_Integration_Hub** | Busca `75_Update_QMD_Index.py` en `09_Integration/` | Busca `01_Update_QMD_Index.py` en `07_Integration/` |
-| **08_Workflow_Hub** | Fallback a `04_Workflow/` (no existe) | Fallback a `13_Legacy/` |
-| **09_Data_Hub** | Busca `86_Universal_Parser.py` en `07_Data/` | Redirige a `03_Universal_Parser.py` en `08_Data/` |
+| HUB                   | ANTES (roto)                                            | DESPUÉS (funcional)                                          |
+|----------------------|--------------------------------------------------------|-------------------------------------------------------------|
+| **03_AIPM_Hub**       | Busca `22_AIPM_Trace_Logger.py` en `03_AIPM/`           | Busca `00_AIPM_Trace_Logger.py` en `03_AIPM/`                |
+| **10_General_Hub**    | Busca `77_Notify_System.py` en `08_General/` (no existe)| Busca `03_Notify_System.py` en `01_Ritual/` + fallback Legacy|
+| **06_Tool_Hub**       | `01_Cleanup_Tabs.py` no existe → crash                  | Fallback + hint documentado                                  |
+| **07_Integration_Hub**| Busca `75_Update_QMD_Index.py` en `09_Integration/`     | Busca `01_Update_QMD_Index.py` en `07_Integration/`          |
+| **08_Workflow_Hub**   | Fallback a `04_Workflow/` (no existe)                   | Fallback a `13_Legacy/`                                      |
+| **09_Data_Hub**       | Busca `86_Universal_Parser.py` en `07_Data/`            | Redirige a `03_Universal_Parser.py` en `08_Data/`            |
 
 ### Skills Frontmatter
 
-| Aspecto | ANTES | DESPUÉS |
-|---------|-------|---------|
-| Open frontmatter (sin cierre `---`) | 5 skills | ✅ 5 cerrados |
-| Sin frontmatter del todo | 4 skills | ✅ 4 con frontmatter completo |
-| Skills sin campo `name` | 5 skills locales | ✅ 5 con name añadido |
+| Aspecto                            | ANTES           | DESPUÉS                     |
+|-----------------------------------|----------------|----------------------------|
+| Open frontmatter (sin cierre `---`)| 5 skills        | ✅ 5 cerrados                |
+| Sin frontmatter del todo           | 4 skills        | ✅ 4 con frontmatter completo|
+| Skills sin campo `name`            | 5 skills locales| ✅ 5 con name añadido        |
 
 ### Backup Sync
 
-| Categoría | ANTES | DESPUÉS |
-|-----------|-------|---------|
-| Archivos faltantes en `.agent/` | 7 (Laia + Marketing + Workflows) | ✅ 7 copiados |
-| Genesis_Workflow.md | No existía | ✅ Creado |
+| Categoría                      | ANTES                           | DESPUÉS     |
+|-------------------------------|--------------------------------|------------|
+| Archivos faltantes en `.agent/`| 7 (Laia + Marketing + Workflows)| ✅ 7 copiados|
+| Genesis_Workflow.md            | No existía                      | ✅ Creado    |
 
 ### System Health
 
-| Script | ANTES | DESPUÉS |
-|--------|-------|---------|
-| 28_System_Health_Monitor.py | Import apunta a `04_Operations/` | ✅ Apunta a `03_Scripts_Os/` |
-| 29_Repo_Sync_Auditor.py | Ruta relativa `05_Archive/...` | ✅ Ruta absoluta desde root |
-| AGENTS.md count | 48 agentes | ✅ 49 agentes |
-| README.md badges | v4.8 | ✅ v4.9 |
-| .agent/CLAUDE.md | 48 agentes | ✅ 49 agentes |
+| Script                     | ANTES                           | DESPUÉS                    |
+|---------------------------|--------------------------------|---------------------------|
+| 28_System_Health_Monitor.py| Import apunta a `04_Operations/`| ✅ Apunta a `03_Scripts_Os/`|
+| 29_Repo_Sync_Auditor.py    | Ruta relativa `05_Archive/...`  | ✅ Ruta absoluta desde root |
+| AGENTS.md count            | 48 agentes                      | ✅ 49 agentes               |
+| README.md badges           | v4.8                            | ✅ v4.9                     |
+| .agent/CLAUDE.md           | 48 agentes                      | ✅ 49 agentes               |
 
 ---
 

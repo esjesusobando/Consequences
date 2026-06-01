@@ -19,23 +19,23 @@ Tools es el taller del sistema — donde se fabrican y mantienen las skills que 
 
 ## Sub-áreas y Contenido
 
-| N° | Sub-área                           | Descripción                     |
+| N°  | Sub-área                           | Descripción                     |
 |----|-----------------------------------|--------------------------------|
-| 01 | `01_Skill_Creator/`                | Creación de skills              |
-| 02 | `02_Skill_Template/`               | Templates para skills           |
-| 03 | `03_Anthropic_Harness/`            | Harness para Claude Code        |
-| 04 | `04_DevOps/`                       | Operaciones DevOps              |
-| 05 | `05_Vibe_Coding/`                  | Coding por vibes                |
-| 06 | `06_Testing/`                      | Testing y QA                    |
-| 07 | `07_Performance/`                  | Performance optimization        |
-| 08 | `08_Skill_Creator_Invictus/`       | Skill creator para Invictus     |
-| 09 | `09_Accessibility/`                | Accesibilidad web               |
-| 10 | `10_Octopus/`                      | Octopus — Ejecución paralela    |
-| 11 | `11_Doc_Processing/`               | Procesamiento de documentos     |
-| 12 | `12_Qmd/`                          | Búsqueda híbrida BM25 + embed   |
-| 13 | `13_System_Master/`                | System Guardian, MCP Builder    |
-| 14 | `14_Silicon_Valley_Data_Analyst/`  | Data analysis, SQL, pandas      |
-| 15 | `15_Ai_News_Weekly_Report/`        | News semanal con IA             |
+| 01  | `01_Skill_Creator/`                | Creación de skills              |
+| 02  | `02_Skill_Template/`               | Templates para skills           |
+| 03  | `03_Anthropic_Harness/`            | Harness para Claude Code        |
+| 04  | `04_DevOps/`                       | Operaciones DevOps              |
+| 05  | `05_Vibe_Coding/`                  | Coding por vibes                |
+| 06  | `06_Testing/`                      | Testing y QA                    |
+| 07  | `07_Performance/`                  | Performance optimization        |
+| 08  | `08_Skill_Creator_Invictus/`       | Skill creator para Invictus     |
+| 09  | `09_Accessibility/`                | Accesibilidad web               |
+| 10  | `10_Octopus/`                      | Octopus — Ejecución paralela    |
+| 11  | `11_Doc_Processing/`               | Procesamiento de documentos     |
+| 12  | `12_Qmd/`                          | Búsqueda híbrida BM25 + embed   |
+| 13  | `13_System_Master/`                | System Guardian, MCP Builder    |
+| 14  | `14_Silicon_Valley_Data_Analyst/`  | Data analysis, SQL, pandas      |
+| 15  | `15_Ai_News_Weekly_Report/`        | News semanal con IA             |
 
 ## Consolidación
 
@@ -100,12 +100,12 @@ pytest --cov
 
 ## 💾 State Persistence
 
-| Componente | Persistencia | Mecanismo |
-|---|---|---|
-| Skills instaladas | ✅ Permanente | Directorios en `02_Skills/` + skill-registry index |
-| Templates de skills | ✅ Archivo | `02_Skill_Template/` — immutables por diseño |
-| Tests results | ⚠️ Por ejecución | Logs en `06_Testing/reports/` — no hay historial |
-| Config DevOps | ✅ Archivo | Scripts y configs en `04_DevOps/` |
+| Componente         | Persistencia    | Mecanismo                                         |
+|-------------------|----------------|--------------------------------------------------|
+| Skills instaladas  | ✅ Permanente    | Directorios en `02_Skills/` + skill-registry index|
+| Templates de skills| ✅ Archivo       | `02_Skill_Template/` — immutables por diseño      |
+| Tests results      | ⚠️ Por ejecución| Logs en `06_Testing/reports/` — no hay historial  |
+| Config DevOps      | ✅ Archivo       | Scripts y configs en `04_DevOps/`                 |
 
 ---
 

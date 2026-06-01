@@ -9,17 +9,17 @@
 ## 🔴 CRÍTICOS (9 hallazgos)
 
 ### C1. Duplicados exactos en 04_Automatizacion — 9 pares (18 dirs → 9 skills)
-| Par | Skill Real | Acción |
-|-----|-----------|--------|
-| 08_N8N_Invictus = 09_N8n_Invictus | N8N Invictus | Merge 09→08, archivar 09 |
-| 09_Firecrawl = 10_Firecrawl | Firecrawl | Merge 10→09, archivar 10 |
-| 11_Gcierr = 12_Gcierr | Gcierr | Merge 12→11, archivar 12 |
-| 12_N8N = 13_N8n | N8N | Merge 13→12, archivar 13 |
-| 13_Content_From_Url = 14_Content_From_Url | Content From URL | Merge 14→13, archivar 14 |
-| 14_Compound_Knowledge = 15_Compound_Knowledge | Compound Knowledge | Merge 15→14, archivar 15 |
-| 15_Os_Self_Improvement = 16_Os_Self_Improvement | OS Self Improvement | Merge 16→15, archivar 16 |
-| 16_Reverse_Engineering = 17_Reverse_Engineering | Reverse Engineering | Merge 17→16, archivar 17 |
-| 17_Learning_Url_To_Knowledge = 18_Learning_Url_To_Knowledge | Learning URL→Knowledge | Merge 18→17, archivar 18 |
+| Par                                                        | Skill Real            | Acción                  |
+|-----------------------------------------------------------|----------------------|------------------------|
+| 08_N8N_Invictus = 09_N8n_Invictus                          | N8N Invictus          | Merge 09→08, archivar 09|
+| 09_Firecrawl = 10_Firecrawl                                | Firecrawl             | Merge 10→09, archivar 10|
+| 11_Gcierr = 12_Gcierr                                      | Gcierr                | Merge 12→11, archivar 12|
+| 12_N8N = 13_N8n                                            | N8N                   | Merge 13→12, archivar 13|
+| 13_Content_From_Url = 14_Content_From_Url                  | Content From URL      | Merge 14→13, archivar 14|
+| 14_Compound_Knowledge = 15_Compound_Knowledge              | Compound Knowledge    | Merge 15→14, archivar 15|
+| 15_Os_Self_Improvement = 16_Os_Self_Improvement            | OS Self Improvement   | Merge 16→15, archivar 16|
+| 16_Reverse_Engineering = 17_Reverse_Engineering            | Reverse Engineering   | Merge 17→16, archivar 17|
+| 17_Learning_Url_To_Knowledge = 18_Learning_Url_To_Knowledge| Learning URL→Knowledge| Merge 18→17, archivar 18|
 
 ### C2. Duplicados en 05_Workflows — Super_Campeones triple
 - `04_Super_Campeones`, `05_Super_Campeones`, `06_Super_Campeones` → 1 skill real
@@ -133,13 +133,13 @@ En `05_Workflows`: 4 de 6 skills tienen subdirs legacy numerados
 
 ## 📊 Resumen de Impacto
 
-| Categoría | Cantidad | Acción |
-|-----------|----------|--------|
-| Duplicados exactos (skills) | 11 pares → 11 skills únicas | Merge + Archive |
-| Nested stubs legacy | ~20 dirs | Cleanup + Archive |
-| .agent drift | ~40 dirs desync | Sync protocol |
-| Docs stale | ~8 archivos | Actualizar |
-| Estructura huérfana | ~6 dirs | Documentar o mergear |
+| Categoría                  | Cantidad                   | Acción              |
+|---------------------------|---------------------------|--------------------|
+| Duplicados exactos (skills)| 11 pares → 11 skills únicas| Merge + Archive     |
+| Nested stubs legacy        | ~20 dirs                   | Cleanup + Archive   |
+| .agent drift               | ~40 dirs desync            | Sync protocol       |
+| Docs stale                 | ~8 archivos                | Actualizar          |
+| Estructura huérfana        | ~6 dirs                    | Documentar o mergear|
 
 ---
 

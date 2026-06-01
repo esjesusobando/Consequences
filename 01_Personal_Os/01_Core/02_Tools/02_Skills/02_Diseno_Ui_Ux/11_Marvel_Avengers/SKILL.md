@@ -184,12 +184,12 @@ argument-hint: "[feature idea or problem]"
 
 ### What to persist between sessions
 
-| Dato | Cómo se persiste | Cuándo restaurar |
-|------|-----------------|-----------------|
-| **Pipeline stage actual** | Artefacto markdown en el directorio del proyecto | Al retomar un pipeline multi-agente a medio ejecutar |
-| **Output de cada héroe** | Archivos markdown independientes (`spider-output.md`, `professor-plan.md`, etc.) | Como input para el siguiente héroe en el pipeline |
-| **Heroes disponibles y workflow files** | Verificación de archivos existentes en `02_Marvel/` | Al iniciar cualquier llamado a héroe individual |
-| **Integración CE phases** | `mem_save` con el mapping héroe → fase CE | Al configurar un nuevo proyecto para usar el pipeline |
+| Dato                                   | Cómo se persiste                                                                | Cuándo restaurar                                     |
+|---------------------------------------|--------------------------------------------------------------------------------|-----------------------------------------------------|
+| **Pipeline stage actual**              | Artefacto markdown en el directorio del proyecto                                | Al retomar un pipeline multi-agente a medio ejecutar |
+| **Output de cada héroe**               | Archivos markdown independientes (`spider-output.md`, `professor-plan.md`, etc.)| Como input para el siguiente héroe en el pipeline    |
+| **Heroes disponibles y workflow files**| Verificación de archivos existentes en `02_Marvel/`                             | Al iniciar cualquier llamado a héroe individual      |
+| **Integración CE phases**              | `mem_save` con el mapping héroe → fase CE                                       | Al configurar un nuevo proyecto para usar el pipeline|
 
 ### Reglas de persistencia
 - **NO** guardar el estado de héroes individuales — son invocados bajo demanda

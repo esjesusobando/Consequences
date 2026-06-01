@@ -48,16 +48,16 @@ Se construye con una rutina aburrida que repetís una y otra vez.
 
 ## 📐 Checklist del Workflow
 
-| Criterio | Estado |
-|----------|--------|
-| ✅ Hook en línea 1 (sin throat-clearing) | "La suerte no existe" |
-| ✅ Framework 10/100/1000/10000 explicado | Tabla inline |
-| ✅ Conexión PersonalOS | 385 skills, skills legacy |
-| ✅ Sin clichés AI | Sin "key insight", "here's the thing" |
-| ✅ Tono rioplatense natural | Voseo, "aburrida", "metiendo" |
-| ✅ Longitud LinkedIn ~1000 chars | ~1100 caracteres aprox |
-| ✅ CTA claro | "¿A qué le estás metiendo volumen hoy?" |
-| ✅ Se lee a humano | Afirmaciones directas, analogía con el OS |
+| Criterio                               | Estado                                   |
+|---------------------------------------|-----------------------------------------|
+| ✅ Hook en línea 1 (sin throat-clearing)| "La suerte no existe"                    |
+| ✅ Framework 10/100/1000/10000 explicado| Tabla inline                             |
+| ✅ Conexión PersonalOS                  | 385 skills, skills legacy                |
+| ✅ Sin clichés AI                       | Sin "key insight", "here's the thing"    |
+| ✅ Tono rioplatense natural             | Voseo, "aburrida", "metiendo"            |
+| ✅ Longitud LinkedIn ~1000 chars        | ~1100 caracteres aprox                   |
+| ✅ CTA claro                            | "¿A qué le estás metiendo volumen hoy?"  |
+| ✅ Se lee a humano                      | Afirmaciones directas, analogía con el OS|
 
 ---
 

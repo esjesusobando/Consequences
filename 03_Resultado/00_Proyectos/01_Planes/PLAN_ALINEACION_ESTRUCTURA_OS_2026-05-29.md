@@ -14,42 +14,42 @@ Se auditaron los 16 archivos SKILL.md / index de nivel área. Resultados consoli
 
 #### 🔴 Errores críticos (path numbering incorrecto)
 
-| Archivo | Dice | Debería decir |
-|---------|------|---------------|
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/SKILL.md` | "Área Funcional: 07_Personal_Os" ✅ ya corregido | `00_Personal_Os` |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Workflows/SKILL.md` | "Área Funcional: 05_Workflows" ✅ ya corregido | `00_Workflows` |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Invictus_Web/SKILL.md` | "Área Funcional: 08_Invictus_Web" ✅ ya corregido | `07_Invictus_Web` |
-| `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md` | Referencia `07_Personal_Os` | `00_Personal_Os` |
-| `01_Personal_Os/01_Core/01_Inventario_Core.md` | Referencia `07_Personal_Os` | `00_Personal_Os` |
-| `README.md` (raíz) | Lista `07_Personal_Os`, `05_Workflows`, `08_Invictus_Web`, etc. | Números reales |
-| `OS_DIRECTORY.md` (raíz) | Múltiples paths stale (`07_Personal_Os`, `05_Workflows`, etc.) | Números reales |
-| `Structure_v4.8.md` | Ídem | Números reales |
-| `00_Winter_is_Coming/OS_DIRECTORY.md` | Ídem | Números reales |
-| `CLAUDE.md` (raíz) | Tabla de áreas con números viejos | Números reales |
+| Archivo                                                             | Dice                                                           | Debería decir    |
+|--------------------------------------------------------------------|---------------------------------------------------------------|-----------------|
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/SKILL.md` | "Área Funcional: 07_Personal_Os" ✅ ya corregido                | `00_Personal_Os` |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Workflows/SKILL.md`   | "Área Funcional: 05_Workflows" ✅ ya corregido                  | `00_Workflows`   |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/07_Invictus_Web/SKILL.md`| "Área Funcional: 08_Invictus_Web" ✅ ya corregido               | `07_Invictus_Web`|
+| `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md`                    | Referencia `07_Personal_Os`                                    | `00_Personal_Os` |
+| `01_Personal_Os/01_Core/01_Inventario_Core.md`                      | Referencia `07_Personal_Os`                                    | `00_Personal_Os` |
+| `README.md` (raíz)                                                  | Lista `07_Personal_Os`, `05_Workflows`, `08_Invictus_Web`, etc.| Números reales   |
+| `OS_DIRECTORY.md` (raíz)                                            | Múltiples paths stale (`07_Personal_Os`, `05_Workflows`, etc.) | Números reales   |
+| `Structure_v4.8.md`                                                 | Ídem                                                           | Números reales   |
+| `00_Winter_is_Coming/OS_DIRECTORY.md`                               | Ídem                                                           | Números reales   |
+| `CLAUDE.md` (raíz)                                                  | Tabla de áreas con números viejos                              | Números reales   |
 
 #### 🔴 Missing SKILL.md por área
 
-| Área | Archivo faltante |
-|------|-----------------|
-| `02_Diseno_Ui_Ux/` | SKILL.md |
-| `05_Claude_Ads/` | SKILL.md |
+| Área              | Archivo faltante |
+|------------------|-----------------|
+| `02_Diseno_Ui_Ux/`| SKILL.md         |
+| `05_Claude_Ads/`  | SKILL.md         |
 
 #### 🟡 Sub-áreas incorrectas
 
-| Archivo | Lista | Real en disco |
-|---------|-------|--------------|
-| `03_Video_Media/SKILL.md` | 1 sub-área (`01_Video_Intel`) | 2 (`01_Video_Intel`, `02_James_Cameron`) |
-| `04_Automatizacion/SKILL.md` | 10 sub-áreas (01-10) | 17 sub-dirs |
-| `00_System_Core/SKILL.md` | Lista sub-dirs que no existen | Solo 2 existen |
-| `00_Personal_Os/SKILL.md` | Sub-áreas con numbering off-by-one | `08_Hillary/` → `07_Hillary/` |
+| Archivo                     | Lista                             | Real en disco                           |
+|----------------------------|----------------------------------|----------------------------------------|
+| `03_Video_Media/SKILL.md`   | 1 sub-área (`01_Video_Intel`)     | 2 (`01_Video_Intel`, `02_James_Cameron`)|
+| `04_Automatizacion/SKILL.md`| 10 sub-áreas (01-10)              | 17 sub-dirs                             |
+| `00_System_Core/SKILL.md`   | Lista sub-dirs que no existen     | Solo 2 existen                          |
+| `00_Personal_Os/SKILL.md`   | Sub-áreas con numbering off-by-one| `08_Hillary/` → `07_Hillary/`           |
 
 #### 🟡 Documentación raíz desactualizada
 
-| Archivo | Problema |
-|---------|----------|
-| `README.md` | Dice "12 áreas canónicas" (hay 13), "394/407 skills" (hay 369) |
-| `INDEX_AREA_FUNCTIONAL.md` | Paths stale, Agent Teams Lite duplicado, dice 12 áreas pero lista 9 |
-| `MAPA_MIGRACION.md` | Completamente stale (abril 2026), paths en ALL_CAPS, números incorrectos |
+| Archivo                   | Problema                                                                |
+|--------------------------|------------------------------------------------------------------------|
+| `README.md`               | Dice "12 áreas canónicas" (hay 13), "394/407 skills" (hay 369)          |
+| `INDEX_AREA_FUNCTIONAL.md`| Paths stale, Agent Teams Lite duplicado, dice 12 áreas pero lista 9     |
+| `MAPA_MIGRACION.md`       | Completamente stale (abril 2026), paths en ALL_CAPS, números incorrectos|
 
 ---
 
@@ -72,15 +72,15 @@ Auditar estado actual de cada archivo antes de tocarlo para confirmar qué está
 
 Corregir únicamente referencias textuales a paths que ya no existen. No renombrar directorios. No eliminar archivos.
 
-| Archivo | Corrección |
-|---------|-----------|
-| `CLAUDE.md` | Tabla de áreas: `07_Personal_Os` → `00_Personal_Os` |
-| `README.md` | Tabla de áreas + path de skills |
-| `OS_DIRECTORY.md` | `07_Personal_Os` → `00_Personal_Os`, `05_Workflows` → `00_Workflows`, `08_Invictus_Web` → `07_Invictus_Web` |
-| `Structure_v4.8.md` | Ídem |
-| `00_Winter_is_Coming/GOALS.md` | Path de skill `07_Personal_Os` → `00_Personal_Os` |
-| `00_Winter_is_Coming/AGENTS.md` | Tabla de áreas |
-| `00_Winter_is_Coming/OS_DIRECTORY.md` | Ídem que `OS_DIRECTORY.md` raíz |
+| Archivo                              | Corrección                                                                                                 |
+|-------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| `CLAUDE.md`                          | Tabla de áreas: `07_Personal_Os` → `00_Personal_Os`                                                        |
+| `README.md`                          | Tabla de áreas + path de skills                                                                            |
+| `OS_DIRECTORY.md`                    | `07_Personal_Os` → `00_Personal_Os`, `05_Workflows` → `00_Workflows`, `08_Invictus_Web` → `07_Invictus_Web`|
+| `Structure_v4.8.md`                  | Ídem                                                                                                       |
+| `00_Winter_is_Coming/GOALS.md`       | Path de skill `07_Personal_Os` → `00_Personal_Os`                                                          |
+| `00_Winter_is_Coming/AGENTS.md`      | Tabla de áreas                                                                                             |
+| `00_Winter_is_Coming/OS_DIRECTORY.md`| Ídem que `OS_DIRECTORY.md` raíz                                                                            |
 
 **Regla:** Solo cambiar texto que referencia un path incorrecto. No cambiar estructura, no eliminar contenido, no mover archivos.
 
@@ -88,14 +88,14 @@ Corregir únicamente referencias textuales a paths que ya no existen. No renombr
 
 ### FASE 2 — Corrección de paths en archivos activos (`01_Personal_Os/`)
 
-| Archivo | Corrección esperada |
-|---------|-------------------|
-| `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md` | `07_Personal_Os` → `00_Personal_Os` |
-| `01_Personal_Os/01_Core/01_Rules/08_Token_Economy.mdc` | Path de skill `07_Personal_Os` → `00_Personal_Os` |
-| `01_Personal_Os/01_Core/01_Inventario_Core.md` | `07_Personal_Os` → `00_Personal_Os` |
-| `01_Personal_Os/01_Core/00_Comandos_Workflows.md` | Path de skills PersonalOS |
-| `01_Personal_Os/01_Core/00_Workflows_Os/04_Hillary/25_Hillary_Life_OS.md` | Ruta de carga de skill |
-| `01_Personal_Os/01_Core/02_Tools/01_Agents/00_OS_Conductor/SKILL.md` | Tabla de ruteo `07_Personal_Os` → `00_Personal_Os` |
+| Archivo                                                                  | Corrección esperada                               |
+|-------------------------------------------------------------------------|--------------------------------------------------|
+| `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md`                         | `07_Personal_Os` → `00_Personal_Os`               |
+| `01_Personal_Os/01_Core/01_Rules/08_Token_Economy.mdc`                   | Path de skill `07_Personal_Os` → `00_Personal_Os` |
+| `01_Personal_Os/01_Core/01_Inventario_Core.md`                           | `07_Personal_Os` → `00_Personal_Os`               |
+| `01_Personal_Os/01_Core/00_Comandos_Workflows.md`                        | Path de skills PersonalOS                         |
+| `01_Personal_Os/01_Core/00_Workflows_Os/04_Hillary/25_Hillary_Life_OS.md`| Ruta de carga de skill                            |
+| `01_Personal_Os/01_Core/02_Tools/01_Agents/00_OS_Conductor/SKILL.md`     | Tabla de ruteo `07_Personal_Os` → `00_Personal_Os`|
 
 **Regla:** Solo texto. No se toca estructura de directorios.
 
@@ -105,26 +105,26 @@ Corregir únicamente referencias textuales a paths que ya no existen. No renombr
 
 El directorio `.agent/` es un backup. Debe reflejar las mismas correcciones que el activo para que no haya confusión entre versiones.
 
-| Archivo | Corrección |
-|---------|-----------|
-| `.agent/README.md` | Tabla de áreas |
-| `.agent/CLAUDE.md` | Tabla + paths |
-| `.agent/SKILLS_INVENTORY.md` | Paths |
-| `.agent/00_Rules/RULES_INDEX.md` | Paths |
-| `.agent/02_Skills/README.md` | Paths |
-| `.agent/02_Skills/INDEX_AREA_FUNCTIONAL.md` | Paths |
-| `.agent/03_Workflows/04_Hillary/25_Hillary_Life_OS.md` | Ruta de carga |
+| Archivo                                               | Corrección    |
+|------------------------------------------------------|--------------|
+| `.agent/README.md`                                    | Tabla de áreas|
+| `.agent/CLAUDE.md`                                    | Tabla + paths |
+| `.agent/SKILLS_INVENTORY.md`                          | Paths         |
+| `.agent/00_Rules/RULES_INDEX.md`                      | Paths         |
+| `.agent/02_Skills/README.md`                          | Paths         |
+| `.agent/02_Skills/INDEX_AREA_FUNCTIONAL.md`           | Paths         |
+| `.agent/03_Workflows/04_Hillary/25_Hillary_Life_OS.md`| Ruta de carga |
 
 ---
 
 ### FASE 4 — Corrección de SKILL.md de áreas con información incorrecta
 
-| Archivo | Corrección |
-|---------|-----------|
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/SKILL.md` | Actualizar lista de sub-áreas (añadir `02_James_Cameron`) |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/SKILL.md` | Actualizar lista de sub-áreas de 10 a 17 |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/SKILL.md` | Corregir numbering de sub-áreas si está off-by-one |
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/00_System_Core/SKILL.md` | Actualizar lista de sub-dirs existentes |
+| Archivo                                                               | Corrección                                               |
+|----------------------------------------------------------------------|---------------------------------------------------------|
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/SKILL.md`   | Actualizar lista de sub-áreas (añadir `02_James_Cameron`)|
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/04_Automatizacion/SKILL.md`| Actualizar lista de sub-áreas de 10 a 17                 |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/SKILL.md`   | Corregir numbering de sub-áreas si está off-by-one       |
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/00_System_Core/SKILL.md`   | Actualizar lista de sub-dirs existentes                  |
 
 **Importante:** No eliminar contenido existente. Solo agregar lo que falta o corregir números.
 
@@ -173,13 +173,13 @@ Template: mismo formato con sus sub-áreas reales en disco.
 
 ### FASE 6 — Corrección de índices y documentos de referencia
 
-| Archivo | Corrección |
-|---------|-----------|
-| `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md` | Paths stale + duplicados |
-| `01_Personal_Os/02_Knowledge/02_Research/04_INVENTARIO_INTEGRADO_SISTEMAS.md` | Paths stale |
-| `01_Personal_Os/04_Operations/03_Scripts_Os/SCRIPTS_INDEX.md` | Número de área |
-| `01_Personal_Os/04_Operations/01_Auto_Improvement/AUDITORIA_2026-04-23.md` | Path stale |
-| `.claude-plugin/plugin.json` | Glob pattern de skills **SOLO si está mal** |
+| Archivo                                                                      | Corrección                                 |
+|-----------------------------------------------------------------------------|-------------------------------------------|
+| `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`         | Paths stale + duplicados                   |
+| `01_Personal_Os/02_Knowledge/02_Research/04_INVENTARIO_INTEGRADO_SISTEMAS.md`| Paths stale                                |
+| `01_Personal_Os/04_Operations/03_Scripts_Os/SCRIPTS_INDEX.md`                | Número de área                             |
+| `01_Personal_Os/04_Operations/01_Auto_Improvement/AUDITORIA_2026-04-23.md`   | Path stale                                 |
+| `.claude-plugin/plugin.json`                                                 | Glob pattern de skills **SOLO si está mal**|
 
 ---
 

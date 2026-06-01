@@ -38,11 +38,11 @@ None — no existing capabilities change behavior.
 `Graphify_Out/` is correct on disk. Single source of truth.
 
 ### 3. Fix agent integrations
-| File | Change |
-|------|--------|
-| `.claude/settings.json` | `graphify-out/` → `Graphify_Out/` |
-| `.opencode/plugins/graphify.js` | `"graphify-out"` → `"Graphify_Out"` |
-| `.codex/rules/graphify.mdc` | New — mirror `.cursor/rules/graphify.mdc` |
+| File                           | Change                                   |
+|-------------------------------|-----------------------------------------|
+| `.claude/settings.json`        | `graphify-out/` → `Graphify_Out/`        |
+| `.opencode/plugins/graphify.js`| `"graphify-out"` → `"Graphify_Out"`      |
+| `.codex/rules/graphify.mdc`    | New — mirror `.cursor/rules/graphify.mdc`|
 
 ### 4. Fix config_paths.py
 `GRAPHIFY_DIR = GRAPHIFY_BASE / "graphify-out"` → `GRAPHIFY_DIR = GRAPHIFY_BASE`
@@ -52,22 +52,22 @@ None — no existing capabilities change behavior.
 
 ## Affected Areas
 
-| Area | Impact |
-|------|--------|
-| `.claude/settings.json` | Modified — fix Bash hook path |
-| `.opencode/plugins/graphify.js` | Modified — fix path constant |
-| `.codex/rules/graphify.mdc` | New — Codex integration |
-| `config_paths.py` | Modified — remove phantom subdir |
-| `31_Graphify_Hub.py` | None — uses config_paths, auto-fixes |
-| AGENTS.md / CLAUDE.md | Verify only — already correct |
+| Area                           | Impact                              |
+|-------------------------------|------------------------------------|
+| `.claude/settings.json`        | Modified — fix Bash hook path       |
+| `.opencode/plugins/graphify.js`| Modified — fix path constant        |
+| `.codex/rules/graphify.mdc`    | New — Codex integration             |
+| `config_paths.py`              | Modified — remove phantom subdir    |
+| `31_Graphify_Hub.py`           | None — uses config_paths, auto-fixes|
+| AGENTS.md / CLAUDE.md          | Verify only — already correct       |
 
 ## Risks
 
-| Risk | Likelihood | Mitigation |
-|------|------------|------------|
-| `graphify` fails on Windows | Medium | Test after install; GH issue fallback |
-| .claude JSON syntax error | Low | Validate with `json.loads` before write |
-| Graph rebuild fails | Low | Old graph at `Graphify_Out/` is valid fallback |
+| Risk                       | Likelihood  | Mitigation                                    |
+|---------------------------|------------|----------------------------------------------|
+| `graphify` fails on Windows| Medium      | Test after install; GH issue fallback         |
+| .claude JSON syntax error  | Low         | Validate with `json.loads` before write       |
+| Graph rebuild fails        | Low         | Old graph at `Graphify_Out/` is valid fallback|
 
 ## Rollback Plan
 

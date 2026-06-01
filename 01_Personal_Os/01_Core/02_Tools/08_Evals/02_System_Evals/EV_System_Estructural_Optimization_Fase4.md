@@ -21,13 +21,13 @@ Crear INDEX.md categorizado para 14 archivos MD + 9 PDFs, resolver clash #13, el
 
 ## Criteria
 
-| Criteria | Result | Notes |
-|----------|--------|-------|
-| INDEX.md creado | Pendiente | Debe tener categorias: Referencia, Frameworks, Tecnica, PDFs |
-| Clash #13 resuelto | Completado | 13_Anthropic_Engineering_02_03 → 14_Anthropic_Engineering_Part2 |
-| tree.txt eliminado | Completado | Stale debug artifact |
-| README actualizado | Pendiente | Debe reflejar 14 MD + 9 PDFs |
-| Naming consistente | Completado | Todos siguen NN_Descripcion.md |
+| Criteria          | Result    | Notes                                                          |
+|------------------|----------|---------------------------------------------------------------|
+| INDEX.md creado   | Pendiente | Debe tener categorias: Referencia, Frameworks, Tecnica, PDFs   |
+| Clash #13 resuelto| Completado| 13_Anthropic_Engineering_02_03 → 14_Anthropic_Engineering_Part2|
+| tree.txt eliminado| Completado| Stale debug artifact                                           |
+| README actualizado| Pendiente | Debe reflejar 14 MD + 9 PDFs                                   |
+| Naming consistente| Completado| Todos siguen NN_Descripcion.md                                 |
 
 ## Verdict
 

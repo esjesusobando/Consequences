@@ -31,13 +31,13 @@ Capture, review, and improve AI-assisted workflows through structured evaluation
 
 ## Axial Codes
 
-| Code | Meaning |
-|------|---------|
-| `good-context-gathering` | Read/explored before acting |
-| `efficient-tool-use` | Minimal tool calls |
-| `iterative-refinement` | Improved based on feedback |
-| `task-tracking` | Used TodoWrite |
-| `incomplete` | Stopped before done |
+| Code                    | Meaning                    |
+|------------------------|---------------------------|
+| `good-context-gathering`| Read/explored before acting|
+| `efficient-tool-use`    | Minimal tool calls         |
+| `iterative-refinement`  | Improved based on feedback |
+| `task-tracking`         | Used TodoWrite             |
+| `incomplete`            | Stopped before done        |
 
 ---
 

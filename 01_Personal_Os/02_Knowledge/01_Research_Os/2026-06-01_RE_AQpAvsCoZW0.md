@@ -71,13 +71,13 @@ La fórmula budista: **Intención clara + Acción comprometida + Desapego del re
 
 ## Practical Applications
 
-| Concepto Budista | Traducción Práctica |
-|-----------------|---------------------|
-| Mindfulness (sati) | Observar pensamientos sin juzgar |
-| Desapego (upadana) | Trabajar con intención, soltar el resultado |
-| Impermanencia (anicca) | Todo pasa — los malos momentos también |
-| No-identificación (anatta) | No soy mi mente, no soy mi historia |
-| Compasión (karuna) | Ser amable con uno mismo y con los demás |
+| Concepto Budista          | Traducción Práctica                        |
+|--------------------------|-------------------------------------------|
+| Mindfulness (sati)        | Observar pensamientos sin juzgar           |
+| Desapego (upadana)        | Trabajar con intención, soltar el resultado|
+| Impermanencia (anicca)    | Todo pasa — los malos momentos también     |
+| No-identificación (anatta)| No soy mi mente, no soy mi historia        |
+| Compasión (karuna)        | Ser amable con uno mismo y con los demás   |
 
 ---
 
@@ -85,12 +85,12 @@ La fórmula budista: **Intención clara + Acción comprometida + Desapego del re
 
 Este video refuerza principios directamente aplicables al sistema:
 
-| Principio | Cómo se aplica al OS |
-|-----------|---------------------|
-| Observar sin juzgar | Revisión semanal sin autocrítica destructiva |
-| Desapego del resultado | Los sistemas fallan — el proceso importa más que el outcome |
-| Impermanencia | Las herramientas y métodos cambian; no aferrarse a configuraciones |
-| No-identificación | No soy mi productividad; el OS me sirve a mí, no al revés |
+| Principio             | Cómo se aplica al OS                                              |
+|----------------------|------------------------------------------------------------------|
+| Observar sin juzgar   | Revisión semanal sin autocrítica destructiva                      |
+| Desapego del resultado| Los sistemas fallan — el proceso importa más que el outcome       |
+| Impermanencia         | Las herramientas y métodos cambian; no aferrarse a configuraciones|
+| No-identificación     | No soy mi productividad; el OS me sirve a mí, no al revés         |
 
 ---
 

@@ -8,13 +8,13 @@
 - Los comandos principales son: `graphify query` (consultas), `graphify path` (relaciones), `graphify explain` (conceptos)
 
 ## Herramientas identificadas
-| # | Herramienta | Propósito | Versión |
-|---|-------------|-----------|---------|
-| 1 | Graphify | Knowledge graph generator | 0.8.27 |
-| 2 | Claude Code | AI coding assistant | v2.1.9+ |
-| 3 | Tree-sitter | AST parser | N/A |
-| 4 | NetworkX + Leiden | Graph construction & clustering | N/A |
-| 5 | D3.js | Interactive visualization | N/A |
+| #  | Herramienta      | Propósito                      | Versión  |
+|---|-----------------|-------------------------------|---------|
+| 1  | Graphify         | Knowledge graph generator      | 0.8.27   |
+| 2  | Claude Code      | AI coding assistant            | v2.1.9+  |
+| 3  | Tree-sitter      | AST parser                     | N/A      |
+| 4  | NetworkX + Leiden| Graph construction & clustering| N/A      |
+| 5  | D3.js            | Interactive visualization      | N/A      |
 
 ## Para el OS
 [SÍ] - Agregar al contexto:

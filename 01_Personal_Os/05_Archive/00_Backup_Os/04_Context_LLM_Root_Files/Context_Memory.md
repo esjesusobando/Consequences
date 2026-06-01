@@ -95,13 +95,13 @@ Este documento mantiene un registro de los cambios realizados durante las sesion
 Revisar todo el proyecto Think_Different sin eliminar información, corregir deuda técnica activa, ordenar JSONs de resultado y dejar trazabilidad del antes/después.
 
 ### Antes
-| Área | Estado antes |
-|---|---|
-| JSONs de auditoría | 3 JSON sueltos en la raíz de `03_Resultado/` |
-| Hooks | Referencias activas a rutas obsoletas las rutas legacy de hooks |
-| Rule 12 | Un plan/audit activo seguía referenciando la regla 12 legacy de Nexus Routing |
-| Reportes | No existía índice JSON dedicado para auditorías OS |
-| Validación | Había evidencia dispersa de integración Gentleman/Every CE |
+| Área              | Estado antes                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| JSONs de auditoría| 3 JSON sueltos en la raíz de `03_Resultado/`                                 |
+| Hooks             | Referencias activas a rutas obsoletas las rutas legacy de hooks              |
+| Rule 12           | Un plan/audit activo seguía referenciando la regla 12 legacy de Nexus Routing|
+| Reportes          | No existía índice JSON dedicado para auditorías OS                           |
+| Validación        | Había evidencia dispersa de integración Gentleman/Every CE                   |
 
 ### Acciones ejecutadas
 - Movidos y renombrados los JSON de auditoría a `03_Resultado/03_Reportes/01_Auditorias_OS/` con prefijo numérico.
@@ -112,13 +112,13 @@ Revisar todo el proyecto Think_Different sin eliminar información, corregir deu
 - Actualizados `03_Resultado/03_Reportes/README.md` y `03_Resultado/ORGANIZACION_SUMMARY.md`.
 
 ### Después
-| Área | Estado después |
-|---|---|
-| JSONs de auditoría | Numerados y agrupados en `03_Reportes/01_Auditorias_OS/` |
-| Hooks | Rutas activas alineadas al sistema actual |
-| Rule 12 | Referencias activas alineadas con `12_Audit_OS_Integrity.mdc` |
-| Reportes | Carpeta con manifest JSON y README actualizado |
-| Históricos | Preservados sin borrado; solo se corrigieron referencias activas |
+| Área              | Estado después                                                  |
+|------------------|----------------------------------------------------------------|
+| JSONs de auditoría| Numerados y agrupados en `03_Reportes/01_Auditorias_OS/`        |
+| Hooks             | Rutas activas alineadas al sistema actual                       |
+| Rule 12           | Referencias activas alineadas con `12_Audit_OS_Integrity.mdc`   |
+| Reportes          | Carpeta con manifest JSON y README actualizado                  |
+| Históricos        | Preservados sin borrado; solo se corrigieron referencias activas|
 
 ### Validaciones
 - Se evitó tocar `node_modules`, `.git`, archivos de archivo histórico y memoria/contexto antiguo salvo esta nota nueva.
@@ -165,15 +165,15 @@ Corregir bugs detectados durante la auditoría inicial del proyecto: Contex_Memo
 - **Acción**: Actualizado a "4.8 Consequences"
 
 ### Estado Post-Fixes
-| Área | Estado |
-|---|---|
-| Contex_Memory typo | ✅ Eliminado completamente |
-| .agent hooks | ✅ Synced con source |
-| Structure_v4.8 self-ref | ✅ Corregida |
-| CLAUDE.md counts | ✅ HUBs 24, Rules 13 |
-| EVOLUTION_LOG árbol | ✅ En posición correcta bajo 04_Operations/ |
-| OS_DIRECTORY.md tree | ✅ Subárbol 04_Operations corregido |
-| version headers | ✅ 4.8 en todos lados |
+| Área                   | Estado                                    |
+|-----------------------|------------------------------------------|
+| Contex_Memory typo     | ✅ Eliminado completamente                 |
+| .agent hooks           | ✅ Synced con source                       |
+| Structure_v4.8 self-ref| ✅ Corregida                               |
+| CLAUDE.md counts       | ✅ HUBs 24, Rules 13                       |
+| EVOLUTION_LOG árbol    | ✅ En posición correcta bajo 04_Operations/|
+| OS_DIRECTORY.md tree   | ✅ Subárbol 04_Operations corregido        |
+| version headers        | ✅ 4.8 en todos lados                      |
 
 ### Pendiente
 - ~~`.mcp.json`: Renombrar `eagle-mcp` → `obsidian-mcp` (el key corre `obsidian-mcp@latest`, no es Eagle)~~ ✅ 2026-05-27
@@ -181,13 +181,13 @@ Corregir bugs detectados durante la auditoría inicial del proyecto: Contex_Memo
 ### Session 2026-05-27 — Post-Merge Cleanup
 
 #### Fixes aplicados:
-| # | Bug | Fix |
-|---|-----|-----|
-| 1 | skill-registry.md perdió descriptions CE + paths a `.pi/` (inexistente) | 37 CE descriptions restauradas desde git history; `.pi/` → `.config/opencode/skills/` |
-| 2 | 78+ scripts activos referencian `08_Scripts_Os` legacy path | 91 archivos actualizados (73 .py + 18 no-py) a `04_Operations/03_Scripts_Os` |
-| 3 | `.mcp.json` key `eagle-mcp` corre `obsidian-mcp@latest` | Renombrado a `obsidian-mcp` |
-| 4 | `OS_DIRECTORY.md` + `README.md` refs a `eagle-mcp` | 3 referencias actualizadas a `obsidian-mcp` |
-| 5 | `Contex_Memory` typo en H1 de doc histórico (v4.7) | Corregido a `Context_Memory` |
+| #  | Bug                                                                    | Fix                                                                                  |
+|---|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| 1  | skill-registry.md perdió descriptions CE + paths a `.pi/` (inexistente)| 37 CE descriptions restauradas desde git history; `.pi/` → `.config/opencode/skills/`|
+| 2  | 78+ scripts activos referencian `08_Scripts_Os` legacy path            | 91 archivos actualizados (73 .py + 18 no-py) a `04_Operations/03_Scripts_Os`         |
+| 3  | `.mcp.json` key `eagle-mcp` corre `obsidian-mcp@latest`                | Renombrado a `obsidian-mcp`                                                          |
+| 4  | `OS_DIRECTORY.md` + `README.md` refs a `eagle-mcp`                     | 3 referencias actualizadas a `obsidian-mcp`                                          |
+| 5  | `Contex_Memory` typo en H1 de doc histórico (v4.7)                     | Corregido a `Context_Memory`                                                         |
 
 #### Archivos tocados: 90+ | Todos los bugs cerrados
 
@@ -221,11 +221,11 @@ Auditar TODO el proyecto Think_Different sin eliminar info: paths legacy 08_Scri
 - `git config`: submodule ref limpiada
 
 #### 4. Delegaciones masivas (skills audit, CLAUDE.md reality, MCP config)
-| Delegación | Findings |
-|---|---|
-| Skills audit | .agent mirror tiene 61 skills EXTRA que source no tiene (espejo funcionando bien — info, no bug) |
-| CLAUDE.md reality | 6 mismatches: tree order (corregido), agent count (58 → actualizado), dirs count (13→14), header counts (SCRIPTS_INDEX.md corregido) |
-| MCP config audit | 11 API keys hardcodeadas en .mcp.json files = INTENCIONAL (snapshot usa env vars, activos usan direct keys). TestSprite path stale (blocked en CC config). 6 placeholders en backup files (no .env file encontrado) |
+| Delegación       | Findings                                                                                                                                                                                                           |
+|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Skills audit     | .agent mirror tiene 61 skills EXTRA que source no tiene (espejo funcionando bien — info, no bug)                                                                                                                   |
+| CLAUDE.md reality| 6 mismatches: tree order (corregido), agent count (58 → actualizado), dirs count (13→14), header counts (SCRIPTS_INDEX.md corregido)                                                                               |
+| MCP config audit | 11 API keys hardcodeadas en .mcp.json files = INTENCIONAL (snapshot usa env vars, activos usan direct keys). TestSprite path stale (blocked en CC config). 6 placeholders en backup files (no .env file encontrado)|
 
 #### 5. HUB_CATALOG.md corregido
 - 15_Agent_Sync_Hub → 19_Agent_Sync_Hub (path ref)
@@ -267,16 +267,16 @@ Auditar TODO el proyecto Think_Different sin eliminar info: paths legacy 08_Scri
   - Fecha de actualización: 2026-05-28
 
 #### 2. Fix `13_Auditors_Os` → `12_Auditors_Os` (8 archivos)
-| Archivo | Líneas corregidas |
-|---|---|
-| `Structure_v4.8.md` | 1 (line 262) |
-| `OS_DIRECTORY.md` | 1 (line 259) |
-| `Operations/README.md` | 1 (line 94) |
-| `03_Scripts_Os/README.md` | 1 (line 25) |
-| `.agent/README.md` | 2 (lines 104-105) — incluye números de script |
-| `.agent/CLAUDE.md` | 2 (lines 176-177) — incluye números de script |
-| `00_Comandos_Workflows.md` | 8 (header + 5 scripts obsoletos) |
-| `embedding.py` | 1 (line 158) |
+| Archivo                   | Líneas corregidas                            |
+|--------------------------|---------------------------------------------|
+| `Structure_v4.8.md`       | 1 (line 262)                                 |
+| `OS_DIRECTORY.md`         | 1 (line 259)                                 |
+| `Operations/README.md`    | 1 (line 94)                                  |
+| `03_Scripts_Os/README.md` | 1 (line 25)                                  |
+| `.agent/README.md`        | 2 (lines 104-105) — incluye números de script|
+| `.agent/CLAUDE.md`        | 2 (lines 176-177) — incluye números de script|
+| `00_Comandos_Workflows.md`| 8 (header + 5 scripts obsoletos)             |
+| `embedding.py`            | 1 (line 158)                                 |
 
 #### 3. Fix paths + script names en tests de Playground (2 archivos)
 - `05_OS_Health_Test.py`: `13_Auditors_Os` → `12_Auditors_Os`, `15_SOTA_Integrity_Check.py` → `03_SOTA_Integrity_Check.py`
@@ -296,13 +296,13 @@ Auditar TODO el proyecto Think_Different sin eliminar info: paths legacy 08_Scri
 ### Archivos tocados: 15 (8 .md + 5 .py + 1 README rewrite + 2 docs de memoria)
 
 ### Estado Post-Fixes
-| Área | Estado |
-|---|---|
-| `13_Auditors_Os` en activos | ✅ 0 refs (solo en archive/históricos) |
-| `12_Auditors_Os/README.md` | ✅ v4.8 con números reales |
-| `08_Scripts_Os` en activos | ✅ 0 refs |
-| HUB_CATALOG.md header | ✅ v4.8 |
-| Memoria documentada | ✅ Entrada 2026-05-28 |
+| Área                       | Estado                               |
+|---------------------------|-------------------------------------|
+| `13_Auditors_Os` en activos| ✅ 0 refs (solo en archive/históricos)|
+| `12_Auditors_Os/README.md` | ✅ v4.8 con números reales            |
+| `08_Scripts_Os` en activos | ✅ 0 refs                             |
+| HUB_CATALOG.md header      | ✅ v4.8                               |
+| Memoria documentada        | ✅ Entrada 2026-05-28                 |
 
 ### Hallazgos
 - Playground README.md header "v1.0 ALFA" — posible stale

@@ -50,7 +50,7 @@ Este directorio contiene el **legacy de Agent Teams Lite** y los **7 manifests d
 | MCP Registry  | 7+38 MCPs   | 0 ✅  | Se mantiene|
 | Agent Catalog | 82 agents   | 0 ✅  | Se mantiene|
 | Skill Index   | 385 skills  | 0 ✅  | Se mantiene|
-| HUB Catalog   | 20 HUBs   | 0 ✅  | Se mantiene|
+| HUB Catalog   | 20 HUBs     | 0 ✅  | Se mantiene|
 | Workflow Graph| 27 workflows| 0 ✅  | Se mantiene|
 | Hook Registry | 10 hooks    | 0 ✅  | Se mantiene|
 

@@ -23,20 +23,20 @@
 
 ### Metricas Clave
 
-| Componente | Cantidad | Estado |
-|-----------|----------|--------|
-| Skills activas | 394 (12 areas funcionales) | ✅ Verificadas |
-| Agentes | 48 source / 82 con SDD y CE | ✅ Sincronizados |
-| MCPs | 7 activos / 38 backup | ✅ Sin drift |
-| Scripts | 81 activos + 88 legacy | ✅ Reorganizados |
-| HUBs | 31 scripts raiz | ✅ Reestructurados (00-30) |
-| Workflows | 30 (7 categorias) | ✅ Activos |
-| Hooks | 13 (6 fases) | ✅ Activos |
-| Rules | 14 (.mdc) | ✅ Definidas |
-| Directorios skills | 11 areas consolidadas | ✅ Sin duplicados |
-| Context Memory | 19 CTX archivados + index | ✅ Indexado |
-| Knowledge Brain | 14 MD + 9 PDFs | ✅ INDEX.md activo |
-| Process Notes | 29 NP sesiones historicas | ✅ Secuencial sin clashes |
+| Componente        | Cantidad                   | Estado                   |
+|------------------|---------------------------|-------------------------|
+| Skills activas    | 394 (12 areas funcionales) | ✅ Verificadas            |
+| Agentes           | 48 source / 82 con SDD y CE| ✅ Sincronizados          |
+| MCPs              | 7 activos / 38 backup      | ✅ Sin drift              |
+| Scripts           | 81 activos + 88 legacy     | ✅ Reorganizados          |
+| HUBs              | 31 scripts raiz            | ✅ Reestructurados (00-30)|
+| Workflows         | 30 (7 categorias)          | ✅ Activos                |
+| Hooks             | 13 (6 fases)               | ✅ Activos                |
+| Rules             | 14 (.mdc)                  | ✅ Definidas              |
+| Directorios skills| 11 areas consolidadas      | ✅ Sin duplicados         |
+| Context Memory    | 19 CTX archivados + index  | ✅ Indexado               |
+| Knowledge Brain   | 14 MD + 9 PDFs             | ✅ INDEX.md activo        |
+| Process Notes     | 29 NP sesiones historicas  | ✅ Secuencial sin clashes |
 
 ### Stack Tecnologico
 
@@ -58,20 +58,20 @@ Git              → Submodules, Hooks, GGA pre-commit
 
 ### 🏁 Estado del Arte (Post-Optimizacion)
 
-| Componente | Cantidad | Estado |
-|-----------|----------|--------|
-| Skills activas | 394 (12 areas funcionales) | ✅ Verificadas |
-| Agentes | 48 source / 82 con SDD y CE | ✅ Sincronizados |
-| MCPs | 7 activos / 38 backup | ✅ Sin drift |
-| Scripts | 81 activos + 88 legacy | ✅ Reorganizados |
-| HUBs | 31 scripts raiz | ✅ Reestructurados (00-30) |
-| Workflows | 30 (7 categorias) | ✅ Activos |
-| Hooks | 13 (6 fases) | ✅ Activos |
-| Rules | 14 (.mdc) | ✅ Definidas |
-| Directorios skills | 11 areas consolidadas | ✅ Sin duplicados |
-| Context Memory | 19 CTX archivados + index | ✅ Indexado |
-| Knowledge Brain | 14 MD + 9 PDFs | ✅ INDEX.md activo |
-| Process Notes | 29 NP sesiones historicas | ✅ Secuencial sin clashes |
+| Componente        | Cantidad                   | Estado                   |
+|------------------|---------------------------|-------------------------|
+| Skills activas    | 394 (12 areas funcionales) | ✅ Verificadas            |
+| Agentes           | 48 source / 82 con SDD y CE| ✅ Sincronizados          |
+| MCPs              | 7 activos / 38 backup      | ✅ Sin drift              |
+| Scripts           | 81 activos + 88 legacy     | ✅ Reorganizados          |
+| HUBs              | 31 scripts raiz            | ✅ Reestructurados (00-30)|
+| Workflows         | 30 (7 categorias)          | ✅ Activos                |
+| Hooks             | 13 (6 fases)               | ✅ Activos                |
+| Rules             | 14 (.mdc)                  | ✅ Definidas              |
+| Directorios skills| 11 areas consolidadas      | ✅ Sin duplicados         |
+| Context Memory    | 19 CTX archivados + index  | ✅ Indexado               |
+| Knowledge Brain   | 14 MD + 9 PDFs             | ✅ INDEX.md activo        |
+| Process Notes     | 29 NP sesiones historicas  | ✅ Secuencial sin clashes |
 
 **Conclusion:** Fases 1 a 6 completadas. Sin errores. Todo verificado. Auto-Improvement corriendo cada 8h.
 
@@ -145,26 +145,26 @@ No hay informacion perdida. Nunca.
 
 #### Alta — Sacarle jugo al motor YA
 
-| # | Que | Por que | Tiempo |
-|---|-----|---------|--------|
-| 1 | Poner Auto-Improvement en modo LIVE (`--apply`) | Hoy solo escanea. En LIVE el solo arregla issues. | 2 min |
-| 2 | Primer ciclo completo en LIVE | Ver que encuentra y no rompe nada | 15 min |
+| #  | Que                                            | Por que                                          | Tiempo  |
+|---|-----------------------------------------------|-------------------------------------------------|--------|
+| 1  | Poner Auto-Improvement en modo LIVE (`--apply`)| Hoy solo escanea. En LIVE el solo arregla issues.| 2 min   |
+| 2  | Primer ciclo completo en LIVE                  | Ver que encuentra y no rompe nada                | 15 min  |
 
 #### Media — Cerrar cabos sueltos
 
-| # | Que | Por que | Tiempo |
-|---|-----|---------|--------|
-| 3 | Encontrar la Parte 3 de Anthropic Engineering | Knowledge_Brain tiene 1 y 2, falta posts 14-20 | 10 min |
-| 4 | Rastrear los 5 PDFs perdidos | README viejo dice 14, existen 9 | 20 min |
-| 5 | Expandir el Executor del Auto-Improvement | Hoy es un stub, podria auto-fixear | 2-4h |
+| #  | Que                                          | Por que                                       | Tiempo  |
+|---|---------------------------------------------|----------------------------------------------|--------|
+| 3  | Encontrar la Parte 3 de Anthropic Engineering| Knowledge_Brain tiene 1 y 2, falta posts 14-20| 10 min  |
+| 4  | Rastrear los 5 PDFs perdidos                 | README viejo dice 14, existen 9               | 20 min  |
+| 5  | Expandir el Executor del Auto-Improvement    | Hoy es un stub, podria auto-fixear            | 2-4h    |
 
 #### Estrategica — Pasar de ordenar a crear
 
-| # | Que | Impacto |
-|---|-----|---------|
-| 6 | Knowledge Brain como skill RAG | Agente que conoce tu sistema |
-| 7 | Evals post-scan automaticos | Feedback loop completo |
-| 8 | Pipeline SDD → CE → Judgment Day → Auto-commit | Desarrollo autonomo real |
+| #  | Que                                           | Impacto                     |
+|---|----------------------------------------------|----------------------------|
+| 6  | Knowledge Brain como skill RAG                | Agente que conoce tu sistema|
+| 7  | Evals post-scan automaticos                   | Feedback loop completo      |
+| 8  | Pipeline SDD → CE → Judgment Day → Auto-commit| Desarrollo autonomo real    |
 
 ---
 
@@ -198,9 +198,9 @@ No hay informacion perdida. Nunca.
 
 ### 3.3 Task Scheduler (Windows)
 
-| Tarea | Frecuencia | Proposito |
-|-------|-----------|-----------|
-| `AutoImprovementPersonalOS` | Cada 8h | Escaneo estructural del OS |
+| Tarea                      | Frecuencia | Proposito                 |
+|---------------------------|-----------|--------------------------|
+| `AutoImprovementPersonalOS`| Cada 8h    | Escaneo estructural del OS|
 
 ---
 
@@ -208,67 +208,67 @@ No hay informacion perdida. Nunca.
 
 ### 4.1 Creacion de Contenidos (20 skills)
 
-| Capacidad | Skills disponibles |
-|-----------|-------------------|
-| Brand Voice | Brand Voice, Content Ideation, Content Transformer |
-| Copywriting | Offer and Bio Writer, Marketing Strategy |
-| YouTube | Script, Title, Thumbnail, Full Video Pipeline |
-| Video | Video Prompt Builder, Visuals Producer, Remotion |
-| Diseno | Premium Image Studio, Carousel Master |
-| SEO | SEO SOTA Master, Marketing Tech |
-| Marketing automation | Marketing Scripts, AI Agents Marketing |
+| Capacidad           | Skills disponibles                                |
+|--------------------|--------------------------------------------------|
+| Brand Voice         | Brand Voice, Content Ideation, Content Transformer|
+| Copywriting         | Offer and Bio Writer, Marketing Strategy          |
+| YouTube             | Script, Title, Thumbnail, Full Video Pipeline     |
+| Video               | Video Prompt Builder, Visuals Producer, Remotion  |
+| Diseno              | Premium Image Studio, Carousel Master             |
+| SEO                 | SEO SOTA Master, Marketing Tech                   |
+| Marketing automation| Marketing Scripts, AI Agents Marketing            |
 
 **Stack:** Brand Voice System → Content Transformer → Multi-channel output (YouTube, Social, Blog, Email)
 
 ### 4.2 Diseno UI/UX (11 skills)
 
-| Capacidad | Skills disponibles |
-|-----------|-------------------|
-| Product Design | Product Design, Taste Skills |
-| Prototyping | Huashu Design (HTML hi-fi), Excalidraw Flowchart |
-| Design Systems | Design Systems (atomic tokens + shadcn/ui) |
-| Theming | Marvel Avengers, Dumbledor Design |
-| UI/UX Research | UI UX Pro Max (searchable DB), Diseno Minimalista |
+| Capacidad     | Skills disponibles                               |
+|--------------|-------------------------------------------------|
+| Product Design| Product Design, Taste Skills                     |
+| Prototyping   | Huashu Design (HTML hi-fi), Excalidraw Flowchart |
+| Design Systems| Design Systems (atomic tokens + shadcn/ui)       |
+| Theming       | Marvel Avengers, Dumbledor Design                |
+| UI/UX Research| UI UX Pro Max (searchable DB), Diseno Minimalista|
 
 **Stack:** Design System → Taste Skill → Huashu HTML prototype → Production
 
 ### 4.3 Ingenieria y Automatizacion (15 skills + SDD)
 
-| Capacidad | Skills disponibles |
-|-----------|-------------------|
-| Compound Engineering | CE Spider, Avengers, metodologia completa |
-| Agent Teams (SDD) | Init, Explore, Propose, Spec, Design, Tasks, Apply, Verify, Archive |
-| Testing | Go Testing, Playwright, Pytest |
-| DevOps | DevOps, Performance, System Master |
-| Skill Creation | Skill Creator, Skill Template, Anthropic Harness |
-| Calidad | Judgment Day, Skill Auditor, Skill Improver |
+| Capacidad           | Skills disponibles                                                 |
+|--------------------|-------------------------------------------------------------------|
+| Compound Engineering| CE Spider, Avengers, metodologia completa                          |
+| Agent Teams (SDD)   | Init, Explore, Propose, Spec, Design, Tasks, Apply, Verify, Archive|
+| Testing             | Go Testing, Playwright, Pytest                                     |
+| DevOps              | DevOps, Performance, System Master                                 |
+| Skill Creation      | Skill Creator, Skill Template, Anthropic Harness                   |
+| Calidad             | Judgment Day, Skill Auditor, Skill Improver                        |
 
 **Stack:** SDD Pipeline → CE Integration → Judgment Day verification → Compound
 
 ### 4.4 Personal OS (7 skills)
 
-| Capacidad | Skills disponibles |
-|-----------|-------------------|
-| Core OS | System Guardian, Stack base |
-| Memoria | Engram Memory Protocol |
-| Agentes | Agent configuration, MCP management |
-| Auto-mejora | Auto-Improvement engine |
-| Auditoria | SOTA Audit, Elite Agent Auditor, OS Integrity |
+| Capacidad  | Skills disponibles                           |
+|-----------|---------------------------------------------|
+| Core OS    | System Guardian, Stack base                  |
+| Memoria    | Engram Memory Protocol                       |
+| Agentes    | Agent configuration, MCP management          |
+| Auto-mejora| Auto-Improvement engine                      |
+| Auditoria  | SOTA Audit, Elite Agent Auditor, OS Integrity|
 
 ### 4.5 Video y Media (3 skills)
 
-| Capacidad | Skills disponibles |
-|-----------|-------------------|
-| Video production | Remotion Video Creator, Remotion Best Practices |
-| Visuals | Video Visuals Producer |
-| (Por venir) | Edicion, captura, GIF/MP4 export |
+| Capacidad       | Skills disponibles                             |
+|----------------|-----------------------------------------------|
+| Video production| Remotion Video Creator, Remotion Best Practices|
+| Visuals         | Video Visuals Producer                         |
+| (Por venir)     | Edicion, captura, GIF/MP4 export               |
 
 ### 4.6 Web e Invictus (2 areas)
 
-| Capacidad | Skills disponibles |
-|-----------|-------------------|
-| Invictus Web | 8 skills de desarrollo web |
-| Claude Ads | 3 skills de publicidad |
+| Capacidad   | Skills disponibles        |
+|------------|--------------------------|
+| Invictus Web| 8 skills de desarrollo web|
+| Claude Ads  | 3 skills de publicidad    |
 
 ---
 
@@ -276,27 +276,27 @@ No hay informacion perdida. Nunca.
 
 ### 5.1 Agentes Disponibles
 
-| Agente | Proposito | Integracion |
-|--------|-----------|-------------|
-| **Gentle Orchestrator** | Orquestador SDD | OpenCode |
-| **CE Agents** (spider, avengers) | Compound Engineering | OpenCode, Claude Code |
-| **SDD Agents** (12) | Init → Apply → Verify → Archive | OpenCode, .agent |
-| **System Guardian** | Monitoreo OS | Claude Code |
-| **GGA** | Pre-commit validation | Git hook |
-| **Pi** | Agente alternativo | OpenAI-compatible API |
+| Agente                          | Proposito                      | Integracion          |
+|--------------------------------|-------------------------------|---------------------|
+| **Gentle Orchestrator**         | Orquestador SDD                | OpenCode             |
+| **CE Agents** (spider, avengers)| Compound Engineering           | OpenCode, Claude Code|
+| **SDD Agents** (12)             | Init → Apply → Verify → Archive| OpenCode, .agent     |
+| **System Guardian**             | Monitoreo OS                   | Claude Code          |
+| **GGA**                         | Pre-commit validation          | Git hook             |
+| **Pi**                          | Agente alternativo             | OpenAI-compatible API|
 
 ### 5.2 MCPs Configurados
 
-| MCP | Proposito |
-|-----|-----------|
-| **Engram** | Memoria persistente entre sesiones |
-| **Eagle** | Asset management visual |
-| **Obsidian** | (via eagle-mcp redirect) |
-| **Playwright** | E2E testing |
-| **Atlassian** | Jira/Confluence integracion |
-| **Context7** | Documentacion de librerias |
-| **Pencil** | Diseno en Figma |
-| **Web search/fetch** | Investigacion |
+| MCP                 | Proposito                         |
+|--------------------|----------------------------------|
+| **Engram**          | Memoria persistente entre sesiones|
+| **Eagle**           | Asset management visual           |
+| **Obsidian**        | (via eagle-mcp redirect)          |
+| **Playwright**      | E2E testing                       |
+| **Atlassian**       | Jira/Confluence integracion       |
+| **Context7**        | Documentacion de librerias        |
+| **Pencil**          | Diseno en Figma                   |
+| **Web search/fetch**| Investigacion                     |
 
 ### 5.3 Compound Engineering v3.8.4
 
@@ -396,38 +396,38 @@ El sistema entero esta indexado. No hay informacion perdida.
 
 ### 🔴 Prioridad Inmediata (Semana 1)
 
-| Tarea | Esfuerzo | Impacto |
-|-------|----------|---------|
-| Activar Auto-Improvement en modo LIVE (`--apply`) | 2 min | 🔥 Alto — el sistema se auto-corrige |
-| Primer ciclo LIVE + validacion | 15 min | 🔥 Alto — verificar que no rompe nada |
-| Encontrar Parte 3 Anthropic Engineering (PDF) | 10 min | Medio — cerrar gaps en Knowledge Brain |
+| Tarea                                            | Esfuerzo  | Impacto                               |
+|-------------------------------------------------|----------|--------------------------------------|
+| Activar Auto-Improvement en modo LIVE (`--apply`)| 2 min     | 🔥 Alto — el sistema se auto-corrige   |
+| Primer ciclo LIVE + validacion                   | 15 min    | 🔥 Alto — verificar que no rompe nada  |
+| Encontrar Parte 3 Anthropic Engineering (PDF)    | 10 min    | Medio — cerrar gaps en Knowledge Brain|
 
 ### 🟡 Prioridad Media (Semana 2)
 
-| Tarea | Esfuerzo | Impacto |
-|-------|----------|---------|
-| Rastrear 5 PDFs perdidos de Knowledge_Brain | 20 min | Medio — completitud de docs |
-| Expandir el Executor del Auto-Improvement | 2-4h | 🔥 Alto — auto-fix real |
-| Crear System Eval post-scan automatico | 1h | Medio — feedback loop completo |
-| Generar un inventario ejecutable del OS | 30 min | Medio — saber exactamente que hay |
+| Tarea                                      | Esfuerzo  | Impacto                          |
+|-------------------------------------------|----------|---------------------------------|
+| Rastrear 5 PDFs perdidos de Knowledge_Brain| 20 min    | Medio — completitud de docs      |
+| Expandir el Executor del Auto-Improvement  | 2-4h      | 🔥 Alto — auto-fix real           |
+| Crear System Eval post-scan automatico     | 1h        | Medio — feedback loop completo   |
+| Generar un inventario ejecutable del OS    | 30 min    | Medio — saber exactamente que hay|
 
 ### 🟢 Prioridad Larga (Mes 1-2)
 
-| Tarea | Esfuerzo | Impacto |
-|-------|----------|---------|
-| RAG sobre Knowledge Brain (consulta al OS) | 4-8h | 🔥 Alto — agente que conoce el sistema |
-| Dashboard de salud del OS en tiempo real | 4-6h | Alto — visibilidad del estado |
-| Automatizar Evals post-Auto-Improvement | 2-3h | Alto — medir mejora continua |
-| Pipeline completo SDD → CE → Judgment Day → Auto-commit | 8h+ | 🔥 Alto — desarrollo autonomo real |
-| Portal web del PersonalOS (dashboard publico) | 16h+ | Medio — showcase |
+| Tarea                                                  | Esfuerzo  | Impacto                              |
+|-------------------------------------------------------|----------|-------------------------------------|
+| RAG sobre Knowledge Brain (consulta al OS)             | 4-8h      | 🔥 Alto — agente que conoce el sistema|
+| Dashboard de salud del OS en tiempo real               | 4-6h      | Alto — visibilidad del estado        |
+| Automatizar Evals post-Auto-Improvement                | 2-3h      | Alto — medir mejora continua         |
+| Pipeline completo SDD → CE → Judgment Day → Auto-commit| 8h+       | 🔥 Alto — desarrollo autonomo real    |
+| Portal web del PersonalOS (dashboard publico)          | 16h+      | Medio — showcase                     |
 
 ### 🟣 Vision (Mes 3+)
 
-| Tarea | Esfuerzo | Impacto |
-|-------|----------|---------|
-| Agente autonomo que recibe tareas y las ejecuta de principio a fin | 40h+ | 🔥🔥 Transformador |
-| Sistema multi-agente compitiendo por recursos | 60h+ | Experimental |
-| Auto-evolucion: el OS se reescribe a si mismo | 100h+ | 🔥🔥🔥 Vision final |
+| Tarea                                                             | Esfuerzo  | Impacto         |
+|------------------------------------------------------------------|----------|----------------|
+| Agente autonomo que recibe tareas y las ejecuta de principio a fin| 40h+      | 🔥🔥 Transformador|
+| Sistema multi-agente compitiendo por recursos                     | 60h+      | Experimental    |
+| Auto-evolucion: el OS se reescribe a si mismo                     | 100h+     | 🔥🔥🔥 Vision final|
 
 ---
 

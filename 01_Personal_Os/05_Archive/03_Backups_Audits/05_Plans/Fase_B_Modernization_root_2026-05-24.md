@@ -7,13 +7,13 @@
 
 ## Resumen Ejecutivo
 
-| Proyecto | Risk | Action |
-|---|---|---|
-| `.opencode` | LOW | UPGRADE patch/minor |
-| `05_OBAND` | LOW | UPGRADE patch/minor, defer lucide-react major |
-| `06_OIM_Original` | MEDIUM | DEFER majors, upgrade only patch/minor |
-| `08_Elite_Portfolio` | HIGH | MIGRATION PROJECT needed |
-| `04_Macano_Rest/APP/frontend` | MEDIUM | INVESTIGATE npm install first |
+| Proyecto                     | Risk  | Action                                       |
+|-----------------------------|------|---------------------------------------------|
+| `.opencode`                  | LOW   | UPGRADE patch/minor                          |
+| `05_OBAND`                   | LOW   | UPGRADE patch/minor, defer lucide-react major|
+| `06_OIM_Original`            | MEDIUM| DEFER majors, upgrade only patch/minor       |
+| `08_Elite_Portfolio`         | HIGH  | MIGRATION PROJECT needed                     |
+| `04_Macano_Rest/APP/frontend`| MEDIUM| INVESTIGATE npm install first                |
 
 **OIM_Website:** Path no existe en `03_Resultado/09b_World_OIM/02_OIM_Website/` — verificar ubicación real.
 
@@ -102,14 +102,14 @@
 
 ## Acciones Recomendadas
 
-| # | Proyecto | Accion | Prioridad |
-|---|---|---|---|
-| 1 | `.opencode` | `npm update --save` | P1 |
-| 2 | `05_OBAND` | `npm update --save` (patch/minor) | P1 |
-| 3 | `05_OBAND` | Branch para `lucide-react` major | P2 |
-| 4 | `06_OIM_Original` | `npm update --save` (patch/minor) | P1 |
-| 5 | `08_Elite_Portfolio` | SDD para migracion | P2 |
-| 6 | `04_Macano_Rest/APP/frontend` | `npm install` + re-check | P1 |
+| #  | Proyecto                     | Accion                           | Prioridad|
+|---|-----------------------------|---------------------------------|---------|
+| 1  | `.opencode`                  | `npm update --save`              | P1       |
+| 2  | `05_OBAND`                   | `npm update --save` (patch/minor)| P1       |
+| 3  | `05_OBAND`                   | Branch para `lucide-react` major | P2       |
+| 4  | `06_OIM_Original`            | `npm update --save` (patch/minor)| P1       |
+| 5  | `08_Elite_Portfolio`         | SDD para migracion               | P2       |
+| 6  | `04_Macano_Rest/APP/frontend`| `npm install` + re-check         | P1       |
 
 ---
 

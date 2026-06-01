@@ -333,12 +333,12 @@ Before delivering UI code, verify these items:
 
 ### What to persist between sessions
 
-| Dato | Cómo se persiste | Cuándo restaurar |
-|------|-----------------|-----------------|
-| **Design system generado** | `--persist` crea `design-system/MASTER.md` + `design-system/pages/*.md` | Al retomar un proyecto |
-| **Último stack usado** | Variable de entorno o config local | Si el usuario no especifica stack |
-| **Preferencias de formato** (ASCII vs Markdown) | Preferencia de sesión vía `-f` flag | Cada nueva búsqueda |
-| **Proyectos activos** | Sistema de archivos en `design-system/` | Al listar proyectos con `--list-projects` |
+| Dato                                           | Cómo se persiste                                                       | Cuándo restaurar                         |
+|-----------------------------------------------|-----------------------------------------------------------------------|-----------------------------------------|
+| **Design system generado**                     | `--persist` crea `design-system/MASTER.md` + `design-system/pages/*.md`| Al retomar un proyecto                   |
+| **Último stack usado**                         | Variable de entorno o config local                                     | Si el usuario no especifica stack        |
+| **Preferencias de formato** (ASCII vs Markdown)| Preferencia de sesión vía `-f` flag                                    | Cada nueva búsqueda                      |
+| **Proyectos activos**                          | Sistema de archivos en `design-system/`                                | Al listar proyectos con `--list-projects`|
 
 ### Reglas de persistencia
 - **NO** guardar resultados de búsqueda individuales — son transitorios

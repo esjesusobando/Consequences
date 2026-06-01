@@ -23,15 +23,15 @@ La pareja no es un destino ni una meta — es un **espejo**. No entramos en rela
 
 ### 1. Relación de Ego vs. Relación Consciente
 
-| Ego (Pareja Tradicional) | Consciente (Co-creación) |
-|---|---|
-| Nace desde la carencia | Nace desde la plenitud |
-| "Te necesito" | "Te elijo" |
-| Expectativas y proyecciones | Aceptación radical |
-| Dependencia emocional | Interdependencia |vd
-| Miedo a la pérdida | Confianza en el proceso |
-| Control y posesión | Libertad y confianza |
-| El otro es responsable de mi felicidad | Cada uno es responsable de sí mismo |
+| Ego (Pareja Tradicional)              | Consciente (Co-creación)           |
+|--------------------------------------|-----------------------------------|
+| Nace desde la carencia                | Nace desde la plenitud             |
+| "Te necesito"                         | "Te elijo"                         |
+| Expectativas y proyecciones           | Aceptación radical                 |
+| Dependencia emocional                 | Interdependencia                   | vd|
+| Miedo a la pérdida                    | Confianza en el proceso            |
+| Control y posesión                    | Libertad y confianza               |
+| El otro es responsable de mi felicidad| Cada uno es responsable de sí mismo|
 
 ### 2. Los Tres Pilares de la Pareja Consciente
 
@@ -66,13 +66,13 @@ FASE 4: EL MUNDO (propósito compartido hacia afuera)
 
 ## 🛠 Practical Tools
 
-| Herramienta | Descripción |
-|---|---|
-| **Diario emocional** | Escribir lo que sientes antes de hablarlo con tu pareja |
-| **Pausa consciente** | 10 segundos de respiración antes de responder en una discusión |
-| **Check-in diario** | 5 minutos al día: ¿cómo estás? ¿qué necesitas? sin juzgar |
-| **Cita de silencio** | Estar juntos sin hablar, sintiendo la presencia del otro |
-| **Cartas de sombra** | Escribir lo que no te atreves a decir, luego decidir si compartirlo |
+| Herramienta         | Descripción                                                        |
+|--------------------|-------------------------------------------------------------------|
+| **Diario emocional**| Escribir lo que sientes antes de hablarlo con tu pareja            |
+| **Pausa consciente**| 10 segundos de respiración antes de responder en una discusión     |
+| **Check-in diario** | 5 minutos al día: ¿cómo estás? ¿qué necesitas? sin juzgar          |
+| **Cita de silencio**| Estar juntos sin hablar, sintiendo la presencia del otro           |
+| **Cartas de sombra**| Escribir lo que no te atreves a decir, luego decidir si compartirlo|
 
 ---
 

@@ -146,14 +146,14 @@ Hard rules (never violate these):
 
 ## 💾 State Persistence
 
-| State                    | Almacenamiento                        | Persistencia              |
+| State                     | Almacenamiento                         | Persistencia               |
 |--------------------------|---------------------------------------|---------------------------|
-| Contexto de auditoría    | Memoria de subagentes (fork)          | Sesión (volátil)          |
-| Brand DNA profile        | `brand-profile.json` (local)          | Persistente (archivo)     |
-| Campaign brief           | `campaign-brief.md` (local)           | Persistente (archivo)     |
-| Ad assets generados      | `ad-assets/` (local)                  | Persistente (carpeta)     |
-| Auditorías completas     | Reporte al usuario + PDF              | Hasta descarga            |
-| Scores por plataforma    | Memoria de sesión                     | Volátil                   |
+| Contexto de auditoría     | Memoria de subagentes (fork)           | Sesión (volátil)           |
+| Brand DNA profile         | `brand-profile.json` (local)           | Persistente (archivo)      |
+| Campaign brief            | `campaign-brief.md` (local)            | Persistente (archivo)      |
+| Ad assets generados       | `ad-assets/` (local)                   | Persistente (carpeta)      |
+| Auditorías completas      | Reporte al usuario + PDF               | Hasta descarga             |
+| Scores por plataforma     | Memoria de sesión                      | Volátil                    |
 
 Los archivos generados (`brand-profile.json`, `campaign-brief.md`, `ad-assets/`)
 persisten en el directorio de trabajo. Los scores y auditorías no persisten

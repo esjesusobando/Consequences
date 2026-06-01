@@ -151,11 +151,11 @@ Works with:
 
 ## 💾 State Persistence
 
-| Qué | Dónde | Notas |
-|-----|-------|-------|
-| Contenido extraído | Efímero — solo en la conversación actual | No persiste entre sesiones |
-| Cache de Firecrawl/WebFetch | Del lado del proveedor (no controlado) | Sin acceso local al cache |
-| URL de origen | En la metadata del output | Referencia, no contenido |
+| Qué                        | Dónde                                   | Notas                     |
+|---------------------------|----------------------------------------|--------------------------|
+| Contenido extraído         | Efímero — solo en la conversación actual| No persiste entre sesiones|
+| Cache de Firecrawl/WebFetch| Del lado del proveedor (no controlado)  | Sin acceso local al cache |
+| URL de origen              | En la metadata del output               | Referencia, no contenido  |
 
 Este skill es intencionalmente **stateless** — no guarda nada. Es un pipeline de extracción puro: URL → contenido limpio → output en chat. Para persistencia, usa los skills de integración (compound-knowledge, learning-url-to-knowledge).
 

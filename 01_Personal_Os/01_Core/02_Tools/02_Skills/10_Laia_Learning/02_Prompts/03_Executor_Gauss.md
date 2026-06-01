@@ -34,15 +34,15 @@ definidas en el contexto operativo."
 
 ## Propiedades Mínimas de Tarea
 
-| Propiedad     | Tipo      | Fuente                         |
-|--------------|-----------|--------------------------------|
-| Título        | Texto     | Del cronograma                 |
-| Fase          | Select    | Discovery/Design/Build/QA/Deliver |
-| Responsable   | Persona   | Del brief + respuestas usuario |
-| Semana        | Número    | Cálculo desde kickoff          |
-| Dependencias  | Relation  | Tareas anteriores en el flujo  |
-| Estado        | Select    | To Do / In Progress / Done     |
-| Bloque        | Select    | UI / Build / QA / Content      |
+| Propiedad     | Tipo       | Fuente                           |
+|--------------|-----------|---------------------------------|
+| Título        | Texto      | Del cronograma                   |
+| Fase          | Select     | Discovery/Design/Build/QA/Deliver|
+| Responsable   | Persona    | Del brief + respuestas usuario   |
+| Semana        | Número     | Cálculo desde kickoff            |
+| Dependencias  | Relation   | Tareas anteriores en el flujo    |
+| Estado        | Select     | To Do / In Progress / Done       |
+| Bloque        | Select     | UI / Build / QA / Content        |
 
 ## ⚠️ Gotchas
 

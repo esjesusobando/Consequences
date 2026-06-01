@@ -148,13 +148,13 @@ Estructurar plantillas de contenido:
 
 El approach de Lorena se conecta directamente con nuestra metodología de diseño premium:
 
-| Concepto Marketing IA | Concepto $10K Websites |
-|----------------------|----------------------|
-| Contexto de marca → output consistente | Design system → UI consistente |
-| Agentes especializados | Componentes especializados |
-| Flujos encadenados | User flows / journeys |
-| MCPs como integraciones | APIs como integraciones |
-| .md como configuración | Config como código |
+| Concepto Marketing IA                 | Concepto $10K Websites        |
+|--------------------------------------|------------------------------|
+| Contexto de marca → output consistente| Design system → UI consistente|
+| Agentes especializados                | Componentes especializados    |
+| Flujos encadenados                    | User flows / journeys         |
+| MCPs como integraciones               | APIs como integraciones       |
+| .md como configuración                | Config como código            |
 
 Ambos sistemas comparten la filosofía de que **la calidad del input determina la calidad del output**. En diseño: mejor contexto de marca → mejor UI. En marketing: mejor contexto de negocio → mejor contenido.
 
@@ -162,13 +162,13 @@ Ambos sistemas comparten la filosofía de que **la calidad del input determina l
 
 ## Anti-patrones Identificados
 
-| Anti-patrón | Por qué falla | Alternativa |
-|-------------|---------------|-------------|
-| Un solo agente para todo | El modelo se confunde entre roles y pierde especialización | Separar en estratega/creador/analista |
-| Sin contexto de marca | Output genérico que no diferencia tu marca | Invertir tiempo en documentar contexto antes de crear agentes |
-| Flujo manual agente por agente | Pérdida de tiempo, errores de copiado | Automatizar el encadenamiento con comandos .md |
-| MCPs sin probar | La automatización falla silenciosamente | Probar cada MCP individualmente antes de integrarlo en flujos |
-| Archivos sin estructura | Los agentes no encuentran lo que necesitan | Mantener la estructura de carpetas estricta |
+| Anti-patrón                   | Por qué falla                                             | Alternativa                                                  |
+|------------------------------|----------------------------------------------------------|-------------------------------------------------------------|
+| Un solo agente para todo      | El modelo se confunde entre roles y pierde especialización| Separar en estratega/creador/analista                        |
+| Sin contexto de marca         | Output genérico que no diferencia tu marca                | Invertir tiempo en documentar contexto antes de crear agentes|
+| Flujo manual agente por agente| Pérdida de tiempo, errores de copiado                     | Automatizar el encadenamiento con comandos .md               |
+| MCPs sin probar               | La automatización falla silenciosamente                   | Probar cada MCP individualmente antes de integrarlo en flujos|
+| Archivos sin estructura       | Los agentes no encuentran lo que necesitan                | Mantener la estructura de carpetas estricta                  |
 
 ---
 

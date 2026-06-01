@@ -127,14 +127,14 @@ PATCHING:    ⚠️  Mixed — surgical fixes are fast, complex rewrites are slo
 
 This project's **Skill Auditor** (`01_Personal_Os/01_Core/02_Tools/02_Skills/00_Skill_Auditor/SKILL.md`) already audits skills against Anthropic SOTA v5.1 standards. The find-and-fix loop maps directly:
 
-| Anthropic Step | Skill Auditor Equivalent |
-|----------------|------------------------|
-| 1. Threat Model | Audit criteria (02_References/audit-criteria.md + anthropic-standards.md) |
-| 2. Sandbox | The skills directory IS the sandbox — read-only audit environment |
-| 3. Discovery | `audit-skills.py` — parallel analysis of all skills in a directory |
-| 4. Verification | Cross-validate findings between `validate-essence.py` and audit report |
-| 5. Triage | `audit-loop.py` — deduplicate findings by root cause (missing frontmatter, missing gotchas, etc.) |
-| 6. Patching | `fix-missing.py` — auto-fix with verification before committing |
+| Anthropic Step  | Skill Auditor Equivalent                                                                         |
+|----------------|-------------------------------------------------------------------------------------------------|
+| 1. Threat Model | Audit criteria (02_References/audit-criteria.md + anthropic-standards.md)                        |
+| 2. Sandbox      | The skills directory IS the sandbox — read-only audit environment                                |
+| 3. Discovery    | `audit-skills.py` — parallel analysis of all skills in a directory                               |
+| 4. Verification | Cross-validate findings between `validate-essence.py` and audit report                           |
+| 5. Triage       | `audit-loop.py` — deduplicate findings by root cause (missing frontmatter, missing gotchas, etc.)|
+| 6. Patching     | `fix-missing.py` — auto-fix with verification before committing                                  |
 
 **Integration opportunity:** The Skill Auditor can adopt the full 6-step protocol, adding adversarial verification (an agent that tries to prove audit findings wrong) and confidence scoring like Claude Security does.
 

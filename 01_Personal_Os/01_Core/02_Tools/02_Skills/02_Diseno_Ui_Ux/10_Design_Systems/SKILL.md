@@ -734,13 +734,13 @@ src/
 
 ### What to persist between sessions
 
-| Dato | Cómo se persiste | Cuándo restaurar |
-|------|-----------------|-----------------|
-| **Design tokens activos** | `design-tokens.json` o `tokens/` directorio en el proyecto | Al retomar un proyecto de design system |
-| **Configuración de shadcn/ui** | `components.json` + `tailwind.config.js` | Cada sesión — verificar que existe y está actualizado |
-| **Storybook setup** | `.storybook/` config directory | Si se agregan nuevos addons o historias |
-| **Multi-brand themes definidos** | Archivo CSS con bloques `[data-theme="..." ]` | Al agregar una nueva marca o modificar existente |
-| **Token pipeline** | `token-transform.config.js` + Style Dictionary config | Al generar nuevos tokens desde Figma |
+| Dato                            | Cómo se persiste                                          | Cuándo restaurar                                     |
+|--------------------------------|----------------------------------------------------------|-----------------------------------------------------|
+| **Design tokens activos**       | `design-tokens.json` o `tokens/` directorio en el proyecto| Al retomar un proyecto de design system              |
+| **Configuración de shadcn/ui**  | `components.json` + `tailwind.config.js`                  | Cada sesión — verificar que existe y está actualizado|
+| **Storybook setup**             | `.storybook/` config directory                            | Si se agregan nuevos addons o historias              |
+| **Multi-brand themes definidos**| Archivo CSS con bloques `[data-theme="..." ]`             | Al agregar una nueva marca o modificar existente     |
+| **Token pipeline**              | `token-transform.config.js` + Style Dictionary config     | Al generar nuevos tokens desde Figma                 |
 
 ### Reglas de persistencia
 - **NO** guardar componentes compilados ni build artifacts

@@ -13,16 +13,16 @@
 
 ## Diagnostico_Actual
 
-| Area | Estado | Prioridad |
-|------|--------|-----------|
-| 02_Diseno_Ui_Ux | 17 dirs -> ~7 skills reales (10 duplicados numerados) | Alta |
-| 06_Tools | 30 dirs -> ~10 skills reales (20 legacy numerados) | Alta |
-| 00_Context_Memory | 47 archivos, 21 archive, 6 jsons, naming inconsistente | Media |
-| 02_Knowledge_Brain | 25 archivos planos sin indice de busqueda | Media |
-| .agent mirror | 13 skills extra (Agent_Teams_Lite) sin sync | Media |
-| 08_Evals | 1 solo eval real, framework vacio | Baja |
-| 01_Auto_Improvement | **Existe en 04_Operations/ con 48 archivos** — engine completo pero sin ejecucion periodica | Baja |
-| Archive | Bien organizado (00_Skills_Legacy con 22 dirs) | Ok |
+| Area               | Estado                                                                                     | Prioridad  |
+|-------------------|-------------------------------------------------------------------------------------------|-----------|
+| 02_Diseno_Ui_Ux    | 17 dirs -> ~7 skills reales (10 duplicados numerados)                                      | Alta       |
+| 06_Tools           | 30 dirs -> ~10 skills reales (20 legacy numerados)                                         | Alta       |
+| 00_Context_Memory  | 47 archivos, 21 archive, 6 jsons, naming inconsistente                                     | Media      |
+| 02_Knowledge_Brain | 25 archivos planos sin indice de busqueda                                                  | Media      |
+| .agent mirror      | 13 skills extra (Agent_Teams_Lite) sin sync                                                | Media      |
+| 08_Evals           | 1 solo eval real, framework vacio                                                          | Baja       |
+| 01_Auto_Improvement| **Existe en 04_Operations/ con 48 archivos** — engine completo pero sin ejecucion periodica| Baja       |
+| Archive            | Bien organizado (00_Skills_Legacy con 22 dirs)                                             | Ok         |
 
 > **Correccion:** Auto_Improvement NO esta en 02_Tools/09. Vive en `04_Operations/01_Auto_Improvement/` con 6 modulos (Engine, Rules, Metrics, Triggers, Backups, Utils) + 48 archivos. No hay que crearlo, hay que reactivarlo.
 
@@ -39,25 +39,25 @@
 
 ### Mapeo_Actual -> Target
 
-| # | Directorio_Actual | Contenido_Real | Accion |
-|---|-------------------|----------------|--------|
-| 01 | 01_Product_Design | Product Design skill | Conservar |
-| 02 | 02_Taste_Skills | Taste/Design Taste | Conservar |
-| 03 | 03_Diseno_Minimalista | Minimalist Design | Conservar |
-| 04 | 04_Directrices_Marca | Brand Guidelines | Conservar |
-| 05 | 05_Excalidraw_Flowchart | Excalidraw/Diagramas | Conservar |
-| 06 | 06_Design_Sota | Design SOTA | Conservar |
-| 07 | 07_Marvel_Avengers | Marvel/UI Theme | Conservar (unico) |
-| 07 | 07_Ui_Ux_Pro_Max | UI/UX Pro Max A | Merge con 08_Ui_Ux_Pro_Max |
-| 08 | 08_Huashu_Design | Huashu Design A | Merge con 09_Huashu_Design |
-| 08 | 08_Ui_Ux_Pro_Max | UI/UX Pro Max B | Merge con 07_Ui_Ux_Pro_Max |
-| 09 | 09_Dumbledor_Design | Dumbledor Design A | Merge con 11_Dumbledor_Design |
-| 09 | 09_Huashu_Design | Huashu Design B | Merge con 08_Huashu_Design |
-| 10 | 10_Design_Systems | Design Systems A | Merge con 11/12/13 |
-| 11 | 11_Design_Systems | Design Systems B | Merge con 10/12/13 |
-| 11 | 11_Dumbledor_Design | Dumbledor Design B | Merge con 09_Dumbledor_Design |
-| 12 | 12_Design_Systems | Design Systems C | Merge con 10/11/13 |
-| 13 | 13_Design_Systems | Design Systems D | Merge con 10/11/12 |
+| #  | Directorio_Actual      | Contenido_Real      | Accion                       |
+|---|-----------------------|--------------------|-----------------------------|
+| 01 | 01_Product_Design      | Product Design skill| Conservar                    |
+| 02 | 02_Taste_Skills        | Taste/Design Taste  | Conservar                    |
+| 03 | 03_Diseno_Minimalista  | Minimalist Design   | Conservar                    |
+| 04 | 04_Directrices_Marca   | Brand Guidelines    | Conservar                    |
+| 05 | 05_Excalidraw_Flowchart| Excalidraw/Diagramas| Conservar                    |
+| 06 | 06_Design_Sota         | Design SOTA         | Conservar                    |
+| 07 | 07_Marvel_Avengers     | Marvel/UI Theme     | Conservar (unico)            |
+| 07 | 07_Ui_Ux_Pro_Max       | UI/UX Pro Max A     | Merge con 08_Ui_Ux_Pro_Max   |
+| 08 | 08_Huashu_Design       | Huashu Design A     | Merge con 09_Huashu_Design   |
+| 08 | 08_Ui_Ux_Pro_Max       | UI/UX Pro Max B     | Merge con 07_Ui_Ux_Pro_Max   |
+| 09 | 09_Dumbledor_Design    | Dumbledor Design A  | Merge con 11_Dumbledor_Design|
+| 09 | 09_Huashu_Design       | Huashu Design B     | Merge con 08_Huashu_Design   |
+| 10 | 10_Design_Systems      | Design Systems A    | Merge con 11/12/13           |
+| 11 | 11_Design_Systems      | Design Systems B    | Merge con 10/12/13           |
+| 11 | 11_Dumbledor_Design    | Dumbledor Design B  | Merge con 09_Dumbledor_Design|
+| 12 | 12_Design_Systems      | Design Systems C    | Merge con 10/11/13           |
+| 13 | 13_Design_Systems      | Design Systems D    | Merge con 10/11/12           |
 
 ### Arbol_Target (11 directorios)
 
@@ -106,23 +106,23 @@ mv 02_Diseno_Ui_Ux/08_Ui_Ux_Pro_Max 05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/
 
 ### Mapeo_Actual -> Target
 
-| Dirs_Actuales | Skill_Real | Accion |
-|---------------|------------|--------|
-| 01_Skill_Creator | Skill Creator | Conservar |
-| 02_Skill_Template | Skill Template | Conservar |
-| 03_Anthropic_Harness | Anthropic Harness | Conservar |
-| 04_DevOps | DevOps | Conservar |
-| 05_Vibe_Coding | Vibe Coding | Conservar |
-| 06_Testing | Testing | Conservar |
-| 07_Performance | Performance | Conservar |
-| 08_Skill_Creator_Invictus, 11_Skill_Creator_Invictus | Skill Creator Invictus | Merge 08+11 |
-| 09_Accessibility, 12_Accessibility | Accessibility | Merge 09+12 |
-| 10_Octopus | Octopus | Conservar (unico) |
-| 13_Doc_Processing, 15_Doc_Processing, 16_Doc_Processing | Doc Processing | Merge 13+15+16 |
-| 14_Qmd, 16_Qmd, 17_Qmd, 18_Qmd, 19_Qmd, 20_Qmd | Qmd | Merge 14+16+17+18+19+20 |
-| 17_System_Master, 19_System_Master, 21_System_Master, 22_System_Master | System Master | Merge 17+19+21+22 |
-| 19_Silicon_Valley_Data_Analyst, 21_Silicon_Valley_Data_Analyst, 22_Silicon_Valley_Data_Analyst, 23_Silicon_Valley_Data_Analyst | Silicon Valley Data Analyst | Merge 19+21+22+23 |
-| 23_Ai_News_Weekly_Report | AI News Weekly Report | Conservar (unico) |
+| Dirs_Actuales                                                                                                                 | Skill_Real                 | Accion                 |
+|------------------------------------------------------------------------------------------------------------------------------|---------------------------|-----------------------|
+| 01_Skill_Creator                                                                                                              | Skill Creator              | Conservar              |
+| 02_Skill_Template                                                                                                             | Skill Template             | Conservar              |
+| 03_Anthropic_Harness                                                                                                          | Anthropic Harness          | Conservar              |
+| 04_DevOps                                                                                                                     | DevOps                     | Conservar              |
+| 05_Vibe_Coding                                                                                                                | Vibe Coding                | Conservar              |
+| 06_Testing                                                                                                                    | Testing                    | Conservar              |
+| 07_Performance                                                                                                                | Performance                | Conservar              |
+| 08_Skill_Creator_Invictus, 11_Skill_Creator_Invictus                                                                          | Skill Creator Invictus     | Merge 08+11            |
+| 09_Accessibility, 12_Accessibility                                                                                            | Accessibility              | Merge 09+12            |
+| 10_Octopus                                                                                                                    | Octopus                    | Conservar (unico)      |
+| 13_Doc_Processing, 15_Doc_Processing, 16_Doc_Processing                                                                       | Doc Processing             | Merge 13+15+16         |
+| 14_Qmd, 16_Qmd, 17_Qmd, 18_Qmd, 19_Qmd, 20_Qmd                                                                                | Qmd                        | Merge 14+16+17+18+19+20|
+| 17_System_Master, 19_System_Master, 21_System_Master, 22_System_Master                                                        | System Master              | Merge 17+19+21+22      |
+| 19_Silicon_Valley_Data_Analyst, 21_Silicon_Valley_Data_Analyst, 22_Silicon_Valley_Data_Analyst, 23_Silicon_Valley_Data_Analyst| Silicon Valley Data Analyst| Merge 19+21+22+23      |
+| 23_Ai_News_Weekly_Report                                                                                                      | AI News Weekly Report      | Conservar (unico)      |
 
 ### Arbol_Target (15 directorios)
 
@@ -166,13 +166,13 @@ mv 02_Diseno_Ui_Ux/08_Ui_Ux_Pro_Max 05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/
 
 ### Acciones
 
-| # | Archivo | Accion |
-|---|---------|--------|
-| 1 | `_archive/` completo (21 archivos) | Conservar pero indexar en README |
-| 2 | `_jsons/` (6 archivos) | Comprimir a 1 archivo o archivar fuera del repo |
-| 3 | Archivos duplicados de sesion | Mergear contenidos, archivar versiones viejas |
-| 4 | `README.md` | Actualizar con indice de todos los archivos |
-| 5 | `session_summary.txt` | Convertir a markdown y numerar |
+| #  | Archivo                           | Accion                                         |
+|---|----------------------------------|-----------------------------------------------|
+| 1  | `_archive/` completo (21 archivos)| Conservar pero indexar en README               |
+| 2  | `_jsons/` (6 archivos)            | Comprimir a 1 archivo o archivar fuera del repo|
+| 3  | Archivos duplicados de sesion     | Mergear contenidos, archivar versiones viejas  |
+| 4  | `README.md`                       | Actualizar con indice de todos los archivos    |
+| 5  | `session_summary.txt`             | Convertir a markdown y numerar                 |
 
 ### Estandarizacion_de_Naming
 
@@ -268,16 +268,16 @@ Son skills: 01_Shared, 02-10_Sdd_*, 11_Judgment_Day, 12_Go_Testing, 13_Branch_Pr
 
 ## Resumen_de_Impacto
 
-| Metrica | Antes | Despues | Reduccion |
-|---------|-------|---------|-----------|
-| 02_Diseno_Ui_Ux dirs | 17 | 11 | 35% |
-| 06_Tools dirs | 30 | 15 | 50% |
-| Context Memory raiz | 26 | 18 | 31% |
-| Context Memory total | 47 | 40 (18 raiz + 22 archive) | 15% (JSONs migrados) |
-| Process Notes clashes | 5 (01,10,17 + 2 no-prefix) | 0 | 100% resuelto |
-| Knowledge_Brain clashes | 1 (#13) | 0 | 100% resuelto |
-| .agent drift | 14 extras | 0 (synced) | 100% |
-| Evals estructura | Plana | 3 subdirectorios + template | Framework creado |
+| Metrica                | Antes                     | Despues                    | Reduccion           |
+|-----------------------|--------------------------|---------------------------|--------------------|
+| 02_Diseno_Ui_Ux dirs   | 17                        | 11                         | 35%                 |
+| 06_Tools dirs          | 30                        | 15                         | 50%                 |
+| Context Memory raiz    | 26                        | 18                         | 31%                 |
+| Context Memory total   | 47                        | 40 (18 raiz + 22 archive)  | 15% (JSONs migrados)|
+| Process Notes clashes  | 5 (01,10,17 + 2 no-prefix)| 0                          | 100% resuelto       |
+| Knowledge_Brain clashes| 1 (#13)                   | 0                          | 100% resuelto       |
+| .agent drift           | 14 extras                 | 0 (synced)                 | 100%                |
+| Evals estructura       | Plana                     | 3 subdirectorios + template| Framework creado    |
 
 ---
 
@@ -295,10 +295,10 @@ Cada fase es **independiente** y puede ejecutarse en cualquier orden.
 
 ## Riesgos_y_Mitigaciones
 
-| Riesgo | Mitigacion |
-|--------|------------|
-| Perder info en merge de SKILL.md duplicados | Diff manual antes de merge, backup a Archive |
-| Ruptura de referencias en HUB_CATALOG.md | Actualizar HUB_CATALOG.md despues de cada merge |
-| .agent mirror out of sync post-merge | Script de sync automatizado |
-| Context Memory renaming rompe enlaces | Usar symlinks o archivo de mapeo old->new |
-| Auto_Improvement scripts con paths obsoletos | Revisar paths en scripts post-consolidacion |
+| Riesgo                                      | Mitigacion                                     |
+|--------------------------------------------|-----------------------------------------------|
+| Perder info en merge de SKILL.md duplicados | Diff manual antes de merge, backup a Archive   |
+| Ruptura de referencias en HUB_CATALOG.md    | Actualizar HUB_CATALOG.md despues de cada merge|
+| .agent mirror out of sync post-merge        | Script de sync automatizado                    |
+| Context Memory renaming rompe enlaces       | Usar symlinks o archivo de mapeo old->new      |
+| Auto_Improvement scripts con paths obsoletos| Revisar paths en scripts post-consolidacion    |

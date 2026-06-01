@@ -44,8 +44,8 @@ Located: `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 | **Data**                                       | Silicon_Valley_Data_Analyst                              | Data analysis                                                                                       |
 | **SEO**                                        | SEO_SOTA_Master                                          | Technical SEO                                                                                       |
 | **Taste**                                      | taste-skill, soft-skill                                  | Premium frontend                                                                                    |
-| **Graphify/Knowledge Graph**                   | 31_Graphify_Hub.py                                       | Hub centralizador de Graphify para conocimiento estructural                                        |
-| **Graphify/Knowledge Graph**                   | 32_Graphify_Update.py                                    | Actualización automática del grafo Graphify                                                        |
+| **Graphify/Knowledge Graph**                   | 31_Graphify_Hub.py                                       | Hub centralizador de Graphify para conocimiento estructural                                         |
+| **Graphify/Knowledge Graph**                   | 32_Graphify_Update.py                                    | Actualización automática del grafo Graphify                                                         |
 
 ## Agent Rules
 

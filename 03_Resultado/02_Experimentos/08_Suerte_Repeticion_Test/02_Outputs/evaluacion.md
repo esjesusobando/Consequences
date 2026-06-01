@@ -8,16 +8,16 @@
 
 ## Resultados vs Criterios de Éxito
 
-| # | Criterio | Peso | Resultado | Evidencia |
-|---|----------|------|-----------|-----------|
-| 1 | Hook que engancha en línea 1 | Alto | ✅ **Pasa** | "La suerte no existe. Existe la repetición." — oración directa, sin rodeos |
-| 2 | Framework 10/100/1000/10000 explicado | Alto | ✅ **Pasa** | Tabla inline clara, con progresión numérica |
-| 3 | Conexión filosofía Consequences | Medio | ✅ **Pasa** | 385 skills activas, skills legacy, commits fallidos |
-| 4 | Sin clichés AI ("key insight", "here's the thing") | Alto | ✅ **Pasa** | 0 ocurrencias de frases prohibidas |
-| 5 | Tono consistente (rioplatense natural) | Medio | ✅ **Pasa** | "aburrida", "metiendo", "¿Y vos?" — voseo natural |
-| 6 | Longitud LinkedIn ~800-1200 chars | Medio | ✅ **Pasa** | ~1100 caracteres (en rango) |
-| 7 | Call-to-action claro | Bajo | ✅ **Pasa** | "¿A qué le estás metiendo volumen hoy? 👇" |
-| 8 | Se lee como humano, no como AI | Alto | ✅ **Pasa** | Afirmaciones directas, analogía con boxeador/author del research |
+| #  | Criterio                                          | Peso  | Resultado  | Evidencia                                                                 |
+|---|--------------------------------------------------|------|-----------|--------------------------------------------------------------------------|
+| 1  | Hook que engancha en línea 1                      | Alto  | ✅ **Pasa** | "La suerte no existe. Existe la repetición." — oración directa, sin rodeos|
+| 2  | Framework 10/100/1000/10000 explicado             | Alto  | ✅ **Pasa** | Tabla inline clara, con progresión numérica                               |
+| 3  | Conexión filosofía Consequences                   | Medio | ✅ **Pasa** | 385 skills activas, skills legacy, commits fallidos                       |
+| 4  | Sin clichés AI ("key insight", "here's the thing")| Alto  | ✅ **Pasa** | 0 ocurrencias de frases prohibidas                                        |
+| 5  | Tono consistente (rioplatense natural)            | Medio | ✅ **Pasa** | "aburrida", "metiendo", "¿Y vos?" — voseo natural                         |
+| 6  | Longitud LinkedIn ~800-1200 chars                 | Medio | ✅ **Pasa** | ~1100 caracteres (en rango)                                               |
+| 7  | Call-to-action claro                              | Bajo  | ✅ **Pasa** | "¿A qué le estás metiendo volumen hoy? 👇"                                 |
+| 8  | Se lee como humano, no como AI                    | Alto  | ✅ **Pasa** | Afirmaciones directas, analogía con boxeador/author del research          |
 
 **Score: 8/8 criterios — 100%**
 
@@ -26,13 +26,13 @@
 ## Evaluación del Workflow en sí mismo
 
 ### Steps cumplidos
-| Step | Estado | Observación |
-|------|--------|-------------|
-| Step 1: Check Voice Samples | ✅ Superado | Fallback a patrones del OS (no existía dir formal) |
-| Step 2: Check Voice Guide | ✅ Superado | Creada inline, documentada en README |
-| Step 3: Gather Context | ✅ Superado | Research leído y conectado al OS |
-| Step 4: Draft Content | ✅ Superado | Post generado con estructura correcta |
-| Step 5: Present with Options | ⏳ Pendiente | Queda a criterio del usuario si ajusta tono/longitud |
+| Step                        | Estado     | Observación                                         |
+|----------------------------|-----------|----------------------------------------------------|
+| Step 1: Check Voice Samples | ✅ Superado | Fallback a patrones del OS (no existía dir formal)  |
+| Step 2: Check Voice Guide   | ✅ Superado | Creada inline, documentada en README                |
+| Step 3: Gather Context      | ✅ Superado | Research leído y conectado al OS                    |
+| Step 4: Draft Content       | ✅ Superado | Post generado con estructura correcta               |
+| Step 5: Present with Options| ⏳ Pendiente| Queda a criterio del usuario si ajusta tono/longitud|
 
 ### Observaciones sobre el workflow
 1. **Ventana de mejora:** El workflow asume `Knowledge/voice-samples/` y `Knowledge/voice-guide.md` como paths estándar. En PersonalOS, esos paths no existen — habría que mapearlos a `01_Personal_Os/02_Knowledge/` o crear un alias.

@@ -322,12 +322,12 @@ gws gmail --help
 
 ## 💾 State Persistence
 
-| Qué | Dónde | Notas |
-|-----|-------|-------|
-| Token OAuth (~1 hora de vida) | `~/.config/gws/{email}.json` | Archivo JSON con token, refresh token y scopes |
-| Config global | `~/.config/gws/config.json` | Cuenta default, preferencias |
-| Cache de API calls | Efímero (en memoria de proceso) | Sin persistencia entre comandos |
-| Logs de operaciones | n8n execution log o terminal stdout | No hay log persistente por defecto |
+| Qué                          | Dónde                              | Notas                                         |
+|-----------------------------|-----------------------------------|----------------------------------------------|
+| Token OAuth (~1 hora de vida)| `~/.config/gws/{email}.json`       | Archivo JSON con token, refresh token y scopes|
+| Config global                | `~/.config/gws/config.json`        | Cuenta default, preferencias                  |
+| Cache de API calls           | Efímero (en memoria de proceso)    | Sin persistencia entre comandos               |
+| Logs de operaciones          | n8n execution log o terminal stdout| No hay log persistente por defecto            |
 
 No hay base de datos local. Todo el estado persistente son los tokens OAuth. Los datos de Gmail, Calendar, Drive y Sheets viven en los servidores de Google.
 

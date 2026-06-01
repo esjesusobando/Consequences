@@ -42,10 +42,10 @@ La auditoría detectó que el número real de scripts, workflows, skills y carpe
 
 ## 3. Estado Final (Cuadro Comparativo)
 
-| Métrica / Elemento | Estado Anterior (Documentado) | Estado Nuevo (Disco & Docs) | Resolución |
-|--------------------|-------------------------------|-----------------------------|------------|
-| **Total Workflows** | 28 (7 categorías) | 27 (7 categorías) | Corregido fantasma (AGENTS) en listado |
-| **Total Skills** | 300+ (en 11 áreas) | 385 (en 14 áreas) | Documentos unificados |
-| **Process Notes (NP)** | 25 | 35 | Actualizado conteo |
-| **Rutas legacy python** | 4 paths rotos (`config_paths`) | 100% resueltas | Rutas relativas apuntadas al disco real |
-| **Versión Oficial** | v4.8 | v4.9 Consequences | Promoción de versión global |
+| Métrica / Elemento     | Estado Anterior (Documentado)  | Estado Nuevo (Disco & Docs)  | Resolución                             |
+|-----------------------|-------------------------------|-----------------------------|---------------------------------------|
+| **Total Workflows**    | 28 (7 categorías)              | 27 (7 categorías)            | Corregido fantasma (AGENTS) en listado |
+| **Total Skills**       | 300+ (en 11 áreas)             | 385 (en 14 áreas)            | Documentos unificados                  |
+| **Process Notes (NP)** | 25                             | 35                           | Actualizado conteo                     |
+| **Rutas legacy python**| 4 paths rotos (`config_paths`) | 100% resueltas               | Rutas relativas apuntadas al disco real|
+| **Versión Oficial**    | v4.8                           | v4.9 Consequences            | Promoción de versión global            |

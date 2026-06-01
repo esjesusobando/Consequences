@@ -45,10 +45,10 @@ El video presenta un pipeline completo para construir websites de calidad "agenc
 - Activar **Auto Mode** (Claude trabaja sin pedir permiso)
 
 ### Capítulo 2: Instalar Skills de Diseño
-| Skill | Fuente | Propósito | Instalación |
-|-------|--------|-----------|-------------|
-| **Front End Design** | Anthropic (oficial) | Banear fonts overused, empujar bold design direction | Pegar URL + "Install this skill" |
-| **UI/UX Pro Max** | Community | 57 UI styles, 95 palettes, 56 font pairings | Pegar URL + "Install this plugin using NPM" |
+| Skill               | Fuente             | Propósito                                           | Instalación                                |
+|--------------------|-------------------|----------------------------------------------------|-------------------------------------------|
+| **Front End Design**| Anthropic (oficial)| Banear fonts overused, empujar bold design direction| Pegar URL + "Install this skill"           |
+| **UI/UX Pro Max**   | Community          | 57 UI styles, 95 palettes, 56 font pairings         | Pegar URL + "Install this plugin using NPM"|
 
 ### Capítulo 3: El Brief — La Clave de Todo
 - **References > Description**: Mostrar screenshots de sitios que te gustan es más efectivo que describir con palabras
@@ -120,13 +120,13 @@ GRUPO 3: FELT QUALITY
 
 ## 3. Prompt Engineering — Lecciones Clave
 
-| Principio | Ejemplo del video |
-|-----------|------------------|
-| **Lead with intent, not specifics** | "Necesito más micro-interacciones, las secciones de abajo se sienten genéricas" en vez de "agregá X componente" |
-| **Batch by intent** | Pedir 5 cambios juntos que comparten un objetivo de diseño |
-| **Push back when broken** | Claude rompió el scroll → "it isn't scrolling" → Claude debuggea solo |
-| **Claude protects architecture** | Dijo que no a React component en proyecto static HTML |
-| **Gradéate contra tu checklist** | Pasar el checklist de $10K y preguntar "where does this site land?" |
+| Principio                          | Ejemplo del video                                                                                              |
+|-----------------------------------|---------------------------------------------------------------------------------------------------------------|
+| **Lead with intent, not specifics**| "Necesito más micro-interacciones, las secciones de abajo se sienten genéricas" en vez de "agregá X componente"|
+| **Batch by intent**                | Pedir 5 cambios juntos que comparten un objetivo de diseño                                                     |
+| **Push back when broken**          | Claude rompió el scroll → "it isn't scrolling" → Claude debuggea solo                                          |
+| **Claude protects architecture**   | Dijo que no a React component en proyecto static HTML                                                          |
+| **Gradéate contra tu checklist**   | Pasar el checklist de $10K y preguntar "where does this site land?"                                            |
 
 ---
 

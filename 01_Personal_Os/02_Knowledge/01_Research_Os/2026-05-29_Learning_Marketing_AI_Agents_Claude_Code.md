@@ -26,13 +26,13 @@ Lorena muestra cómo construir un **equipo de marketing completo usando Claude C
 
 ### Timeline del video
 
-| Sección | Timestamp | Contenido |
-|---------|-----------|-----------|
-| Instalación y accesos | 0:00 - 4:00 | Claude Code vía app desktop, IDE (Cursor/Windsurf), o terminal |
-| Estructura del proyecto | 4:00 - 10:00 | Crear carpetas: contexto, marca, plantillas |
-| Creación de agentes | 10:00 - 15:00 | Agentes especializados (estrategia, contenido, análisis) |
-| MCPs y conexiones | 15:00 - 18:00 | Conectar herramientas externas (Make, APIs) |
-| Automatización de flujos | 18:00 - 22:00 | Flujos encadenados entre agentes |
+| Sección                 | Timestamp    | Contenido                                                     |
+|------------------------|-------------|--------------------------------------------------------------|
+| Instalación y accesos   | 0:00 - 4:00  | Claude Code vía app desktop, IDE (Cursor/Windsurf), o terminal|
+| Estructura del proyecto | 4:00 - 10:00 | Crear carpetas: contexto, marca, plantillas                   |
+| Creación de agentes     | 10:00 - 15:00| Agentes especializados (estrategia, contenido, análisis)      |
+| MCPs y conexiones       | 15:00 - 18:00| Conectar herramientas externas (Make, APIs)                   |
+| Automatización de flujos| 18:00 - 22:00| Flujos encadenados entre agentes                              |
 
 ---
 
@@ -52,11 +52,11 @@ PROYECTO/
 
 ### Los 3 Roles de Agentes de Marketing
 
-| Rol | Función | Input | Output |
-|-----|---------|-------|--------|
-| **Estratega** | Define qué contenido crear, cuándo, y por qué | Objetivos de marketing, buyer persona, calendario editorial | Briefs, estrategia de contenido, planificación |
-| **Creador de Contenido** | Produce el contenido en múltiples formatos | Brief del estratega + documentación de marca | Posts, scripts, newsletters, thumbnails |
-| **Analista** | Mide resultados, extrae insights, sugiere optimización | Datos de publicación, métricas, engagement | Reportes, recomendaciones, ajustes de estrategia |
+| Rol                     | Función                                               | Input                                                      | Output                                          |
+|------------------------|------------------------------------------------------|-----------------------------------------------------------|------------------------------------------------|
+| **Estratega**           | Define qué contenido crear, cuándo, y por qué         | Objetivos de marketing, buyer persona, calendario editorial| Briefs, estrategia de contenido, planificación  |
+| **Creador de Contenido**| Produce el contenido en múltiples formatos            | Brief del estratega + documentación de marca               | Posts, scripts, newsletters, thumbnails         |
+| **Analista**            | Mide resultados, extrae insights, sugiere optimización| Datos de publicación, métricas, engagement                 | Reportes, recomendaciones, ajustes de estrategia|
 
 ### Flujo de Trabajo (Workflow Automatizado)
 
@@ -68,14 +68,14 @@ IDEA → ESTRATEGA (brief) → CREADOR (contenido) → REVISIÓN → PUBLICACIÓ
 
 ## 3. Herramientas y MCPs
 
-| Herramienta | Uso en el sistema |
-|-------------|------------------|
-| **Claude Code** (app desktop) | Orquestador principal, acceso a chat + cowork + código |
-| **Claude Code** (IDE) | Integración con Cursor/Windsurf para desarrollo |
-| **Claude Code** (terminal) | Control vía línea de comandos |
-| **MCPs** | Conexión con APIs externas (Make, redes sociales, analytics) |
-| **Make (Integromat)** | Automatización de flujos entre agentes y plataformas |
-| **Archivos .md** | Documentación de contexto, marca, y plantillas |
+| Herramienta                  | Uso en el sistema                                           |
+|-----------------------------|------------------------------------------------------------|
+| **Claude Code** (app desktop)| Orquestador principal, acceso a chat + cowork + código      |
+| **Claude Code** (IDE)        | Integración con Cursor/Windsurf para desarrollo             |
+| **Claude Code** (terminal)   | Control vía línea de comandos                               |
+| **MCPs**                     | Conexión con APIs externas (Make, redes sociales, analytics)|
+| **Make (Integromat)**        | Automatización de flujos entre agentes y plataformas        |
+| **Archivos .md**             | Documentación de contexto, marca, y plantillas              |
 
 ### Tips clave sobre MCPs
 - Los MCPs permiten conectar Claude Code con APIs externas
@@ -127,14 +127,14 @@ Descripción: Flujo completo YouTube: idea → publicación
 
 ### Mapeo Directo con el OS
 
-| Elemento del video | Equivalente en el OS |
-|--------------------|----------------------|
-| Carpeta `contexto/` | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/04_Contexto/` |
-| Carpeta `marca/` | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/05_Marca/` |
-| Carpeta `plantillas/` | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/06_Plantillas/` |
-| Agentes especializados | `01_Personal_Os/01_Core/02_Tools/01_Agents/` (definiciones de agentes) |
-| MCPs | `01_Personal_Os/01_Core/02_Tools/03_MCPs/` (configuraciones MCP) |
-| Flujos automatizados | `01_Personal_Os/01_Core/02_Tools/02_Skills/` (skills + workflows) |
+| Elemento del video    | Equivalente en el OS                                                     |
+|----------------------|-------------------------------------------------------------------------|
+| Carpeta `contexto/`   | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/04_Contexto/`  |
+| Carpeta `marca/`      | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/05_Marca/`     |
+| Carpeta `plantillas/` | `01_Personal_Os/01_Core/02_Tools/02_Skills/00_Personal_Os/06_Plantillas/`|
+| Agentes especializados| `01_Personal_Os/01_Core/02_Tools/01_Agents/` (definiciones de agentes)   |
+| MCPs                  | `01_Personal_Os/01_Core/02_Tools/03_MCPs/` (configuraciones MCP)         |
+| Flujos automatizados  | `01_Personal_Os/01_Core/02_Tools/02_Skills/` (skills + workflows)        |
 
 ### Lo que el OS ya tiene y el video recomienda
 

@@ -14,14 +14,14 @@ Corre cada 8 horas en dry-run (solo escanea, no modifica).
 
 ## Detalles
 
-| Item | Valor |
-|------|-------|
-| Task name | AutoImprovementPersonalOS |
-| Frecuencia | Cada 8 horas (480 min) |
-| Proxima ejecucion | 28 may 2026 09:05 |
-| Script | `04_Triggers/run_scheduled.bat` |
-| Modo | Dry-run (sin --apply) |
-| Estado | ✅ Listo |
+| Item             | Valor                          |
+|-----------------|-------------------------------|
+| Task name        | AutoImprovementPersonalOS      |
+| Frecuencia       | Cada 8 horas (480 min)         |
+| Proxima ejecucion| 28 may 2026 09:05              |
+| Script           | `04_Triggers/run_scheduled.bat`|
+| Modo             | Dry-run (sin --apply)          |
+| Estado           | ✅ Listo                        |
 
 ## Ubicacion del motor
 
@@ -29,14 +29,14 @@ Corre cada 8 horas en dry-run (solo escanea, no modifica).
 
 ## Archivos clave
 
-| Archivo | Proposito |
-|---------|-----------|
-| `QUICK_START.md` | Guia rapida con modos de uso |
-| `README.md` | Documentacion completa del motor |
-| `04_Triggers/setup_scheduler.bat` | Instalador del scheduler (ejecutar como admin) |
-| `04_Triggers/run_scheduled.bat` | Script llamado por Task Scheduler |
-| `03_Metrics/improvement_log.json` | Log de mejoras detectadas |
-| `03_Metrics/execution.log` | Log de ejecuciones |
+| Archivo                          | Proposito                                     |
+|---------------------------------|----------------------------------------------|
+| `QUICK_START.md`                 | Guia rapida con modos de uso                  |
+| `README.md`                      | Documentacion completa del motor              |
+| `04_Triggers/setup_scheduler.bat`| Instalador del scheduler (ejecutar como admin)|
+| `04_Triggers/run_scheduled.bat`  | Script llamado por Task Scheduler             |
+| `03_Metrics/improvement_log.json`| Log de mejoras detectadas                     |
+| `03_Metrics/execution.log`       | Log de ejecuciones                            |
 
 ## Modos de uso (desde Git Bash)
 

@@ -27,12 +27,12 @@ Dynamic workflows are a Claude Code feature where **Claude dynamically writes Ja
 
 ## Requirements
 
-| Requirement | Detail |
-|-------------|--------|
-| Claude Code version | v2.1.154 or later |
-| Plans | Max, Team, Enterprise (admin must enable for Enterprise) |
-| API availability | Claude API, Amazon Bedrock, Vertex AI, Microsoft Foundry |
-| Default state | On for Max/Team, Off for Enterprise |
+| Requirement        | Detail                                                  |
+|-------------------|--------------------------------------------------------|
+| Claude Code version| v2.1.154 or later                                       |
+| Plans              | Max, Team, Enterprise (admin must enable for Enterprise)|
+| API availability   | Claude API, Amazon Bedrock, Vertex AI, Microsoft Foundry|
+| Default state      | On for Max/Team, Off for Enterprise                     |
 
 ---
 
@@ -107,13 +107,13 @@ For each unit of work:
 
 This project's **OS Conductor** (`01_Personal_Os/01_Core/02_Tools/01_Agents/00_OS_Conductor/SKILL.md`) already implements a similar pattern at the skill-orchestration level:
 
-| Aspect | OS Conductor | Dynamic Workflows |
-|--------|-------------|-------------------|
-| Orchestration | Routes to 47 agents across 12 skill areas | Dynamically writes JS scripts for subagents |
-| Parallelism | Sequential pipeline (one skill at a time) | Tens to hundreds of parallel subagents |
-| Verification | Sprint Contract per flow step | Adversarial verification agents |
-| Context | Single context window | Script variables (outside context) |
-| Granularity | Skill-level (high-level domains) | Task-level (fine-grained subtasks) |
+| Aspect       | OS Conductor                             | Dynamic Workflows                          |
+|-------------|-----------------------------------------|-------------------------------------------|
+| Orchestration| Routes to 47 agents across 12 skill areas| Dynamically writes JS scripts for subagents|
+| Parallelism  | Sequential pipeline (one skill at a time)| Tens to hundreds of parallel subagents     |
+| Verification | Sprint Contract per flow step            | Adversarial verification agents            |
+| Context      | Single context window                    | Script variables (outside context)         |
+| Granularity  | Skill-level (high-level domains)         | Task-level (fine-grained subtasks)         |
 
 **Integration potential:** The Conductor could use dynamic workflows as the execution layer for complex multi-skill flows — instead of running skills sequentially, it could dispatch parallel subagent fleets and synthesize results, especially for OS audits, large migrations, and multi-domain content campaigns.
 

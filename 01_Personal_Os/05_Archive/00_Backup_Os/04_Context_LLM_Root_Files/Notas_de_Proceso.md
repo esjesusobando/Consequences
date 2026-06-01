@@ -130,13 +130,13 @@
 Revisar todo el proyecto Think_Different sin eliminar información, corregir deuda técnica activa, ordenar JSONs de resultado y dejar trazabilidad del antes/después.
 
 ### Antes
-| Área | Estado antes |
-|---|---|
-| JSONs de auditoría | 3 JSON sueltos en la raíz de `03_Resultado/` |
-| Hooks | Referencias activas a rutas obsoletas las rutas legacy de hooks |
-| Rule 12 | Un plan/audit activo seguía referenciando la regla 12 legacy de Nexus Routing |
-| Reportes | No existía índice JSON dedicado para auditorías OS |
-| Validación | Había evidencia dispersa de integración Gentleman/Every CE |
+| Área              | Estado antes                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| JSONs de auditoría| 3 JSON sueltos en la raíz de `03_Resultado/`                                 |
+| Hooks             | Referencias activas a rutas obsoletas las rutas legacy de hooks              |
+| Rule 12           | Un plan/audit activo seguía referenciando la regla 12 legacy de Nexus Routing|
+| Reportes          | No existía índice JSON dedicado para auditorías OS                           |
+| Validación        | Había evidencia dispersa de integración Gentleman/Every CE                   |
 
 ### Acciones ejecutadas
 - Movidos y renombrados los JSON de auditoría a `03_Resultado/03_Reportes/01_Auditorias_OS/` con prefijo numérico.
@@ -147,13 +147,13 @@ Revisar todo el proyecto Think_Different sin eliminar información, corregir deu
 - Actualizados `03_Resultado/03_Reportes/README.md` y `03_Resultado/ORGANIZACION_SUMMARY.md`.
 
 ### Después
-| Área | Estado después |
-|---|---|
-| JSONs de auditoría | Numerados y agrupados en `03_Reportes/01_Auditorias_OS/` |
-| Hooks | Rutas activas alineadas al sistema actual |
-| Rule 12 | Referencias activas alineadas con `12_Audit_OS_Integrity.mdc` |
-| Reportes | Carpeta con manifest JSON y README actualizado |
-| Históricos | Preservados sin borrado; solo se corrigieron referencias activas |
+| Área              | Estado después                                                  |
+|------------------|----------------------------------------------------------------|
+| JSONs de auditoría| Numerados y agrupados en `03_Reportes/01_Auditorias_OS/`        |
+| Hooks             | Rutas activas alineadas al sistema actual                       |
+| Rule 12           | Referencias activas alineadas con `12_Audit_OS_Integrity.mdc`   |
+| Reportes          | Carpeta con manifest JSON y README actualizado                  |
+| Históricos        | Preservados sin borrado; solo se corrigieron referencias activas|
 
 ### Validaciones
 - Se evitó tocar `node_modules`, `.git`, archivos de archivo histórico y memoria/contexto antiguo salvo esta nota nueva.
@@ -167,15 +167,15 @@ Revisar todo el proyecto Think_Different sin eliminar información, corregir deu
 Auditar focalizadamente el Área 01 (Creación de Contenidos) de skills tras migración de numeración legacy 11-20 → canónica 00-20. Corregir paths, headers, SKILL.md faltantes, índices y mirror drift.
 
 ### Bugs corregidos (7)
-| # | Bug | Fix |
-|---|-----|-----|
-| 1 | Path `08_Scripts_Os` hardcodeado en `18_Generacion_Contenido.py` | `04_Operations/03_Scripts_Os` |
-| 2 | Banner version inconsistente (`v4.8` vs `v4.8 Consequences`) | Unificado |
-| 3 | SKILL.md headers con numeración legacy (03,05,06,07,08) | Números legacy eliminados |
-| 4 | SKILL.md faltantes en 16,18,19,20 | Creados con frontmatter base |
-| 5 | `01_Creacion_Contenidos/SKILL.md` paths legacy | Rewrite completo 00-20 |
-| 6 | INDEX_AREA_FUNCTIONAL.md paths legacy | Rewrite completo Área 01 |
-| 7 | Mirror drift entre `.agent/` y `01_Personal_Os/` | Sincronizados |
+| #  | Bug                                                             | Fix                          |
+|---|----------------------------------------------------------------|-----------------------------|
+| 1  | Path `08_Scripts_Os` hardcodeado en `18_Generacion_Contenido.py`| `04_Operations/03_Scripts_Os`|
+| 2  | Banner version inconsistente (`v4.8` vs `v4.8 Consequences`)    | Unificado                    |
+| 3  | SKILL.md headers con numeración legacy (03,05,06,07,08)         | Números legacy eliminados    |
+| 4  | SKILL.md faltantes en 16,18,19,20                               | Creados con frontmatter base |
+| 5  | `01_Creacion_Contenidos/SKILL.md` paths legacy                  | Rewrite completo 00-20       |
+| 6  | INDEX_AREA_FUNCTIONAL.md paths legacy                           | Rewrite completo Área 01     |
+| 7  | Mirror drift entre `.agent/` y `01_Personal_Os/`                | Sincronizados                |
 
 ### Archivos tocados: 22 | Mirrors verificados idénticos
 
@@ -198,15 +198,15 @@ Auditar focalizadamente el Área 01 (Creación de Contenidos) de skills tras mig
 Auditar el proyecto completo: paths legacy, docs desactualizados, MCP config drift, consistencia de CLAUDE.md vs realidad.
 
 ### Fase 1: Paths legacy (53 refs en 15 archivos)
-| Archivo | Paths corregidos |
-|---|---|
-| `01_Auditor_Hub.py` | 03_Validator→05_Validator, 05_AIPM→03_AIPM, 11_Anthropic_Harness→10_Anthropic |
-| `03_AIPM_Hub.py` | 05_AIPM→03_AIPM (docstring + path) |
-| `05_Validator_Hub.py` | 13_Auditors_Os→12_Auditors_Os, 03_Validator→05_Validator |
-| `00_Parallel_Audit_Pro.py` | launch paths Validator → 05_Validator, AIPM → 03_AIPM |
-| `04_Edge_Case_Validator.py` | 14_Otros→09_Auxiliary (comment) |
-| `skills_mapper.py` | output path fix |
-| `12_Auditors_Os/scripts/*.py` (5 files) | comment paths |
+| Archivo                                | Paths corregidos                                                             |
+|---------------------------------------|-----------------------------------------------------------------------------|
+| `01_Auditor_Hub.py`                    | 03_Validator→05_Validator, 05_AIPM→03_AIPM, 11_Anthropic_Harness→10_Anthropic|
+| `03_AIPM_Hub.py`                       | 05_AIPM→03_AIPM (docstring + path)                                           |
+| `05_Validator_Hub.py`                  | 13_Auditors_Os→12_Auditors_Os, 03_Validator→05_Validator                     |
+| `00_Parallel_Audit_Pro.py`             | launch paths Validator → 05_Validator, AIPM → 03_AIPM                        |
+| `04_Edge_Case_Validator.py`            | 14_Otros→09_Auxiliary (comment)                                              |
+| `skills_mapper.py`                     | output path fix                                                              |
+| `12_Auditors_Os/scripts/*.py` (5 files)| comment paths                                                                |
 
 ### Fase 2: Docs corregidos
 - **README, CLAUDE.md, AGENTS.md, OS_DIRECTORY.md**: script numbers actualizados (33→26, 34→27, 50→28, 57→29)
@@ -214,11 +214,11 @@ Auditar el proyecto completo: paths legacy, docs desactualizados, MCP config dri
 - **SCRIPTS_INDEX.md**: header "98+ scripts, 23 HUBs" → "169 scripts (31 raíz)"
 
 ### Fase 3: Delegaciones (skills, CLAUDE.md, MCPs)
-| Delegación | Findings clave |
-|---|---|
-| Skills audit | 61 skills extra en .agent/ (mirror sano — copy-not-cut) |
-| CLAUDE.md reality | 6 mismatches: tree order, agent count, dirs count, header stale |
-| MCP config | 11 hardcoded keys (intencional), TestSprite stale path, 6 placeholders |
+| Delegación       | Findings clave                                                        |
+|-----------------|----------------------------------------------------------------------|
+| Skills audit     | 61 skills extra en .agent/ (mirror sano — copy-not-cut)               |
+| CLAUDE.md reality| 6 mismatches: tree order, agent count, dirs count, header stale       |
+| MCP config       | 11 hardcoded keys (intencional), TestSprite stale path, 6 placeholders|
 
 ### Fase 4: CLAUDE.md fixes (6 edits)
 - Tree hierarchy corregida (05_Archive después de 04_Operations, indentación)
@@ -247,21 +247,21 @@ Archivos: CLAUDE.md, SCRIPTS_INDEX.md, Context_Memory.md, Notas_de_Proceso.md, ~
 Revisión integral del proyecto Think_Different PersonalOS v4.8 — identificar errores en estructura, rutas, dependencias, skills y scripts. Corregir bugs sin eliminar información histórica.
 
 ### Bugs Corregidos (13)
-| # | Bug | Fix |
-|---|-----|-----|
-| 1 | `12_Auditors_Os/README.md` completamente stale: header `13_Auditors_Os`, scripts numerados 12-16 vs reales 00-04, paths en ejemplos legacy `13_Auditors_Os/` | Reescribir README completo: header v4.8, números 00-04 actualizados, paths corregidos, ejemplos funcionales |
-| 2 | `Structure_v4.8.md:262` ref `13_Auditors_Os/` | `12_Auditors_Os/` |
-| 3 | `OS_DIRECTORY.md:259` ref `13_Auditors_Os/` | `12_Auditors_Os/` |
-| 4 | `Operations/README.md:94` ref `13_Auditors_Os/` | `12_Auditors_Os/` |
-| 5 | `03_Scripts_Os/README.md:25` ref `13_Auditors_Os/` | `12_Auditors_Os/` |
-| 6 | `.agent/README.md:104-105` refs `13_Auditors_Os/` + números legacy | `12_Auditors_Os/` + `00_`/`01_` |
-| 7 | `.agent/CLAUDE.md:176-177` refs `13_Auditors_Os/` + números legacy | `12_Auditors_Os/` + `00_`/`01_` |
-| 8 | `00_Comandos_Workflows.md:37-44` ref `13_Auditors_Os/`, números legacy, faltan scripts | `12_Auditors_Os/`, 5 scripts con números reales 00-04 |
-| 9 | `embedding.py:158` `13_Auditors_Os` hardcodeado | `12_Auditors_Os` |
-| 10 | `05_OS_Health_Test.py:263` + `01_OS_Runtime_Test.py:203` refs `13_Auditors_Os/` + `15_SOTA_Integrity_Check.py` | `12_Auditors_Os/` + `03_SOTA_Integrity_Check.py` |
-| 11 | `HUB_CATALOG.md:1` header "v4.0 Consequences" | "v4.8 Consequences" |
-| 12 | `03_SOTA_Integrity_Check.py:176` log "08_Scripts_Os not found" | "03_Scripts_Os not found" |
-| 13 | `03_Validate_Rules.py:113,146` prints "08_Scripts_Os" | "03_Scripts_Os" |
+| #  | Bug                                                                                                                                                         | Fix                                                                                                        |
+|---|------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| 1  | `12_Auditors_Os/README.md` completamente stale: header `13_Auditors_Os`, scripts numerados 12-16 vs reales 00-04, paths en ejemplos legacy `13_Auditors_Os/`| Reescribir README completo: header v4.8, números 00-04 actualizados, paths corregidos, ejemplos funcionales|
+| 2  | `Structure_v4.8.md:262` ref `13_Auditors_Os/`                                                                                                               | `12_Auditors_Os/`                                                                                          |
+| 3  | `OS_DIRECTORY.md:259` ref `13_Auditors_Os/`                                                                                                                 | `12_Auditors_Os/`                                                                                          |
+| 4  | `Operations/README.md:94` ref `13_Auditors_Os/`                                                                                                             | `12_Auditors_Os/`                                                                                          |
+| 5  | `03_Scripts_Os/README.md:25` ref `13_Auditors_Os/`                                                                                                          | `12_Auditors_Os/`                                                                                          |
+| 6  | `.agent/README.md:104-105` refs `13_Auditors_Os/` + números legacy                                                                                          | `12_Auditors_Os/` + `00_`/`01_`                                                                            |
+| 7  | `.agent/CLAUDE.md:176-177` refs `13_Auditors_Os/` + números legacy                                                                                          | `12_Auditors_Os/` + `00_`/`01_`                                                                            |
+| 8  | `00_Comandos_Workflows.md:37-44` ref `13_Auditors_Os/`, números legacy, faltan scripts                                                                      | `12_Auditors_Os/`, 5 scripts con números reales 00-04                                                      |
+| 9  | `embedding.py:158` `13_Auditors_Os` hardcodeado                                                                                                             | `12_Auditors_Os`                                                                                           |
+| 10 | `05_OS_Health_Test.py:263` + `01_OS_Runtime_Test.py:203` refs `13_Auditors_Os/` + `15_SOTA_Integrity_Check.py`                                              | `12_Auditors_Os/` + `03_SOTA_Integrity_Check.py`                                                           |
+| 11 | `HUB_CATALOG.md:1` header "v4.0 Consequences"                                                                                                               | "v4.8 Consequences"                                                                                        |
+| 12 | `03_SOTA_Integrity_Check.py:176` log "08_Scripts_Os not found"                                                                                              | "03_Scripts_Os not found"                                                                                  |
+| 13 | `03_Validate_Rules.py:113,146` prints "08_Scripts_Os"                                                                                                       | "03_Scripts_Os"                                                                                            |
 
 ### Archivos tocados: 15 (8 .md + 5 .py + 1 README rewrite + 2 docs de memoria)
 

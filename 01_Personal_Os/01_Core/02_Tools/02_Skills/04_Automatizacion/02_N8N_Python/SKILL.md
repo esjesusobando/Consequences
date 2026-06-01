@@ -781,11 +781,11 @@ Before deploying Python Code nodes, verify:
 
 ## 💾 State Persistence
 
-| Qué | Dónde | Notas |
-|-----|-------|-------|
-| Código Python del Code node | Dentro del workflow JSON de n8n (propiedad `parameters.code`) | Persistido al guardar el workflow |
-| Output de ejecución | n8n execution log | Efímero |
-| Módulos standard library | Entorno n8n server | Fijos, no se pueden instalar nuevos |
+| Qué                        | Dónde                                                        | Notas                              |
+|---------------------------|-------------------------------------------------------------|-----------------------------------|
+| Código Python del Code node| Dentro del workflow JSON de n8n (propiedad `parameters.code`)| Persistido al guardar el workflow  |
+| Output de ejecución        | n8n execution log                                            | Efímero                            |
+| Módulos standard library   | Entorno n8n server                                           | Fijos, no se pueden instalar nuevos|
 
 No hay almacenamiento externo de archivos. Todo el estado vive dentro del workflow n8n. Python no tiene acceso a `$helpers` — usa nodos n8n dedicados para HTTP, fechas avanzadas, etc.
 

@@ -721,11 +721,11 @@ For comprehensive error catalogs and false positive examples:
 
 ## 💾 State Persistence
 
-| Qué | Dónde | Notas |
-|-----|-------|-------|
-| Resultados de validación | Efímeros — solo en memoria | No se persisten entre llamadas |
-| Estado del workflow | Base de datos de la instancia n8n | Persistido vía API |
-| Auto-sanitization | Aplica en cada save/update | No configurable, siempre activo |
+| Qué                     | Dónde                            | Notas                          |
+|------------------------|---------------------------------|-------------------------------|
+| Resultados de validación| Efímeros — solo en memoria       | No se persisten entre llamadas |
+| Estado del workflow     | Base de datos de la instancia n8n| Persistido vía API             |
+| Auto-sanitization       | Aplica en cada save/update       | No configurable, siempre activo|
 
 La validación es completamente efímera — no hay historial de validaciones. Cada llamada es independiente. El estado mutable es el workflow en la base de datos n8n.
 

@@ -54,11 +54,11 @@ Una Desktop Extension es un zip que contiene:
 
 ### Tipos Soportados
 
-| Tipo | Runtime | Caso de Uso |
-|------|---------|-------------|
-| Node.js | Built-in (Claude Desktop shipea Node.js) | La mayoría de MCP servers |
-| Python | Requiere Python instalado | Data science, ML |
-| Binarios/Executables | Native | Performance crítica |
+| Tipo                | Runtime                                 | Caso de Uso              |
+|--------------------|----------------------------------------|-------------------------|
+| Node.js             | Built-in (Claude Desktop shipea Node.js)| La mayoría de MCP servers|
+| Python              | Requiere Python instalado               | Data science, ML         |
+| Binarios/Executables| Native                                  | Performance crítica      |
 
 ### Features de Seguridad
 
@@ -173,12 +173,12 @@ Un tool "think" que no hace nada — es un no-op — pero permite a Claude hacer
 
 ### Think Tool vs Extended Thinking
 
-| Característica | Extended Thinking | Think Tool |
-|----------------|-------------------|------------|
-| Cuándo opera | Antes de generar respuesta | Durante la generación de respuesta |
-| Para qué | Planificar, iterar antes de actuar | Hacer stop y evaluar si tiene toda la info |
-| Mejor para | Coding, math, single tool calls | Tool calls secuenciales, policy-heavy, decisiones con costo |
-| Analogía | Planificar un viaje | Revisar el mapa durante el viaje |
+| Característica  | Extended Thinking                 | Think Tool                                                 |
+|----------------|----------------------------------|-----------------------------------------------------------|
+| Cuándo opera    | Antes de generar respuesta        | Durante la generación de respuesta                         |
+| Para qué        | Planificar, iterar antes de actuar| Hacer stop y evaluar si tiene toda la info                 |
+| Mejor para      | Coding, math, single tool calls   | Tool calls secuenciales, policy-heavy, decisiones con costo|
+| Analogía        | Planificar un viaje               | Revisar el mapa durante el viaje                           |
 
 ### Resultados
 
@@ -261,15 +261,15 @@ Los frameworks pueden ayudar a empezar rápido, pero en producción hay que redu
 
 ### DEL ANÁLISIS DE LOS ARTÍCULOS (Partes 1-3 Completas)
 
-| # | Concepto del Artículo | Status en Nuestro OS | Acción |
-|---|----------------------|---------------------|--------|
-| 1 | **Tool Design con agents** (Post 14) | ⏳ NO implementado | Usar Claude para optimizar tools internas |
-| 2 | **Desktop Extensions packaging** (Post 15) | ⏳ NO implementado | Empaquetar MCP servers como .mcpb |
-| 3 | **Multi-agent Research** (Post 16) | ⏳ NO implementado | Arquitectura orchestrator-worker |
-| 4 | **CLAUDE.md optimization** (Post 17) | ✅ Ya existe | Revisar y refinar |
-| 5 | **Think Tool** (Post 18) | ⏳ NO implementado | Añadir think tool a config |
-| 6 | **SWE-bench style eval** (Post 19) | ⏳ NO implementado | Evaluación tipo SWE-bench para detector |
-| 7 | **Simple composable patterns** (Post 20) | ✅ Parcial | Simplificar workflows existentes |
+| #  | Concepto del Artículo                     | Status en Nuestro OS | Acción                                   |
+|---|------------------------------------------|---------------------|-----------------------------------------|
+| 1  | **Tool Design con agents** (Post 14)      | ⏳ NO implementado    | Usar Claude para optimizar tools internas|
+| 2  | **Desktop Extensions packaging** (Post 15)| ⏳ NO implementado    | Empaquetar MCP servers como .mcpb        |
+| 3  | **Multi-agent Research** (Post 16)        | ⏳ NO implementado    | Arquitectura orchestrator-worker         |
+| 4  | **CLAUDE.md optimization** (Post 17)      | ✅ Ya existe          | Revisar y refinar                        |
+| 5  | **Think Tool** (Post 18)                  | ⏳ NO implementado    | Añadir think tool a config               |
+| 6  | **SWE-bench style eval** (Post 19)        | ⏳ NO implementado    | Evaluación tipo SWE-bench para detector  |
+| 7  | **Simple composable patterns** (Post 20)  | ✅ Parcial            | Simplificar workflows existentes         |
 
 ---
 

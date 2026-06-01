@@ -11,24 +11,24 @@
 
 ## Equipo
 
-| Rol              | Nombre         | Responsabilidad Clave       |
+| Rol              | Nombre          | Responsabilidad Clave       |
 |-----------------|----------------|----------------------------|
-| [PM]            | [Nombre]       | [Responsabilidad]           |
-| [UXD]           | [Nombre]       | [Responsabilidad]           |
-| [Copy]          | [Nombre]       | [Responsabilidad]           |
-| [UID]           | [Nombre]       | [Responsabilidad]           |
-| [FED]           | [Nombre]       | [Responsabilidad]           |
-| [DEV]           | [Nombre]       | [Responsabilidad]           |
+| [PM]             | [Nombre]        | [Responsabilidad]           |
+| [UXD]            | [Nombre]        | [Responsabilidad]           |
+| [Copy]           | [Nombre]        | [Responsabilidad]           |
+| [UID]            | [Nombre]        | [Responsabilidad]           |
+| [FED]            | [Nombre]        | [Responsabilidad]           |
+| [DEV]            | [Nombre]        | [Responsabilidad]           |
 
 ## Línea de Tiempo General
 
-| Fase              | Fechas              | Entregables Clave              |
+| Fase              | Fechas               | Entregables Clave              |
 |------------------|---------------------|-------------------------------|
-| Discovery        | [Fecha] → [Fecha]   | [Entregables]                  |
-| Design           | [Fecha] → [Fecha]   | [Entregables]                  |
-| Build            | [Fecha] → [Fecha]   | [Entregables]                  |
-| QA               | [Fecha] → [Fecha]   | [Entregables]                  |
-| Deliver          | [Fecha] → [Fecha]   | [Entregables]                  |
+| Discovery         | [Fecha] → [Fecha]    | [Entregables]                  |
+| Design            | [Fecha] → [Fecha]    | [Entregables]                  |
+| Build             | [Fecha] → [Fecha]    | [Entregables]                  |
+| QA                | [Fecha] → [Fecha]    | [Entregables]                  |
+| Deliver           | [Fecha] → [Fecha]    | [Entregables]                  |
 
 ## Brecha Técnica a Resolver
 
@@ -42,10 +42,10 @@
 
 ## Riesgos Identificados
 
-| Riesgo                        | Probabilidad | Impacto     | Mitigación                     |
+| Riesgo                        | Probabilidad | Impacto      | Mitigación                      |
 |------------------------------|-------------|-------------|--------------------------------|
-| [Riesgo 1]                   | Alta/Media   | Alto/Medio  | [Plan de mitigación]           |
-| [Riesgo 2]                   | Alta/Media   | Alto/Medio  | [Plan de mitigación]           |
+| [Riesgo 1]                    | Alta/Media   | Alto/Medio   | [Plan de mitigación]            |
+| [Riesgo 2]                    | Alta/Media   | Alto/Medio   | [Plan de mitigación]            |
 
 ---
 

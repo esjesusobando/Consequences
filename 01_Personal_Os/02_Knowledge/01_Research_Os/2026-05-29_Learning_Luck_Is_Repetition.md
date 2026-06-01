@@ -34,12 +34,12 @@ El video desmonta el concepto de suerte como una excusa perezosa para explicar r
 
 El framework central del video es una progresión matemática del esfuerzo:
 
-| Intentos | Nivel                | Qué significa                                   |
-|----------|----------------------|-------------------------------------------------|
-| **10**   | Aprendizaje básico   | Primera exposición, entender los fundamentos     |
-| **100**  | Competencia          | Ya sabes hacerlo, puedes ejecutar con soltura    |
-| **1000** | Talento              | Parece natural, la gente cree que "naciste con eso" |
-| **10000**| Maestría / Dominio   | Eres referente, ejecución óptima que aparenta innata |
+| Intentos  | Nivel                 | Qué significa                                       |
+|----------|----------------------|----------------------------------------------------|
+| **10**    | Aprendizaje básico    | Primera exposición, entender los fundamentos        |
+| **100**   | Competencia           | Ya sabes hacerlo, puedes ejecutar con soltura       |
+| **1000**  | Talento               | Parece natural, la gente cree que "naciste con eso" |
+| **10000** | Maestría / Dominio    | Eres referente, ejecución óptima que aparenta innata|
 
 **La paradoja**: Cuando llegas a maestría (10,000 intentos), el mundo dice "qué suerte tienes" porque no vieron los 9,900 intentos anteriores.
 
@@ -85,11 +85,11 @@ El framework central del video es una progresión matemática del esfuerzo:
 
 ## 4. Analogías y Ejemplos
 
-| Ejemplo | Cómo se aplica |
-|---------|---------------|
-| **El Autor** | Ves a un autor vendiendo millones. No ves los cientos de borradores que nunca vieron la luz, los manuscritos rechazados, las historias tiradas a la basura. La gente dice "qué suerte" — pero fue volumen. |
-| **El Boxeador** | Lo ves levantando el cinturón frente a miles. No ves los golpes lanzados antes del amanecer, los nudillos sangrando, el gimnasio sin público, las repeticiones en silencio total. No fue destino: fue repetición. |
-| **El Innovador / Elon Musk** | Lo ves en portadas por crear empresas revolucionarias. No ves las veces que falló, las veces que empezó de cero. No ves las veces que la mayoría se habría rendido. |
+| Ejemplo                     | Cómo se aplica                                                                                                                                                                                                   |
+|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **El Autor**                | Ves a un autor vendiendo millones. No ves los cientos de borradores que nunca vieron la luz, los manuscritos rechazados, las historias tiradas a la basura. La gente dice "qué suerte" — pero fue volumen.       |
+| **El Boxeador**             | Lo ves levantando el cinturón frente a miles. No ves los golpes lanzados antes del amanecer, los nudillos sangrando, el gimnasio sin público, las repeticiones en silencio total. No fue destino: fue repetición.|
+| **El Innovador / Elon Musk**| Lo ves en portadas por crear empresas revolucionarias. No ves las veces que falló, las veces que empezó de cero. No ves las veces que la mayoría se habría rendido.                                              |
 
 ---
 

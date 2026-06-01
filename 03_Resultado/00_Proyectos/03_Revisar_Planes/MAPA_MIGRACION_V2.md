@@ -71,7 +71,7 @@ Think_Different/ (RAÍZ)
 | `01_Core/04_Agents/`                                  | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                    |
 | `01_Core/05_Mcp/`                                     | `01_Personal_Os/01_Core/02_Tools/03_Mcp/`                       |
 | `01_Core/06_Integrations/`                            | `01_Personal_Os/01_Core/02_Tools/04_Integrations/`              |
-| `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                   | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                     |
+| `01_Personal_Os/01_Core/02_Tools/05_Hooks/`           | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                     |
 | `01_Core/08_Plugins/`                                 | `01_Personal_Os/01_Core/02_Tools/06_Plugins/`                   |
 | `01_Core/09_Server/`                                  | `01_Personal_Os/01_Core/02_Tools/07_Server/`                    |
 | `01_Core/10_Templates/`                               | `01_Personal_Os/01_Core/02_Tools/09_Templates/`                 |

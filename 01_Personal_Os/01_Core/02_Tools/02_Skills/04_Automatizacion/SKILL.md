@@ -19,27 +19,27 @@ Automatización no es reemplazar trabajo humano — es eliminar el trabajo que u
 
 ## Sub-áreas y Contenido
 
-| Sub-área                    | Descripción                     |
-|----------------------------|--------------------------------|
-| `01_N8N_JS/`                | Scripts N8N en JavaScript       |
-| `02_N8N_Python/`            | Scripts N8N en Python           |
-| `03_N8N_Expressions/`       | Expresiones N8N                 |
-| `04_N8N_MCP/`               | MCP nodes para N8N              |
-| `05_N8N_Nodes/`             | Nodos personalizados            |
-| `06_N8N_Validation/`        | Validación en workflows         |
-| `07_N8N_Workflows/`         | Workflows completos             |
-| `08_AI_News_Weekly/`        | AI News Weekly                  |
-| `08_N8N_Invictus/`          | N8N para Invictus               |
-| `09_Firecrawl/`             | Web scraping con Firecrawl      |
-| `10_GWS_Client/`            | Google Workspace Client         |
-| `11_Gcierr/`                | Gcierr tool                     |
-| `11_Gws_Client/`            | GWS Client alternativo          |
-| `12_N8N/`                   | N8N adicional                   |
-| `13_Content_From_Url/`      | Contenido desde URL             |
-| `14_Compound_Knowledge/`    | Compound Knowledge              |
-| `15_Os_Self_Improvement/`   | OS Self Improvement             |
-| `16_Reverse_Engineering/`   | Reverse Engineering             |
-| `17_Learning_Url_To_Knowledge/` | Learning URL to Knowledge   |
+| Sub-área                       | Descripción                     |
+|-------------------------------|--------------------------------|
+| `01_N8N_JS/`                   | Scripts N8N en JavaScript       |
+| `02_N8N_Python/`               | Scripts N8N en Python           |
+| `03_N8N_Expressions/`          | Expresiones N8N                 |
+| `04_N8N_MCP/`                  | MCP nodes para N8N              |
+| `05_N8N_Nodes/`                | Nodos personalizados            |
+| `06_N8N_Validation/`           | Validación en workflows         |
+| `07_N8N_Workflows/`            | Workflows completos             |
+| `08_AI_News_Weekly/`           | AI News Weekly                  |
+| `08_N8N_Invictus/`             | N8N para Invictus               |
+| `09_Firecrawl/`                | Web scraping con Firecrawl      |
+| `10_GWS_Client/`               | Google Workspace Client         |
+| `11_Gcierr/`                   | Gcierr tool                     |
+| `11_Gws_Client/`               | GWS Client alternativo          |
+| `12_N8N/`                      | N8N adicional                   |
+| `13_Content_From_Url/`         | Contenido desde URL             |
+| `14_Compound_Knowledge/`       | Compound Knowledge              |
+| `15_Os_Self_Improvement/`      | OS Self Improvement             |
+| `16_Reverse_Engineering/`      | Reverse Engineering             |
+| `17_Learning_Url_To_Knowledge/`| Learning URL to Knowledge       |
 
 ## Integración
 
@@ -94,12 +94,12 @@ Automatización no es reemplazar trabajo humano — es eliminar el trabajo que u
 
 ## 💾 State Persistence
 
-| Componente | Persistencia | Mecanismo |
-|---|---|---|
-| Workflows N8N | ✅ Permanente | Archivos `.json` exportados en `07_N8N_Workflows/` |
-| Tokens GWS | ⚠️ Por sesión | Refresh token persiste, access token se refresca automáticamente |
-| Resultados de scraping | ❌ No persiste | Firecrawl retorna datos en vivo — capturar output explícitamente |
-| Expresiones N8N reutilizables | ✅ Archivo | Fragmentos `.json` en `03_N8N_Expressions/` |
+| Componente                   | Persistencia | Mecanismo                                                       |
+|-----------------------------|-------------|----------------------------------------------------------------|
+| Workflows N8N                | ✅ Permanente | Archivos `.json` exportados en `07_N8N_Workflows/`              |
+| Tokens GWS                   | ⚠️ Por sesión| Refresh token persiste, access token se refresca automáticamente|
+| Resultados de scraping       | ❌ No persiste| Firecrawl retorna datos en vivo — capturar output explícitamente|
+| Expresiones N8N reutilizables| ✅ Archivo    | Fragmentos `.json` en `03_N8N_Expressions/`                     |
 
 ---
 

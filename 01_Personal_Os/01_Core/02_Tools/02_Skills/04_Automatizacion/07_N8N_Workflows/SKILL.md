@@ -442,12 +442,12 @@ Use `search_templates` and `get_template` from n8n-mcp tools to find examples!
 
 ## 💾 State Persistence
 
-| Qué | Dónde | Notas |
-|-----|-------|-------|
-| Workflow completo (nodos + conexiones) | Base de datos de la instancia n8n | Exportable como archivo JSON |
-| Workflow activo/inactivo | Estado en la DB de n8n | Se activa vía API o UI |
-| Execution history | n8n execution log | Retención configurable |
-| Templates | n8n template library (cloud) | 2,700+ templates disponibles |
+| Qué                                   | Dónde                            | Notas                       |
+|--------------------------------------|---------------------------------|----------------------------|
+| Workflow completo (nodos + conexiones)| Base de datos de la instancia n8n| Exportable como archivo JSON|
+| Workflow activo/inactivo              | Estado en la DB de n8n           | Se activa vía API o UI      |
+| Execution history                     | n8n execution log                | Retención configurable      |
+| Templates                             | n8n template library (cloud)     | 2,700+ templates disponibles|
 
 Los workflows pueden exportarse como archivos `.json` para versionado en git. El estado activo/inactivo es parte del workflow en la DB de n8n.
 

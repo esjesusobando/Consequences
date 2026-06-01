@@ -44,9 +44,9 @@ reviewed: false
 
 ## Tool Usage Summary
 
-| Tool | Count |
-|------|-------|
-| `tool_name` | N |
+| Tool       | Count  |
+|-----------|-------|
+| `tool_name`| N      |
 
 ---
 

@@ -842,13 +842,13 @@ Skill 路径引用均采用**相对本 skill 根目录**的形式（`references/
 
 ### What to persist between sessions
 
-| Dato | Cómo se persiste | Cuándo restaurar |
-|------|-----------------|-----------------|
-| **Brand Spec del proyecto** | `brand-spec.md` en el directorio del proyecto | Al retomar un proyecto con marca específica |
-| **Assets descargados** | `assets/<brand>-brand/` — logos, product shots, UI screenshots | No recargar si ya existen localmente |
-| **Preferencia de dirección de diseño** | Elección del usuario entre variantes, guardada en notas de sesión | Si el usuario pide "seguir con la misma línea" |
-| **Playback position en slides** | localStorage (`localStorage.getItem('deck-current')`) | Al recargar un deck HTML en el navegador |
-| **Tweaks state** | localStorage con clave única por proyecto | Al recargar una página de variantes interactivas |
+| Dato                                  | Cómo se persiste                                                 | Cuándo restaurar                                |
+|--------------------------------------|-----------------------------------------------------------------|------------------------------------------------|
+| **Brand Spec del proyecto**           | `brand-spec.md` en el directorio del proyecto                    | Al retomar un proyecto con marca específica     |
+| **Assets descargados**                | `assets/<brand>-brand/` — logos, product shots, UI screenshots   | No recargar si ya existen localmente            |
+| **Preferencia de dirección de diseño**| Elección del usuario entre variantes, guardada en notas de sesión| Si el usuario pide "seguir con la misma línea"  |
+| **Playback position en slides**       | localStorage (`localStorage.getItem('deck-current')`)            | Al recargar un deck HTML en el navegador        |
+| **Tweaks state**                      | localStorage con clave única por proyecto                        | Al recargar una página de variantes interactivas|
 
 ### Reglas de persistencia
 - **NO** guardar archivos HTML generados en memoria — el filesystem es el source of truth

@@ -549,11 +549,11 @@ For more details, see:
 
 ## 💾 State Persistence
 
-| Qué | Dónde | Notas |
-|-----|-------|-------|
-| Expresiones en campos de nodos | Dentro del workflow JSON de n8n | Persistido al guardar |
-| Contexto de expresión ($json, $node) | En memoria durante ejecución | Efímero, existe solo durante el execution run |
-| Variables de entorno ($env) | Configuración de la instancia n8n | No se setean desde expresiones |
+| Qué                                 | Dónde                            | Notas                                        |
+|------------------------------------|---------------------------------|---------------------------------------------|
+| Expresiones en campos de nodos      | Dentro del workflow JSON de n8n  | Persistido al guardar                        |
+| Contexto de expresión ($json, $node)| En memoria durante ejecución     | Efímero, existe solo durante el execution run|
+| Variables de entorno ($env)         | Configuración de la instancia n8n| No se setean desde expresiones               |
 
 Las expresiones no tienen estado persistente por sí mismas — son referencias dinámicas a datos que fluyen a través del workflow. El estado real está en los datos del workflow en ejecución.
 

@@ -216,11 +216,11 @@ Si las fuentes originales no están disponibles:
 
 ### What to persist between sessions
 
-| Dato | Cómo se persiste | Cuándo restaurar |
-|------|-----------------|-----------------|
-| **Paleta dominante-accento elegida** | Variables CSS o notas de sesión | Al iniciar un nuevo proyecto editorial |
-| **Fallback fonts verificados** | Lista de fuentes disponibles en el sistema/proyecto | Cada sesión — verificar que Knockout/Impact/Bebas están instalados |
-| **Checklist de calidad aprobada** | `mem_save` con el último checklist completado | Si el usuario pide "usar la misma configuración que el proyecto anterior" |
+| Dato                                | Cómo se persiste                                   | Cuándo restaurar                                                         |
+|------------------------------------|---------------------------------------------------|-------------------------------------------------------------------------|
+| **Paleta dominante-accento elegida**| Variables CSS o notas de sesión                    | Al iniciar un nuevo proyecto editorial                                   |
+| **Fallback fonts verificados**      | Lista de fuentes disponibles en el sistema/proyecto| Cada sesión — verificar que Knockout/Impact/Bebas están instalados       |
+| **Checklist de calidad aprobada**   | `mem_save` con el último checklist completado      | Si el usuario pide "usar la misma configuración que el proyecto anterior"|
 
 ### Reglas de persistencia
 - **NO** persistir diseños completos — el output HTML es el source of truth

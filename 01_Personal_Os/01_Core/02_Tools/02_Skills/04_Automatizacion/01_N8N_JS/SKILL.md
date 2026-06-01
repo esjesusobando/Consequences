@@ -732,12 +732,12 @@ Before deploying Code nodes, verify:
 
 ## 💾 State Persistence
 
-| Qué | Dónde | Notas |
-|-----|-------|-------|
-| Código JS del Code node | Dentro del workflow JSON de n8n (propiedad `parameters.code`) | Persistido al guardar el workflow |
-| Variables de entorno ($env) | Configuración de n8n instance | No accesible desde Code node directamente |
-| Output de ejecución | n8n execution log (en UI o API) | Efímero, se pierde al borrar execution history |
-| Token de autenticación ($credentials) | n8n credential vault | Encriptado, no accesible desde código |
+| Qué                                  | Dónde                                                        | Notas                                         |
+|-------------------------------------|-------------------------------------------------------------|----------------------------------------------|
+| Código JS del Code node              | Dentro del workflow JSON de n8n (propiedad `parameters.code`)| Persistido al guardar el workflow             |
+| Variables de entorno ($env)          | Configuración de n8n instance                                | No accesible desde Code node directamente     |
+| Output de ejecución                  | n8n execution log (en UI o API)                              | Efímero, se pierde al borrar execution history|
+| Token de autenticación ($credentials)| n8n credential vault                                         | Encriptado, no accesible desde código         |
 
 No hay almacenamiento externo de archivos — todo el estado vive dentro del workflow n8n o la instancia. Para persistencia externa, usa HTTP Request node o el built-in `$helpers`.
 

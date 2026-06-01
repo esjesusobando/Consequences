@@ -76,12 +76,12 @@ date: "[YYYY-MM-DD]"
 
 ## 💾 State Persistence
 
-| Componente | Persistencia | Mecanismo |
-|---|---|---|
-| Análisis de video | ✅ Archivo | Outputs de Video Intel en `01_Video_Intel/` |
-| Transcripciones | ✅ Archivo | Almacenadas con metadata YAML (título, duración, tema) |
-| Pipeline YouTube | ⚠️ Por sesión | Estado del pipeline en memoria — completar en una sesión |
-| Metadata de videos | ✅ Archivo | Formato YAML embebido en cada archivo de análisis |
+| Componente        | Persistencia | Mecanismo                                               |
+|------------------|-------------|--------------------------------------------------------|
+| Análisis de video | ✅ Archivo    | Outputs de Video Intel en `01_Video_Intel/`             |
+| Transcripciones   | ✅ Archivo    | Almacenadas con metadata YAML (título, duración, tema)  |
+| Pipeline YouTube  | ⚠️ Por sesión| Estado del pipeline en memoria — completar en una sesión|
+| Metadata de videos| ✅ Archivo    | Formato YAML embebido en cada archivo de análisis       |
 
 ---
 

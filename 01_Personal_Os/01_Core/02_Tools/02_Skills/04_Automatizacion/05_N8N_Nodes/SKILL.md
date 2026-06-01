@@ -816,11 +816,11 @@ For comprehensive guides on specific topics:
 
 ## 💾 State Persistence
 
-| Qué | Dónde | Notas |
-|-----|-------|-------|
-| Configuración de nodo individual | Dentro del workflow JSON (propiedad `parameters`) | Persistido al guardar el workflow |
-| Propiedades por operación | Empaquetadas en el MCP server (`get_node`) | Siempre disponibles, sin estado mutable |
-| Credenciales | n8n credential vault | Encriptadas, referenciadas por nombre |
+| Qué                             | Dónde                                            | Notas                                  |
+|--------------------------------|-------------------------------------------------|---------------------------------------|
+| Configuración de nodo individual| Dentro del workflow JSON (propiedad `parameters`)| Persistido al guardar el workflow      |
+| Propiedades por operación       | Empaquetadas en el MCP server (`get_node`)       | Siempre disponibles, sin estado mutable|
+| Credenciales                    | n8n credential vault                             | Encriptadas, referenciadas por nombre  |
 
 El estado de configuración de nodos es completamente declarativo — todo vive dentro del workflow JSON. No hay archivos de configuración externos. Cada nodo es autónomo con sus parámetros.
 

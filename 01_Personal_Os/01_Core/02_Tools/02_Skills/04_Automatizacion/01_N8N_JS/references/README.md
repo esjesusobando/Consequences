@@ -2,12 +2,12 @@
 
 ## Related Guides (in skill root)
 
-| File | Content |
-|------|---------|
-| [DATA_ACCESS.md](../DATA_ACCESS.md) | Comprehensive data access patterns ($input.all, $input.first, $input.item) |
-| [COMMON_PATTERNS.md](../COMMON_PATTERNS.md) | 10 production-tested JavaScript patterns |
-| [ERROR_PATTERNS.md](../ERROR_PATTERNS.md) | Top 5 errors and solutions |
-| [BUILTIN_FUNCTIONS.md](../BUILTIN_FUNCTIONS.md) | Complete built-in reference ($helpers, DateTime, $jmespath) |
+| File                                           | Content                                                                   |
+|-----------------------------------------------|--------------------------------------------------------------------------|
+| [DATA_ACCESS.md](../DATA_ACCESS.md)            | Comprehensive data access patterns ($input.all, $input.first, $input.item)|
+| [COMMON_PATTERNS.md](../COMMON_PATTERNS.md)    | 10 production-tested JavaScript patterns                                  |
+| [ERROR_PATTERNS.md](../ERROR_PATTERNS.md)      | Top 5 errors and solutions                                                |
+| [BUILTIN_FUNCTIONS.md](../BUILTIN_FUNCTIONS.md)| Complete built-in reference ($helpers, DateTime, $jmespath)               |
 
 ## External Resources
 

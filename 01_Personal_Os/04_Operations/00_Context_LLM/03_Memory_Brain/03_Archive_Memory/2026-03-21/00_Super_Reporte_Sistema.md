@@ -206,7 +206,7 @@ Modo de coordinación que delega TODO el trabajo a sub-agentes:
 | Agente                                                             | Purpose                                                                           | Ubicacion                                                                      |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
 | **Thork**                                                          | Investigacion profunda, research                                                  | Skills                                                                         |
-| **Hulk Compound**                                                  | Hooks de seguridad, auditoria                                                     | `.agent/04_Extensions/01_Hooks/`                                                  |
+| **Hulk Compound**                                                  | Hooks de seguridad, auditoria                                                     | `.agent/04_Extensions/01_Hooks/`                                               |
 | **Avengers**                                                       | Code review, calidad                                                              | Skills                                                                         |
 | **Vision Review**                                                  | Revisión estratégica                                                              | Skills                                                                         |
 

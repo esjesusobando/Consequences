@@ -38,13 +38,13 @@ Antes de codificar, entender el contexto:
 
 ### 0.2 Aesthetic Guidelines
 
-| Dimensión | Qué hacer | Qué evitar |
-|-----------|-----------|------------|
-| **Tipografía** | Fuentes hermosas, únicas, con carácter. Combinar una display font distintiva con una body font refinada. | Arial, Inter, Roboto, system-ui genérico |
-| **Color** | Paleta cohesiva con CSS variables. Colores dominantes con acentos precisos. | Paletas tímidas y parejas, degradados púrpura sobre blanco |
-| **Motion** | Animaciones para momentos de alto impacto: staggered reveals, hover states que sorprenden. Priorizar CSS-only. | Micro-interacciones dispersas sin cohesión |
-| **Composición espacial** | Layouts inesperados. Asimetría. Overlap. Flujo diagonal. Elementos que rompen la grilla. | Cuadrícula simétrica predecible |
-| **Backgrounds** | Atmósfera y profundidad: gradient meshes, noise textures, geometric patterns, layered transparencias, grain overlays. | Fondo blanco sólido por defecto |
+| Dimensión               | Qué hacer                                                                                                            | Qué evitar                                                |
+|------------------------|---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+| **Tipografía**          | Fuentes hermosas, únicas, con carácter. Combinar una display font distintiva con una body font refinada.             | Arial, Inter, Roboto, system-ui genérico                  |
+| **Color**               | Paleta cohesiva con CSS variables. Colores dominantes con acentos precisos.                                          | Paletas tímidas y parejas, degradados púrpura sobre blanco|
+| **Motion**              | Animaciones para momentos de alto impacto: staggered reveals, hover states que sorprenden. Priorizar CSS-only.       | Micro-interacciones dispersas sin cohesión                |
+| **Composición espacial**| Layouts inesperados. Asimetría. Overlap. Flujo diagonal. Elementos que rompen la grilla.                             | Cuadrícula simétrica predecible                           |
+| **Backgrounds**         | Atmósfera y profundidad: gradient meshes, noise textures, geometric patterns, layered transparencias, grain overlays.| Fondo blanco sólido por defecto                           |
 
 ### 0.3 Anti-AI-Slop Checklist
 
@@ -427,26 +427,26 @@ Usar este checklist para **gradear** cualquier diseño contra estándares premiu
 
 ### GRUPO TASTE (primer impacto visual)
 
-| # | Criterio | Qué evaluar | Pass/Fail |
-|---|----------|-------------|-----------|
-| 1 | **Point of View** | El brief es específico, no genérico. Hay una dirección clara que se siente en cada sección. | ☐ |
-| 2 | **Typography** | Sin Inter/Roboto/Open Sans. Usa Geist/Outfit/Satoshi + serif editorial para jerarquía. | ☐ |
-| 3 | **Color** | Máximo 5 hex. Sin rainbow. Acento funcional en <5% de la pantalla. | ☐ |
+| #  | Criterio         | Qué evaluar                                                                                | Pass/Fail  |
+|---|-----------------|-------------------------------------------------------------------------------------------|-----------|
+| 1  | **Point of View**| El brief es específico, no genérico. Hay una dirección clara que se siente en cada sección.| ☐          |
+| 2  | **Typography**   | Sin Inter/Roboto/Open Sans. Usa Geist/Outfit/Satoshi + serif editorial para jerarquía.     | ☐          |
+| 3  | **Color**        | Máximo 5 hex. Sin rainbow. Acento funcional en <5% de la pantalla.                         | ☐          |
 
 ### GRUPO SUBSTANCE (contenido y estructura)
 
-| # | Criterio | Qué evaluar | Pass/Fail |
-|---|----------|-------------|-----------|
-| 4 | **Hierarchy** | 3 tamaños que guían el ojo (qué leer 1ro, 2do, 3ro). Nada es del mismo tamaño. | ☐ |
-| 5 | **Imagery** | Assets custom (foto real, AI generado, gráfico). Sin stock photos genéricas. | ☐ |
-| 6 | **Motion** | Micro-interacciones que se sienten vivas. Scroll reveals, cursor effects sutiles. | ☐ |
+| #  | Criterio     | Qué evaluar                                                                      | Pass/Fail  |
+|---|-------------|---------------------------------------------------------------------------------|-----------|
+| 4  | **Hierarchy**| 3 tamaños que guían el ojo (qué leer 1ro, 2do, 3ro). Nada es del mismo tamaño.   | ☐          |
+| 5  | **Imagery**  | Assets custom (foto real, AI generado, gráfico). Sin stock photos genéricas.     | ☐          |
+| 6  | **Motion**   | Micro-interacciones que se sienten vivas. Scroll reveals, cursor effects sutiles.| ☐          |
 
 ### GRUPO FELT QUALITY (la diferencia real)
 
-| # | Criterio | Qué evaluar | Pass/Fail |
-|---|----------|-------------|-----------|
-| 7 | **Mobile** | Diseñado para mobile, no encogido. Navegación colapsada, espaciado ajustado, botones táctiles. | ☐ |
-| 8 | **Invisible Stuff** | Velocidad de carga, transiciones suaves, sin layout shift, sin horizontal scroll. | ☐ |
+| #  | Criterio           | Qué evaluar                                                                                   | Pass/Fail  |
+|---|-------------------|----------------------------------------------------------------------------------------------|-----------|
+| 7  | **Mobile**         | Diseñado para mobile, no encogido. Navegación colapsada, espaciado ajustado, botones táctiles.| ☐          |
+| 8  | **Invisible Stuff**| Velocidad de carga, transiciones suaves, sin layout shift, sin horizontal scroll.             | ☐          |
 
 ### Cómo usar el checklist
 
@@ -465,11 +465,11 @@ Claude devuelve un diagnóstico sección por sección: qué está fuerte, qué e
 
 Nunca le digas a Claude qué cambiar. Decile **cómo querés que se sienta**.
 
-| ❌ Especificación | ✅ Intención |
-|------------------|-------------|
-| "Cambiá el margin de la card a 24px" | "Las cards se sienten apretadas, necesitan más respiro" |
-| "Agregá un gradient en el hero" | "El hero se siente plano, necesita más profundidad" |
-| "Usá este color #991B1B" | "El acento rojo está gritando, hace falta algo más sutil" |
+| ❌ Especificación                    | ✅ Intención                                              |
+|------------------------------------|---------------------------------------------------------|
+| "Cambiá el margin de la card a 24px"| "Las cards se sienten apretadas, necesitan más respiro"  |
+| "Agregá un gradient en el hero"     | "El hero se siente plano, necesita más profundidad"      |
+| "Usá este color #991B1B"            | "El acento rojo está gritando, hace falta algo más sutil"|
 
 ### Paso 1: Batch Fixes por intent (no one-at-a-time)
 
@@ -532,12 +532,12 @@ Esto aplica trailing motion, easing, delays — el tipo de refinamiento que sepa
 
 ### What to persist between sessions
 
-| Dato | Cómo se persiste | Cuándo restaurar |
-|------|-----------------|-----------------|
-| **Design variance elegido** | Variable de entorno o config `DESIGN_VARIANCE`, `MOTION_INTENSITY`, `VISUAL_DENSITY` | Al iniciar un nuevo proyecto con el mismo perfil de producto |
-| **Paleta activa** (claro/oscuro) | Preferencia del último diseño generado | Si el usuario pide "seguir con el mismo tono" |
-| **Stack tipográfico** | Fuentes cargadas y verificadas (`Geist`, `Newsreader`, etc.) | Cada sesión — verificar disponibilidad via `next/font` o CDN |
-| **Anti-patrones evitados** | Memoria de decisiones vía `mem_save` (Engram) | Cuando el usuario pide revisión de diseño previo |
+| Dato                            | Cómo se persiste                                                                    | Cuándo restaurar                                            |
+|--------------------------------|------------------------------------------------------------------------------------|------------------------------------------------------------|
+| **Design variance elegido**     | Variable de entorno o config `DESIGN_VARIANCE`, `MOTION_INTENSITY`, `VISUAL_DENSITY`| Al iniciar un nuevo proyecto con el mismo perfil de producto|
+| **Paleta activa** (claro/oscuro)| Preferencia del último diseño generado                                              | Si el usuario pide "seguir con el mismo tono"               |
+| **Stack tipográfico**           | Fuentes cargadas y verificadas (`Geist`, `Newsreader`, etc.)                        | Cada sesión — verificar disponibilidad via `next/font` o CDN|
+| **Anti-patrones evitados**      | Memoria de decisiones vía `mem_save` (Engram)                                       | Cuando el usuario pide revisión de diseño previo            |
 
 ### Reglas de persistencia
 - **NO** guardar componentes enteros en memoria — el código fuente es el source of truth

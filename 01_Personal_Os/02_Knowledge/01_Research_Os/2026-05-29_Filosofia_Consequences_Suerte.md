@@ -27,13 +27,13 @@ No es teoría — es una descripción de **cómo funciona realmente el sistema q
 Cada intento imperfecto te vuelve más competente. No necesitas que cada acción sea perfecta. Necesitas que cada acción sea **otra repetición**.
 
 ### Aplicación en el OS
-| OS Element | Volumen | Competencia Resultante |
-|-----------|---------|----------------------|
-| Skills     | 385 activas + ~490 legacy | Cobertura de 14 áreas funcionales |
-| Scripts    | 256 scripts (20 HUBs) | Automatización de casi cualquier operación |
-| Agents     | 55 definiciones | Especialización sin dependencia del orquestador |
-| Workflows  | 28 workflows | Método repetible para cada tarea recurrente |
-| MCPs       | 45 servidores (7+38) | Conexión con cualquier herramienta externa |
+| OS Element | Volumen                  | Competencia Resultante                         |
+|-----------|-------------------------|-----------------------------------------------|
+| Skills     | 385 activas + ~490 legacy| Cobertura de 14 áreas funcionales              |
+| Scripts    | 256 scripts (20 HUBs)    | Automatización de casi cualquier operación     |
+| Agents     | 55 definiciones          | Especialización sin dependencia del orquestador|
+| Workflows  | 28 workflows             | Método repetible para cada tarea recurrente    |
+| MCPs       | 45 servidores (7+38)     | Conexión con cualquier herramienta externa     |
 
 **La trampa que evita este principio**: Querer 10 skills perfectas en lugar de 385 skills funcionales. El que busca calidad antes que volumen nunca empieza.
 
@@ -48,13 +48,13 @@ Cada intento imperfecto te vuelve más competente. No necesitas que cada acción
 El "Pure Green State" del OS no es magia. Es el resultado visible de auditorías fallidas, scripts debuggeados a las 2 AM, skills reescritas 3 veces, y 12 versiones del OS (v2.x → v4.9). Nadie ve esos intentos fallidos — solo ven el resultado y dicen "qué suerte tener ese sistema".
 
 ### Aplicación en el OS
-| Lo que se ve | Lo que NO se ve |
-|-------------|-----------------|
-| "v4.9 Consequences — Production Ready" | 7 versiones mayores, decenas de menores, cientos de commits |
-| "385 skills activas" | ~490 skills legacy que fallaron, fueron obsoletas o reemplazadas |
-| "System Guardian ✅ PASS" | Las 50 veces que dio ERROR y hubo que corregir |
-| "Pure Green State" | miles de líneas de auditoría, fixes, y scripts de validación |
-| Engram persistent memory | Las sesiones perdidas por compactación que hubo que reconstruir |
+| Lo que se ve                          | Lo que NO se ve                                                 |
+|--------------------------------------|----------------------------------------------------------------|
+| "v4.9 Consequences — Production Ready"| 7 versiones mayores, decenas de menores, cientos de commits     |
+| "385 skills activas"                  | ~490 skills legacy que fallaron, fueron obsoletas o reemplazadas|
+| "System Guardian ✅ PASS"              | Las 50 veces que dio ERROR y hubo que corregir                  |
+| "Pure Green State"                    | miles de líneas de auditoría, fixes, y scripts de validación    |
+| Engram persistent memory              | Las sesiones perdidas por compactación que hubo que reconstruir |
 
 **Esto cambia cómo explicas el OS**: No digas "tengo un sistema". Di "he repetido esto miles de veces hasta que dejó de parecer esfuerzo".
 
@@ -123,12 +123,12 @@ El mayor riesgo del OS es caer en "refactor perpetual" — reescribir skills que
 
 ### Aplicación al Ciclo de Vida de una Skill en el OS
 
-| Fase | Intentos | Estado | Ejemplo |
-|------|----------|--------|---------|
-| **Instalación** | 0-10 | Aprendizaje | Cargaste la skill, leíste el SKILL.md, la probaste una vez |
-| **Uso regular** | 10-100 | Competencia | La usas en workflows reales, sabes cuándo invocarla |
-| **Internalización** | 100-1000 | Talento | Ya no necesitas leer el SKILL.md, sabes qué hace sin pensar |
-| **Enseñanza/Extensión** | 1000-10000 | Maestría | Modificas la skill, creas variantes, enseñas a otros |
+| Fase                   | Intentos  | Estado     | Ejemplo                                                    |
+|-----------------------|----------|-----------|-----------------------------------------------------------|
+| **Instalación**        | 0-10      | Aprendizaje| Cargaste la skill, leíste el SKILL.md, la probaste una vez |
+| **Uso regular**        | 10-100    | Competencia| La usas en workflows reales, sabes cuándo invocarla        |
+| **Internalización**    | 100-1000  | Talento    | Ya no necesitas leer el SKILL.md, sabes qué hace sin pensar|
+| **Enseñanza/Extensión**| 1000-10000| Maestría   | Modificas la skill, creas variantes, enseñas a otros       |
 
 ### Conexión Directa: Compound Engineering
 El CE philosophy del OS — *"Each unit of engineering work should make subsequent units easier—not harder"* — **es la misma idea matemática**. Cada skill que aprendes no solo suma conocimiento: **multiplica** tu capacidad de aprender la siguiente. Los intentos 10,001 son exponencialmente más valiosos que los primeros 10.
@@ -148,13 +148,13 @@ El nombre **v4.9 Consequences** no es un número de versión cualquiera. "Conseq
 
 ### Mapa de Conexiones Filosóficas
 
-| Principio del Video | Principio del OS Consequences | Refuerzo mutuo |
-|--------------------|------------------------------|----------------|
-| Cantidad → Calidad | 385 skills, 256 scripts, 55 agents | El OS valida empíricamente que el volumen produce capacidad |
-| Proceso invisible | Pure Green State, ~490 skills legacy | Nadie ve el archive — solo el resultado pulido |
-| Volumen estratégico | 14 áreas funcionales, 28 workflows | El OS elige profundidad sobre anchura |
-| Persistencia imperfecta | Auto-Improvement Engine, gr --apply | El OS se repara a sí mismo en vez de buscar perfección estática |
-| Framework 10/100/1000/10000 | CE philosophy, skill adoption curve | Cada skill atraviesa estas fases; el OS lo sabe y no espera maestría instantánea |
+| Principio del Video        | Principio del OS Consequences       | Refuerzo mutuo                                                                  |
+|---------------------------|------------------------------------|--------------------------------------------------------------------------------|
+| Cantidad → Calidad         | 385 skills, 256 scripts, 55 agents  | El OS valida empíricamente que el volumen produce capacidad                     |
+| Proceso invisible          | Pure Green State, ~490 skills legacy| Nadie ve el archive — solo el resultado pulido                                  |
+| Volumen estratégico        | 14 áreas funcionales, 28 workflows  | El OS elige profundidad sobre anchura                                           |
+| Persistencia imperfecta    | Auto-Improvement Engine, gr --apply | El OS se repara a sí mismo en vez de buscar perfección estática                 |
+| Framework 10/100/1000/10000| CE philosophy, skill adoption curve | Cada skill atraviesa estas fases; el OS lo sabe y no espera maestría instantánea|
 
 ### Implicación Profunda
 
@@ -187,10 +187,10 @@ Estas son las frases que mejor sintetizan la filosofía Consequences desde esta 
 
 ## Apéndice: Cómo Usar Este Documento
 
-| Situación | Qué hacer |
-|-----------|-----------|
-| Al sentir que "necesitas suerte" para que algo funcione | Releer Principio 2 (Proceso Invisible) — probablemente ya tienes las repeticiones |
-| Al querer añadir una skill/área nueva | Aplicar Principio 3 (Volumen Estratégico) — ¿esta área merece 10,000 intentos? |
-| Al frustrarte porque una skill no es perfecta | Releer Principio 4 (Persistencia Imperfecta) — hecho > perfecto |
-| Al preguntarte por qué el OS funciona | Releer Principio 1 (Cantidad → Calidad) — no es magia, es volumen |
-| Al explicar el OS a alguien | Usar el Principio 5 (Framework 10/100/1000/10000) — es la mejor metáfora |
+| Situación                                              | Qué hacer                                                                        |
+|-------------------------------------------------------|---------------------------------------------------------------------------------|
+| Al sentir que "necesitas suerte" para que algo funcione| Releer Principio 2 (Proceso Invisible) — probablemente ya tienes las repeticiones|
+| Al querer añadir una skill/área nueva                  | Aplicar Principio 3 (Volumen Estratégico) — ¿esta área merece 10,000 intentos?   |
+| Al frustrarte porque una skill no es perfecta          | Releer Principio 4 (Persistencia Imperfecta) — hecho > perfecto                  |
+| Al preguntarte por qué el OS funciona                  | Releer Principio 1 (Cantidad → Calidad) — no es magia, es volumen                |
+| Al explicar el OS a alguien                            | Usar el Principio 5 (Framework 10/100/1000/10000) — es la mejor metáfora         |

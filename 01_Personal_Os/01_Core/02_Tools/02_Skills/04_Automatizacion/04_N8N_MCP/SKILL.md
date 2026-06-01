@@ -671,12 +671,12 @@ For details, see:
 
 ## 💾 State Persistence
 
-| Qué | Dónde | Notas |
-|-----|-------|-------|
-| Configuración de conexión n8n-mcp | Variables de entorno: `N8N_API_URL`, `N8N_API_KEY` | Requeridas para herramientas de workflow API |
-| Workflow JSON | En la base de datos de la instancia n8n | Accesible vía API |
-| Templates | n8n template library (cloud) | No requiere API key para búsqueda |
-| Tool documentation | Empaquetada en el MCP server | Siempre disponible offline |
+| Qué                              | Dónde                                             | Notas                                       |
+|---------------------------------|--------------------------------------------------|--------------------------------------------|
+| Configuración de conexión n8n-mcp| Variables de entorno: `N8N_API_URL`, `N8N_API_KEY`| Requeridas para herramientas de workflow API|
+| Workflow JSON                    | En la base de datos de la instancia n8n           | Accesible vía API                           |
+| Templates                        | n8n template library (cloud)                      | No requiere API key para búsqueda           |
+| Tool documentation               | Empaquetada en el MCP server                      | Siempre disponible offline                  |
 
 ---
 

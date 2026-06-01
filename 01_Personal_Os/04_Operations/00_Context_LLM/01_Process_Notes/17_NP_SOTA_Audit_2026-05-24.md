@@ -74,32 +74,32 @@ Backup local creado:
 
 ## 🔎 Diagnóstico técnico actual
 
-| Área | Estado | Evidencia | Decisión |
-|---|---|---|---|
-| Git | Limpio antes de documentar | `git status --short` sin cambios | OK |
-| Skills registry | Estable | 158 rutas detectadas, 0 faltantes | OK |
-| Scripts críticos | Parse OK | `config_paths.py`, validators, auditors y monitor parsean | OK |
-| Dependencias live | Sin high audit | `npm audit --audit-level=high` OK en proyectos revisados | OK |
-| `05_OBAND` build | Estable | `npm run build` pasa con Webpack | OK |
-| `05_OBAND` tests | Pendiente funcional | fallan por expectativas de copy distintas al render | No tocar copy web sin aprobación |
-| Vulnerabilidades moderadas | Controladas | requieren `npm audit fix --force` con cambios breaking | No forzar |
-| Rutas legacy | Mayormente histórico/backup | referencias en backups, ejemplos y legacy | No eliminar |
-| Skills sin `license:` | Riesgo bajo/medio | muchos son imports, backups o vendor-like | Normalizar selectivo, no masivo |
+| Área                      | Estado                     | Evidencia                                                | Decisión                        |
+|--------------------------|---------------------------|---------------------------------------------------------|--------------------------------|
+| Git                       | Limpio antes de documentar | `git status --short` sin cambios                         | OK                              |
+| Skills registry           | Estable                    | 158 rutas detectadas, 0 faltantes                        | OK                              |
+| Scripts críticos          | Parse OK                   | `config_paths.py`, validators, auditors y monitor parsean| OK                              |
+| Dependencias live         | Sin high audit             | `npm audit --audit-level=high` OK en proyectos revisados | OK                              |
+| `05_OBAND` build          | Estable                    | `npm run build` pasa con Webpack                         | OK                              |
+| `05_OBAND` tests          | Pendiente funcional        | fallan por expectativas de copy distintas al render      | No tocar copy web sin aprobación|
+| Vulnerabilidades moderadas| Controladas                | requieren `npm audit fix --force` con cambios breaking   | No forzar                       |
+| Rutas legacy              | Mayormente histórico/backup| referencias en backups, ejemplos y legacy                | No eliminar                     |
+| Skills sin `license:`     | Riesgo bajo/medio          | muchos son imports, backups o vendor-like                | Normalizar selectivo, no masivo |
 
 ---
 
 ## 📊 Antes vs Después
 
-| Dimensión | Antes | Después |
-|---|---|---|
-| Planes raíz | Estado no validado en esta sesión | Validados y documentados |
-| Registro de skills | Necesitaba refresh/confirmación | `.atl/skill-registry.md` actualizado y sin rutas faltantes |
-| Dependencias live | Next/React/Playwright con drift y hallazgos high | Parches aplicados; audit high OK |
-| Build `05_OBAND` | Turbopack frágil en ruta Windows profunda | Build estable con `next build --webpack` |
-| Hook GGA | Abría/ejecutaba GGA en cada commit | GGA opt-in con `GGA_PRECOMMIT=1`; secret scanner sigue activo |
-| Contenido web | Riesgo de cambios accidentales por tests/copy | Cambios de texto revertidos; no se tocó copy visible |
-| Legacy/reference docs | Mezcla de histórico y activo | Histórico preservado; no se eliminó info |
-| Pendientes | Implícitos | Pendientes documentados y delimitados |
+| Dimensión            | Antes                                           | Después                                                      |
+|---------------------|------------------------------------------------|-------------------------------------------------------------|
+| Planes raíz          | Estado no validado en esta sesión               | Validados y documentados                                     |
+| Registro de skills   | Necesitaba refresh/confirmación                 | `.atl/skill-registry.md` actualizado y sin rutas faltantes   |
+| Dependencias live    | Next/React/Playwright con drift y hallazgos high| Parches aplicados; audit high OK                             |
+| Build `05_OBAND`     | Turbopack frágil en ruta Windows profunda       | Build estable con `next build --webpack`                     |
+| Hook GGA             | Abría/ejecutaba GGA en cada commit              | GGA opt-in con `GGA_PRECOMMIT=1`; secret scanner sigue activo|
+| Contenido web        | Riesgo de cambios accidentales por tests/copy   | Cambios de texto revertidos; no se tocó copy visible         |
+| Legacy/reference docs| Mezcla de histórico y activo                    | Histórico preservado; no se eliminó info                     |
+| Pendientes           | Implícitos                                      | Pendientes documentados y delimitados                        |
 
 ---
 

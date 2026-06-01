@@ -8,19 +8,19 @@
 
 El config global `~/.config/opencode/opencode.json` tiene **un solo agente primario**:
 
-| Agente | Modo | Descripción |
-|--------|------|-------------|
-| `gentle-orchestrator` | **primary** | Gentle AI SDD Orchestrator — orquesta sub-agentes |
-| `sdd-apply` | subagent | Implementa cambios |
-| `sdd-archive` | subagent | Archiva cambios completados |
-| `sdd-design` | subagent | Diseño técnico |
-| `sdd-explore` | subagent | Investigación |
-| `sdd-init` | subagent | Bootstrap SDD |
-| `sdd-onboard` | subagent | Onboarding SDD |
-| `sdd-propose` | subagent | Propuestas |
-| `sdd-spec` | subagent | Especificaciones |
-| `sdd-tasks` | subagent | Desglose en tareas |
-| `sdd-verify` | subagent | Validación |
+| Agente               | Modo       | Descripción                                      |
+|---------------------|-----------|-------------------------------------------------|
+| `gentle-orchestrator`| **primary**| Gentle AI SDD Orchestrator — orquesta sub-agentes|
+| `sdd-apply`          | subagent   | Implementa cambios                               |
+| `sdd-archive`        | subagent   | Archiva cambios completados                      |
+| `sdd-design`         | subagent   | Diseño técnico                                   |
+| `sdd-explore`        | subagent   | Investigación                                    |
+| `sdd-init`           | subagent   | Bootstrap SDD                                    |
+| `sdd-onboard`        | subagent   | Onboarding SDD                                   |
+| `sdd-propose`        | subagent   | Propuestas                                       |
+| `sdd-spec`           | subagent   | Especificaciones                                 |
+| `sdd-tasks`          | subagent   | Desglose en tareas                               |
+| `sdd-verify`         | subagent   | Validación                                       |
 
 Resultado en el selector de agentes de OpenCode: solo ves `gentle-orchestrator`.
 
@@ -95,12 +95,12 @@ Si preferís tener un solo primario pero con el nombre SDD:
 
 ## Diferencias Clave Entre las Versiones
 
-| Aspecto | Backup (Repo) | Global Actual |
-|---------|--------------|---------------|
-| Agente mentor | `gentleman` (primary) | ❌ eliminado |
-| Orquestador | `sdd-orchestrator` (primary) | `gentle-orchestrator` (primary) |
-| SDD `sdd-onboard` | ❌ no existía | ✅ agregado |
-| Sub-agentes SDD | `hidden: true` | `hidden: false` |
+| Aspecto          | Backup (Repo)               | Global Actual                  |
+|-----------------|----------------------------|-------------------------------|
+| Agente mentor    | `gentleman` (primary)       | ❌ eliminado                    |
+| Orquestador      | `sdd-orchestrator` (primary)| `gentle-orchestrator` (primary)|
+| SDD `sdd-onboard`| ❌ no existía                | ✅ agregado                     |
+| Sub-agentes SDD  | `hidden: true`              | `hidden: false`                |
 
 ---
 

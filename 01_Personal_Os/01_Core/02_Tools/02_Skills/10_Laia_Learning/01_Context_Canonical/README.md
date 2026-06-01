@@ -2,11 +2,11 @@
 
 Templates de los 3 archivos canónicos de Laia Learning que forman el scaffold de contexto de cada proyecto.
 
-| Archivo                    | Propósito                                                    |
+| Archivo                    | Propósito                                                     |
 |---------------------------|--------------------------------------------------------------|
-| `project-context.md`       | Contrato de reglas — límites operativos y anti-alucinación   |
-| `project-operating-data.md`| Matriz de dependencias — estado dinámico del entorno         |
-| `project-brief.md`         | Núcleo del SOW — fases, equipo, objetivos, riesgos           |
+| `project-context.md`       | Contrato de reglas — límites operativos y anti-alucinación    |
+| `project-operating-data.md`| Matriz de dependencias — estado dinámico del entorno          |
+| `project-brief.md`         | Núcleo del SOW — fases, equipo, objetivos, riesgos            |
 
 ## Uso
 

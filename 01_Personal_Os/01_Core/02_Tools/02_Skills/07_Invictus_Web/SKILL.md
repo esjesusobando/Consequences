@@ -63,12 +63,12 @@ npx playwright test
 
 ## 💾 State Persistence
 
-| Componente | Persistencia | Mecanismo |
-|---|---|---|
-| Buscador skills index | ⚠️ Bajo demanda | Se regenera al buscar — no hay índice persistente entre sesiones |
-| Playwright scripts | ✅ Archivo | Scripts en `03_Playwright/` — reutilizables |
-| Superpowers config | ✅ Archivo | Config en `01_Superpowers/` — persistente entre sesiones |
-| Chrome DevTools sesión | ❌ No persiste | Cada sesión DevTools empieza fresh |
+| Componente            | Persistencia   | Mecanismo                                                       |
+|----------------------|---------------|----------------------------------------------------------------|
+| Buscador skills index | ⚠️ Bajo demanda| Se regenera al buscar — no hay índice persistente entre sesiones|
+| Playwright scripts    | ✅ Archivo      | Scripts en `03_Playwright/` — reutilizables                     |
+| Superpowers config    | ✅ Archivo      | Config en `01_Superpowers/` — persistente entre sesiones        |
+| Chrome DevTools sesión| ❌ No persiste  | Cada sesión DevTools empieza fresh                              |
 
 ---
 
