@@ -72,8 +72,8 @@ def task_complete_sound():
                 import winsound
                 winsound.Beep(800, 150)
                 winsound.Beep(1100, 200)
-            except Exception:
-                pass
+             except Exception as e:
+                 print(f"[WARN] System sound or beep failed: {e}")
     else:
         os.system('printf "\\a"')
 

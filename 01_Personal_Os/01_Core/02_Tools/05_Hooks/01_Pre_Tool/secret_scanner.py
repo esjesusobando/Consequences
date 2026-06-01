@@ -168,8 +168,8 @@ def scan_file(filepath, root):
                             "type": label,
                             "match": match.group(0)[:50] + ("..." if len(match.group(0)) > 50 else ""),
                         })
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"[WARN] Failed to read {full_path}: {e}")
 
     return findings
 

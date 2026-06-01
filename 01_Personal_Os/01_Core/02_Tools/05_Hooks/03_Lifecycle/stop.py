@@ -103,8 +103,8 @@ def run_guardian_if_needed():
                         import winsound
 
                         winsound.Beep(1000, 500)
-                    except Exception:
-                        pass  # Linux/macOS
+                     except Exception as e:
+                         print(f"[WARN] Beep failed on Windows: {e}")
                     print(
                         "\nRevisa el reporte: 08_Scripts_Os/Legacy_Backup/guardian_latest.md"
                     )

@@ -46,6 +46,12 @@ OPERATIONS_DIR = ROOT_DIR / "01_Personal_Os" / "04_Operations"
 KNOWLEDGE_DIR  = ROOT_DIR / "01_Personal_Os" / "02_Knowledge"
 ENGINE_DIR     = ROOT_DIR / "01_Personal_Os" / "04_Operations" / "03_Scripts_Os"
 
+# GRAPHIFY INTEGRATION (v6.2+)
+GRAPHIFY_DIR      = ROOT_DIR / "Graphify_Out"  # Salida de Graphify (en raíz del proyecto)
+GRAPHIFY_DB       = GRAPHIFY_DIR / "graph.json"
+GRAPHIFY_REPORT   = GRAPHIFY_DIR / "GRAPH_REPORT.md"
+GRAPHIFY_HTML     = GRAPHIFY_DIR / "graph.html"
+
 # Aliases legacy — usar los canónicos de arriba
 BRAIN_DIR  = OPERATIONS_DIR   # alias legacy → OPERATIONS_DIR
 SYSTEM_DIR = CORE_DIR         # alias legacy → CORE_DIR
