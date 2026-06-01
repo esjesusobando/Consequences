@@ -1,6 +1,13 @@
 # Changelog
 
-## 4.1.0 - 2026-05-11
+## 4.9.0 - 2026-06-01
+
+### Changed — v4.9 Consequences Final Alignment
+- **Structure_v4.8.md** renombrado a **Structure_v4.9.md** y actualizado.
+- **OS_DIRECTORY.md**: Actualizado a v4.9 y fechas corregidas.
+- **CLAUDE.md**: Referencias de v4.0/v4.5/v4.7 actualizadas a v4.9.
+- Todas las fechas maestras actualizadas a 2026-06-01.
+- Documentación central alineada con el estado actual del OS.## 4.1.0 - 2026-05-11
 
 ### Fixed — UltraThink Cleanup + System Sync
 

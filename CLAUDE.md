@@ -157,9 +157,9 @@ La esencia de delegación en PersonalOS sigue el esquema de un **Equipo de Fútb
 
 ---
 
-## 🗺️ KNOWLEDGE MAPS & ARCHITECTURE (v4.0)
+## 🗺️ KNOWLEDGE MAPS & ARCHITECTURE (v4.9)
 
-### 1. ESTRUCTURA BASE (Think_Different — v4.0)
+### 1. ESTRUCTURA BASE (Think_Different — v4.9)
 
 ```
 Think_Different/                           # RAÍZ
@@ -203,7 +203,7 @@ Think_Different/                           # RAÍZ
 └── README.md                    ✅ Documentación principal
 ```
 
-### 2. AGENTS (55 — 5 áreas funcionales — 2026-05-31)
+### 2. AGENTS (55 — 5 áreas funcionales — 2026-06-01)
 
 | Categoría                                   | Ubicación                                                                        |
 |--------------------------------------------|---------------------------------------------------------------------------------|
@@ -236,16 +236,16 @@ Think_Different/                           # RAÍZ
 | 07_Invictus_Web                                  | 07_Invictus_Web/            | Playwright, Superpowers, Browser Auto                         |
 | 10_Laia_Learning                                 | 10_Laia_Learning/           | Sistema de aprendizaje personal                               |
 
-> ⚠️ Audit 2026-05-31: 14 áreas activas, 385 skills verificados contra disco
+> ⚠️ Audit 2026-06-01: 14 áreas activas, 385 skills verificados contra disco
 
-### 4. JARVIS 4.5 — MANIFEST SYSTEM
+### 4. JARVIS 4.9 — MANIFEST SYSTEM
 
 ```text
 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 ├── 01_OS_Inventory.json      # Inventario OS (updated 2026-05-22)
 ├── 02_MCP_Registry.yaml     # 36 MCPs (+1 Higgfield remote)
 ├── 03_Agent_Catalog.yaml    # 55 agentes
-├── 04_Skill_Index.json      # 385 skills en 14 áreas (updated 2026-05-31)
+├── 04_Skill_Index.json      # 385 skills en 14 áreas (updated 2026-06-01)
 ├── 05_HUB_Catalog.yaml     # 20 HUBs + 256 scripts
 ├── 06_Workflow_Graph.yaml   # 27 workflows
 └── 07_Hook_Registry.yaml    # 10 hooks (6 categorías)
@@ -281,11 +281,11 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 
 ---
 
-## 📊 ESTADO DEL SISTEMA (v4.9 — 2026-05-31)
+## 📊 ESTADO DEL SISTEMA (v4.9 — 2026-06-01)
 
 | Categoria                         | Estado                     | Notas                                                          |
 |----------------------------------|---------------------------|---------------------------------------------------------------|
-| **Overall Health**                | **✅ PURE GREEN**           | v4.9 — 2026-05-31 — Docs audit DONE                            |
+| **Overall Health**                | **✅ PURE GREEN**           | v4.9 — 2026-06-01 — Docs audit DONE                            |
 | Estructura (4 raíz)               | ✅ PASS                     | Winter / Personal_Os / Playground / Resultado                  |
 | HUBs (20 + 256 scripts)           | ✅ PASS                     | 20 HUBs (19 numerados + HUB_SOTA)                              |
 | Skills (385, 14 áreas)            | ✅ VERIFIED                 | 14 áreas funcionales — audit 2026-05-31                        |
@@ -299,7 +299,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 
 ---
 
-## 🤖 JARVIS — 4.5 (2026-05-20)
+## 🤖 JARVIS — 4.9 (2026-06-01)
 
 ### Quick Access
 ```bash
@@ -334,7 +334,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 
 ---
 
-## 📍 PATHS CRÍTICOS (v4.0)
+## 📍 PATHS CRÍTICOS (v4.9)
 
 | Recurso                                   | Path CORRECTO                                                                  |
 |------------------------------------------|-------------------------------------------------------------------------------|
@@ -351,7 +351,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 
 ---
 
-**Última actualización:** 2026-05-31
+**Última actualización:** 2026-06-01
 **Versión:** v4.9 Consequences — Judgment Day v3 — Full Project Sync
 
 > ✅ **Migración v4.0 2026-05-13:** Production Ready. Pure Green State. Paths corregidos.

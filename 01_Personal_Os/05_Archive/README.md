@@ -1,7 +1,7 @@
 # 📦 05_Archive — Think Different PersonalOS v4.9
 
 > **Versión:** 4.9 Consequences
-> **Última actualización:** 2026-05-31
+> **Última actualización:** 2026-06-01
 > **Estado:** ✅ Archivado histórico
 
 Carpeta de legado y archivo muerto del sistema. Todo lo que ya no está activo pero se preserva por razones históricas o de referencia.
@@ -131,7 +131,7 @@ Backups, snapshots y reportes de auditoría del sistema.
 
 | Fecha     | Cambio                                                                   |
 |----------|-------------------------------------------------------------------------|
-| 2026-05-31| **v4.9** — README actualizado con estructura real (9 directorios, 00_Skills_Legacy/ añadido)|
+| 2026-06-01| **v4.9** — README actualizado con estructura real (9 directorios, 00_Skills_Legacy/ añadido)|
 | 2026-05-31| **v4.5** — Reorganizado de 15 carpetas a 4 + subcarpetas enumeradas 01-07|
 
 ---
