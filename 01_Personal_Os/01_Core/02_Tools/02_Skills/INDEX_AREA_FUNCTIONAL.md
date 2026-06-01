@@ -8,12 +8,12 @@
 
 ## ÁREA 00: CORE ENGINEERING
 
-| Skill                                       | Path                                          | Descripción                                                  |
-|--------------------------------------------|----------------------------------------------|-------------------------------------------------------------|
-| **Agent Teams Lite**                        | `00_Agent_Teams_Lite/`                        | SDD workflow: init, explore, propose, spec, design, tasks, apply, verify, archive, judgment_day, go_testing, branch_pr, issue_creation |
-| **Compound Engineering**                    | `00_Compound_Engineering/`                    | CE Spider, Avengers, metodología completa                    |
-| **Personal OS Stack**                       | `00_System_Core/`                             | Stack base del OS, System Guardian                           |
-| **Skill Auditor**                           | `00_Skill_Auditor/`                           | Auditoría y validación de skills                             |
+| Skill                                       | Path                                          | Descripción                                                                                                                           |
+|--------------------------------------------|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| **Agent Teams Lite**                        | `00_Agent_Teams_Lite/`                        | SDD workflow: init, explore, propose, spec, design, tasks, apply, verify, archive, judgment_day, go_testing, branch_pr, issue_creation|
+| **Compound Engineering**                    | `00_Compound_Engineering/`                    | CE Spider, Avengers, metodología completa                                                                                             |
+| **Personal OS Stack**                       | `00_System_Core/`                             | Stack base del OS, System Guardian                                                                                                    |
+| **Skill Auditor**                           | `00_Skill_Auditor/`                           | Auditoría y validación de skills                                                                                                      |
 
 ---
 
@@ -78,25 +78,25 @@
 
 | Skill                                        | Path                                                                    | Descripción                                    |
 |---------------------------------------------|------------------------------------------------------------------------|-----------------------------------------------|
-| **N8N Code JavaScript**                      | `04_Automatizacion/01_N8N_JS/`                  | Código JavaScript en N8N                       |
-| **N8N Code Python**                          | `04_Automatizacion/02_N8N_Python/`              | Código Python en N8N                           |
-| **N8N Expression Syntax**                    | `04_Automatizacion/03_N8N_Expressions/`         | Sintaxis de expresiones N8N                    |
-| **N8N MCP Tools Expert**                     | `04_Automatizacion/04_N8N_MCP/`                 | Herramientas MCP en N8N                        |
-| **N8N Nodes**                                | `04_Automatizacion/05_N8N_Nodes/`               | Configuración de nodos N8N                     |
-| **N8N Validation**                           | `04_Automatizacion/06_N8N_Validation/`          | Validación de workflows N8N                    |
-| **N8N Workflow Patterns**                    | `04_Automatizacion/07_N8N_Workflows/`           | Patrones de workflows                          |
-| **AI News Weekly**                           | `04_Automatizacion/08_AI_News_Weekly/`          | News semanal con IA                            |
-| **N8N Invictus**                             | `04_Automatizacion/08_N8N_Invictus/`            | Workflows N8N del ecosistema Invictus          |
-| **Firecrawl Scraper**                        | `04_Automatizacion/10_Firecrawl/`               | Web scraping con Firecrawl                     |
-| **GWS Client**                               | `04_Automatizacion/10_GWS_Client/`              | Cliente Google Workspace                       |
-| **Gcierr**                                   | `04_Automatizacion/11_Gcierr/`                  | Herramientas Gcierr                            |
-| **Gws Client**                               | `04_Automatizacion/11_Gws_Client/`              | Cliente Google Workspace (alternativo)         |
-| **Content From URL**                         | `04_Automatizacion/13_Content_From_Url/`        | Extraer contenido desde URL                    |
-| **Compound Knowledge**                       | `04_Automatizacion/14_Compound_Knowledge/`      | Conocimiento compuesto                         |
-| **N8N (general)**                            | `04_Automatizacion/14_N8n/`                     | Skill N8N general                              |
-| **OS Self Improvement**                      | `04_Automatizacion/15_Os_Self_Improvement/`     | Auto-mejora del OS                             |
-| **Reverse Engineering**                      | `04_Automatizacion/16_Reverse_Engineering/`     | Ingeniería inversa                             |
-| **Learning URL→Knowledge**                   | `04_Automatizacion/17_Learning_Url_To_Knowledge/` | Pipeline URL → conocimiento                   |
+| **N8N Code JavaScript**                      | `04_Automatizacion/01_N8N_JS/`                                          | Código JavaScript en N8N                       |
+| **N8N Code Python**                          | `04_Automatizacion/02_N8N_Python/`                                      | Código Python en N8N                           |
+| **N8N Expression Syntax**                    | `04_Automatizacion/03_N8N_Expressions/`                                 | Sintaxis de expresiones N8N                    |
+| **N8N MCP Tools Expert**                     | `04_Automatizacion/04_N8N_MCP/`                                         | Herramientas MCP en N8N                        |
+| **N8N Nodes**                                | `04_Automatizacion/05_N8N_Nodes/`                                       | Configuración de nodos N8N                     |
+| **N8N Validation**                           | `04_Automatizacion/06_N8N_Validation/`                                  | Validación de workflows N8N                    |
+| **N8N Workflow Patterns**                    | `04_Automatizacion/07_N8N_Workflows/`                                   | Patrones de workflows                          |
+| **AI News Weekly**                           | `04_Automatizacion/08_AI_News_Weekly/`                                  | News semanal con IA                            |
+| **N8N Invictus**                             | `04_Automatizacion/08_N8N_Invictus/`                                    | Workflows N8N del ecosistema Invictus          |
+| **Firecrawl Scraper**                        | `04_Automatizacion/10_Firecrawl/`                                       | Web scraping con Firecrawl                     |
+| **GWS Client**                               | `04_Automatizacion/10_GWS_Client/`                                      | Cliente Google Workspace                       |
+| **Gcierr**                                   | `04_Automatizacion/11_Gcierr/`                                          | Herramientas Gcierr                            |
+| **Gws Client**                               | `04_Automatizacion/11_Gws_Client/`                                      | Cliente Google Workspace (alternativo)         |
+| **Content From URL**                         | `04_Automatizacion/13_Content_From_Url/`                                | Extraer contenido desde URL                    |
+| **Compound Knowledge**                       | `04_Automatizacion/14_Compound_Knowledge/`                              | Conocimiento compuesto                         |
+| **N8N (general)**                            | `04_Automatizacion/14_N8n/`                                             | Skill N8N general                              |
+| **OS Self Improvement**                      | `04_Automatizacion/15_Os_Self_Improvement/`                             | Auto-mejora del OS                             |
+| **Reverse Engineering**                      | `04_Automatizacion/16_Reverse_Engineering/`                             | Ingeniería inversa                             |
+| **Learning URL→Knowledge**                   | `04_Automatizacion/17_Learning_Url_To_Knowledge/`                       | Pipeline URL → conocimiento                    |
 
 ---
 
@@ -141,11 +141,11 @@
 
 | Skill                                    | Path                                                                                  | Descripción                                    |
 |-----------------------------------------|--------------------------------------------------------------------------------------|-----------------------------------------------|
-| **Life OS**                             | `00_Personal_Os/01_Life_OS/`                                                         | Sistema Life OS (5 sub-skills)                 |
-| **Personal OS (Hillary)**               | `00_Personal_Os/02_Personal_Os/`                                                     | Captura rápida, plan diario                    |
-| **Learning Always**                     | `00_Personal_Os/09_Workflow_Os/01_Learning_Always/`                                  | Metodología de aprendizaje continuo con IA     |
-| **Dynamic Workflows**                   | `00_Personal_Os/09_Workflow_Os/02_Dynamic_Workflows/`                                | Pipeline completo de ejecución (11 fases)      |
-| **Fantasticos**                         | `00_Personal_Os/03_Fantasticos/`                                                     | 4 Fantásticos                                 |
+| **Life OS**                              | `00_Personal_Os/01_Life_OS/`                                                          | Sistema Life OS (5 sub-skills)                 |
+| **Personal OS (Hillary)**                | `00_Personal_Os/02_Personal_Os/`                                                      | Captura rápida, plan diario                    |
+| **Learning Always**                      | `00_Personal_Os/09_Workflow_Os/01_Learning_Always/`                                   | Metodología de aprendizaje continuo con IA     |
+| **Dynamic Workflows**                    | `00_Personal_Os/09_Workflow_Os/02_Dynamic_Workflows/`                                 | Pipeline completo de ejecución (11 fases)      |
+| **Fantasticos**                          | `00_Personal_Os/03_Fantasticos/`                                                      | 4 Fantásticos                                  |
 
 ---
 
@@ -171,7 +171,7 @@
 
 | Skill                                     | Path                                  | Descripción                                            |
 |------------------------------------------|--------------------------------------|-------------------------------------------------------|
-| **Skill Auditor**                         | `00_Skill_Auditor/`                   | Auditoría y validación de calidad de skills             |
+| **Skill Auditor**                         | `00_Skill_Auditor/`                   | Auditoría y validación de calidad de skills            |
 
 ---
 
@@ -179,25 +179,25 @@
 
 > Instaladas de Anthropic Skills Library. Disponibles en `~/.claude/skills/` (Claude Code) y `~/.config/opencode/skills/` (OpenCode).
 
-| Skill                  | Path (CC/OC)                        | Tags                                                        | Descripción                                    |
+| Skill                  | Path (CC/OC)                         | Tags                                                         | Descripción                                    |
 |-----------------------|-------------------------------------|-------------------------------------------------------------|-----------------------------------------------|
-| **PDF Processing**     | `pdf/`                              | `pdf`, `document`, `ocr`, `merge`                           | Leer, crear, mergear, dividir, OCR PDFs        |
-| **DOCX Generation**    | `docx/`                             | `docx`, `word`, `document`                                  | Crear y editar documentos Word                 |
-| **PPTX Creation**      | `pptx/`                             | `pptx`, `slides`, `presentation`, `deck`                    | Presentaciones con diseño profesional          |
-| **XLSX Processing**    | `xlsx/`                             | `xlsx`, `excel`, `spreadsheet`, `data`                      | Leer, crear y transformar planillas            |
-| **Claude API**         | `claude-api/`                       | `api`, `claude`, `sdk`, `integration`                       | Integrar Claude API (8 lenguajes)              |
-| **MCP Builder**        | `mcp-builder/`                      | `mcp`, `server`, `tool`, `protocol`                         | Construir servidores MCP                       |
-| **Frontend Design**    | `frontend-design/`                  | `frontend`, `ui`, `react`, `landing`                        | Diseño de interfaces web                       |
-| **Canvas Design**      | `canvas-design/`                    | `canvas`, `font`, `typography`, `graphic`                   | Diseño tipográfico (81 fonts)                  |
-| **Web Artifacts**      | `web-artifacts-builder/`            | `artifact`, `html`, `react`, `shadcn`                       | Artifacts HTML con React+Tailwind              |
-| **Webapp Testing**     | `webapp-testing/`                   | `testing`, `playwright`, `browser`                          | Testing de apps web con Playwright             |
-| **Algorithmic Art**    | `algorithmic-art/`                  | `art`, `generative`, `creative`, `code`                     | Arte generativo con código                     |
-| **Slack GIF Creator**  | `slack-gif-creator/`                | `gif`, `slack`, `emoji`, `animation`                        | GIFs animados para Slack                       |
-| **Theme Factory**      | `theme-factory/`                    | `theme`, `colors`, `fonts`, `branding`                      | 10 temas visuales profesionales                |
-| **Brand Guidelines**   | `brand-guidelines/`                 | `brand`, `guidelines`, `identity`                           | Guías de marca y estilo                        |
-| **Doc Coauthoring**    | `doc-coauthoring/`                  | `document`, `coauthor`, `writing`                           | Coautoría y edición de documentos              |
-| **Internal Comms**     | `internal-comms/`                   | `comms`, `internal`, `memo`, `announcement`                 | Comunicaciones internas                        |
-| **Skill Creator**      | `skill-creator/`                    | `skill`, `create`, `eval`, `iterate`                        | Crear y mejorar skills con evals               |
+| **PDF Processing**     | `pdf/`                               | `pdf`, `document`, `ocr`, `merge`                            | Leer, crear, mergear, dividir, OCR PDFs        |
+| **DOCX Generation**    | `docx/`                              | `docx`, `word`, `document`                                   | Crear y editar documentos Word                 |
+| **PPTX Creation**      | `pptx/`                              | `pptx`, `slides`, `presentation`, `deck`                     | Presentaciones con diseño profesional          |
+| **XLSX Processing**    | `xlsx/`                              | `xlsx`, `excel`, `spreadsheet`, `data`                       | Leer, crear y transformar planillas            |
+| **Claude API**         | `claude-api/`                        | `api`, `claude`, `sdk`, `integration`                        | Integrar Claude API (8 lenguajes)              |
+| **MCP Builder**        | `mcp-builder/`                       | `mcp`, `server`, `tool`, `protocol`                          | Construir servidores MCP                       |
+| **Frontend Design**    | `frontend-design/`                   | `frontend`, `ui`, `react`, `landing`                         | Diseño de interfaces web                       |
+| **Canvas Design**      | `canvas-design/`                     | `canvas`, `font`, `typography`, `graphic`                    | Diseño tipográfico (81 fonts)                  |
+| **Web Artifacts**      | `web-artifacts-builder/`             | `artifact`, `html`, `react`, `shadcn`                        | Artifacts HTML con React+Tailwind              |
+| **Webapp Testing**     | `webapp-testing/`                    | `testing`, `playwright`, `browser`                           | Testing de apps web con Playwright             |
+| **Algorithmic Art**    | `algorithmic-art/`                   | `art`, `generative`, `creative`, `code`                      | Arte generativo con código                     |
+| **Slack GIF Creator**  | `slack-gif-creator/`                 | `gif`, `slack`, `emoji`, `animation`                         | GIFs animados para Slack                       |
+| **Theme Factory**      | `theme-factory/`                     | `theme`, `colors`, `fonts`, `branding`                       | 10 temas visuales profesionales                |
+| **Brand Guidelines**   | `brand-guidelines/`                  | `brand`, `guidelines`, `identity`                            | Guías de marca y estilo                        |
+| **Doc Coauthoring**    | `doc-coauthoring/`                   | `document`, `coauthor`, `writing`                            | Coautoría y edición de documentos              |
+| **Internal Comms**     | `internal-comms/`                    | `comms`, `internal`, `memo`, `announcement`                  | Comunicaciones internas                        |
+| **Skill Creator**      | `skill-creator/`                     | `skill`, `create`, `eval`, `iterate`                         | Crear y mejorar skills con evals               |
 
 ---
 

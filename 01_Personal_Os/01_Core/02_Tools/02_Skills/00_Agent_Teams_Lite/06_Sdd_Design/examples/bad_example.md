@@ -29,10 +29,10 @@ Use Repository pattern with dependency injection.
 
 ## File Changes
 
-| File        | Action   |
+| File         | Action    |
 |-------------|----------|
-| new-file.ts | Create   |
-| another.ts  | Modify   |
+| new-file.ts  | Create    |
+| another.ts   | Modify    |
 ```
 
 ### Why This Is Bad
@@ -128,9 +128,9 @@ Use functional programming with pure functions.
 
 ## File Changes
 
-| File                 | Action   |
+| File                  | Action    |
 |----------------------|----------|
-| src/services/user.ts | Create   |
+| src/services/user.ts  | Create    |
 
 ## Interfaces
 

@@ -4,12 +4,12 @@ Reference materials for the SDD Verify phase.
 
 ## Related Documentation
 
-| Resource | Purpose |
-|----------|---------|
-| [Go `testing` package](https://pkg.go.dev/testing) | Standard library for writing Go tests |
-| [Go `testify`](https://github.com/stretchr/testify) | Popular assertion and mocking library |
-| [pytest docs](https://docs.pytest.org/) | Python test framework |
-| [Vitest docs](https://vitest.dev/) | Vite-native test framework for JS/TS |
+| Resource                                           | Purpose                              |
+|---------------------------------------------------|-------------------------------------|
+| [Go `testing` package](https://pkg.go.dev/testing) | Standard library for writing Go tests|
+| [Go `testify`](https://github.com/stretchr/testify)| Popular assertion and mocking library|
+| [pytest docs](https://docs.pytest.org/)            | Python test framework                |
+| [Vitest docs](https://vitest.dev/)                 | Vite-native test framework for JS/TS |
 
 ## Spec Compliance Patterns
 
@@ -19,17 +19,17 @@ Reference materials for the SDD Verify phase.
 
 ## Common Test Runners
 
-| Project Type | Detection | Command |
-|-------------|-----------|---------|
-| Go | `go.mod` exists | `go test ./...` |
-| Node.js | `package.json` has `scripts.test` | `npm test` / `yarn test` |
-| Python | `pytest.ini` or `pyproject.toml` | `pytest` |
-| Rust | `Cargo.toml` exists | `cargo test` |
+| Project Type | Detection                        | Command                 |
+|-------------|---------------------------------|------------------------|
+| Go           | `go.mod` exists                  | `go test ./...`         |
+| Node.js      | `package.json` has `scripts.test`| `npm test` / `yarn test`|
+| Python       | `pytest.ini` or `pyproject.toml` | `pytest`                |
+| Rust         | `Cargo.toml` exists              | `cargo test`            |
 
 ## Build Commands
 
-| Project Type | Detection | Command |
-|-------------|-----------|---------|
-| Go | `go.mod` exists | `go build ./...` |
-| Node.js + TS | `tsconfig.json` exists | `tsc --noEmit` |
-| Python | `pyproject.toml` | `python -m build` |
+| Project Type | Detection             | Command          |
+|-------------|----------------------|-----------------|
+| Go           | `go.mod` exists       | `go build ./...` |
+| Node.js + TS | `tsconfig.json` exists| `tsc --noEmit`   |
+| Python       | `pyproject.toml`      | `python -m build`|

@@ -37,12 +37,12 @@ Capturar → Triajear → Organizar → Reportar → (loop)
 4. ✅ Si hay items con >48h sin procesar → alertar al usuario
 
 ### En Respuesta a Triggers
-| Usuario dice... | Hillary hace... |
-|----------------|-----------------|
-| "captura X [tag]" | Crea archivo en inbox + Engram save |
-| "plan my day" | Lee inbox + GOALS.md → Schedule |
-| "daily notes" / "registro" | Agrega al log diario |
-| "/hillary" | Workflow completo |
+| Usuario dice...           | Hillary hace...                    |
+|--------------------------|-----------------------------------|
+| "captura X [tag]"         | Crea archivo en inbox + Engram save|
+| "plan my day"             | Lee inbox + GOALS.md → Schedule    |
+| "daily notes" / "registro"| Agrega al log diario               |
+| "/hillary"                | Workflow completo                  |
 
 ### Daily Update Protocol
 Al final de cada jornada o sesión, Hillary DEBE:

@@ -35,33 +35,33 @@ Think_Different/
 
 ## 📂 Estructura 02_Tools
 
-| #   | Carpeta               | Contenido                        | Estado  |
-|----|----------------------|---------------------------------|--------|
-| 01  | `01_Agents/`          | 55 agents (Dream + Specialists + Growth + Individuales) | ✅       |
-| 02  | `02_Skills/`          | 385 skills (14 áreas)            | ✅       |
-| 03  | `03_Mcp/`             | MCP servers (backup config)      | ✅       |
-| 04  | `04_Integrations/`    | Fireflies, Granola               | ✅       |
-| 05  | `05_Hooks/`           | 10 hooks (6 fases)               | ✅       |
-| 06  | `06_Plugins/`         | Plugins OS                       | ✅       |
-| 07  | `07_Server/`          | Engram server                    | ✅       |
-| 08  | `08_Evals/`           | Evaluaciones                     | ✅       |
-| 09  | `09_Templates/`       | Plantillas                       | ✅       |
+| #   | Carpeta               | Contenido                                              | Estado  |
+|----|----------------------|-------------------------------------------------------|--------|
+| 01  | `01_Agents/`          | 55 agents (Dream + Specialists + Growth + Individuales)| ✅       |
+| 02  | `02_Skills/`          | 385 skills (14 áreas)                                  | ✅       |
+| 03  | `03_Mcp/`             | MCP servers (backup config)                            | ✅       |
+| 04  | `04_Integrations/`    | Fireflies, Granola                                     | ✅       |
+| 05  | `05_Hooks/`           | 10 hooks (6 fases)                                     | ✅       |
+| 06  | `06_Plugins/`         | Plugins OS                                             | ✅       |
+| 07  | `07_Server/`          | Engram server                                          | ✅       |
+| 08  | `08_Evals/`           | Evaluaciones                                           | ✅       |
+| 09  | `09_Templates/`       | Plantillas                                             | ✅       |
 
 ---
 
 ## 📊 Resumen de Inventario
 
-| Componente       | Cantidad  | Estado     |
-|-----------------|----------|-----------|
-| Workflows        | 28        | ✅ Activo   |
-| Rules (.mdc)     | 13        | ✅ Definido |
-| Agents           | 55        | ✅ Sync     |
-| Skills           | 385       | ✅ 14 áreas funcionales |
-| MCPs             | 36        | ✅ Activo   |
-| HUBs             | 20        | ✅ Activo   |
-| Scripts totales  | 256       | ✅ Recursivo|
-| JARVIS Manifests | 7         | ✅ Validado |
-| Hooks            | 10        | ✅ 6 fases  |
+| Componente       | Cantidad  | Estado                |
+|-----------------|----------|----------------------|
+| Workflows        | 28        | ✅ Activo              |
+| Rules (.mdc)     | 13        | ✅ Definido            |
+| Agents           | 55        | ✅ Sync                |
+| Skills           | 385       | ✅ 14 áreas funcionales|
+| MCPs             | 36        | ✅ Activo              |
+| HUBs             | 20        | ✅ Activo              |
+| Scripts totales  | 256       | ✅ Recursivo           |
+| JARVIS Manifests | 7         | ✅ Validado            |
+| Hooks            | 10        | ✅ 6 fases             |
 
 ---
 

@@ -17,17 +17,17 @@ description: >
 
 ## Sub-áreas
 
-| Sub-área                  | Descripción                                      |
+| Sub-área                  | Descripción                                       |
 |--------------------------|--------------------------------------------------|
 | `ab-test-setup/`          | Configuración de A/B tests                        |
 | `analytics-tracking/`     | Implementación de tracking y analytics            |
 | `competitor-alternatives/`| Páginas de comparación con competidores           |
 | `free-tool-strategy/`     | Estrategia de herramientas gratuitas              |
-| `paid-ads/`              | Anuncios pagos (Google, Meta, LinkedIn)           |
+| `paid-ads/`               | Anuncios pagos (Google, Meta, LinkedIn)           |
 | `programmatic-seo/`       | SEO programático a escala                         |
 | `referral-program/`       | Programas de referidos                            |
 | `schema-markup/`          | Marcado schema.org y datos estructurados          |
-| `seo-audit/`             | Auditorías técnicas de SEO                        |
+| `seo-audit/`              | Auditorías técnicas de SEO                        |
 | `social-content/`         | Contenido para redes sociales                     |
 
 ## Integración

@@ -14,12 +14,12 @@ When falling back to `none`, recommend the user enable `engram` or `openspec` fo
 
 ## Behavior Per Mode
 
-| Mode       | Read from                                 | Write to                   | Project files   |
+| Mode        | Read from                                  | Write to                    | Project files    |
 |------------|-------------------------------------------|----------------------------|-----------------|
-| `engram`   | Engram (see `engram-convention.md`)       | Engram                     | Never           |
-| `openspec` | Filesystem (see `openspec-convention.md`) | Filesystem                 | Yes             |
-| `hybrid`   | Engram (primary) + Filesystem (fallback)  | Both Engram AND Filesystem | Yes             |
-| `none`     | Orchestrator prompt context               | Nowhere                    | Never           |
+| `engram`    | Engram (see `engram-convention.md`)        | Engram                      | Never            |
+| `openspec`  | Filesystem (see `openspec-convention.md`)  | Filesystem                  | Yes              |
+| `hybrid`    | Engram (primary) + Filesystem (fallback)   | Both Engram AND Filesystem  | Yes              |
+| `none`      | Orchestrator prompt context                | Nowhere                     | Never            |
 
 ### Hybrid Mode
 
@@ -37,12 +37,12 @@ When falling back to `none`, recommend the user enable `engram` or `openspec` fo
 
 The orchestrator persists DAG state after each phase transition. This enables SDD recovery after context compaction.
 
-| Mode       | Persist State                                     | Recover State                                           |
-|------------|---------------------------------------------------|---------------------------------------------------------|
-| `engram`   | `mem_save(topic_key: "sdd/{change-name}/state")`  | `mem_search("sdd/*/state")` → `mem_get_observation(id)` |
-| `openspec` | Write `.atl/openspec/changes/{change-name}/state.yaml` | Read `.atl/openspec/changes/{change-name}/state.yaml`        |
-| `hybrid`   | Both: `mem_save` AND write `state.yaml`           | Engram first; filesystem fallback                       |
-| `none`     | Not possible — state lives only in context        | Not possible — warn user                                |
+| Mode        | Persist State                                         | Recover State                                            |
+|------------|------------------------------------------------------|---------------------------------------------------------|
+| `engram`    | `mem_save(topic_key: "sdd/{change-name}/state")`      | `mem_search("sdd/*/state")` → `mem_get_observation(id)`  |
+| `openspec`  | Write `.atl/openspec/changes/{change-name}/state.yaml`| Read `.atl/openspec/changes/{change-name}/state.yaml`    |
+| `hybrid`    | Both: `mem_save` AND write `state.yaml`               | Engram first; filesystem fallback                        |
+| `none`      | Not possible — state lives only in context            | Not possible — warn user                                 |
 
 ## Common Rules
 

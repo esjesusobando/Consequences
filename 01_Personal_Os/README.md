@@ -26,16 +26,16 @@ El núcleo del sistema operativo personal. Contiene toda la infraestructura, her
 
 ## 📊 ESTADO DEL SISTEMA (v4.9 — 2026-05-26)
 
-| Componente     | Total| Estado                  |
-|---------------|-----|------------------------|
-| Agents         | 46   | ✅ SYNCED — 46↔46        |
-| Skills         | 385  | ✅ VERIFIED — 14 áreas funcionales   |
-| MCPs           | 36   | ✅ SYNCED — drift 0      |
-| HUBs           | 19   | ✅ ACTIVE                |
-| Scripts totales| 284  | ✅ DOCUMENTED — recursivo|
-| Workflows      | 30   | ✅ ACTIVE — 7 categorías |
-| Hooks          | 10   | ✅ ACTIVE — 6 fases      |
-| Rules          | 12   | ✅ DEFINED               |
+| Componente     | Total| Estado                           |
+|---------------|-----|---------------------------------|
+| Agents         | 46   | ✅ SYNCED — 46↔46                 |
+| Skills         | 385  | ✅ VERIFIED — 14 áreas funcionales|
+| MCPs           | 36   | ✅ SYNCED — drift 0               |
+| HUBs           | 19   | ✅ ACTIVE                         |
+| Scripts totales| 284  | ✅ DOCUMENTED — recursivo         |
+| Workflows      | 30   | ✅ ACTIVE — 7 categorías          |
+| Hooks          | 10   | ✅ ACTIVE — 6 fases               |
+| Rules          | 12   | ✅ DEFINED                        |
 
 ---
 

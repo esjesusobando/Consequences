@@ -40,13 +40,13 @@ Cada brief debe contener: objetivo, audiencia, formato, tono, CTA, y criterio de
 
 ## 🔄 Input / Output
 
-| Input | Output |
-|-------|--------|
-| Objetivos de marketing | Brief detallado por pieza de contenido |
-| Buyer persona | Plan de contenido mensual/semanal |
-| Calendario editorial | Topics y ángulos priorizados |
-| Documentación de Contexto/ | Briefs accionables para el Creador |
-| Documentación de Marca/ | KPIs y criterios de éxito |
+| Input                     | Output                                |
+|--------------------------|--------------------------------------|
+| Objetivos de marketing    | Brief detallado por pieza de contenido|
+| Buyer persona             | Plan de contenido mensual/semanal     |
+| Calendario editorial      | Topics y ángulos priorizados          |
+| Documentación de Contexto/| Briefs accionables para el Creador    |
+| Documentación de Marca/   | KPIs y criterios de éxito             |
 
 ---
 

@@ -125,14 +125,14 @@ Ejecutar 7 perfiles en paralelo:
 
 ## 💾 State Persistence
 
-| State              | Almacenamiento                            | Persistencia         |
+| State               | Almacenamiento                             | Persistencia          |
 |--------------------|-------------------------------------------|----------------------|
-| URL original       | Parámetro de invocación                   | Volátil              |
-| Contenido fetchado | Archivo temporal `/tmp/`                  | Sesión (se limpia)   |
-| Outputs parciales  | `[timestamp]_[perfil].md`                | Hasta merge          |
-| Deliverables finales| `02_Knowledge/01_Research_Os/`           | Persistente          |
-| Contexto Engram    | Engram (via mem_save)                     | Persistente          |
-| Action items       | BACKLOG.md                                | Persistente          |
+| URL original        | Parámetro de invocación                    | Volátil               |
+| Contenido fetchado  | Archivo temporal `/tmp/`                   | Sesión (se limpia)    |
+| Outputs parciales   | `[timestamp]_[perfil].md`                  | Hasta merge           |
+| Deliverables finales| `02_Knowledge/01_Research_Os/`             | Persistente           |
+| Contexto Engram     | Engram (via mem_save)                      | Persistente           |
+| Action items        | BACKLOG.md                                 | Persistente           |
 
 Los artifacts intermedios se limpian al finalizar. Solo persisten los deliverables finales,
 el contexto en Engram, y los action items en el backlog.

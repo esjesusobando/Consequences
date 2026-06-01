@@ -18,7 +18,7 @@ description: >
 
 ## Sub-áreas
 
-| Sub-área                      | Descripción                                      |
+| Sub-área                      | Descripción                                       |
 |------------------------------|--------------------------------------------------|
 | `01_Agent_Onboarding/`        | Onboarding de nuevos agentes de marketing         |
 | `02_Executive_Assistant/`     | Asistente ejecutivo con frameworks de prioridad   |

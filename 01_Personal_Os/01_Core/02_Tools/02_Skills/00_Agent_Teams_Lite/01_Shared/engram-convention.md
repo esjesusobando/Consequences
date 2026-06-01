@@ -14,17 +14,17 @@ scope:     project
 
 ### Artifact Types (exact strings)
 
-| Artifact Type    | Produced By   | Description                                     |
+| Artifact Type     | Produced By    | Description                                      |
 |------------------|---------------|-------------------------------------------------|
-| `explore`        | sdd-explore   | Exploration analysis                            |
-| `proposal`       | sdd-propose   | Change proposal                                 |
-| `spec`           | sdd-spec      | Delta specifications (all domains concatenated) |
-| `design`         | sdd-design    | Technical design                                |
-| `tasks`          | sdd-tasks     | Task breakdown                                  |
-| `apply-progress` | sdd-apply     | Implementation progress (one per batch)         |
-| `verify-report`  | sdd-verify    | Verification report                             |
-| `archive-report` | sdd-archive   | Archive closure with lineage                    |
-| `state`          | orchestrator  | DAG state for recovery after compaction         |
+| `explore`         | sdd-explore    | Exploration analysis                             |
+| `proposal`        | sdd-propose    | Change proposal                                  |
+| `spec`            | sdd-spec       | Delta specifications (all domains concatenated)  |
+| `design`          | sdd-design     | Technical design                                 |
+| `tasks`           | sdd-tasks      | Task breakdown                                   |
+| `apply-progress`  | sdd-apply      | Implementation progress (one per batch)          |
+| `verify-report`   | sdd-verify     | Verification report                              |
+| `archive-report`  | sdd-archive    | Archive closure with lineage                     |
+| `state`           | orchestrator   | DAG state for recovery after compaction          |
 
 **Exception**: `sdd-init` uses `sdd-init/{project-name}` as both title and topic_key (it's project-scoped, not change-scoped).
 

@@ -6,20 +6,20 @@
 
 ## 🚨 ESTADO DEL SISTEMA
 
-| Componente                          | Total                                                         | Estado                                       |
-|------------------------------------|--------------------------------------------------------------|---------------------------------------------|
-| MCPs Claude Code                    | **36**                                                        | ✅ SYNCED — drift 0                           |
-| Every CE                            | v3.8.4 (local repo)                                           | ✅ ACTIVE — Local version                     |
-| gentle-ai                           | v1.30.6                                                       | ✅ AVAILABLE                                  |
-| Skills                              | **385** (14 áreas funcionales)                                | ✅ VERIFIED — 0 sin frontmatter               |
-| Agentes                             | **55** (2 Root + 5 Dream + 23 Specialists + 5 Growth + 20 Individuales)| ✅ SYNCED            |
-| HUBs                                | **20** scripts (`*_Hub.py` + HUB_SOTA)                        | ✅ VERIFIED                                   |
-| Scripts totales                     | **256** (recursivo en 03_Scripts_Os/)                         | ✅ DOCUMENTED                                 |
-| Workflows                           | **28** (7 categorías en 00_Workflows_Os)                      | ✅ ACTIVE                                     |
-| Hooks                               | **10** (6 fases)                                              | ✅ ACTIVE                                     |
-| Rules                               | **13 (.mdc)** en 01_Rules                                     | ✅ DEFINED                                    |
-| JARVIS Manifests                    | 7 en 00_Manifest/                                             | ✅ VALIDATED                                  |
-| Open Design                         | 62 skills + 138 design systems                                | ✅ INTEGRATED                                 |
+| Componente                          | Total                                                                  | Estado                                       |
+|------------------------------------|-----------------------------------------------------------------------|---------------------------------------------|
+| MCPs Claude Code                    | **36**                                                                 | ✅ SYNCED — drift 0                           |
+| Every CE                            | v3.8.4 (local repo)                                                    | ✅ ACTIVE — Local version                     |
+| gentle-ai                           | v1.30.6                                                                | ✅ AVAILABLE                                  |
+| Skills                              | **385** (14 áreas funcionales)                                         | ✅ VERIFIED — 0 sin frontmatter               |
+| Agentes                             | **55** (2 Root + 5 Dream + 23 Specialists + 5 Growth + 20 Individuales)| ✅ SYNCED                                     |
+| HUBs                                | **20** scripts (`*_Hub.py` + HUB_SOTA)                                 | ✅ VERIFIED                                   |
+| Scripts totales                     | **256** (recursivo en 03_Scripts_Os/)                                  | ✅ DOCUMENTED                                 |
+| Workflows                           | **28** (7 categorías en 00_Workflows_Os)                               | ✅ ACTIVE                                     |
+| Hooks                               | **10** (6 fases)                                                       | ✅ ACTIVE                                     |
+| Rules                               | **13 (.mdc)** en 01_Rules                                              | ✅ DEFINED                                    |
+| JARVIS Manifests                    | 7 en 00_Manifest/                                                      | ✅ VALIDATED                                  |
+| Open Design                         | 62 skills + 138 design systems                                         | ✅ INTEGRATED                                 |
 
 > **🟢 ÚLTIMA AUDITORÍA:** 2026-05-29 — v4.9 Consequences
 > Skills: 385. HUBs: 20. Workflows: 28. Rules: 13.
@@ -120,7 +120,7 @@ Think_Different/
 
 | Área                                         | Descripción                                               | Skills  |
 |---------------------------------------------|----------------------------------------------------------|--------|
-| 00_Agent_Teams_Lite                         | SDD sub-agentes + JARVIS manifests                        | 13      |
+| 00_Agent_Teams_Lite                          | SDD sub-agentes + JARVIS manifests                        | 13      |
 | 00_Compound_Engineering                      | Core CE — SDD + Compound Engineering                      | 63      |
 | 00_Personal_Os                               | Life OS, Hillary, Rituales                                | 32      |
 | 00_Skill_Auditor                             | Auditoría de skills                                       | 1       |
@@ -144,7 +144,7 @@ Think_Different/
 | 🔍 Search                       | exa, brave-search, stackoverflow                                                    |
 | 🧠 Memory                       | engram, aim-memory-bank, notebooklm                                                 |
 | 📝 Notes                        | Notion, mcp-obsidian, obsidian-api, obsidian-mcp                                    |
-| 🌐 Browser                      | Playwright, chrome-devtools                                                          |
+| 🌐 Browser                      | Playwright, chrome-devtools                                                         |
 | 🤖 AI & Code                    | context7, zai-mcp-server, github, task-master-ai, @magicuidesign/mcp                |
 | 📊 Data                         | supabase, Amplitude, supadata                                                       |
 | 🔄 Workflow                     | n8n-mcp, Linear                                                                     |
@@ -160,11 +160,11 @@ Think_Different/
 
 | Categoría                               | Cantidad                  | Ubicación                                                                    |
 |----------------------------------------|--------------------------|-----------------------------------------------------------------------------|
-| Root (Orchestrator + Template)          | 2                         | Raíz `01_Agents/` (00_Orchestrator, 00_Agent_Template)                      |
+| Root (Orchestrator + Template)          | 2                         | Raíz `01_Agents/` (00_Orchestrator, 00_Agent_Template)                       |
 | Dream Team                              | 5                         | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform)                |
-| Specialists Compound                    | 23                        | `02_Specialists_Compound/` (Architecture → Security)                        |
-| Growth                                  | 5                         | `03_Growth/` (Content Transformer → Carousel)                               |
-| Individuales                            | 20                        | Raíz `01_Agents/` (01-20: Scope, TDD → Newsletter)                         |
+| Specialists Compound                    | 23                        | `02_Specialists_Compound/` (Architecture → Security)                         |
+| Growth                                  | 5                         | `03_Growth/` (Content Transformer → Carousel)                                |
+| Individuales                            | 20                        | Raíz `01_Agents/` (01-20: Scope, TDD → Newsletter)                           |
 
 ---
 
@@ -200,14 +200,14 @@ Think_Different/
 
 | #   | Script                                           | Propósito                                                      |
 |----|-------------------------------------------------|---------------------------------------------------------------|
-| 21  | `21_Legacy_Path_Cleanup.py`                     | Limpia paths legacy v2.x                                       |
-| 22  | `22_Validate_Skill_Frontmatter.py`              | Detecta skills sin frontmatter YAML                            |
-| 24  | `24_mass_path_migration.py`                     | Migración masiva de paths                                      |
-| 26  | `26_Parallel_Audit_Pro.py`                      | Auditoría paralela avanzada                                    |
-| 27  | `27_Skill_Auditor.py`                           | Auditoría específica de skills                                 |
-| 28  | `28_System_Health_Monitor.py`                   | Monitor de salud del sistema                                   |
-| 29  | `29_Repo_Sync_Auditor.py`                       | Auditor de sincronización de repos                             |
-| 30  | `30_path_replacement.py`                        | Reemplazo de paths en archivos                                 |
+| 21  | `21_Legacy_Path_Cleanup.py`                      | Limpia paths legacy v2.x                                       |
+| 22  | `22_Validate_Skill_Frontmatter.py`               | Detecta skills sin frontmatter YAML                            |
+| 24  | `24_mass_path_migration.py`                      | Migración masiva de paths                                      |
+| 26  | `26_Parallel_Audit_Pro.py`                       | Auditoría paralela avanzada                                    |
+| 27  | `27_Skill_Auditor.py`                            | Auditoría específica de skills                                 |
+| 28  | `28_System_Health_Monitor.py`                    | Monitor de salud del sistema                                   |
+| 29  | `29_Repo_Sync_Auditor.py`                        | Auditor de sincronización de repos                             |
+| 30  | `30_path_replacement.py`                         | Reemplazo de paths en archivos                                 |
 
 > ★ = HUB canónico JARVIS 4.5
 

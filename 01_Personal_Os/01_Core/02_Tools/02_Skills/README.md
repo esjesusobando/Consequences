@@ -103,7 +103,7 @@
 | Pipeline completo de ejecución                                 | `00_Personal_Os/09_Workflow_Os/02_Dynamic_Workflows/`       |
 | Invictus Web                                                   | `07_Invictus_Web/`                                          |
 | Claude Ads                                                     | `05_Claude_Ads/`                                            |
-| Context Engineering & Onboarding (Laia Learning)                | `11_Laia_Learning/`                                               |
+| Context Engineering & Onboarding (Laia Learning)               | `11_Laia_Learning/`                                         |
 
 ---
 

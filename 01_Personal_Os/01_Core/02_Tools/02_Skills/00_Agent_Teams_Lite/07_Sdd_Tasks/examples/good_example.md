@@ -64,14 +64,14 @@ First read design.md to understand all file changes and decisions:
 **Location**: .atl/openspec/changes/add-jwt-auth/tasks.md
 
 ### Breakdown
-| Phase   | Tasks   | Focus                             |
+| Phase    | Tasks    | Focus                              |
 |---------|---------|-----------------------------------|
-| Phase 1 | 4       | Foundation - types, utilities     |
-| Phase 2 | 5       | Core - login, middleware, refresh |
-| Phase 3 | 3       | Integration - rotation, logout    |
-| Phase 4 | 6       | Testing - unit + integration      |
-| Phase 5 | 2       | Cleanup - remove old code, docs   |
-| Total   | 20      |                                   |
+| Phase 1  | 4        | Foundation - types, utilities      |
+| Phase 2  | 5        | Core - login, middleware, refresh  |
+| Phase 3  | 3        | Integration - rotation, logout     |
+| Phase 4  | 6        | Testing - unit + integration       |
+| Phase 5  | 2        | Cleanup - remove old code, docs    |
+| Total    | 20       |                                    |
 
 ### Implementation Order
 1. Phase 1 (Foundation) must complete first - other phases depend on jwt.ts

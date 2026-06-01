@@ -164,12 +164,12 @@ export CLAUDE_CODE_FORK_SUBAGENT=1
 
 ## 💾 State Persistence
 
-| State              | Almacenamiento              | Persistencia     |
+| State               | Almacenamiento               | Persistencia      |
 |--------------------|-----------------------------|------------------|
-| Contexto de fork   | Memoria del subagente       | Sesión (volátil) |
-| Output de jugadores| Resumen incorporado al padre| Hasta resuelto   |
-| Scorecard de calidad| GGA / reporte al usuario    | Por invoación    |
-| Plan de partido    | Contexto del Director       | Sesión completa  |
+| Contexto de fork    | Memoria del subagente        | Sesión (volátil)  |
+| Output de jugadores | Resumen incorporado al padre | Hasta resuelto    |
+| Scorecard de calidad| GGA / reporte al usuario     | Por invoación     |
+| Plan de partido     | Contexto del Director        | Sesión completa   |
 
 El estado de los forks no persiste entre sesiones. Cada invocación del skill
 reconstruye el equipo desde el plan actual.

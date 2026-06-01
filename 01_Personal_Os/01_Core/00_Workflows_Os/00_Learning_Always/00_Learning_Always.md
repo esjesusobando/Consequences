@@ -424,15 +424,15 @@ AI:
 
 ## Perfiles de Agente (para prompts)
 
-| #          | Perfil                 | Carpeta SKILL (path relativo a 02_Skills/) |
+| #          | Perfil                 | Carpeta SKILL (path relativo a 02_Skills/)|
 |-----------|-----------------------|------------------------------------------|
-| 01         | Project Manager        | `01_Productividad/01_Project_Manager`      |
-| 02         | Product Manager        | `03_Product_Manager`                       |
-| 03         | Product Design         | `02_Diseno_Ui_Ux/01_Product_Design`        |
-| 04         | Vibe Coding            | `06_Tools/05_Vibe_Coding`                  |
-| 05         | Testing                | `06_Tools/06_Testing`                      |
-| 06         | DevOps                 | `06_Tools/04_DevOps`                       |
-| 07         | Marketing              | `09_Marketing`                             |
+| 01         | Project Manager        | `01_Productividad/01_Project_Manager`     |
+| 02         | Product Manager        | `03_Product_Manager`                      |
+| 03         | Product Design         | `02_Diseno_Ui_Ux/01_Product_Design`       |
+| 04         | Vibe Coding            | `06_Tools/05_Vibe_Coding`                 |
+| 05         | Testing                | `06_Tools/06_Testing`                     |
+| 06         | DevOps                 | `06_Tools/04_DevOps`                      |
+| 07         | Marketing              | `09_Marketing`                            |
 
 ---
 

@@ -13,7 +13,7 @@ description: >
 
 ## Scripts Disponibles
 
-| Script                          | Descripción                                      |
+| Script                          | Descripción                                       |
 |--------------------------------|--------------------------------------------------|
 | `18_Generacion_Contenido.py`    | Generación automatizada de contenido en voz marca |
 

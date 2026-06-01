@@ -34,13 +34,13 @@ Personal OS es el centro nervioso del sistema — no es un conjunto de herramien
 
 ## Metodologías Integradas
 
-| Metodología          | Ubicación                                       | Descripción                              |
+| Metodología          | Ubicación                                       | Descripción                               |
 |---------------------|------------------------------------------------|------------------------------------------|
-| **Hillary**          | `07_Hillary/`                                   | Captura, rutinas, backlog personal       |
+| **Hillary**          | `07_Hillary/`                                   | Captura, rutinas, backlog personal        |
 | **LA Legacy**        | `08_Learning_Always/`                           | Pipeline URL→8 deliverables               |
-| **Learning Always**  | `09_Workflow_Os/01_Learning_Always/`            | Metodología de aprendizaje continuo      |
-| **Dynamic Workflows**| `09_Workflow_Os/02_Dynamic_Workflows/`          | Pipeline completo de ejecución           |
-| **4 Fantásticos**    | `03_Fantasticos/26_Fantasticos/`                | Swarm + Auditor + Engram + Docs          |
+| **Learning Always**  | `09_Workflow_Os/01_Learning_Always/`            | Metodología de aprendizaje continuo       |
+| **Dynamic Workflows**| `09_Workflow_Os/02_Dynamic_Workflows/`          | Pipeline completo de ejecución            |
+| **4 Fantásticos**    | `03_Fantasticos/26_Fantasticos/`                | Swarm + Auditor + Engram + Docs           |
 
 ## Runbook: Daily Standup
 
@@ -91,11 +91,11 @@ Personal OS es el centro nervioso del sistema — no es un conjunto de herramien
 
 ## 💾 State Persistence
 
-| Componente | Persistencia | Mecanismo |
-|---|---|---|
-| Hillary backlog | ✅ Sesión cruzada | Engram mem_save vía `07_Hillary/` SKILL.md + session-summary |
-| Daily report | ✅ Archivo | `Daily_Report.md` en `01_Life_OS/` |
-| Rituales activos | ⚠️ Por sesión | Se pierden al cerrar — capturar en mem_session_summary |
+| Componente      | Persistencia    | Mecanismo                                                   |
+|----------------|----------------|------------------------------------------------------------|
+| Hillary backlog | ✅ Sesión cruzada| Engram mem_save vía `07_Hillary/` SKILL.md + session-summary|
+| Daily report    | ✅ Archivo       | `Daily_Report.md` en `01_Life_OS/`                          |
+| Rituales activos| ⚠️ Por sesión   | Se pierden al cerrar — capturar en mem_session_summary      |
 
 ---
 

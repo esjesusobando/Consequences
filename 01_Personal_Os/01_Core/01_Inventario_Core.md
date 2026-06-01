@@ -85,9 +85,9 @@
 
 ### 06_Youtube_Full_Video — Video Production
 
-| #  | Workflow                 | Función              |
+| #   | Workflow                 | Función              |
 |----|-------------------------|---------------------|
-| 01 | Video production pipeline| Full video production|
+| 01  | Video production pipeline| Full video production|
 
 ---
 
@@ -117,14 +117,14 @@
 
 ### 01_Agents (55 agents) ✅
 
-| Categoría               | Agents   | Detalles                                                                                                                                          |
-|------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Orchestrator**        | 1        | `00_Orchestrator.md`                                                                                                                              |
-| **Agent Template**      | 1        | `00_Agent_Template.md`                                                                                                                            |
-| **Scope Architect**     | 1        | `01_Scope_Rule_Architect.md`                                                                                                                      |
-| **Dream Team**          | 5        | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform)                                                                                     |
-| **Specialists Compound**| 23       | `02_Specialists_Compound/` (review, architecture, framework, data, quality, security, research)                                                   |
-| **Growth**              | 5        | `03_Growth/` (Content Transformer, YouTube Script/Thumbnail/Title, Carousel)                                                                      |
+| Categoría               | Agents   | Detalles                                                                                                                                             |
+|------------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Orchestrator**        | 1        | `00_Orchestrator.md`                                                                                                                                 |
+| **Agent Template**      | 1        | `00_Agent_Template.md`                                                                                                                               |
+| **Scope Architect**     | 1        | `01_Scope_Rule_Architect.md`                                                                                                                         |
+| **Dream Team**          | 5        | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform)                                                                                        |
+| **Specialists Compound**| 23       | `02_Specialists_Compound/` (review, architecture, framework, data, quality, security, research)                                                      |
+| **Growth**              | 5        | `03_Growth/` (Content Transformer, YouTube Script/Thumbnail/Title, Carousel)                                                                         |
 | **Individuales**        | 19       | TDD, React, Security, Git, Accessibility, PRD, Workflow Orchestrator, AIPM Judge, LFG, Hillary, Laia, Marketing, Workflow Youtube/LinkedIn/Newsletter|
 
 ---

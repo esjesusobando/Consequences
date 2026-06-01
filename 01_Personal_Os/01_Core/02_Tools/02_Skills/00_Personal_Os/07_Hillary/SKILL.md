@@ -110,13 +110,13 @@ Usuario → "Tengo una idea" → Hillary captura → Triaje → Backlog o Engram
 
 ## 💾 State Persistence
 
-| State              | Almacenamiento                         | Persistencia         |
+| State               | Almacenamiento                          | Persistencia          |
 |--------------------|----------------------------------------|----------------------|
-| Capturas inbox     | `02_Hillary_Inbox/`                    | Hasta procesado      |
-| Triaje diario      | BACKLOG.md + tags                      | Persistente          |
-| Daily Report       | `Daily_Report.md`                      | Por jornada          |
-| Conflictos activos | Escalado a Gentleman / Engram          | Hasta resolución     |
-| Última rutina      | Memoria de sesión                      | Volátil              |
+| Capturas inbox      | `02_Hillary_Inbox/`                     | Hasta procesado       |
+| Triaje diario       | BACKLOG.md + tags                       | Persistente           |
+| Daily Report        | `Daily_Report.md`                       | Por jornada           |
+| Conflictos activos  | Escalado a Gentleman / Engram           | Hasta resolución      |
+| Última rutina       | Memoria de sesión                       | Volátil               |
 
 El inbox es el único estado duradero. Los reports diarios se sobrescriben cada jornada.
 

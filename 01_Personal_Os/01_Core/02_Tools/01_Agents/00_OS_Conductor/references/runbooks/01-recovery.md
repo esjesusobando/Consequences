@@ -7,13 +7,13 @@
 
 ## 🔍 Diagnóstico Rápido
 
-| Síntoma | Causa probable | Acción inmediata |
-|---------|---------------|------------------|
-| Skill no responde | SKILL.md mal cargado | Re-cargar skill via `skill()` |
-| Output vacío o erróneo | Contexto insuficiente | Re-ejecutar con criterios de contrato + intent explícito |
-| Error en tiempo de ejecución | Dependencia faltante | Verificar prerequisitos de la skill |
-| Tiempo de espera agotado | Skill demasiado compleja | Dividir request en sub-pasos |
-| Skill no encontrada | Path incorrecto en registry | Verificar `registry.md` con `validate-registry.py` |
+| Síntoma                     | Causa probable             | Acción inmediata                                        |
+|----------------------------|---------------------------|--------------------------------------------------------|
+| Skill no responde           | SKILL.md mal cargado       | Re-cargar skill via `skill()`                           |
+| Output vacío o erróneo      | Contexto insuficiente      | Re-ejecutar con criterios de contrato + intent explícito|
+| Error en tiempo de ejecución| Dependencia faltante       | Verificar prerequisitos de la skill                     |
+| Tiempo de espera agotado    | Skill demasiado compleja   | Dividir request en sub-pasos                            |
+| Skill no encontrada         | Path incorrecto en registry| Verificar `registry.md` con `validate-registry.py`      |
 
 ---
 

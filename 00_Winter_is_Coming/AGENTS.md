@@ -509,7 +509,7 @@ gr --agents    # Solo 3 agents
 | Category                                | Command/Tool                                                         |
 |----------------------------------------|---------------------------------------------------------------------|
 | **Daily**                               | "What should I work on?" / "Clear my backlog"                        |
-| **Learn / Research**                    | `skill("learning-always")` or `/ce:brainstorm`                      |
+| **Learn / Research**                    | `skill("learning-always")` or `/ce:brainstorm`                       |
 | **Pipeline completo**                   | `skill("dynamic-workflows")` — 11 fases con skill mapping            |
 | **Plan Feature**                        | `/ce:brainstorm` or `/sdd-propose`                                   |
 | **Execute**                             | `/ce:work` or `/sdd-apply`                                           |
@@ -525,14 +525,14 @@ Hillary corre en segundo plano y se activa SOLA cuando detecta estas señales. N
 
 ### Triggers Automáticos (routing obligatorio)
 
-| Disparo                                                                  | Acción                                    | Prioridad |
+| Disparo                                                                  | Acción                                     | Prioridad  |
 |-------------------------------------------------------------------------|-------------------------------------------|-----------|
-| "capture", "captura", "quick add", "anota", "guarda idea"               | Captura rápida → `02_Hillary_Inbox/`      | 🔴 Alta |
-| "plan my day", "plan día", "qué hago hoy", "organizar día"              | Plan My Day → leer inbox + generar schedule | 🔴 Alta |
-| "daily notes", "log this", "registro", "anotar actividad"               | Daily Notes → agregar a log diario        | 🟡 Media |
-| "/hillary", "life os", "personal productivity"                          | Orquestador → workflow Hillary completo   | 🔴 Alta |
-| El inbox tiene items sin procesar (al iniciar sesión)                   | Procesar inbox + triage automático        | 🔴 Alta |
-| No hay Daily Report del día actual (al iniciar sesión)                  | Preguntar si quiere hacer daily review    | 🟡 Media |
+| "capture", "captura", "quick add", "anota", "guarda idea"                | Captura rápida → `02_Hillary_Inbox/`       | 🔴 Alta     |
+| "plan my day", "plan día", "qué hago hoy", "organizar día"               | Plan My Day → leer inbox + generar schedule| 🔴 Alta     |
+| "daily notes", "log this", "registro", "anotar actividad"                | Daily Notes → agregar a log diario         | 🟡 Media    |
+| "/hillary", "life os", "personal productivity"                           | Orquestador → workflow Hillary completo    | 🔴 Alta     |
+| El inbox tiene items sin procesar (al iniciar sesión)                    | Procesar inbox + triage automático         | 🔴 Alta     |
+| No hay Daily Report del día actual (al iniciar sesión)                   | Preguntar si quiere hacer daily review     | 🟡 Media    |
 
 ### Regla de enrutamiento
 Cualquier mensaje del usuario que coincida con estos triggers → **responder como Hillary**, no como orquestador general. Si el trigger es ambiguo, preguntar "¿Es algo personal/laboral? Así lo derivo a Hillary o a Gentleman."

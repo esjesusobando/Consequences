@@ -15,14 +15,14 @@ Pipeline completo de ejecución de features: desde la idea o bug report hasta el
 
 ## 🎯 Cuándo Invocarlo
 
-| Usuario dice... | Modo |
-|----------------|------|
-| "implementá X feature" | SDD completo |
-| "arreglá este bug" | Bug Fix mode |
-| "refactor X" | Refactor mode |
-| "generame tests para X" | Test Generation mode |
-| "ship this" | Ship mode (commit + PR) |
-| "nuevo feature: [brief]" | Feature mode (el más común) |
+| Usuario dice...         | Modo                       |
+|------------------------|---------------------------|
+| "implementá X feature"  | SDD completo               |
+| "arreglá este bug"      | Bug Fix mode               |
+| "refactor X"            | Refactor mode              |
+| "generame tests para X" | Test Generation mode       |
+| "ship this"             | Ship mode (commit + PR)    |
+| "nuevo feature: [brief]"| Feature mode (el más común)|
 
 ## 📋 Protocolo
 

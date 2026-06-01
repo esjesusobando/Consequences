@@ -10,20 +10,20 @@
 
 ### Skills
 
-| # | Directorio | Skill | Descripcion |
-|---|-----------|-------|-------------|
-| 01 | `01_Gcierr/` | GCIERR | Sistema de branding y diseno consistente |
-| 02 | `02_Hooks/` | Hooks | Hooks y automatizaciones del sistema |
+| #  | Directorio  | Skill  | Descripcion                             |
+|---|------------|-------|----------------------------------------|
+| 01 | `01_Gcierr/`| GCIERR | Sistema de branding y diseno consistente|
+| 02 | `02_Hooks/` | Hooks  | Hooks y automatizaciones del sistema    |
 
 ### Documentos de Sistema
 
-| Archivo | Descripcion |
-|---------|-------------|
-| `SKILL.md` | Definicion del area System Core (master skill) |
-| `01_Personal_Os.md` | Documentacion central del PersonalOS |
-| `02_SDD_Workflow.md` | Workflow SDD (Spec-Driven Development) |
-| `03_System_Guardian.md` | Guardian de integridad del sistema |
-| `04_Backlog_Processing.md` | Procesamiento de backlog y tareas |
+| Archivo                   | Descripcion                                   |
+|--------------------------|----------------------------------------------|
+| `SKILL.md`                | Definicion del area System Core (master skill)|
+| `01_Personal_Os.md`       | Documentacion central del PersonalOS          |
+| `02_SDD_Workflow.md`      | Workflow SDD (Spec-Driven Development)        |
+| `03_System_Guardian.md`   | Guardian de integridad del sistema            |
+| `04_Backlog_Processing.md`| Procesamiento de backlog y tareas             |
 
 ---
 

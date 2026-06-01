@@ -69,12 +69,12 @@ Compound Engineering nace de una verdad incómoda: en el software, el equipo res
 
 ## 💾 State Persistence
 
-| Componente | Persistencia | Mecanismo |
-|---|---|---|
-| Soluciones documentadas | ✅ Permanente | Archivos `.md` en `04_Operations/06_Solutions/` |
-| Categorías disponibles | ✅ Archivo | Directorios en `06_Solutions/` + validación al guardar |
-| Índice de búsqueda | ⚠️ Bajo demanda | Se regenera con cada búsqueda — no hay índice persistente |
-| Vínculos a issues | ✅ En el documento | Formato `Relacionado: #ISSUE-123` incluido en el template |
+| Componente             | Persistencia     | Mecanismo                                                |
+|-----------------------|-----------------|---------------------------------------------------------|
+| Soluciones documentadas| ✅ Permanente     | Archivos `.md` en `04_Operations/06_Solutions/`          |
+| Categorías disponibles | ✅ Archivo        | Directorios en `06_Solutions/` + validación al guardar   |
+| Índice de búsqueda     | ⚠️ Bajo demanda  | Se regenera con cada búsqueda — no hay índice persistente|
+| Vínculos a issues      | ✅ En el documento| Formato `Relacionado: #ISSUE-123` incluido en el template|
 
 ---
 

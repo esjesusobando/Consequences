@@ -16,36 +16,36 @@ alwaysApply: false
 
 ## Sub-áreas
 
-| # | Sub-área | Descripción | Estado |
-|---|----------|-------------|--------|
-| 01 | `01_Product_Design/` | Diseño de producto — 12 sub-skills (Taste → Shadcn) | ✅ SKILL.md promovido desde subdirectorio |
-| 02 | `02_Taste_Skills/` | Taste skills — Alto impacto visual con criterio estético | ✅ SKILL.md promovido desde subdirectorio |
-| 03 | `03_Diseno_Minimalista/` | Minimalismo utilitario premium + UI editorial | ✅ SKILL.md promovido desde subdirectorio |
-| 04 | `04_Directrices_Marca/` | Directrices de marca y guías de estilo | ✅ SKILL.md promovido desde subdirectorio |
-| 05 | `05_Excalidraw_Flowchart/` | Diagramas Excalidraw de argumentación visual | ✅ SKILL.md promovido desde subdirectorio |
-| 06 | `06_Design_Sota/` | **Design SOTA** — Arquitecto de interfaces premium | ✅ Referencia de calidad |
-| 07 | `07_Ui_Ux_Pro_Max/` | UI/UX Pro Max — Base de datos de diseño consultable | ✅ Completa (path stale corregido) |
-| 08 | `08_Huashu_Design/` | Huashu Design — Prototipado HTML de alta fidelidad | ✅ Completa |
-| 09 | `09_Dumbledor_Design/` | Diseño editorial de alto impacto | ✅ Completa |
-| 10 | `10_Design_Systems/` | Sistemas de diseño (atomic design, tokens, shadcn) | ✅ Completa |
-| 11 | `11_Marvel_Avengers/` | Marvel Avengers — Workflow multi-agente de diseño | ✅ Skill de proceso |
-| **12** | **`12_Premium_Image_Studio/`** | Suite creativa — Identidades visuales, banners y activos digitales | 📦 Migrada de Content |
-| **13** | **`13_Carousel_Master/`** | Automatización de carruseles Instagram/LinkedIn | 📦 Migrada de Content |
-| **14** | **`14_Video_Visuals_Producer/`** | Producción de assets visuales y presentaciones | 📦 Migrada de Content |
-| **15** | **`15_Youtube_Thumbnail_Prompter/`** | Prompts optimizados para miniaturas YouTube | 📦 Migrada de Content |
-| **16** | **`16_Video_Prompt_Builder/`** | Prompts detallados para video AI (Seedance) | 📦 Migrada de Content |
+| #     | Sub-área                            | Descripción                                                       | Estado                                  |
+|------|------------------------------------|------------------------------------------------------------------|----------------------------------------|
+| 01    | `01_Product_Design/`                | Diseño de producto — 12 sub-skills (Taste → Shadcn)               | ✅ SKILL.md promovido desde subdirectorio|
+| 02    | `02_Taste_Skills/`                  | Taste skills — Alto impacto visual con criterio estético          | ✅ SKILL.md promovido desde subdirectorio|
+| 03    | `03_Diseno_Minimalista/`            | Minimalismo utilitario premium + UI editorial                     | ✅ SKILL.md promovido desde subdirectorio|
+| 04    | `04_Directrices_Marca/`             | Directrices de marca y guías de estilo                            | ✅ SKILL.md promovido desde subdirectorio|
+| 05    | `05_Excalidraw_Flowchart/`          | Diagramas Excalidraw de argumentación visual                      | ✅ SKILL.md promovido desde subdirectorio|
+| 06    | `06_Design_Sota/`                   | **Design SOTA** — Arquitecto de interfaces premium                | ✅ Referencia de calidad                 |
+| 07    | `07_Ui_Ux_Pro_Max/`                 | UI/UX Pro Max — Base de datos de diseño consultable               | ✅ Completa (path stale corregido)       |
+| 08    | `08_Huashu_Design/`                 | Huashu Design — Prototipado HTML de alta fidelidad                | ✅ Completa                              |
+| 09    | `09_Dumbledor_Design/`              | Diseño editorial de alto impacto                                  | ✅ Completa                              |
+| 10    | `10_Design_Systems/`                | Sistemas de diseño (atomic design, tokens, shadcn)                | ✅ Completa                              |
+| 11    | `11_Marvel_Avengers/`               | Marvel Avengers — Workflow multi-agente de diseño                 | ✅ Skill de proceso                      |
+| **12**| **`12_Premium_Image_Studio/`**      | Suite creativa — Identidades visuales, banners y activos digitales| 📦 Migrada de Content                    |
+| **13**| **`13_Carousel_Master/`**           | Automatización de carruseles Instagram/LinkedIn                   | 📦 Migrada de Content                    |
+| **14**| **`14_Video_Visuals_Producer/`**    | Producción de assets visuales y presentaciones                    | 📦 Migrada de Content                    |
+| **15**| **`15_Youtube_Thumbnail_Prompter/`**| Prompts optimizados para miniaturas YouTube                       | 📦 Migrada de Content                    |
+| **16**| **`16_Video_Prompt_Builder/`**      | Prompts detallados para video AI (Seedance)                       | 📦 Migrada de Content                    |
 
 ---
 
 ## Skills Principales
 
-| Skill | Directorio | Trigger principal |
-|-------|-----------|-----------------|
-| **Design SOTA** | `06_Design_Sota/` | UIs premium, bento grid, paletas monocromáticas |
-| **UI/UX Pro Max** | `07_Ui_Ux_Pro_Max/` | Sistema de recomendación de diseño vía CLI |
-| **Huashu Design** | `08_Huashu_Design/` | Prototipado HTML, animación, diseño visual |
-| **Premium Image** | `12_Premium_Image_Studio/` | Identidad visual, banners, activos digitales |
-| **Carousel Master** | `13_Carousel_Master/` | Carruseles IG/LinkedIn |
+| Skill              | Directorio                | Trigger principal                              |
+|-------------------|--------------------------|-----------------------------------------------|
+| **Design SOTA**    | `06_Design_Sota/`         | UIs premium, bento grid, paletas monocromáticas|
+| **UI/UX Pro Max**  | `07_Ui_Ux_Pro_Max/`       | Sistema de recomendación de diseño vía CLI     |
+| **Huashu Design**  | `08_Huashu_Design/`       | Prototipado HTML, animación, diseño visual     |
+| **Premium Image**  | `12_Premium_Image_Studio/`| Identidad visual, banners, activos digitales   |
+| **Carousel Master**| `13_Carousel_Master/`     | Carruseles IG/LinkedIn                         |
 
 ## Metodologías Integradas
 
@@ -93,24 +93,24 @@ alwaysApply: false
 
 ## Estado de las sub-áreas
 
-| Estado | Significado |
-|--------|------------|
-| ✅ Completa | SKILL.md completo con triggers, contenido, gotchas |
-| ⚠️ Requiere revisión | Estructura interna legacy o SKILL.md faltante |
-| 📦 Migrada | Movida desde `01_Creacion_Contenidos/` en esta iteración |
+| Estado              | Significado                                             |
+|--------------------|--------------------------------------------------------|
+| ✅ Completa          | SKILL.md completo con triggers, contenido, gotchas      |
+| ⚠️ Requiere revisión| Estructura interna legacy o SKILL.md faltante           |
+| 📦 Migrada           | Movida desde `01_Creacion_Contenidos/` en esta iteración|
 
 ---
 
 ## 💾 State Persistence
 
-| Componente | Persistencia | Mecanismo |
-|---|---|---|
-| Design system generado | ✅ Archivo | `--persist` en `07_Ui_Ux_Pro_Max/` |
-| Prototipos HTML | ✅ Archivo | Outputs de `08_Huashu_Design/` |
-| Assets visuales | ✅ Archivo | `12_Premium_Image_Studio/` |
-| Carruseles | ✅ Archivo | `13_Carousel_Master/` |
-| Thumbnail prompts | ✅ Archivo | `15_Youtube_Thumbnail_Prompter/` |
-| Video prompts | ✅ Archivo | `16_Video_Prompt_Builder/` |
+| Componente            | Persistencia| Mecanismo                         |
+|----------------------|------------|----------------------------------|
+| Design system generado| ✅ Archivo   | `--persist` en `07_Ui_Ux_Pro_Max/`|
+| Prototipos HTML       | ✅ Archivo   | Outputs de `08_Huashu_Design/`    |
+| Assets visuales       | ✅ Archivo   | `12_Premium_Image_Studio/`        |
+| Carruseles            | ✅ Archivo   | `13_Carousel_Master/`             |
+| Thumbnail prompts     | ✅ Archivo   | `15_Youtube_Thumbnail_Prompter/`  |
+| Video prompts         | ✅ Archivo   | `16_Video_Prompt_Builder/`        |
 
 ---
 

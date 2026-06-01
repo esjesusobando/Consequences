@@ -83,9 +83,9 @@ The login endpoint MUST validate credentials and return JWT tokens...
 **Archived to**: .atl/openspec/changes/archive/2026-03-30-add-jwt-auth/
 
 ### Specs Synced
-| Domain         | Action   | Details                                      |
+| Domain          | Action    | Details                                       |
 |----------------|----------|----------------------------------------------|
-| authentication | Updated  | 3 added requirements, 1 modified requirement |
+| authentication  | Updated   | 3 added requirements, 1 modified requirement  |
 
 ### Archive Contents
 - proposal.md ✅
@@ -155,9 +155,9 @@ Created directory: `.atl/openspec/specs/notifications/`
 **Archived to**: .atl/openspec/changes/archive/2026-03-30-add-notifications/
 
 ### Specs Synced
-| Domain        | Action   | Details                       |
+| Domain         | Action    | Details                        |
 |---------------|----------|-------------------------------|
-| notifications | Created  | Full spec copied (new domain) |
+| notifications  | Created   | Full spec copied (new domain)  |
 
 ### Archive Contents
 - proposal.md ✅
@@ -254,9 +254,9 @@ mkdir -p .atl/openspec/changes/archive
 **Archived to**: .atl/openspec/changes/archive/2026-03-30-add-metrics/
 
 ### Specs Synced
-| Domain   | Action   | Details    |
+| Domain    | Action    | Details     |
 |----------|----------|------------|
-| metrics  | Created  | New domain |
+| metrics   | Created   | New domain  |
 
 ### Archive Contents
 - proposal.md ✅

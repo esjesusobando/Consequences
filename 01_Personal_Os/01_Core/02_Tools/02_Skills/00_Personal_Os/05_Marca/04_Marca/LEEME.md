@@ -11,11 +11,11 @@ Aquí se almacena la identidad visual y verbal de la marca:
 
 ## Agentes que lo usan
 
-| Agente | Cómo usa la marca |
-|--------|-------------------|
-| `15_Marketing_Estratega.md` | Verifica que briefs usen tono y estilo correctos |
-| `16_Marketing_Creador.md` | Aplica colores, tipografía y tono en cada pieza |
-| `17_Marketing_Analista.md` | Evalúa consistencia de marca en contenido publicado |
+| Agente                     | Cómo usa la marca                                  |
+|---------------------------|---------------------------------------------------|
+| `15_Marketing_Estratega.md`| Verifica que briefs usen tono y estilo correctos   |
+| `16_Marketing_Creador.md`  | Aplica colores, tipografía y tono en cada pieza    |
+| `17_Marketing_Analista.md` | Evalúa consistencia de marca en contenido publicado|
 
 ## Estructura recomendada
 

@@ -70,7 +70,7 @@ Think_Different/
 | 09                             | [09_Agent_Teams_Protocol.mdc](./09_Agent_Teams_Protocol.mdc)                            | **Agent Teams Protocol**                               | Multi-agente: boot, delegación, Super Campeones                              |
 | 10                             | [10_Git_Directions.mdc](./10_Git_Directions.mdc)                                        | **Git Directions**                                     | URLs de repos y remotes actualizados                                         |
 | 11                             | [11_Minimax.mdc](./11_Minimax.mdc)                                                      | **Minimax**                                            | Configuración y integración con Minimax                                      |
-| 12                             | [12_Audit_OS_Integrity.mdc](./12_Audit_OS_Integrity.mdc)                        | **Integridad y Auditoría OS**                          | Auditoría no destructiva, preservación histórica y verificación estructural  |
+| 12                             | [12_Audit_OS_Integrity.mdc](./12_Audit_OS_Integrity.mdc)                                | **Integridad y Auditoría OS**                          | Auditoría no destructiva, preservación histórica y verificación estructural  |
 
 ---
 

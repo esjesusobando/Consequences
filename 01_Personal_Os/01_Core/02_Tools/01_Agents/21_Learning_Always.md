@@ -15,13 +15,13 @@ Aprendizaje estructurado con IA en 4 fases. No es "buscar en Google" — es un *
 
 ## 🎯 Cuándo Invocarlo
 
-| Usuario dice... | Acción |
-|----------------|--------|
-| "investigá / investigame X" | Activar protocolo completo |
-| "aprendamos X" | Activar protocolo completo |
-| "qué sabés sobre X" | Si requiere deep-dive → LA; si es simple → responder directo |
-| "hacé research de X" | Activar protocolo completo |
-| "deep-dive en X" | Activar protocolo completo |
+| Usuario dice...            | Acción                                                      |
+|---------------------------|------------------------------------------------------------|
+| "investigá / investigame X"| Activar protocolo completo                                  |
+| "aprendamos X"             | Activar protocolo completo                                  |
+| "qué sabés sobre X"        | Si requiere deep-dive → LA; si es simple → responder directo|
+| "hacé research de X"       | Activar protocolo completo                                  |
+| "deep-dive en X"           | Activar protocolo completo                                  |
 
 ## 📋 Protocolo
 

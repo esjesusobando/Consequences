@@ -76,12 +76,12 @@ Usuario → Director → Jugadores → Árbitro → Director → Usuario
 
 ## 💾 State Persistence
 
-| Componente | Persistencia | Mecanismo |
-|---|---|---|
-| Workflow activo | ⚠️ Por sesión | Estado en memoria — se pierde al cerrar sesión |
-| Resultados de fase | ✅ Archivo | Checkpoints en `00_Workflows/00_Workflows_Os/.checkpoints/` |
-| Config de equipos | ✅ Permanente | SKILL.md de cada equipo en su directorio |
-| Historial de ejecuciones | ❌ No persiste | Cada ejecución empieza fresh |
+| Componente              | Persistencia | Mecanismo                                                  |
+|------------------------|-------------|-----------------------------------------------------------|
+| Workflow activo         | ⚠️ Por sesión| Estado en memoria — se pierde al cerrar sesión             |
+| Resultados de fase      | ✅ Archivo    | Checkpoints en `00_Workflows/00_Workflows_Os/.checkpoints/`|
+| Config de equipos       | ✅ Permanente | SKILL.md de cada equipo en su directorio                   |
+| Historial de ejecuciones| ❌ No persiste| Cada ejecución empieza fresh                               |
 
 ---
 

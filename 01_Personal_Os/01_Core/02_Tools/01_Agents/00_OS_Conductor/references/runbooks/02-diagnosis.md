@@ -80,11 +80,11 @@ Recommended actions:
 
 ## 🚨 Escalation Thresholds
 
-| Health | Score | Action |
-|--------|-------|--------|
-| 🟢 GREEN | Todo OK | Report and continue |
-| 🟡 YELLOW | 1-2 issues non-critical | Report, suggest fixes |
-| 🔴 RED | 3+ issues or any critical | Escalate to user, stop automation |
+| Health  | Score                    | Action                           |
+|--------|-------------------------|---------------------------------|
+| 🟢 GREEN | Todo OK                  | Report and continue              |
+| 🟡 YELLOW| 1-2 issues non-critical  | Report, suggest fixes            |
+| 🔴 RED   | 3+ issues or any critical| Escalate to user, stop automation|
 
 ---
 

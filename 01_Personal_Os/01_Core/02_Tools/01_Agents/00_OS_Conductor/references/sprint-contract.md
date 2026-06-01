@@ -42,18 +42,18 @@ Status: [PROPOSED | AGREED | IN_PROGRESS | FULFILLED | REJECTED]
 Nunca empieces un flujo compuesto sin un contract firmado.
 
 ### 2. Criterios específicos y verificables
-| ❌ Mal | ✅ Bien |
-|--------|---------|
-| "La campaña debe estar lista" | "Campaña de ads configurada con audiencia targeting y 3 creativos aprobados" |
-| "El contenido debe ser bueno" | "Post de LinkedIn escrito con hook, desarrollo y CTA" |
-| "Que funcione" | "Workflow N8N validado con 3 casos de test pasando" |
+| ❌ Mal                        | ✅ Bien                                                                      |
+|-----------------------------|----------------------------------------------------------------------------|
+| "La campaña debe estar lista"| "Campaña de ads configurada con audiencia targeting y 3 creativos aprobados"|
+| "El contenido debe ser bueno"| "Post de LinkedIn escrito con hook, desarrollo y CTA"                       |
+| "Que funcione"               | "Workflow N8N validado con 3 casos de test pasando"                         |
 
 ### 3. Cada criterio tiene un tipo de verificación
-| Tipo | Qué significa | Quién verifica |
-|------|---------------|----------------|
-| `automated` | Se puede verificar automáticamente (test, validación) | Skill/agente |
-| `manual` | Requiere revisión humana | Usuario |
-| `test` | Requiere test unitario o E2E | Agent Teams / SDD |
+| Tipo       | Qué significa                                        | Quién verifica   |
+|-----------|-----------------------------------------------------|-----------------|
+| `automated`| Se puede verificar automáticamente (test, validación)| Skill/agente     |
+| `manual`   | Requiere revisión humana                             | Usuario          |
+| `test`     | Requiere test unitario o E2E                         | Agent Teams / SDD|
 
 ### 4. Binding
 Ambos (Conductor y usuario) cumplen lo acordado. Si el usuario cambia de opinión, se firma un nuevo contract — no se modifican criterios a mitad de ejecución.

@@ -66,7 +66,7 @@ Este directorio contiene todos los agentes especializados del PersonalOS. Cada a
 
 | #                                    | Agente                                                  | Dominio                                          | Prioridad                                  | Estado                                  |
 |-------------------------------------|--------------------------------------------------------|-------------------------------------------------|-------------------------------------------|----------------------------------------|
-| 00                                   | 🧠 **OS Conductor v2.0**                                 | **Entry point único — Anthropic 2.0 Harness**        | **CRÍTICA**                                | ✅ 🆕                                  |
+| 00                                   | 🧠 **OS Conductor v2.0**                                 | **Entry point único — Anthropic 2.0 Harness**    | **CRÍTICA**                                | ✅ 🆕                                     |
 | 01                                   | Scope Rule Architect                                    | Arquitectura                                     | CRÍTICA                                    | ✅                                       |
 | 02                                   | TDD Test-First                                          | Tests (RED)                                      | ALTA                                       | ✅                                       |
 | 03                                   | Growth (Marketing Tech)                                 | Growth/Marketing                                 | ALTA                                       | ✅                                       |

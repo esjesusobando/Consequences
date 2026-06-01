@@ -12,9 +12,9 @@
 | Every CE                              | v3.8.4 (local repo) ✅                                                      | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.30.6                                                                    | ✅ AVAILABLE                                    |
 | Skills                                | **385** (14 áreas funcionales)                                             | ✅ VERIFIED — 0 sin frontmatter                 |
-| Agentes                               | **62** source / **82** total (con SDD/CE)                                   | ✅ SYNCED                                       |
-| HUBs                                  | **20** (19 numerados + HUB_SOTA) + **256 scripts**                        | ✅ ACTIVE                                       |
-| Scripts totales                       | — (incluido en HUBs)                                                       | —                                               |
+| Agentes                               | **62** source / **82** total (con SDD/CE)                                  | ✅ SYNCED                                       |
+| HUBs                                  | **20** (19 numerados + HUB_SOTA) + **256 scripts**                         | ✅ ACTIVE                                       |
+| Scripts totales                       | — (incluido en HUBs)                                                       | —                                              |
 | Workflows                             | **27** (7 categorías en 00_Workflows_Os)                                   | ✅ ACTIVE                                       |
 | Hooks                                 | **10** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk)| ✅ ACTIVE                                       |
 | Rules                                 | **13** (.mdc)                                                              | ✅ DEFINED                                      |
@@ -193,14 +193,14 @@ Think_Different/                         # RAÍZ
 
 ## ⚡ AGENTES — 62 source / 82 total
 
-| Categoría | Cantidad | Ubicación |
-|-----------|----------|-----------|
-| 🎯 Dream Team | 5 | `01_Dream_Team/` — Product, Data, Marketing, Design, Platform |
-| 🔬 Specialists Compound | 23 | `02_Specialists_Compound/` |
-| 🧑 Individuales | 28 | Raíz `01_Agents/` — Orchestrator, AIPM, LFG, Hillary, Laia… |
-| 📈 Growth | 5 | `03_Growth/` — Content, YouTube, Carousel |
-| 🧠 OS Conductor | 1 | `00_OS_Conductor/` — Entry point Anthropic 2.0 Harness |
-| ⚙️ SDD/CE | +26 | gentle-ai, SDD phases, CE workflows |
+| Categoría             | Cantidad  | Ubicación                                                    |
+|----------------------|----------|-------------------------------------------------------------|
+| 🎯 Dream Team          | 5         | `01_Dream_Team/` — Product, Data, Marketing, Design, Platform|
+| 🔬 Specialists Compound| 23        | `02_Specialists_Compound/`                                   |
+| 🧑 Individuales        | 28        | Raíz `01_Agents/` — Orchestrator, AIPM, LFG, Hillary, Laia…  |
+| 📈 Growth              | 5         | `03_Growth/` — Content, YouTube, Carousel                    |
+| 🧠 OS Conductor        | 1         | `00_OS_Conductor/` — Entry point Anthropic 2.0 Harness       |
+| ⚙️ SDD/CE             | +26       | gentle-ai, SDD phases, CE workflows                          |
 
 ---
 
@@ -232,24 +232,24 @@ Think_Different/                         # RAÍZ
 | 21  | Legacy Cleanup     | `21_Legacy_Path_Cleanup.py`           | Limpia paths legacy v2.x                                   |
 | 22  | Skill Frontmatter  | `22_Validate_Skill_Frontmatter.py`    | Detecta skills sin frontmatter YAML                        |
 | 23  | Preview Generator  | `23_Preview_Generator.js`             | Generador de previews (JavaScript)                         |
-| 24  | Mass Path Migr.    | `24_mass_path_migration.py`           | Migración masiva de paths (batch)                           |
+| 24  | Mass Path Migr.    | `24_mass_path_migration.py`           | Migración masiva de paths (batch)                          |
 | 25  | Minimax Optimizer  | `25_Minimax_Optimizer_Hub.py`         | Optimizador Minimax                                        |
-| 26  | Parallel Audit Pro | `26_Parallel_Audit_Pro.py`            | Auditoría paralela avanzada (ex 33_)                        |
-| 27  | Skill Auditor      | `27_Skill_Auditor.py`                 | Auditor específico de skills (ex 34_)                       |
+| 26  | Parallel Audit Pro | `26_Parallel_Audit_Pro.py`            | Auditoría paralela avanzada (ex 33_)                       |
+| 27  | Skill Auditor      | `27_Skill_Auditor.py`                 | Auditor específico de skills (ex 34_)                      |
 | 28  | System Health      | `28_System_Health_Monitor.py`         | Monitor de salud del sistema (ex 50_)                      |
 | 29  | Repo Sync Auditor  | `29_Repo_Sync_Auditor.py`             | Auditor sync de repos (ex 57_)                             |
 | 30  | Path Replacement   | `30_path_replacement.py`              | Reemplazo de paths legacy (ex 23_)                         |
 
 ### Scripts Adicionales en Raíz
 
-| Script | Propósito |
-|--------|-----------|
-| `HUB_SOTA.py` | HUB SOTA — features estado del arte |
-| `config_paths.py` | Resolución centralizada de paths |
-| `refactor_revert_id.py` | Utilidad one-off para revertir IDs |
-| `qmd.sh` | Quick Make script |
-| `testsprite_failover.sh` | Failover TestSprite |
-| `tarea_lista.bat` | Notificación tarea completada (Windows) |
+| Script                  | Propósito                              |
+|------------------------|---------------------------------------|
+| `HUB_SOTA.py`           | HUB SOTA — features estado del arte    |
+| `config_paths.py`       | Resolución centralizada de paths       |
+| `refactor_revert_id.py` | Utilidad one-off para revertir IDs     |
+| `qmd.sh`                | Quick Make script                      |
+| `testsprite_failover.sh`| Failover TestSprite                    |
+| `tarea_lista.bat`       | Notificación tarea completada (Windows)|
 
 ### Subdirectorios (organización)
 
@@ -268,7 +268,7 @@ Think_Different/                         # RAÍZ
 | `10_Anthropic/`            | Harness Anthropic                                                           |
 | `11_Audits/`               | Auditorías del sistema                                                      |
 | `12_Auditors_Os/`          | Auditores OS + scripts Context Bar                                          |
-| `13_Legacy/`               | 📦 Legacy — scripts archivados (read-only)                                  |
+| `13_Legacy/`               | 📦 Legacy — scripts archivados (read-only)                                   |
 
 > ★ = HUB canónico JARVIS 4.5
 
@@ -364,7 +364,7 @@ Los siguientes hallazgos fueron identificados durante la auditoría OS integral 
 ### Referencias Cruzadas
 | #  | Hallazgo                                                       | Estado                             |
 |---|---------------------------------------------------------------|-----------------------------------|
-| 15 | Renumbering 03_Scripts_Os: 00-13 dirs, 31 scripts raíz    | ✅ APLICADO (commits 2026-05-27)    |
+| 15 | Renumbering 03_Scripts_Os: 00-13 dirs, 31 scripts raíz         | ✅ APLICADO (commits 2026-05-27)    |
 | 16 | `.agent/README.md` decía 23 scripts, real son 31 root + subdirs| 📌 DOCUMENTADO — backup no es fuente|
 
 > **NOTA:** todo hallazgo marcado como PRESERVADO se mantiene intencionalmente. El sistema prioriza no perder información histórica sobre la limpieza perfecta.

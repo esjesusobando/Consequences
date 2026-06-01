@@ -192,47 +192,47 @@ Output: Learning Doc + Engram save
 
 ## 🚦 Modos de Ejecución
 
-| Modo | Cuándo usarlo | Qué fases ejecuta |
-|------|---------------|-------------------|
-| **Full Pipeline** | Features grandes, proyectos nuevos | 01→11 completo |
-| **Quick Ship** | Bug fixes, cambios pequeños | 05→06→07→09 |
-| **Research Only** | Exploración sin implementación | 01→02 |
-| **Design Sprint** | Arquitectura compleja | 01→02→03→04 |
-| **Hot Fix** | Bug crítico en producción | 05→06→09→10 |
-| **Learning Mode** | Investigar y documentar | 01→11 (compound sin implementar) |
+| Modo             | Cuándo usarlo                     | Qué fases ejecuta               |
+|-----------------|----------------------------------|--------------------------------|
+| **Full Pipeline**| Features grandes, proyectos nuevos| 01→11 completo                  |
+| **Quick Ship**   | Bug fixes, cambios pequeños       | 05→06→07→09                     |
+| **Research Only**| Exploración sin implementación    | 01→02                           |
+| **Design Sprint**| Arquitectura compleja             | 01→02→03→04                     |
+| **Hot Fix**      | Bug crítico en producción         | 05→06→09→10                     |
+| **Learning Mode**| Investigar y documentar           | 01→11 (compound sin implementar)|
 
 ## 🔗 Integración con el OS
 
-| Componente | Rol en Dynamic Workflows |
-|------------|------------------------|
-| **Orquestador** | Ejecuta el pipeline según el modo |
-| **SDD (sdd-*)** | Fase 04 (Spec) + Fase 05 (Tasks) |
-| **CE (ce:work)** | Fase 05 (Implement con code review) |
-| **GGA** | Fase 07 (Code Review automático) |
-| **LA (Learning Always)** | Fase 01 (Research) + Fase 11 (Compound) |
-| **Hillary** | Captura tareas personales del pipeline |
-| **Engram Memory** | Persiste learnings y contexto entre sesiones |
-| **System Guardian (gr)** | Valida integridad post-cambio |
-| **OpenCode / Claude Code / Warp** | Invocable via `skill("dynamic-workflows")` desde cualquier shell |
+| Componente                       | Rol en Dynamic Workflows                                        |
+|---------------------------------|----------------------------------------------------------------|
+| **Orquestador**                  | Ejecuta el pipeline según el modo                               |
+| **SDD (sdd-*)**                  | Fase 04 (Spec) + Fase 05 (Tasks)                                |
+| **CE (ce:work)**                 | Fase 05 (Implement con code review)                             |
+| **GGA**                          | Fase 07 (Code Review automático)                                |
+| **LA (Learning Always)**         | Fase 01 (Research) + Fase 11 (Compound)                         |
+| **Hillary**                      | Captura tareas personales del pipeline                          |
+| **Engram Memory**                | Persiste learnings y contexto entre sesiones                    |
+| **System Guardian (gr)**         | Valida integridad post-cambio                                   |
+| **OpenCode / Claude Code / Warp**| Invocable via `skill("dynamic-workflows")` desde cualquier shell|
 
 ## 🎯 Delegación por Fase — Skill Mapping
 
 Cada fase del pipeline NO se ejecuta inline — **delega a una skill específica del OS**.
 El Dynamic Workflows es un meta-orquestador: cada fase invoca su skill correspondiente y consolida el resultado.
 
-| Fase | Skill Encargada | Path | Tags para invocar |
-|------|----------------|------|-------------------|
-| **01 — Research** | `learning-always` | `09_Workflow_Os/01_Learning_Always/` | `research`, `investigar`, `aprender` |
-| **02 — Plan** | `sdd-propose` + `ce:plan` | `00_Compound_Engineering/` | `plan`, `estrategia`, `descomponer` |
-| **03 — Design** | `sdd-design` | `00_Compound_Engineering/` | `arquitectura`, `diseño técnico` |
-| **04 — Spec** | `sdd-spec` + `sdd-tasks` | `00_Compound_Engineering/` | `spec`, `requisitos`, `tasks` |
-| **05 — Implement** | `sdd-apply` / `ce:work` | `00_Compound_Engineering/` | `implementar`, `codificar` |
-| **06 — Test** | `testing` (pytest/playwright) | `06_Tools/06_Testing/` | `test`, `pytest`, `playwright` |
-| **07 — Review** | `ce:review` / `gga` | `00_Compound_Engineering/` | `code review`, `auditar código` |
-| **08 — Rollback** | `devops` | `06_Tools/04_DevOps/` | `rollback`, `deploy`, `safety` |
-| **09 — Ship** | `git workflow` + `devops` | `06_Tools/04_DevOps/` | `deploy`, `ship`, `release` |
-| **10 — Monitor** | `observability` | `06_Tools/` | `monitorear`, `logs`, `alertas` |
-| **11 — Compound** | `learning-always` + `engram` | `09_Workflow_Os/01_Learning_Always/` | `compound`, `documentar`, `engram` |
+| Fase              | Skill Encargada              | Path                                | Tags para invocar                   |
+|------------------|-----------------------------|------------------------------------|------------------------------------|
+| **01 — Research** | `learning-always`            | `09_Workflow_Os/01_Learning_Always/`| `research`, `investigar`, `aprender`|
+| **02 — Plan**     | `sdd-propose` + `ce:plan`    | `00_Compound_Engineering/`          | `plan`, `estrategia`, `descomponer` |
+| **03 — Design**   | `sdd-design`                 | `00_Compound_Engineering/`          | `arquitectura`, `diseño técnico`    |
+| **04 — Spec**     | `sdd-spec` + `sdd-tasks`     | `00_Compound_Engineering/`          | `spec`, `requisitos`, `tasks`       |
+| **05 — Implement**| `sdd-apply` / `ce:work`      | `00_Compound_Engineering/`          | `implementar`, `codificar`          |
+| **06 — Test**     | `testing` (pytest/playwright)| `06_Tools/06_Testing/`              | `test`, `pytest`, `playwright`      |
+| **07 — Review**   | `ce:review` / `gga`          | `00_Compound_Engineering/`          | `code review`, `auditar código`     |
+| **08 — Rollback** | `devops`                     | `06_Tools/04_DevOps/`               | `rollback`, `deploy`, `safety`      |
+| **09 — Ship**     | `git workflow` + `devops`    | `06_Tools/04_DevOps/`               | `deploy`, `ship`, `release`         |
+| **10 — Monitor**  | `observability`              | `06_Tools/`                         | `monitorear`, `logs`, `alertas`     |
+| **11 — Compound** | `learning-always` + `engram` | `09_Workflow_Os/01_Learning_Always/`| `compound`, `documentar`, `engram`  |
 
 ### Cómo se ejecuta la delegación
 
@@ -251,31 +251,31 @@ Para cada fase del pipeline activo:
 
 ### Modos de Ejecución + Skills involucradas
 
-| Modo | Fases | Skills que invoca |
-|------|-------|-------------------|
-| **Full Pipeline** | 01→11 | LA → SDD(propose+design+spec+tasks) → SDD apply → Testing → ce:review → DevOps → LA |
-| **Quick Ship** | 05→06→07→09 | SDD apply → Testing → ce:review → DevOps |
-| **Research Only** | 01→02 | LA → SDD propose |
-| **Design Sprint** | 01→02→03→04 | LA → SDD propose → SDD design → SDD spec |
-| **Hot Fix** | 05→06→09→10 | SDD apply → Testing → DevOps → Observability |
-| **Learning Mode** | 01→11 (saltando implementación) | LA → SDD propose → LA → (compound) |
+| Modo             | Fases                          | Skills que invoca                                                                  |
+|-----------------|-------------------------------|-----------------------------------------------------------------------------------|
+| **Full Pipeline**| 01→11                          | LA → SDD(propose+design+spec+tasks) → SDD apply → Testing → ce:review → DevOps → LA|
+| **Quick Ship**   | 05→06→07→09                    | SDD apply → Testing → ce:review → DevOps                                           |
+| **Research Only**| 01→02                          | LA → SDD propose                                                                   |
+| **Design Sprint**| 01→02→03→04                    | LA → SDD propose → SDD design → SDD spec                                           |
+| **Hot Fix**      | 05→06→09→10                    | SDD apply → Testing → DevOps → Observability                                       |
+| **Learning Mode**| 01→11 (saltando implementación)| LA → SDD propose → LA → (compound)                                                 |
 
 ## 📁 Workflows por Fase
 
-| Fase | Archivo |
-|------|---------|
-| Master Pipeline | `01_Workflows/00_Dynamic_Master.md` |
-| 01 - Research | `01_Workflows/01_Research.md` |
-| 02 - Plan | `01_Workflows/02_Plan.md` |
-| 03 - Design | `01_Workflows/03_Design.md` |
-| 04 - Spec | `01_Workflows/04_Spec.md` |
-| 05 - Implement | `01_Workflows/05_Implement.md` |
-| 06 - Test | `01_Workflows/06_Test.md` |
-| 07 - Review | `01_Workflows/07_Review.md` |
-| 08 - Rollback | `01_Workflows/08_Rollback.md` |
-| 09 - Ship | `01_Workflows/09_Ship.md` |
-| 10 - Monitor | `01_Workflows/10_Monitor.md` |
-| 11 - Compound | `01_Workflows/11_Compound.md` |
+| Fase           | Archivo                            |
+|---------------|-----------------------------------|
+| Master Pipeline| `01_Workflows/00_Dynamic_Master.md`|
+| 01 - Research  | `01_Workflows/01_Research.md`      |
+| 02 - Plan      | `01_Workflows/02_Plan.md`          |
+| 03 - Design    | `01_Workflows/03_Design.md`        |
+| 04 - Spec      | `01_Workflows/04_Spec.md`          |
+| 05 - Implement | `01_Workflows/05_Implement.md`     |
+| 06 - Test      | `01_Workflows/06_Test.md`          |
+| 07 - Review    | `01_Workflows/07_Review.md`        |
+| 08 - Rollback  | `01_Workflows/08_Rollback.md`      |
+| 09 - Ship      | `01_Workflows/09_Ship.md`          |
+| 10 - Monitor   | `01_Workflows/10_Monitor.md`       |
+| 11 - Compound  | `01_Workflows/11_Compound.md`      |
 
 ---
 *Dynamic Workflows v1.0 — 2026-05-30 — Pipeline completo del orquestador*

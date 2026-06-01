@@ -8,9 +8,9 @@
 
 ## Navegacion Rapida
 
-| # | Directorio | Skill | Descripcion |
-|---|-----------|-------|-------------|
-| 01 | `SKILL.md` | Skill Auditor | Auditoria de skills contra estandares SOTA |
+| #  | Directorio | Skill        | Descripcion                               |
+|---|-----------|-------------|------------------------------------------|
+| 01 | `SKILL.md` | Skill Auditor| Auditoria de skills contra estandares SOTA|
 
 ---
 

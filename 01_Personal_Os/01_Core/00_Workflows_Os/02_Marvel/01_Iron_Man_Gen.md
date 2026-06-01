@@ -88,17 +88,17 @@ Think_Different/
 
 ## ⚡ RECURSOS DEL ORQUESTADOR
 
-| Recurso                        | Ubicación                                                                 | Para qué usarlo                           |
-|-------------------------------|--------------------------------------------------------------------------|------------------------------------------|
-| **Skills** (14 áreas, 385)     | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
-| **Reglas** (13 .mdc)           | `01_Personal_Os/01_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
-| **Agentes** (55 source / 82 total) | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
-| **HUBs** (20)                  | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema                    |
-| **MCPs** (8+38)                | `.mcp.json` (raíz)                                                        | Herramientas externas                     |
-| **Hooks** (10)                 | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                               | Automatizaciones pre/post tool            |
-| **Memory**                     | Engram MCP                                                                | Contexto persistente entre sesiones       |
-| **GGA Code Review**            | `.agent/05_GGA/`                                                          | Code review automático                    |
-| **SDD Registry**               | `.atl/skill-registry.md`                                                  | Compact rules para sub-agentes            |
+| Recurso                           | Ubicación                                                                 | Para qué usarlo                           |
+|----------------------------------|--------------------------------------------------------------------------|------------------------------------------|
+| **Skills** (14 áreas, 385)        | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
+| **Reglas** (13 .mdc)              | `01_Personal_Os/01_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
+| **Agentes** (55 source / 82 total)| `01_Personal_Os/01_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
+| **HUBs** (20)                     | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema                    |
+| **MCPs** (8+38)                   | `.mcp.json` (raíz)                                                        | Herramientas externas                     |
+| **Hooks** (10)                    | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                               | Automatizaciones pre/post tool            |
+| **Memory**                        | Engram MCP                                                                | Contexto persistente entre sesiones       |
+| **GGA Code Review**               | `.agent/05_GGA/`                                                          | Code review automático                    |
+| **SDD Registry**                  | `.atl/skill-registry.md`                                                  | Compact rules para sub-agentes            |
 
 ---
 

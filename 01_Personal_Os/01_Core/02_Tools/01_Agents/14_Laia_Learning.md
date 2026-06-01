@@ -69,12 +69,12 @@ mkdir -p <project-path>/Context/Sessions
 
 ## Skills que Usa
 
-| Skill              | Ubicación                                           | Propósito                       |
-|-------------------|-----------------------------------------------------|----------------------------------|
-| Laia Learning SKILL.md  | `02_Skills/11_Laia_Learning/`                       | Metodología completa             |
-| Canonical templates | `02_Skills/11_Laia_Learning/01_Context_Canonical/`        | Templates de archivos            |
-| Prompts             | `02_Skills/11_Laia_Learning/02_Prompts/`                  | System prompts por agente        |
-| Workflow            | `02_Skills/11_Laia_Learning/03_Workflows/laia-init.md` | Pipeline completo                |
+| Skill                 | Ubicación                                             | Propósito                         |
+|----------------------|------------------------------------------------------|----------------------------------|
+| Laia Learning SKILL.md| `02_Skills/11_Laia_Learning/`                         | Metodología completa              |
+| Canonical templates   | `02_Skills/11_Laia_Learning/01_Context_Canonical/`    | Templates de archivos             |
+| Prompts               | `02_Skills/11_Laia_Learning/02_Prompts/`              | System prompts por agente         |
+| Workflow              | `02_Skills/11_Laia_Learning/03_Workflows/laia-init.md`| Pipeline completo                 |
 
 ## ⚠️ Gotchas
 

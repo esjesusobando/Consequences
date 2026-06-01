@@ -13,17 +13,17 @@
 
 > 🟢 **PRODUCTION READY** - v4.9 Consequences lista para uso público
 
-| Métrica                             | Valor                                           |
+| Métrica                              | Valor                                            |
 |-------------------------------------|-------------------------------------------------|
-| **Overall Health**                  | **100%** 🟢                                     |
-| **Every CE**                        | v3.8.4 ✅ (local repo)                          |
-| **gentle-ai**                       | v1.30.6 ✅                                      |
-| **Skills**                          | **385** (14 áreas funcionales)                  |
-| **Rules**                           | **13** (.mdc)                                   |
-| **MCPs**                            | **7** root + **38** backup                      |
-| **HUBs**                            | **20** HUBs + 256 scripts                       |
-| **Agentes**                         | **55** (source) / 82 (con SDD/CE)               |
-| **Workflows**                       | **27** (7 categorías)                           |
+| **Overall Health**                   | **100%** 🟢                                       |
+| **Every CE**                         | v3.8.4 ✅ (local repo)                            |
+| **gentle-ai**                        | v1.30.6 ✅                                        |
+| **Skills**                           | **385** (14 áreas funcionales)                   |
+| **Rules**                            | **13** (.mdc)                                    |
+| **MCPs**                             | **7** root + **38** backup                       |
+| **HUBs**                             | **20** HUBs + 256 scripts                        |
+| **Agentes**                          | **55** (source) / 82 (con SDD/CE)                |
+| **Workflows**                        | **27** (7 categorías)                            |
 
 ---
 

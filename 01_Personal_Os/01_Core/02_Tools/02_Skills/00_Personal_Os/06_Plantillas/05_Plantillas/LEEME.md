@@ -6,21 +6,21 @@
 
 Plantillas estructuradas por canal que los agentes usan para producir contenido consistente:
 
-| Carpeta | Canal | Agente responsable |
-|---------|-------|--------------------|
-| `01_Posts/` | LinkedIn, Twitter, Instagram | Marketing Creador (`16_`) |
-| `02_Emails/` | Newsletter, Outreach | Marketing Creador (`16_`) |
-| `03_Blog/` | Artículos largos | Marketing Creador (`16_`) |
-| `04_Video/` | YouTube, Shorts | Marketing Creador (`16_`) |
-| `05_Miniaturas/` | Thumbnail prompts | Marketing Creador (`16_`) |
+| Carpeta         | Canal                       | Agente responsable       |
+|----------------|----------------------------|-------------------------|
+| `01_Posts/`     | LinkedIn, Twitter, Instagram| Marketing Creador (`16_`)|
+| `02_Emails/`    | Newsletter, Outreach        | Marketing Creador (`16_`)|
+| `03_Blog/`      | Artículos largos            | Marketing Creador (`16_`)|
+| `04_Video/`     | YouTube, Shorts             | Marketing Creador (`16_`)|
+| `05_Miniaturas/`| Thumbnail prompts           | Marketing Creador (`16_`)|
 
 ## Agentes que lo usan
 
-| Agente | Cómo usa las plantillas |
-|--------|------------------------|
-| `15_Marketing_Estratega.md` | Referencia al generar briefs (sabe qué formatos existen) |
-| `16_Marketing_Creador.md` | Usa la plantilla exacta del formato solicitado |
-| `17_Marketing_Analista.md` | Evalúa si el formato se usó correctamente |
+| Agente                     | Cómo usa las plantillas                                 |
+|---------------------------|--------------------------------------------------------|
+| `15_Marketing_Estratega.md`| Referencia al generar briefs (sabe qué formatos existen)|
+| `16_Marketing_Creador.md`  | Usa la plantilla exacta del formato solicitado          |
+| `17_Marketing_Analista.md` | Evalúa si el formato se usó correctamente               |
 
 ## Estructura Recomendada
 

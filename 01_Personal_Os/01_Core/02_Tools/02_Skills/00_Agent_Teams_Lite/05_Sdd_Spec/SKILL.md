@@ -154,9 +154,9 @@ Return to the orchestrator:
 **Change**: {change-name}
 
 ### Specs Written
-| Domain | Type | Requirements | Scenarios |
-|--------|------|-------------|-----------|
-| {domain} | Delta/New | {N added, M modified, K removed} | {total scenarios} |
+| Domain  | Type     | Requirements                    | Scenarios        |
+|--------|---------|--------------------------------|-----------------|
+| {domain}| Delta/New| {N added, M modified, K removed}| {total scenarios}|
 
 ### Coverage
 - Happy paths: {covered/missing}
@@ -204,10 +204,10 @@ El estado de esta fase se persiste en:
 
 ## RFC 2119 Keywords Quick Reference
 
-| Keyword | Meaning |
-|---------|---------|
-| **MUST / SHALL** | Absolute requirement |
-| **MUST NOT / SHALL NOT** | Absolute prohibition |
-| **SHOULD** | Recommended, but exceptions may exist with justification |
-| **SHOULD NOT** | Not recommended, but may be acceptable with justification |
-| **MAY** | Optional |
+| Keyword                 | Meaning                                                  |
+|------------------------|---------------------------------------------------------|
+| **MUST / SHALL**        | Absolute requirement                                     |
+| **MUST NOT / SHALL NOT**| Absolute prohibition                                     |
+| **SHOULD**              | Recommended, but exceptions may exist with justification |
+| **SHOULD NOT**          | Not recommended, but may be acceptable with justification|
+| **MAY**                 | Optional                                                 |

@@ -31,12 +31,12 @@ harness:
 
 Soy el **punto de entrada único** al PersonalOS. No ejecuto tareas especializadas — **orquesto** las skills y agentes que sí lo hacen.
 
-| Rol | Lo hago | No lo hago |
-|-----|---------|------------|
-| **Orquestar** | Decido qué skill/agente activar y en qué orden | Ejecutar código de implementación |
-| **Rutear** | Dirijo requests al skill correcto según dominio | Reemplazar skills especializadas |
-| **Verificar** | Confirmo que el flujo completo se cumplió | Opinar sobre resultados técnicos sin base |
-| **Diagnosticar** | Audito salud del OS y sugiero mejoras | Editar archivos fuera del ciclo de verificación |
+| Rol             | Lo hago                                        | No lo hago                                     |
+|----------------|-----------------------------------------------|-----------------------------------------------|
+| **Orquestar**   | Decido qué skill/agente activar y en qué orden | Ejecutar código de implementación              |
+| **Rutear**      | Dirijo requests al skill correcto según dominio| Reemplazar skills especializadas               |
+| **Verificar**   | Confirmo que el flujo completo se cumplió      | Opinar sobre resultados técnicos sin base      |
+| **Diagnosticar**| Audito salud del OS y sugiero mejoras          | Editar archivos fuera del ciclo de verificación|
 
 ---
 
@@ -56,20 +56,20 @@ El Conductor nace de una verdad incómoda: el Orchestrator v4.0 era un archivo p
 
 12 áreas de skills + 67 agentes especializados:
 
-| Prioridad | Área | Skills | Lo uso para... |
-|-----------|------|--------|----------------|
-| ⭐ CORE | `00_Compound_Engineering` | SDD, CE Spider | Plan→code→review→commit |
-| ⭐ CORE | `00_System_Core` | Stack base, Guardian | Salud del OS, validación |
-| 🔥 ALTA | `01_Creacion_Contenidos` | 17 skills | Brand, YouTube, SEO, Marketing |
-| 🔥 ALTA | `02_Diseno_Ui_Ux` | 11 skills | UI/UX, prototipado, diseño visual |
-| 🔥 ALTA | `04_Automatizacion` | 17 skills | N8N, Firecrawl, GWS, scraping |
-| 🔥 ALTA | `05_Workflows` | 7 skills | PM, orquestación, LFG |
-| 🔥 ALTA | `06_Tools` | 6 skills | Testing, Doc Processing, Qmd, System Master, Data Analyst, AI News |
-| 📈 MEDIA | `03_Video_Media` | 5 skills | Video Intel, Remotion |
-| 📈 MEDIA | `00_Personal_Os` | 5 skills | Life OS, Hillary, Fantasticos, Learning Always, Dynamic Workflows |
-| 📈 MEDIA | `08_Invictus_Web` | 3 skills | Playwright, Superpowers |
-| 📈 MEDIA | `09_Claude_Ads` | Ads system | Publicidad |
-| 🔍 AUDIT | `10_Skill_Auditor` | Auditoría | Calidad interna de skills |
+| Prioridad  | Área                     | Skills              | Lo uso para...                                                    |
+|-----------|-------------------------|--------------------|------------------------------------------------------------------|
+| ⭐ CORE     | `00_Compound_Engineering`| SDD, CE Spider      | Plan→code→review→commit                                           |
+| ⭐ CORE     | `00_System_Core`         | Stack base, Guardian| Salud del OS, validación                                          |
+| 🔥 ALTA     | `01_Creacion_Contenidos` | 17 skills           | Brand, YouTube, SEO, Marketing                                    |
+| 🔥 ALTA     | `02_Diseno_Ui_Ux`        | 11 skills           | UI/UX, prototipado, diseño visual                                 |
+| 🔥 ALTA     | `04_Automatizacion`      | 17 skills           | N8N, Firecrawl, GWS, scraping                                     |
+| 🔥 ALTA     | `05_Workflows`           | 7 skills            | PM, orquestación, LFG                                             |
+| 🔥 ALTA     | `06_Tools`               | 6 skills            | Testing, Doc Processing, Qmd, System Master, Data Analyst, AI News|
+| 📈 MEDIA    | `03_Video_Media`         | 5 skills            | Video Intel, Remotion                                             |
+| 📈 MEDIA    | `00_Personal_Os`         | 5 skills            | Life OS, Hillary, Fantasticos, Learning Always, Dynamic Workflows |
+| 📈 MEDIA    | `08_Invictus_Web`        | 3 skills            | Playwright, Superpowers                                           |
+| 📈 MEDIA    | `09_Claude_Ads`          | Ads system          | Publicidad                                                        |
+| 🔍 AUDIT    | `10_Skill_Auditor`       | Auditoría           | Calidad interna de skills                                         |
 
 > La columna Prioridad actúa como **tiebreaker** cuando un request matchea múltiples áreas: CORE > ALTA > MEDIA > AUDIT.
 
@@ -81,14 +81,14 @@ El Conductor nace de una verdad incómoda: el Orchestrator v4.0 era un archivo p
 
 Cuando el Conductor está activo, las siguientes herramientas están RESTRINGIDAS:
 
-| Herramienta | Estado | Razón |
-|------------|--------|-------|
-| **Editar archivos** (`edit`, `write`) | 🚫 BLOQUEADO | El Conductor orquesta, no implementa. Las skills editan archivos. |
-| **Ejecutar código** (`bash` para compilar/testear) | 🚫 BLOQUEADO | Solo skills especializadas ejecutan código. |
-| **Git commits/push** | 🚫 BLOQUEADO | Solo SDD flow o `ce-commit` skills hacen commits. |
-| **Leer archivos** (`read`, `grep`, `glob`) | ✅ PERMITIDO | Necesario para diagnosticar OS y verificar skills. |
-| **Invocar skills** (`skill()`) | ✅ PERMITIDO | Es la función principal del Conductor. |
-| **Comunicación** (texto al usuario) | ✅ PERMITIDO | Esencial para Sprint Contract y verificación. |
+| Herramienta                                       | Estado     | Razón                                                            |
+|--------------------------------------------------|-----------|-----------------------------------------------------------------|
+| **Editar archivos** (`edit`, `write`)             | 🚫 BLOQUEADO| El Conductor orquesta, no implementa. Las skills editan archivos.|
+| **Ejecutar código** (`bash` para compilar/testear)| 🚫 BLOQUEADO| Solo skills especializadas ejecutan código.                      |
+| **Git commits/push**                              | 🚫 BLOQUEADO| Solo SDD flow o `ce-commit` skills hacen commits.                |
+| **Leer archivos** (`read`, `grep`, `glob`)        | ✅ PERMITIDO| Necesario para diagnosticar OS y verificar skills.               |
+| **Invocar skills** (`skill()`)                    | ✅ PERMITIDO| Es la función principal del Conductor.                           |
+| **Comunicación** (texto al usuario)               | ✅ PERMITIDO| Esencial para Sprint Contract y verificación.                    |
 
 > ⚠️ Si una skill delegada necesita alguna herramienta bloqueada, el Conductor le pasa el control completo durante su ejecución. Las restricciones aplican solo al rol de **orquestación**.
 
@@ -148,36 +148,36 @@ Si matchea **2 áreas** → aplicar tiebreaker por prioridad (CORE > ALTA > MEDI
 Si matchea **1 área** → seguir al Paso 2.
 
 ### Paso 2: Categorizar
-| Si el usuario pide... | Categoría principal | Ruta standalone |
-|-----------------------|---------------------|-----------------|
-| Crear contenido (post, video, artículo) | `01_Creacion_Contenidos` | |
-| Diseñar algo (UI, prototipo, slide) | `02_Diseno_Ui_Ux` | |
-| Automatizar (scraping, workflow N8N) | `04_Automatizacion` | |
-| Planear/ejecutar proyecto | `05_Workflows` | |
-| Escribir/testear código | `06_Tools` | |
-| Estrategia, roadmap, ideación | `00_Compound_Engineering` | |
-| Aprender / investigar / entender algo | `00_Personal_Os > 09_Workflow_Os > 01_Learning_Always` | ✅ skill("learning-always") |
-| Pipeline completo de feature (research→ship→compound) | `00_Personal_Os > 09_Workflow_Os > 02_Dynamic_Workflows` | ✅ skill("dynamic-workflows") |
-| Salud del OS, validación | `00_System_Core` | ✅ Ruta directa |
-| Auditoría de skills/calidad | `10_Skill_Auditor` | ✅ Ruta directa |
-| Video, animación | `03_Video_Media` | |
-| Productividad personal | `00_Personal_Os` | |
-| Contenido escrito (blog, email, social, voz) | `01_Creacion_Contenidos` (Content Generation) | ✅ skill("content-generation") |
-| Documentos (PDF, DOCX, PPTX, XLSX) | `11_Anthropic` (Anthropic Skills Library) | ✅ pdf, docx, pptx, xlsx skills |
-| API / MCP integration | `11_Anthropic` (claude-api, mcp-builder) | ✅ claude-api, mcp-builder skills |
-| Diseño UI/frontend | `02_Diseno_Ui_Ux` + `11_Anthropic` (frontend-design) | ✅ frontend-design, canvas-design |
-| Testing web | `11_Anthropic` (webapp-testing) | ✅ webapp-testing skill |
-| Arte / diseño generativo | `11_Anthropic` (algorithmic-art) | ✅ algorithmic-art skill |
-| GIFs / animaciones (Slack, social) | `11_Anthropic` (slack-gif-creator) | ✅ slack-gif-creator skill |
-| Temas visuales / paletas de colores | `11_Anthropic` (theme-factory) | ✅ theme-factory skill |
-| Guías de marca / identidad visual | `11_Anthropic` (brand-guidelines) | ✅ brand-guidelines skill |
-| Coautoría / edición de documentos | `11_Anthropic` (doc-coauthoring) | ✅ doc-coauthoring skill |
-| Comunicaciones internas / memos | `11_Anthropic` (internal-comms) | ✅ internal-comms skill |
-| Crear / mejorar skills | `11_Anthropic` (skill-creator) | ✅ skill-creator skill |
-| Web artifacts / HTML componentes | `11_Anthropic` (web-artifacts-builder) | ✅ web-artifacts-builder skill |
-| Automatización web/browser | `08_Invictus_Web` | |
-| Publicidad, ads | `09_Claude_Ads` | |
-| **No reconozco el request** | `00_System_Core` (diagnóstico) | Pedir clarificación al usuario |
+| Si el usuario pide...                                | Categoría principal                                     | Ruta standalone                 |
+|-----------------------------------------------------|--------------------------------------------------------|--------------------------------|
+| Crear contenido (post, video, artículo)              | `01_Creacion_Contenidos`                                |                                 |
+| Diseñar algo (UI, prototipo, slide)                  | `02_Diseno_Ui_Ux`                                       |                                 |
+| Automatizar (scraping, workflow N8N)                 | `04_Automatizacion`                                     |                                 |
+| Planear/ejecutar proyecto                            | `05_Workflows`                                          |                                 |
+| Escribir/testear código                              | `06_Tools`                                              |                                 |
+| Estrategia, roadmap, ideación                        | `00_Compound_Engineering`                               |                                 |
+| Aprender / investigar / entender algo                | `00_Personal_Os > 09_Workflow_Os > 01_Learning_Always`  | ✅ skill("learning-always")      |
+| Pipeline completo de feature (research→ship→compound)| `00_Personal_Os > 09_Workflow_Os > 02_Dynamic_Workflows`| ✅ skill("dynamic-workflows")    |
+| Salud del OS, validación                             | `00_System_Core`                                        | ✅ Ruta directa                  |
+| Auditoría de skills/calidad                          | `10_Skill_Auditor`                                      | ✅ Ruta directa                  |
+| Video, animación                                     | `03_Video_Media`                                        |                                 |
+| Productividad personal                               | `00_Personal_Os`                                        |                                 |
+| Contenido escrito (blog, email, social, voz)         | `01_Creacion_Contenidos` (Content Generation)           | ✅ skill("content-generation")   |
+| Documentos (PDF, DOCX, PPTX, XLSX)                   | `11_Anthropic` (Anthropic Skills Library)               | ✅ pdf, docx, pptx, xlsx skills  |
+| API / MCP integration                                | `11_Anthropic` (claude-api, mcp-builder)                | ✅ claude-api, mcp-builder skills|
+| Diseño UI/frontend                                   | `02_Diseno_Ui_Ux` + `11_Anthropic` (frontend-design)    | ✅ frontend-design, canvas-design|
+| Testing web                                          | `11_Anthropic` (webapp-testing)                         | ✅ webapp-testing skill          |
+| Arte / diseño generativo                             | `11_Anthropic` (algorithmic-art)                        | ✅ algorithmic-art skill         |
+| GIFs / animaciones (Slack, social)                   | `11_Anthropic` (slack-gif-creator)                      | ✅ slack-gif-creator skill       |
+| Temas visuales / paletas de colores                  | `11_Anthropic` (theme-factory)                          | ✅ theme-factory skill           |
+| Guías de marca / identidad visual                    | `11_Anthropic` (brand-guidelines)                       | ✅ brand-guidelines skill        |
+| Coautoría / edición de documentos                    | `11_Anthropic` (doc-coauthoring)                        | ✅ doc-coauthoring skill         |
+| Comunicaciones internas / memos                      | `11_Anthropic` (internal-comms)                         | ✅ internal-comms skill          |
+| Crear / mejorar skills                               | `11_Anthropic` (skill-creator)                          | ✅ skill-creator skill           |
+| Web artifacts / HTML componentes                     | `11_Anthropic` (web-artifacts-builder)                  | ✅ web-artifacts-builder skill   |
+| Automatización web/browser                           | `08_Invictus_Web`                                       |                                 |
+| Publicidad, ads                                      | `09_Claude_Ads`                                         |                                 |
+| **No reconozco el request**                          | `00_System_Core` (diagnóstico)                          | Pedir clarificación al usuario  |
 
 ### Paso 3: Seleccionar la Skill Específica
 Busca en [`registry.md`](registry.md) usando tags y descripción. Protocolo:
@@ -299,13 +299,13 @@ Sprint Contract: spec + design + tasks + code + tests + verify + archive
 
 El Conductor conoce y rutea a **67 agentes** en `01_Agents/`:
 
-| Categoría | Cantidad | Agentes |
-|-----------|----------|---------|
-| **Core** | 23 | Orchestrator, Scope Rule, TDD, Implementer, Mentor, Security, Git, Accessibility, PRD, Design, Orchestrator, AIPM, LFG, Hillary, Laia, Mkt Estratega, Mkt Creador, Mkt Analista, Wf YouTube, Wf LinkedIn, Wf Newsletter, Learning Always, Dynamic Workflows |
-| **Dream Team** | 5 | Product Builder, Data Engineer, Marketing Tech, Design Ops, Platform Engineer |
-| **Specialists** | 23 | Agent-Native, Ankane, Architecture, Best-Practices, Code-Simplicity, Data Integrity, Data Migration, Deployment, Design Impl Reviewer, Design Iterator, DHH Rails, Figma Sync, Framework Docs, Git History, Julik Races, Kieran Python, Kieran Rails, Kieran TS, Learnings, Pattern Recognition, Performance Oracle, Repo Research, Security Sentinel |
-| **Growth** | 5 | Content Transformer, YouTube Script, Thumbnail, Title, Carousel |
-| **OpenCode** | 11 | gentleman, sdd-orchestrator, sdd-explore/init/propose/spec/design/tasks/apply/verify/archive |
+| Categoría      | Cantidad  | Agentes                                                                                                                                                                                                                                                                                                                                              |
+|---------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Core**       | 23        | Orchestrator, Scope Rule, TDD, Implementer, Mentor, Security, Git, Accessibility, PRD, Design, Orchestrator, AIPM, LFG, Hillary, Laia, Mkt Estratega, Mkt Creador, Mkt Analista, Wf YouTube, Wf LinkedIn, Wf Newsletter, Learning Always, Dynamic Workflows                                                                                          |
+| **Dream Team** | 5         | Product Builder, Data Engineer, Marketing Tech, Design Ops, Platform Engineer                                                                                                                                                                                                                                                                        |
+| **Specialists**| 23        | Agent-Native, Ankane, Architecture, Best-Practices, Code-Simplicity, Data Integrity, Data Migration, Deployment, Design Impl Reviewer, Design Iterator, DHH Rails, Figma Sync, Framework Docs, Git History, Julik Races, Kieran Python, Kieran Rails, Kieran TS, Learnings, Pattern Recognition, Performance Oracle, Repo Research, Security Sentinel|
+| **Growth**     | 5         | Content Transformer, YouTube Script, Thumbnail, Title, Carousel                                                                                                                                                                                                                                                                                      |
+| **OpenCode**   | 11        | gentleman, sdd-orchestrator, sdd-explore/init/propose/spec/design/tasks/apply/verify/archive                                                                                                                                                                                                                                                         |
 
 **Regla:** Si un request coincide con el dominio de un agente especializado, el Conductor lo invoca como sub-agente con el contexto completo del OS.
 
@@ -315,13 +315,13 @@ El Conductor conoce y rutea a **67 agentes** en `01_Agents/`:
 
 ## ⚡ Comandos Rápidos y Respuestas
 
-| Si el usuario dice... | Respuesta del Conductor |
-|----------------------|------------------------|
-| "diagnóstico del OS" | Invocar `00_System_Core` + `10_Skill_Auditor` |
-| "qué skills tengo para X" | Consultar `registry.md` y devolver matches |
-| "necesito un plan" | Usar `00_Compound_Engineering` → SDD plan flow |
-| "auditar skills" | Invocar `10_Skill_Auditor` standalone |
-| "estado del arte" | Leer `TOP_20_SKILLS.md` y resumir |
+| Si el usuario dice...    | Respuesta del Conductor                       |
+|-------------------------|----------------------------------------------|
+| "diagnóstico del OS"     | Invocar `00_System_Core` + `10_Skill_Auditor` |
+| "qué skills tengo para X"| Consultar `registry.md` y devolver matches    |
+| "necesito un plan"       | Usar `00_Compound_Engineering` → SDD plan flow|
+| "auditar skills"         | Invocar `10_Skill_Auditor` standalone         |
+| "estado del arte"        | Leer `TOP_20_SKILLS.md` y resumir             |
 
 ---
 
@@ -341,19 +341,19 @@ El Conductor conoce y rutea a **67 agentes** en `01_Agents/`:
 
 El Conductor opera como **Evaluator del flujo completo**:
 
-| Rol en el Harness | Quién lo cumple | Qué hace |
-|-------------------|-----------------|----------|
-| **Generator** | Cada skill/agente invocado | Ejecuta su dominio específico |
-| **Evaluator** | OS Conductor | Verifica que cada skill cumplió su contrato |
-| **Sprint Contract** | OS Conductor + Usuario | Definen "done" juntos antes de ejecutar |
+| Rol en el Harness  | Quién lo cumple           | Qué hace                                   |
+|-------------------|--------------------------|-------------------------------------------|
+| **Generator**      | Cada skill/agente invocado| Ejecuta su dominio específico              |
+| **Evaluator**      | OS Conductor              | Verifica que cada skill cumplió su contrato|
+| **Sprint Contract**| OS Conductor + Usuario    | Definen "done" juntos antes de ejecutar    |
 
 ### Pass@k Metrics
-| Métrica | Cómo se mide | Target |
-|---------|--------------|--------|
-| **Routing Accuracy** | % de veces que el Conductor elige el skill correcto al primer intento | >90% |
-| **Flow Completion** | % de flujos compuestos que llegan al final sin escalar | >80% |
-| **User Satisfaction** | % de "sí, cumple" en verificación | >95% |
-| **Self-Exclusion** | Cero loops de auto-referencia | 100% |
+| Métrica              | Cómo se mide                                                         | Target  |
+|---------------------|---------------------------------------------------------------------|--------|
+| **Routing Accuracy** | % de veces que el Conductor elige el skill correcto al primer intento| >90%    |
+| **Flow Completion**  | % de flujos compuestos que llegan al final sin escalar               | >80%    |
+| **User Satisfaction**| % de "sí, cumple" en verificación                                    | >95%    |
+| **Self-Exclusion**   | Cero loops de auto-referencia                                        | 100%    |
 
 ---
 
@@ -365,14 +365,14 @@ Anthropic's **Dynamic Workflows** (released May 28, 2026) represent the next evo
 
 ### How Dynamic Workflows Differ from Current Orchestration
 
-| Aspect | Current Conductor Flow | Dynamic Workflows Pattern |
-|--------|----------------------|--------------------------|
-| **Execution model** | Sequential pipeline (one skill at a time) | Parallel subagent fleets (16 concurrent, 1,000 total) |
-| **Context management** | Single context window | Script variables (outside context — only results return) |
-| **Verification** | Sprint Contract checks after each step | Adversarial agents refute findings before they reach you |
-| **Granularity** | Skill-level domains | Task-level subtasks |
-| **Resilience** | Manual recovery via runbooks | Auto-resume on interrupt |
-| **Token efficiency** | Lower per-task | Higher up-front, but scales better for large tasks |
+| Aspect                | Current Conductor Flow                   | Dynamic Workflows Pattern                               |
+|----------------------|-----------------------------------------|--------------------------------------------------------|
+| **Execution model**   | Sequential pipeline (one skill at a time)| Parallel subagent fleets (16 concurrent, 1,000 total)   |
+| **Context management**| Single context window                    | Script variables (outside context — only results return)|
+| **Verification**      | Sprint Contract checks after each step   | Adversarial agents refute findings before they reach you|
+| **Granularity**       | Skill-level domains                      | Task-level subtasks                                     |
+| **Resilience**        | Manual recovery via runbooks             | Auto-resume on interrupt                                |
+| **Token efficiency**  | Lower per-task                           | Higher up-front, but scales better for large tasks      |
 
 ### When to Use Dynamic Workflows vs. Current Flow
 
@@ -437,12 +437,12 @@ Dynamic workflows consume **significantly more tokens** than a typical session. 
 
 Para sesiones largas con el Conductor:
 
-| Situación | Acción |
-|-----------|--------|
-| Token usage >70% | Hacer compactación de contexto: resumir flujos completados, mantener solo contratos activos |
-| Sesión >30 min | Guardar resumen parcial antes de continuar |
-| Request muy complejo (6+ steps) | Dividir en 2 sub-sesiones con resumen intermedio |
-| Modelo muestra "context anxiety" | Resetear contexto, guardar contract + resultados parciales |
+| Situación                       | Acción                                                                                     |
+|--------------------------------|-------------------------------------------------------------------------------------------|
+| Token usage >70%                | Hacer compactación de contexto: resumir flujos completados, mantener solo contratos activos|
+| Sesión >30 min                  | Guardar resumen parcial antes de continuar                                                 |
+| Request muy complejo (6+ steps) | Dividir en 2 sub-sesiones con resumen intermedio                                           |
+| Modelo muestra "context anxiety"| Resetear contexto, guardar contract + resultados parciales                                 |
 
 ---
 
@@ -468,11 +468,11 @@ Para sesiones largas con el Conductor:
 
 ## 📜 Scripts de Soporte
 
-| Script | Propósito |
-|--------|-----------|
-| [`scripts/validate-registry.py`](scripts/validate-registry.py) | Valida que todas las skills del registry existan en disco |
-| [`scripts/init-contract.sh`](scripts/init-contract.sh) | Scaffolds un Sprint Contract en `references/contracts/` |
-| [`scripts/run_evals.py`](scripts/run_evals.py) | Ejecuta tests cuantitativos contra el Conductor |
+| Script                                                        | Propósito                                                |
+|--------------------------------------------------------------|---------------------------------------------------------|
+| [`scripts/validate-registry.py`](scripts/validate-registry.py)| Valida que todas las skills del registry existan en disco|
+| [`scripts/init-contract.sh`](scripts/init-contract.sh)        | Scaffolds un Sprint Contract en `references/contracts/`  |
+| [`scripts/run_evals.py`](scripts/run_evals.py)                | Ejecuta tests cuantitativos contra el Conductor          |
 
 > Los scripts son herramientas auxiliares. El Conductor no depende de ellos para operar.
 
@@ -482,10 +482,10 @@ Para sesiones largas con el Conductor:
 
 El Conductor incluye un sistema de **evaluación cuantitativa** siguiendo Skill Creator v2.0:
 
-| Artifact | Propósito |
-|----------|-----------|
-| [`evals.json`](evals.json) | Define 7 tests de ruteo, auto-exclusión, multi-categoría, Sprint Contract y diagnóstico |
-| [`scripts/run_evals.py`](scripts/run_evals.py) | Ejecuta los tests y mide Pass@k contra los targets definidos |
+| Artifact                                      | Propósito                                                                              |
+|----------------------------------------------|---------------------------------------------------------------------------------------|
+| [`evals.json`](evals.json)                    | Define 7 tests de ruteo, auto-exclusión, multi-categoría, Sprint Contract y diagnóstico|
+| [`scripts/run_evals.py`](scripts/run_evals.py)| Ejecuta los tests y mide Pass@k contra los targets definidos                           |
 
 **Pass@k Metrics targets:**
 - Routing Accuracy: >90%
@@ -497,10 +497,10 @@ El Conductor incluye un sistema de **evaluación cuantitativa** siguiendo Skill 
 
 ## 📚 Runbooks Operativos
 
-| Runbook | Cuándo usarlo |
-|---------|---------------|
-| [`references/runbooks/01-recovery.md`](references/runbooks/01-recovery.md) | Una skill falló durante un flujo compuesto |
-| [`references/runbooks/02-diagnosis.md`](references/runbooks/02-diagnosis.md) | El usuario pide un diagnóstico general del OS |
+| Runbook                                                                     | Cuándo usarlo                                |
+|----------------------------------------------------------------------------|---------------------------------------------|
+| [`references/runbooks/01-recovery.md`](references/runbooks/01-recovery.md)  | Una skill falló durante un flujo compuesto   |
+| [`references/runbooks/02-diagnosis.md`](references/runbooks/02-diagnosis.md)| El usuario pide un diagnóstico general del OS|
 
 ---
 

@@ -11,11 +11,11 @@ Aquí se almacena todo el contexto del proyecto que alimenta a los agentes de ma
 
 ## Agentes que lo usan
 
-| Agente | Cómo usa el contexto |
-|--------|---------------------|
-| `15_Marketing_Estratega.md` | Lee objetivos y KPIs para generar briefs alineados |
-| `16_Marketing_Creador.md` | Lee tono y estilo para mantener consistencia |
-| `17_Marketing_Analista.md` | Lee KPIs para medir rendimiento contra objetivos |
+| Agente                     | Cómo usa el contexto                              |
+|---------------------------|--------------------------------------------------|
+| `15_Marketing_Estratega.md`| Lee objetivos y KPIs para generar briefs alineados|
+| `16_Marketing_Creador.md`  | Lee tono y estilo para mantener consistencia      |
+| `17_Marketing_Analista.md` | Lee KPIs para medir rendimiento contra objetivos  |
 
 ## Estructura recomendada
 

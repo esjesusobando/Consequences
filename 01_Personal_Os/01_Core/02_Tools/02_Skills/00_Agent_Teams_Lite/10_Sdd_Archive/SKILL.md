@@ -144,9 +144,9 @@ Return to the orchestrator:
 **Archived to**: `openspec/changes/archive/{YYYY-MM-DD}-{change-name}/` (openspec/hybrid) | Engram archive report (engram) | inline (none)
 
 ### Specs Synced
-| Domain | Action | Details |
-|--------|--------|---------|
-| {domain} | Created/Updated | {N added, M modified, K removed requirements} |
+| Domain  | Action         | Details                                      |
+|--------|---------------|---------------------------------------------|
+| {domain}| Created/Updated| {N added, M modified, K removed requirements}|
 
 ### Archive Contents
 - proposal.md ✅

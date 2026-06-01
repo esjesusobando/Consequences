@@ -34,7 +34,7 @@
 | 09                                   | `09_Elite_Reporting.mdc`                                              | Reporting de élite                                                           |
 | 10                                   | `10_Context_Management.mdc`                                           | Gestión de contexto                                                          |
 | 11                                   | `11_Workflow_Standards.mdc`                                           | Estándares de workflow                                                       |
-| 12                                   | `12_Audit_OS_Integrity.mdc`                                                | Integridad y auditoría OS                                                           |
+| 12                                   | `12_Audit_OS_Integrity.mdc`                                           | Integridad y auditoría OS                                                    |
 | 13                                   | `13_Testing_Resource_Management.mdc`                                  | Testing y recursos                                                           |
 | 14                                   | `14_Invoice_Intelligence.mdc`                                         | Inteligencia de facturas                                                     |
 | 15                                   | `15_Backlog_Processing.mdc`                                           | Procesamiento de backlog                                                     |

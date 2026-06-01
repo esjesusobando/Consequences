@@ -64,10 +64,10 @@ INVESTIGATE:
 
 If there are multiple approaches, compare them:
 
-| Approach | Pros | Cons | Complexity |
+| Approach  | Pros  | Cons  | Complexity  |
 |----------|------|------|------------|
-| Option A | ... | ... | Low/Med/High |
-| Option B | ... | ... | Low/Med/High |
+| Option A  | ...   | ...   | Low/Med/High|
+| Option B  | ...   | ...   | Low/Med/High|
 
 ### Step 4: Optionally Save Exploration
 

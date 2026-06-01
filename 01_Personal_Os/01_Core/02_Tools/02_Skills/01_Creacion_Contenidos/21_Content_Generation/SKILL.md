@@ -17,13 +17,13 @@ Generate written content that sounds like the user, not generic AI.
 
 ## When to Activate
 
-| Trigger | Ejemplo |
-|---------|---------|
-| Escribir blog post / artículo | "Escribí un post sobre..." |
-| Draft de email / outreach | "Redactá un email para..." |
-| Post para redes sociales | "Necesito un post de LinkedIn sobre..." |
-| Contenido marketing | "Escribí copy para la landing de..." |
-| Categoría `content`, `writing`, `outreach` | Cualquier skill que rutee aquí |
+| Trigger                                   | Ejemplo                                |
+|------------------------------------------|---------------------------------------|
+| Escribir blog post / artículo             | "Escribí un post sobre..."             |
+| Draft de email / outreach                 | "Redactá un email para..."             |
+| Post para redes sociales                  | "Necesito un post de LinkedIn sobre..."|
+| Contenido marketing                       | "Escribí copy para la landing de..."   |
+| Categoría `content`, `writing`, `outreach`| Cualquier skill que rutee aquí         |
 
 ## Inputs Required
 

@@ -259,12 +259,12 @@ The Skill Auditor now incorporates Anthropic's 6-step find-and-fix methodology t
 
 ### New Scripts Needed
 
-| Script | Purpose | Status |
-|--------|---------|--------|
-| `audit-skills.py --parallel --batch N` | Parallel discovery | Enhancement |
-| `cross-validate.py` | Independent verification of audit findings | New |
-| `audit-loop.py --dedup --rank` | Root-cause dedup + severity ranking | Enhancement |
-| `fix-missing.py --verify --adversarial-check` | Fix + verify fix passes audit | Enhancement |
+| Script                                       | Purpose                                   | Status     |
+|---------------------------------------------|------------------------------------------|-----------|
+| `audit-skills.py --parallel --batch N`       | Parallel discovery                        | Enhancement|
+| `cross-validate.py`                          | Independent verification of audit findings| New        |
+| `audit-loop.py --dedup --rank`               | Root-cause dedup + severity ranking       | Enhancement|
+| `fix-missing.py --verify --adversarial-check`| Fix + verify fix passes audit             | Enhancement|
 
 ---
 

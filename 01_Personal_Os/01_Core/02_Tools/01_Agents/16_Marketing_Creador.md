@@ -43,22 +43,22 @@ Cada pieza de contenido debe seguir el brief al pie de la letra. Si el brief es 
 
 ## 🔄 Input / Output
 
-| Input | Output |
-|-------|--------|
-| Brief del Estratega | Script de YouTube completo |
-| Plantillas de `06_Plantillas/` | Post de LinkedIn listo para publicar |
-| Guía de marca de `05_Marca/` | Newsletter redactada y formateada |
-| Contexto de `04_Contexto/` | Descripciones para thumbnails / visuales |
+| Input                         | Output                                  |
+|------------------------------|----------------------------------------|
+| Brief del Estratega           | Script de YouTube completo              |
+| Plantillas de `06_Plantillas/`| Post de LinkedIn listo para publicar    |
+| Guía de marca de `05_Marca/`  | Newsletter redactada y formateada       |
+| Contexto de `04_Contexto/`    | Descripciones para thumbnails / visuales|
 
 ---
 
 ## 🎨 Canales Soportados
 
-| Canal | Formato de output | Plantilla |
-|-------|-------------------|-----------|
-| **YouTube** | Script (hook → desarrollo → CTA), descripción, tags, thumbnail brief | `youtube-script.md` |
-| **LinkedIn** | Post con estructura probada (hook → story → insight → CTA) | `linkedin-post.md` |
-| **Newsletter** | Email con asunto, preview text, cuerpo, CTA | `newsletter.md` |
+| Canal         | Formato de output                                                   | Plantilla          |
+|--------------|--------------------------------------------------------------------|-------------------|
+| **YouTube**   | Script (hook → desarrollo → CTA), descripción, tags, thumbnail brief| `youtube-script.md`|
+| **LinkedIn**  | Post con estructura probada (hook → story → insight → CTA)          | `linkedin-post.md` |
+| **Newsletter**| Email con asunto, preview text, cuerpo, CTA                         | `newsletter.md`    |
 
 ---
 

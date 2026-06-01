@@ -90,9 +90,9 @@ Return to the orchestrator:
 **Archived to**: .atl/openspec/changes/archive/{YYYY-MM-DD}-{change-name}/
 
 ### Specs Synced
-| Domain | Action | Details |
-|--------|--------|---------|
-| {domain} | Created/Updated | {N added, M modified, K removed requirements} |
+| Domain  | Action         | Details                                      |
+|--------|---------------|---------------------------------------------|
+| {domain}| Created/Updated| {N added, M modified, K removed requirements}|
 
 ### Archive Contents
 - proposal.md ✅

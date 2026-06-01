@@ -11,17 +11,17 @@
 
 ### Pasos
 
-| Paso | Skill | Acción | Output esperado |
-|------|-------|--------|-----------------|
-| 1 | `Brand_Voice` | Definir tono y voz de marca | brand-voice.md |
-| 2 | `Marketing_Strategy` | Estrategia de campaña | strategy.md |
-| 3 | `Dumbledor_Design` | Diseño visual y assets | design-assets/ |
-| 4 | `Premium_Image_Studio` | Imágenes y banners | images/ |
-| 5 | `Carousel_Master` | Carruseles para LinkedIn/IG | carousels/ |
-| 6 | `SEO_SOTA` | Keywords y optimización SEO | seo-strategy.md |
-| 7 | `Video_Visuals_Producer` | Video promocional | video.mp4 |
-| 8 | `Claude_Ads` | Setup campaña pagada | ads-campaign/ |
-| 9 | `Skill_Auditor` | QA final | audit-report.md |
+| Paso  | Skill                   | Acción                     | Output esperado  |
+|------|------------------------|---------------------------|-----------------|
+| 1     | `Brand_Voice`           | Definir tono y voz de marca| brand-voice.md   |
+| 2     | `Marketing_Strategy`    | Estrategia de campaña      | strategy.md      |
+| 3     | `Dumbledor_Design`      | Diseño visual y assets     | design-assets/   |
+| 4     | `Premium_Image_Studio`  | Imágenes y banners         | images/          |
+| 5     | `Carousel_Master`       | Carruseles para LinkedIn/IG| carousels/       |
+| 6     | `SEO_SOTA`              | Keywords y optimización SEO| seo-strategy.md  |
+| 7     | `Video_Visuals_Producer`| Video promocional          | video.mp4        |
+| 8     | `Claude_Ads`            | Setup campaña pagada       | ads-campaign/    |
+| 9     | `Skill_Auditor`         | QA final                   | audit-report.md  |
 
 ### Sprint Contract Default
 ```
@@ -43,13 +43,13 @@
 
 ### Pasos
 
-| Paso | Skill | Acción | Output esperado |
-|------|-------|--------|-----------------|
-| 1 | `Content_Ideation` | Generar ideas basadas en tema | ideas.md |
-| 2 | `Content_Transformer` | Transformar idea raw a multi-canal | drafts/ |
-| 3 | `YouTube_Script_Writer` | Guión optimizado | script.md |
-| 4 | `Premium_Image_Studio` | Miniaturas y sociales | thumbnails/ |
-| 5 | `Dumbledor_Design` | Presentación o slide deck | slides/ |
+| Paso  | Skill                  | Acción                            | Output esperado  |
+|------|-----------------------|----------------------------------|-----------------|
+| 1     | `Content_Ideation`     | Generar ideas basadas en tema     | ideas.md         |
+| 2     | `Content_Transformer`  | Transformar idea raw a multi-canal| drafts/          |
+| 3     | `YouTube_Script_Writer`| Guión optimizado                  | script.md        |
+| 4     | `Premium_Image_Studio` | Miniaturas y sociales             | thumbnails/      |
+| 5     | `Dumbledor_Design`     | Presentación o slide deck         | slides/          |
 
 ### Sprint Contract Default
 ```
@@ -70,13 +70,13 @@
 
 ### Pasos
 
-| Paso | Skill | Acción | Output esperado |
-|------|-------|--------|-----------------|
-| 1 | `Firecrawl` | Scraping de fuentes | data/raw/ |
-| 2 | `N8N_Workflows` | Diseño del workflow | workflow-design.md |
-| 3 | `N8N_JS` / `N8N_Python` | Código de nodos | code-nodes/ |
-| 4 | `N8N_Validation` | Validación del workflow | validation-report.md |
-| 5 | `DevOps` | Deploy a producción | deployment-log.md |
+| Paso  | Skill                  | Acción                 | Output esperado     |
+|------|-----------------------|-----------------------|--------------------|
+| 1     | `Firecrawl`            | Scraping de fuentes    | data/raw/           |
+| 2     | `N8N_Workflows`        | Diseño del workflow    | workflow-design.md  |
+| 3     | `N8N_JS` / `N8N_Python`| Código de nodos        | code-nodes/         |
+| 4     | `N8N_Validation`       | Validación del workflow| validation-report.md|
+| 5     | `DevOps`               | Deploy a producción    | deployment-log.md   |
 
 ### Sprint Contract Default
 ```
@@ -97,17 +97,17 @@
 
 ### Pasos
 
-| Paso | Skill | Acción | Output esperado |
-|------|-------|--------|-----------------|
-| 1 | `SDD Init` | Inicializar contexto SDD | sdd-context/ |
-| 2 | `SDD Explore/Propose` | Investigar y proponer cambio | proposal.md |
-| 3 | `SDD Spec` | Especificación detallada | spec.md |
-| 4 | `SDD Design` | Diseño técnico | design.md |
-| 5 | `SDD Tasks` | Descomposición en tareas | tasks.md |
-| 6 | `SDD Apply` | Implementación | code/ |
-| 7 | `SDD Verify` | Verificación contra spec | verification.md |
-| 8 | `SDD Archive` | Archivar documentación | archive/ |
-| 9 | `Agent Teams` | Coordinación multi-agente (opcional) | coordination-log.md |
+| Paso  | Skill                | Acción                              | Output esperado    |
+|------|---------------------|------------------------------------|-------------------|
+| 1     | `SDD Init`           | Inicializar contexto SDD            | sdd-context/       |
+| 2     | `SDD Explore/Propose`| Investigar y proponer cambio        | proposal.md        |
+| 3     | `SDD Spec`           | Especificación detallada            | spec.md            |
+| 4     | `SDD Design`         | Diseño técnico                      | design.md          |
+| 5     | `SDD Tasks`          | Descomposición en tareas            | tasks.md           |
+| 6     | `SDD Apply`          | Implementación                      | code/              |
+| 7     | `SDD Verify`         | Verificación contra spec            | verification.md    |
+| 8     | `SDD Archive`        | Archivar documentación              | archive/           |
+| 9     | `Agent Teams`        | Coordinación multi-agente (opcional)| coordination-log.md|
 
 ### Sprint Contract Default
 ```
@@ -130,15 +130,15 @@
 
 ### Pasos
 
-| Paso | Skill | Acción | Output esperado |
-|------|-------|--------|-----------------|
-| 1 | `pdf` | Leer/extraer texto y tablas del PDF | extracted-text.md, tables.csv |
-| 2 | `xlsx` | Transformar datos extraídos a planilla | data.xlsx |
-| 3 | `docx` | Generar documento Word con contenido formateado | report.docx |
-| 4 | `pptx` | Crear presentación a partir del documento | deck.pptx |
-| 5 | `canvas-design` | Diseñar tipografía y visuales si aplica | fonts/ |
-| 6 | `brand-guidelines` | Verificar consistencia de marca en outputs | brand-check.md |
-| 7 | `skill-creator` | QA final y validación de formato | qa-report.md |
+| Paso  | Skill             | Acción                                         | Output esperado              |
+|------|------------------|-----------------------------------------------|-----------------------------|
+| 1     | `pdf`             | Leer/extraer texto y tablas del PDF            | extracted-text.md, tables.csv|
+| 2     | `xlsx`            | Transformar datos extraídos a planilla         | data.xlsx                    |
+| 3     | `docx`            | Generar documento Word con contenido formateado| report.docx                  |
+| 4     | `pptx`            | Crear presentación a partir del documento      | deck.pptx                    |
+| 5     | `canvas-design`   | Diseñar tipografía y visuales si aplica        | fonts/                       |
+| 6     | `brand-guidelines`| Verificar consistencia de marca en outputs     | brand-check.md               |
+| 7     | `skill-creator`   | QA final y validación de formato               | qa-report.md                 |
 
 ### Sprint Contract Default
 ```

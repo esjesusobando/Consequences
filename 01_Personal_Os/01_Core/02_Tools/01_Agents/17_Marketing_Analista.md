@@ -41,12 +41,12 @@ Cada análisis debe terminar con recomendaciones accionables, no solo datos. "El
 
 ## 🔄 Input / Output
 
-| Input | Output |
-|-------|--------|
-| Contenido publicado | Reporte de rendimiento por pieza |
-| Métricas de plataforma (views, CTR, engagement) | Recomendaciones para el Estratega |
-| KPIs del brief original | Patrones detectados (qué funciona) |
-| Historial de publicaciones | Optimizaciones para próximos briefs |
+| Input                                          | Output                             |
+|-----------------------------------------------|-----------------------------------|
+| Contenido publicado                            | Reporte de rendimiento por pieza   |
+| Métricas de plataforma (views, CTR, engagement)| Recomendaciones para el Estratega  |
+| KPIs del brief original                        | Patrones detectados (qué funciona) |
+| Historial de publicaciones                     | Optimizaciones para próximos briefs|
 
 ---
 
