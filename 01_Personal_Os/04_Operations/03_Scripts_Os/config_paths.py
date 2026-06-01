@@ -48,7 +48,7 @@ ENGINE_DIR     = ROOT_DIR / "01_Personal_Os" / "04_Operations" / "03_Scripts_Os"
 
 # GRAPHIFY INTEGRATION (v6.2+)
 GRAPHIFY_BASE   = ROOT_DIR / "Graphify_Out"  # Base directory for Graphify tool output
-GRAPHIFY_DIR    = GRAPHIFY_BASE / "graphify-out"  # Actual graph output directory
+GRAPHIFY_DIR    = GRAPHIFY_BASE  # Actual graph output directory (no subdir)
 GRAPHIFY_DB     = GRAPHIFY_DIR / "graph.json"
 GRAPHIFY_REPORT = GRAPHIFY_DIR / "GRAPH_REPORT.md"
 GRAPHIFY_HTML   = GRAPHIFY_DIR / "graph.html"
