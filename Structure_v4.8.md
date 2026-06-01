@@ -383,13 +383,13 @@ Think_Different/                    # RAÍZ
 
 ```
 03_Resultado/
-├── .opencode/                   # ✅ Deps actualizadas
+├── .opencode/                   # ✅ Config OpenCode
 ├── 00_Proyectos/                # Proyectos activos y planes
 │   ├── 00_Side Project/         # Oil/Brain (repo propio, ignorado)
 │   ├── 01_Planes/              # Planes de proyecto
 │   ├── 02_Revisar_Now/         # Pendientes de revisión
 │   ├── 03_Revisar_Planes/      # Planes en revisión
-│   ├── 04_Pruebas_Ads/         # Pruebas de anuncios (19 subdirectorios 01-19)
+│   ├── 04_Pruebas_Ads/         # Pruebas de anuncios
 │   └── README.md
 ├── 01_Aprendizaje/              # Outputs de aprendizaje
 │   ├── 00_Output_Skills/       # Skills generadas
@@ -408,20 +408,24 @@ Think_Different/                    # RAÍZ
 │   │   └── Imagenes_Finales/
 │   ├── 01_Frontend_Slides_Exercise/    # Frontend/Slides
 │   ├── 02_Huashu_Design_Exercise/      # Huashu Design
-│   ├── 04_Sessions/                    # Sesiones de trabajo (vacíos)
+│   ├── 04_Sessions/                    # Sesiones de trabajo
 │   ├── 05_Imagenes_Finales/            # Imágenes finales
 │   ├── 06_AI_News_Weekly/              # AI News Weekly
 │   ├── 07_Clinica_Infantil/            # Clínica Infantil (repo propio .git)
+│   ├── 08_Suerte_Repeticion_Test/      # Experimento repetición/probabilidad
 │   └── README.md
-├── 09_World_OIM/                # ⚠️ DUPLICADO — Misma data que 02_Experimentos/00_World_OIM/
-│   └── 01_OIM_Website_v2/
-├── 03_Reportes/                # Reportes y auditorías
-├── 04_Reportes/               # Reportes operativos
-├── 05_Documentacion/           # Documentación general
+├── 03_Reportes/                 # Reportes y auditorías del sistema
+│   ├── 01_Auditorias_OS/       # JSONs de auditoría (manifest + 5 JSONs)
+│   ├── audit_*.txt             # Reportes de auditoría (estructura, health, profundo, skills)
+│   ├── watchdog_report_*.txt   # Reportes watchdog
+│   ├── sota_integrity_*.txt    # Verificaciones SOTA
+│   └── PROCESO_NOTES_*.md      # Notas de proceso
+├── 04_Documentacion/            # Documentación general
 ├── 00_Think_Different.code-workspace
-└── ORGANIZACION_SUMMARY.md     # Documento de reorganización
+├── ORGANIZACION_SUMMARY.md      # Documento de reorganización
+└── README.md
 
-*Nota: Estructura reorganizada el 2026-05-24. Contenido legacy preservado en subdirectorios agrupados.*
+*Nota: Estructura reorganizada 2026-05-24. Consolidada 2026-06-01 (04_Reportes→fusionado, 09_World_OIM→eliminado duplicado, 05_Documentacion→renumerada 04_).*
 ```
 
 ---
@@ -430,7 +434,7 @@ Think_Different/                    # RAÍZ
 
 | Archivo/Directorio         | Propósito                                                       |
 |---------------------------|----------------------------------------------------------------|
-| **.mcp.json**              | 7 MCPs Claude Code (root) + 38 backup en 03_Mcp/                |
+| **.mcp.json**              | 8 MCPs root (magicui, aim, context7, obsidian, eagle, higgsfield, sequential-thinking, google-workspace) + 38 backup en 03_Mcp/ |
 | **.claude/**               | Config Claude Code (skills, rules, agents, memory, history)     |
 | **.claude-plugin/**        | Claude plugin directory                                         |
 | **.opencode/**             | Config OpenCode + plugins + skills locales (ui-ux-pro-max → Archivado a 05_Archive/) |
@@ -457,7 +461,7 @@ Think_Different/                    # RAÍZ
 | Skills (legacy)                  | ~490 en 24 categorías archivadas (00_Skills_Legacy)           | 💾       |
 | Agentes                          | 55 (source) / 82 (con SDD/CE) / 20 agent-files root           | ✅       |
 | Rules                            | 13 .mdc (00–12) + README + RULES_INDEX.md + .Backup/          | ✅       |
-| MCPs                             | 7 servidores root + 38 backup en 03_Mcp/                      | ✅       |
+| MCPs                             | 8 servidores root + 38 backup en 03_Mcp/                      | ✅       |
 | HUBs                             | 20 (00-20) + HUB_SOTA                                       | ✅       |
 | Scripts                          | 256 (.py)                                                   | ✅       |
 | Workflows                        | 27 en 7 categorías                                            | ✅       |
@@ -518,4 +522,4 @@ Al iniciar sesión, ejecutar EN ORDEN:
 
 *Versión: v4.9 Consequences*
 *Audit: 2026-05-29 (SOTA Consolidation)*
-*Skills: 385 active + ~490 legacy | Agents: 55 (source) / 82 (con SDD/CE) | Rules: 13 .mdc | MCPs: 7+38 | HUBs: 20 | Scripts: 256*
+*Skills: 385 active + ~490 legacy | Agents: 55 (source) / 82 (con SDD/CE) | Rules: 13 .mdc | MCPs: 8+38 | HUBs: 20 | Scripts: 256*
