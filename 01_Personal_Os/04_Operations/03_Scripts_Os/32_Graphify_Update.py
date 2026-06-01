@@ -38,8 +38,11 @@ def update_graph():
     print(f"[Graphify] Archivos modificados:\n{changes}")
     
     # Construir grafo actualizado
-    from 31_Graphify_Hub import build_graph
-    return build_graph()
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("graphify_hub", str(SCRIPTS_OS / "31_Graphify_Hub.py"))
+    graphify_hub = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(graphify_hub)
+    return graphify_hub.build_graph()
 
 if __name__ == "__main__":
     success = update_graph()
