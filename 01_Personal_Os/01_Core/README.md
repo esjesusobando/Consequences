@@ -27,8 +27,8 @@ Think_Different/
 
 | #   | Carpeta              | Contenido                                     | Estado  |
 |----|---------------------|----------------------------------------------|--------|
-| 01  | `00_Workflows_Os/`   | 27 workflows (7 categorías)                   | ✅       |
-| 02  | `01_Rules/`          | 13 reglas .mdc (00-12)                        | ✅       |
+| 01  | `00_Workflows_Os/`   | 28 workflows (7 categorías)                   | ✅       |
+| 02  | `01_Rules/`          | 14 reglas .mdc (00-13)                        | ✅       |
 | 03  | `02_Tools/`          | Agents, Skills, MCPs, Hooks, Plugins, Evals   | ✅       |
 
 ---
@@ -37,8 +37,8 @@ Think_Different/
 
 | #   | Carpeta               | Contenido                                              | Estado  |
 |----|----------------------|-------------------------------------------------------|--------|
-| 01  | `01_Agents/`          | 55 agents (Dream + Specialists + Growth + Individuales)| ✅       |
-| 02  | `02_Skills/`          | 385 skills (14 áreas)                                  | ✅       |
+| 01  | `01_Agents/`          | 62 agents (26 Root + 5 Dream + 23 Spec + 5 Growth + 3 other) | ✅       |
+| 02  | `02_Skills/`          | 392 skills (15 áreas)                                  | ✅       |
 | 03  | `03_Mcp/`             | MCP servers (backup config)                            | ✅       |
 | 04  | `04_Integrations/`    | Fireflies, Granola                                     | ✅       |
 | 05  | `05_Hooks/`           | 10 hooks (6 fases)                                     | ✅       |
@@ -54,12 +54,12 @@ Think_Different/
 | Componente       | Cantidad  | Estado                |
 |-----------------|----------|----------------------|
 | Workflows        | 28        | ✅ Activo              |
-| Rules (.mdc)     | 13        | ✅ Definido            |
-| Agents           | 55        | ✅ Sync                |
-| Skills           | 385       | ✅ 14 áreas funcionales|
+| Rules (.mdc)     | 14        | ✅ Definido            |
+| Agents           | 62        | ✅ Sync (ver manifest) |
+| Skills           | 392       | ✅ 15 áreas funcionales|
 | MCPs             | 36        | ✅ Activo              |
-| HUBs             | 20        | ✅ Activo              |
-| Scripts totales  | 256       | ✅ Recursivo           |
+| HUBs             | 30        | ✅ Activo              |
+| Scripts totales  | 163       | ✅ 30 root + 133 subdir|
 | JARVIS Manifests | 7         | ✅ Validado            |
 | Hooks            | 10        | ✅ 6 fases             |
 

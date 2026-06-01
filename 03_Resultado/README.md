@@ -15,6 +15,7 @@
 ├── 03_Reportes/           # Auditorías, salud del sistema, watchdog, SOTA integrity
 │   └── 01_Auditorias_OS/  # JSONs de auditoría consolidados (manifest + 5 JSONs)
 ├── 04_Documentacion/      # Documentación suelta organizada
+├── 05_Testing_Skills/     # Pruebas controladas y outputs HTML de skills
 ├── ORGANIZACION_SUMMARY.md
 └── README.md
 ```
@@ -28,6 +29,7 @@
 | **02_Experimentos** | 9                     | Recursos_Varios, World_OIM (4 variantes), Frontend_Slides, Huashu_Design, Sessions, Imagenes_Finales, AI_News_Weekly, Clinica_Infantil, Suerte_Repeticion_Test|
 | **03_Reportes**     | 1 subdir + 22 archivos| Auditorías OS (JSON), audit_estructura, audit_health, audit_profundo, audit_skills, watchdog_report, sota_integrity                                           |
 | **04_Documentacion**| 0                     | Documentación suelta general                                                                                                                                  |
+| **05_Testing_Skills**| 0                    | Pruebas controladas y outputs HTML de skills de JAO                                                                                                           |
 
 ## Relaciones
 

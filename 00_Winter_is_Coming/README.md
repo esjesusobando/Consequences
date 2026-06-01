@@ -27,13 +27,13 @@
 - **GGA Version**: v2.8.1 ✅
 - **Every CE**: v3.8.4 ✅
 - **gentle-ai**: v1.30.6 ✅
-- **Agentes**: 55 (2 Root + 5 Dream + 23 Specialists + 5 Growth + 20 Individuales)
+- **Agentes**: 62 (26 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other)
 - **MCPs**: 36 servidores activos
-- **Skills**: 385 SKILL.md activas (14 áreas funcionales) + ~490 legacy
-- **HUBs**: 20 (19 numerados + HUB_SOTA)
-- **Scripts**: 256 .py
+- **Skills**: 392 SKILL.md activas (15 áreas funcionales)
+- **HUBs**: 30 (todos con interfaz)
+- **Scripts**: 163 .py (30 root + 133 subdirectorios)
 - **Workflows**: 28 (7 categorías)
-- **Rules**: 13 .mdc (00-12)
+- **Rules**: 14 .mdc (00-13)
 
 ---
 

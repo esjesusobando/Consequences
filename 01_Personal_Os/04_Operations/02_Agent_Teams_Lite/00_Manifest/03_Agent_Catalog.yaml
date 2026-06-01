@@ -1,8 +1,8 @@
-# Agent Catalog — generated 2026-05-31T14:36:11
+# Agent Catalog — generated 2026-06-01T18:37:21
 # Source of truth: 01_Personal_Os/01_Core/02_Tools/01_Agents/
 
 version: v3.0
-generated: "2026-05-31T14:36:11"
+generated: "2026-06-01T18:37:21"
 policy:
   source_of_truth: 01_Personal_Os/01_Core/02_Tools/01_Agents/
   backup: .agent/01_Agents/
@@ -12,4 +12,11 @@ totals:
   backup: 62
   in_sync: 62
   drift: 0
+by_category:
+  dream_team: 5
+  growth: 5
+  individual: 0
+  other: 3
+  root: 26
+  specialists: 23
 drift_files:

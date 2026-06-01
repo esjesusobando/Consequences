@@ -166,11 +166,11 @@ Think_Different/                           # RAÍZ
 ├── 00_Winter_is_Coming/          ✅ MATRIX: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD 💾)
-│   │   ├── 00_Workflows_Os/     ✅ 27 workflows (7 categorías)
-│   │   ├── 01_Rules/            ✅ 13 reglas (.mdc) — fuente de verdad
+ │   │   ├── 00_Workflows_Os/     ✅ 28 workflows (7 categorías)
+ │   │   ├── 01_Rules/            ✅ 14 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/            ✅ Todas las herramientas
-│   │       ├── 01_Agents/       ✅ 55 agentes (2 Root + 5 Dream + 23 Specialists + 5 Growth + 20 Individuales)
-│   │       ├── 02_Skills/         ✅ 385 skills (14 áreas funcionales)
+  │   │       ├── 01_Agents/       ✅ 62 agentes (26 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other)
+  │   │       ├── 02_Skills/         ✅ 392 skills (15 áreas funcionales)
 │   │       ├── 03_Mcp/         ✅ Backup configs MCP
 │   │       ├── 04_Integrations/ ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/        ✅ Pre/Post/Lifecycle/Sound/Harness
@@ -184,7 +184,7 @@ Think_Different/                           # RAÍZ
 │   │   ├── 00_Context_LLM/      ✅ Memoria, notas, knowledge brain
 │   │   ├── 01_Auto_Improvement/ ✅ Motor auto-mejora
 │   │   ├── 02_Agent_Teams_Lite/ ✅ SDD registry + 7 JARVIS manifests
-│   │   ├── 03_Scripts_Os/       ✅ 20 HUBs + 256 scripts total
+  │   │   ├── 03_Scripts_Os/       ✅ HUBs: 30 — scripts: 163 totales (133 en subdirectorios)
 │   │   ├── 04_Installer/        ✅ Instalador del OS
 │   │   ├── 05_Projects/         ✅ Proyectos activos
 │   │   ├── 06_SOTA_Features/    ✅ Features estado-del-arte
@@ -203,19 +203,11 @@ Think_Different/                           # RAÍZ
 └── README.md                    ✅ Documentación principal
 ```
 
-### 2. AGENTS (55 — 5 áreas funcionales — 2026-06-01)
+### 2. AGENTS (62 — 6 categorías funcionales — 2026-06-01)
 
-| Categoría                                   | Ubicación                                                                        |
-|--------------------------------------------|---------------------------------------------------------------------------------|
-| Root (2)                                    | `01_Core/02_Tools/01_Agents/` (00_Orchestrator, 00_Agent_Template)               |
-| Dream Team (5)                              | `01_Core/02_Tools/01_Agents/01_Dream_Team/`                                      |
-| Specialists Compound (23)                   | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                            |
-| Growth (5)                                  | `01_Core/02_Tools/01_Agents/03_Growth/`                                          |
-| Individuales (20)                           | `01_Core/02_Tools/01_Agents/` (01-20)                                            |
+> ⚠️ Source: 62 agentes total (26 root-level .md + 5 Dream Team + 23 Specialists + 5 Growth + 3 other). Ver `OS_DIRECTORY.md` para tree view completo. Backup .agent/ puede diferir en conteo.
 
-> ⚠️ Source: 55 agentes (5 áreas). Backup .agent/ puede diferir en conteo — es esperado por ser un snapshot histórico, no afecta runtime.
-
-### 3. SKILLS (385 — 14 áreas funcionales)
+### 3. SKILLS (392 — 14 áreas funcionales)
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
@@ -236,7 +228,7 @@ Think_Different/                           # RAÍZ
 | 07_Invictus_Web                                  | 07_Invictus_Web/            | Playwright, Superpowers, Browser Auto                         |
 | 10_Laia_Learning                                 | 10_Laia_Learning/           | Sistema de aprendizaje personal                               |
 
-> ⚠️ Audit 2026-06-01: 14 áreas activas, 385 skills verificados contra disco
+> ⚠️ Audit 2026-06-01: 14 áreas activas, 392 skills (SKILL.md) verificados contra disco
 
 ### 4. JARVIS 4.9 — MANIFEST SYSTEM
 
@@ -244,10 +236,10 @@ Think_Different/                           # RAÍZ
 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 ├── 01_OS_Inventory.json      # Inventario OS (updated 2026-05-22)
 ├── 02_MCP_Registry.yaml     # 36 MCPs (+1 Higgfield remote)
-├── 03_Agent_Catalog.yaml    # 55 agentes
-├── 04_Skill_Index.json      # 385 skills en 14 áreas (updated 2026-06-01)
-├── 05_HUB_Catalog.yaml     # 20 HUBs + 256 scripts
-├── 06_Workflow_Graph.yaml   # 27 workflows
+├── 03_Agent_Catalog.yaml    # 62 agentes source (referencia al manifest)
+├── 04_Skill_Index.json      # 392 skills en 15 áreas (updated 2026-06-01)
+├── 05_HUB_Catalog.yaml     # HUBs: 30 — scripts: 163 totales (133 en subdirectorios)
+├── 06_Workflow_Graph.yaml   # 28 workflows
 └── 07_Hook_Registry.yaml    # 10 hooks (6 categorías)
 ```
 
@@ -287,13 +279,13 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 |----------------------------------|---------------------------|-------------------------------------------------------------------------|
 | **Overall Health**                | **✅ PURE GREEN**           | v4.9 — 2026-06-01 — Docs audit DONE                                      |
 | Estructura (4 raíz)               | ✅ PASS                     | Winter / Personal_Os / Playground / Resultado                            |
-| HUBs (20 + 256 scripts)           | ✅ PASS                     | 20 HUBs (19 numerados + HUB_SOTA)                                        |
-| Skills (385, 14 áreas)            | ✅ VERIFIED                 | 14 áreas funcionales — audit 2026-05-31                                  |
-| Agent Matrix                      | ✅ SYNCED                   | 55 agentes (5 áreas: Root, Dream Team, Specialists, Growth, Individuales)|
+| HUBs (30 — scripts: 163)           | ✅ PASS                     | 30 HUBs (todos con interfaz) — 163 scripts totales                                |
+| Skills (392, 15 áreas)            | ✅ VERIFIED                 | 15 áreas funcionales — referencia al manifest                             |
+| Agent Matrix                      | ✅ SYNCED                   | 62 agentes (26 root + 5 Dream + 23 Spec + 5 Growth + 3 other)            |
 | Manifest (7 archivos)             | ✅ VALIDATED                | 00_Manifest/ en 02_Agent_Teams_Lite/                                     |
 | MCPs (7+38 Claude / 36 OpenCode)  | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                                       |
-| Rules (13 .mdc)                   | ✅ DEFINED                  | 01_Rules/                                                                |
-| Workflows (27)                    | ✅ ACTIVE                   | 7 categorías en 00_Workflows_Os                                          |
+| Rules (14 .mdc)                   | ✅ DEFINED                  | 01_Rules/ (00-13 + 13_HTML_Visualization)                                |
+| Workflows (28)                    | ✅ ACTIVE                   | 7 categorías en 00_Workflows_Os (1+10+8+2+2+4+1)                        |
 | Hooks (10, 6 fases)               | ✅ ACTIVE                   | 05_Hooks/                                                                |
 | Agent Teams Protocol              | ✅ ACTIVE                   | Super Campeones                                                          |
 
@@ -351,12 +343,13 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 
 ---
 
-**Última actualización:** 2026-06-01
-**Versión:** v4.9 Consequences — Judgment Day v3 — Full Project Sync
+**Última actualización:** 2026-06-01 (Audit Completo + Fixes)
+**Versión:** v4.9 Consequences — Judgment Day v3 — Full Project Sync — Audit Completo
 
 > ✅ **Migración v4.0 2026-05-13:** Production Ready. Pure Green State. Paths corregidos.
 > ✅ **Judgment Day v3 2026-05-31:** Docs syncronizados. Counts corregidos. Full project scan.
 > ✅ **Audit 2026-05-23:** Full project audit v2. Submodule OIM fixed. 21 CE skills registered. Docs pixel-perfect.
+> ✅ **Audit 2026-06-01:** SSOT Unification v4.9. Counts actualizados: Rules 14, HUBs 30, Workflows 28, Skills 392 (15 áreas), Agents 62. Ver manifest en 00_Manifest/ para SSOT.
 
 © 2026 PersonalOS v4.9 Consequences Production Ready
 

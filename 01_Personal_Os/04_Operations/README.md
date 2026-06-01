@@ -51,7 +51,7 @@ Think_Different/
 02_Agent_Teams_Lite/
 ├── 00_Manifest/
 │   ├── 02_MCP_Registry.yaml     # 7+37 MCPs (7 both, 1 Claude-only, 36 OpenCode-only)
-│   ├── 03_Agent_Catalog.yaml  # 55 agents source / 52 backup
+│   ├── 03_Agent_Catalog.yaml  # 62 agents source / 52 backup
 │   ├── 05_HUB_Catalog.yaml   # 28 root scripts + subdirectory tools
 │   ├── 06_Workflow_Graph.yaml # 27 workflows (7 categorías)
 │   └── 07_Hook_Registry.yaml # 10 hooks (6 fases)
@@ -141,7 +141,7 @@ Esta carpeta contiene el **cerebro operativo** del sistema - memoria a largo pla
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | SDD Skills                 | 10 (sdd-init, sdd-explore, sdd-propose, sdd-spec, sdd-design, sdd-tasks, sdd-apply, sdd-verify, sdd-archive, skill-registry)              |
 | MCP Servers                | 44 total (7 both, 1 Claude-only, 36 OpenCode-only)                                                                                        |
-| Agents (source)            | 55                                                                                                                                        |
+| Agents (source)            | 62                                                                                                                                        |
 | HUBs (root scripts)        | 28                                                                                                                                        |
 | Workflows                  | 28 (7 categorías)                                                                                                                         |
 | Hooks                      | 10 (6 fases)                                                                                                                              |

@@ -2,7 +2,7 @@
 
 > **You are an Orchestrator Agent** with a complete engineering stack. You coordinate specialized sub-agents, keep backlog items organized, tie work to goals, execute technical workflows, and maintain system integrity.
 
-**Última actualización:** 2026-05-25 (v4.9 Production Ready — Judgment Day v3 — Auditoría Full Project)
+**Última actualización:** 2026-06-01 (v4.9 Consequences — Judgment Day v4 — Post-Audit Fixes)
 
 ---
 
@@ -38,10 +38,10 @@ cat 01_Personal_Os/03_Task/  # tareas activas
 
 | Recurso                                            | Ubicación                                                                  | Para qué usarlo                                                    |
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
-| **Skills** (14 áreas, 385)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
-| **Reglas** (13 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
-| **Agentes** (55)                                   | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas                                     |
-| **HUBs** (20 HUBs + 256 scripts total)             | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema (git, audit)                                |
+| **Skills** (392, 15 áreas)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
+| **Reglas** (14 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
+| **Agentes** (62)                                   | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas (ver manifest para breakdown)       |
+| **HUBs** (30 HUBs — 163 scripts totales)            | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema — 163 scripts totales                       |
 | **MCPs** (7 root + 38 backup)                      | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
@@ -164,10 +164,10 @@ Think_Different/                           # v4.9 — 4 carpetas raíz
 ├── 01_Personal_Os/                        # ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                           # Motor del OS
 │   │   ├── 00_Workflows_Os/              # 28 Workflows (7 categorías)
-│   │   ├── 01_Rules/                     # 13 reglas (.mdc)
+│   │   ├── 01_Rules/                     # 14 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
-│   │       ├── 01_Agents/               # 55 agentes
-│   │       ├── 02_Skills/                # 385 skills (14 áreas)
+│   │       ├── 01_Agents/               # 62 agentes (referencia al manifest)
+│   │       ├── 02_Skills/                # 392 skills (15 áreas)
 │   │       ├── 03_Mcp/                   # Backup MCPs
 │   │       ├── 04_Integrations/         # Fireflies, Granola
 │   │       ├── 05_Hooks/                # Pre/Post/Lifecycle/Sound
@@ -182,7 +182,7 @@ Think_Different/                           # v4.9 — 4 carpetas raíz
 │       ├── 00_Context_LLM/              # Memoria LLM
 │       ├── 01_Auto_Improvement/         # Motor auto-mejora
 │       ├── 02_Agent_Teams_Lite/         # SDD registry + 7 Manifests
-│       ├── 03_Scripts_Os/               # 20 HUBs + 256 scripts total
+│       ├── 03_Scripts_Os/               # 30 HUBs — 163 scripts totales (133 en subdirectorios)
 │       ├── 04_Installer/                # Installer
 │       ├── 05_Projects/                 # Proyectos activos
 │       ├── 06_SOTA_Features/            # Features estado-del-arte
@@ -373,7 +373,7 @@ Configured in `.mcp.json` (raíz del proyecto):
 
 ---
 
-## 7. HUB SCRIPTS
+## 7. HUB SCRIPTS (30 activos)
 
 Centralized HUBs in `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 
@@ -400,10 +400,15 @@ Centralized HUBs in `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 | **20_System_Mapper_Hub.py**                         | Genera 7 manifests JARVIS                                                  |
 | **21_Legacy_Path_Cleanup.py**                       | Limpia paths legacy                                                        |
 | **22_Validate_Skill_Frontmatter.py**                | Detecta skills sin frontmatter YAML                                        |
+| **24_mass_path_migration.py**                       | Migración masiva de paths legacy                                           |
+| **25_Minimax_Optimizer_Hub.py**                     | Optimización Minimax de recursos del sistema                               |
 | **26_Parallel_Audit_Pro.py**                        | Auditoría paralela avanzada                                                |
 | **27_Skill_Auditor.py**                             | Auditoría específica de skills                                             |
 | **28_System_Health_Monitor.py**                     | Monitor de salud del sistema                                               |
 | **29_Repo_Sync_Auditor.py**                         | Auditor de sincronización de repos                                         |
+| **30_path_replacement.py**                          | Reemplazo masivo de paths en skills legacy                                 |
+| **31_Graphify_Hub.py**                              | Indexación y consulta del grafo de conocimiento del proyecto               |
+| **32_Graphify_Update.py**                           | Actualización incremental del grafo de conocimiento                        |
 
 ### Dynamic Paths
 
@@ -552,4 +557,4 @@ Cualquier mensaje del usuario que coincida con estos triggers → **responder co
 
 ---
 
-_Think Different PersonalOS v4.9 Consequences — Pure Green State (Audit 2026-05-29)_
+_Think Different PersonalOS v4.9 Consequences — Pure Green State (Audit + JD v4 2026-06-01)_

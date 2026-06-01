@@ -18,11 +18,11 @@
 ├── 02_Dream_Team.md             ← Estructura del equipo
 ├── Requirements.txt              ← Dependencias Python
 ├── 00_Workflows_Os/            ← 28 workflows (7 categorías)
-├── 01_Rules/                   ← 13 archivos .mdc (00-12)
+├── 01_Rules/                   ← 14 archivos .mdc (00-13)
 └── 02_Tools/
     ├── README.md
-    ├── 01_Agents/             ← 55 agents (Dream + Specialists + Individuales + Growth)
-    ├── 02_Skills/             ← 385 skills (14 áreas activas)
+    ├── 01_Agents/             ← 62 agents (26 Root + 5 Dream + 23 Spec + 5 Growth + 3 other)
+    ├── 02_Skills/             ← 392 skills (15 áreas activas)
     ├── 03_Mcp/                ← MCP servers (backup de config)
     ├── 04_Integrations/       ← Fireflies, Granola
     ├── 05_Hooks/              ← 10 hooks (6 fases)
@@ -115,21 +115,21 @@
 
 ## TOOLS — ESTRUCTURA
 
-### 01_Agents (55 agents) ✅
+### 01_Agents (62 agents) ✅
+
+> 📍 Clasificación actualizada según manifest. Ver `00_Manifest/01_OS_Inventory.json` → `agents.by_category`.
 
 | Categoría               | Agents   | Detalles                                                                                                                                             |
 |------------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Orchestrator**        | 1        | `00_Orchestrator.md`                                                                                                                                 |
-| **Agent Template**      | 1        | `00_Agent_Template.md`                                                                                                                               |
-| **Scope Architect**     | 1        | `01_Scope_Rule_Architect.md`                                                                                                                         |
+| **Root**                | 26       | Directo en `01_Agents/` + `00_Agent_Teams_Lite/` + `00_OS_Conductor/`                                                                                |
 | **Dream Team**          | 5        | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform)                                                                                        |
 | **Specialists Compound**| 23       | `02_Specialists_Compound/` (review, architecture, framework, data, quality, security, research)                                                      |
 | **Growth**              | 5        | `03_Growth/` (Content Transformer, YouTube Script/Thumbnail/Title, Carousel)                                                                         |
-| **Individuales**        | 19       | TDD, React, Security, Git, Accessibility, PRD, Workflow Orchestrator, AIPM Judge, LFG, Hillary, Laia, Marketing, Workflow Youtube/LinkedIn/Newsletter|
+| **Other**               | 3        | `04_Contexto/`, `05_Marca/`, `06_Plantillas/`, `07_Agent_Teams_Lite_Gen/`                                                                            |
 
 ---
 
-### 02_Skills — 14 ÁREAS ACTIVAS (385 skills) ✅
+### 02_Skills — 15 ÁREAS ACTIVAS (392 skills) ✅
 
 **Ubicación:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
@@ -192,7 +192,7 @@
 │                                                             │
 │  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐  │
 │  │   Workflows  │───▶│    Rules     │───▶│    Tools     │  │
-│  │  (29 files)  │    │  (13 .mdc)   │    │ (385 skills) │  │
+│  │  (29 files)  │    │  (14 .mdc)   │    │ (392 skills) │  │
 │  └──────────────┘    └──────────────┘    └──────────────┘  │
 │         │                   │                   │          │
 │         │                   │                   │          │

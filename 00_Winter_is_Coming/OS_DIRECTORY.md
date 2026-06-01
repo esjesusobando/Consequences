@@ -11,28 +11,26 @@
 | MCPs Claude Code                    | **36**                                                                 | ✅ SYNCED — drift 0                           |
 | Every CE                            | v3.8.4 (local repo)                                                    | ✅ ACTIVE — Local version                     |
 | gentle-ai                           | v1.30.6                                                                | ✅ AVAILABLE                                  |
-| Skills                              | **385** (14 áreas funcionales)                                         | ✅ VERIFIED — 0 sin frontmatter               |
-| Agentes                             | **55** (2 Root + 5 Dream + 23 Specialists + 5 Growth + 20 Individuales)| ✅ SYNCED                                     |
-| HUBs                                | **20** scripts (`*_Hub.py` + HUB_SOTA)                                 | ✅ VERIFIED                                   |
-| Scripts totales                     | **256** (recursivo en 03_Scripts_Os/)                                  | ✅ DOCUMENTED                                 |
-| Workflows                           | **28** (7 categorías en 00_Workflows_Os)                               | ✅ ACTIVE                                     |
-| Hooks                               | **10** (6 fases)                                                       | ✅ ACTIVE                                     |
-| Rules                               | **13 (.mdc)** en 01_Rules                                              | ✅ DEFINED                                    |
+| Skills                              | **392** (15 áreas funcionales)                                         | ✅ VERIFIED — 0 sin frontmatter               |
+| Agentes                             | **62** (26 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other)      | ✅ SYNCED                                     |
+| HUBs                                | **30** scripts (`*_Hub.py` + auxiliares)                               | ✅ VERIFIED                                   |
+| Scripts totales                     | **163** (30 raíz + 133 en subdirectorios)                              | ✅ DOCUMENTED                                 |
+| Rules                               | **14 (.mdc)** en 01_Rules                                              | ✅ DEFINED                                    |
 | JARVIS Manifests                    | 7 en 00_Manifest/                                                      | ✅ VALIDATED                                  |
 | Open Design                         | 62 skills + 138 design systems                                         | ✅ INTEGRATED                                 |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-05-29 — v4.9 Consequences
-> Skills: 385. HUBs: 20. Workflows: 28. Rules: 13.
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-06-01 — v4.9 Consequences — SSOT Unification
+> Skills: 392. HUBs: 30. Workflows: 28. Rules: 14. Scripts: 163. Agentes: 62.
 
 ---
 
 ## 🆕 v4.9 Changes
 
-1. **Skills auditadas**: 385 SKILL.md activas en 14 áreas funcionales
-2. **Agentes expandidos**: 55 agentes total (2 Root + 5 Dream + 23 Specialists + 5 Growth + 20 Individuales)
+1. **Skills auditadas**: 392 SKILL.md activas en 15 áreas funcionales
+2. **Agentes expandidos**: 62 agentes total (26 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other)
 3. **Workflows**: 28 activos en 7 categorías
-4. **Scripts**: 256 .py scripts totales
-5. **HUBs**: 19 numerados + HUB_SOTA = 20 total
+4. **Scripts**: 163 .py scripts totales (30 raíz + 133 subdirectorios)
+5. **HUBs**: 30 total (numerados + HUB_SOTA + auxiliares)
 
 ---
 
@@ -82,8 +80,8 @@ Think_Different/
 │   │   ├── 00_Workflows_Os/     ✅ 28 workflows (7 categorías)
 │   │   ├── 01_Rules/           ✅ 13 reglas .mdc
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/         ✅ 55 agentes
-│   │       ├── 02_Skills/         ✅ 385 skills (14 áreas)
+│   │       ├── 01_Agents/         ✅ 62 agentes
+│   │       ├── 02_Skills/         ✅ 392 skills (15 áreas)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/          ✅ 10 hooks (6 fases)
@@ -116,7 +114,7 @@ Think_Different/
 
 ---
 
-## 🧠 SKILLS — 14 ÁREAS FUNCIONALES (385 skills)
+## 🧠 SKILLS — 15 ÁREAS FUNCIONALES (392 skills)
 
 | Área                                         | Descripción                                               | Skills  |
 |---------------------------------------------|----------------------------------------------------------|--------|
@@ -156,19 +154,19 @@ Think_Different/
 
 ---
 
-## ⚡ AGENTES — 55 CONFIGURADOS
+## ⚡ AGENTES — 62 CONFIGURADOS
 
 | Categoría                               | Cantidad                  | Ubicación                                                                    |
 |----------------------------------------|--------------------------|-----------------------------------------------------------------------------|
-| Root (Orchestrator + Template)          | 2                         | Raíz `01_Agents/` (00_Orchestrator, 00_Agent_Template)                       |
+| Root (Orchestrator + Template)          | 26                        | Raíz `01_Agents/` (00_Orchestrator → 13_Hillary + 14-19 Specialists)         |
 | Dream Team                              | 5                         | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform)                |
 | Specialists Compound                    | 23                        | `02_Specialists_Compound/` (Architecture → Security)                         |
 | Growth                                  | 5                         | `03_Growth/` (Content Transformer → Carousel)                                |
-| Individuales                            | 20                        | Raíz `01_Agents/` (01-20: Scope, TDD → Newsletter)                           |
+| Other (Context/Marca/Templates)         | 3                         | `04_Contexto/`, `05_Marca/`, `06_Plantillas/` (documentación, no agentes)    |
 
 ---
 
-## 🎯 HUBs — 20 SCRIPTS TOTALES (19 numerados + HUB_SOTA)
+## 🎯 HUBs — 30 SCRIPTS TOTALES (numerados + HUB_SOTA + auxiliares)
 
 ### HUBs Principales (en raíz de 03_Scripts_Os/)
 
@@ -246,4 +244,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-05-29 | PersonalOS v4.9 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 385 skills | 55 agents | 20 HUBs | 28 workflows | 13 rules*
+*Actualizado: 2026-06-01 | PersonalOS v4.9 Consequences — SSOT Unification | 392 skills | 62 agents | 30 HUBs | 28 workflows | 14 rules*

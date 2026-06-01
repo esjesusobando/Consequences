@@ -201,6 +201,31 @@
 
 ---
 
+## ÁREA 12: JAO — HERRAMIENTAS PROCESALES
+
+| Skill                                  | Path                                                   | Descripción                                      |
+|----------------------------------------|-------------------------------------------------------|--------------------------------------------------|
+| **Entrevistador Procesos**             | `08_JAO/00_Entrevistador_Procesos/`                    | Entrevistas sistematizadas                        |
+| **Humanizador**                        | `08_JAO/01_Humanizador/`                              | Humanización de contenido                         |
+| **Optimizador Prompts**                | `08_JAO/02_Optimizador_Prompts/`                       | Optimización de prompts                           |
+| **Presentaciones Visuales**            | `08_JAO/03_Presentaciones_Visuales/`                  | Presentaciones impactantes                        |
+| **Superpowers**                        | `08_JAO/04_Superpowers/`                              | Superpoderes del ecosistema JAO                   |
+| **Verificador Datos**                  | `08_JAO/05_Verificador_Datos/`                        | Verificación de datos y fuentes                   |
+
+---
+
+## ÁREA 13: LAIA — SISTEMA DE APRENDIZAJE PERSONAL
+
+| Skill                                    | Path                                                  | Descripción                                      |
+|------------------------------------------|------------------------------------------------------|--------------------------------------------------|
+| **Laia Learning Core**                   | `10_Laia_Learning/`                                   | Sistema de aprendizaje personal                   |
+| **Context Canonical**                    | `10_Laia_Learning/01_Context_Canonical/`               | Contexto canónico del sistema                     |
+| **Prompts**                              | `10_Laia_Learning/02_Prompts/`                        | Prompts del sistema de aprendizaje                |
+| **Workflows**                            | `10_Laia_Learning/03_Workflows/`                      | Workflows de aprendizaje                          |
+| **References**                           | `10_Laia_Learning/04_References/`                     | Referencias y recursos                            |
+
+---
+
 > ℹ️ **Legacy Archive** → movido a `01_Personal_Os/05_Archive/09_Legacy_Skills_Archive/` (no es área activa de skills)
 
-*PersonalOS v4.9 Consequences — 2026-05-30 | 12 áreas funcionales | Skills: 385 activas + 17 Anthropic + ~490 legacy*
+*PersonalOS v4.9 Consequences — 2026-06-01 | 14 áreas funcionales | Skills: 392 activas + 17 Anthropic + ~490 legacy*

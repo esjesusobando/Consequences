@@ -1,10 +1,10 @@
 {
   "version": "v3.0",
-  "generated": "2026-05-31T14:36:11",
+  "generated": "2026-06-01T18:37:21",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
-    "areas": 14,
-    "skills": 386,
+    "areas": 15,
+    "skills": 392,
     "without_frontmatter": 0
   },
   "by_area": {
@@ -1994,6 +1994,41 @@
         {
           "name": "03_Playwright",
           "path": "07_Invictus_Web/03_Playwright/SKILL.md",
+          "has_frontmatter": true
+        }
+      ]
+    },
+    "08_JAO": {
+      "count": 6,
+      "skills": [
+        {
+          "name": "00_Entrevistador_Procesos",
+          "path": "08_JAO/00_Entrevistador_Procesos/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "01_Humanizador",
+          "path": "08_JAO/01_Humanizador/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "02_Optimizador_Prompts",
+          "path": "08_JAO/02_Optimizador_Prompts/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Presentaciones_Visuales",
+          "path": "08_JAO/03_Presentaciones_Visuales/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "04_Superpowers",
+          "path": "08_JAO/04_Superpowers/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_Verificador_Datos",
+          "path": "08_JAO/05_Verificador_Datos/SKILL.md",
           "has_frontmatter": true
         }
       ]

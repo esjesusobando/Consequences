@@ -8,7 +8,7 @@
 
 ---
 
-## 📂 Estructura v4.9 — 14 Áreas Funcionales (385 activas + ~490 legacy)
+## 📂 Estructura v4.9 — 15 Áreas Funcionales (392 activas + ~490 legacy)
 
 ```
 02_Skills/
@@ -130,7 +130,7 @@
 ## 📝 Changelog
 
 **2026-05-19:** Auditoría Completa v4.1
-- ✅ Sincronizado con estructura real: 385 skills, 14 áreas funcionales
+- ✅ Sincronizado con estructura real: 392 skills, 15 áreas funcionales
 - ✅ Añadida área `09_Claude_Ads/` (20 items)
 - ✅ Eliminada referencia a `00_Gcierr/` y `09_Legacy_Archive/` (no existen en disco)
 - ✅ Consistencia total entre README, OS_DIRECTORY y skill-registry
@@ -150,7 +150,7 @@
 - ✅ Reconciliado duplicado 09_Marketing/ → integrado en 01_Creacion_Contenidos/
 - ✅ Eliminado duplicado 09_LEGACY/ (mantenido 09_Legacy_Archive/)
 - ✅ Eliminados duplicados internos (04_Content_Creation, 05_Pptx_Generator)
-- ✅ Total: 385 active skills, 14 áreas funcionales + ~490 legacy archive
+- ✅ Total: 392 active skills, 15 áreas funcionales + ~490 legacy archive
 
 **2026-04-21:** Migración v2.0
 - 59+ carpetas reorganizadas

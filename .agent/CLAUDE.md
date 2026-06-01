@@ -105,10 +105,10 @@ Think_Different/
 ├── 01_Personal_Os/               # EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  # Motor del OS
 │   │   ├── 00_Workflows_Os/      # Workflows (Personal, Marvel, Gentleman, Hillary, CE)
-│   │   ├── 01_Rules/             # 13 reglas del sistema (.mdc)
+│   │   ├── 01_Rules/             # 14 reglas del sistema (.mdc)
 │   │   └── 02_Tools/             # Todas las herramientas
-│   │       ├── 01_Agents/        # 2 Root + 5 Dream + 23 Specialists + 5 Growth + 20 Individuales (55 agentes)
-│   │       ├── 02_Skills/        # 14 áreas funcionales (385 skills)
+│   │       ├── 01_Agents/        # 26 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other (62 agentes)
+│   │       ├── 02_Skills/        # 15 áreas funcionales (392 skills)
 │   │       ├── 03_Mcp/           # Config MCPs (7+38 MCPs)
 │   │       ├── 04_Integrations/   # Fireflies, Granola
 │   │       ├── 05_Hooks/          # Pre/Post/Lifecycle/Sound/Harness
@@ -122,7 +122,7 @@ Think_Different/
 │   │   ├── 00_Context_LLM/        # Memoria, notas, knowledge brain
 │   │   ├── 01_Auto_Improvement/   # Motor de auto-mejora
 │   │   ├── 02_Agent_Teams_Lite/   # SDD skills registry + JARVIS 7 manifests
-│   │   ├── 03_Scripts_Os/         # 256 scripts (20 HUBs: 19 numerados + HUB_SOTA)
+│   │   ├── 03_Scripts_Os/         # 163 scripts (30 HUBs: 19 numerados + HUB_SOTA)
 │   │   ├── 04_Installer/          # Scripts de instalación
 │   │   └── 05_Projects/           # Proyectos activos
 │   └── 05_Archive/                # Legacy y repos de referencia
@@ -143,7 +143,7 @@ Think_Different/
 
 ```
 .agent/
-├── 00_Rules/            # Reglas del agente (13 .mdc activos)
+├── 00_Rules/            # Reglas del agente (14 .mdc activos)
 ├── 01_Agents/           # Agentes externos configurados (55)
 ├── 02_Skills/           # Skills organizadas (backup)
 ├── 03_Workflows/        # Workflows del sistema
@@ -162,7 +162,7 @@ Think_Different/
 
 ---
 
-# HUB Scripts (256 scripts — 20 HUBs)
+# HUB Scripts (163 scripts — 30 HUBs)
 
 Centralizados en `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 
@@ -195,7 +195,7 @@ Centralizados en `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 
 ---
 
-# Skills Disponibles (14 áreas funcionales — 385 activas + ~490 legacy)
+# Skills Disponibles (15 áreas funcionales — 385 activas + ~490 legacy)
 
 ## Skills por Categoria (`01_Personal_Os/01_Core/02_Tools/02_Skills/`)
 
@@ -244,9 +244,9 @@ El sistema tiene un manifest central en `01_Personal_Os/04_Operations/02_Agent_T
 |----------|-----------|
 | 01_OS_Inventory.json | Inventario OS |
 | 02_MCP_Registry.yaml | 7+38 MCPs |
-| 03_Agent_Catalog.yaml | 55 agentes |
-| 04_Skill_Index.json | 385 skills |
-| 05_HUB_Catalog.yaml | 20 HUBs |
+| 03_Agent_Catalog.yaml | 62 agentes |
+| 04_Skill_Index.json | 392 skills |
+| 05_HUB_Catalog.yaml | 30 HUBs |
 | 06_Workflow_Graph.yaml | 28 workflows |
 | 07_Hook_Registry.yaml | 10 hooks |
 
@@ -305,9 +305,9 @@ Code review con IA integrado.
 | Categoria                             | Estado            | Notas                                      |
 |---------------------------------------|-------------------|--------------------------------------------|
 | Estructura v4.9 (4 carpetas raíz)     | ✅ PASS            | Winter / Personal_Os / Playground / Resultado |
-| HUBs (20 total)                        | ✅ ACTIVE          | 256 scripts en 03_Scripts_Os/    |
-| Skills (14 áreas funcionales)         | ✅ OPERATIONAL     | 385 active + ~490 legacy                   |
-| Rules (13 .mdc)                       | ✅ DEFINED         | En 01_Personal_Os/01_Core/01_Rules/       |
+| HUBs (30 total)                        | ✅ ACTIVE          | 163 scripts en 03_Scripts_Os/    |
+| Skills (15 áreas funcionales)         | ✅ OPERATIONAL     | 392 active + ~490 legacy                   |
+| Rules (14 .mdc)                       | ✅ DEFINED         | En 01_Personal_Os/01_Core/01_Rules/       |
 | MCPs (7+38 activos)                     | ✅ ACTIVE          | .mcp.json en raíz                          |
 | Auto-Improvement Engine               | ✅ OPERATIONAL     | En 04_Operations/01_Auto_Improvement/      |
 | JARVIS Manifests (7 archivos)          | ✅ VALIDATED       | 00_Manifest/ en 02_Agent_Teams_Lite/       |

@@ -96,7 +96,7 @@ Think_Different/                        ← Raíz del proyecto
 │   │   ├── 01_Rules/                   ✅ 13 reglas .mdc
 │   │   └── 02_Tools/                   ✅ Agentes, Skills, MCPs, Hooks, Evals
 │   │       ├── 01_Agents/              ✅ 52+ agentes (Dream Team + Specialists)
-│   │       ├── 02_Skills/               ✅ 385 skills en 14 áreas funcionales (15 directorios)
+│   │       ├── 02_Skills/               ✅ 392 skills en 15 áreas funcionales
 │   │       └── 03_Mcp/ … 09_Templates ✅ MCPs, Hooks, Plugins, Server, Evals
 │   ├── 02_Knowledge/                   ✅ Base de conocimiento
 │   ├── 03_Task/                        ✅ Tareas activas
@@ -116,7 +116,7 @@ Think_Different/                        ← Raíz del proyecto
 
 ## 🎯 Skills (01_Personal_Os/01_Core/02_Tools/02_Skills/) — v4.9 Consequences
 
-> **Total:** 385 skills — 14 áreas funcionales | Índice completo: `INDEX_AREA_FUNCTIONAL.md`
+> **Total:** 392 skills — 15 áreas funcionales | Índice completo: `INDEX_AREA_FUNCTIONAL.md`
 
 | Área                           | Carpeta                                      | Descripción                                                                | SKILL.md                  |
 |-------------------------------|---------------------------------------------|---------------------------------------------------------------------------|--------------------------|

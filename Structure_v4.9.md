@@ -35,11 +35,11 @@ Think_Different/                    # RAÍZ
 ```
 01_Personal_Os/
 ├── 01_Core/                       # MOTOR DEL OS
-│   ├── 00_Workflows_Os/          # 27 workflows (7 categorías)
-│   ├── 01_Rules/                 # 13 reglas .mdc
+│   ├── 00_Workflows_Os/          # 28 workflows (7 categorías)
+│   ├── 01_Rules/                 # 14 reglas .mdc
 │   └── 02_Tools/                 # Herramientas del OS
-│   ├── 01_Agents/            # 55 agentes
-│       ├── 02_Skills/           # 385 skills (14 áreas)
+│   ├── 01_Agents/            # 62 agentes
+│       ├── 02_Skills/           # 392 skills (15 áreas)
 │       ├── 03_Mcp/              # Backup MCP configs
 │       ├── 04_Integrations/     # Fireflies, Granola
 │       ├── 05_Hooks/            # 10 hooks (6 fases)
@@ -125,7 +125,7 @@ Think_Different/                    # RAÍZ
 | 06        | Plantillas                                 | Subdirectorio     | 0 agentes (LEEME)     |
 | 07–13     | Individuales (Accessibility → Hillary)     | Root              | 7 archivos            |
 | 14–19     | Specialist Individuales (Git → TDD)        | Root              | 6 archivos            |
-|           | **TOTAL**                                  |                   | **55 agentes**        |
+|           | **TOTAL**                                  |                   | **62 agentes**        |
 
 **Skills por Área (v4.9 — auditada contra disco):**
 

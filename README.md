@@ -5,7 +5,7 @@
 [![Status](https://img.shields.io/badge/Status-PRODUCTION%20READY-00FF00)]()
 [![OS](https://img.shields.io/badge/Think%20Different-OS--4.9-7B68EE)]()
 
-> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 385 skills SOTA, 14 áreas funcionales, 55 agentes, metodologías integradas y automatización completa.
+> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 392 skills SOTA, agentes, metodologías integradas y automatización completa.
 
 ---
 
@@ -18,12 +18,12 @@
 | **Overall Health**                   | **100%** 🟢                                       |
 | **Every CE**                         | v3.8.4 ✅ (local repo)                            |
 | **gentle-ai**                        | v1.30.6 ✅                                        |
-| **Skills**                           | **385** (14 áreas funcionales)                   |
-| **Rules**                            | **13** (.mdc)                                    |
-| **MCPs**                             | **7** root + **38** backup                       |
-| **HUBs**                             | **20** HUBs + 256 scripts                        |
-| **Agentes**                          | **55** (source) / 82 (con SDD/CE)                |
-| **Workflows**                        | **27** (7 categorías)                            |
+| **Skills**                           | **392** (15 áreas funcionales)                   |
+| **Rules**                            | **14** (.mdc)                                    |
+| **MCPs**                             | **8** root + **43** backup                       |
+| **HUBs**                             | **30** HUBs + **133** scripts subdir              |
+| **Agentes**                          | **62** (source — ver manifest para breakdown)    |
+| **Workflows**                        | **28** (7 categorías)                            |
 
 ---
 
@@ -34,11 +34,11 @@ Think_Different/                           # RAÍZ
 ├── 00_Winter_is_Coming/           ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/                ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                   ✅ Motor del OS (FUENTE DE VERDAD)
-│   │   ├── 00_Workflows_Os/       ✅ 27 workflows (7 categorías)
-│   │   ├── 01_Rules/              ✅ 13 reglas .mdc — FUENTE DE VERDAD
+│   │   ├── 00_Workflows_Os/       ✅ 28 workflows (7 categorías)
+│   │   ├── 01_Rules/              ✅ 14 reglas .mdc — FUENTE DE VERDAD
 │   │   └── 02_Tools/              ✅ Todas las herramientas
-│   │       ├── 01_Agents/         ✅ 55 agentes
-│   │       ├── 02_Skills/         ✅ 385 skills — 14 áreas funcionales
+│   │       ├── 01_Agents/         ✅ 62 agentes
+│   │       ├── 02_Skills/         ✅ 392 skills — 15 áreas funcionales
 │   │       ├── 03_Mcp/            ✅ Backup MCP configs
 │   │       ├── 04_Integrations/   ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/          ✅ 10 hooks (6 fases)
@@ -57,7 +57,7 @@ Think_Different/                           # RAÍZ
 │       ├── 00_Context_LLM/       ✅ Memoria LLM (Engram, notes)
 │       ├── 01_Auto_Improvement/  ✅ Auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests JARVIS
-│       ├── 03_Scripts_Os/        ✅ 20 HUBs + 256 scripts total
+│       ├── 03_Scripts_Os/        ✅ 30 HUBs — 163 scripts totales (133 en subdir)
 │       ├── 04_Installer/         ✅ Installer
 │       ├── 05_Projects/          ✅ Proyectos activos
 │       ├── 06_SOTA_Features/    ✅ Features estado-del-arte
@@ -81,8 +81,8 @@ Think_Different/                           # RAÍZ
 │   ├── 01_Aprendizaje/          # Skills output, fundamentos, referencias
 │   ├── 02_Experimentos/         # World OIM, ejercicios, sesiones
 │   ├── 03_Reportes/             # Auditorías y reportes
-│   ├── 04_Reportes/              # Reportes operativos
-│   ├── 05_Documentacion/        # Documentación general
+│   ├── 04_Documentacion/        # Documentación general
+│   ├── 05_Testing_Skills/       # Pruebas controladas y outputs HTML de skills
 ├── .agent/                      ✅ BACKUP ESTRATÉGICO
 ├── .atl/                        ✅ SDD Registry + openspec/
 ├── .claude/                     ✅ Config Claude Code
@@ -130,14 +130,15 @@ Think_Different/                           # RAÍZ
 | **06_Tools**                                                 | 83                         | Skill Creator, Testing, DevOps, Data                          |
 | **07_Invictus_Web**                                          | 15                         | Playwright, Superpowers, Browser Auto                         |
 | **10_Laia_Learning**                                         | 1                          | Sistema de aprendizaje personal                               |
-| **TOTAL**                                                    | **385**                    | Skills activas en 14 áreas funcionales                        |
+| **TOTAL**                                                    | **392**                    | 392 skills activas en 15 áreas funcionales — ver `00_Manifest/04_Skill_Index.json`
 
-> ⚠️ Skills están en carpetas de área + subcarpetas. Total real: 385 skills
-> Índice completo: `01_Personal_Os/01_Core/02_Tools/02_Skills/INDEX_AREA_FUNCTIONAL.md`
+> 📍 **SSOT:** El desglose detallado por área está en `04_Skill_Index.json` del manifest. Esta tabla resume las 15 áreas.
+> 
+> `--validate` compara estos números contra el manifest automáticamente.
 
 ---
 
-### HUBs v4.9 (20 HUBs + 256 scripts)
+### HUBs v4.9 (30 HUBs — 163 scripts totales, 133 en subdirectorios)
 
 | Hub                                          | Script                                          | Propósito                                             |
 |---------------------------------------------|------------------------------------------------|------------------------------------------------------|
@@ -176,19 +177,21 @@ Think_Different/                           # RAÍZ
 
 ---
 
-### Agentes (55 total)
+### Agentes (62 total)
+
+> 📍 **SSOT:** `01_OS_Inventory.json` → `agents.by_category`. Esta tabla referencia los valores del manifest.
 
 | Categoría                                   | Cantidad                      | Ubicación                                                                   |
 |--------------------------------------------|------------------------------|----------------------------------------------------------------------------|
-| Root                                        | 2                             | `01_Core/02_Tools/01_Agents/` (00_Orchestrator, 00_Agent_Template)          |
+| Root                                        | 26                            | Directo en `01_Agents/` + `00_Agent_Teams_Lite/` + `00_OS_Conductor/`       |
 | Dream Team                                  | 5                             | `01_Core/02_Tools/01_Agents/01_Dream_Team/`                                 |
 | Specialists Compound                        | 23                            | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                       |
 | Growth                                      | 5                             | `01_Core/02_Tools/01_Agents/03_Growth/`                                     |
-| Individuales                                | 20                            | Raíz `01_Core/02_Tools/01_Agents/` (01-20)                                  |
+| Other                                       | 3                             | `04_Contexto/`, `05_Marca/`, `06_Plantillas/`, `07_Agent_Teams_Lite_Gen/`   |
 
 ---
 
-### MCPs (7 root + 38 backup)
+### MCPs (8 root + 43 backup OpenCode)
 
 | Servidor                        | Propósito                             | Fuente                |
 |--------------------------------|--------------------------------------|----------------------|

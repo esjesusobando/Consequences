@@ -103,3 +103,7 @@ Reconciliación estructura vs. disco. Cambios:
 - `Structure_v4.8.md` sincronizado con esta estructura
 
 Principio aplicado: documentar la realidad, no mantener referencias fantasma.
+
+### Actualización 2026-06-01 — Testing Skills JAO
+
+- Creación de **`05_Testing_Skills/`** para albergar las pruebas controladas (Markdown y HTML) de las nuevas skills instaladas.

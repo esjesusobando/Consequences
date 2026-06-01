@@ -22,7 +22,7 @@ Este directorio contiene el **legacy de Agent Teams Lite** y los **7 manifests d
 │   ├── 01_OS_Inventory.json        # Inventario OS
 │   ├── 02_MCP_Registry.yaml        # 7+38 MCPs
 │   ├── 03_Agent_Catalog.yaml       # 82 agents
-│   ├── 04_Skill_Index.json        # 385 skills
+│   ├── 04_Skill_Index.json        # 392 skills
 │   ├── 05_HUB_Catalog.yaml        # 20 HUBs
 │   ├── 06_Workflow_Graph.yaml     # 27 workflows
 │   └── 07_Hook_Registry.yaml        # 10 hooks
@@ -49,7 +49,7 @@ Este directorio contiene el **legacy de Agent Teams Lite** y los **7 manifests d
 | OS Inventory  | 1 archivo   | 0 ✅  | Se mantiene|
 | MCP Registry  | 7+38 MCPs   | 0 ✅  | Se mantiene|
 | Agent Catalog | 82 agents   | 0 ✅  | Se mantiene|
-| Skill Index   | 385 skills  | 0 ✅  | Se mantiene|
+| Skill Index   | 392 skills  | 0 ✅  | Se mantiene|
 | HUB Catalog   | 20 HUBs     | 0 ✅  | Se mantiene|
 | Workflow Graph| 27 workflows| 0 ✅  | Se mantiene|
 | Hook Registry | 10 hooks    | 0 ✅  | Se mantiene|

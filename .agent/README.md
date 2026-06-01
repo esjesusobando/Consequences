@@ -12,8 +12,8 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 
 | Directorio           | Contenido                                | Fuente de verdad                               |
 |----------------------|------------------------------------------|------------------------------------------------|
-| **00_Rules/**        | 13 reglas activas (.mdc)                 | `01_Personal_Os/01_Core/01_Rules/`             |
-| **01_Agents/**       | Agentes configurados (58+)               | `01_Personal_Os/01_Core/02_Tools/01_Agents/`   |
+| **00_Rules/**        | 14 reglas activas (.mdc)                 | `01_Personal_Os/01_Core/01_Rules/`             |
+| **01_Agents/**       | Agentes configurados (62+)               | `01_Personal_Os/01_Core/02_Tools/01_Agents/`   |
 | **02_Skills/**       | Skills organizadas (backup)              | `01_Personal_Os/01_Core/02_Tools/02_Skills/`   |
 | **03_Workflows/**    | Workflows del sistema                    | `01_Personal_Os/01_Core/00_Workflows_Os/`      |
 | **04_Extensions/**   | Hooks system (Pre/Post/Lifecycle/Sound)  | Local                                          |
@@ -27,10 +27,10 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 |-------------------------------------|----------------------------------------------------------|
 | **00_Winter_is_Coming/**            | Goals, Backlog, AGENTS.md (ESTRATÉGICO)                  |
 | **01_Personal_Os/**                 | El sistema operativo completo                            |
-| **01_Personal_Os/01_Core/**         | Motor: Skills (14 áreas, 385), Rules (13), MCPs (36), Tools |
+| **01_Personal_Os/01_Core/**         | Motor: Skills (15 áreas, 392), Rules (14), MCPs (36), Tools |
 | **01_Personal_Os/02_Knowledge/**    | Documentación, Research, Notas                           |
 | **01_Personal_Os/03_Task/**         | Tareas activas                                           |
-| **01_Personal_Os/04_Operations/**   | Operativo: Scripts (152), Auto-Mejora, Projects, Context LLM |
+| **01_Personal_Os/04_Operations/**   | Operativo: Scripts (163), Auto-Mejora, Projects, Context LLM |
 | **01_Personal_Os/05_Archive/**      | Legacy archivado                                         |
 | **02_Playground/**                  | Zona de pruebas (no contamina el OS)                     |
 | **03_Resultado/**                   | Outputs de proyectos                                     |
@@ -50,7 +50,7 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 
 ---
 
-## 🎯 Skills Disponibles (14 áreas funcionales — 385 activas + ~490 legacy)
+## 🎯 Skills Disponibles (15 áreas funcionales — 392 activas + ~490 legacy)
 
 ### Por Categoría (`01_Personal_Os/01_Core/02_Tools/02_Skills/`)
 
@@ -83,7 +83,7 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 
 ---
 
-## 📋 HUBs del Sistema (19 + 4 auxiliares = 23 scripts)
+## 📋 HUBs del Sistema (30 total (numerados + HUB_SOTA + auxiliares))
 
 **Ubicación:** `01_Personal_Os/04_Operations/03_Scripts_Os/`
 
@@ -121,9 +121,9 @@ Este directorio contiene la configuración de agentes, skills y hooks de Persona
 ## 🔗 Related
 
 - **Rules:** See `01_Personal_Os/01_Core/01_Rules/` for active rules (13 .mdc)
-- **Skills:** See `01_Personal_Os/01_Core/02_Tools/02_Skills/` for canonical skills (385); `.agent/02_Skills/` preserves backup skills
+- **Skills:** See `01_Personal_Os/01_Core/02_Tools/02_Skills/` for canonical skills (392); `.agent/02_Skills/` preserves backup skills
 - **CLAUDE.md:** See `./CLAUDE.md` for agent instructions
-- **Scripts:** See `01_Personal_Os/04_Operations/03_Scripts_Os/` for 256 scripts (20 HUBs: 19 numerados + HUB_SOTA)
+- **Scripts:** See `01_Personal_Os/04_Operations/03_Scripts_Os/` for 163 scripts (30 HUBs)
 - **Manifests:** See `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/` for JARVIS 3.1
 
 ---
@@ -155,4 +155,4 @@ gr --apply      # Apply fixes
 
 ---
 
-*Última actualización: 2026-05-31 | PersonalOS v4.9 Consequences — SOTA Consolidation | 14 áreas funcionales | 385 active + ~490 legacy skills | 13 rules | 256 scripts ✅*
+*Última actualización: 2026-05-31 | PersonalOS v4.9 Consequences — SOTA Consolidation | 14 áreas funcionales | 385 active + ~490 legacy skills | 14 rules | 256 scripts ✅*

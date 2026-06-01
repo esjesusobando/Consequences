@@ -11,18 +11,18 @@
 | MCPs Claude Code                      | **8** (root) + **38** (backup)                                             | ✅ SYNCED — drift 0                             |
 | Every CE                              | v3.8.4 (local repo) ✅                                                      | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.30.6                                                                    | ✅ AVAILABLE                                    |
-| Skills                                | **385** (14 áreas funcionales)                                             | ✅ VERIFIED — 0 sin frontmatter                 |
-| Agentes                               | **62** source / **82** total (con SDD/CE)                                  | ✅ SYNCED                                       |
-| HUBs                                  | **20** (19 numerados + HUB_SOTA) + **256 scripts**                         | ✅ ACTIVE                                       |
+| Skills                                | **392** (15 áreas funcionales)                                             | ✅ VERIFIED — 392 SKILL.md files                |
+| Agentes                               | **62** (26 root + 5 Dream T + 23 Spec + 5 Growth + 3 other)               | ✅ SYNCED — referencia al manifest              |
+| HUBs                                  | **30** (todos con interfaz) — **163 scripts** totales (133 en subdirectorios)             | ✅ ACTIVE                                       |
 | Scripts totales                       | — (incluido en HUBs)                                                       | —                                              |
-| Workflows                             | **27** (7 categorías en 00_Workflows_Os)                                   | ✅ ACTIVE                                       |
+| Workflows                             | **28** (7 categorías en 00_Workflows_Os — 1+10+8+2+2+4+1)                 | ✅ ACTIVE                                       |
 | Hooks                                 | **10** (6 fases: Pre_Tool, Post_Tool, Lifecycle, Sound, Harness, Post_Hulk)| ✅ ACTIVE                                       |
-| Rules                                 | **13** (.mdc)                                                              | ✅ DEFINED                                      |
+| Rules                                 | **14** (.mdc)                                                              | ✅ DEFINED (00-13 + 13_HTML_Visualization)      |
 | JARVIS Manifests                      | 7 en 00_Manifest/                                                          | ✅ VALIDATED                                    |
 | Integrations                          | **2** (01_Fireflies, 02_Granola)                                           | ✅ INTEGRATED                                   |
 
-> **🟢 Última AUDITORÍA:** 2026-05-31 — v4.9 Consequences Final
-> Agent Sync: 62 agents (source) / 82 total con SDD/CE. Skills: 385 (SKILL.md source) / ~490 legacy. MCPs: **8+38**. HUBs: 20 (+10 aux scripts 21-30). Scripts: 256+.
+> **🟢 Última AUDITORÍA:** 2026-06-01 — v4.9 SSOT Unification
+> Agent Sync: 62 agentes totales. Skills: 392 (15 áreas). MCPs: **8+38** (Claude) / 36 (OpenCode). HUBs: 30 (con interfaz). Scripts: 163 totales. Rules: 14 .mdc.
 
 ---
 
@@ -78,10 +78,10 @@ Think_Different/                         # RAÍZ
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD)
 │   │   ├── 00_Workflows_Os/     ✅ 28 workflows (7 categorías)
-│   │   ├── 01_Rules/            ✅ 13 reglas .mdc
+ │   │   ├── 01_Rules/            ✅ 14 reglas .mdc
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/         ✅ 55 agentes (2 Root + 5 Dream + 23 Specialists + 5 Growth + 20 Individuales)
-│   │       ├── 02_Skills/         ✅ 385 skills (14 áreas funcionales)
+ │   │       ├── 01_Agents/         ✅ 82 agentes (25 Root + 5 Dream + 23 Specialists + 5 Growth + 24 Individuales)
+ │   │       ├── 02_Skills/         ✅ 392 skills (14 áreas funcionales)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
 │   │       ├── 05_Hooks/          ✅ Pre/Post/Lifecycle/Sound
@@ -110,7 +110,7 @@ Think_Different/                         # RAÍZ
 │   │   ├── 00_Context_LLM/        ✅ Memoria LLM (Engram, notes)
 │   │   ├── 01_Auto_Improvement/   ✅ Motor auto-mejora recursiva
 │   │   ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests
-│   │   ├── 03_Scripts_Os/         ✅ 20 HUBs + 256 scripts total
+ │   │   ├── 03_Scripts_Os/         ✅ 22 HUBs + 256 scripts total
 │   │   ├── 04_Installer/          ✅ Installer scripts
 │   │   ├── 05_Projects/          ✅ Proyectos activos
 │   │   ├── 06_SOTA_Features/     ✅ Features estado-del-arte
@@ -130,7 +130,7 @@ Think_Different/                         # RAÍZ
 │   │   ├── 06_Skills_Legacy/
 │   │   └── README.md
 ├── 02_Playground/                ✅ Zona de pruebas (6 carpetas, scripts test en 06_Testing_Legacy/)
-├── 03_Resultado/                 ✅ Outputs de proyectos (agrupado: Proyectos, Aprendizaje, Experimentos, Reportes, Documentacion)
+├── 03_Resultado/                 ✅ Outputs de proyectos (agrupado: Proyectos, Aprendizaje, Experimentos, Reportes, Documentacion, Testing)
 ├── .agent/                       ✅ Backup estratégico
 │   ├── 00_Rules/
 │   ├── 01_Agents/
@@ -150,7 +150,7 @@ Think_Different/                         # RAÍZ
 
 ---
 
-## 🧠 SKILLS — 14 ÁREAS FUNCIONALES (385 skills)
+## 🧠 SKILLS — 14 ÁREAS FUNCIONALES (392 skills)
 
 | Área                   | Items  | Descripción                          |
 |-----------------------|-------|-------------------------------------|
@@ -307,7 +307,7 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-## 📁 WORKFLOWS — 7 CATEGORÍAS (27 workflows)
+## 📁 WORKFLOWS — 7 CATEGORÍAS (28 workflows)
 
 | Categoría                    | Path                            | Workflows                                      |
 |-----------------------------|--------------------------------|-----------------------------------------------|
@@ -371,4 +371,4 @@ Los siguientes hallazgos fueron identificados durante la auditoría OS integral 
 
 ---
 
-*Actualizado: 2026-06-01 | PersonalOS v4.9 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 385 skills | 55 agents | 20 HUBs | 256 scripts | 28 workflows | 10 hooks*
+*Actualizado: 2026-06-01 | PersonalOS v4.9 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 392 skills | 62 agents | 30 HUBs | 163 scripts | 28 workflows | 10 hooks*

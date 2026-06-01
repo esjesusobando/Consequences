@@ -216,6 +216,14 @@ def scan_skills():
     }
 
 
+# Agent categories mapped from subdirectory names
+AGENT_CATEGORIES = {
+    "01_Dream_Team": "dream_team",
+    "02_Specialists_Compound": "specialists",
+    "03_Growth": "growth",
+}
+
+
 def scan_agents():
     """Escanea agentes (source: 01_Agents en core, backup: .agent)."""
     source_dir = PROJECT_ROOT / "01_Personal_Os/01_Core/02_Tools/01_Agents"
@@ -226,6 +234,7 @@ def scan_agents():
     NON_AGENT_DIRS = {"references"}  # subdirectories that are support/docs only
 
     source_agents = []
+    category_counts = {}
     if source_dir.exists():
         for f in source_dir.rglob("*.md"):
             if any(p in EXCLUDE_DIRS for p in f.parts):
@@ -234,7 +243,21 @@ def scan_agents():
                 continue
             if f.name in NON_AGENT_FILES:
                 continue
-            source_agents.append(str(f.relative_to(source_dir)).replace("\\", "/"))
+            rel = str(f.relative_to(source_dir)).replace("\\", "/")
+            source_agents.append(rel)
+            # Categorize: root = directo en 01_Agents/, categorizado = en subdirectorio
+            parts = rel.split("/")
+            if len(parts) > 1:
+                parent = parts[0]
+                if parent in AGENT_CATEGORIES:
+                    cat = AGENT_CATEGORIES[parent]
+                elif parent.startswith("00"):
+                    cat = "root"
+                else:
+                    cat = "other"
+            else:
+                cat = "root"
+            category_counts[cat] = category_counts.get(cat, 0) + 1
 
     backup_agents = []
     if backup_dir.exists():
@@ -248,6 +271,10 @@ def scan_agents():
             backup_agents.append(str(f.relative_to(backup_dir)).replace("\\", "/"))
 
     drift = sorted(set(source_agents) ^ set(backup_agents))
+
+    # Ensure all known categories have entries (even if 0)
+    for cat in ["root", "dream_team", "specialists", "growth", "individual", "other"]:
+        category_counts.setdefault(cat, 0)
 
     return {
         "version": "v3.0",
@@ -263,7 +290,24 @@ def scan_agents():
             "in_sync": len(set(source_agents) & set(backup_agents)),
             "drift": len(drift),
         },
+        "by_category": {
+            cat: category_counts[cat]
+            for cat in sorted(category_counts)
+        },
         "drift_files": drift,
+    }
+
+
+def _detect_hub_interface(path: Path) -> dict:
+    """Detecta si un script implementa la interfaz HUB (main/run + args)."""
+    try:
+        content = path.read_text(encoding="utf-8", errors="ignore")
+    except Exception:
+        return {"has_main": False, "has_args": False, "is_numerado": False}
+    return {
+        "has_main": any(x in content for x in ['if __name__ == "__main__"', "def run(", "def main("]),
+        "has_args": any(x in content for x in ["add_argument", "ArgumentParser", "--help", "sys.argv"]),
+        "is_numerado": path.stem[:2].isdigit(),
     }
 
 
@@ -280,34 +324,53 @@ def scan_hubs():
             continue
         if not f.stem[:2].isdigit():
             continue
+        iface = _detect_hub_interface(f)
         hubs.append({
             "name": f.stem,
             "path": str(f.relative_to(PROJECT_ROOT)).replace("\\", "/"),
             "command": f"python {f.relative_to(PROJECT_ROOT)}".replace("\\", "/"),
+            "interfaz": iface,
         })
 
-    # Scripts en subdirectorios (ej: 05_Validator/, 90_Legacy/)
+    # Scripts en subdirectorios (ej: 05_Validator/, 13_Legacy/) — búsqueda recursiva
+    EXCLUDED_DIR_NAMES = {"__pycache__"}
     for subdir in sorted(hubs_dir.iterdir()):
         if not subdir.is_dir():
             continue
         if subdir.name.startswith("."):
             continue
-        for f in sorted(subdir.glob("*.py")):
+        for f in sorted(subdir.rglob("*.py")):
+            if any(p == "__pycache__" for p in f.parts):
+                continue
             if f.stem in ("__init__",):
                 continue
             if not f.stem[:2].isdigit():
                 continue
+            iface = _detect_hub_interface(f)
             scripts.append({
                 "name": f.stem,
                 "path": str(f.relative_to(PROJECT_ROOT)).replace("\\", "/"),
                 "command": f"python {f.relative_to(PROJECT_ROOT)}".replace("\\", "/"),
+                "interfaz": iface,
             })
+
+    hubs_con_interfaz = sum(1 for h in hubs if h["interfaz"]["has_main"] or h["interfaz"]["has_args"])
+    hubs_numerados = len([h for h in hubs if h["interfaz"]["is_numerado"]])
+    scripts_totales = hubs_numerados + len(scripts)
+    scripts_no_hub = len(scripts)
 
     return {
         "version": "v3.0",
         "generated": datetime.now().isoformat(timespec="seconds"),
         "base_path": "01_Personal_Os/04_Operations/03_Scripts_Os/",
-        "totals": {"hubs": len(hubs), "scripts": len(scripts)},
+        "totals": {
+            "hubs": len(hubs),
+            "scripts": len(scripts),
+            "hubs_numerados": hubs_numerados,
+            "hubs_con_interfaz": hubs_con_interfaz,
+            "scripts_totales": scripts_totales,
+            "scripts_no_hub": scripts_no_hub,
+        },
         "hubs": hubs,
         "scripts": scripts,
     }
@@ -382,9 +445,21 @@ def scan_inventory():
     if integrations_dir.exists():
         integrations = [d.name for d in integrations_dir.iterdir() if d.is_dir()]
 
+    # --- Enriched sections ---
+    agent_cat = agents_data.get("by_category", {})
+    total_operational = sum(agent_cat.values()) if agent_cat else agents_data["totals"]["source"]
+
+    # Build per-area skills breakdown
+    skill_areas = {}
+    for area_name, area_data in skills_data.get("by_area", {}).items():
+        if area_name in ("Archive_Delete_Skills",):
+            continue
+        skill_areas[area_name] = area_data["count"]
+
     return {
         "version": "v4.9",
         "generated": datetime.now().isoformat(timespec="seconds"),
+        "source": "20_System_Mapper_Hub.py --scan",
         "personal_os": {
             "name": "PersonalOS",
             "version": "v4.9 Consequences",
@@ -406,7 +481,33 @@ def scan_inventory():
             "rules": rules_count,
             "integrations": len(integrations),
         },
+        "agents": {
+            "definition": "archivos .md en 01_Core/02_Tools/01_Agents/ (excluye README, templates, references)",
+            "source_count": agents_data["totals"]["source"],
+            "backup_count": agents_data["totals"]["backup"],
+            "total_operational": total_operational,
+            "by_category": agent_cat,
+            "drift": agents_data["totals"]["drift"],
+        },
+        "hubs": {
+            "definition_hub": "scripts en 03_Scripts_Os/ con interfaz run() + --help/argparse",
+            "hubs_numerados": hubs_data["totals"]["hubs_numerados"],
+            "hubs_con_interfaz": hubs_data["totals"]["hubs_con_interfaz"],
+            "scripts_totales": hubs_data["totals"]["scripts_totales"],
+            "scripts_no_hub": hubs_data["totals"]["scripts_no_hub"],
+        },
+        "skills_totals": {
+            "total": skills_data["totals"]["skills"],
+            "areas": skills_data["totals"]["areas"],
+            "per_area": skill_areas,
+        },
         "integrations": integrations,
+        "doc_reference_paths": {
+            "os_directory": "OS_DIRECTORY.md",
+            "claude_md": "CLAUDE.md",
+            "agents_md": "00_Winter_is_Coming/AGENTS.md",
+            "readme_md": "README.md",
+        },
         "manifest_files": [
             "01_OS_Inventory.json",
             "02_MCP_Registry.yaml",
@@ -516,17 +617,30 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan
 python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --validate
 ```
 
+## 🔵 Single Source of Truth
+
+> **Este archivo es la fuente de verdad.** Todos los docs maestros (OS_DIRECTORY.md, CLAUDE.md, AGENTS.md, README.md) deben referenciar estos números. Si ves una divergencia, corre `--validate`.
+
 ## Ground Truth
 
 - **MCPs Claude Code:** {inventory['totals']['mcps_claude']}
 - **MCPs OpenCode:** {inventory['totals']['mcps_opencode']}
 - **Skills:** {inventory['totals']['skills']} en {inventory['totals']['skill_areas']} áreas
-- **Agentes:** {inventory['totals']['agents_source']} (source) / {inventory['totals']['agents_backup']} (backup)
-- **HUBs:** {inventory['totals']['hubs']} (+ {inventory['totals']['scripts']} scripts)
+- **Agentes:** {inventory['agents']['total_operational']} ({inventory['agents']['source_count']} source + ATL) — categorías: {', '.join(f'{k}={v}' for k, v in inventory['agents']['by_category'].items())}
+- **HUBs:** {inventory['hubs']['hubs_con_interfaz']} con interfaz / {inventory['hubs']['hubs_numerados']} numerados
+- **Scripts totales:** {inventory['hubs']['scripts_totales']} ({inventory['hubs']['scripts_no_hub']} no-HUB)
 - **Workflows:** {inventory['totals']['workflows']}
 - **Hooks:** {inventory['totals']['hooks']}
 - **Rules:** {inventory['totals']['rules']}
 - **Integrations:** {inventory['totals']['integrations']} ({', '.join(inventory['integrations'])})
+
+## 📋 Health Dashboard
+
+Corré `--validate` para ver la tabla comparativa entre el manifest y los 4 docs maestros:
+
+```bash
+python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --validate
+```
 """
     (MANIFEST_DIR / "README.md").write_text(readme, encoding="utf-8")
 
@@ -536,11 +650,124 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --vali
 
 
 # ─────────────────────────────────────────────────────────────────────
-# VALIDATE — referential integrity
+# VALIDATE — referential integrity + doc drift
 # ─────────────────────────────────────────────────────────────────────
 
+DOC_DRIFT_PATTERNS = {
+    "skills": {
+        "patterns": [
+            r"(\d{2,4})\s*(?:skills|Skills|SKILLS)",           # "392 skills"
+            r"(?:skills|Skills|SKILLS)[:\s]+(\d{2,4})",         # "skills: 392" / "skills 392"
+        ],
+        "inventory_key": "totals.skills",
+    },
+    "agentes": {
+        "patterns": [
+            r"(\d{2,3})\s*(?:agentes|Agentes|Agents|agents)",   # "62 agentes"
+            r"(?:agentes|Agentes|Agents|agents)[:\s]+(\d{2,3})", # "agentes: 62"
+        ],
+        "inventory_key": "agents.total_operational",
+    },
+    "hubs": {
+        "patterns": [
+            r"HUBs?[:\s]+(\d{2,3})",                            # "HUBs: 30"
+            r"(\d{2,3})\s*HUBs?",                                 # "30 HUBs"
+        ],
+        "inventory_key": "hubs.hubs_con_interfaz",
+    },
+    "scripts": {
+        "patterns": [
+            r"(?:scripts|Scripts)[:\s]+(\d{3})",                 # "scripts: 163"
+            r"(\d{3})\s*(?:scripts|Scripts)",                    # "163 scripts"
+        ],
+        "inventory_key": "hubs.scripts_totales",
+    },
+    "workflows": {
+        "patterns": [
+            r"(?:Workflows|workflows)[:\s]+(\d{1,2})",           # "workflows: 28"
+            r"(\d{1,2})\s*(?:Workflows|workflows)",              # "28 workflows"
+        ],
+        "inventory_key": "totals.workflows",
+    },
+    "hooks": {
+        "patterns": [
+            r"(?:Hooks|hooks)[:\s]+(\d{1,2})",                   # "hooks: 10"
+            r"(\d{1,2})\s*(?:Hooks|hooks)",                      # "10 hooks"
+        ],
+        "inventory_key": "totals.hooks",
+    },
+}
+
+
+def _get_inventory_value(inv: dict, dotted_key: str):
+    """Resuelve key anidada (e.g. 'hubs.hubs_con_interfaz')."""
+    parts = dotted_key.split(".")
+    val = inv
+    for part in parts:
+        if isinstance(val, dict):
+            val = val.get(part, None)
+        else:
+            return None
+    return val
+
+
+def _check_doc_drift(inventory: dict) -> int:
+    """Lee los 4 docs maestros y compara sus métricas contra el manifest."""
+    docs = {
+        "OS_DIRECTORY.md": PROJECT_ROOT / "OS_DIRECTORY.md",
+        "CLAUDE.md": PROJECT_ROOT / "CLAUDE.md",
+        "AGENTS.md": PROJECT_ROOT / "00_Winter_is_Coming" / "AGENTS.md",
+        "README.md": PROJECT_ROOT / "README.md",
+    }
+
+    print("\n📋 Health Dashboard — SSOT vs Docs\n")
+
+    header = f"{'Componente':<16} {'Manifest':<10}"
+    for dname in docs:
+        header += f" {dname:<18}"
+    header += " Match?"
+    print(header)
+    print("-" * len(header))
+
+    errors = 0
+    for metric, cfg in DOC_DRIFT_PATTERNS.items():
+        manifest_val = _get_inventory_value(inventory, cfg["inventory_key"])
+        if manifest_val is None:
+            continue
+
+        row = f"{metric:<16} {str(manifest_val):<10}"
+        all_match = True
+        for dname, dpath in docs.items():
+            if not dpath.exists():
+                row += f" {'N/A':<18}"
+                continue
+            content = dpath.read_text(encoding="utf-8", errors="ignore")
+            import re
+            # Try each pattern — first match wins
+            doc_val = None
+            for pat in cfg["patterns"]:
+                matches = re.findall(pat, content)
+                if matches:
+                    doc_val = int(matches[0])
+                    break
+            if doc_val is not None:
+                if doc_val == manifest_val:
+                    row += f" {doc_val:<6}✅{'':<10}"
+                else:
+                    row += f" {doc_val:<6}❌{'':<8}"
+                    all_match = False
+                    errors += 1
+            else:
+                row += f" {'?':<18}"
+        row += " ✅" if all_match else " ❌"
+        print(row)
+
+    print(f"\n📊 Drift total: {errors} divergencias")
+    return errors
+
+
 def validate():
-    """Valida integridad referencial del manifest."""
+    """Valida integridad referencial del manifest + drift contra docs."""
     if not MANIFEST_DIR.exists():
         print(f"❌ Manifest no existe — corré --scan primero")
         return 1
@@ -550,12 +777,13 @@ def validate():
 
     # 1. Inventario existe y es válido JSON
     inv_file = MANIFEST_DIR / "01_OS_Inventory.json"
+    inventory = None
     if not inv_file.exists():
         print(f"  ❌ Falta {inv_file.name}")
         errors += 1
     else:
         try:
-            json.loads(inv_file.read_text(encoding="utf-8"))
+            inventory = json.loads(inv_file.read_text(encoding="utf-8"))
             print(f"  ✅ {inv_file.name} válido")
         except Exception as e:
             print(f"  ❌ {inv_file.name} JSON inválido: {e}")
@@ -580,11 +808,14 @@ def validate():
     # 3. HUBs existen
     hub_cat = MANIFEST_DIR / "05_HUB_Catalog.yaml"
     if hub_cat.exists():
-        # Parse text para encontrar paths
         content = hub_cat.read_text(encoding="utf-8")
-        # Conteo simple
         hub_count = content.count("name:")
         print(f"  ✅ HUB Catalog — {hub_count} HUBs documentados")
+
+    # 4. Doc drift detection (solo si tenemos inventario)
+    if inventory:
+        drift_errors = _check_doc_drift(inventory)
+        errors += drift_errors
 
     print(f"\n{'✅ Validación OK' if errors == 0 else f'❌ {errors} errores'}")
     return 0 if errors == 0 else 1

@@ -1,6 +1,6 @@
 # 00_Manifest — JARVIS Ground Truth
 
-**Generated:** 2026-05-31T14:36:11
+**Generated:** 2026-06-01T18:37:21
 **Version:** v4.9 Consequences
 
 ## ¿Qué es esto?
@@ -10,15 +10,15 @@ Es la fuente de verdad que TODOS los agentes consultan.
 
 ## Archivos
 
-| #  | Archivo                 | Contenido                                |
-|---|------------------------|-----------------------------------------|
-| 01 | `01_OS_Inventory.json`  | Inventario crudo (counts, paths)         |
-| 02 | `02_MCP_Registry.yaml`  | MCPs Claude Code + OpenCode con drift    |
-| 03 | `03_Agent_Catalog.yaml` | 62 agentes (source: core, backup: .agent)|
-| 04 | `04_Skill_Index.json`   | Index navegable de las 386 skills        |
-| 05 | `05_HUB_Catalog.yaml`   | 28 HUBs + 128 scripts                    |
-| 06 | `06_Workflow_Graph.yaml`| 27 workflows en 7 categorías             |
-| 07 | `07_Hook_Registry.yaml` | 10 hooks en 6 fases                      |
+| # | Archivo | Contenido |
+|---|---------|-----------|
+| 01 | `01_OS_Inventory.json` | Inventario crudo (counts, paths) |
+| 02 | `02_MCP_Registry.yaml` | MCPs Claude Code + OpenCode con drift |
+| 03 | `03_Agent_Catalog.yaml` | 62 agentes (source: core, backup: .agent) |
+| 04 | `04_Skill_Index.json` | Index navegable de las 392 skills |
+| 05 | `05_HUB_Catalog.yaml` | 30 HUBs + 133 scripts (163 totales) |
+| 06 | `06_Workflow_Graph.yaml` | 28 workflows en 7 categorías |
+| 07 | `07_Hook_Registry.yaml` | 10 hooks en 6 fases |
 
 ## Cómo regenerar
 
@@ -32,14 +32,27 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --scan
 python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --validate
 ```
 
+## 🔵 Single Source of Truth
+
+> **Este archivo es la fuente de verdad.** Todos los docs maestros (OS_DIRECTORY.md, CLAUDE.md, AGENTS.md, README.md) deben referenciar estos números. Si ves una divergencia, corre `--validate`.
+
 ## Ground Truth
 
 - **MCPs Claude Code:** 8
 - **MCPs OpenCode:** 43
-- **Skills:** 386 en 14 áreas
-- **Agentes:** 62 (source) / 62 (backup)
-- **HUBs:** 28 (+ 128 scripts)
+- **Skills:** 392 en 15 áreas
+- **Agentes:** 62 (62 source + ATL) — categorías: dream_team=5, growth=5, individual=0, other=3, root=26, specialists=23
+- **HUBs:** 30 con interfaz / 30 numerados
+- **Scripts totales:** 163 (133 no-HUB)
 - **Workflows:** 28
 - **Hooks:** 10
-- **Rules:** 13
+- **Rules:** 14
 - **Integrations:** 2 (01_Fireflies, 02_Granola)
+
+## 📋 Health Dashboard
+
+Corré `--validate` para ver la tabla comparativa entre el manifest y los 4 docs maestros:
+
+```bash
+python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --validate
+```
