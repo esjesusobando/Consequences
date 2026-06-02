@@ -348,7 +348,7 @@ Los siguientes hallazgos fueron identificados durante la auditoría OS integral 
 ### Skills
 | #  | Hallazgo                                                               | Estado                          |
 |---|-----------------------------------------------------------------------|--------------------------------|
-| 7  | 0/385 skills tienen campo `trigger:` en frontmatter YAML               | 📌 MEJORA POTENCIAL — no es error|
+| 7  | 0/392 skills tienen campo `trigger:` en frontmatter YAML               | 📌 MEJORA POTENCIAL — no es error|
 | 8  | ~30 skills duplicadas de migración incompleta (áreas 02/04)            | 📌 PRESERVADO — no se elimina    |
 | 9  | 18 skills Engram existen solo en backup (`.agent/02_Skills/02_Engram/`)| 📌 PRESERVADO — backup natural   |
 | 10 | `.opencode/skills/ui-ux-pro-max` huérfano (no en árbol source)         | 📌 PRESERVADO — skill local      |

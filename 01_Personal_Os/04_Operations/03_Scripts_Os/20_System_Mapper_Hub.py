@@ -25,6 +25,7 @@ import argparse
 import io
 import json
 import os
+import re
 import sys
 from collections import defaultdict
 from datetime import datetime
@@ -816,6 +817,55 @@ def validate():
     if inventory:
         drift_errors = _check_doc_drift(inventory)
         errors += drift_errors
+
+    # 5. Rules file count consistency (12_Audit_OS_Integrity.mdc)
+    if inventory:
+        rules_files = [
+            PROJECT_ROOT / "01_Personal_Os" / "01_Core" / "01_Rules" / "12_Audit_OS_Integrity.mdc",
+            PROJECT_ROOT / ".claude" / "02_Rules" / "12_Audit_OS_Integrity.mdc",
+            PROJECT_ROOT / ".agent" / "00_Rules" / "12_Audit_OS_Integrity.mdc",
+        ]
+        for rf in rules_files:
+            if not rf.exists():
+                print(f"  ❌ Rules file no encontrado: {rf.name}")
+                errors += 1
+                continue
+            content = rf.read_text(encoding="utf-8")
+            # Parse simple metrics
+            for line in content.splitlines():
+                line = line.strip()
+                if not line.startswith("| **"):
+                    continue
+                cols = [c.strip() for c in line.split("|")[1:-1]]
+                if len(cols) < 2:
+                    continue
+                metric = cols[0].strip("*").strip()
+                raw = cols[1].strip("*").strip()
+
+                # Map metric to manifest field
+                mapping = {
+                    "HUBs": ("totals.hubs", lambda v: int(re.search(r"\d+", v).group())),
+                    "Scripts": ("hubs.scripts_totales", lambda v: int(re.search(r"\d+", v).group())),
+                    "Skills": ("totals.skills", lambda v: int(re.search(r"\d+", v).group())),
+                    "Agentes source": ("totals.agents_source", lambda v: int(re.search(r"\d+", v).group())),
+                    "Workflows": ("totals.workflows", lambda v: int(re.search(r"\d+", v).group())),
+                    "Hooks": ("totals.hooks", lambda v: int(re.search(r"\d+", v).group())),
+                }
+                if metric in mapping:
+                    field, parser = mapping[metric]
+                    val = inventory
+                    for key in field.split("."):
+                        val = val.get(key, {}) if isinstance(val, dict) else None
+                    expected = val if not isinstance(val, dict) else None
+                    if expected is None:
+                        continue
+                    try:
+                        claimed = parser(raw)
+                    except Exception:
+                        continue
+                    if claimed != expected:
+                        print(f"  ❌ {rf.name}: {metric} dice {claimed}, manifest dice {expected}")
+                        errors += 1
 
     print(f"\n{'✅ Validación OK' if errors == 0 else f'❌ {errors} errores'}")
     return 0 if errors == 0 else 1

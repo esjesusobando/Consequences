@@ -25,7 +25,7 @@ Este directorio contiene **skills locales** específicas del proyecto Think Diff
 
 | Tipo | Ubicación | Uso | Cantidad |
 |------|-----------|-----|----------|
-| **Skills del Sistema** | `01_Personal_Os/01_Core/02_Tools/02_Skills/` | FUENTE DE VERDAD - 385 skills en 14 áreas | 385 |
+| **Skills del Sistema** | `01_Personal_Os/01_Core/02_Tools/02_Skills/` | FUENTE DE VERDAD - 392 skills en 15 áreas | 392 |
 | **Skills Globales** | `~/.config/opencode/skills/` | Skills instaladas globalmente (gentleman, etc) | Variable |
 | **Skills Locales** | `.opencode/skills/` | Skills específicas del proyecto | 1 |
 

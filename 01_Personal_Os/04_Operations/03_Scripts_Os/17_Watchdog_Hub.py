@@ -13,6 +13,7 @@ Sistema de monitoreo que:
 
 import json
 import os
+import re
 import sys
 import subprocess
 from datetime import datetime
@@ -95,6 +96,135 @@ def check_legacy_drift() -> int:
     return 0
 
 
+# ── Rules consistency — 12_Audit_OS_Integrity.mdc ──────────────
+RULES_PATHS = [
+    REPO_ROOT / "01_Personal_Os" / "01_Core" / "01_Rules" / "12_Audit_OS_Integrity.mdc",
+    REPO_ROOT / ".claude" / "02_Rules" / "12_Audit_OS_Integrity.mdc",
+    REPO_ROOT / ".agent" / "00_Rules" / "12_Audit_OS_Integrity.mdc",
+]
+
+# Metric → (manifest_field, transform_fn)
+# transform_fn takes the raw bold value from the table and returns an int
+EXPECTED_METRICS = {
+    "HUBs":             ("totals.hubs", lambda v: int(re.search(r"\d+", v).group())),
+    "Scripts":          ("hubs.scripts_totales", lambda v: int(re.search(r"\d+", v).group())),
+    "Skills":           ("totals.skills", lambda v: int(re.search(r"\d+", v).group())),
+    "Agentes source":   ("totals.agents_source", lambda v: int(re.search(r"\d+", v).group())),
+    "Workflows":        ("totals.workflows", lambda v: int(re.search(r"\d+", v).group())),
+    "Hooks":            ("totals.hooks", lambda v: int(re.search(r"\d+", v).group())),
+}
+
+
+def _get_nested(data: dict, path: str):
+    """Acceso anidado tipo 'totals.skills'."""
+    for key in path.split("."):
+        data = data.get(key, {}) if isinstance(data, dict) else {}
+    return data if not isinstance(data, dict) else None
+
+
+def _parse_rules_table(content: str) -> dict:
+    """Parsea la tabla de métricas del rules file."""
+    metrics = {}
+    for line in content.splitlines():
+        line = line.strip()
+        if not line.startswith("| **"):
+            continue
+        cols = [c.strip() for c in line.split("|")[1:-1]]
+        if len(cols) < 2:
+            continue
+        name = cols[0].strip("*").strip()
+        value = cols[1].strip("*").strip()
+        metrics[name] = value
+    return metrics
+
+
+def check_rules_count_consistency() -> list:
+    """Compara counts en 12_Audit_OS_Integrity.mdc contra el manifest vivo."""
+    manifest_path = MANIFEST_DIR / "01_OS_Inventory.json"
+    if not manifest_path.exists():
+        return [{"file": "manifest", "issue": "01_OS_Inventory.json no encontrado"}]
+
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    except Exception as e:
+        return [{"file": "manifest", "issue": f"No se pudo leer manifest: {e}"}]
+
+    issues = []
+
+    for rules_path in RULES_PATHS:
+        label = rules_path.relative_to(REPO_ROOT).as_posix()
+        if not rules_path.exists():
+            issues.append({"file": label, "issue": "Archivo no encontrado"})
+            continue
+
+        content = rules_path.read_text(encoding="utf-8")
+        metrics = _parse_rules_table(content)
+
+        # Checks simples (1 solo número)
+        for metric_name, (manifest_field, parser) in EXPECTED_METRICS.items():
+            raw = metrics.get(metric_name, "")
+            if not raw:
+                issues.append({"file": label, "metric": metric_name, "issue": "Métrica no encontrada en tabla"})
+                continue
+            try:
+                claimed = parser(raw)
+            except (AttributeError, ValueError):
+                issues.append({"file": label, "metric": metric_name, "issue": f"No se pudo parsear valor: '{raw}'"})
+                continue
+
+            expected = _get_nested(manifest, manifest_field)
+            if expected is None:
+                continue  # skip si no está en manifest
+            if claimed != expected:
+                issues.append({
+                    "file": label,
+                    "metric": metric_name,
+                    "claimed": claimed,
+                    "expected": expected,
+                    "issue": f"MISMATCH: dice {claimed}, manifest dice {expected}"
+                })
+
+        # Check especial: MCPs (2 números: Claude + OpenCode)
+        mcp_raw = metrics.get("MCPs", "")
+        if mcp_raw:
+            m = re.search(r"(\d+)\s*\(Claude\)", mcp_raw)
+            if m:
+                claimed = int(m.group(1))
+                expected = _get_nested(manifest, "totals.mcps_claude")
+                if expected is not None and claimed != expected:
+                    issues.append({
+                        "file": label, "metric": "MCPs Claude",
+                        "claimed": claimed, "expected": expected,
+                        "issue": f"MISMATCH: dice {claimed}, manifest dice {expected}"
+                    })
+            m = re.search(r"(\d+)\s*\(Opencode\)", mcp_raw)
+            if m:
+                claimed = int(m.group(1))
+                expected = _get_nested(manifest, "totals.mcps_opencode")
+                if expected is not None and claimed != expected:
+                    issues.append({
+                        "file": label, "metric": "MCPs OpenCode",
+                        "claimed": claimed, "expected": expected,
+                        "issue": f"MISMATCH: dice {claimed}, manifest dice {expected}"
+                    })
+
+        # Check especial: áreas de skills
+        skills_raw = metrics.get("Skills", "")
+        if skills_raw:
+            m = re.search(r"(\d+)\s*áreas?", skills_raw)
+            if m:
+                claimed = int(m.group(1))
+                expected = _get_nested(manifest, "totals.skill_areas")
+                if expected is not None and claimed != expected:
+                    issues.append({
+                        "file": label, "metric": "Skills (áreas)",
+                        "claimed": claimed, "expected": expected,
+                        "issue": f"MISMATCH: dice {claimed} áreas, manifest dice {expected}"
+                    })
+
+    return issues
+
+
 def check_skills_without_frontmatter() -> int:
     """Cuenta skills sin frontmatter."""
     index_file = MANIFEST_DIR / "04_Skill_Index.json"
@@ -108,7 +238,7 @@ def check_skills_without_frontmatter() -> int:
         return 0
 
 
-def generate_report(checks: dict) -> str:
+def generate_report(checks: dict, rules_issues: list) -> str:
     """Genera reporte ASCII."""
     lines = [
         "+==============================================================+",
@@ -153,6 +283,23 @@ def generate_report(checks: dict) -> str:
     status = "[OK]" if fm == 0 else "[!!]"
     lines.append(f"|    {status} Sin frontmatter: {fm:>3}                      |")
     
+    lines.extend([
+        "",
+        "|  5. RULES COUNT CONSISTENCY:                   |",
+    ])
+    
+    if not rules_issues:
+        lines.append("|    [OK] Todas copias coinciden con manifest       |")
+    else:
+        for iss in rules_issues[:6]:
+            loc = iss.get("file", iss.get("metric", "?"))
+            detail = iss.get("issue", "")
+            lines.append(f"|    [!!] {loc:<20} |")
+            lines.append(f"|         {detail:<44} |")
+        extras = len(rules_issues) - 6
+        if extras > 0:
+            lines.append(f"|         ... y {extras} más                        |")
+    
     lines.append("+==============================================================+")
     
     # Overall status
@@ -160,6 +307,7 @@ def generate_report(checks: dict) -> str:
         not all_ok,
         legacy >= 50,
         fm > 0,
+        len(rules_issues) > 0,
     ])
     
     if issues == 0:
@@ -182,9 +330,10 @@ def main():
         "legacy": check_legacy_drift(),
         "frontmatter": check_skills_without_frontmatter(),
     }
+    rules_issues = check_rules_count_consistency()
     
     # Mostrar reporte
-    report = generate_report(checks)
+    report = generate_report(checks, rules_issues)
     print(report)
     
     # Guardar reporte

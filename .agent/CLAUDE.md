@@ -195,7 +195,7 @@ Centralizados en `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 
 ---
 
-# Skills Disponibles (15 áreas funcionales — 385 activas + ~490 legacy)
+# Skills Disponibles (15 áreas funcionales — 392 activas + ~490 legacy)
 
 ## Skills por Categoria (`01_Personal_Os/01_Core/02_Tools/02_Skills/`)
 

@@ -54,7 +54,7 @@ Think_Different/
 │   │   ├── 01_Rules/            # 13 reglas .mdc (00-12)
 │   │   └── 02_Tools/
 │   │       ├── 01_Agents/       # 55 agentes (2 Root + 5 Dream + 23 Specialists + 5 Growth + 20 Individuales)
-│   │       ├── 02_Skills/       # 385 skills (14 áreas funcionales)
+│   │       ├── 02_Skills/       # 392 skills (15 áreas funcionales)
 │   │       ├── 03_Mcp/          # Backup MCPs
 │   │       ├── 04_Integrations/ # Fireflies, Granola
 │   │       ├── 05_Hooks/        # 10 hooks (6 fases)
@@ -212,4 +212,4 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 ---
 
 *Think Different PersonalOS v4.9 Consequences — Production Ready*
-*Actualizado: 2026-05-31 | 385 skills | **62** agents (82 total sistema) | **8+38** MCPs | 20 HUBs (+10 aux) | 13 rules*
+*Actualizado: 2026-06-01 | 392 skills | **61** agents | **8+38** MCPs | 30 HUBs | 14 rules*

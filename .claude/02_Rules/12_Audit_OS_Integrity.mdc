@@ -14,14 +14,13 @@ globs: **/README.md, **/OS_DIRECTORY.md, **/AGENTS.md, **/CLAUDE.md, **/GOALS.md
 
 | Métrica | Valor | Última verificación |
 |---------|-------|---------------------|
-| **HUBs** | **28** (19 raíz + 9 aux) | 2026-05-25 ✅ |
-| **Scripts** | **284** (283 .py + 1 .js, recursivo) | 2026-05-25 ✅ |
-| **Skills** | **385** (14 áreas funcionales) | 2026-05-25 ✅ |
-| **MCPs** | **36** (Claude Code) | 2026-05-25 ✅ |
-| **Agentes source** | **46** | 2026-05-25 ✅ |
-| **Agentes total (con SDD/CE)** | **82** | 2026-05-25 ✅ |
-| **Workflows** | **30** (7 categorías) | 2026-05-25 ✅ |
-| **Hooks** | **10** (6 fases) | 2026-05-25 ✅ |
+| **HUBs** | **30** | 2026-06-01 ✅ |
+| **Scripts** | **163** (133 en subdirectorios) | 2026-06-01 ✅ |
+| **Skills** | **392** (15 áreas funcionales) | 2026-06-01 ✅ |
+| **MCPs** | **8 (Claude) + 43 (Opencode)** | 2026-06-01 ✅ |
+| **Agentes source** | **61** | 2026-06-01 ✅ |
+| **Workflows** | **28** (7 categorías) | 2026-06-01 ✅ |
+| **Hooks** | **10** (6 fases) | 2026-06-01 ✅ |
 
 ## Archivos que Deben Estar Sync
 
@@ -76,7 +75,7 @@ Antes de modificar skills/scripts/HUBs/agentes/MCPs:
 1. Hacer el cambio en source (`01_Core/` para skills/agentes/rules, `04_Operations/` para scripts/HUBs)
 2. Sync los números en todos los documentos maestro listados arriba
 3. Sync los 3 árboles de directorios
-4. Commit con mensaje que incluya los nuevos números: `os: sync HUBs→29 scripts→290 skills→396`
+4. Commit con mensaje que incluya los nuevos números: `os: sync HUBs→30 scripts→163 skills→392`
 
 ---
 
