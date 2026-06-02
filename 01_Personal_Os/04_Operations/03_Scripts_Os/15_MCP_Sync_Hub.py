@@ -176,8 +176,6 @@ def main():
             diff = compare_mcps()
             if diff:
                 print(generate_report(diff))
-                update_registry(diff)
-                print(f"\n>> Registry actualizado: {MANIFEST_DIR / '02_MCP_Registry.yaml'}")
             return
 
         elif cmd == "--apply":
