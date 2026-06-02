@@ -203,6 +203,7 @@ Now/02_Videos_Finales/                  # LEGACY: Now/ dir no longer exists, kep
 # Pattern Intelligence Engine cache (regeneratable)
 **/pattern_index.db
 03_Resultado/03_Reportes/
+03_Resultado/04_Reportes/
 02_Playground/Side Project/             # LEGACY: non-numbered variant, dir no longer exists
 03_Resultado/Side Project/              # LEGACY: non-numbered variant, dir no longer exists
 
