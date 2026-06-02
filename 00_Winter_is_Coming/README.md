@@ -27,7 +27,7 @@
 - **GGA Version**: v2.8.1 ✅
 - **Every CE**: v3.8.4 ✅
 - **gentle-ai**: v1.30.6 ✅
-- **Agentes**: 62 (26 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other)
+- **Agentes**: 62 (25 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other)
 - **MCPs**: 36 servidores activos
 - **Skills**: 392 SKILL.md activas (15 áreas funcionales)
 - **HUBs**: 30 (todos con interfaz)

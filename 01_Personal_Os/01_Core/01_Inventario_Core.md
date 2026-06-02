@@ -21,7 +21,7 @@
 ├── 01_Rules/                   ← 14 archivos .mdc (00-13)
 └── 02_Tools/
     ├── README.md
-    ├── 01_Agents/             ← 62 agents (26 Root + 5 Dream + 23 Spec + 5 Growth + 3 other)
+    ├── 01_Agents/             ← 61 agents (25 Root + 5 Dream + 23 Spec + 5 Growth + 3 other)
     ├── 02_Skills/             ← 392 skills (15 áreas activas)
     ├── 03_Mcp/                ← MCP servers (backup de config)
     ├── 04_Integrations/       ← Fireflies, Granola
@@ -115,7 +115,7 @@
 
 ## TOOLS — ESTRUCTURA
 
-### 01_Agents (62 agents) ✅
+### 01_Agents (61 agents) ✅
 
 > 📍 Clasificación actualizada según manifest. Ver `00_Manifest/01_OS_Inventory.json` → `agents.by_category`.
 

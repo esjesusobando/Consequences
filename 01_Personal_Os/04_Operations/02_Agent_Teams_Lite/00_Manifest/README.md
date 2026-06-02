@@ -1,6 +1,6 @@
 # 00_Manifest — JARVIS Ground Truth
 
-**Generated:** 2026-06-01T18:37:21
+**Generated:** 2026-06-01T20:50:42
 **Version:** v4.9 Consequences
 
 ## ¿Qué es esto?
@@ -14,9 +14,9 @@ Es la fuente de verdad que TODOS los agentes consultan.
 |---|---------|-----------|
 | 01 | `01_OS_Inventory.json` | Inventario crudo (counts, paths) |
 | 02 | `02_MCP_Registry.yaml` | MCPs Claude Code + OpenCode con drift |
-| 03 | `03_Agent_Catalog.yaml` | 62 agentes (source: core, backup: .agent) |
+| 03 | `03_Agent_Catalog.yaml` | 61 agentes (source: core, backup: .agent) |
 | 04 | `04_Skill_Index.json` | Index navegable de las 392 skills |
-| 05 | `05_HUB_Catalog.yaml` | 30 HUBs + 133 scripts (163 totales) |
+| 05 | `05_HUB_Catalog.yaml` | 30 HUBs + 133 scripts |
 | 06 | `06_Workflow_Graph.yaml` | 28 workflows en 7 categorías |
 | 07 | `07_Hook_Registry.yaml` | 10 hooks en 6 fases |
 
@@ -41,7 +41,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --vali
 - **MCPs Claude Code:** 8
 - **MCPs OpenCode:** 43
 - **Skills:** 392 en 15 áreas
-- **Agentes:** 62 (62 source + ATL) — categorías: dream_team=5, growth=5, individual=0, other=3, root=26, specialists=23
+- **Agentes:** 61 (61 source + ATL) — categorías: dream_team=5, growth=5, individual=0, other=3, root=25, specialists=23
 - **HUBs:** 30 con interfaz / 30 numerados
 - **Scripts totales:** 163 (133 no-HUB)
 - **Workflows:** 28

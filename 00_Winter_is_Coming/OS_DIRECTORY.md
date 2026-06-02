@@ -12,7 +12,7 @@
 | Every CE                            | v3.8.4 (local repo)                                                    | ✅ ACTIVE — Local version                     |
 | gentle-ai                           | v1.30.6                                                                | ✅ AVAILABLE                                  |
 | Skills                              | **392** (15 áreas funcionales)                                         | ✅ VERIFIED — 0 sin frontmatter               |
-| Agentes                             | **62** (26 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other)      | ✅ SYNCED                                     |
+| Agentes                             | **61** (25 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other)      | ✅ SYNCED                                     |
 | HUBs                                | **30** scripts (`*_Hub.py` + auxiliares)                               | ✅ VERIFIED                                   |
 | Scripts totales                     | **163** (30 raíz + 133 en subdirectorios)                              | ✅ DOCUMENTED                                 |
 | Rules                               | **14 (.mdc)** en 01_Rules                                              | ✅ DEFINED                                    |
@@ -27,7 +27,7 @@
 ## 🆕 v4.9 Changes
 
 1. **Skills auditadas**: 392 SKILL.md activas en 15 áreas funcionales
-2. **Agentes expandidos**: 62 agentes total (26 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other)
+2. **Agentes expandidos**: 61 agentes total (25 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other)
 3. **Workflows**: 28 activos en 7 categorías
 4. **Scripts**: 163 .py scripts totales (30 raíz + 133 subdirectorios)
 5. **HUBs**: 30 total (numerados + HUB_SOTA + auxiliares)
@@ -80,7 +80,7 @@ Think_Different/
 │   │   ├── 00_Workflows_Os/     ✅ 28 workflows (7 categorías)
 │   │   ├── 01_Rules/           ✅ 13 reglas .mdc
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/         ✅ 62 agentes
+│   │       ├── 01_Agents/         ✅ 61 agentes
 │   │       ├── 02_Skills/         ✅ 392 skills (15 áreas)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
@@ -131,6 +131,7 @@ Think_Different/
 | 05_Claude_Ads                                | Claude Ads & Promoted Content                             | 21      |
 | 06_Tools                                     | Skill Creator, Testing, DevOps, Data                      | 83      |
 | 07_Invictus_Web                              | Playwright, Superpowers, Browser Auto                     | 15      |
+| 08_JAO                                       | Entrevistador, Humanizador, Optimizador, Superpowers      | 6       |
 | 10_Laia_Learning                             | Sistema de aprendizaje personal                           | 1       |
 
 ---
@@ -244,4 +245,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-06-01 | PersonalOS v4.9 Consequences — SSOT Unification | 392 skills | 62 agents | 30 HUBs | 28 workflows | 14 rules*
+*Actualizado: 2026-06-01 | PersonalOS v4.9 Consequences — SSOT Unification | 392 skills | 61 agents | 30 HUBs | 28 workflows | 14 rules*

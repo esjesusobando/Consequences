@@ -166,48 +166,48 @@ Think_Different/                           # RAÍZ
 ├── 00_Winter_is_Coming/          ✅ MATRIX: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD 💾)
- │   │   ├── 00_Workflows_Os/     ✅ 28 workflows (7 categorías)
- │   │   ├── 01_Rules/            ✅ 14 reglas (.mdc) — fuente de verdad
-│   │   └── 02_Tools/            ✅ Todas las herramientas
-  │   │       ├── 01_Agents/       ✅ 62 agentes (26 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other)
-  │   │       ├── 02_Skills/         ✅ 392 skills (15 áreas funcionales)
-│   │       ├── 03_Mcp/         ✅ Backup configs MCP
-│   │       ├── 04_Integrations/ ✅ Fireflies, Granola
-│   │       ├── 05_Hooks/        ✅ Pre/Post/Lifecycle/Sound/Harness
-│   │       ├── 06_Plugins/      ✅ Plugins OS
-│   │       ├── 07_Server/       ✅ MCP Server
-│   │       ├── 08_Evals/        ✅ Evaluadores
-│   │       └── 09_Templates/    ✅ Templates
-│   ├── 02_Knowledge/            ✅ Base de conocimiento
-│   ├── 03_Task/                 ✅ Tareas activas
-│   ├── 04_Operations/           ✅ Todo lo operativo
-│   │   ├── 00_Context_LLM/      ✅ Memoria, notas, knowledge brain
-│   │   ├── 01_Auto_Improvement/ ✅ Motor auto-mejora
-│   │   ├── 02_Agent_Teams_Lite/ ✅ SDD registry + 7 JARVIS manifests
-  │   │   ├── 03_Scripts_Os/       ✅ HUBs: 30 — scripts: 163 totales (133 en subdirectorios)
-│   │   ├── 04_Installer/        ✅ Instalador del OS
-│   │   ├── 05_Projects/         ✅ Proyectos activos
-│   │   ├── 06_SOTA_Features/    ✅ Features estado-del-arte
-│   │   └── 07_Reports/          ✅ Reportes generados
-│   └── 05_Archive/              ✅ Backups, snapshots, archivos históricos
-├── 02_Playground/               ✅ Zona de pruebas (no contamina el OS)
-├── 03_Resultado/                ✅ Outputs de proyectos (OIM, Elite Portfolio, etc.)
-├── .agent/                      ✅ Backup estratégico
-├── .atl/                        ✅ SDD Registry + openspec
-├── .claude/                     ✅ Config Claude Code + rules
-├── .opencode/                   ✅ Config OpenCode + skills locales
-├── .mcp.json                    ✅ MCPs activos (7 Claude + 38 backup)
-├── OS_DIRECTORY.md              ✅ JARVIS discovery
-├── AGENTS.md                    ✅ Root entry (GGA Pre-Commit)
-├── CLAUDE.md                    ✅ Config Oficial para IAs (ESTE)
-└── README.md                    ✅ Documentación principal
+│   │   ├── 00_Workflows_Os/      ✅ 28 workflows (7 categorías)
+│   │   ├── 01_Rules/             ✅ 14 reglas (.mdc) — fuente de verdad
+│   │   └── 02_Tools/             ✅ Todas las herramientas
+│   │       ├── 01_Agents/        ✅ 61 agentes (6 categorías)
+│   │       ├── 02_Skills/        ✅ 392 skills (15 áreas funcionales)
+│   │       ├── 03_Mcp/           ✅ Backup configs MCP
+│   │       ├── 04_Integrations/  ✅ Fireflies, Granola
+│   │       ├── 05_Hooks/         ✅ Pre/Post/Lifecycle/Sound/Harness
+│   │       ├── 06_Plugins/       ✅ Plugins OS
+│   │       ├── 07_Server/        ✅ MCP Server
+│   │       ├── 08_Evals/         ✅ Evaluadores
+│   │       └── 09_Templates/     ✅ Templates
+│   ├── 02_Knowledge/             ✅ Base de conocimiento
+│   ├── 03_Task/                  ✅ Tareas activas
+│   ├── 04_Operations/            ✅ Todo lo operativo
+│   │   ├── 00_Context_LLM/       ✅ Memoria, notas, knowledge brain
+│   │   ├── 01_Auto_Improvement/  ✅ Motor auto-mejora
+│   │   ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 JARVIS manifests
+│   │   ├── 03_Scripts_Os/        ✅ HUBs: 30 — scripts: 163 totales (133 en subdirectorios)
+│   │   ├── 04_Installer/         ✅ Instalador del OS
+│   │   ├── 05_Projects/          ✅ Proyectos activos
+│   │   ├── 06_SOTA_Features/     ✅ Features estado-del-arte
+│   │   └── 07_Reports/           ✅ Reportes generados
+│   └── 05_Archive/               ✅ Backups, snapshots, archivos históricos
+├── 02_Playground/                ✅ Zona de pruebas (no contamina el OS)
+├── 03_Resultado/                 ✅ Outputs de proyectos (OIM, Elite Portfolio, etc.)
+├── .agent/                       ✅ Backup estratégico
+├── .atl/                         ✅ SDD Registry + openspec
+├── .claude/                      ✅ Config Claude Code + rules
+├── .opencode/                    ✅ Config OpenCode + skills locales
+├── .mcp.json                     ✅ MCPs activos (7 Claude + 38 backup)
+├── OS_DIRECTORY.md               ✅ JARVIS discovery
+├── AGENTS.md                     ✅ Root entry (GGA Pre-Commit)
+├── CLAUDE.md                     ✅ Config Oficial para IAs (ESTE)
+└── README.md                     ✅ Documentación principal
 ```
 
 ### 2. AGENTS (62 — 6 categorías funcionales — 2026-06-01)
 
-> ⚠️ Source: 62 agentes total (26 root-level .md + 5 Dream Team + 23 Specialists + 5 Growth + 3 other). Ver `OS_DIRECTORY.md` para tree view completo. Backup .agent/ puede diferir en conteo.
+> ⚠️ Source: 61 agentes total (25 root-level .md + 5 Dream Team + 23 Specialists + 5 Growth + 3 other). Ver `OS_DIRECTORY.md` para tree view completo. Backup .agent/ puede diferir en conteo.
 
-### 3. SKILLS (392 — 14 áreas funcionales)
+### 3. SKILLS (392 — 15 áreas funcionales)
 
 > **Ruta base:** `01_Personal_Os/01_Core/02_Tools/02_Skills/`
 
@@ -225,10 +225,11 @@ Think_Different/                           # RAÍZ
 | 04_Automatizacion                                | 04_Automatizacion/          | N8N, Firecrawl, GWS Client                                    |
 | 05_Claude_Ads                                    | 05_Claude_Ads/              | Claude Ads & Promoted Content                                 |
 | 06_Tools                                         | 06_Tools/                   | Skill Creator, Testing, DevOps, Data                          |
-| 07_Invictus_Web                                  | 07_Invictus_Web/            | Playwright, Superpowers, Browser Auto                         |
-| 10_Laia_Learning                                 | 10_Laia_Learning/           | Sistema de aprendizaje personal                               |
+| 07_Invictus_Web                              | 07_Invictus_Web/            | Playwright, Superpowers, Browser Auto                         |
+| 08_JAO                                       | 08_JAO/                     | Entrevistador, Humanizador, Superpowers                       |
+| 10_Laia_Learning                             | 10_Laia_Learning/           | Sistema de aprendizaje personal                               |
 
-> ⚠️ Audit 2026-06-01: 14 áreas activas, 392 skills (SKILL.md) verificados contra disco
+> ⚠️ Audit 2026-06-01: 15 áreas activas, 392 skills (SKILL.md) verificados contra disco
 
 ### 4. JARVIS 4.9 — MANIFEST SYSTEM
 
@@ -236,7 +237,7 @@ Think_Different/                           # RAÍZ
 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 ├── 01_OS_Inventory.json      # Inventario OS (updated 2026-05-22)
 ├── 02_MCP_Registry.yaml     # 36 MCPs (+1 Higgfield remote)
-├── 03_Agent_Catalog.yaml    # 62 agentes source (referencia al manifest)
+├── 03_Agent_Catalog.yaml    # 61 agentes source (referencia al manifest)
 ├── 04_Skill_Index.json      # 392 skills en 15 áreas (updated 2026-06-01)
 ├── 05_HUB_Catalog.yaml     # HUBs: 30 — scripts: 163 totales (133 en subdirectorios)
 ├── 06_Workflow_Graph.yaml   # 28 workflows
@@ -281,7 +282,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 | Estructura (4 raíz)               | ✅ PASS                     | Winter / Personal_Os / Playground / Resultado                            |
 | HUBs (30 — scripts: 163)           | ✅ PASS                     | 30 HUBs (todos con interfaz) — 163 scripts totales                                |
 | Skills (392, 15 áreas)            | ✅ VERIFIED                 | 15 áreas funcionales — referencia al manifest                             |
-| Agent Matrix                      | ✅ SYNCED                   | 62 agentes (26 root + 5 Dream + 23 Spec + 5 Growth + 3 other)            |
+| Agent Matrix                      | ✅ SYNCED                   | 61 agentes (25 root + 5 Dream + 23 Spec + 5 Growth + 3 other)            |
 | Manifest (7 archivos)             | ✅ VALIDATED                | 00_Manifest/ en 02_Agent_Teams_Lite/                                     |
 | MCPs (7+38 Claude / 36 OpenCode)  | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                                       |
 | Rules (14 .mdc)                   | ✅ DEFINED                  | 01_Rules/ (00-13 + 13_HTML_Visualization)                                |

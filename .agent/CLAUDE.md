@@ -107,7 +107,7 @@ Think_Different/
 │   │   ├── 00_Workflows_Os/      # Workflows (Personal, Marvel, Gentleman, Hillary, CE)
 │   │   ├── 01_Rules/             # 14 reglas del sistema (.mdc)
 │   │   └── 02_Tools/             # Todas las herramientas
-│   │       ├── 01_Agents/        # 26 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other (62 agentes)
+│   │       ├── 01_Agents/        # 25 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other (61 agentes)
 │   │       ├── 02_Skills/        # 15 áreas funcionales (392 skills)
 │   │       ├── 03_Mcp/           # Config MCPs (7+38 MCPs)
 │   │       ├── 04_Integrations/   # Fireflies, Granola
@@ -244,7 +244,7 @@ El sistema tiene un manifest central en `01_Personal_Os/04_Operations/02_Agent_T
 |----------|-----------|
 | 01_OS_Inventory.json | Inventario OS |
 | 02_MCP_Registry.yaml | 7+38 MCPs |
-| 03_Agent_Catalog.yaml | 62 agentes |
+| 03_Agent_Catalog.yaml | 61 agentes |
 | 04_Skill_Index.json | 392 skills |
 | 05_HUB_Catalog.yaml | 30 HUBs |
 | 06_Workflow_Graph.yaml | 28 workflows |

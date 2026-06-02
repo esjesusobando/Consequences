@@ -12,7 +12,7 @@
 | Every CE                              | v3.8.4 (local repo) ✅                                                      | ✅ ACTIVE — Local version                       |
 | gentle-ai                             | v1.30.6                                                                    | ✅ AVAILABLE                                    |
 | Skills                                | **392** (15 áreas funcionales)                                             | ✅ VERIFIED — 392 SKILL.md files                |
-| Agentes                               | **62** (26 root + 5 Dream T + 23 Spec + 5 Growth + 3 other)               | ✅ SYNCED — referencia al manifest              |
+| Agentes                               | **62** (25 root + 5 Dream T + 23 Spec + 5 Growth + 3 other)               | ✅ SYNCED — referencia al manifest              |
 | HUBs                                  | **30** (todos con interfaz) — **163 scripts** totales (133 en subdirectorios)             | ✅ ACTIVE                                       |
 | Scripts totales                       | — (incluido en HUBs)                                                       | —                                              |
 | Workflows                             | **28** (7 categorías en 00_Workflows_Os — 1+10+8+2+2+4+1)                 | ✅ ACTIVE                                       |
@@ -22,7 +22,7 @@
 | Integrations                          | **2** (01_Fireflies, 02_Granola)                                           | ✅ INTEGRATED                                   |
 
 > **🟢 Última AUDITORÍA:** 2026-06-01 — v4.9 SSOT Unification
-> Agent Sync: 62 agentes totales. Skills: 392 (15 áreas). MCPs: **8+38** (Claude) / 36 (OpenCode). HUBs: 30 (con interfaz). Scripts: 163 totales. Rules: 14 .mdc.
+> Agent Sync: 61 agentes totales. Skills: 392 (15 áreas). MCPs: **8+38** (Claude) / 36 (OpenCode). HUBs: 30 (con interfaz). Scripts: 163 totales. Rules: 14 .mdc.
 
 ---
 
@@ -371,4 +371,4 @@ Los siguientes hallazgos fueron identificados durante la auditoría OS integral 
 
 ---
 
-*Actualizado: 2026-06-01 | PersonalOS v4.9 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 392 skills | 62 agents | 30 HUBs | 163 scripts | 28 workflows | 10 hooks*
+*Actualizado: 2026-06-01 | PersonalOS v4.9 Consequences | Every CE v3.8.4 ✅ | gentle-ai v1.30.6 | 392 skills | 61 agents | 30 HUBs | 163 scripts | 28 workflows | 10 hooks*
