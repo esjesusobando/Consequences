@@ -1,7 +1,7 @@
 # Scripts Index — PersonalOS Think Different v4.9 Consequences
 
-> **Total Scripts:** 169 (31 raíz + 81 activos en subdirs + 88 legacy)
-> **Total HUBs:** 31 scripts raíz (00-30 + config_paths + HUB_SOTA + refactor_revert_id)
+> **Total Scripts:** 163 (30 raíz + 133 activos en subdirs) — ver nota de legacy abajo
+> **Total HUBs:** 30 scripts raíz (00-32, con gaps en 12, 13, 23 — excluye config_paths + HUB_SOTA + refactor_revert_id)
 > **Last Updated:** 2026-05-27
 > **Validation:** Production Ready — Sistema PURE GREEN v4.9 Renumbered
 > **Migration:** Scripts reorganizados en estructura 00-13 post-renumbering
@@ -30,7 +30,7 @@
 
 ## 🏗️ Standalone HUBs & Scripts (01_Personal_Os/04_Operations/03_Scripts_Os/)
 
-> **Total:** 27 scripts standalone + 4 subdirectorios con scripts internos. Ver detalle completo en `HUB_CATALOG.md`
+> **Total:** 30 scripts raíz + 4 subdirectorios con scripts internos. Ver detalle completo en `HUB_CATALOG.md`
 
 | #    | Script                         | Purpose                                            | Status           |
 |-----|-------------------------------|---------------------------------------------------|-----------------|
@@ -55,12 +55,15 @@
 | 20   | `System_Mapper_Hub.py`         | System Mapper — regenera manifest                  | ✅ ACTIVO         |
 | 21   | `Legacy_Path_Cleanup.py`       | Legacy Path Cleanup Scanner                        | ✅ ACTIVO         |
 | 22   | `Validate_Skill_Frontmatter.py`| Skill Frontmatter Validator                        | ✅ ACTIVO         |
+| 24   | `mass_path_migration.py`       | Migración masiva de paths del sistema              | ✅ ACTIVO         |
 | 25   | `Minimax_Optimizer_Hub.py`     | Gestión de Integración MiniMax                     | ✅ ACTIVO         |
 | 26   | `Parallel_Audit_Pro.py`        | Auditoría paralela                                 | ✅ ACTIVO         |
 | 27   | `Skill_Auditor.py`             | Skill Auditor                                      | ✅ ACTIVO         |
 | 28   | `System_Health_Monitor.py`     | Health monitor del sistema                         | ✅ ACTIVO         |
 | 29   | `Repo_Sync_Auditor.py`         | Repo sync auditor                                  | ✅ ACTIVO         |
 | 30   | `path_replacement.py`          | PATH Replacement Script — OS v4.9                  | ✅ ACTIVO         |
+| 31   | `Graphify_Hub.py`              | Graph knowledge base management hub                | ✅ ACTIVO         |
+| 32   | `Graphify_Update.py`           | Graph incremental update runner                    | ✅ ACTIVO         |
 
 > Nota: los # 12-13 fueron reasignados a directorios internos. `Context_Usage_Bar.py` y `Beautify_Tables.py` están en `12_Auditors_Os/scripts/`.
 

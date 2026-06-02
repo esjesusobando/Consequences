@@ -230,7 +230,7 @@ def scan_agents():
     backup_dir = PROJECT_ROOT / ".agent/01_Agents"
 
     # Non-agent files to exclude from count (READMEs, LEEMEs, SKILLs, support files)
-    NON_AGENT_FILES = {"README.md", "LEEME.md", "SKILL.md", "registry.md"}
+    NON_AGENT_FILES = {"README.md", "LEEME.md", "SKILL.md", "registry.md", "AGENTS.md"}
     NON_AGENT_DIRS = {"references"}  # subdirectories that are support/docs only
 
     source_agents = []

@@ -67,7 +67,7 @@ El script `03_SOTA_Integrity_Check.py` valida:
 | mcps                           | 7+ MCPs activos configurados                     |
 | agents                         | Agentes en .agent/ y core/                       |
 | hooks                          | Hooks instalados                                 |
-| hubs                           | 31+ HUBs activos                                 |
+| hubs                           | 30+ HUBs activos                                 |
 | rules                          | 13+ reglas consolidadas                          |
 | methodologies                  | Metodologías integradas                          |
 | core_structure                 | Estructura v4.9 completa                         |

@@ -68,10 +68,10 @@ def archive_deleted(backup_root, subdir, only_backup_files, backup_dict):
         # Construir destino: .agent/archive/01_Agents/2026-06-01_relpath.md
         today = datetime.now().strftime("%Y-%m-%d")
         dst_dir = ARCHIVE / subdir / today
-        dst_dir.mkdir(parents=True, exist_ok=True)
         dst = dst_dir / rel_path
-        dst.parent.mkdir(parents=True, exist_ok=True)
         if APPLY:
+            dst_dir.mkdir(parents=True, exist_ok=True)
+            dst.parent.mkdir(parents=True, exist_ok=True)
             shutil.move(str(src), str(dst))
             print(f"     → archivado en {dst.relative_to(PROJECT_ROOT)}")
         archived.append(rel_path)
@@ -84,18 +84,21 @@ def purge_expired_trash():
         return 0
     cutoff = datetime.now() - timedelta(days=TRASH_DAYS)
     purged = 0
-    for item in ARCHIVE.rglob("*"):
-        if item.is_file():
-            # Extraer fecha del path: archive/01_Agents/2026-06-01/file.md
+    for subdir_dir in ARCHIVE.iterdir():
+        if not subdir_dir.is_dir():
+            continue
+        for date_dir in subdir_dir.iterdir():
+            if not date_dir.is_dir():
+                continue
             try:
-                date_str = item.parent.name  # formato YYYY-MM-DD
-                file_date = datetime.strptime(date_str, "%Y-%m-%d")
-                if file_date < cutoff:
+                file_date = datetime.strptime(date_dir.name, "%Y-%m-%d")
+            except ValueError:
+                continue
+            for item in date_dir.rglob("*"):
+                if item.is_file() and file_date < cutoff:
                     if APPLY:
                         item.unlink()
                     purged += 1
-            except (ValueError, IndexError):
-                pass  # No tiene fecha en el path, skip
     # Limpiar directorios vacíos
     if APPLY:
         for d in sorted(ARCHIVE.rglob("*"), key=lambda p: len(str(p)), reverse=True):
@@ -126,7 +129,8 @@ def sync_pair(subdir, label):
             print("✅ Backup inicial creado")
             # Marcar como sync
             mark_synced(subdir, "initial_copy")
-        return 0
+            return 0
+        return 1
 
     live_files = collect_files(live_dir)
     backup_files = collect_files(backup_dir)
