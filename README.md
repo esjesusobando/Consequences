@@ -1,17 +1,17 @@
-# Think Different PersonalOS v4.9 Consequences — Production Ready
+# Think Different PersonalOS v5.0 SOTA — Production Ready
 
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Version](https://img.shields.io/badge/Version-4.9-00FF00)]()
+[![Version](https://img.shields.io/badge/Version-5.0_SOTA-00FF00)]()
 [![Status](https://img.shields.io/badge/Status-PRODUCTION%20READY-00FF00)]()
-[![OS](https://img.shields.io/badge/Think%20Different-OS--4.9-7B68EE)]()
+[![OS](https://img.shields.io/badge/Think%20Different-OS--5.0_SOTA-7B68EE)]()
 
 > 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 392 skills SOTA, agentes, metodologías integradas y automatización completa.
 
 ---
 
-## 📊 Estado del Sistema (v4.9 Consequences — Production Ready — 2026-06-01)
+## 📊 Estado del Sistema (v5.0 SOTA — Production Ready — 2026-06-03)
 
-> 🟢 **PRODUCTION READY** - v4.9 Consequences lista para uso público
+> 🟢 **PRODUCTION READY** - v5.0 SOTA lista para uso público con mejoras estado-del-arte
 
 | Métrica                              | Valor                                            |
 |-------------------------------------|-------------------------------------------------|
@@ -27,7 +27,7 @@
 
 ---
 
-## 📂 Estructura del Sistema (v4.9 Consequences — Production Ready)
+## 📂 Estructura del Sistema (v5.0 SOTA — Production Ready)
 
 ```
 Think_Different/                           # RAÍZ
@@ -112,7 +112,7 @@ Think_Different/                           # RAÍZ
 
 ## 🛠️ Componentes Principales
 
-### Skills System (v4.9 — 14 Áreas Funcionales)
+### Skills System (v5.0 SOTA — 14 Áreas Funcionales)
 
 | Área                                                         | Items                      | Descripción                                                   |
 |-------------------------------------------------------------|---------------------------|--------------------------------------------------------------|
@@ -138,7 +138,7 @@ Think_Different/                           # RAÍZ
 
 ---
 
-### HUBs v4.9 (30 HUBs — 163 scripts totales, 133 en subdirectorios)
+### HUBs v5.0 SOTA (30 HUBs — 163 scripts totales, 133 en subdirectorios)
 
 | Hub                                          | Script                                          | Propósito                                             |
 |---------------------------------------------|------------------------------------------------|------------------------------------------------------|
@@ -254,6 +254,7 @@ Think_Different/                           # RAÍZ
 
 | Documento                                                                       | Ubicación                                                                    |
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| **Structure_v5.0.md**                                                             | Raíz                                                                         |
 | **OS_DIRECTORY.md**                                                             | Raíz — JARVIS discovery                                                      |
 | **AGENTS.md**                                                                   | `00_Winter_is_Coming/AGENTS.md`                                              |
 | **RULES_INDEX**                                                                 | `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md`                             |
@@ -290,6 +291,6 @@ CC BY-NC-SA 4.0 - Uso no comercial permitido.
 
 ---
 
-_Think Different PersonalOS v4.9 Consequences — Production Ready ✅ — 2026-05-31_
+_Think Different PersonalOS v5.0 SOTA — Production Ready ✅ — 2026-06-03_
 
-*Estructura completa: ver `Structure_v4.9.md`*
+*Estructura completa: ver `Structure_v5.0.md`*

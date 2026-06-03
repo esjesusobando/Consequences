@@ -1,11 +1,11 @@
-# 📁 ESTRUCTURA COMPLETA — Think Different PersonalOS v4.9 Consequences
+# 📁 ESTRUCTURA COMPLETA — Think Different PersonalOS v5.0 SOTA
 
-> **Versión:** 4.9 Consequences
-> **Fecha:** 2026-06-01
-> **Estado:** Production Ready — Consolidación SOTA
-> **Audit v2:** 2026-05-23 — 23 duplicates removed, 3 folders synced, docs pixel-perfect
+> **Versión:** 5.0 SOTA
+> **Fecha:** 2026-06-03
+> **Estado:** Production Ready — Upgrades SOTA
 > **Audit v3 (Judgment Day):** 2026-05-25 — 12 bugs corregidos, 18 complementos añadidos, estructura sincronizada con realidad
 > **Audit v4 (SOTA Consolidation):** 2026-05-29 — Skills visuales consolidadas en 02_Diseno_Ui_Ux, duplicado archivado, numeración secuenciada Content 01-16, path stale corregido, SKILL.md promovidos áreas legacy
+> **Audit v5 (SOTA Upgrades):** 2026-06-03 — Upgrades state-of-the-art en Workflow_Hub y System_Core, rutas absolutas migradas masivamente, y contexto preservado exitosamente.
 
 ---
 
@@ -127,7 +127,7 @@ Think_Different/                    # RAÍZ
 | 14–19     | Specialist Individuales (Git → TDD)        | Root              | 6 archivos            |
 |           | **TOTAL**                                  |                   | **61 agentes**        |
 
-**Skills por Área (v4.9 — auditada contra disco):**
+**Skills por Área (v5.0 SOTA — auditada contra disco):**
 
 | Área                           | SKILL.md  | Descripción (directorio real)                                   |
 |-------------------------------|----------|----------------------------------------------------------------|
@@ -449,7 +449,7 @@ Think_Different/                    # RAÍZ
 | **AGENTS.md**              | GGA Pre-Commit entry (redirect → 00_Winter_is_Coming)                                                                          |
 | **CLAUDE.md**              | Config IAs (FUENTE) — Boot Protocol, 12 Laws, Super Campeones                                                                  |
 | **OS_DIRECTORY.md**        | JARVIS discovery — 36 MCPs, 28 HUBs, 16 audit findings                                                                         |
-| **Structure_v4.9.md**      | Este archivo — estructura completa                                                                                             |
+| **Structure_v5.0.md**      | Este archivo — estructura completa                                                                                             |
 
 ---
 
@@ -514,12 +514,12 @@ Al iniciar sesión, ejecutar EN ORDEN:
 
 ## ✅ PURE GREEN STATE
 
-**Think Different PersonalOS v4.9 Consequences — 2026-06-01**
+**Think Different PersonalOS v5.0 SOTA — 2026-06-03**
 
-*Audit v4 (SOTA Consolidation) complete. Skills visuales consolidadas en 02_Diseno_Ui_Ux. Duplicado .opencode archivado. Content renombrado secuencia 01-16. Laia renumerada 10_. Path stale corregido. SKILL.md promovidos áreas legacy. 13 directorios Content renombrados a secuencia limpia. 5 skills visuales migradas sin pérdida de datos. Estructura sincronizada con realidad.*
+*Audit v5 (SOTA Upgrades) complete. Workflow_Hub fortificado con telemetría, tipado estricto y zero-context loss. System_Core heurísticas llevadas al estado del arte. Migración global masiva a rutas absolutas nativas para todo el repositorio. Judgment day aprobado. Documentación final mapeada.*
 
 ---
 
-*Versión: v4.9 Consequences*
-*Audit: 2026-06-01 (SOTA Consolidation)*
-*Skills: 385 active + ~490 legacy | Agents: 55 (source) / 82 (con SDD/CE) | Rules: 13 .mdc | MCPs: 8+38 | HUBs: 20 | Scripts: 256*
+*Versión: v5.0 SOTA*
+*Audit: 2026-06-03 (SOTA Upgrades)*
+*Skills: 392 active + ~490 legacy | Agents: 61 (source) / 82 (con SDD/CE) | Rules: 14 .mdc | MCPs: 8+38 | HUBs: 30 | Scripts: 163*
