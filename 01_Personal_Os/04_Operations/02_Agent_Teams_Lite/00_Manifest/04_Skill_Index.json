@@ -1,6 +1,6 @@
 {
   "version": "v3.0",
-  "generated": "2026-06-01T20:50:43",
+  "generated": "2026-06-03T11:02:31",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
     "areas": 15,
@@ -1012,8 +1012,8 @@
           "has_frontmatter": true
         },
         {
-          "name": "21_Content_Generation",
-          "path": "01_Creacion_Contenidos/21_Content_Generation/SKILL.md",
+          "name": "17_Content_Generation",
+          "path": "01_Creacion_Contenidos/17_Content_Generation/SKILL.md",
           "has_frontmatter": true
         }
       ]
@@ -1352,13 +1352,13 @@
           "has_frontmatter": true
         },
         {
-          "name": "14_N8n",
-          "path": "04_Automatizacion/14_N8n/SKILL.md",
+          "name": "15_Os_Self_Improvement",
+          "path": "04_Automatizacion/15_Os_Self_Improvement/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "15_Os_Self_Improvement",
-          "path": "04_Automatizacion/15_Os_Self_Improvement/SKILL.md",
+          "name": "16_N8n",
+          "path": "04_Automatizacion/16_N8n/SKILL.md",
           "has_frontmatter": true
         },
         {
@@ -2002,33 +2002,33 @@
       "count": 6,
       "skills": [
         {
-          "name": "00_Entrevistador_Procesos",
-          "path": "08_JAO/00_Entrevistador_Procesos/SKILL.md",
+          "name": "01_Entrevistador_Procesos",
+          "path": "08_JAO/01_Entrevistador_Procesos/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "01_Humanizador",
-          "path": "08_JAO/01_Humanizador/SKILL.md",
+          "name": "02_Humanizador",
+          "path": "08_JAO/02_Humanizador/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "02_Optimizador_Prompts",
-          "path": "08_JAO/02_Optimizador_Prompts/SKILL.md",
+          "name": "03_Optimizador_Prompts",
+          "path": "08_JAO/03_Optimizador_Prompts/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "03_Presentaciones_Visuales",
-          "path": "08_JAO/03_Presentaciones_Visuales/SKILL.md",
+          "name": "04_Presentaciones_Visuales",
+          "path": "08_JAO/04_Presentaciones_Visuales/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "04_Superpowers",
-          "path": "08_JAO/04_Superpowers/SKILL.md",
+          "name": "05_Superpowers",
+          "path": "08_JAO/05_Superpowers/SKILL.md",
           "has_frontmatter": true
         },
         {
-          "name": "05_Verificador_Datos",
-          "path": "08_JAO/05_Verificador_Datos/SKILL.md",
+          "name": "06_Verificador_Datos",
+          "path": "08_JAO/06_Verificador_Datos/SKILL.md",
           "has_frontmatter": true
         }
       ]

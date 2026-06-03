@@ -75,7 +75,7 @@
 
 ### Fase 1: Correcciones Críticas de Rutas
 
-#### ✅ [MODIFY] [config_paths.py](file:///c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py)
+#### ✅ [MODIFY] [config_paths.py](file:///C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/04_Operations/03_Scripts_Os/config_paths.py)
 - Corregir `TELEMETRY_DIR`: `12_Telemetry` → `13_Telemetry`
 - Corregir `AUDITOR_DIR`: `06_Auditor` → buscar ruta correcta o marcar como deprecated
 - Corregir `INVENTORY_FILE`: `01_Inventario_Total.md` → `01_Inventario_Core.md`
@@ -84,26 +84,26 @@
 
 ### Fase 2: Actualización de Documentos Maestros
 
-#### ✅ [MODIFY] [OS_DIRECTORY.md](file:///c:/Users/sebas/Desktop/Think_Different/OS_DIRECTORY.md)
+#### ✅ [MODIFY] [OS_DIRECTORY.md](file:///C:/Users/sebas/Desktop/Think_Different/OS_DIRECTORY.md)
 - Sincronizar conteos reales: Skills (unificar 385 vs 394), MCPs (8 root real), Workflows (detallar)
 - Corregir tabla MCPs: añadir eagle, higgsfield; marcar cuáles están en root y cuáles solo en backup
 - Corregir typo "hallsazgos" → "hallazgos"
 - Actualizar árbol de `05_Archive/` con subdirectorios reales
 - Actualizar notas de proceso: 25 → 35
 
-#### ✅ [MODIFY] [Structure_v4.8.md](file:///c:/Users/sebas/Desktop/Think_Different/Structure_v4.8.md)
+#### ✅ [MODIFY] [Structure_v4.8.md](file:///C:/Users/sebas/Desktop/Think_Different/Structure_v4.8.md)
 - Eliminar referencia fantasma a `Context_Memory.md` y `Notas_de_Proceso.md` como archivos sueltos en 00_Context_LLM
 - Corregir conteos de workflows (Personal_Os: 10, YouTube: 1)
 - Actualizar sección 02_Agent_Teams_Lite con estructura real
 - Actualizar sección 03_Task con archivos reales actuales
 - Añadir `09_Anthropic/` en sección 02_Knowledge
 
-#### ✅ [MODIFY] [01_Iron_Man_Gen.md](file:///c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/01_Iron_Man_Gen.md)
+#### ✅ [MODIFY] [01_Iron_Man_Gen.md](file:///C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/01_Iron_Man_Gen.md)
 - Unificar conteos con OS_DIRECTORY.md
 - Actualizar tabla de recursos con números reales verificados
 - Añadir nota sobre 02_Knowledge/09_Anthropic
 
-#### ✅ [MODIFY] [SCRIPTS_INDEX.md](file:///c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/04_Operations/03_Scripts_Os/SCRIPTS_INDEX.md)
+#### ✅ [MODIFY] [SCRIPTS_INDEX.md](file:///C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/04_Operations/03_Scripts_Os/SCRIPTS_INDEX.md)
 - Actualizar sección inferior que dice "v4.0" → v4.9
 - Actualizar conteo de skills: "300+" → 385+
 - Actualizar "11 áreas" → "15 directorios (14 áreas + Archive)"
@@ -113,7 +113,7 @@
 
 ### Fase 3: Complementar Documentación
 
-#### ✅ [MODIFY] [GOALS.md](file:///c:/Users/sebas/Desktop/Think_Different/00_Winter_is_Coming/GOALS.md)
+#### ✅ [MODIFY] [GOALS.md](file:///C:/Users/sebas/Desktop/Think_Different/00_Winter_is_Coming/GOALS.md)
 - Actualizar sección de MCPs con eagle y higgsfield
 - Corregir referencia a `05_System/` (no existe) → `02_Tools/07_Server/`
 - Verificar ruta de subagent protocol: `.agent/03_Workflows/01_Personal_Os/00_Genesis_Workflow.md`
@@ -122,10 +122,10 @@
 
 ### Fase 4: Documentar en Context_Memory y Notas_de_Proceso
 
-#### ✅ [NEW] [34_NP_Auditoria_Integral_Antigravity_2026-05-31.md](file:///c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/34_NP_Auditoria_Integral_Antigravity_2026-05-31.md)
+#### ✅ [NEW] [34_NP_Auditoria_Integral_Antigravity_2026-05-31.md](file:///C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/04_Operations/00_Context_LLM/01_Process_Notes/34_NP_Auditoria_Integral_Antigravity_2026-05-31.md)
 - Nota de Proceso documentando todos los hallazgos y correcciones
 
-#### ✅ [NEW] [CTX_2026_05_31_Antigravity_Audit.md](file:///c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/CTX_2026_05_31_Antigravity_Audit.md)
+#### ✅ [NEW] [CTX_2026_05_31_Antigravity_Audit.md](file:///C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/CTX_2026_05_31_Antigravity_Audit.md)
 - Memoria de contexto con cuadro comparativo antes/después
 
 ---

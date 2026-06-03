@@ -15,51 +15,51 @@ Se actualizarán todos los archivos a:
 
 ### Archivos Raíz y Core
 
-#### [MODIFY] [Structure_v4.8.md](file:///c:/Users/sebas/Desktop/Think_Different/Structure_v4.8.md)
+#### [MODIFY] [Structure_v4.8.md](file:///C:/Users/sebas/Desktop/Think_Different/Structure_v4.8.md)
 - Renombrar archivo a `Structure_v4.9.md` (o `Structure_v4.9_Consequences.md` si prefieres).
 - Actualizar todas las referencias internas de `v4.7` o `v4.8` a `v4.9`.
 - Actualizar el título principal.
 
-#### [MODIFY] [OS_DIRECTORY.md](file:///c:/Users/sebas/Desktop/Think_Different/OS_DIRECTORY.md)
+#### [MODIFY] [OS_DIRECTORY.md](file:///C:/Users/sebas/Desktop/Think_Different/OS_DIRECTORY.md)
 - Actualizar la cabecera a `v4.9 Consequences | 2026-06-01`.
 - Eliminar o ajustar la sección "v4.5 Cambios desde v4.1" si ya no es relevante, o marcarla como hitos históricos.
 - Corregir múltiples referencias de "v4.5" a "v4.9".
 
-#### [MODIFY] [CLAUDE.md](file:///c:/Users/sebas/Desktop/Think_Different/CLAUDE.md)
+#### [MODIFY] [CLAUDE.md](file:///C:/Users/sebas/Desktop/Think_Different/CLAUDE.md)
 - Actualizar fechas de "2026-05-31" a "2026-06-01".
 - Corregir secciones como "KNOWLEDGE MAPS & ARCHITECTURE (v4.0)" para que digan "v4.9".
 - Corregir el bloque "JARVIS 4.5" a "JARVIS 4.9".
 
-#### [MODIFY] [README.md](file:///c:/Users/sebas/Desktop/Think_Different/README.md)
+#### [MODIFY] [README.md](file:///C:/Users/sebas/Desktop/Think_Different/README.md)
 - Verificar y actualizar cualquier mención desactualizada a `Structure_v4.8.md` cambiándola por `Structure_v4.9.md`.
 - Asegurar que todas las fechas indiquen `2026-06-01`.
 
 ### Directorio 00_Winter_is_Coming
 
-#### [MODIFY] [00_Winter_is_Coming/README.md](file:///c:/Users/sebas/Desktop/Think_Different/00_Winter_is_Coming/README.md)
+#### [MODIFY] [00_Winter_is_Coming/README.md](file:///C:/Users/sebas/Desktop/Think_Different/00_Winter_is_Coming/README.md)
 - Corregir fechas y cambiar el footer de "v4.7 Consequences" a "v4.9 Consequences".
 
-#### [MODIFY] [00_Winter_is_Coming/GOALS.md](file:///c:/Users/sebas/Desktop/Think_Different/00_Winter_is_Coming/GOALS.md)
+#### [MODIFY] [00_Winter_is_Coming/GOALS.md](file:///C:/Users/sebas/Desktop/Think_Different/00_Winter_is_Coming/GOALS.md)
 - Actualizar versión y fecha a v4.9 / 2026-06-01.
 
-#### [MODIFY] [00_Winter_is_Coming/BACKLOG.md](file:///c:/Users/sebas/Desktop/Think_Different/00_Winter_is_Coming/BACKLOG.md)
+#### [MODIFY] [00_Winter_is_Coming/BACKLOG.md](file:///C:/Users/sebas/Desktop/Think_Different/00_Winter_is_Coming/BACKLOG.md)
 - Actualizar versión y fecha a v4.9 / 2026-06-01.
 
-#### [MODIFY] [00_Winter_is_Coming/CHANGELOG.md](file:///c:/Users/sebas/Desktop/Think_Different/00_Winter_is_Coming/CHANGELOG.md)
+#### [MODIFY] [00_Winter_is_Coming/CHANGELOG.md](file:///C:/Users/sebas/Desktop/Think_Different/00_Winter_is_Coming/CHANGELOG.md)
 - Agregar un entry oficial para la versión `v4.9 Consequences` y el hito de hoy (`2026-06-01`).
 
 ### Otros Documentos Importantes
 
-#### [MODIFY] [01_Personal_Os/04_Operations/06_SOTA_Features/README.md](file:///c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/04_Operations/06_SOTA_Features/README.md)
+#### [MODIFY] [01_Personal_Os/04_Operations/06_SOTA_Features/README.md](file:///C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/04_Operations/06_SOTA_Features/README.md)
 - Actualizar de `v4.1` a `v4.9`.
 
-#### [MODIFY] [02_Playground/00_Momentum/README.md](file:///c:/Users/sebas/Desktop/Think_Different/02_Playground/00_Momentum/README.md)
+#### [MODIFY] [02_Playground/00_Momentum/README.md](file:///C:/Users/sebas/Desktop/Think_Different/02_Playground/00_Momentum/README.md)
 - Actualizar los footers y la versión actual a `v4.9`.
 
-#### [MODIFY] [01_Personal_Os/05_Archive/README.md](file:///c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/05_Archive/README.md)
+#### [MODIFY] [01_Personal_Os/05_Archive/README.md](file:///C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/05_Archive/README.md)
 - Actualizar la tabla de historial y alinear a `v4.9`.
 
-#### [MODIFY] [02_Playground/Kit_Diseño_Top.md](file:///c:/Users/sebas/Desktop/Think_Different/02_Playground/Kit_Diseño_Top.md)
+#### [MODIFY] [02_Playground/Kit_Diseño_Top.md](file:///C:/Users/sebas/Desktop/Think_Different/02_Playground/Kit_Diseño_Top.md)
 - Actualizar de `v4.7` a `v4.9`.
 
 ---

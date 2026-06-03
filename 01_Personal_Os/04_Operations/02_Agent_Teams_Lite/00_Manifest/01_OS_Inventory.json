@@ -1,6 +1,6 @@
 {
   "version": "v4.9",
-  "generated": "2026-06-01T20:50:42",
+  "generated": "2026-06-03T11:02:30",
   "source": "20_System_Mapper_Hub.py --scan",
   "personal_os": {
     "name": "PersonalOS",
@@ -10,7 +10,7 @@
   "totals": {
     "mcps_claude": 8,
     "mcps_opencode": 43,
-    "skills": 392,
+    "skills": 391,
     "skill_areas": 15,
     "agents_source": 61,
     "agents_backup": 61,
@@ -46,7 +46,7 @@
     "scripts_no_hub": 133
   },
   "skills_totals": {
-    "total": 392,
+    "total": 391,
     "areas": 15,
     "per_area": {
       "00_Agent_Teams_Lite": 14,
@@ -58,7 +58,7 @@
       "01_Creacion_Contenidos": 49,
       "02_Diseno_Ui_Ux": 34,
       "03_Video_Media": 7,
-      "04_Automatizacion": 27,
+      "04_Automatizacion": 26,
       "05_Claude_Ads": 21,
       "06_Tools": 83,
       "07_Invictus_Web": 18,

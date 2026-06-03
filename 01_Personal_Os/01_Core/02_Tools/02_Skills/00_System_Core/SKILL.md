@@ -1,28 +1,36 @@
 ---
 name: "personal_os_stack"
 description: "Core skills del Think Different PersonalOS - Goals, Backlog, Tasks, SDD, System Guardian"
-triggers: ["personalos", "stack", "goals", "backlog", "tasks"]
-version: 1.0.0
+triggers: ["personalos", "stack", "goals", "backlog", "tasks", "system guardian", "sdd init"]
+version: 1.1.0
+category: "00_System_Core"
+complexity: "High"
 ---
 
-# Personal OS Stack
+# Personal OS Stack [SOTA UPGRADED]
 
-Skills fundamentales del Think Different PersonalOS.
+Skills fundamentales del Think Different PersonalOS. 
+*Versión 1.1.0: Actualizado con telemetría mejorada, integración a Agent Teams Lite (SDD) y estricto control de contexto.*
 
 ## Esencia Original
 El núcleo del sistema, diseñado para una autonomía extrema mediante flujos definidos de trabajo, auditoría constante y un backlog siempre priorizado.
 
+## Principios SOTA (Nuevos)
+- **Zero-Context Loss:** El sistema no tolera pérdida de contexto. Utilizar `mem_save` de Engram para persistir cualquier decisión técnica.
+- **Delegation by Default:** El OS orquesta sub-agentes en SDD (Explore, Propose, Design, Task, Apply, Verify). No inflar el contexto innecesariamente.
+- **Fail-Fast Heuristics:** El System Guardian actúa de manera inmediata. Si falla un test de salud, se aborta la misión hasta corregirse.
+
 ## Skills Incluidas
 
-| #                                    | Skill                                               | Descripción                                                             |
-|-------------------------------------|----------------------------------------------------|------------------------------------------------------------------------|
-| 01                                   | SDD Workflow                                        | Metodología de desarrollo estructurado                                  |
-| 02                                   | System Guardian                                     | Validación automática                                                   |
-| 03                                   | Backlog Processing                                  | Flujo completo de backlog                                               |
-| 04                                   | Personal OS                                         | Sistema principal de productividad                                      |
-| 05                                   | [Endpoint Logic]                                    | Lógica de endpoints y routing del OS                                    |
+| #  | Skill                    | Descripción                                                                 | Endpoint Lógico             |
+|----|--------------------------|-----------------------------------------------------------------------------|-----------------------------|
+| 01 | **SDD Workflow**         | Metodología de desarrollo estructurado (Spec-Driven Development v2)        | `sdd-init`, `sdd-explore`   |
+| 02 | **System Guardian**      | Validación automática estricta (Watchdog, Auditor Profundo)               | `01_Auditor_Hub.py`         |
+| 03 | **Backlog Processing**   | Flujo completo de backlog (Priorización Express)                            | `04_Backlog_Processing.md`  |
+| 04 | **Personal OS**          | Sistema principal de productividad                                          | `01_Personal_Os.md`         |
+| 05 | **Endpoint Logic**       | Lógica de endpoints y routing del OS                                        | `08_Workflow_Hub.py`        |
 
-## ⚠️ Gotchas
+## ⚠️ Gotchas Históricos (DO NOT IGNORE)
 
 ### System Guardian ignorado
 > No ignores las advertencias del System Guardian: el sistema de validación no es opcional.
@@ -42,7 +50,7 @@ El núcleo del sistema, diseñado para una autonomía extrema mediante flujos de
 - **Por qué**: Cada fase del SDD (explore → propose → spec → design → tasks → apply → verify) genera artifacts que la siguiente fase necesita. Saltarse una fase rompe la cadena de contexto.
 - **Solución**: Si el contexto es limitado, ejecutar fases en modo express pero nunca saltarlas por completo. Usar `sdd-init --quick` para setups rápidos.
 
-## Estructura
+## Estructura de Integración
 
 ### Documentada (aspirational)
 ```
@@ -72,15 +80,14 @@ El núcleo del sistema, diseñado para una autonomía extrema mediante flujos de
 └── SKILL.md
 ```
 
-## Complementos
-
-- **01_Personal_Os.md**: Stack principal de productividad — goals, tasks, priorización
-- **02_SDD_Workflow.md**: Metodología SDD completa para desarrollo estructurado
-- **03_System_Guardian.md**: Validación automática de contratos del sistema
-- **04_Backlog_Processing.md**: Flujo completo de procesamiento de backlog
-- **Hooks/**: Scripts de validación pre/post operaciones del OS
-- **Gcierr/**: Utilidades de diagnóstico y validación de estado
+## Complementos y Directrices
+- **01_Personal_Os.md**: Stack principal de productividad — goals, tasks, priorización.
+- **02_SDD_Workflow.md**: Metodología SDD completa para desarrollo estructurado.
+- **03_System_Guardian.md**: Validación automática de contratos del sistema.
+- **04_Backlog_Processing.md**: Flujo completo de procesamiento de backlog.
+- **Hooks/**: Scripts de validación pre/post operaciones del OS.
+- **Gcierr/**: Utilidades de diagnóstico y validación de estado.
 
 ---
+*Skill Version: 1.1.0 (SOTA)*
 
-*Skill Version: 1.0.0*
