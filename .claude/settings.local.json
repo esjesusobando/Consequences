@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python \"c:/Users/sebas/Desktop/Think_Different/.agent/04_Extensions/01_Hooks/01_Pre_Tool/pre_tool_use.py\""
+            "command": "python \"C:/Users/sebas/Desktop/Think_Different/.agent/04_Extensions/01_Hooks/01_Pre_Tool/pre_tool_use.py\""
           }
         ]
       }
@@ -17,7 +17,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python \"c:/Users/sebas/Desktop/Think_Different/.agent/04_Extensions/01_Hooks/02_Post_Tool/post_tool_use.py\""
+            "command": "python \"C:/Users/sebas/Desktop/Think_Different/.agent/04_Extensions/01_Hooks/02_Post_Tool/post_tool_use.py\""
           }
         ]
       },
@@ -26,7 +26,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python \"c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/notification.py\" --task-complete"
+            "command": "python \"C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/notification.py\" --task-complete"
           }
         ]
       }
@@ -36,7 +36,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python \"c:/Users/sebas/Desktop/Think_Different/.agent/04_Extensions/01_Hooks/03_Lifecycle/stop.py\""
+            "command": "python \"C:/Users/sebas/Desktop/Think_Different/.agent/04_Extensions/01_Hooks/03_Lifecycle/stop.py\""
           }
         ]
       }
@@ -46,7 +46,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python \"c:/Users/sebas/Desktop/Think_Different/.agent/04_Extensions/01_Hooks/03_Lifecycle/subagent_stop.py\""
+            "command": "python \"C:/Users/sebas/Desktop/Think_Different/.agent/04_Extensions/01_Hooks/03_Lifecycle/subagent_stop.py\""
           }
         ]
       }
@@ -56,7 +56,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python \"c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/notification.py\" --beep"
+            "command": "python \"C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/05_Hooks/04_Sound/notification.py\" --beep"
           }
         ]
       }
@@ -77,16 +77,16 @@
       "Bash(gh --version)",
       "Bash(gh auth:*)",
       "Bash(mkdir -p content_ideation_extract video_prompt_extract offer_bio_extract)",
-      "Bash(unzip -o \"c:/Users/sebas/Desktop/Think_Different/New_Skills/content-ideation.skill\" -d /tmp/content_ideation_extract)",
-      "Bash(unzip -o \"c:/Users/sebas/Desktop/Think_Different/New_Skills/video-prompt-builder.skill\" -d /tmp/video_prompt_extract)",
-      "Bash(unzip -o \"c:/Users/sebas/Desktop/Think_Different/New_Skills/offer-and-bio-writer.skill\" -d /tmp/offer_bio_extract)",
-      "Bash(mkdir -p 'c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/20_James_Cameron/01_Video_Prompt_Builder/references')",
-      "Bash(mkdir -p 'c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/20_James_Cameron/02_Remotion_Browser_Search')",
-      "Bash(mkdir -p 'c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/20_James_Cameron/03_Remotion_Cards_Showcase')",
-      "Bash(mkdir -p 'c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/20_James_Cameron/04_Remotion_Audio_Engine')",
-      "Bash(cp /tmp/brand_voice_extract/brand-voice-guardian/SKILL.md 'c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/09_Marketing/11_Brand_Voice_Guardian/SKILL.md')",
-      "Bash(cp /tmp/content_ideation_extract/content-ideation/SKILL.md 'c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/09_Marketing/12_Content_Ideation/SKILL.md')",
-      "Bash(cp /tmp/offer_bio_extract/offer-and-bio-writer/SKILL.md 'c:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/09_Marketing/13_Offer_And_Bio_Writer/SKILL.md')",
+      "Bash(unzip -o \"C:/Users/sebas/Desktop/Think_Different/New_Skills/content-ideation.skill\" -d /tmp/content_ideation_extract)",
+      "Bash(unzip -o \"C:/Users/sebas/Desktop/Think_Different/New_Skills/video-prompt-builder.skill\" -d /tmp/video_prompt_extract)",
+      "Bash(unzip -o \"C:/Users/sebas/Desktop/Think_Different/New_Skills/offer-and-bio-writer.skill\" -d /tmp/offer_bio_extract)",
+      "Bash(mkdir -p 'C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/20_James_Cameron/01_Video_Prompt_Builder/references')",
+      "Bash(mkdir -p 'C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/20_James_Cameron/02_Remotion_Browser_Search')",
+      "Bash(mkdir -p 'C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/20_James_Cameron/03_Remotion_Cards_Showcase')",
+      "Bash(mkdir -p 'C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/03_Video_Media/20_James_Cameron/04_Remotion_Audio_Engine')",
+      "Bash(cp /tmp/brand_voice_extract/brand-voice-guardian/SKILL.md 'C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/09_Marketing/11_Brand_Voice_Guardian/SKILL.md')",
+      "Bash(cp /tmp/content_ideation_extract/content-ideation/SKILL.md 'C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/09_Marketing/12_Content_Ideation/SKILL.md')",
+      "Bash(cp /tmp/offer_bio_extract/offer-and-bio-writer/SKILL.md 'C:/Users/sebas/Desktop/Think_Different/01_Personal_Os/01_Core/02_Tools/02_Skills/01_Creacion_Contenidos/09_Marketing/13_Offer_And_Bio_Writer/SKILL.md')",
       "Bash(npm run:*)",
       "mcp__plugin_engram_engram__mem_context",
       "mcp__plugin_engram_engram__mem_save",

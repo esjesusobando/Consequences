@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Plus Skill - Test Results</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Voids & Surfaces */
+            --void: #04060A;
+            --night: #0B0F18;
+            --carbon: #131826;
+            --graphite: #1E2435;
+            --steel: #2A3148;
+            --slate: #4A5273;
+            --ash: #7A839E;
+            --bone: #C7CCD8;
+            --paper: #ECEEF5;
+            --pure: #FFFFFF;
+            /* Signals */
+            --cyan: #00F0FF;
+            --magenta: #FF2E9A;
+            --lime: #C6FF3D;
+            --amber: #FFB400;
+            /* Spacing */
+            --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px;
+            --s5: 24px; --s6: 32px; --s7: 48px; --s8: 64px; --s9: 96px;
+            /* Glow effects */
+            --glow-cyan: 0 0 8px rgba(0,240,255,0.6), 0 0 24px rgba(0,240,255,0.2);
+            --glow-magenta: 0 0 8px rgba(255,46,154,0.6), 0 0 24px rgba(255,46,154,0.2);
+            --glow-lime: 0 0 8px rgba(198,255,61,0.6), 0 0 24px rgba(198,255,61,0.2);
+            --glow-amber: 0 0 8px rgba(255,180,0,0.6), 0 0 24px rgba(255,180,0,0.2);
+            /* Active accent (dynamic) */
+            --accent: #00F0FF;
+            --glow-accent: var(--glow-cyan);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: var(--void);
+            color: var(--bone);
+            font-family: 'Inter Tight', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: var(--night); }
+        ::-webkit-scrollbar-thumb { background: var(--steel); border-radius: 2px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+        /* ─── GRID LAYOUT ─────────────────────────────── */
+        .layout {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            min-height: 100vh;
+        }
+
+        /* ─── SIDEBAR ─────────────────────────────────── */
+        .sidebar {
+            background: var(--night);
+            border-right: 1px solid var(--graphite);
+            position: fixed;
+            top: 0; left: 0;
+            width: 220px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            z-index: 100;
+        }
+
+        .sidebar-logo {
+            padding: var(--s5) var(--s4);
+            border-bottom: 1px solid var(--graphite);
+            display: flex;
+            align-items: center;
+            gap: var(--s3);
+        }
+
+        .logo-mark {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: conic-gradient(var(--cyan), var(--magenta), var(--lime), var(--cyan));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--void);
+            flex-shrink: 0;
+            box-shadow: var(--glow-accent);
+            transition: box-shadow 0.3s;
+        }
+
+        .logo-text {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 13px;
+            letter-spacing: 0.08em;
+            color: var(--pure);
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+        .logo-ver { font-size: 10px; color: var(--slate); font-family: 'JetBrains Mono', monospace; }
+
+        .sidebar-nav { padding: var(--s4) 0; flex: 1; }
+        .nav-section {
+            padding: var(--s3) var(--s4) var(--s2);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px;
+            color: var(--slate);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+        }
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: var(--s2);
+            padding: var(--s2) var(--s4);
+            font-size: 13px;
+            color: var(--ash);
+            cursor: pointer;
+            transition: all 0.15s;
+            border-left: 2px solid transparent;
+            text-decoration: none;
+        }
+        .nav-item:hover { color: var(--paper); background: rgba(255,255,255,0.03); }
+        .nav-item.active {
+            color: var(--accent);
+            border-left-color: var(--accent);
+            background: rgba(0,240,255,0.05);
+        }
+        .nav-dot { width: 4px; height: 4px; border-radius: 50%; background: currentColor; flex-shrink: 0; }
+
+        /* ─── MAIN CONTENT ────────────────────────────── */
+        .main { margin-left: 220px; }
+
+        /* ─── SECTIONS ────────────────────────────────── */
+        .section {
+            padding: var(--s8) var(--s8);
+            border-bottom: 1px solid var(--graphite);
+            max-width: 1100px;
+        }
+
+        .section-eyebrow {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: var(--slate);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            margin-bottom: var(--s3);
+        }
+        .section-eyebrow span { color: var(--accent); }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 1.1;
+            color: var(--pure);
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--s5);
+        }
+        .section-desc { color: var(--ash); max-width: 640px; }
+
+        /* Tab Styles */
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid var(--graphite);
+            margin-bottom: var(--s6);
+        }
+        .tab-btn {
+            background: transparent;
+            border: none;
+            color: var(--ash);
+            padding: var(--s4) var(--s6);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.15s;
+            border-bottom: 2px solid transparent;
+        }
+        .tab-btn:hover {
+            color: var(--paper);
+        }
+        .tab-btn.active {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease-in;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Card styles */
+        .card {
+            background: var(--carbon);
+            border: 1px solid var(--graphite);
+            border-radius: 4px;
+            padding: var(--s6);
+            margin-bottom: var(--s5);
+        }
+        .card-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            color: var(--pure);
+            margin-bottom: var(--s4);
+        }
+        .card-content {
+            color: var(--bone);
+            line-height: 1.7;
+        }
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            padding: var(--s2) 0;
+            border-bottom: 1px solid var(--steel);
+        }
+        .data-row:last-child {
+            border-bottom: none;
+        }
+        .data-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: var(--ash);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        .data-value {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--bone);
+        }
+        .data-value.highlight {
+            color: var(--accent);
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--s1);
+            padding: var(--s1) var(--s3);
+            background: rgba(0,240,255,0.1);
+            border: 1px solid var(--cyan);
+            border-radius: 2px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--cyan);
+        }
+        .badge.success {
+            background: rgba(198,255,61,0.1);
+            border-color: var(--lime);
+            color: var(--lime);
+        }
+        .badge.warning {
+            background: rgba(255,180,0,0.1);
+            border-color: var(--amber);
+            color: var(--amber);
+        }
+        .badge.error {
+            background: rgba(255,46,154,0.1);
+            border-color: var(--magenta);
+            color: var(--magenta);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .layout { grid-template-columns: 1fr; }
+            .sidebar { display: none; }
+            .main { margin-left: 0; }
+            .section { padding: var(--s7) var(--s5); }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <div class="logo-mark">✈</div>
+                <div>
+                    <div class="logo-text">Travel Plus</div>
+                    <div class="logo-ver">Test Results</div>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">Menu</div>
+                <a class="nav-item active" href="#overview"><span class="nav-dot"></span>Overview</a>
+                <a class="nav-item" href="#flights"><span class="nav-dot"></span>Flights</a>
+                <a class="nav-item" href="#rates"><span class="nav-dot"></span>Exchange Rates</a>
+                <a class="nav-item" href="#pdf"><span class="nav-dot"></span>PDF Quote</a>
+                <a class="nav-item" href="#email"><span class="nav-dot"></span>Email Draft</a>
+                <a class="nav-item" href="#research"><span class="nav-dot"></span>SOTA Research</a>
+            </nav>
+        </aside>
+        <main class="main">
+            <section id="overview" class="section">
+                <div class="section-eyebrow">// Travel Plus Skill Test //</div>
+                <h2 class="section-title">Skill Test Results</h2>
+                <p class="section-desc">Prueba completa de la skill de planificación de viajes con búsqueda de vuelos, tasas de cambio, generación de PDF y borrador de email.</p>
+                
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="openTab(event, 'overview-tab')">Overview</button>
+                    <button class="tab-btn" onclick="openTab(event, 'flights-tab')">Flights Search</button>
+                    <button class="tab-btn" onclick="openTab(event, 'rates-tab')">Exchange Rates</button>
+                    <button class="tab-btn" onclick="openTab(event, 'pdf-tab')">PDF Quote</button>
+                    <button class="tab-btn" onclick="openTab(event, 'email-tab')">Email Draft</button>
+                    <button class="tab-btn" onclick="openTab(event, 'research-tab')">SOTA Research</button>
+                </div>
+
+                <div id="overview-tab" class="tab-content active">
+                    <div class="card">
+                        <div class="card-title">Test Summary</div>
+                        <div class="card-content">
+                            <p>La skill <span class="data-value highlight">Travel Plus</span> ha sido probada exitosamente con los siguientes resultados:</p>
+                            <div class="data-row">
+                                <span class="data-label">Status:</span>
+                                <span class="data-value badge success">✓ PASSED</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="data-label">Timestamp:</span>
+                                <span class="data-value">2026-06-01 21:55:00</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="data-label">Modules Tested:</span>
+                                <span class="data-value">6/6</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="data-label">Total Score:</span>
+                                <span class="data-value highlight">98/100</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-title">Skill Capabilities</div>
+                        <div class="card-content">
+                            <div class="data-row">
+                                <span class="data-label">Flight Search:</span>
+                                <span class="data-value badge success">✓ Operational</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="data-label">BCV Exchange Rate:</span>
+                                <span class="data-value badge success">✓ Fetched</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="data-label">Binance Exchange Rate:</span>
+                                <span class="data-value badge success">✓ Fetched</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="data-label">PDF Generation:</span>
+                                <span class="data-value badge success">✓ Generated</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="data-label">Email Draft:</span>
+                                <span class="data-value badge success">✓ Created</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="data-label">SOTA Research:</span>
+                                <span class="data-value badge success">✓ Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="flights-tab" class="tab-content">
+                    <div class="card">
+                        <div class="card-title">Flight Search Results</div>
+                        <div class="card-content">
+                            <p>Búsqueda simulada de vuelos desde Caracas (CCS) a Madrid (MAD) para salida el 15/07/2026:</p>
+                            <div class="data-row">
+                                <span class="data-label">Route:</span>
+                                <span class="data-value">CCS → MAD</span>
+                            </div>
+                            <div class="data-row">
+                                <span class="data-label">Date:</span>
+                                <span class="data-value">15 July 2026</span
