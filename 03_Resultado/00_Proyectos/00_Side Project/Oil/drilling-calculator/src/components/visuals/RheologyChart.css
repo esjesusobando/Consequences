@@ -1,0 +1,199 @@
+.rheology-chart-container {
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+  font-family:
+    "Inter",
+    -apple-system,
+    sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.rheology-header {
+  margin-bottom: 24px;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-main h3 {
+  font-size: 0.9em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--sh-grey-800);
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.rheology-header h3 {
+  margin: 0 0 16px 0;
+  font-size: 0.8em;
+  font-weight: 800;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.model-badges-pro {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: -4px;
+}
+
+.badge-pro {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #444;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badge-pro span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.badge-pro.bingham span {
+  background-color: #0056b3;
+}
+.badge-pro.powerlaw span {
+  background-color: #b35900;
+}
+.badge-pro.hb span {
+  background-color: #28a745;
+}
+
+.badge-pro:hover {
+  transform: translateY(-1px);
+  background: white;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Active state (Visible in chart) */
+.badge-pro.active {
+  color: #111;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Selected state (Active in sidebar - High Hierarchy) */
+.badge-pro.selected {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.badge-pro.selected.active {
+  background: #000;
+}
+
+.badge-pro.active:not(.selected) {
+  opacity: 1;
+}
+
+.badge-pro:not(.active) {
+  opacity: 0.5;
+  filter: grayscale(1);
+}
+
+.chart-wrapper-pro {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #f0f0f0;
+}
+
+.rheo-svg-pro {
+  width: 100%;
+  height: auto;
+}
+
+/* ─── Metrics Dashboard ─────── */
+.rheo-metrics-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  background: var(--sh-grey-50);
+  border-radius: 10px;
+  border: 1px solid var(--sh-grey-100);
+}
+
+.group-label {
+  font-size: 0.6em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--sh-grey-500, #6b7280);
+  margin-bottom: 8px;
+  display: block;
+  letter-spacing: 0.08em;
+}
+
+.metrics-dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.m-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--sh-grey-100);
+  transition: all 0.2s;
+}
+
+.m-card:hover {
+  border-color: var(--sh-blue-400);
+  transform: translateY(-1px);
+}
+
+.m-card.highlight {
+  grid-column: span 2;
+  background: rgba(203, 255, 106, 0.1);
+  border-color: var(--sh-lime-400);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.m-val {
+  font-size: 1.1em;
+  font-weight: 900;
+  color: var(--sh-blue-900);
+  font-family: var(--font-mono);
+}
+
+.m-tag {
+  font-size: 0.65em;
+  font-weight: 700;
+  color: var(--sh-grey-500);
+}
+
+.m-card.highlight .m-val {
+  color: var(--sh-lime-900);
+}

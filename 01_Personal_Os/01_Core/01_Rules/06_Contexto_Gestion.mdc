@@ -1,0 +1,170 @@
+---
+description: Gestión de Contexto - Session, Memory y Persistencia
+globs: **/*
+alwaysApply: true
+---
+
+# 🧠 Gestión de Contexto
+
+<system_directives>
+  <fundamental_rule>
+    El contexto es la memoria del sistema. Sin contexto, no hay inteligencia.
+  </fundamental_rule>
+</system_directives>
+
+---
+
+**Versión:** v4.9 Consequences (2026-05-28)
+
+---
+
+## 📋 SECCIÓN 01: Session Context
+
+### Inicio de Sesión
+
+1. **LEER**: 00_Winter_is_Coming/AGENTS.md, GOALS.md, BACKLOG.md
+2. **RECUPERAR**: Engram mem_context(limit=10)
+3. **VERIFY**: Si Hubo compaction → mem_session_summary()
+4. **PREPARAR**: Skills necesarias
+
+### Durante Sesión
+
+- Trackear progreso con todos
+- Save decisiones importantes con mem_save
+- Documentar hallazgos no-obvios
+
+---
+
+## 📋 SECCIÓN 02: Engram Protocol
+
+### PROACTIVE SAVE Triggers
+
+| Cuándo | Qué Guardar |
+|--------|-----------|
+| Arquitectura decisión | Qué, por qué, dónde |
+| Bug fix completado | Root cause, solución |
+| Pattern establecido | Nombre, estructura |
+| Config change | Antes, después |
+| User preference | Constraint, preferencia |
+
+### Session Close (OBLIGATORIO)
+
+```
+## Goal
+[Qué se estuvo trabajando]
+
+## Instructions
+[Preferencias del usuario]
+
+## Discoveries
+- [Technical finding 1]
+- [Technical finding 2]
+
+## Accomplished
+- ✅ [Tarea completada]
+
+## Next Steps
+- [Qué falta]
+
+## Relevant Files
+- path — [qué hace]
+```
+
+---
+
+## 📋 SECCIÓN 03: Context Recovery
+
+### Post-Compaction
+
+1. mem_session_summary() → Persistir pre-compaction
+2. mem_context(limit=10) → Recover sessions
+3. Verificar estado en SUMMARY
+
+### Fallback
+
+- Si Engram unavailable → Leer archivos en 01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/
+- Buscar SUMMARY*.md más reciente
+
+---
+
+## 📋 SECCIÓN 04: Memory Structure
+
+### Directorios
+
+```
+04_Operations/
+├── 00_Context_LLM/
+│   ├── 01_Process_Notes/
+│   ├── 02_Knowledge_Brain/
+│   ├── 03_Memory_Brain/
+│   ├── 04_Docs/
+│   └── 05_Projects/
+└── 03_Scripts_Os/
+    └── 08_Data/
+        └── graphify-out/          # Grafo de conocimiento estructural
+            ├── graph.json         # Base de datos del grafo
+            ├── GRAPH_REPORT.md    # Reporte estructural
+            ├── graph.html         # Visualización interactiva
+            └── memory/            # Bucles de retroalimentación
+```
+
+### Nomenclatura
+
+- CTX_[id]_[fecha].md → Contexto puntual
+- SUMMARY_[fecha].md → Resumen de sesión
+- GRAPH_[tipo]_[fecha].* → Salidas de Graphify (report, html, json)
+
+---
+
+## 📋 SECCIÓN 05: Graphify Knowledge Graph
+
+### Propósito
+Graphify proporciona conciencia estructural persistente del códigobase mediante análisis AST, permitiendo consultas sobre dependencias, estructuras de clases y llamadas de función sin requerir claves de API de LLM.
+
+### Integración con el Orquestador
+- **Conciencia arquitectónica**: El orquestador puede consultar dependencias antes de ejecutar tareas
+- **Toma de decisiones informada**: Ver impacto potencial de cambios en tiempo real
+- **Reducción de errores**: Evitar romper dependencias no obvias
+- **Optimización de ejecución**: Determinar orden óptimo basado en grafo de dependencias
+- **Documentación viva**: GRAPH_REPORT.md siempre refleja estado actual
+
+### Uso Básico (Modo AST-only - sin API keys)
+```bash
+# Construir/actualizar grafo (ejecutar antes de trabajo crítico)
+graphify extract "<ruta_del_proyecto>" --no-cluster
+
+# Consultar conocimiento estructural
+graphify query "<pregunta_sobre_estructura>"
+graphify path "nodo_A" "nodo_B"
+graphify explain "nombre_de_clase_o_funcion"
+
+# Ver reporte estructural
+graphify report
+
+# Visualización interactiva
+start graphify-out\graph.html
+```
+
+### Integración con Hooks de Git
+Ejecutar automáticamente antes de commits:
+```bash
+# En .git/hooks/pre-commit
+python "01_Personal_Os\04_Operations\03_Scripts_Os\32_Graphify_Update.py"
+```
+
+### Componentes Relacionados
+- `01_Personal_Os\04_Operations\03_Scripts_Os\31_Graphify_Hub.py` - Hub principal
+- `01_Personal_Os\04_Operations\03_Scripts_Os\32_Graphify_Update.py` - Actualización automática
+- Rutas en `config_paths.py`: `GRAPHIFY_DIR`, `GRAPHIFY_DB`, `GRAPHIFY_REPORT`, `GRAPHIFY_HTML`
+
+---
+
+## 📋 CHECKLIST CONTEXTO
+
+- [ ] Genesis recovery al inicio?
+- [ ] Contexto cargado?
+- [ ] Decisiones guardadas?
+- [ ] Session summary al cerrar?
+- [ ] Grafo Graphify actualizado? (ejecutar graphify extract --no-cluster antes de trabajo crítico)
+
+*"Sin contexto no hay inteligencia."*

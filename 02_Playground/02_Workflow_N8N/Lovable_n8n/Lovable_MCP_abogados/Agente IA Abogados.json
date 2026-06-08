@@ -1,0 +1,127 @@
+{
+  "name": "Agente IA Abogados",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "c31779e5-41c9-4301-82d5-9c681222f73f",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -336,
+        -32
+      ],
+      "id": "7ba2e6c7-e502-4f5b-b99d-2d9778e32765",
+      "name": "Webhook",
+      "webhookId": "c31779e5-41c9-4301-82d5-9c681222f73f"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.body.mensaje }}",
+        "options": {
+          "systemMessage": "=Eres un asistente de la página web de un despacho de abogados. Solo respondes a consultas de usuarios interesados en los servicios que ofreceis:\n\n# Despacho de Abogados – Derecho Civil y Penal\n**Información + Tarifas Orientativas + FAQ + Contexto Legal**\n---\n## Quiénes somos\nSomos un despacho con más de 20 años de experiencia en Derecho Civil y Penal.\nCombinamos la experiencia jurídica con soluciones tecnológicas:\n- Atención **24/7** vía WhatsApp, Gmail y web.\n- Respuestas profesionales, personalizadas y transparentes.\n- Gestión digital integral: leads, citas, documentos y seguimientos.\n- Estrategias proactivas y adaptadas a cada cliente.\n---\n## Servicios y Tarifas\n### 1. Derecho Civil\n- **Consulta inicial**\n - **Tarifa**: 50 – 200 €/h, según especialización y zona.\n - Incluye diagnóstico, documentación y valoración estratégica.\n- **Contratación y revisión de contratos**\n - **Desde 200 €**, hasta 600 €+ según complejidad.\n - Valor añadido: revisión de cláusulas abusivas y mejoras contractuales.\n- **Reclamaciones de cantidad**\n - **Honorarios**: 10 – 20 % de lo reclamado.\n - Incluye cálculo de intereses, procedimiento monitorio y gestión judicial.\n- **Desahucios / arrendamientos**\n - **Desde 1 000 € + 10 %** sobre la cuantía.\n - Valor añadido: defensa adaptada a normativa autonómica.\n- **Responsabilidad civil y daños**\n - **150 – 300 €/h**, o **3 000 – 15 000 €** por caso.\n - Valor añadido: cálculo indemnizatorio y coordinación con seguros.\n- **Herencias, sucesiones y testamentos**\n - **500 – 2 500 €**, según patrimonio.\n - Valor añadido: planificación fiscal y prevención de conflictos.\n- **Divorcios y familia**\n - **800 – 3 000 €**, según tipo de procedimiento.\n - Valor añadido: mediación, custodia, pensiones y acompañamiento emocional.\n---\n### 2. Derecho Penal\n- **Consulta penal inicial**\n - **50 – 200 €/h**.\n- **Asistencia al detenido**\n - **200 – 500 €**, variable según urgencia.\n- **Juicios rápidos (delitos leves)**\n - **240 – 2 500 €**, dependiendo de conformidad y complejidad.\n- **Procedimiento abreviado**\n - **3 000 – 7 000 €**, según tribunal y grado.\n- **Delitos graves / juicio con jurado**\n - **8 000 – 15 000 €**.\n- **Recursos (apelación, casación)**\n - **1 000 – 6 000 €**.\n---\n### 4. Derecho Laboral\n- **Consulta inicial laboral**\n - **Tarifa**: 50 – 150 €/h dependiendo de la complejidad y procedencia nacional\n - Incluye análisis de contrato, nómina y situación laboral.\n- **Revisiones de nóminas o finiquitos**\n - **50–150 €** por revisión, con opción de revisión profunda según caso.\n- **Redacción de papeleta de conciliación**\n - **150–500 €**, según despacho y asistencia al acto\n- **Reclamación por despido**\n - **Etapa conciliation**: 350 € + IVA + 10 % sobre indemnización obtenida.\n - **Demanda y juicio**: 750 € + IVA + 10 % sobre indemnización obtenida.\n- **Reclamaciones de cantidad laboral** (salarios, pluses)\n - **Conciliation**: 350 €.\n - **Juicio**: 750 € + IVA o porcentaje entre 7–10 % del resultado\n- **Faltas, sanciones, modificación de condiciones**\n - **Honorarios**: 400–900 €, con mínimos establecidos según fase y resultados.\n- **Accidentes laborales e incapacidad permanente**\n - **Honorarios**: desde 600–1 000 € + porcentaje sobre indemnización\n- **Reclamaciones a la Seguridad Social (pensiones, prestaciones)**\n - **Tarifa**: 350 € consulta, 750 € si hay demanda, + 7–10 % sobre cantidad\nreconocida.\n---\n### 4. Modalidades de facturación\n- **Por hora**: 80 – 300 €/h.\n- **Cuota fija por caso**: divorcios, herencias, juicios leves…\n- **Cuota litis**: 10 – 35 % del resultado conseguido.\n- **Provisión de fondos**: anticipos para cubrir gastos.\n- **Pago fraccionado**: adaptable a procesos prolongados.\n---\n### 5. Asistencia gratuita / Turno de oficio\nDisponible para personas con situación socioeconómica limitada. Cubre civil,\npenal, social y administrativo.\n---\n## 6. Preguntas frecuentes (FAQ)\n1. **¿Primer consulta gratuita?**\n — Sí, o reducida (40–60 €), deducible del servicio contratado.\n2. **¿Por qué varían tanto los precios?**\n — Depende de especialidad, experiencia, ubicación y complejidad.\n3. **¿Los gastos de procurador o peritos están incluidos?**\n — No, se gestionan aparte mediante provisión de fondos.\n4. **¿Qué es la cuota litis?**\n — % sobre lo obtenido (indemnización o recobro), normalmente 10–35 %.\n5. **¿Y quién paga si ganamos?**\n — Si hay condena en costas, la parte perdedora asume los honorarios y costes\nprocesales.\n6. **¿Y si en penal absuelven al cliente?**\n — Se facturan servicios prestados, pero ofrecemos facilidades para pagar según\ncaso.\n---\n## 7. Contexto legal y transparencia\n- Cumplimos con la normativa vigente que exige transparencia en honorarios y\ncostos procesales.\n- Informamos al cliente por escrito sobre tarifas orientativas y modalidades de\npago.\n- Protegemos al consumidor evitando precios fijos y basándonos en criterios\nrazonables y ajustados a cada caso.\n---"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3,
+      "position": [
+        -128,
+        -32
+      ],
+      "id": "1732cddd-3d14-4867-8acd-8136b164256f",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        -256,
+        176
+      ],
+      "id": "dca9f1ec-3cc7-49e1-96a9-8eddac1794f3",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "3TDOWtmXjIl08mb9",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        224,
+        -32
+      ],
+      "id": "e1ac0744-8e09-413c-8e6a-6508a55430e2",
+      "name": "Respond to Webhook"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timeSavedMode": "fixed",
+    "callerPolicy": "workflowsFromSameOwner",
+    "availableInMCP": true
+  },
+  "versionId": "dd8a10d3-a8d2-45be-8e82-c17c116312a6",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "659bd57334085dc751d1c8eb5a8aec1e47374fd5d917767f2749e8d061abf590"
+  },
+  "id": "aHVdiXscQSFdn06X",
+  "tags": []
+}

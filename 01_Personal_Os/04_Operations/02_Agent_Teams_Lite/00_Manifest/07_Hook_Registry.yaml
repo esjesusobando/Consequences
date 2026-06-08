@@ -1,0 +1,37 @@
+# Hook Registry — generated 2026-06-03T11:02:31
+
+version: v3.0
+generated: "2026-06-03T11:02:31"
+base_path: 01_Personal_Os/01_Core/02_Tools/05_Hooks/
+totals:
+  phases: 6
+  hooks: 10
+by_phase:
+  01_Pre_Tool:
+    count: 2
+    hooks:
+      - pre_tool_use.py
+      - secret_scanner.py
+  02_Post_Tool:
+    count: 1
+    hooks:
+      - post_tool_use.py
+  03_Lifecycle:
+    count: 2
+    hooks:
+      - stop.py
+      - subagent_stop.py
+  04_Sound:
+    count: 2
+    hooks:
+      - notification.py
+      - task-complete-sound.ps1
+  05_Harness:
+    count: 2
+    hooks:
+      - context_monitor.py
+      - eval_trigger.py
+  06_Post_Hulk_Compound:
+    count: 1
+    hooks:
+      - post_hulk_compound.py

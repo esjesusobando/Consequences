@@ -1,0 +1,94 @@
+Modifica la aplicación EXISTENTE del dashboard (no la reescribas desde cero) para añadir un chat de asistente IA integrado con n8n con las siguientes características:
+
+UBICACIÓN Y ESTILO
+- Añade una burbuja flotante de chat fija en la esquina inferior derecha de la pantalla.
+- La burbuja debe:
+  - Mantener el mismo estilo visual que el dashboard (tema oscuro, tonos de acento ya usados, bordes redondeados).
+  - Tener un icono de chat (globo de diálogo) y un suave efecto de hover.
+  - Usar `position: fixed` con z-index alto para que quede por encima del contenido.
+- Al hacer clic en la burbuja, se abre/cierra una ventana de chat tipo “card”:
+  - En escritorio: altura aproximada 60–70% del alto de la ventana y ancho ~360–420 px, anclada abajo a la derecha.
+  - En móvil: estilo “bottom sheet” ocupando casi todo el ancho y buena parte del alto.
+  - Fondo oscuro, bordes redondeados, sombras suaves y el mismo sistema de colores del dashboard.
+
+ESTRUCTURA DEL CHAT
+Crea un componente, por ejemplo `ChatWidget`, con esta estructura:
+
+- Cabecera del chat:
+  - Título: “Asistente IA Contable”.
+  - Subtítulo pequeño: “Pregunta lo que quieras sobre tus métricas e ingresos/gastos”.
+  - Botón/ícono para cerrar el chat.
+
+- Zona de mensajes:
+  - Lista scrollable de mensajes (con auto-scroll al último mensaje).
+  - Cada mensaje tiene:
+    - Propiedades: `id`, `role` ("user" | "assistant"), `text`, `timestamp`, `status`.
+    - Estilo diferente para usuario y asistente:
+      - Usuario: burbujas alineadas a la derecha, color de fondo con acento.
+      - Asistente: burbujas alineadas a la izquierda, fondo ligeramente más claro/oscuro.
+  - Muestra la hora en pequeño opcionalmente.
+  - Cuando el asistente está respondiendo, muestra un mensaje de “Escribiendo…” o un pequeño indicador de carga.
+
+- Zona de entrada:
+  - Input tipo textarea o campo de texto con una línea, expandible.
+  - Botón de enviar con icono de “send”.
+  - Enviar mensaje al pulsar el botón o al pulsar Enter (Shift+Enter para salto de línea).
+
+GESTIÓN DE SESIÓN
+- Cada sesión de chat debe incluir un `sessionId` que se envía a n8n en cada mensaje.
+- Genera `sessionId` en el primer render del widget:
+  - Usa un UUID o un string aleatorio.
+  - Guarda el `sessionId` en `localStorage` para que se mantenga mientras el usuario use el mismo navegador (por ejemplo clave `ia_chat_session_id`).
+  - Si ya existe en `localStorage`, reutilízalo.
+
+INTEGRACIÓN CON N8N (BACKEND IA)
+- Cuando el usuario envíe un mensaje:
+  1. Añade inmediatamente el mensaje del usuario a la lista de mensajes (estado local).
+  2. Desactiva el input y muestra un indicador de “Respondiendo…” mientras llega la respuesta.
+  3. Realiza una petición HTTP POST al webhook de n8n:
+
+     URL:
+       https://n8n.dominia.site/webhook/849d797a-7a0a-31df-9754-14166ad02a76
+
+     Método:
+       POST
+
+     Encabezados:
+       Content-Type: application/json
+
+     Body JSON (ejemplo):
+       {
+         "sessionId": "<sessionId_actual>",
+         "userMessage": "<texto_del_mensaje_del_usuario>"
+       }
+
+- Espera la respuesta del servidor ANTES de mostrar el mensaje del asistente.
+- Supón que n8n devuelve una respuesta JSON con al menos un campo `reply` que contiene el texto de la respuesta del agente IA, por ejemplo:
+  {
+    "reply": "Texto de la respuesta del asistente IA"
+  }
+
+- Al recibir la respuesta:
+  - Añade un nuevo mensaje a la conversación con `role: "assistant"` y el texto `reply`.
+  - Vuelve a activar el input para que el usuario pueda seguir escribiendo.
+  - Haz scroll automático al último mensaje.
+
+MANEJO DE ESTADOS
+- Estados necesarios en `ChatWidget`:
+  - `isOpen` (boolean) para mostrar/ocultar el panel de chat.
+  - `messages` (array) con el historial de mensajes.
+  - `inputValue` (string) para el texto actual del input.
+  - `isSending` (boolean) para indicar si se está esperando la respuesta del backend.
+  - `sessionId` (string) como se ha descrito.
+
+- Casos de error:
+  - Si la llamada al webhook falla o devuelve error, muestra un mensaje de sistema en el chat:
+    - Ejemplo: “Ha ocurrido un error al conectar con el asistente IA. Inténtalo de nuevo más tarde.”
+  - Restablece `isSending` a false y vuelve a activar el input.
+
+INTEGRACIÓN EN EL DASHBOARD
+- Renderiza el componente `ChatWidget` en el layout principal del dashboard, de forma que esté disponible en todas las secciones.
+- Respeta el mismo tema oscuro, tipografía y estilos globales de la aplicación.
+- Evita solaparse con otros elementos fijos (por ejemplo, ajustando margen inferior/derecha si ya existe alguna otra barra flotante).
+
+Genera el código necesario (componentes, estados y estilos) para añadir este chat flotante a la aplicación existente sin romper el resto del dashboard.

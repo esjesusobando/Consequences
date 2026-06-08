@@ -1,0 +1,70 @@
+# Plan de Auditoría SOTA y Mejora Integral - PersonalOS v6.1
+
+Este plan describe las acciones finales para certificar el estado **Pure Green SOTA** del sistema, resolviendo las omisiones del agente anterior y elevando la calidad del código según los estándares de **Every Compound Engineering**.
+
+## Hallazgos de la Auditoría Actual
+
+### 1. Fallos de Portabilidad (Hardcoded Paths) 🔴
+A pesar de la existencia de `config_paths.py`, varios scripts operativos y legacy contienen rutas absolutas:
+- `08_Scripts_Os/12_Audits/audit_skills_routes.ps1` (L10)
+- `08_Scripts_Os/10_Legacy/39_Repair_Corruption.py` (L29)
+- `08_Scripts_Os/10_Legacy/43_Marketing_Skills_Distributor.py` (L29)
+
+### 2. Redundancia Estructural 🟡
+- La carpeta `00_Winter_is_Coming/Skills` sigue presente, duplicando información de `01_Core/03_Skills`.
+- El directorio `10_Legacy` contiene más de 80 scripts que nublan la visión de los HUBs operativos.
+
+### 3. Falta de Estandarización de Dependencias 🟡
+- No existe un archivo `requirements.txt` o similar, lo que dificulta la replicabilidad del entorno SOTA.
+
+## Propuesta de Mejora SOTA
+
+### [Componente] Estandarización de Rutas y Portabilidad
+
+#### [MODIFY] [audit_skills_routes.ps1](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/08_Scripts_Os/12_Audits/audit_skills_routes.ps1)
+- Sustituir `$ROOT` hardcodeado por una detección dinámica (ej. `$PSScriptRoot\..\..`).
+
+#### [MODIFY] [39_Repair_Corruption.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/08_Scripts_Os/10_Legacy/39_Repair_Corruption.py)
+#### [MODIFY] [43_Marketing_Skills_Distributor.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/08_Scripts_Os/10_Legacy/43_Marketing_Skills_Distributor.py)
+- Importar `config_paths.py` y usar `PROJECT_ROOT` en lugar de strings de usuario.
+
+---
+
+### [Componente] Limpieza y Refactorización (SOTA)
+
+#### [MOVE] [00_Winter_is_Coming/Skills/](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/00_Winter_is_Coming/Skills/) -> [05_Archive/10_To_Delete/Skills_Matrix_Legacy](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/05_Archive/10_To_Delete/Skills_Matrix_Legacy)
+- Eliminar la redundancia en la zona de control central.
+
+#### [NEW] [requirements.txt](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/requirements.txt)
+- Generar el inventario de dependencias de Python detectadas en los HUBs.
+
+#### [NEW] [08_Scripts_Os/16_Vulnerability_Scanner.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/08_Scripts_Os/16_Vulnerability_Scanner.py)
+- Crear un scanner basado en el protocolo `security-sentinel.md` para detectar:
+    - Llamadas a `os.system` sin sanear.
+    - Rutas absolutas.
+    - API Keys expuestas (regex scan).
+
+---
+
+### [Componente] Validación y Documentación (Compound)
+
+#### [MODIFY] [15_SOTA_Integrity_Check.py](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/08_Scripts_Os/15_SOTA_Integrity_Check.py)
+- Integrar la comprobación de rutas absolutas como un paso obligatorio del check.
+
+#### [UPDATE] [SCRIPTS_INDEX.md](file:///c:/Users/sebas/Downloads/01%20Revisar/09%20Versiones/00%20Respaldo%20PC%20Sebas/01%20Github/personal-os/Think_Different/08_Scripts_Os/SCRIPTS_INDEX.md)
+- Actualizar el estado a "PURE GREEN + SOTA CERTIFIED" tras la limpieza.
+
+## Preguntas Abiertas
+
+> [!IMPORTANT]
+> 1. **¿Confirmas el archivado masivo de 10_Legacy?** Propongo moverlo a `05_Archive/02_Rules_Legacy/Scripts_Backup` para limpiar la carpeta de operaciones.
+> 2. **¿Deseas que aplique el Code Review de "Every Compound Engineering" sobre el HUB 01 (Auditor) automáticamente?**
+
+## Plan de Verificación
+
+### Pruebas Automatizadas
+- Ejecutar `python 08_Scripts_Os/15_SOTA_Integrity_Check.py` (Debe detectar 0 rutas absolutas).
+- Ejecutar el nuevo `Vulnerability_Scanner.py`.
+
+### Verificación Manual
+- Listar `03_Tasks` para asegurar que no hay workflows rotos por el cambio de rutas.

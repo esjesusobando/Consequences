@@ -1,0 +1,82 @@
+---
+description: Regla de integridad del OS — mantener sync de números canónicos, árboles, y rutas entre todos los documentos maestro
+globs: **/README.md, **/OS_DIRECTORY.md, **/AGENTS.md, **/CLAUDE.md, **/GOALS.md, **/HUB_SOTA.py, **/config_paths.py, **/*.mdc
+---
+
+# 12_Audit_OS_Integrity — Regla de Integridad del Sistema
+
+> Los números canónicos del OS deben estar sync en TODOS los documentos maestro.
+> Cualquier cambio en skills/scripts/HUBs/agentes/MCPs requiere actualizar inmediatamente los ~10 archivos que los referencian.
+
+---
+
+## Números Canónicos (v4.9 Consequences)
+
+| Métrica | Valor | Última verificación |
+|---------|-------|---------------------|
+| **HUBs** | **30** | 2026-06-01 ✅ |
+| **Scripts** | **163** (133 en subdirectorios) | 2026-06-01 ✅ |
+| **Skills** | **392** (15 áreas funcionales) | 2026-06-01 ✅ |
+| **MCPs** | **8 (Claude) + 43 (Opencode)** | 2026-06-01 ✅ |
+| **Agentes source** | **61** | 2026-06-01 ✅ |
+| **Workflows** | **28** (7 categorías) | 2026-06-01 ✅ |
+| **Hooks** | **10** (6 fases) | 2026-06-01 ✅ |
+
+## Archivos que Deben Estar Sync
+
+### Fuente de Verdad (contienen cómputos directos)
+- `01_Personal_Os/04_Operations/03_Scripts_Os/HUB_SOTA.py` — conteo dinámico de HUBs
+- `01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py` — escaneo de manifests
+
+### Documentos Maestro (deben coincidir con fuente)
+- `README.md` (raíz) — árbol de directorios + tabla HUBs + métricas
+- `OS_DIRECTORY.md` (raíz) — árbol + tabla HUBs + agentes + skills + MCPs
+- `CLAUDE.md` (raíz) — resumen de métricas
+- `AGENTS.md` (raíz) — entry point GGA
+- `00_Winter_is_Coming/AGENTS.md` — Matrix principal
+- `00_Winter_is_Coming/GOALS.md` — objetivos
+- `01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/README.md` — ground truth
+
+### Workflows (boot + marvel)
+- `00_Winter_is_Coming/GOALS.md` — section N
+- `.agent/03_Workflows/02_Marvel/01_Iron_Man_Gen.md` — boot protocol
+- `01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/01_Iron_Man_Gen.md` — boot protocol source
+
+## Árboles de Directorios Duplicados
+
+Los siguientes archivos contienen árboles de directorios que deben mantenerse sync:
+
+| Archivo | Propósito |
+|---------|-----------|
+| `README.md` | Entry point del sistema |
+| `OS_DIRECTORY.md` | JARVIS discovery (raíz) |
+| `01_Personal_Os/04_Operations/00_Context_LLM/00_Context_Memory/README.md` | Catalog de memoria |
+
+**Regla**: después de agregar/renombrar/eliminar un directorio de primer nivel, actualizar los 3 árboles.
+
+## Hallazgos Conocidos (PRESERVADOS)
+
+Estos hallsazgos de auditoría están documentados y NO deben cambiarse sin aprobación explícita:
+
+| Hallazgo | Estado | Razón |
+|----------|--------|-------|
+| Gap `05_` en `02_Playground/` | 📌 PRESERVADO | No existe dir, documentado |
+| Skills sin `trigger:` YAML | 📌 PRESERVADO | Mejora potencial, no error |
+| ~30 skills duplicadas áreas 02/04 | 📌 PRESERVADO | Migración incompleta, no eliminar |
+| 18 skills Engram solo en backup | 📌 PRESERVADO | Backup natural |
+| 4 pares dirs duplicados en 03_Scripts_Os | 📌 PRESERVADO | Inflación intencional |
+| `10_Legacy/` ~85 scripts históricos | 📌 PRESERVADO | Archivo histórico |
+| `.opencode/skills/ui-ux-pro-max` huérfano | 📌 PRESERVADO | Skill local |
+
+## Protocolo de Cambio
+
+Antes de modificar skills/scripts/HUBs/agentes/MCPs:
+
+1. Hacer el cambio en source (`01_Core/` para skills/agentes/rules, `04_Operations/` para scripts/HUBs)
+2. Sync los números en todos los documentos maestro listados arriba
+3. Sync los 3 árboles de directorios
+4. Commit con mensaje que incluya los nuevos números: `os: sync HUBs→30 scripts→163 skills→392`
+
+---
+
+*Creada: 2026-05-31 | v4.9 Consequences OS Audit | Regla nro 12 del sistema*

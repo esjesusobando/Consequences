@@ -1,0 +1,162 @@
+---
+description: Docs y Guías - Documentación, Workflows, Standards y Guías
+globs: **/*
+alwaysApply: true
+---
+
+# 📚 Docs y Guías
+
+<system_directives>
+  <fundamental_rule>
+    Documentación es conocimiento persistido. Toda guía debe ser clara y accionable.
+  </fundamental_rule>
+</system_directives>
+
+---
+
+**Versión:** v4.9 Consequences (2026-05-28)
+
+---
+
+## 📋 SECCIÓN 01: Documentación Estándar
+
+### README Template
+
+```markdown
+# [Nombre del proyecto]
+
+> Descripción corta (una línea)
+
+## 🚀 Quick Start
+[Setup mínimo]
+
+## 📋 Uso
+[Ejemplos básicos]
+
+## 📁 Estructura
+[Archivos principales]
+
+## 🤝 Contributing
+[Cómo contribuir]
+
+## 📄 Licencia
+[Licencia]
+```
+
+---
+
+## 📋 SECCIÓN 02: Workflow Standards
+
+### Workflow Template
+
+```markdown
+# [Nombre del Workflow]
+
+## Goal
+[Qué resuelve]
+
+## Instructions
+[Cómo ejecutarlo]
+
+## Steps
+1. [Paso 1]
+2. [Paso 2]
+
+## Notes
+[Notas importantes]
+```
+
+---
+
+## 📋 SECCIÓN 03: Guías Técnicas
+
+### Guía de Estilo
+
+| Área | Estándar |
+|------|---------|
+|命名 (Files) | PascalCase → snake_case |
+|命名 (Functions) | verbNoun (getUser, updateConfig) |
+|命名 (Classes) | PascalCase (UserService) |
+|命名 (Constants) | UPPER_SNAKE_CASE |
+
+### Convenciones de Archivos y Carpetas
+
+| Tipo | Convención | Ejemplo |
+|------|-----------|---------|
+| Archivos de código | snake_case | `os_health_test.py`, `system_mapper_hub.py` |
+| Archivos de datos/reportes | PascalCase + guion_bajo | `OS_Health_2026-05-20_12-24-20.txt` |
+| Carpetas principales | XX_Nombre | `00_Winter_is_Coming`, `01_Personal_Os` |
+| Archivos SKILL.md | SKILL.md (fijo) | `02_Skills/05_Workflows/.../SKILL.md` |
+| Scripts HUBs | NN_Nombre_Hub.py | `20_System_Mapper_Hub.py` |
+| Archivos 00_ (a la mano) | 00_ prefix | `00_SALUD_REPORTS.md` — NO TOCAR |
+
+### Reglas de Secuencia
+
+1. **Enumeración limpia:** Usar prefijos `01_`, `02_`, `03_` sin huecos
+2. **00_ = No tocar:** Archivos/carpetas con `00_` son de referencia rápida
+3. **Duplicados eliminados:** Nunca dejar `03_` y `04_` si el `02_` no existe
+
+### Code Style
+
+| Lenguaje | Estándar |
+|----------|---------|
+| Python | PEP 8, type hints |
+| TypeScript | strict mode |
+| CSS | BEM, CSS Variables |
+
+---
+
+## 📋 SECCIÓN 04: Templates Disponibles
+
+### Task Template
+
+```
+## Objetivo
+[Qué нужно hacer]
+
+## Pasos
+- [ ] 1. [Paso]
+- [ ] 2. [Paso]
+
+## Notes
+[Notas]
+```
+
+### PRD Template
+
+```markdown
+# [Feature Name]
+
+## Summary
+[Resumen ejecutivo]
+
+## User Stories
+- Como [usuario], quiero [acción] para [beneficio]
+
+## Technical Spec
+[Especificación técnica]
+
+## Risks
+[Riesgos identificados]
+```
+
+---
+
+## 📋 SECCIÓN 05: Resources
+
+### Reading List
+
+- `.agent/` → Reglas del agente
+- `01_Core/01_Rules/` → Reglasfuente
+- `00_Winter_is_Coming/` → Goals, Backlog
+
+---
+
+## 📋 CHECKLIST DOCS
+
+- [ ] README en cada proyecto?
+- [ ] Templates actualizados?
+- [ ] Estándares seguidos?
+- [ ] Docs sincronizados?
+
+*"Documentación clara, developer feliz."*

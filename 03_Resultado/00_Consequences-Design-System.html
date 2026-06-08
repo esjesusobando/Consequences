@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CONSEQUENCES // DESIGN SYSTEM V1.0</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Voids & Surfaces */
+  --void: #04060A;
+  --night: #0B0F18;
+  --carbon: #131826;
+  --graphite: #1E2435;
+  --steel: #2A3148;
+  --slate: #4A5273;
+  --ash: #7A839E;
+  --bone: #C7CCD8;
+  --paper: #ECEEF5;
+  --pure: #FFFFFF;
+  /* Signals */
+  --cyan: #00F0FF;
+  --magenta: #FF2E9A;
+  --lime: #C6FF3D;
+  --amber: #FFB400;
+  /* Spacing */
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px;
+  --s5: 24px; --s6: 32px; --s7: 48px; --s8: 64px; --s9: 96px;
+  /* Glow effects */
+  --glow-cyan: 0 0 8px rgba(0,240,255,0.6), 0 0 24px rgba(0,240,255,0.2);
+  --glow-magenta: 0 0 8px rgba(255,46,154,0.6), 0 0 24px rgba(255,46,154,0.2);
+  --glow-lime: 0 0 8px rgba(198,255,61,0.6), 0 0 24px rgba(198,255,61,0.2);
+  --glow-amber: 0 0 8px rgba(255,180,0,0.6), 0 0 24px rgba(255,180,0,0.2);
+  /* Active accent (dynamic) */
+  --accent: #00F0FF;
+  --glow-accent: var(--glow-cyan);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--void);
+  color: var(--bone);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--night); }
+::-webkit-scrollbar-thumb { background: var(--steel); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* ─── GRID LAYOUT ─────────────────────────────── */
+.layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+}
+
+/* ─── SIDEBAR ─────────────────────────────────── */
+.sidebar {
+  background: var(--night);
+  border-right: 1px solid var(--graphite);
+  position: fixed;
+  top: 0; left: 0;
+  width: 220px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.sidebar-logo {
+  padding: var(--s5) var(--s4);
+  border-bottom: 1px solid var(--graphite);
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+}
+
+.logo-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: conic-gradient(var(--cyan), var(--magenta), var(--lime), var(--cyan));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--void);
+  flex-shrink: 0;
+  box-shadow: var(--glow-accent);
+  transition: box-shadow 0.3s;
+}
+
+.logo-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: var(--pure);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.logo-ver { font-size: 10px; color: var(--slate); font-family: 'JetBrains Mono', monospace; }
+
+.sidebar-nav { padding: var(--s4) 0; flex: 1; }
+.nav-section {
+  padding: var(--s3) var(--s4) var(--s2);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  color: var(--slate);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  padding: var(--s2) var(--s4);
+  font-size: 13px;
+  color: var(--ash);
+  cursor: pointer;
+  transition: all 0.15s;
+  border-left: 2px solid transparent;
+  text-decoration: none;
+}
+.nav-item:hover { color: var(--paper); background: rgba(255,255,255,0.03); }
+.nav-item.active {
+  color: var(--accent);
+  border-left-color: var(--accent);
+  background: rgba(0,240,255,0.05);
+}
+.nav-dot { width: 4px; height: 4px; border-radius: 50%; background: currentColor; flex-shrink: 0; }
+
+/* ─── MAIN CONTENT ────────────────────────────── */
+.main { margin-left: 220px; }
+
+/* ─── SECTIONS ────────────────────────────────── */
+.section {
+  padding: var(--s8) var(--s8);
+  border-bottom: 1px solid var(--graphite);
+  max-width: 1100px;
+}
+
+.section-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--slate);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: var(--s3);
+}
+.section-eyebrow span { color: var(--accent); }
+
+.section-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.1;
+  color: var(--pure);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--s5);
+}
+.section-desc { color: var(--ash); max-width: 640px; }
+
+/* ─── HERO ────────────────────────────────────── */
+#hero {
+  padding: var(--s9) var(--s8);
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--graphite);
+}
+
+.hero-grid-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--graphite) 1px, transparent 1px),
+    linear-gradient(90deg, var(--graphite) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+.hero-glow {
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  background: radial-gradient(ellipse, rgba(0,240,255,0.08) 0%, transparent 70%);
+  top: -100px; left: -100px;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+
+.hero-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: var(--s4);
+}
+
+.hero-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: clamp(56px, 8vw, 88px);
+  line-height: 1.0;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  color: var(--pure);
+  position: relative;
+  display: inline-block;
+  margin-bottom: var(--s5);
+}
+/* Glitch effect */
+.hero-title::before,
+.hero-title::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  font-family: inherit; font-weight: inherit;
+  font-size: inherit; line-height: inherit;
+  text-transform: inherit; letter-spacing: inherit;
+}
+.hero-title::before { color: var(--cyan); transform: translate(-3px, 0); clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%); opacity: 0.7; }
+.hero-title::after  { color: var(--magenta); transform: translate(3px, 0); clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%); opacity: 0.7; }
+
+.hero-sub {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: var(--ash);
+  letter-spacing: -0.01em;
+  margin-bottom: var(--s6);
+}
+
+.hero-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: var(--slate);
+  display: flex;
+  gap: var(--s5);
+  flex-wrap: wrap;
+}
+.hero-meta span { display: flex; align-items: center; gap: var(--s1); }
+.hero-meta .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); display: inline-block; animation: pulse-dot 2s ease-in-out infinite; }
+
+@keyframes pulse-dot {
+  0%,100%{ opacity:1; transform: scale(1); }
+  50%{ opacity:0.5; transform: scale(0.7); }
+}
+
+/* ─── LIVE BADGE ──────────────────────────────── */
+.live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s2);
+  padding: var(--s1) var(--s3);
+  border: 1px solid var(--magenta);
+  border-radius: 2px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--magenta);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  box-shadow: var(--glow-magenta);
+  animation: live-pulse 2s ease-in-out infinite;
+}
+.live-badge .live-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--magenta);
+  animation: live-pulse 1s ease-in-out infinite;
+}
+@keyframes live-pulse {
+  0%,100%{ box-shadow: var(--glow-magenta); }
+  50%{ box-shadow: 0 0 4px rgba(255,46,154,0.3); }
+}
+
+/* ─── COLOR SECTION ───────────────────────────── */
+.color-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: var(--s3); }
+.color-swatch {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--graphite);
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.color-swatch:hover { transform: translateY(-2px); }
+.swatch-block { height: 64px; }
+.swatch-info {
+  padding: var(--s2) var(--s3);
+  background: var(--carbon);
+}
+.swatch-name { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--slate); text-transform: uppercase; letter-spacing: 0.06em; }
+.swatch-hex { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ash); }
+
+.signal-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s3); margin-top: var(--s4); }
+.signal-card {
+  padding: var(--s5);
+  border-radius: 4px;
+  border: 1px solid;
+  position: relative;
+  overflow: hidden;
+}
+.signal-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  opacity: 0.07;
+  border-radius: 4px;
+}
+.signal-card.cyan { border-color: var(--cyan); box-shadow: var(--glow-cyan); }
+.signal-card.cyan::before { background: var(--cyan); }
+.signal-card.magenta { border-color: var(--magenta); box-shadow: var(--glow-magenta); }
+.signal-card.magenta::before { background: var(--magenta); }
+.signal-card.lime { border-color: var(--lime); box-shadow: var(--glow-lime); }
+.signal-card.lime::before { background: var(--lime); }
+.signal-card.amber { border-color: var(--amber); box-shadow: var(--glow-amber); }
+.signal-card.amber::before { background: var(--amber); }
+.signal-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--s2); }
+.signal-card.cyan .signal-label { color: var(--cyan); }
+.signal-card.magenta .signal-label { color: var(--magenta); }
+.signal-card.lime .signal-label { color: var(--lime); }
+.signal-card.amber .signal-label { color: var(--amber); }
+.signal-hex { font-family: 'JetBrains Mono', monospace; font-size: 20px; font-weight: 700; color: var(--pure); }
+.signal-use { font-size: 12px; color: var(--slate); margin-top: var(--s2); }
+
+/* ─── TYPOGRAPHY ──────────────────────────────── */
+.type-scale { display: flex; flex-direction: column; gap: var(--s5); }
+.type-row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  align-items: baseline;
+  gap: var(--s4);
+  padding: var(--s4) 0;
+  border-bottom: 1px solid var(--graphite);
+}
+.type-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--slate);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1.6;
+}
+.type-meta .size { color: var(--accent); font-size: 12px; }
+
+/* ─── COMPONENTS ──────────────────────────────── */
+.comp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s6); }
+
+/* Form Inputs */
+.field { display: flex; flex-direction: column; gap: var(--s2); }
+.field-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--slate);
+}
+.c-input {
+  background: var(--carbon);
+  border: 1px solid var(--graphite);
+  border-radius: 2px;
+  padding: var(--s3) var(--s4);
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 14px;
+  color: var(--slate);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s, color 0.15s;
+  width: 100%;
+}
+.c-input::placeholder { color: var(--steel); }
+.c-input:focus {
+  border-color: var(--accent);
+  color: var(--pure);
+  box-shadow: var(--glow-accent);
+}
+.c-input.error { border-color: var(--magenta); }
+.field-caption { font-size: 12px; color: var(--slate); }
+.field-caption.error { color: var(--magenta); }
+.field-caption.success { color: var(--cyan); }
+
+/* Buttons */
+.btn-row { display: flex; gap: var(--s3); flex-wrap: wrap; align-items: center; }
+.c-btn {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: var(--s3) var(--s5);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.15s;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s2);
+}
+.c-btn-primary {
+  background: var(--accent);
+  color: var(--void);
+  box-shadow: var(--glow-accent);
+}
+.c-btn-primary:hover { filter: brightness(1.15); transform: translateY(-1px); }
+.c-btn-secondary {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+.c-btn-secondary:hover { background: rgba(0,240,255,0.08); box-shadow: var(--glow-accent); }
+.c-btn-ghost {
+  background: transparent;
+  border: 1px solid var(--graphite);
+  color: var(--ash);
+}
+.c-btn-ghost:hover { border-color: var(--steel); color: var(--bone); }
+.c-btn-danger {
+  background: transparent;
+  border: 1px solid var(--magenta);
+  color: var(--magenta);
+}
+.c-btn-danger:hover { background: rgba(255,46,154,0.08); box-shadow: var(--glow-magenta); }
+
+/* Toggles */
+.toggle-showcase { display: flex; flex-direction: column; gap: var(--s4); }
+.toggle-row { display: flex; align-items: center; gap: var(--s4); }
+.toggle-label { font-size: 13px; color: var(--ash); flex: 1; }
+.c-toggle {
+  position: relative;
+  width: 48px; height: 26px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.c-toggle input { opacity: 0; width: 0; height: 0; position: absolute; }
+.toggle-track {
+  position: absolute;
+  inset: 0;
+  border-radius: 13px;
+  background: var(--graphite);
+  transition: background 0.25s;
+  border: 1px solid var(--steel);
+}
+.toggle-thumb {
+  position: absolute;
+  top: 3px; left: 3px;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: var(--ash);
+  transition: transform 0.25s, background 0.25s;
+}
+.c-toggle input:checked ~ .toggle-track {
+  background: var(--magenta);
+  border-color: var(--magenta);
+  box-shadow: var(--glow-magenta);
+}
+.c-toggle input:checked ~ .toggle-thumb {
+  transform: translateX(22px);
+  background: var(--pure);
+}
+
+/* ─── HUD TERMINAL ────────────────────────────── */
+.terminal {
+  background: var(--void);
+  border: 1px solid var(--graphite);
+  border-radius: 4px;
+  overflow: hidden;
+  font-family: 'JetBrains Mono', monospace;
+}
+.terminal-header {
+  background: var(--carbon);
+  padding: var(--s2) var(--s4);
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  border-bottom: 1px solid var(--graphite);
+}
+.terminal-dots { display: flex; gap: var(--s1); }
+.terminal-dot { width: 10px; height: 10px; border-radius: 50%; }
+.terminal-dot.r { background: var(--magenta); }
+.terminal-dot.y { background: var(--amber); }
+.terminal-dot.g { background: var(--lime); }
+.terminal-title { font-size: 10px; color: var(--slate); letter-spacing: 0.1em; text-transform: uppercase; }
+.terminal-body { padding: var(--s4); min-height: 160px; }
+.terminal-line { font-size: 12px; line-height: 2; display: flex; gap: var(--s2); }
+.t-prompt { color: var(--steel); user-select: none; }
+.t-cmd { color: var(--bone); }
+.t-ok { color: var(--lime); }
+.t-info { color: var(--cyan); }
+.t-warn { color: var(--amber); }
+.t-err { color: var(--magenta); }
+.t-cursor {
+  display: inline-block;
+  width: 8px; height: 14px;
+  background: var(--accent);
+  animation: blink 1.1s step-end infinite;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+@keyframes blink { 50%{ opacity:0; } }
+
+/* ─── TWEAKS PANEL ────────────────────────────── */
+.tweaks-panel {
+  background: var(--carbon);
+  border: 1px solid var(--graphite);
+  border-radius: 4px;
+  padding: var(--s5);
+  max-width: 280px;
+}
+.tweaks-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--s4);
+}
+.tweaks-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--pure);
+}
+.tweaks-close {
+  width: 20px; height: 20px;
+  display: flex; align-items: center; justify-content: center;
+  border: 1px solid var(--graphite);
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 10px;
+  color: var(--slate);
+  background: none;
+  transition: all 0.15s;
+}
+.tweaks-close:hover { border-color: var(--magenta); color: var(--magenta); }
+.tweaks-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--s2) 0;
+  border-bottom: 1px solid var(--graphite);
+}
+.tweaks-row:last-child { border-bottom: none; }
+.tweaks-row-label { font-size: 12px; color: var(--ash); }
+.tweaks-field {
+  background: var(--night);
+  border: 1px solid var(--graphite);
+  border-radius: 2px;
+  padding: 4px var(--s2);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--ash);
+  max-width: 120px;
+}
+.accent-selector { display: flex; gap: var(--s2); }
+.accent-btn {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.15s;
+  position: relative;
+}
+.accent-btn.active::after {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+}
+.accent-btn.acc-cyan { background: var(--cyan); color: var(--cyan); }
+.accent-btn.acc-cyan.active { border-color: var(--cyan); box-shadow: var(--glow-cyan); }
+.accent-btn.acc-magenta { background: var(--magenta); color: var(--magenta); }
+.accent-btn.acc-magenta.active { border-color: var(--magenta); box-shadow: var(--glow-magenta); }
+.accent-btn.acc-lime { background: var(--lime); color: var(--lime); }
+.accent-btn.acc-lime.active { border-color: var(--lime); box-shadow: var(--glow-lime); }
+
+/* ─── FEED ────────────────────────────────────── */
+.feed-list { display: flex; flex-direction: column; gap: 1px; background: var(--graphite); border: 1px solid var(--graphite); border-radius: 4px; overflow: hidden; }
+.feed-item {
+  background: var(--carbon);
+  padding: var(--s4) var(--s5);
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  gap: var(--s4);
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.15s;
+  position: relative;
+}
+.feed-item:hover { background: var(--night); }
+.feed-item.active { background: var(--night); border-left: 2px solid var(--magenta); }
+.feed-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--graphite);
+  line-height: 1;
+  transition: color 0.15s;
+}
+.feed-item.active .feed-num { color: var(--magenta); }
+.feed-num.playing { color: var(--magenta) !important; }
+.feed-info {}
+.feed-meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  color: var(--slate);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--s1);
+  display: flex; gap: var(--s3);
+}
+.feed-meta .date { color: var(--magenta); }
+.feed-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--bone);
+  margin-bottom: var(--s1);
+}
+.feed-tags { display: flex; gap: var(--s2); flex-wrap: wrap; }
+.feed-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  color: var(--slate);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.feed-action { opacity: 0.4; transition: opacity 0.15s; }
+.feed-item:hover .feed-action { opacity: 1; }
+
+/* Waveform */
+.waveform-player {
+  background: var(--night);
+  padding: var(--s4) var(--s5);
+  border-top: 1px solid var(--graphite);
+  display: flex;
+  align-items: center;
+  gap: var(--s4);
+}
+.play-btn {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--magenta);
+  box-shadow: var(--glow-magenta);
+  border: none;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.15s;
+}
+.play-btn:hover { filter: brightness(1.15); transform: scale(1.05); }
+.play-btn svg { width: 14px; height: 14px; }
+
+.waveform-container {
+  flex: 1;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+#waveform-canvas { width: 100%; height: 100%; }
+
+.player-time {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: var(--slate);
+  flex-shrink: 0;
+}
+
+/* ─── SPACING TABLE ───────────────────────────── */
+.spacing-grid { display: flex; flex-direction: column; gap: var(--s3); }
+.spacing-row { display: flex; align-items: center; gap: var(--s4); }
+.spacing-token { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--slate); width: 50px; }
+.spacing-bar-wrap { flex: 1; height: 24px; display: flex; align-items: center; }
+.spacing-bar {
+  background: var(--accent);
+  height: 8px;
+  border-radius: 1px;
+  opacity: 0.6;
+  transition: background 0.3s;
+}
+.spacing-value { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ash); width: 50px; text-align: right; }
+
+/* ─── ACCENT CONTROLLER ───────────────────────── */
+.accent-controller {
+  position: fixed;
+  bottom: var(--s5);
+  right: var(--s5);
+  background: var(--carbon);
+  border: 1px solid var(--graphite);
+  border-radius: 4px;
+  padding: var(--s3) var(--s4);
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  z-index: 200;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+}
+.ac-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--slate); text-transform: uppercase; }
+.ac-btn {
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.ac-btn:hover { transform: scale(1.2); }
+.ac-btn.active { border-color: white; box-shadow: 0 0 8px currentColor; }
+
+/* ─── SCANLINE ────────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.04) 2px, rgba(0,0,0,0.04) 4px);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Divider */
+.divider { height: 1px; background: var(--graphite); margin: var(--s6) 0; }
+
+/* Tag pills */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s1);
+  padding: 2px var(--s3);
+  border-radius: 2px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.pill-cyan { border: 1px solid var(--cyan); color: var(--cyan); background: rgba(0,240,255,0.05); }
+.pill-magenta { border: 1px solid var(--magenta); color: var(--magenta); background: rgba(255,46,154,0.05); }
+.pill-lime { border: 1px solid var(--lime); color: var(--lime); background: rgba(198,255,61,0.05); }
+.pill-amber { border: 1px solid var(--amber); color: var(--amber); background: rgba(255,180,0,0.05); }
+
+/* Responsive tweaks for content width */
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { display: none; }
+  .main { margin-left: 0; }
+  .section { padding: var(--s7) var(--s5); }
+  .signal-grid { grid-template-columns: repeat(2, 1fr); }
+  .comp-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<div class="layout">
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-mark" id="sb-logo">C</div>
+    <div>
+      <div class="logo-text">Consequences</div>
+      <div class="logo-ver">DS V1.0</div>
+    </div>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="nav-section">Foundation</div>
+    <a class="nav-item active" href="#hero"><span class="nav-dot"></span>Overview</a>
+    <a class="nav-item" href="#colors"><span class="nav-dot"></span>Color System</a>
+    <a class="nav-item" href="#typography"><span class="nav-dot"></span>Typography</a>
+    <a class="nav-item" href="#spacing"><span class="nav-dot"></span>Spacing</a>
+    <div class="nav-section">Components</div>
+    <a class="nav-item" href="#inputs"><span class="nav-dot"></span>Inputs & Buttons</a>
+    <a class="nav-item" href="#toggles"><span class="nav-dot"></span>Toggles</a>
+    <a class="nav-item" href="#hud"><span class="nav-dot"></span>HUD Terminal</a>
+    <a class="nav-item" href="#tweaks"><span class="nav-dot"></span>Tweaks Panel</a>
+    <div class="nav-section">Patterns</div>
+    <a class="nav-item" href="#feed"><span class="nav-dot"></span>Feed & Player</a>
+    <a class="nav-item" href="#glitch"><span class="nav-dot"></span>Glitch & Glow</a>
+  </nav>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow" id="hero-glow"></div>
+    <div class="live-badge" style="margin-bottom:var(--s5)">
+      <div class="live-dot"></div>
+      SYSTEM ACTIVE // DS V1.0
+    </div>
+    <h1 class="hero-title" data-text="CONSEQUENCES">CONSEQUENCES</h1>
+    <h2 class="hero-sub">Design System<br>Especificación Completa</h2>
+    <div class="hero-meta">
+      <span><span class="dot"></span>T-MINUS 12.07.2026</span>
+      <span><span class="dot"></span>SEÑAL 04</span>
+      <span><span class="dot"></span>Signals Over Shadows</span>
+    </div>
+  </section>
+
+  <!-- COLORS -->
+  <section class="section" id="colors">
+    <div class="section-eyebrow">// 02 // <span>COLOR</span></div>
+    <h2 class="section-title">Sistema de Color</h2>
+    <p class="section-desc">El color no es estético, sino puramente funcional. Negros cromáticos para superficies, señales de alta frecuencia para estados reactivos.</p>
+
+    <div class="divider"></div>
+    <div class="section-eyebrow">BASE PALETTE // VOIDS & SURFACES</div>
+    <div class="color-grid" style="margin-top:var(--s4)">
+      <div class="color-swatch"><div class="swatch-block" style="background:#04060A"></div><div class="swatch-info"><div class="swatch-name">Void</div><div class="swatch-hex">#04060A</div></div></div>
+      <div class="color-swatch"><div class="swatch-block" style="background:#0B0F18"></div><div class="swatch-info"><div class="swatch-name">Night</div><div class="swatch-hex">#0B0F18</div></div></div>
+      <div class="color-swatch"><div class="swatch-block" style="background:#131826"></div><div class="swatch-info"><div class="swatch-name">Carbon</div><div class="swatch-hex">#131826</div></div></div>
+      <div class="color-swatch"><div class="swatch-block" style="background:#1E2435"></div><div class="swatch-info"><div class="swatch-name">Graphite</div><div class="swatch-hex">#1E2435</div></div></div>
+      <div class="color-swatch"><div class="swatch-block" style="background:#2A3148"></div><div class="swatch-info"><div class="swatch-name">Steel</div><div class="swatch-hex">#2A3148</div></div></div>
+      <div class="color-swatch"><div class="swatch-block" style="background:#4A5273"></div><div class="swatch-info"><div class="swatch-name">Slate</div><div class="swatch-hex">#4A5273</div></div></div>
+      <div class="color-swatch"><div class="swatch-block" style="background:#7A839E"></div><div class="swatch-info"><div class="swatch-name">Ash</div><div class="swatch-hex">#7A839E</div></div></div>
+      <div class="color-swatch"><div class="swatch-block" style="background:#C7CCD8"></div><div class="swatch-info"><div class="swatch-name">Bone</div><div class="swatch-hex">#C7CCD8</div></div></div>
+      <div class="color-swatch"><div class="swatch-block" style="background:#ECEEF5"></div><div class="swatch-info"><div class="swatch-name">Paper</div><div class="swatch-hex">#ECEEF5</div></div></div>
+      <div class="color-swatch"><div class="swatch-block" style="background:#FFFFFF; border-bottom:1px solid #1E2435"></div><div class="swatch-info"><div class="swatch-name">Pure</div><div class="swatch-hex">#FFFFFF</div></div></div>
+    </div>
+
+    <div class="divider"></div>
+    <div class="section-eyebrow">SIGNAL PALETTE // ACENTOS & ESTADOS ACTIVOS</div>
+    <div class="signal-grid" style="margin-top:var(--s4)">
+      <div class="signal-card cyan">
+        <div class="signal-label">Signal Cyan</div>
+        <div class="signal-hex">#00F0FF</div>
+        <div class="signal-use">CTA · Focus · Validación</div>
+      </div>
+      <div class="signal-card magenta">
+        <div class="signal-label">Signal Magenta</div>
+        <div class="signal-hex">#FF2E9A</div>
+        <div class="signal-use">Alert · Live · Reproducción</div>
+      </div>
+      <div class="signal-card lime">
+        <div class="signal-label">Signal Lime</div>
+        <div class="signal-hex">#C6FF3D</div>
+        <div class="signal-use">Citas · Éxito · Futuro</div>
+      </div>
+      <div class="signal-card amber">
+        <div class="signal-label">Signal Amber</div>
+        <div class="signal-hex">#FFB400</div>
+        <div class="signal-use">Warning · On-Air · Async</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TYPOGRAPHY -->
+  <section class="section" id="typography">
+    <div class="section-eyebrow">// 03 // <span>TIPOGRAFÍA</span></div>
+    <h2 class="section-title">Escala Tipográfica</h2>
+    <p class="section-desc">Densidad extrema de información combinada con títulos de gran escala expresiva. Industrial, condensado, siempre en mayúsculas para display.</p>
+
+    <div class="divider"></div>
+    <div class="section-eyebrow">DISPLAY SCALE // SPACE GROTESK</div>
+    <div class="type-scale" style="margin-top:var(--s4)">
+      <div class="type-row">
+        <div class="type-meta"><div class="size">88pt</div>Display<br>Line-H: 1.0</div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(36px,6vw,72px);line-height:1.0;text-transform:uppercase;letter-spacing:-0.03em;color:var(--pure)">CONSEQUENCES</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="size">60pt</div>H1<br>Line-H: 1.1</div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(28px,4.5vw,52px);line-height:1.1;text-transform:uppercase;letter-spacing:-0.02em;color:var(--pure)">El Futuro de la Interfaz</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="size">44pt</div>H2<br>Line-H: 1.2</div>
+        <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(22px,3.5vw,40px);line-height:1.2;text-transform:uppercase;letter-spacing:-0.01em;color:var(--pure)">Detalles del Sistema Actual</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <div class="section-eyebrow">BODY SCALE // INTER TIGHT</div>
+    <div class="type-scale" style="margin-top:var(--s4)">
+      <div class="type-row">
+        <div class="type-meta"><div class="size">18pt</div>Body LG<br>Wt: 400</div>
+        <div style="font-size:18px;color:var(--bone);max-width:520px">Texto de introducción para publicaciones, newsletters de impacto o párrafos de apertura con jerarquía visual clara.</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="size">16pt</div>Body<br>Wt: 400</div>
+        <div style="font-size:16px;color:var(--ash);max-width:520px">Cuerpo general optimizado para pantallas oscuras. Balance perfecto entre legibilidad y densidad informativa del ecosistema.</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="size">14pt</div>Body SM<br>Wt: 400</div>
+        <div style="font-size:14px;color:var(--slate);max-width:520px">Tamaño compacto empleado en leyendas, descripciones de episodios y textos de soporte en formularios del sistema.</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <div class="section-eyebrow">TECHNICAL SCALE // JETBRAINS MONO</div>
+    <div class="type-scale" style="margin-top:var(--s4)">
+      <div class="type-row">
+        <div class="type-meta"><div class="size">12pt</div>Mono<br>Wt: 500</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;color:var(--bone);letter-spacing:0.06em">EP. 04 // 47 MIN // ESCUCHA AHORA</div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta"><div class="size">11pt</div>Eyebrow<br>Wt: 400</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:11px;text-transform:uppercase;color:var(--slate);letter-spacing:0.12em">T-MINUS 12.07.2026 // SEÑAL 04</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPACING -->
+  <section class="section" id="spacing">
+    <div class="section-eyebrow">// 04 // <span>ESPACIADO</span></div>
+    <h2 class="section-title">Escala Métrica 4px</h2>
+    <p class="section-desc">Ritmo visual basado en multiplicadores estrictos de una unidad base de 4px. Simetría matemática en cualquier densidad de pantalla.</p>
+    <div class="divider"></div>
+    <div class="spacing-grid" style="margin-top:var(--s4)">
+      <div class="spacing-row"><div class="spacing-token">s-1</div><div class="spacing-bar-wrap"><div class="spacing-bar" style="width:4px"></div></div><div class="spacing-value">4px</div></div>
+      <div class="spacing-row"><div class="spacing-token">s-2</div><div class="spacing-bar-wrap"><div class="spacing-bar" style="width:8px"></div></div><div class="spacing-value">8px</div></div>
+      <div class="spacing-row"><div class="spacing-token">s-3</div><div class="spacing-bar-wrap"><div class="spacing-bar" style="width:12px"></div></div><div class="spacing-value">12px</div></div>
+      <div class="spacing-row"><div class="spacing-token">s-4</div><div class="spacing-bar-wrap"><div class="spacing-bar" style="width:16px"></div></div><div class="spacing-value">16px</div></div>
+      <div class="spacing-row"><div class="spacing-token">s-5</div><div class="spacing-bar-wrap"><div class="spacing-bar" style="width:24px"></div></div><div class="spacing-value">24px</div></div>
+      <div class="spacing-row"><div class="spacing-token">s-6</div><div class="spacing-bar-wrap"><div class="spacing-bar" style="width:32px"></div></div><div class="spacing-value">32px</div></div>
+      <div class="spacing-row"><div class="spacing-token">s-7</div><div class="spacing-bar-wrap"><div class="spacing-bar" style="width:48px"></div></div><div class="spacing-value">48px</div></div>
+      <div class="spacing-row"><div class="spacing-token">s-8</div><div class="spacing-bar-wrap"><div class="spacing-bar" style="width:64px"></div></div><div class="spacing-value">64px</div></div>
+      <div class="spacing-row"><div class="spacing-token">s-9</div><div class="spacing-bar-wrap"><div class="spacing-bar" style="width:96px"></div></div><div class="spacing-value">96px</div></div>
+    </div>
+  </section>
+
+  <!-- INPUTS -->
+  <section class="section" id="inputs">
+    <div class="section-eyebrow">// 05 // <span>COMPONENTES</span></div>
+    <h2 class="section-title">Inputs & Botones</h2>
+    <p class="section-desc">Estética minimalista con marcos delimitados. Focus state con luminiscencia funcional. CTA de máxima jerarquía.</p>
+    <div class="divider"></div>
+    <div class="comp-grid">
+      <div>
+        <div class="section-eyebrow" style="margin-bottom:var(--s4)">FORM INPUTS</div>
+        <div class="field" style="margin-bottom:var(--s4)">
+          <label class="field-label">Default State</label>
+          <input class="c-input" placeholder="Ingresa tu señal…" type="text">
+          <span class="field-caption">Texto de soporte secundario</span>
+        </div>
+        <div class="field" style="margin-bottom:var(--s4)">
+          <label class="field-label">Focus State (Cyan Glow)</label>
+          <input class="c-input" value="Estado activo de foco" type="text" id="focus-demo" onfocus="this.style.borderColor='var(--cyan)';this.style.color='var(--pure)';this.style.boxShadow='var(--glow-cyan)'" onblur="this.style.borderColor='';this.style.color='';this.style.boxShadow=''">
+          <span class="field-caption success">✓ Señal validada — HANDSHAKE OK</span>
+        </div>
+        <div class="field">
+          <label class="field-label">Error State</label>
+          <input class="c-input error" value="Error de autenticación" type="text">
+          <span class="field-caption error">✗ Error crítico — SEÑAL INTERRUMPIDA</span>
+        </div>
+      </div>
+      <div>
+        <div class="section-eyebrow" style="margin-bottom:var(--s4)">BUTTONS</div>
+        <div style="display:flex;flex-direction:column;gap:var(--s4)">
+          <div>
+            <div class="field-label" style="margin-bottom:var(--s3)">Primary CTA</div>
+            <button class="c-btn c-btn-primary" id="btn-primary">ESCUCHA AHORA →</button>
+          </div>
+          <div>
+            <div class="field-label" style="margin-bottom:var(--s3)">Secondary</div>
+            <button class="c-btn c-btn-secondary">VER EPISODIOS</button>
+          </div>
+          <div>
+            <div class="field-label" style="margin-bottom:var(--s3)">Ghost</div>
+            <button class="c-btn c-btn-ghost">DETALLES</button>
+          </div>
+          <div>
+            <div class="field-label" style="margin-bottom:var(--s3)">Danger</div>
+            <button class="c-btn c-btn-danger">⚠ ALERTA CRÍTICA</button>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="section-eyebrow" style="margin-bottom:var(--s3)">PILLS & TAGS</div>
+        <div style="display:flex;gap:var(--s2);flex-wrap:wrap">
+          <span class="pill pill-cyan">● ACTIVO</span>
+          <span class="pill pill-magenta">● EN VIVO</span>
+          <span class="pill pill-lime">● FUTURO</span>
+          <span class="pill pill-amber">● WARNING</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOGGLES -->
+  <section class="section" id="toggles">
+    <div class="section-eyebrow">// 06 // <span>TOGGLES</span></div>
+    <h2 class="section-title">Interruptores</h2>
+    <p class="section-desc">Controles binarios en alto contraste. Estado activo con Magenta Glow, foco adicional con borde Cyan.</p>
+    <div class="divider"></div>
+    <div style="max-width:400px">
+      <div class="toggle-showcase">
+        <div class="toggle-row">
+          <div class="toggle-label">Transmisión En Vivo</div>
+          <label class="c-toggle">
+            <input type="checkbox" checked>
+            <div class="toggle-track"></div>
+            <div class="toggle-thumb"></div>
+          </label>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-label">Modo Oscuro Profundo</div>
+          <label class="c-toggle">
+            <input type="checkbox" checked>
+            <div class="toggle-track"></div>
+            <div class="toggle-thumb"></div>
+          </label>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-label">Notificaciones Activas</div>
+          <label class="c-toggle">
+            <input type="checkbox">
+            <div class="toggle-track"></div>
+            <div class="toggle-thumb"></div>
+          </label>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-label">Terminal HUD</div>
+          <label class="c-toggle">
+            <input type="checkbox">
+            <div class="toggle-track"></div>
+            <div class="toggle-thumb"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HUD TERMINAL -->
+  <section class="section" id="hud">
+    <div class="section-eyebrow">// 07 // <span>HUD TERMINAL</span></div>
+    <h2 class="section-title">Sistemas HUD</h2>
+    <p class="section-desc">Módulos técnicos para despliegue de datos del sistema. HANDSHAKE OK en Lime, procesos activos en Cyan.</p>
+    <div class="divider"></div>
+    <div class="terminal" style="max-width:640px">
+      <div class="terminal-header">
+        <div class="terminal-dots">
+          <div class="terminal-dot r"></div>
+          <div class="terminal-dot y"></div>
+          <div class="terminal-dot g"></div>
+        </div>
+        <div class="terminal-title">CONSEQUENCES // TERMINAL HUD STANDARDIZED</div>
+      </div>
+      <div class="terminal-body" id="terminal-output">
+        <div class="terminal-line"><span class="t-prompt">▸</span><span class="t-cmd">system.boot --mode=signal --env=prod</span></div>
+        <div class="terminal-line"><span class="t-info">  > Initializing CONSEQUENCES DS V1.0…</span></div>
+        <div class="terminal-line"><span class="t-info">  > Loading signal palette…</span></div>
+        <div class="terminal-line"><span class="t-ok">  > HANDSHAKE OK — señal establecida</span></div>
+        <div class="terminal-line"><span class="t-info">  > connected non señal Crossover…</span></div>
+        <div class="terminal-line"><span class="t-ok">  > handshake OK</span></div>
+        <div class="terminal-line"><span class="t-warn">  ⚠ ASYNC PROCESS — transmisión en curso</span></div>
+        <div class="terminal-line"><span class="t-prompt">▸</span><span class="t-cmd">monitor.run --live<span class="t-cursor"></span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TWEAKS PANEL -->
+  <section class="section" id="tweaks">
+    <div class="section-eyebrow">// 08 // <span>CONTROL</span></div>
+    <h2 class="section-title">Panel Tweaks</h2>
+    <p class="section-desc">Módulo flotante para manipulación en tiempo real de la fidelidad de interfaz. Cambia el acento activo del sistema.</p>
+    <div class="divider"></div>
+    <div class="tweaks-panel">
+      <div class="tweaks-header">
+        <div class="tweaks-title">Tweaks</div>
+        <button class="tweaks-close">✕</button>
+      </div>
+      <div class="tweaks-row">
+        <span class="tweaks-row-label">Variante</span>
+        <input class="tweaks-field" value="Manifest color" readonly>
+        <label class="c-toggle" style="margin-left:8px">
+          <input type="checkbox" checked>
+          <div class="toggle-track"></div>
+          <div class="toggle-thumb"></div>
+        </label>
+      </div>
+      <div class="tweaks-row">
+        <span class="tweaks-row-label">Indicator option</span>
+        <input class="tweaks-field" value="Adapt" readonly>
+      </div>
+      <div class="tweaks-row">
+        <span class="tweaks-row-label">Color de acento</span>
+        <div class="accent-selector">
+          <button class="accent-btn acc-cyan active" id="tw-cyan" onclick="setAccent('cyan')" title="Cyan"></button>
+          <button class="accent-btn acc-magenta" id="tw-magenta" onclick="setAccent('magenta')" title="Magenta"></button>
+          <button class="accent-btn acc-lime" id="tw-lime" onclick="setAccent('lime')" title="Lime"></button>
+        </div>
+      </div>
+      <div class="tweaks-row">
+        <span class="tweaks-row-label">Indicador En Vivo</span>
+        <div class="live-badge" style="font-size:9px;padding:2px 8px">
+          <div class="live-dot" style="width:5px;height:5px"></div>ON-AIR
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEED -->
+  <section class="section" id="feed">
+    <div class="section-eyebrow">// 09 // <span>FEED</span></div>
+    <h2 class="section-title">Feed & Reproductor</h2>
+    <p class="section-desc">Listas con numeración ceros-padded, metadatos en Mono, fechas en Magenta. Waveform reactivo con Magenta Glow.</p>
+    <div class="divider"></div>
+    <div class="feed-list">
+      <div class="feed-item" onclick="activateFeed(this, 0)">
+        <div class="feed-num">01</div>
+        <div class="feed-info">
+          <div class="feed-meta">
+            <span>BODY LG 18PT // BODY 16PT // BODY SM 14PT</span>
+            <span class="date">YT · 11.07.2026</span>
+          </div>
+          <div class="feed-title">Inter Tight — Episodio de Apertura</div>
+          <div class="feed-tags">
+            <span class="feed-tag">MONO 12PT</span>
+            <span class="feed-tag">EYEBROW 11PT</span>
+          </div>
+        </div>
+        <div class="feed-action">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 3l9 5-9 5V3z" fill="var(--accent)"/></svg>
+        </div>
+      </div>
+      <div class="feed-item active" onclick="activateFeed(this, 1)">
+        <div class="feed-num playing" id="playing-num">02</div>
+        <div class="feed-info">
+          <div class="feed-meta">
+            <span>Llaves cryptografics, pesskeys or loon SM 14PT</span>
+            <span class="date">YT · 25.07.2026</span>
+          </div>
+          <div class="feed-title">CONSEQUENCES — Signal Crossover</div>
+          <div class="feed-tags">
+            <span class="feed-tag">MONO 12PT</span>
+            <span class="feed-tag">EYEBROW 11PT</span>
+          </div>
+        </div>
+        <div class="feed-action">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 3l9 5-9 5V3z" fill="var(--magenta)"/></svg>
+        </div>
+      </div>
+      <div class="feed-item" onclick="activateFeed(this, 2)">
+        <div class="feed-num">03</div>
+        <div class="feed-info">
+          <div class="feed-meta">
+            <span>EP. 03 // 52 MIN // SEÑAL ACTIVA</span>
+            <span class="date">YT · 04.08.2026</span>
+          </div>
+          <div class="feed-title">Arquitectura de Señales — Vol. III</div>
+          <div class="feed-tags">
+            <span class="feed-tag">MONO 12PT</span>
+            <span class="feed-tag">DESIGN SYSTEMS</span>
+          </div>
+        </div>
+        <div class="feed-action">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 3l9 5-9 5V3z" fill="var(--accent)"/></svg>
+        </div>
+      </div>
+      <!-- Waveform Player -->
+      <div class="waveform-player">
+        <button class="play-btn" id="play-btn" onclick="togglePlay()">
+          <svg id="play-icon" viewBox="0 0 16 16" fill="none"><path d="M4 3l9 5-9 5V3z" fill="white"/></svg>
+        </button>
+        <div class="waveform-container">
+          <canvas id="waveform-canvas" height="40"></canvas>
+        </div>
+        <div class="player-time" id="player-time">02:31 / 47:00</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLITCH -->
+  <section class="section" id="glitch">
+    <div class="section-eyebrow">// 10 // <span>EFECTOS</span></div>
+    <h2 class="section-title">Glitch & Glow</h2>
+    <p class="section-desc">Signature RGB-Split en títulos. Filosofía Signals over Shadows — halos lumínicos en lugar de sombras difusas.</p>
+    <div class="divider"></div>
+    
+    <div style="margin-bottom:var(--s6)">
+      <div class="section-eyebrow" style="margin-bottom:var(--s4)">GLITCH TEXT // RGB ABERRACIÓN CROMÁTICA</div>
+      <div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(48px,7vw,80px);text-transform:uppercase;line-height:1.0;letter-spacing:-0.03em;position:relative;display:inline-block">
+        <span style="position:relative;z-index:2;color:#fff">CONSEQUENCES</span>
+        <span style="position:absolute;top:0;left:-3px;color:var(--cyan);opacity:0.7;clip-path:polygon(0 0,100% 0,100% 45%,0 45%)">CONSEQUENCES</span>
+        <span style="position:absolute;top:0;left:3px;color:var(--magenta);opacity:0.7;clip-path:polygon(0 55%,100% 55%,100% 100%,0 100%)">CONSEQUENCES</span>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-eyebrow" style="margin-bottom:var(--s4)">GLOW STATES // SIGNALS OVER SHADOWS</div>
+      <div style="display:flex;gap:var(--s5);flex-wrap:wrap">
+        <div style="padding:var(--s5) var(--s6);border:1px solid var(--cyan);border-radius:4px;box-shadow:var(--glow-cyan);background:rgba(0,240,255,0.04)">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--cyan);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:var(--s2)">CYAN GLOW</div>
+          <div style="font-size:13px;color:var(--ash)">Active State / Focus</div>
+        </div>
+        <div style="padding:var(--s5) var(--s6);border:1px solid var(--magenta);border-radius:4px;box-shadow:var(--glow-magenta);background:rgba(255,46,154,0.04)">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--magenta);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:var(--s2)">MAGENTA GLOW</div>
+          <div style="font-size:13px;color:var(--ash)">Alert State / Live</div>
+        </div>
+        <div style="padding:var(--s5) var(--s6);border:1px solid var(--lime);border-radius:4px;box-shadow:var(--glow-lime);background:rgba(198,255,61,0.04)">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--lime);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:var(--s2)">LIME GLOW</div>
+          <div style="font-size:13px;color:var(--ash)">Success / Handshake OK</div>
+        </div>
+        <div style="padding:var(--s5) var(--s6);border:1px solid var(--amber);border-radius:4px;box-shadow:var(--glow-amber);background:rgba(255,180,0,0.04)">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--amber);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:var(--s2)">AMBER GLOW</div>
+          <div style="font-size:13px;color:var(--ash)">Warning / On-Air</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+</div>
+
+<!-- FLOATING ACCENT CONTROLLER -->
+<div class="accent-controller">
+  <span class="ac-label">ACENTO</span>
+  <button class="ac-btn active" id="ac-cyan" style="background:var(--cyan)" onclick="setAccent('cyan')"></button>
+  <button class="ac-btn" id="ac-magenta" style="background:var(--magenta)" onclick="setAccent('magenta')"></button>
+  <button class="ac-btn" id="ac-lime" style="background:var(--lime)" onclick="setAccent('lime')"></button>
+  <button class="ac-btn" id="ac-amber" style="background:var(--amber)" onclick="setAccent('amber')"></button>
+</div>
+
+<script>
+// ─── ACCENT SYSTEM ───────────────────────────────────────────
+const accents = {
+  cyan:    { hex:'#00F0FF', glow:'0 0 8px rgba(0,240,255,0.6), 0 0 24px rgba(0,240,255,0.2)' },
+  magenta: { hex:'#FF2E9A', glow:'0 0 8px rgba(255,46,154,0.6), 0 0 24px rgba(255,46,154,0.2)' },
+  lime:    { hex:'#C6FF3D', glow:'0 0 8px rgba(198,255,61,0.6), 0 0 24px rgba(198,255,61,0.2)' },
+  amber:   { hex:'#FFB400', glow:'0 0 8px rgba(255,180,0,0.6), 0 0 24px rgba(255,180,0,0.2)' }
+};
+let activeAccent = 'cyan';
+
+function setAccent(name) {
+  const a = accents[name];
+  document.documentElement.style.setProperty('--accent', a.hex);
+  document.documentElement.style.setProperty('--glow-accent', a.glow);
+  activeAccent = name;
+
+  // Update floating controller
+  document.querySelectorAll('.ac-btn').forEach(b => b.classList.remove('active'));
+  const acBtn = document.getElementById('ac-'+name);
+  if(acBtn) acBtn.classList.add('active');
+
+  // Update tweaks panel
+  document.querySelectorAll('.accent-btn').forEach(b => b.classList.remove('active'));
+  const twBtn = document.getElementById('tw-'+name);
+  if(twBtn) twBtn.classList.add('active');
+
+  // Update logo glow
+  const logoMark = document.getElementById('sb-logo');
+  if(logoMark) logoMark.style.boxShadow = a.glow;
+
+  // Re-draw waveform
+  drawWaveform();
+}
+
+// ─── HERO GLOW TRACKING ──────────────────────────────────────
+document.addEventListener('mousemove', e => {
+  const glow = document.getElementById('hero-glow');
+  if(!glow) return;
+  const hero = document.getElementById('hero');
+  if(!hero) return;
+  const rect = hero.getBoundingClientRect();
+  glow.style.left = (e.clientX - rect.left - 300)+'px';
+  glow.style.top  = (e.clientY - rect.top  - 150)+'px';
+});
+
+// ─── WAVEFORM CANVAS ─────────────────────────────────────────
+let waveData = [];
+let progress = 0.3;
+let isPlaying = false;
+let animFrame;
+
+function generateWave() {
+  const c = document.getElementById('waveform-canvas');
+  if(!c) return;
+  c.width = c.parentElement.offsetWidth || 400;
+  waveData = [];
+  for(let i=0; i<c.width/3; i++) {
+    const base = Math.sin(i*0.15)*0.3 + Math.sin(i*0.07)*0.4 + Math.sin(i*0.32)*0.15;
+    waveData.push(0.15 + Math.abs(base) * 0.8 + Math.random()*0.08);
+  }
+}
+
+function drawWaveform() {
+  const c = document.getElementById('waveform-canvas');
+  if(!c) return;
+  const ctx = c.getContext('2d');
+  const w = c.width, h = c.height;
+  ctx.clearRect(0,0,w,h);
+  const barW = 2, gap = 1, total = barW+gap;
+  const bars = Math.floor(w/total);
+  const mid = h/2;
+  for(let i=0; i<bars && i<waveData.length; i++) {
+    const x = i*total;
+    const barH = waveData[i] * (h*0.85);
+    const pct = i / bars;
+    if(pct < progress) {
+      ctx.fillStyle = accents[activeAccent].hex;
+      ctx.shadowColor = accents[activeAccent].hex;
+      ctx.shadowBlur = 4;
+    } else {
+      ctx.fillStyle = '#2A3148';
+      ctx.shadowBlur = 0;
+    }
+    ctx.fillRect(x, mid-barH/2, barW, barH);
+  }
+  ctx.shadowBlur = 0;
+}
+
+function tickPlay() {
+  if(!isPlaying) return;
+  progress = Math.min(1, progress + 0.0008);
+  drawWaveform();
+  const total = 47*60;
+  const cur = Math.floor(progress*total);
+  const m = Math.floor(cur/60), s = cur%60;
+  const pt = document.getElementById('player-time');
+  if(pt) pt.textContent = m+':'+String(s).padStart(2,'0')+' / 47:00';
+  if(progress < 1) animFrame = requestAnimationFrame(tickPlay);
+  else isPlaying = false;
+}
+
+function togglePlay() {
+  isPlaying = !isPlaying;
+  const icon = document.getElementById('play-icon');
+  if(icon) icon.innerHTML = isPlaying
+    ? '<rect x="4" y="3" width="3" height="10" fill="white"/><rect x="9" y="3" width="3" height="10" fill="white"/>'
+    : '<path d="M4 3l9 5-9 5V3z" fill="white"/>';
+  if(isPlaying) tickPlay();
+}
+
+// Click on waveform to seek
+const wc = document.getElementById('waveform-canvas');
+if(wc) wc.addEventListener('click', e => {
+  const rect = wc.getBoundingClientRect();
+  progress = (e.clientX-rect.left)/rect.width;
+  drawWaveform();
+});
+
+// ─── FEED ACTIVATION ─────────────────────────────────────────
+function activateFeed(el, idx) {
+  document.querySelectorAll('.feed-item').forEach(f => f.classList.remove('active'));
+  el.classList.add('active');
+  progress = 0.05 + idx*0.2;
+  drawWaveform();
+}
+
+// ─── ACTIVE NAV ──────────────────────────────────────────────
+const sections = document.querySelectorAll('section[id]');
+const navItems = document.querySelectorAll('.nav-item');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting) {
+      navItems.forEach(n => n.classList.remove('active'));
+      const active = document.querySelector('.nav-item[href="#'+e.target.id+'"]');
+      if(active) active.classList.add('active');
+    }
+  });
+}, { threshold: 0.3 });
+sections.forEach(s => observer.observe(s));
+
+// ─── INIT ────────────────────────────────────────────────────
+window.addEventListener('load', () => {
+  generateWave();
+  drawWaveform();
+});
+window.addEventListener('resize', () => {
+  generateWave();
+  drawWaveform();
+});
+</script>
+</body>
+</html>

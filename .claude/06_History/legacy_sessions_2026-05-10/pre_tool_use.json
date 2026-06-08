@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp": "2026-05-07T18:57:42.028945",
+    "data": {
+      "action": "cancel",
+      "reason": "low_battery",
+      "level": 9
+    }
+  },
+  {
+    "timestamp": "2026-05-07T18:58:17.453660",
+    "data": {
+      "action": "cancel",
+      "reason": "low_battery",
+      "level": 9
+    }
+  },
+  {
+    "timestamp": "2026-05-07T18:58:17.489214",
+    "data": {
+      "action": "cancel",
+      "reason": "low_battery",
+      "level": 9
+    }
+  }
+]

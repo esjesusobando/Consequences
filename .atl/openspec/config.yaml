@@ -1,0 +1,112 @@
+schema: spec-driven
+
+context: |
+  Tech stack: Python (scripts, HUBs), Node.js (OpenCode + plugins MCP, .mcp.json 33 servers)
+  Architecture: Multi-agent PersonalOS with skills, HUBs, Agent Teams, SDD workflow, GGA code review
+  Testing: None — no test runner detected (documentation-heavy project)
+  Style: Conventional commits, no linter/formatter at project root
+  Version: v3.0 Consequences (2026-04-26)
+
+strict_tdd: false
+
+rules:
+  proposal:
+    - Include rollback plan for risky changes
+    - Identify affected modules/packages
+  specs:
+    - Use Given/When/Then format for scenarios
+    - Use RFC 2119 keywords (MUST, SHALL, SHOULD, MAY)
+  design:
+    - Include sequence diagrams for complex flows
+    - Document architecture decisions with rationale
+  tasks:
+    - Group tasks by phase (infrastructure, implementation, testing)
+    - Use hierarchical numbering (1.1, 1.2, etc.)
+    - Keep tasks small enough to complete in one session
+  apply:
+    - Follow existing code patterns and conventions
+    - Load relevant coding skills for the project stack
+  verify:
+    - Run tests if test infrastructure exists
+    - Compare implementation against every spec scenario
+  archive:
+    - Warn before merging destructive deltas (large removals)
+
+testing:
+  strict_tdd: false
+  detected: "2026-04-26"
+  note: "No test runner detected — strict TDD unavailable. Project is documentation/agent-driven."
+  test_runner:
+    available: false
+    framework: null
+    command: null
+  test_layers:
+    - layer: unit
+      available: false
+      tool: null
+    - layer: integration
+      available: false
+      tool: null
+    - layer: e2e
+      available: false
+      tool: null
+  coverage:
+    available: false
+    command: null
+  quality_tools:
+    - tool: linter
+      available: false
+      command: null
+    - tool: type_checker
+      available: false
+      command: null
+    - tool: formatter
+      available: false
+      command: null
+
+skill_sources:
+  user_level: "~/.config/opencode/skills/"
+  project_level: ".agent/02_Skills/"
+  config: ".atl/skill-registry.md"
+
+persistence:
+  mode: hybrid
+  openspec_root: ".atl/openspec/"
+  engram: true
+
+known_issues:
+  - id: KI-001
+    severity: critical
+    title: Hardcoded Windows paths in .mcp.json
+    description: Multiple MCP servers have hardcoded user paths (C:\Users\sebas\...) that break portability
+    affected_files:
+      - .mcp.json (lines 49, 82, 192, 228)
+    status: documented
+    recommendation: Use environment variables like ${HOME} or ${USERPROFILE} where supported
+  - id: KI-002
+    severity: medium
+    title: Duplicate sections in config.yaml
+    description: rules: and testing: sections were duplicated in config.yaml
+    affected_files:
+      - .atl/openspec/config.yaml
+    status: fixed
+    fixed_date: "2026-04-26"
+  - id: KI-003
+    severity: low
+    title: Version mismatch in skill-registry.md
+    description: skill-registry.md showed v2.0 but project is at v3.0 Consequences
+    affected_files:
+      - .atl/skill-registry.md
+    status: fixed
+    fixed_date: "2026-04-26"
+  - id: KI-004
+    severity: medium
+    title: Project-level skills source path changed
+    description: Project-level skills moved from "01_Personal_Os/01_Core/02_Tools/02_Skills/" to ".agent/02_Skills/". Config and registry references need updating for consistency.
+    affected_files:
+      - .atl/openspec/config.yaml (skill_sources.project_level)
+      - .atl/skill-registry.md (note about project-level skills)
+      - .atl/README.md (Fuentes de Verdad section)
+    status: fixed
+    fixed_date: "2026-05-24"
+    recommendation: All three .atl/ config files updated as of 2026-05-23. Registry auto-generator may need its source path updated to match.

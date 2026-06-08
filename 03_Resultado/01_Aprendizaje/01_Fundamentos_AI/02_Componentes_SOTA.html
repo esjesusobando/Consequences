@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20 Componentes SOTA — Presentaciones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;500;700&family=Epilogue:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --electric-blue: #0057FF;
+      --intense-red: #FF2D00;
+      --obsidian: #0A0A0A;
+      --charcoal: #1A1A1A;
+      --graphite: #3A3A3A;
+      --steel: #6B6B6B;
+      --titanium: #B8B8B8;
+      --silver: #E0E0E0;
+      --white: #FFFFFF;
+      --headline: 'Oswald', sans-serif;
+      --statement: 'Inter', sans-serif;
+      --body: 'Epilogue', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--body);
+      background: var(--obsidian);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    /* ===========================================
+       HERO
+       =========================================== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 80px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 20%, rgba(0, 87, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(255, 45, 0, 0.1) 0%, transparent 50%);
+      z-index: 0;
+    }
+
+    .hero-content { position: relative; z-index: 1; }
+
+    .hero h1 {
+      font-family: var(--headline);
+      font-size: clamp(48px, 10vw, 120px);
+      font-weight: 700;
+      line-height: 0.9;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 span { color: var(--electric-blue); }
+
+    .hero p {
+      font-family: var(--statement);
+      font-size: clamp(16px, 2vw, 24px);
+      color: var(--titanium);
+      max-width: 600px;
+      margin-bottom: 40px;
+    }
+
+    /* ===========================================
+       COMPONENT GRID
+       =========================================== */
+    .components-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 32px;
+      padding: 40px;
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+
+    .component-card {
+      background: var(--charcoal);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 2px;
+      overflow: hidden;
+      transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .component-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--electric-blue);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    }
+
+    .component-preview {
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .component-info {
+      padding: 24px;
+    }
+
+    .component-info h3 {
+      font-family: var(--headline);
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      color: var(--white);
+    }
+
+    .component-info p {
+      font-size: 13px;
+      color: var(--steel);
+      margin-bottom: 12px;
+    }
+
+    .component-tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      background: rgba(0, 87, 255, 0.15);
+      color: var(--electric-blue);
+      border-radius: 2px;
+    }
+
+    /* ===========================================
+       COMPONENT 1: Blur Background Image
+       =========================================== */
+    .demo-blur-bg {
+      position: absolute;
+      inset: -50px;
+      background: url('01_Imagenes/Unsplash%20-%20001%20(2).png') center/cover;
+      filter: blur(40px) saturate(0.4);
+      opacity: 0.6;
+      animation: blurPulse 8s ease-in-out infinite;
+    }
+
+    @keyframes blurPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    /* ===========================================
+       COMPONENT 2: Mesh Gradient
+       =========================================== */
+    .demo-mesh {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 30% 20%, rgba(0, 87, 255, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 60%, rgba(255, 45, 0, 0.3) 0%, transparent 40%),
+        radial-gradient(ellipse at 50% 80%, rgba(0, 87, 255, 0.2) 0%, transparent 50%);
+      animation: meshShift 10s ease-in-out infinite;
+    }
+
+    @keyframes meshShift {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+
+    /* ===========================================
+       COMPONENT 3: Noise Overlay
+       =========================================== */
+    .demo-noise {
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      opacity: 0.05;
+      animation: noiseShift 0.5s steps(10) infinite;
+      pointer-events: none;
+    }
+
+    @keyframes noiseShift {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(-10%, -10%); }
+    }
+
+    /* ===========================================
+       COMPONENT 4: Floating Orbs
+       =========================================== */
+    .demo-orbs {
+      position: absolute;
+      inset: 0;
+    }
+
+    .orb-demo {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(40px);
+    }
+
+    .orb-demo-1 {
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(0, 87, 255, 0.4) 0%, transparent 70%);
+      top: 10%;
+      left: 20%;
+      animation: floatOrb1 6s ease-in-out infinite;
+    }
+
+    .orb-demo-2 {
+      width: 150px;
+      height: 150px;
+      background: radial-gradient(circle, rgba(255, 45, 0, 0.3) 0%, transparent 70%);
+      bottom: 20%;
+      right: 15%;
+      animation: floatOrb2 8s ease-in-out infinite;
+    }
+
+    @keyframes floatOrb1 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(20px, -30px) scale(1.2); }
+    }
+
+    @keyframes floatOrb2 {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-30px, 20px); }
+    }
+
+    /* ===========================================
+       COMPONENT 5: Glassmorphism
+       =========================================== */
+    .demo-glass {
+      width: 180px;
+      height: 120px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(20px) saturate(1.2);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--statement);
+      font-size: 14px;
+      color: var(--titanium);
+      animation: glassPulse 4s ease-in-out infinite;
+    }
+
+    @keyframes glassPulse {
+      0%, 100% { box-shadow: 0 8px 32px rgba(0, 87, 255, 0.1); }
+      50% { box-shadow: 0 8px 48px rgba(0, 87, 255, 0.25); }
+    }
+
+    /* ===========================================
+       COMPONENT 6: Text Split Reveal
+       =========================================== */
+    .demo-split-text {
+      font-family: var(--headline);
+      font-size: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .demo-split-text span {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: splitReveal 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    .demo-split-text span:nth-child(1) { animation-delay: 0s; color: var(--electric-blue); }
+    .demo-split-text span:nth-child(2) { animation-delay: 0.1s; }
+    .demo-split-text span:nth-child(3) { animation-delay: 0.2s; color: var(--intense-red); }
+    .demo-split-text span:nth-child(4) { animation-delay: 0.3s; }
+
+    @keyframes splitReveal {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===========================================
+       COMPONENT 7: Vignette Overlay
+       =========================================== */
+    .demo-vignette {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, transparent 30%, rgba(10, 10, 10, 0.8) 100%);
+      pointer-events: none;
+    }
+
+    /* ===========================================
+       COMPONENT 8: Ken Burns Image
+       =========================================== */
+    .demo-kenburns {
+      position: absolute;
+      inset: 0;
+      background: url('01_Imagenes/2.png') center/cover;
+      animation: kenburns 20s ease-in-out infinite alternate;
+    }
+
+    @keyframes kenburns {
+      0% { transform: scale(1) translate(0, 0); }
+      100% { transform: scale(1.15) translate(-5%, -3%); }
+    }
+
+    /* ===========================================
+       COMPONENT 9: Stagger List
+       =========================================== */
+    .demo-stagger {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      max-width: 250px;
+    }
+
+    .demo-stagger li {
+      font-family: var(--statement);
+      font-size: 13px;
+      color: var(--silver);
+      padding: 10px 16px;
+      background: rgba(255,255,255,0.03);
+      border-left: 2px solid var(--electric-blue);
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: staggerIn 0.4s ease forwards;
+    }
+
+    .demo-stagger li:nth-child(1) { animation-delay: 0.1s; }
+    .demo-stagger li:nth-child(2) { animation-delay: 0.2s; }
+    .demo-stagger li:nth-child(3) { animation-delay: 0.3s; }
+    .demo-stagger li:nth-child(4) { animation-delay: 0.4s; }
+
+    @keyframes staggerIn {
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    /* ===========================================
+       COMPONENT 10: Magnetic Hover
+       =========================================== */
+    .demo-magnetic {
+      width: 120px;
+      height: 120px;
+      background: rgba(0, 87, 255, 0.2);
+      border: 1px solid var(--electric-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--statement);
+      font-size: 12px;
+      color: var(--electric-blue);
+      cursor: pointer;
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    /* ===========================================
+       COMPONENT 11: Breathing Pulse
+       =========================================== */
+    .demo-breathe {
+      width: 100px;
+      height: 100px;
+      border: 2px solid var(--electric-blue);
+      border-radius: 50%;
+      animation: breathe 4s ease-in-out infinite;
+    }
+
+    @keyframes breathe {
+      0%, 100% { transform: scale(1); opacity: 0.5; }
+      50% { transform: scale(1.15); opacity: 1; }
+    }
+
+    /* ===========================================
+       COMPONENT 12: Clip Path Reveal
+       =========================================== */
+    .demo-clip {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, var(--electric-blue), var(--intense-red));
+      clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+      animation: clipReveal 2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    @keyframes clipReveal {
+      to { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+    }
+
+    /* ===========================================
+       COMPONENT 13: Shimmer Text
+       =========================================== */
+    .demo-shimmer {
+      font-family: var(--headline);
+      font-size: 24px;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--white) 0%, var(--titanium) 50%, var(--white) 100%);
+      background-size: 200% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 3s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0%, 100% { background-position: 200% center; }
+      50% { background-position: 0% center; }
+    }
+
+    /* ===========================================
+       COMPONENT 14: Typing Cursor
+       =========================================== */
+    .demo-typing {
+      font-family: var(--statement);
+      font-size: 18px;
+      color: var(--silver);
+      border-right: 2px solid var(--electric-blue);
+      padding-right: 4px;
+      animation: blink 1s step-end infinite;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    /* ===========================================
+       COMPONENT 15: Geometric Spin
+       =========================================== */
+    .demo-geo-spin {
+      width: 100px;
+      height: 100px;
+      border: 1px solid rgba(0, 87, 255, 0.3);
+      transform: rotate(45deg);
+      animation: geoSpin 12s linear infinite;
+    }
+
+    .demo-geo-spin::before {
+      content: '';
+      position: absolute;
+      inset: 15px;
+      border: 1px solid rgba(255, 45, 0, 0.2);
+      transform: rotate(0deg);
+      animation: geoSpinInner 8s linear infinite reverse;
+    }
+
+    @keyframes geoSpin {
+      from { transform: rotate(45deg); }
+      to { transform: rotate(405deg); }
+    }
+
+    @keyframes geoSpinInner {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* ===========================================
+       COMPONENT 16: Diagonal Slash
+       =========================================== */
+    .demo-diagonal {
+      position: absolute;
+      width: 200%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--electric-blue), transparent);
+      transform: rotate(-15deg);
+      animation: diagonalSlide 3s ease-in-out infinite;
+    }
+
+    @keyframes diagonalSlide {
+      0%, 100% { left: -50%; opacity: 0.3; }
+      50% { left: 0%; opacity: 0.8; }
+    }
+
+    /* ===========================================
+       COMPONENT 17: Progress Bar Gradient
+       =========================================== */
+    .demo-progress {
+      width: 200px;
+      height: 4px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .demo-progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--electric-blue), var(--intense-red));
+      animation: progressFill 3s ease-in-out infinite;
+      box-shadow: 0 0 10px var(--electric-blue);
+    }
+
+    @keyframes progressFill {
+      0% { width: 0%; }
+      50% { width: 100%; }
+      100% { width: 0%; }
+    }
+
+    /* ===========================================
+       COMPONENT 18: Spotlight Effect
+       =========================================== */
+    .demo-spotlight {
+      position: relative;
+    }
+
+    .demo-spotlight::after {
+      content: '';
+      position: absolute;
+      inset: -30px;
+      background: radial-gradient(ellipse at center, rgba(0, 87, 255, 0.15) 0%, transparent 70%);
+      animation: spotPulse 2s ease-in-out infinite;
+      z-index: -1;
+    }
+
+    @keyframes spotPulse {
+      0%, 100% { opacity: 0.5; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.1); }
+    }
+
+    /* ===========================================
+       COMPONENT 19: Float Image
+       =========================================== */
+    .demo-float {
+      position: absolute;
+      width: 100px;
+      height: 70px;
+      background: url('01_Imagenes/Workflow.jpg') center/cover;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+      animation: floatImage 6s ease-in-out infinite;
+    }
+
+    @keyframes floatImage {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(2deg); }
+    }
+
+    /* ===========================================
+       COMPONENT 20: Halftone Pattern
+       =========================================== */
+    .demo-halftone {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1px, transparent 1px);
+      background-size: 6px 6px;
+      animation: halftoneMove 20s linear infinite;
+    }
+
+    @keyframes halftoneMove {
+      0% { background-position: 0 0; }
+      100% { background-position: 100px 100px; }
+    }
+
+    /* ===========================================
+       CSS VARIABLES REFERENCE
+       =========================================== */
+    .css-vars {
+      background: var(--charcoal);
+      padding: 60px 40px;
+      margin-top: 80px;
+    }
+
+    .css-vars h2 {
+      font-family: var(--headline);
+      font-size: 32px;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .vars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .var-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 20px;
+    }
+
+    .var-card code {
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      color: var(--electric-blue);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .var-card span {
+      font-size: 12px;
+      color: var(--steel);
+    }
+
+    .swatch {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    /* ===========================================
+       FOOTER
+       =========================================== */
+    .footer {
+      text-align: center;
+      padding: 60px 40px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .footer p {
+      font-size: 13px;
+      color: var(--graphite);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>20 COMPONENTES<br><span>SOTA</span></h1>
+      <p>Técnicas de animación y efectos visuales de vanguardia para presentaciones HTML</p>
+    </div>
+  </section>
+
+  <!-- COMPONENTS GRID -->
+  <div class="components-grid">
+
+    <!-- 1. Blur Background Image -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-blur-bg"></div>
+        <div class="demo-vignette"></div>
+      </div>
+      <div class="component-info">
+        <h3>01. Blur Background</h3>
+        <p>Imagen difuminada como fondo con pulso sutil. Crea profundidad sin competir con el contenido.</p>
+        <span class="component-tag">background</span>
+      </div>
+    </div>
+
+    <!-- 2. Mesh Gradient -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-mesh"></div>
+      </div>
+      <div class="component-info">
+        <h3>02. Mesh Gradient</h3>
+        <p>Múltiples gradientes radiales superpuestos que simulan meshes de color dinámicos.</p>
+        <span class="component-tag">background</span>
+      </div>
+    </div>
+
+    <!-- 3. Noise Overlay -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-noise"></div>
+        <div class="demo-mesh" style="opacity: 0.5;"></div>
+      </div>
+      <div class="component-info">
+        <h3>03. Noise / Grain</h3>
+        <p>Textura de film grain animada. Añade calidez y evita flatitud visual.</p>
+        <span class="component-tag">texture</span>
+      </div>
+    </div>
+
+    <!-- 4. Floating Orbs -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-orbs">
+          <div class="orb-demo orb-demo-1"></div>
+          <div class="orb-demo orb-demo-2"></div>
+        </div>
+      </div>
+      <div class="component-info">
+        <h3>04. Floating Orbs</h3>
+        <p>Esferas con gradiente radial que flotan suavemente. Efecto ambient premium.</p>
+        <span class="component-tag">ambient</span>
+      </div>
+    </div>
+
+    <!-- 5. Glassmorphism -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-glass">Glass Card</div>
+      </div>
+      <div class="component-info">
+        <h3>05. Glassmorphism</h3>
+        <p>Frosted glass con backdrop-filter blur. Efecto translúcido moderno.</p>
+        <span class="component-tag">card</span>
+      </div>
+    </div>
+
+    <!-- 6. Text Split Reveal -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-split-text">
+          <span>TEXT</span>&nbsp;<span>REVEAL</span><br>
+          <span>CON</span>&nbsp;<span>STAGGER</span>
+        </div>
+      </div>
+      <div class="component-info">
+        <h3>06. Split Text Reveal</h3>
+        <p>Texto que aparece palabra por palabra con delay escalonado.</p>
+        <span class="component-tag">typography</span>
+      </div>
+    </div>
+
+    <!-- 7. Vignette -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-kenburns"></div>
+        <div class="demo-vignette"></div>
+      </div>
+      <div class="component-info">
+        <h3>07. Vignette Overlay</h3>
+        <p>Gradiente radial oscuro en bordes. Enfoque central inmediato.</p>
+        <span class="component-tag">overlay</span>
+      </div>
+    </div>
+
+    <!-- 8. Ken Burns -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-kenburns" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);"></div>
+      </div>
+      <div class="component-info">
+        <h3>08. Ken Burns</h3>
+        <p>Zoom y paneo lento sobre imágenes. Movimiento cinematográfico sutil.</p>
+        <span class="component-tag">image</span>
+      </div>
+    </div>
+
+    <!-- 9. Stagger List -->
+    <div class="component-card">
+      <div class="component-preview">
+        <ul class="demo-stagger">
+          <li>Primero entra</li>
+          <li>Luego este</li>
+          <li>Después el tercero</li>
+          <li>Y el último</li>
+        </ul>
+      </div>
+      <div class="component-info">
+        <h3>09. Stagger List</h3>
+        <p>Lista que entra con delays secuenciales. Efecto cascada elegante.</p>
+        <span class="component-tag">list</span>
+      </div>
+    </div>
+
+    <!-- 10. Magnetic Hover -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-magnetic" id="magnetic">HOVER ME</div>
+      </div>
+      <div class="component-info">
+        <h3>10. Magnetic Hover</h3>
+        <p>Elemento que se atrae hacia el cursor en hover. Micro-interacción playful.</p>
+        <span class="component-tag">interactive</span>
+      </div>
+    </div>
+
+    <!-- 11. Breathing Pulse -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-breathe"></div>
+      </div>
+      <div class="component-info">
+        <h3>11. Breathing Pulse</h3>
+        <p>Escala y opacidad pulsantes. Sensación de "vivo" sin ser distractivo.</p>
+        <span class="component-tag">ambient</span>
+      </div>
+    </div>
+
+    <!-- 12. Clip Path Reveal -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-clip"></div>
+      </div>
+      <div class="component-info">
+        <h3>12. Clip Path Reveal</h3>
+        <p>Forma que se revela expandiendo su clip-path. Transición dramática.</p>
+        <span class="component-tag">transition</span>
+      </div>
+    </div>
+
+    <!-- 13. Shimmer Text -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-shimmer">SHIMMER</div>
+      </div>
+      <div class="component-info">
+        <h3>13. Shimmer Text</h3>
+        <p>Texto con brillo que barre de izquierda a derecha. Destacado elegante.</p>
+        <span class="component-tag">typography</span>
+      </div>
+    </div>
+
+    <!-- 14. Typing Cursor -->
+    <div class="component-card">
+      <div class="component-preview">
+        <span class="demo-typing">Escribiendo...</span>
+      </div>
+      <div class="component-info">
+        <h3>14. Typing Cursor</h3>
+        <p>Cursor parpadeante que simula escritura. Efecto terminal/chat.</p>
+        <span class="component-tag">typography</span>
+      </div>
+    </div>
+
+    <!-- 15. Geometric Spin -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-geo-spin"></div>
+      </div>
+      <div class="component-info">
+        <h3>15. Geometric Spin</h3>
+        <p>Figuras geométricas que rotan a diferentes velocidades. Abstracto y hipnótico.</p>
+        <span class="component-tag">ambient</span>
+      </div>
+    </div>
+
+    <!-- 16. Diagonal Slash -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-diagonal"></div>
+      </div>
+      <div class="component-info">
+        <h3>16. Diagonal Slash</h3>
+        <p>Línea diagonal que cruza el viewport. Dynamismo direccional.</p>
+        <span class="component-tag">line</span>
+      </div>
+    </div>
+
+    <!-- 17. Progress Bar Gradient -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-progress">
+          <div class="demo-progress-fill"></div>
+        </div>
+      </div>
+      <div class="component-info">
+        <h3>17. Progress Gradient</h3>
+        <p>Barra de progreso con gradiente y glow. Feedback visual premium.</p>
+        <span class="component-tag">progress</span>
+      </div>
+    </div>
+
+    <!-- 18. Spotlight -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-spotlight">
+          <span style="font-family: var(--headline); font-size: 20px; color: var(--white);">SPOTLIGHT</span>
+        </div>
+      </div>
+      <div class="component-info">
+        <h3>18. Spotlight Effect</h3>
+        <p>Glow pulsante que enfoca la atención. Similar a Apple keynotes.</p>
+        <span class="component-tag">focus</span>
+      </div>
+    </div>
+
+    <!-- 19. Float Image -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-float"></div>
+      </div>
+      <div class="component-info">
+        <h3>19. Float Image</h3>
+        <p>Imagen con sombra y movimiento flotante sutil. Galería interactiva.</p>
+        <span class="component-tag">image</span>
+      </div>
+    </div>
+
+    <!-- 20. Halftone Pattern -->
+    <div class="component-card">
+      <div class="component-preview">
+        <div class="demo-halftone"></div>
+        <div class="demo-mesh" style="opacity: 0.3;"></div>
+      </div>
+      <div class="component-info">
+        <h3>20. Halftone Pattern</h3>
+        <p>Patrón de puntos en movimiento. Estética print/retro moderna.</p>
+        <span class="component-tag">pattern</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CSS VARIABLES REFERENCE -->
+  <section class="css-vars">
+    <h2>Variables CSS Disponibles</h2>
+    <div class="vars-grid">
+      <div class="var-card">
+        <code>--electric-blue</code>
+        <span><span class="swatch" style="background: #0057FF;"></span>#0057FF — Acento principal</span>
+      </div>
+      <div class="var-card">
+        <code>--intense-red</code>
+        <span><span class="swatch" style="background: #FF2D00;"></span>#FF2D00 — Rojo intenso</span>
+      </div>
+      <div class="var-card">
+        <code>--obsidian</code>
+        <span><span class="swatch" style="background: #0A0A0A;"></span>#0A0A0A — Fondo principal</span>
+      </div>
+      <div class="var-card">
+        <code>--charcoal</code>
+        <span><span class="swatch" style="background: #1A1A1A;"></span>#1A1A1A — Cards/superficies</span>
+      </div>
+      <div class="var-card">
+        <code>--graphite</code>
+        <span><span class="swatch" style="background: #3A3A3A;"></span>#3A3A3A — Texto secundario</span>
+      </div>
+      <div class="var-card">
+        <code>--steel</code>
+        <span><span class="swatch" style="background: #6B6B6B;"></span>#6B6B6B — Body text</span>
+      </div>
+      <div class="var-card">
+        <code>--titanium</code>
+        <span><span class="swatch" style="background: #B8B8B8;"></span>#B8B8B8 — Statement text</span>
+      </div>
+      <div class="var-card">
+        <code>--silver</code>
+        <span><span class="swatch" style="background: #E0E0E0;"></span>#E0E0E0 — Contenido</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>20 Componentes SOTA — Presentación Jetro · Fundamentos IA 2024</p>
+  </footer>
+
+  <script>
+    // Magnetic Hover Effect
+    const magnetic = document.getElementById('magnetic');
+    if (magnetic) {
+      magnetic.addEventListener('mousemove', (e) => {
+        const rect = magnetic.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        magnetic.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+      });
+      magnetic.addEventListener('mouseleave', () => {
+        magnetic.style.transform = 'translate(0, 0)';
+      });
+    }
+  </script>
+
+</body>
+</html>

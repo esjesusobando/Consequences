@@ -1,0 +1,28 @@
+{
+  "cycles": [
+    {
+      "timestamp": "2026-03-30T01:56:51.546032",
+      "issues_detected": 100,
+      "issues_analyzed": 80,
+      "fixes_applied": 50,
+      "analysis_rate": 80.0,
+      "fix_rate": 62.5,
+      "health_score": 75,
+      "mode": "test"
+    }
+  ],
+  "baseline": {
+    "first_cycle": {
+      "timestamp": "2026-03-30T01:56:51.546032",
+      "issues_detected": 100,
+      "issues_analyzed": 80,
+      "fixes_applied": 50,
+      "analysis_rate": 80.0,
+      "fix_rate": 62.5,
+      "health_score": 75,
+      "mode": "test"
+    },
+    "health_score": 75,
+    "issues_detected": 100
+  }
+}

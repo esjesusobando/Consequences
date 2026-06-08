@@ -1,0 +1,134 @@
+---
+description: Protocolos de Ejecución - Workflows, Rituales y Metodología
+globs: **/*
+alwaysApply: true
+---
+
+# 📜 Protocolos de Ejecución
+
+<system_directives>
+  <fundamental_rule>
+    Los protocolos definen CÓMO ejecutar tareas, no qué hacer. Cada tarea tiene su flujo específico.
+  </fundamental_rule>
+</system_directives>
+
+---
+
+**Versión:** v4.9 Consequences (2026-05-28)
+
+---
+
+## 📋 SECCIÓN 01: Protocolo Genesis (Inicio)
+
+### workflow_genesis>
+
+1. **📖 LEER EL PROYECTO**:
+   - 00_Winter_is_Coming/AGENTS.md → Goals → Backlog → Engram
+   
+2. **📋 IDENTIFICAR**:
+   - Objetivos activos
+   - Tareas pendientes
+   - Contexto de sesiones previas
+
+3. **✅ PREPARARSE**:
+   - Cargar skills necesarias
+   - Verificar rutas y dependencias
+
+4. **🚀 EJECUTAR**:
+   -Working interactively
+   - Iterar hasta completar
+
+5. **💾 GUARDAR**:
+   - mem_session_summary al cerrar
+
+</workflow_genesis>
+
+---
+
+## 📋 SECCIÓN 02: Protocolo de Verificación (Pre-Ejecución)
+
+### verification_protocol>
+
+1. **IMPACT ANALYSIS**: Leer archivos afectados
+2. **DEPENDENCY CHECK**: Verificar imports/rutas
+3. **TEST PREP**: Asegurar tests existentes
+4. **BACKUP**: Si crítico, backup previo
+
+</verification_protocol>
+
+---
+
+## 📋 SECCIÓN 03: Protocolo de Bug Fix
+
+### bug_fix_protocol>
+
+1. **REPRODUCE**: Confirmar bug existe
+2. **INVESTIGATE**: Raíz del problema
+3. **FIX**: Aplicar solución
+4. **VERIFY**: Tests pass
+5. **DOCUMENT**: mem_save con root cause
+
+</bug_fix_protocol>
+
+---
+
+## 📋 SECCIÓN 04: Rituales Diarios
+
+| Ritual | Frecuencia | Propósito |
+|--------|-----------|----------|
+| Morning Standup | Diario | Plan del día |
+| Weekly Review | Semanal | Reflexión |
+| Backlog Triage | Diario | Priorización |
+| Context Sync | Diario | Sincronización |
+
+---
+
+## 📋 SECCIÓN 05: Protocolo de Commit
+
+### commit_rules>
+
+| Regla | Descripción |
+|-------|-------------|
+| NO "Co-Authored-By" | AI attribution prohibited |
+| Conventional Commits | tipo: descripción |
+| NO build after | Solo código |
+| NO commit unless asked | Esperar user request |
+
+### Commit Flow
+
+1. git status → Verificar cambios
+2. git diff → Revisar diff
+3. git log → Verificar estilo
+4. git add + commit → Crear commit
+
+---
+
+## 📋 SECCIÓN 06: Pull Request Protocol
+
+### PR Rules>
+
+| Regla | Descripción |
+|-------|-------------|
+| NO PR sin review | Siempre review previo |
+| Descripción clara | Qué, por qué, cómo |
+| Tests incluidos | Si aplica |
+| Screenshots/Videos | Si UI cambios |
+
+### PR Flow
+
+1. Branch crear
+2. Changes hacer
+3. PR description redactar
+4. PR crear con gh
+
+---
+
+## 📋 CHECKLIST PROTOCOLS
+
+- [ ] Genesis ejecutado al inicio?
+- [ ] Verificación pre-ejecución?
+- [ ] Bug fix protocol seguido?
+- [ ] Rituales programados?
+- [ ] Commit rules seguidas?
+
+*"Cáscara correcta, dentro fácil."*

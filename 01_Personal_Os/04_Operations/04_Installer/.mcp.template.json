@@ -1,0 +1,287 @@
+{
+  "mcpServers": {
+    "@magicuidesign/mcp": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@magicuidesign/mcp@latest"]
+    },
+
+    "aim-memory-bank": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "mcp-knowledge-graph",
+        "--memory-path",
+        ".aim"
+      ]
+    },
+
+    "context7": {
+      "transport": "streamableHttp",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": ""
+      }
+    },
+
+    "eagle-mcp": {
+      "transport": "streamableHttp",
+      "url": "http://localhost:41596/mcp"
+    },
+
+    "exa": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "exa-mcp-server"],
+      "env": {
+        "EXA_API_KEY": ""
+      }
+    },
+
+    "filesystem": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        ".",
+        "{{USER_DOWNLOADS}}"
+      ]
+    },
+
+    "fireflies": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://api.fireflies.ai/mcp",
+        "--header",
+        "Authorization: Bearer "
+      ]
+    },
+
+    "github": {
+      "transport": "streamableHttp",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": ""
+      }
+    },
+
+    "mcp-obsidian": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "obsidian-mcp@latest",
+        "{{USER_OBSIDIAN}}"
+      ]
+    },
+
+    "n8n-mcp": {
+      "transport": "stdio",
+      "command": "docker",
+      "args": ["run", "--rm", "-i", "ghcr.io/czlonkowski/n8n-mcp:latest"]
+    },
+
+    "Notion": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@notionhq/notion-mcp-server@latest"],
+      "env": {
+        "NOTION_TOKEN": ""
+      }
+    },
+
+    "Playwright": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["@playwright/mcp@latest"],
+      "env": {}
+    },
+
+    "supabase": {
+      "transport": "streamableHttp",
+      "url": "https://mcp.supabase.com/mcp",
+      "headers": {
+        "Authorization": "Bearer "
+      }
+    },
+
+    "task-master-ai": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "task-master-ai@latest"],
+      "env": {
+        "OPENROUTER_API_KEY": ""
+      }
+    },
+
+    "TestSprite": {
+      "transport": "stdio",
+      "command": "bash",
+      "args": ["04_Operations/00_Scripts/testsprite_failover.sh"]
+    },
+
+    "Linear": {
+      "transport": "streamableHttp",
+      "url": "https://mcp.linear.app/mcp",
+      "headers": {
+        "Authorization": "Bearer "
+      }
+    },
+
+    "Amplitude": {
+      "transport": "streamableHttp",
+      "url": "https://mcp.amplitude.com/mcp",
+      "headers": {}
+    },
+
+    "notebooklm": {
+      "transport": "stdio",
+      "command": "notebooklm-mcp.cmd"
+    },
+
+    "supadata": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@supadata/mcp@latest"],
+      "env": {
+        "SUPADATA_API_KEY": ""
+      }
+    },
+
+    "zai-mcp-server": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@z_ai/mcp-server"],
+      "env": {
+        "Z_AI_API_KEY": "",
+        "Z_AI_MODE": "ZAI"
+      }
+    },
+
+    "excalidraw-yctimlin": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "excalidraw-mcp@latest"],
+      "env": {
+        "EXCALIDRAW_VAULT_PATH": "{{USER_EXCALIDRAW}}"
+      }
+    },
+
+    "engram": {
+      "transport": "stdio",
+      "command": "./05_System/05_Core/Engram/engram.exe",
+      "args": ["mcp"]
+    },
+
+    "pencil": {
+      "transport": "stdio",
+      "command": "./05_System/09_Bin/.bin/openpencil-mcp.cmd",
+      "args": []
+    },
+
+    "obsidian-api": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "obsidian-mcp@latest",
+        "{{USER_OBSIDIAN}}"
+      ]
+    },
+
+    "google-workspace": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@presto-ai/google-workspace-mcp"]
+    },
+
+    "chrome-devtools": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "chrome-devtools-mcp@latest"]
+    },
+
+    "brave-search": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@modelcontextprotocol/server-brave-search"],
+      "env": {
+        "BRAVE_API_KEY": ""
+      }
+    },
+
+    "postgres": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@modelcontextprotocol/server-postgres"],
+      "env": {
+        "POSTGRES_CONNECTION_STRING": ""
+      }
+    },
+
+    "sqlite": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@modelcontextprotocol/server-sqlite"],
+      "env": {
+        "DB_PATH": "./database.db"
+      }
+    },
+
+    "slack": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@modelcontextprotocol/server-slack"],
+      "env": {
+        "SLACK_BOT_TOKEN": ""
+      }
+    },
+
+    "sentry": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@modelcontextprotocol/server-sentry"],
+      "env": {
+        "SENTRY_AUTH_TOKEN": "",
+        "SENTRY_ORG": "",
+        "SENTRY_PROJECT": ""
+      }
+    },
+
+    "stackoverflow": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@modelcontextprotocol/server-stackoverflow"]
+    },
+
+    "docker": {
+      "transport": "stdio",
+      "command": "docker",
+      "args": ["run", "--rm", "-i", "--mount", "type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock", "mcp/docker:latest"]
+    },
+
+    "atlassian": {
+      "transport": "streamableHttp",
+      "url": "https://mcp.atlassian.com/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer "
+      }
+    },
+
+    "jira-extended": {
+      "transport": "stdio",
+      "command": "uvx",
+      "args": ["mcp-atlassian-extended"],
+      "env": {
+        "ATLASSIAN_API_TOKEN": "",
+        "ATLASSIAN_EMAIL": "",
+        "ATLASSIAN_DOMAIN": ""
+      }
+    }
+  }
+}

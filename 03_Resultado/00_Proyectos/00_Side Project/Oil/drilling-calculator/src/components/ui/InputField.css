@@ -1,0 +1,98 @@
+/* ============================================================
+   InputField — Silicon Valley Precision (Rams Style)
+   ============================================================ */
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.input-field__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2px;
+}
+
+.input-field__label {
+  font-size: 10px;
+  font-weight: var(--sh-font-weight-title);
+  color: var(--sh-grey-500);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.input-field__unit {
+  font-weight: 700;
+  color: var(--sh-grey-400);
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+.input-field__input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  border-radius: 12px;
+  background: var(--sh-grey-50);
+  border: 1px solid var(--sh-grey-100);
+  color: var(--sh-grey-900);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+.input-field__input:hover {
+  background: white;
+  border-color: var(--sh-grey-200);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.input-field__input:focus {
+  background: white;
+  border-color: var(--sh-azul);
+  box-shadow:
+    0 0 0 1px white,
+    0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Status variants */
+.input-field.invalid .input-field__input {
+  border-color: var(--color-critical);
+  background: #fffafa;
+}
+
+.input-field.warning .input-field__input {
+  border-color: var(--color-warning);
+  background: #fffdf5;
+}
+
+.input-field__msg {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 0 0 2px;
+  font-family: var(--font-sans);
+}
+
+.input-field__msg--error {
+  color: var(--color-critical);
+}
+.input-field__msg--warning {
+  color: var(--color-warning);
+}
+
+/* Chrome, Safari, Edge, Opera */
+.input-field__input::-webkit-outer-spin-button,
+.input-field__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input-field__input[type="number"] {
+  -moz-appearance: textfield;
+}

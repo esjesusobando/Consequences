@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA Components — Dynamic Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="design-tokens.css">
+  <style>
+    /* ===========================================
+       COMPONENTS SHOWCASE
+       Architecture: Dumbledor Design System
+       =========================================== */
+
+    :root {
+      --navy: #1E2530;
+      --navy-light: #2A323D;
+      --navy-dark: #151A21;
+      --white: #FFFFFF;
+      --orange: #FF6B35;
+      --border: #414B5A;
+      --gray: #6B7785;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    /* ===========================================
+       HEADER
+       =========================================== */
+    .header {
+      padding: var(--space-16) var(--space-8);
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .header h1 {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.03em;
+      margin-bottom: var(--space-4);
+    }
+
+    .header h1 .accent { color: var(--orange); }
+
+    .header p {
+      font-size: 16px;
+      color: var(--gray);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ===========================================
+       SECTION
+       =========================================== */
+    .section {
+      padding: var(--space-16) var(--space-8);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+      margin-bottom: var(--space-8);
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--orange);
+    }
+
+    .section-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ===========================================
+       COMPONENT DEMO GRID
+       =========================================== */
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--space-8);
+    }
+
+    .demo-card {
+      background: var(--navy-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .demo-preview {
+      padding: var(--space-8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 160px;
+      background: var(--navy-dark);
+    }
+
+    .demo-code {
+      padding: var(--space-4);
+      background: var(--navy);
+      border-top: 1px solid var(--border);
+    }
+
+    .demo-code summary {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gray);
+      cursor: pointer;
+      padding: var(--space-2);
+    }
+
+    .demo-code pre {
+      margin-top: var(--space-2);
+      font-family: 'SF Mono', monospace;
+      font-size: 12px;
+      color: var(--white-80);
+      white-space: pre-wrap;
+      overflow-x: auto;
+    }
+
+    /* ===========================================
+       NAVIGATION COMPONENTS
+       =========================================== */
+
+    /* 1. NavDots */
+    .nav-dots {
+      display: flex;
+      gap: var(--space-2);
+    }
+
+    .nav-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--border);
+      cursor: pointer;
+      transition: all var(--transition-base);
+    }
+
+    .nav-dot:hover { background: var(--orange-400); transform: scale(1.2); }
+    .nav-dot.active { background: var(--orange); transform: scale(1.3); }
+
+    /* 2. NavArrows */
+    .nav-arrows {
+      display: flex;
+      gap: var(--space-3);
+    }
+
+    .nav-arrow {
+      width: 48px;
+      height: 48px;
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      background: transparent;
+      color: var(--white);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--transition-base);
+    }
+
+    .nav-arrow:hover {
+      background: var(--orange);
+      border-color: var(--orange);
+    }
+
+    .nav-arrow svg { width: 20px; height: 20px; }
+
+    /* 3. ProgressBar */
+    .progress-bar {
+      height: 4px;
+      background: var(--border);
+      border-radius: var(--radius-full);
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--orange);
+      transition: width var(--transition-slow);
+    }
+
+    /* 4. SlideCounter */
+    .slide-counter {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--gray);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .slide-counter .current { color: var(--orange); }
+    .slide-counter .total { color: var(--gray); }
+
+    /* ===========================================
+       CONTENT COMPONENTS
+       =========================================== */
+
+    /* 5. Badge */
+    .badge {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--white);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: var(--radius-sm);
+    }
+
+    .badge.outline {
+      background: transparent;
+      border: 1px solid var(--orange);
+    }
+
+    .badge.ghost {
+      background: var(--white-10);
+      color: var(--white);
+    }
+
+    /* 6. Card */
+    .card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: var(--space-6);
+      background: var(--navy-light);
+    }
+
+    .card.highlight {
+      border-color: var(--orange);
+      background: rgba(255, 107, 53, 0.08);
+    }
+
+    /* 7. Divider */
+    .divider {
+      width: 48px;
+      height: 3px;
+      background: var(--orange);
+      border-radius: var(--radius-sm);
+    }
+
+    .divider.vertical {
+      width: 3px;
+      height: 48px;
+    }
+
+    /* 8. KeyList */
+    .key-list {
+      list-style: none;
+    }
+
+    .key-list li {
+      padding: var(--space-3) 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+    }
+
+    .key-list li:last-child { border-bottom: none; }
+
+    .key-list li::before {
+      content: '→';
+      color: var(--orange);
+      font-weight: 700;
+    }
+
+    /* 9. StatsGrid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+    }
+
+    .stat-item { text-align: center; }
+
+    .stat-value {
+      font-size: clamp(36px, 4vw, 48px);
+      font-weight: 900;
+      color: var(--orange);
+      line-height: 1;
+      margin-bottom: var(--space-2);
+    }
+
+    .stat-label {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--gray);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* 10. Quote */
+    .quote {
+      border-left: 3px solid var(--orange);
+      padding-left: var(--space-6);
+      font-size: 18px;
+      font-style: italic;
+      color: var(--white-90);
+    }
+
+    /* ===========================================
+       INTERACTIVE COMPONENTS
+       =========================================== */
+
+    /* 11. Tabs */
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .tab {
+      padding: var(--space-3) var(--space-6);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--gray);
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all var(--transition-base);
+    }
+
+    .tab:hover { color: var(--white); }
+
+    .tab.active {
+      color: var(--orange);
+      border-bottom-color: var(--orange);
+    }
+
+    .tab-content {
+      padding: var(--space-6);
+      display: none;
+    }
+
+    .tab-content.active { display: block; }
+
+    /* 12. Accordion */
+    .accordion-item {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      margin-bottom: var(--space-2);
+      overflow: hidden;
+    }
+
+    .accordion-header {
+      padding: var(--space-4) var(--space-5);
+      background: var(--navy-light);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      transition: background var(--transition-base);
+    }
+
+    .accordion-header:hover { background: var(--navy-400); }
+
+    .accordion-header::after {
+      content: '+';
+      font-size: 20px;
+      color: var(--orange);
+      transition: transform var(--transition-base);
+    }
+
+    .accordion-item.open .accordion-header::after {
+      transform: rotate(45deg);
+    }
+
+    .accordion-content {
+      padding: 0 var(--space-5);
+      max-height: 0;
+      overflow: hidden;
+      transition: all var(--transition-slow);
+    }
+
+    .accordion-item.open .accordion-content {
+      padding: var(--space-4) var(--space-5);
+      max-height: 500px;
+    }
+
+    /* 13. CopyButton */
+    .copy-btn {
+      padding: var(--space-2) var(--space-4);
+      background: var(--orange);
+      color: var(--white);
+      border: none;
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      transition: all var(--transition-base);
+    }
+
+    .copy-btn:hover { background: var(--orange-dark); }
+
+    .copy-btn.copied {
+      background: var(--color-success);
+    }
+
+    /* 14. CodeBlock */
+    .code-block {
+      background: var(--navy-dark);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .code-header {
+      padding: var(--space-2) var(--space-4);
+      background: var(--navy);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .code-lang {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--gray);
+    }
+
+    .code-body {
+      padding: var(--space-4);
+      font-family: 'SF Mono', monospace;
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--white-90);
+      overflow-x: auto;
+    }
+
+    /* 15. Tooltip */
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+
+    .tooltip-text {
+      visibility: hidden;
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: var(--space-2) var(--space-3);
+      background: var(--navy-300);
+      color: var(--white);
+      font-size: 12px;
+      white-space: nowrap;
+      border-radius: var(--radius-sm);
+      margin-bottom: var(--space-2);
+      z-index: var(--z-tooltip);
+    }
+
+    .tooltip:hover .tooltip-text {
+      visibility: visible;
+    }
+
+    /* ===========================================
+       ANIMATIONS
+       =========================================== */
+
+    /* 16. StaggerChildren */
+    .stagger-demo > * {
+      opacity: 0;
+      animation: fadeInUp 0.5s ease-out forwards;
+    }
+
+    .stagger-demo > *:nth-child(1) { animation-delay: 0.1s; }
+    .stagger-demo > *:nth-child(2) { animation-delay: 0.2s; }
+    .stagger-demo > *:nth-child(3) { animation-delay: 0.3s; }
+    .stagger-demo > *:nth-child(4) { animation-delay: 0.4s; }
+    .stagger-demo > *:nth-child(5) { animation-delay: 0.5s; }
+
+    /* 17. HoverGlow */
+    .hover-glow {
+      padding: var(--space-6);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: all var(--transition-base);
+    }
+
+    .hover-glow:hover {
+      border-color: var(--orange);
+      box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+    }
+
+    /* 18. ScrollHint */
+    .scroll-hint {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--space-2);
+      color: var(--gray);
+      font-size: 12px;
+      animation: bounce 2s infinite;
+    }
+
+    /* 19. NumberAccent */
+    .number-accent {
+      font-size: 120px;
+      font-weight: 900;
+      color: var(--white);
+      opacity: 0.03;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    /* 20. VisualBox */
+    .visual-box {
+      width: 200px;
+      height: 200px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-3);
+    }
+
+    .visual-box .icon { font-size: 48px; }
+
+    .visual-box .label {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gray);
+    }
+
+    /* ===========================================
+       RESPONSIVE
+       =========================================== */
+    @media (max-width: 768px) {
+      .stats-grid { grid-template-columns: 1fr; }
+      .demo-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>IA <span class="accent">Components</span></h1>
+    <p>Sistema de componentes dinámicos para presentaciones de alto impacto. Inspirado en Dumbledor Design + Impeccable Style.</p>
+  </header>
+
+  <!-- =============================================
+       SECTION 1: NAVIGATION COMPONENTS
+       ============================================= -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-title">Navegación</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="demo-grid">
+
+      <!-- 1. NavDots -->
+      <div class="demo-card">
+        <div class="demo-preview">
+          <div class="nav-dots">
+            <div class="nav-dot active"></div>
+            <div class="nav-dot"></div>
+            <div class="nav-dot"></div>
+            <div class="nav-dot"></div>
+            <div class="nav-dot"></div>
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;nav class="nav-dots"&gt;
+  &lt;div class="nav-dot active"&gt;&lt;/div&gt;
+  &lt;div class="nav-dot"&gt;&lt;/div&gt;
+  &lt;div class="nav-dot"&gt;&lt;/div&gt;
+&lt;/nav&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- 2. NavArrows -->
+      <div class="demo-card">
+        <div class="demo-preview">
+          <div class="nav-arrows">
+            <button class="nav-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6"/>
+              </svg>
+            </button>
+            <button class="nav-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;div class="nav-arrows"&gt;
+  &lt;button class="nav-arrow"&gt;
+    &lt;svg&gt;...&lt;/svg&gt;
+  &lt;/button&gt;
+  &lt;button class="nav-arrow"&gt;
+    &lt;svg&gt;...&lt;/svg&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- 3. ProgressBar -->
+      <div class="demo-card">
+        <div class="demo-preview">
+          <div style="width: 200px;">
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 65%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;div class="progress-bar"&gt;
+  &lt;div class="progress-fill" style="width: 65%;"&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- 4. SlideCounter -->
+      <div class="demo-card">
+        <div class="demo-preview">
+          <div class="slide-counter">
+            <span class="current">07</span>
+            <span class="total">/ 25</span>
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;div class="slide-counter"&gt;
+  &lt;span class="current"&gt;07&lt;/span&gt;
+  &lt;span class="total"&gt;/ 25&lt;/span&gt;
+&lt;/div&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       SECTION 2: CONTENT COMPONENTS
+       ============================================= -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-title">Contenido</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="demo-grid">
+
+      <!-- 5. Badge -->
+      <div class="demo-card">
+        <div class="demo-preview" style="flex-direction: column; gap: 16px;">
+          <span class="badge">IA Moderna</span>
+          <span class="badge outline">Machine Learning</span>
+          <span class="badge ghost">Research</span>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;span class="badge"&gt;Label&lt;/span&gt;
+&lt;span class="badge outline"&gt;Label&lt;/span&gt;
+&lt;span class="badge ghost"&gt;Label&lt;/span&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- 6. Card -->
+      <div class="demo-card">
+        <div class="demo-preview">
+          <div class="card" style="max-width: 280px;">
+            <p>Card content with <strong>highlighted text</strong> and supporting details.</p>
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;div class="card"&gt;
+  &lt;p&gt;Card content...&lt;/p&gt;
+&lt;/div&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- 7. Divider -->
+      <div class="demo-card">
+        <div class="demo-preview" style="flex-direction: column; gap: 24px;">
+          <div class="divider"></div>
+          <div class="divider vertical"></div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;div class="divider"&gt;&lt;/div&gt;
+&lt;div class="divider vertical"&gt;&lt;/div&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- 8. KeyList -->
+      <div class="demo-card">
+        <div class="demo-preview">
+          <ul class="key-list" style="width: 100%; max-width: 280px;">
+            <li>Backpropagation ajusta pesos</li>
+            <li>Regularización previene overfitting</li>
+            <li>Transfer learning habilitado</li>
+          </ul>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;ul class="key-list"&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- 9. StatsGrid -->
+      <div class="demo-card">
+        <div class="demo-preview">
+          <div class="stats-grid" style="max-width: 300px;">
+            <div class="stat-item">
+              <div class="stat-value">175B</div>
+              <div class="stat-label">Parámetros</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">1M+</div>
+              <div class="stat-label">Tokens</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">99%</div>
+              <div class="stat-label">Precisión</div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;div class="stats-grid"&gt;
+  &lt;div class="stat-item"&gt;
+    &lt;div class="stat-value"&gt;175B&lt;/div&gt;
+    &lt;div class="stat-label"&gt;Parámetros&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- 10. Quote -->
+      <div class="demo-card">
+        <div class="demo-preview">
+          <div class="quote" style="max-width: 280px;">
+            "No memorizan palabras — memorizan patrones de relaciones entre conceptos."
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;div class="quote"&gt;
+  "Quote text here..."
+&lt;/div&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       SECTION 3: INTERACTIVE COMPONENTS
+       ============================================= -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-title">Interactividad</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="demo-grid">
+
+      <!-- 11. Tabs -->
+      <div class="demo-card">
+        <div class="demo-preview">
+          <div style="width: 100%; max-width: 320px;">
+            <div class="tabs">
+              <div class="tab active">Research</div>
+              <div class="tab">Writing</div>
+              <div class="tab">Learning</div>
+            </div>
+            <div class="tab-content active">
+              <p>Contenido del tab Research con detalles específicos...</p>
+            </div>
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;div class="tabs"&gt;
+  &lt;div class="tab active"&gt;Tab 1&lt;/div&gt;
+  &lt;div class="tab"&gt;Tab 2&lt;/div&gt;
+&lt;/div&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- 12. Accordion -->
+      <div class="demo-card">
+        <div class="demo-preview" style="width: 100%;">
+          <div class="accordion-item open">
+            <div class="accordion-header">¿Qué es Machine Learning?</div>
+            <div class="accordion-content">
+              <p>El machine learning es una rama de la IA que permite a las máquinas aprender de datos sin ser programadas explícitamente.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header">¿Qué es Deep Learning?</div>
+            <div class="accordion-content">
+              <p>Deep learning usa redes neuronales profundas para aprender representaciones jerárquicas de los datos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;div class="accordion-item open"&gt;
+  &lt;div class="accordion-header"&gt;Title&lt;/div&gt;
+  &lt;div class="accordion-content"&gt;
+    &lt;p&gt;Content...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- 13. CopyButton -->
+      <div class="demo-card">
+        <div class="demo-preview">
+          <button class="copy-btn" onclick="copyPrompt(this)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            Copiar Prompt
+          </button>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;button class="copy-btn" onclick="copyPrompt(this)"&gt;
+  Copiar Prompt
+&lt;/button&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- 14. CodeBlock -->
+      <div class="demo-card">
+        <div class="demo-preview">
+          <div class="code-block" style="width: 100%; max-width: 320px;">
+            <div class="code-header">
+              <span class="code-lang">JavaScript</span>
+              <button class="copy-btn" style="padding: 4px 8px; font-size: 10px;">Copy</button>
+            </div>
+            <div class="code-body">
+              const prompt = `Rol: Eres un profesor`<br>
+              `Tarea: Crea 10 preguntas`<br>
+              `Formato: Tabla`
+            </div>
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;div class="code-block"&gt;
+  &lt;div class="code-header"&gt;
+    &lt;span class="code-lang"&gt;JavaScript&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class="code-body"&gt;
+    code here...
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- 15. Tooltip -->
+      <div class="demo-card">
+        <div class="demo-preview">
+          <div class="tooltip">
+            <span style="color: var(--orange); cursor: help;">Hover me</span>
+            <span class="tooltip-text">Tooltip con información adicional</span>
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;div class="tooltip"&gt;
+  &lt;span&gt;Hover me&lt;/span&gt;
+  &lt;span class="tooltip-text"&gt;Tooltip text&lt;/span&gt;
+&lt;/div&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       SECTION 4: ANIMATION COMPONENTS
+       ============================================= -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-title">Animaciones</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="demo-grid">
+
+      <!-- 16. StaggerChildren -->
+      <div class="demo-card">
+        <div class="demo-preview">
+          <div class="stagger-demo" style="width: 100%;">
+            <div class="badge">Item 1</div>
+            <div class="badge">Item 2</div>
+            <div class="badge">Item 3</div>
+            <div class="badge">Item 4</div>
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;div class="stagger-demo"&gt;
+  &lt;div&gt;Item 1&lt;/div&gt;
+  &lt;div&gt;Item 2&lt;/div&gt;
+  &lt;div&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- 17. HoverGlow -->
+      <div class="demo-card">
+        <div class="demo-preview">
+          <div class="hover-glow">
+            <span class="badge">Hover para glow</span>
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;div class="hover-glow"&gt;
+  Content here
+&lt;/div&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- 18. ScrollHint -->
+      <div class="demo-card">
+        <div class="demo-preview">
+          <div class="scroll-hint">
+            <span>SCROLL</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;div class="scroll-hint"&gt;
+  &lt;span&gt;SCROLL&lt;/span&gt;
+  &lt;svg&gt;...&lt;/svg&gt;
+&lt;/div&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- 19. NumberAccent -->
+      <div class="demo-card">
+        <div class="demo-preview" style="position: relative;">
+          <div class="number-accent">01</div>
+          <span class="badge" style="position: relative; z-index: 1;">Overlay Demo</span>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;div class="number-accent"&gt;01&lt;/div&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- 20. VisualBox -->
+      <div class="demo-card">
+        <div class="demo-preview">
+          <div class="visual-box">
+            <span class="icon">⚡</span>
+            <span class="label">Transformers</span>
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;div class="visual-box"&gt;
+  &lt;span class="icon"&gt;⚡&lt;/span&gt;
+  &lt;span class="label"&gt;Label&lt;/span&gt;
+&lt;/div&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       SECTION 5: SLIDE LAYOUT TEMPLATES
+       ============================================= -->
+  <section class="section">
+    <div class="section-header">
+      <span class="section-title">Templates de Slide</span>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="demo-grid">
+
+      <!-- Title Slide -->
+      <div class="demo-card">
+        <div class="demo-preview" style="flex-direction: column; gap: 16px; text-align: center; padding: 32px;">
+          <span class="badge">IA Moderna</span>
+          <h2 style="font-size: 28px; font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em;">
+            INTELIGENCIA<br><span style="color: var(--orange);">ARTIFICIAL</span>
+          </h2>
+          <div class="divider" style="margin: 0 auto;"></div>
+          <p style="font-size: 14px; color: var(--gray);">Subtítulo descriptivo</p>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;section class="slide centered"&gt;
+  &lt;span class="badge"&gt;Label&lt;/span&gt;
+  &lt;h1 class="headline"&gt;Title&lt;/h1&gt;
+  &lt;div class="divider"&gt;&lt;/div&gt;
+  &lt;p class="statement"&gt;Subtitle&lt;/p&gt;
+&lt;/section&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- Content Slide -->
+      <div class="demo-card">
+        <div class="demo-preview" style="flex-direction: column; gap: 12px; padding: 24px;">
+          <div style="display: flex; gap: 12px; align-items: center;">
+            <span class="badge">Machine Learning</span>
+            <span style="font-size: 12px; color: var(--gray);">01 / 25</span>
+          </div>
+          <h2 style="font-size: 24px; font-weight: 700; text-transform: uppercase;">ANATOMÍA DEL PROMPT</h2>
+          <div class="stats-grid" style="gap: 16px; margin-top: 8px;">
+            <div class="stat-item">
+              <div class="stat-value" style="font-size: 24px;">ROL</div>
+              <div class="stat-label">Quién</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value" style="font-size: 24px;">TASK</div>
+              <div class="stat-label">Qué</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value" style="font-size: 24px;">CTX</div>
+              <div class="stat-label">Contexto</div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;section class="slide"&gt;
+  &lt;div class="slide-header"&gt;
+    &lt;span class="badge"&gt;Label&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;h1 class="headline"&gt;Title&lt;/h1&gt;
+  &lt;div class="stats-grid"&gt;
+    &lt;div class="stat-item"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+      <!-- Split Slide -->
+      <div class="demo-card">
+        <div class="demo-preview" style="padding: 24px; flex-direction: column; gap: 16px;">
+          <div style="display: flex; gap: 24px;">
+            <div style="flex: 1;">
+              <span class="badge">Búsqueda</span>
+              <h2 style="font-size: 20px; font-weight: 700; margin: 8px 0;">PERPLEXITY vs GOOGLE</h2>
+              <p style="font-size: 12px; color: var(--gray);">No es un buscador...</p>
+              <ul class="key-list" style="margin-top: 12px;">
+                <li>Academic</li>
+                <li>Writing</li>
+              </ul>
+            </div>
+            <div style="width: 80px; height: 80px; border: 1px solid var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+              🔍
+            </div>
+          </div>
+        </div>
+        <div class="demo-code">
+          <details>
+            <summary>Código</summary>
+            <pre>&lt;section class="slide split"&gt;
+  &lt;div class="split-content"&gt;
+    content
+  &lt;/div&gt;
+  &lt;div class="split-visual"&gt;
+    visual
+  &lt;/div&gt;
+&lt;/section&gt;</pre>
+          </details>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       JAVASCRIPT
+       ============================================= -->
+  <script>
+    // =============================================
+    // COPY PROMPT
+    // =============================================
+    function copyPrompt(btn) {
+      const text = btn.closest('.demo-card').querySelector('.code-body').textContent;
+      navigator.clipboard.writeText(text).then(() => {
+        btn.classList.add('copied');
+        btn.textContent = '✓ Copiado';
+        setTimeout(() => {
+          btn.classList.remove('copied');
+          btn.innerHTML = `
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            Copiar Prompt
+          `;
+        }, 2000);
+      });
+    }
+
+    // =============================================
+    // TABS
+    // =============================================
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const container = tab.closest('.demo-card');
+        container.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        container.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        const target = container.querySelector(`.tab-content:nth-of-type(${tab.index() + 1})`);
+        if (target) target.classList.add('active');
+      });
+    });
+
+    // =============================================
+    // ACCORDION
+    // =============================================
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const item = header.closest('.accordion-item');
+        item.classList.toggle('open');
+      });
+    });
+  </script>
+
+</body>
+</html>

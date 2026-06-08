@@ -1,0 +1,220 @@
+{
+  "mcpServers": {
+    "@magicuidesign/mcp": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@magicuidesign/mcp@latest"]
+    },
+    "aim-memory-bank": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "mcp-knowledge-graph", "--memory-path", ".aim"]
+    },
+    "context7": {
+      "transport": "streamableHttp",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "CONTEXT7_API_KEY": "YOUR_API_KEY_HERE"
+      }
+    },
+    "eagle-mcp": {
+      "transport": "streamableHttp",
+      "url": "http://localhost:41596/mcp"
+    },
+    "exa": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "exa-mcp-server"],
+      "env": {
+        "EXA_API_KEY": "YOUR_API_KEY_HERE"
+      }
+    },
+    "filesystem": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        ".",
+        "C:\\Users\\YOUR_USER\\Downloads"
+      ]
+    },
+    "fireflies": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://api.fireflies.ai/mcp",
+        "--header",
+        "Authorization: Bearer YOUR_API_KEY_HERE"
+      ]
+    },
+    "github": {
+      "transport": "streamableHttp",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "YOUR_GITHUB_PAT_HERE"
+      }
+    },
+    "mcp-obsidian": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "obsidian-mcp@latest",
+        "YOUR_OBSIDIAN_VAULT_PATH"
+      ]
+    },
+    "n8n-mcp": {
+      "transport": "stdio",
+      "command": "docker",
+      "args": ["run", "--rm", "-i", "ghcr.io/czlonkowski/n8n-mcp:latest"]
+    },
+    "Notion": {
+      "enable": true,
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@notionhq/notion-mcp-server@latest"],
+      "env": {
+        "NOTION_TOKEN": "YOUR_NOTION_TOKEN_HERE"
+      }
+    },
+    "Playwright": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["@playwright/mcp@latest"],
+      "env": {}
+    },
+    "supabase": {
+      "transport": "streamableHttp",
+      "url": "https://mcp.supabase.com/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_SUPABASE_KEY_HERE"
+      }
+    },
+    "task-master-ai": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "task-master-ai@latest"],
+      "env": {
+        "OPENROUTER_API_KEY": "YOUR_OPENROUTER_KEY_HERE"
+      }
+    },
+    "TestSprite": {
+      "transport": "stdio",
+      "command": "bash",
+      "args": [
+        "./08_Scripts_Os/testsprite_failover.sh"
+      ],
+      "env": {
+        "TESTSPRITE_PRIMARY": "YOUR_TESTSPRITE_KEY_HERE"
+      }
+    },
+    "Linear": {
+      "transport": "streamableHttp",
+      "url": "https://mcp.linear.app/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_LINEAR_TOKEN_HERE"
+      }
+    },
+    "Amplitude": {
+      "transport": "streamableHttp",
+      "url": "https://mcp.amplitude.com/mcp",
+      "headers": {}
+    },
+    "notebooklm": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "notebooklm-mcp@latest"]
+    },
+    "supadata": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@supadata/mcp@latest"],
+      "env": {
+        "SUPADATA_API_KEY": "YOUR_SUPADATA_KEY_HERE"
+      }
+    },
+    "zai-mcp-server": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@z_ai/mcp-server"],
+      "env": {
+        "Z_AI_API_KEY": "YOUR_ZAI_KEY_HERE",
+        "Z_AI_MODE": "ZAI"
+      }
+    },
+    "excalidraw-yctimlin": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "excalidraw-mcp@latest"],
+      "env": {
+        "EXCALIDRAW_VAULT_PATH": "YOUR_EXCALIDRAW_VAULT_PATH"
+      }
+    },
+    "firecrawl-mcp": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": "YOUR_FIRECRAWL_KEY_HERE"
+      }
+    },
+    "engram": {
+      "transport": "stdio",
+      "command": "engram",
+      "args": ["mcp"]
+    },
+    "pencil": {
+      "transport": "stdio",
+      "command": "openpencil-mcp.cmd",
+      "args": []
+    },
+    "obsidian-api": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "obsidian-mcp@latest",
+        "YOUR_OBSIDIAN_VAULT_PATH"
+      ]
+    },
+    "google-workspace": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@presto-ai/google-workspace-mcp"]
+    },
+    "chrome-devtools": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "chrome-devtools-mcp@latest"]
+    },
+    "stackoverflow": {
+      "transport": "stdio",
+      "command": "npx.cmd",
+      "args": ["-y", "@modelcontextprotocol/server-stackoverflow"]
+    },
+    "docker": {
+      "transport": "stdio",
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--mount",
+        "type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock",
+        "mcp/docker:latest"
+      ]
+    },
+    "qmd": {
+      "transport": "stdio",
+      "command": "qmd",
+      "args": ["mcp"]
+    },
+    "vercel": {
+      "transport": "streamableHttp",
+      "url": "https://mcp.vercel.com"
+    }
+  }
+}

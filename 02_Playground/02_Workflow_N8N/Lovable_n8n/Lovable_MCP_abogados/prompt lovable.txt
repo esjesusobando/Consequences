@@ -1,0 +1,141 @@
+Quiero que generes una landing page completa para un despacho de abogados en España usando React y Tailwind CSS, en un único archivo de componente principal (por ejemplo, App.tsx o similar).
+
+REQUISITOS GENERALES
+- Todo el contenido visible (textos, botones, placeholders, labels) debe estar en español, tono profesional, cercano y claro.
+- Estilo visual: minimalista, elegante, corporativo, inspirado en webs modernas de despachos de abogados premium.
+- Paleta: tonos neutros (blancos, grises, azul marino o similares), con buen contraste y legibilidad.
+- Diseño completamente responsive (móvil primero): debe verse perfecto en móvil, tablet y escritorio.
+- Usa Tailwind para todo el diseño (no CSS separado). Incluye clases listas para producción.
+- Estructura el código en un único componente principal claro y ordenado, con subcomponentes internos si lo ves necesario.
+
+ESTRUCTURA DE LA LANDING
+
+1) CABECERA (HEADER)
+- Logo de texto: “Bufete García & Asociados” (que se pueda cambiar fácilmente).
+- Menú de navegación con scroll suave a secciones: “Inicio”, “Servicios”, “Por qué elegirnos”, “Dudas frecuentes”, “Contacto”.
+- Botón destacado en la derecha: “Reserva una consulta”.
+
+2) SECCIÓN HERO (INICIO)
+- Fondo limpio y elegante, puede incluir un ligero degradado o imagen de fondo muy sutil usando sólo estilos (sin imágenes externas obligatorias).
+- Título principal (H1) en español, por ejemplo: “Defendemos tus derechos con rigor y transparencia.”
+- Subtítulo explicando que es un despacho de abogados especializado (civil, laboral, penal, mercantil, etc., inventa tú una propuesta coherente).
+- Dos CTAs:
+  - Botón principal: “Agenda una llamada”.
+  - Botón secundario: “Escríbenos por WhatsApp”.
+- Pequeño texto de confianza: años de experiencia, número aproximado de clientes satisfechos, etc. (datos ficticios pero creíbles).
+
+3) SECCIÓN “SERVICIOS”
+- Título: “Áreas de especialización”.
+- Tarjetas de servicio (al menos 4):
+  - Derecho civil
+  - Derecho laboral
+  - Derecho penal
+  - Derecho mercantil / empresarial
+- Cada tarjeta con:
+  - Icono simple usando solo Tailwind (por ejemplo, círculo con letra o un pseudo-icono).
+  - Título del servicio.
+  - Breve descripción (2–3 líneas) explicando cómo ayuda al cliente.
+- Añade un pequeño botón o link en cada tarjeta: “Ver más detalles”.
+
+4) SECCIÓN “POR QUÉ ELEGIRNOS”
+- Título: “Por qué elegir nuestro despacho”.
+- Lista de 3–4 ventajas clave, por ejemplo:
+  - Trato cercano y personalizado.
+  - Respuesta rápida y seguimiento continuo.
+  - Transparencia en honorarios.
+  - Especialistas en resolución de conflictos complejos.
+- Incluye pequeños “highlights” numéricos (estadísticas ficticias), por ejemplo:
+  - “+250 casos resueltos con éxito”
+  - “+10 años de experiencia”
+- Diseño tipo grid con iconos o badges.
+
+5) SECCIÓN “DUDAS FRECUENTES” (FAQ)
+- Título: “Dudas frecuentes”.
+- Crea un acordeón de preguntas frecuentes, implementado con React (estado local) y Tailwind para las transiciones.
+- Mínimo 6 preguntas y respuestas, por ejemplo:
+  - “¿Cuánto cuesta la primera consulta?”
+  - “¿Trabajáis con honorarios fijos o por horas?”
+  - “¿Podemos tener una reunión online?”
+  - “¿Qué documentos necesito aportar?”
+  - “¿En cuánto tiempo respondéis a una consulta?”
+  - “¿Lleváis casos en toda España?”
+- Cada item: al hacer clic en la pregunta, se despliega la respuesta con una animación suave (por ejemplo, max-height + transition, o simplemente condicional con buena separación visual).
+
+6) SECCIÓN “CONTACTO”
+- Título: “Contacto”.
+- Breve texto invitando a contactar: “Cuéntanos tu caso y te responderemos en menos de 24 horas.”
+- Formulario con los siguientes campos:
+  - Nombre completo
+  - Email
+  - Teléfono
+  - Tipo de consulta (selector: Civil, Laboral, Penal, Mercantil, Otro)
+  - Mensaje
+- Todos los labels y placeholders en español.
+- Botón: “Enviar consulta”.
+- No implementes lógica real de envío, solo un manejador onSubmit que haga console.log de los datos y muestre un mensaje de éxito en pantalla tipo “Hemos recibido tu consulta”.
+
+7) FOOTER
+- Incluye:
+  - Nombre del despacho.
+  - Enlaces de texto: “Aviso legal”, “Política de privacidad”, “Política de cookies”.
+  - Texto pequeño de copyright.
+- Todo en español.
+
+BURBUJA DE CHAT Y SISTEMA DE CHAT ESPECTACULAR (MUY IMPORTANTE)
+
+8) BURBUJA DE CHAT FLOTANTE
+- Crea una burbuja de chat fija en la esquina inferior derecha de la pantalla (position: fixed).
+- Diseño redondeado (completamente circular o casi), con sombra suave y un icono de chat simple (puede ser solo un símbolo con Tailwind, sin imágenes externas).
+- Al hacer clic en la burbuja:
+  - Se abre una ventana de chat muy estética y moderna.
+  - Usa animación de aparición: por ejemplo, una escala o deslizamiento desde la esquina con transition y transform en Tailwind.
+
+9) VENTANA DE CHAT
+- La ventana de chat debe tener:
+  - Cabecera (header) con:
+    - Avatar circular del asistente (puede ser solo un círculo de color con iniciales tipo “AI” o “Asis.”).
+    - Nombre del asistente, por ejemplo: “Asistente legal”.
+    - Indicador de estado “En línea” / “Desconectado”:
+      - Un punto de color verde cuando está en línea.
+      - Un punto gris cuando está desconectado.
+    - Implementa un estado React booleano `isOnline` para controlar esto, fácilmente modificable.
+  - Botón para cerrar el chat (icono “X” o similar).
+
+- Cuerpo de chat:
+  - Lista de mensajes en formato burbuja:
+    - Burbujas diferenciadas para mensajes del usuario y del asistente (alineación izquierda/derecha, colores distintos).
+    - Ejemplos iniciales de conversación en español (2–3 mensajes de ejemplo).
+  - El área de mensajes debe ser scrollable con un `overflow-y-auto`.
+
+- Zona de entrada de mensaje:
+  - Input de texto o textarea pequeño con placeholder: “Escribe tu mensaje…”.
+  - Botón para enviar texto con icono de “enviar” (por ejemplo, un avión de papel hecho con texto/emoji/estilos).
+  - Botón separado para enviar audio:
+    - Icono de micrófono (puede ser un simple SVG o pseudo-icono con CSS/Tailwind).
+    - Estilo llamativo (por ejemplo, botón redondo).
+    - No implementes lógica real de grabación de audio; solo la interfaz. Al hacer clic, puede lanzar un console.log o mostrar un mensaje tipo “Función de audio en desarrollo”.
+  - Todos los textos y placeholders en español.
+
+- Comportamiento:
+- muy importante: el chat debe enviar un mensaje al workflow que se llama Agente IA Abogados en n8n y esperar la respuesta del mismo y mostrarla en el chat.
+  - El chat debe ser un componente flotante que se pueda abrir/cerrar mediante estado local en React (por ejemplo, `isChatOpen`).
+  - Que recuerde visualmente si está abierto o cerrado durante la sesión (estado normal de React).
+  - Usa transiciones suaves (`transition`, `transform`, `opacity`) para abrir y cerrar.
+
+ACCESIBILIDAD Y DETALLES EXTRA
+- Asegúrate de que los contrastes de color sean buenos para lectura.
+- Usa HTML semántico (section, header, main, footer).
+- Añade `aria-label` descriptivos en:
+  - Botón de abrir/cerrar chat.
+  - Botón de enviar mensaje.
+  - Botón de enviar audio.
+- No uses librerías externas de componentes, solo React + Tailwind.
+
+COPIA
+- Escribe tú mismo todos los textos de la página en un español neutro, profesional y orientado a conversión.
+- El objetivo de la landing es que el usuario:
+  - Confíe en el despacho.
+  - Entienda rápidamente en qué pueden ayudarle.
+  - Contacte por el formulario o use el chat.
+
+Devuélveme exclusivamente el código del componente en React con Tailwind (sin explicaciones adicionales), listo para pegar en un entorno estándar (por ejemplo, un proyecto creado con Vite o Create React App + Tailwind).

@@ -1,0 +1,242 @@
+# 10_Git_Directions — Regla de Configuracion de Remotes y OpenCode/Claude Code
+
+> Evita confusiones entre proyectos verificando siempre el remote antes de hacer push.
+> Tambien incluye la configuracion obligatoria de plugins y agents para el sistema.
+
+---
+
+## PARTE A: Git Remotes (ya existente)
+
+## Los 3 Repos Principales
+
+### 1. Think Different OS (este proyecto)
+- **Remote**: `origin`
+- **URL**: `https://github.com/esjesusobando/Think_Different_AI.git`
+- **Rama**: `master`
+- **Path local**: `personal-os/Think_Different`
+- **Push command**: `git push origin master`
+
+### 2. OIM Website / Office Installations
+- **Remote**: `origin` (desde OIM_Website_Backup folder)
+- **URL**: `https://github.com/esjesusobando/Office_Installations_.git`
+- **Rama**: `feature/improve-design-add-images`
+- **Path local**: `personal-os/Think_Different/03_Resultado/OIM_Website_Backup`
+
+### 3. Proyecto Honores de Grado - Valeria
+- **Remote**: SEPARADO (NO es parte de Think Different)
+- **URL**: `https://github.com/esjesusobando/invitacion_honores_de_grado.git`
+- **Rama**: `master`
+- **Path local**: `personal-os/Think_Different/01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/09_Valeria`
+- **Push command**: `git push origin master` (desde el folder de Valeria)
+
+## Antes de Hacer Push - Checklist
+
+1. **Estoy en el proyecto correcto?**
+   - `git remote -v` -> verificar que el remote apunta al repo correcto
+
+2. **Cual es mi remote?**
+   - `origin` = Think Different OS (Think_Different_AI)
+   - `origin` = OIM Website (Office_Installations_)
+   - Valeria tiene SU PROPIO remote (invitacion_honores_de_grado)
+
+3. **El remote existe?**
+   - `esjesusobando/Think_Different_AI` (existe)
+   - `esjesusobando/Office_Installations_` (existe)
+   - `esjesusobando/invitacion_honores_de_grado` (existe)
+
+## Si Te Pierdes
+
+```bash
+# Ver remotes configurados
+git remote -v
+
+# Ver rama actual y tracking
+git branch -vv
+
+# Ver commits recientes
+git log --oneline -3
+```
+
+## Configuracion Guardada
+
+Ver archivo: `01_Personal_Os/04_Operations/01_Auto_Improvement/REPO_CONFIG.md`
+
+## Simbolos de Warning
+
+⚠️ **"Repository not found"** -> Verificaste mal el remote, checkea `git remote -v`
+⚠️ **"Permission denied"** -> Estas en el repo equivocado o no tienes acceso
+⚠️ **"fetch first"** -> Hacele `git pull --rebase` antes de fazer push
+
+## REGLA DE ORO
+
+**VALERIA NUNCA VA EN EL REPO DE THINK DIFFERENT**
+
+El archivo `Honores_Grado_Noel.html` y todo lo relacionado con Valeria
+pertenece EXCLUSIVAMENTE al repo `invitacion_honores_de_grado.git`.
+
+Si ves archivos de Valeria en este repo, son CONTAMINACION y deben ser removidos.
+
+---
+
+---
+
+## PARTE B: OpenCode Plugins y Agents — CONFIGURACION OBLIGATORIA
+
+> **CRITICO**: Estos componentes deben estar instalados y activos para que el sistema
+> de subagentes y delegacion funcione correctamente.
+
+### 1. Plugin: background-agents (Control de Subagentes)
+
+**Ubicacion del archivo**: `~/.config/opencode/plugins/background-agents.ts`
+
+**Repositorio fuente**: https://github.com/kdcokenny/opencode-background-agents
+- Autor: kdcokenny
+- Licencia: MIT
+- Basado en: oh-my-opencode by @code-yeongyu
+
+**Funcionalidad**: Sistema unificado de delegacion para OpenCode que reemplaza
+el tool `task` nativo con delegation persistente y async-first para agentes.
+
+**Estado actual**: INSTALADO pero NO registrado en configs
+
+**Para activar**:
+1. El archivo debe estar en `~/.config/opencode/plugins/background-agents.ts` (ya existe)
+2. Debe declararse en `~/.config/opencode/profiles/default/opencode.jsonc`
+3. Debe declararse en `~/.config/opencode/opencode.json` en la seccion `plugins`
+
+### 2. Plugin: engram (Memoria Persistente)
+
+**Ubicacion del archivo**: `~/.config/opencode/plugins/engram.ts`
+
+**Funcionalidad**: MCP server para memoria persistente que sobrevive entre sesiones.
+
+**Estado actual**: Instalado en `~/.config/opencode/plugins/engram.ts`
+
+**Para activar**: Declarar en `~/.config/opencode/profiles/default/opencode.jsonc`:
+```json
+{
+  "plugins": {
+    "background-agents": {},
+    "engram": {},
+    "notify": {}
+  }
+}
+```
+
+### 3. Profile: default (OpenCode)
+
+**Archivo**: `~/.config/opencode/profiles/default/opencode.jsonc`
+
+**Estado actual**: Solo tiene `plugins: { notify: {} }` — falta background-agents y engram
+
+**Configuracion minima requerida**:
+```json
+{
+  "plugins": {
+    "background-agents": {},
+    "engram": {},
+    "notify": {}
+  }
+}
+```
+
+### 4. Config Global: opencode.json
+
+**Archivo**: `~/.config/opencode/opencode.json`
+
+**Estado actual**: NO tiene seccion `plugins` declarada
+
+**Para activar**:
+- Agregar seccion `plugins` con referencia a background-agents y engram
+
+### 5. Agent: gentle-orchestrator (SDD Orchestrator)
+
+**Configurado en**: `~/.config/opencode/opencode.json` -> `agent.gentle-orchestrator`
+
+**Funcionalidad**: Coordina sub-agentes, nunca hace trabajo inline.
+Usa background-agents para delegation persistente.
+
+**Estado actual**: Configurado y activo
+
+**Modelos asignados**:
+- Orchestrator: `minimax/MiniMax-M2.7`
+- SDD phases usan modelos segun tabla de asignaciones
+
+### 6. SDD Sub-Agents (fases)
+
+Todos configurados en `~/.config/opencode/opencode.json` -> `agent.sdd-*`:
+
+| Agent | Descripcion | Skill file |
+|-------|-------------|------------|
+| sdd-apply | Implementa cambios desde specs | `~/.config/opencode/skills/sdd-apply/SKILL.md` |
+| sdd-archive | Archiva artifacts completados | `~/.config/opencode/skills/sdd-archive/SKILL.md` |
+| sdd-design | Diseño técnico desde proposals | `~/.config/opencode/skills/sdd-design/SKILL.md` |
+| sdd-explore | Investiga codebase | `~/.config/opencode/skills/sdd-explore/SKILL.md` |
+| sdd-init | Bootstraps contexto SDD | `~/.config/opencode/skills/sdd-init/SKILL.md` |
+| sdd-onboard | Guia through SDD cycle | `~/.config/opencode/skills/sdd-onboard/SKILL.md` |
+| sdd-propose | Crea change proposals | `~/.config/opencode/skills/sdd-propose/SKILL.md` |
+| sdd-spec | Escribe specs detalladas | `~/.config/opencode/skills/sdd-spec/SKILL.md` |
+| sdd-tasks | Breakdown en tareas | `~/.config/opencode/skills/sdd-tasks/SKILL.md` |
+| sdd-verify | Valida implementacion | `~/.config/opencode/skills/sdd-verify/SKILL.md` |
+
+### 7. Skills de CE (Compound Engineering)
+
+**Ubicacion**: `~/.config/opencode/skills/`
+
+Skills activos en el sistema:
+- ce-brainstorm, ce-compound, ce-compound-refresh
+- ce-debug, ce-demo-reel, ce-ideate, ce-optimize
+- ce-plan, ce-polish-beta, ce-release-notes, ce-review
+- ce-sessions, ce-setup, ce-slack-research
+- ce-work, ce-work-beta
+- lfg, slfg
+
+### 8. Skills de SDD
+
+**Ubicacion**: `~/.config/opencode/skills/sdd-*/SKILL.md`
+
+10 skills SDD activos:
+- sdd-apply, sdd-archive, sdd-design, sdd-explore
+- sdd-init, sdd-onboard, sdd-propose, sdd-spec
+- sdd-tasks, sdd-verify
+
+---
+
+## CHECKLIST DE VERIFICACION
+
+Ejecutar para verificar estado del sistema:
+
+```bash
+# 1. Verificar que background-agents existe
+ls -la ~/.config/opencode/plugins/background-agents.ts
+
+# 2. Verificar que engram existe
+ls -la ~/.config/opencode/plugins/engram.ts
+
+# 3. Verificar profile config
+cat ~/.config/opencode/profiles/default/opencode.jsonc
+
+# 4. Verificar skills SDD
+ls ~/.config/opencode/skills/sdd-*/
+
+# 5. Verificar agent config
+grep -n "gentle-orchestrator\|sdd-" ~/.config/opencode/opencode.json | head -20
+
+# 6. Verificar plugins activos en OpenCode
+grep -n "plugins" ~/.config/opencode/opencode.json
+```
+
+---
+
+## NOTA DE MANTENIMIENTO
+
+Cada vez que se agregue un nuevo plugin o agent:
+1. Registrar en `~/.config/opencode/profiles/default/opencode.jsonc`
+2. Si es global, registrar en `~/.config/opencode/opencode.json`
+3. Actualizar esta regla con el nuevo componente
+4. Ejecutar checklist de verificacion
+
+---
+
+*Ultima actualizacion: 2026-05-12*
+*Agregado: Seccion PARTE B para OpenCode/Claude Code plugins y agents*

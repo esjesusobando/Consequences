@@ -1,0 +1,490 @@
+# Agent Skill Matrix — PersonalOS v3.0 Consequences
+# FASE 4 — Agent Empowerment
+# Source: 01_Personal_Os/01_Core/02_Tools/01_Agents/
+
+version: v3.0
+generated: 2026-04-25
+total_agents: 52
+
+# ============================================================
+# DREAM TEAM (Super Campeones) — 5 agents
+# ============================================================
+dream_team:
+  01_Product_Builder:
+    agent_id: dream_team_product_builder
+    role: Product Builder
+    skills:
+      - 01_Creacion_Contenidos/01_Product_Manager/*
+      - 05_Workflows/product_strategy
+    hubs:
+      - 03_AI_Task_Planner
+      - 11_Auto_Learn_Hub
+    mcps:
+      - Linear
+      - Notion
+    workflows:
+      - Product_Discovery
+      - Roadmap_Planning
+
+  02_Data_Engineer:
+    agent_id: dream_team_data_engineer
+    role: Data Engineer
+    skills:
+      - 04_Automatizacion/analytics-workflow
+      - 04_Automatizacion/data-processing
+    hubs:
+      - 20_Master_Analytics_Factory
+    mcps:
+      - Supabase
+      - firecrawl-mcp
+    workflows:
+      - Data_Pipeline
+      - Analytics_Setup
+
+  03_Marketing_Tech:
+    agent_id: dream_team_marketing_tech
+    role: Marketing Technologist
+    skills:
+      - 01_Creacion_Contenidos/*
+      - 04_Automatizacion/marketing-automation
+      - 10_Marketing_Tech/*
+    hubs:
+      - 18_Generacion_Contenido
+    mcps:
+      - Google_Workspace
+      - fireflies
+    workflows:
+      - Marketing_Campaign
+      - Content_Calendar
+
+  04_Design_Ops:
+    agent_id: dream_team_design_ops
+    role: Design Operations
+    skills:
+      - 02_Diseno_Ui_Ux/*
+      - 02_Diseno_Ui_Ux/minimal-ii-skill
+      - 02_Diseno_Ui_Ux/taste-skill
+    hubs:
+      - 01_Auditor_Hub
+    mcps:
+      - excalidraw-yctimlin
+    workflows:
+      - Design_System
+      - Figma_Sync
+
+  05_Platform_Engineer:
+    agent_id: dream_team_platform_engineer
+    role: Platform Engineer
+    skills:
+      - 06_Testing/*
+      - 06_Tools/ci-cd
+      - 06_Tools/devops
+    hubs:
+      - 02_Git_Hub
+      - 01_Auditor_Hub
+    mcps:
+      - github
+      - docker
+    workflows:
+      - CI_Pipeline
+      - Deployment
+
+# ============================================================
+# COMPOUND ENGINEERING — 21 specialist agents
+# ============================================================
+compound_specialists:
+  agent_native_reviewer:
+    agent_id: agent_native_reviewer
+    role: Agent-Native Architecture Reviewer
+    skills:
+      - agent-native-architecture
+      - agent-native-audit
+    hubs:
+      - 01_Auditor_Hub
+    mcps:
+      - github
+      - engram
+
+  best_practices_researcher:
+    agent_id: best_practices_researcher
+    role: Research Best Practices
+    skills:
+      - framework-docs-researcher
+      - learnings-researcher
+    hubs:
+      - 11_Auto_Learn_Hub
+    mcps:
+      - context7
+      - exa
+
+  deployment_verification_agent:
+    agent_id: deployment_verification_agent
+    role: Deployment Readiness
+    skills:
+      - deployment-verification
+      - integration-testing
+    hubs:
+      - 02_Git_Hub
+    mcps:
+      - docker
+      - github
+
+  learnings_researcher:
+    agent_id: learnings_researcher
+    role: Learnings Repository
+    skills:
+      - learnings-researcher
+      - ce-compound
+    hubs:
+      - 11_Auto_Learn_Hub
+    mcps:
+      - engram
+
+  design_iterator:
+    agent_id: design_iterator
+    role: Visual Design Iterator
+    skills:
+      - design-taste-frontend
+      - design-iterator
+    hubs:
+      - 01_Auditor_Hub
+    mcps:
+      - excalidraw-yctimlin
+      - eagle
+
+  figma_design_sync:
+    agent_id: figma_design_sync
+    role: Figma-to-Code Sync
+    skills:
+      - figma-design-sync
+      - design-implementation-reviewer
+    hubs:
+      - 01_Auditor_Hub
+    mcps:
+      - figma (external)
+      - excalidraw-yctimlin
+
+  kieran_typescript_reviewer:
+    agent_id: kieran_typescript_reviewer
+    role: TypeScript Review
+    skills:
+      - typescript
+      - kieran-typescript-reviewer
+    hubs:
+      - 01_Auditor_Hub
+    mcps:
+      - github
+
+  kieran_python_reviewer:
+    agent_id: kieran_python_reviewer
+    role: Python Review
+    skills:
+      - pytest
+      - kieran-python-reviewer
+    hubs:
+      - 01_Auditor_Hub
+    mcps:
+      - github
+
+  kieran_rails_reviewer:
+    agent_id: kieran_rails_reviewer
+    role: Rails Review
+    skills:
+      - dhh-rails-style
+      - kieran-rails-reviewer
+    hubs:
+      - 01_Auditor_Hub
+    mcps:
+      - github
+
+  performance_oracle:
+    agent_id: performance_oracle
+    role: Performance Analysis
+    skills:
+      - observability-skill
+      - performance-review
+    hubs:
+      - 01_Auditor_Hub
+    mcps:
+      - context7
+
+  security_sentinel:
+    agent_id: security_sentinel
+    role: Security Audit
+    skills:
+      - security-reviewer
+      - security-sentinel
+    hubs:
+      - 01_Auditor_Hub
+    mcps:
+      - github
+
+  architecture_strategist:
+    agent_id: architecture_strategist
+    role: Architecture Strategy
+    skills:
+      - angular-architecture
+      - react-19
+      - nextjs-15
+    hubs:
+      - 01_Auditor_Hub
+    mcps:
+      - github
+      - context7
+
+  pattern_recognition_specialist:
+    agent_id: pattern_recognition_specialist
+    role: Pattern Analysis
+    skills:
+      - pattern-recognition-specialist
+      - advanced-context-engineering
+    hubs:
+      - 11_Auto_Learn_Hub
+    mcps:
+      - context7
+
+  git_history_analyzer:
+    agent_id: git_history_analyzer
+    role: Git Archaeology
+    skills:
+      - git-history-analyzer
+    hubs:
+      - 02_Git_Hub
+    mcps:
+      - github
+
+  # ... (12 more compound specialists with similar patterns)
+
+# ============================================================
+# CORE AGENTS — 15 top-level agents
+# ============================================================
+core:
+  orchestrator:
+    agent_id: orchestrator
+    role: Orchestrator (main coordinator)
+    skills:
+      - sdd-*
+      - ce:*
+    hubs:
+      - ALL_HUBS
+    mcps:
+      - github
+      - engram
+
+  scope_rule_architect:
+    agent_id: scope_rule_architect
+    role: Scope Rule Enforcer
+    skills:
+      - scope-guardian-reviewer
+      - document-review
+    hubs:
+      - 01_Auditor_Hub
+    mcps:
+      - github
+
+  02_TDD_Test_First:
+    agent_id: tdd_test_first
+    role: TDD Enforcer
+    skills:
+      - test-driven-development
+      - pytest
+    hubs:
+      - 01_Auditor_Hub
+    mcps:
+      - github
+
+  03_React_Test_Implementer:
+    agent_id: react_test_implementer
+    role: React Testing
+    skills:
+      - playwright
+      - e2e-testing
+    hubs:
+      - 01_Auditor_Hub
+    mcps:
+      - Playwright
+      - github
+
+  04_React_Mentor:
+    agent_id: react_mentor
+    role: React Educator
+    skills:
+      - react-19
+      - zustand-5
+      - typescript
+    hubs:
+      - 11_Auto_Learn_Hub
+    mcps:
+      - context7
+
+  05_Security_Auditor:
+    agent_id: security_auditor
+    role: Security Review
+    skills:
+      - security-reviewer
+      - security-lens-reviewer
+    hubs:
+      - 01_Auditor_Hub
+    mcps:
+      - github
+
+  06_Git_Workflow_Manager:
+    agent_id: git_workflow_manager
+    role: Git Operations
+    skills:
+      - git-commit
+      - git-worktree
+    hubs:
+      - 02_Git_Hub
+    mcps:
+      - github
+
+  07_Accessibility_Auditor:
+    agent_id: accessibility_auditor
+    role: A11Y Audit
+    skills:
+      - accessibility-audit
+    hubs:
+      - 01_Auditor_Hub
+    mcps:
+      - github
+
+  08_PRD_Dashboard_Template:
+    agent_id: prd_dashboard
+    role: PRD Generator
+    skills:
+      - prd
+      - document-review
+    hubs:
+      - 11_Auto_Learn_Hub
+    mcps:
+      - Notion
+
+  09_Design_SOP_Document:
+    agent_id: design_sop
+    role: Design SOP Writer
+    skills:
+      - document-review
+      - design-taste-frontend
+    hubs:
+      - 11_Auto_Learn_Hub
+    mcps:
+      - Notion
+
+  10_Workflow_Orchestrator:
+    agent_id: workflow_orchestrator
+    role: Workflow Orchestration
+    skills:
+      - subagent-driven-development
+      - orchestrating-swarms
+    hubs:
+      - ALL_HUBS
+    mcps:
+      - github
+      - engram
+
+  11_AIPM_Judge:
+    agent_id: aipm_judge
+    role: AI Product Manager Evaluator
+    skills:
+      - ai-sdk-5
+      - context-engineering
+    hubs:
+      - 03_AI_Task_Planner
+    mcps:
+      - context7
+
+  12_LFG_Autonomous_Engine:
+    agent_id: lfg_engine
+    role: Autonomous Engineering
+    skills:
+      - lfg
+      - slfg
+    hubs:
+      - ALL_HUBS
+    mcps:
+      - github
+
+  13_Hillary:
+    agent_id: hillary_pm
+    role: Project Manager (Personal)
+    skills:
+      - project-management
+      - jira-task
+      - jira-epic
+    hubs:
+      - 04_Ritual_Hub
+      - 08_Workflow_Hub
+    mcps:
+      - Linear
+
+# ============================================================
+# GROWTH (Youtube) — 5 agents
+# ============================================================
+growth:
+  01_Content_Transformer:
+    agent_id: content_transformer
+    role: Content Repurposing
+    skills:
+      - content-creation
+      - social-content
+    hubs:
+      - 18_Generacion_Contenido
+    mcps:
+      - fireflies
+
+  02_Youtube_Script_Writer:
+    agent_id: youtube_script_writer
+    role: YouTube Scripts
+    skills:
+      - video-visuals-producer
+      - content-creation
+    hubs:
+      - 18_Generacion_Contenido
+    mcps:
+      - fireflies
+
+  03_Youtube_Thumbnail_Prompter:
+    agent_id: youtube_thumbnail_prompter
+    role: Thumbnail Generation
+    skills:
+      - gemini-imagegen
+      - premium-image-studio
+    hubs:
+      - 18_Generacion_Contenido
+    mcps:
+      - nanobanana
+
+  04_Youtube_Title_Generator:
+    agent_id: youtube_title_generator
+    role: Title Optimization
+    skills:
+      - content-creation
+      - seo-audit
+    hubs:
+      - 18_Generacion_Contenido
+    mcps: []
+
+  05_Carousel_Strategist:
+    agent_id: carousel_strategist
+    role: Social Carousels
+    skills:
+      - social-content
+      - premium-image-studio
+    hubs:
+      - 18_Generacion_Contenido
+    mcps:
+      - google-workspace
+
+# ============================================================
+# FALLBACK — General access when no specific matrix entry
+# ============================================================
+fallback:
+  general:
+    role: General Purpose
+    skills:
+      - ALL_SKILLS
+    hubs:
+      - ALL_HUBS
+    mcps:
+      - ALL_MCPS

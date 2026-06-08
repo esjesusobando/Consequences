@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Visión No Se Construye Desde el Scrolling — Visualización</title>
+  <style>
+    :root {
+      --bg: #f8f9fa;
+      --surface: #ffffff;
+      --text: #1a1a2e;
+      --text-secondary: #555;
+      --accent: #e94560;
+      --accent-hover: #d13350;
+      --border: #e0e0e0;
+      --tag-bg: #e94560;
+      --tag-text: #fff;
+      --stat-bg: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      --stat-text: #fff;
+      --glow: rgba(233, 69, 96, 0.15);
+    }
+
+    [data-theme="dark"] {
+      --bg: #0f0f1a;
+      --surface: #1a1a2e;
+      --text: #e0e0e0;
+      --text-secondary: #999;
+      --accent: #ff6b81;
+      --accent-hover: #ff4d6a;
+      --border: #2a2a40;
+      --tag-bg: #ff6b81;
+      --tag-text: #1a1a2e;
+      --stat-bg: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+      --stat-text: #fff;
+      --glow: rgba(255, 107, 129, 0.12);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      max-width: 880px; margin: 0 auto; padding: 2rem 1.5rem;
+      background: var(--bg); color: var(--text); line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      position: fixed; top: 1rem; right: 1rem;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 50%; width: 40px; height: 40px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 1.2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: background 0.2s; z-index: 100;
+    }
+    .theme-toggle:hover { background: var(--accent); color: white; }
+
+    h1 {
+      font-size: 1.8rem; font-weight: 700; letter-spacing: -0.02em;
+      border-bottom: 3px solid var(--accent); padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.3rem; font-weight: 600; margin: 2rem 0 1rem;
+      color: var(--accent);
+    }
+
+    .meta {
+      display: flex; flex-wrap: wrap; gap: 0.75rem;
+      font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 2rem;
+    }
+    .meta-item { background: var(--surface); padding: 0.3rem 0.8rem; border-radius: 6px; border: 1px solid var(--border); }
+
+    /* Stat callout cards — the scroll damage counter */
+    .stats-row {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem; margin: 1.5rem 0;
+    }
+    .stat-card {
+      background: var(--stat-bg); color: var(--stat-text);
+      border-radius: 14px; padding: 1.5rem 1.25rem; text-align: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    .stat-number {
+      font-size: 2.2rem; font-weight: 800; line-height: 1.1;
+      background: linear-gradient(135deg, #ff6b81, #ffa502);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .stat-label { font-size: 0.8rem; opacity: 0.85; margin-top: 0.3rem; }
+    .stat-sub { font-size: 0.7rem; opacity: 0.6; margin-top: 0.2rem; }
+
+    .quote-block {
+      background: var(--surface); border-left: 4px solid var(--accent);
+      border-radius: 0 12px 12px 0; padding: 1.25rem 1.5rem;
+      margin: 1.25rem 0; font-style: italic; color: var(--text-secondary);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .quote-block strong { color: var(--text); }
+
+    .card-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem; margin: 1rem 0;
+    }
+    .card {
+      background: var(--surface); border-radius: 12px; padding: 1.25rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      border: 1px solid var(--border);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px var(--glow);
+    }
+    .card-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .card h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.4rem; }
+    .card p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5; }
+
+    .vocab-list {
+      list-style: none; padding: 0;
+    }
+    .vocab-list li {
+      background: var(--surface); border-radius: 10px; padding: 1rem 1.25rem;
+      margin: 0.6rem 0; border: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+    .vocab-list li::before { content: "▸ "; color: var(--accent); font-weight: bold; }
+
+    .tags {
+      display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1.5rem 0;
+    }
+    .tag {
+      display: inline-block; background: var(--tag-bg); color: var(--tag-text);
+      padding: 0.25rem 0.9rem; border-radius: 20px; font-size: 0.78rem;
+      font-weight: 500; transition: opacity 0.2s;
+    }
+    .tag:hover { opacity: 0.85; }
+
+    .action-list {
+      list-style: none; padding: 0;
+    }
+    .action-list li {
+      background: var(--surface); border-radius: 10px; padding: 0.85rem 1.1rem;
+      margin: 0.5rem 0; border: 1px solid var(--border);
+      font-size: 0.9rem;
+      display: flex; align-items: flex-start; gap: 0.6rem;
+    }
+    .action-check { color: var(--accent); font-weight: bold; flex-shrink: 0; }
+
+    .graph-row {
+      display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.5rem 0;
+    }
+    .graph-label { font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); min-width: 80px; }
+    .graph-items { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .graph-tag {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 16px; padding: 0.2rem 0.7rem; font-size: 0.78rem;
+    }
+    .graph-tag.related { border-color: #2ed573; color: #2ed573; }
+    .graph-tag.opposes { border-color: var(--accent); color: var(--accent); }
+
+    .footer {
+      margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+      font-size: 0.8rem; color: var(--text-secondary); text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 1rem; }
+      h1 { font-size: 1.4rem; }
+      .stats-row { grid-template-columns: 1fr; }
+      .card-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" onclick="toggleTheme()" aria-label="Cambiar tema">🌓</button>
+
+  <h1>🧠 Tu Visión No Se Construye Desde el Scrolling</h1>
+
+  <div class="meta">
+    <span class="meta-item">📺 YouTube</span>
+    <span class="meta-item">ID: 87evcxwcxgA</span>
+    <span class="meta-item">🇪🇸 Español</span>
+    <span class="meta-item">📅 2026-06-01</span>
+  </div>
+
+  <!-- Stats callout: the damage counter -->
+  <h2>📊 El Costo Real del Scrolling</h2>
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-number">~2.5h</div>
+      <div class="stat-label">Por día en redes sociales</div>
+      <div class="stat-sub">Promedio global 2025</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">~910h</div>
+      <div class="stat-label">Horas perdidas al año</div>
+      <div class="stat-sub">~38 días completos</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">~15s</div>
+      <div class="stat-label">Atención por pieza de contenido</div>
+      <div class="stat-sub">vs 45s en 2015</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">23 min</div>
+      <div class="stat-label">Para recuperar el foco después</div>
+      <div class="stat-sub">Attention residue effect</div>
+    </div>
+  </div>
+
+  <!-- Key Insights -->
+  <h2>🔑 Puntos Clave</h2>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon">🎯</div>
+      <h3>Dopamina ≠ Dirección</h3>
+      <p>Cada swipe entrega una micro-dosis de novedad que entrena al cerebro a preferir estímulos rápidos sobre el pensamiento sostenido.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🧘</div>
+      <h3>La DMN nunca se activa</h3>
+      <p>La Red Neuronal por Defecto — responsable de creatividad, planificación y reflexión — solo se enciende en el aburrimiento o la concentración profunda.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🪞</div>
+      <h3>Ilusión de progreso</h3>
+      <p>Consumir contenido sobre hábitos o productividad se siente como crecimiento, pero sin acción deliberada es entretenimiento disfrazado.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🎰</div>
+      <h3>Refuerzo variable</h3>
+      <p>El scroll infinito usa el mismo mecanismo que las máquinas tragamonedas: a veces oro, a veces basura. Tu atención no se distrae: se cosecha.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📡</div>
+      <h3>Señal vs Ruido</h3>
+      <p>Construir una visión personal requiere filtrar inputs ruthlessmente. El scrolling es lo opuesto: rendir tu agenda a un algoritmo.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">👻</div>
+      <h3>Costo invisible</h3>
+      <p>No notas lo que no construiste porque nunca te diste el silencio para desearlo. El scrolling atrofia la ambición misma.</p>
+    </div>
+  </div>
+
+  <!-- Quotes -->
+  <h2>💬 Frases Clave</h2>
+  <div class="quote-block">
+    <strong>"Tu visión no se construye desde el scrolling"</strong> — La visión se construye en la quietud, la intención y la acción, no en el consumo.
+  </div>
+  <div class="quote-block">
+    <strong>"La atención es el único recurso que no se recupera"</strong> — Una vez gastada, ese momento se perdió para siempre.
+  </div>
+  <div class="quote-block">
+    <strong>"El algoritmo no quiere que tengas una visión, quiere que tengas un hábito"</strong> — Las plataformas no ganan con tu claridad, ganan con tu revisión compulsiva.
+  </div>
+  <div class="quote-block">
+    <strong>"No es que pierdas tiempo, es que pierdes la capacidad de desear algo profundo"</strong> — El daño más profundo no son las horas perdidas, es el músculo atrofiado de la ambición.
+  </div>
+
+  <!-- Connection Graph -->
+  <h2>🔗 Mapa de Conexiones</h2>
+  <div class="graph-row">
+    <span class="graph-label">Relacionado:</span>
+    <div class="graph-items">
+      <span class="graph-tag related">🧘 Atención plena</span>
+      <span class="graph-tag related">📵 Minimalismo digital</span>
+      <span class="graph-tag related">⚡ Deep Work</span>
+      <span class="graph-tag related">🧠 Default Mode Network</span>
+      <span class="graph-tag related">🎯 Dopamina</span>
+      <span class="graph-tag related">📚 Cal Newport</span>
+    </div>
+  </div>
+  <div class="graph-row">
+    <span class="graph-label">Se opone a:</span>
+    <div class="graph-items">
+      <span class="graph-tag opposes">📱 Consumo inconsciente</span>
+      <span class="graph-tag opposes">🔄 Bucles de dopamina</span>
+      <span class="graph-tag opposes">🤖 Algoritmos de feed</span>
+      <span class="graph-tag opposes">👥 Cultura de multitasking</span>
+    </div>
+  </div>
+
+  <!-- Action Items -->
+  <h2>✅ Acciones Concretas</h2>
+  <ul class="action-list">
+    <li><span class="action-check">☐</span> Implementa un "bloque de aburrimiento" (10 min/día) con cero estímulos — solo sentarse a pensar</li>
+    <li><span class="action-check">☐</span> Auditoría de 7 días en redes: deja de seguir todo lo que no se alinee con tu visión actual</li>
+    <li><span class="action-check">☐</span> Regla de oro: nada de redes antes de las 10 AM ni después de las 9 PM</li>
+    <li><span class="action-check">☐</span> Reemplaza una sesión de scrolling al día con una sesión de creación (escribe, dibuja, programa, planea)</li>
+    <li><span class="action-check">☐</span> Instala un bloqueador de feeds o límites de dispositivo para reforzar lo anterior</li>
+  </ul>
+
+  <!-- Tags -->
+  <h2>🏷️ Tags</h2>
+  <div class="tags">
+    <span class="tag">#scrolling</span>
+    <span class="tag">#socialmedia</span>
+    <span class="tag">#attention</span>
+    <span class="tag">#focus</span>
+    <span class="tag">#personalgrowth</span>
+    <span class="tag">#dopamine</span>
+    <span class="tag">#deepwork</span>
+    <span class="tag">#digitalminimalism</span>
+  </div>
+
+  <div class="footer">
+    PersonalOS v4.9 Consequences — Research Os — 2026-06-01
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      html.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+    }
+
+    // Respect OS preference
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
+</body>
+</html>

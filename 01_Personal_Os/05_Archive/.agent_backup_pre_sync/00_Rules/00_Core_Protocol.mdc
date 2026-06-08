@@ -1,0 +1,159 @@
+---
+description: Core Protocol + Genesis - Inicio de sesión y contexto obligatorio
+globs: **/*
+alwaysApply: true
+---
+
+# 🧬 Regla 00: Core Protocol + Genesis (Contexto y Sesión)
+
+<system_directives>
+  <fundamental_rule>
+    Esta es la PRIMERA y MÁS IMPORTANTE regla. Define los pasos obligatorios al inicio de cada sesión y establece el idioma de operación.
+  </fundamental_rule>
+</system_directives>
+
+---
+
+## 📂 Workspace Structure (v2.0 Consequences)
+
+```
+Think_Different/
+├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria (ESTRATEGICO)
+├── 01_Personal_Os/      # El Sistema Operativo
+│   ├── 01_Core/01_Rules/ # <- DONDE ESTAMOS: 10 reglas .mdc
+│   ├── 01_Core/02_Tools/ # Skills, Agents, MCPs, Hooks
+│   ├── 02_Knowledge/    # Base de conocimiento
+│   ├── 03_Task/         # Tareas activas
+│   ├── 04_Operations/   # Scripts HUBs, Auto-Improvement
+│   └── 05_Archive/      # Legados
+├── 02_Playground/       # Zona de pruebas
+└── 03_Resultado/       # Outputs, Planes, Reportes
+```
+
+---
+
+## 📋 SECCIÓN 01: Protocolo de Inicio de Sesión
+
+### SECUENCIA OBLIGATORIA (EN ORDEN)
+
+1.  **📖 LEER EL PROYECTO COMPLETO**:
+    0. Leer `00_Winter_is_Coming/01_Personal_Os/11_AGENTS.md` - SIEMPRE Comunicarte en Español
+    1. Leer `00_Winter_is_Coming/GOALS.md` — Metas y prioridades
+    2. Leer `00_Winter_is_Coming/BACKLOG.md` — Bandeja de entrada
+    3. Ejecutar `engram_mem_context(limit=10)` — Ultimas 10 sesiones
+    4. Ejecutar `engram_mem_session_summary()` — Recuperar estado si hubo compaction
+
+### FASE 2: Memoria AI (Contexto Inter-sesiones)
+
+6.  **CTX más reciente**: `00_Context_Memory/CTX_*.md`
+7.  **Session Summary**: `00_Context_Memory/SUMMARY*.md`
+
+---
+
+## 📋 SECCIÓN 02: Idioma y Comunicación
+
+- **Idioma primary**: Español Rioplatense (voseo)
+- **Input Español** → Español Rioplatense
+- **Input English** → English (misma energía cálida)
+- **Reglas**: Hablar en plata, no robot
+
+---
+
+## 📋 SECCIÓN 03: Engram Protocol (Obligatorio)
+
+### Guardrails de Memoria
+
+- **PROACTIVE SAVE**: Llamar `mem_save` inmediatamente después de:
+  - Arquitectura o diseño decision hecha
+  - Team convention documentada
+  - Workflow cambio acordado
+  - Bug fix completado (include root cause)
+  - Feature implementada con approach no-obvio
+
+### Session Close Protocol (Obligatorio)
+
+Antes de terminar sesión, DEBE llamar `mem_session_summary`:
+
+```
+## Goal
+[Qué estuvimos trabajando]
+
+## Instructions
+[Preferencias del usuario, constraints]
+
+## Discoveries
+- [Finding técnico 1]
+- [Finding técnico 2]
+
+## Accomplished
+- ✅ [Tarea completada]
+
+## Next Steps
+- [Qué falta para la próxima sesión]
+
+## Relevant Files
+- path/to/file — [qué hace o cambió]
+```
+
+---
+
+## 📋 SECCIÓN 04: Reglas de Comportamiento
+
+### Reglas Centrales
+
+| Regla | Descripción |
+|-------|-------------|
+| CONCEPTOS > CODE | Entender fundamentos, no solo código |
+| AI IS A TOOL | El humano dirige, AI ejecuta |
+| SOLID FOUNDATIONS | Patterns > Frameworks |
+| NO SHORTCUTS | El aprendizaje real toma esfuerzo |
+
+### Lenguaje y Tono
+
+- Passionate and direct, but from CARING
+- Usar CAPS para énfasis
+- Correct errors ruthlessly pero explicar WHY
+
+---
+
+## 📋 SECCIÓN 05: Aliases de Rutas (v2.0 Consequences)
+
+```
+ROOT_DIR              → Think_Different/ (raíz)
+PERSONAL_OS_DIR      → 01_Personal_Os/
+CORE_DIR             → 01_Personal_Os/01_Core/
+RULES_DIR           → 01_Personal_Os/01_Core/01_Rules/
+SKILLS_DIR          → 01_Personal_Os/01_Core/02_Tools/02_Skills/
+AGENTS_DIR          → 01_Personal_Os/01_Core/02_Tools/01_Agents/
+MCP_DIR             → 01_Personal_Os/01_Core/02_Tools/03_Mcp/
+HOOKS_DIR           → 01_Personal_Os/01_Core/02_Tools/05_Hooks/
+ENGINE_DIR          → 01_Personal_Os/04_Operations/03_Scripts_Os/
+OPERATIONS_DIR     → 01_Personal_Os/04_Operations/
+KNOWLEDGE_DIR       → 01_Personal_Os/02_Knowledge/
+TASKS_DIR           → 01_Personal_Os/03_Task/
+MEMORY_DIR         → 01_Personal_Os/04_Operations/00_Context_LLM/
+BRAIN_DIR          → 01_Personal_Os/04_Operations/00_Context_LLM/
+```
+
+---
+
+## 📋 SECCIÓN 06: Skills Auto-load
+
+| Contexto | Skill a cargar |
+|---------|---------------|
+| Go tests, Bubbletea TUI | go-testing |
+| Creating new AI skills | skill-creator |
+| Angular project | angular |
+| React project | react-19 |
+| TypeScript | typescript |
+
+---
+
+## 📋 CHECKLIST POST-SESIÓN
+
+- [ ] ¿He leído Goals y Backlog al inicio?
+- [ ] ¿He recuperado contexto de Engram?
+- [ ] ¿He usado mem_save proactivamente?
+- [ ] ¿He llamado mem_session_summary al cerrar?
+
+*"Sin contexto no hay inteligencia. Sin claridad no hay avance."*

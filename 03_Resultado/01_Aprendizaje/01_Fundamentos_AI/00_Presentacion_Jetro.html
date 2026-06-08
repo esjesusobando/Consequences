@@ -1,0 +1,3101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inteligencia Artificial — Herramientas y Usos Prácticos</title>
+  <!-- Preload critical fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;500;700&family=Epilogue:wght@300;400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Inter:wght@400;500;700&family=Epilogue:wght@300;400&display=swap">
+  <!-- Preload first slide images -->
+  <link rel="preload" as="image" href="01_Imagenes/Workflow.jpg">
+  <style>
+    /* ===========================================
+       PRESENTATION PREMIUM ENGINE
+       $100K Design System
+       Brutalist Editorial · Cinematic Depth · Motion Excellence
+       =========================================== */
+
+    :root {
+      /* Core Palette - Bold, High Contrast */
+      --electric-blue: #0057FF;
+      --electric-blue-glow: rgba(0, 87, 255, 0.4);
+      --intense-red: #FF2D00;
+      --intense-red-glow: rgba(255, 45, 0, 0.4);
+      --obsidian: #0A0A0A;
+      --charcoal: #1A1A1A;
+      --graphite: #3A3A3A;
+      --steel: #6B6B6B;
+      --titanium: #B8B8B8;
+      --silver: #E0E0E0;
+      --white: #FFFFFF;
+
+      /* Semantic */
+      --bg-primary: var(--obsidian);
+      --bg-secondary: var(--charcoal);
+      --text-primary: var(--white);
+      --text-secondary: var(--titanium);
+      --text-muted: var(--graphite);
+      --accent-primary: var(--electric-blue);
+      --accent-secondary: var(--intense-red);
+
+      /* Spacing Scale */
+      --space-xs: 8px;
+      --space-sm: 16px;
+      --space-md: 24px;
+      --space-lg: 48px;
+      --space-xl: 96px;
+
+      /* Typography */
+      --headline: 'Oswald', sans-serif;
+      --statement: 'Inter', sans-serif;
+      --body: 'Epilogue', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: var(--body);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      cursor: crosshair;
+    }
+
+    /* ===========================================
+       SUPER VISIBLE MESH GRADIENT
+       =========================================== */
+    .mesh-gradient {
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse 100% 80% at 10% 30%, rgba(0, 87, 255, 0.5) 0%, transparent 50%),
+        radial-gradient(ellipse 100% 80% at 90% 70%, rgba(255, 45, 0, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse 80% 60% at 50% 50%, rgba(0, 87, 255, 0.25) 0%, transparent 60%);
+      animation: meshPulse 15s ease-in-out infinite;
+    }
+
+    @keyframes meshPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      33% { opacity: 0.9; transform: scale(1.05) translate(-2%, 2%); }
+      66% { opacity: 0.85; transform: scale(1.02) translate(2%, -1%); }
+    }
+
+    .noise-overlay {
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    /* ===========================================
+       DECK SYSTEM
+       =========================================== */
+    .deck {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: none;
+      flex-direction: column;
+      padding: var(--space-xl) calc(var(--space-xl) * 1.2);
+      opacity: 0;
+      z-index: 1;
+    }
+
+    .slide.active {
+      display: flex;
+      animation: slideReveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    .slide.exiting {
+      animation: slideHide 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    @keyframes slideReveal {
+      0% { opacity: 0; transform: translateY(40px) scale(0.96); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    @keyframes slideHide {
+      0% { opacity: 1; transform: translateY(0) scale(1); }
+      100% { opacity: 0; transform: translateY(-30px) scale(0.98); }
+    }
+
+    /* ===========================================
+       SUPER VISIBLE ORBS - HUGE GLOWING
+       =========================================== */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      will-change: transform, opacity;
+    }
+
+    .orb-1 {
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(0, 87, 255, 0.6) 0%, transparent 70%);
+      filter: blur(0px);
+      animation: orbFloat1 12s ease-in-out infinite;
+      opacity: 0.9 !important;
+    }
+
+    .orb-2 {
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(255, 45, 0, 0.5) 0%, transparent 70%);
+      filter: blur(0px);
+      animation: orbFloat2 15s ease-in-out infinite;
+      opacity: 0.9 !important;
+    }
+
+    .orb-3 {
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(0, 87, 255, 0.4) 0%, transparent 70%);
+      filter: blur(0px);
+      animation: orbFloat3 18s ease-in-out infinite;
+      opacity: 0.8 !important;
+    }
+
+    /* ORBS ARE ALWAYS VISIBLE - NO ANIMATION FADE */
+    .orb {
+      opacity: 0.95 !important;
+    }
+
+    @keyframes orbFloat1 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      25% { transform: translate(60px, -40px) scale(1.15); }
+      50% { transform: translate(-40px, 60px) scale(0.9); }
+      75% { transform: translate(30px, 30px) scale(1.1); }
+    }
+
+    @keyframes orbFloat2 {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      33% { transform: translate(-60px, 40px) scale(1.2); }
+      66% { transform: translate(40px, -30px) scale(0.85); }
+    }
+
+    @keyframes orbFloat3 {
+      0%, 100% { transform: translate(0, 0); }
+      20% { transform: translate(30px, -20px); }
+      40% { transform: translate(-20px, 40px); }
+      60% { transform: translate(40px, 15px); }
+      80% { transform: translate(-15px, -30px); }
+    }
+
+    .glow-pulse {
+      animation: glowPulse 2s ease-in-out infinite !important;
+    }
+
+    @keyframes glowPulse {
+      0%, 100% { opacity: 0.7; }
+      50% { opacity: 1; }
+    }
+
+    /* ===========================================
+       AMBIENT PARTICLES
+       Elegant floating particles in background
+       =========================================== */
+    .ambient-container {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .ambient-particle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      opacity: 0;
+      animation: ambientFloat linear infinite;
+    }
+
+    .ambient-particle.blue {
+      background: var(--electric-blue);
+      box-shadow: 0 0 20px var(--electric-blue), 0 0 40px var(--electric-blue);
+    }
+
+    .ambient-particle.red {
+      background: var(--intense-red);
+      box-shadow: 0 0 15px var(--intense-red), 0 0 30px var(--intense-red);
+    }
+
+    .ambient-particle.white {
+      background: var(--white);
+      box-shadow: 0 0 10px var(--white);
+    }
+
+    @keyframes ambientFloat {
+      0% {
+        opacity: 0;
+        transform: translateY(100vh) rotate(0deg);
+      }
+      10% {
+        opacity: 0.4;
+      }
+      90% {
+        opacity: 0.3;
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-100vh) rotate(360deg);
+      }
+    }
+
+    /* ===========================================
+       DYNAMIC — Rotating Geometric
+       =========================================== */
+    .geo-spin {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border: 1px solid rgba(0, 87, 255, 0.15);
+      transform: rotate(45deg);
+      animation: geoSpin 20s linear infinite;
+      z-index: 0;
+    }
+
+    .geo-spin::before {
+      content: '';
+      position: absolute;
+      inset: 15px;
+      border: 1px solid rgba(255, 45, 0, 0.1);
+    }
+
+    @keyframes geoSpin {
+      from { transform: rotate(45deg); }
+      to { transform: rotate(405deg); }
+    }
+
+    /* ===========================================
+       DYNAMIC — Line Draw
+       =========================================== */
+    .line-draw {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: lineDraw 2s ease-out forwards;
+    }
+
+    @keyframes lineDraw {
+      to { stroke-dashoffset: 0; }
+    }
+
+    /* ===========================================
+       GEOMETRIC ELEMENTS
+       =========================================== */
+
+    .grid-overlay {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0, 87, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 87, 255, 0.04) 1px, transparent 1px);
+      background-size: 64px 64px;
+      z-index: 0;
+      animation: gridFade 1.5s ease-out forwards;
+    }
+
+    @keyframes gridFade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .corner-frame {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border: 1px solid var(--electric-blue);
+      opacity: 0.25;
+      z-index: 1;
+    }
+
+    .corner-frame.tl { top: 36px; left: 36px; border-right: none; border-bottom: none; }
+    .corner-frame.br { bottom: 36px; right: 36px; border-left: none; border-top: none; }
+
+    .diagonal-slash {
+      position: absolute;
+      width: 180%;
+      height: 1px;
+      background: linear-gradient(90deg, var(--electric-blue), transparent);
+      transform: rotate(-12deg);
+      opacity: 0.15;
+      z-index: 0;
+    }
+
+    .diagonal-slash.top { top: 18%; left: -40%; }
+    .diagonal-slash.bottom { bottom: 22%; right: -40%; transform: rotate(-12deg) scaleX(-1); }
+
+    /* ===========================================
+       PARTICLE FIELD - SOTA VISIBLE PARTICLES
+       Large, bright, GPU-accelerated
+       =========================================== */
+    .particle-field {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .particle {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: var(--electric-blue);
+      border-radius: 50%;
+      opacity: 0;
+      animation: particleFloat 8s ease-out infinite;
+      box-shadow: 0 0 20px var(--electric-blue), 0 0 40px var(--electric-blue), 0 0 60px var(--electric-blue);
+    }
+
+    @keyframes particleFloat {
+      0% {
+        opacity: 0;
+        transform: translateY(100vh) scale(0);
+      }
+      10% {
+        opacity: 0.9;
+        transform: translateY(80vh) scale(1);
+      }
+      90% {
+        opacity: 0.7;
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-30vh) scale(0.5);
+      }
+    }
+
+    /* Stagger particle delays */
+    .particle:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .particle:nth-child(2) { left: 20%; animation-delay: 1.5s; }
+    .particle:nth-child(3) { left: 30%; animation-delay: 3s; }
+    .particle:nth-child(4) { left: 40%; animation-delay: 0.5s; }
+    .particle:nth-child(5) { left: 50%; animation-delay: 2s; }
+    .particle:nth-child(6) { left: 60%; animation-delay: 4s; }
+    .particle:nth-child(7) { left: 70%; animation-delay: 1s; }
+    .particle:nth-child(8) { left: 80%; animation-delay: 3.5s; }
+    .particle:nth-child(9) { left: 90%; animation-delay: 2.5s; }
+    .particle:nth-child(10) { left: 15%; animation-delay: 5s; }
+    .particle:nth-child(11) { left: 25%; animation-delay: 6s; }
+    .particle:nth-child(12) { left: 35%; animation-delay: 4.5s; }
+
+    /* ===========================================
+       MOUSE TRAIL - HIGH VISIBILITY PARTICLES
+       =========================================== */
+    .mouse-trail {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    .trail-particle {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: var(--electric-blue);
+      border-radius: 50%;
+      pointer-events: none;
+      opacity: 0;
+      transform: scale(0);
+      box-shadow: 0 0 25px var(--electric-blue), 0 0 50px var(--electric-blue), 0 0 75px var(--electric-blue);
+      transition: opacity 0.15s ease, transform 0.1s ease;
+    }
+
+    .trail-particle.active {
+      opacity: 1;
+      transform: scale(1.5);
+    }
+
+    .trail-particle.red {
+      background: var(--intense-red);
+      box-shadow: 0 0 20px var(--intense-red), 0 0 40px var(--intense-red), 0 0 60px var(--intense-red);
+    }
+
+    /* ===========================================
+       DYNAMIC — Glow Lines (SOTA)
+       Subtle animated connecting lines
+       =========================================== */
+    .glow-line {
+      position: absolute;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--electric-blue), transparent);
+      opacity: 0.15;
+      animation: glowLineMove 8s ease-in-out infinite;
+    }
+
+    @keyframes glowLineMove {
+      0%, 100% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      50% {
+        transform: translateX(100%);
+        opacity: 0.2;
+      }
+    }
+
+    /* ===========================================
+       DYNAMIC — Ripple Effect (SOTA)
+       =========================================== */
+    .ripple {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid var(--electric-blue);
+      opacity: 0;
+      animation: rippleExpand 4s ease-out infinite;
+    }
+
+    @keyframes rippleExpand {
+      0% {
+        width: 0;
+        height: 0;
+        opacity: 0.3;
+      }
+      100% {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+        margin-left: -100px;
+        margin-top: -100px;
+      }
+    }
+
+    .slide.active .ripple:nth-child(1) { animation-delay: 0s; }
+    .slide.active .ripple:nth-child(2) { animation-delay: 1.3s; }
+    .slide.active .ripple:nth-child(3) { animation-delay: 2.6s; }
+
+    /* ===========================================
+       AMBIENT PARTICLES - JS GENERATED
+       Bright, visible, floating particles
+       =========================================== */
+    .ambient-particles {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .ambient-particle {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: var(--electric-blue);
+      border-radius: 50%;
+      opacity: 0;
+      animation: ambientFloat linear infinite;
+      box-shadow: 0 0 20px var(--electric-blue), 0 0 40px var(--electric-blue);
+    }
+
+    .ambient-particle:nth-child(odd) {
+      background: var(--intense-red);
+      box-shadow: 0 0 15px var(--intense-red), 0 0 30px var(--intense-red);
+    }
+
+    .ambient-particle:nth-child(3n) {
+      background: var(--white);
+      box-shadow: 0 0 15px var(--white), 0 0 30px var(--white);
+    }
+
+    @keyframes ambientFloat {
+      0% {
+        opacity: 0;
+        transform: translateY(0) rotate(0deg) scale(0);
+      }
+      10% {
+        opacity: 0.8;
+        transform: translateY(-10vh) rotate(36deg) scale(1);
+      }
+      50% {
+        opacity: 0.6;
+        transform: translateY(-50vh) rotate(180deg) scale(0.8);
+      }
+      90% {
+        opacity: 0.4;
+        transform: translateY(-90vh) rotate(324deg) scale(0.6);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-100vh) rotate(360deg) scale(0);
+      }
+    }
+
+    /* ===========================================
+       DYNAMIC — Mouse Trail Particles
+       Partículas que siguen el cursor
+       =========================================== */
+    .mouse-trail {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+    .trail-particle {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: var(--electric-blue);
+      border-radius: 50%;
+      pointer-events: none;
+      opacity: 0;
+      transform: scale(0);
+      transition: opacity 0.4s ease, transform 0.3s ease;
+      box-shadow: 0 0 15px var(--electric-blue), 0 0 30px var(--electric-blue);
+    }
+
+    .trail-particle.active {
+      opacity: 0.8;
+      transform: scale(1.2);
+    }
+
+    .trail-particle.red {
+      background: var(--intense-red);
+      box-shadow: 0 0 12px var(--intense-red), 0 0 25px var(--intense-red);
+    }
+
+    /* ===========================================
+       DYNAMIC — Orb Hover Reaction
+       Los orbs reaccionan sutilmente al hover
+       =========================================== */
+    .orb-interactive {
+      transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), 
+                  filter 0.5s ease,
+                  opacity 0.4s ease;
+    }
+
+    .slide:hover .orb-interactive {
+      transform: scale(1.15) translate(10px, -10px);
+      filter: blur(45px) brightness(1.2);
+      opacity: 0.8;
+    }
+
+    /* ===========================================
+       DYNAMIC — Geometric Hover Expansion
+       =========================================== */
+    .geo-interactive {
+      transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+                  border-color 0.3s ease,
+                  box-shadow 0.3s ease;
+    }
+
+    .slide:hover .geo-interactive {
+      transform: rotate(180deg) scale(1.2);
+      border-color: rgba(0, 87, 255, 0.4);
+      box-shadow: 0 0 30px rgba(0, 87, 255, 0.15);
+    }
+
+    /* ===========================================
+       DYNAMIC — Grid Reveal on Mouse Move
+       =========================================== */
+    .grid-interactive {
+      transition: background-size 0.6s ease, opacity 0.4s ease;
+    }
+
+    .slide:hover .grid-interactive {
+      background-size: 80px 80px;
+    }
+
+    /* ===========================================
+       DYNAMIC — Content Float on Hover
+       =========================================== */
+    .content-hover-float {
+      transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+                  box-shadow 0.4s ease;
+    }
+
+    .content-hover-float:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 
+                  0 0 40px rgba(0, 87, 255, 0.1);
+    }
+
+    /* ===========================================
+       DYNAMIC — Magnetic Button Effect
+       =========================================== */
+    .magnetic-btn {
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+                  box-shadow 0.3s ease,
+                  background 0.3s ease;
+    }
+
+    .magnetic-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 40px rgba(0, 87, 255, 0.3);
+    }
+
+    /* ===========================================
+       DYNAMIC — Shimmer Text Reveal
+       =========================================== */
+    .shimmer-reveal {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .shimmer-reveal::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        transparent 100%
+      );
+      animation: shimmerReveal 3s ease-in-out infinite;
+    }
+
+    @keyframes shimmerReveal {
+      0% { left: -100%; }
+      50%, 100% { left: 100%; }
+    }
+
+    /* ===========================================
+       DYNAMIC — Pulse Border Effect
+       =========================================== */
+    .pulse-border {
+      position: relative;
+    }
+
+    .pulse-border::before {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border: 2px solid var(--electric-blue);
+      opacity: 0;
+      animation: pulseBorder 2s ease-out infinite;
+    }
+
+    @keyframes pulseBorder {
+      0% {
+        transform: scale(0.8);
+        opacity: 0.8;
+      }
+      100% {
+        transform: scale(1.3);
+        opacity: 0;
+      }
+    }
+
+    /* ===========================================
+       TYPOGRAPHY — 3 Level System (OPTIMIZED)
+       Legible sizes for presentations 3-5 meters
+       =========================================== */
+
+    .headline {
+      font-family: var(--headline);
+      font-size: clamp(56px, 8vw, 96px);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      color: var(--white);
+      max-width: 100%;
+      word-wrap: break-word;
+      text-align: inherit;
+      text-shadow: 0 4px 30px rgba(0, 0, 0, 0.7), 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .headline .red { color: var(--intense-red); }
+    .headline .blue { color: var(--electric-blue); }
+
+    .statement {
+      font-family: var(--statement);
+      font-size: clamp(20px, 2.2vw, 28px);
+      font-weight: 500;
+      line-height: 1.5;
+      color: var(--titanium);
+      max-width: 760px;
+      text-align: inherit;
+      text-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);
+    }
+
+    .label {
+      font-family: var(--statement);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--electric-blue);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .body-text {
+      font-family: var(--body);
+      font-size: clamp(16px, 1.4vw, 20px);
+      font-weight: 400;
+      line-height: 1.75;
+      color: var(--silver);
+      max-width: 100%;
+    }
+
+    .label {
+      font-family: var(--statement);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--electric-blue);
+    }
+
+    /* ===========================================
+       LAYOUT — Centering and Text Fixes
+       =========================================== */
+    .slide.centered {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .slide.centered .headline {
+      text-align: center;
+      max-width: 900px;
+    }
+
+    .slide.centered .statement {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .slide.centered .quote-zaha {
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .slide.split {
+      flex-direction: row;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .slide.split .headline,
+    .slide.split .statement,
+    .slide.split .body-text {
+      text-align: left;
+    }
+
+    /* Text overflow protection */
+    .headline br {
+      display: block;
+      content: "";
+      margin-top: 0;
+    }
+
+    /* Content blocks centered in centered slides */
+    .slide.centered .content-block {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Stats grid responsive text */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 32px;
+      margin-top: 36px;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-item .stat-value {
+      display: block;
+    }
+
+    .stat-item .stat-label {
+      display: block;
+      text-align: center;
+    }
+
+    .label {
+      font-family: var(--statement);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--electric-blue);
+    }
+
+    /* ===========================================
+       LAYOUT COMPONENTS
+       =========================================== */
+
+    .slide > * { position: relative; z-index: 2; }
+    .slide > .orb,
+    .slide > .geo-spin,
+    .slide > .diagonal-slash,
+    .slide > .grid-overlay { z-index: 1; }
+
+    .slide-header { margin-bottom: 32px; }
+
+    .slide-footer {
+      margin-top: auto;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .slide-counter {
+      font-family: var(--headline);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--electric-blue);
+      letter-spacing: 0.1em;
+    }
+
+    .slide-meta {
+      font-family: var(--body);
+      font-size: 11px;
+      font-weight: 300;
+      color: var(--graphite);
+      letter-spacing: 0.05em;
+    }
+
+    .rule {
+      width: 48px;
+      height: 3px;
+      background: var(--intense-red);
+      margin: 20px 0;
+    }
+
+    .rule.blue { background: var(--electric-blue); }
+
+    /* ===========================================
+       DYNAMIC — Content Blocks with stagger
+       =========================================== */
+    .content-block {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 24px 28px;
+      max-width: 600px;
+      transition: all 0.3s ease;
+    }
+
+    .content-block:hover {
+      background: rgba(255,255,255,0.05);
+      border-color: rgba(0, 87, 255, 0.2);
+      transform: translateX(4px);
+    }
+
+    .content-block p {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.7;
+      color: var(--silver);
+    }
+
+    .content-block strong {
+      color: var(--electric-blue);
+      font-weight: 700;
+    }
+
+    /* ===========================================
+       LAYOUT — Content Block (READABLE)
+       =========================================== */
+    .content-block {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 28px 32px;
+      max-width: 640px;
+      transition: all 0.3s ease;
+    }
+
+    .content-block p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.75;
+      color: var(--silver);
+    }
+
+    .content-block strong {
+      color: var(--electric-blue);
+      font-weight: 700;
+    }
+
+    /* ===========================================
+       FEATURE LIST — Readable spacing
+       =========================================== */
+    .feature-list {
+      list-style: none;
+      margin-top: 24px;
+    }
+
+    .feature-list li {
+      font-family: var(--statement);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--silver);
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      opacity: 0;
+      transform: translateX(-20px);
+      transition: all 0.3s ease;
+    }
+
+    .slide.active .feature-list li {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .slide.active .feature-list li:nth-child(1) { transition-delay: 0.1s; }
+    .slide.active .feature-list li:nth-child(2) { transition-delay: 0.2s; }
+    .slide.active .feature-list li:nth-child(3) { transition-delay: 0.3s; }
+    .slide.active .feature-list li:nth-child(4) { transition-delay: 0.4s; }
+    .slide.active .feature-list li:nth-child(5) { transition-delay: 0.5s; }
+    .slide.active .feature-list li:nth-child(6) { transition-delay: 0.6s; }
+
+    .feature-list li:last-child { border-bottom: none; }
+
+    .feature-list li:hover {
+      color: var(--white);
+      padding-left: 8px;
+    }
+
+    .feature-marker {
+      width: 8px;
+      height: 8px;
+      background: var(--intense-red);
+      transform: rotate(45deg);
+      flex-shrink: 0;
+      transition: all 0.3s ease;
+    }
+
+    .feature-list li:hover .feature-marker {
+      background: var(--electric-blue);
+      transform: rotate(45deg) scale(1.3);
+    }
+
+    /* ===========================================
+       STATS GRID — Clear readable numbers
+       =========================================== */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .stat-item { text-align: center; }
+
+    .stat-value {
+      font-family: var(--headline);
+      font-size: clamp(48px, 5vw, 72px);
+      font-weight: 700;
+      color: var(--electric-blue);
+      line-height: 1;
+      margin-bottom: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .stat-item:hover .stat-value {
+      transform: scale(1.05);
+      text-shadow: 0 0 40px rgba(0, 87, 255, 0.6);
+    }
+
+    .stat-value.red { color: var(--intense-red); }
+    .stat-value.white { color: var(--white); }
+
+    .stat-label {
+      font-family: var(--statement);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--titanium);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* ===========================================
+       Quote
+       =========================================== */
+    .quote-zaha {
+      border-left: 3px solid var(--intense-red);
+      padding-left: 20px;
+      margin: 20px 0;
+    }
+
+    .quote-zaha p {
+      font-family: var(--statement);
+      font-size: clamp(16px, 1.6vw, 20px);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.5;
+      color: var(--titanium);
+    }
+
+    /* ===========================================
+       DYNAMIC — Visual box with hover expand
+       =========================================== */
+    .visual-box {
+      width: 220px;
+      height: 220px;
+      border: 1px solid var(--electric-blue);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.7;
+      transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+      overflow: hidden;
+    }
+
+    .visual-box::before {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      background: radial-gradient(circle, rgba(0, 87, 255, 0.15) 0%, transparent 70%);
+      border-radius: 50%;
+      transition: all 0.4s ease;
+    }
+
+    .visual-box:hover {
+      opacity: 1;
+      border-color: var(--intense-red);
+      transform: scale(1.05);
+      box-shadow: 0 0 40px rgba(0, 87, 255, 0.2);
+    }
+
+    .visual-box:hover::before {
+      width: 80%;
+      height: 80%;
+      background: radial-gradient(circle, rgba(255, 45, 0, 0.15) 0%, transparent 70%);
+    }
+
+    .visual-box .icon {
+      font-size: 56px;
+      position: relative;
+      z-index: 1;
+      transition: transform 0.3s ease;
+    }
+
+    .visual-box:hover .icon {
+      transform: scale(1.1);
+    }
+
+    .visual-box .label {
+      position: absolute;
+      bottom: -28px;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+    }
+
+    /* ===========================================
+       IMAGE INTEGRATION — Subtle Dynamic Effects
+       =========================================== */
+
+    /* Full slide background image with overlay */
+    .img-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+    }
+
+    .img-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(10, 10, 10, 0.85) 0%,
+        rgba(10, 10, 10, 0.7) 50%,
+        rgba(10, 10, 10, 0.85) 100%
+      );
+      z-index: 1;
+    }
+
+    .img-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(
+        ellipse at 30% 20%,
+        rgba(0, 87, 255, 0.08) 0%,
+        transparent 50%
+      );
+      z-index: 1;
+    }
+
+    /* Blur effect */
+    .img-blur {
+      position: absolute;
+      inset: -50px;
+      background-size: cover;
+      background-position: center;
+      filter: blur(60px) saturate(0.5);
+      opacity: 0.4;
+      z-index: 0;
+    }
+
+    /* Mesh gradient from image colors */
+    .img-mesh {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background:
+        radial-gradient(ellipse at 20% 30%, rgba(0, 87, 255, 0.12) 0%, transparent 40%),
+        radial-gradient(ellipse at 80% 70%, rgba(255, 45, 0, 0.08) 0%, transparent 35%),
+        radial-gradient(ellipse at 50% 50%, rgba(30, 30, 30, 0.8) 0%, transparent 60%);
+    }
+
+    /* Vignette overlay */
+    .img-vignette {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background: radial-gradient(
+        ellipse at center,
+        transparent 40%,
+        rgba(10, 10, 10, 0.4) 80%,
+        rgba(10, 10, 10, 0.7) 100%
+      );
+    }
+
+    /* Noise/grain texture overlay */
+    .img-noise::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      opacity: 0.03;
+      z-index: 3;
+      pointer-events: none;
+      mix-blend-mode: overlay;
+    }
+
+    /* Half-tone pattern overlay */
+    .img-halftone::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 8px 8px;
+      z-index: 2;
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    /* Diagonal clip on image */
+    .img-diagonal {
+      clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 20%);
+    }
+
+    /* Frosted glass effect */
+    .img-frosted {
+      backdrop-filter: blur(12px) saturate(1.2);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* Split image + content */
+    .img-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+
+    .img-split-visual {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .img-split-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(0.3) contrast(1.1);
+    }
+
+    .img-split-visual::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        90deg,
+        rgba(10, 10, 10, 0.3) 0%,
+        transparent 30%
+      );
+    }
+
+    /* Floating image with parallax hint */
+    .img-float {
+      position: absolute;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+      z-index: 2;
+    }
+
+    .slide:hover .img-float {
+      transform: translateY(-8px) rotate(1deg);
+    }
+
+    /* Image with reveal mask */
+    .img-reveal {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .img-reveal::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        transparent 60%,
+        rgba(10, 10, 10, 0.9) 100%
+      );
+    }
+
+    /* Glow behind image */
+    .img-glow {
+      position: relative;
+    }
+
+    .img-glow::before {
+      content: '';
+      position: absolute;
+      inset: -30px;
+      background: radial-gradient(
+        ellipse at center,
+        rgba(0, 87, 255, 0.2) 0%,
+        transparent 70%
+      );
+      filter: blur(20px);
+      z-index: -1;
+    }
+
+    /* ===========================================
+       IMAGE EFFECTS — Ken Burns
+       =========================================== */
+    .ken-burns {
+      animation: kenBurns 20s ease-in-out infinite alternate;
+    }
+
+    @keyframes kenBurns {
+      0% { transform: scale(1) translate(0, 0); }
+      100% { transform: scale(1.1) translate(-2%, -1%); }
+    }
+
+    /* ===========================================
+       IMAGE EFFECTS — Float Reveal
+       =========================================== */
+    .img-float-reveal {
+      position: absolute;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+      animation: floatReveal 6s ease-in-out infinite;
+    }
+
+    @keyframes floatReveal {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(1deg); }
+    }
+
+    /* ===========================================
+       TEXT EFFECTS — Split Reveal
+       =========================================== */
+    .split-reveal {
+      display: inline-block;
+      overflow: hidden;
+    }
+
+    .split-reveal span {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(100%);
+      animation: splitUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    .split-reveal span:nth-child(1) { animation-delay: 0s; }
+    .split-reveal span:nth-child(2) { animation-delay: 0.08s; }
+    .split-reveal span:nth-child(3) { animation-delay: 0.16s; }
+    .split-reveal span:nth-child(4) { animation-delay: 0.24s; }
+    .split-reveal span:nth-child(5) { animation-delay: 0.32s; }
+    .split-reveal span:nth-child(6) { animation-delay: 0.4s; }
+
+    @keyframes splitUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===========================================
+       TEXT EFFECTS — Typing
+       =========================================== */
+    .typing-text {
+      border-right: 2px solid var(--electric-blue);
+      padding-right: 4px;
+      animation: typeBlink 1s step-end infinite;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    @keyframes typeBlink {
+      50% { border-color: transparent; }
+    }
+
+    /* ===========================================
+       TEXT EFFECTS — Shimmer
+       =========================================== */
+    .text-shimmer {
+      background: linear-gradient(
+        90deg,
+        var(--white) 0%,
+        var(--titanium) 50%,
+        var(--white) 100%
+      );
+      background-size: 200% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textShimmer 3s ease-in-out infinite;
+    }
+
+    @keyframes textShimmer {
+      0%, 100% { background-position: 200% center; }
+      50% { background-position: 0% center; }
+    }
+
+    /* ===========================================
+       BREATHING / PULSE Effects
+       =========================================== */
+    .breathe {
+      animation: breathePulse 4s ease-in-out infinite;
+    }
+
+    @keyframes breathePulse {
+      0%, 100% { transform: scale(1); opacity: 0.7; }
+      50% { transform: scale(1.08); opacity: 1; }
+    }
+
+    /* ===========================================
+       CLIP PATH Reveal
+       =========================================== */
+    .clip-reveal {
+      clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+      animation: clipExpand 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    @keyframes clipExpand {
+      to { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+    }
+
+    /* ===========================================
+       MAGNETIC Hover
+       =========================================== */
+    .magnetic-hover {
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    /* ===========================================
+       HALFTONE Pattern
+       =========================================== */
+    .halftone-pattern {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+      background-size: 8px 8px;
+      pointer-events: none;
+      animation: halftoneMove 30s linear infinite;
+    }
+
+    @keyframes halftoneMove {
+      0% { background-position: 0 0; }
+      100% { background-position: 50px 50px; }
+    }
+
+    /* ===========================================
+       IMAGE CONTAINER (legacy)
+       =========================================== */
+    .img-container {
+      position: relative;
+      border: 1px solid rgba(255,255,255,0.1);
+      overflow: hidden;
+      transition: all 0.4s ease;
+    }
+
+    .img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .img-container:hover img {
+      transform: scale(1.05);
+    }
+
+    .img-container:hover {
+      border-color: var(--electric-blue);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    }
+
+    /* Background number */
+    .num-bg {
+      position: absolute;
+      right: 40px;
+      bottom: 80px;
+      font-family: var(--headline);
+      font-size: 240px;
+      font-weight: 700;
+      color: var(--white);
+      opacity: 0.025;
+      line-height: 1;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ===========================================
+       SLIDE VARIANTS
+       =========================================== */
+
+    .slide.centered {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .slide.centered .headline { max-width: 800px; }
+    .slide.centered .rule { margin: 0 auto 20px; }
+
+    .slide.split {
+      flex-direction: row;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .split-content { flex: 1; }
+    .split-visual {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* ===========================================
+       DYNAMIC — Highlight/spotlight effect
+       =========================================== */
+    .spotlight {
+      position: relative;
+    }
+
+    .spotlight::after {
+      content: '';
+      position: absolute;
+      inset: -20px;
+      background: radial-gradient(ellipse at center, rgba(0, 87, 255, 0.1) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .slide.active .spotlight::after {
+      opacity: 1;
+    }
+
+    /* ===========================================
+       DYNAMIC — Typing cursor effect
+       =========================================== */
+    .typing-cursor::after {
+      content: '|';
+      animation: blink 1s step-end infinite;
+      color: var(--electric-blue);
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    /* ===========================================
+       NAVIGATION
+       =========================================== */
+    .nav-bar {
+      position: fixed;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 12px;
+      z-index: 100;
+    }
+
+    .nav-btn {
+      width: 44px;
+      height: 44px;
+      background: transparent;
+      border: 1px solid var(--electric-blue);
+      color: var(--electric-blue);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      clip-path: polygon(12% 0, 100% 0, 100% 88%, 88% 100%, 0 100%, 0 12%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nav-btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--electric-blue);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+      z-index: -1;
+    }
+
+    .nav-btn:hover::before {
+      transform: scaleX(1);
+    }
+
+    .nav-btn:hover {
+      color: var(--obsidian);
+      border-color: var(--electric-blue);
+    }
+
+    .nav-btn:active {
+      transform: scale(0.95);
+    }
+
+    .nav-btn svg {
+      width: 18px;
+      height: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--electric-blue), var(--intense-red));
+      z-index: 100;
+      transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+      box-shadow: 0 0 10px rgba(0, 87, 255, 0.5);
+    }
+
+    /* ===========================================
+       DYNAMIC — Slide dots indicator
+       =========================================== */
+    .slide-dots {
+      position: fixed;
+      right: 32px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 100;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--graphite);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    }
+
+    .dot:hover {
+      background: var(--steel);
+      transform: scale(1.2);
+    }
+
+    .dot.active {
+      background: var(--electric-blue);
+      transform: scale(1.3);
+      box-shadow: 0 0 10px rgba(0, 87, 255, 0.5);
+    }
+
+    /* ===========================================
+       SLIDE 01 — HERO (Fixed image path + particles)
+       =========================================== */
+    .slide-hero {
+      position: relative;
+    }
+
+    .slide-hero .img-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('01_Imagenes/freepik__skin-enhancer__27891.png');
+      background-size: cover;
+      background-position: center;
+      z-index: 0;
+    }
+
+    .slide-hero .img-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(10, 10, 10, 0.6) 0%,
+        rgba(10, 10, 10, 0.45) 50%,
+        rgba(10, 10, 10, 0.6) 100%
+      );
+      z-index: 1;
+    }
+
+    /* Particle field for hero */
+    .slide-hero .particle-field {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* Fallback gradient if image fails */
+    .img-fallback {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 30% 20%, rgba(0, 87, 255, 0.2) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 80%, rgba(255, 45, 0, 0.15) 0%, transparent 40%),
+        linear-gradient(180deg, var(--obsidian) 0%, var(--charcoal) 100%);
+      z-index: 0;
+    }
+
+    /* ===========================================
+       RESPONSIVE — Better mobile typography
+       =========================================== */
+    @media (max-width: 1024px) {
+      .headline {
+        font-size: clamp(40px, 7vw, 72px);
+      }
+
+      .statement {
+        font-size: clamp(18px, 2.5vw, 24px);
+      }
+
+      .body-text {
+        font-size: clamp(15px, 1.8vw, 18px);
+      }
+
+      .slide {
+        padding: 56px 48px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .slide {
+        padding: 40px 28px;
+        justify-content: flex-start;
+      }
+
+      .slide.centered {
+        justify-content: center;
+      }
+
+      .headline {
+        font-size: clamp(36px, 8vw, 56px);
+        text-align: center !important;
+      }
+
+      .statement {
+        font-size: clamp(16px, 3vw, 20px);
+        text-align: center !important;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .feature-list li {
+        font-size: 15px;
+        padding: 12px 0;
+      }
+
+      .content-block p {
+        font-size: 15px;
+      }
+
+      .slide.split {
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      .visual-box {
+        width: 160px;
+        height: 160px;
+      }
+
+      .slide-dots {
+        display: none;
+      }
+
+      .nav-bar {
+        bottom: 20px;
+      }
+    }
+
+    /* ===========================================
+       DYNAMIC — Tool card hover effect
+       =========================================== */
+    .tool-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 20px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tool-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--electric-blue), var(--intense-red));
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .tool-card:hover {
+      background: rgba(255,255,255,0.04);
+      border-color: rgba(0, 87, 255, 0.3);
+      transform: translateY(-4px);
+    }
+
+    .tool-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    /* ===========================================
+       DYNAMIC — Number counter animation
+       =========================================== */
+    .counter-animate {
+      display: inline-block;
+    }
+
+    /* ===========================================
+       DYNAMIC — Shimmer effect on text
+       =========================================== */
+    .shimmer {
+      background: linear-gradient(
+        90deg,
+        var(--white) 0%,
+        var(--titanium) 50%,
+        var(--white) 100%
+      );
+      background-size: 200% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 3s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0%, 100% { background-position: 200% center; }
+      50% { background-position: 0% center; }
+    }
+
+    /* ===========================================
+       DYNAMIC — Border animation
+       =========================================== */
+    .border-animate {
+      position: relative;
+    }
+
+    .border-animate::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 2px solid var(--electric-blue);
+      opacity: 0;
+      transition: all 0.4s ease;
+    }
+
+    .border-animate:hover::after {
+      opacity: 1;
+      inset: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Premium Background System - Mesh Gradient + Noise -->
+  <div class="premium-bg">
+    <div class="mesh-gradient"></div>
+    <div class="noise-overlay"></div>
+  </div>
+
+  <!-- Ambient Floating Orbs -->
+  <div class="orb orb-1 glow-pulse"></div>
+  <div class="orb orb-2 glow-pulse" style="animation-delay: -5s;"></div>
+  <div class="orb orb-3" style="animation-delay: -10s;"></div>
+
+  <!-- Mouse Trail Container -->
+  <div class="mouse-trail" id="mouseTrail"></div>
+
+  <div class="progress-bar" id="progress"></div>
+  <div class="slide-dots" id="dots"></div>
+  <div class="deck" id="deck">
+
+    <!-- =============================================
+         SLIDE 01 — TITLE (Keynote SOTA Cover)
+         Fondo con imagen estática + partículas sutiles
+         ============================================= -->
+    <section class="slide centered active slide-hero" data-slide="1">
+
+      <!-- Fondo con imagen FIJA (sin Ken Burns) que cubre toda la pantalla -->
+      <div style="position: absolute; inset: 0; z-index: 0; overflow: hidden;">
+        <img src="01_Imagenes/freepik__skin-enhancer__27891.png"
+             alt=""
+             style="width: 100vw; height: 100vh; object-fit: cover; object-position: center; opacity: 0.5; filter: brightness(0.6) contrast(1.2) saturate(0.9);">
+      </div>
+
+      <!-- Overlay oscuro con gradiente para legibilidad -->
+      <div style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.6) 50%, rgba(10,10,10,0.85) 100%); z-index: 1;"></div>
+
+      <!-- Mesh gradient overlay -->
+      <div style="position: absolute; inset: 0; z-index: 1; background: radial-gradient(ellipse at 80% 20%, rgba(0, 87, 255, 0.12) 0%, transparent 50%), radial-gradient(ellipse at 20% 80%, rgba(255, 45, 0, 0.08) 0%, transparent 40%); pointer-events: none;"></div>
+
+      <!-- Partículas flotantes SOTA en el fondo -->
+      <div class="particle-field" style="z-index: 2;">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+
+      <!-- Glow lines en el fondo -->
+      <div class="glow-line" style="top: 25%; width: 100%; z-index: 2;"></div>
+      <div class="glow-line" style="bottom: 30%; width: 100%; animation-delay: 4s; z-index: 2;"></div>
+
+      <!-- Contenido principal centrado con distribución vertical balanceada -->
+      <div style="position: relative; z-index: 10; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; width: 100%; height: 100vh; padding: 60px 48px; box-sizing: border-box;">
+
+        <!-- Label con spacing generoso -->
+        <span style="font-family: var(--statement); font-size: clamp(10px, 0.9vw, 12px); font-weight: 600; letter-spacing: 0.45em; text-transform: uppercase; color: var(--intense-red); margin-bottom: 64px;">
+          Fundación Jetro & Criteria
+        </span>
+
+        <!-- Headline con line-height mejorado y spacing -->
+        <h1 style="font-family: var(--headline); font-size: clamp(56px, 10vw, 120px); font-weight: 700; line-height: 1.05; letter-spacing: -0.025em; text-transform: uppercase; color: var(--white); text-shadow: 0 6px 50px rgba(0,0,0,0.95); margin-bottom: 24px;">
+          DE ITERACIONES
+        </h1>
+        <h1 style="font-family: var(--headline); font-size: clamp(56px, 10vw, 120px); font-weight: 700; line-height: 1.05; letter-spacing: -0.025em; text-transform: uppercase; color: var(--electric-blue); text-shadow: 0 6px 50px rgba(0,0,0,0.95), 0 0 80px rgba(0, 87, 255, 0.3); margin-bottom: 48px;">
+          A INSIGHTS
+        </h1>
+
+        <!-- Línea divisoria con peso visual -->
+        <div style="width: 100px; height: 3px; background: linear-gradient(90deg, transparent, var(--intense-red), transparent); margin-bottom: 48px;"></div>
+
+        <!-- Subtítulos con spacing balanceado -->
+        <p style="font-family: var(--statement); font-size: clamp(16px, 1.8vw, 22px); font-weight: 500; color: var(--titanium); letter-spacing: 0.08em; margin-bottom: 10px;">
+          Fundamentos de Inteligencia Artificial
+        </p>
+        <p style="font-family: var(--body); font-size: clamp(13px, 1.2vw, 16px); font-weight: 400; color: var(--steel); letter-spacing: 0.04em;">
+          Herramientas y usos prácticos
+        </p>
+
+      </div>
+
+      <!-- Footer minimalista solo con número -->
+      <div style="position: fixed; bottom: 32px; left: 48px; right: 48px; z-index: 10; display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-family: var(--headline); font-size: 10px; font-weight: 700; color: var(--white); letter-spacing: 0.2em;">01</span>
+      </div>
+
+    </section>
+
+    <!-- =============================================
+         SLIDE 02 — PHILOSOPHY / ADAPTATION
+         ============================================= -->
+    <section class="slide" data-slide="2">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-2" style="top: 20%; right: 15%;"></div>
+      <div class="diagonal-slash bottom"></div>
+      <div class="corner-frame" style="top:36px;right:36px;border-left:none;border-bottom:none;"></div>
+
+      <div class="slide-header">
+        <span class="label">Filosofía</span>
+      </div>
+      <h1 class="headline spotlight" style="font-size: clamp(36px, 5vw, 64px);">
+        REAPrender<br>
+        <span class="blue">O QUEDARSE</span><br>
+        ATRÁS
+      </h1>
+      <div class="rule"></div>
+      <div class="quote-zaha">
+        <p>"Los analfabetos del siglo XXI no serán aquellos que no sepan leer y escribir, sino aquellos que no puedan aprender, desaprender y reaprender."</p>
+        <p style="margin-top: 10px; font-size: 12px; color: var(--graphite);">— Edgar Morin (filósofo y sociólogo francés)</p>
+      </div>
+      <div class="content-block" style="margin-top: 20px;">
+        <p>Así como la máquina de escribir fue reemplazada por el ordenador, y el reloj analogico por el digital... la <strong>Inteligencia Artificial Generativa</strong> es el siguiente paso. <strong>No va a parar.</strong></p>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">02</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">02</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 03 — COMPOUND ENGINEERING (reemplaza CATÁLOGO)
+         ============================================= -->
+    <section class="slide centered" data-slide="3">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1 glow-pulse orb-interactive" style="top: 10%; left: 20%;"></div>
+      <div class="orb orb-2" style="bottom: 15%; right: 15%;"></div>
+      <div class="halftone-pattern"></div>
+      <div class="corner-frame tl"></div>
+      <div class="corner-frame br"></div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <span class="label">Metodología</span>
+        <h1 class="headline spotlight" style="font-size: clamp(36px, 5vw, 56px); margin-top: 16px;">
+          <span class="blue">COMPOUND</span><br>
+          ENGINEERING
+        </h1>
+        <div class="rule"></div>
+      </div>
+
+      <!-- Workflow image centered and static with subtle glow -->
+      <div style="display: flex; justify-content: center; margin-top: 24px;">
+        <div style="position: relative;">
+          <div style="position: absolute; inset: -30px; background: radial-gradient(ellipse at center, rgba(0, 87, 255, 0.12) 0%, transparent 70%); filter: blur(25px); z-index: -1;"></div>
+          <img src="01_Imagenes/Workflow.jpg" alt="Compound Engineering Workflow" style="width: 520px; max-width: 60vw; height: auto; display: block; border: 1px solid rgba(255,255,255,0.08); filter: grayscale(0.15) contrast(1.05);">
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-top: 28px;">
+        <div class="content-block" style="max-width: 560px; text-align: center; background: rgba(0, 87, 255, 0.06); border-color: rgba(0, 87, 255, 0.15);">
+          <p style="font-size: 16px; color: var(--titanium); line-height: 1.7;">
+            <strong style="color: var(--electric-blue);">Principio clave:</strong> Cada unidad de trabajo ingenieril debe hacer las unidades siguientes más fáciles. El conocimiento se capitaliza, no se descarta.
+          </p>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">03</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">03</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 04 — PERPLEXITY
+         ============================================= -->
+    <section class="slide" data-slide="4">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1" style="top: 20%; right: 10%;"></div>
+      <div class="diagonal-slash top"></div>
+      <div class="corner-frame" style="bottom:36px;left:36px;border-right:none;border-top:none;"></div>
+
+      <span class="label">Búsqueda Inteligente</span>
+      <h1 class="headline spotlight" style="font-size: clamp(36px, 5vw, 60px); margin-top: 12px;">
+        <span class="blue">PERPLEXITY</span><br>
+        Búsqueda × IA
+      </h1>
+      <div class="rule"></div>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">5</div>
+          <div class="stat-label">Modos de búsqueda</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value red">∞</div>
+          <div class="stat-label">Fuentes citadas</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value white">0</div>
+          <div class="stat-label">Infoxicación</div>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">04</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">04</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 05 — PERPLEXITY MODOS
+         ============================================= -->
+    <section class="slide" data-slide="5">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-2" style="bottom: 15%; right: 20%;"></div>
+
+      <span class="label">Perplexity</span>
+      <h1 class="headline" style="font-size: clamp(32px, 4vw, 52px); margin-top: 12px;">
+        5 MODOS DE<br>
+        <span class="blue">BÚSQUEDA</span>
+      </h1>
+      <div class="rule"></div>
+
+      <div class="stats-grid" style="grid-template-columns: repeat(5, 1fr); gap: 20px;">
+        <div class="stat-item tool-card">
+          <div class="stat-value" style="font-size: 32px;">🔍</div>
+          <div class="stat-label">Web</div>
+        </div>
+        <div class="stat-item tool-card">
+          <div class="stat-value" style="font-size: 32px;">📚</div>
+          <div class="stat-label">Académico</div>
+        </div>
+        <div class="stat-item tool-card">
+          <div class="stat-value" style="font-size: 32px;">📐</div>
+          <div class="stat-label">Matemáticas</div>
+        </div>
+        <div class="stat-item tool-card">
+          <div class="stat-value" style="font-size: 32px;">✍️</div>
+          <div class="stat-label">Escritura</div>
+        </div>
+        <div class="stat-item tool-card">
+          <div class="stat-value" style="font-size: 32px;">💬</div>
+          <div class="stat-label">Social</div>
+        </div>
+      </div>
+
+      <div class="content-block" style="margin-top: 30px; max-width: 100%;">
+        <p><strong>Modo Incógnito:</strong>私密 mode — like browser, tus búsquedas no se guardan, no se usa para entrenar modelos.</p>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">05</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">05</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 06 — COPILOT WHATSAPP
+         ============================================= -->
+    <section class="slide centered" data-slide="6">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1 glow-pulse" style="top: 20%; left: 25%;"></div>
+      <div class="orb orb-3" style="bottom: 15%; right: 20%;"></div>
+      <div class="geo-spin" style="bottom: 30%; right: 10%;"></div>
+
+      <span class="label" style="margin-bottom: 28px;">Accesibilidad</span>
+      <h1 class="headline">
+        <span class="blue">COPILOT</span><br>
+        EN WHATSAPP
+      </h1>
+      <div class="rule"></div>
+
+      <div class="content-block spotlight" style="text-align: center; max-width: 400px; margin: 0 auto; padding: 32px;">
+        <p style="font-size: 28px; font-weight: 700; color: var(--electric-blue); letter-spacing: 0.1em;">+1 877 224 1042</p>
+        <p class="body-text" style="margin-top: 16px;">La IA de Microsoft en tu bolsillo. Preguntá, creá imágenes, resolvé dudas.</p>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">06</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">06</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 07 — PROMPT ENGINEERING INTRO
+         ============================================= -->
+    <section class="slide" data-slide="7">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-2" style="top: 15%; left: 10%;"></div>
+      <div class="diagonal-slash bottom"></div>
+
+      <span class="label">Prompt Engineering</span>
+      <h1 class="headline" style="font-size: clamp(36px, 5vw, 60px); margin-top: 12px;">
+        CÓMO<br>
+        <span class="red">HABLARLE</span><br>
+        A LA IA
+      </h1>
+      <div class="rule"></div>
+      <p class="statement">
+        No es como Google. Es como hablar con un humano. Cuanta más información, mejor respuesta.
+      </p>
+
+      <div class="slide-footer">
+        <span class="slide-counter">07</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">07</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 08 — PROMPT ANATOMY
+         ============================================= -->
+    <section class="slide split" data-slide="8">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1" style="top: 20%; right: 5%;"></div>
+
+      <div class="split-content">
+        <span class="label">Anatomía</span>
+        <h1 class="headline" style="font-size: clamp(36px, 5vw, 60px); margin-top: 12px;">
+          ESTRUCTURA<br>
+          <span class="blue">DEL PROMPT</span>
+        </h1>
+        <div class="rule"></div>
+        <ul class="feature-list">
+          <li><span class="feature-marker"></span><strong>ROL</strong> — Quién debe ser la IA</li>
+          <li><span class="feature-marker"></span><strong>TAREA</strong> — Qué querés que haga</li>
+          <li><span class="feature-marker"></span><strong>CONTEXTO</strong> — Para quién es</li>
+          <li><span class="feature-marker"></span><strong>FORMATO</strong> — Cómo devolvértelo</li>
+          <li><span class="feature-marker"></span><strong>EJEMPLOS</strong> — Cómo debería verse</li>
+        </ul>
+      </div>
+
+      <div class="split-visual">
+        <div class="visual-box">
+          <span class="icon">⚙️</span>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">08</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">08</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 09 — COFFEE ANALOGY
+         ============================================= -->
+    <section class="slide centered" data-slide="9">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1 glow-pulse" style="top: 15%; right: 20%;"></div>
+      <div class="diagonal-slash top"></div>
+      <div class="corner-frame tl"></div>
+      <div class="corner-frame br"></div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <span class="label" style="margin-bottom: 24px;">Analogía</span>
+        <h1 class="headline">
+          EL CAFÉ
+        </h1>
+        <div class="rule"></div>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-top: 24px;">
+        <div class="quote-zaha" style="max-width: 600px;">
+          <p><strong>"Un café"</strong> = el camarero te da cualquiera</p>
+          <p style="margin-top: 12px;"><strong>"Cortado con leche de soja templada, taza grande, tostada de pan de semillas con mermelada de melocotón"</strong> = exactamente lo que querés</p>
+        </div>
+      </div>
+      <p class="statement" style="margin-top: 16px; text-align: center;">
+        Con la IA: <span class="shimmer">cuanta más especificidad, mejor resultado</span>
+      </p>
+
+      <div class="slide-footer">
+        <span class="slide-counter">09</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">09</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 10 — TOKENS & TRANSFORMERS
+         ============================================= -->
+    <section class="slide split" data-slide="10">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-2" style="bottom: 10%; right: 15%;"></div>
+
+      <div class="split-content">
+        <span class="label">Tecnología</span>
+        <h1 class="headline" style="font-size: clamp(36px, 5vw, 60px); margin-top: 12px;">
+          TOKENS &<br>
+          <span class="blue">TRANSFORMERS</span>
+        </h1>
+        <div class="rule"></div>
+        <div class="content-block">
+          <p><strong>Tokens:</strong> Cómo la IA divide tu texto para procesarlo. Cada palabra se fragmenta en unidades que ella puede entender y priorizar.</p>
+          <p style="margin-top: 14px;"><strong>Transformers:</strong> Creados por Google en 2016 para AlphaGo. Son los "cerebros" que recuerdan conversaciones y extraen significado. <span class="shimmer">Optimus Prime</span> sería nuestro aliado.</p>
+        </div>
+      </div>
+
+      <div class="split-visual">
+        <div class="visual-box">
+          <span class="icon">⚡</span>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">10</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">10</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 11 — TEMPERATURE
+         ============================================= -->
+    <section class="slide" data-slide="11">
+      <div class="grid-overlay"></div>
+<div class="orb orb-1 glow-pulse orb-interactive" style="top: 25%; left: 20%;"></div>
+      <div class="diagonal-slash bottom"></div>
+      <div class="corner-frame tl"></div>
+
+      <span class="label">Creatividad</span>
+      <h1 class="headline" style="font-size: clamp(36px, 5vw, 60px); margin-top: 12px;">
+        LA<br>
+        <span class="blue">TEMPERATURA</span>
+      </h1>
+      <div class="rule"></div>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">0.1</div>
+          <div class="stat-label">Objetivo / Factual</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value" style="color: var(--titanium);">0.5</div>
+          <div class="stat-label">Equilibrado</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value red">1.0</div>
+          <div class="stat-label">Máxima Creatividad</div>
+        </div>
+      </div>
+
+      <div class="content-block" style="margin-top: 30px;">
+        <p><strong>Baja temperatura:</strong> Datos concretos, ejercicios estructurados, respuestas precisas.</p>
+        <p style="margin-top: 10px;"><strong>Alta temperatura:</strong> Gamificación, juegos, ideas creativas, soluciones innovadoras.</p>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">11</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">11</div>
+    </section>
+
+<!-- =============================================
+          SLIDE 12 — ALICIA QUOTE
+          ============================================= -->
+    <section class="slide centered" data-slide="12">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-2" style="top: 20%; right: 25%;"></div>
+      <div class="orb orb-3" style="bottom: 20%; left: 15%;"></div>
+      <div class="geo-spin geo-interactive" style="top: 25%; left: 10%;"></div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <span class="label" style="margin-bottom: 32px;">País de las Maravillas</span>
+        <h1 class="headline" style="font-size: clamp(28px, 4vw, 48px);">
+          "¿A DÓNDE<br>
+          <span class="blue">QUIERES LLEGAR</span>?"
+        </h1>
+        <div class="rule"></div>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-top: 24px;">
+        <div class="quote-zaha" style="max-width: 650px;">
+          <p>"Si no sabemos lo que queremos conseguir de la IA, va a ser muy difícil que lleguemos a ese camino."</p>
+          <p style="margin-top: 12px; font-size: 14px; color: var(--graphite);">— Alicia en el País de las Maravillas</p>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">12</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">12</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 13 — HALLUCINATIONS
+         ============================================= -->
+    <section class="slide centered" data-slide="13">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1" style="top: 25%; left: 18%;"></div>
+      <div class="orb orb-2 glow-pulse" style="bottom: 20%; right: 20%;"></div>
+      <div class="diagonal-slash top"></div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <span class="label" style="margin-bottom: 28px; color: var(--intense-red);">⚠ Alerta</span>
+        <h1 class="headline">
+          LA IA<br>
+          <span class="red">ALUCINA</span>
+        </h1>
+        <div class="rule"></div>
+      </div>
+
+      <div style="display: flex; justify-content: center;">
+        <p class="statement" style="text-align: center; max-width: 700px;">
+          Se inventa las respuestas con total seguridad. Como un amigo que no sabe la respuesta pero te la dice igual.
+        </p>
+      </div>
+      <div style="display: flex; justify-content: center; margin-top: 24px;">
+        <div class="content-block spotlight" style="max-width: 500px;">
+          <p><strong>Regla de oro:</strong> Si no sabés del tema, no podés verificar si la IA te está mintiendo. <span style="color: var(--intense-red);">La responsabilidad es tuya.</span></p>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">13</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">13</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 14 — PRIVACY
+         ============================================= -->
+    <section class="slide" data-slide="14">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-2" style="top: 20%; right: 15%;"></div>
+      <div class="diagonal-slash bottom"></div>
+
+      <span class="label">Seguridad</span>
+      <h1 class="headline" style="font-size: clamp(36px, 5vw, 60px); margin-top: 12px;">
+        <span class="blue">PRIVACIDAD</span><br>
+        & DATOS
+      </h1>
+      <div class="rule"></div>
+
+      <ul class="feature-list">
+        <li><span class="feature-marker"></span>No subas datos sensibles a herramientas públicas</li>
+        <li><span class="feature-marker"></span>Usá ventanas de incógnito para búsquedas privadas</li>
+        <li><span class="feature-marker"></span>Tu historial puede entrenar modelos — leé la letra chica</li>
+        <li><span class="feature-marker"></span><strong>Modelos locales:</strong> IA sin internet, tus datos nunca salen</li>
+        <li><span class="feature-marker"></span><strong>Anonimización:</strong> Borrá DNIs, nombres antes de procesar</li>
+      </ul>
+
+      <div class="slide-footer">
+        <span class="slide-counter">14</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">14</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 15 — BIG TECH ECOSYSTEM
+         ============================================= -->
+    <section class="slide" data-slide="15">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1 glow-pulse" style="top: 15%; right: 10%;"></div>
+      <div class="orb orb-3" style="bottom: 15%; left: 10%;"></div>
+
+      <span class="label">Ecosistema</span>
+      <h1 class="headline" style="font-size: clamp(32px, 4.5vw, 56px); margin-top: 12px;">
+        LAS<br>
+        <span class="blue">BIG TECH</span>
+      </h1>
+      <div class="rule"></div>
+
+      <div class="stats-grid" style="grid-template-columns: repeat(5, 1fr); gap: 16px;">
+        <div class="stat-item tool-card">
+          <div class="stat-value" style="font-size: 24px; color: var(--white);">OpenAI</div>
+          <div class="stat-label">ChatGPT</div>
+        </div>
+        <div class="stat-item tool-card">
+          <div class="stat-value" style="font-size: 24px; color: var(--electric-blue);">Microsoft</div>
+          <div class="stat-label">Copilot</div>
+        </div>
+        <div class="stat-item tool-card">
+          <div class="stat-value" style="font-size: 24px; color: var(--white);">Apple</div>
+          <div class="stat-label">GPT inside</div>
+        </div>
+        <div class="stat-item tool-card">
+          <div class="stat-value" style="font-size: 24px; color: var(--electric-blue);">Google</div>
+          <div class="stat-label">Gemini</div>
+        </div>
+        <div class="stat-item tool-card">
+          <div class="stat-value" style="font-size: 24px; color: var(--white);">Meta</div>
+          <div class="stat-label">Llama</div>
+        </div>
+      </div>
+
+      <div class="content-block" style="margin-top: 24px;">
+        <p><strong>Microsoft invirtió en OpenAI</strong> → Copilot usa GPT-4. Apple tiene acuerdo con OpenAI. Cada una usa el modelo de forma diferente.</p>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">15</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">15</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 16 — CHATGPT EVOLUTION
+         ============================================= -->
+    <section class="slide split" data-slide="16">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-2" style="bottom: 20%; right: 20%;"></div>
+
+      <div class="split-content">
+        <span class="label">Evolución</span>
+        <h1 class="headline" style="font-size: clamp(36px, 5vw, 60px); margin-top: 12px;">
+          CHATGPT<br>
+          <span class="blue">EVOLUCIÓN</span>
+        </h1>
+        <div class="rule"></div>
+        <div class="content-block">
+          <p><strong>GPT-3</strong> → Solo texto</p>
+          <p><strong>GPT-4</strong> → Texto + Imágenes</p>
+          <p><strong>GPT-4o</strong> → Omnicanal (texto + voz + imágenes + audio)</p>
+          <p style="margin-top: 14px;"><strong>"o" = Omnicanal</strong> —le preguntás como hablándole, le mandás fotos, te devuelve voz.</p>
+        </div>
+      </div>
+
+      <div class="split-visual">
+        <div class="visual-box">
+          <span class="icon">🤖</span>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">16</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">16</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 17 — GPTs PERSONALIZADOS
+         ============================================= -->
+    <section class="slide" data-slide="17">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1" style="top: 20%; left: 15%;"></div>
+      <div class="diagonal-slash top"></div>
+
+      <span class="label">Personalización</span>
+      <h1 class="headline" style="font-size: clamp(36px, 5vw, 60px); margin-top: 12px;">
+        TU <span class="red">GPT</span><br>
+        PERSONAL
+      </h1>
+      <div class="rule"></div>
+
+      <div class="content-block">
+        <p><strong>Instructions Personalizadas:</strong></p>
+        <ul class="feature-list" style="margin-top: 10px;">
+          <li><span class="feature-marker"></span>Quién sos (profesión, expertise)</li>
+          <li><span class="feature-marker"></span>Cómo te gusta que te respondan</li>
+          <li><span class="feature-marker"></span>Qué formato preferís (tablas, bullets, etc.)</li>
+        </ul>
+      </div>
+
+      <div class="content-block" style="margin-top: 20px;">
+        <p><strong>GPTs:</strong> Modelos especializados que hacen UNA cosa muy bien. Como apps en tu móvil — buscás la que necesitás.</p>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">17</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">17</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 18 — GEMINI
+         ============================================= -->
+    <section class="slide centered" data-slide="18">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-2 glow-pulse" style="bottom: 15%; left: 10%;"></div>
+      <div class="corner-frame" style="top:36px;right:36px;border-left:none;border-bottom:none;"></div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <span class="label">Google</span>
+        <h1 class="headline" style="font-size: clamp(36px, 5vw, 60px); margin-top: 12px;">
+          <span class="blue">GEMINI</span><br>
+          DE GOOGLE
+        </h1>
+        <div class="rule blue"></div>
+      </div>
+
+      <ul class="feature-list" style="max-width: 600px; margin: 16px auto 0;">
+        <li><span class="feature-marker"></span>OCR avanzado — analiza imágenes y documentos</li>
+        <li><span class="feature-marker"></span>Tablas → exportables a Excel</li>
+        <li><span class="feature-marker"></span>@gemini en Chrome — chateá desde la URL</li>
+        <li><span class="feature-marker"></span>Conectado a internet (versión gratuita)</li>
+      </ul>
+
+      <div style="display: flex; justify-content: center; margin-top: 24px;">
+        <div class="visual-box">
+          <span class="icon">🔮</span>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">18</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">18</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 19 — GEMINI EN CHROME
+         ============================================= -->
+    <section class="slide centered" data-slide="19">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1" style="top: 15%; right: 25%;"></div>
+      <div class="orb orb-3" style="bottom: 20%; left: 20%;"></div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <span class="label" style="margin-bottom: 28px;">Truco</span>
+        <h1 class="headline">
+          @GEMINI EN<br>
+          <span class="blue">CHROME</span>
+        </h1>
+        <div class="rule"></div>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-top: 24px;">
+        <div class="quote-zaha" style="max-width: 600px;">
+          <p>En la barra de direcciones de Chrome:</p>
+          <p style="margin-top: 10px; font-size: 24px; font-weight: 700; color: var(--electric-blue);">@gemini + tu pregunta</p>
+          <p style="margin-top: 10px;">→ Se abre Gemini directamente con tu consulta</p>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">19</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">19</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 20 — NOTEBOOKLM
+         ============================================= -->
+    <section class="slide split" data-slide="20">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1 glow-pulse" style="top: 20%; right: 10%;"></div>
+      <div class="geo-spin" style="bottom: 25%; left: 5%;"></div>
+
+      <div class="split-content">
+        <span class="label">Research</span>
+        <h1 class="headline" style="font-size: clamp(36px, 5vw, 60px); margin-top: 12px;">
+          <span class="blue">NOTEBOOK</span><br>
+          LM
+        </h1>
+        <div class="rule"></div>
+        <p class="statement">
+          Tu biblioteca personal de IA. Subís fuentes, ella te responde sobre ellas.
+        </p>
+        <ul class="feature-list" style="margin-top: 16px;">
+          <li><span class="feature-marker"></span>Hasta <strong>50 fuentes</strong> por cuaderno</li>
+          <li><span class="feature-marker"></span>PDFs, artículos, videos de YouTube</li>
+          <li><span class="feature-marker"></span>Resumen automático, puntos clave</li>
+          <li><span class="feature-marker"></span>FAQs generados por IA</li>
+        </ul>
+      </div>
+
+      <div class="split-visual">
+        <div class="visual-box">
+          <span class="icon">📚</span>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">20</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">20</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 21 — NOTEBOOKLM USOS
+         ============================================= -->
+    <section class="slide" data-slide="21">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-2" style="bottom: 20%; right: 15%;"></div>
+
+      <span class="label">NotebookLM</span>
+      <h1 class="headline" style="font-size: clamp(32px, 4vw, 52px); margin-top: 12px;">
+        CASOS<br>
+        <span class="blue">PRÁCTICOS</span>
+      </h1>
+      <div class="rule"></div>
+
+      <div class="stats-grid" style="grid-template-columns: repeat(2, 1fr); gap: 24px;">
+        <div class="tool-card">
+          <h3 style="font-family: var(--headline); font-size: 18px; margin-bottom: 12px;">📚 Preparación de oposiciones</h3>
+          <p class="body-text">Subís todos los documentos de estudio →Os preguntás sobre ellos →Os hace preguntas de examen</p>
+        </div>
+        <div class="tool-card">
+          <h3 style="font-family: var(--headline); font-size: 18px; margin-bottom: 12px;">🔬 Revisión de literatura científica</h3>
+          <p class="body-text">PDFs de artículos → Resúmenes comparados → Análisis de 5 papers en 10 minutos</p>
+        </div>
+        <div class="tool-card">
+          <h3 style="font-family: var(--headline); font-size: 18px; margin-bottom: 12px;">🎓 Cursos online</h3>
+          <p class="body-text">Videos de YouTube → Puntos clave → Cuestionarios → Guías de estudio</p>
+        </div>
+        <div class="tool-card">
+          <h3 style="font-family: var(--headline); font-size: 18px; margin-bottom: 12px;">📝 Documentos técnicos</h3>
+          <p class="body-text">Instrucciones de lavadora → Resumen simple → FAQs para clientes</p>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">21</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">21</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 22 — COPILOT EN EDGE
+         ============================================= -->
+    <section class="slide split" data-slide="22">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1" style="top: 15%; left: 20%;"></div>
+
+      <div class="split-content">
+        <span class="label">Microsoft</span>
+        <h1 class="headline" style="font-size: clamp(36px, 5vw, 60px); margin-top: 12px;">
+          <span class="blue">COPILOT</span><br>
+          EN EDGE
+        </h1>
+        <div class="rule"></div>
+        <ul class="feature-list">
+          <li><span class="feature-marker"></span>Resumen de PDFs abiertos</li>
+          <li><span class="feature-marker"></span>Preguntas sobre la página actual</li>
+          <li><span class="feature-marker"></span>Generación de imágenes (DALL-E 3)</li>
+          <li><span class="feature-marker"></span>Copilot + tu navegación = contexto</li>
+        </ul>
+      </div>
+
+      <div class="split-visual">
+        <div class="visual-box">
+          <span class="icon">🌊</span>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">22</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">22</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 23 — IMAGE GENERATION
+         ============================================= -->
+    <section class="slide" data-slide="23">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-2 glow-pulse" style="top: 20%; right: 20%;"></div>
+      <div class="diagonal-slash bottom"></div>
+
+      <span class="label">Generación</span>
+      <h1 class="headline" style="font-size: clamp(36px, 5vw, 60px); margin-top: 12px;">
+        IMÁGENES<br>
+        CON <span class="red">IA</span>
+      </h1>
+      <div class="rule"></div>
+
+      <div class="stats-grid" style="grid-template-columns: repeat(3, 1fr); gap: 20px;">
+        <div class="tool-card">
+          <div class="stat-value" style="font-size: 28px;">🏠</div>
+          <div class="stat-label">Apartamento Lego</div>
+          <p class="body-text" style="margin-top: 8px; font-size: 12px;">Torrevieja, con piscina</p>
+        </div>
+        <div class="tool-card">
+          <div class="stat-value" style="font-size: 28px;">🎮</div>
+          <div class="stat-label">Funko Pop</div>
+          <p class="body-text" style="margin-top: 8px; font-size: 12px;">Personalizado con nombre</p>
+        </div>
+        <div class="tool-card">
+          <div class="stat-value" style="font-size: 28px;">🎨</div>
+          <div class="stat-label">Arte</div>
+          <p class="body-text" style="margin-top: 8px; font-size: 12px;">Estilos diversos, 2K/4K</p>
+        </div>
+      </div>
+
+      <div class="content-block" style="margin-top: 24px;">
+        <p><strong>Copilot + WhatsApp:</strong> "Creá una imagen de un apartamento en Torrevieja estilo Lego con piscina" → Te lo genera.</p>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">23</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">23</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 24 — Q&A PRIVACY / COPYRIGHT
+         ============================================= -->
+    <section class="slide" data-slide="24">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1" style="top: 15%; right: 15%;"></div>
+      <div class="orb orb-3" style="bottom: 20%; left: 10%;"></div>
+
+      <span class="label">Preguntas Frecuentes</span>
+      <h1 class="headline" style="font-size: clamp(32px, 4.5vw, 56px); margin-top: 12px;">
+        <span class="blue">DERECHOS</span><br>
+        & PRIVACIDAD
+      </h1>
+      <div class="rule"></div>
+
+      <div class="stats-grid" style="grid-template-columns: repeat(2, 1fr); gap: 24px;">
+        <div class="tool-card">
+          <h3 style="font-family: var(--headline); font-size: 16px; margin-bottom: 10px;">¿Mis datos son privados?</h3>
+          <p class="body-text">En herramientas públicas: no al 100%. En modelos locales: sí. Anonimizá siempre datos sensibles.</p>
+        </div>
+        <div class="tool-card">
+          <h3 style="font-family: var(--headline); font-size: 16px; margin-bottom: 10px;">¿Puedo usar artículos científicos?</h3>
+          <p class="body-text">Si los descargaste para uso propio, podés procesarlos localmente. No subirlos a servidores externos.</p>
+        </div>
+        <div class="tool-card">
+          <h3 style="font-family: var(--headline); font-size: 16px; margin-bottom: 10px;">¿Las imágenes generadas son libres?</h3>
+          <p class="body-text">Usálas con transparencia — indicá que fueron creadas con IA. Cada plataforma tiene sus políticas.</p>
+        </div>
+        <div class="tool-card">
+          <h3 style="font-family: var(--headline); font-size: 16px; margin-bottom: 10px;">¿Reemplazará a los trabajos?</h3>
+          <p class="body-text">Quien use bien la IA reemplazará a quien no la use. El expertise humano sigue siendo insustituible.</p>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">24</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">24</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 25 — RECURSOS
+         ============================================= -->
+    <section class="slide split" data-slide="25">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-2 glow-pulse" style="bottom: 10%; left: 15%;"></div>
+      <div class="geo-spin" style="top: 20%; right: 8%;"></div>
+
+      <div class="split-content">
+        <span class="label">Recursos</span>
+        <h1 class="headline" style="font-size: clamp(36px, 5vw, 60px); margin-top: 12px;">
+          TU KIT<br>
+          <span class="blue">DE HERRAMIENTAS</span>
+        </h1>
+        <div class="rule"></div>
+        <ul class="feature-list">
+          <li><span class="feature-marker"></span><strong>Perplexity</strong> — Búsqueda inteligente</li>
+          <li><span class="feature-marker"></span><strong>Copilot</strong> — +1 877 224 1042</li>
+          <li><span class="feature-marker"></span><strong>Gemini</strong> — @gemini en Chrome</li>
+          <li><span class="feature-marker"></span><strong>NotebookLM</strong> — Research profundo</li>
+          <li><span class="feature-marker"></span><strong>ChatGPT</strong> — GPTs personalizados</li>
+        </ul>
+      </div>
+
+      <div class="split-visual">
+        <div class="visual-box">
+          <span class="icon">🧰</span>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">25</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">25</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 26 — CIERRE
+         ============================================= -->
+    <section class="slide centered" data-slide="26">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1 glow-pulse" style="top: 20%; left: 28%;"></div>
+      <div class="orb orb-2" style="bottom: 15%; right: 25%;"></div>
+      <div class="geo-spin" style="top: 30%; right: 10%;"></div>
+      <div class="diagonal-slash top"></div>
+      <div class="corner-frame" style="top:36px;right:36px;border-left:none;border-bottom:none;"></div>
+      <div class="corner-frame" style="bottom:36px;left:36px;border-right:none;border-top:none;"></div>
+
+      <span class="label" style="margin-bottom: 28px;">Cierre</span>
+      <h1 class="headline">
+        EMPEZÁ<br>
+        <span class="red">MAÑANA</span>
+      </h1>
+      <div class="rule"></div>
+      <p class="statement">
+        No esperes a dominarlo todo. Elegí una tarea, observá, iterá.
+      </p>
+      <div class="quote-zaha" style="max-width: 500px; margin: 24px auto 0;">
+        <p>"Las cosas se pueden ver, se pueden escuchar, pero hasta que no las probamos... no las aprendemos."</p>
+      </div>
+
+      <div class="slide-footer" style="position: absolute; bottom: 48px; left: 96px; right: 96px;">
+        <span class="slide-counter">26</span>
+        <span class="slide-meta">Fundación Jetro</span>
+      </div>
+      <div class="num-bg">26</div>
+    </section>
+
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav-bar">
+    <button class="nav-btn" onclick="prevSlide()" aria-label="Anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+    <button class="nav-btn" onclick="nextSlide()" aria-label="Siguiente">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    let currentSlide = 1;
+
+    // Generate dots
+    const dotsContainer = document.getElementById('dots');
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = 'dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', `Ir a slide ${i + 1}`);
+      dot.onclick = () => goToSlide(i + 1);
+      dotsContainer.appendChild(dot);
+    });
+
+    function updateSlide() {
+      // Exit animation for current
+      slides.forEach((s, i) => {
+        if (s.classList.contains('active')) {
+          s.classList.add('exiting');
+          setTimeout(() => {
+            s.classList.remove('active', 'exiting');
+          }, 400);
+        }
+      });
+
+      // Activate new slide
+      const newSlide = document.querySelector(`[data-slide="${currentSlide}"]`);
+      setTimeout(() => {
+        newSlide.classList.add('active');
+      }, 50);
+
+      // Update progress
+      document.getElementById('progress').style.width =
+        ((currentSlide / totalSlides) * 100) + '%';
+
+      // Update dots
+      document.querySelectorAll('.dot').forEach((d, i) => {
+        d.classList.toggle('active', i === currentSlide - 1);
+      });
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) {
+        currentSlide++;
+        updateSlide();
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) {
+        currentSlide--;
+        updateSlide();
+      }
+    }
+
+    function goToSlide(n) {
+      if (n >= 1 && n <= totalSlides) {
+        currentSlide = n;
+        updateSlide();
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') {
+        e.preventDefault();
+        nextSlide();
+      }
+      if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        prevSlide();
+      }
+      if (e.key === 'Home') {
+        e.preventDefault();
+        goToSlide(1);
+      }
+      if (e.key === 'End') {
+        e.preventDefault();
+        goToSlide(totalSlides);
+      }
+    });
+
+    // Touch/swipe support
+    let touchStartX = 0;
+    document.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+    });
+    document.addEventListener('touchend', (e) => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) {
+        diff > 0 ? nextSlide() : prevSlide();
+      }
+    });
+
+    // Mouse wheel support
+    let wheelTimeout;
+    document.addEventListener('wheel', (e) => {
+      clearTimeout(wheelTimeout);
+      wheelTimeout = setTimeout(() => {
+        if (e.deltaY > 0) nextSlide();
+        else prevSlide();
+      }, 50);
+    }, { passive: true });
+
+    /* ===========================================
+       MOUSE TRAIL EFFECT - HIGH VISIBILITY
+       Bright glowing particles following cursor
+       =========================================== */
+    const trailContainer = document.getElementById('mouseTrail');
+
+    const trailParticles = [];
+    const PARTICLE_COUNT = 20;
+
+    // Create trail particles
+    for (let i = 0; i < PARTICLE_COUNT; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'trail-particle' + (i % 4 === 0 ? ' red' : '');
+      particle.style.left = '-20px';
+      particle.style.top = '-20px';
+      particle.style.transitionDelay = `${i * 0.03}s`;
+      particle.style.width = `${10 + (i % 3) * 4}px`;
+      particle.style.height = `${10 + (i % 3) * 4}px`;
+      trailContainer.appendChild(particle);
+      trailParticles.push({
+        el: particle,
+        x: -20,
+        y: -20,
+        targetX: -20,
+        targetY: -20
+      });
+    }
+
+    let mouseX = 0, mouseY = 0;
+    let currentX = 0, currentY = 0;
+    const smoothing = 0.35;
+
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function animateTrail() {
+      // Smooth interpolation
+      currentX += (mouseX - currentX) * smoothing;
+      currentY += (mouseY - currentY) * smoothing;
+
+      trailParticles.forEach((p, i) => {
+        // Each particle follows with increasing delay
+        const delay = (i + 1) * 0.06;
+        const lerpFactor = Math.max(0.05, smoothing - delay);
+        
+        p.targetX = mouseX;
+        p.targetY = mouseY;
+        
+        // Lerp with delay
+        p.x += (p.targetX - p.x) * lerpFactor;
+        p.y += (p.targetY - p.y) * lerpFactor;
+
+        // Show particle with visibility based on distance from current position
+        const dx = mouseX - p.x;
+        const dy = mouseY - p.y;
+        const isMoving = Math.sqrt(dx * dx + dy * dy) > 10;
+        
+        if (isMoving && i < 12) { // First 12 particles are visible
+          p.el.classList.add('active');
+          p.el.style.left = (p.x - 6) + 'px';
+          p.el.style.top = (p.y - 6) + 'px';
+        } else {
+          p.el.classList.remove('active');
+        }
+      });
+
+      requestAnimationFrame(animateTrail);
+    }
+
+    // Start trail animation
+    animateTrail();
+
+    // Hide trail when mouse leaves window
+    document.addEventListener('mouseleave', () => {
+      trailParticles.forEach(p => p.el.classList.remove('active'));
+    });
+
+    /* ===========================================
+       AMBIENT BACKGROUND PARTICLES
+       Sutiles en el fondo de cada slide
+       =========================================== */
+    function createAmbientParticles() {
+      const slides = document.querySelectorAll('.slide');
+      slides.forEach(slide => {
+        if (!slide.querySelector('.ambient-particles')) {
+          const container = document.createElement('div');
+          container.className = 'ambient-particles';
+          
+          for (let i = 0; i < 8; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'ambient-particle';
+            particle.style.left = `${10 + Math.random() * 80}%`;
+            particle.style.top = `${10 + Math.random() * 80}%`;
+            particle.style.animationDelay = `${Math.random() * 10}s`;
+            particle.style.animationDuration = `${15 + Math.random() * 10}s`;
+            container.appendChild(particle);
+          }
+          
+          // Insert as first child to be behind other elements
+          slide.insertBefore(container, slide.firstChild);
+        }
+      });
+    }
+
+    createAmbientParticles();
+  </script>
+
+</body>
+</html>

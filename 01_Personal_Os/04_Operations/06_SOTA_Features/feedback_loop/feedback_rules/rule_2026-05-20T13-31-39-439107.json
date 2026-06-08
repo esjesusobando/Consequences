@@ -1,0 +1,15 @@
+{
+  "id": "rule_2026-05-20T13-31-39-439107",
+  "correction": "Don't use markdown headers mid-sentence",
+  "rule": "Use inline code for technical terms",
+  "rationale": "Headers break reading flow in conversational text",
+  "scope": "writing",
+  "tags": [
+    "style",
+    "formatting"
+  ],
+  "created": "2026-05-20T13:31:39.439107",
+  "times_applied": 0,
+  "last_applied": null,
+  "confidence": "high"
+}

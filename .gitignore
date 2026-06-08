@@ -1,0 +1,223 @@
+# =============================================================================
+# PersonalOS - Think Different
+# Base: Gentleman Programming PersonalOS Template
+# =============================================================================
+
+# Template .gitignore for Task Management System
+# Copy relevant parts to your .gitignore
+
+# =============================================================================
+# PERSONAL OS CORE
+# =============================================================================
+
+# Personal task files
+03_Task/*.md
+!03_Task/.gitkeep
+!03_Task/README.md
+
+# Matrix files (personal)
+00_Winter_is_Coming/BACKLOG.md
+
+# Personal knowledge files
+01_Personal_Os/02_Knowledge/*.md
+!01_Personal_Os/02_Knowledge/.gitkeep
+!01_Personal_Os/02_Knowledge/README.md
+
+# Keep templates and examples
+!config.example.yaml
+!Tasks/example.md
+!CRM/example.md
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+.venv/
+env/
+.env*
+*.egg-info/
+dist/
+build/
+
+# =============================================================================
+# IDE & EDITOR CONFIGS
+# =============================================================================
+
+.vscode/
+.idea/
+.obsidian/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.ruff_cache/
+
+# =============================================================================
+# TOOL-SPECIFIC
+# =============================================================================
+
+.specstory/
+.factory/
+.pytest_cache/
+.coverage
+*.log
+logs/
+
+# Testing
+test_*.py
+*.test.py
+
+# MCP/System
+.mcp_cache/
+*.pid
+*.lock
+
+# =============================================================================
+# LOCAL CONFIG - Do not commit
+# =============================================================================
+
+# MCP configurations (local to each machine — contain API keys)
+.mcp.json
+.mcp.json.backup
+.mcp.json.local
+.claude/mcp.json
+.agent/mcp.json
+.obsidian/mcp.json
+
+# Focus Now Lab (local workspace)
+Focus_Now_Lab/
+
+# Revisar/Analizar (local analysis)
+Revisar_Analizar/
+
+# =============================================================================
+# TREE OUTPUT FILES
+# =============================================================================
+
+tree.txt
+
+# =============================================================================
+# SCRIPTS OUTPUT
+# =============================================================================
+
+04_Operations/03_Scripts_Os/Analytics_Output/         # LEGACY: dir no longer exists, kept for reference
+04_Operations/03_Scripts_Os/AIPM_Fixed/Analytics_Output/ # LEGACY: dir no longer exists, kept for reference
+
+# =============================================================================
+# REPOS EXTERNOS CLONADOS (no commit)
+# =============================================================================
+
+# Backups de repos externos en Archive — solo referencia local
+01_Personal_Os/05_Archive/06_Docs_All/02_Legacy_Revisar/01_Original_Source_Backups/
+
+# Skill Creator Official (Anthropic) - clonar con: git clone <url>
+claude-plugins-official/
+01_Core/08_Plugins/01_Claude-Plugins_Official/
+01_Core/05_Mcp/mcp.json                # LEGACY: 01_Core/05_Mcp/ no longer exists; MCP configs moved to 01_Personal_Os/01_Core/02_Tools/03_Mcp/
+01_Core/05_Mcp/opencode.json           # LEGACY: same as above
+01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/03_Side_Project_Backup/
+
+# Frontend Slides - Predeterminada para presentaciones HTML (TRACKED)
+# Clonar de: https://github.com/zarazhangrui/frontend-slides
+# 01_Personal_Os/05_Archive/07_Repos_Gentleman/frontend-slides/
+
+# Guardian Angel Entrypoint — keep tracked, needed for GGA hook
+# AGENTS.md
+.claude/history/sessions/
+
+# =============================================================================
+# OIM WEBSITE NESTED REPO (tiene su propio .git)
+# =============================================================================
+
+# El website tiene su propio repo independiente - NO trackear desde el OS
+Now/oim-website/                        # LEGACY: Now/ dir no longer exists, kept for reference
+Now/Office_Installations_-main.zip      # LEGACY: Now/ dir no longer exists, kept for reference
+
+# OIM_Website_One - proyecto Next.js independiente
+03_Resultado/OIM_Website_One/           # LEGACY: dir no longer exists, kept for reference
+
+# =============================================================================
+# OIM VARIANTS — until official
+# =============================================================================
+01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy/    # LEGACY: 10_Legacy_Revisar/ no longer exists, kept for reference
+01_Personal_Os/05_Archive/10_Legacy_Revisar/OIM_Website_Backup_copy_2/   # LEGACY: 10_Legacy_Revisar/ no longer exists, kept for reference
+03_Resultado/09_World_OIM/01_OIM_Website_v2/
+
+# Watchdog reports (auto-generated, not needed)
+03_Resultado/03_Reportes/watchdog_report_*.txt
+
+# =============================================================================
+# BINARIOS GRANDES — prevenir inflado del .git (392MB issue 2026-04-28)
+# =============================================================================
+
+# Ejecutables compilados
+*.exe
+*.bin
+*.out
+01_Personal_Os/01_Core/02_Tools/07_Server/Engram/engram.exe
+01_Personal_Os/01_Core/02_Tools/07_Server/Engram/cmd/
+
+# PDFs de biblioteca (solo referencia local, no commitear)
+01_Personal_Os/04_Operations/00_Context_LLM/02_Knowledge_Brain/00_Library_PDFs/*.pdf
+
+# Imágenes grandes (carpeta Now/ ya no existe pero por si vuelve)
+Now/03_Imagenes_Finales/                # LEGACY: Now/ dir no longer exists, kept for reference
+Now/02_Videos_Finales/                  # LEGACY: Now/ dir no longer exists, kept for reference
+
+# JSON de métricas auto-generados (se regeneran solos)
+01_Personal_Os/04_Operations/01_Auto_Improvement/01_Engine/03_Metrics/improvement_log.json
+
+# =============================================================================
+# EX-SUBMODULES — carpetas locales, no trackear
+# =============================================================================
+.agent/05_GGA/
+01_Personal_Os/05_Archive/07_Repos_Gentleman/sub-agent-statusline/
+01_Personal_Os/05_Archive/07_Repos_Gentleman/tubemaster/
+03_Resultado/OIM_Website/
+03_Resultado/OIM_Website_Backup/
+
+# =============================================================================
+# AGENT TOOLS — config directories
+# =============================================================================
+.codex/
+
+# Embedded git repos (not submodules)
+01_Personal_Os/05_Archive/07_Repos_Gentleman/21_Sub_Agent_Statusline/.git
+01_Personal_Os/05_Archive/07_Repos_Gentleman/23_Tubemaster/.git
+
+# Embedded git repos (local copies, not submodules)  
+01_Personal_Os/05_Archive/01_Repos_Reference/02_Repos_Gentleman/
+01_Personal_Os/05_Archive/07_Repos_Gentleman/*/.git
+# Local Pi runtime state
+
+# SDD generated artifacts (NOT the registry itself — .atl/*.md and .atl/openspec/ are tracked)
+.atl/.skill-registry.cache.json
+.atl/openspec/changes/pattern-intelligence-v1/
+
+# Pattern Intelligence Engine cache (regeneratable)
+**/pattern_index.db
+03_Resultado/03_Reportes/
+03_Resultado/04_Reportes/
+02_Playground/Side Project/             # LEGACY: non-numbered variant, dir no longer exists
+03_Resultado/Side Project/              # LEGACY: non-numbered variant, dir no longer exists
+
+# LOCAL / GENERATED WORKSPACE STATE — do not track
+node_modules/
+**/node_modules/
+.next/
+out/
+*.tsbuildinfo
+01_Personal_Os/04_Operations/04_Installer/.machine_id
+01_Personal_Os/05_Archive/07_Repos_Gentleman/curso-ai-devs/
+01_Personal_Os/05_Archive/07_Repos_Gentleman/design-system/
+01_Personal_Os/05_Archive/07_Repos_Gentleman/open-design/
+03_Resultado/OIM_Website_v2/
+01_Personal_Os/05_Archive/07_Repos_Gentleman/frontend-slides/
+03_Resultado/16_Side Project/            # LEGACY: dir no longer exists, kept for reference
+02_Playground/04_Side Project/

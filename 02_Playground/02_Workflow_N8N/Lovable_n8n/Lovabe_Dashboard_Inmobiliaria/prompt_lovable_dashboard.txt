@@ -1,0 +1,198 @@
+Quiero que crees una aplicación tipo dashboard profesional para la inmobiliaria "InmoNova", centrada en la gestión y análisis de leads.
+
+Objetivo:
+- Consultar y visualizar todos los leads que devuelve un workflow de n8n.
+- Ver en una sola pantalla:
+  - Tabla detallada de leads
+  - Métricas principales (cards)
+  - Gráficas de estados, urgencia, sentimiento, scoring, etc.
+- Permitir filtrar y explorar los leads por múltiples criterios.
+- IMPORTANTE: esta versión es SOLO lectura. No se debe permitir editar ni borrar datos, solo consultar y filtrar.
+
+🔗 Integración con n8n (MCP):
+- Utiliza la integración MCP de n8n disponible en Lovable.
+- Llama al workflow de n8n llamado exactamente: "Consultar Leads".
+- Este workflow responde a una petición GET y devuelve un JSON con esta estructura:
+
+{
+  "leads": [
+    {
+      "Nombre": string,
+      "Email": string,
+      "Telefono": string,
+      "QueQuieresHacer": string,
+      "TipoInmueble": string,
+      "ZonaBarrio": string,
+      "Presupuesto": string,
+      "Plazo": string,
+      "ComoNosHasConocido": string,
+      "Mensaje": string,
+      "ResumenIA": string,
+      "TipoClienteIA": string,
+      "LeadScoreIA": number,
+      "UrgenciaIA": string,
+      "SentimientoIA": string,
+      "FechaHora": string,
+      "EstadoLeadNumero": number,
+      "EstadoLead": string
+    }
+  ]
+}
+
+- Al cargar la aplicación, realiza una llamada al workflow "Consultar Leads" vía MCP y almacena el array `leads` como la fuente principal de datos del dashboard.
+- A partir de esa lista, aplica todos los filtros, métricas y visualizaciones en el frontend (no vuelvas a llamar a n8n en cada filtro; filtra en cliente).
+- Opción adicional: añade un botón de "Refrescar datos" que vuelva a invocar el workflow "Consultar Leads" para recargar la información.
+
+📊 Datos y campos a usar en el dashboard:
+
+Cada lead tiene estos campos relevantes para visualización y filtros:
+- Nombre
+- Email
+- Telefono
+- QueQuieresHacer
+- TipoInmueble
+- ZonaBarrio
+- Presupuesto
+- Plazo
+- ComoNosHasConocido
+- Mensaje
+- ResumenIA
+- TipoClienteIA
+- LeadScoreIA
+- UrgenciaIA
+- SentimientoIA
+- FechaHora
+- EstadoLeadNumero
+- EstadoLead
+
+🎨 Diseño y estilo del dashboard:
+
+Estilo general:
+- Diseño profesional, limpio, estilo SaaS B2B.
+- Paleta de colores:
+  - Color principal: azul moderno (similar a #2563eb) para acentos, botones y highlights.
+  - Fondo claro (blanco o gris muy suave).
+  - Tarjetas (cards) con bordes suaves y sombra ligera.
+- Tipografía sans serif moderna (similar a Inter / Roboto / SF Pro).
+- Totalmente responsive (vista escritorio y móvil).
+
+Estructura recomendada:
+
+1. Barra superior / header:
+   - Título: "Dashboard de Leads - InmoNova"
+   - Subtítulo: "Vista general de leads, estados, urgencia y nivel de interés."
+   - Botón secundario a la derecha: "Refrescar datos" que vuelva a llamar al workflow "Consultar Leads" vía MCP y actualice el estado global.
+
+2. Zona de filtros globales (debajo del header):
+   Un panel de filtros que afecte a todo el dashboard (gráficas y tabla), con:
+   - Selector de rango de fechas basado en el campo "FechaHora".
+   - Multiselect de "EstadoLead" (Nuevo, Contactado, En seguimiento, En negociación, Cerrado ganado, Cerrado perdido).
+   - Multiselect de "UrgenciaIA" (Alta, Media, Baja).
+   - Multiselect de "SentimientoIA" (Muy interesado, Interesado, Solo curioseando, Molesto, Escéptico).
+   - Multiselect de "TipoClienteIA" (familia, inversor, joven profesional, empresa, estudiante, jubilado, pareja, otro).
+   - Multiselect de "QueQuieresHacer" (Comprar vivienda, Alquilar vivienda, Invertir en inmuebles, Otro).
+   - Multiselect de "TipoInmueble".
+   - Multiselect de "ComoNosHasConocido" (Google, Redes sociales, Portal inmobiliario, Recomendación, Otro).
+   - Slider o control de rango para "LeadScoreIA" (0–100).
+   - Un campo de búsqueda libre (input texto) que filtre por Nombre, Email, ZonaBarrio y Mensaje.
+
+   Todos los filtros deben combinarse entre sí (filtro incremental).  
+
+3. Métricas principales (cards KPI):
+   Justo debajo de los filtros, muestra varias tarjetas con métricas calculadas sobre los leads filtrados:
+   - Total de leads.
+   - Leads nuevos (EstadoLead = "Nuevo").
+   - Leads urgentes (UrgenciaIA = "Alta").
+   - Leads "Muy interesados" (SentimientoIA = "Muy interesado").
+   - Leads "Cerrado ganado".
+   - Leads "Cerrado perdido".
+   - LeadScoreIA medio.
+   - Tiempo medio desde FechaHora hasta ahora para los estados "Nuevo" (para ver leads envejecidos).
+
+4. Gráficas:
+
+   Crea varias visualizaciones usando los datos filtrados:
+
+   - Funnel por estado:
+     - Gráfico de funnel o barras horizontales que muestre el número de leads en cada EstadoLead en orden:
+       "Nuevo" → "Contactado" → "En seguimiento" → "En negociación" → "Cerrado ganado" / "Cerrado perdido".
+
+   - Gráfico de barras por urgencia:
+     - Eje X: UrgenciaIA (Alta, Media, Baja).
+     - Eje Y: número de leads.
+
+   - Gráfico de barras o pastel por SentimientoIA:
+     - Distribución de leads según el sentimiento.
+
+   - Gráfico de barras por TipoClienteIA:
+     - Permite ver cuántos leads son "familia", "inversor", "joven profesional", etc.
+
+   - (Opcional) Histograma o gráfico de barras por rangos de LeadScoreIA:
+     - Ejemplo: 0–20, 21–40, 41–60, 61–80, 81–100.
+
+   - (Opcional) Gráfico por canal:
+     - Eje X: ComoNosHasConocido.
+     - Eje Y: número de leads y/o media de LeadScoreIA por canal.
+
+5. Tabla detallada de leads:
+
+   En la parte inferior (o en un layout de dos columnas en pantallas grandes), muestra una tabla con los leads filtrados.
+
+   Requisitos:
+   - Paginación (ej. 20 leads por página).
+   - Ordenación por columnas (por ejemplo, por FechaHora, LeadScoreIA, EstadoLead).
+   - Columnas recomendadas:
+     - FechaHora
+     - Nombre
+     - Email
+     - Telefono
+     - QueQuieresHacer
+     - TipoInmueble
+     - ZonaBarrio
+     - Presupuesto
+     - Plazo
+     - ComoNosHasConocido
+     - LeadScoreIA
+     - UrgenciaIA
+     - SentimientoIA
+     - TipoClienteIA
+     - EstadoLead
+     - ResumenIA
+   - Posibilidad de hacer clic en una fila para expandirla y ver el "Mensaje" completo en un panel lateral o modal de solo lectura.
+
+   IMPORTANTE:
+   - La tabla es SOLO consulta. No añadir botones de editar, borrar o cambiar estado.
+   - Se debe reflejar siempre el resultado de los filtros actuales.
+
+🔁 Lógica de datos y estado:
+
+- Al iniciar la aplicación:
+  - Llama una vez al workflow "Consultar Leads" vía MCP.
+  - Extrae el array "leads" de la respuesta.
+  - Guarda ese array en un estado global (por ejemplo, `allLeads`).
+  - Aplica filtros sobre una copia derivada (por ejemplo, `filteredLeads`).
+
+- Cada vez que cambie un filtro:
+  - Recalcula `filteredLeads` en el frontend.
+  - Recalcula las métricas y actualiza las gráficas y la tabla.
+
+- Botón "Refrescar datos":
+  - Vuelve a llamar a "Consultar Leads" y sustituye `allLeads` por la nueva respuesta.
+  - Mantiene los filtros actuales aplicados sobre los nuevos datos.
+
+🧩 UX adicional:
+
+- Añade un pequeño indicador de "Última actualización" con la hora en que se llamó por última vez al workflow "Consultar Leads".
+- Si la llamada MCP devuelve error:
+  - Mostrar un mensaje centrado tipo: "No se han podido cargar los datos de leads. Intenta refrescar de nuevo."
+  - Mostrar un botón "Reintentar".
+
+En resumen:
+- Construye un dashboard de análisis de leads para InmoNova.
+- Carga los datos llamando al workflow de n8n "Consultar Leads" mediante la integración MCP.
+- Usa los campos de respuesta para:
+  - Filtros avanzados
+  - KPIs
+  - Gráficas (estados, urgencia, sentimiento, tipo de cliente, canal, scoring)
+  - Tabla detallada
+- No permitas edición de datos, solo lectura y exploración.

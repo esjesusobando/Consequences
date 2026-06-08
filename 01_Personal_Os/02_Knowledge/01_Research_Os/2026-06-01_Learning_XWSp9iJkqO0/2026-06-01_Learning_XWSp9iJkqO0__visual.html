@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pareja Consciente — Borja Vilaseca</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#faf6f0;color:#2d2a24;line-height:1.7}
+
+.container{max-width:1000px;margin:0 auto;padding:0 24px}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,#8b5e5e 0%,#a4756f 40%,#b88a80 100%);padding:80px 0 64px;text-align:center;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");opacity:0.3}
+.hero-content{position:relative;z-index:1}
+.hero .tag{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:16px}
+.hero h1{font-family:'DM Serif Display',serif;font-size:2.8rem;font-weight:400;color:#fff;line-height:1.2;margin-bottom:8px}
+.hero h1 em{font-style:italic}
+.hero .subtitle{font-size:1.05rem;color:rgba(255,255,255,.85);font-weight:300;max-width:600px;margin:12px auto 0}
+.hero .author{font-family:'DM Serif Display',serif;font-size:1.2rem;color:rgba(255,255,255,.75);font-style:italic;margin-top:20px}
+.hero .meta-line{font-size:.8rem;color:rgba(255,255,255,.5);margin-top:8px;letter-spacing:.05em}
+.hero .meta-line span{margin:0 10px}
+
+/* Sections */
+.section{padding:56px 0}
+.section-title{font-family:'DM Serif Display',serif;font-size:1.7rem;color:#5c3d3d;margin-bottom:36px;text-align:center;font-weight:400}
+.section-title::after{content:'';display:block;width:50px;height:2px;background:#d4b0a0;margin:12px auto 0}
+
+/* Intro */
+.intro{max-width:680px;margin:0 auto 32px;text-align:center;color:#5a5248;font-size:1.05rem;line-height:1.8}
+.intro strong{color:#6b4a4a}
+
+/* Comparison Table */
+.comparison-wrapper{border:1px solid #e8ddd0;border-radius:12px;overflow:hidden;background:#fff}
+.comparison-grid{display:grid;grid-template-columns:1fr 1fr}
+.comparison-header{padding:18px 24px;font-weight:600;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;text-align:center}
+.comparison-header.left{background:#f5ede8;color:#7a5c52}
+.comparison-header.right{background:#f0ebe4;color:#5c6b52}
+.comparison-row{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #f0e8e0}
+.comparison-cell{padding:14px 24px;font-size:.92rem;line-height:1.5}
+.comparison-cell.left{background:#faf6f2;color:#5a4a40}
+.comparison-cell.right{background:#f8f7f2;color:#4a5a40}
+.comparison-cell .label{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:#b0a090;margin-bottom:2px;font-weight:600}
+.comparison-cell.icon-cell{display:flex;align-items:center;gap:10px}
+.comparison-cell.icon-cell .icon{font-size:1.1rem;width:22px;text-align:center}
+
+/* Cards */
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:8px}
+.card{background:#fff;border-radius:10px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,.04);border:1px solid #eee5da;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 6px 24px rgba(0,0,0,.08)}
+.card .card-number{font-family:'DM Serif Display',serif;font-size:1.2rem;color:#c9a090;margin-bottom:4px;font-weight:400}
+.card h3{font-size:1.1rem;font-weight:600;color:#5c3d3d;margin-bottom:10px}
+.card p{font-size:.9rem;color:#6a5f54;line-height:1.7}
+.card.rose{border-left:4px solid #c9a090}
+.card.gold{border-left:4px solid #d4b080}
+.card.cream{border-left:4px solid #c4b89a}
+
+/* Framework */
+.framework{background:#fff;border-radius:12px;padding:40px;border:1px solid #eee5da;margin:8px 0}
+.framework-steps{display:flex;flex-wrap:wrap;justify-content:center;gap:0;position:relative}
+.framework-step{flex:1;min-width:140px;text-align:center;padding:24px 16px;position:relative}
+.framework-step:not(:last-child)::after{content:'→';position:absolute;right:-8px;top:50%;transform:translateY(-50%);font-size:1.5rem;color:#d4b0a0;font-weight:300}
+.framework-step .step-number{display:inline-flex;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#c9a090,#b88a80);color:#fff;align-items:center;justify-content:center;font-size:.85rem;font-weight:600;margin-bottom:12px}
+.framework-step h4{font-size:.85rem;font-weight:600;color:#5c3d3d;margin-bottom:4px;text-transform:uppercase;letter-spacing:.06em}
+.framework-step p{font-size:.82rem;color:#7a6f64;line-height:1.5}
+.framework-step .highlight{font-size:.7rem;color:#b09080;font-style:italic;margin-top:6px;display:block}
+
+/* Quotes */
+.quote-block{background:#fff;border-radius:12px;padding:36px 40px;margin:0 0 16px;border-left:4px solid #c9a090;position:relative}
+.quote-block::before{content:'\201C';position:absolute;top:12px;left:14px;font-size:3rem;color:#e8d5c8;font-family:serif;line-height:1}
+.quote-block p{font-family:'DM Serif Display',serif;font-size:1.15rem;color:#4a3f35;line-height:1.7;font-style:italic}
+.quote-block cite{display:block;margin-top:10px;font-size:.82rem;color:#b0a090;font-style:normal}
+
+/* Tools */
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.tool-item{display:flex;gap:14px;background:#fff;padding:20px;border-radius:8px;border:1px solid #eee5da}
+.tool-item .tool-icon{font-size:1.4rem;width:36px;text-align:center;flex-shrink:0;margin-top:2px}
+.tool-item h4{font-size:.88rem;font-weight:600;color:#5c3d3d;margin-bottom:4px}
+.tool-item p{font-size:.82rem;color:#6a5f54;line-height:1.6}
+
+/* Footer */
+.footer{background:#2d2a24;color:rgba(255,255,255,.5);text-align:center;padding:32px 0;font-size:.78rem;letter-spacing:.03em}
+.footer a{color:rgba(255,255,255,.35);text-decoration:none}
+.footer a:hover{color:rgba(255,255,255,.7)}
+
+/* responsiveness */
+@media(max-width:768px){
+  .hero h1{font-size:2rem}
+  .comparison-grid{grid-template-columns:1fr}
+  .framework-steps{flex-direction:column;align-items:center}
+  .framework-step:not(:last-child)::after{content:'↓';right:auto;bottom:-12px;top:auto;left:50%;transform:translateX(-50%)}
+  .quote-block{padding:28px 24px}
+  .framework-step{min-width:auto;width:100%}
+}
+
+/* divider */
+.divider{text-align:center;color:#dcc8b8;font-size:.8rem;letter-spacing:.3em;margin:8px 0}
+
+/* summary */
+.summary-box{background:linear-gradient(135deg,#f5ede8,#faf6f0);border-radius:10px;padding:28px 32px;border:1px solid #e8ddd0;margin-top:32px;text-align:center}
+.summary-box h3{font-family:'DM Serif Display',serif;color:#5c3d3d;font-weight:400;margin-bottom:10px}
+.summary-box p{font-size:.92rem;color:#6a5f54;max-width:600px;margin:0 auto;line-height:1.7}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-content">
+    <span class="tag">✦ Conferencia Presencial</span>
+    <h1>Claves para <em>co-crear</em><br>una pareja consciente</h1>
+    <p class="subtitle">Del amor basado en la necesidad a la relación desde la plenitud: un mapa para dejar de exigir y empezar a elegir.</p>
+    <p class="author">Borja Vilaseca</p>
+    <p class="meta-line"><span>Conferencia completa</span><span>·</span><span>XWSp9iJkqO0</span></p>
+  </div>
+</section>
+
+<div class="container">
+
+<!-- Intro -->
+<section class="section">
+  <p class="intro">
+    <strong>La mayoría de las relaciones de pareja están gobernadas por el ego:</strong> nacemos desde la carencia, proyectamos nuestras heridas y esperamos que el otro nos complete. Pero hay otro camino — la <strong>co-creación consciente</strong>. Una relación donde dos individuos completos se eligen desde la libertad, no desde la necesidad.
+  </p>
+</section>
+
+<!-- Comparison -->
+<section class="section">
+  <h2 class="section-title">Ego vs. Consciencia</h2>
+  <div class="comparison-wrapper">
+    <div class="comparison-grid">
+      <div class="comparison-header left">Relación de Ego</div>
+      <div class="comparison-header right">Relación Consciente</div>
+
+      <div class="comparison-cell left icon-cell"><span class="icon">⊘</span> Nace desde la carencia</div>
+      <div class="comparison-cell right icon-cell"><span class="icon">◉</span> Nace desde la plenitud</div>
+
+      <div class="comparison-cell left icon-cell"><span class="icon">⊘</span> "Te necesito"</div>
+      <div class="comparison-cell right icon-cell"><span class="icon">◉</span> "Te elijo"</div>
+
+      <div class="comparison-cell left icon-cell"><span class="icon">⊘</span> Expectativas y proyecciones</div>
+      <div class="comparison-cell right icon-cell"><span class="icon">◉</span> Aceptación radical</div>
+
+      <div class="comparison-cell left icon-cell"><span class="icon">⊘</span> Dependencia emocional</div>
+      <div class="comparison-cell right icon-cell"><span class="icon">◉</span> Interdependencia</div>
+
+      <div class="comparison-cell left icon-cell"><span class="icon">⊘</span> Miedo a la pérdida</div>
+      <div class="comparison-cell right icon-cell"><span class="icon">◉</span> Confianza en el proceso</div>
+
+      <div class="comparison-cell left icon-cell"><span class="icon">⊘</span> Control y posesión</div>
+      <div class="comparison-cell right icon-cell"><span class="icon">◉</span> Libertad y confianza</div>
+
+      <div class="comparison-cell left icon-cell"><span class="icon">⊘</span> El otro es responsable de mi felicidad</div>
+      <div class="comparison-cell right icon-cell"><span class="icon">◉</span> Cada uno es responsable de sí mismo</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">···</div>
+
+<!-- Three Pillars -->
+<section class="section">
+  <h2 class="section-title">Los Tres Pilares</h2>
+  <div class="cards-grid">
+    <div class="card rose">
+      <div class="card-number">01</div>
+      <h3>Autoconocimiento</h3>
+      <p>No puedo co-crear con otro si no me conozco a mí mismo. La pareja es un espejo que refleja mis sombras, mis heridas y mis patrones inconscientes. El trabajo empieza dentro.</p>
+    </div>
+    <div class="card gold">
+      <div class="card-number">02</div>
+      <h3>Comunicación Auténtica</h3>
+      <p>Hablar desde el corazón sin máscaras ni culpa. Decir lo que siento sin esperar que el otro lo resuelva. Compartir para conectar, no para descargar.</p>
+    </div>
+    <div class="card cream">
+      <div class="card-number">03</div>
+      <h3>Propósito Compartido</h3>
+      <p>Un "para qué" que trasciende a los individuos. Un proyecto, una misión, una causa que ambos construyen juntos. La relación como vehículo, no como destino.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Framework -->
+<section class="section">
+  <h2 class="section-title">El Camino de Co-Creación</h2>
+  <div class="framework">
+    <div class="framework-steps">
+      <div class="framework-step">
+        <div class="step-number">1</div>
+        <h4>Yo</h4>
+        <p>Individuación. Conócete a ti mismo antes de buscar al otro.</p>
+        <span class="highlight">autoconocimiento</span>
+      </div>
+      <div class="framework-step">
+        <div class="step-number">2</div>
+        <h4>Tú</h4>
+        <p>El otro como espejo. Lo que me molesta de ti es lo que no he integrado en mí.</p>
+        <span class="highlight">sombra y proyección</span>
+      </div>
+      <div class="framework-step">
+        <div class="step-number">3</div>
+        <h4>Nosotros</h4>
+        <p>Construcción consciente del vínculo desde la libertad, no desde la necesidad.</p>
+        <span class="highlight">interdependencia</span>
+      </div>
+      <div class="framework-step">
+        <div class="step-number">4</div>
+        <h4>El Mundo</h4>
+        <p>Propósito compartido. La relación trasciende a los individuos y sirve a algo mayor.</p>
+        <span class="highlight">legado</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider">···</div>
+
+<!-- Quotes -->
+<section class="section">
+  <h2 class="section-title">Frases para llevar</h2>
+  <div class="quote-block">
+    <p>No buscas una pareja, buscas un espejo. Y cuando lo entiendes, dejas de exigir y empiezas a aprender.</p>
+    <cite>— Borja Vilaseca</cite>
+  </div>
+  <div class="quote-block">
+    <p>El amor no es posesión, es celebración. No es "te quiero para mí", es "me alegro de que existas".</p>
+    <cite>— Borja Vilaseca</cite>
+  </div>
+  <div class="quote-block">
+    <p>Dos personas completas no se necesitan, se eligen. Y esa elección renovada cada día es lo único que sostiene una relación consciente.</p>
+    <cite>— Borja Vilaseca</cite>
+  </div>
+</section>
+
+<!-- Tools -->
+<section class="section">
+  <h2 class="section-title">Herramientas Prácticas</h2>
+  <div class="tools-grid">
+    <div class="tool-item">
+      <div class="tool-icon">📓</div>
+      <div>
+        <h4>Diario emocional</h4>
+        <p>Escribe lo que sientes antes de hablarlo con tu pareja. Separa la emoción del impulso.</p>
+      </div>
+    </div>
+    <div class="tool-item">
+      <div class="tool-icon">🧘</div>
+      <div>
+        <h4>Pausa consciente</h4>
+        <p>10 segundos de respiración antes de responder en una discusión. Rompe el ciclo reactivo.</p>
+      </div>
+    </div>
+    <div class="tool-item">
+      <div class="tool-icon">🔄</div>
+      <div>
+        <h4>Check-in diario</h4>
+        <p>5 minutos: ¿cómo estás? ¿qué necesitas? Escuchar sin juzgar ni resolver.</p>
+      </div>
+    </div>
+    <div class="tool-item">
+      <div class="tool-icon">🤫</div>
+      <div>
+        <h4>Cita de silencio</h4>
+        <p>Estar juntos sin hablar, sintiendo la presencia del otro. La conexión no necesita palabras.</p>
+      </div>
+    </div>
+    <div class="tool-item">
+      <div class="tool-icon">✉️</div>
+      <div>
+        <h4>Cartas de sombra</h4>
+        <p>Escribe lo que no te atreves a decir. Luego decide si compartirlo. El acto de escribir ya transforma.</p>
+      </div>
+    </div>
+    <div class="tool-item">
+      <div class="tool-icon">❓</div>
+      <div>
+        <h4>Pregunta espejo</h4>
+        <p>Cuando algo del otro te incomoda, pregúntate: ¿qué parte de mí está viendo sin aceptar?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Summary -->
+<section class="section">
+  <div class="summary-box">
+    <h3>La pareja como camino de despertar</h3>
+    <p>
+      La calidad de tu relación de pareja es directamente proporcional a la calidad de tu relación contigo mismo. 
+      No hay atajos. No hay "persona correcta" que te salve. Hay dos personas enteras que eligen caminar juntas 
+      — no para completarse, sino para expandirse.
+    </p>
+  </div>
+</section>
+
+</div>
+
+<footer class="footer">
+  <p>Basado en la conferencia presencial de Borja Vilaseca · XWSp9iJkqO0</p>
+  <p>Research OS · Knowledge Entry · 2026-06-01</p>
+</footer>
+
+</body>
+</html>

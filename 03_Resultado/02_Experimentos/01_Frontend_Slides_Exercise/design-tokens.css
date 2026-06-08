@@ -1,0 +1,275 @@
+/**
+ * ============================================================================
+ * DESIGN TOKENS — IA Presentation System
+ * Dumbledor Design + Impeccable Style
+ * ============================================================================
+ */
+
+:root {
+  /* ==========================================================================
+     COLOR PALETTE
+     ========================================================================== */
+
+  /* Navy Family (Primary Background) */
+  --navy-900: #0D1117;
+  --navy-800: #151A21;
+  --navy-700: #1A2230;
+  --navy-600: #1E2530;  /* Primary */
+  --navy-500: #2A323D;
+  --navy-400: #363F4D;
+  --navy-300: #414B5A;
+
+  /* Orange Accent Family */
+  --orange-600: #FF6B35;  /* Primary Accent */
+  --orange-500: #FF8855;
+  --orange-400: #FFA575;
+  --orange-300: #FFC195;
+  --orange-200: #FFE0C5;
+  --orange-100: #FFF0E5;
+
+  /* Neutral */
+  --white: #FFFFFF;
+  --white-95: rgba(255, 255, 255, 0.95);
+  --white-90: rgba(255, 255, 255, 0.90);
+  --white-85: rgba(255, 255, 255, 0.85);
+  --white-80: rgba(255, 255, 255, 0.80);
+  --white-70: rgba(255, 255, 255, 0.70);
+  --white-60: rgba(255, 255, 255, 0.60);
+  --white-50: rgba(255, 255, 255, 0.50);
+  --white-40: rgba(255, 255, 255, 0.40);
+  --white-30: rgba(255, 255, 255, 0.30);
+  --white-20: rgba(255, 255, 255, 0.20);
+  --white-10: rgba(255, 255, 255, 0.10);
+  --white-05: rgba(255, 255, 255, 0.05);
+
+  /* Gray Scale */
+  --gray-600: #6B7785;
+  --gray-500: #8B95A5;
+  --gray-400: #ABB3C5;
+  --gray-300: #CBD1E5;
+  --gray-200: #EBEFF5;
+  --gray-100: #F5F7FA;
+
+  /* Semantic Colors */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+
+  /* ==========================================================================
+     TYPOGRAPHY
+     ========================================================================== */
+
+  /* Font Families */
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+
+  /* Font Weights */
+  --weight-thin: 100;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-black: 900;
+
+  /* Font Sizes (clamp for responsive) */
+  --text-xs:    clamp(10px, 1vw, 11px);
+  --text-sm:    clamp(12px, 1.2vw, 13px);
+  --text-base:  clamp(14px, 1.4vw, 16px);
+  --text-md:    clamp(16px, 1.6vw, 18px);
+  --text-lg:    clamp(18px, 1.8vw, 20px);
+  --text-xl:    clamp(20px, 2vw, 24px);
+  --text-2xl:   clamp(24px, 2.5vw, 28px);
+  --text-3xl:   clamp(32px, 3.5vw, 40px);
+  --text-4xl:   clamp(40px, 4.5vw, 56px);
+  --text-5xl:   clamp(48px, 6vw, 72px);
+  --text-6xl:   clamp(56px, 8vw, 100px);
+
+  /* Line Heights */
+  --leading-none:    1;
+  --leading-tight:   1.1;
+  --leading-snug:   1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+  --leading-loose:  1.8;
+
+  /* Letter Spacing */
+  --tracking-tighter: -0.04em;
+  --tracking-tight:   -0.02em;
+  --tracking-normal:   0;
+  --tracking-wide:     0.05em;
+  --tracking-wider:    0.1em;
+  --tracking-widest:   0.15em;
+
+  /* ==========================================================================
+     SPACING (8px Grid System)
+     ========================================================================== */
+
+  --space-0:   0;
+  --space-px:  1px;
+  --space-0-5: 2px;
+  --space-1:   4px;
+  --space-1-5: 6px;
+  --space-2:   8px;
+  --space-2-5: 10px;
+  --space-3:   12px;
+  --space-3-5: 14px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-7:   28px;
+  --space-8:   32px;
+  --space-9:   36px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-14:  56px;
+  --space-16:  64px;
+  --space-20:  80px;
+  --space-24:  96px;
+  --space-32:  128px;
+
+  /* ==========================================================================
+     LAYOUT
+     ========================================================================== */
+
+  /* Container */
+  --container-sm:   640px;
+  --container-md:   768px;
+  --container-lg:  1024px;
+  --container-xl:  1280px;
+  --container-2xl: 1536px;
+
+  /* Border Radius */
+  --radius-none:   0;
+  --radius-sm:     4px;
+  --radius-md:     8px;
+  --radius-lg:    12px;
+  --radius-xl:    16px;
+  --radius-2xl:   24px;
+  --radius-full:   9999px;
+
+  /* ==========================================================================
+     EFFECTS
+     ========================================================================== */
+
+  /* Shadows */
+  --shadow-sm:   0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md:   0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg:   0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl:   0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  --shadow-2xl:  0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+
+  /* Backdrop Blur */
+  --blur-sm:   blur(4px);
+  --blur-md:   blur(8px);
+  --blur-lg:   blur(16px);
+  --blur-xl:   blur(24px);
+
+  /* Transitions */
+  --transition-fast:   150ms ease;
+  --transition-base:   200ms ease;
+  --transition-slow:   300ms ease;
+  --transition-slower: 500ms ease;
+
+  /* Z-Index Scale */
+  --z-base:    0;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky:  200;
+  --z-overlay: 300;
+  --z-modal:   400;
+  --z-toast:   500;
+  --z-tooltip: 600;
+}
+
+/* ============================================================================
+   CSS CUSTOM PROPERTIES — SHORTHAND
+   ============================================================================ */
+
+/* Dumbledor Typography Scale */
+.dumbledor-headline {
+  font-family: var(--font-display);
+  font-size: var(--text-5xl);
+  font-weight: var(--weight-black);
+  letter-spacing: var(--tracking-tighter);
+  text-transform: uppercase;
+  line-height: var(--leading-none);
+}
+
+.dumbledor-statement {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-snug);
+}
+
+.dumbledor-refinement {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--weight-light);
+  line-height: var(--leading-relaxed);
+}
+
+/* Utility Classes */
+.text-accent    { color: var(--orange-600); }
+.text-primary  { color: var(--white); }
+.text-secondary { color: var(--gray-600); }
+.text-muted     { color: var(--white-60); }
+
+.bg-primary    { background-color: var(--navy-600); }
+.bg-secondary  { background-color: var(--navy-500); }
+.bg-accent     { background-color: var(--orange-600); }
+
+.border-default { border: 1px solid var(--navy-300); }
+.border-accent  { border: 1px solid var(--orange-600); }
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Stagger Animation Helpers */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }

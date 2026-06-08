@@ -1,0 +1,846 @@
+{
+  "name": "Nano Banana Pro",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        2128,
+        400
+      ],
+      "id": "3f15c07a-72fc-44b8-a4fc-8d67c5d13e6b",
+      "name": "Wait1",
+      "webhookId": "8363f037-4a20-4f6b-9c5c-780dfb313864"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.data.state }}",
+                    "rightValue": "success",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "5d365e2d-6c1d-48fd-b1e1-dc6ed403e684"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "success"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "b233b687-f81c-428e-bce7-459684a6a34b",
+                    "leftValue": "={{ $json.data.state }}",
+                    "rightValue": "generating",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "generating"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "69d8ccbf-d327-4705-9159-b7be48f99e73",
+                    "leftValue": "={{ $json.data.state }}",
+                    "rightValue": "fail",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "fail"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.3,
+      "position": [
+        2624,
+        384
+      ],
+      "id": "4829e1ef-9409-41fd-b246-8747db3f76f9",
+      "name": "Switch1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://kieai.redpandaai.co/api/file-base64-upload",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "base64Data",
+              "value": "=data:image/png;base64,{{ $json.data }}"
+            },
+            {
+              "name": "uploadPath",
+              "value": "images/base64"
+            },
+            {
+              "name": "fileName",
+              "value": "={{ $now.toMillis() }}.png"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1280,
+        400
+      ],
+      "id": "626030aa-79c2-43c1-aff0-681984acba39",
+      "name": "Subir imagenes",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "X2AZa9xDH5swraDL",
+          "name": "Kie AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "binaryToPropery",
+        "binaryPropertyName": "Personaje",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        880,
+        320
+      ],
+      "id": "819e2113-dd54-4298-87d2-e6e9d209b118",
+      "name": "Personaje"
+    },
+    {
+      "parameters": {
+        "operation": "binaryToPropery",
+        "binaryPropertyName": "Producto",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        880,
+        528
+      ],
+      "id": "2703b1bc-ae7c-4317-9303-447bd2689136",
+      "name": "Producto"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        1104,
+        400
+      ],
+      "id": "a285264d-c768-4198-97f5-0ea7f1b9292a",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        1456,
+        400
+      ],
+      "id": "2810a57f-773c-439a-975c-3f3f42c437a8",
+      "name": "Aggregate"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "b1860328-aaac-4f9b-87a8-84b07b91a825",
+              "name": "instrucciones",
+              "value": "={{ $('Formulario').item.json.Instrucciones }}",
+              "type": "string"
+            },
+            {
+              "id": "a9ddaef8-b235-4a26-8ef9-9cb3421df265",
+              "name": "url_personaje",
+              "value": "={{ $json.data[0].data.downloadUrl }}",
+              "type": "string"
+            },
+            {
+              "id": "ce54d1c6-6c90-484c-9254-b2d573190f80",
+              "name": "url_producto",
+              "value": "={{ $json.data[1].data.downloadUrl }}",
+              "type": "string"
+            },
+            {
+              "id": "8ea85e5f-213e-4b61-b5c2-3a2259cc9f68",
+              "name": "aspect_ratio",
+              "value": "={{ $('Formulario').item.json['Aspect Ratio'] }}",
+              "type": "string"
+            },
+            {
+              "id": "4ce3ba18-fa54-4f19-9d31-6c777c3a016a",
+              "name": "resolucion",
+              "value": "={{ $('Formulario').item.json['Resolución'] }}",
+              "type": "string"
+            },
+            {
+              "id": "66431fbb-1155-454e-aa85-27de08128e47",
+              "name": "formato_salida",
+              "value": "={{ $('Formulario').item.json['Formato de Salida'] }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1648,
+        400
+      ],
+      "id": "6cf19954-3b52-49fb-abbf-96375a423565",
+      "name": "Datos Imagenes"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.kie.ai/api/v1/jobs/createTask",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"nano-banana-pro\",\n  \"input\": {\n    \"prompt\": \"{{ $json.instrucciones }}\",\n    \"aspect_ratio\": \"{{ $json.aspect_ratio }}\",\n    \"resolution\": \"{{ $json.resolucion }}\",\n    \"output_format\": \"{{ $json.formato_salida }}\",\n    \"image_input\": [\n      \"{{ $json.url_personaje }}\",\n      \"{{ $json.url_producto }}\"\n    ]\n  }\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        1888,
+        400
+      ],
+      "id": "8a97fc88-46e1-4636-9e0c-166168fb1a61",
+      "name": "Generar Imagen",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "X2AZa9xDH5swraDL",
+          "name": "Kie AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://api.kie.ai/api/v1/jobs/recordInfo",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "taskId",
+              "value": "={{ $json.data.taskId }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        2368,
+        400
+      ],
+      "id": "c7e3b846-ba1b-4349-8168-5ee91ca848ef",
+      "name": "Recuperar Imagen",
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "X2AZa9xDH5swraDL",
+          "name": "Kie AI"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "b5346dc9-b2c3-405d-aa78-a844b4332cd9",
+              "name": "url_imagen",
+              "value": "={{ JSON.parse($json.data.resultJson).resultUrls[0] }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2832,
+        368
+      ],
+      "id": "d5699f6c-eabd-4e5a-bc2a-686df9da97d0",
+      "name": "URL Imagen"
+    },
+    {
+      "parameters": {
+        "operation": "completion",
+        "respondWith": "showText",
+        "responseText": "Se ha producido un error al generar la imagen. Por favor, inténtalo de nuevo."
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 2.3,
+      "position": [
+        3152,
+        800
+      ],
+      "id": "1a829ffe-27db-4659-a19e-be7f4978fb94",
+      "name": "Formulario Error",
+      "webhookId": "0ce63de0-b88d-48b2-a05e-2765ae345b0e"
+    },
+    {
+      "parameters": {
+        "url": "={{ $('URL Imagen').item.json.url_imagen }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        3248,
+        368
+      ],
+      "id": "da77828c-6d5a-4f96-bb94-dbf7442326c4",
+      "name": "Descargar Imagen"
+    },
+    {
+      "parameters": {
+        "operation": "completion",
+        "respondWith": "returnBinary",
+        "completionTitle": "¡Imagen Generada con Éxito!",
+        "completionMessage": "La imagen se ha generado correctamente. En breve comenzará la descarga",
+        "options": {
+          "formTitle": "¡Imagen Generada con Éxito!"
+        }
+      },
+      "type": "n8n-nodes-base.form",
+      "typeVersion": 2.3,
+      "position": [
+        3472,
+        368
+      ],
+      "id": "d87e7d1a-7114-4ef2-84e5-656b39973129",
+      "name": "Descarga Imagen",
+      "webhookId": "a7f8033b-da1f-4717-8632-79ed22faf2c6"
+    },
+    {
+      "parameters": {
+        "formTitle": "Generar Anuncio",
+        "formDescription": "Sube las imágenes para tu anuncio aquí",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Instrucciones",
+              "fieldType": "textarea",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Personaje",
+              "fieldType": "file",
+              "multipleFiles": false,
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Producto",
+              "fieldType": "file",
+              "multipleFiles": false,
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Aspect Ratio",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "1:1"
+                  },
+                  {
+                    "option": "2:3"
+                  },
+                  {
+                    "option": "3:2"
+                  },
+                  {
+                    "option": "3:4"
+                  },
+                  {
+                    "option": "4:3"
+                  },
+                  {
+                    "option": "4:5"
+                  },
+                  {
+                    "option": "5:4"
+                  },
+                  {
+                    "option": "9:16"
+                  },
+                  {
+                    "option": "16:9"
+                  },
+                  {
+                    "option": "21:9"
+                  }
+                ]
+              },
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Resolución",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "1K"
+                  },
+                  {
+                    "option": "2K"
+                  },
+                  {
+                    "option": "4K"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "Formato de Salida",
+              "fieldType": "dropdown",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "png"
+                  },
+                  {
+                    "option": "jpg"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "options": {
+          "appendAttribution": false,
+          "buttonLabel": "Enviar"
+        }
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.3,
+      "position": [
+        688,
+        400
+      ],
+      "id": "9b2a896e-eb1d-4c9e-9d6c-16dab4e981c0",
+      "name": "Formulario",
+      "webhookId": "ba0b2542-91af-4df6-9ee2-4db7b14d7b48"
+    },
+    {
+      "parameters": {
+        "dataTableId": {
+          "__rl": true,
+          "value": "iV3WEvHrN1SOh0tq",
+          "mode": "list",
+          "cachedResultName": "Nano Banana Pro",
+          "cachedResultUrl": "/projects/1BQl9jGuctDBYcMq/datatables/iV3WEvHrN1SOh0tq"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "prompt": "={{ $('Datos Imagenes').item.json.instrucciones }}",
+            "aspect_ratio": "={{ $('Datos Imagenes').item.json.aspect_ratio }}",
+            "resolucion": "={{ $('Datos Imagenes').item.json.resolucion }}",
+            "formato_salida": "={{ $('Datos Imagenes').item.json.formato_salida }}",
+            "url_imagen": "={{ $json.url_imagen }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "prompt",
+              "displayName": "prompt",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "aspect_ratio",
+              "displayName": "aspect_ratio",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "resolucion",
+              "displayName": "resolucion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "formato_salida",
+              "displayName": "formato_salida",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "url_imagen",
+              "displayName": "url_imagen",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        3040,
+        368
+      ],
+      "id": "6a0e6254-9212-404b-bf20-5167e262e8f8",
+      "name": "Registrar Imagen"
+    },
+    {
+      "parameters": {
+        "content": "## Carga de Imágenes",
+        "height": 512,
+        "width": 1232,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        592,
+        224
+      ],
+      "typeVersion": 1,
+      "id": "a902c17b-f54c-4220-9b18-21e79286a857",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## Generar Imagen Nano Banana Pro",
+        "height": 512,
+        "width": 1136
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1840,
+        224
+      ],
+      "typeVersion": 1,
+      "id": "964e3f0f-e64b-4931-9ffe-212b662475ea",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "## Error al generar imagen",
+        "height": 336,
+        "width": 400,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        3024,
+        688
+      ],
+      "typeVersion": 1,
+      "id": "9bf3986d-c736-4a75-bb18-bdf780580fe5",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "## Registrar y Descargar Imagen",
+        "height": 432,
+        "width": 752,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        2992,
+        240
+      ],
+      "typeVersion": 1,
+      "id": "0a52af07-0509-4574-bc2f-27ce8072be21",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "content": "# 📱 Campaña Anuncios con NANO BANANA PRO",
+        "height": 80,
+        "width": 1232,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        592,
+        48
+      ],
+      "typeVersion": 1,
+      "id": "6f020cd3-f8df-487e-970e-765bcb335ce2",
+      "name": "Sticky Note4"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Wait1": {
+      "main": [
+        [
+          {
+            "node": "Recuperar Imagen",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch1": {
+      "main": [
+        [
+          {
+            "node": "URL Imagen",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Formulario Error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Subir imagenes": {
+      "main": [
+        [
+          {
+            "node": "Aggregate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Producto": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Personaje": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Subir imagenes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate": {
+      "main": [
+        [
+          {
+            "node": "Datos Imagenes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Datos Imagenes": {
+      "main": [
+        [
+          {
+            "node": "Generar Imagen",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generar Imagen": {
+      "main": [
+        [
+          {
+            "node": "Wait1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Recuperar Imagen": {
+      "main": [
+        [
+          {
+            "node": "Switch1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "URL Imagen": {
+      "main": [
+        [
+          {
+            "node": "Registrar Imagen",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Descargar Imagen": {
+      "main": [
+        [
+          {
+            "node": "Descarga Imagen",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Formulario": {
+      "main": [
+        [
+          {
+            "node": "Personaje",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Producto",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Registrar Imagen": {
+      "main": [
+        [
+          {
+            "node": "Descargar Imagen",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "74aeb065-31dd-41ef-848d-460036e64413",
+  "meta": {
+    "instanceId": "cd45752616b99f4db905fdbf77b15f941dcae0df3c6a48b8fdb10fb443542c37"
+  },
+  "id": "k1af0yDVPJuo08Y8",
+  "tags": []
+}

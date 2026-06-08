@@ -1,0 +1,53 @@
+Este flujo de n8n recibe los datos enviados desde un formulario de una landing para una inmobiliaria, en formato JSON, en una única petición HTTP.
+
+El objetivo del flujo es:
+1) Recibir los datos básicos del lead enviados desde el formulario.
+2) Llamar a un modelo de IA para enriquecer ese lead con información adicional (resumen, tipo de cliente, scoring, urgencia y sentimiento).
+3) Guardar toda la información (datos del formulario + campos generados por IA) como un nuevo registro en una base de datos de leads (por ejemplo, una hoja de cálculo de Google Sheets).
+4) Devolver una respuesta de éxito con el lead enriquecido.
+
+El formulario de la landing debe enviar en el body de la petición los siguientes campos:
+
+- "Nombre": nombre completo de la persona. Ejemplo: "Ana López".
+- "Email": correo electrónico de contacto. Ejemplo: "ana.lopez@example.com".
+- "Telefono": número de teléfono de contacto. Ejemplo: "+34 600 123 456".
+- "QueQuieresHacer": intención principal. Valores típicos: "Comprar vivienda", "Alquilar vivienda", "Invertir en inmuebles", "Otro".
+- "TipoInmueble": tipo de inmueble buscado. Ejemplos: "Piso", "Casa", "Chalet", "Apartamento", "Estudio", "Local comercial", "Oficina".
+- "ZonaBarrio": zona, barrio o ciudad de interés. Ejemplo: "Centro Madrid", "Malasaña", "Sevilla Triana".
+- "Presupuesto": presupuesto aproximado indicado por el usuario, como texto libre. Ejemplo: "350.000 €", "hasta 500.000 €", "entre 400.000 y 450.000 €".
+- "Plazo": plazo deseado para cerrar la operación. Valores típicos: "Lo antes posible (0–3 meses)", "En 3–6 meses", "Más de 6 meses", "Solo estoy mirando opciones".
+- "ComoNosHasConocido": canal por el que nos ha encontrado. Ejemplos: "Google", "Redes sociales", "Portal inmobiliario", "Recomendación", "Otro".
+- "Mensaje": texto libre donde el usuario describe qué busca. Ejemplo: "Busco piso de 3 habitaciones en Madrid centro, con garaje, presupuesto máximo 450.000 €, para mudarme antes de verano."
+
+Con estos campos de entrada, el flujo:
+
+1) Llama a un agente de IA que analiza especialmente el campo "Mensaje" junto con el resto de información y genera:
+   - "ResumenIA": una frase corta resumiendo qué quiere el cliente (operación, tipo de inmueble, zona y presupuesto si lo menciona).
+   - "TipoClienteIA": tipo de cliente clasificado, usando uno de estos valores: "familia", "inversor", "joven profesional", "empresa", "estudiante", "jubilado", "pareja", "otro".
+   - "LeadScoreIA": número entero de 0 a 100 que representa la probabilidad de cierre o nivel de interés.
+   - "UrgenciaIA": nivel de urgencia, con uno de estos valores: "Alta", "Media", "Baja".
+   - "SentimientoIA": tono percibido del lead, con uno de estos valores: "Muy interesado", "Interesado", "Solo curioseando", "Molesto", "Escéptico".
+
+2) El flujo añade además:
+   - "FechaHora": fecha y hora de recepción del lead en formato texto.
+   - "EstadoLeadNumero": estado inicial del lead como número. Siempre empieza en 0.
+     Mapeo de estados:
+       0 = Nuevo
+       1 = Contactado
+       2 = En seguimiento
+       3 = En negociación
+       4 = Cerrado ganado
+       5 = Cerrado perdido
+   - "EstadoLead": estado inicial del lead como texto. Siempre empieza en "Nuevo".
+
+3) Finalmente, el flujo inserta una nueva fila en la base de datos de leads (por ejemplo, una hoja de Google Sheets) con todos los campos:
+   - Campos originales del formulario:
+     Nombre, Email, Telefono, QueQuieresHacer, TipoInmueble, ZonaBarrio, Presupuesto, Plazo, ComoNosHasConocido, Mensaje
+   - Campos generados por IA:
+     ResumenIA, TipoClienteIA, LeadScoreIA, UrgenciaIA, SentimientoIA
+   - Campos de sistema:
+     FechaHora, EstadoLeadNumero, EstadoLead
+
+Respuesta del flujo:
+- Si todo va bien, el flujo devuelve un objeto JSON con todos los campos del lead enriquecido.
+- En caso de error, devuelve un mensaje de error descriptivo.

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Workflows — Huashu Design Showcase</title>
+
+  <!-- Google Fonts: Display serif + body sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===========================================
+       HUASHU DESIGN · AI WORKFLOWS PRESENTATION
+       Philosophy: Kenya Hara式东方极简 + 信息克制
+       =========================================== */
+
+    :root {
+      /* 色调：暖米底 + 炭灰 + 赤陶重点 */
+      --ink: #1A1A1A;
+      --paper: #FAF8F5;
+      --paper-warm: #F5F0E8;
+      --accent: #C4563A;
+      --accent-muted: rgba(196, 86, 58, 0.12);
+      --muted: #6B6560;
+      --line: rgba(26, 26, 26, 0.12);
+
+      /* 字体 */
+      --display: 'Cormorant Garamond', Georgia, serif;
+      --body: 'Inter', -apple-system, sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: var(--body);
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    /* ===========================================
+       DECK STAGE — 1920×1080 aspect ratio maintained
+       =========================================== */
+    .deck {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: none;
+      flex-direction: column;
+      padding: 64px 80px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .slide.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    /* ===========================================
+       TYPOGRAPHY SYSTEM
+       =========================================== */
+
+    /* Display: 衬线用于引语和标题 */
+    .display-xl {
+      font-family: var(--display);
+      font-size: clamp(56px, 6vw, 88px);
+      font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+    }
+
+    .display-lg {
+      font-family: var(--display);
+      font-size: clamp(40px, 4vw, 56px);
+      font-weight: 400;
+      line-height: 1.15;
+      color: var(--ink);
+    }
+
+    .display-md {
+      font-family: var(--display);
+      font-size: clamp(28px, 3vw, 36px);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.3;
+      color: var(--muted);
+    }
+
+    /* Body: 无衬线用于正文 */
+    .body-lg {
+      font-family: var(--body);
+      font-size: clamp(16px, 1.5vw, 20px);
+      font-weight: 300;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    .body-sm {
+      font-family: var(--body);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+
+    .label {
+      font-family: var(--body);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    /* ===========================================
+       LAYOUT COMPONENTS
+       =========================================== */
+
+    .slide-header {
+      margin-bottom: 48px;
+    }
+
+    .slide-footer {
+      margin-top: auto;
+      padding-top: 32px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .slide-counter {
+      font-family: var(--body);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--muted);
+    }
+
+    .slide-meta {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* Divider: 细线代替装饰 */
+    .rule {
+      width: 48px;
+      height: 1px;
+      background: var(--accent);
+      margin: 24px 0;
+    }
+
+    /* Quote block */
+    .quote-block {
+      border-left: 2px solid var(--accent);
+      padding-left: 24px;
+      margin: 32px 0;
+    }
+
+    /* Card: 克制的信息容器 */
+    .info-card {
+      background: var(--paper-warm);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 28px 32px;
+      max-width: 560px;
+    }
+
+    .info-card p {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--ink);
+    }
+
+    /* Workflow list */
+    .workflow-list {
+      list-style: none;
+      margin-top: 32px;
+    }
+
+    .workflow-list li {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--ink);
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+    }
+
+    .workflow-list li:last-child {
+      border-bottom: none;
+    }
+
+    .workflow-num {
+      font-family: var(--display);
+      font-size: 24px;
+      font-weight: 400;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    /* Grid: 2-column */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      margin-top: 40px;
+    }
+
+    .grid-item h3 {
+      font-family: var(--body);
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+
+    .grid-item p {
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.6;
+      color: var(--muted);
+    }
+
+    /* Number accent */
+    .num-bg {
+      position: absolute;
+      right: 60px;
+      bottom: 80px;
+      font-family: var(--display);
+      font-size: 280px;
+      font-weight: 400;
+      color: var(--ink);
+      opacity: 0.03;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    /* ===========================================
+       CENTERED SLIDE VARIANT
+       =========================================== */
+    .slide.centered {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .slide.centered .display-xl { max-width: 900px; }
+    .slide.centered .display-md { max-width: 700px; }
+    .slide.centered .rule { margin: 0 auto 32px; }
+
+    /* ===========================================
+       SPLIT SLIDE VARIANT
+       =========================================== */
+    .slide.split {
+      flex-direction: row;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .split-content { flex: 1; }
+    .split-visual {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .visual-box {
+      width: 320px;
+      height: 320px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .visual-box .icon {
+      font-size: 64px;
+      opacity: 0.6;
+    }
+
+    .visual-box .label {
+      font-size: 12px;
+      letter-spacing: 0.1em;
+    }
+
+    /* ===========================================
+       ANIMATIONS
+       =========================================== */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .slide.active > * {
+      animation: fadeUp 0.6s ease-out forwards;
+    }
+
+    .slide.active > *:nth-child(1) { animation-delay: 0.1s; }
+    .slide.active > *:nth-child(2) { animation-delay: 0.2s; }
+    .slide.active > *:nth-child(3) { animation-delay: 0.3s; }
+    .slide.active > *:nth-child(4) { animation-delay: 0.4s; }
+
+    /* ===========================================
+       NAVIGATION
+       =========================================== */
+    .nav-arrows {
+      position: fixed;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 16px;
+      z-index: 100;
+    }
+
+    .nav-arrow {
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: var(--paper);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .nav-arrow:hover {
+      background: var(--ink);
+      color: var(--paper);
+      border-color: var(--ink);
+    }
+
+    .nav-arrow svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Progress dots */
+    .progress-dots {
+      position: fixed;
+      bottom: 48px;
+      right: 40px;
+      display: flex;
+      gap: 8px;
+      z-index: 100;
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--line);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .dot.active {
+      background: var(--accent);
+      transform: scale(1.3);
+    }
+
+    /* ===========================================
+       RESPONSIVE
+       =========================================== */
+    @media (max-width: 768px) {
+      .slide { padding: 40px 32px; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .slide.split { flex-direction: column; gap: 40px; }
+      .split-visual { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="deck" id="deck">
+
+    <!-- =============================================
+         SLIDE 01 — TITLE (Centered)
+         Philosophy: Kenya Hara留白感
+         ============================================= -->
+    <section class="slide centered active" data-slide="1">
+      <span class="label" style="margin-bottom: 32px;">AI Workflows & Automation</span>
+      <h1 class="display-xl">
+        De laHerramienta<br>al <em style="color: var(--accent);">Flujo</em>
+      </h1>
+      <div class="rule"></div>
+      <p class="display-md">
+        Cómo integrar la IA en tu día a día sin perder elcontrol
+      </p>
+
+      <div class="slide-footer" style="position: absolute; bottom: 48px; left: 80px; right: 80px;">
+        <span class="slide-counter">01 / 06</span>
+        <span class="slide-meta">Huashu Design · AI Productivity</span>
+      </div>
+      <div class="num-bg">01</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 02 — THE PARADIGM SHIFT
+         ============================================= -->
+    <section class="slide" data-slide="2">
+      <div class="slide-header">
+        <span class="label">Paradigma</span>
+      </div>
+      <h1 class="display-lg">
+        No es "usar IA".<br>
+        Es <em style="font-style: italic;">diseñar con IA</em>.
+      </h1>
+      <div class="rule"></div>
+
+      <div class="grid-2">
+        <div class="grid-item">
+          <h3>Antes</h3>
+          <p>IA como respuesta instantanea. Pregunta → Respuesta. Uso reactivo, sin contexto de proceso.</p>
+        </div>
+        <div class="grid-item">
+          <h3>Ahora</h3>
+          <p>IA como partner de pensamiento. Contexto + Iteración + Refinamiento. Uso generativo, construís el proceso.</p>
+        </div>
+      </div>
+
+      <div class="info-card" style="margin-top: 40px;">
+        <p>La diferencia está en el <strong>workflow</strong>: no buscás la respuesta perfecta, sino que construís un sistema donde la IA amplifica tu capacidad de pensar.</p>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">02 / 06</span>
+        <span class="slide-meta">Huashu Design · AI Productivity</span>
+      </div>
+      <div class="num-bg">02</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 03 — THE LOOP
+         ============================================= -->
+    <section class="slide split" data-slide="3">
+      <div class="split-content">
+        <span class="label">El Ciclo</span>
+        <h1 class="display-lg" style="margin-top: 16px;">
+          Input → Contexto → Output → Feedback
+        </h1>
+        <div class="rule"></div>
+        <p class="body-lg">
+          Cada interacción con IA mejora cuando le das feedback. No es magia — es iteración.
+        </p>
+
+        <ul class="workflow-list">
+          <li>
+            <span class="workflow-num">1</span>
+            <span>Dale contexto rico: quién sos, para quién, cuál es el objetivo</span>
+          </li>
+          <li>
+            <span class="workflow-num">2</span>
+            <span>Iterá: la primera respuesta no es la final</span>
+          </li>
+          <li>
+            <span class="workflow-num">3</span>
+            <span>Refiná: pedí variaciones, comparalas, mezclá</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="split-visual">
+        <div class="visual-box">
+          <span class="icon">⟳</span>
+          <span class="label">Loop de Iteración</span>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">03 / 06</span>
+        <span class="slide-meta">Huashu Design · AI Productivity</span>
+      </div>
+      <div class="num-bg">03</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 04 — WORKFLOW TEMPLATES
+         ============================================= -->
+    <section class="slide" data-slide="4">
+      <div class="slide-header">
+        <span class="label">Templates</span>
+        <h1 class="display-lg" style="margin-top: 12px;">
+          3 Workflows para Empezar
+        </h1>
+      </div>
+
+      <div class="grid-2">
+        <div class="info-card">
+          <span class="label" style="margin-bottom: 12px;">Research</span>
+          <p><strong>1.</strong> Buscá en Perplexity con fuente académica</p>
+          <p style="margin-top: 8px;"><strong>2.</strong> Pedí un resumen en 5 bullets</p>
+          <p style="margin-top: 8px;"><strong>3.</strong> Pedí 3 ángulos de análisis diferentes</p>
+        </div>
+
+        <div class="info-card">
+          <span class="label" style="margin-bottom: 12px;">Writing</span>
+          <p><strong>1.</strong> Dame el tono y audiencia</p>
+          <p style="margin-top: 8px;"><strong>2.</strong> Estructura primero (outline)</p>
+          <p style="margin-top: 8px;"><strong>3.</strong> Expandí sección por sección</p>
+        </div>
+
+        <div class="info-card">
+          <span class="label" style="margin-bottom: 12px;">Learning</span>
+          <p><strong>1.</strong> Subí el PDF a NotebookLM</p>
+          <p style="margin-top: 8px;"><strong>2.</strong> Generá FAQs automáticamente</p>
+          <p style="margin-top: 8px;"><strong>3.</strong> Creá un podcast conversacional</p>
+        </div>
+
+        <div class="info-card">
+          <span class="label" style="margin-bottom: 12px;">Creation</span>
+          <p><strong>1.</strong> Describí el resultado esperado</p>
+          <p style="margin-top: 8px;"><strong>2.</strong> Especificá constraints y estilo</p>
+          <p style="margin-top: 8px;"><strong>3.</strong> Iterá hasta 3 variaciones</p>
+        </div>
+      </div>
+
+      <div class="slide-footer">
+        <span class="slide-counter">04 / 06</span>
+        <span class="slide-meta">Huashu Design · AI Productivity</span>
+      </div>
+      <div class="num-bg">04</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 05 — THE CONTEXT PRINCIPLE
+         ============================================= -->
+    <section class="slide centered" data-slide="5">
+      <span class="label" style="margin-bottom: 40px;">Principio Clave</span>
+      <h1 class="display-xl">
+        Contexto<br>
+        <em style="color: var(--accent);">determina</em><br>
+        calidad
+      </h1>
+      <div class="rule"></div>
+      <p class="display-md" style="max-width: 600px;">
+        "Dame ejercicios" = respuesta genérica<br>
+        "Dame 5 ejercicios para entrenar presentación oral en español, nivel intermedio, 15 min, con feedback inmediato" = respuesta usable
+      </p>
+
+      <div class="slide-footer" style="position: absolute; bottom: 48px; left: 80px; right: 80px;">
+        <span class="slide-counter">05 / 06</span>
+        <span class="slide-meta">Huashu Design · AI Productivity</span>
+      </div>
+      <div class="num-bg">05</div>
+    </section>
+
+    <!-- =============================================
+         SLIDE 06 — CLOSING
+         ============================================= -->
+    <section class="slide centered" data-slide="6">
+      <span class="label" style="margin-bottom: 40px;">Cierre</span>
+      <h1 class="display-xl">
+        Empezá<br>
+        <em style="color: var(--accent);">mañana</em>
+      </h1>
+      <div class="rule"></div>
+      <p class="display-md">
+        No necesitás dominar todas las herramientas.<br>
+        Necesitás un workflow que funcione para vos.
+      </p>
+
+      <div class="info-card" style="margin-top: 48px; text-align: left;">
+        <p><strong>Próximo paso:</strong> Elegí UNA tarea de tu día y hacela con IA. Solo una. Observá qué funciona y qué no.</p>
+      </div>
+
+      <div class="slide-footer" style="position: absolute; bottom: 48px; left: 80px; right: 80px;">
+        <span class="slide-counter">06 / 06</span>
+        <span class="slide-meta">Huashu Design · AI Productivity</span>
+      </div>
+      <div class="num-bg">06</div>
+    </section>
+
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav-arrows">
+    <button class="nav-arrow" onclick="prevSlide()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+    <button class="nav-arrow" onclick="nextSlide()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+  </nav>
+
+  <div class="progress-dots" id="dots"></div>
+
+  <script>
+    // =============================================
+    // DECK NAVIGATION
+    // =============================================
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    let currentSlide = 1;
+
+    function updateSlide() {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === currentSlide - 1);
+      });
+      updateDots();
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) currentSlide++;
+      updateSlide();
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) currentSlide--;
+      updateSlide();
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    });
+
+    // Progress dots
+    function updateDots() {
+      const dotsContainer = document.getElementById('dots');
+      dotsContainer.innerHTML = '';
+      for (let i = 1; i <= totalSlides; i++) {
+        const dot = document.createElement('div');
+        dot.className = 'dot' + (i === currentSlide ? ' active' : '');
+        dot.onclick = () => { currentSlide = i; updateSlide(); };
+        dotsContainer.appendChild(dot);
+      }
+    }
+
+    updateDots();
+
+    // Touch swipe support
+    let touchStartX = 0;
+    document.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+    });
+    document.addEventListener('touchend', (e) => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) {
+        diff > 0 ? nextSlide() : prevSlide();
+      }
+    });
+  </script>
+
+</body>
+</html>

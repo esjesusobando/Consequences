@@ -1,0 +1,111 @@
+{
+  "hero": {
+    "tagline": "Professional Office Furniture Installation in Atlanta",
+    "subheadline": "Since 2018, providing reliable, high-quality furniture assembly and relocation services for corporate and residential spaces.",
+    "cta": "Get a Free Quote",
+    "badges": ["8+ Years", "Bilingual", "Licensed", "ATL"]
+  },
+  "services": [
+    {
+      "id": "cubicle",
+      "icon": "LayoutGrid",
+      "title": "Cubicle Installation",
+      "description": "Expert assembly of modular office systems and workstations"
+    },
+    {
+      "id": "relocation",
+      "icon": "Package",
+      "title": "Office Relocation",
+      "description": "Seamless disassembly, transport, and reinstallation"
+    },
+    {
+      "id": "executive",
+      "icon": "Desk",
+      "title": "Executive Suites & Desks",
+      "description": "Precision setup for high-end office furniture"
+    },
+    {
+      "id": "delivery",
+      "icon": "Truck",
+      "title": "Delivery & Assembly",
+      "description": "White-glove service from warehouse to final floor plan"
+    },
+    {
+      "id": "decommission",
+      "icon": "Trash2",
+      "title": "Decommissioning & Liquidation",
+      "description": "Professional removal and disposal of old office assets"
+    }
+  ],
+  "about": {
+    "headline": "Experience You Can Trust",
+    "body": "With over 8 years of experience in the Atlanta area, OIM has established itself as a trusted partner for office furniture installation and relocation services. Our commitment to quality and reliability has made us the preferred choice for businesses looking to transform their workspace.",
+    "bilingualHighlight": "English & Español — Serving Atlanta's diverse business community with seamless communication in both languages."
+  },
+  "gallery": {
+    "categories": ["All", "Corporate", "Executive", "Before & After"],
+    "projects": [
+      {
+        "id": "corp-1",
+        "title": "Corporate HQ Atlanta",
+        "description": "Full Floor Precision Installation",
+        "category": "corporate",
+        "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
+      },
+      {
+        "id": "exec-1",
+        "title": "Tech Campus SV",
+        "description": "Design & Logistics",
+        "category": "executive",
+        "image": "https://images.unsplash.com/photo-1517502884422-41eaead166d4?q=80&w=1925&auto=format&fit=crop"
+      },
+      {
+        "id": "before-1",
+        "title": "Creative Hub",
+        "description": "London, UK",
+        "category": "beforeAfter",
+        "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=2070&auto=format&fit=crop"
+      },
+      {
+        "id": "corp-2",
+        "title": "Wall Street Plaza",
+        "description": "New York, NY",
+        "category": "corporate",
+        "image": "https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2000&auto=format&fit=crop"
+      },
+      {
+        "id": "exec-2",
+        "title": "EcoLab Berlin",
+        "description": "Sustainable Re-Fit",
+        "category": "executive",
+        "image": "https://images.unsplash.com/photo-1518481612222-68bab828fd1d?q=80&w=2070&auto=format&fit=crop"
+      }
+    ]
+  },
+  "contact": {
+    "address": "3715 NORTHCREST RD SUITE 19, ATLANTA, GA 30340",
+    "formLabels": {
+      "name": "Full Name",
+      "company": "Company",
+      "phone": "Phone Number",
+      "service": "Service Type",
+      "message": "Project Details",
+      "submit": "Send Inquiry",
+      "success": "Inquiry Sent — We'll be in touch shortly."
+    }
+  },
+  "navigation": {
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "process": "Process",
+    "insights": "Insights",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "footer": {
+    "description": "Professional office furniture installation services in Atlanta since 2018.",
+    "services": ["Installation", "Design Strategy", "Asset Management", "Relocation"],
+    "company": ["Portfolio", "Insights", "Contact"],
+    "locations": ["Atlanta, USA"]
+  }
+}

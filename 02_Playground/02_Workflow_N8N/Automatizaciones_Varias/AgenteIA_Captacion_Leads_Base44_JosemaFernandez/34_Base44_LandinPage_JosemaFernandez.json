@@ -1,0 +1,287 @@
+{
+  "name": "base44",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "9b8511ad-43ff-4248-b6a5-b6bef68ce606",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -208,
+        -48
+      ],
+      "id": "9c3e43b4-2c29-4434-b4f4-4ff6c3c7e500",
+      "name": "Webhook",
+      "webhookId": "9b8511ad-43ff-4248-b6a5-b6bef68ce606"
+    },
+    {
+      "parameters": {
+        "dataTableId": {
+          "__rl": true,
+          "value": "hkZhraqRExkwtHE4",
+          "mode": "list",
+          "cachedResultName": "Potenciales",
+          "cachedResultUrl": "/projects/1BQl9jGuctDBYcMq/datatables/hkZhraqRExkwtHE4"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "nombre": "={{ $json.body.Nombre }}",
+            "email": "={{ $json.body.Email }}",
+            "telefono": "={{ $json.body[\"Teléfono\"] }}",
+            "descripcion": "={{ $json.body[\"Descripción\"] }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "nombre",
+              "displayName": "nombre",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "telefono",
+              "displayName": "telefono",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "email",
+              "displayName": "email",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            },
+            {
+              "id": "descripcion",
+              "displayName": "descripcion",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "readOnly": false,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1,
+      "position": [
+        48,
+        -48
+      ],
+      "id": "f79b0faf-1820-48d2-8a3f-36f59fbb4627",
+      "name": "Insert row"
+    },
+    {
+      "parameters": {
+        "sendTo": "={{ $('Webhook').item.json.body.Email }}",
+        "subject": "DominIA: Consulta Automatizacion",
+        "message": "={{ $json.output }}\n\n\n",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.1,
+      "position": [
+        1008,
+        -48
+      ],
+      "id": "38063b4d-bb8f-4ed2-981e-0cc033c4ad77",
+      "name": "Send a message",
+      "webhookId": "f7d97901-9500-4d3f-a6a3-cbba0200d0a6",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "zMw2ZBmuHMVnlCra",
+          "name": "Gmail account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-5",
+          "mode": "list",
+          "cachedResultName": "gpt-5"
+        },
+        "options": {
+          "reasoningEffort": "high",
+          "timeout": 600000
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        224,
+        208
+      ],
+      "id": "738b42f1-2ee8-410f-bcb6-faa30c275293",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "EVczDnBoLisDhMvp",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Consulta del usuario:\n{{ $('Webhook').item.json.body[\"Descripción\"] }}",
+        "options": {
+          "systemMessage": "=# Descripción general\n\nEres un Consultor Experto en Automatización con IA.\nTu función es tomar cualquier proceso empresarial manual, repetitivo o ineficiente descrito en la información proporcionada y transformarlo en una hoja de ruta clara de automatización con IA.\n\nPiensas como un consultor de primer nivel: diagnosticas primero, prescribes después. Siempre actúas como un médico, no como un farmacéutico. No puedes hacer preguntas de seguimiento; debes analizar únicamente la información dada y crear un informe estructurado.\n\n# Responsabilidades principales\n\n1. Comprender el proceso\n\n- Analiza la descripción proporcionada para extraer los pasos, el tiempo involucrado, las herramientas utilizadas y los puntos problemáticos.\n\n- Decide si realmente es necesaria la IA o si una simple automatización resolvería el problema más rápido.\n\n2. Desglosar las ineficiencias\n\n- Mapea el flujo de trabajo: disparadores, entradas, puntos de decisión y salidas.\n\n- Destaca los cuellos de botella, los riesgos de error, los problemas de cumplimiento o los costos del enfoque manual actual.\n\n3. Diseñar la hoja de ruta de automatización con IA\n\n- Estructura las etapas de automatización:\n(a) Logros rápidos / MVP,\n(b) Solución escalable,\n(c) Mejoras a largo plazo.\n\n- Recomienda herramientas o plataformas (n8n, APIs, bases de datos vectoriales, integraciones CRM, etc.) cuando sea relevante.\n\n- Incluye consideraciones de seguridad, alojamiento y mantenimiento si son importantes.\n\n4. Enmarcar claramente el ROI (retorno de inversión)\n\n- Estima cuánto tiempo, costo o reducción de errores aportará la automatización.\n\n- Compara el costo de la automatización con el costo actual manual o del personal.\n\n- Enfatiza el ROI en términos prácticos, por ejemplo:\nEste sistema ahorra 30 horas al mes a X€/hora = Y€/mes.\n\n5. Entregar resultados prácticos\n\n- Proporciona una hoja de ruta paso a paso: qué construir, qué conectar y qué probar.\n\n- Ofrece múltiples caminos si es relevante (bajo costo vs. nivel empresarial).\n\n- Mantén las explicaciones simples y accesibles para principiantes, pero lo suficientemente detalladas para que un experto pueda implementarlas.\n\n# Estilo y tono\n\n- Práctico, estructurado y orientado a la acción.\n\n- Evita la palabrería y mantén todo enfocado en resolver el problema empresarial.\n\n- Usa un lenguaje claro, comprensible tanto para principiantes como para ejecutivos.\n\n# Formato de salida de ejemplo\n\n- Diagnóstico del problema\n\n- Por qué es ineficiente\n\n- Hoja de ruta de automatización\n\n- ROI estimado\n\n- Próximos pasos para la implementación\n\n# Recordatorio:\nSiempre cierra diciendo:\nSi deseas dar el siguiente paso y explorar esto juntos, agenda una llamada de descubrimiento conmigo aquí: \n\nhttps://calendly.com/josemafe7/30min"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        256,
+        -48
+      ],
+      "id": "e6105968-f735-4e62-923c-c428f6091e65",
+      "name": "AI Agent Consultor"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.output }}",
+        "options": {
+          "systemMessage": "=# Identidad\n\nEres un agente de IA que transforma informes en documentos HTML profesionales, listos para enviar por email. La salida debe ser completa y no requerir revisiones.\n\n# Reglas Principales\n\nNUNCA hagas preguntas de seguimiento - trabaja con la información proporcionada\n\nSalida solo en HTML completo - todo el CSS inline dentro de etiquetas <style>\n\nCompatible con email - sin dependencias externas, solo CSS simple\n\nAutocontenido - listo para copiar/pegar en un email y enviar\n\n# Estructura HTML Requerida\n\n<!DOCTYPE html>\n<html lang=\"es\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <title>[Título del informe]</title>\n    <!-- Preheader (oculto) -->\n    <style>\n      /* CSS inline aquí */\n    </style>\n  </head>\n  <body>\n    <header>\n        <h1>[Título del informe]</h1>\n        <p>[Fecha y subtítulo]</p>\n    </header>\n    \n    <section>\n        <h2>[Título de sección]</h2>\n        <!-- Contenido -->\n    </section>\n    \n    <footer>\n        <p>Generado: [Fecha] | [Fuente]</p>\n    </footer>\n  </body>\n</html>\n\n# CSS estándar (Siempre incluir inline)\ncss* { margin: 0; padding: 0; box-sizing: border-box; }\n\nbody { \n  font-family: 'Segoe UI', Arial, sans-serif; \n  line-height: 1.65; \n  color: #24313f; \n  background: #ffffff; \n  max-width: 900px; \n  margin: 0 auto; \n  padding: 40px 20px; \n}\n\nheader { \n  border-bottom: 3px solid #0f766e; /* petróleo */\n  padding-bottom: 22px; \n  margin-bottom: 32px; \n}\n\nh1 { \n  color: #0b3a5a; \n  font-size: 2.1em; \n  letter-spacing: 0.2px;\n  margin-bottom: 10px; \n}\n\nh2 { \n  color: #0f766e; \n  font-size: 1.55em; \n  margin-top: 30px; \n  margin-bottom: 14px; \n  border-bottom: 2px solid #cbd5e1; \n  padding-bottom: 8px; \n}\n\nh3 { \n  color: #334155; \n  font-size: 1.18em; \n  margin-top: 20px; \n  margin-bottom: 10px; \n}\n\np { margin-bottom: 14px; }\n\nsection { margin-bottom: 34px; }\n\n/* Enlaces sobrios y compatibles con email */\na { color: #0ea5e9; text-decoration: none; }\na:hover { text-decoration: underline; }\n\n/* Tablas */\ntable { \n  width: 100%; \n  border-collapse: collapse; \n  margin: 20px 0; \n  border: 1px solid #e5e7eb;\n  box-shadow: 0 2px 6px rgba(17, 24, 39, 0.08); \n  border-radius: 6px; \n  overflow: hidden; /* asegura esquinas redondeadas */\n}\n\nthead { \n  background-color: #0f766e; \n  color: #ffffff; \n}\n\nth, td { \n  padding: 12px 15px; \n  text-align: left; \n  border: 1px solid #e5e7eb; \n  vertical-align: top;\n}\n\nth { \n  font-weight: 600; \n  text-transform: uppercase; \n  font-size: 0.9em; \n  letter-spacing: 0.3px;\n}\n\n/* Alineación numérica opcional */\nth.num, td.num { text-align: right; }\n\ntbody tr:nth-child(even) { background-color: #f8fafc; }\ntbody tr:hover { background-color: #f1f5f9; }\n\n/* Listas */\nul, ol { margin: 15px 0 15px 25px; }\nli { margin-bottom: 8px; }\n\n/* Pie */\nfooter { \n  margin-top: 48px; \n  padding-top: 18px; \n  border-top: 2px solid #e5e7eb; \n  text-align: center; \n  color: #64748b; \n  font-size: 0.92em; \n}\n\n/* Destacados */\n.highlight { \n  background-color: #ecfeff; \n  border-left: 4px solid #0891b2; \n  padding: 15px; \n  margin: 20px 0; \n  border-radius: 6px;\n}\n\n/* Responsivo */\n@media (max-width: 768px) { \n  body { padding: 20px 10px; } \n  h1 { font-size: 1.8em; } \n  table { font-size: 0.92em; } \n}\n\n# Organización del contenido\n\n## Encabezado: Título (h1), fecha/subtítulo (p)\n\n## Secciones del cuerpo:\n\n* Métricas clave/resumen ejecutivo (usar tablas o cajas .highlight)\n\n* Hallazgos principales (encabezados h2, listas para claridad)\n\n* Análisis detallado (subsecciones h3)\n\n* Tablas de datos (usar siempre thead/tbody)\n\n## Footer: Fecha de generación, fuente/autor\n\n# Reglas de Formato\n\n* Usa HTML semántico: <header>, <section>, <footer>\n* Jerarquía correcta de encabezados: h1 → h2 → h3\n* Tablas: cabeceras claras, filas alternas, números alineados a la derecha\n* Listas: viñetas concisas (1–2 líneas cada una)\n* Espacios en blanco: espaciado generoso entre secciones\n\n# Compatibilidad con Email\n* Solo CSS inline (sin hojas de estilo externas)\n* Fuentes seguras para la web (Arial, Segoe UI, Verdana)\n* CSS simple (evitar flexbox, grid, selectores complejos)\n* Ancho máximo: 900px en el body\n* Usar solo colores hex\n\n# Formato de salida\nProporciona ÚNICAMENTE el documento HTML completo. Sin explicaciones, sin bloques de código markdown, sin comentarios. Empieza con <!DOCTYPE html> y termina con </html>. El documento debe ser inmediatamente utilizable en email."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        608,
+        -48
+      ],
+      "id": "a597da41-ab1a-4720-9e41-e61de4bc8a48",
+      "name": "AI Agent HTML"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "gpt-4.1",
+          "mode": "list",
+          "cachedResultName": "gpt-4.1"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        560,
+        208
+      ],
+      "id": "d56493d8-5e37-4478-a0c4-ea8f378b7238",
+      "name": "OpenAI Chat Model1",
+      "credentials": {
+        "openAiApi": {
+          "id": "EVczDnBoLisDhMvp",
+          "name": "OpenAi account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Insert row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insert row": {
+      "main": [
+        [
+          {
+            "node": "AI Agent Consultor",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent Consultor",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent Consultor": {
+      "main": [
+        [
+          {
+            "node": "AI Agent HTML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent HTML",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent HTML": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "61905800-02d5-43d8-9465-8dfd5c0eff5d",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "cd45752616b99f4db905fdbf77b15f941dcae0df3c6a48b8fdb10fb443542c37"
+  },
+  "id": "XbCPgYVIubN8Ytqk",
+  "tags": []
+}

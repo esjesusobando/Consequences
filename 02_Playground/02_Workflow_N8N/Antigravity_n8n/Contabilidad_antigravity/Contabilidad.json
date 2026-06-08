@@ -1,0 +1,104 @@
+{
+  "name": "Contabilidad",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "64dbf343-08e3-4a0b-8c8f-cd87c1554115",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -272,
+        -64
+      ],
+      "id": "980624f5-2109-4549-aae9-a7a84b7972ca",
+      "name": "Webhook",
+      "webhookId": "64dbf343-08e3-4a0b-8c8f-cd87c1554115"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "18Ts7hMat0spsr6KLUdniAiJTIqZcTKUTyDsxYL-Hw18",
+          "mode": "list",
+          "cachedResultName": "Contabilidad",
+          "cachedResultUrl": ""
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Hoja 1",
+          "cachedResultUrl": ""
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -48,
+        -64
+      ],
+      "id": "b2444689-740d-44f1-8a61-c9364ae3b4bc",
+      "name": "Obtener Datos",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "NEllZjUUUGerliRw",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "allIncomingItems",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        192,
+        -64
+      ],
+      "id": "e51195f8-35c1-40bd-b5eb-2615272d0910",
+      "name": "Respond to Webhook"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Obtener Datos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Obtener Datos": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "2c339cff-6121-4914-b72c-5e881957d8dd",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "cd45752616b99f4db905fdbf77b15f941dcae0df3c6a48b8fdb10fb443542c37"
+  },
+  "id": "1pef5AR4DrOwsIrp",
+  "tags": []
+}

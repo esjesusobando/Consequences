@@ -1,0 +1,95 @@
+---
+description: Observabilidad - AIPM, Métricas, Logging y Progress
+globs: **/*
+alwaysApply: true
+---
+
+# 📊 Observabilidad
+
+<system_directives>
+  <fundamental_rule>
+    Sin observabilidad no hay control. Todo proceso debe ser visible y medible.
+  </fundamental_rule>
+</system_directives>
+
+---
+
+**Versión:** v4.9 Consequences (2026-05-28)
+
+---
+
+## 📋 SECCIÓN 01: AIPM (AI Project Management)
+
+### Contexto SIEMPRE
+
+| Pregunta | Respuesta |
+|----------|------------|
+| En qué trabajan los agentes? | TARGET actual |
+| Cuánto llevas? | PROGRESS % |
+| Cuánto queda? | REMAINING |
+| Hay problemas? | BLOCKERS |
+
+### Budget de Tokens
+
+- **Warning**: 80% del budget
+- **Crítico**: 95%
+- **Reset**: Nueva sesión si excedido
+
+---
+
+## 📋 SECCIÓN 02: Métricas Obligatorias
+
+| Métrica | Target | Tool |
+|--------|--------|------|
+| Tests pass | 100% | pytest/playwright |
+| Dependencias | Resueltas | npm/poetry |
+| Rutas | Válidas | glob |
+| Lint | 0 errors | ruff/eslint |
+
+### Progress Reporting
+
+- Scripts ≥3 pasos: `[XX.X%] Paso N/Total`
+- Notificaciones voz: 25%, 50%, 75%
+
+---
+
+## 📋 SECCIÓN 03: Logging y Tracing
+
+### Logging Standards
+
+| Nivel | Cuándo |
+|-------|--------|
+| INFO | Progreso normal |
+| WARN | Algo no optimal |
+| ERROR | Fallo recoverable |
+| CRITICAL | Fallo sistémico |
+
+### Tracing
+
+- Siempre loguear: inicio, hitos, fin
+- Incluir contexto: session_id, target
+
+---
+
+## 📋 SECCIÓN 04: Health Checks
+
+### Health Check List
+
+```
+[ ] Dependencias instaldas
+[ ] Rutas válidas
+[ ] Tests passing
+[ ] Lint clean
+[ ] Docs actualizados
+```
+
+---
+
+## 📋 CHECKLIST OBSERVABILIDAD
+
+- [ ] Contexto AIPM visible?
+- [ ] Tokens bajo control?
+- [ ] Métricas en verde?
+- [ ] Logging presente?
+
+*"Lo que no se mide, no se mejora."*

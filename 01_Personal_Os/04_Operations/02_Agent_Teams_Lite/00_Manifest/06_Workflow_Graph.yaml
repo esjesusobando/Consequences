@@ -1,0 +1,58 @@
+# Workflow Graph — generated 2026-06-03T11:02:31
+
+version: v3.0
+generated: "2026-06-03T11:02:31"
+base_path: 01_Personal_Os/01_Core/00_Workflows_Os/
+totals:
+  categories: 7
+  workflows: 28
+by_category:
+  00_Learning_Always:
+    count: 1
+    workflows:
+      - 00_Learning_Always.md
+  01_Personal_Os:
+    count: 10
+    workflows:
+      - 01_Morning_Standup.md
+      - 02_Backlog_Processing.md
+      - 03_Content_Generation.md
+      - 04_Weekly_Review.md
+      - 05_Ritual_Cierre_Protocol.md
+      - 06_Validar_Reglas.md
+      - 07_System_Health_Audit.md
+      - 08_Context_Recovery.md
+      - 09_AI_Task_Template.md
+      - 10_Classify_Task.md
+  02_Marvel:
+    count: 8
+    workflows:
+      - 01_Iron_Man_Gen.md
+      - 02_Spider_Brainstorm.md
+      - 03_Professor_X_Plan.md
+      - 04_Vision_Review.md
+      - 05_Thor_Work.md
+      - 06_Hulk_Compound.md
+      - 07_AntMan_Lfg_Lite.md
+      - 08_Doc_Strange_Lfg.md
+  03_Gentleman:
+    count: 2
+    workflows:
+      - 10_Frontend_Premium.md
+      - 20_Redaccion_de_Docs.md
+  04_Hillary:
+    count: 2
+    workflows:
+      - 15_Captura_Rapida.md
+      - 25_Hillary_Life_OS.md
+  05_Compound_Engineering:
+    count: 4
+    workflows:
+      - 16_Deep_Work_Session.md
+      - 17_Ship_It.md
+      - 18_Anthropic_Harness.md
+      - 19_Multi_Agent_Roles.md
+  06_Youtube_Full_Video:
+    count: 1
+    workflows:
+      - 01_Youtube_Full_Video.md

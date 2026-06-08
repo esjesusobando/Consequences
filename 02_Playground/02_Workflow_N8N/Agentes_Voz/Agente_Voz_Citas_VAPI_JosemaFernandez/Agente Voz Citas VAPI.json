@@ -1,0 +1,345 @@
+{
+  "name": "Agente Voz Citas VAPI",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "b6cbc3b7-5b2b-43e4-bfc3-127a9ac55906",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -160,
+        656
+      ],
+      "id": "b6bd8bca-528f-4e05-902f-7b35bbd24692",
+      "name": "Webhook",
+      "webhookId": "b6cbc3b7-5b2b-43e4-bfc3-127a9ac55906"
+    },
+    {
+      "parameters": {
+        "resource": "calendar",
+        "calendar": {
+          "__rl": true,
+          "value": "",
+          "mode": "list",
+          "cachedResultName": ""
+        },
+        "timeMin": "={{ $('Datos Entrada').item.json.fecha }}",
+        "timeMax": "={{ $('Datos Entrada').item.json.fecha.toDateTime().plus(1, 'hours') }}",
+        "options": {}
+      },
+      "id": "275476a9-dfe6-407a-9a87-1a4ace92f002",
+      "name": "Comprobar Disponibilidad",
+      "type": "n8n-nodes-base.googleCalendar",
+      "position": [
+        304,
+        656
+      ],
+      "typeVersion": 1.3,
+      "credentials": {
+        "googleCalendarOAuth2Api": {
+          "id": "zQrM9CYxPcdBzCOf",
+          "name": "Google Calendar account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "version": 2,
+            "leftValue": "",
+            "caseSensitive": true,
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "4a8741a2-a903-4fb7-b0a3-5c74c7eea6ca",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              },
+              "leftValue": "={{ $json.available }}",
+              "rightValue": "="
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "8ad9140b-7137-4bdc-9ab1-3097dc77943a",
+      "name": "IF Disponible",
+      "type": "n8n-nodes-base.if",
+      "position": [
+        560,
+        656
+      ],
+      "typeVersion": 2.2
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "eb131187-857c-4609-aa14-6cdd972f423f",
+              "name": "fecha",
+              "value": "={{ $json.body.message.toolCalls[0].function.arguments.fecha.toDateTime() }}",
+              "type": "string"
+            },
+            {
+              "id": "a41d0754-5404-488d-bb79-3c79558b4f97",
+              "name": "nombre",
+              "value": "={{ $json.body.message.toolCalls[0].function.arguments.nombre }}",
+              "type": "string"
+            },
+            {
+              "id": "3452c859-0436-4707-be48-4f4535f47943",
+              "name": "email",
+              "value": "={{ $json.body.message.toolCalls[0].function.arguments.email }}",
+              "type": "string"
+            },
+            {
+              "id": "c38df69d-2d22-4575-ac16-2244f02fc54e",
+              "name": "telefono",
+              "value": "=655123123",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        48,
+        656
+      ],
+      "id": "730abaa7-41ce-4da5-995b-242d392c779a",
+      "name": "Datos Entrada"
+    },
+    {
+      "parameters": {
+        "calendar": {
+          "__rl": true,
+          "value": "",
+          "mode": "list",
+          "cachedResultName": ""
+        },
+        "start": "={{ $('Datos Entrada').item.json.fecha }}",
+        "end": "={{ $('Datos Entrada').item.json.fecha.toDateTime().plus(1, 'hours') }}",
+        "additionalFields": {
+          "allday": "no",
+          "attendees": [
+            "=tu_email",
+            "={{ $('Datos Entrada').item.json.email }}"
+          ],
+          "color": "1",
+          "description": "=Reunión IA con {{ $('Datos Entrada').item.json.nombre }} {{ $('Datos Entrada').item.json.telefono }}",
+          "sendUpdates": "all",
+          "showMeAs": "opaque",
+          "summary": "={{ $('Datos Entrada').item.json.nombre }} - Reunión IA"
+        }
+      },
+      "id": "2a0295e6-f5a0-4708-82e0-1cfd78241abf",
+      "name": "Crear Evento",
+      "type": "n8n-nodes-base.googleCalendar",
+      "position": [
+        832,
+        512
+      ],
+      "typeVersion": 1.3,
+      "retryOnFail": false,
+      "maxTries": 2,
+      "credentials": {
+        "googleCalendarOAuth2Api": {
+          "id": "zQrM9CYxPcdBzCOf",
+          "name": "Google Calendar account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "552246f9-7afd-404e-9fb3-cb38c7447359",
+              "name": "respuesta",
+              "type": "string",
+              "value": "=OK - {{ $json.start.dateTime }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a1396337-4469-4fbb-a7a9-ec282a74791f",
+      "name": "Evento Creado",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        1056,
+        512
+      ],
+      "typeVersion": 3.4
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={\n  \"results\": [\n    {\n      \"toolCallId\": \"{{ $('Webhook').item.json.body.message.toolCalls[0].id }}\",\n      \"result\": {{ JSON.stringify($json.respuesta) }}\n    }\n  ]\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        1312,
+        512
+      ],
+      "id": "227d4c12-ab25-43e1-8e0e-6c1e4853a108",
+      "name": "Respuesta Evento Creado"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={\n  \"results\": [\n    {\n      \"toolCallId\": \"{{ $('Webhook').item.json.body.message.toolCalls[0].id }}\",\n      \"result\": {{ JSON.stringify($json.respuesta) }}\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "3f72b3f5-fd6b-482b-9e6a-2bc83239f331",
+      "name": "Respuesta Disponibilidad",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "position": [
+        1088,
+        768
+      ],
+      "typeVersion": 1.1
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "cf8403cc-81e1-4cb6-af44-549fd504846c",
+              "name": "respuesta",
+              "value": "=No hay Disponibilidad",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        848,
+        768
+      ],
+      "id": "11e56859-1ebc-43f1-8c1b-1cdcf7a4ad35",
+      "name": "Respuesta NO disponibilidad"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Datos Entrada",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Comprobar Disponibilidad": {
+      "main": [
+        [
+          {
+            "node": "IF Disponible",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF Disponible": {
+      "main": [
+        [
+          {
+            "node": "Crear Evento",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Respuesta NO disponibilidad",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Datos Entrada": {
+      "main": [
+        [
+          {
+            "node": "Comprobar Disponibilidad",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Crear Evento": {
+      "main": [
+        [
+          {
+            "node": "Evento Creado",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "Evento Creado": {
+      "main": [
+        [
+          {
+            "node": "Respuesta Evento Creado",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Respuesta Evento Creado": {
+      "main": [
+        []
+      ]
+    },
+    "Respuesta NO disponibilidad": {
+      "main": [
+        [
+          {
+            "node": "Respuesta Disponibilidad",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "693301d1-b71f-4432-8662-660d922880f6",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "cd45752616b99f4db905fdbf77b15f941dcae0df3c6a48b8fdb10fb443542c37"
+  },
+  "id": "A7PZohTNJdhSih9a",
+  "tags": []
+}

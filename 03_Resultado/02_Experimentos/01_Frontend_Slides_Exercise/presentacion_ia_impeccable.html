@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IA Moderna — Impeccable Style</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* ===========================================
+       IMPECCABLE STYLE — Premium Editorial Deck
+       Philosophy: Editorial Magazine + Swiss Design
+       =========================================== */
+
+    :root {
+      /* Premium palette */
+      --bg-primary: #FAFAFA;
+      --bg-secondary: #F0F0F0;
+      --ink: #1A1A1A;
+      --ink-secondary: #666666;
+      --accent: #FF3D00;
+      --accent-light: rgba(255, 61, 0, 0.08);
+      --line: rgba(26, 26, 26, 0.08);
+      --line-strong: rgba(26, 26, 26, 0.15);
+
+      /* Typography */
+      --display: 'Sora', sans-serif;
+      --body: 'Manrope', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: var(--body);
+      background: var(--bg-primary);
+      color: var(--ink);
+    }
+
+    /* ===========================================
+       DECK CONTAINER
+       =========================================== */
+    .deck {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: none;
+      flex-direction: column;
+      padding: 72px 96px;
+      opacity: 0;
+    }
+
+    .slide.active {
+      display: flex;
+      animation: slideIn 0.5s ease-out forwards;
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===========================================
+       TYPOGRAPHY SYSTEM
+       =========================================== */
+
+    .display-hero {
+      font-family: var(--display);
+      font-size: clamp(64px, 8vw, 120px);
+      font-weight: 800;
+      line-height: 0.92;
+      letter-spacing: -0.04em;
+      color: var(--ink);
+    }
+
+    .display-hero .accent {
+      color: var(--accent);
+    }
+
+    .display-lg {
+      font-family: var(--display);
+      font-size: clamp(40px, 5vw, 64px);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+
+    .display-md {
+      font-family: var(--display);
+      font-size: clamp(28px, 3vw, 40px);
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .body-lg {
+      font-family: var(--body);
+      font-size: clamp(16px, 1.5vw, 20px);
+      font-weight: 400;
+      line-height: 1.65;
+      color: var(--ink-secondary);
+    }
+
+    .label {
+      font-family: var(--body);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    /* ===========================================
+       LAYOUT COMPONENTS
+       =========================================== */
+
+    .slide-header {
+      margin-bottom: 48px;
+    }
+
+    .slide-footer {
+      margin-top: auto;
+      padding-top: 32px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .slide-counter {
+      font-family: var(--body);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-secondary);
+    }
+
+    .slide-meta {
+      font-size: 12px;
+      color: var(--ink-secondary);
+    }
+
+    /* Rule divider */
+    .rule {
+      width: 40px;
+      height: 2px;
+      background: var(--accent);
+      margin: 24px 0;
+    }
+
+    /* Content card */
+    .content-card {
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      padding: 32px 40px;
+      max-width: 680px;
+    }
+
+    .content-card p {
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.7;
+      color: var(--ink);
+    }
+
+    .content-card strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* Feature list */
+    .feature-list {
+      list-style: none;
+      margin-top: 32px;
+    }
+
+    .feature-list li {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--ink);
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .feature-list li:last-child {
+      border-bottom: none;
+    }
+
+    .feature-num {
+      font-family: var(--display);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--accent);
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* Stats grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin-top: 48px;
+    }
+
+    .stat-item {
+      text-align: left;
+    }
+
+    .stat-value {
+      font-family: var(--display);
+      font-size: 56px;
+      font-weight: 800;
+      color: var(--ink);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-value.accent {
+      color: var(--accent);
+    }
+
+    .stat-label {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Quote */
+    .quote-block {
+      border-left: 3px solid var(--accent);
+      padding-left: 28px;
+      margin: 32px 0;
+    }
+
+    .quote-block p {
+      font-family: var(--display);
+      font-size: clamp(24px, 2.5vw, 32px);
+      font-weight: 500;
+      font-style: italic;
+      line-height: 1.4;
+      color: var(--ink);
+    }
+
+    /* Visual element */
+    .visual-box {
+      width: 280px;
+      height: 280px;
+      border: 1px solid var(--line-strong);
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: var(--bg-secondary);
+    }
+
+    .visual-icon {
+      font-size: 72px;
+      opacity: 0.7;
+    }
+
+    .visual-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-secondary);
+    }
+
+    /* Background number */
+    .num-bg {
+      position: absolute;
+      right: 48px;
+      bottom: 64px;
+      font-family: var(--display);
+      font-size: 320px;
+      font-weight: 800;
+      color: var(--ink);
+      opacity: 0.03;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    /* ===========================================
+       SLIDE VARIANTS
+       =========================================== */
+
+    .slide.centered {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .slide.centered .display-hero { max-width: 1000px; }
+    .slide.centered .body-lg { max-width: 600px; }
+    .slide.centered .rule { margin: 0 auto 32px; }
+
+    .slide.split {
+      flex-direction: row;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .split-content { flex: 1; }
+    .split-visual {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* ===========================================
+       NAVIGATION
+       =========================================== */
+    .nav-controls {
+      position: fixed;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 12px;
+      z-index: 100;
+    }
+
+    .nav-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 1px solid var(--line-strong);
+      background: var(--bg-primary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .nav-btn:hover {
+      background: var(--ink);
+      color: var(--bg-primary);
+      border-color: var(--ink);
+    }
+
+    .nav-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: var(--accent);
+      z-index: 100;
+      transition: width 0.3s ease;
+    }
+
+    /* ===========================================
+       RESPONSIVE
+       =========================================== */
+    @media (max-width: 768px) {
+      .slide { padding: 40px 32px; }
+      .slide.split { flex-direction: column; }
+      .stats-grid { grid-template-columns: 1fr; gap: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="progress-bar" id="progress"></div>
+
+  <div class="deck" id="deck">
+
+    <!-- SLIDE 01 — TITLE -->
+    <section class="slide centered active" data-slide="1">
+      <span class="label" style="margin-bottom: 40px;">IA Moderna</span>
+      <h1 class="display-hero">
+        Inteligencia<br>Artificial<br>
+        <span class="accent">Impeccable</span>
+      </h1>
+      <div class="rule"></div>
+      <p class="body-lg">
+        De la teoría a la práctica — herramientas que transforman tu día a día
+      </p>
+      <div class="num-bg">01</div>
+      <div class="slide-footer">
+        <span class="slide-counter">01 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+    </section>
+
+    <!-- SLIDE 02 — PHILOSOPHY -->
+    <section class="slide" data-slide="2">
+      <div class="slide-header">
+        <span class="label">Filosofía</span>
+      </div>
+      <h1 class="display-lg">
+        No uses la IA.<br>
+        <em style="font-style: italic;">Diseña con ella.</em>
+      </h1>
+      <div class="rule"></div>
+      <div class="quote-block">
+        <p>"La IA no es un atajo — es un amplificador de tu capacidad de pensar."</p>
+      </div>
+      <div class="slide-footer">
+        <span class="slide-counter">02 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">02</div>
+    </section>
+
+    <!-- SLIDE 03 — ECOSYSTEM -->
+    <section class="slide split" data-slide="3">
+      <div class="split-content">
+        <span class="label">El Ecosistema</span>
+        <h1 class="display-lg" style="margin-top: 16px;">
+          Un ecosistema,<br>no una herramienta
+        </h1>
+        <div class="rule"></div>
+        <p class="body-lg">
+          Las Big Tech construyen los cimientos. Las startups prueban cosas nuevas. Vos elegís qué usar según tu necesidad.
+        </p>
+      </div>
+      <div class="split-visual">
+        <div class="visual-box">
+          <span class="visual-icon">🌐</span>
+          <span class="visual-label">Ecosistema IA</span>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span class="slide-counter">03 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">03</div>
+    </section>
+
+    <!-- SLIDE 04 — PERPLEXITY -->
+    <section class="slide" data-slide="4">
+      <span class="label">Búsqueda</span>
+      <h1 class="display-lg" style="margin-top: 16px;">
+        <span class="accent">Perplexity</span> vs Google
+      </h1>
+      <div class="rule"></div>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">4</div>
+          <div class="stat-label">Modos de búsqueda</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value accent">∞</div>
+          <div class="stat-label">Citas verificadas</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">0</div>
+          <div class="stat-label">Infoxicación</div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span class="slide-counter">04 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">04</div>
+    </section>
+
+    <!-- SLIDE 05 — PROMPTS -->
+    <section class="slide" data-slide="5">
+      <span class="label">Crafting</span>
+      <h1 class="display-lg" style="margin-top: 16px;">
+        Anatomía del<br><span class="accent">Prompt Perfecto</span>
+      </h1>
+      <div class="rule"></div>
+      <ul class="feature-list">
+        <li><span class="feature-num">1</span>ROL — Quién debe ser la IA</li>
+        <li><span class="feature-num">2</span>TASK — Qué querés que haga</li>
+        <li><span class="feature-num">3</span>CONTEXTO — Para quién y por qué</li>
+        <li><span class="feature-num">4</span>FORMATO — Cómo querés la respuesta</li>
+      </ul>
+      <div class="slide-footer">
+        <span class="slide-counter">05 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">05</div>
+    </section>
+
+    <!-- SLIDE 06 — TOKENS -->
+    <section class="slide split" data-slide="6">
+      <div class="split-content">
+        <span class="label">Tecnología</span>
+        <h1 class="display-lg" style="margin-top: 16px;">
+          Tokens &<br><span class="accent">Transformers</span>
+        </h1>
+        <div class="rule"></div>
+        <div class="content-card">
+          <p><strong>Tokens:</strong> Unidades básicas de procesamiento. La IA divide tu texto para entendernos.</p>
+          <p style="margin-top: 16px;"><strong>Transformers:</strong> Creados por Google en 2016. Transmiten datos en significado y recuerdan el contexto.</p>
+        </div>
+      </div>
+      <div class="split-visual">
+        <div class="visual-box">
+          <span class="visual-icon">⚡</span>
+          <span class="visual-label">Procesamiento</span>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span class="slide-counter">06 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">06</div>
+    </section>
+
+    <!-- SLIDE 07 — TEMPERATURE -->
+    <section class="slide" data-slide="7">
+      <span class="label">Creatividad</span>
+      <h1 class="display-lg" style="margin-top: 16px;">
+        La <span class="accent">Temperatura</span>
+      </h1>
+      <div class="rule"></div>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">0.1</div>
+          <div class="stat-label">Objetivo · Datos concretos</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value accent">0.7</div>
+          <div class="stat-label">Equilibrio · Creatividad media</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">1.0</div>
+          <div class="stat-label">Máxima · Máxima creatividad</div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span class="slide-counter">07 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">07</div>
+    </section>
+
+    <!-- SLIDE 08 — NOTEBOOKLM -->
+    <section class="slide" data-slide="8">
+      <span class="label">Research</span>
+      <h1 class="display-lg" style="margin-top: 16px;">
+        <span class="accent">NotebookLM</span><br>Tu asistente de estudio
+      </h1>
+      <div class="rule"></div>
+      <div class="content-card">
+        <p>Subí documentos PDF, artículos o videos de YouTube y convertilos en material de estudio interactivo.</p>
+      </div>
+      <ul class="feature-list">
+        <li><span class="feature-num">→</span>Resumen automático de documentos largos</li>
+        <li><span class="feature-num">→</span>Preguntas frecuentes generadas por IA</li>
+        <li><span class="feature-num">→</span>Podcast conversacional con tus apuntes</li>
+      </ul>
+      <div class="slide-footer">
+        <span class="slide-counter">08 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">08</div>
+    </section>
+
+    <!-- SLIDE 09 — RECRAFT -->
+    <section class="slide split" data-slide="9">
+      <div class="split-content">
+        <span class="label">Diseño</span>
+        <h1 class="display-lg" style="margin-top: 16px;">
+          <span class="accent">Recraft</span><br>Imágenes desde texto
+        </h1>
+        <div class="rule"></div>
+        <p class="body-lg">
+          Generación de imágenes con IA. Describí lo que querés ver y Recraft lo crea.
+        </p>
+      </div>
+      <div class="split-visual">
+        <div class="visual-box">
+          <span class="visual-icon">🎨</span>
+          <span class="visual-label">Generación</span>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span class="slide-counter">09 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">09</div>
+    </section>
+
+    <!-- SLIDE 10 — GEMINI -->
+    <section class="slide" data-slide="10">
+      <span class="label">Google</span>
+      <h1 class="display-lg" style="margin-top: 16px;">
+        <span class="accent">Gemini</span> — La apuesta de Google
+      </h1>
+      <div class="rule"></div>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">📷</div>
+          <div class="stat-label">Análisis de imágenes</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">📊</div>
+          <div class="stat-label">Fórmulas Excel</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">🎤</div>
+          <div class="stat-label">Búsqueda por voz</div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span class="slide-counter">10 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">10</div>
+    </section>
+
+    <!-- SLIDE 11 — HALLUCINATIONS -->
+    <section class="slide centered" data-slide="11">
+      <span class="label" style="margin-bottom: 40px;">⚠️ Warning</span>
+      <h1 class="display-hero">
+        La IA<br><span class="accent">Alucina</span>
+      </h1>
+      <div class="rule"></div>
+      <p class="body-lg" style="max-width: 600px;">
+        Se inventa las respuestas con total seguridad. Siempre verificá con las fuentes.
+      </p>
+      <div class="num-bg">11</div>
+      <div class="slide-footer">
+        <span class="slide-counter">11 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+    </section>
+
+    <!-- SLIDE 12 — PRIVACY -->
+    <section class="slide" data-slide="12">
+      <span class="label">Seguridad</span>
+      <h1 class="display-lg" style="margin-top: 16px;">
+        <span class="accent">Privacidad</span> & Responsabilidad
+      </h1>
+      <div class="rule"></div>
+      <ul class="feature-list">
+        <li><span class="feature-num">1</span>No subas datos sensibles a herramientas públicas</li>
+        <li><span class="feature-num">2</span>Verificá siempre las fuentes antes de compartir</li>
+        <li><span class="feature-num">3</span>Las respuestas pueden estar equivocadas</li>
+        <li><span class="feature-num">4</span>Tu historial puede ser usado para entrenar modelos</li>
+      </ul>
+      <div class="slide-footer">
+        <span class="slide-counter">12 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">12</div>
+    </section>
+
+    <!-- SLIDE 13 — FUTURE -->
+    <section class="slide" data-slide="13">
+      <span class="label">Proyección</span>
+      <h1 class="display-lg" style="margin-top: 16px;">
+        Del <span class="accent">Search</span> al <em>Ask</em>
+      </h1>
+      <div class="rule"></div>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value">2024</div>
+          <div class="stat-label">Búsqueda por voz normal</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value accent">2025</div>
+          <div class="stat-label">IA conversacional</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">2026</div>
+          <div class="stat-label">Interfaces neuronales</div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span class="slide-counter">13 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">13</div>
+    </section>
+
+    <!-- SLIDE 14 — WORKFLOW RESEARCH -->
+    <section class="slide split" data-slide="14">
+      <div class="split-content">
+        <span class="label">Workflow</span>
+        <h1 class="display-lg" style="margin-top: 16px;">
+          Research<br><span class="accent">Workflow</span>
+        </h1>
+        <div class="rule"></div>
+        <ul class="feature-list">
+          <li><span class="feature-num">1</span>Buscá en Perplexity con fuente académica</li>
+          <li><span class="feature-num">2</span>Pedí un resumen en 5 bullets</li>
+          <li><span class="feature-num">3</span>Pedí 3 ángulos de análisis diferentes</li>
+        </ul>
+      </div>
+      <div class="split-visual">
+        <div class="visual-box">
+          <span class="visual-icon">🔍</span>
+          <span class="visual-label">Research</span>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span class="slide-counter">14 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">14</div>
+    </section>
+
+    <!-- SLIDE 15 — WORKFLOW WRITING -->
+    <section class="slide" data-slide="15">
+      <span class="label">Workflow</span>
+      <h1 class="display-lg" style="margin-top: 16px;">
+        Writing<br><span class="accent">Workflow</span>
+      </h1>
+      <div class="rule"></div>
+      <ul class="feature-list">
+        <li><span class="feature-num">1</span>Dame el tono y audiencia</li>
+        <li><span class="feature-num">2</span>Estructura primero (outline)</li>
+        <li><span class="feature-num">3</span>Expandí sección por sección</li>
+        <li><span class="feature-num">4</span>Iterá hasta 3 variaciones</li>
+      </ul>
+      <div class="slide-footer">
+        <span class="slide-counter">15 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">15</div>
+    </section>
+
+    <!-- SLIDE 16 — COPILOT -->
+    <section class="slide centered" data-slide="16">
+      <span class="label" style="margin-bottom: 40px;">Accesibilidad</span>
+      <h1 class="display-hero">
+        <span class="accent">Copilot</span><br>en WhatsApp
+      </h1>
+      <div class="rule"></div>
+      <div class="content-card" style="text-align: center;">
+        <p><strong>+1 877 224 1042</strong></p>
+        <p style="margin-top: 8px; color: var(--ink-secondary);">La IA de Microsoft en tu bolsillo</p>
+      </div>
+      <div class="num-bg">16</div>
+      <div class="slide-footer">
+        <span class="slide-counter">16 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+    </section>
+
+    <!-- SLIDE 17 — CONTEXT RULE -->
+    <section class="slide" data-slide="17">
+      <span class="label">Principio</span>
+      <h1 class="display-lg" style="margin-top: 16px;">
+        Contexto =<br><span class="accent">Calidad</span>
+      </h1>
+      <div class="rule"></div>
+      <div class="quote-block">
+        <p>"Dame ejercicios" = respuesta genérica<br>
+        "Dame 5 ejercicios para entrenar presentación oral en español, nivel intermedio, 15 min, con feedback inmediato" = respuesta usable</p>
+      </div>
+      <div class="slide-footer">
+        <span class="slide-counter">17 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">17</div>
+    </section>
+
+    <!-- SLIDE 18 — TOOLS GRID -->
+    <section class="slide" data-slide="18">
+      <span class="label">Herramientas</span>
+      <h1 class="display-lg" style="margin-top: 16px;">
+        <span class="accent">Stack</span> Esencial
+      </h1>
+      <div class="rule"></div>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-value accent">P</div>
+          <div class="stat-label">Perplexity · Búsqueda</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value accent">C</div>
+          <div class="stat-label">Copilot · Accesibilidad</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value accent">N</div>
+          <div class="stat-label">NotebookLM · Research</div>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span class="slide-counter">18 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">18</div>
+    </section>
+
+    <!-- SLIDE 19 — ERRORS -->
+    <section class="slide" data-slide="19">
+      <span class="label">Errores</span>
+      <h1 class="display-lg" style="margin-top: 16px;">
+        <span class="accent">Evita</span> estos errores
+      </h1>
+      <div class="rule"></div>
+      <ul class="feature-list">
+        <li><span class="feature-num">✗</span>Usar IA sin contexto específico</li>
+        <li><span class="feature-num">✗</span>Confiar ciegamente en las respuestas</li>
+        <li><span class="feature-num">✗</span>Pedir todo de una vez — iterá</li>
+        <li><span class="feature-num">✗</span>Usar la misma temperatura para todo</li>
+      </ul>
+      <div class="slide-footer">
+        <span class="slide-counter">19 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">19</div>
+    </section>
+
+    <!-- SLIDE 20 — TIPS -->
+    <section class="slide split" data-slide="20">
+      <div class="split-content">
+        <span class="label">Tips</span>
+        <h1 class="display-lg" style="margin-top: 16px;">
+          3 Tips para<br><span class="accent">empezar</span>
+        </h1>
+        <div class="rule"></div>
+        <ul class="feature-list">
+          <li><span class="feature-num">1</span>Elegí UNA tarea y hacela con IA</li>
+          <li><span class="feature-num">2</span>Observá qué funciona y qué no</li>
+          <li><span class="feature-num">3</span>Iterá tu workflow semanalmente</li>
+        </ul>
+      </div>
+      <div class="split-visual">
+        <div class="visual-box">
+          <span class="visual-icon">🚀</span>
+          <span class="visual-label">Empezá</span>
+        </div>
+      </div>
+      <div class="slide-footer">
+        <span class="slide-counter">20 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">20</div>
+    </section>
+
+    <!-- SLIDE 21 — RESOURCES -->
+    <section class="slide centered" data-slide="21">
+      <span class="label" style="margin-bottom: 40px;">Recursos</span>
+      <h1 class="display-hero">
+        <span class="accent">QR</span><br>Code
+      </h1>
+      <div class="rule"></div>
+      <p class="body-lg">
+        Escaneá para acceder a los recursos y enlaces de esta presentación.
+      </p>
+      <div class="num-bg">21</div>
+      <div class="slide-footer">
+        <span class="slide-counter">21 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+    </section>
+
+    <!-- SLIDE 22 — NEXT -->
+    <section class="slide" data-slide="22">
+      <span class="label">Próximos Pasos</span>
+      <h1 class="display-lg" style="margin-top: 16px;">
+        <span class="accent">Jornada 4:</span><br>AI Agents
+      </h1>
+      <div class="rule"></div>
+      <p class="body-lg">
+        La próxima jornada explorará cómo crear agentes autonomicos que usan IA para completar tareas complejas.
+      </p>
+      <div class="slide-footer">
+        <span class="slide-counter">22 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">22</div>
+    </section>
+
+    <!-- SLIDE 23 — COMMUNITY -->
+    <section class="slide centered" data-slide="23">
+      <span class="label" style="margin-bottom: 40px;">Comunidad</span>
+      <h1 class="display-hero">
+        Learn<br><span class="accent">Together</span>
+      </h1>
+      <div class="rule"></div>
+      <p class="body-lg">
+        Unite a la comunidad de aprendizaje continuo sobre IA.
+      </p>
+      <div class="num-bg">23</div>
+      <div class="slide-footer">
+        <span class="slide-counter">23 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+    </section>
+
+    <!-- SLIDE 24 — CONCLUSION -->
+    <section class="slide" data-slide="24">
+      <span class="label">Conclusión</span>
+      <h1 class="display-lg" style="margin-top: 16px;">
+        La IA es un<br><span class="accent">amplificador</span>
+      </h1>
+      <div class="rule"></div>
+      <div class="quote-block">
+        <p>No reemplaza tu creatividad — la multiplica. No reemplaza tu pensamiento — lo acelera.</p>
+      </div>
+      <div class="slide-footer">
+        <span class="slide-counter">24 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+      <div class="num-bg">24</div>
+    </section>
+
+    <!-- SLIDE 25 — CLOSING -->
+    <section class="slide centered" data-slide="25">
+      <span class="label" style="margin-bottom: 40px;">¡Gracias!</span>
+      <h1 class="display-hero">
+        Empezá<br><span class="accent">Mañana</span>
+      </h1>
+      <div class="rule"></div>
+      <p class="body-lg">
+        No esperes a dominarlo todo. Empezá con una tarea, observá, iterá.
+      </p>
+      <div class="num-bg">25</div>
+      <div class="slide-footer">
+        <span class="slide-counter">25 / 25</span>
+        <span class="slide-meta">Impeccable Style · 2024</span>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Navigation -->
+  <div class="nav-controls">
+    <button class="nav-btn" onclick="prevSlide()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+    <button class="nav-btn" onclick="nextSlide()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    let currentSlide = 1;
+
+    function updateSlide() {
+      slides.forEach((s, i) => {
+        s.classList.toggle('active', i === currentSlide - 1);
+      });
+      document.getElementById('progress').style.width =
+        ((currentSlide / totalSlides) * 100) + '%';
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides) currentSlide++;
+      updateSlide();
+    }
+
+    function prevSlide() {
+      if (currentSlide > 1) currentSlide--;
+      updateSlide();
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    });
+
+    // Touch
+    let touchStartX = 0;
+    document.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+    });
+    document.addEventListener('touchend', (e) => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) {
+        diff > 0 ? nextSlide() : prevSlide();
+      }
+    });
+  </script>
+
+</body>
+</html>

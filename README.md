@@ -1,0 +1,300 @@
+# Think Different PersonalOS v4.9 Consequences — Production Ready
+
+[![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Version](https://img.shields.io/badge/Version-4.9-00FF00)]()
+[![Status](https://img.shields.io/badge/Status-PRODUCTION%20READY-00FF00)]()
+[![OS](https://img.shields.io/badge/Think%20Different-OS--4.9-7B68EE)]()
+
+> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 392 skills SOTA, agentes, metodologías integradas y automatización completa.
+
+---
+
+## 📊 Estado del Sistema (v4.9 Consequences — Production Ready — 2026-06-01)
+
+> 🟢 **PRODUCTION READY** - v4.9 Consequences lista para uso público
+
+| Métrica                              | Valor                                            |
+|-------------------------------------|-------------------------------------------------|
+| **Overall Health**                   | **100%** 🟢                                       |
+| **Every CE**                         | v3.8.4 ✅ (local repo)                            |
+| **gentle-ai**                        | v1.30.6 ✅                                        |
+| **Skills**                           | **392** (15 áreas funcionales)                   |
+| **Rules**                            | **14** (.mdc)                                    |
+| **MCPs**                             | **8** root + **43** backup                       |
+| **HUBs**                             | **30** HUBs + **133** scripts subdir              |
+| **Agentes**                          | **62** (source — ver manifest para breakdown)    |
+| **Workflows**                        | **28** (7 categorías)                            |
+
+---
+
+## 📂 Estructura del Sistema (v4.9 Consequences — Production Ready)
+
+```
+Think_Different/                           # RAÍZ
+├── 00_Winter_is_Coming/           ✅ Goals, Backlog, AGENTS.md, CHANGELOG
+├── 01_Personal_Os/                ✅ EL SISTEMA OPERATIVO
+│   ├── 01_Core/                   ✅ Motor del OS (FUENTE DE VERDAD)
+│   │   ├── 00_Workflows_Os/       ✅ 28 workflows (7 categorías)
+│   │   ├── 01_Rules/              ✅ 14 reglas .mdc — FUENTE DE VERDAD
+│   │   └── 02_Tools/              ✅ Todas las herramientas
+│   │       ├── 01_Agents/         ✅ 61 agentes
+│   │       ├── 02_Skills/         ✅ 392 skills — 15 áreas funcionales
+│   │       ├── 03_Mcp/            ✅ Backup MCP configs
+│   │       ├── 04_Integrations/   ✅ Fireflies, Granola
+│   │       ├── 05_Hooks/          ✅ 10 hooks (6 fases)
+│   │       ├── 06_Plugins/        ✅ Plugins OS
+│   │       ├── 07_Server/         ✅ Engram server
+│   │       ├── 08_Evals/          ✅ Evaluadores
+│   │       └── 09_Templates/      ✅ Templates
+│   ├── 02_Knowledge/              ✅ Base de conocimiento + Docs
+│   ├── 03_Task/                   ✅ Tareas activas
+│   │   ├── 00_P0_Auditoria.md/
+│   │   ├── 01_Tasks_Done/
+│   │   ├── 02_Hillary_Inbox/
+│   │   └── README.md
+│   ├── 04_Operations/            ✅ Motor operativo
+│       ├── 00_EVOLUTION_LOG.md   ✅ Registro histórico de evolución del OS
+│       ├── 00_Context_LLM/       ✅ Memoria LLM (Engram, notes)
+│       ├── 01_Auto_Improvement/  ✅ Auto-mejora recursiva
+│       ├── 02_Agent_Teams_Lite/  ✅ SDD registry + 7 manifests JARVIS
+│       ├── 03_Scripts_Os/        ✅ 30 HUBs — 163 scripts totales (133 en subdir)
+│       ├── 04_Installer/         ✅ Installer
+│       ├── 05_Projects/          ✅ Proyectos activos
+│       ├── 06_SOTA_Features/    ✅ Features estado-del-arte
+│       ├── 07_Reports/          ✅ Reportes generados
+│       ├── GOVERNANCE.md
+│       └── RUNBOOK.md
+│   └── 05_Archive/               ✅ Backups, snapshots, históricos
+├── 02_Playground/                 ✅ Zona de pruebas (gap numeración: no existe 05_ — preservado)
+│   ├── 00_Momentum/
+│   ├── 01_Branders_Skills/
+│   ├── 02_Workflow_N8N/
+│   ├── 03_Reports/
+│   ├── 04_Side Project/
+│   ├── 06_Testing_Legacy/         # Scripts de test
+│   │   ├── 01_OS_Runtime_Test.py
+│   │   ├── 05_OS_Health_Test.py
+│   │   └── 06_OS_Deep_Audit.py
+│   └── Kit_Diseño_Top.md
+├── 03_Resultado/                 ✅ Outputs de proyectos (agrupado: Proyectos, Aprendizaje, Experimentos, Reportes, Documentacion)
+│   ├── 00_Proyectos/            # Planes, revisiones, side projects
+│   ├── 01_Aprendizaje/          # Skills output, fundamentos, referencias
+│   ├── 02_Experimentos/         # World OIM, ejercicios, sesiones
+│   ├── 03_Reportes/             # Auditorías y reportes
+│   ├── 04_Documentacion/        # Documentación general
+│   ├── 05_Testing_Skills/       # Pruebas controladas y outputs HTML de skills
+├── .agent/                      ✅ BACKUP ESTRATÉGICO
+├── .atl/                        ✅ SDD Registry + openspec/
+├── .claude/                     ✅ Config Claude Code
+├── .opencode/                   ✅ Config OpenCode + skills locales
+├── .mcp.json                    ✅ 7 MCPs root activos (+ 38 backup)
+├── OS_DIRECTORY.md              ✅ JARVIS discovery
+├── AGENTS.md                    ✅ GGA Pre-Commit
+├── CLAUDE.md                    ✅ Config IAs
+└── README.md                    ✅ Este archivo
+```
+
+> **📍 PATH CRITICAL:** Skills en `01_Personal_Os/01_Core/02_Tools/02_Skills/` — NO usar paths antiguos
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# En tu AI assistant (OpenCode, Claude Code, etc.)
+
+1. Leer 00_Winter_is_Coming/AGENTS.md
+2. Ejecutar engram_mem_context(limit: 10)
+3. ¡Listo para trabajar!
+```
+
+---
+
+## 🛠️ Componentes Principales
+
+### Skills System (v4.9 — 14 Áreas Funcionales)
+
+| Área                                                         | Items                      | Descripción                                                   |
+|-------------------------------------------------------------|---------------------------|--------------------------------------------------------------|
+| **00_Agent_Teams_Lite**                                      | 13                         | SDD sub-agentes + JARVIS manifests                            |
+| **00_Compound_Engineering**                                  | 63                         | Core CE — SDD + Compound Engineering                          |
+| **00_Personal_Os**                                           | 32                         | Life OS, Hillary, Rituales                                    |
+| **00_Skill_Auditor**                                         | 1                          | Auditoría de skills                                           |
+| **00_System_Core**                                           | 1                          | Stack base del OS                                             |
+| **00_Workflows**                                             | 43                         | Workflows OS                                                  |
+| **01_Creacion_Contenidos**                                   | 47                         | Brand, YouTube, SEO, Marketing — 16 sub-áreas                 |
+| **02_Diseno_Ui_Ux**                                          | 34                         | Product Design, UI/UX, Taste, Minimal                         |
+| **03_Video_Media**                                           | 7                          | Video Intel, James Cameron                                    |
+| **04_Automatizacion**                                        | 24                         | N8N, Firecrawl, GWS Client                                    |
+| **05_Claude_Ads**                                            | 21                         | Claude Ads & Promoted Content                                 |
+| **06_Tools**                                                 | 83                         | Skill Creator, Testing, DevOps, Data                          |
+| **07_Invictus_Web**                                          | 15                         | Playwright, Superpowers, Browser Auto                         |
+| **10_Laia_Learning**                                         | 1                          | Sistema de aprendizaje personal                               |
+| **TOTAL**                                                    | **392**                    | 392 skills activas en 15 áreas funcionales — ver `00_Manifest/04_Skill_Index.json`
+
+> 📍 **SSOT:** El desglose detallado por área está en `04_Skill_Index.json` del manifest. Esta tabla resume las 15 áreas.
+> 
+> `--validate` compara estos números contra el manifest automáticamente.
+
+---
+
+### HUBs v4.9 (30 HUBs — 163 scripts totales, 133 en subdirectorios)
+
+| Hub                                          | Script                                          | Propósito                                             |
+|---------------------------------------------|------------------------------------------------|------------------------------------------------------|
+| **Sound Engine**                             | `00_Sound_Engine.py`                            | Notificaciones sonoras                                |
+| **Auditor**                                  | `01_Auditor_Hub.py`                             | Auditorías del sistema                                |
+| **Git**                                      | `02_Git_Hub.py`                                 | Operaciones Git                                       |
+| **AIPM**                                     | `03_AIPM_Hub.py`                                | AI Performance Monitoring                             |
+| **Ritual**                                   | `04_Ritual_Hub.py`                              | Rituales de sesión                                    |
+| **Validator**                                | `05_Validator_Hub.py`                           | Validación de código                                  |
+| **Tool**                                     | `06_Tool_Hub.py`                                | Gestión de herramientas                               |
+| **Integration**                              | `07_Integration_Hub.py`                         | Integraciones MCP                                     |
+| **Workflow**                                 | `08_Workflow_Hub.py`                            | Automatización de workflows                           |
+| **Data**                                     | `09_Data_Hub.py`                                | Procesamiento de datos                                |
+| **General**                                  | `10_General_Hub.py`                             | Utilidades generales                                  |
+| **Auto Learn**                               | `11_Auto_Learn_Hub.py`                          | Motor de automejora                                   |
+| **Health Metrics**                           | `14_Health_Metrics_Hub.py`                      | Métricas de salud del OS                              |
+| **MCP Sync** ★                               | `15_MCP_Sync_Hub.py`                            | Sync Claude ↔ OpenCode                                |
+| **Agent Mirror**                             | `16_Agent_Mirror_Hub.py`                        | Mirror source → backup                                |
+| **Watchdog** ★                               | `17_Watchdog_Hub.py`                            | Health watchdog                                       |
+| **Telemetry** ★                              | `18_Telemetry_Hub.py`                           | Dashboard de métricas                                 |
+| **Agent Sync**                               | `19_Agent_Sync_Hub.py`                          | Sync .agent ↔ 01_Core                                 |
+| **System Mapper** ★                          | `20_System_Mapper_Hub.py`                       | Genera 7 manifests JARVIS                             |
+| **Legacy Cleanup**                           | `21_Legacy_Path_Cleanup.py`                     | Limpia paths legacy                                   |
+| **Skill Frontmatter**                        | `22_Validate_Skill_Frontmatter.py`              | Detecta skills sin frontmatter                        |
+| **Path Replacement**                         | `23_path_replacement.py`                        | Reemplazo de paths legacy                             |
+| **Mass Path Migration**                      | `24_mass_path_migration.py`                     | Migración masiva de paths                             |
+| **Minimax Optimizer**                        | `25_Minimax_Optimizer_Hub.py`                   | Optimización Minimax                                  |
+| **Parallel Audit Pro**                       | `26_Parallel_Audit_Pro.py`                      | Auditoría paralela                                    |
+| **Skill Auditor**                            | `27_Skill_Auditor.py`                           | Auditoría específica de skills                        |
+| **System Health Monitor**                    | `28_System_Health_Monitor.py`                   | Monitor de salud                                      |
+| **Repo Sync Auditor**                        | `29_Repo_Sync_Auditor.py`                       | Auditor de sincronización                             |
+| **HUB SOTA**                                 | `HUB_SOTA.py`                                   | HUB de HUBs SOTA                                      |
+| **Config Paths**                             | `config_paths.py`                               | Configuración de paths del sistema                    |
+
+> ★ = HUB canónico JARVIS 4.5 | Scripts adicionales en subdirectorios organizados por función
+
+---
+
+### Agentes (62 total)
+
+> 📍 **SSOT:** `01_OS_Inventory.json` → `agents.by_category`. Esta tabla referencia los valores del manifest.
+
+| Categoría                                   | Cantidad                      | Ubicación                                                                   |
+|--------------------------------------------|------------------------------|----------------------------------------------------------------------------|
+| Root                                        | 26                            | Directo en `01_Agents/` + `00_Agent_Teams_Lite/` + `00_OS_Conductor/`       |
+| Dream Team                                  | 5                             | `01_Core/02_Tools/01_Agents/01_Dream_Team/`                                 |
+| Specialists Compound                        | 23                            | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                       |
+| Growth                                      | 5                             | `01_Core/02_Tools/01_Agents/03_Growth/`                                     |
+| Other                                       | 3                             | `04_Contexto/`, `05_Marca/`, `06_Plantillas/`, `07_Agent_Teams_Lite_Gen/`   |
+
+---
+
+### MCPs (10 root + 43 backup OpenCode)
+
+| Servidor                        | Propósito                             | Fuente                |
+|--------------------------------|--------------------------------------|----------------------|
+| @magicuidesign/mcp              | UI design generation                  | root .mcp.json        |
+| aim-memory-bank                 | AI memory bank                        | root .mcp.json        |
+| context7                        | Context-aware code search             | root .mcp.json        |
+| obsidian-mcp                    | Obsidian notes MCP                    | root .mcp.json        |
+| eagle                           | Eagle library API                     | root .mcp.json        |
+| higgsfield                      | Higgsfield AI                         | root .mcp.json        |
+| sequential-thinking             | Sequential reasoning                  | root .mcp.json        |
+| granola                         | Meeting notes sync                    | opencode.json         |
+| paypal                          | Payment processing (sandbox)          | opencode.json         |
+> Backup completo (38 servidores) en `01_Personal_Os/01_Core/02_Tools/03_Mcp/00_Config_Mcp/mcp_backup.json`
+>
+> **Granola:** Integración de notas de reuniones — configurado como streamable HTTP, OAuth vía browser. Documentación en `01_Personal_Os/01_Core/02_Tools/04_Integrations/02_Granola/`.
+>
+> **PayPal:** Procesamiento de pagos en sandbox — configurado vía `mcp-remote` que maneja el OAuth flow automáticamente.
+
+---
+
+## 📋 Comandos SDD
+
+```
+/sdd-init           # Inicializar contexto SDD
+/sdd-explore        # Explorar tema
+/sdd-propose        # Crear propuesta
+/sdd-spec           # Especificación
+/sdd-design         # Diseño técnico
+/sdd-tasks          # Descomponer tareas
+/sdd-apply          # Implementar
+/sdd-verify         # Verificar
+/sdd-archive        # Archivar
+```
+
+---
+
+## 🔧 Comandos CE (Compound Engineering)
+
+```
+/ce:ideate          # Generar ideas
+/ce:brainstorm     # Lluvia de ideas
+/ce:plan            # Crear planes
+/ce:work            # Ejecutar trabajo
+/ce:review          # Revisar
+/ce:compound        # Documentar conocimiento
+```
+
+---
+
+## ⚙️ GGA — Guardian Angel
+
+```bash
+.agent/05_GGA/bin/gga run      # Revisar archivos staged
+.agent/05_GGA/bin/gga install  # Instalar pre-commit hook
+```
+
+### Reglas GGA
+
+- TypeScript: `const`/`let` solo, no `var`
+- React: Componentes funcionales, named exports
+
+---
+
+## 📚 Documentación
+
+| Documento                                                                       | Ubicación                                                                    |
+|--------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| **OS_DIRECTORY.md**                                                             | Raíz — JARVIS discovery                                                      |
+| **AGENTS.md**                                                                   | `00_Winter_is_Coming/AGENTS.md`                                              |
+| **RULES_INDEX**                                                                 | `01_Personal_Os/01_Core/01_Rules/RULES_INDEX.md`                             |
+| **Skills README**                                                               | `01_Personal_Os/01_Core/02_Tools/02_Skills/README.md`                        |
+| **Scripts INDEX**                                                               | `01_Personal_Os/04_Operations/03_Scripts_Os/SCRIPTS_INDEX.md`                |
+| **OS_DIRECTORY** (este archivo)                                                 | Raíz                                                                         |
+
+---
+
+## 🤝 Metodologías Integradas
+
+| Metodología                                                                     | Propósito                                                      | Comando                              |
+|--------------------------------------------------------------------------------|---------------------------------------------------------------|-------------------------------------|
+| **SDD**                                                                         | Desarrollo guiado por specs (9 fases)                          | `/sdd-*`                             |
+| **Super Campeones**                                                             | Orquestación de agentes en equipo                              | Activado por defecto                 |
+| **Compound Engineering**                                                        | Cada unidad facilita la siguiente                              | `/ce:*`                              |
+| **GGA**                                                                         | Code review automático pre-commit                              | `.agent/05_GGA/bin/gga`              |
+| **Auto-Improvement**                                                            | Detección y corrección recursiva de issues                     | `04_Operations/`                     |
+
+---
+
+## 🎯 Workflow Diario
+
+1. **Inicio de sesión**: `engram_mem_context()` + leer GOALS.md
+2. **Trabajo**: Usar SDD commands para tareas complejas
+3. **Review**: GGA valida código automáticamente
+4. **Cierre**: `engram_mem_session_summary()`
+
+---
+
+## 📄 Licencia
+
+CC BY-NC-SA 4.0 - Uso no comercial permitido.
+
+---
+
+_Think Different PersonalOS v4.9 Consequences — Production Ready ✅ — 2026-05-31_
+
+*Estructura completa: ver `Structure_v4.9.md`*

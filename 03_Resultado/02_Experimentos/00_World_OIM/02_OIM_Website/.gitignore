@@ -1,0 +1,55 @@
+# Next.js
+.next/
+out/
+build/
+
+# Dependencies
+node_modules/
+
+# Env
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Vercel
+.vercel
+
+# PersonalOS (never commit these)
+00_Winter_is_Coming/
+01_Core/
+02_Knowledge/
+03_Tasks/
+04_Operations/
+05_Archive/
+06_Playground/
+07_Projects/
+04_Operations/03_Scripts_Os/
+.agent/
+.atl/
+.claude/
+.claude-plugin/
+.opencode/
+.playwright-mcp/
+.gga
+.gitmodules
+Now/
+AGENTS.md
+CHANGELOG.md
+CLAUDE.md
+Learning_Always.md
+Plan_Claude.md
+README_PersonalOS.md

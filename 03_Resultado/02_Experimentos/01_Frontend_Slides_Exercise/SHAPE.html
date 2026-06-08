@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHAPE — Presentación IA SOTA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* =============================================
+       SHAPE — Visual Reference for IA Slides
+       Following Dumbledor + Impeccable Style
+       ============================================= */
+
+    :root {
+      --navy: #1E2530;
+      --navy-light: #2A323D;
+      --white: #FFFFFF;
+      --orange: #FF6B35;
+      --border: #414B5A;
+      --gray: #6B7785;
+      --gray-dark: #3D4654;
+      --navy-gradient: linear-gradient(135deg, var(--navy) 0%, #151A21 100%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-snap-type: y mandatory;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* =============================================
+       SLIDE — Full viewport container
+       ============================================= */
+    .slide {
+      height: 100vh;
+      width: 100%;
+      padding: 48px 64px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      scroll-snap-align: start;
+      overflow: hidden;
+    }
+
+    .slide::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--navy-gradient);
+      z-index: 0;
+    }
+
+    .slide > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* =============================================
+       HEADER — Badge + Topic
+       ============================================= */
+    .slide-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 40px;
+      opacity: 0;
+      animation: fadeInUp 0.6s ease-out forwards;
+      animation-delay: 0.1s;
+    }
+
+    .badge {
+      background: var(--orange);
+      color: var(--white);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 4px;
+    }
+
+    .slide-topic {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--gray);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* =============================================
+       TYPOGRAPHY — 3 Level Hierarchy (Dumbledor)
+       ============================================= */
+
+    /* Level 1: Impact Brutal */
+    .headline {
+      font-size: clamp(48px, 6vw, 72px);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      line-height: 0.95;
+      margin-bottom: 32px;
+      max-width: 900px;
+      opacity: 0;
+      animation: fadeInUp 0.6s ease-out forwards;
+      animation-delay: 0.2s;
+    }
+
+    .headline .accent {
+      color: var(--orange);
+    }
+
+    /* Level 2: Anclaje */
+    .statement {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 48px;
+      max-width: 700px;
+      line-height: 1.4;
+      opacity: 0;
+      animation: fadeInUp 0.6s ease-out forwards;
+      animation-delay: 0.3s;
+    }
+
+    /* Level 3: Refinamiento */
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px 32px;
+      max-width: 800px;
+      background: rgba(42, 50, 61, 0.5);
+      backdrop-filter: blur(10px);
+      opacity: 0;
+      animation: fadeInUp 0.6s ease-out forwards;
+      animation-delay: 0.4s;
+    }
+
+    .card-body {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .card-highlight {
+      color: var(--orange);
+      font-weight: 500;
+    }
+
+    /* =============================================
+       COMPONENTS
+       ============================================= */
+
+    /* Key Points */
+    .key-points {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .key-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .key-point::before {
+      content: '→';
+      color: var(--orange);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* Divider */
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: var(--orange);
+      margin: 24px 0;
+    }
+
+    /* Quote */
+    .quote-text {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.9);
+      max-width: 800px;
+      border-left: 3px solid var(--orange);
+      padding-left: 24px;
+      font-style: italic;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 40px;
+      max-width: 900px;
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 56px;
+      font-weight: 900;
+      color: var(--orange);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--gray);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Number Accent (Background) */
+    .number-accent {
+      font-size: 280px;
+      font-weight: 900;
+      color: var(--white);
+      position: absolute;
+      right: -20px;
+      bottom: -40px;
+      line-height: 1;
+      opacity: 0.03;
+      z-index: 0;
+    }
+
+    /* Footer */
+    .slide-footer {
+      margin-top: auto;
+      padding-top: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--border);
+    }
+
+    .slide-number {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--gray);
+    }
+
+    .slide-meta {
+      font-size: 12px;
+      color: var(--gray);
+      display: flex;
+      gap: 24px;
+    }
+
+    /* =============================================
+       SLIDE VARIANTS
+       ============================================= */
+
+    /* Variant: Centered/Quote */
+    .slide.centered {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .slide.centered .headline {
+      max-width: 100%;
+    }
+
+    .slide.centered .divider {
+      margin: 0 auto 40px;
+    }
+
+    .slide.centered .statement {
+      max-width: 800px;
+    }
+
+    /* Variant: Darker Background */
+    .slide.dark {
+      background: #151A21;
+    }
+
+    /* Variant: With Visual Element */
+    .slide.visual-left .visual-element {
+      position: absolute;
+      left: 64px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 300px;
+      height: 300px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 120px;
+      font-weight: 900;
+      color: var(--orange);
+      opacity: 0.15;
+    }
+
+    .slide.visual-left .content {
+      margin-left: 400px;
+    }
+
+    /* =============================================
+       ANIMATIONS
+       ============================================= */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* =============================================
+       NAVIGATION — Slide indicators
+       ============================================= */
+    .nav-dots {
+      position: fixed;
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 100;
+    }
+
+    .nav-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--border);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .nav-dot:hover,
+    .nav-dot.active {
+      background: var(--orange);
+      transform: scale(1.3);
+    }
+
+    /* =============================================
+       SCROLL HINT
+       ============================================= */
+    .scroll-hint {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: var(--gray);
+      font-size: 12px;
+      animation: bounce 2s infinite;
+      z-index: 100;
+    }
+
+    .scroll-hint svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(10px); }
+    }
+
+    /* =============================================
+       RESPONSIVE
+       ============================================= */
+    @media (max-width: 768px) {
+      .slide {
+        padding: 32px 24px;
+      }
+
+      .headline {
+        font-size: 36px;
+      }
+
+      .statement {
+        font-size: 18px;
+      }
+
+      .card {
+        padding: 20px;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .stat-value {
+        font-size: 40px;
+      }
+
+      .nav-dots {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Dots -->
+  <nav class="nav-dots">
+    <div class="nav-dot active" onclick="scrollToSlide(0)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(1)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(2)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(3)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(4)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(5)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(6)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(7)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(8)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(9)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(10)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(11)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(12)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(13)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(14)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(15)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(16)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(17)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(18)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(19)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(20)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(21)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(22)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(23)"></div>
+    <div class="nav-dot" onclick="scrollToSlide(24)"></div>
+  </nav>
+
+  <!-- Scroll Hint -->
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 5v14M19 12l-7 7-7-7"/>
+    </svg>
+  </div>
+
+  <!-- =============================================
+       SLIDE 01: Standard — Machine Learning
+       Reference: IMG_4703 style
+       ============================================= -->
+  <section class="slide" id="slide-1">
+    <div class="slide-header">
+      <span class="badge">Machine Learning</span>
+      <span class="slide-topic">Slide 01 / 25</span>
+    </div>
+
+    <h1 class="headline">
+      EL MODELO APRENDE<br>
+      A DETECTA<span class="accent">R</span><br>
+      PATRONES
+    </h1>
+
+    <p class="statement">
+      Redes neuronales profundas identifican correlaciones invisibles para el ojo humano en millones de ejemplos.
+    </p>
+
+    <div class="card">
+      <p class="card-body">
+        Cuando entrenamos un modelo con <span class="card-highlight">100M+ parámetros</span>, emerge la capacidad de generalizar. No memoriza — aprende representaciones abstractas que transferimos a problemas nuevos.
+      </p>
+      <div class="key-points">
+        <div class="key-point">Backpropagation ajusta pesos mediante gradientes descendentes</div>
+        <div class="key-point">Regularización previene overfitting en datos de entrenamiento</div>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="slide-number">01</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">01</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 02: Quote — Scaling
+       Reference: IMG_4704 style
+       ============================================= -->
+  <section class="slide centered dark" id="slide-2">
+    <h1 class="headline">
+      LA POTENCIA VIENE DE<br>
+      ESCALA<span class="accent">R</span><br>
+      PARAMETROS
+    </h1>
+
+    <div class="divider"></div>
+
+    <p class="statement">
+      "Con 175B parámetros, GPT-3 demostró que más compute = más generalidad. La sorpresa: no necesitábamos arquitectura nueva — solo más de lo mismo."
+    </p>
+
+    <div class="slide-footer">
+      <span class="slide-number">02</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">02</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 03: Stats — Scaling Laws
+       Reference: IMG_4705 style
+       ============================================= -->
+  <section class="slide" id="slide-3">
+    <div class="slide-header">
+      <span class="badge">Scaling Laws</span>
+      <span class="slide-topic">Slide 03 / 25</span>
+    </div>
+
+    <h1 class="headline">
+      POR QUÉ EL<br>
+      SCALING<br>
+      <span class="accent">FUNCIONA</span>
+    </h1>
+
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-value">175B</div>
+        <div class="stat-label">Parámetros GPT-3</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">1M+</div>
+        <div class="stat-label">Tokens en contexto</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">99.2%</div>
+        <div class="stat-label">Precisión humana</div>
+      </div>
+    </div>
+
+    <p class="statement" style="margin-top: 48px;">
+      Los modelos grandes generalizan mejor porque pueden representar más funciones simultáneamente.
+    </p>
+
+    <div class="slide-footer">
+      <span class="slide-number">03</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">03</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 04: Visual Element — Transformers
+       Reference: IMG_4706 style
+       ============================================= -->
+  <section class="slide visual-left" id="slide-4">
+    <div class="slide-header">
+      <span class="badge">Architecture</span>
+      <span class="slide-topic">Slide 04 / 25</span>
+    </div>
+
+    <div class="content">
+      <h1 class="headline">
+        ATTENTION<br>
+        IS ALL YOU<br>
+        <span class="accent">NEED</span>
+      </h1>
+
+      <p class="statement">
+        El mecanismo de atención permite al modelo enfocarse en las partes relevantes de la entrada, sin importar la distancia entre ellas.
+      </p>
+
+      <div class="card">
+        <p class="card-body">
+          <span class="card-highlight">Transformers</span> reemplazaron RNNs y LSTMs porque procesan secuencias en paralelo y capturan dependencias de largo alcance con eficiencia.
+        </p>
+        <div class="key-points">
+          <div class="key-point">Multi-head attention: múltiples perspectivas simultáneas</div>
+          <div class="key-point">Positional encoding: orden sin recurrencia</div>
+          <div class="key-point">Feed-forward layers: transformación no lineal</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="visual-element">T</div>
+
+    <div class="slide-footer">
+      <span class="slide-number">04</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">04</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 05: Centered Quote — Philosophy
+       Reference: IMG_4707 style
+       ============================================= -->
+  <section class="slide centered" id="slide-5">
+    <span class="badge">Philosophy</span>
+
+    <h1 class="headline" style="margin-top: 40px;">
+      LOS MODELOS<br>
+      APRENDEN<br>
+      <span class="accent">CONTEXTO</span>
+    </h1>
+
+    <div class="divider"></div>
+
+    <p class="quote-text">
+      "No memorizan palabras — memorizan patrones de relaciones entre conceptos. El próximo token es simplemente la continuación lógica."
+    </p>
+
+    <div class="slide-footer">
+      <span class="slide-number">05</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">05</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 06: Deep Learning
+       ============================================= -->
+  <section class="slide" id="slide-6">
+    <div class="slide-header">
+      <span class="badge">Deep Learning</span>
+      <span class="slide-topic">Slide 06 / 25</span>
+    </div>
+
+    <h1 class="headline">
+      CAPAS PROFUNDAS,<br>
+      <span class="accent">MAYOR</span><br>
+      ABSTRACCIÓN
+    </h1>
+
+    <p class="statement">
+      Las redes neuronales profundas apilan capas para construir representaciones cada vez más abstractas de los datos.
+    </p>
+
+    <div class="card">
+      <p class="card-body">
+        Cada capa transforma la salida de la anterior. Las primeras capas detectan bordes y texturas; las últimas reconocen conceptos complejos como "gato" o "conversación".
+      </p>
+      <div class="key-points">
+        <div class="key-point">Feature hierarchy: jerarquía de representaciones aprendidas</div>
+        <div class="key-point">Gradient flow: backpropagation atraviesa todas las capas</div>
+        <div class="key-point">Transfer learning: capas pre-entrenadas reutilizables</div>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="slide-number">06</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">06</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 07: Fine-tuning
+       ============================================= -->
+  <section class="slide centered dark" id="slide-7">
+    <div class="slide-header">
+      <span class="badge">Fine-tuning</span>
+      <span class="slide-topic">Slide 07 / 25</span>
+    </div>
+
+    <h1 class="headline">
+      ADAPTA EL<br>
+      MODELO A TU<br>
+      <span class="accent">DOMINIO</span>
+    </h1>
+
+    <div class="divider"></div>
+
+    <p class="statement">
+      "Fine-tuning toma un modelo pre-entrenado y lo ajusta con datos específicos del problema. 1% del costo de entrenar desde cero — 90% de la performance."
+    </p>
+
+    <div class="slide-footer">
+      <span class="slide-number">07</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">07</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 08: RAG Systems
+       ============================================= -->
+  <section class="slide visual-left" id="slide-8">
+    <div class="slide-header">
+      <span class="badge">RAG Systems</span>
+      <span class="slide-topic">Slide 08 / 25</span>
+    </div>
+
+    <div class="content">
+      <h1 class="headline">
+        RETRIEVE +<br>
+        GENERATE =<br>
+        <span class="accent">RAG</span>
+      </h1>
+
+      <p class="statement">
+        Retrieval-Augmented Generation combina búsqueda de documentos con generación de texto para respuestas basadas en evidencia.
+      </p>
+
+      <div class="card">
+        <p class="card-body">
+          El modelo primero recupera chunks relevantes de tu base de conocimiento, luego genera respuestas citando fuentes específicas.
+        </p>
+        <div class="key-points">
+          <div class="key-point">Vector search encuentra documentos semánticamente similares</div>
+          <div class="key-point">Context window del modelo limita la cantidad de chunks</div>
+          <div class="key-point">Grounded responses reducen alucinaciones significativamente</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="visual-element">R</div>
+
+    <div class="slide-footer">
+      <span class="slide-number">08</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">08</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 09: Embeddings
+       ============================================= -->
+  <section class="slide" id="slide-9">
+    <div class="slide-header">
+      <span class="badge">Embeddings</span>
+      <span class="slide-topic">Slide 09 / 25</span>
+    </div>
+
+    <h1 class="headline">
+      DE TEXTO A<br>
+      <span class="accent">VECTORES</span>
+    </h1>
+
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-value">1536</div>
+        <div class="stat-label">Dimensiones GPT-3</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">3072</div>
+        <div class="stat-label">Dimensiones GPT-4</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">4096</div>
+        <div class="stat-label">Dimensiones Claude</div>
+      </div>
+    </div>
+
+    <p class="statement" style="margin-top: 48px;">
+      Los embeddings representan conceptos como puntos en un espacio vectorial. Textos similares quedan cerca en este espacio.
+    </p>
+
+    <div class="slide-footer">
+      <span class="slide-number">09</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">09</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 10: Vector Databases
+       ============================================= -->
+  <section class="slide centered" id="slide-10">
+    <span class="badge">Vector Databases</span>
+
+    <h1 class="headline" style="margin-top: 40px;">
+      BÚSQUEDA<br>
+      SEMÁNTICA<br>
+      <span class="accent">ESCALABLE</span>
+    </h1>
+
+    <div class="divider"></div>
+
+    <p class="quote-text">
+      "Pinecone, Weaviate, Chroma — almacenar embeddings y buscar por similaridad en milisegundos sobre millones de vectores."
+    </p>
+
+    <div class="slide-footer">
+      <span class="slide-number">10</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">10</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 11: Prompt Engineering
+       ============================================= -->
+  <section class="slide" id="slide-11">
+    <div class="slide-header">
+      <span class="badge">Prompt Engineering</span>
+      <span class="slide-topic">Slide 11 / 25</span>
+    </div>
+
+    <h1 class="headline">
+      INSTRUYE AL<br>
+      MODELO CON<br>
+      <span class="accent">PRECISIÓN</span>
+    </h1>
+
+    <p class="statement">
+      La forma en que escribes el prompt impacta directamente la calidad de las respuestas.few-shot vs zero-shot vs chain-of-thought.
+    </p>
+
+    <div class="card">
+      <p class="card-body">
+        Un buen prompt incluye: <span class="card-highlight">contexto</span>, <span class="card-highlight">ejemplos</span>, <span class="card-highlight">formato de salida</span> y <span class="card-highlight">restricciones</span>. Iterar sobre el prompt es más barato que re-entrenar.
+      </p>
+      <div class="key-points">
+        <div class="key-point">Clear instructions: qué quieres y cómo lo quieres</div>
+        <div class="key-point">Role assignment: "eres un experto en..."</div>
+        <div class="key-point">Output formatting: JSON, markdown, bullet points</div>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="slide-number">11</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">11</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 12: Chain of Thought
+       ============================================= -->
+  <section class="slide centered dark" id="slide-12">
+    <div class="slide-header">
+      <span class="badge">Chain of Thought</span>
+      <span class="slide-topic">Slide 12 / 25</span>
+    </div>
+
+    <h1 class="headline">
+      PIENSA PASO<br>
+      A PASO,<br>
+      <span class="accent">RAZONA</span>
+    </h1>
+
+    <div class="divider"></div>
+
+    <p class="statement">
+      "Agregar 'let's think step by step' activa el reasoning interno del modelo. El output mejora dramáticamente en tareas lógicas y matemáticas."
+    </p>
+
+    <div class="slide-footer">
+      <span class="slide-number">12</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">12</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 13: Zero-shot / Few-shot
+       ============================================= -->
+  <section class="slide visual-left" id="slide-13">
+    <div class="slide-header">
+      <span class="badge">Learning Modes</span>
+      <span class="slide-topic">Slide 13 / 25</span>
+    </div>
+
+    <div class="content">
+      <h1 class="headline">
+        ZERO-SHOT<br>
+        VS<br>
+        <span class="accent">FEW-SHOT</span>
+      </h1>
+
+      <p class="statement">
+        Zero-shot: sin ejemplos, el modelo infiere de la instrucción. Few-shot: con 2-5 ejemplos, el modelo aprende el patrón.
+      </p>
+
+      <div class="card">
+        <p class="card-body">
+          <span class="card-highlight">Zero-shot</span> es más rápido y flexible. <span class="card-highlight">Few-shot</span> funciona mejor para tareas complejas o con formatos específicos.
+        </p>
+        <div class="key-points">
+          <div class="key-point">Zero-shot: "Clasifica este review como positivo/negativo"</div>
+          <div class="key-point">Few-shot: 3 ejemplos de reviews + respuestas correctas</div>
+          <div class="key-point">K-shot: balance entre ejemplos y context window</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="visual-element">Z</div>
+
+    <div class="slide-footer">
+      <span class="slide-number">13</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">13</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 14: Hallucinations
+       ============================================= -->
+  <section class="slide" id="slide-14">
+    <div class="slide-header">
+      <span class="badge">Hallucinations</span>
+      <span class="slide-topic">Slide 14 / 25</span>
+    </div>
+
+    <h1 class="headline">
+      CUANDO EL<br>
+      MODELO<br>
+      <span class="accent">INVENTA</span>
+    </h1>
+
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-value">15%</div>
+        <div class="stat-label">Errores en producción</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">3x</div>
+        <div class="stat-label">Mayor con contexto limitado</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">-70%</div>
+        <div class="stat-label">Con RAG + citations</div>
+      </div>
+    </div>
+
+    <p class="statement" style="margin-top: 48px;">
+      Las alucinaciones ocurren cuando el modelo genera información falsa con alta confianza. RAG y fact-checking son mitigaciones clave.
+    </p>
+
+    <div class="slide-footer">
+      <span class="slide-number">14</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">14</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 15: Evaluation Metrics
+       ============================================= -->
+  <section class="slide centered" id="slide-15">
+    <span class="badge">Evaluation Metrics</span>
+
+    <h1 class="headline" style="margin-top: 40px;">
+      MIDE LO QUE<br>
+      IMPORT<span class="accent">A</span>
+    </h1>
+
+    <div class="divider"></div>
+
+    <p class="quote-text">
+      "BLEU, ROUGE, METEOR para NLP clásico. GEval, LlamaIndex benchmarks para LLMs. Human preference como gold standard."
+    </p>
+
+    <div class="slide-footer">
+      <span class="slide-number">15</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">15</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 16: LLM Leaders 2024
+       ============================================= -->
+  <section class="slide" id="slide-16">
+    <div class="slide-header">
+      <span class="badge">LLM Leaders 2024</span>
+      <span class="slide-topic">Slide 16 / 25</span>
+    </div>
+
+    <h1 class="headline">
+      QUIÉN DOMINA<br>
+      EL<br>
+      <span class="accent">PANORAMA</span>
+    </h1>
+
+    <p class="statement">
+      OpenAI, Anthropic, Google, Meta y Mistral lideran el desarrollo de LLMs. Cada uno con fortalezas distintas.
+    </p>
+
+    <div class="card">
+      <p class="card-body">
+        <span class="card-highlight">OpenAI</span>: benchmark dominante. <span class="card-highlight">Anthropic</span>: safety y long context. <span class="card-highlight">Google</span>: multimodal integrado. <span class="card-highlight">Meta</span>: open source fuerte.
+      </p>
+      <div class="key-points">
+        <div class="key-point">GPT-4: el estándar de la industria</div>
+        <div class="key-point">Claude 3: konteks de 200K tokens</div>
+        <div class="key-point">Gemini Ultra: multimodal nativo</div>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="slide-number">16</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">16</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 17: OpenAI GPT-4
+       ============================================= -->
+  <section class="slide centered dark" id="slide-17">
+    <div class="slide-header">
+      <span class="badge">OpenAI GPT-4</span>
+      <span class="slide-topic">Slide 17 / 25</span>
+    </div>
+
+    <h1 class="headline">
+      EL<br>
+      <span class="accent">PADRINO</span>
+    </h1>
+
+    <div class="divider"></div>
+
+    <p class="statement">
+      "GPT-4 estableció el estado del arte en razonamiento, creatividad y seguridad. 1Trillion parámetros estimados, context de 128K tokens."
+    </p>
+
+    <div class="slide-footer">
+      <span class="slide-number">17</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">17</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 18: Anthropic Claude
+       ============================================= -->
+  <section class="slide visual-left" id="slide-18">
+    <div class="slide-header">
+      <span class="badge">Anthropic Claude</span>
+      <span class="slide-topic">Slide 18 / 25</span>
+    </div>
+
+    <div class="content">
+      <h1 class="headline">
+        EL ENFOQUE<br>
+        EN<br>
+        <span class="accent">SAFETY</span>
+      </h1>
+
+      <p class="statement">
+        Claude prioriza la seguridad y la ayuda mutua. Su contexto de 200K tokens lo hace ideal para análisis de documentos extensos.
+      </p>
+
+      <div class="card">
+        <p class="card-body">
+          <span class="card-highlight">Constitutional AI</span> entrena al modelo con principios éticos explícitos. <span class="card-highlight">Haiku/Sonnet/Opus</span>: tiers para diferentes necesidades.
+        </p>
+        <div class="key-points">
+          <div class="key-point">200K token context window</div>
+          <div class="key-point">Strong reasoning y análisis largo</div>
+          <div class="key-point">Claude 3 Opus: mejor que GPT-4 en benchmarks</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="visual-element">C</div>
+
+    <div class="slide-footer">
+      <span class="slide-number">18</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">18</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 19: Google Gemini
+       ============================================= -->
+  <section class="slide" id="slide-19">
+    <div class="slide-header">
+      <span class="badge">Google Gemini</span>
+      <span class="slide-topic">Slide 19 / 25</span>
+    </div>
+
+    <h1 class="headline">
+      MULTIMODAL<br>
+      <span class="accent">NATIVO</span>
+    </h1>
+
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-value">1M</div>
+        <div class="stat-label">Tokens contexto</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">V1.5</div>
+        <div class="stat-label">Ultra en benchmarks</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">TPU</div>
+        <div class="stat-label">Hardware propio</div>
+      </div>
+    </div>
+
+    <p class="statement" style="margin-top: 48px;">
+      Gemini procesa texto, imágenes, audio y video de forma nativa. Integrado en Google Workspace y Cloud.
+    </p>
+
+    <div class="slide-footer">
+      <span class="slide-number">19</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">19</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 20: Open Source Models
+       ============================================= -->
+  <section class="slide centered" id="slide-20">
+    <span class="badge">Open Source</span>
+
+    <h1 class="headline" style="margin-top: 40px;">
+      LA COMUNIDAD<br>
+      CONTRA<br>
+      <span class="accent">ATACA</span>
+    </h1>
+
+    <div class="divider"></div>
+
+    <p class="quote-text">
+      "LLaMA 3, Mistral, Falcon — modelos open source que igualan o superan a GPT-3.5 en muchas tareas. Fine-tunable, deployable on-premise."
+    </p>
+
+    <div class="slide-footer">
+      <span class="slide-number">20</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">20</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 21: Local Deployment
+       ============================================= -->
+  <section class="slide" id="slide-21">
+    <div class="slide-header">
+      <span class="badge">Local Deployment</span>
+      <span class="slide-topic">Slide 21 / 25</span>
+    </div>
+
+    <h1 class="headline">
+      TU PROPIO<br>
+      <span class="accent">LLM</span>
+    </h1>
+
+    <p class="statement">
+      Ollama, LM Studio, vLLM permiten correr modelos localmente. Privacy first, no-latency, costo fijo.
+    </p>
+
+    <div class="card">
+      <p class="card-body">
+        Hardware actual soporta 7B-13B parámetros en local con buena velocidad. 70B+ requiere múltiples GPUs o quantization agresivo.
+      </p>
+      <div class="key-points">
+        <div class="key-point">Ollama: one-command local deployment</div>
+        <div class="key-point">GGUF format: quantization para hardware limitado</div>
+        <div class="key-point">Mistral 7B: mejor performance por parámetro</div>
+      </div>
+    </div>
+
+    <div class="slide-footer">
+      <span class="slide-number">21</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">21</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 22: Cost Analysis
+       ============================================= -->
+  <section class="slide centered dark" id="slide-22">
+    <div class="slide-header">
+      <span class="badge">Cost Analysis</span>
+      <span class="slide-topic">Slide 22 / 25</span>
+    </div>
+
+    <h1 class="headline">
+      EL COSTO DE<br>
+      LA<br>
+      <span class="accent">INTELIGENCIA</span>
+    </h1>
+
+    <div class="divider"></div>
+
+    <p class="statement">
+      "GPT-4: $30/M tokens input, $60/M output. Claude 3: $15/M input. LLaMA 3 local: $0 directo. El trade-off es claro."
+    </p>
+
+    <div class="slide-footer">
+      <span class="slide-number">22</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">22</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 23: Use Cases by Industry
+       ============================================= -->
+  <section class="slide visual-left" id="slide-23">
+    <div class="slide-header">
+      <span class="badge">Use Cases</span>
+      <span class="slide-topic">Slide 23 / 25</span>
+    </div>
+
+    <div class="content">
+      <h1 class="headline">
+        LLM POR<br>
+        <span class="accent">INDUSTRIA</span>
+      </h1>
+
+      <p class="statement">
+        Healthcare, legal, finance, education — cada sector adapta LLMs a sus necesidades específicas.
+      </p>
+
+      <div class="card">
+        <p class="card-body">
+          <span class="card-highlight">Healthcare</span>: clinical notes, drug interactions. <span class="card-highlight">Legal</span>: contract review, case law. <span class="card-highlight">Finance</span>: fraud detection, reports.
+        </p>
+        <div class="key-points">
+          <div class="key-point">Education: personalized tutoring y feedback</div>
+          <div class="key-point">Customer service: 24/7 concontextual awareness</div>
+          <div class="key-point">Software: code generation y review automatizado</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="visual-element">U</div>
+
+    <div class="slide-footer">
+      <span class="slide-number">23</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">23</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 24: Future Trends
+       ============================================= -->
+  <section class="slide" id="slide-24">
+    <div class="slide-header">
+      <span class="badge">Future Trends</span>
+      <span class="slide-topic">Slide 24 / 25</span>
+    </div>
+
+    <h1 class="headline">
+      QUÉ VIENE<br>
+      <span class="accent">DESPUÉS</span>
+    </h1>
+
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-value">Agents</div>
+        <div class="stat-label">Autonomous task completion</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">MCP</div>
+        <div class="stat-label">Model Context Protocol</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">Multimodal</div>
+        <div class="stat-label">Text, image, audio, video</div>
+      </div>
+    </div>
+
+    <p class="statement" style="margin-top: 48px;">
+      Agents que planifican y ejecutan. Plugins que conectan a herramientas externas. Modelos que razonan sobre cualquier tipo de input.
+    </p>
+
+    <div class="slide-footer">
+      <span class="slide-number">24</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">24</div>
+  </section>
+
+  <!-- =============================================
+       SLIDE 25: Resources & Links
+       ============================================= -->
+  <section class="slide centered" id="slide-25">
+    <span class="badge">Resources & Links</span>
+
+    <h1 class="headline" style="margin-top: 40px;">
+      CONTINÚA<br>
+      APRENDI<span class="accent">ENDO</span>
+    </h1>
+
+    <div class="divider"></div>
+
+    <p class="quote-text">
+      " papers.lens.systems — State of LLM. Anthropic blog. OpenAI research. Hugging Face. LangChain docs. r/LocalLLaMA."
+    </p>
+
+    <div class="slide-footer">
+      <span class="slide-number">25</span>
+      <div class="slide-meta">
+        
+        <span>IA Moderna</span>
+      </div>
+    </div>
+
+    <div class="number-accent">25</div>
+  </section>
+
+  <script>
+    // =============================================
+    // NAVIGATION — Scroll to slide
+    // =============================================
+    function scrollToSlide(index) {
+      const slide = document.getElementById(`slide-${index + 1}`);
+      if (slide) {
+        slide.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Update active dot on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const slideNum = entry.target.id.split('-')[1];
+          document.querySelectorAll('.nav-dot').forEach((dot, i) => {
+            dot.classList.toggle('active', i === parseInt(slideNum) - 1);
+          });
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.slide').forEach(slide => {
+      observer.observe(slide);
+    });
+
+    // Hide scroll hint when scrolling starts
+    let hasScrolled = false;
+    window.addEventListener('scroll', () => {
+      if (!hasScrolled) {
+        hasScrolled = true;
+        document.querySelector('.scroll-hint').style.opacity = '0';
+      }
+    }, { once: true });
+  </script>
+
+</body>
+</html>
