@@ -310,6 +310,12 @@
     "vercel": {
       "transport": "streamableHttp",
       "url": "https://mcp.vercel.com"
+    },
+
+    "magnific": {
+      "_comment": "Image generation AI with character consistency - 4 methods for consistent visuals",
+      "transport": "streamableHttp",
+      "url": "https://mcp.magnific.com"
     }
   }
 }
