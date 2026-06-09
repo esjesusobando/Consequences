@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marketing Preview — Audio Pipeline Simulator</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --void: #04060A;
@@ -17,10 +17,33 @@
       --bone: #C7CCD8;
       --paper: #ECEEF5;
       --pure: #FFFFFF;
-      --signal-green: #22c55e;
-      --signal-blue: #3b82f6;
-      --signal-red: #ef4444;
-      --signal-amber: #f59e0b;
+      /* Signal Colors — Consequences DS */
+      --cyan: #00F0FF;
+      --magenta: #FF2E9A;
+      --lime: #C6FF3D;
+      --amber: #FFB400;
+      /* Aliases for compat */
+      --signal-green: var(--lime);
+      --signal-blue: var(--cyan);
+      --signal-red: var(--magenta);
+      --signal-amber: var(--amber);
+      /* Glow effects */
+      --glow-cyan: 0 0 8px rgba(0,240,255,0.6), 0 0 24px rgba(0,240,255,0.2);
+      --glow-magenta: 0 0 8px rgba(255,46,154,0.6), 0 0 24px rgba(255,46,154,0.2);
+      --glow-lime: 0 0 8px rgba(198,255,61,0.6), 0 0 24px rgba(198,255,61,0.2);
+      --glow-amber: 0 0 8px rgba(255,180,0,0.6), 0 0 24px rgba(255,180,0,0.2);
+      --accent: var(--cyan);
+      --glow-accent: var(--glow-cyan);
+    }
+
+    /* Scanline overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.04) 2px, rgba(0,0,0,0.04) 4px);
+      pointer-events: none;
+      z-index: 9999;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -37,7 +60,7 @@
     .header {
       background: var(--night);
       border-bottom: 1px solid var(--graphite);
-      padding: 20px 40px;
+      padding: 16px 40px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -46,16 +69,62 @@
       z-index: 100;
     }
 
-    .header-title {
-      font-family: 'Space Grotesk', sans-serif;
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--paper);
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
 
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: conic-gradient(var(--cyan), var(--magenta), var(--lime), var(--cyan));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--void);
+      box-shadow: var(--glow-cyan);
+      flex-shrink: 0;
+    }
+
+    .header-titles {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--pure);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      position: relative;
+      display: inline-block;
+    }
+
+    .header-title::before,
+    .header-title::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      font-family: inherit; font-weight: inherit;
+      font-size: inherit; letter-spacing: inherit;
+    }
+    .header-title::before { color: var(--cyan); transform: translate(-2px, 0); clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%); opacity: 0.6; }
+    .header-title::after  { color: var(--magenta); transform: translate(2px, 0); clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%); opacity: 0.6; }
+
     .header-sub {
-      font-size: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
       color: var(--slate);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
       margin-top: 2px;
     }
 
@@ -70,11 +139,14 @@
       color: var(--bone);
       border: 1px solid var(--steel);
       padding: 8px 16px;
-      border-radius: 8px;
-      font-size: 13px;
+      border-radius: 2px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
       cursor: pointer;
-      font-family: 'Inter Tight', sans-serif;
-      transition: all 0.2s;
+      transition: all 0.15s;
     }
 
     .btn:hover {
@@ -83,14 +155,13 @@
     }
 
     .btn-primary {
-      background: var(--signal-blue);
-      border-color: var(--signal-blue);
-      color: white;
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--void);
+      box-shadow: var(--glow-accent);
     }
 
-    .btn-primary:hover {
-      background: #2563eb;
-    }
+    .btn-primary:hover { filter: brightness(1.15); transform: translateY(-1px); }
 
     /* ── Tabs ── */
     .tabs {
@@ -121,11 +192,13 @@
     }
 
     .tab-badge {
-      background: var(--graphite);
-      color: var(--ash);
-      font-size: 11px;
+      background: rgba(0,240,255,0.1);
+      color: var(--cyan);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
       padding: 2px 8px;
-      border-radius: 10px;
+      border-radius: 2px;
+      border: 1px solid rgba(0,240,255,0.3);
     }
 
     /* ── Main Layout ── */
@@ -143,12 +216,21 @@
     }
 
     .section-title {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 1.5px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--slate);
+      color: var(--accent);
       margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::before {
+      content: '//';
+      color: var(--slate);
     }
 
     /* ── LinkedIn Post ── */
@@ -565,9 +647,21 @@
       border: 1px solid var(--steel);
       color: var(--bone);
       padding: 8px 20px;
-      border-radius: 8px;
-      font-size: 13px;
+      border-radius: 2px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
       cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .carousel-nav button:hover {
+      background: var(--steel);
+      border-color: var(--accent);
+      color: var(--accent);
+      box-shadow: var(--glow-accent);
     }
 
     /* ── Sidebar ── */
@@ -767,9 +861,17 @@
 
   <!-- HEADER -->
   <header class="header">
-    <div>
-      <div class="header-title">🎙️ Marketing Preview — Audio Pipeline Simulator</div>
-      <div class="header-sub">Think Different OS × Consequences Design System</div>
+    <div class="header-brand">
+      <div class="logo-mark">C</div>
+      <div class="header-titles">
+        <div class="header-title" data-text="AUDIO PIPELINE">AUDIO PIPELINE</div>
+        <div class="header-sub">
+      Think Different OS × Consequences DS V1.0
+      <span class="live-badge" style="margin-left: 12px;">
+        <span class="live-dot"></span>SIGNAL 04
+      </span>
+    </div>
+      </div>
     </div>
     <div class="header-controls">
       <button class="btn" onclick="refreshPreview()">↻ Refresh</button>
@@ -1307,6 +1409,161 @@ Por eso el sistema de Lorena funciona — usa su voz, no la de otro. Y eso es lo
 
     // Auto-advance carousel
     setInterval(nextSlide, 3000);
+
+    // Accent controller
+    const accents = {
+      cyan:    { hex: '#00F0FF', glow: '0 0 8px rgba(0,240,255,0.6), 0 0 24px rgba(0,240,255,0.2)' },
+      magenta: { hex: '#FF2E9A', glow: '0 0 8px rgba(255,46,154,0.6), 0 0 24px rgba(255,46,154,0.2)' },
+      lime:    { hex: '#C6FF3D', glow: '0 0 8px rgba(198,255,61,0.6), 0 0 24px rgba(198,255,61,0.2)' },
+      amber:   { hex: '#FFB400', glow: '0 0 8px rgba(255,180,0,0.6), 0 0 24px rgba(255,180,0,0.2)' }
+    };
+
+    function setAccent(name) {
+      const a = accents[name];
+      document.documentElement.style.setProperty('--accent', a.hex);
+      document.documentElement.style.setProperty('--glow-accent', a.glow);
+      document.querySelectorAll('.ac-btn').forEach(b => b.classList.remove('active'));
+      const acBtn = document.getElementById('ac-' + name);
+      if (acBtn) acBtn.classList.add('active');
+    }
   </script>
+
+  <!-- Accent Controller -->
+  <div class="accent-controller">
+    <span class="ac-label">ACENTO</span>
+    <button class="ac-btn active" id="ac-cyan" style="background:var(--cyan)" onclick="setAccent('cyan')"></button>
+    <button class="ac-btn" id="ac-magenta" style="background:var(--magenta)" onclick="setAccent('magenta')"></button>
+    <button class="ac-btn" id="ac-lime" style="background:var(--lime)" onclick="setAccent('lime')"></button>
+    <button class="ac-btn" id="ac-amber" style="background:var(--amber)" onclick="setAccent('amber')"></button>
+  </div>
+
+  <style>
+    .accent-controller {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--carbon);
+      border: 1px solid var(--graphite);
+      border-radius: 4px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 200;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    }
+
+    .ac-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--slate);
+      text-transform: uppercase;
+    }
+
+    .ac-btn {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .ac-btn:hover { transform: scale(1.2); }
+    .ac-btn.active { border-color: white; box-shadow: 0 0 8px currentColor; }
+
+    /* Live badge */
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 3px 10px;
+      border: 1px solid var(--magenta);
+      border-radius: 2px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--magenta);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      box-shadow: var(--glow-magenta);
+    }
+
+    .live-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--magenta);
+      animation: live-pulse 1s ease-in-out infinite;
+    }
+
+    @keyframes live-pulse {
+      0%, 100% { box-shadow: var(--glow-magenta); }
+      50% { box-shadow: 0 0 4px rgba(255,46,154,0.3); }
+    }
+
+    /* Pill badges */
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 8px;
+      border-radius: 2px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .pill-cyan { border: 1px solid var(--cyan); color: var(--cyan); background: rgba(0,240,255,0.05); }
+    .pill-magenta { border: 1px solid var(--magenta); color: var(--magenta); background: rgba(255,46,154,0.05); }
+    .pill-lime { border: 1px solid var(--lime); color: var(--lime); background: rgba(198,255,61,0.05); }
+    .pill-amber { border: 1px solid var(--amber); color: var(--amber); background: rgba(255,180,0,0.05); }
+
+    /* Sidebar title fix */
+    .sidebar-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .sidebar-title::before {
+      content: '//';
+      color: var(--slate);
+    }
+
+    /* Status badges with glow */
+    .status-badge.done { background: rgba(198,255,61,0.15); color: var(--lime); box-shadow: var(--glow-lime); }
+    .status-badge.active { background: rgba(0,240,255,0.15); color: var(--cyan); box-shadow: var(--glow-cyan); }
+    .status-badge.pending { background: var(--graphite); color: var(--ash); }
+
+    /* Step icon glow */
+    .step-icon.done { background: var(--lime); color: var(--void); box-shadow: var(--glow-lime); }
+    .step-icon.active { background: var(--cyan); color: var(--void); box-shadow: var(--glow-cyan); }
+    .step-icon.pending { background: var(--graphite); color: var(--ash); }
+
+    /* Glow on signal elements */
+    .carousel-dot.active { background: var(--accent); box-shadow: var(--glow-accent); }
+    .tab.active { border-bottom-color: var(--accent); color: var(--paper); }
+    .post-action:hover { color: var(--accent); }
+    .twitter-action:hover { color: var(--accent); }
+    .btn-primary { background: var(--accent); border-color: var(--accent); color: var(--void); box-shadow: var(--glow-accent); }
+    .feed-platform.selected { background: var(--accent); border-color: var(--accent); color: var(--void); box-shadow: var(--glow-accent); }
+
+    /* Sidebar values */
+    .sidebar-value.green { color: var(--lime); text-shadow: 0 0 8px rgba(198,255,61,0.4); }
+    .sidebar-value.blue { color: var(--cyan); text-shadow: 0 0 8px rgba(0,240,255,0.4); }
+    .sidebar-value.amber { color: var(--amber); text-shadow: 0 0 8px rgba(255,180,0,0.4); }
+    .sidebar-trend { color: var(--lime); }
+
+    /* Glow on post stats */
+    .post-stats span { color: var(--ash); }
+  </style>
 </body>
 </html>
