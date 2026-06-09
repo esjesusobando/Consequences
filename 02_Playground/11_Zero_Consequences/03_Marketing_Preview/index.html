@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketing Preview — Audio Pipeline Simulator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --void: #04060A;
+      --night: #0B0F18;
+      --carbon: #131826;
+      --graphite: #1E2435;
+      --steel: #2A3148;
+      --slate: #4A5273;
+      --ash: #7A839E;
+      --bone: #C7CCD8;
+      --paper: #ECEEF5;
+      --pure: #FFFFFF;
+      --signal-green: #22c55e;
+      --signal-blue: #3b82f6;
+      --signal-red: #ef4444;
+      --signal-amber: #f59e0b;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--void);
+      color: var(--bone);
+      font-family: 'Inter Tight', system-ui, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    .header {
+      background: var(--night);
+      border-bottom: 1px solid var(--graphite);
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--paper);
+    }
+
+    .header-sub {
+      font-size: 12px;
+      color: var(--slate);
+      margin-top: 2px;
+    }
+
+    .header-controls {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn {
+      background: var(--graphite);
+      color: var(--bone);
+      border: 1px solid var(--steel);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+      font-family: 'Inter Tight', sans-serif;
+      transition: all 0.2s;
+    }
+
+    .btn:hover {
+      background: var(--steel);
+      border-color: var(--slate);
+    }
+
+    .btn-primary {
+      background: var(--signal-blue);
+      border-color: var(--signal-blue);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #2563eb;
+    }
+
+    /* ── Tabs ── */
+    .tabs {
+      display: flex;
+      gap: 0;
+      background: var(--night);
+      border-bottom: 1px solid var(--graphite);
+      padding: 0 40px;
+    }
+
+    .tab {
+      padding: 14px 24px;
+      font-size: 13px;
+      color: var(--ash);
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .tab:hover { color: var(--bone); }
+
+    .tab.active {
+      color: var(--paper);
+      border-bottom-color: var(--signal-blue);
+    }
+
+    .tab-badge {
+      background: var(--graphite);
+      color: var(--ash);
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+
+    /* ── Main Layout ── */
+    .main {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 0;
+      min-height: calc(100vh - 130px);
+    }
+
+    /* ── Preview Area ── */
+    .preview-area {
+      padding: 40px;
+      overflow-y: auto;
+    }
+
+    .section-title {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--slate);
+      margin-bottom: 20px;
+    }
+
+    /* ── LinkedIn Post ── */
+    .linkedin-card {
+      background: var(--night);
+      border: 1px solid var(--graphite);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+      max-width: 580px;
+    }
+
+    .linkedin-header {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      color: white;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .post-meta {
+      flex: 1;
+    }
+
+    .post-author {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--paper);
+    }
+
+    .post-author-sub {
+      font-size: 12px;
+      color: var(--ash);
+      margin-top: 1px;
+    }
+
+    .post-time {
+      font-size: 12px;
+      color: var(--slate);
+    }
+
+    .post-content {
+      font-size: 14px;
+      color: var(--bone);
+      line-height: 1.7;
+      white-space: pre-wrap;
+    }
+
+    .post-content .hashtag {
+      color: var(--signal-blue);
+    }
+
+    .post-image {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 16px;
+      border: 1px solid var(--graphite);
+    }
+
+    .post-image-placeholder {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, var(--carbon) 0%, var(--graphite) 100%);
+      border-radius: 8px;
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 8px;
+      border: 1px solid var(--steel);
+    }
+
+    .post-image-placeholder span {
+      font-size: 12px;
+      color: var(--ash);
+    }
+
+    .post-image-placeholder svg {
+      width: 32px;
+      height: 32px;
+      color: var(--slate);
+    }
+
+    .post-stats {
+      display: flex;
+      gap: 16px;
+      margin-top: 16px;
+      padding-top: 12px;
+      border-top: 1px solid var(--graphite);
+      font-size: 12px;
+      color: var(--ash);
+    }
+
+    .post-stats span { color: var(--slate); }
+
+    .post-actions {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid var(--graphite);
+    }
+
+    .post-action {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--ash);
+      font-size: 13px;
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+
+    .post-action:hover {
+      background: var(--graphite);
+      color: var(--bone);
+    }
+
+    .post-action svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* ── Twitter Thread ── */
+    .twitter-card {
+      background: var(--night);
+      border: 1px solid var(--graphite);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 16px;
+      max-width: 600px;
+    }
+
+    .twitter-header {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+
+    .twitter-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--steel);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--bone);
+    }
+
+    .twitter-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--paper);
+    }
+
+    .twitter-handle {
+      font-size: 13px;
+      color: var(--slate);
+    }
+
+    .twitter-badge {
+      background: var(--signal-blue);
+      color: white;
+      font-size: 10px;
+      padding: 1px 6px;
+      border-radius: 4px;
+      margin-left: 4px;
+    }
+
+    .twitter-content {
+      font-size: 15px;
+      color: var(--paper);
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+
+    .twitter-content .mention { color: var(--signal-blue); }
+    .twitter-content .hashtag { color: var(--signal-blue); }
+
+    .twitter-time {
+      font-size: 12px;
+      color: var(--slate);
+      margin-top: 8px;
+    }
+
+    .twitter-actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid var(--graphite);
+      max-width: 400px;
+    }
+
+    .twitter-action {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--slate);
+      font-size: 13px;
+      cursor: pointer;
+      padding: 6px 10px;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+
+    .twitter-action:hover { color: var(--ash); background: var(--graphite); }
+    .twitter-action svg { width: 16px; height: 16px; }
+
+    /* ── Newsletter ── */
+    .newsletter-card {
+      background: var(--night);
+      border: 1px solid var(--graphite);
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 24px;
+      max-width: 640px;
+    }
+
+    .newsletter-header {
+      text-align: center;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--graphite);
+    }
+
+    .newsletter-from {
+      font-size: 12px;
+      color: var(--slate);
+      margin-bottom: 16px;
+    }
+
+    .newsletter-subject {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--paper);
+      margin-bottom: 8px;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .newsletter-preview {
+      font-size: 13px;
+      color: var(--ash);
+    }
+
+    .newsletter-greeting {
+      font-size: 15px;
+      color: var(--bone);
+      margin-bottom: 20px;
+    }
+
+    .newsletter-section {
+      margin-bottom: 24px;
+    }
+
+    .newsletter-section-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--paper);
+      margin-bottom: 8px;
+    }
+
+    .newsletter-text {
+      font-size: 14px;
+      color: var(--bone);
+      line-height: 1.8;
+    }
+
+    .newsletter-cta {
+      display: inline-block;
+      background: var(--signal-blue);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      margin: 16px 0;
+    }
+
+    .newsletter-signature {
+      font-size: 14px;
+      color: var(--ash);
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--graphite);
+    }
+
+    .newsletter-ps {
+      font-size: 13px;
+      color: var(--slate);
+      margin-top: 16px;
+      font-style: italic;
+    }
+
+    /* ── Carousel Preview ── */
+    .carousel-container {
+      max-width: 540px;
+      margin-bottom: 32px;
+    }
+
+    .carousel-phone {
+      background: var(--carbon);
+      border: 1px solid var(--graphite);
+      border-radius: 24px;
+      padding: 12px;
+      display: inline-block;
+    }
+
+    .carousel-screen {
+      background: var(--void);
+      border-radius: 16px;
+      overflow: hidden;
+      width: 280px;
+      height: 560px;
+      position: relative;
+    }
+
+    .carousel-slide {
+      width: 100%;
+      height: 100%;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: var(--night);
+    }
+
+    .slide-number {
+      font-size: 11px;
+      color: var(--slate);
+      position: absolute;
+      top: 16px;
+      right: 16px;
+    }
+
+    .slide-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--paper);
+      margin-bottom: 12px;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .slide-body {
+      font-size: 13px;
+      color: var(--ash);
+      line-height: 1.6;
+    }
+
+    .slide-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--graphite);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .slide-icon svg { width: 24px; height: 24px; color: var(--signal-blue); }
+
+    .carousel-dots {
+      display: flex;
+      gap: 6px;
+      justify-content: center;
+      margin-top: 12px;
+    }
+
+    .carousel-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--steel);
+    }
+
+    .carousel-dot.active {
+      background: var(--signal-blue);
+      width: 24px;
+      border-radius: 4px;
+    }
+
+    .carousel-nav {
+      display: flex;
+      gap: 8px;
+      margin-top: 16px;
+      justify-content: center;
+    }
+
+    .carousel-nav button {
+      background: var(--graphite);
+      border: 1px solid var(--steel);
+      color: var(--bone);
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      background: var(--carbon);
+      border-left: 1px solid var(--graphite);
+      padding: 24px;
+      overflow-y: auto;
+    }
+
+    .sidebar-title {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--slate);
+      margin-bottom: 16px;
+    }
+
+    .sidebar-section {
+      margin-bottom: 24px;
+    }
+
+    .sidebar-card {
+      background: var(--night);
+      border: 1px solid var(--graphite);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+
+    .sidebar-label {
+      font-size: 11px;
+      color: var(--slate);
+      margin-bottom: 6px;
+    }
+
+    .sidebar-value {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--paper);
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .sidebar-value.green { color: var(--signal-green); }
+    .sidebar-value.blue { color: var(--signal-blue); }
+    .sidebar-value.amber { color: var(--signal-amber); }
+
+    .sidebar-trend {
+      font-size: 11px;
+      color: var(--signal-green);
+      margin-top: 4px;
+    }
+
+    .pipeline-step {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--graphite);
+    }
+
+    .pipeline-step:last-child { border-bottom: none; }
+
+    .step-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .step-icon.done { background: var(--signal-green); color: white; }
+    .step-icon.pending { background: var(--graphite); color: var(--ash); }
+    .step-icon.active { background: var(--signal-blue); color: white; }
+
+    .step-icon svg { width: 16px; height: 16px; }
+
+    .step-info { flex: 1; }
+    .step-name { font-size: 13px; font-weight: 500; color: var(--bone); }
+    .step-status { font-size: 11px; color: var(--slate); margin-top: 2px; }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 500;
+    }
+
+    .status-badge.done { background: rgba(34,197,94,0.15); color: var(--signal-green); }
+    .status-badge.active { background: rgba(59,130,246,0.15); color: var(--signal-blue); }
+    .status-badge.pending { background: var(--graphite); color: var(--ash); }
+
+    .status-badge svg { width: 12px; height: 12px; }
+
+    /* ── Feed Input ── */
+    .feed-input {
+      background: var(--carbon);
+      border: 1px solid var(--graphite);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 32px;
+      max-width: 580px;
+    }
+
+    .feed-input-header {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .feed-input textarea {
+      width: 100%;
+      background: var(--void);
+      border: 1px solid var(--graphite);
+      border-radius: 8px;
+      padding: 12px;
+      color: var(--bone);
+      font-size: 14px;
+      font-family: 'Inter Tight', sans-serif;
+      resize: none;
+      min-height: 120px;
+    }
+
+    .feed-input textarea:focus {
+      outline: none;
+      border-color: var(--signal-blue);
+    }
+
+    .feed-input-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+    }
+
+    .feed-input-hint {
+      font-size: 12px;
+      color: var(--slate);
+    }
+
+    .feed-platforms {
+      display: flex;
+      gap: 8px;
+    }
+
+    .feed-platform {
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      border: 1px solid var(--steel);
+      background: var(--void);
+      color: var(--ash);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .feed-platform.selected {
+      background: var(--signal-blue);
+      border-color: var(--signal-blue);
+      color: white;
+    }
+
+    .feed-platform svg { width: 14px; height: 14px; }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .main { grid-template-columns: 1fr; }
+      .sidebar { border-left: none; border-top: 1px solid var(--graphite); }
+      .header { padding: 16px 20px; }
+      .tabs { padding: 0 20px; }
+      .preview-area { padding: 20px; }
+    }
+
+    /* ── Glow Effects ── */
+    .signal-glow {
+      box-shadow: 0 0 20px rgba(59,130,246,0.2);
+    }
+
+    /* ── Animation ── */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in { animation: fadeIn 0.4s ease-out; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div>
+      <div class="header-title">🎙️ Marketing Preview — Audio Pipeline Simulator</div>
+      <div class="header-sub">Think Different OS × Consequences Design System</div>
+    </div>
+    <div class="header-controls">
+      <button class="btn" onclick="refreshPreview()">↻ Refresh</button>
+      <button class="btn btn-primary" onclick="exportHTML()">↓ Export HTML</button>
+    </div>
+  </header>
+
+  <!-- TABS -->
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('all')">
+      <span>📋</span> All
+    </div>
+    <div class="tab" onclick="switchTab('linkedin')">
+      <span>💼</span> LinkedIn
+      <span class="tab-badge">3</span>
+    </div>
+    <div class="tab" onclick="switchTab('twitter')">
+      <span>🐦</span> Twitter
+    </div>
+    <div class="tab" onclick="switchTab('newsletter')">
+      <span>📧</span> Newsletter
+    </div>
+    <div class="tab" onclick="switchTab('carousel')">
+      <span>🎠</span> Carousel
+    </div>
+  </div>
+
+  <!-- MAIN LAYOUT -->
+  <div class="main">
+
+    <!-- PREVIEW AREA -->
+    <div class="preview-area" id="previewArea">
+
+      <!-- Feed Input Simulation -->
+      <div class="section-title">INPUT — Audio Transcript</div>
+      <div class="feed-input fade-in">
+        <div class="feed-input-header">
+          <div class="avatar">SO</div>
+          <div>
+            <div class="post-author">Sebas — Gentleman Programming</div>
+            <div class="post-time">Audio: 32 min · 2026-06-09</div>
+          </div>
+        </div>
+        <textarea id="transcriptInput" placeholder="Pegá tu transcripción de audio aquí... o usá el botón de abajo para cargar un transcript de ejemplo" oninput="updateFromTranscript()"></textarea>
+        <div class="feed-input-footer">
+          <div class="feed-platforms">
+            <div class="feed-platform selected" onclick="this.classList.toggle('selected')">
+              <span>💼</span> LinkedIn
+            </div>
+            <div class="feed-platform selected" onclick="this.classList.toggle('selected')">
+              <span>🐦</span> Twitter
+            </div>
+            <div class="feed-platform selected" onclick="this.classList.toggle('selected')">
+              <span>📧</span> Email
+            </div>
+          </div>
+          <button class="btn" onclick="loadSample()">📥 Load Sample</button>
+        </div>
+      </div>
+
+      <!-- LINKEDIN POST 1 -->
+      <div class="section-title">LINKEDIN — Post 1 (Hook + Insight)</div>
+      <div class="linkedin-card fade-in" id="linkedinPost1">
+        <div class="linkedin-header">
+          <div class="avatar">SO</div>
+          <div class="post-meta">
+            <div class="post-author">Sebas Obando</div>
+            <div class="post-author-sub">Founder · Gentleman Programming · AI & Automation</div>
+          </div>
+          <div class="post-time">2h · 🌐</div>
+        </div>
+        <div class="post-content" id="li1Content">¿Por qué la mayoría de los tutoriales de IA no funcionan en tu día a día?
+
+Porque te enseñan la herramienta, no el sistema.
+
+Después de 6 meses usando agentes de IA como compañero de trabajo (no como reemplazo), aprendí esto:
+
+→ Los agentes no saben lo que no saben
+→ Tu contexto es tu ventaja competitiva
+→ La mejor automatización es la que no notás que existe
+
+El 80% del valor viene del 20% de prompts bien diseñados.
+
+Guarda este post si alguna vez sentiste que la IA "no te entiende".</div>
+        <div class="post-image-placeholder">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <span>AI-generated image · Higgsfield</span>
+        </div>
+        <div class="post-stats">
+          <span>2,341 impressions</span>
+          <span>·</span>
+          <span>156 reactions</span>
+          <span>·</span>
+          <span>43 comments</span>
+        </div>
+        <div class="post-actions">
+          <div class="post-action"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg> Like</div>
+          <div class="post-action"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg> Comment</div>
+          <div class="post-action"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg> Repost</div>
+          <div class="post-action"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg> Send</div>
+        </div>
+      </div>
+
+      <!-- LINKEDIN POST 2 -->
+      <div class="section-title">LINKEDIN — Post 2 (Framework)</div>
+      <div class="linkedin-card fade-in" id="linkedInPost2">
+        <div class="linkedin-header">
+          <div class="avatar">SO</div>
+          <div class="post-meta">
+            <div class="post-author">Sebas Obando</div>
+            <div class="post-author-sub">Founder · Gentleman Programming · AI & Automation</div>
+          </div>
+          <div class="post-time">2h · 🌐</div>
+        </div>
+        <div class="post-content">3 cosas que aprendí sobre automatizar contenido con IA (después de 6 meses de prueba real):
+
+1. El audio es mejor que el texto
+Grabar cuando estás inspirado > escribir cuando estás seco. Un audio de 30 min se convierte en una semana de contenido.
+
+2. El tono supera a la estructura
+Puedes tener el mejor framework del mundo pero si tu voz no es auténtica, no conecta. Graba, transcribe, publica — sin filtros.
+
+3. El sistema se mejora solo con métricas
+No adivines qué funciona. Mira los números. Yo reviso cada viernes y ajusto el siguiente ciclo.
+
+¿Cuál de estas tres te resuena más? 👇</div>
+        <div class="post-stats">
+          <span>1,892 impressions</span>
+          <span>·</span>
+          <span>98 reactions</span>
+          <span>·</span>
+          <span>31 comments</span>
+        </div>
+        <div class="post-actions">
+          <div class="post-action"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg> Like</div>
+          <div class="post-action"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg> Comment</div>
+          <div class="post-action"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg> Repost</div>
+          <div class="post-action"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg> Send</div>
+        </div>
+      </div>
+
+      <!-- LINKEDIN POST 3 -->
+      <div class="section-title">LINKEDIN — Post 3 (Takeaway + CTA)</div>
+      <div class="linkedin-card fade-in" id="linkedInPost3">
+        <div class="linkedin-header">
+          <div class="avatar">SO</div>
+          <div class="post-meta">
+            <div class="post-author">Sebas Obando</div>
+            <div class="post-author-sub">Founder · Gentleman Programming · AI & Automation</div>
+          </div>
+          <div class="post-time">2h · 🌐</div>
+        </div>
+        <div class="post-content">El error más grande que veo en gente que automatiza contenido con IA:
+
+Intentan replicar lo que hace un community manager profesional con herramientas de IA.
+
+No funciona.
+
+Lo que SÍ funciona:
+
+→ Graba tu voz (30 min)
+→ Convirtela en 5 piezas de contenido
+→ Programa TODO
+→ Mide y ajusta
+
+El resultado: contenido auténtico + alcance profesional + tiempo libre.
+
+¿Quieres que te muestre cómo armar este sistema? Hay un workflow completo en mi OS.
+
+¿O preferís seguir trial-and-error? 👇</div>
+        <div class="post-stats">
+          <span>pending</span>
+        </div>
+        <div class="post-actions">
+          <div class="post-action"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg> Like</div>
+          <div class="post-action"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg> Comment</div>
+          <div class="post-action"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg> Repost</div>
+          <div class="post-action"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg> Send</div>
+        </div>
+      </div>
+
+      <!-- TWITTER THREAD -->
+      <div class="section-title">TWITTER — Thread (6 tweets)</div>
+
+      <div class="twitter-card fade-in" id="twitterThread">
+        <div class="twitter-header">
+          <div class="twitter-avatar">SO</div>
+          <div>
+            <span class="twitter-name">Sebas 👨‍💻</span>
+            <span class="twitter-handle">@sebasobando</span>
+          </div>
+        </div>
+        <div class="twitter-content">1/ ¿Cómo convertí 1 audio de 30 min en una semana de contenido para 3 redes sociales?
+
+Sin equipo. Sin productoras. Sin copiar y pegar.
+
+Un sistema. Audio → AI → Pipeline → Piloto automático.
+
+Te lo explico en este thread ↓</div>
+        <div class="twitter-actions">
+          <div class="twitter-action"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg> 47</div>
+          <div class="twitter-action"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg> 23</div>
+          <div class="twitter-action"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg> 89</div>
+          <div class="twitter-action"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg> Share</div>
+        </div>
+      </div>
+
+      <div class="twitter-card fade-in">
+        <div class="twitter-header">
+          <div class="twitter-avatar">SO</div>
+          <div>
+            <span class="twitter-name">Sebas 👨‍💻</span>
+            <span class="twitter-handle">@sebasobando</span>
+          </div>
+        </div>
+        <div class="twitter-content">2/ El secreto: grabá cuando estés inspirado, no cuando estés frente a la pantalla.
+
+30 min de audio raw se convierte en:
+- 3 posts de LinkedIn
+- 1 thread de Twitter
+- 1 newsletter
+- 1 carousel de 8 slides
+
+Todo en piloto automático. El tono lo ponés vos, no una agencia.</div>
+      </div>
+
+      <div class="twitter-card fade-in">
+        <div class="twitter-header">
+          <div class="twitter-avatar">SO</div>
+          <div>
+            <span class="twitter-name">Sebas 👨‍💻</span>
+            <span class="twitter-handle">@sebasobando</span>
+          </div>
+        </div>
+        <div class="twitter-content">3/ Herramientas que uso:
+
+→ Whisper (transcripción local, no gastás créditos)
+→ Claude Code (agentes para cada pieza)
+→ Higgsfield (imágenes AI)
+→ Metricool (programar todo)
+
+Total: $0 en servicios externos si ya tenés Claude.</div>
+      </div>
+
+      <!-- NEWSLETTER -->
+      <div class="section-title">NEWSLETTER — Weekly Issue</div>
+      <div class="newsletter-card fade-in" id="newsletterPreview">
+        <div class="newsletter-header">
+          <div class="newsletter-from">Gentleman Programming · hello@gentleman.dev</div>
+          <div class="newsletter-subject">Lo que aprendí esta semana: automatización de contenido con IA</div>
+          <div class="newsletter-preview">Preview: El sistema que convierte 1 audio en contenido para toda la semana...</div>
+        </div>
+        <div class="newsletter-greeting">Hola,
+
+Esta semana fue de las más intensas en cuanto a automatización de contenido que probé.
+
+Grabé un audio de 30 minutos. Lo puse en el pipeline. Y al final del día tenía:</div>
+        <div class="newsletter-section">
+          <div class="newsletter-section-title">📱 3 posts de LinkedIn</div>
+          <div class="newsletter-text">
+            Publicados, programados, con imágenes generadas por IA. Cada uno con un ángulo diferente — uno como hook, otro como framework, otro como CTA.
+          </div>
+        </div>
+        <div class="newsletter-section">
+          <div class="newsletter-section-title">🐦 1 thread de Twitter</div>
+          <div class="newsletter-text">
+            6 tweets basados en el insight más sharable del audio. Programa y listo.
+          </div>
+        </div>
+        <div class="newsletter-section">
+          <div class="newsletter-section-title">🎠 1 carousel de 8 slides</div>
+          <div class="newsletter-text">
+            Para Instagram. Generado también con AI, con el contenido del audio transformado en formato visual.
+          </div>
+        </div>
+        <a href="#" class="newsletter-cta">Ver el sistema completo →</a>
+        <div class="newsletter-signature">
+          ¡Nos vemos!<br>Sebas
+        </div>
+        <div class="newsletter-ps">
+          P.D.: El error más grande es intentar replicar lo que hace una agencia con herramientas de IA. No funciona. El sistema funciona porque usa tu voz, no la de otro.
+        </div>
+      </div>
+
+      <!-- CAROUSEL PREVIEW -->
+      <div class="section-title">INSTAGRAM — Carousel (8 slides)</div>
+      <div class="carousel-container fade-in">
+        <div class="carousel-phone">
+          <div class="carousel-screen">
+            <div class="carousel-slide" id="carouselSlide">
+              <div class="slide-number" id="slideNum">1 / 8</div>
+              <div class="slide-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+              </div>
+              <div class="slide-title" id="slideTitle">3 Cosas que Aprendí Sobre IA y Contenido</div>
+              <div class="slide-body" id="slideBody">Sistema completo de automatización para crear contenido sin equipo</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+        </div>
+        <div class="carousel-nav">
+          <button onclick="prevSlide()">← Prev</button>
+          <button onclick="nextSlide()">Next →</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">Pipeline Status</div>
+        <div class="pipeline-step">
+          <div class="step-icon done">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <div class="step-info">
+            <div class="step-name">Audio → Transcripción</div>
+            <div class="step-status">32 min · Whisper (local)</div>
+          </div>
+          <span class="status-badge done">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            Done
+          </span>
+        </div>
+        <div class="pipeline-step">
+          <div class="step-icon done">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <div class="step-info">
+            <div class="step-name">Posts → LinkedIn</div>
+            <div class="step-status">3 posts generados</div>
+          </div>
+          <span class="status-badge done">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            Done
+          </span>
+        </div>
+        <div class="pipeline-step">
+          <div class="step-icon active">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="step-info">
+            <div class="step-name">Thread → Twitter</div>
+            <div class="step-status">6 tweets generados</div>
+          </div>
+          <span class="status-badge active">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Active
+          </span>
+        </div>
+        <div class="pipeline-step">
+          <div class="step-icon active">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="step-info">
+            <div class="step-name">Newsletter → Email</div>
+            <div class="step-status">1 newsletter generada</div>
+          </div>
+          <span class="status-badge active">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Active
+          </span>
+        </div>
+        <div class="pipeline-step">
+          <div class="step-icon pending">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="step-info">
+            <div class="step-name">Carousel → Visual</div>
+            <div class="step-status">8 slides · pendiente</div>
+          </div>
+          <span class="status-badge pending">Pending</span>
+        </div>
+        <div class="pipeline-step">
+          <div class="step-icon pending">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div class="step-info">
+            <div class="step-name">Metricool → Programar</div>
+            <div class="step-status">Todos pendientes</div>
+          </div>
+          <span class="status-badge pending">Pending</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">Métricas Esperadas</div>
+        <div class="sidebar-card">
+          <div class="sidebar-label">LinkedIn (por post)</div>
+          <div class="sidebar-value">2,100</div>
+          <div class="sidebar-trend">↑ 12% vs. avg</div>
+        </div>
+        <div class="sidebar-card">
+          <div class="sidebar-label">Newsletter Open Rate</div>
+          <div class="sidebar-value green">48%</div>
+          <div class="sidebar-trend">↑ 8% vs. avg</div>
+        </div>
+        <div class="sidebar-card">
+          <div class="sidebar-label">Carousel Saves</div>
+          <div class="sidebar-value blue">120</div>
+          <div class="sidebar-trend">↑ 15% vs. avg</div>
+        </div>
+        <div class="sidebar-card">
+          <div class="sidebar-label">Thread Impressions</div>
+          <div class="sidebar-value amber">1,840</div>
+          <div class="sidebar-trend">↑ 5% vs. avg</div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">Calendario</div>
+        <div class="sidebar-card" style="padding: 12px;">
+          <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-size: 12px; color: var(--ash);">LinkedIn #1</span>
+            <span style="font-size: 12px; color: var(--signal-blue);">Hoy 09:00</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-size: 12px; color: var(--ash);">Twitter Thread</span>
+            <span style="font-size: 12px; color: var(--signal-blue);">Mañana 10:00</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-size: 12px; color: var(--ash);">LinkedIn #2</span>
+            <span style="font-size: 12px; color: var(--slate);">+2 días</span>
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+            <span style="font-size: 12px; color: var(--ash);">LinkedIn #3</span>
+            <span style="font-size: 12px; color: var(--slate);">+4 días</span>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <span style="font-size: 12px; color: var(--ash);">Newsletter</span>
+            <span style="font-size: 12px; color: var(--slate);">+3 días 18:00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-title">Brand Voice</div>
+        <div class="sidebar-card" style="padding: 12px; font-size: 12px; color: var(--ash); line-height: 1.6;">
+          <div style="margin-bottom: 8px;"><strong style="color: var(--bone);">Directo</strong> — sin rodeos</div>
+          <div style="margin-bottom: 8px;"><strong style="color: var(--bone);">Honesto</strong> — muestra fallos</div>
+          <div style="margin-bottom: 8px;"><strong style="color: var(--bone);">Técnico</strong> — pero accesible</div>
+          <div style="margin-bottom: 8px;"><strong style="color: var(--bone);">Mentor</strong> — enseña, no presume</div>
+          <div style="margin-top: 12px; padding-top: 8px; border-top: 1px solid var(--graphite); font-style: italic;">
+            "Te lo explico como si tuvieras 5 años"
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const slides = [
+      { title: "3 Cosas que Aprendí Sobre IA y Contenido", body: "Sistema completo de automatización para crear contenido sin equipo" },
+      { title: "El Audio es Mejor que el Texto", body: "Grabar cuando estás inspirado > escribir cuando estás seco. 30 min se convierte en una semana." },
+      { title: "El Tono Supera a la Estructura", body: "Puedes tener el mejor framework del mundo pero si tu voz no es auténtica, no conecta." },
+      { title: "El Sistema se Mejora Solo con Métricas", body: "No adivines qué funciona. Mira los números. Ajustá el siguiente ciclo." },
+      { title: "1 Audio → 5 Piezas de Contenido", body: "3 posts + 1 thread + 1 newsletter + 1 carousel. Todo en piloto automático." },
+      { title: "Stack: Whisper + Claude + Higgsfield + Metricool", body: "Transcripción local + agentes + imágenes AI + programación. Costo: $0 en créditos." },
+      { title: "Guarda para Después", body: "Este sistema funciona porque usa TU voz, no la de otro." },
+      { title: "→ Ver el Sistema Completo", body: "Think Different OS · Audio Pipeline · 2026" },
+    ];
+
+    let currentSlide = 0;
+
+    function renderSlide() {
+      const s = slides[currentSlide];
+      document.getElementById('slideNum').textContent = `${currentSlide + 1} / ${slides.length}`;
+      document.getElementById('slideTitle').textContent = s.title;
+      document.getElementById('slideBody').textContent = s.body;
+
+      document.querySelectorAll('.carousel-dot').forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentSlide);
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      renderSlide();
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      renderSlide();
+    }
+
+    function switchTab(tab) {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      event.target.closest('.tab').classList.add('active');
+    }
+
+    function refreshPreview() {
+      location.reload();
+    }
+
+    function exportHTML() {
+      alert('Para exportar: Ctrl+S / Cmd+S en este HTML guardado localmente.');
+    }
+
+    function loadSample() {
+      const sample = `Acabo de terminar de grabar un audio de 30 minutos sobre automatización de contenido con IA. 
+
+Los puntos clave que coverí:
+
+1. Por qué el audio es mejor que escribir desde cero — grabás cuando estás inspirado, no cuando estás seco.
+
+2. El error más grande que veo: intentar replicar lo que hace una agencia con herramientas de IA. No funciona. Lo que sí funciona es usar tu propia voz.
+
+3. El sistema completo: audio → Whisper → CLAUDE → 3 posts + 1 thread + 1 newsletter + 1 carousel → Metricool → piloto automático.
+
+4. Las métricas hablan: después de 6 meses, los posts que mejor performan son los que vienen de audio directo, no los que escribí frente a la pantalla.
+
+5. El secreto del tono auténtico: no edites el audio. Dejá los silencios, las muletillas, el humor. Eso es lo que conecta.
+
+El 80% del valor viene del 20% de prompts bien diseñados. Pero el prompt más importante es tu contexto: qué sabes, qué experiencias tenés, qué te diferencia.
+
+Por eso el sistema de Lorena funciona — usa su voz, no la de otro. Y eso es lo que voy a aplicar en mi propio OS.`;
+      document.getElementById('transcriptInput').value = sample;
+    }
+
+    function updateFromTranscript() {
+      // Future: auto-generate content from transcript input
+    }
+
+    // Auto-advance carousel
+    setInterval(nextSlide, 3000);
+  </script>
+</body>
+</html>
