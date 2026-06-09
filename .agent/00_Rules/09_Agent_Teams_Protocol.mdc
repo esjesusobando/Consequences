@@ -68,7 +68,7 @@ Antes de fork critico:
 
 - ⚠️ Bug conocido [#47350](https://github.com/anthropics/claude-code/issues/47350): `context: fork` puede usar modelo mas lite que el padre
 - ⚠️ Forks NO comparten output entre si — son ramas paralelas que solo convergen en el padre
-- ⚠️ Output del fork puede ser >50KB — politica "summarize before return"
+- ⚠️ Output del fork puede ser >50KB — política "summarize before return"
 
 ---
 

@@ -61,7 +61,7 @@
 
 ---
 
-## 3. Vocabulary yPhrasing
+## 3. Vocabulario y Fraseo
 
 ### Palabras que USAMOS
 - "te voy a mostrar" (no "en este artículo vamos a...")

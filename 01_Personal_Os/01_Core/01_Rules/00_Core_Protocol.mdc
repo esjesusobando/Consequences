@@ -20,7 +20,7 @@ alwaysApply: true
 Think_Different/
 ├── 00_Winter_is_Coming/    # Goals, Backlog, Memoria (ESTRATEGICO)
 ├── 01_Personal_Os/      # El Sistema Operativo
-│   ├── 01_Core/01_Rules/ # <- DONDE ESTAMOS: 13 reglas .mdc
+│   ├── 01_Core/01_Rules/ # <- DONDE ESTAMOS: 14 reglas .mdc
 │   ├── 01_Core/02_Tools/ # Skills, Agents, MCPs, Hooks
 │   ├── 02_Knowledge/    # Base de conocimiento
 │   ├── 03_Task/         # Tareas activas

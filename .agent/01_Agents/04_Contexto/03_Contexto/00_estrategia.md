@@ -12,7 +12,7 @@
 **"Hacer que las personas que están lejos se sientan como en casa aprendiendo tecnología e IA."**
 
 ### Propósito Superior
- democratizar el acceso a herramientas de IA y desarrollo de software, especialmente para hispanohablantes, a través de contenido educativo auténtico y gratuito.
+Democratizar el acceso a herramientas de IA y desarrollo de software, especialmente para hispanohablantes, a través de contenido educativo auténtico y gratuito.
 
 ### Diferenciación
 No somos otro canal de tutorials genéricos. Somos un espacio donde se aprende a **pensar diferente** sobre tecnología, automatización, y el uso de agentes de IA como compañeros de trabajo.
@@ -26,9 +26,9 @@ No somos otro canal de tutorials genéricos. Somos un espacio donde se aprende a
 |----------|-------------|
 | **Edad** | 25-45 |
 | **Ubicación** | Latinoamérica (Argentina, México, Colombia, España) |
-| **Profesión** | Dev Jr/Med wanting to level up, Founders técnicos, indie hackers |
+| **Profesión** | Dev Jr/Med buscando crecer, founders técnicos, indie hackers |
 | **Motivación** | Aprender a usar IA para ser más productivo, no reemplazado |
-| **Frustraciones** | Contenido en inglés, tutoriales sin contexto real, info outdated |
+| **Frustraciones** | Contenido en inglés, tutoriales sin contexto real, info desactualizada |
 | **Canales** | YouTube, LinkedIn, Twitter/X |
 | **Comportamiento** | Consume contenido mientras trabaja, prefiere video, valora autenticidad |
 

@@ -1,7 +1,7 @@
 # 📋 Índice de Reglas — PersonalOS v4.9 Consequences
 
-**Versión:** 4.8
-**Última actualización:** 2026-05-26
+**Versión:** 4.9
+**Última actualización:** 2026-06-09
 **Ubicación:** `01_Personal_Os/01_Core/01_Rules/`
 **Framework:** Anthropic SOTA 2026 + PersonalOS v4.9 Consequences
 
@@ -54,7 +54,7 @@ Think_Different/
 
 ---
 
-## 🔘 Reglas Activas (13 archivos .mdc)
+## 🔘 Reglas Activas (14 archivos .mdc)
 
 | #                              | Regla                                                                                   | Nombre                                                 | Función                                                                      |
 |-------------------------------|----------------------------------------------------------------------------------------|-------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -71,6 +71,7 @@ Think_Different/
 | 10                             | [10_Git_Directions.mdc](./10_Git_Directions.mdc)                                        | **Git Directions**                                     | URLs de repos y remotes actualizados                                         |
 | 11                             | [11_Minimax.mdc](./11_Minimax.mdc)                                                      | **Minimax**                                            | Configuración y integración con Minimax                                      |
 | 12                             | [12_Audit_OS_Integrity.mdc](./12_Audit_OS_Integrity.mdc)                                | **Integridad y Auditoría OS**                          | Auditoría no destructiva, preservación histórica y verificación estructural  |
+| 13                             | [13_HTML_Visualization.mdc](./13_HTML_Visualization.mdc)                                | **Visualización HTML**                                 | Toda salida del sistema debe incluir visualización HTML                      |
 
 ---
 
