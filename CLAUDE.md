@@ -226,7 +226,7 @@ Think_Different/                           # RAÍZ
 | 05_Claude_Ads                                    | 05_Claude_Ads/              | Claude Ads & Promoted Content                                 |
 | 06_Tools                                         | 06_Tools/                   | Skill Creator, Testing, DevOps, Data                          |
 | 07_Invictus_Web                              | 07_Invictus_Web/            | Playwright, Superpowers, Browser Auto                         |
-| 08_JAO                                       | 08_JAO/                     | Entrevistador, Humanizador, Superpowers                       |
+| 08_JAO                                         | 08_JAO/                       | Entrevistador, Humanizador, Superpowers                         |
 | 10_Laia_Learning                             | 10_Laia_Learning/           | Sistema de aprendizaje personal                               |
 
 > ⚠️ Audit 2026-06-01: 15 áreas activas, 392 skills (SKILL.md) verificados contra disco
