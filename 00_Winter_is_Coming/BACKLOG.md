@@ -19,6 +19,12 @@
 
 ## P2 — MEDIA PRIORIDAD
 
+- [ ] **Marketing Agency Fase 1.4** — Validar agentes: ejecutar flujo Estratega→Creador con contenido real (1 post LinkedIn, 1 newsletter)
+- [ ] **Marketing Agency Fase 2.1** — Quality Gates por Agente: checklist de revisión para cada deliverable
+- [ ] **Marketing Agency Fase 2.2** — SLA Framework: tiempos de entrega por tipo de contenido + brief mínimo
+- [ ] **Marketing Agency Fase 2.3** — MCPs Setup: investigar y configurar Make, YouTube Data API, LinkedIn API
+- [ ] **Marketing Agency Fase 2.4** — Dashboard de Métricas: template HTML para reportes de rendimiento
+- [ ] **Marketing Agency Fase 2.5** — Automated Feedback Loop: Analista→Estratega sin intervención humana
 - [ ] Pre-commit hook para detectar API keys en archivos staged
 - [ ] Documentar proceso de onboarding para nueva máquina
 - [ ] **Corregir System Mapper Hub**: Agent Catalog cuenta 58 vs 48 real. Mapper cuenta mal (incluye READMEs o subdirectorios)
@@ -33,6 +39,8 @@
 
 ## P3 — BACKLOG FRÍO
 
+- [ ] **Marketing Agency Fase 3** — Multi-cliente, reporting, lead gen, orquestador (tareas 3.1-3.8)
+- [ ] **Marketing Agency Fase 4** — SOTA: compound learning, design system v2, A/B testing, case studies (tareas 4.1-4.7)
 - [ ] Automatizar generación de `04_Operations/07_Reports/` con `01_Auditor_Hub.py`
 - [ ] **Revisar y ejecutar**: Workflows Marvel (01_Iron_Man_Gen, 04_Vision_Review, 05_Thor_Work, 06_Hulk_Compound) — verificar que estén actualizados y operativos
 - [ ] **Revisar y ejecutar**: Ritual de Cierre (`05_Ritual_Cierre_Protocol.md` + `04_Ritual_Hub.py`) — verificar pasos automatizados
