@@ -283,9 +283,9 @@ La primera conexión abrirá OAuth en el navegador. Una vez aprobado, la sesión
 
 ## Recursos
 
-- PDF Guía: `02_Playground/11_Zero_Consequences/4 Metodos Consistencia Magnific 2.pdf`
+- PDF Guía: `02_Playground/09_Zero_Consequences/04_Metodos_Consistencia_Magnific/4 Metodos Consistencia Magnific 2.pdf`
 - Magnific MCP Docs: `https://docs.magnific.com/modelcontextprotocol`
-- Ficha técnica: `02_Playground/11_Zero_Consequences/IMPLEMENTATION_GUIDE.md`
+- Ficha técnica: `02_Playground/09_Zero_Consequences/02_Planificacion_y_Docs/IMPLEMENTATION_GUIDE.md`
 
 ---
 

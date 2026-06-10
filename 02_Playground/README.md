@@ -16,20 +16,27 @@ Zona de pruebas y experimentos. **Todo lo validado se integra al OS**, nada qued
 
 ```
 02_Playground/
-├── 00_Momentum/              # Agenda de momentum activo
-├── 00_Test_Anthropic_Harness/ # Test harness Anthropic
-├── 00_Testing_Youtube/        # Testing YouTube pipeline
-├── 01_Branders_Skills/       # Skills de branding (10 archivos)
+├── 00_Momentum/              # [SACRED] Agenda de momentum activo — NO RENOMBRAR
+├── 00_Testing_Youtube/       # [SACRED] Testing YouTube pipeline — NO RENOMBRAR
+├── 01_Branders_Skills/       # Skills de branding
 ├── 02_Workflow_N8N/          # Workflows N8N
-├── 03_Reports/               # Reportes generados
-│   └── 00_SALUD_REPORTS.md   # Reportes de salud (00_ = no tocar)
-├── 04_Side Project/          # Oil Brain (repo propio, ignorado)
-├── 06_Testing_Legacy/        # Tests legacy
+├── 03_Reports/               # Último reporte como referencia
+├── 04_Testing_Legacy/        # Tests legacy
+├── 05_Obanlover/             # Proyecto Obanlover
+├── 06_JAO/                   # JAO — Jose Antonio Obando
+├── 07_Zero_Consequences/     # Proyecto Zero Consequences (Consequences DS)
+│   ├── 01_Zero_Consequences/ # Repo principal
+│   ├── 02_Planificacion_y_Docs/ # PRD + Implementation Guide
+│   ├── 03_Marketing_Preview/ # HTML preview con DS brandkit
+│   └── 04_Metodos_Consistencia_Magnific/ # PDF consistency + branding
 ├── Kit_Diseño_Top.md         # Guía de diseño legacy
 └── README.md                 # Este archivo
 ```
 
-> **Secuencia:** 00 → 06 (rango activo, prefijos únicos)
+> **Reglas:**
+> - **00_** = SACRED — prefijos de sistema, NO se renombran
+> - **01-07** = secuencia activa de proyectos
+> - Al eliminar/archivar una carpeta, renumerar para mantener secuencia limpia
 
 ---
 

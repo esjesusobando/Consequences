@@ -65,16 +65,15 @@ Think_Different/                           # RAÍZ
 │       ├── GOVERNANCE.md
 │       └── RUNBOOK.md
 │   └── 05_Archive/               ✅ Backups, snapshots, históricos
-├── 02_Playground/                 ✅ Zona de pruebas (gap numeración: no existe 05_ — preservado)
+├── 02_Playground/                 ✅ Zona de pruebas
 │   ├── 00_Momentum/
 │   ├── 01_Branders_Skills/
 │   ├── 02_Workflow_N8N/
 │   ├── 03_Reports/
-│   ├── 04_Side Project/
-│   ├── 06_Testing_Legacy/         # Scripts de test
-│   │   ├── 01_OS_Runtime_Test.py
-│   │   ├── 05_OS_Health_Test.py
-│   │   └── 06_OS_Deep_Audit.py
+│   ├── 06_Testing_Legacy/
+│   ├── 07_Obanlover/
+│   ├── 08_JAO/
+│   ├── 09_Zero_Consequences/     ✅ Consequences DS + Magnific
 │   └── Kit_Diseño_Top.md
 ├── 03_Resultado/                 ✅ Outputs de proyectos (agrupado: Proyectos, Aprendizaje, Experimentos, Reportes, Documentacion)
 │   ├── 00_Proyectos/            # Planes, revisiones, side projects
