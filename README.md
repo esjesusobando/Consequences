@@ -73,7 +73,7 @@ Think_Different/                           # RAÍZ
 │   ├── 06_Testing_Legacy/
 │   ├── 07_Obanlover/
 │   ├── 08_JAO/
-│   ├── 09_Zero_Consequences/     ✅ Consequences DS + Magnific
+│   ├── 07_Zero_Consequences/     ✅ Consequences DS + Magnific
 │   └── Kit_Diseño_Top.md
 ├── 03_Resultado/                 ✅ Outputs de proyectos (agrupado: Proyectos, Aprendizaje, Experimentos, Reportes, Documentacion)
 │   ├── 00_Proyectos/            # Planes, revisiones, side projects

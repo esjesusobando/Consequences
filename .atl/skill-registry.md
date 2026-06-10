@@ -220,6 +220,11 @@ Last updated: 2026-06-02
 | `zinking-transform` | QUÉ HACE: Transforma textos técnicos en comunicación humana, empática y estratégica ("Zinking"). CUÁNDO SE EJECUTA: Al redactar correos, anuncios o documentación orientada a personas. | user | `C:\Users\sebas\.config\opencode\skills\gentleman\04_Compound\02_Zinking_Transform\SKILL.md` |
 | `zod-4` | Zod 4 schema validation patterns. Trigger: When using Zod for validation - breaking changes from v3. | user | `C:\Users\sebas\.config\opencode\skills\gentleman\02_Work\04_Zod_4\SKILL.md` |
 | `zustand-5` | Zustand 5 state management patterns. Trigger: When managing React state with Zustand. | user | `C:\Users\sebas\.config\opencode\skills\gentleman\02_Work\05_Zustand_5\SKILL.md` |
+| `higgsfield-generate` | Generate images and videos with Higgsfield AI. Trigger: image generation, video creation, AI visuals, Higgsfield. | user | `C:\Users\sebas\Desktop\Think_Different\.agents\skills\higgsfield-generate\SKILL.md` |
+| `higgsfield-marketplace-cards` | Create marketplace card visuals with Higgsfield. Trigger: marketplace cards, product cards, e-commerce visuals. | user | `C:\Users\sebas\Desktop\Think_Different\.agents\skills\higgsfield-marketplace-cards\SKILL.md` |
+| `higgsfield-product-photoshoot` | Generate product photoshoot images with Higgsfield. Trigger: product photography, photoshoot, product images. | user | `C:\Users\sebas\Desktop\Think_Different\.agents\skills\higgsfield-product-photoshoot\SKILL.md` |
+| `higgsfield-soul-id` | Create consistent character identities with Higgsfield Soul ID. Trigger: character consistency, soul id, character identity. | user | `C:\Users\sebas\Desktop\Think_Different\.agents\skills\higgsfield-soul-id\SKILL.md` |
+| `18_Magnific_Image` | Pipeline de generación de imágenes con consistencia de personajes usando Magnific AI. 4 métodos para visuales consistentes. | user | `C:\Users\sebas\Desktop\Think_Different\01_Personal_Os\01_Core\02_Tools\02_Skills\01_Creacion_Contenidos\18_Magnific_Image\SKILL.md` |
 
 ## Loading protocol
 

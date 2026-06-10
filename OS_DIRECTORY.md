@@ -136,7 +136,7 @@ Think_Different/                         # RAÍZ
 │   │   ├── 05_Skills_Legacy/
 │   │   ├── 06_Skills_Legacy/
 │   │   └── README.md
-├── 02_Playground/                ✅ Zona de pruebas (6 carpetas, scripts test en 06_Testing_Legacy/)
+├── 02_Playground/                ✅ Zona de pruebas (00_ sacred, 01-07 secuencia activa)
 ├── 03_Resultado/                 ✅ Outputs de proyectos (agrupado: Proyectos, Aprendizaje, Experimentos, Reportes, Documentacion, Testing)
 ├── .agent/                       ✅ Backup estratégico
 │   ├── 00_Rules/

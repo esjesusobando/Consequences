@@ -367,12 +367,14 @@ Think_Different/                    # RAÍZ
 ├── 00_Momentum/              # Agenda momentum (7 subcarpetas)
 ├── 01_Branders_Skills/       # Skills de branding (10 archivos)
 ├── 02_Workflow_N8N/          # Workflows N8N
-├── 03_Reports/               # Reportes generados
-├── 04_Side Project/          # Oil Brain (repo propio, ignorado)
-├── 06_Testing_Legacy/        # Scripts de test legacy
+├── 03_Reports/               # Último reporte como referencia
+├── 04_Testing_Legacy/        # Scripts de test legacy
 │   ├── 01_OS_Runtime_Test.py # Test runtime v4.9 Consequences
 │   ├── 05_OS_Health_Test.py  # Test de salud
 │   └── 06_OS_Deep_Audit.py   # Auditoría profunda v2
+├── 05_Obanlover/             # Proyecto Obanlover
+├── 06_JAO/                   # JAO — Jose Antonio Obando
+├── 07_Zero_Consequences/     # Consequences DS + Magnific
 ├── Kit_Diseño_Top.md         # Guía diseño legacy
 └── README.md
 ```
