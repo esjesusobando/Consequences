@@ -1,0 +1,6 @@
+{
+  "name": "Consequences",
+  "description": "A cyberpunk-themed dashboard integrated with Google Workspace, featuring a real-time countdown to your next calendar meeting, and monitoring of Google Drive, Gmail, and Google Tasks.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

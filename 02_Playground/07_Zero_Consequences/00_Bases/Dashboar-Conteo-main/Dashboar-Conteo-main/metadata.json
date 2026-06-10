@@ -1,0 +1,6 @@
+{
+  "name": "CONSEQUENCES",
+  "description": "A high-fidelity technical dashboard and interactive design system explorer inspired by cyberpunk and industrial aesthetics.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

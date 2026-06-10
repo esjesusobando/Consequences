@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter+Tight:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter Tight", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-void: #04060A;
+  --color-night: #0B0F18;
+  --color-carbon: #131826;
+  --color-graphite: #1E2435;
+  --color-steel: #2A3148;
+  --color-slate: #4A5273;
+  --color-ash: #7A839E;
+  --color-bone: #C7CCD8;
+  --color-paper: #ECEEF5;
+  --color-pure: #FFFFFF;
+
+  --color-on-surface: #ECEEF5;
+  --color-on-primary: #04060A;
+
+  --color-signal-cyan: #00F0FF;
+  --color-signal-magenta: #FF2E9A;
+  --color-signal-lime: #C6FF3D;
+  --color-signal-amber: #FFB400;
+}
+
+/* Custom effects */
+.glow-cyan {
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.4), 0 0 30px rgba(0, 240, 255, 0.1);
+}
+.glow-magenta {
+  box-shadow: 0 0 15px rgba(255, 46, 154, 0.4), 0 0 30px rgba(255, 46, 154, 0.1);
+}
+.glow-lime {
+  box-shadow: 0 0 15px rgba(198, 255, 61, 0.4), 0 0 30px rgba(198, 255, 61, 0.1);
+}
+.glow-amber {
+  box-shadow: 0 0 15px rgba(255, 180, 0, 0.4), 0 0 30px rgba(255, 180, 0, 0.1);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.6), 0 0 20px rgba(0, 240, 255, 0.2);
+}
+.text-glow-magenta {
+  text-shadow: 0 0 10px rgba(255, 46, 154, 0.6), 0 0 20px rgba(255, 46, 154, 0.2);
+}
+.text-glow-lime {
+  text-shadow: 0 0 10px rgba(198, 255, 61, 0.6), 0 0 20px rgba(198, 255, 61, 0.2);
+}
+.text-glow-amber {
+  text-shadow: 0 0 10px rgba(255, 180, 0, 0.6), 0 0 20px rgba(255, 180, 0, 0.2);
+}
+
+.bg-grid {
+  background-image: 
+    linear-gradient(to right, rgba(30, 36, 53, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 36, 53, 0.15) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(4, 6, 10, 0.3); 
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #1E2435; 
+  border-radius: 2px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #2A3148;
+}
+
+@keyframes glitch-anim-1 {
+  0% { clip-path: inset(40% 0 61% 0); }
+  20% { clip-path: inset(92% 0 1% 0); }
+  45% { clip-path: inset(18% 0 83% 0); }
+  65% { clip-path: inset(53% 0 14% 0); }
+  85% { clip-path: inset(4% 0 77% 0); }
+  100% { clip-path: inset(80% 0 9% 0); }
+}
+
+@keyframes glitch-anim-2 {
+  0% { clip-path: inset(12% 0 85% 0); }
+  25% { clip-path: inset(79% 0 11% 0); }
+  45% { clip-path: inset(34% 0 52% 0); }
+  70% { clip-path: inset(90% 0 3% 0); }
+  85% { clip-path: inset(15% 0 75% 0); }
+  100% { clip-path: inset(55% 0 32% 0); }
+}
+
+.glitch-layer-1 {
+  animation: glitch-anim-1 4s infinite linear alternate-reverse;
+}
+.glitch-layer-2 {
+  animation: glitch-anim-2 3.5s infinite linear alternate-reverse;
+}
