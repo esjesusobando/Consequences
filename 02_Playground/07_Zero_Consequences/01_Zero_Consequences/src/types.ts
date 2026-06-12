@@ -110,6 +110,8 @@ export interface PresentationConfig {
   backgroundImage: string;
   backdropBlur: number;
   overlayOpacity: number;
+  bgPositionX: number;   // 0–100 (default 50 = center)
+  bgPositionY: number;   // 0–100 (default 50 = center)
   accentPreference: AccentColor;
   audioLoop: string;
   volume: number;

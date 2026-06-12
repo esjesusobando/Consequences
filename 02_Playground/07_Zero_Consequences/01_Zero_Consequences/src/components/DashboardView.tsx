@@ -63,34 +63,46 @@ export default function DashboardView({
   setGoogleToken,
 }: DashboardViewProps) {
   // Countdown Timer state: calculated from next meeting time
-  const [secondsLeft, setSecondsLeft] = useState<number>(3600);
-  const [isTimerRunning, setIsTimerRunning] = useState<boolean>(true);
+  const [secondsLeft, setSecondsLeft] = useState<number>(0);
+  const [isTimerRunning, setIsTimerRunning] = useState<boolean>(false);
+  const [nextMeetingTitle, setNextMeetingTitle] = useState<string>('');
 
-  // Recalculate countdown when signals change (next meeting)
+  // Recalculate countdown every second based on real time
   useEffect(() => {
-    const now = new Date();
-    let nextSeconds: number | null = null;
+    const recalculate = () => {
+      const now = new Date();
+      let nextSeconds: number | null = null;
+      let nextTitle = '';
 
-    for (const sig of signals) {
-      const [h, m] = sig.time.split(':').map(Number);
-      if (isNaN(h) || isNaN(m)) continue;
+      for (const sig of signals) {
+        if (!sig.active) continue;
+        const [h, m] = sig.time.split(':').map(Number);
+        if (isNaN(h) || isNaN(m)) continue;
 
-      const meetingDate = new Date(now);
-      meetingDate.setHours(h, m, 0, 0);
+        const meetingDate = new Date(now);
+        meetingDate.setHours(h, m, 0, 0);
 
-      const diff = Math.floor((meetingDate.getTime() - now.getTime()) / 1000);
-      if (diff > 0 && (nextSeconds === null || diff < nextSeconds)) {
-        nextSeconds = diff;
+        const diff = Math.floor((meetingDate.getTime() - now.getTime()) / 1000);
+        if (diff > 0 && (nextSeconds === null || diff < nextSeconds)) {
+          nextSeconds = diff;
+          nextTitle = sig.title;
+        }
       }
-    }
 
-    if (nextSeconds !== null) {
-      setSecondsLeft(nextSeconds);
-      setIsTimerRunning(true);
-    } else {
-      setSecondsLeft(3600);
-      setIsTimerRunning(false);
-    }
+      if (nextSeconds !== null) {
+        setSecondsLeft(nextSeconds);
+        setIsTimerRunning(true);
+        setNextMeetingTitle(nextTitle);
+      } else {
+        setIsTimerRunning(false);
+        setSecondsLeft(0);
+        setNextMeetingTitle('');
+      }
+    };
+
+    recalculate();
+    const interval = setInterval(recalculate, 1000);
+    return () => clearInterval(interval);
   }, [signals]);
 
   // Editable project name shown above/below the countdown (persisted)
@@ -247,23 +259,7 @@ export default function DashboardView({
     return () => clearInterval(interval);
   }, [googleToken]);
 
-  // Timer Tick down
-  useEffect(() => {
-    let interval: any = null;
-    if (isTimerRunning && secondsLeft > 0) {
-      interval = setInterval(() => {
-        setSecondsLeft((prev) => {
-          if (prev <= 1) {
-            onLogMessage('warn', 'INICIO DE SESIÓN DE MEETING DE INMEDIATO. Conectándose con participantes...');
-            setIsTimerRunning(false);
-            return 0;
-          }
-          return prev - 1;
-        });
-      }, 1000);
-    }
-    return () => clearInterval(interval);
-  }, [isTimerRunning, secondsLeft]);
+  // Timer tick is now handled by the unified recalculation effect above
 
   // Compute display time string
   const formatCountdown = (totalSecs: number) => {
@@ -316,12 +312,12 @@ export default function DashboardView({
   // Add Signal (Meeting Event)
   const handleAddSignal = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!newTitle.trim() || !newTime.trim() || !newId.trim()) {
-      onLogMessage('err', 'Error: Complete todos los campos antes de agregar el evento.');
+    if (!newTitle.trim() || !newTime.trim()) {
+      onLogMessage('err', 'Error: Complete título y hora.');
       return;
     }
 
-    const generatedId = newId.toUpperCase().replace(/\s+/g, '-');
+    const generatedId = (newId.trim() || `MTG-${Date.now().toString(36).toUpperCase()}`).toUpperCase().replace(/\s+/g, '-');
     let googleEventId = undefined;
 
     if (googleToken) {
@@ -565,18 +561,32 @@ export default function DashboardView({
             onClick={() => setHeaderColorIndex((prev) => (prev + 1) % neutralColors.length)}
             className={`inline-block font-mono text-[10px] uppercase tracking-widest mb-4 border border-signal-amber/30 px-4 py-1.5 rounded-full bg-signal-amber/5 ${neutralColors[headerColorIndex]} cursor-pointer transition-all duration-200 hover:brightness-110`}
           >
-            CONTEO REUNIÓN DE ALINEACIÓN PRÓXIMA SESIÓN
+            {isTimerRunning ? 'CONTEO REUNIÓN DE ALINEACIÓN PRÓXIMA SESIÓN' : 'SIN REUNIONES PENDIENTES HOY'}
           </div>
           
           <div className="flex justify-center items-center font-display text-[72px] sm:text-[100px] md:text-[132px] font-bold leading-none tracking-tighter">
-            <span className="text-[#4A5273] opacity-25 mr-2">-</span>
-            <span className={getAccentGlowClass()}>
-              {hoursStr}:{minutesStr}:{secsStr}
-            </span>
+            {isTimerRunning ? (
+              <>
+                <span className="text-[#4A5273] opacity-25 mr-2">-</span>
+                <span className={getAccentGlowClass()}>
+                  {hoursStr}:{minutesStr}:{secsStr}
+                </span>
+              </>
+            ) : (
+              <span className="text-[#4A5273] opacity-50 text-[48px] sm:text-[64px] md:text-[80px]">
+                --:--:--
+              </span>
+            )}
           </div>
 
+          {isTimerRunning && nextMeetingTitle && (
+            <p className="font-mono text-[10px] text-signal-cyan tracking-wider mt-2 uppercase">
+              → {nextMeetingTitle}
+            </p>
+          )}
+
           <p className="font-mono text-[9px] text-[#A6AFC9] tracking-[0.2em] mt-3 uppercase">
-            TEMPORAL REGISTRY / GOOGLE CALENDAR SYNCED
+            {isTimerRunning ? 'TEMPORAL REGISTRY / GOOGLE CALENDAR SYNCED' : 'AGENDA LIBRE / SIN EVENTOS EN COLA'}
           </p>
 
           {/* Editable Project Name below countdown */}
@@ -817,72 +827,111 @@ export default function DashboardView({
                 >
                   <span className="font-mono text-[8.5px] text-ash/70 uppercase tracking-wider border-b border-graphite/30 pb-1 flex items-center gap-1.5">
                     <Sparkles className="w-3.5 h-3.5 text-signal-lime" />
-                    Agendar Evento en Google Calendar
+                    Agendar Reunión
                   </span>
-                  
-                  <div className="flex flex-col gap-1">
-                    <label className="font-mono text-[9px] uppercase text-ash/80">ID Interno de Sesión</label>
-                    <input 
-                      type="text" 
-                      value={newId} 
-                      onChange={(e) => setNewId(e.target.value)}
-                      placeholder="Ej: MTG-SYNC" 
-                      className="bg-[#04060A] border border-graphite focus:border-signal-cyan outline-none rounded p-1.5 font-mono text-bone text-xs uppercase"
-                      required
-                    />
+
+                  {/* Quick Templates — 1 click to fill */}
+                  <div className="flex flex-col gap-1.5">
+                    <label className="font-mono text-[8px] uppercase text-ash/60">Plantillas Rápidas</label>
+                    <div className="grid grid-cols-2 gap-1.5">
+                      {[
+                        { title: 'Daily Standup', time: '09:00', icon: 'group', desc: 'Sincronización diaria del equipo' },
+                        { title: '1:1 Reunión', time: '10:00', icon: 'phone', desc: 'Reunión individual' },
+                        { title: 'Sprint Review', time: '14:00', icon: 'video', desc: 'Revisión de sprint' },
+                        { title: 'Vendor Sync', time: '15:00', icon: 'video', desc: 'Sincronización con proveedor' },
+                        { title: 'Design Review', time: '11:00', icon: 'video', desc: 'Revisión de diseño' },
+                        { title: 'Wrap-up', time: '17:00', icon: 'group', desc: 'Cierre del día' },
+                      ].map((tpl) => (
+                        <button
+                          key={tpl.title}
+                          type="button"
+                          onClick={() => {
+                            setNewTitle(tpl.title);
+                            setNewTime(tpl.time);
+                            setNewIcon(tpl.icon);
+                            setNewDesc(tpl.desc);
+                            setNewId(`MTG-${tpl.title.replace(/\s+/g, '').toUpperCase().slice(0, 8)}`);
+                          }}
+                          className="text-left px-2 py-1.5 bg-void/60 border border-graphite/40 rounded text-[9px] font-mono text-bone/80 hover:border-signal-cyan/50 hover:text-signal-cyan transition-colors cursor-pointer"
+                        >
+                          <span className="block font-bold">{tpl.title}</span>
+                          <span className="text-[8px] text-ash/60">{tpl.time}</span>
+                        </button>
+                      ))}
+                    </div>
                   </div>
 
+                  {/* Time — native picker */}
                   <div className="flex flex-col gap-1">
-                    <label className="font-mono text-[9px] uppercase text-ash/80">Hora Programada (HH:MM)</label>
+                    <label className="font-mono text-[9px] uppercase text-ash/80">Hora</label>
                     <input 
-                      type="text" 
+                      type="time"
                       value={newTime} 
                       onChange={(e) => setNewTime(e.target.value)}
-                      className="bg-[#04060A] border border-graphite focus:border-signal-cyan outline-none rounded p-1.5 font-mono text-bone text-xs"
+                      className="bg-[#04060A] border border-graphite focus:border-signal-cyan outline-none rounded p-2 font-mono text-bone text-sm"
                       required
                     />
                   </div>
 
+                  {/* Title */}
                   <div className="flex flex-col gap-1">
-                    <label className="font-mono text-[9px] uppercase text-ash/80">Título de Reunión o Sprint</label>
+                    <label className="font-mono text-[9px] uppercase text-ash/80">Título</label>
                     <input 
                       type="text" 
                       value={newTitle} 
-                      onChange={(e) => setNewTitle(e.target.value)}
-                      placeholder="Vendor Review Sync" 
-                      className="bg-[#04060A] border border-graphite focus:border-signal-cyan outline-none rounded p-1.5 text-bone text-xs"
+                      onChange={(e) => {
+                        setNewTitle(e.target.value);
+                        if (!newId || newId.startsWith('MTG-')) {
+                          setNewId(`MTG-${e.target.value.replace(/\s+/g, '-').toUpperCase().slice(0, 10) || Date.now().toString(36).toUpperCase()}`);
+                        }
+                      }}
+                      placeholder="Nombre de la reunión" 
+                      className="bg-[#04060A] border border-graphite focus:border-signal-cyan outline-none rounded p-2 text-bone text-xs"
                       required
                     />
                   </div>
 
+                  {/* Format — selector */}
                   <div className="flex flex-col gap-1">
-                    <label className="font-mono text-[9px] uppercase text-ash/80">Formato de Participación</label>
-                    <select 
-                      value={newIcon}
-                      onChange={(e) => setNewIcon(e.target.value)}
-                      className="bg-[#04060A] border border-graphite focus:border-signal-cyan outline-none rounded p-1.5 text-bone text-xs font-mono"
-                    >
-                      <option value="video">GOOGLE MEET (VIDEOCONFERENCIA)</option>
-                      <option value="phone">LLAMADA DE VOZ (TELÉFONO)</option>
-                      <option value="group">SINCRO DE ALINEACIÓN (GRUPO)</option>
-                    </select>
+                    <label className="font-mono text-[9px] uppercase text-ash/80">Formato</label>
+                    <div className="flex gap-1.5">
+                      {[
+                        { value: 'video', label: 'Meet', icon: '📹' },
+                        { value: 'phone', label: 'Llamada', icon: '📞' },
+                        { value: 'group', label: 'Grupo', icon: '👥' },
+                      ].map((opt) => (
+                        <button
+                          key={opt.value}
+                          type="button"
+                          onClick={() => setNewIcon(opt.value)}
+                          className={`flex-1 py-2 rounded text-[9px] font-mono border transition-colors cursor-pointer ${
+                            newIcon === opt.value
+                              ? 'bg-signal-cyan/15 border-signal-cyan/50 text-signal-cyan'
+                              : 'bg-void/40 border-graphite/40 text-ash/80 hover:border-graphite'
+                          }`}
+                        >
+                          {opt.icon} {opt.label}
+                        </button>
+                      ))}
+                    </div>
                   </div>
 
+                  {/* Notes — optional */}
                   <div className="flex flex-col gap-1">
-                    <label className="font-mono text-[9px] uppercase text-ash/80">Breve Temario o Notas</label>
+                    <label className="font-mono text-[9px] uppercase text-ash/80">Notas <span className="text-ash/40">(opcional)</span></label>
                     <textarea 
                       value={newDesc} 
                       onChange={(e) => setNewDesc(e.target.value)}
-                      placeholder="Ej: Revisión del cuadrante SOTA..." 
-                      className="bg-[#04060A] border border-graphite focus:border-signal-cyan outline-none rounded p-1.5 text-bone text-xs h-14 resize-none"
+                      placeholder="Temario o notas breves..." 
+                      className="bg-[#04060A] border border-graphite focus:border-signal-cyan outline-none rounded p-2 text-bone text-xs h-12 resize-none"
                     />
                   </div>
 
                   <button 
                     type="submit"
-                    className="mt-1 w-full py-2 bg-signal-cyan hover:bg-signal-cyan/95 text-void font-bold font-mono uppercase tracking-wider rounded text-[10px]"
+                    className="mt-1 w-full py-2.5 bg-signal-cyan hover:bg-signal-cyan/95 text-void font-bold font-mono uppercase tracking-wider rounded text-[10px] cursor-pointer transition-colors"
                   >
-                    Registrar & Vincular Calendario
+                    Agendar Reunión
                   </button>
                 </motion.form>
               ) : sidebarView === 'calendar' ? (
@@ -892,37 +941,50 @@ export default function DashboardView({
                   exit={{ opacity: 0 }}
                   className="bg-carbon/40 border border-graphite/45 rounded-xl p-4 flex flex-col gap-3 font-body text-xs absolute inset-0 overflow-y-auto custom-scrollbar"
                 >
-                  {/* Calendar View */}
+                  {/* Calendar View — only today's events */}
                   <div className="flex items-center justify-between border-b border-graphite/30 pb-2">
                     <span className="font-mono text-[9px] text-bone uppercase tracking-widest flex items-center gap-2">
                       <CalendarDays className="w-4 h-4 text-signal-cyan" />
-                      Calendario del Día
+                      Hoy
                     </span>
                     <span className="font-mono text-[9px] text-bone/80">
-                      {new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}
+                      {new Date().toLocaleDateString('es-ES', { weekday: 'short', day: 'numeric', month: 'short' })}
                     </span>
                   </div>
 
-                  <div className="grid grid-cols-7 gap-1 text-center font-mono text-[8px] text-bone mb-2">
-                    {['LUN', 'MAR', 'MIÉ', 'JUE', 'VIE', 'SÁB', 'DOM'].map(d => (
-                      <span key={d} className="uppercase text-bone/70">{d}</span>
-                    ))}
-                  </div>
-
+                  {/* Timeline: only active signals sorted by time */}
                   <div className="flex-1 overflow-y-auto custom-scrollbar">
-                    {signals.length === 0 ? (
-                      <div className="text-center py-8 text-bone/60 font-mono text-[9px] border border-dashed border-graphite/40 rounded-lg">
-                        SIN EVENTOS PROGRAMADOS
-                      </div>
-                    ) : (
-                      signals.map((sig) => (
-                        <div key={sig.id} className="flex items-center gap-2 py-1.5 border-b border-graphite/20">
-                          <span className="font-mono text-[9px] text-bone/80 w-10">{sig.time}</span>
-                          <span className="w-1 h-4 bg-signal-cyan/40 rounded" />
-                          <span className="font-mono text-[10px] text-bone">{sig.title}</span>
-                        </div>
-                      ))
-                    )}
+                    {(() => {
+                      const now = new Date();
+                      const currentMinutes = now.getHours() * 60 + now.getMinutes();
+                      const todaySignals = signals
+                        .filter(s => s.active)
+                        .map(s => {
+                          const [h, m] = s.time.split(':').map(Number);
+                          return { ...s, _minutes: h * 60 + m };
+                        })
+                        .sort((a, b) => a._minutes - b._minutes);
+
+                      if (todaySignals.length === 0) {
+                        return (
+                          <div className="text-center py-8 text-bone/60 font-mono text-[9px] border border-dashed border-graphite/40 rounded-lg">
+                            SIN EVENTOS HOY
+                          </div>
+                        );
+                      }
+
+                      return todaySignals.map((sig) => {
+                        const isPast = sig._minutes < currentMinutes;
+                        const isNow = Math.abs(sig._minutes - currentMinutes) < 30;
+                        return (
+                          <div key={sig.id} className={`flex items-center gap-2 py-2 border-b border-graphite/20 ${isPast ? 'opacity-40' : ''}`}>
+                            <span className={`font-mono text-[10px] w-12 ${isNow ? 'text-signal-cyan font-bold' : 'text-bone/80'}`}>{sig.time}</span>
+                            <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${isNow ? 'bg-signal-cyan animate-pulse' : isPast ? 'bg-graphite' : 'bg-signal-lime/60'}`} />
+                            <span className={`font-mono text-[10px] flex-1 truncate ${isPast ? 'line-through text-bone/50' : 'text-bone'}`}>{sig.title}</span>
+                          </div>
+                        );
+                      });
+                    })()}
                   </div>
                 </motion.div>
               ) : sidebarView === 'tasks' ? (

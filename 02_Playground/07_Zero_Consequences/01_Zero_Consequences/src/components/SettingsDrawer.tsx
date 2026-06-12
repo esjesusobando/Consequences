@@ -806,6 +806,16 @@ export default function SettingsDrawer({
                     <span className="text-[8px] font-mono text-signal-lime">{Math.round((config.overlayOpacity ?? 0.12) * 100)}%</span>
                   </div>
                   <input type="range" min="0" max="100" step="5" value={Math.round((config.overlayOpacity ?? 0.12) * 100)} onChange={(e) => setConfig(prev => ({ ...prev, overlayOpacity: Number(e.target.value) / 100 }))} className="w-full accent-signal-lime cursor-pointer" />
+                  <div className="flex items-center justify-between">
+                    <span className="text-[8px] font-mono text-slate uppercase">Posición X</span>
+                    <span className="text-[8px] font-mono text-signal-amber">{config.bgPositionX}%</span>
+                  </div>
+                  <input type="range" min="0" max="100" step="1" value={config.bgPositionX} onChange={(e) => setConfig(prev => ({ ...prev, bgPositionX: Number(e.target.value) }))} className="w-full accent-signal-amber cursor-pointer" />
+                  <div className="flex items-center justify-between">
+                    <span className="text-[8px] font-mono text-slate uppercase">Posición Y</span>
+                    <span className="text-[8px] font-mono text-signal-amber">{config.bgPositionY}%</span>
+                  </div>
+                  <input type="range" min="0" max="100" step="1" value={config.bgPositionY} onChange={(e) => setConfig(prev => ({ ...prev, bgPositionY: Number(e.target.value) }))} className="w-full accent-signal-amber cursor-pointer" />
                   <button onClick={() => { setConfig(prev => ({ ...prev, backgroundImage: '' })); onLogMessage('info', 'Fondo removido.'); }} className="text-[8px] font-mono text-signal-magenta hover:underline cursor-pointer mt-1">
                     Remover fondo
                   </button>

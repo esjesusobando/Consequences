@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import TopNavBar from './components/TopNavBar';
 import SideNavBar from './components/SideNavBar';
 import DashboardView from './components/DashboardView';
@@ -94,7 +95,12 @@ export default function App() {
     const saved = localStorage.getItem('sota_presentation_config');
     if (saved) {
       try {
-        return JSON.parse(saved);
+        const parsed = JSON.parse(saved);
+        return {
+          bgPositionX: 50,
+          bgPositionY: 50,
+          ...parsed,
+        };
       } catch (e) {
         // Fallback
       }
@@ -103,6 +109,8 @@ export default function App() {
       backgroundImage: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&w=1200&q=80", // Editorial Charcoal default preset
       backdropBlur: 10,
       overlayOpacity: 0.15,
+      bgPositionX: 50,
+      bgPositionY: 50,
       accentPreference: 'cyan',
       audioLoop: 'synth-pad',
       volume: 25,
@@ -662,9 +670,10 @@ export default function App() {
       {/* Editorial Supernatural Mail Customizable Ambient Backdrop layers */}
       {presentationConfig.backgroundImage && (
         <div 
-          className="absolute inset-0 bg-cover bg-center pointer-events-none transition-all duration-700 select-none z-0"
+          className="absolute inset-0 bg-cover pointer-events-none transition-all duration-700 select-none z-0"
           style={{ 
             backgroundImage: `url(${presentationConfig.backgroundImage})`,
+            backgroundPosition: `${presentationConfig.bgPositionX}% ${presentationConfig.bgPositionY}%`,
             opacity: presentationConfig.overlayOpacity // dynamic opacity blending with void black
           }}
         />
@@ -731,7 +740,14 @@ export default function App() {
         
         {focusMode ? (
           /* ── FOCUS MODE: countdown 60% + notes 40% ── */
-          <div className="flex flex-col h-full">
+          <motion.div
+            key="focus"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            className="flex flex-col h-full"
+          >
             <div className="flex-[3] min-h-0 overflow-hidden flex flex-col">
               <DashboardView 
                 signals={signals}
@@ -750,10 +766,17 @@ export default function App() {
             <div className="flex-[2] min-h-0 overflow-hidden border-t border-graphite/30">
               <FocusNotesPanel />
             </div>
-          </div>
+          </motion.div>
         ) : (
           /* ── NORMAL MODE ── */
-          <div className="flex-1 overflow-hidden flex flex-col">
+          <motion.div
+            key="normal"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            className="flex-1 overflow-hidden flex flex-col"
+          >
           
           {/* TAB 1: MEETINGS COUNTDOWN HUD */}
           {activeTab === 'dashboard' && (
@@ -849,10 +872,9 @@ export default function App() {
               onExit={() => setActiveTab('dashboard')}
             />
           )}
-        </div>
+        </motion.div>
         )}
 
-        
 
       </main>
     </div>
