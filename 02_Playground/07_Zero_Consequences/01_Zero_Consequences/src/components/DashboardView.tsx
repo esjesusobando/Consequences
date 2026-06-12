@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  Plus, 
-  Video, 
-  Phone, 
-  Users, 
-  Trash2, 
-  Check, 
-  Clock, 
-  X, 
-  Sparkles, 
-  Play, 
-  Pause, 
+import {
+  Plus,
+  Video,
+  Phone,
+  Users,
+  Trash2,
+  Check,
+  Clock,
+  X,
+  Sparkles,
+  Play,
+  Pause,
   RefreshCw,
   Calendar as CalendarIcon,
   Link,
@@ -21,7 +21,8 @@ import {
   Edit2,
   Save,
   LogIn,
-  LogOut
+  LogOut,
+  List,
 } from 'lucide-react';
 import { SignalEvent, AccentColor } from '../types';
 import { motion, AnimatePresence } from 'motion/react';
@@ -61,10 +62,64 @@ export default function DashboardView({
   googleToken,
   setGoogleToken,
 }: DashboardViewProps) {
-  // Countdown Timer state: initial 1 hour, 42 minutes, 06 seconds
-  const [secondsLeft, setSecondsLeft] = useState<number>(1 * 3600 + 42 * 60 + 6);
+  // Countdown Timer state: calculated from next meeting time
+  const [secondsLeft, setSecondsLeft] = useState<number>(3600);
   const [isTimerRunning, setIsTimerRunning] = useState<boolean>(true);
-  
+
+  // Recalculate countdown when signals change (next meeting)
+  useEffect(() => {
+    const now = new Date();
+    let nextSeconds: number | null = null;
+
+    for (const sig of signals) {
+      const [h, m] = sig.time.split(':').map(Number);
+      if (isNaN(h) || isNaN(m)) continue;
+
+      const meetingDate = new Date(now);
+      meetingDate.setHours(h, m, 0, 0);
+
+      const diff = Math.floor((meetingDate.getTime() - now.getTime()) / 1000);
+      if (diff > 0 && (nextSeconds === null || diff < nextSeconds)) {
+        nextSeconds = diff;
+      }
+    }
+
+    if (nextSeconds !== null) {
+      setSecondsLeft(nextSeconds);
+      setIsTimerRunning(true);
+    } else {
+      setSecondsLeft(3600);
+      setIsTimerRunning(false);
+    }
+  }, [signals]);
+
+  // Editable project name shown above/below the countdown (persisted)
+  const [projectName, setProjectName] = useState<string>(() => {
+    try {
+      return localStorage.getItem('zc_project_name') || 'Sin Proyecto';
+    } catch { return 'Sin Proyecto'; }
+  });
+  const [editingProject, setEditingProject] = useState<boolean>(false);
+
+  // Persist project name
+  useEffect(() => {
+    localStorage.setItem('zc_project_name', projectName);
+  }, [projectName]);
+
+  // Neutral color cycling for countdown header text (visibility on any background)
+  const neutralColors = [
+    'text-gray-300',
+    'text-slate-300',
+    'text-zinc-300',
+    'text-stone-300',
+    'text-neutral-300',
+    'text-gray-100',
+  ];
+  const [headerColorIndex, setHeaderColorIndex] = useState<number>(0);
+
+  // Sidebar view toggle: 'meeting' | 'tasks' | 'calendar'
+  const [sidebarView, setSidebarView] = useState<'meeting' | 'tasks' | 'calendar'>('meeting');
+
   // Modal/Form toggle for adding a new calendar sync signal
   const [showAddForm, setShowAddForm] = useState<boolean>(false);
   const [newTitle, setNewTitle] = useState<string>('');
@@ -72,6 +127,9 @@ export default function DashboardView({
   const [newId, setNewId] = useState<string>('');
   const [newIcon, setNewIcon] = useState<string>('video');
   const [newDesc, setNewDesc] = useState<string>('');
+
+  // Which task is being edited inline (tasks view)
+  const [editingTaskId, setEditingTaskId] = useState<string | null>(null);
 
   // Selected inspected meeting
   const [selectedSignal, setSelectedSignal] = useState<SignalEvent | null>(signals[0] || null);
@@ -369,7 +427,7 @@ export default function DashboardView({
   // System status color helpers
   const getAccentBorderClass = () => {
     switch (accent) {
-      case 'magenta': return 'border-signal-magenta text-signal-magenta';
+      case 'magenta': return 'border-signal-amber text-signal-amber';
       case 'lime': return 'border-signal-lime text-signal-lime';
       case 'amber': return 'border-signal-amber text-signal-amber';
       default: return 'border-signal-cyan text-signal-cyan';
@@ -378,7 +436,7 @@ export default function DashboardView({
 
   const getAccentGlowClass = () => {
     switch (accent) {
-      case 'magenta': return 'text-glow-magenta text-signal-magenta';
+      case 'magenta': return 'text-glow-magenta text-signal-amber';
       case 'lime': return 'text-glow-lime text-signal-lime';
       case 'amber': return 'text-glow-amber text-signal-amber';
       default: return 'text-glow-cyan text-signal-cyan';
@@ -387,7 +445,7 @@ export default function DashboardView({
 
   const getAccentSolidBg = () => {
     switch (accent) {
-      case 'magenta': return 'bg-signal-magenta';
+      case 'magenta': return 'bg-signal-amber';
       case 'lime': return 'bg-signal-lime';
       case 'amber': return 'bg-signal-amber';
       default: return 'bg-signal-cyan';
@@ -396,7 +454,7 @@ export default function DashboardView({
 
   const getAccentBgClass = () => {
     switch (accent) {
-      case 'magenta': return 'bg-signal-magenta/10 text-signal-magenta';
+      case 'magenta': return 'bg-signal-amber/10 text-signal-amber';
       case 'lime': return 'bg-signal-lime/10 text-signal-lime';
       case 'amber': return 'bg-signal-amber/10 text-signal-amber';
       default: return 'bg-signal-cyan/10 text-signal-cyan';
@@ -464,17 +522,34 @@ export default function DashboardView({
           </div>
 
           <div className="flex gap-4 items-center mb-1">
-            <span className="font-mono text-[9px] tracking-wider text-[#7A839E] uppercase flex items-center gap-1.5 bg-black/40 px-2 py-1 rounded">
-              <span className={`w-1.5 h-1.5 rounded-full ${calendarSyncStatus === 'synchronized' ? 'bg-signal-lime' : 'bg-signal-amber'} animate-pulse`} />
-              Google Calendar: <strong className={calendarSyncStatus === 'synchronized' ? 'text-signal-lime' : 'text-signal-amber'}>{calendarSyncStatus.toUpperCase()}</strong>
-            </span>
-            <button 
-              onClick={handleCalendarResync} 
-              className="p-1 hover:text-signal-cyan transition-colors"
-              title="Forzar actualización de calendario"
-            >
-              <RefreshCw className={`w-3.5 h-3.5 text-slate ${calendarSyncStatus === 'syncing' ? 'animate-spin text-signal-cyan' : ''}`} />
-            </button>
+            {editingProject ? (
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  const val = (e.target as HTMLFormElement).querySelector('input')?.value.trim();
+                  if (val) setProjectName(val);
+                  setEditingProject(false);
+                }}
+                className="flex items-center gap-1 bg-black/40 px-2 py-1 rounded"
+              >
+                <span className="font-mono text-[9px] uppercase text-[#7A839E]">Proyecto:</span>
+                <input
+                  defaultValue={projectName}
+                  className="w-28 bg-transparent border border-signal-amber/40 outline-none rounded px-1.5 py-0.5 text-bone font-mono text-[9px] uppercase"
+                  autoFocus
+                />
+                <button type="submit" className="text-signal-amber text-[8px] font-mono cursor-pointer">OK</button>
+              </form>
+            ) : (
+              <span
+                onClick={() => setEditingProject(true)}
+                className="font-mono text-[9px] tracking-wider text-[#7A839E] uppercase flex items-center gap-1.5 bg-black/40 px-2 py-1 rounded cursor-pointer hover:text-bone transition-colors"
+                title="Clic para editar nombre del proyecto"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-signal-amber animate-pulse" />
+                Proyecto: <strong className="text-signal-amber">{projectName.toUpperCase()}</strong>
+              </span>
+            )}
           </div>
         </div>
 
@@ -486,7 +561,10 @@ export default function DashboardView({
 
         {/* Countdown Content */}
         <div className="text-center z-10 my-8">
-          <div className="inline-block font-mono text-[10px] uppercase tracking-widest mb-4 border border-signal-magenta/30 px-4 py-1.5 rounded-full bg-signal-magenta/5 text-signal-magenta">
+          <div
+            onClick={() => setHeaderColorIndex((prev) => (prev + 1) % neutralColors.length)}
+            className={`inline-block font-mono text-[10px] uppercase tracking-widest mb-4 border border-signal-amber/30 px-4 py-1.5 rounded-full bg-signal-amber/5 ${neutralColors[headerColorIndex]} cursor-pointer transition-all duration-200 hover:brightness-110`}
+          >
             CONTEO REUNIÓN DE ALINEACIÓN PRÓXIMA SESIÓN
           </div>
           
@@ -500,6 +578,19 @@ export default function DashboardView({
           <p className="font-mono text-[9px] text-[#A6AFC9] tracking-[0.2em] mt-3 uppercase">
             TEMPORAL REGISTRY / GOOGLE CALENDAR SYNCED
           </p>
+
+          {/* Editable Project Name below countdown */}
+          <div className="mt-4 flex justify-center">
+            <div className="flex items-center gap-2 bg-black/30 border border-signal-amber/20 rounded-lg px-3 py-1.5">
+              <span className="font-mono text-[8px] uppercase text-[#7A839E] tracking-wider">Proyecto:</span>
+              <input
+                value={projectName}
+                onChange={(e) => setProjectName(e.target.value)}
+                className="w-40 bg-transparent border-none outline-none text-bone font-mono text-[10px] uppercase text-center tracking-wider"
+                placeholder="NOMBRE DEL PROYECTO"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Upcoming Session Details Card - EDITABLE FORM */}
@@ -508,13 +599,13 @@ export default function DashboardView({
             {isEditingSelected ? (
               <form onSubmit={handleSaveEditedSignal} className="w-full flex flex-col gap-3">
                 <div className="flex justify-between items-center border-b border-graphite/35 pb-1.5 mb-1.5">
-                  <span className="font-mono text-[9px] uppercase tracking-widest text-signal-magenta font-bold">
+                  <span className="font-mono text-[9px] uppercase tracking-widest text-signal-amber font-bold">
                     // EDITOR OPERACIONAL DE CAMPOS DE REUNIÓN:
                   </span>
                   <button 
                     type="button" 
                     onClick={() => setIsEditingSelected(false)} 
-                    className="text-slate hover:text-signal-magenta text-[9px] font-mono uppercase font-bold"
+                    className="text-ash/80 hover:text-signal-amber text-[9px] font-mono uppercase font-bold"
                   >
                     X Cancelar
                   </button>
@@ -522,7 +613,7 @@ export default function DashboardView({
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                   <div className="flex flex-col gap-1 md:col-span-2">
-                    <label className="font-mono text-[8.5px] uppercase text-slate">Título de Reunión:</label>
+                    <label className="font-mono text-[8.5px] uppercase text-ash/80">Título de Reunión:</label>
                     <input 
                       type="text" 
                       value={editTitle}
@@ -532,7 +623,7 @@ export default function DashboardView({
                     />
                   </div>
                   <div className="flex flex-col gap-1">
-                    <label className="font-mono text-[8.5px] uppercase text-slate">Hora (HH:MM):</label>
+                    <label className="font-mono text-[8.5px] uppercase text-ash/80">Hora (HH:MM):</label>
                     <input 
                       type="text" 
                       value={editTime}
@@ -544,7 +635,7 @@ export default function DashboardView({
                 </div>
 
                 <div className="flex flex-col gap-1">
-                  <label className="font-mono text-[8.5px] uppercase text-slate">Descripción / Agenda de Sesión:</label>
+                  <label className="font-mono text-[8.5px] uppercase text-ash/80">Descripción / Agenda de Sesión:</label>
                   <textarea 
                     value={editDesc}
                     onChange={(e) => setEditDesc(e.target.value)}
@@ -611,7 +702,7 @@ export default function DashboardView({
               setIsTimerRunning(true);
               onLogMessage('info', 'Reloj reseteado a valores iniciales de sesión.');
             }}
-            className="p-1.5 text-slate hover:text-signal-cyan transition-colors"
+            className="p-1.5 text-ash/80 hover:text-signal-cyan transition-colors"
             title="Resetear Reloj"
           >
             <RefreshCw className="w-3.5 h-3.5" />
@@ -626,15 +717,26 @@ export default function DashboardView({
           style={{ width: `${config?.sidebarWidth ?? 384}px` }}
         >
           
-          {/* Panel Header */}
+          {/* Panel Header — dynamic title per view */}
           <div className="flex items-center justify-between px-1 border-b border-graphite/40 pb-2">
             <div className="font-mono text-xs text-bone uppercase tracking-widest flex items-center gap-2.5 font-bold">
-              <CalendarIcon className="w-4 h-4 text-signal-cyan" />
-              Agenda en Cola (Google Sync)
+              {sidebarView === 'meeting' && <><CalendarIcon className="w-4 h-4 text-signal-cyan" /> Agenda</>}
+              {sidebarView === 'tasks' && <><List className="w-4 h-4 text-signal-lime" /> Tareas</>}
+              {sidebarView === 'calendar' && <><CalendarDays className="w-4 h-4 text-signal-cyan" /> Calendario</>}
             </div>
-            <div className="font-mono text-[9px] text-signal-lime bg-signal-lime/5 border border-signal-lime/25 p-0.5 px-2 rounded uppercase">
-              Bilateral: 30s
-            </div>
+            <button
+              onClick={() => setSidebarView(v => {
+                if (v === 'meeting') return 'tasks';
+                if (v === 'tasks') return 'calendar';
+                return 'meeting';
+              })}
+              className="flex items-center gap-1.5 font-mono text-[9px] text-signal-lime bg-signal-lime/5 border border-signal-lime/25 p-0.5 px-2 rounded uppercase cursor-pointer hover:bg-signal-lime/10 transition-colors"
+              title="Clic para cambiar vista"
+            >
+              {sidebarView === 'meeting' && <><Video className="w-3 h-3" /><span>MEETING</span></>}
+              {sidebarView === 'tasks' && <><List className="w-3 h-3" /><span>TAREAS</span></>}
+              {sidebarView === 'calendar' && <><CalendarIcon className="w-3 h-3" /><span>CALENDAR</span></>}
+            </button>
           </div>
 
           {/* GOOGLE WORKSPACE CONNECTION PROFILE INTEGRATION */}
@@ -643,7 +745,7 @@ export default function DashboardView({
               <div className="flex items-center gap-2">
                 <UserCheck className="w-4 h-4 text-signal-lime" />
                 <div className="leading-tight">
-                  <span className="text-slate block text-[8px] uppercase">Workspace Conectado:</span>
+                  <span className="text-ash/80 block text-[8px] uppercase">Workspace Conectado:</span>
                   <span className="text-bone uppercase truncate max-w-[160px] inline-block font-bold">
                     {user?.displayName || user?.email || 'Alineado'}
                   </span>
@@ -658,14 +760,14 @@ export default function DashboardView({
                   setUser(null);
                   onLogMessage('info', 'Sesión de Google Calendar desconectada.');
                 }}
-                className="text-signal-magenta hover:underline uppercase text-[8px] font-bold"
+                className="text-signal-amber hover:underline uppercase text-[8px] font-bold"
                 title="Desvincular Cuenta"
               >
                 Salir
               </button>
             </div>
           ) : (
-            <div className="bg-void/40 border border-graphite/40 p-3 rounded-lg flex flex-col gap-2 font-mono text-[9px] select-none text-slate leading-tight">
+            <div className="bg-void/40 border border-graphite/40 p-3 rounded-lg flex flex-col gap-2 font-mono text-[9px] select-none text-ash/80 leading-tight">
               <p className="uppercase text-[8.5px]">
                 Enlaza tus reuniones reales para activar sincronización bidireccional y Google Meet:
               </p>
@@ -696,7 +798,7 @@ export default function DashboardView({
               onClick={() => setShowAddForm(!showAddForm)}
               className="flex-1 flex items-center justify-center gap-2 border border-dashed border-graphite hover:border-ash/50 bg-[#131826]/30 hover:bg-carbon/30 py-2 rounded-lg text-xs font-mono text-ash hover:text-bone transition-all duration-200"
             >
-              {showAddForm ? <X className="w-3.5 h-3.5 text-signal-magenta" /> : <Plus className="w-3.5 h-3.5 text-signal-cyan" />}
+              {showAddForm ? <X className="w-3.5 h-3.5 text-signal-amber" /> : <Plus className="w-3.5 h-3.5 text-signal-cyan" />}
               {showAddForm ? 'Cerrar Registro' : 'Agendar Nueva Reunión Calendario'}
             </button>
           </div>
@@ -713,13 +815,13 @@ export default function DashboardView({
                   transition={{ duration: 0.15 }}
                   className="bg-carbon/40 border border-graphite/45 rounded-xl p-4 flex flex-col gap-3 font-body text-xs absolute inset-0 overflow-y-auto custom-scrollbar"
                 >
-                  <span className="font-mono text-[8.5px] text-[#7A839E] uppercase tracking-wider border-b border-graphite/30 pb-1 flex items-center gap-1.5">
+                  <span className="font-mono text-[8.5px] text-ash/70 uppercase tracking-wider border-b border-graphite/30 pb-1 flex items-center gap-1.5">
                     <Sparkles className="w-3.5 h-3.5 text-signal-lime" />
                     Agendar Evento en Google Calendar
                   </span>
                   
                   <div className="flex flex-col gap-1">
-                    <label className="font-mono text-[9px] uppercase text-slate">ID Interno de Sesión</label>
+                    <label className="font-mono text-[9px] uppercase text-ash/80">ID Interno de Sesión</label>
                     <input 
                       type="text" 
                       value={newId} 
@@ -731,7 +833,7 @@ export default function DashboardView({
                   </div>
 
                   <div className="flex flex-col gap-1">
-                    <label className="font-mono text-[9px] uppercase text-slate">Hora Programada (HH:MM)</label>
+                    <label className="font-mono text-[9px] uppercase text-ash/80">Hora Programada (HH:MM)</label>
                     <input 
                       type="text" 
                       value={newTime} 
@@ -742,7 +844,7 @@ export default function DashboardView({
                   </div>
 
                   <div className="flex flex-col gap-1">
-                    <label className="font-mono text-[9px] uppercase text-slate">Título de Reunión o Sprint</label>
+                    <label className="font-mono text-[9px] uppercase text-ash/80">Título de Reunión o Sprint</label>
                     <input 
                       type="text" 
                       value={newTitle} 
@@ -754,7 +856,7 @@ export default function DashboardView({
                   </div>
 
                   <div className="flex flex-col gap-1">
-                    <label className="font-mono text-[9px] uppercase text-slate">Formato de Participación</label>
+                    <label className="font-mono text-[9px] uppercase text-ash/80">Formato de Participación</label>
                     <select 
                       value={newIcon}
                       onChange={(e) => setNewIcon(e.target.value)}
@@ -767,7 +869,7 @@ export default function DashboardView({
                   </div>
 
                   <div className="flex flex-col gap-1">
-                    <label className="font-mono text-[9px] uppercase text-slate">Breve Temario o Notas</label>
+                    <label className="font-mono text-[9px] uppercase text-ash/80">Breve Temario o Notas</label>
                     <textarea 
                       value={newDesc} 
                       onChange={(e) => setNewDesc(e.target.value)}
@@ -783,6 +885,170 @@ export default function DashboardView({
                     Registrar & Vincular Calendario
                   </button>
                 </motion.form>
+              ) : sidebarView === 'calendar' ? (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="bg-carbon/40 border border-graphite/45 rounded-xl p-4 flex flex-col gap-3 font-body text-xs absolute inset-0 overflow-y-auto custom-scrollbar"
+                >
+                  {/* Calendar View */}
+                  <div className="flex items-center justify-between border-b border-graphite/30 pb-2">
+                    <span className="font-mono text-[9px] text-bone uppercase tracking-widest flex items-center gap-2">
+                      <CalendarDays className="w-4 h-4 text-signal-cyan" />
+                      Calendario del Día
+                    </span>
+                    <span className="font-mono text-[9px] text-bone/80">
+                      {new Date().toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })}
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-7 gap-1 text-center font-mono text-[8px] text-bone mb-2">
+                    {['LUN', 'MAR', 'MIÉ', 'JUE', 'VIE', 'SÁB', 'DOM'].map(d => (
+                      <span key={d} className="uppercase text-bone/70">{d}</span>
+                    ))}
+                  </div>
+
+                  <div className="flex-1 overflow-y-auto custom-scrollbar">
+                    {signals.length === 0 ? (
+                      <div className="text-center py-8 text-bone/60 font-mono text-[9px] border border-dashed border-graphite/40 rounded-lg">
+                        SIN EVENTOS PROGRAMADOS
+                      </div>
+                    ) : (
+                      signals.map((sig) => (
+                        <div key={sig.id} className="flex items-center gap-2 py-1.5 border-b border-graphite/20">
+                          <span className="font-mono text-[9px] text-bone/80 w-10">{sig.time}</span>
+                          <span className="w-1 h-4 bg-signal-cyan/40 rounded" />
+                          <span className="font-mono text-[10px] text-bone">{sig.title}</span>
+                        </div>
+                      ))
+                    )}
+                  </div>
+                </motion.div>
+              ) : sidebarView === 'tasks' ? (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="bg-carbon/40 border border-graphite/45 rounded-xl p-4 flex flex-col gap-3 font-body text-xs absolute inset-0 overflow-y-auto custom-scrollbar"
+                >
+                  <div className="flex items-center justify-between border-b border-graphite/30 pb-2">
+                    <span className="font-mono text-[9px] text-bone uppercase tracking-widest flex items-center gap-2">
+                      <List className="w-4 h-4 text-signal-lime" />
+                      Tareas del Día
+                    </span>
+                    <span className="font-mono text-[9px] text-bone/80">{signals.length} items</span>
+                  </div>
+
+                  {/* Add new task */}
+                  <form
+                    onSubmit={(e) => {
+                      e.preventDefault();
+                      const title = (e.target as HTMLFormElement).querySelector('input')?.value.trim();
+                      const time = (e.target as HTMLFormElement).querySelectorAll('input')[1]?.value.trim();
+                      if (!title || !time) return;
+                      const newSig: SignalEvent = {
+                        id: `TASK-${Date.now()}`,
+                        time,
+                        title,
+                        description: '',
+                        category: 'task',
+                        iconType: 'group',
+                        active: false,
+                      };
+                      setSignals(prev => [...prev, newSig]);
+                      onLogMessage('ok', `Tarea "${title}" agregada`);
+                      (e.target as HTMLFormElement).reset();
+                    }}
+                    className="flex gap-2"
+                  >
+                    <input
+                      name="title"
+                      placeholder="Nueva tarea..."
+                      className="flex-1 bg-[#04060A] border border-graphite focus:border-signal-lime outline-none rounded px-2 py-1.5 text-bone font-mono text-[10px]"
+                    />
+                    <input
+                      name="time"
+                      placeholder="HH:MM"
+                      className="w-16 bg-[#04060A] border border-graphite focus:border-signal-lime outline-none rounded px-2 py-1.5 text-bone font-mono text-[10px]"
+                    />
+                    <button type="submit" className="px-2 py-1.5 bg-signal-lime/20 border border-signal-lime/40 text-signal-lime rounded font-mono text-[9px] hover:bg-signal-lime/30 cursor-pointer transition-colors">
+                      +
+                    </button>
+                  </form>
+
+                  <div className="flex-1 overflow-y-auto custom-scrollbar">
+                    {signals.length === 0 ? (
+                      <div className="text-center py-8 text-bone/60 font-mono text-[9px] border border-dashed border-graphite/40 rounded-lg">
+                        SIN TAREAS REGISTRADAS
+                      </div>
+                    ) : (
+                      signals.map((sig) => (
+                        <div key={sig.id} className="flex items-center gap-2 py-2 border-b border-graphite/20 group">
+                            <button
+                              onClick={() => {
+                                const updated = signals.map(s => s.id === sig.id ? { ...s, active: !s.active } : s);
+                                setSignals(updated);
+                                onLogMessage('info', `Tarea "${sig.title}" ${sig.active ? 'marcada pendiente' : 'completada'}`);
+                              }}
+                              className={`w-4 h-4 rounded border flex items-center justify-center flex-shrink-0 transition-colors cursor-pointer ${
+                                sig.active ? 'bg-signal-lime/20 border-signal-lime/40 text-signal-lime' : 'border-graphite/60'
+                              }`}
+                            >
+                              {sig.active && <Check className="w-2.5 h-2.5" />}
+                            </button>
+
+                            {editingTaskId === sig.id ? (
+                              <form
+                                onSubmit={(e) => {
+                                  e.preventDefault();
+                                  const f = e.target as HTMLFormElement;
+                                  const newTitle = (f.elements.namedItem('editTitle') as HTMLInputElement)?.value.trim();
+                                  const newTime = (f.elements.namedItem('editTime') as HTMLInputElement)?.value.trim();
+                                  if (!newTitle || !newTime) return;
+                                  setSignals(prev => prev.map(s => s.id === sig.id ? { ...s, title: newTitle, time: newTime } : s));
+                                  setEditingTaskId(null);
+                                  onLogMessage('ok', `Tarea actualizada`);
+                                }}
+                                className="flex-1 flex gap-1"
+                              >
+                                <input name="editTitle" defaultValue={sig.title} className="flex-1 bg-[#04060A] border border-graphite focus:border-signal-lime outline-none rounded px-1.5 py-0.5 text-bone font-mono text-[10px]" />
+                                <input name="editTime" defaultValue={sig.time} className="w-14 bg-[#04060A] border border-graphite focus:border-signal-lime outline-none rounded px-1.5 py-0.5 text-bone font-mono text-[10px]" />
+                                <button type="submit" className="px-1.5 py-0.5 text-signal-lime text-[8px] cursor-pointer font-mono">OK</button>
+                              </form>
+                            ) : (
+                              <>
+                                <div className="flex-1 min-w-0">
+                                  <span className={`font-mono text-[10px] text-bone block truncate ${sig.active ? 'line-through opacity-50' : ''}`}>{sig.title}</span>
+                                  <span className="font-mono text-[9px] text-bone/80">{sig.time}</span>
+                                </div>
+                                <span className={`font-mono text-[8px] uppercase px-1.5 py-0.5 rounded flex-shrink-0 ${
+                                  sig.active ? 'bg-signal-lime/10 text-signal-lime' : 'bg-graphite/30 text-bone'
+                                }`}>
+                                  {sig.active ? 'Hecho' : 'Pendiente'}
+                                </span>
+                                <div className="flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                                  <button onClick={() => setEditingTaskId(sig.id)} className="p-1 text-bone/80 hover:text-bone cursor-pointer" title="Editar">
+                                    <Edit2 className="w-3 h-3" />
+                                  </button>
+                                  <button
+                                    onClick={() => {
+                                      setSignals(prev => prev.filter(s => s.id !== sig.id));
+                                      onLogMessage('info', `Tarea "${sig.title}" eliminada`);
+                                    }}
+                                    className="p-1 text-bone/80 hover:text-signal-amber cursor-pointer"
+                                    title="Eliminar"
+                                  >
+                                    <Trash2 className="w-3 h-3" />
+                                  </button>
+                                </div>
+                              </>
+                            )}
+                          </div>
+                      ))
+                    )}
+                  </div>
+                </motion.div>
               ) : (
                 <motion.div 
                   initial={{ opacity: 0 }}
@@ -822,7 +1088,7 @@ export default function DashboardView({
                               <span className={`font-mono text-[10px] px-2 py-0.5 rounded font-bold uppercase tracking-wide ${
                                 isActive 
                                   ? 'bg-signal-cyan/10 text-signal-cyan border border-signal-cyan/20' 
-                                  : 'bg-[#1E2435]/40 text-[#7A839E] border border-transparent'
+                                  : 'bg-[#1E2435]/40 text-ash border border-transparent'
                               }`}>
                                 {sig.time}
                               </span>
@@ -846,7 +1112,7 @@ export default function DashboardView({
                                 className={`p-1 rounded border transition-all ${
                                   isActive 
                                     ? 'bg-signal-lime/10 border-signal-lime/40 text-signal-lime hover:bg-signal-lime/20' 
-                                    : 'bg-carbon/60 border-graphite/60 text-slate hover:text-bone hover:border-slate/100'
+                                    : 'bg-carbon/60 border-graphite/60 text-ash/80 hover:text-bone hover:border-slate/100'
                                 }`}
                                 title={isActive ? "Pausar Sincronización Google" : "Vincular a Google Calendar"}
                               >
@@ -873,7 +1139,7 @@ export default function DashboardView({
                                   e.stopPropagation();
                                   handleRemoveSignal(sig.id);
                                 }}
-                                className="p-1 rounded border bg-signal-magenta/5 border-signal-magenta/25 text-signal-magenta hover:bg-signal-magenta/20 hover:border-signal-magenta/60 transition-all"
+                                className="p-1 rounded border bg-signal-amber/5 border-signal-amber/25 text-signal-amber hover:bg-signal-amber/20 hover:border-signal-amber/60 transition-all"
                                 title="Purgar Reunión"
                               >
                                 <Trash2 className="w-3 h-3" />
@@ -885,7 +1151,7 @@ export default function DashboardView({
                             {sig.title}
                           </div>
 
-                          <div className="flex justify-between items-center text-[8.5px] font-mono text-[#7A839E]/80 uppercase">
+                          <div className="flex justify-between items-center text-[8.5px] font-mono text-ash/60 uppercase">
                             <span>REG-ID: {sig.id}</span>
                             <span className="text-signal-cyan">Google Calendar Sync ✓</span>
                           </div>

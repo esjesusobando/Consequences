@@ -9,6 +9,7 @@ export interface SignalEvent {
   syncedToGoogleCalendar?: boolean;
   googleEventId?: string;
   sessionUrl?: string;
+  date?: string; // YYYY-MM-DD for calendar day association
 }
 
 export type AccentColor = 'cyan' | 'magenta' | 'lime' | 'amber' | 'tokyo' | 'custom';

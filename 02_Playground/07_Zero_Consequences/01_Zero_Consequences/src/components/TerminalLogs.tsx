@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { TerminalLine, AccentColor } from '../types';
-import { Terminal as TermIcon, Shield, Database, Wifi, Cpu } from 'lucide-react';
+import { Terminal as TermIcon, Shield, Database, Wifi, Cpu, X } from 'lucide-react';
 
 interface TerminalLogsProps {
   logLines: TerminalLine[];
@@ -12,6 +12,7 @@ interface TerminalLogsProps {
   onClearLogs: () => void;
   onLogMessage: (type: 'info' | 'ok' | 'warn' | 'err', text: string) => void;
   onInjectSignalFromCmd: (title: string, time: string) => void;
+  onExit: () => void;
 }
 
 export default function TerminalLogs({
@@ -24,9 +25,19 @@ export default function TerminalLogs({
   onClearLogs,
   onLogMessage,
   onInjectSignalFromCmd,
+  onExit,
 }: TerminalLogsProps) {
   const [cmdInput, setCmdInput] = useState<string>('');
   const containerRef = useRef<HTMLDivElement | null>(null);
+
+  // Escape to exit terminal
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onExit();
+    };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, [onExit]);
 
   // Auto scroll output
   useEffect(() => {

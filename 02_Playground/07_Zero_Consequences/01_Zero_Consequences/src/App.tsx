@@ -5,6 +5,7 @@ import DashboardView from './components/DashboardView';
 import DesignSystemView from './components/DesignSystemView';
 import TerminalLogs from './components/TerminalLogs';
 import { initAuth } from './lib/googleAuth';
+import CommandPalette from './components/CommandPalette';
 
 // Brand New Custom Views
 import LinearOSView from './components/LinearOSView';
@@ -35,6 +36,9 @@ export default function App() {
   
   // Settings Drawer Toggle state
   const [isSettingsOpen, setIsSettingsOpen] = useState<boolean>(false);
+
+  // Command Palette state
+  const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState<boolean>(false);
 
   // Focus Mode — hides all chrome for distraction-free dashboard
   const [focusMode, setFocusMode] = useState<boolean>(false);
@@ -358,8 +362,19 @@ export default function App() {
     };
   }, []);
 
-  // Custom upcoming Signals Registry for countdown sync
-  const [signals, setSignals] = useState<SignalEvent[]>(INITIAL_SIGNALS);
+  // Custom upcoming Signals Registry for countdown sync (persisted to localStorage)
+  const [signals, setSignals] = useState<SignalEvent[]>(() => {
+    try {
+      const saved = localStorage.getItem('zc_signals');
+      if (saved) return JSON.parse(saved);
+    } catch {}
+    return INITIAL_SIGNALS;
+  });
+
+  // Persist signals to localStorage
+  useEffect(() => {
+    localStorage.setItem('zc_signals', JSON.stringify(signals));
+  }, [signals]);
 
   // Dynamic Metrics Simulation
   const [metrics, setMetrics] = useState<MetricStats>({
@@ -574,7 +589,7 @@ export default function App() {
         '--color-bone': '#111111',
         '--color-signal-cyan': '#156BFF',
         '--color-signal-magenta': '#4B5DFF',
-        '--color-signal-lime': '#B6FF4D',
+        '--color-signal-lime': '#1A7A1A', // dark green visible on light bg
         '--color-signal-amber': '#5BE8FF',
       };
       Object.entries(lightNeoCraftColors).forEach(([key, val]) => {
@@ -673,10 +688,10 @@ export default function App() {
           setAccent(newAccent);
           logMessage('info', `Color de acento activo actualizado: ${newAccent.toUpperCase()}`);
         }}
-        speedMbps={metrics.speedMbps}
         onOpenSettings={() => setIsSettingsOpen(true)}
         focusMode={focusMode}
         onToggleFocus={handleEyeClick}
+        onOpenCommandPalette={() => setIsCommandPaletteOpen(true)}
       />
 
       {/* Consolidated Settings & Aesthetics Drawer Panel */}
@@ -690,6 +705,14 @@ export default function App() {
         onLogMessage={logMessage}
         focusMode={focusMode}
         setFocusMode={setFocusMode}
+      />
+
+      {/* Command Palette Launcher (⌘K) */}
+      <CommandPalette
+        isOpen={isCommandPaletteOpen}
+        onClose={() => setIsCommandPaletteOpen(false)}
+        onSelectTab={(tab) => setActiveTab(tab as typeof activeTab)}
+        activeTab={activeTab}
       />
 
       {/* Left side fixed rail icons menu */}
@@ -709,7 +732,7 @@ export default function App() {
         {focusMode ? (
           /* ── FOCUS MODE: countdown 60% + notes 40% ── */
           <div className="flex flex-col h-full">
-            <div className="flex-[3] min-h-0 overflow-hidden">
+            <div className="flex-[3] min-h-0 overflow-hidden flex flex-col">
               <DashboardView 
                 signals={signals}
                 setSignals={setSignals}
@@ -823,38 +846,13 @@ export default function App() {
               onClearLogs={onClearLogs}
               onLogMessage={logMessage}
               onInjectSignalFromCmd={handleInjectSignalFromCmd}
+              onExit={() => setActiveTab('dashboard')}
             />
           )}
         </div>
         )}
 
-        {/* Bottom Status Grid Bar */}
-        {!focusMode && (
-        <footer className="h-9 bg-void border-t border-graphite/30 flex items-center justify-between px-6 z-40 select-none text-[#7A839E] text-[10px] flex-shrink-0">
-          <div className="flex items-center gap-6">
-            <div className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 bg-signal-lime rounded-full"></div>
-              <span className="font-mono text-signal-lime uppercase tracking-wider">SYSTEM ACTIVE - SOTA</span>
-            </div>
-            <div className="w-[1px] h-3 bg-graphite/50 ml-1"></div>
-            <div className="font-mono uppercase tracking-widest hidden sm:inline">
-              NET_PROTOCOL: {metrics.netProtocol}
-            </div>
-          </div>
-
-          <div className="flex items-center gap-6">
-            <span className="font-mono text-[9px] text-slate/80 hidden lg:inline">ia.strongmagazine@gmail.com</span>
-            <div className="flex items-center gap-2">
-              <span className="w-1 h-3 bg-signal-cyan/50 rounded-sm" />
-              <span className="font-mono">POSTGRES_SQL_DISPATCH: LINKED</span>
-            </div>
-            <div className="flex items-center gap-2 text-signal-lime/80 font-bold font-mono">
-              <span className="w-1.5 h-1.5 bg-signal-lime rounded-full animate-pulse" />
-              <span>{metrics.speedMbps} MBPS</span>
-            </div>
-          </div>
-        </footer>
-        )}
+        
 
       </main>
     </div>
