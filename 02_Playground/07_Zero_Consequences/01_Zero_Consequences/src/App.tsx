@@ -12,6 +12,7 @@ import PersonalOsView from './components/PersonalOsView';
 import OperationsOSView from './components/OperationsOSView';
 import AnalyticsOSView from './components/AnalyticsOSView';
 import SettingsDrawer from './components/SettingsDrawer';
+import FocusNotesPanel from './components/FocusNotesPanel';
 
 // Types & Data
 import { SignalEvent, AccentColor, TerminalLine, MetricStats, Project, Issue, Product, Warehouse, ProviderProposal, PurchaseOrder, PresentationConfig, AuditLog } from './types';
@@ -35,9 +36,24 @@ export default function App() {
   // Settings Drawer Toggle state
   const [isSettingsOpen, setIsSettingsOpen] = useState<boolean>(false);
 
+  // Focus Mode — hides all chrome for distraction-free dashboard
+  const [focusMode, setFocusMode] = useState<boolean>(false);
+
+  // Eye button: simple toggle for focus mode
+  const handleEyeClick = () => {
+    setFocusMode(f => !f);
+  };
+
   // Layout hidden panel states
   const [hideLeftPanel, setHideLeftPanel] = useState<boolean>(false);
   const [hideRightPanel, setHideRightPanel] = useState<boolean>(false);
+
+  // Force dashboard tab when focus mode activates
+  useEffect(() => {
+    if (focusMode) {
+      setActiveTab('dashboard');
+    }
+  }, [focusMode]);
 
   // Keybindings for toggling: Ctrl+Tab for left rail, Tab for right sidebar
   useEffect(() => {
@@ -58,7 +74,7 @@ export default function App() {
   }, [hideLeftPanel, hideRightPanel]);
   
   // Navigation Tabs state: 'dashboard' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal'
-  const [activeTab, setActiveTab] = useState<'dashboard' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal'>('personal_os');
+  const [activeTab, setActiveTab] = useState<'dashboard' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal'>('dashboard');
 
   // CUSTOM CORE OS SEED STATES
   const [projects, setProjects] = useState<Project[]>(INITIAL_PROJECTS);
@@ -91,7 +107,8 @@ export default function App() {
       customS: 45,
       customL: 65,
       panelsSwapped: false,
-      sidebarWidth: 384
+      sidebarWidth: 384,
+      themeMode: 'dark'
     };
   });
 
@@ -470,8 +487,8 @@ export default function App() {
         '--color-carbon': '#FAFBFC',
         '--color-graphite': '#E2E5EB',
         '--color-steel': '#D1D5DB',
-        '--color-slate': '#9CA3AF',
-        '--color-ash': '#6B7280',
+        '--color-slate': '#6B7280',
+        '--color-ash': '#4B5563',
         '--color-bone': '#1F2937',
         '--color-signal-cyan': '#0066FF',
         '--color-signal-magenta': '#DC2626',
@@ -552,7 +569,7 @@ export default function App() {
         '--color-carbon': '#FFFFFF',
         '--color-graphite': '#D3D8E2',
         '--color-steel': '#B9C2D1',
-        '--color-slate': '#6A768F',
+        '--color-slate': '#4B5563',
         '--color-ash': '#333D52',
         '--color-bone': '#111111',
         '--color-signal-cyan': '#156BFF',
@@ -647,7 +664,7 @@ export default function App() {
       {/* Grid line overlay */}
       <div className="absolute inset-0 bg-grid pointer-events-none opacity-20 z-0" />
 
-      {/* Dynamic Top Header with Navigation */}
+      {/* Dynamic Top Header with Navigation — always visible */}
       <TopNavBar 
         activeTab={activeTab} 
         setActiveTab={setActiveTab} 
@@ -658,10 +675,8 @@ export default function App() {
         }}
         speedMbps={metrics.speedMbps}
         onOpenSettings={() => setIsSettingsOpen(true)}
-        hideLeftPanel={hideLeftPanel}
-        hideRightPanel={hideRightPanel}
-        onToggleLeftPanel={() => setHideLeftPanel(p => !p)}
-        onToggleRightPanel={() => setHideRightPanel(p => !p)}
+        focusMode={focusMode}
+        onToggleFocus={handleEyeClick}
       />
 
       {/* Consolidated Settings & Aesthetics Drawer Panel */}
@@ -673,22 +688,49 @@ export default function App() {
         accent={accent}
         setAccent={setAccent}
         onLogMessage={logMessage}
+        focusMode={focusMode}
+        setFocusMode={setFocusMode}
       />
 
       {/* Left side fixed rail icons menu */}
-      <SideNavBar 
-        activeTab={activeTab} 
-        setActiveTab={setActiveTab} 
-        accent={accent}
-        onSystemReset={handleSystemReset}
-        hideLeftPanel={hideLeftPanel}
-      />
+      {!focusMode && (
+        <SideNavBar 
+          activeTab={activeTab} 
+          setActiveTab={setActiveTab} 
+          accent={accent}
+          onSystemReset={handleSystemReset}
+          hideLeftPanel={hideLeftPanel}
+        />
+      )}
 
       {/* Main Container Assembly Area */}
-      <main className={`pt-14 ${hideLeftPanel ? 'pl-0' : 'md:pl-14'} h-[calc(100vh-56px)] flex flex-col relative w-full overflow-hidden z-10 transition-all duration-300`}>
+      <main className={`${focusMode ? 'pt-0' : 'pt-14'} ${hideLeftPanel || focusMode ? 'pl-0' : 'md:pl-14'} flex flex-col relative w-full overflow-hidden z-10 transition-all duration-300`} style={{ height: focusMode ? '100vh' : 'calc(100vh - 56px)' }}>
         
-        {/* Animated slide switch rendering for views */}
-        <div className="flex-1 overflow-hidden flex flex-col">
+        {focusMode ? (
+          /* ── FOCUS MODE: countdown 60% + notes 40% ── */
+          <div className="flex flex-col h-full">
+            <div className="flex-[3] min-h-0 overflow-hidden">
+              <DashboardView 
+                signals={signals}
+                setSignals={setSignals}
+                accent={accent}
+                nodeStatus={metrics.nodeStatus}
+                onLogMessage={logMessage}
+                hideRightPanel={true}
+                config={presentationConfig}
+                user={user}
+                setUser={setUser}
+                googleToken={googleToken}
+                setGoogleToken={setGoogleToken}
+              />
+            </div>
+            <div className="flex-[2] min-h-0 overflow-hidden border-t border-graphite/30">
+              <FocusNotesPanel />
+            </div>
+          </div>
+        ) : (
+          /* ── NORMAL MODE ── */
+          <div className="flex-1 overflow-hidden flex flex-col">
           
           {/* TAB 1: MEETINGS COUNTDOWN HUD */}
           {activeTab === 'dashboard' && (
@@ -784,8 +826,10 @@ export default function App() {
             />
           )}
         </div>
+        )}
 
         {/* Bottom Status Grid Bar */}
+        {!focusMode && (
         <footer className="h-9 bg-void border-t border-graphite/30 flex items-center justify-between px-6 z-40 select-none text-[#7A839E] text-[10px] flex-shrink-0">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
@@ -810,6 +854,7 @@ export default function App() {
             </div>
           </div>
         </footer>
+        )}
 
       </main>
     </div>

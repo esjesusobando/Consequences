@@ -11,7 +11,7 @@
       ],
       "method": "auto",
       "success_rate": 1.0,
-      "times_applied": 20
+      "times_applied": 35
     },
     {
       "severity": "MEDIUM",
@@ -24,7 +24,7 @@
       ],
       "method": "auto",
       "success_rate": 1.0,
-      "times_applied": 4
+      "times_applied": 7
     },
     {
       "severity": "MEDIUM",
@@ -37,7 +37,7 @@
       ],
       "method": "auto",
       "success_rate": 1.0,
-      "times_applied": 192
+      "times_applied": 336
     }
   ],
   "fixes_history": [
@@ -2838,6 +2838,2112 @@
     },
     {
       "timestamp": "2026-06-10T09:05:06.965199",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: engine.py",
+        "description": "Aparece en 5 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 5 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.718160",
+      "issue": {
+        "severity": "HIGH",
+        "category": "structure",
+        "path": "C:\\Users\\sebas\\Desktop\\Think_Different\\01_Core",
+        "description": "Directorio requerido no existe",
+        "suggestion": "Crear 01_Core/"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "high|structure|directorio requerido no existe"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.722000",
+      "issue": {
+        "severity": "HIGH",
+        "category": "structure",
+        "path": "C:\\Users\\sebas\\Desktop\\Think_Different\\02_Knowledge",
+        "description": "Directorio requerido no existe",
+        "suggestion": "Crear 02_Knowledge/"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "high|structure|directorio requerido no existe"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.730821",
+      "issue": {
+        "severity": "HIGH",
+        "category": "structure",
+        "path": "C:\\Users\\sebas\\Desktop\\Think_Different\\03_Tasks",
+        "description": "Directorio requerido no existe",
+        "suggestion": "Crear 03_Tasks/"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "high|structure|directorio requerido no existe"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.734366",
+      "issue": {
+        "severity": "HIGH",
+        "category": "structure",
+        "path": "C:\\Users\\sebas\\Desktop\\Think_Different\\04_Operations",
+        "description": "Directorio requerido no existe",
+        "suggestion": "Crear 04_Operations/"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "high|structure|directorio requerido no existe"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.736879",
+      "issue": {
+        "severity": "HIGH",
+        "category": "structure",
+        "path": "C:\\Users\\sebas\\Desktop\\Think_Different\\05_Archive",
+        "description": "Directorio requerido no existe",
+        "suggestion": "Crear 05_Archive/"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "high|structure|directorio requerido no existe"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.739135",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "docs",
+        "path": "Version mismatch entre README y AGENTS",
+        "description": "README: v5.0, AGENTS: v4.9",
+        "suggestion": "Unificar versiones"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|docs|readme: v5.0, agents: v4.9"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.742379",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: generate_image.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.747122",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 01_Spider_Brainstorm.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.750911",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 06_AntMan_Lfg_Lite.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.754465",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 07_Doc_Strange_Lfg.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.763175",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 73_Avengers_Workflow_v3.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.769148",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 11_Sync_Notes.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.774350",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 08_Ritual_Cierre.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.788601",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 14_Morning_Standup.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.792579",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 15_Weekly_Review.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.799127",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 17_Ritual_Dominical.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.805207",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 19_Generate_Progress.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.818218",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 50_System_Health_Monitor.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.823582",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 87_Iron_Man_Gen.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.834503",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 34_Skill_Auditor.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.840345",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 02_Professor_X_Plan.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.846488",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: check-blockers.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.849254",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: format-standup.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.852195",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: archive-completed.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.855252",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: weekly-metrics.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.858983",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: finish-branch.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.865845",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: run-tests.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.869774",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 09_Backlog_Triage.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.872593",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: create-epic.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.879650",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 18_Generacion_Contenido.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.885159",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: core.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.888689",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: search.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.894392",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: __init__.py",
+        "description": "Aparece en 32 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 32 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.898458",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: generate_report.py",
+        "description": "Aparece en 4 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 4 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.901641",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: generate_review.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.905403",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: aggregate_benchmark.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.911092",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: improve_description.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.914518",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: package_skill.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.917175",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: quick_validate.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.919820",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: run_eval.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.922609",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: run_loop.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.931894",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: utils.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.937600",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: run.py",
+        "description": "Aparece en 25 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 25 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.947699",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 57_Repo_Sync_Auditor.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.951548",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 13_Validate_Stack.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.954326",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: skill_validator.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.957934",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 33_Parallel_Audit_Pro.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.964320",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 16_Clean_System.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.968338",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 39_Repair_Corruption.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.972073",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: config_paths.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.984120",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: recursive_improvement_engine.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.991360",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: HUB_SOTA.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.995788",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 00_Context_Reset.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T01:05:05.999726",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: engine.py",
+        "description": "Aparece en 5 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 5 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.265773",
+      "issue": {
+        "severity": "HIGH",
+        "category": "structure",
+        "path": "C:\\Users\\sebas\\Desktop\\Think_Different\\01_Core",
+        "description": "Directorio requerido no existe",
+        "suggestion": "Crear 01_Core/"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "high|structure|directorio requerido no existe"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.270348",
+      "issue": {
+        "severity": "HIGH",
+        "category": "structure",
+        "path": "C:\\Users\\sebas\\Desktop\\Think_Different\\02_Knowledge",
+        "description": "Directorio requerido no existe",
+        "suggestion": "Crear 02_Knowledge/"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "high|structure|directorio requerido no existe"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.274027",
+      "issue": {
+        "severity": "HIGH",
+        "category": "structure",
+        "path": "C:\\Users\\sebas\\Desktop\\Think_Different\\03_Tasks",
+        "description": "Directorio requerido no existe",
+        "suggestion": "Crear 03_Tasks/"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "high|structure|directorio requerido no existe"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.276527",
+      "issue": {
+        "severity": "HIGH",
+        "category": "structure",
+        "path": "C:\\Users\\sebas\\Desktop\\Think_Different\\04_Operations",
+        "description": "Directorio requerido no existe",
+        "suggestion": "Crear 04_Operations/"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "high|structure|directorio requerido no existe"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.282138",
+      "issue": {
+        "severity": "HIGH",
+        "category": "structure",
+        "path": "C:\\Users\\sebas\\Desktop\\Think_Different\\05_Archive",
+        "description": "Directorio requerido no existe",
+        "suggestion": "Crear 05_Archive/"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "high|structure|directorio requerido no existe"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.284768",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "docs",
+        "path": "Version mismatch entre README y AGENTS",
+        "description": "README: v5.0, AGENTS: v4.9",
+        "suggestion": "Unificar versiones"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|docs|readme: v5.0, agents: v4.9"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.287285",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: generate_image.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.290578",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 01_Spider_Brainstorm.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.293100",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 06_AntMan_Lfg_Lite.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.298964",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 07_Doc_Strange_Lfg.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.301750",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 73_Avengers_Workflow_v3.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.304079",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 11_Sync_Notes.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.306594",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 08_Ritual_Cierre.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.308735",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 14_Morning_Standup.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.311012",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 15_Weekly_Review.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.320734",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 17_Ritual_Dominical.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.323055",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 19_Generate_Progress.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.325304",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 50_System_Health_Monitor.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.329143",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 87_Iron_Man_Gen.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.331403",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 34_Skill_Auditor.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.333694",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 02_Professor_X_Plan.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.336070",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: check-blockers.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.338546",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: format-standup.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.341040",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: archive-completed.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.345110",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: weekly-metrics.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.348229",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: finish-branch.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.350784",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: run-tests.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.353160",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 09_Backlog_Triage.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.355442",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: create-epic.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.357786",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 18_Generacion_Contenido.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.363400",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: core.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.366063",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: search.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.368468",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: __init__.py",
+        "description": "Aparece en 32 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 32 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.370856",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: generate_report.py",
+        "description": "Aparece en 4 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 4 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.373246",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: generate_review.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.382189",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: aggregate_benchmark.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.385682",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: improve_description.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.388934",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: package_skill.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.392861",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: quick_validate.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.399345",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: run_eval.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.402153",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: run_loop.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.404539",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: utils.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.406906",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: run.py",
+        "description": "Aparece en 25 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 25 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.409355",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 57_Repo_Sync_Auditor.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.416071",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 13_Validate_Stack.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.419250",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: skill_validator.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.421807",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 33_Parallel_Audit_Pro.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.424137",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 16_Clean_System.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.426532",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 39_Repair_Corruption.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.430707",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: config_paths.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.434063",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: recursive_improvement_engine.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.436727",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: HUB_SOTA.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.439230",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 00_Context_Reset.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T09:05:13.441990",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: engine.py",
+        "description": "Aparece en 5 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 5 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:48.022279",
+      "issue": {
+        "severity": "HIGH",
+        "category": "structure",
+        "path": "C:\\Users\\sebas\\Desktop\\Think_Different\\01_Core",
+        "description": "Directorio requerido no existe",
+        "suggestion": "Crear 01_Core/"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "high|structure|directorio requerido no existe"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:48.557114",
+      "issue": {
+        "severity": "HIGH",
+        "category": "structure",
+        "path": "C:\\Users\\sebas\\Desktop\\Think_Different\\02_Knowledge",
+        "description": "Directorio requerido no existe",
+        "suggestion": "Crear 02_Knowledge/"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "high|structure|directorio requerido no existe"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:48.682381",
+      "issue": {
+        "severity": "HIGH",
+        "category": "structure",
+        "path": "C:\\Users\\sebas\\Desktop\\Think_Different\\03_Tasks",
+        "description": "Directorio requerido no existe",
+        "suggestion": "Crear 03_Tasks/"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "high|structure|directorio requerido no existe"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:48.687224",
+      "issue": {
+        "severity": "HIGH",
+        "category": "structure",
+        "path": "C:\\Users\\sebas\\Desktop\\Think_Different\\04_Operations",
+        "description": "Directorio requerido no existe",
+        "suggestion": "Crear 04_Operations/"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "high|structure|directorio requerido no existe"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:48.822225",
+      "issue": {
+        "severity": "HIGH",
+        "category": "structure",
+        "path": "C:\\Users\\sebas\\Desktop\\Think_Different\\05_Archive",
+        "description": "Directorio requerido no existe",
+        "suggestion": "Crear 05_Archive/"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "high|structure|directorio requerido no existe"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:48.962037",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "docs",
+        "path": "Version mismatch entre README y AGENTS",
+        "description": "README: v5.0, AGENTS: v4.9",
+        "suggestion": "Unificar versiones"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|docs|readme: v5.0, agents: v4.9"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:49.627346",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: generate_image.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:49.639424",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 01_Spider_Brainstorm.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:51.596486",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 06_AntMan_Lfg_Lite.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:52.924293",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 07_Doc_Strange_Lfg.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.037090",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 73_Avengers_Workflow_v3.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.048372",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 11_Sync_Notes.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.052904",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 08_Ritual_Cierre.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.095748",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 14_Morning_Standup.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.099980",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 15_Weekly_Review.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.104376",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 17_Ritual_Dominical.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.231161",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 19_Generate_Progress.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.237376",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 50_System_Health_Monitor.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.253745",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 87_Iron_Man_Gen.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.266197",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 34_Skill_Auditor.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.270088",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 02_Professor_X_Plan.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.273850",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: check-blockers.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.347583",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: format-standup.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.353746",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: archive-completed.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.379745",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: weekly-metrics.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.387418",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: finish-branch.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.482252",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: run-tests.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.508388",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 09_Backlog_Triage.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.515556",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: create-epic.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.526645",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 18_Generacion_Contenido.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.532936",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: core.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.537264",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: search.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.638768",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: __init__.py",
+        "description": "Aparece en 32 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 32 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.648502",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: generate_report.py",
+        "description": "Aparece en 4 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 4 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.653363",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: generate_review.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.883703",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: aggregate_benchmark.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.894948",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: improve_description.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:53.900765",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: package_skill.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:54.018193",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: quick_validate.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:54.023424",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: run_eval.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:54.029744",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: run_loop.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:54.040291",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: utils.py",
+        "description": "Aparece en 3 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 3 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:54.049601",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: run.py",
+        "description": "Aparece en 25 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 25 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:54.054233",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 57_Repo_Sync_Auditor.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:54.150496",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 13_Validate_Stack.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:54.156128",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: skill_validator.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:54.164833",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 33_Parallel_Audit_Pro.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:54.170735",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 16_Clean_System.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:54.183657",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 39_Repair_Corruption.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:54.188743",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: config_paths.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:54.265229",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: recursive_improvement_engine.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:54.271416",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: HUB_SOTA.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:54.279006",
+      "issue": {
+        "severity": "MEDIUM",
+        "category": "structure",
+        "path": "Script duplicado: 00_Context_Reset.py",
+        "description": "Aparece en 2 ubicaciones",
+        "suggestion": "Consolidar o eliminar duplicados"
+      },
+      "success": true,
+      "method": "auto",
+      "issue_hash": "medium|structure|aparece en 2 ubicaciones"
+    },
+    {
+      "timestamp": "2026-06-11T18:16:54.517087",
       "issue": {
         "severity": "MEDIUM",
         "category": "structure",

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Terminal as TerminalIcon, Menu, PanelLeft, PanelRight } from 'lucide-react';
+import { Terminal as TerminalIcon, Menu, Eye, EyeOff } from 'lucide-react';
 import { AccentColor } from '../types';
 import Logo from './Logo';
 
@@ -10,10 +10,8 @@ interface TopNavBarProps {
   onAccentChange: (accent: AccentColor) => void;
   speedMbps: number;
   onOpenSettings: () => void;
-  hideLeftPanel: boolean;
-  hideRightPanel: boolean;
-  onToggleLeftPanel: () => void;
-  onToggleRightPanel: () => void;
+  focusMode: boolean;
+  onToggleFocus: () => void;
 }
 
 export default function TopNavBar({
@@ -23,10 +21,8 @@ export default function TopNavBar({
   onAccentChange,
   speedMbps,
   onOpenSettings,
-  hideLeftPanel,
-  hideRightPanel,
-  onToggleLeftPanel,
-  onToggleRightPanel,
+  focusMode,
+  onToggleFocus,
 }: TopNavBarProps) {
   const [clockText, setClockText] = useState<string>('');
 
@@ -43,9 +39,8 @@ export default function TopNavBar({
       
       const hrs = String(now.getHours()).padStart(2, '0');
       const mins = String(now.getMinutes()).padStart(2, '0');
-      const secs = String(now.getSeconds()).padStart(2, '0');
       
-      setClockText(`${dayName}, ${dayNum} ${monthName} ${yearNum} — ${hrs}:${mins}:${secs}`);
+      setClockText(`${dayName}, ${dayNum} ${monthName} ${yearNum} — ${hrs}:${mins}`);
     };
 
     updateTime();
@@ -83,7 +78,8 @@ export default function TopNavBar({
 
   return (
     <header className="bg-void/85 backdrop-blur-md border-b border-graphite/40 w-full top-0 flex justify-between items-center px-6 h-14 z-50 fixed select-none text-on-surface">
-      <div className="flex items-center gap-6">
+      {/* LEFT: Logo + Clock + Nav links */}
+      <div className="flex items-center gap-5">
         <div 
           onClick={() => setActiveTab('personal_os')}
           className="cursor-pointer transition-all duration-300 flex items-center"
@@ -91,88 +87,71 @@ export default function TopNavBar({
           <Logo size={24} />
         </div>
 
-        {/* Dynamic Horizontal Header Navigator list - only visible when left menu/sidebar is hidden */}
-        {hideLeftPanel && (
-          <div className="hidden xl:flex gap-4 items-center animate-fade-in">
-            {navLinks.map((link) => {
-              const active = activeTab === link.id;
-              return (
-                <button
-                  key={link.id}
-                  onClick={() => setActiveTab(link.id)}
-                  className={`font-mono text-[10px] tracking-wider transition-all duration-200 pb-1 cursor-pointer border-b ${
-                    active 
-                      ? `${getAccentTextClass()} ${getAccentBorderClass()} font-bold` 
-                      : 'text-ash border-transparent hover:text-bone hover:border-gray-700'
-                  }`}
-                >
-                  {link.label}
-                </button>
-              );
-            })}
-          </div>
-        )}
+        {/* Clock — next to logo */}
+        <div className="flex items-center text-[10px] font-mono text-bone/70 tracking-wider">
+          <span>{clockText}</span>
+        </div>
+
+        {/* Divider */}
+        <div className="w-[1px] h-4 bg-graphite/30" />
+
+        {/* Nav links — horizontal on xl+ */}
+        <div className="hidden xl:flex gap-4 items-center animate-fade-in">
+          {navLinks.map((link) => {
+            const active = activeTab === link.id;
+            return (
+              <button
+                key={link.id}
+                onClick={() => setActiveTab(link.id)}
+                className={`font-mono text-[10px] tracking-wider transition-all duration-200 pb-1 cursor-pointer border-b ${
+                  active 
+                    ? `${getAccentTextClass()} ${getAccentBorderClass()} font-bold` 
+                    : 'text-ash border-transparent hover:text-bone hover:border-gray-700'
+                }`}
+              >
+                {link.label}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
-      <div className="flex items-center gap-4 text-ash">
-        
-        {/* Active tab short description for smaller screens */}
-        <span className="xl:hidden font-mono text-[10px] bg-carbon p-1 px-2.5 rounded border border-graphite text-bone uppercase tracking-widest">
+      {/* RIGHT: Hamburger + Eye + Terminal — same size, aligned */}
+      <div className="flex items-center gap-1.5">
+        {/* Active tab label — small screens only */}
+        <span className="xl:hidden font-mono text-[9px] bg-carbon p-1 px-2 rounded border border-graphite text-bone uppercase tracking-widest mr-2">
           {activeTab.replace('_', ' ')}
         </span>
 
-        {/* Controls to show/hide side bars (Left rail, Right detail bar) and localized clock */}
-        <div className="flex items-center border border-graphite/40 bg-[#0c101a]/80 rounded-lg p-1 gap-3 px-3">
-          <div className="flex items-center gap-1.5">
-            <button
-              type="button"
-              onClick={onToggleLeftPanel}
-              className={`p-1 rounded transition-all duration-200 cursor-pointer ${
-                hideLeftPanel 
-                  ? 'text-signal-magenta bg-signal-magenta/10 border border-signal-magenta/20' 
-                  : 'text-slate hover:text-bone hover:bg-carbon border border-transparent'
-              }`}
-              title="Ocultar/Mostrar panel izquierdo (Atajo: Ctrl+Tab)"
-            >
-              <PanelLeft className="w-3.5 h-3.5" />
-            </button>
-            <button
-              type="button"
-              onClick={onToggleRightPanel}
-              className={`p-1 rounded transition-all duration-200 cursor-pointer ${
-                hideRightPanel 
-                  ? 'text-signal-magenta bg-signal-magenta/10 border border-signal-magenta/20' 
-                  : 'text-slate hover:text-bone hover:bg-carbon border border-transparent'
-              }`}
-              title="Ocultar/Mostrar panel derecho (Atajo: Tab)"
-            >
-              <PanelRight className="w-3.5 h-3.5" />
-            </button>
-          </div>
-
-          <div className="w-[1px] h-3.5 bg-graphite/35" />
-
-          {/* Clock: Day, Date, and Hour */}
-          <div className="flex items-center text-[10px] font-mono text-bone tracking-wider">
-            <span>{clockText}</span>
-          </div>
-        </div>
-
-        {/* Consolidated hamburger icon button ONLY (no text) to open personalization draw */}
+        {/* Hamburger — settings */}
         <button 
           onClick={onOpenSettings}
-          className="p-2 bg-[#131826]/70 hover:bg-[#1E2435] border border-graphite/60 hover:border-signal-cyan/50 text-[#C7CCD8] hover:text-signal-cyan rounded-lg cursor-pointer transition-all"
-          title="Abrir Menú de Personalización"
+          className="w-8 h-8 flex items-center justify-center bg-[#131826]/70 hover:bg-[#1E2435] border border-graphite/60 hover:border-signal-cyan/50 text-[#C7CCD8] hover:text-signal-cyan rounded-lg cursor-pointer transition-all"
+          title="Personalización"
         >
-          <Menu className="w-4 h-4 text-signal-cyan" />
+          <Menu className="w-3.5 h-3.5" />
         </button>
 
+        {/* Eye — Focus Mode */}
+        <button 
+          onClick={onToggleFocus}
+          className={`w-8 h-8 flex items-center justify-center rounded-lg border cursor-pointer transition-all ${
+            focusMode
+              ? 'bg-signal-lime/15 border-signal-lime/40 text-signal-lime'
+              : 'bg-[#131826]/70 hover:bg-[#1E2435] border-graphite/60 hover:border-signal-lime/40 text-[#C7CCD8] hover:text-signal-lime'
+          }`}
+          title={focusMode ? "Salir de Focus Mode" : "Focus Mode"}
+        >
+          {focusMode ? <EyeOff className="w-3.5 h-3.5" /> : <Eye className="w-3.5 h-3.5" />}
+        </button>
+
+        {/* Terminal */}
         <button 
           onClick={() => setActiveTab('terminal')}
-          className="p-2 hover:bg-[#131826]/70 hover:text-signal-cyan rounded-lg border border-transparent hover:border-graphite/40 transition-colors"
-          title="Terminal de Comandos"
+          className="w-8 h-8 flex items-center justify-center bg-[#131826]/70 hover:bg-[#1E2435] border border-graphite/60 hover:border-signal-cyan/50 text-[#C7CCD8] hover:text-signal-cyan rounded-lg cursor-pointer transition-all"
+          title="Terminal"
         >
-          <TerminalIcon className="w-4 h-4" />
+          <TerminalIcon className="w-3.5 h-3.5" />
         </button>
       </div>
     </header>

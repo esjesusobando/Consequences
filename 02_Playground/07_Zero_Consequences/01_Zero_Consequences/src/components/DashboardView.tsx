@@ -603,36 +603,15 @@ export default function DashboardView({
           </div>
         )}
 
-        {/* Interactive Timer Controls */}
-        <div className="z-10 flex flex-wrap justify-center items-center gap-3 bg-void/80 border border-graphite/30 px-4 py-2 rounded-lg backdrop-blur-sm max-w-xl mx-auto">
-          <button 
-            onClick={() => setTimerPreset(15)}
-            className="px-2.5 py-1 bg-carbon hover:bg-[#1E2435] text-slate hover:text-bone text-[11px] font-mono rounded transition-colors"
-          >
-            T-15m
-          </button>
-          
-          <button 
-            onClick={() => setTimerPreset(42)}
-            className="px-2.5 py-1 bg-carbon hover:bg-[#1E2435] text-slate hover:text-bone text-[11px] font-mono rounded transition-colors"
-          >
-            T-42m
-          </button>
-
-          <button 
-            onClick={() => setTimerPreset(102)}
-            className="px-2.5 py-1 bg-carbon hover:bg-[#1E2435] text-slate hover:text-bone text-[11px] font-mono rounded transition-colors"
-          >
-            T-1h42m
-          </button>
-
+        {/* Timer Reset */}
+        <div className="z-10 flex justify-center">
           <button 
             onClick={() => {
               setSecondsLeft(1 * 3600 + 42 * 60 + 6);
               setIsTimerRunning(true);
               onLogMessage('info', 'Reloj reseteado a valores iniciales de sesión.');
             }}
-            className="p-1 text-slate hover:text-signal-cyan transition-colors"
+            className="p-1.5 text-slate hover:text-signal-cyan transition-colors"
             title="Resetear Reloj"
           >
             <RefreshCw className="w-3.5 h-3.5" />
