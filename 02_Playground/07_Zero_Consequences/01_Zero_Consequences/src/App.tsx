@@ -60,18 +60,21 @@ export default function App() {
     }
   }, [focusMode]);
 
-  // Keybindings for toggling: Ctrl+Tab for left rail, Tab for right sidebar
+  // Keybindings for toggling panels: Ctrl+Tab for left rail, Alt+Tab for right sidebar
+  // Tab works normally for form navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Tab') {
-        e.preventDefault();
         if (e.ctrlKey) {
+          e.preventDefault();
           setHideLeftPanel(prev => !prev);
           logMessage('info', `ATAJO DE TECLADO: Ctrl+Tab detectado. Panel IZQUIERDO ${!hideLeftPanel ? 'OCULTO' : 'VISIBLE'}`);
-        } else {
+        } else if (e.altKey) {
+          e.preventDefault();
           setHideRightPanel(prev => !prev);
-          logMessage('info', `ATAJO DE TECLADO: Tab detectado. Panel DERECHO ${!hideRightPanel ? 'OCULTO' : 'VISIBLE'}`);
+          logMessage('info', `ATAJO DE TECLADO: Alt+Tab detectado. Panel DERECHO ${!hideRightPanel ? 'OCULTO' : 'VISIBLE'}`);
         }
+        // Normal Tab (no modifiers) — let browser handle for form navigation
       }
     };
     window.addEventListener('keydown', handleKeyDown);
