@@ -703,6 +703,7 @@ export default function SettingsDrawer({
     { id: 'lime', label: 'Lima Eléctrico', class: 'bg-signal-lime', textClass: 'text-signal-lime' },
     { id: 'amber', label: 'Ámbar Intenso', class: 'bg-signal-amber', textClass: 'text-signal-amber' },
     { id: 'tokyo', label: 'Tokyo Cappuccino', class: 'bg-[#d4b395]', textClass: 'text-[#d4b395]' },
+    { id: 'matte-white', label: 'Blanco Mate', class: 'bg-[#E8E4D9]', textClass: 'text-[#E8E4D9]' },
     { id: 'custom', label: 'HSL Personalizado', class: 'bg-gradient-to-r from-red-500 via-green-500 to-blue-500', textClass: 'text-signal-cyan' }
   ];
 

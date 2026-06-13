@@ -541,7 +541,7 @@ export default function App() {
       });
 
       const craftAccents: Record<string, string> = {
-        magenta: '#DC2626', lime: '#65A30D', amber: '#D97706', tokyo: '#8B7355'
+        magenta: '#DC2626', lime: '#65A30D', amber: '#D97706', tokyo: '#8B7355', 'matte-white': '#E8E4D9'
       };
       if (accent === 'custom') {
         const h = presentationConfig.customH ?? 210;
@@ -555,6 +555,7 @@ export default function App() {
         if (accent === 'lime') root.style.setProperty('--color-signal-cyan', '#65A30D');
         if (accent === 'amber') root.style.setProperty('--color-signal-cyan', '#D97706');
         if (accent === 'tokyo') root.style.setProperty('--color-signal-cyan', '#8B7355');
+        if (accent === 'matte-white') root.style.setProperty('--color-signal-cyan', '#E8E4D9');
       } else {
         root.style.setProperty('--accent-hex', '#0066FF');
       }
@@ -596,6 +597,9 @@ export default function App() {
         };
         Object.entries(tokyoColors).forEach(([key, val]) => root.style.setProperty(key, val));
         root.style.setProperty('--accent-hex', '#d4b395');
+      } else if (accent === 'matte-white') {
+        root.style.setProperty('--accent-hex', '#E8E4D9');
+        root.style.setProperty('--color-signal-cyan', '#E8E4D9');
       } else if (accent !== 'cyan') {
         root.style.setProperty('--accent-hex', accentHexMap[accent] || '#00F0FF');
       } else {
@@ -630,12 +634,13 @@ export default function App() {
         root.style.setProperty('--accent-hex', `hsl(${h}, ${s}%, ${l}%)`);
       } else if (accent !== 'cyan') {
         const lncAccents: Record<string, string> = {
-          magenta: '#4B5DFF', lime: '#B6FF4D', amber: '#5BE8FF', tokyo: '#d4b395'
+          magenta: '#4B5DFF', lime: '#B6FF4D', amber: '#5BE8FF', tokyo: '#d4b395', 'matte-white': '#E8E4D9'
         };
         root.style.setProperty('--accent-hex', lncAccents[accent] || '#156BFF');
         if (accent === 'lime') root.style.setProperty('--color-signal-cyan', '#B6FF4D');
         if (accent === 'magenta') root.style.setProperty('--color-signal-cyan', '#4B5DFF');
         if (accent === 'amber') root.style.setProperty('--color-signal-cyan', '#5BE8FF');
+        if (accent === 'matte-white') root.style.setProperty('--color-signal-cyan', '#E8E4D9');
       } else {
         root.style.setProperty('--accent-hex', '#156BFF');
       }
@@ -676,6 +681,9 @@ export default function App() {
         root.style.setProperty('--color-signal-lime', customLimeColor);
         root.style.setProperty('--color-signal-amber', customAmberColor);
         root.style.setProperty('--accent-hex', customAccentColor);
+      } else if (accent === 'matte-white') {
+        root.style.setProperty('--accent-hex', '#E8E4D9');
+        root.style.setProperty('--color-signal-cyan', '#E8E4D9');
       } else {
         root.style.setProperty('--accent-hex', accentHexMap[accent] || '#00F0FF');
       }

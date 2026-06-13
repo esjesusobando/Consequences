@@ -12,7 +12,7 @@ export interface SignalEvent {
   date?: string; // YYYY-MM-DD for calendar day association
 }
 
-export type AccentColor = 'cyan' | 'magenta' | 'lime' | 'amber' | 'tokyo' | 'custom';
+export type AccentColor = 'cyan' | 'magenta' | 'lime' | 'amber' | 'tokyo' | 'matte-white' | 'custom';
 
 export interface TerminalLine {
   type: 'prompt' | 'info' | 'ok' | 'warn' | 'err';
