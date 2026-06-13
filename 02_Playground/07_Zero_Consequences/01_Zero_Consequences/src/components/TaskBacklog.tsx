@@ -17,6 +17,7 @@ import {
   ListTodo,
   CalendarDays,
   Timer,
+  Brain,
 } from 'lucide-react';
 import { BacklogTask, AccentColor, TimeLog } from '../types';
 import { motion, AnimatePresence } from 'motion/react';
@@ -26,6 +27,7 @@ interface TaskBacklogProps {
   setTasks: React.Dispatch<React.SetStateAction<BacklogTask[]>>;
   accent: AccentColor;
   onLogMessage: (type: 'info' | 'ok' | 'warn' | 'err', text: string) => void;
+  onStartFocus?: () => void;
 }
 
 export default function TaskBacklog({
@@ -33,6 +35,7 @@ export default function TaskBacklog({
   setTasks,
   accent,
   onLogMessage,
+  onStartFocus,
 }: TaskBacklogProps) {
   const [showAddForm, setShowAddForm] = useState(false);
   const [newTitle, setNewTitle] = useState('');
@@ -195,12 +198,24 @@ export default function TaskBacklog({
               <ListTodo className="w-5 h-5" />
               Backlog
             </h2>
-            <button
-              onClick={() => setShowAddForm(true)}
-              className={`p-2 rounded-lg ${getAccentBgClass()} ${getAccentClass()} hover:opacity-80 transition-all`}
-            >
-              <Plus className="w-4 h-4" />
-            </button>
+            <div className="flex items-center gap-2">
+              {onStartFocus && (
+                <button
+                  onClick={onStartFocus}
+                  className="px-3 py-1.5 bg-signal-cyan/10 text-signal-cyan hover:bg-signal-cyan/20 rounded-lg transition-all text-xs font-semibold flex items-center gap-1.5"
+                  title="Start Focus Mode"
+                >
+                  <Brain className="w-3.5 h-3.5" />
+                  Focus
+                </button>
+              )}
+              <button
+                onClick={() => setShowAddForm(true)}
+                className={`p-2 rounded-lg ${getAccentBgClass()} ${getAccentClass()} hover:opacity-80 transition-all`}
+              >
+                <Plus className="w-4 h-4" />
+              </button>
+            </div>
           </div>
 
           {/* Stats */}

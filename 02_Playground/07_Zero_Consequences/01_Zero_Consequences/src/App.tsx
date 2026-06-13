@@ -17,6 +17,7 @@ import SettingsDrawer from './components/SettingsDrawer';
 import FocusNotesPanel from './components/FocusNotesPanel';
 import EmailView from './components/EmailView';
 import TaskBacklog from './components/TaskBacklog';
+import FocusMode from './components/FocusMode';
 
 // Types & Data
 import { SignalEvent, AccentColor, TerminalLine, MetricStats, Project, Issue, Product, Warehouse, ProviderProposal, PurchaseOrder, PresentationConfig, AuditLog, BacklogTask } from './types';
@@ -88,6 +89,9 @@ export default function App() {
 
   // Backlog Tasks state (for email → task extraction)
   const [backlogTasks, setBacklogTasks] = useState<BacklogTask[]>([]);
+
+  // Focus Mode state
+  const [isFocusModeOpen, setIsFocusModeOpen] = useState(false);
 
   // Add task to backlog
   const handleAddTask = (task: BacklogTask) => {
@@ -848,6 +852,7 @@ export default function App() {
               setTasks={setBacklogTasks}
               accent={accent}
               onLogMessage={logMessage}
+              onStartFocus={() => setIsFocusModeOpen(true)}
             />
           )}
 
@@ -933,6 +938,15 @@ export default function App() {
 
 
       </main>
+
+      {/* Focus Mode overlay */}
+      <FocusMode
+        isOpen={isFocusModeOpen}
+        onClose={() => setIsFocusModeOpen(false)}
+        tasks={backlogTasks}
+        accent={accent}
+        onLogMessage={logMessage}
+      />
     </div>
   );
 }
