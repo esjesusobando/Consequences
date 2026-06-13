@@ -16,6 +16,7 @@ import AnalyticsOSView from './components/AnalyticsOSView';
 import SettingsDrawer from './components/SettingsDrawer';
 import FocusNotesPanel from './components/FocusNotesPanel';
 import EmailView from './components/EmailView';
+import TaskBacklog from './components/TaskBacklog';
 
 // Types & Data
 import { SignalEvent, AccentColor, TerminalLine, MetricStats, Project, Issue, Product, Warehouse, ProviderProposal, PurchaseOrder, PresentationConfig, AuditLog, BacklogTask } from './types';
@@ -82,8 +83,8 @@ export default function App() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [hideLeftPanel, hideRightPanel]);
   
-  // Navigation Tabs state: 'dashboard' | 'email' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal'
-  const [activeTab, setActiveTab] = useState<'dashboard' | 'email' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal'>('dashboard');
+  // Navigation Tabs state: 'dashboard' | 'email' | 'tasks' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal'
+  const [activeTab, setActiveTab] = useState<'dashboard' | 'email' | 'tasks' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal'>('dashboard');
 
   // Backlog Tasks state (for email → task extraction)
   const [backlogTasks, setBacklogTasks] = useState<BacklogTask[]>([]);
@@ -837,6 +838,16 @@ export default function App() {
               onLogMessage={logMessage}
               onAddTask={handleAddTask}
               googleToken={googleToken}
+            />
+          )}
+
+          {/* TAB 3: TASK BACKLOG (Sumsuma-like) */}
+          {activeTab === 'tasks' && (
+            <TaskBacklog
+              tasks={backlogTasks}
+              setTasks={setBacklogTasks}
+              accent={accent}
+              onLogMessage={logMessage}
             />
           )}
 
