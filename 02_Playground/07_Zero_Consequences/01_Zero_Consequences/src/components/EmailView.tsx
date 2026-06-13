@@ -109,6 +109,7 @@ export default function EmailView({
   const [copyToTasksEnabled, setCopyToTasksEnabled] = useState(true);
   const [copiedText, setCopiedText] = useState('');
   const [showCopyToast, setShowCopyToast] = useState(false);
+  const [tasksCreatedCount, setTasksCreatedCount] = useState(0);
 
   const readingPaneRef = useRef<HTMLDivElement>(null);
 
@@ -155,7 +156,8 @@ export default function EmailView({
         };
 
         onAddTask(newTask);
-        onLogMessage('ok', `Tarea creada desde email: "${newTask.title}"`);
+        setTasksCreatedCount(prev => prev + 1);
+        onLogMessage('ok', `✓ Tarea creada: "${newTask.title}" → Ir a Tareas para ver`);
       }
     });
   };
@@ -254,9 +256,12 @@ export default function EmailView({
         </div>
 
         {/* Copy to Tasks toggle */}
-        <div className="p-4 border-t border-graphite/30">
+        <div className="p-4 border-t border-graphite/30 bg-carbon/20">
           <div className="flex items-center justify-between mb-2">
-            <span className="text-xs font-mono text-ash uppercase tracking-wide">Auto → Tareas</span>
+            <div className="flex items-center gap-2">
+              <ListTodo className="w-4 h-4 text-signal-lime" />
+              <span className="text-xs font-mono text-bone uppercase tracking-wide">Auto → Tareas</span>
+            </div>
             <button
               onClick={() => setCopyToTasksEnabled(!copyToTasksEnabled)}
               className={`relative w-10 h-5 rounded-full transition-all ${
@@ -270,9 +275,15 @@ export default function EmailView({
               />
             </button>
           </div>
-          <p className="text-[10px] text-ash/60 font-mono">
-            {copyToTasksEnabled ? 'Seleccionar texto crea tarea' : 'Solo copia al portapapeles'}
+          <p className="text-[10px] text-ash/70 font-mono mb-2">
+            {copyToTasksEnabled ? '✓ Seleccionar texto crea tarea' : 'Solo copia al portapapeles'}
           </p>
+          {tasksCreatedCount > 0 && (
+            <div className="flex items-center gap-1.5 text-[10px] font-mono text-signal-lime">
+              <CheckCircle2 className="w-3 h-3" />
+              <span>{tasksCreatedCount} tarea{tasksCreatedCount > 1 ? 's' : ''} creada{tasksCreatedCount > 1 ? 's' : ''}</span>
+            </div>
+          )}
         </div>
       </div>
 
@@ -441,13 +452,13 @@ export default function EmailView({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
-            className="fixed bottom-6 right-6 bg-signal-lime/90 text-void px-4 py-3 rounded-lg shadow-2xl flex items-center gap-2 z-50"
+            className={`fixed bottom-6 right-6 ${copyToTasksEnabled ? 'bg-signal-lime' : 'bg-signal-cyan'} text-void px-4 py-3 rounded-lg shadow-2xl flex items-center gap-2 z-50`}
           >
             <CheckCircle2 className="w-5 h-5" />
             <div>
               <div className="text-sm font-semibold">Copiado al portapapeles</div>
               {copyToTasksEnabled && (
-                <div className="text-xs opacity-80">+ Tarea creada en backlog</div>
+                <div className="text-xs opacity-90 font-semibold">+ Tarea creada → Ve a Tareas para verla</div>
               )}
             </div>
           </motion.div>
