@@ -1,34 +1,57 @@
 import { SignalEvent, TerminalLine } from './types';
 
-export const INITIAL_SIGNALS: SignalEvent[] = [
-  {
-    id: 'MTG-ALPHA',
-    time: '14:00',
-    title: 'Strategic Alignment',
-    description: 'Quarterly review of project deliverables and design integration guidelines.',
-    category: 'alpha',
-    iconType: 'video',
-    active: true,
-  },
-  {
-    id: 'CL-BETA',
-    time: '15:30',
-    title: 'Vendor Review Sync',
-    description: 'Contract terms examination and procurement checklist verification.',
-    category: 'beta',
-    iconType: 'phone',
-    active: false,
-  },
-  {
-    id: 'INT-OMEGA',
-    time: '17:00',
-    title: 'Daily Wrap-up',
-    description: 'Operational summary reporting and engineering code base commit checks.',
-    category: 'omega',
-    iconType: 'group',
-    active: false,
-  }
-];
+/**
+ * Generate initial signals with a test meeting always 2 hours in the future
+ * This ensures the countdown timer always has something to count down to
+ */
+export function getInitialSignals(): SignalEvent[] {
+  const now = new Date();
+  const futureTime = new Date(now.getTime() + 2 * 60 * 60 * 1000); // +2 hours
+  const futureHour = String(futureTime.getHours()).padStart(2, '0');
+  const futureMinute = String(futureTime.getMinutes()).padStart(2, '0');
+  const testTime = `${futureHour}:${futureMinute}`;
+
+  return [
+    {
+      id: 'MTG-TEST',
+      time: testTime,
+      title: 'Prueba de Contador',
+      description: 'Reunión de prueba para verificar que el countdown funciona correctamente.',
+      category: 'test',
+      iconType: 'video',
+      active: true,
+    },
+    {
+      id: 'MTG-ALPHA',
+      time: '14:00',
+      title: 'Strategic Alignment',
+      description: 'Quarterly review of project deliverables and design integration guidelines.',
+      category: 'alpha',
+      iconType: 'video',
+      active: true,
+    },
+    {
+      id: 'CL-BETA',
+      time: '15:30',
+      title: 'Vendor Review Sync',
+      description: 'Contract terms examination and procurement checklist verification.',
+      category: 'beta',
+      iconType: 'phone',
+      active: false,
+    },
+    {
+      id: 'INT-OMEGA',
+      time: '17:00',
+      title: 'Daily Wrap-up',
+      description: 'Operational summary reporting and engineering code base commit checks.',
+      category: 'omega',
+      iconType: 'group',
+      active: false,
+    }
+  ];
+}
+
+export const INITIAL_SIGNALS = getInitialSignals();
 
 export const INITIAL_LOG_LINES: TerminalLine[] = [
   { type: 'prompt', text: 'system.boot --mode=signal --env=prod', timestamp: '14:49:01' },

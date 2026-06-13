@@ -18,7 +18,7 @@ import FocusNotesPanel from './components/FocusNotesPanel';
 
 // Types & Data
 import { SignalEvent, AccentColor, TerminalLine, MetricStats, Project, Issue, Product, Warehouse, ProviderProposal, PurchaseOrder, PresentationConfig, AuditLog } from './types';
-import { INITIAL_SIGNALS, INITIAL_LOG_LINES } from './data';
+import { getInitialSignals, INITIAL_LOG_LINES } from './data';
 import { 
   INITIAL_PROJECTS, 
   INITIAL_ISSUES, 
@@ -376,7 +376,7 @@ export default function App() {
       const saved = localStorage.getItem('zc_signals');
       if (saved) return JSON.parse(saved);
     } catch {}
-    return INITIAL_SIGNALS;
+    return getInitialSignals();
   });
 
   // Persist signals to localStorage
@@ -426,8 +426,8 @@ export default function App() {
     logMessage('warn', 'REINICIO DEL SISTEMA: Vaciando caché local...');
     logMessage('info', 'Estableciendo parámetros del panel Personal OS...');
     
-    // Reset signals registry back to default values
-    setSignals(INITIAL_SIGNALS);
+    // Reset signals registry back to default values (with fresh future time)
+    setSignals(getInitialSignals());
     setAccent('cyan');
     setProjects(INITIAL_PROJECTS);
     setIssues(INITIAL_ISSUES);
