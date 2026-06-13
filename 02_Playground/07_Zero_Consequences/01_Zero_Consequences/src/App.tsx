@@ -15,9 +15,10 @@ import OperationsOSView from './components/OperationsOSView';
 import AnalyticsOSView from './components/AnalyticsOSView';
 import SettingsDrawer from './components/SettingsDrawer';
 import FocusNotesPanel from './components/FocusNotesPanel';
+import EmailView from './components/EmailView';
 
 // Types & Data
-import { SignalEvent, AccentColor, TerminalLine, MetricStats, Project, Issue, Product, Warehouse, ProviderProposal, PurchaseOrder, PresentationConfig, AuditLog } from './types';
+import { SignalEvent, AccentColor, TerminalLine, MetricStats, Project, Issue, Product, Warehouse, ProviderProposal, PurchaseOrder, PresentationConfig, AuditLog, BacklogTask } from './types';
 import { getInitialSignals, INITIAL_LOG_LINES } from './data';
 import { 
   INITIAL_PROJECTS, 
@@ -81,8 +82,16 @@ export default function App() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [hideLeftPanel, hideRightPanel]);
   
-  // Navigation Tabs state: 'dashboard' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal'
-  const [activeTab, setActiveTab] = useState<'dashboard' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal'>('dashboard');
+  // Navigation Tabs state: 'dashboard' | 'email' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal'
+  const [activeTab, setActiveTab] = useState<'dashboard' | 'email' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal'>('dashboard');
+
+  // Backlog Tasks state (for email → task extraction)
+  const [backlogTasks, setBacklogTasks] = useState<BacklogTask[]>([]);
+
+  // Add task to backlog
+  const handleAddTask = (task: BacklogTask) => {
+    setBacklogTasks(prev => [...prev, task]);
+  };
 
   // CUSTOM CORE OS SEED STATES
   const [projects, setProjects] = useState<Project[]>(INITIAL_PROJECTS);
@@ -818,6 +827,16 @@ export default function App() {
               setUser={setUser}
               googleToken={googleToken}
               setGoogleToken={setGoogleToken}
+            />
+          )}
+
+          {/* TAB 2: EMAIL CLIENT (Superhuman-like) */}
+          {activeTab === 'email' && (
+            <EmailView
+              accent={accent}
+              onLogMessage={logMessage}
+              onAddTask={handleAddTask}
+              googleToken={googleToken}
             />
           )}
 

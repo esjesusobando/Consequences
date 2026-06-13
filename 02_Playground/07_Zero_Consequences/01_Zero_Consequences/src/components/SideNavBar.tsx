@@ -12,18 +12,19 @@ import {
   Menu,
   X,
   ChevronRight,
+  Mail,
 } from 'lucide-react';
 import { AccentColor } from '../types';
 
 interface SideNavBarProps {
-  activeTab: 'dashboard' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal';
-  setActiveTab: (tab: 'dashboard' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal') => void;
+  activeTab: 'dashboard' | 'email' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal';
+  setActiveTab: (tab: 'dashboard' | 'email' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal') => void;
   accent: AccentColor;
   onSystemReset: () => void;
   hideLeftPanel: boolean;
 }
 
-type TabId = 'dashboard' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal';
+type TabId = 'dashboard' | 'email' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal';
 
 interface MenuItem {
   id: TabId;
@@ -69,9 +70,10 @@ export default function SideNavBar({
 
   // ── Menu items with ready flag ──────────────────────────────────
   // Toggle `ready: true` to pull an item out of the hamburger and into the sidebar.
-  // Only dashboard is ready for now. As we work on each view, flip its flag.
+  // Dashboard and Email are ready. As we work on each view, flip its flag.
   const menuItems: MenuItem[] = [
     { id: 'dashboard',    label: 'Sesión Reunión', icon: CalendarDays,  desc: 'Próxima Reunión & Conteo',                    ready: true  },
+    { id: 'email',        label: 'Email',          icon: Mail,          desc: 'Gestor de Correos (Superhuman-like)',          ready: true  },
     { id: 'personal_os',  label: 'Personal OS',    icon: Monitor,       desc: 'Espacio Personal (Supernative, OCR, Codex)',   ready: false },
     { id: 'linear',       label: 'Linear Team',    icon: FolderKanban,  desc: 'Varios Proyectos & Criterios SOTA',            ready: false },
     { id: 'operations',   label: 'Operaciones',    icon: Boxes,         desc: 'SKU, Variantes, Bodegas, Compras',             ready: false },
