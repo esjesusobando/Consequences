@@ -23,6 +23,9 @@ import {
   LogIn,
   LogOut,
   List,
+  ChevronUp,
+  ChevronDown,
+  GripVertical,
 } from 'lucide-react';
 import { SignalEvent, AccentColor } from '../types';
 import { motion, AnimatePresence } from 'motion/react';
@@ -152,6 +155,65 @@ export default function DashboardView({
   const [editTime, setEditTime] = useState<string>('');
   const [editDesc, setEditDesc] = useState<string>('');
   const [editIcon, setEditIcon] = useState<string>('video');
+
+  // Drag & drop reorder state for meetings list
+  const [dragIndex, setDragIndex] = useState<number | null>(null);
+  const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
+
+  // Reorder signals: move item from one index to another
+  const handleReorderSignal = (fromIndex: number, toIndex: number) => {
+    if (fromIndex === toIndex) return;
+    if (toIndex < 0 || toIndex >= signals.length) return;
+    setSignals(prev => {
+      const updated = [...prev];
+      const [moved] = updated.splice(fromIndex, 1);
+      updated.splice(toIndex, 0, moved);
+      return updated;
+    });
+    onLogMessage('info', `Reunión reordenada: posición ${fromIndex + 1} → ${toIndex + 1}`);
+  };
+
+  // Move meeting up
+  const handleMoveUp = (index: number) => {
+    if (index > 0) handleReorderSignal(index, index - 1);
+  };
+
+  // Move meeting down
+  const handleMoveDown = (index: number) => {
+    if (index < signals.length - 1) handleReorderSignal(index, index + 1);
+  };
+
+  // HTML5 drag handlers
+  const handleDragStart = (e: React.DragEvent, index: number) => {
+    setDragIndex(index);
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/plain', String(index));
+  };
+
+  const handleDragOver = (e: React.DragEvent, index: number) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    setDragOverIndex(index);
+  };
+
+  const handleDragLeave = () => {
+    setDragOverIndex(null);
+  };
+
+  const handleDrop = (e: React.DragEvent, toIndex: number) => {
+    e.preventDefault();
+    const fromIndex = Number(e.dataTransfer.getData('text/plain'));
+    if (!isNaN(fromIndex)) {
+      handleReorderSignal(fromIndex, toIndex);
+    }
+    setDragIndex(null);
+    setDragOverIndex(null);
+  };
+
+  const handleDragEnd = () => {
+    setDragIndex(null);
+    setDragOverIndex(null);
+  };
 
   // Synchronize edits form state whenever selected event switches
   useEffect(() => {
@@ -1124,29 +1186,62 @@ export default function DashboardView({
                       COLA DE EVENTOS VACÍA
                     </div>
                   ) : (
-                    signals.map((sig) => {
+                    signals.map((sig, sigIndex) => {
                       const isSelected = selectedSignal?.id === sig.id;
                       const isActive = sig.active;
+                      const isDragging = dragIndex === sigIndex;
+                      const isDragOver = dragOverIndex === sigIndex;
                       
                       return (
                         <div 
                           key={sig.id}
+                          draggable
+                          onDragStart={(e) => handleDragStart(e, sigIndex)}
+                          onDragOver={(e) => handleDragOver(e, sigIndex)}
+                          onDragLeave={handleDragLeave}
+                          onDrop={(e) => handleDrop(e, sigIndex)}
+                          onDragEnd={handleDragEnd}
                           onClick={() => {
                             setSelectedSignal(sig);
                             onLogMessage('info', `Inspeccionando evento calendar sync: "${sig.title}"`);
                           }}
                           className={`border rounded-xl p-3.5 transition-all duration-300 cursor-pointer flex flex-col gap-2 relative group overflow-hidden ${
-                            isSelected 
+                            isDragging ? 'opacity-40 scale-95' : ''
+                          } ${
+                            isDragOver ? 'border-signal-cyan/80 bg-signal-cyan/5 shadow-[0_0_12px_rgba(0,200,255,0.15)]' : ''
+                          } ${
+                            isSelected && !isDragOver
                               ? `${getAccentBorderClass()} bg-carbon/50 glow-cyan/5` 
-                              : 'border-graphite/35 bg-carbon/25 hover:border-graphite/85 hover:bg-carbon/40'
+                              : !isDragOver ? 'border-graphite/35 bg-carbon/25 hover:border-graphite/85 hover:bg-carbon/40' : ''
                           }`}
                         >
+                          {/* Drag handle + reorder controls */}
+                          <div className="absolute left-1 top-1/2 -translate-y-1/2 flex flex-col items-center gap-0.5 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button
+                              onClick={(e) => { e.stopPropagation(); handleMoveUp(sigIndex); }}
+                              disabled={sigIndex === 0}
+                              className="p-0.5 text-ash/60 hover:text-bone disabled:opacity-20 disabled:cursor-not-allowed transition-colors"
+                              title="Subir"
+                            >
+                              <ChevronUp className="w-3 h-3" />
+                            </button>
+                            <GripVertical className="w-2.5 h-2.5 text-ash/30 cursor-grab active:cursor-grabbing" />
+                            <button
+                              onClick={(e) => { e.stopPropagation(); handleMoveDown(sigIndex); }}
+                              disabled={sigIndex === signals.length - 1}
+                              className="p-0.5 text-ash/60 hover:text-bone disabled:opacity-20 disabled:cursor-not-allowed transition-colors"
+                              title="Bajar"
+                            >
+                              <ChevronDown className="w-3 h-3" />
+                            </button>
+                          </div>
+
                           {/* Sync ribbon indicator */}
                           {isActive && (
                             <div className={`absolute top-0 right-0 w-12 h-1 ${getAccentSolidBg()}`} />
                           )}
 
-                          <div className="flex justify-between items-center">
+                          <div className="flex justify-between items-center pl-3">
                             <div className="flex items-center gap-2">
                               <span className={`font-mono text-[10px] px-2 py-0.5 rounded font-bold uppercase tracking-wide ${
                                 isActive 
@@ -1210,11 +1305,11 @@ export default function DashboardView({
                             </div>
                           </div>
 
-                          <div className="font-body text-xs font-semibold text-[#dfe2ef] tracking-wide mt-1">
+                          <div className="font-body text-xs font-semibold text-[#dfe2ef] tracking-wide mt-1 pl-3">
                             {sig.title}
                           </div>
 
-                          <div className="flex justify-between items-center text-[8.5px] font-mono text-ash/60 uppercase">
+                          <div className="flex justify-between items-center text-[8.5px] font-mono text-ash/60 uppercase pl-3">
                             <span>REG-ID: {sig.id}</span>
                             <span className="text-signal-cyan">Google Calendar Sync ✓</span>
                           </div>
