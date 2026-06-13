@@ -435,6 +435,7 @@ export default function DashboardView({
       case 'magenta': return 'text-glow-magenta text-signal-amber';
       case 'lime': return 'text-glow-lime text-signal-lime';
       case 'amber': return 'text-glow-amber text-signal-amber';
+      case 'matte-white': return 'text-[#E8E4D9]';
       default: return 'text-glow-cyan text-signal-cyan';
     }
   };
