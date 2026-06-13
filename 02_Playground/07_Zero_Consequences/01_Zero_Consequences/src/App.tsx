@@ -374,7 +374,22 @@ export default function App() {
   const [signals, setSignals] = useState<SignalEvent[]>(() => {
     try {
       const saved = localStorage.getItem('zc_signals');
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        // Check if there's at least one active future meeting
+        const now = new Date();
+        const currentMinutes = now.getHours() * 60 + now.getMinutes();
+        const hasFutureMeeting = parsed.some((s: SignalEvent) => {
+          if (!s.active) return false;
+          const [h, m] = s.time.split(':').map(Number);
+          return h * 60 + m > currentMinutes;
+        });
+        // If no future meetings, regenerate with fresh test meeting
+        if (!hasFutureMeeting) {
+          return getInitialSignals();
+        }
+        return parsed;
+      }
     } catch {}
     return getInitialSignals();
   });
