@@ -125,41 +125,46 @@ export default function EmailView({
 
   // Handle text selection in reading pane
   const handleTextSelection = () => {
-    const selection = window.getSelection();
-    if (!selection || selection.isCollapsed || !selectedEmail) return;
+    // Small delay to ensure selection is complete
+    setTimeout(() => {
+      const selection = window.getSelection();
+      if (!selection || selection.isCollapsed || !selectedEmail) return;
 
-    const text = selection.toString().trim();
-    if (text.length < 5) return; // Ignore tiny selections
+      const text = selection.toString().trim();
+      if (text.length < 5) return; // Ignore tiny selections
 
-    // Copy to clipboard
-    navigator.clipboard.writeText(text).then(() => {
-      setCopiedText(text);
-      setShowCopyToast(true);
-      setTimeout(() => setShowCopyToast(false), 2000);
+      // Copy to clipboard
+      navigator.clipboard.writeText(text).then(() => {
+        setCopiedText(text);
+        setShowCopyToast(true);
+        setTimeout(() => setShowCopyToast(false), 2000);
 
-      onLogMessage('info', `Texto copiado al portapapeles: "${text.slice(0, 50)}..."`);
+        onLogMessage('info', `Texto copiado al portapapeles: "${text.slice(0, 50)}..."`);
 
-      // If copy-to-tasks is enabled, create a task
-      if (copyToTasksEnabled) {
-        const newTask: BacklogTask = {
-          id: `TASK-${Date.now().toString(36).toUpperCase()}`,
-          title: `[Email] ${selectedEmail.subject}`,
-          description: text,
-          estimatedMinutes: 30,
-          source: 'email',
-          sourceEmailId: selectedEmail.id,
-          sourceText: text,
-          status: 'backlog',
-          priority: 'medium',
-          tags: ['email', 'extracted'],
-          createdAt: new Date().toISOString(),
-        };
+        // If copy-to-tasks is enabled, create a task
+        if (copyToTasksEnabled) {
+          const newTask: BacklogTask = {
+            id: `TASK-${Date.now().toString(36).toUpperCase()}`,
+            title: `[Email] ${selectedEmail.subject}`,
+            description: text,
+            estimatedMinutes: 30,
+            source: 'email',
+            sourceEmailId: selectedEmail.id,
+            sourceText: text,
+            status: 'backlog',
+            priority: 'medium',
+            tags: ['email', 'extracted'],
+            createdAt: new Date().toISOString(),
+          };
 
-        onAddTask(newTask);
-        setTasksCreatedCount(prev => prev + 1);
-        onLogMessage('ok', `✓ Tarea creada: "${newTask.title}" → Ir a Tareas para ver`);
-      }
-    });
+          onAddTask(newTask);
+          setTasksCreatedCount(prev => prev + 1);
+          onLogMessage('ok', `✓ Tarea creada: "${newTask.title}" → Ir a Tareas para ver`);
+        }
+      }).catch(err => {
+        onLogMessage('err', `Error al copiar: ${err.message}`);
+      });
+    }, 100);
   };
 
   // Mark email as read
@@ -411,10 +416,12 @@ export default function EmailView({
             <div
               ref={readingPaneRef}
               onMouseUp={handleTextSelection}
-              className="flex-1 overflow-y-auto p-6 custom-scrollbar"
+              className="flex-1 overflow-y-auto p-6 custom-scrollbar select-text"
+              style={{ userSelect: 'text', WebkitUserSelect: 'text' }}
             >
               <div
-                className="prose prose-invert prose-sm max-w-none text-bone/90 leading-relaxed"
+                className="prose prose-invert prose-sm max-w-none text-bone/90 leading-relaxed select-text"
+                style={{ userSelect: 'text', WebkitUserSelect: 'text' }}
                 dangerouslySetInnerHTML={{ __html: selectedEmail.body }}
               />
             </div>
