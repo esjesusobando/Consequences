@@ -27,7 +27,7 @@ import {
   ChevronDown,
   GripVertical,
 } from 'lucide-react';
-import { SignalEvent, AccentColor } from '../types';
+import { SignalEvent, AccentColor, PresentationConfig } from '../types';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   googleSignIn, 
@@ -37,6 +37,21 @@ import {
   deleteCalendarEvent, 
   fetchCalendarEvents 
 } from '../lib/googleAuth';
+import { useCountdown } from '../hooks/useCountdown';
+import { useGoogleCalendarSync } from '../hooks/useGoogleCalendarSync';
+
+interface GoogleUser {
+  displayName?: string;
+  email?: string;
+}
+
+interface GoogleCalendarEvent {
+  id: string;
+  summary?: string;
+  description?: string;
+  start?: { dateTime?: string; date?: string };
+  end?: { dateTime?: string; date?: string };
+}
 
 interface DashboardViewProps {
   signals: SignalEvent[];
@@ -45,9 +60,9 @@ interface DashboardViewProps {
   nodeStatus: string;
   onLogMessage: (type: 'info' | 'ok' | 'warn' | 'err', text: string) => void;
   hideRightPanel: boolean;
-  config: any;
-  user: any;
-  setUser: any;
+  config: PresentationConfig;
+  user: GoogleUser | null;
+  setUser: React.Dispatch<React.SetStateAction<GoogleUser | null>>;
   googleToken: string | null;
   setGoogleToken: React.Dispatch<React.SetStateAction<string | null>>;
 }
@@ -65,48 +80,9 @@ export default function DashboardView({
   googleToken,
   setGoogleToken,
 }: DashboardViewProps) {
-  // Countdown Timer state: calculated from next meeting time
-  const [secondsLeft, setSecondsLeft] = useState<number>(0);
-  const [isTimerRunning, setIsTimerRunning] = useState<boolean>(false);
-  const [nextMeetingTitle, setNextMeetingTitle] = useState<string>('');
-
-  // Recalculate countdown every second based on real time
-  useEffect(() => {
-    const recalculate = () => {
-      const now = new Date();
-      let nextSeconds: number | null = null;
-      let nextTitle = '';
-
-      for (const sig of signals) {
-        if (!sig.active) continue;
-        const [h, m] = sig.time.split(':').map(Number);
-        if (isNaN(h) || isNaN(m)) continue;
-
-        const meetingDate = new Date(now);
-        meetingDate.setHours(h, m, 0, 0);
-
-        const diff = Math.floor((meetingDate.getTime() - now.getTime()) / 1000);
-        if (diff > 0 && (nextSeconds === null || diff < nextSeconds)) {
-          nextSeconds = diff;
-          nextTitle = sig.title;
-        }
-      }
-
-      if (nextSeconds !== null) {
-        setSecondsLeft(nextSeconds);
-        setIsTimerRunning(true);
-        setNextMeetingTitle(nextTitle);
-      } else {
-        setIsTimerRunning(false);
-        setSecondsLeft(0);
-        setNextMeetingTitle('');
-      }
-    };
-
-    recalculate();
-    const interval = setInterval(recalculate, 1000);
-    return () => clearInterval(interval);
-  }, [signals]);
+  // Hooks
+  const { secondsLeft, isTimerRunning, nextMeetingTitle, hoursStr, minutesStr, secsStr, setTimerPreset, resetTimer } = useCountdown(signals, onLogMessage);
+  const { calendarSyncStatus, setCalendarSyncStatus, handleCalendarResync } = useGoogleCalendarSync(googleToken, setSignals, onLogMessage);
 
   // Editable project name shown above/below the countdown (persisted)
   const [projectName, setProjectName] = useState<string>(() => {
@@ -236,141 +212,6 @@ export default function DashboardView({
     }
   };
 
-  // Calendar Sync State
-  const [calendarSyncStatus, setCalendarSyncStatus] = useState<'synchronized' | 'syncing' | 'offline'>('synchronized');
-
-  // Bidirectional Synchronization loop: Fetch and match live events every 30 seconds
-  useEffect(() => {
-    if (!googleToken) return;
-
-    const pullAndSync = async () => {
-      try {
-        setCalendarSyncStatus('syncing');
-        const items = await fetchCalendarEvents(googleToken);
-        if (!items) {
-          // If simulation or empty, logged and kept offline fallback mode
-          onLogMessage('info', 'Sincronizador GCalendar: Conectado y en línea con Workspace.');
-          setCalendarSyncStatus('synchronized');
-          return;
-        }
-
-        let updatedCount = 0;
-        let newCount = 0;
-
-        setSignals(prev => {
-          let currentList = [...prev];
-          items.forEach((item: any) => {
-            const googleId = item.id;
-            const summary = item.summary || 'Reunión agendada';
-            const desc = item.description || 'Detalles sincronizados vía Google Workspace API.';
-            
-            // Format dynamic start date to string (HH:MM)
-            let timeStr = '12:00';
-            if (item.start?.dateTime) {
-              const dt = new Date(item.start.dateTime);
-              timeStr = `${String(dt.getHours()).padStart(2, '0')}:${String(dt.getMinutes()).padStart(2, '0')}`;
-            } else if (item.start?.date) {
-              timeStr = '09:00';
-            }
-
-            const matchIndex = currentList.findIndex(s => s.googleEventId === googleId || s.id === googleId);
-            if (matchIndex >= 0) {
-              const matched = currentList[matchIndex];
-              if (matched.title !== summary || matched.description !== desc || matched.time !== timeStr) {
-                currentList[matchIndex] = {
-                  ...matched,
-                  title: summary,
-                  description: desc,
-                  time: timeStr
-                };
-                updatedCount++;
-              }
-            } else {
-              // Create new event payload
-              const cleanId = `G-${googleId.slice(0, 8).toUpperCase()}`;
-              const newItem: SignalEvent = {
-                id: cleanId,
-                time: timeStr,
-                title: summary,
-                description: desc,
-                category: 'calendario_sota',
-                iconType: 'users',
-                active: true,
-                syncedToGoogleCalendar: true,
-                googleEventId: googleId
-              };
-              currentList.push(newItem);
-              newCount++;
-            }
-          });
-          return currentList;
-        });
-
-        if (newCount > 0 || updatedCount > 0) {
-          onLogMessage('ok', `Google Calendar: ${newCount} nuevas reuniones añadidas, ${updatedCount} actualizadas.`);
-        }
-        setCalendarSyncStatus('synchronized');
-      } catch (err: any) {
-        console.warn('Bidirectional pull failed:', err);
-        setCalendarSyncStatus('offline');
-      }
-    };
-
-    pullAndSync();
-    const interval = setInterval(pullAndSync, 30000);
-    return () => clearInterval(interval);
-  }, [googleToken]);
-
-  // Timer tick is now handled by the unified recalculation effect above
-
-  // Compute display time string
-  const formatCountdown = (totalSecs: number) => {
-    const hours = Math.floor(totalSecs / 3600);
-    const minutes = Math.floor((totalSecs % 3600) / 60);
-    const secs = totalSecs % 60;
-    
-    return {
-      hoursStr: String(hours).padStart(2, '0'),
-      minutesStr: String(minutes).padStart(2, '0'),
-      secsStr: String(secs).padStart(2, '0')
-    };
-  };
-
-  const { hoursStr, minutesStr, secsStr } = formatCountdown(secondsLeft);
-
-  // Quick Preset buttons
-  const setTimerPreset = (minutes: number) => {
-    setSecondsLeft(minutes * 60);
-    setIsTimerRunning(true);
-    onLogMessage('info', `Cuenta regresiva de reunión ajustada: T-menos ${minutes} minutos.`);
-  };
-
-  // Trigger calendar synchronization
-  const handleCalendarResync = async () => {
-    if (googleToken) {
-      try {
-        setCalendarSyncStatus('syncing');
-        onLogMessage('info', 'Estableciendo sincronización directa con Google Calendar...');
-        const items = await fetchCalendarEvents(googleToken);
-        if (items) {
-          setCalendarSyncStatus('synchronized');
-          onLogMessage('ok', `✓ Sincronización exitosa. ${items.length} reuniones actualizadas.`);
-        }
-      } catch (err: any) {
-        setCalendarSyncStatus('offline');
-        onLogMessage('err', `Fallo de sincronización: ${err.message}`);
-      }
-    } else {
-      // Offline Simulation fallback
-      setCalendarSyncStatus('syncing');
-      onLogMessage('info', 'Estableciendo sincronización simulada de agenda personal...');
-      setTimeout(() => {
-        setCalendarSyncStatus('synchronized');
-        onLogMessage('ok', 'Calendario simulado sincronizado con éxito. 3 eventos en cola.');
-      }, 1200);
-    }
-  };
-
   // Add Signal (Meeting Event)
   const handleAddSignal = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -395,7 +236,7 @@ export default function DashboardView({
           googleEventId = result.id;
           onLogMessage('ok', `✓ Evento registrado en Google Calendar (${result.id}).`);
         }
-      } catch (err: any) {
+      } catch (err: unknown) {
         onLogMessage('warn', `Google API en espera: Creación registrada en memoria local.`);
       }
     }
@@ -437,8 +278,9 @@ export default function DashboardView({
         await deleteCalendarEvent(googleToken, target.googleEventId || target.id);
         setCalendarSyncStatus('synchronized');
         onLogMessage('ok', `✓ Evento removido de Google Calendar.`);
-      } catch (err: any) {
-        onLogMessage('err', `Fallo al eliminar de Google Calendar: ${err.message}`);
+      } catch (err: unknown) {
+        const message = err instanceof Error ? err.message : String(err);
+        onLogMessage('err', `Fallo al eliminar de Google Calendar: ${message}`);
       }
     } else {
       const confirmed = safeConfirm(`¿Seguro que deseas remover la reunión "${target.title}"?`);
@@ -554,9 +396,10 @@ export default function DashboardView({
         });
         setCalendarSyncStatus('synchronized');
         onLogMessage('ok', `✓ Evento actualizado con éxito en Google Workspace.`);
-      } catch (err: any) {
+      } catch (err: unknown) {
+        const message = err instanceof Error ? err.message : String(err);
         setCalendarSyncStatus('offline');
-        onLogMessage('err', `Error al empujar actualización de agenda: ${err.message}`);
+        onLogMessage('err', `Error al empujar actualización de agenda: ${message}`);
       }
     }
   };
@@ -771,8 +614,7 @@ export default function DashboardView({
         <div className="z-10 flex justify-center">
           <button 
             onClick={() => {
-              setSecondsLeft(1 * 3600 + 42 * 60 + 6);
-              setIsTimerRunning(true);
+              resetTimer();
               onLogMessage('info', 'Reloj reseteado a valores iniciales de sesión.');
             }}
             className="p-1.5 text-ash/80 hover:text-signal-cyan transition-colors"
@@ -854,8 +696,9 @@ export default function DashboardView({
                       setGoogleToken(token);
                       onLogMessage('ok', '✓ Autenticado con Google con éxito.');
                     }
-                  } catch (e: any) {
-                    onLogMessage('err', `Fallo de autenticación: ${e.message || e}`);
+                  } catch (e: unknown) {
+                    const message = e instanceof Error ? e.message : String(e);
+                    onLogMessage('err', `Fallo de autenticación: ${message}`);
                   }
                 }}
                 className="w-full py-1.5 bg-signal-amber text-void font-bold uppercase tracking-wider rounded text-[9px] flex items-center justify-center gap-1 hover:bg-signal-amber/90 transition-colors cursor-pointer"

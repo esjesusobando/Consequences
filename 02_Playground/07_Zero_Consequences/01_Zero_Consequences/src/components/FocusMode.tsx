@@ -8,6 +8,8 @@ import {
   Brain,
   ChevronRight,
   SkipForward,
+  Sun,
+  Moon,
 } from 'lucide-react';
 import { FocusSession, BacklogTask, AccentColor } from '../types';
 import { motion, AnimatePresence } from 'motion/react';
@@ -33,6 +35,7 @@ export default function FocusMode({
   const [breakMinutes, setBreakMinutes] = useState(5);
   const [totalCycles, setTotalCycles] = useState(4);
   const [notes, setNotes] = useState('');
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const [timeLeft, setTimeLeft] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
@@ -162,21 +165,28 @@ export default function FocusMode({
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[100] bg-[#fafafa] flex flex-col overflow-hidden"
+      className={`fixed inset-0 z-[100] flex flex-col overflow-hidden ${isDarkMode ? 'bg-night' : 'bg-[#FAFAF8]'}`}
     >
       {/* Top bar */}
-      <div className="flex items-center justify-between px-8 py-4 border-b border-gray-200">
+      <div className={`flex items-center justify-between px-8 py-4 border-b ${isDarkMode ? 'border-graphite' : 'border-gray-200'}`}>
         <div className="flex items-center gap-4">
           <button
             onClick={closeSession}
-            className="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-all"
+            className={`p-2 rounded-lg transition-all ${isDarkMode ? 'text-ash hover:text-bone hover:bg-carbon' : 'text-gray-400 hover:text-gray-600 hover:bg-gray-100'}`}
           >
             <X className="w-5 h-5" />
           </button>
-          <div className="text-sm text-gray-500 font-mono">
+          <button
+            onClick={() => setIsDarkMode(!isDarkMode)}
+            className={`p-2 rounded-lg transition-all ${isDarkMode ? 'text-ash hover:text-bone hover:bg-carbon' : 'text-gray-400 hover:text-gray-600 hover:bg-gray-100'}`}
+            title={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+          >
+            {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+          </button>
+          <div className={`text-sm font-mono ${isDarkMode ? 'text-ash' : 'text-gray-500'}`}>
             {session ? (
               <>
-                {session.taskTitle && <span className="font-semibold text-gray-700">{session.taskTitle}</span>}
+                {session.taskTitle && <span className={`font-semibold ${isDarkMode ? 'text-bone' : 'text-gray-700'}`}>{session.taskTitle}</span>}
                 {session.taskTitle && <span className="mx-2">·</span>}
                 <span>Cycle {currentCycle}/{totalCycles}</span>
               </>
@@ -204,19 +214,19 @@ export default function FocusMode({
       {/* Main content */}
       <div className="flex-1 flex overflow-hidden">
         {/* Left: Timer */}
-        <div className="w-96 flex flex-col items-center justify-center border-r border-gray-200 bg-white">
+        <div className={`w-96 flex flex-col items-center justify-center border-r ${isDarkMode ? 'border-graphite bg-void' : 'border-gray-200 bg-white'}`}>
           {!session ? (
             // Setup screen
             <div className="w-full max-w-sm px-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-6">Start Focus Session</h2>
+              <h2 className={`text-2xl font-bold mb-6 ${isDarkMode ? 'text-bone' : 'text-gray-800'}`}>Start Focus Session</h2>
 
               <div className="space-y-4">
                 <div>
-                  <label className="text-xs font-mono text-gray-500 uppercase mb-2 block">Task (optional)</label>
+                  <label className={`text-xs font-mono uppercase mb-2 block ${isDarkMode ? 'text-ash' : 'text-gray-500'}`}>Task (optional)</label>
                   <select
                     value={selectedTaskId}
                     onChange={(e) => setSelectedTaskId(e.target.value)}
-                    className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded-lg text-gray-800 focus:outline-none focus:border-cyan-400"
+                    className={`w-full px-3 py-2 rounded-lg focus:outline-none focus:border-signal-cyan ${isDarkMode ? 'bg-carbon border border-graphite text-bone' : 'bg-gray-50 border border-gray-200 text-gray-800'}`}
                   >
                     <option value="">No specific task</option>
                     {tasks.filter(t => t.status === 'backlog' || t.status === 'scheduled').map(task => (
@@ -227,34 +237,34 @@ export default function FocusMode({
 
                 <div className="grid grid-cols-3 gap-3">
                   <div>
-                    <label className="text-xs font-mono text-gray-500 uppercase mb-2 block">Focus (min)</label>
+                    <label className={`text-xs font-mono uppercase mb-2 block ${isDarkMode ? 'text-ash' : 'text-gray-500'}`}>Focus (min)</label>
                     <input
                       type="number"
                       value={pomodoroMinutes}
                       onChange={(e) => setPomodoroMinutes(Number(e.target.value))}
-                      className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded-lg text-gray-800 focus:outline-none focus:border-cyan-400"
+                      className={`w-full px-3 py-2 rounded-lg focus:outline-none focus:border-signal-cyan ${isDarkMode ? 'bg-carbon border border-graphite text-bone' : 'bg-gray-50 border border-gray-200 text-gray-800'}`}
                       min={5}
                       step={5}
                     />
                   </div>
                   <div>
-                    <label className="text-xs font-mono text-gray-500 uppercase mb-2 block">Break (min)</label>
+                    <label className={`text-xs font-mono uppercase mb-2 block ${isDarkMode ? 'text-ash' : 'text-gray-500'}`}>Break (min)</label>
                     <input
                       type="number"
                       value={breakMinutes}
                       onChange={(e) => setBreakMinutes(Number(e.target.value))}
-                      className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded-lg text-gray-800 focus:outline-none focus:border-cyan-400"
+                      className={`w-full px-3 py-2 rounded-lg focus:outline-none focus:border-signal-cyan ${isDarkMode ? 'bg-carbon border border-graphite text-bone' : 'bg-gray-50 border border-gray-200 text-gray-800'}`}
                       min={1}
                       step={1}
                     />
                   </div>
                   <div>
-                    <label className="text-xs font-mono text-gray-500 uppercase mb-2 block">Cycles</label>
+                    <label className={`text-xs font-mono uppercase mb-2 block ${isDarkMode ? 'text-ash' : 'text-gray-500'}`}>Cycles</label>
                     <input
                       type="number"
                       value={totalCycles}
                       onChange={(e) => setTotalCycles(Number(e.target.value))}
-                      className="w-full px-3 py-2 bg-gray-50 border border-gray-200 rounded-lg text-gray-800 focus:outline-none focus:border-cyan-400"
+                      className={`w-full px-3 py-2 rounded-lg focus:outline-none focus:border-signal-cyan ${isDarkMode ? 'bg-carbon border border-graphite text-bone' : 'bg-gray-50 border border-gray-200 text-gray-800'}`}
                       min={1}
                       max={12}
                     />
@@ -263,7 +273,7 @@ export default function FocusMode({
 
                 <button
                   onClick={startSession}
-                  className="w-full px-4 py-3 bg-cyan-500 text-white font-semibold rounded-lg hover:bg-cyan-600 transition-all flex items-center justify-center gap-2"
+                  className={`w-full px-4 py-3 font-semibold rounded-lg transition-all flex items-center justify-center gap-2 ${isDarkMode ? 'bg-signal-cyan hover:bg-signal-cyan/80 text-void' : 'bg-cyan-500 hover:bg-cyan-600 text-white'}`}
                 >
                   <Play className="w-5 h-5" />
                   Start Focus
@@ -280,7 +290,7 @@ export default function FocusMode({
                     cx="128"
                     cy="128"
                     r="120"
-                    stroke="#e5e7eb"
+                    stroke={isDarkMode ? '#2A3148' : '#F0F0F0'}
                     strokeWidth="8"
                     fill="none"
                   />
@@ -288,7 +298,7 @@ export default function FocusMode({
                     cx="128"
                     cy="128"
                     r="120"
-                    stroke={isBreak ? '#f59e0b' : '#06b6d4'}
+                    stroke={isBreak ? '#f59e0b' : '#00F0FF'}
                     strokeWidth="8"
                     fill="none"
                     strokeDasharray={`${2 * Math.PI * 120}`}
@@ -297,10 +307,10 @@ export default function FocusMode({
                   />
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <div className="text-6xl font-mono font-bold text-gray-800">
+                  <div className={`text-6xl font-mono font-bold ${isDarkMode ? 'text-bone' : 'text-[#1A1A1A]'}`}>
                     {formatTime(timeLeft)}
                   </div>
-                  <div className="text-sm text-gray-500 mt-2">
+                  <div className={`text-sm mt-2 ${isDarkMode ? 'text-ash' : 'text-gray-500'}`}>
                     {isBreak ? 'Break Time' : 'Focus Time'}
                   </div>
                 </div>
@@ -310,19 +320,19 @@ export default function FocusMode({
               <div className="flex items-center gap-3">
                 <button
                   onClick={togglePause}
-                  className="p-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-all"
+                  className={`p-3 rounded-lg transition-all ${isDarkMode ? 'bg-carbon hover:bg-graphite text-bone' : 'bg-gray-100 hover:bg-gray-200 text-gray-700'}`}
                 >
                   {isRunning ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
                 </button>
                 <button
                   onClick={resetTimer}
-                  className="p-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-all"
+                  className={`p-3 rounded-lg transition-all ${isDarkMode ? 'bg-carbon hover:bg-graphite text-bone' : 'bg-gray-100 hover:bg-gray-200 text-gray-700'}`}
                 >
                   <RotateCcw className="w-5 h-5" />
                 </button>
                 <button
                   onClick={skipToNext}
-                  className="p-3 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-all"
+                  className={`p-3 rounded-lg transition-all ${isDarkMode ? 'bg-carbon hover:bg-graphite text-bone' : 'bg-gray-100 hover:bg-gray-200 text-gray-700'}`}
                 >
                   <SkipForward className="w-5 h-5" />
                 </button>
@@ -335,10 +345,10 @@ export default function FocusMode({
                     key={idx}
                     className={`w-2 h-2 rounded-full ${
                       idx < currentCycle
-                        ? 'bg-cyan-500'
+                        ? (isDarkMode ? 'bg-signal-cyan' : 'bg-cyan-500')
                         : idx === currentCycle - 1 && !isBreak
-                        ? 'bg-cyan-300 animate-pulse'
-                        : 'bg-gray-300'
+                        ? (isDarkMode ? 'bg-signal-cyan/60 animate-pulse' : 'bg-cyan-300 animate-pulse')
+                        : (isDarkMode ? 'bg-graphite' : 'bg-gray-300')
                     }`}
                   />
                 ))}
@@ -348,17 +358,21 @@ export default function FocusMode({
         </div>
 
         {/* Right: Notes canvas */}
-        <div className="flex-1 flex flex-col bg-white">
-          <div className="px-8 py-4 border-b border-gray-200">
-            <h3 className="text-sm font-semibold text-gray-700">Notes & Thoughts</h3>
+        <div className={`flex-1 flex flex-col ${isDarkMode ? 'bg-void' : 'bg-white'}`}>
+          <div className={`px-8 py-4 border-b ${isDarkMode ? 'border-graphite' : 'border-gray-200'}`}>
+            <h3 className={`text-sm font-semibold ${isDarkMode ? 'text-bone' : 'text-gray-700'}`}>Notes & Thoughts</h3>
           </div>
           <textarea
             ref={notesRef}
             value={notes}
             onChange={(e) => setNotes(e.target.value)}
             placeholder="Start writing... Let your thoughts flow freely."
-            className="flex-1 px-12 py-8 bg-transparent text-gray-800 text-lg leading-relaxed resize-none focus:outline-none placeholder-gray-300"
-            style={{ caretColor: '#06b6d4' }}
+            className={`flex-1 px-12 py-8 text-lg leading-relaxed resize-none focus:outline-none ${
+              isDarkMode
+                ? 'bg-transparent text-gray-200 placeholder-gray-500'
+                : 'bg-white text-gray-800 border border-gray-200 focus:border-signal-cyan placeholder-gray-300'
+            }`}
+            style={{ caretColor: '#00F0FF' }}
           />
         </div>
       </div>

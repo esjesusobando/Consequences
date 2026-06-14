@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Plus,
   Clock,
@@ -18,6 +18,8 @@ import {
   CalendarDays,
   Timer,
   Brain,
+  Eye,
+  EyeOff,
 } from 'lucide-react';
 import { BacklogTask, AccentColor, TimeLog } from '../types';
 import { motion, AnimatePresence } from 'motion/react';
@@ -47,10 +49,17 @@ export default function TaskBacklog({
 
   const [editingTaskId, setEditingTaskId] = useState<string | null>(null);
   const [editTitle, setEditTitle] = useState('');
+  const [editDescription, setEditDescription] = useState('');
+  const [editPriority, setEditPriority] = useState<'high' | 'medium' | 'low'>('medium');
   const [editEstimatedMinutes, setEditEstimatedMinutes] = useState(30);
+  const [editScheduledDate, setEditScheduledDate] = useState('');
+  const [editScheduledTime, setEditScheduledTime] = useState('');
 
   const [activeTimer, setActiveTimer] = useState<{ taskId: string; startTime: Date } | null>(null);
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
+
+  const [selectedTaskId, setSelectedTaskId] = useState<string | null>(null);
+  const [showCompleted, setShowCompleted] = useState(true);
 
   // Filter tasks
   const backlogTasks = tasks.filter(t => t.status === 'backlog');
@@ -188,10 +197,43 @@ export default function TaskBacklog({
     return `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
   };
 
+  // Sync editor state when selected task changes
+  useEffect(() => {
+    const task = tasks.find(t => t.id === selectedTaskId);
+    if (task) {
+      setEditTitle(task.title);
+      setEditDescription(task.description);
+      setEditPriority(task.priority);
+      setEditEstimatedMinutes(task.estimatedMinutes);
+      setEditScheduledDate(task.scheduledDate || '');
+      setEditScheduledTime(task.scheduledTime || '');
+    }
+  }, [selectedTaskId, tasks]);
+
+  // Save task edits
+  const handleSaveEdit = () => {
+    if (!selectedTaskId) return;
+    setTasks(prev => prev.map(t =>
+      t.id === selectedTaskId
+        ? {
+            ...t,
+            title: editTitle,
+            description: editDescription,
+            priority: editPriority,
+            estimatedMinutes: editEstimatedMinutes,
+            scheduledDate: editScheduledDate || undefined,
+            scheduledTime: editScheduledTime || undefined,
+          }
+        : t
+    ));
+    onLogMessage('info', `Tarea actualizada: "${editTitle}"`);
+    setSelectedTaskId(null);
+  };
+
   return (
     <div className="flex h-full bg-void overflow-hidden">
-      {/* Left: Backlog */}
-      <div className="w-96 bg-carbon/20 border-r border-graphite/40 flex flex-col">
+      {/* Column 1: Backlog (w-72) */}
+      <div className="w-72 bg-carbon/20 border-r border-graphite/40 flex flex-col shrink-0">
         <div className="p-4 border-b border-graphite/30">
           <div className="flex items-center justify-between mb-3">
             <h2 className="text-lg font-bold text-bone flex items-center gap-2">
@@ -202,10 +244,9 @@ export default function TaskBacklog({
               {onStartFocus && (
                 <button
                   onClick={onStartFocus}
-                  className="px-3 py-1.5 bg-signal-cyan/10 text-signal-cyan hover:bg-signal-cyan/20 rounded-lg transition-all text-xs font-semibold flex items-center gap-1.5"
+                  className="px-3 py-1.5 bg-signal-cyan/10 text-signal-cyan hover:bg-signal-cyan/20 rounded-lg transition-all text-xs font-mono uppercase tracking-widest"
                   title="Start Focus Mode"
                 >
-                  <Brain className="w-3.5 h-3.5" />
                   Focus
                 </button>
               )}
@@ -246,7 +287,12 @@ export default function TaskBacklog({
             backlogTasks.map(task => (
               <div
                 key={task.id}
-                className="p-3 bg-carbon/30 border border-graphite/40 rounded-lg hover:border-graphite/60 transition-all"
+                onClick={() => setSelectedTaskId(task.id)}
+                className={`p-3 rounded-lg transition-all cursor-pointer ${
+                  selectedTaskId === task.id
+                    ? 'bg-signal-cyan/10 border border-signal-cyan/60'
+                    : 'bg-carbon/30 border border-graphite/40 hover:border-graphite/60'
+                }`}
               >
                 <div className="flex items-start justify-between mb-2">
                   <div className="flex-1">
@@ -274,14 +320,14 @@ export default function TaskBacklog({
                   </div>
                   <div className="flex items-center gap-1">
                     <button
-                      onClick={() => startTimer(task.id)}
+                      onClick={(e) => { e.stopPropagation(); startTimer(task.id); }}
                       className="p-1.5 text-signal-lime hover:bg-signal-lime/10 rounded transition-all"
                       title="Iniciar timer"
                     >
                       <Play className="w-3.5 h-3.5" />
                     </button>
                     <button
-                      onClick={() => deleteTask(task.id)}
+                      onClick={(e) => { e.stopPropagation(); deleteTask(task.id); }}
                       className="p-1.5 text-ash/60 hover:text-signal-magenta hover:bg-signal-magenta/10 rounded transition-all"
                       title="Eliminar"
                     >
@@ -295,7 +341,7 @@ export default function TaskBacklog({
         </div>
       </div>
 
-      {/* Right: Scheduled + In Progress */}
+      {/* Column 2: Active Timer + Scheduled + Detail Editor (flex-1) */}
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* Active timer */}
         {activeTimer && (
@@ -322,82 +368,233 @@ export default function TaskBacklog({
           </div>
         )}
 
-        {/* Scheduled tasks */}
+        {/* Scrollable content */}
         <div className="flex-1 overflow-y-auto p-6">
-          <h3 className="text-lg font-bold text-bone mb-4 flex items-center gap-2">
-            <CalendarDays className="w-5 h-5" />
-            Programadas
-          </h3>
-
-          {scheduledTasks.length === 0 ? (
-            <div className="text-center py-12 text-ash/40">
-              <Calendar className="w-12 h-12 mx-auto mb-3 opacity-30" />
-              <p className="text-sm">No hay tareas programadas</p>
-            </div>
-          ) : (
-            <div className="space-y-3">
-              {scheduledTasks.map(task => (
-                <div
-                  key={task.id}
-                  className="p-4 bg-carbon/30 border border-graphite/40 rounded-lg"
-                >
-                  <div className="flex items-start justify-between mb-2">
-                    <div className="flex-1">
-                      <h4 className="text-sm font-semibold text-bone">{task.title}</h4>
-                      <div className="flex items-center gap-3 mt-2 text-xs text-ash/60">
-                        <span className="flex items-center gap-1">
-                          <Calendar className="w-3 h-3" />
-                          {task.scheduledDate}
-                        </span>
-                        <span className="flex items-center gap-1">
-                          <Clock className="w-3 h-3" />
-                          {task.scheduledTime}
-                        </span>
-                        <span>{task.estimatedMinutes}min</span>
-                      </div>
-                    </div>
-                    <button
-                      onClick={() => startTimer(task.id)}
-                      className="p-2 text-signal-lime hover:bg-signal-lime/10 rounded-lg transition-all"
-                    >
-                      <Play className="w-4 h-4" />
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-
-          {/* Completed tasks */}
-          {doneTasks.length > 0 && (
+          {/* Scheduled tasks */}
+          {scheduledTasks.length > 0 && (
             <>
-              <h3 className="text-lg font-bold text-bone mt-8 mb-4 flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-signal-lime" />
-                Completadas
+              <h3 className="text-lg font-bold text-bone mb-4 flex items-center gap-2">
+                <CalendarDays className="w-5 h-5" />
+                Programadas
               </h3>
-              <div className="space-y-2">
-                {doneTasks.slice(0, 10).map(task => (
+              <div className="space-y-3 mb-8">
+                {scheduledTasks.map(task => (
                   <div
                     key={task.id}
-                    className="p-3 bg-carbon/20 border border-graphite/30 rounded-lg opacity-60"
+                    className="p-4 bg-carbon/30 border border-graphite/40 rounded-lg"
                   >
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-start justify-between mb-2">
                       <div className="flex-1">
-                        <h4 className="text-sm font-medium text-bone line-through">{task.title}</h4>
-                        <div className="flex items-center gap-3 mt-1 text-xs text-ash/60">
-                          <span>Estimado: {task.estimatedMinutes}min</span>
-                          <span>Real: {task.actualMinutes}min</span>
+                        <h4 className="text-sm font-semibold text-bone">{task.title}</h4>
+                        <div className="flex items-center gap-3 mt-2 text-xs text-ash/60">
+                          <span className="flex items-center gap-1">
+                            <Calendar className="w-3 h-3" />
+                            {task.scheduledDate}
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <Clock className="w-3 h-3" />
+                            {task.scheduledTime}
+                          </span>
+                          <span>{task.estimatedMinutes}min</span>
                         </div>
                       </div>
-                      <CheckCircle2 className="w-4 h-4 text-signal-lime" />
+                      <button
+                        onClick={() => startTimer(task.id)}
+                        className="p-2 text-signal-lime hover:bg-signal-lime/10 rounded-lg transition-all"
+                      >
+                        <Play className="w-4 h-4" />
+                      </button>
                     </div>
                   </div>
                 ))}
               </div>
             </>
           )}
+
+          {/* Task Detail Editor */}
+          {selectedTaskId ? (
+            <div className="bg-carbon/20 border border-graphite/40 rounded-xl p-6">
+              {(() => {
+                const task = tasks.find(t => t.id === selectedTaskId);
+                if (!task) return <p className="text-ash/60">Tarea no encontrada</p>;
+                return (
+                  <div className="space-y-5">
+                    {/* Title */}
+                    <div>
+                      <label className="text-xs font-mono text-ash uppercase mb-1.5 block">Título</label>
+                      <input
+                        type="text"
+                        value={editTitle}
+                        onChange={(e) => setEditTitle(e.target.value)}
+                        className="w-full px-4 py-2.5 bg-void border border-graphite/50 rounded-lg text-bone text-base font-semibold focus:outline-none focus:border-signal-cyan/60"
+                      />
+                    </div>
+
+                    {/* Description */}
+                    <div>
+                      <label className="text-xs font-mono text-ash uppercase mb-1.5 block">Descripción</label>
+                      <textarea
+                        value={editDescription}
+                        onChange={(e) => setEditDescription(e.target.value)}
+                        className="w-full px-4 py-2.5 bg-void border border-graphite/50 rounded-lg text-bone focus:outline-none focus:border-signal-cyan/60 resize-none"
+                        rows={4}
+                        placeholder="Sin descripción"
+                      />
+                    </div>
+
+                    {/* Priority + Estimated */}
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <label className="text-xs font-mono text-ash uppercase mb-1.5 block">Prioridad</label>
+                        <select
+                          value={editPriority}
+                          onChange={(e) => setEditPriority(e.target.value as 'high' | 'medium' | 'low')}
+                          className="w-full px-3 py-2 bg-void border border-graphite/50 rounded-lg text-bone focus:outline-none focus:border-signal-cyan/60"
+                        >
+                          <option value="high">Alta</option>
+                          <option value="medium">Media</option>
+                          <option value="low">Baja</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label className="text-xs font-mono text-ash uppercase mb-1.5 block">Tiempo estimado (min)</label>
+                        <input
+                          type="number"
+                          value={editEstimatedMinutes}
+                          onChange={(e) => setEditEstimatedMinutes(Number(e.target.value))}
+                          className="w-full px-3 py-2 bg-void border border-graphite/50 rounded-lg text-bone focus:outline-none focus:border-signal-cyan/60"
+                          min={1}
+                          step={5}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Scheduled date/time */}
+                    <div className="grid grid-cols-2 gap-4">
+                      <div>
+                        <label className="text-xs font-mono text-ash uppercase mb-1.5 block">Fecha programada</label>
+                        <input
+                          type="date"
+                          value={editScheduledDate}
+                          onChange={(e) => setEditScheduledDate(e.target.value)}
+                          className="w-full px-3 py-2 bg-void border border-graphite/50 rounded-lg text-bone focus:outline-none focus:border-signal-cyan/60"
+                        />
+                      </div>
+                      <div>
+                        <label className="text-xs font-mono text-ash uppercase mb-1.5 block">Hora programada</label>
+                        <input
+                          type="time"
+                          value={editScheduledTime}
+                          onChange={(e) => setEditScheduledTime(e.target.value)}
+                          className="w-full px-3 py-2 bg-void border border-graphite/50 rounded-lg text-bone focus:outline-none focus:border-signal-cyan/60"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Source + AI Notes */}
+                    <div className="flex items-center gap-3 text-xs text-ash/60">
+                      <span className="font-mono uppercase">Origen: {task.source === 'email' ? 'Email' : task.source === 'calendar' ? 'Calendario' : 'Manual'}</span>
+                      {task.aiEstimatedMinutes && (
+                        <span className="font-mono">AI: {task.aiEstimatedMinutes}min</span>
+                      )}
+                    </div>
+
+                    {task.aiNotes && (
+                      <div className="p-3 bg-signal-cyan/5 border border-signal-cyan/20 rounded-lg">
+                        <div className="text-xs font-mono text-signal-cyan uppercase mb-1">AI Notes</div>
+                        <p className="text-sm text-ash/80">{task.aiNotes}</p>
+                      </div>
+                    )}
+
+                    {/* Save button */}
+                    <div className="flex items-center gap-3 pt-2">
+                      <button
+                        onClick={handleSaveEdit}
+                        className="px-6 py-2.5 bg-signal-cyan text-void font-semibold rounded-lg hover:bg-signal-cyan/90 transition-all flex items-center gap-2"
+                      >
+                        <Save className="w-4 h-4" />
+                        Guardar
+                      </button>
+                      <button
+                        onClick={() => setSelectedTaskId(null)}
+                        className="px-4 py-2.5 bg-carbon border border-graphite/50 text-ash rounded-lg hover:text-bone transition-all"
+                      >
+                        Cancelar
+                      </button>
+                    </div>
+                  </div>
+                );
+              })()}
+            </div>
+          ) : (
+            <div className="flex items-center justify-center h-64 text-ash/40">
+              <div className="text-center">
+                <Edit2 className="w-16 h-16 mx-auto mb-4 opacity-30" />
+                <p className="text-lg font-medium">Selecciona una tarea para ver sus detalles</p>
+              </div>
+            </div>
+          )}
         </div>
       </div>
+
+      {/* Column 3: Completed Tasks (w-80, collapsible) */}
+      {showCompleted ? (
+        <div className="w-80 bg-carbon/20 border-l border-graphite/40 flex flex-col shrink-0">
+          <div className="p-4 border-b border-graphite/30 flex items-center justify-between">
+            <h3 className="text-sm font-bold text-bone flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-signal-lime" />
+              Completadas
+              <span className="text-xs font-mono text-ash/60 ml-1">({doneTasks.length})</span>
+            </h3>
+            <button
+              onClick={() => setShowCompleted(false)}
+              className="p-1.5 text-ash/60 hover:text-bone hover:bg-carbon/40 rounded transition-all"
+              title="Ocultar completadas"
+            >
+              <EyeOff className="w-4 h-4" />
+            </button>
+          </div>
+          <div className="flex-1 overflow-y-auto p-3 space-y-2">
+            {doneTasks.length === 0 ? (
+              <div className="text-center py-12 text-ash/40">
+                <CheckCircle2 className="w-10 h-10 mx-auto mb-3 opacity-30" />
+                <p className="text-xs">Ninguna tarea completada</p>
+              </div>
+            ) : (
+              doneTasks.slice(0, 20).map(task => (
+                <div
+                  key={task.id}
+                  className="p-3 bg-carbon/20 border border-graphite/30 rounded-lg opacity-60"
+                >
+                  <div className="flex items-start justify-between">
+                    <div className="flex-1 min-w-0">
+                      <h4 className="text-sm font-medium text-bone line-through truncate">{task.title}</h4>
+                      <div className="flex items-center gap-3 mt-1 text-xs text-ash/60">
+                        <span>{task.estimatedMinutes}min</span>
+                        <span className={task.actualMinutes !== undefined && task.actualMinutes > task.estimatedMinutes * 1.2 ? 'text-signal-magenta' : ''}>
+                          Real: {task.actualMinutes ?? '—'}min
+                        </span>
+                      </div>
+                    </div>
+                    <CheckCircle2 className="w-4 h-4 text-signal-lime shrink-0 mt-0.5" />
+                  </div>
+                </div>
+              ))
+            )}
+          </div>
+        </div>
+      ) : (
+        <div className="w-8 bg-carbon/20 border-l border-graphite/40 flex flex-col items-center py-3 shrink-0">
+          <button
+            onClick={() => setShowCompleted(true)}
+            className="p-1.5 text-ash/60 hover:text-bone hover:bg-carbon/40 rounded transition-all"
+            title="Mostrar completadas"
+          >
+            <Eye className="w-4 h-4" />
+          </button>
+          <span className="text-[10px] font-mono text-ash/40 mt-1">{doneTasks.length}</span>
+        </div>
+      )}
 
       {/* Add task modal */}
       <AnimatePresence>
@@ -457,7 +654,7 @@ export default function TaskBacklog({
                     <label className="text-xs font-mono text-ash uppercase mb-1 block">Prioridad</label>
                     <select
                       value={newPriority}
-                      onChange={(e) => setNewPriority(e.target.value as any)}
+                      onChange={(e) => setNewPriority(e.target.value as 'high' | 'medium' | 'low')}
                       className="w-full px-3 py-2 bg-void border border-graphite/50 rounded-lg text-bone focus:outline-none focus:border-signal-cyan/60"
                     >
                       <option value="high">Alta</option>

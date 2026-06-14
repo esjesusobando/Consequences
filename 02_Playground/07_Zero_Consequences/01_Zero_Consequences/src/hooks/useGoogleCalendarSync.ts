@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Dispatch, SetStateAction } from 'react';
 import { SignalEvent } from '../types';
 import { fetchCalendarEvents } from '../lib/googleAuth';
 
@@ -14,13 +14,13 @@ interface GoogleCalendarEvent {
 
 interface UseGoogleCalendarSyncReturn {
   calendarSyncStatus: SyncStatus;
-  setCalendarSyncStatus: React.Dispatch<React.SetStateAction<SyncStatus>>;
+  setCalendarSyncStatus: Dispatch<SetStateAction<SyncStatus>>;
   handleCalendarResync: () => Promise<void>;
 }
 
 export function useGoogleCalendarSync(
   googleToken: string | null,
-  setSignals: React.Dispatch<React.SetStateAction<SignalEvent[]>>,
+  setSignals: Dispatch<SetStateAction<SignalEvent[]>>,
   onLogMessage: (type: 'info' | 'ok' | 'warn' | 'err', text: string) => void
 ): UseGoogleCalendarSyncReturn {
   const [calendarSyncStatus, setCalendarSyncStatus] = useState<SyncStatus>('synchronized');
