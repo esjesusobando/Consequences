@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { 
+import {
   LayoutGrid, 
   Code, 
   Sliders, 
@@ -14,18 +14,19 @@ import {
   ChevronRight,
   Mail,
   ListTodo,
+  Megaphone,
 } from 'lucide-react';
 import { AccentColor } from '../types';
 
+export type TabId = 'dashboard' | 'email' | 'tasks' | 'marketing' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal';
+
 interface SideNavBarProps {
-  activeTab: 'dashboard' | 'email' | 'tasks' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal';
-  setActiveTab: (tab: 'dashboard' | 'email' | 'tasks' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal') => void;
+  activeTab: TabId;
+  setActiveTab: (tab: TabId) => void;
   accent: AccentColor;
   onSystemReset: () => void;
   hideLeftPanel: boolean;
 }
-
-type TabId = 'dashboard' | 'email' | 'tasks' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal';
 
 interface MenuItem {
   id: TabId;
@@ -76,6 +77,7 @@ export default function SideNavBar({
     { id: 'dashboard',    label: 'Sesión Reunión', icon: CalendarDays,  desc: 'Próxima Reunión & Conteo',                    ready: true  },
     { id: 'email',        label: 'Email',          icon: Mail,          desc: 'Gestor de Correos (Superhuman-like)',          ready: true  },
     { id: 'tasks',        label: 'Tareas',         icon: ListTodo,      desc: 'Backlog, Scheduling & Time Tracking',          ready: true  },
+    { id: 'marketing',    label: 'Marketing',      icon: Megaphone,     desc: 'Audio Pipeline & Content Automation',          ready: true  },
     { id: 'personal_os',  label: 'Personal OS',    icon: Monitor,       desc: 'Espacio Personal (Supernative, OCR, Codex)',   ready: false },
     { id: 'linear',       label: 'Linear Team',    icon: FolderKanban,  desc: 'Varios Proyectos & Criterios SOTA',            ready: false },
     { id: 'operations',   label: 'Operaciones',    icon: Boxes,         desc: 'SKU, Variantes, Bodegas, Compras',             ready: false },

@@ -9,6 +9,7 @@ import { initAuth } from './lib/googleAuth';
 import CommandPalette from './components/CommandPalette';
 
 // Brand New Custom Views
+import { TabId } from './components/SideNavBar';
 import LinearOSView from './components/LinearOSView';
 import PersonalOsView from './components/PersonalOsView';
 import OperationsOSView from './components/OperationsOSView';
@@ -17,6 +18,7 @@ import SettingsDrawer from './components/SettingsDrawer';
 import FocusNotesPanel from './components/FocusNotesPanel';
 import EmailView from './components/EmailView';
 import TaskBacklog from './components/TaskBacklog';
+import MarketingView from './components/MarketingView';
 import FocusMode from './components/FocusMode';
 
 // Types & Data
@@ -84,8 +86,8 @@ export default function App() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [hideLeftPanel, hideRightPanel]);
   
-  // Navigation Tabs state: 'dashboard' | 'email' | 'tasks' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal'
-  const [activeTab, setActiveTab] = useState<'dashboard' | 'email' | 'tasks' | 'personal_os' | 'linear' | 'operations' | 'analytics' | 'specs' | 'terminal'>('dashboard');
+  // Navigation Tabs state
+  const [activeTab, setActiveTab] = useState<TabId>('dashboard');
 
   // Backlog Tasks state (for email → task extraction)
   const [backlogTasks, setBacklogTasks] = useState<BacklogTask[]>([]);
@@ -853,6 +855,14 @@ export default function App() {
               accent={accent}
               onLogMessage={logMessage}
               onStartFocus={() => setIsFocusModeOpen(true)}
+            />
+          )}
+
+          {/* TAB 4: MARKETING AUTOMATION (Audio Pipeline by Levels) */}
+          {activeTab === 'marketing' && (
+            <MarketingView
+              accent={accent}
+              onLogMessage={logMessage}
             />
           )}
 

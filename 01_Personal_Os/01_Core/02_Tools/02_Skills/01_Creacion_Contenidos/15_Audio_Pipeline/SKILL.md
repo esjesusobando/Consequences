@@ -54,15 +54,42 @@ Todo programado y publicado en piloto automático.
 
 ---
 
+## Patrones v2.0 (Learning Always)
+
+### Review Gate Pattern
+Nunca publicar contenido sin aprobación de un revisor dedicado:
+
+```
+Contenido → Agente Revisor → JSON {aprobado_global: bool}
+  → true: continuar pipeline
+  → false: detener, reportar qué piezas fallaron
+```
+
+El revisor evalúa contra **brand_voice.md** y devuelve aprobación estructurada por pieza.
+
+### Brand Voice + Brand Design
+- `brand_voice.md` → fuente de verdad para tono/texto (agentes de texto)
+- `brand_design.md` → fuente de verdad para visual (agentes visuales)
+- Separación de concerns: cada agente carga solo el contexto que necesita
+
+### MCP como Tool Attachment
+Los MCPs se asignan por agente, no globalmente:
+- `publicador` → Metricool MCP
+- `carrusel-designer` → Higgsfield MCP
+- Configurar en `.mcp.json` + referencia en el agente `.md`
+
+---
+
 ## Herramientas Requeridas
 
 | Herramienta | Uso | Config |
 |---|---|---|
 | **Whisper** | Transcripción audio→texto (local) | `pip install faster-whisper` |
-| **Higgsfield MCP** | Generación imágenes AI | OAuth en .mcp.json |
-| **Metricool MCP** | Programar posts + analytics | OAuth en .mcp.json |
+| **Higgsfield MCP** | Generación imágenes AI | OAuth en .mcp.json (asignar solo a agente visual) |
+| **Metricool MCP** | Programar posts + analytics | OAuth en .mcp.json (asignar solo a agente publicador) |
 | **Sequential Thinking** | Razonamiento paso a paso | `.mcp.json` |
 | **Brand Voice** | Contexto de marca | `.agent/01_Agents/04_Contexto/03_Contexto/02_tono-de-voz.md` |
+| **Brand Design** | Contexto visual | Archivo separado para agentes visuales |
 
 ---
 

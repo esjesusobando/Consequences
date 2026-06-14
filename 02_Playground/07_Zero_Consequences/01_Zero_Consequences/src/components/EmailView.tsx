@@ -228,7 +228,7 @@ export default function EmailView({
       {/* Left sidebar: Folders */}
       <div className="w-56 bg-carbon/30 border-r border-graphite/40 flex flex-col">
         <div className="p-4 border-b border-graphite/30">
-          <button className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-signal-cyan/10 hover:bg-signal-cyan/20 text-signal-cyan rounded-lg transition-all font-semibold text-sm">
+          <button className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-signal-cyan/10 hover:bg-signal-cyan/20 text-signal-cyan rounded-lg transition-all font-display font-semibold text-sm">
             <Mail className="w-4 h-4" />
             Compose
           </button>
@@ -249,7 +249,7 @@ export default function EmailView({
                 }`}
               >
                 <Icon className="w-4 h-4" />
-                <span className="text-sm font-medium">{folder.label}</span>
+                <span className="text-sm font-display font-semibold">{folder.label}</span>
                 {folder.count > 0 && (
                   <span className={`ml-auto text-xs font-bold ${active ? getAccentClass() : 'text-ash/60'}`}>
                     {folder.count}
@@ -313,7 +313,7 @@ export default function EmailView({
           {filteredEmails.length === 0 ? (
             <div className="flex flex-col items-center justify-center h-full text-ash/40">
               <Mail className="w-12 h-12 mb-3 opacity-30" />
-              <p className="text-sm">No hay emails</p>
+              <p className="text-sm font-display">No hay emails</p>
             </div>
           ) : (
             filteredEmails.map(email => {
@@ -334,7 +334,7 @@ export default function EmailView({
                   <div className="flex items-start justify-between mb-1">
                     <div className="flex items-center gap-2 flex-1 min-w-0">
                       {!email.read && <div className="w-2 h-2 bg-signal-cyan rounded-full shrink-0" />}
-                      <span className={`text-sm font-semibold truncate ${!email.read ? 'text-bone' : 'text-ash'}`}>
+                      <span className={`text-sm font-display font-semibold truncate ${!email.read ? 'text-bone' : 'text-ash'}`}>
                         {email.fromName}
                       </span>
                     </div>
@@ -351,7 +351,7 @@ export default function EmailView({
                       </button>
                     </div>
                   </div>
-                  <div className={`text-sm font-medium mb-1 truncate ${!email.read ? 'text-bone' : 'text-ash/80'}`}>
+                  <div className={`text-sm font-display font-medium mb-1 truncate ${!email.read ? 'text-bone' : 'text-ash/80'}`}>
                     {email.subject}
                   </div>
                   <div className="text-xs text-ash/60 truncate">{email.snippet}</div>
@@ -380,10 +380,10 @@ export default function EmailView({
                 <div className="flex-1">
                   <h1 className="text-xl font-bold font-display text-bone mb-2">{selectedEmail.subject}</h1>
                   <div className="flex items-center gap-3 text-sm">
-                    <span className="font-semibold text-bone">{selectedEmail.fromName}</span>
-                    <span className="text-ash/60">&lt;{selectedEmail.from}&gt;</span>
+                    <span className="font-display font-semibold text-bone">{selectedEmail.fromName}</span>
+                    <span className="text-ash/60 font-mono">&lt;{selectedEmail.from}&gt;</span>
                   </div>
-                  <div className="text-xs text-ash/60 mt-1">
+                  <div className="text-xs text-ash/60 mt-1 font-mono">
                     Para: {selectedEmail.to.join(', ')}
                   </div>
                 </div>
@@ -405,7 +405,7 @@ export default function EmailView({
                 <div className="flex items-start gap-2 p-3 bg-signal-cyan/5 border border-signal-cyan/20 rounded-lg">
                   <Sparkles className="w-4 h-4 text-signal-cyan shrink-0 mt-0.5" />
                   <div className="flex-1">
-                    <div className="text-xs font-mono text-signal-cyan uppercase mb-1">AI Summary</div>
+                    <div className="text-xs font-display text-signal-cyan uppercase mb-1">AI Summary</div>
                     <div className="text-sm text-bone">{selectedEmail.aiSummary}</div>
                   </div>
                 </div>
@@ -431,7 +431,7 @@ export default function EmailView({
               <div className="p-4 border-t border-graphite/30 bg-carbon/20">
                 <div className="flex items-center gap-2 mb-2">
                   <ListTodo className="w-4 h-4 text-signal-lime" />
-                  <span className="text-xs font-mono text-signal-lime uppercase">Action Items</span>
+                  <span className="text-xs font-display text-signal-lime uppercase">Action Items</span>
                 </div>
                 <div className="space-y-1">
                   {selectedEmail.aiActionItems.map((item, idx) => (
@@ -447,7 +447,7 @@ export default function EmailView({
         ) : (
           <div className="flex flex-col items-center justify-center h-full text-ash/40">
             <MailOpen className="w-16 h-16 mb-4 opacity-20" />
-            <p className="text-sm">Selecciona un email para leer</p>
+            <p className="text-sm font-display">Selecciona un email para leer</p>
           </div>
         )}
       </div>
