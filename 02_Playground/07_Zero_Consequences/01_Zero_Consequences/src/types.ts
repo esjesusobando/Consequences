@@ -188,6 +188,7 @@ export interface BacklogTask {
   tags: string[];
   createdAt: string;
   completedAt?: string;
+  userNotes?: string;           // User's personal notes on the task
   // AI recommendations
   aiEstimatedMinutes?: number;  // What the OS recommends based on history
   aiNotes?: string;             // AI insights about this task

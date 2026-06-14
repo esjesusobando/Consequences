@@ -218,7 +218,7 @@ export default function FocusMode({
           {!session ? (
             // Setup screen
             <div className="w-full max-w-sm px-8">
-              <h2 className={`text-2xl font-bold mb-6 ${isDarkMode ? 'text-bone' : 'text-gray-800'}`}>Start Focus Session</h2>
+              <h2 className={`text-2xl font-bold font-display mb-6 ${isDarkMode ? 'text-bone' : 'text-gray-800'}`}>Start Focus Session</h2>
 
               <div className="space-y-4">
                 <div>
@@ -360,7 +360,7 @@ export default function FocusMode({
         {/* Right: Notes canvas */}
         <div className={`flex-1 flex flex-col ${isDarkMode ? 'bg-void' : 'bg-white'}`}>
           <div className={`px-8 py-4 border-b ${isDarkMode ? 'border-graphite' : 'border-gray-200'}`}>
-            <h3 className={`text-sm font-semibold ${isDarkMode ? 'text-bone' : 'text-gray-700'}`}>Notes & Thoughts</h3>
+            <h3 className={`text-sm font-semibold font-display ${isDarkMode ? 'text-bone' : 'text-gray-700'}`}>Notes & Thoughts</h3>
           </div>
           <textarea
             ref={notesRef}

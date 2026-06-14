@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   Plus,
   Clock,
@@ -57,9 +57,13 @@ export default function TaskBacklog({
 
   const [activeTimer, setActiveTimer] = useState<{ taskId: string; startTime: Date } | null>(null);
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
+  const timerIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const elapsedRef = useRef(0);
 
   const [selectedTaskId, setSelectedTaskId] = useState<string | null>(null);
   const [showCompleted, setShowCompleted] = useState(true);
+  const [isEditing, setIsEditing] = useState(false);
+  const [localNotes, setLocalNotes] = useState('');
 
   // Filter tasks
   const backlogTasks = tasks.filter(t => t.status === 'backlog');
@@ -88,6 +92,7 @@ export default function TaskBacklog({
       scheduledDate: newScheduledDate || undefined,
       scheduledTime: newScheduledTime || undefined,
       source: 'manual',
+      userNotes: '',
       status: newScheduledDate ? 'scheduled' : 'backlog',
       priority: newPriority,
       tags: [],
@@ -111,18 +116,17 @@ export default function TaskBacklog({
   const startTimer = (taskId: string) => {
     setActiveTimer({ taskId, startTime: new Date() });
     setElapsedSeconds(0);
+    elapsedRef.current = 0;
     setTasks(prev => prev.map(t => 
       t.id === taskId ? { ...t, status: 'in_progress' as const } : t
     ));
     onLogMessage('info', `Timer iniciado para tarea`);
 
     // Update elapsed time every second
-    const interval = setInterval(() => {
-      setElapsedSeconds(prev => prev + 1);
+    timerIntervalRef.current = setInterval(() => {
+      elapsedRef.current += 1;
+      setElapsedSeconds(elapsedRef.current);
     }, 1000);
-
-    // Store interval ID for cleanup
-    (window as any).taskTimerInterval = interval;
   };
 
   // Stop timer
@@ -140,11 +144,22 @@ export default function TaskBacklog({
     onLogMessage('ok', `Tarea completada en ${actualMinutes}min`);
     setActiveTimer(null);
     setElapsedSeconds(0);
+    elapsedRef.current = 0;
 
-    if ((window as any).taskTimerInterval) {
-      clearInterval((window as any).taskTimerInterval);
+    if (timerIntervalRef.current) {
+      clearInterval(timerIntervalRef.current);
+      timerIntervalRef.current = null;
     }
   };
+
+  // Cleanup timer on unmount
+  useEffect(() => {
+    return () => {
+      if (timerIntervalRef.current) {
+        clearInterval(timerIntervalRef.current);
+      }
+    };
+  }, []);
 
   // Delete task
   const deleteTask = (taskId: string) => {
@@ -207,7 +222,9 @@ export default function TaskBacklog({
       setEditEstimatedMinutes(task.estimatedMinutes);
       setEditScheduledDate(task.scheduledDate || '');
       setEditScheduledTime(task.scheduledTime || '');
+      setLocalNotes(task.userNotes || '');
     }
+    setIsEditing(false);
   }, [selectedTaskId, tasks]);
 
   // Save task edits
@@ -227,18 +244,17 @@ export default function TaskBacklog({
         : t
     ));
     onLogMessage('info', `Tarea actualizada: "${editTitle}"`);
-    setSelectedTaskId(null);
   };
 
   return (
     <div className="flex h-full bg-void overflow-hidden">
-      {/* Column 1: Backlog (w-72) */}
+      {/* Column 1: Tasks (w-72) */}
       <div className="w-72 bg-carbon/20 border-r border-graphite/40 flex flex-col shrink-0">
         <div className="p-4 border-b border-graphite/30">
           <div className="flex items-center justify-between mb-3">
-            <h2 className="text-lg font-bold text-bone flex items-center gap-2">
+            <h2 className="text-lg font-bold font-display text-bone flex items-center gap-2">
               <ListTodo className="w-5 h-5" />
-              Backlog
+              Tasks
             </h2>
             <div className="flex items-center gap-2">
               {onStartFocus && (
@@ -259,20 +275,10 @@ export default function TaskBacklog({
             </div>
           </div>
 
-          {/* Stats */}
-          <div className="grid grid-cols-3 gap-2 text-center">
-            <div className="p-2 bg-carbon/40 rounded-lg">
-              <div className="text-xs text-ash/60 font-mono">Total</div>
-              <div className="text-lg font-bold text-bone">{tasks.length}</div>
-            </div>
-            <div className="p-2 bg-carbon/40 rounded-lg">
-              <div className="text-xs text-ash/60 font-mono">Done</div>
-              <div className="text-lg font-bold text-signal-lime">{completedTasks}</div>
-            </div>
-            <div className="p-2 bg-carbon/40 rounded-lg">
-              <div className="text-xs text-ash/60 font-mono">Accuracy</div>
-              <div className="text-lg font-bold text-signal-cyan">{accuracyRate}%</div>
-            </div>
+          {/* Minimal count */}
+          <div className="flex items-center gap-3 text-xs text-ash/60 font-mono">
+            <span>{tasks.length} tareas</span>
+            <span className="text-signal-lime">{completedTasks} hechas</span>
           </div>
         </div>
 
@@ -281,57 +287,34 @@ export default function TaskBacklog({
           {backlogTasks.length === 0 ? (
             <div className="text-center py-12 text-ash/40">
               <ListTodo className="w-12 h-12 mx-auto mb-3 opacity-30" />
-              <p className="text-sm">No hay tareas en backlog</p>
+              <p className="text-sm">No hay tareas</p>
             </div>
           ) : (
             backlogTasks.map(task => (
               <div
                 key={task.id}
                 onClick={() => setSelectedTaskId(task.id)}
-                className={`p-3 rounded-lg transition-all cursor-pointer ${
+                className={`px-3 py-2 rounded-lg transition-all cursor-pointer ${
                   selectedTaskId === task.id
                     ? 'bg-signal-cyan/10 border border-signal-cyan/60'
                     : 'bg-carbon/30 border border-graphite/40 hover:border-graphite/60'
                 }`}
               >
-                <div className="flex items-start justify-between mb-2">
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 mb-1">
-                      <span className={`text-[9px] font-mono px-1.5 py-0.5 rounded ${getPriorityColor(task.priority)}`}>
-                        {task.priority.toUpperCase()}
-                      </span>
-                      {task.source === 'email' && (
-                        <span className="text-[9px] font-mono text-signal-cyan bg-signal-cyan/10 px-1.5 py-0.5 rounded">
-                          EMAIL
-                        </span>
-                      )}
-                    </div>
-                    <h3 className="text-sm font-semibold text-bone">{task.title}</h3>
-                    {task.description && (
-                      <p className="text-xs text-ash/70 mt-1 line-clamp-2">{task.description}</p>
-                    )}
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2 min-w-0 flex-1">
+                    <span className={`text-[9px] font-mono px-1.5 py-0.5 rounded shrink-0 ${getPriorityColor(task.priority)}`}>
+                      {task.priority.toUpperCase()}
+                    </span>
+                    <h3 className="text-sm font-semibold font-body text-bone truncate">{task.title}</h3>
                   </div>
-                </div>
-
-                <div className="flex items-center justify-between mt-3">
-                  <div className="flex items-center gap-2 text-xs text-ash/60">
-                    <Clock className="w-3 h-3" />
-                    <span>{task.estimatedMinutes}min</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <button
-                      onClick={(e) => { e.stopPropagation(); startTimer(task.id); }}
-                      className="p-1.5 text-signal-lime hover:bg-signal-lime/10 rounded transition-all"
-                      title="Iniciar timer"
-                    >
-                      <Play className="w-3.5 h-3.5" />
-                    </button>
+                  <div className="flex items-center gap-1 shrink-0">
+                    <span className="text-[10px] font-mono text-ash/60">{task.estimatedMinutes}min</span>
                     <button
                       onClick={(e) => { e.stopPropagation(); deleteTask(task.id); }}
-                      className="p-1.5 text-ash/60 hover:text-signal-magenta hover:bg-signal-magenta/10 rounded transition-all"
+                      className="p-1 text-ash/60 hover:text-signal-magenta hover:bg-signal-magenta/10 rounded transition-all"
                       title="Eliminar"
                     >
-                      <Trash2 className="w-3.5 h-3.5" />
+                      <Trash2 className="w-3 h-3" />
                     </button>
                   </div>
                 </div>
@@ -373,7 +356,7 @@ export default function TaskBacklog({
           {/* Scheduled tasks */}
           {scheduledTasks.length > 0 && (
             <>
-              <h3 className="text-lg font-bold text-bone mb-4 flex items-center gap-2">
+              <h3 className="text-lg font-bold font-display text-bone mb-4 flex items-center gap-2">
                 <CalendarDays className="w-5 h-5" />
                 Programadas
               </h3>
@@ -411,116 +394,137 @@ export default function TaskBacklog({
             </>
           )}
 
-          {/* Task Detail Editor */}
+          {/* Task Detail Panel */}
           {selectedTaskId ? (
-            <div className="bg-carbon/20 border border-graphite/40 rounded-xl p-6">
+            <div className="flex flex-col h-full">
               {(() => {
                 const task = tasks.find(t => t.id === selectedTaskId);
-                if (!task) return <p className="text-ash/60">Tarea no encontrada</p>;
+                if (!task) return <p className="text-ash/60 p-6">Tarea no encontrada</p>;
                 return (
-                  <div className="space-y-5">
-                    {/* Title */}
-                    <div>
-                      <label className="text-xs font-mono text-ash uppercase mb-1.5 block">Título</label>
-                      <input
-                        type="text"
-                        value={editTitle}
-                        onChange={(e) => setEditTitle(e.target.value)}
-                        className="w-full px-4 py-2.5 bg-void border border-graphite/50 rounded-lg text-bone text-base font-semibold focus:outline-none focus:border-signal-cyan/60"
-                      />
-                    </div>
+                  <div className="flex flex-col h-full">
+                    {/* ─── Consolidated Info Card ─── */}
+                    <div className="bg-carbon/20 border border-graphite/40 rounded-xl m-6 mb-3 p-5">
+                      {!isEditing ? (
+                        /* ── READ MODE ── */
+                        <div className="space-y-3">
+                          <div className="flex items-start justify-between">
+                            <div className="flex items-center gap-2">
+                              <span className={`text-[9px] font-mono px-1.5 py-0.5 rounded ${getPriorityColor(task.priority)}`}>
+                                {task.priority.toUpperCase()}
+                              </span>
+                              {task.source === 'email' && (
+                                <span className="text-[9px] font-mono text-signal-cyan bg-signal-cyan/10 px-1.5 py-0.5 rounded">EMAIL</span>
+                              )}
+                            </div>
+                          </div>
 
-                    {/* Description */}
-                    <div>
-                      <label className="text-xs font-mono text-ash uppercase mb-1.5 block">Descripción</label>
-                      <textarea
-                        value={editDescription}
-                        onChange={(e) => setEditDescription(e.target.value)}
-                        className="w-full px-4 py-2.5 bg-void border border-graphite/50 rounded-lg text-bone focus:outline-none focus:border-signal-cyan/60 resize-none"
-                        rows={4}
-                        placeholder="Sin descripción"
-                      />
-                    </div>
+                          <h3 className="text-xl font-bold font-display text-bone">{task.title}</h3>
 
-                    {/* Priority + Estimated */}
-                    <div className="grid grid-cols-2 gap-4">
-                      <div>
-                        <label className="text-xs font-mono text-ash uppercase mb-1.5 block">Prioridad</label>
-                        <select
-                          value={editPriority}
-                          onChange={(e) => setEditPriority(e.target.value as 'high' | 'medium' | 'low')}
-                          className="w-full px-3 py-2 bg-void border border-graphite/50 rounded-lg text-bone focus:outline-none focus:border-signal-cyan/60"
-                        >
-                          <option value="high">Alta</option>
-                          <option value="medium">Media</option>
-                          <option value="low">Baja</option>
-                        </select>
-                      </div>
-                      <div>
-                        <label className="text-xs font-mono text-ash uppercase mb-1.5 block">Tiempo estimado (min)</label>
-                        <input
-                          type="number"
-                          value={editEstimatedMinutes}
-                          onChange={(e) => setEditEstimatedMinutes(Number(e.target.value))}
-                          className="w-full px-3 py-2 bg-void border border-graphite/50 rounded-lg text-bone focus:outline-none focus:border-signal-cyan/60"
-                          min={1}
-                          step={5}
-                        />
-                      </div>
-                    </div>
+                          <div className="flex items-center gap-4 text-xs font-mono text-ash/70">
+                            <span className="flex items-center gap-1">⏱ {task.estimatedMinutes}min</span>
+                            {task.scheduledDate && <span className="flex items-center gap-1">📅 {task.scheduledDate}</span>}
+                            {task.scheduledTime && <span className="flex items-center gap-1">🕐 {task.scheduledTime}</span>}
+                            <span className="font-mono uppercase">• {task.source === 'email' ? 'Email' : task.source === 'calendar' ? 'Calendar' : 'Manual'}</span>
+                            {task.aiEstimatedMinutes && <span>• AI: {task.aiEstimatedMinutes}min</span>}
+                          </div>
 
-                    {/* Scheduled date/time */}
-                    <div className="grid grid-cols-2 gap-4">
-                      <div>
-                        <label className="text-xs font-mono text-ash uppercase mb-1.5 block">Fecha programada</label>
-                        <input
-                          type="date"
-                          value={editScheduledDate}
-                          onChange={(e) => setEditScheduledDate(e.target.value)}
-                          className="w-full px-3 py-2 bg-void border border-graphite/50 rounded-lg text-bone focus:outline-none focus:border-signal-cyan/60"
-                        />
-                      </div>
-                      <div>
-                        <label className="text-xs font-mono text-ash uppercase mb-1.5 block">Hora programada</label>
-                        <input
-                          type="time"
-                          value={editScheduledTime}
-                          onChange={(e) => setEditScheduledTime(e.target.value)}
-                          className="w-full px-3 py-2 bg-void border border-graphite/50 rounded-lg text-bone focus:outline-none focus:border-signal-cyan/60"
-                        />
-                      </div>
-                    </div>
+                          {task.description && (
+                            <p className="text-sm text-ash/80 leading-relaxed">{task.description}</p>
+                          )}
 
-                    {/* Source + AI Notes */}
-                    <div className="flex items-center gap-3 text-xs text-ash/60">
-                      <span className="font-mono uppercase">Origen: {task.source === 'email' ? 'Email' : task.source === 'calendar' ? 'Calendario' : 'Manual'}</span>
-                      {task.aiEstimatedMinutes && (
-                        <span className="font-mono">AI: {task.aiEstimatedMinutes}min</span>
+                          {task.aiNotes && (
+                            <div className="p-3 bg-signal-cyan/5 border border-signal-cyan/20 rounded-lg">
+                              <div className="text-[9px] font-mono text-signal-cyan uppercase mb-1">AI Notes</div>
+                              <p className="text-sm text-ash/80">{task.aiNotes}</p>
+                            </div>
+                          )}
+
+                          {/* CRUD Buttons */}
+                          <div className="flex items-center gap-2 pt-2">
+                            <button
+                              onClick={() => setIsEditing(true)}
+                              className="px-4 py-2 bg-signal-cyan text-void font-semibold rounded-lg hover:bg-signal-cyan/90 transition-all text-xs flex items-center gap-1.5"
+                            >
+                              <Edit2 className="w-3.5 h-3.5" />
+                              Edit
+                            </button>
+                            <button
+                              onClick={() => { deleteTask(task.id); setSelectedTaskId(null); }}
+                              className="px-4 py-2 bg-signal-magenta/10 text-signal-magenta rounded-lg hover:bg-signal-magenta/20 transition-all text-xs flex items-center gap-1.5"
+                            >
+                              <Trash2 className="w-3.5 h-3.5" />
+                              Delete
+                            </button>
+                          </div>
+                        </div>
+                      ) : (
+                        /* ── EDIT MODE ── */
+                        <div className="space-y-4">
+                          <div>
+                            <label className="text-[9px] font-mono text-ash uppercase mb-1 block">Title</label>
+                            <input type="text" value={editTitle} onChange={(e) => setEditTitle(e.target.value)}
+                              className="w-full px-3 py-2 bg-void border border-graphite/50 rounded-lg text-bone text-base font-semibold focus:outline-none focus:border-signal-cyan/60" />
+                          </div>
+                          <div>
+                            <label className="text-[9px] font-mono text-ash uppercase mb-1 block">Description</label>
+                            <textarea value={editDescription} onChange={(e) => setEditDescription(e.target.value)}
+                              className="w-full px-3 py-2 bg-void border border-graphite/50 rounded-lg text-bone focus:outline-none focus:border-signal-cyan/60 resize-none" rows={3}
+                              placeholder="Sin descripción" />
+                          </div>
+                          <div className="grid grid-cols-3 gap-3">
+                            <div>
+                              <label className="text-[9px] font-mono text-ash uppercase mb-1 block">Priority</label>
+                              <select value={editPriority} onChange={(e) => setEditPriority(e.target.value as 'high' | 'medium' | 'low')}
+                                className="w-full px-3 py-2 bg-void border border-graphite/50 rounded-lg text-bone focus:outline-none focus:border-signal-cyan/60">
+                                <option value="high">Alta</option>
+                                <option value="medium">Media</option>
+                                <option value="low">Baja</option>
+                              </select>
+                            </div>
+                            <div>
+                              <label className="text-[9px] font-mono text-ash uppercase mb-1 block">Est. (min)</label>
+                              <input type="number" value={editEstimatedMinutes} onChange={(e) => setEditEstimatedMinutes(Number(e.target.value))}
+                                className="w-full px-3 py-2 bg-void border border-graphite/50 rounded-lg text-bone focus:outline-none focus:border-signal-cyan/60" min={1} step={5} />
+                            </div>
+                            <div>
+                              <label className="text-[9px] font-mono text-ash uppercase mb-1 block">Date</label>
+                              <input type="date" value={editScheduledDate} onChange={(e) => setEditScheduledDate(e.target.value)}
+                                className="w-full px-3 py-2 bg-void border border-graphite/50 rounded-lg text-bone focus:outline-none focus:border-signal-cyan/60" />
+                            </div>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <button onClick={() => { handleSaveEdit(); setIsEditing(false); }}
+                              className="px-4 py-2 bg-signal-cyan text-void font-semibold rounded-lg hover:bg-signal-cyan/90 transition-all text-xs flex items-center gap-1.5">
+                              <Save className="w-3.5 h-3.5" />
+                              Save
+                            </button>
+                            <button onClick={() => setIsEditing(false)}
+                              className="px-4 py-2 bg-carbon border border-graphite/50 text-ash rounded-lg hover:text-bone transition-all text-xs">
+                              Cancel
+                            </button>
+                          </div>
+                        </div>
                       )}
                     </div>
 
-                    {task.aiNotes && (
-                      <div className="p-3 bg-signal-cyan/5 border border-signal-cyan/20 rounded-lg">
-                        <div className="text-xs font-mono text-signal-cyan uppercase mb-1">AI Notes</div>
-                        <p className="text-sm text-ash/80">{task.aiNotes}</p>
-                      </div>
-                    )}
-
-                    {/* Save button */}
-                    <div className="flex items-center gap-3 pt-2">
-                      <button
-                        onClick={handleSaveEdit}
-                        className="px-6 py-2.5 bg-signal-cyan text-void font-semibold rounded-lg hover:bg-signal-cyan/90 transition-all flex items-center gap-2"
-                      >
-                        <Save className="w-4 h-4" />
-                        Guardar
-                      </button>
-                      <button
-                        onClick={() => setSelectedTaskId(null)}
-                        className="px-4 py-2.5 bg-carbon border border-graphite/50 text-ash rounded-lg hover:text-bone transition-all"
-                      >
-                        Cancelar
-                      </button>
+                    {/* ─── Notes Area ─── */}
+                    <div className="flex-1 mx-6 mb-6 flex flex-col">
+                      <label className="text-[9px] font-mono text-ash uppercase mb-2 flex items-center gap-1.5">
+                        Notes
+                      </label>
+                      <textarea
+                        value={localNotes}
+                        onChange={(e) => setLocalNotes(e.target.value)}
+                        onBlur={() => {
+                          if (localNotes !== (task.userNotes || '')) {
+                            setTasks(prev => prev.map(t =>
+                              t.id === task.id ? { ...t, userNotes: localNotes } : t
+                            ));
+                          }
+                        }}
+                        placeholder="Write your notes about this task here..."
+                        className="flex-1 w-full px-4 py-3 bg-void border border-graphite/40 rounded-lg text-bone text-sm focus:outline-none focus:border-signal-cyan/60 resize-none placeholder:text-ash/30"
+                      />
                     </div>
                   </div>
                 );
@@ -541,7 +545,7 @@ export default function TaskBacklog({
       {showCompleted ? (
         <div className="w-80 bg-carbon/20 border-l border-graphite/40 flex flex-col shrink-0">
           <div className="p-4 border-b border-graphite/30 flex items-center justify-between">
-            <h3 className="text-sm font-bold text-bone flex items-center gap-2">
+            <h3 className="text-sm font-bold font-display text-bone flex items-center gap-2">
               <CheckCircle2 className="w-4 h-4 text-signal-lime" />
               Completadas
               <span className="text-xs font-mono text-ash/60 ml-1">({doneTasks.length})</span>
@@ -613,7 +617,7 @@ export default function TaskBacklog({
               onClick={(e) => e.stopPropagation()}
               className="bg-carbon border border-graphite/60 rounded-xl p-6 w-full max-w-md shadow-2xl"
             >
-              <h3 className="text-lg font-bold text-bone mb-4">Nueva Tarea</h3>
+              <h3 className="text-lg font-bold font-display text-bone mb-4">Nueva Tarea</h3>
               <form onSubmit={handleAddTask} className="space-y-4">
                 <div>
                   <label className="text-xs font-mono text-ash uppercase mb-1 block">Título</label>

@@ -378,7 +378,7 @@ export default function EmailView({
             <div className="p-6 border-b border-graphite/30 bg-carbon/20">
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
-                  <h1 className="text-xl font-bold text-bone mb-2">{selectedEmail.subject}</h1>
+                  <h1 className="text-xl font-bold font-display text-bone mb-2">{selectedEmail.subject}</h1>
                   <div className="flex items-center gap-3 text-sm">
                     <span className="font-semibold text-bone">{selectedEmail.fromName}</span>
                     <span className="text-ash/60">&lt;{selectedEmail.from}&gt;</span>
