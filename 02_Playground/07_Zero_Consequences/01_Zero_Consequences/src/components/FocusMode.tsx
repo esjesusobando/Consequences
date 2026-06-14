@@ -198,12 +198,12 @@ export default function FocusMode({
 
         <div className="flex items-center gap-3">
           {isBreak ? (
-            <div className="flex items-center gap-2 px-3 py-1.5 bg-amber-50 text-amber-600 rounded-lg">
+            <div className="flex items-center gap-2 px-3 py-1.5 bg-signal-amber/10 text-signal-amber rounded-lg">
               <Coffee className="w-4 h-4" />
               <span className="text-sm font-semibold">Break</span>
             </div>
           ) : (
-            <div className="flex items-center gap-2 px-3 py-1.5 bg-cyan-50 text-cyan-600 rounded-lg">
+            <div className="flex items-center gap-2 px-3 py-1.5 bg-signal-cyan/10 text-signal-cyan rounded-lg">
               <Brain className="w-4 h-4" />
               <span className="text-sm font-semibold">Focus</span>
             </div>
@@ -273,7 +273,7 @@ export default function FocusMode({
 
                 <button
                   onClick={startSession}
-                  className={`w-full px-4 py-3 font-semibold rounded-lg transition-all flex items-center justify-center gap-2 ${isDarkMode ? 'bg-signal-cyan hover:bg-signal-cyan/80 text-void' : 'bg-cyan-500 hover:bg-cyan-600 text-white'}`}
+                  className={`w-full px-4 py-3 font-semibold rounded-lg transition-all flex items-center justify-center gap-2 ${isDarkMode ? 'bg-signal-cyan hover:bg-signal-cyan/80 text-void' : 'bg-signal-cyan/80 hover:bg-signal-cyan text-void'}`}
                 >
                   <Play className="w-5 h-5" />
                   Start Focus
@@ -345,9 +345,9 @@ export default function FocusMode({
                     key={idx}
                     className={`w-2 h-2 rounded-full ${
                       idx < currentCycle
-                        ? (isDarkMode ? 'bg-signal-cyan' : 'bg-cyan-500')
+                        ? 'bg-signal-cyan'
                         : idx === currentCycle - 1 && !isBreak
-                        ? (isDarkMode ? 'bg-signal-cyan/60 animate-pulse' : 'bg-cyan-300 animate-pulse')
+                        ? (isDarkMode ? 'bg-signal-cyan/60 animate-pulse' : 'bg-signal-cyan/40 animate-pulse')
                         : (isDarkMode ? 'bg-graphite' : 'bg-gray-300')
                     }`}
                   />
