@@ -33,6 +33,8 @@ import {
   FolderPlus,
   Folder,
   Edit3,
+  FileJson,
+  FileText,
   X,
   ChevronDown,
   SortAsc,
@@ -86,22 +88,10 @@ export interface Prompt {
 }
 
 const SEED_PROMPTS: Prompt[] = [
-  { id: 'p1', title: 'Redactor de LinkedIn', category: 'Marketing', prompt: 'Actuá como un copywriter senior especializado en LinkedIn. Escribí un post de {topic} con hook fuerte, desarrollo en 3 puntos y cierre con pregunta. Tono: profesional pero cercano. Incluí 3 hashtags relevantes.', tags: ['linkedin', 'copy', 'marketing'], folder: '', isFavorite: false, createdAt: 1710000000000, updatedAt: 1710000000000 },
-  { id: 'p2', title: 'Transcript → Newsletter', category: 'Marketing', prompt: 'Convertí la siguiente transcripción de audio en una newsletter lista para enviar. Usá tono conversacional, subtítulos claros, y un CTA al final. Mantené la voz del speaker pero optimizá para lectura.', tags: ['newsletter', 'audio', 'contenido'], folder: '', isFavorite: false, createdAt: 1710000001000, updatedAt: 1710000001000 },
-  { id: 'p3', title: 'Revisor de Brand Voice', category: 'Marketing', prompt: 'Revisá el siguiente texto contra las reglas de brand_voice.md. Devolvé un JSON con: aprobado_global (bool), puntuacion (0-10), y observaciones (array de strings). Marcá como fail si detectás tono inconsistente.', tags: ['qa', 'brand', 'json'], folder: '', isFavorite: true, createdAt: 1710000002000, updatedAt: 1710000002000 },
-  { id: 'p4', title: 'Generador de Imagen Conceptual', category: 'Diseño', prompt: 'Generá una imagen conceptual minimalista para {topic}. Usá fondo degradado con colores corporativos, tipografía limpia, y un elemento visual central que represente la idea. Estilo: Apple keynote.', tags: ['diseño', 'imagen', 'brand'], folder: '', isFavorite: false, createdAt: 1710000003000, updatedAt: 1710000003000 },
-  { id: 'p5', title: 'Arquitectura Hexagonal', category: 'Dev', prompt: 'Explicá el patrón de Arquitectura Hexagonal (Puertos y Adaptadores) como si fuera una ciudad: el dominio es el centro, los puertos son las aduanas, los adaptadores son los medios de transporte. Incluí diagrama conceptual.', tags: ['architecture', 'ddd', 'clean-code'], folder: '', isFavorite: false, createdAt: 1710000004000, updatedAt: 1710000004000 },
-  { id: 'p6', title: 'Debug con Contexto', category: 'Dev', prompt: 'Soy {rol} trabajando en {proyecto}. El error es: {error}. Este código se ejecuta en {entorno}. Dame 3 posibles causas ordenadas por probabilidad, con la evidencia que apoya cada una y el fix específico.', tags: ['debug', 'troubleshooting', 'patterns'], folder: '', isFavorite: false, createdAt: 1710000005000, updatedAt: 1710000005000 },
-  { id: 'p7', title: 'Prompt Optimizer', category: 'General', prompt: 'Reescribí el siguiente prompt para maximizar claridad y efectividad. Aplicá: persona explícita, contexto, task específica, formato de salida, y ejemplos. Explicá qué mejoraste y por qué.', tags: ['prompts', 'optimización', 'sota'], folder: '', isFavorite: false, createdAt: 1710000006000, updatedAt: 1710000006000 },
-  { id: 'p8', title: 'Evaluador de Prompts', category: 'General', prompt: 'Evaluá el siguiente prompt en 5 dimensiones: claridad, especificidad, contexto, formato de salida, y restricciones. Dá un score 0-10 en cada una y sugerencias concretas de mejora.', tags: ['prompts', 'evaluación', 'qa'], folder: '', isFavorite: false, createdAt: 1710000007000, updatedAt: 1710000007000 },
-  { id: 'p9', title: 'Análisis de Competencia', category: 'Estrategia', prompt: 'Analizá a {competitor} desde la perspectiva de {our_brand}. Identificá: 3 fortalezas, 3 debilidades, y 3 oportunidades de diferenciación. Formato: tabla con recomendaciones accionables.', tags: ['estrategia', 'competencia', 'análisis'], folder: '', isFavorite: false, createdAt: 1710000008000, updatedAt: 1710000008000 },
-  { id: 'p10', title: 'User Story Mapper', category: 'Dev', prompt: 'Tomá esta feature request y desglosala en: épica, historias de usuario, criterios de aceptación, y tareas técnicas. Priorizá por valor de negocio vs esfuerzo técnico.', tags: ['producto', 'agile', 'planning'], folder: '', isFavorite: false, createdAt: 1710000009000, updatedAt: 1710000009000 },
-  { id: 'p11', title: 'Copy para Ads', category: 'Marketing', prompt: 'Generá 3 variantes de copy para {platform} ads. Objetivo: {goal}. Público: {audience}. Cada variante: headline (60 chars), body (120 chars), CTA (25 chars). Incluí rationale de cada variante.', tags: ['ads', 'copy', 'conversión'], folder: '', isFavorite: false, createdAt: 1710000010000, updatedAt: 1710000010000 },
-  { id: 'p12', title: 'Refactor Plan', category: 'Dev', prompt: 'Analizá el siguiente código y proponé un plan de refactor en fases. Cada fase debe: (1) mantener tests pasando, (2) ser reviewable en PR, (3) tener riesgo identificado. Priorizá por impacto/bajo riesgo.', tags: ['refactor', 'code-quality', 'planning'], folder: '', isFavorite: false, createdAt: 1710000011000, updatedAt: 1710000011000 },
   ...IMPORTED_PROMPTS,
 ];
 
-const DEFAULT_CATEGORIES = ['Marketing', 'Diseño', 'Dev', 'General', 'Estrategia'];
+const DEFAULT_CATEGORIES = ['Marketing', 'Diseño', 'Dev', 'General', 'Estrategia', 'Config', 'System'];
 
 // ── Prompt Store (localStorage) ─────────────────────────────────────
 
@@ -111,11 +101,21 @@ const FOLDERS_KEY = 'zc_prompt_folders';
 function loadPrompts(): Prompt[] {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) return JSON.parse(raw) as Prompt[];
+    if (raw) {
+      const stored: Prompt[] = JSON.parse(raw);
+      if (stored.length < SEED_PROMPTS.length) {
+        // Missing prompts — merge with seeds, preserving favorites and custom prompts
+        const storedIds = new Set(stored.map(p => p.id));
+        const missingFromSeeds = SEED_PROMPTS.filter(p => !storedIds.has(p.id));
+        const merged = [...stored, ...missingFromSeeds];
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
+        return merged;
+      }
+      return stored;
+    }
   } catch { /* corrupted */ }
-  const seeds = SEED_PROMPTS;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(seeds));
-  return seeds;
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(SEED_PROMPTS));
+  return SEED_PROMPTS;
 }
 
 function loadFolders(): string[] {
@@ -132,6 +132,89 @@ function savePrompts(prompts: Prompt[]) {
 
 function saveFolders(folders: string[]) {
   localStorage.setItem(FOLDERS_KEY, JSON.stringify(folders));
+}
+
+// ── Export / Import Helpers ─────────────────────────────────────────
+
+function downloadFile(content: string, filename: string, mimeType: string) {
+  const blob = new Blob([content], { type: mimeType });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+function exportJSON(prompts: Prompt[]) {
+  const data = prompts.map(({ id, title, category, prompt, tags, folder, sotaLevel, createdAt, updatedAt }) => ({
+    id, title, category, prompt, tags, folder, sotaLevel, createdAt, updatedAt,
+  }));
+  downloadFile(JSON.stringify(data, null, 2), 'prompts.json', 'application/json');
+}
+
+function exportCSV(prompts: Prompt[]) {
+  const header = 'title,category,prompt,tags,folder,sotaLevel,createdAt,updatedAt';
+  const rows = prompts.map(p => {
+    const escapedPrompt = `"${p.prompt.replace(/"/g, '""')}"`;
+    const escapedTags = `"${p.tags.join(';')}"`;
+    return `${p.title},${p.category},${escapedPrompt},${escapedTags},${p.folder},${p.sotaLevel || ''},${p.createdAt},${p.updatedAt}`;
+  });
+  downloadFile([header, ...rows].join('\n'), 'prompts.csv', 'text/csv');
+}
+
+function exportMarkdown(prompts: Prompt[]) {
+  const md = prompts.map(p => {
+    let block = `# ${p.title}\n\n`;
+    block += `**Category:** ${p.category}\n`;
+    if (p.sotaLevel) block += `**Level:** ${p.sotaLevel === 'sota' ? 'SOTA' : p.sotaLevel.charAt(0).toUpperCase() + p.sotaLevel.slice(1)}\n`;
+    block += `\n${p.prompt}\n\n---\n`;
+    return block;
+  }).join('\n');
+  downloadFile(md, 'prompts.md', 'text/markdown');
+}
+
+function parseCSVLine(line: string): string[] {
+  const result: string[] = [];
+  let current = '';
+  let inQuotes = false;
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+    if (ch === '"') {
+      if (inQuotes && line[i + 1] === '"') {
+        current += '"';
+        i++;
+      } else {
+        inQuotes = !inQuotes;
+      }
+    } else if (ch === ',' && !inQuotes) {
+      result.push(current.trim());
+      current = '';
+    } else {
+      current += ch;
+    }
+  }
+  result.push(current.trim());
+  return result;
+}
+
+function importMerge(existing: Prompt[], imported: Omit<Prompt, 'id' | 'createdAt' | 'updatedAt' | 'isFavorite'>[]): Prompt[] {
+  const now = Date.now();
+  const existingTitles = new Set(existing.map(p => p.title.toLowerCase()));
+  const newPrompts: Prompt[] = [];
+  for (const p of imported) {
+    if (p.title && !existingTitles.has(p.title.toLowerCase())) {
+      newPrompts.push({
+        id: nanoid(8),
+        ...p,
+        isFavorite: false,
+        createdAt: now,
+        updatedAt: now,
+      });
+      existingTitles.add(p.title.toLowerCase());
+    }
+  }
+  return [...newPrompts, ...existing];
 }
 
 // ── Password Generator ─────────────────────────────────────────────
@@ -806,10 +889,21 @@ function PromptLibrary() {
   const [showSortMenu, setShowSortMenu] = useState(false);
   const [addingFolder, setAddingFolder] = useState(false);
   const [newFolderName, setNewFolderName] = useState('');
+  const [showExportMenu, setShowExportMenu] = useState(false);
+  const [toast, setToast] = useState<{ message: string; key: number } | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   // Persist on change
   useEffect(() => { savePrompts(prompts); }, [prompts]);
   useEffect(() => { saveFolders(folders); }, [folders]);
+
+  // Toast auto-dismiss
+  useEffect(() => {
+    if (toast) {
+      const timer = setTimeout(() => setToast(null), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [toast]);
 
   // Collect unique categories from prompts
   const categories = [...new Set(prompts.map(p => p.category))];
@@ -861,6 +955,92 @@ function PromptLibrary() {
       p.id === promptId ? { ...p, folder: targetFolder, updatedAt: Date.now() } : p
     ));
   };
+
+  const handleImport = useCallback(async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    e.target.value = '';
+
+    const ext = file.name.split('.').pop()?.toLowerCase();
+    let text: string;
+    try { text = await file.text(); } catch { return; }
+
+    type ImportRow = Omit<Prompt, 'id' | 'createdAt' | 'updatedAt' | 'isFavorite'>;
+    let parsed: ImportRow[] = [];
+
+    try {
+      if (ext === 'json') {
+        const data = JSON.parse(text);
+        if (Array.isArray(data)) {
+          parsed = data.map((item: Record<string, any>) => ({
+            title: item.title || 'Untitled',
+            prompt: item.prompt || item.content || '',
+            category: item.category || '',
+            tags: Array.isArray(item.tags) ? item.tags : item.tags ? String(item.tags).split(',').map((t: string) => t.trim()).filter(Boolean) : [],
+            folder: item.folder || '',
+            sotaLevel: item.sotaLevel || undefined,
+          }));
+        } else if (typeof data === 'object' && data !== null) {
+          // Key-value format: {"Prompt Name": "prompt content"}
+          parsed = Object.entries(data).map(([title, prompt]) => ({
+            title,
+            prompt: String(prompt),
+            category: '',
+            tags: [],
+            folder: '',
+            sotaLevel: undefined,
+          }));
+        }
+      } else if (ext === 'csv') {
+        const lines = text.split('\n').filter(Boolean);
+        if (lines.length > 1) {
+          const headers = lines[0].split(',').map(h => h.trim().toLowerCase());
+          const titleIdx = headers.indexOf('title');
+          const promptIdx = headers.indexOf('prompt');
+          const catIdx = headers.indexOf('category');
+          const tagsIdx = headers.indexOf('tags');
+          const folderIdx = headers.indexOf('folder');
+          const sotaIdx = headers.indexOf('sotalevel');
+          for (let i = 1; i < lines.length; i++) {
+            const cols = parseCSVLine(lines[i]);
+            const title = cols[titleIdx] || '';
+            const prompt = cols[promptIdx] || '';
+            if (!title && !prompt) continue;
+            parsed.push({
+              title: title || 'Untitled',
+              prompt: prompt || '',
+              category: (cols[catIdx] || '').trim(),
+              tags: cols[tagsIdx] ? cols[tagsIdx].split(';').map((t: string) => t.trim()).filter(Boolean) : [],
+              folder: (cols[folderIdx] || '').trim(),
+              sotaLevel: (cols[sotaIdx] as ImportRow['sotaLevel']) || undefined,
+            });
+          }
+        }
+      } else if (ext === 'md' || ext === 'txt') {
+        const blocks = text.split(/(?=^# )/m);
+        for (const block of blocks) {
+          if (!block.trim()) continue;
+          const titleMatch = block.match(/^# (.+)/m);
+          const title = titleMatch ? titleMatch[1].trim() : 'Untitled';
+          const content = block.replace(/^# .+(\n|$)/, '').replace(/^---\s*$/m, '').trim();
+          if (content) {
+            parsed.push({ title, prompt: content, category: '', tags: [], folder: '', sotaLevel: undefined });
+          }
+        }
+      }
+    } catch {
+      setToast({ message: 'Error al importar: archivo inválido', key: Date.now() });
+      return;
+    }
+
+    if (parsed.length === 0) {
+      setToast({ message: 'No se encontraron prompts en el archivo', key: Date.now() });
+      return;
+    }
+
+    setPrompts(prev => importMerge(prev, parsed));
+    setToast({ message: `✓ ${parsed.length} prompts importados`, key: Date.now() });
+  }, []);
 
   // ── Filter + Sort ─────────────────────────────────────────────
 
@@ -1067,6 +1247,56 @@ function PromptLibrary() {
               </AnimatePresence>
             </div>
 
+            {/* Export dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => setShowExportMenu(!showExportMenu)}
+                className="flex items-center gap-1.5 px-3 py-2.5 rounded-xl text-[11px] font-semibold bg-carbon/30 text-ash/60 border border-graphite/20 hover:text-bone hover:border-graphite/40 transition-all cursor-pointer shrink-0"
+                title="Exportar prompts"
+              >
+                <Download className="w-3.5 h-3.5" />
+              </button>
+              <AnimatePresence>
+                {showExportMenu && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -4 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -4 }}
+                    className="absolute top-full right-0 mt-1 bg-graphite/90 border border-graphite/30 rounded-xl overflow-hidden z-20 min-w-[140px]"
+                  >
+                    <button
+                      onClick={() => { exportJSON(prompts); setShowExportMenu(false); }}
+                      className="w-full flex items-center gap-2 px-3 py-2 text-[10px] font-mono text-bone hover:bg-carbon/50 transition-colors cursor-pointer"
+                    >
+                      <FileJson className="w-3.5 h-3.5" /> JSON
+                    </button>
+                    <button
+                      onClick={() => { exportCSV(prompts); setShowExportMenu(false); }}
+                      className="w-full flex items-center gap-2 px-3 py-2 text-[10px] font-mono text-bone hover:bg-carbon/50 transition-colors cursor-pointer"
+                    >
+                      <FileText className="w-3.5 h-3.5" /> CSV
+                    </button>
+                    <button
+                      onClick={() => { exportMarkdown(prompts); setShowExportMenu(false); }}
+                      className="w-full flex items-center gap-2 px-3 py-2 text-[10px] font-mono text-bone hover:bg-carbon/50 transition-colors cursor-pointer"
+                    >
+                      <FileText className="w-3.5 h-3.5" /> Markdown
+                    </button>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+
+            {/* Import */}
+            <input ref={fileInputRef} type="file" accept=".json,.csv,.md,.txt" onChange={handleImport} className="hidden" />
+            <button
+              onClick={() => fileInputRef.current?.click()}
+              className="flex items-center gap-1.5 px-3 py-2.5 rounded-xl text-[11px] font-semibold bg-carbon/30 text-ash/60 border border-graphite/20 hover:text-bone hover:border-graphite/40 transition-all cursor-pointer shrink-0"
+              title="Importar prompts"
+            >
+              <Upload className="w-3.5 h-3.5" />
+            </button>
+
             {/* New prompt */}
             <button
               onClick={() => setIsCreating(true)}
@@ -1200,6 +1430,21 @@ function PromptLibrary() {
           </div>
         </div>
       </div>
+
+      {/* Toast */}
+      <AnimatePresence>
+        {toast && (
+          <motion.div
+            key={toast.key}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 10 }}
+            className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-bone/90 backdrop-blur-md text-carbon text-[11px] font-semibold font-display px-5 py-2.5 rounded-xl shadow-2xl"
+          >
+            {toast.message}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }
