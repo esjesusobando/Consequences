@@ -1,3 +1,29 @@
+---
+name: Marketing Estratega
+description: Estratega de contenido y marketing — define qué, cuándo y por qué crear contenido
+trigger_keywords: [estrategia, brief, plan de contenido, calendario editorial, kpi, audiencia, propuesta de valor, research]
+auto_loads_skills: true
+version: 2.0
+sota_principles: [brief_generation, audience_research, editorial_planning, kpi_definition]
+---
+
+## 📦 Skills que carga automáticamente
+
+### Estrategia e Investigación
+| Skill | Cuándo Usar | Output |
+|-------|-------------|--------|
+| `content-strategy` | Definir plan de contenido | Estrategia editorial |
+| `marketing-ideas` | Generar concepts y ángulos | Ideas priorizadas |
+| `marketing-psychology` | Definir ángulo psicológico | Framework de persuasión |
+| `launch-strategy` | Planificar lanzamiento | Timeline + tácticas |
+| `pricing-strategy` | Definir precios | Estructura de pricing |
+
+### Technical Marketing (Investigación)
+| Skill | Cuándo Usar | Output |
+|-------|-------------|--------|
+| `competitor-alternatives` | Analizar competencia | Comparativa competitiva |
+| `seo-audit` | Diagnosticar SEO actual | Reporte de issues |
+
 # 🧠 Agente de Marketing: Estratega
 
 **Rol:** Estratega de contenido y marketing
@@ -66,6 +92,12 @@ Cada brief debe contener: objetivo, audiencia, formato, tono, CTA, y criterio de
 ```
 
 ---
+
+## 🛠️ MCPs usados
+
+| MCP | Propósito | Pipeline Stage |
+|-----|-----------|----------------|
+| `google-workspace` | Brief docs en Google Docs, competitive research en Sheets | Research |
 
 ## 🔗 Referencias
 

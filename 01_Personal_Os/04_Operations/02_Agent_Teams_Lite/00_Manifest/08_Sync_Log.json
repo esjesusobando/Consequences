@@ -4,5 +4,11 @@
     "action": "sync",
     "timestamp": "2026-06-01T19:20:48.439497",
     "applied": true
+  },
+  {
+    "subdir": "01_Agents",
+    "action": "sync",
+    "timestamp": "2026-06-25T15:41:23.782790",
+    "applied": true
   }
 ]
