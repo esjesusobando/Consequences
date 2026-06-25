@@ -23,7 +23,10 @@ Video no es un formato más en el stack — es el que más contexto retiene y el
 |----------------------|----------------------------------|
 | `01_Video_Intel/`     | Inteligencia de video             |
 | `02_James_Cameron/`   | Filosofía de preproducción extrema|
-| `03_Production/`      | Post-producción, edición, render  |
+| `03_Higgsfield_Generate/` | Generación de imágenes/video con AI (Higgsfield) |
+| `04_Higgsfield_Marketplace/` | Cards de producto para marketplaces |
+| `05_Higgsfield_Product_Photoshoot/` | Fotos de producto profesionales con AI |
+| `06_Higgsfield_Soul_ID/`  | Entrenamiento de identidad facial para gen consistente |
 
 ## Integración
 
