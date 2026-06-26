@@ -1,3 +1,13 @@
+---
+title: "OIM Website — Browser Verification"
+category: technical
+priority: P1
+status: n
+created_date: 2026-05-22
+resource_refs:
+  - 01_Personal_Os/04_Operations/05_Projects/01_Projects_Lab/07_OIM_Website/
+---
+
 # Task: OIM Website — Browser Verification
 
 **Prioridad:** P1  

@@ -1,3 +1,13 @@
+---
+title: "Onboarding Nueva Máquina — Documentación Setup"
+category: admin
+priority: P2
+status: n
+created_date: 2026-05-22
+resource_refs:
+  - 01_Personal_Os/04_Operations/04_Installer/
+---
+
 # Task: Onboarding Nueva Máquina — Documentación Setup
 
 **Prioridad:** P2  

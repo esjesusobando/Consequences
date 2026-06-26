@@ -1,3 +1,14 @@
+---
+title: "Revisar Ritual de Cierre"
+category: research
+priority: P3
+status: n
+created_date: 2026-05-22
+resource_refs:
+  - 01_Personal_Os/01_Core/00_Workflows_Os/01_Personal_Os/05_Ritual_Cierre_Protocol.md
+  - 01_Personal_Os/04_Operations/03_Scripts_Os/04_Ritual_Hub.py
+---
+
 # Task: Revisar Ritual de Cierre
 
 **Prioridad:** P3  

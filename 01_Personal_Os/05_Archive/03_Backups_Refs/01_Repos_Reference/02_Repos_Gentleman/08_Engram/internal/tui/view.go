@@ -5,6 +5,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/Gentleman-Programming/engram/internal/timeutil"
 	"github.com/Gentleman-Programming/engram/internal/version"
 	"github.com/charmbracelet/lipgloss"
 )
@@ -86,6 +87,11 @@ func (m Model) View() string {
 	// Show error if present
 	if m.ErrorMsg != "" {
 		content += "\n" + errorStyle.Render("Error: "+m.ErrorMsg)
+	}
+
+	// Show clipboard copy feedback if present
+	if m.CopyFeedback != "" {
+		content += "\n" + copyFeedbackStyle.Render(m.CopyFeedback)
 	}
 
 	return appStyle.Render(content)
@@ -217,7 +223,7 @@ func (m Model) viewSearchResults() string {
 
 	for i := m.Scroll; i < end; i++ {
 		r := m.SearchResults[i]
-		b.WriteString(m.renderObservationListItem(i, r.ID, r.Type, r.Title, r.Content, r.CreatedAt, r.Project))
+		b.WriteString(m.renderObservationListItem(i, r.ID, r.Type, r.Title, r.Content, r.CreatedAt, r.Project, r.State(), r.ReviewAfter, r.Pinned))
 	}
 
 	// Scroll indicator
@@ -226,7 +232,7 @@ func (m Model) viewSearchResults() string {
 			timestampStyle.Render(fmt.Sprintf("showing %d-%d of %d", m.Scroll+1, end, resultCount))))
 	}
 
-	b.WriteString(helpStyle.Render("\n  j/k navigate • enter detail • t timeline • / search • esc back"))
+	b.WriteString(helpStyle.Render("\n  j/k navigate • enter detail • c copy • t timeline • / search • esc back"))
 
 	return b.String()
 }
@@ -260,7 +266,7 @@ func (m Model) viewRecent() string {
 
 	for i := m.Scroll; i < end; i++ {
 		o := m.RecentObservations[i]
-		b.WriteString(m.renderObservationListItem(i, o.ID, o.Type, o.Title, o.Content, o.CreatedAt, o.Project))
+		b.WriteString(m.renderObservationListItem(i, o.ID, o.Type, o.Title, o.Content, o.CreatedAt, o.Project, o.State(), o.ReviewAfter, o.Pinned))
 	}
 
 	if count > visibleItems {
@@ -268,7 +274,7 @@ func (m Model) viewRecent() string {
 			timestampStyle.Render(fmt.Sprintf("showing %d-%d of %d", m.Scroll+1, end, count))))
 	}
 
-	b.WriteString(helpStyle.Render("\n  j/k navigate • enter detail • t timeline • esc back"))
+	b.WriteString(helpStyle.Render("\n  j/k navigate • enter detail • c copy • t timeline • esc back"))
 
 	return b.String()
 }
@@ -307,6 +313,20 @@ func (m Model) viewObservationDetail() string {
 	b.WriteString(fmt.Sprintf("%s %s\n",
 		detailLabelStyle.Render("Created:"),
 		timestampStyle.Render(localTime(obs.CreatedAt))))
+
+	b.WriteString(fmt.Sprintf("%s %s\n",
+		detailLabelStyle.Render("State:"),
+		renderObservationState(obs.State())))
+
+	b.WriteString(fmt.Sprintf("%s %s\n",
+		detailLabelStyle.Render("Pinned:"),
+		detailValueStyle.Render(fmt.Sprintf("%t", obs.Pinned))))
+
+	if obs.ReviewAfter != nil {
+		b.WriteString(fmt.Sprintf("%s %s\n",
+			detailLabelStyle.Render("Review:"),
+			timestampStyle.Render(formatReviewDate(*obs.ReviewAfter))))
+	}
 
 	if obs.ToolName != nil {
 		b.WriteString(fmt.Sprintf("%s %s\n",
@@ -363,7 +383,7 @@ func (m Model) viewObservationDetail() string {
 			timestampStyle.Render(fmt.Sprintf("line %d-%d of %d", m.DetailScroll+1, end, len(contentLines)))))
 	}
 
-	b.WriteString(helpStyle.Render("\n  j/k scroll • t timeline • esc back"))
+	b.WriteString(helpStyle.Render("\n  j/k scroll • c copy • t timeline • esc back"))
 
 	return b.String()
 }
@@ -545,7 +565,7 @@ func (m Model) viewSessionDetail() string {
 
 	for i := m.SessionDetailScroll; i < end; i++ {
 		o := m.SessionObservations[i]
-		b.WriteString(m.renderObservationListItem(i, o.ID, o.Type, o.Title, o.Content, o.CreatedAt, o.Project))
+		b.WriteString(m.renderObservationListItem(i, o.ID, o.Type, o.Title, o.Content, o.CreatedAt, o.Project, o.State(), o.ReviewAfter, o.Pinned))
 	}
 
 	if count > visibleItems {
@@ -553,7 +573,7 @@ func (m Model) viewSessionDetail() string {
 			timestampStyle.Render(fmt.Sprintf("showing %d-%d of %d", m.SessionDetailScroll+1, end, count))))
 	}
 
-	b.WriteString(helpStyle.Render("\n  j/k navigate • enter detail • t timeline • esc back"))
+	b.WriteString(helpStyle.Render("\n  j/k navigate • enter detail • c copy • t timeline • esc back"))
 
 	return b.String()
 }
@@ -679,7 +699,7 @@ func (m Model) viewSetup() string {
 
 // ─── Shared Renderers ────────────────────────────────────────────────────────
 
-func (m Model) renderObservationListItem(index int, id int64, obsType, title, content, createdAt string, project *string) string {
+func (m Model) renderObservationListItem(index int, id int64, obsType, title, content, createdAt string, project *string, state string, reviewAfter *string, pinned bool) string {
 	cursor := "  "
 	style := listItemStyle
 	if index == m.Cursor {
@@ -692,10 +712,21 @@ func (m Model) renderObservationListItem(index int, id int64, obsType, title, co
 		proj = "  " + projectStyle.Render(*project)
 	}
 
-	line := fmt.Sprintf("%s%s %s %s%s  %s\n",
+	stateBadge := ""
+	if state == "needs_review" {
+		stateBadge = " " + stateWarningBadgeStyle.Render("[needs_review]")
+	}
+	pinBadge := ""
+	if pinned {
+		pinBadge = " " + detailValueStyle.Render("[pinned]")
+	}
+
+	line := fmt.Sprintf("%s%s %s%s%s %s%s  %s\n",
 		cursor,
 		idStyle.Render(fmt.Sprintf("#%-5d", id)),
 		typeBadgeStyle.Render(fmt.Sprintf("[%-12s]", obsType)),
+		stateBadge,
+		pinBadge,
 		style.Render(truncateStr(title, 50)),
 		proj,
 		timestampStyle.Render(localTime(createdAt)))
@@ -713,16 +744,28 @@ func (m Model) renderObservationListItem(index int, id int64, obsType, title, co
 
 // localTime converts a UTC timestamp string from SQLite to local time for display.
 func localTime(utc string) string {
-	for _, layout := range []string{
-		"2006-01-02 15:04:05",
-		time.RFC3339,
-		time.RFC3339Nano,
-	} {
-		if t, err := time.Parse(layout, utc); err == nil {
-			return t.UTC().Local().Format("2006-01-02 15:04:05")
+	return timeutil.FormatLocal(utc)
+}
+
+func renderObservationState(state string) string {
+	if state == "needs_review" {
+		return stateWarningBadgeStyle.Render(state)
+	}
+	return detailValueStyle.Render(state)
+}
+
+func formatReviewDate(value string) string {
+	trimmed := strings.TrimSpace(value)
+	formats := []string{"2006-01-02 15:04:05", time.RFC3339, time.RFC3339Nano, "2006-01-02"}
+	for _, layout := range formats {
+		if parsed, err := time.Parse(layout, trimmed); err == nil {
+			return parsed.Format("2006-01-02")
 		}
 	}
-	return utc // unparseable — return as-is
+	if len(trimmed) >= len("2006-01-02") {
+		return trimmed[:len("2006-01-02")]
+	}
+	return trimmed
 }
 
 func truncateStr(s string, max int) string {

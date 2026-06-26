@@ -1,3 +1,13 @@
+---
+title: "Revisar Workflows Marvel"
+category: research
+priority: P3
+status: n
+created_date: 2026-05-22
+resource_refs:
+  - 01_Personal_Os/01_Core/00_Workflows_Os/02_Marvel/
+---
+
 # Task: Revisar Workflows Marvel
 
 **Prioridad:** P3  

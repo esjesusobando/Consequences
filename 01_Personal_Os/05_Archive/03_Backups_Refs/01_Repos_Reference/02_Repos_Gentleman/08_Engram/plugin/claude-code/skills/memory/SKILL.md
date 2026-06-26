@@ -17,10 +17,10 @@ They are available immediately — no manual ToolSearch needed.
 - `mem_get_observation`, `mem_suggest_topic_key`, `mem_update`
 - `mem_session_start`, `mem_session_end`, `mem_save_prompt`
 
-**Fallback**: If tools are unexpectedly unavailable, trigger ToolSearch manually:
-```
-select:mcp__plugin_engram_engram__mem_save,mcp__plugin_engram_engram__mem_search,mcp__plugin_engram_engram__mem_context,mcp__plugin_engram_engram__mem_session_summary,mcp__plugin_engram_engram__mem_get_observation,mcp__plugin_engram_engram__mem_suggest_topic_key,mcp__plugin_engram_engram__mem_update,mcp__plugin_engram_engram__mem_session_start,mcp__plugin_engram_engram__mem_session_end,mcp__plugin_engram_engram__mem_save_prompt
-```
+**Fallback**: If tools are unexpectedly unavailable, run `engram setup claude-code`
+again and restart Claude Code. Setup repairs the durable MCP config and
+permissions allowlist for both current (`mcp__engram__...`) and older
+plugin-scoped (`mcp__plugin_engram_engram__...`) server ids.
 
 Admin tools (deferred — use ToolSearch only if needed):
 - `mem_stats`, `mem_delete`, `mem_timeline`, `mem_capture_passive`
@@ -48,9 +48,9 @@ Call `mem_save` IMMEDIATELY and WITHOUT BEING ASKED after any of these:
 - User preference or constraint learned
 
 ### After user confirmation or rejection
-- User confirms a recommendation you made ("dale", "go with that", "sí", "perfect", "vamos con eso", "let's do that", "sounds good", "agreed")
-- User rejects an option or approach ("no, better X", "descartemos eso", "not that one", "quiero algo diferente")
-- User expresses a preference ("I prefer X over Y", "siempre hacé X", "me gusta más así", "always do it this way")
+- User confirms a recommendation you made ("go with that", "let's do that", "sounds good", "agreed", "perfect", or the equivalent in the user's language)
+- User rejects an option or approach ("no, better X", "not that one", or the equivalent in the user's language)
+- User expresses a preference ("I prefer X over Y", "always do it this way", or the equivalent in the user's language)
 - User makes a decision after you presented tradeoffs or options
 - A discussion concludes with a clear direction chosen — even if the agent proposed it
 
@@ -78,7 +78,7 @@ Format for `mem_save`:
 ## WHEN TO SEARCH MEMORY
 
 When the user asks to recall something — any variation of "remember", "recall", "what did we do",
-"how did we solve", "recordar", "acordate", "qué hicimos", or references to past work:
+"how did we solve", or the equivalent in the user's language, or references to past work:
 1. First call `mem_context` — checks recent session history (fast, cheap)
 2. If not found, call `mem_search` with relevant keywords (FTS5 full-text search)
 3. If you find a match, use `mem_get_observation` for full untruncated content
@@ -90,7 +90,7 @@ Also search memory PROACTIVELY when:
 
 ## SESSION CLOSE PROTOCOL (mandatory)
 
-Before ending a session or saying "done" / "listo" / "that's it", you MUST:
+Before ending a session or saying "done" / "that's it", you MUST:
 1. Call `mem_session_summary` with this structure:
 
 ## Goal
@@ -121,4 +121,4 @@ If you see a message about compaction or context reset:
 3. Only THEN continue working
 
 Do not skip step 1. Without it, everything done before compaction is lost from memory.
-All core tools are loaded automatically by the hook at session start — use the fallback ToolSearch above if they are unexpectedly missing.
+All core tools are loaded automatically by the hook at session start. If they are unexpectedly missing, rerun `engram setup claude-code` and restart Claude Code.

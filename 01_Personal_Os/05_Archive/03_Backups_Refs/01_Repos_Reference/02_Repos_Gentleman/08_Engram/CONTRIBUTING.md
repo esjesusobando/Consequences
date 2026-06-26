@@ -41,18 +41,18 @@ Five checks run automatically on every PR:
 
 #### PR Validation
 
-| Check                                                        | What it verifies                                                                    |
-|-------------------------------------------------------------|------------------------------------------------------------------------------------|
-| **Check Issue Reference**                                    | PR body contains `Closes #N`, `Fixes #N`, or `Resolves #N`                          |
-| **Check Issue Has status:approved**                          | The linked issue has the `status:approved` label                                    |
-| **Check PR Has type:* Label**                                | PR has exactly one `type:*` label                                                   |
+| Check | What it verifies |
+|-------|-----------------|
+| **Check Issue Reference** | PR body contains `Closes #N`, `Fixes #N`, or `Resolves #N` |
+| **Check Issue Has status:approved** | The linked issue has the `status:approved` label |
+| **Check PR Has type:* Label** | PR has exactly one `type:*` label |
 
 #### CI Tests
 
-| Check                                   | What it runs                                                                                      |
-|----------------------------------------|--------------------------------------------------------------------------------------------------|
-| **Unit Tests**                          | `go test ./...` — all tests except those tagged with `//go:build e2e`                             |
-| **E2E Tests**                           | `go test -tags e2e ./internal/server/...` — end-to-end integration tests                          |
+| Check | What it runs |
+|-------|-------------|
+| **Unit Tests** | `go test ./...` — all tests except those tagged with `//go:build e2e` |
+| **E2E Tests** | `go test -tags e2e ./internal/server/...` — end-to-end integration tests |
 
 All five checks must pass before a PR can be merged.
 
@@ -64,25 +64,25 @@ All five checks must pass before a PR can be merged.
 
 ### Type Labels (required on every PR — pick exactly one)
 
-| Label                                           | Color                            | Use for                                                                 |
-|------------------------------------------------|---------------------------------|------------------------------------------------------------------------|
-| `type:bug`                                      | 🔴                                | Bug fixes                                                               |
-| `type:feature`                                  | 🔵                                | New features                                                            |
-| `type:docs`                                     | 🔵                                | Documentation-only changes                                              |
-| `type:refactor`                                 | 🟣                                | Code refactoring with no behavior change                                |
-| `type:chore`                                    | ⚪                                | Maintenance, tooling, dependencies                                      |
-| `type:breaking-change`                          | 🔴                                | Breaking changes (requires major version bump)                          |
+| Label | Color | Use for |
+|-------|-------|---------|
+| `type:bug` | 🔴 | Bug fixes |
+| `type:feature` | 🔵 | New features |
+| `type:docs` | 🔵 | Documentation-only changes |
+| `type:refactor` | 🟣 | Code refactoring with no behavior change |
+| `type:chore` | ⚪ | Maintenance, tooling, dependencies |
+| `type:breaking-change` | 🔴 | Breaking changes (requires major version bump) |
 
 ### Status Labels (set by maintainers)
 
-| Label                                          | Meaning                                                                                       |
-|-----------------------------------------------|----------------------------------------------------------------------------------------------|
-| `status:needs-review`                          | Awaiting maintainer review (auto-applied to new issues)                                       |
-| `status:approved`                              | Approved for implementation — PRs can now be opened                                           |
-| `status:in-progress`                           | Actively being worked on — auto-exempt from stale bot                                         |
-| `status:blocked`                               | Blocked by another issue or external dependency                                               |
-| `status:stale`                                 | No activity for 30 days — auto-applied by stale bot                                           |
-| `status:wontfix`                               | Intentionally not fixing — applied when closing stale/rejected items                          |
+| Label | Meaning |
+|-------|---------|
+| `status:needs-review` | Awaiting maintainer review (auto-applied to new issues) |
+| `status:approved` | Approved for implementation — PRs can now be opened |
+| `status:in-progress` | Actively being worked on — auto-exempt from stale bot |
+| `status:blocked` | Blocked by another issue or external dependency |
+| `status:stale` | No activity for 30 days — auto-applied by stale bot |
+| `status:wontfix` | Intentionally not fixing — applied when closing stale/rejected items |
 
 ### Priority Labels (set by maintainers)
 
@@ -92,11 +92,11 @@ All five checks must pass before a PR can be merged.
 
 ### Effort Labels (set by maintainers, for contributor guidance)
 
-| Label                                    | Meaning                                                                      |
-|-----------------------------------------|-----------------------------------------------------------------------------|
-| `effort:small`                           | < 1 hour — good starting point for new contributors                          |
-| `effort:medium`                          | 1–4 hours                                                                    |
-| `effort:large`                           | > 4 hours or spans multiple files                                            |
+| Label | Meaning |
+|-------|---------|
+| `effort:small` | < 1 hour — good starting point for new contributors |
+| `effort:medium` | 1–4 hours |
+| `effort:large` | > 4 hours or spans multiple files |
 
 ---
 
@@ -142,6 +142,52 @@ Types map to labels: `feat` → `type:feature`, `fix` → `type:bug`, `docs` →
 
 ---
 
+## npm Dependency Hygiene
+
+When adding npm dependencies to `plugin/pi` or `plugin/obsidian`:
+
+### Use `npq` for inspection
+
+Install once:
+
+```bash
+npm i -g npq
+```
+
+Then install new deps via:
+
+```bash
+npq install <package>
+```
+
+`npq` runs pre-flight checks (typosquats, install scripts, known vulns) before delegating to npm.
+
+### Honor the `.npmrc` defaults
+
+The repo `.npmrc` enforces:
+
+- `ignore-scripts=true` — third-party lifecycle scripts do NOT run on install
+- `allow-git=none` — git URLs as deps are rejected
+- `min-release-age=3` — packages newer than 3 days old are rejected
+
+If you have a legitimate reason to override these for local dev (e.g. `esbuild` postinstall), use a flag for that specific command — DO NOT edit `.npmrc`:
+
+```bash
+npm install --ignore-scripts=false esbuild
+```
+
+### Consult Snyk before merging
+
+For every new dep added in a PR, paste the Snyk Advisor link in the PR description:
+
+```
+https://snyk.io/advisor/npm-package/<name>
+```
+
+See [SECURITY.md](./SECURITY.md#vetting-new-dependencies) for the maintainer-side vetting checklist (provenance, transitive deps, install scripts).
+
+---
+
 ## Skill Authoring Standard
 
 Repository skills live in `skills/`.
@@ -161,13 +207,13 @@ Why hybrid:
 
 Engram uses a lightweight, regular cadence so contributors know what to expect.
 
-| Activity                                  | Frequency                                | What Happens                                                                |
-|------------------------------------------|-----------------------------------------|----------------------------------------------------------------------------|
-| New issue triage                          | Within 2 days                            | Maintainer labels + approves or closes                                      |
-| PR review                                 | Within 7 days                            | Maintainer reviews + requests changes or merges                             |
-| Backlog sweep                             | Weekly (Monday)                          | Stale bot runs; approved/blocked issues reassessed                          |
-| Label audit                               | Monthly                                  | Orphan labels removed; accuracy check                                       |
-| Dependabot PRs                            | Weekly                                   | Review merged or deferred                                                   |
+| Activity | Frequency | What Happens |
+|----------|-----------|-------------|
+| New issue triage | Within 2 days | Maintainer labels + approves or closes |
+| PR review | Within 7 days | Maintainer reviews + requests changes or merges |
+| Backlog sweep | Weekly (Monday) | Stale bot runs; approved/blocked issues reassessed |
+| Label audit | Monthly | Orphan labels removed; accuracy check |
+| Dependabot PRs | Weekly | Review merged or deferred |
 
 If you haven't received a response within 7 days on a PR or issue, a single ping comment is welcome.
 

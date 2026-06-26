@@ -281,18 +281,65 @@ func TestPassiveCaptureEndpointInvalidJSON(t *testing.T) {
 	}
 }
 
-func TestPassiveCaptureEndpointReturnsServerErrorWhenSessionMissing(t *testing.T) {
+func TestPassiveCaptureEndpointReturnsNotFoundWhenSessionMissing(t *testing.T) {
 	_, ts := newE2EServer(t)
 	client := ts.Client()
 
-	// No session created; saving observations should fail with FK constraint.
+	// No session created; passive capture now fails before attempting a DB insert.
 	captureResp := postJSON(t, client, ts.URL+"/observations/passive", map[string]any{
 		"session_id": "missing-session",
 		"project":    "engram",
-		"content":    "## Key Learnings:\n\n1. This long learning should trigger a DB insert and fail on FK",
+		"content":    "## Key Learnings:\n\n1. This long learning should trigger validation before DB insert",
 	})
-	if captureResp.StatusCode != http.StatusInternalServerError {
-		t.Fatalf("expected 500 when session does not exist, got %d", captureResp.StatusCode)
+	if captureResp.StatusCode != http.StatusNotFound {
+		t.Fatalf("expected 404 when session does not exist, got %d", captureResp.StatusCode)
+	}
+}
+
+func TestDeleteSessionPropagatesForCloudEnrolledProjectE2E(t *testing.T) {
+	s, ts := newE2EServer(t)
+	client := ts.Client()
+
+	createResp := postJSON(t, client, ts.URL+"/sessions", map[string]any{
+		"id":        "s-cloud-enrolled",
+		"project":   "engram",
+		"directory": "/tmp/engram",
+	})
+	if createResp.StatusCode != http.StatusCreated {
+		t.Fatalf("expected 201 creating session, got %d", createResp.StatusCode)
+	}
+	createResp.Body.Close()
+
+	if err := s.EnrollProject("engram"); err != nil {
+		t.Fatalf("enroll project: %v", err)
+	}
+
+	deleteReq, err := http.NewRequest(http.MethodDelete, ts.URL+"/sessions/s-cloud-enrolled", nil)
+	if err != nil {
+		t.Fatalf("new delete request: %v", err)
+	}
+	deleteResp, err := client.Do(deleteReq)
+	if err != nil {
+		t.Fatalf("delete session: %v", err)
+	}
+	if deleteResp.StatusCode != http.StatusOK {
+		t.Fatalf("expected 200 deleting cloud-enrolled session, got %d", deleteResp.StatusCode)
+	}
+	_ = deleteResp.Body.Close()
+
+	mutations, err := s.ListPendingSyncMutations(store.DefaultSyncTargetKey, 10)
+	if err != nil {
+		t.Fatalf("list pending sync mutations: %v", err)
+	}
+	var foundDelete bool
+	for _, mutation := range mutations {
+		if mutation.Entity == store.SyncEntitySession && mutation.EntityKey == "s-cloud-enrolled" && mutation.Op == store.SyncOpDelete {
+			foundDelete = true
+			break
+		}
+	}
+	if !foundDelete {
+		t.Fatalf("expected pending session/delete mutation for cloud-enrolled session, got %+v", mutations)
 	}
 }
 
@@ -346,6 +393,18 @@ func TestCoreReadHandlersAndHelpersE2E(t *testing.T) {
 		t.Fatalf("expected at least one recent session")
 	}
 
+	getSessionResp, err := client.Get(ts.URL + "/sessions/s-core")
+	if err != nil {
+		t.Fatalf("get session: %v", err)
+	}
+	if getSessionResp.StatusCode != http.StatusOK {
+		t.Fatalf("expected 200 get session, got %d", getSessionResp.StatusCode)
+	}
+	getSession := decodeJSON[map[string]any](t, getSessionResp)
+	if getSession["started_at"] == "" || getSession["project"] != "engram" {
+		t.Fatalf("expected get session JSON with started_at/project, got %#v", getSession)
+	}
+
 	recentObsResp, err := client.Get(ts.URL + "/observations/recent?project=engram&scope=project&limit=bad")
 	if err != nil {
 		t.Fatalf("recent observations: %v", err)
@@ -356,6 +415,18 @@ func TestCoreReadHandlersAndHelpersE2E(t *testing.T) {
 	recentObs := decodeJSON[[]map[string]any](t, recentObsResp)
 	if len(recentObs) == 0 {
 		t.Fatalf("expected recent observations")
+	}
+
+	listObsResp, err := client.Get(ts.URL + "/observations?project=engram&limit=1&sort=created_at:desc")
+	if err != nil {
+		t.Fatalf("list observations compatibility endpoint: %v", err)
+	}
+	if listObsResp.StatusCode != http.StatusOK {
+		t.Fatalf("expected 200 list observations compatibility endpoint, got %d", listObsResp.StatusCode)
+	}
+	listObs := decodeJSON[[]map[string]any](t, listObsResp)
+	if len(listObs) != 1 || listObs[0]["title"] != "Core test" || listObs[0]["created_at"] == "" {
+		t.Fatalf("expected latest observation with created_at, got %#v", listObs)
 	}
 
 	timelineResp, err := client.Get(ts.URL + "/timeline?observation_id=" + strconv.FormatInt(obsID, 10) + "&before=bad&after=bad")
@@ -609,8 +680,8 @@ func TestPromptAndObservationMutationHandlersE2E(t *testing.T) {
 	if err != nil {
 		t.Fatalf("delete with invalid bool: %v", err)
 	}
-	if deleteInvalidBoolResp.StatusCode != http.StatusOK {
-		t.Fatalf("expected 200 delete with invalid bool fallback, got %d", deleteInvalidBoolResp.StatusCode)
+	if deleteInvalidBoolResp.StatusCode != http.StatusNotFound {
+		t.Fatalf("expected 404 deleting already hard-deleted observation, got %d", deleteInvalidBoolResp.StatusCode)
 	}
 	deleteInvalidBoolResp.Body.Close()
 
@@ -757,6 +828,16 @@ func TestObservationAndSessionErrorBranchesE2E(t *testing.T) {
 		t.Fatalf("expected 200 deleting observation, got %d", deleteResp.StatusCode)
 	}
 	deleteResp.Body.Close()
+
+	deleteMissingReq, _ := http.NewRequest(http.MethodDelete, ts.URL+"/observations/"+strconv.FormatInt(obsID, 10), nil)
+	deleteMissingResp, err := client.Do(deleteMissingReq)
+	if err != nil {
+		t.Fatalf("delete missing observation: %v", err)
+	}
+	if deleteMissingResp.StatusCode != http.StatusNotFound {
+		t.Fatalf("expected 404 deleting missing observation, got %d", deleteMissingResp.StatusCode)
+	}
+	deleteMissingResp.Body.Close()
 
 	timelineNotFoundResp, err := client.Get(ts.URL + "/timeline?observation_id=" + strconv.FormatInt(obsID, 10))
 	if err != nil {

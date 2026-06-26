@@ -1,3 +1,13 @@
+---
+title: "Pre-commit Hook — Staged API Keys Scanner"
+category: technical
+priority: P2
+status: n
+created_date: 2026-05-22
+resource_refs:
+  - 01_Personal_Os/01_Core/02_Tools/05_Hooks/01_Pre_Tool/secret_scanner.py
+---
+
 # Task: Pre-commit Hook — Staged API Keys Scanner
 
 **Prioridad:** P2  

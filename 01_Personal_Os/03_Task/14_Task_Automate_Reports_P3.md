@@ -1,3 +1,14 @@
+---
+title: "Automatizar Reportes — 04_Operations/07_Reports/"
+category: technical
+priority: P3
+status: n
+created_date: 2026-05-22
+resource_refs:
+  - 01_Personal_Os/04_Operations/07_Reports/
+  - 01_Personal_Os/04_Operations/03_Scripts_Os/01_Auditor_Hub.py
+---
+
 # Task: Automatizar Reportes — 04_Operations/07_Reports/
 
 **Prioridad:** P3
