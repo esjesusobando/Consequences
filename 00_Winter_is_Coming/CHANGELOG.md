@@ -1,5 +1,38 @@
 # Changelog
 
+## 4.9.1 - 2026-06-25
+
+### Added — Marketing Agents SOTA Upgrade + Graphify Move
+
+- **Marketing Agents SOTA Upgrade**: SDD pipeline completo (init→explore→propose→spec→design→tasks→apply→verify→archive)
+  - Agent 15 (Marketing Estratega): YAML frontmatter, brief→insights pipeline, 3 strategic MCPs
+  - Agent 16 (Marketing Creador): YAML frontmatter, content brief→copy pipeline, skills refs fixed
+  - Agent 17 (Marketing Analista): YAML frontmatter, KPI-driven review, feedback loop
+  - Dream Team 06 (Marketing Orchestrator): Slot 06, coordina pipeline Estratega→Creador→Analista
+  - CLAUDE.marketing.md: Template para sesiones de marketing
+  - linkedin-content-flow skill: 4-stage pipeline (Estratega→Creador→Analista→Orchestrator)
+  - MARKETING_PIPELINE.md: Comprehensive workflow guide
+  - READMEs updated: 01_Agents/ (agents 14-22), Dream Team (5→6 jugadores)
+- **Judgment Day v4**: 1 CRITICAL fix (Chinese char `对` → `comparar`), 1 WARNING fix (broken skill path)
+  - Re-judge verified: flying-aqua-primate — ambos fixes OK
+- **git rebase**: Dropped commit d438b6cac (API keys xAI + OpenAI), push exitoso a master
+- **Graphify_Out/ moved**: Root `Graphify_Out/` → `02_Playground/Graphify_Out/`
+  - Duplicate `02_Playground/graphify-out/` removed
+  - References updated in: AGENTS.md, CLAUDE.md, graphify.js, graphify.js.bak, graphify.mdc, settings.json, config_paths.py
+  - 00_Winter_is_Coming/AGENTS.md: no references — no update needed
+- **Learning Always**: RE + Learning from video vINrPqUxnho (7 setup pieces)
+- **Settings Drawer SDD archived**: `04_Docs/SDD/settings-drawer-improvements/` → `05_Legacy_SDDAudits/`
+- **Agent Sync Hub restoration**: 9 files restored via git restore
+
+### Commits sesión
+
+| Commit              | Descripción                                                                              |
+|--------------------|-----------------------------------------------------------------------------------------|
+| `f1384eb28`         | feat(marketing): SOTA upgrade — 3 agents, orchestrator, pipeline, judgment day           |
+| (pending)           | chore(graphify): move Graphify_Out to 02_Playground/ + update all references             |
+
+---
+
 ## 4.9.0 - 2026-06-01
 
 ### Changed — v4.9 Consequences Final Alignment

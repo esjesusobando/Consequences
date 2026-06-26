@@ -1,6 +1,6 @@
-# Backlog — Think Different PersonalOS v4.9
+# Backlog — Think Different PersonalOS v4.9.1
 
-*Última actualización: 2026-06-01*
+*Última actualización: 2026-06-25*
 
 ---
 
@@ -47,6 +47,20 @@
 - [ ] **Evaluar Avengers Plan**: Definir si ejecutar, actualizar o archivar
 
 ---
+
+## ✅ Completados (2026-06-25)
+
+- [x] **Marketing Agents SOTA Upgrade**: SDD pipeline completo — 3 agentes (15, 16, 17) + Dream Team 06 Orchestrator
+- [x] **CLAUDE.marketing.md**: Template de contexto para sesiones de marketing
+- [x] **linkedin-content-flow skill**: SKILL.md 4-stage pipeline
+- [x] **MARKETING_PIPELINE.md**: Comprehensive workflow guide
+- [x] **READMEs actualizados**: 01_Agents/ + Dream Team (5→6 jugadores)
+- [x] **Judgment Day v4**: 1 CRITICAL fix (`对` → `comparar`), 1 WARNING fix (skill path), re-judge aprobado
+- [x] **git rebase**: API key commit d438b6cac dropped del historial, push exitoso
+- [x] **Graphify_Out/ movido**: Root → 02_Playground/Graphify_Out/. 7 archivos con referencias actualizadas
+- [x] **Settings Drawer SDD archivado**: `04_Docs/SDD/settings-drawer-improvements/` → `05_Legacy_SDDAudits/`
+- [x] **Agent Sync Hub restored**: 9 files restaurados via git restore
+- [x] **Learning Always**: RE + Learning del video vINrPqUxnho (7 setup pieces)
 
 ## ✅ Completados (2026-05-29)
 

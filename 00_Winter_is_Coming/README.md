@@ -1,12 +1,12 @@
-# 00_Winter_is_Coming — Think Different PersonalOS v4.9 Consequences
+# 00_Winter_is_Coming — Think Different PersonalOS v4.9.1
 
-**Versión:** 4.9 Consequences
-**Última actualización:** 2026-06-01
-**Estado:** ✅ PRODUCTION READY | SOTA | v4.9 Consequences
+**Versión:** 4.9.1
+**Última actualización:** 2026-06-25
+**Estado:** ✅ PRODUCTION READY | SOTA | v4.9.1
 
 ---
 
-## 📂 Contenido (2026-06-01)
+## 📂 Contenido (2026-06-25)
 
 ```
 00_Winter_is_Coming/
