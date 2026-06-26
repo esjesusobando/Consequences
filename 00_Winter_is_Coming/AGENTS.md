@@ -32,6 +32,9 @@ ls 01_Personal_Os/03_Task/02_Hillary_Inbox/  # SI hay archivos .md → procesar 
 
 # 5. Si hay trabajo en curso, verificar estado
 cat 01_Personal_Os/03_Task/  # tareas activas
+
+# 6. Consultar reference repos para metodología upstream
+ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentleman/
 ```
 
 ### Mapa de Recursos del Orquestador
@@ -557,4 +560,4 @@ Cualquier mensaje del usuario que coincida con estos triggers → **responder co
 
 ---
 
-_Think Different PersonalOS v4.9 Consequences — Pure Green State (Audit + JD v4 2026-06-01)_
+_Think Different PersonalOS v4.9.1 — Marketing SOTA + Archive Consolidation (2026-06-25)_

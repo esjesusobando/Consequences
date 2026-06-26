@@ -1,8 +1,8 @@
 # 🛡️ CLAUDE.md | PersonalOS v4.9 — Production Ready AI Context Harness
 
-> **Última actualización:** 2026-05-31
-> **Versión:** v4.9 — Every CE v3.8.4 (local repo), gentle-ai v1.30.6
-> **Audit:** 2026-05-31 — Judgment Day v3: full project scan, counts corregidos, docs syncronizados
+> **Última actualización:** 2026-06-25
+> **Versión:** v4.9.1 — Marketing SOTA + Archive Consolidation
+> **Audit:** 2026-06-25 — Marketing agents SOTA upgrade, archive 9→3 categories, Graphify_Out move
 
 <system_directives>
   <fundamental_rule>
@@ -203,9 +203,9 @@ Think_Different/                           # RAÍZ
 └── README.md                     ✅ Documentación principal
 ```
 
-### 2. AGENTS (62 — 6 categorías funcionales — 2026-06-01)
+### 2. AGENTS (63 — 6 categorías funcionales — 2026-06-25)
 
-> ⚠️ Source: 61 agentes total (25 root-level .md + 5 Dream Team + 23 Specialists + 5 Growth + 3 other). Ver `OS_DIRECTORY.md` para tree view completo. Backup .agent/ puede diferir en conteo.
+> ⚠️ Source: 62 agentes total (25 root-level .md + 6 Dream Team + 23 Specialists + 5 Growth + 3 other). Dream Team 06 = Marketing Orchestrator.
 
 ### 3. SKILLS (392 — 15 áreas funcionales)
 
@@ -344,13 +344,14 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 
 ---
 
-**Última actualización:** 2026-06-01 (Audit Completo + Fixes)
-**Versión:** v4.9 Consequences — Judgment Day v3 — Full Project Sync — Audit Completo
+**Última actualización:** 2026-06-25 (Marketing SOTA + Archive Consolidation)
+**Versión:** v4.9.1 — Marketing Agents SOTA + Archive 3-Categories + Graphify_Out Move
 
 > ✅ **Migración v4.0 2026-05-13:** Production Ready. Pure Green State. Paths corregidos.
 > ✅ **Judgment Day v3 2026-05-31:** Docs syncronizados. Counts corregidos. Full project scan.
 > ✅ **Audit 2026-05-23:** Full project audit v2. Submodule OIM fixed. 21 CE skills registered. Docs pixel-perfect.
 > ✅ **Audit 2026-06-01:** SSOT Unification v4.9. Counts actualizados: Rules 14, HUBs 30, Workflows 28, Skills 392 (15 áreas), Agents 62. Ver manifest en 00_Manifest/ para SSOT.
+> ✅ **2026-06-25 v4.9.1:** Marketing agents SOTA upgrade (SDD pipeline), Dream Team 06 Orchestrator, archive 9→3 categories, Graphify_Out moved to 02_Playground/.
 
 © 2026 PersonalOS v4.9 Consequences Production Ready
 

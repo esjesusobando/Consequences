@@ -1,6 +1,6 @@
 # 🤖 PERSONALOS — DIRECTORIO MAESTRO (JARVIS)
 
-**v4.9 Consequences** | 2026-05-29
+**v4.9.1** | 2026-06-25
 
 ---
 
@@ -19,8 +19,8 @@
 | JARVIS Manifests                    | 7 en 00_Manifest/                                                      | ✅ VALIDATED                                  |
 | Open Design                         | 62 skills + 138 design systems                                         | ✅ INTEGRATED                                 |
 
-> **🟢 ÚLTIMA AUDITORÍA:** 2026-06-01 — v4.9 Consequences — SSOT Unification
-> Skills: 392. HUBs: 30. Workflows: 28. Rules: 14. Scripts: 163. Agentes: 62.
+> **🟢 ÚLTIMA AUDITORÍA:** 2026-06-25 — v4.9.1 — Marketing SOTA + Archive Consolidation
+> Skills: 392. HUBs: 30. Workflows: 28. Rules: 14. Scripts: 163. Agentes: 62 (6 Dream Team).
 
 ---
 
@@ -100,6 +100,7 @@ Think_Different/
 │       ├── 05_Projects/          ✅ Proyectos activos
 │       └── 06_SOTA_Features/     ✅ Features SOTA
 ├── 02_Playground/                ✅ Zona de pruebas
+│   └── Graphify_Out/            ✅ Knowledge graph (god nodes, communities)
 ├── 03_Resultado/                 ✅ Outputs de proyectos
 ├── .agent/                       ✅ Backup estratégico
 ├── .atl/                         ✅ SDD Registry + openspec/
@@ -160,7 +161,7 @@ Think_Different/
 | Categoría                               | Cantidad                  | Ubicación                                                                    |
 |----------------------------------------|--------------------------|-----------------------------------------------------------------------------|
 | Root (Orchestrator + Template)          | 26                        | Raíz `01_Agents/` (00_Orchestrator → 13_Hillary + 14-19 Specialists)         |
-| Dream Team                              | 5                         | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform)                |
+| Dream Team                              | 6                         | `01_Dream_Team/` (Product, Data, Marketing, Design, Platform, Orchestrator) |
 | Specialists Compound                    | 23                        | `02_Specialists_Compound/` (Architecture → Security)                         |
 | Growth                                  | 5                         | `03_Growth/` (Content Transformer → Carousel)                                |
 | Other (Context/Marca/Templates)         | 3                         | `04_Contexto/`, `05_Marca/`, `06_Plantillas/` (documentación, no agentes)    |
@@ -245,4 +246,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-06-01 | PersonalOS v4.9 Consequences — SSOT Unification | 392 skills | 61 agents | 30 HUBs | 28 workflows | 14 rules*
+*Actualizado: 2026-06-25 | PersonalOS v4.9.1 — Marketing SOTA + Archive Consolidation | 392 skills | 62 agents | 30 HUBs | 28 workflows | 14 rules*

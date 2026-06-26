@@ -9,7 +9,7 @@
 
 ---
 
-## 📊 Estado del Sistema (v5.0 SOTA — Production Ready — 2026-06-03)
+## 📊 Estado del Sistema (v5.0 SOTA — Production Ready — 2026-06-25)
 
 > 🟢 **PRODUCTION READY** - v5.0 SOTA lista para uso público con mejoras estado-del-arte
 
@@ -22,7 +22,7 @@
 | **Rules**                            | **14** (.mdc)                                    |
 | **MCPs**                             | **8** root + **43** backup                       |
 | **HUBs**                             | **30** HUBs + **133** scripts subdir              |
-| **Agentes**                          | **62** (source — ver manifest para breakdown)    |
+| **Agentes**                          | **63** (source — 6 Dream Team + Orchestrator)    |
 | **Workflows**                        | **28** (7 categorías)                            |
 
 ---
@@ -176,14 +176,14 @@ Think_Different/                           # RAÍZ
 
 ---
 
-### Agentes (62 total)
+### Agentes (63 total)
 
 > 📍 **SSOT:** `01_OS_Inventory.json` → `agents.by_category`. Esta tabla referencia los valores del manifest.
 
 | Categoría                                   | Cantidad                      | Ubicación                                                                   |
 |--------------------------------------------|------------------------------|----------------------------------------------------------------------------|
 | Root                                        | 26                            | Directo en `01_Agents/` + `00_Agent_Teams_Lite/` + `00_OS_Conductor/`       |
-| Dream Team                                  | 5                             | `01_Core/02_Tools/01_Agents/01_Dream_Team/`                                 |
+| Dream Team                                  | 6                             | `01_Core/02_Tools/01_Agents/01_Dream_Team/` (+ 06 Marketing Orchestrator)   |
 | Specialists Compound                        | 23                            | `01_Core/02_Tools/01_Agents/02_Specialists_Compound/`                       |
 | Growth                                      | 5                             | `01_Core/02_Tools/01_Agents/03_Growth/`                                     |
 | Other                                       | 3                             | `04_Contexto/`, `05_Marca/`, `06_Plantillas/`, `07_Agent_Teams_Lite_Gen/`   |
@@ -290,6 +290,6 @@ CC BY-NC-SA 4.0 - Uso no comercial permitido.
 
 ---
 
-_Think Different PersonalOS v5.0 SOTA — Production Ready ✅ — 2026-06-03_
+_Think Different PersonalOS v5.0 SOTA — Production Ready ✅ — 2026-06-25_
 
-*Estructura completa: ver `Structure_v5.0.md`*
+*Marketing Agents SOTA + Archive Consolidation + Graphify_Out Move*

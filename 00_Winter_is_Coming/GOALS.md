@@ -1,6 +1,6 @@
 # Goals & Strategic Direction
 
-_Last updated: June 01, 2026_
+_Last updated: June 25, 2026_
 
 ---
 
@@ -22,6 +22,9 @@ _Last updated: June 01, 2026_
 | 10     | **Lessons Anthropic integradas**          | ✅         | 12_Skills_Improvement_Plan_2026-03-24.md                      |
 | 11     | **OS actualizado a v4.9**                 | ✅         | Consequences release, all docs synced                         |
 | 12     | **Submodules limpiados**                  | ✅         | Engram initialized, gitlinks corregidos                       |
+| 13     | **Marketing Agents SOTA Upgrade**         | ✅         | SDD pipeline: 3 agents (15,16,17) + Dream Team 06 Orchestrator |
+| 14     | **Archive Consolidation**                 | ✅         | 05_Archive: 9 dirs → 3 categories (14,769 files preserved)    |
+| 15     | **Graphify_Out moved**                    | ✅         | Root → 02_Playground/Graphify_Out/, 7 refs updated            |
 
 ### Objetivos en Progreso 🔄
 

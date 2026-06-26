@@ -6,9 +6,9 @@ argument-hint: "[opcional: tarea específica del día o contexto a priorizar]"
 
 # 🧬 Workflow: Génesis (Iron Man Boot) — v4.9 Consequences
 
-> **Versión del sistema:** v4.9 Consequences — Production Ready
-> **Fecha:** 2026-05-29
-> **Estado:** 🟢 PURE GREEN — Auditoría Integral Reconciliada
+> **Versión del sistema:** v4.9.1 — Marketing SOTA + Archive Consolidation
+> **Fecha:** 2026-06-25
+> **Estado:** 🟢 PURE GREEN — Marketing Pipeline + Archive 3-Categories
 
 Ejecutar al inicio de CADA sesión. Sin contexto completo NO hay respuesta.
 
@@ -211,5 +211,5 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 
 ---
 
-*Think Different PersonalOS v4.9 Consequences — Production Ready*
-*Actualizado: 2026-05-29 | 392 skills | 61 agents (82 total sistema) | 7+38 MCPs | 20 HUBs | 14 rules*
+*Think Different PersonalOS v4.9.1 — Marketing SOTA + Archive Consolidation*
+*Actualizado: 2026-06-25 | 392 skills | 62 agents (82 total sistema) | 7+38 MCPs | 30 HUBs | 14 rules*
