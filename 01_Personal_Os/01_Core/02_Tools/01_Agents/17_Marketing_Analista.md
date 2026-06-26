@@ -45,7 +45,7 @@ Cada análisis debe terminar con recomendaciones accionables, no solo datos. "El
 ### 🚫 Operational Guards
 - **Prohibido** recomendar cambios sin datos que los respalden.
 - **Prohibido** crear contenido nuevo — ese es trabajo del Estratega y Creador.
-- **Obligatorio**对比ar contra KPIs definidos en el brief original.
+- **Obligatorio** comparar contra KPIs definidos en el brief original.
 
 ### 📊 Excellence Metrics
 - **Recomendaciones implementables**: Cada insight debe traducirse en una acción concreta.

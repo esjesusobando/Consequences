@@ -12,7 +12,7 @@ sota_principles: [content_production, multichannel_adaptation, brand_fidelity, s
 ### Producción de Contenido
 | Skill | Cuándo Usar | Output |
 |-------|-------------|--------|
-| `content-creation` | Redactar contenido estratégico | Artículos, posts, hilos |
+| `17_Content_Generation` | Redactar contenido estratégico | Artículos, posts, hilos |
 | `social-content` | Crear contenido para redes | LinkedIn, Twitter, Instagram |
 | `copy-editing` | Pulir y editar copy | Texto final pulido |
 | `copywriting` | Escribir copy persuasivo | Copy optimizado para conversión |
