@@ -14,6 +14,11 @@
 
 - [ ] **Elite Portfolio** — Rediseñar con Exaggerated Minimalism (sección por sección)
 - [ ] **OIM Website** — Verificación visual en browser (servidor parado)
+- [ ] https://reactbits.dev/?fbclid=PAVERFWASrX45leHRuA2FlbQIxMABzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAacWJqI-iZIQQJdOXq6Yc73U0TBTxfsCKk_LK5Lj4aGTUCVNsO4UtM7UUAS2Ug_aem_ValVWW5la8dbteKdVuvJhg
+Prompts: https://docs.google.com/document/d/1-vFY5kNELu_K7dUwOCZE3koZ0kN_dnei32BPLjP8ob4/edit?usp=sharing
+
+
+
 
 ---
 
