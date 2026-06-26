@@ -52,7 +52,7 @@ User Input → Orchestrator (parse intent)
 ### Content Production (from `14_Marketing_Tech/`)
 | Skill | Cuándo Usar | Output |
 |-------|-------------|--------|
-| `content-creation` | Redactar contenido estratégico | Artículos, posts, hilos |
+| `17_Content_Generation` | Redactar contenido estratégico | Artículos, posts, hilos |
 | `social-content` | Crear contenido para redes | LinkedIn, Twitter, Instagram |
 | `copy-editing` | Pulir y editar copy | Texto final pulido |
 | `copywriting` | Escribir copy persuasivo | Copy optimizado para conversión |

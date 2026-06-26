@@ -1,16 +1,16 @@
 # Dream Team — Super Campeones
 
-**Version:** 3.0 | **Date:** 2026-04-25
+**Version:** 3.1 | **Date:** 2026-06-25
 
 ---
 
 ## Que es?
 
-El Dream Team son los 5 agentes especializados que trabajaban juntos como un equipo de futbol. Cada uno tiene un rol especifico y se complementan.
+El Dream Team son los 6 agentes especializados que trabajan juntos como un equipo de futbol. Cada uno tiene un rol especifico y se complementan.
 
 ---
 
-## Los 5 Jugadores
+## Los 6 Jugadores
 
 | #                      | Agente                                   | Rol                           | Especialidad                                               |
 |-----------------------|-----------------------------------------|------------------------------|-----------------------------------------------------------|
@@ -19,6 +19,7 @@ El Dream Team son los 5 agentes especializados que trabajaban juntos como un equ
 | 03                     | **Marketing_Tech**                       | EXTREMO                       | Growth, SEO, contenido                                     |
 | 04                     | **Design_Ops**                           | DEFENSA                       | UI/UX, design system                                       |
 | 05                     | **Platform_Engineer**                    | ARQUITECTO                    | Infra, MCPs, DevOps                                        |
+| 06                     | **Marketing_Orchestrator** 🆕            | DIRECTOR TÉCNICO              | Coordina el pipeline de marketing agents (15→16→17)        |
 
 ---
 
@@ -36,6 +37,19 @@ Design_Ops → (si UI/UX)
 Platform_Engineer → (deploy final)
 ```
 
+### Marketing Orchestrator — Pipeline Específico
+
+El agente 06 no sigue el flujo principal del Dream Team. Es un **director técnico** para el pipeline de marketing:
+
+```
+User Input → 06 Orchestrator (parse intent)
+    ├── Strategy only → 15 Estratega → done
+    ├── Content       → 15 → 16 Creador → done
+    └── Full campaign → 15 → 16 → 17 Analista → feedback loop
+```
+
+> 📖 Ver [MARKETING_PIPELINE.md](../MARKETING_PIPELINE.md) para guía detallada.
+
 ---
 
 ## Integración
@@ -46,4 +60,4 @@ Platform_Engineer → (deploy final)
 
 ---
 
-*Think Different PersonalOS v3.0 Consequences*
+*Think Different PersonalOS v4.9 Consequences — 2026-06-25*

@@ -1,6 +1,6 @@
 # 🤖 01_Agents — Sistema de Agentes Especializados
 
-**Versión:** v4.9 | **Fecha:** 2026-05-28 | **Estado:** Pure Green Production
+**Versión:** v4.9 | **Fecha:** 2026-06-25 | **Estado:** Pure Green Production
 
 > 🧠 **[OS Conductor](00_OS_Conductor/README.md) (v2.0) — El punto de entrada único al PersonalOS.**
 > Implementa Anthropic 2.0 Harness: Sprint Contract, Evaluator Pattern, Context Management.
@@ -29,12 +29,22 @@ Este directorio contiene todos los agentes especializados del PersonalOS. Cada a
 ├── 11_AIPM_Judge.md                # Evaluación + calidad
 ├── 12_LFG_Autonomous_Engine.md     # Autonomía — LFG
 ├── 13_Hillary.md                   # Life OS Specialist
-├── 01_Dream_Team/                  # 5 agentes: Product, Data, Marketing, Design, Platform
+├── 14_Laia_Learning.md             # Learning & Knowledge Management
+├── 15_Marketing_Estratega.md       # Marketing — estrategia y briefs
+├── 16_Marketing_Creador.md         # Marketing — producción multicanal
+├── 17_Marketing_Analista.md        # Marketing — métricas y optimización
+├── 18_Workflow_Youtube.md          # Workflow: YouTube end-to-end
+├── 19_Workflow_LinkedIn.md         # Workflow: LinkedIn end-to-end
+├── 20_Workflow_Newsletter.md       # Workflow: Newsletter end-to-end
+├── 21_Learning_Always.md           # Metodología de aprendizaje continuo
+├── 22_Dynamic_Workflows.md         # Workflows dinámicos multi-agente
+├── 01_Dream_Team/                  # 6 agentes: Product, Data, Marketing, Design, Platform, Orchestrator
 │   ├── 01_Product_Builder.md
 │   ├── 02_Data_Engineer.md
 │   ├── 03_Marketing_Tech.md
 │   ├── 04_Design_Ops.md
-│   └── 05_Platform_Engineer.md
+│   ├── 05_Platform_Engineer.md
+│   └── 06_Marketing_Orchestrator.md
 ├── 02_Specialists_Compound/        # 23 agentes revisores especializados
 │   ├── Agent-Native-Reviewer.md
 │   ├── Architecture-Strategist.md
@@ -60,7 +70,7 @@ Este directorio contiene todos los agentes especializados del PersonalOS. Cada a
 
 ---
 
-## 🏆 Catálogo de Agentes (13 principales + 5 Dream Team + 24 Specialists + 5 Growth = 47+)
+## 🏆 Catálogo de Agentes (22 principales + 6 Dream Team + 24 Specialists + 5 Growth = 57+)
 
 ### Agentes Principales
 
@@ -79,8 +89,16 @@ Este directorio contiene todos los agentes especializados del PersonalOS. Cada a
 | 10                                   | Workflow Orchestrator                                   | Orquestación                                     | CRÍTICA                                    | ✅                                       |
 | 11                                   | AIPM Judge                                              | Calidad/Auditoría                                | ALTA                                       | ✅                                       |
 | 12                                   | LFG Autonomous Engine                                   | Autonomía                                        | ALTA                                       | ✅                                       |
-| 13                                   | Hillary Specialist                                      | Life OS                                          | ALTA                                       | ✅ 🆕                                     |
-| 14                                   | React Test Implementer                                  | Código (GREEN)                                   | ALTA                                       | ✅ 🆕                                     |
+| 13                                   | Hillary Specialist                                      | Life OS                                          | ALTA                                       | ✅                                       |
+| 14                                   | Laia Learning                                           | Aprendizaje y conocimiento                        | MEDIA                                      | ✅                                       |
+| 15                                   | **Marketing Estratega** 🌟                               | Estrategia y briefs de contenido                  | ALTA                                       | ✅ 🆕                                     |
+| 16                                   | **Marketing Creador** 🌟                                 | Producción multicanal (YT/LI/NL)                  | ALTA                                       | ✅ 🆕                                     |
+| 17                                   | **Marketing Analista** 🌟                                | Métricas y optimización                           | ALTA                                       | ✅ 🆕                                     |
+| 18                                   | Workflow YouTube                                        | Pipeline YouTube end-to-end                       | MEDIA                                      | ✅                                       |
+| 19                                   | Workflow LinkedIn                                       | Pipeline LinkedIn end-to-end                      | MEDIA                                      | ✅                                       |
+| 20                                   | Workflow Newsletter                                     | Pipeline Newsletter end-to-end                    | MEDIA                                      | ✅                                       |
+| 21                                   | Learning Always                                         | Aprendizaje continuo                              | MEDIA                                      | ✅                                       |
+| 22                                   | Dynamic Workflows                                       | Workflows multi-agente dinámicos                  | MEDIA                                      | ✅ 🆕                                     |
 
 ---
 
@@ -120,6 +138,42 @@ FASE 7: ACCESIBILIDAD (opcional)
 ---
 
 ## 🚀 Cómo Usar los Agentes
+
+### Marketing Pipeline: Estratega → Creador → Analista 🆕
+
+El OS tiene un pipeline completo de marketing orquestado por 3 agents especializados + un Orchestrator:
+
+```
+                      ┌─────────────────────────┐
+                      │ 06 Marketing Orchestrator │
+                      │  (coordina, no ejecuta)   │
+                      └──────┬──────────────────┘
+                             │ parsea intent
+                ┌────────────┼────────────┐
+                ▼            ▼            ▼
+        15_Estratega   16_Creador   17_Analista
+        (brief)        (contenido)  (métrica+feedback)
+                └────────────┼────────────┘
+                             ▼
+                      Feedback loop
+```
+
+**Uso rápido:**
+```bash
+# Campaña completa (brief → contenido → análisis)
+"Necesito una campaña de contenido para [tema]"
+
+# Solo estrategia
+"Quiero un brief para un post sobre [tema]"
+
+# Pipeline LinkedIn completo
+"Pipeline linkedin para promocionar [producto]"
+
+# Vía Orchestrator (recomendado)
+"06: orquesta una campaña completa para [tema]"
+```
+
+> 📖 Ver [MARKETING_PIPELINE.md](./MARKETING_PIPELINE.md) para guía detallada.
 
 ### Opción A: OS Conductor — Entry Point Único ✅ RECOMENDADO
 
@@ -170,4 +224,4 @@ Agente #05: "Audita seguridad de [feature]"
 
 ---
 
-_PersonalOS v4.9 Consequences — Pure Green Production — 2026-05-26_
+_PersonalOS v4.9 Consequences — Pure Green Production — 2026-06-25_
