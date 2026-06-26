@@ -356,8 +356,8 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report
 
 ## graphify
 
-This project has a knowledge graph at Graphify_Out/ with god nodes, community structure, and cross-file relationships.
-- For codebase questions, first run `graphify query "<question>"` when Graphify_Out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
-- If Graphify_Out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
-- Read Graphify_Out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
+This project has a knowledge graph at 02_Playground/Graphify_Out/ with god nodes, community structure, and cross-file relationships.
+- For codebase questions, first run `graphify query "<question>"` when 02_Playground/Graphify_Out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
+- If 02_Playground/Graphify_Out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
+- Read 02_Playground/Graphify_Out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
 - After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).

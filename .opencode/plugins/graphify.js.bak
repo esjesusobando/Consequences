@@ -9,11 +9,11 @@ export const GraphifyPlugin = async ({ directory }) => {
   return {
     "tool.execute.before": async (input, output) => {
       if (reminded) return;
-      if (!existsSync(join(directory, "Graphify_Out", "graph.json"))) return;
+      if (!existsSync(join(directory, "02_Playground/Graphify_Out", "graph.json"))) return;
 
       if (input.tool === "bash") {
            output.args.command =
-           'echo "[graphify] knowledge graph at Graphify_Out/. For focused questions, run \`graphify query "<question>"\` (scoped subgraph, usually much smaller than GRAPH_REPORT.md) instead of grepping raw files. Read GRAPH_REPORT.md only for broad architecture context." && ' +
+           'echo "[graphify] knowledge graph at 02_Playground/Graphify_Out/. For focused questions, run \`graphify query "<question>"\` (scoped subgraph, usually much smaller than GRAPH_REPORT.md) instead of grepping raw files. Read GRAPH_REPORT.md only for broad architecture context." && ' +
            output.args.command;
         reminded = true;
       }

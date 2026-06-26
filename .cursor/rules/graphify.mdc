@@ -3,8 +3,8 @@ description: graphify knowledge graph context
 alwaysApply: true
 ---
 
-This project has a graphify knowledge graph at Graphify_Out/.
-- For codebase or architecture questions, when `Graphify_Out/graph.json` exists, first run `graphify query "<question>"` (or `graphify path "<A>" "<B>"` / `graphify explain "<concept>"`). These return a scoped subgraph, usually much smaller than `GRAPH_REPORT.md` or raw grep output.
-- If Graphify_Out/wiki/index.md exists, navigate it instead of reading raw files
-- Read Graphify_Out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context
+This project has a graphify knowledge graph at 02_Playground/Graphify_Out/.
+- For codebase or architecture questions, when `02_Playground/Graphify_Out/graph.json` exists, first run `graphify query "<question>"` (or `graphify path "<A>" "<B>"` / `graphify explain "<concept>"`). These return a scoped subgraph, usually much smaller than `GRAPH_REPORT.md` or raw grep output.
+- If 02_Playground/Graphify_Out/wiki/index.md exists, navigate it instead of reading raw files
+- Read 02_Playground/Graphify_Out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context
 - After modifying code files in this session, run `graphify update .` to keep the graph current (AST-only, no API cost)
