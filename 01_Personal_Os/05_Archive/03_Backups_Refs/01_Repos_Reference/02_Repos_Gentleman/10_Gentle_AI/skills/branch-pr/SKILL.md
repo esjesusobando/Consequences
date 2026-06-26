@@ -1,8 +1,6 @@
 ---
 name: gentle-ai-branch-pr
-description: >
-  PR creation workflow for Gentle AI following the issue-first enforcement system.
-  Trigger: When creating a pull request, opening a PR, or preparing changes for review.
+description: "Create Gentle AI pull requests with issue-first checks. Trigger: creating, opening, or preparing PRs for review."
 license: Apache-2.0
 metadata:
   author: gentleman-programming
@@ -22,9 +20,10 @@ Load this skill whenever you need to:
 
 1. **Every PR MUST link an approved issue** — `Closes/Fixes/Resolves #<N>` in the PR body, and that issue MUST have `status:approved`. PRs without this are **automatically rejected** by CI.
 2. **Exactly one `type:*` label** — apply exactly ONE type label to the PR. CI will reject PRs with zero or multiple type labels.
-3. **5 automated checks must pass** — see the Automated Checks table below.
-4. **No `Co-Authored-By` trailers** — never add AI attribution to commits.
-5. **No force-push to main/master** — protected branch.
+3. **400-line review budget** — keep PRs within 400 changed lines (`additions + deletions`) or request/obtain maintainer-applied `size:exception` with rationale documented.
+4. **Automated checks must pass** — see the Automated Checks table below.
+5. **No `Co-Authored-By` trailers** — never add AI attribution to commits.
+6. **No force-push to main/master** — protected branch.
 
 ## Workflow
 
@@ -44,7 +43,7 @@ Load this skill whenever you need to:
    → Add exactly ONE type:* label
    → Fill in the PR body using the template
 
-7. All 5 automated checks must pass before merge
+7. All automated checks must pass before merge
 ```
 
 ---
@@ -57,19 +56,19 @@ Branch names **must** match this pattern:
 ^(feat|fix|chore|docs|style|refactor|perf|test|build|ci|revert)\/[a-z0-9._-]+$
 ```
 
-| Type                                 | Example                                                     |
-|-------------------------------------|------------------------------------------------------------|
-| `feat/`                              | `feat/user-login`                                           |
-| `fix/`                               | `fix/duplicate-observation-insert`                          |
-| `docs/`                              | `docs/api-reference-update`                                 |
-| `refactor/`                          | `refactor/extract-query-sanitizer`                          |
-| `chore/`                             | `chore/bump-bubbletea-v0.26`                                |
-| `style/`                             | `style/fix-linter-warnings`                                 |
-| `perf/`                              | `perf/optimize-catalog-loading`                             |
-| `test/`                              | `test/add-pipeline-coverage`                                |
-| `build/`                             | `build/update-goreleaser-config`                            |
-| `ci/`                                | `ci/add-e2e-docker-job`                                     |
-| `revert/`                            | `revert/undo-model-picker-change`                           |
+| Type | Example |
+|------|---------|
+| `feat/` | `feat/user-login` |
+| `fix/` | `fix/duplicate-observation-insert` |
+| `docs/` | `docs/api-reference-update` |
+| `refactor/` | `refactor/extract-query-sanitizer` |
+| `chore/` | `chore/bump-bubbletea-v0.26` |
+| `style/` | `style/fix-linter-warnings` |
+| `perf/` | `perf/optimize-catalog-loading` |
+| `test/` | `test/add-pipeline-coverage` |
+| `build/` | `build/update-goreleaser-config` |
+| `ci/` | `ci/add-e2e-docker-job` |
+| `revert/` | `revert/undo-model-picker-change` |
 
 **Rules:**
 - All lowercase
@@ -102,9 +101,9 @@ Closes #<N>
 
 ## 📂 Changes
 
-| File / Area                             | What Changed                               |
-|----------------------------------------|-------------------------------------------|
-| `path/to/file`                          | Brief description                          |
+| File / Area | What Changed |
+|-------------|-------------|
+| `path/to/file` | Brief description |
 
 ## 🧪 Test Plan
 
@@ -125,6 +124,7 @@ cd e2e && ./docker-test.sh
 ## ✅ Contributor Checklist
 
 - [ ] PR is linked to an issue with `status:approved`
+- [ ] PR stays within 400 changed lines, or I have requested/obtained maintainer-applied `size:exception` with rationale documented
 - [ ] I have added the appropriate `type:*` label to this PR
 - [ ] Unit tests pass (`go test ./...`)
 - [ ] E2E tests pass (`cd e2e && ./docker-test.sh`)
@@ -137,15 +137,16 @@ cd e2e && ./docker-test.sh
 
 ## Automated Checks
 
-All 5 checks run on every PR and **all must pass** before merge:
+These checks run on every PR and **all must pass** before merge:
 
-| Check                                                          | What It Verifies                                                         | How to Fix                                                                         |
-|---------------------------------------------------------------|-------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| **Check Issue Reference**                                      | PR body contains `Closes/Fixes/Resolves #N`                              | Add `Closes #<N>` to the PR body                                                   |
-| **Check Issue Has `status:approved`**                          | Linked issue has been approved by a maintainer                           | Wait for maintainer to add `status:approved` to the issue                          |
-| **Check PR Has `type:*` Label**                                | Exactly one `type:*` label is applied to the PR                          | Ask a maintainer to add the correct label; remove extras                           |
-| **Unit Tests**                                                 | `go test ./...` passes                                                   | Fix failing tests before pushing                                                   |
-| **E2E Tests**                                                  | `cd e2e && ./docker-test.sh` passes                                      | Fix failing E2E scenarios before pushing                                           |
+| Check | What It Verifies | How to Fix |
+|-------|-----------------|------------|
+| **Check PR Cognitive Load** | PR stays within 400 changed lines (`additions + deletions`) or has `size:exception` | Split the PR, or request/obtain maintainer-applied `size:exception` and document the rationale |
+| **Check Issue Reference** | PR body contains `Closes/Fixes/Resolves #N` | Add `Closes #<N>` to the PR body |
+| **Check Issue Has `status:approved`** | Linked issue has been approved by a maintainer | Wait for maintainer to add `status:approved` to the issue |
+| **Check PR Has `type:*` Label** | Exactly one `type:*` label is applied to the PR | Ask a maintainer to add the correct label; remove extras |
+| **Unit Tests** | `go test ./...` passes | Fix failing tests before pushing |
+| **E2E Tests** | `cd e2e && ./docker-test.sh` passes | Fix failing E2E scenarios before pushing |
 
 ---
 
@@ -169,19 +170,19 @@ Commit messages **must** match this pattern:
 
 ### Allowed Types
 
-| Type                                | Purpose                                                        | PR Label                                       |
-|------------------------------------|---------------------------------------------------------------|-----------------------------------------------|
-| `feat`                              | New feature                                                    | `type:feature`                                 |
-| `fix`                               | Bug fix                                                        | `type:bug`                                     |
-| `docs`                              | Documentation only                                             | `type:docs`                                    |
-| `refactor`                          | Code change (no behavior change)                               | `type:refactor`                                |
-| `chore`                             | Maintenance, dependencies, tooling                             | `type:chore`                                   |
-| `style`                             | Formatting, linting (no logic change)                          | `type:chore`                                   |
-| `perf`                              | Performance improvement                                        | `type:feature`                                 |
-| `test`                              | Adding or updating tests                                       | `type:chore`                                   |
-| `build`                             | Build system or external deps                                  | `type:chore`                                   |
-| `ci`                                | CI configuration                                               | `type:chore`                                   |
-| `revert`                            | Reverts a previous commit                                      | matches reverted type                          |
+| Type | Purpose | PR Label |
+|------|---------|----------|
+| `feat` | New feature | `type:feature` |
+| `fix` | Bug fix | `type:bug` |
+| `docs` | Documentation only | `type:docs` |
+| `refactor` | Code change (no behavior change) | `type:refactor` |
+| `chore` | Maintenance, dependencies, tooling | `type:chore` |
+| `style` | Formatting, linting (no logic change) | `type:chore` |
+| `perf` | Performance improvement | `type:feature` |
+| `test` | Adding or updating tests | `type:chore` |
+| `build` | Build system or external deps | `type:chore` |
+| `ci` | CI configuration | `type:chore` |
+| `revert` | Reverts a previous commit | matches reverted type |
 
 ### Breaking Changes
 
@@ -264,9 +265,9 @@ Fixes Claude Code binary detection failing on Linux when HOME is not set.
 
 ## 📂 Changes
 
-| File / Area                                            | What Changed                                         |
-|-------------------------------------------------------|-----------------------------------------------------|
-| \`internal/agents/claude.go\`                          | Added HOME env var fallback                          |
+| File / Area | What Changed |
+|-------------|-------------|
+| \`internal/agents/claude.go\` | Added HOME env var fallback |
 
 ## 🧪 Test Plan
 
@@ -277,6 +278,7 @@ Fixes Claude Code binary detection failing on Linux when HOME is not set.
 ## ✅ Contributor Checklist
 
 - [x] PR is linked to an issue with \`status:approved\`
+- [x] PR stays within 400 changed lines, or I have requested/obtained maintainer-applied \`size:exception\` with rationale documented
 - [x] I have added the appropriate \`type:*\` label to this PR
 - [x] Unit tests pass (\`go test ./...\`)
 - [x] E2E tests pass (\`cd e2e && ./docker-test.sh\`)

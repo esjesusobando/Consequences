@@ -6,12 +6,12 @@ Embed `gga.ps1` as a Go asset under `internal/assets/gga/`, then extend `runtime
 
 ## Architecture Decisions
 
-| Option                                                                                     | Tradeoff                                                                                                                               | Decision                                                                                                                                                  |
-|-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Write shim inside `EnsureRuntimeAssets` with OS guard                                      | Keeps all runtime asset logic in one function; couples Linux/macOS path to Windows code                                                | Rejected — violates single-responsibility                                                                                                                 |
-| New `EnsurePowerShellShim(homeDir string) error` in `runtime.go`                           | Mirrors `EnsureRuntimeAssets` exactly; caller guards with OS check; easy to test in isolation                                          | **Chosen**                                                                                                                                                |
-| Add PS1 step to `CommandSequence` in `resolver.go`                                         | Keeps all install steps in one place; but shell-level commands cannot call Go's `os.Rename` atomic write                               | Rejected — shim write must be Go-level                                                                                                                    |
-| Embed `gga.ps1` template with `gitBashPath()` expanded at runtime                          | Dynamic path avoids hardcoding; but `gitBashPath()` lives in `installcmd` package, not accessible from assets                          | Rejected — `gga.ps1` is a static shim that calls `git.exe`-relative `bash.exe` via a lookup at run time inside the script itself                          |
+| Option | Tradeoff | Decision |
+|--------|----------|----------|
+| Write shim inside `EnsureRuntimeAssets` with OS guard | Keeps all runtime asset logic in one function; couples Linux/macOS path to Windows code | Rejected — violates single-responsibility |
+| New `EnsurePowerShellShim(homeDir string) error` in `runtime.go` | Mirrors `EnsureRuntimeAssets` exactly; caller guards with OS check; easy to test in isolation | **Chosen** |
+| Add PS1 step to `CommandSequence` in `resolver.go` | Keeps all install steps in one place; but shell-level commands cannot call Go's `os.Rename` atomic write | Rejected — shim write must be Go-level |
+| Embed `gga.ps1` template with `gitBashPath()` expanded at runtime | Dynamic path avoids hardcoding; but `gitBashPath()` lives in `installcmd` package, not accessible from assets | Rejected — `gga.ps1` is a static shim that calls `git.exe`-relative `bash.exe` via a lookup at run time inside the script itself |
 
 **Final choice for shim content:** `gga.ps1` resolves Git Bash by deriving its path from `(Get-Command git).Source` at PowerShell runtime (not at install time). This eliminates the cross-package dependency on `gitBashPath()` and produces a shim that self-heals if Git is reinstalled to a different path. The shim is therefore a fully static asset — no templating needed.
 
@@ -34,12 +34,12 @@ gentle-ai install (Windows)
 
 ## File Changes
 
-| File                                                               | Action                            | Description                                                                                 |
-|-------------------------------------------------------------------|----------------------------------|--------------------------------------------------------------------------------------------|
-| `internal/assets/gga/gga.ps1`                                      | Create                            | Static PowerShell shim; resolves bash via `git` on PATH at runtime                          |
-| `internal/components/gga/runtime.go`                               | Modify                            | Add `RuntimeBinDir`, `RuntimePS1Path`, `EnsurePowerShellShim`                               |
-| `internal/components/gga/runtime_test.go`                          | Modify                            | Add tests for shim: missing, stale, idempotent, git-bash-not-found                          |
-| `docs/platforms.md`                                                | Modify                            | Remove Windows/PowerShell limitation note                                                   |
+| File | Action | Description |
+|------|--------|-------------|
+| `internal/assets/gga/gga.ps1` | Create | Static PowerShell shim; resolves bash via `git` on PATH at runtime |
+| `internal/components/gga/runtime.go` | Modify | Add `RuntimeBinDir`, `RuntimePS1Path`, `EnsurePowerShellShim` |
+| `internal/components/gga/runtime_test.go` | Modify | Add tests for shim: missing, stale, idempotent, git-bash-not-found |
+| `docs/platforms.md` | Modify | Remove Windows/PowerShell limitation note |
 
 `install.go` and `resolver.go` are NOT modified — the shim install is a runtime-asset concern, not a package-manager command concern.
 
@@ -79,13 +79,13 @@ exit $LASTEXITCODE
 
 ## Testing Strategy
 
-| Layer                                                  | What to Test                                                | Approach                                                                                                                    |
-|-------------------------------------------------------|------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Unit — asset                                           | `gga.ps1` is embedded and readable                          | `assets.Read("gga/gga.ps1")` returns non-empty content                                                                      |
-| Unit — `EnsurePowerShellShim`                          | Creates file when missing                                   | `t.TempDir()` home, call once, assert file exists with expected content                                                     |
-| Unit — `EnsurePowerShellShim`                          | Overwrites stale shim                                       | Write sentinel content, call, assert content replaced                                                                       |
-| Unit — `EnsurePowerShellShim`                          | No-op when content matches                                  | Call twice, assert `ModTime` unchanged (mirrors `TestEnsureRuntimeAssetsIsNoOpWhenContentMatches`)                          |
-| Unit — path helpers                                    | `RuntimeBinDir` / `RuntimePS1Path`                          | Table test with known homeDir, assert expected suffix                                                                       |
+| Layer | What to Test | Approach |
+|-------|-------------|----------|
+| Unit — asset | `gga.ps1` is embedded and readable | `assets.Read("gga/gga.ps1")` returns non-empty content |
+| Unit — `EnsurePowerShellShim` | Creates file when missing | `t.TempDir()` home, call once, assert file exists with expected content |
+| Unit — `EnsurePowerShellShim` | Overwrites stale shim | Write sentinel content, call, assert content replaced |
+| Unit — `EnsurePowerShellShim` | No-op when content matches | Call twice, assert `ModTime` unchanged (mirrors `TestEnsureRuntimeAssetsIsNoOpWhenContentMatches`) |
+| Unit — path helpers | `RuntimeBinDir` / `RuntimePS1Path` | Table test with known homeDir, assert expected suffix |
 
 No integration or E2E tests are required for this change — the `filemerge.WriteFileAtomic` path is already covered by its own test suite, and PowerShell execution is an OS-level concern outside unit test scope.
 

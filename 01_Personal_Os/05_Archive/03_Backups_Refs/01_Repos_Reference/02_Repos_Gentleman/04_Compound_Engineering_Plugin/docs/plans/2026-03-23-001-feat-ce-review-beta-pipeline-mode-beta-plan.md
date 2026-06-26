@@ -24,7 +24,7 @@ That is acceptable for standalone use, but it is the wrong shape for autonomous 
 
 - `lfg` currently treats review as an upstream producer before downstream resolution and browser testing
 - `slfg` currently runs review and browser testing in parallel, which is only safe if review is non-mutating
-- `resolve-todo-parallel` expects a durable residual-work contract (`03_Tasks/`), while `ce:review-beta` currently tries to resolve accepted findings inline
+- `resolve-todo-parallel` expects a durable residual-work contract (`todos/`), while `ce:review-beta` currently tries to resolve accepted findings inline
 - The findings schema lacks routing metadata, so severity is doing too much work; urgency and autofix eligibility are distinct concerns
 
 The result is a workflow that is hard to promote safely: it can be interactive, or autonomous, or mutation-owning, but not all three at once without an explicit mode model and clearer ownership boundaries.
@@ -59,10 +59,10 @@ The result is a workflow that is hard to promote safely: it can be interactive, 
 - `plugins/compound-engineering/skills/ce-review-beta/references/findings-schema.json`
   - Structured persona finding contract today; currently missing routing metadata for autonomous handling
 - `plugins/compound-engineering/skills/ce-review/SKILL.md`
-  - Current stable review workflow; creates durable `03_Tasks/` artifacts rather than fixing findings inline
+  - Current stable review workflow; creates durable `todos/` artifacts rather than fixing findings inline
 - `plugins/compound-engineering/skills/resolve-todo-parallel/SKILL.md`
   - Existing residual-work resolver; parallelizes item handling once work has already been externalized
-- `plugins/compound-engineering/skills/file-03_Tasks/SKILL.md`
+- `plugins/compound-engineering/skills/file-todos/SKILL.md`
   - Existing review -> triage -> todo -> resolve integration contract
 - `plugins/compound-engineering/skills/lfg/SKILL.md`
   - Sequential orchestrator whose future cutover constraints should inform the beta contract, even though this plan does not modify it
@@ -93,7 +93,7 @@ Skipped. This is a repo-internal orchestration and skill-design change with stro
 - **Split review from mutation semantically, not by creating two separate skills.** `ce:review-beta` should always perform the same review and synthesis stages. Mutation behavior becomes a mode-controlled phase layered on top.
 - **Route by fixability, not severity.** Add explicit per-finding routing fields such as `autofix_class`, `owner`, and `requires_verification`. Severity remains urgency; it no longer implies who acts.
 - **Keep one in-skill fixer, but only for `safe_auto` findings.** The current "one fixer subagent" rule is still right for consistent-tree edits. The change is that the fixer is selected by policy and routing metadata, not by an interactive severity prompt.
-- **Emit both ephemeral and durable outputs.** Use `.context/compound-engineering/ce-review-beta/<run-id>/` for the per-run machine-readable report and create durable `03_Tasks/` items only for unresolved actionable findings that belong downstream.
+- **Emit both ephemeral and durable outputs.** Use `.context/compound-engineering/ce-review-beta/<run-id>/` for the per-run machine-readable report and create durable `todos/` items only for unresolved actionable findings that belong downstream.
 - **Treat CE helper outputs by artifact class.**
   - `learnings-researcher`: contextual/advisory unless a concrete finding corroborates it
   - `agent-native-reviewer`: often `gated_auto` or `manual`, occasionally `safe_auto` when the fix is purely local and mechanical
@@ -110,13 +110,13 @@ Skipped. This is a repo-internal orchestration and skill-design change with stro
 - **Should `ce:review-beta` keep any embedded fix loop?** Yes, but only for `safe_auto` findings under an explicit mode/policy. Residual work is handed off.
 - **Should autonomous mode be inferred from lack of interactivity?** No. Use explicit `mode:autonomous`.
 - **Should `slfg` keep review and browser testing in parallel?** No, not once review can mutate the checkout. Run browser testing after the mutating review phase on the stabilized tree.
-- **Should residual work be `03_Tasks/`, `.context/`, or both?** Both. `.context` holds the run artifact; `03_Tasks/` is only for durable unresolved actionable work.
+- **Should residual work be `todos/`, `.context/`, or both?** Both. `.context` holds the run artifact; `todos/` is only for durable unresolved actionable work.
 
 ### Deferred to Implementation
 
 - Exact metadata field names in `findings-schema.json`
 - Whether `report-only` should imply a different default output template section ordering than `interactive` / `autonomous`
-- Whether residual `03_Tasks/` should be created directly by `ce:review-beta` or via a small shared helper/reference template used by both review and resolver flows
+- Whether residual `todos/` should be created directly by `ce:review-beta` or via a small shared helper/reference template used by both review and resolver flows
 
 ## High-Level Technical Design
 
@@ -225,7 +225,7 @@ review stages -> synthesize -> classify outputs by autofix_class/owner
 **Files:**
 - Modify: `plugins/compound-engineering/skills/ce-review-beta/SKILL.md`
 - Modify: `plugins/compound-engineering/skills/resolve-todo-parallel/SKILL.md`
-- Modify: `plugins/compound-engineering/skills/file-03_Tasks/SKILL.md`
+- Modify: `plugins/compound-engineering/skills/file-todos/SKILL.md`
 - Add: `plugins/compound-engineering/skills/ce-review-beta/references/residual-work-template.md` (if a dedicated durable-work shape helps keep review prose smaller)
 
 **Approach:**
@@ -234,14 +234,14 @@ review stages -> synthesize -> classify outputs by autofix_class/owner
   - what was auto-fixed
   - what remains unresolved
   - advisory-only outputs
-- Create durable `03_Tasks/` items only for unresolved actionable findings whose `owner` is downstream resolution
+- Create durable `todos/` items only for unresolved actionable findings whose `owner` is downstream resolution
 - Update `resolve-todo-parallel` to acknowledge this source explicitly so residual review work can be picked up without pretending everything came from stable `ce:review`
 - Update `file-todos` integration guidance to reflect the new flow:
   - review-beta autonomous -> residual todos -> resolve-todo-parallel
   - advisory-only outputs do not become todos
 
 **Patterns to follow:**
-- `.context/compound-engineering/<workflow>/<run-id>/` scratch-space convention from `01_Personal_Os/11_AGENTS.md`
+- `.context/compound-engineering/<workflow>/<run-id>/` scratch-space convention from `AGENTS.md`
 - Existing `file-todos` review/resolution lifecycle
 
 **Test scenarios:**
@@ -251,7 +251,7 @@ review stages -> synthesize -> classify outputs by autofix_class/owner
 - The run artifact is sufficient to explain what the in-skill fixer changed vs. what remains
 
 **Verification:**
-- `tests/review-skill-contract.test.ts` asserts the documented `.context` and `03_Tasks/` handoff rules
+- `tests/review-skill-contract.test.ts` asserts the documented `.context` and `todos/` handoff rules
 - `bun run release:validate` passes after any skill inventory/reference changes
 
 - [x] **Unit 4: Add contract-focused regression coverage for mode, handoff, and future-integration boundaries**
@@ -305,7 +305,7 @@ review stages -> synthesize -> classify outputs by autofix_class/owner
   - `plugins/compound-engineering/skills/ce-review-beta/SKILL.md`
   - `plugins/compound-engineering/skills/ce-review/SKILL.md`
   - `plugins/compound-engineering/skills/resolve-todo-parallel/SKILL.md`
-  - `plugins/compound-engineering/skills/file-03_Tasks/SKILL.md`
+  - `plugins/compound-engineering/skills/file-todos/SKILL.md`
   - `plugins/compound-engineering/skills/lfg/SKILL.md`
   - `plugins/compound-engineering/skills/slfg/SKILL.md`
 - Institutional learnings:

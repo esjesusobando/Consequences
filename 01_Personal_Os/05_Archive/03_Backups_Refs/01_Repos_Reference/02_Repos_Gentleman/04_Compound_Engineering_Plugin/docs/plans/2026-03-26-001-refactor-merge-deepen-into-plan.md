@@ -58,7 +58,7 @@ The ce:plan and deepen-plan skills form a sequential workflow where the user is 
 - **Resume mode fast path for re-deepening:** When ce:plan detects an existing complete plan and the user's request is specifically about deepening, it short-circuits to Phase 5.3 directly (skipping Phases 1-4). Rationale: re-running the full planning workflow to re-deepen would be 3-5x more expensive than the old standalone deepen-plan. The fast path preserves efficiency
 - **Pipeline mode behavior:** Deepening runs in pipeline/disable-model-invocation mode using the same gate logic (Standard/Deep AND high-risk or confidence gaps). Rationale: lfg/slfg step 3 already had equivalent conditional logic; this preserves the same behavior internally
 - **Remove ultrathink auto-deepen clause:** Line 625 of ce:plan currently auto-runs deepen-plan on ultrathink. This becomes redundant since every plan run now auto-evaluates deepening. Removing it prevents double-deepening
-- **Scratch space:** Artifact-backed research uses `.context/compound-engineering/ce-plan/deepen/` with per-run subdirectory. Rationale: follows 01_Personal_Os/11_AGENTS.md namespace convention for ce-plan
+- **Scratch space:** Artifact-backed research uses `.context/compound-engineering/ce-plan/deepen/` with per-run subdirectory. Rationale: follows AGENTS.md namespace convention for ce-plan
 
 ## Open Questions
 
@@ -207,7 +207,7 @@ The ce:plan and deepen-plan skills form a sequential workflow where the user is 
 
 - [ ] **Unit 4: Update peripheral references**
 
-  **Goal:** Remove stale deepen-plan references from README, 01_Personal_Os/11_AGENTS.md, learnings-researcher, and document-review
+  **Goal:** Remove stale deepen-plan references from README, AGENTS.md, learnings-researcher, and document-review
 
   **Requirements:** R6, R7
 
@@ -215,8 +215,8 @@ The ce:plan and deepen-plan skills form a sequential workflow where the user is 
 
   **Files:**
   - Modify: `plugins/compound-engineering/README.md`
-  - Modify: `plugins/compound-engineering/01_Personal_Os/11_AGENTS.md`
-  - Modify: `plugins/compound-engineering/agents/research/learnings-researcher.md`
+  - Modify: `plugins/compound-engineering/AGENTS.md`
+  - Modify: `plugins/compound-engineering/agents/research/ce-learnings-researcher.agent.md`
   - Modify: `plugins/compound-engineering/skills/document-review/SKILL.md`
 
   **Approach:**
@@ -226,7 +226,7 @@ The ce:plan and deepen-plan skills form a sequential workflow where the user is 
   - Update the `/ce:plan` description to mention that it includes automatic confidence checking
   - Verify skill count in the Components table still says "40+" (removing 1 skill, adding 0)
 
-  *01_Personal_Os/11_AGENTS.md:*
+  *AGENTS.md:*
   - Line 116: Replace `/deepen-plan` example with another valid skill (e.g., `/ce:compound` or `/changelog`)
 
   *learnings-researcher.md:*
@@ -308,7 +308,7 @@ The ce:plan and deepen-plan skills form a sequential workflow where the user is 
 - **Error propagation:** If agent dispatch fails during Phase 5.3, the fallback from deepen-plan Phase 4.2 is preserved: re-run the agent or fall back to direct-mode reasoning. The plan is still written to disk even if deepening partially fails
 - **State lifecycle risks:** The `deepened:` frontmatter field continues to be set only when substantive changes are made. Plans that were deepened by the old standalone deepen-plan retain their `deepened:` date — no migration needed
 - **API surface parity:** The converter tests use deepen-plan as sample data for slash-command remapping. After updating to a different skill name, all target converters (Codex, Droid, Copilot, Pi) continue to validate the same remapping behavior
-- **Integration coverage:** The atomic update of all callers (lfg, slfg, ce:plan, README, 01_Personal_Os/11_AGENTS.md, learnings-researcher, document-review) in one PR prevents a broken intermediate state (per learnings from beta-promotion-orchestration-contract.md)
+- **Integration coverage:** The atomic update of all callers (lfg, slfg, ce:plan, README, AGENTS.md, learnings-researcher, document-review) in one PR prevents a broken intermediate state (per learnings from beta-promotion-orchestration-contract.md)
 
 ## Risks & Dependencies
 

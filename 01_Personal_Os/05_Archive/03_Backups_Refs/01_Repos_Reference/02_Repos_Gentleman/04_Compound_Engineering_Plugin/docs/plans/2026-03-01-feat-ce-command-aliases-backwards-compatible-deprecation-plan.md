@@ -23,13 +23,13 @@ The `ce:` prefix is shorter, more memorable, and unambiguously identifies these 
 
 Create a `commands/ce/` directory with five new command files. Each file gets the full implementation content from the current `workflows:*` counterpart, with the `name:` frontmatter updated to the new name.
 
-| New Command                                | Source Content                                                |
-|-------------------------------------------|--------------------------------------------------------------|
-| `ce:plan`                                  | `commands/workflows/plan.md`                                  |
-| `ce:work`                                  | `commands/workflows/work.md`                                  |
-| `ce:review`                                | `commands/workflows/review.md`                                |
-| `ce:brainstorm`                            | `commands/workflows/brainstorm.md`                            |
-| `ce:compound`                              | `commands/workflows/compound.md`                              |
+| New Command | Source Content |
+|-------------|---------------|
+| `ce:plan` | `commands/workflows/plan.md` |
+| `ce:work` | `commands/workflows/work.md` |
+| `ce:review` | `commands/workflows/review.md` |
+| `ce:brainstorm` | `commands/workflows/brainstorm.md` |
+| `ce:compound` | `commands/workflows/compound.md` |
 
 ### 2. Convert `workflows:*` to Deprecation Wrappers (Backwards Compatibility)
 
@@ -75,9 +75,9 @@ The grep reveals `workflows:*` is referenced in **many more places** than just `
 **Skills (update to new names):**
 - `skills/document-review/SKILL.md` — references `/workflows:brainstorm`, `/workflows:plan`
 - `skills/git-worktree/SKILL.md` — references `/workflows:review`, `/workflows:work` extensively
-- `skills/setup/SKILL.md` — references `/workflows:review`, `/workflows:work`
+- `skills/ce-setup/SKILL.md` — references `/workflows:review`, `/workflows:work`
 - `skills/brainstorming/SKILL.md` — references `/workflows:plan` multiple times
-- `skills/file-03_Tasks/SKILL.md` — references `/workflows:review`
+- `skills/file-todos/SKILL.md` — references `/workflows:review`
 
 **Other commands (update to new names):**
 - `commands/test-xcode.md` — references `/workflows:review`
@@ -209,9 +209,9 @@ NOTE: /workflows:<command> is deprecated. Please use /ce:<command> instead. This
 **Skills:**
 - `skills/document-review/SKILL.md`
 - `skills/git-worktree/SKILL.md`
-- `skills/setup/SKILL.md`
+- `skills/ce-setup/SKILL.md`
 - `skills/brainstorming/SKILL.md`
-- `skills/file-03_Tasks/SKILL.md`
+- `skills/file-todos/SKILL.md`
 
 ### Step 4: Update documentation
 

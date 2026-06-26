@@ -32,7 +32,7 @@ https://docs.claude.com/en/docs/claude-code/plugin-marketplaces
 ## Skills (`skills/<name>/SKILL.md`)
 
 - Skills are directories containing `SKILL.md` (plus optional support files). Skills and commands are auto-discovered when the plugin is installed. citeturn2view7
-- Skills can be invoked with `/<skill-name>` and are stored in `~/01_Core/03_Skills` or `01_Core/03_Skills` (project-level); plugins can also ship skills. citeturn12view0
+- Skills can be invoked with `/<skill-name>` and are stored in `~/.claude/skills` or `.claude/skills` (project-level); plugins can also ship skills. citeturn12view0
 - Skill frontmatter examples include `name`, `description`, and optional `allowed-tools`. citeturn12view0
 
 ## Agents (`agents/*.md`)

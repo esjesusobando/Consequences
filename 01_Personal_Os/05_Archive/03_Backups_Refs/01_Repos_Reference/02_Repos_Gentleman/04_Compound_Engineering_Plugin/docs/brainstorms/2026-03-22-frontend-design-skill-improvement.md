@@ -117,10 +117,10 @@ This is intentionally minimal:
 
 ## Files Changed
 
-| File                                                                                      | Change                                             |
-|------------------------------------------------------------------------------------------|---------------------------------------------------|
-| `plugins/compound-engineering/skills/frontend-design/SKILL.md`                            | Full rewrite                                       |
-| `plugins/compound-engineering/skills/ce-work-beta/SKILL.md`                               | Add ~5 lines to Phase 2                            |
+| File | Change |
+|------|--------|
+| `plugins/compound-engineering/skills/frontend-design/SKILL.md` | Full rewrite |
+| `plugins/compound-engineering/skills/ce-work-beta/SKILL.md` | Add ~5 lines to Phase 2 |
 
 ## Skill Description (Optimized)
 
@@ -179,7 +179,7 @@ Visual Verification
 
 ## Cross-Agent Compatibility
 
-Per 01_Personal_Os/11_AGENTS.md rules:
+Per AGENTS.md rules:
 - Describe tools by capability class with platform hints, not Claude-specific names alone
 - Use platform-agnostic question patterns (name known equivalents + fallback)
 - No shell recipes for routine exploration

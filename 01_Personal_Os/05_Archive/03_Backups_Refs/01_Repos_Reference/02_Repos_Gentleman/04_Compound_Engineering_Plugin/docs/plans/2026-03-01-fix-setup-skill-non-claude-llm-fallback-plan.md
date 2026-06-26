@@ -38,15 +38,15 @@ The `setup` skill uses `AskUserQuestion` at 5 decision points. On non-Claude pla
 1. **Tool-not-found error** — LLM tries to call `AskUserQuestion` as a function; platform returns an error. Setup halts.
 2. **Silent skip** — LLM reads `AskUserQuestion` as prose, ignores the decision gate, auto-configures. User never consulted. This is worse — produces a `compound-engineering.local.md` the user never approved.
 
-`plugins/compound-engineering/skills/setup/SKILL.md` has 5 `AskUserQuestion` blocks:
+`plugins/compound-engineering/skills/ce-setup/SKILL.md` has 5 `AskUserQuestion` blocks:
 
-| Line                              | Decision Point                                                                |
-|----------------------------------|------------------------------------------------------------------------------|
-| 13                                | Check existing config: Reconfigure / View / Cancel                            |
-| 44                                | Stack detection: Auto-configure / Customize                                   |
-| 67                                | Stack override (multi-option)                                                 |
-| 85                                | Focus areas (multiSelect)                                                     |
-| 104                               | Review depth: Thorough / Fast / Comprehensive                                 |
+| Line | Decision Point |
+|------|----------------|
+| 13 | Check existing config: Reconfigure / View / Cancel |
+| 44 | Stack detection: Auto-configure / Customize |
+| 67 | Stack override (multi-option) |
+| 85 | Focus areas (multiSelect) |
+| 104 | Review depth: Thorough / Fast / Comprehensive |
 
 `plugins/compound-engineering/skills/create-agent-skills/workflows/create-new-skill.md` lines 22 and 45 also use `AskUserQuestion`.
 
@@ -70,7 +70,7 @@ If not, present each question as a numbered list and wait for a reply before pro
 
 **Why 4 lines, not 16:** LLMs know what a numbered list is — no example blockquote needed. The branching condition is tool availability, not platform identity — no platform name list needed (YAGNI: new platforms will be added and lists go stale). State the "never skip" rule once here; don't repeat it in `codex-agents.ts`.
 
-**Why this works:** The skill body IS read by the LLM on all platforms when `/setup` is invoked. The agent follows prose instructions regardless of tool availability. This is the same pattern `brainstorming/SKILL.md` uses — it avoids `AskUserQuestion` entirely and uses inline numbered lists — the gold standard cross-platform approach.
+**Why this works:** The skill body IS read by the LLM on all platforms when `/ce-setup` is invoked. The agent follows prose instructions regardless of tool availability. This is the same pattern `brainstorming/SKILL.md` uses — it avoids `AskUserQuestion` entirely and uses inline numbered lists — the gold standard cross-platform approach.
 
 ### 2. Apply the same preamble to `create-new-skill.md`
 
@@ -78,7 +78,7 @@ If not, present each question as a numbered list and wait for a reply before pro
 
 ### 3. Strengthen `codex-agents.ts` AskUserQuestion mapping
 
-This change does NOT fix skill execution (skills bypass the converter pipeline). It improves the 01_Personal_Os/11_AGENTS.md guidance for Codex command/agent contexts.
+This change does NOT fix skill execution (skills bypass the converter pipeline). It improves the AGENTS.md guidance for Codex command/agent contexts.
 
 Replace (`src/utils/codex-agents.ts` line 21):
 ```
@@ -118,7 +118,7 @@ Add to the "Skill Compliance Checklist" in `plugins/compound-engineering/CLAUDE.
 
 ## Files
 
-- `plugins/compound-engineering/skills/setup/SKILL.md` — Add 4-line preamble after line 8
+- `plugins/compound-engineering/skills/ce-setup/SKILL.md` — Add 4-line preamble after line 8
 - `plugins/compound-engineering/skills/create-agent-skills/workflows/create-new-skill.md` — Add same preamble at top
 - `src/utils/codex-agents.ts` — Strengthen AskUserQuestion mapping (line 21)
 - `plugins/compound-engineering/CLAUDE.md` — Add AskUserQuestion policy to skill compliance checklist
@@ -131,7 +131,7 @@ Add to the "Skill Compliance Checklist" in `plugins/compound-engineering/CLAUDE.
 ## Sources & References
 
 - Issue: [#204](https://github.com/EveryInc/compound-engineering-plugin/issues/204)
-- `plugins/compound-engineering/skills/setup/SKILL.md:13,44,67,85,104`
+- `plugins/compound-engineering/skills/ce-setup/SKILL.md`
 - `plugins/compound-engineering/skills/create-agent-skills/workflows/create-new-skill.md:22,45`
 - `src/utils/codex-agents.ts:21`
 - `src/converters/claude-to-pi.ts:106` — Pi converter (reference pattern)

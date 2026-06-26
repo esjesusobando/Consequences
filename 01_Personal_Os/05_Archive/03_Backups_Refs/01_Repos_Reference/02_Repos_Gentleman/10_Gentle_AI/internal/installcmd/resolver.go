@@ -10,6 +10,7 @@ import (
 
 	"github.com/gentleman-programming/gentle-ai/internal/model"
 	"github.com/gentleman-programming/gentle-ai/internal/system"
+	"github.com/gentleman-programming/gentle-ai/internal/versions"
 )
 
 // cmdLookPath, osStat, osGetenv, and cmdGoVersion are package-level vars for testability.
@@ -45,6 +46,8 @@ func (profileResolver) ResolveAgentInstall(profile system.PlatformProfile, agent
 		return resolveOpenCodeInstall(profile)
 	case model.AgentKilocode:
 		return resolveKilocodeInstall(profile), nil
+	case model.AgentKimi:
+		return resolveKimiInstall(profile)
 	default:
 		return nil, fmt.Errorf("install command is not supported for agent %q", agent)
 	}
@@ -53,21 +56,134 @@ func (profileResolver) ResolveAgentInstall(profile system.PlatformProfile, agent
 // resolveClaudeCodeInstall returns the npm install command sequence for Claude Code.
 // On Linux with system npm, sudo is required. With nvm/fnm/volta, it is not.
 // On Windows and macOS, sudo is never needed.
+//
+// --ignore-scripts blocks postinstall hooks, the primary supply-chain attack vector
+// for npm packages. The version is pinned to avoid pulling a tampered "latest" tag.
 func resolveClaudeCodeInstall(profile system.PlatformProfile) CommandSequence {
+	pkg := "@anthropic-ai/claude-code@" + versions.ClaudeCode
 	if profile.OS == "linux" && !profile.NpmWritable {
-		return CommandSequence{{"sudo", "npm", "install", "-g", "@anthropic-ai/claude-code"}}
+		return CommandSequence{{"sudo", "npm", "install", "-g", "--ignore-scripts", pkg}}
 	}
-	return CommandSequence{{"npm", "install", "-g", "@anthropic-ai/claude-code"}}
+	return CommandSequence{{"npm", "install", "-g", "--ignore-scripts", pkg}}
 }
 
 // resolveKilocodeInstall returns the npm install command sequence for Kilocode.
 // On Linux with system npm, sudo is required. With nvm/fnm/volta, it is not.
 // On Windows and macOS, sudo is never needed.
 func resolveKilocodeInstall(profile system.PlatformProfile) CommandSequence {
+	pkg := "@kilocode/cli@" + versions.Kilocode
 	if profile.OS == "linux" && !profile.NpmWritable {
-		return CommandSequence{{"sudo", "npm", "install", "-g", "@kilocode/cli"}}
+		return CommandSequence{{"sudo", "npm", "install", "-g", "--ignore-scripts", pkg}}
 	}
-	return CommandSequence{{"npm", "install", "-g", "@kilocode/cli"}}
+	return CommandSequence{{"npm", "install", "-g", "--ignore-scripts", pkg}}
+}
+
+// resolveKimiInstall returns the official Kimi install command sequence.
+// To avoid the security risks of pipe-to-shell patterns (curl | bash),
+// we execute the underlying command that the scripts alias: `uv tool install`.
+func resolveKimiInstall(profile system.PlatformProfile) (CommandSequence, error) {
+	// Kimi CLI is a python-based tool. We use Astral's `uv` as our deterministic
+	// prerequisite manager to ensure secure and isolated installs.
+	if !profile.Supported {
+		return nil, fmt.Errorf("Kimi is not supported on this platform (%s/%s)", profile.OS, profile.LinuxDistro)
+	}
+
+	// We explicitly request python 3.13 as strictly defined by Kimi upstream.
+	return CommandSequence{{"uv", "tool", "install", "--python", "3.13", "kimi-cli"}}, nil
+}
+
+// npmBasedAgents is the set of agents whose auto-install runs npm commands.
+// When any of these agents is selected, npm (and therefore Node.js) must be
+// present before the pipeline reaches the agent install step.
+//
+// AgentPi is included because InstallCommand always runs engramInitCommand(),
+// which executes either `pnpm dlx` or `npm exec` (both require Node.js). The
+// npm-presence check is a sound proxy for Node.js availability.
+var npmBasedAgents = map[model.AgentID]struct{}{
+	model.AgentClaudeCode: {},
+	model.AgentOpenCode:   {},
+	model.AgentKilocode:   {},
+	model.AgentGeminiCLI:  {},
+	model.AgentCodex:      {},
+	model.AgentQwenCode:   {},
+	model.AgentPi:         {},
+}
+
+// ValidateAgentInstallPreflight validates agent-specific prerequisites that must
+// exist before running installation commands.
+func ValidateAgentInstallPreflight(profile system.PlatformProfile, agent model.AgentID) error {
+	if _, ok := npmBasedAgents[agent]; ok {
+		if err := validateNpmInstallPreflight(profile); err != nil {
+			return err
+		}
+	}
+	switch agent {
+	case model.AgentKimi:
+		return validateKimiInstallPreflight(profile)
+	case model.AgentPi:
+		return validatePiInstallPreflight()
+	default:
+		return nil
+	}
+}
+
+func validatePiInstallPreflight() error {
+	if _, err := cmdLookPath("pi"); err != nil {
+		return fmt.Errorf("Pi requires the `pi` executable in PATH before installing Gentle AI Pi packages")
+	}
+
+	return nil
+}
+
+// validateNpmInstallPreflight ensures npm (and therefore Node.js) is available
+// before attempting any npm-based agent install. Called for all agents in
+// npmBasedAgents so the user gets a clear, actionable error instead of a
+// cryptic "exec: npm: executable file not found in PATH" mid-pipeline.
+func validateNpmInstallPreflight(profile system.PlatformProfile) error {
+	if _, err := cmdLookPath("npm"); err != nil {
+		hint := system.InstallHintForDep("node", profile)
+		return fmt.Errorf(
+			"Node.js / npm is required but `npm` was not found in PATH.\n"+
+				"Install Node.js (npm is included) and retry:\n"+
+				"  %s",
+			hint,
+		)
+	}
+	return nil
+}
+
+func validateKimiInstallPreflight(profile system.PlatformProfile) error {
+	if !profile.Supported {
+		return fmt.Errorf("Kimi is not supported on this platform (%s/%s)", profile.OS, profile.LinuxDistro)
+	}
+
+	if _, err := cmdLookPath("uv"); err != nil {
+		return fmt.Errorf(
+			"Kimi requires Astral uv, but `uv` was not found in PATH.\n"+
+				"Install uv and retry:\n"+
+				"  %s",
+			uvInstallHint(profile),
+		)
+	}
+
+	return nil
+}
+
+func uvInstallHint(profile system.PlatformProfile) string {
+	switch profile.PackageManager {
+	case "brew":
+		return "brew install uv"
+	case "apt":
+		return "sudo apt-get install -y uv (or see https://docs.astral.sh/uv/getting-started/installation/)"
+	case "pacman":
+		return "sudo pacman -S --noconfirm uv"
+	case "dnf":
+		return "sudo dnf install -y uv"
+	case "winget":
+		return "winget install --id astral-sh.uv -e --accept-source-agreements --accept-package-agreements"
+	default:
+		return "https://docs.astral.sh/uv/getting-started/installation/"
+	}
 }
 
 func (profileResolver) ResolveComponentInstall(profile system.PlatformProfile, component model.ComponentID) (CommandSequence, error) {
@@ -118,13 +234,14 @@ func resolveOpenCodeInstall(profile system.PlatformProfile) (CommandSequence, er
 			{"brew", "install", "anomalyco/tap/opencode"},
 		}, nil
 	case "apt", "pacman", "dnf":
+		pkg := "opencode-ai@" + versions.OpenCode
 		if profile.NpmWritable {
-			return CommandSequence{{"npm", "install", "-g", "opencode-ai"}}, nil
+			return CommandSequence{{"npm", "install", "-g", "--ignore-scripts", pkg}}, nil
 		}
-		return CommandSequence{{"sudo", "npm", "install", "-g", "opencode-ai"}}, nil
+		return CommandSequence{{"sudo", "npm", "install", "-g", "--ignore-scripts", pkg}}, nil
 	case "winget":
 		// On Windows, npm global installs do not require sudo.
-		return CommandSequence{{"npm", "install", "-g", "opencode-ai"}}, nil
+		return CommandSequence{{"npm", "install", "-g", "--ignore-scripts", "opencode-ai@" + versions.OpenCode}}, nil
 	default:
 		return nil, fmt.Errorf(
 			"unsupported platform for opencode: os=%q distro=%q pm=%q",

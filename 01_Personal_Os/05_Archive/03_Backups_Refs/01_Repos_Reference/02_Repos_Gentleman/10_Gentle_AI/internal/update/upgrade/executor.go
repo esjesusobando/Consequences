@@ -12,6 +12,7 @@ import (
 	"context"
 	"fmt"
 	"io"
+	"io/fs"
 	"log"
 	"os"
 	"os/exec"
@@ -20,8 +21,13 @@ import (
 	"time"
 
 	"github.com/gentleman-programming/gentle-ai/internal/agents"
+	"github.com/gentleman-programming/gentle-ai/internal/assets"
 	"github.com/gentleman-programming/gentle-ai/internal/backup"
 	"github.com/gentleman-programming/gentle-ai/internal/components/gga"
+	"github.com/gentleman-programming/gentle-ai/internal/components/sdd"
+	"github.com/gentleman-programming/gentle-ai/internal/components/skills"
+	"github.com/gentleman-programming/gentle-ai/internal/model"
+	"github.com/gentleman-programming/gentle-ai/internal/state"
 	"github.com/gentleman-programming/gentle-ai/internal/system"
 	"github.com/gentleman-programming/gentle-ai/internal/update"
 )
@@ -44,6 +50,22 @@ var snapshotCreator = func(snapshotDir string, paths []string) (backup.Manifest,
 // Default "dev" matches the ldflags default in app.Version.
 var AppVersion = "dev"
 
+// ExecuteOptions controls optional upgrade executor behavior.
+//
+// Progress is for user-visible spinner/status output. BackupDiagnostics is for
+// verbose backup walk diagnostics; nil keeps backup enumeration silent, which
+// prevents background TUI jobs from writing over the Bubble Tea screen.
+//
+// SkipBackup, when true, skips both creating a pre-upgrade backup snapshot
+// AND retention pruning of the backup directory. Use this when the user
+// explicitly opts out of backup behavior for a single run (CLI: --no-backup).
+// The default (false) preserves the original safe-by-default behavior.
+type ExecuteOptions struct {
+	Progress          io.Writer
+	BackupDiagnostics io.Writer
+	SkipBackup        bool
+}
+
 // backupExcludeSubdirs lists subdirectory base names that should be skipped
 // when walking agent config root directories for backup. These directories
 // contain runtime state, caches, or session data that is not configuration
@@ -56,7 +78,8 @@ var AppVersion = "dev"
 // "plans") and could theoretically match legitimate config subdirectories in
 // future agent versions. This is an accepted tradeoff — the risk of hanging
 // the upgrade on multi-GB runtime dirs outweighs the risk of missing a
-// niche config subdir. Skipped directories are logged at debug level.
+// niche config subdir. Skipped directories can be written to an injected
+// diagnostic writer for auditability.
 //
 // Must not be mutated after init. Tests must not modify this map; use a local
 // copy or pass a separate map to enumerateFilesInDir instead.
@@ -89,54 +112,214 @@ var backupExcludeSubdirs = map[string]bool{
 	"conversations":               true, // Gemini conversation history
 	"context_state":               true, // Gemini context state
 	"html_artifacts":              true, // generated HTML artifacts
+	"tmp":                         true, // Antigravity temporary runtime artifacts
 }
 
-// configPathsForBackup returns the agent config file paths that the backup
-// snapshot must include before any upgrade execution.
+// configPathsForBackup returns the explicit Gentle AI-managed file paths that
+// the backup snapshot must include before any upgrade execution.
 //
-// Roots are derived from two sources:
-//  1. Canonical managed agent roots — via agents.ConfigRootsForBackup using the
-//     default registry. This automatically covers all registered adapters and
-//     picks up new agents without manual list maintenance.
-//  2. Approved GGA extras — gga.ConfigPath and gga.RuntimeLibDir are not adapter-
-//     managed but must still be backed up. They are appended separately and do
-//     not affect the canonical managed set used by sync.
+// This is intentionally NOT a recursive backup of agent config directories.
+// Upgrade backups are rollback artifacts for files Gentle AI may create or
+// modify, not general-purpose backups of conversations, sessions, caches,
+// sockets, package installs, or other runtime state.
 //
-// Only files (not directories) are included — Snapshotter.Create rejects dirs.
-// Non-existent directories are silently skipped.
-// Runtime/cache subdirectories listed in backupExcludeSubdirs are skipped to
-// prevent the backup from walking gigabytes of non-config data.
-func configPathsForBackup(homeDir string) []string {
+// Agent scope: when state.json exists with a non-empty InstalledAgents list,
+// only those agents' config paths are backed up — this is the canonical source
+// of truth established at install time. Filesystem detection is used only as a
+// fallback for fresh installs (no state.json yet). This prevents snapshot bloat
+// from agent config dirs that the user never actually installed via gentle-ai
+// (issue #354: snapshots could reach ~25 GiB from unmanaged config dirs).
+func configPathsForBackup(homeDir string, diagnostics ...io.Writer) []string {
+	dw := firstWriter(diagnostics...)
 	reg, err := agents.NewDefaultRegistry()
 	if err != nil {
-		// Programming error — registry construction failed. Fall back gracefully.
-		reg = nil
+		writeBackupDiagnostic(dw, "backup: default agent registry unavailable: %v", err)
+		return managedGlobalBackupPaths(homeDir)
 	}
 
-	// Collect config root dirs: canonical agent roots first.
-	var configDirs []string
-	if reg != nil {
-		configDirs = append(configDirs, agents.ConfigRootsForBackup(reg, homeDir)...)
+	// Determine the canonical agent set to back up.
+	// Priority: persisted state.json InstalledAgents > filesystem detection.
+	var managedAgentIDs []model.AgentID
+	if s, stateErr := state.Read(homeDir); stateErr == nil && len(s.InstalledAgents) > 0 {
+		managedAgentIDs = make([]model.AgentID, 0, len(s.InstalledAgents))
+		for _, id := range s.InstalledAgents {
+			managedAgentIDs = append(managedAgentIDs, model.AgentID(id))
+		}
+		writeBackupDiagnostic(dw, "backup: using state.json agent list (%d agents) as backup scope", len(managedAgentIDs))
+	} else {
+		// Fallback: filesystem detection (first-time install or missing state.json).
+		for _, installed := range agents.DiscoverInstalled(reg, homeDir) {
+			managedAgentIDs = append(managedAgentIDs, installed.ID)
+		}
+		writeBackupDiagnostic(dw, "backup: state.json unavailable, falling back to filesystem detection (%d agents)", len(managedAgentIDs))
 	}
 
-	// Approved GGA extras — outside the canonical managed agent set.
-	// gga.ConfigPath returns the config *file* path; its parent dir is the root to walk.
-	ggaConfigDir := filepath.Dir(gga.ConfigPath(homeDir))
-	ggaLibDir := gga.RuntimeLibDir(homeDir)
-	configDirs = append(configDirs, ggaConfigDir, ggaLibDir)
+	paths := make(map[string]struct{})
+	addPath := func(path string) {
+		if strings.TrimSpace(path) == "" {
+			return
+		}
+		paths[filepath.Clean(path)] = struct{}{}
+	}
+	addPaths := func(values ...string) {
+		for _, value := range values {
+			addPath(value)
+		}
+	}
 
-	// Enumerate all regular files under each root dir, skipping non-config subdirs.
-	paths := make([]string, 0)
-	for _, dir := range configDirs {
-		files, err := enumerateFilesInDir(dir, backupExcludeSubdirs)
-		if err != nil {
-			// Directory doesn't exist or can't be read — silently skip.
+	for _, agentID := range managedAgentIDs {
+		adapter, ok := reg.Get(agentID)
+		if !ok {
 			continue
 		}
-		paths = append(paths, files...)
+		for _, path := range managedAgentBackupPaths(homeDir, adapter, dw) {
+			addPath(path)
+		}
+	}
+
+	addPaths(managedGlobalBackupPaths(homeDir)...)
+
+	out := make([]string, 0, len(paths))
+	for path := range paths {
+		out = append(out, path)
+	}
+	return out
+}
+
+func managedAgentBackupPaths(homeDir string, adapter agents.Adapter, diagnostics io.Writer) []string {
+	paths := make([]string, 0)
+	add := func(values ...string) {
+		for _, value := range values {
+			if strings.TrimSpace(value) != "" {
+				paths = append(paths, value)
+			}
+		}
+	}
+
+	if adapter.SupportsSystemPrompt() {
+		add(adapter.SystemPromptFile(homeDir))
+	}
+	add(adapter.SettingsPath(homeDir))
+
+	if adapter.SystemPromptStrategy() == model.StrategyJinjaModules {
+		configDir := adapter.GlobalConfigDir(homeDir)
+		add(
+			filepath.Join(configDir, "persona.md"),
+			filepath.Join(configDir, "output-style.md"),
+			filepath.Join(configDir, "sdd-orchestrator.md"),
+			filepath.Join(configDir, "strict-tdd-mode.md"),
+		)
+	}
+
+	if adapter.SupportsMCP() {
+		add(adapter.MCPConfigPath(homeDir, "engram"), adapter.MCPConfigPath(homeDir, "context7"))
+	}
+
+	if adapter.SupportsOutputStyles() {
+		add(filepath.Join(adapter.OutputStyleDir(homeDir), "gentleman.md"))
+	}
+
+	if adapter.SupportsSlashCommands() {
+		for _, command := range sdd.OpenCodeCommands() {
+			add(filepath.Join(adapter.CommandsDir(homeDir), command.Name+".md"))
+		}
+	}
+
+	if adapter.SupportsSubAgents() {
+		for _, name := range embeddedFileNames(adapter.EmbeddedSubAgentsDir(), diagnostics) {
+			add(filepath.Join(adapter.SubAgentsDir(homeDir), name))
+		}
+	}
+
+	if adapter.SupportsSkills() {
+		add(managedSkillBackupPaths(homeDir, adapter, diagnostics)...)
+	}
+
+	switch adapter.Agent() {
+	case model.AgentClaudeCode:
+		add(filepath.Join(homeDir, ".claude", "themes", "gentleman.json"))
+	case model.AgentOpenCode:
+		add(
+			filepath.Join(homeDir, ".config", "opencode", "plugins", "background-agents.ts"),
+			filepath.Join(homeDir, ".config", "opencode", "tui-plugins", "gentle-logo.tsx"),
+			filepath.Join(homeDir, ".config", "opencode", "tui.json"),
+		)
+		for _, phase := range sdd.SharedPromptPhases() {
+			add(filepath.Join(sdd.SharedPromptDir(homeDir), phase+".md"))
+		}
 	}
 
 	return paths
+}
+
+func managedGlobalBackupPaths(homeDir string) []string {
+	return []string{
+		state.Path(homeDir),
+		gga.ConfigPath(homeDir),
+		gga.AgentsTemplatePath(homeDir),
+		gga.RuntimePRModePath(homeDir),
+		gga.RuntimePS1Path(homeDir),
+	}
+}
+
+func managedSkillBackupPaths(homeDir string, adapter agents.Adapter, diagnostics io.Writer) []string {
+	skillDir := adapter.SkillsDir(homeDir)
+	if skillDir == "" {
+		return nil
+	}
+
+	paths := make([]string, 0)
+	for _, id := range skills.AllSkillIDs() {
+		embedDir := filepath.ToSlash(filepath.Join("skills", string(id)))
+		walkEmbeddedFiles(embedDir, diagnostics, func(relPath string) {
+			paths = append(paths, filepath.Join(skillDir, string(id), relPath))
+		})
+	}
+
+	for _, relPath := range []string{
+		"_shared/persistence-contract.md",
+		"_shared/engram-convention.md",
+		"_shared/openspec-convention.md",
+		"_shared/sdd-phase-common.md",
+		"_shared/sdd-status-contract.md",
+		"_shared/skill-resolver.md",
+	} {
+		paths = append(paths, filepath.Join(skillDir, relPath))
+	}
+
+	return paths
+}
+
+func embeddedFileNames(embedDir string, diagnostics io.Writer) []string {
+	var names []string
+	walkEmbeddedFiles(embedDir, diagnostics, func(relPath string) {
+		names = append(names, relPath)
+	})
+	return names
+}
+
+func walkEmbeddedFiles(embedDir string, diagnostics io.Writer, visit func(relPath string)) {
+	if strings.TrimSpace(embedDir) == "" {
+		return
+	}
+	cleanEmbedDir := filepath.ToSlash(filepath.Clean(embedDir))
+	err := fs.WalkDir(assets.FS, cleanEmbedDir, func(assetPath string, d fs.DirEntry, err error) error {
+		if err != nil {
+			return err
+		}
+		if d.IsDir() {
+			return nil
+		}
+		relPath, relErr := filepath.Rel(filepath.FromSlash(cleanEmbedDir), filepath.FromSlash(assetPath))
+		if relErr != nil {
+			return relErr
+		}
+		visit(relPath)
+		return nil
+	})
+	if err != nil {
+		writeBackupDiagnostic(diagnostics, "backup: skipping embedded path %s: %v", cleanEmbedDir, err)
+	}
 }
 
 // enumerateFilesInDir returns the paths of all regular files (recursively) in dir.
@@ -147,7 +330,8 @@ func configPathsForBackup(homeDir string) []string {
 // filepath.SkipDir. The names in this set are chosen to be unambiguously
 // runtime/cache directories (e.g. "projects", "browser_recordings", "node_modules")
 // that would never be confused with legitimate config directories.
-// Skipped directories are logged at debug level for auditability.
+// Skipped directories can be written to an injected diagnostic writer for
+// auditability. By default, enumeration is silent so TUI callers are safe.
 //
 // Symlink handling:
 //   - Symlinks to directories (including Windows junctions/reparse points) are
@@ -157,15 +341,16 @@ func configPathsForBackup(homeDir string) []string {
 //   - Symlinks to regular files ARE included — this supports dotfile managers
 //     (stow, chezmoi, bare git) where config files like CLAUDE.md may be symlinks
 //     to files in a dotfiles repository.
-func enumerateFilesInDir(dir string, excludeDirNames map[string]bool) ([]string, error) {
+func enumerateFilesInDir(dir string, excludeDirNames map[string]bool, diagnostics ...io.Writer) ([]string, error) {
 	var files []string
 	cleanDir := filepath.Clean(dir)
+	dw := firstWriter(diagnostics...)
 
 	err := filepath.WalkDir(cleanDir, func(path string, d os.DirEntry, err error) error {
 		if err != nil {
 			// Log unreadable entries but don't abort the walk — partial backup
 			// is better than no backup.
-			log.Printf("backup: skipping unreadable path %s: %v", path, err)
+			writeBackupDiagnostic(dw, "backup: skipping unreadable path %s: %v", path, err)
 			return nil
 		}
 		// Symlink handling: skip directory symlinks, include file symlinks.
@@ -187,7 +372,7 @@ func enumerateFilesInDir(dir string, excludeDirNames map[string]bool) ([]string,
 		// Skip excluded directories at any depth. The root dir itself is never
 		// excluded (path == cleanDir on the first callback invocation).
 		if d.IsDir() && path != cleanDir && excludeDirNames[strings.ToLower(d.Name())] {
-			log.Printf("backup: excluding directory %s (matched exclude list)", path)
+			writeBackupDiagnostic(dw, "backup: excluding directory %s (matched exclude list)", path)
 			return filepath.SkipDir
 		}
 		if !d.IsDir() {
@@ -199,6 +384,22 @@ func enumerateFilesInDir(dir string, excludeDirNames map[string]bool) ([]string,
 	return files, err
 }
 
+func firstWriter(writers ...io.Writer) io.Writer {
+	for _, w := range writers {
+		if w != nil {
+			return w
+		}
+	}
+	return io.Discard
+}
+
+func writeBackupDiagnostic(w io.Writer, format string, args ...any) {
+	if w == nil || w == io.Discard {
+		return
+	}
+	_, _ = fmt.Fprintf(w, format+"\n", args...)
+}
+
 // Execute evaluates UpdateResults, snapshots config before execution, then runs
 // the appropriate upgrade strategy for each eligible tool.
 //
@@ -206,26 +407,33 @@ func enumerateFilesInDir(dir string, excludeDirNames map[string]bool) ([]string,
 //   - Status UpdateAvailable → attempt upgrade; report Succeeded/Failed/Skipped(manual)
 //   - Status DevBuild → report as UpgradeSkipped with ManualHint (dev/source build)
 //   - Status VersionUnknown → report as UpgradeSkipped with ManualHint (manual attention required)
+//   - Status RegisteredNotMaterialized → attempt OpenCode npm dependency installation/update
 //   - Status UpToDate, NotInstalled, CheckFailed → omitted from report
 //   - dryRun=true → no exec; eligible tools reported as UpgradeSkipped
 //
 // The backup snapshot is created before any exec call — this is the architectural
 // guarantee that config is safe even if an upgrade fails mid-way.
 func Execute(ctx context.Context, results []update.UpdateResult, profile system.PlatformProfile, homeDir string, dryRun bool, progress ...io.Writer) UpgradeReport {
-	// progress writer for real-time status output (optional, defaults to no-op).
-	var pw io.Writer = io.Discard
+	options := ExecuteOptions{}
 	if len(progress) > 0 && progress[0] != nil {
-		pw = progress[0]
+		options.Progress = progress[0]
 	}
-	// Separate tools into executable (UpdateAvailable), dev-build (DevBuild), and
-	// version-unknown tools. Non-actionable but user-visible states are included in
-	// the report as UpgradeSkipped so the upgrade flow never fails silently.
+	return ExecuteWithOptions(ctx, results, profile, homeDir, dryRun, options)
+}
+
+func ExecuteWithOptions(ctx context.Context, results []update.UpdateResult, profile system.PlatformProfile, homeDir string, dryRun bool, options ExecuteOptions) UpgradeReport {
+	// progress writer for real-time status output (optional, defaults to no-op).
+	pw := firstWriter(options.Progress)
+	// Separate tools into executable (UpdateAvailable and OpenCode registered-pending),
+	// dev-build (DevBuild), and version-unknown tools. Non-actionable but user-visible
+	// states are included in the report as UpgradeSkipped so the upgrade flow never
+	// fails silently.
 	var executable []update.UpdateResult
 	var devBuilds []update.UpdateResult
 	var versionUnknowns []update.UpdateResult
 	for _, r := range results {
 		switch r.Status {
-		case update.UpdateAvailable:
+		case update.UpdateAvailable, update.RegisteredNotMaterialized:
 			executable = append(executable, r)
 		case update.DevBuild:
 			devBuilds = append(devBuilds, r)
@@ -241,13 +449,15 @@ func Execute(ctx context.Context, results []update.UpdateResult, profile system.
 	}
 
 	// Create backup snapshot BEFORE any execution (only when there are executables).
+	// When SkipBackup is set the entire backup subsystem is bypassed for this run:
+	// no snapshot, no retention pruning, the backups directory is left untouched.
 	backupID := ""
 	backupWarning := ""
-	if !dryRun && len(executable) > 0 {
+	if !dryRun && len(executable) > 0 && !options.SkipBackup {
 		sp := NewSpinner(pw, "Creating pre-upgrade backup")
 		snapshotDir := filepath.Join(homeDir, ".gentle-ai", "backups",
 			fmt.Sprintf("upgrade-%s", time.Now().UTC().Format("20060102T150405Z")))
-		manifest, err := snapshotCreator(snapshotDir, configPathsForBackup(homeDir))
+		manifest, err := snapshotCreator(snapshotDir, configPathsForBackup(homeDir, options.BackupDiagnostics))
 		if err != nil {
 			sp.Finish(false)
 			backupWarning = fmt.Sprintf("pre-upgrade backup failed — upgrade will run without a backup: %s", err)
@@ -257,13 +467,23 @@ func Execute(ctx context.Context, results []update.UpdateResult, profile system.
 			manifest.CreatedByVersion = AppVersion
 			manifestPath := filepath.Join(snapshotDir, backup.ManifestFilename)
 			if wErr := backup.WriteManifest(manifestPath, manifest); wErr != nil {
-				log.Printf("backup: failed to write upgrade metadata to manifest: %v", wErr)
+				writeBackupDiagnostic(options.BackupDiagnostics, "backup: failed to write upgrade metadata to manifest: %v", wErr)
 				backupWarning = fmt.Sprintf("backup created but metadata update failed: %s", wErr)
 				sp.FinishSkipped()
 			} else {
 				sp.Finish(true)
 			}
 			backupID = manifest.ID
+		}
+
+		// Retention pruning: remove oldest unpinned backups beyond the limit.
+		// This runs whether or not the snapshot itself succeeded — when the
+		// snapshot fails due to disk pressure caused by prior accumulated
+		// backups, pruning is the recovery path. Non-fatal: a prune failure
+		// must not prevent the upgrade from completing.
+		backupRoot := filepath.Join(homeDir, ".gentle-ai", "backups")
+		if _, pruneErr := backup.Prune(backupRoot, backup.DefaultRetentionCount); pruneErr != nil {
+			log.Printf("backup: prune: %v", pruneErr)
 		}
 	}
 
@@ -301,6 +521,22 @@ func Execute(ctx context.Context, results []update.UpdateResult, profile system.
 		msg := fmt.Sprintf("Upgrading %s via %s (%s → %s)", r.Tool.Name, method, r.InstalledVersion, r.LatestVersion)
 		sp := NewSpinner(pw, msg)
 		toolResult := executeOne(ctx, r, profile, dryRun)
+
+		// Check if the upgrade succeeded but requires immediate exit (Windows self-replace).
+		// This must be handled BEFORE calling sp.Finish() so the spinner can terminate properly.
+		if toolResult.Status == UpgradeSucceeded && toolResult.ExitRequested {
+			// Finish the spinner with success before exiting.
+			sp.Finish(true)
+			toolResults = append(toolResults, toolResult)
+			return UpgradeReport{
+				BackupID:      backupID,
+				BackupWarning: backupWarning,
+				Results:       toolResults,
+				DryRun:        dryRun,
+				ExitRequested: true,
+			}
+		}
+
 		switch toolResult.Status {
 		case UpgradeSucceeded:
 			sp.Finish(true)
@@ -344,7 +580,7 @@ func executeOne(ctx context.Context, r update.UpdateResult, profile system.Platf
 		return base
 	}
 
-	err := runStrategy(ctx, r, profile)
+	exitReq, err := runStrategy(ctx, r, profile)
 	if err != nil {
 		// Distinguish manual fallback (informational skip) from real failures.
 		if hint, ok := AsManualFallback(err); ok {
@@ -357,16 +593,34 @@ func executeOne(ctx context.Context, r update.UpdateResult, profile system.Platf
 		}
 	} else {
 		base.Status = UpgradeSucceeded
+		base.ExitRequested = exitReq
 	}
 
 	return base
 }
 
 // effectiveMethod resolves the actual upgrade strategy for a tool on a given platform.
-// On brew-managed platforms, brew takes precedence over the tool's declared method.
+// Priority order matches the documented install hierarchy: plugin → brew → Windows installer → go-install → declared method.
+//
+//  1. OpenCode plugins are always handled by their own method — never overridden.
+//  2. Brew-managed platforms always use brew regardless of the tool's declared method.
+//  3. gentle-ai on Windows uses the installer so the running binary can exit before replacement.
+//  4. When Go is available on PATH and the tool has a GoImportPath, go-install is
+//     preferred over a direct binary download.
+//  5. Otherwise the tool's declared InstallMethod is used as-is.
 func effectiveMethod(tool update.ToolInfo, profile system.PlatformProfile) update.InstallMethod {
+	if tool.InstallMethod == update.InstallOpenCodePlugin {
+		return update.InstallOpenCodePlugin
+	}
 	if profile.PackageManager == "brew" {
 		return update.InstallBrew
+	}
+	// Use installer method for gentle-ai on Windows (launches PowerShell installer).
+	if profile.OS == "windows" && tool.Name == "gentle-ai" {
+		return update.InstallInstaller
+	}
+	if profile.GoAvailable && tool.GoImportPath != "" {
+		return update.InstallGoInstall
 	}
 	return tool.InstallMethod
 }

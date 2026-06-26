@@ -15,18 +15,28 @@ go run ./cmd/gentle-ai install [flags]
 - `--skill`, `--skills`: comma-separated and repeatable.
 - `--persona`: explicit persona id.
 - `--preset`: explicit preset id.
+- `--sdd-mode`: `single` or `multi`.
+- `--scope`: `global` (default, writes to each selected agent's global config directory) or `workspace` (writes agent-scoped files to the current project root `./`).
 - `--dry-run`: render plan without executing.
+
+## Environment variables
+
+| Variable | Values | Description |
+|----------|--------|-------------|
+| `GENTLE_AI_INSTALL_SCOPE` | `global` \| `workspace` | Sets the install scope without a flag. Useful in CI. Equivalent to `--scope`. Default: `global`. |
+
+`workspace` scope is not Claude-only: it applies to the selected agents' agent-scoped files such as system prompts, skills, SDD agents, and persona files. Global-only integrations, like package installs or agent settings that must live in the tool's global config, remain global.
 
 ## Platform behavior
 
 The installer detects the platform automatically at runtime — there is no flag to override platform selection. The detected platform profile determines which package manager is used for install commands:
 
-| Platform                                    | Package manager                          | Example install command                                        |
-|--------------------------------------------|-----------------------------------------|---------------------------------------------------------------|
-| macOS                                       | `brew`                                   | `brew install anomalyco/tap/opencode`                          |
-| Ubuntu/Debian                               | `apt`                                    | `sudo npm install -g opencode-ai`                              |
-| Arch                                        | `pacman`                                 | `sudo npm install -g opencode-ai`                              |
-| Fedora/RHEL family                          | `dnf`                                    | `sudo npm install -g opencode-ai`                              |
+| Platform | Package manager | Example install command |
+|---|---|---|
+| macOS | `brew` | `brew install anomalyco/tap/opencode` |
+| Ubuntu/Debian | `apt` | `sudo npm install -g opencode-ai` |
+| Arch | `pacman` | `sudo npm install -g opencode-ai` |
+| Fedora/RHEL family | `dnf` | `sudo npm install -g opencode-ai` |
 
 The `--dry-run` output includes a `Platform decision` line showing `os`, `distro`, `package-manager`, and `status`.
 

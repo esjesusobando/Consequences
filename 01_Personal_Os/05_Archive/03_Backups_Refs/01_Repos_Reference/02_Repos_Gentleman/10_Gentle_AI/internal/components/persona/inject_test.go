@@ -2,20 +2,47 @@ package persona
 
 import (
 	"encoding/json"
+	"fmt"
 	"os"
 	"path/filepath"
 	"strings"
 	"testing"
 
 	"github.com/gentleman-programming/gentle-ai/internal/agents"
+	"github.com/gentleman-programming/gentle-ai/internal/agents/antigravity"
 	"github.com/gentleman-programming/gentle-ai/internal/agents/claude"
+	"github.com/gentleman-programming/gentle-ai/internal/agents/hermes"
+	"github.com/gentleman-programming/gentle-ai/internal/agents/kilocode"
+	"github.com/gentleman-programming/gentle-ai/internal/agents/kimi"
+	"github.com/gentleman-programming/gentle-ai/internal/agents/openclaw"
 	"github.com/gentleman-programming/gentle-ai/internal/agents/opencode"
 	"github.com/gentleman-programming/gentle-ai/internal/assets"
 	"github.com/gentleman-programming/gentle-ai/internal/model"
 )
 
-func claudeAdapter() agents.Adapter   { return claude.NewAdapter() }
-func opencodeAdapter() agents.Adapter { return opencode.NewAdapter() }
+func antigravityAdapter() agents.Adapter { return antigravity.NewAdapter() }
+func claudeAdapter() agents.Adapter      { return claude.NewAdapter() }
+func hermesAdapter() agents.Adapter      { return hermes.NewAdapter() }
+func kimiAdapter() agents.Adapter        { return kimi.NewAdapter() }
+func kilocodeAdapter() agents.Adapter    { return kilocode.NewAdapter() }
+func openclawAdapter() agents.Adapter    { return openclaw.NewAdapter() }
+func opencodeAdapter() agents.Adapter    { return opencode.NewAdapter() }
+
+func assertGentlemanLanguageGuardrails(t *testing.T, text string, required []string, banned []string) {
+	t.Helper()
+
+	for _, needle := range required {
+		if !strings.Contains(text, needle) {
+			t.Fatalf("missing language guardrail %q", needle)
+		}
+	}
+
+	for _, needle := range banned {
+		if strings.Contains(text, needle) {
+			t.Fatalf("contains drift-prone language instruction %q", needle)
+		}
+	}
+}
 
 func TestInjectClaudeGentlemanWritesSectionWithRealContent(t *testing.T) {
 	home := t.TempDir()
@@ -45,6 +72,90 @@ func TestInjectClaudeGentlemanWritesSectionWithRealContent(t *testing.T) {
 	if !strings.Contains(text, "Senior Architect") {
 		t.Fatal("CLAUDE.md missing real persona content (expected 'Senior Architect')")
 	}
+
+	assertGentlemanLanguageGuardrails(t, text,
+		[]string{
+			"Match the user's current language in your REPLY ONLY",
+			"Do not switch languages unless the user does, asks you to, or you are quoting/translating content.",
+			"When replying to the user in English, keep the full reply in natural English with the same warm energy.",
+		},
+		[]string{
+			`Say "déjame verificar"`,
+			"Spanish input → Rioplatense Spanish",
+			"English input → same warm energy",
+		},
+	)
+}
+
+func TestInjectKimiGentlemanIncludesProjectInstructionsAndLoadedSkills(t *testing.T) {
+	home := t.TempDir()
+
+	result, err := Inject(home, kimiAdapter(), model.PersonaGentleman)
+	if err != nil {
+		t.Fatalf("Inject(kimi) error = %v", err)
+	}
+	if !result.Changed {
+		t.Fatal("Inject(kimi) changed = false")
+	}
+
+	// KIMI.md should be the static Jinja template (includes + variable placeholders).
+	templatePath := filepath.Join(home, ".kimi", "KIMI.md")
+	content, err := os.ReadFile(templatePath)
+	if err != nil {
+		t.Fatalf("ReadFile(%q) error = %v", templatePath, err)
+	}
+
+	text := string(content)
+	if !strings.Contains(text, `{% include "output-style.md"`) {
+		t.Fatal("KIMI.md template missing {% include \"output-style.md\" %}")
+	}
+	if !strings.Contains(text, "${KIMI_AGENTS_MD}") {
+		t.Fatal("KIMI.md missing ${KIMI_AGENTS_MD} for project AGENTS.md parity")
+	}
+	if !strings.Contains(text, "${KIMI_SKILLS}") {
+		t.Fatal("KIMI.md missing ${KIMI_SKILLS} for loaded-skills parity")
+	}
+
+	// output-style.md module should contain the Gentleman style content.
+	outputStylePath := filepath.Join(home, ".kimi", "output-style.md")
+	styleContent, err := os.ReadFile(outputStylePath)
+	if err != nil {
+		t.Fatalf("ReadFile(%q) error = %v", outputStylePath, err)
+	}
+	if !strings.Contains(string(styleContent), "Gentleman Output Style") {
+		t.Fatal("output-style.md missing Gentleman Output Style content")
+	}
+	assertGentlemanLanguageGuardrails(t, string(styleContent),
+		[]string{
+			"Always match the user's current language in your reply.",
+			"Do not drift into another language because of persona wording, examples, or stylistic momentum.",
+			"When replying to the user in English, keep the full response in English unless the user explicitly asks for another language or you are translating/quoting.",
+		},
+		[]string{
+			"### Spanish Input → Rioplatense Spanish (voseo)",
+			`Use naturally: "Bien"`,
+			`Use naturally: "Here's the thing"`,
+		},
+	)
+
+	// persona.md module should exist and contain persona content.
+	personaPath := filepath.Join(home, ".kimi", "persona.md")
+	personaContent, err := os.ReadFile(personaPath)
+	if err != nil {
+		t.Fatalf("persona.md not written: %v", err)
+	}
+	assertGentlemanLanguageGuardrails(t, string(personaContent),
+		[]string{
+			"Match the user's current language in your REPLY ONLY",
+			"Do not switch languages unless the user does, asks you to, or you are quoting/translating content.",
+			"When replying to the user in English, keep the full reply in natural English with the same warm energy.",
+		},
+		[]string{
+			`Say "déjame verificar"`,
+			"Spanish input → Rioplatense Spanish",
+			"English input → same warm energy",
+		},
+	)
 }
 
 func TestInjectClaudeGentlemanWritesOutputStyleFile(t *testing.T) {
@@ -177,23 +288,78 @@ func TestInjectClaudeNeutralWritesFullPersonaWithoutRegionalLanguage(t *testing.
 	}
 }
 
-func TestInjectClaudeNeutralDoesNotWriteOutputStyle(t *testing.T) {
+func TestInjectClaudeNeutralWritesNeutralOutputStyleAndSettings(t *testing.T) {
 	home := t.TempDir()
+	settingsDir := filepath.Join(home, ".claude")
+	if err := os.MkdirAll(filepath.Join(settingsDir, "output-styles"), 0o755); err != nil {
+		t.Fatalf("MkdirAll() error = %v", err)
+	}
+	staleGentlemanPath := filepath.Join(settingsDir, "output-styles", "gentleman.md")
+	if err := os.WriteFile(staleGentlemanPath, []byte("stale gentleman style"), 0o644); err != nil {
+		t.Fatalf("WriteFile(stale gentleman) error = %v", err)
+	}
+	existingSettings := `{"permissions":{"allow":["Read"]},"outputStyle":"Gentleman"}`
+	if err := os.WriteFile(filepath.Join(settingsDir, "settings.json"), []byte(existingSettings), 0o644); err != nil {
+		t.Fatalf("WriteFile(settings) error = %v", err)
+	}
 
 	result, err := Inject(home, claudeAdapter(), model.PersonaNeutral)
 	if err != nil {
 		t.Fatalf("Inject() error = %v", err)
 	}
 
-	// Should only return CLAUDE.md, no output-style file.
-	if len(result.Files) != 1 {
-		t.Fatalf("Neutral persona returned %d files, want 1: %v", len(result.Files), result.Files)
+	for _, suffix := range []string{"CLAUDE.md", "neutral.md", "settings.json", "gentleman.md"} {
+		found := false
+		for _, file := range result.Files {
+			if strings.HasSuffix(file, suffix) {
+				found = true
+				break
+			}
+		}
+		if !found {
+			t.Fatalf("Neutral persona result missing %q in files %v", suffix, result.Files)
+		}
 	}
 
-	// Output-style file should NOT exist.
-	stylePath := filepath.Join(home, ".claude", "output-styles", "gentleman.md")
-	if _, err := os.Stat(stylePath); !os.IsNotExist(err) {
-		t.Fatal("Neutral persona should NOT write output-style file")
+	neutralStylePath := filepath.Join(home, ".claude", "output-styles", "neutral.md")
+	styleContent, err := os.ReadFile(neutralStylePath)
+	if err != nil {
+		t.Fatalf("ReadFile(%q) error = %v", neutralStylePath, err)
+	}
+	styleText := string(styleContent)
+	for _, want := range []string{"name: Neutral", "Neutral Output Style", "minimum useful response", "Generated technical artifacts default to English"} {
+		if !strings.Contains(styleText, want) {
+			t.Fatalf("neutral output style missing %q; got:\n%s", want, styleText)
+		}
+	}
+	if strings.Contains(styleText, "Rioplatense") || strings.Contains(styleText, "voseo") {
+		t.Fatalf("neutral output style contains regional wording:\n%s", styleText)
+	}
+	if _, err := os.Stat(staleGentlemanPath); !os.IsNotExist(err) {
+		t.Fatalf("stale gentleman output style should be removed, stat err=%v", err)
+	}
+
+	settingsContent, err := os.ReadFile(filepath.Join(settingsDir, "settings.json"))
+	if err != nil {
+		t.Fatalf("ReadFile(settings) error = %v", err)
+	}
+	var settings map[string]any
+	if err := json.Unmarshal(settingsContent, &settings); err != nil {
+		t.Fatalf("Unmarshal settings error = %v", err)
+	}
+	if got, want := settings["outputStyle"], "Neutral"; got != want {
+		t.Fatalf("settings outputStyle = %q, want %q", got, want)
+	}
+	if _, ok := settings["permissions"]; !ok {
+		t.Fatal("settings lost existing permissions key")
+	}
+
+	second, err := Inject(home, claudeAdapter(), model.PersonaNeutral)
+	if err != nil {
+		t.Fatalf("Inject() second error = %v", err)
+	}
+	if second.Changed {
+		t.Fatalf("second neutral Claude inject changed = true, want idempotent false")
 	}
 }
 
@@ -265,6 +431,82 @@ func TestInjectOpenCodeGentlemanWritesAgentsFile(t *testing.T) {
 	}
 }
 
+func TestInjectAntigravityGentlemanWritesMarkedPersonaSection(t *testing.T) {
+	home := t.TempDir()
+	promptPath := filepath.Join(home, ".gemini", "GEMINI.md")
+	if err := os.MkdirAll(filepath.Dir(promptPath), 0o755); err != nil {
+		t.Fatalf("MkdirAll() error = %v", err)
+	}
+	if err := os.WriteFile(promptPath, []byte("# User Gemini rules\n"), 0o644); err != nil {
+		t.Fatalf("WriteFile() error = %v", err)
+	}
+
+	result, err := Inject(home, antigravityAdapter(), model.PersonaGentleman)
+	if err != nil {
+		t.Fatalf("Inject() error = %v", err)
+	}
+	if !result.Changed {
+		t.Fatalf("Inject() changed = false")
+	}
+
+	content, err := os.ReadFile(promptPath)
+	if err != nil {
+		t.Fatalf("ReadFile() error = %v", err)
+	}
+	text := string(content)
+	for _, want := range []string{
+		"# User Gemini rules",
+		"<!-- gentle-ai:persona -->",
+		"Senior Architect",
+		"<!-- /gentle-ai:persona -->",
+	} {
+		if !strings.Contains(text, want) {
+			t.Fatalf("GEMINI.md missing %q; got:\n%s", want, text)
+		}
+	}
+
+	second, err := Inject(home, antigravityAdapter(), model.PersonaGentleman)
+	if err != nil {
+		t.Fatalf("Inject() second error = %v", err)
+	}
+	if second.Changed {
+		t.Fatalf("Inject() second changed = true; want false")
+	}
+
+	content, err = os.ReadFile(promptPath)
+	if err != nil {
+		t.Fatalf("ReadFile() after second inject error = %v", err)
+	}
+	if got := strings.Count(string(content), "<!-- gentle-ai:persona -->"); got != 1 {
+		t.Fatalf("persona marker count = %d, want 1", got)
+	}
+}
+
+func TestInjectOpenCodeGentlemanDoesNotCreateSDDConductor(t *testing.T) {
+	home := t.TempDir()
+
+	_, err := Inject(home, opencodeAdapter(), model.PersonaGentleman)
+	if err != nil {
+		t.Fatalf("Inject() error = %v", err)
+	}
+
+	settingsPath := filepath.Join(home, ".config", "opencode", "opencode.json")
+	content, err := os.ReadFile(settingsPath)
+	if err != nil {
+		t.Fatalf("ReadFile(opencode.json) error = %v", err)
+	}
+	text := string(content)
+	if strings.Contains(text, `"sdd-orchestrator"`) {
+		t.Fatal("persona injection must not create legacy sdd-orchestrator conductor")
+	}
+	if strings.Contains(text, `"gentle-orchestrator"`) {
+		t.Fatal("persona injection must not create SDD conductor; SDD component owns gentle-orchestrator")
+	}
+	if !strings.Contains(text, `"gentleman"`) {
+		t.Fatal("persona injection should still create the gentleman persona agent")
+	}
+}
+
 func TestInjectOpenCodePreservesUserContentInsteadOfOverwriting(t *testing.T) {
 	home := t.TempDir()
 	path := filepath.Join(home, ".config", "opencode", "AGENTS.md")
@@ -293,6 +535,103 @@ func TestInjectOpenCodePreservesUserContentInsteadOfOverwriting(t *testing.T) {
 	}
 	if !strings.Contains(text, "<!-- gentle-ai:persona -->") {
 		t.Fatal("AGENTS.md missing managed persona section after inject")
+	}
+}
+
+func TestInjectOpenClawWritesPersonaToWorkspaceSoulAndNotAgents(t *testing.T) {
+	workspace := t.TempDir()
+	adapter := openclawAdapter()
+	agentsPath := filepath.Join(workspace, "AGENTS.md")
+	if err := os.WriteFile(agentsPath, []byte("# Existing agent protocols\n\nKeep SDD here.\n"), 0o644); err != nil {
+		t.Fatalf("WriteFile(AGENTS.md) error = %v", err)
+	}
+
+	result, err := Inject(workspace, adapter, model.PersonaGentleman)
+	if err != nil {
+		t.Fatalf("Inject(openclaw) error = %v", err)
+	}
+	if !result.Changed {
+		t.Fatal("Inject(openclaw) changed = false")
+	}
+
+	soulPath := filepath.Join(workspace, "SOUL.md")
+	soulContent, err := os.ReadFile(soulPath)
+	if err != nil {
+		t.Fatalf("ReadFile(SOUL.md) error = %v", err)
+	}
+	soulText := string(soulContent)
+	if !strings.Contains(soulText, "<!-- gentle-ai:persona -->") {
+		t.Fatalf("SOUL.md missing managed persona marker; got:\n%s", soulText)
+	}
+	if !strings.Contains(soulText, "Senior Architect") {
+		t.Fatalf("SOUL.md missing real persona content; got:\n%s", soulText)
+	}
+	if !strings.Contains(soulText, "Match the user's current language in your REPLY ONLY") {
+		t.Fatalf("SOUL.md missing persona language guardrail; got:\n%s", soulText)
+	}
+
+	agentsContent, err := os.ReadFile(agentsPath)
+	if err != nil {
+		t.Fatalf("ReadFile(AGENTS.md) error = %v", err)
+	}
+	agentsText := string(agentsContent)
+	if !strings.Contains(agentsText, "Keep SDD here.") {
+		t.Fatalf("AGENTS.md user protocol content was modified; got:\n%s", agentsText)
+	}
+	if strings.Contains(agentsText, "<!-- gentle-ai:persona -->") || strings.Contains(agentsText, "Senior Architect") {
+		t.Fatalf("OpenClaw persona must not be written to AGENTS.md; got:\n%s", agentsText)
+	}
+}
+
+func TestInjectOpenClawSoulPersonaIsIdempotentAndPreservesUserContent(t *testing.T) {
+	workspace := t.TempDir()
+	soulPath := filepath.Join(workspace, "SOUL.md")
+	if err := os.WriteFile(soulPath, []byte("# Custom soul\n\nKeep my tone note.\n"), 0o644); err != nil {
+		t.Fatalf("WriteFile(SOUL.md) error = %v", err)
+	}
+
+	adapter := openclawAdapter()
+	first, err := Inject(workspace, adapter, model.PersonaGentleman)
+	if err != nil {
+		t.Fatalf("Inject(openclaw) first error = %v", err)
+	}
+	if !first.Changed {
+		t.Fatal("Inject(openclaw) first changed = false")
+	}
+	second, err := Inject(workspace, adapter, model.PersonaGentleman)
+	if err != nil {
+		t.Fatalf("Inject(openclaw) second error = %v", err)
+	}
+	if second.Changed {
+		t.Fatal("OpenClaw SOUL.md persona injection should be idempotent")
+	}
+
+	content, err := os.ReadFile(soulPath)
+	if err != nil {
+		t.Fatalf("ReadFile(SOUL.md) error = %v", err)
+	}
+	text := string(content)
+	if !strings.Contains(text, "Keep my tone note.") {
+		t.Fatalf("SOUL.md user content was lost; got:\n%s", text)
+	}
+	if count := strings.Count(text, "<!-- gentle-ai:persona -->"); count != 1 {
+		t.Fatalf("SOUL.md has %d persona markers, want exactly 1", count)
+	}
+}
+
+func TestInjectOpenClawRejectsAmbiguousWorkspacePath(t *testing.T) {
+	cwd := t.TempDir()
+	t.Chdir(cwd)
+
+	result, err := Inject("", openclawAdapter(), model.PersonaGentleman)
+	if err == nil {
+		t.Fatalf("Inject(openclaw, empty workspace) error = nil, want deterministic ambiguity error; result=%+v", result)
+	}
+	if _, statErr := os.Stat(filepath.Join(cwd, "SOUL.md")); !os.IsNotExist(statErr) {
+		t.Fatalf("ambiguous OpenClaw workspace must not create relative SOUL.md; stat err=%v", statErr)
+	}
+	if _, statErr := os.Stat(filepath.Join(cwd, "AGENTS.md")); !os.IsNotExist(statErr) {
+		t.Fatalf("ambiguous OpenClaw workspace must not create relative AGENTS.md; stat err=%v", statErr)
 	}
 }
 
@@ -491,6 +830,112 @@ func TestInjectOpenCodeNeutralPreservesManagedSections(t *testing.T) {
 	// Gentleman-specific language should be gone — neutral has the same personality but no regional language
 	if strings.Contains(text, "Rioplatense") {
 		t.Fatal("AGENTS.md still has Rioplatense language after switching to neutral")
+	}
+}
+
+func TestInjectKimiNeutralWritesMeaningfulOutputStyle(t *testing.T) {
+	home := t.TempDir()
+
+	result, err := Inject(home, kimiAdapter(), model.PersonaNeutral)
+	if err != nil {
+		t.Fatalf("Inject(kimi neutral) error = %v", err)
+	}
+	if !result.Changed {
+		t.Fatal("Inject(kimi neutral) changed = false")
+	}
+
+	outputStylePath := filepath.Join(home, ".kimi", "output-style.md")
+	content, err := os.ReadFile(outputStylePath)
+	if err != nil {
+		t.Fatalf("ReadFile(%q) error = %v", outputStylePath, err)
+	}
+	text := string(content)
+	if strings.TrimSpace(text) == "" {
+		t.Fatal("Kimi neutral output-style.md is empty")
+	}
+	for _, want := range []string{"Neutral Output Style", "minimum useful response", "Generated technical artifacts default to English"} {
+		if !strings.Contains(text, want) {
+			t.Fatalf("Kimi neutral output-style.md missing %q; got:\n%s", want, text)
+		}
+	}
+	if strings.Contains(text, "Rioplatense") || strings.Contains(text, "voseo") {
+		t.Fatalf("Kimi neutral output-style.md contains regional wording:\n%s", text)
+	}
+}
+
+func TestInjectForSyncNeutralCleansOnlyGentlemanAgent(t *testing.T) {
+	for _, tc := range []struct {
+		name        string
+		adapter     agents.Adapter
+		settingsRel string
+	}{
+		{name: "opencode", adapter: opencodeAdapter(), settingsRel: filepath.Join(".config", "opencode", "opencode.json")},
+		{name: "kilocode", adapter: kilocodeAdapter(), settingsRel: filepath.Join(".config", "kilo", "opencode.json")},
+	} {
+		t.Run(tc.name, func(t *testing.T) {
+			home := t.TempDir()
+			settingsPath := filepath.Join(home, tc.settingsRel)
+			if err := os.MkdirAll(filepath.Dir(settingsPath), 0o755); err != nil {
+				t.Fatalf("MkdirAll() error = %v", err)
+			}
+			existing := `{"agent":{"gentleman":{"mode":"primary"},"custom":{"mode":"primary"}},"theme":"dark"}`
+			if err := os.WriteFile(settingsPath, []byte(existing), 0o644); err != nil {
+				t.Fatalf("WriteFile(settings) error = %v", err)
+			}
+
+			result, err := InjectForSync(home, tc.adapter, model.PersonaNeutral)
+			if err != nil {
+				t.Fatalf("InjectForSync() error = %v", err)
+			}
+			if !result.Changed {
+				t.Fatal("InjectForSync() changed = false, want cleanup change")
+			}
+
+			content, err := os.ReadFile(settingsPath)
+			if err != nil {
+				t.Fatalf("ReadFile(settings) error = %v", err)
+			}
+			var root map[string]any
+			if err := json.Unmarshal(content, &root); err != nil {
+				t.Fatalf("Unmarshal(settings) error = %v", err)
+			}
+			agentMap, ok := root["agent"].(map[string]any)
+			if !ok {
+				t.Fatalf("settings lost agent object: %s", string(content))
+			}
+			if _, exists := agentMap["gentleman"]; exists {
+				t.Fatalf("settings still has agent.gentleman: %s", string(content))
+			}
+			if _, exists := agentMap["custom"]; !exists {
+				t.Fatalf("settings lost agent.custom sibling: %s", string(content))
+			}
+			if got, want := root["theme"], "dark"; got != want {
+				t.Fatalf("settings theme = %q, want %q", got, want)
+			}
+		})
+	}
+}
+
+func TestInjectForSyncNeutralToleratesMalformedOpenCodeSettings(t *testing.T) {
+	home := t.TempDir()
+	settingsPath := filepath.Join(home, ".config", "opencode", "opencode.json")
+	if err := os.MkdirAll(filepath.Dir(settingsPath), 0o755); err != nil {
+		t.Fatalf("MkdirAll() error = %v", err)
+	}
+	malformed := []byte(`{"agent":`)
+	if err := os.WriteFile(settingsPath, malformed, 0o644); err != nil {
+		t.Fatalf("WriteFile(settings) error = %v", err)
+	}
+
+	if _, err := InjectForSync(home, opencodeAdapter(), model.PersonaNeutral); err != nil {
+		t.Fatalf("InjectForSync() should tolerate malformed settings, got error: %v", err)
+	}
+	content, err := os.ReadFile(settingsPath)
+	if err != nil {
+		t.Fatalf("ReadFile(settings) error = %v", err)
+	}
+	if string(content) != string(malformed) {
+		t.Fatalf("malformed settings should be preserved untouched; got %q", string(content))
 	}
 }
 
@@ -745,8 +1190,8 @@ func TestInjectCursorGentlemanWritesRulesFileWithRealContent(t *testing.T) {
 	if !strings.Contains(text, "Senior Architect") {
 		t.Fatal("Cursor persona missing 'Senior Architect' — got neutral fallback instead of generic persona")
 	}
-	if !strings.Contains(text, "Skills") {
-		t.Fatal("Cursor persona missing skills section")
+	if !strings.Contains(text, "Contextual Skill Loading") {
+		t.Fatal("Cursor persona missing contextual skill loading directive")
 	}
 }
 
@@ -777,6 +1222,18 @@ func TestInjectGeminiGentlemanWritesSystemPromptWithRealContent(t *testing.T) {
 	if !strings.Contains(text, "Senior Architect") {
 		t.Fatal("Gemini persona missing 'Senior Architect'")
 	}
+	assertGentlemanLanguageGuardrails(t, text,
+		[]string{
+			"Match the user's current language in your REPLY ONLY",
+			"Do not switch languages unless the user does, asks you to, or you are quoting/translating content.",
+			"When replying to the user in English, keep the full reply in natural English with the same warm energy.",
+		},
+		[]string{
+			`Say "déjame verificar"`,
+			"Spanish input → Rioplatense Spanish",
+			"English input → same warm energy",
+		},
+	)
 }
 
 func TestInjectVSCodeGentlemanWritesInstructionsFile(t *testing.T) {
@@ -819,7 +1276,6 @@ func TestInjectVSCodeGentlemanWritesInstructionsFile(t *testing.T) {
 const legacyClaudePersonaBlock = `## Rules
 
 - NEVER add "Co-Authored-By" or any AI attribution to commits. Use conventional commits format only.
-- Never build after changes.
 
 ## Personality
 
@@ -1117,5 +1573,760 @@ func TestInjectVSCodeIdempotentAfterHeal(t *testing.T) {
 	}
 	if second.Changed {
 		t.Fatalf("second inject should be idempotent (changed = false), but changed = true")
+	}
+}
+
+func TestInjectClaude_SwitchGentlemanToNeutral_CleansOutputStyle(t *testing.T) {
+	home := t.TempDir()
+
+	// Step 1: install gentleman — creates output-styles/gentleman.md and sets outputStyle in settings.json.
+	_, err := Inject(home, claudeAdapter(), model.PersonaGentleman)
+	if err != nil {
+		t.Fatalf("Inject(gentleman) error = %v", err)
+	}
+
+	stylePath := filepath.Join(home, ".claude", "output-styles", "gentleman.md")
+	if _, statErr := os.Stat(stylePath); os.IsNotExist(statErr) {
+		t.Fatal("precondition: gentleman.md must exist after gentleman install")
+	}
+
+	settingsPath := filepath.Join(home, ".claude", "settings.json")
+	settingsRaw, err := os.ReadFile(settingsPath)
+	if err != nil {
+		t.Fatalf("precondition: settings.json must exist after gentleman install: %v", err)
+	}
+	var settingsBefore map[string]any
+	if err := json.Unmarshal(settingsRaw, &settingsBefore); err != nil {
+		t.Fatalf("precondition: unmarshal settings.json: %v", err)
+	}
+	if settingsBefore["outputStyle"] != "Gentleman" {
+		t.Fatalf("precondition: outputStyle must be 'Gentleman', got %v", settingsBefore["outputStyle"])
+	}
+
+	// Step 2: switch to neutral — should clean both residuals.
+	result, err := Inject(home, claudeAdapter(), model.PersonaNeutral)
+	if err != nil {
+		t.Fatalf("Inject(neutral) error = %v", err)
+	}
+	if !result.Changed {
+		t.Fatal("Inject(neutral) should report changed when cleaning gentleman residuals")
+	}
+
+	// output-styles/gentleman.md must be gone.
+	if _, statErr := os.Stat(stylePath); !os.IsNotExist(statErr) {
+		t.Fatal("gentleman.md must be removed when switching to neutral")
+	}
+
+	// outputStyle must now point at the managed Neutral style.
+	settingsRaw, err = os.ReadFile(settingsPath)
+	if err != nil {
+		t.Fatalf("ReadFile(settings.json) after neutral: %v", err)
+	}
+	var settingsAfter map[string]any
+	if err := json.Unmarshal(settingsRaw, &settingsAfter); err != nil {
+		t.Fatalf("Unmarshal settings.json after neutral: %v", err)
+	}
+	if got, want := settingsAfter["outputStyle"], "Neutral"; got != want {
+		t.Fatalf("outputStyle = %v, want %q after switching to neutral", got, want)
+	}
+}
+
+func TestInjectClaude_NeutralSelectsManagedOutputStyleAndPreservesOtherSettings(t *testing.T) {
+	home := t.TempDir()
+
+	// Pre-create settings.json with a user-defined outputStyle that is NOT "Gentleman".
+	settingsDir := filepath.Join(home, ".claude")
+	if err := os.MkdirAll(settingsDir, 0o755); err != nil {
+		t.Fatalf("MkdirAll() error = %v", err)
+	}
+	userSettings := `{"outputStyle": "MyCustom", "syntaxHighlightingDisabled": true}`
+	settingsPath := filepath.Join(settingsDir, "settings.json")
+	if err := os.WriteFile(settingsPath, []byte(userSettings), 0o644); err != nil {
+		t.Fatalf("WriteFile() error = %v", err)
+	}
+
+	_, err := Inject(home, claudeAdapter(), model.PersonaNeutral)
+	if err != nil {
+		t.Fatalf("Inject(neutral) error = %v", err)
+	}
+
+	settingsRaw, err := os.ReadFile(settingsPath)
+	if err != nil {
+		t.Fatalf("ReadFile(settings.json) error = %v", err)
+	}
+	var settings map[string]any
+	if err := json.Unmarshal(settingsRaw, &settings); err != nil {
+		t.Fatalf("Unmarshal settings.json error = %v", err)
+	}
+
+	if got, want := settings["outputStyle"], "Neutral"; got != want {
+		t.Fatalf("outputStyle = %v, want %q", got, want)
+	}
+	// Other user keys must also survive.
+	if settings["syntaxHighlightingDisabled"] != true {
+		t.Fatal("syntaxHighlightingDisabled was lost")
+	}
+}
+
+func TestInjectClaude_SwitchGentlemanToNeutral_IsIdempotent(t *testing.T) {
+	home := t.TempDir()
+
+	// Install gentleman, then switch to neutral twice — second switch must be a no-op.
+	_, err := Inject(home, claudeAdapter(), model.PersonaGentleman)
+	if err != nil {
+		t.Fatalf("Inject(gentleman) error = %v", err)
+	}
+
+	first, err := Inject(home, claudeAdapter(), model.PersonaNeutral)
+	if err != nil {
+		t.Fatalf("Inject(neutral) first error = %v", err)
+	}
+	if !first.Changed {
+		t.Fatal("first neutral inject after gentleman should report changed")
+	}
+
+	second, err := Inject(home, claudeAdapter(), model.PersonaNeutral)
+	if err != nil {
+		t.Fatalf("Inject(neutral) second error = %v", err)
+	}
+	if second.Changed {
+		t.Fatal("second neutral inject should be idempotent (no residuals to clean)")
+	}
+}
+
+func TestInjectOpenCode_SwitchGentlemanToNeutral_CleansAgentOverlay(t *testing.T) {
+	home := t.TempDir()
+
+	// Step 1: install gentleman — agent.gentleman key must appear in opencode.json.
+	_, err := Inject(home, opencodeAdapter(), model.PersonaGentleman)
+	if err != nil {
+		t.Fatalf("Inject(gentleman) error = %v", err)
+	}
+
+	settingsPath := filepath.Join(home, ".config", "opencode", "opencode.json")
+	settingsRaw, err := os.ReadFile(settingsPath)
+	if err != nil {
+		t.Fatalf("precondition: opencode.json must exist after gentleman install: %v", err)
+	}
+	var before map[string]any
+	if err := json.Unmarshal(settingsRaw, &before); err != nil {
+		t.Fatalf("precondition: unmarshal opencode.json: %v", err)
+	}
+	agentBefore, ok := before["agent"].(map[string]any)
+	if !ok {
+		t.Fatal("precondition: 'agent' key must be present after gentleman install")
+	}
+	if _, ok := agentBefore["gentleman"]; !ok {
+		t.Fatal("precondition: agent.gentleman must be present after gentleman install")
+	}
+
+	// Pre-populate a user-defined agent to verify it survives the cleanup.
+	agentBefore["my-custom-agent"] = map[string]any{"mode": "secondary"}
+	before["agent"] = agentBefore
+	before["someUserKey"] = "preserved"
+	encoded, _ := json.MarshalIndent(before, "", "  ")
+	if err := os.WriteFile(settingsPath, append(encoded, '\n'), 0o644); err != nil {
+		t.Fatalf("WriteFile() setup error = %v", err)
+	}
+
+	// Step 2: switch to neutral — agent.gentleman must be removed.
+	result, err := Inject(home, opencodeAdapter(), model.PersonaNeutral)
+	if err != nil {
+		t.Fatalf("Inject(neutral) error = %v", err)
+	}
+	if !result.Changed {
+		t.Fatal("Inject(neutral) should report changed when cleaning agent.gentleman residual")
+	}
+
+	settingsRaw, err = os.ReadFile(settingsPath)
+	if err != nil {
+		t.Fatalf("ReadFile(opencode.json) after neutral: %v", err)
+	}
+	var after map[string]any
+	if err := json.Unmarshal(settingsRaw, &after); err != nil {
+		t.Fatalf("Unmarshal opencode.json after neutral: %v", err)
+	}
+
+	// agent.gentleman must be gone.
+	if agentAfter, ok := after["agent"].(map[string]any); ok {
+		if _, stillPresent := agentAfter["gentleman"]; stillPresent {
+			t.Fatal("agent.gentleman must be removed from opencode.json after switching to neutral")
+		}
+		// User-defined agent must survive.
+		if _, ok := agentAfter["my-custom-agent"]; !ok {
+			t.Fatal("user-defined agent 'my-custom-agent' was removed — only agent.gentleman should be cleaned")
+		}
+	}
+
+	// Other top-level user keys must survive.
+	if after["someUserKey"] != "preserved" {
+		t.Fatalf("user key 'someUserKey' was lost: got %v", after["someUserKey"])
+	}
+}
+
+func TestInjectKilocode_SwitchGentlemanToNeutral_CleansAgentOverlay(t *testing.T) {
+	home := t.TempDir()
+
+	_, err := Inject(home, kilocodeAdapter(), model.PersonaGentleman)
+	if err != nil {
+		t.Fatalf("Inject(gentleman) error = %v", err)
+	}
+
+	settingsPath := filepath.Join(home, ".config", "kilo", "opencode.json")
+	data, _ := os.ReadFile(settingsPath)
+	if !strings.Contains(string(data), `"gentleman"`) {
+		t.Fatal("precondition: kilo/opencode.json should have gentleman agent after Gentleman install")
+	}
+
+	result, err := Inject(home, kilocodeAdapter(), model.PersonaNeutral)
+	if err != nil {
+		t.Fatalf("Inject(neutral) error = %v", err)
+	}
+	if !result.Changed {
+		t.Fatal("Inject(neutral) should report changed when cleaning up gentleman agent overlay")
+	}
+
+	data, err = os.ReadFile(settingsPath)
+	if err != nil {
+		t.Fatalf("ReadFile kilo/opencode.json error = %v", err)
+	}
+	if strings.Contains(string(data), `"gentleman"`) {
+		t.Fatal("kilo/opencode.json must not have gentleman agent key after switching to Neutral")
+	}
+}
+
+func TestInjectOpenCode_NeutralFresh_IsNoOp(t *testing.T) {
+	home := t.TempDir()
+
+	_, err := Inject(home, opencodeAdapter(), model.PersonaNeutral)
+	if err != nil {
+		t.Fatalf("Inject(neutral) on fresh install error = %v", err)
+	}
+
+	settingsPath := filepath.Join(home, ".config", "opencode", "opencode.json")
+	if _, statErr := os.Stat(settingsPath); !os.IsNotExist(statErr) {
+		data, _ := os.ReadFile(settingsPath)
+		if strings.Contains(string(data), `"gentleman"`) {
+			t.Fatal("Neutral fresh install must not create gentleman agent key")
+		}
+	}
+}
+
+func TestInjectOpenCode_GentlemanOnly_WritesAgentOverlay(t *testing.T) {
+	home := t.TempDir()
+
+	_, err := Inject(home, opencodeAdapter(), model.PersonaGentleman)
+	if err != nil {
+		t.Fatalf("Inject(gentleman) error = %v", err)
+	}
+
+	settingsPath := filepath.Join(home, ".config", "opencode", "opencode.json")
+	data, err := os.ReadFile(settingsPath)
+	if err != nil {
+		t.Fatalf("ReadFile(opencode.json) error = %v", err)
+	}
+	if !strings.Contains(string(data), `"gentleman"`) {
+		t.Fatal("Gentleman install must write gentleman agent overlay in opencode.json")
+	}
+}
+
+func TestInjectOpenCode_MalformedJSON_DoesNotPanic(t *testing.T) {
+	home := t.TempDir()
+
+	settingsDir := filepath.Join(home, ".config", "opencode")
+	if err := os.MkdirAll(settingsDir, 0o755); err != nil {
+		t.Fatalf("MkdirAll() error = %v", err)
+	}
+	malformed := `{ "agent": { "gentleman": {invalid json`
+	if err := os.WriteFile(filepath.Join(settingsDir, "opencode.json"), []byte(malformed), 0o644); err != nil {
+		t.Fatalf("WriteFile() error = %v", err)
+	}
+
+	_, err := Inject(home, opencodeAdapter(), model.PersonaNeutral)
+	if err != nil {
+		t.Fatalf("Inject(neutral) with malformed JSON must not error, got: %v", err)
+	}
+}
+
+func TestInjectClaude_MalformedJSON_DoesNotPanic(t *testing.T) {
+	home := t.TempDir()
+
+	settingsDir := filepath.Join(home, ".claude")
+	if err := os.MkdirAll(settingsDir, 0o755); err != nil {
+		t.Fatalf("MkdirAll() error = %v", err)
+	}
+	malformed := `{ "outputStyle": "Gentleman", invalid`
+	if err := os.WriteFile(filepath.Join(settingsDir, "settings.json"), []byte(malformed), 0o644); err != nil {
+		t.Fatalf("WriteFile() error = %v", err)
+	}
+
+	_, err := Inject(home, claudeAdapter(), model.PersonaNeutral)
+	if err != nil {
+		t.Fatalf("Inject(neutral) with malformed settings.json must not error, got: %v", err)
+	}
+}
+
+func TestInjectKimi_SwitchGentlemanToNeutral_NoResidualPersonaContent(t *testing.T) {
+	home := t.TempDir()
+
+	if _, err := Inject(home, kimiAdapter(), model.PersonaGentleman); err != nil {
+		t.Fatalf("Inject(gentleman) error = %v", err)
+	}
+
+	if _, err := Inject(home, kimiAdapter(), model.PersonaNeutral); err != nil {
+		t.Fatalf("Inject(neutral) error = %v", err)
+	}
+
+	outputStylePath := filepath.Join(home, ".kimi", "output-style.md")
+	data, err := os.ReadFile(outputStylePath)
+	if err != nil {
+		t.Fatalf("ReadFile(output-style.md) error = %v", err)
+	}
+	content := string(data)
+
+	if strings.TrimSpace(content) == "" {
+		t.Fatal("output-style.md should contain neutral output-style content after switching to neutral")
+	}
+	if !strings.Contains(content, "Neutral Output Style") {
+		t.Errorf("output-style.md missing Neutral Output Style after switching to neutral; got:\n%s", content)
+	}
+	if strings.Contains(content, "Rioplatense") {
+		t.Error("output-style.md still contains 'Rioplatense' after switching to neutral")
+	}
+	if strings.Contains(content, "Gentleman Output Style") {
+		t.Error("output-style.md still contains 'Gentleman Output Style' after switching to neutral")
+	}
+	if strings.Contains(content, "voseo") {
+		t.Error("output-style.md still contains 'voseo' after switching to neutral")
+	}
+}
+
+func TestInjectForSync_OpenCodeNeutral_CleansAgentGentleman(t *testing.T) {
+	home := t.TempDir()
+
+	if _, err := Inject(home, opencodeAdapter(), model.PersonaGentleman); err != nil {
+		t.Fatalf("Inject(gentleman) error = %v", err)
+	}
+
+	settingsPath := filepath.Join(home, ".config", "opencode", "opencode.json")
+	before, err := os.ReadFile(settingsPath)
+	if err != nil {
+		t.Fatalf("ReadFile(opencode.json) after install error = %v", err)
+	}
+	if !strings.Contains(string(before), `"gentleman"`) {
+		t.Fatalf("opencode.json missing gentleman agent after install; got:\n%s", string(before))
+	}
+
+	if _, err := InjectForSync(home, opencodeAdapter(), model.PersonaNeutral); err != nil {
+		t.Fatalf("InjectForSync(neutral) error = %v", err)
+	}
+
+	after, err := os.ReadFile(settingsPath)
+	if err != nil {
+		t.Fatalf("ReadFile(opencode.json) after sync error = %v", err)
+	}
+	if strings.Contains(string(after), `"gentleman"`) {
+		t.Fatalf("opencode.json still has gentleman agent after InjectForSync(neutral); got:\n%s", string(after))
+	}
+}
+
+func TestInjectForSync_ClaudeGentlemanToNeutral_CleansOutputStyle(t *testing.T) {
+	home := t.TempDir()
+
+	if _, err := Inject(home, claudeAdapter(), model.PersonaGentleman); err != nil {
+		t.Fatalf("Inject(gentleman) error = %v", err)
+	}
+
+	stylePath := filepath.Join(home, ".claude", "output-styles", "gentleman.md")
+	if _, err := os.Stat(stylePath); os.IsNotExist(err) {
+		t.Fatal("gentleman.md not written by Inject(gentleman) — precondition failed")
+	}
+
+	settingsPath := filepath.Join(home, ".claude", "settings.json")
+	raw, err := os.ReadFile(settingsPath)
+	if err != nil {
+		t.Fatalf("ReadFile(settings.json) error = %v", err)
+	}
+	if !strings.Contains(string(raw), `"outputStyle"`) {
+		t.Fatal("settings.json missing outputStyle after install — precondition failed")
+	}
+
+	if _, err := InjectForSync(home, claudeAdapter(), model.PersonaNeutral); err != nil {
+		t.Fatalf("InjectForSync(neutral) error = %v", err)
+	}
+
+	if _, err := os.Stat(stylePath); !os.IsNotExist(err) {
+		t.Fatal("gentleman.md still present after InjectForSync(neutral) — residue not cleaned")
+	}
+
+	afterRaw, err := os.ReadFile(settingsPath)
+	if err != nil && !os.IsNotExist(err) {
+		t.Fatalf("ReadFile(settings.json) after sync error = %v", err)
+	}
+	if !strings.Contains(string(afterRaw), `"outputStyle": "Neutral"`) {
+		t.Fatalf("settings.json should select Neutral outputStyle after InjectForSync(neutral); got:\n%s", string(afterRaw))
+	}
+}
+
+// --- Hermes persona tests (T-29, T-30) ---
+
+// availableSkillsIsAuthoritative is the pattern from the generic persona assets
+// that must NOT appear in Hermes personas (Hermes uses ~/.hermes/skills/ natively,
+// not the Claude-style <available_skills> injection mechanism).
+const availableSkillsIsAuthoritative = "block in your system prompt is authoritative"
+
+// TestPersonaContentHermesGentleman verifies that personaContent returns the
+// Hermes-specific gentleman asset with the skill-loading block rewritten for
+// Hermes's native skill model (no <available_skills> injection mechanism).
+func TestPersonaContentHermesGentleman(t *testing.T) {
+	tests := []struct {
+		name    string
+		persona model.PersonaID
+	}{
+		{"gentleman", model.PersonaGentleman},
+		{"gentleman-neutral-artifacts", model.PersonaGentlemanNeutralArtifacts},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			content := personaContent(model.AgentHermes, tt.persona)
+			if content == "" {
+				t.Fatal("personaContent(hermes, gentleman) returned empty string")
+			}
+			// The generic <available_skills> "is authoritative" block must be absent.
+			if strings.Contains(content, availableSkillsIsAuthoritative) {
+				t.Fatal("hermes gentleman persona still has the generic <available_skills> instruction — skill-loading block not rewritten")
+			}
+			// Should reference ~/.hermes/skills/ (Hermes-native skill loading).
+			if !strings.Contains(content, "~/.hermes/skills/") {
+				t.Fatal("hermes gentleman persona missing ~/.hermes/skills/ reference")
+			}
+			// Must be distinct from generic asset.
+			generic := assets.MustRead("generic/persona-gentleman.md")
+			if content == generic {
+				t.Fatal("hermes gentleman persona is byte-identical to generic — Hermes-specific asset not used")
+			}
+		})
+	}
+}
+
+// TestPersonaContentHermesNeutral verifies that personaContent returns the
+// Hermes-specific neutral asset with the skill-loading block rewritten for
+// Hermes's native skill model.
+func TestPersonaContentHermesNeutral(t *testing.T) {
+	content := personaContent(model.AgentHermes, model.PersonaNeutral)
+	if content == "" {
+		t.Fatal("personaContent(hermes, neutral) returned empty string")
+	}
+	// The generic <available_skills> "is authoritative" block must be absent.
+	if strings.Contains(content, availableSkillsIsAuthoritative) {
+		t.Fatal("hermes neutral persona still has the generic <available_skills> instruction — skill-loading block not rewritten")
+	}
+	if !strings.Contains(content, "~/.hermes/skills/") {
+		t.Fatal("hermes neutral persona missing ~/.hermes/skills/ reference")
+	}
+	// Must be distinct from generic neutral.
+	generic := assets.MustRead("generic/persona-neutral.md")
+	if content == generic {
+		t.Fatal("hermes neutral persona is byte-identical to generic — Hermes-specific asset not used")
+	}
+}
+
+// TestPersonaContentHermesCustom verifies that PersonaCustom returns empty string
+// for Hermes (no persona injected — user keeps their own config).
+func TestPersonaContentHermesCustom(t *testing.T) {
+	content := personaContent(model.AgentHermes, model.PersonaCustom)
+	if content != "" {
+		t.Fatalf("personaContent(hermes, custom) = %q, want empty string", content)
+	}
+}
+
+// TestPersonaContentNonHermesNeutralUnchanged is a regression test verifying that
+// non-Hermes agents still receive the byte-identical generic/persona-neutral.md
+// when PersonaNeutral is selected. This ensures the refactor is additive-only.
+func TestPersonaContentNonHermesNeutralUnchanged(t *testing.T) {
+	genericNeutral := assets.MustRead("generic/persona-neutral.md")
+	if genericNeutral == "" {
+		t.Fatal("generic/persona-neutral.md asset is empty")
+	}
+
+	agentIDs := []model.AgentID{
+		model.AgentClaudeCode,
+		model.AgentOpenCode,
+		model.AgentGeminiCLI,
+		model.AgentCursor,
+		model.AgentCodex,
+	}
+	for _, agent := range agentIDs {
+		t.Run(string(agent), func(t *testing.T) {
+			got := personaContent(agent, model.PersonaNeutral)
+			if got != genericNeutral {
+				t.Fatalf("personaContent(%q, neutral) is no longer byte-identical to generic/persona-neutral.md — regression", agent)
+			}
+		})
+	}
+}
+
+func TestWrapSteeringFileAddsKiroFrontmatter(t *testing.T) {
+	got := wrapSteeringFile("## Persona\n\nBody")
+
+	for _, want := range []string{
+		"---\n",
+		"inclusion: always",
+		"---\n\n## Persona",
+		"Body",
+	} {
+		if !strings.Contains(got, want) {
+			t.Fatalf("wrapSteeringFile() missing %q; got:\n%s", want, got)
+		}
+	}
+}
+
+func TestMergeJSONFileToleratingMalformed(t *testing.T) {
+	home := t.TempDir()
+
+	t.Run("merges valid json", func(t *testing.T) {
+		path := filepath.Join(home, "valid.json")
+		if err := os.WriteFile(path, []byte(`{"permissions":{"allow":["Read"]}}`), 0o644); err != nil {
+			t.Fatalf("WriteFile(valid): %v", err)
+		}
+
+		result, err := mergeJSONFileToleratingMalformed(path, []byte(`{"outputStyle":"Neutral"}`))
+		if err != nil {
+			t.Fatalf("mergeJSONFileToleratingMalformed(valid) error = %v", err)
+		}
+		if !result.Changed {
+			t.Fatal("mergeJSONFileToleratingMalformed(valid) changed = false")
+		}
+
+		raw, err := os.ReadFile(path)
+		if err != nil {
+			t.Fatalf("ReadFile(valid): %v", err)
+		}
+		text := string(raw)
+		if !strings.Contains(text, `"outputStyle": "Neutral"`) {
+			t.Fatalf("merged JSON missing outputStyle; got:\n%s", text)
+		}
+		if !strings.Contains(text, `"permissions"`) {
+			t.Fatalf("merged JSON lost existing permissions; got:\n%s", text)
+		}
+	})
+
+	t.Run("ignores malformed overlay to avoid data loss", func(t *testing.T) {
+		path := filepath.Join(home, "malformed-overlay.json")
+		original := `{"outputStyle":"Gentleman"}`
+		if err := os.WriteFile(path, []byte(original), 0o644); err != nil {
+			t.Fatalf("WriteFile(malformed overlay): %v", err)
+		}
+
+		result, err := mergeJSONFileToleratingMalformed(path, []byte(`{"outputStyle":"Neutral"`))
+		if err != nil {
+			t.Fatalf("mergeJSONFileToleratingMalformed(malformed overlay) error = %v", err)
+		}
+		if result.Changed {
+			t.Fatal("mergeJSONFileToleratingMalformed(malformed overlay) changed = true")
+		}
+
+		raw, err := os.ReadFile(path)
+		if err != nil {
+			t.Fatalf("ReadFile(malformed overlay): %v", err)
+		}
+		if string(raw) != original {
+			t.Fatalf("JSON was modified after malformed overlay; got %q, want %q", string(raw), original)
+		}
+	})
+
+	t.Run("returns non-json read errors", func(t *testing.T) {
+		originalReadFile := osReadFile
+		t.Cleanup(func() { osReadFile = originalReadFile })
+		osReadFile = func(string) ([]byte, error) {
+			return nil, fmt.Errorf("permission denied")
+		}
+
+		if _, err := mergeJSONFileToleratingMalformed(filepath.Join(home, "denied.json"), []byte(`{}`)); err == nil {
+			t.Fatal("mergeJSONFileToleratingMalformed(non-json error) error = nil")
+		}
+	})
+}
+
+func TestRemoveJSONKeyIfValueScenarios(t *testing.T) {
+	home := t.TempDir()
+
+	t.Run("removes matching managed value and preserves siblings", func(t *testing.T) {
+		path := filepath.Join(home, "matching.json")
+		if err := os.WriteFile(path, []byte(`{"outputStyle":"Gentleman","theme":"dark"}`), 0o644); err != nil {
+			t.Fatalf("WriteFile(matching): %v", err)
+		}
+
+		removed, err := removeJSONKeyIfValue(path, "outputStyle", "Gentleman")
+		if err != nil {
+			t.Fatalf("removeJSONKeyIfValue(matching) error = %v", err)
+		}
+		if !removed {
+			t.Fatal("removeJSONKeyIfValue(matching) removed = false")
+		}
+
+		raw, err := os.ReadFile(path)
+		if err != nil {
+			t.Fatalf("ReadFile(matching): %v", err)
+		}
+		text := string(raw)
+		if strings.Contains(text, "outputStyle") {
+			t.Fatalf("outputStyle was not removed; got:\n%s", text)
+		}
+		if !strings.Contains(text, `"theme": "dark"`) {
+			t.Fatalf("sibling key was not preserved; got:\n%s", text)
+		}
+	})
+
+	t.Run("preserves user value", func(t *testing.T) {
+		path := filepath.Join(home, "custom.json")
+		original := `{"outputStyle":"MyCustom","theme":"dark"}`
+		if err := os.WriteFile(path, []byte(original), 0o644); err != nil {
+			t.Fatalf("WriteFile(custom): %v", err)
+		}
+
+		removed, err := removeJSONKeyIfValue(path, "outputStyle", "Gentleman")
+		if err != nil {
+			t.Fatalf("removeJSONKeyIfValue(custom) error = %v", err)
+		}
+		if removed {
+			t.Fatal("removeJSONKeyIfValue(custom) removed = true")
+		}
+
+		raw, err := os.ReadFile(path)
+		if err != nil {
+			t.Fatalf("ReadFile(custom): %v", err)
+		}
+		if string(raw) != original {
+			t.Fatalf("custom JSON was modified; got %q, want %q", string(raw), original)
+		}
+	})
+
+	t.Run("ignores malformed json", func(t *testing.T) {
+		path := filepath.Join(home, "malformed-cleanup.json")
+		original := `{"outputStyle":"Gentleman", invalid`
+		if err := os.WriteFile(path, []byte(original), 0o644); err != nil {
+			t.Fatalf("WriteFile(malformed): %v", err)
+		}
+
+		removed, err := removeJSONKeyIfValue(path, "outputStyle", "Gentleman")
+		if err != nil {
+			t.Fatalf("removeJSONKeyIfValue(malformed) error = %v", err)
+		}
+		if removed {
+			t.Fatal("removeJSONKeyIfValue(malformed) removed = true")
+		}
+
+		raw, err := os.ReadFile(path)
+		if err != nil {
+			t.Fatalf("ReadFile(malformed): %v", err)
+		}
+		if string(raw) != original {
+			t.Fatalf("malformed JSON was modified; got %q, want %q", string(raw), original)
+		}
+	})
+
+	t.Run("propagates read errors", func(t *testing.T) {
+		originalReadFile := osReadFile
+		t.Cleanup(func() { osReadFile = originalReadFile })
+		osReadFile = func(string) ([]byte, error) {
+			return nil, fmt.Errorf("read failed")
+		}
+
+		if _, err := removeJSONKeyIfValue(filepath.Join(home, "denied-cleanup.json"), "outputStyle", "Gentleman"); err == nil {
+			t.Fatal("removeJSONKeyIfValue(read error) error = nil")
+		}
+	})
+}
+
+// TestInjectHermesGentlemanWritesSOULMD verifies that Inject writes the Hermes
+// gentleman persona into ~/.hermes/SOUL.md with <!-- gentle-ai:persona --> markers.
+func TestInjectHermesGentlemanWritesSOULMD(t *testing.T) {
+	home := t.TempDir()
+	adapter := hermesAdapter()
+
+	result, err := Inject(home, adapter, model.PersonaGentleman)
+	if err != nil {
+		t.Fatalf("Inject(hermes, gentleman) error = %v", err)
+	}
+	if !result.Changed {
+		t.Fatal("Inject(hermes, gentleman) changed = false")
+	}
+
+	soulPath := filepath.Join(home, ".hermes", "SOUL.md")
+	content, err := os.ReadFile(soulPath)
+	if err != nil {
+		t.Fatalf("ReadFile(SOUL.md) error = %v", err)
+	}
+	text := string(content)
+
+	if !strings.Contains(text, "<!-- gentle-ai:persona -->") {
+		t.Fatal("SOUL.md missing <!-- gentle-ai:persona --> open marker")
+	}
+	if !strings.Contains(text, "<!-- /gentle-ai:persona -->") {
+		t.Fatal("SOUL.md missing <!-- /gentle-ai:persona --> close marker")
+	}
+	if strings.Contains(text, availableSkillsIsAuthoritative) {
+		t.Fatal("SOUL.md contains the generic <available_skills> instruction — Hermes-specific asset not used")
+	}
+	if !strings.Contains(text, "~/.hermes/skills/") {
+		t.Fatal("SOUL.md missing ~/.hermes/skills/ reference")
+	}
+}
+
+// TestInjectHermesNeutralWritesSOULMD verifies that neutral persona injection into
+// SOUL.md uses the Hermes-specific neutral asset, not the generic one.
+func TestInjectHermesNeutralWritesSOULMD(t *testing.T) {
+	home := t.TempDir()
+	adapter := hermesAdapter()
+
+	result, err := Inject(home, adapter, model.PersonaNeutral)
+	if err != nil {
+		t.Fatalf("Inject(hermes, neutral) error = %v", err)
+	}
+	if !result.Changed {
+		t.Fatal("Inject(hermes, neutral) changed = false")
+	}
+
+	soulPath := filepath.Join(home, ".hermes", "SOUL.md")
+	content, err := os.ReadFile(soulPath)
+	if err != nil {
+		t.Fatalf("ReadFile(SOUL.md) error = %v", err)
+	}
+	text := string(content)
+
+	if !strings.Contains(text, "<!-- gentle-ai:persona -->") {
+		t.Fatal("SOUL.md missing <!-- gentle-ai:persona --> open marker")
+	}
+	if strings.Contains(text, availableSkillsIsAuthoritative) {
+		t.Fatal("SOUL.md contains the generic <available_skills> instruction — generic neutral used instead of Hermes-specific")
+	}
+}
+
+// TestHermesPersonaAssetsContainIdentitySection verifies that both Hermes persona
+// assets include an explicit ## Identity section that names "Gentle AI" and "Hermes".
+// This ensures that when a user asks "who are you?" the agent does not fall back to a
+// generic assistant identity — it answers as Gentle AI running on Hermes Agent.
+func TestHermesPersonaAssetsContainIdentitySection(t *testing.T) {
+	paths := []string{
+		"hermes/persona-gentleman.md",
+		"hermes/persona-neutral.md",
+	}
+
+	for _, path := range paths {
+		t.Run(path, func(t *testing.T) {
+			content := assets.MustRead(path)
+
+			if !strings.Contains(content, "## Identity") {
+				t.Fatalf("%s missing ## Identity section", path)
+			}
+			if !strings.Contains(content, "Gentle AI") {
+				t.Fatalf("%s ## Identity section must mention \"Gentle AI\"", path)
+			}
+			if !strings.Contains(content, "Hermes") {
+				t.Fatalf("%s ## Identity section must mention \"Hermes\"", path)
+			}
+		})
 	}
 }

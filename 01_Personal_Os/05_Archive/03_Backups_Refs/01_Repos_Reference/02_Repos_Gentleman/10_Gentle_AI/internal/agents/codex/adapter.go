@@ -8,6 +8,7 @@ import (
 
 	"github.com/gentleman-programming/gentle-ai/internal/model"
 	"github.com/gentleman-programming/gentle-ai/internal/system"
+	"github.com/gentleman-programming/gentle-ai/internal/versions"
 )
 
 var LookPathOverride = exec.LookPath
@@ -65,11 +66,13 @@ func (a *Adapter) SupportsAutoInstall() bool {
 }
 
 func (a *Adapter) InstallCommand(profile system.PlatformProfile) ([][]string, error) {
-	// Codex CLI installs via npm on all platforms.
+	// Codex CLI installs via npm on all platforms. Version is pinned and
+	// postinstall scripts are blocked to mitigate supply-chain risk.
+	pkg := "@openai/codex@" + versions.Codex
 	if profile.OS == "linux" && !profile.NpmWritable {
-		return [][]string{{"sudo", "npm", "install", "-g", "@openai/codex"}}, nil
+		return [][]string{{"sudo", "npm", "install", "-g", "--ignore-scripts", pkg}}, nil
 	}
-	return [][]string{{"npm", "install", "-g", "@openai/codex"}}, nil
+	return [][]string{{"npm", "install", "-g", "--ignore-scripts", pkg}}, nil
 }
 
 // --- Config paths ---
@@ -83,7 +86,7 @@ func (a *Adapter) SystemPromptDir(homeDir string) string {
 }
 
 func (a *Adapter) SystemPromptFile(homeDir string) string {
-	return filepath.Join(homeDir, ".codex", "agents.md")
+	return filepath.Join(homeDir, ".codex", "AGENTS.md")
 }
 
 func (a *Adapter) SkillsDir(homeDir string) string {
@@ -131,6 +134,18 @@ func (a *Adapter) CommandsDir(_ string) string {
 	return ""
 }
 
+func (a *Adapter) SupportsSubAgents() bool {
+	return false
+}
+
+func (a *Adapter) SubAgentsDir(_ string) string {
+	return ""
+}
+
+func (a *Adapter) EmbeddedSubAgentsDir() string {
+	return ""
+}
+
 func (a *Adapter) SupportsSkills() bool {
 	return true
 }
@@ -142,6 +157,13 @@ func (a *Adapter) SupportsSystemPrompt() bool {
 // SupportsMCP returns true — Codex supports MCP via ~/.codex/config.toml.
 func (a *Adapter) SupportsMCP() bool {
 	return true
+}
+
+// RenderCodexPhaseEfforts implements codexModelResolver. It delegates to
+// model.RenderCodexPhaseEfforts so that inject.go can substitute the
+// {{CODEX_PHASE_EFFORTS}} placeholder in the Codex orchestrator asset.
+func (a *Adapter) RenderCodexPhaseEfforts(assignments map[string]model.CodexEffort, carrilModels map[string]string) string {
+	return model.RenderCodexPhaseEfforts(assignments, carrilModels)
 }
 
 func defaultStat(path string) statResult {

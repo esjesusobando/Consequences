@@ -14,14 +14,14 @@ Cursor CLI (`cursor-agent`) launched in August 2025 and supports rules (`.mdc`),
 
 ## Component Mapping
 
-| Claude Code                                    | Cursor Equivalent                                      | Notes                                                                                                                                                                      |
-|-----------------------------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `agents/*.md`                                  | `.cursor/rules/*.mdc`                                  | Agents become "Agent Requested" rules (`alwaysApply: false`, `description` set) so the AI activates them on demand rather than flooding context                            |
-| `commands/*.md`                                | `.cursor/commands/*.md`                                | Plain markdown files; Cursor commands have no frontmatter support -- description becomes a markdown heading                                                                |
-| `skills/*/SKILL.md`                            | `.cursor/skills/*/SKILL.md`                            | **Identical standard** -- copy directly                                                                                                                                    |
-| MCP servers                                    | `.cursor/mcp.json`                                     | Same JSON structure (`mcpServers` key), compatible format                                                                                                                  |
-| `hooks/`                                       | No equivalent                                          | Cursor has no hook system; emit `console.warn` and skip                                                                                                                    |
-| `.claude/` paths                               | `.cursor/` paths                                       | Content rewriting needed                                                                                                                                                   |
+| Claude Code | Cursor Equivalent | Notes |
+|---|---|---|
+| `agents/*.md` | `.cursor/rules/*.mdc` | Agents become "Agent Requested" rules (`alwaysApply: false`, `description` set) so the AI activates them on demand rather than flooding context |
+| `commands/*.md` | `.cursor/commands/*.md` | Plain markdown files; Cursor commands have no frontmatter support -- description becomes a markdown heading |
+| `skills/*/SKILL.md` | `.cursor/skills/*/SKILL.md` | **Identical standard** -- copy directly |
+| MCP servers | `.cursor/mcp.json` | Same JSON structure (`mcpServers` key), compatible format |
+| `hooks/` | No equivalent | Cursor has no hook system; emit `console.warn` and skip |
+| `.claude/` paths | `.cursor/` paths | Content rewriting needed |
 
 ### Key Design Decisions
 
@@ -276,7 +276,7 @@ Add `cursor` to the supported targets in the CLI usage section.
 
 - Not converting hooks (Cursor has no hook system -- warn and skip)
 - Not generating `.cursor/cli.json` permissions (user-specific, not plugin-scoped)
-- Not creating `01_Personal_Os/11_AGENTS.md` (Cursor reads it natively, but not part of plugin conversion)
+- Not creating `AGENTS.md` (Cursor reads it natively, but not part of plugin conversion)
 - Not using `globs` field intelligently (would require analyzing agent content to guess file patterns)
 - Not adding sync support (follow-up task)
 - Not transforming content inside copied SKILL.md files (known limitation -- skills may reference `.claude/` paths internally)
@@ -303,4 +303,4 @@ Skills being identical across platforms simplifies things significantly. MCP con
 - Existing codex converter: `src/converters/claude-to-codex.ts` (has `uniqueName()` deduplication pattern)
 - Existing droid writer: `src/targets/droid.ts` (has double-nesting guard pattern)
 - Existing codex plan: `docs/plans/2026-02-08-feat-convert-local-md-settings-for-opencode-codex-plan.md`
-- Target provider checklist: `01_Personal_Os/11_AGENTS.md` section "Adding a New Target Provider"
+- Target provider checklist: `AGENTS.md` section "Adding a New Target Provider"

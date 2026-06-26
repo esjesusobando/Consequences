@@ -37,7 +37,7 @@ The primary audience is human developers. A document that works for human compre
 
 - Does not attempt to infer or fabricate design rationale ("why was X chosen over Y") — the creator may not know, and presenting guesses as fact is worse than saying nothing
 - Does not assess fragility or risk areas — that requires judgment about production behavior the agent doesn't have
-- Does not generate README.md, CLAUDE.md, 01_Personal_Os/11_AGENTS.md, or any other document — only `ONBOARDING.md`
+- Does not generate README.md, CLAUDE.md, AGENTS.md, or any other document — only `ONBOARDING.md`
 - Does not preserve hand-edits from a previous version on regeneration — if users want durable authored context, it belongs in other docs (which the skill may discover and link to)
 - No `ce:` prefix — this is a standalone utility skill, not part of the core workflow
 

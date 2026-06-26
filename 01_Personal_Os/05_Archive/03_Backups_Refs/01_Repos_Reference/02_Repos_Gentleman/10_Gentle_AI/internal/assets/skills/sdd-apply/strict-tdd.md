@@ -181,11 +181,11 @@ When Strict TDD Mode is active, your return summary MUST include this section:
 
 ```markdown
 ### TDD Cycle Evidence
-| Task                            | Test File                                | Layer                                | Safety Net                            | RED                                | GREEN                             | TRIANGULATE                            | REFACTOR                               |
-|--------------------------------|-----------------------------------------|-------------------------------------|--------------------------------------|-----------------------------------|----------------------------------|---------------------------------------|---------------------------------------|
-| 1.1                             | `path/test.ext`                          | Unit                                 | ✅ 5/5                                 | ✅ Written                          | ✅ Passed                          | ✅ 3 cases                              | ✅ Clean                                |
-| 1.2                             | `path/test.ext`                          | Integration                          | N/A (new)                             | ✅ Written                          | ✅ Passed                          | ➖ Single                               | ✅ Clean                                |
-| 1.3                             | `path/test.ext`                          | Unit                                 | ✅ 2/2                                 | ✅ Written                          | ✅ Passed                          | ✅ 2 cases                              | ➖ None needed                          |
+| Task | Test File | Layer | Safety Net | RED | GREEN | TRIANGULATE | REFACTOR |
+|------|-----------|-------|------------|-----|-------|-------------|----------|
+| 1.1 | `path/test.ext` | Unit | ✅ 5/5 | ✅ Written | ✅ Passed | ✅ 3 cases | ✅ Clean |
+| 1.2 | `path/test.ext` | Integration | N/A (new) | ✅ Written | ✅ Passed | ➖ Single | ✅ Clean |
+| 1.3 | `path/test.ext` | Unit | ✅ 2/2 | ✅ Written | ✅ Passed | ✅ 2 cases | ➖ None needed |
 
 ### Test Summary
 - **Total tests written**: {N}

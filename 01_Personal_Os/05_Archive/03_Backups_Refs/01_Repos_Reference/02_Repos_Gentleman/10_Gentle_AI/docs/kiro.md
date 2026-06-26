@@ -12,12 +12,12 @@ gentle-ai supports Kiro as a **native-subagent** platform (`kiro-ide`).
 
 When configured, gentle-ai installs:
 
-| Artifact                                   | Path                                                                                    |
-|-------------------------------------------|----------------------------------------------------------------------------------------|
-| Steering file                              | `~/.kiro/steering/gentle-ai.md`                                                         |
-| Native SDD agents                          | `~/.kiro/agents/sdd-{phase}.md` *(10 files)*                                            |
-| Skills directory                           | `~/.kiro/skills/`                                                                       |
-| MCP config                                 | `~/.kiro/settings/mcp.json` *(separate root — see note below)*                          |
+| Artifact | Path |
+|----------|------|
+| Steering file | `~/.kiro/steering/gentle-ai.md` |
+| Native SDD agents | `~/.kiro/agents/sdd-{phase}.md` *(10 files)* |
+| Skills directory | `~/.kiro/skills/` |
+| MCP config | `~/.kiro/settings/mcp.json` *(separate root — see note below)* |
 
 > **Auto-install not supported.** Kiro must be installed manually before running gentle-ai.
 > Download from: [kiro.dev/downloads](https://kiro.dev/downloads)
@@ -66,11 +66,11 @@ Kiro has a built-in spec workflow that gentle-ai leverages. For medium and large
 
 **Size classification** routes tasks through Small / Medium / Large paths to decide planning depth:
 
-| Size                            | Approach                                                                                                      |
-|--------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Small                           | Inline — no formal SDD phases                                                                                 |
-| Medium                          | Kiro native specs (`.kiro/specs/`) + Engram                                                                   |
-| Large                           | Full SDD cycle: explore → propose → spec → design → tasks → apply → verify → archive                          |
+| Size | Approach |
+|------|----------|
+| Small | Inline — no formal SDD phases |
+| Medium | Kiro native specs (`.kiro/specs/`) + Engram |
+| Large | Full SDD cycle: explore → propose → spec → design → tasks → apply → verify → archive |
 
 ---
 
@@ -96,7 +96,7 @@ Kiro SDD phase agents are generated with YAML frontmatter including:
 - `model`
 - `includeMcpJson: true`
 
-The `model` value is injected during sync from Claude alias assignments (`opus|sonnet|haiku`) to Kiro-native model IDs.
+The `model` value is injected during sync from Kiro model assignments (`auto|opus|sonnet|haiku|minimax|glm|deepseek|qwen`) to Kiro-native model IDs.
 
 ---
 
@@ -104,33 +104,33 @@ The `model` value is injected during sync from Claude alias assignments (`opus|s
 
 ### macOS
 
-| Artifact                                   | Path                                                                             |
-|-------------------------------------------|---------------------------------------------------------------------------------|
-| Global config dir                          | `~/Library/Application Support/Kiro/User`                                        |
-| Steering file                              | `~/.kiro/steering/gentle-ai.md`                                                  |
-| Skills dir                                 | `~/.kiro/skills/`                                                                |
-| Settings path                              | `~/Library/Application Support/Kiro/User/settings.json`                          |
-| MCP config                                 | `~/.kiro/settings/mcp.json`                                                      |
+| Artifact | Path |
+|----------|------|
+| Global config dir | `~/Library/Application Support/Kiro/User` |
+| Steering file | `~/.kiro/steering/gentle-ai.md` |
+| Skills dir | `~/.kiro/skills/` |
+| Settings path | `~/Library/Application Support/Kiro/User/settings.json` |
+| MCP config | `~/.kiro/settings/mcp.json` |
 
 ### Windows
 
-| Artifact                                   | Path                                                                 |
-|-------------------------------------------|---------------------------------------------------------------------|
-| Global config dir                          | `%APPDATA%\kiro\User`                                                |
-| Steering file                              | `%USERPROFILE%\.kiro\steering\gentle-ai.md`                          |
-| Skills dir                                 | `%USERPROFILE%\.kiro\skills\`                                        |
-| Settings path                              | `%APPDATA%\kiro\User\settings.json`                                  |
-| MCP config                                 | `%USERPROFILE%\.kiro\settings\mcp.json`                              |
+| Artifact | Path |
+|----------|------|
+| Global config dir | `%APPDATA%\kiro\User` |
+| Steering file | `%USERPROFILE%\.kiro\steering\gentle-ai.md` |
+| Skills dir | `%USERPROFILE%\.kiro\skills\` |
+| Settings path | `%APPDATA%\kiro\User\settings.json` |
+| MCP config | `%USERPROFILE%\.kiro\settings\mcp.json` |
 
 ### Linux (XDG)
 
-| Artifact                                   | Path                                                                                      |
-|-------------------------------------------|------------------------------------------------------------------------------------------|
-| Global config dir                          | `$XDG_CONFIG_HOME/kiro/user` *(fallback: `~/.config/kiro/user`)*                          |
-| Steering file                              | `~/.kiro/steering/gentle-ai.md`                                                           |
-| Skills dir                                 | `~/.kiro/skills/`                                                                         |
-| Settings path                              | `$XDG_CONFIG_HOME/kiro/user/settings.json`                                                |
-| MCP config                                 | `~/.kiro/settings/mcp.json`                                                               |
+| Artifact | Path |
+|----------|------|
+| Global config dir | `$XDG_CONFIG_HOME/kiro/user` *(fallback: `~/.config/kiro/user`)* |
+| Steering file | `~/.kiro/steering/gentle-ai.md` |
+| Skills dir | `~/.kiro/skills/` |
+| Settings path | `$XDG_CONFIG_HOME/kiro/user/settings.json` |
+| MCP config | `~/.kiro/settings/mcp.json` |
 
 ---
 
@@ -156,12 +156,12 @@ If gentle-ai skills or steering are missing, check `~/.kiro/skills/` and `~/.kir
 
 ## Capability Snapshot
 
-| Capability                                | Status                                                  |
-|------------------------------------------|--------------------------------------------------------|
-| Skills                                    | ✅ Yes                                                   |
-| System prompt                             | ✅ Yes                                                   |
-| MCP                                       | ✅ Yes                                                   |
-| Output styles                             | ❌ No                                                    |
-| Slash commands                            | ❌ No                                                    |
-| Delegation model                          | Full (native subagents)                                 |
-| Auto-install                              | ❌ No — manual install required                          |
+| Capability | Status |
+|------------|--------|
+| Skills | ✅ Yes |
+| System prompt | ✅ Yes |
+| MCP | ✅ Yes |
+| Output styles | ❌ No |
+| Slash commands | ❌ No |
+| Delegation model | Full (native subagents) |
+| Auto-install | ❌ No — manual install required |

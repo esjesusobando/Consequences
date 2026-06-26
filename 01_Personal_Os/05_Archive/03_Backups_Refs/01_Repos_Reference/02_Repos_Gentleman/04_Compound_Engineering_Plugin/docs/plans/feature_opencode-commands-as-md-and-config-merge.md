@@ -28,18 +28,18 @@ When running `bunx @every-env/compound-plugin install compound-engineering --to 
 
 ### Relevant File Paths
 
-| File                                                              | Current State on `main`                                                                                                                                                                             | What Changes                                                                                                                                                                                  |
-|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `src/types/opencode.ts`                                           | `OpenCodeBundle` has no `commandFiles` field. Has `OpenCodeCommandConfig` type and `command` field on `OpenCodeConfig`.                                                                             | Add `OpenCodeCommandFile` type. Add `commandFiles` to `OpenCodeBundle`. Remove `OpenCodeCommandConfig` type and `command` field from `OpenCodeConfig`.                                        |
-| `src/converters/claude-to-opencode.ts`                            | `convertCommands()` returns `Record<string, OpenCodeCommandConfig>`. Result set on `config.command`. `applyPermissions()` writes `config.permission` and `config.tools`.                            | `convertCommands()` returns `OpenCodeCommandFile[]`. `config.command` is never set. No changes to `applyPermissions()` itself.                                                                |
-| `src/targets/opencode.ts`                                         | `writeOpenCodeBundle()` does `writeJson(configPath, bundle.config)` — full overwrite. No `commandsDir`. No merge logic.                                                                             | Add `commandsDir` to path resolver. Write command `.md` files with backup. Replace overwrite with `mergeOpenCodeConfig()` — read existing, deep-merge, write back.                            |
-| `src/commands/install.ts`                                         | `--permissions` default is `"broad"` (line 51).                                                                                                                                                     | Change default to `"none"`. Update description string.                                                                                                                                        |
-| `src/utils/files.ts`                                              | Has `readJson()`, `pathExists()`, `backupFile()` already.                                                                                                                                           | No changes needed — utilities already exist.                                                                                                                                                  |
-| `tests/converter.test.ts`                                         | Tests reference `bundle.config.command` (lines 19, 74, 202-214, 243). Test `"maps commands, permissions, and agents"` tests `from-commands` mode.                                                   | Update all to use `bundle.commandFiles`. Rename permission-related test to clarify opt-in nature.                                                                                             |
-| `tests/opencode-writer.test.ts`                                   | 4 tests, none have `commandFiles` in bundles. `"backs up existing opencode.json before overwriting"` test expects full overwrite.                                                                   | Add `commandFiles: []` to all existing bundles. Rewrite backup test to test merge behavior. Add new tests for command file writing and merge.                                                 |
-| `tests/cli.test.ts`                                               | 10 tests. None check for commands directory.                                                                                                                                                        | Add test for `--permissions none` default. Add test for command `.md` file existence.                                                                                                         |
-| `01_Personal_Os/11_AGENTS.md`                                     | Line 10: "Keep OpenCode output at `opencode.json` and `.opencode/{agents,skills,plugins}`."                                                                                                         | Update to document commands go to `commands/<name>.md`, `opencode.json` is deep-merged.                                                                                                       |
-| `README.md`                                                       | Line 54: "OpenCode output is written to `~/.config/opencode` by default, with `opencode.json` at the root..."                                                                                       | Update to document `.md` command files, merge behavior, `--permissions` default.                                                                                                              |
+| File | Current State on `main` | What Changes |
+|---|---|---|
+| `src/types/opencode.ts` | `OpenCodeBundle` has no `commandFiles` field. Has `OpenCodeCommandConfig` type and `command` field on `OpenCodeConfig`. | Add `OpenCodeCommandFile` type. Add `commandFiles` to `OpenCodeBundle`. Remove `OpenCodeCommandConfig` type and `command` field from `OpenCodeConfig`. |
+| `src/converters/claude-to-opencode.ts` | `convertCommands()` returns `Record<string, OpenCodeCommandConfig>`. Result set on `config.command`. `applyPermissions()` writes `config.permission` and `config.tools`. | `convertCommands()` returns `OpenCodeCommandFile[]`. `config.command` is never set. No changes to `applyPermissions()` itself. |
+| `src/targets/opencode.ts` | `writeOpenCodeBundle()` does `writeJson(configPath, bundle.config)` — full overwrite. No `commandsDir`. No merge logic. | Add `commandsDir` to path resolver. Write command `.md` files with backup. Replace overwrite with `mergeOpenCodeConfig()` — read existing, deep-merge, write back. |
+| `src/commands/install.ts` | `--permissions` default is `"broad"` (line 51). | Change default to `"none"`. Update description string. |
+| `src/utils/files.ts` | Has `readJson()`, `pathExists()`, `backupFile()` already. | No changes needed — utilities already exist. |
+| `tests/converter.test.ts` | Tests reference `bundle.config.command` (lines 19, 74, 202-214, 243). Test `"maps commands, permissions, and agents"` tests `from-commands` mode. | Update all to use `bundle.commandFiles`. Rename permission-related test to clarify opt-in nature. |
+| `tests/opencode-writer.test.ts` | 4 tests, none have `commandFiles` in bundles. `"backs up existing opencode.json before overwriting"` test expects full overwrite. | Add `commandFiles: []` to all existing bundles. Rewrite backup test to test merge behavior. Add new tests for command file writing and merge. |
+| `tests/cli.test.ts` | 10 tests. None check for commands directory. | Add test for `--permissions none` default. Add test for command `.md` file existence. |
+| `AGENTS.md` | Line 10: "Keep OpenCode output at `opencode.json` and `.opencode/{agents,skills,plugins}`." | Update to document commands go to `commands/<name>.md`, `opencode.json` is deep-merged. |
+| `README.md` | Line 54: "OpenCode output is written to `~/.config/opencode` by default, with `opencode.json` at the root..." | Update to document `.md` command files, merge behavior, `--permissions` default. |
 
 ### Prior Context (Pre-Investigation)
 
@@ -99,7 +99,7 @@ Rejected: Redundant and defeats the purpose of avoiding `opencode.json` pollutio
 
 ## ADRs To Create
 
-Create `docs/decisions/` directory (does not exist on `main`). ADRs follow `01_Personal_Os/11_AGENTS.md` numbering convention: `0001-short-title.md`.
+Create `docs/decisions/` directory (does not exist on `main`). ADRs follow `AGENTS.md` numbering convention: `0001-short-title.md`.
 
 ### ADR 0001: OpenCode commands written as `.md` files, not in `opencode.json`
 
@@ -385,7 +385,7 @@ async function mergeOpenCodeConfig(
   try {
     existing = await readJson<OpenCodeConfig>(configPath)
   } catch {
-    // Safety first per 01_Personal_Os/11_AGENTS.md -- do not destroy user data even if their config is malformed.
+    // Safety first per AGENTS.md -- do not destroy user data even if their config is malformed.
     // Warn and fall back to plugin-only config rather than crashing.
     console.warn(
       `Warning: existing ${configPath} is not valid JSON. Writing plugin config without merging.`
@@ -435,7 +435,7 @@ await writeJson(paths.configPath, merged)
 **Code comments required:**
 - Above `mergeOpenCodeConfig()`: `// Merges plugin config into existing opencode.json. User keys win on conflict. See ADR-002.`
 - On the `...(existing.mcp ?? {})` line: `// existing takes precedence (overwrites same-named plugin entries)`
-- On malformed JSON catch: `// Safety first per 01_Personal_Os/11_AGENTS.md -- do not destroy user data even if their config is malformed.`
+- On malformed JSON catch: `// Safety first per AGENTS.md -- do not destroy user data even if their config is malformed.`
 
 **Verification:** Run `bun test tests/opencode-writer.test.ts`. All tests must pass including the renamed test and the 2 new merge tests.
 
@@ -477,7 +477,7 @@ In `src/commands/install.ts`:
 
 ---
 
-### Phase 6: Update `01_Personal_Os/11_AGENTS.md` and `README.md`
+### Phase 6: Update `AGENTS.md` and `README.md`
 
 **What:** Update documentation to reflect all three changes.
 
@@ -487,7 +487,7 @@ In `src/commands/install.ts`:
 
 **Implementation:**
 
-In `01_Personal_Os/11_AGENTS.md` line 10, replace:
+In `AGENTS.md` line 10, replace:
 ```
 - **Output Paths:** Keep OpenCode output at `opencode.json` and `.opencode/{agents,skills,plugins}`.
 ```
@@ -505,7 +505,7 @@ with:
 OpenCode output is written to `~/.config/opencode` by default. Commands are written as individual `.md` files to `~/.config/opencode/commands/<name>.md`. Agents, skills, and plugins are written to the corresponding subdirectories alongside. `opencode.json` (MCP servers) is deep-merged into any existing file -- user keys such as `model`, `theme`, and `provider` are preserved, and user values win on conflicts. Command files are backed up before being overwritten.
 ```
 
-Also update `01_Personal_Os/11_AGENTS.md` to add a Repository Docs Conventions section if not present:
+Also update `AGENTS.md` to add a Repository Docs Conventions section if not present:
 ```
 ## Repository Docs Conventions
 
@@ -557,7 +557,7 @@ The executing agent MUST follow this sequence for every phase that touches sourc
 - Existing writer tests in `tests/opencode-writer.test.ts` use `fs.mkdtemp()` for temp directories and the local `exists()` helper function.
 - Existing CLI tests in `tests/cli.test.ts` use `Bun.spawn()` to invoke the CLI.
 - Existing converter tests in `tests/converter.test.ts` use `loadClaudePlugin(fixtureRoot)` for real fixtures and inline `ClaudePlugin` objects for isolated tests.
-- ADR format: Follow `01_Personal_Os/11_AGENTS.md` numbering convention `0001-short-title.md` with sections: Status, Date, Context, Decision, Consequences, Plan Reference.
+- ADR format: Follow `AGENTS.md` numbering convention `0001-short-title.md` with sections: Status, Date, Context, Decision, Consequences, Plan Reference.
 - Commits: Use conventional commit format. Reference ADRs in commit bodies.
 - Branch: Create `feature/opencode-commands-md-merge-permissions` from `main`.
 
@@ -571,4 +571,4 @@ After all phases complete:
 - [ ] `opencode.json` is never fully overwritten — merge logic confirmed by test
 - [ ] Commands are written as `.md` files — confirmed by test
 - [ ] `--permissions` defaults to `"none"` — confirmed by CLI test
-- [ ] `01_Personal_Os/11_AGENTS.md` and `README.md` updated to reflect new behavior
+- [ ] `AGENTS.md` and `README.md` updated to reflect new behavior

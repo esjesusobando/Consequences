@@ -23,21 +23,21 @@ After GGA installs its bash script (via `install.sh`), gentle-ai installs `gga.p
 
 ## Affected Areas
 
-| Area                                                          | Impact                                    | Description                                                                |
-|--------------------------------------------------------------|------------------------------------------|---------------------------------------------------------------------------|
-| `internal/assets/gga/gga.ps1`                                 | New                                       | PowerShell wrapper asset (embedded)                                        |
-| `internal/installcmd/resolver.go`                             | Modified                                  | Add Windows step: write `.ps1` shim after install                          |
-| `internal/components/gga/install.go`                          | Modified (maybe)                          | Hook shim install into GGA install flow                                    |
-| `docs/platforms.md`                                           | Modified                                  | Remove Windows limitation note                                             |
+| Area | Impact | Description |
+|------|--------|-------------|
+| `internal/assets/gga/gga.ps1` | New | PowerShell wrapper asset (embedded) |
+| `internal/installcmd/resolver.go` | Modified | Add Windows step: write `.ps1` shim after install |
+| `internal/components/gga/install.go` | Modified (maybe) | Hook shim install into GGA install flow |
+| `docs/platforms.md` | Modified | Remove Windows limitation note |
 
 ## Risks
 
-| Risk                                                              | Likelihood                            | Mitigation                                                                       |
-|------------------------------------------------------------------|--------------------------------------|---------------------------------------------------------------------------------|
-| Git Bash not installed on target machine                          | Med                                   | Check at install time; surface clear error message                               |
-| Arguments with spaces break invocation                            | Med                                   | Use PowerShell `$args` array expansion, not string join                          |
-| Exit code not propagated                                          | Low                                   | Use `$LASTEXITCODE` and `exit` explicitly in shim                                |
-| Stale `.ps1` from a prior install                                 | Low                                   | Atomic write with content hash check (existing pattern)                          |
+| Risk | Likelihood | Mitigation |
+|------|------------|------------|
+| Git Bash not installed on target machine | Med | Check at install time; surface clear error message |
+| Arguments with spaces break invocation | Med | Use PowerShell `$args` array expansion, not string join |
+| Exit code not propagated | Low | Use `$LASTEXITCODE` and `exit` explicitly in shim |
+| Stale `.ps1` from a prior install | Low | Atomic write with content hash check (existing pattern) |
 
 ## Rollback Plan
 

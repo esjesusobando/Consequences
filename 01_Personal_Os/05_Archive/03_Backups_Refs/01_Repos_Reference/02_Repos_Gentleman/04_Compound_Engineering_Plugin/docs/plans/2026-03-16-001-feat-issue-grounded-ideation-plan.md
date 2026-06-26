@@ -29,7 +29,7 @@ Two deliverables:
 
 ### Deliverable 1: Issue Intelligence Analyst Agent
 
-**File**: `plugins/compound-engineering/agents/research/issue-intelligence-analyst.md`
+**File**: `plugins/compound-engineering/agents/research/ce-issue-intelligence-analyst.agent.md`
 
 **Frontmatter:**
 ```yaml
@@ -133,7 +133,7 @@ The agent runs as a sub-agent with its own context window. Every token of fetche
 - **Body reads (samples only):** After clusters emerge, fetch full bodies for 2-3 representative issues per cluster using individual `gh issue view {number} --json body` calls. Pick the most reacted or most recent issue in each cluster.
 - **Never fetch all bodies in bulk.** 100 issue bodies could easily consume 50k+ tokens before any analysis begins.
 
-**Tool guidance** (per 01_Personal_Os/11_AGENTS.md conventions):
+**Tool guidance** (per AGENTS.md conventions):
 - Use `gh` CLI for issue fetching (one simple command at a time, no chaining)
 - Use native file-search/glob for any repo exploration
 - Use native content-search/grep for label or pattern searches
@@ -190,13 +190,13 @@ When checking for recent ideation documents, treat issue-grounded and non-issue 
 
 ### Files Changed
 
-| File                                                                       | Change                                                                                                 |
-|---------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| `agents/research/issue-intelligence-analyst.md`                            | **New file** — the agent                                                                               |
-| `skills/ce-ideate/SKILL.md`                                                | **Modified** — 4 targeted modifications (Phase 0.1, 0.2, 1, 2)                                         |
-| `.claude-plugin/plugin.json`                                               | **Modified** — increment agent count, add agent to list, update description                            |
-| `../../.claude-plugin/marketplace.json`                                    | **Modified** — update description with new agent count                                                 |
-| `README.md`                                                                | **Modified** — add agent to research agents table                                                      |
+| File | Change |
+|------|--------|
+| `agents/research/issue-intelligence-analyst.md` | **New file** — the agent |
+| `skills/ce-ideate/SKILL.md` | **Modified** — 4 targeted modifications (Phase 0.1, 0.2, 1, 2) |
+| `.claude-plugin/plugin.json` | **Modified** — increment agent count, add agent to list, update description |
+| `../../.claude-plugin/marketplace.json` | **Modified** — update description with new agent count |
+| `README.md` | **Modified** — add agent to research agents table |
 
 ### Not Changed
 
@@ -240,7 +240,7 @@ When checking for recent ideation documents, treat issue-grounded and non-issue 
 ## Sources & References
 
 - **Origin brainstorm:** [docs/brainstorms/2026-03-16-issue-grounded-ideation-requirements.md](docs/brainstorms/2026-03-16-issue-grounded-ideation-requirements.md) — Key decisions: pattern-first ideation, hybrid frame strategy, flexible argument detection, additive to Phase 1, standalone agent
-- **Exemplar agent:** `plugins/compound-engineering/agents/research/repo-research-analyst.md` — agent structure pattern
+- **Exemplar agent:** `plugins/compound-engineering/agents/research/ce-repo-research-analyst.agent.md` — agent structure pattern
 - **ce:ideate skill:** `plugins/compound-engineering/skills/ce-ideate/SKILL.md` — integration target
 - **Institutional learning:** `docs/solutions/skill-design/compound-refresh-skill-improvements.md` — impact clustering pattern, platform-agnostic tool references, evidence-first interaction
 - **Real-world test repo:** `EveryInc/proof` (555 issues, 25+ LIVE_DOC_UNAVAILABLE duplicates, structured labels)

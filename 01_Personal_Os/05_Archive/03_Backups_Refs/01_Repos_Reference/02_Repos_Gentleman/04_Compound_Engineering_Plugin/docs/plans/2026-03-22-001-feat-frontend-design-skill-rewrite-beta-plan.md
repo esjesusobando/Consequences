@@ -49,8 +49,8 @@ Two external sources informed the redesign: Anthropic's official frontend-design
 - `plugins/compound-engineering/skills/ce-plan-beta/SKILL.md` -- reference for cross-agent interaction patterns (Pattern A: platform's blocking question tool with named equivalents)
 - `plugins/compound-engineering/skills/reproduce-bug/SKILL.md` -- reference for cross-agent patterns
 - `plugins/compound-engineering/skills/agent-browser/SKILL.md` -- upstream-vendored, reference for browser automation CLI
-- `plugins/compound-engineering/agents/design/design-iterator.md` -- contains `<frontend_aesthetics>` block that overlaps with current skill; new skill will supersede this when both are loaded
-- `plugins/compound-engineering/01_Personal_Os/11_AGENTS.md` -- skill compliance checklist (cross-platform interaction, tool selection, reference rules)
+- `plugins/compound-engineering/agents/design/ce-design-iterator.agent.md` -- contains `<frontend_aesthetics>` block that overlaps with current skill; new skill will supersede this when both are loaded
+- `plugins/compound-engineering/AGENTS.md` -- skill compliance checklist (cross-platform interaction, tool selection, reference rules)
 
 ### Institutional Learnings
 
@@ -67,7 +67,7 @@ Two external sources informed the redesign: Anthropic's official frontend-design
 - **Inline everything in SKILL.md**: No reference files or scripts directory. The skill is pure guidance (~300-400 lines of markdown). The detection checklist, context modules, anti-patterns, litmus checks, and verification cascade all live in one file.
 - **Fix ce-work-beta duplicate numbering**: The current Phase 2 has two items numbered "6." (Figma Design Sync and Track Progress). Fix this while inserting the new section.
 - **Framework-conditional animation defaults**: CSS animations as universal baseline. Framer Motion for React, Vue Transition / Motion One for Vue, Svelte transitions for Svelte. Only when no existing animation library is detected.
-- **Semantic skill references only**: Reference agent-browser as "load the `agent-browser` skill" not `/agent-browser`. Per 01_Personal_Os/11_AGENTS.md and Codex conversion learnings.
+- **Semantic skill references only**: Reference agent-browser as "load the `agent-browser` skill" not `/agent-browser`. Per AGENTS.md and Codex conversion learnings.
 
 ## Open Questions
 
@@ -100,7 +100,7 @@ Two external sources informed the redesign: Anthropic's official frontend-design
   - Use the optimized description from the brainstorm doc (see origin: Section "Skill Description (Optimized)")
   - Structure as: Frontmatter -> Preamble (authority hierarchy, workflow preview) -> Layer 0 (context detection with concrete checklist, mode classification, cross-platform question pattern) -> Layer 1 (pre-build planning) -> Layer 2 (design guidance core with subsections for typography, color, composition, motion, accessibility, imagery) -> Context Modules (A/B/C) -> Hard Rules & Anti-Patterns (two tiers) -> Litmus Checks -> Visual Verification (tool cascade with scope control)
   - Carry forward from current skill: anti-AI-slop identity, creative energy for greenfield, tone-picking exercise, differentiation prompt
-  - Apply 01_Personal_Os/11_AGENTS.md skill compliance checklist: imperative voice, capability-first tool references with platform examples, semantic skill references, no shell recipes for exploration, cross-platform question patterns with fallback
+  - Apply AGENTS.md skill compliance checklist: imperative voice, capability-first tool references with platform examples, semantic skill references, no shell recipes for exploration, cross-platform question patterns with fallback
   - All rules framed as defaults that yield to existing design systems and user instructions
   - Copy guidance uses "Every sentence should earn its place. Default to less copy, not more." (not arbitrary percentage thresholds)
   - Animation defaults are framework-conditional: CSS baseline, then Framer Motion (React), Vue Transition/Motion One (Vue), Svelte transitions (Svelte)
@@ -111,11 +111,11 @@ Two external sources informed the redesign: Anthropic's official frontend-design
   **Patterns to follow:**
   - `plugins/compound-engineering/skills/ce-plan-beta/SKILL.md` -- cross-agent interaction pattern (Pattern A)
   - `plugins/compound-engineering/skills/reproduce-bug/SKILL.md` -- cross-agent tool reference pattern
-  - `plugins/compound-engineering/01_Personal_Os/11_AGENTS.md` -- skill compliance checklist
+  - `plugins/compound-engineering/AGENTS.md` -- skill compliance checklist
   - `docs/solutions/skill-design/compound-refresh-skill-improvements.md` -- anti-pattern table for tool references
 
   **Test scenarios:**
-  - Skill passes all items in the 01_Personal_Os/11_AGENTS.md skill compliance checklist
+  - Skill passes all items in the AGENTS.md skill compliance checklist
   - Description field is present and follows "what + when" format
   - No hardcoded Claude-specific tool names without platform equivalents
   - No slash references to other skills (uses semantic wording)

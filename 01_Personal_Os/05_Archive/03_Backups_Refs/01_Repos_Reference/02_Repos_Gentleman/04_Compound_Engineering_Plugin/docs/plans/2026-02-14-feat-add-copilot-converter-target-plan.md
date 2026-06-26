@@ -30,13 +30,13 @@ Follow the existing converter pattern exactly:
 
 ### Component Mapping
 
-| Claude Code                                    | Copilot                                                | Output Path                                                  |
-|-----------------------------------------------|-------------------------------------------------------|-------------------------------------------------------------|
-| Agents (`.md`)                                 | Custom Agents (`.agent.md`)                            | `.github/agents/{name}.agent.md`                             |
-| Commands (`.md`)                               | Agent Skills (`SKILL.md`)                              | `.github/skills/{name}/SKILL.md`                             |
-| Skills (`SKILL.md`)                            | Agent Skills (`SKILL.md`)                              | `.github/skills/{name}/SKILL.md`                             |
-| MCP Servers                                    | Config JSON                                            | `.github/copilot-mcp-config.json`                            |
-| Hooks                                          | Skipped                                                | Warning to stderr                                            |
+| Claude Code | Copilot | Output Path |
+|-------------|---------|-------------|
+| Agents (`.md`) | Custom Agents (`.agent.md`) | `.github/agents/{name}.agent.md` |
+| Commands (`.md`) | Agent Skills (`SKILL.md`) | `.github/skills/{name}/SKILL.md` |
+| Skills (`SKILL.md`) | Agent Skills (`SKILL.md`) | `.github/skills/{name}/SKILL.md` |
+| MCP Servers | Config JSON | `.github/copilot-mcp-config.json` |
+| Hooks | Skipped | Warning to stderr |
 
 ## Technical Approach
 
@@ -106,13 +106,13 @@ export type CopilotBundle = {
 
 **Content transformation (`transformContentForCopilot`):**
 
-| Pattern                                        | Input                                                         | Output                                                                    |
-|-----------------------------------------------|--------------------------------------------------------------|--------------------------------------------------------------------------|
-| Task calls                                     | `Task repo-research-analyst(desc)`                            | `Use the repo-research-analyst skill to: desc`                            |
-| Slash commands                                 | `/workflows:plan`                                             | `/plan`                                                                   |
-| Path rewriting                                 | `.claude/`                                                    | `.github/`                                                                |
-| Home path rewriting                            | `~/.claude/`                                                  | `~/.copilot/`                                                             |
-| Agent references                               | `@security-sentinel`                                          | `the security-sentinel agent`                                             |
+| Pattern | Input | Output |
+|---------|-------|--------|
+| Task calls | `Task repo-research-analyst(desc)` | `Use the repo-research-analyst skill to: desc` |
+| Slash commands | `/workflows:plan` | `/plan` |
+| Path rewriting | `.claude/` | `.github/` |
+| Home path rewriting | `~/.claude/` | `~/.copilot/` |
+| Agent references | `@security-sentinel` | `the security-sentinel agent` |
 
 **Hooks:** Warn to stderr if present, skip.
 
@@ -298,24 +298,24 @@ Follow `docs/specs/cursor.md` format:
 
 ## Files to Create
 
-| File                                                             | Purpose                                         |
-|-----------------------------------------------------------------|------------------------------------------------|
-| `src/types/copilot.ts`                                           | Type definitions                                |
-| `src/converters/claude-to-copilot.ts`                            | Converter logic                                 |
-| `src/targets/copilot.ts`                                         | Writer logic                                    |
-| `src/sync/copilot.ts`                                            | Sync handler                                    |
-| `tests/copilot-converter.test.ts`                                | Converter tests                                 |
-| `tests/copilot-writer.test.ts`                                   | Writer tests                                    |
-| `tests/sync-copilot.test.ts`                                     | Sync tests                                      |
-| `docs/specs/copilot.md`                                          | Format specification                            |
+| File | Purpose |
+|------|---------|
+| `src/types/copilot.ts` | Type definitions |
+| `src/converters/claude-to-copilot.ts` | Converter logic |
+| `src/targets/copilot.ts` | Writer logic |
+| `src/sync/copilot.ts` | Sync handler |
+| `tests/copilot-converter.test.ts` | Converter tests |
+| `tests/copilot-writer.test.ts` | Writer tests |
+| `tests/sync-copilot.test.ts` | Sync tests |
+| `docs/specs/copilot.md` | Format specification |
 
 ## Files to Modify
 
-| File                                              | Change                                                                            |
-|--------------------------------------------------|----------------------------------------------------------------------------------|
-| `src/targets/index.ts`                            | Register copilot target                                                           |
-| `src/commands/sync.ts`                            | Add copilot to valid targets, output root, switch case                            |
-| `README.md`                                       | Add copilot to supported targets                                                  |
+| File | Change |
+|------|--------|
+| `src/targets/index.ts` | Register copilot target |
+| `src/commands/sync.ts` | Add copilot to valid targets, output root, switch case |
+| `README.md` | Add copilot to supported targets |
 
 ## References
 

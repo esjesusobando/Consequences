@@ -500,9 +500,9 @@ The dry-run summary should include:
 **Dependencies:** Units 1-4
 
 **Files:**
-- Modify: `01_Personal_Os/11_AGENTS.md`
+- Modify: `AGENTS.md`
 - Modify: `CLAUDE.md`
-- Modify: `plugins/compound-engineering/01_Personal_Os/11_AGENTS.md`
+- Modify: `plugins/compound-engineering/AGENTS.md`
 - Modify: `docs/solutions/plugin-versioning-requirements.md`
 - Delete: `.claude/commands/release-docs.md` or replace with a deprecation stub
 
@@ -575,7 +575,7 @@ The dry-run summary should include:
 - **Interaction graph:** Release config, CI workflows, metadata-bearing JSON files, contributor docs, and changelog generation are all coupled. The plan deliberately separates configuration, scripting, release PR maintenance, and documentation cleanup so one layer can change without obscuring another.
 - **Error propagation:** Release metadata drift should fail in preview/validation before a release PR or publish path proceeds. CI needs clear failure reporting because release mistakes affect user-facing version surfaces.
 - **State lifecycle risks:** Partial migration is risky. Running old and new release authorities simultaneously could double-write changelog entries, version fields, or publish flows. The migration should explicitly disable the old path before trusting the new one.
-- **API surface parity:** Contributor-facing workflows in `01_Personal_Os/11_AGENTS.md`, `CLAUDE.md`, and plugin-level instructions must all describe the same release authority model or maintainers will continue using legacy local commands.
+- **API surface parity:** Contributor-facing workflows in `AGENTS.md`, `CLAUDE.md`, and plugin-level instructions must all describe the same release authority model or maintainers will continue using legacy local commands.
 - **Integration coverage:** Unit tests for scripts are not enough. The workflow interaction between release PR maintenance, dry-run preview, and conditional CLI publish needs at least one integration-level verification path in CI.
 
 ## Risks & Dependencies

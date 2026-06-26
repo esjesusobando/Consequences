@@ -6,14 +6,14 @@ Profiles are a layer ON TOP of the existing multi-mode SDD injection. Each profi
 
 ## Architecture Decisions
 
-| Decision                                             | Choice                                                                                          | Alternatives                                                       | Rationale                                                                                                                                                                               |
-|-----------------------------------------------------|------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Profile source of truth                              | `opencode.json` agent keys (detect via `sdd-orchestrator-*` pattern)                            | Separate `profiles.json` state file                                | PRD R-PROF-40: JSON IS the truth. Avoids sync drift between two files. Detection is cheap (scan keys).                                                                                  |
-| Orchestrator prompt storage                          | Inlined per-profile in JSON                                                                     | Shared file with placeholder replacement                           | Each profile needs unique model assignments table + suffixed sub-agent refs. A shared template would need runtime rendering that `{file:...}` doesn't support.                          |
-| Sub-agent prompt storage                             | Shared files at `~/.config/opencode/prompts/sdd/*.md` via `{file:...}`                          | Keep inlining in JSON                                              | PRD R-PROF-20: prompts identical across profiles (only model differs). Shared files eliminate N×10 duplicated prompt strings.                                                           |
-| Profile struct location                              | `model.Profile` in `internal/model/types.go`                                                    | Nested inside SDD component package                                | Profile is a domain concept passed through TUI → sync → inject. Following existing pattern (ModelAssignment, Selection live in `model`).                                                |
-| Prompt file path format                              | Absolute expanded path (not `~`)                                                                | `~` tilde syntax                                                   | OpenCode `{file:...}` tilde support is unverified (PRD open question #4). Expanding to absolute at generation time is safe.                                                             |
-| Profile CRUD ownership                               | New `internal/components/sdd/profiles.go`                                                       | TUI screens do JSON manipulation directly                          | Separation of concerns: TUI screens manage navigation/state, `profiles.go` handles agent generation/detection/deletion as pure functions.                                               |
+| Decision | Choice | Alternatives | Rationale |
+|----------|--------|-------------|-----------|
+| Profile source of truth | `opencode.json` agent keys (detect via `sdd-orchestrator-*` pattern) | Separate `profiles.json` state file | PRD R-PROF-40: JSON IS the truth. Avoids sync drift between two files. Detection is cheap (scan keys). |
+| Orchestrator prompt storage | Inlined per-profile in JSON | Shared file with placeholder replacement | Each profile needs unique model assignments table + suffixed sub-agent refs. A shared template would need runtime rendering that `{file:...}` doesn't support. |
+| Sub-agent prompt storage | Shared files at `~/.config/opencode/prompts/sdd/*.md` via `{file:...}` | Keep inlining in JSON | PRD R-PROF-20: prompts identical across profiles (only model differs). Shared files eliminate N×10 duplicated prompt strings. |
+| Profile struct location | `model.Profile` in `internal/model/types.go` | Nested inside SDD component package | Profile is a domain concept passed through TUI → sync → inject. Following existing pattern (ModelAssignment, Selection live in `model`). |
+| Prompt file path format | Absolute expanded path (not `~`) | `~` tilde syntax | OpenCode `{file:...}` tilde support is unverified (PRD open question #4). Expanding to absolute at generation time is safe. |
+| Profile CRUD ownership | New `internal/components/sdd/profiles.go` | TUI screens do JSON manipulation directly | Separation of concerns: TUI screens manage navigation/state, `profiles.go` handles agent generation/detection/deletion as pure functions. |
 
 ## Data Flow
 
@@ -50,22 +50,22 @@ TUI ScreenProfileDelete → confirm
 
 ## File Changes
 
-| File                                                                       | Action                            | Description                                                                                                                                         |
-|---------------------------------------------------------------------------|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `internal/model/types.go`                                                  | Modify                            | Add `Profile` struct                                                                                                                                |
-| `internal/model/selection.go`                                              | Modify                            | Add `Profiles []Profile` to `SyncOverrides`                                                                                                         |
-| `internal/components/sdd/profiles.go`                                      | Create                            | `DetectProfiles`, `GenerateProfileOverlay`, `RemoveProfileAgents`, `ValidateProfileName`                                                            |
-| `internal/components/sdd/prompts.go`                                       | Create                            | `WriteSharedPromptFiles`, `SharedPromptDir` — extract embedded prompts to `~/.config/opencode/prompts/sdd/`                                         |
-| `internal/components/sdd/inject.go`                                        | Modify                            | Call `writeSharedPromptFiles`; replace inline sub-agent prompts with `{file:...}` refs; iterate profiles during inject                              |
-| `internal/components/sdd/read_assignments.go`                              | Modify                            | Add `DetectProfiles` that wraps profile detection from agent keys                                                                                   |
-| `internal/tui/screens/profiles.go`                                         | Create                            | Profile list screen: render, optionCount, key handling (enter→edit, d→delete, n→new)                                                                |
-| `internal/tui/screens/profile_create.go`                                   | Create                            | Multi-step creation: name input → orchestrator picker → sub-agent picker → confirm. Reuses `ModelPickerState`                                       |
-| `internal/tui/screens/profile_delete.go`                                   | Create                            | Delete confirmation screen with agent list                                                                                                          |
-| `internal/tui/model.go`                                                    | Modify                            | Add `ScreenProfiles`, `ScreenProfileCreate`, `ScreenProfileDelete` + state fields + key handling + optionCount                                      |
-| `internal/tui/router.go`                                                   | Modify                            | Add routes for 3 new profile screens                                                                                                                |
-| `internal/tui/screens/welcome.go`                                          | Modify                            | Add "OpenCode SDD Profiles" option between "Configure models" and "Manage backups"; show count badge                                                |
-| `internal/cli/sync.go`                                                     | Modify                            | Add `--profile` flag to `SyncFlags`; pass profiles through to SDD inject; update `syncBackupTargets` to include prompt dir                          |
-| `internal/assets/opencode/sdd-overlay-multi.json`                          | Modify                            | Sub-agent prompts → `{file:...}` references (Phase 1 zero-change refactor)                                                                          |
+| File | Action | Description |
+|------|--------|-------------|
+| `internal/model/types.go` | Modify | Add `Profile` struct |
+| `internal/model/selection.go` | Modify | Add `Profiles []Profile` to `SyncOverrides` |
+| `internal/components/sdd/profiles.go` | Create | `DetectProfiles`, `GenerateProfileOverlay`, `RemoveProfileAgents`, `ValidateProfileName` |
+| `internal/components/sdd/prompts.go` | Create | `WriteSharedPromptFiles`, `SharedPromptDir` — extract embedded prompts to `~/.config/opencode/prompts/sdd/` |
+| `internal/components/sdd/inject.go` | Modify | Call `writeSharedPromptFiles`; replace inline sub-agent prompts with `{file:...}` refs; iterate profiles during inject |
+| `internal/components/sdd/read_assignments.go` | Modify | Add `DetectProfiles` that wraps profile detection from agent keys |
+| `internal/tui/screens/profiles.go` | Create | Profile list screen: render, optionCount, key handling (enter→edit, d→delete, n→new) |
+| `internal/tui/screens/profile_create.go` | Create | Multi-step creation: name input → orchestrator picker → sub-agent picker → confirm. Reuses `ModelPickerState` |
+| `internal/tui/screens/profile_delete.go` | Create | Delete confirmation screen with agent list |
+| `internal/tui/model.go` | Modify | Add `ScreenProfiles`, `ScreenProfileCreate`, `ScreenProfileDelete` + state fields + key handling + optionCount |
+| `internal/tui/router.go` | Modify | Add routes for 3 new profile screens |
+| `internal/tui/screens/welcome.go` | Modify | Add "OpenCode SDD Profiles" option between "Configure models" and "Manage backups"; show count badge |
+| `internal/cli/sync.go` | Modify | Add `--profile` flag to `SyncFlags`; pass profiles through to SDD inject; update `syncBackupTargets` to include prompt dir |
+| `internal/assets/opencode/sdd-overlay-multi.json` | Modify | Sub-agent prompts → `{file:...}` references (Phase 1 zero-change refactor) |
 
 ## Interfaces / Contracts
 
@@ -91,16 +91,16 @@ func SharedPromptDir(homeDir string) string
 
 ## Testing Strategy
 
-| Layer                                | What to Test                                                                                                            | Approach                                                               |
-|-------------------------------------|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| Unit                                 | `ValidateProfileName` — reserved names, slug rules, edge cases                                                          | Table-driven Go tests                                                  |
-| Unit                                 | `DetectProfiles` — parse agent keys, extract models, handle malformed JSON                                              | Mock opencode.json content                                             |
-| Unit                                 | `GenerateProfileOverlay` — correct keys, suffixed names, permission scoping, `{file:...}` refs                          | Golden-file comparison                                                 |
-| Unit                                 | `RemoveProfileAgents` — removes exactly 11 keys, preserves others, atomic write                                         | Temp file + verify JSON                                                |
-| Unit                                 | `WriteSharedPromptFiles` — idempotent, correct content, creates dir                                                     | Temp dir + hash comparison                                             |
-| Integration                          | Sync with 3 profiles — all agents present, prompts current, models preserved                                            | `RunSyncWithSelection` with Profile overrides                          |
-| TUI                                  | Profile list navigation, creation flow, delete confirmation                                                             | teatest with `WaitForValue`                                            |
-| TUI                                  | Welcome screen option count with/without profiles                                                                       | teatest snapshot                                                       |
+| Layer | What to Test | Approach |
+|-------|-------------|----------|
+| Unit | `ValidateProfileName` — reserved names, slug rules, edge cases | Table-driven Go tests |
+| Unit | `DetectProfiles` — parse agent keys, extract models, handle malformed JSON | Mock opencode.json content |
+| Unit | `GenerateProfileOverlay` — correct keys, suffixed names, permission scoping, `{file:...}` refs | Golden-file comparison |
+| Unit | `RemoveProfileAgents` — removes exactly 11 keys, preserves others, atomic write | Temp file + verify JSON |
+| Unit | `WriteSharedPromptFiles` — idempotent, correct content, creates dir | Temp dir + hash comparison |
+| Integration | Sync with 3 profiles — all agents present, prompts current, models preserved | `RunSyncWithSelection` with Profile overrides |
+| TUI | Profile list navigation, creation flow, delete confirmation | teatest with `WaitForValue` |
+| TUI | Welcome screen option count with/without profiles | teatest snapshot |
 
 ## Migration / Rollout
 

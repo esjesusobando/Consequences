@@ -13,8 +13,10 @@ var linearRoutes = map[Screen]Route{
 	ScreenPreset:                 {Forward: ScreenDependencyTree, Backward: ScreenPersona},
 	ScreenClaudeModelPicker:      {Forward: ScreenDependencyTree, Backward: ScreenPreset},
 	ScreenKiroModelPicker:        {Forward: ScreenDependencyTree, Backward: ScreenPreset},
+	ScreenCodexModelPicker:       {Forward: ScreenDependencyTree, Backward: ScreenPreset},
 	ScreenSDDMode:                {Forward: ScreenStrictTDD, Backward: ScreenPreset},
 	ScreenStrictTDD:              {Forward: ScreenDependencyTree, Backward: ScreenSDDMode},
+	ScreenOpenCodePluginResult:   {Backward: ScreenWelcome},
 	ScreenModelPicker:            {Forward: ScreenStrictTDD, Backward: ScreenSDDMode},
 	ScreenDependencyTree:         {Forward: ScreenReview, Backward: ScreenPreset},
 	ScreenSkillPicker:            {Forward: ScreenReview, Backward: ScreenDependencyTree},
@@ -47,6 +49,8 @@ var linearRoutes = map[Screen]Route{
 	ScreenUninstallComponents:    {Backward: ScreenUninstall},
 	ScreenUninstallProfiles:      {Backward: ScreenUninstallComponents},
 	ScreenUninstallResult:        {Backward: ScreenWelcome},
+	// ScreenUpdatePrompt appears before Welcome; Esc/back goes to Welcome.
+	ScreenUpdatePrompt: {Backward: ScreenWelcome},
 }
 
 func NextScreen(screen Screen) (Screen, bool) {

@@ -88,14 +88,14 @@ Follow the beta-skills-framework promotion checklist exactly, applied to both sk
 
 ## Files Changed
 
-| File                                                      | Action                              | Notes                                                                                 |
-|----------------------------------------------------------|------------------------------------|--------------------------------------------------------------------------------------|
-| `skills/ce-plan/SKILL.md`                                 | Replace                             | Beta content with stable frontmatter                                                  |
-| `skills/deepen-plan/SKILL.md`                             | Replace                             | Beta content with stable frontmatter                                                  |
-| `skills/ce-plan-beta/`                                    | Delete                              | Entire directory                                                                      |
-| `skills/deepen-plan-beta/`                                | Delete                              | Entire directory                                                                      |
-| `skills/ce-work-beta/SKILL.md`                            | Edit                                | Remove `ce:plan-beta or` reference at line 450                                        |
-| `README.md`                                               | Edit                                | Remove Beta Skills section, verify counts and descriptions                            |
+| File | Action | Notes |
+|------|--------|-------|
+| `skills/ce-plan/SKILL.md` | Replace | Beta content with stable frontmatter |
+| `skills/deepen-plan/SKILL.md` | Replace | Beta content with stable frontmatter |
+| `skills/ce-plan-beta/` | Delete | Entire directory |
+| `skills/deepen-plan-beta/` | Delete | Entire directory |
+| `skills/ce-work-beta/SKILL.md` | Edit | Remove `ce:plan-beta or` reference at line 450 |
+| `README.md` | Edit | Remove Beta Skills section, verify counts and descriptions |
 
 ## Files NOT Changed (verified safe)
 
@@ -108,7 +108,7 @@ These files reference stable `ce:plan` or `deepen-plan` and require **no changes
 - `skills/document-review/SKILL.md` -- references `/ce:plan`
 - `skills/ce-compound/SKILL.md` -- references `/ce:plan`
 - `skills/ce-review/SKILL.md` -- references `/ce:plan`
-- `01_Personal_Os/11_AGENTS.md` -- lists `ce:plan`
+- `AGENTS.md` -- lists `ce:plan`
 - `agents/research/learnings-researcher.md` -- references both
 - `agents/research/git-history-analyzer.md` -- references `/ce:plan`
 - `agents/review/code-simplicity-reviewer.md` -- references `/ce:plan`

@@ -68,16 +68,16 @@ This is NOT an "AI agent installer." Most agents are already easy to install (`n
 
 ## 4. Supported Platforms
 
-| Platform                                       | Package Manager                                 | Priority                            |
-|-----------------------------------------------|------------------------------------------------|------------------------------------|
-| macOS (Apple Silicon)                          | Homebrew                                        | P0                                  |
-| macOS (Intel)                                  | Homebrew                                        | P0                                  |
-| Linux - Ubuntu/Debian                          | apt + Homebrew                                  | P0                                  |
-| Linux - Arch                                   | pacman                                          | P0                                  |
-| Linux - Fedora/RHEL                            | dnf                                             | P1                                  |
-| WSL 2 (Windows)                                | apt + Homebrew                                  | P1                                  |
-| Windows (native)                               | winget / scoop / choco                          | P2                                  |
-| Termux (Android)                               | pkg                                             | P2                                  |
+| Platform | Package Manager | Priority |
+|----------|----------------|----------|
+| macOS (Apple Silicon) | Homebrew | P0 |
+| macOS (Intel) | Homebrew | P0 |
+| Linux - Ubuntu/Debian | apt + Homebrew | P0 |
+| Linux - Arch | pacman | P0 |
+| Linux - Fedora/RHEL | dnf | P1 |
+| WSL 2 (Windows) | apt + Homebrew | P1 |
+| Windows (native) | winget / scoop / choco | P2 |
+| Termux (Android) | pkg | P2 |
 
 ---
 
@@ -127,34 +127,34 @@ These are the base tools the installer itself and the ecosystem need.
 
 #### Always Required
 
-| Dependency                           | Min Version                            | Why                                                                                              | Install Method                                             |
-|-------------------------------------|---------------------------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| `bash`                               | 3.2+                                   | GGA, install scripts, Engram plugin hooks                                                        | Pre-installed on all targets                               |
-| `git`                                | 2.x                                    | GGA (diff/staging), Engram (git sync), skills clone, agent integrations                          | `brew`/`apt`/`pacman`/`dnf`/`pkg`                          |
-| `curl`                               | Any                                    | Binary downloads, GGA providers (lmstudio, github), installer script                             | Pre-installed on most systems                              |
+| Dependency | Min Version | Why | Install Method |
+|-----------|-------------|-----|----------------|
+| `bash` | 3.2+ | GGA, install scripts, Engram plugin hooks | Pre-installed on all targets |
+| `git` | 2.x | GGA (diff/staging), Engram (git sync), skills clone, agent integrations | `brew`/`apt`/`pacman`/`dnf`/`pkg` |
+| `curl` | Any | Binary downloads, GGA providers (lmstudio, github), installer script | Pre-installed on most systems |
 
 #### Conditionally Required (based on user's selections)
 
-| Dependency                                   | Min Version                                 | When Needed                                                                                                             | Install Method                                                                 |
-|---------------------------------------------|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| **Homebrew**                                 | Any                                         | macOS (primary pkg manager), Linux (recommended for Engram, agents)                                                     | Official install script                                                        |
-| **Node.js**                                  | 20+                                         | Claude Code (needs 18+), Gemini CLI (needs 20+) — installer picks the highest required version                          | `brew install node` / `nvm` / `fnm` / distro package                           |
-| **npm**                                      | Comes with Node.js                          | Installing Claude Code, Gemini CLI, Codex                                                                               | Bundled with Node.js                                                           |
-| **Go**                                       | 1.25+                                       | ONLY if building Engram from source (NOT needed for binary/Homebrew install)                                            | `brew install go` / distro package                                             |
-| **python3**                                  | 3.x                                         | GGA with Ollama API mode or LM Studio provider (has fallback without it)                                                | Pre-installed on macOS, `apt`/`pacman`/`dnf` on Linux                          |
-| **gh** (GitHub CLI)                          | Any                                         | GGA with `github:<model>` provider                                                                                      | `brew install gh` / distro package                                             |
+| Dependency | Min Version | When Needed | Install Method |
+|-----------|-------------|-------------|----------------|
+| **Homebrew** | Any | macOS (primary pkg manager), Linux (recommended for Engram, agents) | Official install script |
+| **Node.js** | 20+ | Claude Code (needs 18+), Gemini CLI (needs 20+) — installer picks the highest required version | `brew install node` / `nvm` / `fnm` / distro package |
+| **npm** | Comes with Node.js | Installing Claude Code, Gemini CLI, Codex | Bundled with Node.js |
+| **Go** | 1.25+ | ONLY if building Engram from source (NOT needed for binary/Homebrew install) | `brew install go` / distro package |
+| **python3** | 3.x | GGA with Ollama API mode or LM Studio provider (has fallback without it) | Pre-installed on macOS, `apt`/`pacman`/`dnf` on Linux |
+| **gh** (GitHub CLI) | Any | GGA with `github:<model>` provider | `brew install gh` / distro package |
 
 #### Platform-Specific Notes
 
-| Platform                                    | Pre-installed                                                | Needs Installation                                                                                            | Special Handling                                                                                                                    |
-|--------------------------------------------|-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **macOS**                                   | bash 3.2, curl, shasum, python3                              | Homebrew (if not present), Node.js, git (via Xcode CLT)                                                       | `xcode-select --install` for git; `shasum` (not `sha256sum`); BSD `sed -i ''`                                                       |
-| **Ubuntu/Debian**                           | bash, curl, git, sha256sum                                   | Homebrew (optional), Node.js (apt version is often outdated → use NodeSource or fnm)                          | Node.js from apt is often v12/v16 — MUST use NodeSource repo or version manager for v20+                                            |
-| **Arch**                                    | bash, curl, git, python3, sha256sum                          | Node.js (`pacman -S nodejs npm`)                                                                              | Arch packages are usually current — `pacman` versions are fine                                                                      |
-| **Fedora/RHEL**                             | bash, curl, git, sha256sum                                   | Node.js (`dnf install nodejs`)                                                                                | May need `dnf module enable nodejs:20` for correct version                                                                          |
-| **WSL 2**                                   | Same as host Linux distro                                    | Same as Linux + note about Windows-side agents (Cursor, VSCode)                                               | Windows-side agents use Windows paths; WSL agents use Linux paths                                                                   |
-| **Windows native**                          | None guaranteed                                              | Everything: git (Git for Windows), Node.js (winget/scoop), bash (Git Bash)                                    | GGA needs bash — Git for Windows includes Git Bash                                                                                  |
-| **Termux**                                  | bash, curl, git                                              | Node.js (`pkg install nodejs`), python (`pkg install python`)                                                 | No sudo, no Homebrew. Commands run directly, not via `sh -c`. Go cross-compile has limitations on Android.                          |
+| Platform | Pre-installed | Needs Installation | Special Handling |
+|----------|--------------|-------------------|------------------|
+| **macOS** | bash 3.2, curl, shasum, python3 | Homebrew (if not present), Node.js, git (via Xcode CLT) | `xcode-select --install` for git; `shasum` (not `sha256sum`); BSD `sed -i ''` |
+| **Ubuntu/Debian** | bash, curl, git, sha256sum | Homebrew (optional), Node.js (apt version is often outdated → use NodeSource or fnm) | Node.js from apt is often v12/v16 — MUST use NodeSource repo or version manager for v20+ |
+| **Arch** | bash, curl, git, python3, sha256sum | Node.js (`pacman -S nodejs npm`) | Arch packages are usually current — `pacman` versions are fine |
+| **Fedora/RHEL** | bash, curl, git, sha256sum | Node.js (`dnf install nodejs`) | May need `dnf module enable nodejs:20` for correct version |
+| **WSL 2** | Same as host Linux distro | Same as Linux + note about Windows-side agents (Cursor, VSCode) | Windows-side agents use Windows paths; WSL agents use Linux paths |
+| **Windows native** | None guaranteed | Everything: git (Git for Windows), Node.js (winget/scoop), bash (Git Bash) | GGA needs bash — Git for Windows includes Git Bash |
+| **Termux** | bash, curl, git | Node.js (`pkg install nodejs`), python (`pkg install python`) | No sudo, no Homebrew. Commands run directly, not via `sh -c`. Go cross-compile has limitations on Android. |
 
 ### 5.0.3 Node.js Version Management
 
@@ -162,12 +162,12 @@ Node.js is the most critical dependency — multiple agents depend on it, and di
 
 **Strategy:**
 
-| Scenario                                               | Action                                                                                                          |
-|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Node.js 20+ already installed                          | Use it. Do nothing.                                                                                             |
-| Node.js installed but < 20                             | Warn the user. Offer to install 20+ alongside (via fnm/nvm) or upgrade.                                         |
-| Node.js not installed at all                           | Install via Homebrew (`brew install node@20`) on macOS, or via fnm/NodeSource on Linux                          |
-| `fnm` or `nvm` detected                                | Use the existing version manager to install/activate v20+                                                       |
+| Scenario | Action |
+|----------|--------|
+| Node.js 20+ already installed | Use it. Do nothing. |
+| Node.js installed but < 20 | Warn the user. Offer to install 20+ alongside (via fnm/nvm) or upgrade. |
+| Node.js not installed at all | Install via Homebrew (`brew install node@20`) on macOS, or via fnm/NodeSource on Linux |
+| `fnm` or `nvm` detected | Use the existing version manager to install/activate v20+ |
 
 **Requirements:**
 - R-DEP-01: The installer MUST detect all required dependencies and their versions BEFORE starting installation
@@ -184,16 +184,16 @@ Node.js is the most critical dependency — multiple agents depend on it, and di
 
 ### 5.0.4 Component → Dependency Matrix
 
-| Component                                    | bash                                        | git                                | curl                                        | Node.js                            | Homebrew                               | python3                                     | gh CLI                                       |
-|---------------------------------------------|--------------------------------------------|-----------------------------------|--------------------------------------------|-----------------------------------|---------------------------------------|--------------------------------------------|---------------------------------------------|
-| **Engram** (binary)                          | —                                           | —                                  | ✓ (download)                                | —                                  | ✓ (preferred)                          | —                                           | —                                            |
-| **GGA**                                      | ✓                                           | ✓                                  | ◌ (some providers)                          | —                                  | ✓ (preferred)                          | ◌ (some providers)                          | ◌ (github provider)                          |
-| **Claude Code**                              | ✓ (hooks)                                   | ✓                                  | —                                           | ✓ (20+)                            | ◌                                      | —                                           | —                                            |
-| **OpenCode**                                 | —                                           | —                                  | ✓ (download)                                | —                                  | —                                      | —                                           | —                                            |
-| **Gemini CLI**                               | —                                           | —                                  | —                                           | ✓ (20+)                            | ◌                                      | —                                           | —                                            |
-| **Codex**                                    | —                                           | —                                  | —                                           | ✓ (18+)                            | —                                      | —                                           | —                                            |
-| **SDD Skills**                               | ✓ (install script)                          | ✓ (clone)                          | —                                           | —                                  | —                                      | —                                           | —                                            |
-| **Coding Skills**                            | —                                           | ✓ (clone)                          | —                                           | —                                  | —                                      | —                                           | —                                            |
+| Component | bash | git | curl | Node.js | Homebrew | python3 | gh CLI |
+|-----------|------|-----|------|---------|----------|---------|--------|
+| **Engram** (binary) | — | — | ✓ (download) | — | ✓ (preferred) | — | — |
+| **GGA** | ✓ | ✓ | ◌ (some providers) | — | ✓ (preferred) | ◌ (some providers) | ◌ (github provider) |
+| **Claude Code** | ✓ (hooks) | ✓ | — | ✓ (20+) | ◌ | — | — |
+| **OpenCode** | — | — | ✓ (download) | — | — | — | — |
+| **Gemini CLI** | — | — | — | ✓ (20+) | ◌ | — | — |
+| **Codex** | — | — | — | ✓ (18+) | — | — | — |
+| **SDD Skills** | ✓ (install script) | ✓ (clone) | — | — | — | — | — |
+| **Coding Skills** | — | ✓ (clone) | — | — | — | — | — |
 
 ✓ = required, ◌ = optional/conditional, — = not needed
 
@@ -207,34 +207,34 @@ The installer supports configuring the Gentleman ecosystem into ANY AI coding ag
 
 #### Terminal-Based Agents (CLI)
 
-| Agent                                            | Config Location                                           | Ecosystem Support                                                                                  | Priority                            |
-|-------------------------------------------------|----------------------------------------------------------|---------------------------------------------------------------------------------------------------|------------------------------------|
-| Claude Code (Anthropic)                          | `~/.claude/`                                              | Full: plugins, skills, MCP, CLAUDE.md, settings, hooks, theme, statusline                          | P0                                  |
-| OpenCode                                         | `~/.config/opencode/`                                     | Full: plugins, skills, MCP, agents, commands, theme                                                | P0                                  |
-| Gemini CLI (Google)                              | `~/.gemini/`                                              | Partial: MCP, system instructions, skills via system.md                                            | P1                                  |
-| Codex (OpenAI)                                   | `~/.codex/`                                               | Partial: MCP, instructions, config.toml                                                            | P1                                  |
-| Aider                                            | `~/.aider/` or `.aider.conf.yml`                          | Partial: conventions via config, limited MCP                                                       | P2                                  |
+| Agent | Config Location | Ecosystem Support | Priority |
+|-------|-----------------|-------------------|----------|
+| Claude Code (Anthropic) | `~/.claude/` | Full: plugins, skills, MCP, CLAUDE.md, settings, hooks, theme, statusline | P0 |
+| OpenCode | `~/.config/opencode/` | Full: plugins, skills, MCP, agents, commands, theme | P0 |
+| Gemini CLI (Google) | `~/.gemini/` | Partial: MCP, system instructions, skills via system.md | P1 |
+| Codex (OpenAI) | `~/.codex/` | Partial: MCP, instructions, config.toml | P1 |
+| Aider | `~/.aider/` or `.aider.conf.yml` | Partial: conventions via config, limited MCP | P2 |
 
 #### IDE-Based Agents
 
-| Agent                                             | Config Location                                            | Ecosystem Support                                                                | Priority                            |
-|--------------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------|
-| Cursor                                            | `~/.cursor/`                                               | Good: skills via .cursorrules, MCP                                               | P1                                  |
-| VSCode + Copilot/Cline                            | `~/.vscode/` + extension settings                          | Partial: skills via workspace rules, MCP via extensions                          | P1                                  |
-| Windsurf (Codeium)                                | `~/.windsurf/` or similar                                  | Partial: rules, MCP                                                              | P2                                  |
-| Xcode + AI extensions                             | Xcode config paths                                         | Minimal: persona via project rules                                               | P2                                  |
-| JetBrains + AI Assistant                          | IDE config paths                                           | Partial: rules, MCP via plugins                                                  | P2                                  |
-| Antigravity                                       | TBD (emerging agent)                                       | TBD — implement via Agent interface when stable                                  | P2                                  |
-| Zed + AI                                          | `~/.config/zed/`                                           | Partial: assistant rules, MCP                                                    | P2                                  |
+| Agent | Config Location | Ecosystem Support | Priority |
+|-------|-----------------|-------------------|----------|
+| Cursor | `~/.cursor/` | Good: skills via .cursorrules, MCP | P1 |
+| VSCode + Copilot/Cline | `~/.vscode/` + extension settings | Partial: skills via workspace rules, MCP via extensions | P1 |
+| Windsurf (Codeium) | `~/.windsurf/` or similar | Partial: rules, MCP | P2 |
+| Xcode + AI extensions | Xcode config paths | Minimal: persona via project rules | P2 |
+| JetBrains + AI Assistant | IDE config paths | Partial: rules, MCP via plugins | P2 |
+| Antigravity | TBD (emerging agent) | TBD — implement via Agent interface when stable | P2 |
+| Zed + AI | `~/.config/zed/` | Partial: assistant rules, MCP | P2 |
 
 #### Ecosystem Support Tiers
 
-| Tier                                 | What Gets Configured                                                                                                                                    | Agents                                                               |
-|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| **Full**                             | Engram plugin + MCP servers + skills + SDD orchestrator + GGA integration + persona + theme + permissions + statusline + hooks                          | Claude Code, OpenCode                                                |
-| **Good**                             | Skills + MCP servers + SDD (inline mode, no sub-agents) + GGA as review provider + persona rules                                                        | Cursor, VSCode                                                       |
-| **Partial**                          | Skills via system instructions + MCP where supported + GGA provider config + persona                                                                    | Gemini CLI, Codex, Windsurf, JetBrains, Zed                          |
-| **Minimal**                          | Persona and coding conventions via project/workspace rules                                                                                              | Xcode, Antigravity, any emerging agent                               |
+| Tier | What Gets Configured | Agents |
+|------|---------------------|--------|
+| **Full** | Engram plugin + MCP servers + skills + SDD orchestrator + GGA integration + persona + theme + permissions + statusline + hooks | Claude Code, OpenCode |
+| **Good** | Skills + MCP servers + SDD (inline mode, no sub-agents) + GGA as review provider + persona rules | Cursor, VSCode |
+| **Partial** | Skills via system instructions + MCP where supported + GGA provider config + persona | Gemini CLI, Codex, Windsurf, JetBrains, Zed |
+| **Minimal** | Persona and coding conventions via project/workspace rules | Xcode, Antigravity, any emerging agent |
 
 > **Note:** GGA (Guardian Angel) is agent-agnostic — it works with ANY provider for review execution, independent of which AI coding agent the user chose. It's a cross-cutting concern, not tied to a specific agent tier.
 
@@ -250,13 +250,13 @@ The installer supports configuring the Gentleman ecosystem into ANY AI coding ag
 
 ### 6.2 Engram (Persistent Memory System)
 
-| Component                                              | Method                                                                 | Notes                                           |
-|-------------------------------------------------------|-----------------------------------------------------------------------|------------------------------------------------|
-| Engram binary                                          | Go install / Homebrew / direct download                                | Single binary, no deps                          |
-| Engram plugin for Claude Code                          | `claude plugin marketplace add`                                        | Automatic                                       |
-| Engram plugin for OpenCode                             | Copy `engram.ts` to plugins dir                                        | Automatic                                       |
-| Engram config for Gemini CLI                           | Write `~/.gemini/settings.json` + `system.md`                          | Automatic                                       |
-| Engram config for Codex                                | Write `~/.codex/config.toml` entries                                   | Automatic                                       |
+| Component | Method | Notes |
+|-----------|--------|-------|
+| Engram binary | Go install / Homebrew / direct download | Single binary, no deps |
+| Engram plugin for Claude Code | `claude plugin marketplace add` | Automatic |
+| Engram plugin for OpenCode | Copy `engram.ts` to plugins dir | Automatic |
+| Engram config for Gemini CLI | Write `~/.gemini/settings.json` + `system.md` | Automatic |
+| Engram config for Codex | Write `~/.codex/config.toml` entries | Automatic |
 
 **Requirements:**
 - R-ENGRAM-01: Engram MUST be installed as a prerequisite for any agent that supports it
@@ -269,17 +269,17 @@ The installer supports configuring the Gentleman ecosystem into ANY AI coding ag
 
 The full SDD Agent Team skill set (9 skills):
 
-| Skill                                | Purpose                                                         |
-|-------------------------------------|----------------------------------------------------------------|
-| sdd-init                             | Bootstrap SDD context in a project                              |
-| sdd-explore                          | Investigate ideas before committing                             |
-| sdd-propose                          | Create change proposals                                         |
-| sdd-spec                             | Write specifications with requirements                          |
-| sdd-design                           | Technical design documents                                      |
-| sdd-tasks                            | Break down into implementation tasks                            |
-| sdd-apply                            | Implement code following specs                                  |
-| sdd-verify                           | Validate implementation matches specs                           |
-| sdd-archive                          | Archive completed changes                                       |
+| Skill | Purpose |
+|-------|---------|
+| sdd-init | Bootstrap SDD context in a project |
+| sdd-explore | Investigate ideas before committing |
+| sdd-propose | Create change proposals |
+| sdd-spec | Write specifications with requirements |
+| sdd-design | Technical design documents |
+| sdd-tasks | Break down into implementation tasks |
+| sdd-apply | Implement code following specs |
+| sdd-verify | Validate implementation matches specs |
+| sdd-archive | Archive completed changes |
 
 **Requirements:**
 - R-SDD-01: SDD skills MUST be installed to the correct path for each selected agent (Claude Code: `~/.claude/skills/`, OpenCode: `~/.config/opencode/skills/`, Cursor: `~/.cursor/skills/`)
@@ -289,30 +289,30 @@ The full SDD Agent Team skill set (9 skills):
 
 ### 6.4 GGA — Gentleman Guardian Angel (AI Code Review)
 
-GGA is a zero-dependency, pure Bash CLI tool that performs **AI-powered code review on every git commit**. It acts as a pre-commit git hook: staged files are sent to any AI provider, validated against team coding standards (defined in `01_Personal_Os/11_AGENTS.md`), and the commit is allowed or blocked based on the AI's verdict.
+GGA is a zero-dependency, pure Bash CLI tool that performs **AI-powered code review on every git commit**. It acts as a pre-commit git hook: staged files are sent to any AI provider, validated against team coding standards (defined in `AGENTS.md`), and the commit is allowed or blocked based on the AI's verdict.
 
 **This is the quality gate of the ecosystem.** While skills teach the agent HOW to write code, and SDD ensures the agent PLANS before coding, GGA ensures the code that gets committed actually meets standards — even code the developer wrote manually.
 
-| Component                                                       | What It Does                                                                                                             |
-|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| `gga` binary                                                    | Pure Bash CLI, installs via Homebrew or direct download                                                                  |
-| Git hook                                                        | Pre-commit or commit-msg hook that runs `gga run`                                                                        |
-| `01_Personal_Os/11_AGENTS.md` rules file                        | Team coding standards the AI validates against — single source of truth                                                  |
-| Smart cache                                                     | SHA256-based, two-level invalidation (metadata + file content). Only `PASSED` files are cached.                          |
-| PR mode                                                         | `gga run --pr-mode` reviews all changed files in a branch vs base                                                        |
-| CI mode                                                         | `gga run --ci` for pipeline integration                                                                                  |
+| Component | What It Does |
+|-----------|-------------|
+| `gga` binary | Pure Bash CLI, installs via Homebrew or direct download |
+| Git hook | Pre-commit or commit-msg hook that runs `gga run` |
+| `AGENTS.md` rules file | Team coding standards the AI validates against — single source of truth |
+| Smart cache | SHA256-based, two-level invalidation (metadata + file content). Only `PASSED` files are cached. |
+| PR mode | `gga run --pr-mode` reviews all changed files in a branch vs base |
+| CI mode | `gga run --ci` for pipeline integration |
 
 #### Supported AI Providers (for review execution)
 
-| Provider                                   | Config Value                                | Mechanism                                                 |
-|-------------------------------------------|--------------------------------------------|----------------------------------------------------------|
-| Claude Code                                | `claude`                                    | Pipes prompt to `claude --print`                          |
-| Gemini CLI                                 | `gemini`                                    | `gemini -p` CLI                                           |
-| Codex                                      | `codex`                                     | `codex exec`                                              |
-| OpenCode                                   | `opencode[:model]`                          | `opencode run`                                            |
-| Ollama (local)                             | `ollama:<model>`                            | REST API or CLI fallback                                  |
-| LM Studio (local)                          | `lmstudio[:model]`                          | OpenAI-compatible REST API                                |
-| GitHub Models                              | `github:<model>`                            | Azure-hosted API via `gh auth`                            |
+| Provider | Config Value | Mechanism |
+|----------|-------------|-----------|
+| Claude Code | `claude` | Pipes prompt to `claude --print` |
+| Gemini CLI | `gemini` | `gemini -p` CLI |
+| Codex | `codex` | `codex exec` |
+| OpenCode | `opencode[:model]` | `opencode run` |
+| Ollama (local) | `ollama:<model>` | REST API or CLI fallback |
+| LM Studio (local) | `lmstudio[:model]` | OpenAI-compatible REST API |
+| GitHub Models | `github:<model>` | Azure-hosted API via `gh auth` |
 
 **Requirements:**
 - R-GGA-01: The installer MUST offer GGA installation as an ecosystem component (opt-in, not forced)
@@ -320,17 +320,17 @@ GGA is a zero-dependency, pure Bash CLI tool that performs **AI-powered code rev
 - R-GGA-03: The installer MUST ask which AI provider to configure for GGA reviews and write the appropriate `.gga` config
 - R-GGA-04: The installer SHOULD offer to install the git hook globally (`git config --global core.hooksPath`) or explain per-project setup via `gga install`
 - R-GGA-05: The installer MUST NOT configure GGA's provider with API keys — only the provider name. Keys are managed separately by the user.
-- R-GGA-06: The installer SHOULD create a starter `01_Personal_Os/11_AGENTS.md` template in the user's home directory with common coding standards, or link to examples
+- R-GGA-06: The installer SHOULD create a starter `AGENTS.md` template in the user's home directory with common coding standards, or link to examples
 - R-GGA-07: If the user selected an AI agent (e.g., Claude Code) AND GGA, the installer SHOULD auto-configure GGA to use that same provider (e.g., `GGA_PROVIDER=claude`)
 
 ### 6.5 MCP Servers
 
-| MCP Server                                     | Transport                            | Purpose                                                   | Priority                            |
-|-----------------------------------------------|-------------------------------------|----------------------------------------------------------|------------------------------------|
-| Context7                                       | Remote HTTP                          | Up-to-date library documentation                          | P0                                  |
-| Notion                                         | Remote HTTP                          | Project management integration                            | P1                                  |
-| Jira/Atlassian                                 | Remote HTTP                          | Issue tracking integration                                | P1                                  |
-| Custom (user-defined)                          | Varies                               | User's own MCP servers                                    | P2                                  |
+| MCP Server | Transport | Purpose | Priority |
+|------------|-----------|---------|----------|
+| Context7 | Remote HTTP | Up-to-date library documentation | P0 |
+| Notion | Remote HTTP | Project management integration | P1 |
+| Jira/Atlassian | Remote HTTP | Issue tracking integration | P1 |
+| Custom (user-defined) | Varies | User's own MCP servers | P2 |
 
 **Requirements:**
 - R-MCP-01: The installer MUST configure selected MCP servers in each agent's MCP config
@@ -342,16 +342,16 @@ GGA is a zero-dependency, pure Bash CLI tool that performs **AI-powered code rev
 
 Beyond SDD, additional coding skills that encode best practices:
 
-| Skill Category                            | Skills                                                              | Priority                            |
-|------------------------------------------|--------------------------------------------------------------------|------------------------------------|
-| Frontend                                  | react-19, nextjs-15, tailwind-4, zustand-5                          | P1                                  |
-| TypeScript                                | typescript (strict patterns)                                        | P0                                  |
-| Validation                                | zod-4                                                               | P1                                  |
-| AI SDK                                    | ai-sdk-5 (Vercel AI)                                                | P1                                  |
-| Backend                                   | django-drf                                                          | P2                                  |
-| Testing                                   | playwright, pytest, go-testing                                      | P1                                  |
-| API/Claude                                | claude-developer-platform                                           | P0                                  |
-| Workflow                                  | pr-review, skill-creator, homebrew-release                          | P2                                  |
+| Skill Category | Skills | Priority |
+|----------------|--------|----------|
+| Frontend | react-19, nextjs-15, tailwind-4, zustand-5 | P1 |
+| TypeScript | typescript (strict patterns) | P0 |
+| Validation | zod-4 | P1 |
+| AI SDK | ai-sdk-5 (Vercel AI) | P1 |
+| Backend | django-drf | P2 |
+| Testing | playwright, pytest, go-testing | P1 |
+| API/Claude | claude-developer-platform | P0 |
+| Workflow | pr-review, skill-creator, homebrew-release | P2 |
 
 **Requirements:**
 - R-SKILLS-01: The installer MUST present skills in categories and allow the user to select which categories/individual skills to install
@@ -367,22 +367,22 @@ Beyond SDD, additional coding skills that encode best practices:
 
 The Gentleman persona is the heart of this ecosystem, but it's **100% optional**. The user chooses their experience:
 
-| Persona Option                              | Description                                                                                                                                                                                                                                                 | What it Configures                                                                                                                  |
-|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| **Gentleman Mode**                          | "Your own Gentleman!" — The Senior Architect mentor who teaches, challenges, and pushes you to understand concepts before code. Rioplatense Spanish for Spanish input, direct English otherwise. Uses Tony Stark/Jarvis analogies.                          | Full persona in CLAUDE.md / opencode agents / .cursorrules, custom thinking verbs, teaching-first behavior                          |
-| **Neutral Mode**                            | Professional, helpful, no personality overlay. The agent stays with its default behavior.                                                                                                                                                                   | Security permissions only, no persona injection                                                                                     |
-| **Custom Persona**                          | Bring your own! User provides a persona description or selects from community presets.                                                                                                                                                                      | User-provided text injected into agent instructions                                                                                 |
+| Persona Option | Description | What it Configures |
+|---------------|-------------|-------------------|
+| **Gentleman Mode** | "Your own Gentleman!" — The Senior Architect mentor who teaches, challenges, and pushes you to understand concepts before code. Rioplatense Spanish for Spanish input, direct English otherwise. Uses Tony Stark/Jarvis analogies. | Full persona in CLAUDE.md / opencode agents / .cursorrules, custom thinking verbs, teaching-first behavior |
+| **Neutral Mode** | Professional, helpful, no personality overlay. The agent stays with its default behavior. | Security permissions only, no persona injection |
+| **Custom Persona** | Bring your own! User provides a persona description or selects from community presets. | User-provided text injected into agent instructions |
 
 #### Other Configuration Aspects
 
-| Config Aspect                            | What Gets Configured                                                                                                                        |
-|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Theme                                    | Gentleman dark theme (navy/steel/gold) or default                                                                                           |
-| Permissions                              | Security-first defaults: deny .env, ask on destructive git ops, allow standard tools                                                        |
-| Editor mode                              | vim / emacs / default                                                                                                                       |
-| Statusline                               | Custom statusline with model info, git status, context usage (Claude Code)                                                                  |
-| Thinking verbs                           | Custom spinner text — Rioplatense phrases like "Tomando un Cafecito mientras Pienso" (only with Gentleman persona)                          |
-| Keybindings                              | Vim-style or default                                                                                                                        |
+| Config Aspect | What Gets Configured |
+|---------------|---------------------|
+| Theme | Gentleman dark theme (navy/steel/gold) or default |
+| Permissions | Security-first defaults: deny .env, ask on destructive git ops, allow standard tools |
+| Editor mode | vim / emacs / default |
+| Statusline | Custom statusline with model info, git status, context usage (Claude Code) |
+| Thinking verbs | Custom spinner text — Rioplatense phrases like "Tomando un Cafecito mientras Pienso" (only with Gentleman persona) |
+| Keybindings | Vim-style or default |
 
 **Requirements:**
 - R-CONFIG-01: The persona selection MUST be a first-class step in the installation flow, presented clearly with personality descriptions
@@ -453,12 +453,12 @@ curl -sL get.gentleman.ai/ai | sh
      ┌─────────────────────────────────┐
      │  Select Ecosystem Preset         │
      │                                  │
-     │  ★ Full Gentleman                │  ← Everything: Engram + SDD + Skills
+     │  ★ Dev Stack + Polish             │  ← Everything: Engram + SDD + Skills
      │     (Engram + SDD + All Skills   │     + MCP + Theme + Permissions
      │      + MCP + Theme)              │
      │                                  │
-     │  ○ Ecosystem Only                │  ← Tools without persona
-     │  ○ Minimal                       │  ← Just Engram + basics
+     │  ○ Dev Stack                     │  ← Tools without persona
+     │  ○ Memory Only                   │  ← Just Engram + basics
      │  ○ Custom                        │  ← Pick each component
      └──────────┬──────────────────────┘
                 │
@@ -551,21 +551,21 @@ gentle-ai install \
 
 ### 7.3 Screens
 
-| Screen                                        | Purpose                                                                                                             |
-|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Welcome                                       | Branding, version, what this tool does                                                                              |
-| System Detection                              | Show detected OS, existing tools, existing configs, installed dependencies                                          |
-| Agent Selection                               | Multi-select AI agents to install/configure                                                                         |
-| Persona Selection                             | "Your own Gentleman!" / Neutral / Custom                                                                            |
-| Preset Selection                              | Full Gentleman / Ecosystem Only / Minimal / Custom                                                                  |
-| MCP Server Selection                          | Which MCP integrations to enable (Custom mode)                                                                      |
-| Skills Selection                              | Which coding skills to install (Custom mode)                                                                        |
-| Config Customization                          | Theme, permissions, editor mode (Custom mode)                                                                       |
-| Dependency Tree                               | Full list of what needs to be installed (deps + agents + ecosystem) with user confirmation                          |
-| Review                                        | Final summary of everything that will be installed/configured                                                       |
-| Installing                                    | Real-time progress: dependencies first, then agents, then ecosystem configuration                                   |
-| Complete                                      | Success message, next steps, useful commands                                                                        |
-| Backup Management                             | List/restore/delete previous config backups                                                                         |
+| Screen | Purpose |
+|--------|---------|
+| Welcome | Branding, version, what this tool does |
+| System Detection | Show detected OS, existing tools, existing configs, installed dependencies |
+| Agent Selection | Multi-select AI agents to install/configure |
+| Persona Selection | "Your own Gentleman!" / Neutral / Custom |
+| Preset Selection | Dev Stack + Polish / Dev Stack / Memory Only / Custom |
+| MCP Server Selection | Which MCP integrations to enable (Custom mode) |
+| Skills Selection | Which coding skills to install (Custom mode) |
+| Config Customization | Theme, permissions, editor mode (Custom mode) |
+| Dependency Tree | Full list of what needs to be installed (deps + agents + ecosystem) with user confirmation |
+| Review | Final summary of everything that will be installed/configured |
+| Installing | Real-time progress: dependencies first, then agents, then ecosystem configuration |
+| Complete | Success message, next steps, useful commands |
+| Backup Management | List/restore/delete previous config backups |
 
 ---
 
@@ -698,7 +698,7 @@ graph LR
     subgraph GGA_LAYER["GGA Code Review"]
         direction TB
         GGA_HOOK[Pre-commit Hook]
-        GGA_RULES[01_Personal_Os/11_AGENTS.md<br/>Team Standards]
+        GGA_RULES[AGENTS.md<br/>Team Standards]
         GGA_CACHE[Smart Cache<br/>~/.cache/gga/]
         GGA_PROVIDER[AI Provider<br/>claude / gemini / ollama / etc.]
         GGA_HOOK --> GGA_RULES
@@ -914,7 +914,7 @@ sequenceDiagram
     Note over Dev,GGA: === COMMIT ===
 
     Dev->>GGA: git commit -m "feat: add auth"
-    GGA->>GGA: Read staged files<br/>+ 01_Personal_Os/11_AGENTS.md rules
+    GGA->>GGA: Read staged files<br/>+ AGENTS.md rules
     GGA->>Agent: Review code against standards
     Agent-->>GGA: STATUS: PASSED ✓
     GGA->>GGA: Cache passed files (SHA256)
@@ -941,7 +941,7 @@ graph TB
     subgraph SHARED["Shared Layer (single source of truth)"]
         ENGRAM_DB[(Engram DB<br/>~/.engram/engram.db<br/>All memories, all sessions)]
         SKILLS_SOURCE[Skills Files<br/>Identical copies in<br/>each agent's skill dir]
-        GGA_RULES[01_Personal_Os/11_AGENTS.md<br/>Per-project standards]
+        GGA_RULES[AGENTS.md<br/>Per-project standards]
     end
 
     subgraph AGENT_CC["Claude Code Session"]
@@ -1023,7 +1023,7 @@ graph TB
     subgraph USER_OWNS["User Owns (always)"]
         direction LR
         U1[API keys & auth]
-        U2[01_Personal_Os/11_AGENTS.md rules]
+        U2[AGENTS.md rules]
         U3[Project-level .gga config]
         U4[Which agents to use]
     end
@@ -1045,13 +1045,13 @@ graph TB
 
 ### 8.1 Technology Stack
 
-| Layer                                  | Technology                                                                      | Rationale                                                                                               |
-|---------------------------------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Language                               | Go                                                                              | Same as Gentleman.Dots + Engram. Single binary, cross-compile, no runtime deps                          |
-| TUI                                    | Bubbletea + Lipgloss                                                            | Proven in Gentleman.Dots. Elm architecture, excellent terminal support                                  |
-| Distribution                           | Homebrew tap + direct binary download + curl installer                          | Same as Gentleman.Dots                                                                                  |
-| Skills source                          | Git clone from repos at install time                                            | Always latest version                                                                                   |
-| Config format                          | JSON, YAML, TOML, Markdown                                                      | Match each agent's native format                                                                        |
+| Layer | Technology | Rationale |
+|-------|-----------|-----------|
+| Language | Go | Same as Gentleman.Dots + Engram. Single binary, cross-compile, no runtime deps |
+| TUI | Bubbletea + Lipgloss | Proven in Gentleman.Dots. Elm architecture, excellent terminal support |
+| Distribution | Homebrew tap + direct binary download + curl installer | Same as Gentleman.Dots |
+| Skills source | Git clone from repos at install time | Always latest version |
+| Config format | JSON, YAML, TOML, Markdown | Match each agent's native format |
 
 ### 8.2 Package Structure (Proposed)
 
@@ -1081,8 +1081,8 @@ gentle-ai/
 │   │   ├── skills.go               # Skills library install
 │   │   └── config.go               # Persona, theme, permissions, etc.
 │   ├── presets/
-│   │   ├── gentleman.go            # Full Gentleman preset definition
-│   │   ├── minimal.go              # Minimal preset definition
+│   │   ├── gentleman.go            # Dev Stack + Polish preset definition (`full-gentleman`)
+│   │   ├── minimal.go              # Memory Only preset definition (`minimal`)
 │   │   └── preset.go               # Preset interface
 │   ├── backup/
 │   │   └── backup.go               # Config backup & restore
@@ -1166,12 +1166,14 @@ type Preset struct {
 
 **Predefined presets:**
 
-| Preset                                    | What's Included                                                                        | Persona                                        | Description                                                                                                                                             |
-|------------------------------------------|---------------------------------------------------------------------------------------|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `full-gentleman`                          | All agents detected + Engram + SDD + all skills + MCP + theme                          | "Your own Gentleman!"                          | The complete experience. Everything configured, Gentleman persona, dark theme, the works.                                                               |
-| `ecosystem-only`                          | Engram + SDD + skills + MCP for selected agents                                        | Neutral (no persona)                           | All the tools and workflow, zero personality. For developers who want the ecosystem but prefer their agent's default behavior.                          |
-| `minimal`                                 | Engram + basic skills for selected agents                                              | Neutral                                        | Just memory and essential skills. Quick and lean.                                                                                                       |
-| `custom`                                  | User picks each component                                                              | User picks                                     | Full control over every aspect.                                                                                                                         |
+Persona is selected separately on the Persona screen and applied independently of the preset.
+
+| Preset | Display Label | What's Included | Description |
+|--------|--------------|-----------------|-------------|
+| `full-gentleman` | Dev Stack + Polish | All agents detected + Engram + SDD + all skills + MCP + theme | The complete experience. Everything configured, dark theme, the works. |
+| `ecosystem-only` | Dev Stack | Engram + SDD + skills + MCP for selected agents | All the tools and workflow. For developers who want the ecosystem without opinionated defaults. |
+| `minimal` | Memory Only | Engram + basic skills for selected agents | Just memory and essential skills. Quick and lean. |
+| `custom` | Custom | User picks each component | Full control over every aspect. |
 
 ---
 
@@ -1179,25 +1181,25 @@ type Preset struct {
 
 ### 9.1 Install Methods
 
-| Method                                      | Command                                                                                               | Priority                            |
-|--------------------------------------------|------------------------------------------------------------------------------------------------------|------------------------------------|
-| curl (recommended)                          | `curl -sL get.gentleman.ai/ai \                                                                       | sh`                                 | P0|
-| Homebrew                                    | `brew install Gentleman-Programming/tap/gentle-ai`                                                    | P0                                  |
-| Go install                                  | `go install github.com/Gentleman-Programming/gentle-ai/cmd/gentle-ai@latest`                          | P1                                  |
-| Direct binary                               | Download from GitHub Releases                                                                         | P1                                  |
-| winget (Windows)                            | `winget install gentle-ai`                                                                            | P2                                  |
+| Method | Command | Priority |
+|--------|---------|----------|
+| curl (recommended) | `curl -sL get.gentleman.ai/ai \| sh` | P0 |
+| Homebrew | `brew install Gentleman-Programming/tap/gentle-ai` | P0 |
+| Go install | `go install github.com/Gentleman-Programming/gentle-ai/cmd/gentle-ai@latest` | P1 |
+| Direct binary | Download from GitHub Releases | P1 |
+| winget (Windows) | `winget install gentle-ai` | P2 |
 
 ### 9.2 Cross-Compilation Targets
 
-| Target                                       | GOOS/GOARCH                            | Notes                                                  |
-|---------------------------------------------|---------------------------------------|-------------------------------------------------------|
-| macOS Apple Silicon                          | darwin/arm64                           | Primary                                                |
-| macOS Intel                                  | darwin/amd64                           |                                                        |
-| Linux x86_64                                 | linux/amd64                            |                                                        |
-| Linux ARM64                                  | linux/arm64                            | Raspberry Pi, cloud instances                          |
-| Linux ARM                                    | linux/arm                              |                                                        |
-| Windows x86_64                               | windows/amd64                          | P2, native support                                     |
-| Android ARM64                                | android/arm64                          | Termux                                                 |
+| Target | GOOS/GOARCH | Notes |
+|--------|-------------|-------|
+| macOS Apple Silicon | darwin/arm64 | Primary |
+| macOS Intel | darwin/amd64 | |
+| Linux x86_64 | linux/amd64 | |
+| Linux ARM64 | linux/arm64 | Raspberry Pi, cloud instances |
+| Linux ARM | linux/arm | |
+| Windows x86_64 | windows/amd64 | P2, native support |
+| Android ARM64 | android/arm64 | Termux |
 
 ### 9.3 Release Automation
 
@@ -1232,7 +1234,7 @@ type Preset struct {
 
 ### 11.1 What the User Gets After Installation
 
-When the installer completes with "Full Gentleman" preset + Claude Code + OpenCode:
+When the installer completes with "Dev Stack + Polish" (`full-gentleman`) preset + Claude Code + OpenCode:
 
 **Claude Code:**
 - `~/.claude/CLAUDE.md` — Gentleman persona with SDD orchestrator
@@ -1312,13 +1314,13 @@ The completion screen MUST show:
 
 ## 13. Relationship to Gentleman.Dots
 
-| Aspect                                    | Gentleman.Dots                                                                                          | Gentleman AI Installer                                                           |
-|------------------------------------------|--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| Purpose                                   | Dev environment (editors, shells, terminals)                                                            | AI development layer (agents, memory, skills)                                    |
-| What it installs                          | Neovim, Fish/Zsh/Nushell, Tmux/Zellij, Ghostty/Kitty/etc.                                               | Claude Code, OpenCode, Engram, SDD, MCP servers, skills                          |
-| Overlap                                   | None — complementary tools                                                                              | None — different layer                                                           |
-| Can use together                          | Yes — install Gentleman.Dots first for dev env, then Gentleman AI for AI layer                          | Same                                                                             |
-| Shared patterns                           | Go + Bubbletea + Lipgloss, multi-OS detection, backup system                                            | Same architecture, consistent UX                                                 |
+| Aspect | Gentleman.Dots | Gentleman AI Installer |
+|--------|---------------|----------------------|
+| Purpose | Dev environment (editors, shells, terminals) | AI development layer (agents, memory, skills) |
+| What it installs | Neovim, Fish/Zsh/Nushell, Tmux/Zellij, Ghostty/Kitty/etc. | Claude Code, OpenCode, Engram, SDD, MCP servers, skills |
+| Overlap | None — complementary tools | None — different layer |
+| Can use together | Yes — install Gentleman.Dots first for dev env, then Gentleman AI for AI layer | Same |
+| Shared patterns | Go + Bubbletea + Lipgloss, multi-OS detection, backup system | Same architecture, consistent UX |
 
 **Requirements:**
 - R-DOTS-01: The installer SHOULD detect if Gentleman.Dots is already installed and acknowledge it ("Great, you already have Gentleman.Dots! This installer adds the AI layer on top.")
@@ -1344,13 +1346,13 @@ These are NOT requirements for v1 but should inform architectural decisions:
 
 ## 15. Success Metrics
 
-| Metric                                                                     | Target                                                                             |
-|---------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| Time from curl to working AI environment                                   | < 5 minutes                                                                        |
-| Supported OS coverage                                                      | macOS + 3 Linux distros + WSL at launch                                            |
-| Agent coverage                                                             | Claude Code + OpenCode at launch, 2+ more within 3 months                          |
-| Idempotency                                                                | 100% — re-running produces same result                                             |
-| User needs to manually edit configs after install                          | 0 files (except API keys)                                                          |
+| Metric | Target |
+|--------|--------|
+| Time from curl to working AI environment | < 5 minutes |
+| Supported OS coverage | macOS + 3 Linux distros + WSL at launch |
+| Agent coverage | Claude Code + OpenCode at launch, 2+ more within 3 months |
+| Idempotency | 100% — re-running produces same result |
+| User needs to manually edit configs after install | 0 files (except API keys) |
 
 ---
 
@@ -1367,14 +1369,14 @@ These are NOT requirements for v1 but should inform architectural decisions:
 
 ## Appendix A: Competitive Landscape
 
-| Tool                                                 | What it does                                           | Limitation                                                 |
-|-----------------------------------------------------|-------------------------------------------------------|-----------------------------------------------------------|
-| `claude` CLI setup                                   | Installs Claude Code only                              | Single tool, no skills/memory/MCP                          |
-| `opencode` install                                   | Installs OpenCode only                                 | Single tool, manual config                                 |
-| `engram setup`                                       | Installs Engram for one agent                          | Memory only, no skills/agents                              |
-| `sdd-agent-team/install.sh`                          | Installs SDD skills                                    | Skills only, no agents/memory                              |
-| `gga` install                                        | Installs GGA for one project                           | Code review only, no ecosystem                             |
-| Various dotfile managers                             | Stow, chezmoi, etc.                                    | Generic, not AI-specific                                   |
+| Tool | What it does | Limitation |
+|------|-------------|------------|
+| `claude` CLI setup | Installs Claude Code only | Single tool, no skills/memory/MCP |
+| `opencode` install | Installs OpenCode only | Single tool, manual config |
+| `engram setup` | Installs Engram for one agent | Memory only, no skills/agents |
+| `sdd-agent-team/install.sh` | Installs SDD skills | Skills only, no agents/memory |
+| `gga` install | Installs GGA for one project | Code review only, no ecosystem |
+| Various dotfile managers | Stow, chezmoi, etc. | Generic, not AI-specific |
 
 **None of these solve the full problem.** Each handles one piece. This installer orchestrates ALL of them — Engram, SDD, GGA, skills, MCP, persona, theme — into a coherent, working AI development ecosystem across any agent the user chooses.
 
@@ -1383,10 +1385,10 @@ These are NOT requirements for v1 but should inform architectural decisions:
 ## Appendix B: Example Non-Interactive Commands
 
 ```bash
-# Full Gentleman preset with Claude Code + OpenCode
+# Dev Stack + Polish preset with Claude Code + OpenCode
 gentle-ai install --preset gentleman --agents claude-code,opencode
 
-# Minimal setup, just Claude Code with basic security
+# Memory Only setup, just Claude Code with basic security
 gentle-ai install --preset minimal --agents claude-code
 
 # Team provisioning from shared profile

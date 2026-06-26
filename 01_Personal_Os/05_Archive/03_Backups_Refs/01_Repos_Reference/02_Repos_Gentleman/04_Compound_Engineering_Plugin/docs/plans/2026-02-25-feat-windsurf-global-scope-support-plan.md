@@ -21,14 +21,14 @@ After auditing the implementation against `docs/specs/windsurf.md`, two signific
 
 ### Final Component Mapping (per spec)
 
-| Claude Code                                    | Windsurf                                         | Output Path                                                                                          | Invocation                                            |
-|-----------------------------------------------|-------------------------------------------------|-----------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| Agents (`.md`)                                 | Skills                                           | `skills/{name}/SKILL.md`                                                                             | `@skill-name` or automatic                            |
-| Commands (`.md`)                               | Workflows (flat)                                 | `global_workflows/{name}.md` (global) / `workflows/{name}.md` (workspace)                            | `/{workflow-name}`                                    |
-| Skills (`SKILL.md`)                            | Skills (pass-through)                            | `skills/{name}/SKILL.md`                                                                             | `@skill-name`                                         |
-| MCP servers                                    | `mcp_config.json`                                | `mcp_config.json`                                                                                    | N/A                                                   |
-| Hooks                                          | Skipped with warning                             | N/A                                                                                                  | N/A                                                   |
-| CLAUDE.md                                      | Skipped                                          | N/A                                                                                                  | N/A                                                   |
+| Claude Code | Windsurf | Output Path | Invocation |
+|---|---|---|---|
+| Agents (`.md`) | Skills | `skills/{name}/SKILL.md` | `@skill-name` or automatic |
+| Commands (`.md`) | Workflows (flat) | `global_workflows/{name}.md` (global) / `workflows/{name}.md` (workspace) | `/{workflow-name}` |
+| Skills (`SKILL.md`) | Skills (pass-through) | `skills/{name}/SKILL.md` | `@skill-name` |
+| MCP servers | `mcp_config.json` | `mcp_config.json` | N/A |
+| Hooks | Skipped with warning | N/A | N/A |
+| CLAUDE.md | Skipped | N/A | N/A |
 
 ### Files Changed in Revision
 
@@ -64,7 +64,7 @@ After auditing the implementation against `docs/specs/windsurf.md`, two signific
 
 ## Overview
 
-Add a generic `--scope global|workspace` flag to the converter CLI with Windsurf as the first adopter. Global scope writes to `~/.codeium/windsurf/`, making workflows, skills, and MCP servers available across all projects. This also upgrades MCP handling from a human-readable setup doc (`mcp-setup.md`) to a proper machine-readable config (`mcp_config.json`), and removes 01_Personal_Os/11_AGENTS.md generation (the plugin's CLAUDE.md contains development-internal instructions, not user-facing content).
+Add a generic `--scope global|workspace` flag to the converter CLI with Windsurf as the first adopter. Global scope writes to `~/.codeium/windsurf/`, making workflows, skills, and MCP servers available across all projects. This also upgrades MCP handling from a human-readable setup doc (`mcp-setup.md`) to a proper machine-readable config (`mcp_config.json`), and removes AGENTS.md generation (the plugin's CLAUDE.md contains development-internal instructions, not user-facing content).
 
 ## Problem Statement / Motivation
 
@@ -77,7 +77,7 @@ Additionally, the v0.10.0 MCP output was a markdown setup guide — not an actua
 This is a **minor version bump** (v0.11.0) with intentional breaking changes to the experimental Windsurf target:
 
 1. **Default output location changed** — `--to windsurf` now defaults to global scope (`~/.codeium/windsurf/`). Use `--scope workspace` for the old behavior.
-2. **01_Personal_Os/11_AGENTS.md no longer generated** — old files are left in place (not deleted).
+2. **AGENTS.md no longer generated** — old files are left in place (not deleted).
 3. **`mcp-setup.md` replaced by `mcp_config.json`** — proper machine-readable integration. Old files left in place.
 4. **Env var secrets included with warning** — previously redacted, now included (required for the config file to work).
 5. **`--output` semantics changed** — `--output` now specifies the direct target directory (not a parent where `.windsurf/` is created).
@@ -249,7 +249,7 @@ export type TargetHandler<TBundle = unknown> = {
 
 **Files:** `src/converters/claude-to-windsurf.ts`
 
-#### 2a. Remove 01_Personal_Os/11_AGENTS.md generation
+#### 2a. Remove AGENTS.md generation
 
 - [x] Remove `buildAgentsMd()` function
 - [x] Remove `agentsMd` from return value
@@ -329,11 +329,11 @@ if (hasPotentialSecrets(result)) {
 
 **Files:** `src/targets/windsurf.ts`, `src/utils/files.ts`
 
-#### 3a. Simplify writer — remove 01_Personal_Os/11_AGENTS.md and double-nesting guard
+#### 3a. Simplify writer — remove AGENTS.md and double-nesting guard
 
 The writer always writes directly into `outputRoot`. The CLI resolves the correct output root based on scope.
 
-- [x] Remove 01_Personal_Os/11_AGENTS.md writing block (lines 10-17)
+- [x] Remove AGENTS.md writing block (lines 10-17)
 - [x] Remove `resolveWindsurfPaths()` — no longer needed
 - [x] Write workflows, skills, and MCP config directly into `outputRoot`
 
@@ -537,7 +537,7 @@ Both commands now use the shared `resolveTargetOutputRoot` from Phase 0a.
 
 #### 5a. Update converter tests
 
-- [x] Remove all 01_Personal_Os/11_AGENTS.md tests (lines 275-303: empty plugin, CLAUDE.md missing)
+- [x] Remove all AGENTS.md tests (lines 275-303: empty plugin, CLAUDE.md missing)
 - [x] Remove all `mcpSetupDoc` tests (lines 305-366: stdio, HTTP/SSE, redaction, null)
 - [x] Update `fixturePlugin` default — remove `agentsMd` and `mcpSetupDoc` references
 - [x] Add `mcpConfig` tests:
@@ -553,7 +553,7 @@ Both commands now use the shared `resolveTargetOutputRoot` from Phase 0a.
 
 #### 5b. Update writer tests
 
-- [x] Remove 01_Personal_Os/11_AGENTS.md tests (backup test, creation test, double-nesting 01_Personal_Os/11_AGENTS.md parent test)
+- [x] Remove AGENTS.md tests (backup test, creation test, double-nesting AGENTS.md parent test)
 - [x] Remove double-nesting guard test (guard removed)
 - [x] Remove `mcp-setup.md` write test
 - [x] Update `emptyBundle` fixture — remove `agentsMd`, `mcpSetupDoc`, add `mcpConfig: null`
@@ -598,7 +598,7 @@ Test the shared `resolveTargetOutputRoot` function:
 - [x] `--scope` on non-supporting target produces clear error
 - [x] `mcp_config.json` merges with existing file (backup created, user entries preserved)
 - [x] `mcp_config.json` written with `0o600` permissions (not world-readable)
-- [x] No 01_Personal_Os/11_AGENTS.md generated for either scope
+- [x] No AGENTS.md generated for either scope
 - [x] Env var secrets included in `mcp_config.json` with `console.warn` listing affected servers
 - [x] Both stdio and HTTP/SSE MCP servers included in `mcp_config.json`
 - [x] All existing tests updated, all new tests pass

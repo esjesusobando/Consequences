@@ -10,6 +10,7 @@ import (
 
 	"github.com/gentleman-programming/gentle-ai/internal/model"
 	"github.com/gentleman-programming/gentle-ai/internal/system"
+	"github.com/gentleman-programming/gentle-ai/internal/versions"
 )
 
 func TestValidateGoForModuleInstall(t *testing.T) {
@@ -295,31 +296,31 @@ func TestResolveAgentInstall(t *testing.T) {
 			name:    "claude-code on darwin uses npm without sudo",
 			profile: system.PlatformProfile{OS: "darwin", PackageManager: "brew"},
 			agent:   model.AgentClaudeCode,
-			want:    CommandSequence{{"npm", "install", "-g", "@anthropic-ai/claude-code"}},
+			want:    CommandSequence{{"npm", "install", "-g", "--ignore-scripts", "@anthropic-ai/claude-code@" + versions.ClaudeCode}},
 		},
 		{
 			name:    "claude-code on linux system npm uses sudo",
 			profile: system.PlatformProfile{OS: "linux", LinuxDistro: system.LinuxDistroUbuntu, PackageManager: "apt"},
 			agent:   model.AgentClaudeCode,
-			want:    CommandSequence{{"sudo", "npm", "install", "-g", "@anthropic-ai/claude-code"}},
+			want:    CommandSequence{{"sudo", "npm", "install", "-g", "--ignore-scripts", "@anthropic-ai/claude-code@" + versions.ClaudeCode}},
 		},
 		{
 			name:    "claude-code on linux nvm skips sudo",
 			profile: system.PlatformProfile{OS: "linux", LinuxDistro: system.LinuxDistroUbuntu, PackageManager: "apt", NpmWritable: true},
 			agent:   model.AgentClaudeCode,
-			want:    CommandSequence{{"npm", "install", "-g", "@anthropic-ai/claude-code"}},
+			want:    CommandSequence{{"npm", "install", "-g", "--ignore-scripts", "@anthropic-ai/claude-code@" + versions.ClaudeCode}},
 		},
 		{
 			name:    "claude-code on arch system npm uses sudo",
 			profile: system.PlatformProfile{OS: "linux", LinuxDistro: system.LinuxDistroArch, PackageManager: "pacman"},
 			agent:   model.AgentClaudeCode,
-			want:    CommandSequence{{"sudo", "npm", "install", "-g", "@anthropic-ai/claude-code"}},
+			want:    CommandSequence{{"sudo", "npm", "install", "-g", "--ignore-scripts", "@anthropic-ai/claude-code@" + versions.ClaudeCode}},
 		},
 		{
 			name:    "claude-code on fedora nvm skips sudo",
 			profile: system.PlatformProfile{OS: "linux", LinuxDistro: system.LinuxDistroFedora, PackageManager: "dnf", NpmWritable: true},
 			agent:   model.AgentClaudeCode,
-			want:    CommandSequence{{"npm", "install", "-g", "@anthropic-ai/claude-code"}},
+			want:    CommandSequence{{"npm", "install", "-g", "--ignore-scripts", "@anthropic-ai/claude-code@" + versions.ClaudeCode}},
 		},
 		{
 			name:    "opencode on darwin uses official anomalyco brew tap",
@@ -331,44 +332,63 @@ func TestResolveAgentInstall(t *testing.T) {
 			name:    "opencode on ubuntu system npm uses sudo",
 			profile: system.PlatformProfile{OS: "linux", LinuxDistro: system.LinuxDistroUbuntu, PackageManager: "apt"},
 			agent:   model.AgentOpenCode,
-			want:    CommandSequence{{"sudo", "npm", "install", "-g", "opencode-ai"}},
+			want:    CommandSequence{{"sudo", "npm", "install", "-g", "--ignore-scripts", "opencode-ai@" + versions.OpenCode}},
 		},
 		{
 			name:    "opencode on ubuntu nvm skips sudo",
 			profile: system.PlatformProfile{OS: "linux", LinuxDistro: system.LinuxDistroUbuntu, PackageManager: "apt", NpmWritable: true},
 			agent:   model.AgentOpenCode,
-			want:    CommandSequence{{"npm", "install", "-g", "opencode-ai"}},
+			want:    CommandSequence{{"npm", "install", "-g", "--ignore-scripts", "opencode-ai@" + versions.OpenCode}},
 		},
 		{
 			name:    "opencode on arch system npm uses sudo",
 			profile: system.PlatformProfile{OS: "linux", LinuxDistro: system.LinuxDistroArch, PackageManager: "pacman"},
 			agent:   model.AgentOpenCode,
-			want:    CommandSequence{{"sudo", "npm", "install", "-g", "opencode-ai"}},
+			want:    CommandSequence{{"sudo", "npm", "install", "-g", "--ignore-scripts", "opencode-ai@" + versions.OpenCode}},
 		},
 		{
 			name:    "opencode on fedora system npm uses sudo",
 			profile: system.PlatformProfile{OS: "linux", LinuxDistro: system.LinuxDistroFedora, PackageManager: "dnf"},
 			agent:   model.AgentOpenCode,
-			want:    CommandSequence{{"sudo", "npm", "install", "-g", "opencode-ai"}},
+			want:    CommandSequence{{"sudo", "npm", "install", "-g", "--ignore-scripts", "opencode-ai@" + versions.OpenCode}},
 		},
 		{
 			name:    "opencode on fedora nvm skips sudo",
 			profile: system.PlatformProfile{OS: "linux", LinuxDistro: system.LinuxDistroFedora, PackageManager: "dnf", NpmWritable: true},
 			agent:   model.AgentOpenCode,
-			want:    CommandSequence{{"npm", "install", "-g", "opencode-ai"}},
+			want:    CommandSequence{{"npm", "install", "-g", "--ignore-scripts", "opencode-ai@" + versions.OpenCode}},
 		},
 		{
 			name:    "claude-code on windows uses npm without sudo",
 			profile: system.PlatformProfile{OS: "windows", PackageManager: "winget", NpmWritable: true},
 			agent:   model.AgentClaudeCode,
-			want:    CommandSequence{{"npm", "install", "-g", "@anthropic-ai/claude-code"}},
+			want:    CommandSequence{{"npm", "install", "-g", "--ignore-scripts", "@anthropic-ai/claude-code@" + versions.ClaudeCode}},
 		},
 		{
 			name:    "opencode on windows uses npm without sudo",
 			profile: system.PlatformProfile{OS: "windows", PackageManager: "winget"},
 			agent:   model.AgentOpenCode,
-			want:    CommandSequence{{"npm", "install", "-g", "opencode-ai"}},
+			want:    CommandSequence{{"npm", "install", "-g", "--ignore-scripts", "opencode-ai@" + versions.OpenCode}},
 		},
+		{
+			name:    "kimi on windows uses uv to strictly enforce secure package installation",
+			profile: system.PlatformProfile{OS: "windows", PackageManager: "winget", Supported: true},
+			agent:   model.AgentKimi,
+			want:    CommandSequence{{"uv", "tool", "install", "--python", "3.13", "kimi-cli"}},
+		},
+		{
+			name:    "kimi on unix uses uv to strictly enforce secure package installation",
+			profile: system.PlatformProfile{OS: "linux", LinuxDistro: system.LinuxDistroUbuntu, PackageManager: "apt", Supported: true},
+			agent:   model.AgentKimi,
+			want:    CommandSequence{{"uv", "tool", "install", "--python", "3.13", "kimi-cli"}},
+		},
+		{
+			name:    "kimi on unsupported profile returns error",
+			profile: system.PlatformProfile{OS: "linux", LinuxDistro: system.LinuxDistroUbuntu, PackageManager: "apt", Supported: false},
+			agent:   model.AgentKimi,
+			wantErr: true,
+		},
+
 		{
 			name:    "unsupported agent returns error",
 			profile: system.PlatformProfile{OS: "darwin", PackageManager: "brew"},
@@ -390,6 +410,166 @@ func TestResolveAgentInstall(t *testing.T) {
 
 			if !reflect.DeepEqual(command, tt.want) {
 				t.Fatalf("ResolveAgentInstall() = %v, want %v", command, tt.want)
+			}
+		})
+	}
+}
+
+func TestValidateAgentInstallPreflight(t *testing.T) {
+	tests := []struct {
+		name        string
+		profile     system.PlatformProfile
+		agent       model.AgentID
+		lookPath    func(string) (string, error)
+		wantErr     bool
+		errContains string
+	}{
+		{
+			name:    "kimi on unsupported platform returns unsupported error before uv lookup",
+			profile: system.PlatformProfile{OS: "linux", LinuxDistro: "unknown", PackageManager: "", Supported: false},
+			agent:   model.AgentKimi,
+			lookPath: func(file string) (string, error) {
+				return "", fmt.Errorf("should not be called")
+			},
+			wantErr:     true,
+			errContains: "not supported on this platform",
+		},
+		{
+			name:    "kimi missing uv returns actionable remediation",
+			profile: system.PlatformProfile{OS: "darwin", PackageManager: "brew", Supported: true},
+			agent:   model.AgentKimi,
+			lookPath: func(file string) (string, error) {
+				if file == "uv" {
+					return "", fmt.Errorf("not found")
+				}
+				return "/usr/bin/" + file, nil
+			},
+			wantErr:     true,
+			errContains: "brew install uv",
+		},
+		{
+			name:    "kimi with uv present passes preflight",
+			profile: system.PlatformProfile{OS: "linux", PackageManager: "apt", Supported: true},
+			agent:   model.AgentKimi,
+			lookPath: func(file string) (string, error) {
+				if file == "uv" {
+					return "/usr/bin/uv", nil
+				}
+				return "", fmt.Errorf("not found")
+			},
+			wantErr: false,
+		},
+		{
+			name:    "pi missing binary returns actionable remediation",
+			profile: system.PlatformProfile{OS: "darwin", PackageManager: "brew", Supported: true},
+			agent:   model.AgentPi,
+			lookPath: func(file string) (string, error) {
+				if file == "pi" {
+					return "", fmt.Errorf("not found")
+				}
+				return "/usr/bin/" + file, nil
+			},
+			wantErr:     true,
+			errContains: "Pi requires the `pi` executable",
+		},
+		{
+			// Pi requires both `pi` and npm: InstallCommand always runs engramInitCommand()
+			// which executes `pnpm dlx` or `npm exec` (both need Node.js/npm).
+			name:    "pi with binary and npm present passes preflight",
+			profile: system.PlatformProfile{OS: "linux", PackageManager: "apt", Supported: true},
+			agent:   model.AgentPi,
+			lookPath: func(file string) (string, error) {
+				if file == "pi" || file == "npm" {
+					return "/usr/bin/" + file, nil
+				}
+				return "", fmt.Errorf("not found")
+			},
+			wantErr: false,
+		},
+		{
+			// Pi npm gate: pi present but npm absent must fail with Node.js remediation.
+			name:    "pi missing npm returns actionable remediation",
+			profile: system.PlatformProfile{OS: "windows", PackageManager: "winget", Supported: true},
+			agent:   model.AgentPi,
+			lookPath: func(file string) (string, error) {
+				if file == "pi" {
+					return "/usr/local/bin/pi", nil
+				}
+				return "", fmt.Errorf("not found")
+			},
+			wantErr:     true,
+			errContains: "Node.js",
+		},
+		{
+			// ClaudeCode does not require uv (that is Kimi-specific), but it does
+			// require npm. This case verifies that npm being present is sufficient
+			// for the preflight to pass — uv absence is irrelevant.
+			name:    "non kimi npm agent does not require uv but does require npm (npm present)",
+			profile: system.PlatformProfile{OS: "darwin", PackageManager: "brew", Supported: true},
+			agent:   model.AgentClaudeCode,
+			lookPath: func(file string) (string, error) {
+				if file == "npm" {
+					return "/usr/local/bin/npm", nil
+				}
+				return "", fmt.Errorf("not found")
+			},
+			wantErr: false,
+		},
+		{
+			// Bug A regression: ClaudeCode with npm absent must fail with a clear,
+			// actionable error (not proceed into the pipeline to surface a cryptic
+			// "exec: npm: executable file not found in PATH" during agent install).
+			name:    "claude-code missing npm returns actionable remediation",
+			profile: system.PlatformProfile{OS: "windows", PackageManager: "winget", Supported: true},
+			agent:   model.AgentClaudeCode,
+			lookPath: func(file string) (string, error) {
+				return "", fmt.Errorf("not found")
+			},
+			wantErr:     true,
+			errContains: "winget install OpenJS.NodeJS.LTS",
+		},
+		{
+			// OpenCode also uses npm on Windows.
+			name:    "opencode missing npm returns actionable remediation",
+			profile: system.PlatformProfile{OS: "windows", PackageManager: "winget", Supported: true},
+			agent:   model.AgentOpenCode,
+			lookPath: func(file string) (string, error) {
+				return "", fmt.Errorf("not found")
+			},
+			wantErr:     true,
+			errContains: "npm",
+		},
+	}
+
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			var calls int
+			lookPath := tt.lookPath
+			if lookPath == nil {
+				lookPath = func(string) (string, error) { return "", fmt.Errorf("not found") }
+			}
+			wrappedLookPath := func(file string) (string, error) {
+				calls++
+				return lookPath(file)
+			}
+			origLookPath := cmdLookPath
+			cmdLookPath = wrappedLookPath
+			t.Cleanup(func() { cmdLookPath = origLookPath })
+
+			err := ValidateAgentInstallPreflight(tt.profile, tt.agent)
+			if (err != nil) != tt.wantErr {
+				t.Fatalf("ValidateAgentInstallPreflight() error = %v, wantErr %v", err, tt.wantErr)
+			}
+
+			if tt.wantErr && !strings.Contains(err.Error(), tt.errContains) {
+				t.Fatalf("ValidateAgentInstallPreflight() error = %q, want to contain %q", err.Error(), tt.errContains)
+			}
+			if tt.name == "kimi on unsupported platform returns unsupported error before uv lookup" && strings.Contains(strings.ToLower(err.Error()), "install uv") {
+				t.Fatalf("ValidateAgentInstallPreflight() unsupported-platform error leaked uv remediation: %q", err.Error())
+			}
+
+			if tt.name == "kimi on unsupported platform returns unsupported error before uv lookup" && calls != 0 {
+				t.Fatalf("ValidateAgentInstallPreflight() called uv lookup %d times on unsupported platform, want 0", calls)
 			}
 		})
 	}

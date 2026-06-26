@@ -23,12 +23,13 @@ Users currently must run 6 separate commands to install to all targets:
 
 ```bash
 bunx @every-env/compound-plugin install compound-engineering --to opencode
-bunx @every-env/compound-plugin install compound-engineering --to codex
 bunx @every-env/compound-plugin install compound-engineering --to droid
 bunx @every-env/compound-plugin install compound-engineering --to cursor
 bunx @every-env/compound-plugin install compound-engineering --to pi
 bunx @every-env/compound-plugin install compound-engineering --to gemini
 ```
+
+Superseded note (2026-06-19): Compound Engineering's Codex path is now native plugin install through `codex plugin marketplace add` plus the `/plugins` TUI. The old converted Codex companion install is no longer part of the CE install flow.
 
 Similarly, sync requires separate commands per target. And Gemini sync doesn't exist yet.
 
@@ -111,14 +112,14 @@ export async function getDetectedTargetNames(): Promise<string[]> {
 
 **Detection heuristics:**
 
-| Tool                                | Check paths                                                    | Notes                                                  |
-|------------------------------------|---------------------------------------------------------------|-------------------------------------------------------|
-| OpenCode                            | `~/.config/opencode/`, `.opencode/`                            | XDG config or project-local                            |
-| Codex                               | `~/.codex/`                                                    | Global only                                            |
-| Droid                               | `~/.factory/`                                                  | Global only                                            |
-| Cursor                              | `.cursor/`, `~/.cursor/`                                       | Project-local or global                                |
-| Pi                                  | `~/.pi/`                                                       | Global only                                            |
-| Gemini                              | `.gemini/`, `~/.gemini/`                                       | Project-local or global                                |
+| Tool | Check paths | Notes |
+|------|------------|-------|
+| OpenCode | `~/.config/opencode/`, `.opencode/` | XDG config or project-local |
+| Codex | `~/.codex/` | Global only |
+| Droid | `~/.factory/` | Global only |
+| Cursor | `.cursor/`, `~/.cursor/` | Project-local or global |
+| Pi | `~/.pi/` | Global only |
+| Gemini | `.gemini/`, `~/.gemini/` | Project-local or global |
 
 ### Phase 2: Gemini Sync
 

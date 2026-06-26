@@ -42,7 +42,7 @@ Auto memory passively captures debugging insights, fix patterns, and preferences
 ### Institutional Learnings
 
 - `docs/solutions/skill-design/compound-refresh-skill-improvements.md` -- replacement subagents pattern, tool guidance convention, context isolation principle
-- Plugin 01_Personal_Os/11_AGENTS.md tool selection rules: describe tools by capability class with platform hints, not by Claude Code-specific tool names alone
+- Plugin AGENTS.md tool selection rules: describe tools by capability class with platform hints, not by Claude Code-specific tool names alone
 
 ## Key Technical Decisions
 
@@ -96,7 +96,7 @@ Auto memory passively captures debugging insights, fix patterns, and preferences
 **Patterns to follow:**
 - ce:plan's Phase 0 pattern of pre-reading source documents before launching agents
 - ce:compound-refresh's existing "When spawning any subagent" instruction block pattern
-- Plugin 01_Personal_Os/11_AGENTS.md convention: describe tools by capability class with platform hints
+- Plugin AGENTS.md convention: describe tools by capability class with platform hints
 
 **Test scenarios:**
 - Memory present with relevant entries: orchestrator identifies related notes and passes them to 2 subagents; final documentation is enriched
@@ -134,7 +134,7 @@ Auto memory passively captures debugging insights, fix patterns, and preferences
 - The existing investigation dimensions structure in Phase 1 (References, Recommended solution, Code examples, Related docs)
 - The existing "When spawning any subagent" instruction block
 - The existing drift classification guidance style (Update territory vs Replace territory)
-- Plugin 01_Personal_Os/11_AGENTS.md convention: describe tools by capability class with platform hints
+- Plugin AGENTS.md convention: describe tools by capability class with platform hints
 
 **Test scenarios:**
 - Memory contains note contradicting a learning's recommended approach: investigation subagent reports it as "(auto memory)" drift signal alongside codebase evidence
