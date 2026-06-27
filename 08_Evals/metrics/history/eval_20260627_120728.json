@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-06-27T12:07:28.508287",
+  "results": {
+    "marketing_strategist": {
+      "agent": "marketing_strategist",
+      "agent_name": "Marketing Strategist",
+      "timestamp": "2026-06-27T12:07:28.205999",
+      "scenarios": [
+        {
+          "scenario_id": "marketing_01",
+          "scenario_name": "Brand Voice Setup",
+          "response_time": 0.1,
+          "token_usage": 1500,
+          "context_accuracy": 85,
+          "task_completion": 1,
+          "passed": true
+        },
+        {
+          "scenario_id": "marketing_02",
+          "scenario_name": "Content Strategy",
+          "response_time": 0.101,
+          "token_usage": 1500,
+          "context_accuracy": 85,
+          "task_completion": 1,
+          "passed": true
+        },
+        {
+          "scenario_id": "marketing_03",
+          "scenario_name": "Campaign Planning",
+          "response_time": 0.1,
+          "token_usage": 1500,
+          "context_accuracy": 85,
+          "task_completion": 1,
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "response_time": 0.1,
+        "token_usage": 1500,
+        "context_accuracy": 85.0,
+        "task_completion": 1.0
+      },
+      "overall_score": 92.3
+    }
+  }
+}

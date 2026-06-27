@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-06-27T11:38:00.027281",
+  "results": {
+    "admin": {
+      "agent": "admin",
+      "agent_name": "Admin Agent",
+      "timestamp": "2026-06-27T11:37:59.721397",
+      "scenarios": [
+        {
+          "scenario_id": "admin_01",
+          "scenario_name": "Client Onboarding Workflow",
+          "response_time": 0.1,
+          "token_usage": 1500,
+          "context_accuracy": 85,
+          "task_completion": 1,
+          "passed": true
+        },
+        {
+          "scenario_id": "admin_02",
+          "scenario_name": "Invoice Processing",
+          "response_time": 0.103,
+          "token_usage": 1500,
+          "context_accuracy": 85,
+          "task_completion": 1,
+          "passed": true
+        },
+        {
+          "scenario_id": "admin_03",
+          "scenario_name": "Team Coordination",
+          "response_time": 0.1,
+          "token_usage": 1500,
+          "context_accuracy": 85,
+          "task_completion": 1,
+          "passed": true
+        }
+      ],
+      "metrics": {
+        "response_time": 0.101,
+        "token_usage": 1500,
+        "context_accuracy": 85.0,
+        "task_completion": 1.0
+      },
+      "overall_score": 92.3
+    }
+  }
+}

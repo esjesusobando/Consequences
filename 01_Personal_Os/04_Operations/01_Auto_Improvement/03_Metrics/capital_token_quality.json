@@ -1,0 +1,225 @@
+{
+  "files": [
+    {
+      "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\agents\\01-admin-agent.md",
+      "issues": [
+        "Broken reference: playbooks/01-onboarding-nuevo-cliente.md"
+      ],
+      "issue_count": 1,
+      "quality_score": 90,
+      "last_checked": "2026-06-27T12:13:46.966350"
+    },
+    {
+      "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\agents\\02-finance-agent.md",
+      "issues": [],
+      "issue_count": 0,
+      "quality_score": 100,
+      "last_checked": "2026-06-27T12:13:46.968201"
+    },
+    {
+      "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\agents\\03-hr-agent.md",
+      "issues": [],
+      "issue_count": 0,
+      "quality_score": 100,
+      "last_checked": "2026-06-27T12:13:46.971515"
+    },
+    {
+      "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\context\\organizacion.md",
+      "issues": [
+        "Missing YAML frontmatter (no opening ---)"
+      ],
+      "issue_count": 1,
+      "quality_score": 90,
+      "last_checked": "2026-06-27T12:13:46.974011"
+    },
+    {
+      "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\decisions\\00-template.md",
+      "issues": [
+        "Placeholder found: {{Título de la Decisión}}",
+        "Placeholder found: {{YYYY-MM-DD}}",
+        "Placeholder found: {{persona}}",
+        "Placeholder found: {{N}}",
+        "Placeholder found: {{Título}}",
+        "Placeholder found: {{Describe el problema, situación o motivación que llevó a esta decisión}}",
+        "Placeholder found: {{Describe la decisión tomada — clara, concisa}}",
+        "Placeholder found: {{nombre}}",
+        "Placeholder found: {{pros}}",
+        "Placeholder found: {{cons}}",
+        "Placeholder found: {{nombre}}",
+        "Placeholder found: {{pros}}",
+        "Placeholder found: {{cons}}",
+        "Placeholder found: {{Por qué se eligió esta opción sobre las otras — criterios, trade-offs}}",
+        "Placeholder found: {{consecuencia positiva}}",
+        "Placeholder found: {{consecuencia negativa}}"
+      ],
+      "issue_count": 16,
+      "quality_score": 0,
+      "last_checked": "2026-06-27T12:13:46.989425"
+    },
+    {
+      "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\decisions\\001-capital-token-hibrido.md",
+      "issues": [],
+      "issue_count": 0,
+      "quality_score": 100,
+      "last_checked": "2026-06-27T12:13:47.008221"
+    },
+    {
+      "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\decisions\\002-estructura-conocimiento.md",
+      "issues": [],
+      "issue_count": 0,
+      "quality_score": 100,
+      "last_checked": "2026-06-27T12:13:47.010311"
+    },
+    {
+      "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\metrics\\capital-token-dashboard.md",
+      "issues": [
+        "Missing YAML frontmatter (no opening ---)",
+        "Broken reference: agents/01-admin-agent.md",
+        "Broken reference: agents/02-finance-agent.md",
+        "Broken reference: agents/03-hr-agent.md",
+        "Broken reference: agents/admin-config.yaml"
+      ],
+      "issue_count": 5,
+      "quality_score": 50,
+      "last_checked": "2026-06-27T12:13:47.012945"
+    },
+    {
+      "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\playbooks\\00-template.md",
+      "issues": [
+        "Placeholder found: {{Nombre del Playbook}}",
+        "Placeholder found: {{Rol responsable}}",
+        "Placeholder found: {{YYYY-MM-DD}}",
+        "Placeholder found: {{input}}",
+        "Placeholder found: {{qué se necesita}}",
+        "Placeholder found: {{output}}",
+        "Placeholder found: {{qué se produce}}",
+        "Placeholder found: {{Nombre del Playbook}}",
+        "Placeholder found: {{Qué problema resuelve este playbook}}",
+        "Placeholder found: {{Situación 1}}",
+        "Placeholder found: {{Situación 2}}",
+        "Placeholder found: {{Rol}}",
+        "Placeholder found: {{responsabilidad}}",
+        "Placeholder found: {{Rol}}",
+        "Placeholder found: {{responsabilidad}}",
+        "Placeholder found: {{requisito 1}}",
+        "Placeholder found: {{requisito 2}}",
+        "Placeholder found: {{Paso 1}}",
+        "Placeholder found: {{Descripción de qué hacer en este paso}}",
+        "Placeholder found: {{qué se necesita}}",
+        "Placeholder found: {{qué se produce}}",
+        "Placeholder found: {{Paso 2}}",
+        "Placeholder found: {{Descripción de qué hacer}}",
+        "Placeholder found: {{verificación 1}}",
+        "Placeholder found: {{verificación 2}}",
+        "Placeholder found: {{Paso 3}}",
+        "Placeholder found: {{Descripción}}",
+        "Placeholder found: {{gate 1}}",
+        "Placeholder found: {{gate 2}}",
+        "Placeholder found: {{gate 3}}",
+        "Placeholder found: {{error}}",
+        "Placeholder found: {{síntoma}}",
+        "Placeholder found: {{solución}}",
+        "Placeholder found: {{métrica}}",
+        "Placeholder found: {{target}}",
+        "Placeholder found: {{medición}}",
+        "Placeholder found: {{YYYY-MM-DD}}"
+      ],
+      "issue_count": 37,
+      "quality_score": 0,
+      "last_checked": "2026-06-27T12:13:47.015319"
+    },
+    {
+      "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\playbooks\\01-onboarding-nuevo-cliente.md",
+      "issues": [
+        "Placeholder found: {{nombre}}",
+        "Placeholder found: {{industria}}",
+        "Placeholder found: {{objetivo 1}}",
+        "Placeholder found: {{objetivo 2}}",
+        "Placeholder found: {{descripción}}",
+        "Placeholder found: {{professional | warm | playful | authoritative}}",
+        "Placeholder found: {{kpi 1}}",
+        "Placeholder found: {{kpi 2}}",
+        "Broken reference: CLAUDE.{cliente}.md",
+        "Broken reference: 02_Playground/CLAUDE.{cliente}.md"
+      ],
+      "issue_count": 10,
+      "quality_score": 0,
+      "last_checked": "2026-06-27T12:13:47.019349"
+    },
+    {
+      "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\playbooks\\02-produccion-contenido.md",
+      "issues": [
+        "Placeholder found: {{nombre del cliente}}",
+        "Placeholder found: {{descripción}}",
+        "Placeholder found: {{qué problema resuelve}}",
+        "Placeholder found: {{brand voice del cliente}}",
+        "Placeholder found: {{idea principal para el gancho}}",
+        "Placeholder found: {{qué querés que haga el lector}}",
+        "Placeholder found: {{kpi 1}}",
+        "Placeholder found: {{kpi 2}}",
+        "Placeholder found: {{título}}",
+        "Placeholder found: {{plataforma}}",
+        "Placeholder found: {{qué funcionó}}",
+        "Placeholder found: {{qué mejorar}}",
+        "Placeholder found: {{aprendizajes para próxima iteración}}"
+      ],
+      "issue_count": 13,
+      "quality_score": 0,
+      "last_checked": "2026-06-27T12:13:47.021124"
+    },
+    {
+      "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\processes\\00-template.md",
+      "issues": [
+        "Placeholder found: {{Nombre del SOP}}",
+        "Placeholder found: {{Rol}}",
+        "Placeholder found: {{YYYY-MM-DD}}",
+        "Placeholder found: {{Nombre del Proceso}}",
+        "Placeholder found: {{Qué logra este proceso}}",
+        "Placeholder found: {{Quién lo ejecuta, cuándo, bajo qué condiciones}}",
+        "Placeholder found: {{Paso 1}}",
+        "Placeholder found: {{rol}}",
+        "Placeholder found: {{acción}}",
+        "Placeholder found: {{tool}}",
+        "Placeholder found: {{X min}}",
+        "Placeholder found: {{Paso 2}}",
+        "Placeholder found: {{rol}}",
+        "Placeholder found: {{acción}}",
+        "Placeholder found: {{Paso 3}}",
+        "Placeholder found: {{rol}}",
+        "Placeholder found: {{acción}}",
+        "Placeholder found: {{excepción}}",
+        "Placeholder found: {{acción}}",
+        "Placeholder found: {{item 1}}",
+        "Placeholder found: {{item 2}}",
+        "Placeholder found: {{item 3}}"
+      ],
+      "issue_count": 22,
+      "quality_score": 0,
+      "last_checked": "2026-06-27T12:13:47.023662"
+    },
+    {
+      "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\processes\\01-proyecto-kickoff.md",
+      "issues": [
+        "Broken reference: brief.md",
+        "Broken reference: CLAUDE.{proyecto}.md"
+      ],
+      "issue_count": 2,
+      "quality_score": 80,
+      "last_checked": "2026-06-27T12:13:47.043094"
+    },
+    {
+      "path": "01_Personal_Os\\02_Knowledge\\10_Shared_Org\\processes\\02-reporte-semanal.md",
+      "issues": [],
+      "issue_count": 0,
+      "quality_score": 100,
+      "last_checked": "2026-06-27T12:13:47.046724"
+    }
+  ],
+  "summary": {
+    "total_files": 14,
+    "files_with_issues": 9,
+    "total_issues": 107,
+    "avg_quality_score": 57.9
+  },
+  "last_updated": "2026-06-27T12:13:46.950686"
+}

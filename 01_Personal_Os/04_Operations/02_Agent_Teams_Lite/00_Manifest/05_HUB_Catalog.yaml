@@ -1,10 +1,12 @@
-# HUB Catalog — generated 2026-06-26T22:07:46
+# HUB Catalog — generated 2026-06-27T12:11:25
 
 version: v3.0
-generated: "2026-06-26T22:07:46"
+generated: "2026-06-27T12:11:25"
 base_path: 01_Personal_Os/04_Operations/03_Scripts_Os/
 totals:
-  hubs: 30
+  hubs: 39
+  hubs_scripts_raiz: 30
+  hubs_directorios: 9
   scripts: 133
   hubs_numerados: 30
   hubs_con_interfaz: 30
@@ -221,6 +223,43 @@ hubs:
       has_main: True
       has_args: False
       is_numerado: True
+hubs_directorios:
+  - name: 01_Ritual
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual
+    type: subdir
+    scripts_count: 4
+  - name: 03_AIPM
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/03_AIPM
+    type: subdir
+    scripts_count: 9
+  - name: 05_Validator
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/05_Validator
+    type: subdir
+    scripts_count: 6
+  - name: 07_Integration
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/07_Integration
+    type: subdir
+    scripts_count: 3
+  - name: 08_Data
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/08_Data
+    type: subdir
+    scripts_count: 4
+  - name: 09_Auxiliary
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/09_Auxiliary
+    type: subdir
+    scripts_count: 5
+  - name: 10_Anthropic
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/10_Anthropic
+    type: subdir
+    scripts_count: 10
+  - name: 12_Auditors_Os
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os
+    type: subdir
+    scripts_count: 5
+  - name: 13_Legacy
+    path: 01_Personal_Os/04_Operations/03_Scripts_Os/13_Legacy
+    type: subdir
+    scripts_count: 87
 scripts:
   - name: 00_Context_Reset
     path: 01_Personal_Os/04_Operations/03_Scripts_Os/01_Ritual/00_Context_Reset.py

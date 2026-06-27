@@ -222,6 +222,12 @@ AGENT_CATEGORIES = {
     "01_Dream_Team": "dream_team",
     "02_Specialists_Compound": "specialists",
     "03_Growth": "growth",
+    "07_Agent_Teams_Lite_Gen": "atl_gen",
+    "00_Agent_Teams_Lite": "agent_teams_lite",
+    "00_OS_Conductor": "os_conductor",
+    "04_Contexto": "other",
+    "05_Marca": "other",
+    "06_Plantillas": "other",
 }
 
 
@@ -313,11 +319,16 @@ def _detect_hub_interface(path: Path) -> dict:
 
 
 def scan_hubs():
-    """Escanea HUBs en 03_Scripts_Os/ + scripts en subdirectorios."""
+    """Escanea HUBs en 03_Scripts_Os/ + scripts en subdirectorios.
+
+    HUBs = (scripts .py con prefijo numerico en raiz de Scripts_Os/)
+          + (subdirectorios funcionales con contenido numerado)
+    """
     hubs_dir = PROJECT_ROOT / "01_Personal_Os/04_Operations/03_Scripts_Os"
 
     hubs = []
     scripts = []
+    hub_dirs = []  # subdirectorios funcionales tratados como HUBs
 
     # HUBs en raíz (scripts con prefijo numérico XX_ en directorio raíz)
     for f in sorted(hubs_dir.glob("*.py")):
@@ -333,16 +344,27 @@ def scan_hubs():
             "interfaz": iface,
         })
 
-    # Scripts en subdirectorios (ej: 05_Validator/, 13_Legacy/) — búsqueda recursiva
-    EXCLUDED_DIR_NAMES = {"__pycache__"}
+    # Subdirectorios funcionales (contienen scripts numerados o son HUBs por sí mismos)
+    EXCLUDED_SUBDIR_NAMES = {"__pycache__"}
     for subdir in sorted(hubs_dir.iterdir()):
         if not subdir.is_dir():
             continue
         if subdir.name.startswith("."):
             continue
+        if subdir.name in EXCLUDED_SUBDIR_NAMES:
+            continue
+        # Subdirectorios con scripts numerados se cuentan como "HUB directory"
+        has_numbered = any(f.stem[:2].isdigit() for f in subdir.rglob("*.py") if f.is_file())
+        if has_numbered:
+            py_count = sum(1 for f in subdir.rglob("*.py") if f.is_file() and f.stem[:2].isdigit())
+            hub_dirs.append({
+                "name": subdir.name,
+                "path": str(subdir.relative_to(PROJECT_ROOT)).replace("\\", "/"),
+                "type": "subdir",
+                "scripts_count": py_count,
+            })
+        # Scripts en subdirectorios (ej: 05_Validator/, 13_Legacy/)
         for f in sorted(subdir.rglob("*.py")):
-            if any(p == "__pycache__" for p in f.parts):
-                continue
             if f.stem in ("__init__",):
                 continue
             if not f.stem[:2].isdigit():
@@ -355,6 +377,8 @@ def scan_hubs():
                 "interfaz": iface,
             })
 
+    # Total HUBs funcional = scripts raiz numerados + subdirectorios funcionales
+    total_hub_units = len(hubs) + len(hub_dirs)
     hubs_con_interfaz = sum(1 for h in hubs if h["interfaz"]["has_main"] or h["interfaz"]["has_args"])
     hubs_numerados = len([h for h in hubs if h["interfaz"]["is_numerado"]])
     scripts_totales = hubs_numerados + len(scripts)
@@ -365,7 +389,9 @@ def scan_hubs():
         "generated": datetime.now().isoformat(timespec="seconds"),
         "base_path": "01_Personal_Os/04_Operations/03_Scripts_Os/",
         "totals": {
-            "hubs": len(hubs),
+            "hubs": total_hub_units,        # raiz scripts + subdirs funcionales
+            "hubs_scripts_raiz": len(hubs),  # solo scripts en raiz
+            "hubs_directorios": len(hub_dirs),  # subdirectorios funcionales
             "scripts": len(scripts),
             "hubs_numerados": hubs_numerados,
             "hubs_con_interfaz": hubs_con_interfaz,
@@ -373,6 +399,7 @@ def scan_hubs():
             "scripts_no_hub": scripts_no_hub,
         },
         "hubs": hubs,
+        "hubs_directorios": hub_dirs,
         "scripts": scripts,
     }
 
@@ -491,7 +518,10 @@ def scan_inventory():
             "drift": agents_data["totals"]["drift"],
         },
         "hubs": {
-            "definition_hub": "scripts en 03_Scripts_Os/ con interfaz run() + --help/argparse",
+            "definition_hub": "scripts en 03_Scripts_Os/ (raiz numerados + subdirectorios funcionales)",
+            "hubs": hubs_data["totals"]["hubs"],
+            "hubs_scripts_raiz": hubs_data["totals"]["hubs_scripts_raiz"],
+            "hubs_directorios": hubs_data["totals"]["hubs_directorios"],
             "hubs_numerados": hubs_data["totals"]["hubs_numerados"],
             "hubs_con_interfaz": hubs_data["totals"]["hubs_con_interfaz"],
             "scripts_totales": hubs_data["totals"]["scripts_totales"],
@@ -628,7 +658,7 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/20_System_Mapper_Hub.py --vali
 - **MCPs OpenCode:** {inventory['totals']['mcps_opencode']}
 - **Skills:** {inventory['totals']['skills']} en {inventory['totals']['skill_areas']} áreas
 - **Agentes:** {inventory['agents']['total_operational']} ({inventory['agents']['source_count']} source + ATL) — categorías: {', '.join(f'{k}={v}' for k, v in inventory['agents']['by_category'].items())}
-- **HUBs:** {inventory['hubs']['hubs_con_interfaz']} con interfaz / {inventory['hubs']['hubs_numerados']} numerados
+- **HUBs:** {inventory['hubs']['hubs']} funcionales ({inventory['hubs']['hubs_scripts_raiz']} scripts raiz + {inventory['hubs']['hubs_directorios']} directorios)
 - **Scripts totales:** {inventory['hubs']['scripts_totales']} ({inventory['hubs']['scripts_no_hub']} no-HUB)
 - **Workflows:** {inventory['totals']['workflows']}
 - **Hooks:** {inventory['totals']['hooks']}
@@ -674,7 +704,7 @@ DOC_DRIFT_PATTERNS = {
             r"HUBs?[:\s]+(\d{2,3})",                            # "HUBs: 30"
             r"(\d{2,3})\s*HUBs?",                                 # "30 HUBs"
         ],
-        "inventory_key": "hubs.hubs_con_interfaz",
+        "inventory_key": "hubs.hubs",
     },
     "scripts": {
         "patterns": [
@@ -715,7 +745,7 @@ def _get_inventory_value(inv: dict, dotted_key: str):
 def _check_doc_drift(inventory: dict) -> int:
     """Lee los 4 docs maestros y compara sus métricas contra el manifest."""
     docs = {
-        "OS_DIRECTORY.md": PROJECT_ROOT / "OS_DIRECTORY.md",
+        "OS_DIRECTORY.md": PROJECT_ROOT / "00_Winter_is_Coming" / "OS_DIRECTORY.md",
         "CLAUDE.md": PROJECT_ROOT / "CLAUDE.md",
         "AGENTS.md": PROJECT_ROOT / "00_Winter_is_Coming" / "AGENTS.md",
         "README.md": PROJECT_ROOT / "README.md",
@@ -892,7 +922,7 @@ def write_report(inventory: dict):
         f"  Skills:              {inventory['totals']['skills']} en {inventory['totals']['skill_areas']} áreas",
         f"  Agentes (source):    {inventory['totals']['agents_source']}",
         f"  Agentes (backup):    {inventory['totals']['agents_backup']}",
-        f"  HUBs:                {inventory['totals']['hubs']}",
+        f"  HUBs:                {inventory['totals']['hubs']} funcionales ({inventory['hubs']['hubs_scripts_raiz']} scripts + {inventory['hubs']['hubs_directorios']} dir)",
         f"  Workflows:           {inventory['totals']['workflows']} en {inventory['totals']['workflow_categories']} categorías",
         f"  Hooks:               {inventory['totals']['hooks']} en {inventory['totals']['hook_phases']} fases",
         f"  Rules:               {inventory['totals']['rules']}",
