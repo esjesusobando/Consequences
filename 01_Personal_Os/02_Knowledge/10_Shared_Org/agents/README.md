@@ -19,11 +19,11 @@ Cada template es un archivo YAML + markdown que define:
 
 ## Templates Disponibles
 
-| # | Rol | Archivo | Estado |
-|---|-----|---------|--------|
-| 1 | Admin Agent | `01-admin-agent.md` | 📝 Creado |
+| # | Rol           | Archivo               | Estado   |
+| --- | ------------- | --------------------- | -------- |
+| 1 | Admin Agent   | `01-admin-agent.md`   | 📝 Creado |
 | 2 | Finance Agent | `02-finance-agent.md` | 📝 Creado |
-| 3 | HR Agent | `03-hr-agent.md` | 📝 Creado |
+| 3 | HR Agent      | `03-hr-agent.md`      | 📝 Creado |
 
 ---
 

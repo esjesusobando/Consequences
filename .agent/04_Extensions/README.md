@@ -33,15 +33,15 @@ Sistema de extensiones para Claude Code: hooks de ciclo de vida, notificaciones,
 
 ## ⚡ Hooks Activos (6 hooks)
 
-| Hook             | Trigger                         | Script                  | Función                          |
-| ---------------- | ------------------------------- | ----------------------- | -------------------------------- |
-| `PreToolUse`     | Antes de cada tool              | `pre_tool_use.py`       | Batería, seguridad, `rm -rf` block |
-| `PreToolUse`     | Antes de cada tool              | `csv-single-validator.py` | Valida archivos CSV              |
-| `PostToolUse`    | Después de modificar archivos   | `post_tool_use.py`      | Backup, voz, logs                |
-| `Stop`           | Al cerrar sesión                | `stop.py`               | "Sesión finalizada"              |
-| `SubagentStop`   | Al terminar sub-agente          | `subagent_stop.py`      | "Subagente completado"           |
-| `UserPromptSubmit` | Cuando el usuario envía mensaje | `notification.py`       | Alerta visual + voz              |
-| `TodoWrite`      | Al usar TodoWrite               | `task-complete-sound.ps1` | Sonido de completado             |
+| Hook               | Trigger                         | Script                    | Función                            |
+| ------------------ | ------------------------------- | ------------------------- | ---------------------------------- |
+| `PreToolUse`       | Antes de cada tool              | `pre_tool_use.py`         | Batería, seguridad, `rm -rf` block |
+| `PreToolUse`       | Antes de cada tool              | `csv-single-validator.py` | Valida archivos CSV                |
+| `PostToolUse`      | Después de modificar archivos   | `post_tool_use.py`        | Backup, voz, logs                  |
+| `Stop`             | Al cerrar sesión                | `stop.py`                 | "Sesión finalizada"                |
+| `SubagentStop`     | Al terminar sub-agente          | `subagent_stop.py`        | "Subagente completado"             |
+| `UserPromptSubmit` | Cuando el usuario envía mensaje | `notification.py`         | Alerta visual + voz                |
+| `TodoWrite`        | Al usar TodoWrite               | `task-complete-sound.ps1` | Sonido de completado               |
 
 ---
 
@@ -87,21 +87,21 @@ Sistema de extensiones para Claude Code: hooks de ciclo de vida, notificaciones,
 
 **Ejecuta ANTES de cada operación:**
 
-| Check       | Condición   | Acción            |
-| ----------- | ----------- | ----------------- |
-| Batería     | < 15%       | Cancela operación |
-| Destructivo | `rm -rf`    | Bloquea comando   |
-| Seguridad   | `cat .env`  | Bloquea acceso    |
+| Check       | Condición  | Acción            |
+| ----------- | ---------- | ----------------- |
+| Batería     | < 15%      | Cancela operación |
+| Destructivo | `rm -rf`   | Bloquea comando   |
+| Seguridad   | `cat .env` | Bloquea acceso    |
 
 ### 02_Post_Tool/post_tool_use.py
 
 **Ejecuta DESPUÉS de modificar archivos:**
 
-| Acción   | Detalle                                                  |
-| -------- | -------------------------------------------------------- |
-| Backup   | `.claude/backups/{file}_{timestamp}.bak`                 |
-| Linters  | Print (Ruff/Prettier ready)                              |
-| Voz      | Notifica cada 2 archivos (.md, .py, .json, .yaml, .toml) |
+| Acción  | Detalle                                                  |
+| ------- | -------------------------------------------------------- |
+| Backup  | `.claude/backups/{file}_{timestamp}.bak`                 |
+| Linters | Print (Ruff/Prettier ready)                              |
+| Voz     | Notifica cada 2 archivos (.md, .py, .json, .yaml, .toml) |
 
 ### 03_Validators/csv-single-validator.py
 
@@ -138,10 +138,10 @@ Sistema de extensiones para Claude Code: hooks de ciclo de vida, notificaciones,
 
 ## 🔧 Variables de Entorno
 
-| Variable                   | Default   | Descripción          |
-| -------------------------- | --------- | -------------------- |
-| `ENABLE_VOICE_NOTIFICATIONS` | `1`       | Toggle global de voz |
-| `BYPASS_BATTERY_CHECK`     | `0`       | Skip battery check   |
+| Variable                     | Default | Descripción          |
+| ---------------------------- | ------- | -------------------- |
+| `ENABLE_VOICE_NOTIFICATIONS` | `1`     | Toggle global de voz |
+| `BYPASS_BATTERY_CHECK`       | `0`     | Skip battery check   |
 
 ---
 
@@ -190,26 +190,26 @@ find .claude/backups -name "*.bak" -mtime +7 -delete
 
 ## 📦 Silicon Valley Best Practices
 
-| Practice               | Implementation                       |
-| ---------------------- | ------------------------------------ |
-| **Separación de Concerns** | Hooks categorizados por fase         |
-| **DRY**                | `02_Utils/common.py` centraliza lógica |
-| **Fail-Safe**          | Errores silenciados                  |
-| **Async**              | `subprocess.Popen` no bloquea        |
-| **Configurable**       | ENV vars para toggles                |
-| **Testeable**          | Scripts standalone                   |
+| Practice                   | Implementation                         |
+| -------------------------- | -------------------------------------- |
+| **Separación de Concerns** | Hooks categorizados por fase           |
+| **DRY**                    | `02_Utils/common.py` centraliza lógica |
+| **Fail-Safe**              | Errores silenciados                    |
+| **Async**                  | `subprocess.Popen` no bloquea          |
+| **Configurable**           | ENV vars para toggles                  |
+| **Testeable**              | Scripts standalone                     |
 
 ---
 
 ## 📊 Resumen Final
 
-| Item           | Count   | Detail                                                       |
-| -------------- | ------- | ------------------------------------------------------------ |
-| **Hooks Activos** | 6       | PreTool, PostTool, Stop, SubagentStop, UserPrompt, TodoWrite |
-| **Validaciones** | 3       | Battery, Destructive Commands, CSV Structure                 |
-| **Notificaciones** | 2       | Voice (System.Speech), Sound (Windows)                       |
-| **Logging**    | ✅       | JSON en `.claude/history/sessions/`                          |
-| **Backup**     | ✅       | Auto en `.claude/backups/`                                   |
+| Item               | Count | Detail                                                       |
+| ------------------ | ----- | ------------------------------------------------------------ |
+| **Hooks Activos**  | 6     | PreTool, PostTool, Stop, SubagentStop, UserPrompt, TodoWrite |
+| **Validaciones**   | 3     | Battery, Destructive Commands, CSV Structure                 |
+| **Notificaciones** | 2     | Voice (System.Speech), Sound (Windows)                       |
+| **Logging**        | ✅     | JSON en `.claude/history/sessions/`                          |
+| **Backup**         | ✅     | Auto en `.claude/backups/`                                   |
 
 ---
 

@@ -39,10 +39,10 @@ Acá vive el conocimiento organizacional que trasciende al individuo:
 
 > `Capital Token` + `Auto-Improvement` = Conocimiento que se acumula + Infraestructura saludable
 
-| Sistema | Rol | Que hace | Donde vive |
-|---------|-----|----------|------------|
-| 🌕 **Capital Token** | Biblioteca | Documenta procesos, decisiones, playbooks | `02_Knowledge/10_Shared_Org/` |
-| 🔄 **Auto-Improvement** | Mantenimiento | Barre, ordena, arregla codigo roto | `04_Operations/01_Auto_Improvement/` |
+| Sistema                | Rol           | Que hace                                  | Donde vive                           |
+| ---------------------- | ------------- | ----------------------------------------- | ------------------------------------ |
+| 🌕 **Capital Token**    | Biblioteca    | Documenta procesos, decisiones, playbooks | `02_Knowledge/10_Shared_Org/`        |
+| 🔄 **Auto-Improvement** | Mantenimiento | Barre, ordena, arregla codigo roto        | `04_Operations/01_Auto_Improvement/` |
 
 **Capital Token sin Auto-Improvement:** los procesos se documentan pero la infraestructura se degrada.
 **Auto-Improvement sin Capital Token:** el codigo se mantiene limpio pero el conocimiento se pierde.
@@ -73,15 +73,15 @@ Acá vive el conocimiento organizacional que trasciende al individuo:
 
 ## Métricas de Salud
 
-| Métrica | Target | Actual |
-|---------|--------|--------|
-| Playbooks documentados | 20+ | 2 |
-| Decisiones registradas | 10+ | 2 |
-| Procesos documentados | 5+ | 2 |
-| Agentes template | 3+ | 3 |
-| Agentes configurados | 3+ | 1 |
-| Shared Context files | 5+ | 1 |
-| Bridge funcional | v1.0 | v0.1 |
+| Métrica                | Target | Actual |
+| ---------------------- | ------ | ------ |
+| Playbooks documentados | 20+    | 2      |
+| Decisiones registradas | 10+    | 2      |
+| Procesos documentados  | 5+     | 2      |
+| Agentes template       | 3+     | 3      |
+| Agentes configurados   | 3+     | 1      |
+| Shared Context files   | 5+     | 1      |
+| Bridge funcional       | v1.0   | v0.1   |
 
 ---
 
@@ -113,13 +113,13 @@ python capital-token-bridge.py
 ```
 Sin argumentos, arranca una consola interactiva con estos comandos:
 
-| Comando | Descripcion |
-|---------|-------------|
-| `/index` | Mostrar indice del Shared Org |
-| `/query <texto>` | Buscar en shared context |
-| `/get <path>` | Leer archivo completo (ej: `/get playbooks/01-onboarding-nuevo-cliente.md`) |
-| `/help` | Mostrar ayuda |
-| `/exit` | Salir |
+| Comando          | Descripcion                                                                 |
+| ---------------- | --------------------------------------------------------------------------- |
+| `/index`         | Mostrar indice del Shared Org                                               |
+| `/query <texto>` | Buscar en shared context                                                    |
+| `/get <path>`    | Leer archivo completo (ej: `/get playbooks/01-onboarding-nuevo-cliente.md`) |
+| `/help`          | Mostrar ayuda                                                               |
+| `/exit`          | Salir                                                                       |
 
 ### Integracion con Agentes
 
@@ -151,10 +151,10 @@ Este sistema se complementa con el **Auto-Improvement** (`01_Personal_Os/04_Oper
          ▼  Código limpio, estructura ordenada, naming consistente
 ```
 
-| Sistema | Rol | Scope | Frecuencia |
-|---------|-----|-------|------------|
-| 🌕 Capital Token | Captura de conocimiento organizacional | Procesos, ADRs, playbooks, agent templates | Manual (on-demand) |
-| 🔄 Auto-Improvement | Mantenimiento técnico recursivo | Código, estructura, naming, docs | Automático cada 8h |
+| Sistema            | Rol                                    | Scope                                      | Frecuencia         |
+| ------------------ | -------------------------------------- | ------------------------------------------ | ------------------ |
+| 🌕 Capital Token    | Captura de conocimiento organizacional | Procesos, ADRs, playbooks, agent templates | Manual (on-demand) |
+| 🔄 Auto-Improvement | Mantenimiento técnico recursivo        | Código, estructura, naming, docs           | Automático cada 8h |
 
 **Capital Token** documenta lo que sabes hacer. **Auto-Improvement** mantiene el sistema funcionando para que puedas hacerlo. Ambos se necesitan: sin Capital Token el conocimiento se pierde, sin Auto-Improvement el código se degrada.
 

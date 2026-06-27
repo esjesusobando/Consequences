@@ -8,19 +8,19 @@
 
 ## Navegacion Rapida
 
-| #  | Directorio                | Skill               | Descripcion                                |
-|---|--------------------------|--------------------|-------------------------------------------|
-| 01 | `01_Product_Design/`      | Product Design      | Fundamentos de diseno de producto          |
-| 02 | `02_Taste_Skills/`        | Taste/Design Taste  | Criterio estetico y diseno con criterio    |
-| 03 | `03_Diseno_Minimalista/`  | Diseno Minimalista  | Diseno minimalista exagerado               |
-| 04 | `04_Directrices_Marca/`   | Brand Guidelines    | Guias de marca y consistencia              |
-| 05 | `05_Excalidraw_Flowchart/`| Excalidraw/Diagramas| Diagramas y flowcharts                     |
-| 06 | `06_Design_Sota/`         | Design SOTA         | Estado del arte en diseno                  |
-| 07 | `07_Ui_Ux_Pro_Max/`       | UI/UX Pro Max       | UI/UX con base de datos consultable        |
-| 08 | `08_Huashu_Design/`       | Huashu Design       | HTML prototipado de alta fidelidad         |
-| 09 | `09_Dumbledor_Design/`    | Dumbledor Design    | Diseno editorial de alto impacto           |
-| 10 | `10_Design_Systems/`      | Design Systems      | Atomic design, tokens, Storybook, shadcn/ui|
-| 11 | `11_Marvel_Avengers/`     | Marvel/UI Theme     | Tematica Marvel para interfaces            |
+| #  | Directorio                 | Skill                | Descripcion                                 |
+| --- | -------------------------- | -------------------- | ------------------------------------------- |
+| 01 | `01_Product_Design/`       | Product Design       | Fundamentos de diseno de producto           |
+| 02 | `02_Taste_Skills/`         | Taste/Design Taste   | Criterio estetico y diseno con criterio     |
+| 03 | `03_Diseno_Minimalista/`   | Diseno Minimalista   | Diseno minimalista exagerado                |
+| 04 | `04_Directrices_Marca/`    | Brand Guidelines     | Guias de marca y consistencia               |
+| 05 | `05_Excalidraw_Flowchart/` | Excalidraw/Diagramas | Diagramas y flowcharts                      |
+| 06 | `06_Design_Sota/`          | Design SOTA          | Estado del arte en diseno                   |
+| 07 | `07_Ui_Ux_Pro_Max/`        | UI/UX Pro Max        | UI/UX con base de datos consultable         |
+| 08 | `08_Huashu_Design/`        | Huashu Design        | HTML prototipado de alta fidelidad          |
+| 09 | `09_Dumbledor_Design/`     | Dumbledor Design     | Diseno editorial de alto impacto            |
+| 10 | `10_Design_Systems/`       | Design Systems       | Atomic design, tokens, Storybook, shadcn/ui |
+| 11 | `11_Marvel_Avengers/`      | Marvel/UI Theme      | Tematica Marvel para interfaces             |
 
 ---
 
@@ -79,17 +79,17 @@
 
 ## Seleccion de Skill por Caso
 
-| Caso                   | Skill Recomendada             |
-|-----------------------|------------------------------|
-| Landing page impactante| `09_Dumbledor_Design`         |
-| Presentacion de pitch  | Frontend Slides (repo externo)|
-| Prototipo clickeable   | `08_Huashu_Design`            |
-| Diagrama de flujo      | `05_Excalidraw_Flowchart`     |
-| Sistema de diseno      | `10_Design_Systems`           |
-| Diseno minimalista     | `03_Diseno_Minimalista`       |
-| Marca coherente        | `04_Directrices_Marca`        |
-| Referencia visual      | `07_Ui_Ux_Pro_Max`            |
-| Tema Marvel            | `11_Marvel_Avengers`          |
+| Caso                    | Skill Recomendada              |
+| ----------------------- | ------------------------------ |
+| Landing page impactante | `09_Dumbledor_Design`          |
+| Presentacion de pitch   | Frontend Slides (repo externo) |
+| Prototipo clickeable    | `08_Huashu_Design`             |
+| Diagrama de flujo       | `05_Excalidraw_Flowchart`      |
+| Sistema de diseno       | `10_Design_Systems`            |
+| Diseno minimalista      | `03_Diseno_Minimalista`        |
+| Marca coherente         | `04_Directrices_Marca`         |
+| Referencia visual       | `07_Ui_Ux_Pro_Max`             |
+| Tema Marvel             | `11_Marvel_Avengers`           |
 
 ---
 
@@ -97,14 +97,14 @@
 
 Las siguientes skills fueron consolidadas por duplicacion numerica y movidas a Archive:
 
-| Skill Original       | Archivada En                                  | Motivo                |
-|---------------------|----------------------------------------------|----------------------|
-| `08_Ui_Ux_Pro_Max`   | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/`| Duplicado exacto de 07|
-| `09_Huashu_Design`   | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/`| Duplicado exacto de 08|
-| `11_Dumbledor_Design`| `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/`| Duplicado exacto de 09|
-| `11_Design_Systems`  | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/`| Duplicado de 10       |
-| `12_Design_Systems`  | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/`| Duplicado de 10       |
-| `13_Design_Systems`  | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/`| Duplicado de 10       |
+| Skill Original        | Archivada En                                   | Motivo                 |
+| --------------------- | ---------------------------------------------- | ---------------------- |
+| `08_Ui_Ux_Pro_Max`    | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/` | Duplicado exacto de 07 |
+| `09_Huashu_Design`    | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/` | Duplicado exacto de 08 |
+| `11_Dumbledor_Design` | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/` | Duplicado exacto de 09 |
+| `11_Design_Systems`   | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/` | Duplicado de 10        |
+| `12_Design_Systems`   | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/` | Duplicado de 10        |
+| `13_Design_Systems`   | `05_Archive/02_Skills_Legacy/02_Diseno_Ui_Ux/` | Duplicado de 10        |
 
 ---
 

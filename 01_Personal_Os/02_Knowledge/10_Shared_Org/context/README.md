@@ -7,12 +7,12 @@
 
 ## Archivos
 
-| Archivo | Propósito | Estado |
-|---------|-----------|--------|
+| Archivo           | Propósito                                      | Estado      |
+| ----------------- | ---------------------------------------------- | ----------- |
 | `organizacion.md` | Descripción de la organización, misión, visión | 📝 Pendiente |
-| `equipos.md` | Equipos, roles, responsabilidades | 📝 Pendiente |
-| `herramientas.md` | Stack tecnológico y herramientas | 📝 Pendiente |
-| `proyectos.md` | Proyectos activos y estado | 📝 Pendiente |
+| `equipos.md`      | Equipos, roles, responsabilidades              | 📝 Pendiente |
+| `herramientas.md` | Stack tecnológico y herramientas               | 📝 Pendiente |
+| `proyectos.md`    | Proyectos activos y estado                     | 📝 Pendiente |
 
 ---
 

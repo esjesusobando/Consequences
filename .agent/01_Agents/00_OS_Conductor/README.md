@@ -25,13 +25,13 @@ Simple: hablale al agente como le hablarías a un asistente. El Conductor:
 
 **Ejemplos:**
 
-| Decís... | El Conductor hace... |
-|----------|---------------------|
-| "Necesito un post para LinkedIn sobre AI Agents" | Sprint Contract → Content Transformer + Carousel Master → verifica |
-| "Quiero lanzar un producto nuevo" | Sprint Contract → pipeline completo: brand → diseño → assets → video → ads |
-| "Auditame el OS" | Invoca System Core + Skill Auditor, devuelve diagnóstico |
-| "Automatizá la extracción de datos de X" | Sprint Contract → Firecrawl + N8N Workflows → verifica |
-| "Diseñame un prototipo de app" | Sprint Contract → Huashu Design + Dumbledor Design → verifica |
+| Decís...                                         | El Conductor hace...                                                       |
+| ------------------------------------------------ | -------------------------------------------------------------------------- |
+| "Necesito un post para LinkedIn sobre AI Agents" | Sprint Contract → Content Transformer + Carousel Master → verifica         |
+| "Quiero lanzar un producto nuevo"                | Sprint Contract → pipeline completo: brand → diseño → assets → video → ads |
+| "Auditame el OS"                                 | Invoca System Core + Skill Auditor, devuelve diagnóstico                   |
+| "Automatizá la extracción de datos de X"         | Sprint Contract → Firecrawl + N8N Workflows → verifica                     |
+| "Diseñame un prototipo de app"                   | Sprint Contract → Huashu Design + Dumbledor Design → verifica              |
 
 No necesitás acordarte de skills, agentes, ni paths. El Conductor conoce todo el mapa.
 
@@ -39,17 +39,17 @@ No necesitás acordarte de skills, agentes, ni paths. El Conductor conoce todo e
 
 ## ¿Qué lo hace diferente del Orchestrator v4.0?
 
-| Aspecto | Orchestrator v4.0 (legacy) | OS Conductor v2.0 |
-|---------|---------------------------|-------------------|
-| **Entry point** | Múltiples entry points | **UN entry point** |
-| **Delegación** | Sin mecanismo definido | Protocolo explícito via `skill()` + contexto |
-| **Calidad** | Sin verificación | Sprint Contract + Evaluator Pattern |
-| **Triggers** | Genéricos | Específicos + cubren todo el OS |
-| **Flujos** | 4 fijos | Predefinidos + **Ad-Hoc Flow Construction** |
-| **Contexto** | Sin gestión | Context Management proactivo |
-| **Fallback** | Sin retry | Retry + escalado con diagnóstico |
-| **Auto-referencia** | Posible loop | Regla de auto-exclusión |
-| **Métrica** | Sin métricas | Pass@k: Routing Accuracy, Flow Completion |
+| Aspecto             | Orchestrator v4.0 (legacy) | OS Conductor v2.0                            |
+| ------------------- | -------------------------- | -------------------------------------------- |
+| **Entry point**     | Múltiples entry points     | **UN entry point**                           |
+| **Delegación**      | Sin mecanismo definido     | Protocolo explícito via `skill()` + contexto |
+| **Calidad**         | Sin verificación           | Sprint Contract + Evaluator Pattern          |
+| **Triggers**        | Genéricos                  | Específicos + cubren todo el OS              |
+| **Flujos**          | 4 fijos                    | Predefinidos + **Ad-Hoc Flow Construction**  |
+| **Contexto**        | Sin gestión                | Context Management proactivo                 |
+| **Fallback**        | Sin retry                  | Retry + escalado con diagnóstico             |
+| **Auto-referencia** | Posible loop               | Regla de auto-exclusión                      |
+| **Métrica**         | Sin métricas               | Pass@k: Routing Accuracy, Flow Completion    |
 
 ---
 
@@ -57,18 +57,18 @@ No necesitás acordarte de skills, agentes, ni paths. El Conductor conoce todo e
 
 ### ✅ Áreas que orquesta
 
-| Área | Lo que incluye |
-|------|----------------|
-| Creación de Contenidos | Brand voice, blogs, carruseles, scripts YouTube, thumbnails, SEO, marketing |
-| Diseño UI/UX | Prototipos HTML, diseño visual, design tokens, diagramas, identidad de marca |
-| Video & Media | Remotion, análisis de video, prompts para generación |
-| Automatización | N8N workflows, Firecrawl scraping, Google Workspace, pipelines ETL |
-| Workflows & PM | Gestión de proyectos, orquestación multi-agente, LFG autónomo |
-| Tools & Dev | Creación de skills, testing, DevOps, performance, data analysis |
-| Personal OS | Life OS, productividad diaria, captura rápida |
-| Web | Superpowers de búsqueda, Playwright automation |
-| Publicidad | Campañas de ads |
-| Auditoría | Validación de calidad de skills y salud del OS |
+| Área                   | Lo que incluye                                                               |
+| ---------------------- | ---------------------------------------------------------------------------- |
+| Creación de Contenidos | Brand voice, blogs, carruseles, scripts YouTube, thumbnails, SEO, marketing  |
+| Diseño UI/UX           | Prototipos HTML, diseño visual, design tokens, diagramas, identidad de marca |
+| Video & Media          | Remotion, análisis de video, prompts para generación                         |
+| Automatización         | N8N workflows, Firecrawl scraping, Google Workspace, pipelines ETL           |
+| Workflows & PM         | Gestión de proyectos, orquestación multi-agente, LFG autónomo                |
+| Tools & Dev            | Creación de skills, testing, DevOps, performance, data analysis              |
+| Personal OS            | Life OS, productividad diaria, captura rápida                                |
+| Web                    | Superpowers de búsqueda, Playwright automation                               |
+| Publicidad             | Campañas de ads                                                              |
+| Auditoría              | Validación de calidad de skills y salud del OS                               |
 
 ### ✅ Flujos compuestos predefinidos (+ ad-hoc)
 - Lanzamiento de producto/campaña
@@ -105,13 +105,13 @@ Core (23) + Dream Team (5) + Specialists (23) + Growth (5) + OpenCode (11)
 
 ## Archivos
 
-| Archivo | Qué es |
-|---------|--------|
-| `SKILL.md` | Instrucciones para el agente (Anthropic 2.0 Harness) |
-| `registry.md` | Mapa completo de skills (source of truth) |
-| `README.md` | Esta documentación humana |
-| `references/compound-flows.md` | Detalle de flujos compuestos |
-| `references/sprint-contract.md` | Template de Sprint Contract |
+| Archivo                         | Qué es                                               |
+| ------------------------------- | ---------------------------------------------------- |
+| `SKILL.md`                      | Instrucciones para el agente (Anthropic 2.0 Harness) |
+| `registry.md`                   | Mapa completo de skills (source of truth)            |
+| `README.md`                     | Esta documentación humana                            |
+| `references/compound-flows.md`  | Detalle de flujos compuestos                         |
+| `references/sprint-contract.md` | Template de Sprint Contract                          |
 
 ---
 

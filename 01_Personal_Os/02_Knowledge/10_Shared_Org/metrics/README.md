@@ -7,29 +7,29 @@
 
 ## Cobertura de Conocimiento
 
-| Área | Playbooks | Decisiones | Procesos | Estado |
-|------|-----------|------------|----------|--------|
-| 🌐 Organización | 0 | 0 | 0 | 🔴 No iniciado |
-| 👥 Admin | 0 | 0 | 0 | 🔴 No iniciado |
-| 💰 Finanzas | 0 | 0 | 0 | 🔴 No iniciado |
-| 👤 RRHH | 0 | 0 | 0 | 🔴 No iniciado |
-| 📢 Marketing | 1 | 0 | 0 | 🟡 En progreso |
+| Área           | Playbooks | Decisiones | Procesos | Estado        |
+| -------------- | --------- | ---------- | -------- | ------------- |
+| 🌐 Organización | 0         | 0          | 0        | 🔴 No iniciado |
+| 👥 Admin        | 0         | 0          | 0        | 🔴 No iniciado |
+| 💰 Finanzas     | 0         | 0          | 0        | 🔴 No iniciado |
+| 👤 RRHH         | 0         | 0          | 0        | 🔴 No iniciado |
+| 📢 Marketing    | 1         | 0          | 0        | 🟡 En progreso |
 
 ## Agentes por Rol
 
-| Rol | Template | Configurado | Activo |
-|-----|----------|-------------|--------|
-| Admin Agent | ✅ | ❌ | ❌ |
-| Finance Agent | ✅ | ❌ | ❌ |
-| HR Agent | ✅ | ❌ | ❌ |
+| Rol           | Template | Configurado | Activo |
+| ------------- | -------- | ----------- | ------ |
+| Admin Agent   | ✅        | ❌           | ❌      |
+| Finance Agent | ✅        | ❌           | ❌      |
+| HR Agent      | ✅        | ❌           | ❌      |
 
 ## Uso del Shared Context
 
-| Métrica | Target | Actual |
-|---------|--------|--------|
-| Consultas/semana | 50+ | 0 |
-| Playbooks usados en sesiones | 20+ | 0 |
-| Tiempo de onboarding con playbook | -50% | — |
+| Métrica                           | Target | Actual |
+| --------------------------------- | ------ | ------ |
+| Consultas/semana                  | 50+    | 0      |
+| Playbooks usados en sesiones      | 20+    | 0      |
+| Tiempo de onboarding con playbook | -50%   | —      |
 
 ---
 

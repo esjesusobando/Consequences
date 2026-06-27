@@ -13,17 +13,17 @@
 
 ## Subdirectorios
 
-| #                                | Name                                         | Descripción                                                           |
-|---------------------------------|---------------------------------------------|----------------------------------------------------------------------|
-| 1                                | 01_PRDs/                                     | Product Requirements Documents                                        |
-| 2                                | 02_Data/                                     | Datos y análisis de negocio                                           |
-| 3                                | 03_Docs/                                     | Documentación general                                                 |
-| 4                                | 04_Podcast/                                  | Contenido de podcast                                                  |
-| 5                                | 05_Strategy/                                 | Estrategia: Roadmap, OKRs, Oportunidades                              |
-| 6                                | 06_Tech/                                     | Documentación técnica y diagramas                                     |
-| 7                                | 07_Template/                                 | Plantillas                                                            |
-| 8                                | 08_Learnings/                                | Análisis de videos, webinars y casos                                  |
-| 9                                | 00_Learning_Always/                          | Learning compounding: 8 deliverable/URL                               |
+| # | Name                | Descripción                              |
+| --- | ------------------- | ---------------------------------------- |
+| 1 | 01_PRDs/            | Product Requirements Documents           |
+| 2 | 02_Data/            | Datos y análisis de negocio              |
+| 3 | 03_Docs/            | Documentación general                    |
+| 4 | 04_Podcast/         | Contenido de podcast                     |
+| 5 | 05_Strategy/        | Estrategia: Roadmap, OKRs, Oportunidades |
+| 6 | 06_Tech/            | Documentación técnica y diagramas        |
+| 7 | 07_Template/        | Plantillas                               |
+| 8 | 08_Learnings/       | Análisis de videos, webinars y casos     |
+| 9 | 00_Learning_Always/ | Learning compounding: 8 deliverable/URL  |
 
 ---
 

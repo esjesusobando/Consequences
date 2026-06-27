@@ -6,14 +6,14 @@
 
 ## 📚 Contenido
 
-| #                              | Learning                                                     | Tema                                                      | Estado                              |
-|-------------------------------|-------------------------------------------------------------|----------------------------------------------------------|------------------------------------|
-| 01                             | `01_LA_Creative_Heroes_IA/`                                  | Midjourney, Prompt Engineering                            | ✅                                   |
-| 02                             | `02_LA_Recall_2.0/`                                          | Second Brain, Knowledge AI                                | ✅                                   |
-| 03                             | `03_LA_Claude_Computer_Use/`                                 | AI Control Mac, Dispatch                                  | ✅                                   |
-| 04                             | `04_LA_INBOUND_25_AI_Fundamentals/`                          | AI Fundamentals, How to Win                               | ✅                                   |
-| 05                             | [Pendiente]                                                  | [Por definir]                                             | ⏳                                   |
-| 06                             | [Pendiente]                                                  | [Por definir]                                             | ⏳                                   |
+| #  | Learning                            | Tema                           | Estado |
+| --- | ----------------------------------- | ------------------------------ | ------ |
+| 01 | `01_LA_Creative_Heroes_IA/`         | Midjourney, Prompt Engineering | ✅      |
+| 02 | `02_LA_Recall_2.0/`                 | Second Brain, Knowledge AI     | ✅      |
+| 03 | `03_LA_Claude_Computer_Use/`        | AI Control Mac, Dispatch       | ✅      |
+| 04 | `04_LA_INBOUND_25_AI_Fundamentals/` | AI Fundamentals, How to Win    | ✅      |
+| 05 | [Pendiente]                         | [Por definir]                  | ⏳      |
+| 06 | [Pendiente]                         | [Por definir]                  | ⏳      |
 
 ---
 
@@ -49,12 +49,12 @@
 
 Los insights van a → `02_Knowledge/06_Unicorn/`
 
-| Disciplina                                 | Ubicación                                                  |
-|-------------------------------------------|-----------------------------------------------------------|
-| Project Manager                            | `06_Unicorn/01_Pm/`                                        |
-| Product Manager                            | `06_Unicorn/02_Pdm/`                                       |
-| Product Design                             | `06_Unicorn/03_Product_Design/`                            |
-| Engineering                                | `06_Unicorn/06_Engineering/`                               |
+| Disciplina      | Ubicación                       |
+| --------------- | ------------------------------- |
+| Project Manager | `06_Unicorn/01_Pm/`             |
+| Product Manager | `06_Unicorn/02_Pdm/`            |
+| Product Design  | `06_Unicorn/03_Product_Design/` |
+| Engineering     | `06_Unicorn/06_Engineering/`    |
 
 ---
 

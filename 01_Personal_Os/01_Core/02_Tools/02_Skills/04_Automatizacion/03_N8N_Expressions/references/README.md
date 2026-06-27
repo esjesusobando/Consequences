@@ -2,10 +2,10 @@
 
 ## Related Guides (in skill root)
 
-| File                                       | Content                          |
-|-------------------------------------------|---------------------------------|
-| [COMMON_MISTAKES.md](../COMMON_MISTAKES.md)| Complete error catalog with fixes|
-| [EXAMPLES.md](../EXAMPLES.md)              | Real workflow expression examples|
+| File                                        | Content                           |
+| ------------------------------------------- | --------------------------------- |
+| [COMMON_MISTAKES.md](../COMMON_MISTAKES.md) | Complete error catalog with fixes |
+| [EXAMPLES.md](../EXAMPLES.md)               | Real workflow expression examples |
 
 ## Key Concepts Covered in Skill
 

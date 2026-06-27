@@ -12,14 +12,14 @@ El Dream Team son los 6 agentes especializados que trabajan juntos como un equip
 
 ## Los 6 Jugadores
 
-| #                      | Agente                                   | Rol                           | Especialidad                                               |
-|-----------------------|-----------------------------------------|------------------------------|-----------------------------------------------------------|
-| 01                     | **Product_Builder**                      | DELANTERO                     | Construye features completos PRD→deploy                    |
-| 02                     | **Data_Engineer**                        | MEDIO                         | ETL, pipelines, analytics                                  |
-| 03                     | **Marketing_Tech**                       | EXTREMO                       | Growth, SEO, contenido                                     |
-| 04                     | **Design_Ops**                           | DEFENSA                       | UI/UX, design system                                       |
-| 05                     | **Platform_Engineer**                    | ARQUITECTO                    | Infra, MCPs, DevOps                                        |
-| 06                     | **Marketing_Orchestrator** 🆕            | DIRECTOR TÉCNICO              | Coordina el pipeline de marketing agents (15→16→17)        |
+| #  | Agente                       | Rol              | Especialidad                                        |
+| --- | ---------------------------- | ---------------- | --------------------------------------------------- |
+| 01 | **Product_Builder**          | DELANTERO        | Construye features completos PRD→deploy             |
+| 02 | **Data_Engineer**            | MEDIO            | ETL, pipelines, analytics                           |
+| 03 | **Marketing_Tech**           | EXTREMO          | Growth, SEO, contenido                              |
+| 04 | **Design_Ops**               | DEFENSA          | UI/UX, design system                                |
+| 05 | **Platform_Engineer**        | ARQUITECTO       | Infra, MCPs, DevOps                                 |
+| 06 | **Marketing_Orchestrator** 🆕 | DIRECTOR TÉCNICO | Coordina el pipeline de marketing agents (15→16→17) |
 
 ---
 

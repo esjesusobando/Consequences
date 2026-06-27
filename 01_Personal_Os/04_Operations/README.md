@@ -127,24 +127,24 @@ Think_Different/
 
 Esta carpeta contiene el **cerebro operativo** del sistema - memoria a largo plazo, notas de sesiones, y mapeos:
 
-| Subcarpeta                            | Contenido                                           |
-|--------------------------------------|----------------------------------------------------|
-| `00_Context_LLM/`                     | CTX de sesiones, JSONs de validación                |
-| `02_Agent_Teams_Lite/`                | SDD Workflow + Manifest registries ✅                |
-| `03_Scripts_Os/`                      | 20 HUBs operativos + directorios auxiliares         |
+| Subcarpeta             | Contenido                                   |
+| ---------------------- | ------------------------------------------- |
+| `00_Context_LLM/`      | CTX de sesiones, JSONs de validación        |
+| `02_Agent_Teams_Lite/` | SDD Workflow + Manifest registries ✅        |
+| `03_Scripts_Os/`       | 20 HUBs operativos + directorios auxiliares |
 
 ---
 
 ## 📊 Estadísticas
 
-| Área                       | Cantidad                                                                                                                                  |
-|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| SDD Skills                 | 10 (sdd-init, sdd-explore, sdd-propose, sdd-spec, sdd-design, sdd-tasks, sdd-apply, sdd-verify, sdd-archive, skill-registry)              |
-| MCP Servers                | 44 total (7 both, 1 Claude-only, 36 OpenCode-only)                                                                                        |
-| Agents (source)            | 62                                                                                                                                        |
-| HUBs (root scripts)        | 28                                                                                                                                        |
-| Workflows                  | 28 (7 categorías)                                                                                                                         |
-| Hooks                      | 10 (6 fases)                                                                                                                              |
+| Área                | Cantidad                                                                                                                     |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| SDD Skills          | 10 (sdd-init, sdd-explore, sdd-propose, sdd-spec, sdd-design, sdd-tasks, sdd-apply, sdd-verify, sdd-archive, skill-registry) |
+| MCP Servers         | 44 total (7 both, 1 Claude-only, 36 OpenCode-only)                                                                           |
+| Agents (source)     | 62                                                                                                                           |
+| HUBs (root scripts) | 28                                                                                                                           |
+| Workflows           | 28 (7 categorías)                                                                                                            |
+| Hooks               | 10 (6 fases)                                                                                                                 |
 
 ---
 

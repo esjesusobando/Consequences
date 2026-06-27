@@ -4,21 +4,21 @@ Reference materials for Go testing in Bubbletea TUI applications.
 
 ## Official Documentation
 
-| Resource             | Link                                |
-|---------------------|------------------------------------|
-| Go Testing Package   | https://pkg.go.dev/testing          |
-| Go Table-Driven Tests| https://go.dev/wiki/TableDrivenTests|
-| Go Coverage          | https://go.dev/blog/cover           |
-| Testify              | https://github.com/stretchr/testify |
-| Go Mock              | https://github.com/uber-go/mock     |
+| Resource              | Link                                 |
+| --------------------- | ------------------------------------ |
+| Go Testing Package    | https://pkg.go.dev/testing           |
+| Go Table-Driven Tests | https://go.dev/wiki/TableDrivenTests |
+| Go Coverage           | https://go.dev/blog/cover            |
+| Testify               | https://github.com/stretchr/testify  |
+| Go Mock               | https://github.com/uber-go/mock      |
 
 ## Bubbletea Testing
 
-| Resource       | Link                                                          |
-|---------------|--------------------------------------------------------------|
-| Teatest package| https://github.com/charmbracelet/bubbletea/tree/master/teatest|
-| Bubbletea docs | https://github.com/charmbracelet/bubbletea                    |
-| Lipgloss       | https://github.com/charmbracelet/lipgloss                     |
+| Resource        | Link                                                           |
+| --------------- | -------------------------------------------------------------- |
+| Teatest package | https://github.com/charmbracelet/bubbletea/tree/master/teatest |
+| Bubbletea docs  | https://github.com/charmbracelet/bubbletea                     |
+| Lipgloss        | https://github.com/charmbracelet/lipgloss                      |
 
 ## Common Testing Commands
 

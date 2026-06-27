@@ -39,12 +39,12 @@
 
 ## 🔄 Actualizaciones Recientes
 
-| Fecha                                     | Cambio                                                                                                                      |
-|------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| 2026-05-31                                | v4.9 Consequences — Documentación corregida: métricas sincronizadas con disco (385 skills, 55 agents, 27 workflows, 20 HUBs)|
-| 2026-05-31                                | v4.9 Production Ready — Judgment Day v3 — Auditoría Full Project                                                            |
-| 2026-05-22                                | v4.7 Consequences — Auditoría Integral, 385 skills, subagent-statusline, git fixes                                          |
-| 2026-05-21                                | v4.7 — SOTA, 393 skills, scripts actualizados                                                                               |
+| Fecha      | Cambio                                                                                                                       |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| 2026-05-31 | v4.9 Consequences — Documentación corregida: métricas sincronizadas con disco (385 skills, 55 agents, 27 workflows, 20 HUBs) |
+| 2026-05-31 | v4.9 Production Ready — Judgment Day v3 — Auditoría Full Project                                                             |
+| 2026-05-22 | v4.7 Consequences — Auditoría Integral, 385 skills, subagent-statusline, git fixes                                           |
+| 2026-05-21 | v4.7 — SOTA, 393 skills, scripts actualizados                                                                                |
 
 ---
 

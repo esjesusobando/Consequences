@@ -7,10 +7,10 @@
 
 ## SOPs
 
-| # | Proceso | Frecuencia | Owner | Estado |
-|---|---------|------------|-------|--------|
-| 1 | Proyecto Kickoff — Configuración Inicial | Ad-hoc | Estratega Principal | ✅ |
-| 2 | Reporte Semanal a Cliente | Semanal | Analista Agent | ✅ |
+| # | Proceso                                  | Frecuencia | Owner               | Estado |
+| --- | ---------------------------------------- | ---------- | ------------------- | ------ |
+| 1 | Proyecto Kickoff — Configuración Inicial | Ad-hoc     | Estratega Principal | ✅      |
+| 2 | Reporte Semanal a Cliente                | Semanal    | Analista Agent      | ✅      |
 
 ---
 

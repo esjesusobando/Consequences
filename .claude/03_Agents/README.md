@@ -32,7 +32,7 @@ Este directorio contiene los agentes especializados del sistema Think Different 
 ### Agentes Principales
 
 | #  | Agente                 | Dominio        | Prioridad | Estado |
-| -- | ---------------------- | -------------- | --------- | ------ |
+| --- | ---------------------- | -------------- | --------- | ------ |
 | 01 | Scope Rule Architect   | Arquitectura   | CRÍTICA   | ✅      |
 | 02 | TDD Test-First         | Tests (RED)    | ALTA      | ✅      |
 | 14 | React Test Implementer | Código (GREEN) | ALTA      | ✅      |
@@ -46,12 +46,12 @@ Este directorio contiene los agentes especializados del sistema Think Different 
 
 ### Specialists Squad
 
-| Especialidad  | Agente              | Función                       | Estado   |
-| ------------- | ------------------- | ----------------------------- | -------- |
-| TDD           | TDD_Specialist      | Dominio profundo de testing   | ✅        |
-| Seguridad     | Security_Specialist | Auditorías OWASP              | ✅        |
-| Git           | Git_Specialist      | Gestión avanzada de versiones | ✅        |
-| Refactor      | Refactor_Specialist | Optimización de código        | ✅        |
+| Especialidad | Agente              | Función                       | Estado |
+| ------------ | ------------------- | ----------------------------- | ------ |
+| TDD          | TDD_Specialist      | Dominio profundo de testing   | ✅      |
+| Seguridad    | Security_Specialist | Auditorías OWASP              | ✅      |
+| Git          | Git_Specialist      | Gestión avanzada de versiones | ✅      |
+| Refactor     | Refactor_Specialist | Optimización de código        | ✅      |
 
 ---
 
@@ -77,15 +77,15 @@ FASE 7: ACCESIBILIDAD (opcional)
 
 ### Duración Estimada por Fase
 
-| Fase   | Duración   | Output                    |
-| ------ | ---------- | ------------------------- |
-| FASE 1 | 30-60 min  | Documento de arquitectura |
-| FASE 2 | 1-2 horas  | Suite de tests (RED)      |
-| FASE 3 | 2-4 horas  | Código funcional (GREEN)  |
-| FASE 4 | 1-2 horas  | Código refactorizado      |
-| FASE 5 | 30-60 min  | Reporte de seguridad      |
-| FASE 6 | 30 min     | PR completo               |
-| FASE 7 | 30-60 min  | Reporte accesibilidad     |
+| Fase      | Duración       | Output                    |
+| --------- | -------------- | ------------------------- |
+| FASE 1    | 30-60 min      | Documento de arquitectura |
+| FASE 2    | 1-2 horas      | Suite de tests (RED)      |
+| FASE 3    | 2-4 horas      | Código funcional (GREEN)  |
+| FASE 4    | 1-2 horas      | Código refactorizado      |
+| FASE 5    | 30-60 min      | Reporte de seguridad      |
+| FASE 6    | 30 min         | PR completo               |
+| FASE 7    | 30-60 min      | Reporte accesibilidad     |
 | **Total** | **6-11 horas** | Feature completa          |
 
 ---
@@ -134,26 +134,26 @@ Agente #07: "Audita accesibilidad de [feature]"
 
 ## 📊 Métricas de Éxito
 
-| Agente            | Métrica Clave                        | Target   |
-| ----------------- | ------------------------------------ | -------- |
-| #01 Architect     | Decisiones GLOBAL/LOCAL documentadas | 100%     |
-| #02 TDD Test      | Coverage                             | ≥80%     |
-| #03 Implementer   | Tests pasando                        | 100%     |
-| #04 Mentor        | Performance mejorado                 | +20%     |
-| #05 Security      | Vulnerabilidades HIGH/CRITICAL       | 0        |
-| #06 Git Workflow  | Commits con Conventional Commits     | 100%     |
-| #07 Accessibility | WCAG 2.1 AA compliance               | ≥85%     |
+| Agente            | Métrica Clave                        | Target |
+| ----------------- | ------------------------------------ | ------ |
+| #01 Architect     | Decisiones GLOBAL/LOCAL documentadas | 100%   |
+| #02 TDD Test      | Coverage                             | ≥80%   |
+| #03 Implementer   | Tests pasando                        | 100%   |
+| #04 Mentor        | Performance mejorado                 | +20%   |
+| #05 Security      | Vulnerabilidades HIGH/CRITICAL       | 0      |
+| #06 Git Workflow  | Commits con Conventional Commits     | 100%   |
+| #07 Accessibility | WCAG 2.1 AA compliance               | ≥85%   |
 
 ---
 
 ## 🔗 Integración con el Sistema
 
-| Componente           | Relación                              |
-| -------------------- | ------------------------------------- |
-| `01_Core/02_Tools/02_Skills/`  | 160+ skills que potencian a los agentes |
-| `01_Core/00_Workflows/` | 26 workflows que invocan agentes      |
-| `03_Scripts_Os/`     | Scripts de automatización             |
-| `.claude/03_Agents/` | Agentes de Claude Code                |
+| Componente                    | Relación                                |
+| ----------------------------- | --------------------------------------- |
+| `01_Core/02_Tools/02_Skills/` | 160+ skills que potencian a los agentes |
+| `01_Core/00_Workflows/`       | 26 workflows que invocan agentes        |
+| `03_Scripts_Os/`              | Scripts de automatización               |
+| `.claude/03_Agents/`          | Agentes de Claude Code                  |
 
 ---
 
@@ -171,12 +171,12 @@ Agente #07: "Audita accesibilidad de [feature]"
 
 ## ✅ Estado del Sistema
 
-| Componente          | Cantidad   | Estado   |
-| ------------------- | ---------- | -------- |
-| Agentes Principales | 10         | ✅        |
-| Specialists Squad   | 4          | ✅        |
-| Total Agentes       | 14         | ✅        |
-| Flujo TDD           | 7 fases    | ✅        |
+| Componente          | Cantidad | Estado |
+| ------------------- | -------- | ------ |
+| Agentes Principales | 10       | ✅      |
+| Specialists Squad   | 4        | ✅      |
+| Total Agentes       | 14       | ✅      |
+| Flujo TDD           | 7 fases  | ✅      |
 
 ---
 

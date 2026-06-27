@@ -22,7 +22,7 @@ El arsenal de PersonalOS. Repositorio de habilidades discretas y herramientas qu
 Habilidades fundamentales que sostienen todo el sistema.
 
 | #  | Skill                  | Descripción                                                     | Estado |
-| -- | ---------------------- | --------------------------------------------------------------- | ------ |
+| --- | ---------------------- | --------------------------------------------------------------- | ------ |
 | 01 | Fork Terminal          | Abre nuevas instancias de terminal para procesos independientes | ✅      |
 | 02 | Parallel Orchestration | Distribuye y supervisa trabajo de múltiples agentes             | ✅      |
 | 03 | Premium Git Manager    | Gestiona ciclo de vida Git con estándares premium               | ✅      |
@@ -34,7 +34,7 @@ Habilidades fundamentales que sostienen todo el sistema.
 Workflows especializados para tareas complejas.
 
 | #  | Skill                          | Descripción                                               | Estado |
-| -- | ------------------------------ | --------------------------------------------------------- | ------ |
+| --- | ------------------------------ | --------------------------------------------------------- | ------ |
 | 01 | Brainstorming                  | Explora intención, requisitos y diseño mediante preguntas | ✅      |
 | 02 | Writing Plans                  | Crea planes de implementación paso a paso                 | ✅      |
 | 03 | Executing Plans                | Ejecuta planes manteniendo trazabilidad                   | ✅      |
@@ -76,7 +76,7 @@ Workflows especializados para tareas complejas.
 Herramientas de apoyo y automatización.
 
 | #  | Skill                          | Descripción                                 | Estado |
-| -- | ------------------------------ | ------------------------------------------- | ------ |
+| --- | ------------------------------ | ------------------------------------------- | ------ |
 | 01 | Seo Optimization               | Optimización para buscadores                | ✅      |
 | 02 | Skill Testing Automation       | Suite de validación de skills               | ✅      |
 | 03 | Dispatching Parallel Agents    | Descompone problemas en tareas paralelas    | ✅      |
@@ -114,11 +114,11 @@ Herramientas de apoyo y automatización.
 
 Orquestación de múltiples agentes bajo filosofía SDD (Single Responsibility Delegation).
 
-| Componente             | Descripción                             | Estado   |
-| ---------------------- | --------------------------------------- | -------- |
-| Orchestrator           | Coordina múltiples subagentes           | ✅        |
-| Specialist Agents      | Agentes especializados por dominio      | ✅        |
-| Communication Protocol | Protocolo de comunicación entre agentes | ✅        |
+| Componente             | Descripción                             | Estado |
+| ---------------------- | --------------------------------------- | ------ |
+| Orchestrator           | Coordina múltiples subagentes           | ✅      |
+| Specialist Agents      | Agentes especializados por dominio      | ✅      |
+| Communication Protocol | Protocolo de comunicación entre agentes | ✅      |
 
 ---
 
@@ -126,13 +126,13 @@ Orquestación de múltiples agentes bajo filosofía SDD (Single Responsibility D
 
 Skills migradas del ecosistema Gentleman.Dots con estructura numerada.
 
-| Carpeta     | Descripción                   | Skills   |
-| ----------- | ----------------------------- | -------- |
-| 00_Core_Sdd | Orquestación SDD y tools core | 3        |
-| 01_Plan     | Planificación y estrategia    | 6        |
-| 02_Work     | Implementación técnica        | 12       |
-| 03_Review   | Calidad y revisión            | 9        |
-| 04_Compound | Ecosistema Compound           | 11       |
+| Carpeta     | Descripción                   | Skills |
+| ----------- | ----------------------------- | ------ |
+| 00_Core_Sdd | Orquestación SDD y tools core | 3      |
+| 01_Plan     | Planificación y estrategia    | 6      |
+| 02_Work     | Implementación técnica        | 12     |
+| 03_Review   | Calidad y revisión            | 9      |
+| 04_Compound | Ecosistema Compound           | 11     |
 
 **Ubicación:** `.agent/02_Skills/05_Gentleman/`
 **README:** `05_Gentleman/README.md`
@@ -141,24 +141,24 @@ Skills migradas del ecosistema Gentleman.Dots con estructura numerada.
 
 ## 📊 Total de Skills
 
-| Categoría                  | Cantidad   | Estado   |
-| -------------------------- | ---------- | -------- |
-| 01_Core (Nucleares)        | 3          | ✅        |
-| 02_High_Value (Alto Valor) | 31         | ✅        |
-| 03_Utilities (Utilidades)  | 30         | ✅        |
-| 04_Agent_Teams_Lite        | 4+         | ✅        |
-| 05_Gentleman               | 41         | ✅        |
-| **Total**                  | **109+**   | ✅        |
+| Categoría                  | Cantidad | Estado |
+| -------------------------- | -------- | ------ |
+| 01_Core (Nucleares)        | 3        | ✅      |
+| 02_High_Value (Alto Valor) | 31       | ✅      |
+| 03_Utilities (Utilidades)  | 30       | ✅      |
+| 04_Agent_Teams_Lite        | 4+       | ✅      |
+| 05_Gentleman               | 41       | ✅      |
+| **Total**                  | **109+** | ✅      |
 
 ---
 
 ## 🔗 Integración con Otros Componentes
 
-| Componente           | Relación                         |
-| -------------------- | -------------------------------- |
-| `.agent/01_Agents/`  | 12 agentes que usan estas skills |
+| Componente             | Relación                         |
+| ---------------------- | -------------------------------- |
+| `.agent/01_Agents/`    | 12 agentes que usan estas skills |
 | `.agent/03_Workflows/` | 21 workflows que invocan skills  |
-| `03_Scripts_Os/`     | Scripts que ejecutan skills      |
+| `03_Scripts_Os/`       | Scripts que ejecutan skills      |
 
 ---
 

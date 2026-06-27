@@ -7,13 +7,13 @@
 
 ## Quick Command Reference (from skill)
 
-| Service  | Key Commands                                                          |
-|---------|----------------------------------------------------------------------|
-| Auth     | `gws auth login --account`, `gws auth status`                         |
-| Gmail    | `messages list --query`, `messages get`, `send`, `messages modify`    |
-| Calendar | `events list`, `events create --add-meet --attendees`                 |
-| Drive    | `drive list --folder`, `drive upload --recursive --progress`          |
-| Sheets   | `sheets read --format csv`, `sheets append`, `sheets write --from-csv`|
+| Service  | Key Commands                                                           |
+| -------- | ---------------------------------------------------------------------- |
+| Auth     | `gws auth login --account`, `gws auth status`                          |
+| Gmail    | `messages list --query`, `messages get`, `send`, `messages modify`     |
+| Calendar | `events list`, `events create --add-meet --attendees`                  |
+| Drive    | `drive list --folder`, `drive upload --recursive --progress`           |
+| Sheets   | `sheets read --format csv`, `sheets append`, `sheets write --from-csv` |
 
 ## Tips
 - Use `--format json` + `jq` for scripting

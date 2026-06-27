@@ -4,17 +4,17 @@ Agentes del sistema SDD (Spec-Driven Development) para orquestación de sub-agen
 
 ## Agentes
 
-| Agente | Descripción |
-|--------|-------------|
-| sdd-init | Inicializar contexto SDD |
-| sdd-explore | Explorar código/ideas |
-| sdd-propose | Crear propuesta |
-| sdd-spec | Especificación |
-| sdd-design | Diseño técnico |
-| sdd-tasks | Descomponer tareas |
-| sdd-apply | Implementar |
-| sdd-verify | Verificar |
-| sdd-archive | Archivar |
+| Agente      | Descripción              |
+| ----------- | ------------------------ |
+| sdd-init    | Inicializar contexto SDD |
+| sdd-explore | Explorar código/ideas    |
+| sdd-propose | Crear propuesta          |
+| sdd-spec    | Especificación           |
+| sdd-design  | Diseño técnico           |
+| sdd-tasks   | Descomponer tareas       |
+| sdd-apply   | Implementar              |
+| sdd-verify  | Verificar                |
+| sdd-archive | Archivar                 |
 
 ---
 

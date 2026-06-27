@@ -41,10 +41,10 @@ Project-local Claude Code configuration, commands, rules, agents, skills, memory
 
 ## Related Documentation
 
-| Resource | Description |
-|---|---|
-| `AGENTS.md` | Root Guardian Angel entrypoint |
-| `00_Winter_is_Coming/AGENTS.md` | Main Matrix Core rules |
+| Resource                           | Description                      |
+| ---------------------------------- | -------------------------------- |
+| `AGENTS.md`                        | Root Guardian Angel entrypoint   |
+| `00_Winter_is_Coming/AGENTS.md`    | Main Matrix Core rules           |
 | `01_Personal_Os/01_Core/01_Rules/` | PersonalOS source-of-truth rules |
 
 ---

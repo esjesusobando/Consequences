@@ -10,10 +10,10 @@
 
 ## 🏛️ Sistema Dual de Reglas
 
-| Sistema                       | Ubicación                         | Qty                               | Estado    |
-|------------------------------|----------------------------------|----------------------------------|----------|
-| **Triada AI-Prime (Legacy)**  | `.claude/02_Rules/`               | 25 rules (01-35, algunos saltados)| Convive   |
-| **Consequences v4.9 (Active)**| `01_Personal_Os/01_Core/01_Rules/`| 13 rules (00-12)                  | **ACTIVO**|
+| Sistema                        | Ubicación                          | Qty                                | Estado     |
+| ------------------------------ | ---------------------------------- | ---------------------------------- | ---------- |
+| **Triada AI-Prime (Legacy)**   | `.claude/02_Rules/`                | 25 rules (01-35, algunos saltados) | Convive    |
+| **Consequences v4.9 (Active)** | `01_Personal_Os/01_Core/01_Rules/` | 13 rules (00-12)                   | **ACTIVO** |
 
 > 📂 Los sistemas paralelos `.claude/02_Rules/` (Legacy) y `.agent/00_Rules/` (Backup) coexisten por compatibilidad.
 
@@ -21,30 +21,30 @@
 
 ## 📋 Índice de Reglas (Legacy — 25 archivos)
 
-| #                                    | Regla                                                                 | Propósito                                                                    |
-|-------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| 01                                   | `01_Context_Protocol.mdc`                                             | Protocolo de contexto obligatorio (Génesis)                                  |
-| 02                                   | `02_Pilar_Base.mdc`                                                   | Pilares fundamentales del sistema                                            |
-| 03                                   | `03_Pilar_Motor.mdc`                                                  | Motor y stack técnico                                                        |
-| 04                                   | `04_Pilar_Estrategia.mdc`                                             | Estrategia y AIPM                                                            |
-| 05                                   | `05_ritual-integrity.mdc`                                             | Integridad de ritus                                                          |
-| 06                                   | `06_Claude_Integration.mdc`                                           | Integración Claude                                                           |
-| 07                                   | `07_Skill_Fusion.mdc`                                                 | Fusión de skills                                                             |
-| 08                                   | `08_Observability.mdc`                                                | Observabilidad                                                               |
-| 09                                   | `09_Elite_Reporting.mdc`                                              | Reporting de élite                                                           |
-| 10                                   | `10_Context_Management.mdc`                                           | Gestión de contexto                                                          |
-| 11                                   | `11_Workflow_Standards.mdc`                                           | Estándares de workflow                                                       |
-| 12                                   | `12_Audit_OS_Integrity.mdc`                                           | Integridad y auditoría OS                                                    |
-| 13                                   | `13_Testing_Resource_Management.mdc`                                  | Testing y recursos                                                           |
-| 14                                   | `14_Invoice_Intelligence.mdc`                                         | Inteligencia de facturas                                                     |
-| 15                                   | `15_Backlog_Processing.mdc`                                           | Procesamiento de backlog                                                     |
-| 16                                   | `16_Brainstorming.mdc`                                                | Brainstorming                                                                |
-| 17                                   | `17_Genesis.mdc`                                                      | Protocolo de inicio de sesión                                                |
-| 18                                   | `18_Morning_Standup.mdc`                                              | Standup matutino                                                             |
-| 19                                   | `19_Planning.mdc`                                                     | Planificación                                                                |
-| 20                                   | `20_Recap_Morning.mdc`                                                | Recap matutino                                                               |
-| 21                                   | `21_Gentleman_Framework.mdc`                                          | Framework Gentleman                                                          |
-| 35                                   | `35_Pencil_Design_Studio.mdc`                                         | Estudio de diseño Pencil                                                     |
+| #  | Regla                                | Propósito                                   |
+| --- | ------------------------------------ | ------------------------------------------- |
+| 01 | `01_Context_Protocol.mdc`            | Protocolo de contexto obligatorio (Génesis) |
+| 02 | `02_Pilar_Base.mdc`                  | Pilares fundamentales del sistema           |
+| 03 | `03_Pilar_Motor.mdc`                 | Motor y stack técnico                       |
+| 04 | `04_Pilar_Estrategia.mdc`            | Estrategia y AIPM                           |
+| 05 | `05_ritual-integrity.mdc`            | Integridad de ritus                         |
+| 06 | `06_Claude_Integration.mdc`          | Integración Claude                          |
+| 07 | `07_Skill_Fusion.mdc`                | Fusión de skills                            |
+| 08 | `08_Observability.mdc`               | Observabilidad                              |
+| 09 | `09_Elite_Reporting.mdc`             | Reporting de élite                          |
+| 10 | `10_Context_Management.mdc`          | Gestión de contexto                         |
+| 11 | `11_Workflow_Standards.mdc`          | Estándares de workflow                      |
+| 12 | `12_Audit_OS_Integrity.mdc`          | Integridad y auditoría OS                   |
+| 13 | `13_Testing_Resource_Management.mdc` | Testing y recursos                          |
+| 14 | `14_Invoice_Intelligence.mdc`        | Inteligencia de facturas                    |
+| 15 | `15_Backlog_Processing.mdc`          | Procesamiento de backlog                    |
+| 16 | `16_Brainstorming.mdc`               | Brainstorming                               |
+| 17 | `17_Genesis.mdc`                     | Protocolo de inicio de sesión               |
+| 18 | `18_Morning_Standup.mdc`             | Standup matutino                            |
+| 19 | `19_Planning.mdc`                    | Planificación                               |
+| 20 | `20_Recap_Morning.mdc`               | Recap matutino                              |
+| 21 | `21_Gentleman_Framework.mdc`         | Framework Gentleman                         |
+| 35 | `35_Pencil_Design_Studio.mdc`        | Estudio de diseño Pencil                    |
 
 > 📝 **Nota:** Los números 23-34 fueron deprecados/absorbidos por otros archivos en la evolución del sistema.
 

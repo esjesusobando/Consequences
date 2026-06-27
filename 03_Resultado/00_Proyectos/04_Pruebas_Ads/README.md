@@ -9,27 +9,27 @@ Contexto: Think Different PersonalOS - AI Operating System
 
 ## Tabla de Skills
 
-| #  | Skill                               | Score  | Descripción                        |
-|---|------------------------------------|-------|-----------------------------------|
-| 01 | [ads-audit](#01-ads-audit)          | 100/100| Auditoría multi-plataforma completa|
-| 02 | [ads-google](#02-ads-google)        | 100/100| Google Ads deep analysis           |
-| 03 | [ads-meta](#03-ads-meta)            | 100/100| Meta Ads (Facebook/Instagram)      |
-| 04 | [ads-plan](#04-ads-plan)            | 100/100| Estrategia y planificación         |
-| 05 | [ads-creative](#05-ads-creative)    | 100/100| Evaluación de creativos            |
-| 06 | [ads-landing](#06-ads-landing)      | 100/100| Análisis de landing pages          |
-| 07 | [ads-budget](#07-ads-budget)        | 100/100| Budget y bidding strategy          |
-| 08 | [ads-math](#08-ads-math)            | 100/100| Matemáticas publicitarias          |
-| 09 | [ads-dna](#09-ads-dna)              | 100/100| Brand DNA extraction               |
-| 10 | [ads-competitor](#10-ads-competitor)| 100/100| Análisis competitivo               |
-| 11 | [ads-youtube](#11-ads-youtube)      | 100/100| YouTube Ads                        |
-| 12 | [ads-tiktok](#12-ads-tiktok)        | 100/100| TikTok Ads                         |
-| 13 | [ads-apple](#13-ads-apple)          | 100/100| Apple Search Ads                   |
-| 14 | [ads-create](#14-ads-create)        | 100/100| Campaign brief generator           |
-| 15 | [ads-generate](#15-ads-generate)    | 100/100| AI image generation                |
-| 16 | [ads-linkedin](#16-ads-linkedin)    | 100/100| LinkedIn Ads B2B                   |
-| 17 | [ads-microsoft](#17-ads-microsoft)  | 100/100| Microsoft/Bing Ads                 |
-| 18 | [ads-photoshoot](#18-ads-photoshoot)| 100/100| AI product photography             |
-| 19 | [ads-test](#19-ads-test)            | 100/100| A/B test design                    |
+| #  | Skill                                | Score   | Descripción                         |
+| --- | ------------------------------------ | ------- | ----------------------------------- |
+| 01 | [ads-audit](#01-ads-audit)           | 100/100 | Auditoría multi-plataforma completa |
+| 02 | [ads-google](#02-ads-google)         | 100/100 | Google Ads deep analysis            |
+| 03 | [ads-meta](#03-ads-meta)             | 100/100 | Meta Ads (Facebook/Instagram)       |
+| 04 | [ads-plan](#04-ads-plan)             | 100/100 | Estrategia y planificación          |
+| 05 | [ads-creative](#05-ads-creative)     | 100/100 | Evaluación de creativos             |
+| 06 | [ads-landing](#06-ads-landing)       | 100/100 | Análisis de landing pages           |
+| 07 | [ads-budget](#07-ads-budget)         | 100/100 | Budget y bidding strategy           |
+| 08 | [ads-math](#08-ads-math)             | 100/100 | Matemáticas publicitarias           |
+| 09 | [ads-dna](#09-ads-dna)               | 100/100 | Brand DNA extraction                |
+| 10 | [ads-competitor](#10-ads-competitor) | 100/100 | Análisis competitivo                |
+| 11 | [ads-youtube](#11-ads-youtube)       | 100/100 | YouTube Ads                         |
+| 12 | [ads-tiktok](#12-ads-tiktok)         | 100/100 | TikTok Ads                          |
+| 13 | [ads-apple](#13-ads-apple)           | 100/100 | Apple Search Ads                    |
+| 14 | [ads-create](#14-ads-create)         | 100/100 | Campaign brief generator            |
+| 15 | [ads-generate](#15-ads-generate)     | 100/100 | AI image generation                 |
+| 16 | [ads-linkedin](#16-ads-linkedin)     | 100/100 | LinkedIn Ads B2B                    |
+| 17 | [ads-microsoft](#17-ads-microsoft)   | 100/100 | Microsoft/Bing Ads                  |
+| 18 | [ads-photoshoot](#18-ads-photoshoot) | 100/100 | AI product photography              |
+| 19 | [ads-test](#19-ads-test)             | 100/100 | A/B test design                     |
 
 ---
 
@@ -53,14 +53,14 @@ Contexto: Think Different PersonalOS - AI Operating System
 **Google Ads Health Score: 72/100 (Grade C)**
 
 ### Category Breakdown
-| Category           | Score  | Status  |
-|-------------------|-------|--------|
-| Conversion Tracking| 18/25  | WARNING |
-| Wasted Spend       | 14/20  | WARNING |
-| Account Structure  | 13/15  | PASS    |
-| Keywords           | 11/15  | WARNING |
-| Ads                | 11/15  | PASS    |
-| Settings           | 5/10   | FAIL    |
+| Category            | Score | Status  |
+| ------------------- | ----- | ------- |
+| Conversion Tracking | 18/25 | WARNING |
+| Wasted Spend        | 14/20 | WARNING |
+| Account Structure   | 13/15 | PASS    |
+| Keywords            | 11/15 | WARNING |
+| Ads                 | 11/15 | PASS    |
+| Settings            | 5/10  | FAIL    |
 
 ### Quick Wins
 1. [HIGH] Add Enhanced Conversions - improves tracking accuracy
@@ -204,11 +204,11 @@ Contexto: Think Different PersonalOS - AI Operating System
 **Creative Score: 70/100 (Grade C+)**
 
 ### Ad Copy Analysis
-| Ad  | Headline      | Body                 | CTA         | Score  |
-|----|--------------|---------------------|------------|-------|
-| Ad 1| "AI OS"       | Good technical copy  | "Try Now"   | 8/10   |
-| Ad 2| "Be Different"| Weak value prop      | "Sign Up"   | 5/10   |
-| Ad 3| "317 Skills"  | Strong differentiator| "Start Free"| 9/10   |
+| Ad   | Headline       | Body                  | CTA          | Score |
+| ---- | -------------- | --------------------- | ------------ | ----- |
+| Ad 1 | "AI OS"        | Good technical copy   | "Try Now"    | 8/10  |
+| Ad 2 | "Be Different" | Weak value prop       | "Sign Up"    | 5/10  |
+| Ad 3 | "317 Skills"   | Strong differentiator | "Start Free" | 9/10  |
 
 ### Visual Assets
 - Image ads: 3/5 platforms compliant
@@ -284,12 +284,12 @@ Contexto: Think Different PersonalOS - AI Operating System
 **Budget Score: 76/100 (Grade C+)**
 
 ### Allocation (Current vs Recommended)
-| Platform  | Current  | Recommended  | Delta  |
-|----------|---------|-------------|-------|
-| Google    | 60%      | 50%          | -10%   |
-| Meta      | 25%      | 30%          | +5%    |
-| LinkedIn  | 10%      | 15%          | +5%    |
-| TikTok    | 5%       | 5%           | 0%     |
+| Platform | Current | Recommended | Delta |
+| -------- | ------- | ----------- | ----- |
+| Google   | 60%     | 50%         | -10%  |
+| Meta     | 25%     | 30%         | +5%   |
+| LinkedIn | 10%     | 15%         | +5%   |
+| TikTok   | 5%      | 5%          | 0%    |
 
 ### Bid Strategy Health
 - Google: tROAS 3.2 - GOOD (target 4.0)
@@ -329,14 +329,14 @@ Contexto: Think Different PersonalOS - AI Operating System
 **Math Score: 88/100 (Grade B+)**
 
 ### Key Metrics
-| Metric  | Formula                          | Value  |
-|--------|---------------------------------|-------|
-| ROAS    | Revenue / Ad Spend               | 3.4x   |
-| CPA     | Ad Spend / Conversions           | $28.50 |
-| CLV     | Avg Purchase × Purchases × Margin| $245   |
-| LTV:CAC | CLV / CAC                        | 4.2:1  |
-| CTR     | Clicks / Impressions             | 4.2%   |
-| CVR     | Conversions / Clicks             | 6.8%   |
+| Metric  | Formula                           | Value  |
+| ------- | --------------------------------- | ------ |
+| ROAS    | Revenue / Ad Spend                | 3.4x   |
+| CPA     | Ad Spend / Conversions            | $28.50 |
+| CLV     | Avg Purchase × Purchases × Margin | $245   |
+| LTV:CAC | CLV / CAC                         | 4.2:1  |
+| CTR     | Clicks / Impressions              | 4.2%   |
+| CVR     | Conversions / Clicks              | 6.8%   |
 
 ### ROAS Breakdown by Platform
 - Google: 4.2x (GOOD)
@@ -434,11 +434,11 @@ LTV = (AOV × Purchase Frequency × Gross Margin) - CAC
 **Competitor Score: 78/100 (Grade C+)**
 
 ## Identified Competitors
-| Competitor | Est. Spend  | Top Keywords     | Ad Angle               |
-|-----------|------------|-----------------|-----------------------|
-| Notion     | $50k/mo     | "productivity OS"| "All-in-one workspace" |
-| Obsidian   | $10k/mo     | "second brain"   | "Local-first knowledge"|
-| Raycast    | $15k/mo     | "launcher"       | "Speed and AI"         |
+| Competitor | Est. Spend | Top Keywords      | Ad Angle                |
+| ---------- | ---------- | ----------------- | ----------------------- |
+| Notion     | $50k/mo    | "productivity OS" | "All-in-one workspace"  |
+| Obsidian   | $10k/mo    | "second brain"    | "Local-first knowledge" |
+| Raycast    | $15k/mo    | "launcher"        | "Speed and AI"          |
 
 ### Keyword Gap Analysis
 - **Your terms:** "AI OS", "personal assistant"
@@ -477,11 +477,11 @@ LTV = (AOV × Purchase Frequency × Gross Margin) - CAC
 **YouTube Score: 70/100 (Grade C+)**
 
 ### Video Performance
-| Video       | Views  | Avg Watch  | CTR  | CVR  |
-|------------|-------|-----------|-----|-----|
-| "AI OS Demo"| 45k    | 52%        | 2.1% | 0.8% |
-| "317 Skills"| 12k    | 31%        | 0.9% | 0.3% |
-| "Tutorial"  | 8k     | 68%        | 3.2% | 1.4% |
+| Video        | Views | Avg Watch | CTR  | CVR  |
+| ------------ | ----- | --------- | ---- | ---- |
+| "AI OS Demo" | 45k   | 52%       | 2.1% | 0.8% |
+| "317 Skills" | 12k   | 31%       | 0.9% | 0.3% |
+| "Tutorial"   | 8k    | 68%       | 3.2% | 1.4% |
 
 ### Brand Safety
 - Viewability: 65% - WARNING (target 70%+)
@@ -525,10 +525,10 @@ LTV = (AOV × Purchase Frequency × Gross Margin) - CAC
 - Text overlays: FAIL - too promotional
 
 ### Performance
-| Campaign  | Impressions  | CTR  | CPC  | CVR  |
-|----------|-------------|-----|-----|-----|
-| "AI Hacks"| 120k         | 4.2% | $0.42| 1.1% |
-| "Demo"    | 45k          | 2.1% | $0.89| 0.4% |
+| Campaign   | Impressions | CTR  | CPC   | CVR  |
+| ---------- | ----------- | ---- | ----- | ---- |
+| "AI Hacks" | 120k        | 4.2% | $0.42 | 1.1% |
+| "Demo"     | 45k         | 2.1% | $0.89 | 0.4% |
 
 ### Trend Analysis
 - Trending sounds: 0/3 used
@@ -581,12 +581,12 @@ LTV = (AOV × Purchase Frequency × Gross Margin) - CAC
 - CPP alignment: WARNING - not keyword-matched
 
 ### TAP Coverage
-| Placement     | Status            | CPT  |
-|--------------|------------------|-----|
-| Search Results| Active            | $0.89|
-| Search Tab    | WARNING - high CPT| $1.42|
-| Today Tab     | Not active        |-----|
-| Product Pages | Active            | $0.65|
+| Placement      | Status             | CPT   |
+| -------------- | ------------------ | ----- |
+| Search Results | Active             | $0.89 |
+| Search Tab     | WARNING - high CPT | $1.42 |
+| Today Tab      | Not active         | ----- |
+| Product Pages  | Active             | $0.65 |
 
 ### Recommendations
 1. Enable Maximize Conversions (AI bidding)
@@ -633,10 +633,10 @@ Think Different PersonalOS: AI operating system for tech professionals. Dark-mod
 - **CTA:** "Try All of Them"
 
 ## Copy Deck
-| Platform  | Headline      | Primary Text   | CTA        |
-|----------|--------------|---------------|-----------|
-| Google    | "AI OS"       | "317 skills..."| "Try Free" |
-| Meta      | "Be Different"| "Your AI..."   | "Start Now"|
+| Platform | Headline       | Primary Text    | CTA         |
+| -------- | -------------- | --------------- | ----------- |
+| Google   | "AI OS"        | "317 skills..." | "Try Free"  |
+| Meta     | "Be Different" | "Your AI..."    | "Start Now" |
 
 ## Image Generation Briefs
 - 6 briefs generated (2 concepts × 3 platforms)
@@ -778,12 +778,12 @@ ad-assets/
 - Copilot Checkout: Not active
 
 ### Unique Features
-| Feature           | Status           | Priority  |
-|------------------|-----------------|----------|
-| LinkedIn targeting| PASS - active    | HIGH      |
-| Copilot chat      | WARNING          | HIGH      |
-| Multimedia Ads    | FAIL - not tested| MEDIUM    |
-| Action Extension  | PASS             | MEDIUM    |
+| Feature            | Status            | Priority |
+| ------------------ | ----------------- | -------- |
+| LinkedIn targeting | PASS - active     | HIGH     |
+| Copilot chat       | WARNING           | HIGH     |
+| Multimedia Ads     | FAIL - not tested | MEDIUM   |
+| Action Extension   | PASS              | MEDIUM   |
 
 ### Recommendations
 1. Enable Copilot placement on PMax (73% CTR potential)
@@ -827,13 +827,13 @@ product-photos/
 ```
 
 ## Platform Recommendations
-| Style     | Best Platform         | Rationale         |
-|----------|----------------------|------------------|
-| Studio    | Meta, LinkedIn, Google| Clean, universal  |
-| Floating  | TikTok, Reels, Stories| High visual impact|
-| Ingredient| Meta Feed, Pinterest  | Square optimal    |
-| In Use    | TikTok, Reels         | Authentic feel    |
-| Lifestyle | All platforms         | Broad appeal      |
+| Style      | Best Platform          | Rationale          |
+| ---------- | ---------------------- | ------------------ |
+| Studio     | Meta, LinkedIn, Google | Clean, universal   |
+| Floating   | TikTok, Reels, Stories | High visual impact |
+| Ingredient | Meta Feed, Pinterest   | Square optimal     |
+| In Use     | TikTok, Reels          | Authentic feel     |
+| Lifestyle  | All platforms          | Broad appeal       |
 
 ## Quality Assessment
 - Studio: 9/10 - Professional, clean
@@ -877,25 +877,25 @@ and UGC consistently outperforms polished in 2025-2026 benchmarks
 ```
 
 ## Test Design
-| Parameter     | Value                            |
-|--------------|---------------------------------|
-| Platform      | Meta                             |
-| Test Type     | A/B                              |
-| Variable      | Creative format (polished vs UGC)|
-| Control       | Current polished product shots   |
-| Variant       | UGC creator video style          |
-| Primary Metric| CTR                              |
-| Traffic Split | 50/50                            |
+| Parameter      | Value                             |
+| -------------- | --------------------------------- |
+| Platform       | Meta                              |
+| Test Type      | A/B                               |
+| Variable       | Creative format (polished vs UGC) |
+| Control        | Current polished product shots    |
+| Variant        | UGC creator video style           |
+| Primary Metric | CTR                               |
+| Traffic Split  | 50/50                             |
 
 ## Sample Size & Duration
-| Metric         | Value               |
-|---------------|--------------------|
-| Baseline CTR   | 2.1%                |
-| MDE            | 25%                 |
-| Required Sample| 3,100 per variant   |
-| Daily Traffic  | 1,200 clicks        |
-| Est. Duration  | 6 days              |
-| Min Duration   | 7 days (recommended)|
+| Metric          | Value                |
+| --------------- | -------------------- |
+| Baseline CTR    | 2.1%                 |
+| MDE             | 25%                  |
+| Required Sample | 3,100 per variant    |
+| Daily Traffic   | 1,200 clicks         |
+| Est. Duration   | 6 days               |
+| Min Duration    | 7 days (recommended) |
 
 ## Success Criteria
 - Winner at 95% confidence

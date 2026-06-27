@@ -25,55 +25,55 @@ Think_Different/
 
 ## 📂 Estructura 01_Core
 
-| #   | Carpeta              | Contenido                                     | Estado  |
-|----|---------------------|----------------------------------------------|--------|
-| 01  | `00_Workflows_Os/`   | 28 workflows (7 categorías)                   | ✅       |
-| 02  | `01_Rules/`          | 14 reglas .mdc (00-13)                        | ✅       |
-| 03  | `02_Tools/`          | Agents, Skills, MCPs, Hooks, Plugins, Evals   | ✅       |
+| #  | Carpeta            | Contenido                                   | Estado |
+| --- | ------------------ | ------------------------------------------- | ------ |
+| 01 | `00_Workflows_Os/` | 28 workflows (7 categorías)                 | ✅      |
+| 02 | `01_Rules/`        | 14 reglas .mdc (00-13)                      | ✅      |
+| 03 | `02_Tools/`        | Agents, Skills, MCPs, Hooks, Plugins, Evals | ✅      |
 
 ---
 
 ## 📂 Estructura 02_Tools
 
-| #   | Carpeta               | Contenido                                              | Estado  |
-|----|----------------------|-------------------------------------------------------|--------|
-| 01  | `01_Agents/`          | 61 agents (25 Root + 5 Dream + 23 Spec + 5 Growth + 3 other) | ✅       |
-| 02  | `02_Skills/`          | 392 skills (15 áreas)                                  | ✅       |
-| 03  | `03_Mcp/`             | MCP servers (backup config)                            | ✅       |
-| 04  | `04_Integrations/`    | Fireflies, Granola                                     | ✅       |
-| 05  | `05_Hooks/`           | 10 hooks (6 fases)                                     | ✅       |
-| 06  | `06_Plugins/`         | Plugins OS                                             | ✅       |
-| 07  | `07_Server/`          | Engram server                                          | ✅       |
-| 08  | `08_Evals/`           | Evaluaciones                                           | ✅       |
-| 09  | `09_Templates/`       | Plantillas                                             | ✅       |
+| #  | Carpeta            | Contenido                                                    | Estado |
+| --- | ------------------ | ------------------------------------------------------------ | ------ |
+| 01 | `01_Agents/`       | 61 agents (25 Root + 5 Dream + 23 Spec + 5 Growth + 3 other) | ✅      |
+| 02 | `02_Skills/`       | 392 skills (15 áreas)                                        | ✅      |
+| 03 | `03_Mcp/`          | MCP servers (backup config)                                  | ✅      |
+| 04 | `04_Integrations/` | Fireflies, Granola                                           | ✅      |
+| 05 | `05_Hooks/`        | 10 hooks (6 fases)                                           | ✅      |
+| 06 | `06_Plugins/`      | Plugins OS                                                   | ✅      |
+| 07 | `07_Server/`       | Engram server                                                | ✅      |
+| 08 | `08_Evals/`        | Evaluaciones                                                 | ✅      |
+| 09 | `09_Templates/`    | Plantillas                                                   | ✅      |
 
 ---
 
 ## 📊 Resumen de Inventario
 
-| Componente       | Cantidad  | Estado                |
-|-----------------|----------|----------------------|
-| Workflows        | 28        | ✅ Activo              |
-| Rules (.mdc)     | 14        | ✅ Definido            |
-| Agents           | 62        | ✅ Sync (ver manifest) |
-| Skills           | 392       | ✅ 15 áreas funcionales|
-| MCPs             | 36        | ✅ Activo              |
-| HUBs             | 30        | ✅ Activo              |
-| Scripts totales  | 163       | ✅ 30 root + 133 subdir|
-| JARVIS Manifests | 7         | ✅ Validado            |
-| Hooks            | 10        | ✅ 6 fases             |
+| Componente       | Cantidad | Estado                 |
+| ---------------- | -------- | ---------------------- |
+| Workflows        | 28       | ✅ Activo               |
+| Rules (.mdc)     | 14       | ✅ Definido             |
+| Agents           | 62       | ✅ Sync (ver manifest)  |
+| Skills           | 392      | ✅ 15 áreas funcionales |
+| MCPs             | 36       | ✅ Activo               |
+| HUBs             | 30       | ✅ Activo               |
+| Scripts totales  | 163      | ✅ 30 root + 133 subdir |
+| JARVIS Manifests | 7        | ✅ Validado             |
+| Hooks            | 10       | ✅ 6 fases              |
 
 ---
 
 ## 📋 Documentos Clave
 
-| Documento          | Ubicación                           |
-|-------------------|------------------------------------|
-| Dream Team         | `02_Dream_Team.md`                  |
-| Inventario Total   | `01_Inventario_Total.md`            |
-| Inventario Core    | `03_Inventario_Core.md`             |
-| Workflows          | `00_Workflows_Os/README.md`         |
-| Comandos           | `00_Comandos_Workflows.md`          |
+| Documento        | Ubicación                   |
+| ---------------- | --------------------------- |
+| Dream Team       | `02_Dream_Team.md`          |
+| Inventario Total | `01_Inventario_Total.md`    |
+| Inventario Core  | `03_Inventario_Core.md`     |
+| Workflows        | `00_Workflows_Os/README.md` |
+| Comandos         | `00_Comandos_Workflows.md`  |
 
 ---
 

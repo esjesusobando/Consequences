@@ -4,17 +4,17 @@ Directorio de artefactos del sistema SDD (Spec-Driven Development).
 
 ## Contenido
 
-| Archivo/Carpeta | Proposito |
-|-----------------|-----------|
-| skill-registry.md | Registro de skills del proyecto (referencia rapida) |
-| openspec/ | Artefactos SDD activos e historicos |
-| openspec/config.yaml | Configuracion global de SDD para este proyecto |
-| openspec/changes/ | Cambios SDD por nombre de change |
+| Archivo/Carpeta      | Proposito                                           |
+| -------------------- | --------------------------------------------------- |
+| skill-registry.md    | Registro de skills del proyecto (referencia rapida) |
+| openspec/            | Artefactos SDD activos e historicos                 |
+| openspec/config.yaml | Configuracion global de SDD para este proyecto      |
+| openspec/changes/    | Cambios SDD por nombre de change                    |
 
 ## Changes Activos
 
-| Change | Estado | Descripcion |
-|--------|--------|-------------|
+| Change               | Estado   | Descripcion                                        |
+| -------------------- | -------- | -------------------------------------------------- |
 | sound-hooks-opencode | proposal | Fix hooks de sonido para OpenCode (pendiente spec) |
 
 ## Fuentes de Verdad
@@ -82,20 +82,20 @@ Create a custom OpenCode plugin that triggers sound on tool completion.
 
 ## Affected Areas
 
-| Area | Impact | Description |
-|------|--------|-------------|
-| `.claude/settings.local.json` | Modified | Hook config (Claude Code format - won't work in OpenCode) |
-| `.agent/04_Extensions/hooks/04_Sound/task-complete-sound.ps1` | Existing | Working sound script (tested manually) |
-| `.agent/04_Extensions/hooks/02_Post_Tool/post_tool_use.py` | Modified | Add sound call to Python hook |
-| `01_Core/05_Mcp/opencode.json` | Modified | Add hook configuration if OpenCode supports it |
+| Area                                                          | Impact   | Description                                               |
+| ------------------------------------------------------------- | -------- | --------------------------------------------------------- |
+| `.claude/settings.local.json`                                 | Modified | Hook config (Claude Code format - won't work in OpenCode) |
+| `.agent/04_Extensions/hooks/04_Sound/task-complete-sound.ps1` | Existing | Working sound script (tested manually)                    |
+| `.agent/04_Extensions/hooks/02_Post_Tool/post_tool_use.py`    | Modified | Add sound call to Python hook                             |
+| `01_Core/05_Mcp/opencode.json`                                | Modified | Add hook configuration if OpenCode supports it            |
 
 ## Risks
 
-| Risk | Likelihood | Mitigation |
-|------|------------|------------|
-| OpenCode lacks hook support | Medium | Fall back to Option B (Python wrapper) |
-| Sound doesn't play in background | Low | Use async/non-blocking call in Python |
-| Conflicting hooks between editors | Low | Use conditional detection of environment |
+| Risk                              | Likelihood | Mitigation                               |
+| --------------------------------- | ---------- | ---------------------------------------- |
+| OpenCode lacks hook support       | Medium     | Fall back to Option B (Python wrapper)   |
+| Sound doesn't play in background  | Low        | Use async/non-blocking call in Python    |
+| Conflicting hooks between editors | Low        | Use conditional detection of environment |
 
 ## Rollback Plan
 

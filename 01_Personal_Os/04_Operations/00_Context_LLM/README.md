@@ -38,22 +38,22 @@ Sistema de memoria y contexto para LLMs. Guarda el estado del sistema, notas de 
 
 ## 📋 PROCESO DE MEMORIA
 
-| Paso| Acción                     | Tool                          |
-|----|---------------------------|------------------------------|
-| 1   | Cargar contexto al iniciar | `engram_mem_context()`        |
-| 2   | Guardar decisiones clave   | `mem_save()`                  |
-| 3   | Guardar sesión al cerrar   | `engram_mem_session_summary()`|
-| 4   | Mantener notes actualizadas| `01_Process_Notes/`           |
+| Paso | Acción                      | Tool                           |
+| ---- | --------------------------- | ------------------------------ |
+| 1    | Cargar contexto al iniciar  | `engram_mem_context()`         |
+| 2    | Guardar decisiones clave    | `mem_save()`                   |
+| 3    | Guardar sesión al cerrar    | `engram_mem_session_summary()` |
+| 4    | Mantener notes actualizadas | `01_Process_Notes/`            |
 
 ---
 
 ## 📊 ESTADO
 
-| Recurso        | Total| Estado     |
-|---------------|-----|-----------|
-| Process Notes  | 16+  | ✅ ACTIVE   |
-| Memory records | ?    | ⏳ Verificar|
-| Knowledge Brain| ?    | ⏳ Verificar|
+| Recurso         | Total | Estado      |
+| --------------- | ----- | ----------- |
+| Process Notes   | 16+   | ✅ ACTIVE    |
+| Memory records  | ?     | ⏳ Verificar |
+| Knowledge Brain | ?     | ⏳ Verificar |
 
 ---
 
@@ -67,10 +67,10 @@ Sistema de memoria y contexto para LLMs. Guarda el estado del sistema, notas de 
 
 ## 📋 NOTAS DE SESIÓN RECIENTES
 
-| Fecha     | Nota                               |
-|----------|-----------------------------------|
-| 2026-05-19| Session 15                         |
-| 2026-05-31| **Auditoría Integral** — Session 16|
+| Fecha      | Nota                                |
+| ---------- | ----------------------------------- |
+| 2026-05-19 | Session 15                          |
+| 2026-05-31 | **Auditoría Integral** — Session 16 |
 
 ---
 

@@ -44,15 +44,15 @@ Este directorio contiene el **legacy de Agent Teams Lite** y los **7 manifests d
 
 ## 📊 JARVIS MANIFESTS — ESTADO (v4.1 → gentle-ai)
 
-| Manifest      | Total       | Drift| Nota       |
-|--------------|------------|-----|-----------|
-| OS Inventory  | 1 archivo   | 0 ✅  | Se mantiene|
-| MCP Registry  | 7+38 MCPs   | 0 ✅  | Se mantiene|
-| Agent Catalog | 82 agents   | 0 ✅  | Se mantiene|
-| Skill Index   | 392 skills  | 0 ✅  | Se mantiene|
-| HUB Catalog   | 20 HUBs     | 0 ✅  | Se mantiene|
-| Workflow Graph| 27 workflows| 0 ✅  | Se mantiene|
-| Hook Registry | 10 hooks    | 0 ✅  | Se mantiene|
+| Manifest       | Total        | Drift | Nota        |
+| -------------- | ------------ | ----- | ----------- |
+| OS Inventory   | 1 archivo    | 0 ✅   | Se mantiene |
+| MCP Registry   | 7+38 MCPs    | 0 ✅   | Se mantiene |
+| Agent Catalog  | 82 agents    | 0 ✅   | Se mantiene |
+| Skill Index    | 392 skills   | 0 ✅   | Se mantiene |
+| HUB Catalog    | 20 HUBs      | 0 ✅   | Se mantiene |
+| Workflow Graph | 27 workflows | 0 ✅   | Se mantiene |
+| Hook Registry  | 10 hooks     | 0 ✅   | Se mantiene |
 
 > Los manifests JARVIS SIGUEN ACTIVOS como fuente de verdad del PersonalOS.
 > Lo deprecado son las skills SDD de ATL, ahora reemplazadas por gentle-ai.
@@ -81,13 +81,13 @@ gentle-ai skill-registry refresh   # Refrescar registry de skills
 
 ## 🔗 RELACIONES
 
-| Componente                      | Ubicación                                        | Estado                              |
-|--------------------------------|-------------------------------------------------|------------------------------------|
-| **gentle-ai (SDD Orchestrator)**| Global (brew/scoop)                              | ✅ ACTIVO — reemplaza ATL            |
-| **Manifests JARVIS**            | `02_Agent_Teams_Lite/00_Manifest/`               | ✅ ACTIVO — fuente de verdad         |
-| **Agentes pipeline**            | `01_Core/02_Tools/01_Agents/`                    | ✅ ACTIVOS — #01→#07                 |
-| **HUBs**                        | `03_Scripts_Os/`                                 | ✅ ACTIVOS                           |
-| **Skills ATL (legacy)**         | `02_Agent_Teams_Lite/01_Agent_Teams_Lite/skills/`| 🗄️ LEGACY — mantener como referencia|
+| Componente                       | Ubicación                                         | Estado                               |
+| -------------------------------- | ------------------------------------------------- | ------------------------------------ |
+| **gentle-ai (SDD Orchestrator)** | Global (brew/scoop)                               | ✅ ACTIVO — reemplaza ATL             |
+| **Manifests JARVIS**             | `02_Agent_Teams_Lite/00_Manifest/`                | ✅ ACTIVO — fuente de verdad          |
+| **Agentes pipeline**             | `01_Core/02_Tools/01_Agents/`                     | ✅ ACTIVOS — #01→#07                  |
+| **HUBs**                         | `03_Scripts_Os/`                                  | ✅ ACTIVOS                            |
+| **Skills ATL (legacy)**          | `02_Agent_Teams_Lite/01_Agent_Teams_Lite/skills/` | 🗄️ LEGACY — mantener como referencia |
 
 ---
 
@@ -95,14 +95,14 @@ gentle-ai skill-registry refresh   # Refrescar registry de skills
 
 El SDD ahora corre sobre **gentle-ai** con un orquestador dedicado (`gentle-orchestrator`):
 
-| Fase   | Comando                | Descripción                                                |
-|-------|-----------------------|-----------------------------------------------------------|
-| Init   | `/sdd-init`            | Inicializar contexto SDD                                   |
-| Explore| `/sdd-explore <topic>` | Investigar idea                                            |
-| New    | `/sdd-new <change>`    | Crear cambio completo (propuesta + specs + diseño + tareas)|
-| Apply  | `/sdd-apply [change]`  | Implementar tareas                                         |
-| Verify | `/sdd-verify [change]` | Validar contra specs                                       |
-| Archive| `/sdd-archive [change]`| Archivar cambio                                            |
+| Fase    | Comando                 | Descripción                                                 |
+| ------- | ----------------------- | ----------------------------------------------------------- |
+| Init    | `/sdd-init`             | Inicializar contexto SDD                                    |
+| Explore | `/sdd-explore <topic>`  | Investigar idea                                             |
+| New     | `/sdd-new <change>`     | Crear cambio completo (propuesta + specs + diseño + tareas) |
+| Apply   | `/sdd-apply [change]`   | Implementar tareas                                          |
+| Verify  | `/sdd-verify [change]`  | Validar contra specs                                        |
+| Archive | `/sdd-archive [change]` | Archivar cambio                                             |
 
 > **Diferencia clave con ATL legacy:** gentle-ai añade orquestador, memoria Engram, perfiles multi-modelo, skill registry automático y GGA integrado.
 
@@ -112,16 +112,15 @@ El SDD ahora corre sobre **gentle-ai** con un orquestador dedicado (`gentle-orch
 
 Si venís de Agent Teams Lite, esto cambió:
 
-| Aspecto    | ATL (legacy)     | gentle-ai                                           |
-|-----------|-----------------|----------------------------------------------------|
-| Instalación| Clone manual     | `brew install gentle-ai` / `scoop install gentle-ai`|
-| Skills     | Markdown estático| Binario + markers + auto-actualización              |
-| Memoria    | No tenía         | Engram (persistente entre sesiones)                 |
-| Orquestador| Manual           | `gentle-orchestrator` con 10 sub-agentes            |
-| MCPs       | No configuraba   | Context7, GitHub, filesystem, etc.                  |
-| Modelos    | 1 modelo         | Perfiles multi-modelo por fase SDD                  |
+| Aspecto     | ATL (legacy)      | gentle-ai                                            |
+| ----------- | ----------------- | ---------------------------------------------------- |
+| Instalación | Clone manual      | `brew install gentle-ai` / `scoop install gentle-ai` |
+| Skills      | Markdown estático | Binario + markers + auto-actualización               |
+| Memoria     | No tenía          | Engram (persistente entre sesiones)                  |
+| Orquestador | Manual            | `gentle-orchestrator` con 10 sub-agentes             |
+| MCPs        | No configuraba    | Context7, GitHub, filesystem, etc.                   |
+| Modelos     | 1 modelo          | Perfiles multi-modelo por fase SDD                   |
 
 ---
 
 *Think Different PersonalOS v4.9 — gentle-ai ACTIVE | ATL LEGACY*
-

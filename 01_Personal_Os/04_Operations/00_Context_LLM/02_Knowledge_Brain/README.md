@@ -7,37 +7,37 @@
 
 ## Guias de Referencia (01-05)
 
-| #   | Archivo                           | Proposito                            |
-|----|----------------------------------|-------------------------------------|
-| 01  | `01_Inventario_Total.md`          | Estado sistema: skills, MCPs, scripts|
-| 02  | `02_Personal_Os_Evolution.md`     | Historial de versiones (v1.0 a v4.0) |
-| 03  | `03_Anthropic_Skills_Framework.md`| Como crear skills que funcionan      |
-| 04  | `04_Cursor_Shortcuts_Reference.md`| Shortcuts Cursor IDE                 |
-| 05  | `05_References_Guide.md`          | Guia uso carpeta references          |
+| #  | Archivo                            | Proposito                             |
+| --- | ---------------------------------- | ------------------------------------- |
+| 01 | `01_Inventario_Total.md`           | Estado sistema: skills, MCPs, scripts |
+| 02 | `02_Personal_Os_Evolution.md`      | Historial de versiones (v1.0 a v4.0)  |
+| 03 | `03_Anthropic_Skills_Framework.md` | Como crear skills que funcionan       |
+| 04 | `04_Cursor_Shortcuts_Reference.md` | Shortcuts Cursor IDE                  |
+| 05 | `05_References_Guide.md`           | Guia uso carpeta references           |
 
 ---
 
 ## Frameworks y Metodologia (06-09)
 
-| #   | Archivo                                 | Proposito                        |
-|----|----------------------------------------|---------------------------------|
-| 06  | `06_Metodologia_Ingenieria_Compuesta.md`| Workflow CE completo             |
-| 07  | `07_Claude_Best_Practices.md`           | Patrones que funcionan con Claude|
-| 08  | `08_Skill_Creation_SOTA.md`             | Crear skills nivel profesional   |
-| 09  | `09_Course_AI_Agents_Remy_Gasill.md`    | Curso agentes IA                 |
+| #  | Archivo                                  | Proposito                         |
+| --- | ---------------------------------------- | --------------------------------- |
+| 06 | `06_Metodologia_Ingenieria_Compuesta.md` | Workflow CE completo              |
+| 07 | `07_Claude_Best_Practices.md`            | Patrones que funcionan con Claude |
+| 08 | `08_Skill_Creation_SOTA.md`              | Crear skills nivel profesional    |
+| 09 | `09_Course_AI_Agents_Remy_Gasill.md`     | Curso agentes IA                  |
 
 ---
 
 ## Documentacion Tecnica (10-15)
 
-| #   | Archivo                            | Proposito                                     |
-|----|-----------------------------------|----------------------------------------------|
-| 10  | `10_Anthropic_Harness_Design.md`   | Harness Design (Anthropic Engineering)        |
-| 11  | `11_System_Mapping.md`             | Mapa completo del sistema                     |
-| 12  | `12_Estado_Del_Arte.md`            | Estado del arte PersonalOS v6.0               |
-| 13  | `13_Anthropic_Engineering_01_07.md`| Anthropic Engineering — Posts 1-7             |
-| 14  | `14_Anthropic_Engineering_Part2.md`| Anthropic Engineering — Posts 8-13            |
-| 15  | `15_Anthropic_Engineering_Part3.md`| Anthropic Engineering — Posts 14-20 (COMPLETA)|
+| #  | Archivo                             | Proposito                                      |
+| --- | ----------------------------------- | ---------------------------------------------- |
+| 10 | `10_Anthropic_Harness_Design.md`    | Harness Design (Anthropic Engineering)         |
+| 11 | `11_System_Mapping.md`              | Mapa completo del sistema                      |
+| 12 | `12_Estado_Del_Arte.md`             | Estado del arte PersonalOS v6.0                |
+| 13 | `13_Anthropic_Engineering_01_07.md` | Anthropic Engineering — Posts 1-7              |
+| 14 | `14_Anthropic_Engineering_Part2.md` | Anthropic Engineering — Posts 8-13             |
+| 15 | `15_Anthropic_Engineering_Part3.md` | Anthropic Engineering — Posts 14-20 (COMPLETA) |
 
 ---
 

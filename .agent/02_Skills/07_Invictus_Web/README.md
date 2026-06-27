@@ -8,11 +8,11 @@
 
 ## Navegacion Rapida
 
-| #  | Directorio           | Skill          | Descripcion                               |
-|---|---------------------|---------------|------------------------------------------|
-| 01 | `01_Superpowers/`    | Superpowers    | Superpoderes del sistema Invictus Web     |
-| 02 | `02_Buscador_Skills/`| Buscador Skills| Buscador inteligente de skills del sistema|
-| 03 | `03_Playwright/`     | Playwright     | Automatizacion de navegador con Playwright|
+| #  | Directorio            | Skill           | Descripcion                                |
+| --- | --------------------- | --------------- | ------------------------------------------ |
+| 01 | `01_Superpowers/`     | Superpowers     | Superpoderes del sistema Invictus Web      |
+| 02 | `02_Buscador_Skills/` | Buscador Skills | Buscador inteligente de skills del sistema |
+| 03 | `03_Playwright/`      | Playwright      | Automatizacion de navegador con Playwright |
 
 ---
 
@@ -31,11 +31,11 @@ Framework de automatizacion de navegador para testing E2E, web scraping, y autom
 
 ## Seleccion de Skill por Caso
 
-| Caso                      | Skill Recomendada   |
-|--------------------------|--------------------|
-| Buscar skill en el sistema| `02_Buscador_Skills`|
-| Automatizar navegador     | `03_Playwright`     |
-| Capacidades avanzadas     | `01_Superpowers`    |
+| Caso                       | Skill Recomendada    |
+| -------------------------- | -------------------- |
+| Buscar skill en el sistema | `02_Buscador_Skills` |
+| Automatizar navegador      | `03_Playwright`      |
+| Capacidades avanzadas      | `01_Superpowers`     |
 
 ---
 

@@ -2,10 +2,10 @@
 
 ## Detailed Guides (in skill root)
 
-| File                                             | Content                                                |
-|-------------------------------------------------|-------------------------------------------------------|
-| [DEPENDENCIES.md](../DEPENDENCIES.md)            | Deep dive into property dependencies and displayOptions|
-| [OPERATION_PATTERNS.md](../OPERATION_PATTERNS.md)| Common configuration patterns by node type             |
+| File                                              | Content                                                 |
+| ------------------------------------------------- | ------------------------------------------------------- |
+| [DEPENDENCIES.md](../DEPENDENCIES.md)             | Deep dive into property dependencies and displayOptions |
+| [OPERATION_PATTERNS.md](../OPERATION_PATTERNS.md) | Common configuration patterns by node type              |
 
 ## Core Principles
 

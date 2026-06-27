@@ -7,9 +7,9 @@
 
 ## ADRs
 
-| # | Título | Estado | Fecha |
-|---|--------|--------|-------|
-| 001 | Capital Token — Arquitectura Híbrida | Aceptado | 2026-06-27 |
+| #   | Título                                     | Estado   | Fecha      |
+| --- | ------------------------------------------ | -------- | ---------- |
+| 001 | Capital Token — Arquitectura Híbrida       | Aceptado | 2026-06-27 |
 | 002 | Estructura del Conocimiento — 6 Categorías | Aceptado | 2026-06-27 |
 
 ---

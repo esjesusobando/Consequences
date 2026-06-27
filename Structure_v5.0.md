@@ -21,12 +21,12 @@ Think_Different/                    # RAÍZ
 
 ### 📝 Notas de la Raíz
 
-| Carpeta                    | Propósito                                                            |
-|---------------------------|---------------------------------------------------------------------|
-| **00_Winter_is_Coming**    | Dirección estratégica. Goals, Backlog, AGENTS.md (GGA), CHANGELOG.   |
-| **01_Personal_Os**         | EL SISTEMA OPERATIVO. Skills, agentes, HUBs, workflows, memoria.     |
-| **02_Playground**          | Zona de pruebas. Graphify_Out (knowledge graph), experimentos.       |
-| **03_Resultado**           | Outputs de proyectos. Entregables, reportes, contenido generado.     |
+| Carpeta                 | Propósito                                                          |
+|-------------------------|--------------------------------------------------------------------|
+| **00_Winter_is_Coming** | Dirección estratégica. Goals, Backlog, AGENTS.md (GGA), CHANGELOG. |
+| **01_Personal_Os**      | EL SISTEMA OPERATIVO. Skills, agentes, HUBs, workflows, memoria.   |
+| **02_Playground**       | Zona de pruebas. Graphify_Out (knowledge graph), experimentos.     |
+| **03_Resultado**        | Outputs de proyectos. Entregables, reportes, contenido generado.   |
 
 ---
 
@@ -80,11 +80,11 @@ Think_Different/                    # RAÍZ
 │   ├── 05_Projects/              # Proyectos activos
 │   ├── 06_SOTA_Features/         # Features estado-del-arte
 │   └── 07_Reports/               # Reportes generados
-└── 05_Archive/                   # Backups, snapshots, históricos
-    ├── 01_Plans_Completed/       # Planes, docs, session summaries (36 archivos)
-    ├── 02_Skills_Legacy/         # Skills legacy (2,249 archivos) [FIXED]
-    └── 03_Backups_Refs/          # Backups, repos, audits (11,582 archivos)
-├── 06_Evals/                     # Evaluadores, dashboard y métricas
+├── 05_Archive/                   # Backups, snapshots, históricos
+│   ├── 01_Plans_Completed/       # Planes, docs, session summaries (36 archivos)
+│   ├── 02_Skills_Legacy/         # Skills legacy (2,249 archivos) [FIXED]
+│   └── 03_Backups_Refs/          # Backups, repos, audits (11,582 archivos)
+└── 06_Evals/                     # Evaluadores, dashboard y métricas
 ```
 
 ---
@@ -138,70 +138,73 @@ Think_Different/                    # RAÍZ
 
 ---
 
-## 🔧 SKILLS POR ÁREA (15 áreas funcionales)
+## 🔧 SKILLS POR ÁREA (15 áreas funcionales — 396 total)
 
-| Área | Skills | Descripción |
-|------|--------|-------------|
-| 00_Agent_Teams_Lite | 14 | SDD sub-agentes + JARVIS manifests |
-| 00_Compound_Engineering | 63 | Core CE — SDD + Compound Engineering |
-| 00_Personal_Os | 24 | Life OS, Hillary, Rituales |
-| 00_Skill_Auditor | 1 | Auditoría de skills |
-| 00_System_Core | 1 | Stack base del OS |
-| 00_Workflows | 39 | Workflows OS |
-| 01_Creacion_Contenidos | 52 | Brand, YouTube, SEO, Marketing |
-| 02_Diseno_Ui_Ux | 34 | Product Design, UI/UX, Taste |
-| 03_Video_Media | 11 | Video Intel, James Cameron |
-| 04_Automatizacion | 27 | N8N, Firecrawl, GWS Client |
-| 05_Claude_Ads | 21 | Claude Ads & Promoted Content |
-| 06_Tools | 83 | Skill Creator, Testing, DevOps |
-| 07_Invictus_Web | 18 | Playwright, Superpowers |
-| 08_JAO | 7 | Entrevistador, Humanizador, Superpowers |
-| 10_Laia_Learning | 1 | Sistema de aprendizaje personal |
-| **TOTAL** | **396** | |
-
----
-
-## 🤖 AGENTES (76 total — 8 categorías)
-
-| Categoría | Cantidad | Ubicación |
-|-----------|----------|-----------|
-| Root (agent .md files) | 26 | `01_Agents/` (root level) |
-| Dream Team | 7 | `01_Dream_Team/` |
-| Specialists Compound | 24 | `02_Specialists_Compound/` |
-| Growth | 6 | `03_Growth/` |
-| OS Conductor | 9 | `00_OS_Conductor/` |
-| ATL Gen | 13 | `07_Agent_Teams_Lite_Gen/` |
-| Agent Teams Lite | 3 | `00_Agent_Teams_Lite/` |
-| Legacy/Other | 5 | `04_Contexto/, 05_Marca/, 06_Plantillas/` |
-
-> ⚠️ Conteo incluye todos los .md en subdirectorios hasta profundidad 2. El número exacto puede variar según cuántos README/LEEME se excluyan. Categorización actualizada 2026-06-27. |
+| Área                    | Skills | Descripción                                 |
+|-------------------------|--------|---------------------------------------------|
+| 00_Agent_Teams_Lite     |     14 | SDD sub-agentes + JARVIS manifests          |
+| 00_Compound_Engineering |     63 | Core CE — SDD + Compound Engineering        |
+| 00_Personal_Os          |     24 | Life OS, Hillary, Rituales                  |
+| 00_Skill_Auditor        |      1 | Auditoría de skills                         |
+| 00_System_Core          |      1 | Stack base del OS                           |
+| 00_Workflows            |     39 | Workflows OS                                |
+| 01_Creacion_Contenidos  |     52 | Brand, YouTube, SEO, Marketing              |
+| 02_Diseno_Ui_Ux         |     34 | Product Design, UI/UX, Taste                |
+| 03_Video_Media          |     11 | Video Intel, James Cameron                  |
+| 04_Automatizacion       |     27 | N8N, Firecrawl, GWS Client                  |
+| 05_Claude_Ads           |     21 | Claude Ads & Promoted Content               |
+| 06_Tools                |     83 | Skill Creator, Testing, DevOps              |
+| 07_Invictus_Web         |     18 | Playwright, Superpowers                     |
+| 08_JAO                  |      7 | Entrevistador, Humanizador, Superpowers     |
+| 10_Laia_Learning        |      1 | Sistema de aprendizaje personal             |
+| **TOTAL**               |**396** |                                             |
 
 ---
 
-## 🔧 HUBs (32 HUBs — 167 scripts)
+## 🤖 AGENTES (63 source — 9 categorías)
 
-| Hub | Propósito |
-|-----|-----------|
-| Sound Engine | Notificaciones sonoras |
-| Auditor | Auditorías del sistema |
-| Git | Operaciones Git |
-| AIPM | AI Performance Monitoring |
-| Ritual | Rituales de sesión |
-| Validator | Validación de código |
-| Tool | Gestión de herramientas |
-| Integration | Integraciones MCP |
-| Workflow | Automatización de workflows |
-| Data | Procesamiento de datos |
-| General | Utilidades generales |
-| Auto Learn | Motor de automejora |
-| Health Metrics | Métricas de salud |
-| MCP Sync | Sync Claude ↔ OpenCode |
-| Agent Mirror | Mirror source → backup |
-| Watchdog | Health watchdog |
-| Telemetry | Dashboard de métricas |
-| Agent Sync | Sync .agent ↔ 01_Core |
-| System Mapper | Genera 7 manifests JARVIS |
-| + 11 auxiliares | Legacy, Frontmatter, Paths, etc. |
+| Categoría                          | Cantidad | Ubicación                                    |
+|------------------------------------|----------|----------------------------------------------|
+| Root (agent .md files)             |       25 | `01_Agents/` (root level)                    |
+| Dream Team                         |        6 | `01_Dream_Team/`                             |
+| Specialists Compound               |       23 | `02_Specialists_Compound/`                   |
+| Growth                             |        5 | `03_Growth/`                                 |
+| OS Conductor                       |        1 | `00_OS_Conductor/`                           |
+| ATL Gen                            |        3 | `07_Agent_Teams_Lite_Gen/`                   |
+| Agent Teams Lite                   |        0 | `00_Agent_Teams_Lite/`                       |
+| Legacy/Other                       |        0 | `04_Contexto/, 05_Marca/, 06_Plantillas/`    |
+
+> ⚠️ Conteo incluye todos los .md en subdirectorios hasta profundidad 2. Excluye README/LEEME/SKILL/AGENTS. Backup = 72. Drift = 9. Verificado 2026-06-27 por System Mapper.
+
+---
+
+## 🔧 HUBs (42 HUBs — 166 scripts totales)
+
+| Hub               | Propósito                       |
+|-------------------|---------------------------------|
+| Sound Engine      | Notificaciones sonoras          |
+| Auditor           | Auditorías del sistema          |
+| Git               | Operaciones Git                 |
+| AIPM              | AI Performance Monitoring       |
+| Ritual            | Rituales de sesión              |
+| Validator         | Validación de código            |
+| Tool              | Gestión de herramientas         |
+| Integration       | Integraciones MCP               |
+| Workflow          | Automatización de workflows     |
+| Data              | Procesamiento de datos          |
+| General           | Utilidades generales            |
+| Auto Learn        | Motor de automejora             |
+| Health Metrics    | Métricas de salud               |
+| MCP Sync          | Sync Claude ↔ OpenCode          |
+| Agent Mirror      | Mirror source → backup          |
+| Watchdog          | Health watchdog                 |
+| Telemetry         | Dashboard de métricas           |
+| Agent Sync        | Sync .agent ↔ 01_Core           |
+| System Mapper     | Genera 7 manifests JARVIS       |
+| SOTA HUB          | State of the Art upgrades       |
+| SOTA Modernizer   | CoT injection en skills         |
+| Doc Sync          | Sincronización de documentos    |
+| + 11 auxiliares   | Legacy, Frontmatter, Paths, etc.|
 
 ---
 
@@ -209,39 +212,37 @@ Think_Different/                    # RAÍZ
 
 > Fuente: `20_System_Mapper_Hub.py --scan` ejecutado en vivo el 2026-06-27T13:19:17
 
-| Métrica | Valor verificado | Volatilidad |
-|---------|-----------------|-------------|
-| Skills (SKILL.md) | 396 (15 áreas) | [FIXED] |
-| Reglas (.mdc) | 14 | [FIXED] |
-| Hooks (.py + .ps1) | 10 (6 fases) | [FIXED] |
-| Workflows (.md) | 29 (7 categorías) | [FIXED] |
-| Agentes (source) | 63 | [FIXED] |
-| Agentes (backup) | 72 (drift: 9) | [VERIFIED] |
-| HUBs funcionales | 42 (33 .py + 9 subdirs) | [FIXED] |
-| Scripts totales | 166 (33 raiz + 133 subdirs) | [FIXED] |
-| MCP Claude (root) | 11 | [FIXED] |
-| MCP OpenCode | 45 | [VERIFIED] |
-| Integraciones | 2 (Fireflies, Granola) | [VERIFIED] |
+| Métrica               | Valor verificado               | Volatilidad  |
+|-----------------------|--------------------------------|--------------|
+| Skills (SKILL.md)     | 396 (15 áreas)                 | [FIXED]      |
+| Reglas (.mdc)         | 14                             | [FIXED]      |
+| Hooks (.py + .ps1)    | 10 (6 fases)                   | [FIXED]      |
+| Workflows (.md)       | 29 (7 categorías)              | [FIXED]      |
+| Agentes (source)      | 63                             | [FIXED]      |
+| Agentes (backup)      | 72 (drift: 9)                  | [VERIFIED]   |
+| HUBs funcionales      | 42 (33 .py + 9 subdirs)        | [FIXED]      |
+| Scripts totales       | 166 (33 raiz + 133 subdirs)    | [FIXED]      |
+| MCP Claude (root)     | 11                             | [FIXED]      |
+| MCP OpenCode          | 45                             | [VERIFIED]   |
+| Integraciones         | 2 (Fireflies, Granola)         | [VERIFIED]   |
 
-> **Nota sobre agentes (63 source):** Conteo de archivos .md de definición de agentes (excluye README.md, LEEME.md, SKILL.md, registry.md, AGENTS.md). Categorías: Root 25, Dream Team 6, Specialists 23, Growth 5, OS Conductor 1, ATL Gen 3, Agent Teams Lite 0. Drift 9 vs backup. Verificado 2026-06-27 por System Mapper.
+> **Nota sobre agentes:** Conteo de archivos .md de definición de agentes (excluye README.md, LEEME.md, SKILL.md, registry.md, AGENTS.md). Categorías: Root 25, Dream Team 6, Specialists 23, Growth 5, OS Conductor 1, ATL Gen 3, ATL 0.
 
 ---
 
 ## 📋 COMANDOS PRINCIPALES
 
-| Comando | Descripción |
-|---------|-------------|
-| `gr` | System Guardian — dry-run |
-| `gr --apply` | Aplicar fixes automáticos |
-| `/sdd-*`                         | SDD Workflow (init→archive) |
-| `/ce:*`                          | Compound Engineering |
-| `/claude-seo-ai:*`               | SEO + AI-search audit & fix |
-| `Process my backlog` | Backlog processing (4 workflows) |
-| `What should I work on today?` | Morning standup |
-| `Write a blog post` | Content generation |
-| `Weekly review` | Weekly reflection |
-
----
+| Comando                        | Descripción                       |
+|--------------------------------|-----------------------------------|
+| `gr`                           | System Guardian — dry-run         |
+| `gr --apply`                   | Aplicar fixes automáticos         |
+| `/sdd-*`                       | SDD Workflow (init→archive)       |
+| `/ce:*`                        | Compound Engineering              |
+| `/claude-seo-ai:*`             | SEO + AI-search audit & fix       |
+| `Process my backlog`           | Backlog processing (4 workflows)  |
+| `What should I work on today?` | Morning standup                   |
+| `Write a blog post`            | Content generation                |
+| `Weekly review`                | Weekly reflection                 |
 
 ---
 
@@ -258,7 +259,7 @@ Think_Different/                    # RAÍZ
 ├── agents/             # Templates de agentes por rol (3: Admin, Finance, HR)
 ├── context/            # Contexto organizacional compartido (stub)
 ├── metrics/            # Dashboard de estado del Capital Token
-└── capital-token-bridge.py  # MCP Bridge v0.1 (servidor JSON + modo interactivo + sync Engram)
+└── capital-token-bridge.py  # MCP Bridge v0.1 (servidor JSON + sync Engram)
 ```
 
 **Principios:** LLM-agnóstico (markdown+YAML), donde se trabaja (Slack/Notion/WhatsApp), compound learning, human+token.
@@ -277,13 +278,15 @@ Runner: run_scheduled.bat → cron_trigger.py --once --apply (LIVE)
 Última ejecución: 2026-06-27 01:05 ✅ (47 issues detectados)
 ```
 
-| Fixer | Categoría | Qué hace |
-|-------|-----------|----------|
-| `_create_missing_dir` | structure | Crea directorios faltantes |
-| `_fix_version_mismatch` | docs | Unifica versiones entre docs |
-| `_fix_docstring` | docs | Actualiza fechas/versiones viejas |
-| `_fix_naming_convention` | code | Renombra a NN_Descripcion.ext |
-| `_fix_duplicate_scripts` | structure | Archiva scripts duplicados |
-| `_fix_requirements_txt` | deps | Estandariza constraints |
+| Fixer                      | Categoría | Qué hace                            |
+|----------------------------|-----------|-------------------------------------|
+| `_create_missing_dir`      | structure | Crea directorios faltantes          |
+| `_fix_version_mismatch`    | docs      | Unifica versiones entre docs        |
+| `_fix_docstring`           | docs      | Actualiza fechas/versiones viejas   |
+| `_fix_naming_convention`   | code      | Renombra a NN_Descripcion.ext       |
+| `_fix_duplicate_scripts`   | structure | Archiva scripts duplicados          |
+| `_fix_requirements_txt`    | deps      | Estandariza constraints             |
+
+---
 
 *Structure v5.0 — 2026-06-27 — Think Different PersonalOS (SOTA) — Ground Truth: System Mapper scan*

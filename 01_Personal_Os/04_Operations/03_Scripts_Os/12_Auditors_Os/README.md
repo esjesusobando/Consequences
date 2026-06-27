@@ -17,13 +17,13 @@ Utilities para auditors del PersonalOS v4.9 Consequences:
 
 ## 📦 Scripts (5 en `scripts/`)
 
-| #   | Script                      | Propósito                                          |
-|----|----------------------------|---------------------------------------------------|
-| 00  | `00_Context_Usage_Bar.py`   | Barra de uso de contexto para OpenCode             |
-| 01  | `01_Beautify_Tables.py`     | Embellecedor de tablas markdown                    |
-| 02  | `02_Beauty_Doc.py`          | Embellecedor de documentos markdown                |
-| 03  | `03_SOTA_Integrity_Check.py`| Validación de integridad SOTA                      |
-| 04  | `04_Carousel_Engine.py`     | Motor de carruseles estratégicos                   |
+| #  | Script                       | Propósito                              |
+| --- | ---------------------------- | -------------------------------------- |
+| 00 | `00_Context_Usage_Bar.py`    | Barra de uso de contexto para OpenCode |
+| 01 | `01_Beautify_Tables.py`      | Embellecedor de tablas markdown        |
+| 02 | `02_Beauty_Doc.py`           | Embellecedor de documentos markdown    |
+| 03 | `03_SOTA_Integrity_Check.py` | Validación de integridad SOTA          |
+| 04 | `04_Carousel_Engine.py`      | Motor de carruseles estratégicos       |
 
 ---
 
@@ -60,17 +60,17 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/12_Auditors_Os/scripts/04_Caro
 
 El script `03_SOTA_Integrity_Check.py` valida:
 
-| Check                          | Descripción                                      |
-|-------------------------------|-------------------------------------------------|
-| submodules                     | Git submodules verificados                       |
-| skills                         | 12+ áreas funcionales con SKILL.md               |
-| mcps                           | 7+ MCPs activos configurados                     |
-| agents                         | Agentes en .agent/ y core/                       |
-| hooks                          | Hooks instalados                                 |
-| hubs                           | 30+ HUBs activos                                 |
-| rules                          | 13+ reglas consolidadas                          |
-| methodologies                  | Metodologías integradas                          |
-| core_structure                 | Estructura v4.9 completa                         |
+| Check          | Descripción                        |
+| -------------- | ---------------------------------- |
+| submodules     | Git submodules verificados         |
+| skills         | 12+ áreas funcionales con SKILL.md |
+| mcps           | 7+ MCPs activos configurados       |
+| agents         | Agentes en .agent/ y core/         |
+| hooks          | Hooks instalados                   |
+| hubs           | 30+ HUBs activos                   |
+| rules          | 13+ reglas consolidadas            |
+| methodologies  | Metodologías integradas            |
+| core_structure | Estructura v4.9 completa           |
 
 **Uso:**
 ```bash

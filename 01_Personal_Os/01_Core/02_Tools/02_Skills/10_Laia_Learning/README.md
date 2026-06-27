@@ -8,9 +8,9 @@
 
 ## Navegacion Rapida
 
-| #  | Directorio | Skill        | Descripcion                              |
-|---|-----------|-------------|-----------------------------------------|
-| 01 | `SKILL.md` | Laia Learning| Sistema de aprendizaje asistido para Laia|
+| #  | Directorio | Skill         | Descripcion                               |
+| --- | ---------- | ------------- | ----------------------------------------- |
+| 01 | `SKILL.md` | Laia Learning | Sistema de aprendizaje asistido para Laia |
 
 ---
 
