@@ -115,11 +115,28 @@ def generate_registry(external_skills: list, local_skills: list) -> str:
     
     # Deduplicate by path (keep first occurrence)
     seen_paths = set()
+    seen_names = set()
     unique_skills = []
+    duplicates_by_path = 0
+    duplicates_by_name = 0
+    
     for skill in all_skills:
-        if skill["path"] not in seen_paths:
-            seen_paths.add(skill["path"])
-            unique_skills.append(skill)
+        path = skill["path"]
+        name = skill["name"].lower().strip()
+        
+        # Skip if we've already seen this path
+        if path in seen_paths:
+            duplicates_by_path += 1
+            continue
+        seen_paths.add(path)
+        
+        # Skip if we've already seen this name (case-insensitive)
+        if name in seen_names:
+            duplicates_by_name += 1
+            continue
+        seen_names.add(name)
+        
+        unique_skills.append(skill)
     
     unique_skills.sort(key=lambda x: x["name"].lower())
     
@@ -150,10 +167,10 @@ def generate_registry(external_skills: list, local_skills: list) -> str:
         lines.append(f"| `{skill['name']}` | {skill['description']} | {skill['scope']} | `{skill['path']}` |")
     
     lines.append("")
-    lines.append(f"**Total: {len(unique_skills)} skills** ({len(external_skills)} external + {len(local_skills)} local, deduplicated)")
+    lines.append(f"**Total: {len(unique_skills)} skills** ({len(external_skills)} external + {len(local_skills)} local, {duplicates_by_path + duplicates_by_name} duplicates removed)")
     lines.append("")
     
-    return "\n".join(lines)
+    return "\n".join(lines), len(unique_skills), duplicates_by_path + duplicates_by_name
 
 def main():
     print("Scanning external skills from existing registry...")
@@ -165,12 +182,12 @@ def main():
     print(f"  Found {len(local_skills)} local skills")
     
     print("Generating unified registry...")
-    registry_content = generate_registry(external_skills, local_skills)
+    registry_content, unique_count, dup_count = generate_registry(external_skills, local_skills)
     
     print(f"Writing to {REGISTRY_FILE}...")
     REGISTRY_FILE.write_text(registry_content, encoding="utf-8")
     
-    print(f"[OK] Done! Total: {len(external_skills) + len(local_skills)} skills")
+    print(f"[OK] Done! Total: {unique_count} unique skills ({dup_count} duplicates removed)")
 
 if __name__ == "__main__":
     main()
