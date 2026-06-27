@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — fecha desconocida
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # 📓 02_NP_Skill_Engineering_and_Taste_Standards
 
 **Estatus**: DOCUMENTO MAESTRO (Compactación v6.1)  

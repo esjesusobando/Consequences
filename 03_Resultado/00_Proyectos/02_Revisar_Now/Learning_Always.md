@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — fecha desconocida
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # 🧠 LearningAlways Methodology [ARCHIVED]
 
 > ⚠️ **DOCUMENTO ARCHIVADO (v1.1):** Este doc fue reemplazado por el workflow oficial en `01_Personal_Os/01_Core/00_Workflows_Os/00_Learning_Always/00_Learning_Always.md`. La estructura de carpetas vigente es `03_Resultado/10_Contenido_Learning/XX_LA_[Nombre]/`.

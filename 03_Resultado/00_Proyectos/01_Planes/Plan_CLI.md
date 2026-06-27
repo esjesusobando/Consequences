@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — fecha desconocida
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # Plan de Saneamiento: Claude Code (Local & Global)
 
 Este plan detalla las acciones necesarias para corregir los errores de Claude Code detectados durante la auditoría, tanto en el repositorio local `Think_Different` como en la configuración global del usuario. El objetivo es restaurar el estado "Pure Green" y eliminar los bloqueos en la CLI y el startup.

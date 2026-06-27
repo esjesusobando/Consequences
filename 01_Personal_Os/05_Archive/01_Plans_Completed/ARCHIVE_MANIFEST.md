@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — fecha desconocida
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # 📦 ARCHIVE MANIFEST — Fusión de Skills 2026-05-29
 
 > **De 385 skills → 20 mega-skills**

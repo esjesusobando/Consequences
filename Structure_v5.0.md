@@ -38,7 +38,7 @@ Think_Different/                    # RAÍZ
 │   ├── 00_Workflows_Os/          # 29 workflows (7 categorías)
 │   ├── 01_Rules/                 # 14 reglas .mdc [FIXED]
 │   └── 02_Tools/                 # Herramientas del OS
-│       ├── 01_Agents/            # ~58 agentes (7 categorías) [MAY DRIFT]
+│       ├── 01_Agents/            # 71 agentes (7 categorías)
 │       ├── 02_Skills/            # 396 skills (15 áreas) [FIXED]
 │       ├── 03_Mcp/               # Backup MCP configs (4 JSON)
 │       ├── 04_Integrations/      # Fireflies, Granola
@@ -82,9 +82,9 @@ Think_Different/                    # RAÍZ
 │   ├── 06_SOTA_Features/         # Features estado-del-arte
 │   └── 07_Reports/               # Reportes generados
 └── 05_Archive/                   # Backups, snapshots, históricos
-    ├── 01_Plans_Completed/       # Planes, docs, session summaries (36 archivos) [MAY DRIFT]
+    ├── 01_Plans_Completed/       # Planes, docs, session summaries (36 archivos)
     ├── 02_Skills_Legacy/         # Skills legacy (2,249 archivos) [FIXED]
-    └── 03_Backups_Refs/          # Backups, repos, audits (11,582 archivos) [MAY DRIFT]
+    └── 03_Backups_Refs/          # Backups, repos, audits (11,582 archivos)
 ```
 
 ---
@@ -95,7 +95,7 @@ Think_Different/                    # RAÍZ
 02_Playground/
 ├── Graphify_Out/                  # Knowledge graph (god nodes, communities)
 ├── 00_Momentum/                   # Momentum experiments
-├── 00_Testing_Youtube/            # YouTube testing [MAY DRIFT]
+├── 00_Testing_Youtube/            # YouTube testing
 ├── 01_Branders_Skills/            # Branding skills
 ├── 02_Workflow_N8N/               # N8N workflows
 ├── 03_Reports/                    # Test reports
@@ -215,10 +215,10 @@ Think_Different/                    # RAÍZ
 | Scripts totales | 163 | [VERIFIED] |
 | MCP root (.mcp.json) | 11 | [FIXED] |
 | MCP backup (03_Mcp/) | 4 | [FIXED] |
-| Archive total files | 15,529 | [MAY DRIFT] |
-| Plans_Completed | 36 | [MAY DRIFT] |
+| Archive total files | 15,529 | [VERIFIED] |
+| Plans_Completed | 36 | [VERIFIED] |
 | Skills_Legacy | 2,249 | [FIXED] |
-| Backups_Refs | 11,582 | [MAY DRIFT] |
+| Backups_Refs | 11,582 | [VERIFIED] |
 
 > **Nota sobre agentes (71):** Conteo de archivos .md de definición de agentes en `01_Personal_Os/01_Core/02_Tools/01_Agents/` y subdirectorios. El conteo incluye todas las categorías (Root 24, Dream Team 6, Specialists 23, Growth 5, OS Conductor 3, ATL Gen 9, Agent Teams Lite 1). Verificado 2026-06-27.
 

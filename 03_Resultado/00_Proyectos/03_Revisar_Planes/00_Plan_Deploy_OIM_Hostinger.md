@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — fecha desconocida
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # Plan de Deploy — OIM Website → Hostinger
 **Fecha:** 2026-04-24
 **Proyecto:** `03_Resultado/OIM_Website_Backup`

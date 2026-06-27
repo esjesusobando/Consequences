@@ -5,7 +5,7 @@
 [![Status](https://img.shields.io/badge/Status-PRODUCTION%20READY-00FF00)]()
 [![OS](https://img.shields.io/badge/Think%20Different-OS--4.9.1-7B68EE)]()
 
-> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 396 skills SOTA, ~58 agentes, metodologías integradas y automatización completa.
+> 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 396 skills SOTA, 71 agentes, metodologías integradas y automatización completa.
 
 ---
 
@@ -21,9 +21,9 @@
 | **Skills** | **396** (15 áreas funcionales, +4 desde v4.9.0) |
 | **Rules** | **14** (.mdc) [FIXED] |
 | **MCPs** | **11** root + **4** backup |
-| **HUBs** | **22** HUBs + **~266** scripts [MAY DRIFT] |
-| **Agentes** | **~58** (~24 root, ~6 Dream Team, ~23 Specialists, ~5 Growth, ~13 otras categorías) |
-| **Workflows** | **29** (7 categorías) [MAY DRIFT] |
+| **HUBs** | **30** HUBs + **163** scripts |
+| **Agentes** | **71** (24 root, 6 Dream Team, 23 Specialists, 5 Growth, 13 otras categorías) |
+| **Workflows** | **29** (7 categorías) |
 | **Archive** | **3** categories (15,529 files) |
 
 ---
@@ -35,10 +35,10 @@ Think_Different/
 ├── 00_Winter_is_Coming/           ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/                ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                   ✅ Motor del OS
-│   │   ├── 00_Workflows_Os/       ✅ 29 workflows (7 categorías) [MAY DRIFT]
+│   │   ├── 00_Workflows_Os/       ✅ 29 workflows (7 categorías)
 │   │   ├── 01_Rules/              ✅ 14 reglas .mdc
 │   │   └── 02_Tools/              ✅ Herramientas
-│   │       ├── 01_Agents/         ✅ ~58 agentes [MAY DRIFT]
+│   │       ├── 01_Agents/         ✅ 71 agentes
 │   │       ├── 02_Skills/         ✅ 396 skills (15 áreas)
 │   │       ├── 03_Mcp/            ✅ Backup MCP configs (4 JSON)
 │   │       ├── 05_Hooks/          ✅ 11 hooks (6 fases)
@@ -50,7 +50,7 @@ Think_Different/
 │   │   ├── 00_Context_LLM/        ✅ Memoria LLM
 │   │   ├── 01_Auto_Improvement/   ✅ Motor auto-mejora (cada 8h)
 │   │   ├── 02_Agent_Teams_Lite/   ✅ SDD + JARVIS manifests
-│   │   └── 03_Scripts_Os/         ✅ 22 HUBs — ~266 scripts [MAY DRIFT]
+│   │   └── 03_Scripts_Os/         ✅ 30 HUBs — 163 scripts
 │   └── 05_Archive/                ✅ 3 categories (15,529 files)
 ├── 02_Playground/                  ✅ Zona de pruebas
 │   └── Graphify_Out/              ✅ Knowledge graph
@@ -82,17 +82,17 @@ Think_Different/
 
 ---
 
-## 🤖 Agentes (~58 total) [MAY DRIFT]
+## 🤖 Agentes (71 total)
 
 | Categoría | Cantidad | Ubicación |
 |-----------|----------|-----------|
-| Root | ~24 | `01_Agents/` |
-| Dream Team | ~6 | `01_Dream_Team/` |
-| Specialists Compound | ~23 | `02_Specialists_Compound/` |
-| Growth | ~5 | `03_Growth/` |
-| OS Conductor | ~3 | `00_OS_Conductor/` |
-| ATL Gen | ~9 | `07_Agent_Teams_Lite_Gen/` |
-| Agent Teams Lite | ~1 | `00_Agent_Teams_Lite/skills/sdd-apply/` |
+| Root | 24 | `01_Agents/` |
+| Dream Team | 6 | `01_Dream_Team/` |
+| Specialists Compound | 23 | `02_Specialists_Compound/` |
+| Growth | 5 | `03_Growth/` |
+| OS Conductor | 3 | `00_OS_Conductor/` |
+| ATL Gen | 9 | `07_Agent_Teams_Lite_Gen/` |
+| Agent Teams Lite | 1 | `00_Agent_Teams_Lite/skills/sdd-apply/` |
 
 ---
 

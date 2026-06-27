@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — 2026-06-03
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # Revisión y Actualización Integral del Sistema (SOTA Upgrade)
 
 Se solicitó una revisión completa del proyecto para identificar errores, actualizar rutas, dependencias y referencias, así como llevar los skills y scripts al estado del arte (SOTA) sin eliminar información histórica. Posteriormente, se documentará el proceso y se presentará un cuadro comparativo del antes y después.

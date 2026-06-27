@@ -237,10 +237,10 @@ Think_Different/                           # RAÍZ
 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 ├── 01_OS_Inventory.json      # Inventario OS (updated 2026-05-22)
 ├── 02_MCP_Registry.yaml     # 11 root + 4 backup MCPs
-├── 03_Agent_Catalog.yaml    # ~58 agentes source (referencia al manifest)
+├── 03_Agent_Catalog.yaml    # 71 agentes source (referencia al manifest)
 ├── 04_Skill_Index.json      # 396 skills en 15 áreas (updated 2026-06-27)
-├── 05_HUB_Catalog.yaml     # HUBs: 30 — scripts: 163 totales (133 en subdirectorios)
-├── 06_Workflow_Graph.yaml   # 29 workflows [MAY DRIFT]
+├── 05_HUB_Catalog.yaml     # HUBs: 30 — scripts: 163 totales
+├── 06_Workflow_Graph.yaml   # 29 workflows
 └── 07_Hook_Registry.yaml    # 11 hooks (6 categorías) [FIXED]
 ```
 
@@ -284,16 +284,16 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 
 | Categoria                         | Estado                     | Notas                                                                    |
 |----------------------------------|---------------------------|-------------------------------------------------------------------------|
-| **Overall Health**                | **✅ PURE GREEN**           | v4.9 — 2026-06-01 — Docs audit DONE                                      |
+| **Overall Health**                | **✅ PURE GREEN**           | v4.9.1 — 2026-06-27 — Documentation Ground Truth Sync                     |
 | Estructura (4 raíz)               | ✅ PASS                     | Winter / Personal_Os / Playground / Resultado                            |
-| HUBs (22 — scripts: ~266) [MAY DRIFT]  | ✅ PASS                     | 22 HUBs (todos con interfaz) — ~266 scripts totales                              |
+| HUBs (30 — scripts: 163)           | ✅ PASS                     | 30 HUBs (todos con interfaz) — 163 scripts totales                           |
 | Skills (396, 15 áreas)            | ✅ VERIFIED                 | 15 áreas funcionales — +4 desde última auditoría                          |
-| Agent Matrix                      | ✅ SYNCED                   | ~58 agentes (~24 root + ~6 Dream + ~23 Spec + ~5 Growth + ~13 otras categorías) |
+| Agent Matrix                      | ✅ SYNCED                   | 71 agentes (24 root + 6 Dream + 23 Spec + 5 Growth + 13 otras categorías) |
 | Manifest (7 archivos)             | ✅ VALIDATED                | 00_Manifest/ en 02_Agent_Teams_Lite/                                     |
-| MCPs (11 Claude / 45 OpenCode)    | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                                       |
+| MCPs (11 root + 4 backup)         | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                                       |
 | Rules (14 .mdc)                   | ✅ DEFINED                  | 01_Rules/ (00-13 + 13_HTML_Visualization)                                |
-| Workflows (28)                    | ✅ ACTIVE                   | 7 categorías en 00_Workflows_Os (1+10+8+2+2+4+1)                        |
-| Hooks (10, 6 fases)               | ✅ ACTIVE                   | 05_Hooks/                                                                |
+| Workflows (29)                    | ✅ ACTIVE                   | 7 categorías en 00_Workflows_Os (1+10+8+2+2+4+1)                        |
+| Hooks (11, 6 fases) [FIXED]       | ✅ ACTIVE                   | 05_Hooks/                                                                |
 | Agent Teams Protocol              | ✅ ACTIVE                   | Super Campeones                                                          |
 
 ---

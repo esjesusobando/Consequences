@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — fecha desconocida
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # OIM - Office Installations Mayen
 ## Consolidated Website Content & Structure
 
@@ -283,4 +289,3 @@ Commercial Projects
 
 
 puedes colocar Atlanta y alrededores porque trabajamos en Atlanta pero también en otras ciudades y fuera de estado, añade a los servicios, conexiones de computadoras o busca el nombre correcto de conectar teclados y accesorios, pantallas, monitores, etc.
-

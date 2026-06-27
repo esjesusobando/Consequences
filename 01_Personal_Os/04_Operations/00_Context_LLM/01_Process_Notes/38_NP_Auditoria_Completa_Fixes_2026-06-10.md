@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — 2026-06-10
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # 38_NP_Auditoria_Completa_Fixes_2026-06-10.md
 
 **Fecha:** 2026-06-10

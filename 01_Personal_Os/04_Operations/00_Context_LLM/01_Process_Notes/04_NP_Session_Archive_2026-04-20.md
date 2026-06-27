@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — 2026-04-20
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # 📋 NP — Sesión de Sesión Completa: 2026-04-20
 
 **Fecha**: 2026-04-20  

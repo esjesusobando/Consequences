@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — fecha desconocida
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # 🧪 PLAN DE VALIDACIÓN TOTAL — PersonalOS v2.1 → v2.2 Integrated
 
 **Generado:** 2026-04-25 | **Modelo:** Opus 4.7

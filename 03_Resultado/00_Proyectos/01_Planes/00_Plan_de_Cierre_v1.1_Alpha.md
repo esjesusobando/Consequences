@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — fecha desconocida
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # 📋 PLAN DE CIERRE Y VALIDACIÓN — v1.1 Alpha (Pure Green)
 
 > [!IMPORTANT]

@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — 2026-06-25
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # 📝 Nota de Proceso #39 — Sesión Completa: Documentation + Audit + Backlog Processor
 
 **Fecha:** 2026-06-25

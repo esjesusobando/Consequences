@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — 2026-06-01
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # Alineación Global de Documentación a v4.9 Consequences
 
 El objetivo de este plan es estandarizar la versión, fecha y metadatos de todos los archivos maestros de documentación del OS. Tras múltiples rondas de auditoría, han quedado referencias inconsistentes a versiones previas (v4.0, v4.1, v4.5, v4.7, v4.8). 

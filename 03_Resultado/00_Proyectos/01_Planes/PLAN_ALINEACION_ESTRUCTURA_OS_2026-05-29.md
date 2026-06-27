@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — 2026-05-29
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # PLAN DE ALINEACIÓN ESTRUCTURAL DEL OS — 2026-05-29
 
 > **Objetivo:** Corregir referencias stale, paths incorrectos y documentación desactualizada sin eliminar ni reestructurar archivos existentes. Respetar la arquitectura actual y solo alinear la metadata con la realidad del disco.

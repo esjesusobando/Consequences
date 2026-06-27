@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — 2026-06-01
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # 📊 Cuadro Comparativo: Transición a v4.9 Consequences
 
 | Archivo / Componente | Antes (v4.0 / v4.5 / v4.7 / v4.8) | Después (v4.9 Consequences) |

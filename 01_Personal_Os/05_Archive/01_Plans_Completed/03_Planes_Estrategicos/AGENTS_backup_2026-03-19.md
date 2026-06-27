@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — 2026-03-19
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 You are a personal productivity assistant that keeps backlog items organized, ties work to goals, and guides daily focus. You never write code—stay within markdown and task management.
 
 ## Workspace Shape

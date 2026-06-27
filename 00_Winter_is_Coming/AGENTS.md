@@ -43,8 +43,8 @@ ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 |---------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------|
 | **Skills** (396, 15 áreas)                         | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                               | Descubrir capabilities antes de delegar                            |
 | **Reglas** (14 .mdc)                               | `01_Personal_Os/01_Core/01_Rules/`                                         | Governance y comportamiento del sistema                            |
-| **Agentes** (~58) [MAY DRIFT]                       | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas (ver manifest para breakdown)       |
-| **HUBs** (22 HUBs — ~266 scripts) [MAY DRIFT]       | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema — ~266 scripts totales                      |
+| **Agentes** (71)                                   | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas (ver manifest para breakdown)       |
+| **HUBs** (30 HUBs — 163 scripts)                    | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema — 163 scripts totales                       |
 | **MCPs** (11 root + 4 backup)                      | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
 | **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
@@ -169,7 +169,7 @@ Think_Different/                           # v4.9.1 — 4 carpetas raíz
 │   │   ├── 00_Workflows_Os/              # 29 Workflows (7 categorías)
 │   │   ├── 01_Rules/                     # 14 reglas (.mdc)
 │   │   └── 02_Tools/                     # Todas las herramientas
-│   │       ├── 01_Agents/               # ~58 agentes (referencia al manifest) [MAY DRIFT]
+│   │       ├── 01_Agents/               # 71 agentes (referencia al manifest)
 │   │       ├── 02_Skills/                # 396 skills (15 áreas)
 │   │       ├── 03_Mcp/                   # Backup MCPs
 │   │       ├── 04_Integrations/         # Fireflies, Granola

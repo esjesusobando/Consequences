@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — 2026-04-25
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # 📋 NP_Session_Archive_2026-04-25 — SOTA Hardened + Deps Update + TubeMaster
 
 **Fecha:** 2026-04-25 03:00 - 03:30  

@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — 2026-05-22
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # NP-10: Plan Resolution Session — 2026-05-22
 
 ## Resumen
@@ -91,4 +97,3 @@ d9a15abb3 chore(.opencode): upgrade plugins
 - Watchdog: ALL SYSTEMS GREEN
 - Skills audit: Renumbered 24 skills, 1 error (HUB_SOTA.py naming)
 - Estructura audit: Skills folder structure OK
-

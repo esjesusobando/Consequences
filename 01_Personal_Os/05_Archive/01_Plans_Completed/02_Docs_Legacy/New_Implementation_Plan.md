@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — fecha desconocida
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # Plan de Acción — Auditoría Integral v4.7 y Actualización SOTA
 
 Proporcionamos a continuación el plan exhaustivo basado en tu solicitud de revisar el proyecto, actualizar rutas, dependencias, estado del arte, y resolver posibles bugs sin eliminar información útil. Hemos tomado en cuenta la planificación previa detectada en el repositorio (`00_Plan_Auditoria_2026-05-24.md`).

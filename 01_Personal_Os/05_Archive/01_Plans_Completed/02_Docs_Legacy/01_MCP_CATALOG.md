@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — fecha desconocida
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # 🔌 MCP CATALOG — Think Different PersonalOS v3.1
 
 > **CATÁLOGO COMPLETO** de los 38 MCP servers activos en Claude Code

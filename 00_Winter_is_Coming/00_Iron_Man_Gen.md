@@ -50,7 +50,7 @@ Think_Different/
 ├── 00_Winter_is_Coming/          # ESTRATÉGICO: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               # SISTEMA OPERATIVO (FUENTE DE VERDAD)
 │   ├── 01_Core/                  # MOTOR DEL OS
-│   │   ├── 00_Workflows_Os/     # 29 workflows (7 categorías) [MAY DRIFT]
+│   │   ├── 00_Workflows_Os/     # 29 workflows (7 categorías)
 │   │   ├── 01_Rules/            # 14 reglas .mdc (00-13)
 │   │   └── 02_Tools/
 │   │       ├── 01_Agents/       # 63 agentes (26 Root + 6 Dream + 23 Specialists + 5 Growth + 3 other)
@@ -68,7 +68,7 @@ Think_Different/
 │       ├── 00_Context_LLM/      # Memoria LLM (Context_Memory, Process_Notes)
 │       ├── 01_Auto_Improvement/ # Motor de auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/ # SDD + 7 Manifests JARVIS
-│       ├── 03_Scripts_Os/       # 22 HUBs + ~266 scripts total [MAY DRIFT]
+│       ├── 03_Scripts_Os/       # 30 HUBs + 163 scripts total
 │       ├── 04_Installer/        # Scripts de instalación
 │       ├── 05_Projects/         # Proyectos activos
 │       ├── 06_SOTA_Features/    # Features SOTA
@@ -212,4 +212,4 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 ---
 
 *Think Different PersonalOS v4.9.1 — Marketing SOTA + Archive Consolidation*
-*Actualizado: 2026-06-27 | 396 skills | ~58 agents | 11 MCPs | 22 HUBs | 14 rules*
+*Actualizado: 2026-06-27 | 396 skills | 71 agents | 11 MCPs | 30 HUBs | 14 rules*

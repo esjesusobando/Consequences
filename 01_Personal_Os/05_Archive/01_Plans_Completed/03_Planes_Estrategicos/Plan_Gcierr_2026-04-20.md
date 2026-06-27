@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — 2026-04-20
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # Plan de Auditoría SOTA y Mejora Integral - PersonalOS v1.0
 
 Este plan describe las acciones finales para certificar el estado **Pure Green SOTA** del sistema, resolviendo las omisiones del agente anterior y elevando la calidad del código según los estándares de **Every Compound Engineering**.

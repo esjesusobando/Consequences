@@ -1,3 +1,9 @@
+> ⚠️ DOCUMENTO HISTÓRICO — 2026-04-27
+> Este documento es un registro histórico del sistema. Los conteos y métricas pueden estar desactualizados.
+> Para el estado actual del sistema, ver Structure_v5.0.md o README.md.
+
+---
+
 # Plan OS Bug Fix — 2026-04-27
 
 **Objetivo:** Solventer todas las desviaciones y bugs pendientes del PersonalOS v3.1 Consequences.
