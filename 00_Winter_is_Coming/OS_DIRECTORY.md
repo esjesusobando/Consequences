@@ -36,7 +36,7 @@
 ## 🆕 v4.9.1 Changes
 
 1. **Skills auditadas**: 396 SKILL.md activas en 15 áreas funcionales
-2. **Agentes expandidos**: ~58 agentes total (~24 Root + ~6 Dream + ~23 Specialists + ~5 Growth + ~13 otras categorías) [MAY DRIFT]
+2. **Agentes expandidos**: 71 agentes total (24 Root + 6 Dream + 23 Specialists + 5 Growth + 13 otras categorías)
 3. **Workflows**: 28 activos en 7 categorías
 4. **Scripts**: 163 .py scripts totales (30 raíz + 133 subdirectorios)
 5. **HUBs**: 30 total (numerados + HUB_SOTA + auxiliares)
@@ -86,10 +86,10 @@ Think_Different/
 ├── 00_Winter_is_Coming/          ✅ Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD)
-│   │   ├── 00_Workflows_Os/     ✅ 29 workflows (7 categorías) [MAY DRIFT]
+│   │   ├── 00_Workflows_Os/     ✅ 29 workflows (7 categorías)
 │   │   ├── 01_Rules/           ✅ 14 reglas .mdc
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/         ✅ ~58 agentes [MAY DRIFT]
+│   │       ├── 01_Agents/         ✅ 71 agentes
 │   │       ├── 02_Skills/         ✅ 396 skills (15 áreas)
 │   │       ├── 03_Mcp/           ✅ Backup MCP configs
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
