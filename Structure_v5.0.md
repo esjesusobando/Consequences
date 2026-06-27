@@ -35,7 +35,7 @@ Think_Different/                    # RAÍZ
 ```
 01_Personal_Os/
 ├── 01_Core/                       # MOTOR DEL OS
-│   ├── 00_Workflows_Os/          # 29 workflows (7 categorías) [MAY DRIFT]
+│   ├── 00_Workflows_Os/          # 29 workflows (7 categorías)
 │   ├── 01_Rules/                 # 14 reglas .mdc [FIXED]
 │   └── 02_Tools/                 # Herramientas del OS
 │       ├── 01_Agents/            # 71 agentes (7 categorías)
@@ -76,7 +76,7 @@ Think_Different/                    # RAÍZ
 │   │   ├── recursive_improvement_engine.py  # Orquestador del pipeline
 │   │   └── learnings.json        # 130+ fixes aplicados históricamente
 │   ├── 02_Agent_Teams_Lite/      # SDD registry + 7 manifests JARVIS
-│   ├── 03_Scripts_Os/            # 22 HUBs — ~266 scripts [MAY DRIFT]
+│   ├── 03_Scripts_Os/            # 30 HUBs — 163 scripts
 │   ├── 04_Installer/             # Scripts de instalación
 │   ├── 05_Projects/              # Proyectos activos
 │   ├── 06_SOTA_Features/         # Features estado-del-arte
