@@ -259,4 +259,4 @@ ls 01_Personal_Os/04_Operations/02_Agent_Teams_Lite/00_Manifest/
 
 ---
 
-*Actualizado: 2026-06-27 | PersonalOS v4.9.2 — Capital Token F1 + Auto-Improvement validado | 396 skills | 71 agents | 30 HUBs | 28 workflows | 14 rules*
+*Actualizado: 2026-06-27 | PersonalOS v4.9.1 — Documentation Ground Truth Sync | 396 skills | ~58 agents | 22 HUBs | 29 workflows | 14 rules*

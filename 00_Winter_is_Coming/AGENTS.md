@@ -376,7 +376,7 @@ Configured in `.mcp.json` (raíz del proyecto). **11 servidores root activos** (
 
 ---
 
-## 7. HUB SCRIPTS (22 activos) [MAY DRIFT]
+## 7. HUB SCRIPTS (30 activos)
 
 Centralized HUBs in `01_Personal_Os/04_Operations/03_Scripts_Os/`:
 
