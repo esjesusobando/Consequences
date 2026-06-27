@@ -38,7 +38,7 @@ Think_Different/                    # RAÍZ
 │   ├── 00_Workflows_Os/          # 29 workflows (7 categorías)
 │   ├── 01_Rules/                 # 14 reglas .mdc [FIXED]
 │   └── 02_Tools/                 # Herramientas del OS
-│       ├── 01_Agents/            # 71 agentes (7 categorías)
+│       ├── 01_Agents/            # ~58 agentes (7 categorías) [MAY DRIFT]
 │       ├── 02_Skills/            # 396 skills (15 áreas) [FIXED]
 │       ├── 03_Mcp/               # Backup MCP configs (4 JSON)
 │       ├── 04_Integrations/      # Fireflies, Granola
