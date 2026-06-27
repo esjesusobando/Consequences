@@ -166,10 +166,10 @@ Think_Different/                           # RAÍZ
 ├── 00_Winter_is_Coming/          ✅ MATRIX: Goals, Backlog, AGENTS.md, CHANGELOG
 ├── 01_Personal_Os/               ✅ EL SISTEMA OPERATIVO
 │   ├── 01_Core/                  ✅ Motor del OS (FUENTE DE VERDAD 💾)
-│   │   ├── 00_Workflows_Os/      ✅ 29 workflows (7 categorías) [MAY DRIFT]
+│   │   ├── 00_Workflows_Os/      ✅ 29 workflows (7 categorías)
 │   │   ├── 01_Rules/             ✅ 14 reglas (.mdc) — fuente de verdad
 │   │   └── 02_Tools/             ✅ Todas las herramientas
-│   │       ├── 01_Agents/        ✅ ~58 agentes (7 categorías) [MAY DRIFT]
+│   │       ├── 01_Agents/        ✅ 71 agentes (7 categorías)
 │   │       ├── 02_Skills/        ✅ 396 skills (15 áreas funcionales)
 │   │       ├── 03_Mcp/           ✅ Backup configs MCP
 │   │       ├── 04_Integrations/  ✅ Fireflies, Granola
@@ -205,7 +205,7 @@ Think_Different/                           # RAÍZ
 
 ### 2. AGENTS (71 — 7 categorías funcionales — 2026-06-27)
 
-> ⚠️ Source: ~58 agentes total (~24 root + ~6 Dream Team + ~23 Specialists + ~5 Growth + ~3 OS Conductor + ~9 ATL Gen + ~1 Agent Teams Lite). Ver desglose en Context_Memory.md. Audit 2026-06-27: conteos actualizados a ground truth verificado.
+> ⚠️ Source: 71 agentes total (24 root + 6 Dream Team + 23 Specialists + 5 Growth + 3 OS Conductor + 9 ATL Gen + 1 Agent Teams Lite). Ver desglose en 03_Agent_Catalog.yaml. Audit 2026-06-27: conteos actualizados.
 
 ### 3. SKILLS (396 — 15 áreas funcionales)
 
