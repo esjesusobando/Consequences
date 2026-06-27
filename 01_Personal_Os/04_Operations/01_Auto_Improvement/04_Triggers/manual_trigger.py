@@ -36,6 +36,8 @@ def main():
     parser.add_argument("--report", action="store_true", help="Generar reporte de estado")
     parser.add_argument("--export", action="store_true",
                         help="Exportar resultados a JSON")
+    parser.add_argument("--smoke", action="store_true",
+                        help="Smoke test: mini-ciclo con issues de prueba")
     parser.add_argument("--path", nargs="?", default=".",
                         help="Ruta raiz a escanear (default: proyecto actual)")
     parser.add_argument("--iterations", type=int, default=5,
@@ -52,6 +54,22 @@ def main():
         dry_run=dry_run
     )
     engine.max_iterations = args.iterations
+
+    # Delegate --smoke to the engine's main
+    if args.smoke:
+        print("=" * 60)
+        print("  MODO: SMOKE TEST")
+        print("=" * 60)
+        # Re-import with --smoke flag
+        import subprocess
+        engine_path = Path(__file__).resolve().parent.parent / "01_Engine" / "recursive_improvement_engine.py"
+        cmd = [sys.executable, str(engine_path), "--smoke"]
+        if not dry_run:
+            cmd.append("--live")
+        if args.path:
+            cmd.append(args.path)
+        result = subprocess.run(cmd)
+        return result.returncode
 
     # Ejecutar segun modo
     if args.report:

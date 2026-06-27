@@ -33,13 +33,28 @@ class Learner:
         )
 
     def record_fix(self, issue: Dict, success: bool, method: str = "auto"):
-        """Registra un fix aplicado"""
+        """Registra un fix aplicado (con dedup automático)"""
+        issue_hash = self._hash_issue(issue)
+
+        # Dedup: no registrar si el último registro idéntico tiene < 1 hora
+        recent = self.learnings.get("fixes_history", [])
+        if recent and recent[-1].get("issue_hash") == issue_hash:
+            last_ts = recent[-1].get("timestamp", "")
+            if last_ts:
+                try:
+                    from datetime import timedelta
+                    last_time = datetime.fromisoformat(last_ts)
+                    if datetime.now() - last_time < timedelta(hours=1):
+                        return  # skip: mismo issue registrado recientemente
+                except (ValueError, TypeError):
+                    pass  # si falla parseo, registrar igual
+
         record = {
             "timestamp": datetime.now().isoformat(),
             "issue": issue,
             "success": success,
             "method": method,
-            "issue_hash": self._hash_issue(issue)
+            "issue_hash": issue_hash
         }
 
         self.learnings["fixes_history"].append(record)

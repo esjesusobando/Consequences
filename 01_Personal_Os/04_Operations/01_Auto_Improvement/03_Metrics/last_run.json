@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-06-26T09:05:04.804487",
+  "timestamp": "2026-06-27T01:05:13.559458",
   "dry_run": false,
   "root": "C:\\Users\\sebas\\Desktop\\Think_Different",
   "results": {
     "iterations": 1,
-    "issues_detected": 54,
+    "issues_detected": 47,
     "fixes_applied": 0,
     "fixes_failed": 0,
-    "learnings": 54
+    "learnings": 47
   }
 }

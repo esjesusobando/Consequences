@@ -19,11 +19,14 @@ class Issue:
     suggestion: str = ""
 
 class Detector:
+    # Directorios a excluir del escaneo
     EXCLUDE_DIRS = {
         ".git", ".venv", "venv", "node_modules", "__pycache__",
         "05_Archive", "00_Respaldo PC Sebas", ".pytest_cache",
         "OIM_Website", "OIM_Website_Backup", ".idea", ".vscode",
         "dist", "build", ".next",
+        # Auto-Improvement engine internals — evitar self-scan
+        "01_Engine", "02_Rules", "03_Metrics", "04_Triggers", "06_Utils",
     }
 
     def __init__(self, root_path: str):
@@ -59,6 +62,15 @@ class Detector:
     def scan(self) -> List[Issue]:
         """Ejecuta todas las detecciones"""
         print("[DETECTOR] Iniciando deteccion de issues...")
+
+        # Resetear estado acumulado entre ciclos
+        self.issues = []
+        self.stats = {
+            "files_scanned": 0,
+            "issues_found": 0,
+            "by_severity": {"CRITICAL": 0, "HIGH": 0, "MEDIUM": 0, "LOW": 0},
+            "by_category": {"structure": 0, "docs": 0, "code": 0, "deps": 0}
+        }
 
         self._check_structure()
         self._check_docs_consistency()

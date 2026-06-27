@@ -81,9 +81,13 @@ class RecursiveImprovementEngine:
 
             # 3. Execute
             print("[FASE 3] Ejecutando fixes...")
-            success, failed = self.executor.execute(
-                [a.original_issue for a in prioritized]
-            )
+            # Enriquecer cada issue con auto_fixable desde AnalyzedIssue
+            enriched_issues = []
+            for a in prioritized:
+                issue = dict(a.original_issue)
+                issue["auto_fixable"] = a.auto_fixable
+                enriched_issues.append(issue)
+            success, failed = self.executor.execute(enriched_issues)
             results["fixes_applied"] += success
             results["fixes_failed"] += failed
             print(f"  Aplicados: {success} | Fallidos: {failed}")
@@ -197,6 +201,8 @@ def main():
     parser.add_argument("--learn", action="store_true", help="Solo aprendizaje")
     parser.add_argument("--report", action="store_true", help="Generar reporte")
     parser.add_argument("--export", action="store_true", help="Exportar resultados a JSON")
+    parser.add_argument("--smoke", action="store_true",
+                        help="Smoke test: ejecuta un mini-ciclo con issues de prueba para verificar que el pipeline funciona")
 
     args = parser.parse_args()
 
@@ -205,6 +211,43 @@ def main():
         dry_run=not args.live
     )
     engine.max_iterations = args.iterations
+
+    if args.smoke:
+        print("=" * 60)
+        print("  SMOKE TEST MODE")
+        print("=" * 60)
+        # Usar issues de prueba del executor (auto_fixable=True)
+        from executor import Executor
+        test_executor = Executor(args.path, dry_run=not args.live)
+        test_issues = [
+            {
+                "severity": "HIGH",
+                "category": "structure",
+                "path": str(Path(args.path) / "04_Operations" / "01_Auto_Improvement" / "00_Smoke_Test_Dir"),
+                "description": "Directorio faltante en estructura",
+                "auto_fixable": True
+            },
+            {
+                "severity": "MEDIUM",
+                "category": "structure",
+                "path": "Script duplicado: __init__.py",
+                "description": "Aparece en 2 ubicaciones",
+                "auto_fixable": True
+            },
+        ]
+        success, failed = test_executor.execute(test_issues)
+        print()
+        print(test_executor.report())
+        mode = "LIVE" if args.live else "DRY RUN"
+        print(f"\n[SMOKE] [{mode}] {success} OK, {failed} FAILED")
+        if not args.live:
+            print("[SMOKE] Para aplicar fixes reales, ejecuta con --live")
+        # Limpiar directorio de prueba si se creó
+        smoke_dir = Path(args.path) / "04_Operations" / "01_Auto_Improvement" / "00_Smoke_Test_Dir"
+        if smoke_dir.exists() and args.live:
+            smoke_dir.rmdir()
+            print(f"[SMOKE] Limpiado directorio de prueba: {smoke_dir}")
+        return 0 if failed == 0 else 1
 
     if args.scan:
         result = engine.scan_only()

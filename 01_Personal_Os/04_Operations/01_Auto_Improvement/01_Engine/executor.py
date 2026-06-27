@@ -23,7 +23,16 @@ class Executor:
     def execute(self, prioritized_issues: List[dict]) -> Tuple[int, int]:
         """Ejecuta fixes para issues priorizados"""
         mode = "DRY RUN" if self.dry_run else "LIVE"
-        print(f"[EXEC] [{mode}] Aplicando {sum(1 for i in prioritized_issues if i.get('auto_fixable', False))} fixes...")
+
+        # Debug: mostrar todos los issues y sus flags auto_fixable
+        total = len(prioritized_issues)
+        auto_fixable_count = sum(1 for i in prioritized_issues if i.get('auto_fixable', False))
+        print(f"[EXEC] [{mode}] {total} issues recibidos, {auto_fixable_count} auto-fixable")
+        for i, issue in enumerate(prioritized_issues):
+            af = issue.get('auto_fixable', False)
+            cat = issue.get('category', '?')
+            desc = issue.get('description', '?')[:60]
+            print(f"  [{i}] auto_fixable={af} cat={cat} desc={desc}")
 
         success_count = 0
         fail_count = 0
@@ -45,6 +54,7 @@ class Executor:
                     "error": str(e)
                 })
 
+        print(f"[EXEC] Resultado: {success_count} OK, {fail_count} FAILED")
         return success_count, fail_count
 
     def _apply_fix(self, issue: dict) -> bool:
@@ -53,24 +63,26 @@ class Executor:
         category = issue.get("category", "")
         severity = issue.get("severity", "")
         description = issue.get("description", "").lower()
+        # Combinar path+description porque detector.py pone keywords en cualquiera
+        combined = (path.lower() + " " + description)
 
         # --- STRUCTURE: crear directorios faltantes ---
         if category == "structure":
-            if "directorio requerido" in description or "directorio faltante" in description:
+            if "directorio requerido" in combined or "directorio faltante" in combined:
                 return self._create_missing_dir(issue)
-            if "script duplicado" in description:
+            if "script duplicado" in combined:
                 return self._fix_duplicate_scripts(issue)
 
         # --- DOCS: version mismatches, docstrings obsoletos ---
         if category == "docs":
-            if "version mismatch" in description:
+            if "version mismatch" in combined or "version" in combined and "readme" in combined:
                 return self._fix_version_mismatch(issue)
-            if "docstring" in description or "documentacion" in description:
+            if "docstring" in combined or "documentacion" in combined:
                 return self._fix_docstring(issue)
 
         # --- CODE: naming conventions ---
         if category == "code":
-            if "naming" in description:
+            if "naming" in combined:
                 return self._fix_naming_convention(issue)
 
         # --- DEPS: dependency checks ---
@@ -324,10 +336,12 @@ class Executor:
         """Consolida scripts duplicados (mantiene el más reciente, archiva el resto)"""
         path = issue.get("path", "")
         description = issue.get("description", "")
+        # detector.py pone "Script duplicado:" en path o description — buscar en ambos
+        search_text = path + " " + description
 
-        # Parsear nombre del script del description
+        # Parsear nombre del script
         # "Script duplicado: detector.py" -> detector.py
-        name_match = re.search(r"Script duplicado:\s*(\S+)", description)
+        name_match = re.search(r"Script duplicado:\s*(\S+)", search_text)
         if not name_match:
             return False
 

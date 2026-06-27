@@ -64,11 +64,38 @@ class Analyzer:
         }
         effort_to_fix = effort_mapping.get(severity, "LOW")
 
-        # Es auto-fixable?
-        path = issue.get("path", "")
-        auto_fixable = any(keyword in path.lower() for keyword in [
-            "readme", "version", "path", "naming"
+        # Es auto-fixable? Verifica si executor.py tiene un handler para este issue
+        # Esto debe coincidir con las rutas en executor._apply_fix()
+        # Usar el mismo combined path+description que executor.py porque detector.py
+        # pone keywords (como "Script duplicado:") en el path, no en description
+        category = issue.get("category", "")
+        path = issue.get("path", "").lower()
+        description = issue.get("description", "").lower()
+        combined = path + " " + description
+        auto_fixable = any([
+            # structure → create_dir or duplicate_scripts
+            category == "structure" and (
+                "directorio" in combined or
+                "duplicado" in combined
+            ),
+            # docs → version_mismatch or docstring
+            category == "docs" and (
+                "version" in description or
+                "docstring" in description or
+                "documentacion" in description or
+                "readme" in description
+            ),
+            # code → naming convention
+            category == "code" and "naming" in description,
+            # deps → any deps fix available
+            category == "deps",
         ])
+
+        # ── Safety guards ────────────────────────────────────────────
+        # No auto-fixear __init__.py duplicados: es normal que aparezca
+        # en cada directorio de un paquete Python
+        if auto_fixable and category == "structure" and "__init__.py" in combined:
+            auto_fixable = False
 
         # Dependencies
         dependencies = self._find_dependencies(issue)

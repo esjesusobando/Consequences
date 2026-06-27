@@ -141,6 +141,23 @@ python executor.py /ruta               # dry-run en ruta especifica
 
 ---
 
+## 🟢 Relacion con Capital Token
+
+> `Auto-Improvement` + `Capital Token` = Infraestructura saludable + Conocimiento que se acumula
+
+| Sistema | Rol | Que hace | Donde vive |
+|---------|-----|----------|------------|
+| 🔄 **Auto-Improvement** | Mantenimiento | Barre, ordena, arregla codigo roto | `04_Operations/01_Auto_Improvement/` |
+| 🌕 **Capital Token** | Biblioteca | Documenta procesos, decisiones, playbooks | `02_Knowledge/10_Shared_Org/` |
+
+**Auto-Improvement sin Capital Token:** el codigo se mantiene limpio pero el conocimiento se pierde.
+**Capital Token sin Auto-Improvement:** los procesos se documentan pero la infraestructura se degrada.
+**Juntos:** el sistema no solo funciona — MEJORA con cada uso.
+
+> ✅ Capital Token Fase 1 Foundation completada (2026-06-27) — 18 archivos, 4 categorias, MCP Bridge v0.1
+
+---
+
 ## Notas Tecnicas
 
 - Usar `-X utf8` flag en Windows para evitar errores de encoding con caracteres UNICODE
@@ -150,4 +167,27 @@ python executor.py /ruta               # dry-run en ruta especifica
 
 ---
 
-_Actualizado: 2026-05-28 (Executor v2.0 + Judgment Day Ronda 2)_
+## 🌕 Sistemas Hermanos
+
+Este sistema se complementa con el **Capital Token** (`01_Personal_Os/02_Knowledge/10_Shared_Org/`):
+
+```
+🔄 Auto-Improvement (mantiene la INFRAESTRUCTURA saludable)
+         │
+         ▼  Código limpio + estructura ordenada
+         │
+🌕 Capital Token  (captura el valor ORGANIZACIONAL)
+         │
+         ▼  Playbooks, decisiones, templates reusables
+```
+
+| Sistema | Rol | Scope | Frecuencia |
+|---------|-----|-------|------------|
+| 🔄 Auto-Improvement | Mantenimiento técnico recursivo | Código, estructura, naming, docs | Automático cada 8h |
+| 🌕 Capital Token | Captura de conocimiento organizacional | Procesos, ADRs, playbooks, agent templates | Manual (on-demand) |
+
+**Auto-Improvement** barre y ordena el sistema técnicamente. **Capital Token** documenta el conocimiento para que no se pierda. Juntos: infraestructura saludable + conocimiento que se acumula.
+
+---
+
+_Actualizado: 2026-06-27 (Executor v2.0 + Cross-ref Capital Token)_
