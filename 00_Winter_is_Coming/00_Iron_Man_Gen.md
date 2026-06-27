@@ -1,10 +1,10 @@
 ---
 name: genesis
-description: Workflow de inicio de sesión — carga reglas, memoria, notas de proceso y estado del PersonalOS v4.9 Consequences.
+description: Workflow de inicio de sesión — carga reglas, memoria, notas de proceso y estado del PersonalOS v4.9.1.
 argument-hint: "[opcional: tarea específica del día o contexto a priorizar]"
 ---
 
-# 🧬 Workflow: Génesis (Iron Man Boot) — v4.9 Consequences
+# 🧬 Workflow: Génesis (Iron Man Boot) — v4.9.1
 
 > **Versión del sistema:** v4.9.1 — Marketing SOTA + Archive Consolidation
 > **Fecha:** 2026-06-25
@@ -43,7 +43,7 @@ Antes de responder, leer en este orden:
 
 ---
 
-## 🚀 MAPA DEL SISTEMA (v4.9 Consequences)
+## 🚀 MAPA DEL SISTEMA (v4.9.1)
 
 ```
 Think_Different/
@@ -53,7 +53,7 @@ Think_Different/
 │   │   ├── 00_Workflows_Os/     # 28 workflows (7 categorías)
 │   │   ├── 01_Rules/            # 14 reglas .mdc (00-13)
 │   │   └── 02_Tools/
-│   │       ├── 01_Agents/       # 61 agentes (25 Root + 5 Dream + 23 Specialists + 5 Growth + 3 other)
+│   │       ├── 01_Agents/       # 63 agentes (26 Root + 6 Dream + 23 Specialists + 5 Growth + 3 other)
 │   │       ├── 02_Skills/       # 392 skills (15 áreas funcionales)
 │   │       ├── 03_Mcp/          # Backup MCPs
 │   │       ├── 04_Integrations/ # Fireflies, Granola
@@ -68,7 +68,7 @@ Think_Different/
 │       ├── 00_Context_LLM/      # Memoria LLM (Context_Memory, Process_Notes)
 │       ├── 01_Auto_Improvement/ # Motor de auto-mejora recursiva
 │       ├── 02_Agent_Teams_Lite/ # SDD + 7 Manifests JARVIS
-│       ├── 03_Scripts_Os/       # 20 HUBs + 256 scripts total
+│       ├── 03_Scripts_Os/       # 30 HUBs + 163 scripts total
 │       ├── 04_Installer/        # Scripts de instalación
 │       ├── 05_Projects/         # Proyectos activos
 │       ├── 06_SOTA_Features/    # Features SOTA
@@ -78,7 +78,7 @@ Think_Different/
 ├── .agent/                      # Backup estratégico (sync con 01_Core/)
 ├── .atl/                        # SDD Registry + openspec/
 ├── .claude/                     # Config Claude Code + rules
-├── .mcp.json                    # 7+38 MCPs activos
+├── .mcp.json                    # 11 MCPs activos
 ├── AGENTS.md                    # GGA Pre-Commit entry
 ├── CLAUDE.md                    # Config IAs (FUENTE)
 └── README.md                    # Documentación principal
@@ -90,12 +90,12 @@ Think_Different/
 
 | Recurso                        | Ubicación                                                                 | Para qué usarlo                           |
 |-------------------------------|--------------------------------------------------------------------------|------------------------------------------|
-| **Skills** (12 áreas, 394)     | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
-| **Reglas** (13 .mdc)           | `01_Personal_Os/01_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
-| **Agentes** (82)               | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
-| **HUBs** (21+2)                | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema                    |
-| **MCPs** (7+38)                | `.mcp.json` (raíz)                                                        | Herramientas externas                     |
-| **Hooks** (12)                 | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                               | Automatizaciones pre/post tool            |
+| **Skills** (15 áreas, 392)     | `01_Personal_Os/01_Core/02_Tools/02_Skills/`                              | Descubrir capabilities antes de delegar   |
+| **Reglas** (14 .mdc)           | `01_Personal_Os/01_Core/01_Rules/`                                        | Governance y comportamiento del sistema   |
+| **Agentes** (63)               | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                              | Delegar tareas a especialistas            |
+| **HUBs** (30)                  | `01_Personal_Os/04_Operations/03_Scripts_Os/`                             | Operaciones de sistema                    |
+| **MCPs** (11)                  | `.mcp.json` (raíz)                                                        | Herramientas externas                     |
+| **Hooks** (10)                 | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                               | Automatizaciones pre/post tool            |
 | **Memory**                     | Engram MCP                                                                | Contexto persistente entre sesiones       |
 | **GGA Code Review**            | `.agent/05_GGA/`                                                          | Code review automático                    |
 | **SDD Registry**               | `.atl/skill-registry.md`                                                  | Compact rules para sub-agentes            |
@@ -212,4 +212,4 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/00_Sound_Engine.py --error
 ---
 
 *Think Different PersonalOS v4.9.1 — Marketing SOTA + Archive Consolidation*
-*Actualizado: 2026-06-25 | 392 skills | 62 agents (82 total sistema) | 7+38 MCPs | 30 HUBs | 14 rules*
+*Actualizado: 2026-06-26 | 392 skills | 63 agents | 11 MCPs | 30 HUBs | 14 rules*

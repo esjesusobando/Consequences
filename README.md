@@ -1,17 +1,17 @@
-# Think Different PersonalOS v5.0 SOTA — Production Ready
+# Think Different PersonalOS v4.9.1 — Production Ready
 
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-orange)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Version](https://img.shields.io/badge/Version-5.0_SOTA-00FF00)]()
+[![Version](https://img.shields.io/badge/Version-4.9.1-00FF00)]()
 [![Status](https://img.shields.io/badge/Status-PRODUCTION%20READY-00FF00)]()
-[![OS](https://img.shields.io/badge/Think%20Different-OS--5.0_SOTA-7B68EE)]()
+[![OS](https://img.shields.io/badge/Think%20Different-OS--4.9.1-7B68EE)]()
 
 > 🧠 **Sistema operativo personal potenciado con IA** — Orquestación multi-agente, 392 skills SOTA, agentes, metodologías integradas y automatización completa.
 
 ---
 
-## 📊 Estado del Sistema (v5.0 SOTA — Production Ready — 2026-06-25)
+## 📊 Estado del Sistema (v4.9.1 — Production Ready — 2026-06-25)
 
-> 🟢 **PRODUCTION READY** - v5.0 SOTA lista para uso público con mejoras estado-del-arte
+> 🟢 **PRODUCTION READY** - v4.9.1 lista para uso público con mejoras estado-del-arte
 
 | Métrica                              | Valor                                            |
 |-------------------------------------|-------------------------------------------------|
@@ -20,14 +20,14 @@
 | **gentle-ai**                        | v1.30.6 ✅                                        |
 | **Skills**                           | **392** (15 áreas funcionales)                   |
 | **Rules**                            | **14** (.mdc)                                    |
-| **MCPs**                             | **8** root + **43** backup                       |
+| **MCPs**                             | **11** root + **43** backup                     |
 | **HUBs**                             | **30** HUBs + **133** scripts subdir              |
 | **Agentes**                          | **63** (source — 6 Dream Team + Orchestrator)    |
 | **Workflows**                        | **28** (7 categorías)                            |
 
 ---
 
-## 📂 Estructura del Sistema (v5.0 SOTA — Production Ready)
+## 📂 Estructura del Sistema (v4.9.1 — Production Ready)
 
 ```
 Think_Different/                           # RAÍZ
@@ -111,7 +111,7 @@ Think_Different/                           # RAÍZ
 
 ## 🛠️ Componentes Principales
 
-### Skills System (v5.0 SOTA — 14 Áreas Funcionales)
+### Skills System (v4.9.1 — 15 Áreas Funcionales)
 
 | Área                                                         | Items                      | Descripción                                                   |
 |-------------------------------------------------------------|---------------------------|--------------------------------------------------------------|
@@ -128,6 +128,7 @@ Think_Different/                           # RAÍZ
 | **05_Claude_Ads**                                            | 21                         | Claude Ads & Promoted Content                                 |
 | **06_Tools**                                                 | 83                         | Skill Creator, Testing, DevOps, Data                          |
 | **07_Invictus_Web**                                          | 15                         | Playwright, Superpowers, Browser Auto                         |
+| **08_JAO**                                                   | 7                          | Entrevistador, Humanizador, Optimizador, Superpowers         |
 | **10_Laia_Learning**                                         | 1                          | Sistema de aprendizaje personal                               |
 | **TOTAL**                                                    | **392**                    | 392 skills activas en 15 áreas funcionales — ver `00_Manifest/04_Skill_Index.json`
 
@@ -137,7 +138,7 @@ Think_Different/                           # RAÍZ
 
 ---
 
-### HUBs v5.0 SOTA (30 HUBs — 163 scripts totales, 133 en subdirectorios)
+### HUBs v4.9.1 (30 HUBs — 163 scripts totales, 133 en subdirectorios)
 
 | Hub                                          | Script                                          | Propósito                                             |
 |---------------------------------------------|------------------------------------------------|------------------------------------------------------|
@@ -290,6 +291,6 @@ CC BY-NC-SA 4.0 - Uso no comercial permitido.
 
 ---
 
-_Think Different PersonalOS v5.0 SOTA — Production Ready ✅ — 2026-06-25_
+_Think Different PersonalOS v4.9.1 — Production Ready ✅ — 2026-06-25_
 
 *Marketing Agents SOTA + Archive Consolidation + Graphify_Out Move*

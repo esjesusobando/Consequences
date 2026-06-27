@@ -1,10 +1,10 @@
 {
   "version": "v3.0",
-  "generated": "2026-06-03T11:02:31",
+  "generated": "2026-06-26T22:07:46",
   "base_path": "01_Personal_Os/01_Core/02_Tools/02_Skills/",
   "totals": {
     "areas": 15,
-    "skills": 392,
+    "skills": 396,
     "without_frontmatter": 0
   },
   "by_area": {
@@ -549,7 +549,7 @@
       ]
     },
     "00_Workflows": {
-      "count": 43,
+      "count": 39,
       "skills": [
         {
           "name": "00_Workflows",
@@ -657,26 +657,6 @@
           "has_frontmatter": true
         },
         {
-          "name": "01_Morning_Standup",
-          "path": "00_Workflows/02_Project_Manager/02_Project_Manager/01_Morning_Standup/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "04_Sunday_Ritual",
-          "path": "00_Workflows/02_Project_Manager/02_Project_Manager/04_Sunday_Ritual/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "06_Finishing_A_Development_Branch",
-          "path": "00_Workflows/02_Project_Manager/02_Project_Manager/06_Finishing_A_Development_Branch/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
-          "name": "07_Running_Tests",
-          "path": "00_Workflows/02_Project_Manager/02_Project_Manager/07_Running_Tests/SKILL.md",
-          "has_frontmatter": true
-        },
-        {
           "name": "03_Weekly_Review",
           "path": "00_Workflows/02_Project_Manager/03_Weekly_Review/SKILL.md",
           "has_frontmatter": true
@@ -769,7 +749,7 @@
       ]
     },
     "01_Creacion_Contenidos": {
-      "count": 49,
+      "count": 52,
       "skills": [
         {
           "name": "01_Creacion_Contenidos",
@@ -972,6 +952,11 @@
           "has_frontmatter": true
         },
         {
+          "name": "linkedin-content-flow",
+          "path": "01_Creacion_Contenidos/14_Marketing_Tech/linkedin-content-flow/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "paid-ads",
           "path": "01_Creacion_Contenidos/14_Marketing_Tech/paid-ads/SKILL.md",
           "has_frontmatter": true
@@ -1002,6 +987,11 @@
           "has_frontmatter": true
         },
         {
+          "name": "15_Audio_Pipeline",
+          "path": "01_Creacion_Contenidos/15_Audio_Pipeline/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
           "name": "15_Marketing_Scripts",
           "path": "01_Creacion_Contenidos/15_Marketing_Scripts/SKILL.md",
           "has_frontmatter": true
@@ -1014,6 +1004,11 @@
         {
           "name": "17_Content_Generation",
           "path": "01_Creacion_Contenidos/17_Content_Generation/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "18_Magnific_Image",
+          "path": "01_Creacion_Contenidos/18_Magnific_Image/SKILL.md",
           "has_frontmatter": true
         }
       ]
@@ -1194,7 +1189,7 @@
       ]
     },
     "03_Video_Media": {
-      "count": 7,
+      "count": 11,
       "skills": [
         {
           "name": "03_Video_Media",
@@ -1229,6 +1224,26 @@
         {
           "name": "04_Remotion_Audio_Engine",
           "path": "03_Video_Media/02_James_Cameron/04_Remotion_Audio_Engine/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "03_Higgsfield_Generate",
+          "path": "03_Video_Media/03_Higgsfield_Generate/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "04_Higgsfield_Marketplace",
+          "path": "03_Video_Media/04_Higgsfield_Marketplace/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "05_Higgsfield_Product_Photoshoot",
+          "path": "03_Video_Media/05_Higgsfield_Product_Photoshoot/SKILL.md",
+          "has_frontmatter": true
+        },
+        {
+          "name": "06_Higgsfield_Soul_ID",
+          "path": "03_Video_Media/06_Higgsfield_Soul_ID/SKILL.md",
           "has_frontmatter": true
         }
       ]
@@ -1999,8 +2014,13 @@
       ]
     },
     "08_JAO": {
-      "count": 6,
+      "count": 7,
       "skills": [
+        {
+          "name": "08_JAO",
+          "path": "08_JAO/SKILL.md",
+          "has_frontmatter": true
+        },
         {
           "name": "01_Entrevistador_Procesos",
           "path": "08_JAO/01_Entrevistador_Procesos/SKILL.md",

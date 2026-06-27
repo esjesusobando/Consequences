@@ -61,7 +61,7 @@ _Last updated: June 25, 2026_
 
 ## 1. Professional Identity
 
-* *Current Role:** Product Designer and AI Strategist. I breathe AI tools in this era of Digital Transformation.
+**Current Role:** Product Designer and AI Strategist. I breathe AI tools in this era of Digital Transformation.
 
 * *Professional Vision:** To build the best possible **Digital Brain**. An ecosystem where notes, methodologies, and workflows converge to feed LLMs with selective, highest-quality context. My purpose is to design the information architecture that enables executing complex objectives in optimal time, using **Agents, Skills, MCP (Model Context Protocol), and a specialized Knowledge Base**.
 

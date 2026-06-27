@@ -1,23 +1,24 @@
-# Workflow Graph — generated 2026-06-03T11:02:31
+# Workflow Graph — generated 2026-06-26T22:07:46
 
 version: v3.0
-generated: "2026-06-03T11:02:31"
+generated: "2026-06-26T22:07:46"
 base_path: 01_Personal_Os/01_Core/00_Workflows_Os/
 totals:
   categories: 7
-  workflows: 28
+  workflows: 29
 by_category:
   00_Learning_Always:
     count: 1
     workflows:
       - 00_Learning_Always.md
   01_Personal_Os:
-    count: 10
+    count: 11
     workflows:
       - 01_Morning_Standup.md
       - 02_Backlog_Processing.md
       - 03_Content_Generation.md
       - 04_Weekly_Review.md
+      - 05_Audio_To_Content.md
       - 05_Ritual_Cierre_Protocol.md
       - 06_Validar_Reglas.md
       - 07_System_Health_Audit.md

@@ -1,14 +1,14 @@
-# MCP Registry — generated 2026-06-03T11:02:30
-# Drift Claude<->OpenCode: claude_only=1, opencode_only=36
+# MCP Registry — generated 2026-06-26T22:07:45
+# Drift Claude<->OpenCode: claude_only=4, opencode_only=38
 
 version: v3.0
-generated: "2026-06-03T11:02:30"
+generated: "2026-06-26T22:07:45"
 totals:
-  claude_code: 8
-  opencode: 43
+  claude_code: 11
+  opencode: 45
   both: 7
-  claude_only: 1
-  opencode_only: 36
+  claude_only: 4
+  opencode_only: 38
 mcps:
   - name: @magicuidesign/mcp
     availability: both
@@ -98,6 +98,14 @@ mcps:
     availability: both
     claude_code: True
     opencode: True
+  - name: granola
+    availability: opencode_only
+    claude_code: False
+    opencode: True
+  - name: heygen
+    availability: claude_only
+    claude_code: True
+    opencode: False
   - name: higgsfield
     availability: both
     claude_code: True
@@ -106,10 +114,18 @@ mcps:
     availability: opencode_only
     claude_code: False
     opencode: True
+  - name: magnific
+    availability: claude_only
+    claude_code: True
+    opencode: False
   - name: mcp-obsidian
     availability: opencode_only
     claude_code: False
     opencode: True
+  - name: mobbin
+    availability: claude_only
+    claude_code: True
+    opencode: False
   - name: n8n-mcp
     availability: opencode_only
     claude_code: False
@@ -130,6 +146,10 @@ mcps:
     availability: claude_only
     claude_code: True
     opencode: False
+  - name: paypal
+    availability: opencode_only
+    claude_code: False
+    opencode: True
   - name: pencil
     availability: opencode_only
     claude_code: False

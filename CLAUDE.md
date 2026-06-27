@@ -205,7 +205,7 @@ Think_Different/                           # RAÍZ
 
 ### 2. AGENTS (63 — 6 categorías funcionales — 2026-06-25)
 
-> ⚠️ Source: 62 agentes total (25 root-level .md + 6 Dream Team + 23 Specialists + 5 Growth + 3 other). Dream Team 06 = Marketing Orchestrator.
+> ⚠️ Source: 63 agentes total (26 root-level .md + 6 Dream Team + 23 Specialists + 5 Growth + 3 other). Dream Team 06 = Marketing Orchestrator.
 
 ### 3. SKILLS (392 — 15 áreas funcionales)
 
@@ -282,9 +282,9 @@ python 01_Personal_Os/04_Operations/03_Scripts_Os/15_MCP_Sync_Hub.py --report   
 | Estructura (4 raíz)               | ✅ PASS                     | Winter / Personal_Os / Playground / Resultado                            |
 | HUBs (30 — scripts: 163)           | ✅ PASS                     | 30 HUBs (todos con interfaz) — 163 scripts totales                                |
 | Skills (392, 15 áreas)            | ✅ VERIFIED                 | 15 áreas funcionales — referencia al manifest                             |
-| Agent Matrix                      | ✅ SYNCED                   | 61 agentes (25 root + 5 Dream + 23 Spec + 5 Growth + 3 other)            |
+| Agent Matrix                      | ✅ SYNCED                   | 63 agentes (26 root + 6 Dream + 23 Spec + 5 Growth + 3 other)            |
 | Manifest (7 archivos)             | ✅ VALIDATED                | 00_Manifest/ en 02_Agent_Teams_Lite/                                     |
-| MCPs (7+38 Claude / 36 OpenCode)  | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                                       |
+| MCPs (11 Claude / 45 OpenCode)    | ✅ SYNCED                   | drift: 0 (ambos configs alineados)                                       |
 | Rules (14 .mdc)                   | ✅ DEFINED                  | 01_Rules/ (00-13 + 13_HTML_Visualization)                                |
 | Workflows (28)                    | ✅ ACTIVE                   | 7 categorías en 00_Workflows_Os (1+10+8+2+2+4+1)                        |
 | Hooks (10, 6 fases)               | ✅ ACTIVE                   | 05_Hooks/                                                                |
