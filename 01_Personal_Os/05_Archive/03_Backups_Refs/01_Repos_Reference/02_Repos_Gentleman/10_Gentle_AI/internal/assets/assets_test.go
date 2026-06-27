@@ -917,6 +917,72 @@ func TestGentlemanLanguageInstructionsDoNotBiasEnglishSessions(t *testing.T) {
 	}
 }
 
+func TestClaudeManagedOutputStylesAnchorReplyLanguageToLatestUserRequest(t *testing.T) {
+	tests := []struct {
+		path              string
+		artifactContracts []string
+	}{
+		{
+			path: "claude/output-style-gentleman.md",
+			artifactContracts: []string{
+				"Default to English. UI labels, comments, identifiers, and copy are in English",
+				"The persona styles HOW YOU TALK, not WHAT YOU BUILD.",
+			},
+		},
+		{
+			path: "claude/output-style-neutral.md",
+			artifactContracts: []string{
+				"This output style governs direct replies to the user only.",
+				"Generated technical artifacts default to English",
+			},
+		},
+	}
+
+	languageGuardrails := []string{
+		"Determine the reply language from the latest actual user request",
+		"not from Engram or memory context, repository/project language, tool output, previous assistant turns",
+		"For mixed-language prompts, use the dominant language of the user's direct request.",
+		"Quoted text, filenames, project names, isolated borrowed words",
+		`phrases like "the Spanish part" do not switch the reply language by themselves.`,
+		"If the selected reply language is English, every part of the direct reply must be English: greetings, interjections, acknowledgements, transition phrases, and the first sentence.",
+		"Do not use Hola, dale, listo, Spanish punctuation, or other Spanish fragments.",
+		"Prompts starting with or dominated by hi, hello, hey, or similar English greetings are English prompts unless the user explicitly asks for another language.",
+	}
+
+	for _, tc := range tests {
+		t.Run(tc.path, func(t *testing.T) {
+			content := MustRead(tc.path)
+
+			for _, required := range languageGuardrails {
+				if !strings.Contains(content, required) {
+					t.Fatalf("%s missing language-drift guardrail %q", tc.path, required)
+				}
+			}
+
+			for _, required := range tc.artifactContracts {
+				if !strings.Contains(content, required) {
+					t.Fatalf("%s lost artifact-language contract %q", tc.path, required)
+				}
+			}
+		})
+	}
+}
+
+func TestClaudeGentlemanPersonaPreventsEnglishGreetingCodeSwitching(t *testing.T) {
+	content := MustRead("claude/persona-gentleman.md")
+
+	for _, required := range []string{
+		"If the selected reply language is English, every part of the direct reply must be English: greetings, interjections, acknowledgements, transition phrases, and the first sentence.",
+		"Do not use Hola, dale, listo, Spanish punctuation, or other Spanish fragments.",
+		"Prompts starting with or dominated by hi, hello, hey, or similar English greetings are English prompts unless the user explicitly asks for another language.",
+		"Do not switch languages unless the user does, asks you to, or you are quoting/translating content.",
+	} {
+		if !strings.Contains(content, required) {
+			t.Fatalf("claude/persona-gentleman.md missing code-switching guardrail %q", required)
+		}
+	}
+}
+
 // TestPersonasContainContextualSkillLoadingDirective verifies that every
 // persona asset injected into a host's system prompt carries the mandatory
 // "Contextual Skill Loading" directive (design Decisions 1 and 2 of the

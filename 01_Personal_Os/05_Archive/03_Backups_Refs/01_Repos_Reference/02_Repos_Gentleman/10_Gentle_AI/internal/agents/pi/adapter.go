@@ -16,16 +16,22 @@ import (
 )
 
 const (
-	piMCPAdapterPackage      = "npm:pi-mcp-adapter"
-	piMCPAdapterPackageSpec  = "npm:pi-mcp-adapter"
-	piMCPAdapterDependency   = "pi-mcp-adapter"
-	piMCPAdapterVersion      = "2.6.0"
-	piMCPAdapterVersionRange = "^2.6.0"
-	piEngramMCPConfigFile    = "mcp.json"
-	piSettingsFile           = "settings.json"
-	piNPMDirectory           = "npm"
-	piNPMPackageFile         = "package.json"
+	piMCPAdapterPackage         = "npm:pi-mcp-adapter"
+	piMCPAdapterPackageSpec     = "npm:pi-mcp-adapter"
+	piMCPAdapterDependency      = "pi-mcp-adapter"
+	piMCPAdapterVersion         = "2.6.0"
+	piMCPAdapterVersionRange    = "^2.6.0"
+	piAppendSystemFile          = "APPEND_SYSTEM.md"
+	piEngramMCPConfigFile       = "mcp.json"
+	piSettingsFile              = "settings.json"
+	piNPMDirectory              = "npm"
+	piNPMPackageFile            = "package.json"
+	piSubagentsJ0k3rPackageSpec = "npm:pi-subagents-j0k3r"
 )
+
+func piSubagentsInstallCommand(system.PlatformProfile) []string {
+	return []string{"pi", "install", piSubagentsJ0k3rPackageSpec}
+}
 
 type statResult struct {
 	isDir bool
@@ -51,7 +57,7 @@ func (a *Adapter) Agent() model.AgentID { return model.AgentPi }
 func (a *Adapter) Tier() model.SupportTier { return model.TierFull }
 
 func (a *Adapter) Detect(_ context.Context, homeDir string) (bool, string, string, bool, error) {
-	configPath := ConfigPath(homeDir)
+	configPath := AgentConfigPath(homeDir)
 	binaryPath, err := a.lookPath("pi")
 	installed := err == nil && binaryPath != ""
 
@@ -68,13 +74,13 @@ func (a *Adapter) Detect(_ context.Context, homeDir string) (bool, string, strin
 
 func (a *Adapter) SupportsAutoInstall() bool { return true }
 
-func (a *Adapter) InstallCommand(system.PlatformProfile) ([][]string, error) {
+func (a *Adapter) InstallCommand(profile system.PlatformProfile) ([][]string, error) {
 	return [][]string{
 		{"pi", "install", "npm:gentle-pi"},
 		{"pi", "install", "npm:gentle-engram"},
 		{"pi", "install", "npm:pi-mcp-adapter"},
 		a.engramInitCommand(),
-		{"pi", "install", "npm:@tintinweb/pi-subagents"},
+		piSubagentsInstallCommand(profile),
 		{"pi", "install", "npm:pi-intercom"},
 		{"pi", "install", "npm:@juicesharp/rpiv-ask-user-question"},
 		{"pi", "install", "npm:pi-web-access"},
@@ -92,9 +98,11 @@ func (a *Adapter) engramInitCommand() []string {
 
 func (a *Adapter) GlobalConfigDir(homeDir string) string { return ConfigPath(homeDir) }
 
-func (a *Adapter) SystemPromptDir(string) string { return "" }
+func (a *Adapter) SystemPromptDir(homeDir string) string { return AgentConfigPath(homeDir) }
 
-func (a *Adapter) SystemPromptFile(string) string { return "" }
+func (a *Adapter) SystemPromptFile(homeDir string) string {
+	return filepath.Join(AgentConfigPath(homeDir), piAppendSystemFile)
+}
 
 func (a *Adapter) SkillsDir(string) string { return "" }
 
@@ -128,7 +136,7 @@ func (a *Adapter) EmbeddedSubAgentsDir() string { return "" }
 
 func (a *Adapter) SupportsSkills() bool { return false }
 
-func (a *Adapter) SupportsSystemPrompt() bool { return false }
+func (a *Adapter) SupportsSystemPrompt() bool { return true }
 
 func (a *Adapter) SupportsMCP() bool { return true }
 
