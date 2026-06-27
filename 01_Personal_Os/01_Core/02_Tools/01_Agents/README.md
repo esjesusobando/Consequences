@@ -1,3 +1,8 @@
+---
+name: "README"
+description: "Agent: README"
+---
+
 # 🤖 01_Agents — Sistema de Agentes Especializados
 
 **Versión:** v4.9 | **Fecha:** 2026-06-25 | **Estado:** Pure Green Production

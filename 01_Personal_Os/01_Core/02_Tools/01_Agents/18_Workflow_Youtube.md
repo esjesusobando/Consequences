@@ -1,3 +1,8 @@
+---
+name: "18_Workflow_Youtube"
+description: "Agent: 18_Workflow_Youtube"
+---
+
 # Workflow: YouTube — De Idea a Publicación
 
 **Agentes involucrados:** Estratega → Creador → Analista

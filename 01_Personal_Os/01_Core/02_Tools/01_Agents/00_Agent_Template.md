@@ -1,3 +1,8 @@
+---
+name: "00_Agent_Template"
+description: "Agent: 00_Agent_Template"
+---
+
 # Template para crear agentes restantes
 # Este archivo sirve como guía para crear los archivos 02-09
 #

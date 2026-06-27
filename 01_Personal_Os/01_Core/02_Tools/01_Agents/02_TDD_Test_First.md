@@ -1,3 +1,8 @@
+---
+name: "02_TDD_Test_First"
+description: "Agent: 02_TDD_Test_First"
+---
+
 #  Agente #02: TDD Test-First
 
 **Fase:** 2 de 7 - TEST DRIVEN DEVELOPMENT (RED)

@@ -1,3 +1,8 @@
+---
+name: "00_Orchestrator"
+description: "Agent: 00_Orchestrator"
+---
+
 # 🧠 INVICTUS ORCHESTRATOR (CORE CONTEXT)
 
 **ID:** `00_ORCHESTRATOR`

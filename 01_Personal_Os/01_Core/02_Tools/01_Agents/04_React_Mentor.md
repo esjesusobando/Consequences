@@ -1,3 +1,8 @@
+---
+name: "04_React_Mentor"
+description: "Agent: 04_React_Mentor"
+---
+
 #  Agente #04: React Mentor
 
 **Fase:** 4 de 7 - REFACTORIZACIÓN

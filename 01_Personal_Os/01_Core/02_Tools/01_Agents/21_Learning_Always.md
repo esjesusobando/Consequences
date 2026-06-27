@@ -1,3 +1,8 @@
+---
+name: "21_Learning_Always"
+description: "Agent: 21_Learning_Always"
+---
+
 # 🧪 21_Learning_Always — Metodología de Aprendizaje Continuo
 
 > **Status:** Semi-Autonomous — Se activa cuando el usuario quiere aprender, investigar o deep-dive en un tema

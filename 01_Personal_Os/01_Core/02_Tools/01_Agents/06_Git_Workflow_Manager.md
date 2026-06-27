@@ -1,3 +1,8 @@
+---
+name: "06_Git_Workflow_Manager"
+description: "Agent: 06_Git_Workflow_Manager"
+---
+
 #  Agente #06: Git Workflow Manager
 
 **Fase:** 6 de 7 — COMMIT, PR & ARCHIVE

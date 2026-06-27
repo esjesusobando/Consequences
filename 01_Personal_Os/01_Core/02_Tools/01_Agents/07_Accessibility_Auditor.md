@@ -1,3 +1,8 @@
+---
+name: "07_Accessibility_Auditor"
+description: "Agent: 07_Accessibility_Auditor"
+---
+
 # ♿ Agente #07: Accessibility Auditor
 
 **Fase:** 7 de 7 - ACCESIBILIDAD (A11Y)

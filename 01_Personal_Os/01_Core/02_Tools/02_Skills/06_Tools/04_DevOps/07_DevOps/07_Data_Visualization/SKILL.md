@@ -1309,7 +1309,7 @@ export function recommendChartType(data: {
 Reference implementations:
 - `.cursor/02_Skills/11_Taste_Skills/` - Dashboard patterns (minimalist-skill)
 - `07_Projects/*/dashboard/` - Production dashboards
-- `01_Core/04_Rules/00_Tech_Defaults.md` - Tech conventions
+- `01_Core/01_Rules/00_Tech_Defaults.md` - Tech conventions
 
 
 ## ⚠️ Gotchas

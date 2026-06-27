@@ -1,3 +1,8 @@
+---
+name: "08_PRD_Dashboard_Template"
+description: "Agent: 08_PRD_Dashboard_Template"
+---
+
 #  Agente/Doc #08: PRD Dashboard Template
 
 **Tipo:** Plantilla de Documentación

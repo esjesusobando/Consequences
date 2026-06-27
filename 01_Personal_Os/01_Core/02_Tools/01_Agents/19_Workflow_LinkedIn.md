@@ -1,3 +1,8 @@
+---
+name: "19_Workflow_LinkedIn"
+description: "Agent: 19_Workflow_LinkedIn"
+---
+
 # Workflow: LinkedIn — Post de Autoridad
 
 **Agentes involucrados:** Estratega → Creador → Analista

@@ -1,3 +1,8 @@
+---
+name: "22_Dynamic_Workflows"
+description: "Agent: 22_Dynamic_Workflows"
+---
+
 # ⚡ 22_Dynamic_Workflows — Pipeline Completo de Feature
 
 > **Status:** Semi-Autonomous — Se activa para features que requieren el ciclo completo (research→ship→compound)

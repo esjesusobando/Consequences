@@ -24,7 +24,7 @@ python scripts/run_tests.py --quick
 [2/3] Testing: content-creation
 ------------------------------------------------------------
    📝 Exercise: Hilo de 5 tweets sobre 'Productividad con IA'...
-   📂 Location: Invictus/07_Skill/content-creation
+   📂 Location: 01_Creacion_Contenidos/content-creation
    📝 Updated RESULTS.md for content-creation
 ✅ content-creation: FUNCTIONAL
 

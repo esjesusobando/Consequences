@@ -48,7 +48,7 @@ Phase 4: Content & Communication
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 [2/3] Testing: content-creation
-  📍 Location: 07_Skill/content-creation/
+  📍 Location: 01_Creacion_Contenidos/
   🎯 Objective: Validate content generation and guidelines
 
   ✅ Ejercicio: "Post educativo sobre prompt engineering"

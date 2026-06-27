@@ -1,3 +1,8 @@
+---
+name: "20_Workflow_Newsletter"
+description: "Agent: 20_Workflow_Newsletter"
+---
+
 # Workflow: Newsletter — De Curación a Envío
 
 **Agentes involucrados:** Estratega → Creador → Analista

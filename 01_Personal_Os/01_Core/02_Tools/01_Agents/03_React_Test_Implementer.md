@@ -1,3 +1,8 @@
+---
+name: "03_React_Test_Implementer"
+description: "Agent: 03_React_Test_Implementer"
+---
+
 #  Agente #03: React Test Implementer
 
 **Fase:** 3 de 7 - IMPLEMENTACIÓN (GREEN)

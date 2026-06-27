@@ -1,3 +1,8 @@
+---
+name: "01_Scope_Rule_Architect"
+description: "Agent: 01_Scope_Rule_Architect"
+---
+
 # 🏗️ Agente #01: Scope Rule Architect
 
 **Fase:** 1 de 7 - ARQUITECTURA BASE

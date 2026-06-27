@@ -218,7 +218,7 @@ And updates:
 Tests all skills in:
 
 - `Amazing World/00_Bunker/00 Claude/07_Skill/` (15 skills)
-- `Invictus/07_Skill/` (8 skills)
+- `01_Creacion_Contenidos/` (8 skills)
 
 ---
 

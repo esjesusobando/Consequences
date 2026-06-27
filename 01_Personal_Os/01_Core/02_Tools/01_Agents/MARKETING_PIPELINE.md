@@ -1,3 +1,8 @@
+---
+name: "MARKETING_PIPELINE"
+description: "Agent: MARKETING_PIPELINE"
+---
+
 # Marketing Pipeline — Estratega → Creador → Analista
 
 > **Versión:** 1.0 | **Fecha:** 2026-06-25 | **Estado:** ✅ PRODUCTION

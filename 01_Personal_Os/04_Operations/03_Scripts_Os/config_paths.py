@@ -288,7 +288,8 @@ def get_skill_script(script_name):
         script_path = get_skill_script("01_Spider_Brainstorm.py")
     
     Retorna: Path al script o None si no se encuentra
-    """
+#!/usr/bin/env python3
+"""
     # Edge case: empty or invalid name
     if not script_name or not script_name.strip() or not script_name.endswith(".py"):
         return None

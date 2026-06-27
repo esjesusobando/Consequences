@@ -1,3 +1,8 @@
+---
+name: "05_Security_Auditor"
+description: "Agent: 05_Security_Auditor"
+---
+
 # ️ Agente #05: Security Auditor
 
 **Fase:** 5 de 7 - AUDITORÍA SEGURIDAD

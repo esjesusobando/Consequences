@@ -1,3 +1,8 @@
+---
+name: "09_Design_SOP_Document"
+description: "Agent: 09_Design_SOP_Document"
+---
+
 #  Agente/Doc #09: Design SOP Document
 
 **Tipo:** Standard Operating Procedures (Diseño)
