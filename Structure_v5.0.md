@@ -220,7 +220,7 @@ Think_Different/                    # RAÍZ
 | Skills_Legacy | 2,249 | [FIXED] |
 | Backups_Refs | 11,582 | [MAY DRIFT] |
 
-> **Nota sobre agentes (~58):** Conteo de archivos .md de definición de agentes en `01_Personal_Os/01_Core/02_Tools/01_Agents/` y subdirectorios. El conteo incluye todas las categorías (Root, Dream Team, Specialists, Growth, OS Conductor, ATL Gen, Agent Teams Lite). [MAY DRIFT] porque el motor auto-mejora puede crear/modificar agentes.
+> **Nota sobre agentes (71):** Conteo de archivos .md de definición de agentes en `01_Personal_Os/01_Core/02_Tools/01_Agents/` y subdirectorios. El conteo incluye todas las categorías (Root 24, Dream Team 6, Specialists 23, Growth 5, OS Conductor 3, ATL Gen 9, Agent Teams Lite 1). Verificado 2026-06-27.
 
 ---
 
