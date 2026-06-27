@@ -191,7 +191,7 @@ Think_Different/                           # RAÍZ
 
 ---
 
-### MCPs (8 root + 43 backup OpenCode)
+### MCPs (11 root + 43 backup OpenCode)
 
 | Servidor                        | Propósito                             | Fuente                |
 |--------------------------------|--------------------------------------|----------------------|
