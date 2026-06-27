@@ -52,7 +52,7 @@ ls 01_Personal_Os/05_Archive/03_Backups_Refs/01_Repos_Reference/02_Repos_Gentlem
 | **Agentes** (63 source | 72 backup) [FIXED]                       | `01_Personal_Os/01_Core/02_Tools/01_Agents/`                               | Delegar tareas a especialistas (ver manifest para breakdown)       |
 | **HUBs** (39 HUBs — 163 scripts) [FIXED]        | `01_Personal_Os/04_Operations/03_Scripts_Os/`                              | Operaciones de sistema — 167 scripts totales                       |
 | **MCPs** (11 root + 4 backup)                      | `.mcp.json`                                                                | Herramientas externas disponibles                                  |
-| **Hooks**                                          | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
+| **Hooks** (10 hooks, 6 fases)                      | `01_Personal_Os/01_Core/02_Tools/05_Hooks/`                                | Automatizaciones pre/post tool                                     |
 | **Memory**                                         | Engram MCP                                                                 | Contexto persistente entre sesiones                                |
 | **Adaptive Boot**                                  | `01_Personal_Os/04_Operations/00_Context_LLM/adaptive_boot.py`             | Carga condicional de contexto (60-70% ahorro tokens)              |
 | **GGA**                                            | `.agent/05_GGA/`                                                           | Code review automático                                             |
