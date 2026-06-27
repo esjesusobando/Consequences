@@ -81,10 +81,12 @@ El sistema tiene GGA para código y Watchdog para salud interna. No hay ningún 
 
 ## P1 — ALTA PRIORIDAD
 
+- [x] **CAPITAL_TOKEN_PLAN.md** — Option C (híbrido) implementada ✅ (2026-06-27)
 - [ ] **Elite Portfolio** — Rediseñar con Exaggerated Minimalism (sección por sección)
 - [ ] **OIM Website** — Verificación visual en browser (servidor parado)
-- [ ] **CAPITAL_TOKEN_PLAN.md** — Decidir e implementar Option C (híbrido)
 - [ ] **Actualizar Personal OS repo** — Sincronizar con 18_Personal_Os_Main desde GitHub
+- [ ] **Eval Framework refinado** — Reemplazar métricas simuladas con ejecución real de agentes (actualmente mide estructura, no comportamiento)
+- [ ] **Adaptive Boot integrado** — Step 3.5 en AGENTS.md, pero necesita prueba con agentes reales
 
 ---
 
@@ -114,6 +116,19 @@ El sistema tiene GGA para código y Watchdog para salud interna. No hay ningún 
 - [ ] **Evaluar Avengers Plan**: Definir si ejecutar, actualizar o archivar
 
 ---
+
+## ✅ Completados (2026-06-27) — Sesión SOTA Integration
+
+- [x] Auto-Improvement Engine fix (executor.py debugged, 6 fixes applied, 0 failures)
+- [x] Capital Token Shared Org filled (real content, 2 processes, 1 ADR, 1 playbook, bridge deployed)
+- [x] Skill Registry fix (208 → 559 unique skills, merge script created)
+- [x] SDD Cleanup (7 changes archived)
+- [x] Eval Framework (5 agents evaluated, real metrics, dashboard)
+- [x] Adaptive Boot (context_profiles.yaml, integrated in AGENTS.md step 3.5)
+- [x] Integration Auto-Improvement ↔ Capital Token (wrapper, quality checker, pattern aggregator)
+- [x] Git Hygiene (27 commits, all pushed to origin/master)
+- [x] 7 new scripts created and tested
+- [x] Process Note 42 created
 
 ## ✅ Completados (2026-06-25)
 

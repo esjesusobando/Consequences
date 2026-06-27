@@ -44,6 +44,19 @@
 | 27  | [`27_NP_Subagent_Statusline_Git_Fixes.md`](./27_NP_Subagent_Statusline_Git_Fixes.md)                                   | 2026-05-22   | Subagent Statusline + Git fixes                             |
 | 28  | [`28_NP_Gentleman_OpenCode_CE_SDD_Validation.md`](./28_NP_Gentleman_OpenCode_CE_SDD_Validation.md)                     | 2026-05-31   | Validación OpenCode CE SDD                                  |
 | 29  | [`29_NP_Avance_2026-05-31.md`](./29_NP_Avance_2026-05-31.md)                                                           | 2026-05-31   | Reporte de avance general                                   |
+| 30  | [`30_NP_Session_2026-05-29.md`](./30_NP_Session_2026-05-29.md)                                                         | 2026-05-29   | Sesión de trabajo                                           |
+| 31  | [`31_NP_System_Audit_Comprehensive_2026-05-29.md`](./31_NP_System_Audit_Comprehensive_2026-05-29.md)                   | 2026-05-29   | System audit comprehensive                                  |
+| 32  | [`32_NP_Auditoria_CrossRef_Paths_2026-05-30.md`](./32_NP_Auditoria_CrossRef_Paths_2026-05-30.md)                       | 2026-05-30   | Auditoría cross-reference paths                             |
+| 33  | [`33_NP_Auditoria_Integral_v4_9_Final_2026-05-31.md`](./33_NP_Auditoria_Integral_v4_9_Final_2026-05-31.md)             | 2026-05-31   | Auditoría integral v4.9 final                               |
+| 34  | [`34_NP_Auditoria_Integral_Antigravity_2026-05-31.md`](./34_NP_Auditoria_Integral_Antigravity_2026-05-31.md)           | 2026-05-31   | Auditoría integral Antigravity                              |
+| 35  | [`35_NP_Consolidacion_Resultado_Pendientes_2026-06-01.md`](./35_NP_Consolidacion_Resultado_Pendientes_2026-06-01.md)   | 2026-06-01   | Consolidación resultados y pendientes                       |
+| 36  | [`36_NP_Actualizacion_Documentacion_v4.9_2026-06-01.md`](./36_NP_Actualizacion_Documentacion_v4.9_2026-06-01.md)       | 2026-06-01   | Actualización documentación v4.9                            |
+| 37  | [`37_NP_Audit_Completo_Conteos_Fixes_2026-06-01.md`](./37_NP_Audit_Completo_Conteos_Fixes_2026-06-01.md)               | 2026-06-01   | Audit completo conteos y fixes                              |
+| 38  | [`38_NP_Auditoria_Completa_Fixes_2026-06-10.md`](./38_NP_Auditoria_Completa_Fixes_2026-06-10.md)                       | 2026-06-10   | Auditoría completa fixes                                    |
+| 39  | [`39_NP_Session_2026_06_25_Documentation_Archive_Validation.md`](./39_NP_Session_2026_06_25_Documentation_Archive_Validation.md) | 2026-06-25 | Documentation archive validation |
+| 40  | [`40_NP_Auditoria_Completa_Estado_del_Arte_2026_06_27.md`](./40_NP_Auditoria_Completa_Estado_del_Arte_2026_06_27.md) | 2026-06-27 | Auditoría completa estado del arte |
+| 41  | [`41_NP_Plan_Fix_Documentacion_Activa_2026_06_27.md`](./41_NP_Plan_Fix_Documentacion_Activa_2026_06_27.md) | 2026-06-27 | Plan fix documentación activa |
+| 42  | [`42_NP_Session_SOTA_Integration_2026-06-27.md`](./42_NP_Session_SOTA_Integration_2026-06-27.md) | 2026-06-27 | **Sesión SOTA: Eval Framework + Adaptive Boot + Integration** |
 
 ---
 
