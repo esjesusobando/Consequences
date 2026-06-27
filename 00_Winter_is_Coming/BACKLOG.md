@@ -1,6 +1,6 @@
 # Backlog — Think Different PersonalOS v4.9.1
 
-*Última actualización: 2026-06-25*
+*Última actualización: 2026-06-27*
 
 ---
 
@@ -30,6 +30,13 @@ Prompts: https://docs.google.com/document/d/1-vFY5kNELu_K7dUwOCZE3koZ0kN_dnei32B
 - [ ] **Marketing Agency Fase 2.3** — MCPs Setup: investigar y configurar Make, YouTube Data API, LinkedIn API
 - [ ] **Marketing Agency Fase 2.4** — Dashboard de Métricas: template HTML para reportes de rendimiento
 - [ ] **Marketing Agency Fase 2.5** — Automated Feedback Loop: Analista→Estratega sin intervención humana
+- [ ] **CAPITAL_TOKEN_PLAN.md** — Decidir e implementar Option C (híbrido)
+- [ ] **Actualizar Personal OS repo** — Sincronizar con 18_Personal_Os_Main desde GitHub
+- [ ] **Playground Agent Configuration (SDD Fase 6)** — Configurar agentes en playground
+- [ ] **Integrar MCP server** — core/mcp/server.py del repo original
+- [ ] **Testing end-to-end** — Probar workflow completo post-SDD
+- [ ] **Voice Guide** — Crear Knowledge/voice-guide.md
+- [ ] **Weekly Review automation** — Script para generar reporte semanal automático
 - [ ] Pre-commit hook para detectar API keys en archivos staged
 - [ ] Documentar proceso de onboarding para nueva máquina
 - [ ] **Corregir System Mapper Hub**: Agent Catalog cuenta 58 vs 48 real. Mapper cuenta mal (incluye READMEs o subdirectorios)
@@ -50,6 +57,7 @@ Prompts: https://docs.google.com/document/d/1-vFY5kNELu_K7dUwOCZE3koZ0kN_dnei32B
 - [ ] **Revisar y ejecutar**: Workflows Marvel (01_Iron_Man_Gen, 04_Vision_Review, 05_Thor_Work, 06_Hulk_Compound) — verificar que estén actualizados y operativos
 - [ ] **Revisar y ejecutar**: Ritual de Cierre (`05_Ritual_Cierre_Protocol.md` + `04_Ritual_Hub.py`) — verificar pasos automatizados
 - [ ] **Evaluar Avengers Plan**: Definir si ejecutar, actualizar o archivar
+- [ ] **33_Backlog_Processor_Hub.py** — Wrapper MCP server para backlog processor (opcional)
 
 ---
 
