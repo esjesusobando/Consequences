@@ -209,10 +209,10 @@ Think_Different/                    # RAÍZ
 | Skills (SKILL.md) | 396 | [FIXED] |
 | Reglas (.mdc) | 14 | [FIXED] |
 | Hooks | 11 | [FIXED] |
-| Workflows (.md) | 29 | [MAY DRIFT] |
-| Agentes (def files) | ~58 | [MAY DRIFT] |
-| HUBs | 22 | [MAY DRIFT] |
-| Scripts totales | ~266 | [MAY DRIFT] |
+| Workflows (.md) | 29 | [VERIFIED] |
+| Agentes (def files) | 71 | [VERIFIED] |
+| HUBs | 30 | [VERIFIED] |
+| Scripts totales | 163 | [VERIFIED] |
 | MCP root (.mcp.json) | 11 | [FIXED] |
 | MCP backup (03_Mcp/) | 4 | [FIXED] |
 | Archive total files | 15,529 | [MAY DRIFT] |
